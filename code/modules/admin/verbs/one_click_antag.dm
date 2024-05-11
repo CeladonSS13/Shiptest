@@ -331,19 +331,6 @@
 			teamSpawned++
 
 		if(teamSpawned)
-			// guestbook
-			for(var/datum/mind/member in ert_team.members)
-				var/mob/living/carbon/human/member_mob = member.current
-				for(var/datum/mind/other_member in ert_team.members)
-					// skip yourself
-					if(other_member.name == member.name)
-						continue
-					var/mob/living/carbon/human/other_member_mob = other_member.current
-					member.guestbook.add_guest(member_mob, other_member_mob, other_member_mob.real_name, other_member_mob.real_name, TRUE)
-				if(ertemplate.outpost_access && istype(member_mob.wear_id, /obj/item/card/id))
-					var/obj/item/card/id/id = member_mob.wear_id
-					id.access += list(ACCESS_CENT_GENERAL)
-
 			message_admins("[ertemplate.rename_team] has spawned with the mission: [ertemplate.mission]")
 
 		//Open the Armory doors

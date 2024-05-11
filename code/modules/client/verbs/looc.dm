@@ -61,33 +61,32 @@ GLOBAL_VAR_INIT(normal_looc_colour, "#6699CC")
 
 	mob.log_talk(raw_msg, LOG_LOOC, tag = "(LOOC)")
 
-	var/list/heard = get_hearers_in_view(7, get_top_level_mob(mob))
-	for(var/mob/hearer_mob in heard)
-		var/client/hearer = hearer_mob.client
+	var/list/heard = get_hearers_in_view(7, get_top_level_mob(src.mob))
+	for(var/mob/M in heard)
+		if(!M.client)
+			continue
+		var/client/C = M.client
 
-		if(!hearer)
+		if(key in C.prefs.ignoring)
 			continue
 
-		if(key in hearer.prefs.ignoring)
+		if(holder?.fakekey in C.prefs.ignoring)
 			continue
 
-		if(holder?.fakekey in hearer.prefs.ignoring)
-			continue
-
-		if(!(hearer.prefs.chat_toggles & CHAT_LOOC))
+		if(!(C.prefs.chat_toggles & CHAT_LOOC))
 			continue
 
 		//Handled before admins so that they see this if they're in range anyways
-		if(hearer.prefs.chat_on_map && mob.invisibility <= hearer_mob.see_invisible)
-			hearer_mob.create_chat_message(mob, null, "\[LOOC: [raw_msg]\]", null, LOOC_MESSAGE)
+		if(C.prefs.chat_on_map && mob.invisibility <= M.see_invisible)
+			M.create_chat_message(mob, null, "\[LOOC: [raw_msg]\]", null, LOOC_MESSAGE)
 
-		if(hearer in GLOB.admins)
+		if(C in GLOB.admins)
 			continue //handled in the next loop
 
 		if(GLOB.LOOC_COLOR)
-			to_chat(hearer, span_loocplain("<font color='[GLOB.LOOC_COLOR]'><b>[span_prefix("LOOC:")] <EM>[mob.get_screentip_name(hearer)]:</EM> [span_message("[msg]")]</b></font>"), MESSAGE_TYPE_LOOC)
+			to_chat(C, "<span class='loocplain'><font color='[GLOB.LOOC_COLOR]'><b><span class='prefix'>LOOC:</span> <EM>[src.mob.name]:</EM> <span class='message'>[msg]</span></b></font></span>", MESSAGE_TYPE_LOOC)
 		else
-			to_chat(hearer, span_looc("[span_prefix("LOOC:")] <EM>[mob.get_screentip_name(hearer)]:</EM> [span_message("[msg]")]"), MESSAGE_TYPE_LOOC)
+			to_chat(C, "<span class='looc'><span class='prefix'>LOOC:</span> <EM>[src.mob.name]:</EM> <span class='message'>[msg]</span></span>", MESSAGE_TYPE_LOOC)
 
 	for(var/client/C in GLOB.admins)
 		if(key in C.prefs.ignoring)
@@ -103,9 +102,9 @@ GLOBAL_VAR_INIT(normal_looc_colour, "#6699CC")
 		if (C.mob in heard)
 			prefix = "LOOC"
 		if(GLOB.LOOC_COLOR)
-			to_chat(C, span_loocplain("<font color='[GLOB.LOOC_COLOR]'><b>[ADMIN_FLW(usr)] [span_prefix("[prefix]:")] <EM>[key]/[mob.real_name]:</EM> [span_message("[msg]")]</b></font>"), MESSAGE_TYPE_LOOC)
+			to_chat(C, "<span class='loocplain'><font color='[GLOB.LOOC_COLOR]'><b>[ADMIN_FLW(usr)] <span class='prefix'>[prefix]:</span> <EM>[src.key]/[src.mob.name]:</EM> <span class='message'>[msg]</span></b></font></span>", MESSAGE_TYPE_LOOC)
 		else
-			to_chat(C, span_looc("[ADMIN_FLW(usr)] [span_prefix("[prefix]:")] <EM>[key]/[mob.real_name]:</EM> [span_message("[msg]")]"), MESSAGE_TYPE_LOOC)
+			to_chat(C, "<span class='looc'>[ADMIN_FLW(usr)] <span class='prefix'>[prefix]:</span> <EM>[src.key]/[src.mob.name]:</EM> <span class='message'>[msg]</span></span>", MESSAGE_TYPE_LOOC)
 
 /proc/toggle_looc(toggle = null)
 	if(toggle == null)

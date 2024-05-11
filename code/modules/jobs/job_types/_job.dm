@@ -25,6 +25,7 @@
 
 	var/display_order = JOB_DISPLAY_ORDER_DEFAULT
 
+
 	///Levels unlocked at roundstart in physiology
 	var/list/roundstart_experience
 

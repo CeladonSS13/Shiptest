@@ -651,7 +651,8 @@
 
 	switch(togglestatus)
 		if(AI_Z_OFF)
-			LAZYADDASSOCLIST(SSidlenpcpool.idle_mobs_by_virtual_level, "[virt_z]", src)
+			LAZYADDASSOC(SSidlenpcpool.idle_mobs_by_virtual_level, virt_z, src)
+
 		else
 			LAZYREMOVEASSOC(SSidlenpcpool.idle_mobs_by_virtual_level, "[virt_z]", src)
 

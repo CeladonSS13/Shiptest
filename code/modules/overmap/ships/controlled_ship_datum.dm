@@ -419,25 +419,6 @@
 	GLOB.crew_manifest_tgui?.update_static_data_for_all_viewers()
 	GLOB.ship_select_tgui?.update_static_data_for_all_viewers()
 
-/**
- * adds a mob's real name to a crew's guestbooks
- *
- * * H - human mob to add to the crew's guestbooks
- */
-/datum/overmap/ship/controlled/proc/add_mob_to_crew_guestbook(mob/living/carbon/human/H)
-	// iterate over the human list to find crewmembers
-	for(var/mob/living/carbon/human/crewmember as anything in GLOB.human_list)
-		if(crewmember == H)
-			continue
-		if(!(crewmember.real_name in manifest))
-			continue
-		if(!crewmember.mind?.guestbook)
-			continue
-
-		// add the mob to the crewmember's guestbook and viceversa
-		crewmember.mind.guestbook.add_guest(crewmember, H, H.real_name, H.real_name, TRUE)
-		H.mind.guestbook.add_guest(H, crewmember, crewmember.real_name, crewmember.real_name, TRUE)
-
 /datum/overmap/ship/controlled/proc/set_owner_mob(mob/new_owner)
 	if(owner_mob)
 		// we (hopefully) don't have to hook qdeletion,

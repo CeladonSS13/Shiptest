@@ -250,8 +250,8 @@
 		observer.client.init_verbs()
 	observer.update_appearance()
 	observer.stop_sound_channel(CHANNEL_LOBBYMUSIC)
-	QDEL_NULL(mind)
 	deadchat_broadcast(" has observed.", "<b>[observer.real_name]</b>", follow_target = observer, turf_target = get_turf(observer), message_type = DEADCHAT_DEATHRATTLE)
+	QDEL_NULL(mind)
 	qdel(src)
 	return TRUE
 
@@ -329,7 +329,6 @@
 		var/mob/living/carbon/human/humanc = character
 		ship.manifest_inject(humanc, client, job)
 		GLOB.data_core.manifest_inject(humanc, client)
-		ship.add_mob_to_crew_guestbook(humanc)
 		AnnounceArrival(humanc, job.name, ship)
 		AddEmploymentContract(humanc)
 		SSblackbox.record_feedback("tally", "species_spawned", 1, humanc.dna.species.name)
