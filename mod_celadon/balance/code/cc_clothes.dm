@@ -133,7 +133,7 @@
 /obj/item/clothing/suit/hooded/wintercoat/centcom/admin
 	armor = list("melee" = 100, "bullet" = 100, "laser" = 100, "energy" = 100, "bomb" = 100, "bio" = 100, "rad" = 80, "fire" = 100, "acid" = 100)
 
-/obj/item/clothing/suit/hooded/wintercoat/centcom/admin/equipped(mob/user, slot)
+/obj/item/clothing/suit/hooded/wintercoat/centcom/equipped(mob/user, slot)
 	. = ..()
 	if(slot == ITEM_SLOT_OCLOTHING)
 		ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
