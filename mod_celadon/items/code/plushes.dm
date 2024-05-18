@@ -63,8 +63,12 @@
 
 =======
 	squeak_override = list('mod_celadon/items/sounds/plushes/beep.ogg' = 1)
+<<<<<<< HEAD
 /beep.ogg
 >>>>>>> 2c38c46261 (Add: plushe toys (#551))
+=======
+
+>>>>>>> be9c498b03 (Update plushes.dm)
 /obj/item/toy/plush/celadon/medihound
 	name = "medi-hound plushie"
 	desc = "An adorable stuffed toy of a medihound."
