@@ -4,28 +4,44 @@
 
 // // MODULAR PLUSHES
 /obj/item/toy/plush/celadon
+<<<<<<< HEAD
 	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
+=======
+	icon = 'mod_celadon/items/icons/plushes.dmi'
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/borbplushie
 	name = "borb plushie"
 	desc = "An adorable stuffed toy that resembles a round, fluffy looking bird. Not to be mistaken for his friend, the birb plushie."
 	icon_state = "plushie_borb"
 	attack_verb = list("peck", "peep")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/voice/peep_once.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/voice/peep_once.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/deer
 	name = "deer plushie"
 	desc = "An adorable stuffed toy that resembles a deer."
 	icon_state = "plushie_deer"
 	attack_verb = list("headbutt", "boop", "bap", "bump")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/deerplush.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/deerplush.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/fermis
 	name = "medcat plushie"
 	desc = "An affectionate stuffed toy that resembles a certain medcat, comes complete with battery operated wagging tail!! You get the impression she's cheering you on to find happiness and be kind to people."
 	icon_state = "plushie_fermis"
 	attack_verb = list("cuddle", "petpatt", "wigglepurr")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/merowr.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/merowr.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	gender = FEMALE
 
 /obj/item/toy/plush/celadon/fermis/chen
@@ -42,56 +58,89 @@
 	desc = "An adorable stuffed toy of a SecHound, the trusty Nanotrasen sponsored security borg!"
 	icon_state = "plushie_securityk9"
 	attack_verb = list("beep", "boop", "ping")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/beep.ogg' = 1)
 
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/beep.ogg' = 1)
+/beep.ogg
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 /obj/item/toy/plush/celadon/medihound
 	name = "medi-hound plushie"
 	desc = "An adorable stuffed toy of a medihound."
 	icon_state = "plushie_medihound"
 	attack_verb = list("beep", "boop", "ping")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/beep.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/beep.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/engihound
 	name = "engi-hound plushie"
 	desc = "An adorable stuffed toy of a engihound."
 	icon_state = "plushie_engihound"
 	attack_verb = list("beep", "boop", "ping")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/beep.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/beep.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/scrubpuppy
 	name = "scrub-puppy plushie"
 	desc = "An adorable stuffed toy of a Scrubpuppy, the hard-working pup who keeps the station clean!"
 	icon_state = "plushie_scrubpuppy"
 	attack_verb = list("beep", "boop", "ping")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/beep.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/beep.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/meddrake
 	name = "medi-drake plushie"
 	desc = "An adorable stuffed toy of a Medidrake."
 	icon_state = "plushie_meddrake"
 	attack_verb = list("beep", "boop", "ping")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/beep.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/beep.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/secdrake
 	name = "sec-drake plushie"
 	desc = "An adorable stuffed toy of a Secdrake."
 	icon_state = "plushie_secdrake"
 	attack_verb = list("beep", "boop", "ping")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/beep.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/beep.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/fox
 	name = "fox plushie"
 	desc = "An adorable stuffed toy of a Fox."
 	icon_state = "plushie_fox"
 	attack_verb = list("gecker", "boop", "nuzzle")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/deerplush.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/deerplush.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/duffmoth
 	name = "suspicious moth plushie"
 	desc = "A plushie depicting a certain moth. He probably got turned into a marketable plushie."
 	icon_state = "plushie_duffy"
 	attack_verb = list("flutter", "flap", "squeak")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/mothsqueak.ogg'= 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/mothsqueak.ogg'= 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	gender = MALE
 
 /obj/item/toy/plush/celadon/leaplush
@@ -99,7 +148,11 @@
 	desc = "A cute and all too familiar deer."
 	icon_state = "plushie_lea"
 	attack_verb = list("headbutt", "plap")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/leaplush.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/leaplush.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	gender = FEMALE
 
 /obj/item/toy/plush/celadon/sarmieplush
@@ -107,7 +160,11 @@
 	desc = "A stuffed toy who look like a familiar cosplayer, <b>he looks sad.</b>"
 	icon_state = "plushie_sarmie"
 	attack_verb = list("bap")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/voice/weh.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/voice/weh.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	gender = MALE
 
 /obj/item/toy/plush/celadon/sharknet
@@ -116,7 +173,11 @@
 	icon_state = "plushie_sharknet"
 	attack_verb = list("cuddle", "squish", "weh")
 	w_class = WEIGHT_CLASS_NORMAL
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/voice/slime_squish.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/voice/slime_squish.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	young = TRUE //No.
 
 // /obj/item/toy/plush/celadon/plush/sharknet/Initialize(mapload)
@@ -128,7 +189,11 @@
 	desc = "A pint-sized cervine with a vacant look."
 	icon_state = "plushie_pinta"
 	attack_verb = list("bonk", "snug")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/voice/slime_squish.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/voice/slime_squish.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	young = TRUE //No.
 
 /obj/item/toy/plush/celadon/szaplush
@@ -136,7 +201,11 @@
 	desc = "A plushie of a shy looking drider, colored in floortile gray."
 	icon_state = "plushie_sza"
 	attack_verb = list("scuttle", "chitter", "bite")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/spiderplush.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/spiderplush.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	young = TRUE //No.
 
 /obj/item/toy/plush/celadon/riffplush
@@ -144,14 +213,22 @@
 	desc = "A stuffed toy in the likeness of a peculiar demonic one. Likely turned into a plushie to sell such. They look quite alright about it."
 	icon_state = "plushie_riffy"
 	attack_verb = list("slap", "challenge")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/slap.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/slap.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/ian
 	name = "plush corgi"
 	desc = "A plushie of an adorable corgi! Don't you just want to hug it and squeeze it and call it \"Ian\"?"
 	icon_state = "ianplushie"
 	attack_verb = list("lick", "nuzzle", "bite")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/voice/bark2.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/voice/bark2.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	young = TRUE //No.
 
 /obj/item/toy/plush/celadon/ian/small
@@ -171,7 +248,11 @@
 	desc = "A small cat plushie with black beady eyes."
 	icon_state = "blackcat"
 	attack_verb = list("cuddle", "meow", "hiss")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/merowr.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/merowr.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/cat/tux
 	name = "tux cat plushie"
@@ -186,108 +267,171 @@
 	desc = "A plushie of a particular, bundled up IPC. Underneath the cloak, you can see a plush recreation of the captain's sabre."
 	icon_state = "plushie_seadu"
 	attack_verb = list("beep", "sneed", "sword")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/synth_yes.ogg' = 1,'mod_celadon/_storge_sounds/sound/plushes/synth_no.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/synth_yes.ogg' = 1,'mod_celadon/items/sounds/plushes/synth_no.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/lizzyplush
 	name = "odd yoga lizzy plushie"
 	desc = "Brought to you by Nanotrasen Wellness Program is the Yoga Odd Lizzy! He smells vaguely of blueberries, and likely resembles a horrible lover."
 	icon_state = "plushie_lizzy"
 	attack_verb = list("weh")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/voice/weh.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/voice/weh.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/mechanic_fox
 	name = "mechanist fox plushie"
 	desc = "A fox with fabulous hair! It has a tendency to make synth plushies look good as new when placed next to them."
 	icon_state = "plushie_cali"
 	attack_verb = list("fix", "update", "hug")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/deerplush.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/deerplush.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/tribal_salamander
 	name = "tribal salamander plushie"
 	desc = "A water-safe plushie that always seems to lose any clothes you try to put on it."
 	icon_state = "plushie_azu"
 	attack_verb = list("wurbles at", "warbles at")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/voice/wurble.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/voice/wurble.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/commanding_teshari
 	name = "commanding teshari plushy"
 	desc = "A very soft plush resembling a certain science-loving, command inclined Teshari. Just holding it makes you feel cared for."
 	icon_state = "plushie_alara"
 	attack_verb = list("peeps", "wurbles", "hugs")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/voice/peep_once.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/voice/peep_once.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/breakdancing_bird
 	name = "breakdancing bird plushie"
 	desc = "This little robotic bird plushie loves to give you a little dance in celebration of your achievements, no matter how mundane."
 	icon_state = "plushie_cadicus"
 	attack_verb = list("boop", "dance next to")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/ping.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/ping.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/skreking_vox
 	name = "skreking vox plushie"
 	desc = "A vox plushie that seems ready to pull a gun on you and demand your money! Rumor has it that if you poke it in a particular way, it will show you its skrektual technique."
 	icon_state = "plushie_toko"
 	attack_verb = list("rustle at", "threaten", "skrek at")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/emotes/voxrustle.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/emotes/voxrustle.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/blue_dog
 	name = "blue dog plushie"
 	desc = "A devious looking husky that seems to be begging for headpats. It smells faintly of blueberries."
 	icon_state = "plushie_cobalt"
 	attack_verb = list("bark at", "bork at", "woof at")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/voice/bark1.ogg'=1, 'mod_celadon/_storge_sounds/sound/plushes/voice/bark2.ogg'=1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/voice/bark1.ogg'=1, 'mod_celadon/items/sounds/plushes/voice/bark2.ogg'=1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/engi_snek
 	name = "engineering snek plushie"
 	desc = "This plush looks like it knows the difference between pumps and pipes! The arm is detachable, so don't lose it!"
 	icon_state = "plushie_tyri"
 	attack_verb = list("fix", "unbolt", "weld")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/screwdriver.ogg' = 1, 'mod_celadon/_storge_sounds/sound/plushes/drill_use.ogg' = 1, 'mod_celadon/_storge_sounds/sound/plushes/welder.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/screwdriver.ogg' = 1, 'mod_celadon/items/sounds/plushes/drill_use.ogg' = 1, 'mod_celadon/items/sounds/plushes/welder.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/glitch_synth
 	name = "glitching synthetic plushie"
 	desc = "A synthetic plush, the interface seems to glitch out every time you give it a hug or call it cute!"
 	icon_state = "plushie_rex"
 	attack_verb = list("beep", "hug", "health analyze")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/twobeep_high.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/twobeep_high.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/boom_bird
 	name = "boom bird plushie"
 	desc = "This little bird plushie may look like a nerd, but you have the sneaking suspicion it might be valid! Why does your skin start to glow when you hug it?"
 	icon_state = "plushie_dima"
 	attack_verb = list("punch", "explode on", "peep")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/delam/1.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/delam/1.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/blue_cat
 	name = "blue cat plushie"
 	desc = "A bright blue cat plush with neon pink hair, here to hand out kisses wherever kisses need be. Usually found near its home habitat, the tram."
 	icon_state = "plushie_skyy"
 	attack_verb = list("kiss", "nuzzle", "cuddle", "purr against")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/voice/nya.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/voice/nya.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/igneous_synth
 	name = "igneous synth plushie"
 	desc = "Not actually made of igneous rock, giving this plush a hug will let you feel like you're being squeezed by the jaws of life!"
 	icon_state = "plushie_granite"
 	attack_verb = list("blep", "SQUEEZE", "pie")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/emotes/twobeep.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/emotes/twobeep.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/edgy_bird
 	name = "edgy birb plushie"
 	desc = "An edgy plush of an edgy bird. You could swear it's teleporting to a different spot every time you look away..."
 	icon_state = "plushie_koto"
 	attack_verb = list("peck", "teleport behind", "caw at")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/voice/caw.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/voice/caw.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/tree_ferret
 	name = "tree ferret plushy"
 	desc = "This plush will always put on a smile to make your day as bright as the sun. Hugging him makes you feel warm and fuzzy. Comes with plush chemical vials to fix your non emotional traumas too!"
 	icon_state = "plushie_sels"
 	attack_verb = list("hug", "cackle at", "health analyze")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/crunchybushwhack1.ogg' = 1)
 
 /obj/item/toy/plush/celadon/fox/mia
 	name = "Mias fox plushie"
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/crunchybushwhack1.ogg' = 1)
+
+/obj/item/toy/plush/celadon/fox/mia
+	name = "Mia’s fox plushie"
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	desc = "A small stuffed silver fox with a collar tag that says “Eavy” and a tiny bell in its fluffy tail."
 	icon_state = "miafox"
 
@@ -296,17 +440,28 @@
 	desc = "A familiar looking vixen in a peacekeeper attire, perfect for everyone who intends on venturing in the dark alone! There's a little tag which tells you to not boop its nose."
 	icon_state = "teasefox"
 	attack_verb = list("sneeze on", "detain", "taze")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/emotes/female/female_sneeze.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/emotes/female/female_sneeze.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/item/toy/plush/celadon/xixi
 	name = "familiar looking harpy plushie"
 	desc = "A plushie depicting a bright-red and oddly familiar looking harpy! The tag on the back lists distributor information and a tagline telling you how it'll add a little 'skree' to your daily grind."
 	icon_state = "plushie_xixi"
 	attack_verb = list("caw", "skree", "peck")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/voice/peep_once.ogg' = 1,'mod_celadon/_storge_sounds/sound/plushes/voice/caw.ogg' = 1,'mod_celadon/_storge_sounds/sound/plushes/voice/bawk.ogg' = 1,'mod_celadon/_storge_sounds/sound/plushes/emotes/voxscream.ogg' = 1)
 
 /obj/item/toy/plush/celadon/zapp
 	name = "Lil Zapp"
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/voice/peep_once.ogg' = 1,'mod_celadon/items/sounds/plushes/voice/caw.ogg' = 1,'mod_celadon/items/sounds/plushes/voice/bawk.ogg' = 1,'mod_celadon/items/sounds/plushes/emotes/voxscream.ogg' = 1)
+
+/obj/item/toy/plush/celadon/zapp
+	name = "Lil' Zapp"
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	desc = "An authentic piece of primo Pwr Game merchandise! \
 			This cuddly companion is the perfect ornament to decorate your battlestation. \
 			He sits upright unassisted, and can hold your headset, webcam, or keep your Pwr Game safe and secure. \
@@ -314,7 +469,11 @@
 			just squeeze him tight and Zapp will tell you if you're ready for the next big game!"
 	icon_state = "plushie_zapp"
 	attack_verb = list("boop", "nuzzle")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/can_open1.ogg' = 1, 'mod_celadon/_storge_sounds/sound/plushes/can_open2.ogg' = 1, 'mod_celadon/_storge_sounds/sound/plushes/can_open3.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/can_open1.ogg' = 1, 'mod_celadon/items/sounds/plushes/can_open2.ogg' = 1, 'mod_celadon/items/sounds/plushes/can_open3.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	///the list that is chosen from depending on gaming skill
 	var/static/list/skill_response = list(
 		"Weak! What are you, a mobile gamer?",
@@ -346,22 +505,38 @@
 /obj/item/toy/plush/celadon/zapp/attack_self(mob/user)
 	. = ..()
 	var/turf/src_turf = get_turf(src)
+<<<<<<< HEAD
 	playsound(src_turf, 'mod_celadon/_storge_sounds/sound/plushes/drink.ogg', 50, TRUE)
+=======
+	playsound(src_turf, 'mod_celadon/items/sounds/plushes/drink.ogg', 50, TRUE)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	var/skill_level = user.mind.get_skill_level(/datum/skill/gaming)
 	if(user.ckey == "cameronlancaster")
 		skill_level = (max(6, skill_level))
 	say(skill_response[skill_level])
 	if(skill_level == 7)
+<<<<<<< HEAD
 		playsound(src_turf, 'mod_celadon/_storge_sounds/sound/plushes/can_pop.ogg', 80, TRUE)
 		// new /obj/effect/abstract/liquid_turf/pwr_gamr(src_turf)
 		playsound(src_turf, 'mod_celadon/_storge_sounds/sound/plushes/bubbles.ogg', 50, TRUE)
+=======
+		playsound(src_turf, 'mod_celadon/items/sounds/plushes/can_pop.ogg', 80, TRUE)
+		new /obj/effect/abstract/liquid_turf/pwr_gamr(src_turf)
+		playsound(src_turf, 'mod_celadon/items/sounds/plushes/bubbles.ogg', 50, TRUE)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 		qdel(src)
 
 /obj/effect/abstract/liquid_turf/pwr_gamr
 	///the starting temp for the liquid
+<<<<<<< HEAD
 	// var/starting_temp = T20C
 	///the starting mixture for the liquid
 	// var/list/starting_mixture = list(/datum/reagent/consumable/pwr_game = 10)
+=======
+	var/starting_temp = T20C
+	///the starting mixture for the liquid
+	var/list/starting_mixture = list(/datum/reagent/consumable/pwr_game = 10)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /obj/effect/abstract/liquid_turf/pwr_gamr/Initialize(mapload)
 	. = ..()
@@ -378,7 +553,11 @@
 	desc = "It reminds you of a very, very, very huggable bee."
 	icon_state = "plushie_rubi"
 	gender = FEMALE
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/thudswoosh.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/thudswoosh.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	attack_verb = list("hug")
 
 // /obj/item/toy/plush/celadon/rubi/attack_self(mob/user)
@@ -399,7 +578,11 @@
 	desc = "A plush recreation of a pink sergal. The chest is extremely padded and the small plush clothes are barely holding themselves together."
 	icon_state = "plushie_roselia"
 	attack_verb = list("hug")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/voice/merp.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/voice/merp.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	young = FALSE
 
 /obj/item/toy/plush/celadon/chunko
@@ -429,7 +612,11 @@
 	icon_state = "plushie_pfbonnie"
 	gender = FEMALE
 	attack_verb = list("pat", "hug", "scold", "pet")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/mousesqueek.ogg' = 1, 'mod_celadon/_storge_sounds/sound/plushes/voice/mothsqueak.ogg' = 1,)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/mousesqueek.ogg' = 1, 'mod_celadon/items/sounds/plushes/voice/mothsqueak.ogg' = 1,)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	responses = list("Rabbits are prey animals and are therefore constantly aware of their surroundings.", "Things to jump up on (they like to be in high places)", "become a rabbit today!", "Be cunning and full of tricks...", "Subscription confirmed! Thank you for choosing RABBITFACTS +TM+!", "Holland Lops are a breed of rabbit originating in the Netherlands.", "Rabbits may need medication to keep themselves healthy, and that's ok! Make sure to take yours too!", "rabbits really liked this product", "A healthy rabbit diet includes fresh vegetables.", "Rabbits do not hibernate. Their schedules are much too busy.", "the rate of bunnies is measured by RPB (rabbits per bunny)", )
 
 /obj/item/toy/plush/celadon/chunko/andrew
@@ -438,7 +625,11 @@
 	icon_state = "plushie_pfandrew"
 	gender = MALE
 	attack_verb = list("pat", "hug", "scold", "pet")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/mousesqueek.ogg' = 1, 'mod_celadon/_storge_sounds/sound/plushes/voice/mothsqueak.ogg' = 1,)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/mousesqueek.ogg' = 1, 'mod_celadon/items/sounds/plushes/voice/mothsqueak.ogg' = 1,)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	// All lowercase messages are intentional
 	responses = list("bunny who you best pray you never encounter, lest you suffer a fate worse than death.", "this is a bunny!", "I wonder what would happen if you took bunnies, and combined them with rabbits, and merged their properties and characteristics. It's something to think about.", "If you're cold, they're cold. Give them the deed to your house.", "bunny that goes yeah! woo! yeah! woo! yeah! woo! yeah! woo! yeah! woo! yeah!", "the bunnies are beyond my comprehension", "it's a bunny thing, you wouldn't get it", "this bunny has an unfathomable power level", "%pull the string and I'll bink at you...I'm your bunny.", "Bunny (1954)", "the bunny that pulls the strings....", )
 
@@ -448,7 +639,11 @@
 	icon_state = "plushie_pfinessa"
 	gender = FEMALE
 	attack_verb = list("slash", "dissect", "yawn", "smoke")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/emotes/female/female_cough_3.ogg' = 1, 'mod_celadon/_storge_sounds/sound/plushes/emotes/female/female_cough_2.ogg' = 1, 'mod_celadon/_storge_sounds/sound/plushes/emotes/female/female_cough_1.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/emotes/female/female_cough_3.ogg' = 1, 'mod_celadon/items/sounds/plushes/emotes/female/female_cough_2.ogg' = 1, 'mod_celadon/items/sounds/plushes/emotes/female/female_cough_1.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	responses = list("The human body can survive three weeks without skiiiiiiiiiiin.", "The thigh bone is connected to the hip boooooooooone.", "Yeeeessss?", "Helloooooo.", "Don't be such a baby, ribs grow baaaaaaaaaack.",)
 
 // Donation reward for tobjv
@@ -466,7 +661,11 @@
 /obj/item/toy/plush/celadon/immovable_rod/Bump(atom/clong)
 	. = ..()
 	if(isliving(clong))
+<<<<<<< HEAD
 		playsound(src, 'mod_celadon/_storge_sounds/sound/plushes/bang.ogg', 50, TRUE)
+=======
+		playsound(src, 'mod_celadon/items/sounds/plushes/bang.ogg', 50, TRUE)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 		return
 
 // Donation reward for gamerguy14948
@@ -487,7 +686,11 @@
 	desc = "The plushie of a celestial in the known universe."
 	icon_state = "plushie_star"
 	gender = FEMALE
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/voice/trills.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/voice/trills.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 // Donation reward for SRQ
 /obj/item/toy/plush/celadon/plushie_chiara
@@ -520,7 +723,11 @@
 	desc = "A determined scientist with a hint of mischief in her smile."
 	icon_state = "plush_scishark"
 	attack_verb = list("bite", "eat", "fin slap")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/bite.ogg'=1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/bite.ogg'=1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 //Other donation reward for Razurath
 /obj/item/toy/plush/celadon/plushie_razurath/second
@@ -534,7 +741,11 @@
 	desc = "A white-haired wolfgirl in a stylish red security skirt. Despite her scary cybernetic arm, she is soft to hug and only wishes to be praised and comforted."
 	icon_state = "plush_lonie"
 	attack_verb = list("snuggle", "nibble", "awoo", "tail whap")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/merowr.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/merowr.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 //Donation reward for syntax1112
 /obj/item/toy/plush/celadon/plushie_syntax1112
@@ -542,7 +753,11 @@
 	desc = "A floppy-eared rabbit in marketable plushie form. Complete with an internal self-inflating squeaker device!"
 	icon_state = "fuzz_bunny"
 	attack_verb = list("nibble", "squeak", "nose twitch", "thump", "whop")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/deerplush.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/deerplush.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 // Donation reward for SomeRandomOwl
 /obj/item/toy/plush/celadon/snow_owl
@@ -550,7 +765,11 @@
 	desc = "A very soft plush resembling a feathery snow owl. It has a cute witch like hat and hoots every time you squeeze it. It smells faintly of oreo cookies."
 	icon_state = "plushie_owl"
 	attack_verb = list("nuzzle", "hoot", "hug")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/voice/hoot.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/voice/hoot.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 // Donation reward for Jolly66
 /obj/item/toy/plush/celadon/derg_plushie
@@ -559,7 +778,11 @@
 		Comes with an additional paramedic cap."
 	icon_state = "plushie_derg"
 	attack_verb = list("weh", "weh softly", "stutter")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/voice/weh.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/voice/weh.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 // Donation reward for Gofawful5
 /obj/item/toy/plush/celadon/tracy
@@ -567,7 +790,11 @@
 	desc = "An astonishingly well-endowed catfox plushie... It seems content."
 	icon_state = "plush_tracy"
 	attack_verb = list("expand")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/tracymrowr.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/tracymrowr.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	gender = FEMALE
 
 //Donation reward for Frixit
@@ -576,7 +803,11 @@
 	desc = "This plush is perfect For adventures in space and in bed, a cuddly purple Synth, their scarf is extra soft!"
 	icon_state = "plushie_synthia"
 	attack_verb = list("blush", "hug", "whip")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/emotes/twobeep.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/emotes/twobeep.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 //Donation reward for Kitsun
 /obj/item/toy/plush/celadon/jecca
@@ -584,7 +815,11 @@
 	desc = "For some reason, this plushie is rather shiny, with glistening, glittering scales, and its ruby colored eyes seem to be rather enticing and full of mischievous, lewd thoughts behind them."
 	icon_state = "plushie_jecca"
 	attack_verb = list("sigh")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/emotes/female/female_sigh.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/emotes/female/female_sigh.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	gender = FEMALE
 
 //Donation reward for BriareosBlue
@@ -593,6 +828,7 @@
 	desc = "This synth plushie looks about ready to deliver hugs and beeps straight to the heart! The tag seems to have an advertisement for a delivery company on it..."
 	icon_state = "plushie_courier"
 	attack_verb = list("deliver", "export scan", "dwoop", "bwuh", "stamp")
+<<<<<<< HEAD
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/emotes/twobeep.ogg' = 1)
 
 //Donation reward for olirant
@@ -602,6 +838,17 @@
 	icon_state = "plush_janiborg"
 	attack_verb = list("beep", "wash", "mop", "squirt", "soap")
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/twobeep.ogg' = 1)
+=======
+	squeak_override = list('mod_celadon/items/sounds/plushes/emotes/twobeep.ogg' = 1)
+
+//Donation reward for olirant
+/obj/item/toy/plush/celadon/plush_janiborg
+	name = "Friendly Janiborg Plush"
+	desc = "A miniature omnidroid toy straight from the Lockstep Enterprises Corporation marketing department in handsome janitorial purple. Now with real squirting action!"
+	icon_state = "plush_janiborg"
+	attack_verb = list("beep", "wash", "mop", "squirt", "soap")
+	squeak_override = list('mod_celadon/items/sounds/plushes/twobeep.ogg' = 1)
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 
 /// PARADISE
 /obj/item/toy/plush/celadon/kotwithfunnyhat
@@ -617,13 +864,18 @@
 /obj/random/carp_plushie
 	name = "Random Carp Plushie"
 	desc = "This is a random plushie"
+<<<<<<< HEAD
 	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
+=======
+	icon = 'mod_celadon/items/icons/plushes.dmi'
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	icon_state = "carpplushie"
 
 // /obj/random/carp_plushie/item_to_spawn()
 // 	return pick(typesof(/obj/item/toy/plush/carpplushie)) //can pick any carp plushie, even the original.
 
 /obj/item/toy/plush/carpplushie/ice
+<<<<<<< HEAD
 	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
 	icon_state = "icecarp"
 
@@ -661,15 +913,61 @@
 
 /obj/item/toy/plush/carpplushie/void
 	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
+=======
+	icon = 'mod_celadon/items/icons/plushes.dmi'
+	icon_state = "icecarp"
+
+/obj/item/toy/plush/carpplushie/silent
+	icon = 'mod_celadon/items/icons/plushes.dmi'
+	icon_state = "silentcarp"
+
+/obj/item/toy/plush/carpplushie/electric
+	icon = 'mod_celadon/items/icons/plushes.dmi'
+	icon_state = "electriccarp"
+
+/obj/item/toy/plush/carpplushie/gold
+	icon = 'mod_celadon/items/icons/plushes.dmi'
+	icon_state = "goldcarp"
+
+/obj/item/toy/plush/carpplushie/toxin
+	icon = 'mod_celadon/items/icons/plushes.dmi'
+	icon_state = "toxincarp"
+
+/obj/item/toy/plush/carpplushie/dragon
+	icon = 'mod_celadon/items/icons/plushes.dmi'
+	icon_state = "dragoncarp"
+
+/obj/item/toy/plush/carpplushie/pink
+	icon = 'mod_celadon/items/icons/plushes.dmi'
+	icon_state = "pinkcarp"
+
+/obj/item/toy/plush/carpplushie/candy
+	icon = 'mod_celadon/items/icons/plushes.dmi'
+	icon_state = "candycarp"
+
+/obj/item/toy/plush/carpplushie/nebula
+	icon = 'mod_celadon/items/icons/plushes.dmi'
+	icon_state = "nebulacarp"
+
+/obj/item/toy/plush/carpplushie/void
+	icon = 'mod_celadon/items/icons/plushes.dmi'
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	icon_state = "voidcarp"
 
 /obj/item/toy/plush/axolotlplushie
 	name = "axolotl plushie"
 	desc = "An adorable stuffed toy that resembles an axolotl. Not to be mistaken for the real thing."
+<<<<<<< HEAD
 	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
 	icon_state = "plushie_axolotl"
 	attack_verb = list("nibbles", "splats")
 	var/axolotlbite = 'mod_celadon/_storge_sounds/sound/plushes/axolotl.ogg'
+=======
+	icon_state = "plushie_axolotl"
+	item_state = "axolotl"
+	attack_verb = list("nibbles", "splats")
+	var/axolotlbite = 'mod_celadon/items/sounds/plushes/axolotl.ogg'
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	var/cooldown = FALSE
 
 /obj/item/toy/plush/axolotlplushie/attack(mob/M as mob, mob/user as mob)
@@ -680,8 +978,13 @@
 	if(cooldown)
 		return ..()
 
+<<<<<<< HEAD
 	playsound(src, 'mod_celadon/_storge_sounds/sound/plushes/axolotl.ogg', 20, 0)
 	user.visible_message(span_boldnotice(span_danger("Squeeek!")))
+=======
+	playsound(src, 'mod_celadon/items/sounds/plushes/axolotl.ogg', 20, 0)
+	visible_message("<span class='danger'>Squeeek!</span>")
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	cooldown = TRUE
 	addtimer(VARSET_CALLBACK(src, cooldown, FALSE), 3 SECONDS)
 
@@ -696,14 +999,20 @@
 	icon_state = "pig1"
 
 /obj/item/toy/plush/celadon/toolbox
+<<<<<<< HEAD
 	name = "rubber toolbox"
 	desc = "Practice your robust!"
 	icon_state = "rubber_toolbox"
+=======
+	name = "Rubber Toolbox"
+	desc = "Practice your robust!"
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	damtype = STAMINA
 	force = 10
 	throwforce = 15
 	w_class = WEIGHT_CLASS_BULKY
 	attack_verb = list("robusted")
+<<<<<<< HEAD
 	hitsound = 'mod_celadon/_storge_sounds/sound/plushes/squeaktoy.ogg'
 
 /obj/item/toy/plush/celadon/shardplushie
@@ -712,62 +1021,114 @@
 	icon_state = "plushie_shard"
 	attack_verb = list("annihilates", "scratched")
 	var/shardbite = 'mod_celadon/_storge_sounds/sound/plushes/supermatter.ogg'
+=======
+	hitsound = 'mod_celadon/items/sounds/plushes/squeaktoy.ogg'
+
+/obj/item/toy/plush/celadon/shardplushie
+	name = "Shard plushie"
+	desc = "A plushie shard of supermatter crystal. Safety 100%."
+	icon_state = "plushie_shard"
+	attack_verb = list("annihilates", "scratched")
+	var/shardbite = 'mod_celadon/items/sounds/plushes/supermatter.ogg'
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	var/cooldown = FALSE
 
 /obj/item/toy/plush/celadon/shardplushie/attack_self(mob/user)
 	if(cooldown)
 		return ..()
 
+<<<<<<< HEAD
 	playsound(loc, pick('mod_celadon/_storge_sounds/sound/plushes/supermatter.ogg', 'mod_celadon/_storge_sounds/sound/plushes/glass_step_sm.ogg'), 10, 1)
 	user.visible_message(span_boldnotice(span_danger(" DESTABILIZATION!")))
+=======
+	playsound(loc, pick('mod_celadon/items/sounds/plushes/supermatter.ogg', 'mod_celadon/items/sounds/plushes/glass_step_sm.ogg'), 10, 1)
+	visible_message("<span class='danger'> DESTABILIZATION!</span>")
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	cooldown = TRUE
 	addtimer(VARSET_CALLBACK(src, cooldown, FALSE), 3 SECONDS)
 
 /obj/item/toy/plush/celadon/shardplushie/attack(mob/M as mob, mob/user as mob)
+<<<<<<< HEAD
     playsound(loc, pick('mod_celadon/_storge_sounds/sound/plushes/supermatter.ogg', 'mod_celadon/_storge_sounds/sound/plushes/glass_step_sm.ogg',), 10, 1)
     return ..()
 
 /obj/item/toy/plush/celadon/hampter
 	name = "hampter"
+=======
+    playsound(loc, pick('mod_celadon/items/sounds/plushes/supermatter.ogg', 'mod_celadon/items/sounds/plushes/glass_step_sm.ogg',), 10, 1)
+    return ..()
+
+/obj/item/toy/plush/celadon/hampter
+	name = "Hampter"
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	desc = "The people demand hampters!"
 	icon_state = "hampter"
 
 /obj/item/toy/plush/celadon/hampter/asisstant
+<<<<<<< HEAD
 	name = "hampter the Assitant"
+=======
+	name = "Hampter the Assitant"
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	desc = "More or less helpful."
 	icon_state = "hampter_ass"
 
 /obj/item/toy/plush/celadon/hampter/security
+<<<<<<< HEAD
 	name = "The anti-honk hampter"
+=======
+	name = "The anti-honk Hampter"
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	desc = "OBEY!"
 	icon_state = "hampter_sec"
 
 /obj/item/toy/plush/celadon/hampter/medic
+<<<<<<< HEAD
 	name = "hampter the Doctor"
+=======
+	name = "Hampter the Doctor"
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	desc = "Don't take his pills."
 	icon_state = "hampter_med"
 
 /obj/item/toy/plush/celadon/hampter/janitor
+<<<<<<< HEAD
 	name = "hampter the Janitor"
+=======
+	name = "Hampter the Janitor"
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	desc = "I'll call you - Den."
 	icon_state = "hampter_jan"
 
 /obj/item/toy/plush/celadon/hampter/captain
+<<<<<<< HEAD
 	name = "hampter the Captain"
+=======
+	name = "Hampter the Captain"
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	desc = "Thinks he is the Head."
 	icon_state = "hampter_cap"
 
 /obj/item/toy/plush/celadon/hampter/captain/old
+<<<<<<< HEAD
 	name = "hampter the first Captain"
+=======
+	name = "Hampter the first Captain"
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	desc = "Thinks he is the original Head."
 	icon_state = "hampter_old_cap"
 
 /obj/item/toy/plush/celadon/hampter/syndi
+<<<<<<< HEAD
 	name = "hampter the Red Baron"
+=======
+	name = "Hampter the Red Baron"
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
 	desc = "The real Head."
 	icon_state = "hampter_sdy"
 
 /obj/item/toy/plush/celadon/hampter/death_squad
+<<<<<<< HEAD
 	name = "who?"
 	desc = "don't call him - daddy."
 	icon_state = "hampter_ded"
@@ -945,3 +1306,13 @@
 	message = "СМЕРТЬ МОНОПОЛИСТАМ!"
 	user.visible_message(span_bolddanger(message))
 	COOLDOWN_START(src, cooldown, 3 SECONDS)
+=======
+	name = "Who?"
+	desc = "Don't call him - daddy."
+	icon_state = "hampter_ded"
+
+/obj/item/toy/plush/celadon/hampter/ert_squad
+	name = "Hampter the Major"
+	desc = "Faces into the floor!"
+	icon_state = "hampter_ert"
+>>>>>>> 2c38c46261 (Add: plushe toys (#551))
