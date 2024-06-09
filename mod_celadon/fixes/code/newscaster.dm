@@ -1,4 +1,3 @@
-/* [CELADON-REMOVE] - Перенесено в mod_celadon\fixes\code\newscaster.dm
 GLOBAL_DATUM_INIT(news_network, /datum/newscaster/feed_network, new)
 GLOBAL_LIST_EMPTY(allCasters)
 
@@ -108,7 +107,7 @@ GLOBAL_LIST_EMPTY(allCasters)
 	var/redactedText = "\[REDACTED\]"
 
 /datum/newscaster/feed_network/New()
-	CreateFeedChannel("Colonial Announcement Network", "SS13", 1)
+	CreateFeedChannel("Колониальная сеть объявлений", "SS13", 1)
 	wanted_issue = new /datum/newscaster/wanted_message
 
 /datum/newscaster/feed_network/proc/CreateFeedChannel(channel_name, author, locked, adminChannel = 0)
@@ -173,7 +172,7 @@ GLOBAL_LIST_EMPTY(allCasters)
 
 /obj/item/wallframe/newscaster
 	name = "newscaster frame"
-	desc = "Used to build newscasters, just secure to the wall."
+	desc = "Используется для создания newscasters, просто крепится к стене."
 	icon_state = "newscaster"
 	custom_materials = list(/datum/material/iron=14000, /datum/material/glass=8000)
 	result_path = /obj/machinery/newscaster
@@ -183,7 +182,7 @@ GLOBAL_LIST_EMPTY(allCasters)
 
 /obj/machinery/newscaster
 	name = "newscaster"
-	desc = "A standard Nanotrasen brand newsfeed handler. All the news you absolutely have no use for, in one place!"
+	desc = "Стандартный обработчик новостной ленты. Все новости, которые вам совершенно не нужны, в одном месте!"
 	icon = 'icons/obj/terminals.dmi'
 	icon_state = "newscaster"
 	base_icon_state = "newscaster"
@@ -273,68 +272,68 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 		scan_user(human_or_robot_user)
 		switch(screen)
 			if(0)
-				dat += "Welcome to Newscasting Unit #[unit_no].<BR> Interface & News networks Operational."
-				dat += "<BR><FONT SIZE=1>Property of Nanotrasen Inc</FONT>"
+				dat += "Добро пожаловать в новостной монитор #[unit_no].<BR> Системы успешно загружены и доступны."
+				dat += "<BR><FONT SIZE=1>Разработано корпорацией: Griffon Inc</FONT>"
 				if(GLOB.news_network.wanted_issue.active)
-					dat+= "<HR><A href='byond://?src=[REF(src)];view_wanted=1'>Read Wanted Issue</A>"
-				dat+= "<HR><BR><A href='byond://?src=[REF(src)];create_channel=1'>Create Feed Channel</A>"
-				dat+= "<BR><A href='byond://?src=[REF(src)];view=1'>View Feed Channels</A>"
-				dat+= "<BR><A href='byond://?src=[REF(src)];create_feed_story=1'>Submit new Feed story</A>"
-				dat+= "<BR><A href='byond://?src=[REF(src)];menu_paper=1'>Print newspaper</A>"
-				dat+= "<BR><A href='byond://?src=[REF(src)];refresh=1'>Re-scan User</A>"
-				dat+= "<BR><BR><A href='byond://?src=[REF(human_or_robot_user)];mach_close=newscaster_main'>Exit</A>"
+					dat+= "<HR><A href='?src=[REF(src)];view_wanted=1'>Межсекторный розыск</A>"
+				dat+= "<HR><BR><A href='?src=[REF(src)];create_channel=1'>Создать новостной канал</A>"
+				dat+= "<BR><A href='?src=[REF(src)];view=1'>Ознакомиться с лентой каналов</A>"
+				dat+= "<BR><A href='?src=[REF(src)];create_feed_story=1'>> Создать новый пост</A>"
+				dat+= "<BR><A href='?src=[REF(src)];menu_paper=1'>> Напечатать газету</A>"
+				dat+= "<BR><A href='?src=[REF(src)];refresh=1'>Обновить пользователя</A>"
+				dat+= "<BR><BR><A href='?src=[REF(human_or_robot_user)];mach_close=newscaster_main'>Выйти</A>"
 				if(securityCaster)
 					var/wanted_already = 0
 					if(GLOB.news_network.wanted_issue.active)
 						wanted_already = 1
-					dat+="<HR><B>Feed Security functions:</B><BR>"
-					dat+="<BR><A href='byond://?src=[REF(src)];menu_wanted=1'>[(wanted_already) ? ("Manage") : ("Publish")] \"Wanted\" Issue</A>"
-					dat+="<BR><A href='byond://?src=[REF(src)];menu_censor_story=1'>Censor Feed Stories</A>"
-					dat+="<BR><A href='byond://?src=[REF(src)];menu_censor_channel=1'>Mark Feed Channel with Nanotrasen D-Notice</A>"
-				dat+="<BR><HR>The newscaster recognises you as: <FONT COLOR='green'>[scanned_user]</FONT>"
+					dat+="<HR><B>Модуль безопасности системы Griffon:</B><BR>"
+					dat+="<BR><A href='?src=[REF(src)];menu_wanted=1'>[(wanted_already) ? ("Настроить") : ("Объявить")] \"Розыск\"</A>"
+					dat+="<BR><A href='?src=[REF(src)];menu_censor_story=1'>Цензура новостей</A>"
+					dat+="<BR><A href='?src=[REF(src)];menu_censor_channel=1'>Установить метку D-Notice</A>"
+				dat+="<BR><HR>Вы были успешно зарегистрированы под именем:<BR><FONT COLOR='green'>[scanned_user]</FONT>"
 			if(1)
-				dat+= "Feed Channels<HR>"
+				dat+= "Доступные каналы в вашем секторе:<HR>"
 				if(!length(GLOB.news_network.network_channels))
-					dat+="<I>No active channels found...</I>"
+					dat+="<I>Активные каналы не найдены...</I>"
 				else
 					for(var/datum/newscaster/feed_channel/CHANNEL in GLOB.news_network.network_channels)
 						if(CHANNEL.is_admin_channel)
-							dat+="<B><FONT style='BACKGROUND-COLOR: LightGreen '><A href='byond://?src=[REF(src)];show_channel=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A></FONT></B><BR>"
+							dat+="<B><FONT style='BACKGROUND-COLOR: LightGreen '><A href='?src=[REF(src)];show_channel=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A></FONT></B><BR>"
 						else
-							dat+="<B><A href='byond://?src=[REF(src)];show_channel=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A> [(CHANNEL.censored) ? ("<FONT COLOR='red'>***</FONT>") : ""]<BR></B>"
-				dat+="<BR><HR><A href='byond://?src=[REF(src)];refresh=1'>Refresh</A>"
-				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Back</A>"
+							dat+="<B><A href='?src=[REF(src)];show_channel=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A> [(CHANNEL.censored) ? ("<FONT COLOR='red'>***</FONT>") : ""]<BR></B>"
+				dat+="<BR><HR><A href='?src=[REF(src)];refresh=1'>Обновить</A>"
+				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A>"
 			if(2)
-				dat+="Creating new Feed Channel..."
-				dat+="<HR><B><A href='byond://?src=[REF(src)];set_channel_name=1'>Channel Name</A>:</B> [channel_name]<BR>"
-				dat+="<B>Channel Author:</B> <FONT COLOR='green'>[scanned_user]</FONT><BR>"
-				dat+="<B><A href='byond://?src=[REF(src)];set_channel_lock=1'>Will Accept Public Feeds</A>:</B> [(c_locked) ? ("NO") : ("YES")]<BR><BR>"
-				dat+="<BR><A href='byond://?src=[REF(src)];submit_new_channel=1'>Submit</A><BR><BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Cancel</A><BR>"
+				dat+="Регистрация нового канала:"
+				dat+="<HR><B><A href='?src=[REF(src)];set_channel_name=1'>Название канала</A>:</B> [channel_name]<BR>"
+				dat+="<B>Автор канала:</B> <FONT COLOR='green'>[scanned_user]</FONT><BR>"
+				dat+="<B><A href='?src=[REF(src)];set_channel_lock=1'>Будет ли канал являться публичным?</A>:</B> [(c_locked) ? ("Нет") : ("Да")]<BR><BR>"
+				dat+="<BR><A href='?src=[REF(src)];submit_new_channel=1'>Подтвердить</A><BR><BR><A href='?src=[REF(src)];setScreen=[0]'>Отмена</A><BR>"
 			if(3)
-				dat+="Creating new Feed Message..."
-				dat+="<HR><B><A href='byond://?src=[REF(src)];set_channel_receiving=1'>Receiving Channel</A>:</B> [channel_name]<BR>"
-				dat+="<B>Message Author:</B> <FONT COLOR='green'>[scanned_user]</FONT><BR>"
-				dat+="<B><A href='byond://?src=[REF(src)];set_new_message=1'>Message Body</A>:</B> <BR><font face=\"[PEN_FONT]\">[parsemarkdown(msg, user)]</font><BR>"
-				dat+="<B><A href='byond://?src=[REF(src)];set_attachment=1'>Attach Photo</A>:</B>  [(picture ? "Photo Attached" : "No Photo")]</BR>"
-				dat+="<B><A href='byond://?src=[REF(src)];set_comment=1'>Comments [allow_comments ? "Enabled" : "Disabled"]</A></B><BR>"
-				dat+="<BR><A href='byond://?src=[REF(src)];submit_new_message=1'>Submit</A><BR><BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Cancel</A><BR>"
+				dat+="Публикация нового поста:"
+				dat+="<HR><B><A href='?src=[REF(src)];set_channel_receiving=1'>Выбранный канал</A>:</B> [channel_name]<BR>"
+				dat+="<B>Автор сообщения:</B> <FONT COLOR='green'>[scanned_user]</FONT><BR>"
+				dat+="<B><A href='?src=[REF(src)];set_new_message=1'>Сообщение</A>:</B> <BR><font face=\"[PEN_FONT]\">[parsemarkdown(msg, user)]</font><BR>"
+				dat+="<B><A href='?src=[REF(src)];set_attachment=1'>Прикреплённые сообщения</A>:</B>  [(picture ? "Фото прикреплено" : "Фото отсутствует")]</BR>"
+				dat+="<B><A href='?src=[REF(src)];set_comment=1'>Комментарии [allow_comments ? "разрешены" : "отключены"]</A></B><BR>"
+				dat+="<BR><A href='?src=[REF(src)];submit_new_message=1'>Подтвердить</A><BR><BR><A href='?src=[REF(src)];setScreen=[0]'>Отмена</A><BR>"
 			if(4)
-				dat+="Feed story successfully submitted to [channel_name].<BR><BR>"
-				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Return</A><BR>"
+				dat+="Новый пост успешно загружен ​​на канал '[channel_name]'.<BR><BR>"
+				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
 			if(5)
-				dat+="Feed Channel [channel_name] created successfully.<BR><BR>"
-				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Return</A><BR>"
+				dat+="Канал '[channel_name]' успешно создан.<BR><BR>"
+				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
 			if(6)
-				dat+="<B><FONT COLOR='maroon'>ERROR: Could not submit Feed story to Network.</B></FONT><HR><BR>"
+				dat+="<B><FONT COLOR='DarkTurquoisen'>ОШИБКА:</FONT> <FONT COLOR='Crimson'>Не удалось отправить новый пост в сеть.</FONT></B><HR><BR>"
 				if(channel_name=="")
-					dat+="<FONT COLOR='maroon'>Invalid receiving channel name.</FONT><BR>"
+					dat+="<FONT COLOR='DarkTurquoisen'>Неверное имя для канала.</FONT><BR>"
 				if(scanned_user=="Unknown")
-					dat+="<FONT COLOR='maroon'>Channel author unverified.</FONT><BR>"
+					dat+="<FONT COLOR='DarkTurquoisen'>Автор канала не определён.</FONT><BR>"
 				if(msg == "" || msg == "\[REDACTED\]")
-					dat+="<FONT COLOR='maroon'>Invalid message body.</FONT><BR>"
-				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[3]'>Return</A><BR>"
+					dat+="<FONT COLOR='DarkTurquoisen'>Недопустимое сообщение.</FONT><BR>"
+				dat+="<BR><A href='?src=[REF(src)];setScreen=[3]'>Return</A><BR>"
 			if(7)
-				dat+="<B><FONT COLOR='maroon'>ERROR: Could not submit Feed Channel to Network.</B></FONT><HR><BR>"
+				dat+="<B><FONT COLOR='DarkTurquoisen'>ОШИБКА:</FONT> <FONT COLOR='Crimson'>Не удалось создать канал в сети Griffon.</FONT></B><HR><BR>"
 				var/list/existing_authors = list()
 				for(var/datum/newscaster/feed_channel/FC in GLOB.news_network.network_channels)
 					if(FC.authorCensor)
@@ -342,19 +341,19 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 					else
 						existing_authors += FC.author
 				if(scanned_user in existing_authors)
-					dat+="<FONT COLOR='maroon'>There is already a Feed channel under your name.</FONT><BR>"
+					dat+="<FONT COLOR='DarkTurquoisen'>Вы уже являетесь автором одного из каналов.</FONT><BR>"
 				if(channel_name=="" || channel_name == "\[REDACTED\]")
-					dat+="<FONT COLOR='maroon'>Invalid channel name.</FONT><BR>"
+					dat+="<FONT COLOR='DarkTurquoisen'>Неверное имя канала.</FONT><BR>"
 				var/check = 0
 				for(var/datum/newscaster/feed_channel/FC in GLOB.news_network.network_channels)
 					if(FC.channel_name == channel_name)
 						check = 1
 						break
 				if(check)
-					dat+="<FONT COLOR='maroon'>Channel name already in use.</FONT><BR>"
+					dat+="<FONT COLOR='DarkTurquoisen'>Название канала уже используется.</FONT><BR>"
 				if(scanned_user=="Unknown")
-					dat+="<FONT COLOR='maroon'>Channel author unverified.</FONT><BR>"
-				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[2]'>Return</A><BR>"
+					dat+="<FONT COLOR='DarkTurquoisen'>Автор канала не определён.</FONT><BR>"
+				dat+="<BR><A href='?src=[REF(src)];setScreen=[2]'>Вернуться</A><BR>"
 			if(8)
 				var/total_num=length(GLOB.news_network.network_channels)
 				var/active_num=total_num
@@ -364,147 +363,147 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 						message_num += length(FC.messages)
 					else
 						active_num--
-				dat+="Network currently serves a total of [total_num] Feed channels, [active_num] of which are active, and a total of [message_num] Feed Stories."
-				dat+="<BR><BR><B>Liquid Paper remaining:</B> [(paper_remaining) *100 ] cm^3"
-				dat+="<BR><BR><A href='byond://?src=[REF(src)];print_paper=[0]'>Print Paper</A>"
-				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Cancel</A>"
+				dat+="В настоящее время сеть обслуживает в общей сложности [total_num] новостных каналов, [active_num] из них активны, и всего [message_num] постов."
+				dat+="<BR><BR><B>Остаток жидкой бумаги:</B> [(paper_remaining) *100 ] cm^3"
+				dat+="<BR><BR><A href='?src=[REF(src)];print_paper=[0]'>Распечатать газету</A>"
+				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Отмена</A>"
 			if(9)
-				dat+="<B>[viewing_channel.channel_name]: </B><FONT SIZE=1>\[created by: <FONT COLOR='maroon'>[viewing_channel.returnAuthor(-1)]</FONT>\]</FONT><HR>"
+				dat+="<B>[viewing_channel.channel_name]:<BR> </B><FONT SIZE=1>\[Автор: <FONT COLOR='DarkTurquoise'>[viewing_channel.returnAuthor(-1)]</FONT>\]</FONT><HR>"
 				if(viewing_channel.censored)
-					dat+="<FONT COLOR='red'><B>ATTENTION: </B></FONT>This channel has been deemed as threatening to the welfare of the sector, and marked with a Nanotrasen D-Notice.<BR>"
-					dat+="No further feed story additions are allowed while the D-Notice is in effect.</FONT><BR><BR>"
+					dat+="<FONT COLOR='red'><B>ВНИМАНИЕ: </B></FONT>Этот канал был признан угрожающим благополучию сектора и отмечен меткой 'D-Notice' администрацией информационной сети Griffon.<BR>"
+					dat+="Под действием метки 'D-Notice' дальнейший просмотр канала и добавление новых постов запрещено.</FONT><BR><BR>"
 				else
 					if(!length(viewing_channel.messages))
-						dat+="<I>No feed messages found in channel...</I><BR>"
+						dat+="<I>В канале не найдено каких-либо постов...</I><BR>"
 					else
 						var/i = 0
 						for(var/datum/newscaster/feed_message/MESSAGE in viewing_channel.messages)
 							i++
-							dat+="-[MESSAGE.returnBody(-1)] <BR>"
+							dat+="[MESSAGE.returnBody(-1)] <BR>"
 							if(MESSAGE.img)
 								usr << browse_rsc(MESSAGE.img, "tmp_photo[i].png")
 								dat+="<img src='tmp_photo[i].png' width = '180'><BR>"
 								if(MESSAGE.caption)
 									dat+="[MESSAGE.caption]<BR>"
 								dat+="<BR>"
-							dat+="<FONT SIZE=1>\[Story by <FONT COLOR='maroon'>[MESSAGE.returnAuthor(-1)] </FONT>\] - ([MESSAGE.time_stamp])</FONT><BR>"
+							dat+="<FONT SIZE=2>\[Автор: <FONT COLOR='DarkTurquoise'>[MESSAGE.returnAuthor(-1)] </FONT>\] ([MESSAGE.time_stamp])</FONT><BR>"
 							dat+="<b><font size=1>[MESSAGE.comments.len] comment[MESSAGE.comments.len > 1 ? "s" : ""]</font></b><br>"
 							for(var/datum/newscaster/feed_comment/comment in MESSAGE.comments)
-								dat+="<font size=1><small>[comment.body]</font><br><font size=1><small><small><small>[comment.author] [comment.time_stamp]</small></small></small></small></font><br>"
+								dat+="<font size=2><small> - [comment.body]</font><br><font size=2><small><small>[comment.author] [comment.time_stamp]</small></small></small></font><br>"
 							if(MESSAGE.locked)
-								dat+="<b>Comments locked</b><br>"
+								dat+="<b>Комментарии заблокированы</b><br>"
 							else
-								dat+="<a href='byond://?src=[REF(src)];new_comment=[REF(MESSAGE)]'>Comment</a><br>"
-				dat+="<BR><HR><A href='byond://?src=[REF(src)];refresh=1'>Refresh</A>"
-				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[1]'>Back</A>"
+								dat+="<a href='?src=[REF(src)];new_comment=[REF(MESSAGE)]'>Прокомментировать</a><br>"
+				dat+="<BR><HR><A href='?src=[REF(src)];refresh=1'>Обновить</A>"
+				dat+="<BR><A href='?src=[REF(src)];setScreen=[1]'>Вернуться</A>"
 			if(10)
-				dat+="<B>Nanotrasen Feed Censorship Tool</B><BR>"
-				dat+="<FONT SIZE=1>NOTE: Due to the nature of news Feeds, total deletion of a Feed Story is not possible.<BR>"
-				dat+="Keep in mind that users attempting to view a censored feed will instead see the \[REDACTED\] tag above it.</FONT>"
-				dat+="<HR>Select Feed channel to get Stories from:<BR>"
+				dat+="<B>Инструмент цензуры каналов сети Griffon</B><BR>"
+				dat+="<FONT SIZE=1>ПРИМЕЧАНИЕ: Из-за технических работ полное удаление каналов невозможно.<BR>"
+				dat+="Имейте в виду, что пользователи, пытающиеся просмотреть цензурированный канал, вместо канала увидят \[REDACTED\] тег над ним.</FONT>"
+				dat+="<HR>Выберите канал, чтобы ознакомиться с лентой:<BR>"
 				if(!length(GLOB.news_network.network_channels))
-					dat+="<I>No feed channels found active...</I><BR>"
+					dat+="<I>Активные каналы не найдены...</I><BR>"
 				else
 					for(var/datum/newscaster/feed_channel/CHANNEL in GLOB.news_network.network_channels)
-						dat+="<A href='byond://?src=[REF(src)];pick_censor_channel=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A> [(CHANNEL.censored) ? ("<FONT COLOR='red'>***</FONT>") : ""]<BR>"
-				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Cancel</A>"
+						dat+="<A href='?src=[REF(src)];pick_censor_channel=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A> [(CHANNEL.censored) ? ("<FONT COLOR='red'>***</FONT>") : ""]<BR>"
+				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Отмена</A>"
 			if(11)
-				dat+="<B>Nanotrasen D-Notice Handler</B><HR>"
-				dat+="<FONT SIZE=1>A D-Notice is to be bestowed upon the channel if the handling Authority deems it as harmful for the sector's"
-				dat+="morale, integrity or due for disciplinary behaviour. A D-Notice will render a channel unable to be updated by anyone, without deleting any feed"
-				dat+="stories it might contain at the time. You can lift a D-Notice if you have the required access at any time.</FONT><HR>"
+				dat+="<B>Модуль D-Notice:</B><HR>"
+				dat+="<FONT SIZE=1>Метка D-Notice должна быть прикреплена к каналу, если администрация сочтет его запрещённым для сектора. "
+				dat+="D-Notice сделает канал недоступным для обновления кем-либо, но без удаления самого канала. "
+				dat+="Вы можете отменить D-Notice, если у вас есть необходимый доступ, в любое время.</FONT><HR>"
 				if(!length(GLOB.news_network.network_channels))
-					dat+="<I>No feed channels found active...</I><BR>"
+					dat+="<I>Активные каналы не найдены...</I><BR>"
 				else
 					for(var/datum/newscaster/feed_channel/CHANNEL in GLOB.news_network.network_channels)
-						dat+="<A href='byond://?src=[REF(src)];pick_d_notice=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A> [(CHANNEL.censored) ? ("<FONT COLOR='red'>***</FONT>") : ""]<BR>"
-				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Back</A>"
+						dat+="<A href='?src=[REF(src)];pick_d_notice=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A> [(CHANNEL.censored) ? ("<FONT COLOR='red'>***</FONT>") : ""]<BR>"
+				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A>"
 			if(12)
-				dat+="<B>[viewing_channel.channel_name]: </B><FONT SIZE=1>\[ created by: <FONT COLOR='maroon'>[viewing_channel.returnAuthor(-1)]</FONT> \]</FONT><BR>"
-				dat+="<FONT SIZE=2><A href='byond://?src=[REF(src)];censor_channel_author=[REF(viewing_channel)]'>[(viewing_channel.authorCensor) ? ("Undo Author censorship") : ("Censor channel Author")]</A></FONT><HR>"
+				dat+="<B>[viewing_channel.channel_name]:<BR> </B><FONT SIZE=1>\[ Автор: <FONT COLOR='DarkTurquoise'>[viewing_channel.returnAuthor(-1)]</FONT> \]</FONT><BR>"
+				dat+="<FONT SIZE=2><A href='?src=[REF(src)];censor_channel_author=[REF(viewing_channel)]'>[(viewing_channel.authorCensor) ? ("Отменить цензуру автора") : ("Скрыть имя автора")]</A></FONT><HR>"
 				if(!length(viewing_channel.messages))
-					dat+="<I>No feed messages found in channel...</I><BR>"
+					dat+="<I>В канале не найдено постов...</I><BR>"
 				else
 					for(var/datum/newscaster/feed_message/MESSAGE in viewing_channel.messages)
-						dat+="-[MESSAGE.returnBody(-1)] <BR><FONT SIZE=1>\[Story by <FONT COLOR='maroon'>[MESSAGE.returnAuthor(-1)]</FONT>\]</FONT><BR>"
-						dat+="<FONT SIZE=2><A href='byond://?src=[REF(src)];censor_channel_story_body=[REF(MESSAGE)]'>[(MESSAGE.bodyCensor) ? ("Undo story censorship") : ("Censor story")]</A>  -  <A href='byond://?src=[REF(src)];censor_channel_story_author=[REF(MESSAGE)]'>[(MESSAGE.authorCensor) ? ("Undo Author Censorship") : ("Censor message Author")]</A></FONT><BR>"
-						dat+="[MESSAGE.comments.len] comment[MESSAGE.comments.len > 1 ? "s" : ""]: <a href='byond://?src=[REF(src)];lock_comment=[REF(MESSAGE)]'>[MESSAGE.locked ? "Unlock" : "Lock"]</a><br>"
+						dat+="-[MESSAGE.returnBody(-1)] <BR><FONT SIZE=1>\[Автор <FONT COLOR='DarkTurquoise'>[MESSAGE.returnAuthor(-1)]</FONT>\]</FONT><BR>"
+						dat+="<FONT SIZE=2><A href='?src=[REF(src)];censor_channel_story_body=[REF(MESSAGE)]'>[(MESSAGE.bodyCensor) ? ("Отменить цензуру сообщения") : ("Заблокировать сообщение")]</A>  -  <A href='?src=[REF(src)];censor_channel_story_author=[REF(MESSAGE)]'>[(MESSAGE.authorCensor) ? ("Отменить цензуру имени автора") : ("Скрыть имя автора")]</A></FONT><BR>"
+						dat+="[MESSAGE.comments.len] comment[MESSAGE.comments.len > 1 ? "s" : ""]: <a href='?src=[REF(src)];lock_comment=[REF(MESSAGE)]'>[MESSAGE.locked ? "Разблокированы" : "Заблокированы"]</a><br>"
 						for(var/datum/newscaster/feed_comment/comment in MESSAGE.comments)
-							dat+="[comment.body] <a href='byond://?src=[REF(src)];del_comment=[REF(comment)];del_comment_msg=[REF(MESSAGE)]'>X</a><br><font size=1>[comment.author] [comment.time_stamp]</font><br>"
-				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[10]'>Back</A>"
+							dat+="[comment.body] <a href='?src=[REF(src)];del_comment=[REF(comment)];del_comment_msg=[REF(MESSAGE)]'>X</a><br><font size=1>[comment.author] [comment.time_stamp]</font><br>"
+				dat+="<BR><A href='?src=[REF(src)];setScreen=[10]'>Вернуться</A>"
 			if(13)
-				dat+="<B>[viewing_channel.channel_name]: </B><FONT SIZE=1>\[ created by: <FONT COLOR='maroon'>[viewing_channel.returnAuthor(-1)]</FONT> \]</FONT><BR>"
-				dat+="Channel messages listed below. If you deem them dangerous to the sector, you can <A href='byond://?src=[REF(src)];toggle_d_notice=[REF(viewing_channel)]'>Bestow a D-Notice upon the channel</A>.<HR>"
+				dat+="<B>[viewing_channel.channel_name]:<BR> </B><FONT SIZE=1>\[ Автор: <FONT COLOR='DarkTurquoise'>[viewing_channel.returnAuthor(-1)]</FONT> \]</FONT><BR>"
+				dat+="Если вы считаете cообщения канала, что перечислены ниже, опасными для сектора, вы можете <A href='?src=[REF(src)];toggle_d_notice=[REF(viewing_channel)]'>редактировать метку D-Notice для этого канала</A>.<HR>"
 				if(viewing_channel.censored)
-					dat+="<FONT COLOR='red'><B>ATTENTION: </B></FONT>This channel has been deemed as threatening to the welfare of the sector, and marked with a Nanotrasen D-Notice.<BR>"
-					dat+="No further feed story additions are allowed while the D-Notice is in effect.</FONT><BR><BR>"
+					dat+="<FONT COLOR='red'><B>ВНИМАНИЕ: </B></FONT>Этот канал был признан угрожающим благополучию сектора и отмечен меткой D-Notice администрацией Griffon.<BR>"
+					dat+="Под действием метки D-Notice дальнейшее добавление новых постов запрещено.</FONT><BR><BR>"
 				else
 					if(!length(viewing_channel.messages))
-						dat+="<I>No feed messages found in channel...</I><BR>"
+						dat+="<I>В канале не найдено постов...</I><BR>"
 					else
 						for(var/datum/newscaster/feed_message/MESSAGE in viewing_channel.messages)
-							dat+="-[MESSAGE.returnBody(-1)] <BR><FONT SIZE=1>\[Story by <FONT COLOR='maroon'>[MESSAGE.returnAuthor(-1)]</FONT>\]</FONT><BR>"
-				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[11]'>Back</A>"
+							dat+="[MESSAGE.returnBody(-1)] <BR><FONT SIZE=1>\[Автор <FONT COLOR='DarkTurquoisen'>[MESSAGE.returnAuthor(-1)]</FONT>\]</FONT><BR>"
+				dat+="<BR><A href='?src=[REF(src)];setScreen=[11]'>Вернуться</A>"
 			if(14)
-				dat+="<B>Wanted Issue Handler:</B>"
+				dat+="<B>Модуль безопасности:</B>"
 				var/wanted_already = 0
 				var/end_param = 1
 				if(GLOB.news_network.wanted_issue.active)
 					wanted_already = 1
 					end_param = 2
 				if(wanted_already)
-					dat+="<FONT SIZE=2><BR><I>A wanted issue is already in Feed Circulation. You can edit or cancel it below.</FONT></I>"
+					dat+="<FONT SIZE=2><BR><I>Преступник уже объявлен в новостных каналах. Вы можете отредактировать или отменить ориентировку ниже.</FONT></I>"
 				dat+="<HR>"
-				dat+="<A href='byond://?src=[REF(src)];set_wanted_name=1'>Criminal Name</A>: [channel_name] <BR>"
-				dat+="<A href='byond://?src=[REF(src)];set_wanted_desc=1'>Description</A>: [msg] <BR>"
-				dat+="<A href='byond://?src=[REF(src)];set_attachment=1'>Attach Photo</A>: [(picture ? "Photo Attached" : "No Photo")]</BR>"
+				dat+="<A href='?src=[REF(src)];set_wanted_name=1'>Имя цели</A>: [channel_name] <BR>"
+				dat+="<A href='?src=[REF(src)];set_wanted_desc=1'>Описание</A>: [msg] <BR>"
+				dat+="<A href='?src=[REF(src)];set_attachment=1'>Прикреплённые материалы</A>: [(picture ? "Фото прикрепленно" : "Фото отсутствует")]</BR>"
 				if(wanted_already)
-					dat+="<B>Wanted Issue created by:</B><FONT COLOR='green'>[GLOB.news_network.wanted_issue.scannedUser]</FONT><BR>"
+					dat+="<B>Розыск был объявлен пользователем: </B><FONT COLOR='green'>[GLOB.news_network.wanted_issue.scannedUser]</FONT><BR>"
 				else
-					dat+="<B>Wanted Issue will be created under prosecutor:</B><FONT COLOR='green'>[scanned_user]</FONT><BR>"
-				dat+="<BR><A href='byond://?src=[REF(src)];submit_wanted=[end_param]'>[(wanted_already) ? ("Edit Issue") : ("Submit")]</A>"
+					dat+="<B>Розыск будет объявлен пользователем:</B><FONT COLOR='green'>[scanned_user]</FONT><BR>"
+				dat+="<BR><A href='?src=[REF(src)];submit_wanted=[end_param]'>[(wanted_already) ? ("Редактировать цель") : ("Подтвердить")]</A>"
 				if(wanted_already)
-					dat+="<BR><A href='byond://?src=[REF(src)];cancel_wanted=1'>Take down Issue</A>"
-				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Cancel</A>"
+					dat+="<BR><A href='?src=[REF(src)];cancel_wanted=1'>Отменить розыск</A>"
+				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Отмена</A>"
 			if(15)
-				dat+="<FONT COLOR='green'>Wanted issue for [channel_name] is now in Network Circulation.</FONT><BR><BR>"
-				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Return</A><BR>"
+				dat+="<FONT COLOR='green'>Розыск на '[channel_name]' был успешно опубликован на первых строчках сети Griffon.</FONT><BR><BR>"
+				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
 			if(16)
-				dat+="<B><FONT COLOR='maroon'>ERROR: Wanted Issue rejected by Network.</B></FONT><HR><BR>"
+				dat+="<B><FONT COLOR='DarkTurquoisen'>ERROR: Розыск был отменён сетью Griffon.</B></FONT><HR><BR>"
 				if(channel_name=="" || channel_name == "\[REDACTED\]")
-					dat+="<FONT COLOR='maroon'>Invalid name for person wanted.</FONT><BR>"
+					dat+="<FONT COLOR='DarkTurquoisen'>Неверное имя разыскиваемого.</FONT><BR>"
 				if(scanned_user=="Unknown")
-					dat+="<FONT COLOR='maroon'>Issue author unverified.</FONT><BR>"
+					dat+="<FONT COLOR='DarkTurquoisen'>Автор не идентифицирован.</FONT><BR>"
 				if(msg == "" || msg == "\[REDACTED\]")
-					dat+="<FONT COLOR='maroon'>Invalid description.</FONT><BR>"
-				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Return</A><BR>"
+					dat+="<FONT COLOR='DarkTurquoisen'>Неверное описание.</FONT><BR>"
+				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
 			if(17)
-				dat+="<B>Wanted Issue successfully deleted from Circulation</B><BR>"
-				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Return</A><BR>"
+				dat+="<B>Розыск успешно был удалён с сети Griffon</B><BR>"
+				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
 			if(18)
 				if(GLOB.news_network.wanted_issue.active)
-					dat+="<B><FONT COLOR ='maroon'>-- STATIONWIDE WANTED ISSUE --</B></FONT><BR><FONT SIZE=2>\[Submitted by: <FONT COLOR='green'>[GLOB.news_network.wanted_issue.scannedUser]</FONT>\]</FONT><HR>"
-					dat+="<B>Criminal</B>: [GLOB.news_network.wanted_issue.criminal]<BR>"
-					dat+="<B>Description</B>: [GLOB.news_network.wanted_issue.body]<BR>"
-					dat+="<B>Photo:</B>: "
+					dat+="<B><FONT COLOR ='FireBrick'>-- ОБЪЯВЛЕН РОЗЫСК --</B></FONT><BR><FONT SIZE=2>\[Подтверждено: <FONT COLOR='green'>[GLOB.news_network.wanted_issue.scannedUser]</FONT>\]</FONT><HR>"
+					dat+="<B>Цель</B>: [GLOB.news_network.wanted_issue.criminal]<BR>"
+					dat+="<B>Описание</B>: [GLOB.news_network.wanted_issue.body]<BR>"
+					dat+="<B>Прикреплённые материалы:</B>: "
 					if(GLOB.news_network.wanted_issue.img)
 						usr << browse_rsc(GLOB.news_network.wanted_issue.img, "tmp_photow.png")
 						dat+="<BR><img src='tmp_photow.png' width = '180'>"
 					else
-						dat+="None"
+						dat+="Отсутствуют"
 				else
-					dat+="No current wanted issue found.<BR><BR>"
-				dat+="<BR><BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Back</A><BR>"
+					dat+="Объявленных розысков не найдено<BR><BR>"
+				dat+="<BR><BR><A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
 			if(19)
-				dat+="<FONT COLOR='green'>Wanted issue for [channel_name] successfully edited.</FONT><BR><BR>"
-				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Return</A><BR>"
+				dat+="<FONT COLOR='green'>Розыск для '[channel_name]' успешно отредактирован</FONT><BR><BR>"
+				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
 			if(20)
-				dat+="<FONT COLOR='green'>Printing successful. Please receive your newspaper from the bottom of the machine.</FONT><BR><BR>"
-				dat+="<A href='byond://?src=[REF(src)];setScreen=[0]'>Return</A>"
+				dat+="<FONT COLOR='green'>Файл успешно был распечатан. Пожалуйста, возьмите газету из нижней части машины.</FONT><BR><BR>"
+				dat+="<A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A>"
 			if(21)
-				dat+="<FONT COLOR='maroon'>Unable to print newspaper. Insufficient paper. Please notify maintenance personnel to refill machine storage.</FONT><BR><BR>"
-				dat+="<A href='byond://?src=[REF(src)];setScreen=[0]'>Return</A>"
-		var/datum/browser/popup = new(human_or_robot_user, "newscaster_main", "Newscaster Unit #[unit_no]", 400, 600)
+				dat+="<FONT COLOR='DarkTurquoisen'>Невозможно напечатать газету. Недостаточно бумаги. Пожалуйста, сообщите обслуживающему персоналу о необходимости пополнить запасы машины.</FONT><BR><BR>"
+				dat+="<A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A>"
+		var/datum/browser/popup = new(human_or_robot_user, "newscaster_main", "Новостной монитор #[unit_no]", 400, 600)
 		popup.set_content(dat)
 		popup.open()
 
@@ -515,7 +514,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 		usr.set_machine(src)
 		scan_user(usr)
 		if(href_list["set_channel_name"])
-			channel_name = stripped_input(usr, "Provide a Feed Channel Name", "Network Channel Handler", "", MAX_NAME_LEN)
+			channel_name = stripped_input(usr, "Укажите желаемое название для вашего канала", "Информационная сеть Griffon", "", MAX_NAME_LEN)
 			updateUsrDialog()
 		else if(href_list["set_channel_lock"])
 			c_locked = !c_locked
@@ -535,8 +534,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 			if(channel_name == "" || channel_name == "\[REDACTED\]" || scanned_user == "Unknown" || check || (scanned_user in existing_authors))
 				screen=7
 			else
-				var/choice = alert("Please confirm Feed channel creation","Network Channel Handler","Confirm","Cancel")
-				if(choice=="Confirm")
+				var/choice = alert("Пожалуйста, подтвердите создание нового канала","Информационная сеть Griffon","Подтвердить","Отмена")
+				if(choice=="Подтвердить")
 					scan_user(usr)
 					GLOB.news_network.CreateFeedChannel(channel_name, scanned_user, c_locked)
 					SSblackbox.record_feedback("text", "newscaster_channels", 1, "[channel_name]")
@@ -547,10 +546,10 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 			for(var/datum/newscaster/feed_channel/F in GLOB.news_network.network_channels)
 				if((!F.locked || F.author == scanned_user) && !F.censored)
 					available_channels += F.channel_name
-			channel_name = input(usr, "Choose receiving Feed Channel", "Network Channel Handler") in sortList(available_channels)
+			channel_name = input(usr, "Выберите информационный канал", "Информационная сеть Griffon") in sortList(available_channels)
 			updateUsrDialog()
 		else if(href_list["set_new_message"])
-			var/temp_message = trim(stripped_multiline_input(usr, "Write your Feed story", "Network Channel Handler", msg))
+			var/temp_message = trim(stripped_multiline_input(usr, "Создайте самый оригинальный пост в вашем канале", "Информационная сеть Griffon", msg))
 			if(temp_message)
 				msg = temp_message
 				updateUsrDialog()
@@ -598,35 +597,35 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 			screen = 14
 			updateUsrDialog()
 		else if(href_list["set_wanted_name"])
-			channel_name = stripped_input(usr, "Provide the name of the Wanted person", "Network Security Handler")
+			channel_name = stripped_input(usr, "Укажите имя вашей цели", "Модуль безопасности системы Griffon")
 			updateUsrDialog()
 		else if(href_list["set_wanted_desc"])
-			msg = stripped_input(usr, "Provide a description of the Wanted person and any other details you deem important", "Network Security Handler")
+			msg = stripped_input(usr, "Укажите описание вашей цели, а также остальные различные подробности", "Модуль безопасности системы Griffon")
 			updateUsrDialog()
 		else if(href_list["submit_wanted"])
 			var/input_param = text2num(href_list["submit_wanted"])
 			if(msg == "" || channel_name == "" || scanned_user == "Unknown")
 				screen = 16
 			else
-				var/choice = alert("Please confirm Wanted Issue [(input_param==1) ? ("creation.") : ("edit.")]","Network Security Handler","Confirm","Cancel")
-				if(choice=="Confirm")
+				var/choice = alert("Пожалуйста, подтвердите [(input_param==1) ? ("объявление.") : ("изменения.")]","Модуль безопасности системы Griffon","Подтвердить","Отменить")
+				if(choice=="Подтвердить")
 					scan_user(usr)
 					if(input_param==1)		  //If input_param == 1 we're submitting a new wanted issue. At 2 we're just editing an existing one.
 						GLOB.news_network.submitWanted(channel_name, msg, scanned_user, picture, 0 , 1)
 						screen = 15
 					else
 						if(GLOB.news_network.wanted_issue.isAdminMsg)
-							alert("The wanted issue has been distributed by a Nanotrasen higherup. You cannot edit it.","Ok")
+							alert("Разыскиваемый выпуск был объявлен администратором сети Griffon. Вы не можете его редактировать.","Ok")
 							return
 						GLOB.news_network.submitWanted(channel_name, msg, scanned_user, picture)
 						screen = 19
 			updateUsrDialog()
 		else if(href_list["cancel_wanted"])
 			if(GLOB.news_network.wanted_issue.isAdminMsg)
-				alert("The wanted issue has been distributed by a Nanotrasen higherup. You cannot take it down.","Ok")
+				alert("Разыскиваемый выпуск был объявлен администратором сети Griffon. Вы не можете его снять.","Ok")
 				return
-			var/choice = alert("Please confirm Wanted Issue removal","Network Security Handler","Confirm","Cancel")
-			if(choice=="Confirm")
+			var/choice = alert("Подтвердите отмену розыска.","Модуль безопасности сети Griffon","Подтвердить","Отменить")
+			if(choice=="Подтвердить")
 				GLOB.news_network.deleteWanted()
 				screen=17
 			updateUsrDialog()
@@ -636,21 +635,21 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 		else if(href_list["censor_channel_author"])
 			var/datum/newscaster/feed_channel/FC = locate(href_list["censor_channel_author"]) in GLOB.news_network.network_channels
 			if(FC.is_admin_channel)
-				alert("This channel was created by a Nanotrasen Officer. You cannot censor it.","Ok")
+				alert("Этот канал был создан администратором сети Griffon. Вы не можете подвергать это цензуре.","Ok")
 				return
 			FC.toggleCensorAuthor()
 			updateUsrDialog()
 		else if(href_list["censor_channel_story_author"])
 			var/datum/newscaster/feed_message/MSG = locate(href_list["censor_channel_story_author"]) in viewing_channel.messages
 			if(MSG.is_admin_message)
-				alert("This message was created by a Nanotrasen Officer. You cannot censor its author.","Ok")
+				alert("Это сообщение было создано администратором сети Griffon. Вы не можете подвергнуть цензуре его автора.","Ok")
 				return
 			MSG.toggleCensorAuthor()
 			updateUsrDialog()
 		else if(href_list["censor_channel_story_body"])
 			var/datum/newscaster/feed_message/MSG = locate(href_list["censor_channel_story_body"]) in viewing_channel.messages
 			if(MSG.is_admin_message)
-				alert("This channel was created by a Nanotrasen Officer. You cannot censor it.","Ok")
+				alert("Этот канал был создан администратором сети Griffon. Вы не можете подвергать это цензуре.","Ok")
 				return
 			MSG.toggleCensorBody()
 			updateUsrDialog()
@@ -662,7 +661,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 		else if(href_list["toggle_d_notice"])
 			var/datum/newscaster/feed_channel/FC = locate(href_list["toggle_d_notice"]) in GLOB.news_network.network_channels
 			if(FC.is_admin_channel)
-				alert("This channel was created by a Nanotrasen Officer. You cannot place a D-Notice upon it.","Ok")
+				alert("Этот канал был создан администратором сети Griffon. Вы не можете установить метку D-Notice.","Ok")
 				return
 			FC.toggleCensorDclass()
 			updateUsrDialog()
@@ -690,7 +689,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 			updateUsrDialog()
 		else if(href_list["new_comment"])
 			var/datum/newscaster/feed_message/FM = locate(href_list["new_comment"]) in viewing_channel.messages
-			var/cominput = stripped_input(usr, "Write your message:", "New comment", null, 140)
+			var/cominput = stripped_input(usr, "Укажите ваш комментарий:", "Информационная сеть Griffon", null, 140)
 			if(cominput)
 				scan_user(usr)
 				var/datum/newscaster/feed_comment/FC = new/datum/newscaster/feed_comment
@@ -719,35 +718,35 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 
 /obj/machinery/newscaster/attackby(obj/item/I, mob/living/user, params)
 	if(I.tool_behaviour == TOOL_WRENCH)
-		to_chat(user, span_notice("You start [anchored ? "un" : ""]securing [name]..."))
+		to_chat(user, "<span class='notice'>You start [anchored ? "un" : ""]securing [name]...</span>")
 		I.play_tool_sound(src)
 		if(I.use_tool(src, user, 60))
 			playsound(loc, 'sound/items/deconstruct.ogg', 50, TRUE)
 			if(machine_stat & BROKEN)
-				to_chat(user, span_warning("The broken remains of [src] fall on the ground."))
+				to_chat(user, "<span class='warning'>The broken remains of [src] fall on the ground.</span>")
 				new /obj/item/stack/sheet/metal(loc, 5)
 				new /obj/item/shard(loc)
 				new /obj/item/shard(loc)
 			else
-				to_chat(user, span_notice("You [anchored ? "un" : ""]secure [name]."))
+				to_chat(user, "<span class='notice'>You [anchored ? "un" : ""]secure [name].</span>")
 				new /obj/item/wallframe/newscaster(loc)
 			qdel(src)
 	else if(I.tool_behaviour == TOOL_WELDER && user.a_intent != INTENT_HARM)
 		if(machine_stat & BROKEN)
-			if(!I.tool_start_check(user, src, amount=0))
+			if(!I.tool_start_check(user, amount=0))
 				return
-			user.visible_message(span_notice("[user] is repairing [src]."), \
-							span_notice("You begin repairing [src]..."), \
-							span_hear("You hear welding."))
+			user.visible_message("<span class='notice'>[user] ремонтирует [src].</span>", \
+							"<span class='notice'>Вы начинаете ремонт [src]...</span>", \
+							"<span class='hear'>Вы слышите сварку.</span>")
 			if(I.use_tool(src, user, 40, volume=50))
 				if(!(machine_stat & BROKEN))
 					return
-				to_chat(user, span_notice("You repair [src]."))
+				to_chat(user, "<span class='notice'>Вы ремонтируете [src].</span>")
 				obj_integrity = max_integrity
 				set_machine_stat(machine_stat & ~BROKEN)
 				update_appearance()
 		else
-			to_chat(user, span_notice("[src] does not need repairs."))
+			to_chat(user, "<span class='notice'>[src] не требует ремонта.</span>")
 	else
 		return ..()
 
@@ -777,7 +776,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 
 /obj/machinery/newscaster/attack_paw(mob/user)
 	if(user.a_intent != INTENT_HARM)
-		to_chat(user, span_warning("The newscaster controls are far too complicated for your tiny brain!"))
+		to_chat(user, "<span class='warning'>Управление этой штукой выглядит слишком сложно для вашего крошечного мозга!</span>")
 	else
 		take_damage(5, BRUTE, "melee")
 
@@ -800,9 +799,9 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 			else
 				targetcam = R.aicamera
 		else
-			to_chat(user, span_warning("You cannot interface with silicon photo uploading!"))
+			to_chat(user, "<span class='warning'>Вы не можете взаимодействовать с загрузкой фотографий!</span>")
 		if(!targetcam.stored.len)
-			to_chat(usr, span_boldannounce("No images saved."))
+			to_chat(usr, "<span class='boldannounce'>Изображения не найдены.</span>")
 			return
 		var/datum/picture/selection = targetcam.selectpicture(user)
 		if(selection)
@@ -815,17 +814,12 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 			if(istype(human_user.wear_id, /obj/item/pda))
 				var/obj/item/pda/P = human_user.wear_id
 				if(P.id)
-					scanned_user = "[P.id.registered_name])"
+					scanned_user = "[P.id.registered_name] ([P.id.assignment])"
 				else
 					scanned_user = "Unknown"
 			else if(istype(human_user.wear_id, /obj/item/card/id))
 				var/obj/item/card/id/ID = human_user.wear_id
-				scanned_user ="[ID.registered_name])"
-			else if(istype(human_user.wear_id, /obj/item/storage/wallet))
-				var/obj/item/storage/wallet/our_wallet = human_user.wear_id
-				if(our_wallet.front_id)
-					var/obj/item/card/id/ID = our_wallet.GetID()
-					scanned_user = "[ID.registered_name]"
+				scanned_user ="[ID.registered_name] ([ID.assignment])"
 			else
 				scanned_user ="Unknown"
 		else
@@ -858,19 +852,19 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 
 /obj/machinery/newscaster/proc/newsAlert(channel)
 	if(channel)
-		say("Breaking news from [channel]!")
+		say("Новые новости от канала: [channel]!")
 		alert = TRUE
 		update_appearance()
 		addtimer(CALLBACK(src, PROC_REF(remove_alert)),alert_delay,TIMER_UNIQUE|TIMER_OVERRIDE)
 		playsound(loc, 'sound/machines/twobeep_high.ogg', 75, TRUE)
 	else
-		say("Attention! Wanted issue distributed!")
+		say("Внимание! Объявлен новый розыск!")
 		playsound(loc, 'sound/machines/warning-buzzer.ogg', 75, TRUE)
 
 
 /obj/item/newspaper
 	name = "newspaper"
-	desc = "An issue of The Griffon, a newspaper often found circulating aboard Nanotrasen Space Stations."
+	desc = "Выпуск газеты «Griffon», часто распространяемой на борту космических станций «Nanotrasen»."
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "newspaper"
 	lefthand_file = 'icons/mob/inhands/misc/books_lefthand.dmi'
@@ -893,47 +887,47 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 /obj/item/newspaper/attack_self(mob/user)
 	if(ishuman(user))
 		var/mob/living/carbon/human/human_user = user
-		var/dat
+		var/dat="<meta http-equiv='X-UA-Compatible' content='IE=edge' charset='UTF-8'/>"
 		pages = 0
 		switch(screen)
 			if(0) //Cover
-				dat+="<DIV ALIGN='center'><B><FONT SIZE=6>The Griffon</FONT></B></div>"
-				dat+="<DIV ALIGN='center'><FONT SIZE=2>Nanotrasen-standard newspaper, for use on Nanotrasen? Space Facilities</FONT></div><HR>"
+				dat+="<DIV ALIGN='center'><B><FONT SIZE=6>Griffon</FONT></B></div>"
+				dat+="<DIV ALIGN='center'><FONT SIZE=2>Стандартная общедоступная информационная сеть. Лучшее место для вашей рекламы!</FONT></div><HR>"
 				if(!length(news_content))
 					if(wantedAuthor)
-						dat+="Contents:<BR><ul><B><FONT COLOR='red'>**</FONT>Important Security Announcement<FONT COLOR='red'>**</FONT></B> <FONT SIZE=2>\[page [pages+2]\]</FONT><BR></ul>"
+						dat+="<B>Содержание:</B><BR><ul><B><FONT COLOR='red'>**</FONT>Межсекторный розыск<FONT COLOR='red'>**</FONT></B><BR> <FONT SIZE=2>\[Страница: [pages+2]\]</FONT><BR></ul>"
 					else
-						dat+="<I>Other than the title, the rest of the newspaper is unprinted...</I>"
+						dat+="<I>Остальная часть газеты ещё не напечатана.</I>"
 				else
-					dat+="Contents:<BR><ul>"
+					dat+="<B>Содержание:</B><BR><ul>"
 					for(var/datum/newscaster/feed_channel/NP in news_content)
 						pages++
 					if(wantedAuthor)
-						dat+="<B><FONT COLOR='red'>**</FONT>Important Security Announcement<FONT COLOR='red'>**</FONT></B> <FONT SIZE=2>\[page [pages+2]\]</FONT><BR>"
+						dat+="<B><FONT COLOR='red'>\[Внимание!\] </FONT>Важная информация о безопасности</B><BR> <FONT SIZE=2>\[Страница: [pages+2]\]</FONT><BR>"
 					var/temp_page=0
 					for(var/datum/newscaster/feed_channel/NP in news_content)
 						temp_page++
-						dat+="<B>[NP.channel_name]</B> <FONT SIZE=2>\[page [temp_page+1]\]</FONT><BR>"
+						dat+="<B>[NP.channel_name]</B><BR> <FONT SIZE=2>\[Страница: [temp_page+1]\]</FONT><BR>"
 					dat+="</ul>"
 				if(scribble_page==curr_page)
-					dat+="<BR><I>There is a small scribble near the end of this page... It reads: \"[scribble]\"</I>"
-				dat+= "<HR><DIV STYLE='float:right;'><A href='byond://?src=[REF(src)];next_page=1'>Next Page</A></DIV> <div style='float:left;'><A href='byond://?src=[REF(human_user)];mach_close=newspaper_main'>Done reading</A></DIV>"
+					dat+="<BR><I>В конце этой страницы есть небольшие каракули... \"[scribble]\"</I>"
+				dat+= "<HR><DIV STYLE='float:right;'><A href='?src=[REF(src)];next_page=1'>Next Page</A></DIV> <div style='float:left;'><A href='?src=[REF(human_user)];mach_close=newspaper_main'>Close</A></DIV>"
 			if(1) // X channel pages inbetween.
 				for(var/datum/newscaster/feed_channel/NP in news_content)
 					pages++
 				var/datum/newscaster/feed_channel/C = news_content[curr_page]
-				dat += "<FONT SIZE=4><B>[C.channel_name]</B></FONT><FONT SIZE=1> \[created by: <FONT COLOR='maroon'>[C.returnAuthor(notContent(C.authorCensorTime))]</FONT>\]</FONT><BR><BR>"
+				dat += "<FONT SIZE=4><B>[C.channel_name]</B></FONT><BR><FONT SIZE=1> \[Автор: <FONT COLOR='DarkTurquoisen'>[C.returnAuthor(notContent(C.authorCensorTime))]</FONT>\]</FONT><BR><BR>"
 				if(notContent(C.DclassCensorTime))
-					dat+="This channel was deemed dangerous to the general welfare of the sector and therefore marked with a <B><FONT COLOR='red'>D-Notice</B></FONT>. Its contents were not transferred to the newspaper at the time of printing."
+					dat+="Этот канал был признан опасным для общего благосостояния сектора и поэтому отмечен знаком <B><FONT COLOR='red'>D-Notice</B></FONT>. Содержание было проигнорировано на момент печати газеты."
 				else
 					if(!length(C.messages))
-						dat+="No Feed stories stem from this channel..."
+						dat+="<i>Новостей нет в этом канале..</i>"
 					else
 						var/i = 0
 						for(var/datum/newscaster/feed_message/MESSAGE in C.messages)
 							if(MESSAGE.creationTime > creationTime)
 								if(i == 0)
-									dat+="No Feed stories stem from this channel..."
+									dat+="<i>Новостей нет в этом канале..</i>"
 								break
 							if(i == 0)
 								dat+="<ul>"
@@ -942,34 +936,34 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 							if(MESSAGE.img)
 								user << browse_rsc(MESSAGE.img, "tmp_photo[i].png")
 								dat+="<img src='tmp_photo[i].png' width = '180'><BR>"
-							dat+="<FONT SIZE=1>\[Story by <FONT COLOR='maroon'>[MESSAGE.returnAuthor(notContent(MESSAGE.authorCensorTime))]</FONT>\]</FONT><BR><BR>"
+							dat+="<FONT SIZE=1>\[Автор: <FONT COLOR='DarkTurquoisen'>[MESSAGE.returnAuthor(notContent(MESSAGE.authorCensorTime))]</FONT>\]</FONT><BR><BR>"
 						dat+="</ul>"
 				if(scribble_page==curr_page)
-					dat+="<BR><I>There is a small scribble near the end of this page... It reads: \"[scribble]\"</I>"
-				dat+= "<BR><HR><DIV STYLE='float:left;'><A href='byond://?src=[REF(src)];prev_page=1'>Previous Page</A></DIV> <DIV STYLE='float:right;'><A href='byond://?src=[REF(src)];next_page=1'>Next Page</A></DIV>"
+					dat+="<BR><I>В конце этой страницы есть небольшая каракуля... \"[scribble]\"</I>"
+				dat+= "<BR><HR><DIV STYLE='float:left;'><A href='?src=[REF(src)];prev_page=1'>Previous Page</A></DIV> <DIV STYLE='float:right;'><A href='?src=[REF(src)];next_page=1'>Next Page</A></DIV>"
 			if(2) //Last page
 				for(var/datum/newscaster/feed_channel/NP in news_content)
 					pages++
 				if(wantedAuthor!=null)
-					dat+="<DIV STYLE='float:center;'><FONT SIZE=4><B>Wanted Issue:</B></FONT SIZE></DIV><BR><BR>"
-					dat+="<B>Criminal name</B>: <FONT COLOR='maroon'>[wantedCriminal]</FONT><BR>"
-					dat+="<B>Description</B>: [wantedBody]<BR>"
-					dat+="<B>Photo:</B>: "
+					dat+="<DIV STYLE='float:center;'><FONT SIZE=4><B>Межсекторный Розыск:</B></FONT SIZE></DIV><HR><BR><BR>"
+					dat+="<B>Преступник</B>: <FONT COLOR='DarkTurquoisen'>[wantedCriminal]</FONT><BR>"
+					dat+="<B>Описание</B>: [wantedBody]<BR>"
+					dat+="<B>Прикреплённые материалы</B>: "
 					if(wantedPhoto)
 						user << browse_rsc(wantedPhoto, "tmp_photow.png")
 						dat+="<BR><img src='tmp_photow.png' width = '180'>"
 					else
 						dat+="None"
 				else
-					dat+="<I>Apart from some uninteresting classified ads, there's nothing on this page...</I>"
+					dat+="<I>Кроме неинтересных объявлений на этой странице ничего нет...</I>"
 				if(scribble_page==curr_page)
-					dat+="<BR><I>There is a small scribble near the end of this page... It reads: \"[scribble]\"</I>"
-				dat+= "<HR><DIV STYLE='float:left;'><A href='byond://?src=[REF(src)];prev_page=1'>Previous Page</A></DIV>"
+					dat+="<BR><I>В конце этой страницы есть небольшая каракуля... \"[scribble]\"</I>"
+				dat+= "<HR><DIV STYLE='float:left;'><A href='?src=[REF(src)];prev_page=1'>Previous Page</A></DIV>"
 		dat+="<BR><HR><div align='center'>[curr_page+1]</div>"
 		human_user << browse(dat, "window=newspaper_main;size=300x400")
 		onclose(human_user, "newspaper_main")
 	else
-		to_chat(user, span_warning("The paper is full of unintelligible symbols!"))
+		to_chat(user, "<span class='warning'>В газете полно непонятных символов!</span>")
 
 /obj/item/newspaper/proc/notContent(list/L)
 	if(!L.len)
@@ -1019,10 +1013,10 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 
 	if(istype(W, /obj/item/pen))
 		if(!user.is_literate())
-			to_chat(user, span_notice("You scribble illegibly on [src]!"))
+			to_chat(user, "<span class='notice'>Ты пишешь неразборчиво [src]!</span>")
 			return
 		if(scribble_page == curr_page)
-			to_chat(user, span_warning("There's already a scribble in this page... You wouldn't want to make things too cluttered, would you?"))
+			to_chat(user, "<span class='warning'>На этой странице уже есть каракули... Вы же не хотите, чтобы все было слишком непонятно, не так ли?</span>")
 		else
 			var/s = stripped_input(user, "Write something", "Newspaper")
 			if (!s)
@@ -1035,4 +1029,3 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 			add_fingerprint(user)
 	else
 		return ..()
-*/ // [/CELADON-REMOVE]
