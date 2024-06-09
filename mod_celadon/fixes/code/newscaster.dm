@@ -564,7 +564,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 				SSblackbox.record_feedback("amount", "newscaster_stories", 1)
 				screen=4
 				msg = ""
-				picture = null
 			updateUsrDialog()
 		else if(href_list["create_channel"])
 			screen=2
@@ -719,35 +718,35 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 
 /obj/machinery/newscaster/attackby(obj/item/I, mob/living/user, params)
 	if(I.tool_behaviour == TOOL_WRENCH)
-		to_chat(user, span_notice("You start [anchored ? "un" : ""]securing [name]..."))
+		to_chat(user, "<span class='notice'>You start [anchored ? "un" : ""]securing [name]...</span>")
 		I.play_tool_sound(src)
 		if(I.use_tool(src, user, 60))
 			playsound(loc, 'sound/items/deconstruct.ogg', 50, TRUE)
 			if(machine_stat & BROKEN)
-				to_chat(user, span_warning("The broken remains of [src] fall on the ground."))
+				to_chat(user, "<span class='warning'>The broken remains of [src] fall on the ground.</span>")
 				new /obj/item/stack/sheet/metal(loc, 5)
 				new /obj/item/shard(loc)
 				new /obj/item/shard(loc)
 			else
-				to_chat(user, span_notice("You [anchored ? "un" : ""]secure [name]."))
+				to_chat(user, "<span class='notice'>You [anchored ? "un" : ""]secure [name].</span>")
 				new /obj/item/wallframe/newscaster(loc)
 			qdel(src)
 	else if(I.tool_behaviour == TOOL_WELDER && user.a_intent != INTENT_HARM)
 		if(machine_stat & BROKEN)
 			if(!I.tool_start_check(user, amount=0))
 				return
-			user.visible_message(span_notice("[user] ремонтирует [src]."), \
-							span_notice("Вы начинаете ремонт [src]..."), \
-							span_hear("Вы слышите сварку."))
+			user.visible_message("<span class='notice'>[user] ремонтирует [src].</span>", \
+							"<span class='notice'>Вы начинаете ремонт [src]...</span>", \
+							"<span class='hear'>Вы слышите сварку.</span>")
 			if(I.use_tool(src, user, 40, volume=50))
 				if(!(machine_stat & BROKEN))
 					return
-				to_chat(user, span_notice("Вы ремонтируете [src]."))
+				to_chat(user, "<span class='notice'>Вы ремонтируете [src].</span>")
 				obj_integrity = max_integrity
 				set_machine_stat(machine_stat & ~BROKEN)
 				update_appearance()
 		else
-			to_chat(user, span_notice("[src] не требует ремонта."))
+			to_chat(user, "<span class='notice'>[src] не требует ремонта.</span>")
 	else
 		return ..()
 
@@ -777,7 +776,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 
 /obj/machinery/newscaster/attack_paw(mob/user)
 	if(user.a_intent != INTENT_HARM)
-		to_chat(user, span_warning("Управление этой штукой выглядит слишком сложно для вашего крошечного мозга!"))
+		to_chat(user, "<span class='warning'>Управление этой штукой выглядит слишком сложно для вашего крошечного мозга!</span>")
 	else
 		take_damage(5, BRUTE, "melee")
 
@@ -800,9 +799,9 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 			else
 				targetcam = R.aicamera
 		else
-			to_chat(user, span_warning("Вы не можете взаимодействовать с загрузкой фотографий!"))
+			to_chat(user, "<span class='warning'>Вы не можете взаимодействовать с загрузкой фотографий!</span>")
 		if(!targetcam.stored.len)
-			to_chat(usr, span_boldannounce("Изображения не найдены."))
+			to_chat(usr, "<span class='boldannounce'>Изображения не найдены.</span>")
 			return
 		var/datum/picture/selection = targetcam.selectpicture(user)
 		if(selection)
@@ -815,17 +814,12 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 			if(istype(human_user.wear_id, /obj/item/pda))
 				var/obj/item/pda/P = human_user.wear_id
 				if(P.id)
-					scanned_user = "[P.id.registered_name])"
+					scanned_user = "[P.id.registered_name] ([P.id.assignment])"
 				else
 					scanned_user = "Unknown"
 			else if(istype(human_user.wear_id, /obj/item/card/id))
 				var/obj/item/card/id/ID = human_user.wear_id
-				scanned_user ="[ID.registered_name])"
-			else if(istype(human_user.wear_id, /obj/item/storage/wallet))
-				var/obj/item/storage/wallet/our_wallet = human_user.wear_id
-				if(our_wallet.front_id)
-					var/obj/item/card/id/ID = our_wallet.GetID()
-					scanned_user = "[ID.registered_name]"
+				scanned_user ="[ID.registered_name] ([ID.assignment])"
 			else
 				scanned_user ="Unknown"
 		else
@@ -969,7 +963,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 		human_user << browse(dat, "window=newspaper_main;size=300x400")
 		onclose(human_user, "newspaper_main")
 	else
-		to_chat(user, span_warning("В газете полно непонятных символов!"))
+		to_chat(user, "<span class='warning'>В газете полно непонятных символов!</span>")
 
 /obj/item/newspaper/proc/notContent(list/L)
 	if(!L.len)
@@ -1019,10 +1013,10 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 
 	if(istype(W, /obj/item/pen))
 		if(!user.is_literate())
-			to_chat(user, span_notice("Ты пишешь неразборчиво [src]!"))
+			to_chat(user, "<span class='notice'>Ты пишешь неразборчиво [src]!</span>")
 			return
 		if(scribble_page == curr_page)
-			to_chat(user, span_warning("На этой странице уже есть каракули... Вы же не хотите, чтобы все было слишком непонятно, не так ли?"))
+			to_chat(user, "<span class='warning'>На этой странице уже есть каракули... Вы же не хотите, чтобы все было слишком непонятно, не так ли?</span>")
 		else
 			var/s = stripped_input(user, "Write something", "Newspaper")
 			if (!s)

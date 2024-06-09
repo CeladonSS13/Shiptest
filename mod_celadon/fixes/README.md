@@ -61,6 +61,11 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - ADD: `code\modules\projectiles\guns\ballistic\revolver.dm` : `/obj/item/gun/ballistic/revolver/proc/insert_casing` -> `проверка на калибр`
 
+- EDIT: `code\modules\mining\equipment\explorer_gear.dm` : `/obj/item/clothing/mask/gas/explorer/adjustmask(user)` -> Исправлен баг с размерами газ масок при снятие фильтров
+- EDIT: `code\modules\projectiles\ammunition\ballistic\rifle.dm` - исправление калибра
+- EDIT: `code\modules\projectiles\boxes_magazines\external\rifle.dm` - - исправление калибра
+
+- REMOVE: `code\game\machinery\newscaster.dm` - Полная замена на переведённый файл. Пожалуйста, сделайте это нормально.
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -112,9 +117,7 @@ Weebstick (Красная катана) теперь нельзя сломать
 ### Авторы:
 
 
-RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFaceLesS, Burbonchik, MrRomainzZ, Molniz, Redwizz, Sjerty, Garomt, Ganza9991, KOCMOHABT
-
-- Автор фикса дисков дизайнов: Турон/Mirag1993
+RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFaceLesS
 
 <!--
   Здесь находится твой никнейм
