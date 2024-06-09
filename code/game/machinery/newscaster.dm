@@ -1,4 +1,3 @@
-/* [CELADON-REMOVE] - Перенесено в mod_celadon\fixes\code\newscaster.dm
 GLOBAL_DATUM_INIT(news_network, /datum/newscaster/feed_network, new)
 GLOBAL_LIST_EMPTY(allCasters)
 
@@ -1035,4 +1034,3 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 			add_fingerprint(user)
 	else
 		return ..()
-*/ // [/CELADON-REMOVE]
