@@ -31,7 +31,7 @@
 	/// Area instance that cargo pods are sent to
 	var/area/landingzone
 	/// The pod type used to deliver orders
-	var/podType = /obj/structure/closet/supplypod/centcompod
+	var/podType = /obj/structure/closet/supplypod // [CELADON-EDIT] - CELADON_OUTPOST_CONSOLE - instead of "/obj/structure/closet/supplypod/centcompod"
 	/// Cooldown to prevent printing supplypod beacon spam
 	var/cooldown = 0
 	/// Is the console in beacon mode? exists to let beacon know when a pod may come in
@@ -80,7 +80,7 @@
 /obj/machinery/computer/cargo/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
-		ui = new(user, src, "OutpostCommunications", name)
+		ui = new(user, src, "OutpostCommunicationsCeladon", name) // [CELADON-EDIT] - CELADON_OUTPOST_CONSOLE - instead of "OutpostCommunications"
 		ui.open()
 		if(!charge_account)
 			reconnect()
