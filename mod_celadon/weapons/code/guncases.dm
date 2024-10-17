@@ -33,3 +33,10 @@
 	new /obj/item/gun/ballistic/automatic/assault/morita1/swamp/no_mag(src)
 	new /obj/item/ammo_box/magazine/morita1/drum/empty(src)
 	new /obj/item/ammo_box/magazine/morita1/empty(src)
+
+/obj/item/storage/guncase/saiga
+/obj/item/storage/guncase/saiga/PopulateContents()
+	new /obj/item/gun/ballistic/automatic/assault/saiga/no_mag(src)
+	new /obj/item/ammo_box/magazine/saiga/drum/empty(src)
+	new /obj/item/ammo_box/magazine/saiga/medium/empty(src)
+	new /obj/item/ammo_box/magazine/saiga/empty(src)
