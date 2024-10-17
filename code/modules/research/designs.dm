@@ -109,9 +109,26 @@ other types of metals and chemistry for reagents).
 	pixel_y = base_pixel_y + rand(-5, 5)
 	if(design_name)
 		name = jointext(list(disk_name, design_name), " - ")
-	if(length(starting_blueprints))
-		for(var/design in starting_blueprints)
-			blueprints += new design()
+	//[CELADON-EDIT] - Превращаем обычный список в ассоциативный. Люммох пидарас. Вагабонд боженька. Чиним диски пупупу
+	// if(length(starting_blueprints))
+		// for(var/design in starting_blueprints)
+			// blueprints += new design()
+	var/list/new_designs = list()
+	var/list/previous_designs = starting_blueprints
+	var/maxim_shelby = length(previous_designs)
+	for(var/i in 1 to max_blueprints)
+		if(maxim_shelby >= i)
+			var/a = pick(previous_designs)
+			var/datum/design/b = new a()
+			new_designs += b
+			new_designs[b] = i
+			previous_designs -= a
+		else
+			var/c = null
+			new_designs += c
+			new_designs[c] = i
+	blueprints = new_designs
+	//[/CELADON-EDIT]
 
 /obj/item/disk/design_disk/adv
 	name = "Advanced Component Design Disk"
