@@ -74,3 +74,11 @@
 	contains = list(/obj/item/gun/ballistic/shotgun/automatic/combat,
 					/obj/item/gun/ballistic/shotgun/automatic/combat)
 	crate_name = "combat shotguns crate"
+
+/// Сайга-410
+/datum/supply_pack/gun/saiga
+	name = "Saiga-410 \"Saiga\" shotgun assault crate"
+	desc = "Содержит Saiga-410 и дополнительные пустые обоймы."
+	cost = 10850
+	contains = list(/obj/item/storage/guncase/saiga)
+	crate_name = "auto shotgun crate"
