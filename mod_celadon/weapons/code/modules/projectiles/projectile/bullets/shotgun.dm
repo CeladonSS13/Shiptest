@@ -1,14 +1,14 @@
 // 410х76mm
 
 /obj/projectile/bullet/pellet/a410
-	name = "rubbershot pellet"
+	name = "buckshot"
 	icon = 'mod_celadon/_storge_icons/icons/ammo/projectiles.dmi'
 	icon_state = "pellet"
 	damage = 15
 	armour_penetration = -35
 
 /obj/projectile/bullet/slug/a410
-	name = "12g shotgun slug"
+	name = "slug"
 	icon = 'mod_celadon/_storge_icons/icons/ammo/projectiles.dmi'
 	icon_state = "bullet"
 	damage = 70
