@@ -420,7 +420,6 @@
 /turf/open/floor/plating,
 /area/ship/bridge)
 "qh" = (
-/obj/machinery/airalarm/directional/east,
 /obj/structure/chair/comfy/shuttle{
 	dir = 8;
 	name = "Operations"
@@ -439,6 +438,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/airalarm/directional/east,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "rv" = (
@@ -854,7 +854,6 @@
 /turf/open/floor/plating,
 /area/ship/cargo)
 "EH" = (
-/obj/machinery/airalarm/directional/west,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -867,6 +866,7 @@
 	pixel_y = 13;
 	pixel_x = 14
 	},
+/obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew/cryo)
 "Fu" = (
@@ -1411,8 +1411,8 @@
 /area/ship/cargo)
 "UU" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/structure/frame,
 /obj/item/circuitboard/machine/autolathe,
+/obj/structure/frame/machine,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "Vf" = (
@@ -1594,6 +1594,7 @@
 	pixel_y = 6;
 	pixel_x = -9
 	},
+/obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "Yr" = (

@@ -28,3 +28,7 @@
 	file_name = "syndicate_Jox"
 	name = "Jox Drop Ship"
 	prefix = "SSV"
+/datum/map_template/shuttle/subshuttles/nanotrasen_rider
+	file_name = "nanotrasen_rider"
+	name = "Rider Dropship"
+	prefix = "NTSV"
