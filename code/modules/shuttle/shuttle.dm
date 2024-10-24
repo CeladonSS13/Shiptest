@@ -415,7 +415,12 @@
 			shuttle_areas[cur_area] = TRUE
 			if(!cur_area.mobile_port)
 				cur_area.link_to_shuttle(src)
-
+		//[CELADON-ADD] - CELADON_FIXES - убираем спавн карпов при создании шипа
+		for(var/mob/living/simple_animal/hostile/carp/hostie in curT.contents)
+			if(hostie)
+//				to_chat(world, "qdeling [hostie]")
+				qdel(hostie)
+		//[/CELADON-ADD]
 	#ifdef DOCKING_PORT_HIGHLIGHT
 	highlight("#0f0")
 	#endif
