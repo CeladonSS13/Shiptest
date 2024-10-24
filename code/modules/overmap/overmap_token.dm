@@ -4,7 +4,7 @@
 	icon = 'mod_celadon/_storge_icons/icons/overmap/overmap.dmi'
 	// [/CELADON-EDIT]
 	// [CELADON-ADD] - OVERMAP ICON - Это вагабонд насрал
-	glide_size = 32
+	glide_size = 96
 	// [/CELADON-ADD]
 	///~~If we need to render a map for cameras and helms for this object~~ basically can you look at and use this as a ship or station.
 	var/render_map = FALSE
@@ -21,7 +21,7 @@
 	var/obj/token_visuals/ship_image
 
 /obj/token_visuals
-	glide_size = 32
+	glide_size = 96
 	// [/CELADON-ADD]
 
 /obj/overmap/rendered

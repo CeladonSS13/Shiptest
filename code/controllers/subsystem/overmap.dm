@@ -69,6 +69,9 @@ SUBSYSTEM_DEF(overmap)
 		var/datum/overmap/star/center
 		var/startype = pick(subtypesof(/datum/overmap/star))
 		center = new startype(list("x" = round(size / 2 + 1), "y" = round(size / 2 + 1)))
+		//[CELADON-ADD] - OVERMAP_ORBIT
+		SSovermap_orbit.star = center
+		//[/CELADON-ADD]
 		radius_positions = list()
 		for(var/x in 1 to size)
 			for(var/y in 1 to size)

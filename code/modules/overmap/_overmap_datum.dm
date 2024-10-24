@@ -73,7 +73,7 @@
 		else if(A.pixel_z > B.pixel_z)
 			y_dist = A.pixel_z-B.pixel_z
 
-	return abs(x_dist)+abs(y_dist)
+	return sqrt((abs(x_dist)*abs(x_dist))+(abs(y_dist)*abs(y_dist)))
 // [/CELADON-ADD]
 
 /datum/overmap/New(position, ...)

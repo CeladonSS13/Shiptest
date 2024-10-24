@@ -10,7 +10,7 @@
 	icon = 'mod_celadon/_storge_icons/icons/overmap/overmap.dmi'
 	icon_state = "ship_trail"
 	alpha = 200
-	glide_size = 32
+	glide_size = 96
 
 /datum/overmap/ship/proc/clear_trails()
 	if(trails[1])
