@@ -68,6 +68,12 @@
 	description = "An small castle holding the grave of a renowned warrior"
 	suffix = "beach_knights_rest.dmm"
 
+/datum/map_template/ruin/beachplanet/Syndieresort
+	name = "Syndie_resort"
+	id = "beach_syndie_resort"
+	description = "Resort for off-duty sindicate officers and operatives. Ready to recieve its new residents and provide their safety"
+	suffix = "beach_syndie_resort.dmm"
+
 //							///
 //		Icemoon ruin		///
 //							///
