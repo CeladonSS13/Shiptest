@@ -53,6 +53,10 @@
 			stored_ammo += new ammo_type(src)
 	update_ammo_count()
 
+/obj/item/ammo_box/Destroy()
+	stored_ammo.Cut()
+	return ..()
+
 ///gets a round from the magazine, if keep is TRUE the round will stay in the gun
 /obj/item/ammo_box/proc/get_round(keep = FALSE)
 	if (!stored_ammo.len)
