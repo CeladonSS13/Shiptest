@@ -418,6 +418,12 @@
 //							///
 //		Space ruin			///
 //							///
+/datum/map_template/ruin/space/asteroidtemple
+	id = "asteroid_temple"
+	suffix = "asteroidtemple.dmm"
+	name = "Temple in asteroid"
+	description = "Elder temple of Ratwar, cowered in core of asteroid."
+
 /datum/map_template/ruin/space/corporate_mining
 	id = "corporate_mining"
 	suffix = "corporate_mining.dmm"
