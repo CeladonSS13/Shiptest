@@ -95,7 +95,7 @@
 	feature_spawn_chance = 1
 	feature_spawn_list = list(
 		/obj/effect/spawner/random/anomaly = 20,
-		/obj/effect/spawner/minefield = 0.1,
+		/obj/effect/spawner/minefield = 1,
 		/obj/structure/trap/chill = 1
 	)
 
@@ -116,7 +116,7 @@
 	feature_spawn_chance = 1
 	feature_spawn_list = list(
 		/obj/effect/spawner/random/anomaly = 20,
-		/obj/effect/spawner/minefield = 0.1,
+		/obj/effect/spawner/minefield = 1,
 		/obj/structure/trap/chill = 1
 	)
 
@@ -132,7 +132,7 @@
 	feature_spawn_chance = 1
 	feature_spawn_list = list(
 		/obj/effect/spawner/random/anomaly = 20,
-		/obj/effect/spawner/minefield = 0.1,
+		/obj/effect/spawner/minefield = 1,
 		/obj/structure/trap/chill = 1
 	)
 
@@ -166,7 +166,7 @@
 		/obj/structure/flora/ash/glowshroom = 200,
 		/obj/item/mine/pressure/explosive/shrapnel/live = 20,
 		/obj/effect/spawner/random/mine = 6,
-		/obj/effect/spawner/minefield = 0.5
+		/obj/effect/spawner/minefield = 1
 	)
 	feature_spawn_chance = 1
 	feature_spawn_list = list(
@@ -255,7 +255,7 @@
 		/obj/structure/flora/rock/hell = 20,
 		/obj/structure/geyser/random = 4,
 		/obj/structure/flora/rock/hell = 14,
-		/obj/effect/spawner/minefield = 0.1,
+		/obj/effect/spawner/minefield = 1,
 		/obj/effect/spawner/random/anomaly = 15,
 		/obj/structure/trap/fire = 1
 	)
