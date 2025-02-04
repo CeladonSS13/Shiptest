@@ -284,7 +284,7 @@
 	. = ..()
 	get_solfed_engineer_access(H)
 
-/datum/outfit/job/solfed/asisstant
+/datum/outfit/job/solfed/assistant
 	name = "SolFed - Gehilfe"
 	jobtype = /datum/job/assistant
 	job_icon = "assistant"
