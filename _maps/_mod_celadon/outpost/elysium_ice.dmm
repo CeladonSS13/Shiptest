@@ -20573,7 +20573,6 @@
 	},
 /obj/effect/spawner/random/vending/snack{
 	pixel_x = -14;
-	all_items_free = 1
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/operations/outpost_command)
@@ -22335,8 +22334,6 @@
 /obj/machinery/door/poddoor/ert{
 	id = "ice_sec_medicals"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/relax_room)
 "psN" = (
@@ -32564,6 +32561,9 @@
 /turf/open/floor/wood,
 /area/outpost/fraction/solfed)
 "wJw" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 1
+	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment{
 	dir = 1
@@ -32571,12 +32571,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
-	dir = 4
-	},
+/obj/machinery/light/floor,
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/security/hall)
 "wJI" = (
@@ -50147,14 +50142,14 @@ ilt
 fDJ
 bGT
 vGF
-wJw
+iMN
 bGT
 vGF
 nil
 bGT
 vGF
 rzQ
-bGT
+wJw
 iMN
 kgR
 kRo
