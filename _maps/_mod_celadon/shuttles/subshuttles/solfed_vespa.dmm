@@ -422,15 +422,11 @@
 	id = "vespadoors"
 	},
 /obj/structure/fans/tiny,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
-	dir = 4
+	dir = 8
 	},
 /obj/docking_port/mobile{
-	dir = 2;
-	port_direction = 8;
+	port_direction = 4;
 	preferred_direction = 4;
 	name = "rider"
 	},
@@ -562,10 +558,10 @@ D
 S
 F
 o
-U
+Q
 "}
 (5,1,1) = {"
-Q
+M
 G
 u
 b
