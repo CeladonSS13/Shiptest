@@ -762,7 +762,6 @@
 	id = "ws-ruinsofweh"
 	description = "Ancient shrine which was rediscovered many times, yet every expedition turn into a disaster, it still holds many secrets within its walls."
 	suffix = "whitesands_surface_ruinsofweh.dmm"
-	ruin_tags = list(RUIN_TAG_HIGH_COMBAT, RUIN_TAG_HIGH_LOOT, RUIN_TAG_HAZARDOUS)
 
 //							///
 //		Plasma	 ruin		///
