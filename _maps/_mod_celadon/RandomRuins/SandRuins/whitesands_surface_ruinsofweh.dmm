@@ -1117,11 +1117,12 @@
 /turf/open/floor/plasteel/rockvault/sandstone,
 /area/overmap_encounter/planetoid/cave/explored)
 "BC" = (
-/mob/living/simple_animal/hostile/jungle/leaper,
+/mob/living/simple_animal/hostile/jungle/leaper{
+	loot = list(/obj/item/book/granter/martial/cqc)
+	},
 /obj/item/clothing/mask/frog,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/clothing/suit/hooded/cloak/drake,
-/obj/item/book/granter/martial/cqc,
 /turf/open/water/beach/nolit,
 /area/overmap_encounter/planetoid/cave/explored)
 "BF" = (
