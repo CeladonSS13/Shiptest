@@ -497,10 +497,10 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "hd" = (
-/obj/machinery/power/shieldwallgen/anchored,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
+/obj/machinery/power/shieldwallgen/anchored,
 /turf/open/floor/engine/hull,
 /area/ship/external)
 "hi" = (
@@ -779,6 +779,14 @@
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/plating,
 /area/ship/maintenance/central)
+"lz" = (
+/obj/machinery/porta_turret/ship/frontiersmen/light{
+	dir = 5;
+	faction = list("playerPirates","turret");
+	id = "jupiter_turrets"
+	},
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/bridge)
 "lI" = (
 /obj/effect/turf_decal/box/red,
 /obj/structure/cable{
@@ -1350,7 +1358,8 @@
 	dir = 1
 	},
 /obj/structure/closet/secure_closet/engineering_electrical{
-	req_access = null
+	req_access = null;
+	anchored = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
@@ -1486,6 +1495,14 @@
 /obj/machinery/light/directional/south,
 /turf/open/floor/engine/hull,
 /area/ship/external)
+"wD" = (
+/obj/machinery/porta_turret/ship/frontiersmen/light{
+	faction = list("playerPirates","turret");
+	dir = 10;
+	id = "jupiter_turrets"
+	},
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/bridge)
 "xk" = (
 /obj/machinery/power/grounding_rod{
 	anchored = 1
@@ -1556,6 +1573,10 @@
 	dir = 8
 	},
 /obj/machinery/firealarm/directional/south,
+/obj/machinery/light_switch{
+	pixel_x = 0;
+	pixel_y = 21
+	},
 /turf/open/floor/plating,
 /area/ship/maintenance/central)
 "xW" = (
@@ -1598,7 +1619,8 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/machinery/turretid{
-	pixel_y = 25
+	pixel_y = 25;
+	id = "jupiter_turrets"
 	},
 /obj/machinery/firealarm/directional/west,
 /obj/machinery/light/small/built/directional/north{
@@ -2221,7 +2243,8 @@
 	dir = 6
 	},
 /obj/structure/closet/secure_closet/engineering_welding{
-	req_access = null
+	req_access = null;
+	anchored = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
@@ -2271,6 +2294,14 @@
 /obj/item/stack/sheet/glass/fifty,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
+"HT" = (
+/obj/machinery/porta_turret/ship/frontiersmen/light{
+	dir = 1;
+	faction = list("playerPirates","turret");
+	id = "jupiter_turrets"
+	},
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/bridge)
 "Ih" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2663,7 +2694,9 @@
 /area/ship/engineering)
 "Nv" = (
 /obj/machinery/porta_turret/ship/frontiersmen/light{
-	dir = 1
+	faction = list("playerPirates","turret");
+	dir = 9;
+	id = "jupiter_turrets"
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -2678,7 +2711,7 @@
 	dir = 8
 	},
 /obj/structure/catwalk/over,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating,
 /area/ship/maintenance/central)
 "Oj" = (
@@ -2913,7 +2946,11 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "RE" = (
-/obj/machinery/porta_turret/ship/frontiersmen/light,
+/obj/machinery/porta_turret/ship/frontiersmen/light{
+	dir = 6;
+	faction = list("playerPirates","turret");
+	id = "jupiter_turrets"
+	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
 "RI" = (
@@ -2948,10 +2985,17 @@
 /turf/template_noop,
 /area/template_noop)
 "SP" = (
-/obj/machinery/power/shieldwallgen/anchored,
 /obj/structure/cable,
+/obj/machinery/power/shieldwallgen/anchored,
 /turf/open/floor/engine/hull,
 /area/ship/external)
+"Tf" = (
+/obj/machinery/porta_turret/ship/frontiersmen/light{
+	faction = list("playerPirates","turret");
+	id = "jupiter_turrets"
+	},
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/bridge)
 "Th" = (
 /obj/machinery/camera/xray{
 	dir = 1
@@ -3047,10 +3091,10 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "VK" = (
-/obj/machinery/power/shieldwallgen/anchored,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
+/obj/machinery/power/shieldwallgen/anchored,
 /turf/open/floor/engine/hull,
 /area/ship/external)
 "Wp" = (
@@ -3069,7 +3113,9 @@
 /area/ship/engineering)
 "WE" = (
 /obj/machinery/porta_turret/ship/frontiersmen/light{
-	dir = 4
+	dir = 4;
+	faction = list("playerPirates","turret");
+	id = "jupiter_turrets"
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -3262,6 +3308,11 @@
 	dir = 8
 	},
 /obj/machinery/firealarm/directional/north,
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_y = -22;
+	pixel_x = 0
+	},
 /turf/open/floor/plating,
 /area/ship/maintenance/central)
 
@@ -3340,7 +3391,7 @@ by
 by
 by
 bC
-RE
+wD
 qp
 oy
 by
@@ -3652,7 +3703,7 @@ by
 by
 by
 jI
-wq
+HT
 ym
 MU
 ev
@@ -3660,7 +3711,7 @@ Yc
 LR
 MU
 aa
-wq
+Tf
 jI
 by
 by
@@ -3681,7 +3732,7 @@ by
 by
 by
 sn
-Nv
+wq
 qW
 MU
 vW
@@ -3689,7 +3740,7 @@ jG
 BV
 MU
 MG
-RE
+wq
 Dt
 by
 by
@@ -3739,7 +3790,7 @@ qw
 yK
 pi
 hH
-wq
+HT
 rx
 OG
 OG
@@ -3747,7 +3798,7 @@ hr
 OG
 OG
 Ok
-wq
+Tf
 tO
 aH
 cb
@@ -4055,7 +4106,7 @@ by
 by
 by
 ef
-Nv
+lz
 Kc
 Jp
 EH

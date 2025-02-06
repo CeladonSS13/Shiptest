@@ -630,7 +630,9 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/rechargefloor,
-/obj/item/mecha_parts/chassis/ripley,
+/obj/item/mecha_parts/chassis/ripley{
+	layer = 3.09
+	},
 /obj/item/mecha_parts/part/ripley_left_arm{
 	pixel_x = -10;
 	pixel_y = 2
@@ -933,7 +935,8 @@
 /area/ship/engineering)
 "fe" = (
 /obj/machinery/porta_turret/ship/nt/light{
-	dir = 10
+	dir = 10;
+	id = "squab_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/engineering)
@@ -1035,8 +1038,8 @@
 /area/ship/medical)
 "ge" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/suit/space/hardsuit/rd,
 /obj/item/clothing/mask/gas/atmos,
+/obj/item/mod/control/pre_equipped/research,
 /obj/item/tank/jetpack/oxygen,
 /turf/open/floor/carpet/purple,
 /area/ship/general/command_crew/rd)
@@ -1084,13 +1087,16 @@
 /obj/item/mecha_parts/mecha_equipment/hydraulic_clamp,
 /obj/item/mecha_parts/mecha_equipment/salvage_saw{
 	pixel_x = 0;
-	pixel_y = -2
+	pixel_y = -2;
+	layer = 3.09
 	},
 /obj/item/mecha_parts/mecha_equipment/weapon/energy/mecha_kineticgun{
 	pixel_x = 3;
 	pixel_y = -1
 	},
-/obj/item/mecha_parts/mecha_equipment/conversion_kit/ripley/nanotrasen,
+/obj/item/mecha_parts/mecha_equipment/conversion_kit/ripley/nanotrasen{
+	layer = 3.1
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/science)
 "gn" = (
@@ -1290,7 +1296,7 @@
 "ij" = (
 /obj/machinery/porta_turret/ship/nt/light{
 	dir = 5;
-	id = "meta_turrets"
+	id = "squab_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/external/dark)
@@ -1427,7 +1433,8 @@
 /area/ship/hallway/port)
 "jY" = (
 /obj/machinery/porta_turret/ship/nt/light{
-	dir = 9
+	dir = 9;
+	id = "squab_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/engineering)
@@ -1495,7 +1502,8 @@
 /area/ship/cargo/port)
 "lv" = (
 /obj/machinery/porta_turret/ship/nt{
-	dir = 5
+	dir = 5;
+	id = "squab_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/general/command_crew)
@@ -1690,14 +1698,11 @@
 /turf/closed/wall/mineral/titanium,
 /area/ship/engineering)
 "og" = (
-/obj/machinery/computer/upload/ai{
-	dir = 1;
-	density = 0
-	},
 /obj/machinery/firealarm/directional/south,
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 6
 	},
+/obj/machinery/recharge_station,
 /turf/open/floor/plasteel/tech,
 /area/ship/science/ai_chamber)
 "oh" = (
@@ -1940,6 +1945,9 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/east,
+/obj/machinery/camera{
+	dir = 1
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "rs" = (
@@ -2269,7 +2277,8 @@
 /obj/structure/chair/comfy/shuttle,
 /obj/machinery/turretid/ship{
 	pixel_x = -30;
-	pixel_y = 2
+	pixel_y = 2;
+	id = "squab_turrets"
 	},
 /obj/machinery/camera{
 	dir = 4
@@ -2374,7 +2383,8 @@
 /area/ship/cargo)
 "xB" = (
 /obj/machinery/porta_turret/ship/nt{
-	dir = 9
+	dir = 9;
+	id = "squab_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/crew/cryo)
@@ -2474,7 +2484,8 @@
 /area/ship/bridge)
 "yC" = (
 /obj/machinery/porta_turret/ship/nt{
-	dir = 10
+	dir = 10;
+	id = "squab_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/security)
@@ -3860,7 +3871,8 @@
 /area/ship/crew)
 "RQ" = (
 /obj/machinery/porta_turret/ship/nt{
-	dir = 6
+	dir = 6;
+	id = "squab_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/general/command_crew/rd)
@@ -3992,7 +4004,6 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/machinery/camera,
 /obj/structure/closet/secure_closet/wall/directional/north{
 	icon_state = "sec_wall";
 	req_access_txt = "2";
@@ -4499,7 +4510,7 @@
 "YO" = (
 /obj/machinery/porta_turret/ship/nt/light{
 	dir = 6;
-	id = "meta_turrets"
+	id = "squab_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/external/dark)
@@ -5262,7 +5273,7 @@ rs
 rs
 rs
 lv
-eU
+Ba
 GM
 Kh
 Ba
@@ -5277,7 +5288,7 @@ hk
 Nm
 yp
 AP
-cC
+Nm
 RQ
 rs
 "}

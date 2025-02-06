@@ -169,6 +169,15 @@
 /obj/structure/window/plasma/reinforced,
 /turf/open/floor/engine/air,
 /area/ship/engineering/atmospherics)
+"bA" = (
+/obj/docking_port/stationary{
+	width = 30;
+	dwidth = 15;
+	dir = 4;
+	height = 15
+	},
+/turf/template_noop,
+/area/template_noop)
 "bE" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
@@ -1672,8 +1681,6 @@
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
 "Bl" = (
-/obj/item/clothing/under/solfed/solfed_officer_formal,
-/obj/item/clothing/head/solfed/solfed_officer_beret,
 /obj/item/clothing/suit/armor/vest/solgov/captain{
 	desc = "An armored coat typically used by SolFed captains.";
 	name = "\improper SolFed Captain coat"
@@ -1702,6 +1709,9 @@
 /obj/structure/railing{
 	dir = 4
 	},
+/obj/item/clothing/under/solfed/formal,
+/obj/item/clothing/head/solfed/beret,
+/obj/item/clothing/suit/armor/solfed/formal,
 /turf/open/floor/marble/white_black_border,
 /area/ship/bridge)
 "Bq" = (
@@ -1730,12 +1740,6 @@
 /area/ship/engineering/atmospherics)
 "BJ" = (
 /obj/machinery/light/floor,
-/obj/docking_port/stationary{
-	dwidth = 15;
-	height = 15;
-	width = 30;
-	dir = 8
-	},
 /turf/open/floor/plasteel/dark_2/airless,
 /area/ship/general/cargo/cargo_bay)
 "BN" = (
@@ -3751,6 +3755,33 @@ ni
 ol
 ol
 ni
+ol
+ol
+ol
+ol
+ol
+ol
+"}
+(32,1,1) = {"
+ol
+ol
+ol
+ol
+ol
+ol
+ol
+ol
+bA
+ol
+ol
+ol
+ol
+ol
+ol
+ol
+ol
+ol
+ol
 ol
 ol
 ol

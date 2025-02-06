@@ -101,6 +101,11 @@ ID мода: CELADON_FIXES
 ### Оверрайды
 
 - `mod_celadon/fixes/code/research_mission.dm` - вроде перезаписывает
+
+<!-- fax_name -->
+- `code\controllers\subsystem\overmap.dm`: `proc/spawn_ship_at_start`,
+- `code\modules\paperwork\fax.dm`: `proc/connect_to_shuttle`
+
 <!--
   Если ты добавлял новый модульный оверрайд, его нужно указать здесь.
   Здесь указываются оверрайды в твоём моде и папке `_master_files`
@@ -110,7 +115,9 @@ ID мода: CELADON_FIXES
 
 ### Дефайны
 
-- Отсутствуют
+<!-- fax_name -->
+- `code/__defines/~mod_celadon/ship.dm`
+
 <!--
   Если требовалось добавить какие-либо дефайны, укажи файлы,
   в которые ты их добавил, а также перечисли имена.
@@ -132,7 +139,7 @@ ID мода: CELADON_FIXES
 ### Авторы:
 
 
-RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFaceLesS, Burbonchik, MrRomainzZ, Molniz, Redwizz
+RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFaceLesS, Burbonchik, MrRomainzZ, Molniz, Redwizz, Sjerty, Garomt
 
 <!--
   Здесь находится твой никнейм

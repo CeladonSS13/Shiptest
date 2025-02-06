@@ -573,12 +573,12 @@
 	dir = 8
 	},
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/tank/internals/emergency_oxygen,
 /obj/effect/turf_decal/corner/opaque/purple/half{
 	dir = 1
 	},
-/obj/item/clothing/suit/space/hardsuit/ert/lp/jani,
 /obj/item/clothing/mask/gas,
+/obj/item/mod/control/pre_equipped/responsory/janitor,
+/obj/item/tank/internals/emergency_oxygen,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "eY" = (
@@ -1423,12 +1423,10 @@
 /obj/effect/turf_decal/corner/opaque/blue/half{
 	dir = 1
 	},
-/obj/item/tank/jetpack/oxygen,
-/obj/item/clothing/suit/space/hardsuit/ert/lp/med{
-	slowdown = 0.3
-	},
-/obj/item/clothing/mask/breath/medical,
 /obj/machinery/light/dim/directional/north,
+/obj/item/clothing/mask/breath/medical,
+/obj/item/mod/control/pre_equipped/responsory/medic,
+/obj/item/tank/jetpack/oxygen,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "lB" = (
@@ -3408,9 +3406,9 @@
 /obj/effect/turf_decal/corner/opaque/ntblue/half{
 	dir = 1
 	},
-/obj/item/tank/internals/emergency_oxygen/double,
-/obj/item/clothing/suit/space/hardsuit/ert/lp,
 /obj/item/clothing/mask/gas/sechailer/swat,
+/obj/item/mod/control/pre_equipped/responsory/commander,
+/obj/item/tank/internals/emergency_oxygen/double,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "Eh" = (
@@ -3827,9 +3825,9 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 1
 	},
-/obj/item/tank/jetpack/oxygen/security,
-/obj/item/clothing/suit/space/hardsuit/ert/lp/sec,
 /obj/item/clothing/mask/gas/vigilitas,
+/obj/item/mod/control/pre_equipped/responsory/security,
+/obj/item/tank/jetpack/oxygen/security,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "IC" = (
@@ -4887,9 +4885,9 @@
 /obj/effect/turf_decal/corner/opaque/orange/half{
 	dir = 1
 	},
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/clothing/suit/space/hardsuit/ert/lp/engi,
 /obj/item/clothing/mask/gas/atmos,
+/obj/item/mod/control/pre_equipped/responsory/engineer,
+/obj/item/tank/internals/emergency_oxygen/engi,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "TR" = (

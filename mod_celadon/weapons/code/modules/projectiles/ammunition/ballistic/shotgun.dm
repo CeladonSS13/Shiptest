@@ -16,6 +16,8 @@
 	icon = 'mod_celadon/_storge_icons/icons/weapons/obj/saiga_bullet.dmi'
 	icon_state = "slug_410"
 	caliber = "410x76mm"
+	pellets = 1
+	variance = 1
 	projectile_type = /obj/projectile/bullet/slug/a410
 	// bullet_per_box = 65
 
@@ -25,5 +27,7 @@
 	icon = 'mod_celadon/_storge_icons/icons/weapons/obj/saiga_bullet.dmi'
 	icon_state = "flechette_410"
 	caliber = "410x76mm"
+	pellets = 1
+	variance = 1
 	projectile_type = /obj/projectile/bullet/flechette/a410
 	// bullet_per_box = 55

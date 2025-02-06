@@ -57,7 +57,7 @@
 	display_name = "Cyborg Upgrades: Meka Body"
 	description = "New, humanised body for your cyborgs."
 	prereq_ids = list("cyborg_upg_util")
-	design_ids = list("borg_upgrade_meka_medical", "borg_upgrade_meka_engineering", "borg_upgrade_meka_security", "borg_upgrade_meka_janitor", "borg_upgrade_meka_peacekeeper", "borg_upgrade_meka_miner, borg_upgrade_meka_butler")
+	design_ids = list("borg_upgrade_meka_medical", "borg_upgrade_meka_engineering", "borg_upgrade_meka_security", "borg_upgrade_meka_janitor", "borg_upgrade_meka_peacekeeper", "borg_upgrade_meka_miner", "borg_upgrade_meka_butler")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
 	export_price = 1000
 

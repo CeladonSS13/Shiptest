@@ -212,7 +212,10 @@
 		if (icon != 'icons/misc/language.dmi')
 			var/icon_state = initial(L.icon_state)
 			Insert("language-[icon_state]", icon, icon_state=icon_state)
-		..()
+	// [CELADON_EDIT] - Переместил вызов родительского прока из цикла
+	// 		..() [CELADON-EDIT] - ORIGINAL
+	..()
+	// [/CELADON_EDIT]
 
 /datum/asset/simple/lobby
 	assets = list(

@@ -565,6 +565,14 @@
 "eA" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/industrial/traffic/full,
+/obj/item/tank/internals/oxygen/red{
+	pixel_x = 4;
+	pixel_y = -2
+	},
+/obj/item/tank/internals/oxygen/red{
+	pixel_x = -4;
+	pixel_y = 5
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "eJ" = (
@@ -3963,9 +3971,8 @@
 "Ih" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/effect/turf_decal/industrial/traffic/full,
-/obj/item/tank/internals/oxygen/red,
-/obj/item/clothing/suit/space/hardsuit/syndi,
 /obj/machinery/light/directional/north,
+/obj/item/mod/control/pre_equipped/traitor,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "Ij" = (
@@ -5496,8 +5503,7 @@
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/effect/turf_decal/industrial/traffic/full,
 /obj/machinery/firealarm/directional/north,
-/obj/item/tank/internals/oxygen/red,
-/obj/item/clothing/suit/space/hardsuit/syndi,
+/obj/item/mod/control/pre_equipped/traitor,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "Xs" = (

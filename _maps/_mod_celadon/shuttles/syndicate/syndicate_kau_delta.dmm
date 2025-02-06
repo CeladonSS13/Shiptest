@@ -130,7 +130,7 @@
 /obj/item/tank/jetpack/oxygen/security{
 	name = "Suspicious looking jetpack (oxygen)"
 	},
-/obj/item/clothing/suit/space/hardsuit/syndi/ngr,
+/obj/item/clothing/suit/space/hardsuit/syndi,
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
 "dg" = (
@@ -1341,11 +1341,20 @@
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/head/HoS/beret/syndicate,
 /obj/item/radio/headset/syndicate/alt/captain,
-/obj/item/gun/ballistic/revolver/viper,
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
-/obj/item/storage/box/ammo/a357_match,
+/obj/item/storage/box/ammo/c57x39,
+/obj/item/storage/box/ammo/c57x39{
+	pixel_x = -5;
+	pixel_y = 2
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder,
+/obj/item/gun/ballistic/automatic/smg/sidewinder{
+	pixel_x = -10;
+	pixel_y = 4
+	},
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
 "BW" = (
