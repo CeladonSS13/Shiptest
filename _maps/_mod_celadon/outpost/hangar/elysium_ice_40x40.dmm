@@ -42,9 +42,7 @@
 /area/hangar)
 "am" = (
 /obj/effect/turf_decal/borderfloor/full,
-/obj/machinery/light/floor{
-	light_color = "#FF0000"
-	},
+/obj/machinery/light/floor,
 /turf/open/floor/plasteel/patterned/cargo_one{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -162,11 +160,7 @@
 /obj/effect/turf_decal/siding/white/corner,
 /obj/structure/railing/corner,
 /obj/machinery/light/small/directional/east{
-	light_color = "#FF0000";
-	pixel_y = -10
-	},
-/obj/structure/sign/elysium{
-	pixel_x = 32
+	pixel_y = -8
 	},
 /turf/open/floor/plasteel/patterned/brushed{
 	light_color = "#1B1D2E";
@@ -214,35 +208,9 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"bb" = (
-/obj/effect/turf_decal/industrial/fire{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/white{
-	dir = 8
-	},
-/obj/structure/railing{
-	dir = 8
-	},
-/turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
-"bh" = (
-/obj/structure/catwalk/over/plated_catwalk,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating{
-	light_color = "#1B1D2E";
-	light_range = 2
-	},
-/area/hangar)
 "by" = (
 /obj/effect/turf_decal/borderfloor/full,
-/obj/machinery/light/floor{
-	light_color = "#FF0000"
-	},
+/obj/machinery/light/floor,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/patterned/cargo_one{
 	light_color = "#1B1D2E";
@@ -299,20 +267,6 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"dX" = (
-/obj/machinery/conveyor/auto{
-	dir = 4;
-	id = "outpost3";
-	use_static_power = 1
-	},
-/obj/machinery/recycler/deathtrap{
-	active_power_usage = 1;
-	use_power = 0;
-	use_static_power = 1
-	},
-/obj/effect/turf_decal/industrial/fire/fulltile,
-/turf/open/floor/plasteel/tech,
-/area/hangar)
 "dZ" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 10
@@ -326,18 +280,6 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
-"ex" = (
-/obj/structure/catwalk/over/plated_catwalk,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2;
 	planetary_atmos = 1
@@ -380,8 +322,7 @@
 	shaft = "1"
 	},
 /obj/machinery/light/small/directional/east{
-	light_color = "#FF0000";
-	pixel_y = -10
+	pixel_y = -8
 	},
 /obj/machinery/elevator_call_button{
 	dir = 8;
@@ -389,25 +330,6 @@
 	pixel_y = 6
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
-"gR" = (
-/obj/effect/turf_decal/industrial/fire{
-	dir = 4
-	},
-/obj/structure/railing{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/white{
-	dir = 8
-	},
-/obj/structure/sign/warning{
-	pixel_y = 32
-	},
 /turf/open/floor/plasteel/patterned/brushed{
 	light_color = "#1B1D2E";
 	light_range = 2;
@@ -425,17 +347,6 @@
 	dir = 5
 	},
 /turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
-"hC" = (
-/obj/structure/catwalk/over/plated_catwalk,
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2;
 	planetary_atmos = 1
@@ -508,9 +419,7 @@
 	},
 /area/hangar)
 "jY" = (
-/obj/machinery/light/floor{
-	light_color = "#FF0000"
-	},
+/obj/machinery/light/floor,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2;
@@ -527,9 +436,6 @@
 /turf/open/floor/plasteel/elevatorshaft{
 	planetary_atmos = 1
 	},
-/area/hangar)
-"ky" = (
-/turf/open/chasm,
 /area/hangar)
 "kQ" = (
 /obj/effect/turf_decal/siding/white{
@@ -620,11 +526,7 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
 	},
-/obj/structure/chair/comfy/orange/directional/west,
-/obj/machinery/light/small/directional/east{
-	light_color = "#FF0000";
-	color = "#FF0000"
-	},
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating{
 	planetary_atmos = 1
 	},
@@ -651,49 +553,8 @@
 /obj/effect/turf_decal/industrial/warning,
 /obj/structure/filingcabinet/double/grey,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/east{
-	light_color = "#FF0000";
-	color = "#FF0000"
-	},
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating{
-	planetary_atmos = 1
-	},
-/area/hangar)
-"pz" = (
-/obj/machinery/conveyor/auto{
-	dir = 1;
-	id = "outpost3";
-	use_static_power = 1
-	},
-/obj/effect/turf_decal/industrial/fire/fulltile,
-/turf/open/floor/plasteel/tech,
-/area/hangar)
-"pD" = (
-/obj/effect/turf_decal/borderfloor,
-/turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
-"pG" = (
-/obj/effect/turf_decal/borderfloor{
-	dir = 6
-	},
-/turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
-"qy" = (
-/obj/structure/catwalk/over/plated_catwalk,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plating{
-	light_color = "#1B1D2E";
-	light_range = 2;
 	planetary_atmos = 1
 	},
 /area/hangar)
@@ -721,10 +582,6 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"st" = (
-/obj/structure/sign/poster/contraband/borg_fancy_2,
-/turf/closed/indestructible/reinforced,
-/area/hangar)
 "sS" = (
 /obj/effect/turf_decal/borderfloor/full,
 /obj/effect/turf_decal/industrial/warning{
@@ -735,20 +592,6 @@
 	planetary_atmos = 1;
 	light_color = "#1B1D2E";
 	light_range = 2
-	},
-/area/hangar)
-"sX" = (
-/obj/effect/turf_decal/industrial/fire{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/borderfloor{
-	dir = 4
-	},
-/turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
 	},
 /area/hangar)
 "ta" = (
@@ -763,8 +606,7 @@
 /obj/structure/closet/crate/bin,
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/light/small/directional/east{
-	light_color = "#FF0000";
-	pixel_y = 10
+	pixel_y = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/newscaster/security_unit/directional/east{
@@ -788,27 +630,6 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"tv" = (
-/obj/structure/catwalk/over/plated_catwalk,
-/obj/structure/disposalpipe/segment,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
-"tL" = (
-/obj/effect/turf_decal/industrial/outline/red,
-/obj/structure/railing/corner{
-	dir = 1
-	},
-/obj/machinery/disposal/bin,
-/obj/structure/disposalpipe/trunk,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/dark,
-/area/hangar)
 "um" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 5
@@ -830,28 +651,6 @@
 	name = "web"
 	},
 /turf/open/floor/plasteel/elevatorshaft{
-	planetary_atmos = 1
-	},
-/area/hangar)
-"vP" = (
-/obj/machinery/door/airlock/outpost,
-/obj/effect/mapping_helpers/airlock/unres{
-	dir = 1
-	},
-/obj/structure/disposalpipe/segment,
-/obj/structure/fans/tiny/invisible,
-/turf/open/floor/plasteel/tech,
-/area/hangar)
-"vY" = (
-/obj/structure/catwalk/over/plated_catwalk,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/turf/open/floor/plating{
-	light_color = "#1B1D2E";
-	light_range = 2;
 	planetary_atmos = 1
 	},
 /area/hangar)
@@ -901,50 +700,16 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"yZ" = (
-/obj/machinery/conveyor/auto{
-	dir = 4;
-	id = "outpost3";
-	use_static_power = 1
-	},
-/obj/effect/turf_decal/industrial/fire/fulltile,
-/turf/open/floor/plasteel/tech,
-/area/hangar)
 "zM" = (
 /obj/machinery/telecomms/relay,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/telecomms_floor,
-/area/hangar)
-"AY" = (
-/obj/effect/turf_decal/borderfloor{
-	dir = 10
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
 /area/hangar)
 "Bf" = (
 /obj/structure/flora/tree/dead,
 /turf/open/floor/plating/asteroid/snow/temperatre{
 	light_color = "#1B1D2E";
 	light_range = 2
-	},
-/area/hangar)
-"BD" = (
-/obj/structure/catwalk/over/plated_catwalk,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 5
-	},
-/turf/open/floor/plating{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
 	},
 /area/hangar)
 "BE" = (
@@ -975,18 +740,6 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"CD" = (
-/obj/structure/catwalk/over/plated_catwalk,
-/obj/structure/disposalpipe/segment,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
 "CG" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 4
@@ -995,24 +748,6 @@
 /turf/open/floor/plasteel/patterned{
 	planetary_atmos = 1
 	},
-/area/hangar)
-"CL" = (
-/obj/structure/sign/warning{
-	pixel_y = 5;
-	pixel_x = -10
-	},
-/turf/closed/indestructible/reinforced,
-/area/hangar)
-"CV" = (
-/obj/effect/decal/cleanable/blood/gibs/up,
-/obj/structure/railing{
-	dir = 5
-	},
-/obj/machinery/light/small/directional/south{
-	light_color = "#FF0000";
-	color = "#FF0000"
-	},
-/turf/open/floor/plasteel/tech,
 /area/hangar)
 "Dd" = (
 /obj/effect/turf_decal/borderfloor,
@@ -1045,24 +780,6 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"Ej" = (
-/obj/effect/turf_decal/industrial/fire{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/crate/trashcart,
-/obj/structure/sign/warning/deathsposal{
-	pixel_y = 32
-	},
-/obj/effect/turf_decal/borderfloor{
-	dir = 4
-	},
-/turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
 "Ex" = (
 /obj/machinery/door/airlock/outpost,
 /obj/effect/turf_decal/industrial/warning/fulltile,
@@ -1076,20 +793,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/patterned{
 	planetary_atmos = 1;
-	light_color = "#1B1D2E";
-	light_range = 2
-	},
-/area/hangar)
-"EN" = (
-/obj/effect/turf_decal/borderfloor/full,
-/obj/machinery/light/floor{
-	light_color = "#FF0000"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 5
-	},
-/turf/open/floor/plasteel/patterned/cargo_one{
 	light_color = "#1B1D2E";
 	light_range = 2
 	},
@@ -1124,10 +827,6 @@
 	light_range = 2
 	},
 /area/hangar)
-"FM" = (
-/obj/structure/sign/warning/deathsposal,
-/turf/closed/indestructible/reinforced,
-/area/hangar)
 "Go" = (
 /obj/effect/decal/fakelattice,
 /turf/open/floor/plasteel/elevatorshaft{
@@ -1139,16 +838,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/hangar)
-"Hj" = (
-/obj/effect/turf_decal/borderfloor{
-	dir = 8
-	},
-/turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
 "Hv" = (
 /obj/structure/table/reinforced,
 /obj/item/flashlight/lamp{
@@ -1159,8 +848,7 @@
 	req_one_access_txt = "101";
 	dir = 4;
 	pixel_x = 5;
-	pixel_y = 8;
-	id = "id1984"
+	pixel_y = 8
 	},
 /obj/machinery/button/door{
 	req_one_access_txt = "101";
@@ -1185,21 +873,6 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"HF" = (
-/obj/effect/turf_decal/borderfloor,
-/obj/structure/railing/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/white/corner{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
 "HH" = (
 /obj/machinery/door/airlock/outpost,
 /turf/open/floor/plasteel/tech,
@@ -1214,20 +887,6 @@
 	},
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/plasteel/elevatorshaft{
-	planetary_atmos = 1
-	},
-/area/hangar)
-"IX" = (
-/obj/structure/catwalk/over/plated_catwalk,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plating{
-	light_color = "#1B1D2E";
-	light_range = 2;
 	planetary_atmos = 1
 	},
 /area/hangar)
@@ -1250,9 +909,7 @@
 /area/hangar)
 "KA" = (
 /obj/effect/turf_decal/borderfloor/full,
-/obj/machinery/light/floor{
-	light_color = "#FF0000"
-	},
+/obj/machinery/light/floor,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -1308,19 +965,6 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"Ma" = (
-/obj/structure/catwalk/over/plated_catwalk,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plating{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
 "Mm" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 4
@@ -1342,31 +986,6 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
-"Ns" = (
-/obj/effect/turf_decal/borderfloor/full,
-/obj/machinery/light/floor{
-	light_color = "#FF0000"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 10
-	},
-/turf/open/floor/plasteel/patterned/cargo_one{
-	light_color = "#1B1D2E";
-	light_range = 2
-	},
-/area/hangar)
-"NH" = (
-/obj/structure/catwalk/over/plated_catwalk,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2;
 	planetary_atmos = 1
@@ -1448,10 +1067,7 @@
 /area/hangar)
 "OR" = (
 /obj/effect/decal/fakelattice,
-/obj/machinery/light/small/directional/east{
-	light_color = "#FF0000";
-	color = "#FF0000"
-	},
+/obj/machinery/light/small/directional/east,
 /obj/effect/decal/cleanable/dirt{
 	color = "#808080"
 	},
@@ -1543,17 +1159,6 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"Rm" = (
-/obj/effect/turf_decal/industrial/loading/red{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
 "Rx" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 10
@@ -1567,47 +1172,12 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"RQ" = (
-/obj/effect/turf_decal/industrial/fire/corner{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/borderfloor{
-	dir = 4
-	},
-/turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
-"RU" = (
-/obj/effect/turf_decal/industrial/fire/corner{
-	dir = 4
-	},
-/obj/structure/railing{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/white{
-	dir = 8
-	},
-/turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
 "Sf" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2;
@@ -1616,47 +1186,19 @@
 /area/hangar)
 "Sg" = (
 /obj/effect/decal/fakelattice,
-/obj/machinery/light/small/directional/east{
-	light_color = "#FF0000";
-	color = "#FF0000"
-	},
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plasteel/elevatorshaft{
 	planetary_atmos = 1
 	},
 /area/hangar)
 "SC" = (
-/obj/machinery/light/floor{
-	light_color = "#FF0000"
-	},
+/obj/machinery/light/floor,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2;
 	planetary_atmos = 1
 	},
-/area/hangar)
-"SQ" = (
-/obj/machinery/door/airlock/outpost,
-/obj/effect/turf_decal/industrial/warning/fulltile,
-/obj/machinery/door/poddoor/ert{
-	id = "id1984"
-	},
-/turf/open/floor/plasteel/tech,
-/area/hangar)
-"SY" = (
-/obj/structure/disposaloutlet{
-	dir = 1
-	},
-/obj/machinery/conveyor/auto{
-	dir = 1;
-	id = "outpost3";
-	use_static_power = 1
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 4
-	},
-/obj/effect/turf_decal/industrial/fire/fulltile,
-/turf/open/floor/plasteel/tech,
 /area/hangar)
 "Tn" = (
 /obj/effect/turf_decal/borderfloor{
@@ -1674,14 +1216,15 @@
 /area/hangar)
 "Tp" = (
 /obj/effect/turf_decal/borderfloor,
-/obj/structure/disposalpipe/segment,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/east{
-	light_color = "#FF0000";
-	pixel_y = 10
+/obj/effect/turf_decal/siding/white{
+	dir = 1
 	},
-/obj/structure/sign/elysium{
-	pixel_x = 32
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/machinery/light/small/directional/east{
+	pixel_y = -8
 	},
 /turf/open/floor/plasteel/patterned/brushed{
 	light_color = "#1B1D2E";
@@ -1705,28 +1248,6 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"Tx" = (
-/obj/structure/railing{
-	dir = 9
-	},
-/obj/effect/turf_decal/siding/white{
-	dir = 9
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/dark,
-/area/hangar)
-"TN" = (
-/obj/structure/railing{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/white{
-	dir = 8
-	},
-/turf/open/floor/plating/asteroid/snow/temperatre{
-	light_color = "#1B1D2E";
-	light_range = 2
-	},
-/area/hangar)
 "Ui" = (
 /obj/effect/turf_decal/borderfloor/corner{
 	dir = 1
@@ -1743,17 +1264,6 @@
 	light_range = 2;
 	planetary_atmos = 1
 	},
-/area/hangar)
-"UL" = (
-/obj/structure/disposalpipe/segment{
-	dir = 10
-	},
-/obj/structure/railing{
-	dir = 1;
-	layer = 4.1
-	},
-/obj/effect/decal/cleanable/blood/gibs/bubblegum,
-/turf/open/floor/plasteel/tech,
 /area/hangar)
 "VR" = (
 /obj/effect/decal/fakelattice,
@@ -1777,16 +1287,6 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"WH" = (
-/obj/effect/turf_decal/industrial/fire{
-	dir = 1
-	},
-/turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
 "WJ" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 8
@@ -1802,33 +1302,8 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#808080"
 	},
-/obj/machinery/light/small/directional/east{
-	light_color = "#FF0000";
-	color = "#FF0000"
-	},
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plasteel/elevatorshaft{
-	planetary_atmos = 1
-	},
-/area/hangar)
-"WV" = (
-/obj/effect/turf_decal/siding/white{
-	dir = 8
-	},
-/turf/open/floor/plating/asteroid/snow/temperatre{
-	light_color = "#1B1D2E";
-	light_range = 2
-	},
-/area/hangar)
-"WW" = (
-/obj/effect/turf_decal/borderfloor{
-	dir = 8
-	},
-/obj/structure/sign/warning{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
 	planetary_atmos = 1
 	},
 /area/hangar)
@@ -1866,26 +1341,6 @@
 "Yt" = (
 /turf/open/floor/plasteel/tech,
 /area/hangar)
-"YA" = (
-/obj/effect/turf_decal/industrial/fire/fulltile,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
-"YV" = (
-/obj/structure/plasticflaps,
-/obj/machinery/conveyor/auto{
-	dir = 1;
-	id = "outpost3";
-	use_static_power = 1
-	},
-/obj/effect/turf_decal/industrial/fire/fulltile,
-/obj/structure/fans/tiny/invisible,
-/turf/open/floor/plasteel/tech,
-/area/hangar)
 "Zb" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 1
@@ -1898,40 +1353,6 @@
 	light_range = 2;
 	planetary_atmos = 1
 	},
-/area/hangar)
-"Zm" = (
-/obj/effect/turf_decal/borderfloor,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/railing{
-	dir = 1
-	},
-/turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
-"Zo" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/catwalk/over/plated_catwalk,
-/obj/structure/disposalpipe/segment{
-	dir = 9
-	},
-/turf/open/floor/plating{
-	light_color = "#1B1D2E";
-	light_range = 2;
-	planetary_atmos = 1
-	},
-/area/hangar)
-"ZG" = (
-/obj/machinery/conveyor/auto{
-	dir = 5;
-	id = "outpost3";
-	use_static_power = 1
-	},
-/obj/effect/decal/cleanable/blood/gibs/up,
-/obj/effect/turf_decal/industrial/fire/fulltile,
-/turf/open/floor/plasteel/tech,
 /area/hangar)
 "ZW" = (
 /obj/effect/turf_decal/siding/white{
@@ -3990,15 +3411,15 @@ Yt
 aa
 "}
 (34,1,1) = {"
-aT
-aT
-aT
-aT
+aa
+aa
+aa
+aa
 ac
 ac
 ab
 ag
-bh
+an
 au
 ah
 ah
@@ -4052,15 +3473,15 @@ Yt
 aa
 "}
 (35,1,1) = {"
-aT
-aT
-aT
-aT
+aa
+Yt
+Yt
+aa
 ac
-ac
+aC
 ac
 Rk
-bh
+an
 au
 ah
 ah
@@ -4115,13 +3536,13 @@ aa
 "}
 (36,1,1) = {"
 aa
+Yt
+Yt
 aa
-aa
-aa
-gR
-bb
-RU
-HF
+ac
+ac
+ac
+Rk
 an
 au
 ah
@@ -4177,14 +3598,14 @@ aT
 "}
 (37,1,1) = {"
 aa
-ZG
-pz
-YV
-YA
-Rm
-WH
-pD
-an
+Yt
+Yt
+HH
+ac
+ac
+aC
+Dd
+JI
 au
 jY
 ah
@@ -4239,14 +3660,14 @@ aT
 "}
 (38,1,1) = {"
 aa
-yZ
-SY
+Yt
+Yt
 aa
-Ej
-sX
-RQ
-pG
-an
+ab
+ac
+ac
+Rk
+JI
 au
 ah
 ah
@@ -4300,15 +3721,15 @@ aT
 aT
 "}
 (39,1,1) = {"
-st
-dX
-UL
-vP
-CD
-CD
-tv
-tv
-BD
+aa
+aa
+aa
+aa
+ac
+ak
+ac
+Dd
+an
 au
 ah
 ah
@@ -4362,15 +3783,15 @@ aT
 aT
 "}
 (40,1,1) = {"
-aa
-ky
-CV
-aa
-WW
-Hj
-Hj
-AY
-IX
+aT
+aT
+aT
+aT
+ac
+aC
+ak
+Rk
+hI
 au
 ah
 ah
@@ -4424,15 +3845,15 @@ aT
 aT
 "}
 (41,1,1) = {"
-aa
-aa
-aa
-aa
-TN
-WV
-TN
-Zm
-NH
+aT
+aT
+aT
+aT
+ac
+ac
+ac
+Rk
+aY
 au
 ah
 ah
@@ -4556,7 +3977,7 @@ ac
 ac
 ab
 Rk
-Ma
+hI
 at
 ah
 ah
@@ -4618,7 +4039,7 @@ aC
 ac
 ac
 Rk
-Ma
+hI
 at
 ah
 ah
@@ -4680,7 +4101,7 @@ ac
 ac
 aC
 Dd
-NH
+an
 at
 ah
 ah
@@ -4742,7 +4163,7 @@ ab
 ac
 ac
 Rk
-NH
+an
 au
 ah
 ah
@@ -4804,7 +4225,7 @@ ac
 ac
 ac
 Rk
-NH
+an
 au
 jY
 ah
@@ -4866,7 +4287,7 @@ ac
 ab
 ac
 Rk
-qy
+JI
 au
 ah
 ah
@@ -4928,7 +4349,7 @@ ac
 aC
 ac
 Rk
-qy
+JI
 au
 ah
 ah
@@ -4990,7 +4411,7 @@ ac
 ak
 ac
 Rk
-qy
+JI
 au
 ah
 ah
@@ -5052,7 +4473,7 @@ ac
 ac
 aC
 Rk
-qy
+JI
 au
 ah
 ah
@@ -5114,7 +4535,7 @@ ac
 ac
 ac
 Rk
-NH
+an
 at
 jY
 ah
@@ -5176,7 +4597,7 @@ ac
 ab
 ac
 Dd
-NH
+an
 at
 ah
 ah
@@ -5238,7 +4659,7 @@ ac
 ab
 ac
 Dd
-qy
+JI
 at
 ah
 ah
@@ -5300,7 +4721,7 @@ aC
 ac
 ac
 Rk
-qy
+JI
 um
 Tn
 aX
@@ -5362,30 +4783,30 @@ ab
 ac
 ac
 Rk
-Ns
-hC
-hC
-hC
-hC
-hC
-ex
-ex
-ex
-ex
-ex
-hC
-hC
-hC
-hC
-ex
-ex
-vY
-ex
-ex
-ex
-ex
-vY
-EN
+am
+JI
+JI
+JI
+JI
+JI
+an
+an
+an
+an
+an
+JI
+JI
+JI
+JI
+an
+an
+hI
+an
+an
+an
+an
+hI
+by
 an
 an
 JI
@@ -5447,7 +4868,7 @@ Mz
 Mz
 Mz
 dZ
-Ma
+hI
 iw
 Mz
 Mz
@@ -5509,7 +4930,7 @@ ac
 aC
 ab
 Rk
-NH
+an
 bQ
 ac
 ac
@@ -5571,7 +4992,7 @@ ac
 ac
 ac
 Rk
-NH
+an
 Px
 FH
 ab
@@ -5630,10 +5051,10 @@ ac
 aT
 aT
 as
-ac
-Tx
-HF
-Ma
+aT
+aT
+Rk
+hI
 cy
 jF
 ac
@@ -5692,10 +5113,10 @@ aS
 aa
 aT
 aT
-FM
-tL
+aT
+aT
 Tp
-Zo
+an
 aH
 NY
 ac
@@ -5755,7 +5176,7 @@ aa
 aa
 aa
 aa
-CL
+aa
 aa
 Ow
 aa
@@ -5808,7 +5229,7 @@ ac
 ac
 aC
 ac
-SQ
+Ex
 Mm
 eU
 qW
