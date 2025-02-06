@@ -61,6 +61,38 @@
 	name = "folder- 'TOP SECRET'"
 	desc = "A folder stamped \"Top Secret - Property of Nanotrasen Corporation. Unauthorized distribution is punishable by death.\""
 
+/obj/item/paper/fluff/ship/celestis/sm
+	name = "Nakamura Engineering supermatter manual"
+	default_raw_text ={"<html> <head><table bgcolor="ffce1c" width="100%" height="15%">
+			</head>
+			<th>
+			<div align="left"><font size="5" color="white">
+			Supermatter for dummies
+			</div>
+			<div align="left"><font size="1" color="white">
+			<p>Written by Nakamura Engineering.</p>
+			<p>Approved by Nanotrasen, Inc.</p>
+			</div>
+			<body>
+			<hr>
+			<div align="left"><font size="2" color="black">
+			<p>1.To start the supermatter, first of all, equip your mesons, anchor TWO Nitrogen canisters, connected to the green pipes. Don't forget to turn on their pumps.</p>
+			<p>2.Turn on all TWO thermomachines, set them to the minimal temperature.</p>
+			<p>3.After that, check all THREE filters for N2, O2 and plasma, make sure they are operational.</p>
+			<p>4.Then, activate the 3 vents and 3 scrubbers in the core chamber using an air alarm, you'll find it on a wall.</p>
+			<p>5.Set the vents to internal and the scrubbers to siphoning with expanded range.
+			<p>6.Make sure to activate the vents first, and only then the scrubbers!</p>
+			<p>7.Once everything is done, get all the plasma tanks inside the radiation collectors, activate them and turn on the emitters.</p>
+			</div>
+			<hr>
+			<div align="left"><font size="1" color="black">
+			<p><code>Nanotrasen Corporation is not responsibe for any injuries caused by misfollowing the manual or engine's instabilities.</code></p>
+			<p><code>A delamination due to crew's negligence will result in a fine of 100.000 credits and further detainment at the nearest Vigilitas Interstellar installation.</code></p>
+			</div>
+			</th>
+			</body>
+			"}
+
 //posters
 /obj/item/poster/random_nanotrasen
 	name = "random official Nanotrasen poster"
