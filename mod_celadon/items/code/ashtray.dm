@@ -30,35 +30,21 @@
 /obj/item/storage/ashtray/attackby(obj/item/I, mob/user, params)
 	var/is_cig = istype(I, /obj/item/clothing/mask/cigarette)
 	if(is_cig || istype(I, /obj/item/cigbutt) || istype(I, /obj/item/match))
-		var/message_done = FALSE
-		if(is_cig)
+		if((SEND_SIGNAL(src, COMSIG_TRY_STORAGE_INSERT, I, user)))
 			var/obj/item/clothing/mask/cigarette/cig = I
-			if(cig.lit)
-				if (SEND_SIGNAL(src, COMSIG_TRY_STORAGE_INSERT, I, user))
-					message_done = TRUE
+			if(is_cig)
+				if(cig.lit)
 					visible_message("[user] crushes [cig] in [src], putting it out.")
 					var/obj/item/butt = new cig.type_butt(src)
 					cig.transfer_fingerprints_to(butt)
 					qdel(cig)
 				else
-					message_done = TRUE
-					to_chat(user, "<span class='warning'>You can't put [I] in [src]. Its already full.</span>")
-
-			else
-				if (SEND_SIGNAL(src, COMSIG_TRY_STORAGE_INSERT, I, user))
-					message_done = TRUE
 					to_chat(user, "You place [cig] in [src] without even smoking it. Why would you do that?")
 					SEND_SIGNAL(src, COMSIG_TRY_STORAGE_INSERT, I, user)
-				else
-					message_done = TRUE
-					to_chat(user, "<span class='warning'>You can't put [I] in [src]. Its already full.</span>")
-
-		if(!message_done)
-			if (SEND_SIGNAL(src, COMSIG_TRY_STORAGE_INSERT, I, user))
-				SEND_SIGNAL(src, COMSIG_TRY_STORAGE_INSERT, I, user)
-				visible_message("[user] places [I] in [src].")
 			else
-				to_chat(user, "<span class='warning'>You can't put [I] in [src]. Its already full.</span>")
+				visible_message("[user] places [I] in [src].")
+		else
+			to_chat(user, "<span class='warning'>You can't put [I] in [src]. Its already full.</span>")
 
 		add_fingerprint(user)
 		update_appearance(UPDATE_DESC|UPDATE_ICON_STATE)
