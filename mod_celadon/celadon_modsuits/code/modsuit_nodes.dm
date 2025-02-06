@@ -6,14 +6,13 @@
 	description = "We have the technology to replace him."
 	prereq_ids = list("robotics")
 	design_ids = list(
-		"suit_storage_unit",
+		"ssu",
 		"mod_shell",
 		"mod_chestplate",
 		"mod_helmet",
 		"mod_gauntlets",
 		"mod_boots",
 		"mod_plating_standard",
-		"mod_plating_civilian",
 		"mod_paint_kit",
 		"mod_storage",
 		"mod_plasma",
@@ -124,7 +123,7 @@
 	id = "mod_anomaly"
 	display_name = "Anomalock Modular Suit"
 	description = "Modules for MODsuits that require anomaly cores to function."
-	prereq_ids = list("mod_science, mod_engi_adv", "anomaly_research")
+	prereq_ids = list("mod_science", "mod_engi_adv", "anomaly_research")
 	design_ids = list(
 		"mod_antigrav",
 		"mod_teleporter",

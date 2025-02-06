@@ -10,7 +10,10 @@
 	max_temperature = 25000
 	infra_luminosity = 5
 	operation_req_access = list(ACCESS_THEATRE)
-	internals_req_access = list(ACCESS_MECH_SCIENCE, ACCESS_THEATRE)
+// [CELADON-EDIT] - QoL
+//	internals_req_access = list(ACCESS_MECH_SCIENCE, ACCESS_THEATRE)
+	internals_req_access = 0
+// [/CELADON-EDIT]
 	wreckage = /obj/structure/mecha_wreckage/honker
 	add_req_access = 0
 	max_equip = 3

@@ -349,7 +349,10 @@
 	..()
 
 /obj/machinery/bot_core/firebot
-	req_one_access = list(ACCESS_CONSTRUCTION, ACCESS_ROBOTICS)
+// [CELADON-EDIT] - QoL
+//	req_one_access = list(ACCESS_CONSTRUCTION, ACCESS_ROBOTICS)
+	req_one_access = 0
+// [/CELADON-EDIT]
 
 #undef SPEECH_INTERVAL
 #undef DETECTED_VOICE_INTERVAL

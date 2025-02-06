@@ -187,11 +187,12 @@
 	)
 
 	mob_spawn_list = list(
-		/mob/living/simple_animal/hostile/big_plasma = 10,
-		/obj/structure/spawner/plasma_gaint/extreme_threat = 6,
-		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal_plasma = 20
+		/mob/living/simple_animal/hostile/big_plasma = 30,
+		/obj/structure/spawner/plasma_gaint/extreme_threat = 10,
+		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal_plasma = 40
 	)
-	mob_spawn_chance = 3
+	mob_spawn_chance = 45
+
 	open_turf_types = list(
 		/turf/open/floor/plating/asteroid/basalt/plasma_gaint = 1
 	)
@@ -207,6 +208,8 @@
 		/obj/structure/vein/classthree/plasma_gaint = 60,
 	)
 
+
+
 	open_turf_types = list(
 		/turf/open/floor/plating/asteroid/plasma_gaint = 1
 	)
@@ -215,6 +218,12 @@
 	closed_turf_types = list(
 		/turf/closed/mineral/random/plasma_gaint = 1
 	)
+
+	mob_spawn_list = list(
+		/mob/living/simple_animal/hostile/big_plasma = 10,
+		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal_plasma = 20
+	)
+	mob_spawn_chance = 40
 
 	open_turf_types = list(
 		/turf/open/floor/plating/asteroid/plasma_gaint = 1

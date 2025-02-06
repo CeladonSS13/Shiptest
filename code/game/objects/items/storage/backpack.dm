@@ -46,7 +46,10 @@
 	STR.max_volume = STORAGE_VOLUME_BACKPACK
 	STR.max_w_class = MAX_WEIGHT_CLASS_BACKPACK
 	STR.use_sound = 'sound/items/storage/unzip.ogg'
-	STR.worn_access = FALSE
+	// [CELADON-EDIT] - CELADON_BALANCE_CD
+	// STR.worn_access = FALSE
+	STR.worn_access = TRUE
+	// [/CELADON-EDIT]
 
 /obj/item/storage/backpack/examine(mob/user)
 	. = ..()

@@ -366,13 +366,14 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "VY" = (
-/obj/machinery/suit_storage_unit/standard_unit,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/firealarm/directional/east,
 /obj/structure/window/reinforced/spawner{
 	dir = 1
 	},
 /obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/machinery/suit_storage_unit/inherit,
+/obj/item/mod/control/pre_equipped/standard,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Wp" = (

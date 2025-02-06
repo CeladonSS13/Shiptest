@@ -51,75 +51,7 @@
 
 	return data
 
-/*
-	Faction-less
-*/
-
-/obj/machinery/computer/cargo/faction
-	name = "faction outpost console"
-	desc = "Looks like that console hasn't correct faction connection. Please, message to our specialists!"
-	icon_screen = "civ_bounty"
-	circuit = /obj/item/circuitboard/computer/cargo
-	light_color = COLOR_LIME
-
-	contraband = FALSE
-	self_paid = FALSE
-
-	charge_account = ACCOUNT_FAC
-
-	podType = /obj/structure/closet/supplypod/centcompod
-
-	flags_1 = NODECONSTRUCT_1
-
-/obj/machinery/computer/cargo/faction/Initialize()
-	. = ..()
-	var/obj/item/circuitboard/computer/cargo/board = circuit
-	contraband = board.contraband
-	if (board.obj_flags & EMAGGED)
-		obj_flags |= EMAGGED
-	else
-		obj_flags &= ~EMAGGED
-	var/datum/bank_account/B = SSeconomy.get_dep_account(charge_account)
-	if(B)
-		charge_account = B
-	generate_pack_data()
-
-/obj/machinery/computer/cargo/faction/reconnect(obj/docking_port/mobile/port)
-	if(!port)
-		var/area/ship/current_area = get_area(src)
-		if(!istype(current_area))
-			return
-		port = current_area.mobile_port
-	if(!port)
-		return
-	landingzone = get_area(src)
-
-/obj/machinery/computer/cargo/faction/ui_interact(mob/user, datum/tgui/ui)
-	ui = SStgui.try_update_ui(user, src, ui)
-	if(!ui)
-		ui = new(user, src, "OutpostCommunicationsFaction", name)
-		ui.open()
-		if(!charge_account)
-			reconnect()
-
-/obj/machinery/computer/cargo/faction/generate_pack_data()
-	supply_pack_data = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!supply_pack_data[P.group])
-			supply_pack_data[P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if(P.hidden)
-			continue
-		supply_pack_data[P.group]["packs"] += list(list(
-			"name" = P.name,
-			"cost" = P.cost,
-			"id" = pack,
-			"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
-		))
-
+// UI статика
 /obj/machinery/computer/cargo/faction/ui_static_data(mob/user)
 	var/list/data = list()
 	data["supplies"] = list()
@@ -141,6 +73,7 @@
 		))
 	return data
 
+// Взаимодействие с UI
 /obj/machinery/computer/cargo/faction/ui_act(action, params, datum/tgui/ui)
 	. = ..()
 	if(.)
@@ -236,10 +169,148 @@
 					mission.give_up()
 				return TRUE
 
+// Взаимодействие с UI для фракций
+/obj/machinery/computer/cargo/faction/proc/faction_ui_interact(mob/user, datum/tgui/ui, var/text, obj/src)
+	ui = SStgui.try_update_ui(user, src, ui)
+	if(!ui)
+		ui = new(user, src, text, name)
+		ui.open()
+		if(!charge_account)
+			reconnect()
+
+// Генерация информации о доступных товарах для фракций
+/obj/machinery/computer/cargo/faction/proc/generate_faction_pack_data(datum/faction)
+	. = supply_pack_data = list()
+	for(var/pack in SSshuttle.supply_packs)
+		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
+
+		var/is_faction = ispath(P.faction, faction)
+		// Под независимые попадают и те, у которых фракция = null
+		if(ispath(faction, /datum/faction/independent) && P.faction == null)
+			is_faction = TRUE
+
+		if (is_faction)
+			// Если скрыто, не добавляем товар
+			if(P.hidden)
+				continue
+			// Если нет группы, создаём группу
+			if(!supply_pack_data[P.group])
+				supply_pack_data[P.group] = list(
+					"name" = P.group,
+					"packs" = list()
+				)
+			// Добавляем товар в группу
+			supply_pack_data[P.group]["packs"] += list(list(
+				"name" = P.name,
+				"cost" = P.cost,
+				"id" = pack,
+				"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
+			))
+
+	return supply_pack_data
+
+// Создание UI статики для фракций
+/obj/machinery/computer/cargo/faction/proc/faction_ui_static_data(mob/user, datum/faction)
+	var/list/data = list()
+	data["supplies"] = list()
+	for(var/pack in SSshuttle.supply_packs)
+		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
+		var/is_faction = ispath(P.faction, faction)
+
+		if (is_faction)
+			// Если скрыто, и не ЕМАГнуто - не показываем товар
+			if(P.hidden && !(obj_flags & EMAGGED))
+				continue
+			// Если нет группы, создаём группу
+			if(!data["supplies"][P.group])
+				data["supplies"][P.group] = list(
+					"name" = P.group,
+					"packs" = list()
+				)
+			// Добавляем товар в группу
+			data["supplies"][P.group]["packs"] += list(list(
+				"name" = P.name,
+				"cost" = P.cost,
+				"id" = pack,
+				"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
+				"small_item" = P.small_item,
+			))
+
+
+	return data
+
+/*
+	Без фракции
+*/
+/obj/machinery/computer/cargo/faction
+	name = "faction outpost console"
+	desc = "Looks like that console hasn't correct faction connection. Please, message to our specialists!"
+	icon_screen = "civ_bounty"
+	circuit = /obj/item/circuitboard/computer/cargo
+	light_color = COLOR_LIME
+
+	contraband = FALSE
+	self_paid = FALSE
+
+	charge_account = ACCOUNT_FAC
+
+	podType = /obj/structure/closet/supplypod/centcompod
+
+	flags_1 = NODECONSTRUCT_1
+
+/obj/machinery/computer/cargo/faction/Initialize()
+	. = ..()
+	var/obj/item/circuitboard/computer/cargo/board = circuit
+	contraband = board.contraband
+	if (board.obj_flags & EMAGGED)
+		obj_flags |= EMAGGED
+	else
+		obj_flags &= ~EMAGGED
+	var/datum/bank_account/B = SSeconomy.get_dep_account(charge_account)
+	if(B)
+		charge_account = B
+	generate_pack_data()
+
+/obj/machinery/computer/cargo/faction/reconnect(obj/docking_port/mobile/port)
+	if(!port)
+		var/area/ship/current_area = get_area(src)
+		if(!istype(current_area))
+			return
+		port = current_area.mobile_port
+	if(!port)
+		return
+	landingzone = get_area(src)
+
+/obj/machinery/computer/cargo/faction/ui_interact(mob/user, datum/tgui/ui)
+	ui = SStgui.try_update_ui(user, src, ui)
+	if(!ui)
+		ui = new(user, src, "OutpostCommunicationsFaction", name)
+		ui.open()
+		if(!charge_account)
+			reconnect()
+
+// Генерация инфы о всех товарах для нефракционного карго
+/obj/machinery/computer/cargo/faction/generate_pack_data()
+	supply_pack_data = list()
+	for(var/pack in SSshuttle.supply_packs)
+		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
+		if(!supply_pack_data[P.group])
+			supply_pack_data[P.group] = list(
+				"name" = P.group,
+				"packs" = list()
+			)
+		if(P.hidden)
+			continue
+		supply_pack_data[P.group]["packs"] += list(list(
+			"name" = P.name,
+			"cost" = P.cost,
+			"id" = pack,
+			"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
+		))
+
 /*
 	Syndicate
 */
-
 /obj/machinery/computer/cargo/faction/syndicate
 	name = "syndicate outpost console"
 	desc = "That outpost console belongs to Syndicate."
@@ -255,57 +326,19 @@
 	charge_account = ACCOUNT_SYN
 
 /obj/machinery/computer/cargo/faction/syndicate/ui_interact(mob/user, datum/tgui/ui)
-	ui = SStgui.try_update_ui(user, src, ui)
-	if(!ui)
-		ui = new(user, src, "OutpostCommunicationsFactionSyndicate", name)
-		ui.open()
-		if(!charge_account)
-			reconnect()
+	faction_ui_interact(user, ui, "OutpostCommunicationsFactionSyndicate", src)
+
 
 /obj/machinery/computer/cargo/faction/syndicate/generate_pack_data()
-	supply_pack_data = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!supply_pack_data[P.group] && P.faction == "syndicate")
-			supply_pack_data[P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if(P.hidden && (P.faction != "syndicate"))
-			continue
-		if(P.faction == "syndicate")
-			supply_pack_data[P.group]["packs"] += list(list(
-				"name" = P.name,
-				"cost" = P.cost,
-				"id" = pack,
-				"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
-			))
+	supply_pack_data = generate_faction_pack_data(/datum/faction/syndicate)
 
 /obj/machinery/computer/cargo/faction/syndicate/ui_static_data(mob/user)
-	var/list/data = list()
-	data["supplies"] = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!data["supplies"][P.group])
-			data["supplies"][P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if((P.hidden && !(obj_flags & EMAGGED)) && (P.faction != "syndicate"))
-			continue
-		data["supplies"][P.group]["packs"] += list(list(
-			"name" = P.name,
-			"cost" = P.cost,
-			"id" = pack,
-			"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
-			"small_item" = P.small_item,
-		))
+	var/list/data = faction_ui_static_data(user, /datum/faction/syndicate)
 	return data
 
 /*
 	Inteq
 */
-
 /obj/machinery/computer/cargo/faction/inteq
 	name = "inteq outpost console"
 	desc = "That outpost console belongs to Inteq."
@@ -321,57 +354,18 @@
 	charge_account = ACCOUNT_INT
 
 /obj/machinery/computer/cargo/faction/inteq/ui_interact(mob/user, datum/tgui/ui)
-	ui = SStgui.try_update_ui(user, src, ui)
-	if(!ui)
-		ui = new(user, src, "OutpostCommunicationsFactionInteq", name)
-		ui.open()
-		if(!charge_account)
-			reconnect()
+	faction_ui_interact(user, ui, "OutpostCommunicationsFactionInteq", src)
 
 /obj/machinery/computer/cargo/faction/inteq/generate_pack_data()
-	supply_pack_data = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!supply_pack_data[P.group] && P.faction == "inteq")
-			supply_pack_data[P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if(P.hidden && (P.faction != "inteq"))
-			continue
-		if(P.faction == "inteq")
-			supply_pack_data[P.group]["packs"] += list(list(
-				"name" = P.name,
-				"cost" = P.cost,
-				"id" = pack,
-				"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
-			))
+	supply_pack_data = generate_faction_pack_data(/datum/faction/inteq)
 
 /obj/machinery/computer/cargo/faction/inteq/ui_static_data(mob/user)
-	var/list/data = list()
-	data["supplies"] = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!data["supplies"][P.group])
-			data["supplies"][P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if((P.hidden && !(obj_flags & EMAGGED)) && (P.faction != "inteq"))
-			continue
-		data["supplies"][P.group]["packs"] += list(list(
-			"name" = P.name,
-			"cost" = P.cost,
-			"id" = pack,
-			"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
-			"small_item" = P.small_item,
-		))
+	var/list/data = faction_ui_static_data(user, /datum/faction/inteq)
 	return data
 
 /*
 	SolFed
 */
-
 /obj/machinery/computer/cargo/faction/solfed
 	name = "SolFed outpost console"
 	desc = "That outpost console belongs to SolFed."
@@ -387,57 +381,18 @@
 	charge_account = ACCOUNT_SLF
 
 /obj/machinery/computer/cargo/faction/solfed/ui_interact(mob/user, datum/tgui/ui)
-	ui = SStgui.try_update_ui(user, src, ui)
-	if(!ui)
-		ui = new(user, src, "OutpostCommunicationsFactionSolfed", name)
-		ui.open()
-		if(!charge_account)
-			reconnect()
+	faction_ui_interact(user, ui, "OutpostCommunicationsFactionSolfed", src)
 
 /obj/machinery/computer/cargo/faction/solfed/generate_pack_data()
-	supply_pack_data = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!supply_pack_data[P.group] && P.faction == "solfed")
-			supply_pack_data[P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if(P.hidden && (P.faction != "solfed"))
-			continue
-		if(P.faction == "solfed")
-			supply_pack_data[P.group]["packs"] += list(list(
-				"name" = P.name,
-				"cost" = P.cost,
-				"id" = pack,
-				"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
-			))
+	supply_pack_data = generate_faction_pack_data(/datum/faction/solgov)
 
 /obj/machinery/computer/cargo/faction/solfed/ui_static_data(mob/user)
-	var/list/data = list()
-	data["supplies"] = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!data["supplies"][P.group])
-			data["supplies"][P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if((P.hidden && !(obj_flags & EMAGGED)) && (P.faction != "solfed"))
-			continue
-		data["supplies"][P.group]["packs"] += list(list(
-			"name" = P.name,
-			"cost" = P.cost,
-			"id" = pack,
-			"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
-			"small_item" = P.small_item,
-		))
+	var/list/data = faction_ui_static_data(user, /datum/faction/solgov)
 	return data
 
 /*
 	Independent
 */
-
 /obj/machinery/computer/cargo/faction/independent
 	name = "Independent outpost console"
 	desc = "That outpost console belongs to Independent faction."
@@ -453,57 +408,18 @@
 	charge_account = ACCOUNT_IND
 
 /obj/machinery/computer/cargo/faction/independent/ui_interact(mob/user, datum/tgui/ui)
-	ui = SStgui.try_update_ui(user, src, ui)
-	if(!ui)
-		ui = new(user, src, "OutpostCommunicationsFactionIndependent", name)
-		ui.open()
-		if(!charge_account)
-			reconnect()
+	faction_ui_interact(user, ui, "OutpostCommunicationsFactionIndependent", src)
 
 /obj/machinery/computer/cargo/faction/independent/generate_pack_data()
-	supply_pack_data = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!supply_pack_data[P.group] && !P.faction)
-			supply_pack_data[P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if(P.hidden && (P.faction != "independent"))
-			continue
-		if(!P.faction)
-			supply_pack_data[P.group]["packs"] += list(list(
-				"name" = P.name,
-				"cost" = P.cost,
-				"id" = pack,
-				"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
-			))
+	supply_pack_data = generate_faction_pack_data(/datum/faction/independent)
 
 /obj/machinery/computer/cargo/faction/independent/ui_static_data(mob/user)
-	var/list/data = list()
-	data["supplies"] = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!data["supplies"][P.group])
-			data["supplies"][P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if((P.hidden && !(obj_flags & EMAGGED)) && (P.faction != "independent"))
-			continue
-		data["supplies"][P.group]["packs"] += list(list(
-			"name" = P.name,
-			"cost" = P.cost,
-			"id" = pack,
-			"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
-			"small_item" = P.small_item,
-		))
+	var/list/data = faction_ui_static_data(user, /datum/faction/independent)
 	return data
 
 /*
-Nanotrasen
+	Nanotrasen
 */
-
 /obj/machinery/computer/cargo/faction/nanotrasen
 	name = "Nanotrasen outpost console"
 	desc = "That outpost console belongs to Nanotrasen."
@@ -519,49 +435,11 @@ Nanotrasen
 	charge_account = ACCOUNT_NTN
 
 /obj/machinery/computer/cargo/faction/nanotrasen/ui_interact(mob/user, datum/tgui/ui)
-	ui = SStgui.try_update_ui(user, src, ui)
-	if(!ui)
-		ui = new(user, src, "OutpostCommunicationsFactionNanotrasen", name)
-		ui.open()
-		if(!charge_account)
-			reconnect()
+	faction_ui_interact(user, ui, "OutpostCommunicationsFactionNanotrasen", src)
 
 /obj/machinery/computer/cargo/faction/nanotrasen/generate_pack_data()
-	supply_pack_data = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!supply_pack_data[P.group] && P.faction == "nanotrasen")
-			supply_pack_data[P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if(P.hidden && (P.faction != "nanotrasen"))
-			continue
-		if(P.faction == "nanotrasen")
-			supply_pack_data[P.group]["packs"] += list(list(
-				"name" = P.name,
-				"cost" = P.cost,
-				"id" = pack,
-				"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
-			))
+	supply_pack_data = generate_faction_pack_data(/datum/faction/nt)
 
 /obj/machinery/computer/cargo/faction/nanotrasen/ui_static_data(mob/user)
-	var/list/data = list()
-	data["supplies"] = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!data["supplies"][P.group])
-			data["supplies"][P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if((P.hidden && !(obj_flags & EMAGGED)) && (P.faction != "nanotrasen"))
-			continue
-		data["supplies"][P.group]["packs"] += list(list(
-			"name" = P.name,
-			"cost" = P.cost,
-			"id" = pack,
-			"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
-			"small_item" = P.small_item,
-		))
+	var/list/data = faction_ui_static_data(user, /datum/faction/nt)
 	return data

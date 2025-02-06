@@ -22,8 +22,8 @@
 
 /obj/item/sign/flag/nanotrasen
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/flags.dmi'
-	name = "\improper folded NanoTrasen flag"
-	desc = "Light blue folded flag with Nano-Trasen logo on it.. No, you don't need any shipment manifest to hold it on your shuttle."
+	name = "\improper folded Nanotrasen flag"
+	desc = "Light blue folded flag with Nanotrasen logo on it.. No, you don't need any shipment manifest to hold it on your shuttle."
 	icon_state = "folded_NT"
 	sign_path = /obj/structure/sign/flag/nanotrasen
 
@@ -68,8 +68,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/solfed, (-32))
 
 /obj/structure/sign/flag/nanotrasen
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/flags.dmi'
-	name = "\improper NanoTrasen flag"
-	desc = "Light blue flag with Nano-Trasen logo on it.. No, you don't need any shipment manifest to hold it on your shuttle."
+	name = "\improper Nanotrasen flag"
+	desc = "Light blue flag with Nanotrasen logo on it.. No, you don't need any shipment manifest to hold it on your shuttle."
 	icon_state = "flag_NT"
 	item_flag = /obj/item/sign/flag/nanotrasen
 

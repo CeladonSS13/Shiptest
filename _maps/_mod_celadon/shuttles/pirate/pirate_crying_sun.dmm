@@ -764,17 +764,21 @@
 /obj/structure/rack,
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/corner/opaque/neutral/full,
-/obj/item/stock_parts/cell/gun{
-	pixel_x = 0;
-	pixel_y = -7
+/obj/item/stock_parts/cell/gun/kalix{
+	pixel_x = 5;
+	pixel_y = -6
 	},
-/obj/item/gun/energy/laser/retro{
-	pixel_x = 0;
-	pixel_y = -2
+/obj/item/stock_parts/cell/gun/kalix{
+	pixel_x = -1;
+	pixel_y = -5
 	},
-/obj/item/gun/energy/laser/retro{
+/obj/item/gun/energy/kalix/pistol{
 	pixel_x = -4;
-	pixel_y = 3
+	pixel_y = 7
+	},
+/obj/item/gun/energy/kalix/pistol{
+	pixel_x = -5;
+	pixel_y = 2
 	},
 /turf/open/floor/vault,
 /area/ship/security/armory)
@@ -2184,20 +2188,36 @@
 	pixel_x = 13
 	},
 /obj/item/grenade/smokebomb{
-	pixel_y = -4;
-	pixel_x = 3
-	},
-/obj/item/grenade/smokebomb{
 	pixel_y = -5;
 	pixel_x = 13
 	},
-/obj/item/grenade/smokebomb{
-	pixel_x = 8;
-	pixel_y = -6
-	},
 /obj/item/grenade/c4,
 /obj/item/grenade/c4{
-	pixel_x = -7;
+	pixel_x = -4;
+	pixel_y = -6
+	},
+/obj/item/grenade/iedcasing/spawned{
+	pixel_x = -13;
+	pixel_y = -6
+	},
+/obj/item/grenade/iedcasing/spawned{
+	pixel_x = -9;
+	pixel_y = -3
+	},
+/obj/item/grenade/iedcasing/spawned{
+	pixel_x = -12;
+	pixel_y = 0
+	},
+/obj/item/grenade/iedcasing/spawned{
+	pixel_x = -12;
+	pixel_y = -11
+	},
+/obj/item/grenade/stingbang{
+	pixel_x = 2;
+	pixel_y = -2
+	},
+/obj/item/grenade/stingbang{
+	pixel_x = 8;
 	pixel_y = -5
 	},
 /turf/open/floor/vault,
@@ -5033,10 +5053,6 @@
 	pixel_x = 5;
 	pixel_y = 0
 	},
-/obj/item/flashlight/seclite{
-	pixel_x = 5;
-	pixel_y = -3
-	},
 /obj/item/gps{
 	pixel_x = -10;
 	pixel_y = 9
@@ -5053,14 +5069,14 @@
 	pixel_x = -10;
 	pixel_y = 3
 	},
-/obj/item/gps{
-	pixel_x = -10;
-	pixel_y = 1
-	},
 /obj/effect/turf_decal/industrial/traffic/corner{
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/opaque/neutral/full,
+/obj/item/storage/box/flashbangs{
+	pixel_x = 6;
+	pixel_y = -4
+	},
 /turf/open/floor/vault,
 /area/ship/security/armory)
 "Qq" = (

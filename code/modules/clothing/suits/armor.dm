@@ -355,7 +355,9 @@
 		/obj/item/reagent_containers/glass/beaker,
 		/obj/item/reagent_containers/pill,
 		/obj/item/storage/pill_bottle,
-		/obj/item/melee/classic_baton/telescopic,
+		// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+		// /obj/item/melee/classic_baton/telescopic,
+		// [/CELADON-REMOVE]
 		/obj/item/soap,
 		/obj/item/sensor_device,
 		/obj/item/tank/internals/emergency_oxygen,

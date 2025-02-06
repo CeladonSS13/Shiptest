@@ -105,8 +105,8 @@
 	theme = /datum/mod_theme/inteq
 	applied_cell = /obj/item/stock_parts/cell
 	initial_modules = list(
-		/obj/item/mod/module/storage/syndicate,
-		/obj/item/mod/module/flashlight/inteq,
+		/obj/item/mod/module/storage,
+		/obj/item/mod/module/flashlight_inteq,
 		/obj/item/mod/module/magnetic_harness,
 	)
 
@@ -114,9 +114,9 @@
 	theme = /datum/mod_theme/inteq/elite
 	applied_cell = /obj/item/stock_parts/cell
 	initial_modules = list(
-		/obj/item/mod/module/storage/syndicate,
+		/obj/item/mod/module/storage/large_capacity,
 		/obj/item/mod/module/magnetic_harness,
-		/obj/item/mod/module/flashlight/inteq,
+		/obj/item/mod/module/flashlight_inteq,
 		/obj/item/mod/module/dna_lock,
 		/obj/item/mod/module/power_kick
 	)

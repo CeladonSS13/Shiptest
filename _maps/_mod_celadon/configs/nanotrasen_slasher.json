@@ -1,0 +1,40 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "Slasher-class ESW Vessel",
+	"map_short_name": "Slasher",
+	"description": "'Slasher' - новейший корабль раннего предупреждения Нанотрейзен, разработанный специально для дальней разведки своими мощнейшими сенсорами. Его выделяет огромная площадь покрытия солнечных панелей, ранее упомянутая дальность сенсоров, высокая удельная тяга, а также малый экипаж и достойная его квалификация - корабли обычно отдаются во власть Отдела по предотвращению потерь активов.",
+	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_slasher.dmm",
+	"sensor_range": 8,
+	"enabled": false,
+	"limit": 1,
+	"prefix": "NTBSV",
+	"faction": "/datum/faction/nt",
+	"tags": [
+		"Early Space Warning",
+		"Command",
+		"Engineering"
+	],
+	"namelists": [
+		"NANOTRASEN",
+		"BRITISH_NAVY"
+	],
+	"job_slots": {
+		"Intelligence Officer": {
+			"outfit": "/datum/outfit/job/nanotrasen/intel/captain",
+			"officer": true,
+			"slots": 1
+		},
+		"Security Operative": {
+			"outfit": "/datum/outfit/job/nanotrasen/intel/operative",
+			"slots": 1
+		},
+		"Medical Technician": {
+			"outfit": "/datum/outfit/job/nanotrasen/intel/medic",
+			"slots": 1
+		},
+		"Engineering Technician": {
+			"outfit": "/datum/outfit/job/nanotrasen/intel/engineer",
+			"slots": 1
+		}
+	}
+}

@@ -544,6 +544,7 @@
 	name = "Nanotrasen Special Energy sword"
 	},
 /obj/item/clothing/mask/balaclava/combat,
+/obj/item/melee/classic_baton/telescopic,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm/captain)
 "gK" = (
@@ -551,6 +552,7 @@
 	dir = 4
 	},
 /obj/structure/table/optable,
+/obj/machinery/iv_drip,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "gS" = (
@@ -600,8 +602,8 @@
 /obj/structure/closet/secure_closet/wall/directional/east{
 	name = "janitorial supplies closet"
 	},
-/obj/item/reagent_containers/spray/cleaner,
 /obj/item/mop,
+/obj/item/reagent_containers/spray/cleaner,
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/soap/nanotrasen,
 /obj/item/soap/nanotrasen,
@@ -3812,8 +3814,13 @@
 /obj/effect/turf_decal/corner/opaque/ntblue/border{
 	dir = 6
 	},
-/obj/structure/table/reinforced/titaniumglass,
-/obj/machinery/recharger,
+/obj/machinery/telecomms/relay{
+	freq_listening = list(1351);
+	id = "Nanotrasen Relay";
+	name = "Nanotrasen relay";
+	network = "nt_commnet";
+	layer = 3.1
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "YE" = (

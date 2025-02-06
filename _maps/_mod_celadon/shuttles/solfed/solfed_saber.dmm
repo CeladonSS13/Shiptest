@@ -122,9 +122,7 @@
 	pixel_y = 7
 	},
 /obj/item/toy/plush/lizardplushie,
-/obj/effect/gibspawner/generic,
-/obj/item/clothing/head/solgov_surgery,
-/obj/effect/mob_spawn/human/corpse/pirate/ranged,
+/obj/item/clothing/head/solfed/surgical,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical/surgery)
 "bi" = (
@@ -465,10 +463,8 @@
 /obj/item/binoculars{
 	pixel_x = -5
 	},
-/obj/item/clothing/head/solfed/elysium/turban,
 /obj/item/clothing/gloves/combat,
 /obj/item/storage/belt/military/solfed/elysium,
-/obj/item/clothing/suit/armor/solfed/elysium/jacket,
 /obj/item/storage/backpack/messenger/sec,
 /obj/item/clothing/accessory/armband/deputy,
 /obj/item/clothing/shoes/combat,
@@ -588,7 +584,6 @@
 	color = "#c1b6a5"
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
-/obj/item/clothing/head/solfed/elysium/turban,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/railing/wood{
 	dir = 8
@@ -652,9 +647,11 @@
 /obj/structure/sign/poster/solfed/random{
 	pixel_x = 32
 	},
-/obj/item/clothing/head/helmet/solfedm11/elysium_wraps,
 /obj/item/clothing/suit/armor/vest,
 /obj/item/clothing/mask/balaclava/combat,
+/obj/item/storage/backpack/solfed,
+/obj/item/storage/backpack/satchel/solfed,
+/obj/item/clothing/under/solfed/camo/elysium,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/security)
 "ex" = (
@@ -1918,9 +1915,11 @@
 	name = "Haris locker";
 	req_access_txt = "2"
 	},
-/obj/item/clothing/head/helmet/solfedm11/elysium_wraps,
 /obj/item/clothing/suit/armor/vest,
 /obj/item/clothing/mask/balaclava/combat,
+/obj/item/storage/backpack/solfed,
+/obj/item/storage/backpack/satchel/solfed,
+/obj/item/clothing/under/solfed/camo/elysium,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/security)
 "oQ" = (
@@ -2065,7 +2064,7 @@
 	pixel_y = 9
 	},
 /obj/item/storage/book/bible/koran{
-	name = "Терик-аль-Шаед";
+	name = "Тарик аль-Шаед";
 	pixel_x = 9;
 	pixel_y = 1
 	},
@@ -2203,15 +2202,15 @@
 /obj/item/paper_bin/bundlenatural{
 	pixel_x = 8
 	},
-/obj/item/pen/solgov{
-	pixel_x = 8;
-	pixel_y = -1
-	},
 /obj/item/flashlight/lamp{
 	pixel_x = -7;
 	pixel_y = 4
 	},
 /obj/effect/turf_decal/solgov/all/center_right,
+/obj/item/pen/solfed{
+	pixel_x = 8;
+	pixel_y = 0
+	},
 /turf/open/floor/wood/walnut,
 /area/ship/security/prison)
 "rE" = (
@@ -2393,19 +2392,17 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/item/clothing/mask/gas/clip{
-	name = "Elysium Brigade gas mask";
-	desc = "A close-fitting gas mask that can be connected to an air supply."
-	},
-/obj/item/clothing/mask/gas/clip{
-	name = "Elysium Brigade gas mask";
-	desc = "A close-fitting gas mask that can be connected to an air supply."
-	},
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = -12;
 	pixel_y = -17
 	},
+/obj/item/clothing/mask/gas/solfed/elysium,
+/obj/item/clothing/mask/gas/solfed/elysium,
+/obj/item/clothing/head/helmet/solfed/m11/elysium/wraps,
+/obj/item/clothing/head/helmet/solfed/m11/elysium/wraps,
+/obj/item/clothing/head/helmet/solfed/m11/elysium,
+/obj/item/clothing/head/helmet/solfed/m11/elysium,
 /turf/open/floor/wood/ebony,
 /area/ship/security/armory)
 "tk" = (
@@ -2740,11 +2737,10 @@
 /obj/item/melee/baton,
 /obj/item/reagent_containers/spray/pepper,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/item/clothing/mask/gas/clip{
-	name = "Elysium Brigade gas mask";
-	desc = "A close-fitting gas mask that can be connected to an air supply."
-	},
 /obj/item/melee/classic_baton/telescopic,
+/obj/item/clothing/mask/gas/solfed/elysium,
+/obj/item/clothing/head/solfed/elysium,
+/obj/item/clothing/under/solfed/formal/elysium,
 /turf/open/floor/carpet/green,
 /area/ship/security/range)
 "we" = (
@@ -3168,10 +3164,12 @@
 	name = "Haris locker";
 	req_access_txt = "2"
 	},
-/obj/item/clothing/head/helmet/solfedm11/elysium_wraps,
 /obj/item/clothing/suit/armor/vest,
 /obj/machinery/light/directional/north,
 /obj/item/clothing/mask/balaclava/combat,
+/obj/item/storage/backpack/solfed,
+/obj/item/storage/backpack/satchel/solfed,
+/obj/item/clothing/under/solfed/camo/elysium,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/security)
 "yH" = (
@@ -3407,13 +3405,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
-/obj/item/melee/skimitar{
-	pixel_y = -1;
-	pixel_x = 7
-	},
-/obj/item/clothing/suit/armor/solfed/elysium/jacket,
 /obj/item/storage/belt/military/solfed/elysium,
-/obj/item/clothing/head/solfed/elysium/beret,
 /obj/item/clothing/head/shemag/green,
 /obj/item/melee/classic_baton/telescopic,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3427,13 +3419,12 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
 	},
-/obj/item/clothing/mask/gas/clip{
-	name = "Elysium Brigade gas mask";
-	desc = "A close-fitting gas mask that can be connected to an air supply."
-	},
 /obj/item/clothing/suit/armor/vest,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/mask/balaclava/combat,
+/obj/item/storage/belt/skimitar/full,
+/obj/item/clothing/suit/armor/solfed/formal/elysium,
+/obj/item/clothing/under/solfed/formal/elysium,
 /turf/open/floor/carpet/green,
 /area/ship/crew/solgov)
 "Bb" = (
@@ -3565,9 +3556,11 @@
 /obj/item/assembly/flash/handheld{
 	pixel_x = -9
 	},
-/obj/item/clothing/head/helmet/solfedm11/elysium_wraps,
 /obj/item/clothing/suit/armor/vest,
 /obj/item/clothing/mask/balaclava/combat,
+/obj/item/storage/backpack/solfed,
+/obj/item/storage/backpack/satchel/solfed,
+/obj/item/clothing/under/solfed/camo/elysium,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/security)
 "BX" = (
@@ -3813,30 +3806,6 @@
 	pixel_x = -32
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/clothing/mask/gas/clip{
-	name = "Elysium Brigade gas mask";
-	desc = "A close-fitting gas mask that can be connected to an air supply.";
-	pixel_x = -8;
-	pixel_y = -5
-	},
-/obj/item/clothing/mask/gas/clip{
-	name = "Elysium Brigade gas mask";
-	desc = "A close-fitting gas mask that can be connected to an air supply.";
-	pixel_y = -5;
-	pixel_x = -3
-	},
-/obj/item/clothing/mask/gas/clip{
-	name = "Elysium Brigade gas mask";
-	desc = "A close-fitting gas mask that can be connected to an air supply.";
-	pixel_y = -5;
-	pixel_x = 2
-	},
-/obj/item/clothing/mask/gas/clip{
-	name = "Elysium Brigade gas mask";
-	desc = "A close-fitting gas mask that can be connected to an air supply.";
-	pixel_y = -5;
-	pixel_x = 7
-	},
 /obj/item/extinguisher{
 	pixel_x = -10;
 	pixel_y = 18
@@ -3844,6 +3813,22 @@
 /obj/item/extinguisher{
 	pixel_x = 2;
 	pixel_y = 18
+	},
+/obj/item/clothing/mask/gas/solfed/elysium{
+	pixel_x = 6;
+	pixel_y = -5
+	},
+/obj/item/clothing/mask/gas/solfed/elysium{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/clothing/mask/gas/solfed/elysium{
+	pixel_x = -4;
+	pixel_y = -5
+	},
+/obj/item/clothing/mask/gas/solfed/elysium{
+	pixel_x = -9;
+	pixel_y = -5
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/storage/eva)
@@ -3941,21 +3926,6 @@
 /obj/structure/rack,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/turf_decal/box/red,
-/obj/item/clothing/head/helmet/solfedm11/elysium_helm{
-	pixel_x = -9;
-	pixel_y = 7
-	},
-/obj/item/clothing/head/helmet/solfedm11/elysium_helm{
-	pixel_x = -4;
-	pixel_y = 5
-	},
-/obj/item/clothing/head/helmet/solfedm11/elysium_helm{
-	pixel_x = 2;
-	pixel_y = 2
-	},
-/obj/item/clothing/head/helmet/solfedm11/elysium_helm{
-	pixel_x = 8
-	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/security)
 "Ez" = (
@@ -4949,9 +4919,9 @@
 	pixel_x = 4;
 	pixel_y = 7
 	},
-/obj/item/pen/solgov{
-	pixel_x = -7;
-	pixel_y = 5
+/obj/item/pen/solfed{
+	pixel_x = -8;
+	pixel_y = 6
 	},
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
@@ -5964,19 +5934,15 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/item/clothing/under/solfed/elysium,
-/obj/item/clothing/under/solfed/elysium,
-/obj/item/clothing/under/solfed/elysium,
-/obj/item/clothing/under/solfed/elysium,
-/obj/item/clothing/under/solfed/elysium,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/shoes/combat,
-/obj/item/clothing/head/solfed/elysium/turban,
-/obj/item/clothing/head/solfed/elysium/turban,
-/obj/item/clothing/head/solfed/elysium/turban,
+/obj/item/clothing/head/solfed/cap,
+/obj/item/clothing/head/solfed/cap,
+/obj/item/clothing/under/solfed/assistant,
+/obj/item/clothing/under/solfed/assistant,
 /turf/open/floor/carpet/green,
 /area/ship/crew)
 "Vp" = (

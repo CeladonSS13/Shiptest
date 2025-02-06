@@ -846,7 +846,8 @@
 /area/ship/crew/cryo)
 "hr" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 5
+	dir = 5;
+	id = "firetail_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -1097,7 +1098,8 @@
 /obj/machinery/porta_turret/ship/solfed/heavy{
 	dir = 10;
 	pixel_x = 0;
-	pixel_y = 32
+	pixel_y = 32;
+	id = "firetail_turrets"
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
@@ -1286,7 +1288,8 @@
 /area/ship/crew/cryo)
 "kV" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 8
+	dir = 8;
+	id = "firetail_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/engineering/communications)
@@ -2925,7 +2928,8 @@
 /area/ship/crew/dorm/captain)
 "Aj" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 5
+	dir = 5;
+	id = "firetail_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/crew/office)
@@ -2975,7 +2979,8 @@
 /area/ship/engineering/communications)
 "AT" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 6
+	dir = 6;
+	id = "firetail_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/crew/dorm/captain)
@@ -3430,7 +3435,8 @@
 /obj/machinery/porta_turret/ship/solfed/heavy{
 	dir = 9;
 	pixel_x = 0;
-	pixel_y = -32
+	pixel_y = -32;
+	id = "firetail_turrets"
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
@@ -3475,7 +3481,8 @@
 /area/ship/science/storage)
 "EW" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 10
+	dir = 10;
+	id = "firetail_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/engineering/electrical)
@@ -4130,7 +4137,8 @@
 /area/ship/engineering/electrical)
 "LS" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 8
+	dir = 8;
+	id = "firetail_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/medical)
@@ -4262,7 +4270,8 @@
 /area/ship/bridge)
 "MX" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 6
+	dir = 6;
+	id = "firetail_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -4360,10 +4369,11 @@
 /area/ship/engineering/electrical)
 "Oc" = (
 /obj/docking_port/stationary{
-	dir = 8;
-	dwidth = 15;
+	height = 15;
 	width = 30;
-	height = 15
+	dwidth = 15;
+	name = "main ember dock";
+	dir = 8
 	},
 /turf/template_noop,
 /area/template_noop)
@@ -5128,7 +5138,8 @@
 /area/ship/science/storage)
 "Vm" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 9
+	dir = 9;
+	id = "firetail_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/science/storage)
@@ -5310,6 +5321,11 @@
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 8
 	},
+/obj/machinery/turretid/ship{
+	pixel_x = -29;
+	pixel_y = 1;
+	id = "firetail_turrets"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "WZ" = (
@@ -5457,7 +5473,8 @@
 /area/ship/science)
 "Yv" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 4
+	dir = 4;
+	id = "firetail_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/security)
@@ -5635,7 +5652,8 @@
 /area/ship/hangar)
 "ZB" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 4
+	dir = 4;
+	id = "firetail_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/crew/cryo)

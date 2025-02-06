@@ -143,7 +143,7 @@
 "j" = (
 /obj/structure/table/reinforced,
 /obj/item/paper/fluff{
-	default_raw_text = "Artificer team: The subshuttle turrets target computers count everything as enemy except you for we do not know who your enemy will be.";
+	default_raw_text = "Artificer team: The subshuttle turrets target computers count everything as enemy except you as we do not know who your enemy will be.";
 	color = "red"
 	},
 /turf/open/floor/plasteel/telecomms_floor,
@@ -227,7 +227,7 @@
 /obj/machinery/firealarm/directional/south,
 /obj/effect/turf_decal/trimline/opaque/yellow/corner,
 /obj/machinery/button/door{
-	id = "Caliban_subshuttle_window";
+	id = "Caliban_subshuttle_engines";
 	name = "Engine Shutters Control";
 	pixel_x = -13;
 	pixel_y = -20;

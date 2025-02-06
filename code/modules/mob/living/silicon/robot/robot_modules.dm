@@ -35,7 +35,8 @@
 
 	var/icon/cyborg_icon_override //WS Addition, need this shit to use VG icons
 
-/obj/item/robot_module/Initialize()
+// [CELADON-DELETE] - Silicon QoL - mod_celadon\qol\code\silicon.dm
+/*/obj/item/robot_module/Initialize()
 	. = ..()
 	for(var/i in basic_modules)
 		var/obj/item/I = new i(src)
@@ -44,8 +45,8 @@
 	for(var/i in emag_modules)
 		var/obj/item/I = new i(src)
 		emag_modules += I
-		emag_modules -= i
-
+		emag_modules -= i */
+// [/CELADON-DELETE]
 /obj/item/robot_module/Destroy()
 	basic_modules.Cut()
 	emag_modules.Cut()

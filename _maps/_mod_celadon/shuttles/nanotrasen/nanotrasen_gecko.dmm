@@ -174,11 +174,10 @@
 "bK" = (
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/engine,
-/obj/item/tank/jetpack/carbondioxide,
 /obj/effect/turf_decal/spline/fancy/opaque/nakamuraayellow{
 	dir = 9
 	},
+/obj/item/mod/control/pre_equipped/atmospheric,
 /turf/open/floor/plasteel/patterned,
 /area/ship/storage{
 	name = "Storage And Science Bay"
@@ -2095,10 +2094,9 @@
 /area/ship/cargo/starboard)
 "zE" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/engine/elite,
-/obj/item/clothing/mask/gas/atmos,
-/obj/item/tank/jetpack/void,
 /obj/effect/turf_decal/spline/fancy/opaque/ntblue,
+/obj/item/clothing/mask/gas/atmos,
+/obj/item/mod/control/pre_equipped/advanced,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm/captain)
 "zM" = (
@@ -4147,11 +4145,10 @@
 	dir = 5
 	},
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/engine,
-/obj/item/tank/jetpack/carbondioxide,
 /obj/effect/turf_decal/spline/fancy/opaque/nakamuraayellow{
 	dir = 8
 	},
+/obj/item/mod/control/pre_equipped/atmospheric,
 /turf/open/floor/plasteel/patterned,
 /area/ship/storage{
 	name = "Storage And Science Bay"

@@ -93,6 +93,7 @@
 /obj/effect/turf_decal/borderfloorwhite{
 	dir = 1
 	},
+/obj/item/storage/belt/medical/surgery,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "at" = (
@@ -348,7 +349,7 @@
 "cT" = (
 /obj/structure/window/plasma/reinforced/spawner,
 /obj/structure/window/plasma/reinforced/spawner/east,
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/mix_output{
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/siphon/atmos/air_output{
 	dir = 4
 	},
 /turf/open/floor/engine/air,
@@ -438,6 +439,9 @@
 /obj/structure/marker_beacon{
 	picked_color = "Lime"
 	},
+/obj/machinery/atmospherics/pipe/layer_manifold{
+	dir = 4
+	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/engine)
 "dv" = (
@@ -485,7 +489,8 @@
 	lethal_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 6;
-	id = "Caliban_turret_control"
+	id = "Caliban_turret_control";
+	scan_range = 10
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/crew/cryo)
@@ -737,7 +742,8 @@
 	lethal_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 6;
-	id = "Caliban_turret_control"
+	id = "Caliban_turret_control";
+	scan_range = 10
 	},
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/crew/canteen)
@@ -750,7 +756,8 @@
 	lethal_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 9;
-	id = "Caliban_turret_control"
+	id = "Caliban_turret_control";
+	scan_range = 10
 	},
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/engineering/engine)
@@ -794,7 +801,8 @@
 	dir = 6
 	},
 /obj/machinery/computer/crew/syndie{
-	dir = 8
+	dir = 8;
+	icon_state = "computer-right"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
@@ -817,13 +825,13 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+/obj/effect/turf_decal/techfloor{
+	dir = 5
+	},
 /obj/effect/turf_decal/trimline/opaque/vired/warning{
 	dir = 8;
 	pixel_x = -4;
 	layer = 2.061
-	},
-/obj/effect/turf_decal/techfloor{
-	dir = 5
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
@@ -876,10 +884,10 @@
 /area/ship/crew/dorm/dormtwo)
 "gV" = (
 /obj/structure/catwalk,
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on/layer2{
+/obj/machinery/atmospherics/pipe/simple/green/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/green/hidden/layer4{
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on/layer2{
 	dir = 4
 	},
 /turf/open/floor/engine/hull/reinforced,
@@ -1046,8 +1054,7 @@
 /area/ship/hallway/port_fore)
 "hM" = (
 /obj/machinery/computer/helm{
-	dir = 8;
-	icon_state = "computer-right"
+	dir = 8
 	},
 /obj/structure/railing{
 	layer = 3.8;
@@ -1329,6 +1336,7 @@
 /obj/item/clothing/glasses/sunglasses/chemical,
 /obj/item/storage/bag/chemistry,
 /obj/item/clothing/mask/surgical,
+/obj/item/storage/firstaid,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "jJ" = (
@@ -1361,7 +1369,8 @@
 	lethal_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 10;
-	id = "Caliban_turret_control"
+	id = "Caliban_turret_control";
+	scan_range = 10
 	},
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/engineering/engine)
@@ -1581,6 +1590,22 @@
 /area/ship/security/weapons_control)
 "lA" = (
 /obj/structure/catwalk,
+/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer2{
+	name = "Exhaust Injector";
+	dir = 8;
+	volume_rate = 200;
+	piping_layer = 1;
+	pixel_y = -5
+	},
+/obj/machinery/atmospherics/pipe/simple/dark/hidden{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/dark/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/dark/hidden/layer4{
+	dir = 8
+	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/engine)
 "lB" = (
@@ -1670,6 +1695,7 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
+/obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm)
 "lQ" = (
@@ -1709,7 +1735,8 @@
 	lethal_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 5;
-	id = "Caliban_turret_control"
+	id = "Caliban_turret_control";
+	scan_range = 10
 	},
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/crew/toilet)
@@ -1775,9 +1802,8 @@
 /area/ship/crew/office)
 "mw" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
-	dir = 4;
-	heat_capacity = 500;
-	name = "thermo-electric cooler"
+	dir = 1;
+	initialize_directions = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/dark/hidden/layer2{
 	dir = 1
@@ -2037,10 +2063,10 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "nZ" = (
-/obj/machinery/computer/atmos_control/tank/oxygen_tank{
+/obj/machinery/atmospherics/pipe/simple/green/visible,
+/obj/machinery/computer/atmos_control/tank/nitrogen_tank{
 	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/simple/green/visible,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/engine)
 "ob" = (
@@ -2248,7 +2274,7 @@
 	dir = 1;
 	id = "Caliban_window_engine_shutters";
 	name = "External Window Shutters";
-	pixel_y = -29
+	pixel_y = -21
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/engine)
@@ -2615,7 +2641,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/button/door{
 	dir = 8;
-	id = "Caliban_railgun_exit";
+	id = "Caliban_railgun_inside";
 	name = "Shutter Control";
 	pixel_x = 21;
 	pixel_y = -2
@@ -2632,7 +2658,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/door/airlock/command{
-	name = "Artificier Class II Quarters";
+	name = "Honorable Vanguard Quarters";
 	req_one_access = list(19,3)
 	},
 /obj/structure/cable{
@@ -2737,9 +2763,12 @@
 /area/ship/engineering)
 "su" = (
 /obj/structure/catwalk,
-/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer2{
+/obj/machinery/atmospherics/pipe/simple/dark/hidden/layer2{
+	dir = 9
+	},
+/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4{
+	dir = 8;
 	name = "Exhaust Injector";
-	dir = 1;
 	volume_rate = 200
 	},
 /turf/open/floor/engine/hull/reinforced,
@@ -2862,7 +2891,6 @@
 /area/ship/crew/canteen)
 "tp" = (
 /obj/machinery/light/directional/south,
-/obj/item/inteq_space_voucher,
 /obj/item/gps/engineering{
 	gpstag = "IQ0"
 	},
@@ -2959,7 +2987,7 @@
 	dir = 1
 	},
 /obj/item/paper/fluff{
-	default_raw_text = "Artificer team: BE CAUTIOUS. THE SHIP IS LOW ON POWER due to lack of F P.A.C.M.A.N. and worn-out SMESes. THE SHIP SHOULD TAKE OFF OF OUTPOST AND START ITS TURBINE NOW.";
+	default_raw_text = "Artificer team: BE CAUTIOUS. THE SHIP IS LOW ON POWER due to lack of P.A.C.M.A.N. and worn-out SMESes. THE SHIP SHOULD TAKE OFF OF OUTPOST AND START ITS TURBINE ASAP.";
 	name = "WARNING"
 	},
 /turf/open/floor/carpet/red,
@@ -3262,7 +3290,6 @@
 	req_access_txt = "1"
 	},
 /obj/machinery/light/directional/south,
-/obj/item/inteq_space_voucher,
 /obj/item/gps/engineering{
 	gpstag = "IQ0"
 	},
@@ -3363,7 +3390,8 @@
 	lethal_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 10;
-	id = "Caliban_turret_control"
+	id = "Caliban_turret_control";
+	scan_range = 10
 	},
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/medical)
@@ -3430,7 +3458,7 @@
 	dir = 10
 	},
 /obj/item/storage/box/ammo/a65clip,
-/obj/item/storage/box/ammo/a556_42,
+/obj/item/storage/box/ammo/a556_box,
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "wU" = (
@@ -3442,7 +3470,8 @@
 	lethal_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 9;
-	id = "Caliban_turret_control"
+	id = "Caliban_turret_control";
+	scan_range = 10
 	},
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/hallway/port_fore)
@@ -3517,7 +3546,7 @@
 	},
 /obj/machinery/vending/inteq/space_vendor,
 /obj/item/paper/fluff{
-	default_raw_text = "Due to highly experimental nature, modsuits are not possible to wear for vox and kepori. Be cautious!";
+	default_raw_text = "Due to highly experimental nature, modsuits are not possible to wear for vox and kepori. Be cautious!Moreover, do not forget to change your cell in your modsuit";
 	name = "WARNING"
 	},
 /turf/open/floor/plasteel/telecomms_floor,
@@ -3936,7 +3965,8 @@
 	lethal_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 10;
-	id = "Caliban_turret_control"
+	id = "Caliban_turret_control";
+	scan_range = 10
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/crew/dorm/dormfive)
@@ -3972,13 +4002,13 @@
 /area/ship/engineering/engine)
 "Bm" = (
 /obj/structure/catwalk,
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on,
 /obj/machinery/atmospherics/pipe/simple/green/hidden/layer4{
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/green/hidden/layer2{
 	dir = 10
 	},
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/engine)
 "Bv" = (
@@ -3990,7 +4020,8 @@
 	lethal_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 9;
-	id = "Caliban_turret_control"
+	id = "Caliban_turret_control";
+	scan_range = 10
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/engineering)
@@ -4070,6 +4101,16 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
+"Ca" = (
+/obj/machinery/atmospherics/pipe/simple/green/visible,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/computer/atmos_control/tank/oxygen_tank{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/engineering/engine)
 "Cs" = (
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/engine)
@@ -4181,6 +4222,7 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
+/obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plating,
 /area/ship/hangar)
 "CX" = (
@@ -4224,9 +4266,8 @@
 	layer = 2.040;
 	dir = 5
 	},
-/obj/machinery/computer/cargo{
-	dir = 8;
-	icon_state = "computer-left"
+/obj/machinery/modular_computer/console/preset/command{
+	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
@@ -4258,7 +4299,8 @@
 	lethal_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 6;
-	id = "Caliban_turret_control"
+	id = "Caliban_turret_control";
+	scan_range = 10
 	},
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/crew/dorm)
@@ -4731,7 +4773,8 @@
 	lethal_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 6;
-	id = "Caliban_turret_control"
+	id = "Caliban_turret_control";
+	scan_range = 10
 	},
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/crew/cryo)
@@ -4791,7 +4834,7 @@
 	pixel_x = 8;
 	pixel_y = 3
 	},
-/obj/item/storage/firstaid,
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/plasteel/white,
 /area/ship/hangar)
 "Ho" = (
@@ -4851,9 +4894,6 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/engine)
 "Ir" = (
-/obj/machinery/modular_computer/console/preset/command{
-	dir = 8
-	},
 /obj/structure/railing{
 	layer = 2.81;
 	color = "#808080";
@@ -4862,6 +4902,10 @@
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
 	layer = 2.040;
 	dir = 5
+	},
+/obj/machinery/computer/cargo{
+	dir = 8;
+	icon_state = "computer-left"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
@@ -4942,7 +4986,8 @@
 	lethal_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 6;
-	id = "Caliban_turret_control"
+	id = "Caliban_turret_control";
+	scan_range = 10
 	},
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/security/armory)
@@ -5470,6 +5515,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 9
 	},
+/obj/item/melee/classic_baton/telescopic,
 /obj/item/clothing/head/beret/sec/hos/inteq/honorable,
 /obj/item/clothing/suit/armor/hos/inteq/honorable,
 /obj/item/clothing/under/syndicate/inteq/honorable,
@@ -5566,6 +5612,10 @@
 	pixel_y = -10;
 	req_access_txt = "56"
 	},
+/obj/item/paper/fluff{
+	default_raw_text = "Artificer team: Ship is fueled by 3 powerful vents that siphon all air outside. Don't forget to turn on your atmos regeneration system on your ship after lunch!";
+	name = "About Atmos Regeneration System"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "Pp" = (
@@ -5575,11 +5625,14 @@
 /obj/structure/guncloset{
 	anchored = 1
 	},
-/obj/item/gun/ballistic/automatic/marksman/boomslang/indie/no_mag,
 /obj/item/gun/ballistic/automatic/assault/g36sh/inteq{
 	spawnwithmagazine = 0;
 	pixel_y = -8;
 	spawn_no_ammo = 1
+	},
+/obj/item/gun/ballistic/automatic/marksman/boomslang/indie/no_mag{
+	zoom_amt = 5;
+	zoom_out_amt = 2
 	},
 /turf/open/floor/pod/dark,
 /area/ship/security/armory)
@@ -5897,19 +5950,19 @@
 /area/ship/hallway/port_fore)
 "RV" = (
 /obj/structure/rack,
-/obj/item/ammo_box/magazine/skm_762_40{
-	pixel_x = 5
-	},
-/obj/item/ammo_box/magazine/skm_762_40,
-/obj/item/ammo_box/magazine/skm_762_40{
-	pixel_x = -5
-	},
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
 	layer = 2.040;
 	dir = 8
+	},
+/obj/item/ammo_box/magazine/skm_762_40/extended{
+	pixel_x = 5
+	},
+/obj/item/ammo_box/magazine/skm_762_40/extended,
+/obj/item/ammo_box/magazine/skm_762_40{
+	pixel_x = -8
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
@@ -6096,7 +6149,7 @@
 /obj/machinery/computer/turbine_computer,
 /obj/machinery/airalarm/directional/north,
 /obj/item/paper/fluff{
-	default_raw_text = "Artificer team: BE CAREFUL. DO NOT RUN THE TURBINE AT THE OUTPOST. IT WILL CAUSE THE HANGAR TO BURN DOWN COMPLETELY. DON'T DO IT AT ALL.";
+	default_raw_text = "Artificer team: BE CAREFUL. DO NOT RUN THE TURBINE AT THE OUTPOST. IT WILL CAUSE THE HANGAR TO BURN DOWN COMPLETELY. DON'T DO IT AT ALL. <br><br>Guide to turbine launch: <br><br>0. Prepare surplus welding tool (you will sacrifice it), turn it on and throw it into the incinerator chamber before launch. <br><br>1. Turn on 'ChamberMixer' (purple pipes) at 400 KPa at 33%/66% mix. <br><br>2. Turn on 'Exhaustventilationpump' on max KPa. <br><br>3.  Turn on 'burnchamberreturntoexhaustpump'. <br><br>4. Open all valves that you can find (yeah, it will open transfer from scrubber line pipes to exhaustion pipes) and valve from green pipes to red ones. <br><br>5. set up scrubbers to pump out CO2, H2O and N2.  <br><br>6. Launch turbine from console!";
 	name = "WARNING"
 	},
 /turf/open/floor/plasteel/tech,
@@ -6262,6 +6315,7 @@
 /obj/item/paper_bin/carbon,
 /obj/item/folder/syndicate,
 /obj/item/pen/fourcolor,
+/obj/machinery/cell_charger,
 /turf/open/floor/carpet/red,
 /area/ship/crew/dorm/dormfive)
 "Ul" = (
@@ -6450,7 +6504,8 @@
 	lethal_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 5;
-	id = "Caliban_turret_control"
+	id = "Caliban_turret_control";
+	scan_range = 10
 	},
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/security/armory)
@@ -6571,10 +6626,26 @@
 	lethal_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 5;
-	id = "Caliban_turret_control"
+	id = "Caliban_turret_control";
+	scan_range = 10
 	},
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/crew/dorm/captain)
+"Xp" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 8;
+	name = "Exhaust Injector";
+	volume_rate = 200
+	},
+/obj/machinery/atmospherics/pipe/simple/dark/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/dark/hidden/layer4{
+	dir = 8
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/engineering/engine)
 "XH" = (
 /obj/structure/railing{
 	dir = 8;
@@ -6615,7 +6686,8 @@
 	lethal_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 5;
-	id = "Caliban_turret_control"
+	id = "Caliban_turret_control";
+	scan_range = 10
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/security/armory)
@@ -6648,6 +6720,9 @@
 	},
 /obj/item/shield/riot/tele,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/attachment/rail_light,
+/obj/item/attachment/rail_light,
+/obj/item/attachment/rail_light,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "YI" = (
@@ -6737,7 +6812,6 @@
 /obj/item/clothing/glasses/hud/health/sunglasses,
 /obj/item/storage/belt/medical/webbing,
 /obj/item/clothing/head/beret/med,
-/obj/item/storage/belt/medical/surgery,
 /obj/item/pinpointer/crew,
 /obj/item/sensor_device,
 /obj/item/storage/bag/medical{
@@ -6800,6 +6874,8 @@
 /obj/item/storage/box/flares,
 /obj/item/storage/box/teargas,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/inteq_space_voucher,
+/obj/item/inteq_space_voucher,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "ZV" = (
@@ -6954,7 +7030,7 @@ at
 Ai
 Yt
 jT
-lA
+Xp
 sw
 sw
 sw
@@ -7136,7 +7212,7 @@ Pi
 Yt
 IJ
 Ug
-Dg
+Ca
 sT
 Mf
 Yt

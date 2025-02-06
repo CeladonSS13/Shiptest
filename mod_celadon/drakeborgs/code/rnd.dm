@@ -152,3 +152,14 @@
 
 /obj/item/borg/upgrade/expand
 	module_type = list(/obj/item/robot_module/standard, /obj/item/robot_module/medical, /obj/item/robot_module/engineering, /obj/item/robot_module/security, /obj/item/robot_module/peacekeeper, /obj/item/robot_module/janitor, /obj/item/robot_module/clown, /obj/item/robot_module/butler, /obj/item/robot_module/miner, /obj/item/robot_module/drake, /obj/item/robot_module/meka)
+
+/obj/item/borg/upgrade/modkit/cooldown
+	module_type = list(/obj/item/robot_module/miner, /obj/item/robot_module/drake/miner, /obj/item/robot_module/meka/miner)
+
+
+/obj/item/borg/upgrade/modkit/damage
+	module_type = list(/obj/item/robot_module/miner, /obj/item/robot_module/drake/miner, /obj/item/robot_module/meka/miner)
+
+
+/obj/item/borg/upgrade/modkit/range
+	module_type = list(/obj/item/robot_module/miner, /obj/item/robot_module/drake/miner, /obj/item/robot_module/meka/miner)

@@ -69,14 +69,8 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
 	},
-/obj/machinery/autolathe,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 10
-	},
-/obj/item/stack/sheet/glass/twenty,
-/obj/item/stack/sheet/metal/twenty{
-	pixel_x = 3;
-	pixel_y = 0
 	},
 /obj/machinery/light_switch{
 	dir = 1;
@@ -160,7 +154,7 @@
 /area/ship/security)
 "fR" = (
 /obj/effect/turf_decal/box,
-/obj/structure/frame,
+/obj/structure/frame/machine,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "hb" = (
@@ -191,8 +185,8 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/box,
-/obj/structure/frame,
 /obj/item/stack/ore/bluespace_crystal,
+/obj/structure/frame/machine,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "kK" = (
@@ -551,10 +545,6 @@
 	},
 /obj/item/storage/box/ammo/c9mm_rubber{
 	pixel_x = 8;
-	pixel_y = 12
-	},
-/obj/item/storage/box/ammo/c9mm_rubber{
-	pixel_x = 8;
 	pixel_y = 10
 	},
 /obj/item/storage/box/ammo/c9mm_rubber{
@@ -568,10 +558,6 @@
 /obj/item/storage/box/ammo/c9mm_rubber{
 	pixel_x = 8;
 	pixel_y = 4
-	},
-/obj/item/storage/box/ammo/c9mm_rubber{
-	pixel_x = 8;
-	pixel_y = 2
 	},
 /obj/item/gun/ballistic/automatic/smg/vector/no_mag,
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/saber/no_mag{

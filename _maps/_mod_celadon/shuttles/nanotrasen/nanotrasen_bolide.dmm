@@ -1297,10 +1297,6 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/office)
 "ji" = (
-/obj/machinery/power/shieldwallgen/atmos/roundstart{
-	id = "bolide_bayshield";
-	dir = 4
-	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -1310,6 +1306,10 @@
 	},
 /obj/machinery/door/poddoor/shutters{
 	id = "bolide_bay"
+	},
+/obj/machinery/power/shieldwallgen/atmos/strong/roundstart{
+	dir = 4;
+	id = "bolide_bayshield"
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hangar)
@@ -3387,12 +3387,6 @@
 /area/ship/bridge)
 "yy" = (
 /obj/structure/grille,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /obj/machinery/door/poddoor/shutters{
 	id = "bolide_win_1"
@@ -4593,9 +4587,6 @@
 /area/ship/engineering)
 "FB" = (
 /obj/structure/grille,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -5872,16 +5863,16 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/power/shieldwallgen/atmos/roundstart{
-	id = "bolide_bayshield";
-	dir = 8
-	},
 /obj/effect/turf_decal/techfloor/orange,
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 1
 	},
 /obj/machinery/door/poddoor/shutters{
 	id = "bolide_bay"
+	},
+/obj/machinery/power/shieldwallgen/atmos/strong/roundstart{
+	dir = 8;
+	id = "bolide_bayshield"
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hangar)
@@ -6515,9 +6506,6 @@
 /area/ship/crew/ccommons)
 "Tf" = (
 /obj/structure/grille,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
 /obj/machinery/door/poddoor/shutters{
 	id = "bolide_win_1"
 	},

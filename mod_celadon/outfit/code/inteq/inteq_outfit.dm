@@ -116,6 +116,7 @@
 
 /datum/outfit/job/inteq/captain/rearguard/celadon
 	name = "Rearguard (InteQ)"
+	id_assignment = "Rearguard"
 	head = /obj/item/clothing/head/beret/sec/hos/inteq
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
 	suit = /obj/item/clothing/suit/armor/vest/inteq

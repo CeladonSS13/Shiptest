@@ -61,7 +61,9 @@
 
 	backpack_contents = list(
 		/obj/item/storage/box/ids = 1,
-		/obj/item/melee/classic_baton/telescopic = 1,
+		// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+		// /obj/item/melee/classic_baton/telescopic = 1,
+		// [/CELADON-REMOVE]
 		/obj/item/modular_computer/tablet/preset/advanced = 1)
 
 /datum/outfit/job/clip/chemist
@@ -103,7 +105,9 @@
 	courierbag = /obj/item/storage/backpack/messenger/engi
 	box = /obj/item/storage/box/survival/engineer
 	backpack_contents = list(
-		/obj/item/melee/classic_baton/telescopic=1,
+		// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+		// /obj/item/melee/classic_baton/telescopic=1,
+		// [/CELADON-REMOVE]
 		/obj/item/modular_computer/tablet/preset/advanced = 1
 	)
 
@@ -129,7 +133,9 @@
 
 	backpack_contents = list(
 		/obj/item/storage/box/ids=1,
-		/obj/item/melee/classic_baton/telescopic=1,
+		// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+		// /obj/item/melee/classic_baton/telescopic=1,
+		// [/CELADON-REMOVE]
 		/obj/item/modular_computer/tablet/preset/advanced = 1)
 
 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/head_of_personnel)
@@ -315,8 +321,10 @@
 	head = /obj/item/clothing/head/clip/slouch/officer
 
 	backpack_contents = list(/obj/item/storage/box/ids=1,
-		/obj/item/melee/classic_baton/telescopic=1,
-		/obj/item/modular_computer/tablet/preset/advanced = 1)
+		// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+		// /obj/item/melee/classic_baton/telescopic = 1
+		// [/CELADON-REMOVE]
+	)
 
 /datum/outfit/job/clip/minutemen/captain/general
 	name = "CLIP Minutemen - General"
@@ -330,7 +338,10 @@
 	shoes = /obj/item/clothing/shoes/combat
 
 	box = /obj/item/storage/box/survival/engineer
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/gun/ballistic/revolver/mateba=1)
+	// [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички
+	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/gun/ballistic/revolver/mateba=1)	// CELADON-EDIT - ORIGINAL
+	backpack_contents = list(/obj/item/gun/ballistic/revolver/mateba=1)
+	// [/CELADON-EDIT]
 
 /datum/outfit/job/clip/minutemen/captain/general/admiral // for flavor, might remove outright
 	name = "CLIP Minutemen - Admiral"

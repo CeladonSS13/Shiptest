@@ -221,6 +221,7 @@
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 1
 	},
+/obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
 "em" = (
@@ -345,13 +346,11 @@
 /obj/effect/decal/cleanable/blood/old,
 /obj/machinery/light/directional/east,
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/tank/internals/oxygen,
-/obj/item/clothing/suit/space/hardsuit/security{
-	slowdown = 0.2
-	},
 /obj/effect/turf_decal/trimline/opaque/vired/filled/arrow_ccw{
 	dir = 4
 	},
+/obj/item/clothing/mask/gas/vigilitas,
+/obj/item/mod/control/pre_equipped/security,
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "gb" = (
@@ -403,10 +402,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/orange/visible,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/trash/pistachios{
-	pixel_x = -10;
-	pixel_y = -5
-	},
+/obj/machinery/recharge_station,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "gS" = (
@@ -708,6 +704,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/orange/visible,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/trash/pistachios{
+	pixel_x = -10;
+	pixel_y = -5
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "mz" = (
@@ -1338,7 +1338,6 @@
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 1
 	},
-/obj/machinery/light/directional/north,
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering";
 	req_access_txt = "10";
@@ -1457,15 +1456,11 @@
 	dir = 5
 	},
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/tank/internals/oxygen,
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 8
 	},
 /obj/item/clothing/mask/gas/sechailer/swat,
-/obj/item/clothing/suit/space/hardsuit/security/hos{
-	slowdown = 0;
-	desc = "A special bulky suit that protects against hazardous, low pressure environments. Has an additional layer of armor. This one seems to be modified with advanced servos and lightweight materials."
-	},
+/obj/item/mod/control/pre_equipped/safeguard,
 /turf/open/floor/wood,
 /area/ship/bridge)
 "zF" = (
@@ -1598,13 +1593,11 @@
 	pixel_x = 32
 	},
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/tank/internals/oxygen,
-/obj/item/clothing/suit/space/hardsuit/security{
-	slowdown = 0.2
-	},
 /obj/effect/turf_decal/trimline/opaque/vired/filled/arrow_ccw{
 	dir = 4
 	},
+/obj/item/clothing/mask/gas/vigilitas,
+/obj/item/mod/control/pre_equipped/security,
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "BG" = (
@@ -1659,12 +1652,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/armory)
-"CA" = (
-/obj/structure/sign/poster/contraband/ntos{
-	pixel_y = 32
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/hallway/central)
 "Ds" = (
 /obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/door/poddoor{
@@ -2182,6 +2169,9 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/opaque/blue/diagonal,
+/obj/structure/sign/poster/contraband/ntos{
+	pixel_y = 32
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/medical)
 "Ld" = (
@@ -2352,6 +2342,9 @@
 /obj/effect/turf_decal/trimline/opaque/vired/filled/arrow_ccw{
 	dir = 8
 	},
+/obj/item/tank/internals/oxygen,
+/obj/item/tank/internals/oxygen,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "Ok" = (
@@ -3143,7 +3136,7 @@ Uy
 BE
 fX
 Fz
-CA
+Gf
 mW
 FD
 tt

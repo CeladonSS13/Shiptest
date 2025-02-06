@@ -483,4 +483,7 @@ Auto Patrol: []"},
 	. = ..()
 
 /obj/machinery/bot_core/secbot
-	req_access = list(ACCESS_SECURITY)
+// [CELADON-EDIT] - QoL
+//	req_access = list(ACCESS_SECURITY)
+	req_access = 0
+// [/CELADON-EDIT]

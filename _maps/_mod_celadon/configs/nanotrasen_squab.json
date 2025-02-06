@@ -1,0 +1,54 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "Squab-class Multipurpose Frigate",
+	"map_short_name": "Squab",
+	"description": "Многоцелевой фрегат класса 'Squab' во владении N+S Logistics - это ещё более компактная и современная замена классу 'Delta', сочетающая в себе достаточное для комфортного проживания пространство для экипажа, сравнимый лишь с классом 'Meta' огромный грузовой отсек и высокую удельную тягу. Корабль обычно комплектуется штатной охраной VI и малой научной командой с руководителем, от самой Компании.",
+	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_squab.dmm",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 5,
+	"starting_funds": 3000,
+	"prefix": "NTDSV",
+	"faction": "/datum/faction/nt",
+	"tags": [
+		"Science",
+		"Mining",
+		"Robotics"
+	],
+	"namelists": [
+		"GENERAL",
+		"SPACE",
+		"BRITISH_NAVY",
+		"MERCANTILE",
+		"NANOTRASEN"
+	],
+	"job_slots": {
+		"Captain": {
+			"outfit": "/datum/outfit/job/nanotrasen/captain/ns",
+			"officer": true,
+			"slots": 1
+		},
+		"Science Director": {
+			"outfit": "/datum/outfit/job/nanotrasen/rd",
+			"officer": true,
+			"slots": 1
+		},
+		"Security Detail": {
+			"outfit": "/datum/outfit/job/nanotrasen/security",
+			"slots": 1
+		},
+		"Scientist": {
+			"outfit": "/datum/outfit/job/nanotrasen/scientist",
+			"slots": 2
+		},
+		"Shaft Miner": {
+			"outfit": "/datum/outfit/job/nanotrasen/miner",
+			"slots": 2
+		},
+		"Ship Engineer": {
+			"outfit": "/datum/outfit/job/nanotrasen/engineer",
+			"slots": 1
+		}
+		
+	}
+}

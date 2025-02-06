@@ -307,7 +307,9 @@
 		/obj/item/reagent_containers/food/snacks/donut,
 		/obj/item/melee/knife/combat,
 		/obj/item/flashlight/seclite,
-		/obj/item/melee/classic_baton/telescopic,
+		// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+		// /obj/item/melee/classic_baton/telescopic,
+		// [/CELADON-REMOVE]
 		/obj/item/radio,
 		/obj/item/clothing/gloves,
 		/obj/item/restraints/legcuffs/bola,

@@ -3,7 +3,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/crate_shelf/built,
+/obj/structure/crate_shelf,
 /turf/open/floor/plasteel/lightdark,
 /area/ship/bridge)
 "c" = (
@@ -43,7 +43,8 @@
 /area/ship/bridge)
 "g" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 5
+	dir = 5;
+	id = "vespa_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -74,12 +75,6 @@
 /turf/open/floor/plasteel/lightdark,
 /area/ship/bridge)
 "k" = (
-/obj/machinery/button/door{
-	id = "vespa_windows";
-	name = "window shutters";
-	pixel_x = 24;
-	pixel_y = 24
-	},
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/corner{
 	dir = 4
 	},
@@ -114,7 +109,8 @@
 /area/ship/bridge)
 "n" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 9
+	dir = 9;
+	id = "vespa_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -185,7 +181,8 @@
 /area/ship/bridge)
 "w" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 10
+	dir = 10;
+	id = "vespa_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -211,7 +208,9 @@
 "z" = (
 /obj/machinery/light/floor,
 /obj/machinery/power/apc/auto_name/directional/south{
-	req_ship_access = 0
+	req_ship_access = 0;
+	pixel_x = 1;
+	pixel_y = -27
 	},
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -219,6 +218,11 @@
 /obj/structure/cable,
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line,
 /obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/machinery/light_switch{
+	pixel_y = -18;
+	pixel_x = -11;
 	dir = 1
 	},
 /turf/open/floor/plasteel/lightdark,
@@ -297,18 +301,6 @@
 /turf/open/floor/plasteel/lightdark,
 /area/ship/bridge)
 "J" = (
-/obj/machinery/button/door{
-	id = "vespadoors";
-	name = "airlock shutters";
-	pixel_x = -2;
-	pixel_y = -24;
-	dir = 1
-	},
-/obj/machinery/light_switch{
-	pixel_y = -23;
-	pixel_x = 8;
-	dir = 1
-	},
 /obj/structure/table/reinforced/titaniumglass,
 /obj/machinery/recharger{
 	pixel_x = -6;
@@ -332,6 +324,11 @@
 	dir = 5
 	},
 /obj/machinery/light/floor,
+/obj/machinery/turretid{
+	pixel_x = -2;
+	pixel_y = 26;
+	id = "vespa_turrets"
+	},
 /turf/open/floor/plasteel/lightdark,
 /area/ship/bridge)
 "L" = (
@@ -359,13 +356,6 @@
 /turf/open/floor/plasteel/lightdark,
 /area/ship/bridge)
 "N" = (
-/obj/machinery/button/door{
-	pixel_x = 5;
-	pixel_y = 21;
-	id = "vespa_thr";
-	dir = 2;
-	name = "thrusters shutters"
-	},
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
@@ -374,23 +364,18 @@
 	},
 /obj/machinery/light/floor,
 /obj/structure/chair/comfy/shuttle,
+/obj/machinery/button/door{
+	pixel_x = -22;
+	pixel_y = -6;
+	id = "vespa_thr";
+	name = "Thrusters doors";
+	dir = 4
+	},
 /turf/open/floor/plasteel/lightdark,
 /area/ship/bridge)
 "O" = (
-/obj/machinery/button/door{
-	pixel_x = -7;
-	pixel_y = -21;
-	id = "Torpedo_thr";
-	dir = 1;
-	name = "Thrusters doors"
-	},
 /obj/structure/cable{
 	icon_state = "1-4"
-	},
-/obj/machinery/turretid{
-	pixel_x = -7;
-	pixel_y = -30;
-	id = "ntrider"
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 10
@@ -406,12 +391,30 @@
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 5
 	},
-/obj/item/paper_bin,
-/obj/item/folder/solgov{
-	pixel_x = 0;
-	pixel_y = 0
+/obj/item/paper_bin{
+	pixel_x = -7;
+	pixel_y = 3
 	},
-/obj/item/pen/solgov,
+/obj/item/folder/solgov{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/pen/solgov{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/machinery/button/door{
+	id = "vespa_windows";
+	name = "window shutters";
+	pixel_x = 6;
+	pixel_y = 8
+	},
+/obj/machinery/button/door{
+	id = "vespadoors";
+	name = "airlock shutters";
+	pixel_x = 6;
+	pixel_y = -2
+	},
 /turf/open/floor/plasteel/lightdark,
 /area/ship/bridge)
 "Q" = (
@@ -419,16 +422,13 @@
 	id = "vespadoors"
 	},
 /obj/structure/fans/tiny,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
-	dir = 4
+	dir = 8
 	},
 /obj/docking_port/mobile{
-	dir = 2;
-	port_direction = 8;
-	preferred_direction = 4
+	port_direction = 4;
+	preferred_direction = 4;
+	name = "rider"
 	},
 /turf/open/floor/plasteel/lightdark,
 /area/ship/bridge)
@@ -490,7 +490,8 @@
 /area/ship/bridge)
 "X" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 6
+	dir = 6;
+	id = "vespa_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -557,10 +558,10 @@ D
 S
 F
 o
-U
+Q
 "}
 (5,1,1) = {"
-Q
+M
 G
 u
 b

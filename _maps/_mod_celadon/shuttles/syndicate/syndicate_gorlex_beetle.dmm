@@ -224,9 +224,6 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/reinforced,
-/obj/item/storage/box/donkpockets/donkpocketpizza{
-	pixel_y = 7
-	},
 /obj/machinery/light/directional/south{
 	pixel_y = 0;
 	pixel_x = 32;
@@ -234,6 +231,9 @@
 	},
 /obj/effect/turf_decal/spline/fancy/transparent/syndiered{
 	dir = 4
+	},
+/obj/item/reagent_containers/food/snacks/pizza/meat{
+	pixel_y = 6
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
@@ -246,6 +246,11 @@
 	},
 /obj/effect/turf_decal/box/white,
 /obj/structure/curtain,
+/obj/machinery/computer/cryopod/directional/east{
+	dir = 2;
+	pixel_x = 0;
+	pixel_y = -22
+	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/crew)
 "ez" = (
@@ -265,7 +270,6 @@
 	dir = 5
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	filter_types = list("n2","co2","bz","water_vapor","miasma","freon","pluox","tritium","n20","no2","nob");
 	dir = 8
 	},
 /turf/open/floor/plasteel/mono/white{
@@ -285,11 +289,11 @@
 /obj/structure/sign/poster/syndicate/random{
 	pixel_y = 32
 	},
-/obj/structure/ore_box,
 /obj/effect/turf_decal/industrial/outline{
 	color = "#791500"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/recharge_station,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -340,18 +344,12 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/item/clothing/suit/space/hardsuit/syndi/ngr{
-	armor = list("melee" = 35, "bullet" = 25, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 70);
-	name = "reflector beige-red hardsuit";
-	desc = "A standardized dual-mode hardsuit derived from ICW-era advanced special operations hardsuits, its red partly replaced by beige. It is in EVA mode. Manufactured by Second Battlegroup. It has special reflective plates under which there is a lining against blunt impacts, it is better at reflecting lasers, but it does not perform well against ballistics.";
-	alt_desc = "A standardized dual-mode hardsuit derived from ICW-era advanced special operations hardsuits, its red partly replaced by beige. It is in EVA mode. Manufactured by Second Battlegroup. It has special reflective plates under which there is a lining against blunt impacts, it is better at reflecting lasers, but it does not perform well against ballistics."
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/tank/jetpack/oxygen/harness,
 /obj/item/clothing/mask/balaclava/ngr{
 	name = "gorlex combat balaclava"
 	},
+/obj/item/mod/control/pre_equipped/traitor,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -592,10 +590,11 @@
 	name = "ammunition locker";
 	req_one_access_txt = "1"
 	},
-/obj/item/stock_parts/cell/gun/kalix,
-/obj/item/stock_parts/cell/gun/kalix,
-/obj/item/stock_parts/cell/gun/kalix,
-/obj/item/stock_parts/cell/gun/kalix,
+/obj/item/stock_parts/cell/gun/empty,
+/obj/item/stock_parts/cell/gun/empty,
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/shield/riot/tele,
+/obj/item/shield/riot/tele,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -692,19 +691,13 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/item/clothing/suit/space/hardsuit/syndi/ngr{
-	armor = list("melee" = 35, "bullet" = 25, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 70);
-	name = "reflector beige-red hardsuit";
-	desc = "A standardized dual-mode hardsuit derived from ICW-era advanced special operations hardsuits, its red partly replaced by beige. It is in EVA mode. Manufactured by Second Battlegroup. It has special reflective plates under which there is a lining against blunt impacts, it is better at reflecting lasers, but it does not perform well against ballistics.";
-	alt_desc = "A standardized dual-mode hardsuit derived from ICW-era advanced special operations hardsuits, its red partly replaced by beige. It is in EVA mode. Manufactured by Second Battlegroup. It has special reflective plates under which there is a lining against blunt impacts, it is better at reflecting lasers, but it does not perform well against ballistics."
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/tank/jetpack/oxygen/harness,
 /obj/item/clothing/mask/balaclava/ngr{
 	name = "gorlex combat balaclava"
 	},
+/obj/item/mod/control/pre_equipped/traitor,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -780,7 +773,6 @@
 	name = "Gorlex armor vest"
 	},
 /obj/item/tank/jetpack/suit,
-/obj/item/stock_parts/cell/gun/upgraded,
 /obj/item/melee/classic_baton/telescopic,
 /obj/item/clothing/gloves/tackler/combat/insulated,
 /obj/item/clothing/under/syndicate/ngr/fatigues{
@@ -795,12 +787,16 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
 	},
-/obj/item/gun/ballistic/automatic/assault/e40,
-/obj/item/ammo_box/magazine/e40,
-/obj/item/ammo_box/magazine/e40,
 /obj/item/storage/backpack/duffelbag/syndie,
-/obj/item/storage/box/ammo/c299,
 /obj/item/clothing/glasses/thermal/syndi,
+/obj/item/gun/energy/kalix/pgf/heavy/sniper{
+	fire_delay = 15;
+	gun_firemodes = list("auto");
+	default_firemode = "auto"
+	},
+/obj/item/stock_parts/cell/gun/pgf,
+/obj/item/stock_parts/cell/gun/pgf,
+/obj/item/stock_parts/cell/gun/pgf,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -1297,18 +1293,12 @@
 	},
 /obj/effect/turf_decal/siding/thinplating/dark,
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/item/clothing/suit/space/hardsuit/syndi/ngr{
-	armor = list("melee" = 35, "bullet" = 25, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 70);
-	name = "reflector beige-red hardsuit";
-	desc = "A standardized dual-mode hardsuit derived from ICW-era advanced special operations hardsuits, its red partly replaced by beige. It is in EVA mode. Manufactured by Second Battlegroup. It has special reflective plates under which there is a lining against blunt impacts, it is better at reflecting lasers, but it does not perform well against ballistics.";
-	alt_desc = "A standardized dual-mode hardsuit derived from ICW-era advanced special operations hardsuits, its red partly replaced by beige. It is in EVA mode. Manufactured by Second Battlegroup. It has special reflective plates under which there is a lining against blunt impacts, it is better at reflecting lasers, but it does not perform well against ballistics."
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/directional/south,
-/obj/item/tank/jetpack/oxygen/harness,
 /obj/item/clothing/mask/balaclava/ngr{
 	name = "gorlex combat balaclava"
 	},
+/obj/item/mod/control/pre_equipped/traitor,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -1680,9 +1670,6 @@
 	},
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/suit/space/hardsuit/syndi/ngr{
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90)
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1693,6 +1680,7 @@
 /obj/item/clothing/mask/balaclava/ngr{
 	name = "gorlex combat balaclava"
 	},
+/obj/item/mod/control/pre_equipped/traitor,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -1740,6 +1728,17 @@
 /obj/effect/turf_decal/spline/fancy/transparent/syndiered{
 	dir = 5
 	},
+/obj/item/storage/fancy/egg_box,
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/rice,
+/obj/item/reagent_containers/condiment/rice,
+/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/reagent_containers/food/snacks/meat/slab,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "ze" = (
@@ -1812,16 +1811,19 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/gun/energy/laser/e10,
-/obj/item/gun/energy/laser/e10,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
 	},
 /obj/item/gun/energy/laser{
 	manufacturer = "the CyberSun logo"
 	},
-/obj/item/gun/energy/laser{
-	manufacturer = "the CyberSun logo"
+/obj/item/melee/energy/sword/saber/red{
+	pixel_x = 15;
+	pixel_y = 7
+	},
+/obj/item/melee/energy/sword/saber/red{
+	pixel_x = 15;
+	pixel_y = 7
 	},
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
@@ -2640,6 +2642,11 @@
 	},
 /obj/effect/turf_decal/box/white,
 /obj/structure/curtain,
+/obj/machinery/computer/cryopod/directional/east{
+	dir = 2;
+	pixel_x = 0;
+	pixel_y = -22
+	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/crew)
 "Nw" = (
@@ -2748,7 +2755,7 @@
 /obj/structure/extinguisher_cabinet/directional/west{
 	pixel_y = -8
 	},
-/obj/item/kinetic_crusher/syndie_crusher,
+/obj/item/melee/axe/sledgehammer,
 /turf/open/floor/plasteel/strongdark,
 /area/ship/cargo)
 "OO" = (
@@ -2880,8 +2887,8 @@
 /obj/item/storage/backpack/industrial,
 /obj/item/spacecash/bundle/c200,
 /obj/item/spacecash/bundle/c50,
-/obj/item/gun/energy/e_gun/e11,
 /obj/item/clothing/shoes/magboots/syndie,
+/obj/item/gun/energy/e_gun/e11,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -3118,6 +3125,7 @@
 /obj/item/storage/backpack/satchel/med,
 /obj/item/spacecash/bundle/c200,
 /obj/item/spacecash/bundle/c50,
+/obj/item/defibrillator/loaded,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},

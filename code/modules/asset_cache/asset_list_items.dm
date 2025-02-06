@@ -104,8 +104,8 @@
 		"elysium-brigade-captain-stamp" = 'mod_celadon/_storge_icons/icons/png/elysium_brigade_stamp.png',
 		"elysium-republic-stamp" = 'mod_celadon/_storge_icons/icons/png/elysium_republic_stamp.png',
 		"elysium-avanpost-stamp" = 'mod_celadon/_storge_icons/icons/png/elysium_outpost_stamp.png',
-		"nt-cent-command-stamp" = 'mod_celadon/_storge_icons/icons/png/nano_trasen_central_command_stamp.png',
-		"nt-captain-stamp" = 'mod_celadon/_storge_icons/icons/png/nano_trasen_captain_stamp.png',
+		"nt-cent-command-stamp" = 'mod_celadon/_storge_icons/icons/png/nanotrasen_central_command_stamp.png',
+		"nt-captain-stamp" = 'mod_celadon/_storge_icons/icons/png/nanotrasen_captain_stamp.png',
 		"syndicate-captain-stamp" = 'mod_celadon/_storge_icons/icons/png/syndicate_captain_stamp.png',
 		"stamp-df" = 'mod_celadon/_storge_icons/icons/png/large_stamp-df_generic.png',
 		"stamp-df_captain" = 'mod_celadon/_storge_icons/icons/png/large_stamp-df_captain.png',
@@ -212,7 +212,10 @@
 		if (icon != 'icons/misc/language.dmi')
 			var/icon_state = initial(L.icon_state)
 			Insert("language-[icon_state]", icon, icon_state=icon_state)
-		..()
+	// [CELADON_EDIT] - Переместил вызов родительского прока из цикла
+	// 		..() [CELADON-EDIT] - ORIGINAL
+	..()
+	// [/CELADON_EDIT]
 
 /datum/asset/simple/lobby
 	assets = list(

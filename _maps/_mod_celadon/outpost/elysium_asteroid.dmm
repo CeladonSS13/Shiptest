@@ -358,12 +358,6 @@
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/carpet/nanoweave,
 /area/outpost/crew/canteen)
-"bb" = (
-/obj/structure/statue/snow/snowman{
-	pixel_y = 5
-	},
-/turf/open/floor/grass/snow/safe,
-/area/outpost/hallway/starboard)
 "bc" = (
 /obj/structure/holosign/barrier/atmos/infinite{
 	max_integrity = 500
@@ -2212,7 +2206,6 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/structure/statue/snow/snowman,
 /turf/open/floor/wood/walnut,
 /area/outpost/fraction/syndi/donkco_shop)
 "fN" = (
@@ -2471,12 +2464,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/inteq)
-"gv" = (
-/obj/structure/statue/snow/snowman{
-	pixel_y = 3
-	},
-/turf/open/floor/plating/asteroid/snow/airless,
-/area/outpost/external)
 "gw" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 8
@@ -3703,7 +3690,6 @@
 	pixel_x = 12;
 	pixel_y = 2
 	},
-/obj/structure/statue/snow/snowman,
 /turf/open/floor/grass,
 /area/outpost/hallway/central)
 "jG" = (
@@ -5903,7 +5889,6 @@
 	},
 /obj/structure/flora/ausbushes/stalkybush,
 /obj/structure/flora/ausbushes/ywflowers,
-/obj/structure/statue/snow/snowman,
 /turf/open/floor/grass,
 /area/outpost/hallway/aft)
 "pw" = (
@@ -6134,13 +6119,6 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/engine/hull/rockplanet,
 /area/outpost/hallway/central)
-"pW" = (
-/obj/structure/railing/wood{
-	dir = 8
-	},
-/obj/structure/statue/snow/snowman,
-/turf/open/floor/grass,
-/area/outpost/crew/garden)
 "pX" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -8722,10 +8700,6 @@
 /obj/structure/elevator_platform,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/outpost/crew/library)
-"ws" = (
-/obj/structure/statue/snow/snowman,
-/turf/open/floor/plasteel/patterned/cargo_one,
-/area/outpost/fraction/solfed)
 "wt" = (
 /obj/structure/railing{
 	layer = 4.1
@@ -9989,14 +9963,6 @@
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/engineering)
-"zE" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/statue/snow/snowman,
-/turf/open/floor/concrete/slab_3,
-/area/outpost/hallway/starboard)
 "zF" = (
 /obj/machinery/light/broken/directional/south,
 /obj/structure/table/reinforced,
@@ -10311,7 +10277,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
 	},
-/obj/structure/statue/snow/snowman,
 /turf/open/floor/carpet/black,
 /area/outpost/fraction/syndi)
 "Ar" = (
@@ -10498,7 +10463,6 @@
 	pixel_y = 9;
 	pixel_x = -9
 	},
-/obj/structure/statue/snow/snowman,
 /turf/open/floor/grass,
 /area/outpost/hallway/central)
 "AO" = (
@@ -11859,7 +11823,6 @@
 "Eh" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/extinguisher_cabinet/directional/east,
-/obj/structure/statue/snow/snowman,
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
 "Ei" = (
@@ -12079,7 +12042,6 @@
 /obj/structure/railing/wood{
 	color = "#55391A"
 	},
-/obj/structure/statue/snow/snowman,
 /obj/machinery/camera/autoname{
 	dir = 4;
 	network = list("outpostelysium");
@@ -12160,10 +12122,6 @@
 /obj/effect/spawner/random/trash,
 /turf/open/floor/plating/asteroid/wasteplanet,
 /area/outpost/hallway/central)
-"ER" = (
-/obj/structure/statue/snow/snowman,
-/turf/open/floor/wood,
-/area/outpost/fraction/solfed)
 "ES" = (
 /obj/effect/spawner/random/entertainment/gambling,
 /obj/structure/table/reinforced,
@@ -14609,6 +14567,9 @@
 "KP" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/storage/fancy/cigarettes/cigars/cohiba,
+/obj/item/storage/fancy/cigarettes/cigars/havana,
+/obj/item/lighter/clockwork,
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
 "KQ" = (
@@ -15437,7 +15398,6 @@
 /obj/structure/sign/warning/coldtemp{
 	pixel_y = 32
 	},
-/obj/structure/statue/snow/snowman,
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/cryo)
 "Nc" = (
@@ -15559,7 +15519,6 @@
 /obj/structure/sign/nanotrasen{
 	pixel_x = -32
 	},
-/obj/structure/statue/snow/snowman,
 /turf/open/floor/concrete/reinforced,
 /area/outpost/hallway/central)
 "Np" = (
@@ -18097,9 +18056,6 @@
 "TJ" = (
 /turf/closed/indestructible/reinforced,
 /area/outpost/hallway/central)
-"TK" = (
-/turf/open/chasm,
-/area/space)
 "TL" = (
 /obj/structure/table,
 /obj/item/book/manual/chef_recipes{
@@ -19510,10 +19466,6 @@
 /obj/structure/railing/wood{
 	dir = 9
 	},
-/obj/structure/statue/snow/snowman{
-	pixel_x = 2;
-	pixel_y = -7
-	},
 /turf/open/floor/wood,
 /area/outpost/hallway/central)
 "Xj" = (
@@ -19805,7 +19757,6 @@
 /obj/structure/sign/warning/coldtemp{
 	pixel_y = 32
 	},
-/obj/structure/statue/snow/snowman,
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/cryo)
 "XW" = (
@@ -20693,13 +20644,6 @@ vV
 vV
 vV
 vV
-Zp
-Zp
-Zp
-TK
-Zp
-Zp
-Zp
 vV
 vV
 vV
@@ -20712,13 +20656,6 @@ vV
 vV
 vV
 vV
-Zp
-Zp
-Zp
-TK
-Zp
-Zp
-Zp
 vV
 vV
 vV
@@ -20730,13 +20667,6 @@ vV
 vV
 vV
 vV
-Zp
-Zp
-Zp
-TK
-Zp
-Zp
-Zp
 vV
 vV
 vV
@@ -20748,13 +20678,34 @@ vV
 vV
 vV
 vV
-Zp
-Zp
-Zp
-TK
-Zp
-Zp
-Zp
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
 vV
 vV
 vV
@@ -20881,11 +20832,6 @@ vV
 vV
 vV
 vV
-Zp
-vV
-vV
-vV
-Zp
 vV
 vV
 vV
@@ -20900,11 +20846,6 @@ vV
 vV
 vV
 vV
-Zp
-vV
-vV
-vV
-Zp
 vV
 vV
 vV
@@ -20918,11 +20859,6 @@ vV
 vV
 vV
 vV
-Zp
-vV
-vV
-vV
-Zp
 vV
 vV
 vV
@@ -20936,11 +20872,26 @@ vV
 vV
 vV
 vV
-Zp
 vV
 vV
 vV
-Zp
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
 vV
 vV
 vV
@@ -32141,7 +32092,7 @@ Zp
 ef
 KB
 sl
-ws
+aw
 pA
 ef
 AF
@@ -32520,7 +32471,7 @@ lF
 EI
 Fl
 xg
-ER
+mn
 lF
 ef
 Zp
@@ -36220,7 +36171,7 @@ lD
 ev
 qe
 Zp
-gv
+AB
 AB
 Re
 Zp
@@ -36635,7 +36586,7 @@ vw
 sL
 XH
 qz
-pW
+et
 et
 eb
 dC
@@ -40734,7 +40685,7 @@ oD
 oD
 pI
 UD
-bb
+av
 CQ
 gO
 Rq
@@ -42793,7 +42744,7 @@ wI
 DF
 xt
 pK
-zE
+KV
 jP
 jL
 FU
@@ -53363,7 +53314,7 @@ vV
 vV
 vV
 vV
-vV
+ME
 vV
 "}
 (176,1,1) = {"
@@ -53545,13 +53496,13 @@ vV
 vV
 vV
 vV
-vV
-vV
-vV
-vV
-vV
+ME
+ME
+ME
+ME
 vV
 ME
+vV
 "}
 (177,1,1) = {"
 vV
@@ -53728,17 +53679,17 @@ vV
 vV
 vV
 vV
-vV
-vV
-vV
-vV
-vV
-ME
-ME
 ME
 ME
 vV
 ME
+ME
+ME
+ME
+ME
+ME
+ME
+vV
 "}
 (178,1,1) = {"
 vV
@@ -53914,18 +53865,18 @@ vV
 vV
 vV
 vV
-vV
-vV
+ME
+ME
+ME
+ME
+ME
+ME
+ME
+ME
+ME
 ME
 ME
 vV
-ME
-ME
-ME
-ME
-ME
-ME
-ME
 "}
 (179,1,1) = {"
 vV
@@ -54100,16 +54051,16 @@ vV
 vV
 vV
 vV
-vV
-vV
 ME
 ME
-ME
-ME
-ME
-ME
-ME
-ME
+dM
+dM
+dM
+dM
+dM
+dM
+dM
+dM
 ME
 ME
 ME
@@ -54286,18 +54237,18 @@ vV
 vV
 vV
 vV
-vV
-vV
 ME
 ME
+ME
 dM
+pO
+pi
+bD
+pO
+bD
+pO
 dM
-dM
-dM
-dM
-dM
-dM
-dM
+ME
 ME
 ME
 "}
@@ -54472,194 +54423,6 @@ vV
 vV
 vV
 vV
-vV
-vV
-ME
-ME
-ME
-dM
-pO
-pi
-bD
-pO
-bD
-pO
-dM
-ME
-ME
-"}
-(182,1,1) = {"
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
 ME
 ME
 ME
@@ -54674,9 +54437,9 @@ Bk
 hc
 ME
 ME
+ME
 "}
-(183,1,1) = {"
-vV
+(182,1,1) = {"
 vV
 vV
 vV
@@ -54861,6 +54624,194 @@ bD
 dM
 ME
 ME
+ME
+"}
+(183,1,1) = {"
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+vV
+ME
+ME
+ME
+dM
+dM
+dM
+dM
+dM
+dM
+dM
+dM
+ME
+ME
+vV
 "}
 (184,1,1) = {"
 vV
@@ -55038,16 +54989,16 @@ vV
 ME
 ME
 ME
-dM
-dM
-dM
-dM
-dM
-dM
-dM
-dM
 ME
 ME
+ME
+ME
+ME
+ME
+ME
+ME
+ME
+vV
 "}
 (185,1,1) = {"
 vV
@@ -55223,16 +55174,16 @@ vV
 vV
 vV
 vV
+vV
+vV
 ME
 ME
 ME
+vV
+vV
 ME
 ME
 ME
-ME
-ME
-ME
-ME
-ME
-ME
+vV
+vV
 "}

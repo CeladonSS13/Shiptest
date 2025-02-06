@@ -143,9 +143,10 @@ Acquire: Anomaly
 /obj/item/storage/box/anomaly/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_combined_w_class = WEIGHT_CLASS_NORMAL
-	STR.max_w_class = WEIGHT_CLASS_NORMAL
-	STR.max_items = 10
+	STR.max_combined_w_class = 6
+	STR.max_w_class = 3
+	STR.max_items = 3
+
 
 
 // /datum/mission/acquire/anomaly/New(...)
@@ -251,6 +252,17 @@ Acquire: Anomaly
 	value = num_wanted * value + 500
 	return ..()
 
+/obj/item/storage/toolbox/bounty/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_combined_w_class = 8
+	STR.max_w_class = 4
+	STR.max_items = 4
+
+/*
+		Acquire: Dogtags
+*/
+
 /datum/mission/acquire/bounty
 	name = "Hunt down Frontiersmen Dogtags"
 	desc = "CLIP has assigned us to offer out bounties to hunt down Frontiersman cells and turn in their dogtags. We'll reward you well."
@@ -284,6 +296,17 @@ Acquire: Anomaly
 	// value += num_wanted*100
 	value = num_wanted * value + 500
 	return ..()
+
+/obj/item/storage/toolbox/bounty/hunt/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_combined_w_class = 14
+	STR.max_w_class = 7
+	STR.max_items = 7
+
+/*
+		Acquire: Salvage
+*/
 
 /datum/mission/acquire/salvage
 	name = "Deliver Protolathe"
@@ -432,7 +455,7 @@ Acquire: Anomaly
 /obj/item/storage/box/true_love/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_combined_w_class = WEIGHT_CLASS_NORMAL
+	STR.max_combined_w_class = 15
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
 	STR.max_items = 5
 
@@ -455,6 +478,7 @@ Acquire: Anomaly
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_items = 6
+	STR.display_numerical_stacking = TRUE
 
 // /obj/item/storage/box/anomaly
 // 	name = "anomaly case"

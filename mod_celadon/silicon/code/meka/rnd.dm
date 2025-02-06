@@ -45,12 +45,19 @@
 	module_type = list(/obj/item/robot_module/miner)
 	new_module = /obj/item/robot_module/meka/miner
 
+/obj/item/borg/upgrade/transform/meka/butler
+	name = "Service Meka Body"
+	desc = "Makes your miner cyborg look like Meka"
+	require_module = TRUE
+	module_type = list(/obj/item/robot_module/butler)
+	new_module = /obj/item/robot_module/meka/butler
+
 /datum/techweb_node/cyborg_upg_meka
 	id = "cyborg_upg_meka"
 	display_name = "Cyborg Upgrades: Meka Body"
 	description = "New, humanised body for your cyborgs."
 	prereq_ids = list("cyborg_upg_util")
-	design_ids = list("borg_upgrade_meka_medical", "borg_upgrade_meka_engineering", "borg_upgrade_meka_security", "borg_upgrade_meka_janitor", "borg_upgrade_meka_peacekeeper", "borg_upgrade_meka_miner")
+	design_ids = list("borg_upgrade_meka_medical", "borg_upgrade_meka_engineering", "borg_upgrade_meka_security", "borg_upgrade_meka_janitor", "borg_upgrade_meka_peacekeeper", "borg_upgrade_meka_miner", "borg_upgrade_meka_butler")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
 	export_price = 1000
 
@@ -104,6 +111,15 @@
 	id = "borg_upgrade_meka_miner"
 	build_type = MECHFAB
 	build_path = /obj/item/borg/upgrade/transform/meka/miner
+	materials = list(/datum/material/iron = 1500, /datum/material/glass = 1000, /datum/material/gold = 500, /datum/material/bluespace = 200)
+	construction_time = 80
+	category = list("Cyborg Upgrade Modules")
+
+/datum/design/borg_upgrade_meka_butler
+	name = "Cyborg Upgrade (Service Meka Body)"
+	id = "borg_upgrade_meka_butler"
+	build_type = MECHFAB
+	build_path = /obj/item/borg/upgrade/transform/meka/butler
 	materials = list(/datum/material/iron = 1500, /datum/material/glass = 1000, /datum/material/gold = 500, /datum/material/bluespace = 200)
 	construction_time = 80
 	category = list("Cyborg Upgrade Modules")
