@@ -40,14 +40,12 @@
 					qdel(cig)
 				else
 					to_chat(user, "You place [cig] in [src] without even smoking it. Why would you do that?")
-					SEND_SIGNAL(src, COMSIG_TRY_STORAGE_INSERT, I, user)
 			else
 				visible_message("[user] places [I] in [src].")
 		else
 			to_chat(user, "<span class='warning'>You can't put [I] in [src]. Its already full.</span>")
-
-		add_fingerprint(user)
-		update_appearance(UPDATE_DESC|UPDATE_ICON_STATE)
+	add_fingerprint(user)
+	update_appearance(UPDATE_DESC|UPDATE_ICON_STATE)
 
 
 /obj/item/storage/ashtray/update_icon_state()
