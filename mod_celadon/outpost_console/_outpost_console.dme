@@ -3,6 +3,9 @@
 
 #include "_outpost_console.dm"
 
+#include "code/console.dm"
+#include "code/supply_pack.dm"
+
 #include "code/supply_pack/independent/civilian.dm"
 #include "code/supply_pack/independent/costumes_toys.dm"
 #include "code/supply_pack/independent/food.dm"
@@ -32,8 +35,5 @@
 #include "code/supply_pack/syndicate/ammo.dm"
 #include "code/supply_pack/syndicate/gun.dm"
 #include "code/supply_pack/syndicate/spacesuit_armor.dm"
-
-#include "code/console.dm"
-#include "code/supply_pack.dm"
 
 #endif

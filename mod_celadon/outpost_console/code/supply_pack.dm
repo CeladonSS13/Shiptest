@@ -1,34 +1,33 @@
 /datum/supply_pack/faction
 	name = "Crate"
 	group = "Faction products"
-	faction = ""
 	hidden = TRUE
 
 // Делаем красиво? Наверное? По крайней мере экономим буквы, чтобы не писать в каждом датуме эти вещи!
 
 /datum/supply_pack/faction/independent
 	hidden = FALSE
-	faction = ""
+	faction = /datum/faction/independent
 	crate_type = /obj/structure/closet/crate
 
 /datum/supply_pack/faction/syndicate
 	hidden = FALSE
-	faction = "syndicate"
+	faction = /datum/faction/syndicate
 	crate_type = /obj/structure/closet/crate/secure/gear/syndicate
 
 /datum/supply_pack/faction/solfed
 	hidden = FALSE
-	faction = "solfed"
+	faction = /datum/faction/solgov
 	crate_type = /obj/structure/closet/crate/secure/gear/solfed
 
 /datum/supply_pack/faction/inteq
 	hidden = FALSE
-	faction = "inteq"
+	faction = /datum/faction/inteq
 	crate_type = /obj/structure/closet/crate/secure/gear/inteq
 
 /datum/supply_pack/faction/nanotrasen
 	hidden = FALSE
-	faction = "nanotrasen"
+	faction = /datum/faction/nt
 	crate_type = /obj/structure/closet/crate/secure/gear/nanotrasen
 
 // Создаём ещё одну степень защиты от нежелательного доступа в карго
