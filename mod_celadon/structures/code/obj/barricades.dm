@@ -336,18 +336,16 @@
 /obj/structure/deployable_barricade/sandbags
 	name = "sandbags barricade"
 	desc = "Bags of sand. Self explanatory."
-	icon_state = "sandbags_0"
-	barricade_type = "sandbags"
+	icon_state = "sandbag_0"
+	barricade_type = "sandbag"
 	max_integrity = 280
 	stack_type = /obj/item/stack/sheet/mineral/sandbags
 	destroyed_stack_amount = 2
 	armor = list(MELEE = 80, BULLET = 40, LASER = 40, ENERGY = 40, BOMB = 80, BIO = 5, RAD = 5, FIRE = 100, ACID = 90)
-	proj_pass_rate = 20
 	pass_flags_self = LETPASSTHROW | PASSSTRUCTURE
-	bar_material = SAND
 	climbable = TRUE
-	can_wire = FALSE
-datum/stack_recipe
+	can_wire = TRUE
+
 
 /*----------------------*/
 // MARK: GUARD RAIL
