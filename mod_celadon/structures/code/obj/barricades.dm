@@ -314,7 +314,7 @@
 
 
 /*----------------------*/
-// SNOW
+// MARK: SNOW
 /*----------------------*/
 
 /obj/structure/deployable_barricade/snow
@@ -328,8 +328,29 @@
 	destroyed_stack_amount = 0
 	can_wire = FALSE
 
+
 /*----------------------*/
-// GUARD RAIL
+// MARK: SANDBAGS
+/*----------------------*/
+
+/obj/structure/deployable_barricade/sandbags
+	name = "sandbags barricade"
+	desc = "Bags of sand. Self explanatory."
+	icon_state = "sandbags_0"
+	barricade_type = "sandbags"
+	max_integrity = 280
+	stack_type = /obj/item/stack/sheet/mineral/sandbags
+	destroyed_stack_amount = 2
+	armor = list(MELEE = 80, BULLET = 40, LASER = 40, ENERGY = 40, BOMB = 80, BIO = 5, RAD = 5, FIRE = 100, ACID = 90)
+	proj_pass_rate = 20
+	pass_flags_self = LETPASSTHROW | PASSSTRUCTURE
+	bar_material = SAND
+	climbable = TRUE
+	can_wire = FALSE
+datum/stack_recipe
+
+/*----------------------*/
+// MARK: GUARD RAIL
 /*----------------------*/
 
 /obj/structure/deployable_barricade/guardrail
@@ -350,7 +371,7 @@
 		pixel_y = 11
 
 /*----------------------*/
-// WOOD
+// MARK: WOOD
 /*----------------------*/
 
 /obj/structure/deployable_barricade/wooden
@@ -391,7 +412,7 @@
 
 
 /*----------------------*/
-// METAL
+// MARK: METAL
 /*----------------------*/
 
 #define BARRICADE_METAL_LOOSE 0
@@ -720,7 +741,7 @@
 
 
 /*----------------------*/
-// PLASTEEL
+// MARK: PLASTEEL
 /*----------------------*/
 
 /obj/structure/deployable_barricade/metal/plasteel
@@ -737,7 +758,7 @@
 	///Either we react with other cades next to us ie when opening or so
 	var/linked = FALSE
 	///Open/close delay, for customisation. And because I was asked to - won't customise anything myself.
-	var/toggle_delay = 2 SECONDS
+	var/toggle_delay = 3 SECONDS
 
 /obj/structure/deployable_barricade/metal/plasteel/crowbar_act(mob/living/user, obj/item/I)
 	switch(build_state)
@@ -881,6 +902,12 @@
 /obj/item/quickdeploy/barricade/plasteel
 	thing_to_deploy = /obj/structure/deployable_barricade/metal/plasteel
 	icon_state = "plasteel"
+	delay = 5 SECONDS
+
+
+/*----------------------*/
+// MARK: C.U.C.K.S box
+/*----------------------*/
 
 /obj/item/storage/barricade
 	icon = 'mod_celadon/_storge_icons/icons/obj/barricade.dmi'
