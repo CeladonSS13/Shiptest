@@ -14,5 +14,5 @@
 	name = "C.U.C.K.S box"
 	desc = "Contains several deployable barricades. 3 - plasteel, 9 - metal"
 	contains = list(/obj/item/storage/barricade)
-	cost = 2500
+	cost = 5000
 	crate_name = "C.U.C.K.S crate"
