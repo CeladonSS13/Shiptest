@@ -64,7 +64,7 @@ GLOBAL_LIST_INIT(sandstone_recipes, list ( \
 
 GLOBAL_LIST_INIT(sandbag_recipes, list ( \
 	// [CELADON-ADD] - CELADON_STRUCTURES - Барикады
-	new/datum/stack_recipe("sandbags barricade", obj/structure/deployable_barricade/sandbags, 12, time = 5 SECONDS, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("sandbags barricade", /obj/structure/deployable_barricade/sandbags, 12, time = 5 SECONDS, one_per_turf = TRUE, on_floor = TRUE), \
 	// [/CELADON-ADD]
 	new/datum/stack_recipe("sandbags", /obj/structure/barricade/sandbags, 1, time = 25, one_per_turf = 1, on_floor = 1), \
 	))
