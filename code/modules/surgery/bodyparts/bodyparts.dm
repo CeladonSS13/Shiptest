@@ -61,15 +61,17 @@
 	/// Current limb bleeding, increased when the limb takes brute damage over certain thresholds, decreased through bandages and cauterization
 	var/bleeding = 0
 
-	/// Whether this limb can decay, limiting its' ability to heal
-	var/uses_integrity = FALSE
-	/// How many hit points worth of integrity this limb has lost. 10 integrity = 10 HP
-	var/integrity_loss = 0
-	/// The amount of integrity_loss that this limb can have without any effects.
-	var/integrity_ignored = 20
-	/// If the limb has lost less than this amount of health, integrity loss should not be accrued.
-	/// Ignored if this is is greater or equal to the remaining health of the limb.
-	var/integrity_threshold = 15
+	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// /// Whether this limb can decay, limiting its' ability to heal
+	// var/uses_integrity = FALSE
+	// /// How many hit points worth of integrity this limb has lost. 10 integrity = 10 HP
+	// var/integrity_loss = 0
+	// /// The amount of integrity_loss that this limb can have without any effects.
+	// var/integrity_ignored = 20
+	// /// If the limb has lost less than this amount of health, integrity loss should not be accrued.
+	// /// Ignored if this is is greater or equal to the remaining health of the limb.
+	// var/integrity_threshold = 15
+	// [/CELADON-REMOVE]
 
 	/// So we know if we need to scream if this limb hits max damage
 	var/last_maxed
@@ -134,9 +136,11 @@
 	var/medium_burn_msg = "blistered"
 	var/heavy_burn_msg = "peeling away"
 
-	var/light_integrity_msg = "misaligned"
-	var/medium_integrity_msg = "twisted"
-	var/heavy_integrity_msg = "falling apart"
+	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// var/light_integrity_msg = "misaligned"
+	// var/medium_integrity_msg = "twisted"
+	// var/heavy_integrity_msg = "falling apart"
+	// [/CELADON-REMOVE]
 
 //band-aid for blood overlays & other external overlays until they get refactored
 	var/stored_icon_state
@@ -296,16 +300,20 @@
 	return update_bodypart_damage_state() || .
 
 
-// Removes integrity from the limb, if it uses integrity.
-/obj/item/bodypart/proc/take_integrity_damage(loss)
-	if (uses_integrity)
-		integrity_loss = clamp(integrity_loss + loss, 0, max_damage+integrity_ignored)
+// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+// // Removes integrity from the limb, if it uses integrity.
+// /obj/item/bodypart/proc/take_integrity_damage(loss)
+// 	if (uses_integrity)
+// 		integrity_loss = clamp(integrity_loss + loss, 0, max_damage+integrity_ignored)
+// [/CELADON-REMOVE]
 
 
-// Heals integrity for the limb, if it uses integrity.
-/obj/item/bodypart/proc/heal_integrity(amount)
-	if (uses_integrity)
-		integrity_loss = clamp(integrity_loss - amount, 0, max_damage)
+// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+// // Heals integrity for the limb, if it uses integrity.
+// /obj/item/bodypart/proc/heal_integrity(amount)
+// 	if (uses_integrity)
+// 		integrity_loss = clamp(integrity_loss - amount, 0, max_damage)
+// [/CELADON-REMOVE]
 
 //Heals brute and burn damage for the organ. Returns 1 if the damage-icon states changed at all.
 //Damage cannot go below zero.
@@ -315,12 +323,14 @@
 	if(required_status && !(bodytype & required_status)) //So we can only heal certain kinds of limbs, ie robotic vs organic.
 		return
 
-	if (uses_integrity && (burn > 0 || brute > 0))
-		var/max_heal = max(0, burn_dam + brute_dam - max(0,integrity_loss-integrity_ignored))
-		var/total_heal = min(brute,brute_dam)+min(burn,burn_dam) //in case we're trying to heal nonexistent dmg
-		var/heal_mult = min(1,max_heal/total_heal)
-		brute *= heal_mult
-		burn *= heal_mult
+	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// if (uses_integrity && (burn > 0 || brute > 0))
+	// 	var/max_heal = max(0, burn_dam + brute_dam - max(0,integrity_loss-integrity_ignored))
+	// 	var/total_heal = min(brute,brute_dam)+min(burn,burn_dam) //in case we're trying to heal nonexistent dmg
+	// 	var/heal_mult = min(1,max_heal/total_heal)
+	// 	brute *= heal_mult
+	// 	burn *= heal_mult
+	// [/CELADON-REMOVE]
 	if(brute)
 		set_brute_dam(round(max(brute_dam - brute, 0), DAMAGE_PRECISION))
 		adjust_bleeding(-BLOOD_LOSS_DAMAGE_MAXIMUM * brute / max_damage)
@@ -396,11 +406,13 @@
 		total = max(total, stamina_dam)
 	return total
 
-///Returns damage that can be healed on a limb.
-/// integrity_cost: Optional, returns how much damage can be healed after losing X integrity
-/obj/item/bodypart/proc/get_curable_damage(integrity_cost=0)
-	var/total = brute_dam + burn_dam - max(0,(integrity_loss+integrity_cost)-integrity_ignored)
-	return total
+// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+// ///Returns damage that can be healed on a limb.
+// /// integrity_cost: Optional, returns how much damage can be healed after losing X integrity
+// /obj/item/bodypart/proc/get_curable_damage(integrity_cost=0)
+// 	var/total = brute_dam + burn_dam - max(0,(integrity_loss+integrity_cost)-integrity_ignored)
+// 	return total
+// [/CELADON-REMOVE]
 
 //Checks disabled status thresholds
 /obj/item/bodypart/proc/update_disabled()
