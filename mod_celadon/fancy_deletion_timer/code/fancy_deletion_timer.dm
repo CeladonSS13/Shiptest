@@ -28,11 +28,11 @@ Intended use with atoms only
 //_________________HELPER PROCS______________________
 /// Handles the timer start. Not in initialize in cases when you want to add a timer but dont want to start it right away.
 /datum/component/fancy_deleting_timer/proc/start_the_timer(N)
-	if(!A)
-		A = parent
 	if(!parent)
 		to_chat(usr, span_boldwarning("The component is missing a parent var. Canceling timer."))
 		return FALSE
+	if(!A)
+		A = parent
 	if(active_timers)
 		LAZYNULL(active_timers)
 	addtimer(CALLBACK(src, PROC_REF(batteries_out)), N SECONDS)
