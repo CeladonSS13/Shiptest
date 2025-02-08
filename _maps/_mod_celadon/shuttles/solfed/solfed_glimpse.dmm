@@ -16,7 +16,7 @@
 	pixel_y = 0
 	},
 /obj/structure/reagent_dispensers/watertank,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "aX" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -174,10 +174,6 @@
 /obj/item/storage/box/survival/solfed,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/cryo)
-"er" = (
-/obj/docking_port/stationary,
-/turf/template_noop,
-/area/template_noop)
 "es" = (
 /obj/machinery/computer/atmos_alert/solgov{
 	dir = 8
@@ -700,6 +696,14 @@
 /obj/structure/cable/yellow,
 /obj/structure/railing,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/button/door{
+	dir = 8;
+	id = "glimpse_eng_window";
+	name = "Engine Shutters";
+	pixel_x = 23;
+	pixel_y = 8
+	},
+/obj/item/stack/sheet/mineral/plasma/five,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "qp" = (
@@ -856,7 +860,7 @@
 	},
 /obj/machinery/airalarm/directional/north,
 /obj/structure/closet/crate/solarpanel_small,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "sN" = (
 /turf/open/floor/engine/hull,
@@ -1639,10 +1643,10 @@
 	},
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
 	dir = 8;
-	id = "sgg_bay"
+	id = "glimpsebay"
 	},
 /obj/machinery/door/poddoor{
-	id = "s"
+	id = "glimpse_bayshutter"
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/cargo)
@@ -1748,12 +1752,6 @@
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 8
 	},
-/obj/machinery/button/door{
-	dir = 4;
-	id = "cepheus_engines";
-	name = "Engine Shutters";
-	pixel_x = -23
-	},
 /obj/effect/turf_decal/corner/opaque/solgovblue{
 	dir = 6
 	},
@@ -1761,7 +1759,7 @@
 /area/ship/engineering)
 "JG" = (
 /obj/machinery/door/poddoor{
-	id = "s"
+	id = "glimpse_bayshutter"
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/cargo)
@@ -2006,7 +2004,7 @@
 	dir = 8
 	},
 /obj/structure/reagent_dispensers/fueltank,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Nj" = (
 /obj/effect/turf_decal/solgov/all,
@@ -2079,7 +2077,7 @@
 	icon_state = "0-2";
 	pixel_y = 1
 	},
-/turf/open/floor/plasteel/telecomms_floor,
+/turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "PG" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -2140,6 +2138,19 @@
 /obj/effect/turf_decal/corner/transparent/purple/mono,
 /turf/open/floor/wood/ebony,
 /area/ship/general/science)
+"QX" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/docking_port/mobile{
+	dir = 2;
+	launch_status = 0;
+	port_direction = 8;
+	preferred_direction = 4;
+	set_dir_on_move = 4
+	},
+/turf/open/floor/engine/hull,
+/area/ship/engineering)
 "Rd" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -2326,10 +2337,10 @@
 	},
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
 	dir = 4;
-	id = "s"
+	id = "glimpsebay"
 	},
 /obj/machinery/door/poddoor{
-	id = "s"
+	id = "glimpse_bayshutter"
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/cargo)
@@ -2359,10 +2370,10 @@
 /obj/machinery/button/shieldwallgen{
 	pixel_y = 20;
 	pixel_x = 8;
-	id = "sgg_bay"
+	id = "glimpsebay"
 	},
 /obj/machinery/button/door{
-	id = "sgg_bayshutter";
+	id = "glimpse_bayshutter";
 	name = " bay blast door control";
 	pixel_x = -2;
 	pixel_y = 22
@@ -2510,7 +2521,7 @@
 	},
 /obj/item/clothing/under/solfed/industrial,
 /obj/item/clothing/head/hardhat/solfed,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Wa" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/full,
@@ -2608,7 +2619,8 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/turf/open/space/basic,
+/obj/machinery/power/solar_control,
+/turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Xg" = (
 /obj/machinery/suit_storage_unit/solgov,
@@ -2910,8 +2922,8 @@ EN
 PI
 "}
 (12,1,1) = {"
-er
-Rd
+zH
+QX
 JG
 xh
 hJ
