@@ -13,6 +13,7 @@ ID мода: CELADON_REVERT_CONTENT
 
 ### Изменения *кор кода*
 
+ОТКАТ ПР https://github.com/shiptest-ss13/Shiptest/pull/3589 - ИПС аугментация
 - REMOVE: `code/datums/components/crafting/recipes/misc.dm` : `/datum/crafting_recipe/replacement_structure`
 - REMOVE: `code/game/objects/items/devices/scanners.dm` : ``
 - EDIT: `code/game/objects/items/devices/scanners.dm` : `/obj/item/stack/medical/proc/heal_carbon(mob/living/carbon/C, mob/user, brute, burn, integrity = 0)` -> `/obj/item/stack/medical/proc/heal_carbon(mob/living/carbon/C, mob/user, brute, burn)`
