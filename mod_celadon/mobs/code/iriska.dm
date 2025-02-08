@@ -124,11 +124,11 @@
 		if (M.stat != DEAD)
 
 			if(iscorgi(M))
-				if(prob(5)) to_chat("pointedly ignores [M].")
+				if(prob(5)) to_chat(M, "pointedly ignores [M].")
 
 			else if(iscat(M))
 				var/verb = pick("meows", "mews", "mrowls")
-				if(prob(5)) to_chat("[verb] at [M].")
+				if(prob(5)) to_chat(M, "[verb] at [M].")
 
 			else if(ishuman(M))
 				if(M.real_name in tolerated)
@@ -136,7 +136,7 @@
 
 				else if ((M.job == "Captain") && !(M.real_name in despised)) // Recognize captain
 					tolerated |= M.real_name
-					to_chat("looks at [M] with a hint of respect.")
+					to_chat(M, "looks at [M] with a hint of respect.")
 
 				else
 					assert_dominance(M)
@@ -162,7 +162,7 @@
 /mob/living/simple_animal/iriska/proc/tolerate(mob/living/carbon/human/M as mob)
 	if(istype(M))
 		if(!(M.real_name in tolerated) && prob(30))
-			to_chat("looks at [M] approvingly.")
+			to_chat(M, "looks at [M] approvingly.")
 			tolerated += M.real_name
 
 /mob/living/simple_animal/iriska/attackby(var/obj/item/O, var/mob/user)
