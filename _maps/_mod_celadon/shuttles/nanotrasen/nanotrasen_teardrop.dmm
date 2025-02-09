@@ -1394,9 +1394,8 @@
 /turf/open/floor/carpet/blue,
 /area/ship/crew/dorm)
 "oI" = (
-/obj/machinery/porta_turret/ship/ballistic{
-	dir = 8;
-	faction = list("playerNanotrasen","turret")
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "teardrop_turrets"
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/bridge)
@@ -1575,13 +1574,6 @@
 	},
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering)
-"qq" = (
-/obj/machinery/porta_turret/ship/ballistic{
-	dir = 4;
-	faction = list("playerNanotrasen","turret")
-	},
-/turf/closed/wall/mineral/titanium,
-/area/ship/bridge)
 "qv" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -1887,9 +1879,8 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/hallway/central)
 "ve" = (
-/obj/machinery/porta_turret/ship/ballistic{
-	dir = 6;
-	faction = list("playerNanotrasen","turret")
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "teardrop_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -2530,13 +2521,6 @@
 "Bw" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/hallway/central)
-"BD" = (
-/obj/machinery/porta_turret/ship/ballistic{
-	dir = 10;
-	faction = list("playerNanotrasen","turret")
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
 "BO" = (
 /obj/machinery/firealarm/directional/south{
 	pixel_y = -36
@@ -3238,9 +3222,8 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "JZ" = (
-/obj/machinery/porta_turret/ship/ballistic{
-	dir = 5;
-	faction = list("playerNanotrasen","turret")
+/obj/machinery/porta_turret/ship/nt/heavy{
+	id = "teardrop_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -4118,13 +4101,6 @@
 /obj/structure/fluff/hedge/opaque,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/hallway/central)
-"SZ" = (
-/obj/machinery/porta_turret/ship/ballistic{
-	dir = 9;
-	faction = list("playerNanotrasen","turret")
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
 "Ta" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4742,7 +4718,7 @@ fa
 fa
 fa
 fa
-SZ
+oI
 yz
 kl
 XT
@@ -4756,7 +4732,7 @@ Eh
 Va
 it
 yz
-BD
+oI
 fa
 fa
 fa
@@ -4909,7 +4885,7 @@ fa
 fa
 fa
 fa
-Nt
+ve
 lI
 Ik
 du
@@ -5318,7 +5294,7 @@ fa
 fa
 fa
 fa
-JZ
+ve
 WN
 WN
 RS
@@ -5473,7 +5449,7 @@ cv
 vZ
 cv
 cv
-ve
+JZ
 fa
 fa
 fa
@@ -5589,7 +5565,7 @@ fa
 Za
 Za
 Za
-qq
+JZ
 Za
 Za
 Za
