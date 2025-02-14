@@ -394,6 +394,7 @@
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_combined_w_class = 200
 	STR.max_items = 30
+	STR.display_numerical_stacking = FALSE
 	STR.insert_preposition = "in"
 	STR.set_holdable(list(
 		/obj/item/reagent_containers/pill,
