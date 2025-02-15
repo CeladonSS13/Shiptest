@@ -139,6 +139,9 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
+/obj/structure/railing{
+	dir = 9
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "ax" = (
@@ -260,6 +263,9 @@
 	},
 /obj/structure/cable{
 	icon_state = "1-8"
+	},
+/obj/structure/railing{
+	dir = 6
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
@@ -606,6 +612,9 @@
 /obj/machinery/power/tesla_coil{
 	anchored = 1
 	},
+/obj/structure/railing{
+	layer = 3.1
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "dq" = (
@@ -653,6 +662,10 @@
 	},
 /obj/machinery/power/grounding_rod{
 	anchored = 1
+	},
+/obj/structure/railing{
+	layer = 3.1;
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
@@ -1967,6 +1980,10 @@
 	},
 /obj/machinery/power/tesla_coil{
 	anchored = 1
+	},
+/obj/structure/railing{
+	layer = 3.1;
+	dir = 8
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
@@ -4568,6 +4585,10 @@
 /obj/machinery/power/grounding_rod{
 	anchored = 1
 	},
+/obj/structure/railing{
+	layer = 3.1;
+	dir = 8
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "De" = (
@@ -4659,6 +4680,9 @@
 	},
 /obj/structure/cable{
 	icon_state = "2-8"
+	},
+/obj/structure/railing{
+	dir = 5
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
@@ -4870,6 +4894,10 @@
 	},
 /obj/machinery/power/tesla_coil{
 	anchored = 1
+	},
+/obj/structure/railing{
+	layer = 3.1;
+	dir = 1
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
@@ -5537,6 +5565,9 @@
 /obj/machinery/power/tesla_coil{
 	anchored = 1
 	},
+/obj/structure/railing{
+	layer = 3.1
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "IF" = (
@@ -5583,6 +5614,9 @@
 	},
 /obj/machinery/power/tesla_coil{
 	anchored = 1
+	},
+/obj/structure/railing{
+	layer = 3.1
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
@@ -5879,6 +5913,10 @@
 	},
 /obj/machinery/power/tesla_coil{
 	anchored = 1
+	},
+/obj/structure/railing{
+	layer = 3.1;
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
@@ -6180,6 +6218,9 @@
 	},
 /obj/structure/cable{
 	icon_state = "1-4"
+	},
+/obj/structure/railing{
+	dir = 10
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)

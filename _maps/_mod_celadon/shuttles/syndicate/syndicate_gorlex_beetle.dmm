@@ -446,7 +446,9 @@
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "iy" = (
-/obj/machinery/porta_turret/ship/syndicate/weak,
+/obj/machinery/porta_turret/ship/syndicate/weak{
+	id = "Bettle_grid"
+	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/crew/toilet)
 "iD" = (
@@ -515,7 +517,8 @@
 /area/ship/medical)
 "jV" = (
 /obj/machinery/porta_turret/ship/syndicate/heavy{
-	dir = 5
+	dir = 5;
+	id = "Bettle_grid"
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -1147,7 +1150,9 @@
 /turf/template_noop,
 /area/template_noop)
 "to" = (
-/obj/machinery/porta_turret/ship/syndicate/weak,
+/obj/machinery/porta_turret/ship/syndicate/weak{
+	id = "Bettle_grid"
+	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/medical)
 "tr" = (
@@ -2852,7 +2857,8 @@
 /area/ship/crew/canteen)
 "Rn" = (
 /obj/machinery/porta_turret/ship/syndicate/heavy{
-	dir = 6
+	dir = 6;
+	id = "Bettle_grid"
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/crew)
