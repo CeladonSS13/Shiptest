@@ -121,10 +121,10 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/ship/crew/toilet)
 "ar" = (
-/obj/machinery/power/smes/engineering,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering)
 "as" = (
@@ -139,9 +139,6 @@
 /obj/machinery/power/terminal{
 	icon_state = "term";
 	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
 	},
 /obj/effect/decal/cleanable/oil{
 	icon_state = "floor3"
@@ -201,13 +198,6 @@
 /turf/closed/wall,
 /area/ship/crew/cryo)
 "ay" = (
-/obj/machinery/power/terminal{
-	icon_state = "term";
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
 /obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/box,
 /obj/structure/frame{
@@ -344,12 +334,9 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "aJ" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/computer/selling_pad_control,
 /obj/effect/turf_decal/box,
 /obj/machinery/newscaster/directional/north,
+/obj/machinery/computer/selling_pad_control,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "aK" = (
@@ -367,17 +354,6 @@
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ship/cargo)
-"aL" = (
-/obj/structure/catwalk/over,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
-/obj/machinery/power/ship_gravity,
-/turf/open/floor/plating,
-/area/ship/engineering)
 "aM" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	icon_state = "manifold-2";
@@ -644,8 +620,8 @@
 	icon_state = "borderfloor_black";
 	dir = 10
 	},
-/obj/effect/spawner/random/maintenance,
 /obj/machinery/holopad,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "bi" = (
@@ -2987,7 +2963,7 @@ bX
 cd
 aj
 ar
-aL
+bC
 br
 bE
 cu
