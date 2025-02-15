@@ -33,6 +33,7 @@
 	pixel_y = 21;
 	pixel_x = 13
 	},
+/obj/item/circuitboard/machine/selling_pad,
 /turf/open/floor/plasteel/showroomfloor,
 /area/ship/crew/toilet)
 "af" = (
@@ -208,8 +209,10 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/light/small/directional/north,
-/obj/machinery/selling_pad,
 /obj/effect/turf_decal/box,
+/obj/structure/frame{
+	anchored = 1
+	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering)
 "az" = (
@@ -1753,6 +1756,9 @@
 	dir = 6
 	},
 /obj/effect/decal/cleanable/generic,
+/obj/item/paper/crumpled/bloody{
+	default_raw_text = "Ох... Эти твари... Ебанные пираты! Но... Я успел спрятать наш каргопад в туалете!..."
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "cT" = (

@@ -1824,7 +1824,9 @@
 /turf/open/floor/carpet/green,
 /area/ship/crew/dorm)
 "Pb" = (
-/obj/effect/spawner/random/vending/snack,
+/obj/machinery/vending/snack{
+	all_items_free = 1
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "Pv" = (

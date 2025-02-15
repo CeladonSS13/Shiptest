@@ -134,10 +134,15 @@
 /area/ship/engineering/atmospherics)
 "aw" = (
 /obj/effect/turf_decal/industrial/warning{
-	dir = 9
+	dir = 9;
+	color = "#ff0000"
 	},
 /obj/structure/cable{
 	icon_state = "2-4"
+	},
+/obj/structure/railing{
+	dir = 8;
+	layer = 4.1
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
@@ -256,10 +261,15 @@
 /area/ship/bridge)
 "bw" = (
 /obj/effect/turf_decal/industrial/warning{
-	dir = 6
+	dir = 6;
+	color = "#ff0000"
 	},
 /obj/structure/cable{
 	icon_state = "1-8"
+	},
+/obj/structure/railing{
+	dir = 6;
+	layer = 3.1
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
@@ -596,7 +606,9 @@
 /turf/open/floor/mineral/titanium,
 /area/ship/security)
 "de" = (
-/obj/effect/turf_decal/industrial/warning,
+/obj/effect/turf_decal/industrial/warning{
+	color = "#ff0000"
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -606,6 +618,7 @@
 /obj/machinery/power/tesla_coil{
 	anchored = 1
 	},
+/obj/structure/railing,
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "dq" = (
@@ -646,7 +659,8 @@
 /area/ship/crew/office)
 "dF" = (
 /obj/effect/turf_decal/industrial/warning{
-	dir = 4
+	dir = 4;
+	color = "#ff0000"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1957,7 +1971,8 @@
 /area/ship/hallway/fore)
 "mo" = (
 /obj/effect/turf_decal/industrial/warning{
-	dir = 8
+	dir = 8;
+	color = "#ff0000"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1967,6 +1982,10 @@
 	},
 /obj/machinery/power/tesla_coil{
 	anchored = 1
+	},
+/obj/structure/railing{
+	dir = 8;
+	layer = 4.1
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
@@ -4560,13 +4579,18 @@
 /area/ship/security)
 "CZ" = (
 /obj/effect/turf_decal/industrial/warning{
-	dir = 8
+	dir = 8;
+	color = "#ff0000"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /obj/machinery/power/grounding_rod{
 	anchored = 1
+	},
+/obj/structure/railing{
+	dir = 8;
+	layer = 4.1
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
@@ -4655,7 +4679,8 @@
 /area/ship/bridge)
 "Dv" = (
 /obj/effect/turf_decal/industrial/warning{
-	dir = 5
+	dir = 5;
+	color = "#ff0000"
 	},
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -4860,7 +4885,8 @@
 /area/ship/security)
 "EH" = (
 /obj/effect/turf_decal/industrial/warning{
-	dir = 1
+	dir = 1;
+	color = "#ff0000"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -5524,7 +5550,9 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/fore)
 "Iv" = (
-/obj/effect/turf_decal/industrial/warning,
+/obj/effect/turf_decal/industrial/warning{
+	color = "#ff0000"
+	},
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
@@ -5537,6 +5565,7 @@
 /obj/machinery/power/tesla_coil{
 	anchored = 1
 	},
+/obj/structure/railing,
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "IF" = (
@@ -5574,7 +5603,9 @@
 /turf/open/floor/plasteel/lightdark,
 /area/ship/bridge)
 "IV" = (
-/obj/effect/turf_decal/industrial/warning,
+/obj/effect/turf_decal/industrial/warning{
+	color = "#ff0000"
+	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -5584,6 +5615,7 @@
 /obj/machinery/power/tesla_coil{
 	anchored = 1
 	},
+/obj/structure/railing,
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "IY" = (
@@ -5869,7 +5901,8 @@
 /area/ship/crew/office)
 "KQ" = (
 /obj/effect/turf_decal/industrial/warning{
-	dir = 4
+	dir = 4;
+	color = "#ff0000"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -5879,6 +5912,10 @@
 	},
 /obj/machinery/power/tesla_coil{
 	anchored = 1
+	},
+/obj/structure/railing{
+	dir = 4;
+	layer = 4.1
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
@@ -6176,10 +6213,14 @@
 /area/ship/bridge)
 "MA" = (
 /obj/effect/turf_decal/industrial/warning{
-	dir = 10
+	dir = 10;
+	color = "#ff0000"
 	},
 /obj/structure/cable{
 	icon_state = "1-4"
+	},
+/obj/structure/railing{
+	dir = 10
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
@@ -7633,6 +7674,23 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
+"VE" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4;
+	color = "#ff0000"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/power/grounding_rod{
+	anchored = 1
+	},
+/obj/structure/railing{
+	dir = 4;
+	layer = 4.1
+	},
+/turf/open/floor/plating,
+/area/ship/engineering/engine)
 "VK" = (
 /obj/effect/turf_decal/corner/opaque/solgovgold/mono,
 /obj/effect/turf_decal/corner/opaque/solgovgold{
@@ -8486,7 +8544,7 @@ RX
 Dv
 dF
 KQ
-dF
+VE
 bw
 Tl
 aB
