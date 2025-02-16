@@ -1154,7 +1154,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 4
 	},
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "mY" = (
@@ -1307,7 +1307,7 @@
 /obj/structure/sign/poster/contraband/twelve_gauge{
 	pixel_x = 32
 	},
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "pa" = (
@@ -2254,10 +2254,6 @@
 /area/ship/cargo)
 "ym" = (
 /obj/structure/rack,
-/obj/item/target/clown{
-	pixel_x = -5;
-	pixel_y = 10
-	},
 /obj/item/target{
 	pixel_y = 5
 	},
@@ -2455,7 +2451,7 @@
 	dir = 8
 	},
 /obj/machinery/airalarm/directional/west,
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "BA" = (
@@ -2628,7 +2624,7 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/west,
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "Da" = (
@@ -3120,7 +3116,6 @@
 	dir = 4
 	},
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
 /obj/item/tank/jetpack/oxygen,
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/corner/opaque/yellow{
@@ -4183,9 +4178,6 @@
 /obj/item/folder/syndicate{
 	desc = "A slick black folder stamped 'Property of Inteq Risk Management Group.'";
 	name = "folder"
-	},
-/obj/item/stamp/law{
-	name = "master at arms' rubber stamp"
 	},
 /obj/item/table_bell{
 	pixel_y = 13
