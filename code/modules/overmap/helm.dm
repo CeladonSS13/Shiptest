@@ -268,7 +268,8 @@
 	if(current_ship.source_template.parent_type == /datum/map_template/shuttle/subshuttles)
 		.["issubshuttle"] = "true"
 		current_ship.sensor_range = 3
-		if(current_ship.docked_to.docked_to.parent_type == /datum/overmap/outpost)
+		var/datum/overmap/parent_ship = current_ship.docked_to
+		if(parent_ship && parent_ship.docked_to && istype(parent_ship.docked_to.parent_type, /datum/overmap/outpost))
 			.["motheroutpost"] = "true"
 	// [/CELADON-ADD] - subshuttles fix
 /obj/machinery/computer/helm/ui_static_data(mob/user)

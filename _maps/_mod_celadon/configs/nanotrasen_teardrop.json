@@ -1,0 +1,44 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "TearDrop-class Battle Vessel",
+	"map_short_name": "TearDrop",
+	"description": " 'TearDrop',  разведывательный космический корабль под управлением NanoTrasen. Корабль с системой выкачки атмосферы из внешних источников в инженерном отсеке, небольшим мед. отсеком, небольшая жилая зона и арсенал. Назначение корабля - надзор за другими кораблями NT и докладыывание информации о ситуации в секторах. ",
+	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_teardrop.dmm",
+	"enabled": true,
+	"limit": 1,
+	"prefix": "NTASV",
+	"faction": "/datum/faction/nt",
+	"tags": [
+		"Combat",
+		"Scout",
+		"Intelligence"
+	],
+	"namelists": [
+		"NANOTRASEN",
+		"WEAPONS"
+	],
+	"job_slots": {
+		"Intelligence officer": {
+			"outfit": "/datum/outfit/job/nanotrasen/captain",
+			"officer": true,
+			"slots": 1
+		},
+		"Field Commander": {
+			"outfit": "/datum/outfit/job/nanotrasen/hos",
+			"officer": true,
+			"slots": 1
+		},
+		"Military technician": {
+			"outfit": "/datum/outfit/job/nanotrasen/engineer",
+			"slots": 2
+		},
+		"Soldier": {
+			"outfit": "/datum/outfit/job/nanotrasen/security",
+			"slots": 4
+		},
+		"Military surgeon": {
+			"outfit": "/datum/outfit/job/nanotrasen/paramedic",
+			"slots": 1
+		}
+	}
+}

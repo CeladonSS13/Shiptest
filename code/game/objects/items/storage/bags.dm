@@ -395,6 +395,7 @@
 	STR.max_combined_w_class = 200
 	STR.max_items = 30
 	STR.insert_preposition = "in"
+	STR.display_numerical_stacking = FALSE
 	STR.set_holdable(list(
 		/obj/item/reagent_containers/pill,
 		/obj/item/reagent_containers/glass/beaker,

@@ -757,6 +757,12 @@
 	suffix = "whitesands_surface_e11_manufactory.dmm"
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_HAZARDOUS)
 
+/datum/map_template/ruin/whitesands/ruinsofweh
+	name = "Ruins of Weh"
+	id = "ws-ruinsofweh"
+	description = "Ancient shrine which was rediscovered many times, yet every expedition turn into a disaster, it still holds many secrets within its walls."
+	suffix = "whitesands_surface_ruinsofweh.dmm"
+
 //							///
 //		Plasma	 ruin		///
 //							///

@@ -8,7 +8,8 @@
 	var/locate_range = 0
 	if (!computer.get_modular_computer_part(MC_NET))//проверка на случай если вынули сетевую карту не закрыв программу ибо да,такое бывает
 		return FALSE
-	switch (computer.get_modular_computer_part(MC_NET).type) //дальность зависит от сетевой карты (Warning:field access requires static type "type")
+	var/list/obj/item/computer_hardware/network_card/net_cards = computer.get_modular_computer_part(MC_NET)
+	switch (net_cards.type) //дальность зависит от сетевой карты (Warning:field access requires static type "type")
 		if(/obj/item/computer_hardware/network_card) locate_range = 12
 		if(/obj/item/computer_hardware/network_card/advanced) locate_range = 24
 		else stack_trace("Wrong type of network card") //кусок отладки

@@ -63,6 +63,9 @@ GLOBAL_LIST_INIT(sandstone_recipes, list ( \
 	merge_type = /obj/item/stack/sheet/mineral/sandbags
 
 GLOBAL_LIST_INIT(sandbag_recipes, list ( \
+	// [CELADON-ADD] - CELADON_STRUCTURES - Барикады
+	new/datum/stack_recipe("sandbags barricade", /obj/structure/deployable_barricade/sandbags, 12, time = 5 SECONDS, one_per_turf = TRUE, on_floor = TRUE), \
+	// [/CELADON-ADD]
 	new/datum/stack_recipe("sandbags", /obj/structure/barricade/sandbags, 1, time = 25, one_per_turf = 1, on_floor = 1), \
 	))
 
@@ -416,7 +419,7 @@ GLOBAL_LIST_INIT(snow_recipes, list ( \
 	new/datum/stack_recipe("Snowball", /obj/item/toy/snowball, 1), \
 	new/datum/stack_recipe("Snow tile", /obj/item/stack/tile/mineral/snow, 1, 4, 20), \
 	// [CELADON-ADD] - CELADON_STRUCTURES - Барикады
-	new/datum/stack_recipe("snow barricade", /obj/structure/deployable_barricade/snow, 2, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("snow barricade", /obj/structure/deployable_barricade/snow, 5, one_per_turf = TRUE, on_floor = TRUE), \
 	// [/CELADON-ADD]
 	))
 

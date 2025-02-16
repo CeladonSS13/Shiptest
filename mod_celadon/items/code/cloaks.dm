@@ -96,3 +96,43 @@
 	icon_state = "trenchcloak"
 	item_state = "trenchcloak"
 	body_parts_covered = CHEST | ARMS | LEGS
+
+// NT Cloaks //
+
+/obj/item/clothing/neck/cloak/nanotrasen/cape
+	name = "\improper Nanotrasen Officer's cape"
+	desc = "Nanotrasen Cloak. This variant displays the wearer's affiliation with the NT crew."
+	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/cloak_nt.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/cloak_nt.dmi'
+	icon_state = "cape"
+	item_state = "cape"
+
+/obj/item/clothing/neck/cloak/nanotrasen/cape/lead
+	name = "Nanotrasen sergeant's cloak"
+	desc = "Nanotrasen Cloak. This variant displays the wearer's rank as a squad commander."
+	icon_state = "squadcape"
+	item_state = "squadcape"
+
+/obj/item/clothing/neck/cloak/nanotrasen/cape/engi
+	name = "Nanotrasen Engineer's cloak"
+	desc = "Nanotrasen Cloak. This variant displays the wearer's rank as an officer with a enengineering specialization."
+	icon_state = "engicape"
+	item_state = "engicape"
+
+/obj/item/clothing/neck/cloak/nanotrasen/cape/med
+	name = "Nanotrasen Medic's cloak"
+	desc = "Nanotrasen Cloak. This variant displays the wearer's rank as an officer with a medical specialization."
+	icon_state = "medcape"
+	item_state = "medcape"
+
+/obj/item/clothing/neck/cloak/nanotrasen/cape/command
+	name = "Nanotrasen Command officer's cloak"
+	desc = "Nanotrasen Cloak. This variant displays the wearer's officer rank."
+	icon_state = "commandcape"
+	item_state = "commandcape"
+
+/obj/item/clothing/neck/cloak/nanotrasen/cape/captain
+	name = "Nanotrasen Captain's cloak"
+	desc = "Nanotrasen Cloak. This variant displays the wearer's rank as a high-ranking officer."
+	icon_state = "captaincape"
+	item_state = "captaincape"

@@ -12,10 +12,14 @@
 	max_integrity = 40
 	novariants = FALSE
 	item_flags = NOBLUDGEON
-	var/heals_organic = TRUE
-	var/heals_inorganic = FALSE
+	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// var/heals_organic = TRUE
+	// var/heals_inorganic = FALSE
+	// [/CELADON-REMOVE]
 	var/splint_fracture = FALSE
-	var/restore_integrity = 0
+	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// var/restore_integrity = 0
+	// [/CELADON-REMOVE]
 	var/failure_chance
 	var/self_delay = 50
 	var/other_delay = 0
@@ -58,17 +62,25 @@
 /obj/item/stack/medical/proc/heal(mob/living/target, mob/user)
 	return
 
-/obj/item/stack/medical/proc/heal_carbon(mob/living/carbon/C, mob/user, brute, burn, integrity = 0)
+// [CELADON-EDIT] - CELADON_REVERT_CONTENT - Откат по ИПС
+// /obj/item/stack/medical/proc/heal_carbon(mob/living/carbon/C, mob/user, brute, burn, integrity = 0)	// CELADON-EDIT - ORIGINAL
+/obj/item/stack/medical/proc/heal_carbon(mob/living/carbon/C, mob/user, brute, burn)
+// [/CELADON-EDIT]
 	var/obj/item/bodypart/affecting = C.get_bodypart(check_zone(user.zone_selected))
 	if(!affecting) //Missing limb?
 		to_chat(user, "<span class='warning'>[C] doesn't have \a [parse_zone(user.zone_selected)]!</span>")
 		return
-	if(!heals_inorganic && !IS_ORGANIC_LIMB(affecting))
+	// [CELADON-EDIT] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// if(!heals_inorganic && !IS_ORGANIC_LIMB(affecting))	// CELADON-EDIT = ORIGINAL
+	if(!IS_ORGANIC_LIMB(affecting)) //Limb must be organic to be healed - RR
+	// [/CELADON-EDIT]
 		to_chat(user, "<span class='warning'>\The [src] won't work on a robotic limb!</span>")
 		return
-	if(!heals_organic && IS_ORGANIC_LIMB(affecting))
-		to_chat(user, "<span class='warning'>\The [src] won't work on an organic limb!</span>")
-		return
+	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// if(!heals_organic && IS_ORGANIC_LIMB(affecting))
+	// 	to_chat(user, "<span class='warning'>\The [src] won't work on an organic limb!</span>")
+	// 	return
+	// [/CELADON-REMOVE]
 
 	//WS begin - failure chance
 	if(prob(failure_chance))
@@ -103,19 +115,21 @@
 			successful_heal = TRUE
 	//WS End
 
-	if (restore_integrity)
-		if(affecting.integrity_loss == 0)
-			to_chat(user, "<span class='warning'>[C]'s [affecting.name] has no integrity damage!</span>")
-		else
-			var/integ_healed = min(integrity, affecting.integrity_loss)
-			//check how much limb health we've lost to integrity_loss
-			var/integ_damage_removed = max(integ_healed, affecting.integrity_loss-affecting.integrity_ignored)
-			var/brute_heal = min(affecting.brute_dam,integ_damage_removed)
-			var/burn_heal = max(0,integ_damage_removed-brute_heal)
-			affecting.integrity_loss -= integ_healed
-			affecting.heal_damage(brute_heal,burn_heal,0,null,BODYTYPE_ROBOTIC)
-			// C.update_inv_splints() something breaks
-			successful_heal = TRUE
+	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// if (restore_integrity)
+	// 	if(affecting.integrity_loss == 0)
+	// 		to_chat(user, "<span class='warning'>[C]'s [affecting.name] has no integrity damage!</span>")
+	// 	else
+	// 		var/integ_healed = min(integrity, affecting.integrity_loss)
+	// 		//check how much limb health we've lost to integrity_loss
+	// 		var/integ_damage_removed = max(integ_healed, affecting.integrity_loss-affecting.integrity_ignored)
+	// 		var/brute_heal = min(affecting.brute_dam,integ_damage_removed)
+	// 		var/burn_heal = max(0,integ_damage_removed-brute_heal)
+	// 		affecting.integrity_loss -= integ_healed
+	// 		affecting.heal_damage(brute_heal,burn_heal,0,null,BODYTYPE_ROBOTIC)
+	// 		// C.update_inv_splints() something breaks
+	// 		successful_heal = TRUE
+	// [/CELADON-REMOVE]
 
 
 	if (successful_heal)
@@ -424,26 +438,27 @@
 	heal_burn = 15
 
 
-/obj/item/stack/medical/structure
-	name = "replacement structural rods"
-	desc = "Steel rods and cable with adjustable titanium fasteners, for quickly repairing structural damage to robotic limbs."
-	gender = PLURAL
-	icon = 'icons/obj/items.dmi'
-	icon_state = "ipc_splint"
-	amount = 2
-	max_amount = 3
-	novariants = FALSE
-	self_delay = 50
-	other_delay = 20
-	heals_inorganic = TRUE
-	heals_organic = FALSE
-	restore_integrity = TRUE
+// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+// /obj/item/stack/medical/structure
+// 	name = "replacement structural rods"
+// 	desc = "Steel rods and cable with adjustable titanium fasteners, for quickly repairing structural damage to robotic limbs."
+// 	gender = PLURAL
+// 	icon = 'icons/obj/items.dmi'
+// 	icon_state = "ipc_splint"
+// 	amount = 2
+// 	max_amount = 3
+// 	novariants = FALSE
+// 	self_delay = 50
+// 	other_delay = 20
+// 	heals_inorganic = TRUE
+// 	heals_organic = FALSE
+// 	restore_integrity = TRUE
+// [/CELADON-REMOVE]
 
-
-/obj/item/stack/medical/structure/heal(mob/living/target, mob/user)
-	. = ..()
-	if(iscarbon(target))
-		return heal_carbon(target, user, integrity = 150)
-	to_chat(user, "<span class='warning'>You can't repair [target]'s limb' with the \the [src]!</span>")
-
-
+// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+// /obj/item/stack/medical/structure/heal(mob/living/target, mob/user)
+// 	. = ..()
+// 	if(iscarbon(target))
+// 		return heal_carbon(target, user, integrity = 150)
+// 	to_chat(user, "<span class='warning'>You can't repair [target]'s limb' with the \the [src]!</span>")
+// [/CELADON-REMOVE]
