@@ -668,7 +668,6 @@
 	desc = "An adorable stuffed toy that resembles an axolotl. Not to be mistaken for the real thing."
 	icon = 'mod_celadon/_storge_icons/icons/items/plushes.dmi'
 	icon_state = "plushie_axolotl"
-	// item_state = "axolotl"
 	attack_verb = list("nibbles", "splats")
 	var/axolotlbite = 'mod_celadon/_storge_sounds/sound/plushes/axolotl.ogg'
 	var/cooldown = FALSE

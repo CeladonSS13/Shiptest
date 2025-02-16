@@ -70,7 +70,7 @@
 		add_to_dead_mob_list()
 	set_drugginess(0)
 	set_disgust(0)
-	SetSleeping(0, 0)
+	set_sleeping(0)
 	reset_perspective(null)
 	reload_fullscreen()
 	update_action_buttons_icon()
@@ -79,6 +79,10 @@
 	med_hud_set_health()
 	med_hud_set_status()
 	stop_pulling()
+
+	// [CELADON_ADD] - Deletion timer upon death
+	add_and_start_deletion_timer(1200)
+	// [/CELADON_ADD]
 
 	if(typing_indicator)
 		set_typing_indicator(FALSE)

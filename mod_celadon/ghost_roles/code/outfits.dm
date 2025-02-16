@@ -144,14 +144,12 @@
 	name = "Artist"
 
 	id = /obj/item/card/id/elysium_artist
-	belt = /obj/item/pda/clown
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/civilian/clown
 	shoes = /obj/item/clothing/shoes/galoshes //  Clown shoes удалены оффами. Отличная замена. Отличная ведь?
 	mask = /obj/item/clothing/mask/gas/clown_hat
 	l_pocket = /obj/item/bikehorn
 	backpack_contents = list(
-		/obj/item/stamp/clown = 1,
 		/obj/item/reagent_containers/spray/waterflower = 1,
 		/obj/item/reagent_containers/food/snacks/grown/banana = 1,
 		/obj/item/instrument/bikehorn = 1,
@@ -163,7 +161,6 @@
 
 	box = /obj/item/storage/box/hug/survival
 
-	chameleon_extras = /obj/item/stamp/clown
 
 /datum/outfit/outpost/artist/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

@@ -29,6 +29,7 @@
 	speed = 0.3
 	damage = 30
 	armour_penetration = 40
+	bullet_identifier = "large bullet"
 
 /obj/projectile/bullet/a308_sp
 	name = ".308"

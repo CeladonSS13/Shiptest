@@ -541,7 +541,7 @@
 /obj/item/clothing/under/rank/medical/paramedic/skirt,
 /obj/item/clothing/under/rank/medical/paramedic,
 /obj/item/clothing/head/soft/paramedic,
-/obj/item/clothing/neck/cloak/nano/med,
+/obj/item/clothing/neck/cloak/nanotrasen/cape/med,
 /obj/structure/sign/flag/nanotrasen/directional/north,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
@@ -1348,7 +1348,7 @@
 /obj/effect/turf_decal/techfloor,
 /obj/item/clothing/under/nanotrasen/officer,
 /obj/item/clothing/head/beret/sec/officer,
-/obj/item/clothing/neck/cloak/nano,
+/obj/item/clothing/neck/cloak/nanotrasen/cape,
 /obj/item/melee/knife/survival,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/security)
@@ -1394,9 +1394,8 @@
 /turf/open/floor/carpet/blue,
 /area/ship/crew/dorm)
 "oI" = (
-/obj/machinery/porta_turret/ship/ballistic{
-	dir = 8;
-	faction = list("playerNanotrasen","turret")
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "teardrop_turrets"
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/bridge)
@@ -1575,13 +1574,6 @@
 	},
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering)
-"qq" = (
-/obj/machinery/porta_turret/ship/ballistic{
-	dir = 4;
-	faction = list("playerNanotrasen","turret")
-	},
-/turf/closed/wall/mineral/titanium,
-/area/ship/bridge)
 "qv" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -1887,9 +1879,8 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/hallway/central)
 "ve" = (
-/obj/machinery/porta_turret/ship/ballistic{
-	dir = 6;
-	faction = list("playerNanotrasen","turret")
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "teardrop_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -1971,7 +1962,7 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/item/clothing/under/nanotrasen/officer,
 /obj/item/clothing/head/beret/sec/officer,
-/obj/item/clothing/neck/cloak/nano,
+/obj/item/clothing/neck/cloak/nanotrasen/cape,
 /obj/item/melee/knife/survival,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/security)
@@ -2530,13 +2521,6 @@
 "Bw" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/hallway/central)
-"BD" = (
-/obj/machinery/porta_turret/ship/ballistic{
-	dir = 10;
-	faction = list("playerNanotrasen","turret")
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
 "BO" = (
 /obj/machinery/firealarm/directional/south{
 	pixel_y = -36
@@ -3023,8 +3007,8 @@
 /obj/item/clothing/suit/jacket/miljacket,
 /obj/item/clothing/shoes/jackboots,
 /obj/item/clothing/suit/armor/vest/capcarapace/captunic,
-/obj/item/clothing/neck/cloak/nano/captain,
-/obj/item/clothing/neck/cloak/nano/command,
+/obj/item/clothing/neck/cloak/nanotrasen/cape/captain,
+/obj/item/clothing/neck/cloak/nanotrasen/cape/command,
 /turf/open/floor/carpet/royalblack,
 /area/ship/crew/dorm/dormtwo)
 "Hi" = (
@@ -3069,7 +3053,7 @@
 	},
 /obj/item/clothing/under/nanotrasen/security/director,
 /obj/item/clothing/head/beret/sec/hos,
-/obj/item/clothing/neck/cloak/nano/lead,
+/obj/item/clothing/neck/cloak/nanotrasen/cape/lead,
 /obj/item/melee/knife/survival,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/security)
@@ -3238,9 +3222,8 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "JZ" = (
-/obj/machinery/porta_turret/ship/ballistic{
-	dir = 5;
-	faction = list("playerNanotrasen","turret")
+/obj/machinery/porta_turret/ship/nt/heavy{
+	id = "teardrop_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -3779,7 +3762,7 @@
 /obj/effect/turf_decal/techfloor,
 /obj/item/clothing/under/nanotrasen/officer,
 /obj/item/clothing/head/beret/sec/officer,
-/obj/item/clothing/neck/cloak/nano,
+/obj/item/clothing/neck/cloak/nanotrasen/cape,
 /obj/item/melee/knife/survival,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/security)
@@ -4118,13 +4101,6 @@
 /obj/structure/fluff/hedge/opaque,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/hallway/central)
-"SZ" = (
-/obj/machinery/porta_turret/ship/ballistic{
-	dir = 9;
-	faction = list("playerNanotrasen","turret")
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
 "Ta" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4322,8 +4298,8 @@
 	dir = 4
 	},
 /obj/item/pipe_dispenser,
-/obj/item/clothing/neck/cloak/nano/engi,
-/obj/item/clothing/neck/cloak/nano/engi,
+/obj/item/clothing/neck/cloak/nanotrasen/cape/engi,
+/obj/item/clothing/neck/cloak/nanotrasen/cape/engi,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Vw" = (
@@ -4742,7 +4718,7 @@ fa
 fa
 fa
 fa
-SZ
+oI
 yz
 kl
 XT
@@ -4756,7 +4732,7 @@ Eh
 Va
 it
 yz
-BD
+oI
 fa
 fa
 fa
@@ -4909,7 +4885,7 @@ fa
 fa
 fa
 fa
-Nt
+ve
 lI
 Ik
 du
@@ -5318,7 +5294,7 @@ fa
 fa
 fa
 fa
-JZ
+ve
 WN
 WN
 RS
@@ -5473,7 +5449,7 @@ cv
 vZ
 cv
 cv
-ve
+JZ
 fa
 fa
 fa
@@ -5589,7 +5565,7 @@ fa
 Za
 Za
 Za
-qq
+JZ
 Za
 Za
 Za

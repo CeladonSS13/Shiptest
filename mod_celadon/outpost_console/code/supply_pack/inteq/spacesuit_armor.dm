@@ -10,7 +10,7 @@
 /datum/supply_pack/faction/inteq/spacesuit_armor/hardsuit_sec
 	name = "IRMG security hardsuit"
 	desc = "A simple combat hardsuit provided to all IRMG mercenaries. Provides relatively weak protection from most common threats"
-	contains = list(/obj/item/clothing/suit/space/hardsuit/security/independent/inteq)
+	contains = list(/obj/item/clothing/suit/space/hardsuit/security/inteq)
 	cost = 4000
 
 /datum/supply_pack/faction/inteq/spacesuit_armor/spacesuit

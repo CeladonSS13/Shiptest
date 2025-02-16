@@ -484,6 +484,17 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
+"ee" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/ship/construction)
 "eg" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -925,6 +936,14 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
+"jp" = (
+/obj/structure/catwalk/over,
+/obj/machinery/power/tesla_coil,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
+/area/ship/construction)
 "jq" = (
 /turf/open/floor/plating{
 	icon_state = "platingdmg2"
@@ -992,9 +1011,6 @@
 /area/ship/engineering/communications)
 "kp" = (
 /obj/machinery/field/generator,
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
@@ -1124,6 +1140,15 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
+"ln" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
+/area/ship/construction)
 "lo" = (
 /obj/structure/frame/machine,
 /obj/item/stock_parts/scanning_module/adv,
@@ -1133,6 +1158,7 @@
 /obj/item/stack/cable_coil/cut/red,
 /obj/item/stack/cable_coil/cut/red,
 /obj/item/stack/cable_coil/cut/red,
+/obj/structure/cable,
 /turf/open/floor/plating{
 	icon_state = "platingdmg2"
 	},
@@ -1224,9 +1250,6 @@
 	dir = 1
 	},
 /obj/machinery/door/firedoor/border_only,
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
 /obj/structure/sign/poster/contraband/power{
 	pixel_x = 31
 	},
@@ -1776,10 +1799,10 @@
 /area/ship/engineering)
 "rH" = (
 /obj/structure/cable{
-	icon_state = "4-8"
+	icon_state = "1-8"
 	},
 /obj/structure/cable{
-	icon_state = "1-8"
+	icon_state = "2-8"
 	},
 /turf/open/floor/plating,
 /area/ship/construction)
@@ -2099,6 +2122,15 @@
 	icon_state = "elevatorshaft"
 	},
 /area/ship/crew)
+"um" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating,
+/area/ship/construction)
 "us" = (
 /obj/structure/sign/warning/electricshock{
 	pixel_y = 31
@@ -2121,10 +2153,10 @@
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "uu" = (
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
 /obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plating,
 /area/ship/construction)
 "uB" = (
@@ -2476,7 +2508,9 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/effect/spawner/random/vending/snack,
+/obj/machinery/vending/snack{
+	all_items_free = 1
+	},
 /turf/open/floor/carpet/green,
 /area/ship/crew/dorm)
 "xR" = (
@@ -2558,6 +2592,11 @@
 /obj/effect/spawner/random/maintenance/two,
 /turf/open/floor/plating,
 /area/ship/maintenance/fore)
+"yS" = (
+/obj/structure/catwalk/over,
+/obj/machinery/power/grounding_rod,
+/turf/open/floor/plating,
+/area/ship/construction)
 "za" = (
 /obj/machinery/light/directional/north,
 /turf/open/floor/carpet/green,
@@ -2815,10 +2854,10 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/electrical)
 "BE" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
 /obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plating,
 /area/ship/construction)
 "BJ" = (
@@ -2914,6 +2953,13 @@
 	},
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
+"CF" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating,
+/area/ship/construction)
 "CG" = (
 /turf/closed/wall/r_wall/rust,
 /area/ship/engineering/atmospherics)
@@ -3101,7 +3147,9 @@
 	dir = 4;
 	pixel_y = 2
 	},
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/sovietsoda{
+	all_items_free = 1
+	},
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
@@ -3167,6 +3215,14 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/electrical)
+"FB" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
+	},
+/area/ship/construction)
 "FF" = (
 /obj/machinery/door/airlock/command,
 /obj/machinery/door/firedoor/border_only{
@@ -3437,6 +3493,14 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
+"Ii" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/ship/construction)
 "Il" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
@@ -3520,7 +3584,9 @@
 /turf/open/floor/plating,
 /area/ship/security/armory)
 "JO" = (
-/obj/machinery/vending/boozeomat/all_access,
+/obj/machinery/vending/boozeomat/all_access{
+	all_items_free = 1
+	},
 /turf/open/floor/carpet/green,
 /area/ship/crew/dorm)
 "JP" = (
@@ -3721,6 +3787,10 @@
 /obj/machinery/power/emitter/prototype,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/electrical)
+"Mk" = (
+/obj/machinery/field/generator,
+/turf/open/floor/plating,
+/area/ship/construction)
 "Mn" = (
 /obj/structure/cable,
 /turf/open/floor/plating,
@@ -4094,6 +4164,14 @@
 /obj/structure/grille,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
+"QD" = (
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/ship/construction)
 "QI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/components/unary/portables_connector/layer2,
@@ -4153,9 +4231,6 @@
 /area/ship/security/dock)
 "Rc" = (
 /obj/machinery/field/generator,
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
@@ -4372,6 +4447,14 @@
 "SU" = (
 /turf/closed/wall,
 /area/ship/security/armory)
+"SW" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/ship/construction)
 "Tg" = (
 /obj/structure/rack,
 /obj/item/chair{
@@ -4460,7 +4543,9 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering/atmospherics)
 "Ua" = (
-/obj/machinery/vending,
+/obj/machinery/vending{
+	all_items_free = 1
+	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
@@ -4618,11 +4703,12 @@
 /turf/open/floor/pod,
 /area/ship/security/armory)
 "VN" = (
+/obj/structure/catwalk/over,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/engineering)
+/turf/open/floor/plating,
+/area/ship/construction)
 "VT" = (
 /obj/structure/railing{
 	dir = 6
@@ -4734,7 +4820,9 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/communications)
 "Xk" = (
-/obj/machinery/vending/engineering,
+/obj/machinery/vending/engineering{
+	all_items_free = 1
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Xo" = (
@@ -5758,7 +5846,7 @@ Ip
 iU
 If
 cy
-VN
+XH
 XH
 Xk
 Df
@@ -5795,7 +5883,7 @@ uP
 uP
 uP
 uP
-VN
+XH
 rl
 rl
 XH
@@ -5826,14 +5914,14 @@ CR
 mC
 zo
 zo
-zo
-zo
-zo
-zo
-zo
-zo
-uu
 BE
+uu
+uu
+uu
+uu
+ee
+uu
+uu
 Gi
 lM
 eJ
@@ -5864,10 +5952,10 @@ mC
 uP
 uP
 zo
+zo
 uP
 uP
-uP
-uP
+zo
 zo
 zo
 uP
@@ -5897,7 +5985,7 @@ Ko
 uP
 oP
 sO
-aM
+mC
 zo
 zo
 zo
@@ -5936,14 +6024,14 @@ sO
 Xd
 mC
 zo
-uP
+mC
+mC
 Up
 uP
 uP
-uP
-uP
 Up
-uP
+mC
+aM
 uP
 Je
 lw
@@ -5973,12 +6061,12 @@ oP
 Xd
 xR
 uP
-uP
+aM
 Rc
+um
 tl
 tl
-tl
-tl
+um
 kp
 FH
 tl
@@ -6019,7 +6107,7 @@ mC
 BJ
 OP
 uP
-xR
+SW
 lM
 eJ
 GH
@@ -6056,7 +6144,7 @@ mC
 BJ
 uP
 uP
-Dy
+Ii
 oP
 uP
 Ko
@@ -6088,12 +6176,12 @@ zo
 BJ
 mC
 mC
-aM
+mC
 mC
 cO
 zo
 zo
-jq
+FB
 sO
 uP
 Ko
@@ -6123,14 +6211,14 @@ Lc
 uP
 kn
 rH
-zo
+CF
 mC
 mC
 mC
 fE
 lo
-uP
-Lc
+mC
+BJ
 sO
 Ko
 Ko
@@ -6158,16 +6246,16 @@ uP
 sO
 BJ
 uP
-uP
-of
-zo
+aM
+Mk
+VN
 mC
 mC
 zo
 of
 uP
-uP
-BJ
+mC
+ln
 oP
 uP
 Lu
@@ -6196,13 +6284,13 @@ oP
 Co
 uP
 uP
-OP
-zo
+mC
+jp
 uP
 uP
 uP
 OP
-zo
+yS
 zo
 BJ
 oP
@@ -6270,13 +6358,13 @@ sO
 Je
 Dy
 xR
-Dy
-rQ
+QD
+tl
 Mn
 jq
 jq
 Dy
-aM
+mC
 rQ
 ID
 oP

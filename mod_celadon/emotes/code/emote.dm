@@ -195,7 +195,7 @@
 	. = ..()
 	if(. && isliving(user))
 		var/mob/living/L = user
-		L.SetSleeping(200)
+		L.set_sleeping(200)
 
 /datum/emote/living/flap
 	key = "flap"

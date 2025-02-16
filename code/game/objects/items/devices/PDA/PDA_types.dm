@@ -1,4 +1,5 @@
 //Clown PDA is slippery.
+/* ОФЫ ВЫРЕЗАЛИ КОНТЕНТ ПО КЛОУНАМ
 /obj/item/pda/clown
 	name = "clown PDA"
 	default_cartridge = /obj/item/cartridge/virus/clown
@@ -45,7 +46,7 @@
 	if(!U.canUseTopic(src, BE_CLOSE))
 		return
 	return emojis
-
+*/
 // Special AI/pAI PDAs that cannot explode.
 /obj/item/pda/ai
 	icon = null

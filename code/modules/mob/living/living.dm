@@ -457,7 +457,7 @@
 		return
 	else
 		if(alert(src, "You sure you want to sleep for a while?", "Sleep", "Yes", "No") == "Yes")
-			SetSleeping(400) //Short nap
+			set_sleeping(400) //Short nap
 
 
 /mob/proc/get_contents()
@@ -673,7 +673,7 @@
 	SetKnockdown(0)
 	SetImmobilized(0)
 	SetParalyzed(0)
-	SetSleeping(0)
+	set_sleeping(0)
 	setStaminaLoss(0)
 	SetUnconscious(0)
 
@@ -1127,7 +1127,7 @@
 	if(G.trigger_guard == TRIGGER_GUARD_NONE)
 		to_chat(src, "<span class='warning'>You are unable to fire this!</span>")
 		return FALSE
-	if(G.trigger_guard != TRIGGER_GUARD_ALLOW_ALL && !IsAdvancedToolUser())
+	if(G.trigger_guard != TRIGGER_GUARD_ALLOW_ALL && (!IsAdvancedToolUser(src) && !HAS_TRAIT(src, TRAIT_GUN_NATURAL)))
 		to_chat(src, "<span class='warning'>You try to fire [G], but can't use the trigger!</span>")
 		return FALSE
 	return TRUE

@@ -158,7 +158,9 @@
 	},
 /obj/machinery/power/terminal,
 /obj/structure/cable,
-/obj/effect/spawner/random/vending/snack,
+/obj/machinery/vending/snack{
+	all_items_free = 1
+	},
 /turf/open/floor/carpet/green,
 /area/ship/crew/cryo)
 "gE" = (
@@ -439,7 +441,11 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/airalarm/directional/east,
+/obj/machinery/airalarm{
+	dir = 4;
+	pixel_x = 31;
+	pixel_y = 0
+	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "qp" = (
@@ -886,7 +892,11 @@
 	pixel_y = 13;
 	pixel_x = 14
 	},
-/obj/machinery/airalarm/directional/west,
+/obj/machinery/airalarm{
+	dir = 8;
+	pixel_x = -30;
+	pixel_y = 0
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew/cryo)
 "Fu" = (
@@ -1625,7 +1635,11 @@
 /obj/item/storage/book/bible/koran{
 	name = "Терик-аль-Шаед"
 	},
-/obj/machinery/airalarm/directional/west,
+/obj/machinery/airalarm{
+	dir = 8;
+	pixel_x = -33;
+	pixel_y = 0
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "Yr" = (

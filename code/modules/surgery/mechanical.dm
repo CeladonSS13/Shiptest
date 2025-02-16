@@ -15,6 +15,14 @@
 // 	self_operable = TRUE
 // [/CELADON-REMOVE]
 
+/datum/surgery_step/fix_brain/mechanic
+	implements = list(
+		TOOL_MULTITOOL = 85,
+		TOOL_HEMOSTAT = 85,
+		TOOL_SCREWDRIVER = 40,
+		/obj/item/pen = 5
+	)
+
 /datum/surgery/healing/mechanic
 	name = "Repair machinery"
 	requires_bodypart_type = BODYTYPE_ROBOTIC

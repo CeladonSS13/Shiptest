@@ -54,7 +54,7 @@
 	// 	/obj/item/melee/classic_baton/telescopic=1,
 	// )	// CELADON-EDIT - ORIGINAL
 	backpack_contents = list(/obj/item/book/manual/srmlore=1,
-		/obj/item/stamp/chap = 1,
+		/obj/item/stamp/roumain = 1,
 	)
 	// [/CELADON-REMOVE]
 	chameleon_extras = null
@@ -85,7 +85,7 @@
 	// 	/obj/item/melee/classic_baton/telescopic=1,
 	// )	// CELADON-EDIT - ORIGINAL
 	backpack_contents = list(/obj/item/book/manual/srmlore=1,
-		/obj/item/stamp/chap = 1,
+		/obj/item/stamp/roumain = 1,
 	)
 	// [/CELADON-REMOVE]
 	chameleon_extras = null
@@ -174,5 +174,5 @@
 	satchel = /obj/item/storage/backpack/cultpack
 
 	backpack_contents = list(/obj/item/book/manual/srmlore=1,
-		/obj/item/stamp/chap = 1,
+		/obj/item/stamp/roumain = 1,
 	)

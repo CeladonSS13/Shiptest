@@ -32,7 +32,7 @@
 	contains = list(/obj/item/ammo_box/c38/empty)
 	cost = 100
 	faction_discount = 20
-	faction = /datum/faction/srm  
+	faction = /datum/faction/srm
 
 /datum/supply_pack/magazine/m45_mag
 	name = ".45 ACP Candor Magazine Crate"
@@ -59,8 +59,8 @@
 
 /datum/supply_pack/magazine/firestorm_mag
 	name = "Firestorm Pan Magazine Crate"
-	desc = "Contains a 50-round pan magazine for the Hunter's Pride Firestorm SMG."
-	contains = list(/obj/item/ammo_box/magazine/c45_firestorm_mag/pan/empty)
+	desc = "Contains a 40-round pan magazine for the Hunter's Pride Firestorm SMG."
+	contains = list(/obj/item/ammo_box/magazine/c44_firestorm_mag/pan/empty)
 	cost = 1000
 	faction = /datum/faction/srm
 
@@ -85,9 +85,21 @@
 	contains = list(/obj/item/ammo_box/magazine/m15/empty)
 	cost = 300
 
+/datum/supply_pack/magazine/woodsman_mag
+	name = "Woodsman Magazine Crate"
+	desc = "Contains an 8x50mmR magazine for the Woodsman Rifle, with a capacity of five rounds."
+	contains = list(/obj/item/ammo_box/magazine/m23/empty)
+	cost = 200
+
+/datum/supply_pack/magazine/woodsman_mag_extended
+	name = "Woodsman Magazine Crate"
+	desc = "Contains an 8x50mmR magazine for the Woodsman Rifle, with a capacity of ten rounds."
+	contains = list(/obj/item/ammo_box/magazine/m23/extended/empty)
+	cost = 500
+
 /datum/supply_pack/magazine/m20_auto_elite
 	name = "Auto Elite Magazine Crate"
-	desc = "Contains a .44 Roumain magazine for the Auto Elite pistol, with a capacity of ten rounds."
+	desc = "Contains a .44 Roumain magazine for the Auto Elite pistol, with a capacity of nine rounds."
 	contains = list(/obj/item/ammo_box/magazine/m20_auto_elite/empty)
 	cost = 250
 
@@ -97,6 +109,13 @@
 	name = "Himehabu Magazine Crate"
 	desc = "Contains a .22lr magazine for the Himehabu pistol, with a capacity of ten rounds."
 	contains = list(/obj/item/ammo_box/magazine/m22lr_himehabu/empty)
+	cost = 100
+	faction = /datum/faction/syndicate/scarborough_arms
+
+/datum/supply_pack/magazine/hognose_mag
+	name = "Hognose Magazine Crate"
+	desc = "Contains a .22lr magazine for the Hognose underbarrel pistol, with a capacity of eight rounds."
+	contains = list(/obj/item/ammo_box/magazine/m22lr_himehabu/hognose/empty)
 	cost = 100
 	faction = /datum/faction/syndicate/scarborough_arms
 
@@ -356,15 +375,15 @@
 
 /* etherbor */
 
-/datum/supply_pack/magazine/guncell/kalix
+/datum/supply_pack/magazine/kalixcell
 	name = "Etherbor Cell Crate"
 	desc = "Contains an Etherbor weapon cell, compatible with Etherbor armaments with a slightly higher capacity."
 	contains = list(/obj/item/stock_parts/cell/gun/kalix)
 	cost = 600
 	faction = /datum/faction/pgf
 
-/datum/supply_pack/magazine/guncell/pgf
-	name = "Etherbor Cell Crate"
+/datum/supply_pack/magazine/pgfcell
+	name = "Military-Grade Etherbor Cell Crate"
 	desc = "Contains a military-grade Etherbor weapon cell produced for the PGFMC, compatible with Etherbor armaments with a significantly higher capacity."
 	contains = list(/obj/item/stock_parts/cell/gun/pgf)
 	cost = 1000

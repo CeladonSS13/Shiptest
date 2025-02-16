@@ -1247,7 +1247,7 @@
 
 /mob/living/carbon/human/do_after_coefficent()
 	. = ..()
-	. *= physiology.do_after_speed
+	return max(. *= physiology.do_after_speed, 0.1)
 
 /mob/living/carbon/human/updatehealth()
 	. = ..()
@@ -1290,6 +1290,9 @@
 	if(known_name)
 		return known_name
 	return .
+
+/mob/living/carbon/human/monkeybrain
+	ai_controller = /datum/ai_controller/monkey
 
 /mob/living/carbon/human/species
 	var/race = null

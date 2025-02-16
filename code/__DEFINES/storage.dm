@@ -92,10 +92,10 @@ GLOBAL_LIST_INIT(default_weight_class_to_volume, list(
 // #define STORAGE_VOLUME_BACKPACK (DEFAULT_VOLUME_NORMAL * 6) //3 bulky items  // CELADON-EDIT - ORIGINAL
 #define STORAGE_VOLUME_CONTAINER_S DEFAULT_VOLUME_NORMAL //3 small items
 #define STORAGE_VOLUME_CONTAINER_M (DEFAULT_VOLUME_NORMAL * 2) //6 small items
-#define STORAGE_VOLUME_SATCHEL (DEFAULT_VOLUME_NORMAL * 6) //6 normal items, or 3 bulky items
-#define STORAGE_VOLUME_BACKPACK (DEFAULT_VOLUME_NORMAL * 6) //6 normal items, or 3 bulky items
+#define STORAGE_VOLUME_SATCHEL (DEFAULT_VOLUME_NORMAL * 5) //6 normal items, or 3 bulky items
+#define STORAGE_VOLUME_BACKPACK (DEFAULT_VOLUME_NORMAL * 7) //6 normal items, or 3 bulky items
 // [/CELADON-EDIT]
-#define STORAGE_VOLUME_DUFFLEBAG (DEFAULT_VOLUME_NORMAL * 10) //~1.4X backpack, 5 bulky items
+#define STORAGE_VOLUME_DUFFLEBAG (DEFAULT_VOLUME_NORMAL * 10) //~1.25X backpack, 5 bulky items
 #define STORAGE_VOLUME_BAG_OF_HOLDING (DEFAULT_VOLUME_NORMAL * 10)
 
 //Whitelist for the suit storage slot on medical suits

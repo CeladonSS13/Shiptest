@@ -490,7 +490,7 @@
 /area/ship/hallway/port)
 "dK" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/structure/frame/computer/retro{
+/obj/machinery/computer/cargo/retro{
 	dir = 8
 	},
 /turf/open/floor/plasteel/telecomms_floor,
@@ -772,13 +772,13 @@
 	pixel_x = -1;
 	pixel_y = -5
 	},
-/obj/item/gun/energy/kalix/pistol{
-	pixel_x = -4;
-	pixel_y = 7
-	},
-/obj/item/gun/energy/kalix/pistol{
-	pixel_x = -5;
+/obj/item/gun/energy/kalix{
+	pixel_x = 0;
 	pixel_y = 2
+	},
+/obj/item/gun/energy/kalix{
+	pixel_x = 0;
+	pixel_y = 8
 	},
 /turf/open/floor/vault,
 /area/ship/security/armory)
@@ -3921,6 +3921,11 @@
 	},
 /turf/open/floor/vault,
 /area/ship/security/armory)
+"Hd" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/quickdeploy/barricade,
+/turf/open/floor/pod,
+/area/ship/hangar/starboard)
 "Hf" = (
 /obj/structure/railing,
 /obj/effect/turf_decal/corner_steel_grid{
@@ -4096,6 +4101,17 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ship/construction)
+"Iw" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/quickdeploy/barricade,
+/turf/open/floor/pod,
+/area/ship/hangar/starboard)
+"Iz" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/deployable_barricade/sandbags,
+/turf/open/floor/pod,
+/area/ship/hangar/starboard)
 "IF" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 10
@@ -4704,6 +4720,7 @@
 	pixel_x = -6;
 	pixel_y = -1
 	},
+/obj/item/shuttle_creator,
 /turf/open/floor/pod,
 /area/ship/hangar/starboard)
 "NM" = (
@@ -5082,22 +5099,23 @@
 "Qq" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/corner/opaque/neutral/full,
-/obj/item/storage/box/ammo/c38{
-	pixel_x = -9;
-	pixel_y = 12
-	},
 /obj/item/storage/box/ammo/a8_50r{
 	pixel_x = -6;
 	pixel_y = 5
-	},
-/obj/item/gun/ballistic/shotgun/flamingarrow{
-	pixel_x = -5;
-	pixel_y = 11
 	},
 /obj/item/gun/ballistic/rifle/illestren,
 /obj/item/ammo_box/magazine/illestren_a850r{
 	pixel_x = 6;
 	pixel_y = -4
+	},
+/obj/item/gun/ballistic/shotgun/flamingarrow/conflagration{
+	pixel_x = -4;
+	pixel_y = 7
+	},
+/obj/item/storage/box/ammo/a12g_buckshot{
+	pixel_x = -2;
+	pixel_y = 9;
+	layer = 2
 	},
 /turf/open/floor/vault,
 /area/ship/security/armory)
@@ -5466,6 +5484,12 @@
 /obj/vehicle/ridden/wheelchair,
 /turf/open/floor/mineral/titanium/tiled,
 /area/ship/hallway/central)
+"SZ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/deployable_barricade/sandbags,
+/turf/open/floor/pod,
+/area/ship/hangar/starboard)
 "Te" = (
 /obj/structure/chair{
 	dir = 8
@@ -5679,6 +5703,12 @@
 	},
 /turf/open/floor/engine/airless,
 /area/ship/engineering/engines/starboard)
+"Vi" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/barricade/security,
+/turf/open/floor/pod,
+/area/ship/hangar/starboard)
 "Vk" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 5
@@ -6266,6 +6296,10 @@
 	},
 /turf/open/floor/plating/rust,
 /area/ship/crew/dorm)
+"Zx" = (
+/obj/item/areaeditor/shuttle,
+/turf/open/floor/pod,
+/area/ship/hangar/starboard)
 "ZB" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2{
 	dir = 8
@@ -6882,9 +6916,9 @@ pF
 oS
 SB
 DJ
-eB
+Zx
 JJ
-LO
+Vi
 UL
 cA
 LO
@@ -6914,7 +6948,7 @@ cA
 cA
 Wb
 BH
-LO
+Iw
 Qs
 Mw
 eM
@@ -6941,7 +6975,7 @@ nO
 Mw
 NF
 IJ
-LO
+SZ
 Mw
 UL
 Mw
@@ -6969,7 +7003,7 @@ QU
 Mw
 cA
 UL
-cA
+Iz
 LO
 LO
 LO
@@ -6996,7 +7030,7 @@ SB
 dQ
 aR
 cA
-cA
+Hd
 UA
 LO
 UL
@@ -7025,7 +7059,7 @@ qH
 Wb
 Mw
 Mw
-cA
+Iz
 aR
 PZ
 cA
@@ -7054,7 +7088,7 @@ Mw
 BH
 UL
 cA
-LO
+Vi
 UL
 aR
 Yb

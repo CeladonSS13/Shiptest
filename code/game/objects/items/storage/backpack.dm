@@ -641,6 +641,9 @@
 	if(prob(5))
 		new /obj/item/reagent_containers/food/snacks/pizza/pineapple(src)
 
+/obj/item/storage/backpack/duffelbag/syndie/c4
+	name = "demolitions duffel bag"
+
 /obj/item/storage/backpack/duffelbag/syndie/c4/PopulateContents()
 	for(var/i in 1 to 10)
 		new /obj/item/grenade/c4(src)
@@ -670,7 +673,6 @@
 	STR.silent = TRUE
 
 /obj/item/storage/backpack/duffelbag/clown/syndie/PopulateContents()
-	new /obj/item/pda/clown(src)
 	new /obj/item/clothing/under/rank/civilian/clown(src)
 	// [CELADON-ADD] - CELADON_RETURN_CONTENT
 	new /obj/item/clothing/shoes/clown_shoes(src)
