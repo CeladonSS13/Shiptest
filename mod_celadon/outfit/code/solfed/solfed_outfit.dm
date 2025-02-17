@@ -200,7 +200,6 @@
 	courierbag = /obj/item/storage/backpack/messenger/com
 
 	accessory = /obj/item/clothing/accessory/medal/gold/captain
-	get_solfed_captain_access(H)
 
 /datum/outfit/job/solfed/captain/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -210,7 +209,6 @@
 	name = "SolFed - Flottenadmiral"
 	jobtype = /datum/job/captain
 	job_icon = "solgovrepresentative"
-	get_solfed_captain_access(H)
 
 	suit = /obj/item/clothing/suit/armor/solfed/formal
 
