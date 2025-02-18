@@ -137,7 +137,7 @@
 	job_icon = "scientist"
 
 	id = /obj/item/card/id/solfed
-	ears = /obj/item/radio/headset/headset_sci
+	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solgov/formal
 	shoes = /obj/item/clothing/shoes/laceup
 	suit = /obj/item/clothing/suit/toggle/labcoat/science
@@ -165,7 +165,7 @@
 	job_icon = "sonnensoldner"
 
 	id = /obj/item/card/id/solfed
-	ears = /obj/item/radio/headset/headset_sci
+	ears = /obj/item/radio/headset/solfed/alt
 	uniform = /obj/item/clothing/under/solfed
 	shoes = /obj/item/clothing/shoes/jackboots
 
