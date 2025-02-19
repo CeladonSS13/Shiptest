@@ -8,15 +8,15 @@ MARK:		Pistols
 
 /datum/supply_pack/faction/independent/gun/disposable
 	name = "Disposable Gun Crate"
-	desc = "In some sectors, these disposable pistols are the only firearms that can be legally sold for less than 200cr. That price is still far too high."
-	cost = 300
+	desc = "In some sectors, these disposable pistols are the only firearms that can be legally sold for less than 300cr. That price is still far too high."
+	cost = 350
 	contains = list(/obj/item/storage/guncase/pistol/disposable)
 	crate_name = "disposable gun crate"
 
 /datum/supply_pack/faction/independent/gun/derringer
 	name = ".38 Derringer Crate"
 	desc = "A cheap, concealable pistol manufactured by the reputable Hunter's Pride. At least it's better than a disposable pistol. Chambered in .38 rounds."
-	cost = 350
+	cost = 450
 	contains = list(/obj/item/storage/guncase/pistol/derringer)
 	crate_name = "derringer crate"
 
@@ -57,7 +57,7 @@ MARK:		Pistols
 	contains = list(/obj/item/storage/guncase/pistol/viper)
 
 /*
-MARK:		Energy
+MARK:	Энергетическое
 */
 
 /datum/supply_pack/faction/independent/gun/laser
@@ -173,13 +173,14 @@ MARK:		Rifles
 	cost = 3000
 	contains = list(/obj/item/storage/guncase/cobra)
 	crate_name = "SMG crate"
-///datum/supply_pack/faction/independent/gun/skm
-	//name = "SKM-24 Rifle Crate"
-	//desc = "Contains a high-powered, automatic rifle chambered in 7.62x40mm CLIP."
-	//cost = 5000
-	//contains = list(/obj/item/storage/guncase/skm)
-	//crate_name = "auto rifle crate"
-	//Оффы такой же ящик в игру ввели лол
+
+/datum/supply_pack/faction/independent/gun/skm
+	name = "SKM-24 Rifle Crate"
+	desc = "Contains a high-powered, automatic rifle chambered in 7.62x40mm CLIP."
+	cost = 5000
+	contains = list(/obj/item/storage/guncase/skm)
+	crate_name = "auto rifle crate"
+
 /datum/supply_pack/faction/independent/gun/attachment/rail_light
 	name = "Tactical Rail Light Crate"
 	desc = "Contains a single rail light to be mounted on a firearm."

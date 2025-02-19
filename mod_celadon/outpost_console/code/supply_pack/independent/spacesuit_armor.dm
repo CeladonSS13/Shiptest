@@ -52,7 +52,7 @@
 	crate_name = "atmospherics hardsuit crate"
 	crate_type = /obj/structure/closet/crate/secure/engineering
 
-/datum/supply_pack/science/mod_core
+/datum/supply_pack/faction/independent/spacesuit_armor/science/mod_core
 	name = "MOD Core Crate"
 	desc = "One MODsuit core used in MOD construction."
 	cost = 1000
@@ -60,7 +60,7 @@
 	crate_name = "MOD core crate"
 	crate_type = /obj/structure/closet/crate/secure/science
 
-/datum/supply_pack/science/mod_core_plasma
+/datum/supply_pack/faction/independent/spacesuit_armor/science/mod_core_plasma
 	name = "MOD Plasma Core Crate"
 	desc = "One MODsuit core used in MOD construction. This core is designed to be charged from solid plasma."
 	cost = 1500
