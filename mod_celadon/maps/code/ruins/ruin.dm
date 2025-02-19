@@ -1,9 +1,25 @@
 // Пример датума для руинки
 // /datum/map_template/ruin/"планета"/"короткое название"
-// 	name = "Имя руинки для спавна"
 // 	id = "Айди"
+// 	name = "Имя руинки для спавна"
 // 	description = "Описание"
 // 	suffix = "Название файла"
+//  cost = "вес руинки"
+//  ruin_tags = list("ДЕФАЙНЫ_ТЭГОВ")
+
+// Где: вес может быть в диапазоне от 1 до 5. По умолчанию все руины = 1
+// 1 - (Common) — очень распространённая
+// 2 - (Scarce) — нечастая
+// 3 - (Rare) — редкая
+// 4 - (Very Rare) — очень редкая
+// 5 - (Extremely Rare) — уникальная
+
+// ruin_tags должен включать 1 тэг из категории сложности
+// второй из категории количества лута
+// третий и последедующие может быть, а может и нет
+// Список всех тэгов code/__DEFINES/ruins.dm
+// Пример:
+// ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_HAZARDOUS)
 
 //							///
 //		MARK: Beach
@@ -270,109 +286,114 @@
 //							///
 
 /datum/map_template/ruin/lavaland/bubble_outpost
-	name = "Distress Outpost"
 	id = "bubble-outpost"
+	name = "Distress Outpost"
 	description = "This mining outpost started transfering distress signal just a moment ago."
 	suffix = "lavaland_surface_bubbleOutpost.dmm"
+	cost = 3
 
 /datum/map_template/ruin/lavaland/biodome/winter
-	name = "Solarian Winter Biodome"
 	id = "biodome-winter"
+	name = "Solarian Winter Biodome"
 	description = "A Solarian frontier research facility created by the Pionierskompanien \
 	This one seems to simulate the wintery climate of the northern provinces, including a sauna!"
 	suffix = "lavaland_surface_biodome_winter.dmm"
 
 /datum/map_template/ruin/lavaland/buried_shrine
-	name = "Buried Shrine"
 	id = "buried_shrine"
+	name = "Buried Shrine"
 	description = "An ancient temple belonging to some long-gone inhabitants, wrecked and buried by the volcanic activity of it's home planet."
 	suffix = "lavaland_surface_buried_shrine.dmm"
+	cost = 2
 
 /datum/map_template/ruin/lavaland/lava_canyon
-	name = "Lava Canyon"
 	id = "lava_canyon"
+	name = "Lava Canyon"
 	description = "Tectonic activity has gouged a large fissure into the surface of the planet here. Tucked in the crevasse, the remains of an ashwalker village lay in ashes."
 	suffix = "lavaland_surface_lava_canyon.dmm"
+	cost = 2
 
 /datum/map_template/ruin/lavaland/wrecked_factory
-	name = "Wrecked Factory"
 	id = "wreck_factory"
+	name = "Wrecked Factory"
 	description = "A  Nanotrasen processing facility, assaulted by a pirate raid that has killed most of the staff. The offices however, remain unbreached for now."
 	suffix = "lavaland_surface_wrecked_factory.dmm"
+	cost = 4
 
 /datum/map_template/ruin/lavaland/fallenstar
-	name = "Crashed Starwalker"
 	id = "crashed_star"
+	name = "Crashed Starwalker"
 	description = "A crashed pirate ship. It would seem that it's crew died a while ago."
 	suffix = "lavaland_crashed_starwalker.dmm"
+	cost = 2
 
 /datum/map_template/ruin/lavaland/hierophant
-	name = "Hierophant's Arena"
 	id = "hierophant"
+	name = "Hierophant's Arena"
 	description = "A strange, square chunk of metal of massive size. Inside awaits only death and many, many squares."
 	suffix = "lavaland_surface_hierophant.dmm"
 	allow_duplicates = FALSE
+	cost = 3
 
 /datum/map_template/ruin/lavaland/xeno_nest
-	name = "Xenomorph Nest"
 	id = "xeno-nest"
+	name = "Xenomorph Nest"
 	description = "These xenomorphs got bored of horrifically slaughtering people on space stations, and have settled down on a nice lava-filled hellscape to focus on what's really important in life. \
 	Quality memes."
 	suffix = "lavaland_surface_xeno_nest.dmm"
-	cost = 20
+	cost = 3
 
 /datum/map_template/ruin/lavaland/pizza
-	name = "Ruined Pizza Party"
 	id = "pizza"
+	name = "Ruined Pizza Party"
 	description = "Little Timmy's birthday pizza bash took a turn for the worse when a bluespace anomaly passed by."
 	suffix = "lavaland_surface_pizzaparty.dmm"
+	cost = 2
 	allow_duplicates = FALSE
-	cost = 5
 
 /datum/map_template/ruin/lavaland/hermit
-	name = "Makeshift Shelter"
 	id = "hermitcave"
+	name = "Makeshift Shelter"
 	description = "A place of shelter for a lone hermit, scraping by to live another day."
 	suffix = "lavaland_surface_hermit.dmm"
+	cost = 4
 	allow_duplicates = FALSE
-	cost = 10
 
 /datum/map_template/ruin/lavaland/comm_outpost
-	name = "Syndicate Comm Outpost"
 	id = "commoutpost"
+	name = "Syndicate Comm Outpost"
 	description = "A forgotten outpost home to only a tragic tale."
 	suffix = "lavaland_surface_comm_outpost.dmm"
 	allow_duplicates = FALSE
-	cost = 5
 
 /datum/map_template/ruin/lavaland/dwarffortress
-	name = "Legion infested Dwarf Fortress"
 	id = "dwarffortress"
+	name = "Legion infested Dwarf Fortress"
 	description = "A forgotten fortress home to only a tragic tale and infested corpses."
 	suffix = "lavaland_surface_dwarffortress.dmm"
 	allow_duplicates = FALSE
 
 /datum/map_template/ruin/lavaland/spookycrash
-	name = "Spooky Crash"
 	id = "spooky_crash"
+	name = "Spooky Crash"
 	description = "A spooky looking crash."
 	suffix = "lavaland_surface_SPOOKYCRASH.dmm"
 
 /datum/map_template/ruin/lavaland/crashedpinnance
-	name = "Crashed Research Pinnance"
 	id = "crashed_pinnance"
+	name = "Crashed Research Pinnance"
 	description = "A crashed shuttlecraft, looks like the pilot didn't make it."
 	suffix = "lavaland_surface_crashed_pinnance.dmm"
 
 /datum/map_template/ruin/lavaland/codelab
-	name = "Nanotrasen Genetic Research Facility"
 	id = "codelab"
+	name = "Nanotrasen Genetic Research Facility"
 	description = "A Nanotrasen genetic research facility, abandoned and ripe for looting. Whats that goo over there?"
 	suffix = "lavaland_surface_codelab.dmm"
 
 /datum/map_template/ruin/lavaland/falling_heron
-	name = "Crashed Heron"
 	id = "crashed_heron"
+	name = "Crashed Heron"
 	description = "A crashed nanotrasen ship Heron-class. It would seem that it's crew died a while ago."
 	suffix = "lavaland_crashed_heron.dmm"
 	cost = 5
