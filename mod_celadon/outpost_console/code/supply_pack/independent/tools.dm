@@ -14,7 +14,7 @@
 	name = "C.U.C.K.S box"
 	desc = "Contains several deployable barricades. 3 - plasteel, 9 - metal"
 	contains = list(/obj/item/storage/barricade)
-	cost = 5000
+	cost = 3500
 	crate_name = "C.U.C.K.S crate"
 
 /datum/supply_pack/faction/independent/tools/mining
