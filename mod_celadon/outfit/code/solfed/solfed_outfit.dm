@@ -165,7 +165,7 @@
 	job_icon = "sonnensoldner"
 
 	id = /obj/item/card/id/solfed
-	ears = /obj/item/radio/headset/solfed/alt
+	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solfed
 	shoes = /obj/item/clothing/shoes/jackboots
 
