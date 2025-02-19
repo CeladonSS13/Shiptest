@@ -6,7 +6,7 @@
 // 	suffix = "Название файла"
 
 //							///
-//		Beach ruin			///
+//		MARK: Beach
 //							///
 /datum/map_template/ruin/beachplanet/fishinghut
 	name = "Fishing Hut"
@@ -69,7 +69,7 @@
 	suffix = "beach_knights_rest.dmm"
 
 //							///
-//		Icemoon ruin		///
+//		MARK: Icemoon
 //							///
 /datum/map_template/ruin/icemoon/cultbaroncrash
 	name = "Cult Baron Crashsite"
@@ -145,7 +145,7 @@
 
 
 //							///
-//		Jungle ruin			///
+//		MARK: Jungle
 //							///
 /datum/map_template/ruin/jungle/oldntobservatory
 	name = "Elysium Reclaimed Observatory"
@@ -266,7 +266,7 @@
 	cost = 10
 
 //							///
-//		Lavaland ruin		///
+//		MARK: Lavaland
 //							///
 
 /datum/map_template/ruin/lavaland/bubble_outpost
@@ -406,7 +406,7 @@
 	allow_duplicates = FALSE
 
 //							///
-//		Rockplanet ruin		///
+//		MARK: Rockplanet
 //							///
 /datum/map_template/ruin/rockplanet/harmfactory
 	name = "Harm Factory"
@@ -475,7 +475,7 @@
 	suffix = "rockplanet_distillery.dmm"
 
 //							///
-//		Space ruin			///
+//		MARK: Space
 //							///
 
 /datum/map_template/ruin/space/abandoned_remora
@@ -616,7 +616,7 @@
 	allow_duplicates = FALSE
 
 //							///
-//		WastePlanet ruin	///
+//		MARK: WastePlanet
 //							///
 /datum/map_template/ruin/wasteplanet/weaponstest
 	name = "Weapons testing facility"
@@ -685,7 +685,7 @@
 	suffix = "wasteplanet_claw_ruin.dmm"
 
 //							///
-//		Whitesand ruin		///
+//		MARK: Whitesand
 //							///
 /datum/map_template/ruin/whitesands/medipen_plant
 	name = "Abandoned Medipen Factory"
@@ -764,7 +764,7 @@
 	suffix = "whitesands_surface_ruinsofweh.dmm"
 
 //							///
-//		Plasma	 ruin		///
+//		MARK: Plasma
 //							///
 
 /datum/map_template/ruin/plasma_gaint/oldminer
@@ -781,7 +781,7 @@
 	allow_duplicates = FALSE
 
 //							///
-//		EarthSand ruin		///
+//		MARK: EarthSand
 //							///
 
 /datum/map_template/ruin/earth_sand/el_town
@@ -797,7 +797,7 @@
 	suffix = "el_citadel.dmm"
 
 //							///
-//		Anima ruin			///
+//		MARK: Anima
 //							///
 
 /datum/map_template/ruin/anima
