@@ -50,6 +50,13 @@ MARK:		Fuel sheets (plasma / uranium)
 MARK:		Misc. mineral sheets
 */
 
+/datum/supply_pack/faction/independent/material/sandbags50
+	name = "50 Sandbags"
+	desc = "It's so sand? Yes, it's sandbags."
+	cost = 1000
+	contains = list(/obj/item/stack/sheet/mineral/sandbags/fifty)
+	crate_name = "sandbags crate"
+
 /datum/supply_pack/faction/independent/material/titanium20
 	name = "20 Titanium Sheets"
 	desc = "Used for making big boy tanks and tools."
@@ -77,6 +84,7 @@ MARK:		Misc. mineral sheets
 	cost = 3500
 	contains = list(/obj/item/stack/sheet/mineral/diamond)
 	crate_name = "diamond sheet crate"
+
 
 /*
 MARK:		Misc. materials
