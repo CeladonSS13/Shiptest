@@ -62,6 +62,17 @@ GLOBAL_LIST_INIT(sandstone_recipes, list ( \
 	novariants = TRUE
 	merge_type = /obj/item/stack/sheet/mineral/sandbags
 
+// [CELADON-ADD] - CELADON_STRUCTURES - Барикады - Добавляем количество
+/obj/item/stack/sheet/mineral/sandbags/five
+	amount = 5
+
+/obj/item/stack/sheet/mineral/sandbags/twenty
+	amount = 20
+
+/obj/item/stack/sheet/mineral/sandbags/fifty
+	amount = 50
+// [/CELADON-ADD]
+
 GLOBAL_LIST_INIT(sandbag_recipes, list ( \
 	// [CELADON-ADD] - CELADON_STRUCTURES - Барикады
 	new/datum/stack_recipe("sandbags barricade", /obj/structure/deployable_barricade/sandbags, 12, time = 5 SECONDS, one_per_turf = TRUE, on_floor = TRUE), \
