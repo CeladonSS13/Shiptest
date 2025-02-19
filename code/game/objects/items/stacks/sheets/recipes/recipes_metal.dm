@@ -250,7 +250,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 		new/datum/stack_recipe("bench press", /obj/structure/weightmachine/weightlifter, 5, time = 25, one_per_turf = TRUE, on_floor = TRUE), \
 		)), \
 	// [CELADON-ADD] - CELADON_STRUCTURES - Барикады
-	new/datum/stack_recipe("metal barricade", /obj/structure/deployable_barricade/metal, 40, time = 9 SECONDS, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("metal barricade", /obj/structure/deployable_barricade/metal, 20, time = 4 SECONDS, one_per_turf = TRUE, on_floor = TRUE), \
 	// [/CELADON-ADD]
 	new/datum/stack_recipe("shower", /obj/machinery/shower, 3, time = 25)
 ))
