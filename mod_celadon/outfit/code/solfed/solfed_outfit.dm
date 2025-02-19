@@ -137,7 +137,7 @@
 	job_icon = "scientist"
 
 	id = /obj/item/card/id/solfed
-	ears = /obj/item/radio/headset/headset_sci
+	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solgov/formal
 	shoes = /obj/item/clothing/shoes/laceup
 	suit = /obj/item/clothing/suit/toggle/labcoat/science
@@ -165,7 +165,7 @@
 	job_icon = "sonnensoldner"
 
 	id = /obj/item/card/id/solfed
-	ears = /obj/item/radio/headset/headset_sci
+	ears = /obj/item/radio/headset/solfed/alt
 	uniform = /obj/item/clothing/under/solfed
 	shoes = /obj/item/clothing/shoes/jackboots
 
@@ -200,7 +200,6 @@
 	courierbag = /obj/item/storage/backpack/messenger/com
 
 	accessory = /obj/item/clothing/accessory/medal/gold/captain
-	get_solfed_captain_access(H)
 
 /datum/outfit/job/solfed/captain/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -210,7 +209,6 @@
 	name = "SolFed - Flottenadmiral"
 	jobtype = /datum/job/captain
 	job_icon = "solgovrepresentative"
-	get_solfed_captain_access(H)
 
 	suit = /obj/item/clothing/suit/armor/solfed/formal
 

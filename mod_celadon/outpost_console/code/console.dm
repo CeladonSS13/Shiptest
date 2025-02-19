@@ -182,8 +182,10 @@
 /obj/machinery/computer/cargo/faction/proc/generate_faction_pack_data(datum/faction)
 	. = supply_pack_data = list()
 	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-
+		var/datum/supply_pack/faction/P = SSshuttle.supply_packs[pack]
+		// Проверяем что являемся /datum/supply_pack/faction, т.е. всё из мод-пака outpost_console
+		if(!istype(P))
+			continue
 		var/is_faction = ispath(P.faction, faction)
 		// Под независимые попадают и те, у которых фракция = null
 		if(ispath(faction, /datum/faction/independent) && P.faction == null)
@@ -214,7 +216,7 @@
 	var/list/data = list()
 	data["supplies"] = list()
 	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
+		var/datum/supply_pack/faction/P = SSshuttle.supply_packs[pack]
 		var/is_faction = ispath(P.faction, faction)
 
 		if (is_faction)
