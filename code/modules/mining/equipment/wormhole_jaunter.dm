@@ -35,7 +35,7 @@
 
 	return destinations
 
-/obj/item/wormhole_jaunter/proc/activate(mob/user, adjacent)
+/obj/item/wormhole_jaunter/proc/activate(mob/user, adjacent, chasm_react)
 	if(!turf_check(user))
 		return
 
@@ -43,6 +43,8 @@
 	if(!targetturf)
 		CRASH("Unable to find a blobstart landmark")
 	var/obj/effect/portal/jaunt_tunnel/J = new (get_turf(src), 100, null, FALSE, targetturf)
+	if(chasm_react)
+		J.teleport(user)
 	log_game("[user] Has jaunted to [loc_name(targetturf)].")
 	message_admins("[user] Has jaunted to [ADMIN_VERBOSEJMP(targetturf)].")
 	if(adjacent)
@@ -73,7 +75,7 @@
 	if(user.get_item_by_slot(ITEM_SLOT_BELT) == src)
 		to_chat(user, "<span class='notice'>Your [name] activates, saving you from the chasm!</span>")
 		SSblackbox.record_feedback("tally", "jaunter", 1, "Chasm") // chasm automatic activation
-		activate(user, FALSE)
+		activate(user, FALSE, TRUE)
 	else
 		to_chat(user, "<span class='userdanger'>[src] is not attached to your belt, preventing it from saving you from the chasm. RIP.</span>")
 
