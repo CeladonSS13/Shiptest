@@ -548,9 +548,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/storage/eva)
 "nq" = (
-/obj/machinery/suit_storage_unit/inherit{
-	req_access_txt = "1"
-	},
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -558,8 +555,7 @@
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
 	dir = 8
 	},
-/obj/item/tank/jetpack/oxygen,
-/obj/item/clothing/suit/space/hardsuit/security/inteq,
+/obj/structure/closet/emcloset,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/storage/eva)
 "nL" = (
@@ -877,7 +873,8 @@
 	},
 /mob/living/simple_animal/pet/dog/pug{
 	desc = "Steadfast defender of the realm, destroyer of countless donuts, and seatwarmer for the Vanguard.";
-	name = "\proper Sentinel"
+	name = "\proper Sentinel";
+	faction = list("neutral","playerInteq")
 	},
 /obj/machinery/firealarm/directional/south,
 /obj/effect/turf_decal/corner/opaque/brown{
@@ -1074,9 +1071,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
 	},
-/obj/item/clothing/suit/armor/vest/bulletproof,
-/obj/item/clothing/suit/armor/vest/bulletproof,
-/obj/item/clothing/suit/armor/vest/bulletproof,
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/gloves/combat,
@@ -1091,6 +1085,12 @@
 	name = "equipment locker";
 	req_one_access_txt = "1"
 	},
+/obj/item/clothing/suit/armor/vest/marine,
+/obj/item/clothing/suit/armor/vest/marine,
+/obj/item/clothing/suit/armor/vest/marine,
+/obj/item/clothing/mask/balaclava,
+/obj/item/clothing/mask/balaclava,
+/obj/item/clothing/mask/balaclava,
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/crew)
 "vY" = (
@@ -1098,6 +1098,10 @@
 /obj/machinery/door/firedoor/window,
 /turf/open/floor/plating,
 /area/ship/cargo)
+"wb" = (
+/obj/machinery/porta_turret/ship/inteq/light,
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/bridge)
 "wu" = (
 /obj/machinery/advanced_airlock_controller{
 	pixel_x = 25;
@@ -1105,10 +1109,7 @@
 	},
 /obj/machinery/light/small/directional/south,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/suit_storage_unit,
-/obj/item/clothing/suit/space/inteq,
-/obj/item/clothing/head/helmet/space/inteq,
-/obj/item/tank/internals/oxygen/yellow,
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/storage/eva)
 "wX" = (
@@ -1286,6 +1287,7 @@
 	pixel_x = -7;
 	pixel_y = -25
 	},
+/obj/machinery/rnd/server,
 /turf/open/floor/carpet/orange,
 /area/ship/bridge)
 "BQ" = (
@@ -1325,6 +1327,10 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/carpet/orange,
 /area/ship/bridge)
+"DL" = (
+/obj/machinery/porta_turret/ship/inteq/light,
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/crew)
 "DU" = (
 /obj/effect/turf_decal/corner/opaque/yellow{
 	dir = 8
@@ -1349,27 +1355,6 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/crew)
 "Ek" = (
-/obj/item/ammo_box/magazine/co9mm{
-	pixel_x = 5
-	},
-/obj/item/ammo_box/magazine/co9mm,
-/obj/item/ammo_box/magazine/co9mm{
-	pixel_x = -5
-	},
-/obj/item/ammo_box/magazine/co9mm{
-	pixel_x = 5
-	},
-/obj/item/ammo_box/magazine/co9mm,
-/obj/item/ammo_box/magazine/co9mm{
-	pixel_x = -5
-	},
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq{
-	pixel_y = 5
-	},
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq,
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq{
-	pixel_y = -5
-	},
 /obj/item/ammo_box/magazine/skm_762_40{
 	pixel_x = -7
 	},
@@ -1387,6 +1372,15 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},
+/obj/item/gun/ballistic/automatic/pistol/rattlesnake/inteq,
+/obj/item/gun/ballistic/automatic/pistol/rattlesnake/inteq,
+/obj/item/gun/ballistic/automatic/pistol/rattlesnake/inteq,
+/obj/item/ammo_box/magazine/m9mm_rattlesnake,
+/obj/item/ammo_box/magazine/m9mm_rattlesnake,
+/obj/item/ammo_box/magazine/m9mm_rattlesnake,
+/obj/item/ammo_box/magazine/m9mm_rattlesnake,
+/obj/item/ammo_box/magazine/m9mm_rattlesnake,
+/obj/item/ammo_box/magazine/m9mm_rattlesnake,
 /turf/open/floor/carpet/orange,
 /area/ship/bridge)
 "EC" = (
@@ -1450,6 +1444,10 @@
 /obj/structure/table,
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
+"Gv" = (
+/obj/machinery/porta_turret/ship/inteq/light,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/maintenance/starboard)
 "GB" = (
 /obj/structure/sign/number/eight{
 	dir = 1
@@ -1602,6 +1600,10 @@
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/crew)
+"Is" = (
+/obj/machinery/porta_turret/ship/inteq/light,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/maintenance/port)
 "Iu" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 8
@@ -2158,6 +2160,10 @@
 	},
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
+"Ug" = (
+/obj/machinery/porta_turret/ship/inteq/light,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/crew/dorm)
 "Uq" = (
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/door/poddoor{
@@ -2416,7 +2422,7 @@
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 4
 	},
-/obj/machinery/rnd/server,
+/obj/structure/tank_dispenser/oxygen,
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 
@@ -2501,7 +2507,7 @@ qU
 cX
 "}
 (5,1,1) = {"
-ih
+Is
 ZR
 oq
 ih
@@ -2518,7 +2524,7 @@ Nd
 cX
 Qn
 go
-cX
+Gv
 "}
 (6,1,1) = {"
 ih
@@ -2704,7 +2710,7 @@ ib
 ib
 ib
 ib
-Vk
+Ug
 Vk
 Vk
 Vk
@@ -2895,7 +2901,7 @@ ib
 ib
 ib
 hi
-hi
+DL
 ib
 ib
 ib
@@ -2908,7 +2914,7 @@ km
 Xn
 Xn
 Xn
-km
+wb
 ib
 ib
 ib
