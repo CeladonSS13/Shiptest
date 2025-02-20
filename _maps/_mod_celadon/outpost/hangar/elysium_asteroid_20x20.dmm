@@ -412,13 +412,21 @@
 	},
 /area/hangar)
 "jw" = (
-/obj/machinery/computer/cargo,
 /obj/structure/railing{
 	dir = 8;
 	layer = 4.1
 	},
 /obj/structure/sign/poster/official/moth/smokey{
 	pixel_y = 32
+	},
+/obj/structure/table/reinforced,
+/obj/item/toy/plush/moth/rainbow{
+	pixel_x = 0;
+	pixel_y = 4
+	},
+/obj/item/clothing/head/beret/highlander{
+	pixel_x = 0;
+	pixel_y = 14
 	},
 /turf/open/floor/plating/catwalk_floor{
 	planetary_atmos = 1

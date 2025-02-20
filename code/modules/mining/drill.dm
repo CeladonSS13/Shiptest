@@ -32,7 +32,6 @@
 	var/power_cost = 100
 	var/metal_attached = METAL_ABSENT
 	var/missing_part //I hate this but it's better than most the ideas I've had
-	var/current_timerid
 
 /obj/machinery/drill/examine(mob/user)
 	. = ..()
@@ -90,6 +89,7 @@
 		say("Drill integrity failure. Engaging emergency shutdown procedure.")
 		//Just to make sure mobs don't spawn infinitely from the vein and as a failure state for players
 		mining.deconstruct()
+		mining.toggle_spawning()
 	obj_break()
 	update_icon_state()
 	update_overlays()
@@ -125,7 +125,7 @@
 	if(tool.tool_behaviour == TOOL_WRENCH)
 		if(metal_attached && machine_stat & BROKEN)
 			if(tool.use_tool(src, user, 30, volume=50))
-				to_chat(user, "<span class='notice'>You bolt the plating the plating in place on [src].</span>")
+				to_chat(user, "<span class='notice'>You bolt the plating in place on [src].</span>")
 				metal_attached = METAL_SECURED
 				return
 		if(!vein && !anchored)
@@ -145,8 +145,7 @@
 			to_chat(user, "<span class='notice'>You unsecure the [src] from the ore vein.</span>")
 			playsound(src, 'sound/items/deconstruct.ogg', 50, TRUE)
 			anchored = FALSE
-
-			if(mining?.spawner_attached && mining?.spawning_started)
+			if(mining?.spawning_started)
 				mining.toggle_spawning()
 			mining = null
 			update_icon_state()
@@ -221,7 +220,7 @@
 		if(do_after(user, 10, src))
 			active = FALSE
 			soundloop.stop()
-			deltimer(current_timerid)
+			qdel(active_timers[1])
 			mining.toggle_spawning()
 			playsound(src, 'sound/machines/switch2.ogg', 50, TRUE)
 			say("Manual shutoff engaged, ceasing mining operations.")
@@ -300,16 +299,14 @@
 	if(mining.mining_charges >= 1)
 		var/mine_time
 		active = TRUE
+		anchored = TRUE
 		soundloop.start()
-		if(!mining.spawner_attached)
-			mining.begin_spawning()
-		else if(!mining.spawning_started)
-			mining.toggle_spawning()
+		mining.toggle_spawning()
 		for(var/obj/item/stock_parts/micro_laser/laser in component_parts)
 			mine_time = round((300/sqrt(laser.rating))*mining.mine_time_multiplier)
 		eta = mine_time*mining.mining_charges
 		cell.use(power_use)
-		current_timerid = addtimer(CALLBACK(src, PROC_REF(mine)), mine_time, TIMER_STOPPABLE)
+		addtimer(CALLBACK(src, PROC_REF(mine)), mine_time, TIMER_STOPPABLE|TIMER_LOOP)
 		say("Estimated time until vein depletion: [time2text(eta,"mm:ss")].")
 		update_icon_state()
 		update_overlays()
@@ -319,19 +316,13 @@
 	if(mining.mining_charges)
 		mining.mining_charges--
 		mine_success()
-		if(mining.mining_charges < 1)
-			say("Vein depleted.")
-			active = FALSE
-			soundloop.stop()
-			mining.Destroy()
-			mining = null
-			update_icon_state()
-			update_overlays()
-		else
-			start_mining()
-	else if(!mining.mining_charges) //Extra check to prevent vein related errors locking us in place
-		say("Error: Vein Depleted")
+	if(!mining.mining_charges)
+		say("Vein depleted.")
 		active = FALSE
+		soundloop.stop()
+		mining.Destroy()
+		mining = null
+		qdel(active_timers[1])
 		update_icon_state()
 		update_overlays()
 

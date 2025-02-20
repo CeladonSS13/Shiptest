@@ -345,6 +345,11 @@
 	climbable = TRUE
 	can_wire = TRUE
 
+/obj/structure/deployable_barricade/sandbags/update_icon()
+	. = ..()
+	if(dir == SOUTH)
+		pixel_y = -11
+
 /*----------------------*/
 // MARK: GUARD RAIL
 /*----------------------*/

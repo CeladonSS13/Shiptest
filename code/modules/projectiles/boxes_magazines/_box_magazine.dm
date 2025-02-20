@@ -10,7 +10,7 @@
 	item_state = "syringe_kit"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
-	custom_materials = list(/datum/material/iron = 15000)
+	custom_materials = list(/datum/material/iron = 5000)
 	throwforce = 2
 	w_class = WEIGHT_CLASS_SMALL
 	throw_speed = 3

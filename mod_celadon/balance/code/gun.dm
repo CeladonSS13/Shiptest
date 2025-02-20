@@ -1,3 +1,6 @@
+/obj/projectile/bullet/pellet
+	armour_penetration = -15
+
 /obj/item/ammo_casing/shotgun/buckshot
 	pellets = 6
 	custom_materials = list(/datum/material/iron=6000)
@@ -16,6 +19,16 @@
 
 /obj/projectile/bullet/pellet/buckshot
 	damage = 14
+	tile_dropoff = 0.5
+
+/obj/projectile/bullet/pellet/rubbershot
+	damage = 2
+	stamina = 10
+	tile_dropoff_stamina = 1
+	armour_penetration = 25
+
+/obj/projectile/bullet/pellet/rubbershot/incapacitate
+	armour_penetration = 45
 
 /obj/projectile/bullet/a357
 	damage = 45

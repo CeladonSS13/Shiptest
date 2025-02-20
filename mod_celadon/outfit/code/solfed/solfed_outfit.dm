@@ -15,7 +15,7 @@
 				I = O
 				break
 		if (I)
-			I.access = list(ACCESS_SOLGOV, ACCESS_CAPTAIN, ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED, ACCESS_OUTPOST_FACTION_NT)
+			I.access += list(ACCESS_SOLGOV, ACCESS_CAPTAIN, ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED, ACCESS_OUTPOST_FACTION_NT)
 			I.update_label()
 		W.combined_access = list()
 		for (var/obj/item/card/id/card in W.contents)
@@ -137,7 +137,7 @@
 	job_icon = "scientist"
 
 	id = /obj/item/card/id/solfed
-	ears = /obj/item/radio/headset/headset_sci
+	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solgov/formal
 	shoes = /obj/item/clothing/shoes/laceup
 	suit = /obj/item/clothing/suit/toggle/labcoat/science
@@ -165,7 +165,7 @@
 	job_icon = "sonnensoldner"
 
 	id = /obj/item/card/id/solfed
-	ears = /obj/item/radio/headset/headset_sci
+	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solfed
 	shoes = /obj/item/clothing/shoes/jackboots
 
@@ -200,7 +200,6 @@
 	courierbag = /obj/item/storage/backpack/messenger/com
 
 	accessory = /obj/item/clothing/accessory/medal/gold/captain
-	get_solfed_captain_access(H)
 
 /datum/outfit/job/solfed/captain/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -210,7 +209,6 @@
 	name = "SolFed - Flottenadmiral"
 	jobtype = /datum/job/captain
 	job_icon = "solgovrepresentative"
-	get_solfed_captain_access(H)
 
 	suit = /obj/item/clothing/suit/armor/solfed/formal
 
