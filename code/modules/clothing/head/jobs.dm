@@ -86,7 +86,6 @@
 /obj/item/clothing/head/HoS
 	name = "head of security cap"
 	desc = "The robust standard-issue cap of the Head of Security. For showing the officers who's in charge."
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 35,"energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 	icon_state = "hoscap"
 
 /obj/item/clothing/head/HoS/cowboy
@@ -120,7 +119,6 @@
 /obj/item/clothing/head/warden
 	name = "warden's police hat"
 	desc = "It's a special hat issued to the Warden of a security force. A classic symbol of middling authority."
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 35,"energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 	icon = 'icons/obj/clothing/head/armor.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/head/armor.dmi'
 	icon_state = "policehelm"
