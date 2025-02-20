@@ -21,8 +21,7 @@
 		/obj/item/storage/belt/bandolier,
 		/obj/item/storage/belt/security/webbing/inteq,
 		/obj/item/storage/belt/medical,
-		/obj/item/storage/belt/medical/webbing,
-		/obj/item/storage/belt/utility/chief))
+		/obj/item/storage/belt/medical/webbing))
 	I = new I(loc)
 	if(prob(25))
 		var/mob/living/carbon/human/dummy = new()
