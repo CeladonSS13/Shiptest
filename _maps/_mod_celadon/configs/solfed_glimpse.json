@@ -1,0 +1,38 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "Glimpse-Architecture Survey Ship",
+	"map_short_name": "Glimpse",
+	"description": "Корабль архитектуры ПРОБЛЕСК, программы Солнечной Федерации исследований экзопланет и космических объектов на территориях фронтира. Корабль снабжен маневренным набором двигателей и аэродинамичным корпусом для широкого спектра атмосфер, что в купе с системами солнечных батарей помогает снизить нагрев судна при заходах на посадку самых разнообразных сред. Несмотря на поставленные задачи, судно весьма комфортабельно, так как длительные экспедиции имеют тенденцию негативно влиять на психику.",
+	"map_path": "_maps/_mod_celadon/shuttles/solfed/solfed_glimpse.dmm",
+	"enabled": true,
+	"limit": 2,
+	"prefix": "MSFSV",
+	"faction": "/datum/faction/solgov",
+	"tags": ["Исследование", "Поиск"],
+	"namelists": [
+		"SOLGOV"
+	],
+	"job_slots": {
+		"Kommandant": {
+			"outfit": "/datum/outfit/job/solfed/captain",
+			"officer": true,
+			"slots": 1
+		},
+		"Expeditionary Marine Guard": {
+			"outfit": "/datum/outfit/job/solfed/marine",
+			"slots": 2
+		},
+		"Meeresarzt": {
+			"outfit": "/datum/outfit/job/solfed/doctor",
+			"slots": 1
+		},
+		"Marinemechaniker": {
+			"outfit": "/datum/outfit/job/solfed/engineer",
+			"slots": 1
+		},
+		"Gehilfe": {
+			"outfit": "/datum/outfit/job/solfed/assistant",
+			"slots" : 3
+		}
+	}
+}

@@ -326,6 +326,10 @@ All ShuttleMove procs go here
 /mob/living/lateShuttleMove(turf/oldT, list/movement_force, move_dir)
 	if(buckled)
 		return
+//	Cel-Add
+	if(issilicon(src))
+		return
+//	/Cel-Add
 
 	. = ..()
 

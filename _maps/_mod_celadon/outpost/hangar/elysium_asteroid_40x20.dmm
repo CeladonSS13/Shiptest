@@ -950,10 +950,14 @@
 	},
 /area/hangar)
 "tH" = (
-/obj/machinery/computer/cargo,
 /obj/item/toy/plush/knight{
-	pixel_y = 25;
-	pixel_x = 9
+	pixel_y = 8;
+	pixel_x = 8
+	},
+/obj/structure/table/reinforced,
+/obj/item/binoculars{
+	pixel_y = 4;
+	pixel_x = -1
 	},
 /turf/open/floor/plating/catwalk_floor{
 	planetary_atmos = 1

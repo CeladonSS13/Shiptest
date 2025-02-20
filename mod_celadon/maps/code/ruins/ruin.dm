@@ -280,7 +280,7 @@
 	id = "biodome-winter"
 	description = "A Solarian frontier research facility created by the Pionierskompanien \
 	This one seems to simulate the wintery climate of the northern provinces, including a sauna!"
-	suffix = "lavaland_surface_sloth.dmm"
+	suffix = "lavaland_surface_biodome_winter.dmm"
 
 /datum/map_template/ruin/lavaland/buried_shrine
 	name = "Buried Shrine"
@@ -306,18 +306,6 @@
 	description = "A crashed pirate ship. It would seem that it's crew died a while ago."
 	suffix = "lavaland_crashed_starwalker.dmm"
 
-/datum/map_template/ruin/lavaland/sin
-	cost = 10
-	allow_duplicates = FALSE
-
-/datum/map_template/ruin/lavaland/sin/sloth
-	name = "Ruin of Sloth"
-	id = "sloth"
-	description = "..."
-	suffix = "lavaland_surface_sloth.dmm"
-	// Generates nothing but atmos runtimes and salt
-	cost = 0
-
 /datum/map_template/ruin/lavaland/hierophant
 	name = "Hierophant's Arena"
 	id = "hierophant"
@@ -332,13 +320,6 @@
 	Quality memes."
 	suffix = "lavaland_surface_xeno_nest.dmm"
 	cost = 20
-
-/datum/map_template/ruin/lavaland/survivalcapsule
-	name = "Survival Capsule Ruins"
-	id = "survivalcapsule"
-	description = "What was once sanctuary to the common miner, is now their tomb."
-	suffix = "lavaland_surface_survivalpod.dmm"
-	cost = 5
 
 /datum/map_template/ruin/lavaland/pizza
 	name = "Ruined Pizza Party"
@@ -355,14 +336,6 @@
 	suffix = "lavaland_surface_hermit.dmm"
 	allow_duplicates = FALSE
 	cost = 10
-
-/datum/map_template/ruin/lavaland/miningripley
-	name = "Ripley"
-	id = "ripley"
-	description = "A heavily-damaged mining ripley, property of a very unfortunate miner. You might have to do a bit of work to fix this thing up."
-	suffix = "lavaland_surface_random_ripley.dmm"
-	allow_duplicates = FALSE
-	cost = 5
 
 /datum/map_template/ruin/lavaland/comm_outpost
 	name = "Syndicate Comm Outpost"
