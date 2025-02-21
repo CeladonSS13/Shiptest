@@ -95,7 +95,7 @@
 
 	dog_fashion = /datum/dog_fashion/head/cowboy
 
-/obj/item/clothing/head/HoS/cowboy/sec
+/obj/item/clothing/head/cowboy/sec
 	name = "deputy hat"
 	desc = "A robust stetson adorned with a deputy's badge. Its imitation leather is thick and worn."
 	icon_state = "cowboysec"
