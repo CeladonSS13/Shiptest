@@ -105,11 +105,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
 "eK" = (
-/obj/machinery/porta_turret/ship/frontiersmen/light{
-	dir = 6;
-	faction = list("playerPirates","turret");
-	id = "jupiter_turrets"
-	},
+/obj/machinery/porta_turret/ship/ramzi/heavy,
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/cargo)
 "eT" = (
@@ -136,11 +132,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
 "fO" = (
-/obj/machinery/porta_turret/ship/frontiersmen/light{
-	dir = 6;
-	faction = list("playerPirates","turret");
-	id = "jupiter_turrets"
-	},
+/obj/machinery/porta_turret/ship/ramzi,
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/cargo/port)
 "gi" = (
@@ -399,11 +391,7 @@
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/engineering/electrical)
 "mi" = (
-/obj/machinery/porta_turret/ship/frontiersmen/light{
-	faction = list("playerPirates","turret");
-	dir = 9;
-	id = "jupiter_turrets"
-	},
+/obj/machinery/porta_turret/ship/ramzi/super_heavy,
 /turf/closed/wall/mineral/titanium/survival/nodiagonal,
 /area/ship/engineering/electrical)
 "mt" = (
@@ -450,11 +438,7 @@
 /turf/open/floor/mineral/titanium/white,
 /area/ship/medical)
 "nW" = (
-/obj/machinery/porta_turret/ship/frontiersmen/light{
-	dir = 6;
-	faction = list("playerPirates","turret");
-	id = "jupiter_turrets"
-	},
+/obj/machinery/porta_turret/ship/ramzi/light,
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering/electrical)
 "og" = (
@@ -466,22 +450,11 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering/electrical)
 "os" = (
-/obj/machinery/atmospherics/pipe/simple/orange/hidden{
-	dir = 4
-	},
-/obj/machinery/porta_turret/ship/frontiersmen/light{
-	faction = list("playerPirates","turret");
-	dir = 10;
-	id = "jupiter_turrets"
-	},
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/engineering/electrical)
+/obj/machinery/porta_turret/ship/ramzi/heavy,
+/turf/closed/wall/r_wall/syndicate,
+/area/ship/crew/dorm)
 "oL" = (
-/obj/machinery/porta_turret/ship/frontiersmen/light{
-	dir = 5;
-	faction = list("playerPirates","turret");
-	id = "jupiter_turrets"
-	},
+/obj/machinery/porta_turret/ship/ramzi/heavy,
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/cargo/port)
 "oR" = (
@@ -670,6 +643,15 @@
 	name = "tactical chair"
 	},
 /obj/effect/turf_decal/borderfloorwhite,
+/obj/machinery/turretid{
+	pixel_y = 4;
+	pixel_x = -26
+	},
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_y = -8;
+	pixel_x = -22
+	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "vk" = (
@@ -813,11 +795,6 @@
 "zk" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
-	},
-/obj/machinery/porta_turret/ship/frontiersmen/light{
-	faction = list("playerPirates","turret");
-	dir = 9;
-	id = "jupiter_turrets"
 	},
 /turf/closed/wall/mineral/titanium/survival/nodiagonal,
 /area/ship/engineering/electrical)
@@ -997,7 +974,8 @@
 "Dv" = (
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/door/poddoor/shutters{
-	dir = 4
+	dir = 4;
+	id = "oldshell_pilot"
 	},
 /turf/open/floor/plating,
 /area/ship/bridge)
@@ -1274,13 +1252,9 @@
 /turf/open/floor/mineral/titanium/white,
 /area/ship/medical)
 "LM" = (
-/obj/machinery/porta_turret/ship/frontiersmen/light{
-	faction = list("playerPirates","turret");
-	dir = 10;
-	id = "jupiter_turrets"
-	},
+/obj/machinery/porta_turret/ship/ramzi/heavy,
 /turf/closed/wall/r_wall/syndicate,
-/area/ship/engineering/electrical)
+/area/ship/cargo/port)
 "Mm" = (
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/breaching{
 	pixel_y = -3
@@ -1362,11 +1336,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "NV" = (
-/obj/machinery/porta_turret/ship/frontiersmen/light{
-	faction = list("playerPirates","turret");
-	dir = 10;
-	id = "jupiter_turrets"
-	},
+/obj/machinery/porta_turret/ship/ramzi/super_heavy,
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering/electrical)
 "Ob" = (
@@ -1407,10 +1377,8 @@
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "Pa" = (
-/obj/machinery/porta_turret/ship/frontiersmen/light{
-	faction = list("playerPirates","turret");
-	dir = 9;
-	id = "jupiter_turrets"
+/obj/machinery/porta_turret/ship/ramzi/super_heavy{
+	dir = 1
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering/electrical)
@@ -1501,7 +1469,8 @@
 /obj/structure/table/reinforced,
 /obj/machinery/button/door{
 	pixel_y = -12;
-	pixel_x = -9
+	pixel_x = -9;
+	id = "oldshell_pilot"
 	},
 /obj/item/megaphone/sec{
 	name = "syndicate megaphone";
@@ -1637,14 +1606,6 @@
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering/electrical)
-"TR" = (
-/obj/machinery/porta_turret/ship/frontiersmen/light{
-	dir = 5;
-	faction = list("playerPirates","turret");
-	id = "jupiter_turrets"
-	},
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/engineering/electrical)
 "UI" = (
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -1708,11 +1669,7 @@
 /turf/template_noop,
 /area/template_noop)
 "Yd" = (
-/obj/machinery/porta_turret/ship/frontiersmen/light{
-	dir = 5;
-	faction = list("playerPirates","turret");
-	id = "jupiter_turrets"
-	},
+/obj/machinery/porta_turret/ship/ramzi,
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/cargo)
 "Yk" = (
@@ -1845,17 +1802,17 @@ Ya
 Ya
 Ya
 Ya
-Pa
+nW
 Ya
 Ya
 Ya
 zk
 mA
-os
+TA
 Ya
 Ya
 Ya
-NV
+nW
 Ya
 Ya
 Ya
@@ -1910,7 +1867,7 @@ Ya
 "}
 (6,1,1) = {"
 Ya
-Pa
+mA
 mh
 qo
 PC
@@ -1928,7 +1885,7 @@ JQ
 He
 on
 uW
-LM
+mh
 Ya
 "}
 (7,1,1) = {"
@@ -2004,7 +1961,7 @@ Ya
 Ya
 Ya
 Ya
-TR
+nW
 ZJ
 KP
 QN
@@ -2120,7 +2077,7 @@ Ya
 Ya
 Ya
 Ya
-sT
+LM
 Mm
 ie
 xh
@@ -2132,7 +2089,7 @@ Sj
 pD
 qb
 MU
-Kd
+os
 Ya
 Ya
 Ya
@@ -2212,7 +2169,7 @@ Ya
 Ya
 Ya
 Ya
-oL
+jj
 sT
 Eo
 pQ
@@ -2224,7 +2181,7 @@ On
 YZ
 Pl
 qG
-eK
+Ob
 Ya
 Ya
 Ya
