@@ -643,12 +643,6 @@
 /turf/open/floor/pod,
 /area/ship/cargo)
 "ud" = (
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
 /obj/structure/window/plasma/reinforced/spawner{
 	dir = 8
 	},
@@ -856,7 +850,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/atmospherics/components/binary/volume_pump,
 /obj/machinery/light/directional/east,
 /obj/machinery/button/door{
 	dir = 4;
@@ -864,6 +857,7 @@
 	name = "Engine shutters";
 	pixel_x = -24
 	},
+/obj/machinery/atmospherics/components/binary/pump,
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "Ad" = (
@@ -1383,7 +1377,8 @@
 /obj/docking_port/mobile{
 	launch_status = 0;
 	port_direction = 2;
-	preferred_direction = 4
+	preferred_direction = 4;
+	dir = 4
 	},
 /turf/open/floor/pod,
 /area/ship/cargo)
