@@ -30,6 +30,7 @@
 	description = "A small fishing hut floating on the ocean."
 	suffix = "beach_fishing_hut.dmm"
 	// cost =
+	ruin_tags = list(RUIN_TAG_HARD_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_HAZARDOUS)
 
 /datum/map_template/ruin/beachplanet/colony
 	id = "beach_colony"
@@ -44,6 +45,7 @@
 	description = "As you draw near the ancient wall, a sense of foreboding overcomes you. You aren't sure why, but you feel this dusty structure may contain great dangers."
 	suffix = "beach_ancient_ruin.dmm"
 	// cost =
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/beachplanet/town
 	id = "beach_town"
@@ -51,6 +53,7 @@
 	description = "A fresh town on a lovely coast, where its inhabitants are is unknown."
 	suffix = "beach_ocean_town.dmm"
 	// cost =
+	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MINOR_LOOT, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/beachplanet/scrapvillage
 	id = "beach_pirate"
@@ -58,6 +61,7 @@
 	description = "A small pirate outpost formed from the remains of a wrecked shuttle."
 	suffix = "beach_pirate_crash.dmm"
 	// cost =
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/beachplanet/treasurecove
 	id = "beach_treasure_cove"
@@ -65,6 +69,7 @@
 	description = "A abandoned colony. It seems that this colony was abandoned, for a reason or another"
 	suffix = "beach_treasure_cove.dmm"
 	// cost =
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/beachplanet/crashedengie
 	id = "beach_crashed_engineer"
@@ -72,6 +77,7 @@
 	description = "An abandoned camp built by a crashed engineer"
 	suffix = "beach_crashed_engineer.dmm"
 	// cost =
+	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_HAZARDOUS)
 
 /datum/map_template/ruin/beachplanet/floatresort
 	id = "beach_float_resort"
@@ -79,6 +85,7 @@
 	description = "A hidden paradise on the beach"
 	suffix = "beach_float_resort.dmm"
 	// cost =
+	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MINOR_LOOT, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/beachplanet/fallenstar
 	id = "crashed_star"
@@ -110,6 +117,7 @@
 	description = "An abandoned hydroponics research facility containing hostile plant fauna."
 	suffix = "icemoon_hydroponics_lab.dmm"
 	cost = 1
+	ruin_tags = list(RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_SHELTER)
 
 /datum/map_template/ruin/icemoon/abandonedvillage
 	id = "abandonedvillage"
@@ -117,6 +125,7 @@
 	description = "Who knows what lies within?"
 	suffix = "icemoon_underground_abandoned_village.dmm"
 	cost = 1
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MINOR_LOOT, RUIN_TAG_INHOSPITABLE)
 
 /datum/map_template/ruin/icemoon/brazillian_lab
 	id = "brazillian-lab"
@@ -124,6 +133,7 @@
 	description = "A conspicuous compound in the middle of the cold wasteland. What goodies are inside?"
 	suffix = "icemoon_underground_brazillianlab.dmm"
 	cost = 3
+	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_INHOSPITABLE)
 
 /datum/map_template/ruin/icemoon/crashed_holemaker
 	id = "crashed_holemaker"
@@ -131,6 +141,7 @@
 	description = "Safety records for early Nanotrasen Spaceworks vessels were, and always have been, top of their class. Absolutely no multi-billion credit projects have been painstakingly erased from history. (Citation Needed)"
 	suffix = "icemoon_crashed_holemaker.dmm"
 	cost = 1
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MINOR_LOOT, RUIN_TAG_SHELTER)
 
 /datum/map_template/ruin/icemoon/engioutpost
 	id = "engioutpost"
@@ -198,6 +209,7 @@
 	description = "A small bunker owned by the Syndicate."
 	suffix = "jungle_syndicate.dmm"
 	cost = 3
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/jungle/interceptor
 	id = "crashedcondor"
@@ -205,6 +217,7 @@
 	description = "An overgrown crashed Condor Class, a forgotten remnant of the Corporate Wars."
 	suffix = "jungle_interceptor.dmm"
 	cost = 2
+	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/jungle/paradise
 	id = "paradise"
@@ -212,6 +225,7 @@
 	description = "a crashed shuttle, and a hidden beautiful lake."
 	suffix = "jungle_paradise.dmm"
 	cost = 3
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE, RUIN_TAG_HAZARDOUS)
 
 /datum/map_template/ruin/jungle/airbase
 	id = "airbase"
@@ -219,6 +233,7 @@
 	description = "A bombed out airbase from the ICW, taken back over by nature"
 	suffix = "jungle_bombed_starport.dmm"
 	cost = 3
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_HAZARDOUS, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/jungle/medtech
 	id = "medtech-facility"
@@ -226,6 +241,7 @@
 	description = "A MedTech pharmaceutical manufacturing plant where something went terribly wrong."
 	suffix = "jungle_medtech_outbreak.dmm"
 	cost = 4
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/jungle/cavecrew
 	id = "cavecrew"
@@ -233,6 +249,7 @@
 	description = "A frontiersmen base, hidden within a cave. They don't seem friendly"
 	suffix = "jungle_cavecrew.dmm"
 	cost = 3
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_HAZARDOUS, RUIN_TAG_LIVEABLE, RUIN_TAG_MAJOR_LOOT)
 
 /datum/map_template/ruin/jungle/library
 	id = "abandoned-library"
@@ -240,6 +257,7 @@
 	description = "A forgotten library, with a few angry monkeys."
 	suffix = "jungle_abandoned_library.dmm"
 	cost = 2
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/jungle/jungle_botany_ruin
 	id = "jungle_botany-ruin"
@@ -321,6 +339,20 @@
 	cost = 5
 	allow_duplicates = FALSE
 
+/datum/map_template/ruin/jungle/roommates
+	id = "roommates"
+	name = "Roommates"
+	description = "A shack once inhabited by a clown and a mime... and they were roommates."
+	suffix = "jungle_surface_roommates.dmm"
+	cost = 1
+
+/datum/map_template/ruin/jungle/ninjashrine
+	id = "ninjashrine"
+	name = "Ninja Shrine"
+	description = "A ninja shrine."
+	suffix = "jungle_surface_ninjashrine.dmm"
+	cost = 2
+
 //							///
 //		MARK: Lavaland
 //							///
@@ -339,6 +371,7 @@
 	This one seems to simulate the wintery climate of the northern provinces, including a sauna!"
 	suffix = "lavaland_surface_biodome_winter.dmm"
 	cost = 1
+	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MINOR_LOOT, RUIN_TAG_SHELTER)
 
 /datum/map_template/ruin/lavaland/buried_shrine
 	id = "buried_shrine"
@@ -445,6 +478,15 @@
 	cost = 5
 	allow_duplicates = FALSE
 
+// /datum/map_template/ruin/lavaland/elephant_graveyard
+// 	name = "Elephant Graveyard"	// руина от офов
+// 	id = "Graveyard"
+// 	description = "An abandoned graveyard, calling to those unable to continue."
+// 	suffix = "lavaland_surface_elephant_graveyard.dmm"
+// 	allow_duplicates = FALSE
+// 	cost = 10
+// 	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MINOR_LOOT, RUIN_TAG_HAZARDOUS, RUIN_TAG_INHOSPITABLE)
+
 //							///
 //		MARK: Rockplanet
 //							///
@@ -454,6 +496,7 @@
 	description = "A factory made for HARM and AGONY."
 	suffix = "rockplanet_harmfactory.dmm"
 	// cost =
+	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
 
 /datum/map_template/ruin/rockplanet/budgetcuts
 	id = "rockplanet_budgetcuts"
@@ -461,6 +504,7 @@
 	description = "Nanotrasen's gotta lay off some personnel, and this facility hasn't been worth the effort so far"
 	suffix = "rockplanet_budgetcuts.dmm"
 	// cost =
+	ruin_tags = list(RUIN_TAG_HARD_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/rockplanet/shippingdock
 	id = "rockplanet_shippingdock"
@@ -542,6 +586,7 @@
 	name = "Corporate Mining Module"
 	description = "An old and rusty mining facility, with big ore potential."
 	// cost =
+	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER)
 
 /datum/map_template/ruin/space/bigderelict1
 	id = "bigderelict1"
@@ -550,6 +595,7 @@
 	description = "A once-bustling tradestation that handled imports and exports from nearby stations now lays eerily dormant. \
 	The last received message was a distress call from one of the on-board officers, but we had no success in making contact again."
 	// cost =
+	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER)
 
 /datum/map_template/ruin/space/onehalf
 	id = "onehalf"
@@ -557,6 +603,7 @@
 	name = "DK Excavator 453"
 	description = "Formerly a thriving planetary mining outpost, now a bit of an exploded mess. One has to wonder how it got here"
 	// cost =
+	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_INHOSPITABLE)
 
 /datum/map_template/ruin/space/power_puzzle
 	id = "power_puzzle"
@@ -565,6 +612,7 @@
 	description = "an abandoned secure storage location. there is no power left in the batteries and the former ocupants locked it pretty tight before leaving.\
 	You will have to power areas to raise the bolts on the doors. look out for secrets."
 	// cost =
+	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
 
 /datum/map_template/ruin/space/astraeus
 	id = "astraeus"
@@ -572,6 +620,7 @@
 	name = "Astraeus Ruin"
 	description = "This vessel served a lengthy period in the Nanotrasen fleet, before an accident in the munitions bay caused to to be destroyed while in active combat."
 	// cost =
+	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_INHOSPITABLE)
 
 /datum/map_template/ruin/space/singularitylab
 	id = "singularitylab"
@@ -579,6 +628,7 @@
 	name = "Singularity Lab"
 	description = "An overgrown facility, home to an unstarted singularity and many plants"
 	// cost =
+	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER)
 
 /datum/map_template/ruin/space/spacemall
 	id = "spacemall"
@@ -586,6 +636,7 @@
 	name = "Space Mall"
 	description = "An old shopping centre, owned by a former member of Nanotrasen's board of directors.."
 	// cost =
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER)
 
 /datum/map_template/ruin/space/excavator_DK
 	id = "Excavator-DK"
@@ -697,6 +748,7 @@
 	description = "A abandoned Nanotrasen weapons facility, presumably the place where the X-01 was manufactured."
 	suffix = "wasteplanet_lab.dmm"
 	// cost =
+	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/wasteplanet/pandora
 	id = "pandora_arena"
@@ -704,6 +756,7 @@
 	name = "Pandora Arena"
 	description = "Some... thing has settled here."
 	// cost =
+	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_MEGAFAUNA, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/wasteplanet/radiation
 	id = "wasteplanet_radiation"
@@ -711,6 +764,7 @@
 	description = "A dumping ground for nuclear waste."
 	suffix = "wasteplanet_unhonorable.dmm"
 	// cost =
+	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
 
 /datum/map_template/ruin/wasteplanet/abandoned_mechbay
 	id = "abandoned_mechbay"
@@ -718,6 +772,7 @@
 	description = "A military base formerly used for staging 4 mechs and crew. God knows what's in it now."
 	suffix = "wasteplanet_abandoned_mechbay.dmm"
 	// cost =
+	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
 
 /datum/map_template/ruin/wasteplanet/fortress
 	id = "solitude"
@@ -777,6 +832,7 @@
 	description = "A once prosperous autoinjector manufacturing plant."
 	suffix = "whitesands_surface_medipen_plant.dmm"
 	// cost =
+	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER)
 
 /datum/map_template/ruin/whitesands/pubbyslopcrash
 	id = "ws-pubbyslopcrash"
@@ -784,6 +840,7 @@
 	description = "A failed attempt of the Nanotrasen nutrional replacement program"
 	suffix = "whitesands_surface_pubbyslopcrash.dmm"
 	// cost =
+	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER)
 
 //////////OUTSIDE SETTLEMENTS/RUINS//////////
 /datum/map_template/ruin/whitesands/survivors/saloon
@@ -792,6 +849,7 @@
 	description = "A western style saloon, most popular spot for the hermits to gather planetside"
 	suffix = "whitesands_surface_camp_saloon.dmm"
 	// cost =
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_INHOSPITABLE)
 
 /datum/map_template/ruin/whitesands/survivors/combination //combined extra large ruin of several other whitesands survivor ruins
 	id = "ws-combination"
@@ -800,6 +858,7 @@
 	suffix = "whitesands_surface_camp_combination.dmm"
 	// cost =
 	allow_duplicates = FALSE
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_INHOSPITABLE, RUIN_TAG_HAZARDOUS)
 
 /datum/map_template/ruin/whitesands/starfury_crash
 	id = "starfurycrash"
