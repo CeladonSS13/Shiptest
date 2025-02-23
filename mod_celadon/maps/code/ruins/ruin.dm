@@ -5,6 +5,7 @@
 // 	description = "Описание"
 // 	suffix = "Название файла"
 //  cost = "вес руинки"
+//  allow_duplicates = FALSE
 //  ruin_tags = list("ДЕФАЙНЫ_ТЭГОВ")
 
 // Где: вес может быть в диапазоне от 1 до 5. По умолчанию все руины = 1
@@ -20,6 +21,7 @@
 // Список всех тэгов code/__DEFINES/ruins.dm
 // Пример:
 // ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_HAZARDOUS)
+// allow_duplicates = FALSE - по умолчанию TRUE. FALSE делает руинку 1 раз спавнящуюся в раунд
 
 //							///
 //		MARK: Beach
