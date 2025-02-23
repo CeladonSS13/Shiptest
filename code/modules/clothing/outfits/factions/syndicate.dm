@@ -1222,3 +1222,47 @@
 	satchel  = /obj/item/storage/backpack/satchel
 	duffelbag = /obj/item/storage/backpack/duffelbag
 	courierbag = /obj/item/storage/backpack/messenger
+
+//Ramzi_Clique
+/datum/outfit/job/syndicate/ramziinfantry
+	name = "Ramzi-Clique Innitiate"
+
+	uniform = /obj/item/clothing/under/camo
+	r_pocket = /obj/item/melee/knife/survival
+	belt = /obj/item/storage/belt/military
+	back = /obj/item/storage/backpack
+	id = /obj/item/card/id/syndicate_command/crew_id
+
+	ears = /obj/item/radio/headset/alt
+	gloves = /obj/item/clothing/gloves/color/black
+	shoes = /obj/item/clothing/shoes/combat
+	box = /obj/item/storage/box/survival/security
+
+/datum/outfit/job/syndicate/ramzileader
+	name = "Ramzi-Clique Cell Leader"
+
+	uniform = /obj/item/clothing/under/camo
+	r_pocket = /obj/item/melee/knife/survival
+	belt = /obj/item/storage/belt/military
+	back = /obj/item/storage/backpack
+	id = /obj/item/card/id/syndicate_command/crew_id
+
+	shoes = /obj/item/clothing/shoes/combat
+	gloves = /obj/item/clothing/gloves/color/black
+	shoes = /obj/item/clothing/shoes/combat
+	box = /obj/item/storage/box/survival/security
+	mask = /obj/item/clothing/mask/gas/syndicate/voicechanger
+
+/datum/outfit/job/syndicate/ramziengi
+	name = "Ramzi-Clique Combat Engineer"
+
+	uniform = /obj/item/clothing/under/camo
+	r_pocket = /obj/item/melee/knife/survival
+	belt = /obj/item/storage/belt/utility/full/engi
+	back = /obj/item/storage/backpack
+	id = /obj/item/card/id/syndicate_command/crew_id/engi
+
+	ears = /obj/item/radio/headset/alt
+	gloves = /obj/item/clothing/gloves/color/black
+	shoes = /obj/item/clothing/shoes/combat
+	box = /obj/item/storage/box/survival/security
