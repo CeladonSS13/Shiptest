@@ -1,0 +1,37 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "Old Shell Ramzi Renegade Vessel",
+	"map_short_name": "Ember",
+	"description": "Невероятно старое, неуютное, побитое судно синдиката выпускавшееся еще до ИнтерКорпоративных Войн. Его идентификатор как и остальное ПО судна были стерты предателями шайки Рамзи, теперь это не более чем оболочка старого себя. С внешней стороны, прямо над стеклами пилотской рубки выплавлены слова: Я СЛЫШУ ШЕПОТ. Я НЕ ПРЕДАТЕЛЬ. Я БОЮСЬ. ТЫ НЕ ДРУГ. Я ВИДЕЛ СЕБЯ В ОТРАЖЕНИИ ГОРЯЩЕЙ ПЛАЗМЫ. Я УБЬЮ ТЕБЯ. Я ИДУ ЗА ТОБОЙ",
+	"map_path": "_maps/_mod_celadon/shuttles/pirate/pirate_ramzioldshell.dmm",
+	"enabled": false,
+	"limit": 1,
+	"space_spawn": true,
+	"prefix": "RSV",
+	"faction": "/datum/faction/pirate",
+	"tags": ["РП Фокус", "Боевой", "Инженерный"],
+"namelists": [
+		"PIRATES",
+		"BRITISH_NAVY"
+	],
+	"job_slots": {
+		"Squad Leader": {
+			"outfit": "/datum/outfit/job/syndicate/captain/gorlex",
+			"officer": true,
+			"slots": 1
+
+		},
+		"Medic": {
+			"outfit": "/datum/outfit/job/syndicate/doctor/gorlex",
+			"slots": 1
+		},
+		"Mechanic": {
+			"outfit": "/datum/outfit/job/syndicate/engineer/gorlex",
+			"slots": 1
+		},
+		"Trooper": {
+			"outfit": "/datum/outfit/job/syndicate/security/gorlex",
+			"slots": 3
+		}
+		}
+	}
