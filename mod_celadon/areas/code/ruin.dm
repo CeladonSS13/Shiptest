@@ -93,3 +93,15 @@
 /area/ruin/wasteplanet/secure_claw/dorm
 	name = "Recreation area"
 	icon_state = "yellow"
+
+/area/ruin/rockplanet/lasttemplar/dorm
+	name = "Barrack"
+	icon_state = "yellow"
+
+/area/ruin/rockplanet/lasttemplar/office
+	name = "Office"
+	icon_state = "security"
+
+/area/ruin/rockplanet/lasttemplar/medbay
+	name = "Medbay"
+	icon_state = "medbay"

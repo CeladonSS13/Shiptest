@@ -1,0 +1,4433 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/obj/structure/chair/sofa/red/corpo/right/directional/east,
+/obj/effect/turf_decal/spline/fancy/wood{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/human/syndicate/ranged/shotgun/space{
+	health = 175;
+	maxHealth = 175
+	},
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/office)
+"ad" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 10
+	},
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/machinery/power/port_gen/pacman/super,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"al" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 8
+	},
+/mob/living/simple_animal/hostile/human/syndicate/ranged/shotgun/space/stormtrooper{
+	health = 200;
+	maxHealth = 200
+	},
+/obj/structure/sign/poster/contraband/stechkin{
+	pixel_x = -31
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"at" = (
+/obj/machinery/porta_turret/syndicate/pod{
+	name = "sentry gun";
+	dir = 10;
+	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging.";
+	max_integrity = 125;
+	obj_integrity = 125;
+	lethal_projectile_sound = 'sound/weapons/gun/rifle/skm.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg';
+	lethal_projectile = /obj/projectile/bullet/a65clip;
+	stun_projectile = /obj/projectile/bullet/a65clip;
+	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
+	id = "LastTemplar"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"av" = (
+/obj/effect/turf_decal/corner/transparent/bar/three_quarters,
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ruin/rockplanet/lasttemplar/office)
+"aF" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/structure/window/plasma/reinforced/spawner,
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"aH" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/obj/structure/table/optable,
+/obj/machinery/iv_drip{
+	pixel_x = 7;
+	pixel_y = 21;
+	anchored = 1
+	},
+/obj/effect/mob_spawn/human/corpse/syndicateramzi,
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"aM" = (
+/obj/effect/turf_decal/borderfloorblack,
+/obj/machinery/door/poddoor{
+	dir = 1;
+	id = "Last_Templar";
+	name = "Blast Door";
+	max_integrity = 1e+007
+	},
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"bd" = (
+/obj/effect/turf_decal/corner/transparent/bar/three_quarters{
+	dir = 8
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"bj" = (
+/obj/effect/turf_decal/corner/transparent/bar,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"bn" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"bo" = (
+/turf/template_noop,
+/area/template_noop)
+"bC" = (
+/obj/structure/platform/industrial/corner{
+	dir = 1
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"bK" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 9
+	},
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"bM" = (
+/turf/closed/indestructible/reinforced{
+	max_integrity = S
+	},
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"bW" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 8
+	},
+/obj/item/ammo_casing/shotgun/buckshot,
+/obj/item/ammo_casing/shotgun/buckshot{
+	pixel_x = 7;
+	pixel_y = 9
+	},
+/obj/item/ammo_casing/shotgun/buckshot{
+	pixel_x = -8;
+	pixel_y = 9
+	},
+/obj/item/ammo_casing/shotgun/incendiary{
+	pixel_y = 11
+	},
+/obj/item/ammo_casing/shotgun/incendiary{
+	pixel_y = -1;
+	pixel_x = -10
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"bX" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 8
+	},
+/mob/living/simple_animal/hostile/human/syndicate/ranged/shotgun/space/stormtrooper{
+	health = 200;
+	maxHealth = 200
+	},
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"cz" = (
+/obj/machinery/door/airlock/grunge{
+	dir = 4;
+	name = "Laboratory"
+	},
+/turf/open/floor/suns/dark/plain,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"cA" = (
+/obj/structure/platform/industrial{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"cN" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"dB" = (
+/obj/effect/turf_decal/borderfloorblack,
+/obj/machinery/light/dim/directional/south,
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"dP" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"ee" = (
+/obj/structure/flora/rock/pile/rockplanet,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"ew" = (
+/obj/effect/turf_decal/corner/transparent/bar/half{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"ex" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"ey" = (
+/obj/structure/platform/industrial,
+/turf/open/floor/plating/asteroid/rockplanet/wet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"eH" = (
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"fy" = (
+/turf/closed/indestructible/reinforced,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"fG" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/effect/turf_decal/borderfloorblack/cee,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"fM" = (
+/obj/effect/turf_decal/corner/transparent/bar/half{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"gb" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/effect/turf_decal/borderfloorblack/cee,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"gc" = (
+/obj/effect/turf_decal/spline/fancy/wood{
+	dir = 5
+	},
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/office)
+"gd" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 10
+	},
+/obj/structure/closet/crate/trashcart,
+/obj/item/mop,
+/obj/item/reagent_containers/glass/bucket,
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"gf" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 9
+	},
+/obj/effect/turf_decal/syndicateemblem/bottom,
+/mob/living/simple_animal/hostile/human/syndicate/ranged/smg/space/stormtrooper{
+	health = 200;
+	maxHealth = 200
+	},
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"gj" = (
+/obj/effect/turf_decal/borderfloorblack/corner{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"gK" = (
+/obj/structure/chair/comfy/beige/old/directional/south,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"gQ" = (
+/obj/effect/turf_decal/corner/transparent/bar/three_quarters{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"gR" = (
+/obj/structure/flora/tree/cactus,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"gZ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/gibs/down,
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"he" = (
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"hh" = (
+/obj/effect/turf_decal/borderfloorblack/corner{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"hl" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 10
+	},
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"hH" = (
+/obj/effect/turf_decal/borderfloorblack,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"hQ" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 6
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"hR" = (
+/turf/closed/wall/r_wall/rust,
+/area/ruin/rockplanet/lasttemplar/office)
+"ie" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/turf/open/floor/plasteel/stairs/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"ih" = (
+/obj/effect/turf_decal/sand/plating,
+/turf/open/floor/plating/asteroid/rockplanet/wet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"iR" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/effect/turf_decal/borderfloorblack/cee,
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"iS" = (
+/obj/structure/closet/secure_closet/freezer/kitchen,
+/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/riol,
+/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/riol,
+/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/riol,
+/obj/item/organ/tail/riol,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"iT" = (
+/obj/effect/turf_decal/borderfloorblack,
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/item/defibrillator/loaded,
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"jc" = (
+/obj/effect/turf_decal/spline/fancy/wood{
+	dir = 10
+	},
+/obj/machinery/light/dim/directional/south,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/office)
+"ji" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/suns/grid,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"jA" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 5
+	},
+/obj/structure/sign/poster/contraband/syndiemoth{
+	pixel_y = 32
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"kk" = (
+/obj/item/mine/directional/claymore{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"kp" = (
+/obj/item/storage/ration/beef_goulash,
+/obj/item/storage/ration/beef_strips,
+/obj/structure/table/wood,
+/obj/item/storage/ration/beef_strips,
+/obj/machinery/light/directional/north,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"ku" = (
+/obj/effect/turf_decal/borderfloorblack/corner{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/trash/sosjerky,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"kC" = (
+/obj/structure/fence{
+	dir = 4
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"kJ" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 8
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"kR" = (
+/turf/open/chasm,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"kZ" = (
+/obj/effect/turf_decal/corner/transparent/bar/half{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"lu" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"lP" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 10
+	},
+/obj/effect/gibspawner/human,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"lR" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/item/kirbyplants{
+	pixel_x = -1;
+	pixel_y = 21
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"mk" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/effect/turf_decal/borderfloorblack/cee,
+/obj/effect/turf_decal/borderfloorblack/cee,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"mp" = (
+/mob/living/simple_animal/hostile/human/syndicate/ranged/shotgun/space{
+	health = 175;
+	maxHealth = 175
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"mQ" = (
+/obj/effect/turf_decal/spline/fancy/wood{
+	dir = 8
+	},
+/obj/machinery/turretid/ship{
+	id = "Bettle_grid";
+	pixel_x = -3;
+	pixel_y = 24
+	},
+/obj/machinery/turretid/ship{
+	id = "Bettle_grid";
+	pixel_x = -3;
+	pixel_y = 24
+	},
+/obj/machinery/turretid{
+	pixel_x = -25;
+	id = "LastTemplar";
+	req_access = null
+	},
+/turf/open/floor/suns/diagonal{
+	color = "#792f27"
+	},
+/area/ruin/rockplanet/lasttemplar/office)
+"na" = (
+/obj/effect/turf_decal/corner/transparent/bar/three_quarters,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"nd" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/effect/turf_decal/borderfloorblack/cee,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"ne" = (
+/obj/effect/turf_decal/borderfloorblack,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"nA" = (
+/obj/structure/fence,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"nC" = (
+/turf/closed/wall/r_wall/rust,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"nY" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/effect/turf_decal/borderfloorblack/cee,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"oj" = (
+/obj/effect/turf_decal/corner/transparent/bar{
+	dir = 4
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"ok" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 5
+	},
+/obj/effect/gibspawner/human,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"ol" = (
+/obj/structure/safe{
+	pixel_y = -1;
+	pixel_x = 6
+	},
+/obj/effect/turf_decal/spline/fancy/wood{
+	dir = 6
+	},
+/obj/item/spacecash/bundle/c1000,
+/obj/item/spacecash/bundle/c1000,
+/obj/item/spacecash/bundle/c1000,
+/obj/item/spacecash/bundle/c200,
+/obj/item/storage/belt/weebstick,
+/obj/item/documents/syndicate,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/office)
+"os" = (
+/obj/effect/spawner/bunk_bed{
+	dir = 8
+	},
+/obj/structure/curtain/bounty,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"oR" = (
+/obj/machinery/microwave,
+/obj/structure/table/wood,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"oT" = (
+/obj/effect/turf_decal/corner/transparent/bar/half{
+	dir = 1
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"oU" = (
+/obj/effect/turf_decal/borderfloorblack/corner,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 5
+	},
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"oZ" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/human/syndicate/melee/sword/space{
+	health = 250;
+	maxHealth = 250
+	},
+/obj/machinery/light/directional/east,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"pj" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 5
+	},
+/mob/living/simple_animal/hostile/cult_demon{
+	aggro_vision_range = 0
+	},
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"po" = (
+/obj/structure/chair/office/light{
+	dir = 1
+	},
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 8
+	},
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"pp" = (
+/obj/effect/turf_decal/borderfloorblack,
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"ps" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"pU" = (
+/obj/structure/platform/industrial{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/rockplanet/cracked,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"pY" = (
+/obj/effect/turf_decal/borderfloorblack/corner{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"qd" = (
+/obj/effect/turf_decal/industrial/warning{
+	layer = 2.456;
+	dir = 1
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"qq" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"qw" = (
+/turf/open/floor/plating/asteroid/rockplanet/wet/cracked/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"qN" = (
+/obj/structure/table/reinforced,
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"qX" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"rc" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 5
+	},
+/obj/machinery/light/floor{
+	pixel_y = 1;
+	pixel_x = 21
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"rn" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"ro" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"rA" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/effect/turf_decal/borderfloorblack/cee,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"rM" = (
+/obj/effect/turf_decal/borderfloorblack,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/apc/auto_name,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"sc" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/rockplanet/cracked,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"si" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/dim/directional/east,
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"sn" = (
+/obj/structure/platform/industrial/corner,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"ss" = (
+/obj/machinery/door/airlock/grunge{
+	dir = 4;
+	name = "Medbay"
+	},
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"sw" = (
+/obj/structure/chair/comfy/beige/old/directional/west{
+	dir = 4
+	},
+/obj/machinery/light/directional/south,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"sy" = (
+/obj/structure/platform/industrial/corner{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/rockplanet/cracked,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"sW" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"tc" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/window/plasma/reinforced/spawner/west,
+/obj/structure/window/plasma/reinforced/spawner,
+/obj/effect/decal/cleanable/blood/gibs/down,
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"th" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/effect/turf_decal/borderfloorblack/cee,
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"tp" = (
+/obj/effect/turf_decal/syndicateemblem/bottom,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"tu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/sofa/olive/corpo/left/directional/north,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"tW" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 5
+	},
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"tY" = (
+/obj/item/toy/plush/narplush,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"uk" = (
+/obj/structure/deployable_barricade/sandbags{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"uo" = (
+/obj/structure/railing/wood{
+	dir = 6;
+	color = "#792f27"
+	},
+/obj/structure/flora/rock/rockplanet,
+/turf/open/floor/plating/asteroid/rockplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15"
+	},
+/area/ruin/rockplanet/lasttemplar/medbay)
+"ut" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"uI" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/modular_computer/laptop,
+/obj/structure/table/wood/reinforced,
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"uT" = (
+/obj/structure/platform/industrial,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"vo" = (
+/obj/structure/flora/tree/cactus,
+/turf/open/floor/plating/asteroid/rockplanet/cracked,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"vp" = (
+/turf/closed/wall/r_wall/rust,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"vx" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/item/trash/candy,
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"vB" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 10
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"vC" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/rockplanet/wet/cracked/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"vM" = (
+/obj/machinery/door/airlock/grunge{
+	dir = 1;
+	name = "Toilet"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"vP" = (
+/obj/effect/turf_decal/corner/transparent/bar{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"vQ" = (
+/obj/machinery/porta_turret/syndicate/pod{
+	name = "sentry gun";
+	dir = 6;
+	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging.";
+	max_integrity = 125;
+	obj_integrity = 125;
+	lethal_projectile_sound = 'sound/weapons/gun/rifle/skm.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg';
+	lethal_projectile = /obj/projectile/bullet/a65clip;
+	stun_projectile = /obj/projectile/bullet/a65clip;
+	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
+	id = "LastTemplar"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"vR" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 9
+	},
+/mob/living/simple_animal/hostile/human/syndicate/ranged/shotgun/space{
+	health = 175;
+	maxHealth = 175
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"wc" = (
+/obj/machinery/door/poddoor{
+	dir = 1;
+	id = "Last_Templar";
+	name = "Blast Door";
+	max_integrity = 1e+007
+	},
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"wh" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4;
+	layer = 2.456
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"wo" = (
+/obj/machinery/door/airlock/grunge{
+	dir = 4;
+	name = "Office"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"wt" = (
+/obj/machinery/porta_turret/syndicate/pod{
+	name = "sentry gun";
+	dir = 4;
+	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging.";
+	max_integrity = 75;
+	obj_integrity = 75;
+	lethal_projectile_sound = 'sound/weapons/gun/rifle/skm.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg';
+	lethal_projectile = /obj/projectile/bullet/a65clip;
+	stun_projectile = /obj/projectile/bullet/a65clip;
+	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
+	id = "LastTemplar"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"wC" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 8
+	},
+/obj/structure/crate_shelf,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/suns/grid,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"wD" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"wE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/apc/auto_name/directional/east,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"wY" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 5
+	},
+/obj/structure/crate_shelf,
+/obj/structure/closet/crate/engineering,
+/obj/item/stack/sheet/plasteel/twenty,
+/obj/item/stack/sheet/plasteel/twenty,
+/obj/item/stack/sheet/plasteel/twenty,
+/turf/open/floor/suns/grid,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"xk" = (
+/obj/effect/turf_decal/spline/fancy/wood{
+	dir = 10
+	},
+/turf/open/floor/suns/diagonal{
+	color = "#792f27"
+	},
+/area/ruin/rockplanet/lasttemplar/office)
+"xr" = (
+/obj/structure/chair/sofa/red/corpo/left/directional/west,
+/obj/effect/turf_decal/spline/fancy/wood{
+	dir = 6
+	},
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/office)
+"xt" = (
+/obj/effect/turf_decal/corner/transparent/bar/half,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"xv" = (
+/obj/machinery/porta_turret/syndicate/pod{
+	name = "sentry gun";
+	dir = 8;
+	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging.";
+	max_integrity = 250;
+	obj_integrity = 250;
+	lethal_projectile_sound = 'sound/weapons/gun/rifle/skm.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg';
+	lethal_projectile = /obj/projectile/bullet/a65clip;
+	stun_projectile = /obj/projectile/bullet/a65clip;
+	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
+	id = "LastTemplar"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"xw" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 6
+	},
+/obj/machinery/light/floor{
+	pixel_y = -1;
+	pixel_x = 21
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"xE" = (
+/obj/structure/table/wood/fancy/red_gold,
+/obj/effect/turf_decal/spline/fancy/wood{
+	dir = 5
+	},
+/obj/structure/flora/bigplant{
+	pixel_y = 20;
+	pixel_x = -15
+	},
+/turf/open/floor/suns/diagonal{
+	color = "#792f27"
+	},
+/area/ruin/rockplanet/lasttemplar/office)
+"xH" = (
+/obj/effect/turf_decal/corner/transparent/bar/half{
+	dir = 8
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"xM" = (
+/obj/structure/platform/industrial/corner{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"yg" = (
+/obj/effect/turf_decal/borderfloorblack,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/apc/auto_name/directional/south,
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"yi" = (
+/obj/effect/turf_decal/borderfloorblack,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"yo" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 6
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"yt" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4;
+	layer = 2.456
+	},
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"yx" = (
+/obj/effect/turf_decal/borderfloorblack/corner{
+	dir = 8
+	},
+/turf/open/floor/suns/grid,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"yC" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 6
+	},
+/obj/item/trash/raisins,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/suns/grid,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"yI" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"yJ" = (
+/obj/structure/platform/industrial{
+	dir = 5
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"yK" = (
+/obj/effect/turf_decal/corner/transparent/bar/half,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"yP" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"yR" = (
+/obj/effect/turf_decal/borderfloorblack,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"yU" = (
+/obj/effect/turf_decal/spline/fancy/wood{
+	dir = 6
+	},
+/turf/open/floor/suns/diagonal{
+	color = "#792f27"
+	},
+/area/ruin/rockplanet/lasttemplar/office)
+"yV" = (
+/obj/structure/table/wood,
+/obj/item/bong/lungbuster,
+/obj/item/reagent_containers/food/snacks/grown/cannabis,
+/obj/item/reagent_containers/food/snacks/grown/cannabis,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"zk" = (
+/mob/living/simple_animal/hostile/human/syndicate/ranged/smg/space/stormtrooper{
+	health = 200S;
+	maxHealth = 200
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"zE" = (
+/obj/structure/platform/industrial{
+	dir = 10
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"zK" = (
+/obj/effect/turf_decal/borderfloorblack/corner{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"zR" = (
+/obj/effect/turf_decal/industrial/warning,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Ai" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 10
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"Ao" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/structure/table,
+/obj/item/storage/toolbox/syndicate{
+	pixel_x = -3;
+	pixel_y = 12
+	},
+/obj/item/storage/toolbox/syndicate{
+	pixel_x = -3;
+	pixel_y = 18
+	},
+/obj/item/stack/cable_coil/yellow,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Aw" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/effect/turf_decal/borderfloorblack/cee,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Ay" = (
+/obj/item/toy/plush/plushvar,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"AR" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/turf/open/floor/suns/grid,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"AU" = (
+/obj/structure/table/glass,
+/obj/item/reagent_containers/food/snacks/cookie,
+/obj/item/reagent_containers/food/drinks/coffee{
+	pixel_y = 16;
+	pixel_x = 12
+	},
+/obj/effect/turf_decal/spline/fancy/wood/corner,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/office)
+"Bg" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 6
+	},
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Bk" = (
+/obj/structure/table/glass,
+/obj/item/reagent_containers/food/snacks/cherrycupcake{
+	pixel_y = 9
+	},
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/office)
+"Bo" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 8
+	},
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Bt" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/human/syndicate/melee/sword/space{
+	health = 250;
+	maxHealth = 175
+	},
+/obj/structure/sign/poster/contraband/cardinal_fore_aft{
+	pixel_x = 30
+	},
+/turf/open/floor/suns/grid,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"BC" = (
+/obj/item/target/alien,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 5
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"BF" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/structure/table,
+/obj/item/toy/plush/celadon/hampter/syndi,
+/obj/item/storage/barricade{
+	pixel_y = 15
+	},
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"BJ" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 9
+	},
+/obj/structure/crate_shelf,
+/obj/structure/closet/crate/rations,
+/turf/open/floor/suns/grid,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"BM" = (
+/obj/effect/turf_decal/borderfloorblack,
+/obj/machinery/light/dim/directional/south,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"BQ" = (
+/obj/structure/deployable_barricade/sandbags{
+	pixel_y = -9
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Cc" = (
+/obj/structure/platform/industrial/corner{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Cv" = (
+/obj/machinery/light/dim/directional/west,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"CB" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 8
+	},
+/obj/structure/closet/crate{
+	opened = 1
+	},
+/obj/item/melee/sword/mass,
+/obj/item/melee/sword/mass,
+/obj/item/kinetic_crusher/syndie_crusher,
+/turf/open/floor/suns/grid,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"CU" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/obj/item/shard{
+	pixel_x = 5
+	},
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/suns/grid,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"Df" = (
+/obj/structure/flora/rock/pile/rockplanet,
+/turf/open/floor/plating/asteroid/rockplanet/cracked,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Dk" = (
+/obj/structure/platform/industrial{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Dn" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/obj/item/melee/axe/sledgehammer,
+/obj/item/ammo_box/magazine/m9mm_rattlesnake,
+/obj/item/ammo_box/magazine/m9mm_rattlesnake,
+/obj/item/ammo_box/magazine/m9mm_rattlesnake,
+/obj/item/ammo_box/magazine/m9mm_rattlesnake,
+/obj/structure/closet/wall/red/directional/north{
+	dir = 4;
+	pixel_y = 0;
+	pixel_x = 32
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"Do" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 5
+	},
+/obj/effect/turf_decal/syndicateemblem/bottom,
+/mob/living/simple_animal/hostile/human/syndicate/ranged/smg/space/stormtrooper{
+	health = 200;
+	maxHealth = 200
+	},
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"DJ" = (
+/obj/effect/turf_decal/spline/fancy/wood{
+	dir = 8
+	},
+/obj/machinery/button/door{
+	dir = 4;
+	id = "Last_Templar";
+	name = "Lockdown Gate";
+	pixel_x = -21;
+	pixel_y = 7;
+	idle_power_usage = 0
+	},
+/obj/structure/chair/comfy/red/old/alt/directional/east,
+/mob/living/simple_animal/hostile/human/syndicate/melee/sword/space/stormtrooper{
+	health = 500;
+	melee_damage_lower = 50;
+	melee_damage_upper = 50;
+	movespeed_modification = 2;
+	maxHealth = 500
+	},
+/turf/open/floor/suns/diagonal{
+	color = "#792f27"
+	},
+/area/ruin/rockplanet/lasttemplar/office)
+"DP" = (
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"DQ" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 6
+	},
+/obj/effect/gibspawner/human/bodypartless,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Ew" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Ey" = (
+/obj/machinery/porta_turret/syndicate/pod{
+	name = "sentry gun";
+	dir = 9;
+	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging.";
+	max_integrity = 125;
+	obj_integrity = 125;
+	lethal_projectile_sound = 'sound/weapons/gun/rifle/skm.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg';
+	lethal_projectile = /obj/projectile/bullet/a65clip;
+	stun_projectile = /obj/projectile/bullet/a65clip;
+	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
+	id = "LastTemplar"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Ez" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/obj/structure/chair/office/light{
+	dir = 8
+	},
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"EL" = (
+/obj/structure/deployable_barricade/sandbags{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"EN" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/effect/turf_decal/borderfloorblack/cee,
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"ET" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 9
+	},
+/obj/effect/temp_visual/cult/sparks,
+/mob/living/simple_animal/hostile/cult_demon,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Fa" = (
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/plating/asteroid/rockplanet/wet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Fu" = (
+/obj/item/trash/energybar,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/suns/grid,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"FF" = (
+/obj/effect/turf_decal/borderfloorblack/corner{
+	dir = 8
+	},
+/obj/effect/temp_visual/cult/sparks,
+/mob/living/simple_animal/hostile/cult_demon,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"FW" = (
+/obj/structure/flora/bigplant,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"FX" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"FZ" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"GB" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/garbage,
+/turf/open/floor/suns/grid,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"GR" = (
+/obj/effect/turf_decal/corner/transparent/bar/three_quarters{
+	dir = 1
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"GT" = (
+/turf/closed/indestructible/reinforced/rust,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"GW" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"Hs" = (
+/obj/effect/turf_decal/borderfloorblack,
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"Ht" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/effect/turf_decal/borderfloorblack/cee,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"HF" = (
+/obj/effect/turf_decal/corner/transparent/bar/half{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"HG" = (
+/obj/structure/deployable_barricade/sandbags{
+	dir = 4;
+	pixel_x = 3
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"HT" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"HY" = (
+/obj/structure/barricade/sandbags,
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Ib" = (
+/obj/structure/table/wood/fancy/red_gold,
+/obj/effect/turf_decal/spline/fancy/wood{
+	dir = 4
+	},
+/turf/open/floor/suns/diagonal{
+	color = "#792f27"
+	},
+/area/ruin/rockplanet/lasttemplar/office)
+"Il" = (
+/turf/template_noop,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"It" = (
+/obj/structure/deployable_barricade/sandbags{
+	dir = 8;
+	pixel_x = -4
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Ix" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4;
+	layer = 2.456
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Iy" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"IA" = (
+/obj/item/food/cake/clown_cake,
+/obj/structure/table/wood,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"IK" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/effect/turf_decal/borderfloorblack/cee,
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"IL" = (
+/obj/effect/turf_decal/borderfloorblack/corner,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"IP" = (
+/obj/effect/turf_decal/corner/transparent/bar/half{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"IQ" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/obj/effect/temp_visual/cult/sparks,
+/mob/living/simple_animal/hostile/cult_demon,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"IU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"IZ" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/blood/AMinus{
+	pixel_y = -2
+	},
+/obj/item/reagent_containers/blood/APlus{
+	pixel_x = 4;
+	pixel_y = 15
+	},
+/obj/item/reagent_containers/blood/BMinus{
+	pixel_y = 4;
+	pixel_x = -11
+	},
+/obj/item/reagent_containers/blood/BPlus{
+	pixel_x = 9
+	},
+/obj/item/reagent_containers/blood/OPlus{
+	pixel_x = -7;
+	pixel_y = 9
+	},
+/obj/item/reagent_containers/blood/OMinus{
+	pixel_x = 6;
+	pixel_y = 17
+	},
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 9
+	},
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"Jb" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 9
+	},
+/obj/structure/guncloset{
+	anchored = 1;
+	can_be_unanchored = 1;
+	open = 0;
+	req_access_txt = "1";
+	pixel_x = -6;
+	pixel_y = 17
+	},
+/obj/machinery/suit_storage_unit/inherit{
+	pixel_x = 14;
+	pixel_y = 16
+	},
+/obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
+/obj/item/gun/ballistic/automatic/pistol/rattlesnake,
+/obj/item/gun/ballistic/automatic/pistol/rattlesnake,
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"Jc" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ruin/rockplanet/lasttemplar/office)
+"Jh" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 6
+	},
+/obj/item/kirbyplants,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"Jr" = (
+/obj/structure/deployable_barricade/sandbags{
+	dir = 1;
+	pixel_y = 5
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Js" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"Jw" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 6
+	},
+/obj/structure/table/reinforced,
+/obj/item/storage/firstaid/medical{
+	pixel_y = 7;
+	pixel_x = 5
+	},
+/obj/item/clothing/neck/stethoscope,
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"Jy" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 10
+	},
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"JR" = (
+/obj/effect/turf_decal/industrial/warning,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"JW" = (
+/obj/structure/platform/industrial{
+	dir = 6
+	},
+/obj/structure/deployable_barricade/sandbags,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Ka" = (
+/turf/open/floor/plating/asteroid/rockplanet/cracked,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Ke" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"Kn" = (
+/obj/effect/turf_decal/borderfloorblack,
+/obj/item/trash/candy,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"KA" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/effect/turf_decal/borderfloorblack/cee,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"KB" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 9
+	},
+/obj/machinery/light/floor{
+	pixel_y = 1;
+	pixel_x = -21
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"KE" = (
+/obj/item/trash/semki,
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"KO" = (
+/obj/item/trash/sosjerky,
+/turf/closed/mineral/random/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"KR" = (
+/obj/structure/table/wood/fancy/red_gold,
+/obj/effect/turf_decal/spline/fancy/wood{
+	dir = 4
+	},
+/obj/item/flashlight/lamp/green{
+	pixel_y = 15;
+	pixel_x = 6
+	},
+/turf/open/floor/suns/diagonal{
+	color = "#792f27"
+	},
+/area/ruin/rockplanet/lasttemplar/office)
+"KS" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/effect/turf_decal/borderfloorblack/cee,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Lw" = (
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"LC" = (
+/obj/structure/table/glass,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 10
+	},
+/obj/machinery/light/dim/directional/south,
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"LO" = (
+/obj/machinery/light/floor,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Mu" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 5
+	},
+/obj/machinery/computer/operating{
+	dir = 8
+	},
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"Mx" = (
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/plating/asteroid/rockplanet/wet/cracked/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"MH" = (
+/turf/open/floor/plating/asteroid/rockplanet/wet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"MQ" = (
+/obj/structure/fence,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Nf" = (
+/turf/closed/indestructible/necropolis,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Ni" = (
+/obj/structure/flora/rock/rockplanet,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"NE" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"NK" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/suns/dark/pattern,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"NM" = (
+/obj/machinery/door/airlock/grunge{
+	name = "Chief"
+	},
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/office)
+"NZ" = (
+/obj/machinery/porta_turret/syndicate/pod{
+	name = "sentry gun";
+	dir = 5;
+	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging.";
+	max_integrity = 125;
+	obj_integrity = 125;
+	lethal_projectile_sound = 'sound/weapons/gun/rifle/skm.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg';
+	lethal_projectile = /obj/projectile/bullet/a65clip;
+	stun_projectile = /obj/projectile/bullet/a65clip;
+	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
+	id = "LastTemplar"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Oc" = (
+/obj/effect/turf_decal/borderfloorblack/corner{
+	dir = 4
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"Ol" = (
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"On" = (
+/obj/effect/turf_decal/borderfloorblack/corner{
+	dir = 1
+	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/suns/grid,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"Ot" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 4
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Pt" = (
+/obj/effect/turf_decal/spline/fancy/wood{
+	dir = 9
+	},
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/office)
+"Pv" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 9
+	},
+/obj/structure/crate_shelf,
+/obj/machinery/light/dim/directional/west,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/suns/grid,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"Px" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"PA" = (
+/obj/effect/turf_decal/corner/transparent/bar/three_quarters{
+	dir = 4
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"PB" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/wood/reinforced,
+/obj/item/paper{
+	pixel_y = 1;
+	pixel_x = 7;
+	default_raw_text = ""
+	},
+/obj/item/pen{
+	pixel_x = -9;
+	pixel_y = -1
+	},
+/obj/machinery/light/dim/directional/west,
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"Qj" = (
+/obj/machinery/jukebox,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"Qq" = (
+/obj/structure/table/glass,
+/obj/item/toy/cards/deck/kotahi{
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/food/drinks/soda_cans/sodawater{
+	pixel_x = -10;
+	pixel_y = 12
+	},
+/obj/item/clothing/neck/dogtag/ramzi{
+	pixel_y = -6;
+	pixel_x = -10
+	},
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"QE" = (
+/obj/machinery/door/airlock/grunge{
+	dir = 4;
+	name = "Storage"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/suns/dark/pattern,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"QG" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 9
+	},
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/structure/window/plasma/reinforced/spawner,
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"QZ" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 5
+	},
+/obj/machinery/suit_storage_unit/inherit{
+	pixel_x = 5;
+	pixel_y = 16
+	},
+/obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"Rb" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"RR" = (
+/obj/effect/turf_decal/corner/transparent/bar/three_quarters{
+	dir = 8
+	},
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ruin/rockplanet/lasttemplar/office)
+"Sy" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 10
+	},
+/obj/effect/spawner/random/maintenance,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc/auto_name/directional/west,
+/turf/open/floor/suns/grid,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"SE" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"SM" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"SO" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/rockplanet/wet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Ta" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/effect/turf_decal/borderfloorblack/cee,
+/obj/effect/turf_decal/borderfloorblack/cee,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Tg" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bookcase/random,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"Tp" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 10
+	},
+/obj/machinery/light/floor{
+	pixel_y = -1;
+	pixel_x = -21
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Tr" = (
+/obj/structure/closet/wall/red/directional/north,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"Tz" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"TA" = (
+/obj/machinery/door/airlock/grunge{
+	name = "Barrack"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"TD" = (
+/obj/machinery/porta_turret/syndicate/pod{
+	name = "sentry gun";
+	dir = 10;
+	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging.";
+	max_integrity = 250;
+	obj_integrity = 250;
+	lethal_projectile_sound = 'sound/weapons/gun/rifle/skm.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg';
+	lethal_projectile = /obj/projectile/bullet/a65clip;
+	stun_projectile = /obj/projectile/bullet/a65clip;
+	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
+	id = "LastTemplar"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"TU" = (
+/obj/item/target/alien,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 9
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"TY" = (
+/obj/effect/turf_decal/corner/transparent/bar/half{
+	dir = 4
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Um" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 5
+	},
+/obj/structure/table/reinforced,
+/obj/item/storage/firstaid/regular{
+	pixel_x = 9;
+	pixel_y = 16
+	},
+/obj/item/storage/firstaid/brute{
+	pixel_x = 9;
+	pixel_y = 7
+	},
+/obj/item/storage/firstaid/fire{
+	pixel_x = 9
+	},
+/obj/item/storage/firstaid/advanced{
+	pixel_x = -9;
+	pixel_y = -1
+	},
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"UQ" = (
+/obj/effect/turf_decal/corner/transparent/bar/three_quarters,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"UR" = (
+/obj/machinery/door/airlock/grunge{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/suns/dark/pattern,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"US" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ruin/rockplanet/lasttemplar/office)
+"UX" = (
+/obj/effect/turf_decal/corner/transparent/bar/half{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Va" = (
+/obj/structure/chair/sofa/olive/corpo/right/directional/north,
+/mob/living/simple_animal/hostile/human/syndicate/ranged/smg{
+	health = 150;
+	maxHealth = 150
+	},
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"Vh" = (
+/obj/structure/filingcabinet/double{
+	pixel_y = 21;
+	density = 0
+	},
+/obj/effect/turf_decal/spline/fancy/wood{
+	dir = 9
+	},
+/turf/open/floor/suns/diagonal{
+	color = "#792f27"
+	},
+/area/ruin/rockplanet/lasttemplar/office)
+"Vl" = (
+/obj/effect/turf_decal/corner/transparent/bar{
+	dir = 8
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Vm" = (
+/obj/structure/sign/warning/securearea,
+/turf/closed/wall/concrete,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"VS" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"Wb" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 6
+	},
+/obj/structure/chair/comfy/beige/directional/west,
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"Wk" = (
+/obj/effect/turf_decal/borderfloorblack/cee,
+/obj/effect/turf_decal/borderfloorblack/cee,
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"WH" = (
+/obj/structure/sign/moniq{
+	pixel_y = 28;
+	pixel_x = 8
+	},
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"WL" = (
+/obj/structure/chair/comfy/beige/old/directional/west,
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"WW" = (
+/mob/living/simple_animal/hostile/megafauna/cult_templar{
+	armor = list("melee" = 10, "bullet" = 45, "laser" = 35, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 40, "acid" = 40);
+	name = "Last Templar";
+	speed = 2;
+	armour_penetration = 30;
+	charge_distance = 4;
+	desc = "Once a warrior, now a lone remnant of Nar'Sie's will. No allies, no rituals - only battle remains, and he waits, knowing he is the last.";
+	gps_name = "???l";
+	melee_damage_lower = 30;
+	melee_damage_upper = 35;
+	movespeed_modification = 1.5;
+	move_to_delay = 1;
+	aggro_vision_range = 26;
+	crusher_loot = list(/obj/item/upgradescroll);
+	loot = list(/obj/item/clothing/suit/space/hardsuit/ert/inquisitor)
+	},
+/obj/effect/temp_visual/cult/turf,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/suns/dark/pattern,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Xd" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4;
+	layer = 2.456
+	},
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 8
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Xq" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 9
+	},
+/obj/machinery/power/smes/engineering,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Xs" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"Xx" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/gibs/up,
+/obj/item/organ/tail/riol,
+/obj/structure/window/plasma/reinforced/spawner,
+/turf/open/floor/suns,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"Xz" = (
+/obj/effect/turf_decal/spline/fancy/wood{
+	dir = 8
+	},
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/office)
+"XL" = (
+/obj/structure/table/wood/poker,
+/obj/item/spacecash/bundle/c500{
+	pixel_x = 3
+	},
+/obj/item/toy/cards/deck/syndicate{
+	pixel_y = 11
+	},
+/obj/item/reagent_containers/food/drinks/bottle/moonshine{
+	pixel_x = -9
+	},
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/dorm)
+"Yh" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/glass,
+/obj/structure/sign/poster/contraband/eoehoma{
+	pixel_x = -31
+	},
+/turf/open/floor/suns/grid,
+/area/ruin/rockplanet/lasttemplar/medbay)
+"Yt" = (
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Yy" = (
+/obj/effect/turf_decal/spline/fancy/wood{
+	dir = 1
+	},
+/obj/structure/sign/poster/contraband/the_griffin{
+	pixel_y = 32
+	},
+/turf/open/floor/wood/ebony,
+/area/ruin/rockplanet/lasttemplar/office)
+"YU" = (
+/obj/structure/platform/industrial{
+	dir = 9
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"YV" = (
+/turf/closed/mineral/random/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"YY" = (
+/mob/living/simple_animal/hostile/human/syndicate/ranged/smg/space{
+	maxHealth = 175;
+	health = 175
+	},
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"Zg" = (
+/obj/structure/railing/wood{
+	dir = 5;
+	color = "#792f27"
+	},
+/obj/structure/flora/rock/pile/rockplanet,
+/turf/open/floor/plating/asteroid/rockplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15"
+	},
+/area/ruin/rockplanet/lasttemplar/medbay)
+"ZA" = (
+/obj/item/target/alien,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/rockplanet/lasttemplar/office)
+"ZL" = (
+/obj/effect/turf_decal/corner/transparent/bar{
+	dir = 1
+	},
+/turf/open/floor/concrete/pavement/rockplanet/lit,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+
+(1,1,1) = {"
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+"}
+(2,1,1) = {"
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+YV
+YV
+YV
+YV
+YV
+he
+he
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+YV
+YV
+YV
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+"}
+(3,1,1) = {"
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+YV
+YV
+YV
+YV
+YV
+YV
+YV
+YV
+kk
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+YV
+YV
+YV
+YV
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+"}
+(4,1,1) = {"
+bo
+bo
+bo
+bo
+bo
+bo
+YV
+YV
+YV
+YV
+YV
+YV
+YV
+YV
+he
+he
+he
+he
+bo
+bo
+bo
+he
+he
+he
+he
+YV
+YV
+YV
+YV
+YV
+YV
+YV
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+"}
+(5,1,1) = {"
+bo
+bo
+bo
+bo
+bo
+YV
+YV
+Ay
+YV
+YV
+he
+he
+he
+he
+he
+he
+he
+he
+he
+he
+MH
+ih
+qq
+HY
+qq
+he
+YV
+YV
+YV
+YV
+he
+he
+he
+kk
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+"}
+(6,1,1) = {"
+bo
+bo
+bo
+bo
+YV
+YV
+YV
+YV
+YV
+he
+he
+Ka
+Df
+he
+he
+qq
+qq
+qq
+he
+he
+ih
+MH
+qq
+xv
+qq
+he
+he
+he
+he
+he
+qq
+qq
+he
+he
+he
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+"}
+(7,1,1) = {"
+bo
+bo
+bo
+bo
+YV
+YV
+YV
+YV
+he
+he
+he
+he
+he
+he
+he
+qq
+TD
+qq
+he
+he
+MH
+MH
+YY
+he
+he
+he
+Ka
+he
+he
+he
+TD
+qq
+he
+he
+he
+he
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+"}
+(8,1,1) = {"
+bo
+bo
+bo
+YV
+YV
+KO
+YV
+he
+he
+he
+he
+he
+Ka
+he
+he
+he
+he
+mp
+he
+he
+he
+MH
+MH
+he
+he
+he
+he
+he
+he
+he
+he
+he
+he
+he
+he
+he
+he
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+"}
+(9,1,1) = {"
+bo
+bo
+bo
+YV
+YV
+YV
+he
+yP
+vp
+yP
+yP
+he
+he
+gR
+he
+lu
+he
+he
+he
+he
+he
+MH
+ih
+he
+he
+lu
+he
+qw
+ee
+he
+he
+he
+he
+he
+qq
+qq
+he
+he
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+"}
+(10,1,1) = {"
+bo
+bo
+bo
+YV
+YV
+YV
+he
+yP
+Xq
+ad
+yP
+yP
+he
+he
+he
+he
+he
+he
+ee
+he
+he
+ih
+he
+he
+he
+sc
+qw
+Ka
+he
+he
+he
+he
+he
+he
+TD
+qq
+he
+he
+he
+bo
+bo
+bo
+bo
+bo
+bo
+"}
+(11,1,1) = {"
+bo
+bo
+YV
+YV
+YV
+he
+he
+yP
+vx
+ku
+gd
+vp
+he
+he
+he
+vC
+Ka
+he
+he
+LO
+PA
+KS
+GR
+LO
+he
+lu
+he
+he
+he
+Ka
+Ka
+he
+ee
+he
+he
+he
+he
+YV
+YV
+bo
+he
+kk
+bo
+bo
+bo
+"}
+(12,1,1) = {"
+bo
+bo
+YV
+YV
+YV
+he
+he
+yP
+Ao
+DP
+rM
+yP
+he
+he
+he
+he
+he
+he
+he
+he
+oT
+KS
+xt
+he
+he
+he
+he
+he
+Ni
+Ka
+he
+he
+he
+he
+he
+he
+he
+YV
+YV
+YV
+he
+he
+bo
+bo
+bo
+"}
+(13,1,1) = {"
+bo
+bo
+YV
+YV
+YV
+he
+he
+vp
+BF
+KE
+Kn
+yP
+he
+Mx
+he
+he
+he
+he
+he
+he
+oT
+KS
+xt
+he
+he
+he
+he
+he
+he
+he
+he
+he
+he
+Ka
+he
+he
+he
+YV
+YV
+YV
+YV
+he
+bo
+bo
+bo
+"}
+(14,1,1) = {"
+bo
+bo
+YV
+YV
+he
+qw
+he
+yP
+tW
+oZ
+yo
+Ew
+he
+lu
+LO
+PA
+kZ
+xH
+xH
+UX
+ZL
+KS
+Vl
+xH
+xH
+xH
+UX
+GR
+LO
+he
+he
+he
+he
+gR
+Ka
+he
+he
+he
+YV
+YV
+YV
+YV
+YV
+bo
+bo
+"}
+(15,1,1) = {"
+bo
+YV
+YV
+YV
+he
+he
+he
+yP
+yP
+yP
+NK
+yP
+he
+he
+gQ
+Ta
+KS
+KS
+KS
+KS
+KS
+nd
+KS
+KS
+KS
+KS
+KS
+KS
+xH
+GR
+he
+YY
+he
+he
+Ka
+he
+he
+YV
+YV
+YV
+YV
+YV
+YV
+YV
+bo
+"}
+(16,1,1) = {"
+bo
+YV
+YV
+yP
+vp
+yP
+he
+he
+he
+PA
+Tz
+xH
+UX
+UX
+KS
+KS
+TY
+TY
+TY
+TY
+TY
+TY
+TY
+ew
+TY
+TY
+TY
+KS
+KS
+KS
+GR
+he
+he
+he
+he
+he
+he
+he
+he
+he
+he
+YV
+YV
+YV
+bo
+"}
+(17,1,1) = {"
+bo
+YV
+YV
+yP
+kR
+vM
+he
+ee
+he
+oT
+Iy
+sW
+sW
+EN
+KS
+na
+he
+he
+he
+he
+he
+LO
+he
+he
+he
+he
+he
+bd
+oj
+KS
+xt
+he
+he
+he
+he
+FZ
+FZ
+nC
+FZ
+FZ
+FZ
+YV
+YV
+YV
+bo
+"}
+(18,1,1) = {"
+YV
+YV
+YV
+yP
+yP
+yP
+he
+he
+qw
+bd
+TY
+TY
+oj
+gb
+xt
+he
+EL
+he
+he
+vo
+sc
+he
+he
+he
+HG
+he
+MH
+he
+oT
+KS
+xt
+LO
+he
+Ka
+FZ
+FZ
+Pv
+wC
+CB
+Yh
+FZ
+FZ
+YV
+YV
+bo
+"}
+(19,1,1) = {"
+bo
+YV
+YV
+he
+he
+he
+he
+he
+he
+he
+MH
+YY
+oT
+gb
+yK
+BQ
+Ey
+sn
+cA
+cA
+cA
+pU
+cA
+xM
+at
+Jr
+Fa
+MH
+bd
+KS
+KS
+GR
+he
+he
+nC
+BJ
+On
+ji
+Fu
+yx
+Sy
+FZ
+YV
+YV
+bo
+"}
+(20,1,1) = {"
+YV
+YV
+YV
+YV
+VS
+VS
+VS
+VS
+VS
+VS
+he
+he
+oT
+gb
+xt
+he
+sn
+JW
+fy
+GT
+Nf
+GT
+fy
+yJ
+xM
+he
+Ka
+MH
+he
+oT
+KS
+xt
+he
+he
+FZ
+wY
+GB
+CU
+Bt
+AR
+yC
+nC
+YV
+YV
+bo
+"}
+(21,1,1) = {"
+YV
+YV
+YV
+YV
+VS
+oR
+yV
+IA
+iS
+VS
+VS
+LO
+oT
+gb
+xt
+he
+ey
+fy
+fy
+bK
+Bo
+lP
+fy
+fy
+yJ
+cA
+sy
+he
+Ka
+oT
+KS
+xt
+he
+he
+FZ
+FZ
+FZ
+FZ
+FZ
+FX
+QE
+FZ
+YV
+YV
+bo
+"}
+(22,1,1) = {"
+YV
+YV
+YV
+YV
+VS
+kp
+Ol
+Ol
+Ol
+Tg
+VS
+PA
+ZL
+gb
+xt
+he
+uT
+GT
+ET
+pY
+DP
+FF
+hl
+GT
+fy
+gf
+yJ
+xM
+LO
+oT
+KS
+Vl
+xH
+xH
+GR
+FZ
+vR
+Zg
+uo
+qX
+vB
+FZ
+YV
+YV
+bo
+"}
+(23,1,1) = {"
+bo
+YV
+YV
+YV
+VS
+WH
+tu
+NE
+GW
+GW
+TA
+KA
+KA
+Wk
+xt
+LO
+uT
+fy
+wD
+ps
+WW
+ps
+ne
+wc
+aM
+tp
+ie
+KS
+KS
+KS
+IK
+KA
+KA
+KA
+sW
+UR
+HT
+Xs
+IU
+zk
+dB
+nC
+YV
+YV
+bo
+"}
+(24,1,1) = {"
+YV
+YV
+YV
+YV
+VS
+Ol
+Va
+Rb
+Ol
+sw
+VS
+bd
+oj
+gb
+xt
+he
+uT
+Nf
+ok
+gj
+DP
+IL
+Bg
+fy
+bM
+Do
+YU
+Cc
+LO
+oT
+gb
+bj
+ew
+TY
+na
+FZ
+jA
+Js
+yI
+yI
+hQ
+FZ
+YV
+YV
+bo
+"}
+(25,1,1) = {"
+YV
+YV
+YV
+YV
+VS
+Qj
+Ol
+wE
+gK
+XL
+VS
+LO
+oT
+gb
+xt
+he
+uT
+fy
+fy
+oU
+IQ
+DQ
+vp
+fy
+YU
+Dk
+Cc
+Ka
+he
+oT
+gb
+xt
+he
+he
+FZ
+FZ
+FZ
+FZ
+cz
+FZ
+FZ
+FZ
+YV
+YV
+bo
+"}
+(26,1,1) = {"
+YV
+YV
+YV
+YV
+VS
+VS
+Ol
+VS
+VS
+VS
+VS
+he
+oT
+gb
+xt
+he
+bC
+zE
+fy
+GT
+fy
+fy
+fy
+YU
+Cc
+he
+he
+lu
+he
+oT
+gb
+xt
+he
+he
+FZ
+QG
+PB
+uI
+Jy
+FZ
+YV
+YV
+YV
+YV
+bo
+"}
+(27,1,1) = {"
+YV
+YV
+YV
+YV
+VS
+FW
+ex
+Cv
+gK
+Qq
+VS
+he
+oT
+gb
+xt
+BQ
+NZ
+bC
+Dk
+Dk
+Dk
+Dk
+Dk
+Cc
+vQ
+Jr
+he
+he
+PA
+IK
+iR
+na
+he
+he
+nC
+Xx
+Lw
+Ez
+yi
+FZ
+YV
+YV
+YV
+YV
+bo
+"}
+(28,1,1) = {"
+YV
+YV
+YV
+he
+VS
+Tr
+Ol
+Ol
+ex
+WL
+VS
+he
+fM
+gb
+yK
+he
+uk
+he
+he
+MH
+Ka
+he
+he
+he
+It
+he
+he
+he
+oT
+gb
+xt
+LO
+he
+Ka
+FZ
+aF
+Lw
+SE
+yR
+nC
+YV
+YV
+YV
+YV
+bo
+"}
+(29,1,1) = {"
+YV
+YV
+YV
+he
+VS
+os
+os
+os
+os
+VS
+VS
+he
+HF
+fG
+KS
+GR
+he
+Ka
+he
+he
+he
+LO
+he
+he
+he
+he
+he
+PA
+ZL
+rA
+xt
+he
+he
+he
+FZ
+pj
+tc
+Ke
+Jh
+FZ
+YV
+YV
+YV
+bo
+bo
+"}
+(30,1,1) = {"
+YV
+YV
+YV
+lu
+VS
+VS
+VS
+VS
+VS
+VS
+he
+he
+oT
+gb
+Ta
+KS
+xH
+xH
+xH
+xH
+xH
+xH
+xH
+xH
+UX
+xH
+xH
+IK
+KA
+iR
+na
+he
+he
+Ni
+FZ
+ut
+FZ
+ss
+Hs
+FZ
+YV
+YV
+YV
+bo
+bo
+"}
+(31,1,1) = {"
+bo
+YV
+YV
+YV
+he
+he
+he
+he
+he
+he
+he
+PA
+KS
+th
+KA
+KA
+KA
+KA
+KA
+KA
+KA
+mk
+KA
+KA
+KA
+KA
+Ht
+iR
+TY
+na
+he
+he
+MH
+MH
+FZ
+IZ
+po
+bX
+LC
+FZ
+YV
+YV
+bo
+bo
+bo
+"}
+(32,1,1) = {"
+bo
+YV
+YV
+YV
+he
+he
+Ka
+Ka
+he
+he
+PA
+KS
+KS
+KS
+TY
+TY
+TY
+TY
+TY
+TY
+vP
+gb
+bj
+TY
+TY
+TY
+IP
+UQ
+LO
+he
+he
+he
+YY
+he
+FZ
+Um
+zK
+gZ
+iT
+FZ
+YV
+YV
+YV
+bo
+bo
+"}
+(33,1,1) = {"
+bo
+bo
+YV
+YV
+YV
+he
+he
+he
+he
+gR
+oT
+KS
+KS
+na
+he
+he
+he
+he
+he
+he
+oT
+gb
+xt
+he
+he
+he
+he
+he
+he
+he
+he
+MH
+Ka
+he
+FZ
+FZ
+Mu
+aH
+Jw
+FZ
+YV
+YV
+YV
+bo
+bo
+"}
+(34,1,1) = {"
+bo
+bo
+YV
+YV
+he
+ee
+he
+SO
+MH
+he
+HF
+Aw
+yK
+he
+he
+he
+he
+he
+he
+lu
+RR
+nY
+av
+he
+he
+he
+he
+MH
+he
+he
+he
+he
+Ka
+qq
+he
+FZ
+FZ
+nC
+FZ
+FZ
+YV
+YV
+YV
+bo
+bo
+"}
+(35,1,1) = {"
+bo
+bo
+bo
+YV
+he
+kk
+he
+he
+he
+he
+bd
+KS
+na
+he
+he
+he
+Jc
+Jc
+Jc
+hR
+Jc
+wo
+Jc
+Jc
+Jc
+Jc
+hR
+Jc
+he
+YY
+he
+he
+he
+Ka
+he
+he
+he
+he
+he
+YV
+YV
+YV
+YV
+bo
+bo
+"}
+(36,1,1) = {"
+bo
+YV
+YV
+he
+he
+he
+Vm
+MQ
+MQ
+MQ
+nA
+Yt
+MQ
+Vm
+he
+he
+hR
+TU
+kJ
+bW
+al
+Ai
+Jc
+Vh
+DJ
+mQ
+xk
+Jc
+he
+he
+he
+qq
+qq
+he
+he
+he
+he
+he
+YV
+YV
+YV
+YV
+bo
+bo
+bo
+"}
+(37,1,1) = {"
+bo
+YV
+YV
+he
+he
+he
+kC
+KB
+Ot
+Px
+dP
+Ot
+Tp
+kC
+Ka
+he
+Jc
+ZA
+eH
+qN
+cN
+BM
+US
+xE
+Ib
+KR
+yU
+Jc
+he
+gR
+he
+qw
+lu
+lu
+he
+Ka
+he
+YV
+YV
+YV
+YV
+bo
+bo
+bo
+bo
+"}
+(38,1,1) = {"
+bo
+YV
+YV
+he
+Ka
+he
+kC
+qd
+Yt
+Yt
+Yt
+Yt
+JR
+kC
+he
+he
+Jc
+BC
+bn
+SM
+Oc
+yg
+Jc
+Pt
+Xz
+Xz
+jc
+Jc
+Ka
+he
+he
+he
+he
+he
+he
+he
+he
+YV
+YV
+YV
+bo
+bo
+bo
+bo
+bo
+"}
+(39,1,1) = {"
+bo
+YV
+YV
+YV
+Ni
+he
+kC
+qd
+Yt
+rn
+Yt
+Yt
+zR
+kC
+he
+he
+Jc
+Jc
+Jc
+US
+lR
+hH
+Jc
+Yy
+Bk
+AU
+ol
+Jc
+Ka
+he
+he
+Ka
+Ka
+Ka
+YV
+YV
+YV
+YV
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+"}
+(40,1,1) = {"
+bo
+YV
+YV
+YV
+he
+he
+kC
+rc
+yt
+Ix
+wh
+Xd
+xw
+kC
+he
+he
+Jc
+Jb
+kJ
+kJ
+hh
+pp
+NM
+gc
+aa
+xr
+Jc
+Jc
+he
+he
+YV
+YV
+YV
+YV
+YV
+YV
+YV
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+"}
+(41,1,1) = {"
+bo
+Il
+YV
+YV
+YV
+YV
+Vm
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+Vm
+he
+wt
+Jc
+QZ
+Dn
+si
+ro
+Wb
+Jc
+hR
+Jc
+Jc
+Jc
+YV
+YV
+YV
+YV
+YV
+YV
+YV
+YV
+YV
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+"}
+(42,1,1) = {"
+bo
+bo
+bo
+YV
+YV
+YV
+YV
+YV
+YV
+YV
+YV
+YV
+YV
+he
+qq
+qq
+Jc
+Jc
+Jc
+Jc
+hR
+Jc
+Jc
+he
+he
+he
+he
+YV
+tY
+YV
+YV
+YV
+YV
+YV
+he
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+"}
+(43,1,1) = {"
+bo
+bo
+bo
+bo
+YV
+YV
+YV
+YV
+YV
+YV
+YV
+YV
+YV
+he
+he
+he
+he
+he
+he
+he
+he
+he
+he
+he
+wt
+qq
+he
+YV
+YV
+YV
+YV
+he
+YV
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+"}
+(44,1,1) = {"
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+YV
+YV
+bo
+bo
+bo
+he
+lu
+he
+he
+bo
+bo
+bo
+bo
+bo
+he
+HY
+qq
+he
+he
+he
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+"}
+(45,1,1) = {"
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+bo
+"}
