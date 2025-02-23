@@ -6,6 +6,15 @@
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 4
 	},
+/obj/structure/table,
+/obj/item/storage/box/donkpockets/donkpocketpizza{
+	pixel_x = 5;
+	pixel_y = 4
+	},
+/obj/item/storage/box/donkpockets/donkpocketpizza{
+	pixel_x = -5;
+	pixel_y = 10
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
 "ah" = (
@@ -863,10 +872,15 @@
 /turf/open/floor/carpet/black,
 /area/ship/crew/dorm)
 "hW" = (
-/obj/structure/sink{
-	dir = 8;
-	pixel_x = 12
-	},
+/obj/structure/closet/wall/chem/directional/east,
+/obj/item/storage/box/beakers,
+/obj/item/storage/box/beakers,
+/obj/item/clothing/suit/longcoat/chemist,
+/obj/item/clothing/suit/toggle/labcoat/chemist,
+/obj/item/clothing/suit/toggle/labcoat/chemist/side,
+/obj/item/clothing/under/rank/medical/chemist/skirt,
+/obj/item/storage/bag/chemistry,
+/obj/item/storage/bag/chemistry,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "id" = (
@@ -1406,6 +1420,8 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/chair,
+/obj/effect/decal/cleanable/vomit,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
 "mG" = (
@@ -1750,9 +1766,10 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew/cryo)
 "pC" = (
-/obj/structure/table/optable,
-/obj/machinery/defibrillator_mount/loaded{
-	pixel_x = -28
+/obj/machinery/chem_heater,
+/obj/structure/sign/warning/chemdiamond{
+	pixel_x = -32;
+	pixel_y = 0
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
@@ -2774,10 +2791,8 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/medical)
 "zD" = (
-/obj/machinery/computer/operating{
-	dir = 4
-	},
 /obj/effect/turf_decal/borderfloorwhite,
+/obj/machinery/chem_master,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "zE" = (
@@ -2952,14 +2967,9 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/maintenance/starboard)
 "AE" = (
-/obj/structure/table,
 /obj/machinery/airalarm/directional/east,
 /obj/effect/turf_decal/borderfloorwhite,
-/obj/item/storage/case/surgery,
-/obj/item/reagent_containers/medigel/sterilizine{
-	pixel_x = 8;
-	pixel_y = 3
-	},
+/obj/machinery/chem_dispenser,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "AG" = (
@@ -3241,6 +3251,15 @@
 	pixel_x = -6;
 	pixel_y = -2
 	},
+/obj/item/storage/firstaid/medical,
+/obj/item/storage/firstaid/roumain,
+/obj/item/storage/firstaid/synthflesh,
+/obj/item/storage/firstaid/synthflesh,
+/obj/item/storage/firstaid/brute,
+/obj/item/storage/firstaid/fire,
+/obj/item/storage/firstaid/fire,
+/obj/item/storage/firstaid/advanced,
+/obj/item/storage/firstaid/advanced,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "DA" = (
@@ -3364,8 +3383,10 @@
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 4
 	},
-/obj/machinery/washing_machine,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/vending/boozeomat{
+	all_items_free = 1
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
 "El" = (
@@ -3681,6 +3702,14 @@
 	pixel_x = 6;
 	pixel_y = 1
 	},
+/obj/item/storage/firstaid/radiation{
+	pixel_x = -6;
+	pixel_y = 5
+	},
+/obj/item/storage/firstaid/toxin{
+	pixel_x = 6;
+	pixel_y = 1
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/medical)
 "HC" = (
@@ -3745,7 +3774,7 @@
 	dir = 8
 	},
 /obj/structure/table,
-/obj/structure/bedsheetbin/empty,
+/obj/machinery/chem_dispenser/drinks,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
 "Ik" = (
@@ -4348,6 +4377,16 @@
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
 /obj/item/clothing/mask/balaclava/inteq,
+/obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq,
+/obj/item/ammo_box/magazine/smgm10mm{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/ammo_box/magazine/smgm10mm{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/storage/box/ammo/c10mm,
 /turf/open/floor/carpet/orange,
 /area/ship/bridge)
 "Od" = (
@@ -4490,10 +4529,14 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/opaque/yellow,
-/obj/machinery/washing_machine,
 /obj/machinery/light_switch{
 	dir = 8;
 	pixel_x = 20
+	},
+/obj/structure/table,
+/obj/machinery/microwave{
+	pixel_x = 0;
+	pixel_y = 6
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
@@ -5267,6 +5310,14 @@
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
+"XZ" = (
+/obj/effect/turf_decal/borderfloorwhite,
+/obj/machinery/light/directional/south,
+/obj/structure/chair/office/dark{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/ship/medical)
 "Yd" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 4
@@ -5352,6 +5403,7 @@
 	dir = 4
 	},
 /obj/structure/table,
+/obj/machinery/chem_dispenser/drinks/beer,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
 "YR" = (
@@ -5713,7 +5765,7 @@ WO
 gp
 qR
 Yi
-bI
+XZ
 LI
 "}
 (9,1,1) = {"

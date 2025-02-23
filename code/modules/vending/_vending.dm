@@ -167,6 +167,9 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 	/// used for narcing on underages
 	var/obj/item/radio/Radio
 
+	// [CELADON-ADD] - VENDING_CASH - Добавляем вендингам аккаунт для денег
+	var/datum/bank_account/vending/bank_account
+	// [/CELADON-ADD]
 /**
 	* Initialize the vending machine
 	*
@@ -778,16 +781,31 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 				flick(icon_deny,src)
 				vend_ready = TRUE
 				return
+			//[CELADON_EDIT] - VENDING_CASH - Перенёс определение настоящей цены выше
+			if(coin_records.Find(R) || hidden_records.Find(R))
+				price_to_use = R.custom_premium_price ? R.custom_premium_price : extra_price
+			//[/CELADON_EDIT]
 			if(!all_items_free && ishuman(usr))
 				var/mob/living/carbon/human/H = usr
 				var/obj/item/card/bank/C = H.get_bankcard()
+				//[CELADON-EDIT] - VENDING_CASH - Добавил собственный счёт в вендомат
+				var/useMachineAccount = FALSE
 
-				if(!C)
+				if(bank_account && bank_account.has_money(price_to_use))
+					useMachineAccount = TRUE
+
+				if(!useMachineAccount && !C)
+				//[/CELADON-EDIT]
+				/* if(!C) [/CELADON-EDIT] - ORIGINAL */
 					say("No card found.")
 					flick(icon_deny,src)
 					vend_ready = TRUE
 					return
-				else if (!C.registered_account && !mining_point_vendor)
+				//[CELADON-EDIT] - VENDING_CASH - Добавил собственный счёт в вендомат
+				else if (!useMachineAccount && !C.registered_account && !mining_point_vendor)
+				//[CELADON-EDIT] - VENDING_CASH - Добавил собственный счёт в вендомат
+				/* else if (!C.registered_account && !mining_point_vendor)
+				[/CELADON-EDIT] - ORIGINAL*/
 					say("No account found.")
 					flick(icon_deny,src)
 					vend_ready = TRUE
@@ -826,9 +844,21 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 					// 			account.adjust_money(-price_to_use, "vendor_purchase")
 					// 		SSblackbox.record_feedback("amount", "vending_spent", price_to_use)	// НАШЕ
 					// [/CELADON-EDIT]
-					var/datum/bank_account/account = C.registered_account
-					if(coin_records.Find(R) || hidden_records.Find(R))
-						price_to_use = R.custom_premium_price ? R.custom_premium_price : extra_price
+
+					//[CELADON-EDIT] - VENDING_CASH - Перенёс определение настоящей цены выше
+					/* 	var/datum/bank_account/account = C.registered_account
+						if(coin_records.Find(R) || hidden_records.Find(R))
+					 		price_to_use = R.custom_premium_price ? R.custom_premium_price : extra_price
+					[/CELADON-EDIT-ORIGINAL] */
+					//[/CELADON-EDIT]
+
+					//[CELADON-EDIT] - VENDING_CASH - Добавил собственный счёт в вендомат
+					var/datum/bank_account/account
+					if(useMachineAccount)
+						account = bank_account
+					else
+						account = C.registered_account
+					//[/CELADON-EDIT]
 					if(price_to_use && !account.has_money(price_to_use))
 						say("You do not possess the funds to purchase [R.name].")
 						flick(icon_deny,src)
@@ -854,6 +884,21 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 				to_chat(usr, span_warning("[capitalize(R.name)] falls onto the floor!"))
 			SSblackbox.record_feedback("nested tally", "vending_machine_usage", 1, list("[type]", "[R.product_path]"))
 			vend_ready = TRUE
+		//[CELADON-ADD] - VENDING_CASH Добавил снятие денег с собственного счёта
+		if("withdrawCash")
+			. = TRUE
+			var/amount = text2num(params["value"])
+			if(!bank_account || !amount || amount <= 0)
+				return
+			if(bank_account.adjust_money(-amount, CREDIT_LOG_WITHDRAW))
+				var/obj/item/holochip/cash_chip = new /obj/item/holochip(drop_location(), amount)
+				if(ishuman(usr))
+					var/mob/living/carbon/human/user = usr
+					user.put_in_hands(cash_chip)
+
+				playsound(src, 'sound/machines/twobeep_high.ogg', 50, TRUE)
+				src.visible_message("<span class='notice'>[src] dispenses a holochip.</span>")
+		//[/CELADON-ADD]
 
 /obj/machinery/vending/process()
 	if(machine_stat & (BROKEN|NOPOWER))

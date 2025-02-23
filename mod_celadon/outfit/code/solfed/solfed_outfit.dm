@@ -15,7 +15,7 @@
 				I = O
 				break
 		if (I)
-			I.access = list(ACCESS_SOLGOV, ACCESS_CAPTAIN, ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED, ACCESS_OUTPOST_FACTION_NT)
+			I.access += list(ACCESS_SOLGOV, ACCESS_CAPTAIN, ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED, ACCESS_OUTPOST_FACTION_NT)
 			I.update_label()
 		W.combined_access = list()
 		for (var/obj/item/card/id/card in W.contents)
@@ -165,7 +165,7 @@
 	job_icon = "sonnensoldner"
 
 	id = /obj/item/card/id/solfed
-	ears = /obj/item/radio/headset/solfed/alt
+	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solfed
 	shoes = /obj/item/clothing/shoes/jackboots
 

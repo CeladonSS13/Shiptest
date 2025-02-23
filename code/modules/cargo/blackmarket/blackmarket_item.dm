@@ -60,10 +60,12 @@
 	stock = rand(stock_min, stock_max)
 
 /datum/blackmarket_item/proc/cycle(price = TRUE, availibility = TRUE, stock = FALSE, force_appear = FALSE)
-	if(price)
-		randomize_price()
-	if(stock)
-		randomize_stock()
+// Cel-Edit - Stock refill fix
+//	if(price)
+	randomize_price()
+//	if(stock)
+	randomize_stock()
+// /Cel-Edit
 	if(availibility)
 		if(spawn_weighting ? prob(max(0, (availability_prob + (weight * 10)))) : prob(availability_prob))
 			available = TRUE

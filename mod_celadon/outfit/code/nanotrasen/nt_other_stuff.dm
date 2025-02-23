@@ -42,6 +42,38 @@
 /obj/item/clothing/under/nanotrasen/medical
 	desc = "A crisp white shirt with blue stripes on the arms, identifying the owner as trained DeForest medical staff. The faint smell of antiseptic won't wash out."
 
+//head
+/obj/item/clothing/head/helmet/vigilitas
+	name = "Vigilitas helmet"
+	desc = "A commonly seen helmet among low and medium ranks of Vigilitas Interstellar private security forces. Provides decent protection against most common threats and has an inbuilt security hud. The red stripe reminds you of something..."
+	icon = 'mod_celadon/_storge_icons/icons/nanotrasen/clothing/obj/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/nanotrasen/clothing/mob/head.dmi'
+	icon_state = "vihelmet"
+	item_state = "vihelmet"
+	var/hud_type = DATA_HUD_SECURITY_ADVANCED
+	var/hud_trait = TRAIT_SECURITY_HUD
+	can_flashlight = TRUE
+	dog_fashion = null
+	content_overlays = TRUE
+
+/obj/item/clothing/head/helmet/vigilitas/equipped(mob/living/carbon/human/user, slot)
+	..()
+	if(slot != ITEM_SLOT_HEAD)
+		return
+	if(hud_type)
+		var/datum/atom_hud/H = GLOB.huds[hud_type]
+		H.add_hud_to(user)
+	if(hud_trait)
+		ADD_TRAIT(user, hud_trait, GLASSES_TRAIT)
+
+/obj/item/clothing/head/helmet/vigilitas/dropped(mob/living/carbon/human/user)
+	..()
+	if(hud_type)
+		var/datum/atom_hud/H = GLOB.huds[hud_type]
+		H.remove_hud_from(user)
+	if(hud_trait)
+		REMOVE_TRAIT(user, hud_trait, GLASSES_TRAIT)
+
 //desk flag
 /obj/item/desk_flag/nanotrasen
 	name = "nanotrasen desk flag"

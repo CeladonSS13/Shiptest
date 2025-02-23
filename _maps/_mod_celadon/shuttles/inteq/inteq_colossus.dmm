@@ -1278,11 +1278,12 @@
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/cargo)
 "oq" = (
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 1
-	},
 /obj/structure/table,
 /obj/machinery/jukebox/boombox,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1;
+	layer = 2.02
+	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "ot" = (
@@ -1530,7 +1531,8 @@
 /area/ship/crew/office)
 "rG" = (
 /obj/effect/turf_decal/borderfloorblack{
-	dir = 1
+	dir = 1;
+	layer = 2.02
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table,
@@ -1804,7 +1806,8 @@
 "tJ" = (
 /obj/structure/weightmachine/stacklifter,
 /obj/effect/turf_decal/borderfloorblack{
-	dir = 1
+	dir = 1;
+	layer = 2.02
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
@@ -2113,7 +2116,8 @@
 /obj/item/bedsheet/medical,
 /obj/structure/curtain,
 /obj/effect/turf_decal/borderfloorblack{
-	dir = 1
+	dir = 1;
+	layer = 2.02
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
@@ -4253,7 +4257,8 @@
 /area/ship/security)
 "WE" = (
 /obj/effect/turf_decal/borderfloorblack{
-	dir = 1
+	dir = 1;
+	layer = 2.02
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/rack,
@@ -4443,10 +4448,11 @@
 "XQ" = (
 /obj/machinery/firealarm/directional/west,
 /obj/structure/weightmachine/stacklifter,
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1;
+	layer = 2.02
+	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "XR" = (

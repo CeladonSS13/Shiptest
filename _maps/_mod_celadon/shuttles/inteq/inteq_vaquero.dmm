@@ -251,20 +251,20 @@
 /obj/item/ammo_box/magazine/co9mm{
 	pixel_x = -5
 	},
-/obj/item/ammo_box/magazine/co9mm{
-	pixel_x = 5
-	},
-/obj/item/ammo_box/magazine/co9mm{
-	pixel_x = -5
-	},
 /obj/item/gun/ballistic/automatic/pistol/commander/inteq,
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq{
-	pixel_y = -5
-	},
 /obj/structure/sign/poster/contraband/peacemaker{
 	pixel_x = 32
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq,
+/obj/item/ammo_box/magazine/smgm10mm{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/ammo_box/magazine/smgm10mm{
+	pixel_x = 5;
+	pixel_y = 5
+	},
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq,
 /obj/item/ammo_box/magazine/smgm10mm{
 	pixel_x = 5;
@@ -422,12 +422,12 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/cargo)
 "gC" = (
-/obj/structure/rack,
-/obj/item/pickaxe/mini,
-/obj/item/pickaxe/mini,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/siding/thinplating/dark,
 /obj/structure/extinguisher_cabinet/directional/north,
+/obj/machinery/suit_storage_unit/inherit,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "gO" = (
@@ -464,6 +464,7 @@
 /obj/effect/turf_decal/corner/opaque/yellow{
 	dir = 1
 	},
+/obj/item/spacecash/bundle/c500,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "hn" = (
@@ -818,10 +819,10 @@
 /area/ship/maintenance/starboard)
 "kW" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/inteq,
-/obj/item/clothing/head/helmet/space/inteq,
 /obj/effect/turf_decal/siding/thinplating/dark,
 /obj/item/radio/intercom/directional/north,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "lm" = (
@@ -937,15 +938,16 @@
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
 /obj/item/clothing/mask/balaclava/inteq,
+/obj/item/tank/jetpack/suit,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "mE" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/inteq,
-/obj/item/clothing/head/helmet/space/inteq,
 /obj/machinery/airalarm/directional/east,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/siding/thinplating/dark,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "mR" = (
@@ -984,11 +986,6 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/security)
 "oX" = (
-/obj/structure/table/reinforced,
-/obj/item/lighter{
-	pixel_y = 5
-	},
-/obj/item/storage/fancy/cigarettes/cigars/havana,
 /obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 8
@@ -1004,6 +1001,7 @@
 /obj/machinery/newscaster/directional/west{
 	pixel_y = -13
 	},
+/obj/machinery/rnd/server,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "oZ" = (
@@ -1361,9 +1359,15 @@
 /obj/effect/turf_decal/box/corners{
 	dir = 4
 	},
-/obj/structure/weightmachine/weightlifter,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/rack,
+/obj/item/pickaxe/mini,
+/obj/item/pickaxe/mini,
+/obj/item/tank/jetpack/oxygen,
+/obj/item/tank/jetpack/oxygen,
+/obj/item/tank/jetpack/oxygen,
+/obj/item/tank/jetpack/oxygen,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "wU" = (
@@ -1565,6 +1569,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/stack/sheet/mineral/plasma/twenty,
 /obj/structure/closet/crate/secure/plasma,
+/obj/item/stack/sheet/mineral/uranium/ten,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "zO" = (
@@ -1968,7 +1973,6 @@
 	},
 /obj/effect/turf_decal/corner/opaque/yellow,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/clothing/suit/armor/vest/bulletproof,
 /obj/item/megaphone/sec,
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 4
@@ -1983,6 +1987,23 @@
 /obj/item/clothing/head/warden/inteq,
 /obj/item/clothing/suit/armor/vest/security/warden/inteq,
 /obj/item/clothing/mask/balaclava/inteq,
+/obj/item/gun/ballistic/automatic/pistol/m20_auto_elite/inteq,
+/obj/item/ammo_box/magazine/m20_auto_elite/inteq,
+/obj/item/ammo_box/magazine/m20_auto_elite/inteq,
+/obj/item/clothing/suit/armor/vest/marine,
+/obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq,
+/obj/item/ammo_box/magazine/smgm10mm{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/ammo_box/magazine/smgm10mm{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/storage/box/ammo/c10mm_ap,
+/obj/item/storage/box/ammo/c10mm_ap,
+/obj/item/storage/box/ammo/c9mm_ap,
+/obj/item/storage/box/ammo/c9mm_ap,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "Eh" = (
@@ -2199,8 +2220,6 @@
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
 	dir = 1
 	},
-/obj/item/clothing/suit/armor/vest/bulletproof,
-/obj/item/clothing/head/helmet/swat/inteq,
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
 /obj/item/storage/belt/security/webbing/inteq,
@@ -2216,6 +2235,17 @@
 /obj/item/melee/knife/survival,
 /obj/item/melee/knife/survival,
 /obj/item/clothing/mask/balaclava/inteq,
+/obj/item/clothing/suit/armor/vest/bulletproof,
+/obj/item/clothing/suit/armor/vest/bulletproof,
+/obj/item/clothing/suit/armor/vest/bulletproof,
+/obj/item/clothing/head/helmet/swat/inteq,
+/obj/item/clothing/head/helmet/swat/inteq,
+/obj/item/clothing/head/helmet/swat/inteq,
+/obj/item/storage/belt/security/webbing/inteq,
+/obj/item/storage/belt/security/webbing/inteq,
+/obj/item/storage/belt/security/webbing/inteq,
+/obj/item/clothing/gloves/combat,
+/obj/item/clothing/gloves/combat,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security)
 "HN" = (
@@ -2409,6 +2439,7 @@
 /area/ship/maintenance/port)
 "Ky" = (
 /obj/item/trash/can,
+/obj/machinery/rnd/production/protolathe/department/ballistics,
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "KR" = (
@@ -2535,10 +2566,10 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
-/obj/item/clothing/suit/space/inteq,
-/obj/item/clothing/head/helmet/space/inteq,
 /obj/machinery/light/small/directional/north,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/tank/internals/oxygen,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hallway/central)
 "MF" = (
@@ -2902,10 +2933,10 @@
 /area/ship/hallway/central)
 "Tn" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/inteq,
-/obj/item/clothing/head/helmet/space/inteq,
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/siding/thinplating/dark,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "TK" = (
@@ -3015,7 +3046,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/item/tank/jetpack/oxygen,
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -3027,6 +3057,7 @@
 /obj/machinery/suit_storage_unit/inherit{
 	req_access_txt = "20"
 	},
+/obj/item/tank/internals/oxygen,
 /obj/item/clothing/suit/space/hardsuit/security/inteq,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -3066,22 +3097,7 @@
 /obj/effect/turf_decal/box/corners{
 	dir = 4
 	},
-/obj/structure/closet/crate,
-/obj/item/target/syndicate{
-	pixel_x = -5;
-	pixel_y = 10
-	},
-/obj/item/target{
-	pixel_y = 5
-	},
-/obj/item/target/alien{
-	pixel_x = 5
-	},
-/obj/item/clothing/ears/earmuffs{
-	pixel_x = 5;
-	pixel_y = 5
-	},
-/obj/item/clothing/ears/earmuffs,
+/obj/structure/tank_dispenser/oxygen,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "Xb" = (
