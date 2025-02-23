@@ -36,7 +36,7 @@
 /datum/supply_pack/faction/independent/costumes_toys/formalwear
 	name = "Formalwear Crate"
 	desc = "You're gonna like the way you look, I guaranteed it. Contains an asston of fancy clothing."
-	cost = 3000 //Lots of very expensive items. You gotta pay up to look good!
+	cost = 1500 //Lots of very expensive items. You gotta pay up to look good!
 	contains = list(/obj/item/clothing/under/dress/blacktango,
 					/obj/item/clothing/under/misc/assistantformal,
 					/obj/item/clothing/under/misc/assistantformal,

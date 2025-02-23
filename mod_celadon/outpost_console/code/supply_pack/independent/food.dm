@@ -1,10 +1,10 @@
 /datum/supply_pack/faction/independent/food
 	group = "Food & Agricultural"
 
-/datum/supply_pack/faction/independent/food/ration_irp
-	name = "IRP set"
-	desc = "6 expanded IRP sets. Now with warm-up!"
-	cost = 750
+/datum/supply_pack/faction/independent/food/ration_mre
+	name = "MRE set"
+	desc = "6 expanded MRE sets. Spices included!"
+	cost = 500
 	contains = list(/obj/item/storage/ration/vegan_chili,
 					/obj/item/storage/ration/shredded_beef,
 					/obj/item/storage/ration/pork_spaghetti,
@@ -22,7 +22,7 @@ MARK:	Ready-to-eat
 /datum/supply_pack/faction/independent/food/donkpockets
 	name = "Donk Pocket Variety Crate"
 	desc = "Featuring a line up of Donk Co.'s most popular pastry!"
-	cost = 500
+	cost = 400
 	contains = list(/obj/item/storage/box/donkpockets/donkpocketspicy,
 					/obj/item/storage/box/donkpockets/donkpocketteriyaki,
 					/obj/item/storage/box/donkpockets/donkpocketpizza,

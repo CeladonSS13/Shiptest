@@ -6,7 +6,7 @@
 /datum/supply_pack/faction/independent/medical/surplus
 	name = "Medical Surplus Crate"
 	desc = "Contains an assortment of medical supplies haphazardly pulled from storage. German doctor not included."
-	cost = 3000
+	cost = 2000
 	contains = list(/obj/item/reagent_containers/glass/bottle/charcoal,
 					/obj/item/reagent_containers/glass/bottle/epinephrine,
 					/obj/item/reagent_containers/glass/bottle/morphine,
