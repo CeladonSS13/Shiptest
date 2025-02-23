@@ -91,7 +91,7 @@
 	ears = /obj/item/radio/headset/alt
 	gloves = /obj/item/clothing/gloves/color/black
 	shoes = /obj/item/clothing/shoes/combat
-	box = /obj/item/storage/box/survival/security
+	box = /obj/item/storage/box/survival/syndicate
 
 /datum/outfit/job/syndicate/ramzileader
 	name = "Ramzi-Clique Cell Leader"
@@ -104,7 +104,7 @@
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/color/black
 	shoes = /obj/item/clothing/shoes/combat
-	box = /obj/item/storage/box/survival/security
+	box = /obj/item/storage/box/survival/syndicate
 	mask = /obj/item/clothing/mask/gas/syndicate/voicechanger
 
 /datum/outfit/job/syndicate/ramziengi
@@ -118,4 +118,4 @@
 	ears = /obj/item/radio/headset/alt
 	gloves = /obj/item/clothing/gloves/color/black
 	shoes = /obj/item/clothing/shoes/combat
-	box = /obj/item/storage/box/survival/security
+	box = /obj/item/storage/box/survival/syndicate
