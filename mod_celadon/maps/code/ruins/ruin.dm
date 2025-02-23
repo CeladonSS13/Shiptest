@@ -338,7 +338,7 @@
 	description = "A Solarian frontier research facility created by the Pionierskompanien \
 	This one seems to simulate the wintery climate of the northern provinces, including a sauna!"
 	suffix = "lavaland_surface_biodome_winter.dmm"
-	cost =
+	cost = 1
 
 /datum/map_template/ruin/lavaland/buried_shrine
 	id = "buried_shrine"
