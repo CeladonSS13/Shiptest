@@ -772,13 +772,13 @@
 	pixel_x = -1;
 	pixel_y = -5
 	},
-/obj/item/gun/energy/kalix{
-	pixel_x = 0;
+/obj/item/gun/energy/kalix/pistol{
+	pixel_x = -4;
 	pixel_y = 2
 	},
-/obj/item/gun/energy/kalix{
-	pixel_x = 0;
-	pixel_y = 8
+/obj/item/gun/energy/kalix/pistol{
+	pixel_x = 4;
+	pixel_y = 10
 	},
 /turf/open/floor/vault,
 /area/ship/security/armory)
@@ -1055,7 +1055,10 @@
 /area/ship/external/dark)
 "ih" = (
 /obj/structure/table/reinforced,
-/obj/item/modular_computer/laptop/preset,
+/obj/machinery/cell_charger{
+	pixel_y = 7;
+	pixel_x = -1
+	},
 /turf/open/floor/vault,
 /area/ship/security/armory)
 "ii" = (
@@ -1094,6 +1097,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
 	},
+/obj/item/circuitboard/machine/shuttle/engine/electric,
 /turf/open/floor/plasteel/mono,
 /area/ship/hangar/starboard)
 "iA" = (
@@ -1693,9 +1697,6 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/sign/poster/contraband/clown{
-	pixel_y = -32
-	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "oW" = (
@@ -2358,20 +2359,16 @@
 "vp" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/industrial/traffic/corner,
-/obj/machinery/cell_charger{
-	pixel_y = 7;
-	pixel_x = -4
-	},
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
 /obj/machinery/recharger{
 	pixel_x = 8;
-	pixel_y = 0
+	pixel_y = 1
 	},
 /obj/machinery/recharger{
-	pixel_x = -4;
-	pixel_y = 0
+	pixel_x = -7;
+	pixel_y = 1
 	},
 /turf/open/floor/vault,
 /area/ship/security/armory)
@@ -3033,39 +3030,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/mono,
 /area/ship/hangar/starboard)
-"Bt" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/closet/crate{
-	icon_state = "wooden";
-	name = "myning geer";
-	desc = "A rectangular steel crate with 'myning geer' spelled out in crayon on top."
-	},
-/obj/item/storage/bag/ore{
-	pixel_x = -7
-	},
-/obj/item/storage/bag/ore{
-	pixel_x = -7
-	},
-/obj/item/pickaxe,
-/obj/item/pickaxe,
-/obj/item/mining_scanner{
-	pixel_x = 4;
-	pixel_y = -3
-	},
-/obj/item/mining_scanner{
-	pixel_x = 4;
-	pixel_y = -3
-	},
-/turf/open/floor/pod,
-/area/ship/hangar/starboard)
-"Bv" = (
-/obj/effect/turf_decal/industrial/stand_clear,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/ore_box,
-/turf/open/floor/pod,
-/area/ship/hangar/starboard)
 "By" = (
 /obj/structure/chair,
 /obj/machinery/power/apc/auto_name/directional/north,
@@ -3249,14 +3213,6 @@
 /obj/effect/decal/cleanable/sprayweb,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
-"CF" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/closet/crate/radiation,
-/obj/item/stack/sheet/mineral/uranium/twenty,
-/turf/open/floor/pod,
-/area/ship/hangar/starboard)
 "CO" = (
 /obj/machinery/vending/coffee,
 /obj/effect/turf_decal/corner_steel_grid/full{
@@ -3921,11 +3877,6 @@
 	},
 /turf/open/floor/vault,
 /area/ship/security/armory)
-"Hd" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/quickdeploy/barricade,
-/turf/open/floor/pod,
-/area/ship/hangar/starboard)
 "Hf" = (
 /obj/structure/railing,
 /obj/effect/turf_decal/corner_steel_grid{
@@ -4101,17 +4052,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ship/construction)
-"Iw" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/quickdeploy/barricade,
-/turf/open/floor/pod,
-/area/ship/hangar/starboard)
-"Iz" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/deployable_barricade/sandbags,
-/turf/open/floor/pod,
-/area/ship/hangar/starboard)
 "IF" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 10
@@ -4198,12 +4138,6 @@
 /obj/effect/decal/cleanable/sprayweb,
 /turf/open/floor/vault,
 /area/ship/security)
-"JJ" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/crate_shelf,
-/turf/open/floor/plating,
-/area/ship/hangar/starboard)
 "JO" = (
 /turf/template_noop,
 /turf/template_noop,
@@ -4682,6 +4616,10 @@
 /obj/item/poster/mission_accomplished_3,
 /obj/item/poster/mission_accomplished_2,
 /obj/item/poster/mission_accomplished_1,
+/obj/item/circuitboard/machine/shuttle/engine/electric/bad,
+/obj/item/circuitboard/machine/shuttle/smes,
+/obj/item/circuitboard/machine/shuttle/smes,
+/obj/item/circuitboard/machine/pacman/super,
 /turf/open/floor/plasteel/tech,
 /area/ship/construction)
 "Nw" = (
@@ -4712,15 +4650,12 @@
 /turf/open/floor/plating/airless,
 /area/ship/external/dark)
 "NF" = (
+/obj/effect/turf_decal/industrial/stand_clear,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/closet/crate/solarpanel_small,
-/obj/item/storage/box/stockparts/basic{
-	pixel_x = -6;
-	pixel_y = -1
+/obj/effect/landmark/subship{
+	dir = 2;
+	subship_template = /datum/map_template/shuttle/subshuttles/nail
 	},
-/obj/item/shuttle_creator,
 /turf/open/floor/pod,
 /area/ship/hangar/starboard)
 "NM" = (
@@ -5040,13 +4975,6 @@
 /obj/item/radio/intercom/directional/south,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
-"PZ" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/tank_dispenser,
-/turf/open/floor/pod,
-/area/ship/hangar/starboard)
 "Qa" = (
 /obj/machinery/light_switch{
 	dir = 8;
@@ -5119,18 +5047,6 @@
 	},
 /turf/open/floor/vault,
 /area/ship/security/armory)
-"Qs" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/crate_shelf,
-/obj/structure/closet/crate/solarpanel_small,
-/obj/item/storage/box/stockparts/basic{
-	pixel_x = -6;
-	pixel_y = -1
-	},
-/turf/open/floor/plating,
-/area/ship/hangar/starboard)
 "QI" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/structure/cable{
@@ -5204,6 +5120,36 @@
 	},
 /obj/item/radio/intercom/directional/north,
 /obj/effect/decal/cleanable/insectguts,
+/obj/item/stack/sheet/mineral/uranium/twenty,
+/obj/item/storage/box/stockparts/basic{
+	pixel_x = -6;
+	pixel_y = -1
+	},
+/obj/item/storage/box/stockparts/basic{
+	pixel_x = -6;
+	pixel_y = -1
+	},
+/obj/item/storage/bag/ore{
+	pixel_x = -7
+	},
+/obj/item/storage/bag/ore{
+	pixel_x = -7
+	},
+/obj/structure/closet/crate{
+	icon_state = "wooden";
+	name = "myning geer";
+	desc = "A rectangular steel crate with 'myning geer' spelled out in crayon on top."
+	},
+/obj/item/mining_scanner{
+	pixel_x = 4;
+	pixel_y = -3
+	},
+/obj/item/mining_scanner{
+	pixel_x = 4;
+	pixel_y = -3
+	},
+/obj/item/pickaxe,
+/obj/item/pickaxe,
 /turf/open/floor/plasteel/mono,
 /area/ship/hangar/starboard)
 "QW" = (
@@ -5484,12 +5430,6 @@
 /obj/vehicle/ridden/wheelchair,
 /turf/open/floor/mineral/titanium/tiled,
 /area/ship/hallway/central)
-"SZ" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/deployable_barricade/sandbags,
-/turf/open/floor/pod,
-/area/ship/hangar/starboard)
 "Te" = (
 /obj/structure/chair{
 	dir = 8
@@ -5611,10 +5551,6 @@
 /obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/engines/port)
-"UA" = (
-/obj/structure/crate_shelf,
-/turf/open/floor/plating,
-/area/ship/hangar/starboard)
 "UB" = (
 /obj/structure/bed,
 /obj/structure/railing{
@@ -5703,12 +5639,6 @@
 	},
 /turf/open/floor/engine/airless,
 /area/ship/engineering/engines/starboard)
-"Vi" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/barricade/security,
-/turf/open/floor/pod,
-/area/ship/hangar/starboard)
 "Vk" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 5
@@ -6296,10 +6226,6 @@
 	},
 /turf/open/floor/plating/rust,
 /area/ship/crew/dorm)
-"Zx" = (
-/obj/item/areaeditor/shuttle,
-/turf/open/floor/pod,
-/area/ship/hangar/starboard)
 "ZB" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2{
 	dir = 8
@@ -6894,7 +6820,7 @@ eB
 LO
 LO
 Mw
-qF
+NF
 yF
 TS
 cR
@@ -6916,9 +6842,9 @@ pF
 oS
 SB
 DJ
-Zx
-JJ
-Vi
+eB
+aR
+LO
 UL
 cA
 LO
@@ -6948,8 +6874,8 @@ cA
 cA
 Wb
 BH
-Iw
-Qs
+LO
+BH
 Mw
 eM
 HN
@@ -6973,9 +6899,9 @@ cE
 DY
 nO
 Mw
-NF
+Mw
 IJ
-SZ
+LO
 Mw
 UL
 Mw
@@ -7003,7 +6929,7 @@ QU
 Mw
 cA
 UL
-Iz
+cA
 LO
 LO
 LO
@@ -7030,8 +6956,8 @@ SB
 dQ
 aR
 cA
-Hd
-UA
+cA
+IJ
 LO
 UL
 cA
@@ -7059,9 +6985,9 @@ qH
 Wb
 Mw
 Mw
-Iz
+cA
 aR
-PZ
+Mw
 cA
 eM
 HN
@@ -7088,7 +7014,7 @@ Mw
 BH
 UL
 cA
-Vi
+LO
 UL
 aR
 Yb
@@ -7113,10 +7039,10 @@ kp
 fn
 QW
 UL
-Bt
+Mw
 LO
 aR
-CF
+Mw
 Mw
 Mw
 rW
@@ -7146,7 +7072,7 @@ UL
 cA
 cA
 LO
-Bv
+qF
 jh
 YI
 cR

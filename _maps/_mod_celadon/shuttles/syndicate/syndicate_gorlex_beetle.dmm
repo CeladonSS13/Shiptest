@@ -593,11 +593,15 @@
 	name = "ammunition locker";
 	req_one_access_txt = "1"
 	},
-/obj/item/stock_parts/cell/gun/empty,
-/obj/item/stock_parts/cell/gun/empty,
-/obj/item/stock_parts/cell/gun/upgraded,
 /obj/item/shield/riot/tele,
-/obj/item/shield/riot/tele,
+/obj/item/melee/energy/sword/saber/red{
+	pixel_x = 15;
+	pixel_y = 7
+	},
+/obj/item/stock_parts/cell/gun/kalix,
+/obj/item/stock_parts/cell/gun/kalix,
+/obj/item/stock_parts/cell/gun/kalix,
+/obj/item/stock_parts/cell/gun/kalix,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -1819,17 +1823,8 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
 	},
-/obj/item/gun/energy/laser{
-	manufacturer = "the CyberSun logo"
-	},
-/obj/item/melee/energy/sword/saber/red{
-	pixel_x = 15;
-	pixel_y = 7
-	},
-/obj/item/melee/energy/sword/saber/red{
-	pixel_x = 15;
-	pixel_y = 7
-	},
+/obj/item/gun/energy/kalix,
+/obj/item/gun/energy/kalix,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -2894,7 +2889,8 @@
 /obj/item/spacecash/bundle/c200,
 /obj/item/spacecash/bundle/c50,
 /obj/item/clothing/shoes/magboots/syndie,
-/obj/item/gun/energy/e_gun/e11,
+/obj/item/gun/energy,
+/obj/item/stock_parts/cell/gun/upgraded,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},

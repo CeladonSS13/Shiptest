@@ -37,10 +37,9 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	var/drop_rate_amount_min = 15
 	var/drop_rate_amount_max = 20
 	//Mob spawning variables
-	var/spawner_attached = FALSE //Probably a drastically less sloppy way of doing this, but it technically works
 	var/spawning_started = FALSE
 	var/max_mobs = 6
-	var/spawn_time = 150 //15 seconds
+	var/spawn_time = 15 SECONDS
 	var/mob_types = list(
 		// [CELADON-ADD] - RETURN_CONTENT
 		/mob/living/simple_animal/hostile/asteroid/goliath/beast/tendril = 60,
@@ -53,7 +52,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	var/spawn_text = "emerges from"
 	var/faction = list("hostile","mining")
 	var/spawn_sound = list('sound/effects/break_stone.ogg')
-	var/spawner_type = /datum/component/spawner
+	var/datum/component/spawner/spawner_type
 	var/spawn_distance_min = 4
 	var/spawn_distance_max = 6
 	var/wave_length = 2 MINUTES
@@ -91,11 +90,6 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	GLOB.ore_veins -= src
 	return ..()
 
-/obj/structure/vein/proc/begin_spawning()
-	AddComponent(spawner_type, mob_types, spawn_time, faction, spawn_text, max_mobs, spawn_sound, spawn_distance_min, spawn_distance_max, wave_length, wave_downtime)
-	spawner_attached = TRUE
-	spawning_started = TRUE
-
 //Pulls a random ore from the vein list per vein_class
 /obj/structure/vein/proc/drop_ore(multiplier,obj/machinery/drill/current)
 	var/list/adjacent_turfs = get_adjacent_open_turfs(current)
@@ -111,8 +105,11 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	visible_message("<span class='boldannounce'>[src] collapses!</span>")
 
 /obj/structure/vein/proc/toggle_spawning()
-	spawning_started = SEND_SIGNAL(src, COMSIG_SPAWNER_TOGGLE_SPAWNING, spawning_started)
-
+	if(!spawner_type)
+		spawner_type = AddComponent(/datum/component/spawner, mob_types, spawn_time, faction, spawn_text, max_mobs, spawn_sound, spawn_distance_min, spawn_distance_max, wave_length, wave_downtime)
+	else
+		spawner_type.toggle_spawning(spawning_started = spawning_started) // fsr send signal did not worked for me so i just called a proc. Either way its the same
+	spawning_started = !spawning_started
 
 //
 //	Planetary and Class Subtypes

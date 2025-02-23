@@ -46,6 +46,7 @@
 	if(visualsOnly)
 		return
 	H.faction |= list(FACTION_PLAYER_ELYSIUM)
+	H.grant_language(/datum/language/elysm)
 
 /datum/outfit/job/elysium/proc/get_elysium_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
