@@ -31,7 +31,7 @@
 	name = "Fishing Hut"
 	description = "A small fishing hut floating on the ocean."
 	suffix = "beach_fishing_hut.dmm"
-	// cost =
+	cost = 3
 	ruin_tags = list(RUIN_TAG_HARD_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_HAZARDOUS)
 
 /datum/map_template/ruin/beachplanet/colony
@@ -39,14 +39,14 @@
 	name = "Abandoned Beachside Colony"
 	description = "A abandoned colony. It seems that this colony was abandoned, for a reason or another"
 	suffix = "beach_colony.dmm"
-	// cost =
+	cost = 1
 
 /datum/map_template/ruin/beachplanet/ancient
 	id = "beach_ancient"
 	name = "Ancient Danger"
 	description = "As you draw near the ancient wall, a sense of foreboding overcomes you. You aren't sure why, but you feel this dusty structure may contain great dangers."
 	suffix = "beach_ancient_ruin.dmm"
-	// cost =
+	cost = 2
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/beachplanet/town
@@ -54,7 +54,7 @@
 	name = "Beachside Town"
 	description = "A fresh town on a lovely coast, where its inhabitants are is unknown."
 	suffix = "beach_ocean_town.dmm"
-	// cost =
+	cost = 3
 	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MINOR_LOOT, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/beachplanet/scrapvillage
@@ -62,7 +62,7 @@
 	name = "Pirate Village"
 	description = "A small pirate outpost formed from the remains of a wrecked shuttle."
 	suffix = "beach_pirate_crash.dmm"
-	// cost =
+	cost = 2
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/beachplanet/treasurecove
@@ -70,7 +70,7 @@
 	name = "Treasure Cove"
 	description = "A abandoned colony. It seems that this colony was abandoned, for a reason or another"
 	suffix = "beach_treasure_cove.dmm"
-	// cost =
+	cost = 3
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/beachplanet/crashedengie
@@ -78,7 +78,7 @@
 	name = "Crashed Engineer Ship"
 	description = "An abandoned camp built by a crashed engineer"
 	suffix = "beach_crashed_engineer.dmm"
-	// cost =
+	cost = 1
 	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_HAZARDOUS)
 
 /datum/map_template/ruin/beachplanet/floatresort
@@ -86,7 +86,7 @@
 	name = "Floating Beach Resort"
 	description = "A hidden paradise on the beach"
 	suffix = "beach_float_resort.dmm"
-	// cost =
+	cost = 1
 	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MINOR_LOOT, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/beachplanet/fallenstar
@@ -94,14 +94,14 @@
 	name = "Crashed Starwalker"
 	description = "A Crashed Starwalker Class Pirate Ship. It's Crew is Long-Dead."
 	suffix = "beach_crashed_starwalker.dmm"
-	// cost =
+	cost = 2
 
 /datum/map_template/ruin/beachplanet/knight
 	id = "knights_rest"
 	name = "Knight's Rest"
 	description = "An small castle holding the grave of a renowned warrior"
 	suffix = "beach_knights_rest.dmm"
-	// cost =
+	cost = 1
 
 //							///
 //		MARK: Icemoon
@@ -497,7 +497,7 @@
 	name = "Harm Factory"
 	description = "A factory made for HARM and AGONY."
 	suffix = "rockplanet_harmfactory.dmm"
-	// cost =
+	cost = 3
 	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
 
 /datum/map_template/ruin/rockplanet/budgetcuts
@@ -505,7 +505,7 @@
 	name = "Budgetcuts"
 	description = "Nanotrasen's gotta lay off some personnel, and this facility hasn't been worth the effort so far"
 	suffix = "rockplanet_budgetcuts.dmm"
-	// cost =
+	cost = 3
 	ruin_tags = list(RUIN_TAG_HARD_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/rockplanet/shippingdock
@@ -513,63 +513,63 @@
 	name = "Abandoned Shipping Dock"
 	description = "An abandoned shipping dock used by small cargo freighters and smugglers alike. Some malicious group seems to have trapped the place to eliminate scavengers."
 	suffix = "rockplanet_shippingdock.dmm"
-	// cost =
+	cost = 2
 
 /datum/map_template/ruin/rockplanet/nomadcrash
 	id = "rockplanet_nomadcrash"
 	name = "Nomad Crash"
 	description = "A Crashed Arrow & Axe Interceptor. A long forgotten Crew. They tried their best to survive..."
 	suffix = "rockplanet_nomadcrash.dmm"
-	// cost =
+	cost = 1
 
 /datum/map_template/ruin/rockplanet/heirophant
 	id = "rockheiro"
 	name = "Ancient Heirophant"
 	description = "something dangerous"
 	suffix = "rockplanet_heirophant.dmm"
-	// cost =
+	cost = 4
 
 /datum/map_template/ruin/rockplanet/mining_expedition
 	id = "expedition"
 	name = "Mining Expedition"
 	description = "A mining operation gone wrong."
 	suffix = "rockplanet_miningexpedition.dmm"
-	// cost =
+	cost = 2
 
 /datum/map_template/ruin/rockplanet/mining_base
 	id = "rockplanet_mining_base"
 	name = "N+S Mining Installation"
 	description = "A N+S mining installation recently fallen prey to a band of Ramzi pirates."
 	suffix = "rockplanet_mining_installation.dmm"
-	// cost =
+	cost = 3
 
 /datum/map_template/ruin/rockplanet/boxsci
 	id = "abandonedscience"
 	name = "Abandoned science wing"
 	description = "A chunk of a station that broke off.."
 	suffix = "rockplanet_boxsci.dmm"
-	// cost =
+	cost = 2
 
 /datum/map_template/ruin/rockplanet/crash_cult
 	id = "crash_cult"
 	name = "Crashed Exploration Clipper"
 	description = "A crashed exploration vessel. Hivebots are taking this ship apart for scrap."
 	suffix = "rockplanet_crash.dmm"
-	// cost =
+	cost = 1
 
 /datum/map_template/ruin/rockplanet/saloon
 	id = "rockplanet_saloon"
 	name = "Abandoned saloon"
 	description = "For whatever reason, someone decided to make a colony with a indie style."
 	suffix = "rockplanet_saloon.dmm"
-	// cost =
+	cost = 2
 
 /datum/map_template/ruin/rockplanet/distillery
 	id = "rockplanet_distillery"
 	name = "Frontiersman Distillery"
 	description = "A former pre-ICW era Nanotrasen outpost converted into a moonshine distillery by Frontiersman bootleggers."
 	suffix = "rockplanet_distillery.dmm"
-	// cost =
+	cost = 3
 
 //							///
 //		MARK: Space
@@ -577,187 +577,171 @@
 
 /datum/map_template/ruin/space/abandoned_remora
 	id = "abandoned_remora"
-	suffix = "abandoned_remora.dmm"
 	name = "Destroyed Remora Ship"
 	description = "A very old syndie ship, abandoned and destroyed by Nanotrasen."
-	// cost =
+	suffix = "abandoned_remora.dmm"
+	cost = 4
 
 /datum/map_template/ruin/space/corporate_mining
 	id = "corporate_mining"
-	suffix = "corporate_mining.dmm"
 	name = "Corporate Mining Module"
 	description = "An old and rusty mining facility, with big ore potential."
-	// cost =
+	suffix = "corporate_mining.dmm"
+	cost = 1
 	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER)
 
 /datum/map_template/ruin/space/bigderelict1
 	id = "bigderelict1"
-	suffix = "bigderelict1.dmm"
 	name = "Derelict Tradepost"
 	description = "A once-bustling tradestation that handled imports and exports from nearby stations now lays eerily dormant. \
 	The last received message was a distress call from one of the on-board officers, but we had no success in making contact again."
-	// cost =
+	suffix = "bigderelict1.dmm"
+	cost = 2
 	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER)
 
 /datum/map_template/ruin/space/onehalf
 	id = "onehalf"
-	suffix = "onehalf.dmm"
 	name = "DK Excavator 453"
 	description = "Formerly a thriving planetary mining outpost, now a bit of an exploded mess. One has to wonder how it got here"
-	// cost =
+	suffix = "onehalf.dmm"
+	cost = 2
 	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_INHOSPITABLE)
 
 /datum/map_template/ruin/space/power_puzzle
 	id = "power_puzzle"
-	suffix = "power_puzzle.dmm"
 	name = "Power Puzzle"
 	description = "an abandoned secure storage location. there is no power left in the batteries and the former ocupants locked it pretty tight before leaving.\
 	You will have to power areas to raise the bolts on the doors. look out for secrets."
-	// cost =
+	suffix = "power_puzzle.dmm"
+	cost = 2
 	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
 
 /datum/map_template/ruin/space/astraeus
 	id = "astraeus"
-	suffix = "astraeus.dmm"
 	name = "Astraeus Ruin"
 	description = "This vessel served a lengthy period in the Nanotrasen fleet, before an accident in the munitions bay caused to to be destroyed while in active combat."
-	// cost =
+	suffix = "astraeus.dmm"
+	cost = 3
 	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_INHOSPITABLE)
 
 /datum/map_template/ruin/space/singularitylab
 	id = "singularitylab"
-	suffix = "singularity_lab.dmm"
 	name = "Singularity Lab"
 	description = "An overgrown facility, home to an unstarted singularity and many plants"
-	// cost =
+	suffix = "singularity_lab.dmm"
+	cost = 5
 	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER)
 
 /datum/map_template/ruin/space/spacemall
 	id = "spacemall"
-	suffix = "spacemall.dmm"
 	name = "Space Mall"
 	description = "An old shopping centre, owned by a former member of Nanotrasen's board of directors.."
-	// cost =
+	suffix = "spacemall.dmm"
+	cost = 3
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER)
 
 /datum/map_template/ruin/space/excavator_DK
 	id = "Excavator-DK"
-	suffix = "excavator_DK.dmm"
 	name = "Excavator DK Class"
 	description = "A heavily damaged DK class excavator"
-	// cost =
-
-/datum/map_template/ruin/space/crashedship
-	id = "crashedship"
-	suffix = "crashedship.dmm"
-	name = "Crashed Ship"
-	description = "Among civilian vessels the most common cause of tragedy is lack of food. \
-	This ship was outfitted with a multitude of food-generating features, then summarily ran into an asteroid shortly after takeoff."
-	// cost =
+	suffix = "excavator_DK.dmm"
+	cost = 1
 
 /datum/map_template/ruin/space/vaporwave
 	id = "vaporwave"
-	suffix = "vaporwave.dmm"
 	name = "Aesthetic Outpost"
 	description = "Pause and remember-- You are unique.You are special. Every mistake, trial, and hardship has helped to sculpt your real beauty. \
 	Stop hating yourself and start appreciating and loving yourself!"
-	// cost =
+	suffix = "vaporwave.dmm"
+	cost = 1
 
 /datum/map_template/ruin/space/hellfactory
 	id = "hellfactory"
-	suffix = "hellfactory.dmm"
 	name = "Heck Brewery"
 	description = "An abandoned warehouse and brewing facility, which has been recently rediscovered. Reports claim that the security system entered an ultra-hard lockdown, but these reports are inconclusive."
-	// cost =
+	suffix = "hellfactory.dmm"
+	cost = 1
 
 /datum/map_template/ruin/space/cryocontainment
 	id = "cryocontainment"
-	suffix = "cryocontainment.dmm"
 	name = "Cryogenic Containment Facility"
 	description = "Some old facility where they stored something in a cryotube to experiement on, obviously it got out and now the only thing it contains is Space Carps."
-	// cost =
+	suffix = "cryocontainment.dmm"
+	cost = 2
 
 /datum/map_template/ruin/space/dangerous_research
 	id = "dangerous_research"
-	suffix = "dangerous_research.dmm"
 	name = "Occult Research Station"
 	description = "This station was deemed unsuitable for continued experiments, and quickly abandoned."
-	// cost =
+	suffix = "dangerous_research.dmm"
+	cost = 2
 
 /datum/map_template/ruin/space/macspace
 	id = "fast_food"
-	suffix = "Fast_Food.dmm"
 	name = "Mac Space Restaurant"
 	description = "A fast food reataurant in space."
-	// cost =
+	suffix = "Fast_Food.dmm"
+	cost = 1
 
 /datum/map_template/ruin/space/scav_mining
 	id = "mining_asteroid"
-	suffix = "scav_mining.dmm"
 	name = "Mining asteroid"
 	description = "An abandoned mining operation on an asteroid that now has new ocupants that is not happy to se you"
-	// cost =
+	suffix = "scav_mining.dmm"
+	cost = 1
 
 /datum/map_template/ruin/space/transport18
 	id = "transport18"
-	suffix = "transport18.dmm"
 	name = "Booze Cruise"
 	description = "A freighter, damaged beyond repair and surrounded by a cloud of aluminium and... beer foam?"
-	// cost =
+	suffix = "transport18.dmm"
+	cost = 2
 
 /datum/map_template/ruin/space/fueldepot
 	id = "fueldepot"
-	suffix = "fueldepot.dmm"
 	name = "Fuel Depot"
 	description = "An orbital refueling station with the remains of a ship lodged among the debris."
-	// cost =
+	suffix = "fueldepot.dmm"
+	cost = 1
 
 /datum/map_template/ruin/space/ntfacility
 	id = "ntfacility"
-	suffix = "ntfacility.dmm"
 	name = "Abandoned Facility"
 	description = "A NT research station. Something has gone horribly wrong here."
-	// cost =
+	suffix = "ntfacility.dmm"
+	cost = 4
 
 /datum/map_template/ruin/space/glade
 	id = "dark_glade"
-	suffix = "dark_glade.dmm"
 	name = "Dark Glade"
 	description = "It's always dark in the ancient glade."
-	// cost =
+	suffix = "dark_glade.dmm"
+	cost = 1
 
 /datum/map_template/ruin/space/syndicircle
 	id = "provinggrounds"
-	suffix = "provinggrounds.dmm"
 	name = "Syndicate Battle Sphere"
 	description = "The Syndicate Battle Sphere, complete with guns!"
-	// cost =
+	suffix = "provinggrounds.dmm"
+	cost = 4
 
 /datum/map_template/ruin/space/oldstation
 	id = "oldstation"
-	suffix = "oldstation.dmm"
 	name = "Old Station"
 	description = "The old destroyed network of stations Alpha, Beta, Charlie, Tetta"
-	// cost =
+	suffix = "oldstation.dmm"
+	cost = 5
 	allow_duplicates = FALSE
 
 //							///
 //		MARK: WastePlanet
 //							///
-/datum/map_template/ruin/wasteplanet/weaponstest
-	id = "guntested"
-	name = "Weapons testing facility"
-	description = "A abandoned Nanotrasen weapons facility, presumably the place where the X-01 was manufactured."
-	suffix = "wasteplanet_lab.dmm"
-	// cost =
-	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS, RUIN_TAG_LIVEABLE)
-
 /datum/map_template/ruin/wasteplanet/pandora
 	id = "pandora_arena"
-	suffix = "wasteplanet_pandora.dmm"
 	name = "Pandora Arena"
 	description = "Some... thing has settled here."
-	// cost =
+	suffix = "wasteplanet_pandora.dmm"
+	cost = 4
 	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_MEGAFAUNA, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/wasteplanet/radiation
@@ -765,7 +749,7 @@
 	name = "Honorable deeds storage"
 	description = "A dumping ground for nuclear waste."
 	suffix = "wasteplanet_unhonorable.dmm"
-	// cost =
+	cost = 3
 	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
 
 /datum/map_template/ruin/wasteplanet/abandoned_mechbay
@@ -773,7 +757,7 @@
 	name = "Abandoned Mech Bay"
 	description = "A military base formerly used for staging 4 mechs and crew. God knows what's in it now."
 	suffix = "wasteplanet_abandoned_mechbay.dmm"
-	// cost =
+	cost = 4
 	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
 
 /datum/map_template/ruin/wasteplanet/fortress
@@ -781,49 +765,49 @@
 	name = "Fortress of Solitide"
 	description = "A fortress, although one you are probably more familiar with."
 	suffix = "wasteplanet_fortress_of_solitide.dmm"
-	// cost =
+	cost = 3
 
 /datum/map_template/ruin/wasteplanet/oreprocess
 	id = "oreprocess"
 	name = "Ore Processing Facility"
 	description = "A fortress, although one you are probably more familiar with.."
 	suffix = "wasteplanet_ore_proccessing_facility.dmm"
-	// cost =
+	cost = 3
 
 /datum/map_template/ruin/wasteplanet/tradepost
 	id = "oldpod"
 	name = "Tradepost"
 	description = "An abandoned tradepost."
 	suffix = "wasteplanet_tradepost.dmm"
-	// cost =
+	cost = 2
 
 /datum/map_template/ruin/wasteplanet/tarpit
 	id = "tarpit"
 	name = "Tar pit"
 	description = "A facility once constructed over a asphalt deposit."
 	suffix = "wasteplanet_tarpit.dmm"
-	// cost =
+	cost = 2
 
 /datum/map_template/ruin/wasteplanet/crash_kitchen
 	id = "crash_kitchen"
 	name = "Crashed Kitchen"
 	description = "A crashed part of some unlucky ship."
 	suffix = "wasteplanet_crash_kitchen.dmm"
-	// cost =
+	cost = 1
 
 /datum/map_template/ruin/wasteplanet/crahsed_abductor_ship
 	id = "crash_abductor_ship"
 	name = "Crashed Abductor Ship"
 	description = "A crashed abductor ship with something horrible goi'n inside."
 	suffix = "wasteplanet_ruined_abductor_ship.dmm"
-	// cost =
+	cost = 3
 
 /datum/map_template/ruin/wasteplanet/abondoned_containment
 	id = "claw_waste"
 	name = "Abandoned containment area"
 	description = "A containment zone that contains an unknown creature called 'Claws'. For some unknown reason, there is a crashed ship called 'Dareсt' near the containment zone."
 	suffix = "wasteplanet_claw_ruin.dmm"
-	// cost =
+	cost = 5
 
 //							///
 //		MARK: Whitesand
@@ -833,7 +817,7 @@
 	name = "Abandoned Medipen Factory"
 	description = "A once prosperous autoinjector manufacturing plant."
 	suffix = "whitesands_surface_medipen_plant.dmm"
-	// cost =
+	cost = 3
 	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER)
 
 /datum/map_template/ruin/whitesands/pubbyslopcrash
@@ -841,7 +825,7 @@
 	name = "Pubby Slop Crash"
 	description = "A failed attempt of the Nanotrasen nutrional replacement program"
 	suffix = "whitesands_surface_pubbyslopcrash.dmm"
-	// cost =
+	cost = 3
 	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER)
 
 //////////OUTSIDE SETTLEMENTS/RUINS//////////
@@ -850,7 +834,7 @@
 	name = "Hermit Saloon"
 	description = "A western style saloon, most popular spot for the hermits to gather planetside"
 	suffix = "whitesands_surface_camp_saloon.dmm"
-	// cost =
+	cost = 4
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_INHOSPITABLE)
 
 /datum/map_template/ruin/whitesands/survivors/combination //combined extra large ruin of several other whitesands survivor ruins
@@ -858,7 +842,7 @@
 	name = "Wasteland Survivor Village"
 	description = "A small encampment of nomadic survivors of the First Colony, and their descendants. By all accounts, feral and without allegance to anyone but themselves."
 	suffix = "whitesands_surface_camp_combination.dmm"
-	// cost =
+	cost = 3
 	allow_duplicates = FALSE
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_INHOSPITABLE, RUIN_TAG_HAZARDOUS)
 
@@ -867,7 +851,7 @@
 	name = "Starfury Crash"
 	description = "The remains of an unidentified syndicate battleship has crashed here."
 	suffix = "whitesands_surface_starfurycrash.dmm"
-	// cost =
+	cost = 3
 	allow_duplicates = FALSE
 
 /datum/map_template/ruin/whitesands/assaultpodcrash
@@ -875,42 +859,42 @@
 	name = "Crashed Syndicate Assault Drop Pod"
 	description = "The fauna of desert planets can be deadly even to equipped Syndicate Operatives."
 	suffix = "whitesands_surface_assaultpodcrash.dmm"
-	// cost =
+	cost = 2
 
 /datum/map_template/ruin/whitesands/conveniencestore
 	id = "ws-conveniencestore"
 	name = "Conveniently Abandoned Convenience Store"
 	description = "Pretty convenient that they have a convenience store out here, huh?"
 	suffix = "whitesands_surface_conveniencestore.dmm"
-	// cost =
+	cost = 1
 
 /datum/map_template/ruin/whitesands/onlyaspoonful
 	id = "ws-onlyaspoonful"
 	name = "Abandoned Spoon Factory"
 	description = "Literally a fucking spoon factory"
 	suffix = "whitesands_surface_onlyaspoonful.dmm"
-	// cost =
+	cost = 5
 
 /datum/map_template/ruin/whitesands/chokepoint
 	id = "ws-chokepoint"
 	name = "Chokepoint"
 	description = "Some sort of survivors, brandishing old nanotrasen security gear."
 	suffix = "whitesands_surface_chokepoint.dmm"
-	// cost =
+	cost = 1
 
 /datum/map_template/ruin/whitesands/survivors/drugstore
 	id = "ws-drugstore"
 	name = "Abandoned Store"
 	description = "A store that once sold a variety of items and equipment."
 	suffix = "whitesands_surface_camp_drugstore.dmm"
-	// cost =
+	cost = 3
 
 /datum/map_template/ruin/whitesands/e11_manufactory
 	id = "ws-e11manufactory"
 	name = "E-11 Manufacturing Plant"
 	description = "An old Eoehoma Firearms manufacturing plant dedicated to assembly of the beloved-by-many E-11 rifle."
 	suffix = "whitesands_surface_e11_manufactory.dmm"
-	// cost =
+	cost = 3
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_HAZARDOUS)
 
 /datum/map_template/ruin/whitesands/ruinsofweh
@@ -918,7 +902,7 @@
 	name = "Ruins of Weh"
 	description = "Ancient shrine which was rediscovered many times, yet every expedition turn into a disaster, it still holds many secrets within its walls."
 	suffix = "whitesands_surface_ruinsofweh.dmm"
-	// cost =
+	cost = 4
 
 //							///
 //		MARK: Plasma
@@ -929,14 +913,14 @@
 	name = "oldminer"
 	description = "The base of an old and experienced miner"
 	suffix = "oldminer.dmm"
-	// cost =
+	cost = 2
 
 /datum/map_template/ruin/plasma_gaint/dragon
 	id = "ps-dragon"
 	name = "dragon"
 	description = "An ancient and terrible dragon that lived for several centuries and ate hundreds of souls."
 	suffix = "dragon.dmm"
-	// cost =
+	cost = 5
 	allow_duplicates = FALSE
 
 //							///
@@ -948,14 +932,14 @@
 	name = "eltown"
 	description = "Town of Elysium"
 	suffix = "el_town.dmm"
-	// cost =
+	cost = 0
 
 /datum/map_template/ruin/earth_sand/el_citadel
 	id = "el_citadel"
 	name = "elcitadel"
 	description = "Fortress of Elysium"
 	suffix = "el_citadel.dmm"
-	// cost =
+	cost = 0
 
 //							///
 //		MARK: Anima
@@ -965,21 +949,21 @@
 	name = "Abandoned containment area"
 	description = "A containment zone that contains an unknown creature called 'Claws'. For some unknown reason, there is a crashed ship called 'Dareсt' near the containment zone."
 	suffix = "anima_claw_ruin.dmm"
-	// cost =
+	cost = 4
 
 /datum/map_template/ruin/anima/ice_drake
 	id = "ice_drake_anima"
 	name = "Dragon's Lair"
 	description = "\"First the creature's Flame breathed from beneath the stone, Hot battle-fumes, and the earth rumbled.\""
 	suffix = "anima_dragon_ice.dmm"
-	// cost =
+	cost = 4
 
 /datum/map_template/ruin/anima/plasma_drake
 	id = "plasma_dragon_anima"
 	name = "Large Dragon's Lair"
 	description = "An ancient and terrible dragon that lived for several centuries and ate hundreds of souls."
 	suffix = "anima_dragon_plasma.dmm"
-	// cost =
+	cost = 5
 	allow_duplicates = FALSE
 
 /datum/map_template/ruin/anima/heirophant
@@ -987,25 +971,25 @@
 	name = "Ancient Heirophant"
 	description = "something dangerous"
 	suffix = "anima_heirophant.dmm"
-	// cost =
+	cost = 3
 
 /datum/map_template/ruin/anima/old_miner
 	id = "old_miner_anima"
 	name = "Old Miner"
 	description = "The base of an old and experienced miner"
 	suffix = "anima_oldminer.dmm"
-	// cost =
+	cost = 2
 
 /datum/map_template/ruin/anima/pandora
 	id = "pandora_arena_anima"
 	name = "Pandora Arena"
 	description = "Some... thing has settled here."
 	suffix = "anima_pandora.dmm"
-	// cost =
+	cost = 4
 
 /datum/map_template/ruin/anima/crahsed_abductor_ship
 	id = "crash_abductor_ship_anima"
 	name = "Crashed Abductor Ship"
 	description = "A crashed abductor ship with something horrible goi'n inside."
 	suffix = "anima_ruined_abductor_ship.dmm"
-	// cost =
+	cost = 1
