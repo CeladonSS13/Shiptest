@@ -5,7 +5,7 @@
 	// prereq_ids = list("basic_shuttle")
 	// design_ids = list("engine_ion_t1")
 	// research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
-	export_price = 5000
+	export_price = 1000
 
 /datum/techweb_node/t2_shuttle_tech
 	// id = "t2_ion"
@@ -14,7 +14,7 @@
 	// prereq_ids = list("t1_ion")
 	// design_ids = list("engine_ion_t2")
 	// research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7500)
-	export_price = 7500
+	export_price = 2500
 
 /datum/techweb_node/t3_shuttle_tech
 	// id = "t3_ion"
@@ -23,4 +23,4 @@
 	// prereq_ids = list("t2_ion")
 	// design_ids = list("engine_ion_t3")
 	// research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
-	export_price = 10000
+	export_price = 5000
