@@ -8,6 +8,10 @@
 	},
 /turf/open/floor/concrete/slab_4,
 /area/science/misc_lab)
+"bd" = (
+/obj/item/storage/belt/utility/full,
+/turf/open/floor/concrete/slab_4,
+/area/science/misc_lab)
 "bm" = (
 /turf/closed/indestructible/rock,
 /area/science/misc_lab)
@@ -128,6 +132,8 @@
 /area/ruin/jungle)
 "kr" = (
 /obj/structure/filingcabinet/chestdrawer,
+/obj/item/clothing/under/rank/rnd/scientist,
+/obj/effect/spawner/random/medical/medkit,
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/science/misc_lab)
 "kC" = (
@@ -181,6 +187,7 @@
 /obj/machinery/computer/camera_advanced{
 	dir = 8
 	},
+/obj/structure/sign/flag/elysium/directional/west,
 /turf/open/floor/mineral/titanium/purple,
 /area/science/misc_lab)
 "nU" = (
@@ -250,8 +257,9 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/science/misc_lab)
 "ri" = (
-/obj/item/circuitboard/computer/rdconsole,
 /obj/machinery/holopad/emergency,
+/obj/item/clothing/under/rank/rnd/scientist,
+/obj/effect/spawner/random/medical/medkit,
 /turf/open/floor/mineral/titanium/blue,
 /area/science/misc_lab)
 "rr" = (
@@ -311,7 +319,8 @@
 /area/science/misc_lab)
 "uv" = (
 /obj/machinery/door/airlock/silver{
-	name = "Telescope Accesss"
+	name = "Telescope Accesss";
+	dir = 4
 	},
 /turf/open/floor/mineral/titanium/purple,
 /area/science/misc_lab)
@@ -339,7 +348,10 @@
 "vJ" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/bong/lungbuster,
+/obj/item/bong/lungbuster{
+	pixel_x = -10;
+	pixel_y = 17
+	},
 /obj/item/reagent_containers/food/snacks/grown/cannabis,
 /turf/open/floor/carpet/royalblack,
 /area/science/misc_lab)
@@ -448,8 +460,9 @@
 /obj/structure/closet/wardrobe/science_white,
 /obj/item/gun/energy/disabler,
 /obj/item/clothing/head/helmet/m10_elysium,
-/obj/item/clothing/under/solfed/elysium,
 /obj/item/clothing/suit/armor/vest,
+/obj/item/storage/belt/security/webbing/elysium,
+/obj/item/clothing/under/utility,
 /turf/open/floor/mineral/titanium/blue,
 /area/science/misc_lab)
 "Da" = (
@@ -562,6 +575,9 @@
 "Na" = (
 /turf/open/water/jungle,
 /area/ruin/jungle)
+"Nz" = (
+/turf/closed/mineral/random/jungle,
+/area/science/misc_lab)
 "NM" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -575,6 +591,7 @@
 /obj/structure/bed,
 /obj/item/bedsheet/rd,
 /obj/structure/curtain/cloth/elysium,
+/obj/item/circuitboard/computer/rdconsole,
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/science/misc_lab)
 "Pf" = (
@@ -659,6 +676,10 @@
 "TC" = (
 /turf/open/floor/mineral/plastitanium,
 /area/science/misc_lab)
+"TJ" = (
+/obj/structure/sign/poster/elysium/logo,
+/turf/closed/wall/mineral/plastitanium,
+/area/science/misc_lab)
 "TQ" = (
 /obj/item/kirbyplants/photosynthetic{
 	pixel_y = 25
@@ -672,7 +693,6 @@
 	pixel_x = 4
 	},
 /obj/item/stamp/elysium/republic,
-/obj/item/clothing/head/helmet/solfedm11/elysium_wraps,
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/science/misc_lab)
 "TS" = (
@@ -695,8 +715,7 @@
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/science/misc_lab)
 "VY" = (
-/obj/item/card/id/elysium,
-/turf/closed/indestructible/rock,
+/turf/closed/mineral/random/jungle,
 /area/ruin/jungle)
 "Wn" = (
 /obj/effect/spawner/structure/window/hollow,
@@ -782,9 +801,9 @@ HX
 HX
 iy
 HX
-iy
-iy
-iy
+VY
+VY
+VY
 HX
 HX
 iy
@@ -819,9 +838,9 @@ HX
 HX
 HX
 iy
-iy
-HX
-HX
+VY
+VY
+VY
 HX
 HX
 HX
@@ -855,8 +874,8 @@ HX
 iy
 iy
 iy
-HX
-HX
+VY
+VY
 HX
 HX
 HX
@@ -888,9 +907,9 @@ HX
 HX
 HX
 HX
-iy
-iy
-HX
+VY
+VY
+VY
 iy
 HX
 HX
@@ -924,9 +943,9 @@ HX
 HX
 HX
 iy
-iy
-HX
-HX
+VY
+VY
+VY
 HX
 HX
 HX
@@ -1237,7 +1256,7 @@ CB
 Pw
 Pw
 Pw
-Pw
+TJ
 BP
 hr
 Pw
@@ -1291,7 +1310,7 @@ se
 CB
 lV
 Na
-HX
+VY
 HX
 HX
 iy
@@ -1326,7 +1345,7 @@ Pw
 Pw
 AT
 Na
-Na
+VY
 HX
 HX
 HX
@@ -1360,7 +1379,7 @@ dO
 xK
 Pw
 lV
-HX
+VY
 Na
 HX
 HX
@@ -1396,7 +1415,7 @@ xK
 Pw
 lV
 Na
-HX
+VY
 HX
 HX
 iy
@@ -1431,7 +1450,7 @@ uv
 Pw
 lV
 Na
-HX
+VY
 HX
 HX
 HX
@@ -1473,7 +1492,7 @@ HX
 "}
 (22,1,1) = {"
 HX
-iy
+VY
 HX
 HX
 HX
@@ -1604,8 +1623,8 @@ Pw
 Pw
 Pw
 CB
-bm
-HX
+Nz
+VY
 HX
 HX
 HX
@@ -1617,30 +1636,30 @@ HX
 HX
 HX
 HX
-HX
-HX
+VY
+VY
 CB
 GG
 NM
 CB
-bm
+Nz
 CB
 CB
 CB
-bm
-CB
-CB
-CB
-CB
+Nz
 CB
 CB
 CB
 CB
 CB
-bm
+CB
+CB
+CB
+CB
+Nz
 Na
-HX
-HX
+VY
+VY
 HX
 HX
 HX
@@ -1652,17 +1671,17 @@ HX
 HX
 HX
 HX
-HX
-HX
+VY
+VY
 CB
 Kr
 MT
 no
-HX
-HX
-HX
-HX
-HX
+VY
+VY
+VY
+VY
+VY
 Na
 Na
 Na
@@ -1670,8 +1689,8 @@ HX
 qK
 Na
 Na
-HX
-HX
+VY
+VY
 HX
 HX
 HX
@@ -1688,18 +1707,18 @@ HX
 HX
 HX
 HX
-HX
-CB
+VY
+bd
 dm
 EU
 TS
+VY
 HX
 HX
-HX
-HX
-HX
-HX
-HX
+VY
+VY
+VY
+VY
 HX
 HX
 HX
@@ -1734,7 +1753,7 @@ HX
 Bd
 fm
 HX
-HX
+VY
 HX
 HX
 HX
@@ -1765,11 +1784,11 @@ HX
 HX
 HX
 HX
-HX
+VY
 HX
 qp
 Kc
-HX
+VY
 HX
 HX
 HX
@@ -1792,7 +1811,7 @@ HX
 HX
 iy
 iy
-VY
+HX
 HX
 HX
 HX
@@ -1800,11 +1819,11 @@ HX
 HX
 HX
 iy
-HX
-HX
+VY
+VY
 RX
 Rf
-HX
+VY
 HX
 HX
 HX
@@ -1834,12 +1853,12 @@ HX
 HX
 HX
 HX
-HX
+VY
 iy
 HX
 HX
-HX
-HX
+VY
+VY
 HX
 HX
 iy
@@ -1870,10 +1889,10 @@ iy
 iy
 iy
 HX
-HX
+VY
 iy
 iy
-HX
+VY
 iy
 iy
 iy
