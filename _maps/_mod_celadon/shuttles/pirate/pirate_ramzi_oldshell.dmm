@@ -478,16 +478,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
-"pO" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/poddoor{
-	id = "Oldshell_blast_inf"
-	},
-/obj/docking_port/mobile{
-	dir = 2
-	},
-/turf/open/floor/pod,
-/area/ship/cargo)
 "pQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
@@ -1288,6 +1278,18 @@
 /area/ship/engineering/electrical)
 "Ob" = (
 /turf/closed/wall/mineral/plastitanium,
+/area/ship/cargo)
+"On" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/poddoor{
+	id = "Oldshell_blast_inf"
+	},
+/obj/docking_port/mobile{
+	launch_status = 0;
+	port_direction = 2;
+	preferred_direction = 4
+	},
+/turf/open/floor/pod,
 /area/ship/cargo)
 "Ov" = (
 /obj/structure/cable{
@@ -2100,7 +2102,7 @@ aq
 Ya
 Ya
 Ya
-pO
+On
 YZ
 Pl
 qG
