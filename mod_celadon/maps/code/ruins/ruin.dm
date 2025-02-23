@@ -480,15 +480,6 @@
 	cost = 5
 	allow_duplicates = FALSE
 
-// /datum/map_template/ruin/lavaland/elephant_graveyard
-// 	name = "Elephant Graveyard"	// руина от офов
-// 	id = "Graveyard"
-// 	description = "An abandoned graveyard, calling to those unable to continue."
-// 	suffix = "lavaland_surface_elephant_graveyard.dmm"
-// 	allow_duplicates = FALSE
-// 	cost = 10
-// 	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MINOR_LOOT, RUIN_TAG_HAZARDOUS, RUIN_TAG_INHOSPITABLE)
-
 //							///
 //		MARK: Rockplanet
 //							///
