@@ -23,7 +23,7 @@ MARK:		Pistols
 /datum/supply_pack/faction/independent/gun/ringneck
 	name = "Ringneck Pistol Crate"
 	desc = "Contains a civillian variant of the Ringneck pistol, produced by Scarborough Arms and chambered in 10mm."
-	cost = 1000
+	cost = 900
 	contains = list(/obj/item/storage/guncase/pistol/ringneck)
 
 /datum/supply_pack/faction/independent/gun/candors
@@ -63,14 +63,14 @@ MARK:		Energy
 /datum/supply_pack/faction/independent/gun/laser
 	name = "Laser Gun Crate"
 	desc = "Contains a NT-SL mass-produced lethal, high-energy laser gun."
-	cost = 1000
+	cost = 500
 	contains = list(/obj/item/storage/guncase/energy/laser)
 	crate_name = "laser crate"
 
 /datum/supply_pack/faction/independent/gun/ion
 	name = "Ion Rifle Crate"
 	desc = "Contains a single Mk.I Ion Projector, a special anti-tank rifle designed to disable electronic threats at range."
-	cost = 10000
+	cost = 4500
 	contains = list(/obj/item/storage/guncase/energy/iongun)
 	crate_name = "ion rifle crate"
 	crate_type = /obj/structure/closet/crate/secure/plasma
@@ -78,14 +78,14 @@ MARK:		Energy
 /datum/supply_pack/faction/independent/gun/laser/kalix/pistol
 	name = "Etherbor SG-8 Beam Pistol Crate"
 	desc = "Contains a single SG-8 Beam Pistol, a civilian-grade sidearm developed in the PGF, manufactured by Etherbor Industries."
-	cost = 1000
+	cost = 1500
 	contains = list(/obj/item/storage/guncase/pistol/kalixpistol)
 	crate_name = "beam pistol crate"
 
 /datum/supply_pack/faction/independent/gun/laser/kalix
 	name = "Etherbor BG-12 Beam Rifle Crate"
 	desc = "Contains a single BG-12 Beam Rifle, a civilian-grade semi-automatic developed in the PGF, manufactured by Etherbor Industries."
-	cost = 3000
+	cost = 2500
 	contains = list(/obj/item/storage/guncase/energy/kalixrifle)
 	crate_name = "beam rifle crate"
 
@@ -169,7 +169,7 @@ MARK:		Rifles
 
 /datum/supply_pack/faction/independent/gun/cobra20
 	name = "Cobra-20 SMG Crate"
-	desc = "Contains a civillian variant of the Cobra SMG, manufactured by Scaraborough Arms and chambered in .45"
+	desc = "Contains a civillian variant of the Cobra SMG, manufactured by Scarborough Arms and chambered in .45"
 	cost = 3000
 	contains = list(/obj/item/storage/guncase/cobra)
 	crate_name = "SMG crate"
