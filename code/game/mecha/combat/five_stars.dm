@@ -18,7 +18,7 @@
 	pixel_x = -32
 	pixel_y = -32
 
-/obj/mecha/combat/combat_tank/Initialize()
+/obj/mecha/combat/combat_tank/equiped/Initialize()
 	. = ..()
 	var/obj/item/mecha_parts/mecha_equipment/ME = new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/tank(src)
 	ME.attach(src)
@@ -27,7 +27,7 @@
 	ME = new /obj/item/mecha_parts/mecha_equipment/generator(src)
 	ME.attach(src)
 
-/obj/mecha/combat/combat_tank/loaded/Initialize()
+/obj/mecha/combat/combat_tank/equiped/loaded/Initialize()
 	. = ..()
 	max_ammo()
 

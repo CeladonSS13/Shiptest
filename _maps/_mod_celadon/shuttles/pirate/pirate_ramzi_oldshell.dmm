@@ -31,6 +31,7 @@
 /obj/item/gun/energy/laser/e10,
 /obj/item/storage/belt/security/webbing/hardliners,
 /obj/item/stock_parts/cell/gun/upgraded,
+/obj/effect/decal/cleanable/sprayweb,
 /turf/open/floor/mineral/titanium/white,
 /area/ship/medical)
 "bz" = (
@@ -84,7 +85,9 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/salvageable/autolathe,
+/obj/structure/salvageable/autolathe{
+	salvageable_parts = list(/obj/item/stack/sheet/glass/two = 80, /obj/item/stack/cable_coil/cut = 80, /obj/item/stack/ore/salvage/scraptitanium/five = 60, /obj/item/stack/ore/salvage/scrapmetal/five = 60, /obj/effect/spawner/random/salvage_matter_bin = 40, /obj/effect/spawner/random/salvage_matter_bin = 40, /obj/effect/spawner/random/salvage_matter_bin = 40, /obj/effect/spawner/random/salvage_manipulator = 30, /obj/item/circuitboard/machine/autolathe = 100, /obj/item/stack/sheet/metal/five = 10, /obj/item/stack/sheet/glass/five = 10, /obj/item/stack/sheet/plastic/five = 10, /obj/item/stack/sheet/plasteel/five = 10, /obj/item/stack/sheet/mineral/silver/five = 10, /obj/item/stack/sheet/mineral/gold/five = 10, /obj/item/stack/sheet/mineral/plasma/five = 10, /obj/item/stack/sheet/mineral/uranium/five = 5, /obj/item/stack/sheet/mineral/diamond/five = 1)
+	},
 /obj/effect/decal/cleanable/sprayweb,
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
@@ -110,9 +113,14 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
+"ew" = (
+/obj/item/clothing/head/helmet/skull,
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/cargo)
 "eK" = (
 /obj/machinery/porta_turret/ship/ramzi/heavy{
-	faction = list("playerPirates","turret")
+	faction = list("playerPirate","turret");
+	id = "oldshell_turrets"
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/cargo)
@@ -123,8 +131,14 @@
 /obj/structure/window/plasma/reinforced/spawner/east,
 /obj/item/gun/ballistic/shotgun/automatic/bulldog/drum,
 /obj/item/gun/ballistic/shotgun/automatic/bulldog/drum,
+/obj/item/gun/ballistic/automatic/pistol/usp45,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security)
+"fd" = (
+/obj/structure/kitchenspike,
+/obj/effect/mob_spawn/human/corpse/frontier/internals,
+/turf/open/floor/plating,
+/area/ship/cargo)
 "fC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
@@ -137,11 +151,13 @@
 	pixel_y = -16;
 	pixel_x = 11
 	},
+/obj/effect/decal/cleanable/sprayweb,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
 "fO" = (
 /obj/machinery/porta_turret/ship/ramzi{
-	faction = list("playerPirates","turret")
+	faction = list("playerPirate","turret");
+	id = "oldshell_turrets"
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/cargo/port)
@@ -200,6 +216,10 @@
 /obj/structure/catwalk/over/plated_catwalk,
 /turf/open/floor/plating,
 /area/ship/security)
+"iO" = (
+/obj/item/clothing/head/helmet/skull,
+/turf/closed/wall/mineral/titanium/survival/nodiagonal,
+/area/ship/cargo/port)
 "iP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
@@ -300,6 +320,7 @@
 /obj/machinery/atmospherics/components/unary/tank/toxins{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/sprayweb,
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "kP" = (
@@ -311,6 +332,9 @@
 	dir = 9
 	},
 /obj/machinery/holopad/emergency/command,
+/obj/item/paper{
+	default_raw_text = "1. Нужно починить помпу на давлении ведущую к двигателям. 2. Пожарить мясо риолы которое мы добыли с последней вылазки. 3. Инженер должен заменить механизм заряжания в танке, запчасти от ракетницы должны подойти для затвора."
+	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "kU" = (
@@ -328,6 +352,7 @@
 	dir = 8
 	},
 /obj/structure/catwalk/over/plated_catwalk,
+/obj/item/ammo_box/magazine/usp45_standart,
 /turf/open/floor/plating,
 /area/ship/security)
 "le" = (
@@ -396,6 +421,7 @@
 	pixel_y = 9
 	},
 /obj/machinery/light/directional/south,
+/obj/item/radio/headset/pirate/alt,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "mh" = (
@@ -403,7 +429,8 @@
 /area/ship/engineering/electrical)
 "mi" = (
 /obj/machinery/porta_turret/ship/ramzi/super_heavy{
-	faction = list("playerPirates","turret")
+	faction = list("playerPirate","turret");
+	id = "oldshell_turrets"
 	},
 /turf/closed/wall/mineral/titanium/survival/nodiagonal,
 /area/ship/engineering/electrical)
@@ -439,20 +466,21 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering/electrical)
 "nB" = (
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/medical/surgery_tool/common,
 /obj/effect/spawner/random/medical/minor_healing,
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 5
 	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/mineral/titanium/white,
 /area/ship/medical)
 "nW" = (
 /obj/machinery/porta_turret/ship/ramzi/heavy{
-	faction = list("playerPirates","turret")
+	faction = list("playerPirate","turret");
+	id = "oldshell_turrets"
 	},
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/cargo/port)
@@ -462,6 +490,7 @@
 "on" = (
 /obj/structure/table/wood/fancy,
 /obj/item/melee/knife/combat,
+/obj/item/lighter/clockwork,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering/electrical)
 "os" = (
@@ -469,7 +498,8 @@
 /area/template_noop)
 "oL" = (
 /obj/machinery/porta_turret/ship/ramzi/heavy{
-	faction = list("playerPirates","turret")
+	faction = list("playerPirate","turret");
+	id = "oldshell_turrets"
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/cargo/port)
@@ -495,8 +525,8 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
@@ -515,6 +545,9 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
 	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
 "qe" = (
@@ -528,6 +561,7 @@
 	dir = 6
 	},
 /obj/machinery/portable_atmospherics/canister/toxins,
+/obj/effect/decal/cleanable/sprayweb,
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "qx" = (
@@ -647,6 +681,9 @@
 	id = "oldshell_engines";
 	name = "Thruster Blast Door"
 	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "uW" = (
@@ -671,8 +708,10 @@
 	},
 /obj/machinery/turretid{
 	pixel_y = 4;
-	id = "jupiter_turrets";
-	pixel_x = -27
+	id = "oldshell_turrets";
+	pixel_x = -27;
+	req_access = null;
+	req_ship_access = 1
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
@@ -695,6 +734,7 @@
 	pixel_x = 10
 	},
 /obj/item/storage/box/ammo/a12g_buckshot,
+/obj/item/radio/headset/pirate/alt,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "vK" = (
@@ -706,6 +746,27 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/effect/decal/cleanable/blood/tracks,
+/obj/structure/closet/emcloset/wall/directional/east,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/mask/breath,
+/obj/item/storage/box/flares,
+/obj/item/crowbar/syndie,
+/obj/item/reagent_containers/hypospray/medipen/survival,
+/obj/item/reagent_containers/hypospray/medipen/survival,
+/obj/item/reagent_containers/hypospray/medipen/survival,
+/obj/item/reagent_containers/hypospray/medipen/survival,
+/obj/item/reagent_containers/hypospray/medipen/survival,
+/obj/item/reagent_containers/hypospray/medipen/tricord,
+/obj/item/reagent_containers/hypospray/medipen/tricord,
+/obj/item/reagent_containers/hypospray/medipen/tricord,
+/obj/item/reagent_containers/hypospray/medipen/tricord,
+/obj/item/reagent_containers/hypospray/medipen/tricord,
+/obj/item/reagent_containers/hypospray/medipen/tricord,
+/obj/item/reagent_containers/hypospray/medipen/tricord,
 /turf/open/floor/plating,
 /area/ship/security)
 "wL" = (
@@ -760,6 +821,7 @@
 	},
 /obj/machinery/airalarm/directional/east,
 /obj/item/tank/jetpack/suit,
+/obj/effect/decal/cleanable/sprayweb,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
 "yh" = (
@@ -859,7 +921,9 @@
 	name = "Engine shutters";
 	pixel_x = -24
 	},
-/obj/machinery/atmospherics/components/binary/pump,
+/obj/machinery/atmospherics/components/binary/pump{
+	name = "engine fuel pump"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "Ad" = (
@@ -908,7 +972,8 @@
 /area/ship/medical)
 "BM" = (
 /obj/machinery/porta_turret/ship/ramzi/super_heavy{
-	faction = list("playerPirates","turret")
+	faction = list("playerPirate","turret");
+	id = "oldshell_turrets"
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering/electrical)
@@ -949,6 +1014,7 @@
 /obj/item/clothing/glasses/hud/security/sunglasses/hardliners,
 /obj/item/tank/jetpack/suit,
 /obj/item/tank/jetpack/suit,
+/obj/item/storage/box/teargas,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security)
 "Cj" = (
@@ -979,7 +1045,6 @@
 	dir = 1
 	},
 /obj/machinery/airalarm/directional/east,
-/obj/item/clothing/under/syndicate/camo,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
 "CJ" = (
@@ -994,9 +1059,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/power/apc/auto_name/directional/east,
-/obj/machinery/power/terminal{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/effect/spawner/random/trash/mess,
@@ -1004,6 +1066,12 @@
 	dir = 8;
 	pixel_x = 19;
 	pixel_y = 11
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/terminal{
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
@@ -1161,7 +1229,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/item/clothing/mask/balaclava/combat,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
 "He" = (
@@ -1241,20 +1308,27 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering/electrical)
 "Kc" = (
-/obj/item/mecha_parts/mecha_equipment/antiproj_armor_booster,
-/obj/item/mecha_parts/mecha_equipment/anticcw_armor_booster{
-	pixel_x = -4
-	},
 /obj/structure/table/reinforced,
 /obj/machinery/recharger{
-	pixel_y = 6;
-	pixel_x = -6
+	pixel_y = 4;
+	pixel_x = -12
+	},
+/obj/machinery/cell_charger{
+	pixel_x = 3;
+	pixel_y = 4
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo/port)
 "Kd" = (
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/crew/dorm)
+"Kt" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bed/roller,
+/obj/effect/turf_decal/corner/opaque/blue/full,
+/obj/item/bodybag,
+/turf/open/floor/mineral/titanium/white,
+/area/ship/medical)
 "KP" = (
 /obj/machinery/computer/operating,
 /obj/effect/turf_decal/corner/opaque/blue/full,
@@ -1291,6 +1365,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/roller,
 /obj/effect/turf_decal/corner/opaque/blue/full,
+/obj/item/defibrillator/compact/combat/loaded,
 /turf/open/floor/mineral/titanium/white,
 /area/ship/medical)
 "LM" = (
@@ -1313,6 +1388,9 @@
 	},
 /obj/structure/table/reinforced,
 /obj/structure/table/reinforced,
+/obj/item/mecha_parts/mecha_equipment/antiproj_armor_booster{
+	pixel_x = 7
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo/port)
 "Mp" = (
@@ -1329,13 +1407,12 @@
 /obj/structure/cable{
 	icon_state = "0-1"
 	},
-/obj/item/clothing/under/syndicate/camo,
-/obj/item/clothing/mask/balaclava/combat,
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_y = -16;
 	pixel_x = 11
 	},
+/obj/effect/decal/cleanable/sprayweb,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
 "Nd" = (
@@ -1348,11 +1425,35 @@
 	dir = 4
 	},
 /obj/structure/catwalk/over/plated_catwalk,
+/obj/item/ammo_box/magazine/usp45_standart,
 /turf/open/floor/plating,
 /area/ship/security)
 "Nu" = (
 /obj/effect/spawner/bunk_bed,
 /obj/effect/spawner/random/trash/mess,
+/obj/structure/closet/wall/directional/west,
+/obj/item/clothing/mask/balaclava/combat,
+/obj/item/clothing/mask/balaclava/combat,
+/obj/item/clothing/under/syndicate/camo,
+/obj/item/clothing/under/syndicate/camo,
+/obj/item/clothing/gloves/combat,
+/obj/item/clothing/gloves/combat,
+/obj/item/clothing/glasses/hud/security/sunglasses/hardliners,
+/obj/item/clothing/glasses/hud/security/sunglasses/hardliners,
+/obj/item/clothing/glasses/hud/security/sunglasses/hardliners,
+/obj/item/radio,
+/obj/item/radio,
+/obj/item/radio,
+/obj/item/radio,
+/obj/item/radio,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/item/book/granter/action/origami,
+/obj/item/radio/headset/pirate/alt,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
 "Nx" = (
@@ -1380,7 +1481,8 @@
 /area/ship/security)
 "NV" = (
 /obj/machinery/porta_turret/ship/ramzi/light{
-	faction = list("playerPirates","turret")
+	faction = list("playerPirate","turret");
+	id = "oldshell_turrets"
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering/electrical)
@@ -1424,7 +1526,8 @@
 "Pa" = (
 /obj/machinery/porta_turret/ship/ramzi/super_heavy{
 	dir = 1;
-	faction = list("playerPirates","turret")
+	faction = list("playerPirate","turret");
+	id = "oldshell_turrets"
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering/electrical)
@@ -1444,6 +1547,7 @@
 	icon_state = "lattice-8"
 	},
 /obj/machinery/light/directional/south,
+/obj/effect/decal/cleanable/sprayweb,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "PC" = (
@@ -1478,6 +1582,7 @@
 "QG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/sofa/olive/old/corner/directional/east,
+/obj/effect/decal/cleanable/sprayweb,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "QN" = (
@@ -1508,6 +1613,9 @@
 	pixel_y = 21;
 	pixel_x = 12
 	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/mineral/titanium/white,
 /area/ship/medical)
 "Rf" = (
@@ -1530,6 +1638,10 @@
 	pixel_x = 8;
 	pixel_y = 22
 	},
+/obj/item/binoculars{
+	pixel_y = 12
+	},
+/obj/item/radio/headset/pirate/alt/captain,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "RL" = (
@@ -1557,9 +1669,17 @@
 /obj/item/storage/box/ammo/c22lr/ap,
 /obj/item/clothing/suit/hazardvest/hardliners,
 /obj/item/clothing/under/syndicate/hardliners/jumpsuit,
-/obj/item/storage/box/stockparts,
 /obj/item/stack/circuit_stack/full,
 /obj/item/stack/circuit_stack/full,
+/obj/item/clothing/head/hardhat/weldhat/white,
+/obj/item/blackmarket_uplink{
+	pixel_x = 8;
+	pixel_y = 22
+	},
+/obj/item/storage/box/stockparts/basic,
+/obj/item/storage/box/fireworks/dangerous,
+/obj/item/stack/cable_coil/red,
+/obj/item/radio/headset/pirate/alt,
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "Sc" = (
@@ -1583,6 +1703,10 @@
 "Sj" = (
 /turf/closed/wall/mineral/titanium/survival/nodiagonal,
 /area/ship/crew/dorm)
+"Sl" = (
+/obj/item/clothing/head/helmet/skull,
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/engineering/electrical)
 "SI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/vomit/old{
@@ -1596,8 +1720,9 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/greenglow,
-/obj/machinery/power/rtg/advanced,
-/obj/item/stock_parts/capacitor/quadratic,
+/obj/machinery/power/rtg/advanced{
+	power_gen = 2000
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "SY" = (
@@ -1656,7 +1781,8 @@
 /area/ship/engineering/electrical)
 "TR" = (
 /obj/machinery/porta_turret/ship/ramzi/heavy{
-	faction = list("playerPirates","turret")
+	faction = list("playerPirate","turret");
+	id = "oldshell_turrets"
 	},
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/crew/dorm)
@@ -1691,6 +1817,10 @@
 "Wa" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
+"Wy" = (
+/obj/item/clothing/head/helmet/skull,
+/turf/closed/wall/r_wall/syndicate,
+/area/ship/engineering/electrical)
 "WQ" = (
 /obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt,
@@ -1710,6 +1840,7 @@
 	pixel_y = 9
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/item/radio/headset/pirate/alt,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "Xd" = (
@@ -1724,7 +1855,8 @@
 /area/template_noop)
 "Yd" = (
 /obj/machinery/porta_turret/ship/ramzi{
-	faction = list("playerPirates","turret")
+	faction = list("playerPirate","turret");
+	id = "oldshell_turrets"
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/cargo)
@@ -1923,7 +2055,7 @@ Ya
 "}
 (6,1,1) = {"
 Ya
-mA
+Sl
 mh
 qo
 PC
@@ -1941,7 +2073,7 @@ LM
 He
 on
 uW
-mh
+Wy
 Ya
 "}
 (7,1,1) = {"
@@ -2044,7 +2176,7 @@ hQ
 ZJ
 bk
 bO
-Lw
+Kt
 Eb
 Ad
 jf
@@ -2319,7 +2451,7 @@ Ya
 Ya
 Ya
 oL
-Ew
+iO
 Ew
 fO
 Ya
@@ -2327,7 +2459,7 @@ Ya
 Ya
 Yd
 yh
-Ob
+ew
 eK
 Ya
 Ya
@@ -2350,7 +2482,7 @@ Ya
 Ya
 Ya
 bL
-UI
+fd
 Ya
 Ya
 Ya
