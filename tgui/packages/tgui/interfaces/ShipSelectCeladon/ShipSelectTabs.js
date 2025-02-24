@@ -17,8 +17,23 @@ const formatShipTime = (minTime, playMin, autoMeet) => {
   );
 };
 
-const searchFor = (searchText) =>
-  createSearch(searchText, (thing) => thing.name);
+/**
+ * Поиск по тэгам в корабле
+ * @param searchText - текст который ищем
+ * @param tags - список тэгов по которым ищем
+ * @returns true или false
+ */
+export const searchWithTags = (searchText, tags) => {
+  const preparedSearchText = searchText.toLowerCase().trim();
+  let isFound = createSearch(preparedSearchText, (ship) => ship.name);
+
+  if (tags && tags.length !== 0) {
+    const filteredTags = tags.filter((str) => str.toLowerCase().includes(preparedSearchText));
+    isFound = filteredTags.length !== 0;
+  }
+
+  return isFound;
+};
 
 // Вкладка выбора уже активированного корабля
 export const ActiveShipTab = (props) => {
@@ -234,7 +249,7 @@ export const ShipPurchaseTab = (props) => {
         </>
       }
     >
-      {templates.filter(searchFor(searchText)).map((template) => (
+      {templates.filter((template) => searchWithTags(searchText, template.tags)).map((template) => (
         <Collapsible
           title={template.name}
           key={template.name}
