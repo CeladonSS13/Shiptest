@@ -9,7 +9,10 @@
 /datum/ship_select/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if (!ui)
-		ui = new(user, src, "ShipSelect")
+		//[CELADON-EDIT] - Вынес интерфейс в новый файл, добавил сортировку по тэгу
+		//ui = new(user, src, "ShipSelect") [CELADON-EDIT] - ORIGINAL
+		ui = new(user, src, "ShipSelectCeladon")
+		//[/CELADON-EDIT]
 		ui.open()
 
 /datum/ship_select/ui_act(action, list/params, datum/tgui/ui, datum/ui_state/state)
