@@ -567,7 +567,7 @@
 	description = "A containment zone built around a certain creature..."
 	id = "lasttemplar"
 	suffix = "rockplanet_lasttemplar.dmm"
-  cost = 3
+	cost = 3
 
 //							///
 //		MARK: Space
