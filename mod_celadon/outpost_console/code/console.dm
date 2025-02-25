@@ -323,7 +323,7 @@
 	contraband = FALSE
 	self_paid = FALSE
 
-	podType = /obj/structure/closet/supplypod/extractionpod
+	podType = /obj/structure/closet/supplypod/syndicate
 
 	charge_account = ACCOUNT_SYN
 
@@ -337,6 +337,21 @@
 /obj/machinery/computer/cargo/faction/syndicate/ui_static_data(mob/user)
 	var/list/data = faction_ui_static_data(user, /datum/faction/syndicate)
 	return data
+
+/obj/structure/closet/supplypod/syndicate
+	name = "Syndicate Extraction Pod"
+	desc = "A specalised, blood-red styled pod for extracting high-value targets out of active mission areas."
+	specialised = TRUE
+	style = STYLE_SYNDICATE
+	bluespace = TRUE
+	explosionSize = list(0,0,0,0)
+	delays = list(POD_TRANSIT = 20, POD_FALLING = 4, POD_OPENING = 30, POD_LEAVING = 30)
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
+
+/obj/structure/closet/supplypod/syndicate/Initialize()
+	. = ..()
+	var/turf/picked_turf = pick(GLOB.holdingfacility)
+	reverse_dropoff_coords = list(picked_turf.x, picked_turf.y, picked_turf.z)
 
 /*
 	Inteq
