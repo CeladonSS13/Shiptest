@@ -129,7 +129,7 @@
 /mob/living/simple_animal/hostile/human/solfed/ranged/shotgun/incendiary
 	name = "\improper SolFed Flammenwachter"
 	desc = "A Wachter serving the SolFed navy. He wields an imported CM-15, ready to blast unauthorized individuals with heavy FIRE."
-	casingtype = /obj/item/ammo_casing/shotgun/incendiary
+	casingtype = /obj/item/ammo_casing/shotgun/dragonsbreath
 
 /mob/living/simple_animal/hostile/human/solfed/ranged/gauss
 	name = "\improper SolFed Gaussmarine"
