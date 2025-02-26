@@ -105,7 +105,7 @@
 	projectilesound = 'mod_celadon/_storge_sounds/sound/gun/g36.ogg'
 
 /mob/living/simple_animal/hostile/human/solfed/ranged/gunner/elysium //I HATE CLIP GUNS
-	name = "\improper SolFed Haris"
+	name = "\improper Elysium Brigade Haris"
 	desc = "A brave Haris serving the Elysium Brigade. Holds tight grip of his trusty P16, ready to defend his nation."
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/solfed/marine/elysium
 	armor_base = /obj/item/clothing/suit/armor/vest/bulletproof
