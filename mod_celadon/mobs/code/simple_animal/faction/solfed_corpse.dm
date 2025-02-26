@@ -48,12 +48,14 @@
 	id = /obj/item/card/id/solfed
 
 /obj/effect/mob_spawn/human/corpse/solfed/marine/elysium
-	name = "SolFed Haris"
+	name = "Elysium Brigade Haris"
 	id_job = "Haris"
+	hairstyle = "Bald"
+	facial_hairstyle = "Shaved"
 	outfit = /datum/outfit/solfed/marine/elysium
 
 /datum/outfit/solfed/marine/elysium
-	name = "SolFed Haris Corpse"
+	name = "Elysium Brigade Haris Corpse"
 	uniform = /obj/item/clothing/under/solfed/camo/elysium
 	head = /obj/item/clothing/head/helmet/solfed/m11/elysium
 	suit = /obj/item/clothing/suit/armor/vest/bulletproof
@@ -213,12 +215,12 @@
 	id = /obj/item/card/id/solfed/commander
 
 /obj/effect/mob_spawn/human/corpse/solfed/space/elysium
-	name = "SolFed Space Haris"
+	name = "Elysium Brigade Space Haris"
 	id_job = "Haris"
 	outfit = /datum/outfit/solfed/space/elysium
 
 /datum/outfit/solfed/space/elysium
-	name = "SolFed Space Haris Corpse"
+	name = "Elysium Brigade Haris Corpse"
 	uniform = /obj/item/clothing/under/solfed/camo/elysium
 	head = /obj/item/clothing/head/helmet/space/hardsuit/solfed/elysium
 	suit = /obj/item/clothing/suit/space/hardsuit/solfed/elysium
