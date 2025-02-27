@@ -136,7 +136,9 @@
 				// new /obj/item/warp_cube/red(src)	// CELADON-EDIT - ORIGINAL
 				if(prob(20))
 					new /obj/item/warp_cube/red(src)
-			// [/CELADON-EDIT]
+				else
+					new /obj/item/toy/plush/among(src)
+				// [/CELADON-EDIT]
 			if(19)
 				new /obj/item/wisp_lantern(src)
 			if(20)
