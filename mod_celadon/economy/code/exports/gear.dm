@@ -80,7 +80,7 @@
 	export_types = list(/obj/item/clothing/suit/bomb_suit)
 
 /datum/export/gear/bilton
-	cost = 200 //no, indie captain, you are not selling your shoes today
+	cost = 2500
 	unit_name = "bilton wrangler boots"
 	export_types = list(/obj/item/clothing/shoes/cowboy/fancy)
 

@@ -27,23 +27,23 @@
 // Materials. Prices have been heavily nerfed from the original values; mining is boring, so it shouldn't be a good way to make money.
 
 /datum/export/material/diamond
-	cost = 75
+	cost = 125
 	material_id = /datum/material/diamond
 	message = "cm3 of diamonds"
 
 /datum/export/material/plasma
-	cost = 30
+	cost = 25
 	k_elasticity = 0
 	material_id = /datum/material/plasma
 	message = "cm3 of plasma"
 
 /datum/export/material/uranium
-	cost = 20
+	cost = 25
 	material_id = /datum/material/uranium
 	message = "cm3 of uranium"
 
 /datum/export/material/gold
-	cost = 15
+	cost = 30
 	material_id = /datum/material/gold
 	message = "cm3 of gold"
 
@@ -53,17 +53,17 @@
 	message = "cm3 of silver"
 
 /datum/export/material/titanium
-	cost = 15
+	cost = 30
 	material_id = /datum/material/titanium
 	message = "cm3 of titanium"
 
 /datum/export/material/hellstone
-	cost = 100
+	cost = 125
 	material_id = /datum/material/hellstone
 	message = "cm3 of hellstone"
 
 /datum/export/material/bscrystal
-	cost = 50
+	cost = 75
 	message = "of bluespace crystals"
 	material_id = /datum/material/bluespace
 
