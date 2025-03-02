@@ -739,13 +739,12 @@
 /area/ship/engineering)
 "nS" = (
 /obj/effect/turf_decal/industrial/warning{
-	dir = 8
+	dir = 1
 	},
 /obj/docking_port/mobile{
 	callTime = 250;
-	dir = 4;
 	launch_status = 0;
-	port_direction = 8;
+	port_direction = 4;
 	preferred_direction = 4
 	},
 /turf/open/floor/engine/hull/reinforced,
@@ -902,7 +901,7 @@
 	},
 /obj/effect/turf_decal/corner/opaque/black/diagonal,
 /obj/structure/chair/sofa/olive/right{
-	dir = 8
+	dir = 4
 	},
 /obj/structure/extinguisher_cabinet/directional/west,
 /obj/effect/turf_decal/spline/fancy/transparent/syndiered{
@@ -2508,6 +2507,7 @@
 /obj/effect/turf_decal/industrial/outline,
 /obj/effect/turf_decal/radiation/white,
 /obj/item/stack/sheet/mineral/uranium/five,
+/obj/machinery/power/grounding_rod,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "Ln" = (
@@ -3577,7 +3577,7 @@ sZ
 Iv
 YP
 cs
-Ks
+nS
 BW
 ta
 ta
@@ -3812,7 +3812,7 @@ ta
 ta
 ta
 BC
-nS
+BC
 BC
 BC
 ta
