@@ -2,8 +2,8 @@
 /// desc - описание для модпака. Может использоваться для списка глаголов модпака в качестве описания.
 /// author - автор(ы) этого модпака.
 
-/datum/modpack/return_content
-	name = "Возвращение спавнеров"
+/datum/modpack/return_content_spawn
+	name = "Return Content Spawn"
 	desc = "Этот мод возвращает вырезаные спавнеры хайвботов, тендрилов в игру, а также ачивки связаные с ними."
 	author = "MrCat15352"
 
@@ -15,13 +15,13 @@
 /// (можешь использовать все три, но запуск билда увеличится на 0.1 сек, за каждый датум в модпаке)
 
 // Инициализация ДО
-/datum/modpack/return_content/pre_initialize()
+/datum/modpack/return_content_spawn/pre_initialize()
 	. = ..()
 
 // Инициализация ВОВРЕМЯ
-/datum/modpack/return_content/initialize()
+/datum/modpack/return_content_spawn/initialize()
 	. = ..()
 
 // Инициализация ПОСЛЕ
-/datum/modpack/return_content/post_initialize()
+/datum/modpack/return_content_spawn/post_initialize()
 	. = ..()
