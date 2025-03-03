@@ -114,6 +114,10 @@
 		"stamp-ne_captain" = 'mod_celadon/_storge_icons/icons/png/large_stamp-ne_captain.png',
 		"stamp-ne_engdir" = 'mod_celadon/_storge_icons/icons/png/large_stamp-ne_eng_dir.png',
 		// [/CELADON-ADD]
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+		"stamp-mime" = 'mod_celadon/_storge_icons/icons/png/large_stamp-mime.png',
+		"stamp-clown" = 'mod_celadon/_storge_icons/icons/png/large_stamp-clown.png',
+		// [/CELADON-ADD]
 		"stamp-deny" = 'icons/stamp_icons/large_stamp-deny.png',
 		"stamp-ok" = 'icons/stamp_icons/large_stamp-ok.png',
 		"stamp-void" = 'icons/stamp_icons/large_stamp-void.png',

@@ -44,4 +44,8 @@ List of configurable names in preferences and their metadata
 GLOBAL_LIST_INIT(preferences_custom_names, list(
 	"cyborg" = list("pref_name" = "Cyborg", "qdesc" = "cyborg name (Leave empty to use default naming scheme)", "group" = "silicons", "allow_null" = TRUE),
 	"ai" = list("pref_name" = "AI", "qdesc" = "ai name", "group" = "silicons", "allow_null" = FALSE),
+	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+	"clown" = list("pref_name" = "Clown" , "qdesc" = "clown name", "group" = "fun", "allow_null" = FALSE),
+	"mime" = list("pref_name" = "Mime", "qdesc" = "mime name" , "group" = "fun", "allow_null" = FALSE),
+	// [/CELADON-ADD]
 ))

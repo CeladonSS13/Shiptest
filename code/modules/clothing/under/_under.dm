@@ -101,6 +101,9 @@
 	if(attached_accessory && slot != ITEM_SLOT_HANDS && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		attached_accessory.on_uniform_equip(src, user)
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+		H.fan_hud_set_fandom()
+		// [/CELADON-ADD]
 		if(attached_accessory.above_suit)
 			H.update_inv_wear_suit()
 
@@ -115,6 +118,9 @@
 		attached_accessory.on_uniform_dropped(src, user)
 		if(ishuman(user))
 			var/mob/living/carbon/human/H = user
+			// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+			H.fan_hud_set_fandom()
+			// [/CELADON-ADD]
 			if(attached_accessory.above_suit)
 				H.update_inv_wear_suit()
 
@@ -149,6 +155,9 @@
 				var/mob/living/carbon/human/H = loc
 				H.update_inv_w_uniform()
 				H.update_inv_wear_suit()
+				// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+				H.fan_hud_set_fandom()
+				// [/CELADON-ADD]
 
 			return TRUE
 
@@ -170,6 +179,9 @@
 			var/mob/living/carbon/human/H = loc
 			H.update_inv_w_uniform()
 			H.update_inv_wear_suit()
+			// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+			H.fan_hud_set_fandom()
+			// [/CELADON-ADD]
 
 
 /obj/item/clothing/under/examine(mob/user)
@@ -200,3 +212,6 @@
 
 /obj/item/clothing/under/rank
 	dying_key = DYE_REGISTRY_UNDER
+
+
+

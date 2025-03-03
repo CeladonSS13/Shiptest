@@ -400,6 +400,10 @@
 					/obj/item/storage/fancy/candle_box = 2,
 					/obj/item/clothing/accessory/armband/med = 4)
 	contraband = list(/obj/item/toy/plush/plushvar = 1,
+					// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+					/obj/item/clothing/suit/chaplainsuit/clownpriest = 1,
+					/obj/item/clothing/head/clownmitre = 1,
+					// [/CELADON-ADD]
 					/obj/item/toy/plush/narplush = 1)
 	// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 	premium = list(/obj/item/clothing/suit/chaplainsuit/bishoprobe = 1,
