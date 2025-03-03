@@ -9,7 +9,7 @@
 -->
 
 <!-- Название мода. Не важно на русском или на английском. -->
-## НАЗВАНИЕ_МОДА
+## Возвращение клоунов и мимов
 
 ID мода: CELADON_RETURN_CONTENT_CLOWNS
 <!--
@@ -23,15 +23,15 @@ ID мода: CELADON_RETURN_CONTENT_CLOWNS
 
 ### Описание мода
 
-Этот мод служит примером для разработчиков и существует лишь для того,
-чтобы его можно было легко скопировать и вставить в другое место.
+Этот мод возвращает вырезаный контент офами, клоунов и мимов и все что с ними связано обратно в билд.
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
   А также любая полезная информация.
 -->
 
 ### Используется в других проектах?
-- Нет
+- Да
+- mod_celadon/outpost_console/code/supply_pack/independent/costumes_toys.dm
 <!--
   ВНИМАНИЕ!
   Заполняется другими авторами, кто использует этот модпак или
@@ -42,7 +42,26 @@ ID мода: CELADON_RETURN_CONTENT_CLOWNS
 
 ### Изменения *кор кода*
 
-- Отсутствуют
+- code/__DEFINES/is_helpers.dm
+- code/_globalvars/traits.dm
+- code/_globalvars/lists/names.dm
+- code/controllers/subsystem/traumas.dm
+- code/controllers/subsystem/processing/quirks.dm
+- code/datums/components/fantasy/suffixes.dm
+- code/game/objects/items/granters.dm
+- code/game/objects/items/storage/backpack.dm
+- code/game/objects/items/storage/uplink_kits.dm
+- code/modules/antagonists/traitor/equipment/Malf_Modules.dm
+- code/modules/asset_cache/asset_list_items.dm
+- code/modules/client/preferences.dm
+- code/modules/clothing/under/_under.dm
+- code/modules/holiday/halloween.dm
+- code/modules/mob/living/carbon/human/human.dm
+- code/modules/vending/autodrobe.dm
+- code/modules/vending/wardrobes.dm
+- code/modules/mining/abandoned_crates.dm
+
+- code/modules/antagonists/santa/santa.dm
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -90,7 +109,7 @@ ID мода: CELADON_RETURN_CONTENT_CLOWNS
 
 ### Авторы
 
-Твой никнейм
+MrCat15352
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.

@@ -141,6 +141,10 @@
 				new /obj/item/clothing/mask/cigarette/rollie(src)
 		if(6 to 10)
 			new /obj/item/skateboard/pro(src)
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+		if(11 to 15)
+			new /mob/living/simple_animal/bot/honkbot(src)
+		// [/CELADON-ADD]
 		if(16 to 20)
 			new /obj/item/stack/ore/diamond(src, 10)
 		if(21 to 25)
