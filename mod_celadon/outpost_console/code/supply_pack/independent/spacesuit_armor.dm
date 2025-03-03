@@ -68,7 +68,7 @@
 	crate_name = "MOD core crate"
 	crate_type = /obj/structure/closet/crate/secure/science
 
-/datum/supply_pack/science/mod_core_ethereal
+/datum/supply_pack/faction/independent/spacesuit_armor/cience/mod_core_ethereal
 	name = "MOD Elzous Core Crate"
 	desc = "One MODsuit core specialized for elzous, used when creating mods."
 	cost = 6000
