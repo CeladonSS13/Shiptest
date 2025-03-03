@@ -98,7 +98,7 @@
 		if(isspaceturf(turf_check) && !turf_check.Adjacent(src)) //in space nobody can hear you honk.
 			continue
 		to_chat(M, "<font color='red' size='7'>HONK</font>")
-		M.SetSleeping(0)
+		M.set_sleeping(0)
 		M.stuttering += 20
 		M.adjustEarDamage(0, 30)
 		M.Paralyze(60)
@@ -106,7 +106,7 @@
 			M.Stun(200)
 			M.Unconscious(80)
 		else
-			M.Jitter(500)
+			M.set_jitter(500)
 
 	log_message("Honked from [src.name]. HONK!", LOG_MECHA)
 	var/turf/T = get_turf(src)
