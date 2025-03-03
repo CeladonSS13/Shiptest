@@ -7,7 +7,7 @@
 	product_slogans = "Dress for success!;Suited and booted!;It's show time!;Why leave style up to fate? Use AutoDrobe!"
 	vend_reply = "Thank you for using AutoDrobe!"
 	products = list(
-		// [CELADON-ADD] - CELADON_RETURN_CONTENT
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/item/clothing/suit/chickensuit = 1,
 		/obj/item/clothing/head/chicken = 1,
 		/obj/item/clothing/head/beret/vintage = 1,
@@ -118,7 +118,7 @@
 		/obj/item/clothing/glasses/blindfold = 1,
 		/obj/item/clothing/mask/muzzle = 2)
 	premium = list(
-		// [CELADON-ADD] - CELADON_RETURN_CONTENT
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/item/clothing/shoes/roman = 1,
 		/obj/item/clothing/suit/hooded/mysticrobe = 1,
 		// [/CELADON-ADD]

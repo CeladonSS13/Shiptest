@@ -98,7 +98,7 @@
 	feature_spawn_chance = 0.3
 	feature_spawn_list = list(
 		/obj/structure/flora/rock/hell = 20,
-		// [CELADON - ADD] - CELADON_RETURN_CONTENT
+		// [CELADON - ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/structure/elite_tumor = 4,
 		// [/CELADON - ADD]
 		/obj/structure/geyser/random = 4,
@@ -106,7 +106,7 @@
 		/obj/structure/flora/rock/hell = 14,
 		/obj/structure/vein = 5,
 		/obj/structure/vein/classtwo = 2,
-		// [CELADON - ADD] - CELADON_RETURN_CONTENT
+		// [CELADON - ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/structure/elite_tumor = 2,
 		// [/CELADON - ADD]
 		/obj/structure/geyser/random = 2,

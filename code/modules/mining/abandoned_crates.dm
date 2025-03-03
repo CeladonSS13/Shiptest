@@ -180,7 +180,7 @@
 			new /obj/item/clothing/shoes/kindleKicks(src)
 		if(65 to 66)
 			new /obj/item/clothing/suit/ianshirt(src)
-			// [CELADON-ADD] - CELADON_RETURN_CONTENT
+			// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 			new /obj/item/clothing/suit/hooded/ian_costume(src)
 			// [/CELADON-ADD]
 		if(67 to 68)

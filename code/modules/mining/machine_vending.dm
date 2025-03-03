@@ -22,7 +22,7 @@
 		/obj/item/mining_scanner = 2,
 		/obj/item/t_scanner/adv_mining_scanner = 2,
 		/obj/item/hivelordstabilizer = 3,
-		// [CELADON-ADD] - CELADON_RETURN_CONTENT
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/item/clothing/glasses/meson/gar = 2,
 		// [/CELADON-ADD]
 		/obj/item/kinetic_crusher = 1,

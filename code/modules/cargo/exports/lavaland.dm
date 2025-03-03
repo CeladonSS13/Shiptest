@@ -17,7 +17,7 @@
 						/obj/item/dragons_blood,
 						/obj/item/lava_staff,
 						/obj/item/ship_in_a_bottle,
-						// [CELADON-ADD] - CELADON_RETURN_CONTENT
+						// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 						/obj/item/clothing/shoes/clown_shoes/banana_shoes,
 						// [/CELADON-ADD]
 						/obj/item/veilrender/vealrender,

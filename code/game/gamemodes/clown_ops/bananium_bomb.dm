@@ -43,7 +43,7 @@
 			ADD_TRAIT(C, TRAIT_NODROP, CLOWN_NUKE_TRAIT)
 			H.equip_to_slot_or_del(C, ITEM_SLOT_ICLOTHING)
 
-		// [CELADON-ADD] - CELADON_RETURN_CONTENT
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		if(!H.shoes || H.dropItemToGround(H.shoes))
 			C = new /obj/item/clothing/shoes/clown_shoes(H)
 			ADD_TRAIT(C, TRAIT_NODROP, CLOWN_NUKE_TRAIT)

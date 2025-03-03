@@ -51,7 +51,7 @@
 		user.update_sight()
 		if(icon_state == "welding-g")
 			change_glass_color(user, /datum/client_colour/glass_colour/gray)
-		// [CELADON-ADD] - CELADON_RETURN_CONTENT
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		else if(icon_state == "bustin-g")
 			change_glass_color(user, /datum/client_colour/glass_colour/green)
 		// [/CELADON-ADD]
@@ -314,7 +314,7 @@
 	. = ..()
 	if(!isinhands && ishuman(loc) && !colored_before)
 		var/mob/living/carbon/human/H = loc
-		// [CELADON-EDIT] - CELADON_RETURN_CONTENT
+		// [CELADON-EDIT] - CELADON_RETURN_CONTENT_SPAWN
 		// var/mutable_appearance/M = mutable_appearance('icons/mob/clothing/eyes/eyes.dmi', "blindfoldwhite")	// CELADON-EDIT - ORIGINAL
 		var/mutable_appearance/M = mutable_appearance('mod_celadon/_storge_icons/icons/clothing/overlay/eyes.dmi', "blindfoldwhite")
 		// [/CELADON-EDIT]
