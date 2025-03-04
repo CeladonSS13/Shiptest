@@ -366,6 +366,8 @@
 /obj/item/gun/proc/do_wield(mob/user)
 	user.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/gun, multiplicative_slowdown = wield_slowdown)
 	wield_time = world.time + wield_delay
+	if(azoom)
+		azoom.Grant(user)
 	if(wield_time > 0)
 		if(do_after(
 			user,
@@ -388,6 +390,8 @@
 	wielded = FALSE
 	wielded_fully = FALSE
 	zoom(user, forced_zoom = FALSE)
+	if(azoom)
+		azoom.Remove(user)
 	user.remove_movespeed_modifier(/datum/movespeed_modifier/gun)
 
 /obj/item/gun/proc/is_wielded()
@@ -755,14 +759,10 @@
 /obj/item/gun/pickup(mob/user)
 	. = ..()
 	update_appearance()
-	if(azoom)
-		azoom.Grant(user)
 
 /obj/item/gun/dropped(mob/user)
 	. = ..()
 	update_appearance()
-	if(azoom)
-		azoom.Remove(user)
 	if(zoomed)
 		zoom(user, user.dir)
 
