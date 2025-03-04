@@ -129,6 +129,14 @@
 	cost = 1
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MINOR_LOOT, RUIN_TAG_INHOSPITABLE)
 
+/datum/map_template/ruin/icemoon/crashed_cap_pod
+	id = "crushpod"
+	name = "Crush Pod"
+	description = "Small wrecked shuttle."
+	suffix = "icemoon_crashed_cap_pod.dmm"
+	cost = 3
+	ruin_tags = list(RUIN_TAG_HARD_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_HAZARDOUS)
+
 /datum/map_template/ruin/icemoon/brazillian_lab
 	id = "brazillian-lab"
 	name = "Barricaded Compound"
