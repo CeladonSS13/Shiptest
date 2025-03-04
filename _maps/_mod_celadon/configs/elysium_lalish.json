@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "Lalish-class Space Explosives Factory",
+	"map_short_name": "Lalish",
+	"description": "Корабли класса 'Лалиш' — это относительно недавно спроектированные и построенные на верфях сепаратистов Элизиума суда. Их основное назначение — производство взрывчатых веществ, таких как бомбы, гранаты и пластиковая взрывчатка... Для этого на борту предусмотрено все необходимое: химические реактивы, материалы, камера сгорания и прочее. Судно имеет компактные размеры, что делает его менее заметным, однако это негативно сказалось на удобстве планировки. Кроме того, его двигательная установка оставляет желать лучшего — корабль оснащен всего двумя ионными двигателями, которые с трудом справляются с его массой. В итоге мы имеем небольшой, малоскоростной, но все же способный передвигаться корабль с минимальным экипажем, вооруженным верой в Аллаха и взрывчаткой. Слава Республике! – Алмаждурин Джанхуриети!",
+	"map_path": "_maps/_mod_celadon/shuttles/elysium/elysium_lalish.dmm",
+	"enabled": true,
+	"limit": 1,
+	"prefix": "EUSQ",
+	"faction": "/datum/faction/elysium",
+	"tags": [
+		"RP Focus",
+		"Bombs",
+		"Production"
+	],
+	"namelists": [
+		"SPACE",
+		"MAGICAL"
+	],
+	"job_slots": {
+		"Caid": {
+			"outfit": "/datum/outfit/job/elysium/captain",
+			"officer": true,
+			"slots": 1
+		},
+		"Ahisa`i": {
+			"outfit": "/datum/outfit/job/elysium/assistant",
+			"slots": 3
+		}
+
+	}
+}
