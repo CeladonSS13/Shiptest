@@ -4857,7 +4857,14 @@
 /obj/machinery/camera/autoname{
 	dir = 6
 	},
-/obj/item/gun/ballistic/automatic/assault/hydra/dmr/empty,
+/obj/item/gun/ballistic/automatic/assault/hydra/dmr/empty{
+	pixel_x = -2;
+	pixel_y = -10
+	},
+/obj/item/gun/ballistic/automatic/assault/hydra/lmg/extended{
+	pixel_x = -2;
+	pixel_y = 1
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/armory)
 "Bs" = (
@@ -7114,6 +7121,11 @@
 /obj/item/storage/box/ammo/a556_42,
 /obj/item/storage/toolbox/ammo/c10mm,
 /obj/structure/closet/syndicate,
+/obj/item/storage/box/ammo/a556_42,
+/obj/item/storage/box/ammo/a556_42,
+/obj/item/storage/box/ammo/a556_42,
+/obj/item/storage/box/ammo/c10mm_ap,
+/obj/item/storage/box/ammo/c10mm_ap,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/armory)
 "Nw" = (
@@ -7826,11 +7838,20 @@
 /obj/structure/rack,
 /obj/machinery/light/directional/north,
 /obj/item/ammo_box/magazine/m556_42_hydra/small{
-	pixel_x = -7
+	pixel_x = -9;
+	pixel_y = 0
 	},
-/obj/item/ammo_box/magazine/m556_42_hydra/small,
 /obj/item/ammo_box/magazine/m556_42_hydra/small{
-	pixel_x = 7
+	pixel_x = -4;
+	pixel_y = 0
+	},
+/obj/item/ammo_box/magazine/m556_42_hydra/small{
+	pixel_x = 2;
+	pixel_y = 0
+	},
+/obj/item/ammo_box/magazine/m556_42_hydra/extended{
+	pixel_x = 9;
+	pixel_y = 3
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/armory)
@@ -8862,6 +8883,7 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/light/directional/east,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/storage/box/ammo/ferroslug,
 /turf/open/floor/plating,
 /area/ship/hallway/aft)
 "WR" = (
