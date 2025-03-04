@@ -349,12 +349,12 @@
 /obj/item/storage/box/syndie_kit/chameleon,
 /obj/item/storage/box/syndie_kit/chameleon,
 /obj/item/chameleon,
-/obj/item/chameleon,
 /obj/structure/rack,
 /obj/item/card/id/syndicate/anyone,
 /obj/item/card/id/syndicate/anyone,
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/gloves/combat,
+/obj/item/implanter/stealth,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "hP" = (
@@ -594,6 +594,10 @@
 /area/ship/engineering)
 "mT" = (
 /obj/structure/table/wood,
+/obj/machinery/recharger{
+	pixel_x = 0;
+	pixel_y = 9
+	},
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew)
 "mZ" = (
@@ -2034,6 +2038,9 @@
 /obj/item/ammo_box/magazine/m10mm_ringneck,
 /obj/item/book/granter/martial/cqc,
 /obj/item/camera_bug,
+/obj/item/attachment/silencer,
+/obj/item/storage/box/handcuffs,
+/obj/item/gun/energy/kinetic_accelerator/crossbow,
 /turf/open/floor/plasteel/stairs{
 	dir = 4
 	},

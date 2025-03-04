@@ -524,7 +524,9 @@
 	dir = 1
 	},
 /obj/machinery/airalarm/directional/east,
-/obj/machinery/vending/security,
+/obj/machinery/vending/security{
+	all_items_free = 1
+	},
 /obj/effect/turf_decal/trimline/opaque/vired/warning,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
@@ -577,8 +579,8 @@
 	dir = 1
 	},
 /obj/item/clothing/mask/gas,
-/obj/item/mod/control/pre_equipped/responsory/janitor,
 /obj/item/tank/internals/emergency_oxygen,
+/obj/item/clothing/suit/space/hardsuit/ert/lp/jani,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "eY" = (
@@ -1425,8 +1427,8 @@
 	},
 /obj/machinery/light/dim/directional/north,
 /obj/item/clothing/mask/breath/medical,
-/obj/item/mod/control/pre_equipped/responsory/medic,
 /obj/item/tank/jetpack/oxygen,
+/obj/item/clothing/suit/space/hardsuit/ert/lp/med,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "lB" = (
@@ -2506,6 +2508,7 @@
 	pixel_x = 0;
 	pixel_y = -33
 	},
+/obj/item/ammo_box/magazine/smgm9mm,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "vB" = (
@@ -3407,8 +3410,8 @@
 	dir = 1
 	},
 /obj/item/clothing/mask/gas/sechailer/swat,
-/obj/item/mod/control/pre_equipped/responsory/commander,
 /obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/clothing/suit/space/hardsuit/ert/lp,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "Eh" = (
@@ -3827,7 +3830,7 @@
 	},
 /obj/item/clothing/mask/gas/vigilitas,
 /obj/item/mod/control/pre_equipped/responsory/security,
-/obj/item/tank/jetpack/oxygen/security,
+/obj/item/clothing/suit/space/hardsuit/ert/lp/sec,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "IC" = (
@@ -4886,8 +4889,8 @@
 	dir = 1
 	},
 /obj/item/clothing/mask/gas/atmos,
-/obj/item/mod/control/pre_equipped/responsory/engineer,
 /obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/clothing/suit/space/hardsuit/ert/lp/engi,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "TR" = (

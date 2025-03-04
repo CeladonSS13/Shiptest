@@ -197,7 +197,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/item/radio/intercom/directional/east,
+/obj/machinery/airalarm/directional/east,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "cP" = (
@@ -736,6 +736,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
+"lp" = (
+/obj/structure/falsewall/plastitanium,
+/turf/open/space/basic,
+/area/ship/maintenance/central)
 "lr" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2287,7 +2291,6 @@
 /area/ship/cargo)
 "Hx" = (
 /obj/machinery/autolathe,
-/obj/machinery/airalarm/directional/east,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -3011,6 +3014,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
+/obj/item/radio/intercom/directional/east,
 /turf/open/floor/plasteel/stairs,
 /area/ship/engineering)
 "TI" = (
@@ -3621,7 +3625,7 @@ Wv
 Zk
 OG
 MU
-MU
+lp
 MU
 OG
 Ru

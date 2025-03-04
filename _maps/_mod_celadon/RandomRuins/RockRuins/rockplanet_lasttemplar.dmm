@@ -78,7 +78,8 @@
 	dir = 1;
 	id = "Last_Templar";
 	name = "Blast Door";
-	max_integrity = 1e+007
+	max_integrity = 1e+007;
+	obj_integrity = 1e+007
 	},
 /turf/open/floor/suns/dark,
 /area/overmap_encounter/planetoid/rockplanet/explored)
@@ -272,6 +273,10 @@
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/suns/dark,
+/area/overmap_encounter/planetoid/rockplanet/explored)
+"gn" = (
+/obj/machinery/porta_turret/ship/ramzi/light,
+/turf/open/floor/plating/asteroid/rockplanet,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "gK" = (
 /obj/structure/chair/comfy/beige/old/directional/south,
@@ -469,16 +474,6 @@
 "mQ" = (
 /obj/effect/turf_decal/spline/fancy/wood{
 	dir = 8
-	},
-/obj/machinery/turretid/ship{
-	id = "Bettle_grid";
-	pixel_x = -3;
-	pixel_y = 24
-	},
-/obj/machinery/turretid/ship{
-	id = "Bettle_grid";
-	pixel_x = -3;
-	pixel_y = 24
 	},
 /obj/machinery/turretid{
 	pixel_x = -25;
@@ -884,7 +879,8 @@
 	dir = 1;
 	id = "Last_Templar";
 	name = "Blast Door";
-	max_integrity = 1e+007
+	max_integrity = 1e+007;
+	obj_integrity = 1e+007
 	},
 /turf/open/floor/suns/dark,
 /area/overmap_encounter/planetoid/rockplanet/explored)
@@ -906,18 +902,8 @@
 /turf/open/floor/suns/dark,
 /area/ruin/rockplanet/lasttemplar/office)
 "wt" = (
-/obj/machinery/porta_turret/syndicate/pod{
-	name = "sentry gun";
-	dir = 4;
-	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging.";
-	max_integrity = 75;
-	obj_integrity = 75;
-	lethal_projectile_sound = 'sound/weapons/gun/rifle/skm.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg';
-	lethal_projectile = /obj/projectile/bullet/a65clip;
-	stun_projectile = /obj/projectile/bullet/a65clip;
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
-	id = "LastTemplar"
+/obj/machinery/porta_turret/ship/ramzi/light{
+	dir = 8
 	},
 /turf/open/floor/plating/asteroid/rockplanet,
 /area/overmap_encounter/planetoid/rockplanet/explored)
@@ -976,19 +962,7 @@
 /turf/open/floor/concrete/pavement/rockplanet/lit,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "xv" = (
-/obj/machinery/porta_turret/syndicate/pod{
-	name = "sentry gun";
-	dir = 8;
-	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging.";
-	max_integrity = 250;
-	obj_integrity = 250;
-	lethal_projectile_sound = 'sound/weapons/gun/rifle/skm.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg';
-	lethal_projectile = /obj/projectile/bullet/a65clip;
-	stun_projectile = /obj/projectile/bullet/a65clip;
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
-	id = "LastTemplar"
-	},
+/obj/machinery/porta_turret/ship/ramzi/heavy,
 /turf/open/floor/plating/asteroid/rockplanet,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "xw" = (
@@ -1360,7 +1334,6 @@
 	health = 500;
 	melee_damage_lower = 50;
 	melee_damage_upper = 50;
-	movespeed_modification = 2;
 	maxHealth = 500
 	},
 /turf/open/floor/suns/diagonal{
@@ -2039,19 +2012,7 @@
 /turf/open/floor/wood/ebony,
 /area/ruin/rockplanet/lasttemplar/dorm)
 "TD" = (
-/obj/machinery/porta_turret/syndicate/pod{
-	name = "sentry gun";
-	dir = 10;
-	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging.";
-	max_integrity = 250;
-	obj_integrity = 250;
-	lethal_projectile_sound = 'sound/weapons/gun/rifle/skm.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg';
-	lethal_projectile = /obj/projectile/bullet/a65clip;
-	stun_projectile = /obj/projectile/bullet/a65clip;
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
-	id = "LastTemplar"
-	},
+/obj/machinery/porta_turret/ship/ramzi,
 /turf/open/floor/plating/asteroid/rockplanet,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "TU" = (
@@ -2188,9 +2149,9 @@
 	gps_name = "???l";
 	melee_damage_lower = 30;
 	melee_damage_upper = 35;
-	movespeed_modification = 1.5;
+	movespeed_modification = 1.2;
 	move_to_delay = 1;
-	aggro_vision_range = 26;
+	aggro_vision_range = 8;
 	crusher_loot = list(/obj/item/upgradescroll);
 	loot = list(/obj/item/clothing/suit/space/hardsuit/ert/inquisitor)
 	},
@@ -2613,7 +2574,7 @@ he
 he
 he
 qq
-TD
+xv
 qq
 he
 he
@@ -2627,7 +2588,7 @@ Ka
 he
 he
 he
-TD
+gn
 qq
 he
 he
@@ -4313,7 +4274,7 @@ he
 he
 he
 he
-wt
+gn
 qq
 he
 YV

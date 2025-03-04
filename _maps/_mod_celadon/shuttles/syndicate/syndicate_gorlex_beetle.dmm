@@ -349,7 +349,8 @@
 /obj/item/clothing/mask/balaclava/ngr{
 	name = "gorlex combat balaclava"
 	},
-/obj/item/mod/control/pre_equipped/traitor,
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -593,7 +594,6 @@
 	name = "ammunition locker";
 	req_one_access_txt = "1"
 	},
-/obj/item/shield/riot/tele,
 /obj/item/melee/energy/sword/saber/red{
 	pixel_x = 15;
 	pixel_y = 7
@@ -602,6 +602,10 @@
 /obj/item/stock_parts/cell/gun/kalix,
 /obj/item/stock_parts/cell/gun/kalix,
 /obj/item/stock_parts/cell/gun/kalix,
+/obj/item/shield/riot/tele{
+	pixel_x = -7;
+	pixel_y = -1
+	},
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -704,7 +708,8 @@
 /obj/item/clothing/mask/balaclava/ngr{
 	name = "gorlex combat balaclava"
 	},
-/obj/item/mod/control/pre_equipped/traitor,
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -796,13 +801,14 @@
 /obj/item/storage/backpack/duffelbag/syndie,
 /obj/item/clothing/glasses/thermal/syndi,
 /obj/item/gun/energy/kalix/pgf/heavy/sniper{
-	fire_delay = 15;
+	fire_delay = 13;
 	gun_firemodes = list("auto");
 	default_firemode = "auto"
 	},
 /obj/item/stock_parts/cell/gun/pgf,
 /obj/item/stock_parts/cell/gun/pgf,
 /obj/item/stock_parts/cell/gun/pgf,
+/obj/item/tank/jetpack/suit,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -1306,7 +1312,8 @@
 /obj/item/clothing/mask/balaclava/ngr{
 	name = "gorlex combat balaclava"
 	},
-/obj/item/mod/control/pre_equipped/traitor,
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -1688,7 +1695,7 @@
 /obj/item/clothing/mask/balaclava/ngr{
 	name = "gorlex combat balaclava"
 	},
-/obj/item/mod/control/pre_equipped/traitor,
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},

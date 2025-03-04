@@ -2919,6 +2919,9 @@
 	req_one_access_txt = "2";
 	name = "Haris suit storage unit"
 	},
+/obj/structure/sign/poster/solfed/random{
+	pixel_x = -32
+	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/storage/eva)
 "wY" = (
@@ -3813,9 +3816,6 @@
 	},
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
-	},
-/obj/structure/sign/poster/solfed/elysium{
-	pixel_x = -32
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/extinguisher{
@@ -6411,8 +6411,8 @@
 /area/ship/hallway/fore)
 "Ze" = (
 /obj/effect/turf_decal/solgov/all/center_left,
-/obj/structure/sign/poster/solfed/elysium{
-	pixel_x = -30
+/obj/structure/sign/poster/solfed/random{
+	pixel_x = -32
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/security/prison)
@@ -6422,11 +6422,11 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/sign/poster/solfed/elysium{
-	pixel_x = -32
-	},
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 9
+	},
+/obj/structure/sign/poster/solfed/random{
+	pixel_x = -32
 	},
 /turf/open/floor/wood/yew,
 /area/ship/hallway/central)
