@@ -117,7 +117,9 @@
 /turf/closed/wall/mineral/titanium,
 /area/overmap_encounter/planetoid/ice/explored)
 "sa" = (
-/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow,
+/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow{
+	faction = list("Syndicate")
+	},
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/overmap_encounter/planetoid/ice/explored)
 "tq" = (
@@ -259,7 +261,9 @@
 /turf/open/floor/plating/asteroid/snow/icemoon,
 /area/overmap_encounter/planetoid/ice/explored)
 "Va" = (
-/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow,
+/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow{
+	faction = list("Syndicate")
+	},
 /turf/open/floor/plating/asteroid/snow/icemoon,
 /area/overmap_encounter/planetoid/ice/explored)
 "Ve" = (
@@ -271,6 +275,7 @@
 /area/template_noop)
 "WO" = (
 /obj/structure/table_frame/abductor,
+/mob/living/simple_animal/hostile/human/syndicate/melee/sword/space/stormtrooper,
 /turf/open/floor/plating,
 /area/overmap_encounter/planetoid/ice/explored)
 "Xp" = (
