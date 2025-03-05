@@ -39,8 +39,11 @@
 	},
 /area/ruin/lavaland)
 "aT" = (
-/obj/structure/bookcase/random,
-/turf/closed/indestructible/paper,
+/obj/effect/portal/permanent/one_way{
+	alpha = 0;
+	id = "one_sep"
+	},
+/turf/open/floor/carpet/royalblack,
 /area/ruin/lavaland)
 "aW" = (
 /mob/living/simple_animal/hostile/rat,
@@ -207,14 +210,6 @@
 /area/ruin/lavaland)
 "dQ" = (
 /turf/open/floor/hangar/plasteel/dark,
-/area/ruin/lavaland)
-"dR" = (
-/obj/item/paper{
-	default_raw_text = Поворачивайназадтутничегонетиэтотключненужен
-	},
-/turf/open/floor/plasteel/sepia{
-	slowdown = 4
-	},
 /area/ruin/lavaland)
 "dV" = (
 /obj/effect/portal/permanent/one_way{
@@ -770,13 +765,10 @@
 /mob/living/simple_animal/hostile/retaliate/poison/snake/bookworm,
 /obj/item/book/manual/wiki/surgery,
 /obj/item/book/manual/wiki/ghetto_chemistry,
-/turf/closed/indestructible/paper,
+/turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/lavaland)
 "mG" = (
 /obj/effect/turf_decal/atmos/plasma,
-/obj/item/paper/ruins{
-	default_raw_text = Тызнаешьчтотутнужносделатьдействуй
-	},
 /turf/open/floor/carpet/red,
 /area/ruin/lavaland)
 "mX" = (
@@ -824,7 +816,7 @@
 /area/ruin/lavaland)
 "ok" = (
 /obj/item/book/manual/wiki/engineering,
-/turf/closed/indestructible/paper,
+/turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/lavaland)
 "on" = (
 /obj/structure/flora/grass/rockplanet,
@@ -889,7 +881,7 @@
 /area/ruin/lavaland)
 "pR" = (
 /obj/item/book/manual/wiki/robotics,
-/turf/closed/indestructible/paper,
+/turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/lavaland)
 "qg" = (
 /obj/effect/gibspawner/human/bodypartless,
@@ -1339,7 +1331,7 @@
 "xN" = (
 /obj/effect/fun_balloon/scatter,
 /obj/item/book/granter/spell/summonitem,
-/turf/closed/indestructible/paper,
+/turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/lavaland)
 "xU" = (
 /turf/closed/wall/concrete/reinforced/wasteplanet,
@@ -1458,7 +1450,7 @@
 "Ad" = (
 /obj/item/book/manual/wiki/construction,
 /obj/item/book/manual/wiki/piloting,
-/turf/closed/indestructible/paper,
+/turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/lavaland)
 "Af" = (
 /obj/structure/sign/warning/testchamber,
@@ -1851,7 +1843,6 @@
 /turf/open/floor/plating/dirt/dry,
 /area/ruin/lavaland)
 "GG" = (
-/obj/effect/mob_spawn/human/elysium_outpost/wagabond,
 /obj/effect/spawner/random/entertainment/drugs,
 /turf/open/floor/carpet/green,
 /area/ruin/lavaland)
@@ -2092,7 +2083,7 @@
 /area/ruin/lavaland)
 "Lr" = (
 /obj/item/storage/book/bible/koran,
-/turf/closed/indestructible/paper,
+/turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/lavaland)
 "Ls" = (
 /obj/effect/mob_spawn/human/corpse/damaged/whitesands/hunter,
@@ -2147,14 +2138,6 @@
 "Me" = (
 /obj/structure/table/wood/poker,
 /turf/open/floor/wood/ebony,
-/area/ruin/lavaland)
-"Mi" = (
-/obj/item/paper{
-	default_raw_text = Жадностьпутникасгубила,посидиподумайнадсвоимпоступком
-	},
-/turf/open/floor/plasteel/sepia{
-	slowdown = 4
-	},
 /area/ruin/lavaland)
 "Mq" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2624,12 +2607,6 @@
 "Tc" = (
 /obj/structure/flora/tree/dead/tall,
 /turf/open/floor/plating/dirt,
-/area/ruin/lavaland)
-"Td" = (
-/obj/item/paper/ruins{
-	default_raw_text = there'snothinghereloser
-	},
-/turf/open/floor/hangar/plasteel/dark,
 /area/ruin/lavaland)
 "Tg" = (
 /mob/living/simple_animal/hostile/alien/maid,
@@ -4290,7 +4267,7 @@ gq
 yi
 Kz
 yi
-Kz
+aT
 LL
 Dl
 Dl
@@ -6072,7 +6049,7 @@ dQ
 dQ
 dQ
 dQ
-Td
+dQ
 yh
 hV
 hV
@@ -7023,7 +7000,7 @@ Nu
 Ty
 Nu
 Nu
-dR
+Nu
 Ab
 Nu
 "}
@@ -8394,7 +8371,7 @@ UP
 Yo
 vb
 xN
-aT
+vb
 hV
 UP
 Nu
@@ -8471,7 +8448,7 @@ UP
 Yo
 vb
 vb
-aT
+vb
 hV
 Ak
 Nu
@@ -10035,7 +10012,7 @@ gq
 gq
 Nu
 lz
-Mi
+Nu
 gq
 Nu
 Yo
