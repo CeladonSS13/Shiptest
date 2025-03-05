@@ -359,6 +359,13 @@
 //		MARK: Lavaland
 //							///
 
+/datum/map_template/ruin/lavaland/funmaze
+ 	name = "fun maze"
+ 	id = "funmaze"
+ 	description = "very fanny maze."
+ 	suffix = "lavaland_fun_maze.dmm"
+ 	cost = 4
+
 /datum/map_template/ruin/lavaland/bubble_outpost
 	id = "bubble-outpost"
 	name = "Distress Outpost"
