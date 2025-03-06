@@ -320,7 +320,9 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/porta_turret/ship/frontiersmen/light,
+/obj/machinery/porta_turret/ship/frontiersmen/light{
+	faction = list("playerPirates","turret")
+	},
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/bridge)
 "U" = (

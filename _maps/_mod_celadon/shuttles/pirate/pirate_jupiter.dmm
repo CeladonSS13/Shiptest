@@ -816,15 +816,16 @@
 /turf/open/floor/plating/airless,
 /area/ship/external)
 "mo" = (
-/obj/machinery/computer/monitor{
-	dir = 1
-	},
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 1
 	},
 /obj/structure/cable,
 /obj/item/radio/intercom/wideband/directional/east,
 /obj/machinery/power/apc/auto_name/directional/south,
+/obj/machinery/modular_computer/console/preset/command{
+	dir = 1;
+	icon_state = "console-off"
+	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "ms" = (
