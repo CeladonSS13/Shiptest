@@ -380,8 +380,8 @@
 /turf/open/floor/suns/dark,
 /area/ruin/rockplanet/lasttemplar/medbay)
 "kk" = (
-/obj/item/mine/directional/claymore{
-	dir = 8
+/obj/item/mine/directional/claymore/live{
+	dir = 1
 	},
 /turf/open/floor/plating/asteroid/rockplanet,
 /area/overmap_encounter/planetoid/rockplanet/explored)
@@ -775,6 +775,10 @@
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ruin/rockplanet/lasttemplar/medbay)
+"ux" = (
+/obj/item/mine/directional/claymore/live,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
 "uI" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 8
@@ -1313,7 +1317,8 @@
 	health = 500;
 	melee_damage_lower = 50;
 	melee_damage_upper = 50;
-	maxHealth = 500
+	maxHealth = 500;
+	movespeed_modification = 1.2
 	},
 /turf/open/floor/suns/diagonal{
 	color = "#792f27"
@@ -1991,9 +1996,11 @@
 /turf/open/floor/wood/ebony,
 /area/ruin/rockplanet/lasttemplar/dorm)
 "TD" = (
-/obj/machinery/porta_turret/ship/ramzi,
+/obj/item/mine/directional/claymore/live{
+	dir = 8
+	},
 /turf/open/floor/plating/asteroid/rockplanet,
-/area/ruin/rockplanet/lasttemplar/office)
+/area/overmap_encounter/planetoid/rockplanet/explored)
 "TU" = (
 /obj/item/target/alien,
 /obj/effect/turf_decal/borderfloorblack{
@@ -2131,7 +2138,8 @@
 	aggro_vision_range = 8;
 	crusher_loot = list(/obj/item/upgradescroll);
 	loot = list(/obj/item/clothing/suit/space/hardsuit/ert/inquisitor);
-	speed = 2
+	speed = 2;
+	movespeed_modification = 1.2
 	},
 /obj/effect/temp_visual/cult/turf,
 /obj/effect/decal/cleanable/dirt,
@@ -2364,7 +2372,7 @@ YV
 YV
 YV
 YV
-kk
+TD
 bo
 bo
 bo
@@ -2476,7 +2484,7 @@ YV
 he
 he
 he
-kk
+ux
 bo
 bo
 bo
@@ -2567,7 +2575,7 @@ Ka
 he
 he
 he
-ps
+xv
 qq
 he
 he
@@ -2712,7 +2720,7 @@ he
 he
 he
 he
-TD
+xv
 qq
 he
 he
@@ -2766,7 +2774,7 @@ YV
 YV
 bo
 he
-kk
+ux
 bo
 bo
 bo
