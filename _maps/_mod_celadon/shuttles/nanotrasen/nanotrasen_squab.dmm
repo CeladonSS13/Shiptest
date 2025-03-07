@@ -2886,7 +2886,11 @@
 /turf/open/floor/wood,
 /area/ship/crew/cryo)
 "Ca" = (
-/obj/docking_port/stationary,
+/obj/docking_port/stationary{
+	dwidth = 10;
+	height = 15;
+	width = 30
+	},
 /turf/template_noop,
 /area/template_noop)
 "Cd" = (
