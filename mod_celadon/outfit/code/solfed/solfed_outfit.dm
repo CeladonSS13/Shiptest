@@ -297,6 +297,25 @@
 	satchel = /obj/item/storage/backpack/satchel/solfed
 	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
 
+/datum/outfit/job/solfed/miner
+	name = "SolFed - Contract Miner"
+	jobtype = /datum/job/mining
+	job_icon = "stationminer"
+
+	id = /obj/item/card/id/solfed
+	uniform = /obj/item/clothing/under/solfed/industrial
+	shoes = /obj/item/clothing/shoes/workboots
+	head = /obj/item/clothing/head/hardhat/solfed
+	belt = /obj/item/storage/belt/mining
+
+	backpack = /obj/item/storage/backpack/solfed
+	satchel = /obj/item/storage/backpack/satchel/solfed
+	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
+
+/datum/outfit/job/solfed/miner/post_equip(mob/living/carbon/human/H)
+	. = ..()
+	get_solfed_general_access(H)
+
 
 //							///
 //		Elysium Brigade 	///
