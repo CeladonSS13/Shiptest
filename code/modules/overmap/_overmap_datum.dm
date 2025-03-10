@@ -39,7 +39,7 @@
 	var/token_icon_state = "object"
 
 	// [CELADON-ADD] - OVERMAP SENSORS - Это вагабонд насрал
-	var/sensor_range = 4
+	var/sensor_range = 1
 	// [/CELADON-ADD]
 
 	/// The current docking ticket of this object, if any

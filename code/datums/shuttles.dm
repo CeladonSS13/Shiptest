@@ -17,7 +17,7 @@
 	var/short_name
 
 	// [CELADON-ADD] - OVERMAP SENSORS
-	var/def_sensor_range = 4
+	var/def_sensor_range = 1
 	// [/CELADON-ADD]
 
 	var/list/job_slots = list()
