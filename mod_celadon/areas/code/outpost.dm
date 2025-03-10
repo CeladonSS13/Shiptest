@@ -213,6 +213,30 @@
 	lighting_colour_tube = "#ffe3cc"
 	lighting_colour_bulb = "#ffdbb8"
 
+/area/outpost/cargo/faction/all/zone_1
+	name = "Cargo All zone 1"
+	icon_state = "cargo_bay"
+	lighting_colour_tube = "#ffe3cc"
+	lighting_colour_bulb = "#ffdbb8"
+
+/area/outpost/cargo/faction/all/zone_2
+	name = "Cargo All zone 2"
+	icon_state = "cargo_bay"
+	lighting_colour_tube = "#ffe3cc"
+	lighting_colour_bulb = "#ffdbb8"
+
+/area/outpost/cargo/faction/all/zone_3
+	name = "Cargo All zone 3"
+	icon_state = "cargo_bay"
+	lighting_colour_tube = "#ffe3cc"
+	lighting_colour_bulb = "#ffdbb8"
+
+/area/outpost/cargo/faction/all/zone_4
+	name = "Cargo All zone 4"
+	icon_state = "cargo_bay"
+	lighting_colour_tube = "#ffe3cc"
+	lighting_colour_bulb = "#ffdbb8"
+
 /area/outpost/cargo/faction/syndicate
 	name = "Cargo Syndi"
 	icon_state = "cargo_bay"

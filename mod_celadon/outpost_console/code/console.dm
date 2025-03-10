@@ -432,6 +432,26 @@
 	var/list/data = faction_ui_static_data(user, /datum/faction/independent)
 	return data
 
+/obj/machinery/computer/cargo/faction/independent/computer_1
+	name = "Independent outpost console #1"
+	desc = "That outpost console #1 belongs to Independent faction."
+	charge_account = ACCOUNT_IND_1
+
+/obj/machinery/computer/cargo/faction/independent/computer_2
+	name = "Independent outpost console #2"
+	desc = "That outpost console #2 belongs to Independent faction."
+	charge_account = ACCOUNT_IND_2
+
+/obj/machinery/computer/cargo/faction/independent/computer_3
+	name = "Independent outpost console #3"
+	desc = "That outpost console #3 belongs to Independent faction."
+	charge_account = ACCOUNT_IND_3
+
+/obj/machinery/computer/cargo/faction/independent/computer_4
+	name = "Independent outpost console #4"
+	desc = "That outpost console #4 belongs to Independent faction."
+	charge_account = ACCOUNT_IND_4
+
 /*
 	Nanotrasen
 */
