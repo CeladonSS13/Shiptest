@@ -18,6 +18,13 @@
 			to_chat(user, "<span class='notice'>You insert [I] into [name].</span>")
 			qdel(I)
 
+	if(istype(I, /obj/item/spacecash))
+		if(bank_account && !all_items_free && !mining_point_vendor)
+			var/obj/item/spacecash/cash = I
+			bank_account.adjust_money(cash.value)
+			to_chat(user, "<span class='notice'>You insert [I] into [name].</span>")
+			qdel(I)
+
 // Добавляем UI данные
 /obj/machinery/vending/ui_data(mob/user)
 	. = ..()
