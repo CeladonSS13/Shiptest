@@ -239,7 +239,8 @@
 /area/ship/external)
 "ew" = (
 /obj/machinery/porta_turret/ship/elysium{
-	dir = 5
+	dir = 5;
+	id = "lilash"
 	},
 /turf/closed/wall/r_wall/rust,
 /area/ship/bridge)
@@ -1376,10 +1377,15 @@
 /turf/open/floor/carpet/green,
 /area/ship/bridge)
 "tL" = (
+/obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
 /obj/machinery/door/poddoor/shutters{
 	id = "sclad"
 	},
-/turf/open/space/basic,
+/turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/bridge)
 "uf" = (
 /obj/structure/chair/handrail,
@@ -1846,7 +1852,7 @@
 /obj/machinery/turretid/ship{
 	pixel_x = 1;
 	pixel_y = 5;
-	id = "atlas"
+	id = "lilash"
 	},
 /turf/open/floor/plasteel/strongdark/airless,
 /area/ship/bridge)
@@ -2373,7 +2379,8 @@
 /area/ship/science)
 "KP" = (
 /obj/machinery/porta_turret/ship/elysium{
-	dir = 5
+	dir = 5;
+	id = "lilash"
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
@@ -2402,6 +2409,7 @@
 	pixel_y = -24;
 	dir = 2
 	},
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
@@ -3113,6 +3121,7 @@
 	pixel_y = 13;
 	pixel_x = 13
 	},
+/obj/item/storage/belt/utility/full/engi,
 /turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
@@ -3278,7 +3287,8 @@
 /area/ship/science/storage)
 "ZK" = (
 /obj/machinery/porta_turret/ship/elysium{
-	dir = 5
+	dir = 5;
+	id = "lilash"
 	},
 /turf/closed/wall/r_wall,
 /area/ship/bridge)
