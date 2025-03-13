@@ -1,7 +1,7 @@
 // Miscelanious
 
 /obj/structure/curtain/cloth/elysium
-	icon = 'mod_celadon/_storge_icons/icons/obj/elysium_patriots.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/structures/fancy.dmi'
 	icon_type = "elysium_fancy"
 	icon_state = "elysium_fancy-open"
 
