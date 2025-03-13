@@ -184,6 +184,13 @@
 	assemblytype = /obj/structure/door_assembly/multi_tile/metal
 	bound_width = 64 // 2x1
 
+/obj/machinery/door/airlock/multi_tile/medical
+	name = "Public Large Airlock"
+	icon = 'mod_celadon/_storge_icons/icons/obj/machinery/airlocks/station/medical.dmi'
+	overlays_file = 'mod_celadon/_storge_icons/icons/obj/machinery/airlocks/station/overlays_smooth.dmi'
+	assemblytype = /obj/structure/door_assembly/multi_tile/metal
+	bound_width = 64 // 2x1
+
 /obj/machinery/door/airlock/multi_tile/public/v
 	dir = WEST
 	bound_width = 32
@@ -220,6 +227,11 @@
 	bound_height = 64 // 1x2
 
 /obj/machinery/door/airlock/multi_tile/command/v
+	dir = WEST
+	bound_width = 32
+	bound_height = 64 // 1x2
+
+/obj/machinery/door/airlock/multi_tile/medical/v
 	dir = WEST
 	bound_width = 32
 	bound_height = 64 // 1x2
@@ -266,6 +278,11 @@
 	airlock_material = "glass"
 	glass = TRUE
 
+/obj/machinery/door/airlock/multi_tile/medical/glass
+	opacity = FALSE
+	airlock_material = "glass"
+	glass = TRUE
+
 /obj/machinery/door/airlock/multi_tile/public/glass/v
 	dir = WEST
 	bound_width = 32
@@ -302,6 +319,11 @@
 	bound_height = 64 // 1x2
 
 /obj/machinery/door/airlock/multi_tile/command/glass/v
+	dir = WEST
+	bound_width = 32
+	bound_height = 64 // 1x2
+
+/obj/machinery/door/airlock/multi_tile/medical/glass/v
 	dir = WEST
 	bound_width = 32
 	bound_height = 64 // 1x2
