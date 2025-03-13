@@ -1006,3 +1006,12 @@
 	description = "A crashed abductor ship with something horrible goi'n inside."
 	suffix = "anima_ruined_abductor_ship.dmm"
 	cost = 1
+//							///
+//		MARK: Asteroid
+//							///
+/datum/map_template/ruin/asteroid/asteroid_crashed_ship
+	id = "asteroid_crashed_ship"
+	name = "Crashed Asteroid Ship"
+	description = "A crashed syndicate ship"
+	suffix = "asteroid_crashed_ship.dmm"
+	cost = 2
