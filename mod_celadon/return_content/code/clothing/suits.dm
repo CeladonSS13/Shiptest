@@ -460,24 +460,6 @@
 	body_parts_covered = HEAD
 	flags_inv = HIDEHAIR | HIDEEARS | HIDEFACIALHAIR | HIDEFACE | HIDEMASK
 
-/obj/item/clothing/suit/yakuza
-	name = "tojo clan jacket"
-	desc = "The jacket of a mad dog."
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/suits.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/suit.dmi'
-	icon_state = "MajimaJacket"
-	item_state = "MajimaJacket"
-	body_parts_covered = ARMS
-
-/obj/item/clothing/suit/dutch
-	name = "dutch's jacket"
-	desc = "For those long nights on the beach in Tahiti."
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/suits.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/suit.dmi'
-	icon_state = "DutchJacket"
-	item_state = "DutchJacket"
-	body_parts_covered = ARMS
-
 /// WIZARD
 /obj/item/clothing/suit/wizrobe/red
 	name = "red wizard robe"
