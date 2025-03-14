@@ -178,6 +178,7 @@
 	id = "colossus_thrusters"
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/window/reinforced/spawner/west,
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/maintenance/starboard)
 "cd" = (
@@ -1069,7 +1070,8 @@
 /mob/living/simple_animal/pet/gondola{
 	desc = "Why Inteq keeps this Gondola around is anybody's guess. Something about its peaceful demeanor still manages to put everybody at ease.";
 	name = "Solstice";
-	real_name = "Solstice"
+	real_name = "Solstice";
+	faction = list("gondola, playerInteq")
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/office)
@@ -1700,6 +1702,7 @@
 	id = "colossus_thrusters"
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/window/reinforced/spawner/west,
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/maintenance/port)
 "sP" = (
@@ -1762,6 +1765,7 @@
 	id = "colossus_thrusters"
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/window/reinforced/spawner/west,
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/maintenance/starboard)
 "tt" = (
@@ -3058,6 +3062,7 @@
 	pixel_x = 5;
 	pixel_y = -19
 	},
+/obj/item/defibrillator,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "HG" = (
@@ -3330,6 +3335,7 @@
 	id = "colossus_thrusters"
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/window/reinforced/spawner/west,
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/maintenance/port)
 "Lx" = (
@@ -3978,7 +3984,6 @@
 /obj/item/spacecash/bundle/c1000,
 /obj/item/spacecash/bundle/c1000,
 /obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 8
 	},
@@ -4327,6 +4332,7 @@
 /obj/structure/table/rolling,
 /obj/machinery/light/directional/south,
 /obj/machinery/computer/helm/viewscreen/directional/east,
+/obj/item/storage/firstaid/brute,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "WS" = (
