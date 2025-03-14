@@ -136,3 +136,45 @@
 	desc = "Nanotrasen Cloak. This variant displays the wearer's rank as a high-ranking officer."
 	icon_state = "captaincape"
 	item_state = "captaincape"
+
+/obj/item/clothing/neck/cloak/cape
+	name = "dominian cape"
+	desc = "This is a cape in the style of Dominian nobility. It's the latest fashion across Dominian space."
+	icon = 'mod_celadon/_storge_icons/icons/items/obj/cape.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/cape.dmi'
+	icon_state = "dominian_cape"
+	item_state = "dominian_cape"
+
+/obj/item/clothing/neck/cloak/cape/white
+	name = "white dominian cape"
+	icon_state = "dominian_capew"
+	item_state = "dominian_capew"
+
+/obj/item/clothing/neck/cloak/cape/zavod
+	name = "zavodskoi dominian cape"
+	icon_state = "dominian_capez"
+	item_state = "dominian_capez"
+
+/obj/item/clothing/neck/cloak/cape/hospital
+	name = "tribunalist medical cape"
+	desc = "A white-and-green cape in the style of the Dominian clergy. Worn by those medical workers affiliated with the Moroz Holy Tribunal."
+	icon_state = "dominian_cape_hospital"
+	item_state = "dominian_cape_hospital"
+
+/obj/item/clothing/neck/cloak/cape/armsman
+	name = "fleet armsman uniform"
+	desc = "A no-nonsense uniform worn by Imperial Fleet armsmen."
+	icon_state = "armsman_mantle"
+	item_state = "armsman_mantle"
+
+/obj/item/clothing/neck/cloak/cape/elysium
+	name = "fleet elysium uniform"
+	desc = "A no-nonsense uniform worn by elysium."
+	icon_state = "elysium_cape"
+	item_state = "elysium_cape"
+
+/obj/item/clothing/neck/cloak/cape/elysium/white
+	name = "fleet elysium uniform"
+	desc = "A no-nonsense uniform worn by elysium."
+	icon_state = "elysium_white_cape"
+	item_state = "elysium_white_cape"

@@ -37,3 +37,49 @@
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/overlay/tajara_items_overlay.dmi'
 	flags_inv = 0
+
+/obj/item/clothing/head/beret/dominia
+	name = "tribunal initiate's beret"
+	desc = "A simple red beret with a golden badge marking its wearer as an initiate of the Moroz Holy Tribunal."
+	icon = 'mod_celadon/_storge_icons/icons/items/obj/head/beret.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/head/beret.dmi'
+	icon_state = "dominia_beret"
+	item_state = "dominia_beret"
+
+/obj/item/clothing/head/beret/dominia/medical
+	name = "tribunalist medical beret"
+	desc = "A white-and-green beret bearing the sigil of the Moroz Holy Tribunal on its front. Worn by those medical workers affiliated with the Moroz Holy Tribunal."
+	icon_state = "dominia_beret_hospital"
+	item_state = "dominia_beret_hospital"
+
+/obj/item/clothing/head/beret/dominia/priest
+	name = "tribunalist's beret"
+	desc = "A black beret bearing the sigil of the Moroz Holy Tribunal on its front. Worn by full members of the Tribunal's clergy."
+	icon_state = "dominia_beret_priest"
+	item_state = "dominia_beret_priest"
+
+/obj/item/clothing/head/beret/dominia/priest/red
+	name = "tribunalist's beret"
+	desc = "A red beret bearing the sigil of the Moroz Holy Tribunal on its front. Worn by full members of the Tribunal's clergy."
+	icon_state = "dominia_beret_priest_red"
+	item_state = "dominia_beret_priest_red"
+
+/obj/item/clothing/head/beret/dominia/consular
+	name = "tribunalist's beret"
+	desc = "A beret in gold and red worn by members of the clergy affiliated with His Majesty's Diplomatic Service."
+	icon_state = "dominia_beret_consular_priest"
+	item_state = "dominia_beret_consular_priest"
+
+/obj/item/clothing/head/beret/dominia/army
+	name = "imperial army field cap"
+	desc = "A green cap worn by enlisted members of the Imperial Army."
+	icon_state = "dom_hat"
+	item_state = "dom_hat"
+
+/obj/item/clothing/head/beret/elysium
+	name = "elysium beret"
+	desc = "A green beret."
+	icon = 'mod_celadon/_storge_icons/icons/items/obj/head/beret.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/head/beret.dmi'
+	icon_state = "elysium_beret"
+	item_state = "elysium_beret"
