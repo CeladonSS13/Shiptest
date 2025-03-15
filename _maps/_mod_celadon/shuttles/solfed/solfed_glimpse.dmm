@@ -191,6 +191,18 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
+"ex" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/solar,
+/obj/effect/turf_decal/solarpanel,
+/obj/item/storage/box/ammo/c9mm,
+/turf/open/floor/plating,
+/area/ship/engineering)
 "ez" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -827,7 +839,14 @@
 	icon_state = "4-8"
 	},
 /obj/effect/turf_decal/techfloor,
-/obj/machinery/light/directional/south,
+/obj/machinery/button/door{
+	id = "cepheus_armoury";
+	name = "Armoury Lockdown";
+	pixel_x = -1;
+	pixel_y = -21;
+	dir = 1;
+	req_ship_access = 1
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "rY" = (
@@ -1288,7 +1307,8 @@
 	id = "cepheus_armoury";
 	name = "Armoury Lockdown";
 	pixel_x = 10;
-	pixel_y = 21
+	pixel_y = 21;
+	req_ship_access = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -3068,7 +3088,7 @@ wo
 "}
 (17,1,1) = {"
 zH
-PP
+ex
 AP
 HY
 Oz
