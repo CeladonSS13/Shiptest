@@ -437,3 +437,58 @@
 /datum/gear/plushes/rimri/snow
 	display_name = "Rimri snow plushie"
 	path = /obj/item/toy/plush/celadon/rimri/snow
+
+// Перенесено с `code\modules\client\loadout\loadout_general.dm`
+
+/datum/gear/plushes/lizard
+	display_name = "toy, lizard plushie"
+	path = /obj/item/toy/plush/lizardplushie
+
+/datum/gear/plushes/snake
+	display_name = "toy, snake plushie"
+	path = /obj/item/toy/plush/snakeplushie
+
+/datum/gear/plushes/moth
+	display_name = "toy, moth plushie"
+	path = /obj/item/toy/plush/moth
+
+/datum/gear/plushes/bee
+	display_name = "toy, bee plushie"
+	path = /obj/item/toy/plush/beeplushie
+
+/datum/gear/plushes/spider
+	display_name = "toy, spider plushie"
+	path = /obj/item/toy/plush/spider
+
+/datum/gear/plushes/flushed
+	display_name = "toy, flushed plushie"
+	path = /obj/item/toy/plush/flushed
+
+/datum/gear/plushes/blahaj
+	display_name = "toy, Solarian Marine Society mascot plushie"
+	path = /obj/item/toy/plush/blahaj
+
+/datum/gear/plushes/hornet
+	display_name = "toy, marketable hornet plushie"
+	path = /obj/item/toy/plush/hornet
+
+/datum/gear/plushes/gayhornet
+	display_name = "toy, gay hornet plushie"
+	path = /obj/item/toy/plush/hornet/gay
+	description = "Hornet says lesbian rights."
+
+/datum/gear/plushes/knight
+	display_name = "toy, marketable knight plushie"
+	path = /obj/item/toy/plush/knight
+
+/datum/gear/plushes/ri
+	display_name = "toy, rilena ri plushie"
+	path = /obj/item/toy/plush/rilena
+
+/datum/gear/plushes/tali
+	display_name = "toy, rilena tali plushie"
+	path = /obj/item/toy/plush/tali
+
+/datum/gear/plushes/amongus
+	display_name = "toy, suspicious pill plushie"
+	path = /obj/item/toy/plush/among

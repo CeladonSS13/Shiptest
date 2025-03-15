@@ -75,6 +75,8 @@ ID мода: CELADON_ITEMS
 - `sound/weapons/gun/shotgun/insert_shell.ogg`
 - `mod_celadon/_storge_icons/icons/obj/back.dmi`
 - `mod_celadon/_storge_icons/icons/mob/back.dmi`
+- `mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi`
+- `mod_celadon/_storge_icons/icons/items/obj/head/hats.dmi`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.
@@ -84,7 +86,7 @@ ID мода: CELADON_ITEMS
 
 ### Авторы:
 
-MrCat15352, MysticalFaceLesS, RalseiDreemuurr, MrRomainzZ, Quinal
+MrCat15352, MysticalFaceLesS, RalseiDreemuurr, MrRomainzZ, Quinal, MysticalFaceLesS
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.

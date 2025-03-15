@@ -33,7 +33,10 @@ ID мода: CELADON_LOADOUT
 
 ### Изменения *кор кода*
 
-- Отсутствуют
+Были заккоментированы шарфы и перчатки, с полным переносом в модульные папки:
+`code\modules\client\loadout\loadout_accessories.dm` -> `mod_celadon\loadout\code\gloves.dm` и `mod_celadon\loadout\code\scarfes.dm`
+Убран "briefcase" из лодаута:
+`code\modules\client\loadout\loadout_general.dm`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -75,7 +78,7 @@ ID мода: CELADON_LOADOUT
 
 ### Авторы:
 
-Bydlo (Ykipss), MrCat15352
+Bydlo (Ykipss), MrCat15352, MysticalFaceLesS
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.
