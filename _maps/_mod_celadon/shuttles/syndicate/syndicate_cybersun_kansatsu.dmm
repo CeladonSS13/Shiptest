@@ -1337,7 +1337,9 @@
 /obj/item/melee/knife/combat,
 /obj/item/clothing/glasses/thermal/syndi,
 /obj/item/clothing/glasses/thermal/syndi,
-/obj/item/card/emag/limited,
+/obj/item/card/emag/limited{
+	uses_left = 3
+	},
 /obj/item/gun/energy/plasmacutter/adv,
 /obj/item/toy/plush/goatplushie/angry{
 	name = "goat plushie"
