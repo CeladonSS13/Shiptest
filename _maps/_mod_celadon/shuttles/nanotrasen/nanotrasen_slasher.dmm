@@ -96,10 +96,10 @@
 /obj/structure/closet/secure_closet/wall/directional/north{
 	name = "surgical supplies locker"
 	},
-/obj/item/storage/case/surgery,
 /obj/item/reagent_containers/glass/bottle/formaldehyde,
 /obj/item/reagent_containers/spray/cleaner,
 /obj/item/reagent_containers/syringe,
+/obj/item/storage/firstaid/medical,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "bc" = (
@@ -155,8 +155,6 @@
 	name = "ammunition locker";
 	anchored = 1
 	},
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
 /obj/item/stock_parts/cell/gun,
 /obj/item/stock_parts/cell/gun,
 /obj/item/stock_parts/cell/gun,
@@ -861,15 +859,6 @@
 	},
 /turf/open/floor/engine/hull,
 /area/ship/external)
-"lx" = (
-/obj/structure/cable,
-/obj/machinery/mission_scanner{
-	anchored = 1;
-	name = "advanced sensor array";
-	density = 1
-	},
-/turf/open/floor/engine/hull,
-/area/ship/external)
 "lA" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 4
@@ -1316,15 +1305,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/general/engineering)
-"rF" = (
-/obj/docking_port/stationary{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/turf/open/floor/engine/hull,
-/area/ship/external)
 "rJ" = (
 /obj/effect/turf_decal/solarpanel{
 	color = "#283674"
@@ -1563,17 +1543,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
-"vY" = (
-/obj/machinery/mission_scanner{
-	anchored = 1;
-	name = "advanced sensor array";
-	density = 1
-	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/turf/open/floor/engine/hull,
-/area/ship/external)
 "wi" = (
 /turf/closed/wall/mineral/titanium/exterior,
 /area/ship/external)
@@ -1827,15 +1796,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/general/engineering)
-"yX" = (
-/obj/machinery/mission_scanner{
-	anchored = 1;
-	name = "advanced sensor array";
-	density = 1
-	},
-/obj/structure/cable,
-/turf/open/floor/engine/hull,
-/area/ship/external)
 "zd" = (
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -2485,9 +2445,6 @@
 /obj/docking_port/stationary{
 	dir = 4
 	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
 /turf/open/floor/engine/hull,
 /area/ship/external)
 "Ir" = (
@@ -3067,22 +3024,6 @@
 	},
 /turf/open/floor/engine/hull,
 /area/space)
-"TM" = (
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
-	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/machinery/mission_scanner{
-	anchored = 1;
-	name = "advanced sensor array";
-	density = 1
-	},
-/turf/open/floor/engine/hull,
-/area/ship/external)
 "TP" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -3091,19 +3032,6 @@
 	icon_state = "2-8"
 	},
 /obj/effect/turf_decal/ntspaceworks_small,
-/turf/open/floor/engine/hull,
-/area/ship/external)
-"Ue" = (
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
-	},
-/obj/machinery/mission_scanner{
-	anchored = 1;
-	name = "advanced sensor array";
-	density = 1
-	},
 /turf/open/floor/engine/hull,
 /area/ship/external)
 "Ui" = (
@@ -3179,19 +3107,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
-"UR" = (
-/obj/machinery/mission_scanner{
-	anchored = 1;
-	name = "advanced sensor array";
-	density = 1
-	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
-	},
-/turf/open/floor/engine/hull,
-/area/ship/external)
 "UY" = (
 /obj/machinery/power/shieldwallgen/atmos{
 	dir = 8;
@@ -3404,14 +3319,6 @@
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
-"YR" = (
-/obj/machinery/mission_scanner{
-	anchored = 1;
-	name = "advanced sensor array";
-	density = 1
-	},
-/turf/open/floor/engine/hull,
-/area/ship/external)
 "YS" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -3784,7 +3691,7 @@ vm
 vm
 vm
 vm
-gH
+SQ
 mt
 vm
 vm
@@ -3806,7 +3713,7 @@ vm
 vm
 vm
 mt
-gH
+SQ
 vm
 vm
 vm
@@ -3826,7 +3733,7 @@ vm
 vm
 vm
 vm
-TM
+SQ
 lH
 Af
 vm
@@ -3848,7 +3755,7 @@ SQ
 vm
 fC
 mJ
-YR
+SQ
 vm
 vm
 vm
@@ -3902,8 +3809,8 @@ vm
 "}
 (11,1,1) = {"
 vm
-vY
-qX
+SQ
+SQ
 SQ
 SQ
 vm
@@ -3939,12 +3846,12 @@ vm
 vm
 SQ
 SQ
-YS
-yX
+SQ
+SQ
 "}
 (12,1,1) = {"
 vm
-gH
+SQ
 dc
 xD
 SQ
@@ -3982,7 +3889,7 @@ SQ
 SQ
 fC
 mW
-gH
+SQ
 "}
 (13,1,1) = {"
 vm
@@ -4017,7 +3924,7 @@ SQ
 SQ
 vm
 vm
-gH
+SQ
 SQ
 SQ
 SQ
@@ -4731,7 +4638,7 @@ SQ
 SQ
 vm
 vm
-gH
+SQ
 SQ
 SQ
 SQ
@@ -4742,7 +4649,7 @@ EI
 "}
 (31,1,1) = {"
 vm
-gH
+SQ
 HF
 AQ
 SQ
@@ -4780,11 +4687,11 @@ SQ
 SQ
 zd
 QS
-gH
+SQ
 "}
 (32,1,1) = {"
 vm
-UR
+SQ
 HZ
 SQ
 SQ
@@ -4821,8 +4728,8 @@ vm
 vm
 SQ
 SQ
-rF
-yX
+HZ
+SQ
 "}
 (33,1,1) = {"
 vm
@@ -4876,7 +4783,7 @@ vm
 vm
 vm
 vm
-Ue
+SQ
 Zb
 ar
 vm
@@ -4898,7 +4805,7 @@ SQ
 vm
 yx
 eQ
-lx
+SQ
 vm
 vm
 vm
@@ -4918,7 +4825,7 @@ vm
 vm
 vm
 vm
-gH
+SQ
 vJ
 vm
 vm
@@ -4940,7 +4847,7 @@ vm
 vm
 vm
 vJ
-gH
+SQ
 vm
 vm
 vm
@@ -5091,7 +4998,7 @@ vm
 vm
 vm
 vm
-gH
+SQ
 vm
 vm
 vm
@@ -5103,7 +5010,7 @@ vm
 vm
 vm
 vm
-gH
+SQ
 vm
 vm
 vm
