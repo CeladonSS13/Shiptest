@@ -2937,6 +2937,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			return pick(GLOB.ai_names)
 		if("cyborg")
 			return DEFAULT_CYBORG_NAME
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+		if("clown")
+			return pick(GLOB.clown_names)
+		if("mime")
+			return pick(GLOB.mime_names)
+		// [/CELADON-ADD]
 	return random_unique_name()
 
 /datum/preferences/proc/ask_for_custom_name(mob/user,name_id)

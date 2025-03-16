@@ -43,7 +43,7 @@ GLOBAL_LIST_INIT(arcade_prize_pool, list(
 		/obj/item/extendohand/acme = 1,
 		/obj/item/hot_potato/harmless/toy = 1,
 		/obj/item/card/emagfake = 1,
-		// [CELADON-ADD] - CELADON_RETURN_CONTENT
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/item/clothing/shoes/wheelys = 2,
 		// [/CELADON-ADD]
 		/obj/item/clothing/shoes/kindleKicks = 2,

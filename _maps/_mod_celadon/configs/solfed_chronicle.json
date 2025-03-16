@@ -6,6 +6,7 @@
 	"map_path": "_maps/_mod_celadon/shuttles/solfed/solfed_chronicle.dmm",
 	"enabled": false,
 	"limit": 1,
+	"sensor_range": 4,
 	"prefix": "SFSV",
 	"faction": "/datum/faction/solgov",
 	"tags": ["Specialist"],
@@ -35,7 +36,7 @@
 			"slots": 2
 		},
 		"Field Engineer": {
-			"outfit": "/datum/outfit/job/solgov/miner",
+			"outfit": "/datum/outfit/job/solfed/miner",
 			"slots": 2
 		},
 		"Scribe": {

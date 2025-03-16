@@ -6,3 +6,6 @@
 
 /// This mob heals from carp rifts.
 #define TRAIT_HEALS_FROM_CARP_RIFTS "heals_from_carp_rifts"
+
+#define TRAIT_FAN_CLOWN "fan_clown"
+#define TRAIT_FAN_MIME "fan_mime"

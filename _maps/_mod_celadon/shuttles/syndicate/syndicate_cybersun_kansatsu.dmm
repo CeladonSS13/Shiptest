@@ -354,7 +354,8 @@
 /obj/item/card/id/syndicate/anyone,
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/gloves/combat,
-/obj/item/implanter/stealth,
+/obj/item/chameleon,
+/obj/item/pinpointer/crew/contractor,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "hP" = (
@@ -1089,6 +1090,10 @@
 	pixel_y = 4
 	},
 /obj/machinery/airalarm/directional/north,
+/obj/item/melee/knife/letter_opener,
+/obj/item/storage/box/rxglasses/spyglasskit{
+	pixel_y = 6
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/office)
 "yv" = (
@@ -1332,7 +1337,9 @@
 /obj/item/melee/knife/combat,
 /obj/item/clothing/glasses/thermal/syndi,
 /obj/item/clothing/glasses/thermal/syndi,
-/obj/item/card/emag/limited,
+/obj/item/card/emag/limited{
+	uses_left = 3
+	},
 /obj/item/gun/energy/plasmacutter/adv,
 /obj/item/toy/plush/goatplushie/angry{
 	name = "goat plushie"
@@ -1943,17 +1950,17 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "VL" = (
-/obj/structure/table/glass,
-/obj/item/storage/box/rxglasses/spyglasskit{
-	pixel_y = 6
-	},
-/obj/item/melee/knife/letter_opener,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
 	},
 /obj/machinery/light/small/directional/south,
 /obj/structure/sign/poster/official/here_for_your_safety{
 	pixel_x = -28
+	},
+/obj/machinery/computer/crew{
+	dir = 4;
+	pixel_x = -8;
+	pixel_y = 0
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/office)

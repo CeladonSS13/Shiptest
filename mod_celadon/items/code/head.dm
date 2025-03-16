@@ -83,3 +83,16 @@
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/head/beret.dmi'
 	icon_state = "elysium_beret"
 	item_state = "elysium_beret"
+/obj/item/clothing/head/cap_navyblue
+	name = "Navy blue cap"
+	desc = "A navy blue cap."
+	icon_state = "navyblue_cap"
+	icon = 'mod_celadon/_storge_icons/icons/items/obj/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+
+/obj/item/clothing/head/beret/navyblue
+	name = "Navy blue beret"
+	desc = "A navy blue beret."
+	icon_state = "navyblue_beret"
+	icon = 'mod_celadon/_storge_icons/icons/items/obj/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'

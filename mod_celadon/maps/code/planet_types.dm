@@ -52,6 +52,7 @@
 
 /datum/planet_type/asteroid
 	weight = 40
+	ruin_type = RUINTYPE_ASTEROID
 
 /datum/planet_type/ice_night // Мне очень не нравится, как я это сделал, но на другую реализацию у меня не хватает знаний
 	name = "frozen planet"
@@ -121,6 +122,3 @@
 	weight = 2
 	ruin_type = RUINTYPE_ANIMA
 
-//Оверрайд астероидов, что бы там были руины из списка космо руин
-/datum/planet_type/asteroid
-	ruin_type = RUINTYPE_SPACE

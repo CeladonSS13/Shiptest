@@ -69,6 +69,9 @@ SUBSYSTEM_DEF(traumas)
 			/obj/item/clothing/under/rank/civilian/clown,
 			/obj/item/clothing/mask/gas/clown_hat, /obj/item/instrument/bikehorn,
 			/obj/item/grown/bananapeel, /obj/item/reagent_containers/food/snacks/cheesiehonkers,
+			// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+			/obj/item/pda/clown,
+			// [/CELADON-ADD]
 			/obj/item/trash/cheesie)),
 
 		"greytide"  = typecacheof(list(

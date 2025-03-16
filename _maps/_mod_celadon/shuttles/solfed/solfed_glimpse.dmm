@@ -827,7 +827,14 @@
 	icon_state = "4-8"
 	},
 /obj/effect/turf_decal/techfloor,
-/obj/machinery/light/directional/south,
+/obj/machinery/button/door{
+	id = "cepheus_armoury";
+	name = "Armoury Lockdown";
+	pixel_x = -1;
+	pixel_y = -21;
+	dir = 1;
+	req_ship_access = 1
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "rY" = (
@@ -1282,13 +1289,8 @@
 /area/ship/engineering)
 "AI" = (
 /obj/machinery/newscaster/directional/north{
-	pixel_x = -2
-	},
-/obj/machinery/button/door{
-	id = "cepheus_armoury";
-	name = "Armoury Lockdown";
-	pixel_x = 10;
-	pixel_y = 21
+	pixel_x = 2;
+	pixel_y = 30
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -1297,7 +1299,7 @@
 	icon_state = "2-8"
 	},
 /obj/machinery/light_switch{
-	pixel_x = -12;
+	pixel_x = -9;
 	pixel_y = 21
 	},
 /turf/open/floor/wood/ebony,
@@ -2037,6 +2039,18 @@
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
+"ND" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/solar,
+/obj/effect/turf_decal/solarpanel,
+/obj/item/storage/box/ammo/c9mm,
+/turf/open/floor/plating,
+/area/ship/engineering)
 "NL" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
@@ -3068,7 +3082,7 @@ wo
 "}
 (17,1,1) = {"
 zH
-PP
+ND
 AP
 HY
 Oz

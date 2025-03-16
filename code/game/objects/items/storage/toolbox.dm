@@ -243,7 +243,7 @@
 		/obj/item/clothing/under/syndicate/bloodred,
 		/obj/item/clothing/gloves/color/latex/nitrile/infiltrator,
 		/obj/item/clothing/mask/infiltrator,
-		// [CELADON-ADD] - CELADON_RETURN_CONTENT
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/item/clothing/shoes/combat/sneakboots,
 		// [/CELADON-ADD]
 		/obj/item/gun/ballistic/automatic/pistol/ringneck,
@@ -257,7 +257,7 @@
 	new /obj/item/clothing/under/syndicate/bloodred(src)
 	new /obj/item/clothing/gloves/color/latex/nitrile/infiltrator(src)
 	new /obj/item/clothing/mask/infiltrator(src)
-	// [CELADON-ADD] - CELADON_RETURN_CONTENT
+	// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 	new /obj/item/clothing/shoes/combat/sneakboots(src)
 	// [/CELADON-ADD]
 

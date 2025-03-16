@@ -26,3 +26,10 @@
 	name = "\improper Anima"
 	sound_environment = SOUND_ENVIRONMENT_MOUNTAINS
 	ambientsounds = REEBE
+/area/overmap_encounter/planetoid/asteroid/explored
+	area_flags = VALID_TERRITORY
+
+/area/overmap_encounter/planetoid/asteroid
+	name = "\improper Asteroid Field"
+	sound_environment = SOUND_ENVIRONMENT_QUARRY
+	ambientsounds = SPACE

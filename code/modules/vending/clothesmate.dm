@@ -7,7 +7,7 @@
 	product_slogans = "Dress for success!;Prepare to look swagalicious!;Look at all this swag!;Why leave style up to fate? Use the ClothesMate!"
 	vend_reply = "Thank you for using the ClothesMate!"
 	products = list(
-		// [CELADON-ADD] - CELADON_RETURN_CONTENT
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/item/clothing/head/beanie/christmas = 3,
 		/obj/item/clothing/head/beanie/rasta = 3,
 		/obj/item/clothing/head/kippah = 3,
@@ -122,7 +122,7 @@
 		/obj/item/clothing/under/costume/jabroni = 1,
 		/obj/item/clothing/under/costume/geisha = 1)
 	premium = list(
-		// [CELADON-ADD] - CELADON_RETURN_CONTENT
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/item/clothing/suit/jacket/leather/overcoat = 1,
 		// [/CELADON-ADD]
 		/obj/item/clothing/under/suit/checkered = 1,

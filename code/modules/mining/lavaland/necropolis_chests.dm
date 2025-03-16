@@ -73,7 +73,7 @@
 			new /obj/item/gun/energy/spur(src)
 		if(28)
 			new /obj/item/clothing/suit/armor/ascetic(src)
-		// [CELADON-ADD] - CELADON_RETURN_CONTENT
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		if(29)
 			new /obj/item/clothing/glasses/godeye(src)
 		// [/CELADON-ADD]
@@ -145,7 +145,7 @@
 				new /obj/item/gun/energy/spur(src)
 			if(28)
 				new /obj/item/clothing/suit/armor/ascetic(src)
-			// [CELADON-ADD] - CELADON_RETURN_CONTENT
+			// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 			if(29)
 				new /obj/item/clothing/glasses/godeye(src)
 			// [/CELADON-ADD]
@@ -700,7 +700,7 @@
 	var/hat = pick(/obj/item/clothing/head/helmet/roman, /obj/item/clothing/head/helmet/roman/legionnaire)
 	H.equip_to_slot_or_del(new hat(H), ITEM_SLOT_HEAD)
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/costume/roman(H), ITEM_SLOT_ICLOTHING)
-	// [CELADON-ADD] - CELADON_RETURN_CONTENT
+	// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/roman(H), ITEM_SLOT_FEET)
 	// [/CELADON-ADD]
 	H.put_in_hands(new /obj/item/shield/riot/roman(H), TRUE)

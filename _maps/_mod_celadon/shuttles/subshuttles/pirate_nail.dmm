@@ -204,9 +204,7 @@
 /obj/structure/cable/blue{
 	icon_state = "0-4"
 	},
-/obj/structure/frame{
-	anchored = 1
-	},
+/obj/structure/frame/machine,
 /turf/open/floor/plating,
 /area/ship/bridge)
 "E" = (
@@ -247,10 +245,9 @@
 	icon_state = "1-8"
 	},
 /obj/docking_port/mobile{
-	dir = 8;
 	name = "nail dock";
-	preferred_direction = 8;
-	port_direction = 2
+	port_direction = 2;
+	preferred_direction = 2
 	},
 /obj/structure/mineral_door/gold,
 /turf/open/floor/plasteel/patterned/brushed,
@@ -259,9 +256,7 @@
 /obj/structure/cable/blue{
 	icon_state = "0-4"
 	},
-/obj/structure/frame{
-	anchored = 1
-	},
+/obj/structure/frame/machine,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "M" = (
@@ -321,7 +316,7 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/porta_turret/ship/frontiersmen/light{
-	faction = list("playerPirates","turret")
+	faction = list("neutral","playerPirates","turret", "pirate")
 	},
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/bridge)
@@ -340,9 +335,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
-/obj/structure/frame{
-	anchored = 1
-	},
+/obj/structure/frame/machine,
 /turf/open/floor/plating,
 /area/ship/bridge)
 "W" = (

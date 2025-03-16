@@ -267,7 +267,7 @@
 	.["issubshuttle"] = null
 	if(current_ship.source_template.parent_type == /datum/map_template/shuttle/subshuttles)
 		.["issubshuttle"] = "true"
-		current_ship.sensor_range = 3
+		current_ship.sensor_range = 2
 		var/datum/overmap/parent_ship = current_ship.docked_to
 		if(parent_ship && parent_ship.docked_to && istype(parent_ship.docked_to.parent_type, /datum/overmap/outpost))
 			.["motheroutpost"] = "true"

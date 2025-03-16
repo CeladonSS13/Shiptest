@@ -129,6 +129,14 @@
 	cost = 1
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MINOR_LOOT, RUIN_TAG_INHOSPITABLE)
 
+/datum/map_template/ruin/icemoon/crashed_cap_pod
+	id = "crushpod"
+	name = "Crush Pod"
+	description = "Small wrecked shuttle."
+	suffix = "icemoon_crashed_cap_pod.dmm"
+	cost = 3
+	ruin_tags = list(RUIN_TAG_HARD_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_HAZARDOUS)
+
 /datum/map_template/ruin/icemoon/brazillian_lab
 	id = "brazillian-lab"
 	name = "Barricaded Compound"
@@ -358,6 +366,13 @@
 //							///
 //		MARK: Lavaland
 //							///
+
+/datum/map_template/ruin/lavaland/funmaze
+ 	name = "fun maze"
+ 	id = "funmaze"
+ 	description = "very fanny maze."
+ 	suffix = "lavaland_fun_maze.dmm"
+ 	cost = 4
 
 /datum/map_template/ruin/lavaland/bubble_outpost
 	id = "bubble-outpost"
@@ -991,3 +1006,12 @@
 	description = "A crashed abductor ship with something horrible goi'n inside."
 	suffix = "anima_ruined_abductor_ship.dmm"
 	cost = 1
+//							///
+//		MARK: Asteroid
+//							///
+/datum/map_template/ruin/asteroid/asteroid_crashed_ship
+	id = "asteroid_crashed_ship"
+	name = "Crashed Asteroid Ship"
+	description = "A crashed syndicate ship"
+	suffix = "asteroid_crashed_ship.dmm"
+	cost = 2

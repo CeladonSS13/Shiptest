@@ -243,12 +243,12 @@
 	pixel_x = 1;
 	pixel_y = -5
 	},
+/obj/effect/turf_decal/corner/opaque/purple/border{
+	dir = 1
+	},
 /obj/structure/closet/secure_closet/wall/directional/west{
 	icon_state = "sec_wall";
 	name = "equipment locker"
-	},
-/obj/effect/turf_decal/corner/opaque/purple/border{
-	dir = 1
 	},
 /turf/open/floor/vault,
 /area/ship/security/armory)
@@ -978,9 +978,9 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
 "hK" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber,
 /obj/structure/window/plasma/reinforced,
 /obj/machinery/door/firedoor/border_only,
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/toxin_output,
 /turf/open/floor/engine/airless,
 /area/ship/engineering/engines/port)
 "hL" = (
@@ -1736,13 +1736,13 @@
 /turf/open/floor/plating,
 /area/ship/crew/toilet)
 "ps" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber{
-	dir = 1
-	},
 /obj/structure/window/plasma/reinforced{
 	dir = 1
 	},
 /obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/toxin_output{
 	dir = 1
 	},
 /turf/open/floor/engine/airless,
@@ -4117,6 +4117,10 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm/dormthree)
+"Js" = (
+/obj/item/stock_parts/cell/gun,
+/turf/template_noop,
+/area/template_noop)
 "Jw" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
@@ -4659,7 +4663,6 @@
 /obj/effect/turf_decal/industrial/stand_clear,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/landmark/subship{
-	dir = 2;
 	subship_template = /datum/map_template/shuttle/subshuttles/nail
 	},
 /turf/open/floor/pod,
@@ -4709,9 +4712,8 @@
 /area/ship/crew/cryo)
 "OK" = (
 /obj/docking_port/stationary{
-	height = 15;
 	width = 30;
-	name = "liberty south exterior dock";
+	height = 15;
 	dwidth = 15;
 	dir = 2
 	},
@@ -4756,8 +4758,8 @@
 	dir = 10
 	},
 /obj/machinery/meter,
-/obj/structure/reagent_dispensers/watertank,
 /obj/machinery/airalarm/directional/east,
+/obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/engines/starboard)
 "OT" = (
@@ -6471,7 +6473,7 @@ xz
 (6,1,1) = {"
 xz
 xz
-xz
+Js
 Fm
 Fm
 lc

@@ -776,7 +776,7 @@
 			"key" = /obj/item/stock_parts/cell,
 			"action" = ITEM_MOVE_INSIDE
 		),
-		// [CELADON-ADD] - CELADON_RETURN_CONTENT
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		list(
 			"key" = /obj/item/clothing/shoes/clown_shoes,
 			"action" = ITEM_DELETE

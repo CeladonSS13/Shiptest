@@ -2,9 +2,9 @@
 /// desc - описание для модпака. Может использоваться для списка глаголов модпака в качестве описания.
 /// author - автор(ы) этого модпака.
 
-/datum/modpack/return_content
-	name = "Возвращение спавнеров"
-	desc = "Этот мод возвращает вырезаные спавнеры хайвботов, тендрилов в игру, а также ачивки связаные с ними."
+/datum/modpack/return_crusher_trophy
+	name = "Return Crusher Trophey"
+	desc = "Модпак возвращает вырезаные трофеи для крашеров."
 	author = "MrCat15352"
 
 /// Эти проки нужны, для того чтобы инициализировать датумы в определенный момент времени
@@ -15,13 +15,13 @@
 /// (можешь использовать все три, но запуск билда увеличится на 0.1 сек, за каждый датум в модпаке)
 
 // Инициализация ДО
-/datum/modpack/return_content/pre_initialize()
+/datum/modpack/return_crusher_trophy/pre_initialize()
 	. = ..()
 
 // Инициализация ВОВРЕМЯ
-/datum/modpack/return_content/initialize()
+/datum/modpack/return_crusher_trophy/initialize()
 	. = ..()
 
 // Инициализация ПОСЛЕ
-/datum/modpack/return_content/post_initialize()
+/datum/modpack/return_crusher_trophy/post_initialize()
 	. = ..()

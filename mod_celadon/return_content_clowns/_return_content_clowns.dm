@@ -2,9 +2,9 @@
 /// desc - описание для модпака. Может использоваться для списка глаголов модпака в качестве описания.
 /// author - автор(ы) этого модпака.
 
-/datum/modpack/crusher_trophy
-	name = "Crusher Trophey"
-	desc = "Модпак возвращает вырезаные трофеи для крашеров."
+/datum/modpack/return_content_clowns
+	name = "Return conten clown and mime"
+	desc = "Этот мод возвращает вырезаный контент офами, клоунов и мимов и все что с ними связано обратно в билд."
 	author = "MrCat15352"
 
 /// Эти проки нужны, для того чтобы инициализировать датумы в определенный момент времени
@@ -15,13 +15,13 @@
 /// (можешь использовать все три, но запуск билда увеличится на 0.1 сек, за каждый датум в модпаке)
 
 // Инициализация ДО
-/datum/modpack/crusher_trophy/pre_initialize()
+/datum/modpack/return_content_clowns/pre_initialize()
 	. = ..()
 
 // Инициализация ВОВРЕМЯ
-/datum/modpack/crusher_trophy/initialize()
+/datum/modpack/return_content_clowns/initialize()
 	. = ..()
 
 // Инициализация ПОСЛЕ
-/datum/modpack/crusher_trophy/post_initialize()
+/datum/modpack/return_content_clowns/post_initialize()
 	. = ..()

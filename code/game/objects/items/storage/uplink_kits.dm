@@ -500,7 +500,9 @@
 
 /obj/item/storage/box/syndie_kit/mimery/PopulateContents()
 	new /obj/item/book/granter/spell/mimery_blockade(src)
-
+	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+	new /obj/item/book/granter/spell/mimery_guns(src)
+	// [/CELADON-ADD]
 /obj/item/storage/box/syndie_kit/centcom_costume/PopulateContents()
 	new /obj/item/clothing/under/rank/centcom/official(src)
 	new /obj/item/clothing/shoes/sneakers/black(src)

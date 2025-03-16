@@ -76,7 +76,7 @@
 				spacer = "\n\t"
 
 		if(cached_slot_flags & ITEM_SLOT_EYES)
-			// [CELADON-EDIT] - CELADON_RETURN_CONTENT
+			// [CELADON-EDIT] - CELADON_RETURN_CONTENT_SPAWN
 			// icon_file = 'icons/mob/clothing/eyes/eyes.dmi'	// CELADON-EDIT - ORIGINAL
 			icon_file = 'mod_celadon/_storge_icons/icons/clothing/overlay/eyes.dmi'
 			// [/CELADON-EDIT]
