@@ -620,13 +620,6 @@
 	cost = 3
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER)
 
-/datum/map_template/ruin/space/excavator_DK
-	id = "Excavator-DK"
-	name = "Excavator DK Class"
-	description = "A heavily damaged DK class excavator"
-	suffix = "excavator_DK.dmm"
-	cost = 1
-
 /datum/map_template/ruin/space/vaporwave
 	id = "vaporwave"
 	name = "Aesthetic Outpost"
@@ -690,13 +683,6 @@
 	description = "A NT research station. Something has gone horribly wrong here."
 	suffix = "ntfacility.dmm"
 	cost = 4
-
-/datum/map_template/ruin/space/glade
-	id = "dark_glade"
-	name = "Dark Glade"
-	description = "It's always dark in the ancient glade."
-	suffix = "dark_glade.dmm"
-	cost = 1
 
 /datum/map_template/ruin/space/syndicircle
 	id = "provinggrounds"
