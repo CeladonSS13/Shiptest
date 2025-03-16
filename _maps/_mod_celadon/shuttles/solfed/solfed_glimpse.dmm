@@ -146,11 +146,6 @@
 	icon_state = "0-8"
 	},
 /obj/structure/closet/crate/freezer/blood,
-/obj/machinery/light_switch{
-	pixel_x = 19;
-	pixel_y = 11;
-	dir = 8
-	},
 /obj/structure/window/plasma/reinforced/spawner/north,
 /turf/open/floor/wood/ebony,
 /area/ship/general/science)
@@ -1068,6 +1063,11 @@
 /obj/machinery/rnd/production/circuit_imprinter/department/science,
 /obj/effect/turf_decal/corner/transparent/purple/mono,
 /obj/structure/window/plasma/reinforced/spawner/north,
+/obj/machinery/light_switch{
+	pixel_x = -20;
+	pixel_y = -11;
+	dir = 4
+	},
 /turf/open/floor/wood/ebony,
 /area/ship/general/science)
 "xN" = (
