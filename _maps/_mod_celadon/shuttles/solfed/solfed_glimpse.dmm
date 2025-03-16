@@ -1370,11 +1370,6 @@
 	},
 /turf/open/floor/wood/ebony,
 /area/ship/hallway/central)
-"BJ" = (
-/obj/structure/crate_shelf/built,
-/obj/machinery/firealarm/directional/south,
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
 "BZ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -1696,7 +1691,8 @@
 /obj/structure/railing/wood,
 /obj/structure/bed/dogbed,
 /mob/living/simple_animal/pet/mothroach{
-	name = "Archibald"
+	name = "Archibald";
+	faction = list("neutral", "playerSolgov")
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
@@ -1913,6 +1909,11 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel/mono,
+/area/ship/cargo)
+"KE" = (
+/obj/structure/crate_shelf/built,
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "KH" = (
 /obj/machinery/porta_turret/ship/solfed/light{
@@ -2240,20 +2241,6 @@
 /obj/effect/turf_decal/corner/transparent/purple/mono,
 /turf/open/floor/wood/ebony,
 /area/ship/general/science)
-"QD" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/techfloor,
-/obj/machinery/firealarm/directional/south,
-/turf/open/floor/plasteel/white,
-/area/ship/hallway/central)
 "QX" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -2460,6 +2447,20 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
+"TJ" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/techfloor,
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plasteel/white,
+/area/ship/hallway/central)
 "TL" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -3060,7 +3061,7 @@ rY
 Nj
 oN
 zL
-BJ
+KE
 NU
 Uo
 zJ
@@ -3096,7 +3097,7 @@ WS
 Kq
 Yw
 NU
-QD
+TJ
 PI
 PI
 PI
