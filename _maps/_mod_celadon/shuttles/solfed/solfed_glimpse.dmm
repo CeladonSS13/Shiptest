@@ -28,6 +28,7 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
+/obj/item/radio/intercom/directional/east,
 /turf/open/floor/wood/ebony,
 /area/ship/hallway/central)
 "bD" = (
@@ -114,6 +115,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/turf_decal/techfloor,
+/obj/item/radio/intercom/directional/north,
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "cZ" = (
@@ -343,10 +345,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/crew/cryo)
 "jv" = (
-/obj/machinery/door/airlock{
-	id_tag = "toilet"
-	},
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/wood/ebony,
 /area/ship/hallway/central)
 "jT" = (
 /obj/structure/sign/flag/solfed,
@@ -477,8 +476,11 @@
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
 "lZ" = (
-/obj/item/radio/intercom/directional/east,
-/turf/open/floor/wood/ebony,
+/obj/structure/table/wood,
+/obj/item/radio/intercom/table{
+	dir = 4
+	},
+/turf/open/floor/carpet/blue,
 /area/ship/hallway/central)
 "mD" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/full,
@@ -601,6 +603,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
+"om" = (
+/obj/structure/crate_shelf/built,
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plasteel/tech,
+/area/ship/cargo)
 "os" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 5
@@ -928,11 +935,10 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "tq" = (
-/obj/structure/table/wood,
-/obj/item/radio/intercom/table{
+/obj/structure/sign/flag/solfed{
 	dir = 4
 	},
-/turf/open/floor/carpet/blue,
+/turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/hallway/central)
 "uC" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/full,
@@ -1135,10 +1141,6 @@
 "yF" = (
 /obj/structure/table/wood/fancy/purple,
 /obj/machinery/door/firedoor/border_only,
-/obj/item/pizzabox/pineapple{
-	pixel_x = 0;
-	pixel_y = 14
-	},
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
 "zh" = (
@@ -1154,11 +1156,6 @@
 /obj/effect/turf_decal/techfloor,
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
-"zj" = (
-/obj/structure/table/wood/fancy/purple,
-/obj/machinery/door/firedoor/border_only,
-/turf/open/floor/wood/mahogany,
-/area/ship/crew/canteen/kitchen)
 "zo" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -2070,19 +2067,14 @@
 /turf/open/floor/plasteel/white,
 /area/ship/cargo)
 "MG" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
+/obj/structure/table/wood/fancy/purple,
+/obj/machinery/door/firedoor/border_only,
+/obj/item/pizzabox/pineapple{
+	pixel_x = 0;
+	pixel_y = 14
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/techfloor,
-/obj/machinery/firealarm/directional/south,
-/turf/open/floor/plasteel/white,
-/area/ship/hallway/central)
+/turf/open/floor/wood/mahogany,
+/area/ship/crew/canteen/kitchen)
 "MN" = (
 /obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -2336,10 +2328,10 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/hallway/central)
 "Sg" = (
-/obj/structure/sign/flag/solfed{
-	dir = 4
+/obj/machinery/door/airlock{
+	id_tag = "toilet"
 	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
+/turf/open/floor/plasteel/showroomfloor,
 /area/ship/hallway/central)
 "Sp" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/full,
@@ -2575,6 +2567,20 @@
 /obj/structure/curtain/cloth,
 /turf/open/floor/wood/ebony,
 /area/ship/general/science)
+"Vd" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/techfloor,
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plasteel/white,
+/area/ship/hallway/central)
 "Vh" = (
 /obj/machinery/porta_turret/ship/solfed/light{
 	dir = 9;
@@ -2615,9 +2621,6 @@
 "VK" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/table/wood/fancy/purple,
-/obj/item/radio/intercom/table{
-	dir = 4
-	},
 /turf/open/floor/wood/ebony,
 /area/ship/hallway/central)
 "VP" = (
@@ -2712,11 +2715,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
-"Wz" = (
-/obj/structure/crate_shelf/built,
-/obj/machinery/firealarm/directional/south,
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
 "WJ" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/full,
 /obj/structure/cable{
@@ -3088,7 +3086,7 @@ rY
 Nj
 oN
 zL
-Wz
+om
 NU
 Uo
 zJ
@@ -3124,7 +3122,7 @@ WS
 Kq
 Yw
 NU
-MG
+Vd
 PI
 PI
 PI
@@ -3187,7 +3185,7 @@ ND
 AP
 HY
 Oz
-yF
+MG
 FE
 JM
 VK
@@ -3221,7 +3219,7 @@ PP
 AP
 GT
 PG
-zj
+yF
 By
 os
 VQ
@@ -3241,7 +3239,7 @@ HV
 Gz
 WY
 aX
-lZ
+jv
 iv
 oW
 qB
@@ -3275,7 +3273,7 @@ cZ
 Pq
 Qq
 wh
-jv
+Sg
 iv
 tn
 zu
@@ -3312,7 +3310,7 @@ NU
 wv
 Rn
 Bb
-Sg
+tq
 uT
 uT
 NU
@@ -3362,7 +3360,7 @@ Xi
 GY
 CH
 nl
-tq
+lZ
 ki
 MN
 MN
