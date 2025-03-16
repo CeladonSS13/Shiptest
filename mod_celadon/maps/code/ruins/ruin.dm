@@ -1015,7 +1015,7 @@
 	suffix = "excavator_DK.dmm"
 	cost = 1
 
-/datum/map_template/asteroid/space/glade
+/datum/map_template/ruin/asteroid/glade
 	id = "dark_glade"
 	name = "Dark Glade"
 	description = "It's always dark in the ancient glade."
