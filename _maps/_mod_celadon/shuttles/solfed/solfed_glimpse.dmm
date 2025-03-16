@@ -319,13 +319,6 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/button/door{
-	pixel_y = -5;
-	pixel_x = 73;
-	dir = 8;
-	id = "glimpse_eng_window";
-	name = "dorms shutters control"
-	},
 /obj/machinery/light/directional/east,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
@@ -481,18 +474,10 @@
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
 "lZ" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+/obj/structure/sign/flag/solfed{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/techfloor,
-/obj/machinery/firealarm/directional/south,
-/turf/open/floor/plasteel/white,
+/turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/hallway/central)
 "mD" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/full,
@@ -2327,10 +2312,18 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/hallway/central)
 "Sg" = (
-/obj/structure/sign/flag/solfed{
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/techfloor,
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "Sp" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/full,
@@ -3111,7 +3104,7 @@ WS
 Kq
 Yw
 NU
-lZ
+Sg
 PI
 PI
 PI
@@ -3299,7 +3292,7 @@ NU
 wv
 Rn
 Bb
-Sg
+lZ
 uT
 uT
 NU
