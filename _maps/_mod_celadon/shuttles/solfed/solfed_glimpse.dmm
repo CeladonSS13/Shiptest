@@ -465,6 +465,7 @@
 "lE" = (
 /obj/structure/table/wood/fancy/purple,
 /obj/effect/spawner/random/maintenance/three,
+/obj/machinery/door/firedoor/border_only,
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
 "lZ" = (
@@ -919,10 +920,8 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "tq" = (
-/obj/structure/sign/flag/solfed{
-	dir = 4
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
+/obj/machinery/door/airlock,
+/turf/open/floor/plasteel/showroomfloor,
 /area/ship/hallway/central)
 "uC" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/full,
@@ -1124,6 +1123,7 @@
 /area/ship/hallway/central)
 "yF" = (
 /obj/structure/table/wood/fancy/purple,
+/obj/machinery/door/firedoor/border_only,
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
 "zh" = (
@@ -1634,6 +1634,7 @@
 "Gz" = (
 /obj/machinery/microwave,
 /obj/structure/table/wood/fancy/purple,
+/obj/machinery/door/firedoor/border_only,
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
 "GG" = (
@@ -2046,18 +2047,10 @@
 /turf/open/floor/plasteel/white,
 /area/ship/cargo)
 "MG" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+/obj/structure/sign/flag/solfed{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/techfloor,
-/obj/machinery/firealarm/directional/south,
-/turf/open/floor/plasteel/white,
+/turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/hallway/central)
 "MN" = (
 /obj/effect/spawner/structure/window/shuttle,
@@ -2312,8 +2305,18 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/hallway/central)
 "Sg" = (
-/obj/machinery/door/airlock,
-/turf/open/floor/plasteel/showroomfloor,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/techfloor,
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "Sp" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/full,
@@ -2337,8 +2340,9 @@
 	},
 /obj/machinery/firealarm/directional/west{
 	pixel_x = -32;
-	pixel_y = 16
+	pixel_y = 18
 	},
+/obj/machinery/door/firedoor/border_only,
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
 "Ti" = (
@@ -3093,7 +3097,7 @@ WS
 Kq
 Yw
 NU
-MG
+Sg
 PI
 PI
 PI
@@ -3244,7 +3248,7 @@ cZ
 Pq
 Qq
 wh
-Sg
+tq
 iv
 tn
 zu
@@ -3281,7 +3285,7 @@ NU
 wv
 Rn
 Bb
-tq
+MG
 uT
 uT
 NU
