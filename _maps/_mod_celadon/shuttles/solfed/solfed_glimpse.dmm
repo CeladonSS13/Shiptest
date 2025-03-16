@@ -919,9 +919,10 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "tq" = (
-/obj/structure/chair/comfy/red/directional/east,
-/obj/machinery/computer/helm/viewscreen/directional/west,
-/turf/open/floor/carpet/blue,
+/obj/structure/sign/flag/solfed{
+	dir = 4
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/hallway/central)
 "uC" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/full,
@@ -1136,20 +1137,6 @@
 	icon_state = "1-8"
 	},
 /obj/effect/turf_decal/techfloor,
-/turf/open/floor/plasteel/white,
-/area/ship/hallway/central)
-"zi" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/techfloor,
-/obj/machinery/firealarm/directional/south,
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "zo" = (
@@ -2059,9 +2046,19 @@
 /turf/open/floor/plasteel/white,
 /area/ship/cargo)
 "MG" = (
-/obj/structure/sign/flag/solfed,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/techfloor,
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plasteel/white,
+/area/ship/hallway/central)
 "MN" = (
 /obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -2507,6 +2504,10 @@
 /area/ship/bridge)
 "Un" = (
 /obj/structure/chair/comfy/purple/old/directional/south,
+/obj/machinery/computer/helm/viewscreen/directional/north{
+	pixel_x = 1;
+	pixel_y = 23
+	},
 /turf/open/floor/carpet/blue,
 /area/ship/hallway/central)
 "Uo" = (
@@ -3092,7 +3093,7 @@ WS
 Kq
 Yw
 NU
-zi
+MG
 PI
 PI
 PI
@@ -3280,7 +3281,7 @@ NU
 wv
 Rn
 Bb
-NU
+tq
 uT
 uT
 NU
@@ -3297,7 +3298,7 @@ IN
 CA
 FI
 RM
-tq
+FL
 FL
 im
 Sb
@@ -3344,7 +3345,7 @@ es
 yw
 wJ
 mF
-MG
+GY
 Un
 LN
 ki
