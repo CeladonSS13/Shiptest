@@ -28,7 +28,6 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/obj/structure/statue/sandstone/venus,
 /turf/open/floor/wood/ebony,
 /area/ship/hallway/central)
 "bD" = (
@@ -218,6 +217,10 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
+"fa" = (
+/obj/machinery/door/airlock,
+/turf/open/floor/plasteel/showroomfloor,
+/area/ship/hallway/central)
 "fg" = (
 /obj/structure/tank_dispenser/oxygen,
 /obj/effect/turf_decal/techfloor{
@@ -245,12 +248,10 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/structure/window/plasma/reinforced/spawner/west,
-/obj/machinery/hydroponics/soil,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/grass/fairy,
+/turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/hallway/central)
 "gD" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -402,16 +403,15 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
 	},
-/obj/structure/window/plasma/reinforced/spawner/east,
-/obj/structure/table/wood/fancy/purple,
-/obj/item/seeds/aloe,
-/obj/item/seeds/cabbage,
-/obj/item/seeds/poppy,
-/obj/item/seeds/sugarcane,
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/turf/open/floor/wood/ebony,
+/obj/structure/toilet{
+	dir = 8;
+	pixel_x = 4;
+	pixel_y = 6
+	},
+/turf/open/floor/plasteel/showroomfloor,
 /area/ship/hallway/central)
 "kH" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -472,8 +472,18 @@
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
 "lZ" = (
-/obj/machinery/jukebox,
-/turf/open/floor/wood/ebony,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/techfloor,
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "mD" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/full,
@@ -1007,8 +1017,13 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/airalarm/directional/north,
-/turf/open/floor/wood/ebony,
+/obj/structure/sink{
+	icon_state = "sink";
+	dir = 2;
+	pixel_x = 1;
+	pixel_y = 28
+	},
+/turf/open/floor/plasteel/showroomfloor,
 /area/ship/hallway/central)
 "wo" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
@@ -1357,10 +1372,6 @@
 /turf/open/floor/wood/ebony,
 /area/ship/hallway/central)
 "BB" = (
-/obj/structure/window/plasma/reinforced/spawner/east,
-/obj/item/cultivator/rake,
-/obj/item/reagent_containers/glass/bucket/wooden,
-/obj/item/storage/bag/plants,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 1
@@ -1368,7 +1379,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/wood/ebony,
+/turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/hallway/central)
 "BZ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -1910,11 +1921,6 @@
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
-"KE" = (
-/obj/structure/crate_shelf/built,
-/obj/machinery/firealarm/directional/south,
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
 "KH" = (
 /obj/machinery/porta_turret/ship/solfed/light{
 	dir = 5;
@@ -2308,10 +2314,10 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/hallway/central)
 "Sg" = (
-/obj/structure/window/plasma/reinforced/spawner/west,
-/obj/machinery/hydroponics/soil,
-/turf/open/floor/grass/fairy,
-/area/ship/hallway/central)
+/obj/structure/crate_shelf/built,
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plasteel/tech,
+/area/ship/cargo)
 "Sp" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/full,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -2447,20 +2453,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
-"TJ" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/techfloor,
-/obj/machinery/firealarm/directional/south,
-/turf/open/floor/plasteel/white,
-/area/ship/hallway/central)
 "TL" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -2750,6 +2742,8 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
+/obj/machinery/airalarm/directional/east,
+/obj/machinery/jukebox,
 /turf/open/floor/wood/ebony,
 /area/ship/hallway/central)
 "Xa" = (
@@ -3061,7 +3055,7 @@ rY
 Nj
 oN
 zL
-KE
+Sg
 NU
 Uo
 zJ
@@ -3097,7 +3091,7 @@ WS
 Kq
 Yw
 NU
-TJ
+lZ
 PI
 PI
 PI
@@ -3214,7 +3208,7 @@ HV
 Gz
 WY
 aX
-lZ
+jv
 iv
 oW
 qB
@@ -3231,7 +3225,7 @@ Qq
 Qq
 Qq
 gB
-Sg
+NU
 iv
 rQ
 It
@@ -3248,7 +3242,7 @@ cZ
 Pq
 Qq
 wh
-jv
+fa
 iv
 tn
 zu
