@@ -188,7 +188,7 @@
 /obj/structure/railing/wood{
 	dir = 4
 	},
-/obj/machinery/computer/secure_data{
+/obj/machinery/computer/helm{
 	dir = 8
 	},
 /turf/open/floor/plasteel/white,
@@ -367,7 +367,7 @@
 	},
 /obj/machinery/firealarm/directional/west{
 	pixel_x = -32;
-	pixel_y = -14
+	pixel_y = -13
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
@@ -712,12 +712,15 @@
 /area/ship/engineering)
 "pL" = (
 /obj/structure/chair/comfy/blue/corpo/directional/east,
-/obj/machinery/airalarm/directional/north,
 /obj/machinery/button/door{
 	id = "glimpse_windows";
 	name = "windows blast door control";
 	pixel_x = 22;
 	pixel_y = 22
+	},
+/obj/item/radio/intercom/directional/north{
+	pixel_x = 0;
+	pixel_y = 36
 	},
 /turf/open/floor/carpet/royalblue,
 /area/ship/bridge)
@@ -1121,7 +1124,7 @@
 /obj/structure/railing/wood{
 	dir = 4
 	},
-/obj/machinery/computer/helm{
+/obj/machinery/computer/crew{
 	dir = 8
 	},
 /turf/open/floor/plasteel/white,
@@ -1719,8 +1722,17 @@
 	pixel_y = 32
 	},
 /obj/structure/table/wood/fancy/purple,
-/obj/item/radio/intercom/table{
-	dir = 8
+/obj/item/paper_bin{
+	pixel_x = 3;
+	pixel_y = 5
+	},
+/obj/item/desk_flag/solfed{
+	pixel_x = -8;
+	pixel_y = 13
+	},
+/obj/item/pen/solfed{
+	pixel_x = 0;
+	pixel_y = 5
 	},
 /turf/open/floor/carpet/royalblue,
 /area/ship/bridge)
@@ -2026,6 +2038,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "Mo" = (
@@ -2710,7 +2723,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/computer/crew{
+/obj/machinery/computer/secure_data{
 	dir = 8
 	},
 /turf/open/floor/plasteel/white,
