@@ -373,6 +373,10 @@
 	id = "inkwell_turrets";
 	pixel_x = -28
 	},
+/obj/machinery/firealarm/directional/west{
+	pixel_x = -32;
+	pixel_y = -14
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "ki" = (
@@ -1366,6 +1370,11 @@
 	},
 /turf/open/floor/wood/ebony,
 /area/ship/hallway/central)
+"BJ" = (
+/obj/structure/crate_shelf/built,
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plasteel/tech,
+/area/ship/cargo)
 "BZ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -1416,6 +1425,10 @@
 /obj/machinery/light_switch{
 	pixel_x = -12;
 	pixel_y = 21
+	},
+/obj/machinery/firealarm/directional/north{
+	pixel_x = 15;
+	pixel_y = 30
 	},
 /turf/open/floor/carpet/blue,
 /area/ship/hallway/central)
@@ -1513,6 +1526,7 @@
 /area/ship/crew/cryo)
 "EU" = (
 /obj/structure/chair/bench/blue/directional/east,
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/wood/ebony,
 /area/ship/hallway/central)
 "Fe" = (
@@ -1797,6 +1811,7 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Jj" = (
@@ -2225,6 +2240,20 @@
 /obj/effect/turf_decal/corner/transparent/purple/mono,
 /turf/open/floor/wood/ebony,
 /area/ship/general/science)
+"QD" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/techfloor,
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plasteel/white,
+/area/ship/hallway/central)
 "QX" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -2315,6 +2344,10 @@
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
+	},
+/obj/machinery/firealarm/directional/west{
+	pixel_x = -32;
+	pixel_y = 16
 	},
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
@@ -3027,7 +3060,7 @@ rY
 Nj
 oN
 zL
-Yw
+BJ
 NU
 Uo
 zJ
@@ -3063,7 +3096,7 @@ WS
 Kq
 Yw
 NU
-tn
+QD
 PI
 PI
 PI
