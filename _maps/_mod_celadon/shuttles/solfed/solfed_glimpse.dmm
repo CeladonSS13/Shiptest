@@ -278,7 +278,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
-/obj/structure/railing/wood,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/ebony,
 /area/ship/bridge)
@@ -429,6 +428,16 @@
 	pixel_y = 21
 	},
 /turf/open/floor/plasteel/white,
+/area/ship/bridge)
+"kK" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/comfy/blue/corpo/directional/east,
+/obj/structure/railing/wood{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = 8
+	},
+/turf/open/floor/carpet/royalblue,
 /area/ship/bridge)
 "lb" = (
 /obj/structure/cable/yellow{
@@ -1706,7 +1715,6 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "Hm" = (
-/obj/structure/railing/wood,
 /obj/structure/bed/dogbed,
 /mob/living/simple_animal/pet/mothroach{
 	name = "Archibald";
@@ -2316,6 +2324,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/computer/cargo{
 	dir = 8
+	},
+/obj/structure/railing/wood{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = 8
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
@@ -3404,7 +3417,7 @@ GY
 OO
 ps
 ii
-ps
+kK
 GY
 GG
 ki
