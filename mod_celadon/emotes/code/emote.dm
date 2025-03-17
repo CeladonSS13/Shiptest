@@ -1386,7 +1386,7 @@
 	if(!..())
 		return FALSE
 
-	if(!istajara(user))
+	if(!istajara(user) && !islizard(user))
 		return FALSE
 
 	return TRUE
