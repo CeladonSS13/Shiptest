@@ -8,7 +8,7 @@
 
 /obj/structure/sign/poster/bay/random
 	name = "random bay poster"
-	icon_state = "random_contraband"
+	icon_state = "random"
 	never_random = TRUE
 	random_basetype = /obj/structure/sign/poster/bay
 	random_type = POSTER_ADD_FROM_LIST
@@ -373,7 +373,7 @@
 
 /obj/structure/sign/poster/pol/random
 	name = "random polaris poster"
-	icon_state = "random_contraband"
+	icon_state = "random"
 	never_random = TRUE
 	random_basetype = /obj/structure/sign/poster/pol
 	random_type = POSTER_ADD_FROM_LIST
@@ -446,7 +446,7 @@
 
 /obj/structure/sign/poster/tg/random
 	name = "random tg poster"
-	icon_state = "random_contraband"
+	icon_state = "random"
 	never_random = TRUE
 	random_basetype = /obj/structure/sign/poster/tg
 	random_type = POSTER_ADD_FROM_LIST
