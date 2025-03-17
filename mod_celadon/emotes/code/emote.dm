@@ -444,7 +444,7 @@
 /datum/emote/living/laugh_evil
 	key = "laugh_evil"
 	key_third_person = "laughs_evil"
-	message = "Злорадно смеётся."
+	message = "злорадно смеётся."
 	message_mime = "тихо злорадно смеётся!"
 	emote_type = EMOTE_AUDIBLE
 	vary = TRUE
@@ -628,7 +628,7 @@
 /datum/emote/living/sniff
 	key = "sniff"
 	key_third_person = "sniffs"
-	message = "Шмыгает."
+	message = "шмыгает."
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/sniff/get_sound(mob/living/user)
@@ -1508,7 +1508,7 @@
 /datum/emote/living/carbon/human/spin
 	key = "spin"
 	key_third_person = "spines"
-	message = "Кружится."
+	message = "кружится."
 	emote_type = EMOTE_VISIBLE
 
 /datum/emote/spin
