@@ -279,11 +279,6 @@
 	desc = "A luckystar sign in cryptic letters."
 	icon_state = "luckystar"
 	emissive_state = "luckystar-emissive"
-/*
-	light_color = LIGHT_COLOR_NEONRED
-	light_power = 8
-	light_range = 3
-*/
 	light_color = "#ff2119"
 	light_power = 20
 	light_range = 3
@@ -302,7 +297,6 @@
 	pixel_x = -8
 	pixel_y = 14
 	//alpha = 200
-// light_color = "#aa22ff"
 
 /obj/structure/sign/neon/big/inn
 	name = "inn sign"
@@ -377,11 +371,9 @@
 	icon_state = "directions"
 	emissive_state = "directions"
 	light_color = LIGHT_COLOR_LIGHT_CYAN
-/*
-	light_color = "#00ffff"
-	light_power = 8
 	light_range = 6
-*/
+	light_power = 8
+
 /obj/structure/sign/neon/big/direction2
 	name = "direction sign"
 	desc = "A sign for the navigation inside of the city."
