@@ -1,4 +1,11 @@
-// MARK: RANDOM
+// MARK: BAY
+/obj/structure/sign/poster/bay
+	icon = 'mod_celadon/_storge_icons/icons/structures/obj/posters.dmi'
+	icon_state = "poster_ripped"
+	poster_item_name = "bay poster"
+	poster_item_desc = "It's posters."
+	poster_item_icon_state = "rolled_poster"
+
 /obj/structure/sign/poster/bay/random
 	name = "random bay poster"
 	icon_state = "random_contraband"
@@ -65,51 +72,6 @@
 		/obj/structure/sign/poster/bay/bay_57,
 		/obj/structure/sign/poster/bay/bay_58
 		)
-
-/obj/structure/sign/poster/pol/random
-	name = "random polaris poster"
-	icon_state = "random_contraband"
-	never_random = TRUE
-	random_basetype = /obj/structure/sign/poster/pol
-	random_type = POSTER_ADD_FROM_LIST
-	random_pool = list(
-		/obj/structure/sign/poster/pol/pol_1,
-		/obj/structure/sign/poster/pol/pol_2,
-		/obj/structure/sign/poster/pol/pol_3,
-		/obj/structure/sign/poster/pol/pol_4,
-		/obj/structure/sign/poster/pol/pol_5,
-		/obj/structure/sign/poster/pol/pol_6,
-		/obj/structure/sign/poster/pol/pol_7,
-		/obj/structure/sign/poster/pol/pol_8,
-		/obj/structure/sign/poster/pol/pol_9
-		)
-
-/obj/structure/sign/poster/tg/random
-	name = "random tg poster"
-	icon_state = "random_contraband"
-	never_random = TRUE
-	random_basetype = /obj/structure/sign/poster/tg
-	random_type = POSTER_ADD_FROM_LIST
-	random_pool = list(
-		/obj/structure/sign/poster/tg/tg_1,
-		/obj/structure/sign/poster/tg/tg_2,
-		/obj/structure/sign/poster/tg/tg_3,
-		/obj/structure/sign/poster/tg/tg_4,
-		/obj/structure/sign/poster/tg/tg_5,
-		/obj/structure/sign/poster/tg/tg_6,
-		/obj/structure/sign/poster/tg/tg_7,
-		/obj/structure/sign/poster/tg/tg_8,
-		/obj/structure/sign/poster/tg/tg_9,
-		/obj/structure/sign/poster/tg/tg_10
-		)
-
-// MARK: BAY
-/obj/structure/sign/poster/bay
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/posters.dmi'
-	icon_state = "poster_ripped"
-	poster_item_name = "bay poster"
-	poster_item_desc = "It's posters."
-	poster_item_icon_state = "rolled_poster"
 
 /obj/structure/sign/poster/bay/bay_1
 	icon_state = "bsposter1"
@@ -409,6 +371,24 @@
 	poster_item_desc = "It's posters."
 	poster_item_icon_state = "rolled_poster"
 
+/obj/structure/sign/poster/pol/random
+	name = "random polaris poster"
+	icon_state = "random_contraband"
+	never_random = TRUE
+	random_basetype = /obj/structure/sign/poster/pol
+	random_type = POSTER_ADD_FROM_LIST
+	random_pool = list(
+		/obj/structure/sign/poster/pol/pol_1,
+		/obj/structure/sign/poster/pol/pol_2,
+		/obj/structure/sign/poster/pol/pol_3,
+		/obj/structure/sign/poster/pol/pol_4,
+		/obj/structure/sign/poster/pol/pol_5,
+		/obj/structure/sign/poster/pol/pol_6,
+		/obj/structure/sign/poster/pol/pol_7,
+		/obj/structure/sign/poster/pol/pol_8,
+		/obj/structure/sign/poster/pol/pol_9
+		)
+
 /obj/structure/sign/poster/pol/pol_1
 	icon_state="polposter1"
 	name = "Safety!"
@@ -463,6 +443,25 @@
 	poster_item_name = "tg poster"
 	poster_item_desc = "It's posters."
 	poster_item_icon_state = "rolled_poster"
+
+/obj/structure/sign/poster/tg/random
+	name = "random tg poster"
+	icon_state = "random_contraband"
+	never_random = TRUE
+	random_basetype = /obj/structure/sign/poster/tg
+	random_type = POSTER_ADD_FROM_LIST
+	random_pool = list(
+		/obj/structure/sign/poster/tg/tg_1,
+		/obj/structure/sign/poster/tg/tg_2,
+		/obj/structure/sign/poster/tg/tg_3,
+		/obj/structure/sign/poster/tg/tg_4,
+		/obj/structure/sign/poster/tg/tg_5,
+		/obj/structure/sign/poster/tg/tg_6,
+		/obj/structure/sign/poster/tg/tg_7,
+		/obj/structure/sign/poster/tg/tg_8,
+		/obj/structure/sign/poster/tg/tg_9,
+		/obj/structure/sign/poster/tg/tg_10
+		)
 
 /obj/structure/sign/poster/tg/tg_1
 	name = "Free Tonto"
