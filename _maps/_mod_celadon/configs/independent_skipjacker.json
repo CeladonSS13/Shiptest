@@ -1,0 +1,41 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "Skipjacker-class Scavenger",
+	"map_short_name": "Skipjacker",
+	"description": "Скипджеккер — небольшой, но юркий корабль, чей экипаж состоит в основном из воксов-изгоев, вынужденных выживать в роли мусорщиков и разбойников. Из-за устаревшей конструкции запасы кислорода на борту сильно ограничены, однако при умеренном расходе их хватит на достаточно долгое время.(Напомню! В течение первых 10 минут после спавна корабля, вы можете заменить первую букву своего исходного префикса на «R», чтобы стать пиратом. Перед этим обязательно сообщите администрации!)",
+	"map_path": "_maps/_mod_celadon/shuttles/independent/independent_skipjacker.dmm",
+	"enabled": true,
+	"limit": 1,
+	"prefix": "ISV",
+	"faction": "/datum/faction/independent",
+	"tags": [
+		"Combat",
+		"RP Focus",
+		"Hydroponics",
+		"Salvage",
+		"Generalist"
+	],
+	"namelists": [
+		"MERCANTILE",
+		"NATURAL_AGGRESSIVE"
+	],
+	"job_slots": {
+		"Quill": {
+			"outfit": "/datum/outfit/job/independent/captain",
+			"officer": true,
+			"slots": 1
+		},
+		"Scavengers": {
+			"outfit": "/datum/outfit/job/independent/engineer/salvage",
+			"slots": 2
+		},
+		"Technician": {
+			"outfit": "/datum/outfit/job/independent/engineer",
+			"slots": 1
+		},
+		"Doctor": {
+			"outfit": "/datum/outfit/job/independent/doctor",
+			"slots": 1
+		}
+	}
+}
