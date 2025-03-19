@@ -248,7 +248,7 @@
 	overlay_state = "main_road"
 
 /*|	                                             */
-/*| Big Neon Signs
+/*|/// MARK:  Big Neon Signs
 	----------------------------------------------*/
 
 /obj/structure/sign/neon/big
@@ -605,30 +605,20 @@
 	icon_state = "clothing"
 	light_color = LIGHT_COLOR_RED
 
-// /obj/structure/sign/neon/big/manhattan2
-// 	name = "neon city map"
-// 	desc = "Holographic Manhattan map."
-// 	icon_state = "manhattanmap"
-// 	emissive_state = "manhattanmap-emissive"
-// 	density = 1
-// 	bounds = "64,32"
-// 	pixel_x = 12
-// 	light_color = LIGHT_COLOR_LIGHT_CYAN
-// 	var/obj/machinery/station_map/attachable/holomap
+/obj/structure/sign/neon/strelka
+	name = "info strelka"
+	icon = 'mod_celadon/_storge_icons/icons/structures/obj/sign_road.dmi'
+	icon_state = "strelka_green"
+	light_color = LIGHT_COLOR_GREEN
+	layer = 3
+	light_range = 2
+	light_power = 2
 
-// /obj/structure/sign/neon/big/manhattan2/initialize()
-// 	. = ..()
-// 	holomap = new(get_turf(src))
-// 	holomap.SetOwner(src)
-// 	holomap.bounds = bounds
+/obj/structure/sign/neon/strelka/yellow
+	icon_state = "strelka_yellow"
+	light_color = LIGHT_COLOR_YELLOW
 
-// /obj/structure/sign/neon/big/manhattan2/attack_hand(mob/user)
-// 	. = ..()
-// 	holomap.attack_hand(user)
-
-// /obj/structure/sign/neon/big/manhattan2/Bumped(atom/movable/AM)
-// 	. = ..()
-// 	holomap.Bumped(AM)
+/// MARK: BIG
 
 /obj/structure/sign/neon/big/hospital1
 	name = "city hospital sign"
@@ -696,7 +686,7 @@
 
 
 /*|	                                             */
-/*| Double Signs
+/*| /// MARK: Double Signs
    ----------------------------------------------*/
 
 /obj/structure/sign/double/city/
@@ -797,7 +787,7 @@
 
 
 /*|	                                             */
-/*| Normal Signs
+/*|/// MARK:  Normal Signs
    ----------------------------------------------*/
 
 /obj/structure/sign/city/
