@@ -33,7 +33,7 @@ var/list/available_paintings = list(
 	"persistance",
 	"sonman",
 	"thescream",
-
+	"neznakomka",
 	)
 	//The following paintings either appear under certain conditions or have to be varedited by admins
 	//"narsie", transformed from other paintings by Nar-Sie. Has a chance to spawn on the asteroid in temple ruins.
@@ -47,21 +47,11 @@ var/list/available_paintings = list(
 	desc = "A blank painting."
 	icon = 'mod_celadon/_storge_icons/icons/structures/paintings.dmi'
 	icon_state = "item"
-	// item_state = "painting"
 	anchored = 1
-	// burn_state = 0 //Buuuurn baby burn. Disco inferno!
-	// burntime = SHORT_BURN
-//	flags = FPRINT
-//	w_type = RECYK_WOOD
-//	frame_material = /obj/item/stack/sheet/wood
-//	sheets_refunded = 2
-//	autoignition_temperature = AUTOIGNITION_WOOD
 	var/paint = ""
-	// unique_save_vars = list("paint")
 
 /obj/structure/painting/New()
 	..()
-	pixel_y = 32
 
 	update_painting()
 
@@ -184,6 +174,9 @@ var/list/available_paintings = list(
 		if("thescream")
 			name = "\improper eerie painting"
 			desc = "An odd picture showing a figure with his hands clasped over his face, screaming in a cacophony of agony, disturbing"
+		if("neznakomka")
+			name = "\improper загадочная незнакомка"
+			desc = "Эта картина вызывает у вас странные ощущения будто бы вы её где-то видели..."
 		else
 			name = "painting"
 			desc = "A blank painting."
@@ -194,14 +187,13 @@ var/list/available_paintings = list(
 /obj/structure/painting/narsie
 	paint = "narsie"
 
+/obj/structure/painting/neznakomka
+	paint = "neznakomka"
 
 /obj/structure/painting/random/New()
 	..()
 	icon_state = pick(available_paintings)
 	update_painting()
-
-
-
 
 /obj/structure/painting/hospital/New()
 	paint = "hospital"
@@ -212,8 +204,5 @@ var/list/available_paintings = list(
 	name = "painting"
 	desc = "A beautiful painting."
 	icon = 'mod_celadon/_storge_icons/icons/structures/mnhtn_paintings.dmi'
-	icon_state = "0,0" // 0,0 - first painting
-	// item_state = "painting"
+	icon_state = "0,0"
 	anchored = 1
-	// burn_state = 0
-	// burntime = SHORT_BURN
