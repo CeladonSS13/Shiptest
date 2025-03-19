@@ -5,7 +5,7 @@
 /datum/supply_pack/gun/g36
 	name = "Оружейный ящик G36"
 	desc = "Содержит автоматическую винтовку G36 и одну дополнительную обойму стандартного размера."
-	cost = 12000
+	cost = 1
 	contains = list(/obj/item/storage/guncase/g36)
 	crate_name = "auto rifle crate"
 
