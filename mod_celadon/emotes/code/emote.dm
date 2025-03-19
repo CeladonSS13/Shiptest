@@ -1150,7 +1150,7 @@
 /datum/emote/living/carbon/human/cry
 	key = "cry"
 	key_third_person = "cries"
-	message = "Плачет."
+	message = "плачет."
 	muzzled_noises = list("слабо", "жалко", "грустно")
 	emote_type = EMOTE_AUDIBLE
 
