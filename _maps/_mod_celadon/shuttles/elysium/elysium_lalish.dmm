@@ -142,11 +142,6 @@
 /area/ship/engineering/engines)
 "cL" = (
 /obj/effect/turf_decal/siding/wood,
-/obj/item/kirbyplants{
-	icon_state = "plant-21";
-	pixel_x = -14;
-	pixel_y = 22
-	},
 /obj/machinery/holopad/emergency/science,
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -154,6 +149,11 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
+	},
+/obj/item/kirbyplants{
+	icon_state = "plant-21";
+	pixel_x = -11;
+	pixel_y = 21
 	},
 /turf/open/floor/carpet/green,
 /area/ship/science)
@@ -298,12 +298,10 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/box/corners,
-/obj/item/wallframe/extinguisher_cabinet{
-	pixel_x = 29
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "fv" = (
@@ -2575,10 +2573,6 @@
 /obj/item/tank/internals/oxygen,
 /obj/item/tank/internals/oxygen,
 /obj/item/tank/internals/oxygen,
-/obj/item/tank/internals/oxygen,
-/obj/item/tank/internals/oxygen,
-/obj/item/tank/internals/oxygen,
-/obj/item/tank/internals/oxygen,
 /obj/item/tank/internals/plasma/full,
 /obj/effect/turf_decal/siding/white/corner{
 	dir = 4
@@ -2592,6 +2586,28 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
+/obj/item/transfer_valve,
+/obj/item/transfer_valve,
+/obj/item/transfer_valve,
+/obj/item/transfer_valve,
+/obj/item/transfer_valve,
+/obj/item/transfer_valve{
+	pixel_x = 3
+	},
+/obj/item/transfer_valve{
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/item/transfer_valve{
+	pixel_x = 8;
+	pixel_y = 6
+	},
+/obj/item/transfer_valve,
+/obj/item/transfer_valve,
+/obj/item/tank/internals/plasma/full,
+/obj/item/tank/internals/plasma/full,
+/obj/item/tank/internals/plasma/full,
+/obj/item/tank/internals/plasma/full,
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
@@ -3158,7 +3174,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/sign/warning/fire{
-	pixel_y = 29
+	pixel_y = 22
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel/dark,
