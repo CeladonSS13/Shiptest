@@ -28,6 +28,7 @@
 	name = "crystals"
 	icon = 'mod_celadon/_storge_icons/icons/structures/turf/crystal.dmi'
 	icon_state = "crystal_gen"
+	layer = 2
 
 /obj/effect/floor_decal/crystal/random/Initialize(mapload, newdir, newcolour, bypass, set_icon_state)
 	icon_state = "crystal_gen[rand(1,3)]"
