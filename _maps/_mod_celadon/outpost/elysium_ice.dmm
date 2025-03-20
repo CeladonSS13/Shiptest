@@ -1290,6 +1290,9 @@
 "aOo" = (
 /obj/structure/closet/crate/medical,
 /obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plasteel/darkbluefull/darkblue{
 	dir = 10
 	},
@@ -1788,6 +1791,9 @@
 	density = 0;
 	layer = 2.96
 	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -1830,6 +1836,9 @@
 "bcm" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/carpet/orange,
 /area/outpost/medical/relax_room)
 "bcD" = (
@@ -2822,15 +2831,18 @@
 /area/outpost/cargo)
 "bOF" = (
 /obj/machinery/door/airlock/freezer{
-	dir = 4;
+	dir = 1;
 	req_one_access_txt = "8124"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
 /obj/machinery/door/poddoor/ert{
 	id = "outpost_cook_kitchen";
 	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /turf/open/floor/plasteel/showroomfloor,
 /area/outpost/crew/canteen)
 "bOK" = (
@@ -3748,6 +3760,12 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
 	dir = 8
 	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
 "coW" = (
@@ -3761,8 +3779,8 @@
 	},
 /obj/machinery/button/door{
 	pixel_y = 11;
-	id = "outpost_cook_kitchen";
-	name = "Bolt kitchen";
+	id = "outpost_ghost_janitor";
+	name = "Bolt Janitor";
 	pixel_x = 22;
 	req_one_access_txt = "8124";
 	dir = 8
@@ -4297,6 +4315,9 @@
 /turf/closed/wall/r_wall,
 /area/outpost/crew/bar/bar_zone)
 "cHY" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
 "cIq" = (
@@ -4570,6 +4591,9 @@
 "cQc" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
 "cQh" = (
@@ -6622,6 +6646,9 @@
 /obj/structure/railing{
 	dir = 4
 	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/stairs/stairs_pack/mid,
 /area/outpost/exterior)
 "ebp" = (
@@ -6855,6 +6882,9 @@
 "ehv" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/kitchen_coldroom/freezerfloor/freezer_blue,
 /area/outpost/crew/canteen)
 "ehx" = (
@@ -8397,6 +8427,12 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
 	dir = 1
 	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
 "fej" = (
@@ -8480,6 +8516,24 @@
 /obj/effect/spawner/random/materials,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
+"fgU" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue)
 "fhc" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
 	dir = 8
@@ -8822,16 +8876,25 @@
 /turf/open/floor/wood/walnut,
 /area/outpost/exterior)
 "fsN" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/structure/cable{
-	icon_state = "1-2"
+/obj/structure/transit_tube{
+	dir = 8;
+	layer = 5;
+	density = 0
 	},
-/turf/open/floor/plating{
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/effect/turf_decal/borderfloor{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/patterned/brushed{
 	light_color = "#1B1D2E";
 	light_range = 2
 	},
-/area/outpost/fraction/syndi/donkco_shop)
+/area/outpost/exterior)
 "fsY" = (
 /obj/effect/turf_decal/corner/opaque/grey/full,
 /obj/structure/closet/l3closet/janitor,
@@ -9198,6 +9261,9 @@
 	dir = 1
 	},
 /obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/poddoor/ert{
+	id = "ice_sec_medicals"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/palata_1)
 "fAP" = (
@@ -9308,6 +9374,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
@@ -9587,6 +9656,9 @@
 	dir = 8
 	},
 /obj/item/storage/case/surgery,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/medical/surgery_2)
 "fKe" = (
@@ -9603,7 +9675,8 @@
 /area/outpost/operations/outpost_command)
 "fKu" = (
 /obj/machinery/vending/boozeomat/all_access{
-	pixel_y = 32
+	pixel_y = 32;
+	density = 0
 	},
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar/theatre)
@@ -11906,6 +11979,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -12910,9 +12986,29 @@
 	},
 /area/outpost/exterior)
 "hQG" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/turf/closed/wall/r_wall,
-/area/outpost/crew/canteen)
+/obj/structure/platform/industrial{
+	pixel_y = 18
+	},
+/obj/structure/transit_tube{
+	dir = 8;
+	layer = 5
+	},
+/obj/structure/platform/industrial{
+	dir = 1;
+	pixel_y = -22
+	},
+/obj/effect/turf_decal/borderfloorblack/corner{
+	pixel_y = 8;
+	pixel_x = -8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+	light_color = "#1B1D2E";
+	light_range = 2
+	},
+/area/outpost/exterior)
 "hQM" = (
 /obj/item/radio/intercom/directional/west{
 	pixel_y = 7
@@ -13119,6 +13215,9 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 6
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/surgery_1)
@@ -14335,6 +14434,9 @@
 /area/outpost/exterior)
 "iFc" = (
 /obj/structure/closet/crate/freezer/surplus_limbs,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel/darkbluefull/darkbluecorners{
 	dir = 8
 	},
@@ -14567,6 +14669,9 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/canteen)
 "iNC" = (
@@ -15276,11 +15381,6 @@
 	pixel_x = -6;
 	req_one_access_txt = "8100";
 	pixel_y = 11
-	},
-/obj/item/toy/plush/celadon/cat{
-	name = "Leo";
-	desc = "Вы видите чёрного кота. Вам кажется будто за ним наблюдает чёрный таяр с красными глазами. Вам становится не по себе при виде этой картины.";
-	pixel_x = 13
 	},
 /obj/machinery/button/door{
 	id = "outpost_command";
@@ -16983,6 +17083,19 @@
 	},
 /turf/open/floor/carpet/green,
 /area/outpost/fraction/separatist)
+"koM" = (
+/obj/machinery/door/airlock/hatch{
+	dir = 4;
+	id = "syndie_ice_cabinka_1"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/turf/open/floor/carpet/black,
+/area/outpost/fraction/syndi)
 "koN" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30";
@@ -17438,6 +17551,12 @@
 	icon_state = "platingdmg3"
 	},
 /area/outpost/maintenance/starboard)
+"kDO" = (
+/obj/machinery/airalarm/directional/south,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable,
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue)
 "kEq" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
@@ -17756,6 +17875,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 8
 	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/surgery_1)
 "kOB" = (
@@ -17835,8 +17957,18 @@
 	dir = 8
 	},
 /obj/item/reagent_containers/food/drinks/mug{
-	pixel_x = -6;
-	pixel_y = -2
+	pixel_x = -8;
+	pixel_y = 8
+	},
+/obj/item/paper/crumpled{
+	default_raw_text = "Уважаемые жильцы! К сожалению, наш электрик Петрович с завода, настолько пропил свою смену, что так и не удосужился провести сюда электрический кабель. Поэтому я вам оставляю две запасные батарейки. Отвертка у вас наверняка есть, как и лом. Хорошего времени отдыха! А! И пожалуйста, мойте за собой баню, а то, стояк забивается всяким мусором...";
+	pixel_x = 2;
+	pixel_y = 10
+	},
+/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/cell/high{
+	pixel_x = 8;
+	pixel_y = 0
 	},
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_2)
@@ -18063,6 +18195,9 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/surgery_1)
 "kXF" = (
@@ -19342,7 +19477,8 @@
 /area/outpost/exterior)
 "lNP" = (
 /obj/machinery/door/airlock/hatch{
-	dir = 4
+	dir = 4;
+	id = "syndie_ice_cabinka_2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
@@ -19491,6 +19627,9 @@
 "lSr" = (
 /obj/effect/spawner/structure/window/reinforced/indestructable,
 /obj/structure/curtain/cloth/purpl,
+/obj/machinery/door/poddoor/ert{
+	id = "ice_sec_medicals"
+	},
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -19697,10 +19836,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 1
 	},
-/turf/open/floor/plating{
-	light_color = "#1B1D2E";
-	light_range = 2
-	},
+/turf/open/floor/wood/walnut,
 /area/outpost/fraction/syndi/donkco_shop)
 "lZp" = (
 /obj/effect/turf_decal/techfloor/corner{
@@ -20448,7 +20584,7 @@
 "myd" = (
 /obj/machinery/door/window/northleft{
 	dir = 4;
-	req_one_access_txt = "8101";
+	req_one_access_txt = "8125";
 	pixel_x = -1
 	},
 /obj/machinery/door/firedoor/border_only{
@@ -21959,6 +22095,9 @@
 	layer = 2
 	},
 /obj/structure/grille,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/outpost/exterior)
 "nrl" = (
@@ -22471,6 +22610,9 @@
 "nGO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plasteel/kitchen_coldroom/freezerfloor/freezer_blue,
 /area/outpost/crew/canteen)
 "nGS" = (
@@ -22635,8 +22777,18 @@
 	dir = 4
 	},
 /obj/item/reagent_containers/food/drinks/mug{
-	pixel_x = -6;
-	pixel_y = -2
+	pixel_x = -9;
+	pixel_y = 8
+	},
+/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/cell/high{
+	pixel_x = 8;
+	pixel_y = 0
+	},
+/obj/item/paper/crumpled{
+	default_raw_text = "Уважаемые жильцы! К сожалению, наш электрик Петрович с завода, настолько пропил свою смену, что так и не удосужился провести сюда электрический кабель. Поэтому я вам оставляю две запасные батарейки. Отвертка у вас наверняка есть, как и лом. Хорошего времени отдыха! А! И пожалуйста, мойте за собой баню, а то, стояк забивается всяким мусором...";
+	pixel_x = 2;
+	pixel_y = 10
 	},
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_4)
@@ -22686,7 +22838,7 @@
 "nRG" = (
 /obj/machinery/button/door{
 	pixel_y = 24;
-	id = "ice_cabinka_3";
+	id = "syndie_ice_cabinka_2";
 	name = "Maintenance Shield";
 	specialfunctions = 4;
 	normaldoorcontrol = 1
@@ -23180,14 +23332,11 @@
 /turf/open/floor/wood,
 /area/outpost/fraction/nanotrasen)
 "odt" = (
-/obj/structure/disposalpipe/segment{
-	dir = 1
+/obj/structure/cable{
+	icon_state = "2-8"
 	},
-/turf/open/floor/plating{
-	light_color = "#1B1D2E";
-	light_range = 2
-	},
-/area/outpost/fraction/syndi/donkco_shop)
+/turf/open/floor/plasteel/dark_2,
+/area/outpost/medical/storage)
 "odK" = (
 /obj/structure/table/wood/fancy/orange,
 /turf/open/floor/wood,
@@ -24214,6 +24363,12 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/structure/holosign/barrier/infinite{
+	density = 0;
+	pixel_x = 1;
+	pixel_y = 20;
+	layer = 3.22
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
@@ -25302,6 +25457,9 @@
 /obj/machinery/door/poddoor/ert{
 	id = "ice_sec_medicals"
 	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/relax_room)
 "psN" = (
@@ -25766,6 +25924,9 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/surgery_1)
@@ -28038,6 +28199,9 @@
 	pixel_x = -11
 	},
 /obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/surgery_1)
 "raj" = (
@@ -28119,7 +28283,15 @@
 /area/outpost/fraction/syndi/donkco_shop)
 "ren" = (
 /obj/effect/turf_decal/corner/opaque/blue/diagonal,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/west{
+	pixel_x = -33
+	},
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 1
+	},
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/medical/surgery_2)
 "reC" = (
@@ -28427,6 +28599,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/surgery_1)
@@ -29782,8 +29957,8 @@
 	dir = 1
 	},
 /obj/machinery/button/door{
-	id = "ice_sec_medicals_hangar_ERT";
-	name = "Medbay ERT Hangar";
+	id = "ice_sec_medicals_2";
+	name = "Medbay Section Bolts 2";
 	pixel_x = 8;
 	req_one_access_txt = "8117";
 	pixel_y = -21;
@@ -31419,7 +31594,7 @@
 	melee_damage_upper = 50;
 	speed = 7;
 	name = "THE EVIL";
-	desc = "Вы видите перед собой истинное зло во плоти. Не дайте обмануть себя. Это не протсо кролик, это ЗЛО!";
+	desc = "Вы видите перед собой истинное зло во плоти. Не дайте обмануть себя. Это не просто кролик, это ЗЛО!";
 	maxHealth = 6666;
 	armour_penetration = 80;
 	ranged_cooldown_time = 15;
@@ -32606,7 +32781,7 @@
 	},
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/poddoor/ert{
-	id = "ice_sec_medicals"
+	id = "ice_sec_medicals_2"
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/palata_2)
@@ -32804,6 +32979,9 @@
 	dir = 1
 	},
 /obj/machinery/door/firedoor/border_only,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/storage)
 "tVT" = (
@@ -33309,6 +33487,12 @@
 /obj/structure/disposalpipe/junction/flip{
 	dir = 1
 	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "ulk" = (
@@ -33471,10 +33655,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plating{
-	light_color = "#1B1D2E";
-	light_range = 2
-	},
+/turf/open/floor/wood/walnut,
 /area/outpost/fraction/syndi/donkco_shop)
 "usw" = (
 /obj/structure/chair/comfy/orange/old{
@@ -33804,6 +33985,9 @@
 	},
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
 	},
 /turf/open/floor/carpet/orange,
 /area/outpost/medical/relax_room)
@@ -34547,6 +34731,13 @@
 "veZ" = (
 /obj/structure/bed/pod,
 /obj/item/bedsheet/blue,
+/obj/item/toy/plush/celadon/cat{
+	name = "Leo";
+	desc = "Вы видите чёрного кота. Вам кажется будто за ним наблюдает чёрный таяр с красными глазами. Вам становится не по себе при виде этой картины.";
+	pixel_x = 1;
+	layer = 4.1;
+	pixel_y = 0
+	},
 /turf/open/floor/carpet/cyan,
 /area/outpost/medical/palata_2)
 "vfb" = (
@@ -35033,6 +35224,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "vEr" = (
@@ -35054,10 +35248,16 @@
 /turf/open/floor/plating,
 /area/outpost/maintenance/fore)
 "vEs" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/east{
+	pixel_x = 38
+	},
 /obj/effect/turf_decal/corner/opaque/blue/diagonal,
 /obj/machinery/firealarm/directional/east{
 	pixel_y = -19
+	},
+/obj/machinery/airalarm/directional/west{
+	dir = 4;
+	pixel_x = 30
 	},
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/medical/surgery_2)
@@ -35374,6 +35574,32 @@
 	},
 /turf/open/floor/plasteel/darkgreenfull,
 /area/outpost/cargo/faction)
+"vOc" = (
+/obj/structure/transit_tube{
+	dir = 8;
+	layer = 5;
+	density = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/obj/structure/catwalk/over/plated_catwalk,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating{
+	light_color = "#1B1D2E";
+	light_range = 2
+	},
+/area/outpost/exterior)
 "vOh" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -36667,6 +36893,9 @@
 "wsd" = (
 /obj/effect/spawner/structure/window/reinforced/indestructable,
 /obj/structure/curtain/cloth/purpl,
+/obj/machinery/door/poddoor/ert{
+	id = "ice_sec_medicals_2"
+	},
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -37110,6 +37339,27 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"wCy" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/hall_2)
 "wCD" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -37534,6 +37784,9 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/carpet/orange,
 /area/outpost/medical/relax_room)
 "wOf" = (
@@ -37738,6 +37991,9 @@
 	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
 	},
 /turf/open/floor/carpet/orange,
 /area/outpost/medical/relax_room)
@@ -39550,6 +39806,9 @@
 /area/outpost/exterior)
 "ybG" = (
 /obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
 /turf/open/floor/plasteel/kitchen_coldroom/freezerfloor/freezer_blue,
 /area/outpost/crew/canteen)
 "ycL" = (
@@ -55946,7 +56205,7 @@ wET
 pmI
 pmI
 pmI
-fsN
+cka
 cka
 cka
 pmM
@@ -56120,7 +56379,7 @@ tXV
 ryn
 ryn
 ryn
-hQG
+ryn
 ryn
 apZ
 oNa
@@ -59312,7 +59571,7 @@ aBw
 hFA
 hFA
 hFA
-odt
+qZS
 qZS
 eUN
 tSf
@@ -63807,7 +64066,7 @@ wUa
 wUa
 wUa
 wUa
-kvO
+hQG
 wUa
 cwN
 tta
@@ -63994,7 +64253,7 @@ wUa
 wUa
 juA
 wUa
-kvO
+hQG
 wUa
 cwN
 cwN
@@ -64181,7 +64440,7 @@ wUa
 wUa
 wUa
 wUa
-kvO
+hQG
 wUa
 cwN
 cyU
@@ -64368,7 +64627,7 @@ wUa
 juA
 wUa
 wUa
-kvO
+hQG
 wUa
 cwN
 jmW
@@ -64555,7 +64814,7 @@ wUa
 wUa
 uOJ
 wUa
-kvO
+hQG
 wUa
 cwN
 kDN
@@ -64742,7 +65001,7 @@ wUa
 wUa
 wUa
 wUa
-kvO
+hQG
 wUa
 cwN
 cwN
@@ -64929,7 +65188,7 @@ lwu
 lwu
 wBF
 evz
-kvO
+hQG
 wUa
 wUa
 aKq
@@ -65116,7 +65375,7 @@ jyr
 jyr
 epX
 aap
-kvO
+hQG
 wUa
 wUa
 cNJ
@@ -65490,7 +65749,7 @@ wUa
 gsR
 wUM
 ges
-ehx
+fsN
 nPo
 nPo
 lwu
@@ -65677,7 +65936,7 @@ wUa
 gsR
 ygU
 hCa
-fwF
+vOc
 feU
 feU
 jyr
@@ -67198,10 +67457,10 @@ ekz
 ecj
 tSi
 vPX
-vPX
+odt
 tVH
 cHY
-ycP
+wCy
 wwX
 gHq
 qUe
@@ -70551,8 +70810,8 @@ bob
 bob
 bob
 bob
-syM
-bob
+fgU
+kDO
 mNw
 dRp
 rZV
@@ -71875,7 +72134,7 @@ rgY
 jtk
 jtk
 him
-lNP
+koM
 jyY
 jtk
 him
