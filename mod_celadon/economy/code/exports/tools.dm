@@ -97,17 +97,17 @@
 
 //Advanced/Power Tools.
 /datum/export/weldingtool/electric
-	cost = 90
+	cost = 45
 	unit_name = "electrical welding tool"
 	export_types = list(/obj/item/weldingtool/electric)
 
 /datum/export/jawsoflife
-	cost = 100
+	cost = 50
 	unit_name = "jaws of life"
 	export_types = list(/obj/item/crowbar/power)
 
 /datum/export/handdrill
-	cost = 100
+	cost = 50
 	unit_name = "hand drill"
 	export_types = list(/obj/item/screwdriver/power)
 
@@ -127,12 +127,12 @@
 	export_types = list(/obj/item/construction/rcd)
 
 /datum/export/rcd_ammo
-	cost = 60
+	cost = 40
 	unit_name = "compressed matter cardridge"
 	export_types = list(/obj/item/rcd_ammo)
 
 /datum/export/rpd
-	cost = 100
+	cost = 50
 	unit_name = "rapid pipe dispenser"
 	export_types = list(/obj/item/pipe_dispenser)
 
