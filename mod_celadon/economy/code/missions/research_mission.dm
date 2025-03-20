@@ -5,24 +5,21 @@
 	var/rand_num = 1
 	var/type_mission = ""	// Нужно для определения типа миссии для рандомизатора цен
 
+
 /datum/mission/research/New(...)
-	if(type_mission == "electrical")
-		value = (value * rand(1, 1.5))
-
-	else if(type_mission == "ion")
-		value = (value * rand(1, 1.5))
-
-	else if(type_mission == "meteor")
-		value = (value * (rand(2, 5) / 2))
-
-	else if(type_mission == "carp")
-		value = (value * (rand(2, 5)) / 1.5)
-
-	else if(type_mission == "dust")
-		value = (value * rand(2, 5))
-
-	else
-		value = (value * rand(1, 1.5))
+	switch(type_mission)
+		if("electrical")
+			value = (value * rand(1, 1.5))
+		if("ion")
+			value = (value * rand(1, 1.5))
+		if("meteor")
+			value = (value * (rand(2, 5) / 2))
+		if("carp")
+			value = (value * (rand(2, 5)) / 1.5)
+		if("dust")
+			value = (value * rand(2, 5))
+		if("")
+			value = (value * rand(1, 1.5))
 
 	return ..()
 
