@@ -4264,6 +4264,9 @@
 /obj/structure/bed/double,
 /obj/machinery/light/small/directional/east,
 /obj/item/bedsheet/double/suns,
+/obj/item/lighter/zippo/fox{
+	pixel_x = 5
+	},
 /turf/open/floor/carpet/purple,
 /area/outpost/crew/lounge/cab_2)
 "cFb" = (
@@ -8131,8 +8134,6 @@
 	pixel_y = -20;
 	id = "syndie_ice_cabinka_1";
 	name = "Maintenance Shield";
-	specialfunctions = 4;
-	normaldoorcontrol = 1;
 	dir = 1
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -8466,7 +8467,9 @@
 /area/outpost/crew/lounge/cab_4)
 "faN" = (
 /obj/item/canvas/twentythreeXnineteen,
-/obj/structure/easel,
+/obj/structure/easel{
+	density = 0
+	},
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_4)
 "fbR" = (
@@ -13133,7 +13136,6 @@
 "hQG" = (
 /obj/machinery/door/airlock/hatch{
 	dir = 4;
-	id = "syndie_ice_cabinka_1";
 	id_tag = "syndie_ice_cabinka_1"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
@@ -14256,11 +14258,13 @@
 	dir = 4
 	},
 /obj/machinery/light/small/directional/west,
-/obj/item/lighter/zippo/fox{
-	pixel_x = -5
-	},
 /obj/item/bedsheet/double/yellow{
 	dir = 4
+	},
+/obj/item/lighter/zippo/heartbreaker{
+	pixel_y = 5;
+	pixel_x = -3;
+	layer = 2.99
 	},
 /turf/open/floor/carpet/red_gold,
 /area/outpost/crew/lounge/cab_4)
@@ -16662,9 +16666,11 @@
 /turf/open/floor/plasteel/stairs/stairs_pack/right_green,
 /area/outpost/exterior)
 "jYN" = (
-/obj/item/canvas/twentythreeXnineteen,
-/obj/structure/easel,
-/turf/open/floor/wood/walnut,
+/obj/effect/turf_decal/siding/wood{
+	color = "#543C30";
+	dir = 6
+	},
+/turf/open/floor/concrete/tiles,
 /area/outpost/crew/lounge/cab_2)
 "jYO" = (
 /obj/machinery/door/firedoor/border_only{
@@ -17175,11 +17181,27 @@
 /area/outpost/fraction/solfed)
 "kjg" = (
 /obj/effect/turf_decal/siding/wood{
-	color = "#543C30"
+	color = "#543C30";
+	dir = 5
 	},
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30";
 	dir = 8
+	},
+/obj/structure/rack{
+	color = "#A47449";
+	pixel_y = 11
+	},
+/obj/item/grown/log{
+	pixel_x = -7;
+	pixel_y = 20
+	},
+/obj/item/grown/log{
+	pixel_x = 7;
+	pixel_y = 20
+	},
+/obj/item/grown/log{
+	pixel_y = 25
 	},
 /turf/open/floor/concrete/tiles,
 /area/outpost/crew/lounge/cab_2)
@@ -19685,7 +19707,6 @@
 "lNP" = (
 /obj/machinery/door/airlock/hatch{
 	dir = 4;
-	id = "syndie_ice_cabinka_2";
 	id_tag = "syndie_ice_cabinka_2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
@@ -20892,25 +20913,8 @@
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/bar)
 "mAK" = (
-/obj/effect/turf_decal/siding/wood{
-	color = "#543C30"
-	},
-/obj/structure/rack{
-	color = "#A47449";
-	pixel_y = 11
-	},
-/obj/item/grown/log{
-	pixel_x = -7;
-	pixel_y = 20
-	},
-/obj/item/grown/log{
-	pixel_x = 7;
-	pixel_y = 20
-	},
-/obj/item/grown/log{
-	pixel_y = 25
-	},
-/turf/open/floor/concrete/tiles,
+/obj/structure/chair/sofa/purple/left,
+/turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_2)
 "mBc" = (
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
@@ -21134,6 +21138,18 @@
 	pixel_y = -20;
 	pixel_x = 7
 	},
+/obj/item/canvas/twentythreeXtwentythree,
+/obj/item/canvas/twentythreeXtwentythree,
+/obj/item/canvas/twentythreeXtwentythree,
+/obj/item/canvas/nineteenXnineteen,
+/obj/item/canvas/nineteenXnineteen,
+/obj/item/canvas/nineteenXnineteen,
+/obj/item/canvas/twentythreeXnineteen,
+/obj/item/canvas/twentythreeXnineteen,
+/obj/item/canvas/twentythreeXnineteen,
+/obj/item/canvas/twentythreeXnineteen,
+/obj/structure/table/wood,
+/obj/item/toy/crayon/spraycan,
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_2)
 "mIE" = (
@@ -21877,15 +21893,12 @@
 /turf/open/floor/carpet/green,
 /area/outpost/medical/hall_2)
 "nfB" = (
-/obj/structure/fireplace,
-/obj/effect/turf_decal/siding/wood{
-	color = "#543C30"
-	},
 /obj/structure/painting_custom{
 	icon_state = "12,13";
 	pixel_y = 46
 	},
-/turf/open/floor/concrete/tiles,
+/obj/structure/chair/sofa/purple/right,
+/turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_2)
 "nfS" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
@@ -22698,13 +22711,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/maintenance/starboard)
-"nAq" = (
-/obj/effect/spawner/structure/window/reinforced/indestructable,
-/obj/structure/curtain/cloth/blacknormal{
-	dir = 4
-	},
-/turf/open/floor/wood/walnut,
-/area/outpost/crew/lounge/cab_2)
 "nAr" = (
 /obj/structure/platform/wood_two{
 	dir = 4
@@ -23122,9 +23128,7 @@
 /obj/machinery/button/door{
 	pixel_y = 24;
 	id = "syndie_ice_cabinka_2";
-	name = "Maintenance Shield";
-	specialfunctions = 4;
-	normaldoorcontrol = 1
+	name = "Maintenance Shield"
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/carpet/black,
@@ -24382,7 +24386,6 @@
 /area/outpost/crew/canteen)
 "ozs" = (
 /obj/structure/table/wood/fancy/red,
-/obj/item/weapon/passport/cobrastan,
 /obj/structure/window/reinforced/spawner{
 	dir = 1;
 	pixel_y = -26
@@ -24395,6 +24398,7 @@
 	dir = 4;
 	pixel_x = 3
 	},
+/obj/item/passport/cobrastan,
 /turf/open/floor/carpet/red_gold,
 /area/outpost/crew/lounge)
 "ozw" = (
@@ -28735,25 +28739,14 @@
 /turf/open/floor/carpet/black,
 /area/outpost/crew/lounge)
 "rhY" = (
-/obj/structure/table/reinforced,
 /obj/structure/sink/kitchen{
 	dir = 1
 	},
-/obj/item/reagent_containers/food/drinks/mug{
-	pixel_x = -6;
-	pixel_y = -2
-	},
-/obj/item/lighter/zippo/heartbreaker,
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_2)
 "rie" = (
-/obj/structure/table/reinforced,
 /obj/structure/sink/kitchen{
-	dir = 4
-	},
-/obj/item/reagent_containers/food/drinks/mug{
-	pixel_x = -6;
-	pixel_y = -2
+	dir = 1
 	},
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_4)
@@ -28984,9 +28977,10 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/inteq)
 "rpr" = (
-/obj/structure/chair/sofa/purple/left{
-	dir = 1
+/obj/structure/easel{
+	density = 0
 	},
+/obj/item/canvas/twentythreeXnineteen,
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_2)
 "rpE" = (
@@ -31005,20 +30999,14 @@
 	},
 /area/outpost/exterior)
 "sAX" = (
-/obj/structure/table/wood,
-/obj/item/canvas/twentythreeXnineteen,
-/obj/item/canvas/twentythreeXnineteen,
-/obj/item/canvas/twentythreeXnineteen,
-/obj/item/canvas/twentythreeXnineteen,
-/obj/item/canvas/nineteenXnineteen,
-/obj/item/canvas/nineteenXnineteen,
-/obj/item/canvas/nineteenXnineteen,
-/obj/item/canvas/twentythreeXtwentythree,
-/obj/item/canvas/twentythreeXtwentythree,
-/obj/item/canvas/twentythreeXtwentythree,
-/obj/item/toy/crayon/spraycan,
-/obj/effect/turf_decal/siding/wood,
-/turf/open/floor/wood/walnut,
+/obj/structure/fireplace{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4;
+	color = "#543C30"
+	},
+/turf/open/floor/concrete/tiles,
 /area/outpost/crew/lounge/cab_2)
 "sAZ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -32068,11 +32056,6 @@
 	pixel_y = -20;
 	pixel_x = 7
 	},
-/obj/structure/chair/stool/bar{
-	dir = 8;
-	pixel_y = 5;
-	pixel_x = -10
-	},
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_4)
 "tgD" = (
@@ -32699,9 +32682,7 @@
 /turf/open/floor/plating/rust,
 /area/outpost/fraction/separatist)
 "tBE" = (
-/obj/structure/chair/sofa/purple/right{
-	dir = 1
-	},
+/obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_2)
 "tBV" = (
@@ -38524,9 +38505,9 @@
 /area/outpost/fraction/syndi)
 "xae" = (
 /obj/structure/table/wood,
-/obj/item/weapon/passport/solgov,
-/obj/item/weapon/passport/temporary/diplomat{
-	pixel_y = 16
+/obj/item/passport/solgov,
+/obj/item/passport/temporary/diplomat{
+	pixel_y = 15
 	},
 /turf/open/floor/wood/maple,
 /area/outpost/fraction/solfed)
@@ -47735,9 +47716,9 @@ wUa
 evH
 nAr
 wmI
-cWu
-cWu
-cWu
+nAr
+nAr
+nAr
 mUx
 wUa
 wUa
@@ -47923,7 +47904,7 @@ qjz
 nuv
 nuv
 nuv
-nAq
+nuv
 nuv
 wiZ
 uOJ
@@ -48296,8 +48277,8 @@ pMz
 pMz
 nuv
 nfB
+jqP
 rpr
-eck
 lfM
 uQn
 wUa
@@ -48483,8 +48464,8 @@ gzn
 rzm
 nuv
 mAK
-tBE
 jqP
+eck
 lfM
 uQn
 wUa
@@ -48858,7 +48839,7 @@ nuv
 ntU
 jqP
 uNS
-jqP
+tBE
 jeC
 rgC
 mYE
