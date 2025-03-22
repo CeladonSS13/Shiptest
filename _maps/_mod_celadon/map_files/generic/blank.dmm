@@ -6113,6 +6113,12 @@
 	icon_state = "platingdmg2"
 	},
 /area/outpost/exterior)
+"rI" = (
+/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+	light_color = "#1B1D2E";
+	light_range = 2
+	},
+/area/space)
 "rJ" = (
 /turf/closed/indestructible/riveted,
 /area/start)
@@ -7660,13 +7666,13 @@
 /turf/open/floor/plasteel,
 /area/tdome/tdomeadmin)
 "wd" = (
-/obj/item/disk/nuclear,
 /obj/structure/table/reinforced/plasmarglass,
 /obj/effect/turf_decal/industrial/fire/full,
 /obj/machinery/light/floor/hangar{
 	light_color = "#FF0000";
 	color = "#FF0000"
 	},
+/obj/item/disk/nuclear/fake,
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/evac)
 "we" = (
@@ -35581,7 +35587,7 @@ gd
 gd
 gd
 gd
-gd
+rI
 gd
 gd
 gd
