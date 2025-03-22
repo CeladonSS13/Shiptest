@@ -9673,6 +9673,10 @@
 /obj/structure/deployable_barricade/wooden{
 	dir = 8
 	},
+/obj/item/paper/crumpled{
+	default_raw_text = "Туннель тут слегка обвалился, придется ползти. Черт, придется оставить ящики с инструментами, они не пролезут дальше...";
+	pixel_x = 10
+	},
 /turf/open/floor/plating/asteroid/icerock/cracked,
 /area/outpost/exterior)
 "fIG" = (
@@ -12728,6 +12732,21 @@
 	dir = 9
 	},
 /area/outpost/crew/bar)
+"hCH" = (
+/obj/structure/flora/grass/both{
+	layer = 3.1;
+	icon = 'icons/effects/blood.dmi';
+	icon_state = "remains";
+	name = "skeletal";
+	desc = "By unknown powers, your skeletal remains have been reanimated!";
+	mouse_opacity = 0
+	},
+/obj/item/paper/crumpled{
+	default_raw_text = "Туннель тут слегка обвалился, придется ползти. Черт, придется оставить ящики с инструментами, они не пролезут дальше...";
+	pixel_x = 10
+	},
+/turf/open/floor/plating/asteroid/icerock/cracked,
+/area/outpost/exterior)
 "hCJ" = (
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
 	layer = 2.030
@@ -58863,7 +58882,7 @@ rgY
 rgY
 rgY
 rgY
-hEn
+hCH
 rgY
 rgY
 rgY
