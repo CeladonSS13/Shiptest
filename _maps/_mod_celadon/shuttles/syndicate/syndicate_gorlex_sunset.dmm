@@ -1037,7 +1037,6 @@
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
 /obj/item/gun/ballistic/automatic/assault/hydra,
 /obj/item/gun/ballistic/automatic/assault/hydra,
-/obj/item/gun/ballistic/automatic/marksman/boomslang,
 /obj/machinery/light/directional/north,
 /obj/item/gun/ballistic/automatic/smg/vector{
 	name = "Special Operations Vector";
@@ -1046,6 +1045,7 @@
 	default_ammo_type = 0;
 	desc = "A police carbine based on an old design originating from earth, Solar Federation. Modified by Gorlex and used as a common security SMG. Chambered in 45."
 	},
+/obj/item/gun/ballistic/automatic/assault/saiga,
 /turf/open/floor/plasteel/lightdark,
 /area/ship/security/armory)
 "sj" = (
@@ -1123,9 +1123,6 @@
 	dir = 4
 	},
 /obj/structure/rack,
-/obj/item/kinetic_crusher/syndie_crusher{
-	pixel_y = 8
-	},
 /obj/item/pickaxe/drill/jackhammer,
 /obj/item/storage/bag/ore,
 /obj/item/storage/bag/ore,
@@ -1133,6 +1130,7 @@
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
 	dir = 1
 	},
+/obj/item/melee/axe/sledgehammer,
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
 "tF" = (
@@ -1368,7 +1366,9 @@
 /obj/structure/sign/poster/contraband/backdoor_xeno_babes_6{
 	pixel_y = -32
 	},
-/obj/item/storage/case/surgery,
+/obj/item/storage/firstaid/medical{
+	pixel_y = 2
+	},
 /turf/open/floor/plasteel/white{
 	color = "#8c7676"
 	},
@@ -1779,14 +1779,16 @@
 /obj/item/attachment/laser_sight,
 /obj/item/attachment/laser_sight,
 /obj/item/attachment/laser_sight,
-/obj/item/ammo_box/magazine/boomslang,
-/obj/item/ammo_box/magazine/boomslang,
 /obj/item/storage/box/ammo/a65clip,
 /obj/item/storage/box/ammo/a65clip,
 /obj/item/ammo_box/magazine/m45_cobra,
 /obj/item/ammo_box/magazine/m45_cobra,
 /obj/item/ammo_box/magazine/m45_cobra,
 /obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/ammo_box/magazine/saiga,
+/obj/item/ammo_box/magazine/saiga,
+/obj/item/storage/box/ammo/a410_ammo_box,
+/obj/item/ammo_box/magazine/saiga,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "CZ" = (
@@ -2514,7 +2516,9 @@
 /obj/structure/platform/industrial{
 	dir = 8
 	},
-/obj/item/banner/syndie,
+/obj/item/banner/syndie{
+	layer = 3.2
+	},
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
