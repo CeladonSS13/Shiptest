@@ -1015,3 +1015,9 @@
 	description = "A crashed syndicate ship"
 	suffix = "asteroid_crashed_ship.dmm"
 	cost = 2
+/datum/map_template/ruin/asteroid/asteroid_wrecker_outpost
+	id = "asteroid_wrecker_outpost"
+	name = "Wrecker Outpost"
+	description = "A wrecker outpost with ship wrecks around it"
+	suffix = "asteroid_wrecker_outpost.dmm"
+	cost = 3
