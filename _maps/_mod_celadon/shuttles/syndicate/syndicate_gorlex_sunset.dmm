@@ -129,21 +129,6 @@
 	},
 /turf/open/floor/marble/black,
 /area/ship/hallway/central)
-"cu" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/spline/plain/opaque/syndiered{
-	dir = 8
-	},
-/turf/open/floor/marble/black,
-/area/ship/hallway/central)
 "cE" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -1168,21 +1153,6 @@
 "tG" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/crew/canteen/kitchen)
-"tV" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/spline/plain/opaque/syndiered{
-	dir = 4
-	},
-/turf/open/floor/marble/black,
-/area/ship/hallway/central)
 "uw" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 10
@@ -2593,14 +2563,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/mecha/working/ripley/deathripley{
-	layer = 3.1;
-	icon_state = "touro";
-	max_integrity = 50;
-	name = "Touro";
-	desc = "A pВowerful ICW-era combat exosuit, developed off of Nanotrasen's Marauder model by Cybersun Biodynamics. But there's something wrong with him."
-	},
-/obj/structure/window/plasma/fulltile,
 /turf/open/floor/marble/black,
 /area/ship/hallway/central)
 "PB" = (
@@ -3786,7 +3748,7 @@ DM
 RJ
 TQ
 if
-tV
+cE
 Va
 TQ
 XN
@@ -3836,7 +3798,7 @@ eD
 eD
 Gp
 VT
-cu
+cE
 RG
 vK
 ea
