@@ -1,0 +1,36 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "Homafasher-class Mining Corvette",
+	"map_short_name": "Homafasher",
+	"description": "По меркам шуры Аль-Фада, 'Хомафашер' — старый, но надёжный и проверенный временем корабль. Его история начинается на верфях Республики Элизиум, это корвет массового производства, с достаточно дешевым ценником для его габаритов. Этот звездолет используется буквально везде: начиная от гос. учреждений, заканчивая приватными компаниями. И, как не удивительно, сепаратистами. Вариантов судна очень много, но в случае с Хомафашер - это одна из самых дешевых версий, предназначенная для горнопромышленных целей и оснащенная базовым медицинским отсеком.",
+	"map_path": "_maps/_mod_celadon/shuttles/elysium/elysium_homafasher.dmm",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 5,
+	"prefix": "EUSF",
+	"faction": "/datum/faction/elysium",
+	"tags": [
+		"Specialist",
+		"Miner",
+		"Addiction"
+	],
+	"namelists": [
+		"SPACE",
+		"WEAPONS"
+	],
+	"job_slots": {
+		"Caid": {
+			"outfit": "/datum/outfit/job/elysium/captain",
+			"officer": true,
+			"slots": 1
+		},
+		"Mukatell": {
+			"outfit": "/datum/outfit/job/elysium/security",
+			"slots": 2
+		},
+		"Ahisa`i": {
+			"outfit": "/datum/outfit/job/elysium/assistant",
+			"slots" : 3
+		}
+	}
+}
