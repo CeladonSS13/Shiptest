@@ -129,6 +129,21 @@
 	},
 /turf/open/floor/marble/black,
 /area/ship/hallway/central)
+"cu" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/spline/plain/opaque/syndiered{
+	dir = 8
+	},
+/turf/open/floor/marble/black,
+/area/ship/hallway/central)
 "cE" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -276,21 +291,6 @@
 "eO" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/general/command_crew)
-"eQ" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/spline/plain/opaque/syndiered{
-	dir = 4
-	},
-/turf/open/floor/marble/black,
-/area/ship/hallway/central)
 "fb" = (
 /obj/machinery/airalarm/directional/north,
 /obj/effect/turf_decal/industrial/traffic/corner,
@@ -1168,6 +1168,21 @@
 "tG" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/crew/canteen/kitchen)
+"tV" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/spline/plain/opaque/syndiered{
+	dir = 4
+	},
+/turf/open/floor/marble/black,
+/area/ship/hallway/central)
 "uw" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 10
@@ -2140,13 +2155,20 @@
 /area/ship/engineering)
 "GN" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/power/apc/auto_name/directional/west{
+	pixel_y = 4
+	},
 /obj/structure/cable{
 	d2 = 2;
 	icon_state = "0-2"
 	},
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 8
+	},
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -19;
+	pixel_y = -8
 	},
 /turf/open/floor/marble/black,
 /area/ship/bridge)
@@ -3014,21 +3036,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
-"VS" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/spline/plain/opaque/syndiered{
-	dir = 8
-	},
-/turf/open/floor/marble/black,
-/area/ship/hallway/central)
 "VT" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
 /obj/effect/turf_decal/trimline/opaque/syndiered/corner{
@@ -3779,7 +3786,7 @@ DM
 RJ
 TQ
 if
-eQ
+tV
 Va
 TQ
 XN
@@ -3829,7 +3836,7 @@ eD
 eD
 Gp
 VT
-VS
+cu
 RG
 vK
 ea
