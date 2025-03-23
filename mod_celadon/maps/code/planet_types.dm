@@ -30,7 +30,7 @@
 	default_baseturf = /turf/open/floor/plating/asteroid/plasma_gaint
 	icon_state = "planet-plasma"
 	preserve_level = FALSE
-	weight = 20
+	weight = 0
 	ruin_type = RUINTYPE_PLASMA
 	landing_sound = 'mod_celadon/_storge_sounds/sound/events/planet_landing_3.mp3'
 
