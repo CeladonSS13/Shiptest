@@ -2499,19 +2499,17 @@
 	},
 /area/ship/medical)
 "Ni" = (
-/obj/effect/spawner/bunk_bed,
-/obj/structure/curtain/bounty{
-	color = "#260d10"
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
-/obj/machinery/jukebox/boombox{
-	pixel_x = 1;
-	layer = 3.3;
-	pixel_y = 4
+/obj/machinery/light/directional/west,
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
+	dir = 8
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
-/area/ship/crew/dorm)
+/turf/open/floor/marble/black,
+/area/ship/hallway/fore)
 "NF" = (
 /obj/structure/chair/bench/red/directional/north,
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
@@ -2988,18 +2986,6 @@
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/engineering)
-"Vt" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/light/directional/west,
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
-	dir = 8
-	},
-/turf/open/floor/marble/black,
-/area/ship/hallway/fore)
 "VA" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 9
@@ -3029,7 +3015,7 @@
 "VI" = (
 /obj/structure/table/syndi,
 /obj/item/toy/prize/touro{
-	pixel_x = -5;
+	pixel_x = 2;
 	pixel_y = 25
 	},
 /obj/machinery/newscaster/security_unit/directional/east{
@@ -3037,6 +3023,11 @@
 	},
 /obj/item/radio/intercom/directional/east{
 	pixel_y = -4
+	},
+/obj/machinery/jukebox/boombox{
+	pixel_x = 2;
+	layer = 3.3;
+	pixel_y = 5
 	},
 /turf/open/floor/wood/mahogany{
 	color = "#450e14"
@@ -3619,7 +3610,7 @@ Au
 PS
 JJ
 VY
-Vt
+Ni
 az
 fc
 eq
@@ -3847,7 +3838,7 @@ dW
 Tc
 Rw
 Cv
-Ni
+Cv
 Rw
 xo
 xo
