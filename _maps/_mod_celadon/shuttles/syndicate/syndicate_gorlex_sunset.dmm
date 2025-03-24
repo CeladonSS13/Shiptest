@@ -116,7 +116,6 @@
 	icon_state = "4-8"
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/effect/spawner/random/trash/botanical_waste,
 /obj/effect/turf_decal/techfloor/hole,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/strongdark,
@@ -659,7 +658,12 @@
 /obj/structure/table/syndi,
 /obj/item/radio/intercom/wideband/table{
 	dir = 4;
-	pixel_y = 3;
+	pixel_y = 11;
+	pixel_x = 6
+	},
+/obj/item/wallframe/intercom/table{
+	dir = 4;
+	pixel_y = -3;
 	pixel_x = 6
 	},
 /turf/open/floor/marble/black,
@@ -822,6 +826,7 @@
 	},
 /obj/structure/table/syndi,
 /obj/machinery/fax/syndicate,
+/obj/machinery/newscaster/security_unit/directional/west,
 /turf/open/floor/marble/black,
 /area/ship/bridge)
 "mY" = (
@@ -855,7 +860,6 @@
 /obj/effect/turf_decal/industrial/caution/red{
 	dir = 8
 	},
-/obj/effect/spawner/random/trash/botanical_waste,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
@@ -1050,6 +1054,7 @@
 /area/ship/security/armory)
 "sj" = (
 /obj/structure/chair/comfy/red/old/alt/directional/west,
+/obj/machinery/newscaster/security_unit/directional/east,
 /turf/open/floor/wood/mahogany{
 	color = "#450e14"
 	},
@@ -1146,6 +1151,7 @@
 	pixel_y = 1;
 	id = "sunset_shutter"
 	},
+/obj/effect/spawner/random/trash,
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
 "tG" = (
@@ -1351,6 +1357,7 @@
 /obj/effect/turf_decal/trimline/opaque/syndiered/line{
 	dir = 1
 	},
+/obj/machinery/newscaster/security_unit/directional/north,
 /turf/open/floor/marble/black,
 /area/ship/hallway/central)
 "yT" = (
@@ -1909,7 +1916,7 @@
 	dir = 8;
 	pixel_x = 22;
 	pixel_y = 1;
-	id = "sunset_shutter"
+	id = "sunset1_shutter"
 	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
@@ -2941,13 +2948,6 @@
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/engineering)
-"Vt" = (
-/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
-	dir = 5;
-	id = "sunset_turret"
-	},
-/turf/template_noop,
-/area/template_noop)
 "VA" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 9
@@ -2967,12 +2967,20 @@
 /obj/machinery/rnd/server,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
+"VF" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "sunset1_shutter"
+	},
+/obj/structure/window/plasma/reinforced/plastitanium,
+/turf/open/floor/plating,
+/area/ship/general/cargo)
 "VI" = (
 /obj/structure/table/syndi,
 /obj/item/toy/prize/touro{
 	pixel_x = -5;
 	pixel_y = 25
 	},
+/obj/machinery/newscaster/security_unit/directional/east,
 /turf/open/floor/wood/mahogany{
 	color = "#450e14"
 	},
@@ -3757,7 +3765,7 @@ xo
 xo
 xo
 xo
-Vt
+xo
 DM
 VI
 Mi
@@ -4036,7 +4044,7 @@ xo
 xo
 xo
 xo
-oD
+VF
 JP
 Dg
 PM
@@ -4061,7 +4069,7 @@ xo
 xo
 xo
 xo
-oD
+VF
 LS
 Ak
 Ur
@@ -4086,7 +4094,7 @@ xo
 xo
 xo
 xo
-oD
+VF
 pK
 DB
 Tt
