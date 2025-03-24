@@ -1324,11 +1324,6 @@
 	dir = 4
 	},
 /obj/effect/spawner/random/trash/botanical_waste,
-/obj/machinery/light_switch{
-	dir = 1;
-	pixel_x = -9;
-	pixel_y = -16
-	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
 "xY" = (
@@ -1557,6 +1552,12 @@
 /obj/structure/closet/crate,
 /obj/item/stack/sheet/metal/twenty,
 /obj/item/stack/sheet/glass/twenty,
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -20;
+	pixel_y = 10;
+	layer = 3.3
+	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
 "AE" = (
