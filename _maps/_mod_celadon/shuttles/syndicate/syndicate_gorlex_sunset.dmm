@@ -324,7 +324,6 @@
 /obj/item/roller,
 /obj/item/roller,
 /obj/item/storage/backpack/satchel/med,
-/obj/item/storage/backpack/satchel/med,
 /obj/item/clothing/head/helmet/medical{
 	name = "improper trauma team helmet"
 	},
@@ -335,6 +334,7 @@
 /obj/item/clothing/suit/armor/vest/trauma{
 	name = "Gorlex trauma team armor vest"
 	},
+/obj/item/storage/backpack/medic,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "ga" = (
@@ -590,7 +590,7 @@
 	},
 /obj/machinery/door/poddoor{
 	dir = 4;
-	id = "Bansheeenginebay"
+	id = "Sunseteenginebay"
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -664,10 +664,11 @@
 	pixel_y = 11;
 	pixel_x = 6
 	},
-/obj/item/wallframe/intercom/table{
+/obj/item/radio/intercom/table{
 	dir = 4;
-	pixel_y = -3;
-	pixel_x = 6
+	pixel_x = 6;
+	pixel_y = -4;
+	layer = 3.2
 	},
 /turf/open/floor/marble/black,
 /area/ship/bridge)
@@ -1149,7 +1150,8 @@
 	pixel_y = 1;
 	pixel_x = 22;
 	dir = 8;
-	id = "sunset_shutter"
+	id = "sunset_shutter";
+	name = "Windows Shutters"
 	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
@@ -1915,7 +1917,8 @@
 	pixel_y = 1;
 	pixel_x = 22;
 	dir = 8;
-	id = "sunset1_shutter"
+	id = "sunset1_shutter";
+	name = "Windows Shutters"
 	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
@@ -2069,7 +2072,8 @@
 	dir = 8;
 	pixel_y = 7;
 	pixel_x = 22;
-	id = "1window"
+	id = "1window";
+	name = "Bridge Shutters"
 	},
 /turf/open/floor/marble/black,
 /area/ship/bridge)
@@ -2121,6 +2125,12 @@
 	},
 /obj/structure/railing{
 	dir = 4
+	},
+/obj/machinery/button/door{
+	dir = 1;
+	pixel_y = -25;
+	id = "Sunseteenginebay";
+	name = "Engine Shutters"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
@@ -4186,7 +4196,7 @@ xo
 xo
 xo
 pr
-pr
+CL
 ly
 nu
 Aj
