@@ -962,7 +962,7 @@
 	pixel_y = 2;
 	pixel_x = -1
 	},
-/obj/machinery/computer/cryopod/directional/north,
+/obj/machinery/computer/helm/viewscreen/directional/north,
 /turf/open/floor/plating/airless{
 	icon_state = "platingdmg1"
 	},
@@ -1272,10 +1272,6 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo/starboard)
 "sB" = (
-/obj/structure/fluff/broken_flooring{
-	icon_state = "plating";
-	dir = 8
-	},
 /obj/machinery/cryopod{
 	dir = 4
 	},
@@ -1284,6 +1280,9 @@
 	},
 /obj/structure/railing,
 /obj/machinery/airalarm/directional/west,
+/obj/effect/turf_decal/corner_steel_grid{
+	dir = 6
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew)
 "sM" = (
@@ -1712,14 +1711,14 @@
 	},
 /area/ship/security/armory)
 "wS" = (
-/obj/structure/fluff/broken_flooring{
-	icon_state = "plating"
-	},
 /obj/machinery/cryopod{
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/opaque/lime/half{
 	dir = 8
+	},
+/obj/effect/turf_decal/corner_steel_grid{
+	dir = 6
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew)
@@ -2901,12 +2900,6 @@
 	pixel_y = 4
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/obj/machinery/button/door{
-	pixel_x = -8;
-	dir = 8;
-	id = "elysiumwindow";
-	name = "Bridge Windows Shutters"
-	},
 /turf/open/floor/pod/dark,
 /area/ship/bridge)
 "LP" = (
@@ -3275,6 +3268,12 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
+	},
+/obj/machinery/mineral/processing_unit_console{
+	machinedir = 1;
+	pixel_x = 20;
+	dir = 8;
+	pixel_y = -7
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo/starboard)

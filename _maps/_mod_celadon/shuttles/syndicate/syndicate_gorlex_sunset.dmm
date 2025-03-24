@@ -153,6 +153,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
+"dr" = (
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "okno_crew2"
+	},
+/turf/open/floor/plating,
+/area/ship/crew/dorm)
 "dQ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/structure/table/syndi,
@@ -612,7 +620,9 @@
 	},
 /obj/item/clothing/mask/balaclava/combat,
 /obj/item/clothing/shoes/magboots/syndie,
-/obj/item/clothing/suit/space/hardsuit/syndi/elite/shabbyoldsst,
+/obj/item/clothing/suit/space/hardsuit/syndi/elite/shabbyoldsst{
+	desc = "An elite version of the SST hardsuit, with improved armour and fire shielding. Shows clear signs of wear and tear, with scuffs and scratches hinting at past battles. Some parts of the armour even seem to have a bit of cardboard reinforcement. Gives you a strong feeling of Déjà vu."
+	},
 /turf/open/floor/plasteel/lightdark,
 /area/ship/security/armory)
 "jU" = (
@@ -791,6 +801,14 @@
 /obj/item/clothing/under/utility,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
+"mt" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "okno_crew1"
+	},
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/ship/crew/canteen/kitchen)
 "mF" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -1225,6 +1243,14 @@
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/marble/black,
 /area/ship/crew/dorm)
+"vn" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "okno_crew2"
+	},
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/ship/crew/dorm)
 "vx" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -1248,6 +1274,7 @@
 /obj/effect/turf_decal/trimline/opaque/syndiered/line{
 	dir = 6
 	},
+/obj/structure/closet/crate/bin,
 /turf/open/floor/marble/black,
 /area/ship/hallway/central)
 "ws" = (
@@ -1317,6 +1344,15 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
 	dir = 1
+	},
+/obj/structure/filingcabinet/chestdrawer{
+	dir = 4;
+	pixel_x = -4
+	},
+/obj/item/kirbyplants{
+	icon_state = "plant-12";
+	pixel_x = -6;
+	pixel_y = 20
 	},
 /turf/open/floor/marble/black,
 /area/ship/hallway/fore)
@@ -1874,7 +1910,9 @@
 /obj/item/clothing/mask/balaclava/combat,
 /obj/item/clothing/shoes/magboots/syndie,
 /obj/machinery/firealarm/directional/east,
-/obj/item/clothing/suit/space/hardsuit/syndi/elite/shabbyoldsst,
+/obj/item/clothing/suit/space/hardsuit/syndi/elite/shabbyoldsst{
+	desc = "An elite version of the SST hardsuit, with improved armour and fire shielding. Shows clear signs of wear and tear, with scuffs and scratches hinting at past battles. Some parts of the armour even seem to have a bit of cardboard reinforcement. Gives you a strong feeling of Déjà vu."
+	},
 /turf/open/floor/plasteel/lightdark,
 /area/ship/security/armory)
 "Dx" = (
@@ -2076,7 +2114,13 @@
 /area/ship/bridge)
 "Gf" = (
 /obj/structure/chair/comfy/red/old/alt/directional/east,
-/obj/machinery/light/directional/west,
+/obj/machinery/button{
+	pixel_x = -24;
+	id = "okno_crew2";
+	name = "Windows Shutters";
+	dir = 4;
+	pixel_y = 2
+	},
 /turf/open/floor/wood/mahogany{
 	color = "#450e14"
 	},
@@ -2086,6 +2130,7 @@
 /obj/effect/turf_decal/trimline/opaque/syndiered/line{
 	dir = 5
 	},
+/obj/machinery/vending/cola/shamblers,
 /turf/open/floor/marble/black,
 /area/ship/hallway/central)
 "GG" = (
@@ -2310,6 +2355,13 @@
 /obj/machinery/microwave{
 	pixel_y = 5
 	},
+/obj/machinery/button{
+	pixel_x = -24;
+	id = "okno_crew1";
+	name = "Windows Shutters";
+	dir = 4;
+	pixel_y = 2
+	},
 /turf/open/floor/wood/mahogany{
 	color = "#450e14"
 	},
@@ -2325,6 +2377,8 @@
 /area/ship/bridge)
 "LB" = (
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/holopad/emergency/command,
+/obj/effect/turf_decal/trimline/transparent/syndiered/filled,
 /turf/open/floor/marble/black,
 /area/ship/bridge)
 "LC" = (
@@ -2495,6 +2549,15 @@
 	},
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
 	dir = 8
+	},
+/obj/machinery/vending/cigarette,
+/obj/item/cigbutt{
+	pixel_y = 18;
+	pixel_x = 3
+	},
+/obj/item/cigbutt{
+	pixel_y = 17;
+	pixel_x = -5
 	},
 /turf/open/floor/marble/black,
 /area/ship/hallway/fore)
@@ -2839,6 +2902,14 @@
 /turf/open/floor/wood/mahogany{
 	color = "#450e14"
 	},
+/area/ship/crew/canteen/kitchen)
+"TO" = (
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "okno_crew1"
+	},
+/turf/open/floor/plating,
 /area/ship/crew/canteen/kitchen)
 "TQ" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
@@ -3669,7 +3740,7 @@ xo
 xo
 xo
 xo
-DM
+mt
 Li
 ZC
 Er
@@ -3685,7 +3756,7 @@ Rw
 pX
 Il
 Gf
-Rw
+vn
 xo
 xo
 xo
@@ -3719,7 +3790,7 @@ xo
 xo
 xo
 xo
-DM
+TO
 GG
 yw
 ZO
@@ -3735,7 +3806,7 @@ vm
 AO
 Nb
 sj
-Rw
+dr
 xo
 xo
 xo
