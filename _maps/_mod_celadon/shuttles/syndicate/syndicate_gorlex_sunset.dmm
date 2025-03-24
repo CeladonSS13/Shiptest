@@ -8,6 +8,9 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 8
+	},
 /turf/open/floor/marble/black,
 /area/ship/hallway/fore)
 "aQ" = (
@@ -287,6 +290,9 @@
 	dir = 1
 	},
 /obj/structure/extinguisher_cabinet/directional/west,
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
+	dir = 1
+	},
 /turf/open/floor/marble/black,
 /area/ship/hallway/fore)
 "fq" = (
@@ -370,6 +376,9 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/light/directional/west,
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
+	dir = 1
+	},
 /turf/open/floor/marble/black,
 /area/ship/hallway/fore)
 "gt" = (
@@ -532,6 +541,9 @@
 /obj/item/clothing/neck/shemagh/ngr,
 /obj/item/clothing/head/beret/black,
 /obj/item/clothing/head/beret/black,
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
+	dir = 1
+	},
 /turf/open/floor/wood/mahogany{
 	color = "#450e14"
 	},
@@ -1562,6 +1574,9 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 1
+	},
 /turf/open/floor/wood/mahogany{
 	color = "#450e14"
 	},
@@ -1928,6 +1943,9 @@
 "DQ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/structure/extinguisher_cabinet/directional/west,
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
+	dir = 8
+	},
 /turf/open/floor/marble/black,
 /area/ship/hallway/fore)
 "DU" = (
@@ -2378,6 +2396,9 @@
 	},
 /obj/item/radio/intercom/directional/north{
 	pixel_x = -7
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
+	dir = 4
 	},
 /turf/open/floor/wood/mahogany{
 	color = "#450e14"
@@ -2966,6 +2987,18 @@
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/engineering)
+"Vt" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/light/directional/west,
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
+	dir = 8
+	},
+/turf/open/floor/marble/black,
+/area/ship/hallway/fore)
 "VA" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 9
@@ -3101,6 +3134,9 @@
 	pixel_x = -5;
 	pixel_y = -17
 	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 8
+	},
 /turf/open/floor/wood/mahogany{
 	color = "#450e14"
 	},
@@ -3112,6 +3148,9 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/firealarm/directional/west,
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
+	dir = 8
+	},
 /turf/open/floor/wood/mahogany{
 	color = "#450e14"
 	},
@@ -3264,6 +3303,9 @@
 	},
 /obj/structure/cable{
 	icon_state = "2-4"
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 8
 	},
 /turf/open/floor/marble/black,
 /area/ship/hallway/fore)
@@ -3576,7 +3618,7 @@ Au
 PS
 JJ
 VY
-gp
+Vt
 az
 fc
 eq
