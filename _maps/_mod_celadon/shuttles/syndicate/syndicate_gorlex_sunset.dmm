@@ -1912,11 +1912,10 @@
 /obj/machinery/firealarm/directional/east{
 	pixel_y = 12
 	},
-/obj/machinery/button{
-	dir = 8;
-	pixel_x = 22;
+/obj/machinery/button/door{
 	pixel_y = 1;
-	id = "sunset1_shutter"
+	pixel_x = 22;
+	dir = 8
 	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
@@ -2066,12 +2065,11 @@
 	id = "sunset_turret";
 	pixel_y = -4
 	},
-/obj/machinery/button{
-	pixel_x = 24;
-	pixel_y = 7;
+/obj/machinery/button/door{
 	dir = 8;
-	id = "1window";
-	name = "Bridge Shutters"
+	pixel_y = 7;
+	pixel_x = 22;
+	id = "1window"
 	},
 /turf/open/floor/marble/black,
 /area/ship/bridge)
