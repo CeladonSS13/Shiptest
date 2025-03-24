@@ -877,7 +877,7 @@
 /area/ship/crew/cryo)
 "oD" = (
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "sunset_shutter2"
+	id = "sunset_shutter"
 	},
 /obj/structure/window/plasma/reinforced/plastitanium,
 /turf/open/floor/plating,
@@ -1144,7 +1144,7 @@
 	dir = 8;
 	pixel_x = 22;
 	pixel_y = 1;
-	id = "sunset_shutter2"
+	id = "sunset_shutter"
 	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
@@ -1345,13 +1345,6 @@
 	color = "#450e14"
 	},
 /area/ship/crew/canteen/kitchen)
-"yC" = (
-/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
-	dir = 5;
-	id = "sunset_turret"
-	},
-/turf/template_noop,
-/area/template_noop)
 "yE" = (
 /obj/structure/chair/bench/red/directional/south,
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
@@ -1916,7 +1909,7 @@
 	dir = 8;
 	pixel_x = 22;
 	pixel_y = 1;
-	id = "sunset_shutter1"
+	id = "sunset_shutter"
 	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
@@ -2949,11 +2942,12 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/engineering)
 "Vt" = (
-/obj/item/clothing/suit/hazardvest/ngr{
-	desc = "A blood-red high-visibility vest typically used in work zones by the Gorlex."
+/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
+	dir = 5;
+	id = "sunset_turret"
 	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/engineering)
+/turf/template_noop,
+/area/template_noop)
 "VA" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 9
@@ -2973,13 +2967,6 @@
 /obj/machinery/rnd/server,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
-"VF" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "sunset_shutter1"
-	},
-/obj/structure/window/plasma/reinforced/plastitanium,
-/turf/open/floor/plating,
-/area/ship/general/cargo)
 "VI" = (
 /obj/structure/table/syndi,
 /obj/item/toy/prize/touro{
@@ -3399,7 +3386,7 @@ xo
 xo
 xo
 xo
-Vt
+Ja
 li
 Cl
 YH
@@ -3770,7 +3757,7 @@ xo
 xo
 xo
 xo
-yC
+Vt
 DM
 VI
 Mi
@@ -4049,7 +4036,7 @@ xo
 xo
 xo
 xo
-VF
+oD
 JP
 Dg
 PM
@@ -4074,7 +4061,7 @@ xo
 xo
 xo
 xo
-VF
+oD
 LS
 Ak
 Ur
@@ -4099,7 +4086,7 @@ xo
 xo
 xo
 xo
-VF
+oD
 pK
 DB
 Tt
