@@ -269,7 +269,8 @@
 "eI" = (
 /obj/machinery/porta_turret/syndicate/exterior_7_62mm{
 	dir = 5;
-	id = "sunset_turret"
+	id = "sunset_turret";
+	faction = list("playerSyndicate","turret")
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -372,7 +373,8 @@
 "gt" = (
 /obj/machinery/porta_turret/syndicate/exterior_7_62mm{
 	dir = 6;
-	id = "sunset_turret"
+	id = "sunset_turret";
+	faction = list("playerSyndicate","turret")
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -747,17 +749,15 @@
 	pixel_x = 7;
 	id = "sunset_cargo"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/button/door{
-	pixel_y = -10;
+	pixel_y = 26;
 	name = "Cargo Doors";
-	id = "twinkle_cargo";
-	pixel_x = 23;
-	dir = 8;
-	req_access = list(150)
+	id = "sunset1_cargo";
+	pixel_x = -4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
 "lP" = (
@@ -1345,6 +1345,13 @@
 	color = "#450e14"
 	},
 /area/ship/crew/canteen/kitchen)
+"yC" = (
+/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
+	dir = 5;
+	id = "sunset_turret"
+	},
+/turf/template_noop,
+/area/template_noop)
 "yE" = (
 /obj/structure/chair/bench/red/directional/south,
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
@@ -2043,12 +2050,6 @@
 /turf/open/floor/marble/black,
 /area/ship/hallway/central)
 "Fb" = (
-/obj/machinery/button/door{
-	pixel_y = 26;
-	name = "Cargo Doors";
-	id = "sunset1_cargo";
-	pixel_x = 26
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
@@ -3769,7 +3770,7 @@ xo
 xo
 xo
 xo
-xo
+yC
 DM
 VI
 Mi
