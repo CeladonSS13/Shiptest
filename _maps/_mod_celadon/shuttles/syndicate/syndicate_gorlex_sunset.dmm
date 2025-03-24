@@ -1145,13 +1145,13 @@
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 8
 	},
-/obj/machinery/button{
-	dir = 8;
-	pixel_x = 22;
+/obj/effect/spawner/random/trash,
+/obj/machinery/button/door{
 	pixel_y = 1;
+	pixel_x = 22;
+	dir = 8;
 	id = "sunset_shutter"
 	},
-/obj/effect/spawner/random/trash,
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
 "tG" = (
@@ -1915,7 +1915,8 @@
 /obj/machinery/button/door{
 	pixel_y = 1;
 	pixel_x = 22;
-	dir = 8
+	dir = 8;
+	id = "sunset1_shutter"
 	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
@@ -2360,7 +2361,8 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/structure/chair/handrail,
 /obj/structure/extinguisher_cabinet/directional/north{
-	pixel_x = 8
+	pixel_x = 9;
+	pixel_y = 29
 	},
 /obj/item/radio/intercom/directional/north{
 	pixel_x = -7
