@@ -1099,7 +1099,9 @@
 /turf/open/floor/plating,
 /area/ship/cargo)
 "wb" = (
-/obj/machinery/porta_turret/ship/inteq/light,
+/obj/machinery/porta_turret/ship/inteq/light{
+	id = "Hound_turret"
+	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
 "wu" = (
@@ -1327,10 +1329,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/carpet/orange,
 /area/ship/bridge)
-"DL" = (
-/obj/machinery/porta_turret/ship/inteq/light,
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/crew)
 "DU" = (
 /obj/effect/turf_decal/corner/opaque/yellow{
 	dir = 8
@@ -1444,10 +1442,6 @@
 /obj/structure/table,
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
-"Gv" = (
-/obj/machinery/porta_turret/ship/inteq/light,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/maintenance/starboard)
 "GB" = (
 /obj/structure/sign/number/eight{
 	dir = 1
@@ -1601,9 +1595,11 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/crew)
 "Is" = (
-/obj/machinery/porta_turret/ship/inteq/light,
+/obj/machinery/porta_turret/ship/inteq/light{
+	id = "Hound_turret"
+	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/maintenance/port)
+/area/ship/bridge)
 "Iu" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 8
@@ -2160,10 +2156,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
-"Ug" = (
-/obj/machinery/porta_turret/ship/inteq/light,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/crew/dorm)
 "Uq" = (
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/door/poddoor{
@@ -2356,19 +2348,35 @@
 /obj/item/spacecash/bundle/c1000{
 	pixel_y = 9
 	},
-/obj/item/spacecash/bundle/c1000,
+/obj/item/spacecash/bundle/c1000{
+	pixel_y = 8;
+	pixel_x = 11
+	},
 /obj/item/folder/syndicate{
 	desc = "A slick black folder stamped 'Property of Inteq Risk Management Group.'";
-	name = "folder"
+	name = "folder";
+	pixel_y = 6;
+	pixel_x = -8
 	},
-/obj/item/paper_bin,
+/obj/item/paper_bin{
+	pixel_y = 9;
+	pixel_x = -9
+	},
 /obj/item/gps{
 	pixel_x = 12
 	},
 /obj/item/stamp/hos{
-	name = "vanguard's rubber stamp"
+	name = "vanguard's rubber stamp";
+	pixel_x = -10;
+	pixel_y = 12
 	},
-/obj/item/pen/fountain,
+/obj/item/pen/fountain{
+	pixel_x = -8;
+	pixel_y = 10
+	},
+/obj/machinery/turretid/ship{
+	id = "Hound_turret"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Yj" = (
@@ -2524,7 +2532,7 @@ Nd
 cX
 Qn
 go
-Gv
+Is
 "}
 (6,1,1) = {"
 ih
@@ -2710,7 +2718,7 @@ ib
 ib
 ib
 ib
-Ug
+Is
 Vk
 Vk
 Vk
@@ -2901,7 +2909,7 @@ ib
 ib
 ib
 hi
-DL
+wb
 ib
 ib
 ib

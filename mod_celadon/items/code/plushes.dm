@@ -777,10 +777,10 @@
 	desc = "Faces into the floor!"
 	icon_state = "hampter_ert"
 
-// /obj/item/toy/plush/celadon/hampter/cute
-// 	name = "cute hampter"
-// 	desc = "A familiar big-eyed cute hampter plushie"
-// 	icon_state = "hampster_cute"
+/obj/item/toy/plush/celadon/hampter/cute
+	name = "cute hampter"
+	desc = "A familiar big-eyed cute hampter plushie"
+	icon_state = "hampster_cute"
 
 /obj/item/toy/plush/celadon/beaver
 	name = "Beaver plushie"
@@ -883,5 +883,45 @@
 	playsound(loc, 'mod_celadon/_storge_sounds/sound/plushes/emotes/hiss_t.ogg', 50, FALSE)
 	var/message
 	message = "Тик-так, щас взорррву!"
+	user.visible_message(span_boldnotice(message))
+	COOLDOWN_START(src, cooldown, 3 SECONDS)
+
+/obj/item/toy/plush/celadon/kira
+	name = "Kira plushie"
+	desc = "Это игрушка кого-то вам напоминает, но кого, не понятно. Кошка какая-то..."
+	icon_state = "kira"
+	item_state = "kira"
+	w_class = WEIGHT_CLASS_SMALL
+	gender = FEMALE
+	COOLDOWN_DECLARE(cooldown)
+
+/obj/item/toy/plush/celadon/kira/attack_self(mob/user)
+
+	if(!COOLDOWN_FINISHED(src, cooldown))
+		return
+
+	playsound(loc, 'mod_celadon/_storge_sounds/sound/purr.ogg', 50, FALSE)
+	var/message
+	message = "Кира чувствует что ваша киска в зоне риска!"
+	user.visible_message(span_boldnotice(message))
+	COOLDOWN_START(src, cooldown, 3 SECONDS)
+
+/obj/item/toy/plush/celadon/mira
+	name = "Mira plushie"
+	desc = "Это игрушка одета в мэид костюм. А вы эстет, раз купили такую кошечку себе."
+	icon_state = "mira"
+	item_state = "mira"
+	w_class = WEIGHT_CLASS_SMALL
+	gender = FEMALE
+	COOLDOWN_DECLARE(cooldown)
+
+/obj/item/toy/plush/celadon/mira/attack_self(mob/user)
+
+	if(!COOLDOWN_FINISHED(src, cooldown))
+		return
+
+	playsound(loc, 'mod_celadon/_storge_sounds/sound/emotes/tajaran/mrowss.ogg', 50, FALSE)
+	var/message
+	message = "Мрррррр~"
 	user.visible_message(span_boldnotice(message))
 	COOLDOWN_START(src, cooldown, 3 SECONDS)

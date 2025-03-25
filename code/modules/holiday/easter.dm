@@ -109,7 +109,7 @@
 	/obj/item/toy/balloon,
 	/obj/item/toy/gun,
 	/obj/item/toy/sword,
-	// [CELADON-ADD] - CELADON_RETURN_CONTENT
+	// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 	/obj/item/clothing/head/bunnyhead,
 	/obj/item/clothing/suit/bunnysuit,
 	/obj/item/clothing/head/collectable/rabbitears,

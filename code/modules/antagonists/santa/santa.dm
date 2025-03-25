@@ -18,6 +18,11 @@
 
 /datum/antagonist/santa/proc/give_equipment()
 	owner.AddSpell(new /obj/effect/proc_holder/spell/targeted/area_teleport/teleport/santa)
+	// // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS - Это конечно не клоуны, но он пострадал вместе с ними
+	// if(istype(H))
+	// 	H.equipOutfit(/datum/outfit/santa)
+	// 	H.dna.update_dna_identity()
+	// // [/CELADON-ADD]
 
 /datum/antagonist/santa/proc/give_objective()
 	var/datum/objective/santa_objective = new()

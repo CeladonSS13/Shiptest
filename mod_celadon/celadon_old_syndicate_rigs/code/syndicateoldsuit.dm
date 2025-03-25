@@ -82,3 +82,36 @@
 	item_state = "hardsuit1-syndiecontractor"
 	hardsuit_type = "syndiecontractor"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/oldcontractor
+/obj/item/clothing/suit/space/hardsuit/syndi/elite/shabbyengineer
+	name = "shabby engineer elite syndicate hardsuit"
+	armor = list("melee" = 45, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 70)
+	desc = "An elite version of the syndicate hardsuit, with improved armour and fire shielding. This one has a contractor style and shows clear signs of wear and tear, with scuffs and scratches hinting at past battles. Some parts of the armour even seem to have a bit of cardboard reinforcement. Gives you a strong feeling of Déjà vu."
+	alt_desc = "An elite version of the syndicate hardsuit, with improved armour and fire shielding. It is in combat mode."
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/EliteContractorHardsuit.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/obj/EliteContractorHardsuit.dmi'
+	icon_state = "hardsuit0-syndiecontractor"
+	item_state = "hardsuit1-syndiecontractor"
+	hardsuit_type = "syndiecontractor"
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/oldcontractor
+/obj/item/clothing/suit/space/hardsuit/syndi/elite/shabbymedical
+	name = "shabby elite medical syndicate hardsuit"
+	armor = list("melee" = 45, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 70)
+	desc = "An elite version of the syndicate hardsuit, with improved armour and fire shielding. This one is made special for medics and shows clear signs of wear and tear, with scuffs and scratches hinting at past battles. Some parts of the armour even seem to have a bit of cardboard reinforcement. Gives you a strong feeling of Déjà vu"
+	alt_desc = "An elite version of the syndicate hardsuit, with improved armour and fire shielding. It is in combat mode."
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/EliteMedicalHardsuit.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/obj/EliteMedicalHardsuit.dmi'
+	icon_state = "hardsuit0-syndiemed"
+	item_state = "hardsuit1-syndiemed"
+	hardsuit_type = "syndiemed"
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/oldmedical
+/obj/item/clothing/suit/space/hardsuit/syndi/elite/shabbyoldsst
+	name = "shabby elite SST hardsuit"
+	armor = list("melee" = 45, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 70)
+	desc = "An elite version of the SST hardsuit, with improved armour and fire shielding. Gives you a strong feeling of Déjà vu."
+	alt_desc = "An elite version of the SST hardsuit, with improved armour and fire shielding. It is in combat mode."
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/EliteSSTHardsuit.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/obj/EliteSSTHardsuit.dmi'
+	icon_state = "hardsuit0-syndiesst"
+	item_state = "hardsuit1-syndiesst"
+	hardsuit_type = "syndiesst"
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/oldsst

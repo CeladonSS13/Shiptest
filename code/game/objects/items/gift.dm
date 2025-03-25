@@ -74,7 +74,7 @@ GLOBAL_LIST_EMPTY(possible_gifts)
 		/obj/item/storage/belt/utility/full,
 		/obj/item/clothing/neck/tie/horrible,
 		/obj/item/clothing/suit/jacket/leather,
-		// [CELADON-ADD] - CELADON_RETURN_CONTENT
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/item/clothing/suit/jacket/leather/overcoat,
 		/obj/item/clothing/suit/poncho,
 		/obj/item/clothing/suit/poncho/green,

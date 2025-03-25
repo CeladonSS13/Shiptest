@@ -60,10 +60,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
-"aE" = (
-/obj/machinery/newscaster/security_unit/directional/west,
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/crew)
 "aT" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/construction)
@@ -204,12 +200,14 @@
 /obj/structure/window/reinforced,
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/rack,
-/obj/item/pickaxe,
-/obj/item/pickaxe,
 /obj/item/storage/bag/ore,
 /obj/item/storage/bag/ore,
 /obj/item/mining_scanner,
 /obj/item/mining_scanner,
+/obj/item/pickaxe/mini,
+/obj/item/pickaxe/mini,
+/obj/item/gps/mining,
+/obj/item/gps/mining,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "cR" = (
@@ -497,7 +495,6 @@
 "hP" = (
 /obj/effect/turf_decal/industrial/loading,
 /obj/machinery/airalarm/directional/west,
-/obj/structure/ore_box,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
 "hR" = (
@@ -679,6 +676,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/structure/ore_box,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "jl" = (
@@ -1456,7 +1454,8 @@
 	},
 /obj/structure/closet/wall{
 	name = "security closet";
-	pixel_y = 28
+	pixel_y = 28;
+	dir = 1
 	},
 /obj/item/storage/backpack/security,
 /obj/item/clothing/gloves/fingerless,
@@ -2026,6 +2025,10 @@
 /obj/effect/turf_decal/corner/opaque/green/border{
 	dir = 9
 	},
+/obj/item/storage/firstaid/brute,
+/obj/item/roller,
+/obj/item/roller,
+/obj/item/roller,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
 "yo" = (
@@ -2452,6 +2455,7 @@
 /obj/item/reagent_containers/spray/pepper,
 /obj/item/melee/classic_baton/telescopic,
 /obj/machinery/light/small/directional/east,
+/obj/item/melee/baton,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "Dp" = (
@@ -2919,6 +2923,7 @@
 	pixel_y = -28;
 	req_access_txt = "1"
 	},
+/obj/item/clothing/suit/armor/vest/alt,
 /obj/item/clothing/suit/armor/vest/alt,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
@@ -3460,18 +3465,12 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/white/mono,
-/obj/item/roller,
-/obj/structure/closet/secure_closet/wall{
-	icon_door = "med_wall";
-	locked = 0;
-	name = "medical locker";
-	pixel_y = -28;
-	req_access_txt = "1"
-	},
-/obj/item/roller,
-/obj/item/roller,
 /obj/effect/turf_decal/corner/opaque/green/border{
 	dir = 5
+	},
+/obj/machinery/vending/wallmed{
+	pixel_x = -1;
+	pixel_y = -28
 	},
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
@@ -3787,8 +3786,8 @@
 /obj/item/ammo_box/magazine/m45,
 /obj/item/spacecash/bundle/c1000,
 /obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
+/obj/item/gps,
+/obj/item/storage/box/ammo/c45,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/bridge)
 "SW" = (
@@ -4150,6 +4149,7 @@
 /obj/item/ammo_box/magazine/m45/rubber,
 /obj/item/ammo_box/magazine/m45/rubber,
 /obj/item/ammo_box/magazine/m45,
+/obj/item/storage/box/ammo/c45,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "WH" = (
@@ -4358,7 +4358,7 @@
 /obj/machinery/airalarm/directional/south,
 /obj/structure/closet/crate/bin,
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/item/circuitboard/machine/protolathe/department/cargo,
+/obj/item/circuitboard/machine/protolathe/department/science,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/crew/office)
 "Za" = (
@@ -4507,7 +4507,7 @@ bC
 Ce
 Gk
 Gk
-aE
+Ce
 Gk
 Ce
 bC

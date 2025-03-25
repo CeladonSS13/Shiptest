@@ -3,8 +3,8 @@
 //no more 999999 currency after one frost world, sorry
 
 /datum/export/lavaland/minor
-	cost = 750
-	unit_name = "minor collectable artifact"
+	cost = 2500
+	unit_name = "minor lava planet artifact"
 	export_types = list(/obj/item/immortality_talisman,
 						/obj/item/book_of_babel,
 						/obj/item/wisp_lantern,
@@ -28,8 +28,8 @@
 						/obj/item/clothing/suit/armor/ascetic)
 
 /datum/export/lavaland/major //valuable chest/ruin loot and staff of storms
-	cost = 1000
-	unit_name = "collectable artifact"
+	cost = 5000
+	unit_name = "lava planet artifact"
 	export_types = list(/obj/item/rod_of_asclepius,
 						/obj/item/clothing/suit/space/hardsuit/ert/paranormal,
 						/obj/item/prisoncube,
@@ -43,8 +43,8 @@
 //Megafauna loot, except for ash drakes and legion
 
 /datum/export/lavaland/megafauna
-	cost = 7500
-	unit_name = "major collectable artifact"
+	cost = 20000
+	unit_name = "major lava planet artifact"
 	export_types = list(/obj/item/hierophant_club,
 						/obj/item/melee/cleaving_saw,
 						/obj/item/organ/vocal_cords/colossus,
@@ -54,7 +54,7 @@
 						)
 
 /datum/export/lavaland/trophycommon
-	cost = 300
+	cost = 900
 	unit_name = "common hunting trophy"
 	export_types = list(/obj/item/crusher_trophy/legion_skull,
 						/obj/item/crusher_trophy/wolf_ear,
@@ -63,7 +63,7 @@
 						/obj/item/crusher_trophy/watcher_wing)
 
 /datum/export/lavaland/trophyrare
-	cost = 750
+	cost = 2200
 	unit_name = "rare hunting trophy"
 	export_types = list(/obj/item/crusher_trophy/dwarf_skull,
 						/obj/item/crusher_trophy/fang,
@@ -75,7 +75,7 @@
 						/obj/item/crusher_trophy/ice_wing)
 
 /datum/export/lavaland/trophymega
-	cost = 1500
+	cost = 5000
 	unit_name = "big game hunting trophy"
 	export_types = list(/obj/item/crusher_trophy/legionnaire_spine,
 						/obj/item/crusher_trophy/ash_spike,
@@ -92,42 +92,42 @@
 		. += " On behalf of the Nanotrasen RnD division: Thank you for your hard work."
 
 /datum/export/lavaland/megafauna/hev/suit
-	cost = 2500
+	cost = 15000
 	unit_name = "H.E.C.K. suit"
 	export_types = list(/obj/item/clothing/suit/space/hostile_environment)
 
 /datum/export/lavaland/megafauna/hev/helmet
-	cost = 1000
+	cost = 10000
 	unit_name = "H.E.C.K. helmet"
 	export_types = list(/obj/item/clothing/head/helmet/space/hostile_environment)
 
 //not technically lavaland but this had a useful infrastructure to store them under
 /datum/export/lavaland/gems/rupee
-	cost = 500
+	cost = 3500
 	unit_name = "Ruperium Auction"
 	export_types = list(/obj/item/gem/rupee)
 
 /datum/export/lavaland/gems/diamond
-	cost = 350
+	cost = 2500
 	unit_name = "Frost Diamond Auction"
 	export_types = list(/obj/item/gem/fdiamond)
 
 /datum/export/lavaland/gems/amber
-	cost = 300
+	cost = 3500
 	unit_name = "Draconic Amber"
 	export_types = list(/obj/item/gem/amber)
 
 /datum/export/lavaland/gems/plasma
-	cost = 750
+	cost = 6000
 	unit_name = "Metastable Phoron"
 	export_types = list(/obj/item/gem/phoron)
 
 /datum/export/lavaland/gems/void
-	cost = 2000
+	cost = 11000
 	unit_name = "Null Crystal"
 	export_types = list(/obj/item/gem/void)
 
 /datum/export/lavaland/gems/blood
 	unit_name = "Ichorium Crystal"
-	cost = 1750
+	cost = 7000
 	export_types = list(/obj/item/gem/bloodstone)

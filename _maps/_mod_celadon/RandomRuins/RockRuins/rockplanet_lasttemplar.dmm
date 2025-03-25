@@ -4,7 +4,7 @@
 /obj/effect/turf_decal/spline/fancy/wood{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/human/syndicate/ranged/shotgun/space{
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/shotgun{
 	health = 175;
 	maxHealth = 175
 	},
@@ -24,7 +24,7 @@
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/human/syndicate/ranged/shotgun/space/stormtrooper{
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/stormtrooper/shotgun{
 	health = 200;
 	maxHealth = 200
 	},
@@ -48,7 +48,7 @@
 	id = "LastTemplar"
 	},
 /turf/open/floor/plating/asteroid/rockplanet,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "av" = (
 /obj/effect/turf_decal/corner/transparent/bar/three_quarters,
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
@@ -78,10 +78,11 @@
 	dir = 1;
 	id = "Last_Templar";
 	name = "Blast Door";
-	max_integrity = 1e+007
+	max_integrity = 1e+007;
+	obj_integrity = 1e+007
 	},
 /turf/open/floor/suns/dark,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "bd" = (
 /obj/effect/turf_decal/corner/transparent/bar/three_quarters{
 	dir = 8
@@ -113,12 +114,7 @@
 	},
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/suns/dark,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"bM" = (
-/turf/closed/indestructible/reinforced{
-	max_integrity = 1e+007
-	},
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "bW" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/borderfloorblack{
@@ -146,7 +142,7 @@
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/human/syndicate/ranged/shotgun/space/stormtrooper{
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/stormtrooper/shotgun{
 	health = 200;
 	maxHealth = 200
 	},
@@ -208,7 +204,7 @@
 /area/ruin/rockplanet/lasttemplar/office)
 "fy" = (
 /turf/closed/indestructible/reinforced,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "fG" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/effect/turf_decal/borderfloorblack/cee,
@@ -259,7 +255,7 @@
 	dir = 9
 	},
 /obj/effect/turf_decal/syndicateemblem/bottom,
-/mob/living/simple_animal/hostile/human/syndicate/ranged/smg/space/stormtrooper{
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/stormtrooper/smg{
 	health = 200;
 	maxHealth = 200
 	},
@@ -272,7 +268,7 @@
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/suns/dark,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "gK" = (
 /obj/structure/chair/comfy/beige/old/directional/south,
 /turf/open/floor/wood/ebony,
@@ -308,7 +304,7 @@
 	dir = 10
 	},
 /turf/open/floor/suns/dark,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "hH" = (
 /obj/effect/turf_decal/borderfloorblack,
 /obj/effect/decal/cleanable/dirt,
@@ -379,8 +375,8 @@
 /turf/open/floor/suns/dark,
 /area/ruin/rockplanet/lasttemplar/medbay)
 "kk" = (
-/obj/item/mine/directional/claymore{
-	dir = 8
+/obj/item/mine/directional/claymore/live{
+	dir = 1
 	},
 /turf/open/floor/plating/asteroid/rockplanet,
 /area/overmap_encounter/planetoid/rockplanet/explored)
@@ -435,7 +431,7 @@
 	},
 /obj/effect/gibspawner/human,
 /turf/open/floor/suns/dark,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "lR" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
@@ -460,7 +456,7 @@
 /turf/open/floor/plating/asteroid/rockplanet,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "mp" = (
-/mob/living/simple_animal/hostile/human/syndicate/ranged/shotgun/space{
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/shotgun{
 	health = 175;
 	maxHealth = 175
 	},
@@ -469,16 +465,6 @@
 "mQ" = (
 /obj/effect/turf_decal/spline/fancy/wood{
 	dir = 8
-	},
-/obj/machinery/turretid/ship{
-	id = "Bettle_grid";
-	pixel_x = -3;
-	pixel_y = 24
-	},
-/obj/machinery/turretid/ship{
-	id = "Bettle_grid";
-	pixel_x = -3;
-	pixel_y = 24
 	},
 /obj/machinery/turretid{
 	pixel_x = -25;
@@ -498,10 +484,6 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/effect/turf_decal/borderfloorblack/cee,
 /turf/open/floor/plating/asteroid/rockplanet,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"ne" = (
-/obj/effect/turf_decal/borderfloorblack,
-/turf/open/floor/suns/dark,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "nA" = (
 /obj/structure/fence,
@@ -532,7 +514,7 @@
 	},
 /obj/effect/gibspawner/human,
 /turf/open/floor/suns/dark,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "ol" = (
 /obj/structure/safe{
 	pixel_y = -1;
@@ -573,12 +555,12 @@
 	dir = 5
 	},
 /turf/open/floor/suns/dark,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "oZ" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/human/syndicate/melee/sword/space{
+/mob/living/simple_animal/hostile/human/ramzi/melee/space/sledge{
 	health = 250;
 	maxHealth = 250
 	},
@@ -609,22 +591,15 @@
 /turf/open/floor/suns/dark,
 /area/ruin/rockplanet/lasttemplar/office)
 "ps" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/suns/dark,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/obj/machinery/porta_turret/ship/ramzi/light,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/ruin/rockplanet/lasttemplar/office)
 "pU" = (
 /obj/structure/platform/industrial{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/asteroid/rockplanet/cracked,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"pY" = (
-/obj/effect/turf_decal/borderfloorblack/corner{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/suns/dark,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "qd" = (
 /obj/effect/turf_decal/industrial/warning{
@@ -795,6 +770,10 @@
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ruin/rockplanet/lasttemplar/medbay)
+"ux" = (
+/obj/item/mine/directional/claymore/live,
+/turf/open/floor/plating/asteroid/rockplanet,
+/area/overmap_encounter/planetoid/rockplanet/explored)
 "uI" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 8
@@ -868,12 +847,12 @@
 	id = "LastTemplar"
 	},
 /turf/open/floor/plating/asteroid/rockplanet,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "vR" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 9
 	},
-/mob/living/simple_animal/hostile/human/syndicate/ranged/shotgun/space{
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/shotgun{
 	health = 175;
 	maxHealth = 175
 	},
@@ -884,10 +863,11 @@
 	dir = 1;
 	id = "Last_Templar";
 	name = "Blast Door";
-	max_integrity = 1e+007
+	max_integrity = 1e+007;
+	obj_integrity = 1e+007
 	},
 /turf/open/floor/suns/dark,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "wh" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4;
@@ -906,21 +886,11 @@
 /turf/open/floor/suns/dark,
 /area/ruin/rockplanet/lasttemplar/office)
 "wt" = (
-/obj/machinery/porta_turret/syndicate/pod{
-	name = "sentry gun";
-	dir = 4;
-	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging.";
-	max_integrity = 75;
-	obj_integrity = 75;
-	lethal_projectile_sound = 'sound/weapons/gun/rifle/skm.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg';
-	lethal_projectile = /obj/projectile/bullet/a65clip;
-	stun_projectile = /obj/projectile/bullet/a65clip;
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
-	id = "LastTemplar"
+/obj/machinery/porta_turret/ship/ramzi/light{
+	dir = 8
 	},
 /turf/open/floor/plating/asteroid/rockplanet,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "wC" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 8
@@ -936,7 +906,7 @@
 	dir = 1
 	},
 /turf/open/floor/suns/dark,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "wE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/yellow{
@@ -976,21 +946,9 @@
 /turf/open/floor/concrete/pavement/rockplanet/lit,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "xv" = (
-/obj/machinery/porta_turret/syndicate/pod{
-	name = "sentry gun";
-	dir = 8;
-	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging.";
-	max_integrity = 250;
-	obj_integrity = 250;
-	lethal_projectile_sound = 'sound/weapons/gun/rifle/skm.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg';
-	lethal_projectile = /obj/projectile/bullet/a65clip;
-	stun_projectile = /obj/projectile/bullet/a65clip;
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
-	id = "LastTemplar"
-	},
+/obj/machinery/porta_turret/ship/ramzi/heavy,
 /turf/open/floor/plating/asteroid/rockplanet,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "xw" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 6
@@ -1121,7 +1079,7 @@
 /turf/open/floor/wood/ebony,
 /area/ruin/rockplanet/lasttemplar/dorm)
 "zk" = (
-/mob/living/simple_animal/hostile/human/syndicate/ranged/smg/space/stormtrooper{
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/stormtrooper/smg{
 	health = 200S;
 	maxHealth = 200
 	},
@@ -1204,7 +1162,7 @@
 	},
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/suns/dark,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "Bk" = (
 /obj/structure/table/glass,
 /obj/item/reagent_containers/food/snacks/cherrycupcake{
@@ -1212,17 +1170,11 @@
 	},
 /turf/open/floor/wood/ebony,
 /area/ruin/rockplanet/lasttemplar/office)
-"Bo" = (
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 8
-	},
-/turf/open/floor/suns/dark,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "Bt" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/human/syndicate/melee/sword/space{
+/mob/living/simple_animal/hostile/human/ramzi/melee/space/sledge{
 	health = 250;
 	maxHealth = 175
 	},
@@ -1337,7 +1289,7 @@
 	dir = 5
 	},
 /obj/effect/turf_decal/syndicateemblem/bottom,
-/mob/living/simple_animal/hostile/human/syndicate/ranged/smg/space/stormtrooper{
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/stormtrooper/smg{
 	health = 200;
 	maxHealth = 200
 	},
@@ -1356,12 +1308,12 @@
 	idle_power_usage = 0
 	},
 /obj/structure/chair/comfy/red/old/alt/directional/east,
-/mob/living/simple_animal/hostile/human/syndicate/melee/sword/space/stormtrooper{
+/mob/living/simple_animal/hostile/human/ramzi/melee/space/stormtrooper/sledge{
 	health = 500;
 	melee_damage_lower = 50;
 	melee_damage_upper = 50;
-	movespeed_modification = 2;
-	maxHealth = 500
+	maxHealth = 500;
+	movespeed_modification = 1.2
 	},
 /turf/open/floor/suns/diagonal{
 	color = "#792f27"
@@ -1376,7 +1328,7 @@
 	},
 /obj/effect/gibspawner/human/bodypartless,
 /turf/open/floor/suns/dark,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "Ew" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
@@ -1396,7 +1348,7 @@
 	id = "LastTemplar"
 	},
 /turf/open/floor/plating/asteroid/rockplanet,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "Ez" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
@@ -1426,7 +1378,7 @@
 /obj/effect/temp_visual/cult/sparks,
 /mob/living/simple_animal/hostile/cult_demon,
 /turf/open/floor/suns/dark,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "Fa" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating/asteroid/rockplanet/wet,
@@ -1443,7 +1395,7 @@
 /obj/effect/temp_visual/cult/sparks,
 /mob/living/simple_animal/hostile/cult_demon,
 /turf/open/floor/suns/dark,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "FW" = (
 /obj/structure/flora/bigplant,
 /turf/open/floor/wood/ebony,
@@ -1470,7 +1422,7 @@
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "GT" = (
 /turf/closed/indestructible/reinforced/rust,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "GW" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -1513,11 +1465,6 @@
 	},
 /turf/open/floor/suns/dark,
 /area/ruin/rockplanet/lasttemplar/medbay)
-"HY" = (
-/obj/structure/barricade/sandbags,
-/obj/structure/barricade/sandbags,
-/turf/open/floor/plating/asteroid/rockplanet,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "Ib" = (
 /obj/structure/table/wood/fancy/red_gold,
 /obj/effect/turf_decal/spline/fancy/wood{
@@ -1568,7 +1515,7 @@
 "IL" = (
 /obj/effect/turf_decal/borderfloorblack/corner,
 /turf/open/floor/suns/dark,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "IP" = (
 /obj/effect/turf_decal/corner/transparent/bar/half{
 	dir = 4
@@ -1583,7 +1530,7 @@
 /obj/effect/temp_visual/cult/sparks,
 /mob/living/simple_animal/hostile/cult_demon,
 /turf/open/floor/suns/dark,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "IU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/yellow{
@@ -1797,7 +1744,7 @@
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "Nf" = (
 /turf/closed/indestructible/necropolis,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "Ni" = (
 /obj/structure/flora/rock/rockplanet,
 /turf/open/floor/plating/asteroid/rockplanet,
@@ -1838,7 +1785,7 @@
 	id = "LastTemplar"
 	},
 /turf/open/floor/plating/asteroid/rockplanet,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "Oc" = (
 /obj/effect/turf_decal/borderfloorblack/corner{
 	dir = 4
@@ -2039,18 +1986,8 @@
 /turf/open/floor/wood/ebony,
 /area/ruin/rockplanet/lasttemplar/dorm)
 "TD" = (
-/obj/machinery/porta_turret/syndicate/pod{
-	name = "sentry gun";
-	dir = 10;
-	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging.";
-	max_integrity = 250;
-	obj_integrity = 250;
-	lethal_projectile_sound = 'sound/weapons/gun/rifle/skm.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg';
-	lethal_projectile = /obj/projectile/bullet/a65clip;
-	stun_projectile = /obj/projectile/bullet/a65clip;
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
-	id = "LastTemplar"
+/obj/item/mine/directional/claymore/live{
+	dir = 8
 	},
 /turf/open/floor/plating/asteroid/rockplanet,
 /area/overmap_encounter/planetoid/rockplanet/explored)
@@ -2116,7 +2053,7 @@
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "Va" = (
 /obj/structure/chair/sofa/olive/corpo/right/directional/north,
-/mob/living/simple_animal/hostile/human/syndicate/ranged/smg{
+/mob/living/simple_animal/hostile/human/ramzi/ranged/smg{
 	health = 150;
 	maxHealth = 150
 	},
@@ -2181,23 +2118,23 @@
 /mob/living/simple_animal/hostile/megafauna/cult_templar{
 	armor = list("melee" = 10, "bullet" = 45, "laser" = 35, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 40, "acid" = 40);
 	name = "Last Templar";
-	speed = 2;
 	armour_penetration = 30;
 	charge_distance = 4;
 	desc = "Once a warrior, now a lone remnant of Nar'Sie's will. No allies, no rituals - only battle remains, and he waits, knowing he is the last.";
 	gps_name = "???l";
 	melee_damage_lower = 30;
 	melee_damage_upper = 35;
-	movespeed_modification = 1.5;
 	move_to_delay = 1;
-	aggro_vision_range = 26;
+	aggro_vision_range = 8;
 	crusher_loot = list(/obj/item/upgradescroll);
-	loot = list(/obj/item/clothing/suit/space/hardsuit/ert/inquisitor)
+	loot = list(/obj/item/clothing/suit/space/hardsuit/ert/paranormal/inquisitor);
+	speed = 2;
+	movespeed_modification = 1.2
 	},
 /obj/effect/temp_visual/cult/turf,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/suns/dark/pattern,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/area/ruin/rockplanet/lasttemplar/office)
 "Xd" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4;
@@ -2284,7 +2221,7 @@
 /turf/closed/mineral/random/rockplanet,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "YY" = (
-/mob/living/simple_animal/hostile/human/syndicate/ranged/smg/space{
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/smg{
 	maxHealth = 175;
 	health = 175
 	},
@@ -2424,7 +2361,7 @@ YV
 YV
 YV
 YV
-kk
+TD
 bo
 bo
 bo
@@ -2526,7 +2463,7 @@ he
 MH
 ih
 qq
-HY
+qq
 qq
 he
 YV
@@ -2536,7 +2473,7 @@ YV
 he
 he
 he
-kk
+ux
 bo
 bo
 bo
@@ -2613,7 +2550,7 @@ he
 he
 he
 qq
-TD
+xv
 qq
 he
 he
@@ -2627,7 +2564,7 @@ Ka
 he
 he
 he
-TD
+xv
 qq
 he
 he
@@ -2772,7 +2709,7 @@ he
 he
 he
 he
-TD
+xv
 qq
 he
 he
@@ -2826,7 +2763,7 @@ YV
 YV
 bo
 he
-kk
+ux
 bo
 bo
 bo
@@ -3275,7 +3212,7 @@ ey
 fy
 fy
 bK
-Bo
+kJ
 lP
 fy
 fy
@@ -3321,8 +3258,8 @@ he
 uT
 GT
 ET
-pY
-DP
+hh
+eH
 FF
 hl
 GT
@@ -3368,10 +3305,10 @@ LO
 uT
 fy
 wD
-ps
+cN
 WW
-ps
-ne
+cN
+pp
 wc
 aM
 tp
@@ -3416,11 +3353,11 @@ uT
 Nf
 ok
 gj
-DP
+eH
 IL
 Bg
 fy
-bM
+fy
 Do
 YU
 Cc
@@ -3465,7 +3402,7 @@ fy
 oU
 IQ
 DQ
-vp
+hR
 fy
 YU
 Dk
@@ -4313,7 +4250,7 @@ he
 he
 he
 he
-wt
+ps
 qq
 he
 YV
@@ -4360,7 +4297,7 @@ bo
 bo
 bo
 he
-HY
+qq
 qq
 he
 he

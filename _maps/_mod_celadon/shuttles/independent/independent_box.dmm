@@ -1449,6 +1449,9 @@
 /obj/effect/turf_decal/trimline/opaque/white/filled/corner{
 	dir = 1
 	},
+/obj/machinery/vending/wallmed{
+	pixel_x = -26
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "lp" = (
@@ -3112,9 +3115,6 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 6
 	},
-/obj/structure/sign/poster/random{
-	pixel_y = -32
-	},
 /obj/structure/closet/secure_closet{
 	icon_state = "med";
 	name = "equipment locker";
@@ -3171,6 +3171,9 @@
 /obj/item/storage/case/surgery{
 	pixel_x = 9;
 	pixel_y = -7
+	},
+/obj/structure/sign/poster/rilena/ri{
+	pixel_y = -32
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/medical)

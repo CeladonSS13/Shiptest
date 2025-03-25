@@ -43,6 +43,10 @@
 /area/ship/crew/canteen)
 "ah" = (
 /obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/shutters{
+	dir = 2;
+	id = "santiana"
+	},
 /turf/open/floor/plating,
 /area/ship/crew/canteen)
 "ai" = (
@@ -500,7 +504,10 @@
 /area/ship/crew/canteen)
 "aY" = (
 /obj/effect/spawner/structure/window/reinforced,
-/obj/structure/curtain/cloth/black,
+/obj/machinery/door/poddoor/shutters{
+	dir = 2;
+	id = "santiana"
+	},
 /turf/open/floor/plating,
 /area/ship/maintenance/aft)
 "aZ" = (
@@ -734,12 +741,12 @@
 /obj/item/clothing/suit/armor/vest/alt,
 /obj/item/storage/box/ammo/a300,
 /obj/item/storage/box/ammo/a300,
-/obj/item/storage/box/ammo/c299,
-/obj/item/storage/box/ammo/c299,
-/obj/item/storage/box/ammo/c299,
 /obj/item/storage/box/ammo/a12g_buckshot,
 /obj/item/storage/box/ammo/a12g_rubbershot,
 /obj/item/storage/box/ammo/a12g_rubbershot,
+/obj/item/storage/box/ammo/a357,
+/obj/item/storage/box/ammo/a357,
+/obj/item/storage/box/ammo/a357,
 /turf/open/floor/plasteel/mono,
 /area/ship/security/armory)
 "br" = (
@@ -1048,7 +1055,10 @@
 /area/ship/crew/toilet)
 "bV" = (
 /obj/effect/spawner/structure/window/reinforced,
-/obj/structure/curtain/cloth/black,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "santiana"
+	},
 /turf/open/floor/plating,
 /area/ship/security/armory)
 "bW" = (
@@ -1079,7 +1089,10 @@
 /area/ship/bridge)
 "bY" = (
 /obj/effect/spawner/structure/window/reinforced,
-/obj/structure/curtain/cloth/black,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "santiana"
+	},
 /turf/open/floor/plating,
 /area/ship/medical)
 "bZ" = (
@@ -1372,8 +1385,12 @@
 /area/ship/crew/canteen)
 "cE" = (
 /obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/shutters{
+	dir = 2;
+	id = "santiana"
+	},
 /turf/open/floor/plating,
-/area/ship/medical)
+/area/ship/bridge)
 "cF" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4{
 	dir = 4
@@ -1727,6 +1744,13 @@
 	pixel_x = -20;
 	pixel_y = -9
 	},
+/obj/machinery/button/door{
+	pixel_x = -23;
+	pixel_y = 2;
+	dir = 4;
+	id = "santiana";
+	name = "Shutters button"
+	},
 /turf/open/floor/wood/ebony,
 /area/ship/bridge)
 "dj" = (
@@ -1987,17 +2011,26 @@
 /area/ship/crew/dorm)
 "dE" = (
 /obj/effect/spawner/structure/window/reinforced,
-/obj/structure/curtain/cloth/black,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "santiana"
+	},
 /turf/open/floor/plating,
 /area/ship/bridge)
 "dF" = (
 /obj/effect/spawner/structure/window/reinforced,
-/obj/structure/curtain/cloth/black,
+/obj/machinery/door/poddoor/shutters{
+	dir = 2;
+	id = "santiana"
+	},
 /turf/open/floor/plating,
 /area/ship/crew/dorm)
 "dG" = (
 /obj/effect/spawner/structure/window/reinforced,
-/obj/structure/curtain/cloth/black,
+/obj/machinery/door/poddoor/shutters{
+	dir = 2;
+	id = "santiana"
+	},
 /turf/open/floor/plating,
 /area/ship/hallway/central)
 "dH" = (
@@ -2301,7 +2334,10 @@
 /area/ship/security/armory)
 "gS" = (
 /obj/effect/spawner/structure/window/reinforced,
-/obj/structure/curtain/cloth/black,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "santiana"
+	},
 /turf/open/floor/plating,
 /area/ship/crew/cryo)
 "iU" = (
@@ -2709,7 +2745,7 @@ cz
 bG
 bG
 bG
-cE
+bY
 bG
 ce
 ce
@@ -2871,11 +2907,11 @@ aa
 aa
 aa
 aa
-dE
+cE
 cx
 dl
 bP
-dE
+cE
 "}
 (22,1,1) = {"
 aa
@@ -2891,11 +2927,11 @@ aa
 aa
 aa
 aa
-dE
+cE
 bL
 dr
 wC
-dE
+cE
 "}
 (23,1,1) = {"
 aa

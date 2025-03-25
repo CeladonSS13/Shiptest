@@ -1,9 +1,3 @@
-/obj/structure/statue/bronze/masson_kills		// Origin -> code\game\objects\structures\statues.dm
-	name = "Masson Kill's"
-	desc = "Статуя самого лучшего администратора что вы можете встретить в новогоднюю ночь. Его мешок полон подарков. Надеюсь, ты вел себя хорошо?"
-	icon = 'mod_celadon/_storge_icons/icons/structures/statue.dmi'
-	icon_state = "masson_kills"
-
 /obj/structure/curtain/cloth/purpl
 	icon = 'mod_celadon/_storge_icons/icons/structures/fancy.dmi'
 	icon_type = "purpl_fancy"
@@ -303,3 +297,12 @@
 	icon_state = "metal_6"
 	base_icon_state = "metal_6"
 	floor_tile = /obj/item/stack/tile/plasteel/heavymetal/var5
+
+/obj/structure/railing/thin
+	icon_state = "railing_thin"
+
+/obj/structure/railing/thin/corner
+	icon_state = "railing_thin_corner"
+	density = FALSE
+	climbable = FALSE
+	buildstackamount = 1

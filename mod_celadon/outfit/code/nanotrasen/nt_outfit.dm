@@ -355,7 +355,7 @@
 	suit = /obj/item/clothing/suit/armor/nanotrasen/captain/parade
 	suit_store = /obj/item/gun/ballistic/revolver/mateba
 	head = /obj/item/clothing/head/nanotrasen/captain/peaked
-	id = /obj/item/card/id/centcom
+	id = /obj/item/card/id/lplieu
 	glasses = /obj/item/clothing/glasses/sunglasses
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
 	backpack_contents = list(/obj/item/ammo_box/a357, /obj/item/ammo_box/a357)

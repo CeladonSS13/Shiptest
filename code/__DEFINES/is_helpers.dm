@@ -231,3 +231,7 @@ GLOBAL_LIST_INIT(book_types, typecacheof(list(
 	/obj/item/book,
 	/obj/item/spellbook,
 	/obj/item/storage/book)))
+
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+#define isclown(A) (istype(A, /mob/living/simple_animal/hostile/retaliate/clown))
+// [/CELADON-ADD]

@@ -1,38 +1,39 @@
-// /datum/quirk/ignore_incapacitated	// УДАЛЕН, по причине не сбалансированности перка
-// 	name = "increased_survival"
-// 	desc = "Allows you to interact with objects on and around you while in critical condition."
-// 	value = 6
-// 	mob_traits = list(TRAIT_INCREASED_SURVIVAL)
-// 	gain_text = "<span class='notice'>You are sure that you will survive even alone!</span>"
-// 	lose_text = "<span class='danger'>You are afraid for your life!</span>"
+/datum/quirk/fan_clown
+	name = "Clown Fan"
+	desc = "You enjoy clown antics and get a mood boost from wearing your clown pin."
+	value = 1
+	mob_traits = list(TRAIT_FAN_CLOWN)
+	gain_text = "<span class='notice'>You are a big fan of clowns.</span>"
+	lose_text = "<span class='danger'>The clown doesn't seem so great.</span>"
+	medical_record_text = "Patient reports being a big fan of clowns."
 
-// /datum/quirk/dwarfism
-// 	name = "dwarfism"
-// 	desc = "Makes you wiry and shallow. Cuts your health by 75%. It gives coolness and alcohol treatment. With a lack of alcohol in the blood, you begin to lose your life."
-// 	value = 3
-// 	mob_traits = list(TRAIT_DWARF, TRAIT_SCOOPABLE)
-// 	gain_text = "<span class='notice'>Everything around you seems to grow..</span>"
-// 	lose_text = "<span class='danger'>Everything around you seems to shrink..</span>"
-// 	medical_record_text = "Patient is a dwarf."
+/datum/quirk/fan_clown/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/obj/item/clothing/accessory/fan_clown_pin/B = new(get_turf(H))
+	var/list/slots = list (
+		"backpack" = ITEM_SLOT_BACKPACK,
+		"hands" = ITEM_SLOT_HANDS,
+	)
+	H.equip_in_one_of_slots(B, slots , qdel_on_fail = TRUE)
+	var/datum/atom_hud/fan = GLOB.huds[DATA_HUD_FAN]
+	fan.add_hud_to(H)
 
-// /datum/quirk/dwarfism/New(mob/living/quirk_mob, spawn_effects)
-// 	quirk_mob.transform = quirk_mob.transform.Scale(0.8, 1.25)
-// 	quirk_mob.pixel_y = -3
-// 	quirk_mob.base_pixel_y = -3
-// 	quirk_mob.maxHealth = 75
-// 	// owner.staminamod = 1.5
-// 	// owner.armor = 15
-// 	// owner.stunmod = 1.35
-// 	// owner.punchdamagelow = 5
-// 	// owner.punchstunthreshold = 10
-// 	..()
+/datum/quirk/fan_mime
+	name = "Mime Fan"
+	desc = "You enjoy mime antics and get a mood boost from wearing your mime pin."
+	value = 1
+	mob_traits = list(TRAIT_FAN_MIME)
+	gain_text = "<span class='notice'>You are a big fan of the Mime.</span>"
+	lose_text = "<span class='danger'>The mime doesn't seem so great.</span>"
+	medical_record_text = "Patient reports being a big fan of mimes."
 
-
-
-// armor = 15 //True dwarves are a bit sturdier than humans
-// 	speedmod = 0.6 //They are also slower
-// 	staminamod = 1.5//dwarves have a low center of mass and a high relative body weight. They fall hard.
-// 	stunmod = 1.35//35% longer stuns.
-// 	punchdamagelow = 5
-// 	punchdamagehigh = 15 //and a bit stronger
-// 	punchstunthreshold = 10
+/datum/quirk/fan_mime/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/obj/item/clothing/accessory/fan_mime_pin/B = new(get_turf(H))
+	var/list/slots = list (
+		"backpack" = ITEM_SLOT_BACKPACK,
+		"hands" = ITEM_SLOT_HANDS,
+	)
+	H.equip_in_one_of_slots(B, slots , qdel_on_fail = TRUE)
+	var/datum/atom_hud/fan = GLOB.huds[DATA_HUD_FAN]
+	fan.add_hud_to(H)

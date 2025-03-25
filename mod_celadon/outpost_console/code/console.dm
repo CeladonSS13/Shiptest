@@ -182,10 +182,8 @@
 /obj/machinery/computer/cargo/faction/proc/generate_faction_pack_data(datum/faction)
 	. = supply_pack_data = list()
 	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/faction/P = SSshuttle.supply_packs[pack]
-		// Проверяем что являемся /datum/supply_pack/faction, т.е. всё из мод-пака outpost_console
-		if(!istype(P))
-			continue
+		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
+
 		var/is_faction = ispath(P.faction, faction)
 		// Под независимые попадают и те, у которых фракция = null
 		if(ispath(faction, /datum/faction/independent) && P.faction == null)
@@ -216,7 +214,7 @@
 	var/list/data = list()
 	data["supplies"] = list()
 	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/faction/P = SSshuttle.supply_packs[pack]
+		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
 		var/is_faction = ispath(P.faction, faction)
 
 		if (is_faction)
@@ -433,6 +431,26 @@
 /obj/machinery/computer/cargo/faction/independent/ui_static_data(mob/user)
 	var/list/data = faction_ui_static_data(user, /datum/faction/independent)
 	return data
+
+/obj/machinery/computer/cargo/faction/independent/computer_1
+	name = "Independent outpost console #1"
+	desc = "That outpost console #1 belongs to Independent faction."
+	charge_account = ACCOUNT_IND_1
+
+/obj/machinery/computer/cargo/faction/independent/computer_2
+	name = "Independent outpost console #2"
+	desc = "That outpost console #2 belongs to Independent faction."
+	charge_account = ACCOUNT_IND_2
+
+/obj/machinery/computer/cargo/faction/independent/computer_3
+	name = "Independent outpost console #3"
+	desc = "That outpost console #3 belongs to Independent faction."
+	charge_account = ACCOUNT_IND_3
+
+/obj/machinery/computer/cargo/faction/independent/computer_4
+	name = "Independent outpost console #4"
+	desc = "That outpost console #4 belongs to Independent faction."
+	charge_account = ACCOUNT_IND_4
 
 /*
 	Nanotrasen

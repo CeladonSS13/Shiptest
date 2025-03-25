@@ -5,6 +5,7 @@
 #define RUINTYPE_PLASMA "Plasma"
 #define RUINTYPE_EARTH_SAND "EarthSand"
 #define RUINTYPE_ANIMA "Anima"
+#define RUINTYPE_ASTEROID "Asteroid"
 
 #define DYNAMIC_WORLD_ICE_NIGHT "ice night"
 #define DYNAMIC_WORLD_JUNGLE_NIGHT "jungle night"

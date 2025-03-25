@@ -380,7 +380,7 @@
 			/obj/item/clothing/head/that,
 			/obj/item/clothing/head/nursehat,
 			/obj/item/clothing/head/chefhat,
-			// [CELADON-ADD] - CELADON_RETURN_CONTENT
+			// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 			/obj/item/clothing/head/hardhat/reindeer,
 			/obj/item/clothing/head/sombrero,
 			/obj/item/clothing/head/rabbitears,

@@ -37,7 +37,7 @@
 		new /obj/item/clothing/under/color/jumpskirt/black(src)
 	if(prob(25))
 		new /obj/item/clothing/suit/jacket/leather(src)
-	// [CELADON-ADD] - CELADON_RETURN_CONTENT
+	// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 	if(prob(20))
 		new /obj/item/clothing/suit/jacket/leather/overcoat(src)
 	// [/CELADON-ADD]

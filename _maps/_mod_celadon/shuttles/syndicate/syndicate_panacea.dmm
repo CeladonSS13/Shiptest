@@ -1786,10 +1786,6 @@
 	},
 /turf/open/floor/suns/dark/pattern,
 /area/ship/bridge)
-"kX" = (
-/obj/item/hypospray/mkii/mkiii,
-/turf/template_noop,
-/area/template_noop)
 "lb" = (
 /obj/effect/turf_decal/suns/capital_s/marble{
 	dir = 8
@@ -3027,12 +3023,18 @@
 	pixel_y = 6;
 	pixel_x = -2
 	},
-/obj/item/ammo_box/magazine/modelh{
-	pixel_y = 6;
-	pixel_x = 2
-	},
 /obj/structure/table/wood,
 /obj/item/radio/headset/syndicate/alt/suns/command,
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 4;
+	pixel_y = 7
+	},
+/obj/item/storage/box/ammo/ferroslug,
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 4;
+	pixel_y = 7
+	},
+/obj/item/storage/box/ammo/ferroslug,
 /turf/open/floor/suns/diagonal{
 	color = "#543C30"
 	},
@@ -6587,6 +6589,11 @@
 	},
 /obj/item/storage/belt/security/military,
 /obj/item/storage/box/ammo/ferropellet,
+/obj/item/storage/box/ammo/ferropellet,
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 4;
+	pixel_y = 7
+	},
 /turf/open/floor/suns/dark/plain,
 /area/ship/security)
 "Ma" = (
@@ -8751,7 +8758,7 @@ JQ
 JQ
 JQ
 JQ
-kX
+JQ
 JQ
 JQ
 JQ

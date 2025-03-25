@@ -53,6 +53,10 @@
 	sec_hud_set_ID()
 	sec_hud_set_implants()
 	sec_hud_set_security_status()
+	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+	//...fan gear
+	fan_hud_set_fandom()
+	// [/CELADON-ADD]
 	//...and display them.
 	add_to_all_human_data_huds()
 

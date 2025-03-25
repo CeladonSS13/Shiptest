@@ -1449,7 +1449,7 @@
 "oQ" = (
 /obj/machinery/door/airlock/command{
 	name = "Bridge";
-	req_access_txt = "8486"
+	req_access_txt = list(19,3)
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -2288,7 +2288,7 @@
 /obj/machinery/door/airlock/command{
 	dir = 4;
 	name = "Bridge";
-	req_access_txt = "8486"
+	req_access_txt = list(19,3)
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -2841,11 +2841,11 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/maintenance/fore)
 "JC" = (
-/obj/machinery/computer/bounty{
-	dir = 8
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 5
+	},
+/obj/machinery/computer/security{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)

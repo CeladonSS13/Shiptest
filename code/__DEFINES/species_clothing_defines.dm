@@ -18,7 +18,7 @@
 #define DEFAULT_NECK_PATH 'mod_celadon/_storge_icons/icons/items/overlay/neck.dmi'
 // [/CELADON-EDIT]
 #define DEFAULT_GLOVES_PATH 'icons/mob/clothing/hands.dmi'
-// [CELADON-EDIT] - CELADON_RETURN_CONTENT
+// [CELADON-EDIT] - CELADON_RETURN_CONTENT_SPAWN
 // #define DEFAULT_GLASSES_PATH 'icons/mob/clothing/eyes/eyes.dmi'	// CELADON-EDIT - ORIGINAL
 #define DEFAULT_GLASSES_PATH 'mod_celadon/_storge_icons/icons/clothing/overlay/eyes.dmi'
 // [/CELADON-EDIT]

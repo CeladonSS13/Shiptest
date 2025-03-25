@@ -5,7 +5,7 @@
 /datum/supply_pack/faction/independent/machinery/rnd_beac
 	name = "R&D Beacon"
 	desc = "A set of specialized platforms for research and production, limited by license. "
-	cost = 6000
+	cost = 16000
 	contains = list(/obj/item/choice_beacon/rnd)
 	crate_name = "r&d starter kit"
 	crate_type = /obj/structure/closet/crate/science
@@ -13,7 +13,7 @@
 /datum/supply_pack/faction/independent/machinery/selling_pad_pack
 	name = "Cargo teleport"
 	desc = " A set of specialized platforms for building and managing a cargo teleport "
-	cost = 2500
+	cost = 9000
 	contains = list(/obj/item/circuitboard/machine/selling_pad,
 					/obj/item/circuitboard/computer/selling_pad_control)
 	crate_name = "cargo teleport"
@@ -36,7 +36,7 @@
 /datum/supply_pack/faction/independent/machinery/plasma_thruster
 	name = "Plasma Thruster Crate"
 	desc = "A crate containing a plasma thruster and its heater's electronics. For when you need a lot of extra thrust."
-	cost = 750
+	cost = 5000
 	contains = list(/obj/item/circuitboard/machine/shuttle/engine/plasma,
 					/obj/item/circuitboard/machine/shuttle/heater,
 					/obj/item/circuitboard/machine/pipedispenser,

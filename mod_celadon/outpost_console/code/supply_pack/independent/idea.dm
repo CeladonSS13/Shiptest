@@ -15,7 +15,7 @@
 /datum/supply_pack/faction/independent/idea/silicon/ai
 	name = "AI core assembly crate"
 	desc = "Get an AI today! Contains everything for AI assembly, empty shell assembly, law changing circuits."
-	cost = 2000
+	cost = 6500
 	contains = list(
 					/obj/item/paper/idea{
 					default_raw_text = "<center><h1 style='background-color:red;'>Thank you for shopping in Space IDEA!</h1></center><h2 align='center'>Instructions for assembling AI shell</h2><p>1. Secure AI core bolts with the provided wrench</p><p>2. Insert 'AI core' circuit board inside the slot in core</p><p>3. Secure circuit board screws with the provided screwdriver</p><p>4. Add wires according to the instructions</p><p>5. (Optional) Upload any custom laws that you'd like to this AI core with an AI module. Laws vary.</p><p>6. Turn on positronic brain by clicking on a big button on it, while its loading, it will glow yellow</p><p>7. Wait for brain to activate, now, it should beep loudly and now glow with light blue actively moving lines. </p><p>8. Place active positronic brain inside</p><p>9. Add two (2) reinforced glass to the AI shell</p><p>10. Secure glass screws with screwdriver</p><i><p><center> Note: Warranty void if exposed to: High Humidity, High Temperatures, Grass, Mud, The Jungle, lonely Robotists.</center></p></i>"
@@ -51,7 +51,7 @@
 /datum/supply_pack/faction/independent/idea/silicon/ai_shell
 	name = "Cyborg shell for AI"
 	desc = "Cyborg shell for your AI! Contains cyborg shell assembly kit for an AI and B.O.R.I.S module"
-	cost = 1500
+	cost = 2250
 	contains = list(
 					/obj/item/paper/idea{
 					default_raw_text = "<center><h1 style='background-color:red;'>Thank you for shopping in Space IDEA!</h1></center><h2 align='center'>Instructions for assembling AI shell</h2><p>1. Insert into borg body one (1) power cell and five (5) parts of coil</p><p>2. Insert into borg head two (2) flashes</p><p>3. Place all cyborg parts on exoskeleton of borg</p><p>4. Turn on positronic brain by clicking on a big button on it, while its loading, it will glow yellow</p><p>5. Wait for brain to activate, now, it should beep loudly and now glow with light blue actively moving lines. </p><p>6. Insert 'B.O.R.I.S Module' module board into the finished shell</p><p>7. Shell is ready to be entered by AI.</p><i><p><center> Note: Warranty void if exposed to: High Humidity, High Temperatures, Grass, Mud, The Jungle, lonely Robotists.</center></p></i>"
@@ -74,7 +74,7 @@
 /datum/supply_pack/faction/independent/idea/silicon/robot
 	name = "Cyborg assembly crate"
 	desc = "Build your own silicon friend only for 2000 credits! Contains all parts besides law changing circuits and carging station."
-	cost = 1250
+	cost = 3000
 	contains = list(/obj/item/paper/idea{
 					default_raw_text = "<center><h1 style='background-color:red;'>Thank you for shopping Space IDEA!</h1></center><h2 align='center'>Instructions for assembling YOUR Cyborg</h2><p>1. Insert into borg body one (1) power cell and five (5) parts of coil</p><p>2. Insert into borg head two (2) flashes</p><p>3. Place all cyborg parts on exoskeleton of borg</p><p>4. Turn on positronic brain by clicking on a big button on it, while its loading, it will glow yellow</p><p>5. Wait for brain to activate, now, it should beep loudly and now glow with light blue actively moving lines</p><p>6. Place positronic brain inside cyborg</p><i><p><center> Note: Warranty void if exposed to: High Humidity, High Temperatures, Grass, Mud, The Jungle, lonely Robotists.</center></p></i>"
 					},

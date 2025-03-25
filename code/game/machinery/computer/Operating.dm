@@ -129,6 +129,7 @@
 			data["patient"]["statstate"] = "bad"
 	data["patient"]["health"] = patient.health
 	data["patient"]["blood_type"] = patient.dna.blood_type.name
+	data["patient"]["blood_volume"] = "[round((patient.blood_volume / BLOOD_VOLUME_NORMAL)*100)] %, [patient.blood_volume] cl" // [CELADON-ADD] Добавляем значение кол-ва крови в терминал операций: tgui\packages\tgui\interfaces\OperatingComputer.js
 	data["patient"]["maxHealth"] = patient.maxHealth
 	data["patient"]["minHealth"] = HEALTH_THRESHOLD_DEAD
 	data["patient"]["bruteLoss"] = patient.getBruteLoss()

@@ -3,10 +3,10 @@
 
 #include "_economy.dm"
 
-#include "code/supply_pack.dm"
-
 #include "code\blackmarket\blackmarket_items\clothing.dm"
 #include "code\blackmarket\blackmarket_items\misc.dm"
+
+// code/bounties	на будущее
 
 #include "code/exports/gear.dm"
 #include "code/exports/large_objects.dm"
@@ -20,8 +20,58 @@
 #include "code/exports/tools.dm"
 #include "code/exports/weapons.dm"
 
+
+
 #include "code/missions/acquire_mission.dm"
 #include "code/missions/drill_mission.dm"
 #include "code/missions/research_mission.dm"
+
+#include "code/supply_pack/_supply_pack.dm"
+#include "code/supply_pack/ammo.dm"
+#include "code/supply_pack/animal.dm"
+#include "code/supply_pack/canister.dm"
+#include "code/supply_pack/chemistry.dm"
+#include "code/supply_pack/civilian.dm"
+#include "code/supply_pack/costumes_toys.dm"
+#include "code/supply_pack/emergency.dm"
+#include "code/supply_pack/exploration.dm"
+#include "code/supply_pack/food.dm"
+#include "code/supply_pack/gun.dm"
+#include "code/supply_pack/machinery.dm"
+#include "code/supply_pack/material.dm"
+#include "code/supply_pack/mechs.dm"
+#include "code/supply_pack/medical.dm"
+#include "code/supply_pack/sec_supply.dm"
+#include "code/supply_pack/spacesuit_armor.dm"
+#include "code/supply_pack/tools.dm"
+#include "code/supply_pack/vendor_refill.dm"
+
+#include "code/supply_pack_faction/independent/_prices.dm"
+#include "code/supply_pack_faction/independent/ammunition.dm"
+#include "code/supply_pack_faction/independent/costumes_toys.dm"
+#include "code/supply_pack_faction/independent/food.dm"
+#include "code/supply_pack_faction/independent/gun.dm"
+#include "code/supply_pack_faction/independent/idea.dm"
+#include "code/supply_pack_faction/independent/spacesuit_armor.dm"
+#include "code/supply_pack_faction/independent/tools.dm"
+#include "code/supply_pack_faction/independent/vendor_refill.dm"
+
+#include "code/supply_pack_faction/inteq/clothing.dm"
+#include "code/supply_pack_faction/inteq/gun.dm"
+
+#include "code/supply_pack_faction/nanotrasen/ammo.dm"
+#include "code/supply_pack_faction/nanotrasen/clothing.dm"
+#include "code/supply_pack_faction/nanotrasen/gun.dm"
+
+#include "code/supply_pack_faction/solfed/ammo.dm"
+#include "code/supply_pack_faction/solfed/clothing.dm"
+#include "code/supply_pack_faction/solfed/gun.dm"
+
+#include "code/supply_pack_faction/syndicate/ammo.dm"
+#include "code/supply_pack_faction/syndicate/clothing.dm"
+#include "code/supply_pack_faction/syndicate/gun.dm"
+
+
+#include "code/vending.dm"
 
 #endif

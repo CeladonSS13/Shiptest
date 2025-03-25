@@ -150,6 +150,9 @@
 	},
 /obj/machinery/power/port_gen/pacman,
 /obj/item/stack/sheet/mineral/plasma/twenty,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering)
 "au" = (
@@ -200,9 +203,7 @@
 "ay" = (
 /obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/box,
-/obj/structure/frame{
-	anchored = 1
-	},
+/obj/structure/frame/machine,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering)
 "az" = (
@@ -1374,7 +1375,8 @@
 "cs" = (
 /obj/machinery/door/airlock/command{
 	icon_state = "closed";
-	dir = 4
+	dir = 4;
+	req_access_txt = list(19)
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	icon_state = "pipe11-2";

@@ -248,9 +248,10 @@
 "ck" = (
 /obj/structure/guncloset,
 /obj/effect/turf_decal/industrial/traffic/full,
-/obj/item/gun/ballistic/automatic/pistol/ringneck,
-/obj/item/gun/ballistic/automatic/pistol/ringneck,
-/obj/item/gun/ballistic/automatic/pistol/ringneck,
+/obj/item/gun/ballistic/automatic/smg/cobra,
+/obj/item/gun/energy/laser/retro,
+/obj/item/gun/ballistic/automatic/pistol/rattlesnake,
+/obj/item/gun/energy/e_gun/dragnet,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "cl" = (
@@ -537,13 +538,15 @@
 	name = "syndicate megaphone";
 	pixel_y = 1
 	},
-/obj/item/gun/ballistic/derringer/traitor,
-/obj/item/storage/box/ammo/a357,
 /obj/item/storage/box/ammo/a357,
 /obj/item/melee/classic_baton/telescopic/contractor_baton{
 	name = "SnD baton";
 	pixel_y = 8
 	},
+/obj/item/ammo_box/a357/match,
+/obj/item/ammo_box/a357/match,
+/obj/item/gun/ballistic/revolver/viper,
+/obj/item/clothing/accessory/holster,
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
 "eo" = (
@@ -565,13 +568,16 @@
 "eA" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/industrial/traffic/full,
-/obj/item/tank/internals/oxygen/red{
-	pixel_x = 4;
-	pixel_y = -2
+/obj/item/clothing/glasses/night{
+	pixel_y = 8
 	},
-/obj/item/tank/internals/oxygen/red{
-	pixel_x = -4;
-	pixel_y = 5
+/obj/item/clothing/glasses/night{
+	pixel_y = 4;
+	pixel_x = 0
+	},
+/obj/item/clothing/glasses/night{
+	pixel_y = -2;
+	pixel_x = 0
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
@@ -2961,32 +2967,18 @@
 /obj/structure/railing,
 /obj/effect/turf_decal/industrial/traffic,
 /obj/structure/table/reinforced,
-/obj/item/storage/toolbox/ammo/c10mm{
-	pixel_y = 12;
-	pixel_x = 8
-	},
 /obj/effect/turf_decal/industrial/traffic/corner{
 	dir = 1
 	},
-/obj/item/ammo_box/magazine/m10mm_ringneck{
-	pixel_x = -4
-	},
-/obj/item/ammo_box/magazine/m10mm_ringneck{
-	pixel_x = -8;
+/obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/storage/box/ammo/c45,
+/obj/item/ammo_box/magazine/m9mm_rattlesnake{
+	pixel_x = -5;
 	pixel_y = 0
 	},
-/obj/item/ammo_box/magazine/m10mm_ringneck{
-	pixel_x = -12;
-	pixel_y = 0
-	},
-/obj/item/storage/box/ammo/c10mm_hp{
-	pixel_x = 7;
-	pixel_y = 5
-	},
-/obj/item/storage/box/ammo/c10mm_ap{
-	pixel_x = 7;
-	pixel_y = 0
-	},
+/obj/item/storage/box/ammo/c9mm,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "yH" = (
@@ -3972,7 +3964,9 @@
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/effect/turf_decal/industrial/traffic/full,
 /obj/machinery/light/directional/north,
-/obj/item/mod/control/pre_equipped/traitor,
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun,
+/obj/item/tank/internals/oxygen/red,
+/obj/item/clothing/mask/gas/syndicate,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "Ij" = (
@@ -4747,19 +4741,11 @@
 /area/ship/science/ai_chamber)
 "Po" = (
 /obj/machinery/airalarm/directional/north,
-/obj/structure/rack,
 /obj/effect/turf_decal/industrial/traffic/full,
-/obj/item/clothing/glasses/night{
-	pixel_x = 2;
-	pixel_y = 1
-	},
-/obj/item/clothing/glasses/night{
-	pixel_y = 8
-	},
-/obj/item/clothing/glasses/night{
-	pixel_x = -2;
-	pixel_y = -4
-	},
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun,
+/obj/machinery/suit_storage_unit/inherit/industrial,
+/obj/item/tank/internals/oxygen/red,
+/obj/item/clothing/mask/gas/syndicate,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "PE" = (
@@ -5503,7 +5489,9 @@
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/effect/turf_decal/industrial/traffic/full,
 /obj/machinery/firealarm/directional/north,
-/obj/item/mod/control/pre_equipped/traitor,
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun,
+/obj/item/tank/internals/oxygen/red,
+/obj/item/clothing/mask/gas/syndicate,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "Xs" = (

@@ -6,6 +6,7 @@
 	"map_path": "_maps/_mod_celadon/shuttles/solfed/solfed_fist_of_freedom.dmm",
 	"enabled": true,
 	"limit": 1,
+	"sensor_range": 5,
 	"prefix": "ASFSV",
 	"faction": "/datum/faction/solgov",
 	"tags": ["Командование", "Бой", "Флагман"],
@@ -48,7 +49,7 @@
 			"slots" : 3
 		},
 		"Contracted Miner": {
-			"outfit": "/datum/outfit/job/solgov/miner",
+			"outfit": "/datum/outfit/job/solfed/miner",
 			"slots": 3
 		}
 	}

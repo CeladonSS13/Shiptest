@@ -50,3 +50,8 @@
 	prefix = "_maps/_mod_celadon/RandomRuins/AnimaRuins/"
 	cost = 1
 	ruin_type = RUINTYPE_ANIMA
+
+/datum/map_template/ruin/asteroid
+	prefix = "_maps/_mod_celadon/RandomRuins/AsteroidRuins/"
+	cost = 1
+	ruin_type = RUINTYPE_ASTEROID

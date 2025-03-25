@@ -1414,14 +1414,14 @@
 /obj/effect/turf_decal/techfloor,
 /obj/item/storage/bag/ore,
 /obj/item/storage/bag/ore,
-/obj/item/pickaxe,
-/obj/item/pickaxe,
 /obj/item/mining_scanner,
 /obj/item/mining_scanner,
 /obj/item/gps/mining,
 /obj/structure/closet/wall{
 	pixel_y = -25
 	},
+/obj/item/pickaxe/mini,
+/obj/item/pickaxe/mini,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "nh" = (
@@ -2017,8 +2017,6 @@
 	name = "Ammo Locker";
 	req_access_txt = "1"
 	},
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
 /obj/item/ammo_box/magazine/m12g_bulldog/drum,
 /obj/item/ammo_box/magazine/m12g_bulldog/drum,
 /obj/item/storage/box/ammo/a12g_slug,
@@ -2029,6 +2027,10 @@
 /obj/item/ammo_box/magazine/m556_42_hydra,
 /obj/item/storage/box/ammo/a556_42,
 /obj/item/storage/box/ammo/a556_42,
+/obj/item/storage/box/ammo/a556_42,
+/obj/item/storage/box/ammo/a556_42,
+/obj/item/storage/box/ammo/a12g_slug,
+/obj/item/storage/box/ammo/a12g_buckshot,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "sY" = (
@@ -2178,6 +2180,8 @@
 	pixel_y = -4;
 	pixel_x = -6
 	},
+/obj/item/storage/backpack/duffelbag/syndie/c4,
+/obj/item/melee/axe/sledgehammer,
 /turf/open/floor/pod/dark,
 /area/ship/security/armory)
 "uh" = (
@@ -2698,7 +2702,7 @@
 /obj/structure/closet/wall/orange/directional/east{
 	name = "fuel locker"
 	},
-/obj/item/stack/sheet/mineral/uranium/five,
+/obj/item/stack/sheet/mineral/uranium/twenty,
 /obj/item/stack/sheet/mineral/uranium/five,
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -2891,6 +2895,8 @@
 	},
 /obj/item/ammo_box/magazine/m45_cobra,
 /obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/storage/box/ammo/c45,
+/obj/item/storage/box/ammo/c45_ap,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "AS" = (
