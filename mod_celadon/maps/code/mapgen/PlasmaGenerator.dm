@@ -81,15 +81,11 @@
 		)
 	)
 
+///MARK:BIOME
+
 /datum/biome/plasma_gaint
 	open_turf_types = list(
 		/turf/open/floor/plating/asteroid/plasma_gaint/lit = 1,
-	)
-
-	feature_spawn_chance = 0.25
-	feature_spawn_list = list(
-		/obj/structure/vein/classtwo/plasma_gaint = 30,
-		/obj/structure/vein/classthree/plasma_gaint = 60,
 	)
 
 	flora_spawn_list = list(
@@ -103,12 +99,6 @@
 /datum/biome/plasma_gaint/forest
 	open_turf_types = list(
 		/turf/open/floor/plating/asteroid/plasma_gaint/lit = 1
-	)
-
-	feature_spawn_chance = 0.25
-	feature_spawn_list = list(
-		/obj/structure/vein/classtwo/plasma_gaint = 30,
-		/obj/structure/vein/classthree/plasma_gaint = 60,
 	)
 
 	mob_spawn_list = list(
@@ -181,6 +171,8 @@
 /datum/biome/plasma_gaint/lava/rocky
 	flora_spawn_chance = 4
 
+///MARK:CAVE
+
 /datum/biome/cave/plasma_gaint
 	closed_turf_types = list(
 		/turf/closed/mineral/random/plasma_gaint = 1
@@ -207,8 +199,6 @@
 		/obj/structure/vein/classtwo/plasma_gaint = 30,
 		/obj/structure/vein/classthree/plasma_gaint = 60,
 	)
-
-
 
 	open_turf_types = list(
 		/turf/open/floor/plating/asteroid/plasma_gaint = 1
