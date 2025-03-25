@@ -8,7 +8,6 @@
 	icon_dead = "goliath_dead"
 	throw_message = "does nothing to the tough hide of the"
 	pre_attack_icon = "goliath_preattack"
-	faction = list("magma")
 	// mob_trophy = /obj/item/mob_trophy/goliath_tentacle
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/goliath = 2, /obj/item/stack/sheet/bone = 2, /obj/item/stack/sheet/sinew = 2, /obj/item/stack/ore/silver = 10)
 	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/goliath_hide = 2)
