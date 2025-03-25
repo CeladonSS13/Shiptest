@@ -362,9 +362,6 @@
 /obj/item/radio/headset/nanotrasen/alt,
 /obj/item/storage/backpack/ert/security,
 /obj/item/storage/belt/security/webbing,
-/obj/item/melee/baton{
-	cell = /obj/item/stock_parts/cell/high/plus
-	},
 /obj/item/melee/knife/combat,
 /obj/item/reagent_containers/spray/pepper,
 /obj/item/assembly/flash,
@@ -381,6 +378,7 @@
 /obj/item/clothing/under/rank/security/head_of_security/alt/skirt/lp,
 /obj/item/flashlight/seclite,
 /obj/item/clothing/glasses/hud/security/sunglasses,
+/obj/item/melee/baton/loaded,
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "ei" = (
@@ -1459,6 +1457,7 @@
 /obj/item/clothing/glasses/meson/engine,
 /obj/item/clothing/under/rank/engineering/engineer/nt/skirt/lp,
 /obj/item/clothing/under/rank/engineering/engineer/nt/lp,
+/obj/item/clothing/gloves/color/yellow,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/general/engineering)
 "vm" = (
@@ -2133,9 +2132,6 @@
 	},
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/storage/belt/military/assault,
-/obj/item/melee/baton{
-	cell = /obj/item/stock_parts/cell/high/plus
-	},
 /obj/item/melee/knife/combat,
 /obj/item/binoculars,
 /obj/item/assembly/flash,
@@ -2158,6 +2154,7 @@
 /obj/item/clothing/head/nanotrasen/captain/peaked,
 /obj/item/clothing/suit/hooded/wintercoat/captain,
 /obj/item/melee/classic_baton/telescopic,
+/obj/item/melee/baton/loaded,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm/captain)
 "DR" = (
@@ -2440,10 +2437,13 @@
 /area/ship/crew/dorm/captain)
 "HZ" = (
 /obj/docking_port/stationary{
+	width = 30;
+	height = 15;
+	dwidth = 15;
 	dir = 4
 	},
-/turf/open/floor/engine/hull,
-/area/ship/external)
+/turf/template_noop,
+/area/template_noop)
 "Ir" = (
 /turf/closed/wall/mineral/titanium/exterior,
 /area/ship/crew/dorm/captain)
@@ -3897,7 +3897,7 @@ xD
 SQ
 SQ
 SQ
-gH
+SQ
 vm
 vm
 SQ
@@ -4104,7 +4104,7 @@ vm
 vm
 vm
 vm
-gH
+SQ
 YU
 dc
 vA
@@ -4134,7 +4134,7 @@ fC
 As
 mW
 YU
-gH
+SQ
 vm
 vm
 vm
@@ -4398,7 +4398,7 @@ vm
 vm
 vm
 vm
-gH
+SQ
 mt
 HF
 Gj
@@ -4428,7 +4428,7 @@ lQ
 ak
 QS
 mt
-gH
+SQ
 vm
 vm
 vm
@@ -4611,7 +4611,7 @@ AQ
 SQ
 SQ
 SQ
-gH
+SQ
 vm
 vm
 SQ
@@ -4689,7 +4689,7 @@ SQ
 (32,1,1) = {"
 vm
 SQ
-HZ
+SQ
 SQ
 SQ
 vm
@@ -4725,12 +4725,12 @@ vm
 vm
 SQ
 SQ
-HZ
+SQ
 SQ
 "}
 (33,1,1) = {"
 vm
-vm
+HZ
 vm
 vm
 vm
@@ -4767,7 +4767,7 @@ vm
 vm
 vm
 vm
-vm
+HZ
 vm
 "}
 (34,1,1) = {"

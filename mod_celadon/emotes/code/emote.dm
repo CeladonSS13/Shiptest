@@ -444,7 +444,7 @@
 /datum/emote/living/laugh_evil
 	key = "laugh_evil"
 	key_third_person = "laughs_evil"
-	message = "Злорадно смеётся."
+	message = "злорадно смеётся."
 	message_mime = "тихо злорадно смеётся!"
 	emote_type = EMOTE_AUDIBLE
 	vary = TRUE
@@ -628,7 +628,7 @@
 /datum/emote/living/sniff
 	key = "sniff"
 	key_third_person = "sniffs"
-	message = "Шмыгает."
+	message = "шмыгает."
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/sniff/get_sound(mob/living/user)
@@ -1150,7 +1150,7 @@
 /datum/emote/living/carbon/human/cry
 	key = "cry"
 	key_third_person = "cries"
-	message = "Плачет."
+	message = "плачет."
 	muzzled_noises = list("слабо", "жалко", "грустно")
 	emote_type = EMOTE_AUDIBLE
 
@@ -1252,9 +1252,14 @@
 	emote_type = EMOTE_VISIBLE | EMOTE_MOUTH | EMOTE_AUDIBLE
 	age_based = TRUE
 
+/datum/emote/living/carbon/human/roar/can_run_emote(mob/user, status_check = TRUE , intentional)
+	if(!..())
+		return FALSE
+	if(!islizard(user))
+		return FALSE
+	return TRUE
+
 /datum/emote/living/carbon/human/roar/get_sound(mob/living/user)
-	if(!ishuman(user))
-		return
 	return pick(
 		'mod_celadon/_storge_sounds/sound/emotes/unathi/roar_unathi_1.ogg',
 		'mod_celadon/_storge_sounds/sound/emotes/unathi/roar_unathi_2.ogg',
@@ -1271,13 +1276,17 @@
 	volume = 50
 	muzzled_noises = list("слабо урчащий")
 
+/datum/emote/living/carbon/human/rumble/can_run_emote(mob/user, status_check = TRUE , intentional)
+	if(!..())
+		return FALSE
+	if(!islizard(user))
+		return FALSE
+	return TRUE
+
 /datum/emote/living/carbon/human/rumble/get_sound(mob/living/user)
-	if(!ishuman(user))
-		return
-	if(islizard(user))
-		return pick(
-			'mod_celadon/_storge_sounds/sound/emotes/unathi/rumble_unathi_1.ogg',
-			'mod_celadon/_storge_sounds/sound/emotes/unathi/rumble_unathi_2.ogg')
+	return pick(
+		'mod_celadon/_storge_sounds/sound/emotes/unathi/rumble_unathi_1.ogg',
+		'mod_celadon/_storge_sounds/sound/emotes/unathi/rumble_unathi_2.ogg')
 
 /datum/emote/living/carbon/human/threat
 	key = "threat"
@@ -1289,6 +1298,13 @@
 	age_based = TRUE
 	volume = 80
 	muzzled_noises = list("очень раздражённый")
+
+/datum/emote/living/carbon/human/threat/can_run_emote(mob/user, status_check = TRUE , intentional)
+	if(!..())
+		return FALSE
+	if(!islizard(user))
+		return FALSE
+	return TRUE
 
 /datum/emote/living/carbon/human/threat/get_sound(mob/living/user)
 	return pick(
@@ -1311,10 +1327,8 @@
 /datum/emote/living/carbon/human/purr/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
-
 	if (!istajara(user))
 		return FALSE
-
 	return TRUE
 
 /datum/emote/living/carbon/human/purrl
@@ -1334,10 +1348,8 @@
 /datum/emote/living/carbon/human/purrl/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
-
 	if (!istajara(user))
 		return FALSE
-
 	return TRUE
 
 /datum/emote/living/carbon/human/mrowss
@@ -1356,10 +1368,8 @@
 /datum/emote/living/carbon/human/mrowss/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
-
 	if (!istajara(user))
 		return FALSE
-
 	return TRUE
 
 /datum/emote/living/carbon/human/hiss/tajara
@@ -1385,10 +1395,8 @@
 /datum/emote/living/carbon/human/hiss/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
-
-	if(!istajara(user))
+	if(!istajara(user) && !islizard(user))
 		return FALSE
-
 	return TRUE
 
 /datum/emote/living/carbon/human/hiss/get_sound(mob/living/user)
@@ -1424,10 +1432,8 @@
 /datum/emote/living/carbon/human/whip/can_run_emote(mob/user, status_check = TRUE, intentional)
 	if(!..())
 		return FALSE
-
 	if(!can_wag(user))
 		return FALSE
-
 	return TRUE
 
 
@@ -1457,6 +1463,7 @@
 // 	cooldown = 10 SECONDS
 // 	volume = 30
 
+// Копия fox_purr
 /datum/emote/living/carbon/human/ururu
 	key = "ururu"
 	key_third_person = "ururu"
@@ -1469,6 +1476,13 @@
 	cooldown = 10 SECONDS
 	volume = 50
 	muzzled_noises = list("слабо")
+
+/datum/emote/living/carbon/human/ururu/can_run_emote(mob/user, status_check = TRUE, intentional)
+	if(!..())
+		return FALSE
+	if(!isriol(user))
+		return FALSE
+	return TRUE
 
 /datum/emote/living/carbon/human/meow
 	key = "meow"
@@ -1499,16 +1513,14 @@
 /datum/emote/living/carbon/human/tajara/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
-
 	if (!istajara(user))
 		return FALSE
-
 	return TRUE
 
 /datum/emote/living/carbon/human/spin
 	key = "spin"
 	key_third_person = "spines"
-	message = "Кружится."
+	message = "кружится."
 	emote_type = EMOTE_VISIBLE
 
 /datum/emote/spin
@@ -1524,10 +1536,8 @@
 /datum/emote/living/carbon/moan/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
-
 	if (isipc(user) || islanius(user))
 		return FALSE
-
 	return TRUE
 
 /datum/emote/living/carbon/moan/get_sound(mob/living/user)

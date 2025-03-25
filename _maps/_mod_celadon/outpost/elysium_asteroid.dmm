@@ -1129,12 +1129,11 @@
 /turf/closed/indestructible/reinforced,
 /area/outpost/engineering/atmospherics)
 "dc" = (
-/obj/singularity{
-	can_be_z_moved = 0;
+/obj/singularity/no_radiation{
+	dissipate = 0;
+	energy = 1984;
 	move_self = 0;
-	force = 9;
-	energy = 2025;
-	dissipate = 0
+	can_be_z_moved = 0
 	},
 /turf/open/space/basic,
 /area/space)
@@ -10074,12 +10073,11 @@
 /turf/open/floor/plasteel/sepia,
 /area/outpost/crew/canteen)
 "zT" = (
-/obj/singularity{
-	can_be_z_moved = 0;
+/obj/singularity/no_radiation{
+	dissipate = 0;
+	energy = 1945;
 	move_self = 0;
-	force = 9;
-	energy = 1984;
-	dissipate = 0
+	can_be_z_moved = 0
 	},
 /turf/open/space/basic,
 /area/space)
@@ -20135,9 +20133,6 @@
 	},
 /turf/open/floor/plating/rust,
 /area/outpost/hallway/central)
-"YW" = (
-/turf/open/floor/plating/asteroid/icerock/smooth,
-/area/outpost/hallway/central)
 "YX" = (
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 4
@@ -24779,7 +24774,7 @@ vV
 vV
 vV
 vV
-zT
+dc
 vV
 vV
 vV
@@ -24797,7 +24792,7 @@ vV
 vV
 vV
 vV
-zT
+dc
 vV
 vV
 vV
@@ -54615,7 +54610,7 @@ ME
 ME
 dM
 pO
-YW
+bD
 WW
 pO
 bD

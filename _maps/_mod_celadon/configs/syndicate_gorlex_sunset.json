@@ -1,0 +1,38 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "Sunset-class Warship",
+	"map_short_name": "Sunset",
+	"description": " «Sunset» — созданный корабль на основе уроков межкорпоративных войн для замены устаревших типов кораблей класса «Komodo». Он представляет собой новейший средний боевой корабль, сочетающий в себе компактность, надёжность и скорость, идеально подходящий для быстрых и маневренных операций в любой ситуации.  На борту носит группу из 5 элитных бойцов, каждый из которых является мастером в своём деле.",
+	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_gorlex_sunset.dmm",
+	"enabled" : true,
+	"limit": 1,
+	"sensor_range": 4,
+	"faction": "/datum/faction/syndicate",
+	"prefix": "BSSV",
+	"tags": [
+		"Боевой"
+	],
+	"namelists": [
+		"GORLEX",
+		"NATURAL_AGGRESSIVE"
+	],
+	"job_slots": {
+		"Squad Leader": {
+			"outfit": "/datum/outfit/job/syndicate/captain/gorlex",
+			"officer": true,
+			"slots": 1
+		},
+		"Combat Medic": {
+			"outfit": "/datum/outfit/job/syndicate/doctor/gorlex",
+			"slots": 1
+		},
+		"Combat Engineer": {
+			"outfit": "/datum/outfit/job/syndicate/engineer/gorlex",
+			"slots": 1
+		},
+		"Commando": {
+			"outfit": "/datum/outfit/job/syndicate/security/gorlex",
+			"slots": 2
+		}
+	}
+}
