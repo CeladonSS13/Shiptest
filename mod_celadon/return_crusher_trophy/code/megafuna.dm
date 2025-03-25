@@ -84,10 +84,7 @@
 	playsound(target, 'sound/creatures/brimdemon_crush.ogg', 100)
 	user.heal_ordered_damage(bonus_value * 0.4, damage_heal_order)
 
-/mob/living/simple_animal/hostile/asteroid/elite/broodmother
-	loot_drop = /obj/item/crusher_trophy/broodmother_tongue
-
-// Broodmother's loot: Broodmother Tongue
+///MARK:Broodmother Tongue
 /obj/item/crusher_trophy/broodmother_tongue
 	name = "broodmother tongue"
 	desc = "The tongue of a broodmother.  If attached a certain way, makes for a suitable crusher trophy."
@@ -103,9 +100,7 @@
 	if(rand(1, 100) <= bonus_value && target.stat != DEAD)
 		new /obj/effect/temp_visual/goliath_tentacle/broodmother/patch(get_turf(target), user)
 
-/mob/living/simple_animal/hostile/asteroid/elite/legionnaire
-	loot_drop = /obj/item/crusher_trophy/legionnaire_spine
-
+///MARK:legionnaire_spine
 /obj/item/crusher_trophy/legionnaire_spine
 	name = "legionnaire spine"
 	desc = "The spine of a legionnaire.  It almost feels like it's moving..."
@@ -217,7 +212,7 @@
 	target.apply_status_effect(/datum/status_effect/stagger, bonus_value SECONDS)
 
 /mob/living/simple_animal/hostile/asteroid
-	var/crusher_loot
+	var/crusher_loot = null
 	var/crusher_drop_mod = 25
 
 /mob/living/simple_animal/hostile/asteroid/polarbear
@@ -302,19 +297,16 @@
 		else
 			B.add_stacks(bleed_stacks_per_hit)
 
+///MARK:Crusher Loot
 
+/mob/living/simple_animal/hostile/asteroid/elite/legionnaire
+	crusher_loot = /obj/item/crusher_trophy/legionnaire_spine
 
+/mob/living/simple_animal/hostile/asteroid/elite/broodmother
+	crusher_loot = /obj/item/crusher_trophy/broodmother_tongue
 
+/mob/living/simple_animal/hostile/asteroid/elite/herald
+	crusher_loot = /obj/item/clothing/neck/cloak/herald_cloak
 
-
-
-
-
-
-
-
-
-
-
-
-
+/mob/living/simple_animal/hostile/asteroid/elite/pandora
+	crusher_loot = /obj/item/clothing/accessory/pandora_hope
