@@ -361,8 +361,8 @@ While using this makes the system rely on OnFire, it still gives options for tim
 	visible_message("<span class='boldwarning'>[src] begins to convulse violently before beginning to dissipate.</span>")
 	visible_message("<span class='boldwarning'>As [src] closes, something is forced up from down below.</span>")
 	// [CELADON-EDIT] - CELADON_BALANCE_MOBS - Меняем сундуки на обычные некрополиса
-	var/obj/structure/closet/crate/necropolis/tendril/greater/lootbox = new /obj/structure/closet/crate/necropolis/tendril/greater(loc) // CELADON-EDIT - ORIGINAL
-	// var/obj/structure/closet/crate/necropolis/tendril/lootbox = new /obj/structure/closet/crate/necropolis/tendril(loc) // CELADON-EDITITED
+	// var/obj/structure/closet/crate/necropolis/tendril/greater/lootbox = new /obj/structure/closet/crate/necropolis/tendril/greater(loc) // CELADON-EDIT - ORIGINAL
+	var/obj/structure/closet/crate/necropolis/tendril/lootbox = new /obj/structure/closet/crate/necropolis/tendril(loc)
 	// [/CELADON-EDIT]
 	// [CELADON-EDIT] - CELADON_BALANCE_MOBS
 	// if(!boosted)

@@ -48,7 +48,7 @@ ADD: `code\game\objects\items\circuitboards\machine_circuitboards.dm` : `/obj/it
 EDIT: `code\modules\cargo\packs\food.dm` : `/datum/supply_pack/food/`
 
 Ребаланс
-Лут с элиток (на данный момент убрано из кода для ребаланса)
+Лут с элиток (вместо гритер сундука, выпадает обычный сундук некрополиса)
 EDIT: `code\modules\mob\living\simple_animal\hostile\mining_mobs\elites\elite.dm`: `/obj/structure/elite_tumor/proc/onEliteLoss()` -> var/obj/structure/closet/crate/necropolis/tendril/lootbox = new /obj/structure/closet/crate/necropolis/tendril(loc)
 
 ADD: `code\modules\projectiles\ammunition\_ammunition.dm` : /obj/item/ammo_casing/attackby(obj/item/I, mob/user, params) -> добавлены звук подбора патрона в магазин с пола и задержка в 1 секунду зависящая от кликанья по патронам. Чем быстрее клики - тем быстрее загрузятся патроны. -> перемещено в `mod_celadon/items/code/ammunition.dm`
