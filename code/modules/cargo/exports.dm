@@ -173,6 +173,9 @@ then the player gets the profit from selling his own wasted time.
 		if(apply_elastic)
 			cost *= NUM_E**(-1*k_elasticity*amount)		//marginal cost modifier
 		SSblackbox.record_feedback("nested tally", "export_sold_cost", 1, list("[O.type]", "[the_cost]"))
+		// [CELADON-ADD] - CELADON_COMPONENTS
+		GLOB.sold_exports_value += the_cost
+		// [/CELADON-ADD]
 	return TRUE
 
 // Total printout for the cargo console.

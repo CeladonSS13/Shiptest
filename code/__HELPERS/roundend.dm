@@ -313,10 +313,17 @@
 			parts += "[FOURSPACES]Капитан: <B>{Данные засекречены}</B>"
 		parts += "[FOURSPACES]Баланс: <B>[Ship.ship_account.account_balance] кредитов</B>"
 		parts += "[FOURSPACES]Местоположение: <B>X[Ship.x || Ship.docked_to.x]/Y[Ship.y || Ship.docked_to.y]</B><br>"
+
+	parts += "[FOURSPACES][FOURSPACES]<B>Экономика сектора</B>"
+	if(GLOB.sold_exports_value >= 1)
+		parts += "[FOURSPACES]Экспорт товаров на: <B>[GLOB.sold_exports_value] кредитов</B>"
+	else
+		parts += "[FOURSPACES]Ничего не было экспортировано"
+
 	var/total_players = GLOB.joined_player_list.len
 	if(total_players)
-		parts+= "[FOURSPACES]Total Population: <B>[total_players]</B>"
-		parts += "[FOURSPACES]Survival Rate: <B>[PERCENT(popcount[POPCOUNT_SURVIVORS]/total_players)]%</B>"
+		parts+= "[FOURSPACES]Численность населения системы: <B>[total_players]</B>"
+		parts += "[FOURSPACES]Коэффициент выживаемости: <B>[PERCENT(popcount[POPCOUNT_SURVIVORS]/total_players)]%</B>"
 	// [/CELADON-EDIT]
 		if(SSblackbox.first_death)
 			var/list/ded = SSblackbox.first_death

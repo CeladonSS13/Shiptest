@@ -41,6 +41,7 @@ ID мода: CELADON_COMPONENTS, CELADON_COMPONENTS_EMOTE
 - EDIT -> `code\modules\mob\living\carbon\human\emote.dm`
 - EDIT -> `code\modules\mob\living\carbon\emote.dm`
 - REMOVE -> `code\__HELPERS\names.dm`
+- ADD -> `code/modules/cargo/exports.dm`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -65,6 +66,7 @@ ID мода: CELADON_COMPONENTS, CELADON_COMPONENTS_EMOTE
 - `code/__DEFINES/~mod_celadon/emote_panel.dm`
 - `code/__DEFINES/~mod_celadon/access.dm`
 - `code/__DEFINES/~mod_celadon/names.dm`
+- `code/__DEFINES/~mod_celadon/economy.dm`
 
 - `#define FACTION_SYNDICATE "Syndicate"`
 - `#define FACTION_SOLGOV "SolGov"`

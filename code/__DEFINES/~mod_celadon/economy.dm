@@ -41,3 +41,6 @@
 #define PRICES_EXPORT_GENERAL_MIN		0.6
 #define PRICES_EXPORT_GENERAL_MAX		1.1
 
+// Переменная для занесения информации о проданных товаров
+// на селинг паде, с последующим выводом в гринтекст
+GLOBAL_VAR(sold_exports_value)
