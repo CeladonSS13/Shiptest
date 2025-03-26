@@ -26,7 +26,6 @@
 	del_on_death = 1
 	stat_attack = HARD_CRIT
 	robust_searching = 1
-	faction = list("magma")
 	speed = 3
 	move_to_delay = 10
 	ranged_cooldown = 10
