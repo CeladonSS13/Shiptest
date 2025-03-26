@@ -165,7 +165,7 @@
 /datum/mission/acquire/aquarium
 	name = "Fish needed for my aquarium!"
 	weight = 60
-	value = 1800
+	value = 2800
 	duration = 60 MINUTES
 	val_mod_range = 0.2
 	container_type = /obj/item/storage/fish_case/mission
@@ -192,7 +192,7 @@
 /datum/mission/acquire/aquarium/rare
 	name = "Rare fish needed for my aquarium!"
 	weight = 1
-	value = 2800
+	value = 4600
 	val_mod_range = 0.3
 
 /datum/mission/acquire/aquarium/rare/New(...)
@@ -207,7 +207,7 @@
 /datum/mission/acquire/aquarium/sabatoge
 	name = "That bastard has had it good for too long!"
 	weight = 1
-	value = 4600
+	value = 6600
 	duration = 100 MINUTES
 
 /datum/mission/acquire/aquarium/sabatoge/New(...)
@@ -225,7 +225,7 @@
 	container_type = /obj/item/storage/fish_case/mission/big
 
 /datum/mission/acquire/fish/New(...)
-	value = (750 * num_wanted)
+	value = (1500 * num_wanted)
 
 /*
 /// MARK: Plasma
