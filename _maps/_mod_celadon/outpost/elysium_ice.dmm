@@ -6933,6 +6933,16 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/wood/ebony,
 /area/outpost/fraction/separatist)
+"ehR" = (
+/obj/machinery/conveyor/auto{
+	dir = 4;
+	id = "outpost3";
+	use_static_power = 1
+	},
+/obj/effect/turf_decal/industrial/fire/fulltile,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/plasteel/dark,
+/area/outpost/cargo)
 "ehU" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -18010,6 +18020,7 @@
 	pixel_x = 8;
 	pixel_y = 0
 	},
+/obj/item/screwdriver,
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_2)
 "kRo" = (
@@ -22864,6 +22875,7 @@
 	pixel_x = 2;
 	pixel_y = 10
 	},
+/obj/item/screwdriver,
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_1)
 "nPC" = (
@@ -31295,6 +31307,15 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/checkpoint)
+"sSO" = (
+/obj/machinery/conveyor/auto{
+	id = "outpost3";
+	use_static_power = 1
+	},
+/obj/effect/turf_decal/industrial/fire/fulltile,
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/plasteel/dark,
+/area/outpost/cargo)
 "sSP" = (
 /obj/structure/chair/sofa/blue/right,
 /turf/open/floor/carpet/royalblack,
@@ -69121,7 +69142,7 @@ pQF
 rgY
 rgY
 rfa
-hSM
+ehR
 rfa
 pDs
 tty
@@ -70243,7 +70264,7 @@ rgY
 rgY
 rgY
 rfa
-hSM
+ehR
 rfa
 pDs
 tty
@@ -71366,15 +71387,15 @@ dYw
 rgY
 rfa
 tLb
+sSO
 kyQ
 kyQ
 kyQ
+sSO
 kyQ
 kyQ
 kyQ
-kyQ
-kyQ
-kyQ
+sSO
 hSM
 rfa
 rfa
