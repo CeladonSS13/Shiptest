@@ -99,7 +99,7 @@ ID мода: CELADON_COMPONENTS, CELADON_COMPONENTS_EMOTE
 
 ### Авторы:
 
-Mirag1993, Voiko, RalseiDreemuurr
+Mirag1993, Voiko, RalseiDreemuurr, Ganza9991
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.
