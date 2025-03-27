@@ -40,7 +40,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	///If set, kepori wearing this use this instead of their clothing file
 	var/kepori_override_icon
 
-	// [CELADON-ADD] - RESPRITE
+	// [CELADON-ADD] - CELADON_RESPRITE
 	// Добавляет переменную, которая добавляет вариацию предметов для морды сарати
 	var/snout_override_icon
 	// [CELADON-ADD]

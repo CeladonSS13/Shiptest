@@ -7,7 +7,7 @@
 #define DEFAULT_BACK_PATH 'icons/mob/clothing/back.dmi'
 #define DEFAULT_SHOES_PATH 'icons/mob/clothing/feet.dmi'
 #define DEFAULT_SUIT_PATH 'icons/mob/clothing/suit.dmi'
-// [CELADON-EDIT] - RESPRITE
+// [CELADON-EDIT] - CELADON_RESPRITE
 // #define DEFAULT_EARS_PATH 'icons/mob/clothing/ears.dmi' // CELADON-EDIT - ORIGINAL
 #define DEFAULT_EARS_PATH 'mod_celadon/_storge_icons/icons/clothing/onmob_ears.dmi'
 // [/CELADON-EDIT]
