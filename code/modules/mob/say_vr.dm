@@ -96,10 +96,12 @@ SUBTLER
 		user.visible_message(message = message, self_message = message, vision_distance = 1)
 
 ///////////////// VERB CODE
-/mob/living/verb/subtler()
-	set name = "Subtler"
-	set category = "IC"
-	if(GLOB.say_disabled)	//This is here to try to identify lag problems
-		to_chat(usr, "<span class='danger'>Speech is currently admin-disabled.</span>")
-		return
-	usr.emote("subtler")
+// [CELADON-REMOVE] - CELADON_SUBTLER - Замена тут `mod_celadon/subtler/code/subtler.dm`
+// /mob/living/verb/subtler()
+// 	set name = "Subtler"
+// 	set category = "IC"
+// 	if(GLOB.say_disabled)	//This is here to try to identify lag problems
+// 		to_chat(usr, "<span class='danger'>Speech is currently admin-disabled.</span>")
+// 		return
+// 	usr.emote("subtler")
+// [/CELADON-REMOVE]

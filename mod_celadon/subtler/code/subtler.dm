@@ -46,9 +46,9 @@
 	message = "<b>[user]</b> " + "<i>[user.say_emphasis(message)]</i>"
 
 	if(emote_type == EMOTE_AUDIBLE)
-		user.audible_message_subtlerag(message=message,hearing_distance=1, ignored_mobs = GLOB.dead_mob_list)
+		user.audible_message_subtlerag(message = message, hearing_distance = 1, ignored_mobs = GLOB.dead_mob_list)
 	else
-		user.visible_message(message=message,self_message=message,vision_distance=1, ignored_mobs = GLOB.dead_mob_list)
+		user.visible_message(message = message, self_message = message, vision_distance = 1, ignored_mobs = GLOB.dead_mob_list)
 
 ///////////////// VERB CODE 2
 /mob/living/verb/subtlerag()
