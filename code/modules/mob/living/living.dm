@@ -706,7 +706,7 @@
 	cure_blind()
 	cure_husk()
 	hallucination = 0
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// heal_overall_integrity(INFINITY, null, TRUE) //heal all limb integrity, so that you can...
 	// [/CELADON-REMOVE]
 	heal_overall_damage(INFINITY, INFINITY, INFINITY, null, TRUE) //heal brute and burn dmg on both organic and robotic limbs, and update health right away.

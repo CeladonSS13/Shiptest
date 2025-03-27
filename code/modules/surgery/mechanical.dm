@@ -33,7 +33,7 @@
 		/datum/surgery_step/mechanic_close
 	)
 	lying_required = FALSE
-	// [CELADON-EDIT] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-EDIT] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// self_operable = FALSE	// CELADON-EDIT - ORIGINAL
 	self_operable = TRUE
 	// [/CELADON-EDIT]
@@ -152,7 +152,7 @@
 	if(!C.get_bodypart(user.zone_selected)) //can only start if limb is missing
 		return TRUE
 
-// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 // /datum/surgery_step/repair_structure
 // 	name = "replace structural rods"
 // 	time = 3.4 SECONDS

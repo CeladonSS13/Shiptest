@@ -61,7 +61,7 @@
 	/// Current limb bleeding, increased when the limb takes brute damage over certain thresholds, decreased through bandages and cauterization
 	var/bleeding = 0
 
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// /// Whether this limb can decay, limiting its' ability to heal
 	// var/uses_integrity = FALSE
 	// /// How many hit points worth of integrity this limb has lost. 10 integrity = 10 HP
@@ -136,7 +136,7 @@
 	var/medium_burn_msg = "blistered"
 	var/heavy_burn_msg = "peeling away"
 
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// var/light_integrity_msg = "misaligned"
 	// var/medium_integrity_msg = "twisted"
 	// var/heavy_integrity_msg = "falling apart"
@@ -300,7 +300,7 @@
 	return update_bodypart_damage_state() || .
 
 
-// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 // // Removes integrity from the limb, if it uses integrity.
 // /obj/item/bodypart/proc/take_integrity_damage(loss)
 // 	if (uses_integrity)
@@ -308,7 +308,7 @@
 // [/CELADON-REMOVE]
 
 
-// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 // // Heals integrity for the limb, if it uses integrity.
 // /obj/item/bodypart/proc/heal_integrity(amount)
 // 	if (uses_integrity)
@@ -323,7 +323,7 @@
 	if(required_status && !(bodytype & required_status)) //So we can only heal certain kinds of limbs, ie robotic vs organic.
 		return
 
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// if (uses_integrity && (burn > 0 || brute > 0))
 	// 	var/max_heal = max(0, burn_dam + brute_dam - max(0,integrity_loss-integrity_ignored))
 	// 	var/total_heal = min(brute,brute_dam)+min(burn,burn_dam) //in case we're trying to heal nonexistent dmg
@@ -406,7 +406,7 @@
 		total = max(total, stamina_dam)
 	return total
 
-// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 // ///Returns damage that can be healed on a limb.
 // /// integrity_cost: Optional, returns how much damage can be healed after losing X integrity
 // /obj/item/bodypart/proc/get_curable_damage(integrity_cost=0)

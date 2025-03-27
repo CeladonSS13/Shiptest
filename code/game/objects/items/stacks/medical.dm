@@ -12,12 +12,12 @@
 	max_integrity = 40
 	novariants = FALSE
 	item_flags = NOBLUDGEON
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// var/heals_organic = TRUE
 	// var/heals_inorganic = FALSE
 	// [/CELADON-REMOVE]
 	var/splint_fracture = FALSE
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// var/restore_integrity = 0
 	// [/CELADON-REMOVE]
 	var/failure_chance
@@ -62,7 +62,7 @@
 /obj/item/stack/medical/proc/heal(mob/living/target, mob/user)
 	return
 
-// [CELADON-EDIT] - CELADON_REVERT_CONTENT - Откат по ИПС
+// [CELADON-EDIT] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 // /obj/item/stack/medical/proc/heal_carbon(mob/living/carbon/C, mob/user, brute, burn, integrity = 0)	// CELADON-EDIT - ORIGINAL
 /obj/item/stack/medical/proc/heal_carbon(mob/living/carbon/C, mob/user, brute, burn)
 // [/CELADON-EDIT]
@@ -70,13 +70,13 @@
 	if(!affecting) //Missing limb?
 		to_chat(user, "<span class='warning'>[C] doesn't have \a [parse_zone(user.zone_selected)]!</span>")
 		return
-	// [CELADON-EDIT] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-EDIT] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// if(!heals_inorganic && !IS_ORGANIC_LIMB(affecting))	// CELADON-EDIT = ORIGINAL
 	if(!IS_ORGANIC_LIMB(affecting)) //Limb must be organic to be healed - RR
 	// [/CELADON-EDIT]
 		to_chat(user, "<span class='warning'>\The [src] won't work on a robotic limb!</span>")
 		return
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// if(!heals_organic && IS_ORGANIC_LIMB(affecting))
 	// 	to_chat(user, "<span class='warning'>\The [src] won't work on an organic limb!</span>")
 	// 	return
@@ -115,7 +115,7 @@
 			successful_heal = TRUE
 	//WS End
 
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// if (restore_integrity)
 	// 	if(affecting.integrity_loss == 0)
 	// 		to_chat(user, "<span class='warning'>[C]'s [affecting.name] has no integrity damage!</span>")
@@ -447,7 +447,7 @@
 	heal_burn = 15
 
 
-// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 // /obj/item/stack/medical/structure
 // 	name = "replacement structural rods"
 // 	desc = "Steel rods and cable with adjustable titanium fasteners, for quickly repairing structural damage to robotic limbs."
@@ -464,7 +464,7 @@
 // 	restore_integrity = TRUE
 // [/CELADON-REMOVE]
 
-// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 // /obj/item/stack/medical/structure/heal(mob/living/target, mob/user)
 // 	. = ..()
 // 	if(iscarbon(target))

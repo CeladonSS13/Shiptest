@@ -878,7 +878,7 @@
 						icon_num = 0
 					if(icon_num)
 						hud_used.healthdoll.add_overlay(mutable_appearance('icons/hud/screen_gen.dmi', "[BP.body_zone][icon_num]"))
-					// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+					// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 					// if (BP.uses_integrity) // Same, but for integrity
 					// 	var/integ_loss = max(0,BP.integrity_loss-BP.integrity_ignored)
 					// 	var/integ_icon_num

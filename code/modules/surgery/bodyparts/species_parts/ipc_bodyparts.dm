@@ -5,7 +5,7 @@
 	limb_id = "synth" //Overriden in /species/ipc/replace_body()
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// uses_integrity = TRUE
 	// [/CELADON-REMOVE]
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC | BODYTYPE_BOXHEAD
@@ -25,7 +25,7 @@
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// uses_integrity = TRUE
 	// [/CELADON-REMOVE]
 
@@ -44,7 +44,7 @@
 	limb_id = "synth"
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// uses_integrity = TRUE
 	// [/CELADON-REMOVE]
 
@@ -63,7 +63,7 @@
 	limb_id = "synth"
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// uses_integrity = TRUE
 	// [/CELADON-REMOVE]
 
@@ -82,7 +82,7 @@
 	limb_id = "synth"
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// uses_integrity = TRUE
 	// [/CELADON-REMOVE]
 
@@ -101,7 +101,7 @@
 	limb_id = "synth"
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// uses_integrity = TRUE
 	// [/CELADON-REMOVE]
 

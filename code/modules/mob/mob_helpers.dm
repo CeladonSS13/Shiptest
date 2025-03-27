@@ -451,7 +451,7 @@
 /**
  * Heal a robotic body part on a mob
  */
-// [CELADON-EDIT] - CELADON_REVERT_CONTENT - Откат по ИПС
+// [CELADON-EDIT] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 // /proc/item_heal_robotic(mob/living/carbon/human/H, mob/user, brute_heal, burn_heal, integrity_loss=0)	// CELADON-EDIT = ORIGINAL
 /proc/item_heal_robotic(mob/living/carbon/human/H, mob/user, brute_heal, burn_heal)
 // [/CELADON-EDIT]
@@ -463,7 +463,7 @@
 		else
 			dam = 0
 		if((brute_heal > 0 && affecting.brute_dam > 0) || (burn_heal > 0 && affecting.burn_dam > 0))
-			// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+			// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 			// if(affecting.uses_integrity)
 			// 	var/integrity_damage_incurred = (affecting.get_curable_damage() >= affecting.integrity_threshold) || (affecting.max_damage - affecting.integrity_loss >= affecting.integrity_threshold)
 			// 	if(affecting.get_curable_damage(integrity_damage_incurred ? integrity_loss : 0) <= 0)

@@ -544,7 +544,7 @@ GLOBAL_LIST_INIT(cable_coil_recipes, list(new/datum/stack_recipe("cable restrain
 			user.visible_message("<span class='notice'>[user] starts to fix some of the wires in [H]'s [parse_zone(affecting.body_zone)].</span>", "<span class='notice'>You start fixing some of the wires in [H == user ? "your" : "[H]'s"] [parse_zone(affecting.body_zone)].</span>")
 			if(!do_after(user, 0.5 SECONDS, H))
 				return
-		// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+		// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 		// if(item_heal_robotic(H, user, 0, 15, integrity_loss = 5))	// CELADON-EDIT = ORIGINAL
 		if(item_heal_robotic(H, user, 0, 15))
 		// [/CELADON-REMOVE]

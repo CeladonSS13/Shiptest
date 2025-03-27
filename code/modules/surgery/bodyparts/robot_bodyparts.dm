@@ -23,7 +23,7 @@
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// uses_integrity = TRUE
 	// [/CELADON-REMOVE]
 
@@ -51,7 +51,7 @@
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// uses_integrity = TRUE
 	// [/CELADON-REMOVE]
 
@@ -79,7 +79,7 @@
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// uses_integrity = TRUE
 	// [/CELADON-REMOVE]
 
@@ -107,7 +107,7 @@
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// uses_integrity = TRUE
 	// [/CELADON-REMOVE]
 
@@ -134,7 +134,7 @@
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// uses_integrity = TRUE
 	// [/CELADON-REMOVE]
 
@@ -239,7 +239,7 @@
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
-	// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// uses_integrity = TRUE
 	// [/CELADON-REMOVE]
 

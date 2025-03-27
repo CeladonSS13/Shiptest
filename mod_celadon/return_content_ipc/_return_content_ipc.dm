@@ -2,7 +2,7 @@
 /// desc - описание для модпака. Может использоваться для списка глаголов модпака в качестве описания.
 /// author - автор(ы) этого модпака.
 
-/datum/modpack/revert_content
+/datum/modpack/return_content_ipc
 	name = "Откат контента от офов"
 	desc = "Этот модпак будет служить лишь записью о том, что где в кор коде было удалено и возвращено на старый код. Этот модпак откатывает ревертит изменения офов."
 	author = "MrCat15352"
@@ -15,13 +15,13 @@
 /// (можешь использовать все три, но запуск билда увеличится на 0.1 сек, за каждый датум в модпаке)
 
 // Инициализация ДО
-/datum/modpack/revert_content/pre_initialize()
+/datum/modpack/return_content_ipc/pre_initialize()
 	. = ..()
 
 // Инициализация ВОВРЕМЯ
-/datum/modpack/revert_content/initialize()
+/datum/modpack/return_content_ipc/initialize()
 	. = ..()
 
 // Инициализация ПОСЛЕ
-/datum/modpack/revert_content/post_initialize()
+/datum/modpack/return_content_ipc/post_initialize()
 	. = ..()

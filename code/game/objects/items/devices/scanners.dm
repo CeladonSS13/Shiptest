@@ -221,7 +221,7 @@ GENE SCANNER
 	// Body part damage report
 	if(iscarbon(M) && mode == SCANNER_VERBOSE)
 		var/mob/living/carbon/C = M
-		// [CELADON-EDIT] - CELADON_REVERT_CONTENT - Откат по ИПС
+		// [CELADON-EDIT] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 		// var/list/damaged = C.get_damaged_bodyparts(1,1,ignore_integrity=TRUE)	// CELADON-EDIT = ORIGINAL
 		var/list/damaged = C.get_damaged_bodyparts(1,1)
 		// [/CELADON-EDIT]
