@@ -3,7 +3,8 @@
 	id = "syndie_murdysseus_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/murdysseus
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -12,7 +13,8 @@
 	id = "syndie_gygax_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/gygaxblack
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -21,7 +23,8 @@
 	id = "syndie_durand_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/duranddark
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -30,7 +33,8 @@
 	id = "nt_gygax_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/gygaxnt
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -39,7 +43,8 @@
 	id = "inteq_gygax_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/hermes
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -48,7 +53,8 @@
 	id = "inteq_durand_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/ares
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -57,7 +63,8 @@
 	id = "solgov_durand_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/zeus
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -69,7 +76,8 @@
 	id = "flames_red_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/flames_red
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -78,7 +86,8 @@
 	id = "earth_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/earth
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -87,7 +96,8 @@
 	id = "titan_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/titan
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -96,7 +106,8 @@
 	id = "ripley_zairjah_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/ripley_zairjah
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -105,7 +116,8 @@
 	id = "aluminizer_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/aluminizer
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -116,7 +128,8 @@
 	id = "white_gygax_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/gygaxwhite
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -125,7 +138,8 @@
 	id = "proto_gygax_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/proto
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -134,7 +148,8 @@
 	id = "alt_gygax_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/alt
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -143,7 +158,8 @@
 	id = "pobeda_gygax_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/pobeda
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -152,7 +168,8 @@
 	id = "medgax_gygax_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/medgax
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -163,7 +180,8 @@
 	id = "old_durand_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/old
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -172,7 +190,8 @@
 	id = "shire_durand_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/shire
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -181,7 +200,8 @@
 	id = "sarathi_durand_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/sarathi
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -190,7 +210,8 @@
 	id = "dollhouse_durand_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/dollhouse
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -199,6 +220,7 @@
 	id = "executor_durand_upgrade"
 	build_type = AUTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/conversion_kit/executor
-	materials = list(/datum/material/iron=10000,/datum/material/plasma=10000)
+	materials = list(/datum/material/iron = 10000,
+					/datum/material/plasma = 10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")

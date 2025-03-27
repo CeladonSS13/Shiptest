@@ -41,7 +41,6 @@
 	. = ..()
 	blueprints[1] = new /datum/design/solgov_durand_upgrade()
 
-
 /obj/item/disk/design_disk/pub_mechs
 	name = "design disk - White mecha modifications"
 	desc = "A design disk containing specifications for White-custom mecha conversions."
