@@ -74,7 +74,7 @@
 			token.icon_state = "meteor_major[rand(1, 2)]"
 		else
 			token.icon_state = "meteor_moderate1"
-	// [CELADON-REMOVE] - OVERMAP ICON - спрайты некросивые получаюца
+	// [CELADON-REMOVE] - CELADON_OVERMAP_ICON - спрайты некросивые получаюца
 	//	token.color = "#a08444"
 	//	token.light_color = "#a08444"
 	// [/CELADON-REMOVE]
@@ -175,7 +175,7 @@
 			token.icon_state = "electrical_major[rand(1, 2)]"
 		else
 			token.icon_state = "electrical_moderate1"
-	// [CELADON-REMOVE] - OVERMAP ICON - спрайты некросивые получаюца
+	// [CELADON-REMOVE] - CELADON_OVERMAP_ICON - спрайты некросивые получаюца
 	//	token.color = "#e8e85c"
 	//	token.light_color = "#e8e85c"
 	// [/CELADON-REMOVE]
@@ -207,7 +207,7 @@
 /datum/overmap/event/nebula
 	name = "nebula"
 	desc = "There's coffee in here"
-	// [CELADON-EDIT] - OVERMAP ICON - спрайты некросивые получаюца
+	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - спрайты некросивые получаюца
 	// token_icon_state = "nebula"
 	token_icon_state = "nebula1"
 	// [/CELADON-EDIT]
@@ -217,7 +217,7 @@
 /datum/overmap/event/nebula/Initialize(position, ...)
 	. = ..()
 	token.opacity = TRUE
-// [CELADON-EDIT] - OVERMAP ICON - спрайты некросивые получаюца
+// [CELADON-EDIT] - CELADON_OVERMAP_ICON - спрайты некросивые получаюца
 //	token.color = "#c053f3"
 //	token.light_color = "#c053f3"
 	token.icon_state = "nebula[rand(1, 4)]"
@@ -240,7 +240,7 @@
 		other_wormhole = _other_wormhole
 	if(!other_wormhole)
 		other_wormhole = new(null, src) //Create a new wormhole at a random location
-	// [CELADON-REMOVE] - OVERMAP ICON - спрайты некросивые получаюца
+	// [CELADON-REMOVE] - CELADON_OVERMAP_ICON - спрайты некросивые получаюца
 	//	token.color = "#6d80c7"
 	//	token.light_color = "#6d80c7"
 	// [/CELADON-REMOVE]
@@ -281,7 +281,7 @@
 			token.icon_state = "carp_major[rand(1, 2)]"
 		else
 			token.icon_state = "carp_moderate1"
-	// [CELADON-REMOVE] - OVERMAP ICON - спрайты некросивые получаюца
+	// [CELADON-REMOVE] - CELADON_OVERMAP_ICON - спрайты некросивые получаюца
 	//	token.color = "#7b1ca8"
 	//	token.light_color = "#7b1ca8"
 	// [/CELADON-REMOVE]
@@ -327,7 +327,7 @@
 /datum/overmap/event/meteor/dust/Initialize(position, ...)
 	. = ..()
 	token.icon_state = "dust[rand(1, 4)]"
-// [CELADON-REMOVE] - OVERMAP ICON - спрайты некросивые получаюца
+// [CELADON-REMOVE] - CELADON_OVERMAP_ICON - спрайты некросивые получаюца
 //	token.color = "#506469" //we should make these defines
 //	token.light_color = "#506469"
 // [/CELADON-REMOVE]
@@ -344,7 +344,7 @@
 /datum/overmap/event/anomaly/Initialize(position, ...)
 	. = ..()
 	token.icon_state = "anomaly[rand(1, 4)]"
-// [CELADON-REMOVE] - OVERMAP ICON - спрайты некросивые получаюца
+// [CELADON-REMOVE] - CELADON_OVERMAP_ICON - спрайты некросивые получаюца
 //	token.color = "#c46a24"
 //	token.light_color = "#c46a24"
 // [/CELADON-REMOVE]

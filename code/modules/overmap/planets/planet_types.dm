@@ -12,7 +12,7 @@
 	var/weight = 20
 	var/preserve_level = FALSE
 	var/landing_sound
-	// [CELADON-ADD] - OVERMAP ICON - Это вагабонд насрал
+	// [CELADON-ADD] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	var/icon = 'mod_celadon/_storge_icons/icons/overmap/overmap.dmi'
 	var/pixel_w = 0
 	var/pixel_z = 0
@@ -22,7 +22,7 @@
 	name = "lava planet"
 	desc = "A planet rife with seismic and volcanic activity. High temperatures and dangerous xenofauna render it dangerous for the unprepared."
 	planet = DYNAMIC_WORLD_LAVA
-	// [CELADON-EDIT] - OVERMAP ICON - Это вагабонд насрал
+	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	//	color = COLOR_ORANGE
 	//  icon_state = "globe_2"
 	icon_state = "volcano"
@@ -40,7 +40,7 @@
 	name = "frozen planet"
 	desc = "A frozen planet covered in thick snow, thicker ice, and dangerous predators."
 	planet = DYNAMIC_WORLD_ICE
-	// [CELADON-EDIT] - OVERMAP ICON - Это вагабонд насрал
+	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	//	color = COLOR_BLUE_LIGHT
 	// icon_state = "globe_2"
 	icon_state = "ice"
@@ -56,7 +56,7 @@
 	name = "jungle planet"
 	desc = "A densely forested world, filled with vines, animals, and underbrush. Surprisingly habitable with a machete."
 	planet = DYNAMIC_WORLD_JUNGLE
-	// [CELADON-EDIT] - OVERMAP ICON - Это вагабонд насрал
+	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	//	color = COLOR_LIME
 	// icon_state = "globe_2"
 	icon_state = "jungle"
@@ -72,7 +72,7 @@
 	name = "rock planet"
 	desc = "A rocky red world in the midst of terraforming. While some plants have taken hold, it is widely hostile to life."
 	planet = DYNAMIC_WORLD_ROCKPLANET
-	// [CELADON-EDIT] - OVERMAP ICON - Это вагабонд насрал
+	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	//	color = "#bd1313"
 	// icon_state = "globe_2"
 	icon_state = "red"
@@ -88,7 +88,7 @@
 	name = "sand planet"
 	desc = "A formerly vibrant world, turned to sand by the ravages of the ICW. The survivors of it are long mad by now."
 	planet = DYNAMIC_WORLD_SAND
-	// [CELADON-EDIT] - OVERMAP ICON - Это вагабонд насрал
+	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	//	color = COLOR_GRAY
 	// icon_state = "globe_2"
 	icon_state = "sand"
@@ -104,7 +104,7 @@
 	name = "beach planet"
 	desc = "The platonic ideal of vacation spots. Warm, comfortable temperatures, and a breathable atmosphere."
 	planet = DYNAMIC_WORLD_BEACHPLANET
-	// [CELADON-EDIT] - OVERMAP ICON - Это вагабонд насрал
+	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	// icon_state = "globe2"
 	//	color = "#c6b597"
 	icon_state = "beach"
@@ -121,7 +121,7 @@
 	desc = "Some sort of strange portal. There's no identification of what this is."
 	planet = DYNAMIC_WORLD_REEBE
 	icon_state = "wormhole"
-	// [CELADON-REMOVE] - OVERMAP ICON - Это вагабонд насрал
+	// [CELADON-REMOVE] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	//	color = COLOR_YELLOW
 	// [/CELADON-REMOVE]
 	mapgen = /datum/map_generator/single_biome/reebe
@@ -136,7 +136,7 @@
 	desc = "A field of asteroids with significant traces of minerals."
 	planet = DYNAMIC_WORLD_ASTEROID
 	icon_state = "asteroid"
-	// [CELADON-REMOVE] - OVERMAP ICON - Это вагабонд насрал
+	// [CELADON-REMOVE] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	//	color = COLOR_GRAY
 	// [/CELADON-REMOVE]
 	mapgen = /datum/map_generator/planet_generator/asteroid
@@ -163,7 +163,7 @@
 	name = "waste disposal planet"
 	desc = "A highly oxygenated world, coated in garbage, radiation, and rust."
 	planet = DYNAMIC_WORLD_WASTEPLANET
-	// [CELADON-EDIT] - OVERMAP ICON - Это вагабонд насрал
+	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	// icon_state = "globe2"
 	//	color = "#a9883e"
 	icon_state = "waste"
@@ -179,7 +179,7 @@
 	desc = "A floating ball of gas, with high gravity and even higher pressure."
 	planet = DYNAMIC_WORLD_GAS_GIANT
 	icon_state = "planet-giant"
-	// [CELADON-EDIT] - OVERMAP ICON - Это вагабонд насрал
+	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	//	color = COLOR_DARK_MODERATE_ORANGE
 	icon = 'mod_celadon/_storge_icons/icons/overmap/overmap_large.dmi'
 	pixel_w = -8
@@ -198,7 +198,7 @@
 	name = "plasma giant"
 	desc = "The backbone of interstellar travel, the mighty plasma giant allows fuel collection to take place."
 	planet = DYNAMIC_WORLD_PLASMA_GIANT
-	// [CELADON-EDIT] - OVERMAP ICON - Это вагабонд насрал
+	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	//	color = COLOR_PURPLE
 	icon = 'mod_celadon/_storge_icons/icons/overmap/overmap_large.dmi'
 	pixel_w = -8

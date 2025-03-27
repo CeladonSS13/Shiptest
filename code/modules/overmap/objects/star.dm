@@ -1,4 +1,4 @@
-// [CELADON-EDIT] - OVERMAP ICON - спрайты некросивые получаюца
+// [CELADON-EDIT] - CELADON_OVERMAP_ICON - спрайты некросивые получаюца
 // /datum/overmap/star
 //	name = "star"
 //	var/token_desc = "A star."

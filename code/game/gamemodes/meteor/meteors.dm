@@ -39,7 +39,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	for(var/i = 0; i < number; i++)
 		spawn_meteor(meteortypes)
 
-// [CELADON-ADD] - OVERMAP COLLISION - Это вагабонд насрал
+// [CELADON-ADD] - CELADON_OVERMAP_COLLISION - Это вагабонд насрал
 
 /proc/spawn_meteors_alt(number = 10, list/meteortypes, port, dirc)
 	for(var/i = 0; i < number; i++)
@@ -47,7 +47,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 
 // [/CELADON-ADD]
 
-// [CELADON-EDIT] - OVERMAP COLLISION - Это вагабонд насрал
+// [CELADON-EDIT] - CELADON_OVERMAP_COLLISION - Это вагабонд насрал
 // /proc/spawn_meteor(list/meteortypes, datum/virtual_level/vlevel, padding = MAP_EDGE_PAD)
 /proc/spawn_meteor(list/meteortypes, datum/virtual_level/vlevel, padding = MAP_EDGE_PAD, direc = "none")
 	// [/CELADON-EDIT]
@@ -56,7 +56,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	var/max_i = 10//number of tries to spawn meteor.
 	while(!isspaceturf(pickedstart))
 		var/startSide = pick(GLOB.cardinals)
-		// [CELADON-ADD] - OVERMAP COLLISION - Это вагабонд насрал
+		// [CELADON-ADD] - CELADON_OVERMAP_COLLISION - Это вагабонд насрал
 		if(direc != "none")
 			startSide = direc
 		// [/CELADON-ADD]
@@ -243,7 +243,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	..()
 	explosion(src.loc, 1, 2, 3, 4, 0)
 
-// [CELADON-ADD] - OVERMAP COLLISION - Это вагабонд насрал
+// [CELADON-ADD] - CELADON_OVERMAP_COLLISION - Это вагабонд насрал
 //Invisible
 /obj/effect/meteor/invisible
 	name = "G-Imact"

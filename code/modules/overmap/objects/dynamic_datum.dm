@@ -139,13 +139,13 @@
 		Rename(planet.name)
 		token.name = "[planet.name]"
 
-	// [CELADON-ADD] - OVERMAP ICON - Это вагабонд насрал
+	// [CELADON-ADD] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	token.icon = planet.icon
 	// [/CELADON-ADD]
 	token.icon_state = planet.icon_state
 	token.desc = planet.desc
 	token.color = planet.color
-	// [CELADON-ADD] - OVERMAP ICON - Это вагабонд насрал
+	// [CELADON-ADD] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	token.pixel_w = planet.pixel_w
 	token.pixel_z = planet.pixel_z
 	// [/CELADON-ADD]

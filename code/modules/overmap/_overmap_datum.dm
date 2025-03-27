@@ -45,7 +45,7 @@
 	/// The current docking ticket of this object, if any
 	var/datum/docking_ticket/current_docking_ticket
 
-// [CELADON-ADD] - OVERMAP STUFF - Это вагабонд насрал
+// [CELADON-ADD] - CELADON_OVERMAP_STUFF - Это вагабонд насрал
 /obj/overmap
 	var/skip_alarm = 0
 
