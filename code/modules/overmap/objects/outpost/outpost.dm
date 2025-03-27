@@ -266,7 +266,7 @@
 	signal.send_to_receivers()
 	return
 
-// [CELADON-REMOVE] - MASTER_FILES - Вырезано, так как создаёт рантаймы при удалении корабля через манипулятор
+// [CELADON-REMOVE] - CELADON_MASTER_FILES - Вырезано, так как создаёт рантаймы при удалении корабля через манипулятор
 /*
 /datum/overmap/outpost/post_undocked(datum/overmap/ship/controlled/dock_requester)
 	// just get an arbitrary hangar dock. for the message source. at this point,
