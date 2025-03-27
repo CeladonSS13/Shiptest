@@ -118,10 +118,10 @@
 	var/static/regex/riol_ru_RR = new("Р+", "g")
 	var/message = speech_args[SPEECH_MESSAGE]
 	if(message[1] != "*")
-		message = riol_rr.Replace(message, pick("rrr", "rr"))
-		message = riol_RR.Replace(message, pick("Rrr", "Rr"))
-		message = riol_ru_rr.Replace_char(message, pick("ррр", "рр"))
-		message = riol_ru_RR.Replace_char(message, pick("Ррр", "Рр"))
+		message = riol_rr.Replace(message, pick("r", "rr", "rrr"))
+		message = riol_RR.Replace(message, pick("R", "Rr", "Rrr"))
+		message = riol_ru_rr.Replace_char(message, pick("р", "рр", "ррр"))
+		message = riol_ru_RR.Replace_char(message, pick("Р", "Рр", "Ррр"))
 	speech_args[SPEECH_MESSAGE] = message
 
 /obj/item/organ/tongue/riol/Initialize(mapload)

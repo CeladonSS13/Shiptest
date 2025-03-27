@@ -170,10 +170,10 @@
 	var/static/regex/tajara_ru_RR = new("Р+", "g")
 	var/message = speech_args[SPEECH_MESSAGE]
 	if(message[1] != "*")
-		message = tajara_rr.Replace(message, pick("rrr", "rr"))
-		message = tajara_RR.Replace(message, pick("Rrr", "Rr"))
-		message = tajara_ru_rr.Replace_char(message, pick("ррр", "рр"))
-		message = tajara_ru_RR.Replace_char(message, pick("Ррр", "Рр"))
+		message = tajara_rr.Replace(message, pick("rr", "rrr", "rrrr", "rrrrr"))
+		message = tajara_RR.Replace(message, pick("Rr", "Rrr", "Rrrr", "Rrrrr"))
+		message = tajara_ru_rr.Replace_char(message, pick("рр", "ррр", "рррр", "ррррр"))
+		message = tajara_ru_RR.Replace_char(message, pick("Рр", "Ррр", "Рррр", "Ррррр"))
 	speech_args[SPEECH_MESSAGE] = message
 
 /obj/item/organ/tongue/tajara/Initialize(mapload)
