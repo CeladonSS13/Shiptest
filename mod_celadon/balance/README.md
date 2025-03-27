@@ -12,7 +12,10 @@
 <!-- Название мода. Не важно на русском или на английском. -->
 ## Balance - изменение баланса
 
-ID мода: CELADON_BALANCE, CELADON_BALANCE_MOBS, CELADON_BALANCE_CD
+ID мода: 
+	CELADON_BALANCE
+	CELADON_BALANCE_CD
+	CELADON_BALANCE_MOBS
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов. Добавлены
