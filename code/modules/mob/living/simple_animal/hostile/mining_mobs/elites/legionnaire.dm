@@ -40,7 +40,7 @@
 	mouse_opacity = MOUSE_OPACITY_ICON
 	deathsound = 'sound/magic/curse.ogg'
 	deathmessage = "'s arms reach out before it falls apart onto the floor, lifeless."
-	// [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено ради легенды
+	// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено ради легенды
 	// loot_drop = /obj/item/mob_trophy/legionnaire_spine
 	// [/CELADON-REMOVE]
 
@@ -298,7 +298,7 @@
 	transform *= 0.33
 
 // Legionnaire's loot: Legionnaire Spine
-// [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено ради легенды
+// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено ради легенды
 /*
 /obj/item/mob_trophy/legionnaire_spine
 	name = "legionnaire spine"

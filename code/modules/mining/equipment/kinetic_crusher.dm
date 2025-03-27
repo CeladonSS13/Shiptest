@@ -40,7 +40,7 @@
 	. = ..()
 	. += "<span class='notice'>Induce magnetism in an enemy by striking them with a magnetospheric wave, then hit them in melee to force a waveform collapse for <b>[force + detonation_damage]</b> damage.</span>"
 	. += "<span class='notice'>Does <b>[force + detonation_damage + backstab_bonus]</b> damage if the target is backstabbed, instead of <b>[force + detonation_damage]</b>.</span>"
-	// [CELADON-ADD] - CRUSHER_TROPHEY - Возвращаем легенду
+	// [CELADON-ADD] - RETURN_CONTENT_CRUSHER_TROPHY - Возвращаем легенду
 	for(var/t in trophies)
 		var/obj/item/crusher_trophy/T = t
 		. += "<span class='notice'>It has \a [T] attached, which causes [T.effect_desc()].</span>"
@@ -54,7 +54,7 @@
 	var/datum/status_effect/crusher_damage/C = target.has_status_effect(STATUS_EFFECT_CRUSHERDAMAGETRACKING)
 	var/target_health = target.health
 	..()
-	// [CELADON-ADD] - CRUSHER_TROPHEY - Возвращаем легенду
+	// [CELADON-ADD] - RETURN_CONTENT_CRUSHER_TROPHY - Возвращаем легенду
 	for(var/t in trophies)
 		if(!QDELETED(target))
 			var/obj/item/crusher_trophy/T = t
@@ -73,7 +73,7 @@
 		if(!isturf(proj_turf))
 			return
 		var/obj/projectile/destabilizer/D = new /obj/projectile/destabilizer(proj_turf)
-		// [CELADON-ADD] - CRUSHER_TROPHEY - Возвращаем легенду
+		// [CELADON-ADD] - RETURN_CONTENT_CRUSHER_TROPHY - Возвращаем легенду
 		for(var/t in trophies)
 			var/obj/item/crusher_trophy/T = t
 			T.on_projectile_fire(D, user)
@@ -94,7 +94,7 @@
 			return
 		var/datum/status_effect/crusher_damage/C = L.has_status_effect(STATUS_EFFECT_CRUSHERDAMAGETRACKING)
 		var/target_health = L.health
-		// [CELADON-ADD] - CRUSHER_TROPHEY - Возвращаем легенду
+		// [CELADON-ADD] - RETURN_CONTENT_CRUSHER_TROPHY - Возвращаем легенду
 		for(var/t in trophies)
 			var/obj/item/crusher_trophy/T = t
 			T.on_mark_detonation(target, user)
@@ -159,7 +159,7 @@
 /obj/projectile/destabilizer/on_hit(atom/target, blocked = FALSE)
 	if(isliving(target))
 		var/mob/living/L = target
-		// [CELADON-ADD] - CRUSHER_TROPHEY - Возвращаем легенду
+		// [CELADON-ADD] - RETURN_CONTENT_CRUSHER_TROPHY - Возвращаем легенду
 		var/had_effect = (L.has_status_effect(STATUS_EFFECT_CRUSHERMARK)) //used as a boolean
 		var/datum/status_effect/crusher_mark/CM = L.apply_status_effect(STATUS_EFFECT_CRUSHERMARK, hammer_synced)
 		if(hammer_synced)
@@ -167,7 +167,7 @@
 				var/obj/item/crusher_trophy/T = t
 				T.on_mark_application(target, CM, had_effect)
 		// [/CELADON-ADD]
-		// [CELADON-REMOVE] - CRUSHER_TROPHEY - Удалено в связи возвращения легенды
+		// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Удалено в связи возвращения легенды
 		// L.apply_status_effect(STATUS_EFFECT_CRUSHERMARK, hammer_synced)
 		// [/CELADON-REMOVE]
 	var/target_turf = get_turf(target)

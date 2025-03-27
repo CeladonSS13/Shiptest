@@ -2,7 +2,7 @@
 /// desc - описание для модпака. Может использоваться для списка глаголов модпака в качестве описания.
 /// author - автор(ы) этого модпака.
 
-/datum/modpack/return_crusher_trophy
+/datum/modpack/return_content_crusher_trophy
 	name = "Return Crusher Trophey"
 	desc = "Модпак возвращает вырезаные трофеи для крашеров."
 	author = "MrCat15352"
@@ -15,13 +15,13 @@
 /// (можешь использовать все три, но запуск билда увеличится на 0.1 сек, за каждый датум в модпаке)
 
 // Инициализация ДО
-/datum/modpack/return_crusher_trophy/pre_initialize()
+/datum/modpack/return_content_crusher_trophy/pre_initialize()
 	. = ..()
 
 // Инициализация ВОВРЕМЯ
-/datum/modpack/return_crusher_trophy/initialize()
+/datum/modpack/return_content_crusher_trophy/initialize()
 	. = ..()
 
 // Инициализация ПОСЛЕ
-/datum/modpack/return_crusher_trophy/post_initialize()
+/datum/modpack/return_content_crusher_trophy/post_initialize()
 	. = ..()

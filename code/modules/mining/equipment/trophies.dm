@@ -1,4 +1,4 @@
-// [CELADON-REMOVE] - CRUSHER_TROPHEY - Вынужденное зло ради возраждения легенды
+// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Вынужденное зло ради возраждения легенды
 /*
 //trophies
 /obj/item/mob_trophy

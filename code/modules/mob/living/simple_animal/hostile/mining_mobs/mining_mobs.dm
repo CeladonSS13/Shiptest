@@ -54,7 +54,7 @@
 
 /mob/living/simple_animal/hostile/asteroid/death(gibbed)
 	SSblackbox.record_feedback("tally", "mobs_killed_mining", 1, type)
-	// [CELADON-EDIT] - CRUSHER_TROPHEY
+	// [CELADON-EDIT] - RETURN_CONTENT_CRUSHER_TROPHY
 	// if(prob(trophy_drop_mod)) //on average, you'll need to kill 4 creatures before getting the item
 	// 	spawn_mob_trophy()		// CELADON-EDIT - ORIGINAL
 	// ..(gibbed)
@@ -66,7 +66,7 @@
 	..(gibbed)
 	// [/CELADON-ADD]
 
-// [CELADON-EDIT] - CRUSHER_TROPHEY
+// [CELADON-EDIT] - RETURN_CONTENT_CRUSHER_TROPHY
 // /mob/living/simple_animal/hostile/asteroid/proc/spawn_mob_trophy()
 // 	if(mob_trophy)
 // 		butcher_results[mob_trophy] = 1		// CELADON-EDIT - ORIGINAL

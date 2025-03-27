@@ -560,7 +560,7 @@ Difficulty: Medium
 	mouse_opacity = MOUSE_OPACITY_ICON
 	damage_coeff = list(BRUTE = 1, BURN = 1, TOX = 1, CLONE = 1, STAMINA = 0, OXY = 1)
 	loot = list()
-	// [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено и заменено в модуле
+	// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено и заменено в модуле
 	// mob_trophy = list()
 	// [/CELADON-REMOVE]
 	butcher_results = list(/obj/item/stack/ore/diamond = 5, /obj/item/stack/sheet/sinew = 5, /obj/item/stack/sheet/bone = 30)

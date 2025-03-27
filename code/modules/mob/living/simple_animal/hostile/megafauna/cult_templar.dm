@@ -24,7 +24,7 @@
 	vision_range = 10
 	damage_coeff = list(BRUTE = 1, BURN = 0.5, TOX = 0.5, CLONE = 0.5, STAMINA = 0, OXY = 0.5)
 	loot = list(/obj/item/melee/sword/claymore, /obj/item/clothing/suit/space/hardsuit/cult/enchanted)
-	// [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено и заменено в модуле
+	// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено и заменено в модуле
 	// mob_trophy = list(/obj/item/melee/sword/claymore, /obj/item/clothing/suit/space/hardsuit/cult/enchanted, /obj/item/upgradescroll)
 	// [/CELADON-REMOVE]
 	wander = FALSE

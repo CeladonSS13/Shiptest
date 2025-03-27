@@ -292,7 +292,7 @@
 	light_power = 2.5
 	light_color = LIGHT_COLOR_LAVA
 	projectiletype = /obj/projectile/temp/basilisk/magmawing
-	// [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено ради легенды
+	// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено ради легенды
 	// // mob_trophy = /obj/item/mob_trophy/magma_wing
 	// trophy_drop_mod = 75
 	// [/CELADON-REMOVE]
@@ -309,7 +309,7 @@
 	ranged_cooldown_time = 20
 	projectiletype = /obj/projectile/temp/basilisk/icewing
 	butcher_results = list(/obj/item/stack/ore/diamond = 5, /obj/item/stack/sheet/bone = 1) //No sinew; the wings are too fragile to be usable
-	// [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено ради легенды
+	// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено ради легенды
 	// //mob_trophy = /obj/item/mob_trophy/ice_wing
 	// trophy_drop_mod = 75
 	// [/CELADON-REMOVE]

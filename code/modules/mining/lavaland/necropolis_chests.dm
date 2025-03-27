@@ -755,7 +755,7 @@
 		walk(hit_mob, 0) //stops them mid pathing even if they're stunimmune
 		hit_mob.apply_status_effect(/datum/status_effect/ice_block_talisman, 5 SECONDS)
 
-// [CELADON-REMOVE] - CRUSHER_TROPHEY - Удаляем для возвращения легенды
+// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Удаляем для возвращения легенды
 /*
 /datum/status_effect/ice_block_talisman
 	id = "ice_block_talisman"

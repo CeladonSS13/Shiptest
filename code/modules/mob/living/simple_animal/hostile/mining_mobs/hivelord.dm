@@ -50,7 +50,7 @@
 	OpenFire()
 	return TRUE
 
-// [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено ради легенды
+// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено ради легенды
 // /mob/living/simple_animal/hostile/asteroid/hivelord/spawn_mob_trophy()
 	// if(mob_trophy)
 		// loot += mob_trophy //we don't butcher
@@ -122,7 +122,7 @@
 	throw_message = "bounces harmlessly off of"
 	loot = list(/obj/item/organ/regenerative_core/legion)
 	brood_type = /mob/living/simple_animal/hostile/asteroid/hivelordbrood/legion
-	// [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено ради легенды
+	// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено ради легенды
 	// mob_trophy = /obj/item/mob_trophy/legion_skull
 	// [/CELADON-REMOVE]
 	del_on_death = 1
@@ -136,7 +136,7 @@
 	move_resist = MOVE_RESIST_DEFAULT
 	pull_force = PULL_FORCE_DEFAULT
 	if(prob(15))
-		// [CELADON-EDIT] - CRUSHER_TROPHEY
+		// [CELADON-EDIT] - RETURN_CONTENT_CRUSHER_TROPHY
 		// new /obj/item/mob_trophy/legion_skull(loc) // CELADON-EDIT - ORIGINAL
 		new /obj/item/crusher_trophy/legion_skull(loc)
 		// [/CELADON-EDIT]
@@ -194,7 +194,7 @@
 	move_force = MOVE_FORCE_DEFAULT
 	move_resist = MOVE_RESIST_DEFAULT
 	pull_force = PULL_FORCE_DEFAULT
-	// [CELADON-ADD] - CRUSHER_TROPHEY
+	// [CELADON-ADD] - RETURN_CONTENT_CRUSHER_TROPHY
 	if(prob(75))
 		new /obj/item/crusher_trophy/dwarf_skull(loc)
 		visible_message("<span class='warning'>One of the [src]'s skulls looks like it survived.</span>")
@@ -423,7 +423,7 @@
 	icon_living = "snowlegion"
 	icon_aggro = "snowlegion_alive"
 	icon_dead = "snowlegion"
-	// [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено ради легенды
+	// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено ради легенды
 	// mob_trophy = /obj/item/mob_trophy/legion_skull
 	// [/CELADON-REMOVE]
 	loot = list(/obj/item/organ/regenerative_core/legion)

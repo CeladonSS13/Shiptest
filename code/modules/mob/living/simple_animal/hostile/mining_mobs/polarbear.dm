@@ -73,7 +73,7 @@
 	icon_state = "warbear"
 	icon_living = "warbear"
 	icon_dead = "warbear_dead"
-	// [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено ради легенды
+	// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено ради легенды
 	// //mob_trophy = /obj/item/mob_trophy/war_paw
 	// trophy_drop_mod = 75
 	// [/CELADON-REMOVE]

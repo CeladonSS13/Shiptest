@@ -251,7 +251,7 @@
 	speed = 4
 	//mob_trophy = /obj/item/mob_trophy/elder_tentacle
 	guaranteed_butcher_results = list()
-	// [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено ради легенды
+	// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено ради легенды
 	// trophy_drop_mod = 75
 	// [/CELADON-REMOVE]
 	wander = FALSE
