@@ -6605,23 +6605,15 @@
 	pixel_y = 32;
 	pixel_x = -32
 	},
-/obj/structure/table/reinforced,
-/obj/machinery/jukebox/boombox{
-	req_one_access_txt = "8125";
-	pixel_x = 4;
-	pixel_y = 11
-	},
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
 	layer = 2.030
 	},
-/obj/item/destTagger,
-/obj/item/cartridge/quartermaster{
-	pixel_x = -1;
-	pixel_y = 5
+/obj/item/radio/intercom/table{
+	dir = 1;
+	pixel_y = 9;
+	pixel_x = -27
 	},
-/obj/item/cartridge/quartermaster{
-	pixel_x = -3
-	},
+/obj/machinery/photocopier,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo/office)
 "dZR" = (
@@ -7604,11 +7596,6 @@
 /area/outpost/fraction/syndi/donkco_shop)
 "eCG" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/radio/intercom/table{
-	dir = 8;
-	pixel_y = -27;
-	pixel_x = -35
-	},
 /obj/effect/turf_decal/corner/opaque/solgovgold{
 	dir = 1
 	},
@@ -9805,6 +9792,19 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"fPr" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced/spawner/north,
+/obj/machinery/computer/secure_data/laptop{
+	pixel_x = 7;
+	pixel_y = -1
+	},
+/obj/machinery/computer/med_data/laptop{
+	pixel_x = -13;
+	pixel_y = -1
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/cargo/office)
 "fQz" = (
 /obj/effect/turf_decal/spline/fancy/transparent/solgovblue/corner{
 	dir = 8
@@ -9845,18 +9845,6 @@
 "fRq" = (
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced/spawner/west,
-/obj/machinery/computer/med_data/laptop{
-	pixel_x = 0;
-	pixel_y = 7
-	},
-/obj/machinery/computer/secure_data/laptop{
-	pixel_x = 19;
-	pixel_y = 7
-	},
-/obj/machinery/door/poddoor/ert{
-	dir = 4;
-	id = "ice_cargo"
-	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo/office)
 "fRz" = (
@@ -13686,6 +13674,20 @@
 /obj/structure/window/reinforced/spawner/west,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/security/armory)
+"ihR" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced/spawner/north,
+/obj/item/destTagger,
+/obj/item/paper_bin{
+	pixel_x = 12;
+	pixel_y = 1
+	},
+/obj/item/pen{
+	pixel_x = 11;
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/cargo/office)
 "ihU" = (
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/door/firedoor/border_only{
@@ -14971,12 +14973,16 @@
 /turf/open/floor/marble/black,
 /area/outpost/fraction/nanotrasen)
 "iTV" = (
-/obj/machinery/photocopier,
 /obj/effect/turf_decal/corner/opaque/solgovgold{
 	dir = 1
 	},
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
 	layer = 2.030
+	},
+/obj/structure/chair/office{
+	dir = 1;
+	pixel_x = -2;
+	pixel_y = 9
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo/office)
@@ -18102,18 +18108,10 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
-/obj/item/flashlight/lamp{
-	pixel_x = -1;
-	pixel_y = 26
-	},
 /obj/machinery/door/window/brigdoor/northright{
 	dir = 8;
 	req_one_access_txt = "8103";
 	layer = 3.2
-	},
-/obj/machinery/door/poddoor/ert{
-	dir = 4;
-	id = "ice_cargo"
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo/office)
@@ -18631,6 +18629,7 @@
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
 	layer = 2.030
 	},
+/obj/machinery/light/floor,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo/office)
 "lok" = (
@@ -23546,9 +23545,10 @@
 "ohu" = (
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced/spawner/north,
-/obj/machinery/door/poddoor/ert{
-	id = "ice_cargo";
-	layer = 3.4
+/obj/machinery/jukebox/boombox{
+	req_one_access_txt = "8125";
+	pixel_x = -5;
+	pixel_y = -4
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo/office)
@@ -24568,10 +24568,6 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
-/obj/machinery/door/poddoor/ert{
-	dir = 4;
-	id = "ice_cargo"
-	},
 /obj/structure/window/reinforced/spawner/west,
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo/office)
@@ -25231,6 +25227,17 @@
 /obj/structure/neon_spline/yellow/three_quarters,
 /obj/structure/fans/tiny,
 /turf/open/floor/plasteel/elevatorshaft,
+/area/outpost/cargo)
+"pjF" = (
+/obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/machinery/button/door{
+	id = "ice_cargo";
+	name = "BOLT CARGO";
+	req_one_access_txt = "8100";
+	pixel_y = -20;
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "pjG" = (
 /obj/effect/turf_decal/corner/opaque/black/mono,
@@ -30268,15 +30275,10 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
-/obj/item/radio/intercom/directional/north{
-	icon_state = "clip_headset";
-	pixel_x = 43;
-	pixel_y = 66
-	},
 /obj/structure/window/reinforced/spawner/west,
-/obj/machinery/door/poddoor/ert{
-	dir = 4;
-	id = "ice_cargo"
+/obj/item/flashlight/lamp{
+	pixel_x = -1;
+	pixel_y = 10
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo/office)
@@ -34432,13 +34434,6 @@
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
 	layer = 2.030
 	},
-/obj/machinery/button/door{
-	id = "ice_cargo";
-	name = "BOLT CARGO";
-	req_one_access_txt = "8100";
-	pixel_y = -20;
-	dir = 1
-	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo/office)
 "uOJ" = (
@@ -34776,7 +34771,9 @@
 /obj/effect/turf_decal/industrial/fire{
 	dir = 4
 	},
-/obj/machinery/conveyor_switch,
+/obj/machinery/conveyor_switch{
+	id = "outpost3"
+	},
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
@@ -35222,6 +35219,18 @@
 /obj/structure/statue_ships/nt_darect/nw,
 /turf/open/floor/carpet/red_gold,
 /area/outpost/crew/lounge)
+"vyf" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced/spawner/north,
+/obj/item/cartridge/quartermaster{
+	pixel_x = -3
+	},
+/obj/item/cartridge/quartermaster{
+	pixel_x = -1;
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/cargo/office)
 "vyg" = (
 /obj/structure/statue/bronze/masson_kills,
 /turf/open/floor/plating/asteroid/snow/temperatre/snow,
@@ -36151,6 +36160,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
+/obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/patterned,
 /area/outpost/security/reseption)
 "wan" = (
@@ -39875,6 +39885,28 @@
 	},
 /turf/open/floor/plasteel/kitchen_coldroom/freezerfloor/freezer_blue,
 /area/outpost/crew/canteen)
+"ycn" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/button/door{
+	id = "ice_cargo";
+	name = "BOLT CARGO";
+	req_one_access_txt = "8100";
+	pixel_y = -20;
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/outpost/cargo/office)
 "ycL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/sofa/grey/right/directional/west{
@@ -54958,8 +54990,8 @@ wJn
 ffo
 wLf
 jcK
-vpe
 iai
+vpe
 wLf
 wLf
 wLf
@@ -66145,7 +66177,7 @@ gMS
 gMS
 wUa
 fWD
-ttV
+jmF
 gFH
 mhx
 ffo
@@ -69696,8 +69728,8 @@ hOc
 cLD
 cLD
 cLD
-ohu
-mkN
+fPr
+iTV
 cgV
 mTY
 jdN
@@ -69883,14 +69915,14 @@ pXE
 gGh
 cLD
 wLp
-ohu
+ihR
 mLy
 mkN
 lny
 uOI
 aok
 vXP
-aod
+ycn
 iRE
 rfa
 rfa
@@ -70070,8 +70102,8 @@ eoJ
 hmG
 cLD
 cLD
-ohu
-iTV
+vyf
+mkN
 sMD
 fSK
 nvg
@@ -70453,7 +70485,7 @@ jpQ
 wOS
 tBV
 eqt
-ozN
+pjF
 rfa
 rgY
 rgY
