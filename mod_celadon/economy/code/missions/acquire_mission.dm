@@ -1,9 +1,6 @@
-/datum/mission/acquire
-	var/id = "mission"
-
 /datum/mission/acquire/New(...)
 	var/rand_val = 0
-	switch(id)
+	switch(type_mission)
 		if("extraction_plasma")
 			desc = "[pick("Factions", "Corporations", "Federations")] require large 	amounts of plasma sheets for [pick("base", "station", "ships")]. You are 	tasked with extracting them in large quantities in a short period of time."
 			num_wanted = rand(num_wanted - 200, num_wanted + 200)
@@ -44,21 +41,21 @@
 */
 
 /datum/mission/acquire/true_love
-	id = "true_love"
+	type_mission = "true_love"
 
 /*
 /// MARK: Anomaly
 */
 
 /datum/mission/acquire/anomaly
-	id = "anomaly_core"
+	type_mission = "anomaly_core"
 
 /*
 /// MARK: 	The Creature
 */
 
 /datum/mission/acquire/creature
-	id = "capture_creature"
+	type_mission = "capture_creature"
 
 /datum/mission/acquire/creature/ice_whelp
 	name = "Capture an ice whelp"
@@ -92,7 +89,7 @@
 */
 
 /datum/mission/acquire/landmine
-	id = "landmine"
+	type_mission = "landmine"
 
 	desc = "The Solar Federation and Vigilitas Interstellar have assigned us to offer a bounty to turn in disarmed ordnance for future ventures. We'll pay you well, but we're not responsible for any accidents."
 	value = 750
@@ -102,7 +99,7 @@
 */
 
 /datum/mission/acquire/bounty
-	id = "bounty_dogtags"
+	type_mission = "bounty_dogtags"
 	desc = "SolFed has posted several bounties for wanted members of both the Frontiersman and the Clique. Bring back their tags, we'll reward you well."
 
 /datum/mission/acquire/bounty/ramzi
@@ -139,7 +136,7 @@
 */
 
 /datum/mission/acquire/aquarium
-	id = "aquarium"
+	type_mission = "aquarium"
 	name = "Fish needed for my aquarium!"
 	weight = 6
 	value = 2800
@@ -198,11 +195,11 @@
 */
 
 /datum/mission/acquire/fish
-	id = "fish"
+	type_mission = "fish"
 	value = 500
 
 /datum/mission/acquire/fish/big
-	id = "fish_big"
+	type_mission = "fish_big"
 	name = "Fish needed for my meal"
 	weight = 3
 	duration = 80 MINUTES
@@ -214,7 +211,7 @@
 */
 
 /datum/mission/acquire/extraction_plasma
-	id = "extraction_plasma"
+	type_mission = "extraction_plasma"
 	name = "Plasma required"
 	duration = 70 MINUTES
 	value = 600
@@ -273,7 +270,7 @@
 /obj/item/storage/fish_case/mission/big/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_items = 6
+	STR.max_items = 10
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
 	STR.display_numerical_stacking = TRUE
 
@@ -292,14 +289,14 @@
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_combined_w_class = 6
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
-	STR.max_items = 3
+	STR.max_items = 4
 
 /obj/item/storage/toolbox/bounty/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_combined_w_class = 8
 	STR.max_w_class = WEIGHT_CLASS_BULKY
-	STR.max_items = 4
+	STR.max_items = 7
 
 /obj/item/storage/toolbox/bounty/hunt/ComponentInitialize()
 	. = ..()
@@ -313,7 +310,7 @@
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_combined_w_class = 6
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
-	STR.max_items = 3
+	STR.max_items = 4
 
 /obj/structure/closet/crate/extraction/plasma
 	name = "crate for plasma"
