@@ -216,15 +216,17 @@
 			Bring me an emulsijack, and make sure it's alive!"
 	objective_type = pick(/obj/item/fish/emulsijack)
 
-/datum/mission/acquire/fish
+/datum/mission/acquire/fish/big
 	name = "Fish needed for my meal"
 	weight = 3
 	duration = 40 MINUTES
-	val_mod_range = 0.2
 	objective_type = /obj/item/fish
 	container_type = /obj/item/storage/fish_case/mission/big
 
-/datum/mission/acquire/fish/New(...)
+/datum/mission/acquire/fish/big/New(...)
+	. = ..()
+	num_wanted = rand(4,6)
+	desc = "I am a grand chef in need of [num_wanted] fish for my latest dish. Any fish will do, just make sure they're not filleted!"
 	value = (1500 * num_wanted)
 
 /*
@@ -292,7 +294,6 @@
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_items = 6
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
-	STR.max_items = 3
 	STR.display_numerical_stacking = TRUE
 
 /obj/item/storage/box/anomaly
