@@ -142,7 +142,7 @@
 	value = 2800
 	duration = 60 MINUTES
 	val_mod_range = 0.2
-	container_type = /obj/item/storage/fish_case/mission
+	container_type = /obj/item/storage/fish_case/mission/big
 
 /datum/mission/acquire/aquarium/New(...)
 	. = ..()
@@ -197,6 +197,7 @@
 /datum/mission/acquire/fish
 	type_mission = "fish"
 	value = 500
+	container_type = /obj/item/storage/fish_case/mission/big
 
 /datum/mission/acquire/fish/big
 	type_mission = "fish_big"
