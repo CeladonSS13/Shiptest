@@ -218,11 +218,13 @@ Acquire: Anomaly
 	objective_type = /obj/item/fish
 	container_type = /obj/item/storage/fish_case/mission
 
-/datum/mission/acquire/fish/New(...)
-	num_wanted = rand(1,3)
-	desc = "I am a chef in need of [num_wanted] fish for my latest dish. Any fish will do, just make sure they're not filleted!"
-	value = (500*num_wanted)
-	. = ..()
+// [CELADON-REMOVE] - CELADON_ECONOMY - Убрано, ибо у анс есть свой прок
+// /datum/mission/acquire/fish/New(...)
+// 	num_wanted = rand(1,3)
+// 	desc = "I am a chef in need of [num_wanted] fish for my latest dish. Any fish will do, just make sure they're not filleted!"
+// 	value = (500*num_wanted)
+// 	. = ..()
+// [/CELADON-REMOVE]
 
 /datum/mission/acquire/fish/alive/atom_effective_count(atom/movable/target)
 	. = ..()
