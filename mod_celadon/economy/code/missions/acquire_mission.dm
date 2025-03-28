@@ -1,86 +1,64 @@
+/datum/mission/acquire
+	var/id = "mission"
+
 /datum/mission/acquire/New(...)
-	if(name == "Plasma required")
-		desc = "[pick("Factions", "Corporations", "Federations")] require large amounts of plasma sheets for [pick("base", "station", "ships")]. You are tasked with extracting them in large quantities in a short period of time."
-		num_wanted = rand(num_wanted - 150, num_wanted + 150)
-		value = (num_wanted * (value / 10))
-	else
-		num_wanted = rand(num_wanted, num_wanted + 2)
-		value = (num_wanted * (value / 10) + 500)
+	var/rand_val = 0
+	switch(id)
+		if("extraction_plasma")
+			desc = "[pick("Factions", "Corporations", "Federations")] require large 	amounts of plasma sheets for [pick("base", "station", "ships")]. You are 	tasked with extracting them in large quantities in a short period of time."
+			num_wanted = rand(num_wanted - 200, num_wanted + 200)
+			value = (num_wanted * (value / 10))
+		if("aquarium")
+			num_wanted = rand(num_wanted + 2, num_wanted + 4)
+			value = (num_wanted * (value / 5) + 500)
+		if("bounty_dogtags")
+			num_wanted = rand(num_wanted, num_wanted + 2)
+			value = (num_wanted * (value / 5) + 500)
+		if("true_love")
+			num_wanted = rand(num_wanted, num_wanted + 2)
+			value = (num_wanted * (value / 3) + 500)
+		if("anomaly_core")
+			num_wanted = rand(num_wanted, num_wanted + 3)
+			value = (num_wanted * (value / 3))
+		if("capture_creature")
+			rand_val = rand(num_wanted, num_wanted + 2)
+			value = (rand_val * (value / 3) + 300)
+		if("landmine")
+			num_wanted = rand(num_wanted, num_wanted + 3)
+			value = (num_wanted * (value / 3) + 150)
+		if("fish")
+			num_wanted = rand(num_wanted, num_wanted + 2)
+			value = (num_wanted * value + 500)
+			desc = "I am a chef in need of [num_wanted] fish for my latest dish. Any fish will do, just make sure they're not filleted!"
+		if("fish_big")
+			num_wanted = rand(num_wanted + 3, num_wanted + 9)
+			value = (num_wanted * value + 500)
+			desc = "I am a grand chef in need of [num_wanted] fish for my latest dish. Any fish will do, just make sure they're not filleted!"
+		if("mission")
+			num_wanted = rand(num_wanted, num_wanted + 2)
+			value = (num_wanted * (value / 10) + 500)
 	return ..()
 
 /*
 /// MARK: 	True Love
 */
 
-/// Данный код снизу служит для информации, того что сделано офами.
-
-// /datum/mission/acquire/true_love
-// 	name = "Diamond needed (urgent!!)"
-// 	weight = 3
-// 	value = 700
-// 	duration = 40 MINUTES
-// 	dur_mod_range = 0.2
-// 	container_type = /obj/item/storage/box/true_love
-// 	objective_type = /obj/item/stack/sheet/mineral/diamond
-// 	num_wanted = 1
-
-// /datum/mission/acquire/true_love/puce
-// 	name = "Puce crystal needed (urgent!!)"
-// 	weight = 1
-// 	objective_type = /obj/item/reagent_containers/food/snacks/grown/ash_flora/puce
-
-// /datum/mission/acquire/true_love/fireblossom
-// 	name = "Fireblossom needed (urgent!!)"
-// 	weight = 1
-// 	objective_type = /obj/item/reagent_containers/food/snacks/grown/ash_flora/fireblossom
-
-// /datum/mission/acquire/true_love/icepepper
-// 	name = "Icepepper needed (urgent!!)"
-// 	weight = 1
-// 	objective_type = /obj/item/reagent_containers/food/snacks/grown/icepepper
-
-// /datum/mission/acquire/true_love/strange_crystal
-// 	name = "Strange crystal needed (urgent!!!)"
-// 	value = 4000
-// 	weight = 1
-// 	objective_type = /obj/item/strange_crystal
+/datum/mission/acquire/true_love
+	id = "true_love"
 
 /*
 /// MARK: Anomaly
 */
 
-// /datum/mission/acquire/anomaly
-// 	name = "Anomaly core requested"
-// 	weight = 8
-// 	value = 3000
-// 	duration = 80 MINUTES
-// 	dur_mod_range = 0.2
-// 	container_type = /obj/item/storage/box/anomaly
-// 	objective_type = /obj/item/assembly/signaler/anomaly
-// 	num_wanted = 1
+/datum/mission/acquire/anomaly
+	id = "anomaly_core"
 
 /*
 /// MARK: 	The Creature
 */
 
-// /datum/mission/acquire/creature
-// 	name = "Capture a goliath"
-// 	desc = "I require a live goliath for research purposes. Trap one within the given
-// 			Lifeform Containment Unit and return it to me and you will be paid handsomely."
-// 	value = 2500
-// 	duration = 60 MINUTES
-// 	weight = 6
-// 	container_type = /obj/structure/closet/mob_capture
-// 	objective_type = /mob/living/simple_animal/hostile/asteroid/goliath
-// 	num_wanted = 1
-// 	count_stacks = FALSE
-
-// /datum/mission/acquire/creature/legion
-// 	name = "Capture a legion"
-// 	desc = "I require a live legion for research purposes. Trap one within the given
-// 			Lifeform Containment Unit and return it to me and you will be paid handsomely."
-// 	value = 2300
-// 	objective_type = /mob/living/simple_animal/hostile/asteroid/hivelord/legion
+/datum/mission/acquire/creature
+	id = "capture_creature"
 
 /datum/mission/acquire/creature/ice_whelp
 	name = "Capture an ice whelp"
@@ -114,6 +92,8 @@
 */
 
 /datum/mission/acquire/landmine
+	id = "landmine"
+
 	desc = "The Solar Federation and Vigilitas Interstellar have assigned us to offer a bounty to turn in disarmed ordnance for future ventures. We'll pay you well, but we're not responsible for any accidents."
 	value = 750
 
@@ -122,15 +102,11 @@
 */
 
 /datum/mission/acquire/bounty
+	id = "bounty_dogtags"
 	desc = "SolFed has posted several bounties for wanted members of both the Frontiersman and the Clique. Bring back their tags, we'll reward you well."
 
 /datum/mission/acquire/bounty/ramzi
 	value = 5000
-
-/datum/mission/acquire/bounty/ramzi/New(...)
-	num_wanted = rand(num_wanted, num_wanted + 2)
-	value = (num_wanted * (value / 10) + 500)
-	return ..()
 
 /*
 /// MARK: 	Salvage
@@ -159,12 +135,13 @@
 	num_wanted = 1
 
 /*
-/// MARK: Fishing
+/// MARK: Aquarium
 */
 
 /datum/mission/acquire/aquarium
+	id = "aquarium"
 	name = "Fish needed for my aquarium!"
-	weight = 60
+	weight = 6
 	value = 2800
 	duration = 60 MINUTES
 	val_mod_range = 0.2
@@ -216,28 +193,32 @@
 			Bring me an emulsijack, and make sure it's alive!"
 	objective_type = pick(/obj/item/fish/emulsijack)
 
+/*
+/// MARK: Fish
+*/
+
+/datum/mission/acquire/fish
+	id = "fish"
+	value = 500
+
 /datum/mission/acquire/fish/big
+	id = "fish_big"
 	name = "Fish needed for my meal"
 	weight = 3
-	duration = 40 MINUTES
+	duration = 80 MINUTES
 	objective_type = /obj/item/fish
 	container_type = /obj/item/storage/fish_case/mission/big
-
-/datum/mission/acquire/fish/big/New(...)
-	. = ..()
-	num_wanted = rand(4,6)
-	desc = "I am a grand chef in need of [num_wanted] fish for my latest dish. Any fish will do, just make sure they're not filleted!"
-	value = (1500 * num_wanted)
 
 /*
 /// MARK: Plasma
 */
 
 /datum/mission/acquire/extraction_plasma
+	id = "extraction_plasma"
 	name = "Plasma required"
 	duration = 70 MINUTES
 	value = 600
-	weight = 30
+	weight = 1
 	container_type = /obj/structure/closet/crate/extraction/plasma
 	objective_type = /obj/item/stack/sheet/mineral/plasma
 	num_wanted = 250
