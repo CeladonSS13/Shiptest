@@ -34,7 +34,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "aw" = (
@@ -42,7 +41,6 @@
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "az" = (
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "aP" = (
@@ -65,6 +63,12 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/asteroid/wreckeroutpost/medbay)
 "aX" = (
@@ -73,15 +77,12 @@
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "aY" = (
 /obj/structure/table/reinforced/titaniumglass,
-/obj/machinery/fax/nanotrasen,
+/obj/machinery/fax/ruin,
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "bc" = (
-/obj/machinery/door/airlock/external,
-/obj/machinery/atmospherics/pipe/layer_manifold{
-	dir = 4
-	},
 /obj/structure/fans/tiny,
+/obj/machinery/door/airlock/external,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "bv" = (
@@ -90,10 +91,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
-"bB" = (
-/obj/item/shard/plastitanium,
-/turf/open/floor/plating/rust,
-/area/overmap_encounter/planetoid/asteroid/explored)
 "bC" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
@@ -107,6 +104,17 @@
 /obj/structure/table,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
+"bQ" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/mob/living/simple_animal/hostile/human/frontier/ranged/trooper/skm/internals{
+	loot = list(/obj/effect/mob_spawn/human/corpse/frontier/ranged/trooper)
+	},
+/turf/open/floor/plasteel/heavymetal/var3,
+/area/ruin/asteroid/wreckeroutpost/maincorridore)
 "bS" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -114,7 +122,6 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/office)
 "bU" = (
@@ -139,19 +146,6 @@
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
-"ce" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/heavymetal/var4,
-/area/ruin/asteroid/wreckeroutpost/cargo)
 "ci" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -220,26 +214,19 @@
 /obj/item/clothing/mask/gas/solfed,
 /obj/item/clothing/suit/space/syndicate/black,
 /obj/item/clothing/head/helmet/space/syndicate/black/blue,
-/turf/open/floor/plasteel/tech/airless,
+/turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "db" = (
 /obj/structure/table/wood/poker,
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
-	step_y = 10
+	pixel_y = 10
 	},
 /obj/item/reagent_containers/food/drinks/bottle/vodka{
-	step_x = -10;
-	step_y = 20
+	pixel_x = -10;
+	pixel_y = 20
 	},
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
-"dd" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/ruin/asteroid/wreckeroutpost/maint)
 "di" = (
 /obj/structure/grille,
 /turf/open/floor/plating,
@@ -250,7 +237,6 @@
 "dq" = (
 /obj/structure/table/reinforced,
 /obj/item/binoculars,
-/obj/machinery/airalarm/directional/north,
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "dt" = (
@@ -284,7 +270,6 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/office)
 "dL" = (
@@ -345,15 +330,8 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/office)
-"eF" = (
-/mob/living/simple_animal/hostile/human/frontier/ranged/trooper/skm/internals{
-	loot = list(/obj/effect/mob_spawn/human/corpse/frontier/ranged/trooper)
-	},
-/turf/open/floor/plasteel/heavymetal/var3,
-/area/ruin/asteroid/wreckeroutpost/maincorridore)
 "eI" = (
 /obj/effect/turf_decal/industrial/warning{
 	layer = 2.456;
@@ -391,7 +369,6 @@
 	icon_state = "1-8"
 	},
 /obj/machinery/airalarm/directional/south,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "eV" = (
@@ -411,7 +388,6 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/ruin/asteroid/wreckeroutpost/armory)
 "fd" = (
@@ -438,7 +414,6 @@
 	icon_state = "4-8"
 	},
 /obj/structure/extinguisher_cabinet/directional/south,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "fC" = (
@@ -462,8 +437,6 @@
 /area/ruin/asteroid/wreckeroutpost/maint)
 "fO" = (
 /obj/machinery/door/airlock/external,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "fV" = (
@@ -471,10 +444,6 @@
 /obj/item/gun/ballistic/shotgun/flamingarrow,
 /turf/open/floor/plasteel/dark,
 /area/ruin/asteroid/wreckeroutpost/armory)
-"gf" = (
-/obj/item/stack/ore/salvage/scrapuranium,
-/turf/open/floor/plating/asteroid/airless,
-/area/overmap_encounter/planetoid/asteroid/explored)
 "gA" = (
 /obj/item/crowbar/red{
 	pixel_y = 12;
@@ -499,7 +468,6 @@
 	pixel_y = 2;
 	pixel_x = -9
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "gM" = (
@@ -529,7 +497,6 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/dorm)
 "gS" = (
@@ -576,7 +543,7 @@
 /obj/machinery/atmospherics/components/unary/outlet_injector/layer4{
 	dir = 8
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/overmap_encounter/planetoid/asteroid/explored)
 "hB" = (
 /obj/structure/salvageable/server,
@@ -606,18 +573,6 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
-"ig" = (
-/obj/structure/fans/tiny,
-/obj/machinery/door/poddoor{
-	id = "Cargo"
-	},
-/obj/machinery/door/firedoor/border_only,
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
-/obj/effect/turf_decal/industrial/hatch/yellow,
-/turf/open/floor/plating,
-/area/ruin/asteroid/wreckeroutpost/cargomining)
 "iq" = (
 /obj/structure/rack,
 /obj/effect/spawner/random/maintenance/two,
@@ -657,7 +612,7 @@
 /obj/machinery/door/poddoor/shuttledock{
 	dir = 4;
 	name = "Armory blast door";
-	id = "Arm"
+	id = "Arm_Wr_AS"
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
@@ -671,7 +626,6 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "iU" = (
@@ -758,10 +712,7 @@
 	pixel_y = 5
 	},
 /obj/item/stack/sheet/mineral/sandbags,
-/obj/item/stack/sheet/mineral/sandbags{
-	step_y = 2;
-	step_x = -4
-	},
+/obj/item/stack/sheet/mineral/sandbags,
 /turf/open/floor/plasteel/dark,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "kr" = (
@@ -775,7 +726,7 @@
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "kG" = (
 /obj/item/wirecutters{
-	step_x = -5
+	pixel_y = -5
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
@@ -803,8 +754,8 @@
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "kT" = (
 /obj/structure/table/wood,
-/obj/machinery/fax/frontiersmen,
 /obj/machinery/light/directional/north,
+/obj/machinery/fax/ruin,
 /turf/open/floor/carpet/red_gold,
 /area/ruin/asteroid/wreckeroutpost/office)
 "kW" = (
@@ -848,16 +799,6 @@
 "lt" = (
 /turf/open/space/basic,
 /area/overmap_encounter/planetoid/asteroid/explored)
-"lx" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 9
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/tech,
-/area/ruin/asteroid/wreckeroutpost/maincorridore)
 "lA" = (
 /obj/machinery/suit_storage_unit/inherit,
 /obj/effect/turf_decal/siding/wood{
@@ -866,13 +807,11 @@
 /obj/item/clothing/suit/space/hardsuit/security/independent/frontier,
 /obj/item/tank/internals/oxygen/red,
 /obj/item/clothing/mask/gas/solfed,
-/obj/machinery/firealarm/directional/west,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/office)
 "lI" = (
 /obj/structure/closet/crate/large,
 /obj/machinery/firealarm/directional/west,
-/obj/effect/decal/cleanable/dirt,
 /obj/item/soap/syndie,
 /obj/item/melee/baton/loaded,
 /turf/open/floor/plasteel/heavymetal/var4,
@@ -887,14 +826,11 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/item/ammo_casing/spent/pistol_steel,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "lX" = (
-/obj/effect/spawner/bunk_bed{
-	dir = 1
-	},
+/obj/effect/spawner/bunk_bed,
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/dorm)
@@ -918,7 +854,6 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/structure/catwalk/over,
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
@@ -959,21 +894,19 @@
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "mZ" = (
 /obj/machinery/airalarm/directional/east,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/asteroid/wreckeroutpost/cargo)
 "nc" = (
 /obj/structure/closet/crate/large,
-/obj/effect/decal/cleanable/dirt,
 /obj/item/stack/sheet/metal/fifty,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/asteroid/wreckeroutpost/cargo)
 "ni" = (
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
 /obj/machinery/power/terminal{
 	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
 	},
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
@@ -1029,7 +962,6 @@
 "nE" = (
 /obj/structure/closet/crate/bin,
 /obj/item/reagent_containers/food/snacks/badrecipe,
-/obj/item/cigbutt/roach,
 /obj/item/trash/boritos,
 /obj/item/trash/semki,
 /turf/open/floor/wood,
@@ -1043,7 +975,6 @@
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "nU" = (
 /obj/structure/closet/crate/bin,
-/obj/machinery/airalarm/directional/north,
 /turf/open/floor/carpet/red_gold,
 /area/ruin/asteroid/wreckeroutpost/office)
 "nW" = (
@@ -1079,7 +1010,6 @@
 	dir = 1;
 	pixel_y = 10
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/item/ammo_casing/spent/pistol_steel,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
@@ -1094,7 +1024,6 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "on" = (
@@ -1117,7 +1046,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/dorm)
 "oS" = (
@@ -1137,35 +1065,27 @@
 /area/ruin/asteroid/wreckeroutpost/maint)
 "pb" = (
 /obj/structure/closet/crate,
-/obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/suit/space/hardsuit/mining/heavy,
 /obj/item/clothing/mask/gas/explorer,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/asteroid/wreckeroutpost/cargo)
 "pe" = (
 /obj/machinery/button/door{
-	pixel_x = 9;
+	pixel_x = 28;
 	dir = 8;
-	pixel_y = -1;
-	id = "Cargo";
-	name = "Blast door control";
-	step_x = 20;
-	step_y = 6
+	id = "Cr_Wr_As";
+	name = "Blast door control"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "pg" = (
 /obj/item/screwdriver{
-	step_y = 4
+	pixel_y = 4
 	},
 /turf/open/floor/plasteel/stairs/right{
 	dir = 8
 	},
 /area/ruin/asteroid/wreckeroutpost/cargomining)
-"pm" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/ruin/asteroid/wreckeroutpost/maint)
 "pP" = (
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
@@ -1178,7 +1098,9 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "qd" = (
@@ -1194,13 +1116,7 @@
 /area/ruin/asteroid/wreckeroutpost/maint)
 "qk" = (
 /obj/machinery/door/poddoor/shutters{
-	id = "Stor";
-	dir = 4
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only{
+	id = "Stor_Wr_As";
 	dir = 4
 	},
 /turf/open/floor/plasteel/heavymetal/var2,
@@ -1276,7 +1192,6 @@
 	pixel_y = 10
 	},
 /mob/living/simple_animal/hostile/human/frontier/ranged/officer,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "qM" = (
@@ -1347,7 +1262,6 @@
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "rl" = (
 /mob/living/simple_animal/hostile/human/frontier/ranged/trooper/flame,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "rn" = (
@@ -1373,7 +1287,7 @@
 	pixel_x = 12
 	},
 /obj/item/reagent_containers/food/drinks/bottle/goldschlager{
-	step_x = -9
+	pixel_x = -9
 	},
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
@@ -1410,8 +1324,7 @@
 	pixel_x = 7
 	},
 /obj/item/melee/knife/combat{
-	step_x = -4;
-	step_y = 8
+	pixel_y = 8
 	},
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/dorm)
@@ -1422,20 +1335,16 @@
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "sg" = (
 /obj/effect/turf_decal/corner/transparent/blue/mono,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/mono/white,
 /area/ruin/asteroid/wreckeroutpost/medbay)
 "sn" = (
 /obj/structure/table/reinforced/titaniumglass,
 /obj/item/stamp/nanotrasen/vigilitas/security{
-	step_y = -2;
-	step_x = 10
+	pixel_x = 10;
+	pixel_y = -2
 	},
-/obj/item/paper/crumpled/ruins/bigderelict1/coward{
-	default_raw_text = "Похоже мою маскировку раскрыли, они ищут меня, прошу как можно скорее отправить боевое судно...";
-	name = "Paper scrap";
-	pixel_y = 4;
-	pixel_x = -2
+/obj/item/paper/crumpled/bloody{
+	default_raw_text = "МЕНЯ РАССЕКРЕТИЛИ, ЗАПРАШИВАЮ ЭВАКУА..."
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/asteroid/wreckeroutpost/maint)
@@ -1459,7 +1368,7 @@
 "sF" = (
 /obj/structure/table/wood/poker,
 /obj/item/reagent_containers/food/drinks/bottle/vodka{
-	step_x = 10
+	pixel_x = 10
 	},
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
@@ -1474,12 +1383,10 @@
 /area/ruin/asteroid/wreckeroutpost/maint)
 "tc" = (
 /obj/machinery/firealarm/directional/south,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "ti" = (
 /obj/effect/turf_decal/industrial/fire/corner,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "tk" = (
@@ -1496,10 +1403,10 @@
 "tA" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/drone{
-	step_y = 10
+	pixel_y = 10
 	},
 /obj/item/storage/toolbox/electrical{
-	step_y = 2
+	pixel_y = 2
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
@@ -1508,9 +1415,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/structure/closet/crate/freezer/blood{
-	populate = 0
-	},
+/obj/structure/closet/crate/freezer/blood,
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/mono/white,
 /area/ruin/asteroid/wreckeroutpost/medbay)
@@ -1528,7 +1433,6 @@
 	dir = 8;
 	pixel_x = 25
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "tW" = (
@@ -1544,11 +1448,6 @@
 /turf/open/floor/plating/airless,
 /area/overmap_encounter/planetoid/asteroid/explored)
 "ub" = (
-/obj/machinery/door/poddoor/shuttledock{
-	dir = 4;
-	name = "Armory blast door";
-	id = "Arm"
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
@@ -1563,6 +1462,11 @@
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/poddoor/shuttledock{
+	dir = 4;
+	name = "Armory blast door";
+	id = "Arm_Wr_AS"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/asteroid/wreckeroutpost/armory)
@@ -1629,7 +1533,6 @@
 	dir = 4
 	},
 /mob/living/simple_animal/hostile/human/frontier/ranged/neutered,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "vz" = (
@@ -1664,24 +1567,13 @@
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
-"vS" = (
-/obj/effect/turf_decal/industrial/warning{
-	layer = 2.456;
-	dir = 1
-	},
-/obj/effect/turf_decal/arrows{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/tech,
-/area/ruin/asteroid/wreckeroutpost/cargomining)
 "vU" = (
 /obj/structure/salvageable/safe_server,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "vW" = (
 /obj/effect/decal/cleanable/glass,
-/turf/open/floor/plating/rust,
+/turf/open/floor/plating/airless,
 /area/overmap_encounter/planetoid/asteroid/explored)
 "wf" = (
 /obj/structure/grille,
@@ -1691,13 +1583,11 @@
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "wl" = (
-/obj/effect/spawner/random/medical/patient_stretcher,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "wo" = (
 /obj/effect/turf_decal/industrial/fire,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "wp" = (
@@ -1711,7 +1601,6 @@
 "wu" = (
 /obj/structure/closet/crate/large,
 /obj/machinery/light/small/directional/south,
-/obj/effect/decal/cleanable/dirt,
 /obj/item/stack/sheet/mineral/titanium/fifty,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/asteroid/wreckeroutpost/cargo)
@@ -1752,16 +1641,16 @@
 "xa" = (
 /obj/structure/table,
 /obj/item/spacecash/bundle/c20{
-	step_y = -7;
-	step_x = 4
+	pixel_x = 4;
+	pixel_y = -7
 	},
 /obj/item/toy/cards/deck{
 	pixel_x = 6;
 	pixel_y = 14
 	},
 /obj/item/spacecash/bundle/c20{
-	step_x = -8;
-	step_y = 5
+	pixel_x = -8;
+	pixel_y = 5
 	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
@@ -1799,7 +1688,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "xw" = (
@@ -1814,7 +1702,6 @@
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/suit/armor/vest/frontier,
 /obj/item/clothing/head/helmet/bulletproof/x11/frontier,
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/secure_closet{
 	anchored = 1;
 	icon_state = "hos";
@@ -1826,12 +1713,12 @@
 "xD" = (
 /obj/structure/table,
 /obj/item/weldingtool{
-	step_x = 5;
-	step_y = -1
+	pixel_x = 5;
+	pixel_y = -1
 	},
 /obj/item/clothing/head/welding{
-	step_x = -4;
-	step_y = 6
+	pixel_x = -4;
+	pixel_y = 6
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
@@ -1846,7 +1733,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "xL" = (
@@ -1861,17 +1747,12 @@
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "xO" = (
-/obj/structure/mirror{
-	pixel_y = 7;
-	pixel_x = -24
-	},
 /obj/structure/sink{
 	dir = 4;
 	pixel_y = 5;
 	pixel_x = -14
 	},
 /obj/machinery/light/small/directional/south,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plastic,
 /area/ruin/asteroid/wreckeroutpost/dorm)
 "yd" = (
@@ -1922,7 +1803,6 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/light/directional/south,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/dorm)
 "yz" = (
@@ -1971,7 +1851,7 @@
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "yZ" = (
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
-	step_x = -6
+	pixel_x = -6
 	},
 /obj/structure/table/wood/poker,
 /turf/open/floor/wood,
@@ -2000,11 +1880,6 @@
 /obj/item/documents,
 /turf/open/floor/carpet/red_gold,
 /area/ruin/asteroid/wreckeroutpost/office)
-"Aj" = (
-/obj/machinery/firealarm/directional/east,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/tech,
-/area/ruin/asteroid/wreckeroutpost/cargomining)
 "Al" = (
 /turf/closed/wall/rust,
 /area/overmap_encounter/planetoid/asteroid/explored)
@@ -2018,7 +1893,6 @@
 /area/overmap_encounter/planetoid/asteroid/explored)
 "Ax" = (
 /obj/machinery/light/small/directional/north,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "AG" = (
@@ -2045,10 +1919,9 @@
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "AL" = (
 /obj/item/multitool{
-	step_x = -4;
-	step_y = -9
+	pixel_x = -4;
+	pixel_y = -9
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "AO" = (
@@ -2063,16 +1936,12 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "AP" = (
 /obj/structure/closet/emcloset/anchored,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
-"AQ" = (
-/obj/item/shard/plastitanium,
-/turf/open/floor/plating/airless,
-/area/overmap_encounter/planetoid/asteroid/explored)
 "AS" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
@@ -2113,19 +1982,18 @@
 	icon_state = "4-8"
 	},
 /obj/structure/catwalk/over,
-/obj/structure/catwalk/over,
 /obj/machinery/light/small/broken/directional/south,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "Ba" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
-	icon_state = "1-2"
+	icon_state = "4-8"
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/tech,
-/area/ruin/asteroid/wreckeroutpost/cargomining)
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating,
+/area/ruin/asteroid/wreckeroutpost/maint)
 "Bb" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/layer2{
 	dir = 8
@@ -2149,11 +2017,9 @@
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "Bn" = (
 /mob/living/simple_animal/hostile/human/frontier/ranged/trooper/neutered,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "Bu" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/item/trash/candle,
 /obj/item/ammo_casing/spent/pistol_steel,
 /turf/open/floor/plating,
@@ -2173,7 +2039,7 @@
 	pixel_y = 19
 	},
 /obj/structure/mirror{
-	step_y = 38
+	pixel_y = 36
 	},
 /obj/effect/decal/cleanable/blood/splatter{
 	icon_state = "floor1"
@@ -2193,8 +2059,8 @@
 	},
 /obj/structure/table,
 /obj/item/storage/belt{
-	step_x = -4;
-	step_y = 5
+	pixel_x = -4;
+	pixel_y = 5
 	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
@@ -2216,7 +2082,6 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/asteroid/wreckeroutpost/cargo)
 "Cl" = (
@@ -2233,7 +2098,6 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/light/directional/south,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "Cx" = (
@@ -2250,14 +2114,7 @@
 /turf/open/floor/plating/airless,
 /area/overmap_encounter/planetoid/asteroid/explored)
 "CV" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
 /obj/structure/extinguisher_cabinet/directional/south,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "Dd" = (
@@ -2270,7 +2127,7 @@
 "Di" = (
 /obj/machinery/door/airlock/grunge,
 /obj/effect/mapping_helpers/airlock/welded,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "Dk" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -2286,11 +2143,8 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/structure/cable{
-	icon_state = "0-2"
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
 	},
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
@@ -2331,22 +2185,18 @@
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "DH" = (
 /obj/machinery/button/door{
-	pixel_x = 9;
 	dir = 8;
-	pixel_y = -1;
-	id = "Stor";
+	pixel_y = 7;
+	id = "Stor_Wr_As";
 	name = "Storage control";
-	step_y = -6;
-	step_x = 20
+	pixel_x = 28
 	},
 /obj/machinery/button/door{
-	pixel_x = 9;
+	pixel_x = 28;
 	dir = 8;
-	pixel_y = -1;
-	id = "Arm";
-	name = "Armory control";
-	step_x = 20;
-	step_y = 8
+	pixel_y = -7;
+	id = "Arm_Wr_AS";
+	name = "Armory control"
 	},
 /turf/open/floor/carpet/red_gold,
 /area/ruin/asteroid/wreckeroutpost/office)
@@ -2358,7 +2208,6 @@
 "DX" = (
 /obj/structure/closet/crate,
 /obj/machinery/light/small/directional/north,
-/obj/effect/decal/cleanable/dirt,
 /obj/item/stack/sheet/mineral/sandbags,
 /obj/item/stack/sheet/mineral/sandbags,
 /obj/item/stack/sheet/mineral/sandbags,
@@ -2380,9 +2229,9 @@
 	dir = 9
 	},
 /obj/structure/table,
-/obj/item/paper/ruins/oldstation/damagereport{
-	default_raw_text = "<b>Скупщик</b><br><br><b>Прибудем в этот четверг</b> - Торговое судно Trainyard<br><b>Расценки за лист в этом месяце:</b><br><br><b>Сталь</b> - 84.7<br><br><b>Титан</b> - 72.4<br><br><b>Пласттитан</b> - 112.8<br><br><b>Металлом</b> - 65.0<br><br><b>Плазма (тверда)</b> - 95.5<br><br><b>Уран</b> - 84.2<br><br><b>Прочее:</b>Цену обговорим на месте, не забудьте срезать все серийные номера.<br><br>Если вы не успеете разобрать этот чертов металлолом на обшивке до прибытия торгового судна, лично потащите его на своих плечах для продажи, Крест через пару дней привезет еще одно судно, ПОШЕВЕЛИВАЙТЕСЬ!";
-	name = "Merchant"
+/obj/item/paper/ruins{
+	name = "Merchant";
+	default_raw_text = "<b>Скупщик</b><br><br><b>Прибудем в этот четверг</b> - Торговое судно Trainyard<br><b>Расценки за лист в этом месяце:</b><br><br><b>Сталь</b> - 84.7<br><br><b>Титан</b> - 72.4<br><br><b>Пластитан</b> - 112.8<br><br><b>Металлом (оптом)</b> - 65.0 за тонну<br><br><b>Плазма тверда</b> - 95.5<br><br><b>Уран</b> - 84.2<br><br><b>Прочее:</b> Цену обговорим на месте, не забудьте срезать все серийные номера.<br><br>Если вы не успеете разобрать этот чертов металлолом на обшивке до прибытия торгового судна, лично потащите его на своих плечах для продажи, Крест через пару дней привезет еще одно судно, ПОШЕВЕЛИВАЙТЕСЬ!"
 	},
 /turf/open/floor/plasteel/tech/airless,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
@@ -2410,13 +2259,6 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
-"EA" = (
-/obj/effect/turf_decal/industrial/fire{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/heavymetal/var4,
-/area/ruin/asteroid/wreckeroutpost/cargomining)
 "EB" = (
 /obj/structure/frame/computer{
 	dir = 1
@@ -2427,7 +2269,6 @@
 /obj/effect/turf_decal/industrial/fire{
 	dir = 10
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "EW" = (
@@ -2444,16 +2285,15 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/item/gun/ballistic/revolver/ashhand,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
 	},
 /obj/machinery/light/directional/west,
+/obj/item/gun/ballistic/revolver/ashhand,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/office)
 "Fw" = (
 /obj/machinery/light/small/directional/east,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "Fx" = (
@@ -2471,7 +2311,6 @@
 /area/ruin/asteroid/wreckeroutpost/maint)
 "FE" = (
 /obj/structure/closet/crate/large,
-/obj/effect/decal/cleanable/dirt,
 /obj/item/pipe_dispenser,
 /obj/item/holosign_creator/atmos/infinite,
 /turf/open/floor/plasteel/heavymetal/var4,
@@ -2519,7 +2358,7 @@
 /area/ruin/asteroid/wreckeroutpost/maint)
 "FY" = (
 /obj/machinery/power/smes/engineering,
-/obj/structure/cable,
+/obj/structure/cable/yellow,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "Gf" = (
@@ -2536,15 +2375,12 @@
 	dir = 4
 	},
 /obj/machinery/light/directional/south,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "GK" = (
 /obj/effect/turf_decal/corner/transparent/blue/mono,
 /obj/structure/closet/secure_closet/medical1,
-/obj/item/tank/internals/anesthetic{
-	pixel_x = 12
-	},
+/obj/item/tank/internals/anesthetic,
 /obj/item/clothing/mask/breath/medical{
 	pixel_y = -12;
 	pixel_x = 6
@@ -2560,6 +2396,7 @@
 	pixel_x = -4;
 	pixel_y = -5
 	},
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/plasteel/mono/white,
 /area/ruin/asteroid/wreckeroutpost/medbay)
 "GW" = (
@@ -2580,12 +2417,10 @@
 /obj/effect/turf_decal/corner/transparent/blue/diagonal,
 /obj/structure/closet/body_bag,
 /obj/effect/mob_spawn/human/miner,
-/obj/effect/decal/cleanable/blood/splatter/over_window{
-	icon_state = "floor4"
-	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/plasteel/white,
 /area/ruin/asteroid/wreckeroutpost/medbay)
 "GY" = (
@@ -2607,17 +2442,12 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "Hf" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/asteroid/wreckeroutpost/cargo)
-"Hi" = (
-/obj/item/stack/ore/salvage/scrapuranium,
-/turf/open/floor/plating/airless,
-/area/overmap_encounter/planetoid/asteroid/explored)
 "Hj" = (
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/plating,
@@ -2697,9 +2527,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
-"Ii" = (
-/turf/open/floor/plating/rust,
-/area/overmap_encounter/planetoid/asteroid/explored)
 "Ij" = (
 /obj/structure/closet,
 /obj/item/clothing/under/frontiersmen/fireproof,
@@ -2728,12 +2555,6 @@
 /mob/living/simple_animal/hostile/human/frontier/ranged/trooper/internals,
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/asteroid/wreckeroutpost/maint)
-"Iv" = (
-/mob/living/simple_animal/hostile/human/frontier/ranged/trooper/skm{
-	loot = list(/obj/effect/mob_spawn/human/corpse/frontier/ranged/trooper)
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ruin/asteroid/wreckeroutpost/cargomining)
 "Ix" = (
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/asteroid/wreckeroutpost/cargo)
@@ -2751,10 +2572,6 @@
 /obj/effect/decal/cleanable/garbage,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
-"IP" = (
-/obj/effect/decal/cleanable/garbage,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ruin/asteroid/wreckeroutpost/cargomining)
 "IR" = (
 /obj/item/clothing/gloves/color/fyellow{
 	name = "Insulated gloves"
@@ -2762,15 +2579,13 @@
 /obj/item/clothing/gloves/color/fyellow{
 	name = "Insulated gloves"
 	},
-/obj/item/storage/toolbox/electrical{
-	step_y = 2
-	},
+/obj/item/storage/toolbox/electrical,
 /obj/item/multitool,
 /obj/item/stack/cable_coil/red,
 /obj/item/stack/cable_coil/red,
 /obj/structure/closet/secure_closet{
-	icon_state = "eng";
-	name = "electrical supplies locker"
+	icon_state = "eng_secure";
+	name = "engineer's locker"
 	},
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
@@ -2790,7 +2605,6 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/white,
 /area/ruin/asteroid/wreckeroutpost/medbay)
 "IW" = (
@@ -2835,12 +2649,8 @@
 "Jf" = (
 /obj/structure/table,
 /obj/item/gear_pack/anglegrinder{
-	pixel_x = 3;
-	step_x = -4;
-	step_y = 8
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 4
+	pixel_x = -4;
+	pixel_y = 8
 	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
@@ -2887,29 +2697,23 @@
 /obj/machinery/power/terminal{
 	dir = 8
 	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
-"JC" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/heavymetal/var4,
-/area/ruin/asteroid/wreckeroutpost/cargomining)
 "JD" = (
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "JM" = (
 /obj/structure/table/wood,
-/obj/item/folder/blue{
-	pixel_y = 10;
-	pixel_x = -6
-	},
 /obj/item/phone{
-	step_x = 10;
-	step_y = 12
+	pixel_x = 8;
+	pixel_y = 12
 	},
 /turf/open/floor/carpet/red_gold,
 /area/ruin/asteroid/wreckeroutpost/office)
@@ -2930,8 +2734,8 @@
 /obj/structure/table/wood,
 /obj/item/ammo_box/a44roum_speedloader/empty,
 /obj/item/reagent_containers/food/drinks/bottle/applejack{
-	step_x = 12;
-	step_y = 12
+	pixel_x = 12;
+	pixel_y = 12
 	},
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
@@ -2949,12 +2753,6 @@
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "KX" = (
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
-	dir = 8
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -2964,6 +2762,8 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "KY" = (
@@ -2983,27 +2783,22 @@
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "Lh" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/directional/west,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "Ll" = (
-/obj/effect/spawner/bunk_bed{
-	dir = 1
-	},
+/obj/effect/spawner/bunk_bed,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/dorm)
 "Lp" = (
 /obj/structure/chair/sofa/grey/right/directional/west,
 /mob/living/simple_animal/hostile/human/frontier/ranged/trooper/internals,
-/obj/machinery/airalarm/directional/east,
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "Lz" = (
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "LD" = (
@@ -3082,13 +2877,12 @@
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "MA" = (
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
 	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "ME" = (
@@ -3105,6 +2899,12 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
+	},
 /turf/open/floor/plasteel/white,
 /area/ruin/asteroid/wreckeroutpost/medbay)
 "MZ" = (
@@ -3118,10 +2918,9 @@
 	pixel_x = 13
 	},
 /obj/item/storage/fancy/cigarettes/cigpack_robustgold{
-	step_y = 10;
-	step_x = -8
+	pixel_x = -8;
+	pixel_y = 10
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "No" = (
@@ -3129,6 +2928,7 @@
 	dir = 8;
 	name = "Aft Hallway"
 	},
+/obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "NC" = (
@@ -3139,10 +2939,6 @@
 /obj/structure/closet/firecloset/full,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
-"NF" = (
-/obj/machinery/firealarm/directional/east,
-/turf/open/floor/plasteel/tech,
-/area/ruin/asteroid/wreckeroutpost/maincorridore)
 "NJ" = (
 /obj/item/reagent_containers/food/snacks/meat/slab,
 /obj/item/reagent_containers/food/snacks/meat/slab,
@@ -3167,11 +2963,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
-"NS" = (
-/obj/item/cigbutt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/heavymetal/var3,
-/area/ruin/asteroid/wreckeroutpost/maincorridore)
 "NY" = (
 /obj/structure/closet/wall{
 	dir = 4;
@@ -3190,31 +2981,27 @@
 	pixel_y = 6
 	},
 /mob/living/simple_animal/hostile/human/frontier/ranged/trooper/neutered,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plastic,
 /area/ruin/asteroid/wreckeroutpost/dorm)
 "Ob" = (
 /obj/effect/turf_decal/corner/transparent/blue/diagonal,
 /obj/item/organ/lungs/slime{
 	pixel_y = -4;
-	pixel_x = -9
+	pixel_x = 9
 	},
 /obj/structure/closet/crate/freezer,
 /obj/item/organ/liver{
-	step_x = 4;
-	step_y = 2
+	pixel_y = 4;
+	pixel_z = 2
 	},
 /obj/item/organ/heart/cybernetic,
 /obj/item/organ/eyes/lizard,
 /obj/item/organ/ears/cat{
-	step_x = 9;
-	step_y = -5
+	pixel_x = 9;
+	pixel_y = -5
 	},
 /obj/effect/decal/cleanable/blood/old,
-/obj/item/organ/moth_wings{
-	step_y = 5;
-	step_x = -4
-	},
+/obj/item/organ/moth_wings,
 /turf/open/floor/plasteel/white,
 /area/ruin/asteroid/wreckeroutpost/medbay)
 "Of" = (
@@ -3262,15 +3049,11 @@
 /turf/open/floor/carpet/red_gold,
 /area/ruin/asteroid/wreckeroutpost/office)
 "OO" = (
-/obj/machinery/door/poddoor{
-	id = "Cargo"
-	},
 /obj/structure/fans/tiny,
-/obj/machinery/door/firedoor/border_only,
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
 /obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/machinery/door/poddoor{
+	id = "Cr_Wr_As"
+	},
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "OV" = (
@@ -3281,17 +3064,13 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "Pr" = (
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/on/layer2,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "Px" = (
 /obj/item/cigbutt,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "PB" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/item/ammo_casing/spent/slug/buck,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
@@ -3300,14 +3079,6 @@
 /obj/item/clothing/head/helmet/bulletproof/x11/frontier{
 	pixel_x = -6;
 	pixel_y = 4
-	},
-/obj/item/clothing/head/helmet/bulletproof/x11/frontier{
-	pixel_x = -6;
-	pixel_y = 4
-	},
-/obj/item/clothing/suit/armor/vest/frontier{
-	pixel_y = -6;
-	pixel_x = 6
 	},
 /obj/item/clothing/suit/armor/vest/frontier{
 	pixel_y = -6;
@@ -3337,15 +3108,6 @@
 	},
 /turf/open/floor/plasteel/mono/white,
 /area/ruin/asteroid/wreckeroutpost/medbay)
-"PZ" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/catwalk/over,
-/obj/structure/catwalk/over,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/turf/open/floor/plating,
-/area/ruin/asteroid/wreckeroutpost/maint)
 "Qc" = (
 /obj/structure/frame/machine,
 /turf/open/floor/plating/airless,
@@ -3372,7 +3134,6 @@
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "Qp" = (
 /obj/machinery/airalarm/directional/north,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/ruin/asteroid/wreckeroutpost/armory)
 "Qv" = (
@@ -3386,17 +3147,14 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/office)
 "QA" = (
 /obj/structure/salvageable/destructive_analyzer,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "QE" = (
 /obj/structure/closet/crate/large,
-/obj/effect/decal/cleanable/dirt,
 /obj/item/stack/sheet/mineral/plastitanium/fifty,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/asteroid/wreckeroutpost/cargo)
@@ -3437,13 +3195,8 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/office)
-"Re" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/tech,
-/area/ruin/asteroid/wreckeroutpost/cargomining)
 "Ri" = (
 /obj/structure/closet/crate/secure/loot,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -3490,26 +3243,11 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
-"RE" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/tech,
-/area/ruin/asteroid/wreckeroutpost/cargomining)
-"RG" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/heavymetal/var4,
-/area/ruin/asteroid/wreckeroutpost/cargo)
 "RH" = (
-/obj/structure/closet/crate,
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/item/stack/ore/salvage/scrapgold/five,
-/obj/item/stack/ore/salvage/scrapmetal/ten,
-/obj/item/stack/ore/salvage/scrapplasma,
-/obj/item/stack/ore/salvage/scrapplasma,
-/obj/item/stack/ore/salvage/scrapuranium/five,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/asteroid/wreckeroutpost/cargo)
 "RN" = (
@@ -3542,9 +3280,8 @@
 "Si" = (
 /obj/structure/table/wood,
 /obj/item/lighter{
-	step_x = 12
+	pixel_x = 12
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "Ss" = (
@@ -3596,8 +3333,8 @@
 	dir = 4
 	},
 /obj/item/pen/red{
-	step_x = 5;
-	step_y = 8
+	pixel_x = 5;
+	pixel_y = 8
 	},
 /obj/effect/decal/cleanable/blood/splatter{
 	icon_state = "floor1"
@@ -3624,7 +3361,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/office)
 "Ta" = (
@@ -3657,7 +3393,12 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
 /turf/open/floor/plasteel/white,
 /area/ruin/asteroid/wreckeroutpost/medbay)
 "Tx" = (
@@ -3672,15 +3413,8 @@
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "TJ" = (
-/mob/living/simple_animal/hostile/human/frontier/ranged/trooper/skm{
-	loot = list(/obj/effect/mob_spawn/human/corpse/frontier/ranged/trooper)
-	},
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/plasteel/heavymetal/var3,
-/area/ruin/asteroid/wreckeroutpost/maincorridore)
-"TK" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "TL" = (
 /obj/structure/ore_box,
@@ -3691,7 +3425,6 @@
 	dir = 9
 	},
 /obj/item/kirbyplants/random,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/office)
 "Uh" = (
@@ -3765,7 +3498,6 @@
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "UP" = (
 /obj/structure/closet/crate/large,
-/obj/effect/decal/cleanable/dirt,
 /obj/item/stack/sheet/glass/fifty,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/asteroid/wreckeroutpost/cargo)
@@ -3781,7 +3513,6 @@
 /area/ruin/asteroid/wreckeroutpost/maint)
 "Va" = (
 /obj/machinery/light/directional/east,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "Vs" = (
@@ -3809,7 +3540,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/asteroid/wreckeroutpost/cargo)
 "VH" = (
@@ -3819,17 +3549,6 @@
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
-"VO" = (
-/obj/item/wallframe/airalarm{
-	pixel_y = -10;
-	pixel_x = -4
-	},
-/obj/item/wallframe/apc{
-	pixel_y = 4;
-	pixel_x = 2
-	},
-/turf/open/floor/plasteel/dark/airless,
-/area/overmap_encounter/planetoid/asteroid/explored)
 "VV" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -3861,19 +3580,6 @@
 "Wq" = (
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
-"Wr" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/ruin/asteroid/wreckeroutpost/maincorridore)
 "Wv" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -3884,7 +3590,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/ruin/asteroid/wreckeroutpost/armory)
 "Ww" = (
@@ -3947,13 +3652,15 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "WU" = (
 /obj/effect/turf_decal/industrial/caution{
 	dir = 4;
 	pixel_x = -4
+	},
+/mob/living/simple_animal/hostile/human/frontier/ranged/trooper/skm/internals{
+	loot = list(/obj/effect/mob_spawn/human/corpse/frontier/ranged/trooper)
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
@@ -3972,17 +3679,8 @@
 	dir = 8
 	},
 /obj/machinery/airalarm/directional/west,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/office)
-"Xz" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/catwalk/over,
-/obj/structure/catwalk/over,
-/turf/open/floor/plating,
-/area/ruin/asteroid/wreckeroutpost/maint)
 "XH" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -3996,10 +3694,6 @@
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
-"XL" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/heavymetal/var3,
-/area/ruin/asteroid/wreckeroutpost/maincorridore)
 "XQ" = (
 /obj/structure/salvageable/autolathe,
 /turf/open/floor/plating,
@@ -4027,7 +3721,7 @@
 /obj/structure/frame/machine{
 	anchored = 1
 	},
-/turf/open/floor/plating/rust,
+/turf/open/floor/plating/airless,
 /area/overmap_encounter/planetoid/asteroid/explored)
 "XX" = (
 /turf/closed/mineral/random,
@@ -4065,7 +3759,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "Yo" = (
@@ -4114,7 +3807,6 @@
 /area/ruin/asteroid/wreckeroutpost/dorm)
 "Yy" = (
 /obj/machinery/light/directional/east,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "YC" = (
@@ -4149,16 +3841,15 @@
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/office)
 "YN" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
-	icon_state = "4-8"
+	icon_state = "1-2"
 	},
-/obj/effect/decal/cleanable/dirt,
+/obj/machinery/firealarm/directional/west,
+/mob/living/simple_animal/hostile/human/frontier/ranged/trooper/skm{
+	loot = list(/obj/effect/mob_spawn/human/corpse/frontier/ranged/trooper)
+	},
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "YO" = (
@@ -4167,7 +3858,6 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/dorm)
 "Zb" = (
@@ -4176,10 +3866,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
-"Zg" = (
-/obj/machinery/firealarm/directional/north,
-/turf/open/floor/plasteel/heavymetal/var3,
-/area/ruin/asteroid/wreckeroutpost/maincorridore)
 "Zk" = (
 /obj/effect/decal/cleanable/garbage,
 /turf/open/floor/plating,
@@ -4192,7 +3878,6 @@
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/office)
 "Zr" = (
@@ -4207,7 +3892,6 @@
 /obj/machinery/microwave{
 	pixel_y = 6
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "Zz" = (
@@ -4222,16 +3906,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
-"ZB" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/tech,
-/area/ruin/asteroid/wreckeroutpost/maincorridore)
 "ZC" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -4245,7 +3919,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/asteroid/wreckeroutpost/office)
 "ZL" = (
@@ -4264,7 +3937,7 @@
 "ZP" = (
 /obj/structure/table,
 /obj/machinery/jukebox/boombox{
-	step_y = 6
+	pixel_y = 6
 	},
 /obj/item/reagent_containers/food/drinks/beer{
 	pixel_x = -5;
@@ -4612,7 +4285,7 @@ lt
 lt
 Cl
 Hx
-Ii
+sI
 Cl
 lt
 lt
@@ -4749,7 +4422,7 @@ lt
 lt
 dB
 sI
-Ii
+sI
 mv
 sI
 vW
@@ -4819,7 +4492,7 @@ lt
 lt
 Cl
 dB
-Ii
+sI
 dB
 dB
 dB
@@ -5034,7 +4707,7 @@ Hx
 Hx
 mv
 ap
-VO
+mv
 dB
 Cl
 lt
@@ -5238,7 +4911,7 @@ lt
 lt
 lt
 Hx
-Ii
+sI
 Tt
 sI
 lt
@@ -5308,8 +4981,8 @@ lt
 lt
 lt
 kr
-Ii
-Ii
+sI
+sI
 sI
 jE
 XX
@@ -5378,8 +5051,8 @@ lt
 lt
 lt
 kr
-Ii
-Ii
+sI
+sI
 sI
 XX
 XX
@@ -5502,7 +5175,7 @@ Mf
 xD
 Wq
 aP
-EA
+Yr
 xm
 IE
 yK
@@ -5572,14 +5245,14 @@ Mf
 HA
 Wq
 tu
-JC
-JC
+IE
+IE
 IE
 IE
 IE
 wo
 Wq
-ig
+OO
 jE
 jE
 jE
@@ -5643,13 +5316,13 @@ Wq
 Wq
 tu
 IE
-JC
-JC
-JC
+IE
+IE
+IE
 IE
 wo
 Wq
-ig
+OO
 jE
 jE
 jE
@@ -5719,7 +5392,7 @@ ti
 cK
 Te
 re
-ig
+OO
 jE
 jE
 jE
@@ -5782,14 +5455,14 @@ Mf
 yE
 Wq
 Wq
-Iv
+Wq
 Pj
 WU
 Wq
 kG
 Wq
 Wq
-ig
+OO
 jE
 jE
 jE
@@ -5920,13 +5593,13 @@ XX
 XX
 Mf
 kt
-Re
+do
 fe
 Or
 iV
 rn
 do
-vS
+eI
 AL
 nF
 Mf
@@ -5990,14 +5663,14 @@ XX
 XX
 Mf
 wp
-Aj
+do
 tV
 Px
 qz
 Ql
 pe
 eI
-Re
+do
 Gw
 Mf
 XX
@@ -6042,7 +5715,7 @@ lt
 lt
 lt
 Hx
-Ii
+sI
 Hx
 lt
 lt
@@ -6064,7 +5737,7 @@ Mf
 Mf
 bC
 cC
-IP
+Mf
 cq
 qk
 qk
@@ -6112,7 +5785,7 @@ lt
 lt
 lt
 lt
-Ii
+sI
 Hx
 lt
 lt
@@ -6120,7 +5793,7 @@ lt
 lt
 lt
 jE
-gf
+jE
 XX
 XX
 XX
@@ -6132,13 +5805,13 @@ fC
 hl
 UN
 Jf
-Re
+do
 xu
 do
 cq
 lP
 Ix
-RG
+Ix
 lI
 Oy
 jK
@@ -6201,7 +5874,7 @@ Mf
 Eo
 do
 eL
-Re
+do
 Px
 ZL
 rX
@@ -6269,9 +5942,9 @@ az
 cM
 Mf
 Ij
-RE
+Or
 WK
-Ba
+ea
 ea
 ZP
 xa
@@ -6341,15 +6014,15 @@ Mf
 Zr
 Ar
 rk
-Re
+do
 Yy
 Lp
 Qj
 cq
 nc
 UM
-ce
-RG
+wC
+Ix
 QE
 jK
 IV
@@ -6357,8 +6030,8 @@ MT
 GX
 jK
 nu
-pm
-pm
+ta
+ta
 di
 qM
 XX
@@ -6481,7 +6154,7 @@ oA
 dL
 EW
 XS
-XL
+EW
 EW
 TJ
 cm
@@ -6555,7 +6228,7 @@ AG
 DF
 ro
 it
-Qe
+YN
 Qe
 Qe
 AX
@@ -6614,7 +6287,7 @@ jE
 jE
 sW
 pR
-NF
+az
 CV
 qM
 qM
@@ -6635,7 +6308,7 @@ EW
 EW
 HK
 rC
-NS
+KF
 XS
 qM
 mj
@@ -6685,7 +6358,7 @@ jE
 sW
 sW
 sW
-ZB
+az
 qM
 Oh
 XH
@@ -6705,15 +6378,15 @@ sW
 HW
 nW
 sW
-XL
-YN
+EW
+XS
 qM
 FR
 fK
-pm
-pm
+ta
+ta
 qh
-pm
+ta
 ln
 qM
 XX
@@ -6755,9 +6428,9 @@ sI
 bc
 Pr
 fO
-lx
+az
 qM
-pm
+ta
 XH
 OV
 hW
@@ -6772,18 +6445,18 @@ Lh
 Si
 mD
 rd
-TK
-Wr
+fF
+VV
 Sa
 EW
-YN
+XS
 rj
 rj
 rj
 rj
 rj
 rj
-pm
+ta
 ln
 qM
 XX
@@ -6834,7 +6507,7 @@ fV
 ab
 yJ
 OV
-qm
+ej
 gM
 sW
 qx
@@ -6842,11 +6515,11 @@ fF
 Nj
 qJ
 Io
-TK
+fF
 VV
 qY
 aw
-YN
+XS
 rj
 Ll
 lX
@@ -6905,14 +6578,14 @@ OV
 OV
 OV
 KY
-XL
+EW
 sW
 Dw
-TK
+fF
 rr
 oc
 Io
-TK
+fF
 Yf
 sW
 EW
@@ -6978,7 +6651,7 @@ ej
 tc
 sW
 Yu
-TK
+fF
 KB
 Cd
 lR
@@ -7045,7 +6718,7 @@ cv
 qN
 tW
 KK
-XL
+EW
 sW
 NJ
 fF
@@ -7063,7 +6736,7 @@ oB
 Yw
 xO
 rj
-pm
+ta
 UW
 qM
 XX
@@ -7106,16 +6779,16 @@ XX
 qM
 NP
 qb
-Rz
+Ba
 Di
 XH
-pm
+ta
 qM
 AI
 MF
 sW
 zv
-XL
+EW
 sW
 QS
 le
@@ -7125,7 +6798,7 @@ Wm
 sF
 iU
 sW
-XL
+EW
 xK
 rj
 XY
@@ -7133,7 +6806,7 @@ gP
 rj
 Oa
 rj
-pm
+ta
 ln
 qM
 XX
@@ -7175,11 +6848,11 @@ XX
 XX
 qM
 IR
-qb
+hc
 iO
 Jp
 Jg
-pm
+ta
 qM
 HG
 bv
@@ -7195,7 +6868,7 @@ Ww
 yZ
 db
 sW
-Zg
+EW
 Co
 rj
 rj
@@ -7246,7 +6919,7 @@ XX
 qM
 uu
 hc
-pm
+ta
 DK
 XH
 SH
@@ -7258,10 +6931,10 @@ EW
 KF
 sW
 YF
-TK
+fF
 Rl
-TK
-TK
+fF
+fF
 gS
 Lc
 sW
@@ -7273,7 +6946,7 @@ Xa
 rL
 Oh
 al
-pm
+ta
 ln
 qM
 XX
@@ -7316,7 +6989,7 @@ XX
 qM
 qM
 XT
-pm
+ta
 qM
 SM
 SE
@@ -7331,8 +7004,8 @@ Tf
 Va
 JD
 Ms
-TK
-TK
+fF
+fF
 nE
 sW
 EW
@@ -7394,8 +7067,8 @@ ta
 ta
 XQ
 qM
-XL
-XL
+EW
+EW
 sW
 sW
 sW
@@ -7405,7 +7078,7 @@ sW
 sW
 sW
 sW
-eF
+EW
 XS
 qM
 ln
@@ -7462,10 +7135,10 @@ AS
 Ko
 Wj
 VH
-pm
+ta
 qM
 nt
-XL
+EW
 ec
 Rv
 Rv
@@ -7475,11 +7148,11 @@ Uh
 eJ
 Zz
 Vs
-Qe
+bQ
 WB
 XZ
 Bl
-pm
+ta
 qM
 It
 LY
@@ -7532,10 +7205,10 @@ qM
 AO
 qM
 ms
-pm
+ta
 qM
 UD
-XL
+EW
 Ss
 QU
 Rv
@@ -7597,12 +7270,12 @@ XX
 qM
 qM
 qd
-pm
+ta
 ta
 Cx
 qM
 ln
-pm
+ta
 qM
 ji
 ji
@@ -7667,12 +7340,12 @@ XX
 qM
 NE
 ta
-pm
-pm
+ta
+ta
 tP
 Yt
 wK
-pm
+ta
 di
 ji
 xw
@@ -7688,7 +7361,7 @@ ME
 pP
 mh
 ep
-Xz
+ln
 Um
 qM
 qM
@@ -7825,7 +7498,7 @@ FT
 QZ
 ji
 pP
-pm
+ta
 qM
 qM
 nA
@@ -7880,7 +7553,7 @@ jo
 bI
 bI
 rO
-pm
+ta
 qM
 Ut
 ta
@@ -7898,7 +7571,7 @@ pP
 Bu
 qM
 np
-dd
+Rz
 EB
 qM
 XX
@@ -7912,7 +7585,7 @@ lt
 lt
 lt
 lt
-bB
+sI
 mv
 mv
 Hx
@@ -7946,11 +7619,11 @@ XX
 XX
 XX
 qM
-pm
-pm
+ta
+ta
 rl
 qw
-pm
+ta
 qM
 Ut
 ta
@@ -7968,7 +7641,7 @@ pP
 ta
 DK
 ta
-dd
+Rz
 wl
 qM
 qM
@@ -8018,7 +7691,7 @@ XX
 qM
 sp
 vg
-pm
+ta
 rO
 ta
 qM
@@ -8093,7 +7766,7 @@ Bb
 ta
 qM
 hV
-PZ
+yF
 Fz
 yF
 qZ
@@ -8108,7 +7781,7 @@ MZ
 uW
 at
 Ax
-pm
+ta
 Zk
 qM
 qM
@@ -8229,8 +7902,8 @@ XX
 XX
 XX
 XX
-qM
-qM
+XX
+XX
 qM
 qM
 qM
@@ -8615,9 +8288,9 @@ lt
 XX
 XX
 Ee
-AQ
-Ii
-Ii
+sI
+sI
+sI
 jE
 jE
 lt
@@ -8849,11 +8522,11 @@ lt
 lt
 lt
 Hx
-Ii
+sI
 Hx
 Hx
-Ii
-Ii
+sI
+sI
 Hx
 lt
 lt
@@ -8885,7 +8558,7 @@ lt
 lt
 lt
 Ee
-Ii
+sI
 Hx
 Hx
 lt
@@ -8921,9 +8594,9 @@ lt
 Hx
 Hx
 Hx
-Ii
-Ii
-Ii
+sI
+sI
+sI
 Hx
 lt
 lt
@@ -8955,7 +8628,7 @@ lt
 lt
 lt
 kc
-Hi
+sI
 Hx
 Hx
 lt
