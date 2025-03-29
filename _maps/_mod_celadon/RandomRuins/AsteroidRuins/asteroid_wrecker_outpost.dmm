@@ -978,8 +978,6 @@
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "nj" = (
-/obj/machinery/door/airlock/highsecurity,
-/obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
@@ -995,6 +993,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/machinery/door/airlock/highsecurity,
 /turf/open/floor/plasteel/heavymetal/var2,
 /area/ruin/asteroid/wreckeroutpost/cargo)
 "np" = (
@@ -1544,11 +1543,6 @@
 /turf/open/floor/plating/airless,
 /area/overmap_encounter/planetoid/asteroid/explored)
 "ub" = (
-/obj/machinery/door/poddoor/shuttledock{
-	dir = 4;
-	name = "Armory blast door";
-	id = "Arm"
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
@@ -1563,6 +1557,11 @@
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/poddoor/shuttledock{
+	dir = 4;
+	name = "Armory blast door";
+	id = "Arm"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/asteroid/wreckeroutpost/armory)
@@ -2052,11 +2051,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "AO" = (
-/obj/machinery/door/airlock/grunge{
-	dir = 4;
-	name = "Atmopsherics"
-	},
-/obj/effect/mapping_helpers/airlock/welded,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
@@ -2267,11 +2261,6 @@
 	},
 /turf/open/space/basic,
 /area/overmap_encounter/planetoid/asteroid/explored)
-"Di" = (
-/obj/machinery/door/airlock/grunge,
-/obj/effect/mapping_helpers/airlock/welded,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ruin/asteroid/wreckeroutpost/maint)
 "Dk" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -2391,7 +2380,6 @@
 	dir = 4;
 	name = "Atmopsherics"
 	},
-/obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
@@ -3402,8 +3390,6 @@
 /area/ruin/asteroid/wreckeroutpost/cargo)
 "QJ" = (
 /obj/machinery/door/airlock/grunge,
-/obj/effect/mapping_helpers/airlock/welded,
-/obj/effect/mapping_helpers/airlock/locked,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -7107,7 +7093,7 @@ qM
 NP
 qb
 Rz
-Di
+qM
 XH
 pm
 qM
