@@ -377,7 +377,7 @@ GLOBAL_LIST_INIT(overmap_event_pick_list, list(
 	/datum/overmap/event/meteor/minor = 45,
 	/datum/overmap/event/meteor = 40,
 	/datum/overmap/event/meteor/major = 35,
-	// [CELADON-EDIT] - CELADON_FIXES - Выносим в сои категории ивенты
+	// [CELADON-EDIT] - CELADON_FIXES - Выносим в свои категории ивенты
 	// /datum/overmap/event/meteor/carp/minor = 45,
 	// /datum/overmap/event/meteor/carp = 35,
 	// /datum/overmap/event/meteor/carp/major = 20,

@@ -105,3 +105,35 @@
 /area/ruin/rockplanet/lasttemplar/medbay
 	name = "Medbay"
 	icon_state = "medbay"
+
+/area/ruin/asteroid/wreckeroutpost/dorm
+	name = "Dorm"
+	icon_state = "yellow"
+
+/area/ruin/asteroid/wreckeroutpost/armory
+	name = "Armory"
+	icon_state = "security"
+
+/area/ruin/asteroid/wreckeroutpost/medbay
+	name = "Medbay"
+	icon_state = "medbay"
+
+/area/ruin/asteroid/wreckeroutpost/maint
+	name = "Maint"
+	icon_state = "yellow"
+
+/area/ruin/asteroid/wreckeroutpost/cargo
+	name = "Cargo"
+	icon_state = "quartstorage"
+
+/area/ruin/asteroid/wreckeroutpost/office
+	name = "Office"
+	icon_state = "captain"
+
+/area/ruin/asteroid/wreckeroutpost/maincorridore
+	name = "Main Corridore"
+	icon_state = "green"
+
+/area/ruin/asteroid/wreckeroutpost/cargomining
+	name = "Cargo Mining"
+	icon_state = "mining"

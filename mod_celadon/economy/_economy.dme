@@ -8,6 +8,7 @@
 
 // code/bounties	на будущее
 
+#include "code/exports/_prices.dm"
 #include "code/exports/gear.dm"
 #include "code/exports/large_objects.dm"
 #include "code/exports/lavaland.dm"
@@ -20,13 +21,12 @@
 #include "code/exports/tools.dm"
 #include "code/exports/weapons.dm"
 
-
-
+#include "code/missions/_mission.dm"
 #include "code/missions/acquire_mission.dm"
 #include "code/missions/drill_mission.dm"
 #include "code/missions/research_mission.dm"
 
-#include "code/supply_pack/_supply_pack.dm"
+#include "code/supply_pack/_prices.dm"
 #include "code/supply_pack/ammo.dm"
 #include "code/supply_pack/animal.dm"
 #include "code/supply_pack/canister.dm"
@@ -56,17 +56,21 @@
 #include "code/supply_pack_faction/independent/tools.dm"
 #include "code/supply_pack_faction/independent/vendor_refill.dm"
 
+#include "code/supply_pack_faction/inteq/_prices.dm"
 #include "code/supply_pack_faction/inteq/clothing.dm"
 #include "code/supply_pack_faction/inteq/gun.dm"
 
+#include "code/supply_pack_faction/nanotrasen/_prices.dm"
 #include "code/supply_pack_faction/nanotrasen/ammo.dm"
 #include "code/supply_pack_faction/nanotrasen/clothing.dm"
 #include "code/supply_pack_faction/nanotrasen/gun.dm"
 
+#include "code/supply_pack_faction/solfed/_prices.dm"
 #include "code/supply_pack_faction/solfed/ammo.dm"
 #include "code/supply_pack_faction/solfed/clothing.dm"
 #include "code/supply_pack_faction/solfed/gun.dm"
 
+#include "code/supply_pack_faction/syndicate/_prices.dm"
 #include "code/supply_pack_faction/syndicate/ammo.dm"
 #include "code/supply_pack_faction/syndicate/clothing.dm"
 #include "code/supply_pack_faction/syndicate/gun.dm"

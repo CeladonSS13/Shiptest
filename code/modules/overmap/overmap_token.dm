@@ -22,6 +22,7 @@
 
 /obj/token_visuals
 	glide_size = 32
+	mouse_opacity = 0
 	// [/CELADON-ADD]
 
 /obj/overmap/rendered

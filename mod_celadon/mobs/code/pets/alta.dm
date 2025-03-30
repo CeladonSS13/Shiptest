@@ -11,6 +11,9 @@
 	held_lh = 'mod_celadon/_storge_icons/icons/mobs/animals_held_lh.dmi'
 	held_rh = 'mod_celadon/_storge_icons/icons/mobs/animals_held_rh.dmi'
 
+/mob/living/simple_animal/pet/cat/alta/Life()
+	return
+
 /mob/living/simple_animal/pet/cat/alta/update_resting()
 	. = ..()
 	if(stat == DEAD)

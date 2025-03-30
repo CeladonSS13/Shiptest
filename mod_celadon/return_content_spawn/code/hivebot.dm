@@ -452,7 +452,7 @@
 		if(6)//teleporty ice world. Incomplete.
 			visible_message("<span class='userdanger'>You glimpse a frozen, empty plane. Something stirs in the fractal abyss.</span>")
 			playsound(loc,'sound/ambience/ambisin3.ogg', 150, FALSE, 50, TRUE, TRUE)
-			if(prob(45))
+			if(prob(5))
 				new /obj/item/warp_cube/red(loc)
 				new /mob/living/simple_animal/hostile/asteroid/ice_demon(loc)
 			if(prob(45))

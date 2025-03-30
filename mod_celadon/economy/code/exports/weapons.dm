@@ -32,17 +32,17 @@
 	export_types = list(/obj/item/gun/energy/disabler)
 
 /datum/export/weapon/energy_gun
-	cost = 300
+	cost = 150
 	unit_name = "energy gun"
 	export_types = list(/obj/item/gun/energy/e_gun)
 
 /datum/export/weapon/wt550
-	cost = 300
+	cost = 250
 	unit_name = "WT-550 automatic rifle"
 	export_types = list(/obj/item/gun/ballistic/automatic/smg/wt550)
 
 /datum/export/weapon/shotgun
-	cost = 300
+	cost = 150
 	unit_name = "combat shotgun"
 	export_types = list(/obj/item/gun/ballistic/shotgun/automatic/combat)
 

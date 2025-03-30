@@ -54,7 +54,13 @@
 			else
 				new /obj/item/disk/design_disk/modkit_disc/bounty(src)
 		if(18)
-			new /obj/item/warp_cube/red(src)
+			// [CELADON-EDIT] - CELADON_BALANCE
+			// new /obj/item/warp_cube/red(src)	// CELADON-EDIT - ORIGINAL
+			if(prob(20))
+				new /obj/item/warp_cube/red(src)
+			else
+				new /obj/item/toy/plush/among(src)
+			// [/CELADON-EDIT]
 		if(19)
 			new /obj/item/wisp_lantern(src)
 		if(20)
@@ -126,7 +132,13 @@
 				else
 					new /obj/item/disk/design_disk/modkit_disc/bounty(src)
 			if(18)
-				new /obj/item/warp_cube/red(src)
+				// [CELADON-EDIT] - CELADON_BALANCE
+				// new /obj/item/warp_cube/red(src)	// CELADON-EDIT - ORIGINAL
+				if(prob(20))
+					new /obj/item/warp_cube/red(src)
+				else
+					new /obj/item/toy/plush/among(src)
+				// [/CELADON-EDIT]
 			if(19)
 				new /obj/item/wisp_lantern(src)
 			if(20)

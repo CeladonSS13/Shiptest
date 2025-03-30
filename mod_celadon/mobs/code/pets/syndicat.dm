@@ -12,3 +12,6 @@
 	melee_damage_lower = 5
 	melee_damage_upper = 15
 	held_state = "syndicat"
+
+/mob/living/simple_animal/pet/cat/syndie/Life()
+	return

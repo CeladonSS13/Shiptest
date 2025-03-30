@@ -94,7 +94,7 @@
 	if(!can_vocalize_emotes(user) && (emote_type & (EMOTE_MOUTH | EMOTE_AUDIBLE)))
 		var/noise_emitted = pick(muzzled_noises)
 		suppressed = TRUE
-		msg = "makes \a [noise_emitted] noise."
+		msg = "издаёт [noise_emitted] звук."
 	// [/CELADON-ADD]
 
 	if(isliving(user))

@@ -1021,3 +1021,10 @@
 	description = "It's always dark in the ancient glade."
 	suffix = "dark_glade.dmm"
 	cost = 1
+
+/datum/map_template/ruin/asteroid/asteroid_wrecker_outpost
+	id = "asteroid_wrecker_outpost"
+	name = "Wrecker Outpost"
+	description = "A wrecker outpost with wreck ships around it."
+	suffix = "asteroid_wrecker_outpost.dmm"
+	cost = 3
