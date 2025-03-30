@@ -57,13 +57,13 @@
 	key = "burp"
 	key_third_person = "burps"
 	message = "рыгает."
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE
 
 /datum/emote/living/choke
 	key = "choke"
 	key_third_person = "chokes"
 	message = "давится!"
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE
 
 /datum/emote/living/cross
 	key = "cross"
@@ -108,7 +108,7 @@
 	key = "cough"
 	key_third_person = "coughs"
 	message = "кашляет!"
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE
 
 /datum/emote/living/cough/can_run_emote(mob/user, status_check = TRUE , intentional)
 	. = ..()
@@ -183,7 +183,7 @@
 	key = "drool"
 	key_third_person = "drools"
 	message = "пускает слюни."
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE
 
 /datum/emote/living/faint
 	key = "faint"
@@ -346,7 +346,7 @@
 	key = "grin"
 	key_third_person = "grins"
 	message = "оскаливается в улыбке."
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE
 
 /datum/emote/living/groan
 	key = "groan"
@@ -387,7 +387,7 @@
 	key = "jump"
 	key_third_person = "jumps"
 	message = "прыгает!"
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE
 	hands_use_check = TRUE
 
 /datum/emote/living/kiss
@@ -569,7 +569,7 @@
 	key = "shiver"
 	key_third_person = "shiver"
 	message = "дрожит!"
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE
 
 /datum/emote/living/sigh
 	key = "sigh"
@@ -608,7 +608,7 @@
 	key = "sneeze"
 	key_third_person = "sneezes"
 	message = "чихает."
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE
 
 /datum/emote/living/sneeze/get_sound(mob/living/user)
 	if(!ishuman(user))
@@ -629,7 +629,7 @@
 	key = "sniff"
 	key_third_person = "sniffs"
 	message = "шмыгает."
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE
 
 /datum/emote/living/sniff/get_sound(mob/living/user)
 	if(!ishuman(user))
@@ -709,7 +709,7 @@
 	key = "sulk"
 	key_third_person = "sulks"
 	message = "сильно сердится."
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE
 
 /datum/emote/living/surrender
 	key = "surrender"
@@ -776,7 +776,7 @@
 	key = "yawn"
 	key_third_person = "yawns"
 	message = "зевает."
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE
 
 /datum/emote/living/yawn/get_sound(mob/living/user)
 	if(!ishuman(user))
@@ -898,7 +898,7 @@
 	key = "clack"
 	key_third_person = "clacks"
 	message = "щёлкает челюстью."
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE
 
 // /datum/emote/living/hoot
 // 	key = "hoot"
@@ -1590,7 +1590,7 @@
 	message = "щёлкает пальцами."
 	message_param = "snaps their fingers at %t."
 	sound = 'mod_celadon/_storge_sounds/sound/emotes/fingersnap.ogg'
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE
 
 // /datum/emote/living/carbon/human/snap/run_emote(mob/user, params, type_override, intentional)
 
