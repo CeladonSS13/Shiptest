@@ -1,5 +1,6 @@
 /datum/emote
 	cooldown = 1.5 SECONDS
+	muzzled_noises = list("сильный", "слабый")
 	// audio_cooldown = 3 SECONDS
 
 //////////////////////
@@ -57,13 +58,13 @@
 	key = "burp"
 	key_third_person = "burps"
 	message = "рыгает."
-	emote_type = EMOTE_VISIBLE
+	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 
 /datum/emote/living/choke
 	key = "choke"
 	key_third_person = "chokes"
 	message = "давится!"
-	emote_type = EMOTE_VISIBLE
+	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 
 /datum/emote/living/cross
 	key = "cross"
@@ -90,7 +91,7 @@
 	key = "chuckle"
 	key_third_person = "chuckles"
 	message = "усмехается."
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 
 /datum/emote/living/collapse
 	key = "collapse"
@@ -201,7 +202,7 @@
 	key = "flap"
 	key_third_person = "flaps"
 	message = "взмахивает крыльями."
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 	hands_use_check = TRUE
 	var/wing_time = 20
 
@@ -222,7 +223,7 @@
 	key = "aflap"
 	key_third_person = "aflaps"
 	message = "яростно взмахивает крыльями!"
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 	hands_use_check = TRUE
 	wing_time = 10
 
@@ -608,7 +609,7 @@
 	key = "sneeze"
 	key_third_person = "sneezes"
 	message = "чихает."
-	emote_type = EMOTE_VISIBLE
+	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 
 /datum/emote/living/sneeze/get_sound(mob/living/user)
 	if(!ishuman(user))
@@ -629,7 +630,7 @@
 	key = "sniff"
 	key_third_person = "sniffs"
 	message = "шмыгает."
-	emote_type = EMOTE_VISIBLE
+	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 
 /datum/emote/living/sniff/get_sound(mob/living/user)
 	if(!ishuman(user))
@@ -709,13 +710,13 @@
 	key = "sulk"
 	key_third_person = "sulks"
 	message = "сильно сердится."
-	emote_type = EMOTE_VISIBLE
+	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 
 /datum/emote/living/surrender
 	key = "surrender"
 	key_third_person = "surrenders"
 	message = "сдаётся! Падает на землю, закидывая руки за свою голову."
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE
 
 /datum/emote/living/surrender/run_emote(mob/user, params, type_override, intentional)
 	. = ..()
@@ -776,7 +777,7 @@
 	key = "yawn"
 	key_third_person = "yawns"
 	message = "зевает."
-	emote_type = EMOTE_VISIBLE
+	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 
 /datum/emote/living/yawn/get_sound(mob/living/user)
 	if(!ishuman(user))
@@ -898,7 +899,7 @@
 	key = "clack"
 	key_third_person = "clacks"
 	message = "щёлкает челюстью."
-	emote_type = EMOTE_VISIBLE
+	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 
 // /datum/emote/living/hoot
 // 	key = "hoot"
@@ -1151,7 +1152,7 @@
 	key = "cry"
 	key_third_person = "cries"
 	message = "плачет."
-	muzzled_noises = list("слабо", "жалко", "грустно")
+	muzzled_noises = list("слабый", "слезливый", "грустный")
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/carbon/human/cry/get_sound(mob/living/user)
@@ -1322,7 +1323,7 @@
 	vary = TRUE
 	sound = 'mod_celadon/_storge_sounds/sound/emotes/tajaran/purr_tajaran.ogg'
 	volume = 80
-	muzzled_noises = list("слабо")
+	muzzled_noises = list("слабый мурчащий")
 
 /datum/emote/living/carbon/human/purr/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
@@ -1343,7 +1344,7 @@
 	vary = TRUE
 	sound = 'mod_celadon/_storge_sounds/sound/emotes/tajaran/purr_tajaran_long.ogg'
 	volume = 80
-	muzzled_noises = list("слабо")
+	muzzled_noises = list("слабый мурчащий")
 
 /datum/emote/living/carbon/human/purrl/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
@@ -1363,7 +1364,7 @@
 	vary = TRUE
 	cooldown = 5 SECONDS
 	volume = 50
-	muzzled_noises = list("слабо")
+	muzzled_noises = list("слабый мурлыкающий")
 
 /datum/emote/living/carbon/human/mrowss/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
@@ -1377,7 +1378,7 @@
 	// species_type_whitelist_typecache = list(/datum/species/tajaran)
 	sound = 'mod_celadon/_storge_sounds/sound/emotes/tajaran/hiss_tajaran.ogg'
 	volume = 80
-	muzzled_noises = list("irritated")
+	muzzled_noises = list("тихий шипящий")
 
 /datum/emote/living/carbon/human/hiss
 	key = "hiss"
@@ -1390,7 +1391,7 @@
 	vary = TRUE
 	sound = 'mod_celadon/_storge_sounds/sound/emotes/tajaran/hiss_tajaran.ogg'
 	volume = 80
-	muzzled_noises = list("слабо")
+	muzzled_noises = list("слабый шипящий")
 
 /datum/emote/living/carbon/human/hiss/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
@@ -1471,11 +1472,11 @@
 	message_param = "урчит на %t."
 	sound = 'mod_celadon/_storge_sounds/sound/emotes/vulpkanin/purr.ogg'
 	// species_type_whitelist_typecache = list(/datum/species/vulpkanin)
-	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE | EMOTE_MOUTH | EMOTE_AUDIBLE
 	vary = TRUE
 	cooldown = 10 SECONDS
 	volume = 50
-	muzzled_noises = list("слабо")
+	muzzled_noises = list("слабый урчащий")
 
 /datum/emote/living/carbon/human/ururu/can_run_emote(mob/user, status_check = TRUE, intentional)
 	if(!..())
@@ -1495,7 +1496,7 @@
 	vary = TRUE
 	cooldown = 10 SECONDS
 	volume = 50
-	muzzled_noises = list("слабо")
+	muzzled_noises = list("слабо мяукающий")
 
 /datum/emote/living/carbon/human/mrow
 	key = "mrow"
@@ -1508,7 +1509,7 @@
 	vary = TRUE
 	cooldown = 10 SECONDS
 	volume = 70
-	muzzled_noises = list("слабо")
+	muzzled_noises = list("слабо раздраженный мяукающий")
 
 /datum/emote/living/carbon/human/tajara/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
@@ -1590,7 +1591,7 @@
 	message = "щёлкает пальцами."
 	message_param = "snaps their fingers at %t."
 	sound = 'mod_celadon/_storge_sounds/sound/emotes/fingersnap.ogg'
-	emote_type = EMOTE_VISIBLE
+	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
 
 // /datum/emote/living/carbon/human/snap/run_emote(mob/user, params, type_override, intentional)
 
