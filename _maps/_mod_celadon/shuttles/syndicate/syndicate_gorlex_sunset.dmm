@@ -1,9 +1,4 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"as" = (
-/turf/closed/wall/mineral/plastitanium/nodiagonal{
-	name = "Drobe"
-	},
-/area/ship/crew/dorm)
 "az" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer4,
@@ -160,6 +155,16 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
+"cW" = (
+/obj/machinery/button/door{
+	pixel_y = 26;
+	id = "sunsetexit2";
+	name = "Engine Shutters";
+	pixel_x = -6;
+	req_access_txt = "1"
+	},
+/turf/template_noop,
+/area/ship/external)
 "dr" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
@@ -167,6 +172,11 @@
 	id = "okno_crew2"
 	},
 /turf/open/floor/plating,
+/area/ship/crew/dorm)
+"dJ" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal{
+	name = "Drobe"
+	},
 /area/ship/crew/dorm)
 "dQ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -1596,16 +1606,6 @@
 	},
 /turf/open/floor/marble/black,
 /area/ship/bridge)
-"AH" = (
-/obj/machinery/button/door{
-	pixel_y = -21;
-	id = "sunsetexit";
-	name = "Engine Shutters";
-	dir = 1;
-	pixel_x = -6
-	},
-/turf/template_noop,
-/area/template_noop)
 "AO" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -1705,11 +1705,6 @@
 	},
 /obj/structure/railing{
 	dir = 4
-	},
-/obj/machinery/button/door{
-	pixel_y = 25;
-	id = "Sunseteenginebay";
-	name = "Engine Shutters"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
@@ -2206,6 +2201,14 @@
 	},
 /turf/open/floor/marble/black,
 /area/ship/bridge)
+"He" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "sunsetexit2";
+	name = "Emergency exit"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/ship/engineering)
 "Hs" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
 	dir = 4
@@ -2451,14 +2454,6 @@
 /obj/machinery/computer/crew/syndie,
 /turf/open/floor/marble/black,
 /area/ship/bridge)
-"MK" = (
-/obj/structure/fans/tiny,
-/obj/machinery/door/poddoor/shutters{
-	id = "sunsetexit";
-	name = "Emergency exit"
-	},
-/turf/open/floor/plating,
-/area/ship/engineering)
 "MQ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -2481,6 +2476,17 @@
 	},
 /turf/open/floor/marble/black,
 /area/ship/crew/canteen/kitchen)
+"MU" = (
+/obj/machinery/button/door{
+	pixel_y = -21;
+	id = "sunsetexit";
+	name = "Engine Shutters";
+	dir = 1;
+	pixel_x = -6;
+	req_access_txt = "1"
+	},
+/turf/template_noop,
+/area/ship/external)
 "MZ" = (
 /obj/machinery/computer/med_data/syndie{
 	dir = 8;
@@ -2775,15 +2781,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
-"QW" = (
-/obj/machinery/button/door{
-	pixel_y = 26;
-	id = "sunsetexit2";
-	name = "Engine Shutters";
-	pixel_x = -6
-	},
-/turf/template_noop,
-/area/template_noop)
 "Rp" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -2923,6 +2920,14 @@
 	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
+"TB" = (
+/obj/structure/fans/tiny,
+/obj/machinery/door/poddoor/shutters{
+	id = "sunsetexit";
+	name = "Emergency exit"
+	},
+/turf/open/floor/plating,
+/area/ship/engineering)
 "TK" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
@@ -3109,14 +3114,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
-"VR" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "sunsetexit2";
-	name = "Emergency exit"
-	},
-/obj/structure/fans/tiny,
-/turf/open/floor/plating,
-/area/ship/engineering)
 "VT" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
 /obj/effect/turf_decal/trimline/opaque/syndiered/corner{
@@ -3519,7 +3516,7 @@ xo
 xo
 xo
 xo
-MK
+TB
 BJ
 Eq
 hp
@@ -3527,7 +3524,7 @@ QQ
 sz
 jX
 GJ
-VR
+He
 xo
 xo
 xo
@@ -3543,7 +3540,7 @@ xo
 xo
 xo
 xo
-AH
+MU
 Ja
 li
 Cl
@@ -3553,7 +3550,7 @@ VA
 AR
 AU
 Ja
-QW
+cW
 xo
 xo
 xo
@@ -3905,7 +3902,7 @@ XN
 Rw
 ir
 XW
-as
+dJ
 aU
 xo
 xo
