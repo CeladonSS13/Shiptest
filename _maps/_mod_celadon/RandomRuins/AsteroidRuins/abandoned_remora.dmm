@@ -1241,7 +1241,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/effect/decal/cleanable/oil,
-/mob/living/simple_animal/hostile/human/nanotrasen/ranged/assault,
+/mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/unpowered)
@@ -1614,7 +1614,7 @@
 /turf/open/floor/plasteel/white,
 /area/ruin/unpowered)
 "dm" = (
-/mob/living/simple_animal/hostile/human/nanotrasen/ranged/assault,
+/mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper,
 /obj/structure/fluff/broken_flooring,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/white,
@@ -1845,7 +1845,7 @@
 	},
 /obj/item/cigbutt,
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/human/nanotrasen/ranged/assault,
+/mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper,
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered)
 "dK" = (
@@ -2177,7 +2177,7 @@
 	},
 /obj/effect/turf_decal/corner/transparent/syndiered/border,
 /obj/machinery/firealarm/directional/south,
-/mob/living/simple_animal/hostile/human/nanotrasen/ranged/assault,
+/mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered)
@@ -2250,9 +2250,7 @@
 /obj/machinery/door/window/brigdoor/westleft{
 	req_ship_access = 1
 	},
-/obj/effect/mob_spawn/human/corpse/nanotrasensoldier{
-	req_access = list(6)
-	},
+/obj/effect/mob_spawn/human/corpse/vigilitas_private,
 /obj/effect/decal/cleanable/blood,
 /obj/structure/bed{
 	dir = 4
@@ -3631,7 +3629,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/transparent/purple/mono,
-/mob/living/simple_animal/hostile/human/nanotrasen/ranged/assault,
+/mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
 /area/ruin/unpowered)
@@ -4451,7 +4449,7 @@
 "Gd" = (
 /obj/effect/turf_decal/industrial/stand_clear/red,
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/human/nanotrasen/ranged/assault,
+/mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper,
 /turf/open/floor/plasteel/white,
 /area/ruin/unpowered)
 "Hj" = (
@@ -4678,7 +4676,7 @@
 	},
 /obj/effect/turf_decal/industrial/stand_clear/red,
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/human/nanotrasen/ranged/assault,
+/mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper,
 /turf/open/floor/plasteel/white,
 /area/ruin/unpowered)
 "Yj" = (
