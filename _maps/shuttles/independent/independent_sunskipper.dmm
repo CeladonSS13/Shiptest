@@ -1458,7 +1458,7 @@
 /area/ship/maintenance/aft)
 "rf" = (
 /obj/effect/spawner/bunk_bed,
-/obj/effect/spawner/random/bedsheet,
+/obj/item/bedsheet/dorms,
 /obj/item/bedsheet/grey{
 	pixel_y = 13
 	},
@@ -3069,7 +3069,9 @@
 /obj/effect/spawner/bunk_bed{
 	dir = 1
 	},
-/obj/effect/spawner/random/bedsheet,
+/obj/item/bedsheet/dorms{
+	dir = 4
+	},
 /obj/item/bedsheet/purple{
 	dir = 4;
 	pixel_y = 13
