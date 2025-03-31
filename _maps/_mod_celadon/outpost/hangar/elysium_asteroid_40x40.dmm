@@ -1,4 +1,8 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"az" = (
+/obj/effect/turf_decal/siding/wood,
+/turf/open/floor/plasteel/grimy,
+/area/hangar)
 "aF" = (
 /obj/effect/turf_decal/trimline/opaque/yellow/filled/arrow_cw{
 	dir = 8
@@ -46,6 +50,16 @@
 /obj/machinery/light/floor/hangar,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
+/area/hangar)
+"cH" = (
+/obj/structure/disposaloutlet{
+	dir = 4
+	},
+/obj/structure/disposalpipe/trunk,
+/obj/machinery/conveyor/auto/outpost{
+	dir = 4
+	},
+/turf/open/floor/hangar/plasteel,
 /area/hangar)
 "cT" = (
 /obj/structure/chair/sofa/brown/left/directional/north,
@@ -121,6 +135,10 @@
 /obj/effect/turf_decal/industrial/fire/fulltile,
 /turf/open/floor/plasteel/tech,
 /area/hangar)
+"fD" = (
+/obj/effect/turf_decal/industrial/hatch/yellow,
+/turf/open/floor/hangar/plasteel,
+/area/hangar)
 "fR" = (
 /obj/effect/turf_decal/trimline/opaque/yellow/filled/warning{
 	dir = 8
@@ -128,11 +146,21 @@
 /obj/machinery/light/floor/hangar,
 /turf/open/floor/plasteel/dark,
 /area/hangar)
+"go" = (
+/obj/structure/chair/plastic{
+	dir = 1
+	},
+/turf/open/floor/plasteel/grimy,
+/area/hangar)
 "gN" = (
 /obj/effect/turf_decal/trimline/opaque/yellow/filled/arrow_cw{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
+/area/hangar)
+"gZ" = (
+/obj/structure/sign/departments/cargo,
+/turf/closed/indestructible/reinforced,
 /area/hangar)
 "hb" = (
 /obj/structure/catwalk/over,
@@ -258,6 +286,10 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
+"iV" = (
+/obj/structure/disposalpipe/segment,
+/turf/closed/indestructible/reinforced,
+/area/hangar)
 "jk" = (
 /obj/structure/flora/rock/pile/icy,
 /turf/open/water/beach/deep,
@@ -273,6 +305,12 @@
 "jw" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/plasteel/dark,
+/area/hangar)
+"jP" = (
+/obj/machinery/conveyor/auto/outpost{
+	dir = 8
+	},
+/turf/open/floor/hangar/plasteel,
 /area/hangar)
 "kf" = (
 /obj/effect/turf_decal/siding/wood{
@@ -382,6 +420,13 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
+/area/hangar)
+"mp" = (
+/obj/structure/railing/corner{
+	dir = 4;
+	pixel_y = 10
+	},
+/turf/open/floor/hangar/plasteel,
 /area/hangar)
 "mH" = (
 /obj/effect/turf_decal/trimline/opaque/yellow/filled/warning,
@@ -497,6 +542,15 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
+"qF" = (
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/obj/machinery/disposal/deliveryChute{
+	dir = 4
+	},
+/turf/open/floor/hangar/plasteel,
+/area/hangar)
 "qG" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
@@ -572,6 +626,13 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
+/area/hangar)
+"sJ" = (
+/obj/machinery/conveyor/auto/outpost{
+	dir = 8
+	},
+/obj/effect/landmark/outpost/hangar_crate_spawner,
+/turf/open/floor/hangar/plasteel,
 /area/hangar)
 "sW" = (
 /obj/structure/sign/departments/cargo{
@@ -671,6 +732,12 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
+"wo" = (
+/obj/machinery/conveyor/auto/outpost{
+	dir = 1
+	},
+/turf/open/floor/hangar/plasteel,
+/area/hangar)
 "ws" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 4
@@ -721,6 +788,9 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
+/area/hangar)
+"xE" = (
+/turf/open/floor/hangar/plasteel,
 /area/hangar)
 "xT" = (
 /obj/structure/catwalk/over/plated_catwalk,
@@ -827,6 +897,13 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
+"AU" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8;
+	color = "#543C30"
+	},
+/turf/open/floor/plasteel/grimy,
+/area/hangar)
 "Bb" = (
 /obj/effect/decal/cleanable/robot_debris{
 	pixel_x = 12
@@ -858,6 +935,12 @@
 /turf/open/floor/plating{
 	planetary_atmos = 1
 	},
+/area/hangar)
+"Cu" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/turf/open/floor/plasteel/grimy,
 /area/hangar)
 "Cw" = (
 /obj/structure/closet/crate,
@@ -969,6 +1052,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete/slab_2,
 /area/hangar)
+"Fw" = (
+/obj/effect/turf_decal/industrial/loading{
+	dir = 8
+	},
+/turf/open/floor/hangar/plasteel,
+/area/hangar)
 "Fy" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters/indestructible/preopen{
@@ -984,6 +1073,18 @@
 	icon_state = "platingdmg1";
 	planetary_atmos = 1
 	},
+/area/hangar)
+"FD" = (
+/obj/machinery/conveyor/auto/outpost{
+	dir = 1
+	},
+/obj/machinery/light/directional/east,
+/turf/open/floor/hangar/plasteel,
+/area/hangar)
+"FG" = (
+/obj/structure/table,
+/obj/machinery/light/directional/east,
+/turf/open/floor/plasteel/grimy,
 /area/hangar)
 "FI" = (
 /obj/effect/turf_decal/siding/wood{
@@ -1267,6 +1368,10 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
+"MB" = (
+/obj/structure/chair/plastic,
+/turf/open/floor/plasteel/grimy,
+/area/hangar)
 "Nt" = (
 /turf/open/floor/plasteel/tech/techmaint{
 	planetary_atmos = 1
@@ -1375,6 +1480,12 @@
 "Qb" = (
 /obj/structure/flora/rock/icy,
 /turf/open/water/beach/deep,
+/area/hangar)
+"Qd" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/plasteel/grimy,
 /area/hangar)
 "Qe" = (
 /obj/machinery/conveyor/auto{
@@ -1500,6 +1611,16 @@
 "UB" = (
 /turf/open/floor/plating/asteroid/icerock,
 /area/hangar)
+"UF" = (
+/obj/structure/chair/plastic{
+	dir = 8
+	},
+/obj/structure/railing{
+	dir = 1;
+	pixel_y = 10
+	},
+/turf/open/floor/hangar/plasteel,
+/area/hangar)
 "UO" = (
 /obj/structure/railing{
 	dir = 6;
@@ -1521,6 +1642,12 @@
 	icon_state = "platingdmg2";
 	planetary_atmos = 1
 	},
+/area/hangar)
+"UW" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/turf/open/floor/plasteel/grimy,
 /area/hangar)
 "Vc" = (
 /obj/effect/turf_decal/industrial/warning{
@@ -1552,6 +1679,12 @@
 /obj/effect/landmark/outpost/elevator_machine,
 /obj/structure/lattice/catwalk,
 /turf/open/floor/engine,
+/area/hangar)
+"Vn" = (
+/obj/machinery/conveyor/auto/outpost{
+	dir = 9
+	},
+/turf/open/floor/hangar/plasteel,
 /area/hangar)
 "Vo" = (
 /obj/effect/turf_decal/borderfloor/corner{
@@ -4335,12 +4468,12 @@ pz
 pz
 yb
 pz
-pz
-pz
-pz
-pz
 sW
-jw
+pz
+pz
+pz
+pz
+pz
 LE
 pz
 pz
@@ -4393,12 +4526,22 @@ Fy
 DK
 DK
 DK
-DK
-DK
+JN
 DK
 DK
 JN
-JN
+xE
+Fw
+xE
+xE
+xE
+mp
+UW
+AU
+AU
+AU
+Cu
+DK
 pz
 pz
 pz
@@ -4407,18 +4550,8 @@ pz
 pz
 pz
 jw
-pz
-pz
-zY
-pz
-pz
-pz
 DK
 DK
-JN
-DK
-DK
-JN
 DK
 DK
 DK
@@ -4455,8 +4588,18 @@ DK
 DK
 DK
 DK
+xE
+fD
+FD
+wo
+Vn
+UF
+Qd
+MB
+FG
+go
+az
 DK
-JN
 Vc
 Ew
 Mt
@@ -4465,16 +4608,6 @@ bg
 Ew
 qT
 JN
-JN
-DK
-DK
-DK
-DK
-DK
-DK
-DK
-DK
-DK
 DK
 DK
 DK
@@ -4513,7 +4646,17 @@ Qb
 XF
 DK
 DK
-DK
+JN
+JN
+JN
+JN
+jP
+gZ
+JN
+JN
+JN
+JN
+JN
 JN
 uf
 vu
@@ -4524,19 +4667,9 @@ Pf
 RS
 DK
 DK
-DK
-DK
-DK
-DK
-DK
-DK
-DK
-DK
-DK
-DK
-DK
-DK
-DK
+JN
+JN
+JN
 JN
 JN
 JN
@@ -4571,7 +4704,17 @@ XF
 XF
 XF
 DK
-DK
+JN
+LH
+LH
+JN
+jP
+JN
+cH
+iV
+qF
+JN
+LH
 HP
 FT
 hO
@@ -4581,21 +4724,11 @@ ce
 hO
 Td
 DK
-DK
-DK
 JN
 JN
-JN
-JN
-JN
-JN
-JN
-JN
-JN
-JN
-JN
-JN
-JN
+LH
+LH
+LH
 LH
 LH
 LH
@@ -4629,7 +4762,17 @@ XF
 XF
 jk
 DK
-DK
+JN
+LH
+LH
+JN
+jP
+wo
+wo
+JN
+sJ
+JN
+LH
 JN
 qx
 VA
@@ -4640,16 +4783,6 @@ hO
 Js
 DK
 JN
-JN
-JN
-LH
-LH
-LH
-LH
-LH
-LH
-LH
-LH
 LH
 LH
 LH
@@ -4687,7 +4820,17 @@ XF
 XF
 DK
 DK
-DK
+JN
+LH
+LH
+JN
+JN
+JN
+JN
+JN
+JN
+JN
+LH
 JN
 Cw
 OZ
@@ -4698,16 +4841,6 @@ VA
 IE
 JN
 JN
-LH
-LH
-LH
-LH
-LH
-LH
-LH
-LH
-LH
-LH
 LH
 LH
 LH
@@ -4745,7 +4878,17 @@ XF
 XF
 DK
 DK
-DK
+JN
+LH
+LH
+LH
+LH
+LH
+LH
+LH
+LH
+LH
+LH
 JN
 Pu
 FT
@@ -4755,16 +4898,6 @@ Qy
 hO
 wc
 JN
-LH
-LH
-LH
-LH
-LH
-LH
-LH
-LH
-LH
-LH
 LH
 LH
 LH
@@ -4804,6 +4937,16 @@ DK
 DK
 DK
 JN
+LH
+LH
+LH
+LH
+LH
+LH
+LH
+LH
+LH
+LH
 JN
 JN
 lr
@@ -4813,16 +4956,6 @@ wm
 vF
 JN
 JN
-LH
-LH
-LH
-LH
-LH
-LH
-LH
-LH
-LH
-LH
 LH
 LH
 LH
@@ -4862,6 +4995,16 @@ DK
 DK
 JN
 JN
+LH
+LH
+LH
+LH
+LH
+LH
+LH
+LH
+LH
+LH
 JN
 JN
 JN
@@ -4870,16 +5013,6 @@ JN
 JN
 JN
 JN
-LH
-LH
-LH
-LH
-LH
-LH
-LH
-LH
-LH
-LH
 LH
 LH
 LH
