@@ -649,7 +649,7 @@ GLOBAL_LIST_INIT(onecardinalwest, WEST)
 /mob/living/simple_animal/hostile/human/nanotrasen
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 20, "bomb" = 10, "bio" = 100, "rad" = 60, "fire" = 20, "acid" = 20)
 
-// /mob/living/simple_animal/hostile/human/nanotrasen/screaming
+// /mob/living/simple_animal/hostile/human/nanotrasen/ranged/shotgun
 
 // /mob/living/simple_animal/hostile/human/nanotrasen/ranged
 
