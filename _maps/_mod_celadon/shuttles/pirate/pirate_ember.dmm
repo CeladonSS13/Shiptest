@@ -2031,7 +2031,7 @@
 /area/ship/security/armory)
 "kf" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/random/salvage_manipulator,
+/obj/effect/spawner/random/salvage/part/manipulator,
 /turf/open/floor/plating/airless,
 /area/ship/maintenance/port)
 "kk" = (
@@ -3141,7 +3141,7 @@
 "pn" = (
 /obj/structure/bed,
 /obj/structure/curtain/cloth/grey,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
@@ -3994,7 +3994,7 @@
 /area/ship/crew/office)
 "tQ" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/cloth/grey,
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -6978,7 +6978,7 @@
 "Hi" = (
 /obj/structure/bed,
 /obj/structure/curtain/cloth/grey,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
@@ -7019,7 +7019,7 @@
 /area/ship/maintenance/port)
 "HD" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/cloth/grey,
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
@@ -8383,7 +8383,7 @@
 /area/ship/medical)
 "Mx" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/cloth/grey,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/item/radio/intercom/directional/north,
@@ -10218,7 +10218,7 @@
 /area/ship/hallway/fore)
 "Wb" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
@@ -10624,7 +10624,7 @@
 	},
 /area/ship/maintenance/port)
 "Yj" = (
-/obj/effect/spawner/random/salvage_manipulator,
+/obj/effect/spawner/random/salvage/part/manipulator,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/cable{
 	icon_state = "1-8"

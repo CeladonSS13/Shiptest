@@ -672,7 +672,7 @@
 /area/ship/engineering/communications)
 "ga" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/bounty,
 /obj/structure/window/reinforced{
 	dir = 4
@@ -1077,13 +1077,13 @@
 /area/ship/engineering/communications)
 "lb" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/bounty,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
 "lE" = (
 /obj/effect/turf_decal/box/corners,
-/obj/effect/spawner/random/salvage_machine,
+/obj/effect/spawner/random/salvage/machine,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo/starboard)
 "lS" = (
@@ -2319,7 +2319,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/random/salvage_machine,
+/obj/effect/spawner/random/salvage/machine,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo/starboard)
 "Ce" = (

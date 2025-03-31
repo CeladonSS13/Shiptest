@@ -188,7 +188,7 @@
 /mob/living/simple_animal/pet/mothroach{
 	faction = list("playerInteq")
 	},
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /obj/item/melee/knife/shiv,
 /turf/open/floor/plating,
 /area/ship/security/prison)
@@ -1621,7 +1621,7 @@
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 8
 	},
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /obj/item/clothing/under/rank/prisoner/skirt,
 /obj/item/clothing/under/rank/prisoner,
 /obj/item/clothing/shoes/sneakers/orange,
@@ -2883,7 +2883,7 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/south,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /obj/item/clothing/under/rank/prisoner/skirt,
 /obj/item/clothing/under/rank/prisoner,
 /obj/item/clothing/shoes/sneakers/orange,
@@ -4114,7 +4114,7 @@
 	icon_state = "prisoner";
 	req_access_txt = "3"
 	},
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /obj/item/clothing/under/rank/prisoner/skirt,
 /obj/item/clothing/under/rank/prisoner,
 /obj/item/clothing/shoes/sneakers/orange,
@@ -7685,7 +7685,7 @@
 "Xx" = (
 /obj/structure/bed,
 /obj/item/melee/knife/shiv/carrot,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /turf/open/floor/plasteel/tech,
 /area/ship/security/prison)
 "Xy" = (
