@@ -1,6 +1,9 @@
 /*
 	/// MARK:Elysium Asteroid
 */
+/datum/map_template/outpost/elevator_asteroid
+	name = "elevator_asteroid"
+
 /datum/map_template/outpost/elysium_asteroid
 	name = "elysium_asteroid"
 
@@ -32,7 +35,7 @@
 /datum/overmap/outpost/elysium_asteroid
 	token_icon_state = "station_3"
 	main_template = /datum/map_template/outpost/elysium_asteroid
-	elevator_template = /datum/map_template/outpost/elevator_test
+	elevator_template = /datum/map_template/outpost/elevator_asteroid
 	hangar_templates = list(
 		/datum/map_template/outpost/hangar/elysium_asteroid_20x20,
 		/datum/map_template/outpost/hangar/elysium_asteroid_40x20,
@@ -126,6 +129,52 @@
 		/datum/map_template/outpost/hangar/elysium_rock_40x40,
 		/datum/map_template/outpost/hangar/elysium_rock_56x20,
 		/datum/map_template/outpost/hangar/elysium_rock_56x40
+	)
+
+/*
+	/// MARK:Independent Space Outpost
+*/
+/datum/map_template/outpost/elevator_indie
+	name = "elevator_space"
+
+/datum/map_template/outpost/elysium_space
+	name = "elysium_space"
+
+/datum/map_template/outpost/hangar/elysium_space_20x20
+	name = "hangar/elysium_space_20x20"
+	dock_width = 20
+	dock_height = 20
+
+/datum/map_template/outpost/hangar/elysium_space_40x20
+	name = "hangar/elysium_space_40x20"
+	dock_width = 40
+	dock_height = 20
+
+/datum/map_template/outpost/hangar/elysium_space_40x40
+	name = "hangar/elysium_space_40x40"
+	dock_width = 40
+	dock_height = 40
+
+/datum/map_template/outpost/hangar/elysium_space_56x20
+	name = "hangar/elysium_space_56x20"
+	dock_width = 56
+	dock_height = 20
+
+/datum/map_template/outpost/hangar/elysium_space_56x40
+	name = "hangar/elysium_space_56x40"
+	dock_width = 56
+	dock_height = 40
+
+/datum/overmap/outpost/elysium_space
+	token_icon_state = "station_1"
+	main_template = /datum/map_template/outpost/elysium_space
+	elevator_template = /datum/map_template/outpost/elevator_space
+	hangar_templates = list(
+		/datum/map_template/outpost/hangar/elysium_space_20x20,
+		/datum/map_template/outpost/hangar/elysium_space_40x20,
+		/datum/map_template/outpost/hangar/elysium_space_40x40,
+		/datum/map_template/outpost/hangar/elysium_space_56x20,
+		/datum/map_template/outpost/hangar/elysium_space_56x40
 	)
 /*
 	/// MARK:No main level
