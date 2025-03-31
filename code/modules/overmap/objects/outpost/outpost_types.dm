@@ -165,22 +165,22 @@
 // 		/datum/map_template/outpost/hangar/nt_ice_56x20,
 // 		/datum/map_template/outpost/hangar/nt_ice_56x40
 // 	)
-// [/CELADON-REMOVE]
 	// faction = /datum/faction/nt
 
-/datum/overmap/outpost/ngr_rock
-	token_icon_state = "station_asteroid_0"
-	main_template = /datum/map_template/outpost/ngr_rock
-	elevator_template = /datum/map_template/outpost/elevator_rock
-	hangar_templates = list(
-		/datum/map_template/outpost/hangar/ngr_rock_20x20,
-		/datum/map_template/outpost/hangar/ngr_rock_40x20,
-		/datum/map_template/outpost/hangar/ngr_rock_40x40,
-		/datum/map_template/outpost/hangar/ngr_rock_56x20,
-		/datum/map_template/outpost/hangar/ngr_rock_56x40
-	)
+// /datum/overmap/outpost/ngr_rock
+// 	token_icon_state = "station_asteroid_0"
+// 	main_template = /datum/map_template/outpost/ngr_rock
+// 	elevator_template = /datum/map_template/outpost/elevator_rock
+// 	hangar_templates = list(
+// 		/datum/map_template/outpost/hangar/ngr_rock_20x20,
+// 		/datum/map_template/outpost/hangar/ngr_rock_40x20,
+// 		/datum/map_template/outpost/hangar/ngr_rock_40x40,
+// 		/datum/map_template/outpost/hangar/ngr_rock_56x20,
+// 		/datum/map_template/outpost/hangar/ngr_rock_56x40
+// 	)
 
-/datum/overmap/outpost/no_main_level // For example and adminspawn.
-	main_template = null
-	elevator_template = /datum/map_template/outpost/elevator_test
-	// Uses "test" hangars.
+// /datum/overmap/outpost/no_main_level // For example and adminspawn.
+// 	main_template = null
+// 	elevator_template = /datum/map_template/outpost/elevator_test
+// 	// Uses "test" hangars.
+// [/CELADON-REMOVE]
