@@ -13,7 +13,7 @@
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
 "ad" = (
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
@@ -488,9 +488,7 @@
 "ev" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/blood/old,
-/mob/living/simple_animal/hostile/rat{
-	dir = 8
-	},
+/mob/living/basic/mouse/rat,
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
 "ez" = (
@@ -703,7 +701,7 @@
 /turf/open/floor/plating,
 /area/ruin/powered)
 "gp" = (
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -904,7 +902,7 @@
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
 "iI" = (
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
 "iK" = (
@@ -912,7 +910,7 @@
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
 "iR" = (
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
@@ -1000,7 +998,7 @@
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
 "jF" = (
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/plating/rust,
@@ -1083,7 +1081,7 @@
 /area/ruin/powered)
 "ki" = (
 /obj/effect/decal/cleanable/blood,
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
 "kj" = (
@@ -1245,9 +1243,7 @@
 /turf/open/floor/plating,
 /area/ruin/powered)
 "lK" = (
-/mob/living/simple_animal/hostile/rat{
-	dir = 8
-	},
+/mob/living/basic/mouse/rat,
 /obj/machinery/light/directional/south,
 /turf/open/floor/plating,
 /area/ruin/powered)
@@ -1943,7 +1939,7 @@
 /obj/structure/bed,
 /obj/item/bedsheet/random,
 /obj/effect/decal/cleanable/blood,
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
@@ -1973,14 +1969,8 @@
 	},
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
-"sg" = (
-/mob/living/simple_animal/hostile/rat{
-	dir = 1
-	},
-/turf/open/floor/plating/rust,
-/area/ruin/powered)
 "sl" = (
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
@@ -2116,7 +2106,7 @@
 /area/ruin/powered)
 "tK" = (
 /obj/effect/decal/cleanable/blood,
-/obj/item/reagent_containers/food/snacks/deadmouse,
+/obj/item/food/deadmouse,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ruin/powered)
@@ -3000,7 +2990,7 @@
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
 "BI" = (
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 1
 	},
@@ -3144,9 +3134,7 @@
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
 "Db" = (
-/mob/living/simple_animal/hostile/rat{
-	dir = 8
-	},
+/mob/living/basic/mouse/rat,
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plating,
 /area/ruin/powered)
@@ -3166,9 +3154,7 @@
 /turf/closed/wall/r_wall/rust,
 /area/ruin/powered)
 "Dl" = (
-/mob/living/simple_animal/hostile/rat{
-	dir = 8
-	},
+/mob/living/basic/mouse/rat,
 /obj/effect/decal/cleanable/blood,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -3372,9 +3358,7 @@
 /turf/open/floor/plating,
 /area/ruin/powered)
 "Fc" = (
-/mob/living/simple_animal/hostile/rat{
-	dir = 4
-	},
+/mob/living/basic/mouse/rat,
 /obj/effect/decal/cleanable/oil/streak,
 /obj/machinery/light/directional/north,
 /turf/open/floor/plating/rust,
@@ -3389,15 +3373,13 @@
 /area/overmap_encounter/planetoid/wasteplanet/explored)
 "Fl" = (
 /obj/effect/decal/cleanable/robot_debris,
-/mob/living/simple_animal/hostile/rat{
-	dir = 8
-	},
+/mob/living/basic/mouse/rat,
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
 "Fm" = (
 /obj/effect/decal/cleanable/blood,
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
@@ -3424,7 +3406,7 @@
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
 "FG" = (
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /turf/open/floor/plating,
 /area/ruin/powered)
 "FH" = (
@@ -3587,7 +3569,7 @@
 /area/ruin/powered)
 "HH" = (
 /obj/effect/gibspawner/human,
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/trash/can/food/beans,
 /turf/open/floor/plating/rust,
@@ -3747,7 +3729,7 @@
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
 "IY" = (
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -3904,9 +3886,7 @@
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
 "Ky" = (
-/mob/living/simple_animal/hostile/rat{
-	dir = 8
-	},
+/mob/living/basic/mouse/rat,
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
@@ -4259,7 +4239,7 @@
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
 "Oo" = (
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 1
 	},
@@ -4297,7 +4277,7 @@
 /area/ruin/powered)
 "Ou" = (
 /obj/structure/curtain/cloth/fancy,
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating/rust,
@@ -4397,7 +4377,7 @@
 /turf/open/floor/plating,
 /area/ruin/powered)
 "Px" = (
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},
@@ -4833,9 +4813,7 @@
 "TC" = (
 /obj/structure/bed,
 /obj/item/bedsheet/random,
-/mob/living/simple_animal/hostile/rat{
-	dir = 4
-	},
+/mob/living/basic/mouse/rat,
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
 "TD" = (
@@ -4907,7 +4885,7 @@
 /turf/open/floor/plating,
 /area/ruin/powered)
 "Ub" = (
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plating,
 /area/ruin/powered)
@@ -5086,7 +5064,7 @@
 /turf/closed/wall/r_wall/rust,
 /area/ruin/powered)
 "Vu" = (
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/effect/decal/cleanable/food/salt,
 /turf/open/floor/plating,
 /area/ruin/powered)
@@ -5327,13 +5305,13 @@
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
 "XW" = (
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
 "XY" = (
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/effect/decal/cleanable/oil/streak,
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
@@ -5356,7 +5334,7 @@
 /obj/structure/chair/comfy/beige{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /turf/open/floor/plating,
 /area/ruin/powered)
 "Yr" = (
@@ -5959,7 +5937,7 @@ bG
 Sv
 vy
 OQ
-sg
+iI
 fi
 in
 in

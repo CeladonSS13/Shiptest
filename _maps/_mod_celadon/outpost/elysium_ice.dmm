@@ -6140,7 +6140,7 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "dLT" = (
-/obj/item/reagent_containers/food/snacks/deadmouse{
+/obj/item/food/deadmouse{
 	pixel_y = 14;
 	pixel_x = 12
 	},
@@ -7248,7 +7248,7 @@
 /turf/open/floor/carpet/black,
 /area/outpost/fraction/syndi)
 "eoY" = (
-/mob/living/simple_animal/mouse/brown,
+/mob/living/basic/mouse/brown,
 /obj/effect/spawner/random/trash,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
@@ -13907,7 +13907,7 @@
 	pixel_x = -9;
 	pixel_y = 4
 	},
-/obj/item/reagent_containers/food/snacks/deadmouse{
+/obj/item/food/deadmouse{
 	pixel_y = 2
 	},
 /turf/open/floor/plating/asteroid/icerock/temperate{
@@ -14292,13 +14292,7 @@
 /obj/structure/stone_tile/surrounding/cracked{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/rat{
-	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0);
-	maxHealth = 50;
-	health = 50;
-	maxbodytemp = 1500;
-	minbodytemp = 0
-	},
+/mob/living/basic/mouse/rat,
 /turf/open/floor/plating/asteroid/icerock/smooth,
 /area/outpost/exterior)
 "ixl" = (
@@ -18675,7 +18669,7 @@
 	},
 /area/outpost/exterior)
 "llM" = (
-/obj/item/reagent_containers/food/snacks/deadmouse{
+/obj/item/food/deadmouse{
 	pixel_y = 14;
 	pixel_x = 12
 	},
@@ -20336,7 +20330,7 @@
 	pixel_y = 10;
 	pixel_x = -12
 	},
-/obj/item/reagent_containers/food/snacks/deadmouse{
+/obj/item/food/deadmouse{
 	pixel_y = 14;
 	pixel_x = 12
 	},
@@ -21241,13 +21235,7 @@
 /area/outpost/security/hall)
 "mPE" = (
 /obj/structure/stone_tile/slab,
-/mob/living/simple_animal/hostile/rat{
-	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0);
-	maxHealth = 50;
-	health = 50;
-	maxbodytemp = 1500;
-	minbodytemp = 0
-	},
+/mob/living/basic/mouse/rat,
 /turf/open/floor/plating/asteroid/icerock/smooth,
 /area/outpost/exterior)
 "mQj" = (
@@ -23787,13 +23775,7 @@
 /obj/structure/flora/rock{
 	color = "#6495ED"
 	},
-/mob/living/simple_animal/hostile/rat{
-	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0);
-	maxHealth = 50;
-	health = 50;
-	maxbodytemp = 1500;
-	minbodytemp = 0
-	},
+/mob/living/basic/mouse/rat,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "olr" = (
@@ -26621,13 +26603,7 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "pWe" = (
-/mob/living/simple_animal/hostile/rat{
-	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0);
-	maxHealth = 50;
-	health = 50;
-	maxbodytemp = 1500;
-	minbodytemp = 0
-	},
+/mob/living/basic/mouse/rat,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "pWk" = (
@@ -27502,13 +27478,7 @@
 /area/outpost/exterior)
 "qwX" = (
 /obj/structure/stone_tile/slab/cracked,
-/mob/living/simple_animal/hostile/rat{
-	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0);
-	maxHealth = 50;
-	health = 50;
-	maxbodytemp = 1500;
-	minbodytemp = 0
-	},
+/mob/living/basic/mouse/rat,
 /turf/open/floor/plating/asteroid/icerock/temperate{
 	color = "#000000"
 	},
@@ -35763,7 +35733,7 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/medical/morgue)
 "vJx" = (
-/mob/living/simple_animal/mouse/brown,
+/mob/living/basic/mouse/brown,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "vJJ" = (
@@ -39100,7 +39070,7 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/outpost/fraction/solfed)
 "xvA" = (
-/mob/living/simple_animal/mouse/brown,
+/mob/living/basic/mouse/brown,
 /obj/effect/decal/cleanable/leaper_sludge,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
