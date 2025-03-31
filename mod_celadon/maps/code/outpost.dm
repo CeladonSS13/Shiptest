@@ -119,17 +119,17 @@
 	dock_width = 56
 	dock_height = 40
 
-/datum/overmap/outpost/elysium_rock
-	token_icon_state = "station_1"
-	main_template = /datum/map_template/outpost/elysium_rock
-	elevator_template = /datum/map_template/outpost/elevator_rock
-	hangar_templates = list(
-		/datum/map_template/outpost/hangar/elysium_rock_20x20,
-		/datum/map_template/outpost/hangar/elysium_rock_40x20,
-		/datum/map_template/outpost/hangar/elysium_rock_40x40,
-		/datum/map_template/outpost/hangar/elysium_rock_56x20,
-		/datum/map_template/outpost/hangar/elysium_rock_56x40
-	)
+// /datum/overmap/outpost/elysium_rock		// Отключаем. Надо переделывать под фракционные карго
+// 	token_icon_state = "station_1"
+// 	main_template = /datum/map_template/outpost/elysium_rock
+// 	elevator_template = /datum/map_template/outpost/elevator_rock
+// 	hangar_templates = list(
+// 		/datum/map_template/outpost/hangar/elysium_rock_20x20,
+// 		/datum/map_template/outpost/hangar/elysium_rock_40x20,
+// 		/datum/map_template/outpost/hangar/elysium_rock_40x40,
+// 		/datum/map_template/outpost/hangar/elysium_rock_56x20,
+// 		/datum/map_template/outpost/hangar/elysium_rock_56x40
+// 	)
 
 /*
 	/// MARK:Independent Space Outpost
@@ -165,17 +165,17 @@
 	dock_width = 56
 	dock_height = 40
 
-/datum/overmap/outpost/elysium_space
-	token_icon_state = "station_1"
-	main_template = /datum/map_template/outpost/elysium_space
-	elevator_template = /datum/map_template/outpost/elevator_space
-	hangar_templates = list(
-		/datum/map_template/outpost/hangar/elysium_space_20x20,
-		/datum/map_template/outpost/hangar/elysium_space_40x20,
-		/datum/map_template/outpost/hangar/elysium_space_40x40,
-		/datum/map_template/outpost/hangar/elysium_space_56x20,
-		/datum/map_template/outpost/hangar/elysium_space_56x40
-	)
+// /datum/overmap/outpost/elysium_space		// Отключаем. Надо переделывать под фракционные карго
+// 	token_icon_state = "station_1"
+// 	main_template = /datum/map_template/outpost/elysium_space
+// 	elevator_template = /datum/map_template/outpost/elevator_space
+// 	hangar_templates = list(
+// 		/datum/map_template/outpost/hangar/elysium_space_20x20,
+// 		/datum/map_template/outpost/hangar/elysium_space_40x20,
+// 		/datum/map_template/outpost/hangar/elysium_space_40x40,
+// 		/datum/map_template/outpost/hangar/elysium_space_56x20,
+// 		/datum/map_template/outpost/hangar/elysium_space_56x40
+// 	)
 /*
 	/// MARK:No main level
 */
