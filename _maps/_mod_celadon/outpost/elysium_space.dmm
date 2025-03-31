@@ -1129,6 +1129,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sign/flag/elysium/directional/north,
 /turf/open/floor/plasteel,
 /area/outpost/hallway/central)
 "fe" = (
@@ -3274,6 +3275,7 @@
 "nB" = (
 /obj/effect/turf_decal/siding/thinplating/dark,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/flag/elysium/directional/south,
 /turf/open/floor/plasteel,
 /area/outpost/hallway/central)
 "nE" = (
@@ -4679,6 +4681,7 @@
 	dir = 4
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/sign/flag/elysium/directional/north,
 /turf/open/floor/plating/rust,
 /area/outpost/hallway/central)
 "ty" = (
@@ -6725,6 +6728,11 @@
 	},
 /turf/open/floor/carpet/green,
 /area/outpost/crew/bar)
+"Ch" = (
+/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/structure/sign/flag/elysium/directional/south,
+/turf/open/floor/plasteel,
+/area/outpost/hallway/central)
 "Ck" = (
 /obj/item/stack/tile/carpet,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -6791,6 +6799,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
+/obj/structure/sign/flag/elysium/directional/north,
 /turf/open/floor/plasteel,
 /area/outpost/hallway/central)
 "CE" = (
@@ -9079,6 +9088,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/sign/flag/elysium/directional/east,
 /turf/open/floor/plating,
 /area/outpost/hallway/central)
 "LZ" = (
@@ -9759,17 +9769,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/outpost/security)
-"OL" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/obj/machinery/newscaster/directional/north,
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 6
-	},
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 1
-	},
-/turf/open/floor/plasteel,
-/area/outpost/hallway/port)
 "OU" = (
 /obj/machinery/light/dim/directional/south,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -18034,7 +18033,7 @@ lm
 Yd
 Yd
 Yd
-oE
+Ch
 oX
 kG
 sw
