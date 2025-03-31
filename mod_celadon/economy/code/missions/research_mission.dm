@@ -26,9 +26,9 @@
 	desc = "We require data on the behavior of electrical storms in the system for an ongoing study. \
 			Please anchor the attached sensor array to your ship and fly it through the storms.\
 			It must be powered to collect the data. "
-	value = 3000
+	value = 2000
 	duration = 60 MINUTES
-	weight = 8
+	weight = 3
 
 	objective_type = /datum/overmap/event/electric
 
@@ -49,16 +49,16 @@
 	type_mission = "meteor"
 	value = 1500
 	weight = 4
-	num_wanted = 3
+	num_wanted = 8
 
 /datum/mission/outpost/research/carp
 	type_mission = "carp"
 	value = 750
 	weight = 4
-	num_wanted = 3
+	num_wanted = 8
 
 /datum/mission/outpost/research/dust
 	type_mission = "dust"
 	value = 400
 	weight = 4
-	num_wanted = 3
+	num_wanted = 8
