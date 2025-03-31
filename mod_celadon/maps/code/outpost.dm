@@ -134,7 +134,7 @@
 /*
 	/// MARK:Independent Space Outpost
 */
-/datum/map_template/outpost/elevator_indie
+/datum/map_template/outpost/elevator_space
 	name = "elevator_space"
 
 /datum/map_template/outpost/elysium_space
