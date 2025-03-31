@@ -49,13 +49,13 @@
 	cost = 2
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
 
-/datum/map_template/ruin/beachplanet/town
-	id = "beach_town"
-	name = "Beachside Town"
-	description = "A fresh town on a lovely coast, where its inhabitants are is unknown."
-	suffix = "beach_ocean_town.dmm"
-	cost = 3
-	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MINOR_LOOT, RUIN_TAG_LIVEABLE)
+// /datum/map_template/ruin/beachplanet/town	/// ОТКЛЮЧЕНО ИЗ-ЗА ВЫПИЛА ЗОН!
+// 	id = "beach_town"
+// 	name = "Beachside Town"
+// 	description = "A fresh town on a lovely coast, where its inhabitants are is unknown."
+// 	suffix = "beach_ocean_town.dmm"
+// 	cost = 3
+// 	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MINOR_LOOT, RUIN_TAG_LIVEABLE)
 
 /datum/map_template/ruin/beachplanet/scrapvillage
 	id = "beach_pirate"
