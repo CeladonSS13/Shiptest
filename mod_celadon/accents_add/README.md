@@ -71,7 +71,7 @@ ID мода: CELADON_ACCENTS_ADD
 
 ### Авторы:
 
-RalseiDreemuurr
+RalseiDreemuurr, MrCat15352
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.
