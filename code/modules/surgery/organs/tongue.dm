@@ -69,7 +69,7 @@
 	var/static/regex/lizard_kSS = new(@"(\w)X", "g")
 	var/static/regex/lizard_ecks = new(@"\bx([\-|r|R]|\b)", "g")
 	var/static/regex/lizard_eckS = new(@"\bX([\-|r|R]|\b)", "g")
-	// [CELADON-ADD] - ACCENTS_ADD
+	// [CELADON-ADD] - CELADON_ACCENTS_ADD
 	var/static/regex/lizard_Extended_hiss = new("с+", "g")
 	var/static/regex/lizard_Extended_hiSS = new("С+", "g")
 	var/static/regex/lizard_Extended_hich = new("ч+", "g")
@@ -88,7 +88,7 @@
 		message = lizard_kSS.Replace(message, "$1KSS")
 		message = lizard_ecks.Replace(message, "ecks$1")
 		message = lizard_eckS.Replace(message, "ECKS$1")
-		// [CELADON-ADD] - ACCENTS_ADD
+		// [CELADON-ADD] - CELADON_ACCENTS_ADD
 		message = lizard_Extended_hiss.Replace(message, pick("сссс", "ccс", "сс"))
 		message = lizard_Extended_hiSS.Replace(message, pick("СССС", "ССС", "СС"))
 		message = lizard_Extended_hich.Replace(message, pick("щщщ", "щщ", "щ"))
@@ -238,6 +238,9 @@
 	name = "hindtongue"
 	desc = "Some kind of severed bird tongue."
 	say_mod = "shrieks"
+	// [CELADON-ADD] - CELADON_ACCENTS_ADD
+	modifies_speech = TRUE
+	// [/CELADON-ADD]
 	var/static/list/languages_possible_vox = typecacheof(list(
 		/datum/language/galactic_common,
 		/datum/language/kalixcian_common,
@@ -250,6 +253,36 @@
 		/datum/language/aphasia,
 		/datum/language/vox_pidgin,
 	))
+
+// [CELADON-ADD] - CELADON_ACCENTS_ADD - Добавляем акцент воксам
+/obj/item/organ/tongue/vox/handle_speech(datum/source, list/speech_args)
+	if(speech_args[SPEECH_LANGUAGE] == /datum/language/vox_pidgin)
+		return
+
+	var/static/regex/vox_kk = new("k+", "g")
+	var/static/regex/vox_KK = new("K+", "g")
+	var/static/regex/vox_ru_kk = new("к+", "g")
+	var/static/regex/vox_ru_KK = new("К+", "g")
+
+	var/static/regex/vox_ch = new("ch+", "g")
+	var/static/regex/vox_CH = new("ch+", "g")
+	var/static/regex/vox_ru_ch = new("ч+", "g")
+	var/static/regex/vox_ru_CH = new("Ч+", "g")
+
+	var/message = speech_args[SPEECH_MESSAGE]
+	if(message[1] != "*")
+		if(prob(90))
+			message = vox_kk.Replace(message, "kik")
+			message = vox_KK.Replace(message, "Kik")
+			message = vox_ru_kk.Replace_char(message, "кик")
+			message = vox_ru_KK.Replace_char(message, "Кик")
+		if(prob(90))
+			message = vox_ch.Replace(message, "chich")
+			message = vox_CH.Replace(message, "Chich")
+			message = vox_ru_ch.Replace_char(message, "чич")
+			message = vox_ru_CH.Replace_char(message, "Чич")
+	speech_args[SPEECH_MESSAGE] = message
+// [/CELADON-ADD]
 
 /obj/item/organ/tongue/vox/Initialize(mapload)
 	. = ..()

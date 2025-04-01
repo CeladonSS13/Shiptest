@@ -12,7 +12,7 @@
 <!-- Название мода. Не важно на русском или на английском. -->
 ## Добавление акцентов
 
-ID мода: ACCENTS_ADD
+ID мода: CELADON_ACCENTS_ADD
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -28,7 +28,8 @@ ID мода: ACCENTS_ADD
 
 ### Изменения *кор кода*
 
-- ADD: `code\modules\surgery\organs\tongue.dm`: `/obj/item/organ/tongue/lizard/handle_speech`
+- ADD: `code\modules\surgery\organs\tongue.dm` : `/obj/item/organ/tongue/lizard/handle_speech`
+- ADD: `code\modules\surgery\organs\tongue.dm` : `/obj/item/organ/tongue/vox/handle_speech`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
