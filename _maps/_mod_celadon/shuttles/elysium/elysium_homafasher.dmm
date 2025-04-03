@@ -1621,6 +1621,10 @@
 /obj/effect/turf_decal/spline/plain/opaque/green{
 	dir = 1
 	},
+/mob/living/simple_animal/hostile/retaliate/goose{
+	name = "Khasir";
+	desc = "Величественный. Непоколебимый. Гусь. Он не просто птица - он существо, осознающее своё превосходство."
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "vM" = (
@@ -1899,10 +1903,6 @@
 /obj/effect/turf_decal/techfloor,
 /obj/structure/chair/handrail{
 	dir = 4
-	},
-/mob/living/simple_animal/hostile/retaliate/goose/vomit{
-	desc = "Величественный. Непоколебимый. Гусь. Он не просто птица - он существо, осознающее своё превосходство.";
-	name = "Khasir"
 	},
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
