@@ -2,7 +2,8 @@
 	name = "Mistical neznakomka"
 	icon = 'mod_celadon/_storge_icons/icons/items/toys.dmi'
 	icon_state = "neznakomka"
-	toysay = "Kuru Kuru Kuru-ru-ru-ru."
+	messages = list("Kuru Kuru Kuru-ru-ru-ru.",
+					"Ku-ku-ring~~~")
 
 /obj/item/toy/talking/barmen_tim
 	name = "Bartender Tim"

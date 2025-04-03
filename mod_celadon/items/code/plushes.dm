@@ -945,12 +945,7 @@
 	if(!COOLDOWN_FINISHED(src, cooldown))
 		return
 
-	playsound(loc, pick(
-			'mod_celadon/_storge_sounds/sound/voice/human_female_warcry_1.ogg',
-			'mod_celadon/_storge_sounds/sound/voice/human_female_warcry_2.ogg',
-			'mod_celadon/_storge_sounds/sound/voice/human_female_warcry_3.ogg',
-			'mod_celadon/_storge_sounds/sound/voice/human_female_warcry_4.ogg',
-			'mod_celadon/_storge_sounds/sound/voice/human_female_warcry_5.ogg'), 50, FALSE)
+	playsound(loc, 'mod_celadon/_storge_sounds/sound/purr.ogg', 50, FALSE)
 	var/message
 	message = "СМЕРТЬ МОНОПОЛИСТАМ!"
 	user.visible_message(span_bolddanger(message))
