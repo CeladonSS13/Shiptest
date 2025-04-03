@@ -971,12 +971,12 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "jD" = (
-/obj/effect/spawner/random/salvage_capacitor,
 /obj/effect/decal/cleanable/shreds,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /obj/machinery/airalarm/directional/north,
+/obj/effect/spawner/random/salvage/part/scanning,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "jE" = (
@@ -3253,10 +3253,10 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
 "FV" = (
-/obj/effect/spawner/random/salvage_scanning,
 /obj/effect/decal/cleanable/shreds{
 	pixel_y = 14
 	},
+/obj/effect/spawner/random/salvage/part/matter_bin,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "Gh" = (
@@ -5342,7 +5342,6 @@
 	},
 /area/ship/cargo)
 "Zf" = (
-/obj/effect/spawner/random/salvage_matter_bin,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/industrial/warning{
@@ -5351,6 +5350,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/effect/spawner/random/salvage/part/capacitor,
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "Zg" = (

@@ -20,9 +20,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "ae" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/fueled/plasma,
 /turf/open/floor/plating/airless,
 /area/ship/external/dark)
 "ag" = (
@@ -87,7 +85,6 @@
 /area/ship/bridge)
 "aD" = (
 /obj/structure/sign/poster/contraband/m90{
-	icon_state = "poster-m90";
 	pixel_x = -32
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/black{
@@ -151,9 +148,9 @@
 /turf/open/floor/carpet/red,
 /area/ship/crew/canteen)
 "aQ" = (
-/obj/machinery/porta_turret/ship/syndicate/heavy{
-	dir = 6;
-	id = "twinkle_turrets"
+/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
+	id = "twinkle_turrets";
+	dir = 6
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/bridge)
@@ -225,9 +222,7 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 1
 	},
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/machinery/door/poddoor/shutters{
 	id = "twinkle_engines";
 	dir = 4
@@ -1578,9 +1573,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/atmospherics)
 "iJ" = (
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/machinery/door/window/eastright{
 	name = "Engine Access"
 	},
@@ -2349,9 +2342,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "mW" = (
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/machinery/door/window/eastright{
 	name = "Engine Access"
 	},
@@ -3090,7 +3081,6 @@
 	req_access = list(150)
 	},
 /obj/docking_port/mobile{
-	can_move_docking_ports = 1;
 	name = "Twink Bay";
 	port_direction = 8;
 	preferred_direction = 4;
@@ -3999,9 +3989,7 @@
 	dir = 8
 	},
 /obj/structure/window/reinforced/spawner,
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
 	},
@@ -5416,9 +5404,9 @@
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/crew/office)
 "Es" = (
-/obj/machinery/porta_turret/ship/syndicate/heavy{
-	dir = 5;
-	id = "twinkle_turrets"
+/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
+	id = "twinkle_turrets";
+	dir = 5
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/bridge)
@@ -5816,8 +5804,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/light_switch{
 	dir = 8;
-	pixel_x = 20;
-	pixel_y = 0
+	pixel_x = 20
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security)
@@ -6896,8 +6883,7 @@
 	pixel_x = -6
 	},
 /obj/structure/sign/poster/contraband/syndiemoth{
-	pixel_x = -32;
-	desc = "A Syndicate-commissioned poster that uses Syndie Moth(TM?) to tell the viewer to keep the nuclear authentication disk unsecured. It's signed by 'AspEv'."
+	pixel_x = -32
 	},
 /obj/item/toy/balloon/syndicate,
 /obj/effect/turf_decal/techfloor/orange{
@@ -6906,9 +6892,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/atmospherics)
 "LX" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
@@ -7175,9 +7159,7 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 1
 	},
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
 	},
@@ -7712,9 +7694,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
 	},
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/machinery/door/poddoor/shutters{
 	id = "twinkle_engines";
 	dir = 4
@@ -7843,16 +7823,13 @@
 /obj/structure/rack,
 /obj/machinery/light/directional/north,
 /obj/item/ammo_box/magazine/m556_42_hydra/small{
-	pixel_x = -9;
-	pixel_y = 0
+	pixel_x = -9
 	},
 /obj/item/ammo_box/magazine/m556_42_hydra/small{
-	pixel_x = -4;
-	pixel_y = 0
+	pixel_x = -4
 	},
 /obj/item/ammo_box/magazine/m556_42_hydra/small{
-	pixel_x = 2;
-	pixel_y = 0
+	pixel_x = 2
 	},
 /obj/item/ammo_box/magazine/m556_42_hydra/extended{
 	pixel_x = 9;
