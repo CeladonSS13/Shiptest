@@ -4381,14 +4381,18 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/button/door{
+	id = "frontier_armory";
 	name = "Armory Door Lock";
-	pixel_y = 24;
-	pixel_x = 6;
 	normaldoorcontrol = 1;
-	specialfunctions = 4;
-	id = "frontier_armory"
+	pixel_x = 6;
+	pixel_y = 24;
+	specialfunctions = 4
 	},
 /mob/living/simple_animal/hostile/human/frontier/ranged/officer/internals,
+/obj/effect/landmark/mission_poi/main/kill{
+	already_spawned = 1;
+	type_to_spawn = /mob/living/simple_animal/hostile/human/frontier/ranged/officer/internals
+	},
 /turf/open/floor/wood,
 /area/ruin/rockplanet/distillery/office)
 "XD" = (
