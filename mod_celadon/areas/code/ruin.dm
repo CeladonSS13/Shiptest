@@ -1,3 +1,5 @@
+/// MARK: Tetta stantion
+
 /area/ruin/space/has_grav/ancientstation
 	requires_power = TRUE
 	name = "Charlie Station Main Corridor"
@@ -74,6 +76,8 @@
 	name = "Hivebot Mothership"
 	icon_state = "xenocell1"
 
+/// MARK: wasteplanet
+
 /area/ruin/wasteplanet/secure_claw
 	name = "Laboratory"
 	icon_state = "toxlab"
@@ -94,6 +98,8 @@
 	name = "Recreation area"
 	icon_state = "yellow"
 
+/// MARK: rockplanet
+
 /area/ruin/rockplanet/lasttemplar/dorm
 	name = "Barrack"
 	icon_state = "yellow"
@@ -105,6 +111,8 @@
 /area/ruin/rockplanet/lasttemplar/medbay
 	name = "Medbay"
 	icon_state = "medbay"
+
+/// MARK: asteroid
 
 /area/ruin/asteroid/wreckeroutpost/dorm
 	name = "Dorm"
