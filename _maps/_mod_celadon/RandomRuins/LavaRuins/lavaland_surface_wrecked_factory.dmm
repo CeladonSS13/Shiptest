@@ -71,12 +71,14 @@
 /turf/open/floor/plating/moss,
 /area/overmap_encounter/planetoid/lava/explored)
 "aM" = (
-/obj/item/documents/nanotrasen,
 /obj/item/spacecash/bundle/c1000,
 /obj/item/spacecash/bundle/c1000,
 /obj/item/spacecash/bundle/c1000,
 /obj/item/stock_parts/cell/gun/upgraded,
 /obj/structure/safe,
+/obj/effect/landmark/mission_poi/main{
+	type_to_spawn = /obj/item/documents/nanotrasen
+	},
 /turf/open/floor/carpet/blue,
 /area/ruin/lavaland/factory/manager_office)
 "aW" = (
@@ -160,6 +162,14 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+/obj/item/reagent_containers/hypospray/medipen/stimpack/crisis{
+	pixel_x = 8;
+	pixel_y = -2;
+	list_reagents = null
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpack/crisis{
+	list_reagents = null
+	},
 /turf/open/floor/carpet/blue,
 /area/ruin/lavaland/factory/manager_office)
 "bE" = (
@@ -228,6 +238,11 @@
 /obj/effect/mob_spawn/human/corpse/cargo_tech,
 /obj/effect/decal/cleanable/blood{
 	icon_state = "bubblegumfoot"
+	},
+/obj/effect/landmark/mission_poi/main/implanted{
+	mission_index = 3;
+	type_to_spawn = /mob/living/carbon/human;
+	already_spawned = 1
 	},
 /turf/open/floor/concrete/pavement/lava,
 /area/overmap_encounter/planetoid/lava/explored)
@@ -1059,6 +1074,17 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/factory/warehouse)
+"kn" = (
+/obj/item/reagent_containers/hypospray/medipen/stimpack{
+	list_reagents = null;
+	pixel_x = -5;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpack/crisis{
+	list_reagents = null
+	},
+/turf/open/floor/carpet/blue,
+/area/ruin/lavaland/factory/manager_office)
 "ku" = (
 /obj/structure/railing{
 	dir = 9
@@ -2186,6 +2212,24 @@
 "tV" = (
 /turf/open/floor/plating/grass/lava/purple,
 /area/overmap_encounter/planetoid/lava/explored)
+"tY" = (
+/obj/item/reagent_containers/hypospray/medipen/stimpack/crisis{
+	list_reagents = null;
+	pixel_y = 4;
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpack/crisis{
+	pixel_x = 8;
+	pixel_y = -2;
+	list_reagents = null
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpack/crisis{
+	list_reagents = null;
+	pixel_y = -7;
+	pixel_x = 2
+	},
+/turf/open/floor/carpet/blue,
+/area/ruin/lavaland/factory/manager_office)
 "uc" = (
 /obj/structure/flora/ausbushes/hell,
 /turf/open/floor/plating/asteroid/purple/lit,
@@ -2785,6 +2829,17 @@
 /obj/structure/girder/reinforced,
 /turf/open/floor/plating/rust/lava,
 /area/overmap_encounter/planetoid/cave/explored)
+"Ay" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor5"
+	},
+/obj/item/gun/ballistic/automatic/pistol/ringneck,
+/obj/effect/mob_spawn/human/corpse/ramzi,
+/turf/open/floor/wood,
+/area/ruin/lavaland/factory/manager_office)
 "AB" = (
 /obj/effect/turf_decal/trimline/opaque/beige/warning{
 	dir = 1
@@ -2937,6 +2992,10 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor5"
+	},
+/obj/effect/mob_spawn/human/corpse/ramzi,
 /turf/open/floor/wood,
 /area/ruin/lavaland/factory/manager_office)
 "Ci" = (
@@ -3947,6 +4006,10 @@
 "MY" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
+	},
+/obj/effect/decal/cleanable/blood{
+	icon_state = "trails_2";
+	dir = 10
 	},
 /turf/open/floor/wood,
 /area/ruin/lavaland/factory/manager_office)
@@ -5094,6 +5157,11 @@
 	},
 /obj/structure/sign/poster/official/enlist{
 	pixel_y = 32
+	},
+/obj/effect/landmark/mission_poi/main{
+	mission_index = 2;
+	type_to_spawn = /obj/item/clothing/accessory/medal/gold/captain;
+	already_spawned = 1
 	},
 /turf/open/floor/wood,
 /area/ruin/lavaland/factory/adminstrative)
@@ -6246,12 +6314,12 @@ LZ
 LZ
 Vn
 aM
-LP
+kn
 By
 Oc
 LP
 Wx
-LL
+Ay
 MY
 yQ
 gj
@@ -6300,7 +6368,7 @@ LZ
 LZ
 Vn
 yq
-LP
+tY
 vP
 bz
 fB
