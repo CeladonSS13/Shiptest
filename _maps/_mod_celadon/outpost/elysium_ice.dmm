@@ -3452,7 +3452,7 @@
 	pixel_y = -9
 	},
 /obj/structure/chair/bench/grey/directional/south,
-/obj/item/toy/figure/neznakomka,
+/obj/item/toy/talking/neznakomka,
 /turf/open/floor/carpet/black,
 /area/outpost/crew/lounge)
 "cdc" = (
@@ -4691,6 +4691,24 @@
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/plasteel/darkgreenfull/darkgreen,
 /area/outpost/medical/chemestry)
+"cTe" = (
+/obj/structure/rack,
+/obj/machinery/door/window/brigdoor/southleft{
+	req_one_access_txt = "8126";
+	dir = 4;
+	pixel_x = -26
+	},
+/obj/structure/window/reinforced/spawner{
+	dir = 1;
+	pixel_y = -26
+	},
+/obj/structure/window/reinforced/spawner{
+	dir = 1;
+	pixel_y = 2
+	},
+/obj/item/toy/plush/celadon/rimri/snow,
+/turf/open/floor/wood/walnut,
+/area/outpost/fraction/syndi/donkco_shop)
 "cTE" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
@@ -13524,6 +13542,24 @@
 	},
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_1)
+"icI" = (
+/obj/structure/rack,
+/obj/machinery/door/window/brigdoor/southleft{
+	req_one_access_txt = "8126";
+	dir = 4;
+	pixel_x = -26
+	},
+/obj/structure/window/reinforced/spawner{
+	dir = 1;
+	pixel_y = -26
+	},
+/obj/structure/window/reinforced/spawner{
+	dir = 1;
+	pixel_y = 2
+	},
+/obj/item/toy/plush/celadon/rimri,
+/turf/open/floor/wood/walnut,
+/area/outpost/fraction/syndi/donkco_shop)
 "idm" = (
 /obj/structure/table/scrap,
 /obj/item/reagent_containers/food/drinks/bottle/blazaam{
@@ -16951,6 +16987,7 @@
 "kdB" = (
 /obj/machinery/light/directional/east,
 /obj/structure/table/reinforced,
+/obj/machinery/mission_viewer,
 /turf/open/floor/plasteel/tech,
 /area/outpost/operations/outpost_command)
 "kdE" = (
@@ -23603,7 +23640,7 @@
 	dir = 1;
 	pixel_y = 2
 	},
-/obj/item/toy/plush/celadon/rimri,
+/obj/item/toy/plush/celadon/kira,
 /turf/open/floor/wood/walnut,
 /area/outpost/fraction/syndi/donkco_shop)
 "ocS" = (
@@ -27786,7 +27823,7 @@
 	dir = 1;
 	pixel_y = -26
 	},
-/obj/item/toy/plush/celadon/kira,
+/obj/item/toy/plush/celadon/rd,
 /turf/open/floor/wood/walnut,
 /area/outpost/fraction/syndi/donkco_shop)
 "qCk" = (
@@ -33483,6 +33520,11 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/security)
+"tYY" = (
+/obj/structure/chair/comfy/blue/directional,
+/obj/item/toy/talking/barmen_tim,
+/turf/open/floor/wood/ebony,
+/area/outpost/crew/bar/bar_zone)
 "tZQ" = (
 /obj/machinery/light/directional/north,
 /turf/open/floor/plating,
@@ -33951,6 +33993,24 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
+"uow" = (
+/obj/structure/rack,
+/obj/machinery/door/window/brigdoor/southleft{
+	req_one_access_txt = "8126";
+	dir = 4;
+	pixel_x = -26
+	},
+/obj/structure/window/reinforced/spawner{
+	dir = 1;
+	pixel_y = -26
+	},
+/obj/structure/window/reinforced/spawner{
+	dir = 1;
+	pixel_y = 2
+	},
+/obj/item/toy/plush/celadon/tora,
+/turf/open/floor/wood/walnut,
+/area/outpost/fraction/syndi/donkco_shop)
 "uoH" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -56246,7 +56306,7 @@ aGV
 roS
 roS
 guO
-bAF
+tYY
 wvh
 niK
 lUA
@@ -58548,8 +58608,8 @@ dJU
 dih
 dJU
 eVM
-rOW
-aHU
+icI
+cTe
 jZI
 dJU
 eVM
@@ -58924,7 +58984,7 @@ rgY
 rgY
 eVM
 awk
-dJU
+sOG
 dJU
 eVM
 rgY
@@ -59110,9 +59170,9 @@ rgY
 rgY
 rgY
 eVM
-awk
-dih
-dJU
+uow
+rOW
+aHU
 eVM
 rgY
 rgY

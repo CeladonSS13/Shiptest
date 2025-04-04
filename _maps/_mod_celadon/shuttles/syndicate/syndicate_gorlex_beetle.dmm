@@ -152,9 +152,7 @@
 /turf/open/floor/plasteel/strongdark,
 /area/ship/cargo)
 "cE" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced/spawner/west,
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -378,9 +376,7 @@
 /area/ship/bridge)
 "gS" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced/spawner/west,
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -511,8 +507,7 @@
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
 "jV" = (
-/obj/machinery/porta_turret/ship/syndicate/heavy{
-	dir = 5;
+/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
 	id = "Bettle_grid"
 	},
 /turf/closed/wall/mineral/plastitanium,
@@ -731,9 +726,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/power/ship_gravity,
 /obj/machinery/light/small/directional/east,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "nS" = (
@@ -983,9 +976,7 @@
 "qh" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced/spawner/west,
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -1099,9 +1090,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/strongdark,
 /area/ship/cargo)
 "sK" = (
@@ -1111,7 +1100,6 @@
 /obj/effect/turf_decal/borderfloorwhite,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/door/airlock/hatch{
-	dir = 2;
 	name = "Medbay"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -1208,8 +1196,7 @@
 	dir = 1;
 	id = "Bettle_Windows";
 	name = "Windows shutters";
-	pixel_y = -21;
-	req_access = null
+	pixel_y = -21
 	},
 /obj/machinery/firealarm/directional/east,
 /obj/effect/turf_decal/spline/fancy/transparent/syndiered{
@@ -1496,8 +1483,7 @@
 "wk" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered,
 /obj/machinery/holopad/emergency/command{
-	pixel_x = 1;
-	pixel_y = 0
+	pixel_x = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -1530,9 +1516,7 @@
 /obj/effect/turf_decal/corner/opaque/beige{
 	dir = 10
 	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/line{
-	dir = 2
-	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/line,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
@@ -1573,9 +1557,7 @@
 /obj/effect/turf_decal/corner/opaque/syndiered/diagonal{
 	dir = 8
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/machinery/light_switch{
 	dir = 1;
@@ -2246,15 +2228,12 @@
 /obj/effect/turf_decal/corner/opaque/beige{
 	dir = 10
 	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/line{
-	dir = 2
-	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/line,
 /obj/machinery/button/door{
 	dir = 1;
 	id = "Bettle_Shut";
 	name = "Airlock shutters";
-	pixel_y = -21;
-	req_access = null
+	pixel_y = -21
 	},
 /turf/open/floor/plasteel/white{
 	color = "#444547"
@@ -2264,9 +2243,7 @@
 /obj/effect/turf_decal/corner/opaque/beige{
 	dir = 10
 	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/line{
-	dir = 2
-	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/line,
 /obj/machinery/light/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
@@ -2401,9 +2378,7 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "IY" = (
@@ -2789,9 +2764,7 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/bridge)
 "Pz" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -2816,9 +2789,7 @@
 /obj/effect/turf_decal/corner/opaque/beige{
 	dir = 10
 	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/line{
-	dir = 2
-	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/line,
 /turf/open/floor/plasteel/white{
 	color = "#444547"
 	},
@@ -2841,22 +2812,13 @@
 /obj/effect/turf_decal/corner/opaque/beige/diagonal{
 	dir = 8
 	},
-/obj/structure/closet/crate/bin{
-	pixel_y = 0
-	},
+/obj/structure/closet/crate/bin,
 /obj/machinery/airalarm/directional/east,
 /obj/effect/turf_decal/spline/fancy/transparent/syndiered{
 	dir = 4
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
-"Rn" = (
-/obj/machinery/porta_turret/ship/syndicate/heavy{
-	dir = 6;
-	id = "Bettle_grid"
-	},
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/bridge)
 "Rv" = (
 /obj/effect/turf_decal/industrial/fire/cee,
 /obj/effect/turf_decal/siding/thinplating/dark/end,
@@ -3753,7 +3715,7 @@ mL
 pC
 tx
 tx
-Rn
+jV
 ta
 ta
 ta

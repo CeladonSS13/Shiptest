@@ -34,17 +34,8 @@
 /turf/open/floor/suns/dark,
 /area/ruin/rockplanet/lasttemplar/office)
 "at" = (
-/obj/machinery/porta_turret/syndicate/pod{
-	name = "sentry gun";
+/obj/machinery/porta_turret/ruin/ramzi/heavy{
 	dir = 10;
-	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging.";
-	max_integrity = 125;
-	obj_integrity = 125;
-	lethal_projectile_sound = 'sound/weapons/gun/rifle/skm.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg';
-	lethal_projectile = /obj/projectile/bullet/a65clip;
-	stun_projectile = /obj/projectile/bullet/a65clip;
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
 	id = "LastTemplar"
 	},
 /turf/open/floor/plating/asteroid/rockplanet,
@@ -591,7 +582,9 @@
 /turf/open/floor/suns/dark,
 /area/ruin/rockplanet/lasttemplar/office)
 "ps" = (
-/obj/machinery/porta_turret/ship/ramzi/light,
+/obj/machinery/porta_turret/ship/ramzi/light{
+	id = "LastTemplar"
+	},
 /turf/open/floor/plating/asteroid/rockplanet,
 /area/ruin/rockplanet/lasttemplar/office)
 "pU" = (
@@ -833,17 +826,8 @@
 /turf/open/floor/concrete/pavement/rockplanet/lit,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "vQ" = (
-/obj/machinery/porta_turret/syndicate/pod{
-	name = "sentry gun";
+/obj/machinery/porta_turret/ruin/ramzi/heavy{
 	dir = 6;
-	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging.";
-	max_integrity = 125;
-	obj_integrity = 125;
-	lethal_projectile_sound = 'sound/weapons/gun/rifle/skm.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg';
-	lethal_projectile = /obj/projectile/bullet/a65clip;
-	stun_projectile = /obj/projectile/bullet/a65clip;
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
 	id = "LastTemplar"
 	},
 /turf/open/floor/plating/asteroid/rockplanet,
@@ -887,7 +871,8 @@
 /area/ruin/rockplanet/lasttemplar/office)
 "wt" = (
 /obj/machinery/porta_turret/ship/ramzi/light{
-	dir = 8
+	dir = 8;
+	id = "LastTemplar"
 	},
 /turf/open/floor/plating/asteroid/rockplanet,
 /area/ruin/rockplanet/lasttemplar/office)
@@ -946,7 +931,9 @@
 /turf/open/floor/concrete/pavement/rockplanet/lit,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "xv" = (
-/obj/machinery/porta_turret/ship/ramzi/heavy,
+/obj/machinery/porta_turret/ship/ramzi/heavy{
+	id = "LastTemplar"
+	},
 /turf/open/floor/plating/asteroid/rockplanet,
 /area/ruin/rockplanet/lasttemplar/office)
 "xw" = (
@@ -1334,17 +1321,8 @@
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "Ey" = (
-/obj/machinery/porta_turret/syndicate/pod{
-	name = "sentry gun";
+/obj/machinery/porta_turret/ruin/ramzi/heavy{
 	dir = 9;
-	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging.";
-	max_integrity = 125;
-	obj_integrity = 125;
-	lethal_projectile_sound = 'sound/weapons/gun/rifle/skm.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg';
-	lethal_projectile = /obj/projectile/bullet/a65clip;
-	stun_projectile = /obj/projectile/bullet/a65clip;
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
 	id = "LastTemplar"
 	},
 /turf/open/floor/plating/asteroid/rockplanet,
@@ -1771,17 +1749,8 @@
 /turf/open/floor/wood/ebony,
 /area/ruin/rockplanet/lasttemplar/office)
 "NZ" = (
-/obj/machinery/porta_turret/syndicate/pod{
-	name = "sentry gun";
+/obj/machinery/porta_turret/ruin/ramzi/heavy{
 	dir = 5;
-	desc = "A ballistic machine gun auto-turret. It's been woven into the plating, and shows signs of use and aging.";
-	max_integrity = 125;
-	obj_integrity = 125;
-	lethal_projectile_sound = 'sound/weapons/gun/rifle/skm.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg';
-	lethal_projectile = /obj/projectile/bullet/a65clip;
-	stun_projectile = /obj/projectile/bullet/a65clip;
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
 	id = "LastTemplar"
 	},
 /turf/open/floor/plating/asteroid/rockplanet,

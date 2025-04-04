@@ -120,5 +120,6 @@
 		/obj/item/toy/plush/celadon/rimri,
 		/obj/item/toy/plush/celadon/rimri/snow,
 		/obj/item/toy/plush/celadon/kira,
-		/obj/item/toy/plush/celadon/mira
+		/obj/item/toy/plush/celadon/mira,
+		/obj/item/toy/plush/celadon/tora
 	)

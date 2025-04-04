@@ -420,9 +420,7 @@
 /turf/open/floor/plating,
 /area/ruin/jungle/cavecrew/dormitories)
 "eS" = (
-/obj/machinery/porta_turret/ruin/frontiersmen{
-	dir = 9
-	},
+/obj/machinery/porta_turret/ruin/ramzi,
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/storage)
 "eW" = (
@@ -448,7 +446,7 @@
 /turf/open/floor/plating/dirt/jungle,
 /area/overmap_encounter/planetoid/cave/explored)
 "fo" = (
-/obj/machinery/porta_turret/ruin/frontiersmen{
+/obj/machinery/porta_turret/ruin/ramzi{
 	dir = 5
 	},
 /turf/closed/wall/mineral/plastitanium,
@@ -571,11 +569,9 @@
 	},
 /area/ruin/jungle/cavecrew/engineering)
 "gQ" = (
-/obj/machinery/porta_turret/ruin/frontiersmen{
-	dir = 6
-	},
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/storage)
+/obj/machinery/porta_turret/ruin/ramzi,
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ruin/jungle/cavecrew/bridge)
 "gU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/thinplating/dark/corner,
@@ -2267,9 +2263,7 @@
 /turf/open/floor/plating,
 /area/ruin/jungle/cavecrew/hallway)
 "BI" = (
-/obj/machinery/porta_turret/ruin/frontiersmen{
-	dir = 1
-	},
+/obj/machinery/porta_turret/ruin/ramzi,
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/storage)
 "BO" = (
@@ -2671,9 +2665,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "GN" = (
-/obj/machinery/porta_turret/ruin/frontiersmen{
-	dir = 9
-	},
+/obj/machinery/porta_turret/ruin/ramzi,
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ruin/jungle/cavecrew/dormitories)
 "GR" = (
@@ -3648,7 +3640,7 @@
 /turf/open/water/jungle,
 /area/overmap_encounter/planetoid/cave/explored)
 "SH" = (
-/obj/machinery/porta_turret/ruin/frontiersmen{
+/obj/machinery/porta_turret/ruin/ramzi{
 	dir = 5
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
@@ -6156,14 +6148,14 @@ Ty
 Ty
 Ty
 Ty
-SH
+BI
 fO
 fO
 fO
 fO
 Ty
 Ty
-fo
+eS
 fO
 fO
 fO

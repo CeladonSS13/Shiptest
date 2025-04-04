@@ -902,13 +902,17 @@
 
 	playsound(loc, 'mod_celadon/_storge_sounds/sound/purr.ogg', 50, FALSE)
 	var/message
-	message = "Кира чувствует что ваша киска в зоне риска!"
+	message = pick("Кира чувствует что ваша киска в зоне риска!",
+					"Кира чувствует, что ты устал.",
+					"Кира не прочь помочь тебе отдохнуть.",
+					"Послышай мурчание Киры.",
+					"Пора снова в шахты! Скала и Камень!")
 	user.visible_message(span_boldnotice(message))
 	COOLDOWN_START(src, cooldown, 3 SECONDS)
 
 /obj/item/toy/plush/celadon/mira
 	name = "Mira plushie"
-	desc = "Это игрушка одета в мэид костюм. А вы эстет, раз купили такую кошечку себе."
+	desc = "Очаровательная таяра альбинос в нижнем белье, так и манит её погладить."
 	icon_state = "mira"
 	item_state = "mira"
 	w_class = WEIGHT_CLASS_SMALL
@@ -922,6 +926,27 @@
 
 	playsound(loc, 'mod_celadon/_storge_sounds/sound/emotes/tajaran/mrowss.ogg', 50, FALSE)
 	var/message
-	message = "Мрррррр~"
+	message = "Не дождешься :3"
 	user.visible_message(span_boldnotice(message))
+	COOLDOWN_START(src, cooldown, 3 SECONDS)
+
+/obj/item/toy/plush/celadon/tora
+	name = "Tora plushie"
+	desc = "Пышная и мягкая плюшевая девушка с крашером в руках и ненавистью к НТ в глазах. Взглянув на неё, так и хочется прокричать \"For the syndicate!\""
+	icon_state = "tora"
+	item_state = "tora"
+	w_class = WEIGHT_CLASS_SMALL
+	gender = FEMALE
+	COOLDOWN_DECLARE(cooldown)
+	squeak_override = list('mod_celadon/_storge_sounds/sound/emotes/tajaran/mrowss.ogg' = 1)
+
+/obj/item/toy/plush/celadon/tora/attack_self(mob/user)
+
+	if(!COOLDOWN_FINISHED(src, cooldown))
+		return
+
+	playsound(loc, 'mod_celadon/_storge_sounds/sound/purr.ogg', 50, FALSE)
+	var/message
+	message = "СМЕРТЬ МОНОПОЛИСТАМ!"
+	user.visible_message(span_bolddanger(message))
 	COOLDOWN_START(src, cooldown, 3 SECONDS)
