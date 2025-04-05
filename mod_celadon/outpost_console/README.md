@@ -31,7 +31,8 @@ ID мода: CELADON_OUTPOST_CONSOLE
 - `gun.dm`
 - `ammo.dm`
 - `magazines.dm`
-- `spacesuit_armor`
+- `spacesuit_armor.dm`
+- `exosuit_construction.dm`
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
   А также любая полезная информация.
