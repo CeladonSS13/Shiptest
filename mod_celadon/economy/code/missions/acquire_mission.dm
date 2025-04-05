@@ -89,14 +89,24 @@
 	objective_type = /mob/living/simple_animal/bot/firebot/rockplanet
 
 /*
-/// MARK: Acquire: Landmines
+/// MARK: Landmines
 */
+// Офы удалили эти миссии, а мы вернули
+/datum/mission/outpost/acquire/landmine
+	name = "Defuse landmines"
+	desc = "CLIP and Gezena have assigned us to offer a bounty to turn in disarmed ordnance for future ventures. We'll pay you well, but we're not responsible for any accidents."
+	weight = 6
+	value = 1500
+	duration = 80 MINUTES
+	dur_mod_range = 0.4
+	container_type = /obj/item/storage/toolbox/bounty/landmind
+	objective_type = /obj/item/mine/pressure/explosive
+	num_wanted = 2
 
 /datum/mission/outpost/acquire/landmine
 	type_mission = "landmine"
-
 	desc = "The Solar Federation and Vigilitas Interstellar have assigned us to offer a bounty to turn in disarmed ordnance for future ventures. We'll pay you well, but we're not responsible for any accidents."
-	value = 750
+	value = 2500
 
 /*
 /// MARK: Dogtags
@@ -316,6 +326,14 @@
 	STR.max_combined_w_class = 6
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
 	STR.max_items = 4
+
+/obj/item/storage/toolbox/bounty/landmind/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_combined_w_class = 6
+	STR.max_w_class = 5
+	STR.max_w_class = WEIGHT_CLASS_SMALL
+	STR.max_items = 5
 
 /obj/structure/closet/crate/extraction/plasma
 	name = "crate for plasma"
