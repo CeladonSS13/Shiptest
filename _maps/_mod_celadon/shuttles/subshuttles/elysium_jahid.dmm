@@ -16,7 +16,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/button/door{
 	pixel_x = 31;
-	id = "shaitan";
+	id = "jahid_window";
 	dir = 8;
 	name = "Window Shutter"
 	},
@@ -34,6 +34,9 @@
 	pixel_x = -16;
 	pixel_y = 2
 	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
@@ -47,9 +50,16 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced{
-	dir = 9
+	dir = 1
 	},
-/turf/open/floor/engine/hull,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/door/poddoor{
+	dir = 8;
+	id = "jahid_engins"
+	},
+/turf/open/floor/engine/hull/interior,
 /area/ship/bridge)
 "i" = (
 /obj/machinery/power/apc/auto_name/directional/north,
@@ -58,9 +68,30 @@
 	pixel_y = 23;
 	pixel_x = 12
 	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/wood{
 	icon_state = "wood-broken5"
 	},
+/area/ship/bridge)
+"j" = (
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/engine/hull/interior,
 /area/ship/bridge)
 "m" = (
 /obj/structure/chair/sofa/brown/old/left,
@@ -72,6 +103,9 @@
 	},
 /obj/structure/cable{
 	icon_state = "0-2"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /turf/open/floor/wood,
 /area/ship/bridge)
@@ -91,6 +125,9 @@
 	id = "shaitan"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /turf/open/floor/plating{
 	icon_state = "platingdmg2"
 	},
@@ -105,6 +142,9 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/power/terminal,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/wood{
 	icon_state = "wood-broken5"
 	},
@@ -131,6 +171,9 @@
 /obj/machinery/power/terminal{
 	dir = 1
 	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/wood{
 	icon_state = "wood-broken7"
 	},
@@ -143,6 +186,16 @@
 /obj/structure/sign/flag/separatist/directional/south{
 	pixel_y = 32
 	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/button/door{
+	id = "jahid_engins";
+	name = "Engine Shutters";
+	pixel_x = 23;
+	dir = 8;
+	pixel_y = -4
+	},
 /turf/open/floor/carpet/green,
 /area/ship/bridge)
 "A" = (
@@ -152,10 +205,6 @@
 	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
-	},
-/obj/item/bong{
-	pixel_y = -10;
-	pixel_x = 13
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/green,
@@ -185,22 +234,33 @@
 	preferred_direction = 4;
 	port_direction = 4
 	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/wood,
 /area/ship/bridge)
 "I" = (
 /obj/machinery/power/smes/shuttle/precharged{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
-	dir = 10
+/obj/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-8"
 	},
-/turf/open/floor/engine/hull,
+/obj/machinery/door/poddoor{
+	dir = 8;
+	id = "jahid_engins"
+	},
+/turf/open/floor/engine/hull/interior,
 /area/ship/bridge)
 "K" = (
 /obj/structure/chair/plastic{
 	dir = 4;
 	pixel_y = 2;
-	pixel_x = 16
+	pixel_x = 1
 	},
 /obj/machinery/holopad/emergency/command,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -224,6 +284,9 @@
 	dir = 8;
 	id = "shaitan"
 	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
@@ -232,7 +295,11 @@
 /obj/machinery/power/shuttle/engine/electric{
 	dir = 4
 	},
-/turf/open/floor/engine/hull,
+/obj/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/engine/hull/interior,
 /area/ship/bridge)
 "Q" = (
 /obj/structure/chair/sofa/brown/old/right{
@@ -252,6 +319,12 @@
 /obj/effect/decal/cleanable/shreds{
 	pixel_y = 10
 	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plating,
 /area/ship/bridge)
 "Z" = (
@@ -266,6 +339,9 @@
 	pixel_y = -15;
 	pixel_x = -10
 	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/wood,
 /area/ship/bridge)
 
@@ -274,7 +350,7 @@ P
 M
 V
 s
-P
+j
 "}
 (2,1,1) = {"
 I
