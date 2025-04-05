@@ -28,7 +28,7 @@
 /obj/item/storage/box/ammo/a556_box/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a556_45 = 4)
-	generate_items_inside(items_inside,src)	
+	generate_items_inside(items_inside,src)
 
 /obj/item/storage/box/ammo/a556_box/a856
 	name = "A856 ammo box (5.56x45mm)"
@@ -38,7 +38,7 @@
 /obj/item/storage/box/ammo/a556_box/a856/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a556_45/a856 = 4)
-	generate_items_inside(items_inside,src)	
+	generate_items_inside(items_inside,src)
 
 /obj/item/storage/box/ammo/a556_box/m903
 	name = "M903 ammo box (5.56x45mm)"
@@ -48,7 +48,7 @@
 /obj/item/storage/box/ammo/a556_box/m903/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a556_45/m903 = 4)
-	generate_items_inside(items_inside,src)	
+	generate_items_inside(items_inside,src)
 
 /obj/item/storage/box/ammo/a556_box/surplus
 	name = "surplus ammo box (5.56x45mm)"
@@ -58,7 +58,7 @@
 /obj/item/storage/box/ammo/a556_box/surplus/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a556_45/surplus = 4)
-	generate_items_inside(items_inside,src)	
+	generate_items_inside(items_inside,src)
 
 //
 //     .308
@@ -91,50 +91,57 @@
 	desc = "Коробка стандартных патронов .308 . Заводского качества, еще в смазке."
 	icon = 'mod_celadon/_storge_icons/icons/ammo/ammo.dmi'
 	icon_state = "308_fmj"
+
 /obj/item/storage/box/ammo/a308/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308 = 4)
 	generate_items_inside(items_inside,src)
 
+icons/obj/ammunition/ammo_boxes.dmi
 //Пули против мяса , минусовое пробитие , не должно пробивать даже минимальную броню , но огромный урон здоровью
 /obj/item/storage/box/ammo/a308/a308_sp
 	name = "Коробка патронов .308(Охотничий)"
 	desc = "Пуля с мягкой оболочкой , эффективна против крупной дичи , но практически бесполезна даже против базовой брони"
 	icon_state = "308_sp"
+
 /obj/item/storage/box/ammo/a308/a308_sp/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/a308_sp = 4)
-	generate_items_inside(items_inside,src)	
+	generate_items_inside(items_inside,src)
 
 //Тупое название сурплус , будет брак или некачественное исполнение. Снижен урон , минимум пробития - не для продажи
 /obj/item/storage/box/ammo/a308/a308_brak
 	name = "Коробка бракованных патронов .308"
 	desc = "Не слишком качественные патроны калибра .308 , хуже заводских но все еще годны."
 	icon_state = "a308_brak"
+
 /obj/item/storage/box/ammo/a308/a308_brak/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/a308_brak = 4)
-	generate_items_inside(items_inside,src)	
-	
+	generate_items_inside(items_inside,src)
+
 
 //Бронебойки , должны пробивать любую броню , но урон снижен
 /obj/item/storage/box/ammo/a308/a308_ap
 	name = "Коробка патронов .308(Бронебойный)"
 	desc = "Бронебойные патроны с вольфрамовым наконечником , хороши против брони но наносят не так много повреждений."
 	icon_state = "308_ap"
+
 /obj/item/storage/box/ammo/a308/a308_ap/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/a308_ap = 4)
-	generate_items_inside(items_inside,src)	
+	generate_items_inside(items_inside,src)
+
 //Резина , минимум урона здоровью , средне стамине
 /obj/item/storage/box/ammo/a308/a308_rubber
 	name = "Коробка патронов .308(Резина)"
 	desc = "Патроны с резиновой пулей , не смертельны но все еще наносят травмы."
 	icon_state = "308_rub"
+
 /obj/item/storage/box/ammo/a308/a308_rub/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/a308_rubber = 4)
-	generate_items_inside(items_inside,src)	
+	generate_items_inside(items_inside,src)
 //
 //     8x58
 //
@@ -150,10 +157,11 @@
 	desc = "A box of standard 8x58mm ammo."
 	icon = 'mod_celadon/_storge_icons/icons/ammo/ammo.dmi'
 	icon_state = "a858box"
+
 /obj/item/storage/box/ammo/a858_ammo_box/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/caseless/a858 = 4)
-	generate_items_inside(items_inside,src)	
+	generate_items_inside(items_inside,src)
 
 //
 //     410x76mm
@@ -181,7 +189,7 @@
 /obj/item/storage/box/ammo/a410_ammo_box/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a410 = 4)
-	generate_items_inside(items_inside,src)	
+	generate_items_inside(items_inside,src)
 
 /obj/item/storage/box/ammo/a410_ammo_box/slug
 	name = "Ammo box (410x76mm slug)"
@@ -191,7 +199,7 @@
 /obj/item/storage/box/ammo/a410_ammo_box/slug/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a410/slug = 4)
-	generate_items_inside(items_inside,src)	
+	generate_items_inside(items_inside,src)
 
 /obj/item/storage/box/ammo/a410_ammo_box/flechette
 	name = "Ammo box (410x76mm flechette)"
@@ -201,7 +209,7 @@
 /obj/item/storage/box/ammo/a410_ammo_box/flechette/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a410/flechette = 4)
-	generate_items_inside(items_inside,src)	
+	generate_items_inside(items_inside,src)
 
 /obj/item/storage/guncase/guncells_basic
 /obj/item/storage/guncase/guncells_basic/PopulateContents()
@@ -209,3 +217,11 @@
 	new /obj/item/stock_parts/cell/gun/empty(src)
 	new /obj/item/stock_parts/cell/gun/empty(src)
 
+/obj/item/storage/box/ammo/a308/hunterspride
+	icon = 'icons/obj/ammunition/ammo_boxes.dmi'
+
+/obj/item/storage/box/ammo/a308/hp
+	icon = 'icons/obj/ammunition/ammo_boxes.dmi'
+
+/obj/item/storage/box/ammo/a308/ap
+	icon = 'icons/obj/ammunition/ammo_boxes.dmi'
