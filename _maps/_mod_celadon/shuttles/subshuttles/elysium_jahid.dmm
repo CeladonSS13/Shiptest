@@ -1,0 +1,313 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/wall,
+/area/ship/bridge)
+"c" = (
+/obj/structure/frame/machine,
+/obj/item/circuitboard/machine/pacman,
+/obj/item/radio/intercom/wideband/directional/east,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/sign/flag/separatist/directional/south{
+	pixel_y = -31;
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/button/door{
+	pixel_x = 31;
+	id = "shaitan";
+	dir = 8;
+	name = "Window Shutter"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/carpet/green,
+/area/ship/bridge)
+"d" = (
+/obj/machinery/computer/helm/viewscreen/directional/south,
+/obj/structure/chair/sofa/brown/old/left{
+	dir = 1
+	},
+/obj/item/reagent_containers/food/drinks/waterbottle/large{
+	pixel_x = -16;
+	pixel_y = 2
+	},
+/turf/open/floor/wood{
+	icon_state = "wood-broken6"
+	},
+/area/ship/bridge)
+"e" = (
+/obj/structure/girder/reinforced,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"f" = (
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 9
+	},
+/turf/open/floor/engine/hull,
+/area/ship/bridge)
+"i" = (
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/chair/sofa/brown/old/right,
+/obj/machinery/light_switch{
+	pixel_y = 23;
+	pixel_x = 12
+	},
+/turf/open/floor/wood{
+	icon_state = "wood-broken5"
+	},
+/area/ship/bridge)
+"m" = (
+/obj/structure/chair/sofa/brown/old/left,
+/obj/machinery/light/directional/north,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/machinery/power/terminal{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/wood,
+/area/ship/bridge)
+"o" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"r" = (
+/turf/closed/wall/rust,
+/area/ship/bridge)
+"s" = (
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	id = "shaitan_holo";
+	dir = 1
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 8;
+	id = "shaitan"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
+	},
+/area/ship/bridge)
+"t" = (
+/obj/structure/sauna_oven_steam,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/item/stack/sheet/mineral/wood/twentyfive{
+	pixel_y = 2
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/terminal,
+/turf/open/floor/wood{
+	icon_state = "wood-broken5"
+	},
+/area/ship/bridge)
+"v" = (
+/obj/structure/table,
+/obj/item/storage/toolbox/mechanical{
+	pixel_y = 10;
+	pixel_x = 1
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/machinery/button/door{
+	pixel_x = -6;
+	id = "shaitan"
+	},
+/obj/machinery/button/shieldwallgen{
+	id = "shaitan_holo";
+	pixel_x = 6;
+	pixel_y = -2
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/turf/open/floor/wood{
+	icon_state = "wood-broken7"
+	},
+/area/ship/bridge)
+"w" = (
+/obj/machinery/power/smes/engineering,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/sign/flag/separatist/directional/south{
+	pixel_y = 32
+	},
+/turf/open/floor/carpet/green,
+/area/ship/bridge)
+"A" = (
+/obj/machinery/computer/helm{
+	dir = 8;
+	pixel_x = 8
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/item/bong{
+	pixel_y = -10;
+	pixel_x = 13
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/carpet/green,
+/area/ship/bridge)
+"B" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/machinery/door/firedoor/window,
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 8;
+	id = "jahid_window"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"D" = (
+/obj/effect/turf_decal/steeldecal/steel_decals_central6{
+	pixel_y = 9;
+	pixel_x = 4
+	},
+/obj/item/bong/lungbuster{
+	pixel_x = -15;
+	pixel_y = 19
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/docking_port/mobile{
+	can_move_docking_ports = 1;
+	preferred_direction = 4;
+	port_direction = 4
+	},
+/turf/open/floor/wood,
+/area/ship/bridge)
+"I" = (
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 10
+	},
+/turf/open/floor/engine/hull,
+/area/ship/bridge)
+"K" = (
+/obj/structure/chair/plastic{
+	dir = 4;
+	pixel_y = 2;
+	pixel_x = 16
+	},
+/obj/machinery/holopad/emergency/command,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/generic,
+/obj/machinery/jukebox/boombox{
+	pixel_y = 7;
+	pixel_x = 10
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/wood{
+	icon_state = "wood-broken7"
+	},
+/area/ship/bridge)
+"M" = (
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	id = "shaitan_holo"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 8;
+	id = "shaitan"
+	},
+/turf/open/floor/plating{
+	icon_state = "plating_rust"
+	},
+/area/ship/bridge)
+"P" = (
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
+/turf/open/floor/engine/hull,
+/area/ship/bridge)
+"Q" = (
+/obj/structure/chair/sofa/brown/old/right{
+	dir = 1
+	},
+/obj/machinery/light/directional/south,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/wood,
+/area/ship/bridge)
+"V" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 8;
+	id = "shaitan"
+	},
+/obj/effect/decal/cleanable/shreds{
+	pixel_y = 10
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"Z" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/item/clothing/head/cone{
+	pixel_y = 12;
+	pixel_x = -5
+	},
+/obj/item/clothing/head/cone{
+	pixel_y = -15;
+	pixel_x = -10
+	},
+/turf/open/floor/wood,
+/area/ship/bridge)
+
+(1,1,1) = {"
+P
+M
+V
+s
+P
+"}
+(2,1,1) = {"
+I
+v
+Z
+t
+f
+"}
+(3,1,1) = {"
+o
+i
+D
+d
+o
+"}
+(4,1,1) = {"
+r
+m
+K
+Q
+a
+"}
+(5,1,1) = {"
+a
+w
+A
+c
+o
+"}
+(6,1,1) = {"
+e
+a
+B
+o
+r
+"}
