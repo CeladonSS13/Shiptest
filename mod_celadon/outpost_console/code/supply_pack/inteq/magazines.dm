@@ -2,8 +2,8 @@
 	group = "Magazines"
 
 /datum/supply_pack/faction/inteq/magazine/co9mm_mag
-	name = "Commander pistol magazine (9mm)"
-	desc = "A 12-round double-stack magazine for Commander pistols. These rounds do okay damage, but struggle against armor."
+	name = "Commisioner pistol magazine"
+	desc = "A 12-round double-stack 9mm magazine for Commander pistols. These rounds do okay damage, but struggle against armor."
 	contains = list(/obj/item/ammo_box/magazine/co9mm/empty)
 	cost = 150
 
@@ -15,7 +15,7 @@
 	faction = /datum/faction/syndicate/scarborough
 
 /datum/supply_pack/faction/inteq/magazine/m20_auto_elite
-	name = "Auto Elite Magazine Crate"
+	name = "Pinscher Magazine Crate"
 	desc = "Contains a .44 Roumain magazine for the Auto Elite pistol, with a capacity of nine rounds."
 	contains = list(/obj/item/ammo_box/magazine/m20_auto_elite/empty)
 	cost = 250
@@ -57,7 +57,7 @@
 /* .308 */
 
 /datum/supply_pack/faction/inteq/magazine/f4_mag
-	name = "F4 Magazine Crate"
+	name = "SsG-04 Magazine Crate"
 	desc = "Contains a .308 magazine for SsG-04 and CM-F4 platform rifles, with a capacity of ten rounds."
 	contains = list(/obj/item/ammo_box/magazine/f4_308/empty)
 	cost = 500
