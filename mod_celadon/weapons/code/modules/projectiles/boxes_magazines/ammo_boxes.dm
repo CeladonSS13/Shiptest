@@ -97,7 +97,6 @@
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308 = 4)
 	generate_items_inside(items_inside,src)
 
-icons/obj/ammunition/ammo_boxes.dmi
 //Пули против мяса , минусовое пробитие , не должно пробивать даже минимальную броню , но огромный урон здоровью
 /obj/item/storage/box/ammo/a308/a308_sp
 	name = "Коробка патронов .308(Охотничий)"
