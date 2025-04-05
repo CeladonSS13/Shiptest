@@ -900,16 +900,14 @@
 /obj/item/clothing/glasses/eyepatch,
 /obj/item/clothing/glasses/eyepatch,
 /obj/item/clothing/glasses/eyepatch,
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/shoes/combat,
-/obj/item/clothing/shoes/combat,
-/obj/item/clothing/shoes/combat,
-/obj/item/clothing/shoes/combat,
-/obj/item/clothing/shoes/combat,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/gloves/color/black,
+/obj/item/clothing/gloves/color/black,
+/obj/item/clothing/gloves/color/black,
+/obj/item/clothing/gloves/color/black,
 /turf/open/floor/plasteel/sepia,
 /area/ship/crew/dorm)
 "hi" = (
@@ -4079,10 +4077,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm/dormthree)
-"Js" = (
-/obj/item/stock_parts/cell/gun,
-/turf/template_noop,
-/area/template_noop)
 "Jw" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
@@ -4610,6 +4604,9 @@
 	pixel_y = 2
 	},
 /obj/item/radio/intercom/directional/south,
+/obj/item/stack/sheet/metal/ten{
+	pixel_x = -4
+	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
 "Nz" = (
@@ -4729,12 +4726,8 @@
 	name = "marine armor locker";
 	req_access_txt = "1"
 	},
-/obj/item/clothing/gloves/color/black,
-/obj/item/clothing/gloves/color/black,
 /obj/item/clothing/under/syndicate/camo,
 /obj/item/clothing/under/syndicate/camo,
-/obj/item/clothing/shoes/jackboots,
-/obj/item/clothing/shoes/jackboots,
 /obj/item/clothing/suit/armor/vest/marine/medium,
 /obj/item/clothing/suit/armor/vest/marine/medium,
 /obj/item/clothing/head/helmet/bulletproof/m10,
@@ -4742,6 +4735,10 @@
 /obj/item/storage/backpack/duffelbag/sec{
 	pixel_y = -13
 	},
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/gloves/combat,
+/obj/item/clothing/gloves/combat,
 /turf/open/floor/vault,
 /area/ship/security/armory)
 "OY" = (
@@ -5616,14 +5613,14 @@
 /obj/item/clothing/suit/armor/riot,
 /obj/item/clothing/head/helmet/riot,
 /obj/item/clothing/suit/armor/laserproof,
-/obj/item/clothing/shoes/jackboots,
-/obj/item/clothing/shoes/jackboots,
-/obj/item/clothing/gloves/color/black,
-/obj/item/clothing/gloves/color/black,
 /obj/item/clothing/suit/armor/vest,
 /obj/item/clothing/suit/armor/vest,
 /obj/item/clothing/head/helmet/bulletproof/x11/frontier,
 /obj/item/clothing/head/helmet/bulletproof/x11/frontier,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/gloves/combat,
+/obj/item/clothing/gloves/combat,
 /turf/open/floor/vault,
 /area/ship/security/armory)
 "Vp" = (
@@ -6409,7 +6406,7 @@ xz
 (6,1,1) = {"
 xz
 xz
-Js
+xz
 Fm
 Fm
 lc

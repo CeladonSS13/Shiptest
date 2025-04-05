@@ -32,6 +32,7 @@
 	name = "general's hat"
 	desc = "A commanding white stetson adorned with a general's badge. Why this belongs to a captain is anybody's guess."
 	icon_state = "cowboycap"
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 
 /obj/item/clothing/head/frontier/peaked
 	name = "\improper Frontiersmen commander's cap"

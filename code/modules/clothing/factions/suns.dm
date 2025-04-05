@@ -367,6 +367,7 @@
 	item_state = "suns_captainbicorne"
 	worn_y_offset = 2
 	dog_fashion = null
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 
 /obj/item/clothing/head/suns/cmo //I was told I get one plague doctor outfit and I'm using it
 	name = "medical instructor hat"
@@ -374,6 +375,7 @@
 	icon_state = "suns_doctorhat"
 	item_state = "suns_doctorhat"
 	permeability_coefficient = 0.01
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 
 
 ////////////

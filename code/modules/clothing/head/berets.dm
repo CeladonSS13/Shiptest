@@ -22,7 +22,7 @@
 	name = "durathread beret"
 	desc =  "A beret made from durathread, its resilient fibres provide a modicum of fire protection to the wearer."
 	icon_state = "beretdurathread"
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 5, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 30, "bullet" = 25, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 
 //Color (I'll find a better solution later)
 /obj/item/clothing/head/beret/color
@@ -278,21 +278,25 @@
 	name = "\improper SolGov beret"
 	desc = "A beret with SolGov's emblem emblazoned on it. Colored in SolGov blue."
 	icon_state = "beret_solgov"
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 
 /obj/item/clothing/head/beret/solgov/plain
 	name = "\improper SolGov beret"
 	desc = "A plain blue beret. It looks like it's missing something."
 	icon_state = "beret_solgovplain"
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 
 /obj/item/clothing/head/beret/solgov/terragov
 	name = "\improper TerraGov beret"
 	desc = "A beret with SolGov's emblem emblazoned on it. It's still colored in original TerraGov green."
 	icon_state = "beret_terragov"
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 
 /obj/item/clothing/head/beret/solgov/terragov/plain
 	name = "\improper TerraGov beret"
 	desc = "A plain beret colored in original TerraGov green. It looks like it's missing something."
 	icon_state = "beret_terragovplain"
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 
 // Inteq
 

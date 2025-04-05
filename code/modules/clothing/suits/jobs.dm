@@ -91,6 +91,7 @@
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/t_scanner, /obj/item/radio)
 	resistance_flags = NONE
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/exo/large
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 5, "energy" = 0, "bomb" = 20, "bio" = 10, "rad" = 20, "fire" = 20, "acid" = 50)
 
 /obj/item/clothing/suit/hazardvest/solgov
 	name = "SolGov hazard vest"

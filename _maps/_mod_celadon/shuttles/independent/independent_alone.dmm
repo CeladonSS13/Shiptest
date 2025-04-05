@@ -69,6 +69,7 @@
 /obj/structure/closet/wall/directional/south{
 	name = "Tools"
 	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/plasteel,
 /area/ship/bridge)
 "jd" = (
@@ -223,9 +224,13 @@
 /area/ship/bridge)
 "BG" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/storage/bag/ore,
 /obj/structure/rack,
+/obj/item/storage/bag/ore,
 /obj/item/shovel,
+/obj/item/tank/internals/emergency_oxygen{
+	pixel_x = 9;
+	pixel_y = -6
+	},
 /obj/item/pickaxe/drill,
 /turf/open/floor/plasteel,
 /area/ship/bridge)
@@ -373,7 +378,8 @@
 	},
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/mod/control/pre_equipped/standard,
+/obj/item/clothing/head/helmet/space/eva,
+/obj/item/clothing/suit/space/eva,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Wp" = (
@@ -390,7 +396,7 @@
 /area/ship/bridge)
 "WS" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/newscaster/directional/north,
+/obj/item/radio/intercom/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "YD" = (

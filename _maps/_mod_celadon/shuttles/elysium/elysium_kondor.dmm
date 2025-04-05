@@ -231,6 +231,15 @@
 	pixel_x = 32
 	},
 /obj/item/grenade/c4,
+/obj/item/grenade/frag{
+	pixel_x = 5
+	},
+/obj/item/grenade/frag{
+	pixel_x = 5
+	},
+/obj/item/grenade/frag{
+	pixel_x = 5
+	},
 /turf/open/floor/plating,
 /area/ship/storage/eva)
 "fC" = (
@@ -303,6 +312,25 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/wall/directional/west,
 /obj/structure/rack,
+/obj/item/attachment/sling,
+/obj/item/attachment/sling,
+/obj/item/attachment/sling,
+/obj/item/melee/baton/cattleprod/loaded{
+	pixel_x = 2;
+	pixel_y = -3
+	},
+/obj/item/melee/baton/cattleprod/loaded{
+	pixel_x = -5
+	},
+/obj/item/melee/baton/loaded,
+/obj/item/storage/belt/bandolier{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/restraints/handcuffs/cable,
+/obj/item/restraints/handcuffs/cable,
+/obj/item/restraints/handcuffs/cable,
+/obj/item/restraints/handcuffs/cable,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "iV" = (
@@ -590,14 +618,9 @@
 /obj/item/ammo_box/magazine/skm_46_30,
 /obj/item/ammo_box/magazine/skm_46_30,
 /obj/item/ammo_box/magazine/skm_46_30,
-/obj/item/ammo_box/magazine/skm_46_30,
-/obj/item/ammo_box/magazine/skm_46_30,
-/obj/item/ammo_box/magazine/skm_46_30,
-/obj/item/ammo_box/magazine/skm_46_30,
-/obj/item/ammo_box/magazine/skm_46_30,
-/obj/item/ammo_box/magazine/skm_46_30,
-/obj/item/ammo_box/magazine/skm_46_30,
-/obj/item/ammo_box/magazine/skm_46_30,
+/obj/item/ammo_box/magazine/illestren_a850r,
+/obj/item/ammo_box/magazine/illestren_a850r,
+/obj/item/ammo_box/magazine/illestren_a850r,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "oh" = (
@@ -732,9 +755,6 @@
 "qq" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
-/obj/item/binoculars{
-	pixel_x = 7
-	},
 /obj/effect/turf_decal/elysium_logo/one_three{
 	color = "#758967"
 	},
@@ -782,13 +802,13 @@
 /obj/effect/turf_decal/box/white,
 /obj/effect/turf_decal/box/white,
 /obj/structure/closet/crate/large,
-/obj/item/stack/sheet/glass/five{
+/obj/item/stack/sheet/glass/twenty{
 	pixel_x = 2;
 	pixel_y = 5
 	},
-/obj/item/stack/sheet/metal/five{
+/obj/item/stack/sheet/metal/twenty{
 	pixel_x = -3;
-	amount = 15
+	amount = 25
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
@@ -966,22 +986,18 @@
 /area/ship/cargo)
 "uJ" = (
 /obj/structure/table,
-/obj/item/ammo_box/magazine/skm_762_40/extended,
-/obj/item/ammo_box/magazine/skm_762_40/extended,
-/obj/item/ammo_box/magazine/skm_762_40/extended,
 /obj/effect/turf_decal/elysium_logo/one_two{
 	color = "#758967"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/gun/ballistic/automatic/assault/skm{
-	pixel_y = 4;
-	pixel_x = -10
-	},
 /obj/machinery/recharger{
 	pixel_y = 3;
 	pixel_x = 7
 	},
-/obj/item/storage/belt/skimitar/full,
+/obj/item/binoculars{
+	pixel_x = -3;
+	pixel_y = 3
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "uM" = (
@@ -1173,20 +1189,10 @@
 	pixel_y = 3
 	},
 /obj/item/storage/firstaid/regular,
+/obj/item/storage/firstaid/brute,
 /obj/item/stack/medical/bruise_pack/herb{
 	pixel_x = -5;
-	name = "herbal pack";
-	amount = 8
-	},
-/obj/item/stack/medical/bruise_pack/herb{
-	pixel_x = -5;
-	name = "herbal pack";
-	amount = 8
-	},
-/obj/item/stack/medical/bruise_pack/herb{
-	pixel_x = -5;
-	name = "herbal pack";
-	amount = 8
+	name = "herbal pack"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
@@ -1321,9 +1327,15 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet,
 /obj/machinery/light/directional/north,
-/obj/item/gun/ballistic/automatic/smg/skm_carbine,
-/obj/item/gun/ballistic/automatic/smg/skm_carbine,
-/obj/item/gun/ballistic/automatic/smg/skm_carbine,
+/obj/item/gun/ballistic/automatic/smg/skm_carbine{
+	pixel_y = 2
+	},
+/obj/item/gun/ballistic/rifle/illestren{
+	pixel_y = -8
+	},
+/obj/item/gun/ballistic/shotgun/hellfire{
+	pixel_y = -2
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "DP" = (
@@ -1778,22 +1790,29 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/wall/directional/west,
 /obj/structure/rack,
+/obj/item/storage/belt/security/webbing/elysium/unload_vest_green{
+	pixel_x = -2;
+	pixel_y = 5
+	},
+/obj/item/storage/belt/security/webbing/elysium/unload_vest_green{
+	pixel_x = 4;
+	pixel_y = -2
+	},
 /obj/item/clothing/suit/armor/vest/elysium{
-	pixel_y = 2;
+	pixel_y = 8;
 	pixel_x = 4
 	},
 /obj/item/clothing/suit/armor/vest/elysium{
-	pixel_y = 2;
-	pixel_x = 4
+	pixel_x = 7
 	},
-/obj/item/clothing/suit/armor/vest/elysium{
-	pixel_y = 2;
-	pixel_x = 4
+/obj/item/clothing/head/helmet/m10_elysium{
+	pixel_y = -4;
+	pixel_x = -4
 	},
-/obj/item/clothing/head/helmet/m10_elysium,
-/obj/item/clothing/head/helmet/m10_elysium,
-/obj/item/clothing/head/helmet/m10_elysium,
-/obj/item/clothing/head/helmet/m10_elysium,
+/obj/item/clothing/head/helmet/m10_elysium{
+	pixel_x = -5;
+	pixel_y = 6
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "OJ" = (
@@ -1809,7 +1828,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/tech/grid/airless,
+/turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/electrical)
 "Pa" = (
 /obj/structure/bed/pod,
@@ -2066,16 +2085,16 @@
 	dir = 4
 	},
 /obj/structure/closet/crate/secure/weapon,
-/obj/item/grenade/frag,
-/obj/item/grenade/frag,
 /obj/item/storage/box/ammo/a762_40,
 /obj/item/storage/box/ammo/a762_40,
-/obj/item/storage/box/ammo/c46x30mm/ap,
-/obj/item/storage/box/ammo/c46x30mm/ap,
-/obj/item/storage/box/ammo/c46x30mm/ap,
-/obj/item/storage/box/ammo/c46x30mm/ap,
-/obj/item/storage/box/ammo/c46x30mm/ap,
-/obj/item/storage/box/ammo/a762_40,
+/obj/item/storage/box/ammo/c46x30mm,
+/obj/item/storage/box/ammo/c46x30mm,
+/obj/item/storage/box/ammo/c46x30mm,
+/obj/item/storage/box/ammo/a8_50r,
+/obj/item/storage/box/ammo/a8_50r,
+/obj/item/storage/box/ammo/a12g_buckshot,
+/obj/item/storage/box/ammo/a12g_rubbershot,
+/obj/item/storage/box/ammo/a12g_rubbershot,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "Us" = (
@@ -2197,6 +2216,29 @@
 	color = "#758967"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/secure_closet{
+	icon_state = "hydro";
+	name = "caid's locker";
+	req_access_txt = "20"
+	},
+/obj/item/storage/belt/skimitar/full,
+/obj/item/ammo_box/magazine/skm_762_40/extended,
+/obj/item/ammo_box/magazine/skm_762_40/extended,
+/obj/item/ammo_box/magazine/skm_762_40/extended,
+/obj/item/attachment/sling,
+/obj/item/gun/ballistic/automatic/assault/skm{
+	pixel_y = 4;
+	pixel_x = -10
+	},
+/obj/item/clothing/head/helmet/m10_elysium{
+	pixel_y = 1;
+	pixel_x = 2
+	},
+/obj/item/storage/belt/security/webbing/elysium/unload_vest_green{
+	pixel_x = -2;
+	pixel_y = 5
+	},
+/obj/item/clothing/suit/armor/vest/leather,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "Yh" = (

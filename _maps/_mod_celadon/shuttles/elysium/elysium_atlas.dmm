@@ -307,6 +307,7 @@
 /obj/item/ammo_box/magazine/skm_46_30,
 /obj/item/clothing/suit/armor/vest/security,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/storage/box/ammo/c46x30mm/ap,
 /turf/open/floor/carpet/green,
 /area/ship/crew/crewthree)
 "eJ" = (
@@ -1222,9 +1223,8 @@
 	pixel_x = 0;
 	pixel_y = 1
 	},
-/obj/item/gun/ballistic/rifle/illestren/factory{
-	pixel_x = 0;
-	pixel_y = -6
+/obj/item/gun/ballistic/automatic/marksman/woodsman{
+	pixel_y = -8
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security)
@@ -1806,11 +1806,11 @@
 	dir = 1
 	},
 /obj/structure/railing,
-/obj/structure/holosign/barrier/atmos,
 /obj/effect/spawner/random/trash/soap,
 /obj/effect/turf_decal/corner/transparent/green/half{
 	dir = 8
 	},
+/obj/structure/holosign/barrier/atmos/infinite,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "tA" = (
@@ -4091,8 +4091,8 @@
 /obj/item/ammo_box/magazine/illestren_a850r,
 /obj/item/ammo_box/magazine/illestren_a850r,
 /obj/item/ammo_box/magazine/illestren_a850r,
-/obj/item/ammo_box/magazine/illestren_a850r,
-/obj/item/ammo_box/magazine/illestren_a850r,
+/obj/item/ammo_box/magazine/m23,
+/obj/item/ammo_box/magazine/m23,
 /obj/item/storage/toolbox/ammo/a850r,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)

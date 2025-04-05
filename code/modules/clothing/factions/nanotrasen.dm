@@ -178,6 +178,7 @@
 	desc = "A thin black vest with reflective markings, worn to guarantee visibility when operating around industrial equipment or in dark or dusty conditions. Property of Nanotrasen, Inc."
 	icon_state = "engi_vest"
 	item_state = "blackcloth"
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 5, "energy" = 0, "bomb" = 20, "bio" = 10, "rad" = 20, "fire" = 20, "acid" = 50)
 
 /obj/item/clothing/suit/nanotrasen/vest/blue
 	name = "blue hazard vest"
@@ -279,12 +280,14 @@
 	righthand_file = 'icons/mob/inhands/faction/nanotrasen/nt_righthand.dmi'
 	icon_state = "com_flatcap"
 	item_state = "bluecloth"
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/head/nanotrasen/beret
 	name = "fancy blue beret"
 	desc = "A well-made beret in Nanotrasen Blue with a corporate logo on the side, often seen topping the heads of Nanotrasen, Inc. managerial staff."
 	icon_state = "beret_blue"
 	item_state = "bluecloth"
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 
 /obj/item/clothing/head/nanotrasen/beret/security
 	name = "fancy red beret"
@@ -303,6 +306,7 @@
 	desc = "A white surgical cap with a Nanotrasen Blue stripe down the middle."
 	icon_state = "surgical_white"
 	item_state = "whitecloth"
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/head/nanotrasen/surgical/blue
 	name = "blue surgical cap"
@@ -345,6 +349,7 @@
 	item_state = "bluecloth"
 	vox_override_icon = 'icons/mob/clothing/faction/nanotrasen/vox.dmi'
 	supports_variations = VOX_VARIATION
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 
 /obj/item/clothing/head/nanotrasen/officer/fedora
 	name = "officer's fedora"
@@ -357,6 +362,7 @@
 	desc = "A curious rounded hat, decorated with gold thread and a Nanotrasen logo badge. Particular to Nanotrasen, Inc. captains, though nobody is quite certain where this distinctive design originated."
 	icon_state = "com_hat"
 	item_state = "bluecloth"
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 
 /obj/item/clothing/head/nanotrasen/captain/peaked
 	name = "captain's peaked cap"

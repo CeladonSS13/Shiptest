@@ -89,6 +89,7 @@
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/uniforms.dmi'
 	icon_state = "solfed_marine"
 	item_state = "solfed_marine"
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
 
 /obj/item/clothing/under/solfed/assistant
 	name = "SolFed basic uniform"
@@ -97,6 +98,7 @@
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/uniforms.dmi'
 	icon_state = "solfed_assistant"
 	item_state = "solfed_assistant"
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/under/solfed/medical
 	name = "SolFed medical uniform"
@@ -105,6 +107,7 @@
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/uniforms.dmi'
 	icon_state = "solfed_medical"
 	item_state = "solfed_medical"
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/under/solfed/industrial
 	name = "SolFed industrial uniform"
@@ -113,12 +116,14 @@
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/uniforms.dmi'
 	icon_state = "solfed_engineer"
 	item_state = "solfed_engineer"
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 20)
 
 /obj/item/clothing/under/solfed/camo
 	name = "Solar Federation's camouflaged uniform"
 	desc = "This is a special uniform providing camouflage to SolFed's marines. Im not sure why would they need blue camo in space tho."
 	icon_state = "solfed_camo"
 	item_state = "solfed_camo"
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
 
 /obj/item/clothing/under/solfed/camo/elysium
 	name = "Elysium brigade's camouflaged uniform"
@@ -132,6 +137,7 @@
 	icon_state = "solfed_formal"
 	item_state = "solfed_formal"
 	can_adjust = FALSE
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
 
 /obj/item/clothing/under/solfed/formal/elysium
 	name = "Elysium Brigade formal uniform"
