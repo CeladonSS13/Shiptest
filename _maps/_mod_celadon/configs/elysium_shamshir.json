@@ -1,0 +1,38 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "Shamshir-class Light Flagship",
+	"map_short_name": "Shamshir",
+	"description": "«Shamshir» — лёгкий флагман Шуры аль-Мумин, созданный для быстрого перехвата различных судов. На его борту расположен малый абордажный челнок. Изначально корабли этого класса производила местная элизиумская компания, но после вхождения Элизиума в состав Солнечной Федерации она обанкротилась, и большинство её акций были распроданы за бесценок, включая и корабли. ",
+	"map_path": "_maps/_mod_celadon/shuttles/elysium/elysium_shamshir.dmm",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 5,
+	"prefix": "EUSM",
+	"faction": "/datum/faction/elysium",
+	"tags": [
+		"Combat",
+		"Subshuttle",
+		"Separatist"
+	],
+	"namelists": [
+		"SPACE",
+		"WEAPONS"
+	],
+	"job_slots": {
+		"Caid": {
+			"outfit": "/datum/outfit/job/elysium/captain",
+			"officer": true,
+			"slots": 1
+		},
+		"Mukatell": {
+			"outfit": "/datum/outfit/job/elysium/security",
+			"slots" : 3
+		},
+
+		"Ahisa`i": {
+			"outfit": "/datum/outfit/job/elysium/assistant",
+			"slots": 2
+		}
+
+	}
+}

@@ -171,3 +171,8 @@
 
 	description = "Elysium"
 	prefix = "sEUSV"
+
+/datum/map_template/shuttle/subshuttles/elysium_jahid
+	file_name = "elysium_jahid"
+	name = "Jahid Boarding Shuttle"
+	prefix = "sEUSM"
