@@ -30,6 +30,8 @@ ID мода: CELADON_OUTPOST_CONSOLE
 - `machinery.dm`
 - `gun.dm`
 - `ammo.dm`
+- `magazines.dm`
+- `spacesuit_armor`
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
   А также любая полезная информация.
@@ -97,7 +99,7 @@ ID мода: CELADON_OUTPOST_CONSOLE
 
 ### Авторы
 
-FeenieRU
+FeenieRU, MysticalFaceLesS
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.

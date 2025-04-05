@@ -8,3 +8,6 @@
 	faction = list(
 		/datum/faction/nt/ns_logi,
 	)
+
+/obj/item/drill_readout
+	layer = 4.6

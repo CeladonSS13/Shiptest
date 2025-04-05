@@ -69,6 +69,10 @@ NO_MAG_GUN_HELPER(automatic/marksman/f4/inteq)
 	new /obj/item/ammo_box/magazine/co9mm/empty(src)
 	new /obj/item/ammo_box/magazine/co9mm/empty(src)
 
+/obj/item/storage/guncase/horizonx/inteq
+/obj/item/storage/guncase/horizonx/inteq/PopulateContents()
+	new /obj/item/gun/ballistic/revolver/horizonx(src)
+
 /obj/item/storage/guncase/f4_308/inteq
 /obj/item/storage/guncase/f4_308/inteq/PopulateContents()
 	new /obj/item/gun/ballistic/automatic/marksman/f4/inteq/no_mag(src)
@@ -186,3 +190,9 @@ NO_MAG_GUN_HELPER(automatic/marksman/f4/inteq)
 /obj/item/storage/guncase/pyrogelida/PopulateContents()
 	new /obj/item/gun/energy/e_gun/plasmapistol_fire(src)
 	new /obj/item/stock_parts/cell/gun/empty(src)
+
+/obj/item/storage/guncase/g36/inteq
+/obj/item/storage/guncase/g36/inteq/PopulateContents()
+	new /obj/item/gun/ballistic/automatic/assault/g36/inteq/no_mag(src)
+	new /obj/item/ammo_box/magazine/g36/empty(src)
+	new /obj/item/ammo_box/magazine/g36/empty(src)
