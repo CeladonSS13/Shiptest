@@ -1953,7 +1953,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/manifold/orange/visible,
+/obj/machinery/atmospherics/pipe/simple/orange/hidden{
+	dir = 4
+	},
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "zj" = (
@@ -3237,12 +3239,8 @@
 /obj/effect/turf_decal/box/corners{
 	dir = 4
 	},
-/obj/effect/turf_decal/box/corners,
 /obj/structure/crate_shelf,
 /obj/structure/closet/crate/secure/loot,
-/obj/structure/closet/crate/secure/loot{
-	pixel_y = 12
-	},
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
@@ -3368,8 +3366,8 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
-/obj/machinery/atmospherics/components/unary/portables_connector/visible,
-/obj/effect/turf_decal/box/red,
+/obj/structure/closet/crate/secure/loot,
+/obj/effect/turf_decal/box/corners,
 /turf/open/floor/plasteel/patterned/ridged,
 /area/ship/cargo)
 "Qs" = (
