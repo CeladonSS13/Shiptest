@@ -289,6 +289,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/spawner/random/trash/soap,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "eH" = (
@@ -1701,6 +1702,7 @@
 /obj/item/storage/box/ammo/a12g_slug,
 /obj/item/attachment/sling,
 /obj/item/clothing/suit/armor/vest/alt,
+/obj/item/storage/box/ammo/a12g_rubbershot,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "sA" = (
@@ -3663,6 +3665,9 @@
 	pixel_x = -1;
 	pixel_y = -8
 	},
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
 /turf/open/floor/engine/hull/interior,
 /area/ship/engineering)
 "PD" = (
@@ -3794,7 +3799,6 @@
 	pixel_x = -28;
 	pixel_y = 7
 	},
-/obj/effect/spawner/random/trash/soap,
 /obj/effect/spawner/random/trash/janitor_supplies,
 /mob/living/simple_animal/hostile/asteroid/roach/tank,
 /obj/effect/decal/cleanable/blood/gibs/up,
@@ -4205,8 +4209,8 @@
 /area/ship/hallway/central)
 "TA" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/stack/rods/fifty,
 /obj/machinery/portable_atmospherics/scrubber,
+/obj/item/stack/rods/ten,
 /turf/open/floor/engine/hull/interior,
 /area/ship/engineering)
 "TD" = (
