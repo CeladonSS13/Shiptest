@@ -1,11 +1,5 @@
 /datum/supply_pack/faction/solfed/gun
-	group = "Weapons"
-
-/datum/supply_pack/faction/solfed/gun/gar
-	name = "Solar 'GAR' Carbine"
-	desc = "GAR - Gauss Assault Rifle. An extremely powerful solarian automatic rifle. Chambered in ferromagnetic lances"
-	contains = list(/obj/item/storage/guncase/gauss)
-	cost = 8000
+	group = "Guns"
 
 /datum/supply_pack/faction/solfed/gun/pistole_c
 	name = "Solar Pistole C"
@@ -23,4 +17,4 @@
 	name = "Prototype gauss rifle"
 	desc = "A high capacity experimental rifle developed by Nanotrasen. Sold to solar federation as a weapon for effective crowd control. Chambered in ferromagnetic pellets"
 	contains = list(/obj/item/storage/guncase/automatic/powered/gauss)
-	cost = 4000
+	cost = 3500
