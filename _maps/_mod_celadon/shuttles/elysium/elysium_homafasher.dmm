@@ -193,7 +193,7 @@
 	pixel_x = -6;
 	pixel_y = 4
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
 /area/ship/security/armory)
@@ -256,7 +256,7 @@
 /obj/machinery/firealarm/directional/west,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/item/pickaxe/rusted,
-/obj/item/clothing/suit/hooded/explorer,
+/obj/item/clothing/suit/hooded/explorer/old,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo/starboard)
 "dm" = (
@@ -333,7 +333,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
 /area/ship/maintenance)
@@ -372,7 +372,7 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/turf/open/floor/plating/airless,
+/turf/open/floor/plating,
 /area/ship/medical)
 "fr" = (
 /obj/machinery/porta_turret/ship/elysium{
@@ -411,7 +411,7 @@
 /obj/effect/decal/fakelattice{
 	icon_state = "lattice-23"
 	},
-/turf/open/floor/plating/airless,
+/turf/open/floor/plating,
 /area/ship/maintenance/aft)
 "fO" = (
 /obj/effect/turf_decal/borderfloorblack{
@@ -459,8 +459,8 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/turf/open/floor/plating/airless{
-	icon_state = "platingdmg1"
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
 	},
 /area/ship/maintenance)
 "go" = (
@@ -634,7 +634,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/item/pickaxe,
-/obj/item/clothing/suit/hooded/explorer,
+/obj/item/clothing/suit/hooded/explorer/old,
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
@@ -773,7 +773,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/turf/open/floor/plating/airless,
+/turf/open/floor/plating,
 /area/ship/cargo)
 "jh" = (
 /turf/closed/wall/mineral/plastitanium,
@@ -831,7 +831,7 @@
 	pixel_y = 2
 	},
 /obj/machinery/light/small/broken/directional/west,
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
 /area/ship/bridge)
@@ -874,7 +874,7 @@
 	},
 /obj/effect/decal/cleanable/blood,
 /obj/machinery/light/small/directional/north,
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
 /area/ship/maintenance)
@@ -938,7 +938,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 1
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
 /area/ship/engineering)
@@ -974,8 +974,8 @@
 	pixel_x = -1
 	},
 /obj/machinery/computer/helm/viewscreen/directional/north,
-/turf/open/floor/plating/airless{
-	icon_state = "platingdmg1"
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
 	},
 /area/ship/cargo/starboard)
 "mb" = (
@@ -1012,8 +1012,8 @@
 /obj/effect/decal/fakelattice{
 	icon_state = "lattice-8"
 	},
-/turf/open/floor/plating/airless{
-	icon_state = "platingdmg1"
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
 	},
 /area/ship/bridge)
 "mF" = (
@@ -1050,7 +1050,7 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
-/turf/open/floor/plating/airless,
+/turf/open/floor/plating,
 /area/ship/medical)
 "nK" = (
 /obj/effect/turf_decal/borderfloor/full,
@@ -1187,7 +1187,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
 	},
-/turf/open/floor/plating/airless,
+/turf/open/floor/plating,
 /area/ship/cargo)
 "qL" = (
 /obj/effect/turf_decal/industrial/hatch/orange,
@@ -1207,8 +1207,8 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/plating/airless{
-	icon_state = "platingdmg1"
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
 	},
 /area/ship/cargo/starboard)
 "rN" = (
@@ -1264,7 +1264,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
 /area/ship/cargo)
@@ -1327,8 +1327,8 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/plating/airless{
-	icon_state = "platingdmg1"
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
 	},
 /area/ship/engineering/engines)
 "sT" = (
@@ -1342,7 +1342,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
-/turf/open/floor/plating/airless,
+/turf/open/floor/plating,
 /area/ship/maintenance)
 "sX" = (
 /turf/closed/wall/r_wall/rust,
@@ -1350,7 +1350,7 @@
 "tj" = (
 /obj/machinery/airalarm/directional/east,
 /obj/effect/decal/cleanable/chem_pile,
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
 /area/ship/security/armory)
@@ -1389,8 +1389,8 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 8
 	},
-/turf/open/floor/plating/airless{
-	icon_state = "platingdmg1"
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
 	},
 /area/ship/engineering/engines)
 "tB" = (
@@ -1408,7 +1408,7 @@
 /area/ship/external/dark)
 "tX" = (
 /obj/structure/catwalk/over/plated_catwalk/white,
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
 /area/ship/medical)
@@ -1500,7 +1500,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
 /area/ship/cargo)
@@ -1551,7 +1551,7 @@
 /obj/effect/spawner/random/medical/surgery_tool/common,
 /obj/item/radio/intercom/directional/south,
 /obj/structure/table_frame,
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
 /area/ship/medical)
@@ -1567,8 +1567,8 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 4
 	},
-/turf/open/floor/plating/airless{
-	icon_state = "platingdmg1"
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
 	},
 /area/ship/engineering)
 "vi" = (
@@ -1665,7 +1665,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
 /area/ship/cargo)
@@ -1742,7 +1742,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
 /area/ship/bridge)
@@ -1896,7 +1896,7 @@
 /obj/item/stack/sheet/metal{
 	pixel_y = 5
 	},
-/turf/open/floor/plating/airless,
+/turf/open/floor/plating,
 /area/ship/maintenance)
 "yR" = (
 /obj/effect/turf_decal/corner_techfloor_grid{
@@ -1920,7 +1920,7 @@
 	faction = list("playerElysium");
 	desc = "Величественный. Непоколебимый. Гусь. Он не просто птица - он существо, осознающее своё превосходство."
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
 /area/ship/bridge)
@@ -2014,7 +2014,7 @@
 /obj/item/clothing/suit/space/syndicate/surplus,
 /obj/item/clothing/head/helmet/space/syndicate/black/red,
 /obj/item/clothing/mask/breath,
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
 /area/ship/medical)
@@ -2060,7 +2060,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 9
 	},
-/turf/open/floor/plating/airless,
+/turf/open/floor/plating,
 /area/ship/bridge)
 "AJ" = (
 /obj/effect/turf_decal/borderfloor/full,
@@ -2207,8 +2207,8 @@
 /area/ship/bridge)
 "Di" = (
 /obj/structure/bookcase/manuals/medical,
-/turf/open/floor/plating/airless{
-	icon_state = "platingdmg1"
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
 	},
 /area/ship/medical)
 "Do" = (
@@ -2270,7 +2270,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "foam_plating"
 	},
 /area/ship/cargo)
@@ -2329,7 +2329,7 @@
 /obj/structure/bodycontainer/morgue{
 	dir = 1
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
 /area/ship/maintenance)
@@ -2394,7 +2394,7 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/components/binary/pump/layer2,
-/turf/open/floor/plating/airless,
+/turf/open/floor/plating,
 /area/ship/engineering)
 "FQ" = (
 /obj/effect/turf_decal/borderfloorblack{
@@ -2556,7 +2556,7 @@
 /obj/item/clothing/head/space/elysm/space_helm,
 /obj/effect/turf_decal/spline/fancy/opaque/lime,
 /obj/structure/sign/flag/separatist/directional/south,
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
 /area/ship/security/armory)
@@ -2820,8 +2820,8 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/turf/open/floor/plating/airless{
-	icon_state = "platingdmg1"
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
 	},
 /area/ship/maintenance)
 "Lf" = (
@@ -2855,7 +2855,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
 /area/ship/maintenance/aft)
@@ -2959,7 +2959,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
 /area/ship/engineering/atmospherics)
@@ -3004,7 +3004,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
 /area/ship/maintenance/aft)
@@ -3022,7 +3022,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 1
 	},
-/turf/open/floor/plating/airless,
+/turf/open/floor/plating,
 /area/ship/maintenance)
 "MN" = (
 /obj/machinery/power/smes/shuttle/precharged,
@@ -3243,7 +3243,7 @@
 /obj/structure/closet/crate/secure/loot{
 	pixel_y = 12
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
 /area/ship/cargo)
@@ -3524,7 +3524,7 @@
 	},
 /obj/effect/decal/fakelattice,
 /obj/machinery/light/small/directional/west,
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
 /area/ship/bridge)
@@ -3649,7 +3649,7 @@
 "Th" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/structure/barricade/wooden,
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
 /area/ship/medical)
@@ -3685,7 +3685,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
 /area/ship/medical)
@@ -3736,7 +3736,7 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
 "Uc" = (
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
 /area/ship/security/armory)
@@ -3804,7 +3804,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
 /area/ship/engineering/atmospherics)
@@ -3903,7 +3903,7 @@
 /obj/machinery/atmospherics/pipe/simple/orange/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
 /area/ship/cargo)
@@ -3915,7 +3915,7 @@
 	pixel_x = -3;
 	pixel_y = -2
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
 /area/ship/medical)
@@ -3946,7 +3946,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
 /area/ship/maintenance/aft)
@@ -4100,7 +4100,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
 /area/ship/cargo)
@@ -4123,7 +4123,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/turf/open/floor/plating/airless{
+/turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
 /area/ship/medical)
