@@ -828,13 +828,12 @@
 /obj/item/clothing/head/helmet/m10_elysium,
 /obj/item/storage/box/ammo/a8_50r,
 /obj/machinery/light/directional/west,
-/obj/item/ammo_box/magazine/m23,
-/obj/item/ammo_box/magazine/m23,
-/obj/item/ammo_box/magazine/m23,
-/obj/item/ammo_box/magazine/m23,
 /obj/item/storage/belt/skimitar/full,
-/obj/item/gun/ballistic/automatic/marksman/woodsman,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/ammo_box/magazine/m23/extended,
+/obj/item/ammo_box/magazine/m23/extended,
+/obj/item/ammo_box/magazine/m23/extended,
+/obj/item/gun/ballistic/automatic/marksman/woodsman,
 /turf/open/floor/plating{
 	icon_state = "platingdmg2"
 	},
@@ -1510,23 +1509,24 @@
 	pixel_x = 10
 	},
 /obj/item/ammo_box/magazine/skm_762_40{
-	pixel_x = 10
-	},
-/obj/item/ammo_box/magazine/skm_762_40{
-	pixel_x = -6
-	},
-/obj/item/ammo_box/magazine/skm_762_40{
-	pixel_x = 1
-	},
-/obj/item/ammo_box/magazine/skm_762_40{
 	pixel_x = 5
 	},
-/obj/item/storage/box/ammo/a12g_buckshot{
-	pixel_y = 4;
-	pixel_x = -4
+/obj/item/ammo_box/magazine/skm_46_30{
+	pixel_x = -2
+	},
+/obj/item/ammo_box/magazine/skm_46_30{
+	pixel_x = -5
+	},
+/obj/item/ammo_box/magazine/skm_46_30{
+	pixel_x = -8
 	},
 /obj/item/storage/box/ammo/a12g_buckshot{
-	pixel_y = 7
+	pixel_y = 5;
+	pixel_x = -6
+	},
+/obj/item/storage/box/ammo/a12g_slug{
+	pixel_x = 4;
+	pixel_y = 11
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
@@ -2984,12 +2984,18 @@
 	icon_state = "plating";
 	dir = 1
 	},
-/obj/machinery/firealarm/directional/south,
 /obj/machinery/light_switch{
 	pixel_y = -20;
 	pixel_x = 11;
 	dir = 1
 	},
+/obj/structure/closet/wall/red/directional/south{
+	pixel_x = -2
+	},
+/obj/item/storage/box/ammo/a762_40,
+/obj/item/storage/box/ammo/a762_40,
+/obj/item/storage/box/ammo/c46x30mm/ap,
+/obj/item/storage/box/ammo/c46x30mm/ap,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/armory)
 "Do" = (
@@ -4252,6 +4258,10 @@
 	icon_state = "lattice-12";
 	color = "#8D8B8B"
 	},
+/obj/item/storage/box/ammo/a762_40/rubber{
+	pixel_y = -4;
+	color = "#808080"
+	},
 /turf/open/floor/plasteel/elevatorshaft{
 	color = "#808080"
 	},
@@ -4337,6 +4347,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "OE" = (
@@ -5382,8 +5393,6 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/gun/ballistic/automatic/assault/skm,
-/obj/item/gun/ballistic/automatic/assault/skm,
-/obj/item/gun/ballistic/shotgun/brimstone,
 /obj/structure/sign/flag/separatist/directional/south{
 	pixel_x = 16
 	},
@@ -5391,6 +5400,8 @@
 	pixel_y = -5;
 	pixel_x = 14
 	},
+/obj/item/gun/ballistic/automatic/smg/skm_carbine,
+/obj/item/gun/ballistic/shotgun/brimstone,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "ZE" = (
