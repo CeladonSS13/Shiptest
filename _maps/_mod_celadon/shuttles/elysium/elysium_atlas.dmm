@@ -3,7 +3,7 @@
 /obj/structure/frame/machine{
 	anchored = 1
 	},
-/obj/item/stack/ore/salvage,
+/obj/item/stack/ore/salvage/scrapmetal,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
@@ -248,7 +248,7 @@
 /area/ship/hallway/central)
 "ek" = (
 /obj/structure/girder/displaced,
-/obj/item/stack/ore/salvage,
+/obj/item/stack/ore/salvage/scrapmetal,
 /turf/open/floor/plating,
 /area/ship/medical)
 "em" = (
@@ -1815,7 +1815,7 @@
 /area/ship/bridge)
 "tA" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/stack/ore/salvage,
+/obj/item/stack/ore/salvage/scrapmetal,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
@@ -2013,7 +2013,7 @@
 /area/ship/engineering)
 "vN" = (
 /obj/structure/girder/displaced,
-/obj/item/stack/ore/salvage,
+/obj/item/stack/ore/salvage/scrapmetal,
 /turf/open/floor/plating{
 	initial_gas_mix = "plasma=300;TEMP=293.15"
 	},
@@ -3282,7 +3282,7 @@
 /area/ship/crew/crewtwo)
 "Ko" = (
 /obj/structure/girder/reinforced,
-/obj/item/stack/ore/salvage,
+/obj/item/stack/ore/salvage/scrapmetal,
 /turf/open/floor/plating{
 	initial_gas_mix = "plasma=300;TEMP=293.15"
 	},
