@@ -71,9 +71,9 @@ NO_MAG_GUN_HELPER(automatic/marksman/f4/inteq)
 
 /obj/item/storage/guncase/horizonx/inteq
 /obj/item/storage/guncase/horizonx/inteq/PopulateContents()
-	new /obj/item/gun/ballistic/revolver/horizonx(src)
-	new /obj/item/ammo_box/magazine/f4_308/empty(src)
-	new /obj/item/ammo_box/magazine/f4_308/empty(src)
+	new /obj/item/gun/ballistic/revolver/horizonx/no_mag(src)
+	new /obj/item/ammo_box/a357/empty(src)
+	new /obj/item/ammo_box/a357/empty(src)
 
 /obj/item/storage/guncase/f4_308/inteq
 /obj/item/storage/guncase/f4_308/inteq/PopulateContents()

@@ -12,7 +12,6 @@
 	desc = "Contains a 9mm magazine for the Kingsnake machine pistol, with a capacity of 18 rounds."
 	contains = list(/obj/item/ammo_box/magazine/m9mm_rattlesnake/empty)
 	cost = 300
-	faction = /datum/faction/syndicate/scarborough
 
 /datum/supply_pack/faction/inteq/magazine/m20_auto_elite
 	name = "Pinscher Magazine Crate"

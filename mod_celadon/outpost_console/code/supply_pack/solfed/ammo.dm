@@ -36,7 +36,7 @@
 	cost = 165
 
 /datum/supply_pack/faction/solfed/ammo/c556mmHITPap_ammo_box
-	name = "5.56 caseless AP Ammo Box Crate"
+	name = "5.56 Caseless AP Ammo Box Crate"
 	desc = "Contains a 48-round 5.56mm caseless boxloaded with armor piercing ammo."
 	contains = list(/obj/item/storage/box/ammo/c556mm_ap)
 	cost = 205
@@ -89,7 +89,7 @@
 	contains = list(/obj/item/storage/box/ammo/ferrolance)
 	cost = 285 //5 ammo efficiency at 30 damage
 
-/datum/supply_pack/faction/solfed/ammo/ferrolanceboxcrate
+/datum/supply_pack/faction/solfed/ammo/ferrolanceboxcrate_hc
 	name = "High Conductivity Lance Box Crate"
 	desc = "Contains a 48-round box for high-powered gauss guns such as the GAR assault rifle."
 	contains = list(/obj/item/storage/box/ammo/ferrolance/hc)
