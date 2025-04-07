@@ -581,10 +581,6 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
-/obj/machinery/door/airlock/multi_tile/maintenance{
-	dir = 8;
-	name = "Central Hallway"
-	},
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
 "fC" = (
@@ -818,7 +814,9 @@
 /obj/structure/closet/secure_closet{
 	icon_state = "hydro";
 	name = "caid's locker";
-	req_access_txt = "20"
+	req_access_txt = "20";
+	pixel_x = 2;
+	pixel_y = 1
 	},
 /obj/item/clothing/suit/armor/vest/security,
 /obj/item/clothing/under/utility,
@@ -2149,6 +2147,9 @@
 	pixel_x = 7;
 	pixel_y = 23;
 	id = "shamshir_engines"
+	},
+/obj/machinery/power/terminal{
+	dir = 8
 	},
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
@@ -5171,6 +5172,9 @@
 	dir = 4
 	},
 /obj/structure/reagent_dispensers/fueltank,
+/obj/machinery/power/terminal{
+	dir = 8
+	},
 /turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
