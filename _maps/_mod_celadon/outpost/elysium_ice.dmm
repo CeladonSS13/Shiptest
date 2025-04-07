@@ -11590,17 +11590,8 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /obj/machinery/door/airlock{
 	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
 	},
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/library)
@@ -32003,7 +31994,8 @@
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0);
 	maxbodytemp = 1500;
 	minbodytemp = 0;
-	hitsound_volume = 100
+	hitsound_volume = 100;
+	health = 6666
 	},
 /turf/open/floor/plating/asteroid/icerock,
 /area/outpost/exterior)
