@@ -380,6 +380,9 @@
 	},
 /turf/closed/wall/r_wall,
 /area/ship/bridge)
+"fy" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/security/armory)
 "fC" = (
 /obj/structure/railing,
 /obj/structure/crate_shelf,
@@ -1191,11 +1194,11 @@
 /area/ship/cargo)
 "qL" = (
 /obj/effect/turf_decal/industrial/hatch/orange,
-/obj/effect/decal/cleanable/glitter,
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
 	},
 /obj/machinery/portable_atmospherics/canister/toxins,
+/obj/effect/decal/cleanable/glass/plasma,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering/atmospherics)
 "qR" = (
@@ -1551,6 +1554,7 @@
 /obj/effect/spawner/random/medical/surgery_tool/common,
 /obj/item/radio/intercom/directional/south,
 /obj/structure/table_frame,
+/obj/item/stack/medical/suture/five,
 /turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
@@ -1963,7 +1967,8 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/industrial/hatch/orange,
-/obj/effect/decal/cleanable/glitter,
+/obj/effect/decal/cleanable/glass/plasma,
+/obj/effect/decal/cleanable/plasma,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering/atmospherics)
 "zp" = (
@@ -3703,9 +3708,6 @@
 	},
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/storage/firstaid{
-	pixel_y = 3
-	},
 /obj/item/stack/medical/ointment/herb,
 /obj/item/stack/medical/bruise_pack/herb,
 /obj/machinery/power/apc/auto_name/directional/south,
@@ -4584,7 +4586,7 @@ qk
 Wy
 aX
 wK
-Ju
+fy
 Ju
 az
 "}

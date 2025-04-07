@@ -15,6 +15,10 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/door/window/brigdoor/eastright,
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 8;
+	id = "atlas_engi_lockdown"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "aw" = (
@@ -174,6 +178,10 @@
 	dir = 4
 	},
 /obj/machinery/door/window/brigdoor/eastleft,
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 8;
+	id = "atlas_engi_lockdown"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "cV" = (
@@ -353,6 +361,10 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/door/window/brigdoor/eastleft,
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 8;
+	id = "atlas_engi_lockdown"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "fd" = (
@@ -887,6 +899,10 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/door/window/brigdoor/eastright,
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 8;
+	id = "atlas_engi_lockdown"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "jZ" = (
@@ -2172,7 +2188,7 @@
 /obj/item/pickaxe,
 /obj/item/pickaxe,
 /obj/structure/closet/crate,
-/obj/structure/crate_shelf/built,
+/obj/structure/crate_shelf,
 /turf/open/floor/pod/dark,
 /area/ship/cargo)
 "xU" = (
@@ -2264,6 +2280,10 @@
 	dir = 1
 	},
 /obj/machinery/door/window/brigdoor/eastleft,
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 8;
+	id = "atlas_engi_lockdown"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "yO" = (
@@ -2586,10 +2606,6 @@
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
-	},
-/obj/machinery/door/poddoor/shutters/preopen{
-	dir = 8;
-	id = "atlas_engi_lockdown"
 	},
 /obj/machinery/power/shuttle/engine/electric,
 /turf/open/floor/plating,
@@ -3162,7 +3178,6 @@
 /obj/item/clothing/gloves/color/yellow,
 /obj/item/stack/sheet/metal/twenty,
 /obj/item/stack/sheet/glass/twenty,
-/obj/structure/crate_shelf/built,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/pod/dark,
 /area/ship/cargo)
@@ -3662,9 +3677,6 @@
 	pixel_x = -1;
 	pixel_y = -8
 	},
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/tank/internals/emergency_oxygen/engi,
 /turf/open/floor/engine/hull/interior,
 /area/ship/engineering)
 "PD" = (
@@ -4843,6 +4855,10 @@
 	dir = 4
 	},
 /obj/machinery/door/window/brigdoor/eastright,
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 8;
+	id = "atlas_engi_lockdown"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Zd" = (

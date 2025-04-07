@@ -24,8 +24,7 @@
 	},
 /obj/docking_port/mobile{
 	can_move_docking_ports = 1;
-	dir = 4;
-	port_direction = 2;
+	port_direction = 4;
 	preferred_direction = 4;
 	name = "felon"
 	},
@@ -48,7 +47,6 @@
 /turf/open/floor/plating,
 /area/ship/bridge)
 "h" = (
-/obj/structure/crate_shelf/built,
 /obj/effect/decal/cleanable/plasma,
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -59,6 +57,7 @@
 /obj/structure/closet/crate/hydroponics{
 	name = "bulk ambrosia crate"
 	},
+/obj/structure/crate_shelf,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "i" = (
@@ -258,6 +257,8 @@
 /obj/structure/closet/wall/blue/directional/north{
 	icon_state = "emergency_wall"
 	},
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/item/tank/internals/emergency_oxygen/engi,
