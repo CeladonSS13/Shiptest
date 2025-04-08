@@ -46,6 +46,12 @@ NO_MAG_GUN_HELPER(automatic/marksman/f4/inteq)
 	new /obj/item/ammo_box/magazine/smgm9mm/empty(src)
 	new /obj/item/ammo_box/magazine/smgm9mm/empty(src)
 
+/obj/item/storage/guncase/cm82/solfed
+/obj/item/storage/guncase/cm82/solfed/PopulateContents()
+	new /obj/item/gun/ballistic/automatic/assault/cm82/solfed/no_mag(src)
+	new /obj/item/ammo_box/magazine/p16/empty(src)
+	new /obj/item/ammo_box/magazine/p16/empty(src)
+
 //InteQ guncases
 
 /obj/item/storage/guncase/bulldog/inteq
