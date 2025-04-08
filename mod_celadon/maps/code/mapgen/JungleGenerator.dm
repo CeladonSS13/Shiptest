@@ -245,3 +245,9 @@
 	)
 	feature_spawn_chance = 0.1
 	feature_spawn_list = list(/obj/item/rod_of_asclepius = 1)
+
+/turf/open/floor/plating/dirt/jungle/burn_tile() // Без этого земля в джунглях превращается в металлический пол.
+	return
+
+/turf/open/floor/plating/dirt/jungle/break_tile() // Без этого земля в джунглях превращается в металлический пол.
+	return
