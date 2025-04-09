@@ -1,9 +1,6 @@
 /datum/supply_pack/faction/syndicate/gun
 	group = "Guns"
 
-/datum/supply_pack/magazine/hognose_mag
-	return
-
 /datum/supply_pack/faction/syndicate/gun/himehabu
 	name = "PC-81 \"Himehabu\""
 	desc = "An astonishingly compact machine pistol firing ultra-light projectiles, designed to be as small and concealable as possible while remaining a credible threat at very close range. Armor penetration is practically non-existent. Chambered in .22."
