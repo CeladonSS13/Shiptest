@@ -1,6 +1,48 @@
 /datum/supply_pack/faction/syndicate/ammo
 	group = "Ammunition"
 
+/* 9mm */
+
+/datum/supply_pack/faction/syndicate/ammo/c9mm_ammo_box
+	name = "9mm Ammo Box Crate"
+	desc = "9mm ammo box for guns like the commander. Contains 45 shells"
+	contains = list(/obj/item/storage/box/ammo/c9mm)
+	cost = 200
+
+/datum/supply_pack/faction/syndicate/ammo/c9mmap_ammo_box
+	name = "9mm AP Ammo Box Crate"
+	desc = "Contains a 45-round 9mm box loaded with armor piercing ammo."
+	contains = list(/obj/item/storage/box/ammo/c9mm_ap)
+	cost = 250
+
+/datum/supply_pack/faction/syndicate/ammo/c9mmhp_ammo_box
+	name = "9mm HP Ammo Box Crate"
+	desc = "Contains a 45-round 9mm box loaded with hollow point ammo, great against unarmored targets."
+	contains = list(/obj/item/storage/box/ammo/c9mm_hp)
+	cost = 250
+
+/datum/supply_pack/faction/syndicate/ammo/c9mm_rubber
+	name = "9mm Rubber Ammo Box Crate"
+	desc = "Contains a 45-round 9mm box loaded with less-than-lethal rubber rounds."
+	contains = list(/obj/item/storage/box/ammo/c9mm_rubber)
+	cost = 200
+
+/* 6.5 */
+
+/datum/supply_pack/faction/syndicate/ammo/a65clip_box
+	name = "6.5x57mm Ammo Box Crate"
+	desc = "Contains a twenty-round 6.5x57mm ammo box for various sniper rifles such as the Boomslang series."
+	contains = list(/obj/item/storage/box/ammo/a65clip)
+	cost = 200
+
+/datum/supply_pack/faction/syndicate/ammo/a65clip_trackers
+	name = "6.5x57mm Tracker Shell Crate"
+	desc = "Contains a 10-round 6.5x57mm tracker box for various sniper rifles such as the Boomslang series."
+	contains = list(/obj/item/storage/box/ammo/a65clip/trac)
+	cost = 250
+
+/* .45 */
+
 /datum/supply_pack/faction/syndicate/ammo/c45_ammo_box
 	name = ".45 Ammo Box"
 	desc = "Contains a fifty-round .45"
@@ -43,32 +85,127 @@
 	contains = list(/obj/item/storage/box/ammo/a556_42/hp)
 	cost = 800
 
-/datum/supply_pack/faction/syndicate/ammo/c57x39_ammo_box
-	name = "5.7x39 Ammo Box"
-	desc = "Contains a 5.7x39mm ammo box for guns like the prototype CDW-81 Sidewinder"
+/* 5.7x39 */
+
+/datum/supply_pack/faction/syndicate/ammo/c57x39mm_boxcrate
+	name = "5.7x39mm Ammo Box Crate"
+	desc = "Contains one 80-round 5.7x39mm box for PDWs such as the Sidewinder."
 	contains = list(/obj/item/storage/box/ammo/c57x39)
-	cost = 600
+	cost = 295
 
-/datum/supply_pack/faction/syndicate/ammo/stechkinmag
-	name = "10mm Ringneck Magazine"
-	desc = "Contains a 10mm magazine for the Ringneck, containing 10 rounds."
+/datum/supply_pack/faction/syndicate/ammo/c57x39mm_ap
+	name = "5.7x39mm Armour Piercing Ammo Box Crate"
+	desc = "Contains one 80-round 5.7x39mm box for PDWs such as the Sidewinder."
+	contains = list(/obj/item/storage/box/ammo/c57x39/ap)
+	cost = 370
+
+/datum/supply_pack/faction/syndicate/ammo/c57x39mm_hp
+	name = "5.7x39mm Hollow Point Ammo Box Crate"
+	desc = "Contains one 80-round 5.7x39mm Hollow Point box for PDWs such as the Sidewinder."
+	contains = list(/obj/item/storage/box/ammo/c57x39/hp)
+	cost = 370
+
+/datum/supply_pack/faction/syndicate/ammo/c57x39mm_rubber
+	name = "5.7x39mm Rubber Ammo Box Crate"
+	desc = "Contains one 80-round 5.7x39mm Rubber box for PDWs such as the Sidewinder."
+	contains = list(/obj/item/storage/box/ammo/c57x39/rubber)
+	cost = 295
+
+/* .22lr */
+
+/datum/supply_pack/faction/syndicate/ammo/c22lr
+	name = ".22 LR Ammo Box Crate"
+	desc = "Contains a 75-round ammo box for refilling .22 LR weapons."
+	contains = list(/obj/item/storage/box/ammo/c22lr)
+	cost = 250
+
+/datum/supply_pack/faction/syndicate/ammo/c22lr_hp
+	name = ".22 LR HP Ammo Box Crate"
+	desc = "Contains a 75-round hollow point ammo box for refilling .22 LR weapons."
+	contains = list(/obj/item/storage/box/ammo/c22lr/hp)
+	cost = 310
+
+/datum/supply_pack/faction/syndicate/ammo/c22lr_ap
+	name = ".22 LR AP Ammo Box Crate"
+	desc = "Contains a 75-round armour piercing ammo box for refilling .22 LR weapons."
+	contains = list(/obj/item/storage/box/ammo/c22lr/ap)
+	cost = 310
+
+/* .45 */
+
+/datum/supply_pack/faction/syndicate/ammo/c45_ammo_box
+	name = ".45 Ammo Box Crate"
+	desc = "Contains a 48-round .45 box for SMGs like the C-20r 'Cobra'."
+	contains = list(/obj/item/storage/box/ammo/c45)
+	cost = 210
+
+/datum/supply_pack/faction/syndicate/ammo/c45ap_ammo_box
+	name = ".45 AP Ammo Box Crate"
+	desc = "Contains a 48-round .45 box loaded with armor piercing ammo."
+	contains = list(/obj/item/storage/box/ammo/c45_ap)
+	cost = 260
+
+/datum/supply_pack/faction/syndicate/ammo/c45hp_ammo_box
+	name = ".45 HP Ammo Box Crate"
+	desc = "Contains a 48-round .45 box loaded with hollow point ammo, great against unarmored targets."
+	contains = list(/obj/item/storage/box/ammo/c45_hp)
+	cost = 260
+
+/datum/supply_pack/faction/syndicate/ammo/c45mmrubber_ammo_box
+	name = ".45 Rubber Ammo Box Crate"
+	desc = "Contains a 48-round .45 box loaded with less-than-lethal rubber rounds."
+	contains = list(/obj/item/storage/box/ammo/c45_rubber)
+	cost = 210
+
+/* .357 */
+
+/datum/supply_pack/faction/syndicate/ammo/a357_ammo_box
+	name = ".357 Ammo Box Crate"
+	desc = "Contains a 48-round .357 box for revolvers such as the R-23 'Viper' revolver and the HP Firebrand."
+	contains = list(/obj/item/storage/box/ammo/a357)
+	cost = 255
+
+/datum/supply_pack/faction/syndicate/ammo/a357hp_ammo_box
+	name = ".357 HP Ammo Box Crate"
+	desc = "Contains a 48-round .357 box loaded with hollow point ammo, great against unarmored targets."
+	contains = list(/obj/item/storage/box/ammo/a357_hp)
+	cost = 320
+
+/datum/supply_pack/faction/syndicate/ammo/a357match_ammo_box
+	name = ".357 Match Ammo Box Crate"
+	desc = "Contains a 48-round .357 match box for better performance against armor."
+	contains = list(/obj/item/storage/box/ammo/a357_match)
+	cost = 320
+
+/* 12 Gauge */
+
+/datum/supply_pack/faction/syndicate/ammo/buckshot
+	name = "Buckshot Crate"
+	desc = "Contains a box of 32 12 gauge buckshot shells for use in lethal persuasion."
 	cost = 500
-	contains = list(/obj/item/ammo_box/magazine/m10mm_ringneck)
+	contains = list(/obj/item/storage/box/ammo/a12g_buckshot)
 
-/datum/supply_pack/faction/syndicate/ammo/smgm45ammo
-	name = ".45 Cobra Magazine Crate"
-	desc = "Contains a .45 magazine for the Cobra-20, containing 24 rounds."
-	cost = 750
-	contains = list(/obj/item/ammo_box/magazine/m45_cobra)
+/datum/supply_pack/faction/syndicate/ammo/slugs
+	name = "Shotgun Slug Crate"
+	desc = "Contains a box of 32 12 gauge slug shells for use in lethal persuasion."
+	cost = 205
+	contains = list(/obj/item/storage/box/ammo/a12g_slug)
 
-/datum/supply_pack/faction/syndicate/ammo/hydramagazine
-	name = "5.56x42 Hydra Magazine"
-	desc = "Contains a 5.56x42mm magazine for the Hydra assault rifle, containing 30 rounds."
-	cost = 900
-	contains = list(/obj/item/ammo_box/magazine/m556_42_hydra)
+/datum/supply_pack/faction/syndicate/ammo/blank_shells
+	name = "Blank Shell Crate"
+	desc = "Contains a box of 12 gauge blank shells."
+	cost = 200
+	contains = list(/obj/item/storage/box/ammo/a12g_blank)
 
-/datum/supply_pack/faction/syndicate/ammo/sidewindermagazine
-	name = "5.7x39 Sidewinder Magazine"
-	desc = "Contains a 5.7x39mm magazine for the Sidewinder submachine gun, containing 30 rounds."
-	cost = 800
-	contains = list(/obj/item/ammo_box/magazine/m57_39_sidewinder)
+/datum/supply_pack/faction/syndicate/ammo/rubbershot
+	name = "Rubbershot Crate"
+	desc = "Contains a box of 32 12 gauge rubbershot shells. Perfect for crowd control and training."
+	cost = 500
+	contains = list(/obj/item/storage/box/ammo/a12g_rubbershot)
+
+/datum/supply_pack/faction/syndicate/ammo/techshells
+	name = "Unloaded Shotgun Technological Shells Crate"
+	desc = "Contains a box of 7 versatile tech shells, capable of producing a variety of deadly effects for any situation. Some assembly required."
+	cost = 210
+	contains = list(/obj/item/storage/box/techshot)
+
