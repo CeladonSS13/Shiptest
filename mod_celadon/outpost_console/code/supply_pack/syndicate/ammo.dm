@@ -70,19 +70,19 @@
 /* 10mm */
 
 /datum/supply_pack/faction/syndicate/ammo/c10mm_ammo_box
-	name = "10mm Ammo Box"
+	name = "10mm Ammo Box Crate"
 	desc = "Contains a 10mm ammo box for guns like the Ringneck"
 	contains = list(/obj/item/storage/box/ammo/c10mm)
 	cost = 350
 
 /datum/supply_pack/faction/syndicate/ammo/c10mm_ammo_box_ap
-	name = "10mm AP Ammo Box"
+	name = "10mm AP Ammo Box Crate"
 	desc = "Contains a 10mm AP ammo box for guns like the Ringneck"
 	contains = list(/obj/item/storage/box/ammo/c10mm_ap)
 	cost = 350
 
 /datum/supply_pack/faction/syndicate/ammo/c10mm_ammo_box_hp
-	name = "10mm HP Ammo Box"
+	name = "10mm HP Ammo Box Crate"
 	desc = "Contains a 10mm HP ammo box for guns like the Ringneck"
 	contains = list(/obj/item/storage/box/ammo/c10mm_hp)
 	cost = 350
@@ -122,13 +122,13 @@
 	cost = 295
 
 /datum/supply_pack/faction/syndicate/ammo/c57x39mm_ap
-	name = "5.7x39mm Armour Piercing Ammo Box Crate"
+	name = "5.7x39mm AP Ammo Box Crate"
 	desc = "Contains one 80-round 5.7x39mm box for PDWs such as the Sidewinder."
 	contains = list(/obj/item/storage/box/ammo/c57x39/ap)
 	cost = 370
 
 /datum/supply_pack/faction/syndicate/ammo/c57x39mm_hp
-	name = "5.7x39mm Hollow Point Ammo Box Crate"
+	name = "5.7x39mm HP Ammo Box Crate"
 	desc = "Contains one 80-round 5.7x39mm Hollow Point box for PDWs such as the Sidewinder."
 	contains = list(/obj/item/storage/box/ammo/c57x39/hp)
 	cost = 370
@@ -174,19 +174,19 @@
 /* 5.56x42mm */
 
 /datum/supply_pack/faction/syndicate/ammo/c556_ammo_box
-	name = "5.56x42 Ammo Box"
+	name = "5.56x42 Ammo Box Crate"
 	desc = "Contains a 5.56x42mm ammo box for guns like the SMR-80 Hydra"
 	contains = list(/obj/item/storage/box/ammo/a556_42)
 	cost = 700
 
 /datum/supply_pack/faction/syndicate/ammo/c556_ammo_box_ap
-	name = "5.56x42 AP Ammo Box"
+	name = "5.56x42 AP Ammo Box Crate"
 	desc = "Contains a 5.56x42mm AP ammo box for guns like the SMR-80 Hydra"
 	contains = list(/obj/item/storage/box/ammo/a556_42/ap)
 	cost = 900
 
 /datum/supply_pack/faction/syndicate/ammo/c556_ammo_box_hp
-	name = "5.56x42 HP Ammo Box"
+	name = "5.56x42 HP Ammo Box Crate"
 	desc = "Contains a 5.56x42mm HP ammo box for guns like the SMR-80 Hydra"
 	contains = list(/obj/item/storage/box/ammo/a556_42/hp)
 	cost = 800
