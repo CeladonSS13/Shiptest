@@ -128,21 +128,21 @@
 /* 7.62 */
 
 /datum/supply_pack/faction/inteq/ammo/a762_ammo_box
-	name = "7.62x40mm CLIP Ammo Box Crate"
-	desc = "Contains two 60-round 7.62x40mm CLIP ammo, issued by IRMG."
+	name = "7.62x40mm Ammo Box Crate"
+	desc = "Contains two 60-round 7.62x40mm ammo, issued by IRMG."
 	contains = list(/obj/item/storage/box/ammo/a762_40/inteq,
 					/obj/item/storage/box/ammo/a762_40/inteq)
 	cost = 700
 
 /datum/supply_pack/faction/inteq/ammo/a762_ap
-	name = "7.62x40mm CLIP Armour Piercing Ammo Box Crate"
-	desc = "Contains one 60-round 7.62x40mm CLIP Armour Piercing box for the SKM rifles."
+	name = "7.62x40mm Armour Piercing Ammo Box Crate"
+	desc = "Contains one 60-round 7.62x40mm Armour Piercing box for the SKM rifles."
 	contains = list(/obj/item/storage/box/ammo/a762_40/ap)
 	cost = 450
 
 /datum/supply_pack/faction/inteq/ammo/a762_hp
-	name = "7.62x40mm CLIP Hollow Point Ammo Box Crate"
-	desc = "Contains one 60-round 7.62x40mm CLIP Hollow Point box for the SKM rifles."
+	name = "7.62x40mm Hollow Point Ammo Box Crate"
+	desc = "Contains one 60-round 7.62x40mm Hollow Point box for the SKM rifles."
 	contains = list(/obj/item/storage/box/ammo/a762_40/hp)
 	cost = 450
 
