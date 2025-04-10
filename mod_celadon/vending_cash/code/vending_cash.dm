@@ -15,14 +15,14 @@
 		if(bank_account && !all_items_free && !mining_point_vendor)
 			var/obj/item/holochip/chip = I
 			bank_account.adjust_money(chip.credits)
-			to_chat(user, "<span class='notice'>You insert [I] into [name].</span>")
+			to_chat(user, span_notice("You insert [I] into [name]."))
 			qdel(I)
 
 	if(istype(I, /obj/item/spacecash))
 		if(bank_account && !all_items_free && !mining_point_vendor)
 			var/obj/item/spacecash/cash = I
 			bank_account.adjust_money(cash.value)
-			to_chat(user, "<span class='notice'>You insert [I] into [name].</span>")
+			to_chat(user, span_notice("You insert [I] into [name]."))
 			qdel(I)
 
 // Добавляем UI данные

@@ -1,7 +1,7 @@
-/datum/supply_pack/faction/solfed/spacesuit_armor
+/datum/supply_pack/faction/solfed/spacesuit
 	group = "Spacesuits"
 
-/datum/supply_pack/faction/solfed/spacesuit_armor/med_hardsuit
+/datum/supply_pack/faction/solfed/spacesuit/med_hardsuit
 	name = "Medical Hardsuit Crate"
 	desc = "One medical hardsuit, resistant to diseases and useful for retrieving patients in space."
 	cost = 1500

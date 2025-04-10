@@ -16,7 +16,7 @@
 /datum/mission/outpost/research/New(...)
 	researcher_name = SSmissions.get_researcher_name()
 	num_wanted = rand(num_wanted - 1, num_wanted + 1)
-	value += num_wanted * 150
+	// value += num_wanted * 150	// [CELADON-REMOVE] - CELADON_ECONOMY
 	desc = researcher_name + desc
 	return ..()
 

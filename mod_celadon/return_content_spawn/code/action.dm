@@ -22,11 +22,11 @@
 		return
 	var/obj/item/clothing/glasses/prism_glasses/glasses = target
 	if(locate(/obj/structure/light_prism) in get_turf(owner))
-		to_chat(owner, "<span class='warning'>There isn't enough ambient energy to fabricate another light prism here.</span>")
+		to_chat(owner, span_warning("There isn't enough ambient energy to fabricate another light prism here."))
 		return
 	if(istype(glasses))
 		if(!glasses.glasses_color)
-			to_chat(owner, "<span class='warning'>The lens is oddly opaque...</span>")
+			to_chat(owner, span_warning("The lens is oddly opaque..."))
 			return
-		to_chat(owner, "<span class='notice'>You channel nearby light into a glowing, ethereal prism.</span>")
+		to_chat(owner, span_notice("You channel nearby light into a glowing, ethereal prism."))
 		new /obj/structure/light_prism(get_turf(owner), glasses.glasses_color)

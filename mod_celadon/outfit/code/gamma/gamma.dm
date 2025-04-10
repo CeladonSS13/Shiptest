@@ -33,7 +33,7 @@
 			flags_cover ^= visor_flags_cover
 			icon_state = "[initial(icon_state)][up ? "up" : ""]"
 			item_state = "[initial(item_state)][up ? "up" : ""]"
-			to_chat(user, "<span class='notice'>[up ? alt_toggle_message : toggle_message] \the [src].</span>")
+			to_chat(user, span_notice("[up ? alt_toggle_message : toggle_message] \the [src]."))
 
 			if(active)
 				user.lighting_alpha = 192

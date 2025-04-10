@@ -11,10 +11,10 @@
 		return
 
 	if(user.has_language(/datum/language/elysm))
-		to_chat(user, "<span class='boldwarning'>You start skimming through [src], but you already know Elysm.</span>")
+		to_chat(user, span_boldwarning("You start skimming through [src], but you already know Elysm."))
 		return
 
-	to_chat(user, "<span class='boldannounce'>You start skimming through [src], and suddenly your mind is filled with arabic symbols.</span>")
+	to_chat(user, span_boldannounce("You start skimming through [src], and suddenly your mind is filled with arabic symbols."))
 	user.grant_language(/datum/language/elysm, TRUE, TRUE, LANGUAGE_MIND)
 
 
@@ -28,11 +28,11 @@
 	playsound(loc, "punch", 25, TRUE, -1)
 
 	if(M.stat == DEAD)
-		M.visible_message("<span class='danger'>[user] smacks [M]'s lifeless corpse with [src].</span>", "<span class='userdanger'>[user] smacks your lifeless corpse with [src].</span>", "<span class='hear'>You hear smacking.</span>")
+		M.visible_message(span_danger("[user] smacks [M]'s lifeless corpse with [src]."), span_userdanger("[user] smacks your lifeless corpse with [src]."), span_hear("You hear smacking."))
 	else if(M.has_language(/datum/language/elysm))
-		M.visible_message("<span class='danger'>[user] beats [M] over the head with [src]!</span>", "<span class='userdanger'>[user] beats you over the head with [src]!</span>", "<span class='hear'>You hear smacking.</span>")
+		M.visible_message(span_danger("[user] beats [M] over the head with [src]!"), span_userdanger("[user] beats you over the head with [src]!"), span_hear("You hear smacking."))
 	else
-		M.visible_message("<span class='notice'>[user] teaches [M] by beating [M.p_them()] over the head with [src]!</span>", "<span class='boldnotice'>As [user] hits you with [src], arabic symbols flow through your mind.</span>", "<span class='hear'>You hear smacking.</span>")
+		M.visible_message(span_notice("[user] teaches [M] by beating [M.p_them()] over the head with [src]!"), span_boldnotice("As [user] hits you with [src], arabic symbols flow through your mind."), span_hear("You hear smacking."))
 		M.grant_language(/datum/language/elysm, TRUE, TRUE, LANGUAGE_MIND)
 
 /obj/item/alquadim_manual
@@ -48,10 +48,10 @@
 		return
 
 	if(user.has_language(/datum/language/alquadim))
-		to_chat(user, "<span class='boldwarning'>You start skimming through [src], but you already know Alquadim-Elysm.</span>")
+		to_chat(user, span_boldwarning("You start skimming through [src], but you already know Alquadim-Elysm."))
 		return
 
-	to_chat(user, "<span class='boldannounce'>You start skimming through [src], and suddenly your mind is filled with arabic symbols.</span>")
+	to_chat(user, span_boldannounce("You start skimming through [src], and suddenly your mind is filled with arabic symbols."))
 	user.grant_language(/datum/language/alquadim, TRUE, TRUE, LANGUAGE_MIND)
 
 
@@ -65,11 +65,11 @@
 	playsound(loc, "punch", 25, TRUE, -1)
 
 	if(M.stat == DEAD)
-		M.visible_message("<span class='danger'>[user] smacks [M]'s lifeless corpse with [src].</span>", "<span class='userdanger'>[user] smacks your lifeless corpse with [src].</span>", "<span class='hear'>You hear smacking.</span>")
+		M.visible_message(span_danger("[user] smacks [M]'s lifeless corpse with [src]."), span_userdanger("[user] smacks your lifeless corpse with [src]."), span_hear("You hear smacking."))
 	else if(M.has_language(/datum/language/alquadim))
-		M.visible_message("<span class='danger'>[user] beats [M] over the head with [src]!</span>", "<span class='userdanger'>[user] beats you over the head with [src]!</span>", "<span class='hear'>You hear smacking.</span>")
+		M.visible_message(span_danger("[user] beats [M] over the head with [src]!"), span_userdanger("[user] beats you over the head with [src]!"), span_hear("You hear smacking."))
 	else
-		M.visible_message("<span class='notice'>[user] teaches [M] by beating [M.p_them()] over the head with [src]!</span>", "<span class='boldnotice'>As [user] hits you with [src], arabic symbols flow through your mind.</span>", "<span class='hear'>You hear smacking.</span>")
+		M.visible_message(span_notice("[user] teaches [M] by beating [M.p_them()] over the head with [src]!"), span_boldnotice("As [user] hits you with [src], arabic symbols flow through your mind."), span_hear("You hear smacking."))
 		M.grant_language(/datum/language/alquadim, TRUE, TRUE, LANGUAGE_MIND)
 
 /obj/item/thayos_manual
@@ -85,10 +85,10 @@
 		return
 
 	if(user.has_language(/datum/language/thayoss))
-		to_chat(user, "<span class='boldwarning'>You start skimming through [src], but you already know Thayoss.</span>")
+		to_chat(user, span_boldwarning("You start skimming through [src], but you already know Thayoss."))
 		return
 
-	to_chat(user, "<span class='boldannounce'>You start skimming through [src], and suddenly your mind is filled with japanese symbols.</span>")
+	to_chat(user, span_boldannounce("You start skimming through [src], and suddenly your mind is filled with japanese symbols."))
 	user.grant_language(/datum/language/thayoss, TRUE, TRUE, LANGUAGE_MIND)
 
 
@@ -102,11 +102,11 @@
 	playsound(loc, "punch", 25, TRUE, -1)
 
 	if(M.stat == DEAD)
-		M.visible_message("<span class='danger'>[user] smacks [M]'s lifeless corpse with [src].</span>", "<span class='userdanger'>[user] smacks your lifeless corpse with [src].</span>", "<span class='hear'>You hear smacking.</span>")
+		M.visible_message(span_danger("[user] smacks [M]'s lifeless corpse with [src]."), span_userdanger("[user] smacks your lifeless corpse with [src]."), span_hear("You hear smacking."))
 	else if(M.has_language(/datum/language/thayoss))
-		M.visible_message("<span class='danger'>[user] beats [M] over the head with [src]!</span>", "<span class='userdanger'>[user] beats you over the head with [src]!</span>", "<span class='hear'>You hear smacking.</span>")
+		M.visible_message(span_danger("[user] beats [M] over the head with [src]!"), span_userdanger("[user] beats you over the head with [src]!"), span_hear("You hear smacking."))
 	else
-		M.visible_message("<span class='notice'>[user] teaches [M] by beating [M.p_them()] over the head with [src]!</span>", "<span class='boldnotice'>As [user] hits you with [src], japanese symbols flow through your mind.</span>", "<span class='hear'>You hear smacking.</span>")
+		M.visible_message(span_notice("[user] teaches [M] by beating [M.p_them()] over the head with [src]!"), span_boldnotice("As [user] hits you with [src], japanese symbols flow through your mind."), span_hear("You hear smacking."))
 		M.grant_language(/datum/language/thayoss, TRUE, TRUE, LANGUAGE_MIND)
 
 /obj/item/fuyo_manual
@@ -122,10 +122,10 @@
 		return
 
 	if(user.has_language(/datum/language/fuyo))
-		to_chat(user, "<span class='boldwarning'>You start skimming through [src], but you already know Fuyo.</span>")
+		to_chat(user, span_boldwarning("You start skimming through [src], but you already know Fuyo."))
 		return
 
-	to_chat(user, "<span class='boldannounce'>You start skimming through [src], and suddenly your mind is filled with chinese symbols.</span>")
+	to_chat(user, span_boldannounce("You start skimming through [src], and suddenly your mind is filled with chinese symbols."))
 	user.grant_language(/datum/language/fuyo, TRUE, TRUE, LANGUAGE_MIND)
 
 
@@ -139,9 +139,9 @@
 	playsound(loc, "punch", 25, TRUE, -1)
 
 	if(M.stat == DEAD)
-		M.visible_message("<span class='danger'>[user] smacks [M]'s lifeless corpse with [src].</span>", "<span class='userdanger'>[user] smacks your lifeless corpse with [src].</span>", "<span class='hear'>You hear smacking.</span>")
+		M.visible_message(span_danger("[user] smacks [M]'s lifeless corpse with [src]."), span_userdanger("[user] smacks your lifeless corpse with [src]."), span_hear("You hear smacking."))
 	else if(M.has_language(/datum/language/fuyo))
-		M.visible_message("<span class='danger'>[user] beats [M] over the head with [src]!</span>", "<span class='userdanger'>[user] beats you over the head with [src]!</span>", "<span class='hear'>You hear smacking.</span>")
+		M.visible_message(span_danger("[user] beats [M] over the head with [src]!"), span_userdanger("[user] beats you over the head with [src]!"), span_hear("You hear smacking."))
 	else
-		M.visible_message("<span class='notice'>[user] teaches [M] by beating [M.p_them()] over the head with [src]!</span>", "<span class='boldnotice'>As [user] hits you with [src], chinese symbols flow through your mind.</span>", "<span class='hear'>You hear smacking.</span>")
+		M.visible_message(span_notice("[user] teaches [M] by beating [M.p_them()] over the head with [src]!"), span_boldnotice("As [user] hits you with [src], chinese symbols flow through your mind."), span_hear("You hear smacking."))
 		M.grant_language(/datum/language/fuyo, TRUE, TRUE, LANGUAGE_MIND)

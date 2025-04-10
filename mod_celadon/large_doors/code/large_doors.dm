@@ -16,27 +16,27 @@
 
 /obj/machinery/door/airlock/multi_tile/New()
 	update_dir()
-	//to_chat(world, "<span class='boldannounce'>New() works</span>")
+	//to_chat(world, span_boldannounce("New() works"))
 	. = ..()
 
 /obj/machinery/door/airlock/multi_tile/Initialize(mapload)
 	update_dir()
-	//to_chat(world, "<span class='boldannounce'>Intialize() works</span>")
+	//to_chat(world, span_boldannounce("Intialize() works"))
 	. = ..()
 
 /obj/machinery/door/airlock/multi_tile/proc/update_dir()
 	if(dir in list(NORTH, SOUTH))
-		//to_chat(world, "<span class='boldannounce'>if works (N and S)</span>")
+		//to_chat(world, span_boldannounce("if works (N and S)"))
 		bound_width = width * world.icon_size
-		//to_chat(world, "<span class='boldannounce'>[bound_width]</span>")
+		//to_chat(world, span_boldannounce("[bound_width]"))
 		bound_height = world.icon_size
-		//to_chat(world, "<span class='boldannounce'>[bound_height]</span>")
+		//to_chat(world, span_boldannounce("[bound_height]"))
 	else
-		//to_chat(world, "<span class='boldannounce'>else works (W and E)</span>")
+		//to_chat(world, span_boldannounce("else works (W and E)"))
 		bound_width = world.icon_size
-		//to_chat(world, "<span class='boldannounce'>[bound_width]</span>")
+		//to_chat(world, span_boldannounce("[bound_width]"))
 		bound_height = width * world.icon_size
-		//to_chat(world, "<span class='boldannounce'>[bound_height]</span>")
+		//to_chat(world, span_boldannounce("[bound_height]"))
 
 /obj/machinery/door/airlock/proc/SetBounds()
 	if(!multi_tile)

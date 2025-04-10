@@ -69,8 +69,8 @@ GLOBAL_LIST_INIT(tendrils, list())
 /obj/effect/collapse/Initialize()
 	. = ..()
 	emitted_light = new(loc)
-	visible_message("<span class='boldannounce'>The tendril writhes in fury as the earth around it begins to crack and break apart! Get back!</span>")
-	visible_message("<span class='warning'>Something falls free of the tendril!</span>")
+	visible_message(span_boldannounce("The tendril writhes in fury as the earth around it begins to crack and break apart! Get back!"))
+	visible_message(span_warning("Something falls free of the tendril!"))
 	playsound(loc,'sound/effects/tendril_destroyed.ogg', 200, FALSE, 50, TRUE, TRUE)
 	addtimer(CALLBACK(src, PROC_REF(collapse)), 50)
 
@@ -82,7 +82,7 @@ GLOBAL_LIST_INIT(tendrils, list())
 	for(var/mob/M in range(7,src))
 		shake_camera(M, 15, 1)
 	playsound(get_turf(src),'sound/effects/explosionfar.ogg', 200, TRUE)
-	visible_message("<span class='boldannounce'>The tendril falls inward, the ground around it erupting into bubbling lava!</span>") //WS edit.
+	visible_message(span_boldannounce("The tendril falls inward, the ground around it erupting into bubbling lava!")) //WS edit.
 	for(var/turf/T in range(2,src))
 		if(!T.density)
 			T.TerraformTurf(/turf/open/lava/smooth/lava_land_surface, /turf/open/lava/smooth/lava_land_surface, flags = CHANGETURF_INHERIT_AIR) //WS edit, instead of chasms this produces lava instead.
