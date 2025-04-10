@@ -23,7 +23,7 @@
 	contains = list(/obj/item/stock_parts/cell/gun/large/empty)
 	cost = 900
 
-/datum/supply_pack/faction/nanotrasen/magazine/gauss
+/datum/supply_pack/faction/nanotrasen/magazines/gauss
 	name = "Gauss Magazine"
 	desc = "A 24-round magazine for the prototype gauss rifle. Ferromagnetic pellets do okay damage with significant armor penetration."
 	contains = list(/obj/item/ammo_box/magazine/gauss/empty)

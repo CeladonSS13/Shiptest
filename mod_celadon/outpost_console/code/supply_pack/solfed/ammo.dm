@@ -30,28 +30,48 @@
 /* 5.56 caseless */
 
 /datum/supply_pack/faction/solfed/ammo/c556mmHITP_ammo_box
-	name = "5.56 Caseless Ammo Box Crate"
+	name = "5.56 HITP Caseless Ammo Box Crate"
 	desc = "Contains a 48-round 5.56mm caseless box for SolGov sidearms like the Pistole C."
 	contains = list(/obj/item/storage/box/ammo/c556mm)
 	cost = 165
 
 /datum/supply_pack/faction/solfed/ammo/c556mmHITPap_ammo_box
-	name = "5.56 Caseless AP Ammo Box Crate"
+	name = "5.56 HITP Caseless AP Ammo Box Crate"
 	desc = "Contains a 48-round 5.56mm caseless boxloaded with armor piercing ammo."
 	contains = list(/obj/item/storage/box/ammo/c556mm_ap)
 	cost = 205
 
 /datum/supply_pack/faction/solfed/ammo/c556mmhitphp_ammo_box
-	name = "5.56 Caseless HP Ammo Box Crate"
+	name = "5.56 HITP Caseless HP Ammo Box Crate"
 	desc = "Contains a 48-round 5.56mm caseless box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c556mm_hp)
 	cost = 205
 
 /datum/supply_pack/faction/solfed/ammo/c556HITPrubber_ammo_box
-	name = "5.56 Caseless Rubber Ammo Box Crate"
+	name = "5.56 HITP Caseless Rubber Ammo Box Crate"
 	desc = "Contains a 48-round 5.56 caseless box loaded with less-than-lethal rubber rounds."
 	contains = list(/obj/item/storage/box/ammo/c556mm_rubber)
 	cost = 165
+
+/* 5.56x42mm */
+
+/datum/supply_pack/faction/solfed/ammo/a556_ammo_box
+	name = "5.56x42mm Ammo Box Crate"
+	desc = "Contains one 60-round 5.56x42mm box."
+	contains = list(/obj/item/storage/box/ammo/a556_42)
+	cost = 300
+
+/datum/supply_pack/faction/solfed/ammo/a556_ap
+	name = "5.56x42mm Armour Piercing Ammo Box Crate"
+	desc = "Contains one 60-round 5.56x42mm Armour Piercing box."
+	contains = list(/obj/item/storage/box/ammo/a556_42/ap)
+	cost = 375
+
+/datum/supply_pack/faction/solfed/ammo/a556_hp
+	name = "5.56x42mm Hollow Point Ammo Box Crate"
+	desc = "Contains one 60-round 5.56x42mm Hollow Point box."
+	contains = list(/obj/item/storage/box/ammo/a556_42/hp)
+	cost = 375
 
 /* ferroslugs */
 
@@ -108,3 +128,4 @@
 	desc = "Contains a 8x58mm Caseless Ammo box for the standard-issue SSG-669C, containing 40-rounds."
 	contains = list(/obj/item/storage/box/ammo/a858_ammo_box)
 	cost = 400
+
