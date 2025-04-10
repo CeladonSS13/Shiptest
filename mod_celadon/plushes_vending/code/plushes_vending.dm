@@ -123,8 +123,8 @@
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 20, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 200, "acid" = 50)
 	resistance_flags = FIRE_PROOF
 	refill_canister = /obj/item/vending_refill/plushesmat
-	default_price = 200
-	extra_price = 500
+	default_price = 50
+	extra_price = 200
 
 /obj/item/vending_refill/plushesmat
 	machine_name = "Donksoft Plushes Vendor"
