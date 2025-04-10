@@ -382,9 +382,9 @@
 // 	display_name = "cat blue plushie"
 // 	path = /obj/item/toy/plush/celadon/blue_cat
 
-// /datum/gear/plushes/cat/medcat
-// 	display_name = "cat med plushie"
-// 	path = /obj/item/toy/plush/celadon/fermis
+/datum/gear/plushes/cat/medcat	// Добавлено по просьбе хоста
+	display_name = "cat med plushie"
+	path = /obj/item/toy/plush/celadon/fermis
 
 // /datum/gear/plushes/cat/chen
 // 	display_name = "cat securi plushie"
