@@ -1,6 +1,8 @@
 /datum/supply_pack/faction/nanotrasen/ammo
 	group = "Ammunition"
 
+/* 9mm */
+
 /datum/supply_pack/faction/nanotrasen/ammo/c9mm_ammo_box
 	name = "9mm ammo box"
 	desc = "9mm ammo box for guns like the commander or the saber SMG. Contains 50 shells"
@@ -18,6 +20,14 @@
 	desc = "9mm HP ammo box for guns like the commander or the saber SMG. Contains 50 shells"
 	contains = list(/obj/item/storage/box/ammo/c9mm_hp)
 	cost = 350
+
+/datum/supply_pack/faction/nanotrasen/ammo/c9mm_rubber
+	name = "9mm Rubber ammo box"
+	desc = "9mm Rubber ammo box for guns like the commander or the saber SMG. Contains 50 shells"
+	contains = list(/obj/item/storage/box/ammo/c9mm_rubber)
+	cost = 250
+
+/* 4.63x30mm */
 
 /datum/supply_pack/faction/nanotrasen/ammo/wt_ammo_box
 	name = "4.6x30mm ammo box"
@@ -37,26 +47,22 @@
 	contains = list(/obj/item/storage/box/ammo/c46x30mm/hp)
 	cost = 700
 
-/datum/supply_pack/faction/nanotrasen/ammo/wt_magazine
-	name = "Single WT550 magazine"
-	desc = "A single magazine for the WT550"
-	contains = list(/obj/item/ammo_box/magazine/wt550m9)
-	cost = 700
+/datum/supply_pack/faction/nanotrasen/ammo/wt_ammo_box_rubber
+	name = "4.6x30mm Rubber ammo box"
+	desc = "4.6x30mm Rubber ammo box for guns like the WT550. Contains 50 shells"
+	contains = list(/obj/item/storage/box/ammo/c46x30mm/rubber)
+	cost = 500
 
-/datum/supply_pack/faction/nanotrasen/ammo/saber_magazine
-	name = "Single saber SMG magazine"
-	desc = "A single magazine for the saber SMG"
-	contains = list(/obj/item/ammo_box/magazine/smgm9mm)
-	cost = 600
+/* ferro pellets */
 
-/datum/supply_pack/faction/nanotrasen/ammo/commander_magazine
-	name = "Single commander magazine"
-	desc = "A single magazine for the commander"
-	contains = list(/obj/item/ammo_box/magazine/co9mm)
-	cost = 400
+/datum/supply_pack/faction/nanotrasen/ammo/ferropelletboxcrate
+	name = "Ferromagnetic Pellet Box Crate"
+	desc = "Contains a 48-round ferromagnetic pellet ammo box for gauss guns."
+	contains = list(/obj/item/storage/box/ammo/ferropellet)
+	cost = 210
 
-/datum/supply_pack/faction/nanotrasen/ammo/powercells
-	name = "NT Energy weapon basic power cell supply pack"
-	desc = "Ящик содержит кейс с тремя базовыми батарейками для энергетического оружия."
-	contains = list(/obj/item/storage/guncase/guncells_basic)
-	cost = 800
+/datum/supply_pack/faction/nanotrasen/ammo/hcpellets
+	name = "High Conductivity Pellet Box Crate"
+	desc = "Contains a 48-round high conductivity pellet ammo box for gauss guns."
+	contains = list(/obj/item/storage/box/ammo/ferropellet/hc)
+	cost = 260
