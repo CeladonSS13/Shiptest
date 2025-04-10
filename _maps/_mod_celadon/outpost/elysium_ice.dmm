@@ -10533,8 +10533,8 @@
 /turf/open/floor/plasteel/tech,
 /area/outpost/operations/outpost_command)
 "giC" = (
-/obj/structure/table/wood/fancy/red,
 /obj/machinery/light/dim/directional/west,
+/obj/machinery/vending/plushesmat,
 /turf/open/floor/carpet/royalblack,
 /area/outpost/fraction/syndi/donkco_shop)
 "giY" = (
@@ -14990,8 +14990,9 @@
 	},
 /area/outpost/exterior)
 "iRx" = (
-/obj/structure/disposalpipe/segment{
-	dir = 10
+/obj/machinery/vending/boozeomat/outpost_access{
+	pixel_y = 24;
+	density = 0
 	},
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar/bar_zone)
@@ -15340,7 +15341,9 @@
 /area/outpost/vacant_rooms/trash_factory)
 "jeC" = (
 /obj/machinery/door/airlock/wood{
-	id_tag = "ice_cabinka_2"
+	id_tag = "ice_cabinka_2";
+	max_integrity = 999999;
+	normal_integrity = 999999
 	},
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_2)
@@ -16848,6 +16851,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 5
 	},
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar/bar_zone)
@@ -18470,10 +18476,6 @@
 	pixel_y = 2;
 	pixel_x = 11;
 	light_color = "#BBFFBB"
-	},
-/obj/machinery/vending/boozeomat/outpost_access{
-	pixel_x = -30;
-	density = 0
 	},
 /obj/structure/neon_spline/green{
 	dir = 8
@@ -27532,7 +27534,9 @@
 "quB" = (
 /obj/machinery/door/airlock/wood{
 	dir = 1;
-	id_tag = "ice_cabinka_1"
+	id_tag = "ice_cabinka_1";
+	max_integrity = 999999;
+	normal_integrity = 999999
 	},
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_1)
@@ -29635,9 +29639,6 @@
 /area/outpost/crew/canteen)
 "rIC" = (
 /obj/machinery/disposal/bin,
-/obj/structure/disposalpipe/trunk{
-	dir = 4
-	},
 /obj/structure/neon_spline/green{
 	dir = 9
 	},
@@ -29647,6 +29648,7 @@
 	pixel_x = -22;
 	dir = 4
 	},
+/obj/structure/disposalpipe/trunk,
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar/bar_zone)
 "rIK" = (
@@ -30291,9 +30293,6 @@
 /turf/open/floor/marble/black,
 /area/outpost/fraction/nanotrasen)
 "sfI" = (
-/obj/structure/disposalpipe/segment{
-	dir = 5
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -30302,6 +30301,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar/bar_zone)
