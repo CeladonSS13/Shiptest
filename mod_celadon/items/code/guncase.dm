@@ -131,6 +131,12 @@ NO_MAG_GUN_HELPER(automatic/marksman/f4/inteq)
 	new /obj/item/ammo_box/magazine/m45_cobra/empty(src)
 	new /obj/item/ammo_box/magazine/m45_cobra/empty(src)
 
+/obj/item/storage/guncase/syndicate/himehabu
+/obj/item/storage/guncase/syndicate/himehabu/PopulateContents()
+	new /obj/item/gun/ballistic/automatic/pistol/himehabu/no_mag(src)
+	new /obj/item/ammo_box/magazine/m22lr_himehabu/empty(src)
+	new /obj/item/ammo_box/magazine/m22lr_himehabu/empty(src)
+
 //Nanotrasen guncases
 
 /obj/item/storage/guncase/etar_smg
