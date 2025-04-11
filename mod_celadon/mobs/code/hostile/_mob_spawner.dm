@@ -117,7 +117,7 @@
 		/mob/living/simple_animal/hostile/asteroid/basilisk/watcher/icewing = 5,
 		/mob/living/simple_animal/hostile/asteroid/brimdemon = 10,
 	)
-	max_mobs = 6
+	max_mobs = 5
 	spawn_time = 120
 
 /// MARK:VEIN
@@ -134,5 +134,5 @@
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal_plasma = 60,
 		/mob/living/simple_animal/hostile/asteroid/goliath = 40,
 		/mob/living/simple_animal/hostile/asteroid/brimdemon = 20,
-		/mob/living/simple_animal/hostile/big_plasma = 5,
+		/mob/living/simple_animal/hostile/asteroid/big_plasma = 5,
 		)
