@@ -121,5 +121,10 @@
 		L.nest = src
 		L.faction = src.faction
 		P.visible_message("<span class='danger'>[L] [pick(spawn_text)] [P].</span>")
+
+		// CEL_ADD - DELETION_TIMER_TO_SPAWNED_MOBS
+		L.AddComponent(/datum/component/fancy_deleting_timer, 300, 0, "gib",)
+		// /CEL_ADD
+
 		if(length(spawn_sound))
 			playsound(P, pick(spawn_sound), 50, TRUE)
