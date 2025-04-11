@@ -92,17 +92,17 @@
 		/obj/structure/flora/tree/dead/tall/grey = 1,
 		/obj/structure/flora/tree/dead/barren = 1,
 		/obj/structure/flora/ausbushes/fullgrass/hell = 1,
-		/obj/structure/flora/ausbushes/sparsegrass/hell = 1
+		/obj/structure/flora/ausbushes/sparsegrass/hell = 1,
 	)
 	flora_spawn_chance = 25
 
 /datum/biome/plasma_gaint/forest
 	open_turf_types = list(
-		/turf/open/floor/plating/asteroid/plasma_gaint/lit = 1
+		/turf/open/floor/plating/asteroid/plasma_gaint/lit = 1,
 	)
 
 	mob_spawn_list = list(
-		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal_plasma = 20
+		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal_plasma = 20,
 	)
 	mob_spawn_chance = 5
 
@@ -110,7 +110,7 @@
 		/obj/structure/flora/tree/dead/tall/grey = 1,
 		/obj/structure/flora/tree/dead/barren = 1,
 		/obj/structure/flora/ausbushes/fullgrass/hell = 1,
-		/obj/structure/flora/ausbushes/sparsegrass/hell = 1
+		/obj/structure/flora/ausbushes/sparsegrass/hell = 1,
 	)
 	flora_spawn_chance = 35
 
@@ -118,11 +118,11 @@
 	flora_spawn_list = list(
 		/obj/structure/flora/rock/lava = 2,
 		/obj/structure/flora/ausbushes/fullgrass/hell = 10,
-		/obj/structure/flora/ausbushes/sparsegrass/hell = 5
+		/obj/structure/flora/ausbushes/sparsegrass/hell = 5,
 	)
 
 	mob_spawn_list = list(
-		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal_plasma = 20
+		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal_plasma = 20,
 	)
 	mob_spawn_chance = 5
 
@@ -130,41 +130,41 @@
 
 /datum/biome/plasma_gaint/plains
 	open_turf_types = list(
-		/turf/open/chasm/plasma = 1
+		/turf/open/chasm/plasma = 1,
 	)
 	feature_spawn_chance = null
 	flora_spawn_chance = null
 
 /datum/biome/plasma_gaint/plains/dense
 	open_turf_types = list(
-		/turf/open/floor/plating/asteroid/basalt/purple/lit/plasma_gaint = 50
+		/turf/open/floor/plating/asteroid/basalt/purple/lit/plasma_gaint = 50,
 	)
 	flora_spawn_chance = 10
 
 /datum/biome/plasma_gaint/plains/dense/mixed
 	open_turf_types = list(
-		/turf/open/chasm/plasma = 1
+		/turf/open/chasm/plasma = 1,
 	)
 	feature_spawn_chance = null
 	flora_spawn_chance = null
 
 /datum/biome/plasma_gaint/outback
 	open_turf_types = list(
-		/turf/open/floor/plating/asteroid/basalt/purple/lit/plasma_gaint = 20
+		/turf/open/floor/plating/asteroid/basalt/purple/lit/plasma_gaint = 20,
 	)
 
 /datum/biome/plasma_gaint/lush
 	open_turf_types = list(
-		/turf/open/floor/plating/asteroid/basalt/purple/lit/plasma_gaint = 1
+		/turf/open/floor/plating/asteroid/basalt/purple/lit/plasma_gaint = 1,
 	)
 
 /datum/biome/plasma_gaint/lava
 	open_turf_types = list(
-		/turf/open/lava/plasma_gaint = 1
+		/turf/open/lava/plasma_gaint = 1,
 	)
 	flora_spawn_list = list(
 		/obj/structure/flora/rock/lava = 1,
-		/obj/structure/flora/rock/pile/lava = 1
+		/obj/structure/flora/rock/pile/lava = 1,
 	)
 	flora_spawn_chance = 2
 
@@ -175,23 +175,27 @@
 
 /datum/biome/cave/plasma_gaint
 	closed_turf_types = list(
-		/turf/closed/mineral/random/plasma_gaint = 1
+		/turf/closed/mineral/random/plasma_gaint = 1,
 	)
 
-	mob_spawn_list = list(
-		/mob/living/simple_animal/hostile/big_plasma = 30,
+	feature_spawn_chance = 10
+	feature_spawn_list = list(
 		/obj/structure/spawner/plasma_gaint/extreme_threat = 10,
-		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal_plasma = 40
 	)
+
 	mob_spawn_chance = 45
+	mob_spawn_list = list(
+		/mob/living/simple_animal/hostile/asteroid/big_plasma = 30,
+		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal_plasma = 40,
+	)
 
 	open_turf_types = list(
-		/turf/open/floor/plating/asteroid/basalt/plasma_gaint = 1
+		/turf/open/floor/plating/asteroid/basalt/plasma_gaint = 1,
 	)
 
 /datum/biome/cave/plasma_gaint/rocky
 	closed_turf_types = list(
-		/turf/closed/mineral/random/plasma_gaint = 1
+		/turf/closed/mineral/random/plasma_gaint = 1,
 	)
 
 	feature_spawn_chance = 0.25
@@ -201,29 +205,29 @@
 	)
 
 	open_turf_types = list(
-		/turf/open/floor/plating/asteroid/plasma_gaint = 1
+		/turf/open/floor/plating/asteroid/plasma_gaint = 1,
 	)
 
 /datum/biome/cave/plasma_gaint/mossy
 	closed_turf_types = list(
-		/turf/closed/mineral/random/plasma_gaint = 1
+		/turf/closed/mineral/random/plasma_gaint = 1,
 	)
 
 	mob_spawn_list = list(
-		/mob/living/simple_animal/hostile/big_plasma = 10,
-		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal_plasma = 20
+		/mob/living/simple_animal/hostile/asteroid/big_plasma = 10,
+		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal_plasma = 20,
 	)
 	mob_spawn_chance = 40
 
 	open_turf_types = list(
-		/turf/open/floor/plating/asteroid/plasma_gaint = 1
+		/turf/open/floor/plating/asteroid/plasma_gaint = 1,
 	)
 
 /datum/biome/cave/plasma_gaint/lava
 	closed_turf_types = list(
-		/turf/closed/mineral/random/plasma_gaint = 1
+		/turf/closed/mineral/random/plasma_gaint = 1,
 	)
 
 	open_turf_types = list(
-		/turf/open/lava/plasma_gaint = 50
+		/turf/open/lava/plasma_gaint = 50,
 	)
