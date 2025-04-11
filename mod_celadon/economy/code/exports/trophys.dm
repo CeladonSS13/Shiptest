@@ -1,8 +1,4 @@
-//Tendril chest artifacts and ruin loot. Includes ash drake loot since they drop two sets of armor + random item
-//Consumable or one-use items like the magic D20 and gluttony's blessing are omitted
-//no more 999999 currency after one frost world, sorry
-
-/datum/export/lavaland/minor
+/datum/export/minor_artifact
 	cost = 1250
 	unit_name = "minor collectable artifact"
 	export_types = list(/obj/item/immortality_talisman,
@@ -23,7 +19,7 @@
 						/obj/item/clothing/suit/armor/ascetic,
 						)
 
-/datum/export/lavaland/major //valuable chest/ruin loot and staff of storms
+/datum/export/major_artifact
 	cost = 2500
 	unit_name = "collectable artifact"
 	export_types = list(/obj/item/rod_of_asclepius,
@@ -38,7 +34,7 @@
 
 //Megafauna loot, except for ash drakes and legion
 
-/datum/export/lavaland/megafauna
+/datum/export/megafauna
 	cost = 10000
 	unit_name = "major collectable artifact"
 	export_types = list(/obj/item/hierophant_club,
@@ -49,7 +45,17 @@
 						/obj/item/blood_contract,
 						)
 
-/datum/export/lavaland/trophycommon
+/datum/export/megafauna/hev
+	cost = 7500
+	unit_name = "H.E.C.K. suit"
+	export_types = list(/obj/item/clothing/suit/space/hostile_environment)
+
+/datum/export/megafauna/hev/helmet
+	cost = 5000
+	unit_name = "H.E.C.K. helmet"
+	export_types = list(/obj/item/clothing/head/helmet/space/hostile_environment)
+
+/datum/export/trophycommon
 	cost = 250
 	unit_name = "common hunting trophy"
 	export_types = list(/obj/item/crusher_trophy/legion_skull,
@@ -59,7 +65,7 @@
 						/obj/item/crusher_trophy/watcher_wing,
 						)
 
-/datum/export/lavaland/trophyrare
+/datum/export/trophyrare
 	cost = 1000
 	elasticity_coeff = 0.1
 	unit_name = "rare hunting trophy"
@@ -73,7 +79,7 @@
 						/obj/item/crusher_trophy/ice_wing,
 						)
 
-/datum/export/lavaland/trophymega
+/datum/export/trophymega
 	cost = 3000
 	elasticity_coeff = 0.2
 	unit_name = "big game hunting trophy"
@@ -87,48 +93,17 @@
 						/obj/item/crusher_trophy/blaster_tubes,
 						)
 
-// /datum/export/lavaland/megafauna/total_printout(datum/export_report/ex, notes = TRUE) //in the unlikely case a miner feels like selling megafauna loot
-// 	// . = ..()
-// 	if(. && notes)
-// 		. += " On behalf of the Nanotrasen RnD division: Thank you for your hard work."
+/datum/export/dogtag
+	desc = "CLIP has posted several bounties for wanted members of both the Frontiersman and the Clique. Bring back their tags, we'll reward you well."
+	cost = 500
+	elasticity_coeff = 0.02
+	recovery_ds = 0.5 MINUTES
 
-/datum/export/lavaland/megafauna/hev/suit
-	cost = 7500
-	unit_name = "H.E.C.K. suit"
-	export_types = list(/obj/item/clothing/suit/space/hostile_environment)
+/datum/export/dogtag/frontiersmen
+	cost = 400
+	unit_name = "frontiersmen dogtags"
+	export_types = list(/obj/item/clothing/neck/dogtag/frontier)
 
-/datum/export/lavaland/megafauna/hev/helmet
-	cost = 5000
-	unit_name = "H.E.C.K. helmet"
-	export_types = list(/obj/item/clothing/head/helmet/space/hostile_environment)
-
-//not technically lavaland but this had a useful infrastructure to store them under
-/datum/export/lavaland/gems/rupee
-	cost = 1750
-	unit_name = "Ruperium Auction"
-	export_types = list(/obj/item/gem/rupee)
-
-/datum/export/lavaland/gems/diamond
-	cost = 1250
-	unit_name = "Frost Diamond Auction"
-	export_types = list(/obj/item/gem/fdiamond)
-
-/datum/export/lavaland/gems/amber
-	cost = 1750
-	unit_name = "Draconic Amber"
-	export_types = list(/obj/item/gem/amber)
-
-/datum/export/lavaland/gems/plasma
-	cost = 3000
-	unit_name = "Metastable Phoron"
-	export_types = list(/obj/item/gem/phoron)
-
-/datum/export/lavaland/gems/blood
-	unit_name = "Ichorium Crystal"
-	cost = 3500
-	export_types = list(/obj/item/gem/bloodstone)
-
-/datum/export/lavaland/gems/void
-	cost = 5500
-	unit_name = "Null Crystal"
-	export_types = list(/obj/item/gem/void)
+/datum/export/dogtag/ramzi
+	unit_name = "ramzi dogtags"
+	export_types = list(/obj/item/clothing/neck/dogtag/ramzi)

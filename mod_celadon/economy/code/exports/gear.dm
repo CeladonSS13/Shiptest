@@ -29,13 +29,18 @@
 /datum/export/gear/space/helmet
 	cost = 75
 	unit_name = "space helmet"
-	export_types = list(/obj/item/clothing/head/helmet/space, /obj/item/clothing/head/helmet/space/eva, /obj/item/clothing/head/helmet/space/nasavoid)
+	export_types = list(/obj/item/clothing/head/helmet/space,
+						/obj/item/clothing/head/helmet/space/eva,
+						/obj/item/clothing/head/helmet/space/nasavoid
+						)
 	include_subtypes = FALSE
 
 /datum/export/gear/space/suit
 	cost = 150
 	unit_name = "space suit"
-	export_types = list(/obj/item/clothing/suit/space, /obj/item/clothing/suit/space/eva, /obj/item/clothing/suit/space/nasavoid)
+	export_types = list(/obj/item/clothing/suit/space,
+						/obj/item/clothing/suit/space/eva,
+						/obj/item/clothing/suit/space/nasavoid)
 	include_subtypes = FALSE
 
 
