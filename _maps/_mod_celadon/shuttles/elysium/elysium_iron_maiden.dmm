@@ -402,6 +402,18 @@
 /obj/item/grenade/frag,
 /obj/structure/closet/crate/secure/exo,
 /obj/item/grenade/frag,
+/obj/item/grenade/frag,
+/obj/item/melee/baton/loaded{
+	pixel_y = 1
+	},
+/obj/item/melee/baton/cattleprod/loaded{
+	pixel_y = -1;
+	pixel_x = 2
+	},
+/obj/item/melee/baton/loaded{
+	pixel_x = 4;
+	pixel_y = -3
+	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "pM" = (
@@ -656,6 +668,14 @@
 	pixel_y = -3
 	},
 /obj/structure/closet/crate/secure/exo,
+/obj/item/storage/box/ammo/a762_40{
+	pixel_x = -5;
+	pixel_y = -3
+	},
+/obj/item/storage/box/ammo/a762_40{
+	pixel_x = -5;
+	pixel_y = -3
+	},
 /obj/item/storage/box/ammo/a357,
 /obj/item/storage/box/ammo/c46x30mm,
 /obj/item/storage/box/ammo/c46x30mm,
@@ -848,6 +868,7 @@
 	},
 /obj/effect/decal/cleanable/oil,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/stack/cable_coil/random/five,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "BR" = (
@@ -874,6 +895,7 @@
 /obj/item/ammo_box/magazine/skm_762_40,
 /obj/item/ammo_box/magazine/skm_762_40,
 /obj/effect/turf_decal/trimline/opaque/green/arrow_cw,
+/obj/item/ammo_box/magazine/skm_762_40,
 /obj/item/ammo_box/magazine/skm_46_30,
 /obj/item/ammo_box/magazine/skm_46_30,
 /turf/open/floor/plasteel/mono/dark,
@@ -1293,6 +1315,16 @@
 /obj/item/clothing/mask/breath,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
+"RU" = (
+/obj/machinery/suit_storage_unit/inherit{
+	req_access_txt = "147"
+	},
+/obj/machinery/light/directional/north,
+/obj/item/clothing/suit/space/elysm/EVA_armored,
+/obj/item/clothing/head/space/elysm/space_helm,
+/obj/item/clothing/mask/breath,
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/cargo)
 "RW" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 6
@@ -1525,9 +1557,9 @@
 	req_access_txt = "147"
 	},
 /obj/machinery/light/directional/north,
-/obj/item/clothing/suit/space/elysm/junk,
-/obj/item/clothing/head/space/elysm/space_helm,
+/obj/item/clothing/suit/space/elysm/EVA_armored,
 /obj/item/clothing/mask/breath,
+/obj/item/clothing/head/space/elysm/space_helm,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "VP" = (
@@ -1788,7 +1820,7 @@ vI
 (8,1,1) = {"
 Kq
 Yr
-VO
+RU
 df
 xa
 Tr

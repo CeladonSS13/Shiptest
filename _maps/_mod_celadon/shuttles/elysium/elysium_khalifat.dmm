@@ -708,6 +708,10 @@
 /obj/item/restraints/handcuffs/cable/green,
 /obj/item/restraints/handcuffs/cable/green,
 /obj/item/restraints/handcuffs,
+/obj/machinery/recharger{
+	pixel_x = -5;
+	pixel_y = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "dL" = (
@@ -765,7 +769,9 @@
 /area/ship/engineering/engine)
 "dY" = (
 /obj/item/stack/cable_coil/cut/yellow,
-/turf/open/floor/plating/foam,
+/turf/open/floor/plating{
+	icon_state = "foam_plating"
+	},
 /area/ship/hallway/port)
 "ea" = (
 /turf/closed/wall/r_wall/rust,
@@ -2827,7 +2833,6 @@
 "pN" = (
 /obj/structure/closet/cabinet,
 /obj/item/restraints/legcuffs/bola/watcher,
-/obj/item/bedsheet/elysium,
 /obj/item/grenade/iedcasing,
 /obj/item/grenade/iedcasing,
 /obj/item/grenade/firecracker,
@@ -2845,6 +2850,11 @@
 	pixel_x = 4
 	},
 /obj/item/clothing/head/helmet/m10_elysium,
+/obj/item/melee/baton/cattleprod/loaded,
+/obj/item/storage/belt/security/webbing/elysium/unload_vest_green{
+	pixel_x = 4;
+	pixel_y = -2
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "pO" = (
@@ -2881,7 +2891,6 @@
 "pS" = (
 /obj/structure/closet/cabinet,
 /obj/item/restraints/legcuffs/bola/watcher,
-/obj/item/bedsheet/elysium,
 /obj/item/grenade/iedcasing,
 /obj/item/grenade/iedcasing,
 /obj/item/grenade/firecracker,
@@ -2893,6 +2902,11 @@
 /obj/item/clothing/suit/armor/vest/elysium{
 	pixel_y = 2;
 	pixel_x = 4
+	},
+/obj/item/melee/baton/cattleprod/loaded,
+/obj/item/storage/belt/security/webbing/elysium/unload_vest_green{
+	pixel_x = 4;
+	pixel_y = -2
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
@@ -4777,7 +4791,9 @@
 	dir = 1
 	},
 /obj/item/stack/ore/salvage/scrapmetal/ten,
-/turf/open/floor/plating/foam,
+/turf/open/floor/plating{
+	icon_state = "foam_plating"
+	},
 /area/ship/hallway/port)
 "Bc" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -4821,7 +4837,6 @@
 /obj/machinery/light/directional/east,
 /obj/structure/closet/cabinet,
 /obj/item/restraints/legcuffs/bola/watcher,
-/obj/item/bedsheet/elysium,
 /obj/item/grenade/iedcasing,
 /obj/item/grenade/iedcasing,
 /obj/item/grenade/firecracker,
@@ -4833,6 +4848,11 @@
 /obj/item/clothing/suit/armor/vest/elysium{
 	pixel_y = 2;
 	pixel_x = 4
+	},
+/obj/item/melee/baton/loaded,
+/obj/item/storage/belt/security/webbing/elysium/unload_vest_green{
+	pixel_x = 4;
+	pixel_y = -2
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
@@ -5155,7 +5175,6 @@
 /obj/machinery/light/directional/east,
 /obj/structure/closet/cabinet,
 /obj/item/restraints/legcuffs/bola/watcher,
-/obj/item/bedsheet/elysium,
 /obj/item/grenade/iedcasing,
 /obj/item/grenade/iedcasing,
 /obj/item/grenade/firecracker,
@@ -5169,6 +5188,11 @@
 	pixel_x = 4
 	},
 /obj/item/clothing/head/helmet/m10_elysium,
+/obj/item/melee/baton/cattleprod/loaded,
+/obj/item/storage/belt/security/webbing/elysium/unload_vest_green{
+	pixel_x = 4;
+	pixel_y = -2
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "CQ" = (
@@ -5535,13 +5559,17 @@
 /turf/open/floor/plating,
 /area/ship/cargo)
 "EO" = (
-/turf/open/floor/plating/foam,
+/turf/open/floor/plating{
+	icon_state = "foam_plating"
+	},
 /area/ship/hallway/port)
 "EQ" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plating/foam,
+/turf/open/floor/plating{
+	icon_state = "foam_plating"
+	},
 /area/ship/hallway/port)
 "ER" = (
 /obj/structure/fluff/clockwork/alloy_shards,
@@ -5998,7 +6026,9 @@
 /obj/item/stock_parts/matter_bin,
 /obj/item/stack/sheet/glass,
 /obj/machinery/airalarm/directional/west,
-/turf/open/floor/plating/foam,
+/turf/open/floor/plating{
+	icon_state = "foam_plating"
+	},
 /area/ship/hallway/port)
 "GU" = (
 /obj/effect/turf_decal/rechargefloor,
@@ -6813,6 +6843,10 @@
 /area/ship/science/ai_chamber)
 "Lw" = (
 /obj/machinery/suit_storage_unit/inherit,
+/obj/item/clothing/suit/space/elysm/EVA_armored,
+/obj/item/clothing/head/space/elysm/space_helm,
+/obj/item/tank/internals/oxygen,
+/obj/item/clothing/mask/breath,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "LB" = (
@@ -8480,7 +8514,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/stack/ore/salvage/scrapmetal/ten,
 /turf/open/floor/plating/wasteplanet/rust,
-/area/ship/cargo)
+/area/ship/hallway/port)
 "Vl" = (
 /obj/structure/catwalk,
 /obj/effect/decal/cleanable/dirt,
@@ -8697,7 +8731,9 @@
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 4
 	},
-/turf/open/floor/plating/foam,
+/turf/open/floor/plating{
+	icon_state = "foam_plating"
+	},
 /area/ship/hallway/port)
 "Ws" = (
 /obj/effect/turf_decal/atmos/plasma{
@@ -9291,7 +9327,9 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plating/foam,
+/turf/open/floor/plating{
+	icon_state = "foam_plating"
+	},
 /area/ship/hallway/port)
 "ZD" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal{
