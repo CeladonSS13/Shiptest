@@ -89,14 +89,11 @@
 /area/ship/security/armory)
 "bh" = (
 /obj/structure/bed,
-/obj/item/bedsheet/solgov,
-/obj/structure/sign/solgov_flag{
-	dir = 8;
-	pixel_x = 28
-	},
 /obj/structure/sign/poster/solgov/random{
 	pixel_y = 32
 	},
+/obj/item/bedsheet/solfed,
+/obj/structure/sign/flag/solfed/directional/west,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/dorm/dormthree)
 "bn" = (
@@ -214,8 +211,7 @@
 /turf/closed/wall/mineral/titanium,
 /area/ship/crew/library)
 "ce" = (
-/obj/structure/sign/solgov_seal{
-	pixel_y = 0;
+/obj/structure/sign/solfed{
 	pixel_x = 28
 	},
 /turf/open/floor/engine/hull,
@@ -1084,9 +1080,9 @@
 /area/ship/crew/office)
 "hw" = (
 /obj/structure/bed,
-/obj/item/bedsheet/solgov,
 /obj/structure/curtain/cloth,
 /obj/machinery/light/directional/west,
+/obj/item/bedsheet/solfed,
 /turf/open/floor/carpet/blue,
 /area/ship/crew/dorm)
 "hB" = (
@@ -1811,10 +1807,10 @@
 /area/ship/crew/dorm/dormthree)
 "lD" = (
 /obj/structure/bed,
-/obj/item/bedsheet/solgov,
 /obj/structure/curtain/cloth,
 /obj/machinery/firealarm/directional/south,
 /obj/machinery/airalarm/directional/west,
+/obj/item/bedsheet/solfed,
 /turf/open/floor/carpet/blue,
 /area/ship/crew/dorm)
 "lT" = (
@@ -2595,10 +2591,6 @@
 /area/ship/storage)
 "qM" = (
 /obj/machinery/light/floor,
-/obj/structure/sign/solgov_seal{
-	pixel_y = 0;
-	pixel_x = 28
-	},
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 4
 	},
@@ -2865,8 +2857,8 @@
 /area/ship/crew/cryo)
 "so" = (
 /obj/structure/bed,
-/obj/item/bedsheet/solgov,
 /obj/structure/curtain/cloth,
+/obj/item/bedsheet/solfed,
 /turf/open/floor/carpet/blue,
 /area/ship/crew/dorm)
 "sr" = (
@@ -2928,12 +2920,9 @@
 /area/ship/storage)
 "sQ" = (
 /obj/structure/bed/double,
-/obj/item/bedsheet/double/solgov,
 /obj/item/toy/plush/blahaj,
-/obj/structure/sign/solgov_flag{
-	dir = 8;
-	pixel_x = 28
-	},
+/obj/item/bedsheet/double/blue,
+/obj/structure/sign/flag/solfed/directional/west,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/dorm/dormtwo)
 "sT" = (
@@ -5617,11 +5606,10 @@
 /turf/open/floor/wood/maple,
 /area/ship/crew/dorm/dormtwo)
 "Ki" = (
-/obj/structure/sign/solgov_seal{
-	pixel_y = 0;
+/obj/effect/turf_decal/industrial/warning/corner,
+/obj/structure/sign/solfed{
 	pixel_x = 28
 	},
-/obj/effect/turf_decal/industrial/warning/corner,
 /turf/open/floor/engine/hull,
 /area/ship/external/dark)
 "Kt" = (
@@ -6171,8 +6159,7 @@
 /area/ship/crew/office)
 "Or" = (
 /obj/machinery/atmospherics/pipe/layer_manifold,
-/obj/structure/sign/solgov_seal{
-	pixel_y = 0;
+/obj/structure/sign/solfed{
 	pixel_x = -1
 	},
 /turf/closed/wall/mineral/titanium,
