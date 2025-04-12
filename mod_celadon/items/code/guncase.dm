@@ -66,6 +66,12 @@ MARK: Solfed guncases
 MARK: InteQ guncases
 */
 
+/obj/item/storage/guncase/cm82/solfed
+/obj/item/storage/guncase/cm82/solfed/PopulateContents()
+	new /obj/item/gun/ballistic/automatic/assault/cm82/solfed/no_mag(src)
+	new /obj/item/ammo_box/magazine/p16/empty(src)
+	new /obj/item/ammo_box/magazine/p16/empty(src)
+
 /obj/item/storage/guncase/bulldog/inteq
 /obj/item/storage/guncase/bulldog/inteq/PopulateContents()
 	new /obj/item/gun/ballistic/shotgun/automatic/bulldog/inteq/no_mag(src)
