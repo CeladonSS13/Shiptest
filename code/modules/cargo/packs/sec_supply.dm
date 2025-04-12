@@ -1,3 +1,6 @@
+/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
+	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
+
 /datum/supply_pack/sec_supply
 	group = "Security Supplies"
 	crate_type = /obj/structure/closet/crate/secure/gear
@@ -245,3 +248,6 @@
 	-When pressure releases, reach below device and lift via underside in one clean motion. Mounting legs will automatically retract. <br><br> \
 	-The device is now safe to handle. <br><br> \
 	-Safely stow device in secure, moisture-free location, away from fire and blunt force. "
+
+
+[/CELADON-DELETE] */

@@ -1,8 +1,29 @@
 /datum/supply_pack/faction/solfed/magazine
 	group = "Magazines"
 
-/datum/supply_pack/magazine/fms_mag
+/datum/supply_pack/faction/solfed/magazine/mag_556mm
+	name = "5.56 Pistole C Magazine Crate"
+	desc = "Contains a 5.56mm magazine for the Pistole C, with a capacity of twelve rounds."
+	contains = list(/obj/item/ammo_box/magazine/pistol556mm/empty)
+	cost = 150
+
+/datum/supply_pack/faction/solfed/magazine/fms_mag
 	name = "Model H Magazine Crate"
+	desc = "Contains a ferromagnetic slug magazine for the Model H pistol, with a capacity of ten rounds."
+	contains = list(/obj/item/ammo_box/magazine/modelh/empty)
+	cost = 350
+
+/datum/supply_pack/faction/solfed/magazine/gar_ammo
+	name = "GAR Ferromagnetic Lance Magazine Crate"
+	desc = "Contains a ferromagnetic lance magazine for the GAR rifle, with a capacity of thirty two rounds."
+	contains = list(/obj/item/ammo_box/magazine/gar/empty)
+	cost = 500
+
+/datum/supply_pack/faction/solfed/magazine/claris_ammo
+	name = "Claris Ferromagnetic Pellet Speedloader Crate"
+	desc = "Contains a ferromagnetic pellet speedloader for the Claris rifle, with a capacity of twenty two rounds."
+	contains = list(/obj/item/ammo_box/amagpellet_claris/empty)
+	cost = 400
 
 /datum/supply_pack/faction/solfed/magazine/smgm9mm_mag
 	name = "9mm SMG Magazine Crate"
@@ -10,7 +31,7 @@
 	contains = list(/obj/item/ammo_box/magazine/smgm9mm/empty)
 	cost = 250
 
-/datum/supply_pack/faction/solfed/magazine/a858_clip
+/datum/supply_pack/faction/solfed/magazine/a858
 	name = "8x58mm Caseless Clip"
 	desc = "A 5-round stripper clip for the SSG-669C rifle. These rounds do good damage with significant armor penetration"
 	contains = list(/obj/item/ammo_box/a858)

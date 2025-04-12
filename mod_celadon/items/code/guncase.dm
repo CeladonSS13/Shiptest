@@ -8,10 +8,32 @@ NO_MAG_GUN_HELPER(automatic/pistol/solgov)
 NO_MAG_GUN_HELPER(automatic/smg/vector)
 NO_MAG_GUN_HELPER(automatic/assault/skm/inteq)
 NO_MAG_GUN_HELPER(automatic/marksman/f4/inteq)
+NO_MAG_GUN_HELPER(energy/laser/retro)
+
+/obj/item/gun/energy/laser/retro/empty_cell
+	spawn_no_ammo = TRUE
 
 // Создаём кучу ганкейсов, чтобы заполнить ими карго
 
-//Solfed guncases
+/*
+MARK: Independent guncases
+*/
+
+/obj/item/storage/guncase/retro
+/obj/item/storage/guncase/retro/PopulateContents()
+	new /obj/item/gun/energy/laser/retro/empty_cell(src)
+	new /obj/item/stock_parts/cell/gun/empty(src)
+	new /obj/item/stock_parts/cell/gun/empty(src)
+
+/obj/item/storage/guncase/skm_carbine
+/obj/item/storage/guncase/skm_carbine/PopulateContents()
+	new /obj/item/gun/ballistic/automatic/smg/skm_carbine/no_mag(src)
+	new /obj/item/ammo_box/magazine/skm_46_30/empty(src)
+	new /obj/item/ammo_box/magazine/skm_46_30/empty(src)
+
+/*
+MARK: Solfed guncases
+ */
 
 /obj/item/ammo_box/magazine/gar/empty
 	start_empty = TRUE
@@ -40,7 +62,9 @@ NO_MAG_GUN_HELPER(automatic/marksman/f4/inteq)
 	new /obj/item/ammo_box/magazine/smgm9mm/empty(src)
 	new /obj/item/ammo_box/magazine/smgm9mm/empty(src)
 
-//InteQ guncases
+/*
+MARK: InteQ guncases
+*/
 
 /obj/item/storage/guncase/bulldog/inteq
 /obj/item/storage/guncase/bulldog/inteq/PopulateContents()
@@ -87,8 +111,9 @@ NO_MAG_GUN_HELPER(automatic/marksman/f4/inteq)
 /obj/item/ammo_box/magazine/skm_762_40/empty
 	start_empty = TRUE
 
-//Syndicate guncases
-
+/*
+MARK: Syndicate guncases
+*/
 /obj/item/storage/guncase/bulldog
 /obj/item/storage/guncase/bulldog/PopulateContents()
 	new /obj/item/gun/ballistic/shotgun/automatic/bulldog/no_mag(src)
@@ -137,7 +162,9 @@ NO_MAG_GUN_HELPER(automatic/marksman/f4/inteq)
 	new /obj/item/ammo_box/magazine/m22lr_himehabu/empty(src)
 	new /obj/item/ammo_box/magazine/m22lr_himehabu/empty(src)
 
-//Nanotrasen guncases
+/*
+MARK: Nanotrasen guncases
+*/
 
 /obj/item/storage/guncase/etar_smg
 /obj/item/storage/guncase/etar_smg/PopulateContents()

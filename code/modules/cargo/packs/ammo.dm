@@ -1,3 +1,6 @@
+/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
+	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
+
 /datum/supply_pack/ammo
 	group = "Bulk Ammunition"
 	crate_type = /obj/structure/closet/crate/secure/gear
@@ -455,3 +458,5 @@
 	desc = "Contains a 48-round box for high-powered gauss guns such as the GAR assault rifle."
 	contains = list(/obj/item/storage/box/ammo/ferrolance/hc)
 	cost = 360
+
+[/CELADON-DELETE] */

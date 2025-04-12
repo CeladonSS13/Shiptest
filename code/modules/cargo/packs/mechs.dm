@@ -1,3 +1,6 @@
+/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
+	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
+
 /datum/supply_pack/mech
 	group = "Exosuit Construction"
 	crate_type = /obj/structure/closet/crate/large
@@ -421,3 +424,6 @@ ammo
 	contains = list(
 		/obj/item/mecha_ammo/missiles_br
 	)
+
+
+[/CELADON-DELETE] */

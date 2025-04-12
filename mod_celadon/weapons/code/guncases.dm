@@ -39,3 +39,14 @@
 	new /obj/item/gun/ballistic/automatic/assault/saiga/no_mag(src)
 	new /obj/item/ammo_box/magazine/saiga/medium/empty(src)
 	new /obj/item/ammo_box/magazine/saiga/medium/empty(src)
+
+NO_MAG_GUN_HELPER(automatic/smg/skm_carbine/no_mag)
+
+/obj/item/ammo_box/magazine/skm_46_30/empty
+	start_empty = TRUE
+
+/obj/item/storage/guncase/skm_carbine
+/obj/item/storage/guncase/skm_carbine/PopulateContents()
+	new /obj/item/gun/ballistic/automatic/smg/skm_carbine/no_mag(src)
+	new /obj/item/ammo_box/magazine/skm_46_30/empty(src)
+	new /obj/item/ammo_box/magazine/skm_46_30/empty(src)

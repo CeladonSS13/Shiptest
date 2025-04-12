@@ -1,3 +1,6 @@
+/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
+	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
+
 /datum/supply_pack/emergency
 	group = "Emergency & Life Support"
 	crate_type = /obj/structure/closet/crate/internals
@@ -104,3 +107,5 @@
 					/obj/item/multitool)
 	crate_name = "bomb suit crate"
 	crate_type = /obj/structure/closet/crate/science
+
+[/CELADON-DELETE] */
