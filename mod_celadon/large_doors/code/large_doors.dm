@@ -171,7 +171,7 @@
 	bound_width = 64 // 2x1
 
 /obj/machinery/door/airlock/multi_tile/solgov
-	name = "SolGov Large Airlock"
+	name = "SolFed Large Airlock"
 	icon = 'mod_celadon/_storge_icons/icons/obj/machinery/airlocks/station/solgov.dmi'
 	overlays_file = 'mod_celadon/_storge_icons/icons/obj/machinery/airlocks/station/overlays.dmi'
 	assemblytype = /obj/structure/door_assembly/multi_tile/metal
