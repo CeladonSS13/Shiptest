@@ -199,7 +199,7 @@
 /obj/machinery/porta_turret/ship/solfed
 	name = "Solarian Gauss Turret"
 	desc = "An effective gauss defence system used by Solfed's vessels. Uses ferromagnetic pellets."
-	faction = list(FACTION_PLAYER_SOLGOV, "turret")
+	faction = list(FACTION_PLAYER_SOLFED, "turret")
 	stun_projectile = /obj/projectile/bullet/a556_42/rubber
 	stun_projectile_sound = 'sound/weapons/gun/smg/shot.ogg'
 	lethal_projectile = /obj/projectile/bullet/gauss
