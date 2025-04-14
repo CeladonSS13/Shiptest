@@ -15,7 +15,7 @@
 	cost = 300
 
 /datum/supply_pack/faction/solfed/civilian_decoration/bedsheet
-	name = "\improper SolGov bedsheet"
+	name = "\improper SolFed bedsheet"
 	desc = "It has the emblem of the Solar Confederation emblazoned upon it!"
 	contains = list(/obj/item/bedsheet/solgov,
 					/obj/item/bedsheet/solgov)
