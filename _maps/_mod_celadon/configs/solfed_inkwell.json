@@ -12,28 +12,28 @@
 	"faction": "/datum/faction/solgov",
 	"tags": ["RP Focus", "Combat", "Cargo", "Mining", "Subshuttle"],
 	"namelists": [
-		"SOLGOV",
+		"SOLFED",
 		"SPACE",
 		"BRITISH_NAVY",
 		"NATURAL"
 	],
 	"job_slots": {
 		"Captain": {
-			"outfit": "/datum/outfit/job/solgov/captain",
+			"outfit": "/datum/outfit/job/solfed/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"Logistics Deck Officer": {
-			"outfit": "/datum/outfit/job/solgov/quartermaster",
+			"outfit": "/datum/outfit/job/solfed/quartermaster",
 			"officer": true,
 			"slots": 1
 		},
 		"Sonnensöldner": {
-			"outfit": "/datum/outfit/job/solgov/sonnensoldner",
+			"outfit": "/datum/outfit/job/solfed/sonnensoldner",
 			"slots": 3
 		},
 		"Ship Engineer": {
-			"outfit": "/datum/outfit/job/solgov/engineer",
+			"outfit": "/datum/outfit/job/solfed/engineer",
 			"slots": 2
 		},
 		"Field Engineer": {
@@ -41,11 +41,11 @@
 			"slots": 3
 		},
 		"Bureaucrat": {
-			"outfit": "/datum/outfit/job/solgov/bureaucrat",
+			"outfit": "/datum/outfit/job/solfed/bureaucrat",
 			"slots": 2
 		},
 		"Scribe": {
-			"outfit": "/datum/outfit/job/solgov/assistant",
+			"outfit": "/datum/outfit/job/solfed/assistant",
 			"slots" : 6
 		}
 	}
