@@ -1241,7 +1241,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/effect/decal/cleanable/oil,
-/mob/living/simple_animal/hostile/human/nanotrasen/ranged/assault,
+/mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/unpowered)
@@ -1614,7 +1614,7 @@
 /turf/open/floor/plasteel/white,
 /area/ruin/unpowered)
 "dm" = (
-/mob/living/simple_animal/hostile/human/nanotrasen/ranged/assault,
+/mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper,
 /obj/structure/fluff/broken_flooring,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/white,
@@ -1845,7 +1845,7 @@
 	},
 /obj/item/cigbutt,
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/human/nanotrasen/ranged/assault,
+/mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper,
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered)
 "dK" = (
@@ -2177,7 +2177,7 @@
 	},
 /obj/effect/turf_decal/corner/transparent/syndiered/border,
 /obj/machinery/firealarm/directional/south,
-/mob/living/simple_animal/hostile/human/nanotrasen/ranged/assault,
+/mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered)
@@ -2250,9 +2250,7 @@
 /obj/machinery/door/window/brigdoor/westleft{
 	req_ship_access = 1
 	},
-/obj/effect/mob_spawn/human/corpse/nanotrasensoldier{
-	req_access = list(6)
-	},
+/obj/effect/mob_spawn/human/corpse/vigilitas_private,
 /obj/effect/decal/cleanable/blood,
 /obj/structure/bed{
 	dir = 4
@@ -2582,7 +2580,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/human/nanotrasen/screaming{
+/mob/living/simple_animal/hostile/human/nanotrasen/ranged/smg{
 	name = "\improper Nanotrasen Inspector"
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -3631,7 +3629,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/transparent/purple/mono,
-/mob/living/simple_animal/hostile/human/nanotrasen/ranged/assault,
+/mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
 /area/ruin/unpowered)
@@ -4068,15 +4066,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/mono/dark,
 /area/ruin/unpowered)
-"iE" = (
-/obj/effect/turf_decal/corner/transparent/syndiered/mono,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 1
-	},
-/obj/machinery/door/firedoor/heavy,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/mono/dark,
-/area/ruin/unpowered)
 "iZ" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -4437,7 +4426,7 @@
 	icon_state = "bordercolor";
 	dir = 4
 	},
-/obj/effect/spawner/random/destructive_anal_loot,
+/obj/effect/spawner/random/salvage/destructive_analyzer,
 /obj/item/kirbyplants/random,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
@@ -4460,7 +4449,7 @@
 "Gd" = (
 /obj/effect/turf_decal/industrial/stand_clear/red,
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/human/nanotrasen/ranged/assault,
+/mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper,
 /turf/open/floor/plasteel/white,
 /area/ruin/unpowered)
 "Hj" = (
@@ -4631,18 +4620,6 @@
 /obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered)
-"ST" = (
-/obj/machinery/power/terminal{
-	icon_state = "term";
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/effect/decal/cleanable/oil,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating,
-/area/ruin/unpowered)
 "TD" = (
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
 /obj/structure/closet/firecloset/wall{
@@ -4699,7 +4676,7 @@
 	},
 /obj/effect/turf_decal/industrial/stand_clear/red,
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/human/nanotrasen/ranged/assault,
+/mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper,
 /turf/open/floor/plasteel/white,
 /area/ruin/unpowered)
 "Yj" = (
@@ -4815,7 +4792,7 @@ eK
 Kv
 aE
 Bs
-ST
+tK
 jr
 ar
 eK
@@ -5107,7 +5084,7 @@ cJ
 ar
 dw
 Zp
-iE
+eg
 ar
 fd
 fd

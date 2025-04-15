@@ -147,6 +147,7 @@
 		"stamp-ngr_fore" = 'icons/stamp_icons/large_stamp-ngr_foreman.png',
 		"stamp-ngr_lieu" = 'icons/stamp_icons/large_stamp-ngr_lieutenant.png',
 		"stamp-ngr_ensign" = 'icons/stamp_icons/large_stamp-ngr_ensign.png',
+		"stamp-hardliners" = 'icons/stamp_icons/large_stamp-hardliners.png',
 		"stamp-nt" = 'icons/stamp_icons/large_stamp-nt_generic.png',
 		"stamp-nt_cap" = 'icons/stamp_icons/large_stamp-nt_captain.png',
 		"stamp-nt_fo" = 'icons/stamp_icons/large_stamp-nt_officer.png',
@@ -373,8 +374,8 @@
 				continue
 			I = icon(icon_file, icon_state, SOUTH)
 
-			// computers (and snowflakes) get their screen and keyboard sprites
-			if (ispath(item, /obj/machinery/computer) || ispath(item, /obj/machinery/power/solar_control))
+			// computers get their screen and keyboard sprites
+			if (ispath(item, /obj/machinery/computer))
 				var/obj/machinery/computer/C = item
 				var/screen = initial(C.icon_screen)
 				var/keyboard = initial(C.icon_keyboard)

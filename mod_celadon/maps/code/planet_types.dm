@@ -8,7 +8,7 @@
 	default_baseturf = /turf/open/floor/plating/asteroid/wasteplanet
 	weather_controller_type = /datum/weather_controller/desert
 	weight = 0
-	// [CELADON-EDIT] -- OVERMAP ICON -- вагагагагагагагагагагага
+	// [CELADON-EDIT] -- CELADON_OVERMAP_ICON -- вагагагагагагагагагагага
 	// icon_state = "globe"
 	icon_state = "sand"
 	// [/CELADON-EDIT]
@@ -19,7 +19,7 @@
 	name = "plasma giant"
 	desc = "The backbone of interstellar travel, the mighty plasma giant allows fuel collection to take place."
 	planet = DYNAMIC_WORLD_PLASMA_GIANT
-	// [CELADON-EDIT] -- OVERMAP ICON -- вагагагагагагагагагагага
+	// [CELADON-EDIT] -- CELADON_OVERMAP_ICON -- вагагагагагагагагагагага
 	//	color = COLOR_PURPLE
 	icon = 'mod_celadon/_storge_icons/icons/overmap/overmap_large.dmi'
 	pixel_w = -8
@@ -39,7 +39,7 @@
 	name = "Sand Planet"
 	desc = "Great Quicksand"
 	planet = DYNAMIC_WORLD_EARTH_SAND
-	// [CELADON-EDIT] -- OVERMAP ICON -- вагагагагагагагагагагага
+	// [CELADON-EDIT] -- CELADON_OVERMAP_ICON -- вагагагагагагагагагагага
 	//	color = COLOR_LIGHT_ORANGE
 	icon_state = "sand"
 	// [/CELADON-EDIT]

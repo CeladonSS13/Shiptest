@@ -93,7 +93,9 @@
 		/obj/structure/vein/classtwo = 40,
 		/obj/effect/spawner/random/anomaly/rock = 10,
 		/obj/structure/vein/classthree = 10,
+		// [CELADON - ADD] - CELADON_RETURN_LANDMINE
 		/obj/effect/spawner/minefield = 2,
+		// [/CELADON - ADD]
 		/obj/effect/spawner/random/anomaly/big = 1 //get out of here stalker
 	)
 
@@ -105,7 +107,7 @@
 		/obj/structure/flora/tree/cactus = 8,
 		/obj/structure/flora/ash/cacti = 2,
 		/obj/structure/flora/ash/garden/arid = 2,
-		/obj/item/mine/pressure/explosive/rusty/live = 1
+		/obj/item/mine/pressure/explosive/rusty/live = 1,
 	)
 
 	mob_spawn_list = list(
@@ -140,7 +142,7 @@
 		/obj/structure/flora/ash/cacti = 2,
 		/obj/structure/flora/grass/rockplanet/dead = 8,
 		/obj/structure/flora/ash/garden/arid = 1,
-		/obj/item/mine/pressure/explosive/rusty/live = 1
+		/obj/item/mine/pressure/explosive/rusty/live = 1,
 	)
 
 /datum/biome/cave/rock
@@ -153,7 +155,9 @@
 		/obj/structure/flora/ash/fern = 4,
 		/obj/structure/flora/ash/puce = 2,
 		/obj/item/mine/pressure/explosive/rusty/live = 1,
+		// [CELADON - ADD] - CELADON_RETURN_LANDMINE
 		/obj/item/mine/proximity/explosive/live = 1,
+		// [/CELADON - ADD]
 	)
 	feature_spawn_chance = 0.5
 	feature_spawn_list = list(
@@ -165,8 +169,10 @@
 		// [/CELADON - ADD]
 		/obj/structure/vein/classthree = 1,
 		/obj/structure/spawner/burrow/rock_plant = 4,
-		/obj/effect/spawner/minefield = 1,
 		/obj/effect/spawner/random/anomaly/rock/cave = 1,
+		// [CELADON - ADD] - CELADON_RETURN_LANDMINE
+		/obj/effect/spawner/minefield = 2,
+		// [/CELADON - ADD]
 	)
 	mob_spawn_chance = 6
 	mob_spawn_list = list(
@@ -187,8 +193,10 @@
 		/obj/structure/flora/ash/fern = 6,
 		/obj/structure/flora/ash/puce = 4,
 		/obj/structure/flora/ash/garden/arid = 2,
+		// [CELADON - ADD] - CELADON_RETURN_LANDMINE
 		/obj/item/mine/proximity/explosive/live = 1,
-		/obj/item/mine/pressure/explosive/rusty/live = 1
+		/obj/item/mine/pressure/explosive/rusty/live = 1,
+		// [/CELADON - ADD]
 	)
 	mob_spawn_list = list(
 		/mob/living/simple_animal/hostile/netherworld/asteroid = 30,

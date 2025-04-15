@@ -81,7 +81,7 @@
 	stop_pulling()
 
 	// [CELADON_ADD] - Deletion timer upon death
-	add_and_start_deletion_timer(1200)
+	// add_and_start_deletion_timer(1200)	// Выпиливаем временно таймер, чтобы работали миссии
 	// [/CELADON_ADD]
 
 	if(typing_indicator)

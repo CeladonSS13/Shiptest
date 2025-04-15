@@ -24,6 +24,9 @@
 	gunslinger_spread_bonus = 16
 
 	light_range = 2
+	wear_minor_threshold = 100
+	wear_major_threshold = 300
+	wear_maximum = 600
 
 /obj/item/gun/ballistic/automatic/assault/skm
 	name = "\improper SKM-24"
@@ -66,6 +69,21 @@
 		ATTACHMENT_SLOT_SCOPE = 1
 	)
 
+	slot_offsets = list(
+		ATTACHMENT_SLOT_MUZZLE = list(
+			"x" = 48,
+			"y" = 18,
+		),
+		ATTACHMENT_SLOT_RAIL = list(
+			"x" = 33,
+			"y" = 15,
+		),
+		ATTACHMENT_SLOT_SCOPE = list(
+			"x" = 16,
+			"y" = 22,
+		)
+	)
+
 	spread = 1
 	wield_delay = 0.7 SECONDS
 
@@ -81,6 +99,7 @@
 	icon_state = "skm_pirate"
 	item_state = "skm_pirate"
 	manufacturer = MANUFACTURER_NONE
+	wear_rate = 2
 
 /obj/item/gun/ballistic/automatic/assault/skm/inteq
 	name = "\improper SKM-44"
@@ -137,4 +156,4 @@
 	spread_unwielded = 15
 
 /obj/item/gun/ballistic/automatic/assault/swiss_cheese/process_other(atom/target, mob/living/user, message = TRUE, flag, params = null, zone_override = "", bonus_spread = 0)
-	to_chat(user, "<span class='danger'>You hear a strange sound from the DMA unit. It doesn't appear to be operational.</span>")
+	to_chat(user, span_danger("You hear a strange sound from the DMA unit. It doesn't appear to be operational."))

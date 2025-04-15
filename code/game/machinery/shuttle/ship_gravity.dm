@@ -34,7 +34,7 @@
 	. = ..()
 	if(anchored)
 		connect_to_network()
-
+// ID: ALARM_CONFLICTS_OFFOS - ГДЕ БЛОК ИЗМЕНЕННИЙ????
 	soundloop = new(list(src), FALSE)
 
 /obj/machinery/power/ship_gravity/Destroy()
@@ -45,8 +45,9 @@
 	. = ..()
 	if(prob(50))
 		set_state(!active)
+// ТУТ КОНЕЦ БЛОКА!
 
-/obj/machinery/power/ship_gravity/process()
+/obj/machinery/power/ship_gravity/process(seconds_per_tick)
 	if(charging && (!active_power_usage || surplus() >= active_power_usage))
 		add_load(active_power_usage)
 		charge = min(charge+1, 5)

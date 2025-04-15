@@ -3,13 +3,28 @@
 
 #include "_mobs.dm"
 
-#include "code/bots.dm"
-#include "code/burrows.dm"
-#include "code/iriska.dm"
-#include "code/magma_goliath.dm"
-#include "code/magma_legion.dm"
+#include "code/hostile/roaches/reagent_containers.dm"
+#include "code/hostile/roaches/roach.dm"
+#include "code/hostile/roaches/fuhrer.dm"
+#include "code/hostile/roaches/benzin.dm"
+#include "code/hostile/roaches/bluespace.dm"
+#include "code/hostile/roaches/hunter.dm"
+#include "code/hostile/roaches/kaiser.dm"
+#include "code/hostile/roaches/nanite.dm"
+#include "code/hostile/roaches/roachling.dm"
+#include "code/hostile/roaches/support.dm"
+#include "code/hostile/roaches/tank.dm"
+#include "code/hostile/roaches/toxic.dm"
 
 #include "code/hostile/cavern_geist.dm"
+#include "code/hostile/magma_goliath.dm"
+#include "code/hostile/magma_legion.dm"
+#include "code/hostile/plasma_legion.dm"
+#include "code/hostile/tele.dm"
+#include "code/hostile/wizard_constructs.dm"
+
+#include "code/megafauna/clawloot.dm"
+#include "code/megafauna/dragon.dm"
 
 #include "code/pets/ada.dm"
 #include "code/pets/alta.dm"
@@ -23,26 +38,8 @@
 #include "code/pets/syndimouse.dm"
 #include "code/pets/zlatchek.dm"
 
-#include "code/ruin/spawner.dm"
-
-#include "code/roaches/reagent_containers.dm"
-#include "code/roaches/roach.dm"
-#include "code/roaches/fuhrer.dm"
-#include "code/roaches/benzin.dm"
-#include "code/roaches/bluespace.dm"
-#include "code/roaches/hunter.dm"
-#include "code/roaches/kaiser.dm"
-#include "code/roaches/nanite.dm"
-#include "code/roaches/roachling.dm"
-#include "code/roaches/support.dm"
-#include "code/roaches/tank.dm"
-#include "code/roaches/toxic.dm"
-
-#include "code/simple_animal/wizard_constructs.dm"
-#include "code/simple_animal/tele.dm"
-#include "code/simple_animal/plasma_legion.dm"
-#include "code/simple_animal/dragon.dm"
-#include "code/simple_animal/clawloot.dm"
+#include "code/simple_animal/bots.dm"
+#include "code/simple_animal/iriska.dm"
 
 #include "code/animamobs.dm"
 

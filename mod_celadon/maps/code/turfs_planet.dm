@@ -1,5 +1,4 @@
-// Тюрфы плазменной планеты //
-
+///MARK: Тюрфы плазменной планеты
 /turf/open/floor/plating/asteroid/plasma_gaint
 	name = "ashen sand"
 	desc = "Sand, tinted by the chemicals in the atmosphere to an uncanny shade of purple."
@@ -16,7 +15,7 @@
 /turf/open/floor/plating/moss/plasma_gaint
 	name = "mossy carpet"
 	desc = "When the forests burned away and the sky grew dark, the moss learned to feed on the falling ash."
-	baseturfs = /turf/open/floor/plating/ashplanet //explosions and damage can destroy the moss
+	baseturfs = /turf/open/floor/plating/ashplanet/plasma_gaint //explosions and damage can destroy the moss
 	initial_gas_mix = PLASMA_GIANT_ATMOS
 	planetary_atmos = TRUE
 	icon_state = "moss"
@@ -36,7 +35,7 @@
 
 /turf/open/floor/plating/grass/lava/purple/plasma_gaint
 	initial_gas_mix = PLASMA_GIANT_ATMOS
-	baseturfs = /turf/open/floor/plating/grass/lava/purple
+	baseturfs = /turf/open/floor/plating/grass/lava/purple/plasma_gaint
 	icon = 'icons/turf/floors/lava_grass_purple.dmi'
 	smooth_icon = 'icons/turf/floors/lava_grass_purple.dmi'
 
@@ -46,7 +45,7 @@
 	icon = 'mod_celadon/_storge_icons/icons/turf/lava_plasma.dmi'
 	icon_state = "lava-255"
 	initial_gas_mix = PLASMA_GIANT_ATMOS
-	baseturfs = /turf/open/lava/plasma
+	baseturfs = /turf/open/lava/plasma/plasma_gaint
 	slowdown = 2
 
 	base_icon_state = "lava"
@@ -101,7 +100,30 @@
 	light_range = 3
 	light_power = 0.75
 
-// Тюрфы пустынной планеты //
+/turf/open/floor/plating/ashplanet/plasma_gaint
+	baseturfs = /turf/open/floor/plating/ashplanet/plasma_gaint/wateryrock //I assume this will be a chasm eventually, once this becomes an actual surface
+	initial_gas_mix = PLASMA_GIANT_ATMOS
+
+/turf/open/floor/plating/ashplanet/plasma_gaint/wateryrock
+	gender = PLURAL
+	name = "wet rocky ground"
+	smoothing_flags = NONE
+	icon_state = "wateryrock"
+	slowdown = 2
+	footstep = FOOTSTEP_FLOOR
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+
+/turf/open/floor/plating/ashplanet/plasma_gaint/wateryrock/Initialize(mapload, inherited_virtual_z)
+	icon_state = "[icon_state][rand(1, 9)]"
+	. = ..()
+
+/turf/open/lava/plasma/plasma_gaint
+	baseturfs = /turf/open/lava/plasma/plasma_gaint
+	initial_gas_mix = PLASMA_GIANT_ATMOS
+
+///MARK: Тюрфы пустынной планеты
 
 /turf/closed/mineral/random/whitesands/earth
 	name = "sandstone"
@@ -115,7 +137,7 @@
 	icon = 'mod_celadon/_storge_icons/icons/turf/beach.dmi'
 	icon_state = "sand"
 
-// Тюрфы ночи //
+///MARK: Тюрфы ночи
 
 /turf/open/water/jungle/nolit
 	light_range = 0
@@ -138,11 +160,11 @@
 	light_system = 0
 	dynamic_lighting = 0
 
-// Тюрфы для модульной anima //
+///MARK: Тюрфы для модульной anima
 
 #define ANIMA_DEFAULT_ATMOS "n2=100;TEMP=100.00"
 
-//Базовый турф - родитель/
+///MARK: Базовый турф - родитель
 /turf/open/space/anima
 	planetary_atmos = FALSE
 	initial_gas_mix = ANIMA_DEFAULT_ATMOS
@@ -152,7 +174,7 @@
 	light_power = 2
 	light_color = COLOR_VERY_LIGHT_GRAY
 
-//Снежные турфы/
+///MARK: Снежные турфы
 /turf/open/floor/plating/asteroid/snow/anima
 	initial_gas_mix = ANIMA_DEFAULT_ATMOS
 	planetary_atmos = FALSE
@@ -167,7 +189,7 @@
 	light_power = 0.8
 	light_color = COLOR_VERY_LIGHT_GRAY
 
-//Мусорные турфы/
+///MARK: Мусорные турфы
 /turf/open/floor/plating/asteroid/wasteplanet/lit/anima
 	initial_gas_mix = ANIMA_DEFAULT_ATMOS
 	planetary_atmos = FALSE
@@ -180,12 +202,12 @@
 	initial_gas_mix = ANIMA_DEFAULT_ATMOS
 	planetary_atmos = FALSE
 
-//Джунглиевый турф
+///MARK: Джунглиевый турф
 /turf/open/floor/plating/grass/jungle/lit/anima
 	initial_gas_mix = ANIMA_DEFAULT_ATMOS
 	planetary_atmos = FALSE
 
-//Лавовый турф
+///MARK: Лавовый турф
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface/lit/anima
 	initial_gas_mix = ANIMA_DEFAULT_ATMOS
 	planetary_atmos = FALSE
@@ -201,7 +223,7 @@
 	initial_gas_mix = ANIMA_DEFAULT_ATMOS
 	planetary_atmos = FALSE
 
-//Песчанный турф
+///MARK: Песчанный турф
 /turf/open/floor/plating/asteroid/whitesands/lit/anima
 	initial_gas_mix = ANIMA_DEFAULT_ATMOS
 	planetary_atmos = FALSE

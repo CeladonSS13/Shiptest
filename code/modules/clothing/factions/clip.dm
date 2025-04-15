@@ -25,7 +25,7 @@
 
 	icon_state = "clip_minuteman"
 
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
 	strip_delay = 50
 
 	can_adjust = FALSE
@@ -300,8 +300,8 @@
 	vox_override_icon = 'icons/mob/clothing/faction/clip/vox.dmi'
 
 	icon_state = "clip_x11"
-	allow_post_reskins = FALSE
 	unique_reskin = null
+	can_flashlight = TRUE
 
 	supports_variations = VOX_VARIATION
 
@@ -314,8 +314,8 @@
 	vox_override_icon = 'icons/mob/clothing/faction/clip/vox.dmi'
 
 	icon_state = "clip_m10_vc"
-	allow_post_reskins = FALSE
 	unique_reskin = null
+	can_flashlight = TRUE
 
 	supports_variations = VOX_VARIATION
 
@@ -333,6 +333,7 @@
 
 	icon_state = "clip_m10_correspondant"
 	item_state = "clip_m10_correspondant"
+	can_flashlight = TRUE
 
 	supports_variations = VOX_VARIATION
 

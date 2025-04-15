@@ -150,8 +150,9 @@
 	},
 /area/ruin/unpowered)
 "x" = (
-/obj/structure/table/wood,
-/obj/item/pizzabox/infinite,
+/obj/item/kitchen/fork,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/pizzabox/pineapple,
 /turf/open/floor/wood{
 	initial_gas_mix = "o2=14;n2=5;co2=13;TEMP=300"
 	},
@@ -285,9 +286,23 @@
 	initial_gas_mix = "o2=14;n2=5;co2=13;TEMP=300"
 	},
 /area/ruin/unpowered)
+"U" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/pizzabox/pineapple,
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=14;n2=5;co2=13;TEMP=300"
+	},
+/area/ruin/unpowered)
 "W" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/asteroid/hivelord/legion/dwarf,
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=14;n2=5;co2=13;TEMP=300"
+	},
+/area/ruin/unpowered)
+"Y" = (
+/obj/structure/table/wood,
+/obj/item/pizzabox/pineapple,
 /turf/open/floor/wood{
 	initial_gas_mix = "o2=14;n2=5;co2=13;TEMP=300"
 	},
@@ -384,7 +399,7 @@ m
 e
 w
 h
-w
+x
 h
 h
 e
@@ -401,7 +416,7 @@ b
 d
 f
 n
-h
+U
 h
 c
 e
@@ -442,7 +457,7 @@ e
 h
 p
 q
-x
+G
 D
 K
 h
@@ -503,7 +518,7 @@ e
 h
 t
 A
-G
+Y
 q
 W
 c
@@ -520,7 +535,7 @@ b
 b
 d
 k
-h
+U
 s
 s
 H

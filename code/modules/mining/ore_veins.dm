@@ -37,7 +37,9 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	var/drop_rate_amount_min = 15
 	var/drop_rate_amount_max = 20
 	//Mob spawning variables
-	var/spawning_started = FALSE
+	var/spawner_attached = FALSE //Probably a drastically less sloppy way of doing this, but it technically works
+	///is the spawner currently spawning mobs?
+	var/currently_spawning = FALSE
 	var/max_mobs = 6
 	var/spawn_time = 15 SECONDS
 	var/mob_types = list(
@@ -52,11 +54,11 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	var/spawn_text = "emerges from"
 	var/faction = list("hostile","mining")
 	var/spawn_sound = list('sound/effects/break_stone.ogg')
-	var/datum/component/spawner/spawner_type
+	var/spawner_type = /datum/component/spawner
 	var/spawn_distance_min = 4
 	var/spawn_distance_max = 6
 	var/wave_length = 2 MINUTES
-	var/wave_downtime = 30 SECONDS
+	var/wave_downtime = 1 MINUTES
 
 
 //Generates amount of ore able to be pulled from the vein (mining_charges) and types of ore within it (vein_contents)
@@ -78,6 +80,8 @@ GLOBAL_LIST_EMPTY(ore_veins)
 			var/picked = pick_weight(ore_list)
 			vein_contents.Add(picked)
 			ore_list.Remove(picked)
+			if(!LAZYLEN(ore_list))
+				break
 	GLOB.ore_veins += src
 
 /obj/structure/vein/examine(mob/user)
@@ -89,6 +93,11 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	destroy_effect()
 	GLOB.ore_veins -= src
 	return ..()
+
+/obj/structure/vein/proc/begin_spawning()
+	AddComponent(spawner_type, mob_types, spawn_time, faction, spawn_text, max_mobs, spawn_sound, spawn_distance_min, spawn_distance_max, wave_length, wave_downtime, vein_class)
+	spawner_attached = TRUE
+	currently_spawning = TRUE
 
 //Pulls a random ore from the vein list per vein_class
 /obj/structure/vein/proc/drop_ore(multiplier,obj/machinery/drill/current)
@@ -102,14 +111,10 @@ GLOBAL_LIST_EMPTY(ore_veins)
 
 /obj/structure/vein/proc/destroy_effect()
 	playsound(loc,'sound/effects/explosionfar.ogg', 200, TRUE)
-	visible_message("<span class='boldannounce'>[src] collapses!</span>")
+	visible_message(span_boldannounce("[src] collapses!"))
 
 /obj/structure/vein/proc/toggle_spawning()
-	if(!spawner_type)
-		spawner_type = AddComponent(/datum/component/spawner, mob_types, spawn_time, faction, spawn_text, max_mobs, spawn_sound, spawn_distance_min, spawn_distance_max, wave_length, wave_downtime)
-	else
-		spawner_type.toggle_spawning(spawning_started = spawning_started) // fsr send signal did not worked for me so i just called a proc. Either way its the same
-	spawning_started = !spawning_started
+	currently_spawning = SEND_SIGNAL(src, COMSIG_SPAWNER_TOGGLE_SPAWNING, currently_spawning)
 
 //
 //	Planetary and Class Subtypes
@@ -130,7 +135,6 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		/obj/item/stack/ore/bluespace_crystal = 1,
 		)
 	max_mobs = 6
-	spawn_time = 100
 	mob_types = list(
 		// [CELADON-ADD] - RETURN_CONTENT
 		/mob/living/simple_animal/hostile/asteroid/goliath/beast/tendril = 60,
@@ -158,7 +162,6 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		/obj/item/stack/ore/bluespace_crystal = 3,
 		)
 	max_mobs = 6 //Best not to go past 6 due to balance and lag reasons
-	spawn_time = 80
 	mob_types = list(
 		// [CELADON-ADD] - RETURN_CONTENT
 		/mob/living/simple_animal/hostile/asteroid/goliath/beast/tendril = 60,
@@ -171,6 +174,10 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		/mob/living/simple_animal/hostile/asteroid/goliath/beast/ancient = 5,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/dwarf/nest = 10,
 		)
+
+/obj/structure/vein/classfour
+	mining_charges = 30
+	vein_class = 4
 
 /obj/structure/vein/ice
 	mob_types = list(
@@ -213,7 +220,6 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		/obj/item/stack/ore/ice = 8,
 		)
 	max_mobs = 6
-	spawn_time = 100
 
 /obj/structure/vein/ice/classthree
 	mining_charges = 10
@@ -230,7 +236,10 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		/obj/item/stack/ore/ice = 8,
 		)
 	max_mobs = 6
-	spawn_time = 80
+
+/obj/structure/vein/ice/classfour
+	mining_charges = 30
+	vein_class = 4
 
 // Asteroid veins are the same as the base planetary ones yield wise, but with the asteroid mobs.
 

@@ -129,6 +129,9 @@
 // /datum/gear/moth
 // 	display_name = "toy, moth plushie"
 // 	path = /obj/item/toy/plush/moth
+/datum/gear/moth
+	display_name = "toy, moth plushie box"
+	path = /obj/item/choice_beacon/mothplushies
 
 // /datum/gear/bee
 // 	display_name = "toy, bee plushie"
@@ -218,3 +221,7 @@
 /datum/gear/hourglass
 	display_name = "hourglass"
 	path = /obj/item/hourglass
+
+/datum/gear/spraycan
+	display_name = "spraycan"
+	path = /obj/item/toy/crayon/spraycan

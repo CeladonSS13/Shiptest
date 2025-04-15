@@ -9,9 +9,13 @@
 -->
 
 <!-- Название мода. Не важно на русском или на английском. -->
-## OVERMAP COLLISION, OVERMAP STUFF, OVERMAP ICON, OVERMAP ARPA
+## CELADON_OVERMAP_COLLISION, CELADON_OVERMAP_STUFF, CELADON_OVERMAP_ICON, CELADON_OVERMAP_ARPA
 
-ID мода: OVERMAP COLLISION, OVERMAP STUFF, OVERMAP ICON, OVERMAP ARPA
+ID мода: 
+	CELADON_OVERMAP_COLLISION
+	CELADON_OVERMAP_STUFF 
+	CELADON_OVERMAP_ICON 
+	CELADON_OVERMAP_ARPA
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -41,7 +45,26 @@ ID мода: OVERMAP COLLISION, OVERMAP STUFF, OVERMAP ICON, OVERMAP ARPA
 
 ### Изменения *кор кода*
 
-- code/controllers/subsystem/overmap_move.dm, code/game/gamemodes/meteor/meteors.dm, code/modules/overmap/_overmap_datum.dm, code/modules/overmap/helm.dm, code/modules/overmap/objects/dynamic_datum.dm, code/modules/overmap/objects/event_datum.dm, code/modules/overmap/objects/star.dm, code/modules/overmap/overmap_token.dm, code/modules/overmap/overmap_turf.dm, code/modules/overmap/planets/planet_types.dm, code/modules/overmap/ships/controlled_ship_datum.dm, code/modules/overmap/ships/ship_datum.dm, icons/misc/overmap.dmi, icons/misc/overmap_large.dmi, icons/misc/overmap_larger.dmi, icons/turf/overmap.dmi, mod_celadon/maps/code/planet_types.dm, shiptest.dme, tgui/packages/tgui/interfaces/HelmConsole.js, code/controllers/subsystem/overmap_stuff.dm
+- code/controllers/subsystem/overmap_stuff.dm
+- code/controllers/subsystem/overmap_move.dm, 
+- code/game/gamemodes/meteor/meteors.dm, 
+- code/modules/overmap/_overmap_datum.dm, 
+- code/modules/overmap/helm.dm, 
+- code/modules/overmap/objects/dynamic_datum.dm, 
+- code/modules/overmap/objects/event_datum.dm, 
+- code/modules/overmap/objects/star.dm, 
+- code/modules/overmap/overmap_token.dm, 
+- code/modules/overmap/overmap_turf.dm, 
+- code/modules/overmap/planets/planet_types.dm, 
+- code/modules/overmap/ships/controlled_ship_datum.dm, 
+- code/modules/overmap/ships/ship_datum.dm, 
+- icons/misc/overmap.dmi, 
+- icons/misc/overmap_large.dmi, 
+- icons/misc/overmap_larger.dmi, 
+- icons/turf/overmap.dmi, 
+- mod_celadon/maps/code/planet_types.dm, 
+- shiptest.dme, 
+- tgui/packages/tgui/interfaces/HelmConsole.js, 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -78,7 +101,26 @@ ID мода: OVERMAP COLLISION, OVERMAP STUFF, OVERMAP ICON, OVERMAP ARPA
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- code/controllers/subsystem/overmap_move.dm, code/game/gamemodes/meteor/meteors.dm, code/modules/overmap/_overmap_datum.dm, code/modules/overmap/helm.dm, code/modules/overmap/objects/dynamic_datum.dm, code/modules/overmap/objects/event_datum.dm, code/modules/overmap/objects/star.dm, code/modules/overmap/overmap_token.dm, code/modules/overmap/overmap_turf.dm, code/modules/overmap/planets/planet_types.dm, code/modules/overmap/ships/controlled_ship_datum.dm, code/modules/overmap/ships/ship_datum.dm, icons/misc/overmap.dmi, icons/misc/overmap_large.dmi, icons/misc/overmap_larger.dmi, icons/turf/overmap.dmi, mod_celadon/maps/code/planet_types.dm, shiptest.dme, tgui/packages/tgui/interfaces/HelmConsole.js, code/controllers/subsystem/overmap_stuff.dm
+- code/controllers/subsystem/overmap_stuff.dm
+- code/controllers/subsystem/overmap_move.dm, 
+- code/game/gamemodes/meteor/meteors.dm, 
+- code/modules/overmap/_overmap_datum.dm, 
+- code/modules/overmap/helm.dm, 
+- code/modules/overmap/objects/dynamic_datum.dm, 
+- code/modules/overmap/objects/event_datum.dm, 
+- code/modules/overmap/objects/star.dm, 
+- code/modules/overmap/overmap_token.dm, 
+- code/modules/overmap/overmap_turf.dm, 
+- code/modules/overmap/planets/planet_types.dm, 
+- code/modules/overmap/ships/controlled_ship_datum.dm, 
+- code/modules/overmap/ships/ship_datum.dm, 
+- icons/misc/overmap.dmi, 
+- icons/misc/overmap_large.dmi, 
+- icons/misc/overmap_larger.dmi, 
+- icons/turf/overmap.dmi, 
+- mod_celadon/maps/code/planet_types.dm, 
+- shiptest.dme, 
+- tgui/packages/tgui/interfaces/HelmConsole.js, 
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.

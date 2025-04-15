@@ -6,7 +6,7 @@
 			Please anchor the attached sensor array to your ship and fly it through the storms. \
 			It must be powered to collect the data."
 	value = 3500
-	objective_type = /datum/overmap/event/emp
+	// objective_type = /datum/overmap/event/emp // NEEDS_TO_FIX_ALARM!
 
 // Сам Ионный шторм
 // Остальные ивенты тут code/modules/overmap/objects/event_datum.dm

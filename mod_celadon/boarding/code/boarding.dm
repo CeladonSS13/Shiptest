@@ -56,7 +56,7 @@
 		if(icon_state == "boarding_pad_off")
 			icon_state = "boarding_pad"
 			playsound(src, 'sound/weapons/flash.ogg', 40, TRUE, frequency = 1.5)
-			visible_message("<span class='notice'>Телепортер готов к использованию!</span>")
+			visible_message(span_notice("Телепортер готов к использованию!"))
 		return
 	else
 		cooldown -= 2
@@ -68,16 +68,16 @@
 /obj/machinery/boarding_pad/attack_hand(mob/user)
 	var/mob/living/carbon/M = locate(/mob/living/carbon) in loc // if mobs more than 1, picks random to teleport
 	if(!current_ship)
-		visible_message("<span class='warning'>Пад не находится на шаттле.</span>")
+		visible_message(span_warning("Пад не находится на шаттле."))
 		return
 	if(shuttletype.parent_type == /datum/map_template/shuttle/subshuttles || null)
-		visible_message("<span class='warning'>Производитель запрещает использование абордажного телепада на субшаттлах, установите его на материнском корабле.</span>")
+		visible_message(span_warning("Производитель запрещает использование абордажного телепада на субшаттлах, установите его на материнском корабле."))
 		return
 	if(cooldown > 0)
-		visible_message("<span class='warning'>Устройство заряжается, подождите [cooldown] секунд.</span>")
+		visible_message(span_warning("Устройство заряжается, подождите [cooldown] секунд."))
 		return
 	if(!M || M != user)
-		visible_message("<span class='warning'>Для активации телепортера, оператору необходимо встать на него.</span>")
+		visible_message(span_warning("Для активации телепортера, оператору необходимо встать на него."))
 		return
 
 	var/list/objects = current_ship.get_nearby_overmap_objects()
@@ -89,7 +89,7 @@
 			ships += ship.shuttle_port
 
 	if(ships.len == 0)
-		visible_message("<span class='warning'>Отсутствуют корабли поблизости.</span>")
+		visible_message(span_warning("Отсутствуют корабли поблизости."))
 		return
 	var/obj/docking_port/mobile/selected = tgui_input_list(user, "Выберите шаттл для телепортации", "Меню транслокации", ships)
 
@@ -103,7 +103,7 @@
 					places -= T
 					break
 		if(places.len == 0)
-			visible_message("<span class='warning'>В данной зоне отсутствует свободное место, выберите другую область.</span>")
+			visible_message(span_warning("В данной зоне отсутствует свободное место, выберите другую область."))
 			return
 		balloon_alert(M, "Инициализация, не двигайтесь...")
 		playsound(src, 'sound/weapons/flash.ogg', 40, TRUE, frequency = 0.5)
@@ -139,7 +139,7 @@
 	if(!Adjacent(user))
 		return
 
-	to_chat(user, "<span class='warning'>You begin to manually override the local database...</span>")
+	to_chat(user, span_warning("You begin to manually override the local database..."))
 	if(!do_after(user, 2 SECONDS, src))
 		return COMPONENT_BLOCK_TOOL_ATTACK
 

@@ -133,9 +133,9 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	if(ishuman(user) && istype(A, /obj/item))
 		var/mob/living/carbon/human/H = user
 		if(H.put_in_hands(A))
-			to_chat(H, "<span class='boldnotice'>[A] materializes into your hands!</span>")
+			to_chat(H, span_boldnotice("[A] materializes into your hands!"))
 			return A
-	to_chat(user, "<span class='boldnotice'>[A] materializes onto the floor!</span>")
+	to_chat(user, span_boldnotice("[A] materializes onto the floor!"))
 	return A
 
 //Discounts (dynamically filled above)
@@ -405,7 +405,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	name = "Double-Bladed Energy Sword"
 	desc = "The double-bladed energy sword does slightly more damage than a standard energy sword and will deflect \
 			all energy projectiles, but requires two hands to wield."
-	item = /obj/item/dualsaber
+	item = /obj/item/melee/duelenergy/saber
 	player_minimum = 25
 	cost = 16
 	exclude_modes = list(/datum/game_mode/nuclear/clown_ops)
@@ -527,24 +527,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/gun/ballistic/automatic/toy/pistol/riot
 	cost = 2
 	surplus = 10
-
-/datum/uplink_item/dangerous/semiautoturret
-	name = "Semi-Auto Turret"
-	desc = "An autoturret which shoots semi-automatic ballistic rounds. The turret is bulky \
-			and cannot be moved; upon ordering this item, a smaller beacon will be transported to you \
-			that will teleport the actual turret to it upon activation."
-	item = /obj/item/sbeacondrop/semiautoturret
-	cost = 8
-	include_modes = list(/datum/game_mode/nuclear)
-
-/datum/uplink_item/dangerous/heavylaserturret
-	name = "Heavy Laser Turret"
-	desc = "An autoturret which shoots heavy lasers. The turret is bulky \
-			and cannot be moved; upon ordering this item, a smaller beacon will be transported to you \
-			that will teleport the actual turret to it upon activation."
-	item = /obj/item/sbeacondrop/heavylaserturret
-	cost = 12
-	include_modes = list(/datum/game_mode/nuclear)
 
 /datum/uplink_item/dangerous/weebstick
 	name = "Nanoforged Katana"
@@ -1361,7 +1343,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 		return
 	U.failsafe_code = U.generate_code()
 	var/code = "[islist(U.failsafe_code) ? english_list(U.failsafe_code) : U.failsafe_code]"
-	to_chat(user, "<span class='warning'>The new failsafe code for this uplink is now : [code].</span>")
+	to_chat(user, span_warning("The new failsafe code for this uplink is now : [code]."))
 	if(user.mind)
 		user.mind.store_memory("Failsafe code for [U.parent] : [code]")
 	return U.parent //For log icon
@@ -1728,7 +1710,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	desc = "A modification for civilian exosuits that allows them to equip one piece of equipment designed for combat exosuits. \
 			It also hides the equipped weapon from plain sight. \
 			Only one can fit on an exosuit."
-	item = /obj/item/mecha_parts/concealed_weapon_bay
+	item = /obj/item/mecha_parts/weapon_bay/concealed
 	cost = 3
 	restricted_roles = list("Roboticist", "Research Director")
 

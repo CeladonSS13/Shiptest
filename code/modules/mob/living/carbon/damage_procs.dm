@@ -160,7 +160,7 @@
 ////////////////////////////////////////////
 
 //Returns a list of damaged bodyparts
-// [CELADON-EDIT] - CELADON_REVERT_CONTENT - Откат по ИПС
+// [CELADON-EDIT] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 // //ignore_integrity shows limbs that can't be healed due to low integrity
 // /mob/living/carbon/proc/get_damaged_bodyparts(brute = FALSE, burn = FALSE, stamina = FALSE, status, ignore_integrity = FALSE)	// CELADON-EDIT - ORIGINAL
 /mob/living/carbon/proc/get_damaged_bodyparts(brute = FALSE, burn = FALSE, stamina = FALSE, status)
@@ -170,7 +170,7 @@
 		if(status && !(BP.bodytype & status))
 			continue
 		if((brute && BP.brute_dam) || (burn && BP.burn_dam) || (stamina && BP.stamina_dam))
-			// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+			// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 			// if (!ignore_integrity && BP.get_curable_damage() <= 0)
 			// 	continue
 			// [/CELADON-REMOVE]
@@ -220,7 +220,7 @@
 	if(picked.receive_damage(brute, burn, stamina, check_armor ? run_armor_check(picked, (brute ? "melee" : burn ? "fire" : stamina ? "bullet" : null)) : FALSE))
 		update_damage_overlays()
 
-// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 // ///Fix integrity in MANY bodyparts, in random order
 // /mob/living/carbon/heal_overall_integrity(amount = 0, required_status, updating_health = TRUE)
 // 	var/list/obj/item/bodypart/parts = get_damaged_bodyparts(required_status, FALSE)

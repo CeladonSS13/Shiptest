@@ -3,8 +3,8 @@
 	desc = "Makes you wiry and shallow."
 	value = 0
 	mob_traits = list(TRAIT_DWARF, TRAIT_SCOOPABLE)
-	gain_text = "<span class='notice'>Everything around you seems to grow..</span>"
-	lose_text = "<span class='danger'>Everything around you seems to shrink..</span>"
+	gain_text = span_notice("Everything around you seems to grow..")
+	lose_text = span_danger("Everything around you seems to shrink..")
 	medical_record_text = "Patient is a dwarf."
 
 /datum/quirk/dwarfism/New(mob/living/quirk_mob, spawn_effects)

@@ -113,12 +113,12 @@
 		update_appearance()
 	return ..()
 
-/obj/item/gun/energy/process()
+/obj/item/gun/energy/process(seconds_per_tick)
 	if(selfcharge && cell && cell.percent() < 100)
-		charge_tick++
-		if(charge_tick < charge_delay)
+		charge_timer += seconds_per_tick
+		if(charge_timer < charge_delay)
 			return
-		charge_tick = 0
+		charge_timer = 0
 		cell.give(1000) //WS Edit - Egun energy cells
 		if(!chambered) //if empty chamber we try to charge a new shot
 			recharge_newshot(TRUE)
@@ -222,7 +222,7 @@
 // 	if(!internal_magazine && latch_closed)
 // 		to_chat(user, span_notice("You start to unlatch the [src]'s power cell retainment clip..."))
 // 		if(do_after(user, latch_toggle_delay, src, IGNORE_USER_LOC_CHANGE))
-// 			to_chat(user, span_notice("You unlatch the [src]'s power cell retainment clip " + "<span class='red'>OPEN</span>" + "."))
+// 			to_chat(user, span_notice("You unlatch the [src]'s power cell retainment clip " + span_red("OPEN") + "."))
 // 			playsound(src, 'sound/items/taperecorder/taperecorder_play.ogg', 50, FALSE)
 // 			tac_reloads = TRUE
 // 			latch_closed = FALSE
@@ -232,7 +232,7 @@
 // 		// 	return ..() //should bring up the attachment menu if attachments are added. If none are added, it just does leaves the latch open
 // 		to_chat(user, span_warning("You start to latch the [src]'s power cell retainment clip..."))
 // 		if (do_after(user, latch_toggle_delay, src, IGNORE_USER_LOC_CHANGE))
-// 			to_chat(user, span_notice("You latch the [src]'s power cell retainment clip " + "<span class='green'>CLOSED</span>" + "."))
+// 			to_chat(user, span_notice("You latch the [src]'s power cell retainment clip " + span_green("CLOSED") + "."))
 // 			playsound(src, 'sound/items/taperecorder/taperecorder_close.ogg', 50, FALSE)
 // 			tac_reloads = FALSE
 // 			latch_closed = TRUE
@@ -414,7 +414,7 @@
 	. = ..()
 // [CELADON-REMOVE] - CELADON BALANCE - часть плохой системы оффов
 // 	if(!internal_magazine)
-// . += "The cell retainment latch is [latch_closed ? "<span class='green'>CLOSED</span>" : "<span class='red'>OPEN</span>"]. Alt-Click on <b>help</b> intent to toggle the latch."
+// 		. += "The cell retainment latch is [latch_closed ? span_green("CLOSED") : span_red("OPEN")]. Alt-Click to toggle the latch."
 // [CELADON-REMOVE]
 	var/obj/item/ammo_casing/energy/shot = ammo_type[select]
 	if(ammo_type.len > 1)

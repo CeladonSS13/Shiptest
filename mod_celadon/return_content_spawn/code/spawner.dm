@@ -31,7 +31,7 @@
 
 /obj/structure/spawner/mining/proc/adestroy_effect()
 	playsound(loc,'sound/effects/explosionfar.ogg', 200, TRUE)
-	visible_message("<span class='boldannounce'>[src] collapses, sealing everything inside!</span>\n<span class='warning'>Ores fall out of the cave as it is destroyed!</span>")
+	visible_message(span_boldannounce("[src] collapses, sealing everything inside!</span>\n<span class='warning'>Ores fall out of the cave as it is destroyed!"))
 
 /obj/structure/spawner/mining
 	name = "monster den"

@@ -7,4 +7,4 @@
 		if(istype(I, /obj/item/clothing/shoes/clown_shoes))
 			Slip(source, AM)
 		else
-			to_chat(AM,"<span class='warning'>[parent] failed to slip anyone. Perhaps I shouldn't have abandoned my legacy...</span>")
+			to_chat(AM,span_warning("[parent] failed to slip anyone. Perhaps I shouldn't have abandoned my legacy..."))

@@ -50,7 +50,7 @@
 	OpenFire()
 	return TRUE
 
-// [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено ради легенды
+// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено ради легенды
 // /mob/living/simple_animal/hostile/asteroid/hivelord/spawn_mob_trophy()
 	// if(mob_trophy)
 		// loot += mob_trophy //we don't butcher
@@ -122,7 +122,7 @@
 	throw_message = "bounces harmlessly off of"
 	loot = list(/obj/item/organ/regenerative_core/legion)
 	brood_type = /mob/living/simple_animal/hostile/asteroid/hivelordbrood/legion
-	// [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено ради легенды
+	// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено ради легенды
 	// mob_trophy = /obj/item/mob_trophy/legion_skull
 	// [/CELADON-REMOVE]
 	del_on_death = 1
@@ -136,11 +136,11 @@
 	move_resist = MOVE_RESIST_DEFAULT
 	pull_force = PULL_FORCE_DEFAULT
 	if(prob(15))
-		// [CELADON-EDIT] - CRUSHER_TROPHEY
+		// [CELADON-EDIT] - RETURN_CONTENT_CRUSHER_TROPHY
 		// new /obj/item/mob_trophy/legion_skull(loc) // CELADON-EDIT - ORIGINAL
 		new /obj/item/crusher_trophy/legion_skull(loc)
 		// [/CELADON-EDIT]
-		visible_message("<span class='warning'>One of the [src]'s skulls looks intact.</span>")
+		visible_message(span_warning("One of the [src]'s skulls looks intact."))
 	..()
 
 /mob/living/simple_animal/hostile/asteroid/hivelord/legion/random/Initialize()
@@ -158,7 +158,7 @@
 	icon_living = "dwarf_legion"
 	icon_aggro = "dwarf_legion"
 	icon_dead = "dwarf_legion"
-	//mob_trophy = /obj/item/mob_trophy/dwarf_skull
+	mob_trophy = /obj/item/mob_trophy/dwarf_skull
 	maxHealth = 75
 	health = 75
 	move_to_delay = 2
@@ -166,7 +166,7 @@
 	dwarf_mob = TRUE
 
 /mob/living/simple_animal/hostile/asteroid/hivelord/legion/death(gibbed)
-	visible_message("<span class='warning'>The skulls on [src] wail in anger as they flee from their dying host!</span>")
+	visible_message(span_warning("The skulls on [src] wail in anger as they flee from their dying host!"))
 	var/turf/T = get_turf(src)
 	if(T)
 		if(stored_mob)
@@ -194,7 +194,7 @@
 	move_force = MOVE_FORCE_DEFAULT
 	move_resist = MOVE_RESIST_DEFAULT
 	pull_force = PULL_FORCE_DEFAULT
-	// [CELADON-ADD] - CRUSHER_TROPHEY
+	// [CELADON-ADD] - RETURN_CONTENT_CRUSHER_TROPHY
 	if(prob(75))
 		new /obj/item/crusher_trophy/dwarf_skull(loc)
 		visible_message("<span class='warning'>One of the [src]'s skulls looks like it survived.</span>")
@@ -400,7 +400,7 @@
 	move_force = MOVE_FORCE_DEFAULT
 	move_resist = MOVE_RESIST_DEFAULT
 	pull_force = PULL_FORCE_DEFAULT
-	visible_message("<span class='userwarning'>[src] falls over with a mighty crash, the remaining legions within it falling apart!</span>")
+	visible_message(span_userwarning("[src] falls over with a mighty crash, the remaining legions within it falling apart!"))
 	new /mob/living/simple_animal/hostile/asteroid/hivelord/legion(loc)
 	new /mob/living/simple_animal/hostile/asteroid/hivelord/legion(loc)
 	new /mob/living/simple_animal/hostile/asteroid/hivelord/legion(loc)
@@ -423,7 +423,7 @@
 	icon_living = "snowlegion"
 	icon_aggro = "snowlegion_alive"
 	icon_dead = "snowlegion"
-	// [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено ради легенды
+	// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено ради легенды
 	// mob_trophy = /obj/item/mob_trophy/legion_skull
 	// [/CELADON-REMOVE]
 	loot = list(/obj/item/organ/regenerative_core/legion)

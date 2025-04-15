@@ -88,15 +88,15 @@
 	result = /obj/item/reagent_containers/food/snacks/snowcones/mime
 	subcategory = CAT_ICE
 
-/datum/crafting_recipe/food/clown_sc
-	name = "Clown snowcone"
-	reqs = list(
-		/obj/item/reagent_containers/food/drinks/sillycup = 1,
-		/datum/reagent/consumable/ice = 15,
-		/datum/reagent/consumable/laughter = 5
-	)
-	result = /obj/item/reagent_containers/food/snacks/snowcones/clown
-	subcategory = CAT_ICE
+// /datum/crafting_recipe/food/clown_sc	 // NEEDS_TO_FIX_ALARM!
+// 	name = "Clown snowcone"
+// 	reqs = list(
+// 		/obj/item/reagent_containers/food/drinks/sillycup = 1,
+// 		/datum/reagent/consumable/ice = 15,
+// 		/datum/reagent/consumable/laughter = 5
+// 	)
+// 	result = /obj/item/reagent_containers/food/snacks/snowcones/clown
+// 	subcategory = CAT_ICE
 
 /datum/crafting_recipe/food/meatclown
 	name = "Meat Clown"

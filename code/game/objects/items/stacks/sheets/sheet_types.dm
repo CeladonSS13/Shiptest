@@ -159,6 +159,7 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	new/datum/stack_recipe("wooden railing", /obj/structure/railing/wood, 3, time = 18, window_checks = TRUE), \
 	new/datum/stack_recipe("wooden railing corner", /obj/structure/railing/corner/wood, 1, time = 10, window_checks = TRUE), \
 	new /datum/stack_recipe("wooden computer frame", /obj/structure/frame/computer/solgov, 5, time = 25, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("planter box", /obj/machinery/hydroponics/wooden, 5, time = 8 SECONDS, one_per_turf = TRUE, on_floor = TRUE), \
 	// [CELADON-ADD] - CELADON_STRUCTURES - Барикады
 	new/datum/stack_recipe("Wooden Half-Barricade", /obj/structure/deployable_barricade/wooden, 10, time = 5 SECONDS, one_per_turf = TRUE, on_floor = TRUE), \
 	// [/CELADON-ADD]
@@ -439,7 +440,7 @@ GLOBAL_LIST_INIT(cardboard_recipes, list (														\
 	if(istype(I, /obj/item/stamp/chameleon) && !istype(loc, /obj/item/storage))
 		var/atom/droploc = drop_location()
 		if(use(1))
-			to_chat(user, "<span class='notice'>You stamp the cardboard in a sinister way.</span>")
+			to_chat(user, span_notice("You stamp the cardboard in a sinister way."))
 			if (amount >= 0)
 				new/obj/item/storage/box/syndie_kit(droploc)
 	else

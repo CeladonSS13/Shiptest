@@ -47,7 +47,7 @@
 
 /mob/living/simple_animal/hostile/cavern_geist/Initialize(mapload)
 	. = ..()
-	ADD_TRAIT(src, TRAIT_NIGHT_VISION, INNATE_TRAIT)
+	// ADD_TRAIT(src, TRAIT_NIGHT_VISION, INNATE_TRAIT)
 	ADD_TRAIT(src, TRAIT_GOOD_CHEMICAL_NIGHTVISION, INNATE_TRAIT)
 	// AddSpell(new /obj/effect/proc_holder/spell/targeted/night_vision(src))
 

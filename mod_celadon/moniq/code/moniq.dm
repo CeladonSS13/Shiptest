@@ -35,11 +35,11 @@
 
 /obj/item/sign/moniq/ui_status(mob/user)
 	if(!allowed(user) && !isobserver(user))
-		to_chat(user,"<span class='warning'>Error: Access Denied.</span>")
+		to_chat(user,span_warning("Error: Access Denied."))
 		user.playsound_local(src, 'sound/misc/compiler-failure.ogg', 25, TRUE)
 		return UI_CLOSE
 	if(!SSjukeboxes.songs.len && !isobserver(user)) //WS Edit Cit #7367
-		to_chat(user,"<span class='warning'>Error: No music tracks have been authorized for this sector. Petition the local authority to resolve this issue.</span>")
+		to_chat(user,span_warning("Error: No music tracks have been authorized for this sector. Petition the local authority to resolve this issue."))
 		playsound(src, 'sound/misc/compiler-failure.ogg', 25, TRUE)
 		return UI_CLOSE
 	return ..()
@@ -80,15 +80,15 @@
 				return
 			if(!active)
 				if(stop > world.time)
-					to_chat(usr, "<span class='warning'>Error: The device is still resetting from the last activation, it will be ready again in [DisplayTimeText(stop-world.time)].</span>")
+					to_chat(usr, span_warning("Error: The device is still resetting from the last activation, it will be ready again in [DisplayTimeText(stop-world.time)]."))
 					playsound(src, 'sound/misc/compiler-failure.ogg', 50, TRUE)
 					return
 				if(!istype(selection)) //WS Edit Cit #7367
-					to_chat(usr, "<span class='warning'>Error: Severe user incompetence detected.</span>")
+					to_chat(usr, span_warning("Error: Severe user incompetence detected."))
 					playsound(src, 'sound/misc/compiler-failure.ogg', 50, TRUE)
 					return
 				if(!activate_music()) //WS Edit Cit #7367
-					to_chat(usr, "<span class='warning'>Error: Generic hardware failure.</span>")
+					to_chat(usr, span_warning("Error: Generic hardware failure."))
 					playsound(src, 'sound/misc/compiler-failure.ogg', 50, TRUE)
 					return
 				return TRUE
@@ -97,7 +97,7 @@
 				return TRUE
 		if("select_track")
 			if(active)
-				to_chat(usr, "<span class='warning'>Error: You cannot change the song until the current one is over.</span>")
+				to_chat(usr, span_warning("Error: You cannot change the song until the current one is over."))
 				return
 			var/list/available = list()
 			for(var/datum/track/S in SSjukeboxes.songs) //WS Edit Cit #7367
@@ -182,11 +182,11 @@
 
 /obj/structure/sign/moniq/ui_status(mob/user)
 	if(!allowed(user) && !isobserver(user))
-		to_chat(user,"<span class='warning'>Error: Access Denied.</span>")
+		to_chat(user,span_warning("Error: Access Denied."))
 		user.playsound_local(src, 'sound/misc/compiler-failure.ogg', 25, TRUE)
 		return UI_CLOSE
 	if(!SSjukeboxes.songs.len && !isobserver(user)) //WS Edit Cit #7367
-		to_chat(user,"<span class='warning'>Error: No music tracks have been authorized for this sector. Petition the local authority to resolve this issue.</span>")
+		to_chat(user,span_warning("Error: No music tracks have been authorized for this sector. Petition the local authority to resolve this issue."))
 		playsound(src, 'sound/misc/compiler-failure.ogg', 25, TRUE)
 		return UI_CLOSE
 	return ..()
@@ -227,15 +227,15 @@
 				return
 			if(!active)
 				if(stop > world.time)
-					to_chat(usr, "<span class='warning'>Error: The device is still resetting from the last activation, it will be ready again in [DisplayTimeText(stop-world.time)].</span>")
+					to_chat(usr, span_warning("Error: The device is still resetting from the last activation, it will be ready again in [DisplayTimeText(stop-world.time)]."))
 					playsound(src, 'sound/misc/compiler-failure.ogg', 50, TRUE)
 					return
 				if(!istype(selection)) //WS Edit Cit #7367
-					to_chat(usr, "<span class='warning'>Error: Severe user incompetence detected.</span>")
+					to_chat(usr, span_warning("Error: Severe user incompetence detected."))
 					playsound(src, 'sound/misc/compiler-failure.ogg', 50, TRUE)
 					return
 				if(!activate_music()) //WS Edit Cit #7367
-					to_chat(usr, "<span class='warning'>Error: Generic hardware failure.</span>")
+					to_chat(usr, span_warning("Error: Generic hardware failure."))
 					playsound(src, 'sound/misc/compiler-failure.ogg', 50, TRUE)
 					return
 				return TRUE
@@ -244,7 +244,7 @@
 				return TRUE
 		if("select_track")
 			if(active)
-				to_chat(usr, "<span class='warning'>Error: You cannot change the song until the current one is over.</span>")
+				to_chat(usr, span_warning("Error: You cannot change the song until the current one is over."))
 				return
 			var/list/available = list()
 			for(var/datum/track/S in SSjukeboxes.songs) //WS Edit Cit #7367

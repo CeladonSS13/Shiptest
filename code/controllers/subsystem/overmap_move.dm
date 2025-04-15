@@ -2,7 +2,7 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 	name = "Overmap Movement"
 	priority = FIRE_PRIORITY_OVERMAP_MOVEMENT
 
-// [CELADON-ADD] - OVERMAP COLLISION - Это вагабонд насрал
+// [CELADON-ADD] - CELADON_OVERMAP_COLLISION - Это вагабонд насрал
 
 /proc/get_relative_motion(var/A, var/B)
 	var/mins = -1

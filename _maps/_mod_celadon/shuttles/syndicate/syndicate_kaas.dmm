@@ -655,12 +655,6 @@
 /obj/machinery/newscaster/security_unit/directional/north,
 /turf/open/floor/wood/birch,
 /area/ship/security/armory)
-"qZ" = (
-/obj/machinery/porta_turret/syndicate/energy/heavy{
-	faction = list("PlayerSyndicate")
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
 "rj" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 9
@@ -1071,7 +1065,8 @@
 /obj/machinery/turretid/lethal{
 	pixel_y = 25;
 	pixel_x = -3;
-	req_access = list(150)
+	req_access = list(150);
+	id = "kaas_turret"
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/bridge)
@@ -1079,8 +1074,8 @@
 /turf/closed/wall/mineral/plastitanium/interior,
 /area/ship/bridge)
 "xV" = (
-/obj/machinery/porta_turret/syndicate/energy/heavy{
-	faction = list("PlayerSyndicate")
+/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
+	id = "kaas_turret"
 	},
 /turf/closed/wall/mineral/plastitanium/interior,
 /area/ship/bridge)
@@ -1118,12 +1113,6 @@
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/cryo)
-"zb" = (
-/obj/machinery/porta_turret/ship/ballistic{
-	faction = list("PlayerSyndicate")
-	},
-/turf/closed/wall/mineral/plastitanium/interior,
-/area/ship/bridge)
 "zK" = (
 /obj/machinery/chem_master,
 /obj/effect/turf_decal/industrial/warning{
@@ -1720,8 +1709,8 @@
 /turf/open/floor/carpet/royalblack,
 /area/ship/hallway/central)
 "Ly" = (
-/obj/machinery/porta_turret/ship/ballistic{
-	faction = list("PlayerSyndicate")
+/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
+	id = "kaas_turret"
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
@@ -1853,7 +1842,10 @@
 /turf/open/floor/wood/walnut,
 /area/ship/medical)
 "RC" = (
-/mob/living/simple_animal/hostile/human/ramzi/melee/space/stormtrooper/sledge,
+/mob/living/simple_animal/hostile/human/ramzi/melee/space/stormtrooper/sledge{
+	faction = list("playerSyndicate");
+	name = "Syndicate Supercollider"
+	},
 /turf/open/floor/wood/birch,
 /area/ship/security/armory)
 "RD" = (
@@ -2298,19 +2290,19 @@
 
 (1,1,1) = {"
 CE
-zb
+xV
 mu
 np
 mu
-xV
+xQ
 mu
 MU
 mu
-xV
+xQ
 mu
 np
 vS
-zb
+xV
 "}
 (2,1,1) = {"
 JK
@@ -2410,7 +2402,7 @@ Na
 "}
 (8,1,1) = {"
 CE
-zb
+xV
 Zq
 Zq
 Zq
@@ -2422,7 +2414,7 @@ Zq
 Zq
 Zq
 Zq
-zb
+xV
 "}
 (9,1,1) = {"
 CE
@@ -2699,7 +2691,7 @@ vO
 (26,1,1) = {"
 CE
 CE
-qZ
+Ly
 kY
 xK
 Ij
@@ -2709,7 +2701,7 @@ wq
 TE
 IU
 kY
-qZ
+Ly
 CE
 "}
 (27,1,1) = {"

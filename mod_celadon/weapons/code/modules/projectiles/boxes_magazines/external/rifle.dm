@@ -49,7 +49,7 @@
 
 /obj/item/ammo_box/magazine/g36/sh
 	name = "\improper G36-SH magazine"
-	desc = " Polymer 20-round assault rifle magazine 5.56x45mm."
+	desc = "Polymer 20-round assault rifle magazine 5.56x45mm."
 	icon = 'mod_celadon/_storge_icons/icons/ammo/ammo.dmi'
 	icon_state = "g36sh_mag"
 	base_icon_state = "g36sh_mag"
@@ -66,7 +66,7 @@
 
 /obj/item/ammo_box/magazine/g36
 	name = "\improper G36 magazine"
-	desc = "Polymer standart assault rifle magazine 5.56x45mm."
+	desc = "Polymer 30-round standart assault rifle magazine 5.56x45mm."
 	icon = 'mod_celadon/_storge_icons/icons/ammo/ammo.dmi'
 	icon_state = "g36_mag"
 	base_icon_state = "g36_mag"
@@ -83,7 +83,7 @@
 
 /obj/item/ammo_box/magazine/g36/drum
 	name = "\improper G36 drum magazine"
-	desc = "Polymer high-capacyti assault rifle drum 5.56x45mm."
+	desc = "Polymer 75-round assault rifle drum 5.56x45mm."
 	icon = 'mod_celadon/_storge_icons/icons/ammo/ammo.dmi'
 	icon_state = "g36drum_mag"
 	base_icon_state = "g36drum_mag"

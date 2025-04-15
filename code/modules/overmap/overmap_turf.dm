@@ -5,7 +5,7 @@
 	icon = 'icons/turf/overmap.dmi'
 	icon_state = "overmap"
 	initial_gas_mix = AIRLESS_ATMOS
-	// [CELADON-ADD] - OVERMAP ICON - Это вагабонд насрал
+	// [CELADON-ADD] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	color = COLOR_GRAY
 	// [/CELADON-ADD]
 
@@ -14,7 +14,7 @@
 	. = ..()
 	if(!SSovermap.overmap_vlevel)
 		return
-	// [CELADON-ADD] - OVERMAP ICON - Это вагабонд насрал
+	// [CELADON-ADD] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	if(prob(25))
 		var/image/I = image('icons/turf/overmap.dmi')
 		I.icon_state = "[rand(1, 16)]"

@@ -91,21 +91,22 @@
 	)
 	feature_spawn_chance = 0.1
 	feature_spawn_list = list(
-		/obj/structure/geyser/random = 8,
+		/obj/structure/geyser/random = 4,
 		/obj/structure/vein = 8,
 		/obj/structure/vein/classtwo = 4,
 		// [CELADON - ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/structure/elite_tumor = 4,
 		// [/CELADON - ADD]
 		/obj/structure/vein/classthree = 2,
-		/obj/effect/spawner/random/anomaly/sand = 1,
+		/obj/effect/spawner/random/anomaly/sand = 2,
+		/obj/effect/spawner/minefield = 1,
 	)
 	mob_spawn_chance = 4
 	mob_spawn_list = list(
 		/mob/living/simple_animal/hostile/asteroid/goliath/beast/random = 50,
 		/mob/living/simple_animal/hostile/asteroid/basilisk/whitesands = 40,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/random = 30,
-		/mob/living/simple_animal/hostile/human/hermit/survivor/random = 25,
+		/obj/effect/spawner/random/hermit = 25,
 	)
 
 /datum/biome/sand/wasteland
@@ -137,7 +138,7 @@
 	)
 	mob_spawn_chance = 1
 	mob_spawn_list = list(
-		/mob/living/simple_animal/hostile/human/hermit/survivor/random = 1,
+		/obj/effect/spawner/random/hermit = 1,
 	)
 
 /datum/biome/sand/grass/dead
@@ -171,7 +172,7 @@
 		/mob/living/simple_animal/hostile/asteroid/goliath/beast/random = 40,
 		/mob/living/simple_animal/hostile/asteroid/basilisk/whitesands = 30,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/random = 20,
-		/mob/living/simple_animal/hostile/human/hermit/survivor/random = 40,
+		/obj/effect/spawner/random/hermit = 40,
 	)
 
 /datum/biome/sand/acid //plains

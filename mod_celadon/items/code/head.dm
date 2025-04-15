@@ -96,3 +96,23 @@
 	icon_state = "navyblue_beret"
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/head/hats.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+
+/obj/item/clothing/head/maidheadband
+	name = "maid headband"
+	desc = "Just like from one of those chinese cartoons!"
+	icon_state = "maid_headband"
+	item_state = "maid_headband"
+	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+
+/obj/item/clothing/head/maidheadband/syndicate
+	name = "tactical maid headband"
+	desc = "Tacticute."
+	icon_state = "syndieheadband"
+	item_state = "syndieheadband"
+
+/obj/item/clothing/head/maidheadband/inteq
+	name = "inteq maid headband"
+	desc = "Tacticute."
+	icon_state = "inteqheadband"
+	item_state = "inteqheadband"

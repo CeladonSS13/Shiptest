@@ -278,7 +278,7 @@
 		updatehealth()
 		update_stamina()
 
-// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 // /// Restore integrity to MANY bodyparts, in random order
 // /mob/living/proc/heal_overall_integrity(amount, required_status, updating_health = TRUE)
 // [/CELADON-REMOVE]

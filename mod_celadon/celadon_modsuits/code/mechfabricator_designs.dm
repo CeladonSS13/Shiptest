@@ -403,17 +403,17 @@
 		"MOD Modules", "Medical Modules"
 	)
 
-/datum/design/module/mod_bikehorn
-	name = "Bike Horn Module"
-	id = "mod_bikehorn"
-	materials = list(
-		/datum/material/plastic=1000,
-		/datum/material/iron=1000,
-	)
-	build_path = /obj/item/mod/module/bikehorn
-	category = list(
-		"MOD Modules", "Service Modules"
-	)
+// /datum/design/module/mod_bikehorn	// NEEDS_TO_FIX_ALARM!
+// 	name = "Bike Horn Module"
+// 	id = "mod_bikehorn"
+// 	materials = list(
+// 		/datum/material/plastic=1000,
+// 		/datum/material/iron=1000,
+// 	)
+// 	build_path = /obj/item/mod/module/bikehorn
+// 	category = list(
+// 		"MOD Modules", "Service Modules"
+// 	)
 
 /datum/design/module/mod_microwave_beam
 	name = "Microwave Beam Module"

@@ -117,7 +117,6 @@
 /obj/structure/closet/crate/large,
 /obj/item/clothing/suit/space/hardsuit/ancient/lp,
 /obj/item/circuitboard/machine/techfab/department/security{
-	pixel_x = 0;
 	pixel_y = -4
 	},
 /obj/effect/turf_decal/trimline/opaque/nsorange/line,
@@ -175,9 +174,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/port)
 "br" = (
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/machinery/door/window/northright{
 	dir = 4
 	},
@@ -497,7 +494,6 @@
 "et" = (
 /obj/effect/turf_decal/corner/opaque/vired/half,
 /obj/structure/sign/poster/official/nanotrasen_logo{
-	pixel_x = 0;
 	pixel_y = -32
 	},
 /obj/structure/closet/secure_closet{
@@ -511,8 +507,7 @@
 /obj/item/reagent_containers/spray/pepper,
 /obj/item/reagent_containers/spray/pepper,
 /obj/structure/reagent_dispensers/peppertank{
-	pixel_x = 30;
-	pixel_y = 0
+	pixel_x = 30
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
@@ -615,9 +610,8 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/techfloor/hole/right,
-/obj/item/banner/command{
-	layer = 3.09;
-	anchored = 1
+/obj/item/banner/command/mundane{
+	layer = 3.09
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -694,7 +688,6 @@
 	pixel_y = -1
 	},
 /obj/structure/sign/nanotrasen{
-	pixel_x = 0;
 	pixel_y = -31
 	},
 /turf/open/floor/plasteel/dark,
@@ -792,7 +785,6 @@
 	pixel_y = -31
 	},
 /obj/item/gun/energy/e_gun/iot{
-	pixel_x = 0;
 	pixel_y = 12
 	},
 /obj/item/gun/ballistic/automatic/smg/vector,
@@ -894,7 +886,6 @@
 	},
 /obj/effect/turf_decal/siding/yellow,
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /turf/open/floor/plasteel/tech,
@@ -1154,9 +1145,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/starboard)
 "jb" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/fueled/plasma,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "ji" = (
@@ -1191,7 +1180,6 @@
 /obj/item/assembly/flash/handheld,
 /obj/item/assembly/flash/handheld,
 /obj/structure/sign/poster/official/random{
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/mono/dark,
@@ -1608,14 +1596,12 @@
 /area/ship/hallway/starboard)
 "nE" = (
 /obj/machinery/button/door{
-	dir = 2;
 	pixel_x = -2;
 	name = "Blast Doors";
 	id = "Ranger_AI_Core_Blasts";
 	pixel_y = 22
 	},
 /obj/machinery/button/shieldwallgen{
-	dir = 2;
 	pixel_x = 6;
 	pixel_y = 20;
 	id = "AI_Core_Field_Engi"
@@ -1712,9 +1698,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/port)
 "oI" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/machinery/door/window/northleft{
 	dir = 4
 	},
@@ -1763,7 +1747,6 @@
 "pi" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/structure/sign/poster/official/random{
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /obj/effect/turf_decal/corner/opaque/vired/three_quarters{
@@ -1873,7 +1856,6 @@
 /obj/item/clothing/shoes/clown_shoes,
 /obj/item/clothing/under/rank/civilian/clown,
 /obj/item/clothing/mask/gas/clown_hat{
-	pixel_x = 0;
 	pixel_y = 12
 	},
 /obj/item/grown/bananapeel,
@@ -1911,9 +1893,7 @@
 /turf/open/floor/plasteel,
 /area/ship/crew/janitor)
 "qs" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
@@ -2032,9 +2012,7 @@
 /turf/open/floor/plasteel/lightgrey,
 /area/ship/hallway/central)
 "rW" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/machinery/door/window/northright{
 	dir = 4
 	},
@@ -2158,8 +2136,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/corner/opaque/nsorange/full,
 /obj/structure/sign/nanotrasen/ns{
-	pixel_x = 32;
-	pixel_y = 0
+	pixel_x = 32
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
@@ -2194,9 +2171,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "tg" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
@@ -2232,7 +2207,6 @@
 "tk" = (
 /obj/effect/turf_decal/corner/opaque/orange/full,
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /obj/effect/turf_decal/siding/yellow{
@@ -2258,9 +2232,7 @@
 /turf/open/floor/wood,
 /area/ship/medical)
 "tr" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/fueled/plasma,
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "tw" = (
@@ -2501,7 +2473,6 @@
 /obj/item/storage/box/ammo/c9mm_ap,
 /obj/item/storage/box/ammo/c9mm,
 /obj/structure/sign/nanotrasen/vigilitas{
-	pixel_x = 0;
 	pixel_y = -33
 	},
 /obj/item/ammo_box/magazine/smgm9mm,
@@ -2591,9 +2562,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "wc" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/machinery/door/window/northright{
 	dir = 4
 	},
@@ -2669,8 +2638,7 @@
 	dir = 8
 	},
 /obj/structure/sign/poster/official/random{
-	pixel_x = 32;
-	pixel_y = 0
+	pixel_x = 32
 	},
 /turf/open/floor/circuit,
 /area/ship/engineering/communications)
@@ -2863,9 +2831,7 @@
 /area/ship/engineering/communications)
 "yC" = (
 /obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/effect/turf_decal/siding/purple{
 	dir = 10
 	},
@@ -3183,9 +3149,7 @@
 /turf/open/floor/plastic,
 /area/ship/crew/toilet)
 "BO" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/machinery/door/window/northleft{
 	dir = 4
 	},
@@ -3347,7 +3311,6 @@
 	dir = 8
 	},
 /obj/machinery/door/poddoor{
-	dir = 2;
 	id = "Ranger_AI_Core_Blasts"
 	},
 /obj/structure/cable,
@@ -3422,7 +3385,6 @@
 	dir = 1
 	},
 /obj/machinery/turretid/ship{
-	pixel_x = 0;
 	pixel_y = 25;
 	id = "ranger_turrets"
 	},
@@ -4161,7 +4123,6 @@
 	},
 /obj/structure/chair/comfy/beige,
 /obj/item/toy/plush/moth/redish{
-	pixel_x = 0;
 	layer = 4.3;
 	pixel_y = 4
 	},
@@ -4499,8 +4460,7 @@
 	dir = 8
 	},
 /obj/structure/sign/poster/nanotrasen/vigilitas_nonlethal{
-	pixel_x = 32;
-	pixel_y = 0
+	pixel_x = 32
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
@@ -4608,7 +4568,6 @@
 	pixel_y = 3
 	},
 /obj/item/toy/plush/moth/snow{
-	pixel_x = 0;
 	pixel_y = -1
 	},
 /turf/open/floor/wood,
@@ -4955,7 +4914,6 @@
 	dir = 9
 	},
 /obj/machinery/button/door{
-	pixel_x = 0;
 	pixel_y = 23;
 	id = "ranger_prison";
 	name = "Prison Shutters"
@@ -4974,9 +4932,7 @@
 	pixel_y = 2
 	},
 /obj/machinery/power/apc/auto_name/directional/west,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
@@ -5154,7 +5110,6 @@
 /area/ship/security)
 "Wp" = (
 /obj/machinery/door/poddoor{
-	dir = 2;
 	id = "Ranger_AI_Core_Blasts"
 	},
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
@@ -5401,9 +5356,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "Zj" = (
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/machinery/door/window/northleft{
 	dir = 4
 	},
@@ -5498,8 +5451,7 @@
 	pixel_y = -1
 	},
 /obj/effect/spawner/random/food_or_drink/ration{
-	pixel_x = -10;
-	pixel_y = 0
+	pixel_x = -10
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)

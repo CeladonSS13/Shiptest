@@ -2562,13 +2562,21 @@
 /turf/open/floor/wood/icemoon,
 /area/ruin/icemoon/tesla_lab/office)
 "kM" = (
+/obj/item/gun/ballistic/automatic/pistol/cm23{
+	pixel_x = -12
+	},
 /obj/item/reagent_containers/pill/morphine{
 	pixel_y = -3;
 	pixel_x = -5
 	},
 /obj/effect/decal/cleanable/generic,
-/obj/effect/mob_spawn/human/corpse/solgov/sonnensoldner,
-/obj/item/gun/ballistic/automatic/pistol/solgov/no_mag,
+/obj/effect/mob_spawn/human/corpse/clip/minuteman/forcefem{
+	mob_name = "Alyssa Salata"
+	},
+/obj/effect/landmark/mission_poi/main{
+	already_spawned = 1;
+	mission_index = 2
+	},
 /turf/open/floor/plating,
 /area/ruin/icemoon/tesla_lab/armory)
 "kO" = (
@@ -9634,6 +9642,7 @@
 	name = "Backup Blackbox Recorder";
 	desc = "Some kind of machine backup."
 	},
+/obj/effect/landmark/mission_poi/main/blackbox,
 /turf/open/floor/plating,
 /area/ruin/icemoon/tesla_lab/armory)
 "OY" = (

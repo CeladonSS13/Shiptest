@@ -1,11 +1,11 @@
-/datum/mission/research/meteor
-	objective_type = /datum/overmap/event/meteor
+// /datum/mission/research/meteor
+// 	objective_type = /datum/overmap/event/meteor
 
-/datum/mission/research/carp
-	objective_type = /datum/overmap/event/carp
+// /datum/mission/research/carp
+// 	objective_type = /datum/overmap/event/carp
 
-/datum/mission/research/dust
-	objective_type = /datum/overmap/event/dust
+// /datum/mission/research/dust
+// 	objective_type = /datum/overmap/event/dust
 
 
 /datum/overmap/event

@@ -100,7 +100,7 @@ ID мода: CELADON_OUTFIT
 ### Авторы
 
 Molniz
-SnrBydlo, I'm the God of Terror, MrCat15352, SnrBydlo,Molniz,RalseiDreemuurr - код ; Kottason - спрайты
+SnrBydlo, I'm the God of Terror, MrCat15352, Molniz, RalseiDreemuurr - код ; Kottason - спрайты
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.
