@@ -11,32 +11,32 @@
 	"faction": "/datum/faction/solgov",
 	"tags": ["RP Focus", "Medical", "Chemistry"],
 	"namelists": [
-		"SOLGOV",
+		"SOLFED",
 		"SPACE",
 		"BRITISH_NAVY",
 		"NATURAL"
 	],
 	"job_slots": {
 		"Captain": {
-			"outfit": "/datum/outfit/job/solgov/captain",
+			"outfit": "/datum/outfit/job/solfed/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"Overseer": {
-			"outfit": "/datum/outfit/job/solgov/overseer",
+			"outfit": "/datum/outfit/job/solfed/overseer",
 			"officer": true,
 			"slots": 1
 		},
 		"Medical Doctor": {
-			"outfit": "/datum/outfit/job/solgov/doctor",
+			"outfit": "/datum/outfit/job/solfed/doctor",
 			"slots": 3
 		},
 		"Ship Engineer": {
-			"outfit": "/datum/outfit/job/solgov/engineer",
+			"outfit": "/datum/outfit/job/solfed/engineer",
 			"slots": 1
 		},
 		"Psychologist": {
-			"outfit": "/datum/outfit/job/solgov/psychologist",
+			"outfit": "/datum/outfit/job/solfed/psychologist",
 			"slots": 1
 		},
 		"Field Engineer": {
@@ -44,11 +44,11 @@
 			"slots": 2
 		},
 		"Scribe": {
-			"outfit": "/datum/outfit/job/solgov/assistant",
+			"outfit": "/datum/outfit/job/solfed/assistant",
 			"slots" : 3
 		},
 		"Attentive Care Patient": {
-			"outfit": "/datum/outfit/job/solgov/patient",
+			"outfit": "/datum/outfit/job/solfed/patient",
 			"slots" : 3
 		}
 	}

@@ -48,9 +48,10 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 // [/CELADON-ADD]
 
 // [CELADON-EDIT] - CELADON_OVERMAP_COLLISION - Это вагабонд насрал
-// /proc/spawn_meteor(list/meteortypes, datum/virtual_level/vlevel, padding = MAP_EDGE_PAD)
-/proc/spawn_meteor(list/meteortypes, datum/virtual_level/vlevel, padding = MAP_EDGE_PAD, direc = "none")
-	// [/CELADON-EDIT]
+// /proc/spawn_meteor(list/meteortypes, datum/virtual_level/vlevel, padding = MAP_EDGE_PAD, obj/docking_port/mobile/shuttle_port)	// ORIGINAL
+// /proc/spawn_meteor(list/meteortypes, datum/virtual_level/vlevel, padding = MAP_EDGE_PAD, direc = "none") // Это Вагабонда КОД JOPA
+/proc/spawn_meteor(list/meteortypes, datum/virtual_level/vlevel, padding = MAP_EDGE_PAD, obj/docking_port/mobile/shuttle_port, direc = "none")
+// [/CELADON-EDIT]
 	var/turf/pickedstart
 	var/turf/pickedgoal
 	var/max_i = 10//number of tries to spawn meteor.
@@ -60,8 +61,11 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 		if(direc != "none")
 			startSide = direc
 		// [/CELADON-ADD]
+		if(shuttle_port)	// возможно двойной метеорит прилетит 	// КОД JOPA
+			startSide = shuttle_port.preferred_direction
+
 		pickedstart = vlevel.get_side_turf(startSide, padding)
-		pickedgoal = vlevel.get_side_turf(REVERSE_DIR(startSide), padding)
+		pickedgoal = vlevel.get_side_turf(REVERSE_DIR(startSide), padding, TRUE)
 		max_i--
 		if(max_i<=0)
 			return
@@ -90,7 +94,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	var/threat = 0 // used for determining which meteors are most interesting
 	var/lifetime = DEFAULT_METEOR_LIFETIME
 	var/timerid = null
-	var/list/meteordrop = list(/obj/item/stack/ore/iron)
+	var/list/meteordrop = list(/obj/item/stack/ore/hematite)
 	var/dropamt = 2
 
 /obj/effect/meteor/Move()
@@ -277,7 +281,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	name = "glowing meteor"
 	icon_state = "glowing"
 	heavy = 1
-	meteordrop = list(/obj/item/stack/ore/uranium)
+	meteordrop = list(/obj/item/stack/ore/autunite)
 	threat = 15
 
 

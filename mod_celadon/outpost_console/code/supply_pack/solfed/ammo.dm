@@ -31,7 +31,7 @@
 
 /datum/supply_pack/faction/solfed/ammo/c556mmHITP_ammo_box
 	name = "5.56 HITP Caseless Ammo Box Crate"
-	desc = "Contains a 48-round 5.56mm caseless box for SolGov sidearms like the Pistole C."
+	desc = "Contains a 48-round 5.56mm caseless box for SolFed sidearms like the Pistole C."
 	contains = list(/obj/item/storage/box/ammo/c556mm)
 	cost = 165
 

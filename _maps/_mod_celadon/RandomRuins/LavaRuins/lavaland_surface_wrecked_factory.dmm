@@ -77,7 +77,8 @@
 /obj/item/stock_parts/cell/gun/upgraded,
 /obj/structure/safe,
 /obj/effect/landmark/mission_poi/main{
-	type_to_spawn = /obj/item/documents/nanotrasen
+	type_to_spawn = /obj/item/documents/nanotrasen;
+	spawn_in_containter = 1
 	},
 /turf/open/floor/carpet/blue,
 /area/ruin/lavaland/factory/manager_office)
@@ -2438,7 +2439,14 @@
 	name = "Manager";
 	environment_smash = 0;
 	health = 200;
-	maxHealth = 200
+	maxHealth = 200;
+	taunt_chance = 100;
+	aggro_say_chance = 100;
+	on_aggro_say = list("I'll kill all you Ramzi scum! COME AND GET SOME!", "I'll kill every last one of you Ramzi bastards!", "Finally got the nerve to finish me off you scum sucking Ramzi assholes...  YOU WON'T GET ME TOO YOU BASTARDS!!");
+	speak_emote = list("rants","screams","sobs");
+	verb_exclaim = "rants";
+	verb_yell = "rants";
+	weapon_drop_chance = 100
 	},
 /turf/open/floor/carpet/blue,
 /area/ruin/lavaland/factory/manager_office)
