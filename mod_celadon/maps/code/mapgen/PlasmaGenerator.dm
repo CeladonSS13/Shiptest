@@ -1,9 +1,8 @@
 /datum/map_generator/planet_generator/plasma_gaint
-
 	mountain_height = 0.65
 	perlin_zoom = 35
 
-	primary_area_type = /area/overmap_encounter/planetoid/gas_giant
+	primary_area_type = /area/overmap_encounter/planetoid/plasma_gaint
 
 	biome_table = list(
 		BIOME_COLDEST = list(
