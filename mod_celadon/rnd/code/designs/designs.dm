@@ -33,7 +33,7 @@
 
 /obj/item/disk/design_disk/solgov_mechs
 	name = "design disk - Solgov mecha modifications"
-	desc = "A design disk containing specifications for SolGov-custom mecha conversions."
+	desc = "A design disk containing specifications for SolFed-custom mecha conversions."
 	color = "#0900c1"
 	max_blueprints = 1
 

@@ -6,8 +6,8 @@
 			/obj/structure/spawner/mining = 1,
 			/obj/structure/spawner/mining/hivelord = 1,
 			/obj/structure/vein/asteroid = 5,
-			/obj/structure/vein/classtwo/asteroid = 10,
-			/obj/structure/vein/classthree/asteroid = 5,
+			/obj/structure/vein/asteroid/classtwo = 10,
+			/obj/structure/vein/asteroid/classthree = 5,
 		)
 
 /datum/biome/cave/asteroid/carp_den
@@ -16,6 +16,6 @@
 		/obj/structure/spawner/mining/carp = 5,
 		/obj/structure/spawner/carp = 5,
 		/obj/structure/vein/asteroid = 10,
-		/obj/structure/vein/classtwo/asteroid = 15,
-		/obj/structure/vein/classthree/asteroid = 12,
+		/obj/structure/vein/asteroid/classtwo = 15,
+		/obj/structure/vein/asteroid/classthree = 12,
 	)

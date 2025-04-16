@@ -73,9 +73,15 @@
 
 	mineralChance = 5
 	mineralSpawnChanceList = list(
-		/obj/item/stack/ore/uranium = 10, /obj/item/stack/ore/diamond = 4, /obj/item/stack/ore/gold = 20, /obj/item/stack/ore/titanium = 33,
-		/obj/item/stack/ore/silver = 24, /obj/item/stack/ore/plasma = 45, /obj/item/stack/ore/iron = 45,
-		/turf/closed/mineral/gibtonite/volcanic = 8, /obj/item/stack/ore/bluespace_crystal = 5)
+		/obj/item/stack/ore/autunite = 10,
+		/obj/item/stack/ore/diamond = 4,
+		/obj/item/stack/ore/gold = 20,
+		/obj/item/stack/ore/plasma = 45,
+		/obj/item/stack/ore/proustite = 24,
+		/obj/item/stack/ore/hematite = 45,
+		/obj/item/stack/ore/rutile = 33,
+		/turf/closed/mineral/gibtonite/volcanic = 8,
+		/obj/item/stack/ore/bluespace_crystal = 5)
 
 /turf/open/floor/plating/asteroid/basalt/plasma_gaint
 	initial_gas_mix = PLASMA_GIANT_ATMOS

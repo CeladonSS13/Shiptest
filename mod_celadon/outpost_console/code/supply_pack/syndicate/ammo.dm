@@ -192,16 +192,16 @@
 	cost = 800
 
 
-/* 6.5 */
+/* 7.5 */
 
-/datum/supply_pack/faction/syndicate/ammo/a65clip_box
-	name = "6.5x57mm Ammo Box Crate"
+/datum/supply_pack/faction/syndicate/ammo/a75clip_box
+	name = "7.5x57mm Ammo Box Crate"
 	desc = "Contains a twenty-round 6.5x57mm ammo box for various sniper rifles such as the Boomslang series."
-	contains = list(/obj/item/storage/box/ammo/a65clip)
+	contains = list(/obj/item/storage/box/ammo/a75clip)
 	cost = 200
 
-/datum/supply_pack/faction/syndicate/ammo/a65clip_trackers
-	name = "6.5x57mm Tracker Shell Crate"
+/datum/supply_pack/faction/syndicate/ammo/a75clip_trackers
+	name = "7.5x57mm Tracker Shell Crate"
 	desc = "Contains a 10-round 6.5x57mm tracker box for various sniper rifles such as the Boomslang series."
-	contains = list(/obj/item/storage/box/ammo/a65clip/trac)
+	contains = list(/obj/item/storage/box/ammo/a75clip/trac)
 	cost = 250

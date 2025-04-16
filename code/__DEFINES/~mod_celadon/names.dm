@@ -4,7 +4,7 @@
 	#define FACTION_CYBERSUN "CyberSun"
 	#define FACTION_HARDLINERS "Hardliners"
 	#define FACTION_SUNS "Student-Union of Naturalistic Sciences"
-#define FACTION_SOLGOV "SolFed"
+#define FACTION_SOLFED "SolFed"
 #define FACTION_SOLCON "SolFed"
 #define FACTION_INTEQ "Inteq Risk Management Group"
 #define FACTION_NT "Nanotrasen"
@@ -28,7 +28,7 @@
 // #define FACTION_PLAYER_NANOTRASEN "playerNanotrasen"
 // #define FACTION_PLAYER_FRONTIERSMEN "playerFrontiersmen"
 // #define FACTION_PLAYER_MINUTEMAN "playerMinuteman"
-#define FACTION_PLAYER_SOLGOV "playerSolgov"
+#define FACTION_PLAYER_SOLFED "playerSolFed"
 // #define FACTION_PLAYER_SOLCON "playerSolcon"
 // #define FACTION_PLAYER_INTEQ "playerInteq"
 // #define FACTION_PLAYER_ROUMAIN "playerRoumain"
@@ -40,8 +40,8 @@
 	#define PREFIX_CYBERSUN list("CSSV",)
 	#define PREFIX_HARDLINERS list("ISV",)
 	#define PREFIX_SUNS list("SUNS",)
-#define PREFIX_SOLCON list("SCSV")
-#define PREFIX_SOLGOV list("SFSV", "BSFSV", "ASFSV", "SSFSV", "MDSFSV", "LSFSV", "MSFSV", "SPSFSV",)
+#define PREFIX_SOLCON list("SCSV",)
+#define PREFIX_SOLFED list("SFSV", "BSFSV", "ASFSV", "SSFSV", "MDSFSV", "LSFSV", "MSFSV", "SPSFSV",)
 #define PREFIX_INTEQ list("IRMV", "IQMSSV", "BIQSV", "LIQSV", "SPIQSV",)
 #define PREFIX_NT list("NTSV", "NTBSV", "NTASV", "NTSSV", "NTTSV", "NTMSV", "NTLSV", "NTDSV", "NTSPSV",)
 	#define PREFIX_NS_LOGI list("NSSV",)
@@ -55,12 +55,12 @@
 #define PREFIX_FRONTIERSMEN list("FFV")
 #define PREFIX_CLIP list("CMSV", "CMGSV",)
 #define PREFIX_PGF list("PGF", "PGFMC", "PGFN",)
-#define PREFIX_RAMZI list("RCSV")
+#define PREFIX_RAMZI list("RCSV",)
 #define PREFIX_NONE list()
 
 GLOBAL_LIST_INIT(ship_faction_to_prefixes, list(
 	FACTION_SYNDICATE = PREFIX_SYNDICATE,
-	FACTION_SOLGOV = PREFIX_SOLGOV,
+	FACTION_SOLFED = PREFIX_SOLFED,
 	FACTION_INTEQ = PREFIX_INTEQ,
 	FACTION_NT = PREFIX_NT,
 	FACTION_INDEPENDENT = PREFIX_INDEPENDENT,

@@ -51,7 +51,7 @@
 
 	return data
 
-// UI статика
+// UI статика	// КОД JOPA
 /obj/machinery/computer/cargo/faction/ui_static_data(mob/user)
 	var/list/data = list()
 	data["supplies"] = list()
@@ -69,7 +69,7 @@
 			"cost" = P.cost,
 			"id" = pack,
 			"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
-			"small_item" = P.small_item,
+			// "small_item" = P.small_item,
 		))
 	return data
 
@@ -211,7 +211,7 @@
 	return supply_pack_data
 
 // Создание UI статики для фракций
-/obj/machinery/computer/cargo/faction/proc/faction_ui_static_data(mob/user, datum/faction)
+/obj/machinery/computer/cargo/faction/proc/faction_ui_static_data(mob/user, datum/faction)	// КОД JOPA
 	var/list/data = list()
 	data["supplies"] = list()
 	for(var/pack in SSshuttle.supply_packs)
@@ -234,7 +234,7 @@
 				"cost" = P.cost,
 				"id" = pack,
 				"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
-				"small_item" = P.small_item,
+				// "small_item" = P.small_item,
 			))
 
 

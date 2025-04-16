@@ -4,6 +4,7 @@
 /datum/supply_pack/animal
 	group = "Animals"
 	crate_type = /obj/structure/closet/crate/critter
+	no_bundle = TRUE
 
 /*
 		Vaguely useful animals
@@ -16,6 +17,7 @@
 	contains = list (/obj/item/storage/box/monkeycubes)
 	crate_name = "monkey cube crate"
 	crate_type = /obj/structure/closet/crate
+	no_bundle = FALSE
 
 /datum/supply_pack/animal/chick
 	name = "Chicken Crate"

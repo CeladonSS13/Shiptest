@@ -385,17 +385,25 @@
 // [/CELADON-DELETE] - cargo ammo fix
 /* 6.5 */
 
-/datum/supply_pack/faction/independent/ammo/ammoa65clip_box
-	name = "6.5x57mm CLIP Ammo Box Crate"
-	desc = "Contains a twenty-round 6.5x57mm CLIP ammo box for various sniper rifles such as the CM-F90 and the Boomslang series."
-	contains = list(/obj/item/storage/box/ammo/a65clip)
-	cost = 200 //4 ammo efficiency at 40 damage
+// /datum/supply_pack/faction/independent/ammo/ammoa65clip_box
+//	name = "6.5x57mm CLIP Ammo Box Crate"
+//	desc = "Contains a twenty-round 6.5x57mm CLIP ammo box for various sniper rifles such as the CM-F90 and the Boomslang series."
+//	contains = list(/obj/item/storage/box/ammo/a65clip)
+//	cost = 200 //4 ammo efficiency at 40 damage
 
-/datum/supply_pack/faction/independent/ammo/ammoa65clip_trackers
-	name = "6.5x57mm CLIP Tracker Shell Crate"
-	desc = "Contains a 10-round 6.5x57mm CLIP tracker box for various sniper rifles such as the CM-F90 and the Boomslang series."
-	contains = list(/obj/item/storage/box/ammo/a65clip/trac)
-	cost = 250
+/* 7.5 */
+
+/datum/supply_pack/faction/independent/ammo/a75clip_box
+	name = "7.5x57mm Ammo Box Crate"
+	desc = "Contains a twenty-round 7.5x64mm ammo box for various sniper rifles such as the CM-F90 and the Boomslang series."
+	contains = list(/obj/item/storage/box/ammo/a75clip)
+	cost = 400
+
+// /datum/supply_pack/faction/independent/ammo/ammoa65clip_trackers
+//	name = "6.5x57mm CLIP Tracker Shell Crate"
+//	desc = "Contains a 10-round 6.5x57mm CLIP tracker box for various sniper rifles such as the CM-F90 and the Boomslang series."
+//	contains = list(/obj/item/storage/box/ammo/a65clip/trac)
+//	cost = 250
 
 /* 8x58 */
 

@@ -15,7 +15,7 @@
 				I = O
 				break
 		if (I)
-			I.access += list(ACCESS_SOLGOV, ACCESS_CAPTAIN, ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED, ACCESS_OUTPOST_FACTION_NT)
+			I.access += list(ACCESS_SOLGOV, ACCESS_CAPTAIN, ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
 		W.combined_access = list()
 		for (var/obj/item/card/id/card in W.contents)
@@ -34,7 +34,7 @@
 				I = O
 				break
 		if (I)
-			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED, ACCESS_OUTPOST_FACTION_NT)
+			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
 		W.combined_access = list()
 		for (var/obj/item/card/id/card in W.contents)
@@ -53,7 +53,7 @@
 				I = O
 				break
 		if (I)
-			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED, ACCESS_OUTPOST_FACTION_NT)
+			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
 		W.combined_access = list()
 		for (var/obj/item/card/id/card in W.contents)
@@ -72,7 +72,7 @@
 				I = O
 				break
 		if (I)
-			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED, ACCESS_OUTPOST_FACTION_NT)
+			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
 		W.combined_access = list()
 		for (var/obj/item/card/id/card in W.contents)
@@ -93,7 +93,7 @@
 				I = O
 				break
 		if (I)
-			I.access += list(ACCESS_OUTPOST_FACTION_SOLFED, ACCESS_OUTPOST_FACTION_NT)
+			I.access += list(ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
 		W.combined_access = list()
 		for (var/obj/item/card/id/card in W.contents)
@@ -108,26 +108,26 @@
 	. = ..()
 	if(visualsOnly)
 		return
-	H.faction |= list(FACTION_PLAYER_SOLGOV)
+	H.faction |= list(FACTION_PLAYER_SOLFED)
 	get_solfed_general_access(H)
 
 	// Даёт всем СФкам брендовый сурвивал бокс
-/datum/outfit/job/solgov
+/datum/outfit/job/solfed
 	box = /obj/item/storage/box/survival/solfed
 
-/datum/outfit/job/solgov/ert/inspector
+/datum/outfit/job/solfed/ert/inspector
 	box = /obj/item/storage/box/survival/solfed
 
-/datum/outfit/job/solgov/sonnensoldner
+/datum/outfit/job/solfed/sonnensoldner
 	box = /obj/item/storage/box/survival/solfed
 
-/datum/outfit/job/solgov/engineer
+/datum/outfit/job/solfed/engineer
 	box = /obj/item/storage/box/survival/solfed
 
-/datum/outfit/job/solgov/doctor
+/datum/outfit/job/solfed/doctor
 	box = /obj/item/storage/box/survival/solfed
 
-/datum/outfit/job/solgov/miner
+/datum/outfit/job/solfed/miner
 	box = /obj/item/storage/box/survival/solfed
 
 // Ученые
@@ -147,7 +147,7 @@
 	satchel = /obj/item/storage/backpack/satchel/tox
 	courierbag = /obj/item/storage/backpack/messenger/tox
 
-/datum/outfit/job/solgov/scientist/roboticist
+/datum/outfit/job/solfed/scientist/roboticist
 	name = "SolFed - Roboterkonstrukteur"
 	job_icon = "roboticist"
 	jobtype = /datum/job/roboticist

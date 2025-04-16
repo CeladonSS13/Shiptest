@@ -3,18 +3,21 @@
 
 #include "_configs.dm"
 
-#include "code/mapgen/SandGenerator.dm"
-#include "code/mapgen/PlasmaGenerator.dm"
-#include "code/mapgen/JungleGenerator.dm"
-#include "code/mapgen/SnowGenerator.dm"
-#include "code/mapgen/BeachGenerator.dm"
-#include "code/mapgen/RockGenerator.dm"
+#include "code/mapgen/night/JungleGenerator.dm"
+#include "code/mapgen/night/SnowGenerator.dm"
+#include "code/mapgen/night/BeachGenerator.dm"
+#include "code/mapgen/night/RockGenerator.dm"
 
-#include "code/planet_types.dm"
-#include "code/_path_ruins.dm"
-#include "code/subshuttles.dm"
-#include "code/outpost.dm"
-#include "code/turfs_planet.dm"
+#include "code/mapgen/AnimaGeneration.dm"
+#include "code/mapgen/PlasmaGenerator.dm"
+#include "code/mapgen/SandGenerator.dm"
+
 #include "code/ruins/ruin.dm"
+
+#include "code/_path_ruins.dm"
+#include "code/outpost.dm"
+#include "code/planet_types.dm"
+#include "code/subshuttles.dm"
+#include "code/turfs_planet.dm"
 
 #endif

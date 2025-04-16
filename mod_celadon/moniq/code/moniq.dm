@@ -65,7 +65,7 @@
 	if(selection)
 		data["track_selected"] = selection.song_name
 		data["track_length"] = DisplayTimeText(selection.song_length)
-		data["track_beat"] = selection.song_beat
+		data["track_beat"] = selection.song_beat_deciseconds
 	data["volume"] = volume
 	return data
 
@@ -212,7 +212,7 @@
 	if(selection)
 		data["track_selected"] = selection.song_name
 		data["track_length"] = DisplayTimeText(selection.song_length)
-		data["track_beat"] = selection.song_beat
+		data["track_beat"] = selection.song_beat_deciseconds
 	data["volume"] = volume
 	return data
 
