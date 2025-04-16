@@ -1,8 +1,13 @@
 /datum/supply_pack/faction/independent/civilian
 	group = "Civilian & Decoration"
 
-/*
-		Janitorial
+/* MARK: = Decoration =
+
+> Janitorial
+> Bundles
+> Decoration / flooring
+
+	MARK: Janitorial
 */
 
 /datum/supply_pack/faction/independent/civilian/janitor
@@ -37,7 +42,7 @@
 	crate_type = /obj/structure/closet/crate/large
 
 /*
-		Bundles
+MARK: Bundles
 */
 
 /datum/supply_pack/faction/independent/civilian/sauna_starter
@@ -151,7 +156,7 @@
 	crate_type = /obj/structure/closet/crate/wooden
 
 /*
-		Decoration / flooring
+MARK: Decoration / flooring
 */
 
 /datum/supply_pack/faction/independent/civilian/potted_plants
@@ -167,7 +172,7 @@
 
 /datum/supply_pack/faction/independent/civilian/artsupply
 	name = "Art Supplies"
-	desc = "Make some happy little accidents with an easel, and unlimited imagination! Imagination not included." //removed the rcl, shiptest doesn't have the space for wireart (literally)
+	desc = "Make some happy little accidents with an easel, and unlimited imagination! Imagination not included."
 	cost = 750
 	contains = list(/obj/structure/easel,
 					/obj/item/canvas,
@@ -216,7 +221,7 @@
 /datum/supply_pack/faction/independent/civilian/jukebox
 	name = "Jukebox"
 	desc = "Things a bit dull in the workplace? How about jamming out to some tunes!"
-	cost = 1500
+	cost = 30000
 	contains = list(/obj/machinery/jukebox)
 	crate_name = "Jukebox"
 
@@ -235,7 +240,7 @@
 
 /datum/supply_pack/faction/independent/civilian/spare_clothes
 	name = "Spare Jumpsuits Crate"
-	desc = "Contains a spare set of utility jumpsuits and shoes for those unfortunate accidents." //how did we not have this before
+	desc = "Contains a spare set of utility jumpsuits and shoes for those unfortunate accidents."
 	cost = 150
 	contains = list(/obj/item/clothing/under/utility,
 					/obj/item/clothing/under/utility/skirt,

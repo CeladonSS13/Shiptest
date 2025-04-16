@@ -1,13 +1,19 @@
 /datum/supply_pack/faction/syndicate/spacesuit
 	group = "Spacesuits"
 
-/datum/supply_pack/faction/syndicate/spacesuit/neutron_hardsuit
-	name = "Neutron Star Hardsuit Crate"
-	desc = "Cybersuns premier offering in the field of combat hardsuits, the Neutron Star is incredibly effective against lasers, but lacks against ballistic weaponry. "
-	cost = 3000
-	contains = list(/obj/item/clothing/suit/space/hardsuit/syndi/cybersun)
-	crate_name = "neutron star hardsuit crate"
-	crate_type = /obj/structure/closet/crate/secure/gear
+/datum/supply_pack/faction/syndicate/spacesuit/armored_engi_spacesuit
+	name = "Coalition Engineering Space Suit Crate"
+	desc = "Contains one lightly armored engineering spacesuit. Generic enough to be manufactured by most ex-Coalition groups."
+	cost = 1000
+	contains = list(/obj/item/clothing/suit/space/syndicate/black/engie,
+					/obj/item/clothing/head/helmet/space/syndicate/black/engie)
+
+/datum/supply_pack/faction/syndicate/spacesuit/armored_spacesuit
+	name = "Armored Space Suit Crate"
+	desc = "Contains one armored spacesuit. Generic enough to be manufactured and distributed by most ex-Coalition groups."
+	cost = 1500
+	contains = list(/obj/item/clothing/suit/space/syndicate/black,
+					/obj/item/clothing/head/helmet/space/syndicate/black)
 
 /datum/supply_pack/faction/syndicate/spacesuit/cmt_hardsuit
 	name = "CMT Hardsuit Crate"
@@ -17,19 +23,13 @@
 	crate_name = "neutron star hardsuit crate"
 	crate_type = /obj/structure/closet/crate/secure/gear
 
-/datum/supply_pack/faction/syndicate/spacesuit/armored_spacesuit
-	name = "Armored Space Suit Crate"
-	desc = "Contains one armored spacesuit. Generic enough to be manufactured and distributed by most ex-Coalition groups."
-	cost = 1500
-	contains = list(/obj/item/clothing/suit/space/syndicate/black,
-					/obj/item/clothing/head/helmet/space/syndicate/black)
-
-/datum/supply_pack/faction/syndicate/spacesuit/armored_engi_spacesuit
-	name = "Coalition Engineering Space Suit Crate"
-	desc = "Contains one lightly armored engineering spacesuit. Generic enough to be manufactured by most ex-Coalition groups."
-	cost = 1000
-	contains = list(/obj/item/clothing/suit/space/syndicate/black/engie,
-					/obj/item/clothing/head/helmet/space/syndicate/black/engie)
+/datum/supply_pack/faction/syndicate/spacesuit/neutron_hardsuit
+	name = "Neutron Star Hardsuit Crate"
+	desc = "Cybersuns premier offering in the field of combat hardsuits, the Neutron Star is incredibly effective against lasers, but lacks against ballistic weaponry. "
+	cost = 3000
+	contains = list(/obj/item/clothing/suit/space/hardsuit/syndi/cybersun)
+	crate_name = "neutron star hardsuit crate"
+	crate_type = /obj/structure/closet/crate/secure/gear
 
 /datum/supply_pack/faction/syndicate/spacesuit/hardsuitrust
 	name = "Rust-Red Hardsuit Crate"

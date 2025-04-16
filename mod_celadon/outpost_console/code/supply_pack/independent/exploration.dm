@@ -2,7 +2,13 @@
 	group = "Exploration"
 	crate_type = /obj/structure/closet/crate/wooden
 
-/* Exploration Gear */
+/* MARK: = Decoration =
+
+> Exploration Gear
+> General Exploration Gear
+
+	MARK: Exploration Gear
+*/
 
 /datum/supply_pack/faction/independent/exploration/lava
 	name = "Lava Exploration Kit"
@@ -34,7 +40,7 @@
 
 
 /*
-		General Exploration Gear
+MARK:	General Gear
 */
 
 /datum/supply_pack/faction/independent/exploration/lavaproof_rods

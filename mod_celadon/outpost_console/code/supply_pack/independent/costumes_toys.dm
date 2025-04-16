@@ -69,7 +69,7 @@
 		new the_toy(C)
 
 /*
-		Costumes
+MARK:	Costumes
 */
 
 /datum/supply_pack/faction/independent/costumes_toys/costume_original

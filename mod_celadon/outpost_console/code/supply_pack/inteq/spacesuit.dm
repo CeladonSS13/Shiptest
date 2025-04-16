@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/inteq/spacesuit
-	group = "Spacesuits & Armor"
+	group = "Spacesuits"
 
 /datum/supply_pack/faction/inteq/spacesuit/pointman_hardsuit
 	name = "Pointman Hardsuit Crate"

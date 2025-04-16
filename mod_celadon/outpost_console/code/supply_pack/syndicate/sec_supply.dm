@@ -10,7 +10,7 @@
 	crate_name = "flamethrower crate"
 	crate_type = /obj/structure/closet/crate/secure/weapon
 
-/datum/supply_pack/faction/independent/sec_supply/c4duffel
+/datum/supply_pack/faction/syndicate/sec_supply/c4duffel
 	name = "C-4 Demolitions Charge Crate"
 	desc = "Contains a duffel of C-4 demolitions charges, for use in scrapping and demolitions of large-scale structures."
 	cost = 1000
@@ -18,17 +18,17 @@
 	crate_name = "demolitions charge crate"
 	crate_type = /obj/structure/closet/crate/secure/weapon
 
-/datum/supply_pack/faction/independent/sec_supply/fire
-	name = "Incendiary Weapons Crate"
-	desc = "Burn, baby burn. Contains three incendiary grenades and three prebuilt flamethrowers."
-	cost = 5000
-	contains = list(
-		/obj/item/flamethrower/full,
-		/obj/item/flamethrower/full,
-		/obj/item/flamethrower/full,
-		/obj/item/grenade/chem_grenade/incendiary,
-		/obj/item/grenade/chem_grenade/incendiary,
-		/obj/item/grenade/chem_grenade/incendiary,
-	)
-	crate_name = "incendiary weapons crate"
-	crate_type = /obj/structure/closet/crate/secure/plasma
+// /datum/supply_pack/faction/syndicate/sec_supply/fire - [Криво работают]
+// 	name = "Incendiary Weapons Crate"
+// 	desc = "Burn, baby burn. Contains three incendiary grenades and three prebuilt flamethrowers."
+// 	cost = 5000
+// 	contains = list(
+// 		/obj/item/flamethrower/full,
+// 		/obj/item/flamethrower/full,
+// 		/obj/item/flamethrower/full,
+// 		/obj/item/grenade/chem_grenade/incendiary,
+// 		/obj/item/grenade/chem_grenade/incendiary,
+// 		/obj/item/grenade/chem_grenade/incendiary,
+// 	)
+// 	crate_name = "incendiary weapons crate"
+// 	crate_type = /obj/structure/closet/crate/secure/plasma

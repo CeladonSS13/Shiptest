@@ -1,7 +1,9 @@
 /datum/supply_pack/faction/nanotrasen/magazine
 	group = "Magazines"
 
-/* VI */
+/*
+MARK: VI
+*/
 
 /datum/supply_pack/faction/nanotrasen/magazine/co9mm_mag
 	name = "9mm Commander Magazine Crate"
@@ -21,7 +23,9 @@
 	cost = 300
 	contains = list(/obj/item/ammo_box/magazine/wt550m9/empty)
 
-/* energy weapons */
+/*
+MARK: Energy weapons
+*/
 
 /datum/supply_pack/faction/nanotrasen/magazine/guncell
 	name = "Weapon Cell Crate"
@@ -36,7 +40,7 @@
 	cost = 1000
 
 /datum/supply_pack/faction/nanotrasen/magazine/powercells_mini
-	name = "NT Energy weapon miniature weapon power cell supply pack"
+	name = "NT Energy Weapon Miniature Power Cell Supply Pack"
 	desc = "The crate contains a three miniature batteries for energy weapons."
 	contains = list(/obj/item/stock_parts/cell/gun/mini/empty,
 					/obj/item/stock_parts/cell/gun/mini/empty,
@@ -44,7 +48,7 @@
 	cost = 400
 
 /datum/supply_pack/faction/nanotrasen/magazine/powercells_basic
-	name = "NT Energy weapon basic power cell supply pack"
+	name = "NT Energy Weapon Basic Power Cell Supply Pack"
 	desc = "The crate contains a three basic batteries for energy weapons."
 	contains = list(/obj/item/stock_parts/cell/gun/empty,
 					/obj/item/stock_parts/cell/gun/empty,
@@ -52,13 +56,13 @@
 	cost = 800
 
 /datum/supply_pack/faction/nanotrasen/magazine/powercells_large
-	name = "NT Energy weapon extra-large weapon power cell supply pack"
+	name = "NT Energy wWeapon Extra-Large Power Cell Crate"
 	desc = "The crate contains a extra-large battery for energy weapons."
 	contains = list(/obj/item/stock_parts/cell/gun/large/empty)
 	cost = 900
 
 /datum/supply_pack/faction/nanotrasen/magazine/gauss
-	name = "Gauss Magazine"
+	name = "Gauss Magazine Crate"
 	desc = "A 24-round magazine for the prototype gauss rifle. Ferromagnetic pellets do okay damage with significant armor penetration."
 	contains = list(/obj/item/ammo_box/magazine/gauss/empty)
 	cost = 550

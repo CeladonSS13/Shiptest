@@ -2,8 +2,12 @@
 	group = "Emergency & Life Support"
 	crate_type = /obj/structure/closet/crate/internals
 
-/*
-		Life support
+/* MARK: = Emergency =
+
+> Life support
+> Niche protection
+
+MARK: 	Life support
 */
 
 /datum/supply_pack/faction/independent/emergency/internals
@@ -38,7 +42,7 @@
 	crate_name = "phorid supply kit"
 
 /*
-		Niche protection
+MARK: 	Niche protection
 */
 
 /datum/supply_pack/faction/independent/emergency/atmostank

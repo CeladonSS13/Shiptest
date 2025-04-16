@@ -1,8 +1,16 @@
 /datum/supply_pack/faction/independent/food
 	group = "Food & Agricultural"
 
-/*
-		Ready-to-eat
+
+/* MARK: = Gun List =
+
+> Готовая еда
+> Ингредиенты
+> Готовка
+> Ботаника
+> Пчеловодство
+
+	MARK: Готовая еда
 */
 
 /datum/supply_pack/faction/independent/food/pizza
@@ -30,8 +38,34 @@
 	crate_name = "ration crate"
 	crate_type = /obj/structure/closet/crate
 
+/datum/supply_pack/faction/independent/food/donkpockets
+	name = "Donk Pocket Variety Crate"
+	desc = "Featuring a line up of Donk Co.'s most popular pastry!"
+	cost = 500
+	contains = list(/obj/item/storage/box/donkpockets/donkpocketspicy,
+					/obj/item/storage/box/donkpockets/donkpocketteriyaki,
+					/obj/item/storage/box/donkpockets/donkpocketpizza,
+					/obj/item/storage/box/donkpockets/donkpocketberry,
+					/obj/item/storage/box/donkpockets/donkpockethonk)
+	crate_name = "donk pocket crate"
+	crate_type = /obj/structure/closet/crate/freezer
+
+/datum/supply_pack/faction/independent/food/ration_irp
+	name = "IRP set"
+	desc = "6 expanded IRP sets. Now with warm-up!"
+	cost = 750
+	contains = list(/obj/item/storage/ration/vegan_chili,
+					/obj/item/storage/ration/shredded_beef,
+					/obj/item/storage/ration/pork_spaghetti,
+					/obj/item/storage/ration/fried_fish,
+					/obj/item/storage/ration/beef_strips,
+					/obj/item/storage/ration/chili_macaroni
+	)
+	crate_name = "IRP set"
+	crate_type = /obj/structure/closet/crate/secure/weapon
+
 /*
-		Ingredients
+	MARK:	Ингредиенты
 */
 
 /datum/supply_pack/faction/independent/food/ingredients_basic
@@ -181,8 +215,23 @@
 	crate_type = /obj/structure/closet/crate
 
 /*
-		Cooking
+	MARK:	Готовка
 */
+
+/datum/supply_pack/faction/independent/food/kitchen_knife
+	name = "Kitchen Knife Crate"
+	desc = "Need a new knife to cut something hard? Try out this stamped steel knife, straight from The New Gorlex Republic's factories."
+	cost = 100
+	contains = list(/obj/item/melee/knife/kitchen)
+	crate_name = "kitchen knife crate"
+	crate_type = /obj/structure/closet/crate/wooden
+
+/datum/supply_pack/faction/independent/food/grillfuel
+	name = "Grilling Fuel Kit"
+	desc = "Contains propane and propane accessories. (Note: doesn't contain any actual propane.)"
+	cost = 250
+	contains = list(/obj/item/stack/sheet/mineral/coal/ten)
+	crate_name = "grilling fuel kit crate"
 
 /datum/supply_pack/faction/independent/food/grill
 	name = "Grilling Starter Kit"
@@ -193,15 +242,8 @@
 	crate_name = "grilling starter kit crate"
 	crate_type = /obj/structure/closet/crate/large
 
-/datum/supply_pack/faction/independent/food/grillfuel
-	name = "Grilling Fuel Kit"
-	desc = "Contains propane and propane accessories. (Note: doesn't contain any actual propane.)"
-	cost = 250
-	contains = list(/obj/item/stack/sheet/mineral/coal/ten)
-	crate_name = "grilling fuel kit crate"
-
 /*
-		Botanical
+	MARK:	Ботаника
 */
 
 /datum/supply_pack/faction/independent/food/hydrotank
@@ -293,7 +335,7 @@
 	crate_type = /obj/structure/closet/crate/hydroponics
 
 /*
-		Bees
+	MARK: Пчеловодство
 */
 
 /datum/supply_pack/faction/independent/food/beekeeping_suits
@@ -321,57 +363,3 @@
 					/obj/item/melee/flyswatter)
 	crate_name = "beekeeping starter crate"
 	crate_type = /obj/structure/closet/crate/hydroponics
-
-/datum/supply_pack/faction/independent/food/kitchen_knife
-	name = "Kitchen Knife Crate"
-	desc = "Need a new knife to cut something hard? Try out this stamped steel knife, straight from The New Gorlex Republic's factories."
-	cost = 100
-	contains = list(/obj/item/melee/knife/kitchen)
-	crate_name = "kitchen knife crate"
-	crate_type = /obj/structure/closet/crate/wooden
-
-/datum/supply_pack/faction/independent/food/ration_irp
-	name = "IRP set"
-	desc = "6 expanded IRP sets. Now with warm-up!"
-	cost = 750
-	contains = list(/obj/item/storage/ration/vegan_chili,
-					/obj/item/storage/ration/shredded_beef,
-					/obj/item/storage/ration/pork_spaghetti,
-					/obj/item/storage/ration/fried_fish,
-					/obj/item/storage/ration/beef_strips,
-					/obj/item/storage/ration/chili_macaroni
-	)
-	crate_name = "IRP set"
-	crate_type = /obj/structure/closet/crate/secure/weapon
-
-/*
-	MARK:	Готовая еда
-*/
-/datum/supply_pack/faction/independent/food/donkpockets
-	name = "Donk Pocket Variety Crate"
-	desc = "Featuring a line up of Donk Co.'s most popular pastry!"
-	cost = 500
-	contains = list(/obj/item/storage/box/donkpockets/donkpocketspicy,
-					/obj/item/storage/box/donkpockets/donkpocketteriyaki,
-					/obj/item/storage/box/donkpockets/donkpocketpizza,
-					/obj/item/storage/box/donkpockets/donkpocketberry,
-					/obj/item/storage/box/donkpockets/donkpockethonk)
-	crate_name = "donk pocket crate"
-	crate_type = /obj/structure/closet/crate/freezer
-
-/**
-	MARK: Ингредиенты
- */
-
-/**
-	MARK: 	Рандом. ингредиенты
- */
-
-/*
-	MARK:	Ботаника
-*/
-
-
-/**
-	MARK: Кухонные принадлежности
- */

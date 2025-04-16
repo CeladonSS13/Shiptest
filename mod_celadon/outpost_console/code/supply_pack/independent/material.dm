@@ -1,6 +1,5 @@
 /datum/supply_pack/faction/independent/material
 	group = "Materials & Sheets"
-	faction_discount = 0
 
 /*
 		Basic construction materials

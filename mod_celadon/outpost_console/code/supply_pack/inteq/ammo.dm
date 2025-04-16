@@ -1,7 +1,9 @@
 /datum/supply_pack/faction/inteq/ammo
 	group = "Ammunition"
 
-/* 9mm */
+/*
+MARK: 9mm
+*/
 
 /datum/supply_pack/faction/inteq/ammo/c9mm_ammo_box
 	name = "9mm Ammo Box Crate"
@@ -27,7 +29,9 @@
 	contains = list(/obj/item/storage/box/ammo/c9mm_rubber)
 	cost = 200
 
-/* .44 */
+/*
+MARK: .44
+*/
 
 /datum/supply_pack/faction/inteq/ammo/a44roum
 	name = ".44 Roumain Ammo Box Crate"
@@ -47,7 +51,9 @@
 	contains = list(/obj/item/storage/box/ammo/a44roum_hp)
 	cost = 265
 
-/* .357 */
+/*
+MARK: .357
+*/
 
 /datum/supply_pack/faction/inteq/ammo/a357_ammo_box
 	name = ".357 Ammo Box Crate"
@@ -67,39 +73,43 @@
 	contains = list(/obj/item/storage/box/ammo/a357_match)
 	cost = 320
 
-/* 12 Gauge */
+/*
+MARK: 12 Gauge
+*/
 
 /datum/supply_pack/faction/inteq/ammo/buckshot
-	name = "Buckshot Crate"
+	name = "12g Buckshot Crate"
 	desc = "Contains a box of 32 12 gauge buckshot shells for use in lethal persuasion."
 	cost = 500
 	contains = list(/obj/item/storage/box/ammo/a12g_buckshot)
 
 /datum/supply_pack/faction/inteq/ammo/slugs
-	name = "Shotgun Slug Crate"
+	name = "12g Shotgun Slug Crate"
 	desc = "Contains a box of 32 12 gauge slug shells for use in lethal persuasion."
 	cost = 205
 	contains = list(/obj/item/storage/box/ammo/a12g_slug)
 
 /datum/supply_pack/faction/inteq/ammo/blank_shells
-	name = "Blank Shell Crate"
+	name = "12g Blank Shell Crate"
 	desc = "Contains a box of 12 gauge blank shells."
 	cost = 200
 	contains = list(/obj/item/storage/box/ammo/a12g_blank)
 
 /datum/supply_pack/faction/inteq/ammo/rubbershot
-	name = "Rubbershot Crate"
+	name = "12g Rubbershot Crate"
 	desc = "Contains a box of 32 12 gauge rubbershot shells. Perfect for crowd control and training."
 	cost = 500
 	contains = list(/obj/item/storage/box/ammo/a12g_rubbershot)
 
 /datum/supply_pack/faction/inteq/ammo/techshells
-	name = "Unloaded Shotgun Technological Shells Crate"
+	name = "12g Unloaded Shotgun Technological Shells Crate"
 	desc = "Contains a box of 7 versatile tech shells, capable of producing a variety of deadly effects for any situation. Some assembly required."
 	cost = 210
 	contains = list(/obj/item/storage/box/techshot)
 
-/* 10mm */
+/*
+MARK: 10mm
+*/
 
 /datum/supply_pack/faction/inteq/ammo/c10mm_ammo_box
 	name = "10mm Ammo Box Crate"
@@ -125,7 +135,9 @@
 	contains = list(/obj/item/storage/box/ammo/c10mm_rubber)
 	cost = 210
 
-/* 7.62 */
+/*
+MARK: 7.62
+*/
 
 /datum/supply_pack/faction/inteq/ammo/a762_ammo_box
 	name = "7.62x40mm Ammo Box Crate"
@@ -146,7 +158,9 @@
 	contains = list(/obj/item/storage/box/ammo/a762_40/hp)
 	cost = 450
 
-/* .308 */
+/*
+MARK: .308
+*/
 
 /datum/supply_pack/faction/inteq/ammo/a308_ammo_box
 	name = "308 Ammo Box Crate"
@@ -172,7 +186,9 @@
 	contains = list(/obj/item/storage/box/ammo/a308/hp)
 	cost = 500
 
-/* 5.56 */
+/*
+MARK: 5.56
+*/
 
 /datum/supply_pack/faction/inteq/ammo/box556_box
 	name = "5.56mm Ammo Box Crate"

@@ -205,3 +205,35 @@
 	desc = "Contains a 10-round 6.5x57mm tracker box for various sniper rifles such as the Boomslang series."
 	contains = list(/obj/item/storage/box/ammo/a65clip/trac)
 	cost = 250
+
+/*
+MARK: .50 BMG
+*/
+
+/datum/supply_pack/faction/syndicate/ammo/ammoa50
+	name = ".50 BMG Ammo Box Crate"
+	desc = "Contains a 20-round .50 BMG ammo box for the Taipan Anti-Material Rifle. Make them count, they aren't cheap."
+	contains = list(/obj/item/storage/box/ammo/a50box)
+	cost = 1000
+
+/*
+MARK: .410
+*/
+
+/datum/supply_pack/faction/independent/ammo/a410_buckshot
+	name = ".410 Buckshot Box"
+	desc = "Contains a box with 60 buckshot cartridges of .410 caliber."
+	contains = list(/obj/item/storage/box/ammo/a410_ammo_box)
+	cost = 1000
+
+/datum/supply_pack/faction/independent/ammo/a410_slug
+	name = ".410 Slug Box"
+	desc = "Contains a box with 60 slug cartridges of .410 caliber."
+	contains = list(/obj/item/storage/box/ammo/a410_ammo_box/slug)
+	cost = 1500
+
+/datum/supply_pack/faction/independent/ammo/a410_flechette
+	name = ".410 Flechette Box"
+	desc = "Contains a box with 60 flechette rounds of .410 caliber."
+	contains = list(/obj/item/storage/box/ammo/a410_ammo_box/flechette)
+	cost = 1500

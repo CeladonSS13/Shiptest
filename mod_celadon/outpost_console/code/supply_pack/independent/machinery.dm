@@ -2,8 +2,17 @@
 	group = "Machines & Parts"
 	crate_type = /obj/structure/closet/crate/engineering
 
-/*
-		Parts
+/* MARK: = Machines & Parts =
+
+> Запчасти
+> Атмос
+> Боты
+> Разная машинерия
+> Генерация энергии
+> Дополнения к двигателям
+> Ядра двигателей
+
+MARK:	Запчасти
 */
 
 /datum/supply_pack/faction/independent/machinery/lightbulbs
@@ -123,7 +132,7 @@
 /datum/supply_pack/faction/independent/machinery/power
 	name = "Power Cell Crate"
 	desc = "Looking for power overwhelming? Look no further. Contains five high-voltage power cells."
-	cost = 1500 //it should be a bit more expensive for a full ship recharge
+	cost = 1500
 	contains = list(/obj/item/stock_parts/cell/high,
 					/obj/item/stock_parts/cell/high,
 					/obj/item/stock_parts/cell/high,
@@ -133,7 +142,7 @@
 	crate_type = /obj/structure/closet/crate/engineering/electrical
 
 /*
-		Atmospherics
+MARK: Атмос
 */
 
 /datum/supply_pack/faction/independent/machinery/space_heater
@@ -173,7 +182,7 @@
 	crate_type = /obj/structure/closet/crate/large
 
 /*
-		Bots
+MARK:	Боты
 */
 
 /datum/supply_pack/faction/independent/machinery/mule
@@ -184,36 +193,8 @@
 	crate_name = "\improper MULEbot Crate"
 	crate_type = /obj/structure/closet/crate/large
 
-	// [CELADON-REMOVE] - CELADON_QoL - Перенос непопулярного и затерявшегося товара в более видное место, дополнение его материалами и инструкциями
 /*
-/datum/supply_pack/faction/independent/machinery/robotics
-	name = "Robotics Assembly Crate"
-	desc = "The tools you need to replace those finicky humans with a loyal robot army! Contains four proximity sensors, four robotic arms, two empty first aid kits, two health analyzers, two red hardhats, two mechanical toolboxes, and two cleanbot assemblies!"
-	cost = 2500 // maybe underpriced ? unsure
-	contains = list(/obj/item/assembly/prox_sensor,
-					/obj/item/assembly/prox_sensor,
-					/obj/item/assembly/prox_sensor,
-					/obj/item/assembly/prox_sensor,
-					/obj/item/bodypart/r_arm/robot/surplus,
-					/obj/item/bodypart/r_arm/robot/surplus,
-					/obj/item/bodypart/r_arm/robot/surplus,
-					/obj/item/bodypart/r_arm/robot/surplus,
-					/obj/item/storage/firstaid,
-					/obj/item/storage/firstaid,
-					/obj/item/healthanalyzer,
-					/obj/item/healthanalyzer,
-					/obj/item/clothing/head/hardhat/red,
-					/obj/item/clothing/head/hardhat/red,
-					/obj/item/storage/toolbox/mechanical,
-					/obj/item/storage/toolbox/mechanical,
-					/obj/item/bot_assembly/cleanbot,
-					/obj/item/bot_assembly/cleanbot)
-	crate_name = "robotics assembly crate"
-	crate_type = /obj/structure/closet/crate/science
-*/
-	// [/CELADON-REMOVE]
-/*
-		Miscellaneous machines
+MARK:	Разная машинерия
 */
 
 /datum/supply_pack/faction/independent/machinery/gravgen
@@ -260,17 +241,6 @@
 	crate_name = "ion thruster crate"
 	crate_type = /obj/structure/closet/crate/engineering
 
-// [CELADON-REMOVE] - CELADON_OUTPOST_CONSOLE - Удаляем дубликат двигателей
-// /datum/supply_pack/faction/independent/machinery/plasma_thruster
-// 	name = "Plasma Thruster Crate"
-// 	desc = "A crate containing a plasma thruster and its heater's electronics. For when you need a lot of extra thrust."
-// 	cost = 1500
-// 	contains = list(/obj/item/circuitboard/machine/shuttle/heater,
-// 					/obj/item/circuitboard/machine/shuttle/engine/plasma)
-// 	crate_name = "plasma thruster crate"
-// 	crate_type = /obj/structure/closet/crate/engineering
-// [/CELADON-REMOVE]
-
 /datum/supply_pack/faction/independent/machinery/combustion_thruster
 	name = "Combustion Thruster Crate"
 	desc = "A crate containing a combustion thruster and its heater's electronics. For when you need complicated thrust."
@@ -283,7 +253,7 @@
 /datum/supply_pack/faction/independent/machinery/drill_crate
 	name = "Heavy duty laser mining drill"
 	desc = "An experimental laser-based mining drill that Nanotrasen is kindly allowing YOU, the customer, to opt into testing of."
-	cost = 1000 //Only while TMed, jack up the price before merging
+	cost = 1000
 	contains = list(
 		/obj/machinery/drill,
 		/obj/item/pinpointer/mineral,
@@ -295,7 +265,7 @@
 /datum/supply_pack/faction/independent/machinery/ehf_beacon
 	name = "EHF point beacon"
 	desc = "A crate containing an EHF point beacon, used to mark points of interest and semi-permanent constructions."
-	cost = 1000 // This sounds reasonable? You'll still need everything else if you want to make an outpost (Apparently it wasn't, and is cheaper now)
+	cost = 1000
 	contains = list(
 		/obj/machinery/power/planet_beacon
 	)
@@ -303,7 +273,7 @@
 	crate_type = /obj/structure/closet/crate/engineering
 
 /*
-		Power generation machines
+MARK:	Генерация энергии
 */
 
 /datum/supply_pack/faction/independent/machinery/pacman
@@ -387,7 +357,7 @@
 	crate_type = /obj/structure/closet/crate/engineering/electrical
 
 /*
-		Additional engine machines
+MARK:	Дополнения к двигателям
 */
 
 /datum/supply_pack/faction/independent/machinery/emitter
@@ -409,13 +379,14 @@
 	crate_type = /obj/structure/closet/crate/engineering/electrical
 
 /datum/supply_pack/faction/independent/machinery/grounding_rods
-	cost = 3500
+	name = "Grounding Rod Crate"
 	desc = "Two grounding rods are guaranteed to keep the lightning of any rebellious tesla under control."
+	cost = 3500
 	contains = list(/obj/machinery/power/grounding_rod,
 					/obj/machinery/power/grounding_rod)
 
 /*
-		Engine cores
+MARK:	Ядра двигателей
 */
 
 /datum/supply_pack/faction/independent/machinery/supermatter_shard
@@ -425,6 +396,25 @@
 	contains = list(/obj/machinery/power/supermatter_crystal/shard)
 	crate_name = "supermatter shard crate"
 	crate_type = /obj/structure/closet/crate/secure/engineering
+
+/*
+	MARK:	Двигатели
+*/
+
+/datum/supply_pack/faction/independent/machinery/plasma_thruster
+	name = "Plasma Thruster Crate"
+	desc = "A crate containing a plasma thruster and its heater's electronics. For when you need a lot of extra thrust."
+	cost = 5000
+	contains = list(/obj/item/circuitboard/machine/shuttle/engine/plasma,
+					/obj/item/circuitboard/machine/shuttle/heater,
+					/obj/item/circuitboard/machine/pipedispenser,
+					/obj/machinery/portable_atmospherics/canister/toxins)
+	crate_name = "plasma thruster crate"
+	crate_type = /obj/structure/closet/crate/engineering
+
+/**
+	MARK: Прочее
+ */
 
 /datum/supply_pack/faction/independent/machinery/rnd_beac
 	name = "R&D Beacon"
@@ -453,34 +443,3 @@
 					/obj/item/circuitboard/computer/rdconsole)
 	crate_name = "hacked r&d kit"
 	crate_type = /obj/structure/closet/crate/science
-
-/*
-	MARK:	Двигатели
-*/
-/datum/supply_pack/faction/independent/machinery/plasma_thruster
-	name = "Plasma Thruster Crate"
-	desc = "A crate containing a plasma thruster and its heater's electronics. For when you need a lot of extra thrust."
-	cost = 5000
-	contains = list(/obj/item/circuitboard/machine/shuttle/engine/plasma,
-					/obj/item/circuitboard/machine/shuttle/heater,
-					/obj/item/circuitboard/machine/pipedispenser,
-					/obj/machinery/portable_atmospherics/canister/toxins)
-	crate_name = "plasma thruster crate"
-	crate_type = /obj/structure/closet/crate/engineering
-
-/**
-	MARK: Генераторы
- */
-
-
-/**
-	MARK: Дополнения к генераторам
- */
-
-/*
-	MARK:	Запчасти
-*/
-
-/**
-	MARK: Прочее
- */

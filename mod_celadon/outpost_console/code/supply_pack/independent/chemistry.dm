@@ -2,8 +2,12 @@
 	group = "Chemistry"
 	crate_type = /obj/structure/closet/crate/chem
 
-/*
-		Tools
+/* MARK: = Химия =
+
+> Инструменты
+> Материалы
+
+	MARK: Tools
 */
 
 /datum/supply_pack/faction/independent/chemistry/starter
@@ -57,7 +61,7 @@
 	crate_name = "pill press crate"
 
 /*
-		Bulk materials
+		Материалы
 */
 
 /datum/supply_pack/faction/independent/chemistry/aluminium

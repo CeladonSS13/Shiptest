@@ -48,3 +48,9 @@
 	desc = "A simple, 30-round magazine for 5.56x42mm assault rifles. These rounds do moderate damage with good armor penetration."
 	contains = list(/obj/item/ammo_box/magazine/p16/empty)
 	cost = 550
+
+/datum/supply_pack/faction/solfed/magazine/solgovcell
+	name = "Solar Federation Weapon Cell Crate"
+	desc = "Contains a Solar Federation weapon cell, compatible with gauss weaponry."
+	contains = list(/obj/item/stock_parts/cell/gun/solgov)
+	cost = 500
