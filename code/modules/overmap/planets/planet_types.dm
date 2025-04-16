@@ -262,24 +262,26 @@
 	preserve_level = TRUE
 	interference_power = 10
 
-/datum/planet_type/plasma_giant
-	name = "plasma giant"
-	desc = "The backbone of interstellar travel, the mighty plasma giant allows fuel collection to take place."
-	planet = DYNAMIC_WORLD_PLASMA_GIANT
-	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
-	//	color = COLOR_PURPLE
-	// icon_state = "giant"
-	icon_state = "planet-plasma"
-	icon = 'mod_celadon/_storge_icons/icons/overmap/overmap_large.dmi'
-	pixel_w = -8
-	pixel_z = -8
-	// [/CELADON-EDIT]
-	mapgen = /datum/map_generator/single_biome/plasma_giant
-	gravity = GAS_GIANT_GRAVITY
-	default_baseturf = /turf/open/chasm/gas_giant/plasma
-	weight = 0
-	preserve_level = TRUE
-	interference_power = 10
+// [CELADON-REMOVE] - CELADON_OVERMAP_ICON - mod_celadon/maps/code/planet_types.dm
+// /datum/planet_type/plasma_giant
+// 	name = "plasma giant"
+// 	desc = "The backbone of interstellar travel, the mighty plasma giant allows fuel collection to take place."
+// 	planet = DYNAMIC_WORLD_PLASMA_GIANT
+// 	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
+// 	//	color = COLOR_PURPLE
+// 	// icon_state = "giant"
+// 	icon_state = "planet-plasma"
+// 	icon = 'mod_celadon/_storge_icons/icons/overmap/overmap_large.dmi'
+// 	pixel_w = -8
+// 	pixel_z = -8
+// 	// [/CELADON-EDIT]
+// 	mapgen = /datum/map_generator/single_biome/plasma_giant
+// 	gravity = GAS_GIANT_GRAVITY
+// 	default_baseturf = /turf/open/chasm/gas_giant/plasma
+// 	weight = 0
+// 	preserve_level = TRUE
+// 	interference_power = 10
+// [/CELADON-REMOVE]
 
 /datum/planet_type/water
 	name = "aqua planetoid"
