@@ -19,29 +19,33 @@
 	],
 	"job_slots": {
 		"Captain": {
-			"outfit": "/datum/outfit/job/solfed/captain",
+			"outfit": "/datum/outfit/job/solgov/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"Logistics Deck Officer": {
-			"outfit": "/datum/outfit/job/solfed/hop",
+			"outfit": "/datum/outfit/job/solgov/quartermaster",
 			"officer": true,
 			"slots": 1
 		},
-		"Marine": {
-			"outfit": "/datum/outfit/job/solfed/marine",
+		"Sonnensöldner": {
+			"outfit": "/datum/outfit/job/solgov/sonnensoldner",
 			"slots": 3
 		},
 		"Ship Engineer": {
-			"outfit": "/datum/outfit/job/solfed/engineer",
+			"outfit": "/datum/outfit/job/solgov/engineer",
 			"slots": 2
 		},
 		"Field Engineer": {
 			"outfit": "/datum/outfit/job/solfed/miner",
 			"slots": 3
 		},
+		"Bureaucrat": {
+			"outfit": "/datum/outfit/job/solgov/bureaucrat",
+			"slots": 2
+		},
 		"Scribe": {
-			"outfit": "/datum/outfit/job/solfed/assistant",
+			"outfit": "/datum/outfit/job/solgov/assistant",
 			"slots" : 6
 		}
 	}
