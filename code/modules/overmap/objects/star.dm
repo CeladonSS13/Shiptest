@@ -328,12 +328,14 @@
 	star_2 = mutable_appearance(icon_state = "binary[rand(4, 6)]")
 	// [/CELADON-EDIT]
 
-	star_1.color = current_overmap.hazard_primary_color
-	star_2.color = current_overmap.hazard_primary_color
+	// [CELADON-REMOVE] - CELADON_OVERMAP_ICON - спрайты некросивые получаюца
+	// star_1.color = current_overmap.hazard_primary_color
+	// star_2.color = current_overmap.hazard_primary_color
 
-	if(custom_color)
-		star_1.color = get_rand_spectral_color(pick(spectral_types), color_vary)
-		star_2.color = get_rand_spectral_color(pick(spectral_types), color_vary)
+	// if(custom_color)
+	// 	star_1.color = get_rand_spectral_color(pick(spectral_types), color_vary)
+	// 	star_2.color = get_rand_spectral_color(pick(spectral_types), color_vary)
+	// [/CELADON-REMOVE]
 
 	token.add_overlay(star_1)
 	token.add_overlay(star_2)
