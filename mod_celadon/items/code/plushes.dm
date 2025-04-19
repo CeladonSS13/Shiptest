@@ -681,7 +681,7 @@
 		return ..()
 
 	playsound(src, 'mod_celadon/_storge_sounds/sound/plushes/axolotl.ogg', 20, 0)
-	user.visible_message(span_boldnotice("<span class='danger'>Squeeek!</span>"))
+	user.visible_message(span_boldnotice(span_danger("Squeeek!")))
 	cooldown = TRUE
 	addtimer(VARSET_CALLBACK(src, cooldown, FALSE), 3 SECONDS)
 
@@ -719,7 +719,7 @@
 		return ..()
 
 	playsound(loc, pick('mod_celadon/_storge_sounds/sound/plushes/supermatter.ogg', 'mod_celadon/_storge_sounds/sound/plushes/glass_step_sm.ogg'), 10, 1)
-	user.visible_message(span_boldnotice("<span class='danger'> DESTABILIZATION!</span>"))
+	user.visible_message(span_boldnotice(span_danger(" DESTABILIZATION!")))
 	cooldown = TRUE
 	addtimer(VARSET_CALLBACK(src, cooldown, FALSE), 3 SECONDS)
 
@@ -905,7 +905,7 @@
 	message = pick("Кира чувствует что ваша киска в зоне риска!",
 					"Кира чувствует, что ты устал.",
 					"Кира не прочь помочь тебе отдохнуть.",
-					"Послышай мурчание Киры.",
+					"Послушай мурчание Киры.",
 					"Пора снова в шахты! Скала и Камень!")
 	user.visible_message(span_boldnotice(message))
 	COOLDOWN_START(src, cooldown, 3 SECONDS)

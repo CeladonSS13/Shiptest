@@ -10,7 +10,7 @@
 	. = ..()
 	if(can_flashlight && attached_light) //if it has a light but can_flashlight is false, the light is permanently attached.
 		tool.play_tool_sound(src)
-		to_chat(user, "<span class='notice'>You unscrew [attached_light] from [src].</span>")
+		to_chat(user, span_notice("You unscrew [attached_light] from [src]."))
 		drop_attached_light(user)
 		remove_attached_light(user)
 

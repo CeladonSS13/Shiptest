@@ -10533,8 +10533,8 @@
 /turf/open/floor/plasteel/tech,
 /area/outpost/operations/outpost_command)
 "giC" = (
-/obj/structure/table/wood/fancy/red,
 /obj/machinery/light/dim/directional/west,
+/obj/machinery/vending/plushesmat,
 /turf/open/floor/carpet/royalblack,
 /area/outpost/fraction/syndi/donkco_shop)
 "giY" = (
@@ -11590,17 +11590,8 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /obj/machinery/door/airlock{
 	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
 	},
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/library)
@@ -14999,8 +14990,9 @@
 	},
 /area/outpost/exterior)
 "iRx" = (
-/obj/structure/disposalpipe/segment{
-	dir = 10
+/obj/machinery/vending/boozeomat/outpost_access{
+	pixel_y = 24;
+	density = 0
 	},
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar/bar_zone)
@@ -15349,7 +15341,9 @@
 /area/outpost/vacant_rooms/trash_factory)
 "jeC" = (
 /obj/machinery/door/airlock/wood{
-	id_tag = "ice_cabinka_2"
+	id_tag = "ice_cabinka_2";
+	max_integrity = 999999;
+	normal_integrity = 999999
 	},
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_2)
@@ -16857,6 +16851,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 5
 	},
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar/bar_zone)
@@ -18479,10 +18476,6 @@
 	pixel_y = 2;
 	pixel_x = 11;
 	light_color = "#BBFFBB"
-	},
-/obj/machinery/vending/boozeomat/outpost_access{
-	pixel_x = -30;
-	density = 0
 	},
 /obj/structure/neon_spline/green{
 	dir = 8
@@ -22780,7 +22773,7 @@
 /obj/effect/mob_spawn/human{
 	short_desc = "Искусаное тараканами тело клоуна выглядит так как-будто его задушили одноцветным зеленым шарфом. Вы также замечаете что вокруг его шеи обмотан шарф в полосочку запачканый то ли грязью толи блевотиной клоуна. По цветам не скажешь, но кажется он был красно-серого цвета. Хороший был шарф, жаль его.";
 	desc = "Искусаное тараканами тело клоуна выглядит так как-будто его задушили одноцветным зеленым шарфом. Вы также замечаете что вокруг его шеи обмотан шарф в полосочку запачканый то ли грязью толи блевотиной клоуна. По цветам не скажешь, но кажется он был красно-серого цвета. Хороший был шарф, жаль его.";
-	name = "Willy"
+	name = "Volkov"
 	},
 /obj/effect/spawner/random/entertainment/plushie,
 /obj/effect/decal/cleanable/blood,
@@ -27541,7 +27534,9 @@
 "quB" = (
 /obj/machinery/door/airlock/wood{
 	dir = 1;
-	id_tag = "ice_cabinka_1"
+	id_tag = "ice_cabinka_1";
+	max_integrity = 999999;
+	normal_integrity = 999999
 	},
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_1)
@@ -29644,9 +29639,6 @@
 /area/outpost/crew/canteen)
 "rIC" = (
 /obj/machinery/disposal/bin,
-/obj/structure/disposalpipe/trunk{
-	dir = 4
-	},
 /obj/structure/neon_spline/green{
 	dir = 9
 	},
@@ -29656,6 +29648,7 @@
 	pixel_x = -22;
 	dir = 4
 	},
+/obj/structure/disposalpipe/trunk,
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar/bar_zone)
 "rIK" = (
@@ -30300,9 +30293,6 @@
 /turf/open/floor/marble/black,
 /area/outpost/fraction/nanotrasen)
 "sfI" = (
-/obj/structure/disposalpipe/segment{
-	dir = 5
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -30311,6 +30301,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar/bar_zone)
@@ -32003,7 +31996,8 @@
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0);
 	maxbodytemp = 1500;
 	minbodytemp = 0;
-	hitsound_volume = 100
+	hitsound_volume = 100;
+	health = 6666
 	},
 /turf/open/floor/plating/asteroid/icerock,
 /area/outpost/exterior)

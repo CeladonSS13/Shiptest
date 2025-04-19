@@ -16,7 +16,7 @@
 		if(M.bodytemperature > M.get_body_temp_normal() + 10)
 			M.adjustBruteLoss((M.bodytemperature - 310) / 5)
 			M.bodytemperature = M.get_body_temp_normal()
-			to_chat(M, "<span class='userdanger'>Your veins feel like they are exploding!</span>")
+			to_chat(M, span_userdanger("Your veins feel like they are exploding!"))
 			M.reagents.remove_any(50)
 			M.force_scream()
 			if(M.blood_volume > 0)
@@ -56,7 +56,7 @@
 		if(M.bodytemperature > M.get_body_temp_normal() + 10)
 			M.adjustBruteLoss((M.bodytemperature - 310) / 5)
 			M.bodytemperature = M.get_body_temp_normal()
-			to_chat(M, "<span class='userdanger'>Your veins feel like they are exploding!</span>")
+			to_chat(M, span_userdanger("Your veins feel like they are exploding!"))
 			M.reagents.remove_any(50)
 			M.force_scream()
 			if(M.blood_volume > 0)
@@ -93,9 +93,9 @@
 			M.adjustStaminaLoss((310 - M.bodytemperature) / 10)
 			M.adjust_blurriness(5)
 			M.bodytemperature = M.get_body_temp_normal()
-			to_chat(src, "<span class='userdanger'>Your flesh feels like it's shrinking!.</span>")
+			to_chat(src, span_userdanger("Your flesh feels like it's shrinking!."))
 			M.force_scream()
-	
+
 
 /obj/item/ammo_casing/energy/laser/burn_plasmalaserweak
 	projectile_type = /obj/projectile/temp/hot/burn_plasmalaserweak
@@ -116,7 +116,7 @@
 	range = 10
 	speed = 0.5
 	temperature = 0
-	
+
 
 /obj/projectile/temp/hot/burn_plasmalaser/on_hit(atom/target)
 	var/turf/targets_turf = target.loc
@@ -127,7 +127,7 @@
 			M.adjustStaminaLoss((310 - M.bodytemperature) / 10)
 			M.adjust_blurriness(5)
 			M.bodytemperature = M.get_body_temp_normal()
-			to_chat(src, "<span class='userdanger'>Your flesh feels like it's shrinking!.</span>")
+			to_chat(src, span_userdanger("Your flesh feels like it's shrinking!."))
 			M.force_scream()
 		M.adjust_bodytemperature(333)
 		M.adjust_fire_stacks(5)

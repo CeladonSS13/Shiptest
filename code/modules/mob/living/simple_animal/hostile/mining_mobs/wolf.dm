@@ -14,8 +14,8 @@
 	move_to_delay = 25
 	ranged = 1
 	ranged_cooldown_time = 90
-	maxHealth = 100
-	health = 100
+	maxHealth = 50
+	health = 50
 	obj_damage = 15
 	melee_damage_lower = 7
 	melee_damage_upper = 7
@@ -103,7 +103,7 @@
 		retreat_distance = initial(retreat_distance)
 		return
 	if(!retreat_message_said && target)
-		visible_message("<span class='danger'>The [name] tries to flee from [target]!</span>")
+		visible_message(span_danger("The [name] tries to flee from [target]!"))
 		retreat_message_said = TRUE
 	retreat_distance = 30
 
@@ -116,7 +116,7 @@
 		// new /obj/item/mob_trophy/wolf_ear(loc)	// CELADON-EDIT - ORIGINAL
 		new /obj/item/crusher_trophy/wolf_ear(loc)
 		// [/CELADON-EDIT]
-		visible_message("<span class='warning'>You notice a damaged ear that might be salvagable.</span>")
+		visible_message(span_warning("You notice a damaged ear that might be salvagable."))
 	..()
 
 //alpha wolf- smaller chance to spawn, practically a miniboss. Has the ability to do a short, untelegraphed lunge with a stun. Be careful!

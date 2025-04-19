@@ -39,14 +39,14 @@
 	if(target == user)
 		playsound(src, islist(apply_sounds) ? pick(apply_sounds) : apply_sounds, 25)
 		if(!silent)
-			user.visible_message("<span class='notice'>[user] starts to apply \the [src] on [user.p_them()]self...</span>", "<span class='notice'>You begin applying \the [src] on yourself...</span>")
+			user.visible_message(span_notice("[user] starts to apply \the [src] on [user.p_them()]self..."), span_notice("You begin applying \the [src] on yourself..."))
 		if(!do_after(user, self_delay, target, extra_checks=CALLBACK(target, TYPE_PROC_REF(/mob/living, can_inject), user, TRUE)))
 			return
 
 	else if(other_delay)
 		playsound(src, islist(apply_sounds) ? pick(apply_sounds) : apply_sounds, 25)
 		if(!silent)
-			user.visible_message("<span class='notice'>[user] starts to apply \the [src] on [target].</span>", "<span class='notice'>You begin applying \the [src] on [target]...</span>")
+			user.visible_message(span_notice("[user] starts to apply \the [src] on [target]."), span_notice("You begin applying \the [src] on [target]..."))
 		if(!do_after(user, other_delay, target, extra_checks=CALLBACK(target, TYPE_PROC_REF(/mob/living, can_inject), user, TRUE)))
 			return
 
@@ -68,23 +68,23 @@
 // [/CELADON-EDIT]
 	var/obj/item/bodypart/affecting = C.get_bodypart(check_zone(user.zone_selected))
 	if(!affecting) //Missing limb?
-		to_chat(user, "<span class='warning'>[C] doesn't have \a [parse_zone(user.zone_selected)]!</span>")
+		to_chat(user, span_warning("[C] doesn't have \a [parse_zone(user.zone_selected)]!"))
 		return
 	// [CELADON-EDIT] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// if(!heals_inorganic && !IS_ORGANIC_LIMB(affecting))	// CELADON-EDIT = ORIGINAL
 	if(!IS_ORGANIC_LIMB(affecting)) //Limb must be organic to be healed - RR
 	// [/CELADON-EDIT]
-		to_chat(user, "<span class='warning'>\The [src] won't work on a robotic limb!</span>")
+		to_chat(user, span_warning("\The [src] won't work on a robotic limb!"))
 		return
 	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// if(!heals_organic && IS_ORGANIC_LIMB(affecting))
-	// 	to_chat(user, "<span class='warning'>\The [src] won't work on an organic limb!</span>")
+	// 	to_chat(user, span_warning("\The [src] won't work on an organic limb!"))
 	// 	return
 	// [/CELADON-REMOVE]
 
 	//WS begin - failure chance
 	if(prob(failure_chance))
-		user.visible_message("<span class='warning'>[user] tries to apply \the [src] on [C]'s [affecting.name], but fails!</span>", "<span class='warning'>You try to apply \the [src] on  on [C]'s [affecting.name], but fail!")
+		user.visible_message(span_warning("[user] tries to apply \the [src] on [C]'s [affecting.name], but fails!"), "<span class='warning'>You try to apply \the [src] on  on [C]'s [affecting.name], but fail!")
 		return
 	//WS end
 	var/successful_heal = FALSE //Has this item healed anywhere it could?
@@ -104,11 +104,11 @@
 	//WS Begin - Splints
 	if(splint_fracture) //Check if it's a splint and the bone is broken
 		if(affecting.body_part in list(CHEST, HEAD)) // Check if it isn't the head or chest
-			to_chat(user, "<span class='warning'>You can't splint that bodypart!</span>")
+			to_chat(user, span_warning("You can't splint that bodypart!"))
 		else if(affecting.bone_status == BONE_FLAG_SPLINTED) // Check if it isn't already splinted
-			to_chat(user, "<span class='warning'>[C]'s [affecting.name] is already splinted!</span>")
+			to_chat(user, span_warning("[C]'s [affecting.name] is already splinted!"))
 		else if(!(affecting.bone_status == BONE_FLAG_BROKEN)) // Check if it's actually broken
-			to_chat(user, "<span class='warning'>[C]'s [affecting.name] isn't broken!</span>")
+			to_chat(user, span_warning("[C]'s [affecting.name] isn't broken!"))
 		else
 			affecting.bone_status = BONE_FLAG_SPLINTED
 			// C.update_inv_splints() something breaks
@@ -118,7 +118,7 @@
 	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 	// if (restore_integrity)
 	// 	if(affecting.integrity_loss == 0)
-	// 		to_chat(user, "<span class='warning'>[C]'s [affecting.name] has no integrity damage!</span>")
+	// 		to_chat(user, span_warning("[C]'s [affecting.name] has no integrity damage!"))
 	// 	else
 	// 		var/integ_healed = min(integrity, affecting.integrity_loss)
 	// 		//check how much limb health we've lost to integrity_loss
@@ -131,11 +131,10 @@
 	// 		successful_heal = TRUE
 	// [/CELADON-REMOVE]
 
-
 	if (successful_heal)
-		user.visible_message("<span class='green'>[user] applies \the [src] on [C]'s [affecting.name].</span>", "<span class='green'>You apply \the [src] on [C]'s [affecting.name].</span>")
+		user.visible_message(span_green("[user] applies \the [src] on [C]'s [affecting.name]."), span_green("You apply \the [src] on [C]'s [affecting.name]."))
 		return TRUE
-	to_chat(user, "<span class='warning'>[C]'s [affecting.name] can not be healed with \the [src]!</span>")
+	to_chat(user, span_warning("[C]'s [affecting.name] can not be healed with \the [src]!"))
 
 
 /obj/item/stack/medical/bruise_pack
@@ -154,17 +153,17 @@
 	if(isanimal(target))
 		var/mob/living/simple_animal/critter = target
 		if (!(critter.healable))
-			to_chat(user, "<span class='warning'>You cannot use \the [src] on [target]!</span>")
+			to_chat(user, span_warning("You cannot use \the [src] on [target]!"))
 			return FALSE
 		else if (critter.health == critter.maxHealth)
-			to_chat(user, "<span class='notice'>[target] is at full health.</span>")
+			to_chat(user, span_notice("[target] is at full health."))
 			return FALSE
-		user.visible_message("<span class='green'>[user] applies \the [src] on [target].</span>", "<span class='green'>You apply \the [src] on [target].</span>")
+		user.visible_message(span_green("[user] applies \the [src] on [target]."), span_green("You apply \the [src] on [target]."))
 		target.heal_bodypart_damage((heal_brute/2))
 		return TRUE
 	if(iscarbon(target))
 		return heal_carbon(target, user, heal_brute, 0)
-	to_chat(user, "<span class='warning'>You can't heal [target] with the \the [src]!</span>")
+	to_chat(user, span_warning("You can't heal [target] with the \the [src]!"))
 
 /obj/item/stack/medical/gauze
 	name = "medical gauze"
@@ -201,13 +200,13 @@
 /obj/item/stack/medical/gauze/attackby(obj/item/I, mob/user, params)
 	if(I.tool_behaviour == TOOL_WIRECUTTER || I.get_sharpness())
 		if(get_amount() < 2)
-			to_chat(user, "<span class='warning'>You need at least two gauzes to do this!</span>")
+			to_chat(user, span_warning("You need at least two gauzes to do this!"))
 			return
 		new /obj/item/stack/sheet/cotton/cloth(user.drop_location())
 		user.visible_message(
-			"<span class='notice'>[user] cuts [src] into pieces of cloth with [I].</span>",
-			"<span class='notice'>You cut [src] into pieces of cloth with [I].</span>",
-			"<span class='hear'>You hear cutting.</span>"
+			span_notice("[user] cuts [src] into pieces of cloth with [I]."),
+			span_notice("You cut [src] into pieces of cloth with [I]."),
+			span_hear("You hear cutting.")
 		)
 		use(2)
 	else
@@ -240,7 +239,7 @@
 /obj/item/stack/medical/ointment/heal(mob/living/target, mob/user)
 	if(iscarbon(target))
 		return heal_carbon(target, user, 0, heal_burn)
-	to_chat(user, "<span class='warning'>You can't heal [target] with the \the [src]!</span>")
+	to_chat(user, span_warning("You can't heal [target] with the \the [src]!"))
 
 /obj/item/stack/medical/suture
 	name = "suture"
@@ -273,16 +272,16 @@
 	if(isanimal(target))
 		var/mob/living/simple_animal/critter = target
 		if (!(critter.healable))
-			to_chat(user, "<span class='warning'>You cannot use \the [src] on [target]!</span>")
+			to_chat(user, span_warning("You cannot use \the [src] on [target]!"))
 			return FALSE
 		else if (critter.health == critter.maxHealth)
-			to_chat(user, "<span class='notice'>[target] is at full health.</span>")
+			to_chat(user, span_notice("[target] is at full health."))
 			return FALSE
-		user.visible_message("<span class='green'>[user] applies \the [src] on [target].</span>", "<span class='green'>You apply \the [src] on [target].</span>")
+		user.visible_message(span_green("[user] applies \the [src] on [target]."), span_green("You apply \the [src] on [target]."))
 		target.heal_bodypart_damage(heal_brute)
 		return TRUE
 
-	to_chat(user, "<span class='warning'>You can't heal [target] with the \the [src]!</span>")
+	to_chat(user, span_warning("You can't heal [target] with the \the [src]!"))
 
 /obj/item/stack/medical/mesh
 	name = "regenerative mesh"
@@ -317,31 +316,31 @@
 	. = ..()
 	if(iscarbon(target))
 		return heal_carbon(target, user, 0, heal_burn)
-	to_chat(user, "<span class='warning'>You can't heal [target] with the \the [src]!</span>")
+	to_chat(user, span_warning("You can't heal [target] with the \the [src]!"))
 
 
 /obj/item/stack/medical/mesh/try_heal(mob/living/target, mob/user, silent = FALSE)
 	if(!is_open)
-		to_chat(user, "<span class='warning'>You need to open [src] first.</span>")
+		to_chat(user, span_warning("You need to open [src] first."))
 		return
 	. = ..()
 
 /obj/item/stack/medical/mesh/AltClick(mob/living/user)
 	if(!is_open)
-		to_chat(user, "<span class='warning'>You need to open [src] first.</span>")
+		to_chat(user, span_warning("You need to open [src] first."))
 		return
 	. = ..()
 
 /obj/item/stack/medical/mesh/attack_hand(mob/user)
 	if(!is_open && user.get_inactive_held_item() == src)
-		to_chat(user, "<span class='warning'>You need to open [src] first.</span>")
+		to_chat(user, span_warning("You need to open [src] first."))
 		return
 	. = ..()
 
 /obj/item/stack/medical/mesh/attack_self(mob/user)
 	if(!is_open)
 		is_open = TRUE
-		to_chat(user, "<span class='notice'>You open the sterile mesh package.</span>")
+		to_chat(user, span_notice("You open the sterile mesh package."))
 		update_appearance()
 		playsound(src, 'sound/items/poster_ripped.ogg', 20, TRUE)
 		return
@@ -383,16 +382,16 @@
 	if(isanimal(target))
 		var/mob/living/simple_animal/critter = target
 		if (!(critter.healable))
-			to_chat(user, "<span class='warning'>You cannot use \the [src] on [target]!</span>")
+			to_chat(user, span_warning("You cannot use \the [src] on [target]!"))
 			return FALSE
 		else if (critter.health == critter.maxHealth)
-			to_chat(user, "<span class='notice'>[target] is at full health.</span>")
+			to_chat(user, span_notice("[target] is at full health."))
 			return FALSE
-		user.visible_message("<span class='green'>[user] applies \the [src] on [target].</span>", "<span class='green'>You apply \the [src] on [target].</span>")
+		user.visible_message(span_green("[user] applies \the [src] on [target]."), span_green("You apply \the [src] on [target]."))
 		target.heal_bodypart_damage(heal, heal)
 		return TRUE
 
-	to_chat(user, "<span class='warning'>You can't heal [target] with the \the [src]!</span>")
+	to_chat(user, span_warning("You can't heal [target] with the \the [src]!"))
 
 
 	/*
@@ -422,7 +421,7 @@
 	. = ..()
 	if(iscarbon(target))
 		return heal_carbon(target, user)
-	to_chat(user, "<span class='warning'>You can't splint [target]'s limb' with the \the [src]!</span>")
+	to_chat(user, span_warning("You can't splint [target]'s limb' with the \the [src]!"))
 
 /obj/item/stack/medical/splint/ghetto //slightly shittier, but gets the job done
 	name = "makeshift splints"
@@ -469,5 +468,5 @@
 // 	. = ..()
 // 	if(iscarbon(target))
 // 		return heal_carbon(target, user, integrity = 150)
-// 	to_chat(user, "<span class='warning'>You can't repair [target]'s limb' with the \the [src]!</span>")
+// 	to_chat(user, span_warning("You can't repair [target]'s limb' with the \the [src]!"))
 // [/CELADON-REMOVE]

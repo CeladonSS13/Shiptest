@@ -18,22 +18,19 @@
 /datum/planet_type/plasma_giant
 	name = "plasma giant"
 	desc = "The backbone of interstellar travel, the mighty plasma giant allows fuel collection to take place."
+	ruin_type = RUINTYPE_PLASMA
+	gravity = STANDARD_GRAVITY
 	planet = DYNAMIC_WORLD_PLASMA_GIANT
-	// [CELADON-EDIT] -- CELADON_OVERMAP_ICON -- вагагагагагагагагагагага
-	//	color = COLOR_PURPLE
-	icon = 'mod_celadon/_storge_icons/icons/overmap/overmap_large.dmi'
 	pixel_w = -8
 	pixel_z = -8
-	// [/CELADON-EDIT]
-	mapgen = /datum/map_generator/planet_generator/plasma_gaint
-	gravity = STANDARD_GRAVITY
-	default_baseturf = /turf/open/floor/plating/asteroid/plasma_gaint
 	icon_state = "planet-plasma"
+	icon = 'mod_celadon/_storge_icons/icons/overmap/overmap_large.dmi'
+	landing_sound = 'mod_celadon/_storge_sounds/sound/events/planet_landing_3.mp3'
+	mapgen = /datum/map_generator/planet_generator/plasma_gaint
+	default_baseturf = /turf/open/floor/plating/asteroid/plasma_gaint
 	preserve_level = FALSE
 	weight = 0
-	ruin_type = RUINTYPE_PLASMA
-	landing_sound = 'mod_celadon/_storge_sounds/sound/events/planet_landing_3.mp3'
-
+	interference_power = 10
 
 /datum/planet_type/earthsand
 	name = "Sand Planet"

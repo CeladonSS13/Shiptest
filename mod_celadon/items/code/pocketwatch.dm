@@ -30,7 +30,7 @@ var/round_start_time
 
 /obj/item/pocketwatch/examine(mob/user, distance, is_adjacent)
 	. = ..()
-	. += "<span class='notice'>Alt-click it to quickly open the clock.</span>"
+	. += span_notice("Alt-click it to quickly open the clock.")
 	if (distance <= 1)
 		checktime()
 

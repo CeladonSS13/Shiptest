@@ -37,7 +37,7 @@
 	pull_force = PULL_FORCE_DEFAULT
 	if(prob(5))
 		new /obj/item/crusher_trophy/magma_skull/magma(loc)
-		visible_message("<span class='warning'>One of the [src]'s skulls looks intact.</span>")
+		visible_message(span_warning("One of the [src]'s skulls looks intact."))
 	qdel(src)
 
 /mob/living/simple_animal/hostile/asteroid/hivelord/legion/magma/death(gibbed)
@@ -100,7 +100,7 @@
 
 /obj/item/crusher_trophy/magma_skull/magma/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Suitable as a trophy for a proto-kinetic crusher.</span>"
+	. += span_notice("Suitable as a trophy for a proto-kinetic crusher.")
 
 /obj/item/crusher_trophy/magma_skull/magma/effect_desc()
 	return "a kinetic crusher to armor penetration +<b>[bonus_value + 5]</b> up"

@@ -14,5 +14,5 @@
 	set_light(5)
 
 /obj/structure/light_prism/attack_hand(mob/user)
-	to_chat(user, "<span class='notice'>You dispel [src].</span>")
+	to_chat(user, span_notice("You dispel [src]."))
 	qdel(src)

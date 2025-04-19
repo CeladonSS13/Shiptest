@@ -17,10 +17,10 @@
 
 /obj/item/legion_staff/attack_self(mob/user)
 	if(next_use_time > world.time)
-		user.visible_message("<span class='warning'>[src] rattles in [user]'s hands, but nothing happens...</span>")
-		to_chat(user, "<span class='warning'><b>You need to wait longer to use this again.</b></span>")
+		user.visible_message(span_warning("[src] rattles in [user]'s hands, but nothing happens..."))
+		to_chat(user, span_warning("<b>You need to wait longer to use this again.</b>"))
 		return
-	user.visible_message("<span class='warning'>[user] raises the [src] and summons a legion skull!</span>")
+	user.visible_message(span_warning("[user] raises the [src] and summons a legion skull!"))
 	for(var/i in 1 to 3)
 		var/mob/living/simple_animal/hostile/asteroid/hivelordbrood/legion/staff/LegionSkull = new /mob/living/simple_animal/hostile/asteroid/hivelordbrood/legion/staff(user.loc)
 		LegionSkull.faction = user.faction.Copy()

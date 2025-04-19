@@ -11,28 +11,28 @@
 	"faction": "/datum/faction/solgov",
 	"tags": ["Specialist"],
 	"namelists": [
-		"SOLGOV",
+		"SOLFED",
 		"SPACE",
 		"BRITISH_NAVY",
 		"NATURAL"
 	],
 	"job_slots": {
 		"Captain": {
-			"outfit": "/datum/outfit/job/solgov/captain",
+			"outfit": "/datum/outfit/job/solfed/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"Overseer": {
-			"outfit": "/datum/outfit/job/solgov/overseer",
+			"outfit": "/datum/outfit/job/solfed/overseer",
 			"officer": true,
 			"slots": 1
 		},
 		"Sonnensöldner": {
-			"outfit": "/datum/outfit/job/solgov/sonnensoldner",
+			"outfit": "/datum/outfit/job/solfed/sonnensoldner",
 			"slots": 1
 		},
 		"Ship Engineer": {
-			"outfit": "/datum/outfit/job/solgov/engineer",
+			"outfit": "/datum/outfit/job/solfed/engineer",
 			"slots": 2
 		},
 		"Field Engineer": {
@@ -40,7 +40,7 @@
 			"slots": 2
 		},
 		"Scribe": {
-			"outfit": "/datum/outfit/job/solgov/assistant",
+			"outfit": "/datum/outfit/job/solfed/assistant",
 			"slots" : 2
 		}
 	}

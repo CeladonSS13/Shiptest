@@ -146,12 +146,12 @@
 	contains = list(/obj/item/storage/box/ammo/a300)
 	cost = 400
 
-/* 6.5 */
+/* 7.5 */
 
-/datum/supply_pack/faction/independent/ammo/a65clip_box
-	name = "6.5x57mm CLIP Ammo Box Crate"
-	desc = "Contains a twenty-round 6.5x57mm CLIP ammo box for various sniper rifles such as the CM-F90 and the Boomslang series."
-	contains = list(/obj/item/storage/box/ammo/a65clip)
+/datum/supply_pack/faction/independent/ammo/a75clip_box
+	name = "7.5x57mm Ammo Box Crate"
+	desc = "Contains a twenty-round 6.5x57mm ammo box for various sniper rifles such as the CM-F90 and the Boomslang series."
+	contains = list(/obj/item/storage/box/ammo/a75clip)
 	cost = 400
 
 /* 8x50 */

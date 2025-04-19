@@ -30,11 +30,9 @@
 		heat_engine()
 	var/to_use = fuel_use * (percentage / 100) * seconds_per_tick
 	// [CELADON-EDIT] - CELADON_FIXES
-	//return resolved_heater.consume_fuel(to_use, fuel_type) / to_use * thrust //This proc returns how much was actually burned, so let's use that and multiply it by the thrust to get all the thrust we CAN give. // CELADON-EDIT - ORIGINAL
-	// return resolved_heater.consume_fuel(to_use, fuel_type) // Это наше, поставил офовское, мб починили чето уже?
-	return resolved_heater.consume_fuel(to_use, fuel_type) / to_use * percentage / 100 * thrust //This proc returns how much was actually burned, so let's use that and multiply it by the thrust to get all the thrust we CAN give.
+	// return resolved_heater.consume_fuel(to_use, fuel_type) / to_use * percentage / 100 * thrust //This proc returns how much was actually burned, so let's use that and multiply it by the thrust to get all the thrust we CAN give.	 // CELADON-EDIT - ORIGINAL
+	return resolved_heater.consume_fuel(to_use, fuel_type)
 	// [/CELADON-EDIT]
-	// ID: ALARM_CONFLICTS_OFFOS
 
 /obj/machinery/power/shuttle/engine/fueled/return_fuel()
 	. = ..()
@@ -103,7 +101,7 @@
 	circuit = /obj/item/circuitboard/machine/shuttle/engine/plasma
 	fuel_type = GAS_PLASMA
 	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем движки
-	// fuel_use = 20 // CELADON-EDIT - ORIGINAL
+	// fuel_use = 20
 	// thrust = 25 // CELADON-EDIT - ORIGINAL
 	fuel_use = 20
 	thrust = 9
@@ -123,7 +121,7 @@
 	desc = "A thruster that expels gas inefficiently to create thrust."
 	circuit = /obj/item/circuitboard/machine/shuttle/engine/expulsion
 	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем движки
-	// fuel_use = 80 // CELADON-EDIT - ORIGINAL
+	// fuel_use = 80
 	// thrust = 15 // CELADON-EDIT - ORIGINAL
 	fuel_use = 80
 	thrust = 5
@@ -237,7 +235,7 @@
 	name = "Outdated Ion Thruster"
 	circuit = /obj/item/circuitboard/machine/shuttle/engine/electric/bad
 	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем движки
-	// thrust = 2 // CELADON-EDIT - ORIGINAL
+	// thrust = 2
 	// power_per_burn = 70000 // CELADON-EDIT - ORIGINAL
 	thrust = 1
 	power_per_burn = 70000
@@ -247,7 +245,7 @@
 	name = "high performance ion thruster"
 	desc = "An expensive variant of a standard ion thruster, using highest quality components in order to achieve much better performance."
 	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем движки
-	// thrust = 30 // CELADON-EDIT - ORIGINAL
+	// thrust = 30
 	// power_per_burn = 65000 // CELADON-EDIT - ORIGINAL
 	thrust = 11
 	power_per_burn = 100000

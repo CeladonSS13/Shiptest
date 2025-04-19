@@ -55,7 +55,7 @@ var/list/alldirs = list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAS
 	else if(istype(W, /obj/item/wrench))
 		playsound(src, W.usesound, 50, 1)
 		anchored = !anchored
-		to_chat(user, "<span class='notice'>You [anchored ? "wrench" : "unwrench"] \the [src].</span>")
+		to_chat(user, span_notice("You [anchored ? "wrench" : "unwrench"] \the [src]."))
 		return
 	// else if(default_part_replacement(user, W))
 	// 	return
@@ -72,7 +72,7 @@ var/list/alldirs = list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAS
 			if((machine_stat & NOPOWER))
 				return // Need powah!
 			if(paperamount == max_paper)
-				to_chat(user, "<span class='warning'>\The [src] is full; please empty it before you continue.</span>")
+				to_chat(user, span_warning("\The [src] is full; please empty it before you continue."))
 				return
 			paperamount += paper_result
 			user.canUnEquip(W)
@@ -80,7 +80,7 @@ var/list/alldirs = list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAS
 			playsound(src.loc, 'mod_celadon/_storge_sounds/sound/effects/pshred.ogg', 75, 1)
 			flick(shred_anim, src)
 			if(paperamount > max_paper)
-				to_chat(user, "<span class='danger'>\The [src] was too full, and shredded paper goes everywhere!</span>")
+				to_chat(user, span_danger("\The [src] was too full, and shredded paper goes everywhere!"))
 				for(var/i=(paperamount-max_paper);i>0;i--)
 					var/obj/item/shreddedp/SP = get_shredded_paper()
 					SP.loc = get_turf(src)
@@ -100,7 +100,7 @@ var/list/alldirs = list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAS
 		return
 
 	if(!paperamount)
-		to_chat(usr, "<span class='notice'>\The [src] is empty.</span>")
+		to_chat(usr, span_notice("\The [src] is empty."))
 		return
 
 	empty_bin(usr)
@@ -112,7 +112,7 @@ var/list/alldirs = list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAS
 		empty_into = null
 
 	if(empty_into && empty_into.contents.len >= empty_into.storage_slots)
-		to_chat(user, "<span class='notice'>\The [empty_into] is full.</span>")
+		to_chat(user, span_notice("\The [empty_into] is full."))
 		return
 
 	while(paperamount)
@@ -124,12 +124,12 @@ var/list/alldirs = list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAS
 				break
 	if(empty_into)
 		if(paperamount)
-			to_chat(user, "<span class='notice'>You fill \the [empty_into] with as much shredded paper as it will carry.</span>")
+			to_chat(user, span_notice("You fill \the [empty_into] with as much shredded paper as it will carry."))
 		else
-			to_chat(user, "<span class='notice'>You empty \the [src] into \the [empty_into].</span>")
+			to_chat(user, span_notice("You empty \the [src] into \the [empty_into]."))
 
 	else
-		to_chat(user, "<span class='notice'>You empty \the [src].</span>")
+		to_chat(user, span_notice("You empty \the [src]."))
 	update_icon()
 
 /obj/machinery/papershredder/proc/get_shredded_paper()
@@ -185,15 +185,15 @@ var/list/alldirs = list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAS
 	if(user.restrained())
 		return
 	if(!P.lit)
-		to_chat(user, "<span class='warning'>\The [P] is not lit.</span>")
+		to_chat(user, span_warning("\The [P] is not lit."))
 		return
-	user.visible_message("<span class='warning'>\The [user] holds \the [P] up to \the [src]. It looks like is trying to burn it!</span>", \
-		"<span class='warning'>You hold \the [P] up to \the [src], burning it slowly.</span>")
+	user.visible_message(span_warning("\The [user] holds \the [P] up to \the [src]. It looks like is trying to burn it!"), \
+		span_warning("You hold \the [P] up to \the [src], burning it slowly."))
 	if(!do_after(user,20))
-		to_chat(user, "<span class='warning'>You must hold \the [P] steady to burn \the [src].</span>")
+		to_chat(user, span_warning("You must hold \the [P] steady to burn \the [src]."))
 		return
-	user.visible_message("<span class='danger'>\The [user] burns right through \the [src], turning it to ash. It flutters through the air before settling on the floor in a heap.</span>", \
-		"<span class='danger'>You burn right through \the [src], turning it to ash. It flutters through the air before settling on the floor in a heap.</span>")
+	user.visible_message(span_danger("\The [user] burns right through \the [src], turning it to ash. It flutters through the air before settling on the floor in a heap."), \
+		span_danger("You burn right through \the [src], turning it to ash. It flutters through the air before settling on the floor in a heap."))
 	FireBurn()
 
 /obj/item/shreddedp/proc/FireBurn()

@@ -15,5 +15,5 @@
 #endif
 
 // [CELADON-ADD] - CELADON_CONFIGS_MAPS
-#include "_mod_celadon\map_files\generic\blank.dmm"
+#include "_mod_celadon\map_files\centcomm_ship.dmm"
 // [/CELADON-ADD]

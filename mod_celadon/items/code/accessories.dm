@@ -75,7 +75,7 @@
 	item_state = "dring"
 
 /obj/item/clothing/gloves/ring/diamond/attack_self(mob/user)
-	to_chat(usr, "The [usr.name] gets down on one knee, presenting \the [src].</span>","<span class='warning'>You get down on one knee, presenting \the [src].")
+	to_chat(usr, "The [usr.name] gets down on one knee, presenting \the [src].", span_warning("You get down on one knee, presenting \the [src]."))
 
 /obj/item/clothing/gloves/ring/silver
 	name = "silver ring"

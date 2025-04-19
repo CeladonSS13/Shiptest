@@ -191,7 +191,7 @@ While using this makes the system rely on OnFire, it still gives options for tim
 /obj/structure/elite_tumor/proc/spawn_elite(mob/dead/observer/elitemind)
 	var/selectedspawn = pick(potentialspawns)
 	mychild = new selectedspawn(loc)
-	visible_message("<span class='boldwarning'>[mychild] emerges from [src]!</span>")
+	visible_message(span_boldwarning("[mychild] emerges from [src]!"))
 	playsound(loc,'sound/effects/phasein.ogg', 200, 0, 50, TRUE, TRUE)
 	// [CELADON-ADD] - CELADON_BALANCE_MOBS
 	if(iselitefauna(mychild))
@@ -211,7 +211,7 @@ While using this makes the system rely on OnFire, it still gives options for tim
 
 /obj/structure/elite_tumor/proc/return_elite()
 	mychild.forceMove(loc)
-	visible_message("<span class='boldwarning'>[mychild] emerges from [src]!</span>")
+	visible_message(span_boldwarning("[mychild] emerges from [src]!"))
 	playsound(loc,'sound/effects/phasein.ogg', 200, 0, 50, TRUE, TRUE)
 	mychild.revive(full_heal = TRUE, admin_revive = TRUE)
 	if(boosted)
@@ -252,7 +252,7 @@ While using this makes the system rely on OnFire, it still gives options for tim
 			return
 		// [CELADON-EDIT] - CELADON_BALANCE_MOBS
 		// visible_message("<span class='boldwarning'>As [user] drops the core into [src], [src] appears to swell.</span>")		// CELADON-EDIT - ORIGINAL
-		visible_message("<span class='boldwarning'>As [user] drops the core into [src], it appears to swell.</span>")
+		visible_message(span_boldwarning("As [user] drops the core into [src], [src] appears to swell."))
 		// [/CELADON-EDIT]
 		icon_state = "advanced_tumor"
 		boosted = TRUE
@@ -346,20 +346,20 @@ While using this makes the system rely on OnFire, it still gives options for tim
 	if(activator != null && get_dist(src, activator) >= 10)
 	// [/CELADON-EDIT]
 		activator.forceMove(loc)
-		visible_message("<span class='boldwarning'>[activator] suddenly reappears above [src]!</span>")
+		visible_message(span_boldwarning("[activator] suddenly reappears above [src]!"))
 		playsound(loc,'sound/effects/phasein.ogg', 200, 0, 50, TRUE, TRUE)
 	// [CELADON-EDIT] - CELADON_BALANCE_MOBS
 	// if(mychild != null && get_dist(src, mychild) >= 12)	// CELADON-EDIT - ORIGINAL
 	if(mychild != null && get_dist(src, mychild) >= 10)
 	// [/CELADON-EDIT]
 		mychild.forceMove(loc)
-		visible_message("<span class='boldwarning'>[mychild] suddenly reappears above [src]!</span>")
+		visible_message(span_boldwarning("[mychild] suddenly reappears above [src]!"))
 		playsound(loc,'sound/effects/phasein.ogg', 200, 0, 50, TRUE, TRUE)
 
 /obj/structure/elite_tumor/proc/onEliteLoss()
 	playsound(loc,'sound/effects/tendril_destroyed.ogg', 200, 0, 50, TRUE, TRUE)
-	visible_message("<span class='boldwarning'>[src] begins to convulse violently before beginning to dissipate.</span>")
-	visible_message("<span class='boldwarning'>As [src] closes, something is forced up from down below.</span>")
+	visible_message(span_boldwarning("[src] begins to convulse violently before beginning to dissipate."))
+	visible_message(span_boldwarning("As [src] closes, something is forced up from down below."))
 	// [CELADON-EDIT] - CELADON_BALANCE_MOBS - Меняем сундуки на обычные некрополиса
 	// var/obj/structure/closet/crate/necropolis/tendril/greater/lootbox = new /obj/structure/closet/crate/necropolis/tendril/greater(loc) // CELADON-EDIT - ORIGINAL
 	var/obj/structure/closet/crate/necropolis/tendril/lootbox = new /obj/structure/closet/crate/necropolis/tendril(loc)
@@ -398,7 +398,7 @@ While using this makes the system rely on OnFire, it still gives options for tim
 		mychild.health = mychild.maxHealth
 	if(times_won == 1)
 		mychild.playsound_local(get_turf(mychild), 'sound/effects/magic.ogg', 40, 0)
-		to_chat(mychild, "<span class='boldwarning'>As the life in the activator's eyes fade, the forcefield around you dies out and you feel your power subside.\nDespite this inferno being your home, you feel as if you aren't welcome here anymore.\nWithout any guidance, your purpose is now for you to decide.</span>")
+		to_chat(mychild, span_boldwarning("As the life in the activator's eyes fade, the forcefield around you dies out and you feel your power subside.\nDespite this inferno being your home, you feel as if you aren't welcome here anymore.\nWithout any guidance, your purpose is now for you to decide."))
 		to_chat(mychild, "<b>Your max health has been halved, but can now heal by standing on your tumor.  Note, it's your only way to heal.\nBear in mind, if anyone interacts with your tumor, you'll be resummoned here to carry out another fight.  In such a case, you will regain your full max health.\nAlso, be weary of your fellow inhabitants, they likely won't be happy to see you!</b>")
 		to_chat(mychild, "<span class='big bold'>Note that you are an alien entity, and thus not allied to the sector. Your path now is up to you.</span>")
 
@@ -420,11 +420,11 @@ While using this makes the system rely on OnFire, it still gives options for tim
 	if(istype(target, /mob/living/simple_animal/hostile/asteroid/elite) && proximity_flag)
 		var/mob/living/simple_animal/hostile/asteroid/elite/E = target
 		if(E.stat != DEAD || E.sentience_type != SENTIENCE_BOSS || !E.key)
-			user.visible_message("<span class='notice'>It appears [E] is unable to be revived right now.  Perhaps try again later.</span>")
+			user.visible_message(span_notice("It appears [E] is unable to be revived right now.  Perhaps try again later."))
 			return
 		E.faction = list("neutral")
 		E.revive(full_heal = TRUE, admin_revive = TRUE)
-		user.visible_message("<span class='notice'>[user] stabs [E] with [src], reviving it.</span>")
+		user.visible_message(span_notice("[user] stabs [E] with [src], reviving it."))
 		E.playsound_local(get_turf(E), 'sound/effects/magic.ogg', 40, 0)
 		to_chat(E, "<span class='userdanger'>You have been revived by [user].  While you can't speak to them, you owe [user] a great debt.  Assist [user.p_them()] in achieving [user.p_their()] goals, regardless of risk.</span")
 		to_chat(E, "<span class='big bold'>Note that you now share the loyalties of [user].  You are expected not to intentionally sabotage their faction unless commanded to!</span>")
@@ -434,7 +434,7 @@ While using this makes the system rely on OnFire, it still gives options for tim
 		E.sentience_type = SENTIENCE_ORGANIC
 		qdel(src)
 	else
-		to_chat(user, "<span class='info'>[src] only works on the corpse of a sentient lavaland elite.</span>")
+		to_chat(user, span_info("[src] only works on the corpse of a sentient lavaland elite."))
 
 /obj/effect/temp_visual/elite_tumor_wall
 	name = "magic wall"

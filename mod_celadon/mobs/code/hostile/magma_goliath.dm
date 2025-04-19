@@ -9,7 +9,7 @@
 	throw_message = "does nothing to the tough hide of the"
 	pre_attack_icon = "goliath_preattack"
 	// mob_trophy = /obj/item/mob_trophy/goliath_tentacle
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/goliath = 2, /obj/item/stack/sheet/bone = 2, /obj/item/stack/sheet/sinew = 2, /obj/item/stack/ore/silver = 10)
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/goliath = 2, /obj/item/stack/sheet/bone = 2, /obj/item/stack/sheet/sinew = 2, /obj/item/stack/ore/proustite = 10)
 	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/goliath_hide = 2)
 	loot = list(/obj/item/stack/ore/hellstone)
 	stat_attack = UNCONSCIOUS
@@ -72,7 +72,7 @@
 	if(!isturf(tturf) || !isliving(target))
 		return
 	if(dist <= tent_range)
-		visible_message("<span class='warning'>[src] digs it's tentacles under [target]!</span>")
+		visible_message(span_warning("[src] digs it's tentacles under [target]!"))
 		new tentacle_type(tturf, src ,TRUE)
 		ranged_cooldown = world.time + ranged_cooldown_time
 		icon_state = icon_aggro
@@ -83,7 +83,7 @@
 /mob/living/simple_animal/hostile/asteroid/goliath/magma/attackby(obj/item/O, mob/user, params)
 	if(istype(O, /obj/item/saddle) && !saddled)
 		if(tame && do_after(user, 55, target=src))
-			user.visible_message("<span class='notice'>You manage to put [O] on [src], you can now ride [p_them()].</span>")
+			user.visible_message(span_notice("You manage to put [O] on [src], you can now ride [p_them()]."))
 			qdel(O)
 			saddled = TRUE
 			can_buckle = TRUE
@@ -97,7 +97,7 @@
 			D.set_vehicle_dir_layer(WEST, OBJ_LAYER)
 			D.drive_verb = "ride"
 		else
-			user.visible_message("<span class='warning'>[src] is rocking around! You can't put the saddle on!</span>")
+			user.visible_message(span_warning("[src] is rocking around! You can't put the saddle on!"))
 		return
 	..()
 
@@ -156,7 +156,7 @@ GLOBAL_LIST_INIT(onecardinal, NORTH) // Патерн атаки для одно�
 	for(var/mob/living/L in loc)
 		if((!QDELETED(spawner) && spawner.faction_check_mob(L)) || L.stat == DEAD)
 			continue
-		visible_message("<span class='danger'>[src] wraps a mass of magma tentacles around [L]!</span>")
+		visible_message(span_danger("[src] wraps a mass of magma tentacles around [L]!"))
 		on_hit(L)
 		latched = TRUE
 	if(!latched)
