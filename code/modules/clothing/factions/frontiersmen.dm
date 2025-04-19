@@ -30,14 +30,12 @@
 	name = "\improper Frontiersmen officer's uniform"
 	desc = "Worn by officers of the Frontiersmen pirate fleet. It's less comfortable than it looks."
 	icon_state = "frontier_officer"
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
 
 /obj/item/clothing/under/frontiersmen/admiral
 	name = "\improper frontiersmen admiral uniform"
 	desc = "Worn by admirals of the Frontiersmen pirate fleet, adorned with a tasteful amount of gold and completed with a very-stylish all-white aesthetic. Quite snobby for a bunch of pirates."
 	icon_state = "frontier_admiral"
 	item_state = "frontier_admiral"
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
 
 ////////////////////
 //Unarmored suits//
@@ -153,13 +151,12 @@
 	icon_state = "frontier_beret"
 	icon = 'icons/obj/clothing/faction/frontiersmen/head.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/faction/frontiersmen/head.dmi'
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 
 /obj/item/clothing/head/beret/sec/frontier/officer
 	name = "\improper Frontiersmen officer beret"
 	desc = "A scratchy olive green beret emblazoned with the Frontiersmen insignia, worn by Frontiersmen who want to look good while intimidating freighter captains."
 	icon_state = "frontier_officer_beret"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 
 /obj/item/clothing/head/frontier
 	name = "frontier surgical cap"

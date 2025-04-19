@@ -2,7 +2,7 @@
 	name = "safety helmet"
 	desc = "A yellow hard hat used in dangerous work settings to protect the head from falling items and errant swinging toolboxes."
 	icon_state = "hardhat_standard"
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 10, "energy" = 5, "bomb" = 10, "bio" = 10, "rad" = 10, "fire" = 50, "acid" = 25)
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	flags_inv = 0
 	clothing_flags = SNUG_FIT
 	resistance_flags = FIRE_PROOF
