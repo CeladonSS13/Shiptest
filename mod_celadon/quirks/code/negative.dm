@@ -1,5 +1,5 @@
 /datum/quirk/mute
-	name = "muteness"
+	name = "Muteness"
 	desc = "Completely shuts down the speech center of the subject's brain."
 	value = -1
 	mob_traits = list(TRAIT_MUTE)

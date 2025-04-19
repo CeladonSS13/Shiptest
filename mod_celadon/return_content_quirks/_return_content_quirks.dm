@@ -2,10 +2,10 @@
 /// desc - описание для модпака. Может использоваться для списка глаголов модпака в качестве описания.
 /// author - автор(ы) этого модпака.
 
-/datum/modpack/return_content_clowns
-	name = "Return content clown and mime"
-	desc = "Этот мод возвращает вырезаный контент офами, клоунов и мимов и все что с ними связано обратно в билд."
-	author = "MrCat15352"
+/datum/modpack/return_content_quirks
+	name = "Return content quirks"
+	desc = "Этот мод возвращает вырезанный контент, квики и особенности персонажей и все что с ними связано обратно в билд."
+	author = "KOCMOHABT"
 
 /// Эти проки нужны, для того чтобы инициализировать датумы в определенный момент времени
 /// сборки билда. Инициализация обновляет данные в билде повторно, перезаписывая новыми значениями
@@ -15,13 +15,13 @@
 /// (можешь использовать все три, но запуск билда увеличится на 0.1 сек, за каждый датум в модпаке)
 
 // Инициализация ДО
-/datum/modpack/return_content_clowns/pre_initialize()
+/datum/modpack/return_content_quirks/pre_initialize()
 	. = ..()
 
 // Инициализация ВОВРЕМЯ
-/datum/modpack/return_content_clowns/initialize()
+/datum/modpack/return_content_quirks/initialize()
 	. = ..()
 
 // Инициализация ПОСЛЕ
-/datum/modpack/return_content_clowns/post_initialize()
+/datum/modpack/return_content_quirks/post_initialize()
 	. = ..()
