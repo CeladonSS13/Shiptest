@@ -27,10 +27,10 @@
 
 /obj/structure/salvageable/railgun/examine_more(mob/user)
 	. = ..()
-		. += span_warning("The WAR’s discarding, sabot-jacketed two-stage projectile can pierce even the heaviest armor. \n\
-							Once catapulted from its launcher, the sabot explodes and disengages on approach to its target and triggers a second stage – internal propulsion drives the sabot forward with incredible velocity. This stage melts already superhot projectile and thus it goes through armor like a knife through butter, melting ships in half. Unfortunately, this makes this weapon only usable of being fired in close combat. \n\
-							Through a complex, delicate weave of heat exchangers, Heat sinks installed on the ship recycles the heat generated into usable energy. The system works well, but the delicate nature of the exchange renders it highly volatile. \n\
-							Unfortunately, this monstrosity stuck in the endless loop of reloading... It seems internals have been melt..")
+	. += span_warning("The WAR’s discarding, sabot-jacketed two-stage projectile can pierce even the heaviest armor. \n\
+						Once catapulted from its launcher, the sabot explodes and disengages on approach to its target and triggers a second stage – internal propulsion drives the sabot forward with incredible velocity. This stage melts already superhot projectile and thus it goes through armor like a knife through butter, melting ships in half. Unfortunately, this makes this weapon only usable of being fired in close combat. \n\
+						Through a complex, delicate weave of heat exchangers, Heat sinks installed on the ship recycles the heat generated into usable energy. The system works well, but the delicate nature of the exchange renders it highly volatile. \n\
+						Unfortunately, this monstrosity stuck in the endless loop of reloading... It seems internals have been melt..")
 
 /obj/structure/salvageable/railgun_platform
 	name = "Railgun platform"
