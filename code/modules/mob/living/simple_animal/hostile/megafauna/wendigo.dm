@@ -292,7 +292,7 @@ Difficulty: Hard
 	shapeshift_type = /mob/living/simple_animal/hostile/asteroid/polarbear/lesser
 
 /obj/projectile/wendigo_shockwave
-	name = "wendigo hockwave"
+	name = "wendigo shockwave"
 	icon_state = "chronobolt"
 	damage = 25
 	armour_penetration = 100
