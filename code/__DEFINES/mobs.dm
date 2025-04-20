@@ -378,7 +378,10 @@
 
 // Roundstart trait system
 
-#define MAX_QUIRKS 6 //The maximum amount of quirks one character can have at roundstart [CELADON-EDIT] CELADON_RETURN_CONTENT_QUIRKS
+// [CELADON-EDIT] - CELADON_RETURN_CONTENT_QUIRKS
+// #define MAX_QUIRKS 4  // CELADON-EDIT - ORIGINAL
+#define MAX_QUIRKS 6 //The maximum amount of quirks one character can have at roundstart
+// [/CELADON-EDIT]
 
 // AI Toggles
 #define AI_CAMERA_LUMINOSITY 5
