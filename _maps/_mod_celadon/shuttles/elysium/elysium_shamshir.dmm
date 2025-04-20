@@ -4760,9 +4760,6 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "ST" = (
-/obj/structure/frame{
-	pixel_x = -2
-	},
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 10
 	},
@@ -4783,6 +4780,7 @@
 	dir = 4;
 	layer = 2.8
 	},
+/obj/machinery/modular_computer/console/preset/command,
 /turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
