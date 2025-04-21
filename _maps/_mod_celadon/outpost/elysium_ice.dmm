@@ -1955,7 +1955,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "bdN" = (
@@ -2057,8 +2057,10 @@
 /obj/machinery/button/door{
 	pixel_y = 25;
 	id = "ice_bolt_sf_2";
-	name = "Bolt";
-	req_one_access_txt = "8125"
+	name = "Bolt Door";
+	pixel_x = -3;
+	specialfunctions = 4;
+	normaldoorcontrol = 1
 	},
 /turf/open/floor/wood,
 /area/outpost/fraction/solfed)
@@ -2701,7 +2703,7 @@
 	layer = 5
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "bGa" = (
@@ -3004,7 +3006,7 @@
 	layer = 5
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "bQx" = (
@@ -3073,8 +3075,10 @@
 /obj/machinery/button/door{
 	pixel_y = 25;
 	id = "ice_bolt_sf_1";
-	name = "Bolt";
-	req_one_access_txt = "8125"
+	name = "Bolt Door";
+	pixel_x = -3;
+	specialfunctions = 4;
+	normaldoorcontrol = 1
 	},
 /turf/open/floor/wood,
 /area/outpost/fraction/solfed)
@@ -4902,7 +4906,7 @@
 	layer = 5.1
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "cWT" = (
@@ -4954,7 +4958,7 @@
 	density = 0
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "cYW" = (
@@ -6714,7 +6718,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "dXG" = (
@@ -6871,7 +6875,7 @@
 	layer = 5
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "ebM" = (
@@ -7753,7 +7757,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "eCo" = (
@@ -8295,7 +8299,7 @@
 /obj/machinery/button/door{
 	pixel_y = -21;
 	id = "syndieicecabinka1";
-	name = "Maintenance Shield";
+	name = "Boolt Door";
 	dir = 1;
 	pixel_x = -3;
 	specialfunctions = 4;
@@ -9170,7 +9174,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "fsY" = (
@@ -10038,7 +10042,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "fPr" = (
@@ -10309,6 +10313,9 @@
 "fXF" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#543c30"
+	},
+/obj/structure/curtain/cloth/purpl{
+	pixel_y = 32
 	},
 /turf/open/floor/wood/walnut{
 	planetary_atmos = 1
@@ -10721,7 +10728,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "gjX" = (
@@ -11046,7 +11053,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "gsB" = (
@@ -12028,7 +12035,7 @@
 	layer = 5.2
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "gWw" = (
@@ -13078,7 +13085,7 @@
 	layer = 5
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "hEO" = (
@@ -13088,7 +13095,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "hES" = (
@@ -14472,7 +14479,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "itc" = (
@@ -16112,6 +16119,11 @@
 "jpa" = (
 /obj/effect/spawner/random/trash,
 /turf/open/floor/plating,
+/area/outpost/exterior)
+"jpx" = (
+/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+	layer = 1.999
+	},
 /area/outpost/exterior)
 "jpy" = (
 /obj/effect/turf_decal/corner/opaque/solgovgold/full,
@@ -17869,7 +17881,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "kvZ" = (
@@ -18116,7 +18128,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "kFh" = (
@@ -18447,8 +18459,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/door/airlock/solgov{
-	id_tag = "ice_bolt_sf_2";
-	id = "ice_bolt_sf_2"
+	id_tag = "ice_bolt_sf_2"
 	},
 /turf/open/floor/wood,
 /area/outpost/fraction/solfed)
@@ -19480,7 +19491,7 @@
 	layer = 3.1
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "lAd" = (
@@ -19633,7 +19644,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "lBZ" = (
@@ -20236,7 +20247,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "lTt" = (
@@ -20472,6 +20483,9 @@
 /mob/living/simple_animal/pet/cat/moro,
 /obj/effect/turf_decal/siding/wood{
 	color = "#543c30"
+	},
+/obj/structure/curtain/cloth/purpl{
+	pixel_y = 32
 	},
 /turf/open/floor/wood/walnut{
 	planetary_atmos = 1
@@ -21921,7 +21935,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "mYm" = (
@@ -22094,7 +22108,7 @@
 	density = 0
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "ncf" = (
@@ -22447,7 +22461,7 @@
 	pixel_y = 18
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "nkG" = (
@@ -22515,7 +22529,7 @@
 	layer = 5
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "nmd" = (
@@ -23534,7 +23548,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/machinery/button/door{
 	pixel_y = 26;
-	name = "Maintenance Shield";
+	name = "Boolt Door";
 	pixel_x = -3;
 	specialfunctions = 4;
 	normaldoorcontrol = 1;
@@ -24212,7 +24226,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "ojc" = (
@@ -24764,7 +24778,7 @@
 	layer = 3.01
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "oxM" = (
@@ -24784,7 +24798,7 @@
 	density = 0
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "oyx" = (
@@ -28459,8 +28473,8 @@
 /area/outpost/exterior)
 "qIw" = (
 /obj/effect/spawner/structure/window/reinforced/indestructable,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+/turf/open/floor/wood/walnut{
+	planetary_atmos = 1
 	},
 /area/outpost/crew/canteen)
 "qJo" = (
@@ -28772,7 +28786,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "qTK" = (
@@ -29173,7 +29187,7 @@
 	layer = 5.2
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "rgi" = (
@@ -29874,7 +29888,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "rBi" = (
@@ -32151,6 +32165,14 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"sTS" = (
+/obj/structure/curtain/cloth/purpl{
+	pixel_y = 32
+	},
+/turf/open/floor/wood/walnut{
+	planetary_atmos = 1
+	},
+/area/outpost/crew/canteen)
 "sTV" = (
 /turf/closed/wall/r_wall,
 /area/outpost/crew/bar)
@@ -38782,7 +38804,7 @@
 	pixel_y = 18
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "wLf" = (
@@ -40069,7 +40091,7 @@
 	layer = 3
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
-	layer = 2.454
+	layer = 2.038
 	},
 /area/outpost/exterior)
 "xDg" = (
@@ -40764,8 +40786,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/door/airlock/solgov{
-	id_tag = "ice_bolt_sf_1";
-	id = "ice_bolt_sf_1"
+	id_tag = "ice_bolt_sf_1"
 	},
 /turf/open/floor/wood,
 /area/outpost/fraction/solfed)
@@ -47027,7 +47048,7 @@ gok
 ajt
 ajt
 ajt
-ajt
+gok
 oyC
 oyC
 gok
@@ -49632,7 +49653,7 @@ tBE
 jeC
 rgC
 mYE
-ajt
+gok
 ajt
 ajt
 ajt
@@ -53371,7 +53392,7 @@ gok
 oyC
 oyC
 oyC
-gok
+jpx
 gok
 bdz
 gok
@@ -53929,7 +53950,7 @@ gok
 gok
 gok
 qjV
-gok
+jpx
 oyC
 oyC
 oyC
@@ -57524,7 +57545,7 @@ gok
 ePa
 gok
 qIw
-tXV
+sTS
 tXV
 tXV
 tXV
@@ -57711,7 +57732,7 @@ ebM
 gok
 gok
 qIw
-tXV
+sTS
 xgW
 hfg
 xgW
@@ -57898,7 +57919,7 @@ gok
 gok
 gok
 qIw
-tXV
+sTS
 tXV
 tXV
 tXV
