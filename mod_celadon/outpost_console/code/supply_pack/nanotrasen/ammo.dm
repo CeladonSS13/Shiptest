@@ -1,7 +1,14 @@
 /datum/supply_pack/faction/nanotrasen/ammo
 	group = "Ammunition"
 
-/*
+/* MARK: = Ammo List =
+[*] - отсутствуют.
+[-] - отключены.
+
+> 9mm
+> 4.63x30mm
+> ferro pellets
+
 MARK: 9mm
 */
 

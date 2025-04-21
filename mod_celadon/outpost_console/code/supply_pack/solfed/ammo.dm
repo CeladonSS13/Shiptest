@@ -1,7 +1,20 @@
 /datum/supply_pack/faction/solfed/ammo
 	group = "Ammunition"
 
-/* 9mm */
+/* MARK: = Ammo List =
+[*] - отсутствуют.
+[-] - отключены.
+
+> 9mm
+> 5.56 Caseless
+> 5.56x42mm
+> Ferroslugs
+> Ferro Pellets
+> Ferro Lances
+> 8x58mm Caseless
+
+MARK: 9mm
+*/
 
 /datum/supply_pack/faction/solfed/ammo/c9mm_ammo_box
 	name = "9mm Ammo Box Crate"
@@ -27,7 +40,9 @@
 	contains = list(/obj/item/storage/box/ammo/c9mm_rubber)
 	cost = 200
 
-/* 5.56 caseless */
+/*
+MARK: 5.56 Caseless
+*/
 
 /datum/supply_pack/faction/solfed/ammo/c556mmHITP_ammo_box
 	name = "5.56 HITP Caseless Ammo Box Crate"
@@ -53,7 +68,9 @@
 	contains = list(/obj/item/storage/box/ammo/c556mm_rubber)
 	cost = 165
 
-/* 5.56x42mm */
+/*
+MARK: 5.56x42mm
+*/
 
 /datum/supply_pack/faction/solfed/ammo/a556_ammo_box
 	name = "5.56x42mm Ammo Box Crate"
@@ -73,7 +90,9 @@
 	contains = list(/obj/item/storage/box/ammo/a556_42/hp)
 	cost = 375
 
-/* ferroslugs */
+/*
+MARK: Ferroslugs
+*/
 
 /datum/supply_pack/faction/solfed/ammo/ferroslugboxcrate
 	name = "Ferromagnetic Slug Box Crate"
@@ -87,7 +106,9 @@
 	contains = list(/obj/item/storage/box/ammo/ferroslug/hc)
 	cost = 215
 
-/* ferro pellets */
+/*
+MARK: Ferro Pellets
+*/
 
 /datum/supply_pack/faction/solfed/ammo/ferropelletboxcrate
 	name = "Ferromagnetic Pellet Box Crate"
@@ -101,7 +122,9 @@
 	contains = list(/obj/item/storage/box/ammo/ferropellet/hc)
 	cost = 260
 
-/* ferro lances */
+/*
+MARK: Ferro Lances
+*/
 
 /datum/supply_pack/faction/solfed/ammo/ferrolanceboxcrate
 	name = "Ferromagnetic Lance Box Crate"
@@ -115,7 +138,9 @@
 	contains = list(/obj/item/storage/box/ammo/ferrolance/hc)
 	cost = 360
 
-/* 8x58mm Caseless */
+/*
+MARK: 8x58mm Caseless
+*/
 
 /datum/supply_pack/faction/solfed/ammo/a858
 	name = "8x58mm Ammo Box Crate"

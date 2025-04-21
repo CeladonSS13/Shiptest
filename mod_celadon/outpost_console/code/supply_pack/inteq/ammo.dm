@@ -1,7 +1,19 @@
 /datum/supply_pack/faction/inteq/ammo
 	group = "Ammunition"
 
-/*
+/* MARK: = Ammo List =
+[*] - отсутствуют.
+[-] - отключены.
+
+> 9mm
+> 10mm
+> .44 Roumain
+> .357
+> 12 Gauge
+> 7.62x40mm
+> .308
+> 5.56x45mm
+
 MARK: 9mm
 */
 
@@ -28,6 +40,34 @@ MARK: 9mm
 	desc = "Contains a 45-round 9mm box loaded with less-than-lethal rubber rounds."
 	contains = list(/obj/item/storage/box/ammo/c9mm_rubber)
 	cost = 200
+
+/*
+MARK: 10mm
+*/
+
+/datum/supply_pack/faction/inteq/ammo/c10mm_ammo_box
+	name = "10mm Ammo Box Crate"
+	desc = "Contains a 36-round 10mm box for SMGs like the SKM-44v Mongrel."
+	contains = list(/obj/item/storage/box/ammo/c10mm)
+	cost = 210
+
+/datum/supply_pack/faction/inteq/ammo/c10mmap_ammo_box
+	name = "10mm AP Ammo Box Crate"
+	desc = "Contains a 36-round 10mm box loaded with armor piercing ammo."
+	contains = list(/obj/item/storage/box/ammo/c10mm_ap)
+	cost = 260
+
+/datum/supply_pack/faction/inteq/ammo/c10mmhp_ammo_box
+	name = "10mm HP Ammo Box Crate"
+	desc = "Contains a 36-round 10mm box loaded with hollow point ammo, great against unarmored targets."
+	contains = list(/obj/item/storage/box/ammo/c10mm_hp)
+	cost = 260
+
+/datum/supply_pack/faction/inteq/ammo/c10mmrubber_ammo_box
+	name = "10mm Rubber Ammo Box Crate"
+	desc = "Contains a 36-round 10mm box loaded with less-than-lethal rubber rounds."
+	contains = list(/obj/item/storage/box/ammo/c10mm_rubber)
+	cost = 210
 
 /*
 MARK: .44
@@ -108,34 +148,6 @@ MARK: 12 Gauge
 	contains = list(/obj/item/storage/box/techshot)
 
 /*
-MARK: 10mm
-*/
-
-/datum/supply_pack/faction/inteq/ammo/c10mm_ammo_box
-	name = "10mm Ammo Box Crate"
-	desc = "Contains a 36-round 10mm box for SMGs like the SKM-44v Mongrel."
-	contains = list(/obj/item/storage/box/ammo/c10mm)
-	cost = 210
-
-/datum/supply_pack/faction/inteq/ammo/c10mmap_ammo_box
-	name = "10mm AP Ammo Box Crate"
-	desc = "Contains a 36-round 10mm box loaded with armor piercing ammo."
-	contains = list(/obj/item/storage/box/ammo/c10mm_ap)
-	cost = 260
-
-/datum/supply_pack/faction/inteq/ammo/c10mmhp_ammo_box
-	name = "10mm HP Ammo Box Crate"
-	desc = "Contains a 36-round 10mm box loaded with hollow point ammo, great against unarmored targets."
-	contains = list(/obj/item/storage/box/ammo/c10mm_hp)
-	cost = 260
-
-/datum/supply_pack/faction/inteq/ammo/c10mmrubber_ammo_box
-	name = "10mm Rubber Ammo Box Crate"
-	desc = "Contains a 36-round 10mm box loaded with less-than-lethal rubber rounds."
-	contains = list(/obj/item/storage/box/ammo/c10mm_rubber)
-	cost = 210
-
-/*
 MARK: 7.62
 */
 
@@ -187,7 +199,7 @@ MARK: .308
 	cost = 500
 
 /*
-MARK: 5.56
+MARK: 5.56x45mm
 */
 
 /datum/supply_pack/faction/inteq/ammo/box556_box
