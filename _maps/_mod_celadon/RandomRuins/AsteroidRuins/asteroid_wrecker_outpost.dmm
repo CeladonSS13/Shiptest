@@ -113,9 +113,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/mob/living/simple_animal/hostile/human/frontier/ranged/trooper/skm/internals{
-	loot = list(/obj/effect/mob_spawn/human/corpse/frontier/ranged/trooper)
-	},
+/mob/living/simple_animal/hostile/human/frontier/ranged/trooper/skm/internals,
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "bS" = (
@@ -2022,12 +2020,6 @@
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
-"Bj" = (
-/mob/living/simple_animal/hostile/human/frontier/ranged/trooper/skm{
-	loot = list(/obj/effect/mob_spawn/human/corpse/frontier/ranged/trooper)
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ruin/asteroid/wreckeroutpost/office)
 "Bl" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -3684,9 +3676,7 @@
 	dir = 4;
 	pixel_x = -4
 	},
-/mob/living/simple_animal/hostile/human/frontier/ranged/trooper/skm/internals{
-	loot = list(/obj/effect/mob_spawn/human/corpse/frontier/ranged/trooper)
-	},
+/mob/living/simple_animal/hostile/human/frontier/ranged/trooper/skm/internals,
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "WW" = (
@@ -3872,9 +3862,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/firealarm/directional/west,
-/mob/living/simple_animal/hostile/human/frontier/ranged/trooper/skm{
-	loot = list(/obj/effect/mob_spawn/human/corpse/frontier/ranged/trooper)
-	},
+/mob/living/simple_animal/hostile/human/frontier/ranged/trooper/skm,
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "YO" = (
@@ -7302,7 +7290,7 @@ qM
 ln
 ta
 qM
-Bj
+ji
 ji
 ji
 ji
