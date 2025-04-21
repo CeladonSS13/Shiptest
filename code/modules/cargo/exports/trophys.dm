@@ -1,7 +1,6 @@
 // [CELADON-REMOVE] - CRUSHER_TROPHEY - Перемещено в экспорт
 // /datum/export/trophycommon
 // 	cost = 250
-// 	elasticity_coeff = 0.05
 // 	unit_name = "common hunting trophy"
 // 	export_types = list(
 // 		/obj/item/mob_trophy/legion_skull,
@@ -13,7 +12,6 @@
 
 // /datum/export/trophyrare
 // 	cost = 1000
-// 	elasticity_coeff = 0.1
 // 	unit_name = "rare hunting trophy"
 // 	export_types = list(
 // 		/obj/item/mob_trophy/dwarf_skull,
@@ -28,7 +26,7 @@
 
 // /datum/export/trophymega
 // 	cost = 3000
-// 	elasticity_coeff = 0.2
+// 	elasticity_coeff = 0
 // 	unit_name = "big game hunting trophy"
 // 	export_types = list(
 // 		/obj/item/mob_trophy/legionnaire_spine,
@@ -44,12 +42,10 @@
 
 /datum/export/dogtag
 	desc = "CLIP has posted several bounties for wanted members of both the Frontiersman and the Clique. Bring back their tags, we'll reward you well."
-	cost = 500
-	elasticity_coeff = 0.02
-	recovery_ds = 0.5 MINUTES
+	cost = 200
+	elasticity_coeff = 0
 
 /datum/export/dogtag/frontiersmen
-	cost = 400
 	unit_name = "frontiersmen dogtags"
 	export_types = list(/obj/item/clothing/neck/dogtag/frontier)
 

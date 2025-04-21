@@ -453,7 +453,7 @@
 		/datum/crafting_recipe/food/cocolavatart,
 		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 		/datum/crafting_recipe/food/mimetart,
-		/datum/crafting_recipe/food/clowncake,
+		// /datum/crafting_recipe/food/clowncake,
 		// [/CELADON-ADD]
 		/datum/crafting_recipe/food/vanillacake
 	)
