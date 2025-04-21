@@ -40,7 +40,7 @@
 	new /obj/item/ammo_box/magazine/saiga/medium/empty(src)
 	new /obj/item/ammo_box/magazine/saiga/medium/empty(src)
 
-NO_MAG_GUN_HELPER(automatic/smg/skm_carbine/no_mag)
+NO_MAG_GUN_HELPER(automatic/smg/skm_carbine)
 
 /obj/item/ammo_box/magazine/skm_46_30/empty
 	start_empty = TRUE
