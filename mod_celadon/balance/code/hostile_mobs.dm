@@ -93,6 +93,9 @@ GLOBAL_LIST_INIT(onecardinalwest, WEST)
 	health = 30
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
+/mob/living/simple_animal/hostile/asteroid/goliath/beast
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 20, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 40, "acid" = 10)
+
 // /mob/living/simple_animal/hostile/asteroid/goliath/beast
 
 // /mob/living/simple_animal/hostile/asteroid/goliath/beast/ancient
