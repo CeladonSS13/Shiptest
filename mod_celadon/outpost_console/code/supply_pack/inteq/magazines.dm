@@ -1,6 +1,24 @@
 /datum/supply_pack/faction/inteq/magazine
 	group = "Magazines"
 
+/datum/supply_pack/faction/inteq/magazine/mongrel_mag
+	name = "Mongrel Magazine Crate"
+	desc = "Contains a 10mm magazine for the SKM-44v 'Mongrel' SMG, with a capacity of twenty-four rounds."
+	contains = list(/obj/item/ammo_box/magazine/smgm10mm/empty)
+	cost = 300
+
+/datum/supply_pack/faction/inteq/magazine/rottweiler_mag
+	name = "Rottweiler Box Magazine Crate"
+	desc = "Contains a .308 box magazine for the KM-05 'Rottweiler' LMG, with a capacity of fifty rounds."
+	contains = list(/obj/item/ammo_box/magazine/rottweiler_308_box/empty)
+	cost = 750
+
+/datum/supply_pack/faction/inteq/magazine/skm_ammo_extended
+	name = "SKM Extended Magazine Crate"
+	desc = "Contains a 7.62x40mm magazine for the SKM rifles, with a capacity of fourty rounds."
+	contains = list(/obj/item/ammo_box/magazine/skm_762_40/extended/empty)
+	cost = 1250
+
 /datum/supply_pack/faction/inteq/magazine/co9mm_mag
 	name = "Commisioner pistol magazine"
 	desc = "A 12-round double-stack 9mm magazine for Commander pistols. These rounds do okay damage, but struggle against armor."

@@ -145,3 +145,17 @@
 	else
 		M.visible_message(span_notice("[user] teaches [M] by beating [M.p_them()] over the head with [src]!"), span_boldnotice("As [user] hits you with [src], chinese symbols flow through your mind."), span_hear("You hear smacking."))
 		M.grant_language(/datum/language/fuyo, TRUE, TRUE, LANGUAGE_MIND)
+
+/obj/item/paper/fluff/claymore
+	name = "PRODUCT USAGE GUIDE"
+	desc = "A dusty memo stamped with the Scarborough Arms logo."
+	default_raw_text = "<b>ASSEMBLY:</b><br><br>\
+	-Deploy mounting legs and emplace device. Front should be placed in direction of enemy egress, no more then three meters from intended target area.<br><br> \
+	-<b>INFORM ALLIES OF PLACEMENT LOCATION.</b><br><br> \
+	-Wait for arming sequence to complete.<br><br> \
+	-Enjoy hands-free area denial, courtesy of Scarborough Arms.<br><br><br> \
+	<b>DISASSEMBLY & STORAGE:</b><br><br>\
+	-Insert screwdriver into arming pin access and turn 180 degrees. There will be considerable resistance. <b>DO NOT Step onto or in front of device.</b><br><br> \
+	-When pressure releases, reach below device and lift via underside in one clean motion. Mounting legs will automatically retract. <br><br> \
+	-The device is now safe to handle. <br><br> \
+	-Safely stow device in secure, moisture-free location, away from fire and blunt force. "

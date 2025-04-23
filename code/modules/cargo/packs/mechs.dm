@@ -1,3 +1,6 @@
+/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
+	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
+
 /datum/supply_pack/mech
 	group = "Exosuit Construction"
 	crate_type = /obj/structure/closet/crate/large
@@ -45,7 +48,6 @@ Build Your Own Suit
 		/obj/item/mecha_parts/chassis/odysseus,
 		/obj/item/mecha_parts/part/odysseus_head,
 		/obj/item/mecha_parts/part/odysseus_torso,
-		/obj/item/mecha_parts/part/odysseus_left_arm,
 		/obj/item/mecha_parts/part/odysseus_left_arm,
 		/obj/item/mecha_parts/part/odysseus_right_arm,
 		/obj/item/mecha_parts/part/odysseus_left_leg,
@@ -422,3 +424,6 @@ ammo
 	contains = list(
 		/obj/item/mecha_ammo/missiles_br
 	)
+
+
+[/CELADON-DELETE] */

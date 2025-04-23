@@ -48,6 +48,3 @@
 	cost = 3000
 /datum/supply_pack/medical/virus
 	cost = 3500
-
-/datum/supply_pack/medical/salglucanister
-	cost = 5000
