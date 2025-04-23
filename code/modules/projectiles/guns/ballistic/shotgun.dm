@@ -82,6 +82,8 @@
 	item_state = "shotgun_combat"
 	lefthand_file = 'icons/mob/inhands/weapons/64x_guns_left.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/64x_guns_right.dmi'
+	inhand_x_dimension = 64
+	inhand_y_dimension = 64
 	fire_delay = 0.5 SECONDS
 	default_ammo_type = /obj/item/ammo_box/magazine/internal/shot/com
 	allowed_ammo_types = list(
@@ -177,7 +179,8 @@ NO_MAG_GUN_HELPER(shotgun/automatic/bulldog/inteq)
 	lefthand_file = 'icons/mob/inhands/weapons/64x_guns_left.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/64x_guns_right.dmi'
 	mob_overlay_icon = null
-
+	inhand_x_dimension = 64
+	inhand_y_dimension = 64
 	base_icon_state = "ishotgun"
 	icon_state = "ishotgun"
 	item_state = "ishotgun"
