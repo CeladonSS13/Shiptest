@@ -34,6 +34,7 @@
 /obj/item/reagent_containers/food/drinks/waterbottle,
 /obj/item/reagent_containers/food/drinks/waterbottle,
 /obj/item/reagent_containers/food/drinks/waterbottle,
+/obj/effect/mapping_helpers/crate_shelve,
 /turf/open/floor/pod,
 /area/ship/security/weapons_control)
 "ag" = (
@@ -162,6 +163,11 @@
 /obj/structure/grille,
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/door/firedoor/heavy,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "Caliban_bridge";
+	name = "Privacy Shutters";
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/bridge)
 "bb" = (
@@ -194,6 +200,7 @@
 /obj/structure/sign/warning/explosives/alt{
 	pixel_y = -32
 	},
+/obj/effect/mapping_helpers/crate_shelve,
 /turf/open/floor/pod,
 /area/ship/security/weapons_control)
 "bI" = (
@@ -1934,6 +1941,16 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/canteen)
+"nh" = (
+/obj/docking_port/stationary{
+	width = 30;
+	height = 15;
+	dwidth = 7;
+	name = "Caliban Starboard Bay";
+	dir = 2
+	},
+/turf/template_noop,
+/area/template_noop)
 "no" = (
 /obj/effect/turf_decal/arrows/white{
 	dir = 4
@@ -2137,7 +2154,7 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/medical)
 "on" = (
-/turf/open/floor/pod,
+/turf/open/floor/plasteel/tech/grid,
 /area/ship/security/weapons_control)
 "oo" = (
 /obj/structure/window/plasma/reinforced/spawner/west,
@@ -2315,7 +2332,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/turf/open/floor/pod,
+/turf/open/floor/plasteel/tech/grid,
 /area/ship/security/weapons_control)
 "pU" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -3057,71 +3074,6 @@
 	pixel_x = 10;
 	pixel_y = -17
 	},
-/obj/item/trash/tray{
-	icon = 'icons/obj/ammunition/ammo_bullets.dmi';
-	icon_state = "84mm-hedp";
-	name = "84 mm hybrid railgun sabot";
-	desc = "A railgun sabot with propellant inside. Now this is rubbish."
-	},
-/obj/item/trash/tray{
-	icon = 'icons/obj/ammunition/ammo_bullets.dmi';
-	icon_state = "84mm-hedp";
-	name = "84 mm hybrid railgun sabot";
-	desc = "A railgun sabot with propellant inside. Now this is rubbish."
-	},
-/obj/item/trash/tray{
-	icon = 'icons/obj/ammunition/ammo_bullets.dmi';
-	icon_state = "84mm-hedp";
-	name = "84 mm hybrid railgun sabot";
-	desc = "A railgun sabot with propellant inside. Now this is rubbish."
-	},
-/obj/item/trash/tray{
-	icon = 'icons/obj/ammunition/ammo_bullets.dmi';
-	icon_state = "84mm-hedp";
-	name = "84 mm hybrid railgun sabot";
-	desc = "A railgun sabot with propellant inside. Now this is rubbish."
-	},
-/obj/item/trash/tray{
-	icon = 'icons/obj/ammunition/ammo_bullets.dmi';
-	icon_state = "84mm-hedp";
-	name = "84 mm hybrid railgun sabot";
-	desc = "A railgun sabot with propellant inside. Now this is rubbish."
-	},
-/obj/item/trash/tray{
-	icon = 'icons/obj/ammunition/ammo_bullets.dmi';
-	icon_state = "84mm-hedp";
-	name = "84 mm hybrid railgun sabot";
-	desc = "A railgun sabot with propellant inside. Now this is rubbish."
-	},
-/obj/item/trash/tray{
-	icon = 'icons/obj/ammunition/ammo_bullets.dmi';
-	icon_state = "84mm-hedp";
-	name = "84 mm hybrid railgun sabot";
-	desc = "A railgun sabot with propellant inside. Now this is rubbish."
-	},
-/obj/item/trash/tray{
-	icon = 'icons/obj/ammunition/ammo_bullets.dmi';
-	icon_state = "84mm-hedp";
-	name = "84 mm hybrid railgun sabot";
-	desc = "A railgun sabot with propellant inside. Now this is rubbish."
-	},
-/obj/item/trash/tray{
-	icon = 'icons/obj/ammunition/ammo_bullets.dmi';
-	icon_state = "84mm-hedp";
-	name = "84 mm hybrid railgun sabot";
-	desc = "A railgun sabot with propellant inside. Now this is rubbish."
-	},
-/obj/item/trash/tray{
-	icon = 'icons/obj/ammunition/ammo_bullets.dmi';
-	icon_state = "84mm-hedp";
-	name = "84 mm hybrid railgun sabot";
-	desc = "A railgun sabot with propellant inside. Now this is rubbish."
-	},
-/obj/structure/crate_shelf/built,
-/obj/structure/closet/crate{
-	name = "Railgun ammo crate";
-	color = "#808080"
-	},
 /turf/open/floor/pod,
 /area/ship/security/weapons_control)
 "tO" = (
@@ -3281,6 +3233,7 @@
 	dir = 4;
 	name = "From chamber to distro pump"
 	},
+/obj/effect/turf_decal/techfloor,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "vv" = (
@@ -3359,6 +3312,10 @@
 "vQ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 1;
+	layer = 2.030
 	},
 /obj/effect/turf_decal/trimline/opaque/vired/warning{
 	dir = 8;
@@ -3458,7 +3415,7 @@
 /obj/structure/salvageable/railgun_platform{
 	dir = 4;
 	layer = 2.9
-},
+	},
 /obj/machinery/computer{
 	desc = "Some kind of machine. Used to be a railgun control console. Now it only shows infinite reload timer, gone negative long ago. Wonder why they left it here.";
 	icon = 'icons/obj/machines/particle_accelerator.dmi';
@@ -3466,7 +3423,7 @@
 	name = "TAC-COM IFF computer";
 	layer = 2.99
 	},
-/turf/open/floor/pod,
+/turf/open/floor/plasteel/tech/grid,
 /area/ship/security/weapons_control)
 "wD" = (
 /obj/structure/rack,
@@ -4243,6 +4200,17 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
+"CR" = (
+/obj/structure/grille,
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/door/firedoor/heavy,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "Caliban_bridge";
+	name = "Privacy Shutters";
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
 "CS" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/railing/corner{
@@ -4391,6 +4359,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+/obj/effect/turf_decal/techfloor,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/engine)
 "Ev" = (
@@ -4622,6 +4591,7 @@
 	launch_status = 0;
 	port_direction = 4;
 	preferred_direction = 4
+	name = "Subshuttle dock"
 	},
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/medical)
@@ -5856,9 +5826,17 @@
 /obj/machinery/turretid/ship{
 	pixel_y = -20;
 	id = "Caliban_turret_control";
-	pixel_x = -32
+	pixel_x = -35
 	},
 /obj/effect/turf_decal/corner/opaque/brown/full,
+/obj/machinery/button/door{
+	dir = 4;
+	id = "Caliban_bridge";
+	name = "Bridge Shutters Control";
+	pixel_x = -21;
+	pixel_y = -23;
+	req_access = list(19,3)
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "QV" = (
@@ -6635,6 +6613,15 @@
 /obj/structure/tank_dispenser,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hallway/port_fore)
+"Wl" = (
+/obj/docking_port/stationary{
+	width = 30;
+	height = 15;
+	dwidth = 7;
+	name = "Caliban Port Bay"
+	},
+/turf/template_noop,
+/area/template_noop)
 "Wp" = (
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 8
@@ -8050,13 +8037,13 @@ oY
 AL
 IT
 Ya
-aV
+CR
 sc
 hK
 ao
 qD
 uI
-aV
+CR
 Mn
 om
 hz
@@ -8070,7 +8057,7 @@ TA
 sw
 "}
 (36,1,1) = {"
-sw
+Wl
 XJ
 Hh
 RY
@@ -8081,13 +8068,13 @@ jt
 br
 Wb
 Lo
-aV
+CR
 fN
 dh
 eu
 iM
 mU
-aV
+CR
 lI
 KT
 TO
@@ -8112,13 +8099,13 @@ fr
 Vp
 qs
 yc
-aV
+CR
 Dl
 hM
 LS
 Ir
 go
-aV
+CR
 Nf
 oD
 oS
@@ -8129,7 +8116,7 @@ ab
 aD
 WF
 XJ
-sw
+nh
 "}
 (38,1,1) = {"
 sw
