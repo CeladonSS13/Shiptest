@@ -42,6 +42,7 @@ ID мода: CELADON_SPACEPOD
 ### Изменения *кор кода*
 
 - 'code/_onclick/drag_drop.dm'
+- "code\controllers\subsystem\processing\spacepod.dm" - подсистема дял работы в плавном режиме
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
