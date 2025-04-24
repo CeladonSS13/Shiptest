@@ -73,35 +73,6 @@
 	wear_major_threshold = 90
 	wear_maximum = 150
 
-//im not sure what to do with the combat shotgun, as it's functionally the same as the semi auto shotguns except it automattically racks instead of being semi-auto
-
-/obj/item/gun/ballistic/shotgun/automatic/combat
-	name = "combat shotgun"
-	desc = "A semi-automatic shotgun with tactical furniture and six-shell capacity underneath."
-	icon_state = "cshotgun"
-	item_state = "shotgun_combat"
-	lefthand_file = 'icons/mob/inhands/weapons/64x_guns_left.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/64x_guns_right.dmi'
-	inhand_x_dimension = 64
-	inhand_y_dimension = 64
-	fire_delay = 0.5 SECONDS
-	default_ammo_type = /obj/item/ammo_box/magazine/internal/shot/com
-	allowed_ammo_types = list(
-		/obj/item/ammo_box/magazine/internal/shot/com,
-	)
-	w_class = WEIGHT_CLASS_BULKY
-
-/obj/item/gun/ballistic/shotgun/automatic/combat/compact
-	name = "compact combat shotgun"
-	desc = "A compact version of the semi-automatic combat shotgun. For close encounters."
-	icon_state = "cshotgunc"
-	default_ammo_type = /obj/item/ammo_box/magazine/internal/shot/com/compact
-	allowed_ammo_types = list(
-		/obj/item/ammo_box/magazine/internal/shot/com/compact,
-	)
-	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_MEDIUM
-
 //Dual Feed Shotgun
 
 /obj/item/gun/ballistic/shotgun/automatic/dual_tube
