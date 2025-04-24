@@ -27,3 +27,6 @@
 		icon_state = "[icon_living]"
 		collar_type = "[initial(collar_type)]"
 	regenerate_icons()
+
+/mob/living/simple_animal/pet/fox/fennec/Life()
+	return

@@ -455,14 +455,14 @@ GLOBAL_LIST_INIT(onecardinalwest, WEST)
 // /mob/living/simple_animal/hostile/killertomato
 
 
-/mob/living/simple_animal/hostile/human/syndicate/mecha_pilot
+/mob/living/simple_animal/hostile/human/ramzi/mecha_pilot
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 10, "fire" = 10, "acid" = 10)
 
-// /mob/living/simple_animal/hostile/human/syndicate/mecha_pilot/no_mech
+// /mob/living/simple_animal/hostile/human/ramzi/mecha_pilot/no_mech
 
-// /mob/living/simple_animal/hostile/human/syndicate/mecha_pilot/nanotrasen
+// /mob/living/simple_animal/hostile/human/ramzi/mecha_pilot/nanotrasen
 
-// /mob/living/simple_animal/hostile/human/syndicate/mecha_pilot/no_mech/nanotrasen
+// /mob/living/simple_animal/hostile/human/ramzi/mecha_pilot/no_mech/nanotrasen
 
 
 /mob/living/simple_animal/hostile/mimic
@@ -702,63 +702,63 @@ GLOBAL_LIST_INIT(onecardinalwest, WEST)
 // /mob/living/simple_animal/hostile/human/hermit/ranged/gunslinger
 
 
-/mob/living/simple_animal/hostile/human/syndicate
+/mob/living/simple_animal/hostile/human/ramzi
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 20, "fire" = 20, "acid" = 20)
 
-/mob/living/simple_animal/hostile/human/syndicate/space
+/mob/living/simple_animal/hostile/human/ramzi/space
 	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90)
 
-/mob/living/simple_animal/hostile/human/syndicate/space/stormtrooper
+/mob/living/simple_animal/hostile/human/ramzi/space/stormtrooper
 	armor = list("melee" = 60, "bullet" = 60, "laser" = 50, "energy" = 25, "bomb" = 55, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 100)
 
-/mob/living/simple_animal/hostile/human/syndicate/melee
+/mob/living/simple_animal/hostile/human/ramzi/melee
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 20, "fire" = 20, "acid" = 20)
 
-/mob/living/simple_animal/hostile/human/syndicate/melee/space
+/mob/living/simple_animal/hostile/human/ramzi/melee/space
 	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90)
 
-/mob/living/simple_animal/hostile/human/syndicate/melee/space/stormtrooper
+/mob/living/simple_animal/hostile/human/ramzi/melee/space/stormtrooper
 	armor = list("melee" = 60, "bullet" = 60, "laser" = 50, "energy" = 25, "bomb" = 55, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 100)
 
-/mob/living/simple_animal/hostile/human/syndicate/melee/sword
+/mob/living/simple_animal/hostile/human/ramzi/melee/sledge
 	armor = list("melee" = 25, "bullet" = 10, "laser" = 100, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 20, "fire" = 20, "acid" = 20)
 
-/mob/living/simple_animal/hostile/human/syndicate/melee/sword/space
+/mob/living/simple_animal/hostile/human/ramzi/melee/space/sledge
 	armor = list("melee" = 55, "bullet" = 50, "laser" = 100, "energy" = 15, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90)
 
-/mob/living/simple_animal/hostile/human/syndicate/melee/sword/space/stormtrooper
+/mob/living/simple_animal/hostile/human/ramzi/melee/space/stormtrooper/sledge
 	armor = list("melee" = 75, "bullet" = 60, "laser" = 100, "energy" = 25, "bomb" = 55, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 100)
 
-/mob/living/simple_animal/hostile/human/syndicate/ranged
+/mob/living/simple_animal/hostile/human/ramzi/ranged
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 20, "fire" = 20, "acid" = 20)
 
-/mob/living/simple_animal/hostile/human/syndicate/ranged/infiltrator
+/mob/living/simple_animal/hostile/human/ramzi/ranged/infiltrator
 
-/mob/living/simple_animal/hostile/human/syndicate/ranged/space
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space
 	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90)
 
-/mob/living/simple_animal/hostile/human/syndicate/ranged/space/stormtrooper
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/stormtrooper
 	armor = list("melee" = 60, "bullet" = 60, "laser" = 50, "energy" = 25, "bomb" = 55, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 100)
 
-/mob/living/simple_animal/hostile/human/syndicate/ranged/smg
+/mob/living/simple_animal/hostile/human/ramzi/ranged/smg
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 20, "fire" = 20, "acid" = 20)
 
-/mob/living/simple_animal/hostile/human/syndicate/ranged/smg/space
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/smg
 	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90)
 
-/mob/living/simple_animal/hostile/human/syndicate/ranged/smg/space/stormtrooper
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/stormtrooper/smg
 	armor = list("melee" = 60, "bullet" = 60, "laser" = 50, "energy" = 25, "bomb" = 55, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 100)
 
-/mob/living/simple_animal/hostile/human/syndicate/ranged/shotgun
+/mob/living/simple_animal/hostile/human/ramzi/ranged/shotgun
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 20, "fire" = 20, "acid" = 20)
 
-/mob/living/simple_animal/hostile/human/syndicate/ranged/shotgun/space
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/shotgun
 	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90)
 
-/mob/living/simple_animal/hostile/human/syndicate/ranged/shotgun/space/stormtrooper
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/stormtrooper/shotgun
 	armor = list("melee" = 60, "bullet" = 60, "laser" = 50, "energy" = 25, "bomb" = 55, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 100)
 
-/mob/living/simple_animal/hostile/human/syndicate/civilian
+/mob/living/simple_animal/hostile/human/ramzi/civilian
 
 
 // /mob/living/simple_animal/hostile/viscerator

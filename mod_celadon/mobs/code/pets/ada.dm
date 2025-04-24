@@ -12,3 +12,6 @@
 	icon = 'mod_celadon/_storge_icons/icons/mobs/kovac_animals.dmi'
 	held_lh = 'mod_celadon/_storge_icons/icons/mobs/animals_held_lh.dmi'
 	held_rh = 'mod_celadon/_storge_icons/icons/mobs/animals_held_rh.dmi'
+
+/mob/living/simple_animal/pet/dog/corgi/Lisa/ada/Life()
+	return

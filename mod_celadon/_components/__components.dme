@@ -3,9 +3,14 @@
 
 #include "__components.dm"
 
+// Добавляет компонент, отвечающий за удаление атомов.
+#include "code/datum/fancy_deletion_timer.dm"
+#include "code/datum/meteorcarp.dm"
+
 // Изменения корня датумов
 #include "code/datum/species.dm"
 
+// Задание переменной начального значения
 #include "code/mob/living.dm"
 
 // Система оповещений ролей в Discord

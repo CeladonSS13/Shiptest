@@ -33,7 +33,9 @@
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical //WS Edit - Alt Uniforms
 	l_hand = /obj/item/storage/firstaid/medical
 	suit_store = /obj/item/flashlight/pen
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
+	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
+	// [/CELADON-REMOVE]
 
 	backpack = /obj/item/storage/backpack/medic
 	satchel = /obj/item/storage/backpack/satchel/med

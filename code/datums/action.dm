@@ -198,6 +198,17 @@
 		return
 	..()
 
+/datum/action/item_action/toggle_radio
+	name = "Toggle Radio"
+
+/datum/action/item_action/toggle_radio/Trigger()
+	if(istype(target, /obj/item/bodycamera/broadcast_camera))
+		var/obj/item/bodycamera/broadcast_camera/cam = target
+		var/obj/item/radio/radio = cam.radio
+		radio.ui_interact(owner, state = GLOB.deep_inventory_state)
+		return
+	..()
+
 /datum/action/item_action/toggle_hood
 	name = "Toggle Hood"
 
@@ -333,10 +344,10 @@
 	if(istype(target, /obj/item/clothing/head/helmet/space/hardsuit/berserker))
 		var/obj/item/clothing/head/helmet/space/hardsuit/berserker/berzerk = target
 		if(berzerk.berserk_active)
-			to_chat(owner, "<span class='warning'>You are already berserk!</span>")
+			to_chat(owner, span_warning("You are already berserk!"))
 			return
 		if(berzerk.berserk_charge < 100)
-			to_chat(owner, "<span class='warning'>You don't have a full charge.</span>")
+			to_chat(owner, span_warning("You don't have a full charge."))
 			return
 		berzerk.berserk_mode(owner)
 		return
@@ -347,6 +358,11 @@
 
 /datum/action/item_action/toggle_helmet_mode
 	name = "Toggle Helmet Mode"
+
+/datum/action/item_action/toggle_helmet_mode/Trigger()
+	if(istype(target, /obj/item/clothing/head/helmet/space/hardsuit/syndi))
+		var/obj/item/clothing/head/helmet/space/hardsuit/syndi/syndi_helmet = target
+		syndi_helmet.toggle_mode(owner)
 
 /datum/action/item_action/crew_monitor
 	name = "Interface With Crew Monitor"
@@ -431,7 +447,7 @@
 			owner.research_scanner++
 		else
 			owner.research_scanner--
-		to_chat(owner, "<span class='notice'>[target] research scanner has been [active ? "activated" : "deactivated"].</span>")
+		to_chat(owner, span_notice("[target] research scanner has been [active ? "activated" : "deactivated"]."))
 		return 1
 
 /datum/action/item_action/toggle_research_scanner/Remove(mob/M)
@@ -495,7 +511,7 @@
 		return
 	//Box closing from here on out.
 	if(!isturf(owner.loc)) //Don't let the player use this to escape mechs/welded closets.
-		to_chat(owner, "<span class='warning'>You need more space to activate this implant!</span>")
+		to_chat(owner, span_warning("You need more space to activate this implant!"))
 		return
 	if(cooldown < world.time - 100)
 		var/box = new boxtype(owner.drop_location())
@@ -604,7 +620,7 @@
 	UpdateButtonIcon()
 	START_PROCESSING(SSfastprocess, src)
 
-/datum/action/cooldown/process()
+/datum/action/cooldown/process(seconds_per_tick)
 	if(!owner)
 		button.maptext = ""
 		STOP_PROCESSING(SSfastprocess, src)
@@ -740,8 +756,8 @@
 	if(istype(target, /obj/item/flashlight/lantern/lanternbang))
 		var/obj/item/flashlight/lantern/lanternbang/L = target
 		if(L.cooldown)
-			to_chat(owner, "<span class='warning'>The lanternbang is still on cooldown!</span>")
+			to_chat(owner, span_warning("The lanternbang is still on cooldown!"))
 			return
-		to_chat(owner, "<span class='warning'>You overload the lanternbang!</span>")
+		to_chat(owner, span_warning("You overload the lanternbang!"))
 		L.activate()
 		return

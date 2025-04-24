@@ -1,0 +1,27 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/refs/heads/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Example-class Experimental Ship",
+	"map_short_name": "Test-class",
+	"faction": "/datum/faction/independent",
+	"prefix": "STSV",
+	"manufacturer": "Ihejirika Civ. Manufacturing",
+	"namelists": ["GENERAL", "SPACE", "MYTHOLOGICAL", "WEAPONS"],
+	"map_path": "_maps/shuttles/shiptest/null.dmm",
+	"limit": 1,
+	"spawn_time_coeff": 1.5,
+	"officer_time_coeff": 0.5,
+	"job_slots": {
+		"The First Slot will always be the 'captain' that the purchaser becomes.": {
+			"outfit": "/datum/outfit/job/captain",
+			"officer": true,
+			"slots": 1
+		},
+		"Second Custom Job showing minimum possible arguments": {
+			"outfit": "/datum/outfit/job",
+			"slots": 2
+		},
+		"Assistant": 3
+	},
+	"enabled": true,
+	"space_spawn": false
+}

@@ -54,8 +54,6 @@
 	},
 /obj/structure/closet/crate/miningcar,
 /obj/item/clothing/glasses/meson,
-/obj/item/pickaxe,
-/obj/item/pickaxe,
 /obj/item/clothing/glasses/meson,
 /obj/item/circuitboard/machine/ore_redemption,
 /obj/item/shovel,
@@ -63,14 +61,24 @@
 /obj/effect/turf_decal/spline/fancy/opaque/nsorange{
 	dir = 1
 	},
+/obj/item/storage/bag/ore,
+/obj/item/kinetic_crusher,
+/obj/item/pickaxe/drill/jackhammer,
 /turf/open/floor/plating,
 /area/ship/bridge)
 "gt" = (
 /obj/structure/table/wood,
-/obj/item/modular_computer/laptop/preset/civilian,
 /obj/machinery/newscaster/directional/north,
 /obj/effect/turf_decal/spline/fancy/opaque/nsorange{
 	dir = 1
+	},
+/obj/machinery/recharger{
+	pixel_x = 7;
+	pixel_y = 3
+	},
+/obj/machinery/recharger{
+	pixel_x = -7;
+	pixel_y = 3
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -107,7 +115,6 @@
 	},
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/suit/space/hardsuit/mining/heavy,
-/obj/item/tank/jetpack/carbondioxide,
 /obj/item/clothing/mask/breath,
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel/dark,
@@ -117,21 +124,19 @@
 	pixel_y = 32;
 	dir = 1
 	},
-/obj/item/storage/box/ammo/c9mm,
-/obj/item/storage/box/ammo/c9mm,
-/obj/item/gun/ballistic/automatic/pistol/commander,
-/obj/item/ammo_box/magazine/co9mm{
-	pixel_x = 5
-	},
-/obj/item/ammo_box/magazine/co9mm{
-	pixel_x = 5
-	},
 /obj/item/clothing/head/helmet,
 /obj/item/clothing/suit/armor/vest,
 /obj/item/melee/baton/loaded,
 /obj/effect/turf_decal/spline/fancy/opaque/nsorange{
 	dir = 1
 	},
+/obj/item/gun/energy/kinetic_accelerator,
+/obj/item/borg/upgrade/modkit/indoors,
+/obj/item/borg/upgrade/modkit/indoors,
+/obj/item/borg/upgrade/modkit/range,
+/obj/item/gun/energy/kalix/pistol,
+/obj/item/stock_parts/cell/gun/kalix,
+/obj/item/stock_parts/cell/gun/kalix,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "iV" = (
@@ -298,6 +303,9 @@
 /obj/effect/turf_decal/nanotrasen/ns{
 	dir = 8
 	},
+/obj/item/tank/jetpack/suit,
+/obj/item/gun/energy/kalix/pistol,
+/obj/item/stock_parts/cell/gun/kalix,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "uk" = (
@@ -338,6 +346,8 @@
 /obj/item/reagent_containers/syringe/charcoal,
 /obj/item/reagent_containers/syringe/charcoal,
 /obj/effect/turf_decal/spline/fancy/opaque/nsorange,
+/obj/item/storage/firstaid/brute,
+/obj/item/storage/firstaid/fire,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "zJ" = (
@@ -501,19 +511,20 @@
 /area/ship/bridge)
 "GE" = (
 /obj/structure/railing{
-	dir = 1
+	dir = 1;
+	layer = 2
 	},
 /obj/structure/railing{
 	dir = 8;
 	layer = 4.1
 	},
-/obj/effect/spawner/random/vending/snack,
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
+/obj/machinery/vending/mining_equipment,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Ho" = (

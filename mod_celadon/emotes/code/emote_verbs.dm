@@ -201,6 +201,11 @@ var/timer = 20
 	set category = "Эмоции"
 	emote_with_delay("mrow", timer)
 
+/mob/living/carbon/human/proc/emote_mrowss()
+	set name = "> " + EMOTE_SPECIES_MROWSS + " ►"
+	set category = "Эмоции"
+	emote_with_delay("mrowss", timer)
+
 /mob/living/carbon/human/proc/emote_purr()
 	set name = "> " + EMOTE_SPECIES_PURR + " ►"
 	set category = "Эмоции"
@@ -328,10 +333,10 @@ var/timer = 20
 	set category = "Эмоции"
 	emote_with_delay("whistle", timer)
 
-// /mob/living/carbon/human/verb/emote_snap()
-// 	set name = "► " + EMOTE_SPECIES_SNAP + " "
-// 	set category = "Эмоции"
-// 	emote_with_delay("snap", timer)
+/mob/living/carbon/human/verb/emote_snap()
+	set name = "► " + EMOTE_SPECIES_SNAP + " "
+	set category = "Эмоции"
+	emote_with_delay("snap", timer)
 
 // /mob/living/carbon/human/proc/emote_ururu()
 // 	set name = "► " + EMOTE_SPECIES_RUMBLE + " "

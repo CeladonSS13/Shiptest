@@ -1,7 +1,7 @@
 /mob/living/simple_animal/mouse/syndie
 	icon = 'mod_celadon/_storge_icons/icons/mobs/syndie_pets.dmi'
 	name = "SyndiMouse"
-	body_color = "red"
+	// body_color = "red"	// NEEDS_TO_FIX_ALARM!
 	icon_state = "mouse_red"
 	icon_living = "mouse_red"
 	desc = "It's a SyndiMouse in a spacesuit."
@@ -19,14 +19,14 @@
 
 /mob/living/simple_animal/mouse/Initialize()
 	. = ..()
-	GLOB.mouse_spawned += 1
+	// GLOB.mouse_spawned += 1	// NEEDS_TO_FIX_ALARM!
 	ADD_TRAIT(src, TRAIT_HOLDABLE, INNATE_TRAIT)
 	AddComponent(/datum/component/squeak, list('sound/effects/mousesqueek.ogg'=1), 100, extrarange = SHORT_RANGE_SOUND_EXTRARANGE) //as quiet as a mouse or whatever
-	if(!body_color)
-		body_color = pick( list("brown","gray","white","red") )
-	icon_state = "mouse_[body_color]"
-	icon_living = "mouse_[body_color]"
-	icon_dead = "mouse_[body_color]_dead"
+	// if(!body_color)
+	// 	body_color = pick( list("brown","gray","white","red") )		// NEEDS_TO_FIX_ALARM!
+	// icon_state = "mouse_[body_color]"
+	// icon_living = "mouse_[body_color]"
+	// icon_dead = "mouse_[body_color]_dead"
 
 /obj/item/reagent_containers/food/snacks/deadmouse
 	icon = 'mod_celadon/_storge_icons/icons/mobs/syndie_pets.dmi'

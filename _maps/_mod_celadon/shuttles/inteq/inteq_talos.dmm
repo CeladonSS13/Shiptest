@@ -465,8 +465,8 @@
 "cN" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/suit/space/hardsuit/engine/atmos,
 /obj/item/tank/jetpack/oxygen,
+/obj/item/clothing/suit/space/hardsuit/engine/elite,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/communications)
 "cP" = (
@@ -685,7 +685,6 @@
 /obj/machinery/suit_storage_unit/inherit{
 	req_access_txt = "1"
 	},
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
 /obj/item/tank/jetpack/oxygen,
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable{
@@ -1125,7 +1124,6 @@
 /obj/machinery/suit_storage_unit/inherit{
 	req_access_txt = "1"
 	},
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
 /obj/item/tank/jetpack/oxygen,
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 8
@@ -1136,6 +1134,7 @@
 /obj/effect/turf_decal/corner/opaque/yellow,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/firealarm/directional/south,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "gj" = (
@@ -2683,15 +2682,14 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 1;
-	filter_types = list("o2")
-	},
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 8;
 	name = "engine fuel pump";
 	pixel_y = 10;
 	piping_layer = 5
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
@@ -3136,13 +3134,6 @@
 	pixel_y = 5
 	},
 /obj/item/ammo_box/magazine/m12g_bulldog/drum{
-	pixel_x = 5;
-	pixel_y = 5
-	},
-/obj/item/ammo_box/magazine/m12g_bulldog/drum{
-	pixel_x = -5
-	},
-/obj/item/ammo_box/magazine/m12g_bulldog/drum{
 	pixel_x = -5
 	},
 /obj/item/ammo_box/magazine/co9mm{
@@ -3157,6 +3148,10 @@
 /obj/item/ammo_box/magazine/co9mm{
 	pixel_x = 5
 	},
+/obj/item/ammo_box/magazine/smgm10mm,
+/obj/item/ammo_box/magazine/smgm10mm,
+/obj/item/ammo_box/magazine/smgm10mm,
+/obj/item/ammo_box/magazine/smgm10mm,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "ss" = (
@@ -3698,7 +3693,6 @@
 /obj/machinery/suit_storage_unit/inherit{
 	req_access_txt = "1"
 	},
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
 /obj/item/tank/jetpack/oxygen,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
@@ -3771,12 +3765,13 @@
 	pixel_y = 8;
 	spawnwithmagazine = 0
 	},
-/obj/item/gun/ballistic/shotgun/automatic/bulldog/inteq{
-	pixel_x = -12;
-	spawnwithmagazine = 0
-	},
 /obj/structure/sign/poster/retro/lasergun_new{
 	pixel_x = -32
+	},
+/obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq,
+/obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq{
+	pixel_x = -8;
+	pixel_y = -4
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
@@ -6121,7 +6116,6 @@
 /obj/machinery/suit_storage_unit/inherit{
 	req_access_txt = "1"
 	},
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
 /obj/item/tank/jetpack/oxygen,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
@@ -6275,9 +6269,6 @@
 /obj/item/folder/syndicate{
 	desc = "A slick black folder stamped 'Property of Inteq Risk Management Group.'"
 	},
-/obj/item/stamp/law{
-	name = "master at arms' rubber stamp"
-	},
 /obj/item/table_bell{
 	pixel_x = -15
 	},
@@ -6380,10 +6371,6 @@
 	pixel_y = 12
 	},
 /obj/item/storage/toolbox/ammo/shotgun{
-	pixel_x = -3;
-	pixel_y = 8
-	},
-/obj/item/storage/toolbox/ammo/shotgun{
 	pixel_x = -6;
 	pixel_y = 4
 	},
@@ -6393,6 +6380,7 @@
 	pixel_x = 2;
 	pixel_y = 1
 	},
+/obj/item/storage/toolbox/ammo/c10mm,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "Ld" = (
@@ -6587,9 +6575,9 @@
 /obj/item/storage/lockbox/medal/sec{
 	pixel_y = 5
 	},
-/obj/item/storage/box/ammo/a357,
-/obj/item/storage/box/ammo/a357,
-/obj/item/storage/box/ammo/a357,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
 /obj/item/clothing/mask/balaclava/inteq,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -8364,10 +8352,6 @@
 	},
 /obj/item/target/alien{
 	pixel_x = 5
-	},
-/obj/item/target/clown{
-	pixel_x = -5;
-	pixel_y = 10
 	},
 /obj/item/target{
 	pixel_y = 5

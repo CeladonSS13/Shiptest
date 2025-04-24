@@ -46,9 +46,12 @@
 	STR.max_volume = STORAGE_VOLUME_BACKPACK
 	STR.max_w_class = MAX_WEIGHT_CLASS_BACKPACK
 	STR.use_sound = 'sound/items/storage/unzip.ogg'
-	STR.worn_access = FALSE
+	// [CELADON-EDIT] - CELADON_BALANCE_CD
+	// STR.worn_access = FALSE
+	STR.worn_access = TRUE
+	// [/CELADON-EDIT]
 
-/obj/machinery/examine(mob/user)
+/obj/item/storage/backpack/examine(mob/user)
 	. = ..()
 	var/datum/component/storage/bpack = GetComponent(/datum/component/storage)
 	if(bpack.worn_access == FALSE)
@@ -75,6 +78,15 @@
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.storage_flags = STORAGE_FLAGS_VOLUME_DEFAULT
 	STR.max_volume = STORAGE_VOLUME_BAG_OF_HOLDING
+
+/obj/item/storage/backpack/holding/debug
+	name = "advanced bag of holding"
+
+/obj/item/storage/backpack/holding/debug/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.worn_access = TRUE
+
 
 /obj/item/storage/backpack/cultpack
 	name = "trophy rack"
@@ -410,7 +422,6 @@
 	desc = "A large duffel bag for holding extra things."
 	icon_state = "duffel"
 	item_state = "duffel"
-	slowdown = 1
 	greyscale_colors = list(list(21, 11), list(14, 19), list(15, 16))
 	w_class = WEIGHT_CLASS_HUGE
 
@@ -458,6 +469,14 @@
 /obj/item/storage/backpack/duffelbag/sec/surgery
 	name = "surgical duffel bag"
 	desc = "A large duffel bag for holding extra supplies - this one has a material inlay with space for various sharp-looking tools."
+
+/obj/item/storage/backpack/duffelbag/sec/c4
+	name = "tactical duffel bag"
+	desc = "A large duffel bag for holding extra plastic explosives."
+
+/obj/item/storage/backpack/duffelbag/sec/c4/PopulateContents()
+	for(var/i in 1 to 7)
+		new /obj/item/grenade/c4(src)
 
 /obj/item/storage/backpack/duffelbag/sec/surgery/PopulateContents()
 	new /obj/item/scalpel(src)
@@ -638,6 +657,9 @@
 	if(prob(5))
 		new /obj/item/reagent_containers/food/snacks/pizza/pineapple(src)
 
+/obj/item/storage/backpack/duffelbag/syndie/c4
+	name = "demolitions duffel bag"
+
 /obj/item/storage/backpack/duffelbag/syndie/c4/PopulateContents()
 	for(var/i in 1 to 10)
 		new /obj/item/grenade/c4(src)
@@ -667,10 +689,12 @@
 	STR.silent = TRUE
 
 /obj/item/storage/backpack/duffelbag/clown/syndie/PopulateContents()
-	new /obj/item/pda/clown(src)
 	new /obj/item/clothing/under/rank/civilian/clown(src)
-	// [CELADON-ADD] - CELADON_RETURN_CONTENT
+	// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 	new /obj/item/clothing/shoes/clown_shoes(src)
+	// [/CELADON-ADD]
+	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+	new /obj/item/pda/clown(src)
 	// [/CELADON-ADD]
 	new /obj/item/clothing/mask/gas/clown_hat(src)
 	new /obj/item/bikehorn(src)

@@ -18,7 +18,7 @@ GLOBAL_PROTECT(donators)
 	if(client_mob.next_move > world.time)
 		return
 	if(!isliving(client_mob))
-		to_chat(client_mob, "<span class='notice'>You must be alive to use this!</span>")
+		to_chat(client_mob, span_notice("You must be alive to use this!"))
 		return
 	if(!donator?.handle_redemption(client_mob))
 		client_mob.changeNext_move(CLICK_CD_MELEE)
@@ -210,7 +210,7 @@ GLOBAL_PROTECT(donators)
 	var/r_all = r_flat + r_conv + r_resk
 
 	if(!r_all)
-		to_chat(user, "<span class='notice'>You do not have any rewards able to be redeemed currently.</span>")
+		to_chat(user, span_notice("You do not have any rewards able to be redeemed currently."))
 		return FALSE
 
 	var/choice
@@ -333,7 +333,7 @@ GLOBAL_PROTECT(donators)
 	if(!donator_key || donator_allow_other_usage || check_donator(equipper) || check_donator(target))
 		return ..()
 
-	to_chat(target, "<span class='warning'>A strange force prevents you from equipping [src]...</span>")
+	to_chat(target, span_warning("A strange force prevents you from equipping [src]..."))
 	return FALSE
 
 /obj/item/clothing/examine(mob/user)
@@ -341,10 +341,10 @@ GLOBAL_PROTECT(donators)
 	if(!donator_key) // Github I demand you run the checks on this PR
 		return .
 	if(check_donator(user))
-		. += "<span class='notice'><ul>This is one of your donator items, to <b>[(donator_allow_other_usage ? "allow" : "disallow")]</b> sharing <b>CtrlShiftClick</b> it.</ul></span>"
+		. += span_notice("<ul>This is one of your donator items, to <b>[(donator_allow_other_usage ? "allow" : "disallow")]</b> sharing <b>CtrlShiftClick</b> it.</ul>")
 	else
 		if(!donator_allow_other_usage)
-			. += "<span class='warning'>A strange force prevents you from making eye contact with it.</span>"
+			. += span_warning("A strange force prevents you from making eye contact with it.")
 
 // [CELADON-REMOVE] - CELADON_DONATERS - Перемещено в папку мода
 // /obj/item/clothing/proc/check_donator(mob/user)
@@ -356,5 +356,5 @@ GLOBAL_PROTECT(donators)
 		return ..()
 
 	donator_allow_other_usage = !donator_allow_other_usage
-	to_chat(user, "<span class='notice'>You <b>[(donator_allow_other_usage ? "allow" : "disallow")]</b> sharing of [src].</span>")
+	to_chat(user, span_notice("You <b>[(donator_allow_other_usage ? "allow" : "disallow")]</b> sharing of [src]."))
 	return TRUE

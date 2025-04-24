@@ -37,7 +37,9 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	neck = /obj/item/clothing/neck/cloak/nanotrasen
 	head = /obj/item/clothing/head/nanotrasen/captain/peaked
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
+	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
+	// [/CELADON-REMOVE]
 
 	backpack = /obj/item/storage/backpack/captain
 	satchel = /obj/item/storage/backpack/satchel/cap
@@ -89,7 +91,9 @@
 
 	backpack_contents = list(
 						/obj/item/storage/box/ids=1,
-						/obj/item/melee/classic_baton/telescopic=1,
+						// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+						// /obj/item/melee/classic_baton/telescopic=1,
+						// [/CELADON-REMOVE]
 						/obj/item/modular_computer/tablet/preset/advanced = 1,
 						)
 
@@ -100,7 +104,7 @@
 
 	chameleon_extras = list(
 						/obj/item/gun/energy/e_gun,
-						/obj/item/stamp/head_of_personnel,
+						/obj/item/stamp/nanotrasen/officer,
 						)
 
 // Head of Security
@@ -232,9 +236,12 @@
 	gloves = /obj/item/clothing/gloves/color/black
 
 	backpack_contents = list(
-						/obj/item/melee/classic_baton/telescopic=1,
+						// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+						// /obj/item/melee/classic_baton/telescopic=1,
+						// [/CELADON-REMOVE]
 						/obj/item/modular_computer/tablet/preset/advanced=1,
 						)
+
 
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
@@ -430,8 +437,6 @@
 	l_pocket = /obj/item/laser_pointer
 	r_pocket = /obj/item/clothing/accessory/lawyers_badge
 
-	chameleon_extras = /obj/item/stamp/law
-
 // Corp. Rep
 /datum/outfit/job/nanotrasen/lawyer/corporaterepresentative
 	name = "Nanotrasen - Corporate Representative"
@@ -478,6 +483,8 @@
 /datum/outfit/job/nanotrasen/pilot
 	name = "Nanotrasen - Pilot"
 	id_assignment = "Pilot"
+	jobtype = /datum/job/head_of_personnel
+
 
 	uniform = /obj/item/clothing/under/rank/security/officer/military
 	suit = /obj/item/clothing/suit/jacket/leather/duster

@@ -721,7 +721,6 @@
 /obj/item/clothing/suit/bio_suit/cmo,
 /obj/item/clothing/head/bio_hood/cmo,
 /obj/item/reagent_containers/hypospray/CMO,
-/obj/item/storage/box/hypospray/CMO,
 /obj/item/clothing/glasses/hud/health/sunglasses,
 /obj/item/clothing/under/rank/medical/chief_medical_officer,
 /obj/item/door_remote/chief_medical_officer,
@@ -732,6 +731,7 @@
 /obj/item/healthanalyzer/advanced,
 /obj/item/storage/belt/medical/webbing,
 /obj/item/reagent_containers/food/drinks/bottle/holywater,
+/obj/item/hypospray/mkii/mkiii,
 /turf/open/floor/carpet/blue,
 /area/ship/crew)
 "iI" = (
@@ -789,6 +789,7 @@
 	},
 /obj/structure/bed/dogbed/ian,
 /mob/living/simple_animal/pet/cat/Runtime,
+/obj/structure/sign/flag/nanotrasen/directional/east,
 /turf/open/floor/wood,
 /area/ship/crew)
 "jK" = (
@@ -1651,6 +1652,10 @@
 /obj/effect/turf_decal/corner/opaque/deforestblue{
 	dir = 8
 	},
+/obj/structure/sign/poster/nanotrasen/deforest_hypospray{
+	pixel_x = -32;
+	pixel_y = 0
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/port)
 "ur" = (
@@ -2205,7 +2210,7 @@
 	},
 /obj/structure/bed,
 /obj/structure/curtain/bounty,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /turf/open/floor/wood,
 /area/ship/crew/cryo)
 "Bv" = (
@@ -3388,7 +3393,7 @@
 	},
 /obj/structure/bed,
 /obj/structure/curtain/bounty,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/machinery/airalarm/directional/south,
 /obj/machinery/light/directional/east,
 /turf/open/floor/wood,
@@ -3765,7 +3770,10 @@
 "VH" = (
 /obj/machinery/airalarm/directional/south,
 /obj/structure/window/reinforced/spawner/west,
-/obj/machinery/suit_storage_unit/cmo,
+/obj/machinery/suit_storage_unit/inherit,
+/obj/item/clothing/mask/breath/medical,
+/obj/item/mod/control/pre_equipped/rescue,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/carpet/blue,
 /area/ship/crew)
 "VL" = (
@@ -3835,7 +3843,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/port)
 "Wf" = (
-/obj/effect/mob_spawn/human/clown/corpse,
 /obj/effect/decal/cleanable/blood/gibs/old,
 /obj/effect/turf_decal/spline/fancy/opaque/deforestblue,
 /turf/open/floor/plasteel/white,

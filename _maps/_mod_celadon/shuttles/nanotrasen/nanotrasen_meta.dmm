@@ -258,10 +258,14 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "aK" = (
-/obj/machinery/computer/selling_pad_control{
+/obj/machinery/computer/arcade{
 	dir = 1
 	},
 /obj/effect/turf_decal/corner/opaque/nsorange/half,
+/obj/structure/sign/poster/nanotrasen/ns_logistics_ad{
+	pixel_x = -32;
+	pixel_y = 0
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo/office)
 "aL" = (
@@ -270,7 +274,7 @@
 /obj/effect/turf_decal/corner/opaque/ntblue/border{
 	dir = 4
 	},
-/obj/item/banner/cargo/mundane,
+/obj/item/banner/nanotrasen/mundane,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hallway/central)
 "aN" = (
@@ -417,9 +421,7 @@
 /obj/structure/filingcabinet/double/grey{
 	dir = 1
 	},
-/obj/item/documents/nanotrasen{
-	icon_state = "docs_blue"
-	},
+/obj/item/folder/documents/nanotrasen,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm/captain)
 "bt" = (
@@ -1290,12 +1292,12 @@
 	dir = 2;
 	color = "#332521"
 	},
-/obj/item/tank/jetpack,
-/obj/item/clothing/mask/gas/atmos/captain,
-/obj/item/clothing/suit/space/hardsuit/swat/captain,
 /obj/structure/window/reinforced/tinted/frosted{
 	dir = 1
 	},
+/obj/item/clothing/mask/gas/atmos/captain,
+/obj/item/mod/control/pre_equipped/magnate,
+/obj/item/tank/jetpack/oxygen/captain,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm/captain)
 "dR" = (
@@ -1532,6 +1534,7 @@
 	pixel_x = 11;
 	pixel_y = 1
 	},
+/obj/structure/sign/flag/nanotrasen/directional/north,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm/captain)
 "eV" = (
@@ -2485,7 +2488,7 @@
 /area/ship/cargo)
 "oj" = (
 /obj/effect/decal/cleanable/blood/old,
-/mob/living/simple_animal/hostile/cockroach,
+/mob/living/basic/cockroach,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
@@ -5128,7 +5131,6 @@
 /area/ship/hallway/central)
 "Rw" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/selling_pad,
 /obj/effect/turf_decal/box,
 /obj/effect/turf_decal/corner/opaque/nsorange/half,
 /turf/open/floor/plasteel/dark,
@@ -5848,9 +5850,7 @@
 /obj/effect/turf_decal/corner/opaque/ntblue/border{
 	dir = 4
 	},
-/obj/item/banner/command/mundane{
-	name = "nanotrasen banner"
-	},
+/obj/item/banner/nanotrasen/mundane,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hallway/central)
 "Xs" = (
@@ -6866,7 +6866,7 @@ Se
 Fh
 Fh
 dW
-jd
+ZZ
 ZZ
 YO
 Cd

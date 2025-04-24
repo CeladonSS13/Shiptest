@@ -1,0 +1,5 @@
+/obj/effect/meteor/carp/make_debris()
+	for(var/throws = dropamt, throws > 0, throws--)
+		var/mob/living/thing_to_spawn = pick(meteordrop)
+		thing_to_spawn = new thing_to_spawn(get_turf(src))
+		thing_to_spawn.add_and_start_deletion_timer(360, list_turfs = list(/turf/open/space))

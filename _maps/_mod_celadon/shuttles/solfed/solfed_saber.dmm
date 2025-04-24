@@ -75,8 +75,8 @@
 	pixel_y = 1
 	},
 /obj/machinery/button/door{
-	id = "asclepius_medbay_lockdown";
-	name = "Medical Lockdown";
+	id = "asclepius_armory_lockdown";
+	name = "Armory Lockdown";
 	pixel_x = 4;
 	pixel_y = 9
 	},
@@ -122,8 +122,7 @@
 	pixel_y = 7
 	},
 /obj/item/toy/plush/lizardplushie,
-/obj/effect/gibspawner/generic,
-/obj/item/clothing/head/solgov_surgery,
+/obj/item/clothing/head/solfed/surgical,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical/surgery)
 "bi" = (
@@ -464,10 +463,8 @@
 /obj/item/binoculars{
 	pixel_x = -5
 	},
-/obj/item/clothing/head/solfed/elysium/turban,
 /obj/item/clothing/gloves/combat,
 /obj/item/storage/belt/military/solfed/elysium,
-/obj/item/clothing/suit/armor/solfed/elysium/jacket,
 /obj/item/storage/backpack/messenger/sec,
 /obj/item/clothing/accessory/armband/deputy,
 /obj/item/clothing/shoes/combat,
@@ -587,7 +584,6 @@
 	color = "#c1b6a5"
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
-/obj/item/clothing/head/solfed/elysium/turban,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/railing/wood{
 	dir = 8
@@ -651,9 +647,14 @@
 /obj/structure/sign/poster/solfed/random{
 	pixel_x = 32
 	},
-/obj/item/clothing/head/helmet/solfedm11/elysium_wraps,
 /obj/item/clothing/suit/armor/vest,
 /obj/item/clothing/mask/balaclava/combat,
+/obj/item/storage/backpack/solfed,
+/obj/item/storage/backpack/satchel/solfed,
+/obj/item/clothing/under/solfed/camo/elysium,
+/obj/item/clothing/mask/gas/solfed/elysium,
+/obj/item/storage/belt/military/solfed/elysium,
+/obj/item/clothing/head/helmet/solfed/m11/elysium/wraps,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/security)
 "ex" = (
@@ -710,7 +711,7 @@
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 4;
-	id = "asclepius_medbay_lockdown";
+	id = "asclepius_armory_lockdown";
 	name = "Lockdown Shutters"
 	},
 /obj/effect/turf_decal/corner/opaque/solgovgold{
@@ -1634,7 +1635,7 @@
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 4;
-	id = "asclepius_medbay_lockdown";
+	id = "asclepius_armory_lockdown";
 	name = "Lockdown Shutters"
 	},
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -1841,7 +1842,10 @@
 /turf/open/floor/wood/walnut,
 /area/ship/security/prison)
 "ov" = (
-/obj/structure/rack,
+/obj/structure/rack{
+	pixel_x = 0;
+	pixel_y = 0
+	},
 /obj/effect/turf_decal/box/red,
 /obj/structure/sign/poster/official/help_others{
 	pixel_y = 32
@@ -1854,21 +1858,21 @@
 	dir = 2;
 	req_one_access_txt = "2"
 	},
-/obj/item/gun/ballistic/automatic/assault/cm82{
-	pixel_x = -11;
-	pixel_y = 9
-	},
-/obj/item/gun/ballistic/automatic/assault/cm82{
-	pixel_x = 4;
-	pixel_y = -6
-	},
-/obj/item/gun/ballistic/automatic/assault/cm82{
+/obj/item/gun/ballistic/automatic/assault/cm82/solfed{
 	pixel_x = -2;
+	pixel_y = -5
+	},
+/obj/item/gun/ballistic/automatic/assault/cm82/solfed{
+	pixel_x = -4;
 	pixel_y = -1
 	},
-/obj/item/gun/ballistic/automatic/assault/cm82{
+/obj/item/gun/ballistic/automatic/assault/cm82/solfed{
+	pixel_x = -5;
+	pixel_y = 3
+	},
+/obj/item/gun/ballistic/automatic/assault/cm82/solfed{
 	pixel_x = -7;
-	pixel_y = 5
+	pixel_y = 7
 	},
 /turf/open/floor/wood/ebony,
 /area/ship/security/armory)
@@ -1917,9 +1921,14 @@
 	name = "Haris locker";
 	req_access_txt = "2"
 	},
-/obj/item/clothing/head/helmet/solfedm11/elysium_wraps,
 /obj/item/clothing/suit/armor/vest,
 /obj/item/clothing/mask/balaclava/combat,
+/obj/item/storage/backpack/solfed,
+/obj/item/storage/backpack/satchel/solfed,
+/obj/item/clothing/under/solfed/camo/elysium,
+/obj/item/clothing/mask/gas/solfed/elysium,
+/obj/item/storage/belt/military/solfed/elysium,
+/obj/item/clothing/head/helmet/solfed/m11/elysium/wraps,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/security)
 "oQ" = (
@@ -2064,7 +2073,7 @@
 	pixel_y = 9
 	},
 /obj/item/storage/book/bible/koran{
-	name = "Терик-аль-Шаед";
+	name = "Тарик аль-Шаед";
 	pixel_x = 9;
 	pixel_y = 1
 	},
@@ -2077,13 +2086,6 @@
 	},
 /obj/machinery/camera/autoname{
 	dir = 1
-	},
-/obj/machinery/button/door{
-	dir = 8;
-	id = "asclepius_medbay_lockdown";
-	name = "Medical Lockdown";
-	pixel_x = 23;
-	pixel_y = -10
 	},
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 6
@@ -2209,15 +2211,15 @@
 /obj/item/paper_bin/bundlenatural{
 	pixel_x = 8
 	},
-/obj/item/pen/solgov{
-	pixel_x = 8;
-	pixel_y = -1
-	},
 /obj/item/flashlight/lamp{
 	pixel_x = -7;
 	pixel_y = 4
 	},
 /obj/effect/turf_decal/solgov/all/center_right,
+/obj/item/pen/solfed{
+	pixel_x = 8;
+	pixel_y = 0
+	},
 /turf/open/floor/wood/walnut,
 /area/ship/security/prison)
 "rE" = (
@@ -2251,12 +2253,6 @@
 /turf/open/floor/wood/yew,
 /area/ship/hallway/fore)
 "rU" = (
-/obj/structure/closet/wall{
-	icon_door = "orange_wall";
-	name = "Mining equipment";
-	pixel_y = 28;
-	dir = 1
-	},
 /obj/structure/table/optable,
 /obj/effect/turf_decal/trimline/opaque/blue/warning{
 	dir = 1
@@ -2268,6 +2264,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/wall/white/med{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = 29
+	},
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical/surgery)
 "sd" = (
@@ -2281,7 +2282,7 @@
 /obj/item/reagent_containers/food/snacks/honeybar,
 /obj/item/reagent_containers/food/snacks/honeybar,
 /obj/item/reagent_containers/food/snacks/honeybar,
-/obj/item/reagent_containers/food/snacks/deadmouse,
+/obj/item/food/deadmouse,
 /obj/item/reagent_containers/food/snacks/grilledcheese,
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -2400,19 +2401,17 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/item/clothing/mask/gas/clip{
-	name = "Elysium Brigade gas mask";
-	desc = "A close-fitting gas mask that can be connected to an air supply."
-	},
-/obj/item/clothing/mask/gas/clip{
-	name = "Elysium Brigade gas mask";
-	desc = "A close-fitting gas mask that can be connected to an air supply."
-	},
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = -12;
 	pixel_y = -17
 	},
+/obj/item/clothing/mask/gas/solfed/elysium,
+/obj/item/clothing/mask/gas/solfed/elysium,
+/obj/item/clothing/head/helmet/solfed/m11/elysium/wraps,
+/obj/item/clothing/head/helmet/solfed/m11/elysium/wraps,
+/obj/item/clothing/head/helmet/solfed/m11/elysium,
+/obj/item/clothing/head/helmet/solfed/m11/elysium,
 /turf/open/floor/wood/ebony,
 /area/ship/security/armory)
 "tk" = (
@@ -2606,13 +2605,6 @@
 /turf/open/floor/plasteel,
 /area/ship/crew)
 "vh" = (
-/obj/machinery/button/door{
-	dir = 4;
-	id = "asclepius_medbay_lockdown";
-	name = "Medical Lockdown";
-	pixel_x = -21;
-	pixel_y = -10
-	},
 /obj/structure/sign/warning/securearea{
 	pixel_x = -32
 	},
@@ -2625,7 +2617,15 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light_switch{
 	dir = 4;
-	pixel_x = -20
+	pixel_x = -20;
+	pixel_y = -8
+	},
+/obj/machinery/button/door{
+	id = "asclepius_armory_lockdown";
+	name = "Armory Lockdown";
+	pixel_x = -21;
+	pixel_y = 1;
+	dir = 4
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/security)
@@ -2746,11 +2746,10 @@
 /obj/item/melee/baton,
 /obj/item/reagent_containers/spray/pepper,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/item/clothing/mask/gas/clip{
-	name = "Elysium Brigade gas mask";
-	desc = "A close-fitting gas mask that can be connected to an air supply."
-	},
 /obj/item/melee/classic_baton/telescopic,
+/obj/item/clothing/mask/gas/solfed/elysium,
+/obj/item/clothing/head/solfed/elysium,
+/obj/item/clothing/under/solfed/formal/elysium,
 /turf/open/floor/carpet/green,
 /area/ship/security/range)
 "we" = (
@@ -2922,6 +2921,9 @@
 /obj/machinery/suit_storage_unit/inherit/industrial{
 	req_one_access_txt = "2";
 	name = "Haris suit storage unit"
+	},
+/obj/structure/sign/poster/solfed/random{
+	pixel_x = -32
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/storage/eva)
@@ -3174,10 +3176,15 @@
 	name = "Haris locker";
 	req_access_txt = "2"
 	},
-/obj/item/clothing/head/helmet/solfedm11/elysium_wraps,
 /obj/item/clothing/suit/armor/vest,
 /obj/machinery/light/directional/north,
 /obj/item/clothing/mask/balaclava/combat,
+/obj/item/storage/backpack/solfed,
+/obj/item/storage/backpack/satchel/solfed,
+/obj/item/clothing/under/solfed/camo/elysium,
+/obj/item/clothing/mask/gas/solfed/elysium,
+/obj/item/storage/belt/military/solfed/elysium,
+/obj/item/clothing/head/helmet/solfed/m11/elysium/wraps,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/security)
 "yH" = (
@@ -3413,13 +3420,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
-/obj/item/melee/skimitar{
-	pixel_y = -1;
-	pixel_x = 7
-	},
-/obj/item/clothing/suit/armor/solfed/elysium/jacket,
 /obj/item/storage/belt/military/solfed/elysium,
-/obj/item/clothing/head/solfed/elysium/beret,
 /obj/item/clothing/head/shemag/green,
 /obj/item/melee/classic_baton/telescopic,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3433,13 +3434,12 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
 	},
-/obj/item/clothing/mask/gas/clip{
-	name = "Elysium Brigade gas mask";
-	desc = "A close-fitting gas mask that can be connected to an air supply."
-	},
 /obj/item/clothing/suit/armor/vest,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/mask/balaclava/combat,
+/obj/item/storage/belt/skimitar/full,
+/obj/item/clothing/suit/armor/solfed/formal/elysium,
+/obj/item/clothing/under/solfed/formal/elysium,
 /turf/open/floor/carpet/green,
 /area/ship/crew/solgov)
 "Bb" = (
@@ -3571,9 +3571,14 @@
 /obj/item/assembly/flash/handheld{
 	pixel_x = -9
 	},
-/obj/item/clothing/head/helmet/solfedm11/elysium_wraps,
 /obj/item/clothing/suit/armor/vest,
 /obj/item/clothing/mask/balaclava/combat,
+/obj/item/storage/backpack/solfed,
+/obj/item/storage/backpack/satchel/solfed,
+/obj/item/clothing/under/solfed/camo/elysium,
+/obj/item/clothing/mask/gas/solfed/elysium,
+/obj/item/storage/belt/military/solfed/elysium,
+/obj/item/clothing/head/helmet/solfed/m11/elysium/wraps,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/security)
 "BX" = (
@@ -3815,34 +3820,7 @@
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
 	},
-/obj/structure/sign/poster/solfed/elysium{
-	pixel_x = -32
-	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/clothing/mask/gas/clip{
-	name = "Elysium Brigade gas mask";
-	desc = "A close-fitting gas mask that can be connected to an air supply.";
-	pixel_x = -8;
-	pixel_y = -5
-	},
-/obj/item/clothing/mask/gas/clip{
-	name = "Elysium Brigade gas mask";
-	desc = "A close-fitting gas mask that can be connected to an air supply.";
-	pixel_y = -5;
-	pixel_x = -3
-	},
-/obj/item/clothing/mask/gas/clip{
-	name = "Elysium Brigade gas mask";
-	desc = "A close-fitting gas mask that can be connected to an air supply.";
-	pixel_y = -5;
-	pixel_x = 2
-	},
-/obj/item/clothing/mask/gas/clip{
-	name = "Elysium Brigade gas mask";
-	desc = "A close-fitting gas mask that can be connected to an air supply.";
-	pixel_y = -5;
-	pixel_x = 7
-	},
 /obj/item/extinguisher{
 	pixel_x = -10;
 	pixel_y = 18
@@ -3850,6 +3828,22 @@
 /obj/item/extinguisher{
 	pixel_x = 2;
 	pixel_y = 18
+	},
+/obj/item/clothing/mask/gas/solfed/elysium{
+	pixel_x = 6;
+	pixel_y = -5
+	},
+/obj/item/clothing/mask/gas/solfed/elysium{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/clothing/mask/gas/solfed/elysium{
+	pixel_x = -4;
+	pixel_y = -5
+	},
+/obj/item/clothing/mask/gas/solfed/elysium{
+	pixel_x = -9;
+	pixel_y = -5
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/storage/eva)
@@ -3867,9 +3861,6 @@
 "DP" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/crew)
-"DT" = (
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/hallway/central)
 "DV" = (
 /obj/machinery/airalarm/directional/east,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -3950,20 +3941,21 @@
 /obj/structure/rack,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/turf_decal/box/red,
-/obj/item/clothing/head/helmet/solfedm11/elysium_helm{
-	pixel_x = -9;
-	pixel_y = 7
+/obj/item/clothing/head/helmet/solfed/m11/elysium{
+	pixel_x = 9;
+	pixel_y = -5
 	},
-/obj/item/clothing/head/helmet/solfedm11/elysium_helm{
-	pixel_x = -4;
-	pixel_y = 5
+/obj/item/clothing/head/helmet/solfed/m11/elysium{
+	pixel_y = 9;
+	pixel_x = 9
 	},
-/obj/item/clothing/head/helmet/solfedm11/elysium_helm{
-	pixel_x = 2;
-	pixel_y = 2
+/obj/item/clothing/head/helmet/solfed/m11/elysium{
+	pixel_y = 9;
+	pixel_x = -10
 	},
-/obj/item/clothing/head/helmet/solfedm11/elysium_helm{
-	pixel_x = 8
+/obj/item/clothing/head/helmet/solfed/m11/elysium{
+	pixel_y = -5;
+	pixel_x = -10
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/security)
@@ -4036,7 +4028,7 @@
 /area/ship/bridge)
 "Fb" = (
 /obj/machinery/door/airlock/medical{
-	name = "s";
+	name = "medbay";
 	req_one_access_txt = "5"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -4958,9 +4950,9 @@
 	pixel_x = 4;
 	pixel_y = 7
 	},
-/obj/item/pen/solgov{
-	pixel_x = -7;
-	pixel_y = 5
+/obj/item/pen/solfed{
+	pixel_x = -8;
+	pixel_y = 6
 	},
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
@@ -5973,19 +5965,15 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/item/clothing/under/solfed/elysium,
-/obj/item/clothing/under/solfed/elysium,
-/obj/item/clothing/under/solfed/elysium,
-/obj/item/clothing/under/solfed/elysium,
-/obj/item/clothing/under/solfed/elysium,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/shoes/combat,
-/obj/item/clothing/head/solfed/elysium/turban,
-/obj/item/clothing/head/solfed/elysium/turban,
-/obj/item/clothing/head/solfed/elysium/turban,
+/obj/item/clothing/head/solfed/cap,
+/obj/item/clothing/head/solfed/cap,
+/obj/item/clothing/under/solfed/assistant,
+/obj/item/clothing/under/solfed/assistant,
 /turf/open/floor/carpet/green,
 /area/ship/crew)
 "Vp" = (
@@ -6022,6 +6010,18 @@
 	},
 /obj/effect/turf_decal/corner/opaque/solgovgold{
 	dir = 9
+	},
+/obj/machinery/button/door{
+	id = "asclepius_armory_lockdown";
+	name = "Armory Lockdown";
+	pixel_x = -20;
+	pixel_y = 0;
+	dir = 4
+	},
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -19;
+	pixel_y = -8
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/security)
@@ -6075,7 +6075,7 @@
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 4;
-	id = "asclepius_medbay_lockdown";
+	id = "asclepius_armory_lockdown";
 	name = "Lockdown Shutters"
 	},
 /obj/machinery/door/airlock/security{
@@ -6161,7 +6161,7 @@
 /obj/structure/closet/secure_closet{
 	icon_state = "med";
 	name = "Shafi locker";
-	req_access_txt = "69"
+	req_access_txt = "5"
 	},
 /obj/item/clothing/gloves/color/latex/nitrile,
 /obj/effect/turf_decal/trimline/opaque/blue/warning{
@@ -6414,8 +6414,8 @@
 /area/ship/hallway/fore)
 "Ze" = (
 /obj/effect/turf_decal/solgov/all/center_left,
-/obj/structure/sign/poster/solfed/elysium{
-	pixel_x = -30
+/obj/structure/sign/poster/solfed/random{
+	pixel_x = -32
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/security/prison)
@@ -6425,11 +6425,11 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/sign/poster/solfed/elysium{
-	pixel_x = -32
-	},
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 9
+	},
+/obj/structure/sign/poster/solfed/random{
+	pixel_x = -32
 	},
 /turf/open/floor/wood/yew,
 /area/ship/hallway/central)
@@ -6761,7 +6761,7 @@ dv
 lz
 qr
 to
-DT
+to
 hp
 nD
 gp

@@ -4,7 +4,7 @@
 	id = "a556surp"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = 35000, /datum/material/titanium = 3000)
-	build_path = /obj/item/ammo_box/a556_box/surplus
+	build_path = /obj/item/storage/box/ammo/a556_box/surplus
 	category = list("Ammo")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 
@@ -14,6 +14,6 @@
 	id = "a308_brak"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = 45000, /datum/material/titanium = 4000)
-	build_path = /obj/item/ammo_box/a308/a308_brak
+	build_path = /obj/item/storage/box/ammo/a308/a308_brak
 	category = list("Ammo")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY

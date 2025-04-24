@@ -38,9 +38,9 @@
 
 /obj/item/kinetic_crusher/examine(mob/living/user)
 	. = ..()
-	. += "<span class='notice'>Induce magnetism in an enemy by striking them with a magnetospheric wave, then hit them in melee to force a waveform collapse for <b>[force + detonation_damage]</b> damage.</span>"
-	. += "<span class='notice'>Does <b>[force + detonation_damage + backstab_bonus]</b> damage if the target is backstabbed, instead of <b>[force + detonation_damage]</b>.</span>"
-	// [CELADON-ADD] - CRUSHER_TROPHEY - Возвращаем легенду
+	. += span_notice("Induce magnetism in an enemy by striking them with a magnetospheric wave, then hit them in melee to force a waveform collapse for <b>[force + detonation_damage]</b> damage.")
+	. += span_notice("Does <b>[force + detonation_damage + backstab_bonus]</b> damage if the target is backstabbed, instead of <b>[force + detonation_damage]</b>.")
+	// [CELADON-ADD] - RETURN_CONTENT_CRUSHER_TROPHY - Возвращаем легенду
 	for(var/t in trophies)
 		var/obj/item/crusher_trophy/T = t
 		. += "<span class='notice'>It has \a [T] attached, which causes [T.effect_desc()].</span>"
@@ -48,13 +48,13 @@
 
 /obj/item/kinetic_crusher/attack(mob/living/target, mob/living/carbon/user)
 	if(!HAS_TRAIT(src, TRAIT_WIELDED))
-		to_chat(user, "<span class='warning'>[src] is too heavy to use with one hand! You fumble and drop everything.</span>")
+		to_chat(user, span_warning("[src] is too heavy to use with one hand! You fumble and drop everything."))
 		user.drop_all_held_items()
 		return
 	var/datum/status_effect/crusher_damage/C = target.has_status_effect(STATUS_EFFECT_CRUSHERDAMAGETRACKING)
 	var/target_health = target.health
 	..()
-	// [CELADON-ADD] - CRUSHER_TROPHEY - Возвращаем легенду
+	// [CELADON-ADD] - RETURN_CONTENT_CRUSHER_TROPHY - Возвращаем легенду
 	for(var/t in trophies)
 		if(!QDELETED(target))
 			var/obj/item/crusher_trophy/T = t
@@ -65,6 +65,7 @@
 
 /obj/item/kinetic_crusher/afterattack(atom/target, mob/living/user, proximity_flag, clickparams)
 	. = ..()
+	var/modifiers = params2list(clickparams)
 	if(!HAS_TRAIT(src, TRAIT_WIELDED))
 		return
 	if(!proximity_flag && charged)//Mark a target, or mine a tile.
@@ -72,12 +73,12 @@
 		if(!isturf(proj_turf))
 			return
 		var/obj/projectile/destabilizer/D = new /obj/projectile/destabilizer(proj_turf)
-		// [CELADON-ADD] - CRUSHER_TROPHEY - Возвращаем легенду
+		// [CELADON-ADD] - RETURN_CONTENT_CRUSHER_TROPHY - Возвращаем легенду
 		for(var/t in trophies)
 			var/obj/item/crusher_trophy/T = t
 			T.on_projectile_fire(D, user)
 		// [/CELADON-ADD]
-		D.preparePixelProjectile(target, user, clickparams)
+		D.preparePixelProjectile(target, user, modifiers)
 		D.firer = user
 		D.hammer_synced = src
 		playsound(user, 'sound/weapons/plasma_cutter.ogg', 100, TRUE)
@@ -93,7 +94,7 @@
 			return
 		var/datum/status_effect/crusher_damage/C = L.has_status_effect(STATUS_EFFECT_CRUSHERDAMAGETRACKING)
 		var/target_health = L.health
-		// [CELADON-ADD] - CRUSHER_TROPHEY - Возвращаем легенду
+		// [CELADON-ADD] - RETURN_CONTENT_CRUSHER_TROPHY - Возвращаем легенду
 		for(var/t in trophies)
 			var/obj/item/crusher_trophy/T = t
 			T.on_mark_detonation(target, user)
@@ -158,7 +159,7 @@
 /obj/projectile/destabilizer/on_hit(atom/target, blocked = FALSE)
 	if(isliving(target))
 		var/mob/living/L = target
-		// [CELADON-ADD] - CRUSHER_TROPHEY - Возвращаем легенду
+		// [CELADON-ADD] - RETURN_CONTENT_CRUSHER_TROPHY - Возвращаем легенду
 		var/had_effect = (L.has_status_effect(STATUS_EFFECT_CRUSHERMARK)) //used as a boolean
 		var/datum/status_effect/crusher_mark/CM = L.apply_status_effect(STATUS_EFFECT_CRUSHERMARK, hammer_synced)
 		if(hammer_synced)
@@ -166,7 +167,7 @@
 				var/obj/item/crusher_trophy/T = t
 				T.on_mark_application(target, CM, had_effect)
 		// [/CELADON-ADD]
-		// [CELADON-REMOVE] - CRUSHER_TROPHEY - Удалено в связи возвращения легенды
+		// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Удалено в связи возвращения легенды
 		// L.apply_status_effect(STATUS_EFFECT_CRUSHERMARK, hammer_synced)
 		// [/CELADON-REMOVE]
 	var/target_turf = get_turf(target)
@@ -192,7 +193,7 @@
 
 /obj/item/kinetic_crusher/old/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>This hunk of junk's so heavy that you can barely swing it! Though, that blade looks pretty sharp...</span>"
+	. += span_notice("This hunk of junk's so heavy that you can barely swing it! Though, that blade looks pretty sharp...")
 
 /obj/item/kinetic_crusher/old/melee_attack_chain(mob/user, atom/target, params)
 	..()

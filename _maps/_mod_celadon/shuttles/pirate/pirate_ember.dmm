@@ -1674,9 +1674,6 @@
 	pixel_x = -3;
 	pixel_y = -3
 	},
-/obj/item/hypospray/mkii/CMO/combat{
-	pixel_x = -10
-	},
 /obj/structure/extinguisher_cabinet/directional/north,
 /obj/item/radio/intercom/directional/west,
 /turf/open/floor/plasteel/patterned/cargo_one,
@@ -2034,7 +2031,7 @@
 /area/ship/security/armory)
 "kf" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/random/salvage_manipulator,
+/obj/effect/spawner/random/salvage/part/manipulator,
 /turf/open/floor/plating/airless,
 /area/ship/maintenance/port)
 "kk" = (
@@ -3144,7 +3141,7 @@
 "pn" = (
 /obj/structure/bed,
 /obj/structure/curtain/cloth/grey,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
@@ -3281,6 +3278,10 @@
 /obj/structure/flora/rock/pile,
 /obj/structure/flora/junglebush/c,
 /mob/living/simple_animal/chicken,
+/obj/item/storage/box/donkpockets/donkpocketspicy{
+	desc = "Produced personally be CHUVAK TM. Ultra-spicy";
+	name = "CHUVAK TM Donk-pockets"
+	},
 /turf/open/floor/grass,
 /area/ship/maintenance/central)
 "pU" = (
@@ -3993,7 +3994,7 @@
 /area/ship/crew/office)
 "tQ" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/cloth/grey,
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -4506,10 +4507,6 @@
 	dir = 10
 	},
 /obj/structure/table/wood,
-/obj/item/reagent_containers/syringe/contraband/bath_salts{
-	pixel_y = 6;
-	pixel_x = -4
-	},
 /obj/item/reagent_containers/syringe/contraband/space_drugs{
 	pixel_x = -5;
 	pixel_y = 3
@@ -4796,7 +4793,6 @@
 	name = "master at arm's locker";
 	req_access_txt = "3"
 	},
-/obj/item/gun/ballistic/automatic/pistol/deagle/gold,
 /obj/item/ammo_box/magazine/m9mm_rattlesnake,
 /obj/item/clothing/mask/gas/atmos{
 	name = "tactical gas mask";
@@ -5143,7 +5139,7 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/medical)
 "zn" = (
-/obj/effect/spawner/random/salvage_scanning,
+/obj/effect/spawner/random/salvage/part/scanning,
 /turf/open/floor/plating/airless{
 	icon_state = "panelscorched"
 	},
@@ -6982,7 +6978,7 @@
 "Hi" = (
 /obj/structure/bed,
 /obj/structure/curtain/cloth/grey,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
@@ -7023,7 +7019,7 @@
 /area/ship/maintenance/port)
 "HD" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/cloth/grey,
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
@@ -8387,7 +8383,7 @@
 /area/ship/medical)
 "Mx" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/cloth/grey,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/item/radio/intercom/directional/north,
@@ -9366,7 +9362,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/office)
 "RY" = (
-/obj/effect/spawner/random/salvage_capacitor,
+/obj/effect/spawner/random/salvage/part/capacitor,
 /obj/item/stack/cable_coil/cut/yellow,
 /obj/item/stack/rods{
 	pixel_x = 7
@@ -10222,7 +10218,7 @@
 /area/ship/hallway/fore)
 "Wb" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
@@ -10628,7 +10624,7 @@
 	},
 /area/ship/maintenance/port)
 "Yj" = (
-/obj/effect/spawner/random/salvage_manipulator,
+/obj/effect/spawner/random/salvage/part/manipulator,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/cable{
 	icon_state = "1-8"

@@ -232,7 +232,7 @@
 /datum/outfit/debug/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	H.faction |= list(FACTION_PLAYER_SYNDICATE,
 					FACTION_PLAYER_NANOTRASEN,
-					FACTION_PLAYER_SOLGOV,
+					FACTION_PLAYER_SOLFED,
 					FACTION_PLAYER_NANOTRASEN,
 					FACTION_PLAYER_INTEQ,
 					FACTION_ELYSIUM,

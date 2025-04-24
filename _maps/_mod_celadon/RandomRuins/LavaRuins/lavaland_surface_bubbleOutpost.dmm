@@ -399,7 +399,7 @@
 /obj/machinery/conveyor{
 	dir = 7
 	},
-/obj/item/stack/ore/iron,
+/obj/item/stack/ore/hematite,
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland/factory{
 	mood_bonus = -1;
@@ -1774,10 +1774,10 @@
 	pixel_y = 7
 	},
 /obj/item/storage/cans/sixbeer,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /obj/structure/closet/secure_closet/freezer,
 /obj/structure/closet/secure_closet/freezer,
 /turf/open/floor/wood/ebony,

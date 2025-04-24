@@ -1,16 +1,18 @@
 {
-	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "TearDrop-class Scout Vessel",
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "TearDrop-class Battle Vessel",
 	"map_short_name": "TearDrop",
-	"description": " 'TearDrop', разведывательный космический корабль под управлением NanoTrasen. Данное судно было получено в подарок от SF, как доказательство союза между NanoTrasen и SolarFederation. На нём был переделан медблок, генератор энергии, который стал питаться от алмазов, а также была сделана небольшая зона отдыха экипажа.",
+	"description": " 'TearDrop',  разведывательный космический корабль под управлением NanoTrasen. Корабль с системой выкачки атмосферы из внешних источников в инженерном отсеке, небольшим мед. отсеком, небольшая жилая зона и арсенал. Назначение корабля - надзор за другими кораблями NT и докладыывание информации о ситуации в секторах. ",
 	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_teardrop.dmm",
 	"enabled": true,
 	"limit": 1,
-	"prefix": "NTSPSV",
+	"sensor_range": 4,
+	"prefix": "NTASV",
 	"faction": "/datum/faction/nt",
 	"tags": [
-		"Intelligence",
-		"Scout"
+		"Combat",
+		"Scout",
+		"Intelligence"
 	],
 	"namelists": [
 		"NANOTRASEN",
@@ -18,17 +20,21 @@
 	],
 	"job_slots": {
 		"Intelligence officer": {
-			"outfit": "/datum/outfit/job/nanotrasen/captain/lp",
+			"outfit": "/datum/outfit/job/nanotrasen/captain",
 			"officer": true,
 			"slots": 1
-
+		},
+		"Field Commander": {
+			"outfit": "/datum/outfit/job/nanotrasen/hos",
+			"officer": true,
+			"slots": 1
 		},
 		"Military technician": {
-			"outfit": "/datum/outfit/job/nanotrasen/engineer/lp",
+			"outfit": "/datum/outfit/job/nanotrasen/engineer",
 			"slots": 2
 		},
-		"Scout": {
-			"outfit": "/datum/outfit/job/nanotrasen/security/lp",
+		"Soldier": {
+			"outfit": "/datum/outfit/job/nanotrasen/security",
 			"slots": 4
 		},
 		"Military surgeon": {

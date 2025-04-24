@@ -94,17 +94,17 @@
 	taste_sensitivity = 10 // combined nose + tongue, extra sensitive
 	modifies_speech = TRUE
 	var/static/list/languages_possible_riol = typecacheof(list(
-		/datum/language/common,
-		/datum/language/draconic,
+		/datum/language/galactic_common,
+		/datum/language/kalixcian_common,
 		/datum/language/codespeak,
 		/datum/language/monkey,
-		/datum/language/narsie,
-		/datum/language/beachbum,
+		// /datum/language/narsie,
+		// /datum/language/beachbum,
 		/datum/language/aphasia,
-		/datum/language/piratespeak,
+		// /datum/language/piratespeak,
 		/datum/language/moffic,
-		/datum/language/sylvan,
-		/datum/language/shadowtongue,
+		// /datum/language/sylvan,
+		// /datum/language/shadowtongue,
 		/datum/language/canilunzt
 	))
 
@@ -116,12 +116,35 @@
 	var/static/regex/riol_RR = new("R+", "g")
 	var/static/regex/riol_ru_rr = new("р+", "g")
 	var/static/regex/riol_ru_RR = new("Р+", "g")
+
+	var/static/regex/riol_ur = new("u+", "g")
+	var/static/regex/riol_UR = new("U+", "g")
+	var/static/regex/riol_ru_ur = new("у+", "g")
+	var/static/regex/riol_ru_UR = new("У+", "g")
+
+	var/static/regex/riol_if = new("i+", "g")
+	var/static/regex/riol_IF = new("I+", "g")
+	var/static/regex/riol_ru_if = new("и+", "g")
+	var/static/regex/riol_ru_IF = new("И+", "g")
+
 	var/message = speech_args[SPEECH_MESSAGE]
 	if(message[1] != "*")
-		message = riol_rr.Replace(message, pick("rrr", "rr"))
-		message = riol_RR.Replace(message, pick("Rrr", "Rr"))
-		message = riol_ru_rr.Replace_char(message, pick("ррр", "рр"))
-		message = riol_ru_RR.Replace_char(message, pick("Ррр", "Рр"))
+		message = riol_rr.Replace(message, pick("r", "rr", "rrr"))
+		message = riol_RR.Replace(message, pick("R", "Rr", "Rrr"))
+		message = riol_ru_rr.Replace_char(message, pick("р", "рр", "ррр"))
+		message = riol_ru_RR.Replace_char(message, pick("Р", "Рр", "Ррр"))
+
+		if(prob(20))
+			message = riol_ur.Replace(message, pick("u", "ur", "uru"))
+			message = riol_UR.Replace(message, pick("U", "Ur", "Uru"))
+			message = riol_ru_ur.Replace_char(message, pick("у", "ур", "уру"))
+			message = riol_ru_UR.Replace_char(message, pick("У", "Ур", "Уру"))
+
+		if(prob(20))
+			message = riol_if.Replace(message, pick("i", "if", "iyf"))
+			message = riol_IF.Replace(message, pick("I", "If", "Iyf"))
+			message = riol_ru_if.Replace_char(message, pick("и", "иф", "ийф"))
+			message = riol_ru_IF.Replace_char(message, pick("И", "Иф", "Ийф"))
 	speech_args[SPEECH_MESSAGE] = message
 
 /obj/item/organ/tongue/riol/Initialize(mapload)

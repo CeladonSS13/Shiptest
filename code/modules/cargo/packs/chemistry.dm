@@ -1,3 +1,6 @@
+/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
+	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
+
 /datum/supply_pack/chemistry
 	group = "Chemistry"
 	crate_type = /obj/structure/closet/crate/chem
@@ -178,3 +181,26 @@
 	cost = 750
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/sulfur)
 	crate_name = "bulk sulfur crate"
+
+/datum/supply_pack/chemistry/eznutriment
+	name = "Bulk E-Z-Nutriment Crate"
+	desc = "Contains a jug filled with 150u of E-Z-Nutriment."
+	cost = 500
+	contains = list(/obj/item/reagent_containers/glass/chem_jug/eznutriment)
+	crate_name = "bulk E-Z-Nutriment crate"
+
+/datum/supply_pack/chemistry/left4zednutriment
+	name = "Bulk Left 4 Zed Crate"
+	desc = "Contains a jug filled with 150u of Left 4 Zed."
+	cost = 500
+	contains = list(/obj/item/reagent_containers/glass/chem_jug/left4zednutriment)
+	crate_name = "bulk Left 4 Zed crate"
+
+/datum/supply_pack/chemistry/robustharvestnutriment
+	name = "Bulk Robust Harvest Crate"
+	desc = "Contains a jug filled with 150u of Robust Harvest."
+	cost = 500
+	contains = list(/obj/item/reagent_containers/glass/chem_jug/robustharvestnutriment)
+	crate_name = "bulk Robust Harvest crate"
+
+[/CELADON-DELETE] */

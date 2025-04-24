@@ -73,8 +73,7 @@
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/captain //WS Edit - Alt Uniforms
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/caphat
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic = 1,
-							/obj/item/spacecash/bundle/c500 = 1)
+	backpack_contents = list(/obj/item/spacecash/bundle/c500 = 1)
 
 	backpack = /obj/item/storage/backpack/captain
 	satchel = /obj/item/storage/backpack/satchel/cap
@@ -99,7 +98,6 @@
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 
 	backpack_contents = list(/obj/item/storage/box/ids = 1,
-							/obj/item/melee/classic_baton/telescopic=1,
 							/obj/item/modular_computer/tablet/preset/advanced = 1,
 							/obj/item/spacecash/bundle/c500 = 1)
 
@@ -108,7 +106,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/captain
 	courierbag = /obj/item/storage/backpack/messenger/com
 
-	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/head_of_personnel)
+	chameleon_extras = list(/obj/item/gun/energy/e_gun)
 
 // Head of Security
 
@@ -244,14 +242,11 @@
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/civilian/chaplain
 	backpack_contents = list(
-		/obj/item/stamp/chap = 1,
 		/obj/item/camera/spooky = 1
 		)
 
 	backpack = /obj/item/storage/backpack/cultpack
 	satchel = /obj/item/storage/backpack/cultpack
-
-	chameleon_extras = /obj/item/stamp/chap
 
 // Janitor
 

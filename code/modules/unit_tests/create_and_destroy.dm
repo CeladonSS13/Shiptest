@@ -104,12 +104,14 @@
 	//Needs an elevator
 	ignore += typesof(/obj/machinery/status_display/elevator)
 	ignore += typesof(/obj/machinery/elevator_floor_button)
+	ignore += typesof(/obj/effect/greeble_spawner)
 
 	var/list/cached_contents = spawn_at.contents.Copy()
 	var/original_turf_type = spawn_at.type
 	var/original_baseturfs = islist(spawn_at.baseturfs) ? spawn_at.baseturfs.Copy() : spawn_at.baseturfs
 	var/original_baseturf_count = length(original_baseturfs)
 
+	GLOB.running_create_and_destroy = TRUE
 	for(var/type_path in typesof(/atom/movable, /turf) - ignore) //No areas please
 		if(ispath(type_path, /turf))
 			spawn_at.ChangeTurf(type_path)
@@ -212,6 +214,7 @@
 		if(fails & BAD_INIT_SLEPT)
 			TEST_FAIL("[path] slept during Initialize()")
 
+	GLOB.running_create_and_destroy = FALSE
 	SSticker.delay_end = FALSE
 	//This shouldn't be needed, but let's be polite
 	SSgarbage.collection_timeout[GC_QUEUE_CHECK] = GC_CHECK_QUEUE

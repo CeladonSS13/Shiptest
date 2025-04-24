@@ -40,7 +40,7 @@
 "fD" = (
 /obj/structure/bed,
 /obj/effect/decal/cleanable/blood/bubblegum,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /turf/open/floor/wood,
 /area/ruin/powered)
 "fQ" = (
@@ -64,6 +64,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet,
 /area/ruin/powered)
+"gK" = (
+/obj/effect/landmark/mission_poi/main/drill{
+	mission_index = 2
+	},
+/obj/structure/vein/ice/classfour,
+/turf/open/floor/plating/asteroid/snow/icemoon,
+/area/overmap_encounter/planetoid/cave/explored)
 "he" = (
 /obj/structure/chair/sofa/brown/left/directional/south,
 /turf/closed/mineral/random/snow,
@@ -138,6 +145,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/mission_poi/main,
 /turf/open/floor/wood,
 /area/ruin/powered)
 "mI" = (
@@ -459,7 +467,7 @@
 /area/overmap_encounter/planetoid/cave/explored)
 "LZ" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /turf/open/floor/wood,
 /area/ruin/powered)
 "Nq" = (
@@ -482,7 +490,9 @@
 /area/ruin/powered)
 "PQ" = (
 /obj/effect/decal/cleanable/blood/splatter,
-/mob/living/simple_animal/hostile/human/frontier/ranged/trooper,
+/mob/living/simple_animal/hostile/human/frontier/ranged/trooper{
+	weapon_drop_chance = 100
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/powered)
@@ -554,7 +564,7 @@
 "WH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /turf/open/floor/wood,
 /area/ruin/powered)
 "Ze" = (
@@ -565,6 +575,13 @@
 	dir = 4
 	},
 /turf/open/floor/plating/ice/icemoon,
+/area/overmap_encounter/planetoid/cave/explored)
+"Zz" = (
+/obj/effect/landmark/mission_poi/guard{
+	type_to_spawn = /mob/living/simple_animal/hostile/human/frontier/ranged/trooper/internals;
+	mission_index = 2
+	},
+/turf/open/floor/plating/asteroid/snow/icemoon,
 /area/overmap_encounter/planetoid/cave/explored)
 "ZG" = (
 /obj/effect/decal/cleanable/dirt,
@@ -981,7 +998,7 @@ Og
 Og
 Og
 zT
-Og
+Zz
 Og
 zT
 Og
@@ -1070,9 +1087,9 @@ Vn
 Og
 zT
 Og
-Og
-Og
 Bq
+Og
+gK
 Og
 Og
 Og

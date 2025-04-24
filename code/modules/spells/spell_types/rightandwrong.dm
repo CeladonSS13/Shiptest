@@ -11,7 +11,6 @@ GLOBAL_LIST_INIT(summoned_guns, list(
 	/obj/item/gun/energy/laser,
 	/obj/item/gun/ballistic/revolver/viper,
 	/obj/item/gun/ballistic/revolver/detective,
-	/obj/item/gun/ballistic/automatic/pistol/deagle/camo,
 	/obj/item/gun/ballistic/automatic/gyropistol,
 	/obj/item/gun/energy/pulse,
 	/obj/item/gun/ballistic/automatic/pistol/ringneck,
@@ -70,11 +69,11 @@ GLOBAL_VAR_INIT(summon_guns_triggered, FALSE)
 
 	var/in_hand = H.put_in_hands(G) // not always successful
 
-	to_chat(H, "<span class='warning'>\A [G] appears [in_hand ? "in your hand" : "at your feet"]!</span>")
+	to_chat(H, span_warning("\A [G] appears [in_hand ? "in your hand" : "at your feet"]!"))
 
 /proc/rightandwrong(mob/user, survivor_probability)
 	if(user) //in this case someone is a badmin
-		to_chat(user, "<span class='warning'>You summoned guns!</span>")
+		to_chat(user, span_warning("You summoned guns!"))
 		message_admins("[ADMIN_LOOKUPFLW(user)] summoned guns!")
 		log_game("[key_name(user)] summoned guns!")
 

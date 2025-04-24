@@ -11,7 +11,7 @@
 	result = /obj/item/clothing/neck/fangnecklace
 	time = 20
 	reqs = list(/obj/item/stack/sheet/sinew = 2,
-				// [CELADON-EDIT] - CRUSHER_TROPHEY
+				// [CELADON-EDIT] - RETURN_CONTENT_CRUSHER_TROPHY
 				// /obj/item/mob_trophy/fang = 1)	// CELADON-EDIT - ORIGINAL
 				/obj/item/crusher_trophy/fang = 1)
 				// [/CELADON-EDIT]
@@ -22,7 +22,7 @@
 	result = /obj/item/clothing/accessory/skullcodpiece
 	time = 20
 	reqs = list(/obj/item/stack/sheet/bone = 2,
-				// [CELADON-EDIT] - CRUSHER_TROPHEY
+				// [CELADON-EDIT] - RETURN_CONTENT_CRUSHER_TROPHY
 				// /obj/item/mob_trophy/legion_skull = 1,	// CELADON-EDIT - ORIGINAL
 				/obj/item/crusher_trophy/legion_skull = 1,
 				// [/CELADON-EDIT]

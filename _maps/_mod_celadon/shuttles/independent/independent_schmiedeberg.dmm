@@ -15,6 +15,21 @@
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 4
 	},
+/obj/item/reagent_containers/glass/chem_jug/sulfur,
+/obj/item/reagent_containers/glass/chem_jug/radium,
+/obj/item/reagent_containers/glass/chem_jug/potassium,
+/obj/item/reagent_containers/glass/chem_jug/oxygen,
+/obj/item/reagent_containers/glass/chem_jug/nitrogen,
+/obj/item/reagent_containers/glass/chem_jug/iodine,
+/obj/item/reagent_containers/glass/chem_jug/hydrogen,
+/obj/item/reagent_containers/glass/chem_jug/hexacrete,
+/obj/item/reagent_containers/glass/chem_jug/copper,
+/obj/item/reagent_containers/glass/chem_jug/chlorine,
+/obj/item/reagent_containers/glass/chem_jug/carbon,
+/obj/item/reagent_containers/glass/chem_jug/bromine,
+/obj/item/reagent_containers/glass/chem_jug/aluminium,
+/obj/item/reagent_containers/glass/chem_jug,
+/obj/structure/closet/crate,
 /turf/open/floor/carpet/nanoweave/beige,
 /area/ship/medical)
 "az" = (
@@ -461,7 +476,7 @@
 /area/ship/engineering)
 "fM" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
 	},
@@ -2983,7 +2998,7 @@
 	pixel_y = -32
 	},
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/bounty,
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
@@ -3516,7 +3531,6 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 6
 	},
-/obj/item/storage/box/hypospray/CMO,
 /obj/item/clothing/suit/longcoat/chemist,
 /obj/item/clothing/head/beret/chem,
 /obj/item/clothing/neck/cloak/cmo,

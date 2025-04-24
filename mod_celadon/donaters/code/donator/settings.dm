@@ -6,7 +6,7 @@
 	if(!donator_key || donator_allow_other_usage || check_donator(equipper) || check_donator(target))
 		return ..()
 
-	to_chat(target, "<span class='warning'>A strange force prevents you from equipping [src]...</span>")
+	to_chat(target, span_warning("A strange force prevents you from equipping [src]..."))
 	return FALSE
 
 /obj/item/examine(mob/user)
@@ -14,10 +14,10 @@
 	if(!donator_key) // Github I demand you run the checks on this PR
 		return .
 	if(check_donator(user))
-		. += "<span class='notice'><ul>This is one of your donator items, to <b>[(donator_allow_other_usage ? "allow" : "disallow")]</b> sharing <b>CtrlShiftClick</b> it.</ul></span>"
+		. += span_notice("<ul>This is one of your donator items, to <b>[(donator_allow_other_usage ? "allow" : "disallow")]</b> sharing <b>CtrlShiftClick</b> it.</ul>")
 	else
 		if(!donator_allow_other_usage)
-			. += "<span class='warning'>A strange force prevents you from making eye contact with it.</span>"
+			. += span_warning("A strange force prevents you from making eye contact with it.")
 
 /obj/item/proc/check_donator(mob/user)
 	return ckey(user.key) == ckey(donator_key)
@@ -27,5 +27,5 @@
 		return ..()
 
 	donator_allow_other_usage = !donator_allow_other_usage
-	to_chat(user, "<span class='notice'>You <b>[(donator_allow_other_usage ? "allow" : "disallow")]</b> sharing of [src].</span>")
+	to_chat(user, span_notice("You <b>[(donator_allow_other_usage ? "allow" : "disallow")]</b> sharing of [src]."))
 	return TRUE

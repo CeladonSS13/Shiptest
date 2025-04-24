@@ -1,50 +1,47 @@
+// MARK: reagent
+
 /datum/export/large/reagent_dispenser
 	cost = 100 // +0-400 depending on amount of reagents left
-	contents_cost = 400
-
-// /datum/export/large/reagent_dispenser/get_cost(obj/O)
-// 	var/obj/structure/reagent_dispensers/D = O
-// 	var/ratio = D.reagents.total_volume / D.reagents.maximum_volume
-
-// 	return ..() + round(contents_cost * ratio)
 
 /datum/export/large/reagent_dispenser/water
+	cost = 170
 	unit_name = "watertank"
 	export_types = list(/obj/structure/reagent_dispensers/watertank)
-	contents_cost = 200
 
 /datum/export/large/reagent_dispenser/fuel
+	cost = 350
 	unit_name = "fueltank"
 	export_types = list(/obj/structure/reagent_dispensers/fueltank)
 
 /datum/export/large/reagent_dispenser/beer
+	cost = 500
 	unit_name = "beer keg"
-	contents_cost = 700
 	export_types = list(/obj/structure/reagent_dispensers/beerkeg)
 
+// MARK: large
 
 /datum/export/large/pipedispenser
-	cost = 500
+	cost = 250
 	unit_name = "pipe dispenser"
 	export_types = list(/obj/machinery/pipedispenser)
 
 /datum/export/large/emitter
-	cost = 550
+	cost = 275
 	unit_name = "emitter"
 	export_types = list(/obj/machinery/power/emitter)
 
 /datum/export/large/field_generator
-	cost = 550
+	cost = 275
 	unit_name = "field generator"
 	export_types = list(/obj/machinery/field/generator)
 
 /datum/export/large/collector
-	cost = 400
+	cost = 200
 	unit_name = "radiation collector"
 	export_types = list(/obj/machinery/power/rad_collector)
 
 /datum/export/large/tesla_coil
-	cost = 450
+	cost = 225
 	unit_name = "tesla coil"
 	export_types = list(/obj/machinery/power/tesla_coil)
 
@@ -59,7 +56,7 @@
 	export_types = list(/obj/machinery/particle_accelerator/control_box)
 
 /datum/export/large/supermatter
-	cost = 8000
+	cost = 4000
 	unit_name = "supermatter shard"
 	export_types = list(/obj/machinery/power/supermatter_crystal/shard)
 
@@ -69,12 +66,12 @@
 	export_types = list(/obj/machinery/power/grounding_rod)
 
 /datum/export/large/tesla_gen
-	cost = 4000
+	cost = 2000
 	unit_name = "energy ball generator"
 	export_types = list(/obj/machinery/the_singularitygen/tesla)
 
 /datum/export/large/singulo_gen
-	cost = 4000
+	cost = 2000
 	unit_name = "gravitational singularity generator"
 	export_types = list(/obj/machinery/the_singularitygen)
 	include_subtypes = FALSE

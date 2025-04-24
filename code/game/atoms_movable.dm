@@ -259,8 +259,8 @@
 		var/mob/M = AM
 		log_combat(src, M, "grabbed", addition="passive grab")
 		if(!supress_message)
-			M.visible_message("<span class='warning'>[src] grabs [M] passively.</span>", \
-				"<span class='danger'>[src] grabs you passively.</span>")
+			M.visible_message(span_warning("[src] grabs [M] passively."), \
+				span_danger("[src] grabs you passively."))
 	return TRUE
 
 /atom/movable/proc/stop_pulling()
@@ -568,6 +568,9 @@
 	SHOULD_CALL_PARENT(TRUE)
 	SEND_SIGNAL(src, COMSIG_ATOM_VIRTUAL_Z_CHANGE, new_virtual_z, previous_virtual_z)
 
+	for(var/atom/movable/thing as anything in contents)
+		thing.on_virtual_z_change(new_virtual_z, previous_virtual_z)
+
 /mob/living/on_virtual_z_change(new_virtual_z, previous_virtual_z)
 	. = ..()
 	if(previous_virtual_z)
@@ -848,7 +851,7 @@
 	if(has_gravity(src))
 		return 1
 
-	if(pulledby)
+	if(pulledby && (pulledby != pulling))
 		return 1
 
 	if(throwing)
@@ -1001,12 +1004,12 @@
 /atom/movable/proc/force_push(atom/movable/AM, force = move_force, direction, silent = FALSE)
 	. = AM.force_pushed(src, force, direction)
 	if(!silent && .)
-		visible_message("<span class='warning'>[src] forcefully pushes against [AM]!</span>", "<span class='warning'>You forcefully push against [AM]!</span>")
+		visible_message(span_warning("[src] forcefully pushes against [AM]!"), span_warning("You forcefully push against [AM]!"))
 
 /atom/movable/proc/move_crush(atom/movable/AM, force = move_force, direction, silent = FALSE)
 	. = AM.move_crushed(src, force, direction)
 	if(!silent && .)
-		visible_message("<span class='danger'>[src] crushes past [AM]!</span>", "<span class='danger'>You crush [AM]!</span>")
+		visible_message(span_danger("[src] crushes past [AM]!"), span_danger("You crush [AM]!"))
 
 /atom/movable/proc/move_crushed(atom/movable/pusher, force = MOVE_FORCE_DEFAULT, direction)
 	return FALSE

@@ -127,15 +127,15 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/clothing/under/utility,
 /obj/item/clothing/under/utility,
+/obj/item/clothing/under/utility,
+/obj/item/clothing/suit/apparel/white,
+/obj/item/clothing/suit/apparel/green,
+/obj/item/clothing/suit/apparel/black,
 /obj/item/clothing/head/bandana/elysium/green,
 /obj/item/clothing/head/bandana/elysium/black,
 /obj/item/clothing/head/shemag/black,
 /obj/item/clothing/head/shemag/white,
 /obj/item/clothing/head/shemag/green,
-/obj/item/clothing/suit/apparel/black,
-/obj/item/clothing/suit/apparel/black,
-/obj/item/clothing/head/helmet/m10_elysium,
-/obj/item/clothing/head/helmet/m10_elysium,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
 "dT" = (
@@ -761,7 +761,7 @@
 /obj/effect/turf_decal/trimline/transparent/green/filled/line{
 	dir = 1
 	},
-/obj/item/banner/elysium/mundane,
+/obj/item/banner/separatist/mundane,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "rg" = (
@@ -990,8 +990,8 @@
 /obj/machinery/airalarm/directional/south,
 /obj/effect/decal/cleanable/oil,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/banner/elysium/mundane,
 /obj/effect/decal/cleanable/plasma,
+/obj/item/banner/separatist/mundane,
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "uW" = (
@@ -1172,17 +1172,22 @@
 	pixel_x = 1;
 	pixel_y = 3
 	},
-/obj/item/stack/medical/bruise_pack/herb{
-	pixel_x = -5;
-	name = "herbal pack";
-	amount = 10
-	},
-/obj/item/stack/medical/bruise_pack/herb{
-	pixel_x = -5;
-	name = "herbal pack";
-	amount = 10
-	},
 /obj/item/storage/firstaid/regular,
+/obj/item/stack/medical/bruise_pack/herb{
+	pixel_x = -5;
+	name = "herbal pack";
+	amount = 8
+	},
+/obj/item/stack/medical/bruise_pack/herb{
+	pixel_x = -5;
+	name = "herbal pack";
+	amount = 8
+	},
+/obj/item/stack/medical/bruise_pack/herb{
+	pixel_x = -5;
+	name = "herbal pack";
+	amount = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "Bx" = (
@@ -1263,7 +1268,7 @@
 /obj/machinery/light/directional/east,
 /obj/machinery/airalarm/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/banner/elysium/mundane,
+/obj/item/banner/separatist/mundane,
 /turf/open/floor/plasteel/dark,
 /area/ship/storage/eva)
 "Cn" = (
@@ -1734,6 +1739,9 @@
 /obj/machinery/cryopod{
 	dir = 4
 	},
+/obj/structure/sign/flag/separatist/directional/east{
+	pixel_x = -32
+	},
 /turf/open/floor/carpet/green,
 /area/ship/crew/dorm)
 "NZ" = (
@@ -1769,10 +1777,23 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/wall/directional/west,
-/obj/item/storage/toolbox/emergency/old{
-	pixel_x = 2
-	},
 /obj/structure/rack,
+/obj/item/clothing/suit/armor/vest/elysium{
+	pixel_y = 2;
+	pixel_x = 4
+	},
+/obj/item/clothing/suit/armor/vest/elysium{
+	pixel_y = 2;
+	pixel_x = 4
+	},
+/obj/item/clothing/suit/armor/vest/elysium{
+	pixel_y = 2;
+	pixel_x = 4
+	},
+/obj/item/clothing/head/helmet/m10_elysium,
+/obj/item/clothing/head/helmet/m10_elysium,
+/obj/item/clothing/head/helmet/m10_elysium,
+/obj/item/clothing/head/helmet/m10_elysium,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "OJ" = (
@@ -1803,7 +1824,9 @@
 /turf/open/floor/carpet/green,
 /area/ship/crew/dorm)
 "Pb" = (
-/obj/effect/spawner/random/vending/snack,
+/obj/machinery/vending/snack{
+	all_items_free = 1
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "Pv" = (
@@ -2051,6 +2074,8 @@
 /obj/item/storage/box/ammo/c46x30mm/ap,
 /obj/item/storage/box/ammo/c46x30mm/ap,
 /obj/item/storage/box/ammo/c46x30mm/ap,
+/obj/item/storage/box/ammo/c46x30mm/ap,
+/obj/item/storage/box/ammo/a762_40,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "Us" = (
@@ -2075,7 +2100,7 @@
 "UC" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/cockroach,
+/mob/living/basic/cockroach,
 /turf/open/floor/plasteel/dark,
 /area/ship/storage/eva)
 "UN" = (
@@ -2239,7 +2264,7 @@
 /turf/open/floor/plating/rust,
 /area/ship/hallway/central)
 "Zz" = (
-/obj/item/banner/elysium/mundane,
+/obj/item/banner/separatist/mundane,
 /turf/open/floor/plating,
 /area/ship/hallway/central)
 "ZZ" = (

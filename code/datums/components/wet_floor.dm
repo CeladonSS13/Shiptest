@@ -110,7 +110,7 @@
 	for(var/i in time_left_list)
 		. = max(., time_left_list[i])
 
-/datum/component/wet_floor/process()
+/datum/component/wet_floor/process(seconds_per_tick)
 	//[CELADON-ADD] - CELADON_FIXES - вобщем эта залупа рантаймит потому-что почему-то компонент нахуй попадает на /turf/closed который НЕ ДОЛЖЕН ТАМ БЫТЬ
 	if(!isopenturf(parent))
 		STOP_PROCESSING(SSwet_floors, src)
