@@ -203,8 +203,8 @@ var/list/alldirs = list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAS
 	new /obj/effect/decal/cleanable/ash(get_turf(src))
 	qdel(src)
 
-/mob/proc/restrained()
-	return
+// /mob/proc/restrained()
+// 	return
 
 /obj/item/storage
 	var/storage_slots = null //The number of storage slots in this container.  If null, it uses the volume-based storage instead.

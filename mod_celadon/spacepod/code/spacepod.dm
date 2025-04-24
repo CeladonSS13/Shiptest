@@ -11,6 +11,8 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 	desc = "A frame for a spacepod."
 	icon = 'mod_celadon/_storge_icons/icons/spacepods/construction_2x2.dmi'
 	icon_state = "pod_1"
+	/// What subsystem this spacepodfastprocess will use, which is generally SSmachines or SSfastprocess. By default all machinery use SSmachines. This fires a machine's process() roughly every 2 seconds.
+	var/subsystem_type = /datum/controller/subsystem/processing/spacepodfastprocess
 	density = 1
 	opacity = FALSE
 	dir = NORTH // always points north because why not
@@ -78,10 +80,17 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 	var/bounce_factor = 0.2 // how much of our velocity to keep on collision
 	var/lateral_bounce_factor = 0.95 // mostly there to slow you down when you drive (pilot?) down a 2x2 corridor
 
+	/// Viable flags to go here are START_PROCESSING_ON_INIT, or START_PROCESSING_MANUALLY. See code\__DEFINES\machines.dm for more information on these flags.
+	var/processing_flags = START_PROCESSING_ON_INIT
+
 /obj/spacepod/Initialize(mapload)
 	. = ..()
 	GLOB.spacepods_list += src
-	START_PROCESSING(SSfastprocess, src)
+	// START_PROCESSING(spacepodfastprocess, src)
+
+	if(processing_flags & START_PROCESSING_ON_INIT)
+		begin_processing()
+
 	cabin_air = new
 	cabin_air.set_temperature(T20C)
 	cabin_air.set_volume(200)
@@ -92,12 +101,23 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 
 /obj/spacepod/Destroy()
 	GLOB.spacepods_list -= src
+	end_processing()
 	QDEL_NULL(pilot)
 	QDEL_LIST(passengers)
 	QDEL_LIST(equipment)
 	QDEL_NULL(cabin_air)
 	QDEL_NULL(cell)
 	return ..()
+
+/// Helper proc for telling a spacepod to start processing with the subsystem type that is located in its `subsystem_type` var.
+/obj/spacepod/proc/begin_processing()
+	var/datum/controller/subsystem/processing/subsystem = locate(subsystem_type) in Master.subsystems
+	START_PROCESSING(subsystem, src)
+
+/// Helper proc for telling a spacepod to stop processing with the subsystem type that is located in its `subsystem_type` var.
+/obj/spacepod/proc/end_processing()
+	var/datum/controller/subsystem/processing/subsystem = locate(subsystem_type) in Master.subsystems
+	STOP_PROCESSING(subsystem, src)
 
 /obj/spacepod/attackby(obj/item/W, mob/living/user)
 	if(user.a_intent == INTENT_HARM)
