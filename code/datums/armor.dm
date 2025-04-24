@@ -2,17 +2,17 @@
 /// All armors, preferable in the order as seen above
 #define ARMOR_LIST_ALL(...) list(MELEE, BULLET, LASER, ENERGY, BOMB, BIO, RAD, FIRE, ACID, MAGIC, WOUND)
 
-#define ARMOR_ALL "all_damage_types"
+// #define ARMOR_ALL "all_damage_types"
 
-#define MELEE 	"melee"
-#define BULLET 	"bullet"
-#define LASER 	"laser"
-#define ENERGY 	"energy"
-#define BOMB 	"bomb"
-#define BIO 	"bio"
+// #define MELEE 	"melee"
+// #define BULLET 	"bullet"
+// #define LASER 	"laser"
+// #define ENERGY 	"energy"
+// #define BOMB 	"bomb"
+// #define BIO 	"bio"
 #define RAD 	"rad"
-#define FIRE 	"fire"
-#define ACID 	"acid"
+// #define FIRE 	"fire"
+// #define ACID 	"acid"
 #define MAGIC 	"magic"
 #define WOUND 	"wound"
 // [/CELADON-ADD]

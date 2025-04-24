@@ -1,5 +1,5 @@
 /datum/species
-	var/scream_verb = "Кричит"
+	var/scream_verb = "кричит"
 
 	var/list/autohiss_basic_map = null
 	var/list/autohiss_extra_map = null

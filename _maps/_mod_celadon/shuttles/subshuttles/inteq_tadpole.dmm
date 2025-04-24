@@ -1,0 +1,632 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-6"
+	},
+/obj/structure/cable{
+	icon_state = "2-4";
+	tag = null
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/outline/yellow,
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"d" = (
+/obj/structure/cable{
+	icon_state = "5-8"
+	},
+/obj/machinery/button/door{
+	id = "Caliban_subshuttle_port";
+	name = "Port Control";
+	pixel_x = 42;
+	pixel_y = 9;
+	dir = 8
+	},
+/obj/machinery/button/door{
+	id = "Caliban_subshuttle_starboard";
+	name = "Starboard Control";
+	pixel_x = 42;
+	pixel_y = -2;
+	dir = 8
+	},
+/obj/machinery/button/shieldwallgen{
+	dir = 8;
+	id = "Caliban_subshuttle_starboard_holo";
+	pixel_x = 27;
+	pixel_y = -3;
+	name = "Starboard Holo Switch"
+	},
+/obj/machinery/button/shieldwallgen{
+	dir = 8;
+	id = "Caliban_subshuttle_port_holo";
+	pixel_x = 27;
+	pixel_y = 11;
+	name = "Port Holo switch"
+	},
+/obj/machinery/holopad/emergency/command,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ship/bridge)
+"e" = (
+/obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/power/shieldwallgen/atmos{
+	anchored = 1;
+	dir = 8;
+	id = "Caliban_subshuttle_port_holo";
+	locked = 1
+	},
+/obj/machinery/door/poddoor{
+	id = "Caliban_subshuttle_port"
+	},
+/obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/sign/plaques{
+	desc = "A holographic sign of STAND CLEAR.but doing so will destroy it.";
+	name = "Holographic STAND CLEAR";
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "stand_clear";
+	color = "#FF0000";
+	pixel_y = 32;
+	dir = 1;
+	layer = 2.031
+	},
+/obj/structure/sign/plaques{
+	desc = "A holographic sign of STAND CLEAR.but doing so will destroy it.";
+	name = "Holographic trim line";
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "trimline_warn";
+	color = "#FF0000";
+	pixel_y = 35;
+	layer = 2.031;
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"f" = (
+/obj/structure/cable{
+	icon_state = "0-10"
+	},
+/obj/structure/chair/comfy/shuttle,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/light_switch{
+	pixel_x = -12;
+	pixel_y = 23
+	},
+/obj/effect/turf_decal/industrial/outline/yellow,
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"h" = (
+/obj/machinery/porta_turret/ship/inteq/heavy{
+	dir = 5
+	},
+/obj/structure/sign/plaques{
+	desc = "A holographic sign of STAND CLEAR.but doing so will destroy it.";
+	name = "Holographic trim line";
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "trimline_warn";
+	color = "#FF0000";
+	pixel_y = 10;
+	layer = 2.031;
+	dir = 5;
+	pixel_x = 10
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"i" = (
+/obj/structure/sign/plaques{
+	desc = "A holographic sign of STAND CLEAR.but doing so will destroy it.";
+	name = "Holographic trim line";
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "trimline_warn";
+	color = "#FF0000";
+	pixel_y = 34;
+	layer = 2.031;
+	dir = 9
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"j" = (
+/obj/structure/table/reinforced,
+/obj/item/paper/fluff{
+	default_raw_text = "Artificer team: The subshuttle turrets target computers count everything as enemy except you as we do not know who your enemy will be.";
+	color = "red"
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ship/bridge)
+"k" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/opaque/yellow/warning,
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"l" = (
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "Caliban_subshuttle_window"
+	},
+/obj/structure/grille,
+/obj/structure/window/plasma/reinforced/plastitanium,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"m" = (
+/obj/machinery/porta_turret/ship/inteq/heavy{
+	dir = 9
+	},
+/obj/structure/sign/plaques{
+	desc = "A holographic sign of STAND CLEAR.but doing so will destroy it.";
+	name = "Holographic trim line";
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "trimline_warn";
+	color = "#FF0000";
+	pixel_y = 10;
+	layer = 2.031;
+	dir = 9;
+	pixel_x = -10
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"p" = (
+/obj/machinery/porta_turret/ship/inteq/heavy{
+	dir = 6
+	},
+/obj/structure/sign/plaques{
+	desc = "A holographic sign of STAND CLEAR.but doing so will destroy it.";
+	name = "Holographic trim line";
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "trimline_warn";
+	color = "#FF0000";
+	pixel_y = -10;
+	layer = 2.031;
+	dir = 6;
+	pixel_x = 10
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"q" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/components/binary/pump/layer2{
+	dir = 4;
+	name = "Air canister pump"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-9"
+	},
+/obj/effect/turf_decal/trimline/opaque/yellow/warning,
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"r" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2{
+	dir = 4
+	},
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
+/obj/machinery/firealarm/directional/south,
+/obj/effect/turf_decal/trimline/opaque/yellow/corner,
+/obj/machinery/button/door{
+	id = "Caliban_subshuttle_engines";
+	name = "Engine Shutters Control";
+	pixel_x = -13;
+	pixel_y = -20;
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"s" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/machinery/stasis/survival_pod,
+/obj/machinery/light/directional/north,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"t" = (
+/obj/effect/turf_decal/trimline/opaque/yellow/warning{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"u" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4;
+	name = "Helm"
+	},
+/obj/item/radio/intercom/wideband/directional/south,
+/obj/machinery/turretid/lethal{
+	pixel_y = -28
+	},
+/obj/machinery/button/door{
+	id = "Caliban_subshuttle_window";
+	name = "Window Shutters Control";
+	pixel_x = 20;
+	pixel_y = -27;
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/opaque/yellow/corner{
+	dir = 8
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ship/bridge)
+"v" = (
+/obj/machinery/computer/helm{
+	dir = 8
+	},
+/obj/machinery/light/directional/south,
+/obj/item/paper/fluff{
+	default_raw_text = "Artificer team: The subshuttle is low on power after its retrofitting and SMES has lower maximal capacity. Be cautious.";
+	color = "orange"
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ship/bridge)
+"w" = (
+/obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/shieldwallgen/atmos{
+	anchored = 1;
+	dir = 4;
+	id = "Caliban_subshuttle_port_holo";
+	locked = 1
+	},
+/obj/machinery/door/poddoor{
+	id = "Caliban_subshuttle_port"
+	},
+/obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/sign/plaques{
+	desc = "A holographic sign of STAND CLEAR.but doing so will destroy it.";
+	name = "Holographic STAND CLEAR";
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "stand_clear";
+	color = "#FF0000";
+	pixel_y = 32;
+	dir = 1;
+	layer = 2.031
+	},
+/obj/docking_port/mobile{
+	dir = 2;
+	port_direction = 8;
+	preferred_direction = 4
+	},
+/obj/structure/sign/plaques{
+	desc = "A holographic sign of STAND CLEAR.but doing so will destroy it.";
+	name = "Holographic trim line";
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "trimline_warn";
+	color = "#FF0000";
+	pixel_y = 35;
+	layer = 2.031;
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"z" = (
+/obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/power/shieldwallgen/atmos{
+	anchored = 1;
+	dir = 8;
+	id = "Caliban_subshuttle_starboard_holo";
+	locked = 1
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "Caliban_subshuttle_starboard"
+	},
+/obj/structure/holosign/barrier/atmos,
+/obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/sign/plaques{
+	desc = "A holographic sign of STAND CLEAR.but doing so will destroy it.";
+	name = "Holographic STAND CLEAR";
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "stand_clear";
+	color = "#FF0000";
+	pixel_y = -32;
+	layer = 2.031
+	},
+/obj/structure/sign/plaques{
+	desc = "A holographic sign of STAND CLEAR.but doing so will destroy it.";
+	name = "Holographic trim line";
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "trimline_warn";
+	color = "#FF0000";
+	pixel_y = -35;
+	layer = 2.031
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"C" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"D" = (
+/obj/structure/sign/plaques{
+	desc = "A holographic sign of STAND CLEAR.but doing so will destroy it.";
+	name = "Holographic trim line";
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "trimline_warn";
+	color = "#FF0000";
+	pixel_y = -35;
+	layer = 2.031;
+	dir = 10
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"F" = (
+/obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/power/shieldwallgen/atmos{
+	anchored = 1;
+	dir = 4;
+	id = "Caliban_subshuttle_starboard_holo";
+	locked = 1
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "Caliban_subshuttle_starboard"
+	},
+/obj/structure/holosign/barrier/atmos,
+/obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/sign/plaques{
+	desc = "A holographic sign of STAND CLEAR.but doing so will destroy it.";
+	name = "Holographic STAND CLEAR";
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "stand_clear";
+	color = "#FF0000";
+	pixel_y = -32;
+	layer = 2.031
+	},
+/obj/structure/sign/plaques{
+	desc = "A holographic sign of STAND CLEAR.but doing so will destroy it.";
+	name = "Holographic trim line";
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "trimline_warn";
+	color = "#FF0000";
+	pixel_y = -35;
+	layer = 2.031
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"G" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
+/obj/structure/window/plasma/reinforced/spawner{
+	dir = 8
+	},
+/obj/machinery/door/window/eastleft{
+	name = "Engine Access"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "Caliban_subshuttle_engines";
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"H" = (
+/obj/machinery/porta_turret/ship/inteq/heavy{
+	dir = 10
+	},
+/obj/structure/sign/plaques{
+	desc = "A holographic sign of STAND CLEAR.but doing so will destroy it.";
+	name = "Holographic trim line";
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "trimline_warn";
+	color = "#FF0000";
+	pixel_y = -10;
+	layer = 2.031;
+	dir = 10;
+	pixel_x = -10
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"J" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/trimline/opaque/yellow/warning{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"L" = (
+/obj/machinery/power/smes/engineering{
+	capacity = 2.5e+006;
+	charge = 0.5e+006
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/window/plasma/reinforced/spawner{
+	dir = 8
+	},
+/obj/machinery/door/window/eastleft{
+	name = "Engine Access"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"M" = (
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/window/plasma/reinforced/spawner{
+	dir = 8
+	},
+/obj/machinery/door/window/eastright{
+	name = "Engine Access"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "Caliban_subshuttle_engines";
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"N" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"Q" = (
+/obj/structure/sign/plaques{
+	desc = "A holographic sign of STAND CLEAR.but doing so will destroy it.";
+	name = "Holographic trim line";
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "trimline_warn";
+	color = "#FF0000";
+	pixel_y = -35;
+	layer = 2.031;
+	dir = 6
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"S" = (
+/obj/structure/sign/plaques{
+	desc = "A holographic sign of STAND CLEAR.but doing so will destroy it.";
+	name = "Holographic trim line";
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "trimline_warn";
+	color = "#FF0000";
+	pixel_y = 34;
+	layer = 2.031;
+	dir = 5
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"T" = (
+/obj/machinery/porta_turret/ship/inteq/heavy{
+	dir = 4
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"W" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/shuttle/engine/electric/bad{
+	thrust = 2
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"X" = (
+/obj/structure/chair/comfy/shuttle,
+/obj/structure/closet/firecloset/wall/directional/north,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/effect/turf_decal/trimline/opaque/yellow/corner{
+	dir = 1;
+	layer = 2.040
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"Z" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+
+(1,1,1) = {"
+m
+W
+T
+W
+H
+"}
+(2,1,1) = {"
+N
+G
+L
+M
+N
+"}
+(3,1,1) = {"
+i
+s
+a
+r
+D
+"}
+(4,1,1) = {"
+w
+t
+C
+q
+F
+"}
+(5,1,1) = {"
+e
+J
+Z
+k
+z
+"}
+(6,1,1) = {"
+S
+X
+d
+u
+Q
+"}
+(7,1,1) = {"
+N
+f
+j
+v
+N
+"}
+(8,1,1) = {"
+h
+l
+l
+l
+p
+"}

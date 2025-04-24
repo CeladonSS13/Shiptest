@@ -130,6 +130,7 @@
 #define EMOTE_SPECIES_THREAT 		"Угрожать"
 #define EMOTE_SPECIES_PURR 			"Мурчать"
 #define EMOTE_SPECIES_PURRL 		"Мурчать дольше"
+#define EMOTE_SPECIES_MROWSS 		"Мурчать коротко"
 #define EMOTE_SPECIES_WAVES_K 		"Взмахнуть усиками"
 #define EMOTE_SPECIES_WIGGLES 		"Шевелить усиками"
 #define EMOTE_SPECIES_WHIPS 		"Хлестать хвостом"
@@ -159,6 +160,7 @@
 #define EMOTE_SPECIES_SURRENDER		"Сдаться"
 #define EMOTE_SPECIES_WSMILE		"Слегка улыбнуться"
 #define EMOTE_SPECIES_CLACK_SPIDER	"Щёлкнуть жвалами"
+#define EMOTE_SPECIES_SNAP			"Щёлкнуть пальцами"
 
 
 /// Carbon Emotes

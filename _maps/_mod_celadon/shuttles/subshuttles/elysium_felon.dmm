@@ -4,7 +4,9 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/turf/open/floor/mineral/plastitanium,
+/turf/open/floor/mineral/plastitanium{
+	icon_state = "plastitanium_dam1"
+	},
 /area/ship/bridge)
 "c" = (
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -69,7 +71,10 @@
 /area/ship/bridge)
 "k" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/turf/closed/wall/r_wall/rust,
+/area/ship/bridge)
+"l" = (
+/turf/closed/wall/r_wall/rust,
 /area/ship/bridge)
 "o" = (
 /obj/structure/cable{
@@ -99,7 +104,9 @@
 	pixel_y = -16
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
-/turf/open/floor/mineral/plastitanium,
+/turf/open/floor/mineral/plastitanium{
+	icon_state = "plastitanium_dam4"
+	},
 /area/ship/bridge)
 "w" = (
 /obj/structure/cable{
@@ -123,7 +130,9 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/mineral/plastitanium,
+/turf/open/floor/mineral/plastitanium{
+	icon_state = "plastitanium_dam5"
+	},
 /area/ship/bridge)
 "y" = (
 /obj/machinery/turretid{
@@ -134,7 +143,13 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/open/floor/mineral/plastitanium,
+/obj/structure/fluff/broken_flooring{
+	icon_state = "plating";
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium{
+	icon_state = "plastitanium_dam5"
+	},
 /area/ship/bridge)
 "z" = (
 /obj/machinery/power/smes/shuttle/precharged,
@@ -170,7 +185,9 @@
 	pixel_y = 38
 	},
 /obj/machinery/light/floor,
-/turf/open/floor/mineral/plastitanium,
+/turf/open/floor/mineral/plastitanium{
+	icon_state = "plastitanium_dam1"
+	},
 /area/ship/bridge)
 "I" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -201,9 +218,6 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "O" = (
-/obj/machinery/power/terminal{
-	dir = 8
-	},
 /obj/structure/cable,
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -215,7 +229,12 @@
 	dir = 1;
 	name = "door shutters"
 	},
-/turf/open/floor/mineral/plastitanium,
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium{
+	icon_state = "plastitanium_dam4"
+	},
 /area/ship/bridge)
 "Q" = (
 /obj/item/radio/intercom/wideband/directional{
@@ -226,6 +245,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/trash/can,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "R" = (
@@ -244,7 +264,9 @@
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/mask/breath,
-/turf/open/floor/mineral/plastitanium,
+/turf/open/floor/mineral/plastitanium{
+	icon_state = "plastitanium_dam2"
+	},
 /area/ship/bridge)
 "T" = (
 /obj/machinery/power/terminal{
@@ -263,6 +285,7 @@
 	id = "felon_thr"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/trash/energybar,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "U" = (
@@ -294,28 +317,28 @@ o
 R
 "}
 (2,1,1) = {"
-I
+l
 z
 i
 w
 I
 "}
 (3,1,1) = {"
-I
+l
 T
 x
 O
 I
 "}
 (4,1,1) = {"
-I
+l
 U
 F
 h
 I
 "}
 (5,1,1) = {"
-I
+l
 H
 b
 u
@@ -326,19 +349,19 @@ I
 S
 Q
 y
-I
+l
 "}
 (7,1,1) = {"
 I
 I
 L
-I
-I
+l
+l
 "}
 (8,1,1) = {"
 R
 I
 W
-I
+l
 R
 "}

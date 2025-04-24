@@ -3890,9 +3890,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/retaliate/clown/longface{
-	dir = 8
-	},
+/mob/living/simple_animal/hostile/megafauna/claw,
 /turf/open/floor/engine,
 /area/ruin/space/has_grav/singularitylab/lab)
 "pp" = (
@@ -9194,7 +9192,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-10"
 	},
-/obj/machinery/power/solar_control{
+/obj/machinery/computer/solar_control{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -12468,6 +12466,10 @@
 "Vn" = (
 /obj/machinery/the_singularitygen{
 	anchored = 1
+	},
+/obj/effect/landmark/mission_poi/main{
+	already_spawned = 1;
+	type_to_spawn = /obj/machinery/the_singularitygen
 	},
 /turf/open/floor/plating,
 /area/space/nearstation)

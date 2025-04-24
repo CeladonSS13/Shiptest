@@ -1,11 +1,12 @@
 {
-	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
 	"map_name": "Jupiter-class Stormrider",
 	"map_short_name": "Jupiter",
 	"description": "Штурмовое судно класса 'Jupiter' (Noderider) - это специализированное судно, созданное Советом Кремниевого Возвышения, который обычно используется для длительных миссий без сторонней поддержки. Данное судно оснащено ядром ИИ и уникальной системой зарядки от электроштормов. Известно, что некоторые экземпляры попадали в руки пиратов, которые использовали судно, чтобы устраивать засады на ничего не подозревающих торговцев. В связи с тем, что данное судно требует высокой квалификации и обученного экипажа, оно не сыскало популярности в широких кругах, но заинтересовало представителей военных структур в отставке. Организованность данных бойцов вкупе с оснащенностью и уникальной особенностью судна, делают 'Jupiter' очень опасным представителем среди пиратских суден.",
 	"map_path": "_maps/_mod_celadon/shuttles/pirate/pirate_jupiter.dmm",
 	"enabled": true,
 	"limit": 1,
+	"sensor_range": 7,
 	"space_spawn": true,
 	"prefix": "RSV",
 	"faction": "/datum/faction/pirate",
@@ -27,15 +28,7 @@
 		},
 		"Assault Node": {
 			"outfit": "/datum/outfit/job/independent/security/pirate/jupiter",
-			"slots": 2
-		},
-		"Engineering Node": {
-			"outfit": "/datum/outfit/job/independent/engineer/pirate/jupiter",
-			"slots": 1
-		},
-		"Fodder": {
-			"outfit": "/datum/outfit/job/independent/assistant/pirate/jupiter",
-			"slots": 2
+			"slots": 5
 		}
 	}
 }

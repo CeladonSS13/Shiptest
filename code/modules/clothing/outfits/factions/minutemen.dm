@@ -9,6 +9,10 @@
 	faction_icon = "bg_clip"
 
 	box = /obj/item/storage/box/survival/clip
+	ears = /obj/item/radio/headset
+
+	backpack = /obj/item/storage/backpack/security/clip
+	satchel = /obj/item/storage/backpack/satchel/sec/clip
 
 // 	var/list/selectable_alt_titles = list()
 
@@ -37,6 +41,17 @@
 
 	r_pocket = /obj/item/radio
 
+/datum/outfit/job/clip/assistant/surveyor
+	name = "CLIP - Surveyor"
+	job_icon = "scribe"
+
+	suit = /obj/item/clothing/suit/hazardvest
+	head = /obj/item/clothing/head/soft/utility_navy
+	gloves = /obj/item/clothing/gloves/color/black
+	accessory = /obj/item/clothing/accessory/pocketprotector/full
+	shoes = /obj/item/clothing/shoes/workboots
+	l_pocket = /obj/item/clipboard
+
 /datum/outfit/job/clip/captain
 	name = "CLIP - Captain"
 	job_icon = "captain"
@@ -61,7 +76,9 @@
 
 	backpack_contents = list(
 		/obj/item/storage/box/ids = 1,
-		/obj/item/melee/classic_baton/telescopic = 1,
+		// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+		// /obj/item/melee/classic_baton/telescopic = 1,
+		// [/CELADON-REMOVE]
 		/obj/item/modular_computer/tablet/preset/advanced = 1)
 
 /datum/outfit/job/clip/chemist
@@ -103,7 +120,9 @@
 	courierbag = /obj/item/storage/backpack/messenger/engi
 	box = /obj/item/storage/box/survival/engineer
 	backpack_contents = list(
-		/obj/item/melee/classic_baton/telescopic=1,
+		// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+		// /obj/item/melee/classic_baton/telescopic=1,
+		// [/CELADON-REMOVE]
 		/obj/item/modular_computer/tablet/preset/advanced = 1
 	)
 
@@ -129,10 +148,12 @@
 
 	backpack_contents = list(
 		/obj/item/storage/box/ids=1,
-		/obj/item/melee/classic_baton/telescopic=1,
+		// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+		// /obj/item/melee/classic_baton/telescopic=1,
+		// [/CELADON-REMOVE]
 		/obj/item/modular_computer/tablet/preset/advanced = 1)
 
-	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/head_of_personnel)
+	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/officer)
 
 /datum/outfit/job/clip/doctor
 	name = "CLIP - Doctor"
@@ -154,6 +175,27 @@
 	satchel = /obj/item/storage/backpack/satchel/med
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	courierbag = /obj/item/storage/backpack/messenger/med
+
+/datum/outfit/job/clip/medtech
+	name = "CLIP - Medical Technician"
+	job_icon = "paramedic"
+	jobtype = /datum/job/paramedic
+
+	l_hand = null
+
+	uniform = /obj/item/clothing/under/clip/medic
+	head = /obj/item/clothing/head/soft/paramedic
+	shoes = /obj/item/clothing/shoes/sneakers/blue
+	gloves = /obj/item/clothing/gloves/color/latex/nitrile/clip
+	belt = /obj/item/storage/belt/medical/paramedic
+	l_pocket = /obj/item/flashlight/pen
+
+	backpack = /obj/item/storage/backpack/medic
+	satchel = /obj/item/storage/backpack/satchel/med
+	duffelbag = /obj/item/storage/backpack/duffelbag/med
+	courierbag = /obj/item/storage/backpack/messenger/para
+
+	box = /obj/item/storage/box/survival/medical
 
 /datum/outfit/job/clip/scientist
 	name = "CLIP - Researcher"
@@ -267,10 +309,13 @@
 	suit = /obj/item/clothing/suit/armor/vest/clip_correspondent
 	shoes = /obj/item/clothing/shoes/laceup
 
-	backpack = /obj/item/storage/backpack/satchel/leather
-	satchel = /obj/item/storage/backpack/satchel/leather
+	belt = /obj/item/bodycamera/broadcast_camera
+
+	backpack = /obj/item/storage/backpack
+	satchel = /obj/item/storage/backpack/satchel
 
 	r_pocket = /obj/item/radio
+	l_pocket = /obj/item/multitool
 
 // Colonial League Minutemen
 
@@ -315,8 +360,10 @@
 	head = /obj/item/clothing/head/clip/slouch/officer
 
 	backpack_contents = list(/obj/item/storage/box/ids=1,
-		/obj/item/melee/classic_baton/telescopic=1,
-		/obj/item/modular_computer/tablet/preset/advanced = 1)
+		// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+		// /obj/item/melee/classic_baton/telescopic = 1
+		// [/CELADON-REMOVE]
+	)
 
 /datum/outfit/job/clip/minutemen/captain/general
 	name = "CLIP Minutemen - General"
@@ -330,7 +377,10 @@
 	shoes = /obj/item/clothing/shoes/combat
 
 	box = /obj/item/storage/box/survival/engineer
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/gun/ballistic/revolver/mateba=1)
+	// [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички
+	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/gun/ballistic/revolver/mateba=1)	// CELADON-EDIT - ORIGINAL
+	backpack_contents = list(/obj/item/gun/ballistic/revolver/mateba=1)
+	// [/CELADON-EDIT]
 
 /datum/outfit/job/clip/minutemen/captain/general/admiral // for flavor, might remove outright
 	name = "CLIP Minutemen - Admiral"
@@ -388,27 +438,6 @@
 	suit = null
 	suit_store = null
 
-/datum/outfit/job/clip/minutemen/paramedic
-	name = "CLIP Minutemen - BARD Combat Medic"
-	job_icon = "paramedic"
-	jobtype = /datum/job/paramedic
-
-	uniform = /obj/item/clothing/under/rank/medical/paramedic/emt
-	head = /obj/item/clothing/head/soft/paramedic
-	suit = /obj/item/clothing/suit/armor/vest
-	shoes = /obj/item/clothing/shoes/sneakers/blue
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile
-	belt = /obj/item/storage/belt/medical/paramedic
-	suit_store = /obj/item/flashlight/pen
-	backpack_contents = list(/obj/item/roller=1)
-
-	backpack = /obj/item/storage/backpack/medic
-	satchel = /obj/item/storage/backpack/satchel/med
-	duffelbag = /obj/item/storage/backpack/duffelbag/med
-	courierbag = /obj/item/storage/backpack/messenger/para
-
-	box = /obj/item/storage/box/survival/medical
-
 ///vehicle crew
 
 /datum/outfit/job/clip/minutemen/vehicle_crew
@@ -443,6 +472,12 @@
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	gloves = /obj/item/clothing/gloves/fingerless
 	glasses = /obj/item/clothing/glasses/hud/diagnostic
+
+/datum/outfit/job/clip/minutemen/vehicle_pilot/disarmed
+	name = "CLIP Minutemen - Vehicle Pilot (Disarmed)"
+	head = null
+	suit = null
+	glasses = null
 
 /datum/outfit/job/clip/minutemen/vehicle_pilot/commander
 	name = "CLIP Minutemen - Vehicle Commander"

@@ -66,10 +66,10 @@
 /obj/machinery/atmospherics/pipe/simple/purple{
 	dir = 6
 	},
-/obj/machinery/portable_atmospherics/canister/air,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "hc" = (
@@ -511,7 +511,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "IQ" = (
-/obj/structure/extinguisher_cabinet/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/structure/chair,
 /turf/open/floor/plasteel/dark,
@@ -713,7 +712,12 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "Ua" = (
-/obj/machinery/newscaster/directional/west,
+/obj/machinery/newscaster/directional/west{
+	pixel_y = -7
+	},
+/obj/structure/extinguisher_cabinet/directional/west{
+	pixel_y = 5
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "Wi" = (

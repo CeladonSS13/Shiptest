@@ -75,3 +75,34 @@
 	name = "cybersun trauma team armor vest"
 	icon_state = "traumavest"
 	desc = "A set of stamped plasteel armor plates decorated with a medical cross and colors associated with the medical division of Cybersun."
+
+/obj/item/clothing/suit/toggle/leather_jacket
+	icon_state = "gothcoat"
+	item_state = "gothcoat"
+
+/obj/item/clothing/suit/toggle/leather_jacket/midriff
+	name = "cropped leather jacket"
+	icon = 'mod_celadon/_storge_icons/icons/items/obj/suits/cropped_leather_jacket.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/suits/cropped_leather_jacket.dmi'
+	desc = "A thick leather jacket that doesn't actually cover the waist. Rebel against what's expected of your jacket!"
+	icon_state = "mid"
+	item_state = "mid"
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/tiny
+
+/obj/item/clothing/suit/yakuza
+	name = "tojo clan jacket"
+	desc = "The jacket of a mad dog."
+	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/suit.dmi'
+	icon_state = "MajimaJacket"
+	item_state = "MajimaJacket"
+	body_parts_covered = ARMS
+
+/obj/item/clothing/suit/dutch
+	name = "dutch's jacket"
+	desc = "For those long nights on the beach in Tahiti."
+	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/suit.dmi'
+	icon_state = "DutchJacket"
+	item_state = "DutchJacket"
+	body_parts_covered = ARMS

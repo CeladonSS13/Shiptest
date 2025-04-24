@@ -45,7 +45,7 @@
 /datum/blackmarket_item/weapon/sledgehammer
 	name = "Breaching Sledgehammer"
 	desc = "A Clique outfit had to ditch a lot of equipment to evade a Gezenan assault. This little piece breaks legs and walls like no other. You want in?"
-	item = /obj/item/melee/axe/sledgehammer
+	item = /obj/item/melee/sledgehammer/gorlex
 
 	price_min = 2000
 	price_max = 3000
@@ -140,8 +140,8 @@
 	desc = "Look. I'll be straight with you. These guns are awful. But, they are cheap if you're that desperate."
 	item = /obj/item/gun/energy/e_gun/e11
 
-	price_min = 250
-	price_max = 750
+	price_min = 200
+	price_max = 400
 	stock = 5
 	availability_prob = 60
 
@@ -161,10 +161,21 @@
 	name = "E-50 Energy Emitter"
 	desc = "An Eoehoma Firearms E-50 Emitter cannon. For when you want a send a message. A really big message."
 	item = /obj/item/gun/energy/laser/e50
-	pair_item = (/datum/blackmarket_item/ammo/huge_weapon_cell)
+	pair_item = list(/datum/blackmarket_item/ammo/huge_weapon_cell)
 
 	price_min = 4000
 	price_max = 7000
+	stock_max = 2
+	availability_prob = 20
+	spawn_weighting = FALSE
+
+/datum/blackmarket_item/weapon/e50_underbarrel
+	name = "Underbarrel Energy Cannon"
+	desc = "The normal E-50 too big to handle for you? This underbarrel conversion cuts it down to a managable size with only a <i>minor<i> chance of painfully burning your hands."
+	item = /obj/item/attachment/gun/energy/e50
+
+	price_min = 4000
+	price_max = 5000
 	stock_max = 2
 	availability_prob = 20
 	spawn_weighting = FALSE
@@ -181,7 +192,7 @@
 
 /datum/blackmarket_item/weapon/cm23
 	name = "CM-23 pistol"
-	desc = "The service pistol of the Confederated League. Chambered in 10mm and fresh off a crashed clipper. We made sure to scratch the ID off this time."
+	desc = "The service pistol of the Confederated League. Chambered in 10x22mm and fresh off a crashed clipper. We made sure to scratch the ID off this time."
 
 	item = /obj/item/gun/ballistic/automatic/pistol/cm23
 	pair_item = list(/datum/blackmarket_item/ammo/cm23_mag)
@@ -192,7 +203,7 @@
 
 /datum/blackmarket_item/weapon/cm70
 	name = "CM-70 Machine Pistol"
-	desc = "One slick piece from the Confederated League. Chambered in 9mm. That officer wasn't happy to lose this but you should be safe."
+	desc = "One slick piece from the Confederated League. Chambered in 9x18mm. That officer wasn't happy to lose this but you should be safe."
 
 	item = /obj/item/gun/ballistic/automatic/pistol/cm70
 	pair_item = list(/datum/blackmarket_item/ammo/cm70_mag)
@@ -203,7 +214,7 @@
 
 /datum/blackmarket_item/weapon/cm5
 	name = "CM-5 SMG"
-	desc = "Now isn't this a good find. A whole League sub-machinegun, chambered in 9mm. We're pretty sure no one is gonna notice the pallet of these missing."
+	desc = "Now isn't this a good find. A whole League sub-machinegun, chambered in 9x18mm. We're pretty sure no one is gonna notice the pallet of these missing."
 
 	item = /obj/item/gun/ballistic/automatic/smg/cm5
 	pair_item = list(/datum/blackmarket_item/ammo/cm5_mag)
@@ -213,8 +224,8 @@
 	availability_prob = 30
 
 /datum/blackmarket_item/weapon/saber_smg
-	name = "Saber 9mm SMG"
-	desc = "A prototype 9mm submachine gun. Most of these never got past the RND phase and into distribution. But we happen know a guy."
+	name = "Saber 9x18mm SMG"
+	desc = "A prototype 9x18mm submachine gun. Most of these never got past the RND phase and into distribution. But we happen know a guy."
 	item = /obj/item/gun/ballistic/automatic/smg/skm_carbine/saber
 	pair_item = list(/datum/blackmarket_item/ammo/saber_mag)
 
@@ -257,8 +268,8 @@
 
 /datum/blackmarket_item/weapon/mecha_weapon_bay
 	name = "Concealed Weapons Bay"
-	desc = "Ripley with a laser cannon? Odysseus with a missile rack? Sky's the limit with this omni-compatible weapons bay! (Missiles and lasers not included)"
-	item = /obj/item/mecha_parts/concealed_weapon_bay
+	desc = "Ripley with a laser cannon? 200 Series with a missile rack? Sky's the limit with this omni-compatible weapons bay! (Missiles and lasers not included)"
+	item = /obj/item/mecha_parts/weapon_bay/concealed
 
 	price_min = 1000
 	price_max = 2000
@@ -268,7 +279,7 @@
 
 /datum/blackmarket_item/weapon/mecha_syringe_gun
 	name = "Mounted Syringe Gun"
-	desc = "We ripped this off an old Nanotrasen exosuit. It's a real advanced piece of equipment. Exosuit not included."
+	desc = "We ripped this off an old Cybersun exosuit. It's a real advanced piece of equipment. Exosuit not included."
 	item = /obj/item/mecha_parts/mecha_equipment/medical/syringe_gun
 
 	price_min = 5000
@@ -360,7 +371,7 @@
 
 /datum/blackmarket_item/weapon/spitter
 	name = "Spitter Submachine Gun"
-	desc = "The aptly named Spitter won't be hitting anything outside of spitting distance. Anything in that range on the otherhand? Let's just say the bereaved will be wanting a closed casket funeral. Chambered in 9mm."
+	desc = "The aptly named Spitter won't be hitting anything outside of spitting distance. Anything in that range on the otherhand? Let's just say the bereaved will be wanting a closed casket funeral. Chambered in 9x18mm."
 	item = /obj/item/gun/ballistic/automatic/pistol/spitter
 	pair_item = list(/datum/blackmarket_item/ammo/spitter_mag)
 

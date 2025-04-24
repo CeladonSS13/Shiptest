@@ -19,7 +19,7 @@
 	var/mob/living/carbon/user = null
 	var/active = 0
 	var/see_in_dark = 6
-	var/lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
+	// var/lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE // NEEDS_TO_FIX_ALARM!
 	var/current_lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
 
 /obj/item/clothing/head/helmet/riot/gamma_vision/attack_self(mob/living/carbon/human/user)
@@ -33,7 +33,7 @@
 			flags_cover ^= visor_flags_cover
 			icon_state = "[initial(icon_state)][up ? "up" : ""]"
 			item_state = "[initial(item_state)][up ? "up" : ""]"
-			to_chat(user, "<span class='notice'>[up ? alt_toggle_message : toggle_message] \the [src].</span>")
+			to_chat(user, span_notice("[up ? alt_toggle_message : toggle_message] \the [src]."))
 
 			if(active)
 				user.lighting_alpha = 192

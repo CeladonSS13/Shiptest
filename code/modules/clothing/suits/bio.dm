@@ -88,7 +88,9 @@
 
 /obj/item/clothing/suit/bio_suit/cmo/Initialize()
 	. = ..()
-	allowed += list(/obj/item/melee/classic_baton/telescopic)
+	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+	// allowed += list(/obj/item/melee/classic_baton/telescopic)
+	// [/CELADON-REMOVE]
 
 //Plague Dr mask can be found in clothing/masks/gasmask.dm
 /obj/item/clothing/suit/bio_suit/plaguedoctorsuit

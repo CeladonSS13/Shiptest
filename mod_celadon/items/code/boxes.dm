@@ -54,11 +54,11 @@
 	radio_type = null
 /obj/item/storage/box/survival/inteq/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/clothing/mask/balaclava = 1,\
+		/obj/item/clothing/mask/gas/inteq = 1,\
 		/obj/item/tank/internals/emergency_oxygen/engi = 1,\
 		/obj/item/reagent_containers/hypospray/medipen/atropine = 1,\
 		/obj/item/reagent_containers/pill/penacid = 1,\
-		/obj/item/storage/ration = 1,\
+		/obj/item/storage/ration/chicken_wings_hot_sauce = 1,\
 		/obj/item/radio = 1,\
 		/obj/item/crowbar/red = 1,\
 		)
@@ -108,3 +108,26 @@
 		)
 	generate_items_inside(items_inside,src)
 
+//It's a maid costume from the IRMG and Syndicate, what else.
+/obj/item/storage/box/inteqmaid
+	name = "IRMG non standard issue maid outfit"
+	desc = "A box containing a 'tactical' and 'practical' maid outfit from the IRMG."
+
+/obj/item/storage/box/inteqmaid/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/clothing/head/maidheadband/inteq = 1,
+		/obj/item/clothing/under/syndicate/inteq/skirt/maid = 1,
+		/obj/item/clothing/gloves/combat/maid/inteq = 1,)
+	generate_items_inside(items_inside,src)
+
+/obj/item/storage/box/syndimaid
+	name = "Syndicate maid outfit"
+	desc = "A box containing a 'tactical' and 'practical' maid outfit."
+	icon_state = "syndiebox"
+
+/obj/item/storage/box/syndimaid/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/clothing/head/maidheadband/syndicate = 1,
+		/obj/item/clothing/under/syndicate/skirt/maid = 1,
+		/obj/item/clothing/gloves/combat/maid = 1,)
+	generate_items_inside(items_inside,src)

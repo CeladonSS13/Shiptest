@@ -130,7 +130,7 @@
 /obj/item/tank/jetpack/oxygen/security{
 	name = "Suspicious looking jetpack (oxygen)"
 	},
-/obj/item/clothing/suit/space/hardsuit/syndi/ngr,
+/obj/item/clothing/suit/space/hardsuit/syndi,
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
 "dg" = (
@@ -659,27 +659,16 @@
 	dir = 8;
 	pixel_x = -30
 	},
-/obj/item/pickaxe/mini,
-/obj/item/pickaxe/mini,
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 10
 	},
 /obj/machinery/light/directional/south,
 /obj/machinery/rnd/production/techfab/department/security,
-/obj/item/toy/plush/nukeplushie{
-	pixel_x = 6;
-	pixel_y = 7
-	},
-/obj/item/megaphone/sec{
-	name = "syndicate megaphone";
-	pixel_y = 1
-	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo/port)
 "nO" = (
 /obj/effect/gibspawner/generic/animal,
 /obj/item/chair/stool,
-/obj/effect/mob_spawn/human/clown/corpse,
 /obj/effect/turf_decal/techfloor{
 	dir = 10
 	},
@@ -692,12 +681,16 @@
 /obj/effect/turf_decal/industrial/traffic/full,
 /obj/structure/table/reinforced,
 /obj/item/binoculars{
-	pixel_x = -7;
-	pixel_y = 4
+	pixel_x = 7;
+	pixel_y = 2
 	},
 /obj/item/binoculars{
 	pixel_x = 7;
-	pixel_y = 0
+	pixel_y = 10
+	},
+/obj/machinery/recharger{
+	pixel_x = -7;
+	pixel_y = 3
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
@@ -776,7 +769,7 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/item/reagent_containers/food/snacks/deadmouse,
+/obj/item/food/deadmouse,
 /obj/structure/closet/crate/large,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo/port)
@@ -1117,6 +1110,7 @@
 	},
 /obj/item/clothing/glasses/meson/sunglasses,
 /obj/item/pickaxe/mini,
+/obj/item/gps,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "xG" = (
@@ -1341,11 +1335,22 @@
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/head/HoS/beret/syndicate,
 /obj/item/radio/headset/syndicate/alt/captain,
-/obj/item/gun/ballistic/revolver/viper,
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
-/obj/item/storage/box/ammo/a357_match,
+/obj/item/storage/box/ammo/c57x39,
+/obj/item/storage/box/ammo/c57x39{
+	pixel_x = -5;
+	pixel_y = 2
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder,
+/obj/item/gun/ballistic/automatic/smg/sidewinder{
+	pixel_x = -10;
+	pixel_y = 4
+	},
+/obj/item/gps,
+/obj/item/tank/jetpack/suit,
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
 "BW" = (
@@ -1581,6 +1586,16 @@
 /obj/item/trash/energybar,
 /obj/item/trash/can,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/item/megaphone/sec{
+	name = "syndicate megaphone";
+	pixel_y = 1
+	},
+/obj/item/toy/plush/nukeplushie{
+	pixel_x = 6;
+	pixel_y = 7
+	},
+/obj/item/pickaxe/mini,
+/obj/item/pickaxe/mini,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo/port)
 "Ga" = (
@@ -1616,7 +1631,7 @@
 	dir = 6
 	},
 /obj/structure/closet/crate/bin,
-/obj/item/reagent_containers/food/snacks/deadmouse,
+/obj/item/food/deadmouse,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "GD" = (
@@ -2135,6 +2150,7 @@
 /obj/effect/turf_decal/steeldecal/steel_decals_central7,
 /obj/item/clothing/glasses/meson/sunglasses,
 /obj/item/pickaxe/mini,
+/obj/item/gps,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "OH" = (

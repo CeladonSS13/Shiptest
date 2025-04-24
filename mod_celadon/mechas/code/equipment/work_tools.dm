@@ -97,6 +97,14 @@
 	source_mech = list(/obj/mecha/working/ripley/mkii)
 	result_mech = /obj/mecha/working/ripley/mkii/aluminizer
 
+/obj/item/mecha_parts/mecha_equipment/conversion_kit/ripley/nanotrasen
+	name = "Nanotrasen Ripley MK-V Conversion Kit"
+	desc = "A Nanotrasen-custom lightweight canopy kit for an Autonomous Power Loader Unit \"Ripley\" MK-I mecha, to convert it to the mobile and spaceworthy Mk-V design. This kit cannot be removed, once applied."
+	icon = 'mod_celadon/_storge_icons/icons/mecha_equipment.dmi'
+	icon_state = "nanotrasenupgrade"
+	source_mech = list(/obj/mecha/working/ripley, /obj/mecha/working/ripley/mining)
+	result_mech = /obj/mecha/working/ripley/nanotrasen
+
 //гиги за шаги
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/gygaxwhite

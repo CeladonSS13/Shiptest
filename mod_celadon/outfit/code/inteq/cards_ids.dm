@@ -10,6 +10,12 @@
 	assignment = "Vanguard"
 	job_icon = "captain"
 
+/obj/item/card/id/inteq/rearguard
+	desc = "A inteq ID with no proper access to speak of.This one indicates a Rearguard"
+	icon_state = "inteqvanguard"
+	assignment = "Rearguard"
+	job_icon = "captain"
+
 /obj/item/card/id/inteq/enfco
 	desc = "A inteq ID with no proper access to speak of.This one indicates a Enforcer Class One"
 	icon_state = "inteqenfco"

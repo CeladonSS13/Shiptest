@@ -5,6 +5,9 @@
 	limb_id = "synth" //Overriden in /species/ipc/replace_body()
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
+	// uses_integrity = TRUE
+	// [/CELADON-REMOVE]
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC | BODYTYPE_BOXHEAD
 	light_brute_msg = "scratched"
 	medium_brute_msg = "dented"
@@ -22,6 +25,9 @@
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
+	// uses_integrity = TRUE
+	// [/CELADON-REMOVE]
 
 	light_brute_msg = "scratched"
 	medium_brute_msg = "dented"
@@ -38,6 +44,9 @@
 	limb_id = "synth"
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
+	// uses_integrity = TRUE
+	// [/CELADON-REMOVE]
 
 	light_brute_msg = "scratched"
 	medium_brute_msg = "dented"
@@ -54,6 +63,9 @@
 	limb_id = "synth"
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
+	// uses_integrity = TRUE
+	// [/CELADON-REMOVE]
 
 	light_brute_msg = "scratched"
 	medium_brute_msg = "dented"
@@ -70,6 +82,9 @@
 	limb_id = "synth"
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
+	// uses_integrity = TRUE
+	// [/CELADON-REMOVE]
 
 	light_brute_msg = "scratched"
 	medium_brute_msg = "dented"
@@ -86,6 +101,9 @@
 	limb_id = "synth"
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
+	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
+	// uses_integrity = TRUE
+	// [/CELADON-REMOVE]
 
 	light_brute_msg = "scratched"
 	medium_brute_msg = "dented"

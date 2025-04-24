@@ -62,6 +62,10 @@
 		for (var/obj/item/card/id/card in W.contents)
 			W.combined_access |= card.access
 
+	// Даём Интекам свой дюфель взятый с Блюмуна, не имеет никаких отличающих стат
+/datum/outfit/job/inteq
+	duffelbag = /obj/item/storage/backpack/duffelbag/inteq
+
 //рекрут
 /datum/outfit/job/inteq/assistant/celadon
 	name = "Recruit (InteQ)"
@@ -88,6 +92,38 @@
 	id = /obj/item/card/id/inteq/vanguard
 
 /datum/outfit/job/inteq/captain/celadon/post_equip(mob/living/carbon/human/H)
+	. = ..()
+	get_inteq_all_acces(H)
+
+//Командир
+
+/datum/outfit/job/inteq/captain/honorable/celadon
+	name = "Honorable Vanguard (InteQ)"
+	head = /obj/item/clothing/head/beret/sec/hos/inteq/honorable
+	mask = /obj/item/clothing/mask/gas/sechailer/swat
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
+	uniform = /obj/item/clothing/under/syndicate/inteq/honorable
+	suit = /obj/item/clothing/suit/armor/hos/inteq/honorable
+	suit_store = /obj/item/gun/ballistic/revolver/horizonx
+	gloves = /obj/item/clothing/gloves/combat
+	id = /obj/item/card/id/inteq/vanguard
+
+/datum/outfit/job/inteq/captain/honorable/celadon/post_equip(mob/living/carbon/human/H)
+	. = ..()
+	get_inteq_all_acces(H)
+
+//Арьергард. Rearguard
+
+/datum/outfit/job/inteq/captain/rearguard/celadon
+	name = "Rearguard (InteQ)"
+	id_assignment = "Rearguard"
+	head = /obj/item/clothing/head/beret/sec/hos/inteq
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
+	suit = /obj/item/clothing/suit/armor/vest/inteq
+	gloves = /obj/item/clothing/gloves/combat
+	id = /obj/item/card/id/inteq/rearguard
+
+/datum/outfit/job/inteq/captain/rearguard/celadon/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_inteq_all_acces(H)
 

@@ -1,7 +1,7 @@
 /obj/item/gun/ballistic/automatic/assault/g36sh
 //Описание
 	name = "\improper G36-SH"
-	desc = "Наследие огненной эры Союза Человечества, укороченная версия,  калибра 5.56x45. Технология производства восстановлена минитменами, но ввиду усложненной конструкции продана корпорации InteQ. Используется сотрудниками InteQ по сей день, как оружие для элитных наемников."
+	desc = "Solar Federation's elite assault rifle. This version is shortened. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Uses 5.56x45 rounds."
 //Иконки
 	icon = 'mod_celadon/_storge_icons/icons/guns/48x32guns.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/guns/guns_lefthand.dmi'
@@ -12,6 +12,7 @@
 //Звуки
 	fire_sound = 'mod_celadon/_storge_sounds/sound/gun/g36sh.ogg'
 //Характеристики
+	manufacturer = MANUFACTURER_SOLARARMORIES
 	spread = 4
 	wield_delay = 0.2 SECONDS
 	fire_delay = 0.14 SECONDS
@@ -24,7 +25,7 @@
 	)
 //Прочее
 	var/obj/item/ammo_box/magazine/g36/sh/alternate_magazine
-
+NO_MAG_GUN_HELPER(automatic/assault/g36sh)
 /obj/item/gun/ballistic/automatic/assault/g36sh/Initialize()
 	. = ..()
 	if (!alternate_magazine)
@@ -32,25 +33,26 @@
 	// spawnwithmagazine = FALSE
 	default_ammo_type = /obj/item/ammo_box/magazine/g36
 	allowed_ammo_types = list(
-		/obj/item/ammo_box/magazine/g36,
+		/obj/item/ammo_box/magazine/g36, /obj/item/ammo_box/magazine/g36/sh, /obj/item/ammo_box/magazine/g36/drum
 	)
 
 /obj/item/gun/ballistic/automatic/assault/g36sh/inteq
-	name = "\improper Moded G36-SH"
-	desc = "Обширная модификация G36-SH, которая входит в стандартную комплектацию вооружения InteQ. Калибр 5,56x45 мм."
+	name = "\improper G36m-SH"
+	desc = "A SolFed G36-SH, modified to IRMG standarts. Used by elite mercenaries. Uses 5.56x45."
 	icon_state = "g36shinteq"
 	item_state = "g36shinteq"
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/guns/back.dmi'
+	manufacturer = MANUFACTURER_INTEQ
 	empty_indicator = TRUE
 	empty_alarm = TRUE
 	zoomable = TRUE
-
+NO_MAG_GUN_HELPER(automatic/assault/g36sh/inteq)
 // /obj/item/gun/ballistic/automatic/assault/g36sh/no_mag
 // 	spawnwithmagazine = FALSE
 
 /obj/item/gun/ballistic/automatic/assault/g36
 	name = "\improper G36"
-	desc = "Наследие огненной эры Союза Человечества , калибра 5.56x45 . Технология производства восстановлена минитменами , но ввиду усложненной конструкции продана корпорации InteQ. Используется сотрудниками InteQ по сей день , как оружие для элитных наемников. "
+	desc = "Solar Federation's elite assault rifle. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Uses 5.56x45 rounds."
 	icon = 'mod_celadon/_storge_icons/icons/guns/48x32guns.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/guns/guns_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/guns/guns_righthand.dmi'
@@ -58,16 +60,17 @@
 	fire_sound = 'mod_celadon/_storge_sounds/sound/gun/g36.ogg'
 	icon_state = "g36"
 	item_state = "g36"
+	manufacturer = MANUFACTURER_SOLARARMORIES
 	spread = 2
 	wield_delay = 0.5 SECONDS
 	fire_delay = 0.14 SECONDS
 	unique_mag_sprites_for_variants = TRUE
 	default_ammo_type = /obj/item/ammo_box/magazine/g36
 	allowed_ammo_types = list(
-		/obj/item/ammo_box/magazine/g36,
+		/obj/item/ammo_box/magazine/g36, /obj/item/ammo_box/magazine/g36/sh, /obj/item/ammo_box/magazine/g36/drum
 	)
 	var/obj/item/ammo_box/magazine/g36/alternate_magazine
-
+NO_MAG_GUN_HELPER(automatic/assault/g36)
 /obj/item/gun/ballistic/automatic/assault/g36/Initialize()
 	. = ..()
 	if (!alternate_magazine)
@@ -82,15 +85,16 @@
 // 		spawnwithmagazine = FALSE
 
 /obj/item/gun/ballistic/automatic/assault/g36/inteq
-	name = "\improper Moded G36"
-	desc = "Обширная модификация G36, которая входит в стандартную комплектацию вооружения InteQ. Калибр 5,56x45 мм."
+	name = "\improper G36m"
+	desc = "A SolFed G36, modified to IRMG standarts. Used by elite mercenaries. Uses 5.56x45."
 	icon_state = "g36inteq"
 	item_state = "g36inteq"
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/guns/back.dmi'
+	manufacturer = MANUFACTURER_INTEQ
 	empty_indicator = TRUE
 	empty_alarm = TRUE
 	zoomable = TRUE
-
+NO_MAG_GUN_HELPER(automatic/assault/g36/inteq)
 /obj/item/gun/ballistic/automatic/assault/morita1
 	name = "\improper Morita MK.I"
 	desc = "Стандартная пехотная автоматическая винтовка под калибр .308. Широко применяется армейскими корпусами в Союзе Человечества. Популярность в гражданских кругах заслужила после сьемок в фильме Starboat Troopes."
@@ -110,9 +114,9 @@
 	unique_mag_sprites_for_variants = TRUE
 	default_ammo_type = /obj/item/ammo_box/magazine/morita1
 	allowed_ammo_types = list(
-		/obj/item/ammo_box/magazine/morita1,
+		/obj/item/ammo_box/magazine/morita1, /obj/item/ammo_box/magazine/morita1/small,  /obj/item/ammo_box/magazine/morita1/drum
 	)
-
+NO_MAG_GUN_HELPER(automatic/assault/morita1)
 // /obj/item/gun/ballistic/automatic/assault/morita1/no_mag
 // 	spawnwithmagazine = FALSE
 
@@ -124,13 +128,13 @@
 
 // /obj/item/gun/ballistic/automatic/assault/morita1/desert/no_mag
 // 	spawnwithmagazine = FALSE
-
+NO_MAG_GUN_HELPER(automatic/assault/morita1/desert)
 /obj/item/gun/ballistic/automatic/assault/morita1/forest
 	name = "\improper Morita MK.I(forest)"
 	desc = "Стандартная пехотная автоматическая винтовка под калибр .308. Широко применяется армейскими корпусами в Союзе Человечества. Популярность в гражданских кругах заслужила после сьемок в фильме Starboat Troopes./Модификация с лесным камуфляжем"
 	icon_state = "morita1_forest"
 	item_state = "morita1_forest"
-
+NO_MAG_GUN_HELPER(automatic/assault/morita1/forest)
 // /obj/item/gun/ballistic/automatic/assault/morita1/forest/no_mag
 // 	spawnwithmagazine = FALSE
 
@@ -139,7 +143,7 @@
 	desc = "Стандартная пехотная автоматическая винтовка под калибр .308. Широко применяется армейскими корпусами в Союзе Человечества. Популярность в гражданских кругах заслужила после сьемок в фильме Starboat Troopes./Модификация с болотным камуфляжем"
 	icon_state = "morita1_swamp"
 	item_state = "morita1_swamp"
-
+NO_MAG_GUN_HELPER(automatic/assault/morita1/swamp)
 // /obj/item/gun/ballistic/automatic/assault/morita1/swamp/no_mag
 // 	spawnwithmagazine = FALSE
 
@@ -166,7 +170,6 @@
 		/obj/item/ammo_box/magazine/svd_rounds,
 	)
 
-
 	manufacturer = MANUFACTURER_NONE
 	zoomable = FALSE
 
@@ -178,7 +181,7 @@
 	recoil = 0
 	recoil_unwielded = 4
 	wield_slowdown = 0.75
-
+NO_MAG_GUN_HELPER(automatic/marksman/svd)
 /obj/item/ammo_box/magazine/svd_rounds
 	name = "\improper SVD magazine (7.62x54mmR)"
 	desc = "A large caliber magazine for the SVD sniper rifle."
@@ -196,3 +199,14 @@
 
 // /obj/item/gun/ballistic/automatic/powered/gauss/no_mag
 // 	spawnwithmagazine = FALSE
+
+/obj/item/gun/ballistic/automatic/assault/cm82/solfed
+	name = "\improper Model 82 Carbine"
+	desc = "The standard Solarian assault rifle, somewhat outdated, but still accurate, reliable and easy to use. This version was manufactured in the Elysium Republic under license from the Solar Federation for the Elysium Brigade. Chambered in 5.56х42 mm."
+	icon = 'mod_celadon/_storge_icons/icons/guns/48x32guns.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/guns/guns_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/guns/guns_righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/guns/back.dmi'
+	icon_state = "cm82_solfed"
+	item_state = "cm82_solfed"
+NO_MAG_GUN_HELPER(automatic/assault/cm82/solfed)

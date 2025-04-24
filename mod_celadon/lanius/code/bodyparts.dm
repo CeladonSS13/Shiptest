@@ -53,6 +53,7 @@
 	decay_factor = 0
 	healing_factor = 10
 	organ_flags = ORGAN_FROZEN
+	flash_protect = FLASH_PROTECTION_WELDER
 
 /obj/item/organ/ears/lanius
 	useable = FALSE

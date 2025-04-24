@@ -25,8 +25,8 @@
 	bodytemp_heat_damage_limit = HUMAN_BODYTEMP_HEAT_DAMAGE_LIMIT + 35
 	bodytemp_cold_damage_limit = HUMAN_BODYTEMP_COLD_DAMAGE_LIMIT + 3
 
-	max_temp_comfortable = HUMAN_BODYTEMP_NORMAL + 15
-	min_temp_comfortable = HUMAN_BODYTEMP_NORMAL - 1
+	max_temp_comfortable = HUMAN_BODYTEMP_NORMAL + 40
+	min_temp_comfortable = HUMAN_BODYTEMP_NORMAL - 3
 
 	bodytemp_autorecovery_divisor = HUMAN_BODYTEMP_AUTORECOVERY_DIVISOR - 4
 
@@ -183,8 +183,8 @@
 	var/datum/species/kepori/kep = H.dna.species
 	if(H.GetComponent(/datum/component/tackler))
 		qdel(H.GetComponent(/datum/component/tackler))
-		to_chat(H, "<span class='notice'>You relax, no longer ready to pounce.</span>")
+		to_chat(H, span_notice("You relax, no longer ready to pounce."))
 		return
 	H.AddComponent(/datum/component/tackler, stamina_cost= kep.tackle_stam_cost, base_knockdown= kep.base_knockdown, range= kep.tackle_range, speed= kep.tackle_speed, skill_mod= kep.skill_mod, min_distance= kep.min_distance)
-	H.visible_message("<span class='notice'>[H] gets ready to pounce!</span>", \
-		"<span class='notice'>You ready yourself to pounce!</span>", null, COMBAT_MESSAGE_RANGE)
+	H.visible_message(span_notice("[H] gets ready to pounce!"), \
+		span_notice("You ready yourself to pounce!"), null, COMBAT_MESSAGE_RANGE)

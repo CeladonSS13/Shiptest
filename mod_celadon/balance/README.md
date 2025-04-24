@@ -12,7 +12,10 @@
 <!-- Название мода. Не важно на русском или на английском. -->
 ## Balance - изменение баланса
 
-ID мода: CELADON_BALANCE, CELADON_BALANCE_MOBS
+ID мода: 
+	CELADON_BALANCE
+	CELADON_BALANCE_CD
+	CELADON_BALANCE_MOBS
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов. Добавлены
@@ -48,13 +51,15 @@ ADD: `code\game\objects\items\circuitboards\machine_circuitboards.dm` : `/obj/it
 EDIT: `code\modules\cargo\packs\food.dm` : `/datum/supply_pack/food/`
 
 Ребаланс
-Лут с элиток (на данный момент убрано из кода для ребаланса)
+Лут с элиток (вместо гритер сундука, выпадает обычный сундук некрополиса)
 EDIT: `code\modules\mob\living\simple_animal\hostile\mining_mobs\elites\elite.dm`: `/obj/structure/elite_tumor/proc/onEliteLoss()` -> var/obj/structure/closet/crate/necropolis/tendril/lootbox = new /obj/structure/closet/crate/necropolis/tendril(loc)
 
 ADD: `code\modules\projectiles\ammunition\_ammunition.dm` : /obj/item/ammo_casing/attackby(obj/item/I, mob/user, params) -> добавлены звук подбора патрона в магазин с пола и задержка в 1 секунду зависящая от кликанья по патронам. Чем быстрее клики - тем быстрее загрузятся патроны. -> перемещено в `mod_celadon/items/code/ammunition.dm`
 Очки с зомби и ксеноморфов
 REMOVE: `D:\1ss\ShiptestYata\code\modules\surgery\experimental_dissection.dm`: `/datum/surgery_step/dissection/preop`
 REMOVE: `code\modules\projectiles\guns\energy.dm`
+REMOVE: `code/_globalvars/lists/maintenance_loot.dm`
+
 
 EDIT: `code/modules/mining/equipment/regenerative_core.dm` - теперь ИПС не смогут жрать ядра для полного отхила, их лечить будет на половину.
 EDIT:
@@ -93,6 +98,11 @@ EDIT: `mod_celadon/return_content/code/hivebot.dm` : понизили шанс �
 EDIT: `code/modules/reagents/chemistry/recipes/others.dm` : Меняем кровь слаймоменов в ядрах слаймов на кислоту
 
 EDIT: `code/game/objects/items/storage/briefcase.dm` : Меняем разрешенные вложенные предметы с нормала на смол, чтобы нельзя было вкладывать коробки с и создавать матрешку коробок. 
+EDIT: `code\modules\mob\living\simple_animal\hostile\megafauna\codename_claw.dm` : Меняем значениеи взрыва, чтобы коробку с лутом не взрывало после смерти челюстей
+
+EDIT: `code/__DEFINES/clothing.dm`
+EDIT: `code/__DEFINES/storage.dm`
+EDIT: `code/game/objects/items/storage/backpack.dm`
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
@@ -139,9 +149,11 @@ EDIT: `code/game/objects/items/storage/briefcase.dm` : Меняем разреш
 - Двигатели, рад. коллекторы - RalseiDreemuurr
 - Затронуты проджектайлы энергетических дробовиков, батарейки в энерегетических пушках теперь можно вытаскивать руками, убрана возможность вытаскивать батарею в само-заряжающихся пушках. - Molniz
 - Ganza Pain Elite Edition Deluxe: баланс трогается всех мобов элитных и простых, Пандора реально может убить вас - Ganza9991
+- Дроби со стамина дамагом увеличен АП - Ganza9991
 Затронуты патроны .44, .357, slug. Усилены в целом - Deylan
 - Изменения попаданий по лежачим - MrCat15352
 - Убрано замедление от синдидюффелей - Quinal
+- Изменение взрыва клешни - Molniz
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.

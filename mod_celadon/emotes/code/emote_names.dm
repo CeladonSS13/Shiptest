@@ -6,7 +6,7 @@
 	if(!name)
 		name = key
 
-/// Emote Living
+/// MARK:  Emote Living
 
 /datum/emote/flip
 	name = EMOTE_FLIP
@@ -146,7 +146,7 @@
 /datum/emote/living/swear
 	name = EMOTE_SWEAR
 
-/// Emote Brain
+/// MARK:  Emote Brain
 
 /datum/emote/living/brain/alarm
 	name = EMOTE_BRAIN_ALARM
@@ -169,7 +169,7 @@
 /datum/emote/living/brain/boop
 	name = EMOTE_BRAIN_BOOP
 
-// Emote Carbon
+/// MARK:  Emote Carbon
 
 /datum/emote/living/carbon/blink
 	name = EMOTE_CARBON_BLINK
@@ -228,7 +228,7 @@
 /datum/emote/living/carbon/twirl
 	name = EMOTE_CARBON_TWIRL
 
-/// Emote Alien
+/// MARK:  Emote Alien
 
 /datum/emote/living/carbon/alien/humanoid/gnarl
 	name = EMOTE_ALIEN_GNARL
@@ -239,7 +239,7 @@
 /datum/emote/living/carbon/alien/humanoid/roar
 	name = EMOTE_ALIEN_ROAR
 
-/// Emote Human
+/// MARK:  Emote Human
 
 /datum/emote/living/carbon/human/airguitar
 	name = EMOTE_SPECIES_AIRGUITAR
@@ -313,8 +313,8 @@
 /datum/emote/living/carbon/human/slap
 	name = EMOTE_SPECIES_SLAP
 
-// /datum/emote/living/carbon/human/snap
-// 	name = EMOTE_SPECIES_SNAP
+/datum/emote/living/carbon/human/snap
+	name = EMOTE_SPECIES_SNAP
 
 /datum/emote/living/carbon/human/fart
 	name = EMOTE_SPECIES_FART
@@ -376,7 +376,7 @@
 /datum/emote/living/carbon/human/ururu
 	name = EMOTE_SPECIES_RUMBLE
 
-/// Emote Silicon
+/// MARK: Emote Silicon
 
 /datum/emote/living/silicon/scream
 	name = EMOTE_SILICON_SCREAM
@@ -408,7 +408,7 @@
 /datum/emote/living/silicon/halt
 	name = EMOTE_SILICON_HALT
 
-/// Species specific
+/// MARK: Species specific
 
 /datum/emote/living/carbon/human/hiss
 	name = EMOTE_SPECIES_HISS
@@ -467,7 +467,10 @@
 /datum/emote/living/carbon/human/tajaran/mrow
 	name = EMOTE_SPECIES_MROW
 
-/// Emote Animal
+/datum/emote/living/carbon/human/tajaran/mrowss
+	name = EMOTE_SPECIES_MROWSS
+
+/// MARK: Emote Animal
 
 /datum/emote/living/simple_animal/gorilla/ooga
 	name = EMOTE_ANIMAL_OOGA
@@ -502,7 +505,7 @@
 /datum/emote/living/simple_animal/pet/cat/sit
 	name = EMOTE_ANIMAL_SIT
 
-/// New Emotes
+/// MARK: New Emotes
 
 /datum/emote/living/carbon/human/whistle
 	name = EMOTE_SPECIES_WHISTLE

@@ -183,7 +183,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 		new/datum/stack_recipe("radiation closet", /obj/structure/closet/radiation/empty, 2, time = 15, one_per_turf = TRUE, on_floor = TRUE)
 		)),
 	null, \
-		new/datum/stack_recipe_list("crates", list(
+	new/datum/stack_recipe_list("crates", list(
 		new/datum/stack_recipe("crate", /obj/structure/closet/crate, 2, time = 15, one_per_turf = TRUE, on_floor = TRUE),
 		new/datum/stack_recipe("internals crate", /obj/structure/closet/crate/internals, 2, time = 15, one_per_turf = TRUE, on_floor = TRUE),
 		new/datum/stack_recipe("engineering crate", /obj/structure/closet/crate/engineering, 2, time = 15, one_per_turf = TRUE, on_floor = TRUE),
@@ -191,6 +191,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 		new/datum/stack_recipe("science crate", /obj/structure/closet/crate/science, 2, time = 15, one_per_turf = TRUE, on_floor = TRUE),
 		new/datum/stack_recipe("hydroponics crate", /obj/structure/closet/crate/hydroponics, 2, time = 15, one_per_turf = TRUE, on_floor = TRUE)
 		)),
+	new/datum/stack_recipe("gun locker", /obj/structure/guncloset, 10, time = 15, one_per_turf = TRUE, on_floor = TRUE), \
 	null, \
 	new/datum/stack_recipe("canister", /obj/machinery/portable_atmospherics/canister, 10, time = 15, one_per_turf = TRUE, on_floor = TRUE), \
 	null, \
@@ -250,7 +251,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 		new/datum/stack_recipe("bench press", /obj/structure/weightmachine/weightlifter, 5, time = 25, one_per_turf = TRUE, on_floor = TRUE), \
 		)), \
 	// [CELADON-ADD] - CELADON_STRUCTURES - Барикады
-	new/datum/stack_recipe("metal barricade", /obj/structure/deployable_barricade/metal, 2, time = 1 SECONDS, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("metal barricade", /obj/structure/deployable_barricade/metal, 20, time = 4 SECONDS, one_per_turf = TRUE, on_floor = TRUE), \
 	// [/CELADON-ADD]
 	new/datum/stack_recipe("shower", /obj/machinery/shower, 3, time = 25)
 ))

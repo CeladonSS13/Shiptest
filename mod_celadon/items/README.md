@@ -32,6 +32,7 @@ ID мода: CELADON_ITEMS
 
 - `code/modules/surgery/organs/tongue.dm`
 	-`var/static/list/languages_possible_base = typecacheof`
+- `code/modules/clothing/outfits/factions/inteq.dm`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -72,6 +73,10 @@ ID мода: CELADON_ITEMS
 - `mod_celadon/_storge_icons/icons/items`
 - `mod_celadon/_storge_icons/icons/ammo/ammo.dmi`
 - `sound/weapons/gun/shotgun/insert_shell.ogg`
+- `mod_celadon/_storge_icons/icons/obj/back.dmi`
+- `mod_celadon/_storge_icons/icons/mob/back.dmi`
+- `mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi`
+- `mod_celadon/_storge_icons/icons/items/obj/head/hats.dmi`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.
@@ -81,7 +86,7 @@ ID мода: CELADON_ITEMS
 
 ### Авторы:
 
-MrCat15352, MysticalFaceLesS, RalseiDreemuurr, MrRomainzZ
+MrCat15352, MysticalFaceLesS, RalseiDreemuurr, MrRomainzZ, Quinal, MysticalFaceLesS
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.

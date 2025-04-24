@@ -2,22 +2,13 @@
 // ALCOHOLS //
 //////////////
 
-
-///Greater numbers mean that less alcohol has greater intoxication potential
-#define ALCOHOL_THRESHOLD_MODIFIER 1
-///The rate at which alcohol affects you
-#define ALCOHOL_RATE 0.005
-///The exponent applied to boozepwr to make higher volume alcohol at least a little bit damaging to the liver
-#define ALCOHOL_EXPONENT 1.6
-
-
 /datum/reagent/consumable/ethanol
 	name = "Ethanol"
 	description = "A well-known alcohol with a variety of applications."
 	color = "#404030" // rgb: 64, 64, 48
 	nutriment_factor = 0
 	taste_description = "alcohol"
-	metabolization_rate = 0.5 * REAGENTS_METABOLISM
+	metabolization_rate = ETHANOL_METABOLISM
 	var/boozepwr = 65 //Higher numbers equal higher hardness, higher hardness equals more intense alcohol poisoning
 	accelerant_quality = 5
 
@@ -55,7 +46,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 		if(HAS_TRAIT(C, TRAIT_ALCOHOL_TOLERANCE)) //we're an accomplished drinker
 			booze_power *= 0.7
 		if(HAS_TRAIT(C, TRAIT_LIGHT_DRINKER))
-			booze_power *= 2
+			booze_power *= 1.3
 		C.drunkenness = max((C.drunkenness + (sqrt(volume) * booze_power * ALCOHOL_RATE)), 0) //Volume, power, and server alcohol rate effect how quickly one gets drunk
 		if(boozepwr > 0)
 			var/obj/item/organ/liver/L = C.getorganslot(ORGAN_SLOT_LIVER)
@@ -67,14 +58,14 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	if(istype(O, /obj/item/paper))
 		var/obj/item/paper/paperaffected = O
 		paperaffected.clear_paper()
-		to_chat(usr, "<span class='notice'>[paperaffected]'s ink washes away.</span>")
+		to_chat(usr, span_notice("[paperaffected]'s ink washes away."))
 	if(istype(O, /obj/item/book))
 		if(reac_volume >= 5)
 			var/obj/item/book/affectedbook = O
 			affectedbook.dat = null
-			O.visible_message("<span class='notice'>[O]'s writing is washed away by [name]!</span>")
+			O.visible_message(span_notice("[O]'s writing is washed away by [name]!"))
 		else
-			O.visible_message("<span class='warning'>[O]'s ink is smeared by [name], but doesn't wash away!</span>")
+			O.visible_message(span_warning("[O]'s ink is smeared by [name], but doesn't wash away!"))
 	return
 
 /datum/reagent/consumable/ethanol/expose_mob(mob/living/M, method=TOUCH, reac_volume)//Splashing people with ethanol isn't quite as good as fuel.

@@ -1,4 +1,4 @@
-// Доступы для Нанотрахенов
+/// MARK: Доступы для Нанотрахенов
 
 /datum/outfit/job/nanotrasen/proc/get_nt_general_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
@@ -13,7 +13,7 @@
 				I = O
 				break
 		if (I)
-			I.access += list(ACCESS_OUTPOST_FACTION_SOLFED, ACCESS_OUTPOST_FACTION_NT)
+			I.access += list(ACCESS_OUTPOST_FACTION_NT)
 			I.update_label()
 		W.combined_access = list()
 		for (var/obj/item/card/id/card in W.contents)
@@ -22,6 +22,8 @@
 /datum/outfit/job/nanotrasen/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_nt_general_access(H)
+
+//// MARK: MARK: сурвивал бокс
 // Даёт всем НТшкам брендовый сурвивал бокс
 /datum/outfit/job/nanotrasen
 	box = /obj/item/storage/box/survival/nanotrasen
@@ -61,7 +63,8 @@
 
 /datum/outfit/job/nanotrasen/chemist
 	box = /obj/item/storage/box/survival/nanotrasen
-// Научный директор - РД
+
+//// MARK: MARK: Научный директор - РД
 
 /datum/outfit/job/nanotrasen/rd
 	name = "Nanotrasen - Science Director"
@@ -75,7 +78,7 @@
 	alt_suit = /obj/item/clothing/suit/toggle/suspenders
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/science
 	l_hand = /obj/item/clipboard
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)
+	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
 	backpack = /obj/item/storage/backpack/science
 	satchel = /obj/item/storage/backpack/satchel/tox
@@ -83,7 +86,7 @@
 
 	chameleon_extras = /obj/item/stamp/rd
 
-// Медицинский директор - СМО
+//// MARK: MARK: Медицинский директор - СМО
 
 /datum/outfit/job/nanotrasen/cmo
 	name = "Nanotrasen - Medical Director"
@@ -97,7 +100,6 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat/nanotrasen/blue
 	alt_suit = /obj/item/clothing/suit/toggle/suspenders
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 
 	backpack = /obj/item/storage/backpack/medic
 	satchel = /obj/item/storage/backpack/satchel/med
@@ -105,7 +107,7 @@
 
 	chameleon_extras = /obj/item/stamp/cmo
 
-// Медицинский Директор - СМО капитан
+//// MARK: MARK: Медицинский Директор - СМО капитан
 
 /datum/outfit/job/nanotrasen/cmo/captain
 	name = "Nanotrasen - Medical Director (Captain)"
@@ -122,7 +124,6 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	neck = /obj/item/clothing/neck/tie/blue
 	head = /obj/item/clothing/head/beret/cmo
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 
 	backpack = /obj/item/storage/backpack/medic
 	satchel = /obj/item/storage/backpack/satchel/med
@@ -133,10 +134,12 @@
 
 	chameleon_extras = /obj/item/stamp/cmo
 
-//Инженерный Директор - СЕ капитан
+//// MARK: MARK: Инженерный Директор - СЕ капитан
 
 /datum/outfit/job/nanotrasen/ce/captain
 	name = "Nanotrasen - Engineering Director (Captain)"
+	job_icon = "chiefengineer"
+	jobtype = /datum/job/captain
 
 	id = /obj/item/card/id/gold
 	belt = /obj/item/pda/heads/ce
@@ -147,7 +150,6 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	neck = /obj/item/clothing/neck/tie/orange
 	head = /obj/item/clothing/head/hardhat/nanotrasen/white
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
@@ -158,7 +160,7 @@
 
 	chameleon_extras = /obj/item/stamp/ce
 
-// Химик
+//// MARK: MARK: Химик
 
 /datum/outfit/job/nanotrasen/chemist
 	name = "Nanotrasen - Chemist"
@@ -179,7 +181,7 @@
 	courierbag = /obj/item/storage/backpack/messenger/chem
 	box = /obj/item/storage/box/survival/medical
 
-// Генетик
+/// MARK: Генетик
 
 /datum/outfit/job/nanotrasen/geneticist
 	name = "Nanotrasen - Genetical Researcher"
@@ -200,7 +202,7 @@
 	courierbag = /obj/item/storage/backpack/messenger/tox
 	box = /obj/item/storage/box/survival/medical
 
-// Директор СБ - ХОС капитан
+/// MARK: Директор СБ - ХОС капитан
 
 /datum/outfit/job/nanotrasen/hos/captain
 	name = "Nanotrasen - Security Director (Captain)"
@@ -218,7 +220,6 @@
 	shoes = /obj/item/clothing/shoes/combat
 	neck = /obj/item/clothing/neck/scarf/black
 	head = /obj/item/clothing/head/nanotrasen/beret/security/command
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 
 	backpack = /obj/item/storage/backpack/security
 	satchel = /obj/item/storage/backpack/satchel/sec
@@ -229,7 +230,7 @@
 
 	chameleon_extras = /obj/item/stamp/hos
 
-//лп уборщик
+/// MARK: лп уборщик
 
 /datum/outfit/job/nanotrasen/janitor/lp
 	name = "Nanotrasen - LP Janitorial Specialist"
@@ -246,7 +247,7 @@
 	gloves = /obj/item/clothing/gloves/color/purple
 	back = /obj/item/storage/backpack/ert/janitor
 
-//ЕРТ коммандер
+/// MARK: ЕРТ коммандер
 
 /datum/outfit/job/nanotrasen/security/ert/commander
 	name = "Nanotrasen - ERT Сommander"
@@ -263,7 +264,7 @@
 	backpack_contents = list(/obj/item/radio, /obj/item/flashlight/seclite, /obj/item/gun_voucher/nanotrasen)
 	glasses = /obj/item/clothing/glasses/sunglasses
 
-	//Nanotrasen Tactical Assault Team лидер
+/// MARK: Nanotrasen Tactical Assault Team лидер
 
 /datum/outfit/job/nanotrasen/ntas/commander
 	name = "NTAS Leader"
@@ -276,11 +277,9 @@
 	backpack = /obj/item/storage/backpack/ert
 	id = /obj/item/card/id/ert
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
-	backpack_contents = list(/obj/item/radio)
 	box = /obj/item/storage/box/survival/nanotrasen
 
-
-	//Nanotrasen Tactical Assault Team сбуха
+/// MARK: Nanotrasen Tactical Assault Team сбуха
 
 /datum/outfit/job/nanotrasen/ntas/operative
 	name = "NTAS Security Operative"
@@ -293,11 +292,10 @@
 	backpack = /obj/item/storage/backpack/ert/security
 	id = /obj/item/card/id/ert/security
 	ears = /obj/item/radio/headset/nanotrasen/alt
-	backpack_contents = list(/obj/item/radio)
 
 	box = /obj/item/storage/box/survival/nanotrasen
 
-	//Nanotrasen Tactical Assault Team медик
+/// MARK: Nanotrasen Tactical Assault Team медик
 
 /datum/outfit/job/nanotrasen/ntas/medic
 	name = "NTAS Medical Operative"
@@ -310,15 +308,14 @@
 	backpack = /obj/item/storage/backpack/ert/medical
 	id = /obj/item/card/id/ert/medical
 	ears = /obj/item/radio/headset/nanotrasen/alt
-	backpack_contents = list(/obj/item/radio)
+	backpack_contents = list(/obj/item/storage/firstaid/medical)
 
 	box = /obj/item/storage/box/survival/nanotrasen
 
-
-	//Nanotrasen Tactical Assault Team инженер
+/// MARK: Nanotrasen Tactical Assault Team инженер
 
 /datum/outfit/job/nanotrasen/ntas/engineer
-	name = "NTAS Medical Operative"
+	name = "NTAS Engineering Operative"
 	jobtype = /datum/job/chief_engineer
 	job_icon = "chiefengineer"
 	implants = list(/obj/item/implant/mindshield)
@@ -328,11 +325,10 @@
 	backpack = /obj/item/storage/backpack/ert/engineer
 	id = /obj/item/card/id/ert/engineer
 	ears = /obj/item/radio/headset/nanotrasen/alt
-	backpack_contents = list(/obj/item/radio)
 
 	box = /obj/item/storage/box/survival/nanotrasen
 
-	//Nanotrasen Tactical Assault Team уборщичек
+/// MARK: Nanotrasen Tactical Assault Team уборщичек
 
 /datum/outfit/job/nanotrasen/ntas/janitor
 	name = "NTAS Custodial Operative"
@@ -345,7 +341,87 @@
 	backpack = /obj/item/storage/backpack/ert/janitor
 	id = /obj/item/card/id/ert/janitor
 	ears = /obj/item/radio/headset/nanotrasen/alt
-	backpack_contents = list(/obj/item/radio)
 
 	box = /obj/item/storage/box/survival/nanotrasen
+
+/// MARK: слешер капитан
+
+/datum/outfit/job/nanotrasen/intel/captain
+	name = "Intelligence Officer"
+	jobtype = /datum/job/captain
+	job_icon = "captain"
+	implants = list(/obj/item/implant/mindshield)
+	uniform = /obj/item/clothing/under/nanotrasen/captain
+	shoes = /obj/item/clothing/shoes/combat
+	gloves = /obj/item/clothing/gloves/combat
+	backpack = /obj/item/storage/backpack/satchel/leather
+	suit = /obj/item/clothing/suit/armor/nanotrasen/captain/parade
+	suit_store = /obj/item/gun/ballistic/revolver/mateba
+	head = /obj/item/clothing/head/nanotrasen/captain/peaked
+	id = /obj/item/card/id/lplieu
+	glasses = /obj/item/clothing/glasses/sunglasses
+	ears = /obj/item/radio/headset/nanotrasen/alt/captain
+	backpack_contents = list(/obj/item/ammo_box/a357, /obj/item/ammo_box/a357)
+	box = /obj/item/storage/box/survival/nanotrasen
+
+/// MARK: слешер сбуха
+
+/datum/outfit/job/nanotrasen/intel/operative
+	name = "Security Operative"
+	jobtype = /datum/job/hos
+	job_icon = "headofsecurity"
+	implants = list(/obj/item/implant/mindshield)
+	uniform = /obj/item/clothing/under/rank/security/head_of_security/alt/lp
+	shoes = /obj/item/clothing/shoes/combat
+	gloves = /obj/item/clothing/gloves/combat
+	backpack = /obj/item/storage/backpack/ert/security
+	suit = /obj/item/clothing/suit/armor/nanotrasen
+	head = /obj/item/clothing/head/nanotrasen/beret/security/command
+	id = /obj/item/card/id/lpsec
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
+	ears = /obj/item/radio/headset/nanotrasen/alt
+
+	box = /obj/item/storage/box/survival/nanotrasen
+
+/// MARK: слешер медик
+
+/datum/outfit/job/nanotrasen/intel/medic
+	name = "Medical Technician"
+	jobtype = /datum/job/cmo
+	job_icon = "chiefmedicalofficer"
+	implants = list(/obj/item/implant/mindshield)
+	uniform = /obj/item/clothing/under/rank/medical/paramedic/lp
+	shoes = /obj/item/clothing/shoes/combat
+	gloves = /obj/item/clothing/gloves/combat
+	backpack = /obj/item/storage/backpack/ert/medical
+	head = /obj/item/clothing/head/soft/paramedic
+	id = /obj/item/card/id/lpmed
+	glasses = /obj/item/clothing/glasses/hud/health/sunglasses
+	ears = /obj/item/radio/headset/nanotrasen/alt
+	backpack_contents = list(/obj/item/storage/firstaid/medical)
+
+	box = /obj/item/storage/box/survival/nanotrasen
+
+/// MARK: слешер инженер
+
+/datum/outfit/job/nanotrasen/intel/engineer
+	name = "Engineering Technician"
+	jobtype = /datum/job/chief_engineer
+	job_icon = "chiefengineer"
+	implants = list(/obj/item/implant/mindshield)
+	uniform = /obj/item/clothing/under/rank/engineering/engineer/nt/lp
+	shoes = /obj/item/clothing/shoes/combat
+	gloves = /obj/item/clothing/gloves/combat
+	head = /obj/item/clothing/head/beret/eng/hazard
+	backpack = /obj/item/storage/backpack/ert/engineer
+	glasses = /obj/item/clothing/glasses/meson/engine
+	belt = /obj/item/storage/belt/utility/full/engi
+	id = /obj/item/card/id/lpengie
+	ears = /obj/item/radio/headset/nanotrasen/alt
+	backpack_contents = list(/obj/item/construction/rcd/loaded)
+
+
+
+
+
 

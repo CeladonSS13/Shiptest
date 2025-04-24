@@ -1,5 +1,5 @@
 /obj/machinery/computer/cargo/ui_data(mob/user) //чинит фракционное карго после фракционного карго оффов
-	var/canBeacon = beacon && (isturf(beacon.loc) || ismob(beacon.loc))//is the beacon in a valid location?
+	// var/canBeacon = beacon && (isturf(beacon.loc) || ismob(beacon.loc))//is the beacon in a valid location? // NEEDS_TO_FIX_ALARM!
 	var/list/data = list()
 
 	// not a big fan of get_containing_shuttle
@@ -16,22 +16,22 @@
 	data["outpostDocked"] = outpost_docked
 	data["points"] = charge_account ? charge_account.account_balance : 0
 	data["siliconUser"] = user.has_unlimited_silicon_privilege && check_ship_ai_access(user)
-	data["beaconZone"] = beacon ? get_area(beacon) : ""//where is the beacon located? outputs in the tgui
+	// data["beaconZone"] = beacon ? get_area(beacon) : ""//where is the beacon located? outputs in the tgui // NEEDS_TO_FIX_ALARM!
 	data["usingBeacon"] = use_beacon //is the mode set to deliver to the beacon or the cargobay?
-	data["canBeacon"] = !use_beacon || canBeacon //is the mode set to beacon delivery, and is the beacon in a valid location?
-	data["canBuyBeacon"] = charge_account ? (cooldown <= 0 && charge_account.account_balance >= BEACON_COST) : FALSE
-	data["beaconError"] = use_beacon && !canBeacon ? "(BEACON ERROR)" : ""//changes button text to include an error alert if necessary
-	data["hasBeacon"] = beacon != null//is there a linked beacon?
-	data["beaconName"] = beacon ? beacon.name : "No Beacon Found"
-	data["printMsg"] = cooldown > 0 ? "Print Beacon for [BEACON_COST] credits ([cooldown])" : "Print Beacon for [BEACON_COST] credits"//buttontext for printing beacons
+	// data["canBeacon"] = !use_beacon || canBeacon //is the mode set to beacon delivery, and is the beacon in a valid location? // NEEDS_TO_FIX_ALARM!
+	// data["canBuyBeacon"] = charge_account ? (cooldown <= 0 && charge_account.account_balance >= BEACON_COST) : FALSE
+	// data["beaconError"] = use_beacon && !canBeacon ? "(BEACON ERROR)" : ""//changes button text to include an error alert if necessary // NEEDS_TO_FIX_ALARM!
+	// data["hasBeacon"] = beacon != null//is there a linked beacon? // NEEDS_TO_FIX_ALARM!
+	// data["beaconName"] = beacon ? beacon.name : "No Beacon Found" // NEEDS_TO_FIX_ALARM!
+	// data["printMsg"] = cooldown > 0 ? "Print Beacon for [BEACON_COST] credits ([cooldown])" : "Print Beacon for [BEACON_COST] credits"//buttontext for printing beacons
 	data["supplies"] = list()
 	message = "Sales are near-instantaneous - please choose carefully."
 	if(SSshuttle.supplyBlocked)
 		message = blockade_warning
-	if(use_beacon && !beacon)
-		message = "BEACON ERROR: BEACON MISSING"//beacon was destroyed
-	else if (use_beacon && !canBeacon)
-		message = "BEACON ERROR: MUST BE EXPOSED"//beacon's loc/user's loc must be a turf
+	// if(use_beacon && !beacon) // NEEDS_TO_FIX_ALARM!
+		// message = "BEACON ERROR: BEACON MISSING"//beacon was destroyed
+	// else if (use_beacon && !canBeacon) // NEEDS_TO_FIX_ALARM!
+	// 	message = "BEACON ERROR: MUST BE EXPOSED"//beacon's loc/user's loc must be a turf
 	data["message"] = message
 
 	data["supplies"] = supply_pack_data
@@ -51,75 +51,7 @@
 
 	return data
 
-/*
-	Faction-less
-*/
-
-/obj/machinery/computer/cargo/faction
-	name = "faction outpost console"
-	desc = "Looks like that console hasn't correct faction connection. Please, message to our specialists!"
-	icon_screen = "civ_bounty"
-	circuit = /obj/item/circuitboard/computer/cargo
-	light_color = COLOR_LIME
-
-	contraband = FALSE
-	self_paid = FALSE
-
-	charge_account = ACCOUNT_FAC
-
-	podType = /obj/structure/closet/supplypod/centcompod
-
-	flags_1 = NODECONSTRUCT_1
-
-/obj/machinery/computer/cargo/faction/Initialize()
-	. = ..()
-	var/obj/item/circuitboard/computer/cargo/board = circuit
-	contraband = board.contraband
-	if (board.obj_flags & EMAGGED)
-		obj_flags |= EMAGGED
-	else
-		obj_flags &= ~EMAGGED
-	var/datum/bank_account/B = SSeconomy.get_dep_account(charge_account)
-	if(B)
-		charge_account = B
-	generate_pack_data()
-
-/obj/machinery/computer/cargo/faction/reconnect(obj/docking_port/mobile/port)
-	if(!port)
-		var/area/ship/current_area = get_area(src)
-		if(!istype(current_area))
-			return
-		port = current_area.mobile_port
-	if(!port)
-		return
-	landingzone = get_area(src)
-
-/obj/machinery/computer/cargo/faction/ui_interact(mob/user, datum/tgui/ui)
-	ui = SStgui.try_update_ui(user, src, ui)
-	if(!ui)
-		ui = new(user, src, "OutpostCommunicationsFaction", name)
-		ui.open()
-		if(!charge_account)
-			reconnect()
-
-/obj/machinery/computer/cargo/faction/generate_pack_data()
-	supply_pack_data = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!supply_pack_data[P.group])
-			supply_pack_data[P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if(P.hidden)
-			continue
-		supply_pack_data[P.group]["packs"] += list(list(
-			"name" = P.name,
-			"cost" = P.cost,
-			"id" = pack,
-			"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
-		))
-
+// UI статика	// КОД JOPA
 /obj/machinery/computer/cargo/faction/ui_static_data(mob/user)
 	var/list/data = list()
 	data["supplies"] = list()
@@ -137,10 +69,11 @@
 			"cost" = P.cost,
 			"id" = pack,
 			"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
-			"small_item" = P.small_item,
+			// "small_item" = P.small_item,
 		))
 	return data
 
+// Взаимодействие с UI
 /obj/machinery/computer/cargo/faction/ui_act(action, params, datum/tgui/ui)
 	. = ..()
 	if(.)
@@ -157,24 +90,24 @@
 					var/mob/living/carbon/human/user = usr
 					user.put_in_hands(cash_chip)
 				playsound(src, 'sound/machines/twobeep_high.ogg', 50, TRUE)
-				src.visible_message("<span class='notice'>[src] dispenses a holochip.</span>")
+				src.visible_message(span_notice("[src] dispenses a holochip."))
 			return TRUE
 
-		if("LZCargo")
-			use_beacon = FALSE
-			if (beacon)
-				beacon.update_status(SP_UNREADY) //ready light on beacon will turn off
-		if("LZBeacon")
-			use_beacon = TRUE
-			if (beacon)
-				beacon.update_status(SP_READY) //turns on the beacon's ready light
-		if("printBeacon")
-			if(charge_account?.adjust_money(-BEACON_COST))
-				cooldown = 10//a ~ten second cooldown for printing beacons to prevent spam
-				var/obj/item/supplypod_beacon/C = new /obj/item/supplypod_beacon(drop_location())
-				C.link_console(src, usr)//rather than in beacon's Initialize(), we can assign the computer to the beacon by reusing this proc)
-				printed_beacons++//printed_beacons starts at 0, so the first one out will be called beacon # 1
-				beacon.name = "Supply Pod Beacon #[printed_beacons]"
+		// if("LZCargo") // NEEDS_TO_FIX_ALARM!
+			// use_beacon = FALSE
+			// if (beacon)
+			// 	beacon.update_status(SP_UNREADY) //ready light on beacon will turn off
+		// if("LZBeacon")
+		// 	use_beacon = TRUE
+			// if (beacon)
+			// 	beacon.update_status(SP_READY) //turns on the beacon's ready light
+		// if("printBeacon")
+		// 	if(charge_account?.adjust_money(-BEACON_COST))
+		// 		cooldown = 10//a ~ten second cooldown for printing beacons to prevent spam
+		// 		var/obj/item/supplypod_beacon/C = new /obj/item/supplypod_beacon(drop_location())
+		// 		C.link_console(src, usr)//rather than in beacon's Initialize(), we can assign the computer to the beacon by reusing this proc)
+		// 		printed_beacons++//printed_beacons starts at 0, so the first one out will be called beacon # 1
+		// 		beacon.name = "Supply Pod Beacon #[printed_beacons]" // NEEDS_TO_FIX_ALARM!
 		if("add")
 			var/area/current_area = get_area(src)
 			var/datum/supply_pack/pack = SSshuttle.supply_packs[text2path(params["id"])]
@@ -182,10 +115,11 @@
 				return
 
 			var/turf/landing_turf
-			if(!isnull(beacon) && use_beacon) // prioritize beacons over landing in cargobay
-				landing_turf = get_turf(beacon)
-				beacon.update_status(SP_LAUNCH)
-			else if(!use_beacon)// find a suitable supplypod landing zone in cargobay
+			// if(!isnull(beacon) && use_beacon) // prioritize beacons over landing in cargobay // NEEDS_TO_FIX_ALARM!
+			// 	landing_turf = get_turf(beacon) // NEEDS_TO_FIX_ALARM!
+			// 	beacon.update_status(SP_LAUNCH) // NEEDS_TO_FIX_ALARM!
+			// else // NEEDS_TO_FIX_ALARM!
+			if(!use_beacon)// find a suitable supplypod landing zone in cargobay
 				var/list/empty_turfs = list()
 				if(!landingzone)
 					reconnect()
@@ -232,14 +166,153 @@
 			else if(mission.servant == ship)
 				if(mission.can_complete())
 					mission.turn_in()
-				else
-					mission.give_up()
+				// else
+				// 	mission.give_up() // NEEDS_TO_FIX_ALARM!
 				return TRUE
+
+// Взаимодействие с UI для фракций
+/obj/machinery/computer/cargo/faction/proc/faction_ui_interact(mob/user, datum/tgui/ui, var/text, obj/src)
+	ui = SStgui.try_update_ui(user, src, ui)
+	if(!ui)
+		ui = new(user, src, text, name)
+		ui.open()
+		if(!charge_account)
+			reconnect()
+
+// Генерация информации о доступных товарах для фракций
+/obj/machinery/computer/cargo/faction/proc/generate_faction_pack_data(datum/faction)
+	. = supply_pack_data = list()
+	for(var/pack in SSshuttle.supply_packs)
+		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
+
+		var/is_faction = ispath(P.faction, faction)
+		// Под независимые попадают и те, у которых фракция = null
+		if(ispath(faction, /datum/faction/independent) && P.faction == null)
+			is_faction = TRUE
+
+		if (is_faction)
+			// Если скрыто, не добавляем товар
+			if(P.hidden)
+				continue
+			// Если нет группы, создаём группу
+			if(!supply_pack_data[P.group])
+				supply_pack_data[P.group] = list(
+					"name" = P.group,
+					"packs" = list()
+				)
+			// Добавляем товар в группу
+			supply_pack_data[P.group]["packs"] += list(list(
+				"name" = P.name,
+				"cost" = P.cost,
+				"id" = pack,
+				"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
+			))
+
+	return supply_pack_data
+
+// Создание UI статики для фракций
+/obj/machinery/computer/cargo/faction/proc/faction_ui_static_data(mob/user, datum/faction)	// КОД JOPA
+	var/list/data = list()
+	data["supplies"] = list()
+	for(var/pack in SSshuttle.supply_packs)
+		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
+		var/is_faction = ispath(P.faction, faction)
+
+		if (is_faction)
+			// Если скрыто, и не ЕМАГнуто - не показываем товар
+			if(P.hidden && !(obj_flags & EMAGGED))
+				continue
+			// Если нет группы, создаём группу
+			if(!data["supplies"][P.group])
+				data["supplies"][P.group] = list(
+					"name" = P.group,
+					"packs" = list()
+				)
+			// Добавляем товар в группу
+			data["supplies"][P.group]["packs"] += list(list(
+				"name" = P.name,
+				"cost" = P.cost,
+				"id" = pack,
+				"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
+				// "small_item" = P.small_item,
+			))
+
+
+	return data
+
+/*
+	Без фракции
+*/
+/obj/machinery/computer/cargo/faction
+	name = "faction outpost console"
+	desc = "Looks like that console hasn't correct faction connection. Please, message to our specialists!"
+	icon_screen = "civ_bounty"
+	circuit = /obj/item/circuitboard/computer/cargo
+	light_color = COLOR_LIME
+
+	contraband = FALSE
+	self_paid = FALSE
+
+	charge_account = ACCOUNT_FAC
+
+	podType = /obj/structure/closet/supplypod/centcompod
+
+	flags_1 = NODECONSTRUCT_1
+	tgui_shared_states = list(outpostTab = "\"cargo\"")
+
+/obj/machinery/computer/cargo/faction/Initialize()
+	. = ..()
+	var/obj/item/circuitboard/computer/cargo/board = circuit
+	contraband = board.contraband
+	if (board.obj_flags & EMAGGED)
+		obj_flags |= EMAGGED
+	else
+		obj_flags &= ~EMAGGED
+	var/datum/bank_account/B = SSeconomy.get_dep_account(charge_account)
+	if(B)
+		charge_account = B
+	generate_pack_data()
+
+/obj/machinery/computer/cargo/faction/reconnect(obj/docking_port/mobile/port)
+	if(!port)
+		var/area/ship/current_area = get_area(src)
+		if(!istype(current_area))
+			return
+		port = current_area.mobile_port
+	if(!port)
+		return
+	landingzone = get_area(src)
+
+/obj/machinery/computer/cargo/faction/ui_interact(mob/user, datum/tgui/ui)
+	ui = SStgui.try_update_ui(user, src, ui)
+	if(!ui)
+		ui = new(user, src, "OutpostCommunicationsFaction", name)
+		ui.open()
+		if(!charge_account)
+			reconnect()
+
+// Генерация инфы о всех товарах для нефракционного карго
+/obj/machinery/computer/cargo/faction/generate_pack_data()
+	supply_pack_data = list()
+	for(var/pack in SSshuttle.supply_packs)
+		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
+		if(!supply_pack_data[P.group])
+			supply_pack_data[P.group] = list(
+				"name" = P.group,
+				"packs" = list()
+			)
+		if(P.hidden)
+			continue
+		supply_pack_data[P.group]["packs"] += list(list(
+			"name" = P.name,
+			"cost" = P.cost,
+			"id" = pack,
+			"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
+		))
 
 /*
 	Syndicate
 */
-
 /obj/machinery/computer/cargo/faction/syndicate
 	name = "syndicate outpost console"
 	desc = "That outpost console belongs to Syndicate."
@@ -250,62 +323,39 @@
 	contraband = FALSE
 	self_paid = FALSE
 
-	podType = /obj/structure/closet/supplypod/extractionpod
+	podType = /obj/structure/closet/supplypod/syndicate
 
 	charge_account = ACCOUNT_SYN
 
 /obj/machinery/computer/cargo/faction/syndicate/ui_interact(mob/user, datum/tgui/ui)
-	ui = SStgui.try_update_ui(user, src, ui)
-	if(!ui)
-		ui = new(user, src, "OutpostCommunicationsFactionSyndicate", name)
-		ui.open()
-		if(!charge_account)
-			reconnect()
+	faction_ui_interact(user, ui, "OutpostCommunicationsFactionSyndicate", src)
+
 
 /obj/machinery/computer/cargo/faction/syndicate/generate_pack_data()
-	supply_pack_data = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!supply_pack_data[P.group] && P.faction == "syndicate")
-			supply_pack_data[P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if(P.hidden && (P.faction != "syndicate"))
-			continue
-		if(P.faction == "syndicate")
-			supply_pack_data[P.group]["packs"] += list(list(
-				"name" = P.name,
-				"cost" = P.cost,
-				"id" = pack,
-				"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
-			))
+	supply_pack_data = generate_faction_pack_data(/datum/faction/syndicate)
 
 /obj/machinery/computer/cargo/faction/syndicate/ui_static_data(mob/user)
-	var/list/data = list()
-	data["supplies"] = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!data["supplies"][P.group])
-			data["supplies"][P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if((P.hidden && !(obj_flags & EMAGGED)) && (P.faction != "syndicate"))
-			continue
-		data["supplies"][P.group]["packs"] += list(list(
-			"name" = P.name,
-			"cost" = P.cost,
-			"id" = pack,
-			"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
-			"small_item" = P.small_item,
-		))
+	var/list/data = faction_ui_static_data(user, /datum/faction/syndicate)
 	return data
+
+/obj/structure/closet/supplypod/syndicate
+	name = "Syndicate Extraction Pod"
+	desc = "A specalised, blood-red styled pod for extracting high-value targets out of active mission areas."
+	specialised = TRUE
+	style = STYLE_SYNDICATE
+	bluespace = TRUE
+	explosionSize = list(0,0,0,0)
+	delays = list(POD_TRANSIT = 20, POD_FALLING = 4, POD_OPENING = 30, POD_LEAVING = 30)
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
+
+/obj/structure/closet/supplypod/syndicate/Initialize()
+	. = ..()
+	var/turf/picked_turf = pick(GLOB.holdingfacility)
+	reverse_dropoff_coords = list(picked_turf.x, picked_turf.y, picked_turf.z)
 
 /*
 	Inteq
 */
-
 /obj/machinery/computer/cargo/faction/inteq
 	name = "inteq outpost console"
 	desc = "That outpost console belongs to Inteq."
@@ -321,57 +371,18 @@
 	charge_account = ACCOUNT_INT
 
 /obj/machinery/computer/cargo/faction/inteq/ui_interact(mob/user, datum/tgui/ui)
-	ui = SStgui.try_update_ui(user, src, ui)
-	if(!ui)
-		ui = new(user, src, "OutpostCommunicationsFactionInteq", name)
-		ui.open()
-		if(!charge_account)
-			reconnect()
+	faction_ui_interact(user, ui, "OutpostCommunicationsFactionInteq", src)
 
 /obj/machinery/computer/cargo/faction/inteq/generate_pack_data()
-	supply_pack_data = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!supply_pack_data[P.group] && P.faction == "inteq")
-			supply_pack_data[P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if(P.hidden && (P.faction != "inteq"))
-			continue
-		if(P.faction == "inteq")
-			supply_pack_data[P.group]["packs"] += list(list(
-				"name" = P.name,
-				"cost" = P.cost,
-				"id" = pack,
-				"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
-			))
+	supply_pack_data = generate_faction_pack_data(/datum/faction/inteq)
 
 /obj/machinery/computer/cargo/faction/inteq/ui_static_data(mob/user)
-	var/list/data = list()
-	data["supplies"] = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!data["supplies"][P.group])
-			data["supplies"][P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if((P.hidden && !(obj_flags & EMAGGED)) && (P.faction != "inteq"))
-			continue
-		data["supplies"][P.group]["packs"] += list(list(
-			"name" = P.name,
-			"cost" = P.cost,
-			"id" = pack,
-			"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
-			"small_item" = P.small_item,
-		))
+	var/list/data = faction_ui_static_data(user, /datum/faction/inteq)
 	return data
 
 /*
 	SolFed
 */
-
 /obj/machinery/computer/cargo/faction/solfed
 	name = "SolFed outpost console"
 	desc = "That outpost console belongs to SolFed."
@@ -387,57 +398,18 @@
 	charge_account = ACCOUNT_SLF
 
 /obj/machinery/computer/cargo/faction/solfed/ui_interact(mob/user, datum/tgui/ui)
-	ui = SStgui.try_update_ui(user, src, ui)
-	if(!ui)
-		ui = new(user, src, "OutpostCommunicationsFactionSolfed", name)
-		ui.open()
-		if(!charge_account)
-			reconnect()
+	faction_ui_interact(user, ui, "OutpostCommunicationsFactionSolfed", src)
 
 /obj/machinery/computer/cargo/faction/solfed/generate_pack_data()
-	supply_pack_data = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!supply_pack_data[P.group] && P.faction == "solfed")
-			supply_pack_data[P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if(P.hidden && (P.faction != "solfed"))
-			continue
-		if(P.faction == "solfed")
-			supply_pack_data[P.group]["packs"] += list(list(
-				"name" = P.name,
-				"cost" = P.cost,
-				"id" = pack,
-				"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
-			))
+	supply_pack_data = generate_faction_pack_data(/datum/faction/solgov)
 
 /obj/machinery/computer/cargo/faction/solfed/ui_static_data(mob/user)
-	var/list/data = list()
-	data["supplies"] = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!data["supplies"][P.group])
-			data["supplies"][P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if((P.hidden && !(obj_flags & EMAGGED)) && (P.faction != "solfed"))
-			continue
-		data["supplies"][P.group]["packs"] += list(list(
-			"name" = P.name,
-			"cost" = P.cost,
-			"id" = pack,
-			"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
-			"small_item" = P.small_item,
-		))
+	var/list/data = faction_ui_static_data(user, /datum/faction/solgov)
 	return data
 
 /*
 	Independent
 */
-
 /obj/machinery/computer/cargo/faction/independent
 	name = "Independent outpost console"
 	desc = "That outpost console belongs to Independent faction."
@@ -453,57 +425,38 @@
 	charge_account = ACCOUNT_IND
 
 /obj/machinery/computer/cargo/faction/independent/ui_interact(mob/user, datum/tgui/ui)
-	ui = SStgui.try_update_ui(user, src, ui)
-	if(!ui)
-		ui = new(user, src, "OutpostCommunicationsFactionIndependent", name)
-		ui.open()
-		if(!charge_account)
-			reconnect()
+	faction_ui_interact(user, ui, "OutpostCommunicationsFactionIndependent", src)
 
 /obj/machinery/computer/cargo/faction/independent/generate_pack_data()
-	supply_pack_data = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!supply_pack_data[P.group] && !P.faction)
-			supply_pack_data[P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if(P.hidden && (P.faction != "independent"))
-			continue
-		if(!P.faction)
-			supply_pack_data[P.group]["packs"] += list(list(
-				"name" = P.name,
-				"cost" = P.cost,
-				"id" = pack,
-				"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
-			))
+	supply_pack_data = generate_faction_pack_data(/datum/faction/independent)
 
 /obj/machinery/computer/cargo/faction/independent/ui_static_data(mob/user)
-	var/list/data = list()
-	data["supplies"] = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!data["supplies"][P.group])
-			data["supplies"][P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if((P.hidden && !(obj_flags & EMAGGED)) && (P.faction != "independent"))
-			continue
-		data["supplies"][P.group]["packs"] += list(list(
-			"name" = P.name,
-			"cost" = P.cost,
-			"id" = pack,
-			"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
-			"small_item" = P.small_item,
-		))
+	var/list/data = faction_ui_static_data(user, /datum/faction/independent)
 	return data
 
-/*
-Nanotrasen
-*/
+/obj/machinery/computer/cargo/faction/independent/computer_1
+	name = "Independent outpost console #1"
+	desc = "That outpost console #1 belongs to Independent faction."
+	charge_account = ACCOUNT_IND_1
 
+/obj/machinery/computer/cargo/faction/independent/computer_2
+	name = "Independent outpost console #2"
+	desc = "That outpost console #2 belongs to Independent faction."
+	charge_account = ACCOUNT_IND_2
+
+/obj/machinery/computer/cargo/faction/independent/computer_3
+	name = "Independent outpost console #3"
+	desc = "That outpost console #3 belongs to Independent faction."
+	charge_account = ACCOUNT_IND_3
+
+/obj/machinery/computer/cargo/faction/independent/computer_4
+	name = "Independent outpost console #4"
+	desc = "That outpost console #4 belongs to Independent faction."
+	charge_account = ACCOUNT_IND_4
+
+/*
+	Nanotrasen
+*/
 /obj/machinery/computer/cargo/faction/nanotrasen
 	name = "Nanotrasen outpost console"
 	desc = "That outpost console belongs to Nanotrasen."
@@ -519,49 +472,11 @@ Nanotrasen
 	charge_account = ACCOUNT_NTN
 
 /obj/machinery/computer/cargo/faction/nanotrasen/ui_interact(mob/user, datum/tgui/ui)
-	ui = SStgui.try_update_ui(user, src, ui)
-	if(!ui)
-		ui = new(user, src, "OutpostCommunicationsFactionNanotrasen", name)
-		ui.open()
-		if(!charge_account)
-			reconnect()
+	faction_ui_interact(user, ui, "OutpostCommunicationsFactionNanotrasen", src)
 
 /obj/machinery/computer/cargo/faction/nanotrasen/generate_pack_data()
-	supply_pack_data = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!supply_pack_data[P.group] && P.faction == "nanotrasen")
-			supply_pack_data[P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if(P.hidden && (P.faction != "nanotrasen"))
-			continue
-		if(P.faction == "nanotrasen")
-			supply_pack_data[P.group]["packs"] += list(list(
-				"name" = P.name,
-				"cost" = P.cost,
-				"id" = pack,
-				"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
-			))
+	supply_pack_data = generate_faction_pack_data(/datum/faction/nt)
 
 /obj/machinery/computer/cargo/faction/nanotrasen/ui_static_data(mob/user)
-	var/list/data = list()
-	data["supplies"] = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!data["supplies"][P.group])
-			data["supplies"][P.group] = list(
-				"name" = P.group,
-				"packs" = list()
-			)
-		if((P.hidden && !(obj_flags & EMAGGED)) && (P.faction != "nanotrasen"))
-			continue
-		data["supplies"][P.group]["packs"] += list(list(
-			"name" = P.name,
-			"cost" = P.cost,
-			"id" = pack,
-			"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
-			"small_item" = P.small_item,
-		))
+	var/list/data = faction_ui_static_data(user, /datum/faction/nt)
 	return data

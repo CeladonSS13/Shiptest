@@ -569,7 +569,6 @@
 	name = "lead doctor's jacket"
 	},
 /obj/item/clothing/glasses/hud/health/night,
-/obj/item/hypospray/mkii/CMO,
 /obj/item/clothing/under/syndicate/suns/xo,
 /obj/item/clothing/head/suns,
 /obj/item/clothing/mask/breath/suns,
@@ -786,7 +785,7 @@
 /area/ship/medical)
 "go" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/cloth,
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
@@ -5144,7 +5143,7 @@
 /area/ship/engineering)
 "XX" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/cloth,
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/carpet/red,

@@ -26,11 +26,11 @@
 /area/ruin)
 "ci" = (
 /obj/structure/stone_tile/slab/cracked,
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "ct" = (
 /obj/structure/stone_tile/cracked,
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "cA" = (
 /obj/structure/stone_tile/surrounding_tile/cracked{
@@ -53,7 +53,7 @@
 /obj/structure/stone_tile/cracked{
 	dir = 4
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "dV" = (
 /obj/structure/stone_tile/slab,
@@ -66,7 +66,7 @@
 /obj/structure/stone_tile/block/cracked{
 	dir = 10
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "ex" = (
 /obj/structure/stone_tile/surrounding_tile/cracked{
@@ -75,10 +75,10 @@
 /obj/structure/stone_tile/surrounding_tile/cracked{
 	dir = 8
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "eS" = (
-/obj/structure/grille/indestructable,
+/obj/structure/grille/indestructible,
 /turf/open/floor/plasteel/rockvault/sandstone,
 /area/ruin/powered)
 "eU" = (
@@ -94,10 +94,10 @@
 	dir = 1
 	},
 /obj/structure/stone_tile/center,
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "fY" = (
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "gC" = (
 /obj/item/storage/bag/quiver/empty,
@@ -144,7 +144,7 @@
 /obj/structure/stone_tile/slab/cracked{
 	dir = 6
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "jQ" = (
 /obj/structure/stone_tile/surrounding_tile/cracked{
@@ -156,7 +156,7 @@
 /obj/structure/stone_tile/surrounding_tile/cracked{
 	dir = 1
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "ka" = (
 /obj/structure/flora/grass/brown,
@@ -217,7 +217,7 @@
 /obj/structure/stone_tile/block/cracked{
 	dir = 4
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "sm" = (
 /obj/structure/stone_tile/slab/cracked,
@@ -240,7 +240,7 @@
 /obj/structure/stone_tile/surrounding_tile/cracked{
 	dir = 8
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "tD" = (
 /turf/template_noop,
@@ -271,7 +271,7 @@
 /obj/structure/stone_tile/slab/cracked{
 	dir = 4
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "wl" = (
 /obj/item/clothing/suit/armor/vest/capcarapace,
@@ -353,7 +353,7 @@
 /obj/structure/stone_tile/surrounding_tile/cracked{
 	dir = 8
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "Ai" = (
 /obj/structure/stone_tile/cracked,
@@ -372,7 +372,7 @@
 	dir = 5
 	},
 /obj/structure/stone_tile/surrounding_tile/cracked,
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "CN" = (
 /obj/structure/stone_tile/cracked{
@@ -381,13 +381,13 @@
 /obj/structure/stone_tile/surrounding_tile/cracked{
 	dir = 8
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "CS" = (
 /obj/structure/stone_tile/cracked{
 	dir = 8
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "Dz" = (
 /obj/structure/stone_tile/block/cracked{
@@ -406,9 +406,6 @@
 /area/ruin/powered)
 "EF" = (
 /obj/structure/bonfire/prelit,
-/turf/open/floor/mineral/gold,
-/area/ruin/powered)
-"Fw" = (
 /turf/open/floor/mineral/gold,
 /area/ruin/powered)
 "FA" = (
@@ -434,20 +431,20 @@
 /obj/item/melee/sword/claymore{
 	pixel_x = 20
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "Hb" = (
 /obj/structure/stone_tile/block/cracked{
 	dir = 1
 	},
 /obj/structure/stone_tile/cracked,
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "HL" = (
 /obj/structure/stone_tile/cracked{
 	dir = 1
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "IB" = (
 /obj/structure/stone_tile/block/cracked{
@@ -475,7 +472,7 @@
 /obj/structure/stone_tile/slab/cracked{
 	dir = 8
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "Li" = (
 /obj/structure/fluff/drake_statue,
@@ -514,7 +511,7 @@
 /obj/structure/stone_tile/cracked{
 	dir = 8
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "Pt" = (
 /obj/machinery/button/door{
@@ -527,7 +524,7 @@
 /obj/structure/stone_tile/slab/cracked{
 	dir = 5
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "QM" = (
 /obj/item/coin/gold,
@@ -535,13 +532,13 @@
 /area/ruin/powered)
 "Sj" = (
 /obj/structure/stone_tile/center,
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "SI" = (
 /obj/structure/stone_tile/block/cracked{
 	dir = 6
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "Tf" = (
 /obj/item/coin/gold,
@@ -554,11 +551,11 @@
 	dir = 1
 	},
 /obj/structure/stone_tile/surrounding_tile/cracked,
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "VO" = (
 /obj/structure/stone_tile/slab,
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "Wb" = (
 /obj/effect/gibspawner,
@@ -569,7 +566,7 @@
 /obj/structure/stone_tile/cracked{
 	dir = 4
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "WN" = (
 /obj/machinery/door/airlock/gold/glass,
@@ -597,7 +594,7 @@
 /obj/structure/stone_tile/surrounding_tile/cracked{
 	dir = 4
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "XG" = (
 /obj/machinery/door/poddoor/gates/indestructible{
@@ -633,13 +630,13 @@
 /obj/structure/stone_tile/surrounding_tile/cracked{
 	dir = 1
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "Zl" = (
 /obj/structure/stone_tile/block/cracked{
 	dir = 1
 	},
-/turf/open/floor/grass/snow/basalt,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/ice/explored)
 "Zp" = (
 /obj/item/gun/ballistic/bow,
@@ -859,9 +856,9 @@ nD
 nD
 QM
 xW
-Fw
+kA
 QM
-Fw
+kA
 nD
 Pt
 uu
@@ -888,7 +885,7 @@ Gb
 Gb
 wX
 nD
-Fw
+kA
 QM
 QM
 cd
@@ -921,7 +918,7 @@ Gb
 wX
 nD
 QM
-Fw
+kA
 Ax
 QM
 QM
@@ -956,7 +953,7 @@ QM
 xW
 eU
 Zp
-Fw
+kA
 QM
 nD
 uu
@@ -988,8 +985,8 @@ dK
 QM
 QM
 dK
-Fw
-Fw
+kA
+kA
 nD
 uu
 uu
@@ -1016,8 +1013,8 @@ wX
 wX
 wX
 nD
-Fw
-Fw
+kA
+kA
 eU
 Ax
 QM
@@ -1049,7 +1046,7 @@ nD
 nD
 nD
 kP
-Fw
+kA
 QM
 EF
 nD
@@ -1079,8 +1076,8 @@ Gb
 wX
 nD
 Cc
-Fw
-Fw
+kA
+kA
 kP
 QM
 QM
@@ -1111,8 +1108,8 @@ Gb
 wX
 nD
 kA
-Fw
-Fw
+kA
+kA
 JS
 wl
 wD
@@ -1143,10 +1140,10 @@ tD
 wX
 nD
 Cc
-Fw
-Fw
-Fw
-Fw
+kA
+kA
+kA
+kA
 kP
 xo
 wK
@@ -1208,11 +1205,11 @@ wX
 wX
 wX
 nD
-Fw
-Fw
-Fw
+kA
+kA
+kA
 JS
-Fw
+kA
 EF
 nD
 xX
@@ -1272,10 +1269,10 @@ tD
 Gb
 wX
 nD
-Fw
+kA
 QM
-Fw
-Fw
+kA
+kA
 eU
 QM
 nD
@@ -1305,11 +1302,11 @@ Gb
 wX
 nD
 QM
-Fw
+kA
 QM
 QM
-Fw
-Fw
+kA
+kA
 WN
 uu
 uu
@@ -1340,7 +1337,7 @@ nD
 QM
 Ax
 vB
-Fw
+kA
 QM
 nD
 YQ
@@ -1402,7 +1399,7 @@ yD
 wX
 nD
 EF
-Fw
+kA
 EF
 nD
 XJ

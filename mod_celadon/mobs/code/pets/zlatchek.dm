@@ -10,3 +10,6 @@
 	icon_dead = "zlat_dead"
 	held_state = "ada"
 	icon = 'mod_celadon/_storge_icons/icons/mobs/kovac_animals.dmi'
+
+/mob/living/simple_animal/pet/dog/corgi/Lisa/zlatchek/Life()
+	return

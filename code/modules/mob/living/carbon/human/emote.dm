@@ -424,7 +424,7 @@
 	key_third_person = "whistles"
 	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
 	// message = "whistles!"	// CELADON-EDIT - ORIGINAL
-	message = "Свистит!"
+	message = "свистит!"
 	// [/CELADON-EDIT]
 	emote_type = EMOTE_AUDIBLE
 	vary = TRUE

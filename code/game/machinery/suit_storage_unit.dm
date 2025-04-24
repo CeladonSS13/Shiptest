@@ -184,10 +184,15 @@
 
 /obj/machinery/suit_storage_unit/minutemen
 	suit_type = /obj/item/clothing/suit/space/hardsuit/clip_patroller
-	mask_type = /obj/item/clothing/mask/breath
+	mask_type = /obj/item/clothing/mask/gas/clip
 
 /obj/machinery/suit_storage_unit/minutemen/spotter
 	suit_type = /obj/item/clothing/suit/space/hardsuit/clip_spotter
+
+/obj/machinery/suit_storage_unit/minutemen/pilot
+	suit_type = /obj/item/clothing/suit/space/pilot
+	helmet_type = /obj/item/clothing/head/helmet/bulletproof/m10/clip_vc
+	mask_type = /obj/item/clothing/mask/breath
 
 //End shiptest suits
 

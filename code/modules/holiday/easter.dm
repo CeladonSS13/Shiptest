@@ -109,7 +109,7 @@
 	/obj/item/toy/balloon,
 	/obj/item/toy/gun,
 	/obj/item/toy/sword,
-	// [CELADON-ADD] - CELADON_RETURN_CONTENT
+	// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 	/obj/item/clothing/head/bunnyhead,
 	/obj/item/clothing/suit/bunnysuit,
 	/obj/item/clothing/head/collectable/rabbitears,
@@ -143,7 +143,7 @@
 /obj/item/reagent_containers/food/snacks/egg/attack_self(mob/user)
 	..()
 	if(containsPrize)
-		to_chat(user, "<span class='notice'>You unwrap [src] and find a prize inside!</span>")
+		to_chat(user, span_notice("You unwrap [src] and find a prize inside!"))
 		dispensePrize(get_turf(user))
 		containsPrize = FALSE
 		qdel(src)
