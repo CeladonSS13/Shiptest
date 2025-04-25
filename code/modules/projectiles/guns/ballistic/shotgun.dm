@@ -153,7 +153,7 @@ NO_MAG_GUN_HELPER(shotgun/automatic/bulldog/inteq)
 	// [CELADON-ADD] - CELADON_RETURN_COMBAT_SHOTGUN
 	inhand_x_dimension = 64
 	inhand_y_dimension = 64
-	// [/CELADON-EDIT]
+	// [/CELADON-ADD]
 	base_icon_state = "ishotgun"
 	icon_state = "ishotgun"
 	item_state = "ishotgun"
