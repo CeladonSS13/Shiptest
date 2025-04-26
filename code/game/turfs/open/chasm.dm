@@ -21,17 +21,16 @@
 	. += span_warning("You WILL fucking die if you step on this!!!")
 
 /// Lets people walk into chasms.
-/turf/open/chasm/CanAllowThrough(atom/movable/mover, border_dir, mob/living)
+/turf/open/chasm/CanAllowThrough(atom/movable/mover, border_dir)
 	. = ..()
-
-	if(mob/living/isLivingSSD(mover))
-		return FALSE
 	if(!isliving(mover))
 		return TRUE
 	if(mover.movement_type & (FLOATING|FLYING))
 		return TRUE
+	// [CELADON-ADD] - RETURN_CHASM - Не удалось сделать чтобы ССДшники не падали
 	if(mover.movement_type & (PHASING|GROUND))
 		return TRUE
+	// [/CELADON-ADD]
 	return FALSE
 
 /turf/open/chasm/proc/set_target(turf/target)
