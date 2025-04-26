@@ -432,8 +432,9 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
-/obj/item/ammo_box/magazine/skm_46_30,
-/obj/item/storage/box/ammo/c46x30mm,
+/obj/item/storage/box/ammo/c46x30mm/rubber,
+/obj/item/ammo_box/magazine/skm_46_30/empty,
+/obj/item/ammo_box/magazine/skm_46_30/empty,
 /turf/open/floor/wood/ebony,
 /area/ship/bridge)
 "aS" = (
@@ -465,13 +466,14 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/item/spacecash/bundle/c20,
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg,
-/obj/item/robot_module/meka/security,
-/obj/item/robot_module/meka/syndicate_medical,
-/obj/item/robot_module/miner,
-/obj/item/robot_module/meka/medical,
-/obj/item/robot_module/meka,
 /obj/item/gun/ballistic/shotgun/doublebarrel,
 /obj/item/gun/ballistic/shotgun/doublebarrel,
+/obj/item/research_notes/loot/genius,
+/obj/item/research_notes/loot/genius,
+/obj/item/hemostat/alien,
+/obj/item/electropack,
+/obj/item/fishing_rod/tech,
+/obj/item/malf_upgrade,
 /turf/open/floor/plasteel/mono,
 /area/ship/security/armory)
 "aV" = (
@@ -1768,7 +1770,7 @@
 	},
 /obj/item/spacecash/bundle/c500,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/obj/item/gun/ballistic/automatic/smg/skm_carbine,
+/obj/item/gun/ballistic/automatic/smg/skm_carbine/no_mag,
 /turf/open/floor/wood/ebony,
 /area/ship/bridge)
 "dk" = (
@@ -1973,6 +1975,9 @@
 /area/ship/crew/cryo)
 "dA" = (
 /obj/effect/turf_decal/box,
+/obj/structure/closet/crate,
+/obj/item/circuitboard/machine/boarding_pad,
+/obj/item/circuitboard/machine/boarding_pad,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "dB" = (
@@ -2473,6 +2478,13 @@
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/security/armory)
+"VK" = (
+/obj/item/storage/secure/safe{
+	pixel_x = 33;
+	dir = 4
+	},
+/turf/template_noop,
+/area/template_noop)
 "Xo" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -2573,7 +2585,7 @@ yk
 ct
 "}
 (5,1,1) = {"
-aa
+VK
 ac
 dq
 bQ

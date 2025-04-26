@@ -154,7 +154,7 @@
 /area/ship/security)
 "fR" = (
 /obj/effect/turf_decal/box,
-/obj/structure/frame/machine,
+/obj/machinery/boarding_pad,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "hb" = (
@@ -185,8 +185,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/box,
-/obj/item/stack/ore/bluespace_crystal,
-/obj/structure/frame/machine,
+/obj/machinery/boarding_pad,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "kK" = (
@@ -445,10 +444,6 @@
 	pixel_x = 9;
 	pixel_y = -1
 	},
-/obj/item/gun/energy/disabler{
-	pixel_x = -3;
-	pixel_y = -5
-	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "pW" = (
@@ -535,35 +530,16 @@
 	pixel_x = -2;
 	pixel_y = -1
 	},
-/obj/item/ammo_box/magazine/smgm9mm/rubber{
-	pixel_x = -5;
-	pixel_y = -2
-	},
-/obj/item/ammo_box/magazine/smgm9mm/rubber{
-	pixel_x = -8;
-	pixel_y = -3
-	},
-/obj/item/storage/box/ammo/c9mm_rubber{
-	pixel_x = 8;
-	pixel_y = 10
-	},
 /obj/item/storage/box/ammo/c9mm_rubber{
 	pixel_x = 8;
 	pixel_y = 8
 	},
 /obj/item/storage/box/ammo/c9mm_rubber{
 	pixel_x = 8;
-	pixel_y = 6
-	},
-/obj/item/storage/box/ammo/c9mm_rubber{
-	pixel_x = 8;
 	pixel_y = 4
 	},
 /obj/item/gun/ballistic/automatic/smg/vector/no_mag,
-/obj/item/gun/ballistic/automatic/smg/skm_carbine/saber/no_mag{
-	pixel_x = -12;
-	pixel_y = 7
-	},
+/obj/item/gun/energy/laser/iot,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "rL" = (
@@ -660,8 +636,6 @@
 	dir = 4
 	},
 /obj/machinery/light/small/directional/south,
-/obj/item/stack/ore/bluespace_crystal,
-/obj/item/stack/ore/bluespace_crystal,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "tZ" = (
@@ -1862,11 +1836,6 @@
 	},
 /obj/effect/decal/cleanable/oil/streak,
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/item/circuitboard/machine/boarding_pad,
-/obj/item/circuitboard/machine/boarding_pad{
-	pixel_x = 3;
-	pixel_y = -3
-	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
 "WK" = (
