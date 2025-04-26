@@ -614,7 +614,7 @@ SUBSYSTEM_DEF(overmap)
 			),
 			// [CELADON-EDIT] - CELADON_MAP_EXPANSION - Координаты спавна руин
 			// vlevel.high_y-used_ruin.height-6 - vlevel.reserved_margin,	// ORIGINAL
-			vlevel.high_y - used_ruin.height - 70 - vlevel.reserved_margin,
+			vlevel.high_y - used_ruin.height - 60 - vlevel.reserved_margin,
 			// [/CELADON-EDIT]
 			vlevel.z_value
 		)
