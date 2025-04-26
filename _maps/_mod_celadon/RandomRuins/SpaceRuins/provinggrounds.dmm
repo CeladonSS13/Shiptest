@@ -27,7 +27,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 64;
+	id = "64";
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -37,11 +37,12 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ruin/space/has_grav/astraeus/munitions)
 "bo" = (
-/obj/machinery/button{
-	id = 256;
-	name = "Zone Delta Shutters";
-	pixel_x = 8;
-	pixel_y = -8
+/obj/machinery/button/door{
+	name = "Zone Delta shutters";
+	dir = 4;
+	pixel_x = 7;
+	pixel_y = 3;
+	id = "256"
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space/has_grav)
@@ -89,7 +90,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 99;
+	id = "99";
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -121,13 +122,22 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav)
 "dx" = (
-/obj/machinery/button{
-	id = 128;
+/obj/machinery/button/door{
 	name = "Zone Charlie shutters";
-	pixel_x = -8;
-	pixel_y = -8
+	dir = 8;
+	pixel_y = 3;
+	id = "128";
+	pixel_x = -7
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/space/has_grav)
+"dH" = (
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "99"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav)
 "dN" = (
 /obj/machinery/light/directional/north,
@@ -137,7 +147,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 256
+	id = "256"
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav)
@@ -159,7 +169,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 6;
+	id = "6";
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -177,7 +187,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 4
+	id = "102"
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav)
@@ -202,7 +212,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 128
+	id = "128"
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav)
@@ -224,6 +234,13 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/space/has_grav/astraeus/hallway)
+"gt" = (
+/obj/machinery/door/poddoor{
+	id = "9"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav)
 "gv" = (
 /obj/machinery/camera/preset{
 	dir = 4;
@@ -275,7 +292,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 128;
+	id = "128";
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -353,7 +370,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 4
+	id = "909"
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
@@ -377,7 +394,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 32;
+	id = "32";
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -411,7 +428,9 @@
 /turf/open/floor/plating/snowed,
 /area/ruin/space/has_grav/astraeus/hallway)
 "lv" = (
-/obj/machinery/door/poddoor,
+/obj/machinery/door/poddoor{
+	id = "102"
+	},
 /obj/structure/fans/tiny,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav)
@@ -450,6 +469,14 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ruin/space/has_grav/astraeus/munitions)
+"mH" = (
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
+/obj/machinery/door/poddoor{
+	id = "909"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav)
 "mN" = (
 /obj/structure/table/reinforced,
 /obj/item/ammo_box/magazine/m45_cobra{
@@ -471,7 +498,8 @@
 /area/ruin/space/has_grav/astraeus/hallway)
 "nm" = (
 /obj/machinery/door/poddoor{
-	dir = 4
+	dir = 4;
+	id = "4"
 	},
 /obj/structure/fans/tiny,
 /turf/open/floor/mineral/plastitanium/red,
@@ -708,7 +736,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 256
+	id = "256"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -719,7 +747,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 256;
+	id = "256";
 	dir = 8
 	},
 /obj/structure/cable{
@@ -744,11 +772,19 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space/has_grav)
 "uU" = (
-/obj/machinery/button{
-	id = 99;
+/obj/machinery/button/door{
 	name = "Zone Alpha shutters";
+	dir = 4;
 	pixel_x = -25;
-	dir = 4
+	id = "99"
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav)
+"vb" = (
+/obj/structure/fans/tiny,
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "4"
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav)
@@ -767,6 +803,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/circuit,
 /area/ruin/space/has_grav/astraeus/munitions)
+"vA" = (
+/obj/machinery/door/poddoor{
+	id = "45"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav)
 "vB" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 10
@@ -835,11 +878,11 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ruin/space/has_grav/astraeus/munitions)
 "wG" = (
-/obj/machinery/button{
-	id = 6;
+/obj/machinery/button/door{
 	name = "Zone Delta shutters";
+	dir = 4;
 	pixel_x = -25;
-	dir = 4
+	id = "6"
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav)
@@ -904,14 +947,22 @@
 /turf/open/floor/plating/asteroid/snow/atmosphere,
 /area/ruin/space/has_grav/astraeus/hallway)
 "yT" = (
-/obj/machinery/button{
-	id = 64;
+/obj/machinery/button/door{
 	name = "Zone Bravo shutters";
-	pixel_x = -8;
-	pixel_y = -2;
-	dir = 8
+	dir = 8;
+	pixel_y = 3;
+	id = "64";
+	pixel_x = -7
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/space/has_grav)
+"zj" = (
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "84"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav)
 "zm" = (
 /turf/open/floor/circuit,
@@ -925,7 +976,8 @@
 /area/ruin/space/has_grav/astraeus/munitions)
 "zr" = (
 /obj/machinery/door/poddoor{
-	dir = 4
+	dir = 4;
+	id = "84"
 	},
 /obj/structure/fans/tiny,
 /obj/structure/cable{
@@ -1021,11 +1073,11 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ruin/space/has_grav/astraeus/munitions)
 "Bx" = (
-/obj/machinery/button{
-	id = 4;
+/obj/machinery/button/door{
 	name = "Zone Charlie shutters";
+	id = "4";
 	pixel_x = -25;
-	dir = 8
+	dir = 4
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ruin/space/has_grav/astraeus/munitions)
@@ -1054,7 +1106,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 9
+	id = "9"
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav)
@@ -1071,27 +1123,28 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/astraeus/hallway)
 "Cj" = (
-/obj/machinery/button{
-	id = 6;
+/obj/machinery/button/door{
 	name = "Zone Delta shutters";
+	dir = 8;
 	pixel_x = 25;
-	dir = 8
+	id = "6"
 	},
 /turf/open/floor/plating/asteroid/snow/atmosphere,
 /area/ruin/space/has_grav/astraeus/hallway)
 "Cu" = (
 /obj/structure/fans/tiny,
 /obj/machinery/door/poddoor{
-	dir = 4
+	dir = 4;
+	id = "6"
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav)
 "CA" = (
-/obj/machinery/button{
-	id = 4;
+/obj/machinery/button/door{
 	name = "Zone Charlie shutters";
-	pixel_x = 25;
-	dir = 8
+	dir = 8;
+	id = "4";
+	pixel_x = 25
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav)
@@ -1105,7 +1158,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 128;
+	id = "128";
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -1146,7 +1199,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 4
+	id = "102"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1154,18 +1207,20 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav)
 "Ed" = (
-/obj/machinery/button{
-	id = 9;
+/obj/machinery/button/door{
 	name = "Zone Delta shutters";
-	pixel_y = -25
+	id = "9";
+	pixel_y = -25;
+	dir = 1
 	},
 /turf/open/floor/plating/ice,
 /area/ruin/space/has_grav/astraeus/hallway)
 "Ej" = (
-/obj/machinery/button{
-	id = 102;
+/obj/machinery/button/door{
 	name = "Zone Charlie shutters";
-	pixel_y = -25
+	id = "102";
+	pixel_y = -25;
+	dir = 1
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ruin/space/has_grav/astraeus/munitions)
@@ -1247,6 +1302,17 @@
 /mob/living/simple_animal/hostile/human/ramzi/civilian,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav)
+"Gs" = (
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "99"
+	},
+/obj/structure/fans/tiny,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav)
 "GJ" = (
 /obj/structure/table/reinforced,
 /obj/item/modular_computer/laptop{
@@ -1261,7 +1327,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 64
+	id = "64"
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav)
@@ -1326,7 +1392,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 4;
+	id = "4";
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -1386,7 +1452,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 32
+	id = "32"
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav)
@@ -1395,12 +1461,12 @@
 /turf/open/floor/plating/sandy_dirt,
 /area/ruin/space/has_grav/powerpuzzle/secure)
 "Kb" = (
-/obj/machinery/button{
-	id = 32;
+/obj/machinery/button/door{
 	name = "Zone Alpha shutters";
+	dir = 4;
 	pixel_x = 7;
 	pixel_y = 3;
-	dir = 4
+	id = "32"
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space/has_grav)
@@ -1415,18 +1481,19 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "KH" = (
-/obj/machinery/button{
-	id = 84;
+/obj/machinery/button/door{
 	name = "Zone Bravo shutters";
-	pixel_x = -25;
-	dir = 4
+	dir = 4;
+	id = "84";
+	pixel_x = -25
 	},
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/astraeus/disposals)
 "KR" = (
-/obj/machinery/button{
-	id = 909;
+/obj/machinery/button/door{
 	name = "Zone Bravo shutters";
+	dir = 1;
+	id = "909";
 	pixel_y = -25
 	},
 /turf/open/floor/mineral/plastitanium/red,
@@ -1445,7 +1512,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 45
+	id = "45"
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav)
@@ -1461,12 +1528,16 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/powerpuzzle/secure)
 "LF" = (
-/obj/machinery/button{
-	id = 45;
-	name = "Zone Alpha Shutters";
-	pixel_y = 8
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
-/turf/closed/wall/mineral/plastitanium,
+/obj/machinery/button/door{
+	name = "Zone Alpha shutters";
+	dir = 4;
+	pixel_x = -25;
+	id = "99"
+	},
+/turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav)
 "Mf" = (
 /obj/machinery/computer/camera_advanced{
@@ -1486,15 +1557,18 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "Mu" = (
-/obj/machinery/door/poddoor,
+/obj/machinery/door/poddoor{
+	id = "909"
+	},
 /obj/structure/fans/tiny,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "Mv" = (
-/obj/machinery/button{
-	id = 99;
+/obj/machinery/button/door{
 	name = "Zone Alpha shutters";
-	pixel_x = -25
+	dir = 4;
+	pixel_x = -25;
+	id = "99"
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/powerpuzzle/secure)
@@ -1589,9 +1663,10 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "Qy" = (
-/obj/machinery/button{
-	id = 909;
+/obj/machinery/button/door{
 	name = "Zone Bravo shutters";
+	dir = 8;
+	id = "909";
 	pixel_x = 25
 	},
 /turf/open/floor/mineral/titanium,
@@ -1610,7 +1685,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 256;
+	id = "256";
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -1836,13 +1911,13 @@
 /turf/open/space,
 /area/ruin/space/has_grav/astraeus/disposals)
 "WH" = (
-/obj/machinery/button{
-	id = 102;
-	name = "Zone Charlie shutters";
-	pixel_y = 25
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/button/door{
+	name = "Zone Charlie shutters";
+	id = "102";
+	pixel_y = 25
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav)
@@ -1850,9 +1925,9 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/button{
-	id = 9;
+/obj/machinery/button/door{
 	name = "Zone Delta shutters";
+	id = "9";
 	pixel_y = 25
 	},
 /turf/open/floor/mineral/plastitanium/red,
@@ -1875,7 +1950,7 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = 84;
+	id = "84";
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -1890,11 +1965,11 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "Xf" = (
-/obj/machinery/button{
-	id = 84;
+/obj/machinery/button/door{
 	name = "Zone Bravo shutters";
-	pixel_x = 25;
-	dir = 8
+	dir = 8;
+	id = "84";
+	pixel_x = 25
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav)
@@ -2002,13 +2077,13 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav)
 "Zt" = (
-/obj/machinery/button{
-	id = 99;
+/obj/machinery/button/door{
 	name = "Zone Alpha shutters";
-	pixel_x = 8;
-	dir = 4
+	dir = 1;
+	id = "45";
+	pixel_y = -25
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav)
 "ZH" = (
 /obj/structure/cable{
@@ -2761,8 +2836,8 @@ AQ
 am
 WU
 ap
-ay
-LF
+Zt
+am
 NT
 Ng
 RV
@@ -2808,11 +2883,11 @@ bL
 bD
 bL
 oS
-lv
+gt
 jx
 ay
 ay
-lv
+vA
 Ng
 RH
 MV
@@ -2858,11 +2933,11 @@ bL
 bL
 bL
 oS
-lv
+gt
 jx
 ay
 ay
-lv
+vA
 Oc
 RH
 SF
@@ -2911,8 +2986,8 @@ Ed
 am
 jx
 ap
-ay
-LF
+Zt
+am
 Ox
 Ox
 Ox
@@ -3269,9 +3344,9 @@ am
 am
 ci
 ci
-Zt
-zr
-nm
+am
+Gs
+dH
 am
 ci
 ci
@@ -3319,7 +3394,7 @@ ur
 Zf
 WV
 XA
-BY
+LF
 tp
 ay
 uU
@@ -3450,7 +3525,7 @@ Iv
 Iv
 am
 nm
-Cu
+vb
 am
 Iv
 Iv
@@ -3471,7 +3546,7 @@ WY
 WY
 am
 zr
-nm
+zj
 am
 WY
 WY
@@ -4012,7 +4087,7 @@ fe
 GZ
 ay
 KY
-fe
+mH
 DU
 Sf
 Tl
@@ -4062,7 +4137,7 @@ DW
 OB
 ap
 eH
-fe
+mH
 OH
 Sf
 Sf
