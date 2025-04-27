@@ -277,3 +277,8 @@
 	backpack = /obj/item/storage/backpack/botany
 	satchel = /obj/item/storage/backpack/satchel/hyd
 	courierbag = /obj/item/storage/backpack/messenger/hyd
+
+// Janitor - У оффов не был прописан jobtype и это вызывало рантайм. Прописываем его здесь. Увы.
+
+/datum/outfit/job/prisoner
+	jobtype = /datum/job/prisoner

@@ -239,6 +239,11 @@
 	var/obj/docking_port/stationary/h_dock
 	var/datum/map_template/outpost/h_template = get_hangar_template(dock_requester.shuttle_port)
 
+	// [CELADON-ADD] - CELADON_COMPONENT - Pirates Update - NEEDS_TO_FIX_ALARM!
+	if(dock_requester.source_template.category == "Pirates") //Проверка шипа на пиратскую фракцию
+		return new /datum/docking_ticket(_docking_error = "Неавторизованным лицам отказано в стыковке с аванпостом.") //Запрет пиратам на стыковку с аванпостом
+	// [/CELADON-ADD]
+
 	if(src in dock_requester.blacklisted)
 		return new /datum/docking_ticket(_docking_error = "Docking request denied: [dock_requester.blacklisted[src]]")
 
@@ -255,17 +260,7 @@
 			"for ship [dock_requester] (template [dock_requester.source_template])!"
 		)
 		return FALSE
-
-	// [CELADON-ADD] - CELADON_COMPONENT - Pirates Update - NEEDS_TO_FIX_ALARM!
-	// if(dock_requester.get_faction() == "Pirates") //Проверка шипа на пиратскую фракцию
-	// 	return new /datum/docking_ticket(_docking_error = "Неавторизованным лицам отказано в стыковке с аванпостом.") //Запрет пиратам на стыковку с аванпостом
-	// [/CELADON-ADD]
-
-	// if(src in dock_requester.blacklisted)
-	// 	return new /datum/docking_ticket(_docking_error = "Docking request denied: [dock_requester.blacklisted[src]]")
-
-	// adjust_dock_to_shuttle(h_dock, dock_requester.shuttle_port)
-	return new /datum/docking_ticket(h_dock, src, dock_requester)	// Это новое
+	return new /datum/docking_ticket(h_dock, src, dock_requester)
 
 /datum/overmap/outpost/get_dockable_locations(datum/overmap/requesting_interactor)
 	var/list/docks = list()
