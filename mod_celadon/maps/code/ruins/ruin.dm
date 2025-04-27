@@ -555,6 +555,13 @@
 	cost = 2
 	ruin_mission_types = list(/datum/mission/ruin/blackbox)
 
+/datum/map_template/ruin/lavaland/Colos_Battle
+	name = "Colos Battle"
+	id = "ColosBattle"
+	description = "The miners who opened the arena with the Colos were killed by the legions, but managed to send an SOS signa"
+	suffix = "lavaland_colos.dmm"
+	cost = 3
+	 
 //							///
 //		MARK: Rockplanet
 //							///
