@@ -38,7 +38,7 @@
 #define PREFIX_SYNDICATE list("SEV", "SSV", "SMMV", "PCAC", "SSASV", "SSSV", "SOSSV", "TSSV", "SABSV", "BSSV", "ASSV", "MSSV", "LSSV", "DSSV", "RSSV",)
 	#define PREFIX_NGR list("NGRV",)
 	#define PREFIX_CYBERSUN list("CSSV",)
-	#define PREFIX_HARDLINERS list("ISVV",)
+	#define PREFIX_HARDLINERS list("HSSV",)
 	#define PREFIX_SUNS list("SUNS",)
 #define PREFIX_SOLCON list("SCSV",)
 #define PREFIX_SOLFED list("SFSV", "BSFSV", "ASFSV", "SSFSV", "MDSFSV", "LSFSV", "MSFSV", "SPSFSV",)
