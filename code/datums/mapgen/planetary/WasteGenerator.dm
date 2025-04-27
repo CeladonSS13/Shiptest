@@ -106,6 +106,9 @@
 
 		//stuff you can actually use
 		/obj/effect/spawner/random/waste/girder = 600,
+		// [CELADON-ADD] - RETURN_CONTENT
+		/obj/structure/reagent_dispensers/fueltank = 100,
+		// [/CELADON-ADD]
 		/obj/structure/reagent_dispensers/watertank = 200,
 		/obj/item/stack/cable_coil/cut = 500,
 		/obj/structure/closet/crate/secure/loot = 30,
@@ -192,6 +195,9 @@
 		/obj/effect/spawner/random/waste/radiation = 300,
 		/obj/effect/spawner/random/waste/radiation/more_rads = 120,
 		/obj/effect/spawner/random/waste/girder = 600,
+		// [CELADON-ADD] - RETURN_CONTENT
+		/obj/structure/reagent_dispensers/fueltank = 100,
+		// [/CELADON-ADD]
 		/obj/structure/reagent_dispensers/watertank = 200,
 		/obj/item/stack/cable_coil/cut = 500,
 		/obj/structure/closet/crate/secure/loot = 30,
@@ -246,6 +252,9 @@
 		/obj/effect/spawner/random/waste/radiation = 80,
 		/obj/effect/spawner/random/waste/radiation/more_rads = 20,
 		/obj/effect/spawner/random/waste/girder = 600,
+		// [CELADON-ADD] - RETURN_CONTENT
+		/obj/structure/reagent_dispensers/fueltank = 100,
+		// [/CELADON-ADD]
 		/obj/structure/reagent_dispensers/watertank = 200,
 		/obj/item/stack/cable_coil/cut = 500,
 		/obj/structure/closet/crate/secure/loot = 30,
@@ -310,6 +319,9 @@
 		/obj/effect/spawner/random/waste/radiation = 80,
 		/obj/effect/spawner/random/waste/radiation/more_rads = 10,
 		/obj/effect/spawner/random/waste/girder = 600,
+		// [CELADON-ADD] - RETURN_CONTENT
+		/obj/structure/reagent_dispensers/fueltank = 100,
+		// [/CELADON-ADD]
 		/obj/structure/reagent_dispensers/watertank = 200,
 		/obj/item/stack/cable_coil/cut = 500,
 		/obj/structure/closet/crate/secure/loot = 30,
@@ -383,6 +395,9 @@
 		/obj/effect/spawner/random/waste/atmos_can/rare = 5,
 		/obj/effect/spawner/random/waste/salvageable = 150,
 		/obj/effect/spawner/random/waste/girder = 200,
+		// [CELADON-ADD] - RETURN_CONTENT
+		/obj/structure/reagent_dispensers/fueltank = 10,
+		// [/CELADON-ADD]
 		/obj/structure/reagent_dispensers/watertank = 10,
 		/obj/item/stack/cable_coil/cut = 500,
 		/obj/structure/closet/crate/secure/loot = 30,
@@ -419,6 +434,9 @@
 		/obj/effect/spawner/random/waste/radiation = 32,
 		/obj/effect/spawner/random/waste/radiation/more_rads = 4,
 		/obj/effect/spawner/random/waste/girder = 120,
+		// [CELADON-ADD] - RETURN_CONTENT
+		/obj/structure/reagent_dispensers/fueltank = 20,
+		// [/CELADON-ADD]
 		/obj/structure/reagent_dispensers/watertank = 40,
 		/obj/item/stack/cable_coil/cut = 100,
 		/obj/structure/closet/crate/secure/loot = 6,
@@ -450,6 +468,9 @@
 		/obj/effect/spawner/random/waste/radiation = 16,
 		/obj/effect/spawner/random/waste/radiation/more_rads = 2,
 		/obj/effect/spawner/random/waste/girder = 60,
+		// [CELADON-ADD] - RETURN_CONTENT
+		/obj/structure/reagent_dispensers/fueltank = 10,
+		// [/CELADON-ADD]
 		/obj/structure/reagent_dispensers/watertank = 20,
 		/obj/item/stack/cable_coil/cut = 50,
 		/obj/structure/closet/crate/secure/loot = 3,
@@ -489,6 +510,9 @@
 		/obj/effect/spawner/random/waste/mechwreck = 20,
 		/obj/effect/spawner/random/trash/decal = 90,
 		/obj/effect/spawner/random/waste/radiation = 16,
+		// [CELADON-ADD] - RETURN_CONTENT
+		/obj/structure/reagent_dispensers/fueltank = 10,
+		// [/CELADON-ADD]
 		/obj/structure/reagent_dispensers/watertank = 20,
 		/obj/item/stack/cable_coil/cut = 50,
 		/obj/structure/closet/crate/secure/loot = 3,

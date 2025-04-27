@@ -11,7 +11,7 @@
 <!-- Название мода. Не важно на русском или на английском. -->
 ## Возвращение трофеев крашеров
 
-ID мода: RETURN_CONTENT_CRUSHER_TROPHY
+ID мода: RETURN_CONTENT_CRUSHER_TROPHY, RETURN_GIBTONIT
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -46,6 +46,8 @@ ID мода: RETURN_CONTENT_CRUSHER_TROPHY
 - code/modules/mining/lavaland/necropolis_chests.dm
 - code/modules/mining/equipment/kinetic_crusher.dm
 - code/datums/components/crafting/recipes/tribal.dm
+
+- code/game/turfs/closed/minerals.dm - возвращаем гибтонит в генерацию
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,

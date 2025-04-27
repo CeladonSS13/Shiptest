@@ -27,6 +27,10 @@
 		return TRUE
 	if(mover.movement_type & (FLOATING|FLYING))
 		return TRUE
+	// [CELADON-ADD] - RETURN_CHASM - Не удалось сделать чтобы ССДшники не падали
+	if(mover.movement_type & (PHASING|GROUND))
+		return TRUE
+	// [/CELADON-ADD]
 	return FALSE
 
 /turf/open/chasm/proc/set_target(turf/target)
