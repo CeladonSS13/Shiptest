@@ -76,16 +76,21 @@
 /datum/emote/living/carbon/mothchitter
 	key = "chitter"
 	key_third_person = "chitters"
-	message = "жужит."
+	message = "жужжит."
 	emote_type = EMOTE_AUDIBLE
 	vary = TRUE
+
+/datum/emote/living/carbon/mothchitter/can_run_emote(mob/user, status_check = TRUE , intentional)
+	if(!..())
+		return FALSE
+	if(!ismoth(user))
+		return FALSE
+	return TRUE
 
 /datum/emote/living/carbon/mothchitter/get_sound(mob/living/user)
 	if(!ishuman(user))
 		return
-	var/mob/living/carbon/human/H = user
-	if(ismoth(H) | (istype(H, /mob/living/simple_animal/pet/mothroach)))
-		return 'mod_celadon/_storge_sounds/sound/voice/moth/mothchitter.ogg'
+	return 'mod_celadon/_storge_sounds/sound/voice/moth/mothchitter.ogg'
 
 /datum/emote/living/chuckle
 	key = "chuckle"
@@ -1698,3 +1703,39 @@
 // /datum/emote/living/carbon/human/highfive/rps/reset_emote()
 // 	..()
 // 	move = initial(move)
+
+/datum/emote/living/flap/flutter
+	key = "flutter"
+	key_third_person = "flutters"
+	message = "трепешет крыльями."
+	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
+
+/datum/emote/living/flap/flutter/get_sound(mob/living/user)
+	if(!ishuman(user))
+		return
+	return 'mod_celadon/_storge_sounds/sound/voice/moth/moth_flutter.ogg'
+
+/datum/emote/living/jelly/squish
+	key = "squish"
+	key_third_person = "squishes"
+	message = "хлюпает."
+	emote_type = EMOTE_VISIBLE
+
+/datum/emote/living/jelly/can_run_emote(mob/user, status_check = TRUE , intentional)
+	if(!..())
+		return FALSE
+	if(!isjellyperson(user))
+		return FALSE
+	return TRUE
+
+/datum/emote/living/jelly/bubble
+	key = "bubble"
+	key_third_person = "bubbles"
+	message = "булькает."
+	emote_type = EMOTE_VISIBLE
+
+/datum/emote/living/jelly/pop
+	key = "pop"
+	key_third_person = "popped"
+	message = "хлопает ртом."
+	emote_type = EMOTE_VISIBLE

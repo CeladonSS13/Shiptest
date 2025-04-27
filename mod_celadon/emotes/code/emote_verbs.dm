@@ -29,7 +29,7 @@ var/timer = 20
 /mob/living/carbon/human/proc/emote_mothchitter()
 	set name = "> " + EMOTE_SPECIES_CHITTER + " ►"
 	set category = "Эмоции"
-	emote_with_delay("mothchitter", timer)
+	emote_with_delay("chitter", timer)
 
 /mob/living/carbon/human/proc/emote_flap()
 	set name = "> " + EMOTE_SPECIES_FLAP + " ►"
