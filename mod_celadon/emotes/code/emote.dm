@@ -248,8 +248,6 @@
 /datum/emote/living/gag/get_sound(mob/living/user)
 	if(!ishuman(user))
 		return
-	// if(!ishuman(user))
-	// 	return
 	var/mob/living/carbon/human/H = user
 	if(!H.mind || !H.mind.miming)
 		if(user.gender == FEMALE)
@@ -290,8 +288,6 @@
 /datum/emote/living/gasp/get_sound(mob/living/user)
 	if(!ishuman(user))
 		return
-	// if(!ishuman(user))
-	// 	return
 	var/mob/living/carbon/human/H = user
 	if(!H.mind || !H.mind.miming)
 		if(user.gender == FEMALE)
@@ -429,8 +425,6 @@
 /datum/emote/living/laugh/get_sound(mob/living/user)
 	if(!ishuman(user))
 		return
-	// if(!ishuman(user))
-	// 	return
 	var/mob/living/carbon/human/H = user
 	if(!H.mind || !H.mind.miming)
 		if(user.gender == FEMALE)
@@ -459,8 +453,6 @@
 /datum/emote/living/laugh_evil/get_sound(mob/living/user)
 	if(!ishuman(user))
 		return
-	// if(!ishuman(user))
-	// 	return
 	var/mob/living/carbon/human/H = user
 	if(ismoth(H))
 		return 'mod_celadon/_storge_sounds/sound/voice/moth/mothlaugh.ogg'
@@ -930,8 +922,6 @@
 /datum/emote/living/warcray/get_sound(mob/living/user)
 	if(!ishuman(user))
 		return
-	// if(!ishuman(user))
-	// 	return
 	var/mob/living/carbon/human/H = user
 	if(!H.mind || !H.mind.miming)
 		if(user.gender == FEMALE)
@@ -1013,8 +1003,6 @@
 /datum/emote/living/sigh/get_sound(mob/living/user)
 	if(!ishuman(user))
 		return
-	// if(!ishuman(user))
-	// 	return
 	var/mob/living/carbon/human/H = user
 
 	if(H.gender == FEMALE)
@@ -1061,8 +1049,6 @@
 /datum/emote/living/carbon/giggle/get_sound(mob/living/user)
 	if(!ishuman(user))
 		return
-	// if(!ishuman(user))
-	// 	return
 	var/mob/living/carbon/human/H = user
 
 	if(H.gender == FEMALE)
@@ -1120,8 +1106,6 @@
 /datum/emote/living/carbon/human/gasp/get_sound(mob/user)
 	if(!ishuman(user))
 		return
-	// if(!ishuman(user))
-	// 	return
 	var/mob/living/carbon/human/H = user
 
 	if(H.is_muzzled())
@@ -1158,8 +1142,6 @@
 /datum/emote/living/carbon/human/cry/get_sound(mob/living/user)
 	if(!ishuman(user))
 		return
-	// if(!ishuman(user))
-	// 	return
 	var/mob/living/carbon/human/H = user
 
 	if(H.gender == FEMALE)
@@ -1180,8 +1162,6 @@
 /datum/emote/living/carbon/human/sneeze/get_sound(mob/user)
 	if(!ishuman(user))
 		return
-	// if(!ishuman(user))
-	// 	return
 	var/mob/living/carbon/human/H = user
 
 	if(H.gender == FEMALE)
@@ -1328,7 +1308,7 @@
 /datum/emote/living/carbon/human/purr/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
-	if (!istajara(user))
+	if(!istajara(user))
 		return FALSE
 	return TRUE
 
@@ -1349,7 +1329,7 @@
 /datum/emote/living/carbon/human/purrl/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
-	if (!istajara(user))
+	if(!istajara(user))
 		return FALSE
 	return TRUE
 
@@ -1369,7 +1349,7 @@
 /datum/emote/living/carbon/human/mrowss/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
-	if (!istajara(user))
+	if(!istajara(user))
 		return FALSE
 	return TRUE
 
@@ -1514,7 +1494,7 @@
 /datum/emote/living/carbon/human/tajara/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
-	if (!istajara(user))
+	if(!istajara(user))
 		return FALSE
 	return TRUE
 
@@ -1537,7 +1517,7 @@
 /datum/emote/living/carbon/moan/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
-	if (isipc(user) || islanius(user))
+	if(isipc(user) || islanius(user))
 		return FALSE
 	return TRUE
 
