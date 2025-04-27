@@ -316,6 +316,23 @@
 	. = ..()
 	get_solfed_general_access(H)
 
+/datum/outfit/job/solfed/quartermaster
+	name = "SolFed - Logistikbeauftragter"
+	jobtype = /datum/job/quartermaster
+	job_icon = "quartermaster"
+
+	id = /obj/item/card/id/solfed/commander
+	uniform = /obj/item/clothing/under/solfed
+	head = /obj/item/clothing/head/solfed/beret
+	shoes = /obj/item/clothing/shoes/laceup
+	suit = /obj/item/clothing/suit/solgov/overcoat
+
+	backpack = /obj/item/storage/backpack/solfed
+	satchel = /obj/item/storage/backpack/satchel/solfed
+	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
+	courierbag = /obj/item/storage/backpack/messenger/com
+
+
 
 //							///
 //		Elysium Brigade 	///
