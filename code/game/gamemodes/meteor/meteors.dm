@@ -43,7 +43,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 
 /proc/spawn_meteors_alt(number = 10, list/meteortypes, vlevel, port, dirc)
 	for(var/i = 0; i < number; i++)
-		spawn_meteor(meteortypes, vlevel, 0, port)
+		spawn_meteor(meteortypes, vlevel, 0, port, dirc)
 
 // [/CELADON-ADD]
 
