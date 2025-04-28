@@ -67,7 +67,7 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 						var/obj/machinery/computer/helm/a = A.helms[arpdequeue_pointer]
 						a.say("Proximity alarm! Possible collision situation.")
 						playsound(a, 'sound/machines/engine_alert1.ogg', 50, FALSE)
-			if((if(get_pixel_distance(A.token, outpost.token)>32 && get_pixel_distance(B.token, outpost.token)>32)) && get_pixel_distance(A.token, B.token) <= 4 && cpa != -1 && (A.get_speed() != 0 || B.get_speed() != 0)) // Thurther than that is full colision
+			if((get_pixel_distance(A.token, outpost.token)>32 && get_pixel_distance(B.token, outpost.token)>32) && get_pixel_distance(A.token, B.token) <= 4 && cpa != -1 && (A.get_speed() != 0 || B.get_speed() != 0)) // Thurther than that is full colision
 				var/arpdequeue_pointer = 0
 				if(world.time - A.last_collision_alert >= 20)
 					A.last_collision_alert = world.time
