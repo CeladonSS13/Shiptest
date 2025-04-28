@@ -239,9 +239,9 @@
 	var/obj/docking_port/stationary/h_dock
 	var/datum/map_template/outpost/h_template = get_hangar_template(dock_requester.shuttle_port)
 
-	// [CELADON-ADD] - CELADON_COMPONENT - Pirates Update - NEEDS_TO_FIX_ALARM!
+	// [CELADON-ADD] - CELADON_COMPONENT - Pirates Update
 	if(dock_requester.source_template.category == "Pirates") //Проверка шипа на пиратскую фракцию
-		return new /datum/docking_ticket(_docking_error = "Неавторизованным лицам отказано в стыковке с аванпостом.") //Запрет пиратам на стыковку с аванпостом
+		return new /datum/docking_ticket(_docking_error = "Docking request denied: Unauthorized ship") //Запрет пиратам на стыковку с аванпостом
 	// [/CELADON-ADD]
 
 	if(src in dock_requester.blacklisted)
