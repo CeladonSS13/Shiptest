@@ -1704,16 +1704,38 @@
 // 	..()
 // 	move = initial(move)
 
+/////////////////////
+// Рассовые эмоуты //
+/////////////////////
+
+// Mothman
+
 /datum/emote/living/flap/flutter
 	key = "flutter"
 	key_third_person = "flutters"
 	message = "трепешет крыльями."
 	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 
+// Попытка сделать проверку на крылья, ток если есть активные крылья ТО ЕСТЬ ДНК (зелье полета)
+/datum/emote/living/flap/flutter/can_run_emote(mob/user, status_check, intentional)
+	var/mob/living/carbon/human/H = user
+	if(H.dna.features["wings"] == "None")
+		return FALSE
+	return TRUE
+	// var/obj/item/organ/internal/HS = H.get_organ("wing")
+
+	//var/mob/living/carbon/human/H = user
+
+	// var/obj/item/organ/wings/wings = H.getorganslot(ORGAN_SLOT_WINGS)
+	// if(!istype(wings))
+	// 	return
+
 /datum/emote/living/flap/flutter/get_sound(mob/living/user)
 	if(!ishuman(user))
 		return
 	return 'mod_celadon/_storge_sounds/sound/voice/moth/moth_flutter.ogg'
+
+// Jellyperson
 
 /datum/emote/living/jelly/squish
 	key = "squish"
@@ -1739,3 +1761,16 @@
 	key_third_person = "popped"
 	message = "хлопает ртом."
 	emote_type = EMOTE_VISIBLE
+
+// VOX
+
+	// emote_wag
+	// emote_quill
+
+// SKELETON
+
+	// emote_rattle
+
+// SPIDER
+
+	// emote_clack_spider
