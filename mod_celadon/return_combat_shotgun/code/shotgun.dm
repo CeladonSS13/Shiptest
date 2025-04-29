@@ -13,6 +13,7 @@
 		/obj/item/ammo_box/magazine/internal/shot/com,
 	)
 	w_class = WEIGHT_CLASS_BULKY
+	casing_ejector = TRUE
 
 /obj/item/gun/ballistic/shotgun/automatic/combat/compact
 	name = "compact combat shotgun"
