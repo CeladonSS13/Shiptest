@@ -98,7 +98,7 @@
 		return FALSE
 
 	message_admins("[key_name_admin(usr)] renamed vessel '[old_name]' to '[full_name]'")
-	log_admin("[key_name(src)] has renamed vessel '[old_name]' to '[full_name]'")
+	log_admin("[usr.ckey] ([usr.real_name]) on [key_name(src)] has renamed vessel '[old_name]' to '[full_name]'")
 	SSblackbox.record_feedback("text", "ship_renames", 1, full_name)
 
 	real_name = new_name
@@ -160,16 +160,23 @@
 #endif
 	SSovermap.controlled_ships += src
 	current_overmap.controlled_ships += src
-	// [CELADON-ADD] - CELADON_COMPONENT - Добавляем оповещении о пиратах - NEEDS_TO_FIX_ALARM!
-	// if(get_faction() == "Pirates") //Проверка шипа на принадлежность к пиратской фракции
-	// 	radio = new(src.token)
-	// 	radio.name = "Outpost Security System" //Имя, что показывается в вайдбанде
-	// 	radio.talk_into(radio, "На датчиках дальнего действия обнаружена неавторизированная деятельность! Всем кораблям быть в боевой готовности!", FREQ_WIDEBAND) //Сообщение и путь в вайдбанд
-	// 	qdel(radio)
+
+	// [CELADON-ADD] - CELADON_COMPONENT - Добавляем оповещении о пиратах
+	if(istype(get_faction(), /datum/faction/pirate))
+		var/datum/overmap/outpost/outpost = SSovermap.outposts[1]
+		if(outpost)
+			if(!outpost.radio)
+				outpost.radio = new(outpost.token)
+			outpost.radio.name = "Outpost Security System"
+			var/T = rand(180,360) SECONDS //3-5mins
+			addtimer(CALLBACK(outpost.radio, TYPE_PROC_REF(/obj/item, talk_into), outpost.radio, "На датчиках дальнего действия обнаружен неавторизированный корабль. Всем кораблям рекомендуется быть в боевой готовности.", FREQ_WIDEBAND), T)
+
+/datum/overmap/outpost // Это тут потому-что если верхнее перепишется, то нижнее тоже. Срать вечно 🤙
+	var/obj/item/radio/intercom/wideband/radio
 	// [/CELADON-ADD]
 
-// /datum/overmap/ship/controlled/proc/get_faction() - NEEDS_TO_FIX_ALARM!
-// 	return source_template.faction_name
+/datum/overmap/ship/controlled/proc/get_faction()
+	return source_template.faction
 
 /datum/overmap/ship/controlled/Destroy()
 	//SHOULD be called first

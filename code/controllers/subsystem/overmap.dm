@@ -236,7 +236,7 @@ SUBSYSTEM_DEF(overmap)
 	if(our_spawn_location)
 		system_to_spawn_in = our_spawn_location.current_overmap
 
-	if(!ship_loc && template.space_spawn)
+	if(!ship_loc || template.space_spawn)	// [CELADON-EDIT] Изменено, так как корабли с параметром space-spawn: true всё равно спавнились на аванпосту. OldCode: if(!ship_loc && template.space_spawn)
 		ship_loc = null
 	else
 		ship_loc = SSovermap.outposts[1]
