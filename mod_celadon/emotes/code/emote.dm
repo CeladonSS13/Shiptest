@@ -575,6 +575,13 @@
 	message = "вздыхает."
 	emote_type = EMOTE_AUDIBLE
 
+/datum/emote/living/sigh/run_emote(mob/living/user, params, type_override, intentional)
+	. = ..()
+	if(!ishuman(user))
+		return
+	var/image/emote_animation = image('mod_celadon/_storge_icons/icons/emote_visuals.dmi', user, "sigh")
+	flick_overlay(emote_animation, GLOB.clients, 2.0 SECONDS)
+
 /datum/emote/living/sigh/get_sound(mob/living/user)
 	if(!ishuman(user))
 		return
@@ -1703,6 +1710,27 @@
 // /datum/emote/living/carbon/human/highfive/rps/reset_emote()
 // 	..()
 // 	move = initial(move)
+
+
+/datum/emote/living/carbon/human/glasses
+	key = "glasses"
+	key_third_person = "glasses"
+	message = "поправляет очки."
+	emote_type = EMOTE_VISIBLE
+
+/datum/emote/living/carbon/human/glasses/can_run_emote(mob/user, status_check = TRUE, intentional, params)
+	var/obj/head_slot = user.get_item_by_slot(ITEM_SLOT_HEAD)
+	var/obj/eyes_slot = user.get_item_by_slot(ITEM_SLOT_EYES)
+	if(istype(head_slot, /obj/item/clothing/head/helmet/space) || istype(head_slot, /obj/item/clothing/head/mod))
+		return FALSE
+	if(istype(eyes_slot, /obj/item/clothing/glasses/regular) || istype(eyes_slot, /obj/item/clothing/glasses/sunglasses))
+		return ..()
+	return FALSE
+
+/datum/emote/living/carbon/human/glasses/run_emote(mob/user, params, type_override, intentional)
+	. = ..()
+	var/image/emote_animation = image('mod_celadon/_storge_icons/icons/emote_visuals.dmi', user, "glasses")
+	flick_overlay(emote_animation, GLOB.clients, 1.6 SECONDS)
 
 /////////////////////
 // Рассовые эмоуты //
