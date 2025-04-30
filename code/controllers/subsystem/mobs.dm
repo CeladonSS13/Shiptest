@@ -4,8 +4,8 @@ SUBSYSTEM_DEF(mobs)
 	flags = SS_KEEP_TIMING | SS_NO_INIT
 	runlevels = RUNLEVEL_GAME | RUNLEVEL_POSTGAME
 	// [CELADON-EDIT] - CELADON_BALANCE_MOBS
-	// wait = 2 SECONDS	// ORIGINAL
-	wait = 1.5 SECONDS
+	wait = 2 SECONDS	// ORIGINAL
+	// wait = 1.5 SECONDS
 	// [/CELADON-EDIT]
 
 	var/list/currentrun = list()
