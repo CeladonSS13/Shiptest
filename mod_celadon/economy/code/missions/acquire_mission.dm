@@ -18,7 +18,7 @@
 */
 
 /datum/mission/outpost/acquire/creature
-	type_mission = "capture_creature"
+	// type_mission = "capture_creature"
 	value = 2000
 
 /datum/mission/outpost/acquire/creature/ice_whelp
@@ -54,7 +54,7 @@
 */
 
 /datum/mission/outpost/acquire/extraction_plasma
-	type_mission = "extraction_plasma"
+	// type_mission = "extraction_plasma"
 	name = "Plasma required"
 	duration = 70 MINUTES
 	value = 600
