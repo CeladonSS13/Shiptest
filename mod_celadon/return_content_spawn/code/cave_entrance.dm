@@ -27,10 +27,10 @@
 		switch(bot_type)
 			if("norm")
 				new /mob/living/simple_animal/hostile/hivebot(get_turf(src))
-			if("range")
-				new /mob/living/simple_animal/hostile/hivebot/range(get_turf(src))
-			if("rapid")
-				new /mob/living/simple_animal/hostile/hivebot/rapid(get_turf(src))
+			// if("range")
+			// 	new /mob/living/simple_animal/hostile/hivebot/range(get_turf(src))
+			// if("rapid")
+			// 	new /mob/living/simple_animal/hostile/hivebot/rapid(get_turf(src))
 
 	sleep(100)
 	visible_message(span_boldannounce("[src] warps out!"))
@@ -49,10 +49,10 @@
 	max_mobs = 5
 	max_integrity = 250
 	mob_types = list(
-		/mob/living/simple_animal/hostile/hivebot/wasteplanet = 40,
-		/mob/living/simple_animal/hostile/hivebot/wasteplanet/ranged = 40,
-		/mob/living/simple_animal/hostile/hivebot/wasteplanet/ranged/rapid = 10,
-		/mob/living/simple_animal/hostile/hivebot/wasteplanet/strong = 5,
+		// /mob/living/simple_animal/hostile/hivebot/wasteplanet = 40,
+		// /mob/living/simple_animal/hostile/hivebot/wasteplanet/ranged = 40,
+		// /mob/living/simple_animal/hostile/hivebot/wasteplanet/ranged/rapid = 10,
+		// /mob/living/simple_animal/hostile/hivebot/wasteplanet/strong = 5,
 		/mob/living/simple_animal/hostile/hivebot/mechanic = 5
 	)
 	spawn_text = "crawls out of"
