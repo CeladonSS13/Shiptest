@@ -146,6 +146,9 @@
 /datum/emote/living/swear
 	name = EMOTE_SWEAR
 
+/datum/emote/living/glasses
+	name = EMOTE_GLASSES
+
 /// MARK:  Emote Brain
 
 /datum/emote/living/brain/alarm

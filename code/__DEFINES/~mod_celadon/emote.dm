@@ -55,6 +55,7 @@
 #define EMOTE_SULK 					"Обидеться"
 #define EMOTE_SWAY 					"Качаться на месте"
 #define EMOTE_SWEAR 				"Ругнуться"
+#define EMOTE_GLASSES 				"Поправить очки"
 #define EMOTE_TILT 					"Наклонить голову"
 #define EMOTE_TREMBLE 				"Дрожать в ужасе"
 #define EMOTE_TWITCH 				"Сильно дёргаться"

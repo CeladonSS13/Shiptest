@@ -1717,15 +1717,35 @@
 	key_third_person = "glasses"
 	message = "поправляет очки."
 	emote_type = EMOTE_VISIBLE
+	cooldown = 5 SECONDS
+	var/static/list/allowed_glasses = list(
+		/obj/item/clothing/glasses/regular,
+		/obj/item/clothing/glasses/sunglasses,
+		/obj/item/clothing/glasses/hud/health/sunglasses,
+		/obj/item/clothing/glasses/hud/diagnostic/sunglasses,
+		/obj/item/clothing/glasses/hud/security/sunglasses,
+		/obj/item/clothing/glasses/meson/sunglasses
+	)
+	var/static/list/blocking_headgear = list(
+		/obj/item/clothing/head/helmet/space,
+		/obj/item/clothing/head/mod
+	)
 
-/datum/emote/living/carbon/human/glasses/can_run_emote(mob/user, status_check = TRUE, intentional, params)
-	var/obj/head_slot = user.get_item_by_slot(ITEM_SLOT_HEAD)
-	var/obj/eyes_slot = user.get_item_by_slot(ITEM_SLOT_EYES)
-	if(istype(head_slot, /obj/item/clothing/head/helmet/space) || istype(head_slot, /obj/item/clothing/head/mod))
+/datum/emote/living/carbon/human/glasses/can_run_emote(mob/user, status_check, intentional)
+	if(!..())
 		return FALSE
-	if(istype(eyes_slot, /obj/item/clothing/glasses/regular) || istype(eyes_slot, /obj/item/clothing/glasses/sunglasses))
-		return ..()
-	return FALSE
+
+	var/obj/item/eyes_slot = user.get_item_by_slot(ITEM_SLOT_EYES)
+	if(!is_type_in_list(eyes_slot, allowed_glasses))
+		to_chat(user, span_warning("На мне нет подходящих очков!"))
+		return FALSE
+
+	var/obj/item/head_slot = user.get_item_by_slot(ITEM_SLOT_HEAD)
+	if(is_type_in_list(head_slot, blocking_headgear))
+		to_chat(user, span_warning("Я не могу поправить очки через шлем!"))
+		return FALSE
+		
+	return TRUE
 
 /datum/emote/living/carbon/human/glasses/run_emote(mob/user, params, type_override, intentional)
 	. = ..()
