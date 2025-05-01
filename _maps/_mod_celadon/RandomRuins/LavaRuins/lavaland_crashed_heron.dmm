@@ -2161,9 +2161,7 @@
 	pixel_x = -2;
 	pixel_y = 3
 	},
-/turf/open/floor/plating/asteroid/purple/lit{
-	icon_state = "asteroid7"
-	},
+/turf/open/floor/plating/asteroid/purple/lit,
 /area/ruin/unpowered/corprejectrooms)
 "adW" = (
 /obj/effect/decal/cleanable/shreds{
@@ -2355,9 +2353,6 @@
 	pixel_x = 4;
 	pixel_y = -4
 	},
-/obj/structure/table_frame{
-	dir = 4
-	},
 /obj/item/stack/sheet/plasteel{
 	dir = 4;
 	pixel_x = -3;
@@ -2370,9 +2365,7 @@
 	pixel_y = -1;
 	color = "#ff0000"
 	},
-/turf/open/floor/plating/asteroid/purple/lit{
-	icon_state = "asteroid6"
-	},
+/turf/open/floor/plating/asteroid/purple/lit,
 /area/ruin/unpowered/corprejectrooms)
 "aek" = (
 /obj/structure/girder,
@@ -3787,7 +3780,6 @@
 /obj/item/stack/cable_coil/cut/red{
 	amount = 2;
 	name = "cable piece";
-	icon_state = "coil22";
 	dir = 8;
 	pixel_x = -1
 	},
@@ -3823,7 +3815,6 @@
 /obj/item/stack/cable_coil/cut/red{
 	amount = 1;
 	name = "cable piece";
-	icon_state = "coil21";
 	dir = 4;
 	pixel_x = -1;
 	pixel_y = -1
@@ -4063,7 +4054,6 @@
 /obj/item/stack/cable_coil/cut/red{
 	amount = 2;
 	name = "cable piece";
-	icon_state = "coil22";
 	dir = 4;
 	pixel_x = 4;
 	pixel_y = 6
@@ -4942,7 +4932,6 @@
 /obj/item/stack/cable_coil/cut/red{
 	amount = 2;
 	name = "cable piece";
-	icon_state = "coil22";
 	dir = 4;
 	pixel_x = -2;
 	pixel_y = 1
@@ -5762,11 +5751,6 @@
 	pixel_x = -7;
 	pixel_y = 9
 	},
-/obj/item/reagent_containers/food/snacks/grown/potato/sweet{
-	list_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 6, /datum/reagent/consumable/sugar = 6, /datum/reagent/consumable/nutriment = 6);
-	pixel_x = -1;
-	pixel_y = -2
-	},
 /obj/item/reagent_containers/food/snacks/grown/carrot{
 	list_reagents = list(/datum/reagent/medicine/oculine = 14, /datum/reagent/consumable/nutriment/vitamin = 3, /datum/reagent/consumable/nutriment = 4);
 	pixel_x = -4;
@@ -5896,17 +5880,6 @@
 	icon_state = "tube_emergency"
 	},
 /obj/item/broken_bottle{
-	name = "broken cup";
-	icon = '';
-	icon_state = "tea_empty";
-	dir = 8;
-	pixel_x = -4;
-	pixel_y = -6
-	},
-/obj/item/broken_bottle{
-	name = "broken glass of cola";
-	icon = '';
-	icon_state = "glass_empty";
 	dir = 8;
 	pixel_x = -1;
 	pixel_y = -2
@@ -6003,11 +5976,6 @@
 /obj/item/reagent_containers/food/snacks/grown/mushroom/chanterelle{
 	list_reagents = list(/datum/reagent/consumable/nutriment = 6);
 	pixel_x = -4;
-	pixel_y = 5
-	},
-/obj/item/reagent_containers/food/snacks/grown/potato/sweet{
-	list_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 6, /datum/reagent/consumable/sugar = 6, /datum/reagent/consumable/nutriment = 6);
-	pixel_x = 2;
 	pixel_y = 5
 	},
 /obj/item/reagent_containers/food/snacks/grown/mushroom/chanterelle{
@@ -8596,9 +8564,7 @@
 	pixel_x = -2;
 	pixel_y = 2
 	},
-/turf/open/floor/plating/asteroid/purple{
-	icon_state = "asteroid5"
-	},
+/turf/open/floor/plating/asteroid/purple/lit,
 /area/ruin/unpowered/corprejectrooms)
 "anJ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -10684,9 +10650,7 @@
 	pixel_x = 6;
 	pixel_y = 1
 	},
-/turf/open/floor/plating/asteroid/purple{
-	icon_state = "asteroid5"
-	},
+/turf/open/floor/plating/asteroid/purple/lit,
 /area/ruin/unpowered/corprejectrooms)
 "aqy" = (
 /obj/structure/grille/broken,
@@ -12065,11 +12029,6 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/ruin/unpowered/corprejectrooms)
-"asv" = (
-/turf/open/floor/plating/asteroid/purple/lit{
-	icon_state = "asteroid3"
-	},
 /area/ruin/unpowered/corprejectrooms)
 "asw" = (
 /turf/open/floor/engine/hull/reinforced/interior,
@@ -14565,11 +14524,7 @@
 	pixel_x = -8;
 	pixel_y = 5
 	},
-/obj/item/broken_bottle{
-	name = "broken cup";
-	icon = '';
-	icon_state = "tea_empty"
-	},
+/obj/item/broken_bottle,
 /obj/item/shard{
 	icon_state = "medium";
 	pixel_x = -8;
@@ -14939,11 +14894,6 @@
 "awB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "engie";
-	pixel_x = 2;
-	pixel_y = 1
-	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/item/stack/rods{
 	amount = 2;
@@ -15151,11 +15101,6 @@
 	},
 /obj/structure/window/reinforced/fulltile/shuttle,
 /turf/open/floor/plating,
-/area/ruin/unpowered/corprejectrooms)
-"awR" = (
-/turf/open/floor/plating/asteroid/purple{
-	icon_state = "asteroid5"
-	},
 /area/ruin/unpowered/corprejectrooms)
 "awU" = (
 /turf/open/lava/smooth/lava_land_surface,
@@ -22780,7 +22725,7 @@ aaV
 asu
 arX
 afh
-asv
+afh
 abG
 asw
 asx
@@ -23981,7 +23926,7 @@ abG
 awQ
 awP
 ash
-awR
+afh
 abG
 abG
 aaF

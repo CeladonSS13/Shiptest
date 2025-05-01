@@ -2360,9 +2360,7 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/crew/dorm)
 "xl" = (
-/obj/structure/chair/sofa{
-	dir = 1
-	},
+/obj/structure/chair/sofa/blue/left/directional/north,
 /turf/open/floor/carpet/stellar,
 /area/ship/crew/canteen)
 "xo" = (
@@ -2956,10 +2954,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "Di" = (
-/obj/structure/chair/sofa{
-	dir = 1
-	},
-/obj/machinery/firealarm/directional/west,
+/obj/structure/chair/sofa/blue/right/directional/north,
 /turf/open/floor/carpet/stellar,
 /area/ship/crew/canteen)
 "Do" = (
@@ -3113,6 +3108,7 @@
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/dorm)
 "ES" = (
+/obj/machinery/firealarm/directional/south,
 /turf/open/floor/carpet/stellar,
 /area/ship/crew/canteen)
 "EZ" = (

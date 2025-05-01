@@ -445,12 +445,6 @@
 	},
 /turf/open/floor/plating/dirt/jungle,
 /area/overmap_encounter/planetoid/cave/explored)
-"fo" = (
-/obj/machinery/porta_turret/ruin/ramzi{
-	dir = 5
-	},
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/storage)
 "fs" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
@@ -1505,12 +1499,13 @@
 	},
 /area/ruin/jungle/cavecrew/dormitories)
 "sJ" = (
-/obj/item/clothing/head/crown/fancy{
-	pixel_y = 9;
-	pixel_x = 6
-	},
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
+	},
+/obj/item/clothing/head/crown{
+	pixel_x = 6;
+	pixel_y = 9;
+	name = "magnificent crown"
 	},
 /turf/open/floor/plating,
 /area/ruin/jungle/cavecrew/dormitories)
@@ -3639,12 +3634,6 @@
 	},
 /turf/open/water/jungle,
 /area/overmap_encounter/planetoid/cave/explored)
-"SH" = (
-/obj/machinery/porta_turret/ruin/ramzi{
-	dir = 5
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/storage)
 "SI" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
