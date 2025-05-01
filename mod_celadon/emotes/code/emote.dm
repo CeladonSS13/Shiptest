@@ -1744,7 +1744,7 @@
 	if(is_type_in_list(head_slot, blocking_headgear))
 		to_chat(user, span_warning("Я не могу поправить очки через шлем!"))
 		return FALSE
-		
+
 	return TRUE
 
 /datum/emote/living/carbon/human/glasses/run_emote(mob/user, params, type_override, intentional)
@@ -1785,40 +1785,90 @@
 
 // Jellyperson
 
-/datum/emote/living/jelly/squish
+/datum/emote/living/carbon/human/jelly/squish
 	key = "squish"
 	key_third_person = "squishes"
 	message = "хлюпает."
 	emote_type = EMOTE_VISIBLE
 
-/datum/emote/living/jelly/can_run_emote(mob/user, status_check = TRUE , intentional)
+/datum/emote/living/carbon/human/jelly/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
 	if(!isjellyperson(user))
 		return FALSE
 	return TRUE
 
-/datum/emote/living/jelly/bubble
+/datum/emote/living/carbon/human/jelly/bubble
 	key = "bubble"
 	key_third_person = "bubbles"
 	message = "булькает."
 	emote_type = EMOTE_VISIBLE
 
-/datum/emote/living/jelly/pop
+/datum/emote/living/carbon/human/jelly/pop
 	key = "pop"
 	key_third_person = "popped"
 	message = "хлопает ртом."
 	emote_type = EMOTE_VISIBLE
 
-// VOX
+// VOX & KEPORI
 
-	// emote_wag
-	// emote_quill
+/datum/emote/living/carbon/human/tailthump // нет
+	key = "thump"
+	key_third_person = "thumps their tail"
+	message = "ударяет хвостом."
+	emote_type = EMOTE_AUDIBLE
+	vary = TRUE
+
+/datum/emote/living/carbon/human/tailthump/can_run_emote(mob/user, status_check = TRUE , intentional)
+	if(!..())
+		return FALSE
+	if(!isvox(user))
+		return FALSE
+	return TRUE
+
+/datum/emote/living/carbon/human/tailthump/get_sound(mob/living/user)
+	return 'sound/voice/lizard/tailthump.ogg'
+
+/datum/emote/living/carbon/human/kepiclick
+	key = "click"
+	key_third_person = "clicks"
+	message = "щелкает клювом."
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/carbon/human/kepiclick/can_run_emote(mob/user, status_check = TRUE , intentional)
+	if(!..())
+		return FALSE
+	if(!iskepori(user) && !isvox(user))
+		return FALSE
+	return TRUE
+
+/datum/emote/living/carbon/human/kepiclick/get_sound(mob/living/user)
+	return 'sound/voice/kepori/kepiclick.ogg'
+
+/datum/emote/living/carbon/human/quill
+	key = "quill"
+	key_third_person = "quill"
+	message = "шуршит перьями."
+	emote_type = EMOTE_VISIBLE
+
+/datum/emote/living/carbon/human/quill/can_run_emote(mob/user, status_check = TRUE , intentional)
+	if(!..())
+		return FALSE
+	if(!iskepori(user) && !isvox(user))
+		return FALSE
+	return TRUE
 
 // SKELETON
 
-	// emote_rattle
+/datum/emote/living/carbon/human/rattle
+	key = "rattle"
+	key_third_person = "rattles"
+	message = "гремит костями."
+	emote_type = EMOTE_VISIBLE
 
-// SPIDER
-
-	// emote_clack_spider
+/datum/emote/living/carbon/human/rattle/can_run_emote(mob/user, status_check = TRUE, intentional)
+	if(!..())
+		return FALSE
+	if(!isskeleton(user))
+		return FALSE
+	return TRUE

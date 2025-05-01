@@ -319,6 +319,15 @@
 /datum/emote/living/carbon/human/snap
 	name = EMOTE_SPECIES_SNAP
 
+/datum/emote/living/carbon/human/tailthump
+	name = EMOTE_SPECIES_TAILTHUMP
+
+/datum/emote/living/carbon/human/kepiclick
+	name = EMOTE_SPECIES_KEPICLICK
+
+/datum/emote/living/carbon/human/kepiwhistle
+	name = EMOTE_SPECIES_KEPIWHISTLE
+
 /datum/emote/living/carbon/human/fart
 	name = EMOTE_SPECIES_FART
 

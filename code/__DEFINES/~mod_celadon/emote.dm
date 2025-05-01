@@ -162,6 +162,9 @@
 #define EMOTE_SPECIES_WSMILE		"Слегка улыбнуться"
 #define EMOTE_SPECIES_CLACK_SPIDER	"Щёлкнуть жвалами"
 #define EMOTE_SPECIES_SNAP			"Щёлкнуть пальцами"
+#define EMOTE_SPECIES_TAILTHUMP		"Ударить хвостом"
+#define EMOTE_SPECIES_KEPICLICK		"Щёлкнуть клювом"
+#define EMOTE_SPECIES_KEPIWHISTLE	"Свистеть"
 
 
 /// Carbon Emotes
