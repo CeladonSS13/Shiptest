@@ -4005,7 +4005,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
 	},
-/obj/item/banner/engineering{
+/obj/item/banner/engineering/mundane{
 	anchored = 1
 	},
 /turf/open/space/basic,
@@ -4046,7 +4046,7 @@
 /turf/open/floor/plating/asteroid,
 /area/ruin/space/has_grav/singularitylab)
 "pT" = (
-/obj/item/banner/engineering{
+/obj/item/banner/engineering/mundane{
 	anchored = 1
 	},
 /turf/open/floor/engine/hull,
@@ -11232,7 +11232,7 @@
 	icon_state = "1-2"
 	},
 /obj/item/book/manual/wiki/engineering,
-/obj/item/banner/engineering{
+/obj/item/banner/engineering/mundane{
 	anchored = 1
 	},
 /turf/open/space/basic,
@@ -11656,6 +11656,16 @@
 	desc = "A patch of overgrown grass. Hints of plasteel plating lay under it.";
 	name = "grass"
 	},
+/area/ruin/space/has_grav/singularitylab/civvie)
+"SO" = (
+/obj/effect/turf_decal/siding/thinplating,
+/obj/structure/cable{
+	icon_state = "5-9"
+	},
+/obj/item/banner/engineering/mundane{
+	anchored = 1
+	},
+/turf/open/floor/plasteel,
 /area/ruin/space/has_grav/singularitylab/civvie)
 "SQ" = (
 /obj/machinery/rnd/production/protolathe/department/engineering,
@@ -17948,7 +17958,7 @@ ty
 ty
 Bc
 hS
-yL
+SO
 id
 id
 id
