@@ -20,7 +20,7 @@
 /datum/mission/outpost/research/New(...)
 	researcher_name = SSmissions.get_researcher_name()
 	num_wanted = rand(num_wanted - 2, num_wanted + 2)
-	value += num_wanted * storm_value	// [CELADON-REMOVE] - CELADON_ECONOMY
+	value += num_wanted * storm_value
 	desc = "[researcher_name] [desc]"
 	return ..()
 
@@ -58,7 +58,10 @@
 	var/obj/docking_port/mobile/scanner_port
 	if(failed || (num_current >= num_wanted))
 		return
-	over_obj = locate(objective_type) in ship.current_overmap.overmap_container[ship.x][ship.y]
+	// [CELADON-EDIT] - CELADON_FIXES - Округляем координаты
+	// over_obj = locate(objective_type) in ship.current_overmap.overmap_container[ship.x][ship.y]	// ORIGINAL
+	over_obj = locate(objective_type) in ship.current_overmap.overmap_container[floor(ship.x)][floor(ship.y)]
+	// [/CELADON-EDIT]
 	scanner_port = SSshuttle.get_containing_shuttle(scanner)
 	if(!over_obj || !scanner.is_operational || scanner_port?.current_ship != servant)
 		return

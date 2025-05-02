@@ -86,8 +86,8 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 					B.adjust_speed(-B.speed_x/2 + alt_opposite_x, -B.speed_y/2 + alt_opposite_y)
 				else
 					B.vector_to_add = list("x" = -B.speed_x/2 + alt_opposite_x, "y" = -B.speed_y/2 + alt_opposite_y)
-				spawn_meteors_alt(round(60 SECONDS * MAGNITUDE(relative_motion_x, relative_motion_y))+1, list(/obj/effect/meteor/invisible), A.shuttle_port.get_virtual_level(), angle2dir_cardinal(SIMPLIFY_DEGREES((bearing-A.bow_heading+90))))
-				spawn_meteors_alt(round(60 SECONDS * MAGNITUDE(relative_motion_x, relative_motion_y))+1, list(/obj/effect/meteor/invisible), B.shuttle_port.get_virtual_level(), angle2dir_cardinal(SIMPLIFY_DEGREES((bearing-A.bow_heading+270))))
+				spawn_meteors_alt(round(60 SECONDS * MAGNITUDE(relative_motion_x, relative_motion_y))+1, list(/obj/effect/meteor/invisible), A.shuttle_port.get_virtual_level(), A.shuttle_port, angle2dir_cardinal(SIMPLIFY_DEGREES((bearing-A.bow_heading+90))))
+				spawn_meteors_alt(round(60 SECONDS * MAGNITUDE(relative_motion_x, relative_motion_y))+1, list(/obj/effect/meteor/invisible), B.shuttle_port.get_virtual_level(), B.shuttle_port, angle2dir_cardinal(SIMPLIFY_DEGREES((bearing-A.bow_heading+270))))
 
 	return list("cpa" = round(cpa), "tcpa" = round(tcpa/10), "brg" = round(SIMPLIFY_DEGREES(bearing-A.bow_heading)))
 
