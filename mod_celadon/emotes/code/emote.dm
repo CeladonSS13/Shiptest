@@ -83,13 +83,11 @@
 /datum/emote/living/carbon/mothchitter/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
-	if(!ismoth(user))
+	if(!ismoth(user) || istype(user, /mob/living/simple_animal/pet/mothroach)))
 		return FALSE
 	return TRUE
 
 /datum/emote/living/carbon/mothchitter/get_sound(mob/living/user)
-	if(!ishuman(user))
-		return
 	return 'mod_celadon/_storge_sounds/sound/voice/moth/mothchitter.ogg'
 
 /datum/emote/living/chuckle
@@ -392,6 +390,16 @@
 	emote_type = EMOTE_VISIBLE
 	hands_use_check = TRUE
 
+/datum/emote/living/jump/run_emote(mob/living/user, params, type_override, intentional)
+	. = ..()
+	if(!.)
+		return FALSE
+	animate(user, pixel_y = user.pixel_y + 4, time = 0.1 SECONDS)
+	animate(pixel_y = user.pixel_y - 4, time = 0.1 SECONDS)
+
+/datum/emote/living/jump/get_sound(mob/living/user)
+	return 'sound/weapons/thudswoosh.ogg'
+
 /datum/emote/living/kiss
 	key = "kiss"
 	key_third_person = "kisses"
@@ -493,12 +501,15 @@
 	emote_type = EMOTE_AUDIBLE
 	vary = TRUE
 
+/datum/emote/living/carbon/mothsqueak/can_run_emote(mob/user, status_check, intentional)
+	if(!..())
+		return FALSE
+	if(!ismoth(user) && !istype(user, /mob/living/simple_animal/pet/mothroach))
+		return FALSE
+	return TRUE
+
 /datum/emote/living/carbon/mothsqueak/get_sound(mob/living/user)
-	if(!ishuman(user))
-		return
-	var/mob/living/carbon/human/H = user
-	if(ismoth(H) | (istype(H, /mob/living/simple_animal/pet/mothroach)))
-		return 'mod_celadon/_storge_sounds/sound/voice/moth/mothsqueak.ogg'
+	return 'mod_celadon/_storge_sounds/sound/voice/moth/mothsqueak.ogg'
 
 /datum/emote/living/peace
 	key = "peace"
@@ -568,6 +579,18 @@
 	key_third_person = "shiver"
 	message = "дрожит!"
 	emote_type = EMOTE_VISIBLE
+
+#define SHIVER_LOOP_DURATION (1 SECONDS)
+/datum/emote/living/shiver/run_emote(mob/living/user, params, type_override, intentional)
+	. = ..()
+	if(!.)
+		return FALSE
+	animate(user, pixel_x = user.pixel_x + 1, time = 0.1 SECONDS)
+	for(var/i in 1 to SHIVER_LOOP_DURATION / (0.2 SECONDS)) //desired total duration divided by the iteration duration to give the necessary iteration count
+		animate(pixel_x = user.pixel_x - 1, time = 0.1 SECONDS)
+		animate(pixel_x = user.pixel_x + 1, time = 0.1 SECONDS)
+	animate(pixel_x = user.pixel_x - 1, time = 0.1 SECONDS)
+#undef SHIVER_LOOP_DURATION
 
 /datum/emote/living/sigh
 	key = "sigh"
@@ -735,11 +758,33 @@
 	message = "головокружительно кружится."
 	emote_type = EMOTE_VISIBLE
 
+/datum/emote/living/sway/run_emote(mob/living/user, params, type_override, intentional)
+	. = ..()
+	if(!.)
+		return FALSE
+	animate(user, pixel_x = user.pixel_x + 2, time = 0.5 SECONDS)
+	for(var/i in 1 to 2)
+		animate(pixel_x = user.pixel_x - 4, time = 1.0 SECONDS)
+		animate(pixel_x = user.pixel_x + 4, time = 1.0 SECONDS)
+	animate(pixel_x = user.pixel_x - 2, time = 0.5 SECONDS)
+
 /datum/emote/living/tremble
 	key = "tremble"
 	key_third_person = "trembles"
 	message = "дрожит в ужасе!"
 	emote_type = EMOTE_VISIBLE
+
+#define TREMBLE_LOOP_DURATION (4.4 SECONDS)
+/datum/emote/living/tremble/run_emote(mob/living/user, params, type_override, intentional)
+	. = ..()
+	if(!.)
+		return FALSE
+	animate(user, pixel_x = user.pixel_x + 2, time = 0.2 SECONDS)
+	for(var/i in 1 to TREMBLE_LOOP_DURATION / (0.4 SECONDS)) //desired total duration divided by the iteration duration to give the necessary iteration count
+		animate(pixel_x = user.pixel_x - 2, time = 0.2 SECONDS)
+		animate(pixel_x = user.pixel_x + 2, time = 0.2 SECONDS)
+	animate(pixel_x = user.pixel_x - 2, time = 0.2 SECONDS)
+#undef TREMBLE_LOOP_DURATION
 
 /datum/emote/living/twitch
 	key = "twitch"
@@ -747,10 +792,27 @@
 	message = "сильно дёргается."
 	emote_type = EMOTE_VISIBLE
 
+/datum/emote/living/twitch/run_emote(mob/living/user, params, type_override, intentional)
+	. = ..()
+	if(!.)
+		return FALSE
+	animate(user, pixel_x = user.pixel_x - 1, time = 0.1 SECONDS)
+	animate(pixel_x = user.pixel_x + 1, time = 0.1 SECONDS)
+	animate(time = 0.1 SECONDS)
+	animate(pixel_x = user.pixel_x - 1, time = 0.1 SECONDS)
+	animate(pixel_x = user.pixel_x + 1, time = 0.1 SECONDS)
+
 /datum/emote/living/twitch_s
 	key = "twitch_s"
 	message = "дёргается."
 	emote_type = EMOTE_VISIBLE
+
+/datum/emote/living/twitch_s/run_emote(mob/living/user, params, type_override, intentional)
+	. = ..()
+	if(!.)
+		return FALSE
+	animate(user, pixel_x = user.pixel_x - 1, time = 0.1 SECONDS)
+	animate(pixel_x = user.pixel_x + 1, time = 0.1 SECONDS)
 
 /datum/emote/living/wave
 	key = "wave"
@@ -858,7 +920,7 @@
 
 /datum/emote/living/help/run_emote(mob/user, params, type_override, intentional)
 	var/list/keys = list()
-	var/list/message = list("Available emotes, you can use them with say \"*emote\": ")
+	var/list/message = list("Доступный список эмоций. Их можно использовать в поле say \"*emote\": ")
 
 	for(var/key in GLOB.emote_list)
 		for(var/datum/emote/P in GLOB.emote_list[key])
@@ -884,8 +946,8 @@
 /datum/emote/beep
 	key = "beep"
 	key_third_person = "beeps"
-	message = "beeps."
-	message_param = "beeps at %t."
+	message = "пищит."
+	message_param = "пищит на %t."
 	sound = 'sound/machines/twobeep.ogg'
 	mob_type_allowed_typecache = list(/mob/living/brain, /mob/living/silicon)
 
