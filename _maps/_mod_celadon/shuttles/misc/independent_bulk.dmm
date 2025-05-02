@@ -844,6 +844,10 @@
 /obj/item/circuitboard/machine/cell_charger,
 /obj/item/circuitboard/machine/fax,
 /obj/item/circuitboard/machine/microwave,
+/obj/effect/decal/cleanable/crayon{
+	icon_state = "electricdanger";
+	pixel_y = 32
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "rD" = (
@@ -1014,6 +1018,13 @@
 /obj/item/gun/ballistic/shotgun/automatic/combat,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
+"vi" = (
+/obj/effect/decal/cleanable/crayon{
+	icon_state = "body";
+	color = "blue"
+	},
+/turf/open/floor/plating,
+/area/ship/engineering/atmospherics)
 "vG" = (
 /obj/machinery/power/shuttle/engine/electric/bad{
 	icon_state = "burst";
@@ -1033,6 +1044,13 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/dark,
+/area/ship/engineering/atmospherics)
+"wg" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/crayon{
+	color = "red"
+	},
+/turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "wn" = (
 /obj/item/radio/intercom/wideband/table{
@@ -2744,7 +2762,7 @@ GA
 GA
 "}
 (15,1,1) = {"
-EX
+vi
 cN
 Ls
 tl
@@ -3001,7 +3019,7 @@ ik
 dm
 GJ
 OX
-OY
+wg
 "}
 (28,1,1) = {"
 GA

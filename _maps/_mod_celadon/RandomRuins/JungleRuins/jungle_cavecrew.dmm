@@ -420,7 +420,9 @@
 /turf/open/floor/plating,
 /area/ruin/jungle/cavecrew/dormitories)
 "eS" = (
-/obj/machinery/porta_turret/ruin/ramzi,
+/obj/machinery/porta_turret/ruin/ramzi{
+	faction = list("Frontiersmen")
+	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/storage)
 "eW" = (
@@ -563,7 +565,9 @@
 	},
 /area/ruin/jungle/cavecrew/engineering)
 "gQ" = (
-/obj/machinery/porta_turret/ruin/ramzi,
+/obj/machinery/porta_turret/ruin/ramzi{
+	faction = list("Frontiersmen")
+	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ruin/jungle/cavecrew/bridge)
 "gU" = (
@@ -2258,7 +2262,9 @@
 /turf/open/floor/plating,
 /area/ruin/jungle/cavecrew/hallway)
 "BI" = (
-/obj/machinery/porta_turret/ruin/ramzi,
+/obj/machinery/porta_turret/ruin/ramzi{
+	faction = list("Frontiersmen")
+	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/storage)
 "BO" = (
@@ -2660,7 +2666,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "GN" = (
-/obj/machinery/porta_turret/ruin/ramzi,
+/obj/machinery/porta_turret/ruin/ramzi{
+	faction = list("Frontiersmen")
+	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ruin/jungle/cavecrew/dormitories)
 "GR" = (

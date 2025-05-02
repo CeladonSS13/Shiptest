@@ -2161,7 +2161,9 @@
 	pixel_x = -2;
 	pixel_y = 3
 	},
-/turf/open/floor/plating/asteroid/purple/lit,
+/turf/open/floor/plating/asteroid/purple/lit{
+	icon_state = "asteroid7"
+	},
 /area/ruin/unpowered/corprejectrooms)
 "adW" = (
 /obj/effect/decal/cleanable/shreds{
@@ -2353,6 +2355,9 @@
 	pixel_x = 4;
 	pixel_y = -4
 	},
+/obj/structure/table_frame{
+	dir = 4
+	},
 /obj/item/stack/sheet/plasteel{
 	dir = 4;
 	pixel_x = -3;
@@ -2365,7 +2370,9 @@
 	pixel_y = -1;
 	color = "#ff0000"
 	},
-/turf/open/floor/plating/asteroid/purple/lit,
+/turf/open/floor/plating/asteroid/purple/lit{
+	icon_state = "asteroid6"
+	},
 /area/ruin/unpowered/corprejectrooms)
 "aek" = (
 /obj/structure/girder,
@@ -5779,6 +5786,11 @@
 	pixel_x = 1;
 	pixel_y = -4
 	},
+/obj/item/reagent_containers/food/snacks/grown/sweet_potato{
+	list_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 3, /datum/reagent/consumable/nutriment = 6);
+	pixel_x = -1;
+	pixel_y = -2
+	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/ruin/unpowered/corprejectrooms)
 "ajk" = (
@@ -5878,6 +5890,11 @@
 /obj/structure/table,
 /obj/machinery/light/directional/south{
 	icon_state = "tube_emergency"
+	},
+/obj/item/broken_bottle{
+	dir = 8;
+	pixel_x = -4;
+	pixel_y = -6
 	},
 /obj/item/broken_bottle{
 	dir = 8;
@@ -5997,6 +6014,11 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = 6);
 	pixel_x = 5;
 	pixel_y = 2
+	},
+/obj/item/reagent_containers/food/snacks/grown/sweet_potato{
+	pixel_x = 5;
+	pixel_y = 2;
+	list_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 3, /datum/reagent/consumable/nutriment = 6)
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered/corprejectrooms)
@@ -8564,7 +8586,9 @@
 	pixel_x = -2;
 	pixel_y = 2
 	},
-/turf/open/floor/plating/asteroid/purple/lit,
+/turf/open/floor/plating/asteroid/purple{
+	icon_state = "asteroid5"
+	},
 /area/ruin/unpowered/corprejectrooms)
 "anJ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -10650,7 +10674,9 @@
 	pixel_x = 6;
 	pixel_y = 1
 	},
-/turf/open/floor/plating/asteroid/purple/lit,
+/turf/open/floor/plating/asteroid/purple{
+	icon_state = "asteroid5"
+	},
 /area/ruin/unpowered/corprejectrooms)
 "aqy" = (
 /obj/structure/grille/broken,
@@ -12029,6 +12055,11 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
+/area/ruin/unpowered/corprejectrooms)
+"asv" = (
+/turf/open/floor/plating/asteroid/purple/lit{
+	icon_state = "asteroid3"
+	},
 /area/ruin/unpowered/corprejectrooms)
 "asw" = (
 /turf/open/floor/engine/hull/reinforced/interior,
@@ -15102,6 +15133,11 @@
 /obj/structure/window/reinforced/fulltile/shuttle,
 /turf/open/floor/plating,
 /area/ruin/unpowered/corprejectrooms)
+"awR" = (
+/turf/open/floor/plating/asteroid/purple{
+	icon_state = "asteroid5"
+	},
+/area/ruin/unpowered/corprejectrooms)
 "awU" = (
 /turf/open/lava/smooth/lava_land_surface,
 /area/ruin/unpowered/corprejectrooms)
@@ -15335,6 +15371,11 @@
 "ttM" = (
 /mob/living/simple_animal/hostile/asteroid/goliath/magma,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/unpowered/corprejectrooms)
+"ukO" = (
+/obj/structure/railing,
+/obj/effect/decal/cleanable/crayon,
+/turf/open/floor/plating,
 /area/ruin/unpowered/corprejectrooms)
 "vnH" = (
 /obj/effect/mob_spawn/human/corpse/vigilitas_trooper,
@@ -22725,7 +22766,7 @@ aaV
 asu
 arX
 afh
-afh
+asv
 abG
 asw
 asx
@@ -23802,7 +23843,7 @@ aqK
 aaF
 aaS
 awB
-awg
+ukO
 abG
 asw
 asw
@@ -23926,7 +23967,7 @@ abG
 awQ
 awP
 ash
-afh
+awR
 abG
 abG
 aaF
