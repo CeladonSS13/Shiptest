@@ -1748,9 +1748,11 @@
 	return TRUE
 
 /datum/emote/living/carbon/human/glasses/run_emote(mob/user, params, type_override, intentional)
-	. = ..()
+	if(!..())
+		return FALSE
 	var/image/emote_animation = image('mod_celadon/_storge_icons/icons/emote_visuals.dmi', user, "glasses")
 	flick_overlay(emote_animation, GLOB.clients, 1.6 SECONDS)
+	return TRUE
 
 /////////////////////
 // Рассовые эмоуты //
@@ -1812,7 +1814,7 @@
 
 // VOX & KEPORI
 
-/datum/emote/living/carbon/human/tailthump // нет
+/datum/emote/living/carbon/human/tailthump
 	key = "thump"
 	key_third_person = "thumps their tail"
 	message = "ударяет хвостом."
