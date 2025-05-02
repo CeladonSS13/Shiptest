@@ -52,11 +52,13 @@
 /*
 /// MARK: Plasma
 */
+/datum/mission/outpost/acquire/extraction/New(...)
+	desc = "[pick("Factions","Corporations","Federations")] require large amounts of plasma sheets \
+	for [pick("base","station","ships")]. You are tasked with extracting them in large quantities in a short period of time."
 
 /datum/mission/outpost/acquire/extraction_plasma
 	// type_mission = "extraction_plasma"
 	name = "Plasma required"
-	desc = "[pick("Factions", "Corporations", "Federations")] require large 	amounts of plasma sheets for [pick("base", "station", "ships")]. You are 	tasked with extracting them in large quantities in a short period of time."
 	duration = 70 MINUTES
 	value = 600
 	weight = 1
