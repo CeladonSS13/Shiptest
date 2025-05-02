@@ -89,19 +89,32 @@
 	interference_power = 15
 
 	empty_space_mapgen = /datum/map_generator/planet_generator/asteroid
-
-	var/safe_speed = 3
-	var/list/meteor_types = list(
+	// [CELADON-EDIT] - CELADON_FIXES
+	// var/safe_speed = 3
+	// var/list/meteor_types = list(
+	// 	/obj/effect/meteor/dust=3,
+	// 	/obj/effect/meteor/medium=8,
+	// 	/obj/effect/meteor/big=1,
+	// 	/obj/effect/meteor/irradiated=3
+	// )
+	// var/primary_ores = list(\
+	// 	/obj/item/stack/ore/plasma,
+	// 	/obj/item/stack/ore/hematite,
+	// 	/obj/item/stack/ore/malachite,
+	// 	)	// ORIGINAL
+	safe_speed = 3
+	meteor_types = list(
 		/obj/effect/meteor/dust=3,
 		/obj/effect/meteor/medium=8,
 		/obj/effect/meteor/big=1,
 		/obj/effect/meteor/irradiated=3
 	)
-	var/primary_ores = list(\
+	primary_ores = list(\
 		/obj/item/stack/ore/plasma,
 		/obj/item/stack/ore/hematite,
 		/obj/item/stack/ore/malachite,
 		)
+	// [/CELADON-EDIT]
 
 /datum/overmap/event/meteor/alter_token_appearance()
 	icon_suffix = "[rand(1, 4)]"
