@@ -69,8 +69,8 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/engineering/glass{
-	dir = 4;
-	name = "Engineering"
+	name = "Engineering";
+	dir = 4
 	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
@@ -370,8 +370,8 @@
 	pixel_y = 6
 	},
 /obj/item/storage/firstaid/fire{
-	pixel_x = -8;
-	pixel_y = -3
+	pixel_y = -3;
+	pixel_x = -8
 	},
 /obj/item/storage/firstaid/brute{
 	pixel_x = 8;
@@ -629,9 +629,9 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/command/glass{
-	dir = 4;
+	req_access_txt = "19";
 	name = "Bridge";
-	req_access_txt = "19"
+	dir = 4
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/bridge)
@@ -818,8 +818,8 @@
 "jT" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/ids{
-	pixel_x = -2;
-	pixel_y = 6
+	pixel_y = 6;
+	pixel_x = -2
 	},
 /obj/machinery/recharger{
 	pixel_x = 9;
@@ -855,8 +855,8 @@
 "kh" = (
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/machinery/light_switch{
-	pixel_x = 11;
-	pixel_y = 23
+	pixel_y = 23;
+	pixel_x = 11
 	},
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -1100,18 +1100,18 @@
 	dir = 1
 	},
 /obj/structure/filingcabinet{
-	density = 0;
+	pixel_y = 14;
 	pixel_x = -11;
-	pixel_y = 14
+	density = 0
 	},
 /obj/structure/filingcabinet{
-	density = 0;
-	pixel_y = 14
+	pixel_y = 14;
+	density = 0
 	},
 /obj/structure/filingcabinet{
-	density = 0;
+	pixel_y = 14;
 	pixel_x = 11;
-	pixel_y = 14
+	density = 0
 	},
 /turf/open/floor/carpet/royalblack,
 /area/ship/crew/dorm/dormtwo)
@@ -1122,9 +1122,9 @@
 	dir = 1
 	},
 /obj/machinery/computer/monitor{
-	density = 0;
 	dir = 8;
-	pixel_x = 12
+	pixel_x = 12;
+	density = 0
 	},
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 4
@@ -1145,8 +1145,8 @@
 /area/ship/hallway/central)
 "nh" = (
 /mob/living/basic/mouse/white{
-	faction = list("playerNanotrasen","neutral");
-	name = "Wire eaters"
+	name = "Wire eaters";
+	faction = list("playerNanotrasen","neutral")
 	},
 /obj/structure/railing{
 	dir = 1;
@@ -1453,10 +1453,10 @@
 	dir = 1
 	},
 /obj/machinery/button/door{
-	dir = 8;
 	id = "teardrop_eng";
 	name = "Engine Shutters";
-	pixel_x = 31
+	pixel_x = 31;
+	dir = 8
 	},
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 4
@@ -1655,7 +1655,6 @@
 /obj/effect/turf_decal/siding/wood{
 	color = "#792f27"
 	},
-/obj/item/food/cake/apple,
 /turf/open/floor/wood/mahogany,
 /area/ship/hallway/central)
 "sy" = (
@@ -1685,8 +1684,8 @@
 /obj/item/clothing/suit/space/hardsuit/medical,
 /obj/item/clothing/mask/gas/sechailer,
 /obj/item/toy/plush/blahaj{
-	desc = "The adorable little mascot of the Solarian Maritime Society. Popular with the cuties.";
-	name = "Best medic in the sector"
+	name = "Best medic in the sector";
+	desc = "The adorable little mascot of the Solarian Maritime Society. Popular with the cuties."
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
@@ -1852,9 +1851,9 @@
 	dir = 4
 	},
 /obj/structure/toilet{
+	pixel_y = 8;
 	dir = 8;
-	pixel_x = 1;
-	pixel_y = 8
+	pixel_x = 1
 	},
 /obj/effect/turf_decal/siding/wideplating/light{
 	dir = 5
@@ -1978,9 +1977,9 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/command/glass{
-	dir = 4;
+	req_access_txt = "19";
 	name = "Bridge";
-	req_access_txt = "19"
+	dir = 4
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/bridge)
@@ -2106,8 +2105,8 @@
 /obj/structure/table/wood/fancy/royalblack,
 /obj/machinery/computer/secure_data/laptop{
 	dir = 8;
-	pixel_x = 2;
-	pixel_y = 4
+	pixel_y = 4;
+	pixel_x = 2
 	},
 /turf/open/floor/carpet/royalblack,
 /area/ship/crew/dorm/dormtwo)
@@ -2177,8 +2176,11 @@
 /obj/item/radio/intercom/directional/west,
 /obj/structure/dresser,
 /obj/item/candle/infinite{
-	pixel_x = -1;
-	pixel_y = 17
+	pixel_y = 17;
+	pixel_x = -1
+	},
+/obj/item/food/cakeslice/brain{
+	pixel_y = 9
 	},
 /turf/open/floor/carpet/royalblack,
 /area/ship/crew/dorm/dormtwo)
@@ -2288,9 +2290,9 @@
 	dir = 4
 	},
 /obj/structure/toilet{
+	pixel_y = 8;
 	dir = 8;
-	pixel_x = 1;
-	pixel_y = 8
+	pixel_x = 1
 	},
 /obj/effect/turf_decal/siding/wideplating/light{
 	dir = 4
@@ -2318,9 +2320,9 @@
 	},
 /obj/structure/bed/dogbed/runtime,
 /mob/living/simple_animal/pet/cat/space{
+	name = "First Mate";
 	faction = list("playerNanotrasen","neutral");
-	gender = "female";
-	name = "First Mate"
+	gender = "female"
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm/dormtwo)
@@ -2431,8 +2433,8 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/light_switch{
-	pixel_x = 11;
-	pixel_y = 23
+	pixel_y = 23;
+	pixel_x = 11
 	},
 /obj/effect/turf_decal/spline/fancy/wood{
 	dir = 1
@@ -2744,8 +2746,8 @@
 "DS" = (
 /obj/structure/table,
 /obj/item/stack/medical/mesh{
-	pixel_x = 15;
-	pixel_y = -9
+	pixel_y = -9;
+	pixel_x = 15
 	},
 /obj/item/toy/plush/moth/punished,
 /obj/effect/turf_decal/techfloor,
@@ -2831,8 +2833,8 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/engineering/glass{
-	dir = 4;
-	name = "Engineering"
+	name = "Engineering";
+	dir = 4
 	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
@@ -2873,8 +2875,8 @@
 	dir = 1
 	},
 /obj/item/ammo_casing/caseless/a858{
-	pixel_x = 8;
-	pixel_y = 11
+	pixel_y = 11;
+	pixel_x = 8
 	},
 /obj/effect/turf_decal/corner/opaque/black{
 	dir = 1
@@ -2940,8 +2942,8 @@
 "Gk" = (
 /obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/door/poddoor{
-	dir = 4;
-	id = "teardrop_windows"
+	id = "teardrop_windows";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/medical)
@@ -3177,8 +3179,8 @@
 	pixel_y = 4
 	},
 /obj/item/reagent_containers/food/snacks/grown/cabbage{
-	pixel_x = 9;
-	pixel_y = 6
+	pixel_y = 6;
+	pixel_x = 9
 	},
 /obj/item/rack_parts/shelf,
 /obj/item/rack_parts/shelf,
@@ -3224,8 +3226,8 @@
 /area/ship/bridge)
 "Kn" = (
 /obj/machinery/turretid/ship{
-	id = "teardrop_turrets";
-	pixel_y = -24
+	pixel_y = -24;
+	id = "teardrop_turrets"
 	},
 /obj/effect/turf_decal/corner/opaque/black{
 	dir = 5
@@ -3305,8 +3307,8 @@
 "KX" = (
 /obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/door/poddoor{
-	dir = 4;
-	id = "teardrop_windows"
+	id = "teardrop_windows";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -3389,8 +3391,8 @@
 "LI" = (
 /obj/structure/chair/sofa/blue/corpo/left/directional/east,
 /obj/structure/railing/wood{
-	color = "#D5A66E";
 	dir = 1;
+	color = "#D5A66E";
 	layer = 2.08
 	},
 /obj/effect/turf_decal/siding/wood{
@@ -3433,8 +3435,8 @@
 /obj/structure/bedsheetbin,
 /obj/item/toy/plush/slimeplushie{
 	desc = "An adorable stuffed toy that resembles a slime. It is practically just a hacky sack. This slime is thinking about killing you all.";
-	pixel_x = 10;
-	pixel_y = 11
+	pixel_y = 11;
+	pixel_x = 10
 	},
 /obj/item/toy/plush/blahaj{
 	pixel_x = -16;
@@ -3615,8 +3617,8 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/light_switch{
-	pixel_x = 11;
-	pixel_y = 23
+	pixel_y = 23;
+	pixel_x = 11
 	},
 /obj/effect/turf_decal/corner/opaque/black{
 	dir = 5
@@ -3957,9 +3959,9 @@
 /area/ship/crew/dorm)
 "Sb" = (
 /obj/structure/closet/wall{
-	dir = 1;
 	name = "Janitorial supplies";
-	pixel_y = 30
+	pixel_y = 30;
+	dir = 1
 	},
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/storage/bag/trash,
@@ -4108,9 +4110,9 @@
 	dir = 6
 	},
 /obj/structure/guncloset{
-	anchored = 1;
 	desc = "A locker that holds weapons.";
 	name = "weapon locker";
+	anchored = 1;
 	req_access_txt = "1"
 	},
 /obj/item/gun/energy/ionrifle/carbine{
@@ -4296,9 +4298,9 @@
 /area/ship/security)
 "Wj" = (
 /obj/docking_port/stationary{
-	dwidth = 10;
+	width = 27;
 	height = 15;
-	width = 27
+	dwidth = 10
 	},
 /turf/template_noop,
 /area/template_noop)
@@ -4522,32 +4524,32 @@
 /area/ship/engineering)
 "YV" = (
 /mob/living/simple_animal/pet/mothroach{
-	faction = list("playerNanotrasen","turret");
-	name = "Mr.SadMoth"
+	name = "Mr.SadMoth";
+	faction = list("playerNanotrasen","turret")
 	},
 /obj/structure/table,
 /obj/item/newspaper{
-	pixel_x = 5;
-	pixel_y = -3
+	pixel_y = -3;
+	pixel_x = 5
 	},
 /obj/item/newspaper{
 	pixel_x = -2;
 	pixel_y = 7
 	},
 /obj/item/newspaper{
-	pixel_x = -5;
-	pixel_y = -2
+	pixel_y = -2;
+	pixel_x = -5
 	},
 /obj/item/reagent_containers/food/drinks/bottle/rum{
-	pixel_x = 7;
-	pixel_y = 13
+	pixel_y = 13;
+	pixel_x = 7
 	},
 /obj/item/reagent_containers/food/drinks/drinkingglass/filled/soda{
 	pixel_x = 10
 	},
 /obj/structure/railing/wood{
-	color = "#D5A66E";
 	dir = 1;
+	color = "#D5A66E";
 	layer = 2.08
 	},
 /obj/effect/turf_decal/siding/wood{
@@ -4565,8 +4567,8 @@
 "Za" = (
 /obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/door/poddoor{
-	dir = 4;
-	id = "teardrop_bridge"
+	id = "teardrop_bridge";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/bridge)

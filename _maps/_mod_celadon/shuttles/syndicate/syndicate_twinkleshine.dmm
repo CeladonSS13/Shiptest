@@ -109,10 +109,10 @@
 /obj/item/clothing/gloves/krav_maga/combatglovesplus,
 /obj/item/clothing/suit/armor/hos/trenchcoat,
 /obj/machinery/button/door{
-	id = "twinkle_armory";
-	name = "Armory Access";
 	pixel_x = 9;
 	pixel_y = 25;
+	id = "twinkle_armory";
+	name = "Armory Access";
 	req_access = list(3,150)
 	},
 /obj/item/clothing/head/helmet/swat,
@@ -147,6 +147,13 @@
 /obj/item/reagent_containers/food/drinks/shaker,
 /turf/open/floor/carpet/red,
 /area/ship/crew/canteen)
+"aQ" = (
+/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
+	id = "twinkle_turrets";
+	dir = 6
+	},
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ship/bridge)
 "aX" = (
 /obj/effect/turf_decal/syndicateemblem/middle/right{
 	dir = 8
@@ -195,13 +202,13 @@
 	dir = 5
 	},
 /obj/item/reagent_containers/food/drinks/coffee{
-	pixel_x = 9;
-	pixel_y = 7
+	pixel_y = 7;
+	pixel_x = 9
 	},
 /obj/item/reagent_containers/food/snacks/donut/berry{
+	pixel_x = -4;
 	color = "#730622";
-	name = "suspicious red donut";
-	pixel_x = -4
+	name = "suspicious red donut"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -217,8 +224,8 @@
 	},
 /obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/machinery/door/poddoor/shutters{
-	dir = 4;
-	id = "twinkle_engines"
+	id = "twinkle_engines";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
@@ -272,8 +279,8 @@
 "bL" = (
 /obj/structure/table/reinforced,
 /obj/item/toy/plush/moth{
-	desc = "A plushie depicting an adorable mothperson, featuring realistic mothperson agony sounds every time you hug it. They seem to be hiding something.";
-	name = "lieutenant moth plushie"
+	name = "lieutenant moth plushie";
+	desc = "A plushie depicting an adorable mothperson, featuring realistic mothperson agony sounds every time you hug it. They seem to be hiding something."
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
@@ -301,10 +308,10 @@
 /obj/effect/turf_decal/corner/opaque/syndiered/bordercorner,
 /obj/machinery/light/directional/north,
 /obj/machinery/turretid/ship{
-	id = "twinkle_turrets";
 	pixel_y = 32;
 	req_access = null;
-	req_access_txt = "150"
+	req_access_txt = "150";
+	id = "twinkle_turrets"
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/black/corner,
 /obj/effect/turf_decal/corner/opaque/syndiered/bordercorner{
@@ -442,8 +449,8 @@
 	dir = 10
 	},
 /obj/item/canvas/twentythreeXtwentythree{
-	desc = "Remember, no plan survives the battle.";
 	name = "Battleplan Board";
+	desc = "Remember, no plan survives the battle.";
 	pixel_y = 32
 	},
 /obj/structure/table,
@@ -529,9 +536,9 @@
 	dir = 1
 	},
 /obj/machinery/door/airlock/engineering{
+	req_access = list(150,10);
 	dir = 4;
-	name = "Engineering Access";
-	req_access = list(150,10)
+	name = "Engineering Access"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -565,9 +572,9 @@
 /area/ship/security)
 "db" = (
 /obj/machinery/door/airlock/atmos/glass{
-	dir = 4;
+	req_one_access_txt = "150";
 	req_access = list(150,10);
-	req_one_access_txt = "150"
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -647,8 +654,8 @@
 /obj/structure/table/reinforced,
 /obj/machinery/computer/secure_data/laptop{
 	dir = 8;
-	pixel_x = 1;
-	pixel_y = 6
+	pixel_y = 6;
+	pixel_x = 1
 	},
 /obj/machinery/door/window/brigdoor/eastright,
 /obj/machinery/door/firedoor/border_only{
@@ -941,8 +948,8 @@
 	pixel_x = 2
 	},
 /obj/item/storage/belt/utility/syndicate{
-	pixel_x = -2;
-	pixel_y = 5
+	pixel_y = 5;
+	pixel_x = -2
 	},
 /obj/effect/turf_decal/corner/opaque/orange{
 	dir = 5
@@ -961,9 +968,9 @@
 /area/ship/engineering/engine)
 "fJ" = (
 /obj/structure/closet/secure_closet/security{
+	populate = 0;
 	icon_state = "syndicate";
-	name = "operative's locker";
-	populate = 0
+	name = "operative's locker"
 	},
 /obj/item/radio/headset/syndicate/alt{
 	keyslot = null
@@ -996,9 +1003,9 @@
 	},
 /obj/effect/turf_decal/trimline/opaque/orange/filled/warning,
 /obj/machinery/door/airlock/engineering{
+	req_access = list(150,10);
 	dir = 4;
-	name = "Engineering Access";
-	req_access = list(150,10)
+	name = "Engineering Access"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -1038,8 +1045,8 @@
 /area/ship/medical)
 "fV" = (
 /obj/machinery/door/airlock/atmos/glass{
-	dir = 4;
-	req_one_access_txt = "150"
+	req_one_access_txt = "150";
+	dir = 4
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -1056,11 +1063,11 @@
 /obj/structure/bed/double,
 /obj/item/bedsheet/double/black,
 /obj/item/paper{
-	color = "#505050";
-	default_raw_text = "<font color=white>ever since the war ended some eighteen years ago, the syndicate has been at odds with ourselves. our branches' ideals and personal goals are dividing the syndicate more and more. <br><br>tensions keep rising on the frontier sectors, where it's less likely that people will get caught sabotaging or hindering each other, and you, presumably, have just been given captainship of a vessel full of members who all hate each other.<br><br> to put it bluntly, you're in <i>deep</i>. this melting pot of ideologies, at its worst, is going to tear your leadership apart. you're going to need to keep tensions low on this two decade old warship so it doesn't all go to shit. <br><br>keep track of where every member comes from:<br>-you are, most likely, from the aclf<br>-the lieutenant is an officer from the new gorlex republic<br>-the medics come from cybersun<br>-the engineers are from the gec<br>-the operatives are a mix of the 2nd battlegroup and the aclf<br>-the bartender is from donk<br>-the miner is from suns<br>-deck assistants are a wildcard, not contracted from anyone in specific";
-	desc = "This note is crumpled and torn.";
+	name = "concealed note";
 	icon_state = "scrap";
-	name = "concealed note"
+	color = "#505050";
+	desc = "This note is crumpled and torn.";
+	default_raw_text = "<font color=white>ever since the war ended some eighteen years ago, the syndicate has been at odds with ourselves. our branches' ideals and personal goals are dividing the syndicate more and more. <br><br>tensions keep rising on the frontier sectors, where it's less likely that people will get caught sabotaging or hindering each other, and you, presumably, have just been given captainship of a vessel full of members who all hate each other.<br><br> to put it bluntly, you're in <i>deep</i>. this melting pot of ideologies, at its worst, is going to tear your leadership apart. you're going to need to keep tensions low on this two decade old warship so it doesn't all go to shit. <br><br>keep track of where every member comes from:<br>-you are, most likely, from the aclf<br>-the lieutenant is an officer from the new gorlex republic<br>-the medics come from cybersun<br>-the engineers are from the gec<br>-the operatives are a mix of the 2nd battlegroup and the aclf<br>-the bartender is from donk<br>-the miner is from suns<br>-deck assistants are a wildcard, not contracted from anyone in specific"
 	},
 /obj/structure/curtain/cloth/fancy{
 	name = "blood-red curtains"
@@ -1149,8 +1156,8 @@
 	},
 /obj/machinery/light/directional/east,
 /obj/structure/closet/secure_closet/miner{
-	populate = 0;
-	req_access = list(150, 48)
+	req_access = list(150, 48);
+	populate = 0
 	},
 /obj/item/storage/bag/ore,
 /obj/item/mining_scanner,
@@ -1218,8 +1225,8 @@
 /area/ship/security)
 "gX" = (
 /obj/machinery/door/airlock/hatch{
-	dir = 4;
-	name = "Custodial Closet"
+	name = "Custodial Closet";
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -1314,8 +1321,8 @@
 /area/ship/crew/dorm)
 "hR" = (
 /obj/machinery/door/airlock/hatch{
-	dir = 4;
-	req_access = list(150)
+	req_access = list(150);
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
@@ -1424,10 +1431,10 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/button/door{
+	pixel_x = 23;
 	dir = 8;
 	id = "twinkle_sm";
-	name = "Supermatter Shutters";
-	pixel_x = 23
+	name = "Supermatter Shutters"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/engine,
@@ -1444,9 +1451,9 @@
 "ii" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/full,
 /obj/structure/closet/secure_closet/medical3{
+	req_access = list(150, 5);
 	icon_state = "tac";
-	populate = 0;
-	req_access = list(150, 5)
+	populate = 0
 	},
 /obj/item/clothing/under/rank/medical/doctor/red,
 /obj/item/clothing/suit/longcoat/roboblack{
@@ -1574,8 +1581,8 @@
 	dir = 8
 	},
 /obj/machinery/door/poddoor/shutters{
-	dir = 4;
-	id = "twinkle_engines"
+	id = "twinkle_engines";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
@@ -1615,10 +1622,10 @@
 /obj/machinery/light/directional/north,
 /obj/structure/table,
 /obj/item/toy/plush/lizardplushie{
-	desc = "An adorable stuffed toy that resembles a lizard, tasked with helping the engineers maintain the supermatter.";
-	name = "supermatter supervisor lizard plushie";
 	pixel_x = 6;
-	pixel_y = 4
+	pixel_y = 4;
+	name = "supermatter supervisor lizard plushie";
+	desc = "An adorable stuffed toy that resembles a lizard, tasked with helping the engineers maintain the supermatter."
 	},
 /obj/item/reagent_containers/food/drinks/mug/coco{
 	pixel_x = -6
@@ -1932,9 +1939,9 @@
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/gloves/color/black,
 /obj/structure/closet/secure_closet/security{
+	populate = 0;
 	icon_state = "syndicate";
-	name = "operative's locker";
-	populate = 0
+	name = "operative's locker"
 	},
 /obj/machinery/light/directional/east,
 /obj/item/clothing/head/soft/black,
@@ -2048,8 +2055,8 @@
 /obj/effect/turf_decal/corner/transparent/bar/diagonal,
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/snacks/syndicake{
-	pixel_x = 3;
-	pixel_y = 10
+	pixel_y = 10;
+	pixel_x = 3
 	},
 /obj/structure/sign/poster/official/no_erp{
 	pixel_y = 32
@@ -2099,9 +2106,9 @@
 /area/ship/engineering/atmospherics)
 "lw" = (
 /obj/machinery/door/airlock/atmos/glass{
-	dir = 4;
+	req_one_access_txt = "150";
 	req_access = list(150,10);
-	req_one_access_txt = "150"
+	dir = 4
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-10"
@@ -2290,8 +2297,8 @@
 /obj/machinery/light/directional/west,
 /obj/machinery/computer/camera_advanced{
 	dir = 4;
-	icon_keyboard = "syndie_key";
-	icon_state = "computer-right"
+	icon_state = "computer-right";
+	icon_keyboard = "syndie_key"
 	},
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
 	dir = 8
@@ -2344,8 +2351,8 @@
 	},
 /obj/structure/window/reinforced/spawner,
 /obj/machinery/door/poddoor/shutters{
-	dir = 4;
-	id = "twinkle_engines"
+	id = "twinkle_engines";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
@@ -2520,8 +2527,8 @@
 "oc" = (
 /obj/structure/table,
 /obj/item/clothing/head/warden/drill{
-	desc = "A special armored campaign hat with the Syndicate insignia emblazoned on it. Uses reinforced fabric to offer sufficient protection.";
 	name = "lieutenant's campaign hat";
+	desc = "A special armored campaign hat with the Syndicate insignia emblazoned on it. Uses reinforced fabric to offer sufficient protection.";
 	pixel_x = 2;
 	pixel_y = -7
 	},
@@ -2656,15 +2663,15 @@
 /area/ship/medical)
 "oM" = (
 /obj/machinery/button/massdriver{
-	dir = 8;
-	id = "twinkle_leftmassdriver";
 	pixel_x = 23;
-	pixel_y = 9
+	dir = 8;
+	pixel_y = 9;
+	id = "twinkle_leftmassdriver"
 	},
 /obj/machinery/button/door{
+	pixel_x = 26;
 	dir = 8;
-	id = "twinkle_leftmassdriver";
-	pixel_x = 26
+	id = "twinkle_leftmassdriver"
 	},
 /obj/effect/turf_decal/techfloor,
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
@@ -2674,8 +2681,8 @@
 	dir = 10
 	},
 /obj/structure/table_frame{
-	pixel_x = -3;
-	pixel_y = 2
+	pixel_y = 2;
+	pixel_x = -3
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
@@ -2885,9 +2892,9 @@
 /area/ship/engineering/atmospherics)
 "pN" = (
 /obj/structure/closet/secure_closet/security{
+	populate = 0;
 	icon_state = "syndicate";
-	name = "operative's locker";
-	populate = 0
+	name = "operative's locker"
 	},
 /obj/item/radio/headset/syndicate/alt{
 	keyslot = null
@@ -3029,8 +3036,8 @@
 "qF" = (
 /obj/structure/table,
 /obj/item/multitool{
-	pixel_x = -5;
-	pixel_y = 4
+	pixel_y = 4;
+	pixel_x = -5
 	},
 /obj/item/book/manual/wiki/engineering{
 	pixel_x = 9;
@@ -3063,9 +3070,9 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/sink{
-	dir = 1;
+	pixel_y = -11;
 	pixel_x = -9;
-	pixel_y = -11
+	dir = 1
 	},
 /turf/open/floor/plating,
 /area/ship/security)
@@ -3074,10 +3081,10 @@
 	req_access = list(150)
 	},
 /obj/docking_port/mobile{
-	dir = 2;
 	name = "Twink Bay";
 	port_direction = 8;
-	preferred_direction = 4
+	preferred_direction = 4;
+	dir = 2
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/atmospherics)
@@ -3094,8 +3101,8 @@
 	pixel_y = 5
 	},
 /obj/item/megaphone{
-	pixel_x = 3;
-	pixel_y = 4
+	pixel_y = 4;
+	pixel_x = 3
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/office)
@@ -3131,8 +3138,8 @@
 	},
 /obj/machinery/firealarm/directional/north,
 /obj/machinery/light_switch{
-	pixel_x = -12;
-	pixel_y = 22
+	pixel_y = 22;
+	pixel_x = -12
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/atmospherics)
@@ -3248,8 +3255,8 @@
 /area/ship/engineering/engine)
 "rW" = (
 /obj/machinery/door/poddoor{
-	dir = 4;
-	id = "twinkle_leftmassdriver"
+	id = "twinkle_leftmassdriver";
+	dir = 4
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/ship/bridge)
@@ -3605,9 +3612,9 @@
 	name = "Cayenne II's bed"
 	},
 /mob/living/simple_animal/hostile/carp/cayenne{
+	name = "Cayenne II";
 	desc = "A descendant from the legendary Cayenne, a failed Syndicate experiment in weaponized space carp.";
-	faction = list("playerSyndicate");
-	name = "Cayenne II"
+	faction = list("playerSyndicate")
 	},
 /obj/item/toy/nuke,
 /obj/effect/turf_decal/corner/opaque/syndiered/border,
@@ -3620,9 +3627,9 @@
 /area/ship/bridge)
 "uE" = (
 /obj/machinery/door/airlock/hatch{
-	dir = 4;
 	name = "Captain Quarters";
-	req_access = list(150, 20)
+	req_access = list(150, 20);
+	dir = 4
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -3643,8 +3650,8 @@
 /area/ship/crew/dorm/dormtwo)
 "uH" = (
 /obj/structure/sign/directions/engineering{
-	dir = 8;
-	pixel_y = 5
+	pixel_y = 5;
+	dir = 8
 	},
 /turf/closed/wall/r_wall/rust,
 /area/ship/crew/dorm/dormtwo)
@@ -3667,9 +3674,9 @@
 /area/ship/engineering/communications)
 "uX" = (
 /obj/machinery/door/airlock/medical/glass{
-	dir = 4;
+	req_one_access_txt = "150";
 	req_access = list(150);
-	req_one_access_txt = "150"
+	dir = 4
 	},
 /obj/effect/turf_decal/corner/opaque/syndiered/full,
 /obj/machinery/door/firedoor/border_only{
@@ -3693,6 +3700,13 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/atmospherics)
+"vd" = (
+/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
+	dir = 5;
+	id = "twinkle_turrets"
+	},
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ship/bridge)
 "vf" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/engineering/engine)
@@ -3902,9 +3916,9 @@
 /area/ship/security)
 "wz" = (
 /obj/machinery/door/airlock/atmos/glass{
-	dir = 8;
+	req_one_access_txt = "150";
 	req_access = list(150,10);
-	req_one_access_txt = "150"
+	dir = 8
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -3941,8 +3955,8 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/atmos/glass{
-	dir = 4;
-	req_one_access_txt = "150"
+	req_one_access_txt = "150";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
@@ -3980,8 +3994,8 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/door/poddoor/shutters{
-	dir = 4;
-	id = "twinkle_engines"
+	id = "twinkle_engines";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
@@ -4181,8 +4195,8 @@
 /area/ship/hallway/starboard)
 "xH" = (
 /obj/machinery/door/poddoor{
-	dir = 4;
-	id = "twinkle_rightmassdriver"
+	id = "twinkle_rightmassdriver";
+	dir = 4
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/ship/bridge)
@@ -4205,18 +4219,18 @@
 /area/ship/engineering/atmospherics)
 "xZ" = (
 /obj/docking_port/stationary{
-	dir = 2;
-	dwidth = 2;
 	height = 15;
+	width = 15;
 	name = "lower right twink dock";
-	width = 15
+	dir = 2;
+	dwidth = 2
 	},
 /turf/template_noop,
 /area/template_noop)
 "ya" = (
 /obj/machinery/door/airlock/engineering/glass{
-	dir = 8;
-	req_access = list(150,10)
+	req_access = list(150,10);
+	dir = 8
 	},
 /turf/open/floor/engine,
 /area/ship/engineering/engine)
@@ -4588,8 +4602,8 @@
 /obj/item/clothing/head/helmet/space/syndicate/black/engie,
 /obj/item/clothing/suit/space/syndicate/black/engie,
 /obj/structure/closet/secure_closet/engineering_personal{
-	populate = 0;
-	req_access = list(150,10)
+	req_access = list(150,10);
+	populate = 0
 	},
 /obj/item/pipe_dispenser,
 /obj/structure/sign/poster/contraband/gec{
@@ -4633,20 +4647,20 @@
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/button/door{
-	desc = "A remote control switch for closing the bridge shutters. Perfect for windshield moths!";
+	pixel_x = -7;
 	dir = 8;
+	pixel_y = 8;
 	id = "twinkle_bridge";
 	name = "Bridge Shutters";
-	pixel_x = -7;
-	pixel_y = 8
+	desc = "A remote control switch for closing the bridge shutters. Perfect for windshield moths!"
 	},
 /obj/machinery/button/door{
-	desc = "A remote control switch for shutters that block external view of the ship. Fauna won't see you through those!";
+	pixel_x = -7;
 	dir = 8;
+	pixel_y = -4;
 	id = "twinkle_external";
 	name = "External Shutters";
-	pixel_x = -7;
-	pixel_y = -4
+	desc = "A remote control switch for shutters that block external view of the ship. Fauna won't see you through those!"
 	},
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
 	dir = 4
@@ -4808,9 +4822,9 @@
 /area/ship/security)
 "Bn" = (
 /obj/structure/closet/secure_closet/security{
+	populate = 0;
 	icon_state = "syndicate";
-	name = "operative's locker";
-	populate = 0
+	name = "operative's locker"
 	},
 /obj/item/radio/headset/syndicate/alt{
 	keyslot = null
@@ -4948,8 +4962,8 @@
 	pixel_y = -4
 	},
 /obj/structure/sign/directions/engineering{
-	dir = 8;
-	pixel_y = 5
+	pixel_y = 5;
+	dir = 8
 	},
 /turf/closed/wall/r_wall/rust,
 /area/ship/crew/office)
@@ -4992,8 +5006,8 @@
 	pixel_x = -9
 	},
 /obj/item/storage/secure/safe/intel{
-	dir = 8;
-	pixel_x = -32
+	pixel_x = -32;
+	dir = 8
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/structure/cable/yellow{
@@ -5168,9 +5182,9 @@
 "Dh" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/full,
 /obj/structure/closet/secure_closet/medical3{
+	req_access = list(150, 5);
 	icon_state = "tac";
-	populate = 0;
-	req_access = list(150, 5)
+	populate = 0
 	},
 /obj/machinery/light/directional/north,
 /obj/item/clothing/under/rank/medical/doctor/red,
@@ -5221,8 +5235,8 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/atmos/glass{
-	dir = 4;
-	req_one_access_txt = "150"
+	req_one_access_txt = "150";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
@@ -5241,8 +5255,8 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/light_switch{
-	pixel_x = -12;
-	pixel_y = 22
+	pixel_y = 22;
+	pixel_x = -12
 	},
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
@@ -5293,9 +5307,9 @@
 	dir = 8
 	},
 /obj/machinery/light_switch{
+	pixel_y = 11;
 	dir = 8;
-	pixel_x = 20;
-	pixel_y = 11
+	pixel_x = 20
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/engineering/communications)
@@ -5391,8 +5405,8 @@
 /area/ship/crew/office)
 "Es" = (
 /obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
-	dir = 5;
-	id = "twinkle_turrets"
+	id = "twinkle_turrets";
+	dir = 5
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/bridge)
@@ -5516,8 +5530,8 @@
 	dir = 1
 	},
 /obj/structure/fluff/broken_flooring{
-	dir = 4;
-	icon_state = "plating"
+	icon_state = "plating";
+	dir = 4
 	},
 /obj/item/stack/ore/salvage/scrapplasma{
 	pixel_x = 3;
@@ -5570,16 +5584,16 @@
 	pixel_x = -6
 	},
 /obj/item/storage/bag/trash{
-	pixel_x = 6;
-	pixel_y = 3
+	pixel_y = 3;
+	pixel_x = 6
 	},
 /obj/item/soap/syndie{
-	pixel_x = -2;
-	pixel_y = -3
+	pixel_y = -3;
+	pixel_x = -2
 	},
 /obj/item/soap/syndie{
-	pixel_x = 2;
-	pixel_y = -6
+	pixel_y = -6;
+	pixel_x = 2
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/janitor)
@@ -5629,8 +5643,8 @@
 "Fr" = (
 /obj/structure/rack,
 /obj/item/gun/ballistic/automatic/pistol/ringneck{
-	pixel_x = 9;
-	pixel_y = 7
+	pixel_y = 7;
+	pixel_x = 9
 	},
 /obj/item/gun/ballistic/automatic/pistol/ringneck{
 	pixel_x = 9
@@ -5700,12 +5714,12 @@
 "FE" = (
 /obj/structure/table/reinforced,
 /obj/item/book/manual/wiki/surgery{
-	pixel_x = -3;
-	pixel_y = 7
+	pixel_y = 7;
+	pixel_x = -3
 	},
 /obj/item/storage/backpack/duffelbag/syndie/surgery{
-	pixel_x = 6;
-	pixel_y = 4
+	pixel_y = 4;
+	pixel_x = 6
 	},
 /obj/effect/turf_decal/trimline/opaque/syndiered/line,
 /obj/item/reagent_containers/medigel/sterilizine{
@@ -5739,8 +5753,8 @@
 /area/ship/bridge)
 "FV" = (
 /obj/machinery/door/poddoor{
-	dir = 4;
-	id = "twinkle_bridge"
+	id = "twinkle_bridge";
+	dir = 4
 	},
 /obj/structure/grille,
 /obj/structure/window/plasma/reinforced/plastitanium,
@@ -5891,8 +5905,8 @@
 	dir = 1
 	},
 /obj/structure/closet/wall/red/directional/west{
-	name = "emergency armory";
-	req_access = list(3,150)
+	req_access = list(3,150);
+	name = "emergency armory"
 	},
 /obj/item/storage/box/ammo/c22lr,
 /obj/item/ammo_box/magazine/m22lr_himehabu,
@@ -6197,9 +6211,9 @@
 	dir = 9
 	},
 /obj/machinery/light_switch{
+	pixel_y = 11;
 	dir = 8;
-	pixel_x = 20;
-	pixel_y = 11
+	pixel_x = 20
 	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 8
@@ -6412,8 +6426,8 @@
 "Jr" = (
 /obj/effect/decal/cleanable/plasma,
 /obj/effect/decal/cleanable/vomit/old{
-	pixel_x = 12;
-	pixel_y = 22
+	pixel_y = 22;
+	pixel_x = 12
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -6502,10 +6516,10 @@
 /area/ship/engineering/atmospherics)
 "JT" = (
 /obj/docking_port/stationary{
-	dwidth = 4;
 	height = 15;
+	width = 15;
 	name = "main twink dock";
-	width = 15
+	dwidth = 4
 	},
 /turf/template_noop,
 /area/template_noop)
@@ -6624,11 +6638,11 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/button/door{
-	dir = 8;
-	id = "twinkle_surgshutters";
+	pixel_y = -2;
 	name = "Surgery Shutters";
+	id = "twinkle_surgshutters";
 	pixel_x = 23;
-	pixel_y = -2
+	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
@@ -6655,15 +6669,15 @@
 "KD" = (
 /obj/structure/table,
 /obj/machinery/button/massdriver{
-	dir = 8;
-	id = "twinkle_rightmassdriver";
 	pixel_x = 23;
-	pixel_y = -10
+	dir = 8;
+	pixel_y = -10;
+	id = "twinkle_rightmassdriver"
 	},
 /obj/machinery/button/door{
+	pixel_x = 26;
 	dir = 8;
-	id = "twinkle_rightmassdriver";
-	pixel_x = 26
+	id = "twinkle_rightmassdriver"
 	},
 /obj/effect/turf_decal/corner/opaque/syndiered/half,
 /obj/effect/turf_decal/techfloor{
@@ -6763,8 +6777,8 @@
 /area/ship/bridge)
 "Lp" = (
 /obj/machinery/door/airlock/engineering/glass{
-	dir = 4;
-	req_access = list(150,10)
+	req_access = list(150,10);
+	dir = 4
 	},
 /turf/open/floor/engine,
 /area/ship/engineering/engine)
@@ -6839,19 +6853,19 @@
 "LH" = (
 /obj/machinery/atmospherics/pipe/simple/purple/visible,
 /obj/structure/closet/cardboard{
-	desc = "WARNING: Contains mot.";
-	name = "mot containment box"
+	name = "mot containment box";
+	desc = "WARNING: Contains mot."
 	},
 /obj/item/trash/cheesie,
 /mob/living/carbon/human/species/moth{
-	faction = list("neutral","playerSyndicate");
-	gender = "female";
 	name = "Secret Box Moth";
-	real_name = "Box Moth"
+	real_name = "Box Moth";
+	gender = "female";
+	faction = list("neutral","playerSyndicate")
 	},
 /obj/item/reagent_containers/food/snacks/spacetwinkie{
-	pixel_x = 10;
-	pixel_y = 12
+	pixel_y = 12;
+	pixel_x = 10
 	},
 /obj/item/reagent_containers/food/snacks/spacetwinkie{
 	pixel_x = -9;
@@ -6865,8 +6879,8 @@
 	pixel_y = 14
 	},
 /obj/item/reagent_containers/food/snacks/spacetwinkie{
-	pixel_x = -6;
-	pixel_y = -5
+	pixel_y = -5;
+	pixel_x = -6
 	},
 /obj/structure/sign/poster/contraband/syndiemoth{
 	pixel_x = -32
@@ -6947,8 +6961,8 @@
 "Mw" = (
 /obj/effect/turf_decal/industrial/caution/red,
 /obj/effect/decal/cleanable/shreds{
-	pixel_x = 9;
-	pixel_y = -9
+	pixel_y = -9;
+	pixel_x = 9
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/fluff/paper/stack{
@@ -7000,8 +7014,8 @@
 /area/ship/bridge)
 "MU" = (
 /obj/machinery/telecomms/bus/preset_three{
-	freq_listening = list(1213,1353,1459);
-	network = "synd_commnet"
+	network = "synd_commnet";
+	freq_listening = list(1213,1353,1459)
 	},
 /turf/open/floor/circuit/red,
 /area/ship/engineering/communications)
@@ -7042,8 +7056,8 @@
 /obj/structure/grille,
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/door/poddoor{
-	dir = 4;
-	id = "twinkle_bridge"
+	id = "twinkle_bridge";
+	dir = 4
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -7150,25 +7164,25 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/door/poddoor/shutters{
-	dir = 4;
-	id = "twinkle_engines"
+	id = "twinkle_engines";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "NT" = (
 /obj/machinery/button/door{
-	dir = 8;
-	id = "twinkle_cargo";
-	name = "Cargo Doors";
-	pixel_x = 23;
 	pixel_y = -10;
+	name = "Cargo Doors";
+	id = "twinkle_cargo";
+	pixel_x = 23;
+	dir = 8;
 	req_access = list(150)
 	},
 /obj/machinery/button/shieldwallgen{
-	dir = 8;
-	id = "twinkle_holobay";
+	pixel_y = -1;
 	pixel_x = 22;
-	pixel_y = -1
+	id = "twinkle_holobay";
+	dir = 8
 	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4
@@ -7330,9 +7344,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/button/door{
 	dir = 4;
-	id = "twinkle_engines";
+	pixel_x = -25;
 	name = "Engine Shutters";
-	pixel_x = -25
+	id = "twinkle_engines"
 	},
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 8
@@ -7447,8 +7461,8 @@
 /area/ship/bridge)
 "PB" = (
 /obj/machinery/door/airlock/hatch{
-	dir = 4;
-	req_access = list(150)
+	req_access = list(150);
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -7530,7 +7544,6 @@
 /area/ship/crew/dorm)
 "Qa" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/burger,
 /turf/open/floor/wood,
 /area/ship/crew/canteen)
 "Qd" = (
@@ -7561,8 +7574,8 @@
 	},
 /obj/machinery/door/airlock/medical{
 	name = "Surgery";
-	req_access = list(150,5);
-	req_one_access_txt = "150"
+	req_one_access_txt = "150";
+	req_access = list(150,5)
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -7683,8 +7696,8 @@
 	},
 /obj/machinery/power/smes/shuttle/precharged,
 /obj/machinery/door/poddoor/shutters{
-	dir = 4;
-	id = "twinkle_engines"
+	id = "twinkle_engines";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
@@ -7752,6 +7765,7 @@
 	},
 /obj/structure/closet/emcloset,
 /obj/effect/spawner/random/maintenance/four,
+/obj/item/reagent_containers/food/snacks/burger,
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 1
 	},
@@ -7865,8 +7879,8 @@
 /obj/machinery/atmospherics/pipe/simple/purple/visible,
 /obj/machinery/light/directional/south,
 /obj/machinery/telecomms/server/presets/syndicate{
-	freq_listening = list(1213,1459,1353);
-	network = "synd_commnet"
+	network = "synd_commnet";
+	freq_listening = list(1213,1459,1353)
 	},
 /turf/open/floor/circuit/red,
 /area/ship/engineering/communications)
@@ -7894,8 +7908,8 @@
 /obj/structure/table,
 /obj/effect/turf_decal/corner/opaque/syndiered/full,
 /obj/item/storage/box/medipens{
-	pixel_x = -4;
-	pixel_y = 7
+	pixel_y = 7;
+	pixel_x = -4
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
@@ -8244,9 +8258,9 @@
 /area/ship/crew/janitor)
 "TM" = (
 /obj/machinery/door/airlock/engineering/glass/critical{
-	dir = 4;
 	name = "Supermatter";
-	req_access = list(150,10)
+	req_access = list(150,10);
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -8313,9 +8327,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/button/door{
 	dir = 4;
-	id = "twinkle_engines";
+	pixel_x = -25;
 	name = "Engine Shutters";
-	pixel_x = -25
+	id = "twinkle_engines"
 	},
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 8
@@ -8333,8 +8347,8 @@
 /area/ship/security/armory)
 "Uf" = (
 /obj/item/wallframe/extinguisher_cabinet{
-	pixel_x = -2;
-	pixel_y = 17
+	pixel_y = 17;
+	pixel_x = -2
 	},
 /obj/effect/decal/cleanable/robot_debris,
 /turf/open/floor/plating,
@@ -8370,9 +8384,9 @@
 /area/ship/engineering/engine)
 "Ux" = (
 /obj/machinery/door/airlock/medical/glass{
-	dir = 4;
+	req_one_access_txt = "150";
 	req_access = list(150);
-	req_one_access_txt = "150"
+	dir = 4
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
@@ -8559,8 +8573,8 @@
 /obj/structure/grille,
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/door/poddoor{
-	dir = 4;
-	id = "twinkle_bridge"
+	id = "twinkle_bridge";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/bridge)
@@ -8649,8 +8663,8 @@
 	pixel_y = 6
 	},
 /obj/item/reagent_containers/food/drinks/waterbottle{
-	pixel_x = -3;
-	pixel_y = 3
+	pixel_y = 3;
+	pixel_x = -3
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red,
@@ -8681,8 +8695,8 @@
 /obj/item/mining_scanner,
 /obj/item/storage/bag/ore,
 /obj/structure/closet/secure_closet/miner{
-	populate = 0;
-	req_access = list(150, 48)
+	req_access = list(150, 48);
+	populate = 0
 	},
 /obj/item/mining_voucher,
 /turf/open/floor/pod/dark,
@@ -8736,8 +8750,8 @@
 	},
 /obj/effect/turf_decal/corner/opaque/syndiered/full,
 /obj/item/reagent_containers/glass/bottle/epinephrine{
-	pixel_x = -5;
-	pixel_y = -1
+	pixel_y = -1;
+	pixel_x = -5
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
@@ -8864,9 +8878,9 @@
 /area/ship/crew/cryo)
 "WV" = (
 /obj/machinery/door/airlock/engineering/glass/critical{
-	dir = 4;
 	name = "Supermatter";
-	req_access = list(150,10)
+	req_access = list(150,10);
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -9250,8 +9264,8 @@
 /area/ship/bridge)
 "Zc" = (
 /obj/structure/closet/secure_closet/engineering_personal{
-	populate = 0;
-	req_access = list(150,10)
+	req_access = list(150,10);
+	populate = 0
 	},
 /obj/effect/turf_decal/corner/opaque/orange{
 	dir = 10
@@ -9383,10 +9397,10 @@
 /area/ship/engineering/atmospherics)
 "ZV" = (
 /obj/docking_port/stationary{
-	dwidth = 2;
 	height = 2;
+	width = 3;
 	name = "upper right twink dock";
-	width = 3
+	dwidth = 2
 	},
 /turf/template_noop,
 /area/template_noop)
@@ -10700,7 +10714,7 @@ mp
 mp
 mp
 mp
-Es
+vd
 NE
 wc
 wc
@@ -11091,7 +11105,7 @@ nb
 nb
 nn
 nb
-Mr
+aQ
 mp
 mp
 mp

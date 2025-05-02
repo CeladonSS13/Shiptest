@@ -137,8 +137,8 @@
 	dir = 9
 	},
 /obj/machinery/turretid/ship{
-	id = "hyena_turrets";
-	pixel_y = -24
+	pixel_y = -24;
+	id = "hyena_turrets"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -182,8 +182,8 @@
 	dir = 1
 	},
 /obj/machinery/light_switch{
-	pixel_x = -12;
-	pixel_y = 23
+	pixel_y = 23;
+	pixel_x = -12
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
@@ -1058,8 +1058,8 @@
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/machinery/light_switch{
 	dir = 1;
-	pixel_x = -12;
-	pixel_y = -16
+	pixel_y = -16;
+	pixel_x = -12
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/storage)
@@ -1298,8 +1298,8 @@
 	},
 /obj/machinery/light_switch{
 	dir = 1;
-	pixel_x = -12;
-	pixel_y = -16
+	pixel_y = -16;
+	pixel_x = -12
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/port)
@@ -1781,8 +1781,8 @@
 	},
 /obj/machinery/light/small/directional/north,
 /obj/machinery/light_switch{
-	pixel_x = 7;
-	pixel_y = 22
+	pixel_y = 22;
+	pixel_x = 7
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/maintenance/starboard)
@@ -1880,8 +1880,8 @@
 	},
 /obj/machinery/light_switch{
 	dir = 1;
-	pixel_x = -12;
-	pixel_y = -16
+	pixel_y = -16;
+	pixel_x = -12
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -1941,13 +1941,11 @@
 /obj/item/paper_bin/carbon,
 /obj/item/folder/documents/syndicate/red,
 /obj/item/pen/fountain/captain,
+/obj/item/stamp/hos{
+	name = "captain's rubber stamp"
+	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
-	},
-/obj/item/stamp/syndicate{
-	name = "Captain rubber stamp";
-	pixel_x = 8;
-	pixel_y = 15
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
@@ -1973,9 +1971,9 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/radio/intercom/directional/north,
 /obj/machinery/light_switch{
-	dir = 4;
 	pixel_x = -20;
-	pixel_y = 12
+	pixel_y = 12;
+	dir = 4
 	},
 /obj/structure/chair/sofa/brown/corner/directional/east,
 /turf/open/floor/carpet/red,
@@ -2894,18 +2892,18 @@
 /obj/effect/turf_decal/trimline/opaque/red/filled/corner,
 /obj/machinery/light_switch{
 	dir = 1;
-	pixel_x = -12;
-	pixel_y = -16
+	pixel_y = -16;
+	pixel_x = -12
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
 "Ui" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/turretid{
-	id = "hyena_turrets";
 	pixel_x = 32;
 	pixel_y = 22;
-	req_access = list(19)
+	req_access = list(19);
+	id = "hyena_turrets"
 	},
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
@@ -3158,8 +3156,8 @@
 	req_access = null
 	},
 /obj/machinery/light_switch{
-	pixel_x = -12;
-	pixel_y = 23
+	pixel_y = 23;
+	pixel_x = -12
 	},
 /obj/structure/tank_dispenser/oxygen,
 /turf/open/floor/mineral/plastitanium,
