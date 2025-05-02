@@ -16,6 +16,10 @@
 	var/researcher_name
 	///how much is a storm worth to fly through
 	var/storm_value = 150
+	// [CELADON-ADD] - CELADON_FIXES - Чиним повторное сканирование
+	///List of checked stectors
+    var/list/checked_sectors = list()
+	// [/CELADON-ADD]
 
 /datum/mission/outpost/research/New(...)
 	researcher_name = SSmissions.get_researcher_name()
@@ -63,9 +67,15 @@
 	over_obj = locate(objective_type) in ship.current_overmap.overmap_container[floor(ship.x)][floor(ship.y)]
 	// [/CELADON-EDIT]
 	scanner_port = SSshuttle.get_containing_shuttle(scanner)
-	if(!over_obj || !scanner.is_operational || scanner_port?.current_ship != servant)
+	// [CELADON-EDIT] - CELADON_FIXES - Чиним повторное сканирование
+	// if(!over_obj || !scanner.is_operational || scanner_port?.current_ship != servant) // ORIGINAL
+	if(!over_obj || !scanner.is_operational || scanner_port?.current_ship != servant || ("[floor(ship.x)].[floor(ship.y)]" in checked_sectors))
+	// [/CELADON-EDIT]
 		return
 	num_current++
+	// [CELADON-ADD] - CELADON_FIXES - Чиним повторное сканирование
+	checked_sectors += ("[floor(ship.x)].[floor(ship.y)]")
+	// [/CELADON-ADD]
 
 /datum/mission/outpost/research/meteor
 	name = "Asteroid field research mission"
