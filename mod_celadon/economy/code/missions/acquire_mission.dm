@@ -18,7 +18,7 @@
 */
 
 /datum/mission/outpost/acquire/creature
-	type_mission = "capture_creature"
+	// type_mission = "capture_creature"
 	value = 2000
 
 /datum/mission/outpost/acquire/creature/ice_whelp
@@ -54,8 +54,9 @@
 */
 
 /datum/mission/outpost/acquire/extraction_plasma
-	type_mission = "extraction_plasma"
+	// type_mission = "extraction_plasma"
 	name = "Plasma required"
+	desc = "[pick("Factions", "Corporations", "Federations")] require large 	amounts of plasma sheets for [pick("base", "station", "ships")]. You are 	tasked with extracting them in large quantities in a short period of time."
 	duration = 70 MINUTES
 	value = 600
 	weight = 1
