@@ -34,7 +34,7 @@
 	name = "Firearm Maintenance Kit"
 	desc = "Contains a five-use firearm maintenance kit, useful for cleaning blood, sand, and mud out of guns."
 	contains = list(/obj/item/gun_maint_kit)
-	cost = 100 //Price check this later. It's probably fine but it might be okay if it's a little more expensive
+	cost = 500 //Price check this later. It's probably fine but it might be okay if it's a little more expensive
 	crate_name = "maintenance kit crate"
 
 /datum/supply_pack/faction/independent/sec_supply/flashbangs
