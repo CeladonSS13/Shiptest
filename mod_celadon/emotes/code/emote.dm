@@ -73,6 +73,25 @@
 	emote_type = EMOTE_VISIBLE
 	hands_use_check = TRUE
 
+/datum/emote/living/carbon/clap
+	key = "clap"
+	key_third_person = "claps"
+	message = "хлопает."
+	muzzle_ignore = TRUE
+	hands_use_check = TRUE
+	emote_type = EMOTE_AUDIBLE
+	vary = TRUE
+
+/datum/emote/living/carbon/clap/get_sound(mob/living/user)
+	if(ishuman(user))
+		if(!user.get_bodypart(BODY_ZONE_L_ARM) || !user.get_bodypart(BODY_ZONE_R_ARM))
+			return
+		else
+			return pick('sound/misc/clap1.ogg',
+							'sound/misc/clap2.ogg',
+							'sound/misc/clap3.ogg',
+							'sound/misc/clap4.ogg')
+
 /datum/emote/living/carbon/mothchitter
 	key = "chitter"
 	key_third_person = "chitters"
@@ -208,6 +227,12 @@
 	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 	hands_use_check = TRUE
 	var/wing_time = 20
+
+/datum/emote/living/flap/can_run_emote(mob/user, status_check, intentional)
+	var/mob/living/carbon/human/H = user
+	if(H.dna.features["wings"] == "None")
+		return FALSE
+	return TRUE
 
 /datum/emote/living/flap/run_emote(mob/user, params, type_override, intentional)
 	. = ..()
@@ -534,7 +559,7 @@
 				message_param = "пытается показать на %t с помощью ноги, но теряет баланс и <span class='userdanger'>падает на землю</span>!"
 				H.Paralyze(20)
 			else
-				message_param = span_userdanger("[user.p_their()] ударяется головой об землю</span> пытаясь двигаться в сторону %t.")
+				message_param = "[span_userdanger("bumps [user.p_their()] ударяется головой об землю")] пытаясь двигаться в сторону %t."
 				H.adjustOrganLoss(ORGAN_SLOT_BRAIN, 5)
 	..()
 
@@ -755,7 +780,7 @@
 /datum/emote/living/sway
 	key = "sway"
 	key_third_person = "sways"
-	message = "головокружительно кружится."
+	message = "головокружительно покачивается."
 	emote_type = EMOTE_VISIBLE
 
 /datum/emote/living/sway/run_emote(mob/living/user, params, type_override, intentional)
@@ -833,12 +858,6 @@
 	message = "слегка улыбается."
 	emote_type = EMOTE_VISIBLE
 
-/datum/emote/living/wing
-	key = "wing"
-	key_third_person = "wings"
-	message = "подмигивает."
-	emote_type = EMOTE_VISIBLE
-
 /datum/emote/living/yawn
 	key = "yawn"
 	key_third_person = "yawns"
@@ -864,6 +883,13 @@
 	key_third_person = "gurgles"
 	message = "издает неприятное хлюпанье."
 	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/gurgle/can_run_emote(mob/user, status_check = TRUE , intentional)
+	if(!..())
+		return FALSE
+	if(!isjellyperson(user))
+		return FALSE
+	return TRUE
 
 /datum/emote/living/custom
 	key = "me"
@@ -891,7 +917,7 @@
 	else if(user.client && user.client.prefs.muted & MUTE_IC)
 		to_chat(user, span_boldwarning("You cannot send IC messages (muted)."))
 		return FALSE
-	else if(params == ".")
+	else if(!params)
 		var/custom_emote = copytext(sanitize(input("Choose an emote to display.") as text|null), 1, MAX_MESSAGE_LEN)
 		if(custom_emote && !check_invalid(user, custom_emote))
 			var/type = input("Is this a visible or hearable emote?") as null|anything in list("Visible", "Hearable")
@@ -1250,9 +1276,9 @@
 	bypass_unintentional_cooldown = TRUE
 	sound = 'mod_celadon/_storge_sounds/sound/emotes/fart.ogg'
 
-/////////////////////
+//////////////////
 /// New Emotes ///
-///////////////////
+//////////////////
 
 /datum/emote/living/carbon/human/whistle
 	key = "whistle"
@@ -1260,13 +1286,12 @@
 	message = "свистит."
 	message_param = "свистит на %t."
 	emote_type = EMOTE_AUDIBLE | EMOTE_MOUTH | EMOTE_VISIBLE
-	sound = 'mod_celadon/_storge_sounds/sound/emotes/whistle.ogg'
+	vary = TRUE
 
 /datum/emote/living/carbon/human/whistle/get_sound(mob/living/user)
-	if(!ishuman(user))
-		return pick('mod_celadon/_storge_sounds/sound/emotes/whistle.ogg')
-	if(ishuman(user))
-		return pick('mod_celadon/_storge_sounds/sound/emotes/whistle.ogg')
+	if(iskepori(user))
+		return 'sound/voice/kepori/kepiwhistle.ogg'
+	return 'mod_celadon/_storge_sounds/sound/emotes/whistle.ogg'
 
 /datum/emote/living/carbon/human/snuffle
 	key = "snuffle"
@@ -1462,7 +1487,6 @@
 	if(islizard(user))
 		return 'sound/voice/lizard/hiss.ogg'
 
-
 /datum/emote/living/carbon/human/whip
 	key = "whip"
 	key_third_person = "whip"
@@ -1552,7 +1576,7 @@
 	volume = 50
 	muzzled_noises = list("слабо мяукающий")
 
-/datum/emote/living/carbon/human/mrow
+/datum/emote/living/carbon/human/tajara/mrow
 	key = "mrow"
 	key_third_person = "mrow"
 	message = "раздражённо мяукает."
@@ -1577,9 +1601,6 @@
 	key_third_person = "spines"
 	message = "кружится."
 	emote_type = EMOTE_VISIBLE
-
-/datum/emote/spin
-	message = "кружится."
 
 /datum/emote/living/carbon/moan
 	key = "moan"
@@ -1639,6 +1660,16 @@
 	message = "трясётся."
 	// unintentional_stat_allowed = UNCONSCIOUS
 
+/datum/emote/living/bshake/run_emote(mob/user, params, type_override, intentional)
+	. = ..()
+	if(!.)
+		return FALSE
+	animate(user, pixel_x = user.pixel_x + 2, time = 0.1 SECONDS)
+	animate(pixel_x = user.pixel_x - 2, time = 0.1 SECONDS)
+	animate(time = 0.1 SECONDS)
+	animate(pixel_x = user.pixel_x + 2, time = 0.1 SECONDS)
+	animate(pixel_x = user.pixel_x - 2, time = 0.1 SECONDS)
+
 /datum/emote/living/carbon/human/snap
 	key = "snap"
 	key_third_person = "snaps"
@@ -1646,6 +1677,18 @@
 	message_param = "snaps their fingers at %t."
 	sound = 'mod_celadon/_storge_sounds/sound/emotes/fingersnap.ogg'
 	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+
+/datum/emote/living/carbon/human/wing
+	key = "wing"
+	key_third_person = "wings"
+	message = "расправляет крылья"
+	emote_type = EMOTE_VISIBLE
+
+/datum/emote/living/carbon/human/wing/can_run_emote(mob/user, status_check, intentional)
+	var/mob/living/carbon/human/H = user
+	if(H.dna.features["wings"] == "None")
+		return FALSE
+	return TRUE
 
 // /datum/emote/living/carbon/human/snap/run_emote(mob/user, params, type_override, intentional)
 
@@ -1861,13 +1904,6 @@
 	if(.)
 		playsound(user.loc, 'sound/machines/chime.ogg', 50)
 
-/datum/emote/silicon/honk
-	key = "honk"
-	key_third_person = "honks"
-	message = "хонкает."
-	vary = TRUE
-	sound = 'sound/items/bikehorn.ogg'
-
 /datum/emote/living/carbon/human/robot_tongue/ping
 	key = "ping"
 	key_third_person = "pings"
@@ -1925,27 +1961,20 @@
 
 // Mothman
 
-/datum/emote/living/flap/flutter
+/datum/emote/living/flutter
 	key = "flutter"
 	key_third_person = "flutters"
 	message = "трепешет крыльями."
 	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 
-// Попытка сделать проверку на крылья, ток если есть активные крылья ТО ЕСТЬ ДНК (зелье полета)
-/datum/emote/living/flap/flutter/can_run_emote(mob/user, status_check, intentional)
-	var/mob/living/carbon/human/H = user
-	if(H.dna.features["wings"] == "None")
+/datum/emote/living/flutter/can_run_emote(mob/user, status_check = TRUE , intentional)
+	if(!..())
+		return FALSE
+	if(!ismoth(user))
 		return FALSE
 	return TRUE
-	// var/obj/item/organ/internal/HS = H.get_organ("wing")
 
-	//var/mob/living/carbon/human/H = user
-
-	// var/obj/item/organ/wings/wings = H.getorganslot(ORGAN_SLOT_WINGS)
-	// if(!istype(wings))
-	// 	return
-
-/datum/emote/living/flap/flutter/get_sound(mob/living/user)
+/datum/emote/living/flutter/get_sound(mob/living/user)
 	if(!ishuman(user))
 		return
 	return 'mod_celadon/_storge_sounds/sound/voice/moth/moth_flutter.ogg'
@@ -2039,3 +2068,49 @@
 	if(!isskeleton(user))
 		return FALSE
 	return TRUE
+
+////////////////////////
+// Отключенные эмоуты //
+////////////////////////
+
+/datum/emote/living/carbon/human/kepiwhistle	// Дубликат, конфликтующий с обычным свистом
+	key = "kepiwhistle"
+
+/datum/emote/living/carbon/human/kepiwhistle/can_run_emote(mob/user, status_check = TRUE , intentional)
+	return FALSE
+
+/datum/emote/living/carbon/human/squeal			// Не уместный звук
+	key = "squeal"
+
+/datum/emote/living/carbon/human/squeal/can_run_emote(mob/user, status_check = TRUE , intentional)
+	return FALSE
+
+/datum/emote/living/carbon/human/kepiwoop 		// Когда звук появится тогда можно включать
+	key = "woop"
+
+/datum/emote/living/carbon/human/kepiwoop/can_run_emote(mob/user, status_check = TRUE , intentional)
+	return FALSE
+
+/datum/emote/living/carbon/sign/signal			// Не работает так так задумано
+	key = "signal"
+
+/datum/emote/living/carbon/sign/signal/can_run_emote(mob/user, status_check = TRUE , intentional)
+	return FALSE
+
+/datum/emote/exercise/pushup					// Не работает вообще
+	key = "pushup"
+
+/datum/emote/exercise/pushup/can_run_emote(mob/user, status_check = TRUE , intentional)
+	return FALSE
+
+/datum/emote/living/carbon/noogie				// Не работает вообще
+	key = "noogie"
+
+/datum/emote/living/carbon/noogie/can_run_emote(mob/user, status_check = TRUE , intentional)
+	return FALSE
+
+/datum/emote/exercise							// Работает, но всегда с 0 результатом и требует починки, пока будет выключена
+	key = "exercise"
+
+/datum/emote/living/carbon/noogie/can_run_emote(mob/user, status_check = TRUE , intentional)
+	return FALSE

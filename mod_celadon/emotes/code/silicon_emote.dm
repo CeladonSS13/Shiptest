@@ -30,3 +30,6 @@
 
 /datum/emote/silicon/no
 	message = "издаёт отрицательный сигнал."
+
+/datum/emote/silicon/honk
+	message = "хонкает."

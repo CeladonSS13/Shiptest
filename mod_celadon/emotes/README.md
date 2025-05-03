@@ -38,7 +38,8 @@ ID мода: CELADON_EMOTES
 - 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- Отсутствуют
+- `mod_celadon/_storge_icons/icons`
+- `mod_celadon/_storge_sounds/sound`
 
 ### Авторы
 
