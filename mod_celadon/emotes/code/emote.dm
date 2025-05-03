@@ -1859,102 +1859,6 @@
 	flick_overlay(emote_animation, GLOB.clients, 1.6 SECONDS)
 	return TRUE
 
-///////////////////
-// КПБ, бип-буп! //
-///////////////////
-
-/datum/emote/living/carbon/human/robot_tongue/beep
-	key = "beep"
-	key_third_person = "бипает."
-	message = "бипает."
-	message_param = "бипает на %t."
-
-/datum/emote/living/carbon/human/robot_tongue/beep/run_emote(mob/user, params)
-	. = ..()
-	if(.)
-		playsound(user.loc, 'sound/machines/twobeep.ogg', 50)
-
-/datum/emote/living/carbon/human/robot_tongue/buzz
-	key = "buzz"
-	key_third_person = "buzzes"
-	message = "гудит."
-	message_param = "гудит на %t."
-
-/datum/emote/living/carbon/human/robot_tongue/buzz/run_emote(mob/user, params)
-	. = ..()
-	if(.)
-		playsound(user.loc, 'sound/machines/buzz-sigh.ogg', 50)
-
-/datum/emote/living/carbon/human/robot_tongue/buzz2
-	key = "buzz2"
-	message = "гудит дважды."
-
-/datum/emote/living/carbon/human/robot_tongue/buzz2/run_emote(mob/user, params)
-	. = ..()
-	if(.)
-		playsound(user.loc, 'sound/machines/buzz-two.ogg', 50)
-
-/datum/emote/living/carbon/human/robot_tongue/chime
-	key = "chime"
-	key_third_person = "chimes"
-	message = "звонит."
-
-/datum/emote/living/carbon/human/robot_tongue/chime/run_emote(mob/user, params)
-	. = ..()
-	if(.)
-		playsound(user.loc, 'sound/machines/chime.ogg', 50)
-
-/datum/emote/living/carbon/human/robot_tongue/ping
-	key = "ping"
-	key_third_person = "pings"
-	message = "пингует."
-	message_param = "пингует %t."
-
-/datum/emote/living/carbon/human/robot_tongue/ping/run_emote(mob/user, params)
-	. = ..()
-	if(.)
-		playsound(user.loc, 'sound/machines/ping.ogg', 50)
-
-/datum/emote/living/carbon/human/robot_tongue/warn
-	key = "warn"
-	key_third_person = "warn"
-	message = "издаёт сигнал тревоги!"
-
-/datum/emote/living/carbon/human/robot_tongue/warn/run_emote(mob/user, params)
-	. = ..()
-	if(.)
-		playsound(user.loc, 'sound/machines/warning-buzzer.ogg', 50)
-
-/datum/emote/living/carbon/human/robot_tongue/no
-	key = "no"
-	key_third_person = "no"
-	message = "издаёт отрицательный сигнал."
-
-/datum/emote/living/carbon/human/robot_tongue/no/run_emote(mob/user, params)
-	. = ..()
-	if(.)
-		playsound(user.loc, 'sound/machines/synth_no.ogg', 50)
-
-/datum/emote/living/carbon/human/robot_tongue/yes
-	key = "yes"
-	key_third_person = "yes"
-	message = "издаёт подтверждающий сигнал."
-
-/datum/emote/living/carbon/human/robot_tongue/yes/run_emote(mob/user, params)
-	. = ..()
-	if(.)
-		playsound(user.loc, 'sound/machines/synth_yes.ogg', 50)
-
-/datum/emote/living/carbon/human/robot_tongue/sad
-	key = "sad"
-	key_third_person = "plays a sad trombone..."
-	message = "проигрывает грустную мелодию..."
-
-/datum/emote/living/carbon/human/robot_tongue/sad/run_emote(mob/user, params)
-	. = ..()
-	if(.)
-		playsound(user.loc, 'sound/misc/sadtrombone.ogg', 50)
-
 /////////////////////
 // Рассовые эмоуты //
 /////////////////////
@@ -1964,7 +1868,7 @@
 /datum/emote/living/flutter
 	key = "flutter"
 	key_third_person = "flutters"
-	message = "трепешет крыльями."
+	message = "трепещет крыльями."
 	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 
 /datum/emote/living/flutter/can_run_emote(mob/user, status_check = TRUE , intentional)

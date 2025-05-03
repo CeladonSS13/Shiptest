@@ -103,3 +103,38 @@
 
 /datum/emote/living/carbon/wink
 	message = "подмигивает."
+
+
+// КПБ, бип-буп!
+
+/datum/emote/living/carbon/human/robot_tongue/beep
+	key_third_person = "бипает."
+	message = "бипает."
+	message_param = "бипает на %t."
+
+/datum/emote/living/carbon/human/robot_tongue/buzz
+	message = "гудит."
+	message_param = "гудит на %t."
+
+/datum/emote/living/carbon/human/robot_tongue/buzz2
+	message = "гудит дважды."
+
+/datum/emote/living/carbon/human/robot_tongue/chime
+	key_third_person = "chimes"
+	message = "звонит."
+
+/datum/emote/living/carbon/human/robot_tongue/ping
+	message = "пингует."
+	message_param = "пингует %t."
+
+/datum/emote/living/carbon/human/robot_tongue/warn
+	message = "издаёт сигнал тревоги!"
+
+/datum/emote/living/carbon/human/robot_tongue/no
+	message = "издаёт отрицательный сигнал."
+
+/datum/emote/living/carbon/human/robot_tongue/yes
+	message = "издаёт подтверждающий сигнал."
+
+/datum/emote/living/carbon/human/robot_tongue/sad
+	message = "проигрывает грустную мелодию..."
