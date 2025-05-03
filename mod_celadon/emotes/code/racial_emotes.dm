@@ -42,15 +42,15 @@
 
 /datum/species/moth/on_species_gain(mob/living/carbon/human/H)
 	..()
-	H.verbs |= /mob/living/carbon/human/proc/emote_flap
-	H.verbs |= /mob/living/carbon/human/proc/emote_aflap
+	// H.verbs |= /mob/living/carbon/human/proc/emote_flap
+	// H.verbs |= /mob/living/carbon/human/proc/emote_aflap
 	H.verbs |= /mob/living/carbon/human/proc/emote_flutter
 	H.verbs |= /mob/living/carbon/human/proc/emote_mothchitter
 
 /datum/species/moth/on_species_loss(mob/living/carbon/human/H)
 	..()
-	H.verbs -= /mob/living/carbon/human/proc/emote_flap
-	H.verbs -= /mob/living/carbon/human/proc/emote_aflap
+	// H.verbs -= /mob/living/carbon/human/proc/emote_flap
+	// H.verbs -= /mob/living/carbon/human/proc/emote_aflap
 	H.verbs -= /mob/living/carbon/human/proc/emote_flutter
 	H.verbs -= /mob/living/carbon/human/proc/emote_mothchitter
 
