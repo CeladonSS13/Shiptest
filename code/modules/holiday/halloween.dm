@@ -70,19 +70,19 @@
 		return
 
 	else if(trapped == SPOOKY_SKELETON)
-		visible_message("<span class='userdanger'><font size='5'>BOO!</font></span>")
+		visible_message(span_userdanger("<font size='5'>BOO!</font>"))
 		playsound(loc, 'sound/spookoween/girlscream.ogg', 300, TRUE)
 		trapped = 0
 		QDEL_IN(trapped_mob, 90)
 
 	else if(trapped == HOWLING_GHOST)
-		visible_message("<span class='userdanger'><font size='5'>[pick("OooOOooooOOOoOoOOooooOOOOO", "BooOOooOooooOOOO", "BOO!", "WoOOoOoooOooo")]</font></span>")
+		visible_message(span_userdanger("<font size='5'>[pick("OooOOooooOOOoOoOOooooOOOOO", "BooOOooOooooOOOO", "BOO!", "WoOOoOoooOooo")]</font>"))
 		playsound(loc, 'sound/spookoween/ghosty_wind.ogg', 300, TRUE)
 		new /mob/living/simple_animal/shade/howling_ghost(loc)
 		trapped = 0
 
 	else if(trapped == SCARY_BATS)
-		visible_message("<span class='userdanger'><font size='5'>Protect your hair!</font></span>")
+		visible_message(span_userdanger("<font size='5'>Protect your hair!</font>"))
 		playsound(loc, 'sound/spookoween/bats.ogg', 300, TRUE)
 		var/number = rand(1,3)
 		for(var/i=0,i < number,i++)
@@ -90,18 +90,20 @@
 		trapped = 0
 
 	else if(trapped == ANGRY_FAITHLESS)
-		visible_message("<span class='userdanger'>The closet bursts open!</span>")
-		visible_message("<span class='userdanger'><font size='5'>THIS BEING RADIATES PURE EVIL! YOU BETTER RUN!!!</font></span>")
+		visible_message(span_userdanger("The closet bursts open!"))
+		visible_message(span_userdanger("<font size='5'>THIS BEING RADIATES PURE EVIL! YOU BETTER RUN!!!</font>"))
 		playsound(loc, 'sound/hallucinations/wail.ogg', 300, TRUE)
 		var/mob/living/simple_animal/hostile/faithless/F = new(loc)
 		trapped = 0
 		QDEL_IN(F, 120)
 
+	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 	else if(trapped == INSANE_CLOWN)
 		visible_message("<span class='userdanger'><font size='5'>...</font></span>")
 		playsound(loc, 'sound/spookoween/scary_clown_appear.ogg', 300, TRUE)
 		spawn_atom_to_turf(/mob/living/simple_animal/hostile/clown_insane, loc, 1, FALSE)
 		trapped = 0
+	// [/CELADON-ADD]
 
 //don't spawn in crates
 /obj/structure/closet/crate/trigger_spooky_trap()
@@ -171,6 +173,18 @@
 /mob/living/simple_animal/shade/howling_ghost/adjustHealth(amount, updating_health = TRUE, forced = FALSE)
 	. = 0
 
+/////////////////////////
+// Spooky Uplink Items //
+/////////////////////////
+
+/datum/uplink_item/device_tools/emag/hack_o_lantern
+	name = "Hack-o'-Lantern"
+	desc = "An emag fitted to support the Halloween season. Candle not included."
+	category = "Holiday"
+	item = /obj/item/card/emag/halloween
+	surplus = 0
+
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 ///////////////////////////
 //Spookoween Insane Clown//
 ///////////////////////////
@@ -245,14 +259,4 @@
 
 /mob/living/simple_animal/hostile/clown_insane/handle_temperature_damage()
 	return
-
-/////////////////////////
-// Spooky Uplink Items //
-/////////////////////////
-
-/datum/uplink_item/device_tools/emag/hack_o_lantern
-	name = "Hack-o'-Lantern"
-	desc = "An emag fitted to support the Halloween season. Candle not included."
-	category = "Holiday"
-	item = /obj/item/card/emag/halloween
-	surplus = 0
+// [/CELADON-ADD]

@@ -43,6 +43,10 @@
 /area/ship/crew/canteen)
 "ah" = (
 /obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/shutters{
+	dir = 2;
+	id = "santiana"
+	},
 /turf/open/floor/plating,
 /area/ship/crew/canteen)
 "ai" = (
@@ -66,6 +70,10 @@
 	pixel_x = 1;
 	pixel_y = -33
 	},
+/obj/item/clothing/suit/armor/vest,
+/obj/item/chameleon,
+/obj/item/storage/box/syndie_kit/chameleon,
+/obj/item/desynchronizer/tvstatic,
 /turf/open/floor/plasteel/mono,
 /area/ship/security/armory)
 "ak" = (
@@ -115,7 +123,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/crew/cryo)
 "ap" = (
-/obj/machinery/computer/selling_pad_control{
+/obj/machinery/computer/arcade{
 	dir = 1
 	},
 /turf/open/floor/plasteel/mono/dark,
@@ -264,11 +272,12 @@
 	},
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/item/spacecash/bundle/c200,
+/obj/item/shard,
 /obj/effect/decal/cleanable/garbage{
 	pixel_x = 6;
 	pixel_y = -3
 	},
-/obj/item/shard,
 /turf/open/floor/plasteel/mono,
 /area/ship/crew/toilet)
 "aE" = (
@@ -407,7 +416,6 @@
 /obj/machinery/light/small/directional/south,
 /obj/structure/closet/secure_closet,
 /obj/item/clothing/under/costume/dutch,
-/obj/item/clothing/suit/armor/laserproof,
 /obj/item/clothing/head/helmet/swat,
 /obj/item/camera,
 /obj/item/storage/box/donkpockets/donkpocketspicy{
@@ -424,6 +432,8 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
+/obj/item/ammo_box/magazine/skm_46_30,
+/obj/item/storage/box/ammo/c46x30mm,
 /turf/open/floor/wood/ebony,
 /area/ship/bridge)
 "aS" = (
@@ -454,6 +464,14 @@
 /obj/item/melee/knife/hunting,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/item/spacecash/bundle/c20,
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg,
+/obj/item/robot_module/meka/security,
+/obj/item/robot_module/meka/syndicate_medical,
+/obj/item/robot_module/miner,
+/obj/item/robot_module/meka/medical,
+/obj/item/robot_module/meka,
+/obj/item/gun/ballistic/shotgun/doublebarrel,
+/obj/item/gun/ballistic/shotgun/doublebarrel,
 /turf/open/floor/plasteel/mono,
 /area/ship/security/armory)
 "aV" = (
@@ -486,7 +504,10 @@
 /area/ship/crew/canteen)
 "aY" = (
 /obj/effect/spawner/structure/window/reinforced,
-/obj/structure/curtain/cloth/black,
+/obj/machinery/door/poddoor/shutters{
+	dir = 2;
+	id = "santiana"
+	},
 /turf/open/floor/plating,
 /area/ship/maintenance/aft)
 "aZ" = (
@@ -666,14 +687,6 @@
 "bo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood,
-/obj/item/spacecash/bundle/c500{
-	pixel_x = -2;
-	pixel_y = 6
-	},
-/obj/item/gun/ballistic/revolver/shadow/empty{
-	pixel_x = 2;
-	pixel_y = 6
-	},
 /obj/item/ammo_casing/a44roum{
 	pixel_x = 8;
 	pixel_y = -1
@@ -683,6 +696,14 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
+	},
+/obj/item/spacecash/bundle/c50{
+	pixel_x = -1;
+	pixel_y = 4
+	},
+/obj/item/gun/ballistic/revolver/shadow/empty{
+	pixel_x = 2;
+	pixel_y = 6
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm)
@@ -696,8 +717,6 @@
 /obj/structure/rack,
 /obj/item/clothing/head/beret/grey,
 /obj/item/clothing/head/beret/mining,
-/obj/item/clothing/head/helmet/bulletproof/x11/frontier,
-/obj/item/clothing/head/helmet/blueshirt,
 /obj/machinery/light/small/directional/north,
 /obj/item/melee/classic_baton{
 	pixel_x = 5;
@@ -719,6 +738,15 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
+/obj/item/clothing/suit/armor/vest/alt,
+/obj/item/storage/box/ammo/a300,
+/obj/item/storage/box/ammo/a300,
+/obj/item/storage/box/ammo/a12g_buckshot,
+/obj/item/storage/box/ammo/a12g_rubbershot,
+/obj/item/storage/box/ammo/a12g_rubbershot,
+/obj/item/storage/box/ammo/a357,
+/obj/item/storage/box/ammo/a357,
+/obj/item/storage/box/ammo/a357,
 /turf/open/floor/plasteel/mono,
 /area/ship/security/armory)
 "br" = (
@@ -760,6 +788,7 @@
 	pixel_x = 11;
 	pixel_y = 16
 	},
+/obj/item/spacecash/bundle/c100,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/canteen)
 "bu" = (
@@ -798,13 +827,13 @@
 	},
 /obj/structure/railing,
 /obj/structure/crate_shelf,
-/obj/structure/closet/crate/freezer/surplus_limbs,
 /obj/machinery/airalarm/directional/north{
 	dir = 8;
 	pixel_x = -32;
 	pixel_y = 1
 	},
 /obj/item/spacecash/bundle/c200,
+/obj/structure/closet/crate/freezer/surplus_limbs/organs,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "bz" = (
@@ -831,11 +860,6 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/ship/cargo)
-"bB" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/crate/freezer/surplus_limbs/organs,
-/turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "bC" = (
 /obj/structure/catwalk/over,
@@ -1031,7 +1055,10 @@
 /area/ship/crew/toilet)
 "bV" = (
 /obj/effect/spawner/structure/window/reinforced,
-/obj/structure/curtain/cloth/black,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "santiana"
+	},
 /turf/open/floor/plating,
 /area/ship/security/armory)
 "bW" = (
@@ -1062,7 +1089,10 @@
 /area/ship/bridge)
 "bY" = (
 /obj/effect/spawner/structure/window/reinforced,
-/obj/structure/curtain/cloth/black,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "santiana"
+	},
 /turf/open/floor/plating,
 /area/ship/medical)
 "bZ" = (
@@ -1266,6 +1296,10 @@
 /obj/item/stock_parts/cell/gun,
 /obj/item/clothing/head/helmet/riot,
 /obj/item/melee/baton/loaded,
+/obj/item/clothing/suit/armor/vest/elysium,
+/obj/item/clothing/suit/armor/vest/elysium,
+/obj/item/melee/baton/loaded,
+/obj/item/gun/energy/e_gun/adv_stopping,
 /turf/open/floor/plasteel/mono,
 /area/ship/security/armory)
 "cv" = (
@@ -1298,14 +1332,17 @@
 /turf/open/floor/plasteel,
 /area/ship/crew/toilet)
 "cz" = (
-/obj/machinery/door/airlock/mining{
-	icon_state = "closed";
-	dir = 8
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/door/airlock/mining{
+	icon_state = "closed";
 	dir = 8
 	},
 /turf/open/floor/plasteel/mono,
@@ -1348,8 +1385,12 @@
 /area/ship/crew/canteen)
 "cE" = (
 /obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/shutters{
+	dir = 2;
+	id = "santiana"
+	},
 /turf/open/floor/plating,
-/area/ship/medical)
+/area/ship/bridge)
 "cF" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4{
 	dir = 4
@@ -1369,6 +1410,7 @@
 /obj/item/reagent_containers/condiment/oliveoil,
 /obj/item/reagent_containers/condiment/milk,
 /obj/item/reagent_containers/condiment/milk,
+/obj/item/spacecash/bundle/c200,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
 "cH" = (
@@ -1414,6 +1456,9 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
 /turf/open/floor/plating,
@@ -1564,6 +1609,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/north,
+/obj/item/spacecash/bundle/c10,
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "cX" = (
@@ -1599,6 +1645,7 @@
 /obj/item/clothing/head/solgov/terragov,
 /obj/item/clothing/head/beret/solgov/terragov,
 /obj/item/documents/terragov,
+/obj/item/spacecash/bundle/c100,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm)
 "db" = (
@@ -1697,6 +1744,13 @@
 	pixel_x = -20;
 	pixel_y = -9
 	},
+/obj/machinery/button/door{
+	pixel_x = -23;
+	pixel_y = 2;
+	dir = 4;
+	id = "santiana";
+	name = "Shutters button"
+	},
 /turf/open/floor/wood/ebony,
 /area/ship/bridge)
 "dj" = (
@@ -1714,13 +1768,13 @@
 	},
 /obj/item/spacecash/bundle/c500,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/item/gun/ballistic/automatic/smg/skm_carbine,
 /turf/open/floor/wood/ebony,
 /area/ship/bridge)
 "dk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/vomit/old,
 /obj/effect/decal/cleanable/sprayweb,
-/obj/item/gun/energy/taser,
 /turf/open/floor/plasteel,
 /area/ship/crew/toilet)
 "dl" = (
@@ -1764,15 +1818,7 @@
 /obj/structure/rack,
 /obj/item/storage/toolbox/electrical{
 	pixel_x = -4;
-	pixel_y = 4
-	},
-/obj/item/storage/toolbox/electrical{
-	pixel_x = -4;
 	pixel_y = -1
-	},
-/obj/item/storage/toolbox/mechanical{
-	pixel_x = 6;
-	pixel_y = 4
 	},
 /obj/item/storage/toolbox/mechanical{
 	pixel_x = 6;
@@ -1783,7 +1829,7 @@
 	pixel_x = -4;
 	pixel_y = 1
 	},
-/obj/item/spacecash/bundle/c500,
+/obj/item/spacecash/bundle/c200,
 /turf/open/floor/plating,
 /area/ship/maintenance/aft)
 "dq" = (
@@ -1839,6 +1885,9 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
 /turf/open/floor/plating,
@@ -1911,7 +1960,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/bounty,
 /obj/machinery/power/apc/auto_name/directional/east{
 	pixel_x = 25;
@@ -1923,7 +1972,6 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/crew/cryo)
 "dA" = (
-/obj/machinery/selling_pad,
 /obj/effect/turf_decal/box,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
@@ -1962,17 +2010,26 @@
 /area/ship/crew/dorm)
 "dE" = (
 /obj/effect/spawner/structure/window/reinforced,
-/obj/structure/curtain/cloth/black,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "santiana"
+	},
 /turf/open/floor/plating,
 /area/ship/bridge)
 "dF" = (
 /obj/effect/spawner/structure/window/reinforced,
-/obj/structure/curtain/cloth/black,
+/obj/machinery/door/poddoor/shutters{
+	dir = 2;
+	id = "santiana"
+	},
 /turf/open/floor/plating,
 /area/ship/crew/dorm)
 "dG" = (
 /obj/effect/spawner/structure/window/reinforced,
-/obj/structure/curtain/cloth/black,
+/obj/machinery/door/poddoor/shutters{
+	dir = 2;
+	id = "santiana"
+	},
 /turf/open/floor/plating,
 /area/ship/hallway/central)
 "dH" = (
@@ -2276,7 +2333,10 @@
 /area/ship/security/armory)
 "gS" = (
 /obj/effect/spawner/structure/window/reinforced,
-/obj/structure/curtain/cloth/black,
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "santiana"
+	},
 /turf/open/floor/plating,
 /area/ship/crew/cryo)
 "iU" = (
@@ -2309,6 +2369,13 @@
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/crew/dorm)
+"lk" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/plasteel/mono,
+/area/ship/cargo)
 "us" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2401,6 +2468,9 @@
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/suit/pirate,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/item/card/emag/limited{
+	uses_left = 3
+	},
 /turf/open/floor/plasteel/mono,
 /area/ship/security/armory)
 "Xo" = (
@@ -2608,7 +2678,7 @@ cc
 at
 au
 bj
-bB
+lk
 cl
 dw
 dA
@@ -2674,7 +2744,7 @@ cz
 bG
 bG
 bG
-cE
+bY
 bG
 ce
 ce
@@ -2836,11 +2906,11 @@ aa
 aa
 aa
 aa
-dE
+cE
 cx
 dl
 bP
-dE
+cE
 "}
 (22,1,1) = {"
 aa
@@ -2856,11 +2926,11 @@ aa
 aa
 aa
 aa
-dE
+cE
 bL
 dr
 wC
-dE
+cE
 "}
 (23,1,1) = {"
 aa

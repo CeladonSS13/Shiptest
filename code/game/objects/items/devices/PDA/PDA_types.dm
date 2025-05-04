@@ -1,4 +1,5 @@
 //Clown PDA is slippery.
+/* ОФЫ ВЫРЕЗАЛИ КОНТЕНТ ПО КЛОУНАМ
 /obj/item/pda/clown
 	name = "clown PDA"
 	default_cartridge = /obj/item/cartridge/virus/clown
@@ -10,7 +11,7 @@
 
 /obj/item/pda/clown/ComponentInitialize()
 	. = ..()
-	// [CELADON-EDIT] - CELADON_RETURN_CONTENT
+	// [CELADON-EDIT] - CELADON_RETURN_CONTENT_SPAWN
 	// AddComponent(/datum/component/wearertargeting/sitcomlaughter, CALLBACK(src, PROC_REF(after_sitcom_laugh)))	// CELADON-EDIT - ORIGINAL
 	AddComponent(/datum/component/slippery/clowning, 120, NO_SLIP_WHEN_WALKING, CALLBACK(src, PROC_REF(AfterSlip)))
 	// [/CELADON-EDIT]
@@ -45,7 +46,7 @@
 	if(!U.canUseTopic(src, BE_CLOSE))
 		return
 	return emojis
-
+*/
 // Special AI/pAI PDAs that cannot explode.
 /obj/item/pda/ai
 	icon = null

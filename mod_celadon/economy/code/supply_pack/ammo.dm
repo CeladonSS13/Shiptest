@@ -187,7 +187,7 @@
 /datum/supply_pack/ammo/a300_box
 	cost = 400
 
-/datum/supply_pack/ammo/a65clip_box
+/datum/supply_pack/ammo/a75clip_box
 	cost = 400
 
 

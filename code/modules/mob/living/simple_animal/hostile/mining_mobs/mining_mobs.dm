@@ -1,6 +1,7 @@
 //the base mining mob
 /mob/living/simple_animal/hostile/asteroid
-	vision_range = 2
+	vision_range = 8
+	aggro_vision_range = 12
 	atmos_requirements = IMMUNE_ATMOS_REQS
 	faction = list("mining")
 	weather_immunities = list("lava","ash")
@@ -37,12 +38,9 @@
 		return
 	icon_state = icon_living
 
-/mob/living/simple_animal/hostile/asteroid/bullet_act(obj/projectile/P)//Reduces damage from most projectiles to curb off-screen kills
+/mob/living/simple_animal/hostile/asteroid/bullet_act(obj/projectile/P)
 	if(!stat)
 		Aggro()
-	/* if(P.damage < 30 && P.damage_type != BRUTE)		//WS Edit Begin - Whitesands
-		P.damage = (P.damage / 3)
-		visible_message("<span class='danger'>[P] has a reduced effect on [src]!</span>")	*/		//WS Edit End
 	..()
 
 /mob/living/simple_animal/hostile/asteroid/hitby(atom/movable/AM, skipcatch, hitpush, blocked, datum/thrownthing/throwingdatum) //No floor tiling them to death, wiseguy
@@ -51,13 +49,13 @@
 		if(!stat)
 			Aggro()
 		if(T.throwforce <= throw_deflection)		//WS Edit - Whitesands
-			visible_message("<span class='notice'>The [T.name] [throw_message] [src.name]!</span>")
+			visible_message(span_notice("The [T.name] [throw_message] [src.name]!"))
 			return
 	..()
 
 /mob/living/simple_animal/hostile/asteroid/death(gibbed)
 	SSblackbox.record_feedback("tally", "mobs_killed_mining", 1, type)
-	// [CELADON-EDIT] - CRUSHER_TROPHEY
+	// [CELADON-EDIT] - RETURN_CONTENT_CRUSHER_TROPHY
 	// if(prob(trophy_drop_mod)) //on average, you'll need to kill 4 creatures before getting the item
 	// 	spawn_mob_trophy()		// CELADON-EDIT - ORIGINAL
 	// ..(gibbed)
@@ -69,7 +67,7 @@
 	..(gibbed)
 	// [/CELADON-ADD]
 
-// [CELADON-EDIT] - CRUSHER_TROPHEY
+// [CELADON-EDIT] - RETURN_CONTENT_CRUSHER_TROPHY
 // /mob/living/simple_animal/hostile/asteroid/proc/spawn_mob_trophy()
 // 	if(mob_trophy)
 // 		butcher_results[mob_trophy] = 1		// CELADON-EDIT - ORIGINAL

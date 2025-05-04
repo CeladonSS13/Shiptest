@@ -178,6 +178,7 @@
 	id = "colossus_thrusters"
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/window/reinforced/spawner/west,
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/maintenance/starboard)
 "cd" = (
@@ -1069,7 +1070,8 @@
 /mob/living/simple_animal/pet/gondola{
 	desc = "Why Inteq keeps this Gondola around is anybody's guess. Something about its peaceful demeanor still manages to put everybody at ease.";
 	name = "Solstice";
-	real_name = "Solstice"
+	real_name = "Solstice";
+	faction = list("gondola, playerInteq")
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/office)
@@ -1154,7 +1156,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 4
 	},
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "mY" = (
@@ -1278,11 +1280,12 @@
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/cargo)
 "oq" = (
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 1
-	},
 /obj/structure/table,
 /obj/machinery/jukebox/boombox,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1;
+	layer = 2.02
+	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "ot" = (
@@ -1307,7 +1310,7 @@
 /obj/structure/sign/poster/contraband/twelve_gauge{
 	pixel_x = 32
 	},
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "pa" = (
@@ -1463,10 +1466,21 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
+/obj/item/ammo_box/magazine/smgm10mm{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/ammo_box/magazine/smgm10mm{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq{
+	pixel_y = 5
+	},
+/obj/machinery/airalarm/directional/west,
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq{
 	pixel_y = -2
 	},
-/obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "qR" = (
@@ -1519,7 +1533,8 @@
 /area/ship/crew/office)
 "rG" = (
 /obj/effect/turf_decal/borderfloorblack{
-	dir = 1
+	dir = 1;
+	layer = 2.02
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table,
@@ -1687,6 +1702,7 @@
 	id = "colossus_thrusters"
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/window/reinforced/spawner/west,
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/maintenance/port)
 "sP" = (
@@ -1749,6 +1765,7 @@
 	id = "colossus_thrusters"
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/window/reinforced/spawner/west,
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/maintenance/starboard)
 "tt" = (
@@ -1793,7 +1810,8 @@
 "tJ" = (
 /obj/structure/weightmachine/stacklifter,
 /obj/effect/turf_decal/borderfloorblack{
-	dir = 1
+	dir = 1;
+	layer = 2.02
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
@@ -2102,7 +2120,8 @@
 /obj/item/bedsheet/medical,
 /obj/structure/curtain,
 /obj/effect/turf_decal/borderfloorblack{
-	dir = 1
+	dir = 1;
+	layer = 2.02
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
@@ -2243,10 +2262,6 @@
 /area/ship/cargo)
 "ym" = (
 /obj/structure/rack,
-/obj/item/target/clown{
-	pixel_x = -5;
-	pixel_y = 10
-	},
 /obj/item/target{
 	pixel_y = 5
 	},
@@ -2444,7 +2459,7 @@
 	dir = 8
 	},
 /obj/machinery/airalarm/directional/west,
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "BA" = (
@@ -2617,7 +2632,7 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/west,
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "Da" = (
@@ -2648,9 +2663,9 @@
 /obj/item/storage/belt/security/webbing/inteq,
 /obj/item/storage/belt/military/assault,
 /obj/item/clothing/head/inteq_peaked,
-/obj/item/storage/box/ammo/a357,
-/obj/item/storage/box/ammo/a357,
-/obj/item/storage/box/ammo/a357,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
 /obj/item/clothing/mask/balaclava/inteq,
 /turf/open/floor/carpet/orange,
 /area/ship/bridge)
@@ -2909,7 +2924,7 @@
 /obj/item/clothing/gloves/color/yellow,
 /obj/item/storage/belt/utility,
 /obj/item/clothing/under/syndicate/inteq/artificer,
-/obj/item/clothing/under/syndicate/inteq/skirt/artificer,
+/obj/item/clothing/under/syndicate/inteq/artificer/skirt,
 /obj/item/clothing/head/soft/inteq,
 /obj/item/clothing/head/hardhat,
 /obj/item/clothing/shoes/combat,
@@ -3039,7 +3054,7 @@
 /obj/item/storage/belt/medical/webbing,
 /obj/item/clothing/suit/armor/inteq/corpsman,
 /obj/item/clothing/head/soft/inteq/corpsman,
-/obj/item/clothing/under/syndicate/inteq/skirt/corpsman,
+/obj/item/clothing/under/syndicate/inteq/corpsman/skirt,
 /obj/item/clothing/under/syndicate/inteq/corpsman,
 /obj/machinery/button/shieldwallgen{
 	dir = 1;
@@ -3047,6 +3062,7 @@
 	pixel_x = 5;
 	pixel_y = -19
 	},
+/obj/item/defibrillator,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "HG" = (
@@ -3109,7 +3125,6 @@
 	dir = 4
 	},
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
 /obj/item/tank/jetpack/oxygen,
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/corner/opaque/yellow{
@@ -3118,6 +3133,7 @@
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 8
 	},
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/port)
 "It" = (
@@ -3320,6 +3336,7 @@
 	id = "colossus_thrusters"
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/window/reinforced/spawner/west,
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/maintenance/port)
 "Lx" = (
@@ -3968,7 +3985,6 @@
 /obj/item/spacecash/bundle/c1000,
 /obj/item/spacecash/bundle/c1000,
 /obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 8
 	},
@@ -4173,9 +4189,6 @@
 	desc = "A slick black folder stamped 'Property of Inteq Risk Management Group.'";
 	name = "folder"
 	},
-/obj/item/stamp/law{
-	name = "master at arms' rubber stamp"
-	},
 /obj/item/table_bell{
 	pixel_y = 13
 	},
@@ -4250,7 +4263,8 @@
 /area/ship/security)
 "WE" = (
 /obj/effect/turf_decal/borderfloorblack{
-	dir = 1
+	dir = 1;
+	layer = 2.02
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/rack,
@@ -4319,6 +4333,7 @@
 /obj/structure/table/rolling,
 /obj/machinery/light/directional/south,
 /obj/machinery/computer/helm/viewscreen/directional/east,
+/obj/item/storage/firstaid/brute,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "WS" = (
@@ -4440,10 +4455,11 @@
 "XQ" = (
 /obj/machinery/firealarm/directional/west,
 /obj/structure/weightmachine/stacklifter,
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1;
+	layer = 2.02
+	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "XR" = (

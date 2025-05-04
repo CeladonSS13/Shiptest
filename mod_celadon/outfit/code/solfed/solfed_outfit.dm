@@ -2,7 +2,7 @@
 //			SOLAR FEDERATION			//
 //										//
 
-/datum/outfit/job/solgov/proc/get_solfed_captain_access(mob/living/carbon/human/H)
+/datum/outfit/job/solfed/proc/get_solfed_captain_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
@@ -15,13 +15,13 @@
 				I = O
 				break
 		if (I)
-			I.access = list(ACCESS_SOLGOV, ACCESS_CAPTAIN, ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED, ACCESS_OUTPOST_FACTION_NT)
+			I.access += list(ACCESS_SOLGOV, ACCESS_CAPTAIN, ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
 		W.combined_access = list()
 		for (var/obj/item/card/id/card in W.contents)
 			W.combined_access |= card.access
 
-/datum/outfit/job/solgov/proc/get_solfed_overseer_access(mob/living/carbon/human/H)
+/datum/outfit/job/solfed/proc/get_solfed_head_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
@@ -34,13 +34,13 @@
 				I = O
 				break
 		if (I)
-			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED, ACCESS_OUTPOST_FACTION_NT)
+			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
 		W.combined_access = list()
 		for (var/obj/item/card/id/card in W.contents)
 			W.combined_access |= card.access
 
-/datum/outfit/job/solgov/proc/get_solfed_sonnensoldner_access(mob/living/carbon/human/H)
+/datum/outfit/job/solfed/proc/get_solfed_marine_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
@@ -53,13 +53,13 @@
 				I = O
 				break
 		if (I)
-			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED, ACCESS_OUTPOST_FACTION_NT)
+			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
 		W.combined_access = list()
 		for (var/obj/item/card/id/card in W.contents)
 			W.combined_access |= card.access
 
-/datum/outfit/job/solgov/proc/get_solfed_engineer_access(mob/living/carbon/human/H)
+/datum/outfit/job/solfed/proc/get_solfed_engineer_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
@@ -72,7 +72,7 @@
 				I = O
 				break
 		if (I)
-			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED, ACCESS_OUTPOST_FACTION_NT)
+			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
 		W.combined_access = list()
 		for (var/obj/item/card/id/card in W.contents)
@@ -80,7 +80,7 @@
 
 /// SolFed outpost access
 
-/datum/outfit/job/solgov/proc/get_solfed_general_access(mob/living/carbon/human/H)
+/datum/outfit/job/solfed/proc/get_solfed_general_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
@@ -93,43 +93,51 @@
 				I = O
 				break
 		if (I)
-			I.access += list(ACCESS_OUTPOST_FACTION_SOLFED, ACCESS_OUTPOST_FACTION_NT)
+			I.access += list(ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
 		W.combined_access = list()
 		for (var/obj/item/card/id/card in W.contents)
 			W.combined_access |= card.access
 
-/datum/outfit/job/solgov/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/solfed
+	name = "SolFed Base Outfit"
+
+	faction_icon = "bg_solgov"
+
+/datum/outfit/job/solfed/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
+	if(visualsOnly)
+		return
+	H.faction |= list(FACTION_PLAYER_SOLFED)
 	get_solfed_general_access(H)
 
 	// Даёт всем СФкам брендовый сурвивал бокс
-/datum/outfit/job/solgov
+/datum/outfit/job/solfed
 	box = /obj/item/storage/box/survival/solfed
 
-/datum/outfit/job/solgov/ert/inspector
+/datum/outfit/job/solfed/ert/inspector
 	box = /obj/item/storage/box/survival/solfed
 
-/datum/outfit/job/solgov/sonnensoldner
+/datum/outfit/job/solfed/sonnensoldner
 	box = /obj/item/storage/box/survival/solfed
 
-/datum/outfit/job/solgov/engineer
+/datum/outfit/job/solfed/engineer
 	box = /obj/item/storage/box/survival/solfed
 
-/datum/outfit/job/solgov/doctor
+/datum/outfit/job/solfed/doctor
 	box = /obj/item/storage/box/survival/solfed
 
-/datum/outfit/job/solgov/miner
+/datum/outfit/job/solfed/miner
 	box = /obj/item/storage/box/survival/solfed
 
 // Ученые
-/datum/outfit/job/solgov/scientist
-	name = "SolGov - Scientific Officer"
+/datum/outfit/job/solfed/scientist
+	name = "SolFed - Wissenschaftler"
 	jobtype = /datum/job/scientist
 	job_icon = "scientist"
 
-	id = /obj/item/card/id/solgov
-	ears = /obj/item/radio/headset/headset_sci
+	id = /obj/item/card/id/solfed
+	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solgov/formal
 	shoes = /obj/item/clothing/shoes/laceup
 	suit = /obj/item/clothing/suit/toggle/labcoat/science
@@ -139,8 +147,8 @@
 	satchel = /obj/item/storage/backpack/satchel/tox
 	courierbag = /obj/item/storage/backpack/messenger/tox
 
-/datum/outfit/job/solgov/scientist/roboticist
-	name = "SolGov - Mechanical Technician Officer"
+/datum/outfit/job/solfed/scientist/roboticist
+	name = "SolFed - Roboterkonstrukteur"
 	job_icon = "roboticist"
 	jobtype = /datum/job/roboticist
 
@@ -149,169 +157,265 @@
 
 	backpack_contents = list(/obj/item/weldingtool/hugetank)
 
-// Пилот меха
+// Военно-морской флот
 
-/datum/outfit/job/solgov/sonnensoldner/pilot
-	name = "SolGov - Exosuit Operator"
+/datum/outfit/job/solfed/marine
+	name = "SolFed - Marine"
 	jobtype = /datum/job/officer
 	job_icon = "sonnensoldner"
 
-	head = /obj/item/clothing/head/solgov
+	id = /obj/item/card/id/solfed
+	ears = /obj/item/radio/headset/solgov/alt
+	uniform = /obj/item/clothing/under/solfed
+	shoes = /obj/item/clothing/shoes/jackboots
+
+/datum/outfit/job/solfed/marine/post_equip(mob/living/carbon/human/H)
+	. = ..()
+	get_solfed_marine_access(H)
+
+/datum/outfit/job/solfed/marine/pilot
+	name = "SolFed - Schwerer Roboterpilot"
+	jobtype = /datum/job/officer
+	job_icon = "sonnensoldner"
+
+	head = /obj/item/clothing/head/solfed/cap
 	glasses = /obj/item/clothing/glasses/sunglasses
 	suit = /obj/item/clothing/suit/jacket/leather
 
-//										//
-//	SOLAR FEDERATION - LIGHTNING BOLT	//
-//										//
-
-/datum/outfit/job/solgov/bolt/captain
-	name = "SolFed Bolt - Captain"
+/datum/outfit/job/solfed/captain
+	name = "SolFed - Kommandant"
 	jobtype = /datum/job/captain
-	job_icon = "solgovrepresentative"
+	job_icon = "solgovrepresentative" // idk
+	id = /obj/item/card/id/solfed/commander
+	gloves = /obj/item/clothing/gloves/combat/solfed/captain
+	ears = /obj/item/radio/headset/solgov/alt/captain
+	uniform =  /obj/item/clothing/under/solfed/formal
+	shoes = /obj/item/clothing/shoes/laceup
+	head = /obj/item/clothing/head/solfed/beret
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 
-	uniform = /obj/item/clothing/under/solfed
-	shoes = /obj/item/clothing/shoes/combat
-	backpack = /obj/item/storage/backpack/ert/engineer
-	id = /obj/item/card/id/solgov
+	backpack = /obj/item/storage/backpack/solfed
+	satchel = /obj/item/storage/backpack/satchel/solfed
+	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
+	courierbag = /obj/item/storage/backpack/messenger/com
 
-/datum/outfit/job/solgov/bolt/captain/post_equip(mob/living/carbon/human/H)
+	accessory = /obj/item/clothing/accessory/medal/gold/captain
+
+/datum/outfit/job/solfed/captain/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_captain_access(H)
 
-/datum/outfit/job/solgov/bolt/bureaucrat
-	name = "SolFed Bolt - Bureaucrat"
+/datum/outfit/job/solfed/captain/admiral
+	name = "SolFed - Flottenadmiral"
+	jobtype = /datum/job/captain
+	job_icon = "solgovrepresentative"
+
+	suit = /obj/item/clothing/suit/armor/solfed/formal
+
+	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/captain)
+
+/datum/outfit/job/solfed/sergeant
+	name = "SolFed - Feldwebel"
+	jobtype = /datum/job/captain
+	job_icon = "solgovrepresentative"
+
+	uniform = /obj/item/clothing/under/solfed/camo
+	shoes = /obj/item/clothing/shoes/combat
+	backpack = /obj/item/storage/backpack/ert/engineer
+	id = /obj/item/card/id/solfed
+
+/datum/outfit/job/solfed/sergeant/post_equip(mob/living/carbon/human/H)
+	. = ..()
+	get_solfed_head_access(H)
+
+/datum/outfit/job/solfed/hop
+	name = "SolFed - Personalvorgesetzter"
 	jobtype = /datum/job/head_of_personnel
 	job_icon = "headofpersonnel"
 
+	id = /obj/item/card/id/solfed/commander
 	uniform = /obj/item/clothing/under/solfed
-	shoes = /obj/item/clothing/shoes/combat
-	backpack = /obj/item/storage/backpack/ert/engineer
-	id = /obj/item/card/id/solgov
+	shoes = /obj/item/clothing/shoes/laceup
 
-/datum/outfit/job/solgov/bolt/bureaucrat/post_equip(mob/living/carbon/human/H)
+	backpack = /obj/item/storage/backpack/solfed
+	satchel = /obj/item/storage/backpack/satchel/solfed
+	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
+	courierbag = /obj/item/storage/backpack/messenger/com
+
+/datum/outfit/job/solfed/hop/post_equip(mob/living/carbon/human/H)
 	. = ..()
-	get_solfed_overseer_access(H)
+	get_solfed_head_access(H)
 
-/datum/outfit/job/solgov/bolt/security
-	name = "SolFed Bolt - Security"
-	jobtype = /datum/job/officer
-	job_icon = "security"
-
-	uniform = /obj/item/clothing/under/solfed
-	shoes = /obj/item/clothing/shoes/combat
-	backpack = /obj/item/storage/backpack/ert/engineer
-	id = /obj/item/card/id/solgov
-
-/datum/outfit/job/solgov/bolt/security/post_equip(mob/living/carbon/human/H)
-	. = ..()
-	get_solfed_sonnensoldner_access(H)
-
-/datum/outfit/job/solgov/bolt/medic
-	name = "SolFed Bolt - Medic"
+/datum/outfit/job/solfed/doctor
+	name = "SolFed - Meeresarzt"
 	jobtype = /datum/job/paramedic
 	job_icon = "medicaldoctor"
 
-	uniform = /obj/item/clothing/under/solfed
-	shoes = /obj/item/clothing/shoes/combat
-	backpack = /obj/item/storage/backpack/ert/engineer
-	id = /obj/item/card/id/solgov
+	id = /obj/item/card/id/solfed
+	uniform = /obj/item/clothing/under/solfed/medical
+	shoes = /obj/item/clothing/shoes/laceup
+	head = /obj/item/clothing/head/solfed/surgical
 
-/datum/outfit/job/solgov/bolt/medic/post_equip(mob/living/carbon/human/H)
+	backpack = /obj/item/storage/backpack/solfed
+	satchel = /obj/item/storage/backpack/satchel/solfed
+	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
+
+/datum/outfit/job/solfed/doctor/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_engineer_access(H)
 
-/datum/outfit/job/solgov/bolt/engineer
-	name = "SolFed Bolt - Engineer"
+/datum/outfit/job/solfed/engineer
+	name = "SolFed - Marinemechaniker"
 	jobtype = /datum/job/engineer
 	job_icon = "stationengineer"
 
-	uniform = /obj/item/clothing/under/solfed
-	shoes = /obj/item/clothing/shoes/combat
-	backpack = /obj/item/storage/backpack/ert/engineer
-	id = /obj/item/card/id/solgov
+	id = /obj/item/card/id/solfed
+	uniform = /obj/item/clothing/under/solfed/industrial
+	shoes = /obj/item/clothing/shoes/workboots
+	head = /obj/item/clothing/head/hardhat/solfed
+	belt = /obj/item/storage/belt/utility/full/engi
 
-/datum/outfit/job/solgov/bolt/engineer/post_equip(mob/living/carbon/human/H)
+	backpack = /obj/item/storage/backpack/solfed
+	satchel = /obj/item/storage/backpack/satchel/solfed
+	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
+
+/datum/outfit/job/solfed/engineer/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_engineer_access(H)
 
+/datum/outfit/job/solfed/assistant
+	name = "SolFed - Gehilfe"
+	jobtype = /datum/job/assistant
+	job_icon = "assistant"
+
+	id = /obj/item/card/id/solfed
+	uniform = /obj/item/clothing/under/solfed/assistant
+	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/solfed/cap
+
+	backpack = /obj/item/storage/backpack/solfed
+	satchel = /obj/item/storage/backpack/satchel/solfed
+	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
+
+/datum/outfit/job/solfed/miner
+	name = "SolFed - Contract Miner"
+	jobtype = /datum/job/mining
+	job_icon = "stationminer"
+
+	id = /obj/item/card/id/solfed
+	uniform = /obj/item/clothing/under/solfed/industrial
+	shoes = /obj/item/clothing/shoes/workboots
+	head = /obj/item/clothing/head/hardhat/solfed
+	belt = /obj/item/storage/belt/mining
+
+	backpack = /obj/item/storage/backpack/solfed
+	satchel = /obj/item/storage/backpack/satchel/solfed
+	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
+
+/datum/outfit/job/solfed/miner/post_equip(mob/living/carbon/human/H)
+	. = ..()
+	get_solfed_general_access(H)
+
+/datum/outfit/job/solfed/quartermaster
+	name = "SolFed - Logistikbeauftragter"
+	jobtype = /datum/job/qm
+	job_icon = "quartermaster"
+
+	id = /obj/item/card/id/solfed/commander
+	uniform = /obj/item/clothing/under/solfed
+	head = /obj/item/clothing/head/solfed/beret
+	shoes = /obj/item/clothing/shoes/laceup
+	suit = /obj/item/clothing/suit/solgov/overcoat
+
+	backpack = /obj/item/storage/backpack/solfed
+	satchel = /obj/item/storage/backpack/satchel/solfed
+	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
+	courierbag = /obj/item/storage/backpack/messenger/com
+/datum/outfit/job/solfed/miner/post_equip(mob/living/carbon/human/H)
+	. = ..()
+	get_solfed_general_access(H)
+
+
+
 //							///
-//		Elysium on solgov	///
+//		Elysium Brigade 	///
 //							///
 
 //	Капитан	//
-/datum/outfit/job/solgov/captain/elysium_celadon
-	name = "SolGov - Elysium Musharif"
+/datum/outfit/job/solfed/captain/elysium
+	name = "SolFed - Elysium Musharif"
 
-	head = /obj/item/clothing/head/solfed/elysium/beret
-	uniform = /obj/item/clothing/under/solgov/elysium
-	suit = /obj/item/clothing/suit/armor/solfed/elysium/jacket
+	head = /obj/item/clothing/head/solfed/beret/elysium
+	uniform = /obj/item/clothing/under/solfed/formal/elysium
+	suit = /obj/item/clothing/suit/armor/solfed/formal/elysium
 	shoes = /obj/item/clothing/shoes/combat
 	ears = /obj/item/radio/headset/solgov/alt/captain
-	id = /obj/item/card/id/solgov
+	id = /obj/item/card/id/solfed/commander
 	backpack = /obj/item/storage/backpack/messenger/com
 	gloves = null
 
-/datum/outfit/job/solgov/captain/elysium_celadon/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/solfed/captain/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_captain_access(H)
 
 //	Хос	//
-/datum/outfit/job/solgov/overseer/elysium_celadon
-	name = "SolGov - Elysium Mulazim"
+/datum/outfit/job/solfed/sergeant/elysium
+	name = "SolFed - Elysium Mulazim"
 
-	head = /obj/item/clothing/head/solfed/elysium/beret
-	uniform = /obj/item/clothing/under/solgov/elysium
-	suit = /obj/item/clothing/suit/armor/solfed/elysium/jacket
+	head = /obj/item/clothing/head/solfed/beret/elysium
+	uniform = /obj/item/clothing/under/solfed/camo/elysium
+	suit = /obj/item/clothing/suit/armor/solfed/formal/elysium
 	shoes = /obj/item/clothing/shoes/combat
 	ears = /obj/item/radio/headset/solgov/alt
-	id = /obj/item/card/id/solgov
+	id = /obj/item/card/id/solfed
 	neck = null
 
-/datum/outfit/job/solgov/overseer/elysium_celadon/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/solfed/sergeant/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
-	get_solfed_overseer_access(H)
+	get_solfed_head_access(H)
 
 //	Офицер	//
-/datum/outfit/job/solgov/sonnensoldner/elysium_celadon
-	name = "SolGov - Elysium Haris"
+/datum/outfit/job/solfed/marine/elysium
+	name = "SolFed - Elysium Haris"
 
-	id = /obj/item/card/id/solgov/elysium
+	id = /obj/item/card/id/solfed
 	head = null
 	suit = null
 	gloves = null
 	shoes = /obj/item/clothing/shoes/combat
-	uniform = /obj/item/clothing/under/solfed/elysium
+	uniform = /obj/item/clothing/under/solfed/camo/elysium
 
-/datum/outfit/job/solgov/sonnensoldner/elysium_celadon/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/solfed/marine/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
-	get_solfed_sonnensoldner_access(H)
+	get_solfed_marine_access(H)
 
 //	медик	//
-/datum/outfit/job/solgov/doctor/elysium_celadon
-	name = "SolGov - Elysium Shafi"
+/datum/outfit/job/solfed/doctor/elysium
+	name = "SolFed - Elysium Shafi"
 
-	id = /obj/item/card/id/solgov/elysium
+	id = /obj/item/card/id/solfed
 	head = null
 	suit = null
 	gloves = null
 	shoes = /obj/item/clothing/shoes/combat
-	uniform = /obj/item/clothing/under/solfed/elysium
+	uniform = /obj/item/clothing/under/solfed/camo/elysium
 
-/datum/outfit/job/solgov/doctor/elysium_celadon/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/solfed/doctor/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_engineer_access(H)
 
 //	Инженер	//
-/datum/outfit/job/solgov/engineer/elysium_celadon
-	name = "SolGov - Elysium Khabeer Fanni"
+/datum/outfit/job/solfed/engineer/elysium
+	name = "SolFed - Elysium Khabeer Fanni"
 
-	id = /obj/item/card/id/solgov/elysium
+	id = /obj/item/card/id/solfed
 	head = null
 	suit = null
 	gloves = null
+	belt = /obj/item/storage/belt/utility/full/engi
 	shoes = /obj/item/clothing/shoes/combat
-	uniform = /obj/item/clothing/under/solfed/elysium
+	uniform = /obj/item/clothing/under/solfed/camo/elysium
 
-/datum/outfit/job/solgov/engineer/elysium_celadon/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/solfed/engineer/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_engineer_access(H)

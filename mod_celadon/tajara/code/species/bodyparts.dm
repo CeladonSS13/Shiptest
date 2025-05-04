@@ -8,7 +8,7 @@
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_TAJARA
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID
+	bodytype = BODYTYPE_TAJARA | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID | BODYTYPE_SNOUT
 
 /obj/item/bodypart/chest/tajara
 	icon = 'mod_celadon/_storge_icons/icons/tajara/tajara_bodyparts.dmi'

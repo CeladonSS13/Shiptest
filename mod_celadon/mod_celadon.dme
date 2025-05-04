@@ -24,7 +24,6 @@
 #include "overmap/_overmap.dme"
 #include "qol/_qol.dme"
 #include "radio_syndicate/_radio_syndicate.dme"
-#include "repairs_other/_repairs_other.dme"
 #include "subtler/_subtler.dme"
 #include "overload/_overload.dme"
 #include "clumsy_table/_clumsy_table.dme"
@@ -42,8 +41,8 @@
 #include "barsigns/_barsigns.dme"
 #include "boarding/_boarding.dme"
 #include "bongs/_bongs.dme"
-#include "cargopad/_cargopad.dme"
 #include "celadon_old_syndicate_rigs/_celadon_old_syndicate_rigs.dme"
+#include "celadon_modsuits/celadon_modsuits.dme"
 #include "effects/_effects.dme"
 #include "elysiumpod/_elysiumpod.dme"
 #include "flora/_flora.dme"
@@ -52,12 +51,11 @@
 #include "large_doors/_large_doors.dme"
 #include "mechas/_mechas.dme"
 #include "moniq/_moniq.dme"
-#include "musician/_musician.dme"
 #include "outpost_console/_outpost_console.dme"
+#include "paperwork/_paperwork.dme"
 #include "neon_pack/_neon_pack.dme"
 #include "pizzamat/_pizzamat.dme"
-#include "repair_weebstick/_repair_weebstick.dme"
-#include "research/_research.dme"
+#include "plushes_vending/_plushes_vending.dme"
 #include "riol/_riol.dme"
 #include "sauna/_sauna.dme"
 #include "stamps/_stamps.dme"
@@ -65,11 +63,17 @@
 #include "tajara/_tajara.dme"
 #include "turrets/_turrets.dme"
 #include "weapons/_weapons.dme"
+#include "inteq_vendor/inteq_vendor.dme"
+#include "rnd/_rnd.dme"
+#include "rus_labeler/_rus_labeler.dme"
+#include "helmet_seclite/_helmet_seclite.dme"
+#include "vending_cash/_vending_cash.dme"
 
 // --- MOBS --- //
 #include "drakeborgs/_drakeborgs.dme"
 #include "lanius/_lanius.dme"
 #include "mobs/_mobs.dme"
+#include "silicon/_silicon.dme"
 
 // --- MISC --- //
 #include "ai_laws/_ai_laws.dme"
@@ -84,8 +88,11 @@
 #include "survey_handheld/_survey_handheld.dme"
 
 // --- RETURNS --- //
-#include "crusher_trophy/_crusher_trophy.dme"
-#include "return_content/_return_content.dme"
+#include "return_content_clowns/_return_content_clowns.dme"
+#include "return_content_crusher_trophy/_return_content_crusher_trophy.dme"
+#include "return_combat_shotgun/_return_combat_shotgun.dme"
+#include "return_content_ipc/_return_content_ipc.dme"
+#include "return_content_spawn/_return_content_spawn.dme"
 
 // --- DONATORS --- //
 #include "donaters/_donaters.dme"
@@ -94,11 +101,11 @@
 #include "maps/_configs.dme"
 
 // --- OUTFIT --- //
-#include "outfit\_outfit.dme"
+#include "outfit/_outfit.dme"
 
 // --- ПОСЛЕДНЯЯ ИНСТАНЦИЯ (BALANCE) --- //
 // Тут собраны модпаки, что будут применяться на все и вся. Поэтому они собраны тут
-#include "economy\_economy.dme"
+#include "economy/_economy.dme"
 
 
 

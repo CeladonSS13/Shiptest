@@ -94,6 +94,12 @@ ID мода: CELADON_ACCESS
 - 'define ACCESS_OUTPOST_FACTION_SOLFED			8132'
 - 'define ACCESS_OUTPOST_FACTION_INTEQ			8133'
 - 'define ACCESS_OUTPOST_FACTION_SEPARATISTS	8134'
+
+- '#define ACCESS_INTEQ_GENERAL 				8484'
+- '#define ACCESS_INTEQ_SECURITY 				8485'
+- '#define ACCESS_INTEQ_CAPTAIN 				8486'
+
+- '#define FACTION_PLAYER_ELYSIUM "playerElysium"'
 <!--
   Если требовалось добавить какие-либо дефайны, укажи файлы,
   в которые ты их добавил, а также перечисли имена.

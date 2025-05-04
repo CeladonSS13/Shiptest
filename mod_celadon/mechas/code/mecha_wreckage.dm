@@ -65,6 +65,11 @@
 	icon = 'mod_celadon/_storge_icons/icons/mecha.dmi'
 	icon_state = "aluminizer-broken"
 
+/obj/structure/mecha_wreckage/ripley/nanotrasen
+	name = "\improper Privatizer wreckage"
+	icon = 'mod_celadon/_storge_icons/icons/mecha.dmi'
+	icon_state = "ntripley-broken"
+
 //блядские гигаксы
 
 /obj/structure/mecha_wreckage/gygax/white

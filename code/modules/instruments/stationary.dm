@@ -42,7 +42,7 @@
 
 /obj/structure/musician/piano/Initialize(mapload)
 	. = ..()
-	// [CELADON-EDIT] - CELADON_MUSICIAN
+	// [CELADON-EDIT] - CELADON_RESPRITE
 	// if(prob(50) && icon_state == initial(icon_state))
 	// 	name = "space minimoog"
 	// 	desc = "This is a minimoog, like a space piano, but more spacey!"

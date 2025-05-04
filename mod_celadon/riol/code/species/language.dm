@@ -1,10 +1,10 @@
 /datum/language_holder/riol
 	understood_languages = list(
-		/datum/language/common = list(LANGUAGE_ATOM),
+		/datum/language/galactic_common = list(LANGUAGE_ATOM),
 		/datum/language/canilunzt = list(LANGUAGE_ATOM),
 	)
 	spoken_languages = list(
-		/datum/language/common = list(LANGUAGE_ATOM),
+		/datum/language/galactic_common = list(LANGUAGE_ATOM),
 		/datum/language/canilunzt = list(LANGUAGE_ATOM),
 	)
 

@@ -394,7 +394,7 @@
 /obj/item/seeds/plump,
 /obj/item/seeds/poppy,
 /obj/item/seeds/potato,
-/obj/item/seeds/potato/sweet,
+/obj/item/seeds/potato,
 /obj/item/seeds/pumpkin,
 /obj/item/seeds/redbeet,
 /obj/item/seeds/seaweed,
@@ -1188,9 +1188,7 @@
 /obj/structure/bed{
 	dir = 1
 	},
-/obj/item/bedsheet/dorms{
-	dir = 1
-	},
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/cloth/grey,
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -1598,7 +1596,7 @@
 	name = "Remy's bed";
 	anchored = 1
 	},
-/mob/living/simple_animal/mouse/gray{
+/mob/living/basic/mouse/gray{
 	name = "Remy"
 	},
 /turf/open/floor/wood/mahogany,
@@ -2586,7 +2584,7 @@
 /turf/open/floor/carpet/nanoweave,
 /area/ship/crew/cryo)
 "Hj" = (
-/obj/machinery/power/solar_control{
+/obj/machinery/computer/solar_control{
 	dir = 8
 	},
 /obj/structure/cable/orange{

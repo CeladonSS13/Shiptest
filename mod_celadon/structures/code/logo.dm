@@ -2,6 +2,7 @@
 	icon = 'mod_celadon/_storge_icons/icons/structures/elysium_logo.dmi'
 	name = "elysium logo"
 	icon_state = "22"
+	alpha = 170
 
 /obj/effect/turf_decal/elysium_logo/one_one
 	icon_state = "11"

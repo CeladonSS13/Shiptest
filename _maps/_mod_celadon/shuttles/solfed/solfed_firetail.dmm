@@ -846,7 +846,8 @@
 /area/ship/crew/cryo)
 "hr" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 5
+	dir = 5;
+	id = "firetail_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -1097,7 +1098,8 @@
 /obj/machinery/porta_turret/ship/solfed/heavy{
 	dir = 10;
 	pixel_x = 0;
-	pixel_y = 32
+	pixel_y = 32;
+	id = "firetail_turrets"
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
@@ -1286,10 +1288,11 @@
 /area/ship/crew/cryo)
 "kV" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 8
+	dir = 8;
+	id = "firetail_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
-/area/ship/engineering/communications)
+/area/ship/bridge)
 "lb" = (
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line,
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/corner{
@@ -2045,12 +2048,6 @@
 	},
 /turf/open/floor/marble/black,
 /area/ship/crew/dorm)
-"rO" = (
-/obj/docking_port/stationary{
-	dir = 8
-	},
-/turf/open/floor/engine/hull/reinforced,
-/area/ship/external)
 "sa" = (
 /obj/structure/bed{
 	dir = 8
@@ -2239,7 +2236,7 @@
 /obj/item/clothing/suit/space/hardsuit/solgov{
 	slowdown = 0.1;
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 25, "energy" = 20, "bomb" = 60, "bio" = 100, "rad" = 60, "fire" = 90, "acid" = 75);
-	name = "lightweight SolGov hardsuit";
+	name = "lightweight SolFed hardsuit";
 	desc = "A lightly armored spaceproof suit. A powered exoskeleton keeps the suit light and mobile. This one is specially issued to SolFed Expeditionary Corps, and is designed to be even more mobile that its' twin brother."
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -2752,7 +2749,7 @@
 /obj/item/clothing/suit/space/hardsuit/solgov{
 	slowdown = 0.1;
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 25, "energy" = 20, "bomb" = 60, "bio" = 100, "rad" = 60, "fire" = 90, "acid" = 75);
-	name = "lightweight SolGov hardsuit";
+	name = "lightweight SolFed hardsuit";
 	desc = "A lightly armored spaceproof suit. A powered exoskeleton keeps the suit light and mobile. This one is specially issued to SolFed Expeditionary Corps, and is designed to be even more mobile that its' twin brother."
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -2929,12 +2926,6 @@
 /obj/item/clothing/suit/armor/solgov_trenchcoat,
 /turf/open/floor/marble/black,
 /area/ship/crew/dorm/captain)
-"Aj" = (
-/obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 5
-	},
-/turf/closed/wall/mineral/titanium,
-/area/ship/crew/office)
 "AF" = (
 /obj/structure/curtain/bounty,
 /obj/structure/bed{
@@ -2979,12 +2970,6 @@
 "AR" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/engineering/communications)
-"AT" = (
-/obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 6
-	},
-/turf/closed/wall/mineral/titanium,
-/area/ship/crew/dorm/captain)
 "AY" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -3072,7 +3057,7 @@
 /area/ship/medical)
 "BG" = (
 /obj/effect/landmark/subship{
-	subship_template = /datum/map_template/shuttle/subshuttles/solfed_vespa
+	subship_template = /datum/map_template/shuttle/subshuttles/vespa
 	},
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/hangar)
@@ -3429,21 +3414,6 @@
 	},
 /turf/open/floor/marble/black,
 /area/ship/crew/dorm/captain)
-"Er" = (
-/obj/machinery/power/floodlight{
-	anchored = 1
-	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
-/obj/docking_port/mobile{
-	dir = 4;
-	name = "hunter shuttle";
-	port_direction = 2;
-	preferred_direction = 4
-	},
-/turf/open/floor/engine/hull/reinforced,
-/area/ship/external)
 "Ev" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -3451,7 +3421,8 @@
 /obj/machinery/porta_turret/ship/solfed/heavy{
 	dir = 9;
 	pixel_x = 0;
-	pixel_y = -32
+	pixel_y = -32;
+	id = "firetail_turrets"
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
@@ -3489,17 +3460,18 @@
 /obj/item/clothing/suit/space/hardsuit/solgov{
 	slowdown = 0.1;
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 25, "energy" = 20, "bomb" = 60, "bio" = 100, "rad" = 60, "fire" = 90, "acid" = 75);
-	name = "lightweight SolGov hardsuit";
+	name = "lightweight SolFed hardsuit";
 	desc = "A lightly armored spaceproof suit. A powered exoskeleton keeps the suit light and mobile. This one is specially issued to SolFed Expeditionary Corps, and is designed to be even more mobile that its' twin brother."
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/science/storage)
 "EW" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 10
+	dir = 10;
+	id = "firetail_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
-/area/ship/engineering/electrical)
+/area/ship/bridge)
 "Fa" = (
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 1
@@ -3634,7 +3606,10 @@
 /area/ship/hangar)
 "GA" = (
 /obj/structure/cable{
-	icon_state = "1-4"
+	icon_state = "0-4"
+	},
+/obj/machinery/power/floodlight{
+	anchored = 1
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
@@ -4147,11 +4122,8 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/engineering/electrical)
 "LS" = (
-/obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 8
-	},
 /turf/closed/wall/mineral/titanium,
-/area/ship/medical)
+/area/ship/bridge)
 "LU" = (
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -4280,7 +4252,8 @@
 /area/ship/bridge)
 "MX" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 6
+	dir = 6;
+	id = "firetail_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -4377,11 +4350,15 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/electrical)
 "Oc" = (
-/obj/structure/cable{
-	icon_state = "2-4"
+/obj/docking_port/stationary{
+	height = 15;
+	width = 30;
+	dwidth = 15;
+	name = "main ember dock";
+	dir = 8
 	},
-/turf/open/floor/engine/hull/reinforced,
-/area/ship/external)
+/turf/template_noop,
+/area/template_noop)
 "On" = (
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 1
@@ -4403,13 +4380,11 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
 "Os" = (
-/obj/machinery/power/floodlight{
-	anchored = 1
-	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
+/obj/docking_port/mobile{
+	dir = 4;
+	name = "hunter shuttle";
+	port_direction = 2;
+	preferred_direction = 4
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
@@ -5145,10 +5120,11 @@
 /area/ship/science/storage)
 "Vm" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 9
+	dir = 9;
+	id = "firetail_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
-/area/ship/science/storage)
+/area/ship/bridge)
 "Vp" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -5271,7 +5247,7 @@
 /obj/item/clothing/suit/space/hardsuit/solgov{
 	slowdown = 0.1;
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 25, "energy" = 20, "bomb" = 60, "bio" = 100, "rad" = 60, "fire" = 90, "acid" = 75);
-	name = "lightweight SolGov hardsuit";
+	name = "lightweight SolFed hardsuit";
 	desc = "A lightly armored spaceproof suit. A powered exoskeleton keeps the suit light and mobile. This one is specially issued to SolFed Expeditionary Corps, and is designed to be even more mobile that its' twin brother."
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -5327,6 +5303,11 @@
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 8
 	},
+/obj/machinery/turretid/ship{
+	pixel_x = -29;
+	pixel_y = 1;
+	id = "firetail_turrets"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "WZ" = (
@@ -5338,7 +5319,7 @@
 /obj/item/clothing/suit/space/hardsuit/solgov{
 	slowdown = 0.1;
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 25, "energy" = 20, "bomb" = 60, "bio" = 100, "rad" = 60, "fire" = 90, "acid" = 75);
-	name = "lightweight SolGov hardsuit";
+	name = "lightweight SolFed hardsuit";
 	desc = "A lightly armored spaceproof suit. A powered exoskeleton keeps the suit light and mobile. This one is specially issued to SolFed Expeditionary Corps, and is designed to be even more mobile that its' twin brother."
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -5460,8 +5441,8 @@
 	req_access_txt = "1";
 	req_ship_access = 1
 	},
-/obj/item/energyhalberd/blue,
-/obj/item/energyhalberd/blue,
+/obj/item/melee/duelenergy/halberd/blue,
+/obj/item/melee/duelenergy/halberd/blue,
 /turf/open/floor/marble/black,
 /area/ship/security)
 "Yg" = (
@@ -5474,7 +5455,8 @@
 /area/ship/science)
 "Yv" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 4
+	dir = 4;
+	id = "firetail_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/security)
@@ -5652,10 +5634,11 @@
 /area/ship/hangar)
 "ZB" = (
 /obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 4
+	dir = 4;
+	id = "firetail_turrets"
 	},
 /turf/closed/wall/mineral/titanium,
-/area/ship/crew/cryo)
+/area/ship/bridge)
 "ZQ" = (
 /turf/closed/wall/mineral/titanium,
 /area/ship/engineering/electrical)
@@ -5912,18 +5895,18 @@ aF
 aF
 aF
 aF
-Os
-GA
-Ef
-Ef
-Ef
-Ef
-Ef
-rO
-Ef
-Ef
+aF
+aF
+aF
+aF
+aF
 Oc
-Er
+aF
+aF
+aF
+aF
+aF
+aF
 aF
 aF
 aF
@@ -5951,20 +5934,20 @@ aF
 aF
 aF
 aF
-LS
+kV
 fj
 fj
 cY
-Mr
+GA
+Ef
+Ef
+Ef
+Os
 Ef
 Ef
 Ef
 Ef
-Ef
-Ef
-Ef
-Ef
-Mr
+GA
 cb
 uM
 uM
@@ -6080,7 +6063,7 @@ Nh
 IF
 Jw
 mV
-vr
+LS
 jK
 Ef
 Ef
@@ -6091,7 +6074,7 @@ Ef
 Ef
 Ef
 Ev
-fp
+LS
 Rk
 DA
 Ls
@@ -6111,7 +6094,7 @@ aF
 aF
 aF
 aF
-LS
+kV
 fj
 fj
 vr
@@ -6906,7 +6889,7 @@ Ag
 Uq
 "}
 (30,1,1) = {"
-Aj
+hr
 RS
 RS
 aF
@@ -6945,7 +6928,7 @@ aF
 aF
 Uq
 Uq
-AT
+MX
 "}
 (31,1,1) = {"
 aF

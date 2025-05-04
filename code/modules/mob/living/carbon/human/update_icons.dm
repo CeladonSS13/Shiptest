@@ -392,13 +392,24 @@ There are several things that need to be remembered:
 		/// Does this clothing need to be generated via greyscale?
 		var/handled_by_bodytype = FALSE
 
-		if((dna.species.bodytype & BODYTYPE_DIGITIGRADE) && ((I.supports_variations & DIGITIGRADE_VARIATION) || (I.supports_variations & DIGITIGRADE_VARIATION_SAME_ICON_FILE)))
-			var/obj/item/bodypart/leg = src.get_bodypart(BODY_ZONE_L_LEG)
-			if(leg.bodytype & BODYTYPE_DIGITIGRADE && !leg.plantigrade_forced)
-				icon_file = DIGITIGRADE_SHOES_PATH
-			if((I.supports_variations & DIGITIGRADE_VARIATION_SAME_ICON_FILE))
-				icon_file = I.mob_overlay_icon
-				target_overlay = "[target_overlay]_digi"
+		// [CELADON-EDIT] - CELADON_RESPRITE
+		// if((dna.species.bodytype & BODYTYPE_DIGITIGRADE) && ((I.supports_variations & DIGITIGRADE_VARIATION) || (I.supports_variations & DIGITIGRADE_VARIATION_SAME_ICON_FILE))) [CELADON-EDIT] - ORIGINAL
+		// 	var/obj/item/bodypart/leg = src.get_bodypart(BODY_ZONE_L_LEG)
+		// 	if(leg.bodytype & BODYTYPE_DIGITIGRADE && !leg.plantigrade_forced)
+		// 		icon_file = DIGITIGRADE_SHOES_PATH
+		// 	if((I.supports_variations & DIGITIGRADE_VARIATION_SAME_ICON_FILE))
+		// 		icon_file = I.mob_overlay_icon
+		// 		target_overlay = "[target_overlay]_digi"	// [/CELADON-EDIT] - ORIGINAL
+		// [/CELADON-EDIT]
+		var/obj/item/bodypart/leg_bodypart = src.get_bodypart(BODY_ZONE_L_LEG)
+		if(leg_bodypart.bodytype & BODYTYPE_DIGITIGRADE)
+			if(icon_exists(SARATHI_DIGITIGRADE_BOOTS_PATH, RESOLVE_ICON_STATE(I)))
+				icon_file = SARATHI_DIGITIGRADE_BOOTS_PATH
+				if(I.snout_override_icon)
+					icon_file = I.snout_override_icon
+			else
+				handled_by_bodytype = TRUE
+		// [CELADON-EDIT] - RESPRITES
 
 		else if(dna.species.bodytype & BODYTYPE_VOX)
 			if(I.supports_variations & VOX_VARIATION)
@@ -496,7 +507,7 @@ There are several things that need to be remembered:
 		/// Does this clothing need to be generated via greyscale?
 		var/handled_by_bodytype = FALSE
 
-		// [CELADON-EDIT] - RESPRITE
+		// [CELADON-EDIT] - CELADON_RESPRITE
 		// var/obj/item/bodypart/head_bodypart = src.get_bodypart(BODY_ZONE_HEAD) // CELADON-EDIT - ORIGINAL
 		// if((head_bodypart.bodytype & BODYTYPE_SNOUT) && (I.supports_variations & SNOUTED_VARIATION)) // CELADON-EDIT - ORIGINAL
 		// 	target_overlay = "[target_overlay]_snouted" // CELADON-EDIT - ORIGINAL
@@ -508,7 +519,7 @@ There are several things that need to be remembered:
 					icon_file = I.snout_override_icon
 			else
 				handled_by_bodytype = TRUE
-		// [CELADON-EDIT] - RESPRITES
+		// [CELADON-EDIT]
 
 
 		else if(dna.species.bodytype & BODYTYPE_VOX)
@@ -526,20 +537,6 @@ There are several things that need to be remembered:
 					icon_file = I.kepori_override_icon
 			else
 				handled_by_bodytype = TRUE
-
-		// [CELADON-ADD] - TAJARA, CELADON_RIOL
-		else if(dna.species.bodytype & BODYTYPE_TAJARA)
-			if(icon_exists(SARATHI_SNOUTED_HELM_PATH, RESOLVE_ICON_STATE(I)))
-				icon_file = SARATHI_SNOUTED_HELM_PATH
-			else
-				handled_by_bodytype = TRUE
-        
-		else if(dna.species.bodytype & BODYTYPE_RIOL)
-			if(icon_exists(SARATHI_SNOUTED_HELM_PATH, RESOLVE_ICON_STATE(I)))
-				icon_file = SARATHI_SNOUTED_HELM_PATH
-			else
-				handled_by_bodytype = TRUE    
-		// [/CELADON-ADD]
 
 		if(!(icon_exists(icon_file, RESOLVE_ICON_STATE(I))))
 			handled_by_bodytype = TRUE
@@ -627,11 +624,24 @@ There are several things that need to be remembered:
 		/// Does this clothing need to be generated via greyscale?
 		var/handled_by_bodytype = FALSE
 
-		if((dna.species.bodytype & BODYTYPE_DIGITIGRADE) && ((I.supports_variations & DIGITIGRADE_VARIATION) || (I.supports_variations & DIGITIGRADE_VARIATION_SAME_ICON_FILE)))
-			icon_file = DIGITIGRADE_SUIT_PATH
-			if((I.supports_variations & DIGITIGRADE_VARIATION_SAME_ICON_FILE))
-				icon_file = I.mob_overlay_icon
-				target_overlay = "[target_overlay]_digi"
+		// [CELADON - EDIT] - CELADON_RESPRITE
+		// if((dna.species.bodytype & BODYTYPE_DIGITIGRADE) && ((I.supports_variations & DIGITIGRADE_VARIATION) || (I.supports_variations & DIGITIGRADE_VARIATION_SAME_ICON_FILE))) [CELADON - EDIT] - ORIGINAL
+		// 	icon_file = DIGITIGRADE_SUIT_PATH
+		// 	if((I.supports_variations & DIGITIGRADE_VARIATION_SAME_ICON_FILE))
+		// 		icon_file = I.mob_overlay_icon
+		// 		target_overlay = "[target_overlay]_digi" [/CELADON - EDIT] - ORIGINAL
+		if(dna.species.bodytype & BODYTYPE_DIGITIGRADE)
+			if(ITEM_SLOT_OCLOTHING)
+				if(icon_exists(SARATHI_DIGITIGRADE_SUIT_PATH, RESOLVE_ICON_STATE(I)) )
+					icon_file = SARATHI_DIGITIGRADE_SUIT_PATH
+				else
+					handled_by_bodytype = TRUE
+			else if(ITEM_SLOT_ICLOTHING)
+				if(icon_exists(SARATHI_DIGITIGRADE_UNDER_PATH, RESOLVE_ICON_STATE(I)) )
+					icon_file = SARATHI_DIGITIGRADE_UNDER_PATH
+				else
+					handled_by_bodytype = TRUE
+		// [/CELADON - EDIT]
 
 		else if(dna.species.bodytype & BODYTYPE_VOX)
 			if(I.supports_variations & VOX_VARIATION)
@@ -648,20 +658,6 @@ There are several things that need to be remembered:
 					icon_file = I.kepori_override_icon
 			else
 				handled_by_bodytype = TRUE
-
-		// [CELADON-ADD] - TAJARA, CELADON_RIOL
-		else if(dna.species.bodytype & BODYTYPE_TAJARA)
-			if(icon_exists(TAJARA_SUIT_PATH, RESOLVE_ICON_STATE(I)))
-				icon_file = TAJARA_SUIT_PATH
-			else
-				handled_by_bodytype = TRUE
-        
-		else if(dna.species.bodytype & BODYTYPE_RIOL)
-			if(icon_exists(TAJARA_SUIT_PATH, RESOLVE_ICON_STATE(I)))
-				icon_file = TAJARA_SUIT_PATH
-			else
-				handled_by_bodytype = TRUE
-		// [/CELADON-ADD]
 
 		if(!(icon_exists(icon_file, RESOLVE_ICON_STATE(I))))
 			handled_by_bodytype = TRUE
@@ -726,7 +722,7 @@ There are several things that need to be remembered:
 		var/handled_by_bodytype = FALSE
 
 		if(!(ITEM_SLOT_MASK in check_obscured_slots()))
-			// [CELADON-EDIT] - RESPRITE
+			// [CELADON-EDIT] - CELADON_RESPRITE
 			// var/obj/item/bodypart/head_bodypart = src.get_bodypart(BODY_ZONE_HEAD) // CELADON-EDIT - ORIGINAL
 			// if((head_bodypart.bodytype & BODYTYPE_SNOUT) && (I.supports_variations & SNOUTED_VARIATION)) // CELADON-EDIT - ORIGINAL
 			// 	target_overlay = "[target_overlay]_snouted" // CELADON-EDIT - ORIGINAL
@@ -734,8 +730,6 @@ There are several things that need to be remembered:
 			if(head_bodypart.bodytype & BODYTYPE_SNOUT)
 				if(icon_exists(SARATHI_SNOUTED_MASK_PATH, RESOLVE_ICON_STATE(I)))
 					icon_file = SARATHI_SNOUTED_MASK_PATH
-					if(I.snout_override_icon)
-						icon_file = I.snout_override_icon
 				else
 					handled_by_bodytype = TRUE
 			// [CELADON-EDIT]
@@ -758,21 +752,6 @@ There are several things that need to be remembered:
 						icon_file = I.kepori_override_icon
 				else
 					handled_by_bodytype = TRUE
-
-			// [CELADON-ADD] - TAJARA, CELADON_RIOL
-			else if(dna.species.bodytype & BODYTYPE_TAJARA)
-				if(icon_exists(SARATHI_SNOUTED_MASK_PATH, RESOLVE_ICON_STATE(I)))
-					icon_file = SARATHI_SNOUTED_MASK_PATH
-				else
-					handled_by_bodytype = TRUE
-
-			else if(dna.species.bodytype & BODYTYPE_RIOL)
-				if(icon_exists(SARATHI_SNOUTED_MASK_PATH, RESOLVE_ICON_STATE(I)))
-					icon_file = SARATHI_SNOUTED_MASK_PATH
-				else
-					handled_by_bodytype = TRUE
-			// [/CELADON-ADD]
-
 
 			if(!(icon_exists(icon_file, RESOLVE_ICON_STATE(I))))
 				icon_file = DEFAULT_MASK_PATH
@@ -822,12 +801,12 @@ There are several things that need to be remembered:
 					handled_by_bodytype = TRUE
 
 			else if(dna.species.bodytype & BODYTYPE_KEPORI)
-//				if(I.supports_variations & KEPORI_VARIATION)
-//					icon_file = KEPORI_NECK_PATH
-//					if(I.kepoi_override_icon)
-//						icon_file = I.kepoi_override_icon
-//				else
-				handled_by_bodytype = TRUE
+				if(I.supports_variations & KEPORI_VARIATION)
+					icon_file = KEPORI_NECK_PATH
+					if(I.kepori_override_icon)
+						icon_file = I.kepori_override_icon
+				else
+					handled_by_bodytype = TRUE
 
 			if(!(icon_exists(icon_file, RESOLVE_ICON_STATE(I))))
 				handled_by_bodytype = TRUE

@@ -7,7 +7,7 @@
 				timeLeft = (CONFIG_GET(number/lobby_countdown) * 10)		WS Edit - Countdown after init */
 			for(var/client/C in GLOB.clients)
 				window_flash(C, ignorepref = TRUE) //let them know lobby has opened up.
-			to_chat(world, "<span class='boldnotice'>Добро пожаловать на [station_name()]!</span>")
+			to_chat(world, span_boldnotice("Добро пожаловать на [station_name()]!"))
 			if(CONFIG_GET(string/servername) == "\[RU] Celadon Shiptest: Alpha")
 				send2chat("<@&1100202952943218738>, запущен новый раунд на сервере: **" + CONFIG_GET(string/servername) + "**!", CONFIG_GET(string/chat_announce_new_game))
 			if(CONFIG_GET(string/servername) == "\[RU] Celadon Shiptest: Beta")

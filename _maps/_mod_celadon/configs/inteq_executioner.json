@@ -1,0 +1,50 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Executioner-class Laser Experiment",
+	"map_short_name": "Executioner",
+	"description": "Боевой фрегат класса Палач. Данный корабль обладает большим количеством лазерного вооружения из-за кооперации с Нанотрейзен при создании данного корабля.",
+	"map_path": "_maps/_mod_celadon/shuttles/inteq/inteq_executioner.dmm",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 4,
+	"prefix": "IRMV",
+	"faction": "/datum/faction/inteq",
+	"tags": [
+		"Combat",
+		"Riot"
+	],
+	"namelists": [
+		"MYTHOLOGICAL",
+		"BEASTS",
+		"NATURAL_AGGRESSIVE",
+		"INTEQ"
+	],
+	"job_slots": {
+		"Vanguard": {
+			"outfit": "/datum/outfit/job/inteq/captain/celadon",
+			"officer": true,
+			"slots": 1
+		},
+		"Master At Arms": {
+			"outfit": "/datum/outfit/job/inteq/warden/celadon",
+			"officer": true,
+			"slots": 1
+		},
+		"Artificer": {
+			"outfit": "/datum/outfit/job/inteq/engineer/celadon",
+			"slots": 1
+		},
+		"Corpsman": {
+			"outfit": "/datum/outfit/job/inteq/paramedic/celadon",
+			"slots": 2
+		},
+		"Enforcer": {
+			"outfit": "/datum/outfit/job/inteq/security/celadon",
+			"slots": 2
+		},
+		"Recruit": {
+			"outfit": "/datum/outfit/job/inteq/engineer/celadon",
+			"slots": 2
+		}
+	}
+}

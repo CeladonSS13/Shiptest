@@ -125,11 +125,14 @@ require only minor tweaks.
 
 #define ALLOCATION_FREE 1
 #define ALLOCATION_QUADRANT 2
+//Only used for unit testing at the moment, technically splits it into 16 but I didn't like the word for that
+#define ALLOCATION_OCTODRANT 3
 
 // [CELADON-EDIT] - CELADON_MAP_EXPANSION - Увеличиваем рамки аванпоста
 //#define QUADRANT_MAP_SIZE 127	// CELADON-EDIT -> ORIGINAL
 #define QUADRANT_MAP_SIZE 191
 // [/CELADON-EDIT]
+#define OCTODRANT_MAP_SIZE 63
 
 #define QUADRANT_SIZE_BORDER 3
 #define TRANSIT_SIZE_BORDER 3

@@ -104,6 +104,10 @@
 	icon_state = "0-8"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/door/poddoor{
+	name = "Blast Door";
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/bridge)
 "ll" = (
@@ -298,7 +302,7 @@
 /area/ship/bridge)
 "SC" = (
 /obj/item/trash/chips,
-/mob/living/simple_animal/hostile/cockroach,
+/mob/living/basic/cockroach,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Ta" = (
@@ -362,13 +366,14 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "VY" = (
-/obj/machinery/suit_storage_unit/standard_unit,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/firealarm/directional/east,
 /obj/structure/window/reinforced/spawner{
 	dir = 1
 	},
 /obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/machinery/suit_storage_unit/inherit,
+/obj/item/mod/control/pre_equipped/standard,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Wp" = (

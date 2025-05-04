@@ -75,3 +75,5 @@ GLOBAL_LIST_EMPTY(alert_consoles)
 // [CELADON-ADD] - List of pods
 GLOBAL_LIST_EMPTY(poi_list)
 // [/CELADON-ADD] - List of pods
+/// List of all ruin_hazards (obj/structure/hazard), used for ID toggles.
+GLOBAL_LIST_EMPTY(ruin_hazards)

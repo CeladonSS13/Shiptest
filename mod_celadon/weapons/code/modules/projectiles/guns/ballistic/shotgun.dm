@@ -13,7 +13,7 @@
 
 	default_ammo_type = /obj/item/ammo_box/magazine/saiga
 	allowed_ammo_types = list(
-		/obj/item/ammo_box/magazine/zip_ammo_9mm,
+		/obj/item/ammo_box/magazine/saiga, /obj/item/ammo_box/magazine/saiga/medium, /obj/item/ammo_box/magazine/saiga/drum
 	)
 
 	fire_sound = 'sound/weapons/gun/shotgun/bulldog.ogg'
@@ -49,7 +49,7 @@
 	recoil_unwielded = 4
 	wield_slowdown = 0.6
 	wield_delay = 0.65 SECONDS
-
+NO_MAG_GUN_HELPER(automatic/assault/saiga)
 /obj/item/gun/ballistic/automatic/assault/saiga/Initialize()
 	. = ..()
 

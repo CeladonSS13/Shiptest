@@ -65,7 +65,6 @@
 /turf/open/floor/noslip,
 /area/overmap_encounter/planetoid/cave/explored)
 "j" = (
-/mob/living/simple_animal/bot/honkbot,
 /turf/open/floor/plating/asteroid/wasteplanet,
 /area/overmap_encounter/planetoid/cave/explored)
 "k" = (
@@ -113,7 +112,7 @@
 /turf/open/floor/plating/asteroid/wasteplanet,
 /area/overmap_encounter/planetoid/cave/explored)
 "w" = (
-/obj/structure/sign/poster/contraband/clown,
+/obj/structure/sign/poster/contraband/smoke,
 /turf/closed/wall/mineral/titanium,
 /area/overmap_encounter/planetoid/cave/explored)
 "x" = (
@@ -168,9 +167,6 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/turf/open/floor/plating/asteroid/wasteplanet,
-/area/overmap_encounter/planetoid/cave/explored)
-"H" = (
 /turf/open/floor/plating/asteroid/wasteplanet,
 /area/overmap_encounter/planetoid/cave/explored)
 "I" = (
@@ -301,9 +297,9 @@ k
 k
 k
 u
-H
+j
 D
-H
+j
 c
 U
 "}
@@ -314,10 +310,10 @@ k
 k
 Z
 r
-H
-H
+j
+j
 l
-H
+j
 X
 U
 "}
@@ -326,12 +322,12 @@ k
 k
 W
 l
-H
+j
 N
-H
-H
-H
-H
+j
+j
+j
+j
 S
 g
 "}
@@ -359,7 +355,7 @@ V
 i
 e
 E
-H
+j
 S
 F
 "}
@@ -373,7 +369,7 @@ C
 I
 e
 E
-H
+j
 S
 F
 "}
@@ -397,10 +393,10 @@ k
 k
 o
 l
-H
-H
-H
-H
+j
+j
+j
+j
 f
 G
 U
@@ -412,9 +408,9 @@ k
 k
 O
 j
-H
-H
-H
+j
+j
+j
 J
 T
 m

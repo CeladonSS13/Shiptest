@@ -812,7 +812,7 @@
 /area/ship/science/robotics)
 "dq" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
@@ -1968,7 +1968,7 @@
 /area/ship/crew/dorm/dormtwo)
 "hM" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
@@ -4974,7 +4974,7 @@
 /area/ship/medical)
 "sr" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
 	},
@@ -7970,7 +7970,7 @@
 /area/ship/crew/canteen)
 "CP" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
@@ -11317,7 +11317,7 @@
 /area/ship/engineering/atmospherics)
 "OR" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
@@ -11547,7 +11547,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/contraband/clown{
+/obj/structure/sign/poster/contraband/smoke{
 	pixel_x = -32
 	},
 /turf/open/floor/plating,
@@ -12188,7 +12188,7 @@
 /area/ship/hangar)
 "Sz" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
@@ -13283,10 +13283,6 @@
 	},
 /obj/effect/turf_decal/techfloor{
 	dir = 8
-	},
-/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/heavy{
-	pixel_x = 0;
-	pixel_y = -10
 	},
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg{
 	pixel_x = 1;

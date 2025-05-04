@@ -1228,6 +1228,10 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/mineral/titanium/tiled,
 /area/ship/security/armory)
+"oc" = (
+/obj/effect/decal/cleanable/crayon,
+/turf/open/floor/plating/airless,
+/area/ship/maintenance)
 "oe" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 1
@@ -1517,6 +1521,18 @@
 /obj/item/desk_flag/trans{
 	pixel_x = 9;
 	pixel_y = -6
+	},
+/obj/item/storage/box/donkpockets/donkpocketspicy{
+	desc = "Produced personally be CHUVAK TM. Ultra-spicy";
+	name = "CHUVAK TM Donk-pockets";
+	pixel_x = -5;
+	pixel_y = 4
+	},
+/obj/item/storage/box/donkpockets/donkpocketspicy{
+	desc = "Produced personally be CHUVAK TM. Ultra-spicy";
+	name = "CHUVAK TM Donk-pockets";
+	pixel_x = -5;
+	pixel_y = 8
 	},
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/canteen)
@@ -3705,7 +3721,7 @@
 /turf/closed/wall/r_wall,
 /area/ship/security/armory)
 "Vx" = (
-/obj/item/reagent_containers/food/snacks/deadmouse{
+/obj/item/food/deadmouse{
 	pixel_x = -9;
 	pixel_y = 12
 	},
@@ -3787,12 +3803,6 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
-"Wd" = (
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "engie"
-	},
-/turf/open/floor/plating/airless,
-/area/ship/maintenance)
 "We" = (
 /obj/effect/turf_decal/box/corners{
 	dir = 1
@@ -4121,7 +4131,6 @@
 	pixel_y = 8;
 	pixel_x = 5
 	},
-/obj/item/clothing/head/soft/mime,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "ZC" = (
@@ -5064,7 +5073,7 @@ lJ
 lJ
 YJ
 DR
-Wd
+oc
 oy
 MD
 SV

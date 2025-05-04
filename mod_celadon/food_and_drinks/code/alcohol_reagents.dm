@@ -34,7 +34,7 @@
 	if(M.dna.species.reagent_tag & PROCESS_SYNTHETIC)
 		return
 	if(method == REAGENT_INGEST)
-		to_chat(M, pick("<span class = 'danger'>That was awful!</span>", "<span class = 'danger'>Yuck!</span>"))
+		to_chat(M, pick("<span class = 'danger'>That was awful!"), "<span class = 'danger'>Yuck!")))
 */
 /datum/reagent/consumable/ethanol/synthanol/robottears
 	name = "Robot Tears"

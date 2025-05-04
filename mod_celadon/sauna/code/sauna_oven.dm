@@ -5,8 +5,8 @@
 #define SAUNA_WATER_PER_WATER_UNIT 5
 
 /obj/structure/sauna_oven_steam
-	name = "sauna oven"
-	desc = "A modest sauna oven with rocks. Add some fuel, pour some water and enjoy the moment."
+	name = "sauna oven (steam)"
+	desc = "Небольшая печь для сауны с камнями. Добавьте немного древесины или целую кипу бумаг, налейте воды и наслаждайтесь моментом."
 	icon = 'mod_celadon/_storge_icons/icons/sauna_oven.dmi'
 	icon_state = "sauna_oven"
 	density = TRUE

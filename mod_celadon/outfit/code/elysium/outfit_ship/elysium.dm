@@ -46,6 +46,7 @@
 	if(visualsOnly)
 		return
 	H.faction |= list(FACTION_PLAYER_ELYSIUM)
+	H.grant_language(/datum/language/elysm)
 
 /datum/outfit/job/elysium/proc/get_elysium_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
@@ -70,14 +71,13 @@
 	name = "Elysium - Caid"
 	job_icon = "captain"
 	jobtype = /datum/job/captain
-
 	backpack = /obj/item/storage/backpack/satchel/leather
-	gloves = /obj/item/clothing/gloves/fingerless
+	gloves = /obj/item/clothing/gloves/color/black
 	back = /obj/item/storage/backpack/satchel/leather
 	uniform = /obj/item/clothing/under/color/darkgreen
-	shoes = /obj/item/clothing/shoes/sneakers/sandals
+	shoes = /obj/item/clothing/shoes/jackboots
 	mask = /obj/item/clothing/mask/bandana/green
-	ears = /obj/item/radio/headset/heads/captain
+	ears = /obj/item/radio/headset/heads/captain/alt
 	id = /obj/item/card/id/elysium/captain
 
 /datum/outfit/job/elysium/captain/post_equip(mob/living/carbon/human/H)
@@ -88,14 +88,12 @@
 	name = "Elysium - Mukatell"
 	job_icon = "securityofficer"
 	jobtype = /datum/job/officer
-
-	suit = /obj/item/clothing/suit/armor/vest/elysium
-	gloves = /obj/item/clothing/gloves/fingerless
+	gloves = /obj/item/clothing/gloves/color/black
 	mask = /obj/item/clothing/mask/bandana/green
-	backpack = /obj/item/storage/backpack/satchel/sec
+	backpack = /obj/item/storage/backpack/satchel
 	uniform = /obj/item/clothing/under/utility
-	shoes = /obj/item/clothing/shoes/sneakers/black
-	head = /obj/item/clothing/head/helmet/m10_elysium
+	shoes = /obj/item/clothing/shoes/jackboots
+	ears = /obj/item/radio/headset/alt
 	backpack_contents = list(/obj/item/melee/knife/switchblade)
 	id = /obj/item/card/id/elysium/security
 
@@ -110,10 +108,10 @@
 
 	suit = /obj/item/clothing/suit/apparel/black
 	gloves = /obj/item/clothing/gloves/fingerless
-	head = /obj/item/clothing/head/shemag/white
+	head = /obj/item/clothing/head/shemag/black
 	backpack = /obj/item/storage/backpack/satchel
 	uniform = /obj/item/clothing/under/utility
-	shoes = /obj/item/clothing/shoes/sneakers/black
+	shoes = /obj/item/clothing/shoes/jackboots
 	id = /obj/item/card/id/elysium/assistant
 
 /datum/outfit/job/elysium/assistant/post_equip(mob/living/carbon/human/H)

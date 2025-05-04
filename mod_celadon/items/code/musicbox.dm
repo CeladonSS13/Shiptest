@@ -19,7 +19,7 @@
 	COOLDOWN_START(src, musicbox_cooldown, 38 SECONDS)
 	// Вероятно дальше есть способ делать это более правильно и более оптимизировано, но кто нас остановит?
 	addtimer(CALLBACK(src, .proc/start_playing), 5 SECONDS)
-	to_chat(user, "<span class='notice'>Вы проворачиваете ключик, что приводит шкатулку в действие.</span>")
+	to_chat(user, span_notice("Вы проворачиваете ключик, что приводит шкатулку в действие."))
 	playsound(src.loc, usesound, 50, TRUE)
 	addtimer(CALLBACK(src, .proc/finish_playing), 38 SECONDS)
 

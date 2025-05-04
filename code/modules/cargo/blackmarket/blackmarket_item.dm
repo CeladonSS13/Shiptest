@@ -60,10 +60,12 @@
 	stock = rand(stock_min, stock_max)
 
 /datum/blackmarket_item/proc/cycle(price = TRUE, availibility = TRUE, stock = FALSE, force_appear = FALSE)
-	if(price)
-		randomize_price()
-	if(stock)
-		randomize_stock()
+// Cel-Edit - Stock refill fix
+//	if(price)
+	randomize_price()
+//	if(stock)
+	randomize_stock()
+// /Cel-Edit
 	if(availibility)
 		if(spawn_weighting ? prob(max(0, (availability_prob + (weight * 10)))) : prob(availability_prob))
 			available = TRUE
@@ -91,6 +93,8 @@
 	if(SSblackmarket.queue_item(purchase))
 		stock--
 		log_game("[key_name(buyer)] has succesfully purchased [name] using [shipping_method] for shipping.")
+		SSblackbox.record_feedback("nested tally", "blackmarket_ordered", 1, list(name, "amount"))
+		SSblackbox.record_feedback("nested tally", "blackmarket_ordered", price, list(name, "cost"))
 		return TRUE
 	return FALSE
 

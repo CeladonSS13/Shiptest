@@ -17,6 +17,9 @@
 	melee_damage_lower = 5
 	melee_damage_upper = 15
 
+/mob/living/simple_animal/pet/cat/moro/Life()
+	return
+
 /mob/living/simple_animal/pet/cat/moro/update_resting()
 	. = ..()
 	if(stat == DEAD)

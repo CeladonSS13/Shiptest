@@ -47,3 +47,19 @@
 	enclosed = TRUE
 	enter_delay = 40
 	silicon_icon_state = null
+
+//nanotrasen ripley
+/obj/mecha/working/ripley/nanotrasen
+	desc = "An APLU utility exosuit, using lots of overcomplicated servos to provide larger cargo capacity and more speed in pressurized environements, at the cost of low-pressure speed. Has a small Nanotrasen logo on it, and a N+S emblem."
+	name = "\improper Nanotrasen APLU Mk-V \"Privatizer\""
+	icon = 'mod_celadon/_storge_icons/icons/mecha.dmi'
+	icon_state = "ntripley"
+	base_icon_state = "ntripley"
+	wreckage = /obj/structure/mecha_wreckage/ripley/nanotrasen
+	enclosed = TRUE
+	fast_pressure_step_in = 4
+	slow_pressure_step_in = 2 //faster speed in a pressurized atmosphere
+	enter_delay = 55 //more delay
+	exit_delay = 30
+	cargo_capacity = 25 //large cargo capacity
+	silicon_icon_state = null

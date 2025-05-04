@@ -2423,10 +2423,10 @@
 /turf/open/floor/carpet/nanoweave,
 /area/ship/hallway/central)
 "xe" = (
-/obj/structure/chair/comfy{
+/obj/machinery/newscaster/directional/west,
+/obj/structure/chair/comfy/purple{
 	dir = 1
 	},
-/obj/machinery/newscaster/directional/west,
 /turf/open/floor/carpet/nanoweave/beige,
 /area/ship/crew)
 "xg" = (
@@ -2641,7 +2641,7 @@
 "zh" = (
 /obj/structure/bed,
 /obj/structure/curtain/cloth/grey,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/machinery/light/directional/south,
 /turf/open/floor/wood,
 /area/ship/crew/dorm)
@@ -3438,7 +3438,7 @@
 /area/ship/crew/canteen)
 "Hq" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/bounty,
 /obj/structure/sign/poster/official/ian{
 	pixel_x = 32
@@ -3815,7 +3815,7 @@
 "Kc" = (
 /obj/structure/bed,
 /obj/structure/curtain/cloth/grey,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/machinery/light_switch{
 	pixel_x = -8;
 	pixel_y = -20;
@@ -3839,7 +3839,7 @@
 /area/ship/crew)
 "Ko" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/bounty,
 /turf/open/floor/carpet/red,
 /area/ship/crew)
@@ -3910,10 +3910,7 @@
 /obj/item/clothing/suit/toggle/lawyer/burgundy{
 	pixel_y = -3
 	},
-/obj/item/clothing/head/beanie/stripedgreen{
-	pixel_x = 2;
-	pixel_y = -5
-	},
+/obj/item/clothing/head/beanie/green,
 /obj/item/clothing/glasses/regular/hipster,
 /obj/machinery/button/door{
 	id = "beluga_dorm1_window";
@@ -4132,7 +4129,7 @@
 "Nv" = (
 /obj/structure/bed,
 /obj/structure/curtain/cloth/grey,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /turf/open/floor/wood,
 /area/ship/crew/dorm)
 "Nw" = (
@@ -4992,10 +4989,10 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "WV" = (
-/obj/structure/chair/comfy{
+/obj/machinery/newscaster/directional/east,
+/obj/structure/chair/comfy/purple{
 	dir = 1
 	},
-/obj/machinery/newscaster/directional/east,
 /turf/open/floor/carpet/red,
 /area/ship/crew)
 "Xm" = (

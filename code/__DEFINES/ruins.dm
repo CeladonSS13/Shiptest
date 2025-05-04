@@ -7,6 +7,10 @@
 #define RUINTYPE_BEACH "Beach"
 #define RUINTYPE_WASTE "Waste"
 #define RUINTYPE_YELLOW "Yellow"
+#define RUINTYPE_SHROUDED "Shrouded"
+#define RUINTYPE_DESERT "Desert"
+#define RUINTYPE_WATER "Water"
+#define RUINTYPE_BATTLEFIELD "Battlefield"
 
 /// do not actually use this for your ruin type, this is for the ruintype_to_list proc
 #define RUINTYPE_EVERYTHING "Everything"
@@ -39,7 +43,9 @@
 	RUINTYPE_YELLOW,\
 	RUINTYPE_EVERYTHING,\
 	RUINTYPE_PLASMA,\
-	RUINTYPE_EARTH_SAND)
+	RUINTYPE_EARTH_SAND,\
+	RUINTYPE_ASTEROID,\
+	RUINTYPE_ANIMA)
 // [/CELADON-EDIT] - CELADON_CONFIGS_MAPS
 
 /proc/ruintype_to_list(ruintype)

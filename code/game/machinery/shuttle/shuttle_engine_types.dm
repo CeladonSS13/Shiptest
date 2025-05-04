@@ -21,18 +21,18 @@
 	///A weakref of the connected engine heater with fuel.
 	var/datum/weakref/attached_heater
 
-/obj/machinery/power/shuttle/engine/fueled/burn_engine(percentage = 100, deltatime)
+/obj/machinery/power/shuttle/engine/fueled/burn_engine(percentage = 100, seconds_per_tick)
 	..()
 	var/obj/machinery/atmospherics/components/unary/shuttle/heater/resolved_heater = attached_heater?.resolve()
 	if(!resolved_heater)
 		return
 	if(heat_creation)
 		heat_engine()
-	var/to_use = fuel_use * (percentage / 100) * deltatime
-// [CELADON-EDIT] - CELADON_FIXES
-//return resolved_heater.consume_fuel(to_use, fuel_type) / to_use * thrust //This proc returns how much was actually burned, so let's use that and multiply it by the thrust to get all the thrust we CAN give. // CELADON-EDIT - ORIGINAL
+	var/to_use = fuel_use * (percentage / 100) * seconds_per_tick
+	// [CELADON-EDIT] - CELADON_FIXES
+	// return resolved_heater.consume_fuel(to_use, fuel_type) / to_use * percentage / 100 * thrust //This proc returns how much was actually burned, so let's use that and multiply it by the thrust to get all the thrust we CAN give.	 // CELADON-EDIT - ORIGINAL
 	return resolved_heater.consume_fuel(to_use, fuel_type)
-// [/CELADON-EDIT]
+	// [/CELADON-EDIT]
 
 /obj/machinery/power/shuttle/engine/fueled/return_fuel()
 	. = ..()
@@ -101,7 +101,7 @@
 	circuit = /obj/item/circuitboard/machine/shuttle/engine/plasma
 	fuel_type = GAS_PLASMA
 	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем движки
-	// fuel_use = 20 // CELADON-EDIT - ORIGINAL
+	// fuel_use = 20
 	// thrust = 25 // CELADON-EDIT - ORIGINAL
 	fuel_use = 20
 	thrust = 9
@@ -121,7 +121,7 @@
 	desc = "A thruster that expels gas inefficiently to create thrust."
 	circuit = /obj/item/circuitboard/machine/shuttle/engine/expulsion
 	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем движки
-	// fuel_use = 80 // CELADON-EDIT - ORIGINAL
+	// fuel_use = 80
 	// thrust = 15 // CELADON-EDIT - ORIGINAL
 	fuel_use = 80
 	thrust = 5
@@ -144,7 +144,7 @@
 	///what portion of the mols in the attached heater to "burn"
 	var/fuel_consumption = 0.0125
 	//multiplier for thrust
-	thrust = 3
+	thrust = 8
 	//used by stockparts, efficiency_multiplier
 	var/consumption_multiplier = 1
 	//If this engine should create heat when burned.
@@ -153,14 +153,14 @@
 	var/datum/weakref/attached_heater
 
 
-/obj/machinery/power/shuttle/engine/fire/burn_engine(percentage = 100, deltatime)
+/obj/machinery/power/shuttle/engine/fire/burn_engine(percentage = 100, seconds_per_tick)
 	. = ..()
 	var/obj/machinery/atmospherics/components/unary/shuttle/fire_heater/resolved_heater = attached_heater?.resolve()
 	if(!resolved_heater)
 		return
 	if(heat_creation)
 		heat_engine()
-	var/actual_consumption = fuel_consumption * (percentage / 100) * deltatime * consumption_multiplier
+	var/actual_consumption = fuel_consumption * (percentage / 100) * seconds_per_tick * consumption_multiplier
 	return resolved_heater.consume_fuel(actual_consumption) * thrust //this proc returns the min of the fuel/oxy possible burns, multiply by our thrust value
 
 /obj/machinery/power/shuttle/engine/fire/return_fuel()
@@ -235,7 +235,7 @@
 	name = "Outdated Ion Thruster"
 	circuit = /obj/item/circuitboard/machine/shuttle/engine/electric/bad
 	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем движки
-	// thrust = 2 // CELADON-EDIT - ORIGINAL
+	// thrust = 2
 	// power_per_burn = 70000 // CELADON-EDIT - ORIGINAL
 	thrust = 1
 	power_per_burn = 70000
@@ -245,7 +245,7 @@
 	name = "high performance ion thruster"
 	desc = "An expensive variant of a standard ion thruster, using highest quality components in order to achieve much better performance."
 	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем движки
-	// thrust = 30 // CELADON-EDIT - ORIGINAL
+	// thrust = 30
 	// power_per_burn = 65000 // CELADON-EDIT - ORIGINAL
 	thrust = 11
 	power_per_burn = 100000
@@ -287,7 +287,7 @@
 	. = ..()
 	connect_to_network()
 
-/obj/machinery/power/shuttle/engine/electric/burn_engine(percentage = 100, deltatime)
+/obj/machinery/power/shuttle/engine/electric/burn_engine(percentage = 100, seconds_per_tick)
 	. = ..()
 	var/true_percentage = min(newavail() / power_per_burn, percentage / 100)
 	add_delayedload(power_per_burn * true_percentage)

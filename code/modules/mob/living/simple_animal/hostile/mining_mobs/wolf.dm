@@ -14,8 +14,8 @@
 	move_to_delay = 25
 	ranged = 1
 	ranged_cooldown_time = 90
-	maxHealth = 100
-	health = 100
+	maxHealth = 50
+	health = 50
 	obj_damage = 15
 	melee_damage_lower = 7
 	melee_damage_upper = 7
@@ -30,11 +30,11 @@
 	move_force = MOVE_FORCE_WEAK
 	move_resist = MOVE_FORCE_WEAK
 	pull_force = MOVE_FORCE_WEAK
-	// [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено ради легенды
+	// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено ради легенды
 	// butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 2, /obj/item/stack/sheet/sinew/wolf = 2, /obj/item/stack/sheet/bone = 2, /obj/item/mob_trophy/wolf_ear = 0.5)
 	// [/CELADON-REMOVE]
 	loot = list()
-	// [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено ради легенды
+	// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено ради легенды
 	// mob_trophy = /obj/item/mob_trophy/wolf_ear
 	// [/CELADON-REMOVE]
 	stat_attack = HARD_CRIT
@@ -103,7 +103,7 @@
 		retreat_distance = initial(retreat_distance)
 		return
 	if(!retreat_message_said && target)
-		visible_message("<span class='danger'>The [name] tries to flee from [target]!</span>")
+		visible_message(span_danger("The [name] tries to flee from [target]!"))
 		retreat_message_said = TRUE
 	retreat_distance = 30
 
@@ -112,11 +112,11 @@
 	move_resist = MOVE_RESIST_DEFAULT
 	pull_force = PULL_FORCE_DEFAULT
 	if(prob(15))
-		// [CELADON-EDIT] - CRUSHER_TROPHEY
+		// [CELADON-EDIT] - RETURN_CONTENT_CRUSHER_TROPHY
 		// new /obj/item/mob_trophy/wolf_ear(loc)	// CELADON-EDIT - ORIGINAL
 		new /obj/item/crusher_trophy/wolf_ear(loc)
 		// [/CELADON-EDIT]
-		visible_message("<span class='warning'>You notice a damaged ear that might be salvagable.</span>")
+		visible_message(span_warning("You notice a damaged ear that might be salvagable."))
 	..()
 
 //alpha wolf- smaller chance to spawn, practically a miniboss. Has the ability to do a short, untelegraphed lunge with a stun. Be careful!
@@ -143,7 +143,7 @@
 	charge_frequency = 20 SECONDS
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 2, /obj/item/stack/sheet/sinew/wolf = 4, /obj/item/stack/sheet/sinew/wolf = 4, /obj/item/stack/sheet/bone = 5)
 	loot = list()
-	// [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено ради легенды
+	// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено ради легенды
 	// mob_trophy = /obj/item/mob_trophy/fang
 	// [/CELADON-REMOVE]
 
@@ -151,7 +151,7 @@
 	move_force = MOVE_FORCE_DEFAULT
 	move_resist = MOVE_RESIST_DEFAULT
 	pull_force = PULL_FORCE_DEFAULT
-	// [CELADON-ADD] - CRUSHER_TROPHEY
+	// [CELADON-ADD] - RETURN_CONTENT_CRUSHER_TROPHY
 	if(prob(75))
 		new /obj/item/crusher_trophy/fang(loc)
 		visible_message("<span class='warning'>You find an intact fang that looks salvagable.</span>")

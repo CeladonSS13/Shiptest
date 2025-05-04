@@ -1,66 +1,66 @@
 /obj/item/clothing/head/bandana/elysium
-	name = "Пустотная бандана"
-	desc = "Бандана с патриотической надписью \"Слава Республике!\" на ней. Расспространённый среди различных слоёв населения патриотический головной убор."
+	name = "void bandana"
+	desc = "This is a simple bandana with a patriotic inscription \"Glory to the Republic!\" on it."
 	icon = 'mod_celadon/_storge_icons/icons/obj/hats.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/elysium_head.dmi'
 
 /obj/item/clothing/head/bandana/elysium/black
-	name = "Чёрная бандана"
+	name = "black bandana"
 	icon_state = "bandana_black_elysium"
 	mob_overlay_state = "bandana_black_elysium"
 
 /obj/item/clothing/head/bandana/elysium/white
-	name = "Белая бандана"
+	name = "white bandana"
 	icon_state = "bandana_white_elysium"
 	mob_overlay_state = "bandana_white_elysium"
 
 /obj/item/clothing/head/bandana/elysium/green
-	name = "Зелёная бандана"
+	name = "green bandana"
 	icon_state = "bandana_green_elysium"
 	mob_overlay_state = "bandana_green_elysium"
 
 /obj/item/clothing/head/turban
-	name = "Пустой тюрбан"
-	desc = "Очень популярный традиционный головной убор в Республике Элизиум. Очень часто можно увидеть в повседневной жизни на территории Республики. Традиционно носится исключительно мужчинами."
+	name = "void turban"
+	desc = "This is a very popular traditional headwear from the Republic of Elysium, and may be seen often in daily life within its' borders. It is traditionally worn only by men."
 	icon = 'mod_celadon/_storge_icons/icons/obj/hats.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/elysium_head.dmi'
 
 /obj/item/clothing/head/turban/black
-	name = "Чёрный тюрбан"
+	name = "black turban"
 	icon_state = "turban_black"
 	mob_overlay_state = "turban_black"
 
 /obj/item/clothing/head/turban/white
-	name = "Белый тюрбан"
+	name = "white turban"
 	icon_state = "turban_white"
 	mob_overlay_state = "turban_white"
 
 /obj/item/clothing/head/helmet/m10_elysium
-	name = "Шлем М10"
-	desc = "Расспрастранённый защитный головной убор разработанный для правоохранительных органов Республики. Но со временем стал общедоступным шлемом для всех граждан Республики. На этом шлеме виднеется зелёная повязка со слоганом Республики Элизиум: \"Сила в единстве, мудрость в вере\""
+	name = "M10 pattern helmet"
+	desc = "A widespread protective helmet initally designed for Republic of Elysium's law enforcement, but with time it has found use by its' civilans. There is a handband on it with an inscription that reads: \"Power in unity, wisdom in faith.\""
 	icon = 'mod_celadon/_storge_icons/icons/obj/hats.dmi'
 	icon_state = "m10helm_elysium"
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/elysium_head.dmi'
 	mob_overlay_state = "m10helm_elysium"
 
 /obj/item/clothing/head/shemag
-	name = "Пустотный шемаг"
-	desc = "Распрастронённый традиционный пустынный головной убор на территории Республики Элизиум. Отлично подходит для защиты лица от песчаных бурь Старбула."
+	name = "void shemagh"
+	desc = "This is a popular piece of headwear from the Republic of Elysium, and it is perfect for protecting one from the Starbull's dust storms."
 	icon = 'mod_celadon/_storge_icons/icons/obj/hats.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/elysium_head.dmi'
 
 /obj/item/clothing/head/shemag/black
-	name = "Чёрный шемаг"
+	name = "black shemagh"
 	icon_state = "shemag_black"
 	mob_overlay_state = "shemag_black"
 
 /obj/item/clothing/head/shemag/green
-	name = "Зелёный шемаг"
+	name = "green shemagh"
 	icon_state = "shemag_green"
 	mob_overlay_state = "shemag_green"
 
 /obj/item/clothing/head/shemag/white
-	name = "Белый шемаг"
+	name = "white shemagh"
 	icon_state = "shemag_white"
 	mob_overlay_state = "shemag_white"
 
@@ -84,7 +84,7 @@
 
 /obj/item/clothing/head/space/elysm/space_helm
 	name = "Elysium EVA Helmet"
-	desc = "Довольно добротно сделанный шлем с маркировками сепаратистов Элизиума"
+	desc = "A pretty nicely made helmet with Elysium Separatists markings."
 	icon = 'mod_celadon/_storge_icons/icons/obj/hats.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/space.dmi'
 	icon_state = "space_elysium"

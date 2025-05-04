@@ -740,13 +740,6 @@
 	},
 /turf/open/floor/engine/airless,
 /area/ship/engineering/atmospherics)
-"oZ" = (
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "cyka";
-	color = "red"
-	},
-/turf/open/floor/plating,
-/area/ship/engineering/atmospherics)
 "pg" = (
 /obj/machinery/cryopod{
 	dir = 1
@@ -846,15 +839,15 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/maintenance/central)
 "rt" = (
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "prolizard";
-	pixel_y = 32
-	},
 /obj/structure/closet/crate,
 /obj/item/circuitboard/machine/autolathe,
 /obj/item/circuitboard/machine/cell_charger,
 /obj/item/circuitboard/machine/fax,
 /obj/item/circuitboard/machine/microwave,
+/obj/effect/decal/cleanable/crayon{
+	icon_state = "electricdanger";
+	pixel_y = 32
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "rD" = (
@@ -1025,6 +1018,13 @@
 /obj/item/gun/ballistic/shotgun/automatic/combat,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
+"vi" = (
+/obj/effect/decal/cleanable/crayon{
+	icon_state = "body";
+	color = "blue"
+	},
+/turf/open/floor/plating,
+/area/ship/engineering/atmospherics)
 "vG" = (
 /obj/machinery/power/shuttle/engine/electric/bad{
 	icon_state = "burst";
@@ -1044,6 +1044,13 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/dark,
+/area/ship/engineering/atmospherics)
+"wg" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/crayon{
+	color = "red"
+	},
+/turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "wn" = (
 /obj/item/radio/intercom/wideband/table{
@@ -2376,14 +2383,6 @@
 	color = "fff000"
 	},
 /area/ship/cargo)
-"WG" = (
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "engie";
-	color = "blue"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/ship/engineering/atmospherics)
 "WI" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -2763,7 +2762,7 @@ GA
 GA
 "}
 (15,1,1) = {"
-EX
+vi
 cN
 Ls
 tl
@@ -2783,7 +2782,7 @@ xL
 EX
 "}
 (16,1,1) = {"
-oZ
+EX
 JH
 zj
 Qt
@@ -3020,7 +3019,7 @@ ik
 dm
 GJ
 OX
-WG
+wg
 "}
 (28,1,1) = {"
 GA

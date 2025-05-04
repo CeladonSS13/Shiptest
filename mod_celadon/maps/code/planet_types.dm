@@ -8,7 +8,7 @@
 	default_baseturf = /turf/open/floor/plating/asteroid/wasteplanet
 	weather_controller_type = /datum/weather_controller/desert
 	weight = 0
-	// [CELADON-EDIT] -- OVERMAP ICON -- вагагагагагагагагагагага
+	// [CELADON-EDIT] -- CELADON_OVERMAP_ICON -- вагагагагагагагагагагага
 	// icon_state = "globe"
 	icon_state = "sand"
 	// [/CELADON-EDIT]
@@ -18,28 +18,25 @@
 /datum/planet_type/plasma_giant
 	name = "plasma giant"
 	desc = "The backbone of interstellar travel, the mighty plasma giant allows fuel collection to take place."
+	ruin_type = RUINTYPE_PLASMA
+	gravity = STANDARD_GRAVITY
 	planet = DYNAMIC_WORLD_PLASMA_GIANT
-	// [CELADON-EDIT] -- OVERMAP ICON -- вагагагагагагагагагагага
-	//	color = COLOR_PURPLE
-	icon = 'mod_celadon/_storge_icons/icons/overmap/overmap_large.dmi'
 	pixel_w = -8
 	pixel_z = -8
-	// [/CELADON-EDIT]
-	mapgen = /datum/map_generator/planet_generator/plasma_gaint
-	gravity = GRAVITY_DAMAGE_TRESHOLD
-	default_baseturf = /turf/open/floor/plating/asteroid/plasma_gaint
 	icon_state = "planet-plasma"
+	icon = 'mod_celadon/_storge_icons/icons/overmap/overmap_large.dmi'
+	landing_sound = 'mod_celadon/_storge_sounds/sound/events/planet_landing_3.mp3'
+	mapgen = /datum/map_generator/planet_generator/plasma_gaint
+	default_baseturf = /turf/open/floor/plating/asteroid/plasma_gaint
 	preserve_level = FALSE
-	weight = 20
-	ruin_type = RUINTYPE_PLASMA
-	landing_sound = 'sound/effects/planet_landing_2.ogg'
-
+	weight = 0
+	interference_power = 10
 
 /datum/planet_type/earthsand
 	name = "Sand Planet"
 	desc = "Great Quicksand"
 	planet = DYNAMIC_WORLD_EARTH_SAND
-	// [CELADON-EDIT] -- OVERMAP ICON -- вагагагагагагагагагагага
+	// [CELADON-EDIT] -- CELADON_OVERMAP_ICON -- вагагагагагагагагагагага
 	//	color = COLOR_LIGHT_ORANGE
 	icon_state = "sand"
 	// [/CELADON-EDIT]
@@ -52,6 +49,7 @@
 
 /datum/planet_type/asteroid
 	weight = 40
+	ruin_type = RUINTYPE_ASTEROID
 
 /datum/planet_type/ice_night // Мне очень не нравится, как я это сделал, но на другую реализацию у меня не хватает знаний
 	name = "frozen planet"
@@ -106,3 +104,33 @@
 	weather_controller_type = /datum/weather_controller/lush
 	ruin_type = RUINTYPE_BEACH
 	landing_sound = 'sound/effects/planet_landing_1.ogg'
+
+//Для работы модульной планеты Anima
+/datum/planet_type/anima
+	name = "???"
+	desc = "Some sort of ugly shaped planet with an energy field around it. There's no identification of what this is."
+	planet = DYNAMIC_WORLD_ANIMA
+	icon_state = "anima"
+	//	color = COLOR_YELLOW
+	mapgen = /datum/map_generator/planet_generator/anima
+	gravity = STANDARD_GRAVITY
+	default_baseturf = /turf/open/space/anima
+	weather_controller_type = null
+	weight = 2
+	ruin_type = RUINTYPE_ANIMA
+
+//Меняем цвета планет на овермапе
+/datum/planet_type/water
+	color = null
+
+/datum/planet_type/desert
+	color = null
+
+/datum/planet_type/shrouded
+	color = null
+
+/datum/planet_type/moon
+	color = null
+
+/datum/planet_type/battlefield
+	color = null

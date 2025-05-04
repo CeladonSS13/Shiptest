@@ -150,6 +150,9 @@ datum
 /datum/datum1/datum2/proc2()
 	..()
 	code
+
+/mob/testmob/process(seconds_per_tick) //SSmobs runs once every 2 seconds
+	health -= health_loss
 ```
 
 ## Написание функций
@@ -195,6 +198,16 @@ something_general_object:specific_type_func()
 ```
 
 Мы узнаем, что у something_general_object нет такой функции только когда запустим сервер. Более того, когда мы это узнаем - будет непонятным что это за тип, почему у него было этой функции и какой тип на самом деле ожидался. С другой стороны, в коде:
+
+/mob/testmob
+	var/health = 100
+	var/health_loss = 2 //Health loss every second
+
+/mob/testmob/process(seconds_per_tick) //SSmobs runs once every 2 seconds
+	health -= health_loss * seconds_per_tick
+```
+
+In the above example, we made our health_loss variable a per second value rather than per process. In the actual process() proc we then make use of seconds_per_tick. Because SSmobs runs once every  2 seconds. seconds_per_tick would have a value of 2. This means that by doing health_loss * seconds_per_tick, you end up with the correct amount of health_loss per process, but if for some reason the SSmobs subsystem gets changed to be faster or slower in a PR, your health_loss variable will work the same.
 
 ```DM
 var/something_general_object

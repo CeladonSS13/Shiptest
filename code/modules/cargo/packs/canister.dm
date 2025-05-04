@@ -1,6 +1,10 @@
+/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
+	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
+
 /datum/supply_pack/canister
 	group = "Gas Canisters"
 	crate_type = /obj/structure/closet/crate/large
+	no_bundle = TRUE
 
 /*
 		Canisters
@@ -16,7 +20,7 @@
 /datum/supply_pack/canister/oxygen
 	name = "Oxygen Canister"
 	desc = "Contains a canister of oxygen. Great for refilling oxygen tanks."
-	cost = 1000
+	cost = 750
 	contains = list(/obj/machinery/portable_atmospherics/canister/oxygen)
 	crate_name = "oxygen canister crate"
 
@@ -61,3 +65,5 @@
 	cost = 8000
 	contains = list(/obj/machinery/portable_atmospherics/canister/bz)
 	crate_name = "\improper BZ canister crate"
+
+[/CELADON-DELETE] */

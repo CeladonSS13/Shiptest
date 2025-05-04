@@ -68,10 +68,10 @@
 	anchored = 1;
 	req_access_txt = "8486"
 	},
-/obj/item/storage/box/ammo/a357,
-/obj/item/storage/box/ammo/a357,
-/obj/item/storage/box/ammo/a357,
-/obj/item/storage/box/ammo/a357,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
 /obj/item/clothing/accessory/holster,
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
 /obj/item/clothing/suit/armor/hos/inteq/honorable,
@@ -188,7 +188,7 @@
 /mob/living/simple_animal/pet/mothroach{
 	faction = list("playerInteq")
 	},
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /obj/item/melee/knife/shiv,
 /turf/open/floor/plating,
 /area/ship/security/prison)
@@ -345,8 +345,8 @@
 /obj/machinery/suit_storage_unit/inherit{
 	req_access_txt = "8485"
 	},
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
 /obj/item/clothing/shoes/magboots,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /turf/open/floor/engine{
 	icon_state = "plastitanium";
 	explosion_block = 7
@@ -723,7 +723,7 @@
 /obj/effect/turf_decal/box,
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/item/clothing/under/syndicate/inteq/artificer,
-/obj/item/clothing/under/syndicate/inteq/skirt/artificer,
+/obj/item/clothing/under/syndicate/inteq/artificer/skirt,
 /obj/structure/closet/secure_closet{
 	icon_state = "eng_secure";
 	anchored = 1;
@@ -1164,7 +1164,7 @@
 	explosion_block = 5
 	},
 /obj/item/clothing/shoes/magboots,
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /turf/open/floor/engine{
 	icon_state = "plastitanium";
 	explosion_block = 7
@@ -1621,7 +1621,7 @@
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 8
 	},
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /obj/item/clothing/under/rank/prisoner/skirt,
 /obj/item/clothing/under/rank/prisoner,
 /obj/item/clothing/shoes/sneakers/orange,
@@ -1710,7 +1710,7 @@
 	},
 /obj/machinery/door/window/brigdoor,
 /obj/effect/turf_decal/trimline/opaque/yellow/warning,
-/mob/living/simple_animal/mouse{
+/mob/living/basic/mouse{
 	faction = list("PlayerInteQ")
 	},
 /turf/open/floor/plasteel/dark,
@@ -1972,7 +1972,7 @@
 	},
 /obj/machinery/firealarm/directional/west,
 /obj/structure/closet/firecloset/full,
-/mob/living/simple_animal/mouse/gray{
+/mob/living/basic/mouse/gray{
 	faction = list("playerInteq")
 	},
 /obj/effect/turf_decal/box/red,
@@ -2101,7 +2101,7 @@
 	explosion_block = 7;
 	req_access_txt = "8485"
 	},
-/mob/living/simple_animal/mouse{
+/mob/living/basic/mouse{
 	faction = list("playerInteq")
 	},
 /turf/open/floor/engine{
@@ -2242,10 +2242,6 @@
 	},
 /obj/item/folder/syndicate{
 	desc = "A slick black folder stamped 'Property of Inteq Risk Management Group.'";
-	pixel_x = 5
-	},
-/obj/item/stamp/law{
-	name = "master at arms' rubber stamp";
 	pixel_x = 5
 	},
 /obj/machinery/door/window/brigdoor,
@@ -2493,7 +2489,7 @@
 /turf/open/floor/plating,
 /area/ship/security/prison)
 "qe" = (
-/mob/living/simple_animal/mouse{
+/mob/living/basic/mouse{
 	faction = list("playerInteq")
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -2694,7 +2690,7 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/mob/living/simple_animal/mouse/gray{
+/mob/living/basic/mouse/gray{
 	faction = list("PlayerInteQ")
 	},
 /turf/open/floor/plasteel/patterned/grid,
@@ -2790,13 +2786,16 @@
 	req_access_txt = "8485";
 	anchored = 1
 	},
-/obj/item/ammo_box/magazine/m12g_bulldog,
 /obj/item/storage/toolbox/ammo/a308,
-/obj/item/ammo_box/magazine/m12g_bulldog,
-/obj/item/storage/toolbox/ammo/c9mm,
 /obj/item/storage/toolbox/ammo/c9mm,
 /obj/item/ammo_box/magazine/f4_308,
 /obj/item/ammo_box/magazine/f4_308,
+/obj/item/storage/toolbox/ammo/shotgun,
+/obj/item/storage/toolbox/ammo/c10mm,
+/obj/item/ammo_box/magazine/smgm10mm,
+/obj/item/ammo_box/magazine/smgm10mm,
+/obj/item/ammo_box/magazine/smgm10mm,
+/obj/item/ammo_box/magazine/smgm10mm,
 /turf/open/floor/engine{
 	icon_state = "plastitanium";
 	explosion_block = 7
@@ -2884,7 +2883,7 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/south,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /obj/item/clothing/under/rank/prisoner/skirt,
 /obj/item/clothing/under/rank/prisoner,
 /obj/item/clothing/shoes/sneakers/orange,
@@ -3107,7 +3106,7 @@
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/mouse/white{
+/mob/living/basic/mouse/white{
 	faction = list("playerInteq")
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -3137,7 +3136,7 @@
 /obj/item/clothing/suit/armor/inteq/corpsman,
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
 /obj/item/clothing/under/syndicate/inteq/corpsman,
-/obj/item/clothing/under/syndicate/inteq/skirt/corpsman,
+/obj/item/clothing/under/syndicate/inteq/corpsman/skirt,
 /obj/item/clothing/head/soft/inteq/corpsman,
 /obj/item/toy/plush/plushvar,
 /obj/structure/closet/secure_closet{
@@ -3459,7 +3458,7 @@
 	dir = 5
 	},
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/mouse{
+/mob/living/basic/mouse{
 	faction = list("PlayerInteQ")
 	},
 /turf/open/floor/plasteel/dark,
@@ -4115,7 +4114,7 @@
 	icon_state = "prisoner";
 	req_access_txt = "3"
 	},
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /obj/item/clothing/under/rank/prisoner/skirt,
 /obj/item/clothing/under/rank/prisoner,
 /obj/item/clothing/shoes/sneakers/orange,
@@ -4256,7 +4255,7 @@
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 1
 	},
-/mob/living/simple_animal/mouse/gray{
+/mob/living/basic/mouse/gray{
 	faction = list("playerInteq")
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -4758,6 +4757,7 @@
 /obj/machinery/light/directional/north,
 /obj/item/gun/ballistic/shotgun/automatic/bulldog/inteq,
 /obj/item/ammo_box/magazine/m12g_bulldog/drum,
+/obj/item/ammo_box/magazine/m12g_bulldog/drum,
 /turf/open/floor/engine{
 	icon_state = "plastitanium";
 	explosion_block = 7
@@ -4899,7 +4899,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 2
 	},
-/mob/living/simple_animal/mouse{
+/mob/living/basic/mouse{
 	faction = list("PlayerInteQ")
 	},
 /turf/open/floor/plasteel/tech,
@@ -5596,7 +5596,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/mob/living/simple_animal/mouse/white{
+/mob/living/basic/mouse/white{
 	faction = list("playerInteq")
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -6218,7 +6218,6 @@
 	req_access_txt = "8484"
 	},
 /obj/item/clothing/shoes/magboots/advance,
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
 /obj/item/clothing/mask/balaclava/inteq,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/electrical)
@@ -6472,18 +6471,12 @@
 	req_access_txt = "8485";
 	anchored = 1
 	},
-/obj/item/gun/ballistic/shotgun/automatic/combat{
-	pixel_y = -6
-	},
-/obj/item/gun/ballistic/shotgun/automatic/combat/compact,
 /obj/item/gun/ballistic/automatic/marksman/f4/inteq{
 	pixel_x = -8;
 	pixel_y = 3
 	},
-/obj/item/gun/ballistic/automatic/marksman/f4/inteq{
-	pixel_x = -8;
-	pixel_y = 3
-	},
+/obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq,
+/obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq,
 /turf/open/floor/engine{
 	icon_state = "plastitanium";
 	explosion_block = 7
@@ -6627,7 +6620,7 @@
 /obj/item/clothing/head/beret/sec/inteq,
 /obj/item/clothing/head/beret/sec/inteq,
 /obj/item/clothing/head/beret/sec/inteq,
-/mob/living/simple_animal/mouse/brown{
+/mob/living/basic/mouse/brown{
 	faction = list("playerInteq")
 	},
 /obj/structure/closet/wall/directional/south,
@@ -6777,7 +6770,7 @@
 	req_access_txt = "8485"
 	},
 /obj/item/clothing/shoes/magboots,
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /turf/open/floor/engine{
 	icon_state = "plastitanium";
 	explosion_block = 7
@@ -7189,7 +7182,7 @@
 /turf/open/floor/carpet/black,
 /area/ship/crew/dorm)
 "TY" = (
-/mob/living/simple_animal/mouse/gray{
+/mob/living/basic/mouse/gray{
 	faction = list("playerInteq")
 	},
 /obj/item/toy/plush/goatplushie/angry,
@@ -7243,7 +7236,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/box/white,
-/mob/living/simple_animal/mouse{
+/mob/living/basic/mouse{
 	faction = list("PlayerInteQ")
 	},
 /obj/machinery/portable_atmospherics/canister/nitrogen,
@@ -7544,21 +7537,6 @@
 	explosion_block = 6
 	},
 /area/ship/crew/dorm)
-"Ww" = (
-/obj/structure/window/plasma/reinforced/spawner/north,
-/obj/structure/window/plasma/reinforced/spawner/west{
-	explosion_block = 5
-	},
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
-/obj/machinery/suit_storage_unit/inherit{
-	req_access_txt = "8485"
-	},
-/obj/item/clothing/shoes/magboots,
-/turf/open/floor/engine{
-	icon_state = "plastitanium";
-	explosion_block = 7
-	},
-/area/ship/security/armory)
 "Wz" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/cable{
@@ -7637,7 +7615,7 @@
 /obj/effect/turf_decal/box,
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/item/clothing/under/syndicate/inteq/artificer,
-/obj/item/clothing/under/syndicate/inteq/skirt/artificer,
+/obj/item/clothing/under/syndicate/inteq/artificer/skirt,
 /obj/structure/closet/secure_closet{
 	icon_state = "atmos";
 	anchored = 1;
@@ -7707,7 +7685,7 @@
 "Xx" = (
 /obj/structure/bed,
 /obj/item/melee/knife/shiv/carrot,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /turf/open/floor/plasteel/tech,
 /area/ship/security/prison)
 "Xy" = (
@@ -9029,7 +9007,7 @@ ml
 Ql
 bs
 bs
-Ww
+bs
 gO
 RP
 fn

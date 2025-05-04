@@ -5,36 +5,36 @@
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/elysium_suit.dmi'
 
 /obj/item/clothing/suit/apparel/black
-	name = "Чёрная накидка"
-	desc = "Распространённая на территории Республики Элизиум накидка, являющаяся частью традиционной повседневной одежды."
+	name = "black cape"
+	desc = "Common in the territory of the Elysium Republic, this cape is a traditional casual wear out there."
 	icon_state = "apparel_black"
 	mob_overlay_state = "apparel_black"
 	allowed = list(/obj/item/melee/skimitar)
 
 /obj/item/clothing/suit/apparel/white
-	name = "Белая накидка"
-	desc = "Распространённая на территории Республики Элизиум накидка, являющаяся частью традиционной повседневной одежды."
+	name = "white cape"
+	desc = "Common in the territory of the Elysium Republic, this cape is a traditional casual wear out there."
 	icon_state = "apparel_white"
 	mob_overlay_state = "apparel_white"
 	allowed = list(/obj/item/melee/skimitar)
 
 /obj/item/clothing/suit/apparel/green
-	name = "Зелёная накидка"
-	desc = "Распространённая на территории Республики Элизиум накидка, являющаяся частью традиционной повседневной одежды."
+	name = "green cape"
+	desc = "Common in the territory of the Elysium Republic, this cape is a traditional casual wear out there."
 	icon_state = "apparel_green"
 	mob_overlay_state = "apparel_green"
 	allowed = list(/obj/item/melee/skimitar)
 
 /obj/item/clothing/suit/apparel/black/long
-	name = "Чёрная длинная накидка"
-	desc = "Распространённая на территории Республики Элизиум накидка, являющаяся частью традиционной повседневной одежды."
+	name = "black long cape"
+	desc = "Common in the territory of the Elysium Republic, this cape is a traditional casual wear out there."
 	icon_state = "long_apparel_black"
 	mob_overlay_state = "long_apparel_black"
 	allowed = list(/obj/item/melee/skimitar)
 
 /obj/item/clothing/suit/apparel/white/long
-	name = "Белая длинная накидка"
-	desc = "Распространённая на территории Республики Элизиум накидка, являющаяся частью традиционной повседневной одежды."
+	name = "white long cape"
+	desc = "Common in the territory of the Elysium Republic, this cape is a traditional casual wear out there."
 	icon_state = "long_apparel_white"
 	mob_overlay_state = "long_apparel_white"
 	allowed = list(/obj/item/melee/skimitar)
@@ -59,7 +59,7 @@
 
 /obj/item/clothing/suit/space/elysm/junk
 	name = "Junk EVA Suit"
-	desc = "Скафандр состоящий из нескольких скреплённых частей других скафандров. Является кустарным аналогом обычного и в стандарте делается лишь в случае крайней необходимости или недостатка материалов.. Надевая его вы можете чувствовать некоторые болезненные ощущения. Возможно не стоило надевать такой хлам"
+	desc = "This EVA suit is composed of some other, more unfortunate space suits, and it looks and works like a piece of junk. It stings and cuts your body if you wear it, and you get a feeling that using a firesuit with some coffee would be a lot better decision..."
 	icon_state = "space_junk"
 	mob_overlay_state = "space_junk"
 	armor = list("melee" = -10, "bullet" = -10, "laser" = 0, "energy" = 0, "bomb" = -20, "bio" = 50, "rad" = 60, "fire" = 0, "acid" = 0)
@@ -68,12 +68,12 @@
 
 /obj/item/clothing/suit/space/elysm/EVA_armored
 	name = "Elysium EVA Suit"
-	desc = "Укреплённый EVA скафандр с присоеденённым к нему бронежелетом. Имеет множество потёртостей и мест с которых слезла краска, что свидетельствует о том что этот скафандр повидал уже многое. На левой руке и ноге имеется традиционная зелёная повязка, символизирующая флаг Республики Элизиум."
+	desc = "A reinforced EVA space suits with an armor vest attached to it. It has lots of abrasion marks and places where the paint has peeled off, this space suit has definetly seen much. It has Republic of Elysium flag armbands on the left arm and leg."
 	icon_state = "space_elysium"
 	mob_overlay_state = "space_elysium"
 	armor = list("melee" = 30, "bullet" = 20, "laser" = 30, "energy" = 30, "bomb" = 20, "bio" = 50, "rad" = 60, "fire" = 60, "acid" = 75)
 	slowdown = 0.5
-	allowed = list(/obj/item/flashlight, /obj/item/tank/internals, /obj/item/melee/skimitar)
+	allowed = list(/obj/item/flashlight, /obj/item/tank/internals, /obj/item/melee/skimitar, /obj/item/gun)
 
 /obj/item/clothing/under/rank/avanpost
 	icon = 'mod_celadon/_storge_icons/icons/obj/elysium_commander.dmi'

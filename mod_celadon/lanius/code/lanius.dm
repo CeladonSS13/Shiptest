@@ -23,8 +23,8 @@
 	toxic_food = VEGETABLES | DAIRY | CLOTH | GROSS | MEAT | RAW
 	meat = /obj/item/stack/sheet/plasteel{amount = 5}
 	species_language_holder = /datum/language_holder/lanius
-	brutemod = 0.75
-	burnmod = 0.75
+	brutemod = 0.70
+	burnmod = 0.70
 	punchdamagelow = 5
 	punchdamagehigh = 14
 	punchstunthreshold = 25

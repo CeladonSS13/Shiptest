@@ -7,7 +7,7 @@
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_RIOL
-	bodytype = BODYTYPE_RIOL | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID
+	bodytype = BODYTYPE_RIOL | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID | BODYTYPE_SNOUT
 
 /obj/item/bodypart/chest/riol
 	icon = 'mod_celadon/_storge_icons/icons/riol/riol_bodypats.dmi'

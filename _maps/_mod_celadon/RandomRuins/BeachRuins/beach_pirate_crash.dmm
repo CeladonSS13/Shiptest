@@ -400,6 +400,7 @@
 /obj/effect/turf_decal/weather/sand{
 	dir = 6
 	},
+/obj/effect/landmark/mission_poi/main/kill,
 /turf/open/floor/plating/asteroid/sand,
 /area/overmap_encounter/planetoid/cave/explored)
 "jZ" = (
@@ -1039,6 +1040,10 @@
 /obj/item/reagent_containers/food/snacks/meat/rawcrab,
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet,
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet,
+/obj/item/storage/box/donkpockets/donkpocketspicy{
+	desc = "Produced personally be CHUVAK TM. Ultra-spicy";
+	name = "CHUVAK TM Donk-pockets"
+	},
 /turf/open/floor/plating{
 	light_range = 2
 	},
@@ -1365,14 +1370,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/light/small/directional/east,
-/obj/machinery/porta_turret/syndicate/pod{
-	desc = "A turret built with substandard parts and run down further with age. Still capable of delivering lethal lasers to the odd space carp, but not much else.";
-	dir = 8;
-	faction = list("Frontiersmen");
-	lethal_projectile = /obj/projectile/beam/weak/penetrator;
-	lethal_projectile_sound = 'sound/weapons/plasma_cutter.ogg';
-	name = "laser turret"
-	},
+/obj/machinery/porta_turret/ruin/ramzi,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,

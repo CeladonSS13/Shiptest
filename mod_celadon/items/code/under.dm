@@ -123,3 +123,32 @@
 /obj/item/clothing/under/syndicate/tacticool/skirt/china
 	desc = "Just looking at it makes you want to buy an SKS, go into the woods, and -operate-. This one looks a more cheaper."
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
+/// MARK: MAID
+/obj/item/clothing/under/syndicate/skirt/maid
+	name = "tactical maid outfit"
+	desc = "A 'tactical' turtleneck fashioned to the likeness of a maid outfit. Why the Syndicate has these, you'll never know."
+	icon_state = "syndimaid"
+	item_state = "syndimaid"
+	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/under.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/under.dmi'
+
+/obj/item/clothing/under/syndicate/skirt/maid/Initialize()
+	. = ..()
+	var/obj/item/clothing/accessory/maidapron/syndicate/A = new (src)
+	attach_accessory(A)
+
+/obj/item/clothing/under/syndicate/inteq/skirt/maid
+	name = "inteq tactical maid outfit"
+	desc = "A 'tactical' turtleneck fashioned to the likeness of a maid outfit. This one is lovingly knitted in the colors of the IRMG."
+	icon_state = "inteqmaid"
+	item_state = "inteqmaid"
+	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/under.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/under.dmi'
+	can_adjust = FALSE
+	supports_variations = KEPORI_VARIATION | VOX_VARIATION | DIGITIGRADE_VARIATION_NO_NEW_ICON
+
+/obj/item/clothing/under/syndicate/inteq/skirt/maid/Initialize()
+	. = ..()
+	var/obj/item/clothing/accessory/maidapron/inteq/A = new (src)
+	attach_accessory(A)

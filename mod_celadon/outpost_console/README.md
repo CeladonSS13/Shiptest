@@ -30,6 +30,9 @@ ID мода: CELADON_OUTPOST_CONSOLE
 - `machinery.dm`
 - `gun.dm`
 - `ammo.dm`
+- `magazines.dm`
+- `spacesuit_armor.dm`
+- `exosuit_construction.dm`
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
   А также любая полезная информация.
@@ -48,6 +51,8 @@ ID мода: CELADON_OUTPOST_CONSOLE
 ### Изменения *кор кода*
 
 - `code/controllers/subsystem/economy.dm`
+- `code/modules/cargo/packs/spacesuit_armor.dm` 
+- `code/modules/cargo/packs/machinery.dm`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -95,7 +100,7 @@ ID мода: CELADON_OUTPOST_CONSOLE
 
 ### Авторы
 
-FeenieRU
+FeenieRU, MysticalFaceLesS
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.

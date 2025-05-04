@@ -3023,12 +3023,18 @@
 	pixel_y = 6;
 	pixel_x = -2
 	},
-/obj/item/ammo_box/magazine/modelh{
-	pixel_y = 6;
-	pixel_x = 2
-	},
 /obj/structure/table/wood,
 /obj/item/radio/headset/syndicate/alt/suns/command,
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 4;
+	pixel_y = 7
+	},
+/obj/item/storage/box/ammo/ferroslug,
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 4;
+	pixel_y = 7
+	},
+/obj/item/storage/box/ammo/ferroslug,
 /turf/open/floor/suns/diagonal{
 	color = "#543C30"
 	},
@@ -6583,7 +6589,11 @@
 	},
 /obj/item/storage/belt/security/military,
 /obj/item/storage/box/ammo/ferropellet,
-/obj/item/ammo_box/amagpellet_claris,
+/obj/item/storage/box/ammo/ferropellet,
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 4;
+	pixel_y = 7
+	},
 /turf/open/floor/suns/dark/plain,
 /area/ship/security)
 "Ma" = (
@@ -7520,7 +7530,6 @@
 	pixel_x = 8;
 	pixel_y = 11
 	},
-/obj/item/hypospray/mkii/CMO,
 /obj/item/clothing/glasses/hud/health/sunglasses,
 /obj/structure/table/wood,
 /obj/item/healthanalyzer/advanced,
@@ -7545,6 +7554,7 @@
 	pixel_x = -5;
 	pixel_y = -1
 	},
+/obj/item/hypospray/mkii/mkiii,
 /turf/open/floor/suns/diagonal{
 	color = "#543C30"
 	},
