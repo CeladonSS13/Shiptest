@@ -93,7 +93,10 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - ADD: `code/modules/mob/living/life.dm` - Добавление magboots_handle_gravity
 
+- EDIT: `code/modules/overmap/objects/event_datum.dm`
+
 - EDIT: `code/modules/missions/outpost/research_mission.dm` - Окргуление координат
+
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
