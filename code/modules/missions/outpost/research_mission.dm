@@ -18,7 +18,7 @@
 	var/storm_value = 150
 	// [CELADON-ADD] - CELADON_FIXES - Чиним повторное сканирование
 	///List of checked stectors
-    var/list/checked_sectors = list()
+	var/list/checked_sectors = list()
 	// [/CELADON-ADD]
 
 /datum/mission/outpost/research/New(...)
