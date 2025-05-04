@@ -419,10 +419,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/jungle/cavecrew/dormitories)
-"eS" = (
-/obj/machinery/porta_turret/ruin/ramzi,
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/storage)
 "eW" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/closet/crate,
@@ -445,12 +441,6 @@
 	},
 /turf/open/floor/plating/dirt/jungle,
 /area/overmap_encounter/planetoid/cave/explored)
-"fo" = (
-/obj/machinery/porta_turret/ruin/ramzi{
-	dir = 5
-	},
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/storage)
 "fs" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
@@ -568,10 +558,6 @@
 	dir = 8
 	},
 /area/ruin/jungle/cavecrew/engineering)
-"gQ" = (
-/obj/machinery/porta_turret/ruin/ramzi,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/jungle/cavecrew/bridge)
 "gU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/thinplating/dark/corner,
@@ -1505,12 +1491,13 @@
 	},
 /area/ruin/jungle/cavecrew/dormitories)
 "sJ" = (
-/obj/item/clothing/head/crown/fancy{
-	pixel_y = 9;
-	pixel_x = 6
-	},
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
+	},
+/obj/item/clothing/head/crown{
+	pixel_x = 6;
+	pixel_y = 9;
+	name = "magnificent crown"
 	},
 /turf/open/floor/plating,
 /area/ruin/jungle/cavecrew/dormitories)
@@ -2086,9 +2073,6 @@
 /obj/machinery/power/apc/auto_name/directional/west,
 /turf/open/floor/plating/dirt/jungle,
 /area/ruin/powered)
-"zz" = (
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/storage)
 "zG" = (
 /obj/structure/flora/grass/jungle{
 	pixel_x = -13;
@@ -2263,7 +2247,9 @@
 /turf/open/floor/plating,
 /area/ruin/jungle/cavecrew/hallway)
 "BI" = (
-/obj/machinery/porta_turret/ruin/ramzi,
+/obj/machinery/porta_turret/ruin/ramzi{
+	faction = list("Frontiersmen")
+	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/storage)
 "BO" = (
@@ -2665,7 +2651,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "GN" = (
-/obj/machinery/porta_turret/ruin/ramzi,
+/obj/machinery/porta_turret/ruin/ramzi{
+	faction = list("Frontiersmen")
+	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ruin/jungle/cavecrew/dormitories)
 "GR" = (
@@ -3639,12 +3627,6 @@
 	},
 /turf/open/water/jungle,
 /area/overmap_encounter/planetoid/cave/explored)
-"SH" = (
-/obj/machinery/porta_turret/ruin/ramzi{
-	dir = 5
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/storage)
 "SI" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
@@ -5765,13 +5747,13 @@ vk
 fO
 Ty
 Ty
-eS
+BI
 ue
 ue
 ue
 fO
 fO
-zz
+fO
 Ty
 Ty
 Ty
@@ -6155,13 +6137,13 @@ fO
 fO
 Ty
 Ty
-eS
+BI
 fO
 fO
 fO
 fO
 fO
-gQ
+BI
 Ty
 Ty
 Ty

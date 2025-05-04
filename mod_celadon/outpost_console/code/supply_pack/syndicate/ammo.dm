@@ -208,19 +208,19 @@ MARK: 5.56x42mm
 	name = "5.56x42 Ammo Box Crate"
 	desc = "Contains a 5.56x42mm ammo box for guns like the SMR-80 Hydra"
 	contains = list(/obj/item/storage/box/ammo/a556_42)
-	cost = 700
+	cost = 300
 
 /datum/supply_pack/faction/syndicate/ammo/c556_ammo_box_ap
 	name = "5.56x42 AP Ammo Box Crate"
 	desc = "Contains a 5.56x42mm AP ammo box for guns like the SMR-80 Hydra"
 	contains = list(/obj/item/storage/box/ammo/a556_42/ap)
-	cost = 900
+	cost = 500
 
 /datum/supply_pack/faction/syndicate/ammo/c556_ammo_box_hp
 	name = "5.56x42 HP Ammo Box Crate"
 	desc = "Contains a 5.56x42mm HP ammo box for guns like the SMR-80 Hydra"
 	contains = list(/obj/item/storage/box/ammo/a556_42/hp)
-	cost = 800
+	cost = 375
 
 
 /*

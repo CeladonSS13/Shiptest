@@ -1228,6 +1228,10 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/mineral/titanium/tiled,
 /area/ship/security/armory)
+"oc" = (
+/obj/effect/decal/cleanable/crayon,
+/turf/open/floor/plating/airless,
+/area/ship/maintenance)
 "oe" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 1
@@ -3799,12 +3803,6 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
-"Wd" = (
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "engie"
-	},
-/turf/open/floor/plating/airless,
-/area/ship/maintenance)
 "We" = (
 /obj/effect/turf_decal/box/corners{
 	dir = 1
@@ -5075,7 +5073,7 @@ lJ
 lJ
 YJ
 DR
-Wd
+oc
 oy
 MD
 SV
