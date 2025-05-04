@@ -167,6 +167,7 @@
 		// to_chat(user, "<span class='warning'>You're incapable of slapping in your current state.</span>") // CELADON-EDIT - ORIGINAL
 		to_chat(user, span_warning("В текущем состоянии ты не можешь дать пощечину."))
 		// [/CELADON-EDIT]
+
 /datum/emote/living/carbon/noogie
 	key = "noogie"
 	key_third_person = "noogies"

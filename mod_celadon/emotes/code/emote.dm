@@ -883,6 +883,7 @@
 	key_third_person = "gurgles"
 	message = "издает неприятное хлюпанье."
 	emote_type = EMOTE_AUDIBLE
+	vary = TRUE
 
 /datum/emote/living/gurgle/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
@@ -890,6 +891,9 @@
 	if(!isjellyperson(user))
 		return FALSE
 	return TRUE
+
+/datum/emote/living/gurgle/get_sound(mob/living/user)
+	return 'mod_celadon/_storge_sounds/sound/emotes/jelly/gurgle.ogg'
 
 /datum/emote/living/custom
 	key = "me"
@@ -1890,6 +1894,10 @@
 	key_third_person = "squishes"
 	message = "хлюпает."
 	emote_type = EMOTE_VISIBLE
+	vary = TRUE
+
+/datum/emote/living/carbon/human/jelly/squish/get_sound(mob/living/user)
+	return 'mod_celadon/_storge_sounds/sound/plushes/voice/slime_squish.ogg'
 
 /datum/emote/living/carbon/human/jelly/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
@@ -1903,12 +1911,20 @@
 	key_third_person = "bubbles"
 	message = "булькает."
 	emote_type = EMOTE_VISIBLE
+	vary = TRUE
+
+/datum/emote/living/carbon/human/jelly/bubble/get_sound(mob/living/user)
+	return 'mod_celadon/_storge_sounds/sound/emotes/mob_effects/slime_bubble.ogg'
 
 /datum/emote/living/carbon/human/jelly/pop
 	key = "pop"
 	key_third_person = "popped"
 	message = "хлопает ртом."
 	emote_type = EMOTE_VISIBLE
+	vary = TRUE
+
+/datum/emote/living/carbon/human/jelly/pop/get_sound(mob/living/user)
+	return 'mod_celadon/_storge_sounds/sound/emotes/mob_effects/slime_pop.ogg'
 
 // VOX & KEPORI
 
@@ -1950,6 +1966,7 @@
 	key_third_person = "quill"
 	message = "шуршит перьями."
 	emote_type = EMOTE_VISIBLE
+	vary = TRUE
 
 /datum/emote/living/carbon/human/quill/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
@@ -1957,6 +1974,11 @@
 	if(!iskepori(user) && !isvox(user))
 		return FALSE
 	return TRUE
+
+/datum/emote/living/carbon/human/quill/get_sound(mob/living/user)
+	return pick(
+		'mod_celadon/_storge_sounds/sound/emotes/kepori/quill_1.ogg',
+		'mod_celadon/_storge_sounds/sound/emotes/kepori/quill_2.ogg')
 
 // SKELETON
 
@@ -1995,7 +2017,7 @@
 /datum/emote/living/carbon/human/kepiwoop/can_run_emote(mob/user, status_check = TRUE , intentional)
 	return FALSE
 
-/datum/emote/living/carbon/sign/signal			// Не работает так так задумано
+/datum/emote/living/carbon/sign/signal			// Не работает так как задумано
 	key = "signal"
 
 /datum/emote/living/carbon/sign/signal/can_run_emote(mob/user, status_check = TRUE , intentional)
