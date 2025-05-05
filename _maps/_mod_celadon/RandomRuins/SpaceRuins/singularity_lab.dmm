@@ -9117,8 +9117,9 @@
 /obj/effect/gibspawner,
 /obj/item/gun/energy/lasercannon{
 	desc = "An advanced laser cannon, a laser etched inscription in the handle states 'NT-LS-1013'. The casing is made of a lightweight alloy.";
-	icon_state = "pulse";
-	name = "NT-LS-1013"
+	name = "NT-LS-1013";
+	icon_state = "pulse_carbine";
+	icon = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/48x32.dmi'
 	},
 /turf/open/floor/plating/asteroid,
 /area/ruin/space/has_grav/singularitylab)

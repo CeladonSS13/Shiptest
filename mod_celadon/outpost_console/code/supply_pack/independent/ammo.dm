@@ -321,7 +321,7 @@ MARK: 5.56x42
 	name = "5.56x42mm Ammo Box Crate"
 	desc = "Contains one 60-round 5.56x42mm box for most newer rifles."
 	contains = list(/obj/item/storage/box/ammo/a556_42)
-	cost = 300
+	cost = 500
 
 // /datum/supply_pack/faction/independent/ammo/ammoa556_ap
 // 	name = "5.56x42mm AP Ammo Box Crate"
@@ -333,7 +333,7 @@ MARK: 5.56x42
 	name = "5.56x42mm HP Ammo Box Crate"
 	desc = "Contains one 60-round 5.56x42mm Hollow Point box for most newer rifles."
 	contains = list(/obj/item/storage/box/ammo/a556_42/hp)
-	cost = 375
+	cost = 575
 
 /*
 MARK: 5.56x45

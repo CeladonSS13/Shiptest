@@ -30,20 +30,7 @@
 /obj/effect/decal/cleanable/blood/splatter{
 	pixel_y = 15
 	},
-/obj/item/ammo_casing/shotgun/buckshot{
-	icon_state = "buckshot-spent";
-	desc = "A 12 gauge buckshot shell. It is spent.";
-	projectile_type = null;
-	pixel_x = 6;
-	pixel_y = -1
-	},
-/obj/item/ammo_casing/shotgun/buckshot{
-	icon_state = "buckshot-spent";
-	desc = "A 12 gauge buckshot shell. It is spent.";
-	projectile_type = null;
-	pixel_x = -7;
-	pixel_y = -9
-	},
+/obj/item/ammo_casing/spent/slug/buck,
 /turf/open/floor/wood,
 /area/ruin/jungle)
 "bi" = (
@@ -114,10 +101,10 @@
 /area/ruin/jungle)
 "bR" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light/broken,
 /obj/structure/spacevine{
 	name = "vines"
 	},
+/obj/machinery/light/broken/directional/south,
 /turf/open/floor/wood,
 /area/ruin/jungle)
 "ca" = (
@@ -183,9 +170,7 @@
 	pixel_y = 32
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light/broken{
-	dir = 1
-	},
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/wood,
 /area/ruin/jungle)
 "dn" = (
@@ -565,7 +550,7 @@
 /turf/open/floor/plasteel/grimy,
 /area/ruin/jungle)
 "kw" = (
-/obj/machinery/light/broken,
+/obj/machinery/light/broken/directional/south,
 /turf/open/floor/wood,
 /area/ruin/jungle)
 "kx" = (
@@ -617,9 +602,7 @@
 	pixel_x = -24
 	},
 /obj/effect/turf_decal/siding/wood,
-/obj/machinery/light/broken{
-	dir = 1
-	},
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/plasteel/grimy,
 /area/ruin/jungle)
 "kF" = (
@@ -679,7 +662,7 @@
 /obj/effect/turf_decal/siding/wood,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/generic,
-/obj/machinery/light/broken,
+/obj/machinery/light/broken/directional/south,
 /turf/open/floor/wood,
 /area/ruin/jungle)
 "lb" = (
@@ -739,6 +722,13 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood,
+/area/ruin/jungle)
+"lK" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/ammo_casing/spent/slug/buck,
+/turf/open/floor/wood/walnut{
+	icon_state = "wood-broken"
+	},
 /area/ruin/jungle)
 "lM" = (
 /turf/closed/indestructible/wood,
@@ -907,9 +897,7 @@
 "oe" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light/broken{
-	dir = 1
-	},
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/wood,
 /area/ruin/jungle)
 "of" = (
@@ -975,6 +963,7 @@
 	pixel_x = 3;
 	pixel_y = -14
 	},
+/obj/item/ammo_casing/spent/slug/buck,
 /turf/open/floor/wood,
 /area/ruin/jungle)
 "pY" = (
@@ -1012,25 +1001,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/item/ammo_casing/shotgun/buckshot{
-	icon_state = "buckshot-spent";
-	desc = "A 12 gauge buckshot shell. It is spent.";
-	projectile_type = null
-	},
-/obj/item/ammo_casing/shotgun/buckshot{
-	icon_state = "buckshot-spent";
-	desc = "A 12 gauge buckshot shell. It is spent.";
-	projectile_type = null;
-	pixel_x = -5;
-	pixel_y = -6
-	},
-/obj/item/ammo_casing/shotgun/buckshot{
-	icon_state = "buckshot-spent";
-	desc = "A 12 gauge buckshot shell. It is spent.";
-	projectile_type = null;
-	pixel_x = 6;
-	pixel_y = -1
-	},
+/obj/item/ammo_casing/spent/slug/buck,
 /turf/open/floor/wood,
 /area/ruin/jungle)
 "qB" = (
@@ -1078,9 +1049,7 @@
 	pixel_y = -6
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light/broken{
-	dir = 4
-	},
+/obj/machinery/light/broken/directional/east,
 /turf/open/floor/wood,
 /area/ruin/jungle)
 "rN" = (
@@ -1144,6 +1113,10 @@
 	icon_state = "wood-broken4"
 	},
 /area/ruin/jungle)
+"sW" = (
+/obj/item/ammo_casing/spent/slug/buck,
+/turf/open/floor/wood,
+/area/ruin/jungle)
 "tb" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 8
@@ -1189,9 +1162,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/machinery/light/broken{
-	dir = 4
-	},
+/obj/machinery/light/broken/directional/east,
 /turf/open/floor/wood,
 /area/ruin/jungle)
 "ui" = (
@@ -1610,12 +1581,10 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light/broken{
-	dir = 4
-	},
 /obj/structure/spacevine{
 	name = "vines"
 	},
+/obj/machinery/light/broken/directional/east,
 /turf/open/floor/wood{
 	icon_state = "wood-broken7"
 	},
@@ -1624,14 +1593,8 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/item/ammo_casing/shotgun/buckshot{
-	icon_state = "buckshot-spent";
-	desc = "A 12 gauge buckshot shell. It is spent.";
-	projectile_type = null;
-	pixel_x = -4;
-	pixel_y = 6
-	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/ammo_casing/spent/slug/buck,
 /turf/open/floor/wood,
 /area/ruin/jungle)
 "Bl" = (
@@ -1799,10 +1762,10 @@
 /area/ruin/jungle)
 "EE" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light/broken,
 /mob/living/carbon/monkey/angry{
 	faction = list("jungle")
 	},
+/obj/machinery/light/broken/directional/south,
 /turf/open/floor/wood{
 	icon_state = "wood-broken3"
 	},
@@ -1914,12 +1877,10 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/machinery/light/broken{
-	dir = 4
-	},
 /obj/structure/spacevine{
 	name = "vines"
 	},
+/obj/machinery/light/broken/directional/east,
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
@@ -2601,12 +2562,10 @@
 /area/ruin/jungle)
 "NX" = (
 /obj/effect/turf_decal/siding/wood,
-/obj/machinery/light/broken{
-	dir = 1
-	},
 /obj/structure/spacevine{
 	name = "vines"
 	},
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/plasteel/grimy,
 /area/ruin/jungle)
 "NY" = (
@@ -2774,13 +2733,7 @@
 /turf/open/floor/wood,
 /area/ruin/jungle)
 "Qy" = (
-/obj/item/ammo_casing/shotgun/buckshot{
-	icon_state = "buckshot-spent";
-	desc = "A 12 gauge buckshot shell. It is spent.";
-	projectile_type = null;
-	pixel_x = -5;
-	pixel_y = -6
-	},
+/obj/item/ammo_casing/spent/slug/buck,
 /turf/open/floor/wood/walnut,
 /area/ruin/jungle)
 "QF" = (
@@ -2837,9 +2790,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/machinery/light/broken{
-	dir = 1
-	},
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/wood,
 /area/ruin/jungle)
 "Sa" = (
@@ -2912,9 +2863,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light/broken{
-	dir = 1
-	},
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/wood,
 /area/ruin/jungle)
 "SN" = (
@@ -2937,9 +2886,7 @@
 /area/ruin/jungle)
 "Tb" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light/broken{
-	dir = 8
-	},
+/obj/machinery/light/broken/directional/west,
 /turf/open/floor/wood{
 	icon_state = "wood-broken2"
 	},
@@ -2982,10 +2929,10 @@
 /turf/open/floor/wood,
 /area/ruin/jungle)
 "TW" = (
-/obj/machinery/light/broken,
 /obj/structure/spacevine{
 	name = "vines"
 	},
+/obj/machinery/light/broken/directional/south,
 /turf/open/floor/plating/dirt/jungle,
 /area/ruin/jungle)
 "TX" = (
@@ -3051,9 +2998,7 @@
 	pixel_x = 13
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light/broken{
-	dir = 1
-	},
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/wood,
 /area/ruin/jungle)
 "Vt" = (
@@ -3172,7 +3117,7 @@
 	pixel_x = 8;
 	pixel_y = 7
 	},
-/obj/machinery/light/broken,
+/obj/machinery/light/broken/directional/south,
 /turf/open/floor/wood,
 /area/ruin/jungle)
 "Xk" = (
@@ -3225,9 +3170,7 @@
 /obj/structure/sign/poster/official/pda_ad{
 	pixel_x = -32
 	},
-/obj/machinery/light/broken{
-	dir = 8
-	},
+/obj/machinery/light/broken/directional/west,
 /turf/open/floor/wood,
 /area/ruin/jungle)
 "XV" = (
@@ -3365,10 +3308,8 @@
 /obj/effect/turf_decal/siding/brown{
 	dir = 8
 	},
-/obj/machinery/light/dim{
-	dir = 8
-	},
 /obj/effect/decal/cleanable/cobweb,
+/obj/machinery/light/dim/directional/west,
 /turf/open/floor/carpet/nanoweave,
 /area/ruin/jungle)
 "Zw" = (
@@ -3897,7 +3838,7 @@ Jo
 Vu
 Hj
 vs
-lb
+lK
 qm
 QV
 ff
@@ -4451,7 +4392,7 @@ NX
 Kj
 Xm
 rN
-xf
+sW
 XV
 mP
 UH

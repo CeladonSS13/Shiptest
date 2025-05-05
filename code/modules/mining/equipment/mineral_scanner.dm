@@ -96,15 +96,10 @@
 	plane = FULLSCREEN_PLANE
 	layer = FLASH_LAYER
 	icon = 'icons/effects/ore_visuals.dmi'
-	// [CELADON-EDIT] - RETURN_CONTENT
-	// appearance_flags = TILE_BOUND
-	// pixel_x = 0
-	// pixel_y = 0	// ORIGINAL
-	appearance_flags = 0
-	pixel_x = -224
-	pixel_y = -224
-	// [/CELADON-EDIT]
+	appearance_flags = TILE_BOUND
 	duration = 35
+	pixel_x = 0
+	pixel_y = 0
 
 /obj/effect/temp_visual/mining_overlay/Initialize()
 	. = ..()

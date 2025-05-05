@@ -882,10 +882,10 @@
 	},
 /obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/industrial/hatch/yellow,
-/obj/machinery/atmospherics/components/unary/portables_connector/layer2{
-	dir = 4
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 4;
+	piping_layer = 2
 	},
-/obj/machinery/portable_atmospherics/canister/air,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "oS" = (
@@ -1188,8 +1188,7 @@
 	dir = 1
 	},
 /obj/machinery/modular_computer/console/preset/command{
-	dir = 1;
-	icon_state = "console-off"
+	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/button/door{
@@ -1883,8 +1882,7 @@
 /area/ship/external)
 "BP" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
-	dir = 8;
-	pixel_x = 16
+	dir = 4
 	},
 /obj/effect/turf_decal/spline/fancy/transparent/syndiered{
 	dir = 8
@@ -2037,7 +2035,6 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 9
 	},
-/obj/machinery/portable_atmospherics/canister/air,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "Ep" = (
@@ -2748,8 +2745,7 @@
 /area/ship/hallway/central)
 "Po" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
-	dir = 8;
-	pixel_x = 16
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{

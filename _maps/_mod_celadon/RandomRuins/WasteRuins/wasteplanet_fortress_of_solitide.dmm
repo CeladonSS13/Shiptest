@@ -330,7 +330,7 @@
 /area/ruin/powered)
 "cS" = (
 /obj/structure/table/wood/fancy/orange,
-/obj/item/food/cake/clown_cake,
+/obj/item/food/cake/bsvc,
 /turf/open/floor/plating,
 /area/ruin/powered)
 "cU" = (
@@ -765,7 +765,7 @@
 /turf/open/floor/plating,
 /area/ruin/powered)
 "hd" = (
-/obj/item/food/cakeslice/clown_slice,
+/obj/item/food/cakeslice/bsvc,
 /turf/open/floor/plating/rust,
 /area/ruin/powered)
 "he" = (
@@ -1396,7 +1396,7 @@
 /area/ruin/powered)
 "nc" = (
 /obj/structure/table/reinforced,
-/obj/item/food/cakeslice/brain,
+/obj/item/food/cakeslice/trumpet,
 /turf/open/floor/plating,
 /area/ruin/powered)
 "nd" = (
@@ -3828,10 +3828,6 @@
 /area/ruin/powered)
 "JX" = (
 /obj/effect/decal/remains/human,
-/obj/item/clothing/head/crown/fancy{
-	pixel_x = 2;
-	pixel_y = 12
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt,
@@ -3843,6 +3839,10 @@
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/item/clothing/head/crown{
+	pixel_x = 2;
+	pixel_y = 12
 	},
 /turf/open/floor/plating,
 /area/ruin/powered)

@@ -324,7 +324,6 @@
 /turf/open/floor/plasteel/white,
 /area/ruin/icemoon/tesla_lab/dorms)
 "bf" = (
-/obj/machinery/portable_atmospherics/canister/chlorine,
 /obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2,
 /obj/item/wrench/crescent{
 	pixel_y = 10;
@@ -332,6 +331,9 @@
 	},
 /obj/effect/turf_decal/corner/opaque/solgovblue{
 	dir = 5
+	},
+/obj/machinery/portable_atmospherics/canister/chlorine{
+	icon_state = "green"
 	},
 /turf/open/floor/plasteel/white,
 /area/ruin/icemoon/tesla_lab/lab_halls)
@@ -1744,10 +1746,6 @@
 /area/ruin/icemoon/tesla_lab/containment)
 "hs" = (
 /obj/structure/table,
-/obj/item/reagent_containers/food/drinks/beaglemug{
-	pixel_y = 8;
-	pixel_x = -4
-	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/item/reagent_containers/pill/happinesspsych{
 	pixel_x = 11;
@@ -1764,6 +1762,10 @@
 /obj/item/reagent_containers/pill/happinesspsych{
 	pixel_x = 5;
 	pixel_y = 3
+	},
+/obj/item/reagent_containers/food/drinks/mug{
+	pixel_y = 8;
+	pixel_x = -4
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ruin/icemoon/tesla_lab/office_two)
@@ -3360,9 +3362,6 @@
 	pixel_y = 7;
 	pixel_x = -6
 	},
-/obj/item/reagent_containers/food/drinks/beaglemug{
-	pixel_y = 2
-	},
 /obj/item/radio/intercom/directional/east{
 	frequency = 1473
 	},
@@ -3378,6 +3377,9 @@
 	pixel_x = 2;
 	dir = 1;
 	id = "tls"
+	},
+/obj/item/reagent_containers/food/drinks/mug{
+	pixel_y = 2
 	},
 /turf/open/floor/wood/icemoon,
 /area/ruin/icemoon/tesla_lab/office)

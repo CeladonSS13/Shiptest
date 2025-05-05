@@ -350,6 +350,7 @@
 		// [/CELADON-ADD]
 		if("rename_ship")
 			var/new_name = params["newName"]
+			var/ship_name = (!COOLDOWN_FINISHED(current_ship, rename_prefix_cooldown)) ? "[new_name]" : "[current_ship.source_template.prefix] [new_name]" // [CELADON-ADD] - Показывает актуальное название для корабля.
 			if(!new_name)
 				return
 			new_name = trim(new_name)
@@ -358,7 +359,7 @@
 			if(!reject_bad_text(new_name, MAX_CHARTER_LEN) || CHAT_FILTER_CHECK(new_name))
 				say("Error: Replacement designation rejected by system.")
 				return
-			if(tgui_alert(usr, "Are you sure you want to rename the ship to the \"[current_ship.source_template.prefix] [new_name]\"?", "Rename Confirmation", list("Yes", "No")) != "Yes")
+			if(tgui_alert(usr, "Are you sure you want to rename the ship to the \"[ship_name]\"?", "Rename Confirmation", list("Yes", "No")) != "Yes")
 				return
 			if(!current_ship.Rename(new_name))
 				say("Error: [COOLDOWN_TIMELEFT(current_ship, rename_cooldown)/10] seconds until ship designation can be changed.")
