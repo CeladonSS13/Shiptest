@@ -57,7 +57,7 @@
 /datum/overmap/event/carp	// вынесено в mod_celadon/fixes/code/research_mission.dm, оставлено дял того чтобы не удалять кучу зависимостей
 	name = "carp migration (moderate)"
 	desc = "A migratory school of space carp. They travel at high speeds, and flying through them may cause them to impact your ship"
-	base_icon_state = "carp_medium_"
+	base_icon_state = "carp_moderate_"
 	// [CELADON-REMOVE] - CELADON_OVERMAP_ICON - спрайты некросивые получаюца
 	// default_color = "#7b1ca8"
 	// [/CELADON-REMOVE]
@@ -75,9 +75,33 @@
 /datum/overmap/event/carp/alter_token_appearance()
 	icon_suffix = "[rand(1, 4)]"
 	..()
+
+	var/orestext
+	if(primary_ores)
+		orestext += span_boldnotice("\nInitial scans show a high concentration of the following ores:\n")
+		for(var/obj/ore as anything in primary_ores)
+			var/hex = ORES_TO_COLORS_LIST[ore]
+			orestext += "<font color='[hex]'>	- [ore.name]\n</font>"
+		desc += orestext
+
+		token.desc += span_notice("\nYou could land within the [src] if you were to [span_bold("Dock to Empty Space")] while flying over...\n")
+
+	if(safe_speed)
+		token.desc += span_notice("\nYou can safely navigate through this if your ship is travelling under [span_bold("[safe_speed] Gm/s")].")
+
 	if(current_overmap.override_object_colors)
 		token.color = current_overmap.hazard_primary_color
 	current_overmap.post_edit_token_state(src)
+
+/datum/overmap/event/carp/apply_effect()
+	for(var/datum/overmap/ship/controlled/Ship in get_nearby_overmap_objects())
+		if(Ship.get_speed() > safe_speed)
+			var/how_fast =  (Ship.get_speed() - safe_speed)
+			if(prob(chance_to_affect + how_fast))
+				affect_ship(Ship)
+
+/datum/overmap/event/carp/affect_ship(datum/overmap/ship/controlled/Ship)
+	spawn_meteor(meteor_types, Ship.shuttle_port.get_virtual_level(), 0, Ship.shuttle_port)
 
 /datum/overmap/event/carp/minor
 	name = "carp migration (minor)"
@@ -106,7 +130,7 @@
 /datum/overmap/event/dust	// вынесено в mod_celadon/fixes/code/research_mission.dm, оставлено дял того чтобы не удалять кучу зависимостей
 	name = "dust cloud"
 	desc = "A cloud of spaceborne dust. Relatively harmless, unless you're travelling at relative speeds"
-	base_icon_state = "dust"
+	base_icon_state = "dust_"
 	// [CELADON-REMOVE] - CELADON_OVERMAP_ICON - спрайты некросивые получаюца
 	// default_color = "#506469"
 	// [/CELADON-REMOVE]
@@ -123,6 +147,30 @@
 /datum/overmap/event/dust/alter_token_appearance()
 	icon_suffix = "[rand(1, 4)]"
 	..()
+
+	var/orestext
+	if(primary_ores)
+		orestext += span_boldnotice("\nInitial scans show a high concentration of the following ores:\n")
+		for(var/obj/ore as anything in primary_ores)
+			var/hex = ORES_TO_COLORS_LIST[ore]
+			orestext += "<font color='[hex]'>	- [ore.name]\n</font>"
+		desc += orestext
+
+		token.desc += span_notice("\nYou could land within the [src] if you were to [span_bold("Dock to Empty Space")] while flying over...\n")
+
+	if(safe_speed)
+		token.desc += span_notice("\nYou can safely navigate through this if your ship is travelling under [span_bold("[safe_speed] Gm/s")].")
+
 	if(current_overmap.override_object_colors)
-		token.color = current_overmap.hazard_secondary_color
+		token.color = current_overmap.hazard_primary_color
 	current_overmap.post_edit_token_state(src)
+
+/datum/overmap/event/dust/apply_effect()
+	for(var/datum/overmap/ship/controlled/Ship in get_nearby_overmap_objects())
+		if(Ship.get_speed() > safe_speed)
+			var/how_fast =  (Ship.get_speed() - safe_speed)
+			if(prob(chance_to_affect + how_fast))
+				affect_ship(Ship)
+
+/datum/overmap/event/dust/affect_ship(datum/overmap/ship/controlled/Ship)
+	spawn_meteor(meteor_types, Ship.shuttle_port.get_virtual_level(), 0, Ship.shuttle_port)
