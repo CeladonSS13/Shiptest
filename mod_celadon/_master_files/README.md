@@ -37,6 +37,8 @@ ID мода: CELADON_MASTER_FILES
 - REMOVE: `code\modules\client\preferences_savefile.dm`
 - ADD: `code\modules\client\preferences_savefile.dm`
 
+- EDIT: `code/controllers/configuration/entries/game_options.dm` - Отключаем автоматику, именно там, ибо такие настройки сервера не перезаписываются как правило
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
