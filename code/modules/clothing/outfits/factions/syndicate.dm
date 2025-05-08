@@ -880,22 +880,6 @@
 
 //scientists
 
-/datum/outfit/job/syndicate/science/Director
-	name = "Syndicate - Research and Development Team Leader (Cybersun)"
-	id_assignment = "Research and Development Team Leader"
-	jobtype = /datum/job/rd
-	job_icon = "headofpersonnel"
-
-	ears = /obj/item/radio/headset/syndicate/alt
-	uniform = /obj/item/clothing/under/syndicate/cybersun/officer
-	suit = /obj/item/clothing/suit/cybersun_suit
-	shoes = /obj/item/clothing/shoes/jackboots
-	head = /obj/item/clothing/head/HoS/cybersun
-	gloves = /obj/item/clothing/gloves/combat
-	id = /obj/item/card/id/syndicate_command/crew_id
-	glasses = /obj/item/clothing/glasses/sunglasses
-
-
 /datum/outfit/job/syndicate/science
 	name = "Syndicate - Scientist"
 	jobtype = /datum/job/scientist
