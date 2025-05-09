@@ -110,5 +110,5 @@
 
 /obj/effect/mob_spawn/human/corpse/clip/minuteman/forcefem
 	name = "CLIP Minuteman Spawner"
-	outfit = /datum/outfit/job/clip/minutemen/grunt/dressed
+	outfit = /datum/outfit/job/solgov/sonnensoldner
 	mob_gender = FEMALE
