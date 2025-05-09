@@ -19,7 +19,7 @@
 	value = 4000
 	mission_limit = 1
 	author = "Concerned Parents"
-	faction = /datum/faction/clip
+	faction = /datum/faction/solgov
 	mission_reward = /obj/item/gun/ballistic/automatic/smg/cm5/compact
 	setpiece_item = /mob/living/carbon/human
 
