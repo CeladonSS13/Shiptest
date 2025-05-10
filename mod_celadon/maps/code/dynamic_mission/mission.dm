@@ -15,7 +15,7 @@
 
 /datum/mission/ruin/daughter
 	name = "find our daughter!"
-	desc = "Our daughter was recently deployed out to the Frontier - and we haven't heard from her, or the SolGov - or anyone in weeks! Please find her and make sure she's okay..."
+	desc = "Our daughter was recently deployed out to the Frontier - and we haven't heard from her, or the SolFed - or anyone in weeks! Please find her and make sure she's okay..."
 	value = 4000
 	mission_limit = 1
 	author = "Concerned Parents"
