@@ -87,3 +87,57 @@
 	understood_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
 								/datum/language/lanius_rattle = list(LANGUAGE_ATOM))
 	spoken_languages = list(/datum/language/lanius_rattle = list(LANGUAGE_ATOM))
+
+/datum/language_holder/human
+	understood_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
+								/datum/language/solarian_international = list(LANGUAGE_ATOM))
+	spoken_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
+							/datum/language/solarian_international = list(LANGUAGE_ATOM))
+
+/datum/language_holder/jelly
+	understood_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
+								/datum/language/slime = list(LANGUAGE_ATOM))
+	spoken_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
+							/datum/language/slime = list(LANGUAGE_ATOM))
+
+/datum/language_holder/lizard
+	understood_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
+								/datum/language/kalixcian_common = list(LANGUAGE_ATOM))
+	spoken_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
+							/datum/language/kalixcian_common = list(LANGUAGE_ATOM))
+
+/datum/language_holder/ipc
+	understood_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
+								/datum/language/machine = list(LANGUAGE_ATOM))
+	spoken_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
+							/datum/language/machine = list(LANGUAGE_ATOM))
+
+/datum/language_holder/moth
+	understood_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
+								/datum/language/moffic = list(LANGUAGE_ATOM))
+	spoken_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
+							/datum/language/moffic = list(LANGUAGE_ATOM))
+
+/datum/language_holder/ethereal
+	understood_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
+								/datum/language/kalixcian_common = list(LANGUAGE_ATOM))
+	spoken_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
+							/datum/language/kalixcian_common = list(LANGUAGE_ATOM))
+
+/datum/language_holder/kepori
+	understood_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
+								/datum/language/teceti_unified = list(LANGUAGE_ATOM))
+	spoken_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
+							/datum/language/teceti_unified = list(LANGUAGE_ATOM))
+
+/datum/language_holder/vox
+	understood_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
+								/datum/language/vox_pidgin = list(LANGUAGE_ATOM))
+	spoken_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
+							/datum/language/vox_pidgin = list(LANGUAGE_ATOM))
+
+/datum/language_holder/spider
+	understood_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
+								/datum/language/rachnidian = list(LANGUAGE_ATOM))
+	spoken_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
+							/datum/language/rachnidian = list(LANGUAGE_ATOM))
