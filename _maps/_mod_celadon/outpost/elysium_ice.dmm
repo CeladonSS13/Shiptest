@@ -950,7 +950,7 @@
 /area/outpost/exterior)
 "aBJ" = (
 /obj/effect/spawner/structure/window/reinforced/indestructible,
-/turf/open/floor/plating/grass/beach/dark,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/outpost/crew/garden)
 "aCv" = (
 /obj/structure/statue_ships/nt_darect/sw,
@@ -2278,7 +2278,7 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
 "boy" = (
-/turf/open/floor/plating/grass,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle/yellow,
 /area/outpost/crew/garden)
 "boR" = (
 /turf/closed/indestructible/necropolis,
@@ -2487,7 +2487,7 @@
 /area/outpost/fraction/nanotrasen)
 "bxm" = (
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/plating/grass/beach/dark,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/outpost/crew/garden)
 "bxu" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -20040,7 +20040,7 @@
 	},
 /area/outpost/medical/surgery_1)
 "lLY" = (
-/turf/open/floor/plating/grass/beach/dark,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle/dark,
 /area/outpost/crew/garden)
 "lMd" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -20502,7 +20502,7 @@
 /area/outpost/crew/cryo)
 "mbO" = (
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/plating/grass,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle/dark,
 /area/outpost/crew/garden)
 "mbR" = (
 /obj/effect/turf_decal/siding/blue{
@@ -20549,7 +20549,7 @@
 /area/outpost/fraction/solfed)
 "mct" = (
 /obj/structure/flora/tree/chapel,
-/turf/open/floor/plating/grass,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle/dark,
 /area/outpost/crew/garden)
 "mcH" = (
 /obj/item/storage/fancy/candle_box{
@@ -22098,7 +22098,7 @@
 /area/outpost/operations/outpost_command)
 "nbZ" = (
 /obj/structure/flora/tree/jungle,
-/turf/open/floor/plating/grass,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle/dark,
 /area/outpost/crew/garden)
 "ncd" = (
 /obj/structure/transit_tube/curved{
@@ -32099,6 +32099,9 @@
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/garden)
+"sSm" = (
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
+/area/outpost/crew/garden)
 "sSA" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
@@ -40564,7 +40567,7 @@
 /area/outpost/security/bay)
 "xOh" = (
 /obj/structure/flora/tree/jungle/small,
-/turf/open/floor/plating/grass/beach/dark,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/outpost/crew/garden)
 "xOj" = (
 /obj/effect/turf_decal/siding/white,
@@ -55301,10 +55304,10 @@ ePa
 gok
 aBJ
 boy
+sSm
+sSm
+sSm
 lLY
-lLY
-lLY
-boy
 lLY
 aji
 qlB
@@ -55487,10 +55490,10 @@ gok
 gok
 gok
 aBJ
-lLY
+boy
 xOh
-lLY
-lLY
+sSm
+sSm
 xOh
 lLY
 aji
@@ -55674,12 +55677,12 @@ juA
 gok
 gok
 aBJ
-lLY
-lLY
-lLY
-lLY
-lLY
-lLY
+sSm
+sSm
+sSm
+sSm
+sSm
+sSm
 aji
 qlB
 sRL
@@ -55861,12 +55864,12 @@ gok
 ebM
 gok
 aBJ
-lLY
-lLY
+sSm
+sSm
 mct
-lLY
-lLY
-lLY
+sSm
+sSm
+sSm
 aji
 xJz
 pCc
@@ -56048,11 +56051,11 @@ gok
 gok
 gok
 aBJ
-lLY
-lLY
-lLY
-lLY
-lLY
+sSm
+sSm
+sSm
+sSm
+sSm
 xOh
 aji
 sRL
@@ -56235,12 +56238,12 @@ vqN
 uOJ
 gok
 aBJ
-lLY
-lLY
-lLY
+sSm
+boy
+boy
 xOh
-lLY
-lLY
+sSm
+sSm
 eqH
 sRL
 pCc
@@ -56422,10 +56425,10 @@ gok
 gok
 gok
 aBJ
-lLY
+sSm
 nbZ
-lLY
-lLY
+sSm
+sSm
 lLY
 lLY
 wkl
@@ -56609,10 +56612,10 @@ vqN
 juA
 gok
 aBJ
+sSm
+sSm
+sSm
 lLY
-lLY
-lLY
-boy
 lLY
 lLY
 aji
@@ -56796,7 +56799,7 @@ gok
 gok
 gok
 aBJ
-lLY
+sSm
 bxm
 bxm
 bxm
