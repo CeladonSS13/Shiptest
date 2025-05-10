@@ -2564,11 +2564,12 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/singularitylab/cargo)
 "kw" = (
-/obj/machinery/power/rad_collector/anchored,
+/obj/structure/lattice/catwalk,
+/obj/structure/lattice/catwalk,
 /obj/structure/cable/yellow{
-	icon_state = "0-8"
+	icon_state = "4-8"
 	},
-/turf/open/floor/plating,
+/turf/open/space/basic,
 /area/space/nearstation)
 "ky" = (
 /obj/machinery/shower{
@@ -3779,11 +3780,11 @@
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/space/has_grav/singularitylab/civvie)
 "oR" = (
-/obj/machinery/power/rad_collector/anchored,
 /obj/structure/cable/yellow{
-	icon_state = "0-9"
+	icon_state = "4-9"
 	},
-/turf/open/floor/plating,
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
 /area/space/nearstation)
 "oS" = (
 /obj/effect/turf_decal/corner/opaque/white/full,
@@ -4043,7 +4044,7 @@
 /turf/open/floor/plating/asteroid,
 /area/ruin/space/has_grav/singularitylab)
 "pT" = (
-/obj/item/banner/engineering{
+/obj/item/banner/engineering/mundane{
 	anchored = 1
 	},
 /turf/open/floor/engine/hull,
@@ -6264,11 +6265,11 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/singularitylab/reactor)
 "zv" = (
-/obj/machinery/power/rad_collector/anchored,
 /obj/structure/cable/yellow{
-	icon_state = "0-10"
+	icon_state = "4-10"
 	},
-/turf/open/floor/plating,
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
 /area/space/nearstation)
 "zw" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -8612,11 +8613,15 @@
 /turf/open/floor/plating/asteroid,
 /area/ruin/space/has_grav/singularitylab)
 "HR" = (
-/obj/item/banner/engineering{
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/lattice/catwalk,
+/obj/item/banner/engineering/mundane{
 	anchored = 1
 	},
-/turf/open/floor/engine/hull,
-/area/ruin/space/has_grav/singularitylab/reactor)
+/turf/open/space/basic,
+/area/space/nearstation)
 "HS" = (
 /obj/machinery/light/directional/east,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -9117,9 +9122,8 @@
 /obj/effect/gibspawner,
 /obj/item/gun/energy/lasercannon{
 	desc = "An advanced laser cannon, a laser etched inscription in the handle states 'NT-LS-1013'. The casing is made of a lightweight alloy.";
-	name = "NT-LS-1013";
-	icon_state = "pulse_carbine";
-	icon = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/48x32.dmi'
+	icon_state = "pulse";
+	name = "NT-LS-1013"
 	},
 /turf/open/floor/plating/asteroid,
 /area/ruin/space/has_grav/singularitylab)
@@ -10014,9 +10018,12 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/singularitylab)
 "MV" = (
-/obj/item/stack/cable_coil/cut/yellow,
-/turf/open/floor/engine/hull/reinforced,
-/area/ruin/space/has_grav/singularitylab/reactor)
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/rad_collector/anchored,
+/turf/open/floor/plating,
+/area/space/nearstation)
 "MX" = (
 /obj/structure/transit_tube/curved{
 	dir = 1
@@ -16423,8 +16430,8 @@ id
 pE
 UC
 oT
-Ed
-Ed
+oT
+oT
 uD
 pE
 Gi
@@ -16498,11 +16505,11 @@ id
 id
 id
 pE
-Rc
-zu
-dz
-Rt
-bH
+oT
+oT
+oT
+oT
+oT
 pE
 wF
 pE
@@ -16575,11 +16582,11 @@ pE
 pE
 pE
 pE
-Ix
-cG
-GY
-cG
-dp
+oT
+oT
+Ed
+Ed
+oT
 pE
 pF
 pE
@@ -16652,11 +16659,11 @@ FD
 VH
 VH
 pE
-Ix
-cG
-Oz
-GL
-Wp
+Rc
+zu
+dz
+Rt
+bH
 pE
 Er
 VH
@@ -16731,7 +16738,7 @@ nI
 pE
 Ix
 cG
-Jj
+GY
 cG
 dp
 pE
@@ -16807,10 +16814,10 @@ Ar
 nI
 pE
 Ix
-ye
-Dw
-nc
-Ao
+cG
+Oz
+GL
+Wp
 pE
 Dp
 nI
@@ -16883,11 +16890,11 @@ nI
 nI
 nI
 pE
-gC
-ag
-Hh
-ag
-lD
+Ix
+cG
+Jj
+cG
+dp
 pE
 xV
 zf
@@ -16960,11 +16967,11 @@ hu
 Ar
 nI
 pE
-da
-da
-da
-da
-da
+Ix
+ye
+Dw
+nc
+Ao
 pE
 PC
 nI
@@ -17036,13 +17043,13 @@ nI
 nI
 nI
 nI
-UD
-nI
-nI
-nI
-nI
-nI
-MV
+pE
+gC
+ag
+Hh
+ag
+lD
+pE
 KE
 nI
 nI
@@ -17113,13 +17120,13 @@ nI
 nI
 nI
 nI
-HR
-nI
-nI
-nI
-nI
-nI
-HR
+pE
+da
+da
+da
+da
+da
+pE
 KE
 nI
 nI
@@ -17190,13 +17197,13 @@ FJ
 FJ
 FJ
 Rl
-rt
+HR
 FJ
 FJ
 Bq
 FJ
 FJ
-rt
+HR
 pM
 FJ
 FJ
@@ -17270,7 +17277,7 @@ VH
 nI
 nI
 zv
-kw
+zK
 oR
 nI
 nI
@@ -17346,9 +17353,9 @@ nI
 VH
 nI
 nI
-nI
-nI
-nI
+MV
+MV
+MV
 nI
 nI
 VH
@@ -17647,10 +17654,10 @@ VH
 nI
 nI
 ZO
+FJ
+FJ
 Bx
 nI
-nI
-nI
 VH
 nI
 nI
@@ -17660,10 +17667,10 @@ nI
 nI
 nI
 VH
-nI
-nI
 nI
 Qh
+FJ
+FJ
 ri
 nI
 nI
@@ -17955,10 +17962,10 @@ VH
 nI
 nI
 Sj
+FJ
+FJ
 Bx
 nI
-nI
-nI
 VH
 nI
 nI
@@ -17968,10 +17975,10 @@ nI
 nI
 nI
 VH
-nI
-nI
 nI
 Qh
+FJ
+FJ
 Wo
 nI
 nI
@@ -18269,11 +18276,11 @@ nI
 nI
 VH
 nI
+eu
 nI
 nI
 nI
-nI
-nI
+eu
 nI
 VH
 nI
@@ -18346,11 +18353,11 @@ nI
 nI
 VH
 nI
-eu
+kw
 nI
 nI
 nI
-eu
+KE
 nI
 VH
 nI

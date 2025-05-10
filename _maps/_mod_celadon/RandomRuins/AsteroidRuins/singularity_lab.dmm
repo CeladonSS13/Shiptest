@@ -2564,10 +2564,10 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/singularitylab/cargo)
 "kw" = (
-/obj/machinery/power/rad_collector/anchored,
 /obj/structure/cable/yellow{
-	icon_state = "0-8"
+	icon_state = "0-2"
 	},
+/obj/machinery/power/rad_collector/anchored,
 /turf/open/floor/plating,
 /area/space/nearstation)
 "ky" = (
@@ -3779,11 +3779,11 @@
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/space/has_grav/singularitylab/civvie)
 "oR" = (
-/obj/machinery/power/rad_collector/anchored,
 /obj/structure/cable/yellow{
-	icon_state = "0-9"
+	icon_state = "4-9"
 	},
-/turf/open/floor/plating,
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
 /area/space/nearstation)
 "oS" = (
 /obj/effect/turf_decal/corner/opaque/white/full,
@@ -4005,6 +4005,9 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
 	},
+/obj/item/banner/engineering/mundane{
+	anchored = 1
+	},
 /turf/open/space/basic,
 /area/space/nearstation)
 "pN" = (
@@ -4043,7 +4046,7 @@
 /turf/open/floor/plating/asteroid,
 /area/ruin/space/has_grav/singularitylab)
 "pT" = (
-/obj/item/banner/engineering{
+/obj/item/banner/engineering/mundane{
 	anchored = 1
 	},
 /turf/open/floor/engine/hull,
@@ -6264,11 +6267,11 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/singularitylab/reactor)
 "zv" = (
-/obj/machinery/power/rad_collector/anchored,
 /obj/structure/cable/yellow{
-	icon_state = "0-10"
+	icon_state = "4-10"
 	},
-/turf/open/floor/plating,
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
 /area/space/nearstation)
 "zw" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -6844,8 +6847,10 @@
 /turf/open/floor/plating/asteroid,
 /area/ruin/space/has_grav/singularitylab)
 "Bx" = (
-/obj/machinery/power/rad_collector/anchored,
-/obj/structure/cable/yellow,
+/obj/structure/lattice/catwalk,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plating,
 /area/space/nearstation)
 "BB" = (
@@ -8612,11 +8617,9 @@
 /turf/open/floor/plating/asteroid,
 /area/ruin/space/has_grav/singularitylab)
 "HR" = (
-/obj/item/banner/engineering{
-	anchored = 1
-	},
-/turf/open/floor/engine/hull,
-/area/ruin/space/has_grav/singularitylab/reactor)
+/obj/structure/chair/comfy/orange/directional/east,
+/turf/open/floor/plating/asteroid/airless,
+/area/ruin/space/has_grav/singularitylab/civvie)
 "HS" = (
 /obj/machinery/light/directional/east,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -9117,9 +9120,8 @@
 /obj/effect/gibspawner,
 /obj/item/gun/energy/lasercannon{
 	desc = "An advanced laser cannon, a laser etched inscription in the handle states 'NT-LS-1013'. The casing is made of a lightweight alloy.";
-	name = "NT-LS-1013";
-	icon = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/48x32.dmi';
-	icon_state = "pulse_carbine"
+	icon_state = "pulse";
+	name = "NT-LS-1013"
 	},
 /turf/open/floor/plating/asteroid,
 /area/ruin/space/has_grav/singularitylab)
@@ -10014,9 +10016,12 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/singularitylab)
 "MV" = (
-/obj/item/stack/cable_coil/cut/yellow,
-/turf/open/floor/engine/hull/reinforced,
-/area/ruin/space/has_grav/singularitylab/reactor)
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/rad_collector/anchored,
+/turf/open/floor/plating,
+/area/space/nearstation)
 "MX" = (
 /obj/structure/transit_tube/curved{
 	dir = 1
@@ -10942,10 +10947,8 @@
 	},
 /area/ruin/space/has_grav/singularitylab)
 "Qh" = (
+/obj/structure/cable/yellow,
 /obj/machinery/power/rad_collector/anchored,
-/obj/structure/cable/yellow{
-	icon_state = "0-2"
-	},
 /turf/open/floor/plating,
 /area/space/nearstation)
 "Qi" = (
@@ -11229,6 +11232,9 @@
 	icon_state = "1-2"
 	},
 /obj/item/book/manual/wiki/engineering,
+/obj/item/banner/engineering/mundane{
+	anchored = 1
+	},
 /turf/open/space/basic,
 /area/space/nearstation)
 "Rp" = (
@@ -11650,6 +11656,16 @@
 	desc = "A patch of overgrown grass. Hints of plasteel plating lay under it.";
 	name = "grass"
 	},
+/area/ruin/space/has_grav/singularitylab/civvie)
+"SO" = (
+/obj/effect/turf_decal/siding/thinplating,
+/obj/structure/cable{
+	icon_state = "5-9"
+	},
+/obj/item/banner/engineering/mundane{
+	anchored = 1
+	},
+/turf/open/floor/plasteel,
 /area/ruin/space/has_grav/singularitylab/civvie)
 "SQ" = (
 /obj/machinery/rnd/production/protolathe/department/engineering,
@@ -16419,8 +16435,8 @@ id
 pE
 UC
 oT
-Ed
-Ed
+oT
+oT
 uD
 pE
 Gi
@@ -16494,11 +16510,11 @@ id
 id
 id
 pE
-Rc
-zu
-dz
-Rt
-bH
+oT
+oT
+oT
+oT
+oT
 pE
 wF
 pE
@@ -16571,11 +16587,11 @@ pE
 pE
 pE
 pE
-Ix
-cG
-GY
-cG
-dp
+oT
+oT
+Ed
+Ed
+oT
 pE
 pF
 pE
@@ -16648,11 +16664,11 @@ FD
 VH
 VH
 pE
-Ix
-cG
-Oz
-GL
-Wp
+Rc
+zu
+dz
+Rt
+bH
 pE
 Er
 VH
@@ -16710,7 +16726,7 @@ bC
 ty
 SZ
 ty
-Bc
+HR
 hS
 tR
 id
@@ -16727,7 +16743,7 @@ nI
 pE
 Ix
 cG
-Jj
+GY
 cG
 dp
 pE
@@ -16803,10 +16819,10 @@ Ar
 nI
 pE
 Ix
-ye
-Dw
-nc
-Ao
+cG
+Oz
+GL
+Wp
 pE
 Dp
 nI
@@ -16879,11 +16895,11 @@ nI
 nI
 nI
 pE
-gC
-ag
-Hh
-ag
-lD
+Ix
+cG
+Jj
+cG
+dp
 pE
 xV
 zf
@@ -16956,11 +16972,11 @@ hu
 Ar
 nI
 pE
-da
-da
-da
-da
-da
+Ix
+ye
+Dw
+nc
+Ao
 pE
 PC
 nI
@@ -17032,13 +17048,13 @@ nI
 nI
 nI
 nI
-UD
-nI
-nI
-nI
-nI
-nI
-MV
+pE
+gC
+ag
+Hh
+ag
+lD
+pE
 KE
 nI
 nI
@@ -17109,13 +17125,13 @@ nI
 nI
 nI
 nI
-HR
-nI
-nI
-nI
-nI
-nI
-HR
+pE
+da
+da
+da
+da
+da
+pE
 KE
 nI
 nI
@@ -17266,7 +17282,7 @@ VH
 nI
 nI
 zv
-kw
+zK
 oR
 nI
 nI
@@ -17342,9 +17358,9 @@ nI
 VH
 nI
 nI
-nI
-nI
-nI
+MV
+MV
+MV
 nI
 nI
 VH
@@ -17643,23 +17659,23 @@ VH
 nI
 nI
 ZO
-Bx
-nI
-nI
-nI
-VH
-nI
-nI
-nI
-VH
-nI
-nI
-nI
-VH
-nI
-nI
-nI
+FJ
+FJ
 Qh
+nI
+VH
+nI
+nI
+nI
+VH
+nI
+nI
+nI
+VH
+nI
+kw
+rt
+rt
 ri
 nI
 nI
@@ -17942,7 +17958,7 @@ ty
 ty
 Bc
 hS
-yL
+SO
 id
 id
 id
@@ -17952,22 +17968,22 @@ nI
 nI
 Sj
 Bx
-nI
-nI
-nI
-VH
-nI
-nI
-nI
-VH
-nI
-nI
-nI
-VH
-nI
-nI
-nI
+FJ
 Qh
+nI
+VH
+nI
+nI
+nI
+VH
+nI
+nI
+nI
+VH
+nI
+kw
+rt
+rt
 Wo
 nI
 nI
@@ -18265,11 +18281,11 @@ nI
 nI
 VH
 nI
+eu
 nI
 nI
 nI
-nI
-nI
+eu
 nI
 VH
 nI
@@ -18342,11 +18358,11 @@ nI
 nI
 VH
 nI
-eu
+KE
 nI
 nI
 nI
-eu
+KE
 nI
 VH
 nI
