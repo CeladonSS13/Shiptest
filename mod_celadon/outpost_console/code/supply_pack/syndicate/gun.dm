@@ -3,19 +3,19 @@
 
 /datum/supply_pack/faction/syndicate/gun/ringneck
 	name = "Ringneck Pistol Crate"
-	desc = "Contains a civilian variant of the Ringneck pistol, produced by Scarborough Arms and chambered in 10mm."
+	desc = "Contains a civilian variant of the Ringneck pistol, produced by Scarborough Arms and chambered in 10x22mm."
 	cost = 1000
 	contains = list(/obj/item/storage/guncase/pistol/ringneck)
 
 /datum/supply_pack/faction/syndicate/gun/pc76
 	name = "PC-76 'Ringneck' Pistol Crate"
-	desc = "Contains a noticably smaller military variant of the Ringneck pistol, chambered in 10mm."
+	desc = "Contains a noticably smaller military variant of the Ringneck pistol, chambered in 10x22mm."
 	cost = 1250
 	contains = list(/obj/item/storage/guncase/pistol/pc76)
 
 /datum/supply_pack/faction/syndicate/gun/asp
 	name = "BC-81 'Asp' Crate"
-	desc = "Contains a compact armor-piercing sidearm, chambered in 5.7mm"
+	desc = "Contains a compact armor-piercing sidearm, chambered in 5.7x39mm"
 	cost = 1250
 	contains = list(/obj/item/storage/guncase/pistol/asp)
 
@@ -54,14 +54,14 @@
 
 /datum/supply_pack/faction/syndicate/gun/rattlesnake
 	name = "Rattlesnake Machinepistol Crate"
-	desc = "Contains an automatic machinepistol produced by Scarborough Arms, chambered in 9mm."
+	desc = "Contains an automatic machinepistol produced by Scarborough Arms, chambered in 9x18mm."
 	cost = 2500
 	contains = list(/obj/item/storage/guncase/rattlesnake)
 	crate_name = "Machinepistol crate"
 
 /datum/supply_pack/faction/syndicate/gun/sidewinder
 	name = "Sidewinder SMG Crate"
-	desc = "Contains a Sidewinder PDW produced by Scarborough Arms and chambered in 5.7mm for armor-piercing capabilities."
+	desc = "Contains a Sidewinder PDW produced by Scarborough Arms and chambered in 5.7x39mm for armor-piercing capabilities."
 	cost = 3000
 	contains = list(/obj/item/storage/guncase/sidewinder)
 	crate_name = "SMG crate"

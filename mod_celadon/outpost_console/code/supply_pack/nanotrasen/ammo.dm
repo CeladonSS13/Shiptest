@@ -5,34 +5,34 @@
 [*] - отсутствуют.
 [-] - отключены.
 
-> 9mm
+> 9x18mm
 > 4.63x30mm
 > ferro pellets
 
-MARK: 9mm
+MARK: 9x18mm
 */
 
 /datum/supply_pack/faction/nanotrasen/ammo/c9mm_ammo_box
-	name = "9mm ammo box"
-	desc = "9mm ammo box for guns like the commander or the saber SMG. Contains 50 shells"
+	name = "9x18mm ammo box"
+	desc = "9x18mm ammo box for guns like the commander or the saber SMG. Contains 50 shells"
 	contains = list(/obj/item/storage/box/ammo/c9mm)
 	cost = 250
 
 /datum/supply_pack/faction/nanotrasen/ammo/c9mm_ammo_box_ap
-	name = "9mm AP ammo box"
-	desc = "9mm AP ammo box for guns like the commander or the saber SMG. Contains 50 shells"
+	name = "9x18mm AP ammo box"
+	desc = "9x18mm AP ammo box for guns like the commander or the saber SMG. Contains 50 shells"
 	contains = list(/obj/item/storage/box/ammo/c9mm_ap)
 	cost = 450
 
 /datum/supply_pack/faction/nanotrasen/ammo/c9mm_ammo_box_hp
-	name = "9mm HP ammo box"
-	desc = "9mm HP ammo box for guns like the commander or the saber SMG. Contains 50 shells"
+	name = "9x18mm HP ammo box"
+	desc = "9x18mm HP ammo box for guns like the commander or the saber SMG. Contains 50 shells"
 	contains = list(/obj/item/storage/box/ammo/c9mm_hp)
 	cost = 350
 
 /datum/supply_pack/faction/nanotrasen/ammo/c9mm_rubber
-	name = "9mm Rubber ammo box"
-	desc = "9mm Rubber ammo box for guns like the commander or the saber SMG. Contains 50 shells"
+	name = "9x18mm Rubber ammo box"
+	desc = "9x18mm Rubber ammo box for guns like the commander or the saber SMG. Contains 50 shells"
 	contains = list(/obj/item/storage/box/ammo/c9mm_rubber)
 	cost = 250
 

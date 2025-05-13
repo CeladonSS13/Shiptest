@@ -7,8 +7,8 @@
 
 > .22lr
 > .357
-> 9mm
-> 10mm
+> 9x18mm
+> 10x22mm
 > .45
 > 5.7x39mm
 > 12 Gauge
@@ -61,52 +61,52 @@ MARK: .357
 	cost = 320
 
 /*
-MARK: 9mm
+MARK: 9x18mm
 */
 
 /datum/supply_pack/faction/syndicate/ammo/c9mm_ammo_box
-	name = "9mm Ammo Box Crate"
-	desc = "9mm ammo box for guns like the commander. Contains 45 shells"
+	name = "9x18mm Ammo Box Crate"
+	desc = "9x18mm ammo box for guns like the commander. Contains 45 shells"
 	contains = list(/obj/item/storage/box/ammo/c9mm)
 	cost = 200
 
 /datum/supply_pack/faction/syndicate/ammo/c9mmap_ammo_box
-	name = "9mm AP Ammo Box Crate"
-	desc = "Contains a 45-round 9mm box loaded with armor piercing ammo."
+	name = "9x18mm AP Ammo Box Crate"
+	desc = "Contains a 45-round 9x18mm box loaded with armor piercing ammo."
 	contains = list(/obj/item/storage/box/ammo/c9mm_ap)
 	cost = 250
 
 /datum/supply_pack/faction/syndicate/ammo/c9mmhp_ammo_box
-	name = "9mm HP Ammo Box Crate"
-	desc = "Contains a 45-round 9mm box loaded with hollow point ammo, great against unarmored targets."
+	name = "9x18mm HP Ammo Box Crate"
+	desc = "Contains a 45-round 9x18mm box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c9mm_hp)
 	cost = 250
 
 /datum/supply_pack/faction/syndicate/ammo/c9mm_rubber
-	name = "9mm Rubber Ammo Box Crate"
-	desc = "Contains a 45-round 9mm box loaded with less-than-lethal rubber rounds."
+	name = "9x18mm Rubber Ammo Box Crate"
+	desc = "Contains a 45-round 9x18mm box loaded with less-than-lethal rubber rounds."
 	contains = list(/obj/item/storage/box/ammo/c9mm_rubber)
 	cost = 200
 
 /*
-MARK: 10mm
+MARK: 10x22mm
 */
 
 /datum/supply_pack/faction/syndicate/ammo/c10mm_ammo_box
-	name = "10mm Ammo Box Crate"
-	desc = "Contains a 10mm ammo box for guns like the Ringneck"
+	name = "10x22mm Ammo Box Crate"
+	desc = "Contains a 10x22mm ammo box for guns like the Ringneck"
 	contains = list(/obj/item/storage/box/ammo/c10mm)
 	cost = 350
 
 /datum/supply_pack/faction/syndicate/ammo/c10mm_ammo_box_ap
-	name = "10mm AP Ammo Box Crate"
-	desc = "Contains a 10mm AP ammo box for guns like the Ringneck"
+	name = "10x22mm AP Ammo Box Crate"
+	desc = "Contains a 10x22mm AP ammo box for guns like the Ringneck"
 	contains = list(/obj/item/storage/box/ammo/c10mm_ap)
 	cost = 350
 
 /datum/supply_pack/faction/syndicate/ammo/c10mm_ammo_box_hp
-	name = "10mm HP Ammo Box Crate"
-	desc = "Contains a 10mm HP ammo box for guns like the Ringneck"
+	name = "10x22mm HP Ammo Box Crate"
+	desc = "Contains a 10x22mm HP ammo box for guns like the Ringneck"
 	contains = list(/obj/item/storage/box/ammo/c10mm_hp)
 	cost = 350
 

@@ -131,7 +131,7 @@ MARK: 10x22
 
 // /datum/supply_pack/faction/independent/ammo/ammoc10mmrubber_ammo_box
 // 	name = "10x22mm Rubber Ammo Box Crate"
-// 	desc = "Contains a 36-round 10mm box loaded with less-than-lethal rubber rounds."
+// 	desc = "Contains a 36-round 10x22mm box loaded with less-than-lethal rubber rounds."
 // 	contains = list(/obj/item/storage/box/ammo/c10mm_rubber)
 // 	cost = 210
 

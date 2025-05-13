@@ -23,14 +23,14 @@
 
 /datum/supply_pack/faction/inteq/gun/mongrel
 	name = "SKM-44v Mongrel SMG Crate"
-	desc = "Contains a shortened variant of the SKM rechambered to 10mm and painted in the brown-and-gold of Inteq."
+	desc = "Contains a shortened variant of the SKM rechambered to 10x22mm and painted in the brown-and-gold of Inteq."
 	cost = 3000
 	contains = list(/obj/item/storage/guncase/mongrel)
 	crate_name = "SMG crate"
 
 /datum/supply_pack/faction/inteq/gun/kingsnake
 	name = "Kingsnake Machinepistol Crate"
-	desc = "Contains an automatic machinepistol chambered in 9mm, painted in the brown-and-gold of Inteq."
+	desc = "Contains an automatic machinepistol chambered in 9x18mm, painted in the brown-and-gold of Inteq."
 	cost = 2500
 	contains = list(/obj/item/storage/guncase/kingsnake)
 	crate_name = "Machinepistol crate"

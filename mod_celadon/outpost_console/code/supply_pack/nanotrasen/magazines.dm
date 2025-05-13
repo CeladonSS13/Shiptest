@@ -6,20 +6,20 @@ MARK: VI
 */
 
 /datum/supply_pack/faction/nanotrasen/magazine/co9mm_mag
-	name = "9mm Commander Magazine Crate"
-	desc = "Contains a 9mm magazine for the standard-issue Commander pistol, with a capacity of twelve rounds."
+	name = "9x18mm  Commander Magazine Crate"
+	desc = "Contains a 9x18mm  magazine for the standard-issue Commander pistol, with a capacity of twelve rounds."
 	contains = list(/obj/item/ammo_box/magazine/co9mm/empty)
 	cost = 150
 
 /datum/supply_pack/faction/nanotrasen/magazine/smgm9mm_mag
-	name = "9mm SMG Magazine Crate"
-	desc = "Contains a 9mm magazine for the Vector and Saber SMGs, with a capacity of thirty rounds."
+	name = "9x18mm  SMG Magazine Crate"
+	desc = "Contains a 9x18mm  magazine for the Vector and Saber SMGs, with a capacity of thirty rounds."
 	contains = list(/obj/item/ammo_box/magazine/smgm9mm/empty)
 	cost = 250
 
 /datum/supply_pack/faction/nanotrasen/magazine/wt550_mag
 	name = "WT-550 Auto Rifle Magazine Crate"
-	desc = "Contains a 20-round magazine for the WT-550 Auto Rifle. Each magazine is designed to facilitate rapid tactical reloads."
+	desc = "Contains a 9x18mm magazine for the WT-550 Auto Rifle, with a capacity of 30 rounds Each magazine is designed to facilitate rapid tactical reloads."
 	cost = 300
 	contains = list(/obj/item/ammo_box/magazine/wt550m9/empty)
 

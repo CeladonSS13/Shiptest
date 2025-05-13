@@ -116,12 +116,12 @@
 		start_empty = TRUE
 
 /obj/item/ammo_box/magazine/glock_standart
-	name = "\improper Glock 9mm magazine"
-	desc = "glock 9mm magazine"
+	name = "\improper Glock 9x18mm magazine"
+	desc = "glock 9x18mm magazine"
 	icon = 'mod_celadon/_storge_icons/icons/ammo/ammo.dmi'
 	item_state = "glock"
 	icon_state = "glock"
-	caliber = "9mm"
+	caliber = "9x18mm"
 	ammo_type = /obj/item/ammo_casing/c9mm
 	max_ammo = 17
 

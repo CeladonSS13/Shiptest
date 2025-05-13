@@ -100,20 +100,20 @@ MARK: VI
 
 /datum/supply_pack/faction/nanotrasen/gun/commanders
 	name = "VI 'Commander' handgun"
-	desc = "Contains a double stacked Commander pistol, produced by Nanotrasen along with Vigilitas Interstellar and is chambered in 9mm."
+	desc = "Contains a double stacked Commander pistol, produced by Nanotrasen along with Vigilitas Interstellar and is chambered in 9x18mm."
 	cost = 750
 	contains = list(/obj/item/storage/guncase/pistol/commander)
 
 /datum/supply_pack/faction/nanotrasen/gun/saber
 	name = "VI Saber SMG"
-	desc = "An experimental ballistic weapon produced by Vigilitas Interstellar. Uses 9mm rounds"
+	desc = "An experimental ballistic weapon produced by Vigilitas Interstellar. Uses 9x18mm rounds"
 	cost = 2500
 	contains = list(/obj/item/storage/guncase/saber)
 	crate_name = "SMG crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/vector
 	name = "VI Vector SMG"
-	desc = "Contains a Vector PDW produced by Sharplite Defense and chambered in 9mm."
+	desc = "Contains a Vector PDW produced by Sharplite Defense and chambered in 9x18mm."
 	cost = 3000
 	contains = list(/obj/item/storage/guncase/vector)
 	crate_name = "SMG crate"

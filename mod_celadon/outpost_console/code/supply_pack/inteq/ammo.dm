@@ -5,8 +5,8 @@
 [*] - отсутствуют.
 [-] - отключены.
 
-> 9mm
-> 10mm
+> 9x18mm
+> 10x22mm
 > .44 Roumain
 > .357
 > 12 Gauge
@@ -14,58 +14,58 @@
 > .308
 > 5.56x45mm
 
-MARK: 9mm
+MARK: 9x18mm
 */
 
 /datum/supply_pack/faction/inteq/ammo/c9mm_ammo_box
-	name = "9mm Ammo Box Crate"
-	desc = "9mm ammo box for guns like the commander. Contains 45 shells"
+	name = "9x18mm Ammo Box Crate"
+	desc = "9x18mm ammo box for guns like the commander. Contains 45 shells"
 	contains = list(/obj/item/storage/box/ammo/c9mm)
 	cost = 200
 
 /datum/supply_pack/faction/inteq/ammo/c9mmap_ammo_box
-	name = "9mm AP Ammo Box Crate"
-	desc = "Contains a 45-round 9mm box loaded with armor piercing ammo."
+	name = "9x18mm AP Ammo Box Crate"
+	desc = "Contains a 45-round 9x18mm box loaded with armor piercing ammo."
 	contains = list(/obj/item/storage/box/ammo/c9mm_ap)
 	cost = 250
 
 /datum/supply_pack/faction/inteq/ammo/c9mmhp_ammo_box
-	name = "9mm HP Ammo Box Crate"
-	desc = "Contains a 45-round 9mm box loaded with hollow point ammo, great against unarmored targets."
+	name = "9x18mm HP Ammo Box Crate"
+	desc = "Contains a 45-round 9x18mm box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c9mm_hp)
 	cost = 250
 
 /datum/supply_pack/faction/inteq/ammo/c9mmrubber_ammo_box
-	name = "9mm Rubber Ammo Box Crate"
-	desc = "Contains a 45-round 9mm box loaded with less-than-lethal rubber rounds."
+	name = "9x18mm Rubber Ammo Box Crate"
+	desc = "Contains a 45-round 9x18mm box loaded with less-than-lethal rubber rounds."
 	contains = list(/obj/item/storage/box/ammo/c9mm_rubber)
 	cost = 200
 
 /*
-MARK: 10mm
+MARK: 10x22mm
 */
 
 /datum/supply_pack/faction/inteq/ammo/c10mm_ammo_box
-	name = "10mm Ammo Box Crate"
-	desc = "Contains a 36-round 10mm box for SMGs like the SKM-44v Mongrel."
+	name = "10x22mm Ammo Box Crate"
+	desc = "Contains a 36-round 10x22mm box for SMGs like the SKM-44v Mongrel."
 	contains = list(/obj/item/storage/box/ammo/c10mm)
 	cost = 210
 
 /datum/supply_pack/faction/inteq/ammo/c10mmap_ammo_box
-	name = "10mm AP Ammo Box Crate"
-	desc = "Contains a 36-round 10mm box loaded with armor piercing ammo."
+	name = "10x22mm AP Ammo Box Crate"
+	desc = "Contains a 36-round 10x22mm box loaded with armor piercing ammo."
 	contains = list(/obj/item/storage/box/ammo/c10mm_ap)
 	cost = 260
 
 /datum/supply_pack/faction/inteq/ammo/c10mmhp_ammo_box
-	name = "10mm HP Ammo Box Crate"
-	desc = "Contains a 36-round 10mm box loaded with hollow point ammo, great against unarmored targets."
+	name = "10x22mm HP Ammo Box Crate"
+	desc = "Contains a 36-round 10x22mm box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c10mm_hp)
 	cost = 260
 
 /datum/supply_pack/faction/inteq/ammo/c10mmrubber_ammo_box
-	name = "10mm Rubber Ammo Box Crate"
-	desc = "Contains a 36-round 10mm box loaded with less-than-lethal rubber rounds."
+	name = "10x22mm Rubber Ammo Box Crate"
+	desc = "Contains a 36-round 10x22mm box loaded with less-than-lethal rubber rounds."
 	contains = list(/obj/item/storage/box/ammo/c10mm_rubber)
 	cost = 210
 
