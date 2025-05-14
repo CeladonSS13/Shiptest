@@ -4737,10 +4737,14 @@
 /obj/item/clothing/shoes/jackboots,
 /obj/item/clothing/suit/armor/vest/marine/medium,
 /obj/item/clothing/suit/armor/vest/marine/medium,
-/obj/item/clothing/head/helmet/bulletproof/m10,
-/obj/item/clothing/head/helmet/bulletproof/m10,
 /obj/item/storage/backpack/duffelbag/sec{
 	pixel_y = -13
+	},
+/obj/item/clothing/head/helmet/bulletproof/x11/frontier{
+	icon_state = "x11helm"
+	},
+/obj/item/clothing/head/helmet/bulletproof/x11/frontier{
+	icon_state = "x11helm"
 	},
 /turf/open/floor/vault,
 /area/ship/security/armory)
@@ -5622,7 +5626,9 @@
 /obj/item/clothing/gloves/color/black,
 /obj/item/clothing/suit/armor/vest,
 /obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/head/helmet/bulletproof/x11/frontier,
+/obj/item/clothing/head/helmet/bulletproof/x11/frontier{
+	mob_overlay_icon = 'icons/mob/clothing/head/armor.dmi'Ы
+	},
 /obj/item/clothing/head/helmet/bulletproof/x11/frontier,
 /turf/open/floor/vault,
 /area/ship/security/armory)
