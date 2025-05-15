@@ -1461,18 +1461,9 @@
 /obj/item/clothing/glasses/sunglasses/ballistic,
 /obj/item/clothing/glasses/sunglasses/ballistic,
 /obj/item/clothing/glasses/sunglasses/ballistic,
-/obj/item/clothing/head/helmet/sec{
-	armor = list("melee" = 15, "bullet" = 60, "laser" = 10, "energy" = 10, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50);
-	name = "bulletproof helmet"
-	},
-/obj/item/clothing/head/helmet/sec{
-	armor = list("melee" = 15, "bullet" = 60, "laser" = 10, "energy" = 10, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50);
-	name = "bulletproof helmet"
-	},
-/obj/item/clothing/head/helmet/sec{
-	armor = list("melee" = 15, "bullet" = 60, "laser" = 10, "energy" = 10, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50);
-	name = "bulletproof helmet"
-	},
+/obj/item/clothing/head/helmet/bulletproof,
+/obj/item/clothing/head/helmet/bulletproof,
+/obj/item/clothing/head/helmet/bulletproof,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "lW" = (
@@ -2018,6 +2009,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
 	},
+/obj/item/clothing/head/helmet/bulletproof/x11,
 /turf/open/floor/plasteel/lightgrey,
 /area/ship/hallway/central)
 "rW" = (
