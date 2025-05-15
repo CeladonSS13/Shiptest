@@ -38,7 +38,7 @@
 		"Desert" = "marine_light_desert",
 		"Woodland" = "marine_light_woodland",
 		"Snow" = "marine_light_snow",
-		"Urban" = "marine_heavy_urban",
+		"Urban" = "marine_light_urban",
 		)
 
 /obj/item/clothing/suit/armor/vest/marine/medium
@@ -47,7 +47,7 @@
 		"Desert" = "marine_medium_desert",
 		"Woodland" = "marine_medium_woodland",
 		"Snow" = "marine_medium_snow",
-		"Urban" = "marine_heavy_urban",
+		"Urban" = "marine_medium_urban",
 	)
 
 /obj/item/clothing/suit/armor/vest/marine/heavy
