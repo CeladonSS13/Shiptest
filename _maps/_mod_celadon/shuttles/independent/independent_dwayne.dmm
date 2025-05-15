@@ -278,12 +278,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/machinery/power/ship_gravity,
-/obj/structure/cable/yellow{
-	icon_state = "0-2"
-	},
-/turf/open/floor/plating,
+/turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
 "gm" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1027,6 +1022,10 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/orange/visible,
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "vP" = (
@@ -1609,6 +1608,14 @@
 /obj/effect/turf_decal/corner/opaque/blue/border,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
+"Le" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/orange/visible,
+/obj/structure/closet/emcloset/anchored,
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/engineering)
 "LE" = (
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 4
@@ -1868,7 +1875,10 @@
 	pixel_x = -2;
 	pixel_y = 1
 	},
-/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/power/apc/auto_name/directional/east{
+	pixel_x = 25;
+	pixel_y = 2
+	},
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
@@ -1877,6 +1887,11 @@
 /obj/item/clothing/gloves/color/yellow,
 /obj/item/reagent_containers/glass/beaker{
 	list_reagents = list(/datum/reagent/fuel=50)
+	},
+/obj/machinery/light_switch{
+	pixel_x = 19;
+	pixel_y = -9;
+	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
@@ -2143,7 +2158,6 @@
 /obj/machinery/atmospherics/components/unary/portables_connector{
 	dir = 8
 	},
-/obj/structure/closet/emcloset/anchored,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "Wi" = (
@@ -2166,11 +2180,6 @@
 "WE" = (
 /obj/structure/cable{
 	icon_state = "1-2"
-	},
-/obj/machinery/light_switch{
-	pixel_x = -25;
-	pixel_y = -25;
-	dir = 4
 	},
 /obj/effect/turf_decal/techfloor{
 	dir = 10
@@ -2469,7 +2478,7 @@ as
 kf
 WE
 vJ
-vJ
+Le
 MD
 ls
 gm
