@@ -144,13 +144,13 @@
 /obj/machinery/portable_atmospherics/canister/hydrogen
 	name = "hydrogen canister"
 	desc = "Hydrogen. Used in thruster fuel."
-	icon_state = "orangews"
+	icon_state = "grey"
 	gas_type = GAS_HYDROGEN
 
 /obj/machinery/portable_atmospherics/canister/methane
 	name = "methane canister"
 	desc = "Methane. Used in thruster fuel along with kitchen stoves."
-	icon_state = "methane"
+	icon_state = "black"
 	gas_type = GAS_METHANE
 
 /obj/machinery/portable_atmospherics/canister/ammonia
@@ -162,18 +162,18 @@
 /obj/machinery/portable_atmospherics/canister/sulfur_dioxide
 	name = "sulfur dioxide canister"
 	desc = "Sulfur Dioxide. Produced naturally by volcanos."
-	icon_state = "sulfurdioxide"
+	icon_state = "darkpurple"
 	gas_type = GAS_SO2
 
 /obj/machinery/portable_atmospherics/canister/fuel
 	name = "fuel canister"
 	desc = "A highly volatile mix of hydrogen and oxygen."
-	icon_state = "orangewshaz"
+	icon_state = "orange"
 
 /obj/machinery/portable_atmospherics/canister/fuel_test
 	name = "test canister"
 	desc = "Hydrogen. Used in thruster fuel."
-	icon_state = "orangewshaz"
+	icon_state = "nob"
 
 /obj/machinery/portable_atmospherics/canister/fuel_test/create_gas()
 	air_contents.set_moles(GAS_O2, 500)
@@ -183,14 +183,14 @@
 /obj/machinery/portable_atmospherics/canister/chlorine
 	name = "chlorine canister"
 	desc = "chlorine"
-	icon_state = "greenys"
+	icon_state = "darkyellow"
 	gas_type = GAS_CHLORINE
 	filled = 1
 
 /obj/machinery/portable_atmospherics/canister/hydrogen_chloride
 	name = "hydrogen chloride canister"
 	desc = "awful"
-	icon_state = "greenyshaz"
+	icon_state = "darkyellow"
 	gas_type = GAS_HYDROGEN_CHLORIDE
 	filled = 1
 
