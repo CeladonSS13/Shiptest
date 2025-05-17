@@ -196,3 +196,6 @@
 	open_turf_types = list(
 		/turf/open/floor/plating/asteroid/whitesands = 50
 	)
+
+/turf/open/floor/plating/asteroid/whitesands/grass
+	dug = TRUE // После вскапывания травы появляется чёрный квадрат, потому мы запрещаем трогать траву.

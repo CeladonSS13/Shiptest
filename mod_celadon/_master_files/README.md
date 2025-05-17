@@ -12,7 +12,7 @@
 <!-- Название мода. Не важно на русском или на английском. -->
 ## Мод-пример
 
-ID мода: MASTER_FILES
+ID мода: CELADON_MASTER_FILES
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -36,6 +36,8 @@ ID мода: MASTER_FILES
 
 - REMOVE: `code\modules\client\preferences_savefile.dm`
 - ADD: `code\modules\client\preferences_savefile.dm`
+
+- EDIT: `code/controllers/configuration/entries/game_options.dm` - Отключаем автоматику, именно там, ибо такие настройки сервера не перезаписываются как правило
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,

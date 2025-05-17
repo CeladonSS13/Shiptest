@@ -140,10 +140,10 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 		addtimer(CALLBACK(src, PROC_REF(announce_conflict), notadded), 5 SECONDS)
 
 /datum/preferences/proc/announce_conflict(list/notadded)
-	// [CELADON-ADD] - MASTER_FILES
+	// [CELADON-ADD] - CELADON_MASTER_FILES
 	return
 	// [/CELADON-ADD]
-	// [CELADON-REMOVE] - MASTER_FILES - Удалено по просьбе Voiko. Его это бесит
+	// [CELADON-REMOVE] - CELADON_MASTER_FILES - Удалено по просьбе Voiko. Его это бесит
 	/*
 	to_chat(parent, "<span class='userdanger'>KEYBINDING CONFLICT!!!\n\
 	There are new keybindings that have defaults bound to keys you already set, They will default to Unbound. You can bind them in Setup Character or Game Preferences\n\
@@ -726,9 +726,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["uplink_loc"]					, uplink_spawn_loc)
 	WRITE_FILE(S["randomise"]					, randomise)
 	WRITE_FILE(S["species"]						, pref_species.id)
-	WRITE_FILE(S["preferred_smoke_brand"]		, preferred_smoke_brand)
-	WRITE_FILE(S["preferred_smoke_brand"]		, preferred_smoke_brand)
 	WRITE_FILE(S["phobia"]						, phobia)
+	WRITE_FILE(S["preferred_smoke_brand"]		, preferred_smoke_brand)
 	WRITE_FILE(S["generic_adjective"]			, generic_adjective)
 	WRITE_FILE(S["body_size"]					, features["body_size"])
 	WRITE_FILE(S["prosthetic_limbs"]			, prosthetic_limbs)

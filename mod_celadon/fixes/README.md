@@ -20,7 +20,11 @@ ID мода: CELADON_FIXES
 
 ### Описание мода
 
-Этот мод Фиксит различные вещи в коде, например крашеры.
+Этот мод Фиксит различные вещи в коде, например крашеры или красную катану.
+
+Weebstick (Красная катана) теперь нельзя сломать, 
+вытащив меч при подготовке блинка. (Если что-то сломается всёравно, попросите 
+вызвать proc "unprime_unlock" у ближайшего админа)
 
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
@@ -89,6 +93,10 @@ ID мода: CELADON_FIXES
 
 - ADD: `code/modules/mob/living/life.dm` - Добавление magboots_handle_gravity
 
+- EDIT: `code/modules/overmap/objects/event_datum.dm`
+
+- EDIT: `code/modules/missions/outpost/research_mission.dm` - Окргуление координат
+
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
@@ -128,7 +136,7 @@ ID мода: CELADON_FIXES
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- Отсутствуют
+- `mod_celadon/crusher_trophy/code/kinetic_crusher.dm`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.
@@ -139,7 +147,7 @@ ID мода: CELADON_FIXES
 ### Авторы:
 
 
-RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFaceLesS, Burbonchik, MrRomainzZ, Molniz, Redwizz, Sjerty, Garomt
+RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFaceLesS, Burbonchik, MrRomainzZ, Molniz, Redwizz, Sjerty, Garomt, Ganza9991
 
 <!--
   Здесь находится твой никнейм

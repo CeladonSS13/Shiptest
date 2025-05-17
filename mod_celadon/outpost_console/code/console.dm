@@ -1,5 +1,5 @@
 /obj/machinery/computer/cargo/ui_data(mob/user) //чинит фракционное карго после фракционного карго оффов
-	var/canBeacon = beacon && (isturf(beacon.loc) || ismob(beacon.loc))//is the beacon in a valid location?
+	// var/canBeacon = beacon && (isturf(beacon.loc) || ismob(beacon.loc))//is the beacon in a valid location? // NEEDS_TO_FIX_ALARM!
 	var/list/data = list()
 
 	// not a big fan of get_containing_shuttle
@@ -16,22 +16,22 @@
 	data["outpostDocked"] = outpost_docked
 	data["points"] = charge_account ? charge_account.account_balance : 0
 	data["siliconUser"] = user.has_unlimited_silicon_privilege && check_ship_ai_access(user)
-	data["beaconZone"] = beacon ? get_area(beacon) : ""//where is the beacon located? outputs in the tgui
+	// data["beaconZone"] = beacon ? get_area(beacon) : ""//where is the beacon located? outputs in the tgui // NEEDS_TO_FIX_ALARM!
 	data["usingBeacon"] = use_beacon //is the mode set to deliver to the beacon or the cargobay?
-	data["canBeacon"] = !use_beacon || canBeacon //is the mode set to beacon delivery, and is the beacon in a valid location?
+	// data["canBeacon"] = !use_beacon || canBeacon //is the mode set to beacon delivery, and is the beacon in a valid location? // NEEDS_TO_FIX_ALARM!
 	// data["canBuyBeacon"] = charge_account ? (cooldown <= 0 && charge_account.account_balance >= BEACON_COST) : FALSE
-	data["beaconError"] = use_beacon && !canBeacon ? "(BEACON ERROR)" : ""//changes button text to include an error alert if necessary
-	data["hasBeacon"] = beacon != null//is there a linked beacon?
-	data["beaconName"] = beacon ? beacon.name : "No Beacon Found"
+	// data["beaconError"] = use_beacon && !canBeacon ? "(BEACON ERROR)" : ""//changes button text to include an error alert if necessary // NEEDS_TO_FIX_ALARM!
+	// data["hasBeacon"] = beacon != null//is there a linked beacon? // NEEDS_TO_FIX_ALARM!
+	// data["beaconName"] = beacon ? beacon.name : "No Beacon Found" // NEEDS_TO_FIX_ALARM!
 	// data["printMsg"] = cooldown > 0 ? "Print Beacon for [BEACON_COST] credits ([cooldown])" : "Print Beacon for [BEACON_COST] credits"//buttontext for printing beacons
 	data["supplies"] = list()
 	message = "Sales are near-instantaneous - please choose carefully."
 	if(SSshuttle.supplyBlocked)
 		message = blockade_warning
-	if(use_beacon && !beacon)
-		message = "BEACON ERROR: BEACON MISSING"//beacon was destroyed
-	else if (use_beacon && !canBeacon)
-		message = "BEACON ERROR: MUST BE EXPOSED"//beacon's loc/user's loc must be a turf
+	// if(use_beacon && !beacon) // NEEDS_TO_FIX_ALARM!
+		// message = "BEACON ERROR: BEACON MISSING"//beacon was destroyed
+	// else if (use_beacon && !canBeacon) // NEEDS_TO_FIX_ALARM!
+	// 	message = "BEACON ERROR: MUST BE EXPOSED"//beacon's loc/user's loc must be a turf
 	data["message"] = message
 
 	data["supplies"] = supply_pack_data
@@ -51,7 +51,7 @@
 
 	return data
 
-// UI статика
+// UI статика	// КОД JOPA
 /obj/machinery/computer/cargo/faction/ui_static_data(mob/user)
 	var/list/data = list()
 	data["supplies"] = list()
@@ -69,7 +69,7 @@
 			"cost" = P.cost,
 			"id" = pack,
 			"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
-			"small_item" = P.small_item,
+			// "small_item" = P.small_item,
 		))
 	return data
 
@@ -90,24 +90,24 @@
 					var/mob/living/carbon/human/user = usr
 					user.put_in_hands(cash_chip)
 				playsound(src, 'sound/machines/twobeep_high.ogg', 50, TRUE)
-				src.visible_message("<span class='notice'>[src] dispenses a holochip.</span>")
+				src.visible_message(span_notice("[src] dispenses a holochip."))
 			return TRUE
 
-		if("LZCargo")
-			use_beacon = FALSE
-			if (beacon)
-				beacon.update_status(SP_UNREADY) //ready light on beacon will turn off
-		if("LZBeacon")
-			use_beacon = TRUE
-			if (beacon)
-				beacon.update_status(SP_READY) //turns on the beacon's ready light
+		// if("LZCargo") // NEEDS_TO_FIX_ALARM!
+			// use_beacon = FALSE
+			// if (beacon)
+			// 	beacon.update_status(SP_UNREADY) //ready light on beacon will turn off
+		// if("LZBeacon")
+		// 	use_beacon = TRUE
+			// if (beacon)
+			// 	beacon.update_status(SP_READY) //turns on the beacon's ready light
 		// if("printBeacon")
 		// 	if(charge_account?.adjust_money(-BEACON_COST))
 		// 		cooldown = 10//a ~ten second cooldown for printing beacons to prevent spam
 		// 		var/obj/item/supplypod_beacon/C = new /obj/item/supplypod_beacon(drop_location())
 		// 		C.link_console(src, usr)//rather than in beacon's Initialize(), we can assign the computer to the beacon by reusing this proc)
 		// 		printed_beacons++//printed_beacons starts at 0, so the first one out will be called beacon # 1
-		// 		beacon.name = "Supply Pod Beacon #[printed_beacons]"
+		// 		beacon.name = "Supply Pod Beacon #[printed_beacons]" // NEEDS_TO_FIX_ALARM!
 		if("add")
 			var/area/current_area = get_area(src)
 			var/datum/supply_pack/pack = SSshuttle.supply_packs[text2path(params["id"])]
@@ -115,10 +115,11 @@
 				return
 
 			var/turf/landing_turf
-			if(!isnull(beacon) && use_beacon) // prioritize beacons over landing in cargobay
-				landing_turf = get_turf(beacon)
-				beacon.update_status(SP_LAUNCH)
-			else if(!use_beacon)// find a suitable supplypod landing zone in cargobay
+			// if(!isnull(beacon) && use_beacon) // prioritize beacons over landing in cargobay // NEEDS_TO_FIX_ALARM!
+			// 	landing_turf = get_turf(beacon) // NEEDS_TO_FIX_ALARM!
+			// 	beacon.update_status(SP_LAUNCH) // NEEDS_TO_FIX_ALARM!
+			// else // NEEDS_TO_FIX_ALARM!
+			if(!use_beacon)// find a suitable supplypod landing zone in cargobay
 				var/list/empty_turfs = list()
 				if(!landingzone)
 					reconnect()
@@ -165,8 +166,8 @@
 			else if(mission.servant == ship)
 				if(mission.can_complete())
 					mission.turn_in()
-				else
-					mission.give_up()
+				// else
+				// 	mission.give_up() // NEEDS_TO_FIX_ALARM!
 				return TRUE
 
 // Взаимодействие с UI для фракций
@@ -210,7 +211,7 @@
 	return supply_pack_data
 
 // Создание UI статики для фракций
-/obj/machinery/computer/cargo/faction/proc/faction_ui_static_data(mob/user, datum/faction)
+/obj/machinery/computer/cargo/faction/proc/faction_ui_static_data(mob/user, datum/faction)	// КОД JOPA
 	var/list/data = list()
 	data["supplies"] = list()
 	for(var/pack in SSshuttle.supply_packs)
@@ -233,7 +234,7 @@
 				"cost" = P.cost,
 				"id" = pack,
 				"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
-				"small_item" = P.small_item,
+				// "small_item" = P.small_item,
 			))
 
 
@@ -257,6 +258,7 @@
 	podType = /obj/structure/closet/supplypod/centcompod
 
 	flags_1 = NODECONSTRUCT_1
+	tgui_shared_states = list(outpostTab = "\"cargo\"")
 
 /obj/machinery/computer/cargo/faction/Initialize()
 	. = ..()

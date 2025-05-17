@@ -2,22 +2,21 @@
 
 /datum/export/large/reagent_dispenser
 	cost = 100 // +0-400 depending on amount of reagents left
-	contents_cost = 400
 
 /datum/export/large/reagent_dispenser/water
+	cost = 170
 	unit_name = "watertank"
 	export_types = list(/obj/structure/reagent_dispensers/watertank)
-	contents_cost = 170
 
 /datum/export/large/reagent_dispenser/fuel
+	cost = 350
 	unit_name = "fueltank"
 	export_types = list(/obj/structure/reagent_dispensers/fueltank)
-	contents_cost = 350
 
 /datum/export/large/reagent_dispenser/beer
+	cost = 500
 	unit_name = "beer keg"
 	export_types = list(/obj/structure/reagent_dispensers/beerkeg)
-	contents_cost = 500
 
 // MARK: large
 

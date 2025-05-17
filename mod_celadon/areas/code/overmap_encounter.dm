@@ -9,7 +9,8 @@
 /area/overmap_encounter/planetoid/plasma_gaint
 	name = "\improper PlasmaGaint Planetoid"
 	sound_environment = SOUND_ENVIRONMENT_PSYCHOTIC
-	ambientsounds = MINING
+	ambientsounds = REEBE
+	has_gravity = STANDARD_GRAVITY
 
 /area/overmap_encounter/planetoid/plasma_gaint/explored
 	area_flags = VALID_TERRITORY
@@ -26,6 +27,7 @@
 	name = "\improper Anima"
 	sound_environment = SOUND_ENVIRONMENT_MOUNTAINS
 	ambientsounds = REEBE
+
 /area/overmap_encounter/planetoid/asteroid/explored
 	area_flags = VALID_TERRITORY
 

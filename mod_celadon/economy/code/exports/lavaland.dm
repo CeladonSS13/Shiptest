@@ -50,7 +50,7 @@
 						)
 
 /datum/export/lavaland/trophycommon
-	cost = 450
+	cost = 250
 	unit_name = "common hunting trophy"
 	export_types = list(/obj/item/crusher_trophy/legion_skull,
 						/obj/item/crusher_trophy/wolf_ear,
@@ -60,7 +60,7 @@
 						)
 
 /datum/export/lavaland/trophyrare
-	cost = 1100
+	cost = 1000
 	unit_name = "rare hunting trophy"
 	export_types = list(/obj/item/crusher_trophy/dwarf_skull,
 						/obj/item/crusher_trophy/fang,
@@ -73,7 +73,8 @@
 						)
 
 /datum/export/lavaland/trophymega
-	cost = 1500
+	cost = 3000
+	elasticity_coeff = 0
 	unit_name = "big game hunting trophy"
 	export_types = list(/obj/item/crusher_trophy/legionnaire_spine,
 						/obj/item/crusher_trophy/ash_spike,
@@ -85,10 +86,10 @@
 						/obj/item/crusher_trophy/blaster_tubes,
 						)
 
-/datum/export/lavaland/megafauna/total_printout(datum/export_report/ex, notes = TRUE) //in the unlikely case a miner feels like selling megafauna loot
-	. = ..()
-	if(. && notes)
-		. += " On behalf of the Nanotrasen RnD division: Thank you for your hard work."
+// /datum/export/lavaland/megafauna/total_printout(datum/export_report/ex, notes = TRUE) //in the unlikely case a miner feels like selling megafauna loot
+// 	// . = ..()
+// 	if(. && notes)
+// 		. += " On behalf of the Nanotrasen RnD division: Thank you for your hard work."
 
 /datum/export/lavaland/megafauna/hev/suit
 	cost = 7500

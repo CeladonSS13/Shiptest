@@ -131,6 +131,11 @@
 	},
 /turf/open/floor/marble/black,
 /area/ship/hallway/central)
+"cg" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal{
+	name = "Drobe"
+	},
+/area/ship/crew/dorm)
 "cE" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -163,9 +168,16 @@
 	},
 /turf/open/floor/plating,
 /area/ship/crew/dorm)
+"dt" = (
+/obj/structure/fans/tiny,
+/obj/machinery/door/poddoor/shutters{
+	id = "sunsetexit";
+	name = "Emergency exit"
+	},
+/turf/open/floor/plating,
+/area/ship/engineering)
 "dQ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/obj/structure/table/syndi,
 /obj/machinery/light/directional/north,
 /obj/item/kirbyplants{
 	icon_state = "plant-28";
@@ -182,9 +194,8 @@
 	pixel_x = -2;
 	pixel_y = 1
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/obj/structure/table/wood,
+/turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "dW" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
@@ -277,10 +288,9 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/security/armory)
 "eI" = (
-/obj/machinery/porta_turret/syndicate/exterior_7_62mm{
+/obj/machinery/porta_turret/ship/syndicate/ballistic{
 	dir = 5;
-	id = "sunset_turret";
-	faction = list("playerSyndicate","turret")
+	id = "sunset_turret"
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -392,10 +402,9 @@
 /turf/open/floor/marble/black,
 /area/ship/hallway/fore)
 "gt" = (
-/obj/machinery/porta_turret/syndicate/exterior_7_62mm{
+/obj/machinery/porta_turret/ship/syndicate/ballistic{
 	dir = 6;
-	id = "sunset_turret";
-	faction = list("playerSyndicate","turret")
+	id = "sunset_turret"
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -405,7 +414,7 @@
 	dir = 8
 	},
 /obj/structure/railing,
-/obj/item/banner/syndie,
+/obj/item/banner/syndie/mundane,
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
@@ -435,9 +444,7 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "gX" = (
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer2,
@@ -489,9 +496,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "hp" = (
 /obj/machinery/power/terminal{
@@ -544,24 +549,25 @@
 /turf/open/floor/marble/black,
 /area/ship/hallway/central)
 "ir" = (
-/obj/structure/closet/wall/red/directional/north,
 /obj/item/clothing/under/syndicate/skirt,
 /obj/item/clothing/under/utility,
 /obj/item/clothing/neck/shemagh/ngr,
 /obj/item/clothing/neck/shemagh/ngr,
 /obj/item/clothing/head/beret/black,
 /obj/item/clothing/head/beret/black,
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
-	dir = 1
-	},
 /obj/item/clothing/under/syndicate/tacticool,
 /obj/item/clothing/shoes/jackboots,
 /obj/item/storage/backpack/security,
 /obj/item/storage/backpack/satchel/sec,
 /obj/item/clothing/under/utility/skirt,
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
+/obj/effect/turf_decal/trimline/opaque/inteqbrown/filled/corner{
+	dir = 1;
+	color = "#332521"
 	},
+/obj/structure/closet/wall/red/directional/north{
+	name = "Drobe"
+	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
 "iJ" = (
 /obj/docking_port/stationary{
@@ -580,13 +586,12 @@
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
 "iX" = (
+/obj/effect/turf_decal/trimline/opaque/inteqbrown/filled/corner{
+	dir = 8;
+	color = "#332521"
+	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
-	dir = 8
-	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "ja" = (
 /turf/open/floor/engine/hull/reinforced,
@@ -643,9 +648,7 @@
 	},
 /obj/item/clothing/mask/balaclava/combat,
 /obj/item/clothing/shoes/magboots/syndie,
-/obj/item/clothing/suit/space/hardsuit/syndi/elite/shabbyoldsst{
-	desc = "An elite version of the SST hardsuit, with improved armour and fire shielding. Shows clear signs of wear and tear, with scuffs and scratches hinting at past battles. Some parts of the armour even seem to have a bit of cardboard reinforcement. Gives you a strong feeling of Déjà vu."
-	},
+/obj/item/clothing/suit/space/hardsuit/syndi/elite/shabbyoldsst,
 /turf/open/floor/plasteel/lightdark,
 /area/ship/security/armory)
 "jU" = (
@@ -968,19 +971,11 @@
 /obj/structure/sign/poster/contraband/lusty_xenomorph{
 	pixel_y = 31
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
 "pY" = (
 /obj/structure/cable{
 	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -1027,9 +1022,7 @@
 	icon_state = "1-4"
 	},
 /obj/structure/weightmachine/weightlifter,
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
 "qF" = (
 /obj/machinery/porta_turret/ship/syndicate/ballistic/light{
@@ -1095,12 +1088,18 @@
 /obj/item/gun/ballistic/automatic/assault/saiga,
 /turf/open/floor/plasteel/lightdark,
 /area/ship/security/armory)
-"sj" = (
-/obj/structure/chair/comfy/red/old/alt/directional/west,
-/obj/machinery/newscaster/security_unit/directional/east,
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
+"si" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "sunsetexit2";
+	name = "Emergency exit"
 	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/ship/engineering)
+"sj" = (
+/obj/machinery/newscaster/security_unit/directional/east,
+/obj/structure/chair/comfy/beige/directional/west,
+/turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
 "st" = (
 /obj/structure/mirror{
@@ -1174,7 +1173,7 @@
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
 	dir = 1
 	},
-/obj/item/melee/axe/sledgehammer,
+/obj/item/melee/sledgehammer/gorlex,
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
 "tF" = (
@@ -1220,12 +1219,11 @@
 	pixel_x = -5;
 	pixel_y = 21
 	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
-	dir = 8
+/obj/effect/turf_decal/trimline/opaque/inteqbrown/filled/warning{
+	dir = 8;
+	color = "#332521"
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
 "uG" = (
 /obj/machinery/power/shieldwallgen/atmos{
@@ -1334,16 +1332,14 @@
 	all_items_free = 1;
 	pixel_y = 32
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "wV" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4{
 	dir = 1
 	},
-/turf/template_noop,
-/area/template_noop)
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external)
 "xo" = (
 /turf/template_noop,
 /area/template_noop)
@@ -1400,9 +1396,7 @@
 	icon_state = "2-8"
 	},
 /obj/effect/decal/cleanable/food/flour,
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "yE" = (
 /obj/structure/chair/bench/red/directional/south,
@@ -1616,12 +1610,11 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
-	dir = 1
+/obj/effect/turf_decal/trimline/opaque/inteqbrown/filled/warning{
+	dir = 1;
+	color = "#332521"
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
 "AR" = (
 /obj/machinery/power/terminal,
@@ -1711,9 +1704,6 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/obj/structure/sign/poster/contraband/gec{
-	pixel_y = 32
-	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "BU" = (
@@ -1759,6 +1749,8 @@
 /obj/structure/platform/industrial{
 	dir = 8
 	},
+/obj/structure/closet/crate/engineering/electrical,
+/obj/item/stack/sheet/mineral/diamond/five,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "Cq" = (
@@ -1773,14 +1765,16 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
+/obj/structure/chair/plastic{
+	pixel_y = -6;
+	layer = 2.741
 	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
 "Cv" = (
 /obj/effect/spawner/bunk_bed,
 /obj/structure/curtain/bounty{
-	color = "#260d10"
+	color = "#332521"
 	},
 /turf/open/floor/wood/mahogany{
 	color = "#450e14"
@@ -1926,6 +1920,9 @@
 	dir = 5
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sign/poster/contraband/gec{
+	pixel_y = 32
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "Dp" = (
@@ -1937,16 +1934,13 @@
 /obj/item/clothing/mask/balaclava/combat,
 /obj/item/clothing/shoes/magboots/syndie,
 /obj/machinery/firealarm/directional/east,
-/obj/item/clothing/suit/space/hardsuit/syndi/elite/shabbyoldsst{
-	desc = "An elite version of the SST hardsuit, with improved armour and fire shielding. Shows clear signs of wear and tear, with scuffs and scratches hinting at past battles. Some parts of the armour even seem to have a bit of cardboard reinforcement. Gives you a strong feeling of Déjà vu."
-	},
+/obj/item/clothing/suit/space/hardsuit/syndi/elite/shabbyoldsst,
 /turf/open/floor/plasteel/lightdark,
 /area/ship/security/armory)
 "Dx" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
-/obj/structure/table/syndi,
 /obj/item/kirbyplants{
 	icon_state = "plant-33";
 	pixel_y = 7
@@ -1956,9 +1950,8 @@
 	pixel_x = 7;
 	pixel_y = 2
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/obj/structure/table/wood,
+/turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
 "DB" = (
 /obj/effect/turf_decal/techfloor{
@@ -2022,6 +2015,17 @@
 	},
 /turf/open/floor/marble/black,
 /area/ship/general/command_crew)
+"Eb" = (
+/obj/machinery/button/door{
+	pixel_y = 26;
+	id = "sunsetexit2";
+	name = "Engine Shutters";
+	pixel_x = -6;
+	req_access = list(50, 10, 5, 1, 20);
+	req_ship_access = 1
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external)
 "Eq" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2047,9 +2051,7 @@
 /area/ship/engineering)
 "Er" = (
 /obj/effect/decal/cleanable/food/egg_smudge,
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "Et" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2138,17 +2140,13 @@
 /turf/open/floor/marble/black,
 /area/ship/bridge)
 "Gf" = (
-/obj/structure/chair/comfy/red/old/alt/directional/east,
-/obj/machinery/button{
-	pixel_x = -24;
-	id = "okno_crew2";
-	name = "Windows Shutters";
+/obj/machinery/button/door{
 	dir = 4;
-	pixel_y = 2
+	pixel_x = -24;
+	id = "okno_crew2"
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/obj/structure/chair/comfy/beige/old/directional/east,
+/turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
 "Gp" = (
 /obj/structure/extinguisher_cabinet/directional/north,
@@ -2172,9 +2170,7 @@
 /obj/item/reagent_containers/condiment/milk,
 /obj/item/storage/fancy/egg_box,
 /obj/item/storage/fancy/egg_box,
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "GJ" = (
 /obj/machinery/power/terminal{
@@ -2192,12 +2188,6 @@
 	},
 /obj/structure/railing{
 	dir = 4
-	},
-/obj/machinery/button/door{
-	dir = 1;
-	pixel_y = -25;
-	id = "Sunseteenginebay";
-	name = "Engine Shutters"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
@@ -2256,9 +2246,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
 "Ja" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -2289,7 +2277,6 @@
 	pixel_x = 8
 	},
 /obj/structure/cable,
-/obj/item/banner/syndie,
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = -5;
@@ -2299,6 +2286,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/opaque/syndiered/line,
+/obj/item/banner/syndie/mundane,
 /turf/open/floor/marble/black,
 /area/ship/hallway/central)
 "Jx" = (
@@ -2356,12 +2344,11 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/firealarm/directional/west,
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
-	dir = 1
+/obj/effect/turf_decal/trimline/opaque/inteqbrown/filled/corner{
+	dir = 1;
+	color = "#332521"
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
 "KW" = (
 /obj/structure/chair/handrail{
@@ -2385,20 +2372,16 @@
 /turf/open/floor/marble/black,
 /area/ship/security/armory)
 "Li" = (
-/obj/structure/table/syndi,
 /obj/machinery/microwave{
 	pixel_y = 5
 	},
-/obj/machinery/button{
-	pixel_x = -24;
-	id = "okno_crew1";
-	name = "Windows Shutters";
+/obj/machinery/button/door{
 	dir = 4;
-	pixel_y = 2
+	pixel_x = -24;
+	id = "okno_crew1"
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/obj/structure/table/wood,
+/turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "Ly" = (
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -2455,18 +2438,15 @@
 /obj/item/radio/intercom/directional/north{
 	pixel_x = -7
 	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
-	dir = 4
+/obj/effect/turf_decal/trimline/opaque/inteqbrown/filled/corner{
+	dir = 4;
+	color = "#332521"
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
 "Mi" = (
-/obj/structure/chair/comfy/red/old/alt/directional/north,
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/obj/structure/chair/comfy/beige/old/alt/directional/north,
+/turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "ME" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
@@ -2515,9 +2495,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
 "Nc" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -2621,10 +2599,10 @@
 /obj/structure/platform/industrial{
 	dir = 8
 	},
-/obj/item/banner/syndie{
+/obj/machinery/light/directional/south,
+/obj/item/banner/syndie/mundane{
 	layer = 3.2
 	},
-/obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
 "OE" = (
@@ -2940,10 +2918,10 @@
 	dir = 1
 	},
 /obj/structure/extinguisher_cabinet/directional/south,
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner,
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
+/obj/effect/turf_decal/trimline/opaque/inteqbrown/filled/corner{
+	color = "#332521"
 	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "TO" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
@@ -3050,6 +3028,18 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/ship/hallway/central)
+"UW" = (
+/obj/machinery/button/door{
+	pixel_y = -21;
+	id = "sunsetexit";
+	name = "Engine Shutters";
+	dir = 1;
+	pixel_x = -6;
+	req_ship_access = 1;
+	req_access = list(50, 10, 5, 1, 20)
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external)
 "Va" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 9
@@ -3087,7 +3077,6 @@
 /turf/open/floor/plating,
 /area/ship/general/cargo)
 "VI" = (
-/obj/structure/table/syndi,
 /obj/item/toy/prize/touro{
 	pixel_x = 2;
 	pixel_y = 25
@@ -3103,9 +3092,8 @@
 	layer = 3.3;
 	pixel_y = 5
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/obj/structure/table/wood,
+/turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "VK" = (
 /obj/machinery/door/poddoor{
@@ -3174,6 +3162,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 9
 	},
+/obj/machinery/computer/cryopod/directional/west,
 /turf/open/floor/marble/black,
 /area/ship/crew/cryo)
 "Xh" = (
@@ -3200,12 +3189,11 @@
 	pixel_x = -5;
 	pixel_y = -17
 	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
-	dir = 8
+/obj/effect/turf_decal/trimline/opaque/inteqbrown/filled/warning{
+	dir = 8;
+	color = "#332521"
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "Xk" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
@@ -3214,12 +3202,11 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/firealarm/directional/west,
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
-	dir = 8
+/obj/effect/turf_decal/trimline/opaque/inteqbrown/filled/corner{
+	dir = 8;
+	color = "#332521"
 	},
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "XH" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
@@ -3286,9 +3273,6 @@
 /turf/open/floor/marble/black,
 /area/ship/hallway/central)
 "XW" = (
-/obj/structure/closet/wall/red/directional/south{
-	pixel_x = 2
-	},
 /obj/item/clothing/under/syndicate/skirt,
 /obj/item/clothing/under/utility,
 /obj/item/clothing/neck/shemagh/ngr,
@@ -3300,9 +3284,10 @@
 /obj/item/storage/backpack/security,
 /obj/item/storage/backpack/satchel/sec,
 /obj/item/clothing/under/utility/skirt,
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
+/obj/structure/closet/wall/red/directional/south{
+	name = "Drobe"
 	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
 "Yc" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
@@ -3351,10 +3336,34 @@
 /obj/structure/railing{
 	layer = 3.09
 	},
-/obj/structure/closet/crate/engineering/electrical,
-/obj/item/stack/sheet/mineral/diamond/five,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	pixel_y = -3;
+	id = "sunsetexit2";
+	name = "Emergency exit";
+	dir = 4;
+	pixel_x = 8;
+	req_ship_access = 1;
+	req_access = list(50, 10, 5, 1, 20)
+	},
+/obj/machinery/button/door{
+	dir = 4;
+	pixel_y = 2;
+	id = "Sunseteenginebay";
+	name = "Engine Shutters";
+	pixel_x = -3
+	},
+/obj/machinery/button/door{
+	pixel_y = 9;
+	id = "sunsetexit";
+	name = "Emergency exit";
+	dir = 4;
+	pixel_x = 8;
+	req_access = list(50, 10, 5, 1, 20);
+	req_ship_access = 1
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "YM" = (
@@ -3382,11 +3391,11 @@
 /area/ship/hallway/fore)
 "Zw" = (
 /obj/machinery/airalarm/directional/north,
-/obj/item/banner/syndie,
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
 /obj/effect/turf_decal/trimline/opaque/syndiered/line{
 	dir = 1
 	},
+/obj/item/banner/syndie/mundane,
 /turf/open/floor/marble/black,
 /area/ship/hallway/central)
 "ZC" = (
@@ -3401,9 +3410,7 @@
 	},
 /obj/effect/decal/cleanable/food/flour,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
-	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "ZO" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
@@ -3411,10 +3418,10 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
-/turf/open/floor/wood/mahogany{
-	color = "#450e14"
+/obj/effect/turf_decal/trimline/opaque/inteqbrown/filled/warning{
+	color = "#332521"
 	},
+/turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "ZU" = (
 /obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
@@ -3507,7 +3514,7 @@ xo
 xo
 xo
 xo
-Ja
+dt
 BJ
 Eq
 hp
@@ -3515,7 +3522,7 @@ QQ
 sz
 jX
 GJ
-Ja
+si
 xo
 xo
 xo
@@ -3531,7 +3538,7 @@ xo
 xo
 xo
 xo
-xo
+UW
 Ja
 li
 Cl
@@ -3541,7 +3548,7 @@ VA
 AR
 AU
 Ja
-xo
+Eb
 xo
 xo
 xo
@@ -3556,7 +3563,7 @@ xo
 xo
 xo
 xo
-xo
+ja
 Ja
 Dn
 EJ
@@ -3893,7 +3900,7 @@ XN
 Rw
 ir
 XW
-Rw
+cg
 aU
 xo
 xo

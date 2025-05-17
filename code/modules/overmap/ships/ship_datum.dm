@@ -1,11 +1,11 @@
 /**
  * # Overmap ships
  *
- * Basically, any overmap object that is capable of moving by itself.
+ * Basically, any overmap object that is capable of moving by itself. //wouldnt it make more sense for this to be named /datum/overmap/movable
  *
  */
 
-// [CELADON-ADD] - OVERMAP STUFF - Это вагабонд насрал
+// [CELADON-ADD] - CELADON_OVERMAP_STUFF - Это вагабонд насрал
 /obj/shiptrail
 	icon = 'mod_celadon/_storge_icons/icons/overmap/overmap.dmi'
 	icon_state = "ship_trail"
@@ -80,10 +80,20 @@
 /datum/overmap/ship
 	name = "overmap vessel"
 	char_rep = ">"
-	// [CELADON-EDIT] - OVERMAP STUFF - Это вагабонд насрал
+	// [CELADON-EDIT] - CELADON_OVERMAP_STUFF - Это вагабонд насрал
 	// token_icon_state = "ship"
 	token_icon_state = "ship_point"
 	// [/CELADON-EDIT]
+
+	///If TRUE stationary_icon_state and moving_icon_state are used instead of an overlay being applied to stationary_icon_state
+	var/legacy_rendering_switch = FALSE
+
+	///the icon state used when we are stationary
+	//var/stationary_icon_state = "ship"
+	var/stationary_icon_state = "ship_generic"
+	///the icon state used when we are moving
+	var/moving_icon_state = "ship_moving"
+
 	///Timer ID of the looping movement timer
 	var/movement_callback_id
 	///Max possible speed (1 tile per tick / 600 tiles per minute)
@@ -103,7 +113,12 @@
 	///ONLY USED FOR NON-SIMULATED SHIPS. The amount per burn that this ship accelerates
 	var/acceleration_speed = 0.02
 
-// [CELADON-ADD] - OVERMAP STUFF - Это вагабонд насрал
+	///Is this ship hidden? If true we hide the ships name/class on the token.
+	var/hidden = FALSE
+
+	var/registered_to_docked = FALSE
+
+// [CELADON-ADD] - CELADON_OVERMAP_STUFF - Это вагабонд насрал
 	///For bay overmap
 	var/x_pixels_moved = 0
 	var/y_pixels_moved = 0
@@ -134,7 +149,8 @@
 	return arpa_add
 // [/CELADON-ADD]
 
-/datum/overmap/ship/Initialize(position, ...)
+// /datum/overmap/ship/Initialize(position, ...)	// КОД JOPA
+/datum/overmap/ship/Initialize(position, system_spawned_in, ...)
 	. = ..()
 	if(docked_to)
 		position_to_move["x"] = docked_to.x
@@ -144,9 +160,10 @@
 		position_to_move["y"] = y
 	if(docked_to)
 		RegisterSignal(docked_to, COMSIG_OVERMAP_MOVED, PROC_REF(on_docked_to_moved))
+		registered_to_docked = TRUE
 
 /datum/overmap/ship/Destroy()
-	// [CELADON-EDIT] - OVERMAP STUFF - Это вагабонд насрал
+	// [CELADON-EDIT] - CELADON_OVERMAP_STUFF - Это вагабонд насрал
 	//	if(movement_callback_id)
 	//		deltimer(movement_callback_id, SSovermap_movement)
 	clear_trails()
@@ -155,11 +172,13 @@
 
 /datum/overmap/ship/complete_dock(datum/overmap/dock_target, datum/docking_ticket/ticket)
 	. = ..()
-	// override prevents runtime on controlled ship init due to docking after initializing at a position
-	RegisterSignal(dock_target, COMSIG_OVERMAP_MOVED, PROC_REF(on_docked_to_moved), override = TRUE)
+	if(!registered_to_docked)
+		RegisterSignal(dock_target, COMSIG_OVERMAP_MOVED, PROC_REF(on_docked_to_moved))
+		registered_to_docked = TRUE
 
 /datum/overmap/ship/complete_undock()
 	UnregisterSignal(docked_to, COMSIG_OVERMAP_MOVED)
+	registered_to_docked = FALSE
 	. = ..()
 
 /datum/overmap/ship/Undock(force = FALSE)
@@ -191,7 +210,7 @@
  */
 
 /datum/overmap/ship/proc/adjust_speed(n_x, n_y)
-// [CELADON-EDIT] - OVERMAP STUFF - Это вагабонд насрал
+// [CELADON-EDIT] - CELADON_OVERMAP_STUFF - Это вагабонд насрал
 //	var/offset = 1
 //	if(movement_callback_id)
 //		var/previous_time = 1 / MAGNITUDE(speed_x, speed_y)
@@ -212,7 +231,7 @@
 	if(speed_y < min_speed && speed_y > -min_speed)
 		speed_y = 0
 
-// [CELADON-EDIT] - OVERMAP STUFF - Это вагабонд насрал
+// [CELADON-EDIT] - CELADON_OVERMAP_STUFF - Это вагабонд насрал
 	// token.update_icon_state()
 	speed_x = speed_x+vector_to_add["x"]
 	speed_y = speed_y+vector_to_add["y"]
@@ -227,7 +246,7 @@
 
 	update_visuals()
 
-// [CELADON-EDIT] - OVERMAP STUFF - Это вагабонд насрал
+// [CELADON-EDIT] - CELADON_OVERMAP_STUFF - Это вагабонд насрал
 	//	if(is_still() || QDELING(src) || movement_callback_id || docked_to || docking)
 	//		return
 	//	var/timer = 1 / MAGNITUDE(speed_x, speed_y) * offset
@@ -244,7 +263,7 @@
  * Called by [/datum/overmap/ship/proc/adjust_speed], this continually moves the ship according to its speed
  */
 
-// [CELADON-ADD] - OVERMAP STUFF - Это вагабонд насрал
+// [CELADON-ADD] - CELADON_OVERMAP_STUFF - Это вагабонд насрал
 /datum/overmap/ship/proc/not_tick_move(var/xmov, var/ymov)
 	if(QDELING(src))
 		return
@@ -258,7 +277,7 @@
 			token.move_vec.forceMove(token.loc)
 // [/CELADON-ADD]
 
-// [CELADON-REMOVE] - OVERMAP STUFF - Это вагабонд насрал
+// [CELADON-REMOVE] - CELADON_OVERMAP_STUFF - Это вагабонд насрал
 /*
 /datum/overmap/ship/proc/tick_move()
 	if(is_still() || QDELING(src) || docked_to)
@@ -304,7 +323,7 @@
  * Returns the direction the ship is moving in terms of dirs
  */
 
-// [CELADON-ADD] - OVERMAP STUFF - Это вагабонд насрал
+// [CELADON-ADD] - CELADON_OVERMAP_STUFF - Это вагабонд насрал
 /datum/overmap/ship/proc/get_alt_heading()
 	. = 0
 	var/stuff = -arctan(speed_x, speed_y)
@@ -333,7 +352,7 @@
  * Returns the estimated time in deciseconds to the next tile at current speed, or approx. time until reaching the destination when on autopilot
  */
 /datum/overmap/ship/proc/get_eta()
-	// [CELADON-EDIT] - OVERMAP STUFF - Это вагабонд насрал
+	// [CELADON-EDIT] - CELADON_OVERMAP_STUFF - Это вагабонд насрал
 	// . += timeleft(movement_callback_id, SSovermap_movement)
 	// if(!.)
 	// 	return "--:--"
@@ -380,12 +399,12 @@
 	// [/CELADON-EDIT]
 
 
-/datum/overmap/ship/process(delta_time)
+/datum/overmap/ship/process(seconds_per_tick)
 	if((burn_direction == BURN_STOP && is_still()) || docked_to || docking)
 		change_heading(BURN_NONE)
 		return
 
-// [CELADON-EDIT] - OVERMAP STUFF - Это вагабонд насрал
+// [CELADON-EDIT] - CELADON_OVERMAP_STUFF - Это вагабонд насрал
 //	var/added_velocity = calculate_burn(burn_direction, burn_engines(burn_percentage, delta_time))
 // //Slows down the ship just enough to come to a full stop
 // if(burn_direction == BURN_STOP)
@@ -399,31 +418,34 @@
 //			added_velocity["y"] = min(-speed_y, added_velocity["y"])
 //	adjust_speed(added_velocity["x"], added_velocity["y"])
 
+// НОВЫЕ ИЗМЕНЕНИЯ ОТ ОФОВ! 3 недели назад (марта 11th, 2025 12:09 ночи) ID: ALARM_CONFLICTS_OFFOS
+//	var/added_velocity = calculate_burn(burn_direction, burn_engines(burn_percentage, seconds_per_tick))
+
 	var/newx = 0
 	var/newy = 0
 	if(burn_direction == BURN_STOP)
 		if(speed_x > 0)
-			newx = -min(speed_x, burn_engines(burn_percentage, delta_time))
+			newx = -min(speed_x, burn_engines(burn_percentage, seconds_per_tick))
 		else
-			newx = min(-speed_x, burn_engines(burn_percentage, delta_time))
+			newx = min(-speed_x, burn_engines(burn_percentage, seconds_per_tick))
 		if(speed_y > 0)
-			newy = -min(speed_y, burn_engines(burn_percentage, delta_time))
+			newy = -min(speed_y, burn_engines(burn_percentage, seconds_per_tick))
 		else
-			newy = min(-speed_y, burn_engines(burn_percentage, delta_time))
+			newy = min(-speed_y, burn_engines(burn_percentage, seconds_per_tick))
 	else
 		switch(burn_direction)
 			if(NORTH)
-				newx = burn_engines(burn_percentage, delta_time)*sin(bow_heading)
-				newy = burn_engines(burn_percentage, delta_time)*cos(bow_heading)
+				newx = burn_engines(burn_percentage, seconds_per_tick)*sin(bow_heading)
+				newy = burn_engines(burn_percentage, seconds_per_tick)*cos(bow_heading)
 			if(SOUTH)
-				newx = burn_engines(burn_percentage, delta_time)*sin(bow_heading+180)
-				newy = burn_engines(burn_percentage, delta_time)*cos(bow_heading+180)
+				newx = burn_engines(burn_percentage, seconds_per_tick)*sin(bow_heading+180)
+				newy = burn_engines(burn_percentage, seconds_per_tick)*cos(bow_heading+180)
 			if(WEST)
-				newx = burn_engines(burn_percentage, delta_time)*sin(bow_heading+270)
-				newy = burn_engines(burn_percentage, delta_time)*cos(bow_heading+270)
+				newx = burn_engines(burn_percentage, seconds_per_tick)*sin(bow_heading+270)
+				newy = burn_engines(burn_percentage, seconds_per_tick)*cos(bow_heading+270)
 			if(EAST)
-				newx = burn_engines(burn_percentage, delta_time)*sin(bow_heading+90)
-				newy = burn_engines(burn_percentage, delta_time)*cos(bow_heading+90)
+				newx = burn_engines(burn_percentage, seconds_per_tick)*sin(bow_heading+90)
+				newy = burn_engines(burn_percentage, seconds_per_tick)*cos(bow_heading+90)
 
 	adjust_speed(newx, newy)
 // [/CELADON-EDIT]
@@ -457,19 +479,19 @@
 /**
  * Returns the amount of acceleration to apply to the ship based on the percentage of the engines that are burning, and the time since the last burn tick.
  * * percentage - The percentage of the engines that are burning
- * * deltatime - The time since the last burn tick
+ * * seconds_per_tick - The time since the last burn tick
  */
-/datum/overmap/ship/proc/burn_engines(percentage = 100, deltatime)
+/datum/overmap/ship/proc/burn_engines(percentage = 100, seconds_per_tick)
 	if(docked_to || docking)
 		CRASH("Ship burned engines while docking or docked!")
 
-	return acceleration_speed * (percentage / 100) * deltatime
+	return acceleration_speed * (percentage / 100) * seconds_per_tick
 
 /datum/overmap/ship/proc/change_heading(direction)
 	burn_direction = direction
 	if(burn_direction == BURN_NONE)
 		STOP_PROCESSING(SSphysics, src)
-		// [CELADON-ADD] - OVERMAP STUFF - Это вагабонд насрал
+		// [CELADON-ADD] - CELADON_OVERMAP_STUFF - Это вагабонд насрал
 		rotating = 0
 		// [/CELADON-ADD]
 	else
@@ -489,7 +511,7 @@
 	else if(direction & SOUTH)
 		char_rep = "v"
 	if(direction)
-		// [CELADON-EDIT] - OVERMAP STUFF - Это вагабонд насрал
+		// [CELADON-EDIT] - CELADON_OVERMAP_STUFF - Это вагабонд насрал
 		//		token.icon_state = "ship_moving"
 		//		M.Turn(altdirection)
 		//	else
@@ -497,3 +519,40 @@
 		token.dir = NORTH
 		// [/CELADON-EDIT]
 
+// [CELADON-REMOVE] - CELADON_OVERMAP_ICON - Убираем офовские картинки шипов
+	// alter_token_appearance()
+
+// /datum/overmap/ship/alter_token_appearance()
+// 	var/direction = get_heading()
+// 	var/speed = get_speed()
+// 	if(legacy_rendering_switch)
+// 		if(direction)
+// 			token_icon_state = moving_icon_state
+// 			token.dir = direction
+// 		else
+// 			token_icon_state = stationary_icon_state
+// 	else
+// 		token_icon_state = stationary_icon_state
+// 		if(direction)
+// 			token.dir = direction
+// 	..()
+// 	if(hidden)
+// 		token.name = "???"
+// 		token.desc = "There's no identification of what this is. It's possible to get more information with your radar by getting closer."
+// 		token.icon_state = "unknown"
+// 	token.color = current_overmap.primary_structure_color
+// 	current_overmap.post_edit_token_state(src)
+// 	if(!legacy_rendering_switch)
+// 		token.cut_overlays()
+// 		if(direction)
+// 			token.add_overlay("dir_moving")
+// 		else if(!hidden)
+// 			token.add_overlay("dir_idle")
+// 		if(speed)
+// 			token.add_overlay("speed_[clamp(round(speed,1),0,10)]")
+// [/CELADON-REMOVE]
+
+// ensures the camera always moves when the ship moves
+/datum/overmap/ship/overmap_move(new_x, new_y)
+	. = ..()
+	token.update_screen()

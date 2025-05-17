@@ -220,6 +220,8 @@
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/head.dmi'
 	icon_state = "solfed_m11"
 	item_state = "solfed_m11"
+	can_flashlight = TRUE
+	content_overlays = TRUE
 
 /obj/item/clothing/head/helmet/solfed/m11/elysium
 	name = "Elysium Brigade M11 helmet"
@@ -409,7 +411,7 @@
 /obj/item/melee/energy/sword/saber/knife/on_transform(obj/item/source, mob/user, active)
 	. = ..()
 	playsound(user, active ? 'sound/weapons/SolGov_sword_arm.ogg' : 'sound/weapons/saberoff.ogg', 35, TRUE)
-	to_chat(user, "<span class='notice'>[src] [active ? "is now active":"can now be concealed"].</span>")
+	to_chat(user, span_notice("[src] [active ? "is now active":"can now be concealed"]."))
 	return COMPONENT_NO_DEFAULT_MESSAGE
 
 /obj/item/melee/energy/sword/saber/knife/melee_attack_chain(mob/user, atom/target, params)

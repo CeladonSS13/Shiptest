@@ -66,6 +66,5 @@
 
 /datum/export/weapon/handcuffs
 	cost = 3
-	unit_name = "pair"
-	message = "of handcuffs"
+	unit_name = "pair of handcuffs"
 	export_types = list(/obj/item/restraints/handcuffs)

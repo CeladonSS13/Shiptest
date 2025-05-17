@@ -1,5 +1,5 @@
 {
-	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
 	"map_name": "Anomaly-class Experimental Project",
 	"map_short_name": "Anomaly",
 	"description": "Проект 'Anomaly' - экспериментальная разработка Солнечной Федерации, которая содержит в себе попытки использовать аномалии для производства ресурсов, таких как энергия и топливо. При строительстве этого корабля трубы и провода интегрировали в стены, из-за чего его перестройка может быть проблематичной.",
@@ -12,18 +12,18 @@
 	"faction": "/datum/faction/solgov",
 	"tags": ["Exploration", "Specialist"],
 	"namelists": [
-		"SOLGOV",
+		"SOLFED",
 		"SPACE",
 		"NATURAL"
 	],
 	"job_slots": {
 		"Project Leader": {
-			"outfit": "/datum/outfit/job/solgov/captain",
+			"outfit": "/datum/outfit/job/solfed/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"Project Logistics Officer": {
-			"outfit": "/datum/outfit/job/solgov/quartermaster",
+			"outfit": "/datum/outfit/job/solfed/quartermaster",
 			"officer": true,
 			"slots": 1
 		},

@@ -2,16 +2,21 @@
 	name = "Saint-Roumain Militia - Base Outfit"
 
 	uniform = /obj/item/clothing/under/suit/roumain
-	id = /obj/item/card/id
 	faction_icon = "bg_srm"
 
-	box = null
 
 /datum/outfit/job/roumain/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	if(visualsOnly)
 		return
 	H.faction |= list(FACTION_PLAYER_ROUMAIN)
+	var/list/crafting_recipe_types = list(
+		/datum/crafting_recipe/bonespear,
+		/datum/crafting_recipe/boneaxe
+	)
+	if(H.mind)
+		for(var/crafting_recipe_type in crafting_recipe_types)
+			H.mind.teach_crafting_recipe(crafting_recipe_type)
 
 // Assistant
 
@@ -21,8 +26,6 @@
 	jobtype = /datum/job/assistant
 	job_icon = "srm_shadow"
 
-	uniform = /obj/item/clothing/under/suit/roumain
-	alt_uniform = null
 	shoes = /obj/item/clothing/shoes/workboots/mining
 	suit = /obj/item/clothing/suit/armor/roumain/shadow
 
@@ -37,7 +40,6 @@
 	jobtype = /datum/job/captain
 
 	ears = /obj/item/radio/headset/headset_com/alt
-	uniform = /obj/item/clothing/under/suit/roumain
 	shoes = /obj/item/clothing/shoes/workboots/mining
 	suit = /obj/item/clothing/suit/armor/roumain/montagne
 	head = /obj/item/clothing/head/cowboy/sec/roumain/montagne
@@ -68,7 +70,6 @@
 	jobtype = /datum/job/head_of_personnel
 
 	ears = /obj/item/radio/headset/headset_com
-	uniform = /obj/item/clothing/under/suit/roumain
 	shoes = /obj/item/clothing/shoes/workboots/mining
 	suit = /obj/item/clothing/suit/armor/roumain/colligne
 	head = /obj/item/clothing/head/cowboy/sec/roumain/colligne
@@ -96,8 +97,6 @@
 	jobtype = /datum/job/officer
 	job_icon = "srm_hunter"
 
-	uniform = /obj/item/clothing/under/suit/roumain
-	alt_uniform = null
 	shoes = /obj/item/clothing/shoes/workboots/mining
 	suit = /obj/item/clothing/suit/armor/roumain
 	head = /obj/item/clothing/head/cowboy/sec/roumain
@@ -118,8 +117,6 @@
 	job_icon = "srm_machinist"
 	jobtype = /datum/job/engineer
 
-	uniform = /obj/item/clothing/under/suit/roumain
-	alt_uniform = null
 	shoes = /obj/item/clothing/shoes/workboots/mining
 	belt = /obj/item/storage/belt/utility/full/engi
 	suit = /obj/item/clothing/suit/hazardvest/roumain
@@ -140,8 +137,6 @@
 	job_icon = "srm_doctor"
 	jobtype = /datum/job/doctor
 
-	uniform = /obj/item/clothing/under/suit/roumain
-	alt_uniform = null
 	shoes = /obj/item/clothing/shoes/workboots/mining
 	suit = /obj/item/clothing/suit/toggle/labcoat/roumain_med
 	head = /obj/item/clothing/head/cowboy/sec/roumain/med
@@ -161,8 +156,6 @@
 	job_icon = "srm_flamebearer"
 	jobtype = /datum/job/chaplain
 
-	uniform = /obj/item/clothing/under/suit/roumain
-	alt_uniform = null
 	shoes = /obj/item/clothing/shoes/workboots/mining
 	suit = /obj/item/clothing/suit/armor/roumain/flamebearer
 	head = /obj/item/clothing/head/cowboy/sec/roumain/flamebearer

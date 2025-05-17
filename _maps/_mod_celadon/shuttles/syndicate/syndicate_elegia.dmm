@@ -104,8 +104,7 @@
 	pixel_y = 3
 	},
 /obj/item/spacecash/bundle/c50{
-	pixel_x = -5;
-	pixel_y = 0
+	pixel_x = -5
 	},
 /turf/open/floor/carpet/red,
 /area/ship/crew)
@@ -413,7 +412,6 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/corner/transparent/purple/border{
-	icon_state = "bordercolor";
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
@@ -441,7 +439,6 @@
 	pixel_x = -5
 	},
 /obj/effect/turf_decal/corner/transparent/purple/border{
-	icon_state = "bordercolor";
 	dir = 1
 	},
 /obj/machinery/newscaster/directional/north{
@@ -598,7 +595,6 @@
 	dir = 6
 	},
 /obj/effect/turf_decal/corner/transparent/purple/border{
-	icon_state = "bordercolor";
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -1232,11 +1228,9 @@
 /area/ship/external)
 "vx" = (
 /obj/effect/turf_decal/corner/transparent/purple/border{
-	icon_state = "bordercolor";
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/transparent/purple/border{
-	icon_state = "bordercolor";
 	dir = 1
 	},
 /obj/machinery/firealarm/directional/east,
@@ -1333,7 +1327,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/effect/turf_decal/corner/transparent/purple/border{
-	icon_state = "bordercolor";
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -1454,9 +1447,7 @@
 /turf/open/floor/plating,
 /area/ship/cargo)
 "ys" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -1662,9 +1653,7 @@
 /area/ship/hallway/central)
 "AM" = (
 /obj/structure/window/reinforced/spawner/west,
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -1747,7 +1736,6 @@
 /obj/item/clothing/suit/space/hardsuit/syndi/cybersun/paramed,
 /obj/machinery/camera/autoname{
 	dir = 5;
-	pixel_x = 0;
 	pixel_y = 8
 	},
 /turf/open/floor/carpet/blue,
@@ -1788,7 +1776,6 @@
 /obj/item/clothing/suit/space/hardsuit/syndi/cybersun,
 /obj/machinery/camera/autoname{
 	dir = 5;
-	pixel_x = 0;
 	pixel_y = -10
 	},
 /turf/open/floor/carpet/red_gold,
@@ -1802,8 +1789,7 @@
 /obj/item/tank/jetpack/carbondioxide,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/machinery/camera/autoname{
-	pixel_x = -10;
-	pixel_y = 0
+	pixel_x = -10
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/starboard)
@@ -2031,9 +2017,7 @@
 /area/ship/security/armory)
 "Gr" = (
 /obj/structure/window/reinforced/spawner/west,
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -2111,9 +2095,9 @@
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
 "Ht" = (
-/obj/machinery/porta_turret/ship/syndicate/heavy{
-	dir = 5;
-	id = "elegia_turrets"
+/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
+	id = "elegia_turrets";
+	dir = 5
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
@@ -2273,7 +2257,6 @@
 "JY" = (
 /obj/effect/turf_decal/industrial/outline,
 /obj/effect/turf_decal/corner/transparent/purple/border{
-	icon_state = "bordercolor";
 	dir = 1
 	},
 /obj/machinery/light_switch{
@@ -2369,9 +2352,9 @@
 /turf/open/floor/carpet/black,
 /area/ship/medical)
 "Mm" = (
-/obj/machinery/porta_turret/ship/syndicate/heavy{
-	dir = 6;
-	id = "elegia_turrets"
+/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
+	id = "elegia_turrets";
+	dir = 6
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
@@ -2509,7 +2492,6 @@
 	location = "crew"
 	},
 /obj/effect/turf_decal/corner/transparent/purple/bordercorner{
-	icon_state = "bordercolorcorner";
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,

@@ -236,7 +236,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/glass,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "bE" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -531,7 +531,6 @@
 	},
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering";
-	normalspeed = 0;
 	req_access_txt = null;
 	dir = 4
 	},
@@ -845,7 +844,7 @@
 /obj/structure/barricade/wooden/crude,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "et" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
@@ -1023,7 +1022,6 @@
 	},
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering";
-	normalspeed = 0;
 	req_access_txt = null;
 	dir = 4
 	},
@@ -1609,7 +1607,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering";
-	normalspeed = 0;
 	req_access_txt = null
 	},
 /turf/open/floor/plasteel/telecomms_floor,
@@ -3104,7 +3101,7 @@
 /obj/item/stack/ore/salvage/scrapmetal/ten,
 /obj/structure/flora/bigplant,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "rb" = (
 /obj/effect/turf_decal/industrial/warning,
@@ -3135,7 +3132,6 @@
 	},
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering";
-	normalspeed = 0;
 	req_access_txt = null
 	},
 /turf/open/floor/plasteel/dark,
@@ -3336,7 +3332,7 @@
 	},
 /obj/structure/flora/grass/jungle,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "sO" = (
 /obj/structure/cable{
@@ -3743,7 +3739,7 @@
 	id = "twinkle_sm"
 	},
 /obj/machinery/atmospherics/pipe/simple/green/visible,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "vL" = (
 /obj/structure/chair/comfy/shuttle{
@@ -3851,7 +3847,6 @@
 	},
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering";
-	normalspeed = 0;
 	req_access_txt = null;
 	dir = 4
 	},
@@ -4180,7 +4175,6 @@
 "ya" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering";
-	normalspeed = 0;
 	req_access_txt = null;
 	dir = 4
 	},
@@ -5564,7 +5558,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/radiation,
 /obj/effect/decal/cleanable/glass,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "EX" = (
 /obj/effect/turf_decal/steeldecal/steel_decals_central6{
@@ -6235,7 +6229,7 @@
 	},
 /obj/effect/decal/cleanable/glass,
 /obj/item/stack/ore/salvage/scrapmetal/ten,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "Ii" = (
 /obj/structure/table/reinforced,
@@ -6445,7 +6439,7 @@
 /obj/item/stack/ore/salvage/scrapsilver,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "Jr" = (
 /obj/effect/decal/cleanable/plasma,
@@ -6894,7 +6888,7 @@
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 5
 	},
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "Mr" = (
 /obj/machinery/porta_turret/ship/elysium{
@@ -7007,7 +7001,7 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/tree/jungle/small,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "Nh" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -7732,11 +7726,7 @@
 	},
 /obj/structure/closet/emcloset,
 /obj/effect/spawner/random/maintenance/four,
-/obj/item/reagent_containers/food/snacks/burger/red{
-	name = "suspicious red burger";
-	desc = "A suspicious looking burger.";
-	color = "#730622"
-	},
+/obj/item/reagent_containers/food/snacks/burger,
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 1
 	},
@@ -8126,7 +8116,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "Tl" = (
 /obj/effect/turf_decal/spline/fancy/opaque/black{
@@ -8220,7 +8210,7 @@
 /obj/effect/decal/cleanable/glass,
 /obj/structure/barricade/wooden/crude,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "TR" = (
 /obj/item/trash/syndi_cakes,

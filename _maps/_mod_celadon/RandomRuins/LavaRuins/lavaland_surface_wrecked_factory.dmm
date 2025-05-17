@@ -71,12 +71,15 @@
 /turf/open/floor/plating/moss,
 /area/overmap_encounter/planetoid/lava/explored)
 "aM" = (
-/obj/item/documents/nanotrasen,
 /obj/item/spacecash/bundle/c1000,
 /obj/item/spacecash/bundle/c1000,
 /obj/item/spacecash/bundle/c1000,
 /obj/item/stock_parts/cell/gun/upgraded,
 /obj/structure/safe,
+/obj/effect/landmark/mission_poi/main{
+	type_to_spawn = /obj/item/documents/nanotrasen;
+	spawn_in_containter = 1
+	},
 /turf/open/floor/carpet/blue,
 /area/ruin/lavaland/factory/manager_office)
 "aW" = (
@@ -160,6 +163,14 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+/obj/item/reagent_containers/hypospray/medipen/stimpack/crisis{
+	pixel_x = 8;
+	pixel_y = -2;
+	list_reagents = null
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpack/crisis{
+	list_reagents = null
+	},
 /turf/open/floor/carpet/blue,
 /area/ruin/lavaland/factory/manager_office)
 "bE" = (
@@ -228,6 +239,11 @@
 /obj/effect/mob_spawn/human/corpse/cargo_tech,
 /obj/effect/decal/cleanable/blood{
 	icon_state = "bubblegumfoot"
+	},
+/obj/effect/landmark/mission_poi/main/implanted{
+	mission_index = 3;
+	type_to_spawn = /mob/living/carbon/human;
+	already_spawned = 1
 	},
 /turf/open/floor/concrete/pavement/lava,
 /area/overmap_encounter/planetoid/lava/explored)
@@ -341,7 +357,7 @@
 /area/ruin/lavaland/factory/warehouse)
 "dc" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/cloth,
 /obj/effect/turf_decal/corner/opaque/ntblue,
 /obj/effect/turf_decal/corner/opaque/ntblue{
@@ -1059,6 +1075,17 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/factory/warehouse)
+"kn" = (
+/obj/item/reagent_containers/hypospray/medipen/stimpack{
+	list_reagents = null;
+	pixel_x = -5;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpack/crisis{
+	list_reagents = null
+	},
+/turf/open/floor/carpet/blue,
+/area/ruin/lavaland/factory/manager_office)
 "ku" = (
 /obj/structure/railing{
 	dir = 9
@@ -1380,7 +1407,7 @@
 /area/overmap_encounter/planetoid/lava/explored)
 "nA" = (
 /obj/effect/turf_decal/trimline/opaque/lime/warning,
-/obj/effect/mob_spawn/human/corpse/nanotrasensoldier,
+/obj/effect/mob_spawn/human/corpse/vigilitas_private,
 /obj/effect/decal/cleanable/blood{
 	icon_state = "trails_2";
 	dir = 4
@@ -2186,6 +2213,24 @@
 "tV" = (
 /turf/open/floor/plating/grass/lava/purple,
 /area/overmap_encounter/planetoid/lava/explored)
+"tY" = (
+/obj/item/reagent_containers/hypospray/medipen/stimpack/crisis{
+	list_reagents = null;
+	pixel_y = 4;
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpack/crisis{
+	pixel_x = 8;
+	pixel_y = -2;
+	list_reagents = null
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpack/crisis{
+	list_reagents = null;
+	pixel_y = -7;
+	pixel_x = 2
+	},
+/turf/open/floor/carpet/blue,
+/area/ruin/lavaland/factory/manager_office)
 "uc" = (
 /obj/structure/flora/ausbushes/hell,
 /turf/open/floor/plating/asteroid/purple/lit,
@@ -2394,7 +2439,14 @@
 	name = "Manager";
 	environment_smash = 0;
 	health = 200;
-	maxHealth = 200
+	maxHealth = 200;
+	taunt_chance = 100;
+	aggro_say_chance = 100;
+	on_aggro_say = list("I'll kill all you Ramzi scum! COME AND GET SOME!", "I'll kill every last one of you Ramzi bastards!", "Finally got the nerve to finish me off you scum sucking Ramzi assholes...  YOU WON'T GET ME TOO YOU BASTARDS!!");
+	speak_emote = list("rants","screams","sobs");
+	verb_exclaim = "rants";
+	verb_yell = "rants";
+	weapon_drop_chance = 100
 	},
 /turf/open/floor/carpet/blue,
 /area/ruin/lavaland/factory/manager_office)
@@ -2646,12 +2698,6 @@
 	},
 /turf/open/floor/plasteel/dark/lava,
 /area/overmap_encounter/planetoid/cave/explored)
-"yY" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/turf/open/floor/carpet/nanoweave,
-/area/ruin/lavaland/factory/manager_office)
 "zf" = (
 /obj/structure/bed/double{
 	dir = 1
@@ -2791,6 +2837,17 @@
 /obj/structure/girder/reinforced,
 /turf/open/floor/plating/rust/lava,
 /area/overmap_encounter/planetoid/cave/explored)
+"Ay" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor5"
+	},
+/obj/item/gun/ballistic/automatic/pistol/ringneck,
+/obj/effect/mob_spawn/human/corpse/ramzi,
+/turf/open/floor/wood,
+/area/ruin/lavaland/factory/manager_office)
 "AB" = (
 /obj/effect/turf_decal/trimline/opaque/beige/warning{
 	dir = 1
@@ -2943,6 +3000,10 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor5"
+	},
+/obj/effect/mob_spawn/human/corpse/ramzi,
 /turf/open/floor/wood,
 /area/ruin/lavaland/factory/manager_office)
 "Ci" = (
@@ -3157,7 +3218,7 @@
 /area/ruin/lavaland/factory/dorms)
 "EP" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/cloth,
 /obj/effect/turf_decal/corner/opaque/ntblue,
 /obj/effect/turf_decal/corner/opaque/ntblue{
@@ -3954,6 +4015,10 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
+/obj/effect/decal/cleanable/blood{
+	icon_state = "trails_2";
+	dir = 10
+	},
 /turf/open/floor/wood,
 /area/ruin/lavaland/factory/manager_office)
 "MZ" = (
@@ -4006,7 +4071,7 @@
 /area/overmap_encounter/planetoid/cave/explored)
 "NG" = (
 /obj/structure/flippedtable,
-/obj/effect/mob_spawn/human/corpse/nanotrasensoldier,
+/obj/effect/mob_spawn/human/corpse/vigilitas_private,
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
@@ -4570,7 +4635,7 @@
 	icon_state = "2-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/mob_spawn/human/corpse/nanotrasensoldier,
+/obj/effect/mob_spawn/human/corpse/vigilitas_private,
 /obj/effect/gibspawner/human/bodypartless,
 /turf/open/floor/plasteel/white/lava,
 /area/overmap_encounter/planetoid/lava/explored)
@@ -5074,7 +5139,7 @@
 /area/overmap_encounter/planetoid/lava/explored)
 "YJ" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/cloth,
 /obj/effect/turf_decal/corner/opaque/ntblue,
 /obj/effect/turf_decal/corner/opaque/ntblue{
@@ -5100,6 +5165,11 @@
 	},
 /obj/structure/sign/poster/official/enlist{
 	pixel_y = 32
+	},
+/obj/effect/landmark/mission_poi/main{
+	mission_index = 2;
+	type_to_spawn = /obj/item/clothing/accessory/medal/gold/heroism;
+	already_spawned = 1
 	},
 /turf/open/floor/wood,
 /area/ruin/lavaland/factory/adminstrative)
@@ -6252,12 +6322,12 @@ LZ
 LZ
 Vn
 aM
-LP
+kn
 By
 Oc
 LP
 Wx
-LL
+Ay
 MY
 yQ
 gj
@@ -6306,7 +6376,7 @@ LZ
 LZ
 Vn
 yq
-LP
+tY
 vP
 bz
 fB
@@ -6314,7 +6384,7 @@ fB
 fB
 fB
 po
-yY
+hm
 cX
 hm
 pc

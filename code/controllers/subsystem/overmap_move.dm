@@ -2,7 +2,7 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 	name = "Overmap Movement"
 	priority = FIRE_PRIORITY_OVERMAP_MOVEMENT
 
-// [CELADON-ADD] - OVERMAP COLLISION - Это вагабонд насрал
+// [CELADON-ADD] - CELADON_OVERMAP_COLLISION - Это вагабонд насрал
 
 /proc/get_relative_motion(var/A, var/B)
 	var/mins = -1
@@ -56,9 +56,12 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 	else
 		tcpa = max(tcpa_by_x, tcpa_by_y)
 
+	var/datum/overmap/outpost/outpost = SSovermap.outposts[1]
 	if(!info)
 		if(cpa != -1 && tcpa != -1)
-			if(tcpa/SSovermap_stuff.wait <= 5 && cpa <= 8)
+			// [CELADON-EDIT] - Outpost collision protection - if(tcpa/SSovermap_stuff.wait <= 5 && cpa <= 8)
+			if((get_pixel_distance(A.token, outpost.token)>16 && get_pixel_distance(B.token, outpost.token)>16) && tcpa/SSovermap_stuff.wait <= 5 && cpa <= 8) // Tile of outpost of full colision protection. Half of tile around outpost of prox warning procs.
+			// [/CELADON-EDIT]
 				var/arpdequeue_pointer = 0
 				if(world.time - A.last_proximity_alert >= 20)
 					A.last_proximity_alert = world.time
@@ -66,7 +69,9 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 						var/obj/machinery/computer/helm/a = A.helms[arpdequeue_pointer]
 						a.say("Proximity alarm! Possible collision situation.")
 						playsound(a, 'sound/machines/engine_alert1.ogg', 50, FALSE)
-			if(get_pixel_distance(A.token, B.token) <= 4 && cpa != -1 && (A.get_speed() != 0 || B.get_speed() != 0))
+			// [CELADON-EDIT] - Outpost collision protection - if(get_pixel_distance(A.token, B.token) <= 4 && cpa != -1 && (A.get_speed() != 0 || B.get_speed() != 0))
+			if((get_pixel_distance(A.token, outpost.token)>32 && get_pixel_distance(B.token, outpost.token)>32) && get_pixel_distance(A.token, B.token) <= 4 && cpa != -1 && (A.get_speed() != 0 || B.get_speed() != 0)) // Thurther than that is full colision
+			// [/CELADON-EDIT]
 				var/arpdequeue_pointer = 0
 				if(world.time - A.last_collision_alert >= 20)
 					A.last_collision_alert = world.time
@@ -86,8 +91,8 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 					B.adjust_speed(-B.speed_x/2 + alt_opposite_x, -B.speed_y/2 + alt_opposite_y)
 				else
 					B.vector_to_add = list("x" = -B.speed_x/2 + alt_opposite_x, "y" = -B.speed_y/2 + alt_opposite_y)
-				spawn_meteors_alt(round(60 SECONDS * MAGNITUDE(relative_motion_x, relative_motion_y))+1, list(/obj/effect/meteor/invisible), A.shuttle_port.get_virtual_level(), angle2dir_cardinal(SIMPLIFY_DEGREES((bearing-A.bow_heading+90))))
-				spawn_meteors_alt(round(60 SECONDS * MAGNITUDE(relative_motion_x, relative_motion_y))+1, list(/obj/effect/meteor/invisible), B.shuttle_port.get_virtual_level(), angle2dir_cardinal(SIMPLIFY_DEGREES((bearing-A.bow_heading+270))))
+				spawn_meteors_alt(round(60 SECONDS * MAGNITUDE(relative_motion_x, relative_motion_y))+1, list(/obj/effect/meteor/invisible), A.shuttle_port.get_virtual_level(), A.shuttle_port, angle2dir_cardinal(SIMPLIFY_DEGREES((bearing-A.bow_heading+90))))
+				spawn_meteors_alt(round(60 SECONDS * MAGNITUDE(relative_motion_x, relative_motion_y))+1, list(/obj/effect/meteor/invisible), B.shuttle_port.get_virtual_level(), B.shuttle_port, angle2dir_cardinal(SIMPLIFY_DEGREES((bearing-A.bow_heading+270))))
 
 	return list("cpa" = round(cpa), "tcpa" = round(tcpa/10), "brg" = round(SIMPLIFY_DEGREES(bearing-A.bow_heading)))
 

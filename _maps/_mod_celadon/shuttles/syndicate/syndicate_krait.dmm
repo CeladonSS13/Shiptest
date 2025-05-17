@@ -1978,7 +1978,7 @@
 "pi" = (
 /obj/machinery/light/floor,
 /obj/effect/landmark/subship{
-	subship_template = /datum/map_template/shuttle/subshuttles/syndicate_jet_lancer
+	subship_template = /datum/map_template/shuttle/subshuttles/jet_lancer
 	},
 /turf/open/floor/pod/dark,
 /area/ship/security/dock)
@@ -2528,7 +2528,7 @@
 	pixel_x = 20;
 	pixel_y = -12
 	},
-/obj/item/reagent_containers/food/snacks/deadmouse,
+/obj/item/food/deadmouse,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "uu" = (
@@ -3215,11 +3215,11 @@
 "AH" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/industrial/traffic/full,
-/obj/item/melee/axe/sledgehammer{
+/obj/item/melee/sledgehammer/gorlex{
 	pixel_x = 3;
 	pixel_y = 2
 	},
-/obj/item/melee/axe/sledgehammer{
+/obj/item/melee/sledgehammer/gorlex{
 	pixel_x = -4;
 	pixel_y = 1
 	},
@@ -3628,6 +3628,11 @@
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
+"Ff" = (
+/obj/machinery/cryopod/syndicate,
+/obj/machinery/computer/cryopod/directional/west,
+/turf/open/floor/circuit/red,
+/area/ship/crew/dorm)
 "Fg" = (
 /obj/effect/turf_decal/corner/transparent/syndiered/border,
 /obj/effect/turf_decal/corner/transparent/syndiered/bordercorner{
@@ -4038,7 +4043,7 @@
 	pixel_y = 13;
 	pixel_x = 8
 	},
-/obj/item/food/cake/brain,
+/obj/item/food/cake/trumpet,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/science/storage)
 "Jb" = (
@@ -6189,7 +6194,7 @@ zx
 dq
 Vo
 vJ
-sK
+Ff
 dz
 Xd
 fO

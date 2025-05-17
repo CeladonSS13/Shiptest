@@ -46,7 +46,7 @@
 
 /datum/supply_pack/gun/glock
 	name = "Оружейный ящик Glock"
-	desc = "Содержит пистолет Glock калибра 9mm и одну дополнительную обойму к нему."
+	desc = "Содержит пистолет Glock калибра 9x18mm и одну дополнительную обойму к нему."
 	cost = 1300
 	contains = list(/obj/item/storage/guncase/glock)
 	crate_name = "auto rifle crate"
@@ -82,3 +82,10 @@
 	cost = 10850
 	contains = list(/obj/item/storage/guncase/saiga)
 	crate_name = "auto shotgun crate"
+
+
+// Я без понятия, что делает тот хаос, что выше этого прока, но ему явно не место в этом файле.
+/obj/item/gun/ballistic/automatic/powered/AltClick(mob/living/user)
+	if(!internal_magazine && loc == user && user.is_holding(src) && cell && tac_reloads && !(gun_firemodes[firemode_index] == FIREMODE_UNDERBARREL))
+		if(do_after(user, 3.5 SECONDS, src, hidden = TRUE))
+			eject_cell(user)

@@ -174,8 +174,8 @@
 	max_integrity = 150 //сепарские турели очевидно не особо крепкие
 
 /obj/machinery/porta_turret/ship/elysium/light
-	name = "Scrapped 10mm Light Turret"
-	desc = "A light Separatist's Ahisai'i turret. Shoots 10mm projectiles at a close range."
+	name = "Scrapped 10x22mm Light Turret"
+	desc = "A light Separatist's Ahisai'i turret. Shoots 10x22mm projectiles at a close range."
 	stun_projectile = /obj/projectile/bullet/c10mm/rubber
 	stun_projectile_sound = 'sound/weapons/gun/smg/vector_fire.ogg'
 	lethal_projectile = /obj/projectile/bullet/c10mm
@@ -199,7 +199,7 @@
 /obj/machinery/porta_turret/ship/solfed
 	name = "Solarian Gauss Turret"
 	desc = "An effective gauss defence system used by Solfed's vessels. Uses ferromagnetic pellets."
-	faction = list(FACTION_PLAYER_SOLGOV, "turret")
+	faction = list(FACTION_PLAYER_SOLFED, "turret")
 	stun_projectile = /obj/projectile/bullet/a556_42/rubber
 	stun_projectile_sound = 'sound/weapons/gun/smg/shot.ogg'
 	lethal_projectile = /obj/projectile/bullet/gauss
@@ -220,7 +220,7 @@
 /obj/machinery/porta_turret/ship/solfed/heavy
 	name = "Solarian Heavy Gauss Turret"
 	desc = "A powerful heavy gauss defence system used by Solfed's vessels. Uses ferromagnetic lances."
-	stun_projectile = /obj/projectile/bullet/a65clip/rubber
+	stun_projectile = /obj/projectile/bullet/a75clip/rubber
 	stun_projectile_sound = 'sound/weapons/gun/gauss/magrifle.ogg'
 	lethal_projectile = /obj/projectile/bullet/gauss/lance
 	lethal_projectile_sound = 'sound/weapons/gun/gauss/claris.ogg'
@@ -252,9 +252,9 @@
 /obj/machinery/porta_turret/ship/syndicate/ballistic/heavy
 	name = "Heavy Gorlex Ballistic Defence"
 	desc = "A heavy ballistic turret designed by the Gorlex Maurauders. An extremely powerful defence system."
-	stun_projectile = /obj/projectile/bullet/a65clip/rubber
+	stun_projectile = /obj/projectile/bullet/a75clip/rubber
 	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg'
-	lethal_projectile = /obj/projectile/bullet/a65clip
+	lethal_projectile = /obj/projectile/bullet/a75clip
 	lethal_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg'
 	max_integrity = 300
 

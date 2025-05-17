@@ -1,3 +1,5 @@
+/// MARK: Tetta stantion
+
 /area/ruin/space/has_grav/ancientstation
 	requires_power = TRUE
 	name = "Charlie Station Main Corridor"
@@ -74,6 +76,8 @@
 	name = "Hivebot Mothership"
 	icon_state = "xenocell1"
 
+/// MARK: wasteplanet
+
 /area/ruin/wasteplanet/secure_claw
 	name = "Laboratory"
 	icon_state = "toxlab"
@@ -94,6 +98,8 @@
 	name = "Recreation area"
 	icon_state = "yellow"
 
+/// MARK: rockplanet
+
 /area/ruin/rockplanet/lasttemplar/dorm
 	name = "Barrack"
 	icon_state = "yellow"
@@ -105,6 +111,8 @@
 /area/ruin/rockplanet/lasttemplar/medbay
 	name = "Medbay"
 	icon_state = "medbay"
+
+/// MARK: asteroid
 
 /area/ruin/asteroid/wreckeroutpost/dorm
 	name = "Dorm"
@@ -137,3 +145,35 @@
 /area/ruin/asteroid/wreckeroutpost/cargomining
 	name = "Cargo Mining"
 	icon_state = "mining"
+
+/// MARK: Ocean Town
+
+/area/ruin/beach/oceantown
+	name = "ocean town"
+	icon_state = "oceantown"
+
+/area/ruin/beach/oceantown/bar
+	name = "ocean town bar"
+	icon_state = "oceantown_bar"
+
+/area/ruin/beach/oceantown/house
+	name = "ocean town house"
+	icon_state = "oceantown_house"
+
+/area/ruin/beach/oceantown/shop
+	name = "ocean town shop"
+	icon_state = "oceantown_shop"
+
+/area/ruin/beach/oceantown/hotel
+	name = "ocean town hotel"
+	icon_state = "oceantown_hotel"
+
+/// MARK: Float resort
+
+/area/ruin/beach/float_resort
+	name = "float resort"
+	icon_state = "float_resort"
+
+/area/ruin/beach/float_resort/villa
+	name = "float resort villa"
+	icon_state = "float_resort_villa"

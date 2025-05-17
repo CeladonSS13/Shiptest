@@ -21,7 +21,7 @@
 	fire_sound = 'sound/weapons/gun/laser/e-fire.ogg'
 
 /obj/projectile/beam/laser/eoehoma/hermit // Used for the Hermits with E-11 because apparently you can only set it on projectile for simple mobs? That's fun!
-	spread = 80
+	spread = 30
 
 /obj/item/ammo_casing/energy/laser/assault
 	projectile_type = /obj/projectile/beam/laser/assault
@@ -53,7 +53,16 @@
 
 /obj/item/ammo_casing/energy/lasergun/eoehoma
 	projectile_type = /obj/projectile/beam/laser/eoehoma
-	fire_sound = 'sound/weapons/gun/laser/e-fire.ogg'
+	fire_sound = 'sound/weapons/gun/laser/e40_las.ogg'
+	e_cost = 1428
+	delay = 0.3 SECONDS
+
+/obj/item/ammo_casing/energy/lasergun/eoehoma/heavy
+	projectile_type = /obj/projectile/beam/laser/eoehoma/heavy
+	fire_sound = 'sound/weapons/gun/laser/heavy_laser.ogg'
+	e_cost = 10000
+	select_name = "overcharge"
+	delay = 1 SECONDS
 
 /obj/item/ammo_casing/energy/laser/smg
 	projectile_type = /obj/projectile/beam/laser/weak

@@ -584,9 +584,7 @@
 /area/ship/engineering)
 "hh" = (
 /obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = -12;
@@ -708,15 +706,13 @@
 	pixel_x = 32
 	},
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/cloth/fancy,
 /obj/machinery/light/directional/east,
 /turf/open/floor/carpet/blue,
 /area/ship/crew/dorm)
 "iJ" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -795,9 +791,7 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/security)
 "jn" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/fueled/plasma,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "jp" = (
@@ -1150,7 +1144,7 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/hallway/central)
 "nh" = (
-/mob/living/simple_animal/mouse/white{
+/mob/living/basic/mouse/white{
 	name = "Wire eaters";
 	faction = list("playerNanotrasen","neutral")
 	},
@@ -1227,8 +1221,7 @@
 	dir = 6
 	},
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /obj/effect/turf_decal/techfloor{
 	dir = 9
@@ -1387,7 +1380,7 @@
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering)
 "ox" = (
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/bed,
 /obj/structure/curtain/cloth/fancy,
 /obj/structure/sign/flag/nanotrasen/directional/west,
@@ -1616,7 +1609,7 @@
 	},
 /obj/machinery/light/floor,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/banner/nanotrasen,
+/obj/item/banner/nanotrasen/mundane,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/hallway/central)
 "rk" = (
@@ -1669,9 +1662,7 @@
 /turf/open/floor/engine/hull,
 /area/ship/external)
 "sB" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -1794,7 +1785,7 @@
 	},
 /obj/item/disk/design_disk/ammo_c9mm,
 /obj/structure/safe/floor,
-/obj/item/energyhalberd/blue,
+/obj/item/melee/duelenergy/halberd/blue,
 /obj/effect/turf_decal/techfloor{
 	dir = 5
 	},
@@ -1809,7 +1800,7 @@
 "tR" = (
 /obj/structure/extinguisher_cabinet/directional/east,
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/cloth/fancy,
 /turf/open/floor/carpet/blue,
 /area/ship/crew/dorm)
@@ -2120,9 +2111,7 @@
 /turf/open/floor/carpet/royalblack,
 /area/ship/crew/dorm/dormtwo)
 "xL" = (
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -2190,8 +2179,7 @@
 	pixel_y = 17;
 	pixel_x = -1
 	},
-/obj/item/food/cakeslice/brain{
-	pixel_x = 0;
+/obj/item/food/cakeslice/trumpet{
 	pixel_y = 9
 	},
 /turf/open/floor/carpet/royalblack,
@@ -2392,8 +2380,7 @@
 /area/ship/security)
 "zZ" = (
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -2686,9 +2673,7 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/security)
 "Dl" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -2735,9 +2720,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/bottlegreen/line{
-	dir = 2
-	},
+/obj/effect/turf_decal/trimline/opaque/bottlegreen/line,
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
@@ -3031,7 +3014,7 @@
 	},
 /obj/machinery/light/floor,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/banner/nanotrasen,
+/obj/item/banner/nanotrasen/mundane,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/hallway/central)
 "Hy" = (
@@ -4151,9 +4134,7 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/security)
 "TR" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -4220,9 +4201,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
 	},
-/obj/effect/turf_decal/trimline/opaque/bottlegreen/line{
-	dir = 2
-	},
+/obj/effect/turf_decal/trimline/opaque/bottlegreen/line,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "Va" = (

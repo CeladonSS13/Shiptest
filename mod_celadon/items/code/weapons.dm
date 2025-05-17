@@ -79,7 +79,7 @@
 
 /obj/item/melee/baseball_bat/homerun/central_command/pickup(mob/living/user)
 	if(!HAS_TRAIT(user, TRAIT_MINDSHIELD))
-		to_chat(user, "<span class='cultlarge'>\"Это - оружие истинного правосудия. Тебе не дано обуздать его мощь.\"</span>")
+		to_chat(user, span_cultlarge("\"Это - оружие истинного правосудия. Тебе не дано обуздать его мощь.\""))
 		if(ishuman(user))
 			var/mob/living/carbon/human/H = user
 			H.apply_damage(50, BRUTE, pick(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM))
@@ -99,7 +99,7 @@
 /obj/item/melee/baseball_bat/homerun/central_command/attack(mob/living/target, mob/living/user)
 	var/atom/throw_target = get_edge_target_turf(target, user.dir)
 	if(homerun_ready)
-		user.visible_message("<span class='userdanger'>С глаз долой!</span>")
+		user.visible_message(span_userdanger("С глаз долой!"))
 		target.throw_at(throw_target, rand(10,12), 16, user)
 		target.take_bodypart_damage(force_on)
 		target.apply_effect(100, EFFECT_STUN)
@@ -117,4 +117,4 @@
 	var/mob/living/carbon/human/H = user
 	H.take_bodypart_damage(force)
 	H.apply_effect(100, EFFECT_STUN)
-	to_chat(user, "<span class='cultlarge'>\"Туда тебя!\"</span>")
+	to_chat(user, span_cultlarge("\"Туда тебя!\""))

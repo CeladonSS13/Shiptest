@@ -8,16 +8,32 @@ NO_MAG_GUN_HELPER(automatic/pistol/solgov)
 NO_MAG_GUN_HELPER(automatic/smg/vector)
 NO_MAG_GUN_HELPER(automatic/assault/skm/inteq)
 NO_MAG_GUN_HELPER(automatic/marksman/f4/inteq)
+NO_MAG_GUN_HELPER(energy/laser/retro)
+
+/obj/item/gun/energy/laser/retro/empty_cell
+	spawn_no_ammo = TRUE
 
 // Создаём кучу ганкейсов, чтобы заполнить ими карго
 
-//Solfed guncases
+/*
+MARK: Independent guncases
+*/
 
-/obj/item/storage/guncase/gauss
-/obj/item/storage/guncase/gauss/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/powered/gauss/gar/no_mag(src)
-	new /obj/item/ammo_box/magazine/gar/empty(src)
-	new /obj/item/ammo_box/magazine/gar/empty(src)
+/obj/item/storage/guncase/retro
+/obj/item/storage/guncase/retro/PopulateContents()
+	new /obj/item/gun/energy/laser/retro/empty_cell(src)
+	new /obj/item/stock_parts/cell/gun/empty(src)
+	new /obj/item/stock_parts/cell/gun/empty(src)
+
+/obj/item/storage/guncase/skm_carbine
+/obj/item/storage/guncase/skm_carbine/PopulateContents()
+	new /obj/item/gun/ballistic/automatic/smg/skm_carbine/no_mag(src)
+	new /obj/item/ammo_box/magazine/skm_46_30/empty(src)
+	new /obj/item/ammo_box/magazine/skm_46_30/empty(src)
+
+/*
+MARK: Solfed guncases
+ */
 
 /obj/item/ammo_box/magazine/gar/empty
 	start_empty = TRUE
@@ -46,7 +62,15 @@ NO_MAG_GUN_HELPER(automatic/marksman/f4/inteq)
 	new /obj/item/ammo_box/magazine/smgm9mm/empty(src)
 	new /obj/item/ammo_box/magazine/smgm9mm/empty(src)
 
-//InteQ guncases
+/*
+MARK: InteQ guncases
+*/
+
+/obj/item/storage/guncase/cm82/solfed
+/obj/item/storage/guncase/cm82/solfed/PopulateContents()
+	new /obj/item/gun/ballistic/automatic/assault/cm82/solfed/no_mag(src)
+	new /obj/item/ammo_box/magazine/p16/empty(src)
+	new /obj/item/ammo_box/magazine/p16/empty(src)
 
 /obj/item/storage/guncase/bulldog/inteq
 /obj/item/storage/guncase/bulldog/inteq/PopulateContents()
@@ -69,6 +93,12 @@ NO_MAG_GUN_HELPER(automatic/marksman/f4/inteq)
 	new /obj/item/ammo_box/magazine/co9mm/empty(src)
 	new /obj/item/ammo_box/magazine/co9mm/empty(src)
 
+/obj/item/storage/guncase/horizonx/inteq
+/obj/item/storage/guncase/horizonx/inteq/PopulateContents()
+	new /obj/item/gun/ballistic/revolver/horizonx/no_mag(src)
+	new /obj/item/ammo_box/a357/empty(src)
+	new /obj/item/ammo_box/a357/empty(src)
+
 /obj/item/storage/guncase/f4_308/inteq
 /obj/item/storage/guncase/f4_308/inteq/PopulateContents()
 	new /obj/item/gun/ballistic/automatic/marksman/f4/inteq/no_mag(src)
@@ -87,8 +117,9 @@ NO_MAG_GUN_HELPER(automatic/marksman/f4/inteq)
 /obj/item/ammo_box/magazine/skm_762_40/empty
 	start_empty = TRUE
 
-//Syndicate guncases
-
+/*
+MARK: Syndicate guncases
+*/
 /obj/item/storage/guncase/bulldog
 /obj/item/storage/guncase/bulldog/PopulateContents()
 	new /obj/item/gun/ballistic/shotgun/automatic/bulldog/no_mag(src)
@@ -131,21 +162,34 @@ NO_MAG_GUN_HELPER(automatic/marksman/f4/inteq)
 	new /obj/item/ammo_box/magazine/m45_cobra/empty(src)
 	new /obj/item/ammo_box/magazine/m45_cobra/empty(src)
 
-//Nanotrasen guncases
+/obj/item/storage/guncase/syndicate/himehabu
+/obj/item/storage/guncase/syndicate/himehabu/PopulateContents()
+	new /obj/item/gun/ballistic/automatic/pistol/himehabu/no_mag(src)
+	new /obj/item/ammo_box/magazine/m22lr_himehabu/empty(src)
+	new /obj/item/ammo_box/magazine/m22lr_himehabu/empty(src)
+
+/*
+MARK: Nanotrasen guncases
+*/
 
 /obj/item/storage/guncase/etar_smg
 /obj/item/storage/guncase/etar_smg/PopulateContents()
 	new /obj/item/gun/energy/e_gun/smg(src)
 	new /obj/item/stock_parts/cell/gun/empty(src)
 
+/obj/item/gun/energy/e_gun/hades/empty_cell
+	spawn_no_ammo = TRUE
+
 /obj/item/storage/guncase/hades
 /obj/item/storage/guncase/hades/PopulateContents()
-	new /obj/item/gun/energy/e_gun/hades(src)
+	new /obj/item/gun/energy/e_gun/hades/empty_cell(src)
+	new /obj/item/stock_parts/cell/gun/empty(src)
 	new /obj/item/stock_parts/cell/gun/empty(src)
 
 /obj/item/storage/guncase/egun
 /obj/item/storage/guncase/egun/PopulateContents()
 	new /obj/item/gun/energy/e_gun(src)
+	new /obj/item/stock_parts/cell/gun/empty(src)
 	new /obj/item/stock_parts/cell/gun/empty(src)
 
 /obj/item/storage/guncase/miniegun
@@ -158,14 +202,22 @@ NO_MAG_GUN_HELPER(automatic/marksman/f4/inteq)
 	new /obj/item/gun/energy/e_gun/iot(src)
 	new /obj/item/stock_parts/cell/gun/empty(src)
 
+/obj/item/gun/energy/ionrifle/carbine/empty_cell
+	spawn_no_ammo = TRUE
+
 /obj/item/storage/guncase/ion_carbine
 /obj/item/storage/guncase/ion_carbine/PopulateContents()
-	new /obj/item/gun/energy/ionrifle/carbine(src)
+	new /obj/item/gun/energy/ionrifle/carbine/empty_cell(src)
 	new /obj/item/stock_parts/cell/gun/empty(src)
+	new /obj/item/stock_parts/cell/gun/empty(src)
+
+/obj/item/gun/energy/lasercannon/empty_cell
+	spawn_no_ammo = TRUE
 
 /obj/item/storage/guncase/heavylaser
 /obj/item/storage/guncase/heavylaser/PopulateContents()
-	new /obj/item/gun/energy/lasercannon(src)
+	new /obj/item/gun/energy/lasercannon/empty_cell(src)
+	new /obj/item/stock_parts/cell/gun/large/empty(src)
 	new /obj/item/stock_parts/cell/gun/large/empty(src)
 
 /obj/item/storage/guncase/sabersmg
@@ -177,12 +229,44 @@ NO_MAG_GUN_HELPER(automatic/marksman/f4/inteq)
 /obj/item/ammo_box/magazine/smgm9mm/empty
 	start_empty = TRUE
 
+/obj/item/gun/energy/e_gun/plasmapistol_cryo/empty_cell
+	spawn_no_ammo = TRUE
+
 /obj/item/storage/guncase/cryogelida
 /obj/item/storage/guncase/cryogelida/PopulateContents()
-	new /obj/item/gun/energy/e_gun/plasmapistol_cryo(src)
+	new /obj/item/gun/energy/e_gun/plasmapistol_cryo/empty_cell(src)
 	new /obj/item/stock_parts/cell/gun/empty(src)
+	new /obj/item/stock_parts/cell/gun/empty(src)
+
+/obj/item/gun/energy/e_gun/plasmapistol_fire/empty_cell
+	spawn_no_ammo = TRUE
 
 /obj/item/storage/guncase/pyrogelida
 /obj/item/storage/guncase/pyrogelida/PopulateContents()
-	new /obj/item/gun/energy/e_gun/plasmapistol_fire(src)
+	new /obj/item/gun/energy/e_gun/plasmapistol_fire/empty_cell(src)
+	new /obj/item/stock_parts/cell/gun/empty(src)
+	new /obj/item/stock_parts/cell/gun/empty(src)
+
+/obj/item/storage/guncase/g36/inteq
+/obj/item/storage/guncase/g36/inteq/PopulateContents()
+	new /obj/item/gun/ballistic/automatic/assault/g36/inteq/no_mag(src)
+	new /obj/item/ammo_box/magazine/g36/empty(src)
+	new /obj/item/ammo_box/magazine/g36/empty(src)
+
+/obj/item/gun/energy/disabler/empty_cell
+	spawn_no_ammo = TRUE
+
+/obj/item/storage/guncase/disabler
+/obj/item/storage/guncase/disabler/PopulateContents()
+	new /obj/item/gun/energy/disabler/empty_cell(src)
+	new /obj/item/stock_parts/cell/gun/empty(src)
+	new /obj/item/stock_parts/cell/gun/empty(src)
+
+/obj/item/gun/energy/e_gun/advtaser/empty_cell
+	spawn_no_ammo = TRUE
+
+/obj/item/storage/guncase/advtaser
+/obj/item/storage/guncase/advtaser/PopulateContents()
+	new /obj/item/gun/energy/e_gun/advtaser/empty_cell(src)
+	new /obj/item/stock_parts/cell/gun/empty(src)
 	new /obj/item/stock_parts/cell/gun/empty(src)

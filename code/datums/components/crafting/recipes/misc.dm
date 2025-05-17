@@ -148,10 +148,7 @@
 			/obj/item/stack/sheet/cotton/cloth = 4)
 	result = /obj/item/stack/medical/splint/ghetto
 	category = CAT_MISC
-// [CELADON-EDIT] - CELADON_REVERT_CONTENT - Откат по ИПС
-	// CELADON-EDIT = ORIGINAL
-// [/CELADON-EDIT]
-// [CELADON-REMOVE] - CELADON_REVERT_CONTENT - Откат по ИПС
+// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
 // /datum/crafting_recipe/replacement_structure
 // 	name = "Structure Repair Kit"
 // 	tools = list(TOOL_SCREWDRIVER, TOOL_WIRECUTTER) //hole punching and scissors
@@ -162,17 +159,6 @@
 // 	result = /obj/item/stack/medical/structure
 // 	category = CAT_MISC
 // [/CELADON-REMOVE]
-
-
-// /datum/crafting_recipe/replacement_structure
-// 	name = "Structure Repair Kit"
-// 	tools = list(TOOL_SCREWDRIVER, TOOL_WIRECUTTER) //hole punching and scissors
-// 	reqs = list(
-// 			/obj/item/stack/rods = 3,
-// 			/obj/item/stack/sheet/mineral/titanium = 1,
-// 			/obj/item/stack/cable_coil = 2)
-// 	result = /obj/item/stack/medical/structure
-// 	category = CAT_MISC
 
 /datum/crafting_recipe/portableseedextractor
 	name = "Portable seed extractor"
@@ -248,4 +234,14 @@
 				/obj/item/stack/sheet/plasteel = 5)
 	tools = list(TOOL_WELDER)
 	time = 50
+	category = CAT_MISC
+
+/datum/crafting_recipe/coffee_cartridge
+	name = "Bootleg Coffee Cartridge"
+	result = /obj/item/coffee_cartridge/bootleg
+	time = 2 SECONDS
+	reqs = list(
+		/obj/item/blank_coffee_cartridge = 1,
+		/datum/reagent/toxin/coffeepowder = 10,
+	)
 	category = CAT_MISC

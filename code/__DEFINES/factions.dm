@@ -1,7 +1,5 @@
-//"Antag" factions
-// anything with these factions should be hostile to the average player.
-#define FACTION_ANTAG_SYNDICATE "Syndicate"
-#define FACTION_ANTAG_FRONTIERSMEN "Frontiersmen"
+#define FACTION_SORT_DEFAULT 0
+#define FACTION_SORT_INDEPENDENT 100
 
 //Player Factions
 // [CELADON-REMOVE] - PREFIXES - (Перемещено в code/__DEFINES/~mod_celadon/names.dm)

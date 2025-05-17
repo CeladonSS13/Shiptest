@@ -12,7 +12,10 @@
 <!-- Название мода. Не важно на русском или на английском. -->
 ## Balance - изменение баланса
 
-ID мода: CELADON_BALANCE, CELADON_BALANCE_MOBS, CELADON_BALANCE_CD
+ID мода: 
+	CELADON_BALANCE
+	CELADON_BALANCE_CD
+	CELADON_BALANCE_MOBS
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов. Добавлены
@@ -55,6 +58,8 @@ ADD: `code\modules\projectiles\ammunition\_ammunition.dm` : /obj/item/ammo_casin
 Очки с зомби и ксеноморфов
 REMOVE: `D:\1ss\ShiptestYata\code\modules\surgery\experimental_dissection.dm`: `/datum/surgery_step/dissection/preop`
 REMOVE: `code\modules\projectiles\guns\energy.dm`
+REMOVE: `code/_globalvars/lists/maintenance_loot.dm`
+
 
 EDIT: `code/modules/mining/equipment/regenerative_core.dm` - теперь ИПС не смогут жрать ядра для полного отхила, их лечить будет на половину.
 EDIT:

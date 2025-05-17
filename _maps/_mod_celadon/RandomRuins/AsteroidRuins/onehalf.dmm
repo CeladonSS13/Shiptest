@@ -1999,7 +1999,7 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "PL" = (
-/obj/machinery/power/solar_control{
+/obj/machinery/computer/solar_control{
 	icon_state = "computer";
 	dir = 4
 	},
@@ -2034,12 +2034,6 @@
 	},
 /turf/open/space,
 /area/space/nearstation)
-"Ra" = (
-/obj/structure/frame/computer{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/ruin/space/has_grav/onehalf)
 "Rv" = (
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood/airless{
@@ -3328,7 +3322,7 @@ UM
 cp
 ZX
 Gv
-Ra
+Gv
 cU
 YE
 bU

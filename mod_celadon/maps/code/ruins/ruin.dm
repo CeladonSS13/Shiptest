@@ -64,6 +64,7 @@
 	suffix = "beach_pirate_crash.dmm"
 	cost = 2
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
+	ruin_mission_types = list(/datum/mission/ruin/signaled/kill/frontiersmen)
 
 /datum/map_template/ruin/beachplanet/treasurecove
 	id = "beach_treasure_cove"
@@ -72,6 +73,7 @@
 	suffix = "beach_treasure_cove.dmm"
 	cost = 3
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
+	ruin_mission_types = list(/datum/mission/ruin/signaled/kill/frontiersmen)
 
 /datum/map_template/ruin/beachplanet/crashedengie
 	id = "beach_crashed_engineer"
@@ -80,6 +82,7 @@
 	suffix = "beach_crashed_engineer.dmm"
 	cost = 1
 	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_HAZARDOUS)
+	ruin_mission_types = list(/datum/mission/ruin/lost_axe)
 
 /datum/map_template/ruin/beachplanet/floatresort
 	id = "beach_float_resort"
@@ -102,6 +105,19 @@
 	description = "An small castle holding the grave of a renowned warrior"
 	suffix = "beach_knights_rest.dmm"
 	cost = 1
+
+/datum/map_template/ruin/beachplanet/frontiersmen_depot	// NEW
+	name = "Frontiersmen Depot"
+	id = "beach_bunkers"
+	description = "A poorly constructed jumble of bunkers, currently held by the Frontiersmen Fleet for usage as a supply depot."
+	suffix = "beach_bunkers.dmm"
+	cost = 2
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
+	ruin_mission_types = list(
+		/datum/mission/ruin/data_retrieval,
+		/datum/mission/ruin/signaled/kill/frontiersmen,
+		/datum/mission/ruin/multiple/moonshine_crates
+	)
 
 //							///
 //		MARK: Icemoon
@@ -128,6 +144,10 @@
 	suffix = "icemoon_underground_abandoned_village.dmm"
 	cost = 1
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MINOR_LOOT, RUIN_TAG_INHOSPITABLE)
+	ruin_mission_types = list(
+		/datum/mission/ruin/data_retrieval,
+		/datum/mission/ruin/signaled/drill
+	)
 
 /datum/map_template/ruin/icemoon/crashed_cap_pod
 	id = "crushpod"
@@ -152,6 +172,7 @@
 	suffix = "icemoon_crashed_holemaker.dmm"
 	cost = 1
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MINOR_LOOT, RUIN_TAG_SHELTER)
+	ruin_mission_types = list(/datum/mission/ruin/data_retrieval)
 
 /datum/map_template/ruin/icemoon/engioutpost
 	id = "engioutpost"
@@ -201,7 +222,20 @@
 	suffix = "icemoon_tesla_lab.dmm"
 	description = "The destroyed SolFed laboratory for the development of a new type of engine."
 	cost = 5
+	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
+	ruin_mission_types = list(
+		/datum/mission/ruin/blackbox,
+		/datum/mission/ruin/daughter
+	)
 
+/datum/map_template/ruin/icemoon/ice_lodge	// NEW
+	name = "Ice Lodge"
+	id = "ice_lodge"
+	description = "Records show this settlement as belonging to the SRM, but no one has heard from them as of late. I wonder what happened?"
+	suffix = "icemoon_ice_lodge.dmm"
+	cost = 4
+	ruin_tags = list(RUIN_TAG_HARD_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
+	ruin_mission_types = list(/datum/mission/ruin/fallen_montagne)
 
 //							///
 //		MARK: Jungle
@@ -220,6 +254,10 @@
 	suffix = "jungle_syndicate.dmm"
 	cost = 3
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
+	ruin_mission_types = list(
+		/datum/mission/ruin/nt_files,
+		/datum/mission/ruin/signaled/kill/jerry
+	)
 
 /datum/map_template/ruin/jungle/interceptor
 	id = "crashedcondor"
@@ -244,6 +282,10 @@
 	suffix = "jungle_bombed_starport.dmm"
 	cost = 3
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_HAZARDOUS, RUIN_TAG_LIVEABLE)
+	ruin_mission_types = list(
+		/datum/mission/ruin/signaled/kill/ramzi/airbase,
+		/datum/mission/ruin/icw_documents
+	)
 
 /datum/map_template/ruin/jungle/medtech
 	id = "medtech-facility"
@@ -260,6 +302,10 @@
 	suffix = "jungle_cavecrew.dmm"
 	cost = 3
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_HAZARDOUS, RUIN_TAG_LIVEABLE, RUIN_TAG_MAJOR_LOOT)
+	ruin_mission_types = list(
+		/datum/mission/ruin/signaled/kill/frontiersmen,
+		/datum/mission/ruin/data_retrieval
+	)
 
 /datum/map_template/ruin/jungle/library
 	id = "abandoned-library"
@@ -366,13 +412,12 @@
 //							///
 //		MARK: Lavaland
 //							///
-
 /datum/map_template/ruin/lavaland/funmaze
- 	name = "fun maze"
- 	id = "funmaze"
- 	description = "very fanny maze."
- 	suffix = "lavaland_fun_maze.dmm"
- 	cost = 4
+	name = "fun maze"
+	id = "funmaze"
+	description = "very fanny maze."
+	suffix = "lavaland_fun_maze.dmm"
+	cost = 4
 
 /datum/map_template/ruin/lavaland/bubble_outpost
 	id = "bubble-outpost"
@@ -396,6 +441,7 @@
 	description = "An ancient temple belonging to some long-gone inhabitants, wrecked and buried by the volcanic activity of it's home planet."
 	suffix = "lavaland_surface_buried_shrine.dmm"
 	cost = 2
+	ruin_mission_types = list(/datum/mission/ruin/signaled/kill/elite)
 
 /datum/map_template/ruin/lavaland/lava_canyon
 	id = "lava_canyon"
@@ -410,6 +456,11 @@
 	description = "A  Nanotrasen processing facility, assaulted by a pirate raid that has killed most of the staff. The offices however, remain unbreached for now."
 	suffix = "lavaland_surface_wrecked_factory.dmm"
 	cost = 4
+	ruin_mission_types = list(
+		/datum/mission/ruin/nanotrasen_docs,
+		/datum/mission/ruin/captain_medal,
+		/datum/mission/ruin/brainchip
+	)
 
 /datum/map_template/ruin/lavaland/fallenstar
 	id = "crashed_star"
@@ -417,6 +468,7 @@
 	description = "A crashed pirate ship. It would seem that it's crew died a while ago."
 	suffix = "lavaland_crashed_starwalker.dmm"
 	cost = 2
+	ruin_mission_types = list(/datum/mission/ruin/blackbox)
 
 /datum/map_template/ruin/lavaland/hierophant
 	id = "hierophant"
@@ -495,6 +547,14 @@
 	cost = 5
 	allow_duplicates = FALSE
 
+/datum/map_template/ruin/lavaland/abandonedlisteningpost	// NEW
+	name = "Abandoned Listening Post"
+	id = "abandonedlistening"
+	description = "An abandoned Cybersun listening post. Seems like the Ramzi Clique has an interest in the site."
+	suffix = "lavaland_abandonedlisteningpost.dmm"
+	cost = 2
+	ruin_mission_types = list(/datum/mission/ruin/blackbox)
+
 //							///
 //		MARK: Rockplanet
 //							///
@@ -520,6 +580,9 @@
 	description = "An abandoned shipping dock used by small cargo freighters and smugglers alike. Some malicious group seems to have trapped the place to eliminate scavengers."
 	suffix = "rockplanet_shippingdock.dmm"
 	cost = 2
+	ruin_mission_types = list(
+		/datum/mission/ruin/bitch_wife,
+	)
 
 /datum/map_template/ruin/rockplanet/nomadcrash
 	id = "rockplanet_nomadcrash"
@@ -548,6 +611,11 @@
 	description = "A N+S mining installation recently fallen prey to a band of Ramzi pirates."
 	suffix = "rockplanet_mining_installation.dmm"
 	cost = 3
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER)
+	ruin_mission_types = list(
+		/datum/mission/ruin/signaled/drill/mining_base,
+		/datum/mission/ruin/ns_manager,
+	)
 
 /datum/map_template/ruin/rockplanet/boxsci
 	id = "abandonedscience"
@@ -576,6 +644,10 @@
 	description = "A former pre-ICW era Nanotrasen outpost converted into a moonshine distillery by Frontiersman bootleggers."
 	suffix = "rockplanet_distillery.dmm"
 	cost = 3
+	ruin_mission_types = list(
+		/datum/mission/ruin/signaled/kill/frontiersmen,
+		/datum/mission/ruin/multiple/moonshine_crates/distillery
+	)
 
 /datum/map_template/ruin/rockplanet/lasttemplar
 	id = "lasttemplar"
@@ -583,6 +655,17 @@
 	description = "A containment zone built around a certain creature..."
 	suffix = "rockplanet_lasttemplar.dmm"
 	cost = 3
+
+/datum/map_template/ruin/rockplanet/rust_base	// NEW
+	id = "rockplanet_rustbase"
+	name = "ISV Rust Base"
+	description = "A crashed Ramzi Clique vessel that has since become an isolated pirate outpost."
+	suffix = "rockplanet_rustbase.dmm"
+	cost = 1
+	ruin_mission_types = list(
+		/datum/mission/ruin/signaled/kill/bright,
+		/datum/mission/ruin/signaled/kill/amuro,
+	)
 
 //							///
 //		MARK: Space
@@ -699,6 +782,17 @@
 	cost = 5
 	allow_duplicates = FALSE
 
+/datum/map_template/ruin/space/scrapstation
+	id = "scrapstation"
+	suffix = "scrapstation.dmm"
+	name = "Ramzi Scrapping Station"
+	description = "A Syndicate FOB dating back to the ICW, now home to the Ramzi Clique and their latest haul."
+	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER)
+	ruin_mission_types = list(
+		/datum/mission/ruin/pgf_captain,
+		/datum/mission/ruin/signaled/kill/foreman
+	)
+
 //							///
 //		MARK: WastePlanet
 //							///
@@ -725,6 +819,10 @@
 	suffix = "wasteplanet_abandoned_mechbay.dmm"
 	cost = 4
 	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
+	ruin_mission_types = list(
+		/datum/mission/ruin/data_retrieval,
+		/datum/mission/ruin/my_mech
+	)
 
 /datum/map_template/ruin/wasteplanet/fortress
 	id = "solitude"
@@ -740,12 +838,15 @@
 	suffix = "wasteplanet_ore_proccessing_facility.dmm"
 	cost = 3
 
-/datum/map_template/ruin/wasteplanet/tradepost
-	id = "oldpod"
-	name = "Tradepost"
-	description = "An abandoned tradepost."
+/datum/map_template/ruin/wasteplanet/tradepost	// NEW
+	id = "wasteplanet_tradepost"
+	name = "Ruined Tradepost"
+	description = "Formerly a functioning, if not thriving tradepost. Now a graveyard of Inteq soldiers and hivebots."
 	suffix = "wasteplanet_tradepost.dmm"
 	cost = 2
+	ruin_mission_types = list(
+		/datum/mission/ruin/dead_vanguard
+	)
 
 /datum/map_template/ruin/wasteplanet/tarpit
 	id = "tarpit"
@@ -774,6 +875,26 @@
 	description = "A containment zone that contains an unknown creature called 'Claws'. For some unknown reason, there is a crashed ship called 'Dareсt' near the containment zone."
 	suffix = "wasteplanet_claw_ruin.dmm"
 	cost = 5
+
+/datum/map_template/ruin/wasteplanet/yard	// NEW
+	id = "wasteplanet_yard"
+	name = "Abandoned Miskilamo salvage yard"
+	description = "An abandonded shipbreaking yard."
+	suffix = "wasteplanet_yard.dmm"
+	cost = 3
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
+
+/datum/map_template/ruin/wasteplanet/icwbase	// NEW
+	id = "wasteplanet_icwbase"
+	name = "ICW Era Comms and Medical base."
+	description = "A former Syndicate Coalition base during the ICW, left to waste. It seems it has some new residents.."
+	suffix = "wasteplanet_icwbase.dmm"
+	cost = 4
+	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
+	ruin_mission_types = list(
+		/datum/mission/ruin/multiple/notes,
+		/datum/mission/ruin/signaled/kill/kitt
+	)
 
 //							///
 //		MARK: Whitesand
@@ -862,6 +983,7 @@
 	suffix = "whitesands_surface_e11_manufactory.dmm"
 	cost = 3
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_HAZARDOUS)
+	ruin_mission_types = list(/datum/mission/ruin/multiple/e11_stash)
 
 /datum/map_template/ruin/whitesands/ruinsofweh
 	id = "ws-ruinsofweh"
@@ -870,10 +992,23 @@
 	suffix = "whitesands_surface_ruinsofweh.dmm"
 	cost = 4
 
+/datum/map_template/ruin/whitesands/cave_base	// NEW
+	name = "Abandoned Cave Base"
+	id = "cave_base"
+	description = "The former home of a poor sod on observation duty. Now a cunning trap."
+	suffix = "whitesands_cave_base.dmm"
+	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER)
+
+/datum/map_template/ruin/whitesands/brazillian_lab	// NEW
+	name = "Hermit Weapons-Testing Compound"
+	id = "brazillian-lab"
+	description = "A conspicuous compound in the middle of the sandy wasteland. What goodies are inside?"
+	suffix = "whitesands_brazillianlab.dmm"
+	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_INHOSPITABLE)
+
 //							///
 //		MARK: Plasma
 //							///
-
 /datum/map_template/ruin/plasma_gaint/oldminer
 	id = "ps-oldminer"
 	name = "oldminer"
@@ -892,7 +1027,6 @@
 //							///
 //		MARK: EarthSand
 //							///
-
 /datum/map_template/ruin/earth_sand/el_town
 	id = "el_town"
 	name = "eltown"
@@ -959,6 +1093,7 @@
 	description = "A crashed abductor ship with something horrible goi'n inside."
 	suffix = "anima_ruined_abductor_ship.dmm"
 	cost = 1
+
 //							///
 //		MARK: Asteroid
 //							///
@@ -999,6 +1134,7 @@
 	suffix = "power_puzzle.dmm"
 	cost = 2
 	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
+	ruin_mission_types = list(/datum/mission/ruin/data_retrieval)
 
 /datum/map_template/ruin/asteroid/singularitylab
 	id = "singularitylab"
@@ -1007,6 +1143,7 @@
 	suffix = "singularity_lab.dmm"
 	cost = 5
 	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER)
+	ruin_mission_types = list(/datum/mission/ruin/oh_fuck)
 
 /datum/map_template/ruin/asteroid/excavator_DK
 	id = "Excavator-DK"
@@ -1028,3 +1165,33 @@
 	description = "A wrecker outpost with wreck ships around it."
 	suffix = "asteroid_wrecker_outpost.dmm"
 	cost = 3
+
+//							///
+//		MARK: Reebe
+//							///
+/datum/map_template/ruin/reebe
+	prefix = "_maps/_mod_celadon/RandomRuins/ReebeRuins/"
+	allow_duplicates = FALSE
+	cost = 5
+	ruin_type = RUINTYPE_YELLOW
+
+/datum/map_template/ruin/reebe/clockwork_arena
+	name = "Clockcult Arena"
+	id = "clockcultarena"
+	description = "A abandoned base, once belonging to clock cultists."
+	suffix = "reebe_arena.dmm"
+	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
+
+/datum/map_template/ruin/reebe/island
+	name = "Island Cache"
+	id = "islandcache"
+	description = "Reebe is full of these things. Something is hidden within here."
+	suffix = "reebe_floating_island.dmm"
+	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MINOR_LOOT, RUIN_TAG_LIVEABLE)
+
+/datum/map_template/ruin/reebe/sm
+	name = "Decayed Supermatter"
+	id = "smdecay"
+	description = "It seems whoever left here was so nice they left very vauluable items behind. How thoughtful."
+	suffix = "reebe_decayed_sm.dmm"
+	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE, RUIN_TAG_HAZARDOUS)

@@ -1,5 +1,5 @@
 {
-	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
 	"map_name": "Paracelsus-class Medical Corvette",
 	"map_short_name": "Paracelsus",
 	"description": "Выполняя свою роль медицинского центра соларианского флота, корвет класса 'Paracelsus' специально спроектирован для помощи соларианским флотам в медицинских проблемах, а также для снабжения таких судов медикаментами. Писари, получающие медицинское образование, часто работают на этих суднах, чтобы стать тенью опытных медиков и пройти ординатуру. В ЩИТСПАВНЕ ПО ПРИЧИНЕ: Неизвестный и непонятный шип!",
@@ -11,32 +11,28 @@
 	"faction": "/datum/faction/solgov",
 	"tags": ["RP Focus", "Medical", "Chemistry"],
 	"namelists": [
-		"SOLGOV",
+		"SOLFED",
 		"SPACE",
 		"BRITISH_NAVY",
 		"NATURAL"
 	],
 	"job_slots": {
 		"Captain": {
-			"outfit": "/datum/outfit/job/solgov/captain",
+			"outfit": "/datum/outfit/job/solfed/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"Overseer": {
-			"outfit": "/datum/outfit/job/solgov/overseer",
+			"outfit": "/datum/outfit/job/solfed/hop",
 			"officer": true,
 			"slots": 1
 		},
 		"Medical Doctor": {
-			"outfit": "/datum/outfit/job/solgov/doctor",
+			"outfit": "/datum/outfit/job/solfed/doctor",
 			"slots": 3
 		},
 		"Ship Engineer": {
-			"outfit": "/datum/outfit/job/solgov/engineer",
-			"slots": 1
-		},
-		"Psychologist": {
-			"outfit": "/datum/outfit/job/solgov/psychologist",
+			"outfit": "/datum/outfit/job/solfed/engineer",
 			"slots": 1
 		},
 		"Field Engineer": {
@@ -44,7 +40,7 @@
 			"slots": 2
 		},
 		"Scribe": {
-			"outfit": "/datum/outfit/job/solgov/assistant",
+			"outfit": "/datum/outfit/job/solfed/assistant",
 			"slots" : 3
 		},
 		"Attentive Care Patient": {

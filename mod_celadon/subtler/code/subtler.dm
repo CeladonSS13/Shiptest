@@ -8,7 +8,7 @@
 
 /datum/emote/living/subtlerag/proc/check_invalid(mob/user, input)
 	if(stop_bad_mime.Find(input, 1, 1))
-		to_chat(user, "<span class='danger'>Invalid emote.</span>")
+		to_chat(user, span_danger("Invalid emote."))
 		return TRUE
 	return FALSE
 
@@ -55,7 +55,7 @@
 	set name = "Subtler Anti-Ghost"
 	set category = "IC"
 	if(GLOB.say_disabled)	//This is here to try to identify lag problems
-		to_chat(usr, "<span class='danger'>Speech is currently admin-disabled.</span>")
+		to_chat(usr, span_danger("Speech is currently admin-disabled."))
 		return
 	usr.emote("subtlerag")
 

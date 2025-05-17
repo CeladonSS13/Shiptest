@@ -52,6 +52,23 @@
 		return
 	cell = new /obj/item/stock_parts/cell/bluespace(src)
 
+/obj/mecha/combat/gygax/dark/ramzi/Initialize()
+	. = ..()
+	var/obj/item/mecha_parts/mecha_equipment/ME = new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg(src)
+	ME.attach(src)
+	ME = new /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser
+	ME.attach(src)
+	ME = new /obj/item/mecha_parts/mecha_equipment/anticcw_armor_booster
+	ME.attach(src)
+	max_ammo()
+
+/obj/mecha/combat/gygax/dark/ramzi/add_cell(obj/item/stock_parts/cell/C=null)
+	if(C)
+		C.forceMove(src)
+		cell = C
+		return
+	cell = new /obj/item/stock_parts/cell/hyper(src)
+
 /obj/mecha/combat/gygax/charger
 	name = "\improper Modified 501p"
 	desc = "A lightweight security exosuit, this one seems to have been modified for short high speed charges instead of enhanced speed."
@@ -67,6 +84,15 @@
 	desc = "A light security exosuit originally manufactured by Cybersun Biodynamics, extensively modified by IRMG artificers. The leg actuators have been maxed out, allowing for powerful short ranged charges capable of breaking walls and other obstacles."
 	icon_state = "inteqgygax"
 
+/obj/mecha/combat/gygax/charger/overclock
+	name = "\improper Overclocked 501p"
+	desc = "A lightweight security exosuit, which has been overclocked to have its leg actuators launch the exosuit forward instead of enhanced speed."
+	charge_windup = 1
+	charge_cooldown = 100
+	charge_power_consume = 250
+	charge_distance = 4
+	charge_break_walls = FALSE
+
 /obj/mecha/combat/gygax/charger/mp
 	name = "\improper NT-501p-MP"
 	desc = "An exosuit model derrived from the Cybersun 501p and modified for mass production. This model has had its armor plating reduced to reduce production costs. The leg actuators have been modified to take advantage of the consequently lighter frame, allowing for swift charges over moderate distances without heavily taxing the power supply."
@@ -79,7 +105,7 @@
 	charge_power_consume = 100
 	charge_windup = 0
 
-/obj/mecha/combat/gygax/charger/nt/loaded/Initialize()
+/obj/mecha/combat/gygax/charger/mp/loaded/Initialize()
 	. = ..()
 	var/obj/item/mecha_parts/mecha_equipment/ME = new /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser(src)
 	ME.attach(src)

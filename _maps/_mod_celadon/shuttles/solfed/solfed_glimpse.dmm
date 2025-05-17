@@ -987,11 +987,11 @@
 "vB" = (
 /obj/structure/table/wood,
 /obj/machinery/airalarm/directional/west,
-/obj/item/energyhalberd/blue{
+/obj/item/melee/duelenergy/halberd/blue{
 	pixel_y = -1;
 	pixel_x = 3
 	},
-/obj/item/energyhalberd/blue{
+/obj/item/melee/duelenergy/halberd/blue{
 	pixel_y = 7
 	},
 /obj/item/crowbar/large,
@@ -1212,8 +1212,6 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor/border_only,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
@@ -1221,10 +1219,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/cable{
 	icon_state = "1-2"
-	},
-/obj/machinery/door/firedoor/border_only,
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
 	},
 /obj/machinery/door/airlock/solgov{
 	name = "Cryogenics"
@@ -1711,7 +1705,7 @@
 /obj/structure/bed/dogbed,
 /mob/living/simple_animal/pet/mothroach{
 	name = "Archibald";
-	faction = list("neutral", "playerSolgov")
+	faction = list("neutral", "playerSolFed")
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
@@ -2809,7 +2803,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/power/solar_control,
+/obj/machinery/computer/solar_control,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Xg" = (

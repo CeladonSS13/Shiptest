@@ -1,3 +1,6 @@
+/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
+	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
+
 /datum/supply_pack/costumes_toys
 	group = "Costumes & Toys"
 
@@ -184,3 +187,5 @@
 					/obj/item/clothing/under/dress/rilena,
 					/obj/item/gun/energy/buster)
 	crate_name = "collectable merchandise crate"
+
+[/CELADON-DELETE] */

@@ -128,9 +128,9 @@ Maintenance panel panel is [open ? "opened" : "closed"]"},
 	..()
 	if(emagged == 2)
 		if(user)
-			user << "<span class='danger'>You short out [src]'s sound control system. It gives out an evil laugh!!</span>"
+			user << span_danger("You short out [src]'s sound control system. It gives out an evil laugh!!")
 			oldtarget_name = user.name
-		audible_message("<span class='danger'>[src] gives out an evil laugh!</span>")
+		audible_message(span_danger("[src] gives out an evil laugh!"))
 		playsound(src, 'sound/machines/honkbot_evil_laugh.ogg', 75, TRUE, -1) // evil laughter
 		update_appearance()
 
@@ -210,8 +210,8 @@ Maintenance panel panel is [open ? "opened" : "closed"]"},
 
 			log_combat(src,C,"honked")
 
-			C.visible_message("<span class='danger'>[src] honks [C]!</span>",\
-					"<span class='userdanger'>[src] honks you!</span>")
+			C.visible_message(span_danger("[src] honks [C]!"),\
+					span_userdanger("[src] honks you!"))
 		else
 			C.stuttering = 20
 			C.Paralyze(80)
@@ -323,7 +323,7 @@ Maintenance panel panel is [open ? "opened" : "closed"]"},
 /mob/living/simple_animal/bot/honkbot/explode()
 
 	walk_to(src,0)
-	visible_message("<span class='boldannounce'>[src] blows apart!</span>")
+	visible_message(span_boldannounce("[src] blows apart!"))
 	var/atom/Tsec = drop_location()
 	//doesn't drop cardboard nor its assembly, since its a very frail material.
 	if(prob(50))
@@ -351,13 +351,13 @@ Maintenance panel panel is [open ? "opened" : "closed"]"},
 			if(!istype(C) || !C || in_range(src, target))
 				return
 			C.visible_message(
-				"<span class='warning'>[pick( \
+				span_warning("[pick( \
 					"[C] dives out of [src]'s way!", \
 					"[C] stumbles over [src]!", \
 					"[C] jumps out of [src]'s path!", \
 					"[C] trips over [src] and falls!", \
 					"[C] topples over [src]!", \
-					"[C] leaps out of [src]'s way!")]</span>")
+					"[C] leaps out of [src]'s way!")]"))
 			C.Paralyze(10)
 			playsound(loc, 'sound/misc/sadtrombone.ogg', 50, TRUE, -1)
 			if(!client)
@@ -386,7 +386,7 @@ Maintenance panel panel is [open ? "opened" : "closed"]"},
 			if(isprox(I))
 				if(!user.temporarilyRemoveItemFromInventory(I))
 					return
-				to_chat(user, "<span class='notice'>You add the [I] to [src]!</span>")
+				to_chat(user, span_notice("You add the [I] to [src]!"))
 				icon_state = "honkbot_proxy"
 				name = "incomplete Honkbot assembly"
 				qdel(I)
@@ -396,7 +396,7 @@ Maintenance panel panel is [open ? "opened" : "closed"]"},
 			if(istype(I, /obj/item/bikehorn))
 				if(!can_finish_build(I, user))
 					return
-				to_chat(user, "<span class='notice'>You add the [I] to [src]! Honk!</span>")
+				to_chat(user, span_notice("You add the [I] to [src]! Honk!"))
 				var/mob/living/simple_animal/bot/honkbot/S = new(drop_location())
 				S.name = created_name
 				S.spam_flag = TRUE // only long enough to hear the first ping.

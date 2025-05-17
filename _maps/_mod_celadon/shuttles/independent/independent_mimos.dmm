@@ -225,7 +225,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /turf/open/floor/plating,
 /area/ship/construction)
 "bI" = (
@@ -278,12 +278,12 @@
 /area/ship/engineering/atmospherics)
 "cG" = (
 /obj/structure/safe/floor,
-/obj/effect/spawner/random/random_ammo_protolathe_lootdrop,
+/obj/effect/spawner/random/salvage/prolathe/ammo,
 /obj/item/beacon{
 	icon_state = "bluebeacon";
 	name = "Подозрительный маяк"
 	},
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/item/storage/box/ammo/foam_darts/riot,
 /obj/item/storage/box/ammo/foam_darts,
 /obj/item/storage/box/ammo/foam_darts,
@@ -869,7 +869,7 @@
 /obj/machinery/camera/preset{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/cockroach,
+/mob/living/basic/cockroach,
 /turf/open/floor/plasteel/vaporwave,
 /area/ship/crew/dorm/dormfour)
 "jP" = (
@@ -1040,7 +1040,7 @@
 /obj/item/chair{
 	pixel_x = -1
 	},
-/mob/living/simple_animal/hostile/cockroach,
+/mob/living/basic/cockroach,
 /obj/machinery/light/broken/directional/east,
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -1648,7 +1648,7 @@
 	pixel_x = 7;
 	pixel_y = -2
 	},
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/machinery/light/small/broken/directional/north,
 /turf/open/floor/plasteel/vaporwave{
 	icon_state = "floorscorched1"
@@ -2407,7 +2407,7 @@
 	dir = 10
 	},
 /obj/machinery/airalarm/directional/east,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/item/cane,
 /obj/item/storage/backpack/mime,
 /obj/effect/spawner/random/maintenance,
@@ -2525,7 +2525,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /turf/open/floor/plasteel/vaporwave{
 	icon_state = "floorscorched2"
 	},
@@ -2635,7 +2635,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/spawner/random/decoration/glowstick,
-/mob/living/simple_animal/hostile/cockroach,
+/mob/living/basic/cockroach,
 /turf/open/floor/plating,
 /area/ship/engineering/incinerator)
 "Dp" = (
@@ -3185,7 +3185,7 @@
 /area/ship/engineering)
 "JN" = (
 /obj/machinery/light/small/directional/north,
-/obj/machinery/power/solar_control,
+/obj/machinery/computer/solar_control,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
@@ -3406,7 +3406,7 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/machinery/airalarm/directional/east,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/item/cane,
 /obj/item/clothing/under/rank/civilian/mime/sexy,
 /obj/item/storage/backpack/mime,
@@ -4047,7 +4047,7 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/mob/living/simple_animal/hostile/rat,
+/mob/living/basic/mouse/rat,
 /obj/item/reagent_containers/syringe/contraband/space_drugs,
 /obj/structure/catwalk/over/plated_catwalk,
 /turf/open/floor/plating,
@@ -4319,7 +4319,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/item/clothing/suit/space/hardsuit/quixote,
+/obj/item/clothing/suit/space/hardsuit,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 4
 	},
@@ -4330,7 +4330,7 @@
 	dir = 4
 	},
 /obj/structure/safe/floor,
-/obj/item/dualsaber/yellow,
+/obj/item/melee/duelenergy/saber/yellow,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "Zf" = (

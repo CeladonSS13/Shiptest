@@ -146,17 +146,17 @@
 	taste_sensitivity = 10 // combined nose + tongue, extra sensitive
 	modifies_speech = TRUE
 	var/static/list/languages_possible_tajara = typecacheof(list(
-		/datum/language/common,
-		/datum/language/draconic,
+		/datum/language/galactic_common,
+		/datum/language/kalixcian_common,
 		/datum/language/codespeak,
 		/datum/language/monkey,
-		/datum/language/narsie,
-		/datum/language/beachbum,
+		// /datum/language/narsie,
+		// /datum/language/beachbum,
 		/datum/language/aphasia,
-		/datum/language/piratespeak,
+		// /datum/language/piratespeak,
 		/datum/language/moffic,
-		/datum/language/sylvan,
-		/datum/language/shadowtongue,
+		// /datum/language/sylvan,
+		// /datum/language/shadowtongue,
 		/datum/language/siiktajr
 	))
 

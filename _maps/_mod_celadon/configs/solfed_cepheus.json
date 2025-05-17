@@ -1,5 +1,5 @@
 {
-	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
 	"map_name": "Cepheus-class Patrool Corvette",
 	"map_short_name": "Cepheus",
 	"description": "Корвет класса 'Cepheus' является патрульным судном Солнечной Федерации, предназначенный для поддержания порядка на территории планет NE-24774. Дополнительно оснащен роботехнической лабораторией в целях развертывания дополнительных наземных сил и оказания универсальной поддержки. В ЩИТСПАВНЕ ПО ПРИЧИНЕ: Не балансился, с рандомной платой меха раундстартом!",
@@ -15,23 +15,23 @@
 		"Robotics",
 		"Combat"],
 	"namelists": [
-		"SOLGOV",
+		"SOLFED",
 		"SPACE",
 		"WEAPONS",
 		"NATURAL"
 	],
 	"job_slots": {
 		"Captain": {
-			"outfit": "/datum/outfit/job/solgov/captain",
+			"outfit": "/datum/outfit/job/solfed/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"Ship Engineer": {
-			"outfit": "/datum/outfit/job/solgov/engineer",
+			"outfit": "/datum/outfit/job/solfed/engineer",
 			"slots": 1
 		},
 		"Sonnensöldner": {
-			"outfit": "/datum/outfit/job/solgov/sonnensoldner",
+			"outfit": "/datum/outfit/job/solfed/marine",
 			"slots": 2
 		},
 		"Exosuit Operator": {
@@ -39,11 +39,11 @@
 			"slots": 2
 		},
 		"Mechanical Technician Officer": {
-			"outfit": "/datum/outfit/job/solgov/scientist/roboticist",
+			"outfit": "/datum/outfit/job/solfed/scientist/roboticist",
 			"slots": 1
 		},
 		"Scribe": {
-			"outfit": "/datum/outfit/job/solgov/assistant",
+			"outfit": "/datum/outfit/job/solfed/assistant",
 			"slots" : 1
 		}
 	}

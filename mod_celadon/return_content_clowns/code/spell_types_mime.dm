@@ -7,7 +7,7 @@
 	clothes_req = FALSE
 	antimagic_allowed = TRUE
 	invocation_type = INVOCATION_EMOTE
-	invocation_emote_self = "<span class='dangers'>You fire your finger gun!</span>"
+	invocation_emote_self = span_danger("You fire your finger gun!")
 	range = 20
 	projectile_type = /obj/projectile/bullet/mime
 	projectile_amount = 3
@@ -25,11 +25,11 @@
 /obj/effect/proc_holder/spell/aimed/finger_guns/Click()
 	var/mob/living/carbon/human/owner = usr
 	if(owner.incapacitated())
-		to_chat(owner, "<span class='warning'>You can't properly point your fingers while incapacitated.</span>")
+		to_chat(owner, span_warning("You can't properly point your fingers while incapacitated."))
 		return
 	if(usr && usr.mind)
 		if(!usr.mind.miming)
-			to_chat(usr, "<span class='warning'>You must dedicate yourself to silence first!</span>")
+			to_chat(usr, span_warning("You must dedicate yourself to silence first!"))
 			return
 		invocation = "<B>[usr.real_name]</B> fires [usr.p_their()] finger gun!"
 	else
@@ -38,7 +38,7 @@
 
 /obj/effect/proc_holder/spell/aimed/finger_guns/InterceptClickOn(mob/living/caller, params, atom/target)
 	if(caller.incapacitated())
-		to_chat(caller, "<span class='warning'>You can't properly point your fingers while incapacitated.</span>")
+		to_chat(caller, span_warning("You can't properly point your fingers while incapacitated."))
 		if(charge_type == "recharge")
 			var/refund_percent = current_amount/projectile_amount
 			charge_counter = charge_max * refund_percent

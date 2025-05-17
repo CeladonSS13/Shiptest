@@ -200,11 +200,6 @@
 /area/ruin/space/has_grav/astraeus/bridge{
 	name = "Crew Quarters"
 	})
-"em" = (
-/turf/closed/wall/mineral/plastitanium/overspace,
-/area/ruin/space/has_grav/astraeus/hallway{
-	name = "Storage"
-	})
 "eF" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ruin/space/has_grav/astraeus/disposals{
@@ -794,15 +789,15 @@
 "pB" = (
 /obj/structure/ore_box,
 /obj/effect/turf_decal/industrial/warning,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
+/obj/item/stack/ore/autunite,
+/obj/item/stack/ore/autunite,
+/obj/item/stack/ore/autunite,
+/obj/item/stack/ore/autunite,
 /obj/item/stack/ore/glass/basalt,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/iron,
+/obj/item/stack/ore/hematite,
+/obj/item/stack/ore/hematite,
+/obj/item/stack/ore/hematite,
+/obj/item/stack/ore/hematite,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/oil/streak,
@@ -877,11 +872,6 @@
 /area/ruin/space/has_grav/astraeus/custodial{
 	name = "Hallway"
 	})
-"rf" = (
-/turf/closed/wall/mineral/plastitanium/overspace,
-/area/ruin/space/has_grav/astraeus/custodial{
-	name = "Hallway"
-	})
 "rD" = (
 /turf/open/floor/plating/grass,
 /area/template_noop)
@@ -909,12 +899,12 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
 	},
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
+/obj/item/stack/ore/autunite,
+/obj/item/stack/ore/autunite,
+/obj/item/stack/ore/autunite,
 /obj/item/stack/ore/gold,
 /obj/item/stack/ore/gold,
-/obj/item/stack/ore/iron,
+/obj/item/stack/ore/hematite,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
@@ -1048,11 +1038,6 @@
 /area/ruin/space/has_grav/astraeus/custodial{
 	name = "Hallway"
 	})
-"wd" = (
-/turf/closed/wall/mineral/plastitanium/overspace,
-/area/ruin/space/has_grav/astraeus/munitions{
-	name = "Engine Room"
-	})
 "wt" = (
 /obj/effect/turf_decal/trimline/opaque/orange/filled/line{
 	dir = 1
@@ -1141,17 +1126,17 @@
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 8
 	},
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
+/obj/item/stack/ore/autunite,
+/obj/item/stack/ore/autunite,
+/obj/item/stack/ore/autunite,
+/obj/item/stack/ore/autunite,
+/obj/item/stack/ore/autunite,
+/obj/item/stack/ore/autunite,
 /obj/item/stack/ore/glass/basalt,
 /obj/item/stack/ore/glass/basalt,
 /obj/item/stack/ore/glass/basalt,
 /obj/item/stack/ore/glass/basalt,
-/obj/item/stack/ore/iron,
+/obj/item/stack/ore/hematite,
 /obj/effect/decal/cleanable/oil,
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable{
@@ -1163,15 +1148,15 @@
 	})
 "Am" = (
 /obj/structure/ore_box,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
+/obj/item/stack/ore/autunite,
+/obj/item/stack/ore/autunite,
+/obj/item/stack/ore/autunite,
+/obj/item/stack/ore/autunite,
 /obj/item/stack/ore/glass/basalt,
 /obj/item/stack/ore/glass/basalt,
 /obj/item/stack/ore/glass/basalt,
 /obj/item/stack/ore/gold,
-/obj/item/stack/ore/iron,
+/obj/item/stack/ore/hematite,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -1221,10 +1206,10 @@
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 1
 	},
-/obj/item/stack/ore/uranium,
+/obj/item/stack/ore/autunite,
 /obj/item/stack/ore/glass/basalt,
 /obj/item/stack/ore/gold,
-/obj/item/stack/ore/iron,
+/obj/item/stack/ore/hematite,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
 /area/ruin/space/has_grav/corporatemine/hall{
@@ -1336,11 +1321,6 @@
 /area/ruin/space/has_grav/astraeus/munitions{
 	name = "Engine Room"
 	})
-"FJ" = (
-/turf/closed/wall/mineral/plastitanium/overspace,
-/area/ruin/space/has_grav/corporatemine/bridge{
-	name = "Engineering"
-	})
 "FP" = (
 /obj/structure/table,
 /obj/effect/turf_decal/trimline/opaque/blue/filled/line{
@@ -1447,13 +1427,13 @@
 	})
 "Ha" = (
 /obj/structure/ore_box,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
+/obj/item/stack/ore/autunite,
+/obj/item/stack/ore/autunite,
+/obj/item/stack/ore/autunite,
 /obj/item/stack/ore/glass/basalt,
 /obj/item/stack/ore/gold,
 /obj/item/stack/ore/gold,
-/obj/item/stack/ore/iron,
+/obj/item/stack/ore/hematite,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/tech,
@@ -1692,11 +1672,11 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
 	},
-/obj/item/stack/ore/uranium,
+/obj/item/stack/ore/autunite,
 /obj/item/stack/ore/glass/basalt,
 /obj/item/stack/ore/glass/basalt,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/iron,
+/obj/item/stack/ore/hematite,
+/obj/item/stack/ore/hematite,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/oil/streak,
 /obj/effect/decal/cleanable/greenglow,
@@ -1837,11 +1817,6 @@
 	},
 /obj/machinery/power/apc/auto_name/directional/east,
 /turf/open/floor/wood/maple,
-/area/ruin/space/has_grav/astraeus/bridge{
-	name = "Crew Quarters"
-	})
-"Pf" = (
-/turf/closed/wall/mineral/plastitanium/overspace,
 /area/ruin/space/has_grav/astraeus/bridge{
 	name = "Crew Quarters"
 	})
@@ -2247,11 +2222,11 @@
 "YA" = (
 /obj/structure/ore_box,
 /obj/effect/turf_decal/industrial/warning/corner,
-/obj/item/stack/ore/uranium,
-/obj/item/stack/ore/uranium,
+/obj/item/stack/ore/autunite,
+/obj/item/stack/ore/autunite,
 /obj/item/stack/ore/glass/basalt,
 /obj/item/stack/ore/glass/basalt,
-/obj/item/stack/ore/iron,
+/obj/item/stack/ore/hematite,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/plasteel/tech,
@@ -2290,7 +2265,7 @@
 	dir = 8
 	},
 /obj/item/stack/ore/gold,
-/obj/item/stack/ore/iron,
+/obj/item/stack/ore/hematite,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
 /area/ruin/space/has_grav/astraeus/disposals{
@@ -2596,7 +2571,7 @@ PB
 PB
 PB
 PB
-wd
+Mv
 Mv
 ah
 Va
@@ -2604,7 +2579,7 @@ ol
 Gx
 GH
 Mv
-wd
+Mv
 PB
 PB
 PB
@@ -2622,7 +2597,7 @@ PB
 PB
 PB
 PB
-FJ
+Rq
 Rq
 Rq
 pz
@@ -2632,7 +2607,7 @@ Mv
 pz
 Mv
 Mv
-em
+kS
 PB
 PB
 PB
@@ -2648,7 +2623,7 @@ PB
 PB
 PB
 PB
-FJ
+Rq
 Rq
 dZ
 wR
@@ -2660,7 +2635,7 @@ uY
 Ol
 bK
 kS
-em
+kS
 PB
 PB
 PB
@@ -3146,7 +3121,7 @@ nt
 nt
 nt
 Nu
-rf
+Nu
 PB
 PB
 PB
@@ -3172,7 +3147,7 @@ Oj
 Nu
 nt
 Nu
-rf
+Nu
 PB
 PB
 PB
@@ -3190,7 +3165,7 @@ NR
 NR
 NR
 PB
-Pf
+sr
 sr
 gp
 Nu

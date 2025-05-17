@@ -31,7 +31,7 @@ SUBSYSTEM_DEF(npcpool)
 		if(failed_fires > 5 || has_screamed)
 			if(!has_screamed)
 				has_screamed = 1
-				message_admins("<span class='danger'>SSnpcpool has failed to fire at least 5 times. The subsystem has been placed into a more permissive mode. Call a coder!</span>")
+				message_admins(span_danger("SSnpcpool has failed to fire at least 5 times. The subsystem has been placed into a more permissive mode. Call a coder!"))
 				stack_trace("SSnpcpool has started ignoring nulls. Something is wrong with GLOB.simple_animals\[1]")
 			if(QDELETED(SA))
 				continue
@@ -39,10 +39,11 @@ SUBSYSTEM_DEF(npcpool)
 		if(!SA.ckey && !SA.notransform)
 			if(SA.stat != DEAD)
 				SA.handle_automated_movement()
-			if(SA.stat != DEAD)
 				SA.handle_automated_action()
-			if(SA.stat != DEAD)
 				SA.handle_automated_speech()
+				// [CELADON-EDIT] — IDLE_NPC_SLEEP
+				SA.check_should_sleep()
+				// [/CELADON-EDIT]
 		if (MC_TICK_CHECK)
 			--failed_fires
 			return

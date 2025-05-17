@@ -18,6 +18,7 @@
 		/obj/item/clothing/suit/vapeshirt = 1,
 		// [/CELADON-ADD]
 		/obj/item/clothing/head/beanie = 3,
+		/obj/item/clothing/head/soft = 3,
 		/obj/item/clothing/head/beanie/black = 3,
 		/obj/item/clothing/head/beanie/red = 3,
 		/obj/item/clothing/head/beanie/green = 3,
@@ -25,11 +26,9 @@
 		/obj/item/clothing/head/beanie/purple = 3,
 		/obj/item/clothing/head/beanie/yellow = 3,
 		/obj/item/clothing/head/beanie/orange = 3,
-		/obj/item/clothing/head/beanie/cyan = 3,
-		/obj/item/clothing/head/beanie/striped = 3,
-		/obj/item/clothing/head/beanie/stripedred = 3,
-		/obj/item/clothing/head/beanie/stripedblue = 3,
-		/obj/item/clothing/head/beanie/stripedgreen = 3,
+		/obj/item/clothing/head/flatcap = 3,
+		/obj/item/clothing/head/flap = 3,
+		/obj/item/clothing/head/beanie/teal = 3,
 		/obj/item/clothing/gloves/fingerless = 2,
 		/obj/item/clothing/neck/scarf/pink = 3,
 		/obj/item/clothing/neck/scarf/red = 3,
@@ -38,11 +37,10 @@
 		/obj/item/clothing/neck/scarf/purple = 3,
 		/obj/item/clothing/neck/scarf/yellow = 3,
 		/obj/item/clothing/neck/scarf/orange = 3,
-		/obj/item/clothing/neck/scarf/cyan = 3,
+		/obj/item/clothing/neck/scarf/teal = 3,
 		/obj/item/clothing/neck/scarf = 3,
+		/obj/item/clothing/neck/shemagh = 3,
 		/obj/item/clothing/neck/scarf/black = 3,
-		/obj/item/clothing/neck/scarf/zebra = 3,
-		/obj/item/clothing/neck/scarf/christmas = 3,
 		/obj/item/clothing/neck/stripedredscarf = 3,
 		/obj/item/clothing/neck/stripedbluescarf = 3,
 		/obj/item/clothing/neck/stripedgreenscarf = 3,
@@ -59,6 +57,14 @@
 		/obj/item/clothing/under/pants/black = 2,
 		/obj/item/clothing/under/pants/tan = 2,
 		/obj/item/clothing/under/pants/track = 2,
+		/obj/item/clothing/under/shorts/black = 2,
+		/obj/item/clothing/under/shorts/grey = 2,
+		/obj/item/clothing/under/shorts/purple = 2,
+		/obj/item/clothing/under/shorts/green = 2,
+		/obj/item/clothing/under/shorts/blue = 2,
+		/obj/item/clothing/under/shorts/red = 2,
+		/obj/item/clothing/under/color = 9,
+		/obj/item/clothing/under/color/jumpskirt = 9,
 		/obj/item/clothing/shoes/sneakers/black = 4,
 		/obj/item/clothing/head/wig/natural  = 4,
 		/obj/item/clothing/under/dress/skirt/color = 2,
@@ -73,11 +79,10 @@
 		/obj/item/clothing/under/dress/skirt/pinafore/plaid/green = 2,
 		/obj/item/clothing/under/dress/skirt/pinafore/plaid/brown = 2,
 		/obj/item/clothing/under/suit/white/skirt = 2,
-		/obj/item/clothing/under/rank/command/captain/suit/skirt = 2,
-		/obj/item/clothing/under/rank/command/head_of_personnel/suit/skirt = 2,
 		/obj/item/clothing/suit/jacket = 2,
 		/obj/item/clothing/suit/jacket/puffer/vest = 2,
 		/obj/item/clothing/suit/jacket/puffer = 2,
+		/obj/item/clothing/suit/toggle/windbreaker = 3,
 		/obj/item/clothing/suit/jacket/letterman = 2,
 		/obj/item/clothing/suit/jacket/letterman_red = 2,
 		/obj/item/clothing/glasses/regular = 2,
@@ -102,12 +107,10 @@
 		/obj/item/clothing/under/dress/blacktango = 1,
 		/obj/item/clothing/under/dress/one_shoulder = 1,
 		/obj/item/clothing/under/dress/white_dress = 1,
-		/obj/item/clothing/suit/ianshirt = 1,
+		/obj/item/clothing/shoes/sneakers/black = 2,
 		/obj/item/clothing/shoes/laceup = 2,
 		/obj/item/clothing/shoes/sandal = 2,
-		/obj/item/clothing/shoes/cowboy = 2,
-		/obj/item/clothing/shoes/cowboy/white = 2,
-		/obj/item/clothing/shoes/cowboy/black = 2,
+		/obj/item/clothing/shoes/jackboots = 2,
 		/obj/item/clothing/suit/jacket/miljacket = 1,
 		/obj/item/clothing/suit/apron/purple_bartender = 2,
 		/obj/item/clothing/under/rank/civilian/bartender/purple = 2,
@@ -115,24 +118,22 @@
 		/obj/item/clothing/suit/toggle/suspenders/gray = 2,
 		/obj/item/clothing/under/syndicate/tacticool = 2,
 		/obj/item/clothing/under/syndicate/tacticool/skirt = 2,
-		/obj/item/clothing/mask/balaclava = 1,
-		/obj/item/clothing/head/trapper = 1,
+		/obj/item/clothing/mask/balaclava = 2,
 		/obj/item/storage/belt/fannypack/black = 2,
 		/obj/item/clothing/suit/jacket/letterman_syndie = 1,
-		/obj/item/clothing/under/costume/jabroni = 1,
-		/obj/item/clothing/under/costume/geisha = 1)
+		/obj/item/towel = 3)
 	premium = list(
 		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/item/clothing/suit/jacket/leather/overcoat = 1,
 		// [/CELADON-ADD]
 		/obj/item/clothing/under/suit/checkered = 1,
 		/obj/item/clothing/suit/jacket/leather = 1,
-		/obj/item/clothing/neck/necklace/dope = 3,
 		/obj/item/clothing/suit/jacket/letterman_nanotrasen = 1,
+		/obj/item/storage/box/maid = 2,
 		/obj/item/instrument/piano_synth/headphones/spacepods = 1)
 	refill_canister = /obj/item/vending_refill/clothing
-	default_price = 60
-	extra_price = 120
+	default_price = 10
+	extra_price = 60
 	light_mask = "wardrobe-light-mask"
 	light_color = LIGHT_COLOR_ELECTRIC_GREEN
 

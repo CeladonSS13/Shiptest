@@ -3,8 +3,8 @@
 	desc = "You enjoy clown antics and get a mood boost from wearing your clown pin."
 	value = 1
 	mob_traits = list(TRAIT_FAN_CLOWN)
-	gain_text = "<span class='notice'>You are a big fan of clowns.</span>"
-	lose_text = "<span class='danger'>The clown doesn't seem so great.</span>"
+	gain_text = span_notice("You are a big fan of clowns.")
+	lose_text = span_danger("The clown doesn't seem so great.")
 	medical_record_text = "Patient reports being a big fan of clowns."
 
 /datum/quirk/fan_clown/on_spawn()
@@ -23,8 +23,8 @@
 	desc = "You enjoy mime antics and get a mood boost from wearing your mime pin."
 	value = 1
 	mob_traits = list(TRAIT_FAN_MIME)
-	gain_text = "<span class='notice'>You are a big fan of the Mime.</span>"
-	lose_text = "<span class='danger'>The mime doesn't seem so great.</span>"
+	gain_text = span_notice("You are a big fan of the Mime.")
+	lose_text = span_danger("The mime doesn't seem so great.")
 	medical_record_text = "Patient reports being a big fan of mimes."
 
 /datum/quirk/fan_mime/on_spawn()

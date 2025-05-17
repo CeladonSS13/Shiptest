@@ -20,7 +20,7 @@
 	if(!can_use(usr))
 		return 0
 
-	to_chat(usr, "<span class='notice'>You toggle [src]'s [togglename].</span>")
+	to_chat(usr, span_notice("You toggle [src]'s [togglename]."))
 	if(src.necktoggled)
 		src.icon_state = "[initial(icon_state)]"
 		src.necktoggled = FALSE

@@ -1,15 +1,16 @@
 
 #### Список PRов
 
-- https://github.com/CeladonSS13/Shiptest/pull/1020
+- https://github.com/CeladonSS13/Shiptest/pull/1274
+- https://github.com/CeladonSS13/Shiptest/pull/1725
 
-## Фикс крови у Эльзуосов
+## Панель эмоций
 
 ID мода: CELADON_EMOTES
 
 ### Описание мода
 
-Мод даёт Эльзуосам электрическую кровь, удаляет их тип крови, и добавляет пакет с электрической кровью
+Добавляет панель эмоций в меню. Добавляет опциональное ТГУИ меню эмоций в IC. Добавляет новые эмоции.
 
 ### Используется в других проектах?
 - Нет
@@ -37,8 +38,9 @@ ID мода: CELADON_EMOTES
 - 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- Отсутствуют
+- `mod_celadon/_storge_icons/icons`
+- `mod_celadon/_storge_sounds/sound`
 
 ### Авторы
 
-MrCat15352
+MrCat15352, KOCMOHABT

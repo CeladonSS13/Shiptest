@@ -1,6 +1,10 @@
+/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
+	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
+
 /datum/supply_pack/animal
 	group = "Animals"
 	crate_type = /obj/structure/closet/crate/critter
+	no_bundle = TRUE
 
 /*
 		Vaguely useful animals
@@ -13,6 +17,7 @@
 	contains = list (/obj/item/storage/box/monkeycubes)
 	crate_name = "monkey cube crate"
 	crate_type = /obj/structure/closet/crate
+	no_bundle = FALSE
 
 /datum/supply_pack/animal/chick
 	name = "Chicken Crate"
@@ -141,3 +146,5 @@
 	. = ..()
 	for(var/i in 1 to 49)
 		new /mob/living/simple_animal/crab(.)
+
+[/CELADON-DELETE] */

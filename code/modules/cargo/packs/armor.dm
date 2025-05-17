@@ -1,4 +1,7 @@
-/datum/supply_pack/armor
+/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
+	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
+
+ /datum/supply_pack/armor
 	group = "Armor"
 	crate_type = /obj/structure/closet/crate/secure
 
@@ -165,18 +168,4 @@
 	faction_discount = 0
 	faction_locked = TRUE
 
-//coalition
-
-/datum/supply_pack/armor/coalition_armor
-	name = "Coalition Armor Crate"
-	desc = "An surplus plate carrier left over from the ICW. Its still painted in Coalition colors and likely to trigger IFF on turrets around the Frontier."
-	cost = 750
-	contains = list(/obj/item/clothing/suit/armor/vest/syndie,
-					/obj/item/clothing/head/helmet/syndie)
-	crate_name = "armor crate"
-	crate_type = /obj/structure/closet/crate/secure/gear
-	faction = /datum/faction/syndicate
-	faction_discount = 0
-	faction_locked = TRUE
-
-
+[/CELADON-DELETE] */

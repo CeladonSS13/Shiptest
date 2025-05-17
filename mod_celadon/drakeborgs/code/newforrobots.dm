@@ -16,7 +16,7 @@
 	bellyup = 0
 
 	if(!has_reststyle)
-		to_chat(src, "<span class='warning'>Your module does not support it!</span>")
+		to_chat(src, span_warning("Your module does not support it!"))
 		return
 
 	var/choice = alert(src, "Select resting pose", "", "Resting", "Sitting", "Belly up")

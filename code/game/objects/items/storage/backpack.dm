@@ -79,6 +79,15 @@
 	STR.storage_flags = STORAGE_FLAGS_VOLUME_DEFAULT
 	STR.max_volume = STORAGE_VOLUME_BAG_OF_HOLDING
 
+/obj/item/storage/backpack/holding/debug
+	name = "advanced bag of holding"
+
+/obj/item/storage/backpack/holding/debug/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.worn_access = TRUE
+
+
 /obj/item/storage/backpack/cultpack
 	name = "trophy rack"
 	desc = "It's useful for both carrying extra gear and proudly declaring your insanity."
@@ -398,12 +407,6 @@
 	icon_state = "courierbagsec"
 	item_state = "courierbagsec"
 
-/obj/item/storage/backpack/messenger/inteq
-	name = "inteq messenger bag"
-	desc = "A comfortable leather strapped messenger bag worn over one shoulder. This one denotes the wearer as an IRMG operator"
-	icon_state = "courierbaginteq"
-	item_state = "courierbaginteq"
-
 /*
 * Duffelbag Types
 */
@@ -413,7 +416,6 @@
 	desc = "A large duffel bag for holding extra things."
 	icon_state = "duffel"
 	item_state = "duffel"
-	slowdown = 1
 	greyscale_colors = list(list(21, 11), list(14, 19), list(15, 16))
 	w_class = WEIGHT_CLASS_HUGE
 
@@ -461,6 +463,14 @@
 /obj/item/storage/backpack/duffelbag/sec/surgery
 	name = "surgical duffel bag"
 	desc = "A large duffel bag for holding extra supplies - this one has a material inlay with space for various sharp-looking tools."
+
+/obj/item/storage/backpack/duffelbag/sec/c4
+	name = "tactical duffel bag"
+	desc = "A large duffel bag for holding extra plastic explosives."
+
+/obj/item/storage/backpack/duffelbag/sec/c4/PopulateContents()
+	for(var/i in 1 to 7)
+		new /obj/item/grenade/c4(src)
 
 /obj/item/storage/backpack/duffelbag/sec/surgery/PopulateContents()
 	new /obj/item/scalpel(src)

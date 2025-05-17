@@ -7,7 +7,7 @@
 	desc = "A crimson combat uniform, reminiscent of the Gorlex Marauders at the height of the Inter-Corporate Wars. It's oddly comfortable, and warm."
 	icon_state = "hardliners"
 	item_state = "hardliners"
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 40)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 40)
 	can_adjust = FALSE
 	icon = 'icons/obj/clothing/faction/hardliners/uniforms.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/faction/hardliners/uniforms.dmi'
@@ -141,7 +141,7 @@
 	mob_overlay_icon = 'icons/mob/clothing/faction/hardliners/suits.dmi'
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/hl
 	jetpack = null
-	supports_variations = DIGITIGRADE_VARIATION
+	supports_variations = DIGITIGRADE_VARIATION | KEPORI_VARIATION
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/hl
 	name = "elite white-red hardsuit helmet"
@@ -206,6 +206,7 @@
 	armor = list("melee" = 40, "bullet" = 60, "laser" = 35, "energy" = 35, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50) // The guys who specialize in ballistics would probably have better bullet armor. Maybe.
 	icon_state = "hl_x11"
 	item_state = "hl_x11"
+	can_flashlight = TRUE
 
 /obj/item/clothing/head/helmet/hardliners/swat
 	name = "hardliners pilot helmet"
@@ -213,6 +214,7 @@
 	flash_protect = FLASH_PROTECTION_WELDER
 	icon_state = "hl_pilot"
 	item_state = "hl_pilot"
+	can_flashlight = TRUE
 
 ////////////
 //Glasses//

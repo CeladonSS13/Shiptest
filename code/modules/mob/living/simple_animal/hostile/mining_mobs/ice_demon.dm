@@ -18,8 +18,8 @@
 	ranged_cooldown_time = 30
 	minimum_distance = 4
 	retreat_distance = 3
-	maxHealth = 80
-	health = 80
+	maxHealth = 50
+	health = 50
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 10)
 	obj_damage = 40
 	melee_damage_lower = 15
@@ -77,7 +77,7 @@
 		new /obj/item/assembly/signaler/anomaly/bluespace(loc)
 	if(prob(5))
 		new /obj/item/gem/fdiamond(loc)
-	// [CELADON-ADD] - CRUSHER_TROPHEY
+	// [CELADON-ADD] - RETURN_CONTENT_CRUSHER_TROPHY
 	if(prob(10))
 		new /obj/item/crusher_trophy/ice_wing(loc)
 	// [/CELADON-ADD]
@@ -127,7 +127,7 @@
 	footstep_type = FOOTSTEP_MOB_CLAW
 	/// Distance the demon will teleport from the target
 	var/teleport_distance = 3
-	// [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено ради легенды
+	// [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено ради легенды
 	// trophy_drop_mod = 75
 	// [/CELADON-REMOVE]
 
@@ -164,7 +164,7 @@
 		new /obj/item/assembly/signaler/anomaly/bluespace(loc)
 	if(prob(20))
 		new /obj/item/gem/fdiamond(loc)
-	// [CELADON-ADD] - CRUSHER_TROPHEY
+	// [CELADON-ADD] - RETURN_CONTENT_CRUSHER_TROPHY
 	if(prob(50))
 		new /obj/item/crusher_trophy/ice_crystal(loc)
 	// [/CELADON-ADD]

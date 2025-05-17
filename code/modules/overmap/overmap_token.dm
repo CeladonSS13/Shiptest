@@ -1,11 +1,12 @@
 /obj/overmap
-	// [CELADON-EDIT] - OVERMAP ICON
+	// [CELADON-EDIT] - CELADON_OVERMAP_ICON
 	// icon = 'icons/misc/overmap.dmi' // CELADON-EDIT - ORIGINAL
 	icon = 'mod_celadon/_storge_icons/icons/overmap/overmap.dmi'
 	// [/CELADON-EDIT]
-	// [CELADON-ADD] - OVERMAP ICON - Это вагабонд насрал
-	glide_size = 32
+	// [CELADON-ADD] - CELADON_OVERMAP_ICON - Это вагабонд насрал
+	// glide_size = 32
 	// [/CELADON-ADD]
+	// mouse_opacity = 2
 	///~~If we need to render a map for cameras and helms for this object~~ basically can you look at and use this as a ship or station.
 	var/render_map = FALSE
 	/// The parent overmap datum for this overmap token that has all of the actual functionality.
@@ -15,8 +16,10 @@
 	var/atom/movable/screen/map_view/cam_screen
 	var/atom/movable/screen/plane_master/lighting/cam_plane_master
 	var/atom/movable/screen/background/cam_background
+	/// Countdown we use in case it's needed
+	var/obj/effect/countdown/countdown
 
-	// [CELADON-ADD] - OVERMAP ICON - Это вагабонд насрал
+	// [CELADON-ADD] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	var/obj/token_visuals/move_vec
 	var/obj/token_visuals/ship_image
 
@@ -34,18 +37,18 @@
 	name = parent.name
 	icon_state = parent.token_icon_state
 	if(render_map)	// Initialize map objects
-		// [CELADON-ADD] - OVERMAP ICON - Это вагабонд насрал
+		// [CELADON-ADD] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 		if(istype(parent, /datum/overmap/ship/controlled))
 			if(!move_vec)
 				move_vec = new (src)
 				move_vec.icon = 'mod_celadon/_storge_icons/icons/overmap/overmap.dmi'
 				move_vec.icon_state = "movement_vector"
-				move_vec.layer = move_vec.layer+1
+				move_vec.layer = move_vec.layer + 1
 			if(!ship_image)
 				ship_image = new (src)
 				ship_image.icon = 'mod_celadon/_storge_icons/icons/overmap/overmap.dmi'
 				ship_image.icon_state = "ship"
-				ship_image.layer = ship_image.layer+2
+				ship_image.layer = ship_image.layer + 2
 		// [/CELADON-ADD]
 		map_name = "overmap_[REF(src)]_map"
 		cam_screen = new
@@ -72,20 +75,30 @@
 		QDEL_NULL(cam_screen)
 		QDEL_NULL(cam_plane_master)
 		QDEL_NULL(cam_background)
-	// [CELADON-ADD] - OVERMAP ICON - Это вагабонд насрал
+	// [CELADON-ADD] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	if(ship_image)
 		QDEL_NULL(ship_image)
 	if(move_vec)
 		QDEL_NULL(move_vec)
 	// [/CELADON-ADD]
+	QDEL_NULL(countdown)	// Что это КОД JOPA
 	return ..()
 
-/obj/overmap/attack_ghost(mob/user)
+/obj/overmap/vv_get_dropdown()
 	. = ..()
-	var/turf/jump_to_turf = parent.get_jump_to_turf()
-	if(!jump_to_turf)
-		return
-	user.abstract_move(jump_to_turf)
+	VV_DROPDOWN_OPTION("", "---------")
+	VV_DROPDOWN_OPTION(VV_HK_VV_PARENT, "View Variables Of Parent Datum")
+	VV_DROPDOWN_OPTION(VV_HK_UNFSCK_OBJECT, "Unfsck this overmap object | PANIC BUTTON")
+
+/obj/overmap/vv_do_topic(list/href_list)
+	. = ..()
+	if(href_list[VV_HK_VV_PARENT])
+		if(!check_rights(R_VAREDIT))
+			return
+		usr.client.debug_variables(parent)
+	if(href_list[VV_HK_UNFSCK_OBJECT])
+		return parent.vv_do_topic(href_list)
+
 
 /obj/overmap/vv_edit_var(var_name, var_value)
 	switch(var_name)
@@ -115,9 +128,10 @@
 		if(NAMEOF(src, y))
 			return parent.overmap_move(parent.x, var_value)
 		if(NAMEOF(src, name))
-			parent.Rename(var_value)
+			parent.Rename(var_value, TRUE)
 			return TRUE
 	return ..()
+
 /**
  * Updates the screen object, which is displayed on all connected helms
  */
@@ -138,3 +152,45 @@
 		cam_background.icon_state = "clear"
 		cam_background.fill_rect(1, 1, size_x, size_y)
 		return TRUE
+
+/obj/overmap/proc/choose_token(mob/user)
+	var/nearby_objects = parent.current_overmap.overmap_container[parent.x][parent.y]
+	if(length(nearby_objects) <= 1)
+		return src
+
+	var/list/choices_to_options = list() //Dict of object name | dict of object processing settings
+	var/list/choices = list()
+	for(var/datum/overmap/nearby_object in nearby_objects)
+		if(!nearby_object.token)
+			continue
+		var/obj/overmap/token = nearby_object.token
+		var/option_name = token.name
+		choices_to_options[option_name] = token
+		choices += list("[option_name]" = image(icon = token.icon, icon_state = token.icon_state))
+
+	var/picked = show_radial_menu(user, src, choices, radius = 42, require_near = FALSE)
+	var/obj/overmap/picked_token = choices_to_options[picked]
+	return picked_token
+
+/obj/overmap/Click(location, control, params)
+	if(istype(usr.client.click_intercept,/datum/buildmode))
+		return ..()
+	var/obj/overmap/token = choose_token(usr)
+	if(!isobj(token))
+		return
+	if(token.flags_1 & INITIALIZED_1)
+		SEND_SIGNAL(token, COMSIG_CLICK, location, control, params, usr)
+
+		usr.ClickOn(token, params)
+
+/obj/overmap/attack_ghost(mob/user)
+	if(SEND_SIGNAL(src, COMSIG_ATOM_ATTACK_GHOST, user) & COMPONENT_NO_ATTACK_HAND)
+		return TRUE
+	var/turf/jump_to_turf = parent.get_jump_to_turf()
+	if(!jump_to_turf)
+		return
+	user.abstract_move(jump_to_turf)
+
+/obj/overmap/examine(mob/user)
+	. = ..()
+	parent.ui_interact(user)

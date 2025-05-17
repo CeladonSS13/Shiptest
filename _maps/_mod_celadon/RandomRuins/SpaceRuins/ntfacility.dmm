@@ -960,7 +960,7 @@
 /area/ruin/powered)
 "yE" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
@@ -1394,7 +1394,7 @@
 /area/ruin/powered)
 "Hc" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/mob_spawn/human/corpse/damaged{
 	disease = null;
 	outfit = /datum/outfit/job/assistant
@@ -1808,8 +1808,6 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/item/clothing/head/hopcap{
 	desc = "It's good to be the king.";
-	icon = 'icons/obj/clothing/hats.dmi';
-	mob_overlay_icon = 'icons/mob/clothing/head.dmi';
 	name = "captains's cap";
 	pixel_x = 5;
 	pixel_y = -4
@@ -2054,7 +2052,7 @@
 /area/ruin/powered)
 "VV" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
 /area/ruin/powered)

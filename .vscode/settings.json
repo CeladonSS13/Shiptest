@@ -66,5 +66,11 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.formatOnSave": true
 	},
-	"editor.guides.indentation": true
+	"editor.guides.indentation": true,
+	"commentTranslate.targetLanguage": "ru",
+	"tgstationTestExplorer.project.DMEName": "shiptest.dme",
+	"tgstationTestExplorer.project.defines": [
+		"#define ALL_TESTS",
+		"#define CIBUILDING"
+	]
 }

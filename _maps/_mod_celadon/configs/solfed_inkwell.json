@@ -1,9 +1,10 @@
 {
-	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
 	"map_name": "Inkwell-class Supply Freighter",
 	"map_short_name": "Inkwell",
 	"description": "Одно из немногих суден, спроектированных Солом и используемых вне официального контекста сторонами, не входящими в Конфедерацию, Судно класса 'Inkwell' - грузовое судно, уважаемое за свою инженерную мысль и любимое за роскошные помещения для экипажа. \n 'Inkwell' можно встретить во многих контекстах, но, пожалуй, больше всего среди Вервальтунгскомпаниен, где они играют важную роль в решении логистических проблем любой надлежащей военной администрации. Кроме того, их часто заказывают и продают несоларианцам для использования в межзвездных перевозках. \n Об использовании 'Inkwell' для перевозки незаконных или неотслеживаемых грузов известно любому опытному (или даже полуопытному) портовому начальству; \n '...такие прискорбные действия со стороны исключительного меньшинства - лишь часть реалий межзвездных перевозок, \n' - говорится в официальном ответе.",
 	"map_path": "_maps/_mod_celadon/shuttles/solfed/solfed_inkwell.dmm",
+	"subshuttle": "Feather",
 	"enabled": true,
 	"limit": 1,
 	"sensor_range": 4,
@@ -11,40 +12,36 @@
 	"faction": "/datum/faction/solgov",
 	"tags": ["RP Focus", "Combat", "Cargo", "Mining", "Subshuttle"],
 	"namelists": [
-		"SOLGOV",
+		"SOLFED",
 		"SPACE",
 		"BRITISH_NAVY",
 		"NATURAL"
 	],
 	"job_slots": {
 		"Captain": {
-			"outfit": "/datum/outfit/job/solgov/captain",
+			"outfit": "/datum/outfit/job/solfed/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"Logistics Deck Officer": {
-			"outfit": "/datum/outfit/job/solgov/quartermaster",
+			"outfit": "/datum/outfit/job/solfed/quartermaster",
 			"officer": true,
 			"slots": 1
 		},
 		"Sonnensöldner": {
-			"outfit": "/datum/outfit/job/solgov/sonnensoldner",
+			"outfit": "/datum/outfit/job/solfed/marine",
 			"slots": 3
 		},
 		"Ship Engineer": {
-			"outfit": "/datum/outfit/job/solgov/engineer",
+			"outfit": "/datum/outfit/job/solfed/engineer",
 			"slots": 2
 		},
 		"Field Engineer": {
 			"outfit": "/datum/outfit/job/solfed/miner",
 			"slots": 3
 		},
-		"Bureaucrat": {
-			"outfit": "/datum/outfit/job/solgov/bureaucrat",
-			"slots": 2
-		},
-		"Scribe": {
-			"outfit": "/datum/outfit/job/solgov/assistant",
+		"Gehilfe": {
+			"outfit": "/datum/outfit/job/solfed/assistant",
 			"slots" : 6
 		}
 	}

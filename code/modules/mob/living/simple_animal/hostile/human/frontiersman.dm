@@ -44,6 +44,24 @@
 /mob/living/simple_animal/hostile/human/frontier/ranged/neutered
 	weapon_drop_chance = 0
 
+/mob/living/simple_animal/hostile/human/frontier/ranged/pounder
+	name = "Frontiersman Slammer"
+	desc = "A member of the brutal Frontiersman terrorist fleet! This one gingerly stares forward, eager to pull the trigger on their antiquidated SMG."
+	icon_state = "frontiersmanranged"
+	retreat_distance = 3
+	minimum_distance = 2
+	rapid = 10
+	rapid_fire_delay = 1
+	projectilesound = 'sound/weapons/gun/smg/pounder.ogg'
+	casingtype = /obj/item/ammo_casing/c22lr
+	r_hand = /obj/item/gun/ballistic/automatic/smg/pounder
+
+/mob/living/simple_animal/hostile/human/frontier/ranged/pounder/internals
+	icon_state = "frontiersmanranged_mask"
+	atmos_requirements = IMMUNE_ATMOS_REQS
+	minbodytemp = 0
+	mob_spawner = /obj/effect/mob_spawn/human/corpse/frontier/ranged/internals
+
 /mob/living/simple_animal/hostile/human/frontier/ranged/surgeon
 	name = "Frontiersman Sawbones"
 	desc = "A member of the brutal Frontiersman terrorist fleet! They appear to be a \"doctor\" of some sort, nervously swinging about some kind of makeshift syringe launcher."
@@ -137,7 +155,7 @@
 /mob/living/simple_animal/hostile/human/frontier/ranged/trooper/flame/OpenFire()
 	var/turf/T = get_ranged_target_turf_direct(src, target, 4)
 	var/list/burn_turfs = getline(src, T) - get_turf(src)
-	visible_message("<span class='danger'><b>[src]</b> [ranged_message] at [target.name]!</span>")
+	visible_message(span_danger("<b>[src]</b> [ranged_message] at [target.name]!"))
 	playsound(src, projectilesound, 100, TRUE)
 	fire_line(src, burn_turfs, "flamethrower", TRUE, 10)
 	ranged_cooldown = world.time + ranged_cooldown_time
@@ -153,8 +171,6 @@
 	rapid = 4
 	rapid_fire_delay = 3
 	casingtype = /obj/item/ammo_casing/a762_40
-	loot = list(/obj/effect/mob_spawn/human/corpse/frontier/ranged/trooper,
-				/obj/item/gun/ballistic/automatic/assault/skm)
 	armor_base = /obj/item/clothing/suit/armor/vest/frontier
 	r_hand = /obj/item/gun/ballistic/automatic/assault/skm
 
@@ -199,7 +215,7 @@
 	projectilesound = 'sound/weapons/gun/hmg/shredder.ogg'
 	rapid = 5
 	rapid_fire_delay = 2
-	casingtype = /obj/item/ammo_casing/shotgun/buckshot
+	casingtype = /obj/item/ammo_casing/shotgun
 	r_hand = /obj/item/gun/ballistic/automatic/hmg/shredder
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/frontier/ranged/trooper/heavy
 	armor_base = /obj/item/clothing/suit/space/hardsuit/security/independent/frontier
@@ -240,3 +256,12 @@
 
 /mob/living/simple_animal/hostile/human/frontier/ranged/officer/neutured
 	weapon_drop_chance = 0
+
+/mob/living/simple_animal/hostile/human/frontier/ranged/officer/rifle
+	name = "Frontiersman Commander"
+	desc = "This Frontiersman sways through the world with a deliberate cadence. Their eyes stay up as they search for a target, rubbing at the bolt of their rifle."
+	casingtype = /obj/item/ammo_casing/a8_50r/match
+	projectilesound = 'sound/weapons/gun/rifle/mosin.ogg'
+	r_hand = /obj/item/gun/ballistic/rifle/illestren
+	rapid = 2
+	rapid_fire_delay = 10

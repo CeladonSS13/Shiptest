@@ -207,56 +207,52 @@
 
 // CARGO FACTION
 
-/area/outpost/cargo/faction/all
-	name = "Cargo All"
-	icon_state = "cargo_bay"
+/area/outpost/cargo/faction
+	name = "Cargo faction"
+	icon_state = "cargo_bay_faction"
 	lighting_colour_tube = "#ffe3cc"
 	lighting_colour_bulb = "#ffdbb8"
+
+/area/outpost/cargo/faction/all
+	name = "Cargo All"
+	icon_state = "cargo_bay_all"
 
 /area/outpost/cargo/faction/all/zone_1
 	name = "Cargo All zone 1"
-	icon_state = "cargo_bay"
-	lighting_colour_tube = "#ffe3cc"
-	lighting_colour_bulb = "#ffdbb8"
+	icon_state = "cargo_bay_1"
 
 /area/outpost/cargo/faction/all/zone_2
 	name = "Cargo All zone 2"
-	icon_state = "cargo_bay"
-	lighting_colour_tube = "#ffe3cc"
-	lighting_colour_bulb = "#ffdbb8"
+	icon_state = "cargo_bay_2"
 
 /area/outpost/cargo/faction/all/zone_3
 	name = "Cargo All zone 3"
-	icon_state = "cargo_bay"
-	lighting_colour_tube = "#ffe3cc"
-	lighting_colour_bulb = "#ffdbb8"
+	icon_state = "cargo_bay_3"
 
 /area/outpost/cargo/faction/all/zone_4
 	name = "Cargo All zone 4"
-	icon_state = "cargo_bay"
-	lighting_colour_tube = "#ffe3cc"
-	lighting_colour_bulb = "#ffdbb8"
+	icon_state = "cargo_bay_4"
 
 /area/outpost/cargo/faction/syndicate
 	name = "Cargo Syndi"
-	icon_state = "cargo_bay"
+	icon_state = "cargo_bay_syndicate"
 	lighting_colour_tube = "#f16464"
 	lighting_colour_bulb = "#f16464"
 
 /area/outpost/cargo/faction/solfed
 	name = "Cargo SolFed"
-	icon_state = "cargo_bay"
+	icon_state = "cargo_bay_solfed"
 	lighting_colour_tube = "#f7ef7c"
 	lighting_colour_bulb = "#f7ef7c"
 
 /area/outpost/cargo/faction/inteq
 	name = "Cargo InteQ"
-	icon_state = "cargo_bay"
+	icon_state = "cargo_bay_inteq"
 	lighting_colour_tube = "#c0845d"
 	lighting_colour_bulb = "#c0845d"
 
 /area/outpost/cargo/faction/nanotrasen
 	name = "Cargo Nanotrasen"
-	icon_state = "cargo_bay"
+	icon_state = "cargo_bay_nt"
 	lighting_colour_tube = "#384e68"
 	lighting_colour_bulb = "#384e68"
