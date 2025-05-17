@@ -41,9 +41,9 @@ SUBSYSTEM_DEF(npcpool)
 				SA.handle_automated_movement()
 				SA.handle_automated_action()
 				SA.handle_automated_speech()
-				// Cel-Edit — IDLE_NPC_SLEEP
+				// [CELADON-EDIT] — IDLE_NPC_SLEEP
 				SA.check_should_sleep()
-				// /Cel-Edit
+				// [/CELADON-EDIT]
 		if (MC_TICK_CHECK)
 			--failed_fires
 			return

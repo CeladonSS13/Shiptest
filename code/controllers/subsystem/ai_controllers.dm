@@ -24,9 +24,9 @@ SUBSYSTEM_DEF(ai_controllers)
 
 /datum/controller/subsystem/ai_controllers/fire(resumed)
 	for(var/datum/ai_controller/ai_controller as anything in active_ai_controllers)
-		// Cel-Edit — IDLE_NPC_SLEEP
+		// [CELADON-EDIT] — IDLE_NPC_SLEEP
 		ai_controller.check_should_sleep()
-		// /Cel-Edit
+		// [/CELADON-EDIT]
 
 		if(!COOLDOWN_FINISHED(ai_controller, failed_planning_cooldown))
 			continue
