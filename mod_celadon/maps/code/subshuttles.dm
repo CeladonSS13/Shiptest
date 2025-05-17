@@ -151,6 +151,12 @@
 	description = "InteQ"
 	prefix = "sIQSV"
 
+/datum/map_template/shuttle/subshuttles/major
+	file_name = "nanotrasen_major"
+	name = "Major"
+	description = "NanoTrasen"
+	prefix = "sNTSV"
+
 //Субшатлы для руинок
 /datum/map_template/shuttle/ruin/ruin_jox
 	file_name = "syndicate_Jox"

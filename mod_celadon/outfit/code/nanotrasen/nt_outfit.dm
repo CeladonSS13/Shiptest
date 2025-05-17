@@ -421,7 +421,136 @@
 	backpack_contents = list(/obj/item/construction/rcd/loaded)
 
 
+/// MARK: Helper Captain
 
+/datum/outfit/job/nanotrasen/captain/Helper
+	name = "Nanotrasen - Captain (Helper)"
+	jobtype = /datum/job/captain
+	job_icon = "captain"
+	id_assignment = "Field Officer"
 
+	implants = list(/obj/item/implant/mindshield)
+	uniform = /obj/item/clothing/under/rank/centcom/officer
+	shoes = /obj/item/clothing/shoes/jackboots
+	gloves = /obj/item/clothing/gloves/combat
+	head = /obj/item/clothing/head/beret/captain
+	backpack = /obj/item/storage/backpack/captain
+	duffelbag = /obj/item/storage/backpack/duffelbag/captain
+	satchel = /obj/item/storage/backpack/satchel/cap
+	glasses = /obj/item/clothing/glasses/sunglasses
+	id = /obj/item/card/id/ert
+	ears = /obj/item/radio/headset/nanotrasen/alt/captain
+	belt = null
+	neck = null
+	suit = null
 
+	box = /obj/item/storage/box/survival/nanotrasen
 
+/// MARK: Helper CE
+
+/datum/outfit/job/nanotrasen/ce/Helper
+	name = "NanoTrasen - CE (Helper)"
+	jobtype = /datum/job/chief_engineer
+	job_icon = "chiefengineer"
+
+	implants = list(/obj/item/implant/mindshield)
+	uniform = /obj/item/clothing/under/rank/centcom/officer
+	head = /obj/item/clothing/head/beret/ce
+	backpack = /obj/item/storage/backpack/industrial
+	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
+	satchel = /obj/item/storage/backpack/satchel/eng
+	id = /obj/item/card/id/ert/engineer
+	ears = /obj/item/radio/headset/nanotrasen/alt
+	shoes = /obj/item/clothing/shoes/jackboots
+	belt = null
+	neck = null
+	suit = null
+
+	box = /obj/item/storage/box/survival/nanotrasen
+
+/// MARK: Helper Officer
+
+/datum/outfit/job/nanotrasen/Officer/Helper
+	name = "NanoTrasen - Officer (Helper)"
+	jobtype = /datum/job/hos
+	job_icon = "headofsecurity"
+	id_assignment = "Security Officer"
+
+	implants = list(/obj/item/implant/mindshield)
+	uniform = /obj/item/clothing/under/rank/security/officer/military
+	gloves = /obj/item/clothing/gloves/combat
+	head = /obj/item/clothing/head/beret/sec/officer
+	backpack = /obj/item/storage/backpack/security
+	duffelbag = /obj/item/storage/backpack/duffelbag/sec
+	satchel = /obj/item/storage/backpack/satchel/sec
+	id = /obj/item/card/id/ert/security
+	ears = /obj/item/radio/headset/nanotrasen/alt
+	shoes = /obj/item/clothing/shoes/jackboots
+	belt = null
+	neck = null
+	suit = null
+
+	box = /obj/item/storage/box/survival/nanotrasen
+
+/// MARK: Helper Medical-Science
+
+/datum/outfit/job/nanotrasen/MedicalScie/Helper
+	name = "NanoTrasen - Medical-Science (Helper)"
+	jobtype = /datum/job/cmo
+	job_icon = "chiefmedicalofficer"
+	
+	uniform = /obj/item/clothing/under/rank/medical/doctor
+	gloves = /obj/item/clothing/gloves/color/latex/nitrile
+	backpack = /obj/item/storage/backpack/security
+	duffelbag = /obj/item/storage/backpack/duffelbag
+	satchel = /obj/item/storage/backpack/satchel
+	id = /obj/item/card/id/ert/medical
+	ears = /obj/item/radio/headset/nanotrasen
+	shoes = /obj/item/clothing/shoes/jackboots
+	belt = null
+	neck = null
+	suit = null
+
+	box = /obj/item/storage/box/survival/nanotrasen
+
+/// MARK: Helper Assisant
+
+/datum/outfit/job/nanotrasen/assistant/Helper
+	name = "NanoTrasen - Assisant (Helper)"
+	jobtype = /datum/job/assistant
+	job_icon = "chiefengineer"
+	
+	uniform = /obj/item/clothing/under/nanotrasen/supply
+	gloves = /obj/item/clothing/gloves/color/black
+	backpack = /obj/item/storage/backpack
+	duffelbag = /obj/item/storage/backpack/duffelbag
+	satchel = /obj/item/storage/backpack/satchel
+	id = /obj/item/card/id/silver
+	ears = /obj/item/radio/headset/nanotrasen
+	shoes = /obj/item/clothing/shoes/jackboots
+	belt = null
+	neck = null
+	suit = null
+
+	box = /obj/item/storage/box/survival/nanotrasen
+
+/// MARK: Helper Janitor
+
+/datum/outfit/job/nanotrasen/janitor/Helper
+	name = "NanoTrasen - Janitor (Helper)"
+	jobtype = /datum/job/janitor
+	job_icon = "janitor"
+
+	uniform = /obj/item/clothing/under/nanotrasen/janitor
+	gloves = /obj/item/clothing/gloves/color/black
+	backpack = /obj/item/storage/backpack
+	duffelbag = /obj/item/storage/backpack/duffelbag
+	satchel = /obj/item/storage/backpack/satchel
+	id = /obj/item/card/id/ert/janitor
+	ears = /obj/item/radio/headset/nanotrasen
+	shoes = /obj/item/clothing/shoes/jackboots
+	belt = null
+	neck = null
+	suit = null
+
+	box = /obj/item/storage/box/survival/nanotrasen

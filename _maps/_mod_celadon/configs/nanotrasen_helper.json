@@ -1,0 +1,56 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Helper-Class Rescue Ship",
+	"map_short_name": "Helper",
+	"description": "Специально построенный для дальних секторов корабль класса 'Helper' может оказывать значительную ремонтную, медицинскую помощь лояльным кораблям, имея на своём борту революционный имплант лечебного вооружения, команда корабля может проводить специальные спасательные операции.",
+	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_helper.dmm",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 5,
+	"starting_funds": 1500,
+	"subshuttle": "Major",
+	"prefix": "NTSPSV",
+	"faction": "/datum/faction/nt",
+	"tags": [
+		"Medical",
+		"Engineering",
+		"Genetics",
+		"Subshuttle"
+
+	],
+	"namelists": [
+		"NANOTRASEN",
+		"MERCANTILE",
+		"SPACE"
+	],
+	"job_slots": {
+		"Captain": {
+			"outfit": "/datum/outfit/job/nanotrasen/captain/Helper",
+			"officer": true,
+			"slots": 1
+		},
+		" Field Chief Engineer": {
+			"outfit": "/datum/outfit/job/nanotrasen/ce/Helper",
+			"slots": 1,
+			"officer": true
+		},
+		"Doctor": {
+			"outfit": "/datum/outfit/job/nanotrasen/MedicalScie/Helper",
+			"slots": 2
+		},
+		"assistant": {
+			"outfit": "/datum/outfit/job/nanotrasen/assistant/Helper",
+			"slots": 3
+		},
+		"Field Janitor": {
+			"outfit": "/datum/outfit/job/nanotrasen/janitor/Helper",
+				"slots": 1
+		},
+		" security officer": {
+			"outfit": "/datum/outfit/job/nanotrasen/Officer/Helper",
+			"slots": 2
+		}
+	
+	
+	}
+}
