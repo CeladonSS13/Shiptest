@@ -59,6 +59,10 @@
 	projectile_type = /obj/projectile/beam/laser/light/smg
 	e_cost = 400 //cheaper to fire but worse projectiles as stated above
 
+/obj/item/ammo_casing/energy/laser/sharplite/smg
+	projectile_type = /obj/projectile/beam/weak/sharplite
+	e_cost = 396 //25 shots with a normal power cell, 50 with an upgraded
+
 ////////////
 //NT-SL HADES egun
 ////////////

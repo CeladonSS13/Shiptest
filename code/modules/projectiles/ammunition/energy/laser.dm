@@ -72,7 +72,7 @@
 
 /obj/item/ammo_casing/energy/laser/sharplite/smg
 	projectile_type = /obj/projectile/beam/weak/sharplite
-	e_cost = 396 //25 shots with a normal power cell, 50 with an upgraded
+	e_cost = 799 //12 shots with a normal power cell, 25 with an upgraded
 	select_name = "kill"
 	delay = 0.13 SECONDS
 
