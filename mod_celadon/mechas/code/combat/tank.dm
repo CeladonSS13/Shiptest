@@ -2,7 +2,7 @@
 	name = "\improper Armored Combat Vehicle \"Tank\""
 	desc = "What the? Where the hell did that tank come from?!? "
 
-	icon = 'mod_celadon/_storge_icons/icons/mecha_96x96.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/mecha/mecha_96x96.dmi'
 	icon_state = "red"
 
 	stepsound = 'sound/mecha/mechstep.ogg'

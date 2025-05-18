@@ -1,7 +1,7 @@
 /mob/living/simple_animal/hostile/hivebot/tele//this still needs work
 	name = "Beacon"
 	desc = "Some odd beacon thing"
-	icon = 'mod_celadon/_storge_icons/icons/mobs/ruin/hivebot.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/mobs/hivebot.dmi'
 	icon_state = "def_radar-off"
 	icon_living = "def_radar-off"
 	health = 200

@@ -2,7 +2,7 @@
 	name = "cavern geist"
 	desc = "A near-mythical adhomian predator, known to haunt the caverns. Its eyes sparkle with a mixture of intelligence and malice."
 	speak_emote = list("gibbers")
-	icon = 'mod_celadon/_storge_icons/icons/mob/npc/cavern_geist.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/mobs/cavern_geist.dmi'
 	icon_state = "geist"
 	icon_living = "geist"
 	icon_dead = "geist_dead"

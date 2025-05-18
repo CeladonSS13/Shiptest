@@ -2,7 +2,7 @@
 			// nanotrasen survival box
 /obj/item/storage/box/survival/nanotrasen
 	name = "nanotrasen survival box"
-	icon = 'mod_celadon/_storge_icons/icons/survival_boxes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/resprite/survival_boxes.dmi'
 	icon_state = "box_survival_nt_alt"
 	mask_type = null
 	internal_type = null
@@ -24,7 +24,7 @@
 			// syndicate survival box
 /obj/item/storage/box/survival/syndicate
 	name = "syndicate survival box"
-	icon = 'mod_celadon/_storge_icons/icons/survival_boxes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/resprite/survival_boxes.dmi'
 	icon_state = "box_survival_syn"
 	mask_type = null
 	internal_type = null
@@ -46,7 +46,7 @@
 			// inteq survival box
 /obj/item/storage/box/survival/inteq
 	name = "inteq survival box"
-	icon = 'mod_celadon/_storge_icons/icons/survival_boxes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/resprite/survival_boxes.dmi'
 	icon_state = "box_survival_iq"
 	mask_type = null
 	internal_type = null
@@ -68,7 +68,7 @@
 			// solfed survival box
 /obj/item/storage/box/survival/solfed
 	name = "solfed survival box"
-	icon = 'mod_celadon/_storge_icons/icons/survival_boxes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/resprite/survival_boxes.dmi'
 	icon_state = "box_survival_sol"
 	mask_type = null
 	internal_type = null
@@ -90,7 +90,7 @@
 			// independent & elisium survival box
 /obj/item/storage/box/survival/independent
 	name = "mass-produced survival box"
-	icon = 'mod_celadon/_storge_icons/icons/survival_boxes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/resprite/survival_boxes.dmi'
 	icon_state = "box_survival_ind"
 	mask_type = null
 	internal_type = null
