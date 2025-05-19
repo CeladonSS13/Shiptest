@@ -3,10 +3,7 @@
 
 /datum/emote/living/carbon/airguitar
 	key = "airguitar"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "is strumming the air and headbanging like a safari chimp." // CELADON-EDIT - ORIGINAL
-	message = "делает невероятный запил на воображаемой гитаре!"
-	// [/CELADON-EDIT]
+	message = "is strumming the air and headbanging like a safari chimp."
 	hands_use_check = TRUE
 
 /// The time it takes for the blink to be removed
@@ -14,10 +11,7 @@
 /datum/emote/living/carbon/blink
 	key = "blink"
 	key_third_person = "blinks"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "blinks." // CELADON-EDIT - ORIGINAL
-	message = "моргает."
-	// [/CELADON-EDIT]
+	message = "blinks."
 	/// Timer for the blink to wear off
 	var/blink_timer = TIMER_ID_NULL
 
@@ -43,41 +37,13 @@
 
 /datum/emote/living/carbon/blink_r
 	key = "blink_r"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "blinks rapidly." // CELADON-EDIT - ORIGINAL
-	message = "быстро моргает."
-	// [/CELADON-EDIT]
-
-/datum/emote/living/carbon/clap
-	key = "clap"
-	key_third_person = "claps"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "claps." // CELADON-EDIT - ORIGINAL
-	message = "хлопает."
-	// [/CELADON-EDIT]
-	muzzle_ignore = TRUE
-	hands_use_check = TRUE
-	emote_type = EMOTE_AUDIBLE
-	vary = TRUE
-
-/datum/emote/living/carbon/clap/get_sound(mob/living/user)
-	if(ishuman(user))
-		if(!user.get_bodypart(BODY_ZONE_L_ARM) || !user.get_bodypart(BODY_ZONE_R_ARM))
-			return
-		else
-			return pick('sound/misc/clap1.ogg',
-							'sound/misc/clap2.ogg',
-							'sound/misc/clap3.ogg',
-							'sound/misc/clap4.ogg')
+	message = "blinks rapidly."
 
 /datum/emote/living/carbon/crack
 	key = "crack"
 	key_third_person = "cracks"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "cracks their knuckles." - sound = 'sound/misc/crack.ogg'// CELADON-EDIT - ORIGINAL
-	message = "хрустит костяшками пальцев."
-	sound = 'mod_celadon/_storge_sounds/sound/voice/knuckles.ogg'
-	// [/CELADON-EDIT]
+	message = "cracks their knuckles."
+	sound = 'sound/misc/knuckles.ogg'
 	cooldown = 6 SECONDS
 
 /datum/emote/living/carbon/crack/can_run_emote(mob/living/carbon/user, status_check = TRUE , intentional)
@@ -88,10 +54,7 @@
 /datum/emote/living/carbon/gnarl
 	key = "gnarl"
 	key_third_person = "gnarls"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "gnarls and shows its teeth..." // CELADON-EDIT - ORIGINAL
-	message = "рычит и скалит зубы..."
-	// [/CELADON-EDIT]
+	message = "gnarls and shows its teeth..."
 	mob_type_allowed_typecache = list(/mob/living/carbon/monkey)
 
 /datum/emote/living/carbon/moan
@@ -111,21 +74,15 @@
 /datum/emote/living/carbon/scratch
 	key = "scratch"
 	key_third_person = "scratches"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// mob_type_allowed_typecache = list(/mob/living/carbon/monkey, /mob/living/carbon/alien)
-	// message = "scratches." // CELADON-EDIT - ORIGINAL
-	message = "чешется."
-	// [/CELADON-EDIT]
+	message = "scratches."
+	mob_type_allowed_typecache = list(/mob/living/carbon/monkey, /mob/living/carbon/alien)
 	hands_use_check = TRUE
 
 /datum/emote/living/carbon/screech
 	key = "screech"
 	key_third_person = "screeches"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "screeches." // CELADON-EDIT - ORIGINAL
-	message = "издаёт дикий визг."
-	// [/CELADON-EDIT]
-	mob_type_allowed_typecache = list(/mob/living/carbon/monkey, /mob/living/carbon/alien)
+	message = "screeches."
+	mob_type_allowed_typecache = list(/mob/living/carbon/monkey)
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/carbon/screech/get_sound(mob/living/user)
@@ -157,28 +114,19 @@
 /datum/emote/living/carbon/sign/signal
 	key = "signal"
 	key_third_person = "signals"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message_param = "raises %t fingers." // CELADON-EDIT - ORIGINAL
-	message_param = "показывает %t пальцев."
-	// [/CELADON-EDIT]
+	message_param = "raises %t fingers."
 	mob_type_allowed_typecache = list(/mob/living/carbon/human)
 	hands_use_check = TRUE
 
 /datum/emote/living/carbon/tail
 	key = "tail"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "waves their tail." // CELADON-EDIT - ORIGINAL
-	message = "машет хвостом."
-	// [/CELADON-EDIT]
+	message = "waves their tail."
 	mob_type_allowed_typecache = list(/mob/living/carbon/monkey, /mob/living/carbon/alien)
 
 /datum/emote/living/carbon/wink
 	key = "wink"
 	key_third_person = "winks"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "winks." // CELADON-EDIT - ORIGINAL
-	message = "подмигивает."
-	// [/CELADON-EDIT]
+	message = "winks."
 
 /datum/emote/living/carbon/circle
 	key = "circle"

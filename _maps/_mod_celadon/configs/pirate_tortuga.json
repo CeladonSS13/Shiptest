@@ -1,0 +1,49 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Tortuga-class Converted Cargo Freighter",
+	"map_short_name": "Tortuga",
+	"description": "Изначально 'Tortuga' была грузовым транспортным судном, но теперь является импровизированным боевым кораблем, используемым флотом пограничников. Гражданские транспортные средства оснащены оборудованием для перевозки челноков, а обломки астероидов прикреплены к внешней части корпуса в качестве дешевой импровизированной брони и укрытия. 'Tortuga' выполняет двойную функцию - это разведывательный элемент и судно, способное создавать передовые базы в пределах сектора. В то время как шаттл класса 'Brawler', который перевозит 'Tortuga', обеспечивает удивительную скорость и дальность полета для своих абордажных групп, сама 'Tortuga' неповоротлива и почти беспомощна без своего шаттла. В щитспавне по причине: Пираты - судно оффов, уродский внешний вид, но баланс вооружения нормальный. В ЩИТСПАВНЕ ПО ПРИЧИНЕ: Сильный пирато шип для ивентов!",
+	"map_path": "_maps/_mod_celadon/shuttles/pirate/pirate_tortuga.dmm",
+	"subshuttle": "Brawler",
+	"enabled": false,
+	"limit": 1,
+	"sensor_range": 4,
+	"prefix": "RSV",
+	"faction": "/datum/faction/pirate",
+	"tags": [
+		"Combat",
+		"Subshuttle"
+	],
+	"namelists": [
+		"PIRATES",
+		"BRITISH_NAVY"
+	],
+	"job_slots": {
+		"Captain": {
+			"outfit": "/datum/outfit/job/frontiersmen/captain",
+			"officer": true,
+			"slots": 1
+		},
+		"Deck Boss": {
+			"outfit": "/datum/outfit/job/frontiersmen/hos",
+			"officer": true,
+			"slots": 1
+		},
+		"Surgeon": {
+			"outfit": "/datum/outfit/job/frontiersmen/doctor",
+			"slots": 1
+		},
+		"Mechanic": {
+			"outfit": "/datum/outfit/job/frontiersmen/engineer",
+			"slots": 1
+		},
+		"Boarder": {
+			"outfit": "/datum/outfit/job/frontiersmen/security",
+			"slots": 2
+		},
+		"Rookie": {
+			"outfit": "/datum/outfit/job/frontiersmen/assistant",
+			"slots": 2
+		}
+	}
+}

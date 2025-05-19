@@ -1,3 +1,6 @@
+/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
+	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
+
 /datum/supply_pack/medical
 	group = "Medical"
 	crate_type = /obj/structure/closet/crate/medical
@@ -214,22 +217,20 @@
 
 /datum/supply_pack/medical/vials/empty_vial
 	name = "Empty Vial Crate"
-	desc = "Contains 2 empty hypospray vials, for usage in a Hypospray."
+	desc = "Contains one empty hypospray vial, for usage in a Hypospray."
 	cost = 200
 	contains = list(
-		/obj/item/reagent_containers/glass/bottle/vial/small,
-		/obj/item/reagent_containers/glass/bottle/vial/small
-	)
+		/obj/item/reagent_containers/glass/bottle/vial/small)
 	crate_name = "empty vial crate"
 
 /datum/supply_pack/medical/vials/bica_vial
-	name = "Bicardine Vial Crate"
-	desc = "Contains a spare bicardine vial, for usage in a Hypospray."
+	name = "Bicaridine Vial Crate"
+	desc = "Contains a spare bicaridine vial, for usage in a Hypospray."
 	cost = 400
 	contains = list(
 		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/bicaridine,
 	)
-	crate_name = "bicardine vial crate"
+	crate_name = "bicaridine vial crate"
 
 /datum/supply_pack/medical/vials/kelo_vial
 	name = "Kelotane Vial Crate"
@@ -296,30 +297,27 @@
 
 /datum/supply_pack/medical/vials/erp_vial
 	name = "Radiation Purgant Vial Crate"
-	desc = "Contains 2 spare radiation purgant vials, for usage in a Hypospray."
-	cost = 600
+	desc = "Contains one spare radiation purgant vial, for usage in a Hypospray."
+	cost = 300
 	contains = list(
-		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/erp,
-		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/erp
-	)
+		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/erp)
 	crate_name = "radiation purgant vial crate"
 
 /datum/supply_pack/medical/vials/sal_vial
 	name = "SalGlu Vial Crate"
-	desc = "Contains 2 spare SalGlu Solution vials, for usage in a Hypospray."
-	cost = 600
+	desc = "Contains one spare SalGlu Solution vial, for usage in a Hypospray."
+	cost = 300
 	contains = list(
-		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/salclu,
-		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/salclu
-	)
+		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/salclu)
 	crate_name = "SalGlu vial crate"
 
 /datum/supply_pack/medical/vials/chit_vial
 	name = "Chitosan Vial Crate"
-	desc = "Contains 2 spare Chitosan vials, for usage in a Hypospray."
-	cost = 600
+	desc = "Contains one spare Chitosan vial, for usage in a Hypospray."
+	cost = 300
 	contains = list(
-		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/chitosan,
-		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/chitosan
-	)
+		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/chitosan)
 	crate_name = "chitosan vial crate"
+
+
+[/CELADON-DELETE] */

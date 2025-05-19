@@ -307,4 +307,3 @@
 	. = ..()
 	pizza = new /obj/item/reagent_containers/food/snacks/pizza/pineapple(src)
 	boxtag = "Honolulu Chew"
-

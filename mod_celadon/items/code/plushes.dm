@@ -777,11 +777,6 @@
 	desc = "Faces into the floor!"
 	icon_state = "hampter_ert"
 
-/obj/item/toy/plush/celadon/hampter/cute
-	name = "cute hampter"
-	desc = "A familiar big-eyed cute hampter plushie"
-	icon_state = "hampster_cute"
-
 /obj/item/toy/plush/celadon/beaver
 	name = "Beaver plushie"
 	desc = "A cute soft toy of a beaver. Holding it in your hands, you can hardly restrain yourself from screaming with happiness."

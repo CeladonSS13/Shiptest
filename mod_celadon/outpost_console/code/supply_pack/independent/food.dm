@@ -1,6 +1,55 @@
 /datum/supply_pack/faction/independent/food
 	group = "Food & Agricultural"
 
+
+/* MARK: = Gun List =
+
+> Готовая еда
+> Ингредиенты
+> Готовка
+> Ботаника
+> Пчеловодство
+
+	MARK: Готовая еда
+*/
+
+/datum/supply_pack/faction/independent/food/pizza
+	name = "Pizza Crate"
+	desc = "Best prices on this side of the galaxy. All deliveries are guaranteed to be 99.5% anomaly-free!"
+	cost = 2000 // Best prices this side of the galaxy.
+	contains = list(/obj/item/pizzabox/margherita,
+					/obj/item/pizzabox/mushroom,
+					/obj/item/pizzabox/meat,
+					/obj/item/pizzabox/vegetable,
+					/obj/item/pizzabox/pineapple)
+	crate_name = "pizza crate"
+	crate_type = /obj/structure/closet/crate/freezer
+
+/datum/supply_pack/faction/independent/food/ration
+	name = "Ration Crate"
+	desc = "6 standard issue rations. For your inner jarhead."
+	cost = 500
+	contains = list(/obj/effect/spawner/random/food_or_drink/ration,
+					/obj/effect/spawner/random/food_or_drink/ration,
+					/obj/effect/spawner/random/food_or_drink/ration,
+					/obj/effect/spawner/random/food_or_drink/ration,
+					/obj/effect/spawner/random/food_or_drink/ration,
+					/obj/effect/spawner/random/food_or_drink/ration)
+	crate_name = "ration crate"
+	crate_type = /obj/structure/closet/crate
+
+/datum/supply_pack/faction/independent/food/donkpockets
+	name = "Donk Pocket Variety Crate"
+	desc = "Featuring a line up of Donk Co.'s most popular pastry!"
+	cost = 500
+	contains = list(/obj/item/storage/box/donkpockets/donkpocketspicy,
+					/obj/item/storage/box/donkpockets/donkpocketteriyaki,
+					/obj/item/storage/box/donkpockets/donkpocketpizza,
+					/obj/item/storage/box/donkpockets/donkpocketberry,
+					/obj/item/storage/box/donkpockets/donkpockethonk)
+	crate_name = "donk pocket crate"
+	crate_type = /obj/structure/closet/crate/freezer
+
 /datum/supply_pack/faction/independent/food/ration_irp
 	name = "IRP set"
 	desc = "6 expanded IRP sets. Now with warm-up!"
@@ -16,53 +65,13 @@
 	crate_type = /obj/structure/closet/crate/secure/weapon
 
 /*
-	MARK:	Готовая еда
+	MARK:	Ингредиенты
 */
-/datum/supply_pack/faction/independent/food/donkpockets
-	name = "Donk Pocket Variety Crate"
-	desc = "Featuring a line up of Donk Co.'s most popular pastry!"
-	cost = 500
-	contains = list(/obj/item/storage/box/donkpockets/donkpocketspicy,
-					/obj/item/storage/box/donkpockets/donkpocketteriyaki,
-					/obj/item/storage/box/donkpockets/donkpocketpizza,
-					/obj/item/storage/box/donkpockets/donkpocketberry,
-					/obj/item/storage/box/donkpockets/donkpockethonk)
-	crate_name = "donk pocket crate"
-	crate_type = /obj/structure/closet/crate/freezer
 
-/datum/supply_pack/faction/independent/food/ration
-	name = "Ration Crate"
-	desc = "6 standard issue rations. For your inner jarhead."
-	cost = 900
-	contains = list(/obj/effect/spawner/random/food_or_drink/ration,
-					/obj/effect/spawner/random/food_or_drink/ration,
-					/obj/effect/spawner/random/food_or_drink/ration,
-					/obj/effect/spawner/random/food_or_drink/ration,
-					/obj/effect/spawner/random/food_or_drink/ration,
-					/obj/effect/spawner/random/food_or_drink/ration)
-	crate_name = "ration crate"
-	crate_type = /obj/structure/closet/crate
-
-/datum/supply_pack/faction/independent/food/pizza
-	name = "Pizza Crate"
-	desc = "Best prices on this side of the galaxy. All deliveries are guaranteed to be 99.5% anomaly-free!"
-	cost = 2000
-	contains = list(/obj/item/pizzabox/margherita,
-					/obj/item/pizzabox/mushroom,
-					/obj/item/pizzabox/meat,
-					/obj/item/pizzabox/vegetable,
-					/obj/item/pizzabox/pineapple)
-	crate_name = "pizza crate"
-	crate_type = /obj/structure/closet/crate/freezer
-
-
-/**
-	MARK: Ингредиенты
- */
 /datum/supply_pack/faction/independent/food/ingredients_basic
 	name = "Basic Ingredients Crate"
 	desc = "Get things cooking with this crate full of useful ingredients! Contains a dozen eggs, some enzyme, two slabs of meat, some flour, some rice, a few bottles of milk, a bottle of soymilk, and a bag of sugar."
-	cost = 650
+	cost = 350
 	contains = list(/obj/item/reagent_containers/condiment/flour,
 					/obj/item/reagent_containers/condiment/flour,
 					/obj/item/reagent_containers/condiment/rice,
@@ -77,10 +86,15 @@
 	crate_name = "food crate"
 	crate_type = /obj/structure/closet/crate/freezer
 
+/datum/supply_pack/faction/independent/food/ingredients_specialized
+	name = "Advanced Cooking Crate"
+	desc = "For the discerning chef. Contains a bottle of enzyme, a salt shaker, a pepper mill, a bottle of ketchup, a bottle of hot sauce, and a bottle of cream."
+	cost = 500
+
 /datum/supply_pack/faction/independent/food/ingredients_condiments
 	name = "Condiments Crate"
 	desc = "A variety of garnishes for topping off your dish with a little extra pizzaz. Contains a bottle of enzyme, a salt shaker, a pepper mill, a bottle of ketchup, a bottle of hot sauce, a bottle of BBQ sauce, and a bottle of cream."
-	cost = 300
+	cost = 100
 	contains = list(/obj/item/reagent_containers/condiment/saltshaker,
 					/obj/item/reagent_containers/condiment/peppermill,
 					/obj/item/reagent_containers/condiment/ketchup,
@@ -92,24 +106,10 @@
 	crate_name = "condiments crate"
 	crate_type = /obj/structure/closet/crate/freezer
 
-/datum/supply_pack/faction/independent/food/sugar
-	name = "Sugar Crate"
-	desc = "A crate with a few bags of sugar. Good for cake shops and amateur chemists."
-	cost = 150
-	contains = list(/obj/item/reagent_containers/condiment/sugar,
-					/obj/item/reagent_containers/condiment/sugar,
-					/obj/item/reagent_containers/condiment/sugar
-	)
-	crate_name = "sugar crate"
-	crate_type = /obj/structure/closet/crate
-
-/**
-	MARK: 	Рандом. ингредиенты
- */
 /datum/supply_pack/faction/independent/food/ingredients_randomized
 	name = "Exotic Meat Crate"
 	desc = "The best cuts in the whole sector. Probably."
-	cost = 900
+	cost = 500
 	contains = list(/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/slime,
 					/obj/item/reagent_containers/food/snacks/meat/slab/killertomato,
 					/obj/item/reagent_containers/food/snacks/meat/slab/bear,
@@ -120,7 +120,7 @@
 					/obj/item/reagent_containers/food/snacks/fishmeat/carp,
 					/obj/item/reagent_containers/food/snacks/meat/slab/human
 	)
-	crate_name = "exotic meat crate"
+	crate_name = "meat crate"
 	crate_type = /obj/structure/closet/crate/freezer
 	var/items = 7
 
@@ -132,7 +132,7 @@
 /datum/supply_pack/faction/independent/food/ingredients_randomized/meat
 	name = "Standard Meat Crate"
 	desc = "Less interesting, yet filling cuts of meat."
-	cost = 500
+	cost = 300
 	contains = list(/obj/item/reagent_containers/food/snacks/meat/slab,
 					/obj/item/reagent_containers/food/snacks/meat/slab/chicken,
 					/obj/item/reagent_containers/food/snacks/meat/slab/synthmeat,
@@ -155,7 +155,7 @@
 					/obj/item/reagent_containers/food/snacks/grown/onion,
 					/obj/item/reagent_containers/food/snacks/grown/pumpkin
 	)
-	crate_name = "vegetables crate"
+	crate_name = "food crate"
 	crate_type = /obj/structure/closet/crate/freezer
 
 /datum/supply_pack/faction/independent/food/ingredients_randomized/fruits
@@ -170,7 +170,7 @@
 					/obj/item/reagent_containers/food/snacks/grown/berries,
 					/obj/item/reagent_containers/food/snacks/grown/banana
 	)
-	crate_name = "fruit crate"
+	crate_name = "food crate"
 	crate_type = /obj/structure/closet/crate/freezer
 
 /datum/supply_pack/faction/independent/food/ingredients_randomized/grains
@@ -179,12 +179,12 @@
 	cost = 100
 	contains = list(/obj/item/reagent_containers/food/snacks/grown/wheat,
 					/obj/item/reagent_containers/food/snacks/grown/wheat,
-					/obj/item/reagent_containers/food/snacks/grown/wheat,
+					/obj/item/reagent_containers/food/snacks/grown/wheat, //Weighted to be more common
 					/obj/item/reagent_containers/food/snacks/grown/oat,
 					/obj/item/reagent_containers/food/snacks/grown/rice,
 					/obj/item/reagent_containers/food/snacks/grown/soybeans
 	)
-	crate_name = "grains crate"
+	crate_name = "food crate"
 	crate_type = /obj/structure/closet/crate/freezer
 	items = 10
 
@@ -195,17 +195,57 @@
 	contains = list(/obj/item/food/bread/plain,
 					/obj/item/food/breadslice/plain,
 					/obj/item/food/breadslice/plain,
-					/obj/item/food/breadslice/plain,
+					/obj/item/food/breadslice/plain, //Weighted to be more common
 					/obj/item/reagent_containers/food/snacks/bun,
 					/obj/item/reagent_containers/food/snacks/tortilla,
 					/obj/item/reagent_containers/food/snacks/pizzabread
 	)
-	crate_name = "bread crate"
+	crate_name = "food crate"
 	crate_type = /obj/structure/closet/crate/freezer
+
+/datum/supply_pack/faction/independent/food/sugar
+	name = "Sugar Crate"
+	desc = "A crate with a few bags of sugar. Good for cake shops and amateur chemists."
+	cost = 150
+	contains = list(/obj/item/reagent_containers/condiment/sugar,
+					/obj/item/reagent_containers/condiment/sugar,
+					/obj/item/reagent_containers/condiment/sugar
+	)
+	crate_name = "sugar crate"
+	crate_type = /obj/structure/closet/crate
+
+/*
+	MARK:	Готовка
+*/
+
+/datum/supply_pack/faction/independent/food/kitchen_knife
+	name = "Kitchen Knife Crate"
+	desc = "Need a new knife to cut something hard? Try out this stamped steel knife, straight from The New Gorlex Republic's factories."
+	cost = 100
+	contains = list(/obj/item/melee/knife/kitchen)
+	crate_name = "kitchen knife crate"
+	crate_type = /obj/structure/closet/crate/wooden
+
+/datum/supply_pack/faction/independent/food/grillfuel
+	name = "Grilling Fuel Kit"
+	desc = "Contains propane and propane accessories. (Note: doesn't contain any actual propane.)"
+	cost = 250
+	contains = list(/obj/item/stack/sheet/mineral/coal/ten)
+	crate_name = "grilling fuel kit crate"
+
+/datum/supply_pack/faction/independent/food/grill
+	name = "Grilling Starter Kit"
+	desc = "Sometimes the stresses of the world are too much to bear. Some times, for God's sake, you just want to grill. This crate is for those times."
+	cost = 2500
+	contains = list(/obj/item/stack/sheet/mineral/coal/five,
+					/obj/machinery/grill/unwrenched)
+	crate_name = "grilling starter kit crate"
+	crate_type = /obj/structure/closet/crate/large
 
 /*
 	MARK:	Ботаника
 */
+
 /datum/supply_pack/faction/independent/food/hydrotank
 	name = "Hydroponics Backpack Crate"
 	desc = "Bring on the flood with this high-capacity backpack crate. Contains 500 units of life-giving H2O."
@@ -294,13 +334,32 @@
 	crate_name = "exotic seeds crate"
 	crate_type = /obj/structure/closet/crate/hydroponics
 
-/**
-	MARK: Кухонные принадлежности
- */
-/datum/supply_pack/faction/independent/food/kitchen_knife
-	name = "Kitchen Knife Crate"
-	desc = "Need a new knife to cut something hard? Try out this stamped steel knife, straight from The New Gorlex Republic's factories."
-	cost = 100
-	contains = list(/obj/item/melee/knife/kitchen)
-	crate_name = "kitchen knife crate"
-	crate_type = /obj/structure/closet/crate/wooden
+/*
+	MARK: Пчеловодство
+*/
+
+/datum/supply_pack/faction/independent/food/beekeeping_suits
+	name = "Beekeeper Suit Crate"
+	desc = "Bee business booming? Better be benevolent and boost botany by bestowing bi-Beekeeper-suits! Contains two beekeeper suits and matching headwear."
+	cost = 500
+	contains = list(/obj/item/clothing/head/beekeeper_head,
+					/obj/item/clothing/suit/beekeeper_suit,
+					/obj/item/clothing/head/beekeeper_head,
+					/obj/item/clothing/suit/beekeeper_suit)
+	crate_name = "beekeeper suit crate"
+	crate_type = /obj/structure/closet/crate/hydroponics
+
+/datum/supply_pack/faction/independent/food/beekeeping_fullkit
+	name = "Beekeeping Starter Crate"
+	desc = "BEES BEES BEES. Contains three honey frames, a beekeeper suit and helmet, flyswatter, bee house, and, of course, a pure-bred Nanotrasen-Standardized Queen Bee!"
+	cost = 1000
+	contains = list(/obj/structure/beebox/unwrenched,
+					/obj/item/honey_frame,
+					/obj/item/honey_frame,
+					/obj/item/honey_frame,
+					/obj/item/queen_bee/bought,
+					/obj/item/clothing/head/beekeeper_head,
+					/obj/item/clothing/suit/beekeeper_suit,
+					/obj/item/melee/flyswatter)
+	crate_name = "beekeeping starter crate"
+	crate_type = /obj/structure/closet/crate/hydroponics

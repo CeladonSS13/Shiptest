@@ -124,3 +124,6 @@
 	var/area/A = get_area(src)
 	if(A)
 		notify_ghosts("Ахмад взывает пробудиться своих соплеменников \the [A.name].", source = src, action=NOTIFY_ATTACK, flashwindow = FALSE)
+
+/obj/effect/mob_spawn/human/corpse/clip/minuteman/forcefem
+	outfit = /datum/outfit/job/solgov/sonnensoldner

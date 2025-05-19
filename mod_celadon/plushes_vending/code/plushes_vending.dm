@@ -106,7 +106,6 @@
 	premium = list(
 		/obj/item/toy/plush/landmine = 1,
 		/obj/item/toy/plush/celadon/lizzyplush = 1,
-		/obj/item/toy/plush/celadon/hampter/cute = 1,
 		/obj/item/toy/plush/celadon/jecca = 1,
 		/obj/item/toy/plush/celadon/beaver = 1,
 		/obj/item/toy/plush/celadon/rd = 1,

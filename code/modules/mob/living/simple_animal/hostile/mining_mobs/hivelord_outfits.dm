@@ -182,7 +182,7 @@
 			/obj/item/pickaxe/silver = 4,
 			/obj/item/pickaxe/diamond = 2,
 			/obj/item/gun/energy/kinetic_accelerator = 2,
-			/obj/item/kinetic_crusher/old = 1
+			// /obj/item/kinetic_crusher/old = 1 - [CELADON-DELETE] - Баланс
 			)
 		)
 	if(prob(75))
@@ -249,8 +249,8 @@
 	else if (prob(75))
 		backpack_contents = list()
 		back = pick_weight(list(
-			/obj/item/kinetic_crusher = 9,
-			/obj/item/kinetic_crusher/old = 1
+			// /obj/item/kinetic_crusher = 9, - [CELADON-DELETE] - Баланс
+			// /obj/item/kinetic_crusher/old = 1 - [CELADON-DELETE] - Баланс
 			)
 		)
 

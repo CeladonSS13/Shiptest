@@ -39,7 +39,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/external,
 /obj/machinery/door/poddoor/preopen{
-	id = engenering
+	id = "engenering"
 	},
 /obj/structure/fans/tiny,
 /obj/structure/disposalpipe/segment,
@@ -103,7 +103,7 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/button/door{
-	id = engenering;
+	id = "engenering";
 	name = "window button";
 	pixel_y = 24
 	},
@@ -316,7 +316,7 @@
 	},
 /obj/machinery/door/poddoor/preopen{
 	dir = 4;
-	id = engenering
+	id = "engenering"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/science)
@@ -604,7 +604,7 @@
 	},
 /obj/machinery/door/poddoor/preopen{
 	dir = 4;
-	id = engenering
+	id = "engenering"
 	},
 /turf/open/floor/plating,
 /area/ship/science)
@@ -3033,7 +3033,7 @@
 	},
 /obj/machinery/door/poddoor/preopen{
 	dir = 4;
-	id = engenering
+	id = "engenering"
 	},
 /turf/open/floor/plating,
 /area/ship/science/robotics)
@@ -3138,7 +3138,7 @@
 	},
 /obj/machinery/door/poddoor/preopen{
 	dir = 4;
-	id = engenering
+	id = "engenering"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/science/robotics)
@@ -3232,7 +3232,7 @@
 /obj/machinery/light/directional/west,
 /obj/machinery/jukebox/boombox,
 /obj/machinery/button/door{
-	id = Комнатаотдыха;
+	id = "room";
 	name = "window button";
 	pixel_y = 25
 	},
@@ -3274,7 +3274,7 @@
 "gf" = (
 /obj/machinery/button/door{
 	dir = 1;
-	id = down1;
+	id = "down";
 	name = "window button";
 	pixel_y = -28
 	},
@@ -3319,7 +3319,7 @@
 "gl" = (
 /obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/door/poddoor/preopen{
-	id = engenering
+	id = "engenering"
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -3390,7 +3390,7 @@
 "gr" = (
 /obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/door/poddoor/preopen{
-	id = down1
+	id = "down"
 	},
 /turf/open/floor/plating,
 /area/ship/medical)
@@ -3799,7 +3799,7 @@
 /obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/door/poddoor/preopen{
 	dir = 4;
-	id = Комнатаотдыха
+	id = "room"
 	},
 /turf/open/floor/plating,
 /area/ship/crew/canteen)
@@ -3937,7 +3937,7 @@
 "Th" = (
 /obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/door/poddoor/preopen{
-	id = Комнатаотдыха
+	id = "room"
 	},
 /turf/open/floor/plating,
 /area/ship/crew/canteen)

@@ -1,24 +1,24 @@
-/datum/mission/outpost/acquire/New(...)
-	var/rand_val = 0
-	switch(type_mission)
-		if("extraction_plasma")
-			desc = "[pick("Factions", "Corporations", "Federations")] require large 	amounts of plasma sheets for [pick("base", "station", "ships")]. You are 	tasked with extracting them in large quantities in a short period of time."
-			num_wanted = rand(num_wanted - 200, num_wanted + 200)
-			value = (num_wanted * (value / 10))
-		if("capture_creature")
-			rand_val = rand(1, 10)
-			value = (rand_val * (value / 10) + 1000)
-		if("mission")
-			num_wanted = rand(num_wanted, num_wanted + 2)
-			value = (num_wanted * (value / 10) + 500)
-	return ..()
+// /datum/mission/outpost/acquire/New(...)
+// 	var/rand_val = 0
+// 	switch(type_mission)
+// 		if("extraction_plasma")
+// 			desc = "[pick("Factions", "Corporations", "Federations")] require large 	amounts of plasma sheets for [pick("base", "station", "ships")]. You are 	tasked with extracting them in large quantities in a short period of time."
+// 			num_wanted = rand(num_wanted - 200, num_wanted + 200)
+// 			value = (num_wanted * (value / 10))
+// 		if("capture_creature")
+// 			rand_val = rand(1, 10)
+// 			value = (rand_val * (value / 10) + 1000)
+// 		if("mission")
+// 			num_wanted = rand(num_wanted, num_wanted + 2)
+// 			value = (num_wanted * (value / 10) + 500)
+// 	return ..()
 
 /*
 /// MARK: 	The Creature
 */
 
 /datum/mission/outpost/acquire/creature
-	type_mission = "capture_creature"
+	// type_mission = "capture_creature"
 	value = 2000
 
 /datum/mission/outpost/acquire/creature/ice_whelp
@@ -26,8 +26,6 @@
 	desc = "I require a live ice whelp for research purposes. Trap one within the given \
 			Lifeform Containment Unit and return it to me and you will be paid handsomely."
 	value = 2700
-	weight = 2
-	objective_type = /mob/living/simple_animal/hostile/asteroid/ice_whelp
 
 /datum/mission/outpost/acquire/creature/migo
 	value = 1000
@@ -54,9 +52,12 @@
 /*
 /// MARK: Plasma
 */
+/datum/mission/outpost/acquire/extraction/New(...)
+	desc = "[pick("Factions","Corporations","Federations")] require large amounts of plasma sheets \
+	for [pick("base","station","ships")]. You are tasked with extracting them in large quantities in a short period of time."
 
 /datum/mission/outpost/acquire/extraction_plasma
-	type_mission = "extraction_plasma"
+	// type_mission = "extraction_plasma"
 	name = "Plasma required"
 	duration = 70 MINUTES
 	value = 600

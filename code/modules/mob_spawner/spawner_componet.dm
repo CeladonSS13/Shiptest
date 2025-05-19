@@ -110,5 +110,8 @@
 		L.nest = src
 		L.faction = src.faction
 		P.visible_message(span_danger("[L] [pick(spawn_text)] [P]."))
+		// [CELADON-ADD] - DELETION_TIMER_TO_SPAWNED_MOBS
+		L.AddComponent(/datum/component/fancy_deleting_timer, 300, 0, "gib",)
+		// [/CELADON-ADD]
 		if(length(spawn_sound))
 			playsound(P, pick(spawn_sound), 50, TRUE)

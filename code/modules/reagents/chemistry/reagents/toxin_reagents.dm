@@ -259,6 +259,13 @@
 	toxpwr = 0
 	taste_description = "sourness"
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_QUIRKS
+/datum/reagent/toxin/mindbreaker/on_mob_life(mob/living/carbon/M)
+	if(!M.has_quirk(/datum/quirk/insanity))
+		M.hallucination += 5
+	return ..()
+// [/CELADON-ADD]
+
 /datum/reagent/toxin/plantbgone
 	name = "Plant-B-Gone"
 	description = "A harmful toxic mixture to kill plantlife. Do not ingest!"

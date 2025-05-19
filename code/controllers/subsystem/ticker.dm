@@ -18,6 +18,7 @@ SUBSYSTEM_DEF(ticker)
 	var/datum/game_mode/mode = null
 
 	var/login_music							//music played in pregame lobby
+	var/login_music_name					//music played in pregame lobby
 	var/round_end_sound						//music/jingle played when the world reboots
 	var/round_end_sound_sent = TRUE			//If all clients have loaded it
 
@@ -98,6 +99,7 @@ SUBSYSTEM_DEF(ticker)
 				if(L[1] == "exclude")
 					continue
 				music += S
+				login_music_name = S
 
 	var/old_login_music = trim(file2text("data/last_round_lobby_music.txt"))
 	if(music.len > 1)
@@ -281,21 +283,23 @@ SUBSYSTEM_DEF(ticker)
 	round_start_time = world.time
 	round_start_timeofday = world.timeofday
 	SSdbcore.SetRoundStart()
-
 	to_chat(world, span_notice("<B>Welcome to [station_name()], enjoy your stay!</B>"))
 	SSredbot.send_discord_message("ooc", "**A new round has begun.**")
 //[CELADON-EDIT]- MUSIC_CELADON
 //	SEND_SOUND(world, sound('sound/roundstart/addiguana.ogg'))//CELADON-EDIT-ORIGINAL
+	if(login_music_name)
+		var/count_name = length(SSticker.login_music_name)
+		to_chat(world, span_redteamradio("<B>Playing lobby music: [copytext(SSticker.login_music_name, 1, count_name-3)].</B>"))
 	SEND_SOUND(world, sound('mod_celadon/_storge_sounds/sound/lobby/sztart.ogg'))
 //[/CELADON-EDIT]
 
 	current_state = GAME_STATE_PLAYING
 	Master.SetRunLevel(RUNLEVEL_GAME)
 
-	if(SSevents.holidays)
+	if(GLOB.holidays)
 		to_chat(world, span_notice("and..."))
-		for(var/holidayname in SSevents.holidays)
-			var/datum/holiday/holiday = SSevents.holidays[holidayname]
+		for(var/holidayname in GLOB.holidays)
+			var/datum/holiday/holiday = GLOB.holidays[holidayname]
 			to_chat(world, "<h4>[holiday.greet()]</h4>")
 
 	PostSetup()

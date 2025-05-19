@@ -4,10 +4,7 @@
 /datum/emote/living/carbon/human/cry
 	key = "cry"
 	key_third_person = "cries"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "cries." // CELADON-EDIT - ORIGINAL
-	message = "плачет."
-	// [/CELADON-EDIT]
+	message = "cries."
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/carbon/human/dap
@@ -19,59 +16,39 @@
 
 /datum/emote/living/carbon/human/eyebrow
 	key = "eyebrow"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "raises an eyebrow." // CELADON-EDIT - ORIGINAL
-	message = "приподнимает бровь."
-	// [/CELADON-EDIT]
+	message = "raises an eyebrow."
 
 /datum/emote/living/carbon/human/grumble
 	key = "grumble"
 	key_third_person = "grumbles"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "grumbles!" // CELADON-EDIT - ORIGINAL
-	message = "ворчит!"
-	// [/CELADON-EDIT]
+	message = "grumbles!"
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/carbon/human/handshake
 	key = "handshake"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "shakes their own hands."
-	// message_param = "shakes hands with %t." // CELADON-EDIT - ORIGINAL
-	message = "пожимает руку."
-	message_param = "пожимает руку %t."
-	// [/CELADON-EDIT]
+	message = "shakes their own hands."
+	message_param = "shakes hands with %t."
 	hands_use_check = TRUE
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/carbon/human/hug
 	key = "hug"
 	key_third_person = "hugs"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "hugs themself." // CELADON-EDIT - ORIGINAL
-	// message_param = "hugs %t." // CELADON-EDIT - ORIGINAL
-	message = "обнимает себя."
-	message_param = "обнимает %t."
-	// [/CELADON-EDIT]
+	message = "hugs themself."
+	message_param = "hugs %t."
 	hands_use_check = TRUE
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/carbon/human/mumble
 	key = "mumble"
 	key_third_person = "mumbles"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "mumbles!" // CELADON-EDIT - ORIGINAL
-	message = "бормочет!"
-	// [/CELADON-EDIT]
+	message = "mumbles!"
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/carbon/human/scream
 	key = "scream"
 	key_third_person = "screams"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "screams!" // CELADON-EDIT - ORIGINAL
-	message = "кричит!"
-	// [/CELADON-EDIT]
+	message = "screams!"
 	emote_type = EMOTE_AUDIBLE
 	vary = TRUE
 
@@ -99,10 +76,7 @@
 // /datum/emote/living/carbon/human/hiss //lizard
 // 	key = "hiss"
 // 	key_third_person = "hisses"
-// 	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-// 	// message = "hisses!" // CELADON-EDIT - ORIGINAL
-// 	message = "шипит!"
-// 	// [/CELADON-EDIT]
+// 	message = "hisses!"
 // 	emote_type = EMOTE_AUDIBLE
 // 	vary = TRUE
 
@@ -154,56 +128,30 @@
 
 /datum/emote/living/carbon/human/pale
 	key = "pale"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "goes pale for a second." // CELADON-EDIT - ORIGINAL
-	message = "бледнеет."
-	// [/CELADON-EDIT]
+	message = "goes pale for a second."
 
 /datum/emote/living/carbon/human/raise
 	key = "raise"
 	key_third_person = "raises"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "raises a hand." // CELADON-EDIT - ORIGINAL
-	message = "поднимает руку."
-	// [/CELADON-EDIT]
+	message = "raises a hand."
 	hands_use_check = TRUE
 
 /datum/emote/living/carbon/human/salute
 	key = "salute"
 	key_third_person = "salutes"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "salutes." // CELADON-EDIT - ORIGINAL
-	// message_param = "salutes to %t." // CELADON-EDIT - ORIGINAL
-	message = "салютует."
-	message_param = "салютует %t."
-	var/list/serious_shoes = list(
-								/obj/item/clothing/shoes/jackboots,
-								/obj/item/clothing/shoes/combat,
-								/obj/item/clothing/shoes/laceup)
-								// /obj/item/clothing/shoes/centcom,
-	var/list/funny_shoes = list(
-								/obj/item/clothing/shoes/magboots/clown,
-								/obj/item/clothing/shoes/clown_shoes)
-								// /obj/item/clothing/shoes/cursedclown,
-								// /obj/item/clothing/shoes/ducky)
-	// [/CELADON-EDIT]
+	message = "salutes."
+	message_param = "salutes to %t."
 	hands_use_check = TRUE
 
 /datum/emote/living/carbon/human/shrug
 	key = "shrug"
 	key_third_person = "shrugs"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "shrugs." // CELADON-EDIT - ORIGINAL
-	message = "пожимает плечами."
-	// [/CELADON-EDIT]
+	message = "shrugs."
 
 /datum/emote/living/carbon/human/wag
 	key = "wag"
 	key_third_person = "wags"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "wags their tail." // CELADON-EDIT - ORIGINAL
-	message = "начинает махать хвостом."
-	// [/CELADON-EDIT]
+	message = "wags their tail."
 
 // [CELADON-ADD] - CELADON_EMOTES
 /datum/emote/living/carbon/human/proc/can_wag(mob/user)
@@ -422,19 +370,13 @@
 /datum/emote/living/carbon/human/kepiwhistle
 	key = "whistle"
 	key_third_person = "whistles"
-	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-	// message = "whistles!"	// CELADON-EDIT - ORIGINAL
-	message = "свистит!"
-	// [/CELADON-EDIT]
+	message = "whistles!"
 	emote_type = EMOTE_AUDIBLE
 	vary = TRUE
 
 /datum/emote/living/carbon/human/kepiwhistle/get_sound(mob/living/user)
 	if(!ishuman(user))
-		// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
-		// return	// CELADON-EDIT - ORIGINAL
-		return 'mod_celadon/_storge_sounds/sound/emotes/whistle.ogg'
-		// [/CELADON-EDIT]
+		return
 	if(iskepori(user))
 		return 'sound/voice/kepori/kepiwhistle.ogg' //https://freesound.org/people/Andreas.Mustola/sounds/338277/
 

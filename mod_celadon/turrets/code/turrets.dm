@@ -174,8 +174,8 @@
 	max_integrity = 150 //сепарские турели очевидно не особо крепкие
 
 /obj/machinery/porta_turret/ship/elysium/light
-	name = "Scrapped 10mm Light Turret"
-	desc = "A light Separatist's Ahisai'i turret. Shoots 10mm projectiles at a close range."
+	name = "Scrapped 10x22mm Light Turret"
+	desc = "A light Separatist's Ahisai'i turret. Shoots 10x22mm projectiles at a close range."
 	stun_projectile = /obj/projectile/bullet/c10mm/rubber
 	stun_projectile_sound = 'sound/weapons/gun/smg/vector_fire.ogg'
 	lethal_projectile = /obj/projectile/bullet/c10mm

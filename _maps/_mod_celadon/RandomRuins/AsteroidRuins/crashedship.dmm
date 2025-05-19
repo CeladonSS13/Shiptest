@@ -22,11 +22,6 @@
 /area/ruin/space/has_grav/astraeus/custodial{
 	name = "Midship Block"
 	})
-"ae" = (
-/turf/closed/wall/mineral/titanium/overspace,
-/area/ruin/space/has_grav/astraeus/dorms_med{
-	name = "Aft Block"
-	})
 "af" = (
 /obj/effect/turf_decal/corner/transparent/bar,
 /obj/effect/turf_decal/corner/transparent/bar{
@@ -213,11 +208,6 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/astraeus/dorms_med{
 	name = "Aft Block"
-	})
-"aI" = (
-/turf/closed/wall/mineral/titanium/overspace,
-/area/ruin/space/has_grav/astraeus/bridge{
-	name = "Fore Block"
 	})
 "aL" = (
 /obj/structure/cable{
@@ -2032,16 +2022,6 @@
 /area/ruin/space/has_grav/astraeus/custodial{
 	name = "Midship Block"
 	})
-"ff" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/turf/open/floor/plasteel{
-	icon_state = "panelscorched"
-	},
-/area/ruin/space/has_grav/astraeus/custodial{
-	name = "Midship Block"
-	})
 "fg" = (
 /obj/structure/kitchenspike,
 /obj/effect/turf_decal/corner/transparent/bar,
@@ -2380,20 +2360,6 @@
 /area/ruin/space/has_grav/astraeus/bridge{
 	name = "Fore Block"
 	})
-"fW" = (
-/turf/open/floor/plasteel{
-	icon_state = "platingdmg3"
-	},
-/area/ruin/space/has_grav/astraeus/custodial{
-	name = "Midship Block"
-	})
-"fX" = (
-/turf/open/floor/plasteel{
-	icon_state = "platingdmg1"
-	},
-/area/ruin/space/has_grav/astraeus/custodial{
-	name = "Midship Block"
-	})
 "fY" = (
 /obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/door/airlock/titanium,
@@ -2605,8 +2571,8 @@
 	})
 "gJ" = (
 /obj/effect/gibspawner/robot,
-/turf/open/floor/plasteel/airless{
-	icon_state = "floorscorched2"
+/turf/open/floor/plating/airless{
+	icon_state = "platingdmg3"
 	},
 /area/ruin/space/has_grav/astraeus/bridge{
 	name = "Fore Block"
@@ -3688,14 +3654,14 @@ aa
 aa
 aa
 aa
-aI
+hE
 ee
 dG
 ed
 ed
 eH
 ee
-aI
+hE
 aa
 aa
 aa
@@ -3738,7 +3704,7 @@ aa
 aa
 aa
 aa
-aI
+hE
 hE
 bV
 cY
@@ -3747,7 +3713,7 @@ Xc
 cY
 bV
 ee
-aI
+hE
 aa
 aa
 gc
@@ -3788,7 +3754,7 @@ aa
 aa
 aa
 aa
-aI
+hE
 hE
 bV
 bV
@@ -3838,7 +3804,7 @@ aa
 aa
 aa
 aa
-aI
+hE
 hE
 bV
 bV
@@ -4445,7 +4411,7 @@ aa
 aa
 aa
 aa
-aI
+hE
 aY
 bq
 ee
@@ -4511,10 +4477,10 @@ ei
 ei
 eJ
 ei
-ff
+ei
 dB
 ce
-fW
+ej
 aT
 gb
 gb
@@ -4616,7 +4582,7 @@ dz
 dz
 fA
 ej
-fX
+gt
 ge
 gb
 gb
@@ -4667,7 +4633,7 @@ ce
 fg
 ce
 ce
-fW
+hg
 fm
 Mx
 gb
@@ -5714,7 +5680,7 @@ aa
 aa
 aa
 aa
-ae
+dk
 ht
 al
 al
@@ -5749,7 +5715,7 @@ fY
 al
 hs
 ht
-ae
+dk
 aa
 aa
 aa
@@ -5766,7 +5732,7 @@ aa
 aa
 aa
 aa
-ae
+dk
 ht
 al
 ac
@@ -5799,7 +5765,7 @@ cE
 ht
 hr
 ht
-ae
+dk
 aa
 aa
 aa
@@ -5818,7 +5784,7 @@ aa
 aa
 aa
 aa
-ae
+dk
 ht
 ht
 aG
@@ -5849,7 +5815,7 @@ gN
 cE
 ht
 ac
-ae
+dk
 aa
 aa
 aa
@@ -5870,7 +5836,7 @@ aa
 aa
 aa
 aa
-ae
+dk
 ht
 aG
 al
@@ -5899,7 +5865,7 @@ cE
 cE
 cE
 ht
-ae
+dk
 aa
 aa
 aa
@@ -6024,7 +5990,7 @@ aa
 aa
 aa
 aa
-ae
+dk
 ht
 aP
 aP
@@ -6051,7 +6017,7 @@ gP
 ht
 Ae
 ht
-ae
+dk
 aa
 aa
 aa
@@ -6076,7 +6042,7 @@ aa
 aa
 aa
 aa
-ae
+dk
 ht
 ht
 ht
@@ -6101,7 +6067,7 @@ ht
 ht
 ht
 ht
-ae
+dk
 aa
 aa
 aa
@@ -6133,7 +6099,7 @@ aa
 aa
 aa
 aa
-ae
+dk
 ac
 cW
 do
@@ -6146,7 +6112,7 @@ al
 al
 fG
 ht
-ae
+dk
 aa
 aa
 aa
@@ -6287,7 +6253,7 @@ aa
 aa
 aa
 aa
-ae
+dk
 ht
 dq
 ED
@@ -6298,7 +6264,7 @@ eS
 ZB
 fs
 ht
-ae
+dk
 aa
 aa
 aa

@@ -258,6 +258,7 @@
 	podType = /obj/structure/closet/supplypod/centcompod
 
 	flags_1 = NODECONSTRUCT_1
+	tgui_shared_states = list(outpostTab = "\"cargo\"")
 
 /obj/machinery/computer/cargo/faction/Initialize()
 	. = ..()

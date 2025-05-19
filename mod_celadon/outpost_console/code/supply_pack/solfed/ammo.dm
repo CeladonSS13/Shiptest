@@ -1,33 +1,49 @@
 /datum/supply_pack/faction/solfed/ammo
 	group = "Ammunition"
 
-/* 9mm */
+/* MARK: = Ammo List =
+[*] - отсутствуют.
+[-] - отключены.
+
+> 9x18mm
+> 5.56 Caseless
+> 5.56x42mm
+> 7.62x40mm
+> Ferroslugs
+> Ferro Pellets
+> Ferro Lances
+> 8x58mm Caseless
+
+MARK: 9x18mm
+*/
 
 /datum/supply_pack/faction/solfed/ammo/c9mm_ammo_box
-	name = "9mm Ammo Box Crate"
-	desc = "9mm ammo box for guns like the Vector. Contains 45 shells"
+	name = "9x18mm Ammo Box Crate"
+	desc = "9x18mm ammo box for guns like the Vector. Contains 45 shells"
 	contains = list(/obj/item/storage/box/ammo/c9mm)
 	cost = 200
 
 /datum/supply_pack/faction/solfed/ammo/c9mmap_ammo_box
-	name = "9mm AP Ammo Box Crate"
-	desc = "Contains a 45-round 9mm box loaded with armor piercing ammo."
+	name = "9x18mm AP Ammo Box Crate"
+	desc = "Contains a 45-round 9x18mm box loaded with armor piercing ammo."
 	contains = list(/obj/item/storage/box/ammo/c9mm_ap)
 	cost = 250
 
 /datum/supply_pack/faction/solfed/ammo/c9mmhp_ammo_box
-	name = "9mm HP Ammo Box Crate"
-	desc = "Contains a 45-round 9mm box loaded with hollow point ammo, great against unarmored targets."
+	name = "9x18mm HP Ammo Box Crate"
+	desc = "Contains a 45-round 9x18mm box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c9mm_hp)
 	cost = 250
 
 /datum/supply_pack/faction/solfed/ammo/c9mmrubber_ammo_box
-	name = "9mm Rubber Ammo Box Crate"
-	desc = "Contains a 45-round 9mm box loaded with less-than-lethal rubber rounds."
+	name = "9x18mm Rubber Ammo Box Crate"
+	desc = "Contains a 45-round 9x18mm box loaded with less-than-lethal rubber rounds."
 	contains = list(/obj/item/storage/box/ammo/c9mm_rubber)
 	cost = 200
 
-/* 5.56 caseless */
+/*
+MARK: 5.56 Caseless
+*/
 
 /datum/supply_pack/faction/solfed/ammo/c556mmHITP_ammo_box
 	name = "5.56 HITP Caseless Ammo Box Crate"
@@ -53,7 +69,9 @@
 	contains = list(/obj/item/storage/box/ammo/c556mm_rubber)
 	cost = 165
 
-/* 5.56x42mm */
+/*
+MARK: 5.56x42mm
+*/
 
 /datum/supply_pack/faction/solfed/ammo/a556_ammo_box
 	name = "5.56x42mm Ammo Box Crate"
@@ -73,7 +91,19 @@
 	contains = list(/obj/item/storage/box/ammo/a556_42/hp)
 	cost = 375
 
-/* ferroslugs */
+/*
+MARK: 7.62x40mm
+*/
+
+/datum/supply_pack/faction/solfed/ammo/a762_40_rubber
+	name = "box of 7.62x40mm rubber ammo"
+	desc = "A box of standard 7.62x40mm rubber ammo."
+	contains = list(/obj/item/storage/box/ammo/a762_40/rubber)
+	cost = 7777
+
+/*
+MARK: Ferroslugs
+*/
 
 /datum/supply_pack/faction/solfed/ammo/ferroslugboxcrate
 	name = "Ferromagnetic Slug Box Crate"
@@ -87,7 +117,9 @@
 	contains = list(/obj/item/storage/box/ammo/ferroslug/hc)
 	cost = 215
 
-/* ferro pellets */
+/*
+MARK: Ferro Pellets
+*/
 
 /datum/supply_pack/faction/solfed/ammo/ferropelletboxcrate
 	name = "Ferromagnetic Pellet Box Crate"
@@ -101,7 +133,9 @@
 	contains = list(/obj/item/storage/box/ammo/ferropellet/hc)
 	cost = 260
 
-/* ferro lances */
+/*
+MARK: Ferro Lances
+*/
 
 /datum/supply_pack/faction/solfed/ammo/ferrolanceboxcrate
 	name = "Ferromagnetic Lance Box Crate"
@@ -115,7 +149,9 @@
 	contains = list(/obj/item/storage/box/ammo/ferrolance/hc)
 	cost = 360
 
-/* 8x58mm Caseless */
+/*
+MARK: 8x58mm Caseless
+*/
 
 /datum/supply_pack/faction/solfed/ammo/a858
 	name = "8x58mm Ammo Box Crate"

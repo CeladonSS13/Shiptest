@@ -2318,9 +2318,6 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
 /obj/effect/turf_decal/corner/opaque/ntblue/bordercorner{
 	dir = 1
 	},
@@ -3363,9 +3360,7 @@
 /obj/item/radio/headset/nanotrasen/alt,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/gps,
-/obj/item/gun/energy/e_gun{
-	cell_type = /obj/item/stock_parts/cell/gun/upgraded
-	},
+/obj/item/storage/guncase/energy/egun,
 /obj/effect/turf_decal/corner/opaque/ntblue/border,
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -3811,9 +3806,7 @@
 	name = "medical operative's locker";
 	anchored = 1
 	},
-/obj/item/gun/energy/e_gun{
-	cell_type = /obj/item/stock_parts/cell/gun/upgraded
-	},
+/obj/item/storage/guncase/energy/egun,
 /obj/item/melee/knife/combat,
 /obj/item/defibrillator/compact/combat/loaded/nanotrasen,
 /obj/item/storage/backpack/ert/medical,

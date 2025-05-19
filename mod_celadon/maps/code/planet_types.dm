@@ -119,3 +119,18 @@
 	weight = 2
 	ruin_type = RUINTYPE_ANIMA
 
+//Меняем цвета планет на овермапе
+/datum/planet_type/water
+	color = null
+
+/datum/planet_type/desert
+	color = null
+
+/datum/planet_type/shrouded
+	color = null
+
+/datum/planet_type/moon
+	color = null
+
+/datum/planet_type/battlefield
+	color = null

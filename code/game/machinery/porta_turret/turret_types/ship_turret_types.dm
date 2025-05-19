@@ -81,7 +81,7 @@
 	stun_projectile_sound = 'sound/weapons/gun/smg/sidewinder.ogg'
 	lethal_projectile = /obj/projectile/bullet/c57x39mm
 	lethal_projectile_sound = 'sound/weapons/gun/smg/sidewinder.ogg'
-	faction = list(FACTION_NGR, "turret")
+	faction = list(FACTION_NGR, FACTION_PLAYER_SYNDICATE, "turret")
 	shot_delay = 20
 	burst_delay = 3
 	burst_size = 3
@@ -119,7 +119,7 @@
 	stun_projectile_sound = 'sound/weapons/gun/smg/sidewinder.ogg'
 	lethal_projectile = /obj/projectile/bullet/c57x39mm
 	lethal_projectile_sound = 'sound/weapons/gun/smg/sidewinder.ogg'
-	faction = list(FACTION_HARDLINERS, "turret")
+	faction = list(FACTION_HARDLINERS, FACTION_PLAYER_SYNDICATE, "turret")
 	shot_delay = 25
 	burst_delay = 5
 	burst_size = 4
@@ -195,9 +195,9 @@
 /obj/machinery/porta_turret/ship/ramzi/super_heavy
 	name = "Rebellion Turret"
 	desc = "A durable anti-vehicle turret system manufactured by the Gorlex Marauders during the ICW. Most users are unable to get more parts for the turret, leading to a slow reduction in the amount of redundant, working parts."
-	stun_projectile = /obj/item/ammo_casing/p50/soporific
+	stun_projectile = /obj/projectile/bullet/p50/soporific
 	stun_projectile_sound = 'sound/weapons/gun/sniper/shot.ogg'
-	lethal_projectile = /obj/item/ammo_casing/p50
+	lethal_projectile = /obj/projectile/bullet/p50
 	lethal_projectile_sound = 'sound/weapons/gun/sniper/shot.ogg'
 	scan_range = 14
 	shot_delay = 30

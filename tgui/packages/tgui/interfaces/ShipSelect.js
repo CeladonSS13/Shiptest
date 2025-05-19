@@ -301,10 +301,7 @@ export const ShipSelect = (props, context) => {
                   <LabeledList.Item label="Map Link">
                     <a /* Добавляем внешнюю ссылку для детального осмотра корабля */
                       href={
-                        'https://map.celadon.pro/Shiptest/' +
-                        template.faction +
-                        '/' +
-                        template.shortName
+                        'https://map.celadon.pro/Shiptest/' + template.shortName
                       }
                       target="_blank"
                       rel="noreferrer"

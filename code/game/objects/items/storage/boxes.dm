@@ -1463,6 +1463,7 @@
 /obj/item/storage/box/debugtools/PopulateContents()
 	var/static/items_inside = list(
 		// [CELADON-ADD] - CELADON_COMPONENTS
+		/obj/item/shovel = 1,\
 		/obj/item/stamp/chameleon = 1,\
 		/obj/item/gun/medbeam = 1,\
 		// [/CELADON-ADD]

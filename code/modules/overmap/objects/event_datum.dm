@@ -89,19 +89,32 @@
 	interference_power = 15
 
 	empty_space_mapgen = /datum/map_generator/planet_generator/asteroid
-
-	var/safe_speed = 3
-	var/list/meteor_types = list(
+	// [CELADON-EDIT] - CELADON_FIXES
+	// var/safe_speed = 3
+	// var/list/meteor_types = list(
+	// 	/obj/effect/meteor/dust=3,
+	// 	/obj/effect/meteor/medium=8,
+	// 	/obj/effect/meteor/big=1,
+	// 	/obj/effect/meteor/irradiated=3
+	// )
+	// var/primary_ores = list(
+	// 	/obj/item/stack/ore/plasma,
+	// 	/obj/item/stack/ore/hematite,
+	// 	/obj/item/stack/ore/malachite,
+	// 	)	// ORIGINAL
+	safe_speed = 3
+	meteor_types = list(
 		/obj/effect/meteor/dust=3,
 		/obj/effect/meteor/medium=8,
 		/obj/effect/meteor/big=1,
 		/obj/effect/meteor/irradiated=3
 	)
-	var/primary_ores = list(\
+	primary_ores = list(\
 		/obj/item/stack/ore/plasma,
 		/obj/item/stack/ore/hematite,
 		/obj/item/stack/ore/malachite,
 		)
+	// [/CELADON-EDIT]
 
 /datum/overmap/event/meteor/alter_token_appearance()
 	icon_suffix = "[rand(1, 4)]"
@@ -599,9 +612,9 @@ GLOBAL_LIST_INIT(overmap_event_pick_list, list(
 	/datum/overmap/event/carp = 35,
 	/datum/overmap/event/carp/major = 20,
 	/datum/overmap/event/dust = 50,
-	/datum/overmap/event/rad/minor = 20,
-	/datum/overmap/event/rad = 20,
-	/datum/overmap/event/rad/major = 20,
+	// /datum/overmap/event/rad/minor = 20,	// Отключено по причине плохой реализации
+	// /datum/overmap/event/rad = 20,
+	// /datum/overmap/event/rad/major = 20,
 	// [/CELADON-EDIT]
 	/datum/overmap/event/anomaly = 10
 ))
@@ -634,7 +647,6 @@ GLOBAL_LIST_INIT(overmap_event_pick_list, list(
 		if(ship.shuttle_port.is_in_shuttle_bounds(affected_mob))
 			affected_mob.rad_act(strength)
 			to_chat(affected_mob, span_notice("You taste metal."))
-
 
 /datum/overmap/event/rad/modify_emptyspace_mapgen(datum/overmap/dynamic/our_planet)
 	our_planet.weather_controller_type = /datum/weather_controller/fallout

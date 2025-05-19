@@ -134,7 +134,7 @@
 		M.IgniteMob()
 	if(!isopenturf(targets_turf))
 		return
-	targets_turf.IgniteTurf(rand(4,11), "red")
+	targets_turf.ignite_turf(rand(4,11), "red")
 
 /obj/item/ammo_casing/energy/laser/burn_plasmalaser
 	projectile_type = /obj/projectile/temp/hot/burn_plasmalaser

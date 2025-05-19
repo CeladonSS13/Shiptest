@@ -29,10 +29,7 @@
 	if(heat_creation)
 		heat_engine()
 	var/to_use = fuel_use * (percentage / 100) * seconds_per_tick
-	// [CELADON-EDIT] - CELADON_FIXES
-	// return resolved_heater.consume_fuel(to_use, fuel_type) / to_use * percentage / 100 * thrust //This proc returns how much was actually burned, so let's use that and multiply it by the thrust to get all the thrust we CAN give.	 // CELADON-EDIT - ORIGINAL
-	return resolved_heater.consume_fuel(to_use, fuel_type)
-	// [/CELADON-EDIT]
+	return resolved_heater.consume_fuel(to_use, fuel_type) * thrust / fuel_use //This proc returns how much was actually burned, so let's use that and multiply it by the thrust to get all the thrust we CAN give.
 
 /obj/machinery/power/shuttle/engine/fueled/return_fuel()
 	. = ..()
@@ -144,7 +141,7 @@
 	///what portion of the mols in the attached heater to "burn"
 	var/fuel_consumption = 0.0125
 	//multiplier for thrust
-	thrust = 3
+	thrust = 8
 	//used by stockparts, efficiency_multiplier
 	var/consumption_multiplier = 1
 	//If this engine should create heat when burned.
@@ -289,7 +286,7 @@
 
 /obj/machinery/power/shuttle/engine/electric/burn_engine(percentage = 100, seconds_per_tick)
 	. = ..()
-	var/true_percentage = min(newavail() / power_per_burn, percentage / 100)
+	var/true_percentage = min(newavail() / (power_per_burn * seconds_per_tick), percentage / 100) * seconds_per_tick
 	add_delayedload(power_per_burn * true_percentage)
 	return thrust * true_percentage
 
@@ -329,11 +326,11 @@
 	for(var/reagent in fuel_reagents)
 		reagent_amount_holder += fuel_reagents[reagent]
 
-/obj/machinery/power/shuttle/engine/liquid/burn_engine(percentage = 100)
+/obj/machinery/power/shuttle/engine/liquid/burn_engine(percentage = 100, seconds_per_tick)
 	. = ..()
-	var/true_percentage = 1
+	var/true_percentage = seconds_per_tick * percentage / 100
 	for(var/reagent in fuel_reagents)
-		true_percentage *= reagents.remove_reagent(reagent, fuel_reagents[reagent]) / fuel_reagents[reagent]
+		true_percentage *= reagents.remove_reagent(reagent, fuel_reagents[reagent] * true_percentage) / (fuel_reagents[reagent] * true_percentage)
 	return thrust * true_percentage
 
 /obj/machinery/power/shuttle/engine/liquid/return_fuel()

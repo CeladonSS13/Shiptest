@@ -330,7 +330,7 @@
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "df" = (
 /obj/effect/decal/cleanable/glass,
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -673,7 +673,7 @@
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "fB" = (
 /obj/effect/turf_decal/siding/wood,
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -737,7 +737,7 @@
 /turf/open/floor/carpet/black,
 /area/ruin/beach/oceantown/bar)
 "fZ" = (
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -1073,7 +1073,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/beach/oceantown/shop)
 "iY" = (
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -1328,18 +1328,10 @@
 	},
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "kL" = (
-/obj/effect/spawner/structure/window,
-/obj/effect/spawner/structure/window,
-/obj/effect/spawner/structure/window{
-	obj_integrity = 67
-	},
-/obj/effect/spawner/structure/window{
-	obj_integrity = 67
-	},
+/obj/effect/decal/cleanable/blood/splatter/over_window,
 /obj/effect/spawner/structure/window{
 	obj_integrity = 124
 	},
-/obj/effect/decal/cleanable/blood/splatter/over_window,
 /turf/open/floor/wood,
 /area/ruin/beach/oceantown)
 "kN" = (
@@ -1395,7 +1387,7 @@
 /turf/open/floor/plating/grass/jungle,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "ls" = (
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -1670,7 +1662,7 @@
 	dir = 8;
 	icon_state = "plating"
 	},
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -1996,7 +1988,7 @@
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "qF" = (
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen")
 	},
 /turf/open/floor/plating/asteroid/sand/lit,
@@ -2186,7 +2178,7 @@
 "sd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/gibs/old,
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -2229,7 +2221,7 @@
 /obj/machinery/shower{
 	dir = 1
 	},
-/mob/living/simple_animal/hostile/bear/cave,
+/mob/living/basic/bear/cave,
 /turf/open/floor/plasteel/mono,
 /area/ruin/beach/oceantown)
 "sr" = (
@@ -3786,7 +3778,7 @@
 /turf/open/floor/plating/grass/beach/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "Fv" = (
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen")
 	},
 /turf/open/floor/plating/dirt{
@@ -4442,7 +4434,7 @@
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "Km" = (
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -4622,7 +4614,7 @@
 /obj/effect/turf_decal/siding/blue/corner{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -5328,7 +5320,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -5550,7 +5542,7 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/ruin/beach/oceantown/shop)
 "ST" = (
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -5883,7 +5875,7 @@
 /area/ruin/beach/oceantown)
 "VW" = (
 /obj/machinery/light/small/directional/west,
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -6091,7 +6083,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/beach/oceantown/shop)
 "XW" = (
-/mob/living/simple_animal/hostile/bear/cave,
+/mob/living/basic/bear/cave,
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "XY" = (

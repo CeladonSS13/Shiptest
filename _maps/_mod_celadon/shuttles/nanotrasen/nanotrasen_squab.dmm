@@ -441,6 +441,9 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/firecloset/wall/directional/south,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/hallway/port)
 "cp" = (
@@ -2412,6 +2415,30 @@
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
+"xE" = (
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 8
+	},
+/obj/effect/turf_decal/borderfloor{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/hallway/port)
 "xI" = (
 /obj/machinery/light/directional/west,
 /obj/structure/chair/plastic,
@@ -4820,7 +4847,7 @@ FD
 Xt
 Ye
 bY
-bY
+xE
 co
 UW
 xI

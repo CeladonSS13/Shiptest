@@ -29,7 +29,7 @@ NO_MAG_GUN_HELPER(automatic/pistol/usp45)
 
 /obj/item/gun/ballistic/automatic/pistol/glock
 	name = "\improper Glock 17"
-	desc = "A really old SolFed 9mm pistol. Still used by some solarian police forces. It is also popular as a civilian firearm."
+	desc = "A really old SolFed 9x18mm pistol. Still used by some solarian police forces. It is also popular as a civilian firearm."
 	icon = 'mod_celadon/_storge_icons/icons/guns/glock.dmi'
 	icon_state = "glock"
 	manufacturer = MANUFACTURER_SOLARARMORIES

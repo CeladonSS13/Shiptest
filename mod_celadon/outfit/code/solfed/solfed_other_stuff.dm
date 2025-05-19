@@ -220,6 +220,8 @@
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/head.dmi'
 	icon_state = "solfed_m11"
 	item_state = "solfed_m11"
+	can_flashlight = TRUE
+	content_overlays = TRUE
 
 /obj/item/clothing/head/helmet/solfed/m11/elysium
 	name = "Elysium Brigade M11 helmet"

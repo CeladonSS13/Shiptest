@@ -259,7 +259,7 @@
 				// new /obj/item/nullrod/staff(loc)	выпилено офами
 				new /mob/living/simple_animal/hostile/netherworld/migo(loc)
 			if(prob(30))
-				new /obj/item/clothing/suit/space/hardsuit/quixote/dimensional(loc)
+				// new /obj/item/clothing/suit/space/hardsuit/quixote/dimensional(loc)
 				new /mob/living/simple_animal/hostile/netherworld/migo(loc)
 			else
 				new /obj/item/immortality_talisman(loc)

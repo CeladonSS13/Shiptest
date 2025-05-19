@@ -203,6 +203,8 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		// [/CELADON-ADD]
 		/mob/living/simple_animal/hostile/asteroid/wolf = 30,
 		/mob/living/simple_animal/hostile/asteroid/polarbear = 30,
+		/mob/living/simple_animal/hostile/asteroid/wolf = 40,
+		/mob/living/basic/bear/polar = 40,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow/nest = 20,
 		/mob/living/simple_animal/hostile/asteroid/ice_demon = 5,
 		/mob/living/simple_animal/hostile/asteroid/ice_whelp = 1,
@@ -286,7 +288,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	// class 1 has easy mobs, the ones you find on the surface
 	mob_types = list(
 		/mob/living/simple_animal/hostile/asteroid/wolf/random = 50,
-		/mob/living/simple_animal/hostile/bear/cave = 30,
+		/mob/living/basic/bear/cave = 30,
 		/mob/living/simple_animal/hostile/poison/giant_spider = 5,
 		/mob/living/simple_animal/hostile/poison/giant_spider/tarantula = 1,
 	)
@@ -309,7 +311,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	//We then start to introduce the unused jungle mobs... slowly.
 	mob_types = list(
 		/mob/living/simple_animal/hostile/asteroid/wolf/random = 75,
-		/mob/living/simple_animal/hostile/bear/cave = 60,
+		/mob/living/basic/bear/cave = 60,
 		/mob/living/simple_animal/hostile/poison/giant_spider = 45,
 		/mob/living/simple_animal/hostile/poison/giant_spider/tarantula = 20,
 		/mob/living/simple_animal/hostile/jungle/seedling = 1,
@@ -776,10 +778,10 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		/obj/item/stack/ore/diamond = 1,
 		)
 
-	max_mobs = -1
+	max_mobs = 4
 	spawn_time = 5 SECONDS
 	///His greed was his downfall
-	var/greed_chance = 10
+	var/greed_chance = 20
 
 /obj/structure/vein/shrouded/Initialize()
 	. = ..()
@@ -810,7 +812,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 
 	spawn_time = 4 SECONDS
 
-	greed_chance = 20
+	greed_chance = 30
 
 /obj/structure/vein/shrouded/classthree
 	mining_charges = 12
@@ -835,7 +837,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		/obj/item/stack/ore/diamond = 5,
 		)
 
-	greed_chance = 25
+	greed_chance = 40
 	spawn_time = 3 SECONDS
 
 // Asteroid veins.
@@ -923,7 +925,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 
 /obj/structure/vein/waterplanet
 	mob_types = list(
-		/mob/living/simple_animal/hostile/bear/cave = 60,
+		/mob/living/basic/bear/cave = 60,
 		/mob/living/simple_animal/hostile/carp = 40,
 		/mob/living/simple_animal/hostile/asteroid/lobstrosity/beach = 20,
 		/mob/living/simple_animal/hostile/poison/giant_spider/tarantula = 10,
@@ -948,7 +950,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	vein_class = 2
 
 	mob_types = list(
-		/mob/living/simple_animal/hostile/bear/cave = 50,
+		/mob/living/basic/bear/cave = 50,
 		/mob/living/simple_animal/hostile/carp = 30,
 		/mob/living/simple_animal/hostile/asteroid/lobstrosity/beach = 30,
 		/mob/living/simple_animal/hostile/poison/giant_spider/tarantula = 15,
@@ -976,7 +978,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	vein_class = 3
 
 	mob_types = list(
-		/mob/living/simple_animal/hostile/bear/cave = 10,
+		/mob/living/basic/bear/cave = 10,
 		/mob/living/simple_animal/hostile/carp = 20,
 		/mob/living/simple_animal/hostile/asteroid/lobstrosity/beach = 10,
 		/mob/living/simple_animal/hostile/poison/giant_spider/tarantula = 40,

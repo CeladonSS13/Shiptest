@@ -592,6 +592,11 @@
 		if(!isnull(headslot.lighting_alpha))
 			lighting_alpha = min(lighting_alpha, headslot.lighting_alpha)
 
+	// [CELADON-ADD] - CELADON_RETURN_CONTENT_QUIRKS
+	if(HAS_TRAIT(src, TRAIT_NIGHT_VISION))
+		lighting_alpha = min(lighting_alpha, LIGHTING_PLANE_ALPHA_NV_TRAIT)
+	// [/CELADON-ADD]
+	
 	if(HAS_TRAIT(src, TRAIT_CHEMICAL_NIGHTVISION))
 		lighting_alpha = min(lighting_alpha, LIGHTING_PLANE_ALPHA_NV_DRUG)
 		see_in_dark = max(see_in_dark, 4)

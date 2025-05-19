@@ -38,7 +38,6 @@ ID мода: CELADON_COMPONENTS, CELADON_COMPONENTS_EMOTE
 
 ### Изменения *кор кода*
 
-- EDIT -> `code\modules\mob\living\carbon\human\emote.dm`
 - EDIT -> `code\modules\mob\living\carbon\emote.dm`
 - REMOVE -> `code\__HELPERS\names.dm`
 

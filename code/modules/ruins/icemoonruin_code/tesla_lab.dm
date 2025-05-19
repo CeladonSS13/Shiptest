@@ -2,7 +2,7 @@
 	. = ..()
 	storedinfo = list(
 		"\[00:00\] Recording started.",
-		"\[00:02\] [span_name("scared human woman")] whispers \"My n-name is Alyssa Salata- Ident 4070591. CLIP Minutemen-\"",
+		"\[00:02\] [span_name("scared human woman")] whispers \"My n-name is Alyssa Salata- Ident 4070591. SolFed Solider-\"",
 		"\[00:08\] [span_name("scared human woman")] whispers \"T-The base I was assigned to has come under attack from the Frontiersmen.\"",
 		"\[00:12\] [span_name("scared human woman")] whispers \"From- what I heard on the radio before it turned to screaming-.\"",
 		"\[00:15\] [span_name("scared human woman")] whispers \"They landed by pretending to be one of our supply shuttles - and when the bays were open...\"",
@@ -35,7 +35,7 @@
 	. = ..()
 	storedinfo = list(
 		"\[00:00\] Recording started.",
-		"\[00:03\] [span_name("scared human woman")] whispers \"My n-name is Alyssa Salata- Ident 4070591. CLIP Minutemen-\"",
+		"\[00:03\] [span_name("scared human woman")] whispers \"My n-name is Alyssa Salata- Ident 4070591. SolFed Solider-\"",
 		"\[00:06\] [span_name("scared human woman")] whispers \"Its been - 4 hours since my last log entry-.\"",
 		"\[00:10\] [span_name("scared human woman")] whispers \"The radio has been dead for 3. At least.\"",
 		"\[00:15\] [span_name("scared human woman")] whispers \"The last thing I heard was someone else holing up in - Lab one-\"",

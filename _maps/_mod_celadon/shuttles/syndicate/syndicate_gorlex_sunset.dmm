@@ -288,10 +288,9 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/security/armory)
 "eI" = (
-/obj/machinery/porta_turret/syndicate/exterior_7_62mm{
+/obj/machinery/porta_turret/ship/syndicate/ballistic{
 	dir = 5;
-	id = "sunset_turret";
-	faction = list("playerSyndicate","turret")
+	id = "sunset_turret"
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -403,10 +402,9 @@
 /turf/open/floor/marble/black,
 /area/ship/hallway/fore)
 "gt" = (
-/obj/machinery/porta_turret/syndicate/exterior_7_62mm{
+/obj/machinery/porta_turret/ship/syndicate/ballistic{
 	dir = 6;
-	id = "sunset_turret";
-	faction = list("playerSyndicate","turret")
+	id = "sunset_turret"
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -985,12 +983,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
 /obj/machinery/door/airlock/hatch{
 	dir = 8;
 	name = "Engineering"
@@ -1346,7 +1338,7 @@
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4{
 	dir = 1
 	},
-/turf/template_noop,
+/turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "xo" = (
 /turf/template_noop,
@@ -2029,9 +2021,10 @@
 	id = "sunsetexit2";
 	name = "Engine Shutters";
 	pixel_x = -6;
-	req_one_access_txt = list(50, 10, 5, 1, 20)
+	req_access = list(50, 10, 5, 1, 20);
+	req_ship_access = 1
 	},
-/turf/template_noop,
+/turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "Eq" = (
 /obj/structure/cable{
@@ -3042,9 +3035,10 @@
 	name = "Engine Shutters";
 	dir = 1;
 	pixel_x = -6;
-	req_one_access_txt = list(50, 10, 5, 1, 20)
+	req_ship_access = 1;
+	req_access = list(50, 10, 5, 1, 20)
 	},
-/turf/template_noop,
+/turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "Va" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
@@ -3351,7 +3345,8 @@
 	name = "Emergency exit";
 	dir = 4;
 	pixel_x = 8;
-	req_one_access_txt = list(50, 10, 5, 1, 20)
+	req_ship_access = 1;
+	req_access = list(50, 10, 5, 1, 20)
 	},
 /obj/machinery/button/door{
 	dir = 4;
@@ -3366,7 +3361,8 @@
 	name = "Emergency exit";
 	dir = 4;
 	pixel_x = 8;
-	req_one_access = list(50, 10, 5, 1, 20)
+	req_access = list(50, 10, 5, 1, 20);
+	req_ship_access = 1
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
@@ -3567,7 +3563,7 @@ xo
 xo
 xo
 xo
-xo
+ja
 Ja
 Dn
 EJ

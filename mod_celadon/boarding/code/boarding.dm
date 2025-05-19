@@ -128,13 +128,6 @@
 	M.invisibility = initial(M.invisibility)
 	M.add_to_all_human_data_huds()
 
-/datum/supply_pack/sec_supply/boarding_kit
-	name = "Boarding Teleporter"
-	desc = "Содержит новый, современный абордажный телепортер, который в мгновение ока переместит вашего храбреца на борт чужого корабля для дальнейшего угона. В действительности, для охранных целей. Мультитул для взлома консоли управления не прилагается."
-	cost = 2400
-	contains = list(/obj/item/circuitboard/machine/boarding_pad)
-	crate_name = "boarding pad crate"
-
 /obj/machinery/computer/helm/multitool_act(mob/living/user, obj/item/I)
 	if(!Adjacent(user))
 		return
