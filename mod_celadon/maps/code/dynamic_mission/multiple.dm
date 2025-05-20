@@ -1,6 +1,6 @@
 /datum/mission/ruin/multiple/moonshine_crates
 	name = "Retrieve Booze"
-	desc = "So... Uh.. I'm looking for someone to go pick up the alcohol I bought from a local brewer. They said they deliver - but it's been like 3 weeks, and I really need this for a party... Can you go and pick it up from them?"
+	desc = "Э-э-э... Собственно, мне нужен кто-то кто может достать выпивку, приобретённую у местного поставщика. Слетайте к ним и доставьте её сюда. Они говорили, что сами привезут её, но уже три недели прошло, а выпивка мне всё ещё нужна... Вечеринка у меня, понимаете?"
 	author = "Guy Raelman"
 	faction = /datum/faction/independent
 	value = 1750
@@ -11,7 +11,7 @@
 
 /datum/mission/ruin/multiple/moonshine_crates/distillery
 	name = "Assess and Retrieve Booze Supply"
-	desc = "One of the main suppliers of my store's moonshine has stopped shipping out our orders, and we still have several outstanding! Find our sealed crates of booze and bring them back."
+	desc = "Один из главных поставщиков самогона для нашего магазина перестал подвозить заказы, а нам ведь что-то да нужно продавать! Найдите запечатанные коробки алкашки и доставьте их к нам."
 	author = "Tallymere Party Store"
 	mission_limit = 1
 	value = 2500
@@ -20,7 +20,7 @@
 
 /datum/mission/ruin/multiple/notes
 	name = "recover research notes"
-	desc = "Hello, on behalf of Cybersun Biodynamics, we are offering an active bounty on the return of the research notes of Dr. Margret Kithin, located in a former base of operations of which we lost contact with in recent years. Last we saw, the facility had been claimed by pirate elements, who seemed keen on desecrating the facility. We only care about our research being returned."
+	desc = "Доброго времени суток. От лица Cybersun Biodynamics, мы разыскиваем подрядчика, готового вернуть исследовательские работы доктора Margret Kithin, которые находятся на бывшей оперативной базе, от которой не было вестей уже несколько лет. По последним данным, базу заняли пиратские группировки, которых состояние базы не волновало от слова совсем. Единственное, чего мы хотим - доставка утерянных документов их законному владельцу."
 	faction = /datum/faction/syndicate/cybersun
 	value = 8000
 	mission_limit = 1
@@ -29,7 +29,7 @@
 
 /datum/mission/ruin/multiple/e11_stash
 	name = "recover a stash of Eoehoma weapons"
-	desc = "My first mate found an Eoehoma document detailing a production plant for energy weapons in the sector, we'll pay well if you can recover and deliver 6 guns back to us."
+	desc = "MМой добрый напарник нашёл документы Eoehoma, в которых сообщается о расположении предприятия по производству энергооружия. Мы щедро вознаградим того, который доставит нам 6 пушек с вышеупомянутого предприятия."
 	faction = /datum/faction/independent
 	value = 2750
 	mission_limit = 1
