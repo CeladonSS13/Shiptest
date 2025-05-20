@@ -1,6 +1,6 @@
 /datum/mission/ruin/signaled/kill/jerry
 	name = "Re: Jerry"
-	desc = "THIS MOTHERFUCKING WEASEL BOY TOOK MY LIMITED EDITION RILENA PLUSH. THAT THING WAS FUCKING EXPENSIVE. I WANT IT BACK. I WANT HIM BLOWN UP. I WANT YOU TO DO IT."
+	desc = "ПОДЛЫЙ CУКИН СЫН СПИЗДИЛ МОЮ ПЛЮШЕВУЮ ИГРУШКУ ИЗ ЛИМИТИРОВАННОЙ КОЛЛЕКЦИИ РИЛЕНЫ. ОНА ПИЗДЕЦ КАКАЯ ДОРОГАЯ. ВЕРНИТЕ ЕЁ МНЕ. А ЕЩЁ РАЗМАЖЬТЕ ЭТОГО БЛЯДСКОГО ЧЕРВЯ ПО СТЕНКАМ. И Я ХОЧУ ЧТО БЫ ЭТО СДЕЛАЛ ИМЕННО ТЫ."
 	author = "SHOOT HIM IN THE DICK"
 	mission_limit = 1
 	faction = /datum/faction/independent
@@ -21,7 +21,7 @@
 
 /datum/mission/ruin/signaled/kill/bright
 	name = "Kill Captain Dwight"
-	desc = "Disgraced Commander of the Second Battlegroup - 13th fleet, Dwight Knoeh, has deigned to show his face within the frontier once again. The New Gorlex Republic tires of his failure as an officer and subsequent defection. Kill him."
+	desc = "Опозорившийся Командир второй боевой группы 13 флота, Dwight Knoeh, решил опять показать своё личико в пределах Фронтира. Новая Горлекская Республика устала от его постоянных провалов и измен. Прибейте его."
 	author = "2nd Battlegroup Headquarters"
 	faction = /datum/faction/syndicate/ngr
 	value = 6000
@@ -29,7 +29,7 @@
 
 /datum/mission/ruin/signaled/kill/amuro
 	name = "Kill O. Ray"
-	desc = "Before the defection of the NGRV Rust Base to the Ramzi Clique, O. Ray was a rapidly rising star in the the 13th fleet Exosuit Corps, having earned multiple distinctions, and praise as \"a glowing example of a new type of pilot\". Now that he has defected? He is an embarrasment. Destroy him. Destroy his legacy. Bring us the proof."
+	desc = "Вплоть до дезертирства базы НГР в ряды клики Рамзи, O. Ray был восходящей звездой в рядах пилотов экзокостюмов 13 флота. Ему даже успели вручить несколько похвал и восхваляли его как \"Блестящий пример пилота Нового Века\". Однако, теперь он дезертир, а значит - не более чем стыдливое пятно на бушлате НКР. Уничтожьте его и его былую славу. Не забудьте принести нам доказательства его кончины."
 	author = "2nd Battlegroup Headquarters"
 	faction = /datum/faction/syndicate/ngr
 	value = 4000
@@ -37,7 +37,7 @@
 
 /datum/mission/ruin/signaled/kill/foreman
 	name = "Kill Foreman Bonsha"
-	desc = "Defector Verron Bonsha has established a Ramzi Clique post inside a former Coalation FOB. Killing him should send the local Clique into disarray and disrupt their supply lines."
+	desc = "Дезертир Verron Bosha обустроил пост клики Рамзи на территории бывшего ФОБа коалиции. Его смерть должна заставить местные ряды клики разлететься как карточный домик, ко всему и нарушая близлежащие линии снабжения."
 	author = "2nd Battlegroup Headquarters"
 	faction = /datum/faction/syndicate/ngr
 	value = 3000
@@ -47,7 +47,7 @@
 
 /datum/mission/ruin/signaled/kill/kitt
 	name = "Kill Her"
-	desc = "What do you do when a normal person wrongs you? You get revenge. What do you do when a fellow pirate wrongs you? You spent months tracking them, watching them from the shadows and even beneath their own fucking nose, alright? Her name is Kitt. I want her stupid bitch face buried ten feet in the ground and some proof, and the payment is yours. Call me spiteful, but I lost a good friend to her. Make her pay."
+	desc = "Что вы делаете, когда ваш товарищ предаёт вас? Вы мстите ему. Что вы делаете, когда коллега-пират предаёт вас? Вы тратите месяцы, следя за этим ублюдком, наблюдаете за ним под покровом ночи, и даже роетесь под их собственным носом. Моя мысль ясна? Её имя - Kitt. Я хочу видеть её милое сучье личико погребённым под толстым слоем грунта. Принесите мне какие-нибудь доказательства её кончины, и деньги ваши. Можете считать меня злопамятным, но одного моего друга из-за неё пришлось выносить ногами вперёд. Заставьте эту суку пожалеть о содеянном."
 	author = "Not Important"
 	faction = /datum/faction/independent
 	value = 4000
