@@ -1,12 +1,12 @@
 /datum/mission/ruin/lost_axe
 	name = "Axe Retrieval"
-	desc = "I recently lost a heirloom axe - produced by a very fine Syebenaltch Guild. I was unable to retrieve it when my vessel crashed, and I was rescued. Please bring it home to me."
+	desc = "Я потерял одну очень ценную для меня вещь - топор. С этим топором, изготовленным Сибенальхской Гильдией, ещё мои деды ходили. Потерял я его во время того, как моё судно потерпело крушение. Меня-то спасли, а вот топор - нет. Прошу тебя, верни его мне."
 	mission_limit = 1
 	setpiece_item = /obj/item/melee/axe/fire
 
 /datum/mission/ruin/fallen_montagne
 	name = "dark signal investigation"
-	desc = "A hunting lodge located on an ice-world in system has recently ceased communication. We suspect they may have been assulted by pirates. If this is the case, and they have fallen, bring the Montague's corpse, so they may be buried properly."
+	desc = "Мы потеряли контакт с охотничьим угодьем, расположенным на ледяной планете. Скорее всего, на них напали пираты, а значит владелец угодья Монтаг уже не в мире живых. Верните нам его тело, дабы мы смогли его похоронить."
 	value = 3000
 	mission_limit = 1
 	mission_reward = /obj/structure/fermenting_barrel/trickwine
@@ -15,7 +15,7 @@
 
 /datum/mission/ruin/daughter
 	name = "find our daughter!"
-	desc = "Our daughter was recently deployed out to the Frontier - and we haven't heard from her, or the SolFed - or anyone in weeks! Please find her and make sure she's okay..."
+	desc = "Нашу дочь несколько недель назад коммандировали на Фронтир. С того момента нам не пришло не единой весточки от неё. Никто, даже СолФед, не знает что с ней... Пожалуйста! Найдите её и скажите, всё ли с ней хорошо..."
 	value = 4000
 	mission_limit = 1
 	author = "Concerned Parents"
@@ -25,7 +25,7 @@
 
 /datum/mission/ruin/nt_files
 	name = "Discrete Asset Recovery"
-	desc = "Look- long story short, I need this folder retrieved. You don't ask why, I make sure you get paid."
+	desc = "Короче, мне нужно вернуть одну папку. Вы не задаёте лишних вопросов, а я плачу вам обещанную сумму."
 	value = 2500
 	mission_limit = 1
 	mission_reward = list(
@@ -41,7 +41,7 @@
 
 /datum/mission/ruin/icw_documents
 	name = "Syndicate Battleplans Retrieval"
-	desc = "Our Final Project for the ICW-Era Preservation is to find a new piece of ICW history and preserve it. My group has gotten word that Syndicate Battleplans can be found at this site. Please see if they're there, and retrieve them for us."
+	desc = "Наша цель - сохранение истории периода Межкорпоративных Войн. Мы узнали о ещё одной крупице истории, которую требуется увековечить: Планы Боёв Синдиката. Наши источники сообщают, что планы находятся в пределах заданного объекта. Удостоверьтесь, там ли они, и доставьте их нам."
 	faction = /datum/faction/syndicate/suns
 	author = "HIS455 \"ICW-era Preservation\""
 	mission_limit = 1
@@ -50,7 +50,7 @@
 /datum/mission/ruin/nanotrasen_docs
 	name = "Nanotrasen Asset Recovery Program."
 	author = "Nanotrasen Recovery Program"
-	desc = "We've recently lost contact with a processing facility within the purview of this outpost. Nanotrasen is interested in the retrieval of sensitive assets located within the facility."
+	desc = "Мы потеряли контакт с перерабатывающим предприятием, находящимся в округе этого аванпоста. Нанойтрейзен заинтересована в возвращении ценных бумаг, распологающихся на этом предприятии."
 	faction = list(
 		/datum/faction/nt,
 		/datum/faction/syndicate/cybersun
@@ -64,15 +64,15 @@
 	if(faction == /datum/faction/nt)
 		name = "Nanotrasen Asset Recovery Program"
 		author = "Nanotrasen Recovery Program"
-		desc = "Nanotrasen Corporate has recently lost contact with a processing facility within the purview of this outpost. Nanotrasen is interested in the retrieval of sensitive assets located within the facility."
+		desc = "Корпорация Нанотрейзен потеряла контакт с перерабатывающим предприятием, находящимся в округе этого аванпоста. Нанойтрейзен заинтересована в возвращении ценных бумаг с этого предприятия."
 	if(faction == /datum/faction/syndicate/cybersun)
 		name = "Cybersun Capture Program"
 		author = "Cybersun Virtual Solutions"
-		desc = "Cybersun VS is extremely interested in the contents of a documents package located at a Nanotrasen facility recently hit by the Ramzi Clique. Retrieve it for us, and we'll pay handsomely."
+		desc = "Киберсан ВР крайне заинтересована в возвращении пакета документов, находящихся на объекте Нанойтрейзен, на который недавно напала клика Рамзи. Доставьте пакет документов нам, а мы не поскупимся с вознаграждением."
 
 /datum/mission/ruin/captain_medal
 	name = "Recover War Medal"
-	desc = "A few months back, I lost my medal for \"Valiant Command Under Fire\". I've managed to track it down to a world in this system, and I'd like it retrieved."
+	desc = "Пару месяцев назад я потерял медаль \"За Отважную Службу\". К счастью, мне удалось отследить её. Находится она на планете в пределах этой системы, и я был бы крайне благодарен за её возвращение."
 	faction = /datum/faction/nt
 	value = 2250
 	mission_limit = 1
@@ -81,21 +81,21 @@
 /datum/mission/ruin/brainchip
 	name = "Nanotrasen Asset Recovery Program"
 	author = "Nanotrasen Recovery Program"
-	desc = "Retrieve an implant from cargo technician who has failed to report proper usage of the system as stipulated by contract."
+	desc = "Ваша задача - вернуть имплант внутри одного незадачливого грузчика, у которого не хватило мозгов на то, что бы использовать его так, как было завещано контрактом."
 	faction = /datum/faction/nt
 	mission_limit = 1
 	setpiece_item = /mob/living/carbon/human
 
 /datum/mission/ruin/bitch_wife
 	name = "My Bitch Wife's Stupid Mothroach"
-	desc = "My fucking wife lost her pet mothroach when it crawled onto a shuttlecraft at the outpost literal months ago. She hasn't stopped talking about how much she misses it since then and I am tired. So tired, of hearing about how she misses the Mothroach. Just. Bring it back. Alive so she doesn't start screaming again."
+	desc = "Моя, блять, жена потеряла молетаракана, который скорее всего забрался на один из отлетающих шаттлов. С того момента она не прекращала верещать о том, как же он ей нужен, как она скучает о нём... Я заебался слушать эти сиренады. Ради бога, верните мне эту тварь. и ПОЖАЛУЙСТА верните её живой, а то она опять разорётся. "
 	value = 3000
 	mission_limit = 1
 	setpiece_item = /mob/living/simple_animal/pet/mothroach
 
 /datum/mission/ruin/ns_manager
 	name = "Retrieve Manager For Interview"
-	desc = "Due to communication failure at one of our remote mining installations, N+S Logistics has been unable to verify the condition of its site and staff. Please travel to the site and locate the manager of the installation. Retrieve them for us so that we may interview on why they have neglected repair of their comms array."
+	desc = "Ввиду поломки систем связи на одной из отдалённых шахтёрских баз, N+S Logistics не смогла провести инвентаризацию вышеупомянутого объекта. Отправьтесь на шахтёрскую базу и доставьте нам её менеджера, дабы мы узнали, с чего это он решил отказаться от ремонта систем связи."
 	value = 3000
 	mission_limit = 1
 	faction = list(
@@ -105,7 +105,7 @@
 
 /datum/mission/ruin/oh_fuck
 	name = "Singularity Generator Signature"
-	desc = "There is a Singularity Generator Signature emitting from this location of space. This is incredibly dangerous. We are willing to pay top dollar to whoever can locate and secure this thing. God help us if a black hole opens up in the system."
+	desc = "Мы засекли генератор сингулярности в данном квадрате системы. Вы даже не представляете, насколько это опасно. Мы готовы щедро вознаградить того, кто сможет найти и доставить эту вещицу. Боже... Мы боимся даже представить, какого масшатаба будет катастрофа в случае появления целой чёрной дыры в пределах нашей системы."
 	author = "The Outpost"
 	value = 15000
 	mission_limit = 1
@@ -113,7 +113,7 @@
 
 /datum/mission/ruin/pgf_captain
 	name = "MIA Vessel Investigation"
-	desc = "The recovery beacon for a PFGN vessel that went missing on patrol has activated. Intellegence suggests they may have been assaulted by pirates. Recover the vessel captain's body and you will be compensated for your services."
+	desc = "Мы начали получать сигналы от маячка бедствия, расположенном на одном из кораблей, пропавших без вести во время патруля. По мнению разведки, они были атакованы пиратами, так что шансы на выживание кого-то из членов экипажа близки к нулю. Найдите тело капитана судна и доставьте его нам ради предписанного вознаграждения."
 	author = "PGFN Naval Command"
 	value = 3000
 	mission_limit = 1
@@ -122,7 +122,7 @@
 
 /datum/mission/ruin/my_mech
 	name = "Lucky #2"
-	desc = "Lemme tell you a quick lil story - back when the ICW was winding down, I was stationed out in a waste world, ready to scramble out with the rest of my lance at a moment's notice. Word never came, and eventually, we all went home. But. I still have that longing to pilot in me. Can you go check these coords, and see if my suit, Lucky #2, is still there? If she is, I want her back."
+	desc = Слушай... Когда межкорпоратские войны уже начинали подходить к концу, меня занесло на мир-свалку. Наше подразделение было готово к высадке на фронт по первому приказу начальства, однако приказа так и не последовало. Время шло, и в итоге все из нас разъехались по домам. Однако, спустя все эти года, мои порывы к пилотированию мехов до сих пор не угасли. Отправься на координаты, которые я тебе выдал, и проверь, на месте ли моя меха Lucky #2? Если она там, умоляю тебя, доставь её мне."
 	author = "Bernard Lytton"
 	value = 9000
 	mission_limit = 1
@@ -130,7 +130,7 @@
 
 /datum/mission/ruin/dead_vanguard
 	name = "Retrieve Fallen Vanguard"
-	desc = "The IRMG has lost contact with one of it's contractees, and the associated Vanguard. All IRMG persons in the area are either already on-assignment, or unavailable. The IRMG is willing to contract out the retrieval of Vanguard Kavur's corpse to any entity in system."
+	desc = "Inteq потеряла связь с одним из заказчиков и авангардистом, который его задание выполнял. Мы бы и своих людей туда отправили, да вот все либо заняты, либо недоступны. Inteq готова выдать это поручение любому, кто гораст вернуть тело нашего авангардиста. Его имя - Кавур."
 	faction = /datum/faction/inteq
 	value = 6000
 	setpiece_item = /mob/living/carbon/human
