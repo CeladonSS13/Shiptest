@@ -20,7 +20,7 @@
 	registered_type = /mob/living/simple_animal/hostile/human/ramzi/ranged/space/shotgun/incendiary
 
 /datum/mission/ruin/signaled/kill/bright
-	name = "Kill Captain Dwight"
+	name = "Прикончите командира Dwight"
 	desc = "Опозорившийся Командир Второй Боевой Группы 13-го флота, Dwight Knoeh, опять показался в районе Фронтира. Новая Горлекская Республика больше не может терпеть его постоянные неудачи и дезертирства. Прибейте его."
 	author = "2nd Battlegroup Headquarters"
 	faction = /datum/faction/syndicate/ngr
@@ -28,7 +28,7 @@
 	mission_limit = 1
 
 /datum/mission/ruin/signaled/kill/amuro
-	name = "Kill O. Ray"
+	name = "Убейте O. Ray"
 	desc = "Вплоть до дезертирства базы НГР в ряды клики Рамзи, O. Ray был восходящей звездой в рядах Меха-пилотов 13-го флота. За свою недолгую службу успел заслужить несколько похвал, некоторые и вовсе считали его \"Блестящим примером пилота Нового Века\". Однако, теперь он дезертир, а значит - не более чем стыдливое пятно на бушлате НГР. Уничтожьте его и его былую славу. Не забудьте принести нам доказательства его кончины."
 	author = "2nd Battlegroup Headquarters"
 	faction = /datum/faction/syndicate/ngr
@@ -36,7 +36,7 @@
 	mission_limit = 1
 
 /datum/mission/ruin/signaled/kill/foreman
-	name = "Kill Foreman Bonsha"
+	name = "Убейте Foreman Bonsha"
 	desc = "Дезертир Verron Bonsha обустроил пост клики Рамзи на территории бывшего ФОБа коалиции. Его смерть должна заставить местные ряды клики разлететься как карточный домик, а близлежащие пути снабжения - перекрыться на несколько месяцев."
 	author = "2nd Battlegroup Headquarters"
 	faction = /datum/faction/syndicate/ngr
@@ -46,7 +46,7 @@
 /* Aurora wrote these */
 
 /datum/mission/ruin/signaled/kill/kitt
-	name = "Kill Her"
+	name = "Прикончи её."
 	desc = "Что вы делаете, когда ваш товарищ предаёт вас? Мстите. Что вы делаете, когда коллега-пират предаёт вас? Вы тратите месяцы, следя за этим ублюдком, наблюдаете за ним под покровом ночи, и даже роетесь под его собственным носом. Моя мысль ясна? Её имя - Kitt. Я хочу видеть её милое личико погребённым под толстым слоем грунта. Принесите мне какие-нибудь доказательства её кончины, и деньги ваши. Можете считать меня злопамятным, но врятле бы вы остались равнодушным к тому, что из-за какой-то подлой бабы вашего товарища пришлось выносить ногами вперёд. Заставьте эту суку пожалеть о содеянном."
 	author = "Not Important"
 	faction = /datum/faction/independent
