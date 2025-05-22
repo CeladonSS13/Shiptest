@@ -1,5 +1,5 @@
 /datum/mission/ruin/signaled/kill/jerry
-	name = "Re: Jerry"
+	name = "Re: джерри"
 	desc = "ПОДЛЫЙ CУКИН СЫН СПИЗДИЛ МОЮ ЛИМИТИРОВАННУЮ ПЛЮШЕВУЮ ИГРУШКУ. ОНА ПИЗДЕЦ КАКАЯ ДОРОГАЯ. ВЕРНИТЕ ЕЁ. А КО ВСЕМУ, РАЗМАЖЬТЕ ЭТОГО БЛЯДСКОГО ЧЕРВЯ ПО СТЕНКАМ."
 	author = "SHOOT HIM IN THE DICK"
 	mission_limit = 1
