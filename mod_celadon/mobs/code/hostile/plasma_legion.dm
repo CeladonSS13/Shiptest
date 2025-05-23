@@ -109,4 +109,4 @@
 	AddComponent(/datum/component/spawner, list(/mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal_plasma), 200, faction, "peels itself off from", 3)
 
 /mob/living/simple_animal/hostile/big_legion
-	icon = 'mod_celadon/_storge_icons/icons/mob/64x64mehafauna.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/mobs/plasma_mobs/64x64mehafauna.dmi'

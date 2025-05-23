@@ -1,6 +1,6 @@
 /obj/projectile/temp/cryo/plasmadisable
 	name = "supercooled plasma blast"
-	icon = 'mod_celadon/_storge_icons/icons/guns/ntsl_lasers.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ntsl_lasers.dmi'
 	icon_state = "plasmaice"
 	damage = 25
 	armour_penetration = -20
@@ -40,7 +40,7 @@
 
 /obj/projectile/temp/cryo/plasmalaserweak
 	name = "chilly plasma blast"
-	icon = 'mod_celadon/_storge_icons/icons/guns/ntsl_lasers.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ntsl_lasers.dmi'
 	icon_state = "plasmaice"
 	damage = 20
 	armour_penetration = -10
@@ -77,7 +77,7 @@
 
 /obj/projectile/temp/hot/burn_plasmalaserweak
 	name = "hot plasma blast"
-	icon = 'mod_celadon/_storge_icons/icons/guns/ntsl_lasers.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ntsl_lasers.dmi'
 	icon_state = "plasmafire"
 	damage = 20
 	armour_penetration = -5
@@ -109,7 +109,7 @@
 
 /obj/projectile/temp/hot/burn_plasmalaser
 	name = "superheated plasma blast"
-	icon = 'mod_celadon/_storge_icons/icons/guns/ntsl_lasers.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ntsl_lasers.dmi'
 	icon_state = "plasmafire"
 	damage = 30
 	armour_penetration = 0

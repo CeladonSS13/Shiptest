@@ -249,7 +249,7 @@
 	name = "MOD module"
 	icon = 'mod_celadon/_storge_icons/icons/obj/modsuit/mod_modules.dmi'
 	icon_state = "module"
-	overlay_icon_file = 'mod_celadon/_storge_icons/icons/mob/modsuit/mod_modules.dmi'
+	overlay_icon_file = 'mod_celadon/_storge_icons/icons/items/mob/modsuit/mod_modules.dmi'
 
 /obj/item/mod/control
 	name = "MOD control unit"
@@ -257,7 +257,7 @@
 	icon_state = "control"
 	base_icon_state = "control"
 	item_state = "mod_control"
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/modsuit/mod_clothing.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/modsuit/mod_clothing.dmi'
 	restricted_bodytypes = BODYTYPE_KEPORI|BODYTYPE_VOX
 
 /obj/item/clothing/head/mod
@@ -267,7 +267,7 @@
 	base_icon_state = "helmet"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	icon = 'mod_celadon/_storge_icons/icons/obj/modsuit/mod_clothing.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/modsuit/mod_clothing.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/modsuit/mod_clothing.dmi'
 	body_parts_covered = HEAD
 	heat_protection = HEAD
 	cold_protection = HEAD
@@ -282,7 +282,7 @@
 	blood_overlay_type = "armor"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	icon = 'mod_celadon/_storge_icons/icons/obj/modsuit/mod_clothing.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/modsuit/mod_clothing.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/modsuit/mod_clothing.dmi'
 	body_parts_covered = CHEST|GROIN
 	heat_protection = CHEST|GROIN
 	cold_protection = CHEST|GROIN
@@ -295,7 +295,7 @@
 	base_icon_state = "gauntlets"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	icon = 'mod_celadon/_storge_icons/icons/obj/modsuit/mod_clothing.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/modsuit/mod_clothing.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/modsuit/mod_clothing.dmi'
 	body_parts_covered = HANDS|ARMS
 	heat_protection = HANDS|ARMS
 	cold_protection = HANDS|ARMS
@@ -308,7 +308,7 @@
 	base_icon_state = "boots"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	icon = 'mod_celadon/_storge_icons/icons/obj/modsuit/mod_clothing.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/modsuit/mod_clothing.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/modsuit/mod_clothing.dmi'
 	body_parts_covered = FEET|LEGS
 	heat_protection = FEET|LEGS
 	cold_protection = FEET|LEGS

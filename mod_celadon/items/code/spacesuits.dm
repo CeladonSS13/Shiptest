@@ -25,7 +25,7 @@
 /obj/item/clothing/head/helmet/space/hardsuit/ert/classic
 	name = "special forces command helmet"
 	desc = "The integrated helmet of a special forces hardsuit, this one has blue highlights."
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/head.dmi'
 	icon = 'mod_celadon/_storge_icons/icons/obj/head.dmi'
 	icon_state = "hardsuit0-ert_commanderold"
 	item_state = "hardsuit1-ert_commanderold"
@@ -35,7 +35,7 @@
 /obj/item/clothing/suit/space/hardsuit/ert/classic
 	name = "special forces command hardsuit"
 	desc = "The standard issue hardsuit of the Nanotrasen special forces squad, this one has blue highlights. Provides a really good amount of protection against environmental hazards."
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/spacesuits_celadon.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/spacesuits_celadon.dmi'
 	icon = 'mod_celadon/_storge_icons/icons/obj/spacesuits_celadon.dmi'
 	icon_state = "ert_commandold"
 	item_state = "ert_commandold"
@@ -116,13 +116,13 @@
 
 //респрайт кэпарморма
 /obj/item/clothing/head/helmet/space/hardsuit/swat/captain
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/caparmor_new.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/caparmor_new.dmi'
 	icon = 'mod_celadon/_storge_icons/icons/obj/capspacesuit_new.dmi'
 	icon_state = "capspacehelmet"
 	item_state = "capspacehelmet"
 
 /obj/item/clothing/suit/space/hardsuit/swat/captain
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/caparmor_new.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/caparmor_new.dmi'
 	icon = 'mod_celadon/_storge_icons/icons/obj/capspacesuit_new.dmi'
 	icon_state = "capspacesuit"
 	item_state = "capspacesuit"

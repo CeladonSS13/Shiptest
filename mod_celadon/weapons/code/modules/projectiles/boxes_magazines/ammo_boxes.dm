@@ -166,24 +166,24 @@
 //     410x76mm
 //
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/a410
-	icon = 'mod_celadon/_storge_icons/icons/weapons/obj/saiga_bullet.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/obj/saiga_bullet.dmi'
 	ammo_type = /obj/item/ammo_casing/a410
 	max_ammo = 15
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/a410/slug
-	icon = 'mod_celadon/_storge_icons/icons/weapons/obj/saiga_bullet.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/obj/saiga_bullet.dmi'
 	ammo_type = /obj/item/ammo_casing/a410/a410_slug
 	max_ammo = 15
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/a410/flechette
-	icon = 'mod_celadon/_storge_icons/icons/weapons/obj/saiga_bullet.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/obj/saiga_bullet.dmi'
 	ammo_type = /obj/item/ammo_casing/a410/a410_flechette
 	max_ammo = 15
 
 /obj/item/storage/box/ammo/a410_ammo_box
 	name = "Ammo box (410x76mm buckshot)"
 	desc = "A box of buckshot 410x76mm ammo."
-	icon = 'mod_celadon/_storge_icons/icons/weapons/obj/saiga_ammo.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/obj/saiga_ammo.dmi'
 	icon_state = "410box_buckshot"
 /obj/item/storage/box/ammo/a410_ammo_box/PopulateContents()
 	var/static/items_inside = list(
@@ -193,7 +193,7 @@
 /obj/item/storage/box/ammo/a410_ammo_box/slug
 	name = "Ammo box (410x76mm slug)"
 	desc = "A box of slug 410x76mm ammo."
-	icon = 'mod_celadon/_storge_icons/icons/weapons/obj/saiga_ammo.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/obj/saiga_ammo.dmi'
 	icon_state = "410box_slug"
 /obj/item/storage/box/ammo/a410_ammo_box/slug/PopulateContents()
 	var/static/items_inside = list(
@@ -203,7 +203,7 @@
 /obj/item/storage/box/ammo/a410_ammo_box/flechette
 	name = "Ammo box (410x76mm flechette)"
 	desc = "A box of flechette 410x76mm ammo."
-	icon = 'mod_celadon/_storge_icons/icons/weapons/obj/saiga_ammo.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/obj/saiga_ammo.dmi'
 	icon_state = "410box_flechette"
 /obj/item/storage/box/ammo/a410_ammo_box/flechette/PopulateContents()
 	var/static/items_inside = list(

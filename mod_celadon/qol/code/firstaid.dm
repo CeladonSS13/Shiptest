@@ -3,8 +3,8 @@
 	desc = "kit with a meat symbol on it"
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/storage.dmi'
 	icon_state = "synthflesh"
-	lefthand_file = 'mod_celadon/_storge_icons/icons/mob/hands/storage_hands_left.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/mob/hands/storage_hands_right.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/mob/hands/storage_hands_left.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/mob/hands/storage_hands_right.dmi'
 
 /obj/item/storage/firstaid/synthflesh/ComponentInitialize()
 	. = ..()

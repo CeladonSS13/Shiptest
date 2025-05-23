@@ -119,8 +119,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/elysium, (-32))
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/flags.dmi'
 	icon_state = "banner_SF"
 	item_state = "banner_SF"
-	lefthand_file = 'mod_celadon/_storge_icons/icons/mob/hands/banners_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/mob/hands/banners_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/mob/hands/banners_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/mob/hands/banners_righthand.dmi'
 	warcry = "FREEEEDOOOOM!!!!!"
 
 /obj/item/banner/solfed/mundane
@@ -132,8 +132,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/elysium, (-32))
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/flags.dmi'
 	icon_state = "banner_NT"
 	item_state = "banner_NT"
-	lefthand_file = 'mod_celadon/_storge_icons/icons/mob/hands/banners_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/mob/hands/banners_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/mob/hands/banners_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/mob/hands/banners_righthand.dmi'
 	warcry = "Soon we will privatize oxygen itself!"
 
 /obj/item/banner/nanotrasen/mundane
@@ -145,8 +145,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/elysium, (-32))
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/flags.dmi'
 	icon_state = "banner_Syndie"
 	item_state = "banner_Syndie"
-	lefthand_file = 'mod_celadon/_storge_icons/icons/mob/hands/banners_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/mob/hands/banners_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/mob/hands/banners_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/mob/hands/banners_righthand.dmi'
 	warcry = "Whiskey.. Echo.. Whiskey.. Lima.. Alpha.. Delta.."
 
 /obj/item/banner/syndie/mundane
@@ -158,8 +158,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/elysium, (-32))
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/flags.dmi'
 	icon_state = "banner_Elysium"
 	item_state = "banner_Elysium"
-	lefthand_file = 'mod_celadon/_storge_icons/icons/mob/hands/banners_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/mob/hands/banners_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/mob/hands/banners_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/mob/hands/banners_righthand.dmi'
 	warcry = "Glory to the nation!"
 
 /obj/item/banner/elysium/mundane
@@ -171,8 +171,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/elysium, (-32))
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/flags.dmi'
 	icon_state = "banner_InteQ"
 	item_state = "banner_InteQ"
-	lefthand_file = 'mod_celadon/_storge_icons/icons/mob/hands/banners_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/mob/hands/banners_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/mob/hands/banners_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/mob/hands/banners_righthand.dmi'
 	warcry = "For the company. For the mercenaries!"
 
 /obj/item/banner/inteq/mundane
@@ -184,8 +184,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/elysium, (-32))
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/flags.dmi'
 	icon_state = "banner_Separ"
 	item_state = "banner_Separ"
-	lefthand_file = 'mod_celadon/_storge_icons/icons/mob/hands/banners_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/mob/hands/banners_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/mob/hands/banners_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/mob/hands/banners_righthand.dmi'
 	warcry = "We will clean our home from xenos.. For the purity of our Nation!"
 
 /obj/item/banner/separatist/mundane

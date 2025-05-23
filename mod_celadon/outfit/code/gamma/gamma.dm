@@ -8,7 +8,7 @@
 	name = "hardhat night vision gamma"
 	desc = "No data."
 	icon = 'mod_celadon/_storge_icons/icons/obj/head.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/head.dmi'
 	icon_state = "gamma_vision"
 	item_state = "gamma_vision"
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 30, "energy" = 25, "bomb" = 50, "bio" = 100, "fire" = 40, "acid" = 50)
@@ -60,7 +60,7 @@
 	name = "white squadron rig helmet"
 	desc = "No data"
 	icon = 'mod_celadon/_storge_icons/icons/obj/head.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/head.dmi'
 	icon_state = "hardsuit0-gamma"
 	item_state = "hardsuit1-gamma"
 	hardsuit_type = "gamma"
@@ -70,7 +70,7 @@
 	name = "white squadron rig"
 	desc = "No data"
 	icon = 'mod_celadon/_storge_icons/icons/obj/suit.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/suit.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/suit.dmi'
 	icon_state = "white_squadron_rig"
 	item_state = "white_squadron_rig"
 	hardsuit_type = "gamma"
@@ -81,7 +81,7 @@
 	name = "Gamma armor vest"
 	desc = "No data."
 	icon = 'mod_celadon/_storge_icons/icons/obj/uniform.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/uniform.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/uniform.dmi'
 	icon_state = "white_squadron_jacket"
 	item_state = "white_squadron_jacket"
 	armor = list("melee" = 38, "bullet" = 33, "laser" = 33, "energy" = 43, "bomb" = 28, "bio" = 3, "rad" = 3, "fire" = 53, "acid" = 53)
@@ -90,7 +90,7 @@
 	name = "Комбенизон ГАММЫ"
 	desc = "No data."
 	icon = 'mod_celadon/_storge_icons/icons/obj/uniform.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/uniform.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/uniform.dmi'
 	icon_state = "white_squadron_uniform"
 	mob_overlay_state = "white_squadron_uniform"
 
@@ -98,7 +98,7 @@
 	name = "white squadron gloves"
 	desc = "No data."
 	icon = 'mod_celadon/_storge_icons/icons/obj/gloves.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/gloves.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/gloves.dmi'
 	icon_state = "white_squadron_gloves"
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
@@ -114,7 +114,7 @@
 	name = "Gamma boots"
 	desc = "no data."
 	icon = 'mod_celadon/_storge_icons/icons/obj/shoes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/shoes.dmi'
 	icon_state = "white_squadron_boots"
 	item_state = "white_squadron_boots"
 	strip_delay = 100
@@ -126,7 +126,7 @@
 	name = "gamma messenger bag"
 	desc = "no data."
 	icon = 'mod_celadon/_storge_icons/icons/obj/back.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/back.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/back.dmi'
 	icon_state = "white_squadron_backpack"
 	item_state = "white_squadron_backpack"
 
@@ -134,7 +134,7 @@
 	name = "gamma cargo"
 	desc = "no data."
 	icon = 'mod_celadon/_storge_icons/icons/obj/back.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/back.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/back.dmi'
 	slot_flags = ITEM_SLOT_BELT
 	icon_state = "white_squadron_cargo"
 	item_state = "white_squadron_cargo"
@@ -143,9 +143,9 @@
 	name = "gamma tomahawk"
 	desc = "no data"
 	icon = 'mod_celadon/_storge_icons/icons/obj/weapons.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/weapons.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/mob/hands/weapons_hands_left.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/mob/hands/weapons_hands_right.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/weapons.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/mob/hands/weapons_hands_left.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/mob/hands/weapons_hands_right.dmi'
 	icon_state = "white_squadron_tomahawk"
 	item_state = "white_squadron_tomahawk"
 	hitsound = 'sound/weapons/bladeslice.ogg'

@@ -8,8 +8,8 @@
 	icon_state = "skimitar"
 	item_state = "skimitar"
 	icon = 'mod_celadon/_storge_icons/icons/obj/skimitar.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/mob/swords_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/mob/swords_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/mob/swords_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/mob/swords_righthand.dmi'
 	pickup_sound =  'sound/items/unsheath.ogg'
 	drop_sound = 'sound/items/handling/metal_drop.ogg'
 	force = 35
@@ -80,7 +80,7 @@
 	name = "Scimitar sheath"
 	desc = "Scimitar scabbard, traditionally worn for carrying a scimitar. They look green and suspiciously scaly. "
 	icon = 'mod_celadon/_storge_icons/icons/obj/sheath-skimitar.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/mob/sheath-skimitar.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/sheath-skimitar.dmi'
 	icon_state = "sheath"
 	item_state = "sheath"
 	base_icon_state = "sheath"

@@ -1,9 +1,9 @@
 /obj/item/gun/energy/e_gun/plasmapistol_cryo
 	name = "SL PPD-142 'Cryogelida' plasma pistol"
 	desc = "A fresh-new experimental plasma pistol manufactured by Nanotrasen-Sharplite, it uses supercooled plasma blasts to subdue users' enemies."
-	icon = 'mod_celadon/_storge_icons/icons/guns/ntsl_lasers.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/guns/guns_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/guns/guns_righthand.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ntsl_lasers.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/guns_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/guns_righthand.dmi'
 	icon_state = "plasma_pistol_cryo"
 	charge_sections = 4
 	shaded_charge = TRUE
@@ -12,7 +12,7 @@
 
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_NORMAL
-	slot_flags = ITEM_SLOT_BELT 
+	slot_flags = ITEM_SLOT_BELT
 
 	fire_delay = 5
 
@@ -22,15 +22,15 @@
 	wield_delay = 0.2 SECONDS
 	wield_slowdown = 0.1
 	spread_unwielded = 5
-	
+
 	//Нигредо и Альбедо
 
 /obj/item/gun/energy/e_gun/plasmapistol_fire
 	name = "SL PPD-238 'Pyrogelida' plasma pistol"
 	desc = "A fresh-new experimental plasma pistol manufactured by Nanotrasen-Sharplite, it uses superheated plasma blasts to furiously burn users' enemies."
-	icon = 'mod_celadon/_storge_icons/icons/guns/ntsl_lasers.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/guns/guns_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/guns/guns_righthand.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ntsl_lasers.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/guns_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/guns_righthand.dmi'
 	icon_state = "plasma_pistol_fire"
 	charge_sections = 4
 	shaded_charge = TRUE
@@ -39,7 +39,7 @@
 
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_NORMAL
-	slot_flags = ITEM_SLOT_BELT 
+	slot_flags = ITEM_SLOT_BELT
 
 	fire_delay = 5
 
@@ -49,4 +49,3 @@
 	wield_delay = 0.2 SECONDS
 	wield_slowdown = LASER_PISTOL_SLOWDOWN
 	spread_unwielded = 5
-	

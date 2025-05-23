@@ -37,8 +37,8 @@ ID мода: CELADON_CUSTOMIZATION_VEST
 
 - `mod_celadon/_storge_icons/icons/obj/helmet_celadon.dmi`
 - `mod_celadon/_storge_icons/icons/obj/armor_celadon.dmi`
-- `mod_celadon/_storge_icons/icons/mob/helmet_celadon.dmi`
-- `mod_celadon/_storge_icons/icons/mob/armor_celadon.dmi`
+- `mod_celadon/_storge_icons/icons/items/mob/helmet_celadon.dmi`
+- `mod_celadon/_storge_icons/icons/items/mob/armor_celadon.dmi`
 
 ### Авторы
 
