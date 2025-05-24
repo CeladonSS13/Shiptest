@@ -1,3 +1,7 @@
+/datum/mission/ruin/signaled/kill
+	name = "Ликвидация '%MISSION_TARGET'"
+	desc = "Это задание на ликвидацию %MISSION_TARGET. Верните %MISSION_ITEM, чтобы получить награду."
+
 /datum/mission/ruin/signaled/kill/jerry
 	name = "Re: Jerry"
 	desc = "ПОДЛЫЙ CУКИН СЫН СПИЗДИЛ МОЮ ЛИМИТИРОВАННУЮ ПЛЮШЕВУЮ ИГРУШКУ. ОНА ПИЗДЕЦ КАКАЯ ДОРОГАЯ. ВЕРНИТЕ ЕЁ. А КО ВСЕМУ, РАЗМАЖЬТЕ ЭТОГО БЛЯДСКОГО ЧЕРВЯ ПО СТЕНКАМ."
