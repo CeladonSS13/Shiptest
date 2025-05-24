@@ -1,7 +1,7 @@
 /obj/item/coin/day_s
 	name = "day 'S' coin"
 	desc = "Стороны монетки напоминают вам одну историю о том, что в мире существуют цели, важнее даже собственной жизни."
-	icon = 'mod_celadon/_storge_icons/icons/events/coin.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/coin.dmi'
 	icon_state = "coin_valid"
 	sideslist = list("valid", "salad")
 	material_flags = NONE
