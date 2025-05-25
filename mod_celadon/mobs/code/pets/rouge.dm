@@ -1,7 +1,7 @@
 /mob/living/simple_animal/hostile/retaliate/poison/snake/rouge
 	name = "Руж"
 	desc = "Уникальная трёхголовая змея Офицера Телекоммуникаций синдиката. Выращена в лаборатории. У каждой головы свой характер!"
-	icon = 'mod_celadon/_storge_icons/icons/mobs/rouge.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets.dmi'
 	mob_size = MOB_SIZE_SMALL
 	blood_volume = BLOOD_VOLUME_NORMAL
 	// can_collar = TRUE
