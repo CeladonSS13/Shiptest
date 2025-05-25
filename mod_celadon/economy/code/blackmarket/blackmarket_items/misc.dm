@@ -2,9 +2,9 @@
 	name = "Old Design Disks"
 	desc = "We've researched a new tech, so we don't need them anymore."
 
-	price_min = 50
-	price_max = 150
-	unlimited = TRUE
+	cost_min = 50
+	cost_max = 150
+	stock = INFINITY
 	availability_prob = 90
 	item = /obj/item/disk/design_disk
 

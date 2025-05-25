@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/independent/magazine
-	group = "Magazines"
+	category = "Magazines"
 	crate_type = /obj/structure/closet/crate/secure/gear
 	crate_name = "magazine crate"
 

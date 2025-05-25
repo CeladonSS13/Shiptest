@@ -684,13 +684,22 @@ GLOBAL_LIST_INIT(overmap_event_pick_list, list(
 	var/blocks_sight = TRUE
 
 	empty_space_mapgen = /datum/map_generator/planet_generator/asteroid
+	safe_speed = 3	// [CELADON-ADD] - CELADON_BALANCE_OVERMAP_EVENTS
 
 /datum/overmap/event/meteor/debris/alter_token_appearance()
 	. = ..()
 	if(blocks_sight)
 		token.opacity = TRUE
 	current_overmap.post_edit_token_state(src)
-
+	// [CELADON-ADD] - CELADON_BALANCE_OVERMAP_EVENTS
+	switch(safe_speed)
+		if (1)
+			safe_speed = rand(1, 3)
+		if (3)
+			safe_speed = rand(3, 5)
+		if (5)
+			safe_speed = rand(5, 7)
+	// [CELADON-ADD]
 
 /datum/overmap/event/meteor/debris/minor
 	name = "debris field (minor)"
@@ -723,3 +732,4 @@ GLOBAL_LIST_INIT(overmap_event_pick_list, list(
 		/obj/effect/meteor/big=25,
 		/obj/effect/meteor/flaming=10,
 	)
+	safe_speed = 1	// [CELADON-ADD] - CELADON_BALANCE_OVERMAP_EVENTS

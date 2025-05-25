@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/independent/tools
-	group = "Tools & Tanks"
+	category = "Tools & Tanks"
 	crate_type = /obj/structure/closet/crate/engineering
 
 /*
@@ -41,7 +41,7 @@
 
 /datum/supply_pack/faction/independent/tools/bodycamera
 	name = "Body Camera Crate"
-	desc = "Contains two portable cameras, designed to help keep track of a working group at all times."
+	desc = "Contains two portable cameras, designed to help keep track of a working category at all times."
 	cost = 250
 	contains = list(/obj/item/bodycamera,
 					/obj/item/bodycamera,

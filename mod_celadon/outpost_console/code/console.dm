@@ -57,14 +57,13 @@
 	data["supplies"] = list()
 	for(var/pack in SSshuttle.supply_packs)
 		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!data["supplies"][P.group])
-			data["supplies"][P.group] = list(
-				"name" = P.group,
+		if(!data["supplies"][P.category])
+			data["supplies"][P.category] = list(
+				"name" = P.category,
 				"packs" = list()
 			)
-		if((P.hidden && !(obj_flags & EMAGGED)))
-			continue
-		data["supplies"][P.group]["packs"] += list(list(
+
+		data["supplies"][P.category]["packs"] += list(list(
 			"name" = P.name,
 			"cost" = P.cost,
 			"id" = pack,
@@ -192,16 +191,16 @@
 
 		if (is_faction)
 			// Если скрыто, не добавляем товар
-			if(P.hidden)
-				continue
+			// if(P.hidden)
+			// 	continue
 			// Если нет группы, создаём группу
-			if(!supply_pack_data[P.group])
-				supply_pack_data[P.group] = list(
-					"name" = P.group,
+			if(!supply_pack_data[P.category])
+				supply_pack_data[P.category] = list(
+					"name" = P.category,
 					"packs" = list()
 				)
 			// Добавляем товар в группу
-			supply_pack_data[P.group]["packs"] += list(list(
+			supply_pack_data[P.category]["packs"] += list(list(
 				"name" = P.name,
 				"cost" = P.cost,
 				"id" = pack,
@@ -219,17 +218,14 @@
 		var/is_faction = ispath(P.faction, faction)
 
 		if (is_faction)
-			// Если скрыто, и не ЕМАГнуто - не показываем товар
-			if(P.hidden && !(obj_flags & EMAGGED))
-				continue
 			// Если нет группы, создаём группу
-			if(!data["supplies"][P.group])
-				data["supplies"][P.group] = list(
-					"name" = P.group,
+			if(!data["supplies"][P.category])
+				data["supplies"][P.category] = list(
+					"name" = P.category,
 					"packs" = list()
 				)
 			// Добавляем товар в группу
-			data["supplies"][P.group]["packs"] += list(list(
+			data["supplies"][P.category]["packs"] += list(list(
 				"name" = P.name,
 				"cost" = P.cost,
 				"id" = pack,
@@ -296,14 +292,13 @@
 	supply_pack_data = list()
 	for(var/pack in SSshuttle.supply_packs)
 		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!supply_pack_data[P.group])
-			supply_pack_data[P.group] = list(
-				"name" = P.group,
+		if(!supply_pack_data[P.category])
+			supply_pack_data[P.category] = list(
+				"name" = P.category,
 				"packs" = list()
 			)
-		if(P.hidden)
-			continue
-		supply_pack_data[P.group]["packs"] += list(list(
+
+		supply_pack_data[P.category]["packs"] += list(list(
 			"name" = P.name,
 			"cost" = P.cost,
 			"id" = pack,

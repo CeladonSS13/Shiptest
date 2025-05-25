@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/independent/gun
-	group = "Guns"
+	category = "Guns"
 	crate_type = /obj/structure/closet/crate/secure/weapon
 
 /* MARK: = Gun List =

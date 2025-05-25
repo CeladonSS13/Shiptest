@@ -1,5 +1,6 @@
 /datum/outfit/job/inteq
 	name = "IRMG - Base Outfit"
+	faction = FACTION_PLAYER_INTEQ
 	faction_icon = "bg_inteq"
 
 	uniform = /obj/item/clothing/under/syndicate/inteq
@@ -11,12 +12,6 @@
 	//duffelbag = /obj/item/storage/backpack/duffelbag
 	//[/CELADON-REMOVE]
 	courierbag = /obj/item/storage/backpack/messenger/inteq
-
-/datum/outfit/job/inteq/post_equip(mob/living/carbon/human/H, visualsOnly)
-	. = ..()
-	if(visualsOnly)
-		return
-	H.faction |= list(FACTION_PLAYER_INTEQ)
 
 ///assistants
 

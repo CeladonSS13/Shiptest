@@ -353,7 +353,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	var/image/I = image('mod_celadon/_storge_icons/icons/assets/qol/talk.dmi', src, "[bubble_type][say_test(message)]", FLY_LAYER)
 	// [/CELADON-EDIT]
 	I.appearance_flags = APPEARANCE_UI_IGNORE_ALPHA
-	INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(flick_overlay), I, speech_bubble_recipients, 30)
+	INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(flick_overlay_global), I, speech_bubble_recipients, 3 SECONDS)
 
 /mob/proc/binarycheck()
 	return FALSE

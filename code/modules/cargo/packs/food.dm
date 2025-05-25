@@ -2,7 +2,7 @@
 	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
 
 /datum/supply_pack/food
-	group = "Food & Agricultural"
+	category = "Food & Agricultural"
 
 /*
 		Ready-to-eat

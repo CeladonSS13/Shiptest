@@ -2,7 +2,7 @@
 	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
 
 /datum/supply_pack/canister
-	group = "Gas Canisters"
+	category = "Gas Canisters"
 	crate_type = /obj/structure/closet/crate/large
 	no_bundle = TRUE
 

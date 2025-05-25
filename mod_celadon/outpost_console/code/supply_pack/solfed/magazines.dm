@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/solfed/magazine
-	group = "Magazines"
+	category = "Magazines"
 
 /datum/supply_pack/faction/solfed/magazine/mag_556mm
 	name = "5.56 Pistole C Magazine Crate"

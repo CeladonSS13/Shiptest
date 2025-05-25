@@ -2,7 +2,7 @@
 	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
 
 /datum/supply_pack/medical
-	group = "Medical"
+	category = "Medical"
 	crate_type = /obj/structure/closet/crate/medical
 
 /*

@@ -16,6 +16,7 @@ ID мода:
 	CELADON_BALANCE
 	CELADON_BALANCE_CD
 	CELADON_BALANCE_MOBS
+	CELADON_BALANCE_OVERMAP_EVENTS
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов. Добавлены
@@ -103,6 +104,8 @@ EDIT: `code\modules\mob\living\simple_animal\hostile\megafauna\codename_claw.dm`
 EDIT: `code/__DEFINES/clothing.dm`
 EDIT: `code/__DEFINES/storage.dm`
 EDIT: `code/game/objects/items/storage/backpack.dm`
+
+ADD: `code/modules/overmap/objects/event_datum.dm` : Добавляем дебрисам рандом на безопасную скорость полетов
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,

@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/syndicate/cybernetics
-	group = "Cybernetics"
+	category = "Cybernetics"
 	crate_type = /obj/structure/closet/crate/freezer
 
 // CYBERNETICS

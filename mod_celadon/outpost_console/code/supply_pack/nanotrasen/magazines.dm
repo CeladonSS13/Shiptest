@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/nanotrasen/magazine
-	group = "Magazines"
+	category = "Magazines"
 
 /*
 MARK: VI

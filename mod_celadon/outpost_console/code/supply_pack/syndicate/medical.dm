@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/syndicate/medical
-	group = "Medical"
+	category = "Medical"
 
 /datum/supply_pack/faction/syndicate/medical/painkillers
 	name = "Painkiller Supply Crate"

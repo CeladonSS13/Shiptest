@@ -1,14 +1,14 @@
 /datum/overmap/event
 	name = "event"
 
-	var/safe_speed = 3
+	var/safe_speed = 0
 	var/list/meteor_types = list(
-		/obj/effect/meteor/dust=3,
-		/obj/effect/meteor/medium=8,
-		/obj/effect/meteor/big=1,
-		/obj/effect/meteor/irradiated=3
+		/obj/effect/meteor/dust = 3,
+		/obj/effect/meteor/medium = 8,
+		/obj/effect/meteor/big = 1,
+		/obj/effect/meteor/irradiated = 3
 	)
-	var/primary_ores = list(\
+	var/primary_ores = list(
 		/obj/item/stack/ore/plasma,
 		/obj/item/stack/ore/iron
 		)
@@ -85,7 +85,7 @@
 	spread_chance = 25
 	chain_rate = 4
 	meteor_types = list(
-		/obj/effect/meteor/carp=8
+		/obj/effect/meteor/carp = 8
 	)
 
 
@@ -96,8 +96,8 @@
 	spread_chance = 25
 	chain_rate = 4
 	meteor_types = list(
-		/obj/effect/meteor/carp=7,
-		/obj/effect/meteor/carp/big=1,
+		/obj/effect/meteor/carp = 7,
+		/obj/effect/meteor/carp/big = 1,
 	)
 
 // dust clouds throw dust if you go Way Fast

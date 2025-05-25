@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/independent/emergency
-	group = "Emergency & Life Support"
+	category = "Emergency & Life Support"
 	crate_type = /obj/structure/closet/crate/internals
 
 /* MARK: = Emergency =

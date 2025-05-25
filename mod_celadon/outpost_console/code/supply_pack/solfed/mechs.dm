@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/solfed/exosuit_construction
-	group = "Exosuit Construction"
+	category = "Exosuit Construction"
 
 /datum/supply_pack/faction/solfed/exosuit_construction/zeus
 	name = "Zeus Durand Conversion Kit"

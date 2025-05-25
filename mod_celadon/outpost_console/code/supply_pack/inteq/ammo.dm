@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/inteq/ammo
-	group = "Ammunition"
+	category = "Ammunition"
 
 /* MARK: = Ammo List =
 [*] - отсутствуют.
