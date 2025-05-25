@@ -648,9 +648,6 @@ Nothing else in the console has ID requirements.
 		else
 			l += "Empty Slot Operations: <A href='byond://?src=[REF(src)];switch_screen=[RDSCREEN_DESIGNDISK_UPLOAD];disk_slot=[i]'>Load Design to Slot</A>"
 		l += "</div>"
-		// [CELADON_EDIT]
-		N++
-		// [/CELADON_EDIT]
 	return l
 
 /obj/machinery/computer/rdconsole/proc/ui_designdisk_upload()	//Legacy code
