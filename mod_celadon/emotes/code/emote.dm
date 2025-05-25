@@ -628,7 +628,7 @@
 	if(!ishuman(user))
 		return
 	var/image/emote_animation = image('mod_celadon/_storge_icons/icons/assets/qol/emote_visuals.dmi', user, "sigh")
-	flick_overlay -> flick_overlay_global(emote_animation, GLOB.clients, 2.0 SECONDS)
+	flick_overlay_global(emote_animation, GLOB.clients, 2.0 SECONDS)
 
 /datum/emote/living/sigh/get_sound(mob/living/user)
 	if(!ishuman(user))
