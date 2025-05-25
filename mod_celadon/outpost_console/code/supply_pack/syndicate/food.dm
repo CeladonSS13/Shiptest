@@ -8,8 +8,7 @@
 	contains = list(/obj/item/storage/box/donkpockets/donkpocketspicy,
 					/obj/item/storage/box/donkpockets/donkpocketteriyaki,
 					/obj/item/storage/box/donkpockets/donkpocketpizza,
-					/obj/item/storage/box/donkpockets/donkpocketberry,
-					/obj/item/storage/box/donkpockets/donkpockethonk)
+					/obj/item/storage/box/donkpockets/donkpocketberry)
 	crate_name = "donk pocket crate"
 	crate_type = /obj/structure/closet/crate/freezer
 

@@ -11,7 +11,7 @@
 	speak_emote = list("purrs.", "meows.")
 	emote_see = list("shakes her head.", "shivers.")
 	speak_chance = 0.75
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 6)
+	butcher_results = list(/obj/item/food/meat/slab = 6)
 	response_help_simple = "pets"
 	response_disarm_simple = "rubs"
 	response_harm_simple = "makes terrible mistake by kicking"
@@ -80,7 +80,7 @@
 			foodtarget = 0
 			if (can_eat())
 				for(var/obj/item/reagent_containers/food/snacks/S in oview(src,1))
-					if(!istype(S, /obj/item/reagent_containers/food/snacks/grown))
+					if(!istype(S, /obj/item/food/grown))
 						if(isturf(S.loc))
 							snack = S
 							foodtarget = 1

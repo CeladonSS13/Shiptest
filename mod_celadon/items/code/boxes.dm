@@ -36,7 +36,7 @@
 		/obj/item/tank/internals/emergency_oxygen/engi = 1,\
 		/obj/item/reagent_containers/hypospray/medipen/atropine = 1,\
 		/obj/item/reagent_containers/pill/penacid = 1,\
-		/obj/item/reagent_containers/food/snacks/donkpocket/warm = 1,\
+		/obj/item/food/donkpocket/warm = 1,\
 		/obj/item/radio = 1,\
 		/obj/item/crowbar/syndie = 1,\
 		)

@@ -90,7 +90,7 @@
 					/obj/item/toy/crayon/spraycan,
 					/obj/item/toy/crayon/spraycan/lubecan,
 					/obj/item/grown/bananapeel,
-					/obj/item/reagent_containers/food/snacks/grown/banana)
+					/obj/item/food/grown/banana)
 
 /obj/item/clothing/suit/hooded/cloak/goliath/polar
 	name = "polar cloak"

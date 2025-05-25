@@ -6,8 +6,8 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 1)
 	bitesize = 4
 	filling_color = "#E2FFDE"
-	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/xeno
-	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/xeno
+	cooked_type = /obj/item/food/meat/steak/xeno
+	slice_path = /obj/item/food/meat/cutlet/xeno
 	tastes = list("meat" = 6)
 	foodtype = RAW | MEAT
 
@@ -19,8 +19,8 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 1)
 	bitesize = 4
 	filling_color = "#E2FFDE"
-	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/xeno
-	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/xeno
+	cooked_type = /obj/item/food/meat/steak/xeno
+	slice_path = /obj/item/food/meat/cutlet/xeno
 	tastes = list("meat" = 1, "acid" = 1)
 	foodtype = RAW | MEAT
 

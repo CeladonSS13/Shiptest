@@ -1,18 +1,18 @@
 // MARK: DARK H.O.N.K. AND CLOWN MECH WEAPONS
 
-/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/banana_mortar/bombanana
-	name = "bombanana mortar"
-	desc = "Equipment for clown exosuits. Launches exploding banana peels."
-	icon_state = "mecha_bananamrtr"
-	projectile = /obj/item/grown/bananapeel/bombanana
-	projectiles = 8
-	projectile_energy_cost = 1000
+// /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/banana_mortar/bombanana
+// 	name = "bombanana mortar"
+// 	desc = "Equipment for clown exosuits. Launches exploding banana peels."
+// 	icon_state = "mecha_bananamrtr"
+// 	projectile = /obj/item/grown/bananapeel/bombanana [CELADON-RETURN?] Удалено оффами.
+// 	projectiles = 8
+// 	projectile_energy_cost = 1000
 
-/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/banana_mortar/bombanana/can_attach(obj/mecha/combat/honker/M)
-	if(..())
-		if(istype(M))
-			return TRUE
-	return FALSE
+// /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/banana_mortar/bombanana/can_attach(obj/mecha/combat/honker/M)
+// 	if(..())
+// 		if(istype(M))
+// 			return TRUE
+// 	return FALSE
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/flashbang/tearstache
 	name = "\improper HONKeR-6 grenade launcher"
@@ -58,8 +58,8 @@
 	ME.attach(src)
 	ME = new /obj/item/mecha_parts/mecha_equipment/weapon/honker()
 	ME.attach(src)
-	ME = new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/banana_mortar/bombanana()//Needed more offensive weapons.
-	ME.attach(src)
+	// ME = new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/banana_mortar/bombanana()//Needed more offensive weapons. [CELADON-RETURN?] Удалено оффами.
+	// ME.attach(src)
 	ME = new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/flashbang/tearstache()//The mousetrap mortar was not up-to-snuff.
 	ME.attach(src)
 

@@ -23,19 +23,19 @@
 
 /datum/bounty/item/botany/apple_golden
 	name = "Golden Apples"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/apple/gold)
+	wanted_types = list(/obj/item/food/grown/apple/gold)
 	multiplier = 4
 	foodtype = "dessert"
 
 /datum/bounty/item/botany/banana
 	name = "Bananas"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/banana)
-	exclude_types = list(/obj/item/reagent_containers/food/snacks/grown/banana/bluespace)
+	wanted_types = list(/obj/item/food/grown/banana)
+	exclude_types = list(/obj/item/food/grown/banana/bluespace)
 	foodtype = "banana split"
 
 /datum/bounty/item/botany/banana_bluespace
 	name = "Bluespace Bananas"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/banana/bluespace)
+	wanted_types = list(/obj/item/food/grown/banana/bluespace)
 	multiplier = 2
 	foodtype = "banana split"
 
@@ -46,57 +46,57 @@
 
 /datum/bounty/item/botany/berries_death
 	name = "Death Berries"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/berries/death)
+	wanted_types = list(/obj/item/food/grown/berries/death)
 	multiplier = 2
 	bonus_desc = "He insists that \"he knows what he's doing\"."
 	foodtype = "sorbet"
 
 /datum/bounty/item/botany/berries_glow
 	name = "Glow-Berries"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/berries/glow)
+	wanted_types = list(/obj/item/food/grown/berries/glow)
 	multiplier = 2
 	foodtype = "sorbet"
 
 /datum/bounty/item/botany/cannabis
 	name = "Cannabis Leaves"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/cannabis)
-	exclude_types = list(/obj/item/reagent_containers/food/snacks/grown/cannabis/white, /obj/item/reagent_containers/food/snacks/grown/cannabis/death, /obj/item/reagent_containers/food/snacks/grown/cannabis/ultimate)
+	wanted_types = list(/obj/item/food/grown/cannabis)
+	exclude_types = list(/obj/item/food/grown/cannabis/white, /obj/item/food/grown/cannabis/death, /obj/item/food/grown/cannabis/ultimate)
 	multiplier = 4 //hush money
 	bonus_desc = "Do not mention this shipment to security."
 	foodtype = "batch of \"muffins\""
 
 /datum/bounty/item/botany/cannabis_white
 	name = "Lifeweed Leaves"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/cannabis/white)
+	wanted_types = list(/obj/item/food/grown/cannabis/white)
 	multiplier = 6
 	bonus_desc = "Do not mention this shipment to security."
 	foodtype = "\"meal\""
 
 /datum/bounty/item/botany/cannabis_death
 	name = "Deathweed Leaves"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/cannabis/death)
+	wanted_types = list(/obj/item/food/grown/cannabis/death)
 	multiplier = 6
 	bonus_desc = "Do not mention this shipment to security."
 	foodtype = "\"meal\""
 
 /datum/bounty/item/botany/cannabis_ultimate
 	name = "Omega Weed Leaves"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/cannabis/ultimate)
+	wanted_types = list(/obj/item/food/grown/cannabis/ultimate)
 	multiplier = 6
 	bonus_desc = "Under no circumstances mention this shipment to security."
 	foodtype = "batch of \"brownies\""
 
 /datum/bounty/item/botany/wheat
 	name = "Wheat Grains"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/wheat)
+	wanted_types = list(/obj/item/food/grown/wheat)
 
 /datum/bounty/item/botany/rice
 	name = "Rice Grains"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/rice)
+	wanted_types = list(/obj/item/food/grown/rice)
 
 /datum/bounty/item/botany/chili
 	name = "Chili Peppers"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/chili)
+	wanted_types = list(/obj/item/food/grown/chili)
 
 /datum/bounty/item/botany/ice_chili
 	name = "Chilly Peppers"
@@ -110,17 +110,17 @@
 
 /datum/bounty/item/botany/citrus_lime
 	name = "Limes"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/citrus/lime)
+	wanted_types = list(/obj/item/food/grown/citrus/lime)
 	foodtype = "sorbet"
 
 /datum/bounty/item/botany/citrus_lemon
 	name = "Lemons"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/citrus/lemon)
+	wanted_types = list(/obj/item/food/grown/citrus/lemon)
 	foodtype = "sorbet"
 
 /datum/bounty/item/botany/citrus_oranges
 	name = "Oranges"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/citrus/orange)
+	wanted_types = list(/obj/item/food/grown/citrus/orange)
 	bonus_desc = "Do not ship lemons or limes." //I vanted orahnge!
 	foodtype = "sorbet"
 
@@ -143,7 +143,7 @@
 
 /datum/bounty/item/botany/watermelon
 	name = "Watermelons"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/watermelon)
+	wanted_types = list(/obj/item/food/grown/watermelon)
 	foodtype = "dessert"
 
 /datum/bounty/item/botany/watermelon_holy
@@ -185,17 +185,17 @@
 
 /datum/bounty/item/botany/tomato
 	name = "Tomatoes"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/tomato)
-	exclude_types = list(/obj/item/reagent_containers/food/snacks/grown/tomato/blue)
+	wanted_types = list(/obj/item/food/grown/tomato)
+	exclude_types = list(/obj/item/food/grown/tomato/blue)
 
 /datum/bounty/item/botany/tomato_bluespace
 	name = "Bluespace Tomatoes"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/tomato/blue/bluespace)
+	wanted_types = list(/obj/item/food/grown/tomato/blue/bluespace)
 	multiplier = 4
 
 /datum/bounty/item/botany/oatz
 	name = "Oats"
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/grown/oat)
+	wanted_types = list(/obj/item/food/grown/oat)
 	multiplier = 2
 	foodtype = "batch of oatmeal"
 	bonus_desc = "Squats and oats. We're all out of oats."
