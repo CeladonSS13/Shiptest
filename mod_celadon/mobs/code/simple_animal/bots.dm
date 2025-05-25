@@ -1,15 +1,3 @@
-// Firebot
-/mob/living/simple_animal/bot/firebot/firebotmk2
-	icon = 'mod_celadon/_storge_icons/icons/mobs/aibots.dmi'
-
-//Cleanbot
-/mob/living/simple_animal/bot/cleanbot/cleanbotmk2
-	icon = 'mod_celadon/_storge_icons/icons/mobs/aibots.dmi'
-
-//Floorbot
-/mob/living/simple_animal/bot/floorbot/floorbotmk2
-	icon = 'mod_celadon/_storge_icons/icons/mobs/aibots.dmi'
-
 // Medcat
 /mob/living/simple_animal/bot/medbot/catmedbot
 	name = "\improper MediKitty"
