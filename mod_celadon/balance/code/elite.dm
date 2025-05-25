@@ -6,7 +6,7 @@
 
 // Turmor
 /obj/structure/elite_tumor
-	icon = 'mod_celadon/_storge_icons/icons/obj/tumor.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/obj1/tumor.dmi'
 	var/doom = FALSE
 	var/mfauna
 

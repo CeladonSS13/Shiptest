@@ -88,22 +88,22 @@
 	desc = "A navy blue cap."
 	icon_state = "navyblue_cap"
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/head/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/overlay/head.dmi'
 
 /obj/item/clothing/head/beret/navyblue
 	name = "Navy blue beret"
 	desc = "A navy blue beret."
 	icon_state = "navyblue_beret"
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/head/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/overlay/head.dmi'
 
 /obj/item/clothing/head/maidheadband
 	name = "maid headband"
 	desc = "Just like from one of those chinese cartoons!"
 	icon_state = "maid_headband"
 	item_state = "maid_headband"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/obj/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/overlay/head.dmi'
 
 /obj/item/clothing/head/maidheadband/syndicate
 	name = "tactical maid headband"

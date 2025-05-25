@@ -1,5 +1,5 @@
 /obj/structure/railing
-	// icon = 'mod_celadon/_storge_icons/icons/obj/railing.dmi' // Закомменчено RalseiDreemuurr по причине - кривые спрайты
+	// icon = 'mod_celadon/_storge_icons/icons/items/obj1/railing.dmi' // Закомменчено RalseiDreemuurr по причине - кривые спрайты
 	obj_flags = CAN_BE_HIT
 	// plane = BELLOW_GAME_PLANE // Закомменчено RalseiDreemuurr по причине - кривые спрайты
 

@@ -28,9 +28,9 @@
 
 
 // Дополнение к code/__DEFINES/species_clothing_defines.dm
-#define RIOL_MASK_PATH 'mod_celadon/_storge_icons/icons/clothing/onmob_mask_riol.dmi'
-#define RIOL_HEAD_PATH 'mod_celadon/_storge_icons/icons/clothing/onmob_head_riol.dmi'
-#define RIOL_SUIT_PATH 'mod_celadon/_storge_icons/icons/clothing/onmob_suit_riol.dmi'
+#define RIOL_MASK_PATH 'mod_celadon/_storge_icons/icons/items/clothing/onmob_mask_riol.dmi'
+#define RIOL_HEAD_PATH 'mod_celadon/_storge_icons/icons/items/clothing/onmob_head_riol.dmi'
+#define RIOL_SUIT_PATH 'mod_celadon/_storge_icons/icons/items/clothing/onmob_suit_riol.dmi'
 
 /// The natural temperature for a body
 #define RIOL_BODYTEMP_NORMAL 313.15

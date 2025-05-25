@@ -102,8 +102,8 @@
 /obj/item/clothing/neck/cloak/nanotrasen/cape
 	name = "\improper Nanotrasen Officer's cape"
 	desc = "Nanotrasen Cloak. This variant displays the wearer's affiliation with the NT crew."
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/cloak_nt.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/cloak_nt.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/obj/cloak_nt.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/overlay/cloak_nt.dmi'
 	icon_state = "cape"
 	item_state = "cape"
 

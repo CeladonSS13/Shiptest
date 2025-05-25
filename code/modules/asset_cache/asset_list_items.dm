@@ -492,7 +492,7 @@
 	for (var/style in 1 to length(GLOB.podstyles))
 		// [CELADON-EDIT] - CELADON_ELYSIUMPOD
 		// var/icon_file = 'icons/obj/supplypods.dmi' // CELADON-EDIT - ORIGINAL
-		var/icon_file = 'mod_celadon/_storge_icons/icons/supplypods.dmi'
+		var/icon_file = 'mod_celadon/_storge_icons/icons/structures/supplypods.dmi'
 		// [/CELADON-EDIT]
 		var/states = icon_states(icon_file)
 		if (style == STYLE_SEETHROUGH)

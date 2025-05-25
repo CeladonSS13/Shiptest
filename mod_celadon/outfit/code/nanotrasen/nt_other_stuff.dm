@@ -78,17 +78,17 @@
 /obj/item/desk_flag/nanotrasen
 	name = "nanotrasen desk flag"
 	desc = "A blue flag with a small Nanotrasen Corporation logo on it."
-	icon = 'mod_celadon/_storge_icons/icons/obj/deskflags.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/obj1/deskflags.dmi'
 	icon_state = "nanotrasen"
 
 //bureaucracy
 /obj/item/folder/nanotrasen
 	desc = "A dark-blue folder with a Nanotrasen logo."
-	icon = 'mod_celadon/_storge_icons/icons/obj/bureaucracy.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/obj1/bureaucracy.dmi'
 	icon_state = "folder_nanotrasen"
 
 /obj/item/folder/documents/nanotrasen
-	icon = 'mod_celadon/_storge_icons/icons/obj/bureaucracy.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/obj1/bureaucracy.dmi'
 	icon_state = "folder_nanotrasen"
 	name = "folder- 'TOP SECRET'"
 	desc = "A folder stamped \"Top Secret - Property of Nanotrasen Corporation. Unauthorized distribution is punishable by death.\""

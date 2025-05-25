@@ -1,7 +1,7 @@
 /obj/item/clothing/head/magus
 	name = "magus helm"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/obj/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/overlay/head.dmi'
 	icon_state = "magus"
 	item_state = "magus"
 	desc = "A helm worn by the followers of Nar'Sie."
@@ -12,8 +12,8 @@
 /obj/item/clothing/suit/magusred
 	name = "magus robes"
 	desc = "A set of armored robes worn by the followers of Nar'Sie."
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/suits.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/suit.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/obj/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/overlay/suit.dmi'
 	icon_state = "magusred"
 	item_state = "magusred"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
