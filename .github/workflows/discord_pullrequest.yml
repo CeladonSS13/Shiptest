@@ -1,13 +1,13 @@
 name: 'Discord Notification'
 on:
-  pull_request:
+  pull_request_target:
     types: [closed]
 
 jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Send Discord notification
+      - name: Send Discord PullRequest Notification
         uses: stegzilla/discord-notify@v4
         with:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
