@@ -1860,7 +1860,7 @@
 	if(!..())
 		return FALSE
 	var/image/emote_animation = image('mod_celadon/_storge_icons/icons/assets/qol/emote_visuals.dmi', user, "glasses")
-	flick_overlay(emote_animation, GLOB.clients, 1.6 SECONDS)
+	flick_overlay_global(emote_animation, GLOB.clients, 1.6 SECONDS)
 	return TRUE
 
 /////////////////////
