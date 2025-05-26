@@ -17,13 +17,13 @@
 
 /obj/item/clothing/accessory/tajaran
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/overlay/tajara_items_overlay.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	drop_sound = 'mod_celadon/_storge_sounds/sound/drop/accessory.ogg'
 	pickup_sound = 'mod_celadon/_storge_sounds/sound/pickup/accessory.ogg'
 
 /obj/item/clothing/accessory/tajaran/charm/raskariim
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/overlay/tajara_items_overlay.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	name = "metal amulet"
 	desc = "An amulet made of some light metal."
 	icon_state = "raskara_amulet"

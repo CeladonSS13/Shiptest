@@ -2,7 +2,7 @@
 	name = "Apparel of Nothing"
 	desc = "Ты блять как это вообще видишь? А ну удаляй давай, щитспавнер хуев."
 	icon = 'mod_celadon/_storge_icons/icons/items/obj1/suits.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/elysium_suit.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/elysium_suit.dmi'
 
 /obj/item/clothing/suit/apparel/black
 	name = "black cape"
@@ -43,7 +43,7 @@
 	name = "Void"
 	desc = "Этого тут быть не должно.."
 	icon = 'mod_celadon/_storge_icons/icons/items/obj1/space_item.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/spacesuits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/space_suit/overlay/spacesuitsjunkers.dmi'
 	w_class = WEIGHT_CLASS_BULKY
 	gas_transfer_coefficient = 0.01
 	permeability_coefficient = 0.02
@@ -77,7 +77,7 @@
 
 /obj/item/clothing/under/rank/avanpost
 	icon = 'mod_celadon/_storge_icons/icons/items/obj1/elysium_commander.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/elysium_commander.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/elysium_commander.dmi'
 
 /// CentCom Elyzium
 /obj/item/clothing/under/rank/avanpost/elysium_apparel

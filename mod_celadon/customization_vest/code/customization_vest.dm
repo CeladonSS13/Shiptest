@@ -1,6 +1,6 @@
 /obj/item/clothing/head/helmet/bulletproof
 	icon = 'mod_celadon/_storge_icons/icons/items/obj1/helmet_celadon.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/helmet_celadon.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/helmet_celadon.dmi'
 	unique_reskin = list(
 		"None" = "helmetalt",
 		"Desert" = "helmetalt_desert",

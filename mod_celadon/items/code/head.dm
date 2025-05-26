@@ -12,8 +12,8 @@
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/costume.dmi'
 	icon_state = "IPC_helmet"
 	item_state = "syringe_kit"
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/mob/inhands/medical_lefthand.dmi' //Grandfathered in from the wallframe for status displays.
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/mob/inhands/medical_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/medical_lefthand.dmi' //Grandfathered in from the wallframe for status displays.
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/medical_righthand.dmi'
 	clothing_flags = SNUG_FIT
 	flash_protect = FLASH_PROTECTION_SENSITIVE
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF
@@ -35,7 +35,7 @@
 	icon_state = "explorerhat"
 	item_state = "explorerhat"
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/overlay/tajara_items_overlay.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	flags_inv = 0
 
 /obj/item/clothing/head/beret/dominia

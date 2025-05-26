@@ -70,6 +70,6 @@
 	name = "maid tacticute costume"
 	desc = "Maid tacticute in China."
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/under.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/overlay/under.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/maidunder.dmi'
 	icon_state = "maid"
 	item_state = "maid"

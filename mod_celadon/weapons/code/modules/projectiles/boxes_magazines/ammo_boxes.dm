@@ -23,7 +23,7 @@
 /obj/item/storage/box/ammo/a556_box
 	name = "ammo box (5.56x45mm)"
 	desc = "A box of standard 5.56x45mm ammo."
-	icon = 'mod_celadon/_storge_icons/icons/items/ammo/ammo.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi'
 	icon_state = "a556box_856"
 /obj/item/storage/box/ammo/a556_box/PopulateContents()
 	var/static/items_inside = list(
@@ -33,7 +33,7 @@
 /obj/item/storage/box/ammo/a556_box/a856
 	name = "A856 ammo box (5.56x45mm)"
 	desc = "A box of standard 5.56x45mm ammo."
-	icon = 'mod_celadon/_storge_icons/icons/items/ammo/ammo.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi'
 	icon_state = "a556box"
 /obj/item/storage/box/ammo/a556_box/a856/PopulateContents()
 	var/static/items_inside = list(
@@ -43,7 +43,7 @@
 /obj/item/storage/box/ammo/a556_box/m903
 	name = "M903 ammo box (5.56x45mm)"
 	desc = "A box of armour-piercing 5.56x45mm ammo."
-	icon = 'mod_celadon/_storge_icons/icons/items/ammo/ammo.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi'
 	icon_state = "a556_ap"
 /obj/item/storage/box/ammo/a556_box/m903/PopulateContents()
 	var/static/items_inside = list(
@@ -53,7 +53,7 @@
 /obj/item/storage/box/ammo/a556_box/surplus
 	name = "surplus ammo box (5.56x45mm)"
 	desc = "A box of standard 5.56x45mm ammo."
-	icon = 'mod_celadon/_storge_icons/icons/items/ammo/ammo.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi'
 	icon_state = "a556box_surplus"
 /obj/item/storage/box/ammo/a556_box/surplus/PopulateContents()
 	var/static/items_inside = list(
@@ -89,7 +89,7 @@
 /obj/item/storage/box/ammo/a308
 	name = "Коробка патронов .308"
 	desc = "Коробка стандартных патронов .308. Заводского качества, ещё в смазке."
-	icon = 'mod_celadon/_storge_icons/icons/items/ammo/ammo.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi'
 	icon_state = "308_fmj"
 
 /obj/item/storage/box/ammo/a308/PopulateContents()
@@ -154,7 +154,7 @@
 /obj/item/storage/box/ammo/a858_ammo_box
 	name = "Ammo box (8x58mm Caseless)"
 	desc = "A box of standard 8x58mm ammo."
-	icon = 'mod_celadon/_storge_icons/icons/items/ammo/ammo.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi'
 	icon_state = "a858box"
 
 /obj/item/storage/box/ammo/a858_ammo_box/PopulateContents()
