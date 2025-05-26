@@ -2,7 +2,7 @@
 	name = "cloth footwraps"
 	desc = "A roll of treated cloth used for wrapping clawed feet."
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/shoes/miscellaneous.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/shoes/miscellaneous.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/miscellaneous.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/obj/inhands/left_miscellaneous.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/obj/inhands/right_miscellaneous.dmi'
 	icon_state = "clothwrap"
@@ -31,7 +31,7 @@
 	name = "high heels"
 	desc = "A pair of high-heeled shoes. Fancy!"
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/shoes/miscellaneous.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/shoes/miscellaneous.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/miscellaneous.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/obj/inhands/left_miscellaneous.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/obj/inhands/right_miscellaneous.dmi'
 	icon_state = "heels"
@@ -53,7 +53,7 @@
 
 /obj/item/clothing/shoes/galoshes/tajara_galoshes
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/shoes/miscellaneous.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/shoes/miscellaneous.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/miscellaneous.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/obj/inhands/left_miscellaneous.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/obj/inhands/right_miscellaneous.dmi'
 	icon_state = "galoshes"
@@ -63,7 +63,7 @@
 	desc = "Help you swim good."
 	name = "swimming fins"
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/shoes/miscellaneous.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/shoes/miscellaneous.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/miscellaneous.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/obj/inhands/left_miscellaneous.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/obj/inhands/right_miscellaneous.dmi'
 	icon_state = "flippers"
@@ -75,7 +75,7 @@
 	name = "bunny slippers"
 	desc = "Fluffy!"
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/shoes/slippers.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/shoes/slippers.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/slippers.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/obj/inhands/left_slippers.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/obj/inhands/right_slippers.dmi'
 	icon_state = "slippers"
@@ -100,7 +100,7 @@
 	desc = "A pair of rather plain wooden sandals."
 	name = "sandals"
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/shoes/sandals.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/shoes/sandals.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/sandals.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/obj/inhands/left_sandals.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/obj/inhands/right_sandals.dmi'
 	icon_state = "sandals"
@@ -137,8 +137,8 @@
 /obj/item/clothing/shoes/magboots/clown
 	name = "clown shoes"
 	desc = "The prankster's standard-issue clowning shoes. Damn they're huge! There's a red light on the side."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/obj/shoes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/overlay/feet.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/feet.dmi'
 	icon_state = "clown_prototype0"
 	magboot_state = "clown_prototype"
 	slowdown_active = SHOES_SLOWDOWN + 1

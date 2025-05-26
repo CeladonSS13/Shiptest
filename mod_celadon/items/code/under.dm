@@ -83,7 +83,7 @@
 
 /obj/item/clothing/under/suit/galaxy
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/suits/galaxy.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/suits/galaxy.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/galaxy.dmi'
 	// can_adjust = FALSE - [CELADON-ALERT] - Параметр удалён оффами - https://github.com/shiptest-ss13/Shiptest/pull/4738
 	name = "blue galaxy suit"
 	icon_state = "lawyer_galaxy_blue"
@@ -130,8 +130,8 @@
 	desc = "A 'tactical' turtleneck fashioned to the likeness of a maid outfit. Why the Syndicate has these, you'll never know."
 	icon_state = "syndimaid"
 	item_state = "syndimaid"
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/obj/under.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/overlay/under.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/under.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/under.dmi'
 
 /obj/item/clothing/under/syndicate/skirt/maid/Initialize()
 	. = ..()
@@ -143,8 +143,8 @@
 	desc = "A 'tactical' turtleneck fashioned to the likeness of a maid outfit. This one is lovingly knitted in the colors of the IRMG."
 	icon_state = "inteqmaid"
 	item_state = "inteqmaid"
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/obj/under.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/overlay/under.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/under.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/under.dmi'
 	// can_adjust = FALSE - [CELADON-ALERT] - Параметр удалён оффами - https://github.com/shiptest-ss13/Shiptest/pull/4738
 	supports_variations = KEPORI_VARIATION | VOX_VARIATION | DIGITIGRADE_VARIATION_NO_NEW_ICON
 

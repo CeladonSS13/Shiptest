@@ -32,7 +32,7 @@
 
 /obj/item/clothing/suit/armor/vest/marine
 	icon = 'mod_celadon/_storge_icons/icons/items/obj1/armor_celadon.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/armor_celadon.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/armor_celadon.dmi'
 	unique_reskin = list(
 		"None" = "marine_light",
 		"Desert" = "marine_light_desert",

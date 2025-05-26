@@ -89,8 +89,8 @@
 	desc = "The best part of a maid costume."
 	icon_state = "maidapron"
 	item_state = "maidapron"
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/obj/accessories.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/overlay/accessories.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/accessories/accessories.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/accessories/overlay/accessories.dmi'
 	minimize_when_attached = FALSE
 	attachment_slot = null
 

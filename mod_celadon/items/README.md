@@ -74,8 +74,8 @@ ID мода: CELADON_ITEMS
 - `mod_celadon/_storge_icons/icons/items/ammo/ammo.dmi`
 - `sound/weapons/gun/shotgun/insert_shell.ogg`
 - `mod_celadon/_storge_icons/icons/items/obj1/back.dmi`
-- `mod_celadon/_storge_icons/icons/items/mob/back.dmi`
-- `mod_celadon/_storge_icons/icons/items/clothing/overlay/head.dmi`
+- `mod_celadon/_storge_icons/icons/items/clothing/back/overlay/back.dmi`
+- `mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi`
 - `mod_celadon/_storge_icons/icons/items/obj/head/hats.dmi`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,

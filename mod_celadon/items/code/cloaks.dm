@@ -89,7 +89,7 @@
 
 /obj/item/clothing/replica_trenchcoat
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/suits/cloaks.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/suits/cloaks.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/overlay/cloaks.dmi'
 	slot_flags = ITEM_SLOT_OCLOTHING | ITEM_SLOT_NECK
 	name = "replica armored trenchcloak"
 	desc = "This replica one appears to be designed to be draped over one's shoulders rather than worn normally.."
@@ -102,8 +102,8 @@
 /obj/item/clothing/neck/cloak/nanotrasen/cape
 	name = "\improper Nanotrasen Officer's cape"
 	desc = "Nanotrasen Cloak. This variant displays the wearer's affiliation with the NT crew."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/obj/cloak_nt.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/overlay/cloak_nt.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/cloak_nt.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/overlay/cloak_nt.dmi'
 	icon_state = "cape"
 	item_state = "cape"
 

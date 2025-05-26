@@ -9,7 +9,7 @@
 	name = "television helmet"
 	desc = "A mysterious headgear made from the hollowed out remains of a status display. How very retro-retro-futuristic of you."
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/head/costume.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/head/costume.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/costume.dmi'
 	icon_state = "IPC_helmet"
 	item_state = "syringe_kit"
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/mob/inhands/medical_lefthand.dmi' //Grandfathered in from the wallframe for status displays.
@@ -42,7 +42,7 @@
 	name = "tribunal initiate's beret"
 	desc = "A simple red beret with a golden badge marking its wearer as an initiate of the Moroz Holy Tribunal."
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/head/beret.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/head/beret.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/beret.dmi'
 	icon_state = "dominia_beret"
 	item_state = "dominia_beret"
 
@@ -80,7 +80,7 @@
 	name = "elysium beret"
 	desc = "A green beret."
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/head/beret.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/head/beret.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/beret.dmi'
 	icon_state = "elysium_beret"
 	item_state = "elysium_beret"
 /obj/item/clothing/head/cap_navyblue
@@ -88,22 +88,22 @@
 	desc = "A navy blue cap."
 	icon_state = "navyblue_cap"
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/head/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/overlay/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 
 /obj/item/clothing/head/beret/navyblue
 	name = "Navy blue beret"
 	desc = "A navy blue beret."
 	icon_state = "navyblue_beret"
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/head/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/overlay/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 
 /obj/item/clothing/head/maidheadband
 	name = "maid headband"
 	desc = "Just like from one of those chinese cartoons!"
 	icon_state = "maid_headband"
 	item_state = "maid_headband"
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 
 /obj/item/clothing/head/maidheadband/syndicate
 	name = "tactical maid headband"

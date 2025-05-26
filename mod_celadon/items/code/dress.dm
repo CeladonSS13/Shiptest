@@ -1,5 +1,5 @@
 /obj/item/clothing/under/dress/flower
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/suits/dress.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/dress.dmi'
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/suits/dress.dmi'
 	name = "flower dress"
 	desc = "Lovely dress."
@@ -9,7 +9,7 @@
 	// can_adjust = FALSE - [CELADON-ALERT] - Параметр удалён оффами - https://github.com/shiptest-ss13/Shiptest/pull/4738
 
 /obj/item/clothing/under/dress/wedding
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/suits/dress.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/dress.dmi'
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/suits/dress.dmi'
 	name = "white wedding dress"
 	desc = "A white wedding gown made from the finest silk."

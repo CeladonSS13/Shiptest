@@ -83,7 +83,7 @@
 /obj/item/clothing/suit/toggle/leather_jacket/midriff
 	name = "cropped leather jacket"
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/suits/cropped_leather_jacket.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/suits/cropped_leather_jacket.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/cropped_leather_jacket.dmi'
 	desc = "A thick leather jacket that doesn't actually cover the waist. Rebel against what's expected of your jacket!"
 	icon_state = "mid"
 	item_state = "mid"
@@ -92,8 +92,8 @@
 /obj/item/clothing/suit/yakuza
 	name = "tojo clan jacket"
 	desc = "The jacket of a mad dog."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/obj/suits.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/overlay/suit.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/suit.dmi'
 	icon_state = "MajimaJacket"
 	item_state = "MajimaJacket"
 	body_parts_covered = ARMS
@@ -101,8 +101,8 @@
 /obj/item/clothing/suit/dutch
 	name = "dutch's jacket"
 	desc = "For those long nights on the beach in Tahiti."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/obj/suits.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/overlay/suit.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/suit.dmi'
 	icon_state = "DutchJacket"
 	item_state = "DutchJacket"
 	body_parts_covered = ARMS

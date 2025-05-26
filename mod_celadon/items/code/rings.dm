@@ -3,7 +3,7 @@
 
 /obj/item/clothing/gloves/ring
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/ring.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/inhands/hands.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hands/overlay/hands2.dmi'
 	name = "gold ring"
 	desc = "A tiny gold ring, sized to wrap around a finger."
 	gender = NEUTER
