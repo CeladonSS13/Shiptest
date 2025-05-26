@@ -3,7 +3,7 @@
 	name = "\improper Solar Federation Logo"
 	sign_change_name = "Solar Federation Logo"
 	desc = "It's the logo of the Solar Federation. Most likely, this structure belongs to the armed forces of the Solar Federation."
-	icon = 'mod_celadon/_storge_icons/icons/items/fluffLOGOstructures.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/fluffLOGOstructures.dmi'
 	icon_state = "sol_fed_wall_logo"
 	is_editable = TRUE
 
@@ -11,7 +11,7 @@
 	name = "\improper Elysium Brigade Logo"
 	sign_change_name = "Elysium Brigade logo"
 	desc = "The logo of the Solar Federation's Elysium Brigade. It is inscribed above the “Freedom” chevron. Most likely this ship belongs to the Elysium Brigade and is part of the Solar Federation army. The Elysium Brigade is a volunteer regiment of the Solar Federation that maintains order on the territory of the Elysium Republic."
-	icon = 'mod_celadon/_storge_icons/icons/items/fluffLOGOstructures.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/fluffLOGOstructures.dmi'
 	icon_state = "elysium_brigade_logo"
 	is_editable = TRUE
 
@@ -76,7 +76,7 @@
 /obj/item/bedsheet/solfed
 	name = "\improper Solar Federation bedsheet"
 	desc = "It's a quilt made in the style of the Solar Federation flag. Cover yourself with it and feel the warmth of democracy."
-	icon = 'mod_celadon/_storge_icons/icons/items/fluffLOGOstructures.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/fluffLOGOstructures.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/overlay/sf_neck.dmi'
 	icon_state = "solfed_bedsheet"
 	item_state = "solfed_bedsheet"
@@ -339,7 +339,7 @@
 	name = "\improper SolFed keycard"
 	desc = "A SolFed keycard with no proper access to speak of."
 	assignment = "Navy member"
-	icon = 'mod_celadon/_storge_icons/icons/items/card.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/sfcard.dmi'
 	icon_state = "solfed"
 	uses_overlays = FALSE
 
@@ -352,30 +352,30 @@
 /obj/item/desk_flag/solfed
 	name = "SolFed desk flag"
 	desc = "A white-blue flag with a SolFed flag on it."
-	icon = 'mod_celadon/_storge_icons/icons/items/bureaucracy.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/sfbureaucracy.dmi'
 	icon_state = "solfed"
 
 /obj/item/folder/solfed
 	desc = "A blue folder with a SolFed coat of arms emblem."
-	icon = 'mod_celadon/_storge_icons/icons/items/bureaucracy.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/sfbureaucracy.dmi'
 	icon_state = "folder_solfed"
 
 /obj/item/folder/documents/solfed
 	document = /obj/item/documents/solfed
-	icon = 'mod_celadon/_storge_icons/icons/items/bureaucracy.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/sfbureaucracy.dmi'
 	icon_state = "folder_solfed"
 	name = "folder- 'TOP SECRET'"
 	desc = "A folder stamped \"Top Secret - Property of the Solar Federation. Unauthorized distribution is punishable by death.\""
 
 /obj/item/documents/solfed
 	desc = "\"TOP SECRET\" SolFed documents, filled with complex logistical diagrams withing the republics, terraforming projects and navy routes."
-	icon = 'mod_celadon/_storge_icons/icons/items/bureaucracy.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/sfbureaucracy.dmi'
 	icon_state = "docs_gold"
 
 /obj/item/pen/solfed
 	name = "\improper SolFed pen"
 	desc = "A fancy gold-blue pen used by SolFed's bureaucrats."
-	icon = 'mod_celadon/_storge_icons/icons/items/bureaucracy.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/sfbureaucracy.dmi'
 	icon_state = "pen-sf"
 
 //Fancy eknifes!!

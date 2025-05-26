@@ -4,7 +4,7 @@
 //********************
 
 /obj/item/clothing/suit/tajaran
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	name = "sun sister robe"
 	desc = "A robe worn by the female priests of the S'rand'Marr religion."
@@ -16,7 +16,7 @@
 					/obj/item/reagent_containers/food/drinks/bottle/holywater)
 
 /obj/item/clothing/suit/toggle/tajaran/wool
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	name = "wool coat"
 	desc = "An coat, this one is a design commonly found among the Rhazar'Hrujmagh people."
@@ -30,7 +30,7 @@
 	supports_variations = DIGITIGRADE_VARIATION
 
 /obj/item/clothing/suit/toggle/tajaran/naval_coat
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	name = "naval coat"
 	desc = "A thick wool coat"
@@ -44,7 +44,7 @@
 	supports_variations = DIGITIGRADE_VARIATION
 
 /obj/item/clothing/suit/toggle/tajaran/med_coat
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	name = "medical coat"
 	desc = "A sterile insulated coat made of leather stitched over fur."
@@ -58,7 +58,7 @@
 	supports_variations = DIGITIGRADE_VARIATION
 
 /obj/item/clothing/suit/hunting
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	name = "hunting coat"
 	desc = "A coat made of pelts. Commonly used by hunters."

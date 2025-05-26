@@ -1,7 +1,7 @@
 /obj/item/clothing/head/bandana/elysium
 	name = "void bandana"
 	desc = "This is a simple bandana with a patriotic inscription \"Glory to the Republic!\" on it."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/hats.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats3.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/elysium_head.dmi'
 
 /obj/item/clothing/head/bandana/elysium/black
@@ -22,7 +22,7 @@
 /obj/item/clothing/head/turban
 	name = "void turban"
 	desc = "This is a very popular traditional headwear from the Republic of Elysium, and may be seen often in daily life within its' borders. It is traditionally worn only by men."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/hats.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats3.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/elysium_head.dmi'
 
 /obj/item/clothing/head/turban/black
@@ -38,7 +38,7 @@
 /obj/item/clothing/head/helmet/m10_elysium
 	name = "M10 pattern helmet"
 	desc = "A widespread protective helmet initally designed for Republic of Elysium's law enforcement, but with time it has found use by its' civilans. There is a handband on it with an inscription that reads: \"Power in unity, wisdom in faith.\""
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/hats.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats3.dmi'
 	icon_state = "m10helm_elysium"
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/elysium_head.dmi'
 	mob_overlay_state = "m10helm_elysium"
@@ -46,7 +46,7 @@
 /obj/item/clothing/head/shemag
 	name = "void shemagh"
 	desc = "This is a popular piece of headwear from the Republic of Elysium, and it is perfect for protecting one from the Starbull's dust storms."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/hats.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats3.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/elysium_head.dmi'
 
 /obj/item/clothing/head/shemag/black
@@ -67,7 +67,7 @@
 /obj/item/clothing/head/space/elysm
 	name = "Void"
 	desc = "Этого тут быть не должно.."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/hats.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats3.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/space_suit/overlay/el_space.dmi'
 	clothing_flags = STOPSPRESSUREDAMAGE | THICKMATERIAL | SNUG_FIT | BLOCK_GAS_SMOKE_EFFECT | ALLOWINTERNALS
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
@@ -85,7 +85,7 @@
 /obj/item/clothing/head/space/elysm/space_helm
 	name = "Elysium EVA Helmet"
 	desc = "A pretty nicely made helmet with Elysium Separatists markings."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/hats.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats3.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/space_suit/overlay/el_space.dmi'
 	icon_state = "space_elysium"
 	mob_overlay_state = "space_elysium"
@@ -95,7 +95,7 @@
 /obj/item/clothing/head/turban_elysium
 	name = "\improper CentCom commander cap"
 	desc = "A traditional turban worn by Elysium employees. It is dyed in the national color of lettuce, which symbolizes the Starbull Gardens."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/elysium_commander.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/elysium_commander.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/elysium_commander.dmi'
 	icon_state = "turban_elysium"
 	item_state = "turban_elysium"
@@ -106,7 +106,7 @@
 /obj/item/clothing/head/shemag_elysium
 	name = "\improper CentCom commander cap"
 	desc = "A traditional shemag worn by Elysium employees. It is dyed in the national color of lettuce, which symbolizes the Starbull Gardens."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/elysium_commander.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/elysium_commander.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/elysium_commander.dmi'
 	icon_state = "shemag_elysium"
 	item_state = "shemag_elysium"

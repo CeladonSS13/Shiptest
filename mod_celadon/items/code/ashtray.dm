@@ -1,7 +1,7 @@
 /obj/item/storage/ashtray
 	name = "Пепельница"
 	desc = "Дешёвая пепельница."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/ashtray.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/ashtray.dmi'
 	icon_state = "ashtray_bl"
 	var/icon_half  = "ashtray_half_bl"
 	var/icon_full  = "ashtray_full_bl"
@@ -125,7 +125,7 @@
 
 /obj/item/trash/broken_ashtray
 	name = "Осколки пепельницы"
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/ashtray.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/ashtray.dmi'
 	icon_state = "ashtray_bork_bl"
 
 /obj/item/trash/broken_ashtray/Initialize(mapload)

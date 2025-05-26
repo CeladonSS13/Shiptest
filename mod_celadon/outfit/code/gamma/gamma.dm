@@ -7,7 +7,7 @@
 /obj/item/clothing/head/helmet/riot/gamma_vision
 	name = "hardhat night vision gamma"
 	desc = "No data."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/gammaerthead.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/overlay/gammaerthead.dmi'
 	icon_state = "gamma_vision"
 	item_state = "gamma_vision"
@@ -59,7 +59,7 @@
 /obj/item/clothing/head/helmet/space/hardsuit/security/gamma/white_squadron_rig
 	name = "white squadron rig helmet"
 	desc = "No data"
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/gammaerthead.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/overlay/gammaerthead.dmi'
 	icon_state = "hardsuit0-gamma"
 	item_state = "hardsuit1-gamma"
@@ -69,7 +69,7 @@
 /obj/item/clothing/suit/space/hardsuit/security/gamma/white_squadron_rig
 	name = "white squadron rig"
 	desc = "No data"
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/suit.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/gammasuit.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/overlay/gammasuit.dmi'
 	icon_state = "white_squadron_rig"
 	item_state = "white_squadron_rig"
@@ -80,7 +80,7 @@
 /obj/item/clothing/suit/armor/vest/gamma
 	name = "Gamma armor vest"
 	desc = "No data."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/uniform.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/gammauniform.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/gammauniform.dmi'
 	icon_state = "white_squadron_jacket"
 	item_state = "white_squadron_jacket"
@@ -89,7 +89,7 @@
 /obj/item/clothing/under/gamma/uniform
 	name = "Комбенизон ГАММЫ"
 	desc = "No data."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/uniform.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/gammauniform.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/gammauniform.dmi'
 	icon_state = "white_squadron_uniform"
 	mob_overlay_state = "white_squadron_uniform"
@@ -97,7 +97,7 @@
 /obj/item/clothing/gloves/combat/gamma
 	name = "white squadron gloves"
 	desc = "No data."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/gloves.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hands/gammagloves.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hands/overlay/gammagloves.dmi'
 	icon_state = "white_squadron_gloves"
 	siemens_coefficient = 0
@@ -113,8 +113,8 @@
 /obj/item/clothing/shoes/gamma
 	name = "Gamma boots"
 	desc = "no data."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/shoes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/2shoes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/gammashoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/gammashoes.dmi'
 	icon_state = "white_squadron_boots"
 	item_state = "white_squadron_boots"
 	strip_delay = 100
@@ -125,7 +125,7 @@
 /obj/item/storage/backpack/messenger/gamma
 	name = "gamma messenger bag"
 	desc = "no data."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/back.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/gammaback.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/back.dmi'
 	icon_state = "white_squadron_backpack"
 	item_state = "white_squadron_backpack"
@@ -133,7 +133,7 @@
 /obj/item/storage/belt/security/webbing/gamma
 	name = "gamma cargo"
 	desc = "no data."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/back.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/gammaback.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/back.dmi'
 	slot_flags = ITEM_SLOT_BELT
 	icon_state = "white_squadron_cargo"
@@ -142,8 +142,8 @@
 /obj/item/melee/gamma_tomahawk
 	name = "gamma tomahawk"
 	desc = "no data"
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/weapons.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/weapons/axeweapons.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/axeweapons.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/weapons/overlay/axeweapons.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/weapons_hands_left.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/weapons_hands_right.dmi'
 	icon_state = "white_squadron_tomahawk"

@@ -2,7 +2,7 @@
 // 		UNDER
 //********************
 /obj/item/clothing/under/tajaran
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	// can_adjust = FALSE - [CELADON-ALERT] - Параметр удалён оффами - https://github.com/shiptest-ss13/Shiptest/pull/4738
 	name = "people's republic consular uniform"
@@ -51,7 +51,7 @@
 	name = "fancy dress"
 	desc = "Created for the rich and party-loving circles, this dress is fashioned from smooth silk and is see through at parts. This one is white."
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
 	icon_state = "taj_dress_white"
 	item_state = "taj_dress_white"
 
@@ -82,7 +82,7 @@
 	item_state = "taj_dress_fancy"
 
 /obj/item/clothing/under/suit/galaxy
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/suits/galaxy.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/galaxy.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/galaxy.dmi'
 	// can_adjust = FALSE - [CELADON-ALERT] - Параметр удалён оффами - https://github.com/shiptest-ss13/Shiptest/pull/4738
 	name = "blue galaxy suit"
@@ -105,7 +105,7 @@
 	dying_key = DYE_REGISTRY_JUMPSKIRT
 
 /obj/item/clothing/under/suit/archeologist
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	name = "archaeologist uniform"
 	desc = "A rugged uniform used by archaeologists. It is already covered in dirt and ancient dust."

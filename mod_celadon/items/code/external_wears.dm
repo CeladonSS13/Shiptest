@@ -1,5 +1,5 @@
 /obj/item/clothing/suit/jacket/archeologist
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	name = "archeologist jacket"
 	desc = "A leather jacket used by archeologists. Perfect to store dynamite sticks."

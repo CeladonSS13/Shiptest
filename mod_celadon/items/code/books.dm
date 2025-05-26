@@ -1,7 +1,7 @@
 /obj/item/elysm_manual
 	name = "Book of Elysm"
 	desc = "The book's cover reads: \"The national language of the Republic of Elysium, which is a mixture of Ard al-Elysm Almaveud and newly arrived settlers speaking a variation of Arabic 2378 Sol\""
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/book.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/book.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/books_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/books_righthand.dmi'
 	icon_state = "elysm_book"
@@ -38,7 +38,7 @@
 /obj/item/alquadim_manual
 	name = "Book of Alquadim-Elysm"
 	desc = "The book's cover reads: \"The traditional ancient language of the Elysium Republic, originated in Ard al-Elysm Almaveuda, which are representatives of the Arabic language of 2147, isolated for almost 2 centuries\""
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/book.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/book.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/books_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/books_righthand.dmi'
 	icon_state = "alquadim_elysm"
@@ -75,7 +75,7 @@
 /obj/item/thayos_manual
 	name = "Book of Thayoss"
 	desc = "The book's cover reads: \"The national language of the Thayos Interstellar Empire, which is a modification of Japanese 2475\""
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/book.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/book.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/books_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/books_righthand.dmi'
 	icon_state = "thayos_book"
@@ -112,7 +112,7 @@
 /obj/item/fuyo_manual
 	name = "Book of Fuyo"
 	desc = "The book's cover reads: \"The second language of the Taios Interstellar Empire, which is a modification of Chinese 2475\""
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/book.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/book.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/books_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/books_righthand.dmi'
 	icon_state = "fuyo_book"

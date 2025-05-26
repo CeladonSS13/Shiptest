@@ -30,7 +30,7 @@
 	В официальных документах эта бита проходит под элегантным названием \"Высокоскоростная система доставки Наказаний\". \
 	Выдаваясь только самым верным и эффективным офицерам, это оружие является одновременно символом статуса \
 	и инструментом высшего правосудия."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/centcom.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/centcom.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/left_centcom.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/right_centcom.dmi'
 	w_class = WEIGHT_CLASS_SMALL

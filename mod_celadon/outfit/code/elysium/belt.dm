@@ -3,7 +3,7 @@
 	name = "vest"
 	desc = "Vest, can hold security gear."
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/accessories/overlay/accessories2.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/accessories.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/accessories/accessories2.dmi'
 	icon_state = "vest_black"
 	item_state = "vest_black"
 	lefthand_file = 'icons/mob/inhands/equipment/belt_lefthand.dmi'

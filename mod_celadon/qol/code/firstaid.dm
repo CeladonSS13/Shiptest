@@ -1,7 +1,7 @@
 /obj/item/storage/firstaid/synthflesh
 	name = "synthflesh kit"
 	desc = "kit with a meat symbol on it"
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/storage.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/storage.dmi'
 	icon_state = "synthflesh"
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/storage_hands_left.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/storage_hands_right.dmi'

@@ -3,7 +3,7 @@
 	desc = "An elite version of the SST helmet, with improved armour and fireproofing. Gives you a strong feeling of Déjà vu."
 	alt_desc = "An elite version of the SST helmet, with improved armour and fireproofing. It is in combat mode."
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/overlay/EliteSSTHardsuitHelm.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/EliteSSTHardsuitHelm.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/EliteSSTHardsuitHelm.dmi'
 	icon_state = "hardsuit0-syndiesst"
 	item_state = "hardsuit1-syndiesst"
 	hardsuit_type = "syndiesst"
@@ -13,7 +13,7 @@
 	desc = "An elite version of the SST helmet, with improved armour and fire . Shows clear signs of wear and tear, with scuffs and scratches hinting at past battles. Some pshieldingarts of the armour even seem to have a bit of cardboard reinforcement. Gives you a strong feeling of Déjà vu."
 	alt_desc = "An elite version of the SST helmet, with improved armour and fireproofing. It is in combat mode."
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/overlay/EliteSSTHardsuitHelm.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/EliteSSTHardsuitHelm.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/EliteSSTHardsuitHelm.dmi'
 	icon_state = "hardsuit0-syndiesst"
 	item_state = "hardsuit1-syndiesst"
 	hardsuit_type = "syndiesst"
@@ -24,7 +24,7 @@
 	desc = "An elite version of the syndicate helmet, with improved armour and fire shielding. This one is made special for medics and shows clear signs of wear and tear, with scuffs and scratches hinting at past battles. Some parts of the armour even seem to have a bit of cardboard reinforcement. Gives you a strong feeling of Déjà vu"
 	alt_desc = "An elite version of the syndicate helmet, with improved armour and fireproofing. It is in combat mode."
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/overlay/EliteMedicalHardsuitHelm.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/EliteMedicalHardsuitHelm.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/EliteMedicalHardsuitHelm.dmi'
 	icon_state = "hardsuit0-syndiemed"
 	item_state = "hardsuit1-syndiemed"
 	hardsuit_type = "syndiemed"
@@ -35,7 +35,7 @@
 	desc = "An elite version of the syndicate helmet, with improved armour and fire shielding. This one has a contractor style and shows clear signs of wear and tear, with scuffs and scratches hinting at past battles. Some parts of the armour even seem to have a bit of cardboard reinforcement. Gives you a strong feeling of Déjà vu."
 	alt_desc = "An elite version of the syndicate helmet, with improved armour and fireproofing. It is in combat mode."
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/overlay/EliteContractorHardsuitHelm.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/EliteContractorHardsuitHelm.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/EliteContractorHardsuitHelm.dmi'
 	icon_state = "hardsuit0-syndiecontractor"
 	item_state = "hardsuit1-syndiecontractor"
 	hardsuit_type = "syndiecontractor"
@@ -46,7 +46,7 @@
 	desc = "An elite version of the SST hardsuit, with improved armour and fire shielding. Gives you a strong feeling of Déjà vu."
 	alt_desc = "An elite version of the SST hardsuit, with improved armour and fire shielding. It is in combat mode."
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/overlay/EliteSSTHardsuit.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/EliteSSTHardsuit.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/EliteSSTHardsuit.dmi'
 	icon_state = "hardsuit0-syndiesst"
 	item_state = "hardsuit1-syndiesst"
 	hardsuit_type = "syndiesst"
@@ -57,7 +57,7 @@
 	desc = "An elite version of the syndicate helmet, with improved armour and fireproofing. Gives you a strong feeling of Déjà vu."
 	alt_desc = "An elite version of the syndicate helmet, with improved armour and fireproofing. It is in combat mode."
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/overlay/EliteSyndicateHardsuitHelm.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/EliteSyndicateHardsuitHelm.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/EliteSyndicateHardsuitHelm.dmi'
 	icon_state = "hardsuit0-syndieoldelite"
 	item_state = "hardsuit1-syndieoldelite"
 	hardsuit_type = "syndieoldelite"
@@ -67,7 +67,7 @@
 	desc = "An elite version of the syndicate hardsuit, with improved armour and fire shielding. Gives you a strong feeling of Déjà vu."
 	alt_desc = "An elite version of the syndicate hardsuit, with improved armour and fire shielding. It is in combat mode."
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/overlay/EliteSyndicateHardsuit.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/EliteSyndicateHardsuit.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/EliteSyndicateHardsuit.dmi'
 	icon_state = "hardsuit0-syndieoldelite"
 	item_state = "hardsuit1-syndieoldelite"
 	hardsuit_type = "syndieoldelite"
@@ -78,7 +78,7 @@
 	desc = "An elite version of the syndicate helmet, with improved armour and fireproofing. This one is made special for medics. Gives you a strong feeling of Déjà vu."
 	alt_desc = "An elite version of the syndicate helmet, with improved armour and fireproofing. It is in combat mode."
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/overlay/EliteMedicalHardsuitHelm.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/EliteMedicalHardsuitHelm.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/EliteMedicalHardsuitHelm.dmi'
 	icon_state = "hardsuit0-syndiemed"
 	item_state = "hardsuit1-syndiemed"
 	hardsuit_type = "syndiemed"
@@ -88,7 +88,7 @@
 	desc = "An elite version of the syndicate hardsuit, with improved armour and fire shielding. This one is made special for medics. Gives you a strong feeling of Déjà vu."
 	alt_desc = "An elite version of the syndicate hardsuit, with improved armour and fire shielding. It is in combat mode."
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/overlay/EliteMedicalHardsuit.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/EliteMedicalHardsuit.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/EliteMedicalHardsuit.dmi'
 	icon_state = "hardsuit0-syndiemed"
 	item_state = "hardsuit1-syndiemed"
 	hardsuit_type = "syndiemed"
@@ -99,7 +99,7 @@
 	desc = "An elite version of the syndicate helmet, with improved armour and fireproofing. This one has contractor style. Gives you a strong feeling of Déjà vu."
 	alt_desc = "An elite version of the syndicate helmet, with improved armour and fireproofing. It is in combat mode."
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/overlay/EliteContractorHardsuitHelm.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/EliteContractorHardsuitHelm.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/EliteContractorHardsuitHelm.dmi'
 	icon_state = "hardsuit0-syndiecontractor"
 	item_state = "hardsuit1-syndiecontractor"
 	hardsuit_type = "syndiecontractor"
@@ -109,7 +109,7 @@
 	desc = "An elite version of the syndicate hardsuit, with improved armour and fire shielding. This one has contractor style. Gives you a strong feeling of Déjà vu."
 	alt_desc = "An elite version of the syndicate hardsuit, with improved armour and fire shielding. It is in combat mode."
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/overlay/EliteContractorHardsuit.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/EliteContractorHardsuit.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/EliteContractorHardsuit.dmi'
 	icon_state = "hardsuit0-syndiecontractor"
 	item_state = "hardsuit1-syndiecontractor"
 	hardsuit_type = "syndiecontractor"
@@ -119,7 +119,7 @@
 	desc = "An elite version of the syndicate hardsuit, with improved armour and fire shielding. This one has a contractor style and shows clear signs of wear and tear, with scuffs and scratches hinting at past battles. Some parts of the armour even seem to have a bit of cardboard reinforcement. Gives you a strong feeling of Déjà vu."
 	alt_desc = "An elite version of the syndicate hardsuit, with improved armour and fire shielding. It is in combat mode."
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/overlay/EliteContractorHardsuit.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/EliteContractorHardsuit.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/EliteContractorHardsuit.dmi'
 	icon_state = "hardsuit0-syndiecontractor"
 	item_state = "hardsuit1-syndiecontractor"
 	hardsuit_type = "syndiecontractor"
@@ -131,7 +131,7 @@
 	desc = "An elite version of the syndicate hardsuit, with improved armour and fire shielding. This one is made special for medics and shows clear signs of wear and tear, with scuffs and scratches hinting at past battles. Some parts of the armour even seem to have a bit of cardboard reinforcement. Gives you a strong feeling of Déjà vu"
 	alt_desc = "An elite version of the syndicate hardsuit, with improved armour and fire shielding. It is in combat mode."
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/overlay/EliteMedicalHardsuit.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/EliteMedicalHardsuit.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/EliteMedicalHardsuit.dmi'
 	icon_state = "hardsuit0-syndiemed"
 	item_state = "hardsuit1-syndiemed"
 	hardsuit_type = "syndiemed"
@@ -143,7 +143,7 @@
 	desc = "An elite version of the SST hardsuit, with improved armour and fire shielding. Shows clear signs of wear and tear, with scuffs and scratches hinting at past battles. Some parts of the armour even seem to have a bit of cardboard reinforcement. Gives you a strong feeling of Déjà vu."
 	alt_desc = "An elite version of the SST hardsuit, with improved armour and fire shielding. It is in combat mode."
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/overlay/EliteSSTHardsuit.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/obj1/EliteSSTHardsuit.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/EliteSSTHardsuit.dmi'
 	icon_state = "hardsuit0-syndiesst"
 	item_state = "hardsuit1-syndiesst"
 	hardsuit_type = "syndiesst"
