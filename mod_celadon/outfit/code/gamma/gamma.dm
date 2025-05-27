@@ -133,8 +133,8 @@
 /obj/item/storage/belt/security/webbing/gamma
 	name = "gamma cargo"
 	desc = "no data."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/belt/gamma_belt.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/belt/overlay/gamma_belt_onmob.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/belt/obj.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/belt/overlay/onmob.dmi'
 	slot_flags = ITEM_SLOT_BELT
 	icon_state = "white_squadron_cargo"
 	item_state = "white_squadron_cargo"

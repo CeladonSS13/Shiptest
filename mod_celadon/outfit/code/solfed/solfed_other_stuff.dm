@@ -143,8 +143,8 @@
 /obj/item/storage/belt/military/solfed
 	name = "Solar Federation chest rig"
 	desc = "These are the military webbing of the Solar Federation. It has the Solar Federation logo on the back."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/belt/beltsf.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/belt/overlay/beltsf.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/belt/obj.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/belt/overlay/onmob.dmi'
 	icon_state = "solfed_webbing"
 	item_state = "solfed_webbing"
 	resistance_flags = FIRE_PROOF
