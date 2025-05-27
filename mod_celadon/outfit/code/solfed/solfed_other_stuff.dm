@@ -313,24 +313,24 @@
 
 	name = "solfed satchel"
 	desc = "A democratic-looking satchel with extra pockets."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/backpackssf.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/backpackssf.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/obj.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/onmob.dmi'
 	icon_state = "satchel-sf"
 	item_state = "satchel-sf"
 
 /obj/item/storage/backpack/solfed
 	name = "solfed backpack"
 	desc = "A militaristic looking backpack. Has a stylish sol star on it."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/backpackssf.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/backpackssf.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/obj.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/onmob.dmi'
 	icon_state = "solfedpack"
 	item_state = "solfedpack"
 
 /obj/item/storage/backpack/duffelbag/solfed
 	name = "solfed duffel bag"
 	desc = "A large duffel bag for holding extra freedom-enforcing supplies."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/backpackssf.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/backpackssf.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/obj.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/onmob.dmi'
 	icon_state = "duffel-solfed"
 	item_state = "duffel-solfed"
 
