@@ -6,6 +6,7 @@
 	var/obj/docking_port/mobile/D = SSshuttle.get_containing_shuttle(src)
 	var/datum/overmap/ship/controlled/ship
 	var/outpost_docked = FALSE
+	var/cooldown = 0
 	if(D)
 		ship = D.current_ship
 		outpost_docked = istype(ship.docked_to, /datum/overmap/outpost)
@@ -132,8 +133,9 @@
 					CHECK_TICK
 				if(!length(empty_turfs))
 					playsound(src, 'sound/machines/buzz-sigh.ogg', 50, TRUE)
-					src.visible_message(span_notice("[src] could not find any suitable landing spot in landing zone."))
-					return
+					if(cooldown <= world.time)
+						say("Error: Landing zone full! No space for drop!")
+					return cooldown = world.time + 5 SECONDS
 				landing_turf = pick(empty_turfs)
 
 			// note that, because of CHECK_TICK above, we aren't sure if we can
