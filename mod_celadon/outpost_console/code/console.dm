@@ -6,7 +6,6 @@
 	var/obj/docking_port/mobile/D = SSshuttle.get_containing_shuttle(src)
 	var/datum/overmap/ship/controlled/ship
 	var/outpost_docked = FALSE
-	var/cooldown = 0
 	if(D)
 		ship = D.current_ship
 		outpost_docked = istype(ship.docked_to, /datum/overmap/outpost)
@@ -112,6 +111,10 @@
 			var/area/current_area = get_area(src)
 			var/datum/supply_pack/pack = SSshuttle.supply_packs[text2path(params["id"])]
 			if(!pack || !charge_account?.has_money(pack.cost) || !istype(current_area))
+				playsound(src, 'sound/machines/buzz-sigh.ogg', 50, TRUE)
+				if(!charge_account?.has_money(pack.cost) && message_cooldown <= world.time)
+					say("Error: No funds! Transaction canceled.")
+					message_cooldown = world.time + 5 SECONDS
 				return
 
 			var/turf/landing_turf
@@ -133,9 +136,10 @@
 					CHECK_TICK
 				if(!length(empty_turfs))
 					playsound(src, 'sound/machines/buzz-sigh.ogg', 50, TRUE)
-					if(cooldown <= world.time)
+					if(message_cooldown <= world.time)
 						say("Error: Landing zone full! No space for drop!")
-					return cooldown = world.time + 5 SECONDS
+						message_cooldown = world.time + 5 SECONDS
+					return
 				landing_turf = pick(empty_turfs)
 
 			// note that, because of CHECK_TICK above, we aren't sure if we can
