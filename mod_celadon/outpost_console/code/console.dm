@@ -130,6 +130,10 @@
 						continue
 					empty_turfs += T
 					CHECK_TICK
+				if(!length(empty_turfs))
+					playsound(src, 'sound/machines/buzz-sigh.ogg', 50, TRUE)
+					src.visible_message(span_notice("[src] could not find any suitable landing spot in landing zone."))
+					return
 				landing_turf = pick(empty_turfs)
 
 			// note that, because of CHECK_TICK above, we aren't sure if we can
