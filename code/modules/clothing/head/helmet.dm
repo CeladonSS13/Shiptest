@@ -175,12 +175,12 @@
 		return
 	if(attached_light.on)
 // [CELADON-EDIT] - Seclite_overlay
-//		flashlightlight_overlay = mutable_appearance(icon, "[flashlight_state]_on")
+//		flashlightlight_overlay = mutable_appearance(icon, "[flashlight_state]_on") // CELADON-EDIT - ORIGINAL
 		flashlightlight_overlay = mutable_appearance('icons/obj/clothing/head/armor.dmi', "[flashlight_state]_on")
 // [/CELADON-EDIT]
 	else
 // [CELADON-EDIT] - Seclite_overlay
-//		flashlightlight_overlay = mutable_appearance(icon, flashlight_state)
+//		flashlightlight_overlay = mutable_appearance(icon, flashlight_state) // CELADON-EDIT - ORIGINAL
 		flashlightlight_overlay = mutable_appearance('icons/obj/clothing/head/armor.dmi', "[flashlight_state]_on")
 // [/CELADON-EDIT]
 	. += flashlightlight_overlay
