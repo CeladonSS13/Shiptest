@@ -48,39 +48,39 @@
 //
 
 /obj/item/ammo_casing/a308
-	name = "7,62x51 Winchester bullet casing"
-	desc = "A 7,62x51 Winchester bullet casing."
+	name = ".308 bullet casing"
+	desc = "A .308 bullet casing."
 	icon_state = "rifle-brass"
 	caliber = ".308"
 	projectile_type = /obj/projectile/bullet/a308
 	// bullet_per_box = 80
 
 /obj/item/ammo_casing/a308/a308_sp
-	name = "7,62x51 Winchester bullet casing"
-	desc = "A 7,62x51 Winchester bullet casing."
+	name = ".308 HP bullet casing"
+	desc = "A .308 HP bullet casing."
 	icon_state = "rifle-brass-hollow"
-	projectile_type = /obj/projectile/bullet/a308_sp
+	projectile_type = /obj/projectile/bullet/a308/hp
 	// bullet_per_box = 80
 
 /obj/item/ammo_casing/a308/a308_brak
-	name = "7,62x51 surplus bullet casing"
-	desc = "7,62x51 surplus bullet casing."
+	name = ".308 surplus bullet casing"
+	desc = "A .308 surplus bullet casing."
 	icon_state = "rifle-brass-surplus"
-	projectile_type = /obj/projectile/bullet/a308/a308_brak
+	projectile_type = /obj/projectile/bullet/a308/surplus
 	// bullet_per_box = 80
 
 /obj/item/ammo_casing/a308/a308_ap
-	name = "7,62x51 M-80 bullet casing"
-	desc = "A 7,62x51 M-80 bullet casing."
+	name = ".308 AP bullet casing"
+	desc = "A .308 AP bullet casing."
 	icon_state = "rifle-brass-ap"
-	projectile_type = /obj/projectile/bullet/a308/a308_ap
+	projectile_type = /obj/projectile/bullet/a308/ap
 	// bullet_per_box = 80
 
 /obj/item/ammo_casing/a308/a308_rubber
-	name = "7,62x51 M-80 bullet casing"
-	desc = "A 7,62x51 M-80 bullet casing."
+	name = ".308 rubber bullet casing"
+	desc = "A .308 rubber bullet casing."
 	icon_state = "rifle-brass-rubber"
-	projectile_type = /obj/projectile/bullet/a308/a308_rub
+	projectile_type = /obj/projectile/bullet/a308/rubber
 	// bullet_per_box = 80
 
 //

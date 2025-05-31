@@ -31,26 +31,26 @@
 	armour_penetration = 40
 	bullet_identifier = "large bullet"
 
-/obj/projectile/bullet/a308_sp
-	name = ".308"
+/obj/projectile/bullet/a308/hp
+	name = ".308 hollow point bullet"
 	speed = 0.3
 	damage = 60
 	armour_penetration = -10
 
-/obj/projectile/bullet/a308/a308_brak
-	name = ".308"
+/obj/projectile/bullet/a308/surplus
+	name = ".308 surplus bullet"
 	speed = 0.3
 	damage = 28
 	armour_penetration = 25
 
-/obj/projectile/bullet/a308/a308_ap
-	name = ".308"
+/obj/projectile/bullet/a308/ap
+	name = ".308 armor piercing bullet"
 	speed = 0.3
 	damage = 28
 	armour_penetration = 60
 
-/obj/projectile/bullet/a308/a308_rub
-	name = ".308"
+/obj/projectile/bullet/a308/rubber
+	name = ".308 rubber bullet"
 	icon_state = "rubber"
 	speed = 0.4
 	damage = 5
