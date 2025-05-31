@@ -1159,8 +1159,8 @@
 	return ishuman(target) && target.body_position == LYING_DOWN
 
 /mob/living/carbon/human/proc/fireman_carry(mob/living/carbon/target)
-// [/CELADON-EDIT] - Fix Throw Exploit (Когда починят тогда можно убирать)
-/*
+// [CELADON-EDIT] - Fix Throw Exploit (Когда починят тогда можно убирать)
+/* CELADON-EDIT - ORIGINAL
 	var/carrydelay = 50 //if you have latex you are faster at grabbing
 	var/skills_space = "" //cobby told me to do this
 	if(HAS_TRAIT(src, TRAIT_QUICKER_CARRY))
