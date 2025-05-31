@@ -113,7 +113,7 @@
 			if(!pack || !charge_account?.has_money(pack.cost) || !istype(current_area))
 				playsound(src, 'sound/machines/buzz-sigh.ogg', 50, TRUE)
 				if(!charge_account?.has_money(pack.cost) && message_cooldown <= world.time)
-					say("Error: No funds! Transaction canceled.")
+					say("ERROR: Infufficient funds! Transaction canceled.")
 					message_cooldown = world.time + 5 SECONDS
 				return
 
@@ -137,7 +137,7 @@
 				if(!length(empty_turfs))
 					playsound(src, 'sound/machines/buzz-sigh.ogg', 50, TRUE)
 					if(message_cooldown <= world.time)
-						say("Error: Landing zone full! No space for drop!")
+						say("ERROR: Landing zone full! No space for drop!")
 						message_cooldown = world.time + 5 SECONDS
 					return
 				landing_turf = pick(empty_turfs)
