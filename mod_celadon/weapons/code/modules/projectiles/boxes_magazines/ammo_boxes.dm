@@ -70,20 +70,20 @@
 	ammo_type = /obj/item/ammo_casing/a308
 	max_ammo = 10
 
-/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/a308_sp
-	ammo_type = /obj/item/ammo_casing/a308/a308_sp
+/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/hp
+	ammo_type = /obj/item/ammo_casing/a308/hp
 	max_ammo = 10
 
-/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/a308_brak
-	ammo_type = /obj/item/ammo_casing/a308/a308_brak
+/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/surplus
+	ammo_type = /obj/item/ammo_casing/a308/surplus
 	max_ammo = 10
 
-/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/a308_ap
-	ammo_type = /obj/item/ammo_casing/a308/a308_ap
+/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/ap
+	ammo_type = /obj/item/ammo_casing/a308/ap
 	max_ammo = 10
 
-/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/a308_rubber
-	ammo_type = /obj/item/ammo_casing/a308/a308_rubber
+/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/rubber
+	ammo_type = /obj/item/ammo_casing/a308/rubber
 	max_ammo = 10
 
 /obj/item/storage/box/ammo/a308
@@ -98,48 +98,48 @@
 	generate_items_inside(items_inside,src)
 
 //Пули против мяса , минусовое пробитие , не должно пробивать даже минимальную броню , но огромный урон здоровью
-/obj/item/storage/box/ammo/a308/a308_sp
+/obj/item/storage/box/ammo/a308/hp
 	name = "Коробка патронов .308(Охотничий)"
 	desc = "Пуля с мягкой оболочкой, эффективна против крупной дичи, но практически бесполезна даже против базовой брони"
 	icon_state = "308_sp"
 
-/obj/item/storage/box/ammo/a308/a308_sp/PopulateContents()
+/obj/item/storage/box/ammo/a308/hp/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/a308_sp = 4)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/hp = 4)
 	generate_items_inside(items_inside,src)
 
 //Тупое название сурплус , будет брак или некачественное исполнение. Снижен урон , минимум пробития - не для продажи
-/obj/item/storage/box/ammo/a308/a308_brak
+/obj/item/storage/box/ammo/a308/surplus
 	name = "Коробка бракованных патронов .308"
 	desc = "Не слишком качественные патроны калибра .308, хуже заводских но все еще годны."
 	icon_state = "a308_brak"
 
-/obj/item/storage/box/ammo/a308/a308_brak/PopulateContents()
+/obj/item/storage/box/ammo/a308/surplus/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/a308_brak = 4)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/surplus = 4)
 	generate_items_inside(items_inside,src)
 
 
 //Бронебойки , должны пробивать любую броню , но урон снижен
-/obj/item/storage/box/ammo/a308/a308_ap
+/obj/item/storage/box/ammo/a308/ap
 	name = "Коробка патронов .308(Бронебойный)"
 	desc = "Бронебойные патроны с вольфрамовым наконечником, хороши против брони но наносят не так много повреждений."
 	icon_state = "308_ap"
 
-/obj/item/storage/box/ammo/a308/a308_ap/PopulateContents()
+/obj/item/storage/box/ammo/a308/ap/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/a308_ap = 4)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/ap = 4)
 	generate_items_inside(items_inside,src)
 
 //Резина , минимум урона здоровью , средне стамине
-/obj/item/storage/box/ammo/a308/a308_rubber
+/obj/item/storage/box/ammo/a308/rubber
 	name = "Коробка патронов .308(Резина)"
 	desc = "Патроны с резиновой пулей, не смертельны но все еще наносят травмы."
 	icon_state = "308_rub"
 
 /obj/item/storage/box/ammo/a308/a308_rub/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/a308_rubber = 4)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/rubber = 4)
 	generate_items_inside(items_inside,src)
 //
 //     8x58

@@ -55,28 +55,28 @@
 	projectile_type = /obj/projectile/bullet/a308
 	// bullet_per_box = 80
 
-/obj/item/ammo_casing/a308/a308_sp
+/obj/item/ammo_casing/a308/hp
 	name = ".308 HP bullet casing"
 	desc = "A .308 HP bullet casing."
 	icon_state = "rifle-brass-hollow"
 	projectile_type = /obj/projectile/bullet/a308/hp
 	// bullet_per_box = 80
 
-/obj/item/ammo_casing/a308/a308_brak
+/obj/item/ammo_casing/a308/surplus
 	name = ".308 surplus bullet casing"
 	desc = "A .308 surplus bullet casing."
 	icon_state = "rifle-brass-surplus"
 	projectile_type = /obj/projectile/bullet/a308/surplus
 	// bullet_per_box = 80
 
-/obj/item/ammo_casing/a308/a308_ap
+/obj/item/ammo_casing/a308/ap
 	name = ".308 AP bullet casing"
 	desc = "A .308 AP bullet casing."
 	icon_state = "rifle-brass-ap"
 	projectile_type = /obj/projectile/bullet/a308/ap
 	// bullet_per_box = 80
 
-/obj/item/ammo_casing/a308/a308_rubber
+/obj/item/ammo_casing/a308/rubber
 	name = ".308 rubber bullet casing"
 	desc = "A .308 rubber bullet casing."
 	icon_state = "rifle-brass-rubber"
