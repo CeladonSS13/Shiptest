@@ -171,19 +171,27 @@
 /obj/item/clothing/head/helmet/update_overlays()
 	. = ..()
 	var/mutable_appearance/flashlightlight_overlay
+// [CELADON-EDIT] - Seclite and Google overlay
+/* CELADON-EDIT - ORIGINAL
 	if(!attached_light)
 		return
 	if(attached_light.on)
-// [CELADON-EDIT] - Seclite_overlay
-//		flashlightlight_overlay = mutable_appearance(icon, "[flashlight_state]_on") // CELADON-EDIT - ORIGINAL
-		flashlightlight_overlay = mutable_appearance('icons/obj/clothing/head/armor.dmi', "[flashlight_state]_on")
-// [/CELADON-EDIT]
+		flashlightlight_overlay = mutable_appearance(icon, "[flashlight_state]_on")
 	else
-// [CELADON-EDIT] - Seclite_overlay
-//		flashlightlight_overlay = mutable_appearance(icon, flashlight_state) // CELADON-EDIT - ORIGINAL
-		flashlightlight_overlay = mutable_appearance('icons/obj/clothing/head/armor.dmi', "[flashlight_state]_on")
-// [/CELADON-EDIT]
+		flashlightlight_overlay = mutable_appearance(icon, flashlight_state)
 	. += flashlightlight_overlay
+*/
+	if(attached_light)
+		if(attached_light.on)
+			flashlightlight_overlay = mutable_appearance('icons/obj/clothing/head/armor.dmi', "[flashlight_state]_on")
+		else
+			flashlightlight_overlay = mutable_appearance('icons/obj/clothing/head/armor.dmi', flashlight_state)
+		. += flashlightlight_overlay
+	if(content_overlays)
+		for(var/obj/item/I in contents)
+			. += I.get_helmet_overlay_icon()
+	return
+// [/CELADON-ADD]
 
 /obj/item/clothing/head/helmet/worn_overlays(isinhands)
 	. = ..()

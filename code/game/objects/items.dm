@@ -833,7 +833,15 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	return mutable_appearance('icons/obj/clothing/belt_overlays.dmi', icon_state)
 
 /obj/item/proc/get_helmet_overlay() // returns the icon for overlaying on a helmet
-	return mutable_appearance('icons/mob/clothing/helmet_overlays.dmi', icon_state)
+// [CELADON-EDIT] - Overlays
+//	return mutable_appearance('icons/mob/clothing/helmet_overlays.dmi', icon_state) // CELADON-EDIT - ORIGINAL
+	return mutable_appearance('mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/helmet_overlays.dmi', icon_state)
+// [/CELADON-EDIT]
+
+// [/CELADON-ADD] - Overlays
+/obj/item/proc/get_helmet_overlay_icon() // returns the icon for overlaying on a helmet
+	return mutable_appearance('mod_celadon/_storge_icons/icons/items/clothing/eyes/helmet_overlays.dmi', icon_state)
+// [/CELADON-ADD]
 
 /obj/item/proc/update_slot_icon()
 	if(!ismob(loc))
