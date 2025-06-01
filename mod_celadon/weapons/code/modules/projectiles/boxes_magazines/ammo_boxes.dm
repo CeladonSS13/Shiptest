@@ -86,6 +86,7 @@
 	ammo_type = /obj/item/ammo_casing/a308/rubber
 	max_ammo = 10
 
+/*
 /obj/item/storage/box/ammo/a308
 	name = "Коробка патронов .308"
 	desc = "Коробка стандартных патронов .308. Заводского качества, ещё в смазке."
@@ -108,18 +109,6 @@
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/hp = 4)
 	generate_items_inside(items_inside,src)
 
-//Тупое название сурплус , будет брак или некачественное исполнение. Снижен урон , минимум пробития - не для продажи
-/obj/item/storage/box/ammo/a308/surplus
-	name = "Коробка бракованных патронов .308"
-	desc = "Не слишком качественные патроны калибра .308, хуже заводских но все еще годны."
-	icon_state = "a308_brak"
-
-/obj/item/storage/box/ammo/a308/surplus/PopulateContents()
-	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/surplus = 4)
-	generate_items_inside(items_inside,src)
-
-
 //Бронебойки , должны пробивать любую броню , но урон снижен
 /obj/item/storage/box/ammo/a308/ap
 	name = "Коробка патронов .308(Бронебойный)"
@@ -141,6 +130,19 @@
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/rubber = 4)
 	generate_items_inside(items_inside,src)
+*/
+
+//Тупое название сурплус , будет брак или некачественное исполнение. Снижен урон , минимум пробития - не для продажи
+/obj/item/storage/box/ammo/a308/surplus
+	name = "Коробка бракованных патронов .308"
+	desc = "Не слишком качественные патроны калибра .308, хуже заводских но все еще годны."
+	icon_state = "a308_brak"
+
+/obj/item/storage/box/ammo/a308/surplus/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/surplus = 4)
+	generate_items_inside(items_inside,src)
+
 //
 //     8x58
 //
@@ -209,12 +211,3 @@
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a410/flechette = 4)
 	generate_items_inside(items_inside,src)
-
-/obj/item/storage/box/ammo/a308/hunterspride
-	icon = 'icons/obj/ammunition/ammo_boxes.dmi'
-
-/obj/item/storage/box/ammo/a308/hp
-	icon = 'icons/obj/ammunition/ammo_boxes.dmi'
-
-/obj/item/storage/box/ammo/a308/ap
-	icon = 'icons/obj/ammunition/ammo_boxes.dmi'
