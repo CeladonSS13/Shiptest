@@ -1,7 +1,7 @@
 #define WENDIGO_ENRAGED (health <= maxHealth*0.5)
 #define WENDIGO_CIRCLE_SHOTCOUNT 14
 #define WENDIGO_CIRCLE_REPEATCOUNT 7
-#define WENDIGO_SPIRAL_SHOTCOUNT 30
+#define WENDIGO_SPIRAL_SHOTCOUNT 20
 #define WENDIGO_WAVE_SHOTCOUNT 6
 #define WENDIGO_WAVE_REPEATCOUNT 14
 #define WENDIGO_SHOTGUN_SHOTCOUNT 5
@@ -225,7 +225,7 @@ Difficulty: Hard
 					var/angle = shot * 360 / shots_per + (offset * 360 / shots_per) * 0.5
 					var/obj/projectile/wendigo_shockwave/shockwave = new /obj/projectile/wendigo_shockwave(loc)
 					shockwave.firer = src
-					shockwave.speed = 3 - WENDIGO_ENRAGED
+					shockwave.speed = 5 - WENDIGO_ENRAGED
 					shockwave.fire(angle)
 				SLEEP_CHECK_DEATH(6 - WENDIGO_ENRAGED * 2)
 		if("Spiral")
@@ -289,7 +289,7 @@ Difficulty: Hard
 	desc = "Take on the shape of a polar bear."
 	invocation = "RAAAAAAAAWR!"
 	convert_damage = FALSE
-	shapeshift_type = /mob/living/simple_animal/hostile/asteroid/polarbear/lesser
+	shapeshift_type = /mob/living/basic/bear/polar
 
 /obj/projectile/wendigo_shockwave
 	name = "wendigo shockwave"
