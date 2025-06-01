@@ -59,13 +59,18 @@
 	var/obj/item/paper/manifest/manifest_paper = new(container, id, 0)
 
 	manifest_paper.name = "shipping manifest - #[id]"
-
-	var/manifest_text = "<h2>[market.name] Shipping Manifest</h2>"
+// [CELADON-EDIT] - REVERT: Better cargo pack managment (#4419)
+//	var/manifest_text = "<h2>[market.name] Shipping Manifest</h2>" // CELADON-EDIT - ORIGINAL
+	var/manifest_text = "<h2>[command_name()] Shipping Manifest</h2>"
+// [/CELADON-EDIT]
 	manifest_text += "<hr/>"
 	if(owner && !(owner == "Unknown"))
 		manifest_text += "Direct purchase from [owner]<br/>"
 		manifest_paper.name += " - Purchased by [owner]"
-	manifest_text += "Destination: [market.name]<br/>"
+// [CELADON-EDIT] - REVERT: Better cargo pack managment (#4419)
+//	manifest_text += "Destination: [market.name]<br/>" // CELADON-EDIT - ORIGINAL
+	manifest_text += "Destination: [station_name()]<br/>"
+// [/CELADON-EDIT]
 	manifest_text += "Contents: <br/>"
 	manifest_text += "<ul>"
 	var/container_contents = list() // Associative list with the format (item_name = nº of occurrences, ...)
@@ -86,6 +91,25 @@
 
 /datum/supply_order/proc/generate(atom/location)
 	var/account_holder
+// [CELADON-ADD] - REVERT: Better cargo pack managment (#4419)
+	if(paying_account)
+		account_holder = paying_account.account_holder
+	else
+		account_holder = "Cargo"
+	var/obj/structure/closet/crate/container = supply_packs.generate(location, paying_account)
+	generateManifest(container, account_holder, supply_packs)
+	return container
+
+/datum/supply_order/combo/New(list/supply_packs, orderer, orderer_rank, orderer_ckey, reason, paying_account, ordering_outpost)
+	. = ..(null, orderer, orderer_rank, orderer_ckey, reason, paying_account, ordering_outpost)
+	src.supply_packs = supply_packs
+	for(var/datum/supply_pack/pack in supply_packs)
+		SSblackbox.record_feedback("nested tally", "crate_ordered", 1, list(pack.name, "amount"))
+		SSblackbox.record_feedback("nested tally", "crate_ordered", pack.cost, list(pack.name, "cost"))
+
+/datum/supply_order/combo/generate(atom/location)
+	var/account_holder
+// [/CELADON-ADD]
 	var/datum/supply_pack/initial_pack = supply_packs[1]
 
 	var/obj/structure/closet/crate/order_crate

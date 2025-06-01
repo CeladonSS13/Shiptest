@@ -111,6 +111,10 @@
 			var/area/current_area = get_area(src)
 			var/datum/supply_pack/pack = SSshuttle.supply_packs[text2path(params["id"])]
 			if(!pack || !charge_account?.has_money(pack.cost) || !istype(current_area))
+				playsound(src, 'sound/machines/buzz-sigh.ogg', 50, TRUE)
+				if(!charge_account?.has_money(pack.cost) && message_cooldown <= world.time)
+					say("ERROR: Infufficient funds! Transaction canceled.")
+					message_cooldown = world.time + 5 SECONDS
 				return
 
 			var/turf/landing_turf
@@ -130,6 +134,12 @@
 						continue
 					empty_turfs += T
 					CHECK_TICK
+				if(!length(empty_turfs))
+					playsound(src, 'sound/machines/buzz-sigh.ogg', 50, TRUE)
+					if(message_cooldown <= world.time)
+						say("ERROR: Landing zone full! No space for drop!")
+						message_cooldown = world.time + 5 SECONDS
+					return
 				landing_turf = pick(empty_turfs)
 
 			// note that, because of CHECK_TICK above, we aren't sure if we can
