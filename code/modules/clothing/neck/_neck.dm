@@ -1,6 +1,9 @@
 /obj/item/clothing/neck
 	name = "necklace"
-	icon = 'icons/obj/clothing/neck.dmi'
+// [CELADON-EDIT]
+//	icon = 'icons/obj/clothing/neck.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/neck.dmi'
+// [/CELADON-EDIT]
 	body_parts_covered = NECK
 	slot_flags = ITEM_SLOT_NECK
 	strip_delay = 40
@@ -20,6 +23,9 @@
 				. += mutable_appearance('icons/effects/blood.dmi', "maskblood")
 
 /obj/item/clothing/neck/tie
+	name = "horrific necktie"
+	desc = "The necktie is adorned with a garish pattern. It's disturbingly vivid. Somehow you feel as if it would be wrong to ever take it off. It's your friend now. You will betray it if you change it for some boring scarf."
+
 	name = "tie"
 	desc = "A neosilk clip-on tie. Special material allows it to be reskinned, but only once."
 	unique_reskin = list(
@@ -35,6 +41,8 @@
 		"purple tie" = "purpletie",
 		"green tie" = "greentie",
 		"brown tie" = "browntie",
+// [CELADON-EDIT]
+/*
 		"rainbow tie" = "rainbow_tie",
 		"horrible tie" = "horribletie",
 		"transgender tie" = "transgender",
@@ -51,6 +59,13 @@
 	)
 	unique_reskin_changes_name = TRUE
 	icon_state = "rainbow_tie"
+*/
+		"horrible tie" = "horribletie",
+		"horrific necktie" = "disco"
+	)
+	unique_reskin_changes_name = TRUE
+	icon_state = "eldritch_tie"
+// [/CELADON-EDIT]
 	item_state = ""	//no inhands
 	w_class = WEIGHT_CLASS_SMALL
 	custom_price = 60
@@ -88,10 +103,22 @@
 /obj/item/clothing/neck/tie/brown
 	name = "brown tie"
 	icon_state = "browntie"
-//
+
+// [CELADON-EDIT]
+/*
 /obj/item/clothing/neck/tie/rainbow
 	name = "rainbow tie"
 	icon_state = "rainbow_tie"
+*/
+/obj/item/clothing/neck/tie/rainbow
+	name = "black tie"
+	icon_state = "black_tie"
+
+/obj/item/clothing/neck/tie/disco
+	name = "horrific necktie"
+	desc = "The necktie is adorned with a garish pattern. It's disturbingly vivid. Somehow you feel as if it would be wrong to ever take it off. It's your friend now. You will betray it if you change it for some boring scarf."
+	icon_state = "eldritch_tie"
+// [/CELADON-EDIT]
 
 /obj/item/clothing/neck/tie/horrible
 	name = "horrible tie"
@@ -110,6 +137,8 @@
 	icon_state = "maid_neck"
 	supports_variations = VOX_VARIATION
 
+// [CELADON-EDIT]
+/*
 /obj/item/clothing/neck/tie/trans
 	name = "transgender tie"
 	desc = "A neosilk clip-on tie. This one is in the colors of the trans flag."
@@ -164,6 +193,19 @@
 	name = "ally tie"
 	desc = "A neosilk clip-on tie. This one is in the colors of the ally flag."
 	icon_state = "ally_tie"
+*/
+/obj/item/clothing/neck/tie/trans
+/obj/item/clothing/neck/tie/pan
+/obj/item/clothing/neck/tie/enby
+/obj/item/clothing/neck/tie/bi
+/obj/item/clothing/neck/tie/lesbian
+/obj/item/clothing/neck/tie/intersex
+/obj/item/clothing/neck/tie/gay
+/obj/item/clothing/neck/tie/genderfluid
+/obj/item/clothing/neck/tie/asexual
+/obj/item/clothing/neck/tie/genderfae
+/obj/item/clothing/neck/tie/ally_tie
+// [/CELADON-EDIT]
 
 /obj/item/clothing/neck/stethoscope
 	name = "stethoscope"

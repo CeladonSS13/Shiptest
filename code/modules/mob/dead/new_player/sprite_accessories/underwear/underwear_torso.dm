@@ -117,6 +117,8 @@
 	icon_state = "rilena"
 	use_static = TRUE
 
+// [CELADON-REMOVE]
+/*
 // Pride shirts
 
 /datum/sprite_accessory/undershirt/tank_les
@@ -148,3 +150,5 @@
 	name = "Tank Top (Asexual)"
 	icon_state = "ace"
 	use_static = TRUE
+*/
+// [/CELADON-REMOVE]
