@@ -1,4 +1,4 @@
-//5.56x45
+// MARK: 5.56x45
 
 /obj/projectile/bullet/a556_45
 	name = "5.56x45mm bullet"
@@ -20,7 +20,7 @@
 	damage = 20
 	armour_penetration = 10
 
-//.308
+// MARK: .308
 
 /obj/projectile/bullet/a308
 	name = ".308"
@@ -57,7 +57,7 @@
 	armour_penetration = -10
 	stamina = 38
 
-//7.62x54mmR
+// MARK: 7.62x54mmR
 /obj/projectile/bullet/x762x54
 	name = "crude sniper bullet"
 	speed = 1.1

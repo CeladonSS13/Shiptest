@@ -1,6 +1,14 @@
-//
-//     5.56mm
-//
+/* MARK: = Ammo List =
+[*] - отсутствуют.
+[-] - отключены.
+
+> 5.56x45mm
+> .308
+> 8x58
+> 410x76mm
+
+MARK: 5.56mm
+*/
 
 //Коробки 5.56 , плюс стандартная коробка так как ее нету в основном коде
 
@@ -61,7 +69,7 @@
 	generate_items_inside(items_inside,src)
 
 //
-//     .308
+// MARK: .308
 //
 
 //коробки патроны 308 калибра - на данный момент эндгейм патроны , огромный урон , огромное пробитие , высокая цена
@@ -144,7 +152,7 @@
 	generate_items_inside(items_inside,src)
 
 //
-//     8x58
+// MARK: 8x58
 //
 
 //Стандартные безгильзовые патроны калибра 8x58
@@ -165,8 +173,9 @@
 	generate_items_inside(items_inside,src)
 
 //
-//     410x76mm
+// MARK: 410x76mm
 //
+
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/a410
 	icon = 'mod_celadon/_storge_icons/icons/items/weapons/saiga_bullet.dmi'
 	ammo_type = /obj/item/ammo_casing/a410

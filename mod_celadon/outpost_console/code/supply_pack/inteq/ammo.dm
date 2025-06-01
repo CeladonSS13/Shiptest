@@ -176,7 +176,7 @@ MARK: .308
 
 /datum/supply_pack/faction/inteq/ammo/a308_ammo_box
 	name = "308 Ammo Box Crate"
-	desc = ".308 ammo box for guns like the F4 SSG-04."
+	desc = "Contains a thirty-round .308 ammo box for DMRs such as the SsG-04 and CM-GAL-S"
 	contains = list(/obj/item/storage/box/ammo/a308)
 	cost = 185
 

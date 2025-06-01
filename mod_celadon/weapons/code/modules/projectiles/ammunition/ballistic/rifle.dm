@@ -1,5 +1,14 @@
+/* MARK: = Ammo List =
+[*] - отсутствуют.
+[-] - отключены.
 
-// 5.56x39mm (M-90gl Carbine & P-16)
+> 5.56x39mm
+> 5.56x45mm
+> .308
+> 7.62x54mmR
+
+MARK: 5.56x39mm (M-90gl Carbine & P-16)
+*/
 
 /obj/item/ammo_casing/a556_39
 	name = "5.56x39mm CLIP bullet casing"
@@ -9,7 +18,9 @@
 	projectile_type = /obj/projectile/bullet/a556_39
 	// bullet_per_box = 80
 
-// 5.56x45
+//
+// MARK: 5.56x45mm
+//
 
 /obj/item/ammo_casing/a556_45
 	name = "5.56x45mm bullet casing"
@@ -44,7 +55,7 @@
 	// bullet_per_box = 80
 
 //
-//    .308
+// MARK: .308
 //
 
 /obj/item/ammo_casing/a308
@@ -84,7 +95,7 @@
 	// bullet_per_box = 80
 
 //
-// 7.62x54mmR
+// MARK: 7.62x54mmR
 //
 
 /obj/item/ammo_casing/x762

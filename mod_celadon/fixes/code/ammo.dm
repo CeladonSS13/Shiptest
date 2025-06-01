@@ -1,3 +1,5 @@
+// MARK: Fix Calibers
+
 /obj/item/ammo_box/a858
 	caliber = "a858"
 
@@ -15,6 +17,8 @@
 
 /obj/item/ammo_box/magazine/rottweiler_308_box
 	caliber = ".308"
+
+// MARK: Reprite Ammo Box
 
 /obj/item/storage/box/ammo/a308
 	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
