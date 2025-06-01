@@ -56,6 +56,10 @@ GLOBAL_PROTECT(donators)
 	src.ckey = owner.ckey
 	load_information()
 	GLOB.donators[ckey] = src
+	// [CELADON-ADD] - CELADON_DONATE
+	src.key = owner.key
+	load_vip_tiers()
+	// [/CELADON-ADD]
 
 /datum/donator/Destroy(force)
 	if(!force)
