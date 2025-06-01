@@ -106,7 +106,7 @@
 		var/mob/living/simple_animal/L = new chosen_mob_type(spot)
 		L.flags_1 |= (P.flags_1 & ADMIN_SPAWNED_1)
 		spawned_mobs += L
-		L.nest = src
+		//L.nest = src
 		L.faction = src.faction
 		P.visible_message(span_danger("[L] [pick(spawn_text)] [P]."))
 		// [CELADON-ADD] - DELETION_TIMER_TO_SPAWNED_MOBS
