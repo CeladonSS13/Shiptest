@@ -303,7 +303,10 @@
 /obj/item/clothing/head/helmet/inteq
 	name = "inteq helmet"
 	desc = "A standard issue helmet in the colors of the IRMG. It doesn't feel special in any way."
-	icon = 'icons/obj/clothing/faction/inteq/hats.dmi'
+// [CELADON-EDIT] - Overlays
+//	icon = 'icons/obj/clothing/faction/inteq/hats.dmi' // CELADON-EDIT - ORIGINAL
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/helmet_celadon.dmi'
+// [/CELADON-EDIT]
 	mob_overlay_icon = 'icons/mob/clothing/faction/inteq/hats.dmi'
 	icon_state = "inteq_helmet"
 	icon_state = "inteq_helmet"
