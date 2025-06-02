@@ -1,5 +1,5 @@
 /datum/sprite_accessory/socks
-	icon = 'icons/mob/clothing/underwear/underwear_socks.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/underwear/underwear_socks.dmi'
 
 /datum/sprite_accessory/socks/nude
 	name = "Nude"
@@ -96,6 +96,8 @@
 	name = "High Pantyhose"
 	icon_state = "pantyhose"
 
+// [CELADON-REMOVE]
+/*
 //Pride Socks todo:finish the damn sprites and digi variants. ugh
 
 /datum/sprite_accessory/socks/lesbian
@@ -122,3 +124,5 @@
 	name = "Thigh-High (Asexual)"
 	icon_state = "thigh_ace"
 	use_static = TRUE
+*/
+// [/CELADON-REMOVE]

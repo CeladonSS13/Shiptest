@@ -1,5 +1,5 @@
 /datum/sprite_accessory/undershirt
-	icon = 'icons/mob/clothing/underwear/underwear_torso.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/underwear/underwear_torso.dmi'
 	//freedom
 	gender = NEUTER
 
@@ -117,6 +117,8 @@
 	icon_state = "rilena"
 	use_static = TRUE
 
+// [CELADON-REMOVE]
+/*
 // Pride shirts
 
 /datum/sprite_accessory/undershirt/tank_les
@@ -148,3 +150,5 @@
 	name = "Tank Top (Asexual)"
 	icon_state = "ace"
 	use_static = TRUE
+*/
+// [/CELADON-REMOVE]
