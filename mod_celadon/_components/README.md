@@ -69,7 +69,7 @@ ID мода: CELADON_COMPONENTS, CELADON_COMPONENTS_EMOTE
 - `code/__DEFINES/~mod_celadon/emote_panel.dm`
 - `code/__DEFINES/~mod_celadon/access.dm`
 - `code/__DEFINES/~mod_celadon/names.dm`
-- `mod_celadon/_components/code/donators.dm`
+- `code/__DEFINES/~mod_celadon/donate.dm`
 
 - `#define FACTION_SYNDICATE "Syndicate"`
 - `#define FACTION_SOLFED "SolGov"`

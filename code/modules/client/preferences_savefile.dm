@@ -509,8 +509,12 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	READ_FILE(S["equipped_gear"], equipped_gear)
 	if(config) //This should *probably* always be there, but just in case.
-		if(length(equipped_gear) > CONFIG_GET(number/max_loadout_items))
-			to_chat(parent, span_userdanger("Loadout maximum items exceeded in loaded slot, Your loadout has been cleared! You had [length(equipped_gear)]/[CONFIG_GET(number/max_loadout_items)] equipped items!"))
+		// [CELADON-EDIT] - CELADON_DONATE
+		// if(length(equipped_gear) > CONFIG_GET(number/max_loadout_items))
+		// 	to_chat(parent, span_userdanger("Loadout maximum items exceeded in loaded slot, Your loadout has been cleared! You had [length(equipped_gear)]/[CONFIG_GET(number/max_loadout_items)] equipped items!"))
+		if(length(equipped_gear) > max_loadout_items)
+			to_chat(parent, span_userdanger("Loadout maximum items exceeded in loaded slot, Your loadout has been cleared! You had [length(equipped_gear)]/[max_loadout_items] equipped items!"))
+		// [/CELADON-EDIT]
 			equipped_gear = list()
 			WRITE_FILE(S["equipped_gear"], equipped_gear)
 

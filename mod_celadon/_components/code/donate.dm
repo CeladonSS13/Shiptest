@@ -1,36 +1,13 @@
-#define VIP_GHOST_TIER1_LIST list(\
-	"ghost_classic",\
-	"ghost_old",\
-	"ghost_old2",\
-	"ghost_fire",\
-	"ghost_camo",\
-	"ghost_mellow",\
-	"ghost_cat",\
-	"ghost_ian",\
-	"ghost_ian2",\
-	"ghost_skelet",\
-	"ghost_king")
-
-#define VIP_GHOST_TIER3_LIST list(\
-	"revenant",\
-	"xeno",\
-	"horror",\
-	"mage",\
-	"shadow",\
-	"god",\
-	"stand",\
-	"cult",\
-	"daemon",\
-	"bowmon",\
-	"honkmon",\
-	"imp")
-
-// Используется для динамического списка
-var/list/DONATOR_GHOST_LIST
-
 /datum/donator
 	var/key
 	var/donator_tier = 0
+	// Используется для "Динамического Списка"
+	var/list/DONATOR_GHOST_LIST
+
+/datum/donator/New(client/owner)
+	..()
+	src.key = owner.key
+	load_vip_tiers()
 
 /datum/donator/proc/load_vip_tiers(ckey as text)
 	var/donators_text = file2text("[global.config.directory]/donators.txt")
@@ -55,7 +32,7 @@ var/list/DONATOR_GHOST_LIST
 		to_chat(usr, "<span class='warning'>Увы. Данная функция доступна только для тех, кто поддержал проект. (Tier1)</span>")
 		return
 
-	var/ghost_type = tgui_input_list(usr, "Какого призрака ты хочешь выбрать?", "Изменение призрака", DONATOR_GHOST_LIST, 30 SECONDS)
+	var/ghost_type = tgui_input_list(usr, "Какого призрака ты хочешь выбрать?", "Изменение призрака", client.donator.DONATOR_GHOST_LIST, 30 SECONDS)
 	if(!ghost_type)
 		return
 	icon = 'mod_celadon/_storge_icons/icons/assets/vip/ghost.dmi'
@@ -71,3 +48,16 @@ var/list/DONATOR_GHOST_LIST
 
 	var pick_color = input(usr, "Light color", text("Input")) as color|null
 	color = pick_color
+
+// MARK: Donate Loadout
+/datum/preferences
+	var/max_loadout_items
+
+/datum/preferences/New(client/C)
+	..()
+	max_loadout_items = CONFIG_GET(number/max_loadout_items) // Standart - 10 points
+	spawn()
+		if(C.donator.donator_tier >= 2)
+			max_loadout_items += 3 // Tier 2 - 13 points
+		if(C.donator.donator_tier >= 3)
+			max_loadout_items += 2 // Tier 3 - 15 points

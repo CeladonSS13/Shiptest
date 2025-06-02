@@ -1225,7 +1225,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						equipped_gear.Cut(i,i+1)
 
 			dat += "<table align='center' width='100%'>"
-			dat += "<tr><td colspan=4><center><b>Current loadout usage: [length(equipped_gear)]/[CONFIG_GET(number/max_loadout_items)]</b> \[<a href='byond://?_src_=prefs;preference=gear;clear_loadout=1'>Clear Loadout</a>\] | \[<a href='byond://?_src_=prefs;preference=gear;toggle_loadout=1'>Toggle Loadout</a>\]</center></td></tr>"
+			// [CELADON-EDIT] - CELADON_DONATE
+			// dat += "<tr><td colspan=4><center><b>Current loadout usage: [length(equipped_gear)]/[CONFIG_GET(number/max_loadout_items)]</b> \[<a href='byond://?_src_=prefs;preference=gear;clear_loadout=1'>Clear Loadout</a>\] | \[<a href='byond://?_src_=prefs;preference=gear;toggle_loadout=1'>Toggle Loadout</a>\]</center></td></tr>"
+			dat += "<tr><td colspan=4><center><b>Current loadout usage: [length(equipped_gear)]/[max_loadout_items]</b> \[<a href='byond://?_src_=prefs;preference=gear;clear_loadout=1'>Clear Loadout</a>\] | \[<a href='byond://?_src_=prefs;preference=gear;toggle_loadout=1'>Toggle Loadout</a>\]</center></td></tr>"
+			// [/CELADON-EDIT]
 			dat += "<tr><td colspan=4><center><b>"
 
 			var/firstcat = 1
@@ -1865,8 +1868,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			if(TG.display_name in equipped_gear)
 				equipped_gear -= TG.display_name
 			else
-				if(length(equipped_gear) >= CONFIG_GET(number/max_loadout_items))
-					alert(user, "You can't have more than [CONFIG_GET(number/max_loadout_items)] items in your loadout!")
+				// [CELADON-EDIT] - CELADON_DONATE
+				// if(length(equipped_gear) >= CONFIG_GET(number/max_loadout_items))
+				// 	alert(user, "You can't have more than [CONFIG_GET(number/max_loadout_items)] items in your loadout!")
+				if(length(equipped_gear) >= max_loadout_items)
+					alert(user, "Ты не можешь иметь больше [max_loadout_items] предметов! Лишь наличие Vip: Tier2 и Tier3 помогут повысить лимит.")
+				// [/CELADON-EDIT]
 					return
 				var/list/type_blacklist = list()
 				var/list/slot_blacklist = list()
