@@ -244,10 +244,10 @@
 	},
 /area/ruin/asteroid/limafacility/office)
 "aX" = (
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/heavyzone)
 "aY" = (
@@ -1681,10 +1681,10 @@
 	},
 /area/ruin/asteroid/limafacility/heavyzone)
 "ga" = (
-/obj/effect/turf_decal/borderfloorblack{
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+/obj/effect/turf_decal/borderfloorblack{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -1849,10 +1849,10 @@
 	},
 /area/ruin/asteroid/limafacility/office)
 "gA" = (
+/obj/item/shard/plastitanium,
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/item/shard/plastitanium,
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/heavyzone)
 "gB" = (
@@ -1863,11 +1863,11 @@
 /area/ruin/asteroid/limafacility/office)
 "gC" = (
 /obj/effect/turf_decal/siding/white,
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 1
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
 	},
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/asteroid/limafacility/heavyzone)
@@ -1991,10 +1991,10 @@
 /turf/open/floor/plating,
 /area/ruin/asteroid/limafacility/office)
 "gT" = (
+/obj/item/ammo_casing/spent/pistol_steel,
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/item/ammo_casing/spent/pistol_steel,
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/heavyzone)
 "gV" = (
@@ -2441,10 +2441,10 @@
 /turf/open/floor/plasteel/mono,
 /area/ruin/asteroid/limafacility/office)
 "iA" = (
+/obj/item/ammo_casing/spent/slug/buck,
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/item/ammo_casing/spent/slug/buck,
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/heavyzone)
 "iD" = (
@@ -2503,10 +2503,10 @@
 /turf/open/floor/marble/black,
 /area/ruin/asteroid/limafacility/heavyzone)
 "iP" = (
+/obj/item/ammo_box/magazine/m12g_bulldog/drum/empty,
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/item/ammo_box/magazine/m12g_bulldog/drum/empty,
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/heavyzone)
 "iR" = (
@@ -3404,11 +3404,11 @@
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/lightzone)
 "mf" = (
+/obj/item/ammo_casing/spent/pistol_steel,
+/obj/machinery/light/broken/directional/south,
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/item/ammo_casing/spent/pistol_steel,
-/obj/machinery/light/broken/directional/south,
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/heavyzone)
 "mg" = (
@@ -5186,9 +5186,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
-/obj/effect/turf_decal/borderfloorblack{
-	dir = s
-	},
+/obj/effect/turf_decal/borderfloorblack,
 /obj/item/ammo_box/magazine/m556_42_hydra/small/empty,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/asteroid/limafacility/heavyzone)
@@ -5711,9 +5709,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
-/obj/effect/turf_decal/borderfloorblack{
-	dir = s
-	},
+/obj/effect/turf_decal/borderfloorblack,
 /obj/item/ammo_casing/spent/rifle_brass,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/asteroid/limafacility/heavyzone)
@@ -6724,7 +6720,7 @@
 	name = "Corrupted Templar";
 	armour_penetration = 30;
 	charge_distance = 4;
-	desc = "A manifestation of Narsis will, a being woven from the darkest matter, it should not exist.";
+	desc = "A manifestation of Nar'Sie's will, a being woven from the darkest matter, it should not exist.";
 	gps_name = "#!&?";
 	melee_damage_lower = 30;
 	melee_damage_upper = 35;
@@ -8882,11 +8878,11 @@
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/hangar)
 "Fi" = (
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 1
-	},
 /mob/living/simple_animal/hostile/faithless{
 	faction = list("Ramzi Clique")
+	},
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/heavyzone)
@@ -9361,10 +9357,10 @@
 /turf/open/floor/plasteel/darkredfull/darkred,
 /area/ruin/asteroid/limafacility/security)
 "GZ" = (
+/obj/item/stack/sheet/metal,
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/item/stack/sheet/metal,
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/heavyzone)
 "Ha" = (
@@ -10079,10 +10075,10 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/asteroid/limafacility/security)
 "IV" = (
+/obj/item/ammo_casing/spent/big_steel,
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/item/ammo_casing/spent/big_steel,
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/heavyzone)
 "IW" = (
@@ -10395,15 +10391,6 @@
 	},
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/lightzone)
-"JZ" = (
-/obj/effect/turf_decal/siding/white{
-	dir = 1
-	},
-/obj/effect/turf_decal/borderfloorblack{
-	dir = s
-	},
-/turf/open/floor/plasteel/heavymetal/var4,
-/area/ruin/asteroid/limafacility/heavyzone)
 "Ka" = (
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/plasteel/dark_2,
@@ -10595,10 +10582,10 @@
 	},
 /area/ruin/asteroid/limafacility/security)
 "KI" = (
+/obj/item/ammo_casing/spent/slug,
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/item/ammo_casing/spent/slug,
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/heavyzone)
 "KJ" = (
@@ -11043,11 +11030,11 @@
 	},
 /area/ruin/asteroid/limafacility/heavyzone)
 "Mr" = (
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 1
-	},
 /obj/structure/deployable_barricade/metal{
 	dir = 8
+	},
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/heavyzone)
@@ -11531,9 +11518,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
-/obj/effect/turf_decal/borderfloorblack{
-	dir = s
-	},
+/obj/effect/turf_decal/borderfloorblack,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
 	},
@@ -12008,9 +11993,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
-/obj/effect/turf_decal/borderfloorblack{
-	dir = s
-	},
+/obj/effect/turf_decal/borderfloorblack,
 /obj/machinery/camera/autoname{
 	dir = 10
 	},
@@ -12050,14 +12033,14 @@
 /area/ruin/asteroid/limafacility/security)
 "PG" = (
 /obj/effect/turf_decal/siding/white,
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 1
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /obj/machinery/camera/autoname{
 	dir = 6
+	},
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
 	},
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ruin/asteroid/limafacility/heavyzone)
@@ -12651,9 +12634,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
-/obj/effect/turf_decal/borderfloorblack{
-	dir = s
-	},
+/obj/effect/turf_decal/borderfloorblack,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
@@ -13405,9 +13386,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
-/obj/effect/turf_decal/borderfloorblack{
-	dir = s
-	},
+/obj/effect/turf_decal/borderfloorblack,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
@@ -13432,12 +13411,12 @@
 /turf/open/floor/marble/black,
 /area/ruin/asteroid/limafacility/heavyzone)
 "Uy" = (
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 1
-	},
 /obj/item/ammo_casing/spent/slug,
 /obj/item/stack/ore/salvage/scrapmetal,
 /obj/effect/decal/cleanable/shreds,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/heavyzone)
 "Uz" = (
@@ -14747,11 +14726,11 @@
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/heavyzone)
 "Ze" = (
+/obj/item/ammo_casing/spent/slug,
+/obj/machinery/light/broken/directional/south,
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/item/ammo_casing/spent/slug,
-/obj/machinery/light/broken/directional/south,
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/heavyzone)
 "Zf" = (
@@ -16685,7 +16664,7 @@ PL
 su
 xN
 On
-JZ
+zu
 FU
 FU
 ST
@@ -16760,7 +16739,7 @@ sz
 dS
 xN
 xN
-JZ
+zu
 FU
 Hv
 ps
@@ -16835,7 +16814,7 @@ zt
 xk
 IW
 xN
-JZ
+zu
 FU
 Tk
 TP
