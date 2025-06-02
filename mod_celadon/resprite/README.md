@@ -96,6 +96,7 @@ ID мода: CELADON_RESPRITE
 - `mod_celadon/_storge_icons/icons/helms_snouted.dmi`
 - `mod_celadon/_storge_icons/icons/mask_snouted.dmi`
 - `mod_celadon/_storge_icons/icons`
+- `mod_celadon/_storge_icons/icons/items/clothing/head/helmet_celadon.dmi`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.
@@ -105,7 +106,7 @@ ID мода: CELADON_RESPRITE
 
 ### Авторы:
 
-MrCat15352, Yata9arsu, Kottason, RalseiDreemuurr
+MrCat15352, Yata9arsu, Kottason, RalseiDreemuurr, KOCMOHABT
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.

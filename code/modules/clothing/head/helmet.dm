@@ -189,7 +189,7 @@
 		. += flashlightlight_overlay
 	if(content_overlays)
 		for(var/obj/item/I in contents)
-			. += I.get_helmet_overlay_icon()
+			. += I.get_helmet_overlays_icon()
 	return
 // [/CELADON-EDIT]
 
@@ -219,7 +219,7 @@
 // [/CELADON-EDIT]
 	if(content_overlays)
 		for(var/obj/item/I in contents)
-			. += I.get_helmet_overlay()
+			. += I.get_helmet_overlays()
 	else
 		return
 

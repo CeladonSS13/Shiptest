@@ -8,8 +8,16 @@
 - Overlays - Отображение очков на шлемах.
 - Flashlight - Можно цеплять фонарик на шлем или нет.
 
-MARK: Null Pockets
+// MARK: Отображение Оверлея
 */
+
+/obj/item/proc/get_helmet_overlays()  // returns the icon for overlaying on a helmet
+	return mutable_appearance('mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/helmet_overlays.dmi', icon_state)
+
+/obj/item/proc/get_helmet_overlays_icon()
+	return mutable_appearance('mod_celadon/_storge_icons/icons/items/clothing/eyes/helmet_overlays.dmi', icon_state)
+
+// MARK: Null Pockets
 
 /obj/item/clothing/head/helmet
 	pocket_storage_component_path = null
