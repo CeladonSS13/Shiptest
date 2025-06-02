@@ -44,6 +44,14 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 	content_overlays = TRUE
 
+/obj/item/clothing/head/helmet/syndie
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
+	content_overlays = TRUE
+
+/obj/item/clothing/head/helmet/medical
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
+	content_overlays = TRUE
+
 /obj/item/clothing/head/helmet/sec
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 	content_overlays = TRUE
