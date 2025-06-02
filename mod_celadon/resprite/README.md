@@ -95,6 +95,7 @@ ID мода: CELADON_RESPRITE
 - `mod_celadon/_storge_icons/icons/helms_snouted.dmi`
 - `mod_celadon/_storge_icons/icons/mask_snouted.dmi`
 - `mod_celadon/_storge_icons/icons`
+- `mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo_boxes.dmi`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.
