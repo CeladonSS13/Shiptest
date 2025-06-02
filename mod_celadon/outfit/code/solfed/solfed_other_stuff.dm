@@ -220,8 +220,9 @@
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/headsf.dmi'
 	icon_state = "solfed_m11"
 	item_state = "solfed_m11"
-	can_flashlight = TRUE
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 	content_overlays = TRUE
+	can_flashlight = TRUE
 
 /obj/item/clothing/head/helmet/solfed/m11/elysium
 	name = "Elysium Brigade M11 helmet"
@@ -234,6 +235,7 @@
 	desc = "This is a Solar Federation M11 helmet in desert coloring. It has the Solar Federation flag on the left side of the helmet. This particular helmet is wrapped in green cloth to have better facial protection. It is usually worn by the Solar Federation Elysium Brigade."
 	icon_state = "elysium_brigade_m10_wraps"
 	item_state = "elysium_brigade_m10_wraps"
+	pocket_storage_component_path = null
 
 //oversuits
 /obj/item/clothing/suit/armor/solfed/formal
