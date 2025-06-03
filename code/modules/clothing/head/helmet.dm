@@ -206,6 +206,11 @@
 		else
 			flashlightlight_overlay = mutable_appearance('icons/mob/clothing/head.dmi', flashlight_state)
 		. += flashlightlight_overlay
+	if(content_overlays)
+		for(var/obj/item/I in contents)
+			. += I.get_helmet_overlay()
+	else
+		return
 */
 	if(isinhands)
 		return
@@ -216,12 +221,12 @@
 		else
 			flashlightlight_overlay = mutable_appearance('mod_celadon/_storge_icons/icons/items/clothing/head/overlay/seclite_overlay.dmi', flashlight_state)
 		. += flashlightlight_overlay
-// [/CELADON-EDIT]
 	if(content_overlays)
 		for(var/obj/item/I in contents)
 			. += I.get_helmet_overlays()
 	else
 		return
+// [/CELADON-EDIT]
 
 /obj/item/clothing/head/helmet/sec
 	can_flashlight = TRUE
