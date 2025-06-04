@@ -6726,7 +6726,7 @@
 	melee_damage_upper = 35;
 	move_to_delay = 1;
 	aggro_vision_range = 8;
-	crusher_loot = list(/obj/item/upgradescroll);
+	crusher_loot = list(/obj/item/clothing/suit/space/hardsuit/ert/paranormal/inquisitor);
 	loot = list(/obj/item/clothing/suit/space/hardsuit/ert/paranormal/inquisitor);
 	speed = 2;
 	color = "black"
@@ -9272,11 +9272,13 @@
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ruin/asteroid/limafacility/lightzone)
 "GL" = (
-/obj/machinery/nuclearbomb/syndicate{
-	anchored = 1
-	},
 /obj/effect/turf_decal/syndicateemblem/middle/middle{
 	dir = 4
+	},
+/obj/machinery/nuclearbomb/beer/empty{
+	name = "nuclear fission explosive";
+	desc = "You probably shouldn't stick around to see if this is armed.";
+	anchored = 1
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/asteroid/limafacility/office)
