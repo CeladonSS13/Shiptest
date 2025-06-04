@@ -85,7 +85,9 @@
 	head = /obj/item/clothing/head/helmet/space/plasmaman
 	uniform = /obj/item/clothing/under/plasmaman
 // [CELADON-EDIT] - QoL Plasmamen
-//	r_hand= /obj/item/tank/internals/plasmaman/belt/full // CELADON-EDIT - ORIGINAL
+/* CELADON-EDIT - ORIGINAL
+	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+*/
 	r_pocket= /obj/item/tank/internals/plasmaman/belt/full
 // [/CELADON-EDIT]
 	mask = /obj/item/clothing/mask/breath
