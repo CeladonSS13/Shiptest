@@ -190,7 +190,8 @@
 	if(content_overlays)
 		for(var/obj/item/I in contents)
 			. += I.get_helmet_overlays_icon()
-	return
+	else
+		return
 // [/CELADON-EDIT]
 
 /obj/item/clothing/head/helmet/worn_overlays(isinhands)
