@@ -394,7 +394,6 @@
 /obj/item/spacecash/bundle/c1000,
 /obj/item/spacecash/bundle/c1000,
 /obj/item/storage/box/syndimaid,
-/obj/item/melee/sword/weebstick,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/asteroid/limafacility/office)
 "bw" = (
@@ -1258,6 +1257,16 @@
 "eF" = (
 /turf/open/floor/plasteel/showroomfloor,
 /area/ruin/asteroid/limafacility/heavyzone)
+"eG" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/item/ammo_casing/spent/slug/buck,
+/turf/open/floor/plasteel/tech,
+/area/ruin/asteroid/limafacility/office)
 "eH" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -2331,6 +2340,10 @@
 /obj/item/ammo_casing/spent/big_steel,
 /turf/open/floor/plating,
 /area/ruin/asteroid/limafacility/heavyzone)
+"if" = (
+/obj/item/ammo_casing/spent/big_steel,
+/turf/open/floor/plasteel/tech,
+/area/ruin/asteroid/limafacility/office)
 "ig" = (
 /obj/machinery/shower{
 	dir = 4
@@ -2688,6 +2701,16 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/asteroid/limafacility/office)
+"jB" = (
+/obj/item/ammo_casing/spent/slug,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/faithless{
+	faction = list("Ramzi Clique")
+	},
+/turf/open/floor/plasteel/dark_2,
+/area/ruin/asteroid/limafacility/heavyzone)
 "jC" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/structure/cable{
@@ -3220,6 +3243,14 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/limafacility/shuttle)
+"lu" = (
+/obj/effect/turf_decal/borderfloorblack,
+/obj/item/ammo_casing/spent/slug/buck,
+/mob/living/simple_animal/hostile/faithless{
+	faction = list("Ramzi Clique")
+	},
+/turf/open/floor/plasteel/dark_2,
+/area/ruin/asteroid/limafacility/heavyzone)
 "lv" = (
 /obj/machinery/vending/coffee{
 	all_items_free = 1
@@ -3368,6 +3399,12 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/asteroid/limafacility/dorm)
+"ma" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/item/ammo_casing/spent/rifle_steel,
+/turf/open/floor/plasteel/tech,
+/area/ruin/asteroid/limafacility/office)
 "mb" = (
 /obj/structure/closet/crate/large,
 /obj/item/modular_computer/tablet,
@@ -5126,6 +5163,14 @@
 	dir = 8
 	},
 /area/ruin/asteroid/limafacility/security)
+"sb" = (
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 8;
+	name = "hazard stripes"
+	},
+/obj/item/ammo_casing/spent/rifle_steel,
+/turf/open/floor/plasteel/tech,
+/area/ruin/asteroid/limafacility/office)
 "sc" = (
 /obj/item/ammo_casing/spent/slug/buck,
 /obj/item/stack/ore/salvage/scrapmetal,
@@ -6434,6 +6479,7 @@
 	name = "hazard stripes";
 	dir = 9
 	},
+/obj/item/ammo_casing/spent/pistol_steel,
 /turf/open/floor/engine,
 /area/ruin/asteroid/limafacility/office)
 "wF" = (
@@ -6737,6 +6783,12 @@
 "xC" = (
 /turf/open/floor/engine/airless,
 /area/ruin/asteroid/limafacility/lightzone)
+"xF" = (
+/mob/living/simple_animal/hostile/faithless{
+	faction = list("Ramzi Clique")
+	},
+/turf/open/floor/plasteel/dark_2,
+/area/ruin/asteroid/limafacility/security)
 "xG" = (
 /obj/item/ammo_casing/spent/rifle_brass,
 /turf/open/floor/plating,
@@ -6799,12 +6851,9 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/asteroid/limafacility/shuttle)
 "xY" = (
-/obj/structure/guncloset{
-	anchored = 1
-	},
-/obj/item/gun/ballistic/automatic/smg/cobra,
-/turf/open/floor/plasteel/dark_2,
-/area/ruin/asteroid/limafacility/security)
+/obj/item/ammo_casing/spent/slug/buck,
+/turf/open/floor/plasteel/tech,
+/area/ruin/asteroid/limafacility/office)
 "xZ" = (
 /obj/structure/chair/sofa/blue/left/directional/north,
 /turf/open/floor/plasteel/darkbluefull/darkblue,
@@ -7713,6 +7762,9 @@
 	dir = 4
 	},
 /obj/item/ammo_casing/spent/rifle_brass,
+/mob/living/simple_animal/hostile/faithless{
+	faction = list("Ramzi Clique")
+	},
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/heavyzone)
 "Bb" = (
@@ -7756,6 +7808,14 @@
 	dir = 1
 	},
 /area/ruin/asteroid/limafacility/lightzone)
+"Bh" = (
+/obj/effect/turf_decal/industrial/traffic{
+	name = "hazard stripes";
+	dir = 10
+	},
+/obj/item/ammo_casing/spent/rifle_steel,
+/turf/open/floor/plasteel/tech,
+/area/ruin/asteroid/limafacility/office)
 "Bk" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 8
@@ -10041,6 +10101,10 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/limafacility/office)
+"IQ" = (
+/obj/item/ammo_casing/spent/rifle_steel,
+/turf/open/floor/plasteel/tech,
+/area/ruin/asteroid/limafacility/office)
 "IR" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -10154,6 +10218,16 @@
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ruin/asteroid/limafacility/lightzone)
+"Jg" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/obj/item/ammo_casing/spent/pistol_steel,
+/mob/living/simple_animal/hostile/faithless{
+	faction = list("Ramzi Clique")
+	},
+/turf/open/floor/plasteel/dark_2,
+/area/ruin/asteroid/limafacility/heavyzone)
 "Jh" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
@@ -10175,6 +10249,14 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/wood,
 /area/ruin/asteroid/limafacility/dorm)
+"Jm" = (
+/obj/effect/turf_decal/industrial/traffic{
+	name = "hazard stripes";
+	dir = 9
+	},
+/obj/item/ammo_casing/spent/rifle_steel,
+/turf/open/floor/plasteel/tech,
+/area/ruin/asteroid/limafacility/office)
 "Jn" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -10914,6 +10996,15 @@
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ruin/asteroid/limafacility/lightzone)
+"LS" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 5
+	},
+/mob/living/simple_animal/hostile/faithless{
+	faction = list("Ramzi Clique")
+	},
+/turf/open/floor/plasteel/dark_2,
+/area/ruin/asteroid/limafacility/heavyzone)
 "LU" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 1
@@ -12943,6 +13034,14 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/asteroid/limafacility/heavyzone)
+"SG" = (
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 4;
+	name = "hazard stripes"
+	},
+/obj/item/ammo_casing/spent/rifle_steel,
+/turf/open/floor/plasteel/tech,
+/area/ruin/asteroid/limafacility/office)
 "SJ" = (
 /obj/structure/flora/rock,
 /turf/open/floor/plating/asteroid/airless,
@@ -13206,6 +13305,9 @@
 	dir = 4
 	},
 /obj/effect/gibspawner/human,
+/mob/living/simple_animal/hostile/faithless{
+	faction = list("Ramzi Clique")
+	},
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/security)
 "TQ" = (
@@ -14056,6 +14158,23 @@
 	},
 /turf/open/indestructible/necropolis/air,
 /area/ruin/asteroid/limafacility/office)
+"WJ" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/item/ammo_casing/spent/pistol_steel,
+/mob/living/simple_animal/hostile/faithless{
+	faction = list("Ramzi Clique")
+	},
+/turf/open/floor/plating,
+/area/ruin/asteroid/limafacility/heavyzone)
 "WL" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -16448,7 +16567,7 @@ ix
 Pz
 gb
 Ck
-Ck
+Jg
 wd
 wd
 cc
@@ -16470,7 +16589,7 @@ wd
 uv
 Tw
 YB
-Fa
+LS
 lR
 wd
 cS
@@ -16534,7 +16653,7 @@ pR
 mL
 pR
 pR
-pR
+lk
 pR
 NG
 pR
@@ -16819,7 +16938,7 @@ Ft
 cj
 fw
 AD
-qA
+WJ
 OZ
 zK
 Ak
@@ -16962,7 +17081,7 @@ tV
 vJ
 Ys
 eH
-xY
+Hc
 Hc
 HB
 Fz
@@ -17037,7 +17156,7 @@ NW
 Ho
 OR
 Vn
-ps
+xF
 dD
 HB
 Fz
@@ -17193,7 +17312,7 @@ ps
 Bo
 JJ
 FU
-ne
+lu
 by
 mf
 zK
@@ -17224,7 +17343,7 @@ ru
 zK
 aP
 Nl
-KI
+jB
 xN
 cq
 cq
@@ -18105,7 +18224,7 @@ ef
 Td
 Td
 Td
-kY
+IQ
 kp
 kY
 kY
@@ -18180,7 +18299,7 @@ ze
 tc
 tc
 tc
-tc
+ma
 qn
 tc
 tc
@@ -18252,14 +18371,14 @@ yi
 Ns
 kY
 kY
-kY
+if
 kY
 tN
-Fv
+sb
 Fv
 Fv
 tK
-kY
+IQ
 kY
 Wh
 ef
@@ -18332,10 +18451,10 @@ Fv
 Gq
 kY
 kY
-kY
+xY
 jT
-Fv
-tK
+sb
+Bh
 oA
 wf
 kY
@@ -18407,7 +18526,7 @@ kY
 kY
 kY
 kY
-kY
+xY
 kY
 kY
 Bs
@@ -18564,8 +18683,8 @@ kY
 kY
 FA
 kY
-iF
-kY
+eG
+xY
 kY
 kx
 kx
@@ -18624,10 +18743,10 @@ kY
 kY
 kY
 kX
-tN
+Jm
 Gq
 kY
-kY
+xY
 rW
 EU
 wE
@@ -18640,7 +18759,7 @@ kY
 jT
 tK
 iF
-kY
+xY
 kY
 kY
 kx
@@ -18700,7 +18819,7 @@ kY
 kY
 td
 fu
-kY
+IQ
 kY
 kY
 EU
@@ -18936,7 +19055,7 @@ Sb
 bd
 rW
 kY
-kY
+if
 lr
 cV
 kY
@@ -19074,7 +19193,7 @@ kx
 kY
 kY
 GA
-kY
+if
 pd
 kY
 js
@@ -19228,7 +19347,7 @@ dT
 jT
 Fv
 pd
-oA
+SG
 wf
 kY
 kY
@@ -19302,15 +19421,15 @@ kY
 Wh
 dT
 kY
-kY
-kY
+IQ
+IQ
 pd
 oA
 oA
 oA
 to
 kY
-kY
+IQ
 kY
 kY
 kY
@@ -19382,10 +19501,10 @@ kY
 kY
 kY
 kY
-kY
+xY
 gQ
 kY
-kY
+IQ
 js
 kY
 kY
