@@ -217,7 +217,6 @@
 		return
 	if(attached_light)
 		if(attached_light.on)
-
 			flashlightlight_overlay = mutable_appearance('mod_celadon/_storge_icons/icons/items/clothing/head/overlay/seclite_overlay.dmi', "[flashlight_state]_on")
 		else
 			flashlightlight_overlay = mutable_appearance('mod_celadon/_storge_icons/icons/items/clothing/head/overlay/seclite_overlay.dmi', flashlight_state)
