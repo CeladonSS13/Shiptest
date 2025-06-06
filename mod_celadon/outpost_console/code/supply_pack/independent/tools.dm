@@ -55,6 +55,13 @@
 	contains = list(/obj/item/storage/belt/military/assault)
 	crate_name = "assault belt crate"
 
+/datum/supply_pack/faction/independent/tools/milbelt
+	name = "Military Chest Rig"
+	desc = "Contains an chest rig, with not one, not two, but seven pockets."
+	cost = 1000
+	contains = list(/obj/item/storage/belt/military)
+	crate_name = "chest rig crate"
+
 /datum/supply_pack/faction/independent/tools/cellcharger
 	name = "Cell Charger Crate"
 	desc = "Contains a cell charger, able to charge all sorts of power cells."

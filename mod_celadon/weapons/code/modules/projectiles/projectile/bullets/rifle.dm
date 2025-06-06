@@ -1,4 +1,4 @@
-//5.56x45
+// MARK: 5.56x45
 
 /obj/projectile/bullet/a556_45
 	name = "5.56x45mm bullet"
@@ -20,7 +20,7 @@
 	damage = 20
 	armour_penetration = 10
 
-//.308
+// MARK: .308
 
 /obj/projectile/bullet/a308
 	name = ".308"
@@ -31,33 +31,33 @@
 	armour_penetration = 40
 	bullet_identifier = "large bullet"
 
-/obj/projectile/bullet/a308_sp
-	name = ".308"
+/obj/projectile/bullet/a308/hp
+	name = ".308 hollow point bullet"
 	speed = 0.3
 	damage = 60
 	armour_penetration = -10
 
-/obj/projectile/bullet/a308/a308_brak
-	name = ".308"
+/obj/projectile/bullet/a308/surplus
+	name = ".308 surplus bullet"
 	speed = 0.3
 	damage = 28
 	armour_penetration = 25
 
-/obj/projectile/bullet/a308/a308_ap
-	name = ".308"
+/obj/projectile/bullet/a308/ap
+	name = ".308 armor piercing bullet"
 	speed = 0.3
 	damage = 28
 	armour_penetration = 60
 
-/obj/projectile/bullet/a308/a308_rub
-	name = ".308"
+/obj/projectile/bullet/a308/rubber
+	name = ".308 rubber bullet"
 	icon_state = "rubber"
 	speed = 0.4
 	damage = 5
 	armour_penetration = -10
 	stamina = 38
 
-//7.62x54mmR
+// MARK: 7.62x54mmR
 /obj/projectile/bullet/x762x54
 	name = "crude sniper bullet"
 	speed = 1.1

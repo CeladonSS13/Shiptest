@@ -160,14 +160,14 @@ MARK: 7.62
 
 /datum/supply_pack/faction/inteq/ammo/a762_ap
 	name = "7.62x40mm Armour Piercing Ammo Box Crate"
-	desc = "Contains one 60-round 7.62x40mm Armour Piercing box for the SKM rifles."
-	contains = list(/obj/item/storage/box/ammo/a762_40/ap)
+	desc = "Contains one 60-round 7.62x40mm Armour Piercing ammo, issued by IRMG."
+	contains = list(/obj/item/storage/box/ammo/a762_40/ap/inteq)
 	cost = 450
 
 /datum/supply_pack/faction/inteq/ammo/a762_hp
 	name = "7.62x40mm Hollow Point Ammo Box Crate"
-	desc = "Contains one 60-round 7.62x40mm Hollow Point box for the SKM rifles."
-	contains = list(/obj/item/storage/box/ammo/a762_40/hp)
+	desc = "Contains one 60-round 7.62x40mm Hollow Point ammo, issued by IRMG."
+	contains = list(/obj/item/storage/box/ammo/a762_40/hp/inteq)
 	cost = 450
 
 /*
@@ -176,7 +176,7 @@ MARK: .308
 
 /datum/supply_pack/faction/inteq/ammo/a308_ammo_box
 	name = "308 Ammo Box Crate"
-	desc = ".308 ammo box for guns like the F4 SSG-04."
+	desc = "Contains a thirty-round .308 ammo box for DMRs such as the SsG-04 and CM-GAL-S"
 	contains = list(/obj/item/storage/box/ammo/a308)
 	cost = 185
 
@@ -191,12 +191,6 @@ MARK: .308
 	desc = "Contains a thirty-round .308 hollow point box for DMRs such as the SsG-04 and CM-GAL-S."
 	contains = list(/obj/item/storage/box/ammo/a308/hp)
 	cost = 230
-
-/datum/supply_pack/faction/inteq/ammo/a308_hp
-	name = "308 Hollow Point Ammo Box Crate"
-	desc = "Contains a thirty-round .308 hollow point box for DMRs such as the SsG-04 and CM-GAL-S."
-	contains = list(/obj/item/storage/box/ammo/a308/hp)
-	cost = 500
 
 /*
 MARK: 5.56x45mm
