@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/independent/modsuits
-	group = "MODsuits"
+	category = "MODsuits"
 	crate_type = /obj/structure/closet/crate/secure/gear
 
 /datum/supply_pack/faction/independent/modsuits/science/mod_core

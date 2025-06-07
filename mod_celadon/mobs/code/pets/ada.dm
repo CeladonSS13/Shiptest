@@ -9,9 +9,9 @@
 	icon_living = "ada"
 	icon_dead = "ada_dead"
 	held_state = "ada"
-	icon = 'mod_celadon/_storge_icons/icons/mobs/kovac_animals.dmi'
-	held_lh = 'mod_celadon/_storge_icons/icons/mobs/animals_held_lh.dmi'
-	held_rh = 'mod_celadon/_storge_icons/icons/mobs/animals_held_rh.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets.dmi'
+	held_lh = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets_held_lh.dmi'
+	held_rh = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets_held_rh.dmi'
 
 /mob/living/simple_animal/pet/dog/corgi/Lisa/ada/Life()
 	return

@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/solfed/gun
-	group = "Guns"
+	category = "Guns"
 
 /datum/supply_pack/faction/solfed/gun/pistole_c
 	name = "Solar Pistole C"

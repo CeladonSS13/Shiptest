@@ -52,6 +52,6 @@ NO_MAG_GUN_HELPER(automatic/pistol/glock)
 /obj/item/gun/ballistic/automatic/pistol/solgov // - Оффы не завезли отображение в руках для этого пистолета, потому фиксим проблему так.
 	icon_state = "pistole-c"
 	icon = 'mod_celadon/_storge_icons/icons/items/weapons/pistols.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/guns_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/guns_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/guns_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/guns_righthand.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/weapons/back.dmi'

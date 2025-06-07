@@ -17,9 +17,9 @@
 	new /obj/item/stack/cable_coil(src)
 
 /obj/item/gun_maint_kit
-	icon = 'mod_celadon/_storge_icons/icons/items/items_and_weapons.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/mob/inhands/tools_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/mob/inhands/tools_righthand.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/items_and_weapons.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/tools_righthand.dmi'
 	icon_state = "repair_kit"
 	wear_reduction = 100
 	uses = 5

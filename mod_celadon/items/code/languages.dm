@@ -13,7 +13,7 @@
 		"ﺕ", "ﺗ", "ﺰ", "ﻀ", "ﻖ",
 		"ﺖ",  "ﺘ",  "ﺱ",  "ﻄ",  "ﻔ"
 	)
-	icon = "mod_celadon/_storge_icons/icons/items/obj/language.dmi"
+	icon = 'mod_celadon/_storge_icons/icons/assets/language.dmi'
 	icon_state = "elysm"
 	default_priority = 90
 
@@ -32,7 +32,7 @@
 		"ﺕ", "ﺗ", "ﺰ", "ﻀ", "ﻖ",
 		"ﺖ",  "ﺘ",  "ﻑ",  "ﻄ",  "ﻔ"
 	)
-	icon = "mod_celadon/_storge_icons/icons/items/obj/language.dmi"
+	icon = 'mod_celadon/_storge_icons/icons/assets/language.dmi'
 	icon_state = "alquadim_elysm"
 	default_priority = 90
 
@@ -51,7 +51,7 @@
 		"ヷ", "ヂ", "エ", "ぐ",
 		"セ",  "ゾ",  "じ",  "べ"
 	)
-	icon = "mod_celadon/_storge_icons/icons/items/obj/language.dmi"
+	icon = 'mod_celadon/_storge_icons/icons/assets/language.dmi'
 	icon_state = "thayos"
 	default_priority = 90
 
@@ -70,7 +70,7 @@
 		"也", "艾了", "吴",
 		"用",  "艾姆",  "艾弗"
 	)
-	icon = "mod_celadon/_storge_icons/icons/items/obj/language.dmi"
+	icon = 'mod_celadon/_storge_icons/icons/assets/language.dmi'
 	icon_state = "fuyo"
 	default_priority = 90
 
@@ -80,7 +80,7 @@
 	flags = NO_STUTTER
 	key = "l"
 	syllables = list("click", "clack", "clickity click", " сhecklichick", " tichetich", "snick", "scknt", "sni snoo", "tskt", "ch-ch", "tink", "clank", "snap")
-	icon = "mod_celadon/_storge_icons/icons/items/obj/language.dmi"
+	icon = 'mod_celadon/_storge_icons/icons/assets/language.dmi'
 	icon_state = "lanrattle"
 
 /datum/language_holder/lanius

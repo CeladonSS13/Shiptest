@@ -312,7 +312,7 @@
 			N.color = null
 			// [CELADON-EDIT] - CELADON_AREAS - Иначе никак не подсунуть свои зоны
 			// N.icon = 'icons/turf/areas.dmi' // CELADON-EDIT - ORIGINAL
-			N.icon = 'mod_celadon/_storge_icons/icons/areas.dmi'
+			N.icon = 'mod_celadon/_storge_icons/icons/assets/areas.dmi'
 			// [CELADON-EDIT]
 			N.layer = initial(N.layer)
 			N.plane = initial(N.plane)

@@ -492,32 +492,32 @@
 
 /datum/sprite_accessory/riol_hairs/bedheadlong
 	name = "Long Bedhead"
-	icon = 'mod_celadon/_storge_icons/icons/qol/human_face.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/human/human_face.dmi'
 	icon_state = "hair_long_bedhead"
 
 /datum/sprite_accessory/riol_hairs/longemo
 	name = "Long Emo"
-	icon = 'mod_celadon/_storge_icons/icons/qol/human_face.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/human/human_face.dmi'
 	icon_state = "hair_longemo"
 
 /datum/sprite_accessory/riol_hairs/highponytail
 	name = "Ponytail (High)"
-	icon = 'mod_celadon/_storge_icons/icons/qol/human_face.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/human/human_face.dmi'
 	icon_state = "hair_highponytail"
 
 /datum/sprite_accessory/riol_hairs/longponytail
 	name = "Ponytail (Long)"
-	icon = 'mod_celadon/_storge_icons/icons/qol/human_face.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/human/human_face.dmi'
 	icon_state = "hair_longstraightponytail"
 
 /datum/sprite_accessory/riol_hairs/long_over_eye
 	name = "Long Over Eye"
-	icon = 'mod_celadon/_storge_icons/icons/qol/human_face.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/human/human_face.dmi'
 	icon_state = "hair_longovereye"
 
 /datum/sprite_accessory/riol_hairs/modern
 	name = "Modern"
-	icon = 'mod_celadon/_storge_icons/icons/qol/human_face.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/human/human_face.dmi'
 	icon_state = "hair_modern"
 
 // MARK: EARS

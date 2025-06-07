@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/syndicate/gun
-	group = "Guns"
+	category = "Guns"
 
 /datum/supply_pack/faction/syndicate/gun/ringneck
 	name = "Ringneck Pistol Crate"

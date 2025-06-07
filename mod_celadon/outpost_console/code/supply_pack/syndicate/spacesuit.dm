@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/syndicate/spacesuit
-	group = "Spacesuits"
+	category = "Spacesuits"
 
 /datum/supply_pack/faction/syndicate/spacesuit/armored_engi_spacesuit
 	name = "Coalition Engineering Space Suit Crate"

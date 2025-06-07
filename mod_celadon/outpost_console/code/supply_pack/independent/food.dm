@@ -1,8 +1,7 @@
 /datum/supply_pack/faction/independent/food
-	group = "Food & Agricultural"
+	category = "Food & Agricultural"
 
-
-/* MARK: = Gun List =
+/* MARK: = Food List =
 
 > Готовая еда
 > Ингредиенты

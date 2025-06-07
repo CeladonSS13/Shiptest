@@ -6,16 +6,16 @@
 
 // Чиним оливки, спрайт был с лишним пикселем...
 /obj/item/garnish
-	icon = 'mod_celadon/_storge_icons/icons/food_and_drinks/modglass_garnishes_items.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/overlay/modglass_garnishes_items.dmi'
 
 /obj/item/storage/box/ammo/a556_42
-	icon = 'mod_celadon/_storge_icons/icons/ammo/ammo.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi'
 	icon_state = "a556_42box_big"
 
 /obj/item/storage/box/ammo/a556_42/ap
-	icon = 'mod_celadon/_storge_icons/icons/ammo/ammo.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi'
 	icon_state = "a556_42box_big-ap"
 
 /obj/item/storage/box/ammo/a556_42/hp
-	icon = 'mod_celadon/_storge_icons/icons/ammo/ammo.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi'
 	icon_state = "a556_42box_big-hp"

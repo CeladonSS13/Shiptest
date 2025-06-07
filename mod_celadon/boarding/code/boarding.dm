@@ -1,20 +1,20 @@
 /obj/effect/temp_visual/boarding_alert
 	name = "phasing energy"
-	icon = 'mod_celadon/_storge_icons/icons/boarding.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/structures/boarding.dmi'
 	icon_state = "teleporting_alert"
 	randomdir = 0
 	duration = 55
 
 /obj/effect/temp_visual/boarding_out
 	name = "phasing person"
-	icon = 'mod_celadon/_storge_icons/icons/boarding.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/structures/boarding.dmi'
 	icon_state = "teleporting_out"
 	randomdir = 0
 	duration = 8
 
 /obj/effect/temp_visual/boarding_in
 	name = "phasing person"
-	icon = 'mod_celadon/_storge_icons/icons/boarding.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/structures/boarding.dmi'
 	icon_state = "teleporting_in"
 	randomdir = 0
 	duration = 8
@@ -28,7 +28,7 @@
 /obj/machinery/boarding_pad // mantis B or nothing
 	name = "phasic boarding telepad"
 	desc = "Устройство для абордажа вражеских шаттлов, один человек на пад. Инструкции? Запросто! Подберитесь к шаттлу в упор, встаньте на телепортер и инициируйте транслокацию."
-	icon = 'mod_celadon/_storge_icons/icons/boarding.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/structures/boarding.dmi'
 	icon_state = "boarding_pad"
 	circuit = /obj/item/circuitboard/machine/boarding_pad
 	var/datum/overmap/ship/controlled/current_ship

@@ -1,7 +1,7 @@
 /mob/living/simple_animal/hostile/asteroid/roach
 	name = "Kampfer Roach"
 	desc = "A monstrous, dog-sized cockroach. These huge mutants can be everywhere where humans are, on ships, planets and stations."
-	icon = 'mod_celadon/_storge_icons/icons/mobs/animal.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/mobs/roaches.dmi'
 	icon_state = "roach"
 	icon_living = "roach_move"
 	icon_aggro = "roach_move"

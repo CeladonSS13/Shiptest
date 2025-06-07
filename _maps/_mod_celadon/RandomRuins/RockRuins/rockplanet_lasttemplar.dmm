@@ -1298,8 +1298,7 @@
 	health = 500;
 	melee_damage_lower = 50;
 	melee_damage_upper = 50;
-	maxHealth = 500;
-	movespeed_modification = 1.2
+	maxHealth = 500
 	},
 /turf/open/floor/suns/diagonal{
 	color = "#792f27"
@@ -2092,12 +2091,11 @@
 	gps_name = "???l";
 	melee_damage_lower = 30;
 	melee_damage_upper = 35;
-	move_to_delay = 1;
 	aggro_vision_range = 8;
 	crusher_loot = list(/obj/item/upgradescroll);
 	loot = list(/obj/item/clothing/suit/space/hardsuit/ert/paranormal/inquisitor);
 	speed = 2;
-	movespeed_modification = 1.2
+	move_to_delay = 1
 	},
 /obj/effect/temp_visual/cult/turf,
 /obj/effect/decal/cleanable/dirt,

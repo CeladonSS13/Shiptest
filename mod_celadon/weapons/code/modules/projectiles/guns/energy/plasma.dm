@@ -2,8 +2,8 @@
 	name = "SL PPD-142 'Cryogelida' plasma pistol"
 	desc = "A fresh-new experimental plasma pistol manufactured by Nanotrasen-Sharplite, it uses supercooled plasma blasts to subdue users' enemies."
 	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ntsl_lasers.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/guns_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/guns_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/guns_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/guns_righthand.dmi'
 	icon_state = "plasma_pistol_cryo"
 	charge_sections = 4
 	shaded_charge = TRUE
@@ -29,8 +29,8 @@
 	name = "SL PPD-238 'Pyrogelida' plasma pistol"
 	desc = "A fresh-new experimental plasma pistol manufactured by Nanotrasen-Sharplite, it uses superheated plasma blasts to furiously burn users' enemies."
 	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ntsl_lasers.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/guns_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/guns_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/guns_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/guns_righthand.dmi'
 	icon_state = "plasma_pistol_fire"
 	charge_sections = 4
 	shaded_charge = TRUE

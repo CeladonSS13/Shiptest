@@ -2,8 +2,8 @@
 	return
 
 /obj/item/clothing/gloves/ring
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/ring.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/inhands/hands.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/ring.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hands/overlay/hands2.dmi'
 	name = "gold ring"
 	desc = "A tiny gold ring, sized to wrap around a finger."
 	gender = NEUTER
@@ -40,7 +40,7 @@
 /obj/item/storage/fancy/ringbox
 	name = "ring box"
 	desc = "A tiny box covered in soft red felt made for holding rings."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/ring.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/ring.dmi'
 	icon_state = "gold ringbox"
 	w_class = WEIGHT_CLASS_TINY
 	spawn_type = /obj/item/clothing/gloves/ring

@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/syndicate/magazine
-	group = "Magazines"
+	category = "Magazines"
 
 /* Scarbie */
 

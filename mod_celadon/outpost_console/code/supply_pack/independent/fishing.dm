@@ -1,6 +1,5 @@
 /datum/supply_pack/faction/independent/fish
-	group = "Fishing Essentials"
-
+	category = "Fishing Essentials"
 
 /datum/supply_pack/faction/independent/fish/fishingkit
 	name = "Fishing Starter Kit"

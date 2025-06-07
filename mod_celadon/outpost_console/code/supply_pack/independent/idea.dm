@@ -5,7 +5,7 @@
 	desc = "Average IDEA boring instructions with bunch of pictures and text"
 
 /datum/supply_pack/faction/independent/idea
-	group = "IDEA"
+	category = "IDEA"
 	crate_type = /obj/structure/closet/crate/large
 
 /datum/supply_pack/faction/independent/idea/silicon

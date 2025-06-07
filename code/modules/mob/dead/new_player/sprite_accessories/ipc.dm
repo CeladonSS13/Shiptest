@@ -5,7 +5,7 @@
 /datum/sprite_accessory/ipc_screens
 	// [CELADON-EDIT] - CELADON_IPC_CHASSIS
 	// icon = 'icons/mob/ipc_accessories.dmi' // CELADON-EDIT -> ORIGINAL
-	icon = 'mod_celadon/_storge_icons/icons/ipc/ipc_accessories.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/ipc/ipc_accessories.dmi'
 	// [/CELADON-EDIT]
 	color_src = EYECOLOR
 
@@ -297,7 +297,7 @@
 /datum/sprite_accessory/ipc_chassis // Used for changing limb icons, doesn't need to hold the actual icon. That's handled in ipc.dm
 	// [CELADON-EDIT] - CELADON_IPC_CHASSIS
 	// icon = null // CELADON-EDIT -> ORIGINAL
-	icon = 'mod_celadon/_storge_icons/icons/ipc/bodyparts.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/ipc/bodyparts.dmi'
 	// [/CELADON-EDIT]
 	icon_state = "who cares fuck you" // In order to pull the chassis correctly, we need AN icon_state(see line 36-39). It doesn't have to be useful, because it isn't used.
 	color_src = 0

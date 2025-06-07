@@ -1,7 +1,7 @@
 /obj/item/lighter/zippo
 	name = "\improper Zippo lighter"
 	desc = "The zippo."
-	icon = 'mod_celadon/_storge_icons/icons/obj/zippo.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/zippo.dmi'
 	icon_state = "zippo"
 	item_state = "zippo"
 

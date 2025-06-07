@@ -24,7 +24,7 @@
 	pixel_w = -8
 	pixel_z = -8
 	icon_state = "planet-plasma"
-	icon = 'mod_celadon/_storge_icons/icons/overmap/overmap_large.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap_large.dmi'
 	landing_sound = 'mod_celadon/_storge_sounds/sound/events/planet_landing_3.mp3'
 	mapgen = /datum/map_generator/planet_generator/plasma_gaint
 	default_baseturf = /turf/open/floor/plating/asteroid/plasma_gaint

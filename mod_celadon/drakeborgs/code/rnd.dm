@@ -1,7 +1,7 @@
 /obj/item/borg/upgrade/transform/drake
 	name = "Test"
 	desc = "If you see this, screenshot and send to codders"
-	icon = 'mod_celadon/_storge_icons/icons/drake.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/other/borgs/drake.dmi'
 	icon_state = "drake_upg"
 
 /obj/item/borg/upgrade/transform/drake/med

@@ -99,8 +99,6 @@
 	damage = 35
 	armour_penetration = 40
 	speed = BULLET_SPEED_RIFLE
-*/
-//[/СELADON-REMOVE]
 
 
 /obj/projectile/bullet/a308/hp
@@ -122,6 +120,8 @@
 	armour_penetration = 20
 	speed_mod = BULLET_SPEED_RUBBER_MOD
 	bullet_identifier = "large rubber bullet"
+*/
+//[/СELADON-REMOVE]
 
 // 8x58mm caseless (SG-669)
 

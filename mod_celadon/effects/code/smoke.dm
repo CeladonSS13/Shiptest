@@ -1,6 +1,6 @@
 // All the smoke variant particles.
 /particles/smoke
-	icon = 'mod_celadon/_storge_icons/icons/smoke.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/assets/qol/smoke.dmi'
 	icon_state = list("smoke_1" = 1, "smoke_2" = 1, "smoke_3" = 2)
 	width = 100
 	height = 100
@@ -73,7 +73,7 @@
 	velocity = generator(GEN_VECTOR, list(-0.1, 0.4, 0), list(0.1, 0.5, 0), NORMAL_RAND)
 
 /particles/fog
-	icon = 'mod_celadon/_storge_icons/icons/smoke.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/assets/qol/smoke.dmi'
 	icon_state = list("chill_1" = 2, "chill_2" = 2, "chill_3" = 1)
 
 /particles/fog/breath

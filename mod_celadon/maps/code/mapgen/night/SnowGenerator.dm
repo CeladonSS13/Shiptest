@@ -96,7 +96,7 @@
 		/obj/structure/flora/grass/both = 12,
 		/obj/structure/flora/ash/chilly = 4,
 		/obj/structure/flora/ash/garden/frigid = 2,
-		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/obj/landmine.dmi'} = 1
+		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/items/misc/landmine.dmi'} = 1
 	)
 	flora_spawn_chance = 10
 	mob_spawn_chance = 1
@@ -162,7 +162,7 @@
 		/obj/structure/flora/tree/pine = 20,
 		/obj/structure/flora/tree/dead = 6,
 		/obj/structure/flora/grass/both = 8,
-		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/obj/landmine.dmi'} = 1,
+		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/items/misc/landmine.dmi'} = 1,
 	)
 
 /datum/biome/snow/forest/dense/night
@@ -174,7 +174,7 @@
 		/obj/structure/flora/tree/pine = 20,
 		/obj/structure/flora/grass/both = 6,
 		/obj/structure/flora/tree/dead = 3,
-		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/obj/landmine.dmi'} = 1,
+		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/items/misc/landmine.dmi'} = 1,
 	)
 
 /datum/biome/arctic/night

@@ -70,7 +70,7 @@
 //HADES projectiles
 
 /obj/projectile/beam/disabler/assault
-	icon = 'mod_celadon/_storge_icons/icons/ammo/projectiles.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/projectiles.dmi'
 	icon_state = "heavylaser_blue"
 	speed = 0.7
 	damage = 25
@@ -122,7 +122,7 @@
 //Honorable mentions
 
 /obj/projectile/beam/disabler/heavylaser
-	icon = 'mod_celadon/_storge_icons/icons/ammo/projectiles.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/projectiles.dmi'
 	icon_state = "heavylaser_blue"
 	damage = 40
 

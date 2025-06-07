@@ -5,7 +5,7 @@
 	w_class = WEIGHT_CLASS_GIGANTIC
 	item_state = "electronic"
 	flags_1 = CONDUCT_1
-	cyborg_icon_override = 'mod_celadon/_storge_icons/icons/mekaborg.dmi'
+	cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi'
 	hasrest = TRUE
 
 /obj/item/robot_module/meka/medical
@@ -42,20 +42,20 @@
 	var/static/list/meka_medical_icons
 	if(!meka_medical_icons)
 		meka_medical_icons = list(
-		"Niko" = image(icon = 'mod_celadon/_storge_icons/icons/mekaborg.dmi', icon_state = "mmekamed"),
-		"Nika" = image(icon = 'mod_celadon/_storge_icons/icons/mekaborg.dmi', icon_state = "fmekamed")
+		"Niko" = image(icon = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi', icon_state = "mmekamed"),
+		"Nika" = image(icon = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi', icon_state = "fmekamed")
 		)
 		meka_medical_icons = sortList(meka_medical_icons)
 	var/meka_medical_robot_icon = show_radial_menu(R, R , meka_medical_icons, custom_check = CALLBACK(src, PROC_REF(check_menu), R), radius = 42, require_near = TRUE)
 	switch(meka_medical_robot_icon)
 		if("Niko")
 			cyborg_base_icon = "mmekamed"
-			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/mekaborg.dmi'
+			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi'
 			hat_offset = 3
 			special_light_key = "mmekamed"
 		if("Nika")
 			cyborg_base_icon = "fmekamed"
-			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/mekaborg.dmi'
+			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi'
 			hat_offset = 3
 			special_light_key = "fmekamed"
 		else
@@ -100,20 +100,20 @@
 	var/static/list/meka_engineering_icons
 	if(!meka_engineering_icons)
 		meka_engineering_icons = list(
-		"Niko" = image(icon = 'mod_celadon/_storge_icons/icons/mekaborg.dmi', icon_state = "mmekaeng"),
-		"Nika" = image(icon = 'mod_celadon/_storge_icons/icons/mekaborg.dmi', icon_state = "fmekaeng")
+		"Niko" = image(icon = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi', icon_state = "mmekaeng"),
+		"Nika" = image(icon = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi', icon_state = "fmekaeng")
 		)
 		meka_engineering_icons = sortList(meka_engineering_icons)
 	var/meka_engineering_robot_icon = show_radial_menu(R, R , meka_engineering_icons, custom_check = CALLBACK(src, PROC_REF(check_menu), R), radius = 42, require_near = TRUE)
 	switch(meka_engineering_robot_icon)
 		if("Niko")
 			cyborg_base_icon = "mmekaeng"
-			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/mekaborg.dmi'
+			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi'
 			hat_offset = 3
 			special_light_key = "mmekaeng"
 		if("Nika")
 			cyborg_base_icon = "fmekaeng"
-			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/mekaborg.dmi'
+			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi'
 			hat_offset = 3
 			special_light_key = "fmekaeng"
 		else
@@ -143,20 +143,20 @@
 	var/static/list/meka_security_icons
 	if(!meka_security_icons)
 		meka_security_icons = list(
-		"Niko" = image(icon = 'mod_celadon/_storge_icons/icons/mekaborg.dmi', icon_state = "mmekasec"),
-		"Nika" = image(icon = 'mod_celadon/_storge_icons/icons/mekaborg.dmi', icon_state = "fmekasec")
+		"Niko" = image(icon = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi', icon_state = "mmekasec"),
+		"Nika" = image(icon = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi', icon_state = "fmekasec")
 		)
 		meka_security_icons = sortList(meka_security_icons)
 	var/meka_security_robot_icon = show_radial_menu(R, R , meka_security_icons, custom_check = CALLBACK(src, PROC_REF(check_menu), R), radius = 42, require_near = TRUE)
 	switch(meka_security_robot_icon)
 		if("Niko")
 			cyborg_base_icon = "mmekasec"
-			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/mekaborg.dmi'
+			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi'
 			hat_offset = 3
 			special_light_key = "mmekasec"
 		if("Nika")
 			cyborg_base_icon = "fmekasec"
-			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/mekaborg.dmi'
+			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi'
 			hat_offset = 3
 			special_light_key = "fmekasec"
 		else
@@ -189,20 +189,20 @@
 	var/static/list/meka_peace_icons
 	if(!meka_peace_icons)
 		meka_peace_icons = list(
-		"Niko" = image(icon = 'mod_celadon/_storge_icons/icons/mekaborg.dmi', icon_state = "mmekapeace"),
-		"Nika" = image(icon = 'mod_celadon/_storge_icons/icons/mekaborg.dmi', icon_state = "fmekapeace")
+		"Niko" = image(icon = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi', icon_state = "mmekapeace"),
+		"Nika" = image(icon = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi', icon_state = "fmekapeace")
 		)
 		meka_peace_icons = sortList(meka_peace_icons)
 	var/meka_peace_robot_icon = show_radial_menu(R, R , meka_peace_icons, custom_check = CALLBACK(src, PROC_REF(check_menu), R), radius = 42, require_near = TRUE)
 	switch(meka_peace_robot_icon)
 		if("Niko")
 			cyborg_base_icon = "mmekapeace"
-			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/mekaborg.dmi'
+			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi'
 			hat_offset = 3
 			special_light_key = "mmekapeace"
 		if("Nika")
 			cyborg_base_icon = "fmekapeace"
-			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/mekaborg.dmi'
+			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi'
 			hat_offset = 3
 			special_light_key = "fmekapeace"
 		else
@@ -238,20 +238,20 @@
 	var/static/list/meka_janitor_icons
 	if(!meka_janitor_icons)
 		meka_janitor_icons = list(
-		"Niko" = image(icon = 'mod_celadon/_storge_icons/icons/mekaborg.dmi', icon_state = "mmekajani"),
-		"Nika" = image(icon = 'mod_celadon/_storge_icons/icons/mekaborg.dmi', icon_state = "fmekajani")
+		"Niko" = image(icon = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi', icon_state = "mmekajani"),
+		"Nika" = image(icon = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi', icon_state = "fmekajani")
 		)
 		meka_janitor_icons = sortList(meka_janitor_icons)
 	var/meka_janitor_robot_icon = show_radial_menu(R, R , meka_janitor_icons, custom_check = CALLBACK(src, PROC_REF(check_menu), R), radius = 42, require_near = TRUE)
 	switch(meka_janitor_robot_icon)
 		if("Niko")
 			cyborg_base_icon = "mmekajani"
-			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/mekaborg.dmi'
+			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi'
 			hat_offset = 3
 			special_light_key = "mmekajani"
 		if("Nika")
 			cyborg_base_icon = "fmekajani"
-			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/mekaborg.dmi'
+			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi'
 			hat_offset = 3
 			special_light_key = "fmekajani"
 		else
@@ -284,20 +284,20 @@
 	var/static/list/meka_miner_icons
 	if(!meka_miner_icons)
 		meka_miner_icons = list(
-		"Niko" = image(icon = 'mod_celadon/_storge_icons/icons/mekaborg.dmi', icon_state = "mmekamine"),
-		"Nika" = image(icon = 'mod_celadon/_storge_icons/icons/mekaborg.dmi', icon_state = "fmekamine")
+		"Niko" = image(icon = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi', icon_state = "mmekamine"),
+		"Nika" = image(icon = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi', icon_state = "fmekamine")
 		)
 		meka_miner_icons = sortList(meka_miner_icons)
 	var/meka_miner_robot_icon = show_radial_menu(R, R , meka_miner_icons, custom_check = CALLBACK(src, PROC_REF(check_menu), R), radius = 42, require_near = TRUE)
 	switch(meka_miner_robot_icon)
 		if("Niko")
 			cyborg_base_icon = "mmekamine"
-			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/mekaborg.dmi'
+			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi'
 			hat_offset = 3
 			special_light_key = "mmekamine"
 		if("Nika")
 			cyborg_base_icon = "fmekamine"
-			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/mekaborg.dmi'
+			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi'
 			hat_offset = 3
 			special_light_key = "fmekamine"
 		else
@@ -337,20 +337,20 @@
 	var/static/list/meka_syndicate_medical_icons
 	if(!meka_syndicate_medical_icons)
 		meka_syndicate_medical_icons = list(
-		"Niko" = image(icon = 'mod_celadon/_storge_icons/icons/mekaborg.dmi', icon_state = "mmekasyndi-med"),
-		"Nika" = image(icon = 'mod_celadon/_storge_icons/icons/mekaborg.dmi', icon_state = "fmekasyndi-med")
+		"Niko" = image(icon = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi', icon_state = "mmekasyndi-med"),
+		"Nika" = image(icon = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi', icon_state = "fmekasyndi-med")
 		)
 		meka_syndicate_medical_icons = sortList(meka_syndicate_medical_icons)
 	var/meka_syndicate_medical_robot_icon = show_radial_menu(R, R , meka_syndicate_medical_icons, custom_check = CALLBACK(src, PROC_REF(check_menu), R), radius = 42, require_near = TRUE)
 	switch(meka_syndicate_medical_robot_icon)
 		if("Niko")
 			cyborg_base_icon = "mmekasyndi-med"
-			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/mekaborg.dmi'
+			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi'
 			hat_offset = 3
 			special_light_key = "mmekasyndi"
 		if("Nika")
 			cyborg_base_icon = "fmekasyndi-med"
-			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/mekaborg.dmi'
+			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi'
 			hat_offset = 3
 			special_light_key = "fmekasyndi"
 		else
@@ -394,20 +394,20 @@
 	var/static/list/meka_butler_icons
 	if(!meka_butler_icons)
 		meka_butler_icons = list(
-		"Niko" = image(icon = 'mod_celadon/_storge_icons/icons/mekaborg.dmi', icon_state = "mmekaserv"),
-		"Nika" = image(icon = 'mod_celadon/_storge_icons/icons/mekaborg.dmi', icon_state = "fmekaserv")
+		"Niko" = image(icon = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi', icon_state = "mmekaserv"),
+		"Nika" = image(icon = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi', icon_state = "fmekaserv")
 		)
 		meka_butler_icons = sortList(meka_butler_icons)
 	var/meka_butler_robot_icon = show_radial_menu(R, R , meka_butler_icons, custom_check = CALLBACK(src, PROC_REF(check_menu), R), radius = 42, require_near = TRUE)
 	switch(meka_butler_robot_icon)
 		if("Niko")
 			cyborg_base_icon = "mmekaserv"
-			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/mekaborg.dmi'
+			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi'
 			hat_offset = 3
 			special_light_key = "mmekaserv"
 		if("Nika")
 			cyborg_base_icon = "fmekaserv"
-			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/mekaborg.dmi'
+			cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/mekaborg.dmi'
 			hat_offset = 3
 			special_light_key = "fmekaserv"
 		else

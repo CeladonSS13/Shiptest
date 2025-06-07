@@ -1,7 +1,7 @@
 // the ever continuing guncode growth. if only we had this passion for engineering.
 
 /datum/supply_pack/faction/independent/attachment
-	group = "Gun Attachments"
+	category = "Gun Attachments"
 	crate_type = /obj/structure/closet/crate/secure/weapon
 
 /datum/supply_pack/faction/independent/attachment/rail_light

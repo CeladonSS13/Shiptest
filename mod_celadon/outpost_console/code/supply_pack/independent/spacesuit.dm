@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/independent/spacesuit
-	group = "Spacesuits"
+	category = "Spacesuits"
 	crate_type = /obj/structure/closet/crate/secure
 
 /*

@@ -3,7 +3,7 @@
 	desc = "Если вы хотите вкуснейшую, сочную, мясную пиццу, то вы просто должны попробовать!"
 	product_slogans = "Пицца - лучшее, что придумало человечество!"
 	product_ads = "Совершенно точно свежая и вкусная пицца. Таярские эксперты не стали бы обманывать!"
-	icon = 'mod_celadon/_storge_icons/icons/pizzamat.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/machinery/pizzamat.dmi'
 	icon_state = "pizzamat"
 	products = list(
 		/obj/item/reagent_containers/food/snacks/pizza/meat/rinmeat = 3,
@@ -19,7 +19,7 @@
 
 /obj/item/vending_refill/pizzamat
 	machine_name = "Rin'Daar&Co"
-	icon = 'mod_celadon/_storge_icons/icons/pizzamat.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/machinery/pizzamat.dmi'
 	icon_state = "refill_pizza"
 
 /obj/item/reagent_containers/food/snacks/pizza/meat/rinmeat

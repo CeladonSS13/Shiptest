@@ -1,5 +1,14 @@
+/* MARK: = Ammo List =
+[*] - отсутствуют.
+[-] - отключены.
 
-// 5.56x39mm (M-90gl Carbine & P-16)
+> 5.56x39mm
+> 5.56x45mm
+> .308
+> 7.62x54mmR
+
+MARK: 5.56x39mm (M-90gl Carbine & P-16)
+*/
 
 /obj/item/ammo_casing/a556_39
 	name = "5.56x39mm CLIP bullet casing"
@@ -9,7 +18,9 @@
 	projectile_type = /obj/projectile/bullet/a556_39
 	// bullet_per_box = 80
 
-// 5.56x45
+//
+// MARK: 5.56x45mm
+//
 
 /obj/item/ammo_casing/a556_45
 	name = "5.56x45mm bullet casing"
@@ -44,47 +55,47 @@
 	// bullet_per_box = 80
 
 //
-//    .308
+// MARK: .308
 //
 
 /obj/item/ammo_casing/a308
-	name = "7,62x51 Winchester bullet casing"
-	desc = "A 7,62x51 Winchester bullet casing."
+	name = ".308 bullet casing"
+	desc = "A .308 bullet casing."
 	icon_state = "rifle-brass"
 	caliber = ".308"
 	projectile_type = /obj/projectile/bullet/a308
 	// bullet_per_box = 80
 
-/obj/item/ammo_casing/a308/a308_sp
-	name = "7,62x51 Winchester bullet casing"
-	desc = "A 7,62x51 Winchester bullet casing."
+/obj/item/ammo_casing/a308/hp
+	name = ".308 HP bullet casing"
+	desc = "A .308 HP bullet casing."
 	icon_state = "rifle-brass-hollow"
-	projectile_type = /obj/projectile/bullet/a308_sp
+	projectile_type = /obj/projectile/bullet/a308/hp
 	// bullet_per_box = 80
 
-/obj/item/ammo_casing/a308/a308_brak
-	name = "7,62x51 surplus bullet casing"
-	desc = "7,62x51 surplus bullet casing."
+/obj/item/ammo_casing/a308/surplus
+	name = ".308 surplus bullet casing"
+	desc = "A .308 surplus bullet casing."
 	icon_state = "rifle-brass-surplus"
-	projectile_type = /obj/projectile/bullet/a308/a308_brak
+	projectile_type = /obj/projectile/bullet/a308/surplus
 	// bullet_per_box = 80
 
-/obj/item/ammo_casing/a308/a308_ap
-	name = "7,62x51 M-80 bullet casing"
-	desc = "A 7,62x51 M-80 bullet casing."
+/obj/item/ammo_casing/a308/ap
+	name = ".308 AP bullet casing"
+	desc = "A .308 AP bullet casing."
 	icon_state = "rifle-brass-ap"
-	projectile_type = /obj/projectile/bullet/a308/a308_ap
+	projectile_type = /obj/projectile/bullet/a308/ap
 	// bullet_per_box = 80
 
-/obj/item/ammo_casing/a308/a308_rubber
-	name = "7,62x51 M-80 bullet casing"
-	desc = "A 7,62x51 M-80 bullet casing."
+/obj/item/ammo_casing/a308/rubber
+	name = ".308 rubber bullet casing"
+	desc = "A .308 rubber bullet casing."
 	icon_state = "rifle-brass-rubber"
-	projectile_type = /obj/projectile/bullet/a308/a308_rub
+	projectile_type = /obj/projectile/bullet/a308/rubber
 	// bullet_per_box = 80
 
 //
-// 7.62x54mmR
+// MARK: 7.62x54mmR
 //
 
 /obj/item/ammo_casing/x762

@@ -3,7 +3,7 @@
 	name = "\improper Solar Federation Logo"
 	sign_change_name = "Solar Federation Logo"
 	desc = "It's the logo of the Solar Federation. Most likely, this structure belongs to the armed forces of the Solar Federation."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/obj/fluff.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/fluffLOGOstructures.dmi'
 	icon_state = "sol_fed_wall_logo"
 	is_editable = TRUE
 
@@ -11,7 +11,7 @@
 	name = "\improper Elysium Brigade Logo"
 	sign_change_name = "Elysium Brigade logo"
 	desc = "The logo of the Solar Federation's Elysium Brigade. It is inscribed above the “Freedom” chevron. Most likely this ship belongs to the Elysium Brigade and is part of the Solar Federation army. The Elysium Brigade is a volunteer regiment of the Solar Federation that maintains order on the territory of the Elysium Republic."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/obj/fluff.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/fluffLOGOstructures.dmi'
 	icon_state = "elysium_brigade_logo"
 	is_editable = TRUE
 
@@ -24,7 +24,7 @@
 /obj/structure/sign/poster/solfed/random
 	name = "random solfed poster"
 	icon_state = "random_solfed"
-	icon = 'mod_celadon/_storge_icons/icons/solfed/obj/posters.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/structures/posters/posterssf.dmi'
 	never_random = TRUE
 	random_basetype = /obj/structure/sign/poster/solfed
 	random_type = POSTER_SUBTYPES
@@ -76,8 +76,8 @@
 /obj/item/bedsheet/solfed
 	name = "\improper Solar Federation bedsheet"
 	desc = "It's a quilt made in the style of the Solar Federation flag. Cover yourself with it and feel the warmth of democracy."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/obj/fluff.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/sf_neck.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/fluffLOGOstructures.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/overlay/sf_neck.dmi'
 	icon_state = "solfed_bedsheet"
 	item_state = "solfed_bedsheet"
 
@@ -85,32 +85,32 @@
 /obj/item/clothing/under/solfed
 	name = "Solar Federation marine fatigues"
 	desc = "This is the standard uniform of the Solar Federation Marines. It's colored dark blue."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/uniforms.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/uniforms.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/uniformssf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/uniformssf2.dmi'
 	icon_state = "solfed_marine"
 	item_state = "solfed_marine"
 
 /obj/item/clothing/under/solfed/assistant
 	name = "SolFed basic uniform"
 	desc = "A casual SolFed uniform issued to low ranking personnel."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/uniforms.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/uniforms.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/uniformssf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/uniformssf2.dmi'
 	icon_state = "solfed_assistant"
 	item_state = "solfed_assistant"
 
 /obj/item/clothing/under/solfed/medical
 	name = "SolFed medical uniform"
 	desc = "A clean-white shirt with some blue pants for SolFed's finest doctors."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/uniforms.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/uniforms.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/uniformssf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/uniformssf2.dmi'
 	icon_state = "solfed_medical"
 	item_state = "solfed_medical"
 
 /obj/item/clothing/under/solfed/industrial
 	name = "SolFed industrial uniform"
 	desc = "Gray pants, blue shirt and some solar golden sprayed on top for SolFed's engineers and alike. For some folk its even hard to consider this 'Industrial'"
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/uniforms.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/uniforms.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/uniformssf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/uniformssf2.dmi'
 	icon_state = "solfed_engineer"
 	item_state = "solfed_engineer"
 
@@ -143,8 +143,8 @@
 /obj/item/storage/belt/military/solfed
 	name = "Solar Federation chest rig"
 	desc = "These are the military webbing of the Solar Federation. It has the Solar Federation logo on the back."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/belt.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/belt.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/belt/beltsf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/belt/overlay/beltsf.dmi'
 	icon_state = "solfed_webbing"
 	item_state = "solfed_webbing"
 	resistance_flags = FIRE_PROOF
@@ -168,56 +168,56 @@
 /obj/item/clothing/head/solfed/beret
 	name = "SolFed Formal beret"
 	desc = "This is beret is used by Solar Federation's officers. It's colored dark blue. It has the Solar Federation flag on the front."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/head.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/headsf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/headsf.dmi'
 	icon_state = "solfed_beret"
 	item_state = "solfed_beret"
 
 /obj/item/clothing/head/solfed/beret/elysium
 	name = "Elysium Brigade beret"
 	desc = "This is a beret of the Solar Federation's Elysium Brigade. It's made in a dark green color. It has the Solar Federation flag on the front."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/head.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/headsf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/headsf.dmi'
 	icon_state = "elysium_brigade_beret"
 	item_state = "elysium_brigade_beret"
 
 /obj/item/clothing/head/solfed/elysium
 	name = "Elysium Brigade turban"
 	desc = "This is the dark green turban of the Solar Federation Elysium Brigade. Initially, the Solar Federation's leadership was against the wearing of turbans, but citing the SolFed's commitment to allow the cultural practices of its citizens, the turban was allowed to be worn on duty."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/head.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/headsf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/headsf.dmi'
 	icon_state = "elysium_brigade_turban"
 	item_state = "elysium_brigade_turban"
 
 /obj/item/clothing/head/solfed/cap
 	name = "SolFed softcap"
 	desc = "A soft cap with some SolFed symbolics on it, marking the person wearing it as a part of federation's navy."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/head.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/headsf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/headsf.dmi'
 	icon_state = "cap_solfed"
 	item_state = "cap_solfed"
 
 /obj/item/clothing/head/solfed/surgical
 	name = "SolFed surgical cap"
 	desc = "A perhaps unnecessarily fancy surgical cap issued to almost every certified doctor aboard SolFed's navy vessels."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/head.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/headsf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/headsf.dmi'
 	icon_state = "surgical_solfed"
 	item_state = "surgical_solfed"
 
 /obj/item/clothing/head/hardhat/solfed
 	name = "SolFed industrial hardhat"
 	desc = "A neat hardhat used by SolFed's engineers and alike. Provides good protection against darkness and head impacts."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/head.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/headsf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/headsf.dmi'
 	icon_state = "hardhat_solfed"
 	item_state = "hardhat_solfed"
 
 /obj/item/clothing/head/helmet/solfed/m11
 	name = "Solar Federation M11 helmet"
 	desc = "It's an M11 helmet in Solar Federation coloring. On its left side you can see the flag of the Solar Federation. It is usually worn by Solar Federation soldiers."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/head.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/headsf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/headsf.dmi'
 	icon_state = "solfed_m11"
 	item_state = "solfed_m11"
 	can_flashlight = TRUE
@@ -239,8 +239,8 @@
 /obj/item/clothing/suit/armor/solfed/formal
 	name = "SolFed formal coat"
 	desc = "The dark-blue formal coat of the Solar Federation. It has a SolFed armband on the shoulder."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/suits.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/suits.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/suitssf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/suitssf.dmi'
 	icon_state = "solfed_coat"
 	item_state = "solfed_coat"
 	body_parts_covered = CHEST|GROIN|ARMS
@@ -261,8 +261,8 @@
 /obj/item/clothing/gloves/combat/solfed
 	name = "SolFed marine gloves"
 	desc = "These comfy gloves provide protection to SolFed's marines and keep their hands warm. They are dark-blue colored."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/hands.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/hands.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hands/handssf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hands/overlay/handssf.dmi'
 	icon_state = "sfmarinegloves"
 	item_state = "sfmarinegloves"
 	armor = list("melee" = 15, "bullet" = 10, "laser" = 15, "energy" = 15, "bomb" = 65, "bio" = 100, "rad" = 75, "fire" = 75, "acid" = 75)
@@ -277,8 +277,8 @@
 /obj/item/clothing/mask/gas/solfed/elysium
 	name = "Elysium Brigade gas mask"
 	desc = "A green-colored gas mask used by SolFed's elysium brigade. Can you feel freedom filling the air?"
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/mask.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/mask.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/mask/masksf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/mask/overlay/masksf.dmi'
 	icon_state = "elysium-gasmask"
 	item_state = "elysium-gasmask"
 	resistance_flags = FIRE_PROOF | ACID_PROOF
@@ -287,8 +287,8 @@
 /obj/item/clothing/head/helmet/space/hardsuit/solfed/elysium
 	name = "Elysium Brigade hardsuit helmet"
 	desc = "This is the hardsuit helmet of the Solar Federation Elysium Brigade. It's a dark green color, and its panes glow green."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/spacesuits.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/spacesuits_head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/space_suit/spacesuitssf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/space_suit/overlay/spacesuits_headsf.dmi'
 	icon_state = "hardsuit0-ebrigadehelm"
 	item_state = "hardsuit0-ebrigadehelm"
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 50, "bio" = 100, "rad" = 75, "fire" = 75, "acid" = 75)
@@ -299,8 +299,8 @@
 /obj/item/clothing/suit/space/hardsuit/solfed/elysium
 	name = "Elysium Brigade hardsuit"
 	desc = "This is a hardsuit of the Solar Federation Elysium Brigade. It is in dark green colors and has the Solar Federation flag on its back."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/spacesuits.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/spacesuits.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/space_suit/spacesuitssf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/space_suit/overlay/spacesuitssf2.dmi'
 	icon_state = "hardsuit0-ebrigade"
 	item_state = "hardsuit0-ebrigade"
 	hardsuit_type = "elysium"
@@ -313,24 +313,24 @@
 
 	name = "solfed satchel"
 	desc = "A democratic-looking satchel with extra pockets."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/backpacks.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/backpacks.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/backpackssf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/backpackssf.dmi'
 	icon_state = "satchel-sf"
 	item_state = "satchel-sf"
 
 /obj/item/storage/backpack/solfed
 	name = "solfed backpack"
 	desc = "A militaristic looking backpack. Has a stylish sol star on it."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/backpacks.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/backpacks.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/backpackssf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/backpackssf.dmi'
 	icon_state = "solfedpack"
 	item_state = "solfedpack"
 
 /obj/item/storage/backpack/duffelbag/solfed
 	name = "solfed duffel bag"
 	desc = "A large duffel bag for holding extra freedom-enforcing supplies."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/backpacks.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/mob/backpacks.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/backpackssf.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/backpackssf.dmi'
 	icon_state = "duffel-solfed"
 	item_state = "duffel-solfed"
 
@@ -339,7 +339,7 @@
 	name = "\improper SolFed keycard"
 	desc = "A SolFed keycard with no proper access to speak of."
 	assignment = "Navy member"
-	icon = 'mod_celadon/_storge_icons/icons/solfed/clothing/obj/card.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/sfcard.dmi'
 	icon_state = "solfed"
 	uses_overlays = FALSE
 
@@ -352,30 +352,30 @@
 /obj/item/desk_flag/solfed
 	name = "SolFed desk flag"
 	desc = "A white-blue flag with a SolFed flag on it."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/obj/bureaucracy.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/sfbureaucracy.dmi'
 	icon_state = "solfed"
 
 /obj/item/folder/solfed
 	desc = "A blue folder with a SolFed coat of arms emblem."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/obj/bureaucracy.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/sfbureaucracy.dmi'
 	icon_state = "folder_solfed"
 
 /obj/item/folder/documents/solfed
 	document = /obj/item/documents/solfed
-	icon = 'mod_celadon/_storge_icons/icons/solfed/obj/bureaucracy.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/sfbureaucracy.dmi'
 	icon_state = "folder_solfed"
 	name = "folder- 'TOP SECRET'"
 	desc = "A folder stamped \"Top Secret - Property of the Solar Federation. Unauthorized distribution is punishable by death.\""
 
 /obj/item/documents/solfed
 	desc = "\"TOP SECRET\" SolFed documents, filled with complex logistical diagrams withing the republics, terraforming projects and navy routes."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/obj/bureaucracy.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/sfbureaucracy.dmi'
 	icon_state = "docs_gold"
 
 /obj/item/pen/solfed
 	name = "\improper SolFed pen"
 	desc = "A fancy gold-blue pen used by SolFed's bureaucrats."
-	icon = 'mod_celadon/_storge_icons/icons/solfed/obj/bureaucracy.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/sfbureaucracy.dmi'
 	icon_state = "pen-sf"
 
 //Fancy eknifes!!
@@ -383,11 +383,11 @@
 /obj/item/melee/energy/sword/saber/knife
 	name = "energy kampfmesser"
 	desc = "Nanotrasen eswords are failing to properly deliver solarian freedom? Try this!"
-	icon = 'mod_celadon/_storge_icons/icons/solfed/obj/energy.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/energy.dmi'
 	icon_state = "eknife"
 	base_icon_state = "eknife"
-	lefthand_file = 'mod_celadon/_storge_icons/icons/solfed/mob/eknifes_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/solfed/mob/eknifes_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/eknifes_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/eknifes_righthand.dmi'
 	armour_penetration = 20 //good armorpen
 	block_chance = 0 //no block chances
 	active_force = 15 //lower damage

@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/solfed/costumes_toys
-	group = "Costumes & Toys"
+	category = "Costumes & Toys"
 
 /datum/supply_pack/faction/solfed/costumes_toys/formalwear
 	name = "Formalwear Crate"

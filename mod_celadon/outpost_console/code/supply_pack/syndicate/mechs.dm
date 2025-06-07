@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/syndicate/mech
-	group = "Exosuit Construction"
+	category = "Exosuit Construction"
 
 /datum/supply_pack/faction/syndicate/mech/odysseus_parts
 	name = "202r construction kit"

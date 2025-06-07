@@ -4,8 +4,8 @@
 	desc = "Solar Federation's elite assault rifle. This version is shortened. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Uses 5.56x45 rounds."
 //Иконки
 	icon = 'mod_celadon/_storge_icons/icons/items/weapons/48x32guns.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/guns_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/guns_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/guns_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/guns_righthand.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/weapons/back.dmi'
 	icon_state = "g36sh"
 	item_state = "g36sh"
@@ -54,8 +54,8 @@ NO_MAG_GUN_HELPER(automatic/assault/g36sh/inteq)
 	name = "\improper G36"
 	desc = "Solar Federation's elite assault rifle. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Uses 5.56x45 rounds."
 	icon = 'mod_celadon/_storge_icons/icons/items/weapons/48x32guns.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/guns_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/guns_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/guns_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/guns_righthand.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/weapons/back.dmi'
 	fire_sound = 'mod_celadon/_storge_sounds/sound/gun/g36.ogg'
 	icon_state = "g36"
@@ -98,8 +98,8 @@ NO_MAG_GUN_HELPER(automatic/assault/g36/inteq)
 /obj/item/gun/ballistic/automatic/assault/morita1
 	name = "\improper Morita MK.I"
 	desc = "Стандартная пехотная автоматическая винтовка под калибр .308. Широко применяется армейскими корпусами в Союзе Человечества. Популярность в гражданских кругах заслужила после сьемок в фильме Starboat Troopes."
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/guns_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/guns_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/guns_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/guns_righthand.dmi'
 	icon = 'mod_celadon/_storge_icons/icons/items/weapons/48x32guns.dmi'
 	fire_sound = 'mod_celadon/_storge_sounds/sound/gun/morita1.ogg'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/weapons/back.dmi'
@@ -151,9 +151,9 @@ NO_MAG_GUN_HELPER(automatic/assault/morita1/swamp)
 /obj/item/gun/ballistic/automatic/marksman/svd
 	name = "\improper SR-33 Dragunov sniper rifle"
 	desc = "A semiautomatic sniper rifle, famed for it's marksmanship, and is built from the ground up for it. Fires 7.62x54mmR rounds."
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/obj/svd.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/obj/svd_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/obj/svd_righthand.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/svd.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/svd_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/svd_righthand.dmi'
 	mob_overlay_icon = 'icons/obj/guns/manufacturer/hunterspride/onmob.dmi'
 	inhand_x_dimension = 64
 	inhand_y_dimension = 32
@@ -185,7 +185,7 @@ NO_MAG_GUN_HELPER(automatic/marksman/svd)
 /obj/item/ammo_box/magazine/svd_rounds
 	name = "\improper SVD magazine (7.62x54mmR)"
 	desc = "A large caliber magazine for the SVD sniper rifle."
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/obj/svd_ammo.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/svd_ammo.dmi'
 	icon_state = "10_bullet-1"
 	base_icon_state = "10_bullet"
 	ammo_type = /obj/item/ammo_casing/x762
@@ -204,8 +204,8 @@ NO_MAG_GUN_HELPER(automatic/marksman/svd)
 	name = "\improper Model 82 Carbine"
 	desc = "The standard Solarian assault rifle, somewhat outdated, but still accurate, reliable and easy to use. This version was manufactured in the Elysium Republic under license from the Solar Federation for the Elysium Brigade. Chambered in 5.56х42 mm."
 	icon = 'mod_celadon/_storge_icons/icons/items/weapons/48x32guns.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/guns_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/guns_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/guns_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/guns_righthand.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/weapons/back.dmi'
 	icon_state = "cm82_solfed"
 	item_state = "cm82_solfed"

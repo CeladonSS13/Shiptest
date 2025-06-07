@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/solfed/spacesuit
-	group = "Spacesuits"
+	category = "Spacesuits"
 
 /datum/supply_pack/faction/solfed/spacesuit/spacesuit/solgov
 	name = "Solarian Vacsuit Crate"

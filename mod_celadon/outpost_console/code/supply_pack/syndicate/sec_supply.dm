@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/syndicate/sec_supply
-	group = "Security Supplies"
+	category = "Security Supplies"
 	crate_type = /obj/structure/closet/crate/secure/gear
 
 /datum/supply_pack/faction/syndicate/sec_supply/flamethrower

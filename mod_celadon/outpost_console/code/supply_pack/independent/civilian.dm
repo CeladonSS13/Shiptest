@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/independent/civilian
-	group = "Civilian & Decoration"
+	category = "Civilian & Decoration"
 
 /* MARK: = Decoration =
 

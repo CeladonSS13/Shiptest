@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/nanotrasen/spacesuit
-	group = "Spacesuits"
+	category = "Spacesuits"
 
 /datum/supply_pack/faction/nanotrasen/spacesuit/med_hardsuit
 	name = "Medical Hardsuit Crate"

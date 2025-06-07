@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/inteq/gun
-	group = "Guns"
+	category = "Guns"
 
 /datum/supply_pack/faction/inteq/gun/commissioner
 	name = "Commissioner Pistol Crate"

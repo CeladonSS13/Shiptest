@@ -39,9 +39,8 @@
 	if(_spawn_amount)
 		spawn_amount = _spawn_amount
 
-
-	RegisterSignal(parent, list(COMSIG_PARENT_QDELETING), PROC_REF(stop_spawning))
-	RegisterSignal(parent, list(COMSIG_SPAWNER_TOGGLE_SPAWNING), PROC_REF(toggle_spawning))
+	RegisterSignal(parent, COMSIG_PARENT_QDELETING, PROC_REF(stop_spawning))
+	RegisterSignal(parent, COMSIG_SPAWNER_TOGGLE_SPAWNING, PROC_REF(toggle_spawning))
 	START_PROCESSING(SSprocessing, src)
 
 /datum/component/spawner/process(seconds_per_tick)
@@ -107,7 +106,11 @@
 		var/mob/living/simple_animal/L = new chosen_mob_type(spot)
 		L.flags_1 |= (P.flags_1 & ADMIN_SPAWNED_1)
 		spawned_mobs += L
+		//[CELADON-REMOVE]
+		/* CELADON-REMOVE - ORIGINAL
 		L.nest = src
+		*/
+		// [/CELADON-REMOVE]
 		L.faction = src.faction
 		P.visible_message(span_danger("[L] [pick(spawn_text)] [P]."))
 		// [CELADON-ADD] - DELETION_TIMER_TO_SPAWNED_MOBS

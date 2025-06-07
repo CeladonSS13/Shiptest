@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/inteq/magazine
-	group = "Magazines"
+	category = "Magazines"
 
 /datum/supply_pack/faction/inteq/magazine/mongrel_mag
 	name = "Mongrel Magazine Crate"

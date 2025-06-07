@@ -7,7 +7,7 @@
 	lefthand_file = 'icons/mob/inhands/misc/devices_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
 	flags_1 = CONDUCT_1
-	cyborg_icon_override = 'mod_celadon/_storge_icons/icons/drakeborg_vr-1.dmi'
+	cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/drakeborg_vr-1.dmi'
 	drakerest = TRUE
 
 /obj/item/robot_module/drake/medical

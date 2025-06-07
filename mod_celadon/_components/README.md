@@ -20,7 +20,7 @@ ID мода: CELADON_COMPONENTS, CELADON_COMPONENTS_EMOTE
 
 ### Описание мода
 
-Это система оповещений в Discord - components, Префиксы кораблей и Оутфиты для ролей
+Это система оповещений в Discord - components, Префиксы кораблей и Оутфиты для ролей. Система доната.
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
   А также любая полезная информация.
@@ -43,6 +43,8 @@ ID мода: CELADON_COMPONENTS, CELADON_COMPONENTS_EMOTE
 
 - ADD -> `code/modules/overmap/ships/controlled_ship_datum.dm` - оповещение о пиратах
 - ADD -> `code/modules/overmap/objects/outpost/outpost.dm` - запрет о пиратах
+- ADD -> `code/modules/donator/_donator.dm` - CELADON_DONATE
+- ADD -> `code/modules/client/verbs/ooc.dm` - CELADON_DONATE
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -67,6 +69,7 @@ ID мода: CELADON_COMPONENTS, CELADON_COMPONENTS_EMOTE
 - `code/__DEFINES/~mod_celadon/emote_panel.dm`
 - `code/__DEFINES/~mod_celadon/access.dm`
 - `code/__DEFINES/~mod_celadon/names.dm`
+- `code/__DEFINES/~mod_celadon/donate.dm`
 
 - `#define FACTION_SYNDICATE "Syndicate"`
 - `#define FACTION_SOLFED "SolGov"`
@@ -81,6 +84,8 @@ ID мода: CELADON_COMPONENTS, CELADON_COMPONENTS_EMOTE
 - `#define PREFIX_INDEPENDENT list("SV", "IMV", "ISV")`
 - `#define PREFIX_ELYSIUM list("EUSM", "EUSQ", "EUSF", "EUSR",)`
 - `#define PREFIX_PIRATES list("PIRATE")`
+- `#define VIP_GHOST_TIER1_LIST`
+- `#define VIP_GHOST_TIER3_LIST`
 <!--
   Если требовалось добавить какие-либо дефайны, укажи файлы,
   в которые ты их добавил, а также перечисли имена.

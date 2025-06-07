@@ -34,7 +34,7 @@ SUBSYSTEM_DEF(title)
 	if(!file_path)
 //[CELADON-EDIT]- MUSIC_CELADON
 		//file_path = "icons/runtime/default_title.dmi"//CELADON-EDIT-ORIGINAL
-		file_path = "mod_celadon/_storge_icons/icons/default_title.dmi"
+		file_path = "mod_celadon/_storge_icons/icons/assets/default_title.dmi"
 //[/CELADON-EDIT]
 	ASSERT(fexists(file_path))
 

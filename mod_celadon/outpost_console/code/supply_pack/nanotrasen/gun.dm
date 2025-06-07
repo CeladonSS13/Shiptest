@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/nanotrasen/gun
-	group = "Guns"
+	category = "Guns"
 
 /*
 MARK: NT-SL

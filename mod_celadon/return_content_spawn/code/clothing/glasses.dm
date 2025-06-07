@@ -1,14 +1,14 @@
 /obj/item/clothing/glasses/meson/truesight
 	name = "The Lens of Truesight"
 	desc = "I can see forever!"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/eyes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/eyes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/eyes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/eyes.dmi'
 	icon_state = "monocle"
 
 /obj/item/clothing/glasses/meson/gar
 	name = "gar mesons"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/eyes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/eyes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/eyes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/eyes.dmi'
 	icon_state = "garm"
 	item_state = "garm"
 	desc = "Do the impossible, see the invisible!"
@@ -22,16 +22,16 @@
 
 /obj/item/clothing/glasses/monocle
 	name = "monocle"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/eyes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/eyes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/eyes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/eyes.dmi'
 	desc = "Such a dapper eyepiece!"
 	icon_state = "monocle"
 	supports_variations = VOX_VARIATION
 
 /obj/item/clothing/glasses/material/mining/gar
 	name = "gar material scanner"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/eyes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/eyes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/eyes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/eyes.dmi'
 	icon_state = "garm"
 	item_state = "garm"
 	desc = "Do the impossible, see the invisible!"
@@ -45,8 +45,8 @@
 
 /obj/item/clothing/glasses/sunglasses/garb
 	name = "black gar glasses"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/eyes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/eyes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/eyes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/eyes.dmi'
 	desc = "Go beyond impossible and kick reason to the curb!"
 	icon_state = "garb"
 	item_state = "garb"
@@ -60,8 +60,8 @@
 /obj/item/clothing/glasses/sunglasses/garb/supergarb
 	name = "black giga gar glasses"
 	desc = "Believe in us humans."
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/eyes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/eyes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/eyes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/eyes.dmi'
 	icon_state = "supergarb"
 	item_state = "garb"
 	force = 12
@@ -70,8 +70,8 @@
 /obj/item/clothing/glasses/sunglasses/gar
 	name = "gar glasses"
 	desc = "Just who the hell do you think I am?!"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/eyes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/eyes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/eyes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/eyes.dmi'
 	icon_state = "gar"
 	item_state = "gar"
 	force = 10
@@ -84,8 +84,8 @@
 
 /obj/item/clothing/glasses/sunglasses/gar/supergar
 	name = "giga gar glasses"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/eyes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/eyes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/eyes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/eyes.dmi'
 	desc = "We evolve past the person we were a minute before. Little by little we advance with each turn. That's how a drill works!"
 	icon_state = "supergar"
 	item_state = "gar"
@@ -95,8 +95,8 @@
 
 /obj/item/clothing/glasses/welding/ghostbuster
 	name = "optical ecto-scanner"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/eyes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/eyes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/eyes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/eyes.dmi'
 	desc = "A bulky pair of unwieldy glasses that lets you see things best left unseen. Obscures vision, but also gives a bit of eye protection"
 	icon_state = "bustin-g"
 	item_state = "bustin-g"
@@ -108,8 +108,8 @@
 
 /obj/item/clothing/glasses/thermal/monocle
 	name = "thermoncle"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/eyes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/eyes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/eyes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/eyes.dmi'
 	desc = "Never before has seeing through walls felt so gentlepersonly."
 	icon_state = "thermoncle"
 	flags_1 = null //doesn't protect eyes because it's a monocle, duh
@@ -124,8 +124,8 @@
 
 /obj/item/clothing/glasses/godeye
 	name = "eye of god"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/eyes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/eyes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/eyes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/eyes.dmi'
 	desc = "A strange eye, said to have been torn from an omniscient creature that used to roam the wastes."
 	icon_state = "godeye"
 	item_state = "godeye"
@@ -156,7 +156,7 @@
 /// PRISM
 /obj/item/clothing/glasses/prism_glasses
 	name = "prism glasses"
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/eyes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/eyes.dmi'
 	desc = "The lenses seem to glow slightly, and reflect light into dazzling colors."
 	icon = 'icons/obj/slimecrossing.dmi'
 	icon_state = "prismglasses"
@@ -170,8 +170,8 @@
 /// HUD
 /obj/item/clothing/glasses/hud/security/sunglasses/gars
 	name = "\improper HUD gar glasses"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/eyes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/eyes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/eyes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/eyes.dmi'
 	desc = "GAR glasses with a HUD."
 	icon_state = "gars"
 	item_state = "garb"

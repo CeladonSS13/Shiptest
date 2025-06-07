@@ -3,8 +3,8 @@
 	desc = "These 'tactical' gloves and sleeves are fireproof and electrically insulated. Warm to boot."
 	icon_state = "syndimaid_arms"
 	item_state = "syndimaid_arms"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/gloves.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/hands.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hands/gloves.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hands/overlay/hands.dmi'
 
 /obj/item/clothing/gloves/combat/maid/inteq
 	name = "inteq combat maid sleeves"

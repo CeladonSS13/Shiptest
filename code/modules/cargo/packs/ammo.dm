@@ -2,7 +2,7 @@
 	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
 
 /datum/supply_pack/ammo
-	group = "Bulk Ammunition"
+	category = "Bulk Ammunition"
 	crate_type = /obj/structure/closet/crate/secure/gear
 	crate_name = "ammo crate"
 

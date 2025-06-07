@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/nanotrasen/ammo
-	group = "Ammunition"
+	category = "Ammunition"
 
 /* MARK: = Ammo List =
 [*] - отсутствуют.
