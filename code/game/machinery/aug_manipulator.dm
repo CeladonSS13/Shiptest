@@ -131,7 +131,6 @@
 		if(istype(storedpart, /obj/item/bodypart/leg/right/robot) || istype(storedpart, /obj/item/bodypart/leg/left/robot))
 			style_options = style_list_icons_bonus
 		var/augstyle = input(user, "Select style.", "Augment Custom Fitting") as null|anything in style_options
-		// EDIT-END
 		if(!augstyle)
 			return
 		if(!in_range(src, user))
