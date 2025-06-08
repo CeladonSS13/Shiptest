@@ -143,8 +143,8 @@
 /obj/item/storage/belt/military/solfed
 	name = "Solar Federation chest rig"
 	desc = "These are the military webbing of the Solar Federation. It has the Solar Federation logo on the back."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/belt/beltsf.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/belt/overlay/beltsf.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/belt/obj.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/belt/overlay/onmob.dmi'
 	icon_state = "solfed_webbing"
 	item_state = "solfed_webbing"
 	resistance_flags = FIRE_PROOF
@@ -313,24 +313,24 @@
 
 	name = "solfed satchel"
 	desc = "A democratic-looking satchel with extra pockets."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/backpackssf.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/backpackssf.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/obj.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/onmob.dmi'
 	icon_state = "satchel-sf"
 	item_state = "satchel-sf"
 
 /obj/item/storage/backpack/solfed
 	name = "solfed backpack"
 	desc = "A militaristic looking backpack. Has a stylish sol star on it."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/backpackssf.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/backpackssf.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/obj.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/onmob.dmi'
 	icon_state = "solfedpack"
 	item_state = "solfedpack"
 
 /obj/item/storage/backpack/duffelbag/solfed
 	name = "solfed duffel bag"
 	desc = "A large duffel bag for holding extra freedom-enforcing supplies."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/backpackssf.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/backpackssf.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/obj.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/onmob.dmi'
 	icon_state = "duffel-solfed"
 	item_state = "duffel-solfed"
 
