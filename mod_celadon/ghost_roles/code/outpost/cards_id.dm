@@ -3,7 +3,7 @@
 /obj/item/card/id/elysium_Bartender
 	name = "\improper Elysium bar access card"
 	desc = "An access card sourced from Elysium for bartender."
-	icon = 'mod_celadon/_storge_icons/icons/obj/elysium_card.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/elysium_card.dmi'
 	icon_state = "elysium"
 	uses_overlays = FALSE
 
@@ -16,7 +16,7 @@
 /obj/item/card/id/elysium_cook
 	name = "\improper Elysium kitchen access card"
 	desc = "An access card sourced from Elysium for cook."
-	icon = 'mod_celadon/_storge_icons/icons/obj/elysium_card.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/elysium_card.dmi'
 	icon_state = "elysium"
 	uses_overlays = FALSE
 
@@ -29,7 +29,7 @@
 /obj/item/card/id/elysium_maid
 	name = "\improper Elysium maid access card"
 	desc = "An access card sourced from Elysium for maid."
-	icon = 'mod_celadon/_storge_icons/icons/obj/elysium_card.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/elysium_card.dmi'
 	icon_state = "elysium"
 	uses_overlays = FALSE
 
@@ -41,7 +41,7 @@
 /obj/item/card/id/elysium_artist
 	name = "\improper Elysium artist access card"
 	desc = "An access card sourced from Elysium for artist."
-	icon = 'mod_celadon/_storge_icons/icons/obj/elysium_card.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/elysium_card.dmi'
 	icon_state = "elysium"
 	uses_overlays = FALSE
 
@@ -54,7 +54,7 @@
 /obj/item/card/id/elysium_wagabond
 	name = "\improper Elysium wagabond access card"
 	desc = "An access card sourced from Elysium for wagabond."
-	icon = 'mod_celadon/_storge_icons/icons/obj/elysium_card.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/elysium_card.dmi'
 	icon_state = "elysium"
 	uses_overlays = FALSE
 
@@ -66,7 +66,7 @@
 /obj/item/card/id/elysium_medic
 	name = "\improper Elysium Medbay access card"
 	desc = "An access card sourced from Elysium for medic."
-	icon = 'mod_celadon/_storge_icons/icons/obj/elysium_card.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/elysium_card.dmi'
 	icon_state = "elysium"
 	uses_overlays = FALSE
 
@@ -77,7 +77,7 @@
 /obj/item/card/id/silver/elysium_cmo
 	name = "\improper Elysium Medbay access card"
 	desc = "An access card sourced from Elysium for CMO."
-	icon = 'mod_celadon/_storge_icons/icons/obj/elysium_card.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/elysium_card.dmi'
 	icon_state = "elysium_com"
 	uses_overlays = FALSE
 

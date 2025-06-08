@@ -1,8 +1,8 @@
 /obj/item/clothing/head/wizard/marisa
 	name = "witch hat"
 	desc = "Strange-looking hat-wear. Makes you want to cast fireballs."
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/marisa_obj.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/onmob_head_tajara.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/marisa_obj.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/onmob_head_tajara.dmi'
 	icon_state = "marisa_hat"
 	item_state = "marisa_hat"
 	dog_fashion = null
@@ -10,8 +10,8 @@
 /obj/item/clothing/suit/wizrobe/marisa
 	name = "witch robe"
 	desc = "Magic is all about the spell power, ZE!"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/marisa_obj.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/onmob_suit_tajara.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/marisa_obj.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/onmob_suit_tajara.dmi'
 	icon_state = "marisa_suit"
 	item_state = "marisa_suit"
 
@@ -19,8 +19,8 @@
 	desc = "A pair of magic black shoes."
 	name = "magic shoes"
 	desc = "Magic is all about the spell power, ZE!"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/marisa_obj.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/marisa_mob.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/marisa_obj.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/marisa_mob.dmi'
 	icon_state = "marisa_shoes"
 	item_state = "marisa_shoes"
 	resistance_flags = FIRE_PROOF |  ACID_PROOF

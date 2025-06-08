@@ -112,11 +112,11 @@
 
 /obj/item/stack/sheet/metal/syndi
 	name = "syndi metal"
-	icon = 'mod_celadon/_storge_icons/icons/obj/stack_objects.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/stack_objects.dmi'
 	icon_state = "sheet-metal"
 	item_state = "sheet-metal"
-	lefthand_file = 'mod_celadon/_storge_icons/icons/obj/overlay/sheets_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/obj/overlay/sheets_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/sheets_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/sheets_righthand.dmi'
 	tableVariant = /obj/structure/table/syndi
 
 /obj/structure/table/syndi

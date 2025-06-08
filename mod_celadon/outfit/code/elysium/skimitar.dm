@@ -7,9 +7,9 @@
 	desc = "An ancient traditional Starbull edged weapon that was very popular among the people of Starbull in 2430 by Sol."
 	icon_state = "skimitar"
 	item_state = "skimitar"
-	icon = 'mod_celadon/_storge_icons/icons/obj/skimitar.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/mob/swords_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/mob/swords_righthand.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/skimitar.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/swords_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/swords_righthand.dmi'
 	pickup_sound =  'sound/items/unsheath.ogg'
 	drop_sound = 'sound/items/handling/metal_drop.ogg'
 	force = 35
@@ -79,8 +79,8 @@
 /obj/item/storage/belt/skimitar
 	name = "Scimitar sheath"
 	desc = "Scimitar scabbard, traditionally worn for carrying a scimitar. They look green and suspiciously scaly. "
-	icon = 'mod_celadon/_storge_icons/icons/obj/sheath-skimitar.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/sheath-skimitar.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/sheath-skimitar.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/weapons/overlay/sheath-skimitar.dmi'
 	icon_state = "sheath"
 	item_state = "sheath"
 	base_icon_state = "sheath"

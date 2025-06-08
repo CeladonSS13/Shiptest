@@ -5,7 +5,7 @@
 /datum/sprite_accessory/hair
 	// [CELADON-EDIT] - CELADON_QOL
 	// icon = 'icons/mob/human_face.dmi'	  // default icon for all hairs // CELADON-EDIT -> ORIGINAL
-	icon = 'mod_celadon/_storge_icons/icons/qol/human_face.dmi'	  // default icon for all hairs
+	icon = 'mod_celadon/_storge_icons/icons/species/human/human_face.dmi'	  // default icon for all hairs
 	// [/CELADON-EDIT]
 	body_zone = BODY_ZONE_HEAD
 

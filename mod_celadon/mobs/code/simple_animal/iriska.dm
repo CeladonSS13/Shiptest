@@ -1,7 +1,7 @@
 /mob/living/simple_animal/iriska
 	name = "Iriska"
 	desc = "The captain's own cat. Fat and lazy."
-	icon = 'mod_celadon/_storge_icons/icons/mobs/iriska.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets.dmi'
 	icon_state = "iriska"
 	icon_dead = "iriska_dead"
 	health = 80

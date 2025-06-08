@@ -4,7 +4,7 @@
 
 // // MODULAR PLUSHES
 /obj/item/toy/plush/celadon
-	icon = 'mod_celadon/_storge_icons/icons/items/plushes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
 
 /obj/item/toy/plush/celadon/borbplushie
 	name = "borb plushie"
@@ -617,56 +617,56 @@
 /obj/random/carp_plushie
 	name = "Random Carp Plushie"
 	desc = "This is a random plushie"
-	icon = 'mod_celadon/_storge_icons/icons/items/plushes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
 	icon_state = "carpplushie"
 
 // /obj/random/carp_plushie/item_to_spawn()
 // 	return pick(typesof(/obj/item/toy/plush/carpplushie)) //can pick any carp plushie, even the original.
 
 /obj/item/toy/plush/carpplushie/ice
-	icon = 'mod_celadon/_storge_icons/icons/items/plushes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
 	icon_state = "icecarp"
 
 /obj/item/toy/plush/carpplushie/silent
-	icon = 'mod_celadon/_storge_icons/icons/items/plushes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
 	icon_state = "silentcarp"
 
 /obj/item/toy/plush/carpplushie/electric
-	icon = 'mod_celadon/_storge_icons/icons/items/plushes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
 	icon_state = "electriccarp"
 
 /obj/item/toy/plush/carpplushie/gold
-	icon = 'mod_celadon/_storge_icons/icons/items/plushes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
 	icon_state = "goldcarp"
 
 /obj/item/toy/plush/carpplushie/toxin
-	icon = 'mod_celadon/_storge_icons/icons/items/plushes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
 	icon_state = "toxincarp"
 
 /obj/item/toy/plush/carpplushie/dragon
-	icon = 'mod_celadon/_storge_icons/icons/items/plushes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
 	icon_state = "dragoncarp"
 
 /obj/item/toy/plush/carpplushie/pink
-	icon = 'mod_celadon/_storge_icons/icons/items/plushes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
 	icon_state = "pinkcarp"
 
 /obj/item/toy/plush/carpplushie/candy
-	icon = 'mod_celadon/_storge_icons/icons/items/plushes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
 	icon_state = "candycarp"
 
 /obj/item/toy/plush/carpplushie/nebula
-	icon = 'mod_celadon/_storge_icons/icons/items/plushes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
 	icon_state = "nebulacarp"
 
 /obj/item/toy/plush/carpplushie/void
-	icon = 'mod_celadon/_storge_icons/icons/items/plushes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
 	icon_state = "voidcarp"
 
 /obj/item/toy/plush/axolotlplushie
 	name = "axolotl plushie"
 	desc = "An adorable stuffed toy that resembles an axolotl. Not to be mistaken for the real thing."
-	icon = 'mod_celadon/_storge_icons/icons/items/plushes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
 	icon_state = "plushie_axolotl"
 	attack_verb = list("nibbles", "splats")
 	var/axolotlbite = 'mod_celadon/_storge_sounds/sound/plushes/axolotl.ogg'
@@ -798,7 +798,7 @@
 /obj/item/toy/plush/celadon/rd
 	name = "RD doll"
 	desc = "An adorable anime toy looks like a RD!"
-	icon = 'mod_celadon/_storge_icons/icons/items/plushes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
 	icon_state = "RD_doll"
 	attack_verb = list("researched", "experimented")
 	squeak_override = list('mod_celadon/_storge_sounds/sound/plushes/beep.ogg' = 1)

@@ -1,7 +1,7 @@
 /obj/item/clothing/shoes/combat/sneakboots
 	name = "sneakboots"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/shoes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/feet.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/feet.dmi'
 	desc = "These boots have special noise cancelling soles. Perfect for stealth, if it wasn't for the color scheme."
 	icon_state = "sneakboots"
 	item_state = "sneakboots"
@@ -29,8 +29,8 @@
 /obj/item/clothing/shoes/clown_shoes
 	desc = "The prankster's standard-issue clowning shoes. Damn, they're huge! Ctrl-click to toggle waddle dampeners."
 	name = "clown shoes"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/shoes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/feet.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/feet.dmi'
 	icon_state = "clown"
 	item_state = "clown_shoes"
 	slowdown = SHOES_SLOWDOWN+1
@@ -76,16 +76,16 @@
 
 /obj/item/clothing/shoes/cyborg
 	name = "cyborg boots"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/shoes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/feet.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/feet.dmi'
 	desc = "Shoes for a cyborg costume."
 	icon_state = "boots"
 
 /obj/item/clothing/shoes/roman
 	name = "roman sandals"
 	desc = "Sandals with buckled leather straps on it."
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/shoes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/feet.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/feet.dmi'
 	icon_state = "roman"
 	item_state = "roman"
 	strip_delay = 100
@@ -96,8 +96,8 @@
 /obj/item/clothing/shoes/griffin
 	name = "griffon boots"
 	desc = "A pair of costume boots fashioned after bird talons."
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/shoes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/feet.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/feet.dmi'
 	icon_state = "griffinboots"
 	item_state = "griffinboots"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes
@@ -119,8 +119,8 @@
 /obj/item/clothing/shoes/wheelys
 	name = "Wheely-Heels"
 	desc = "Uses patented retractable wheel technology. Never sacrifice speed for style - not that this provides much of either." //Thanks Fel
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/shoes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/feet.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/feet.dmi'
 	icon_state = "wheelys"
 	item_state = "wheelys"
 	actions_types = list(/datum/action/item_action/wheelys)
@@ -160,24 +160,24 @@
 /obj/item/clothing/shoes/cookflops
 	desc = "All this talk of antags, greytiding, and griefing... I just wanna grill for god's sake!"
 	name = "grilling sandals"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/shoes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/feet.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/feet.dmi'
 	icon_state = "cookflops"
 	can_be_tied = FALSE
 
 /obj/item/clothing/shoes/yakuza
 	name = "tojo clan shoes"
 	desc = "Steel-toed and intimidating."
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/shoes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/feet.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/feet.dmi'
 	icon_state = "MajimaShoes"
 	item_state = "MajimaShoes_worn"
 
 /obj/item/clothing/shoes/jackbros
 	name = "frosty boots"
 	desc = "For when you're stepping on up to the plate."
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/shoes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/feet.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/feet.dmi'
 	icon_state = "JackFrostShoes"
 	item_state = "JackFrostShoes_worn"
 

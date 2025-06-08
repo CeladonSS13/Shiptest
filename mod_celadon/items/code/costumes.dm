@@ -2,8 +2,8 @@
 	name = "Shark costume"
 	desc = "Finally, a costume to match your favorite plush."
 	icon_state = "shark"
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/suits/costume.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/suits/costume.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/costume.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/costume.dmi'
 	item_state = "shark"
 	body_parts_covered = CHEST|GROIN|ARMS
 	clothing_flags = THICKMATERIAL
@@ -12,8 +12,8 @@
 /obj/item/clothing/head/hooded/shark_hood
 	name = "shark hood"
 	desc = "A hood attached to a shark costume."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/head/costume.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/head/costume.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/costume.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/costume.dmi'
 	icon_state = "shark"
 	body_parts_covered = HEAD
 	clothing_flags = THICKMATERIAL
@@ -23,8 +23,8 @@
 	name = "shork costume"
 	desc = "Why would you ever do this?"
 	icon_state = "sharkcursed"
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/suits/costume.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/suits/costume.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/costume.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/costume.dmi'
 	item_state = "sharkcursed"
 	body_parts_covered = CHEST|GROIN|ARMS
 	clothing_flags = THICKMATERIAL
@@ -33,8 +33,8 @@
 /obj/item/clothing/head/hooded/shork_hood
 	name = "shork hood"
 	desc = "A hood attached to a shork costume."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/head/costume.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/head/costume.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/costume.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/costume.dmi'
 	icon_state = "sharkcursed"
 	body_parts_covered = HEAD
 	clothing_flags = THICKMATERIAL
@@ -43,8 +43,8 @@
 /obj/item/clothing/suit/costume/soviet
 	name = "soviet armored coat"
 	desc = "Conscript reporting! Sponsored by DonkSoft Co. for historical reenactment of the Third World War!"
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/suits/costume.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/suits/costume.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/costume.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/costume.dmi'
 	icon_state = "soviet_suit"
 	item_state = null
 	body_parts_covered = CHEST | GROIN | LEGS | ARMS
@@ -53,8 +53,8 @@
 /obj/item/clothing/suit/costume/deckers
 	name = "decker hoodie"
 	desc = "Based? Based on what?"
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/suits/costume.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/suits/costume.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/costume.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/costume.dmi'
 	icon_state = "decker_suit"
 	item_state = null
 	body_parts_covered = CHEST | GROIN | LEGS | ARMS
@@ -69,7 +69,7 @@
 /obj/item/clothing/under/costume/maid/white
 	name = "maid tacticute costume"
 	desc = "Maid tacticute in China."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/under.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/overlay/under.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/maidunder.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/maidunder.dmi'
 	icon_state = "maid"
 	item_state = "maid"

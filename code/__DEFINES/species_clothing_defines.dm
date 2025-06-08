@@ -9,18 +9,18 @@
 #define DEFAULT_SUIT_PATH 'icons/mob/clothing/suit.dmi'
 // [CELADON-EDIT] - CELADON_RESPRITE
 // #define DEFAULT_EARS_PATH 'icons/mob/clothing/ears.dmi' // CELADON-EDIT - ORIGINAL
-#define DEFAULT_EARS_PATH 'mod_celadon/_storge_icons/icons/clothing/onmob_ears.dmi'
+#define DEFAULT_EARS_PATH 'mod_celadon/_storge_icons/icons/items/clothing/ears/overlay/onmob_ears.dmi'
 // [/CELADON-EDIT]
 #define DEFAULT_MASK_PATH 'icons/mob/clothing/mask.dmi'
 #define DEFAULT_HEAD_PATH 'icons/mob/clothing/head.dmi'
 // [CELADON-EDIT] - CELADON_QOL - В будущем сделать модульно в code/__defines/~mod_celadon/_master_defines.dm
 // #define DEFAULT_NECK_PATH 'icons/mob/clothing/neck.dmi'	// CELADON-EDIT - ORIGINAL
-#define DEFAULT_NECK_PATH 'mod_celadon/_storge_icons/icons/items/overlay/neck.dmi'
+#define DEFAULT_NECK_PATH 'mod_celadon/_storge_icons/icons/items/clothing/neck/overlay/neck.dmi'
 // [/CELADON-EDIT]
 #define DEFAULT_GLOVES_PATH 'icons/mob/clothing/hands.dmi'
 // [CELADON-EDIT] - CELADON_RETURN_CONTENT_SPAWN
 // #define DEFAULT_GLASSES_PATH 'icons/mob/clothing/eyes/eyes.dmi'	// CELADON-EDIT - ORIGINAL
-#define DEFAULT_GLASSES_PATH 'mod_celadon/_storge_icons/icons/clothing/overlay/eyes.dmi'
+#define DEFAULT_GLASSES_PATH 'mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/eyes.dmi'
 // [/CELADON-EDIT]
 #define DEFAULT_BELT_PATH 'icons/mob/clothing/belt.dmi'
 

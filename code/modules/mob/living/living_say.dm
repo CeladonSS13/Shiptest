@@ -350,7 +350,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 			speech_bubble_recipients.Add(M.client)
 	// [CELADON-EDIT] - CELADON_QOL - Меняем бабл эмоута
 	// var/image/I = image('icons/mob/talk.dmi', src, "[bubble_type][say_test(message)]", FLY_LAYER) // CELADON-EDIT -> ORIGIN
-	var/image/I = image('mod_celadon/_storge_icons/icons/qol/talk.dmi', src, "[bubble_type][say_test(message)]", FLY_LAYER)
+	var/image/I = image('mod_celadon/_storge_icons/icons/assets/qol/talk.dmi', src, "[bubble_type][say_test(message)]", FLY_LAYER)
 	// [/CELADON-EDIT]
 	I.appearance_flags = APPEARANCE_UI_IGNORE_ALPHA
 	INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(flick_overlay_global), I, speech_bubble_recipients, 3 SECONDS)

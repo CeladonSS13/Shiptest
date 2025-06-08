@@ -42,7 +42,7 @@
 /turf/open/lava/plasma_gaint
 	name = "liquid plasma"
 	desc = "A flowing stream of chilled liquid plasma. You probably shouldn't get in."
-	icon = 'mod_celadon/_storge_icons/icons/turf/lava_plasma.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/structures/turf/lava_plasma.dmi'
 	icon_state = "lava-255"
 	initial_gas_mix = PLASMA_GIANT_ATMOS
 	baseturfs = /turf/open/lava/plasma/plasma_gaint
@@ -96,7 +96,7 @@
 
 /turf/open/chasm/plasma
 	baseturfs = /turf/open/chasm
-	icon = 'mod_celadon/_storge_icons/icons/turf/chasms_plasma.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/structures/turf/chasms_plasma.dmi'
 	icon_state = "chasms-255"
 	base_icon_state = "chasms"
 	light_color = COLOR_PURPLE
@@ -140,7 +140,7 @@
 /turf/open/floor/plating/asteroid/whitesands/earth
 	name = "sand"
 	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
-	icon = 'mod_celadon/_storge_icons/icons/turf/beach.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/structures/turf/beach.dmi'
 	icon_state = "sand"
 
 ///MARK: Тюрфы ночи

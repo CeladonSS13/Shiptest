@@ -1,7 +1,7 @@
 /obj/item/toy/plush/celadon/separ
 	name = "\proper Separatist plushie"
 	desc = "A cute soft toy of a Separatist. Holding it in your hands, you can hardly restrain yourself from screaming with happiness."
-	icon = 'mod_celadon/_storge_icons/icons/items/plushes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/plushes.dmi'
 	icon_state = "separ"
 	item_state = "separ"
 	w_class = WEIGHT_CLASS_SMALL

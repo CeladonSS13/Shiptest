@@ -1,6 +1,6 @@
 /obj/item/clothing/head/helmet/bulletproof
-	icon = 'mod_celadon/_storge_icons/icons/obj/helmet_celadon.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/helmet_celadon.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/helmet_celadon.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/helmet_celadon.dmi'
 	unique_reskin = list(
 		"None" = "helmetalt",
 		"Desert" = "helmetalt_desert",
@@ -31,8 +31,8 @@
 	unique_reskin = null
 
 /obj/item/clothing/suit/armor/vest/marine
-	icon = 'mod_celadon/_storge_icons/icons/obj/armor_celadon.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/armor_celadon.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/armor_celadon.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/armor_celadon.dmi'
 	unique_reskin = list(
 		"None" = "marine_light",
 		"Desert" = "marine_light_desert",

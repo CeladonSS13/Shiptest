@@ -1,7 +1,7 @@
 /obj/machinery/vending/plushesmat
 	name = "\improper Donksoft Plushes Vendor"
 	desc = "Ages 8 and up approved vendor that dispenses toys."
-	icon = 'mod_celadon/_storge_icons/icons/obj/machinery/vending_plushes.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/machinery/vending_plushes.dmi'
 	icon_state = "plushesmat"
 	product_slogans = "Get your cool toys today!"
 	product_ads = "Feel tough with your toys!;Express your inner child today!"

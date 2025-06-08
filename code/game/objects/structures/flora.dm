@@ -409,7 +409,7 @@
 	. = ..()
 	// [CELADON-EDIT] - CELADON_FLORA
 	// icon = 'icons/obj/flora/plants.dmi' // CELADON-EDIT - ORIGINAL
-	icon = 'mod_celadon/_storge_icons/icons/plants.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/structures/obj/flora/plants.dmi'
 	// [/CELADON-EDIT]
 	if(!states)
 		generate_states()

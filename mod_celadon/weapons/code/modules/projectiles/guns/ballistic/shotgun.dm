@@ -1,9 +1,9 @@
 /obj/item/gun/ballistic/automatic/assault/saiga
 	name = "Saiga-410 \"Saiga\""
 	desc = "Cамозарядный гладкоствольный карабин, разработанный на Ижевском машиностроительном заводе на базе автомата Калашникова. Предназначен для промысловой и любительской охоты на мелкого и среднего зверя и птицу, может использоваться в качестве спортивно-тренировочного оружия. Калибр 410х76mm."
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/obj/saiga.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/hands/saiga_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/hands/saiga_righthand.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/saiga.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/saiga_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/saiga_righthand.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/weapons/overlay/saiga_onmob.dmi'
 	icon_state = "saiga"
 	item_state = "saiga"

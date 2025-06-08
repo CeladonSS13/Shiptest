@@ -22,7 +22,7 @@ jobs:
             jq -r '.commits[:5][] | "[`" + (.id[0:7]) + "`](" + .url + ") " + .message + " - " + .author.name' $GITHUB_EVENT_PATH >> $GITHUB_ENV
             echo "EOF" >> $GITHUB_ENV
 
-      - name: Send Discord notification
+      - name: Send Discord Commit Notification
         uses: stegzilla/discord-notify@v4
         with:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK }}

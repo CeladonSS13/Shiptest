@@ -705,7 +705,7 @@ so as to remain in compliance with the most up-to-date laws."
 /atom/movable/screen/alert/direction_lock
 	name = "Direction Lock"
 	desc = "You are facing only one direction, slowing your movement down. Click here to stop the direction lock."
-	icon = 'mod_celadon/_storge_icons/icons/screen_alert.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/assets/screen_alert.dmi'
 	icon_state = "direction_lock"
 
 /atom/movable/screen/alert/direction_lock/Click()

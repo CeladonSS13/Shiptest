@@ -1,9 +1,9 @@
 /obj/item/bong
 	name = "bong"
 	desc = "Technically known as a water pipe."
-	icon = 'mod_celadon/_storge_icons/icons/bongs/bong.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/bongs/lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/bongs/righthand.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/bong.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/bong_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/bong_righthand.dmi'
 	icon_state = "bongoff"
 
 	///The icon state when the bong is lit

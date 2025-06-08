@@ -35,7 +35,3 @@
 	name = "compact combat shotgun internal magazine"
 	ammo_type = /obj/item/ammo_casing/shotgun/buckshot
 	max_ammo = 4
-
-/obj/item/gun/ballistic/shotgun/doublebarrel/improvised
-	inhand_x_dimension = 64
-	inhand_y_dimension = 64

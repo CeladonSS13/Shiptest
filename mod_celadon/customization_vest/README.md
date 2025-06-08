@@ -35,10 +35,10 @@ ID мода: CELADON_CUSTOMIZATION_VEST
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- `mod_celadon/_storge_icons/icons/obj/helmet_celadon.dmi`
-- `mod_celadon/_storge_icons/icons/obj/armor_celadon.dmi`
-- `mod_celadon/_storge_icons/icons/items/mob/helmet_celadon.dmi`
-- `mod_celadon/_storge_icons/icons/items/mob/armor_celadon.dmi`
+- `mod_celadon/_storge_icons/icons/items/clothing/head/helmet_celadon.dmi`
+- `mod_celadon/_storge_icons/icons/items/clothing/suit/armor_celadon.dmi`
+- `mod_celadon/_storge_icons/icons/items/clothing/head/overlay/helmet_celadon.dmi`
+- `mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/armor_celadon.dmi`
 
 ### Авторы
 

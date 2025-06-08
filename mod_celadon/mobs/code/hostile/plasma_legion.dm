@@ -58,7 +58,7 @@
 	return ..()
 
 /obj/item/organ/regenerative_core/legion/crystal/plasma
-	icon = 'mod_celadon/_storge_icons/icons/obj/plasma_heart.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/mobs/plasma_mobs/plasma_heart.dmi'
 
 /mob/living/simple_animal/hostile/asteroid/big_plasma
 	name = "Legate"

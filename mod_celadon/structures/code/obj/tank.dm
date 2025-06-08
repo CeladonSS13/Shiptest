@@ -1,7 +1,7 @@
 /obj/mecha/combat/combat_tank/tank1984
 	name = "\improper Armored Combat Vehicle \"Tank\""
 
-	icon = 'mod_celadon/_storge_icons/icons/mecha/mecha_114x59.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/other/mecha/mecha_114x59.dmi'
 	icon_state = "jotun"
 
 	stepsound = 'sound/mecha/mechstep.ogg'
