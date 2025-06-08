@@ -997,6 +997,9 @@
 		else if(user.has_buckled_mobs())
 			to_chat(user, span_warning("You can't enter the exosuit with other creatures attached to you!"))
 		else
+// [CELADON-ADD] - FIX_MECH
+			ADD_TRAIT(M, TRAIT_HANDS_BLOCKED, VEHICLE_TRAIT)
+// [/CELADON-ADD]
 			moved_inside(user)
 	else
 		to_chat(user, span_warning("You stop entering the exosuit!"))
@@ -1150,6 +1153,9 @@
 	silicon_pilot = FALSE
 	SEND_SIGNAL(src,COMSIG_MECH_EXITED,L)
 	if(mob_container.forceMove(newloc))//ejecting mob container
+// [CELADON-ADD] - FIX_MECH
+		REMOVE_TRAIT(L, TRAIT_HANDS_BLOCKED, VEHICLE_TRAIT)
+// [/CELADON-ADD]
 		log_message("[mob_container] moved out.", LOG_MECHA)
 		L << browse(null, "window=exosuit")
 
