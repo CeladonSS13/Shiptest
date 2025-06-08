@@ -1007,6 +1007,10 @@
 // wake up should go off here
 /obj/mecha/proc/moved_inside(mob/living/carbon/human/H)
 	. = FALSE
+// [CELADON-ADD] - FIX_MECH
+	if(ishuman(H) && !Adjacent(H))
+		return FALSE
+// [/CELADON-ADD]
 	if(H && H.client && (H in range(1)))
 		occupant = H
 		H.forceMove(src)
