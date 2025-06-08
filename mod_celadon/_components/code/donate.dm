@@ -55,7 +55,7 @@
 
 // MARK: Donate Loadout
 /datum/preferences
-	var/max_loadout_items
+	var/max_loadout_items = 15
 
 /datum/preferences/New(client/C)
 	..()

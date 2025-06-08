@@ -73,8 +73,8 @@ ID мода: CELADON_ITEMS
 - `mod_celadon/_storge_icons/icons/items`
 - `mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi`
 - `sound/weapons/gun/shotgun/insert_shell.ogg`
-- `mod_celadon/_storge_icons/icons/items/clothing/back/gammaback.dmi`
-- `mod_celadon/_storge_icons/icons/items/clothing/back/overlay/back.dmi`
+- `mod_celadon/_storge_icons/icons/items/clothing/back/obj.dmi`
+- `mod_celadon/_storge_icons/icons/items/clothing/back/overlay/onmob.dmi`
 - `mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi`
 - `mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi`
 <!--
