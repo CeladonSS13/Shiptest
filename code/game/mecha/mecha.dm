@@ -551,7 +551,13 @@
 	return
 
 /obj/mecha/proc/handle_unique_action(mob/user)
+// [CELADON-ADD] - FIX_MECH
+/* CELADON-EDIT - ORIGINAL
 	mech_unique_action.Activate()
+*/
+	if(!mech_unique_action == null)
+		mech_unique_action.Activate()
+// [/CELADON-EDIT]
 	return
 
 
