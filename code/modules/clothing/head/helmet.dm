@@ -197,7 +197,7 @@
 /obj/item/clothing/head/helmet/worn_overlays(isinhands)
 	. = ..()
 	var/mutable_appearance/flashlightlight_overlay
-// [CELADON-EDIT]
+// [CELADON-EDIT] - Seclite and Google overlay
 /* CELADON-EDIT - ORIGINAL
 	if(isinhands)
 		return
