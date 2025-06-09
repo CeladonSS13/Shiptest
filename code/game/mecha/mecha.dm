@@ -551,7 +551,7 @@
 	return
 
 /obj/mecha/proc/handle_unique_action(mob/user)
-// [CELADON-ADD] - FIX_MECH
+// [CELADON-EDIT] - FIX_MECH
 /* CELADON-EDIT - ORIGINAL
 	mech_unique_action.Activate()
 */
@@ -1347,4 +1347,10 @@ GLOBAL_VAR_INIT(year_integer, text2num(year)) // = 2013???
 /// Sets the direction of the mecha and all of its occcupents, required for FOV. Alternatively one could make a recursive contents registration and register topmost direction changes in the fov component
 /obj/mecha/proc/set_dir_mecha(new_dir)
 	setDir(new_dir)
+// [CELADON-EDIT] - FIX_MECH
+/* CELADON-EDIT - ORIGINAL
 	occupant.setDir(new_dir)
+*/
+	if(!occupant == null)
+		occupant.setDir(new_dir)
+// [/CELADON-EDIT]
