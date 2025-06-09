@@ -552,9 +552,7 @@
 
 /obj/mecha/proc/handle_unique_action(mob/user)
 // [CELADON-EDIT] - FIX_MECH
-/* CELADON-EDIT - ORIGINAL
-	mech_unique_action.Activate()
-*/
+//	mech_unique_action.Activate() // CELADON-EDIT - ORIGINAL
 	if(!mech_unique_action == null)
 		mech_unique_action.Activate()
 // [/CELADON-EDIT]
@@ -1348,9 +1346,7 @@ GLOBAL_VAR_INIT(year_integer, text2num(year)) // = 2013???
 /obj/mecha/proc/set_dir_mecha(new_dir)
 	setDir(new_dir)
 // [CELADON-EDIT] - FIX_MECH
-/* CELADON-EDIT - ORIGINAL
-	occupant.setDir(new_dir)
-*/
+//	occupant.setDir(new_dir) // CELADON-EDIT - ORIGINAL
 	if(!occupant == null)
 		occupant.setDir(new_dir)
 // [/CELADON-EDIT]
