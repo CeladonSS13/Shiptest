@@ -65,6 +65,10 @@
 	else
 		M.visible_message(span_notice("[user] teaches [M] by beating [M.p_them()] over the head with [src]!"), span_boldnotice("As [user] hits you with [src], codewords and responses flow through your mind."), span_hear("You hear smacking."))
 		M.grant_language(/datum/language/codespeak, source = LANGUAGE_MIND)
+// [CELADON-EDIT] - FIX_LANGUAGE_MIND
+//		M.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND) // CELADON-EDIT - ORIGINAL
+		M.grant_language(/datum/language/codespeak, source = LANGUAGE_MIND)
+// [/CELADON-EDIT]
 		use_charge(user)
 
 /obj/item/codespeak_manual/proc/use_charge(mob/user)
