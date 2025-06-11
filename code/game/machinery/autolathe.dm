@@ -188,18 +188,25 @@
 		eject(usr)
 
 	if(action == "materialEject")
-		var/material_name = params["materialName"]
-		var/datum/component/material_container/materials = GetComponent(/datum/component/material_container)
-		var/amount = text2num(params["amount"])
-		if(amount <= 0 || amount > 50)
-			return
+// [CELADON-ADD] - FIX_LATHE
+		if (!busy)
+// [/CELADON-ADD]
+			var/material_name = params["materialName"]
+			var/datum/component/material_container/materials = GetComponent(/datum/component/material_container)
+			var/amount = text2num(params["amount"])
+			if(amount <= 0 || amount > 50)
+				return
 
-		for(var/mat in materials.materials)
-			var/datum/material/M = mat
-			if("[M]" == material_name)
-				materials.retrieve_sheets(amount, M, get_turf(src))
-				. = TRUE
-				break
+			for(var/mat in materials.materials)
+				var/datum/material/M = mat
+				if("[M]" == material_name)
+					materials.retrieve_sheets(amount, M, get_turf(src))
+					. = TRUE
+					break
+// [CELADON-ADD] - FIX_LATHE
+		else
+			to_chat(usr, "<span class=\"alert\">The autolathe is busy. Please wait for completion of previous operation.</span>")
+// [/CELADON-ADD]
 
 	if(action == "make")
 		if (!busy)
