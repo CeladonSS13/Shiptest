@@ -408,6 +408,9 @@
 	update_appearance()
 
 /obj/item/stock_parts/cell/gun/update_appearance()
+// [CELADON-ADD] - FIX_DISPLAY_CELL_ENERGY_GUN
+	var/appearance = ..()
+// [/CELADON-ADD]
 	cut_overlays()
 	if(grown_battery)
 		. += mutable_appearance('icons/obj/power.dmi', "grown_wires")
@@ -421,7 +424,10 @@
 		add_overlay("[initial(icon_state)]-o2")
 	else
 		add_overlay("[initial(icon_state)]-o1")
-	return ..()
+// [CELADON-EDIT] - FIX_DISPLAY_CELL_ENERGY_GUN
+//	return ..()  // CELADON-EDIT - ORIGINAL
+	return appearance
+// [/CELADON-EDIT]
 
 /obj/item/stock_parts/cell/gun/upgraded
 	name = "upgraded weapon power cell"
