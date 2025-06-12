@@ -48,7 +48,9 @@
 	actions_types = list()
 	show_magazine_on_sprite = TRUE
 	show_magazine_on_sprite_ammo = TRUE
+// [CELADON-ADD] - ADD_SHOW_AMMOCAPACITY_ON_MAGAZINE
 	show_ammo_capacity_on_magazine_sprite = TRUE
+// [/CELADON-ADD]
 	empty_indicator = TRUE
 	manufacturer = MANUFACTURER_NANOTRASEN_OLD
 	fire_sound = 'sound/weapons/gun/smg/smg_heavy.ogg'
