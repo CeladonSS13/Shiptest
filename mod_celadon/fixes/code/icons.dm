@@ -21,5 +21,4 @@
 	icon_state = "a556_42box_big-hp"
 
 /obj/item/gun/energy/e_gun
-
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/weapons/overlay/onmob.dmi'
