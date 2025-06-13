@@ -3,7 +3,6 @@
 	//freedom
 	gender = NEUTER
 	//Whether the underwear uses a special sprite for digitigrade style (i.e. briefs, not panties). Adds a "_d" suffix to the icon state
-	var/has_digitigrade = FALSE
 
 //Male undergarment bottoms
 
