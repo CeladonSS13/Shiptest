@@ -1,10 +1,6 @@
 /datum/sprite_accessory/socks
 	icon = 'mod_celadon/_storge_icons/icons/items/clothing/underwear/underwear_socks.dmi'
 
-/datum/sprite_accessory/socks/nude
-	name = "Nude"
-	icon_state = null
-
 /datum/sprite_accessory/socks/socks_short
 	name = "Short Socks (Greyscale)"
 	icon_state = "short"

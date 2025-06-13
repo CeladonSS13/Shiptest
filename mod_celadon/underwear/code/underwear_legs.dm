@@ -1,8 +1,8 @@
 /datum/sprite_accessory/underwear
 	icon = 'mod_celadon/_storge_icons/icons/items/clothing/underwear/underwear_legs.dmi'
-	//freedom
-	gender = NEUTER
 	//Whether the underwear uses a special sprite for digitigrade style (i.e. briefs, not panties). Adds a "_d" suffix to the icon state
+
+// MARK: Male bottoms
 
 //Male undergarment bottoms
 
@@ -45,6 +45,15 @@
 	use_static = TRUE
 	has_digitigrade = TRUE
 
+// [CELADON-REPLACED]
+/datum/sprite_accessory/underwear/boyshorts
+	name = "Boyshorts (Greyscale)"
+	icon_state = "boyshorts"
+	has_digitigrade = TRUE
+// [/CELADON-REPLACED]
+
+// MARK: Female bottoms
+
 //Female undergarment bottoms
 
 /datum/sprite_accessory/underwear/panties
@@ -63,10 +72,12 @@
 	name = "Thong (Greyscale)"
 	icon_state = "thong"
 
+/* CELADON-REPLACED
 /datum/sprite_accessory/underwear/boyshorts
 	name = "Boyshorts (Greyscale)"
 	icon_state = "boyshorts"
 	has_digitigrade = TRUE
+*/
 
 /datum/sprite_accessory/underwear/catgirl
 	name = "Catgirl Panties (Greyscale)"
@@ -75,4 +86,7 @@
 /datum/sprite_accessory/underwear/beekini
 	name = "Bee-Kini Bottoms"
 	icon_state = "beekini"
+/* CELADON-EDIT
 	use_static = TRUE
+*/
+	use_static = FALSE
