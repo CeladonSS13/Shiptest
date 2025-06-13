@@ -25,3 +25,6 @@
 
 /obj/item/gun/energy/pulse
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/weapons/overlay/onmob.dmi'
+
+/obj/item/gun/energy/pulse/carbine
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/weapons/overlay/onmob.dmi'
