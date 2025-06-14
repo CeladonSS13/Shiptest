@@ -332,11 +332,7 @@
 
 /obj/item/book/granter/spell/random/Initialize()
 	. = ..()
-	// [CELADON-EDIT] - CELADON_RETURN_CONTENT_CLOWNS
-	// var/static/banned_spells = list(/obj/item/book/granter/spell/mimery_blockade)	// CELADON-EDIT - ORIGINAL
-	var/static/banned_spells = list(/obj/item/book/granter/spell/mimery_blockade, /obj/item/book/granter/spell/mimery_guns)
-	// [/CELADON-EDIT]
-	var/real_type = pick(subtypesof(/obj/item/book/granter/spell) - banned_spells)
+	var/real_type = pick(subtypesof(/obj/item/book/granter/spell))
 	new real_type(loc)
 	return INITIALIZE_HINT_QDEL
 

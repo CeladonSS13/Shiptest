@@ -5,7 +5,6 @@
 	var/key = "" //What calls the emote
 	var/key_third_person = "" //This will also call the emote
 	var/message = "" //Message displayed when emote is used
-	var/message_mime = "" //Message displayed if the user is a mime
 	var/message_alien = "" //Message displayed if the user is a grown alien
 	var/message_larva = "" //Message displayed if the user is an alien larva
 	var/message_robot = "" //Message displayed if the user is a robot
@@ -26,7 +25,7 @@
 	var/vary = FALSE	//used for the honk borg emote
 	var/only_forced_audio = FALSE //can only code call this event instead of the player.
 	var/cooldown = 0.8 SECONDS
-	var/static/regex/stop_bad_mime = regex(@"says|exclaims|yells|asks")
+	var/static/regex/stop_bypasser = regex(@"says|exclaims|yells|asks")
 	// [CELADON-ADD] - CELADON_EMOTES
 	/// Message with %t at the end to allow adding params to the message, like for mobs doing an emote relatively to something else.
 	/// Set this to EMOTE_PARAM_USE_POSTFIX to just use the postfix.
@@ -165,8 +164,6 @@
 	. = message
 	if(!muzzle_ignore && user.is_muzzled() && emote_type == EMOTE_AUDIBLE)
 		return "makes a [pick("strong ", "weak ", "")]noise."
-	if(user.mind && user.mind.miming && message_mime)
-		. = message_mime
 	if(isalienadult(user) && message_alien)
 		. = message_alien
 	else if(islarva(user) && message_larva)

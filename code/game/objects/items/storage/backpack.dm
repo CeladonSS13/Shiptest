@@ -100,12 +100,6 @@
 	icon_state = "explorerpack"
 	item_state = "explorerpack"
 
-/obj/item/storage/backpack/mime
-	name = "Parcel Parceaux"
-	desc = "A silent backpack made for those silent workers. Silence Co."
-	icon_state = "mimepack"
-	item_state = "mimepack"
-
 /obj/item/storage/backpack/medic
 	name = "medical backpack"
 	desc = "It's a backpack especially designed for use in a sterile environment."
@@ -188,10 +182,6 @@
 	desc = "A spacious backpack with lots of pockets, worn by Janitors of an Emergency Response Team."
 	icon_state = "ert_janitor"
 
-/obj/item/storage/backpack/ert/clown
-	name = "emergency response team clown backpack"
-	desc = "A spacious backpack with lots of pockets, worn by Clowns of an Emergency Response Team."
-	icon_state = "ert_clown"
 /*
  * Satchel Types
  */
@@ -513,12 +503,6 @@
 	new /obj/item/wirecutters(src)
 	new /obj/item/multitool(src)
 
-/obj/item/storage/backpack/duffelbag/clown
-	name = "clown's duffel bag"
-	desc = "A large duffel bag for holding lots of funny gags!"
-	icon_state = "duffel-clown"
-	item_state = "duffel-clown"
-
 /obj/item/storage/backpack/fireproof
 	resistance_flags = FIRE_PROOF
 
@@ -677,25 +661,6 @@
 	new /obj/item/reagent_containers/food/drinks/bottle/vodka/badminka(src)
 	new /obj/item/reagent_containers/hypospray/medipen/stimulants(src)
 	new /obj/item/grenade/syndieminibomb(src)
-
-// For ClownOps.
-/obj/item/storage/backpack/duffelbag/clown/syndie/ComponentInitialize()
-	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	slowdown = 0
-	STR.silent = TRUE
-
-/obj/item/storage/backpack/duffelbag/clown/syndie/PopulateContents()
-	new /obj/item/clothing/under/rank/civilian/clown(src)
-	// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
-	new /obj/item/clothing/shoes/clown_shoes(src)
-	// [/CELADON-ADD]
-	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
-	new /obj/item/pda/clown(src)
-	// [/CELADON-ADD]
-	new /obj/item/clothing/mask/gas/clown_hat(src)
-	new /obj/item/bikehorn(src)
-	new /obj/item/implanter/sad_trombone(src)
 
 /obj/item/storage/backpack/henchmen
 	name = "wings"
