@@ -64,7 +64,10 @@
 /obj/item/clothing/gloves/maid/white // есть проблема с тем что я не могу перекрасить красный цвет...
 	name = "maid sleeves"
 	desc = "Replica tacticute."
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/hands/gloves.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hands/overlay/hands.dmi'
 	icon_state = "syndimaid_arms"
+	mob_overlay_state = "tacticool_arms"
 
 /obj/item/clothing/under/costume/maid/white
 	name = "maid tacticute costume"
