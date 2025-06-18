@@ -220,16 +220,6 @@ MARK: 5.56mm
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a410/flechette = 4)
 	generate_items_inside(items_inside,src)
-
-/obj/item/storage/box/ammo/a308/hunterspride
-	icon = 'icons/obj/ammunition/ammo_boxes.dmi'
-
-/obj/item/storage/box/ammo/a308/hp
-	icon = 'icons/obj/ammunition/ammo_boxes.dmi'
-
-/obj/item/storage/box/ammo/a308/ap
-	icon = 'icons/obj/ammunition/ammo_boxes.dmi'
-
 //
 //     7.62x54mmR
 //
