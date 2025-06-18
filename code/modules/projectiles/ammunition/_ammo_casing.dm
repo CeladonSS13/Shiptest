@@ -147,6 +147,9 @@
 /obj/item/ammo_casing/proc/stack_with(obj/item/ammo_casing/other_casing)
 	var/obj/item/ammo_box/magazine/ammo_stack/ammo_stack = new stack_type(drop_location())
 	ammo_stack.name = "handful of [name]s" //"handful of .9mm bullet casings"
+// [CELADON-ADD] - ADD_MOD_BULLET_STACK - Загружает путь если из мода, иначе дефолтный
+	ammo_stack.base_icon = other_casing.icon
+// [/CELADON-ADD]
 	ammo_stack.base_icon_state = other_casing.icon_state
 	ammo_stack.caliber = caliber
 	ammo_stack.max_ammo = stack_size
