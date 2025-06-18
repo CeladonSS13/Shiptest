@@ -165,6 +165,7 @@ NO_MAG_GUN_HELPER(automatic/assault/morita1/swamp)
 	item_state = "svd"
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
+	slot_flags = ITEM_SLOT_BACK
 	internal_magazine = FALSE
 	show_magazine_on_sprite = TRUE
 	default_ammo_type = /obj/item/ammo_box/magazine/svd_rounds
