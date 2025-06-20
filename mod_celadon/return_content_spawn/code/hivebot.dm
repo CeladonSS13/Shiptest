@@ -51,7 +51,7 @@
 /obj/structure/spawner/ice_moon/polarbear
 	max_mobs = 1
 	spawn_time = 60 SECONDS
-	mob_types = list(/mob/living/simple_animal/hostile/asteroid/polarbear)
+	mob_types = list(/mob/living/basic/bear/polar)
 
 /obj/structure/spawner/ice_moon/polarbear/clear_rock()
 	for(var/turf/F in RANGE_TURFS(1, src))
@@ -461,13 +461,13 @@
 				new /mob/living/simple_animal/hostile/asteroid/ice_demon(loc)
 			if(prob(35))
 				new /mob/living/simple_animal/hostile/asteroid/ice_demon(loc)
-				new /mob/living/simple_animal/hostile/bear/snow(loc)
+				new /mob/living/basic/bear/polar(loc)
 			if(prob(45))
 				new /obj/item/freeze_cube(loc)
 				new /mob/living/simple_animal/hostile/asteroid/ice_demon(loc)
 			if(prob(55))
 				new /obj/item/clothing/shoes/winterboots/ice_boots(loc)
-				new /mob/living/simple_animal/hostile/bear/snow(loc)
+				new /mob/living/basic/bear/polar(loc)
 				new /obj/effect/decal/remains/human(loc)
 			new /mob/living/simple_animal/hostile/asteroid/ice_demon(loc)
 			new /turf/open/floor/plating/ice/smooth(loc)

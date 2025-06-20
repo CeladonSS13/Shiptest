@@ -1,8 +1,3 @@
-
-
-/mob/living/simple_animal/hostile/megafauna/cult_templar // Офы выпилили курсед клэймор
-	crusher_loot = list(/obj/item/melee/sword/claymore, /obj/item/clothing/suit/space/hardsuit/cult/enchanted)
-
 /obj/item/crusher_trophy/ice_block_talisman
 	name = "ice block talisman"
 	desc = "A glowing trinket that a demonic miner had on him, it seems he couldn't utilize it for whatever reason."
@@ -47,26 +42,6 @@
 		to_chat(owner, span_notice("The cube melts!"))
 	owner.cut_overlay(cube)
 	UnregisterSignal(owner, COMSIG_MOVABLE_PRE_MOVE)
-
-/mob/living/simple_animal/hostile/megafauna
-	var/list/crusher_loot
-
-/mob/living/simple_animal/hostile/megafauna/proc/spawn_crusher_loot()
-	loot = crusher_loot
-
-/mob/living/simple_animal/hostile/asteroid/basilisk/watcher
-	crusher_loot = /obj/item/crusher_trophy/watcher_wing
-
-/mob/living/simple_animal/hostile/asteroid/basilisk/watcher/magmawing
-	crusher_loot = /obj/item/crusher_trophy/magma_wing
-	crusher_drop_mod = 75
-
-/mob/living/simple_animal/hostile/asteroid/basilisk/watcher/icewing
-	crusher_loot = /obj/item/crusher_trophy/ice_wing
-	crusher_drop_mod = 75
-
-/mob/living/simple_animal/hostile/asteroid/brimdemon
-	crusher_loot = /obj/item/crusher_trophy/brimdemon_fang
 
 /obj/item/crusher_trophy/brimdemon_fang
 	name = "brimdemon's fang"
@@ -121,30 +96,7 @@
 	A.friends = user
 	A.faction = user.faction.Copy()
 
-//Lavaland Goliath
-/mob/living/simple_animal/hostile/asteroid/goliath/beast
-	crusher_loot = /obj/item/crusher_trophy/goliath_tentacle
 
-/mob/living/simple_animal/hostile/asteroid/goliath/beast/ancient
-	crusher_loot = /obj/item/crusher_trophy/elder_tentacle
-	crusher_drop_mod = 75
-
-/mob/living/simple_animal/hostile/asteroid/hivelord/spawn_crusher_loot()
-	loot += crusher_loot //we don't butcher
-
-//Legion
-/mob/living/simple_animal/hostile/asteroid/hivelord/legion
-	crusher_loot = /obj/item/crusher_trophy/legion_skull
-
-/mob/living/simple_animal/hostile/asteroid/hivelord/legion/dwarf
-	crusher_loot = /obj/item/crusher_trophy/dwarf_skull
-
-// Snow Legion
-/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow
-	crusher_loot = /obj/item/crusher_trophy/legion_skull
-
-/mob/living/simple_animal/hostile/asteroid/old_demon
-	crusher_drop_mod = 75
 
 /obj/item/crusher_trophy/ice_crystal
 	name = "frost gem"
@@ -192,12 +144,6 @@
 	owner.cut_overlay(cube)
 	UnregisterSignal(owner, COMSIG_MOVABLE_PRE_MOVE)
 
-/mob/living/simple_animal/hostile/asteroid/ice_whelp
-	crusher_loot = /obj/item/crusher_trophy/tail_spike
-
-/mob/living/simple_animal/hostile/asteroid/lobstrosity
-	crusher_loot = /obj/item/crusher_trophy/lobster_claw
-
 /obj/item/crusher_trophy/lobster_claw
 	name = "lobster claw"
 	icon_state = "lobster_claw"
@@ -210,13 +156,6 @@
 
 /obj/item/crusher_trophy/lobster_claw/on_mark_detonation(mob/living/target, mob/living/user)
 	target.apply_status_effect(/datum/status_effect/stagger, bonus_value SECONDS)
-
-/mob/living/simple_animal/hostile/asteroid
-	var/crusher_loot = null
-	var/crusher_drop_mod = 25
-
-/mob/living/simple_animal/hostile/asteroid/polarbear
-	crusher_loot = /obj/item/crusher_trophy/bear_paw
 
 /obj/item/crusher_trophy/bear_paw
 	name = "polar bear paw"
@@ -236,10 +175,6 @@
 		return
 	I.melee_attack_chain(user, target, null)
 
-/mob/living/simple_animal/hostile/asteroid/polarbear/warrior
-	crusher_loot = /obj/item/crusher_trophy/war_paw
-	crusher_drop_mod = 75
-
 /obj/item/crusher_trophy/war_paw
 	name = "Armored bear paw"
 	desc = "It's a paw from a true warrior. Still remembers the basics of CQB."
@@ -258,10 +193,6 @@
 		return
 	I.melee_attack_chain(user, target, null)
 
-/mob/living/simple_animal/hostile/asteroid/wolf
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 2, /obj/item/stack/sheet/sinew/wolf = 2, /obj/item/stack/sheet/bone = 2, /obj/item/crusher_trophy/wolf_ear = 0.5)
-	crusher_loot = /obj/item/crusher_trophy/wolf_ear
-
 /obj/item/crusher_trophy/wolf_ear
 	name = "wolf ear"
 	desc = "The battered remains of a wolf's ear. You could attach it to a crusher, or use the fur to craft a trophy."
@@ -274,9 +205,6 @@
 
 /obj/item/crusher_trophy/wolf_ear/on_mark_detonation(mob/living/target, mob/living/user)
 	user.apply_status_effect(/datum/status_effect/speed_boost, 3 SECONDS)
-
-/mob/living/simple_animal/hostile/asteroid/wolf/alpha
-	crusher_loot = /obj/item/crusher_trophy/fang
 
 /obj/item/crusher_trophy/fang
 	name = "battle-stained fang"
@@ -298,6 +226,78 @@
 			B.add_stacks(bleed_stacks_per_hit)
 
 ///MARK:Crusher Loot
+
+/mob/living/simple_animal/hostile/asteroid
+	var/crusher_loot = null
+	var/crusher_drop_mod = 25
+
+/mob/living/simple_animal/hostile/megafauna
+	var/list/crusher_loot
+
+/mob/living/simple_animal/hostile/megafauna/proc/spawn_crusher_loot()
+	loot = crusher_loot
+
+/mob/living/simple_animal/hostile/asteroid/basilisk/watcher
+	crusher_loot = /obj/item/crusher_trophy/watcher_wing
+
+/mob/living/simple_animal/hostile/asteroid/basilisk/watcher/magmawing
+	crusher_loot = /obj/item/crusher_trophy/magma_wing
+	crusher_drop_mod = 75
+
+/mob/living/simple_animal/hostile/asteroid/basilisk/watcher/icewing
+	crusher_loot = /obj/item/crusher_trophy/ice_wing
+	crusher_drop_mod = 75
+
+/mob/living/simple_animal/hostile/asteroid/brimdemon
+	crusher_loot = /obj/item/crusher_trophy/brimdemon_fang
+
+/mob/living/simple_animal/hostile/megafauna/cult_templar // Офы выпилили курсед клэймор
+	crusher_loot = list(/obj/item/melee/sword/claymore, /obj/item/clothing/suit/space/hardsuit/cult/enchanted)
+
+//Lavaland Goliath
+/mob/living/simple_animal/hostile/asteroid/goliath/beast
+	crusher_loot = /obj/item/crusher_trophy/goliath_tentacle
+
+/mob/living/simple_animal/hostile/asteroid/goliath/beast/ancient
+	crusher_loot = /obj/item/crusher_trophy/elder_tentacle
+	crusher_drop_mod = 75
+
+/mob/living/simple_animal/hostile/asteroid/hivelord/spawn_crusher_loot()
+	loot += crusher_loot //we don't butcher
+
+//Legion
+/mob/living/simple_animal/hostile/asteroid/hivelord/legion
+	crusher_loot = /obj/item/crusher_trophy/legion_skull
+
+/mob/living/simple_animal/hostile/asteroid/hivelord/legion/dwarf
+	crusher_loot = /obj/item/crusher_trophy/dwarf_skull
+
+// Snow Legion
+/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow
+	crusher_loot = /obj/item/crusher_trophy/legion_skull
+
+/mob/living/simple_animal/hostile/asteroid/old_demon
+	crusher_drop_mod = 75
+
+/mob/living/simple_animal/hostile/asteroid/ice_whelp
+	crusher_loot = /obj/item/crusher_trophy/tail_spike
+
+/mob/living/simple_animal/hostile/asteroid/lobstrosity
+	crusher_loot = /obj/item/crusher_trophy/lobster_claw
+
+/mob/living/simple_animal/hostile/asteroid/wolf
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 2, /obj/item/stack/sheet/sinew/wolf = 2, /obj/item/stack/sheet/bone = 2, /obj/item/crusher_trophy/wolf_ear = 0.5)
+	crusher_loot = /obj/item/crusher_trophy/wolf_ear
+
+/mob/living/basic/bear/polar
+	mob_trophy = /obj/item/crusher_trophy/bear_paw
+
+/mob/living/basic/bear/polar/warrior
+	mob_trophy = /obj/item/crusher_trophy/war_paw
+	trophy_drop_mod = 75
+
+/mob/living/simple_animal/hostile/asteroid/wolf/alpha
+	crusher_loot = /obj/item/crusher_trophy/fang
 
 /mob/living/simple_animal/hostile/asteroid/elite/legionnaire
 	crusher_loot = /obj/item/crusher_trophy/legionnaire_spine
