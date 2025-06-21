@@ -39,13 +39,11 @@
 // [CELADON-EDIT] - CELADON_RESPRITE
 /* CELADON-EDIT - ORIGINAL
 #define VOX_UNDERWEAR_TORSO_PATH 'icons/mob/clothing/underwear/species/vox/underwear_torso_vox.dmi'
-#define VOX_UNDERWEAR_LEGS_PATH 'icons/mob/clothing/underwear/species/vox/underwear_legs_vox.dmi'
-#define VOX_UNDERWEAR_SOCKS_PATH 'icons/mob/clothing/underwear/species/vox/underwear_socks_vox.dmi'
 */
 #define VOX_UNDERWEAR_TORSO_PATH 'mod_celadon/_storge_icons/icons/items/clothing/underwear/species/vox/underwear_torso_vox.dmi'
-#define VOX_UNDERWEAR_LEGS_PATH 'mod_celadon/_storge_icons/icons/items/clothing/underwear/species/vox/underwear_legs_vox.dmi'
-#define VOX_UNDERWEAR_SOCKS_PATH 'mod_celadon/_storge_icons/icons/items/clothing/underwear/species/vox/underwear_socks_vox.dmi'
 // [/CELADON-EDIT]
+#define VOX_UNDERWEAR_LEGS_PATH 'icons/mob/clothing/underwear/species/vox/underwear_legs_vox.dmi'
+#define VOX_UNDERWEAR_SOCKS_PATH 'icons/mob/clothing/underwear/species/vox/underwear_socks_vox.dmi'
 
 ///KEPORI PATHS
 #define KEPORI_UNIFORM_PATH 'icons/mob/species/kepori/onmob_uniform_kepori.dmi'

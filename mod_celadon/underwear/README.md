@@ -9,7 +9,7 @@
 -->
 
 <!-- Название мода. Не важно на русском или на английском. -->
-## Возвращение квиков и особенностей персонажей
+## Обновленная Одежда
 
 ID мода: CELADON_UNDERWEAR
 
@@ -28,7 +28,7 @@ ID мода: CELADON_UNDERWEAR
 
 ### Изменения *кор кода*
 
-- Отсутствуют
+- code/modules/mob/dead/new_player/sprite_accessories/underwear/underwear_torso.dm
 
 ### Оверрайды
 
@@ -36,7 +36,7 @@ ID мода: CELADON_UNDERWEAR
 
 ### Дефайны
 
-- Отсутствуют
+- code/__DEFINES/species_clothing_defines.dm
 
 ### Используемые файлы, не содержащиеся в модпаке
 
