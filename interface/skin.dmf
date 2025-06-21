@@ -63,8 +63,8 @@ window "mainwindow"
 		menu = "menu"
 	elem "split"
 		type = CHILD
-		pos = 3,0
-		size = 634x440
+		pos = 0,0
+		size = 640x440
 		anchor1 = 0,0
 		anchor2 = 100,100
 		background-color = #272727
@@ -204,7 +204,7 @@ window "infowindow"
 		saved-params = "is-checked"
 		text = "Wiki"
 		command = "wiki"
-	elem "lore"
+	elem "github"
 		type = BUTTON
 		pos = 368,5
 		size = 80x20
@@ -214,21 +214,22 @@ window "infowindow"
 		text-color = #ffffff
 		background-color = #40628a
 		saved-params = "is-checked"
-		text = "Lore"
-		command = "lore"
-	elem "github"
+		text = "Github"
+		command = "github"
+	elem "report-issue"
 		type = BUTTON
 		pos = 456,5
 		size = 80x20
 		anchor1 = 66,0
 		anchor2 = 79,0
 		font-family = "Verdana"
+		font-size = 8
 		text-color = #ffffff
 		background-color = #40628a
 		saved-params = "is-checked"
-		text = "Github"
-		command = "github"
-	elem "report-issue"
+		text = "Report Issue"
+		command = "report-issue"
+	elem "fullscreen-toggle"
 		type = BUTTON
 		pos = 544,5
 		size = 80x20
@@ -239,8 +240,8 @@ window "infowindow"
 		text-color = #ffffff
 		background-color = #40628a
 		saved-params = "is-checked"
-		text = "Report Issue"
-		command = "report-issue"
+		text = "Fullscreen"
+		command = "fullscreen"
 
 window "outputwindow"
 	elem "outputwindow"
