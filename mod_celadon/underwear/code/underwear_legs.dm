@@ -6,10 +6,6 @@
 
 //Male undergarment bottoms
 
-/datum/sprite_accessory/underwear/nude
-	name = "Nude"
-	icon_state = null
-
 /datum/sprite_accessory/underwear/briefs
 	name = "Briefs"
 	icon_state = "briefs"
@@ -86,7 +82,3 @@
 /datum/sprite_accessory/underwear/beekini
 	name = "Bee-Kini Bottoms"
 	icon_state = "beekini"
-/* CELADON-EDIT
-	use_static = TRUE
-*/
-	use_static = FALSE

@@ -51,7 +51,11 @@
 // MARK: New Female Tops
 /datum/sprite_accessory/undershirt/tank_midriff
 	name = "Midriff Bra"
-	icon_state = "tank_midriff"
+	icon_state = "top_midriff"
+
+/datum/sprite_accessory/undershirt/tank_midriff_alt
+	name = "Midriff Bra (Alt)"
+	icon_state = "top_midriff_alt"
 
 // [CELADON-REPLACED]
 /datum/sprite_accessory/undershirt/beekini
@@ -89,6 +93,10 @@
 	name = "Swim-Stripes Top (Blue)"
 	icon_state = "swim_stripe"
 	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/bandages
+	name = "Bandages"
+	icon_state = "bandages"
 
 // MARK: Normal Shirt
 
@@ -220,6 +228,16 @@
 	icon_state = "shirt_stripes"
 	use_static = TRUE
 
+/datum/sprite_accessory/undershirt/bee_shirt
+	name = "T-Shirt (Bee)"
+	icon_state = "bee_shirt"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/shirt_bc
+	name = "T-Shirt (BC)"
+	icon_state = "shirt_bc"
+	use_static = TRUE
+
 /datum/sprite_accessory/undershirt/polo_blue
 	name = "Polo Shirt (Blue)"
 	icon_state = "polo_blue"
@@ -245,6 +263,11 @@
 /datum/sprite_accessory/undershirt/tank_stripes
 	name = "Tank Top (Stripes)"
 	icon_state = "tank_stripes"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/tank_sun
+	name = "Tank Top (Sun)"
+	icon_state = "tank_sun"
 	use_static = TRUE
 
 /datum/sprite_accessory/undershirt/longstripe

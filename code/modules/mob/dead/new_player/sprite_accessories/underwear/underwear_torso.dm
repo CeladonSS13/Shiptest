@@ -7,9 +7,8 @@
 	name = "Nude"
 	icon_state = null
 
-// [CELADON-REMOVE] - Новая одежда (Перенос в модуль)
-// CELADON-EDIT - ORIGINAL
-/*
+// [CELADON-REMOVE] - Новая одежда (Перенос в модуль) => mod_celadon/underwear
+/* CELADON-REMOVE - ORIGINAL
 //Start normal shirts
 
 //Female undergarment tops
