@@ -11,8 +11,6 @@
 	name = "Nude"
 	icon_state = null
 
-// [CELADON-REMOVE] - Новая одежда (Перенос в модуль) => mod_celadon/underwear
-/* CELADON-REMOVE - ORIGINAL
 /datum/sprite_accessory/underwear/briefs
 	name = "Briefs"
 	icon_state = "briefs"
@@ -79,5 +77,3 @@
 	name = "Bee-Kini Bottoms"
 	icon_state = "beekini"
 	use_static = TRUE
-*/
-// [/CELADON-REMOVE]
