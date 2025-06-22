@@ -29,8 +29,6 @@ ID мода: CELADON_UNDERWEAR
 ### Изменения *кор кода*
 
 - code/modules/mob/dead/new_player/sprite_accessories/underwear/underwear_torso.dm
-- code/modules/mob/dead/new_player/sprite_accessories/underwear/underwear_legs.dm
-
 ### Оверрайды
 
 - Отсутствуют
