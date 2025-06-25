@@ -5,11 +5,11 @@
 	extra_price = 200 * PRICES_VENDING_PREMIUM_MIN
 
 /obj/machinery/vending/wardrobe
-	default_price = 100 * PRICES_VENDING_MIN
-	extra_price = 200 * PRICES_VENDING_PREMIUM_MIN
+	default_price = 200 * PRICES_VENDING_MIN
+	extra_price = 400 * PRICES_VENDING_PREMIUM_MIN
 
 /obj/item/vending_refill/custom
-	custom_premium_price = 200 * PRICES_VENDING_REFILL
+	custom_premium_price = 100 * PRICES_VENDING_REFILL
 
 /obj/item/price_tagger
 	custom_premium_price = 50 * PRICES_VENDING_TAGGER
