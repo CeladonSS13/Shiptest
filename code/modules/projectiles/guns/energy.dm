@@ -307,6 +307,10 @@
 	return
 
 /obj/item/gun/energy/update_icon_state()
+// [CELADON-ADD] - FIX_HADES_MOB_OVERLAY_STATE
+	var/skip_inhand = initial(item_state) //only build if we aren't using a preset inhand icon
+	var/skip_worn_icon = initial(mob_overlay_state) //only build if we aren't using a preset worn icon
+// [/CELADON-ADD]
 	if(initial(item_state))
 		return ..()
 	var/ratio = get_charge_ratio()
@@ -316,7 +320,13 @@
 		var/obj/item/ammo_casing/energy/shot = ammo_type[select]
 		new_item_state += "[shot.select_name]"
 	new_item_state += "[ratio]"
-	item_state = new_item_state
+// [CELADON-EDIT] - FIX_HADES_MOB_OVERLAY_STATE
+//	item_state = new_item_state // CELADON-EDIT - ORIGINAL
+	if(!skip_inhand)
+		item_state = new_item_state
+	if(!skip_worn_icon)
+		mob_overlay_state = new_item_state
+// [/CELADON-EDIT]
 	return ..()
 
 /obj/item/gun/energy/update_overlays()
