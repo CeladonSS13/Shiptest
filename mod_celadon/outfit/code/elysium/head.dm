@@ -42,6 +42,9 @@
 	icon_state = "m10helm_elysium"
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/elysium_head.dmi'
 	mob_overlay_state = "m10helm_elysium"
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
+	content_overlays = TRUE
+	can_flashlight = TRUE
 
 /obj/item/clothing/head/shemag
 	name = "void shemagh"

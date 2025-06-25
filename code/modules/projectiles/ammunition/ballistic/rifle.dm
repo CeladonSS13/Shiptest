@@ -109,8 +109,6 @@
 	caliber = ".308"
 	projectile_type = /obj/projectile/bullet/a308
 	bullet_per_box = 10
-*/
-//[/СELADON-REMOVE]
 
 /obj/item/ammo_casing/a308/ap
 	name = ".308 AP bullet casing"
@@ -123,6 +121,8 @@
 	desc = "A .308 HP bullet casing."
 	bullet_skin = "hollow"
 	projectile_type = /obj/projectile/bullet/a308/hp
+*/
+//[/СELADON-REMOVE]
 
 //.299
 

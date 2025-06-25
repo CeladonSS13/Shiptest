@@ -214,8 +214,22 @@
 		return TRUE
 
 	// Priority 3: use internals tank.
+// [CELADON-EDIT] - FIX_IMPLANT_THRUSTERS
+/* CELADON-EDIT - ORIGINAL
 	if(owner.internal?.air_contents?.total_moles() >= num)
 		T.assume_air_moles(owner.internal.air_contents, num)
+*/
+	var/datum/gas_mixture/internal_mix = owner.internal?.return_air()
+	if(internal_mix && internal_mix.total_moles() > num)
+		var/datum/gas_mixture/removed = internal_mix.remove(num)
+		if(removed.total_moles() > 0.005)
+			T.assume_air(removed)
+			ion_trail.generate_effect()
+			return TRUE
+		else
+			T.assume_air(removed)
+			ion_trail.generate_effect()
+// [/CELADON-EDIT]
 
 	toggle(silent = TRUE)
 	return FALSE

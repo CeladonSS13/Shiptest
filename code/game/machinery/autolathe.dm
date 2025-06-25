@@ -188,6 +188,11 @@
 		eject(usr)
 
 	if(action == "materialEject")
+// [CELADON-ADD] - FIX_LATHE
+		if (busy)
+			to_chat(usr, "<span class=\"alert\">The autolathe is busy. Please wait for completion of previous operation.</span>")
+			return
+// [/CELADON-ADD]
 		var/material_name = params["materialName"]
 		var/datum/component/material_container/materials = GetComponent(/datum/component/material_container)
 		var/amount = text2num(params["amount"])

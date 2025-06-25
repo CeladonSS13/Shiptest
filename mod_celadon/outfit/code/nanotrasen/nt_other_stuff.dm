@@ -52,9 +52,10 @@
 	item_state = "vihelmet"
 	var/hud_type = DATA_HUD_SECURITY_ADVANCED
 	var/hud_trait = TRAIT_SECURITY_HUD
-	can_flashlight = TRUE
 	dog_fashion = null
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 	content_overlays = TRUE
+	can_flashlight = TRUE
 
 /obj/item/clothing/head/helmet/vigilitas/equipped(mob/living/carbon/human/user, slot)
 	..()

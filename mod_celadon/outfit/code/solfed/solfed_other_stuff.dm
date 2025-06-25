@@ -143,8 +143,8 @@
 /obj/item/storage/belt/military/solfed
 	name = "Solar Federation chest rig"
 	desc = "These are the military webbing of the Solar Federation. It has the Solar Federation logo on the back."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/belt/beltsf.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/belt/overlay/beltsf.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/belt/obj.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/belt/overlay/onmob.dmi'
 	icon_state = "solfed_webbing"
 	item_state = "solfed_webbing"
 	resistance_flags = FIRE_PROOF
@@ -220,8 +220,9 @@
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/headsf.dmi'
 	icon_state = "solfed_m11"
 	item_state = "solfed_m11"
-	can_flashlight = TRUE
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 	content_overlays = TRUE
+	can_flashlight = TRUE
 
 /obj/item/clothing/head/helmet/solfed/m11/elysium
 	name = "Elysium Brigade M11 helmet"
@@ -234,6 +235,7 @@
 	desc = "This is a Solar Federation M11 helmet in desert coloring. It has the Solar Federation flag on the left side of the helmet. This particular helmet is wrapped in green cloth to have better facial protection. It is usually worn by the Solar Federation Elysium Brigade."
 	icon_state = "elysium_brigade_m10_wraps"
 	item_state = "elysium_brigade_m10_wraps"
+	pocket_storage_component_path = null
 
 //oversuits
 /obj/item/clothing/suit/armor/solfed/formal
@@ -313,24 +315,24 @@
 
 	name = "solfed satchel"
 	desc = "A democratic-looking satchel with extra pockets."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/backpackssf.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/backpackssf.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/obj.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/onmob.dmi'
 	icon_state = "satchel-sf"
 	item_state = "satchel-sf"
 
 /obj/item/storage/backpack/solfed
 	name = "solfed backpack"
 	desc = "A militaristic looking backpack. Has a stylish sol star on it."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/backpackssf.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/backpackssf.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/obj.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/onmob.dmi'
 	icon_state = "solfedpack"
 	item_state = "solfedpack"
 
 /obj/item/storage/backpack/duffelbag/solfed
 	name = "solfed duffel bag"
 	desc = "A large duffel bag for holding extra freedom-enforcing supplies."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/backpackssf.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/backpackssf.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/obj.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/back/overlay/onmob.dmi'
 	icon_state = "duffel-solfed"
 	item_state = "duffel-solfed"
 

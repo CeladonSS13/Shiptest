@@ -97,6 +97,8 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code/modules/missions/outpost/research_mission.dm` - Окргуление координат
 
+- EDIT: `code/modules/clothing/head/helmet.dm` - Отображение оверлеев
+
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
@@ -147,7 +149,7 @@ Weebstick (Красная катана) теперь нельзя сломать
 ### Авторы:
 
 
-RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFaceLesS, Burbonchik, MrRomainzZ, Molniz, Redwizz, Sjerty, Garomt, Ganza9991
+RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFaceLesS, Burbonchik, MrRomainzZ, Molniz, Redwizz, Sjerty, Garomt, Ganza9991, KOCMOHABT
 
 <!--
   Здесь находится твой никнейм

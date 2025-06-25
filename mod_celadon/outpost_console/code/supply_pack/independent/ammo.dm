@@ -424,13 +424,13 @@ MARK: .308
 /datum/supply_pack/faction/independent/ammo/a308_sp_box
 	name = ".308 SP Ammo Box Crate"
 	desc = "Contains a 40-round .308 box loaded with soft point ammo, great against unarmored targets."
-	contains = list(/obj/item/storage/box/ammo/a308/a308_sp)
+	contains = list(/obj/item/storage/box/ammo/a308/hp)
 	cost = 800
 
 // /datum/supply_pack/faction/independent/ammo/a308_ap_box
 // 	name = ".308 AP Ammo Box Crate"
 // 	desc = "Contains a 40-round .308 box loaded with armor piercing ammo."
-// 	contains = list(/obj/item/storage/box/ammo/a308/a308_ap)
+// 	contains = list(/obj/item/storage/box/ammo/a308/ap)
 // 	cost = 1300
 
 /*

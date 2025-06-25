@@ -1035,15 +1035,6 @@
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/lava/explored)
-"acs" = (
-/obj/item/stack/rods{
-	icon_state = "rods-1";
-	dir = 1;
-	pixel_x = 7;
-	pixel_y = -8
-	},
-/turf/open/lava/smooth,
-/area/overmap_encounter/planetoid/lava/explored)
 "act" = (
 /obj/item/kirbyplants{
 	icon_state = "plant-21";
@@ -1161,6 +1152,10 @@
 	icon_state = "rods-1";
 	pixel_x = 8;
 	pixel_y = 6
+	},
+/obj/item/circuitboard/machine/smes{
+	pixel_x = 8;
+	pixel_y = 7
 	},
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
@@ -4191,18 +4186,6 @@
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/cave/explored)
-"ahc" = (
-/obj/item/circuitboard/machine/smes{
-	pixel_x = 8;
-	pixel_y = 7
-	},
-/obj/item/stack/sheet/metal{
-	amount = 5;
-	pixel_x = 2;
-	pixel_y = 3
-	},
-/turf/open/lava/smooth,
-/area/overmap_encounter/planetoid/lava/explored)
 "ahd" = (
 /obj/effect/mob_spawn/human/corpse/assistant/husked{
 	short_desc = "Тело все обгорело и повреждено. Сложно сказать кому оно принадлежало, но кажется это один из членов команды судна!"
@@ -15139,49 +15122,27 @@
 	},
 /area/ruin/unpowered/corprejectrooms)
 "awU" = (
-/turf/open/lava/smooth/lava_land_surface,
+/turf/open/lava/smooth,
 /area/ruin/unpowered/corprejectrooms)
 "awW" = (
-/obj/item/stock_parts/cell/high/empty{
-	pixel_x = 3
+/obj/effect/mob_spawn/human/corpse{
+	mob_species = /datum/species/lizard/ashwalker
 	},
-/turf/open/lava/smooth,
-/area/overmap_encounter/planetoid/lava/explored)
+/turf/closed/indestructible/rock,
+/area/overmap_encounter/planetoid/cave/explored)
 "axc" = (
 /obj/structure/lattice,
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
 /area/overmap_encounter/planetoid/lava/explored)
-"axi" = (
-/obj/item/stack/cable_coil{
-	amount = 1;
-	name = "cable piece";
-	icon_state = "coil1";
-	dir = 1;
-	pixel_x = -1;
-	pixel_y = -2;
-	color = "#ff0000"
-	},
-/obj/item/stack/rods{
-	icon_state = "rods-1";
-	dir = 1;
-	pixel_x = 7;
-	pixel_y = 1
-	},
-/turf/open/lava/smooth,
-/area/overmap_encounter/planetoid/lava/explored)
 "axn" = (
-/obj/item/stack/sheet/metal{
-	pixel_x = -4;
-	pixel_y = 3
+/obj/structure/lattice,
+/obj/item/stock_parts/cell/high/empty{
+	pixel_x = 3
 	},
-/obj/item/stack/sheet/mineral/titanium{
-	amount = 2;
-	pixel_y = -1
-	},
-/turf/open/lava/smooth,
-/area/overmap_encounter/planetoid/lava/explored)
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/unpowered/corprejectrooms)
 "cxt" = (
 /obj/item/stack/sheet/metal{
 	pixel_x = 3;
@@ -15817,7 +15778,7 @@ abD
 abE
 abF
 abG
-axn
+aah
 abI
 abh
 aah
@@ -16132,7 +16093,7 @@ acz
 acA
 aaC
 acB
-ahc
+aah
 aah
 aaS
 aah
@@ -16286,8 +16247,8 @@ adj
 adk
 aaS
 adl
-aaD
-awW
+axn
+aah
 aah
 adn
 ado
@@ -18380,7 +18341,7 @@ afu
 aaD
 ajN
 ajO
-acs
+aah
 ajQ
 ajR
 aaS
@@ -22555,7 +22516,7 @@ aao
 "}
 (94,1,1) = {"
 aaF
-aqK
+awW
 aaF
 aah
 aah
@@ -23726,7 +23687,7 @@ aah
 aah
 aah
 aah
-axi
+aah
 aah
 anH
 awm
