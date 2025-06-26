@@ -132,8 +132,10 @@
 		/obj/item/storage/box/maid = 2,
 		/obj/item/instrument/piano_synth/headphones/spacepods = 1)
 	refill_canister = /obj/item/vending_refill/clothing
-	default_price = 10
-	extra_price = 60
+	// [CELADON-REMOVE] - CELADON_ECONOMY - Вынесено в модуль. Иначе оверайд будет
+	// default_price = 10
+	// extra_price = 60
+	// [/CELADON-REMOVE]
 	light_mask = "wardrobe-light-mask"
 	light_color = LIGHT_COLOR_ELECTRIC_GREEN
 
