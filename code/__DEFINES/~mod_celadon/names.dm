@@ -47,8 +47,8 @@
 	#define PREFIX_NS_LOGI list("NSSV",)
 	#define PREFIX_VIGILITAS list("VISV",)
 #define PREFIX_FRONTIER list("FFV",)
-#define PREFIX_INDEPENDENT list("SV", "IMV", "ISV", "MSV",)
-#define PREFIX_ELYSIUM list("EUSM", "EUSQ", "EUSF", "EUSR",)
+#define PREFIX_INDEPENDENT list("SV", "IMV", "ISV", "MSV", "ЕSV")
+#define PREFIX_ELYSIUM list("EUSM", "EUSQ", "EUSF", "EUSR")
 #define PREFIX_PIRATES list("PIRATE", "RSV",)
 #define PREFIX_EVENT list("CLO",)
 
