@@ -2372,6 +2372,9 @@
 		M.adjustToxLoss(1)
 	..()
 
+
+// [CELADON-EDIT] - CELADON_FIXES - IMPROVE_STATIS
+/* Original
 /datum/reagent/medicine/stasis
 	name = "Stasis"
 	description = "A liquid blue chemical that causes the body to enter a chemically induced stasis, irregardless of current state."
@@ -2392,6 +2395,42 @@
 	M.adjustToxLoss(1)
 	..()
 	. = 1
+*/
+/datum/reagent/medicine/stasis
+	name = "Stasis"
+	description = "A liquid blue chemical that dramatically slows biological functions without paralyzing the subject."
+	reagent_state = LIQUID
+	color = "#51b5cb" //a nice blue
+	overdose_threshold = 0
+
+/datum/reagent/medicine/stasis/expose_mob(mob/living/M, method=INJECT, reac_volume, show_message = 1)
+	if(method != INJECT)
+		return
+	if(iscarbon(M))
+		to_chat(M, span_warning("Your body starts to slow down, sensation retreating from your limbs!"))
+
+/datum/reagent/medicine/stasis/on_mob_metabolize(mob/living/M)
+	..()
+	M.add_movespeed_modifier(/datum/movespeed_modifier/reagent/chimecal_stasis)
+	ADD_TRAIT(M, TRAIT_ANALGESIA, type)
+	ADD_TRAIT(M, TRAIT_NOCRITDAMAGE, type)
+
+/datum/reagent/medicine/stasis/on_mob_end_metabolize(mob/living/M)
+	M.remove_movespeed_modifier(/datum/movespeed_modifier/reagent/chimecal_stasis)
+	REMOVE_TRAIT(M, TRAIT_ANALGESIA, type)
+	REMOVE_TRAIT(M, TRAIT_NOCRITDAMAGE, type)
+	..()
+
+/datum/reagent/medicine/stasis/on_mob_life(mob/living/carbon/M)
+	M.adjustToxLoss(0.5)
+	if(M.bodytemperature > M.dna.species.bodytemp_cold_damage_limit + 10)
+		M.adjust_bodytemperature(-10 * TEMPERATURE_DAMAGE_COEFFICIENT, M.dna.species.bodytemp_cold_damage_limit + 10)
+	if(prob(5))
+		to_chat(M, span_warning("You feel an unnatural chill deep in your bones..."))
+		M.shake_animation(3)
+	..()
+	return TRUE
+// [/CELADON-EDIT]
 
 /datum/reagent/medicine/carfencadrizine
 	name = "Carfencadrizine"

@@ -99,6 +99,8 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code/modules/clothing/head/helmet.dm` - Отображение оверлеев
 
+- EDIT: `code/modules/reagents/chemistry/reagents/medicine_reagents.dm` - Изменение стазиса
+- EDIT: `code/modules/mob/living/carbon/life.dm` - Органы не гниют с реагентом стазиса
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
