@@ -112,6 +112,7 @@
 	..()
 	var/datum/component/butchering/butchering = src.GetComponent(/datum/component/butchering)
 	butchering.butchering_enabled = TRUE
+// [CELADON-ADD] - CELADON_GRAVGEN
 	RegisterSignal(chassis, COMSIG_MOVABLE_BUMP, PROC_REF(bump_mine))
 
 ///Called whenever the mech bumps into something; action() handles checking if it is a mineable turf
@@ -119,15 +120,20 @@
 	SIGNAL_HANDLER
 
 	if(chassis.selected == src)
+// [/CELADON-ADD]
 		if(!chassis.occupant) //prevents exosuit from digging if it pushed with something, like an explosion // just in case..?
+// [CELADON-ADD] - CELADON_GRAVGEN
 			return
 		if(istype(bumped_into, /turf/closed/mineral/))
 			INVOKE_ASYNC(src, PROC_REF(action), bumped_into, null, TRUE)
+// [/CELADON-ADD]
 
 /obj/item/mecha_parts/mecha_equipment/drill/detach(atom/moveto)
 	var/datum/component/butchering/butchering = src.GetComponent(/datum/component/butchering)
 	butchering.butchering_enabled = FALSE
+// [CELADON-ADD] - CELADON_GRAVGEN
 	UnregisterSignal(chassis, COMSIG_MOVABLE_BUMP)
+// [/CELADON-ADD]
 	..()
 
 /obj/item/mecha_parts/mecha_equipment/drill/proc/drill_mob(mob/living/target, mob/user)

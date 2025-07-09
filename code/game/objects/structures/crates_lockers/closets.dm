@@ -153,12 +153,12 @@
 			if(user)
 				to_chat(user, span_danger("There's something too large in [src], preventing it from closing."))
 			return FALSE
-// Cel-Add - No Mechs in crates
+// [CELADON-ADD] - CELADON_FIXES // Cel-Add - No Mechs in crates
 	for(var/obj/mecha/mech in T) // Лучше бы сделал общую проверку предметов, но я хз какой вар сравнивать. Whatever
 		if(user)
 			to_chat(user, "<span class='danger'>There's something too large in [src], preventing it from closing.</span>")
 		return FALSE
-// /Cel-Add
+// [/CELADON-ADD] // /Cel-Add
 	return TRUE
 
 /obj/structure/closet/dump_contents()

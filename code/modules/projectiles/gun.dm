@@ -369,8 +369,10 @@
 /obj/item/gun/proc/do_wield(mob/user)
 	user.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/gun, multiplicative_slowdown = wield_slowdown)
 	wield_time = world.time + wield_delay
+// [CELADON-ADD] - CELADON_FIXES
 	if(azoom)
 		azoom.Grant(user)
+// [/CELADON-ADD]
 	if(wield_time > 0)
 		if(do_after(
 			user,
@@ -392,8 +394,10 @@
 	wielded = FALSE
 	wielded_fully = FALSE
 	zoom(user, forced_zoom = FALSE)
+// [CELADON-ADD] - CELADON_FIXES
 	if(azoom)
 		azoom.Remove(user)
+// [/CELADON-ADD]
 	user.remove_movespeed_modifier(/datum/movespeed_modifier/gun)
 	if(azoom)
 		azoom.Remove(user)

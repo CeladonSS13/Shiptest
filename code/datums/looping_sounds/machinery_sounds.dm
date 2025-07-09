@@ -36,15 +36,13 @@
 	end_sound = 'sound/machines/generator/generator_end.ogg'
 	volume = 40
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+// [CELADON-ADD] - CELADON_GRAVGEN
 /datum/looping_sound/gravity_generator
-	mid_sounds = list('sound/effects/beam.ogg')
+	mid_sounds = list('mod_celadon/_storge_sounds/sound/effects/beam.ogg')
 	mid_length = 40
 	volume = 10
 	falloff_distance = 3
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// [/CELADON-ADD]
 
 /datum/looping_sound/deep_fryer
 	start_sound = 'sound/machines/fryer/deep_fryer_immerse.ogg' //my immersions
