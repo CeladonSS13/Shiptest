@@ -75,7 +75,7 @@
 	elasticity_coeff = 0
 	unit_name = "big game hunting trophy"
 	export_types = list(
-		/obj/item/mob_trophy/legionnaire_spine,
+		/obj/item/crusher_trophy/legionnaire_spine,	// /obj/item/mob_trophy/legionnaire_spine,	// [CELADON-EDIT] - CRUSHER_TROPHEY
 		/obj/item/mob_trophy/ash_spike,
 		/obj/item/mob_trophy/demon_claws,
 		/obj/item/mob_trophy/broodmother_tongue,
