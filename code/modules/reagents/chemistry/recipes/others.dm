@@ -516,6 +516,12 @@
 	results = list(/datum/reagent/royal_bee_jelly = 5)
 	required_reagents = list(/datum/reagent/toxin/mutagen = 10, /datum/reagent/consumable/honey = 40)
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+/datum/chemical_reaction/laughter
+	results = list(/datum/reagent/consumable/laughter = 10) // Fuck it. I'm not touching this one.
+	required_reagents = list(/datum/reagent/consumable/sugar = 1, /datum/reagent/consumable/banana = 1)
+// [/CELADON-ADD]
+
 /datum/chemical_reaction/plastic_polymers
 	required_reagents = list(/datum/reagent/fuel/oil = 5, /datum/reagent/toxin/acid = 2, /datum/reagent/ash = 3)
 	required_temp = 374 //lazily consistent with soap & other crafted objects generically created with heat.

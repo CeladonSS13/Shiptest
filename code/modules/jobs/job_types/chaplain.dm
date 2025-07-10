@@ -30,6 +30,10 @@
 			B.name = pick("The Holy Bible","The Dead Sea Scrolls")
 		if("buddhism")
 			B.name = "The Sutras"
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+		if("clownism","honkmother","honk","honkism","comedy")
+			B.name = pick("The Holy Joke Book", "Just a Prank", "Hymns to the Honkmother")
+// [/CELADON-ADD]
 		if("chaos")
 			B.name = "The Book of Lorgar"
 		if("cthulhu")

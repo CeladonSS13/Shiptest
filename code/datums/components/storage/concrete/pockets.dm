@@ -53,6 +53,11 @@
 /datum/component/storage/concrete/pockets/shoes/Initialize()
 	. = ..()
 
+// [CELADON-ADD] - RETURN_CONTENT - CLOWN_RETURN_CONTENT
+/datum/component/storage/concrete/pockets/shoes/clown/Initialize()
+	. = ..()
+// [/CELADON-ADD]
+
 /datum/component/storage/concrete/pockets/pocketprotector
 	max_items = 3
 	max_w_class = WEIGHT_CLASS_TINY

@@ -76,6 +76,7 @@
 #define SPAN_PAPYRUS "papyrus"
 #define SPAN_REALLYBIG "reallybig"
 #define SPAN_COMMAND "command_headset"
+#define SPAN_CLOWN "clown"	// [CELADON-ADD] - RETURN_CONTENT - CLOWN_RETURN_CONTENT
 #define SPAN_SINGING "singing"
 #define SPAN_SGA "sga"
 

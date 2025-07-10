@@ -351,6 +351,11 @@
 	var/hitdamage = 0
 	var/emaggedhitdamage = 3
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+/obj/item/borg/lollipop/clown
+	emaggedhitdamage = 0
+// [/CELADON-ADD]
+
 /obj/item/borg/lollipop/equipped()
 	. = ..()
 	check_amount()

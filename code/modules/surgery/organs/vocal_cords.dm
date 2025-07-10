@@ -129,6 +129,11 @@
 		//Command staff has authority
 		if(user.mind.assigned_role in GLOB.command_positions)
 			power_multiplier *= 1.4
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+		//Why are you speaking
+		if(user.mind.assigned_role == "Mime")
+			power_multiplier *= 0.5
+// [/CELADON-ADD]
 
 	//Try to check if the speaker specified a name or a job to focus on
 	var/list/specific_listeners = list()
@@ -201,6 +206,7 @@
 	var/static/regex/salute_words = regex("salute")
 	var/static/regex/deathgasp_words = regex("play dead")
 	var/static/regex/clap_words = regex("clap|applaud")
+	var/static/regex/honk_words = regex("ho+nk") //hooooooonk	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 	var/static/regex/multispin_words = regex("like a record baby|right round")
 
 	var/i = 0
@@ -234,7 +240,7 @@
 	else if((findtext(message, silence_words)))
 		cooldown = COOLDOWN_STUN
 		for(var/mob/living/carbon/C in listeners)
-			if(user.mind.assigned_role == "Curator")
+			if(user.mind && (user.mind.assigned_role == "Curator" || user.mind.assigned_role == "Mime"))	//if(user.mind.assigned_role == "Curator")	// [CELADON-EDIT] - CELADON_RETURN_CONTENT_CLOWNS
 				power_multiplier *= 3
 			C.silent += (10 * power_multiplier)
 

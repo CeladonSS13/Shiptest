@@ -5,6 +5,7 @@
 	var/key = "" //What calls the emote
 	var/key_third_person = "" //This will also call the emote
 	var/message = "" //Message displayed when emote is used
+	var/message_mime = "" //Message displayed if the user is a mime	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNSS
 	var/message_alien = "" //Message displayed if the user is a grown alien
 	var/message_larva = "" //Message displayed if the user is an alien larva
 	var/message_robot = "" //Message displayed if the user is a robot

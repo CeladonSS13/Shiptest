@@ -131,6 +131,12 @@
 	name = "prototype envirogloves"
 	icon_state = "protoplasma"
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+/obj/item/clothing/gloves/color/plasmaman/clown
+	name = "clown envirogloves"
+	icon_state = "clownplasma"
+// [/CELADON-ADD]
+
 /obj/item/clothing/gloves/combat/wizard
 	name = "enchanted gloves"
 	desc = "These gloves have been enchanted with a spell that makes them fireproof and acid-resistant."

@@ -52,6 +52,14 @@
 	icon = null
 	ttone = "data"
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+/obj/item/pda/ai/attack_self(mob/user)
+	if ((honkamt > 0) && (prob(60)))//For clown virus.
+		honkamt--
+		playsound(loc, 'sound/items/bikehorn.ogg', 30, TRUE)
+	return
+// [/CELADON-ADD]
+
 /obj/item/pda/ai/pai
 	ttone = "assist"
 

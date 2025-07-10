@@ -17,6 +17,10 @@
 	. = ..()
 	possible_appearances = sortList(list(
 		"Assistant" = image(icon = src.icon, icon_state = "cutout_greytide"),
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+		"Clown" = image(icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/bedsheets.dmi', icon_state = "cutout_clown"),
+		"Mime" = image(icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/bedsheets.dmi', icon_state = "cutout_mime"),
+// [/CELADON-ADD]
 		"Traitor" = image(icon = src.icon, icon_state = "cutout_traitor"),
 		"Nuke Op" = image(icon = src.icon, icon_state = "cutout_fluke"),
 		"Cultist" = image(icon = src.icon, icon_state = "cutout_cultist"),
@@ -118,6 +122,16 @@
 			name = "[pick(GLOB.first_names_male)] [pick(GLOB.last_names)]"
 			desc = "A cardboat cutout of an assistant."
 			icon_state = "cutout_greytide"
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+		if("Clown")
+			name = pick(GLOB.clown_names)
+			desc = "A cardboard cutout of a clown. You get the feeling that it should be in a corner."
+			icon_state = "cutout_clown"
+		if("Mime")
+			name = pick(GLOB.mime_names)
+			desc = "...(A cardboard cutout of a mime.)"
+			icon_state = "cutout_mime"
+// [/CELADON-ADD]
 		if("Traitor")
 			name = "[pick("Unknown", "Captain")]"
 			desc = "A cardboard cutout of a traitor."

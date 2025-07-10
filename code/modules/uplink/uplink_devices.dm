@@ -53,6 +53,13 @@
 	hidden_uplink.allow_restricted = FALSE
 	hidden_uplink.set_gamemode(/datum/game_mode/nuclear)
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+/obj/item/uplink/clownop/Initialize()
+	. = ..()
+	var/datum/component/uplink/hidden_uplink = GetComponent(/datum/component/uplink)
+	hidden_uplink.set_gamemode(/datum/game_mode/nuclear/clown_ops)
+// [/CELADON-ADD]
+
 /obj/item/uplink/old
 	name = "dusty radio"
 	desc = "A dusty looking radio."

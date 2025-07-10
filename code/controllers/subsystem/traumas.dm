@@ -12,7 +12,7 @@ SUBSYSTEM_DEF(traumas)
 
 /datum/controller/subsystem/traumas/Initialize()
 	//phobia types is to pull from randomly for brain traumas, e.g. conspiracies is for special assignment only
-	phobia_types = sortList(list("spiders", "space", "security", "greytide", "lizards",
+	phobia_types = sortList(list("spiders", "space", "security", "clowns", "greytide", "lizards",	//phobia_types = sortList(list("spiders", "space", "security", "greytide", "lizards",	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 						"skeletons", "snakes", "robots", "doctors", "authority", "the supernatural",
 						"aliens", "strangers", "birds", "falling", "anime"))
 
@@ -20,6 +20,7 @@ SUBSYSTEM_DEF(traumas)
 		"spiders"          = construct_phobia_regex("spiders"),
 		"space"            = construct_phobia_regex("space"),
 		"security"         = construct_phobia_regex("security"),
+		"clowns"           = construct_phobia_regex("clowns"),	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 		"greytide"         = construct_phobia_regex("greytide"),
 		"lizards"          = construct_phobia_regex("lizards"),
 		"skeletons"        = construct_phobia_regex("skeletons"),
@@ -64,6 +65,14 @@ SUBSYSTEM_DEF(traumas)
 			/obj/item/melee/baton, /obj/item/gun/energy/taser, /obj/item/restraints/handcuffs,
 			/obj/machinery/door/airlock/security, /obj/effect/hallucination/simple/securitron)),
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+		"clowns"    = typecacheof(list(
+			/obj/item/clothing/under/rank/civilian/clown,
+			/obj/item/clothing/mask/gas/clown_hat, /obj/item/instrument/bikehorn,
+			/obj/item/grown/bananapeel, /obj/item/reagent_containers/food/snacks/cheesiehonkers,
+			/obj/item/pda/clown,
+			/obj/item/trash/cheesie)),
+// [/CELADON-ADD]
 
 		"greytide"  = typecacheof(list(
 			/obj/item/clothing/under/color/grey, /obj/item/melee/baton/cattleprod,

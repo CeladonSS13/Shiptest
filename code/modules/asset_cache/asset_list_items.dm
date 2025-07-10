@@ -277,6 +277,10 @@
 		"meteors" = 'icons/UI_Icons/Achievements/Misc/meteors.png',
 		"timewaste" = 'icons/UI_Icons/Achievements/Misc/timewaste.png',
 		"upgrade" = 'icons/UI_Icons/Achievements/Misc/upgrade.png',
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+		"clownking" = 'mod_celadon/_storge_icons/icons/assets/png/clownking.png',
+		"clownthanks" = 'mod_celadon/_storge_icons/icons/assets/png/clownthanks.png',
+// [/CELADON-ADD]
 		"rule8" = 'icons/UI_Icons/Achievements/Misc/rule8.png',
 		"snail" = 'icons/UI_Icons/Achievements/Misc/snail.png',
 		"mining" = 'icons/UI_Icons/Achievements/Skills/mining.png',

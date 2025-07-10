@@ -141,6 +141,12 @@
 	mood_change = 3
 	timeout = 5 MINUTES
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+/datum/mood_event/clownshoes
+	description = span_nicegreen("The shoes are a clown's legacy, I never want to take them off!")
+	mood_change = 5
+// [/CELADON-ADD]
+
 /datum/mood_event/sacrifice_good
 	description =span_nicegreen("The gods are pleased with this offering!")
 	mood_change = 5

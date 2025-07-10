@@ -265,6 +265,12 @@ Turf and target are separate in case you want to teleport some distance from a t
 			switch(role)
 				if("human")
 					newname = random_unique_name(gender)
+// [CELADON-ADD] - RETURN_CONTENT - CLOWN_RETURN_CONTENT
+				if("clown")
+					newname = pick(GLOB.clown_names)
+				if("mime")
+					newname = pick(GLOB.mime_names)
+// [/CELADON-ADD]
 				if("ai")
 					newname = pick(GLOB.ai_names)
 				else

@@ -43,8 +43,6 @@
 		/obj/item/clothing/suit/cheongsam_blue = 1,
 		/obj/item/clothing/head/powdered_wig = 1,
 		/obj/item/clothing/glasses/sunglasses/garb = 2,
-		// [/CELADON-ADD]
-		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 		/obj/item/clothing/under/rank/civilian/clown/blue = 1,
 		/obj/item/clothing/under/rank/civilian/clown/green = 1,
 		/obj/item/clothing/under/rank/civilian/clown/yellow = 1,
@@ -98,6 +96,10 @@
 		/obj/item/clothing/under/dress/sundress = 1,
 		/obj/item/staff/broom = 1,
 		/obj/item/staff = 3,
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+		/obj/item/clothing/under/rank/civilian/mime/sexy = 1,
+		/obj/item/clothing/under/rank/civilian/mime/skirt = 1,
+// [/CELADON-ADD]
 		/obj/item/clothing/mask/rat/bat = 1,
 		/obj/item/clothing/mask/rat/bee = 1,
 		/obj/item/clothing/mask/rat/bear = 1,
@@ -127,15 +129,12 @@
 		/obj/item/clothing/glasses/blindfold = 1,
 		/obj/item/clothing/mask/muzzle = 2)
 	premium = list(
-		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 		/obj/item/clothing/under/rank/civilian/clown/rainbow = 1,
 		/obj/item/clothing/suit/chaplainsuit/clownpriest = 1,
 		/obj/item/clothing/head/clownmitre = 1,
-		// [/CELADON-ADD]
-		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/item/clothing/shoes/roman = 1,
 		/obj/item/clothing/suit/hooded/mysticrobe = 1,
-		// [/CELADON-ADD]
 		/obj/item/clothing/suit/pirate/captain = 2,
 		/obj/item/clothing/head/pirate/captain = 2,
 		/obj/item/clothing/head/helmet/roman/fake = 1,
@@ -143,7 +142,6 @@
 		/obj/item/clothing/under/costume/roman = 1,
 		/obj/item/shield/riot/roman/fake = 1,
 		/obj/item/skub = 1)
-	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 	contraband = list(
 		/obj/item/clothing/suit/judgerobe = 1,
 		/obj/item/clothing/accessory/fan_mime_pin = 1,

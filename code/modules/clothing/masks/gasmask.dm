@@ -91,6 +91,115 @@
 	desc = "A close-fitting tactical mask that can be connected to an air supply. This one has an integrated voice changer."
 	var/voice_change = 1
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+/obj/item/clothing/mask/gas/clown_hat
+	name = "clown wig and mask"
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/masks.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/mask.dmi'
+	desc = "A true prankster's facial attire. A clown is incomplete without his wig and mask."
+	clothing_flags = ALLOWINTERNALS
+	icon_state = "clown"
+	item_state = "clown_hat"
+	dye_color = "clown"
+	w_class = WEIGHT_CLASS_SMALL
+	flags_cover = MASKCOVERSEYES
+	resistance_flags = FLAMMABLE
+	actions_types = list(/datum/action/item_action/adjust)
+	dog_fashion = /datum/dog_fashion/head/clown
+	var/list/clownmask_designs = list()
+
+/obj/item/clothing/mask/gas/clown_hat/Initialize(mapload)
+	.=..()
+	clownmask_designs = list(
+		"True Form" = image(icon = src.icon, icon_state = "clown"),
+		"The Feminist" = image(icon = src.icon, icon_state = "sexyclown"),
+		"The Jester" = image(icon = src.icon, icon_state = "chaos"),
+		"The Madman" = image(icon = src.icon, icon_state = "joker"),
+		"The Rainbow Color" = image(icon = src.icon, icon_state = "rainbow")
+		)
+
+/obj/item/clothing/mask/gas/clown_hat/ui_action_click(mob/user)
+	if(!istype(user) || user.incapacitated())
+		return
+
+	var/list/options = list()
+	options["True Form"] = "clown"
+	options["The Feminist"] = "sexyclown"
+	options["The Madman"] = "joker"
+	options["The Rainbow Color"] ="rainbow"
+	options["The Jester"] ="chaos" //Nepeta33Leijon is holding me captive and forced me to help with this please send help
+
+	var/choice = show_radial_menu(user,src, clownmask_designs, custom_check = FALSE, radius = 36, require_near = TRUE)
+	if(!choice)
+		return FALSE
+
+	if(src && choice && !user.incapacitated() && in_range(user,src))
+		icon_state = options[choice]
+		user.update_inv_wear_mask()
+		for(var/X in actions)
+			var/datum/action/A = X
+			A.UpdateButtonIcon()
+		to_chat(user, span_notice("Your Clown Mask has now morphed into [choice], all praise the Honkmother!"))
+		return TRUE
+
+/obj/item/clothing/mask/gas/sexyclown
+	name = "sexy-clown wig and mask"
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/masks.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/mask.dmi'
+	desc = "A feminine clown mask for the dabbling crossdressers or female entertainers."
+	clothing_flags = ALLOWINTERNALS
+	icon_state = "sexyclown"
+	item_state = "sexyclown"
+	flags_cover = MASKCOVERSEYES
+	resistance_flags = FLAMMABLE
+
+/obj/item/clothing/mask/gas/mime
+	name = "mime mask"
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/masks.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/mask.dmi'
+	desc = "The traditional mime's mask. It has an eerie facial posture."
+	clothing_flags = ALLOWINTERNALS
+	icon_state = "mime"
+	item_state = "mime"
+	w_class = WEIGHT_CLASS_SMALL
+	flags_cover = MASKCOVERSEYES
+	resistance_flags = FLAMMABLE
+	actions_types = list(/datum/action/item_action/adjust)
+	var/list/mimemask_designs = list()
+
+/obj/item/clothing/mask/gas/mime/Initialize(mapload)
+	.=..()
+	mimemask_designs = list(
+		"Blanc" = image(icon = src.icon, icon_state = "mime"),
+		"Excité" = image(icon = src.icon, icon_state = "sexymime"),
+		"Triste" = image(icon = src.icon, icon_state = "sadmime"),
+		"Effrayé" = image(icon = src.icon, icon_state = "scaredmime")
+		)
+
+/obj/item/clothing/mask/gas/mime/ui_action_click(mob/user)
+	if(!istype(user) || user.incapacitated())
+		return
+
+	var/list/options = list()
+	options["Blanc"] = "mime"
+	options["Triste"] = "sadmime"
+	options["Effrayé"] = "scaredmime"
+	options["Excité"] ="sexymime"
+
+	var/choice = show_radial_menu(user,src, mimemask_designs, custom_check = FALSE, radius = 36, require_near = TRUE)
+	if(!choice)
+		return FALSE
+
+	if(src && choice && !user.incapacitated() && in_range(user,src))
+		icon_state = options[choice]
+		user.update_inv_wear_mask()
+		for(var/X in actions)
+			var/datum/action/A = X
+			A.UpdateButtonIcon()
+		to_chat(user, span_notice("Your Mime Mask has now morphed into [choice]!"))
+		return TRUE
+// [/CELADON-ADD]
+
 /obj/item/clothing/mask/gas/monkeymask
 	name = "monkey mask"
 	desc = "A mask used when acting as a monkey."
@@ -99,6 +208,18 @@
 	item_state = "monkeymask"
 	flags_cover = MASKCOVERSEYES
 	resistance_flags = FLAMMABLE
+
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+/obj/item/clothing/mask/gas/sexymime
+	name = "sexy mime mask"
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/masks.dmi'
+	desc = "A traditional female mime's mask."
+	clothing_flags = ALLOWINTERNALS
+	icon_state = "sexymime"
+	item_state = "sexymime"
+	flags_cover = MASKCOVERSEYES
+	resistance_flags = FLAMMABLE
+// [/CELADON-ADD]
 
 /obj/item/clothing/mask/gas/cyborg
 	name = "cyborg visor"

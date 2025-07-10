@@ -141,6 +141,18 @@
 	desc = "It's a small world after all."
 	add_mutations = list(DWARFISM)
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+/obj/item/dnainjector/clumsymut
+	name = "\improper DNA injector (Clumsy)"
+	desc = "Makes clown minions."
+	add_mutations = list(CLOWNMUT)
+
+/obj/item/dnainjector/anticlumsy
+	name = "\improper DNA injector (Anti-Clumsy)"
+	desc = "Apply this for Security Clown."
+	remove_mutations = list(CLOWNMUT)
+// [/CELADON-ADD]S
+
 /obj/item/dnainjector/antitour
 	name = "\improper DNA injector (Anti-Tour.)"
 	desc = "Will cure Tourette's."

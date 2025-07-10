@@ -140,6 +140,12 @@
 	phobia_type = "security"
 	random_gain = FALSE
 
+// [CELADON-ADD] - RETURN_CONTENT - CLOWN_RETURN_CONTENT
+/datum/brain_trauma/mild/phobia/clowns
+	phobia_type = "clowns"
+	random_gain = FALSE
+// [/CELADON-ADD]
+
 /datum/brain_trauma/mild/phobia/greytide
 	phobia_type = "greytide"
 	random_gain = FALSE

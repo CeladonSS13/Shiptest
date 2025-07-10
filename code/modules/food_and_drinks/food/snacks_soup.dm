@@ -66,6 +66,17 @@
 	tastes = list("soy sauce and rubber" = 1)
 	foodtype = MEAT
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+/obj/item/reagent_containers/food/snacks/soup/clownstears
+	name = "clown's tears"
+	desc = "A bowl of a mix of ingredients that invokes the immediate laughter of the viewer. It's too difficult to visually describe it without being overcome with fits of laughing."
+	icon_state = "clownstears"
+	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/banana = 5, /datum/reagent/consumable/nutriment/vitamin = 8, /datum/reagent/consumable/clownstears = 10)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/banana = 5, /datum/reagent/water = 5, /datum/reagent/consumable/nutriment/vitamin = 8, /datum/reagent/consumable/clownstears = 10)
+	tastes = list("laughter" = 1)
+	foodtype = FRUIT | SUGAR
+// [/CELADON-ADD]
+
 /obj/item/reagent_containers/food/snacks/soup/vegetable
 	name = "vegetable soup"
 	desc = "A bowl of soup, consisting of vegetable broth and cooked vegetables."

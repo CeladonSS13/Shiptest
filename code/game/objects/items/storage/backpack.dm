@@ -100,6 +100,17 @@
 	icon_state = "explorerpack"
 	item_state = "explorerpack"
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+/obj/item/storage/backpack/mime
+	name = "Parcel Parceaux"
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpacks.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpack_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpack_righthand.dmi'
+	desc = "A silent backpack made for those silent workers. Silence Co."
+	icon_state = "mimepack"
+	item_state = "mimepack"
+// [/CELADON-ADD]
+
 /obj/item/storage/backpack/medic
 	name = "medical backpack"
 	desc = "It's a backpack especially designed for use in a sterile environment."
@@ -182,6 +193,15 @@
 	desc = "A spacious backpack with lots of pockets, worn by Janitors of an Emergency Response Team."
 	icon_state = "ert_janitor"
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+/obj/item/storage/backpack/ert/clown
+	name = "emergency response team clown backpack"
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpacks.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpack_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpack_righthand.dmi'
+	desc = "A spacious backpack with lots of pockets, worn by Clowns of an Emergency Response Team."
+	icon_state = "ert_clown"
+// [/CELADON-ADD]
 /*
  * Satchel Types
  */
@@ -503,6 +523,17 @@
 	new /obj/item/wirecutters(src)
 	new /obj/item/multitool(src)
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+/obj/item/storage/backpack/duffelbag/clown
+	name = "clown's duffel bag"
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpacks.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpack_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpack_righthand.dmi'
+	desc = "A large duffel bag for holding lots of funny gags!"
+	icon_state = "duffel-clown"
+	item_state = "duffel-clown"
+// [/CELADON-ADD]
+
 /obj/item/storage/backpack/fireproof
 	resistance_flags = FIRE_PROOF
 
@@ -661,6 +692,23 @@
 	new /obj/item/reagent_containers/food/drinks/bottle/vodka/badminka(src)
 	new /obj/item/reagent_containers/hypospray/medipen/stimulants(src)
 	new /obj/item/grenade/syndieminibomb(src)
+
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
+// For ClownOps.
+/obj/item/storage/backpack/duffelbag/clown/syndie/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	slowdown = 0
+	STR.silent = TRUE
+
+/obj/item/storage/backpack/duffelbag/clown/syndie/PopulateContents()
+	new /obj/item/clothing/under/rank/civilian/clown(src)
+	new /obj/item/clothing/shoes/clown_shoes(src)
+	new /obj/item/pda/clown(src)
+	new /obj/item/clothing/mask/gas/clown_hat(src)
+	new /obj/item/bikehorn(src)
+	new /obj/item/implanter/sad_trombone(src)
+// [/CELADON-ADD]
 
 /obj/item/storage/backpack/henchmen
 	name = "wings"

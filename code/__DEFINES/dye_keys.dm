@@ -29,3 +29,7 @@
 #define DYE_REDCOAT "redcoat"
 #define DYE_CHAP "chap"
 #define DYE_CENTCOM "centcom"
+// [CELADON-ADD] - RETURN_CONTENT - CLOWN_RETURN_CONTENT
+#define DYE_CLOWN "clown"
+#define DYE_MIME "mime"
+// [/CELADON-ADD]

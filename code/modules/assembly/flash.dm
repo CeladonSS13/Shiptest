@@ -42,6 +42,14 @@
 		. += flashing_overlay
 		attached_overlays += flashing_overlay
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+/obj/item/assembly/flash/proc/clown_check(mob/living/carbon/human/user)
+	if(HAS_TRAIT(user, TRAIT_CLUMSY) && prob(50))
+		flash_carbon(user, user, 15, 0)
+		return FALSE
+	return TRUE
+// [/CELADON-ADD]
+
 /obj/item/assembly/flash/proc/burn_out() //Made so you can override it if you want to have an invincible flash from R&D or something.
 	if(!burnt_out)
 		burnt_out = TRUE
@@ -95,7 +103,7 @@
 	times_used++
 	flash_recharge()
 	update_icon(ALL, TRUE)
-	if(user)
+	if(user && !clown_check(user))	//if(user)	// [CELADON-EDIT] - CELADON_RETURN_CONTENT_CLOWNS
 		return FALSE
 	return TRUE
 

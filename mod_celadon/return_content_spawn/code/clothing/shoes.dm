@@ -31,6 +31,8 @@
 	name = "clown shoes"
 	icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/shoes.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/feet.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/shoes_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/shoes_righthand.dmi'
 	icon_state = "clown"
 	item_state = "clown_shoes"
 	slowdown = SHOES_SLOWDOWN+1

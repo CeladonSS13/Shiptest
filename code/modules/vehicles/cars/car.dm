@@ -17,6 +17,10 @@
 /obj/vehicle/sealed/car/generate_actions()
 	. = ..()
 	initialize_controller_action_type(/datum/action/vehicle/sealed/remove_key, VEHICLE_CONTROL_DRIVE)
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+	if(car_traits & CAN_KIDNAP)
+		initialize_controller_action_type(/datum/action/vehicle/sealed/DumpKidnappedMobs, VEHICLE_CONTROL_DRIVE)
+// [/CELADON-ADD]
 
 /obj/vehicle/sealed/car/driver_move(mob/living/user, direction)
 	if(key_type && !is_key(inserted_key))

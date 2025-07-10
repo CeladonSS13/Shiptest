@@ -8,6 +8,10 @@
 #define MEDAL_PULSE "Jackpot"
 #define MEDAL_TIMEWASTE "Overextended The Joke"
 #define MEDAL_RODSUPLEX "Feat of Strength"
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+#define MEDAL_CLOWNCARKING "Round and Full"
+#define MEDAL_THANKSALOT "The Best Driver"
+// [/CELADON-ADD]
 #define MEDAL_HELBITALJANKEN "Hel-bent on Winning"
 #define MEDAL_MATERIALCRAFT "Getting an Upgrade"
 #define MEDAL_DISKPLEASE "Disk, Please!"

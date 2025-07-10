@@ -79,7 +79,7 @@ GLOBAL_LIST_INIT(freqcolor, list())
 * If FALSE, this check will always fail if the movable has a mind and is miming.
 * if TRUE, we will check if the movable can speak irregardless
 */
-/atom/movable/proc/can_speak()
+/atom/movable/proc/can_speak(allow_mimes = FALSE)	// /atom/movable/proc/can_speak()	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 	//SHOULD_BE_PURE(TRUE)
 	return !HAS_TRAIT(src, TRAIT_MUTE)
 
