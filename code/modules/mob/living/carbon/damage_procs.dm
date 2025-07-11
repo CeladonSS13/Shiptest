@@ -53,19 +53,28 @@
 
 
 //These procs fetch a cumulative total damage from all bodyparts
-/mob/living/carbon/getBruteLoss(ignore_integrity = TRUE)
+// [CELADON-EDIT] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
+// /mob/living/carbon/getBruteLoss(ignore_integrity = TRUE)	// CELADON-EDIT - ORIGINAL
+/mob/living/carbon/getBruteLoss()
+// [/CELADON-EDIT]
 	var/amount = 0
 	for(var/obj/item/bodypart/BP as anything in bodyparts)
-		if (!ignore_integrity && BP.get_curable_damage() <= 0)
-			continue
+// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
+//		if (!ignore_integrity && BP.get_curable_damage() <= 0)
+//			continue
+// [/CELADON-REMOVE]
 		amount += BP.brute_dam
 	return amount
-
-/mob/living/carbon/getFireLoss(ignore_integrity = TRUE)
+// [CELADON-EDIT] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
+// /mob/living/carbon/getFireLoss(ignore_integrity = TRUE)	// CELADON-EDIT - ORIGINAL
+/mob/living/carbon/getFireLoss()
+// [/CELADON-EDIT]
 	var/amount = 0
 	for(var/obj/item/bodypart/BP as anything in bodyparts)
-		if (!ignore_integrity && BP.get_curable_damage() <= 0)
-			continue
+// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
+//		if (!ignore_integrity && BP.get_curable_damage() <= 0)
+//			continue
+// [/CELADON-REMOVE]
 		amount += BP.burn_dam
 	return amount
 
