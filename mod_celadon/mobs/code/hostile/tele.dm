@@ -14,6 +14,8 @@
 	var/spawn_delay = 600
 	var/turn_on = 0
 	var/auto_spawn = 1
+	armour_penetration = 8
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 50, "acid" = 50)
 
 /mob/living/simple_animal/hostile/hivebot/tele/New()
 	..()
@@ -30,13 +32,13 @@
 		bot_amt--
 		switch(bot_type)
 			if("norm")
-				var/mob/living/simple_animal/hostile/hivebot/H = new /mob/living/simple_animal/hostile/hivebot(get_turf(src))
+				var/mob/living/basic/hivebot/H = new /mob/living/basic/hivebot(get_turf(src))
 				H.faction = faction
 			if("range")
-				var/mob/living/simple_animal/hostile/hivebot/range/R = new /mob/living/simple_animal/hostile/hivebot/range(get_turf(src))
+				var/mob/living/basic/hivebot/range/R = new /mob/living/basic/hivebot/range(get_turf(src))
 				R.faction = faction
 			if("rapid")
-				var/mob/living/simple_animal/hostile/hivebot/rapid/F = new /mob/living/simple_animal/hostile/hivebot/rapid(get_turf(src))
+				var/mob/living/basic/hivebot/rapid/F = new /mob/living/basic/hivebot/rapid(get_turf(src))
 				F.faction = faction
 	spawn(100)
 		qdel(src)
