@@ -15,7 +15,7 @@
 		return
 
 	to_chat(user, span_boldannounce("You start skimming through [src], and suddenly your mind is filled with arabic symbols."))
-	user.grant_language(/datum/language/elysm, TRUE, TRUE, LANGUAGE_MIND)
+	user.grant_language(/datum/language/elysm, source = LANGUAGE_MIND)
 
 
 /obj/item/elysm_manual/attack(mob/living/M, mob/living/user)
@@ -33,7 +33,7 @@
 		M.visible_message(span_danger("[user] beats [M] over the head with [src]!"), span_userdanger("[user] beats you over the head with [src]!"), span_hear("You hear smacking."))
 	else
 		M.visible_message(span_notice("[user] teaches [M] by beating [M.p_them()] over the head with [src]!"), span_boldnotice("As [user] hits you with [src], arabic symbols flow through your mind."), span_hear("You hear smacking."))
-		M.grant_language(/datum/language/elysm, TRUE, TRUE, LANGUAGE_MIND)
+		M.grant_language(/datum/language/elysm, source = LANGUAGE_MIND)
 
 /obj/item/alquadim_manual
 	name = "Book of Alquadim-Elysm"
@@ -52,7 +52,7 @@
 		return
 
 	to_chat(user, span_boldannounce("You start skimming through [src], and suddenly your mind is filled with arabic symbols."))
-	user.grant_language(/datum/language/alquadim, TRUE, TRUE, LANGUAGE_MIND)
+	user.grant_language(/datum/language/alquadim, source = LANGUAGE_MIND)
 
 
 /obj/item/alquadim_manual/attack(mob/living/M, mob/living/user)
@@ -70,7 +70,7 @@
 		M.visible_message(span_danger("[user] beats [M] over the head with [src]!"), span_userdanger("[user] beats you over the head with [src]!"), span_hear("You hear smacking."))
 	else
 		M.visible_message(span_notice("[user] teaches [M] by beating [M.p_them()] over the head with [src]!"), span_boldnotice("As [user] hits you with [src], arabic symbols flow through your mind."), span_hear("You hear smacking."))
-		M.grant_language(/datum/language/alquadim, TRUE, TRUE, LANGUAGE_MIND)
+		M.grant_language(/datum/language/alquadim, source = LANGUAGE_MIND)
 
 /obj/item/thayos_manual
 	name = "Book of Thayoss"
@@ -89,7 +89,7 @@
 		return
 
 	to_chat(user, span_boldannounce("You start skimming through [src], and suddenly your mind is filled with japanese symbols."))
-	user.grant_language(/datum/language/thayoss, TRUE, TRUE, LANGUAGE_MIND)
+	user.grant_language(/datum/language/thayoss, source = LANGUAGE_MIND)
 
 
 /obj/item/thayos_manual/attack(mob/living/M, mob/living/user)
@@ -107,7 +107,7 @@
 		M.visible_message(span_danger("[user] beats [M] over the head with [src]!"), span_userdanger("[user] beats you over the head with [src]!"), span_hear("You hear smacking."))
 	else
 		M.visible_message(span_notice("[user] teaches [M] by beating [M.p_them()] over the head with [src]!"), span_boldnotice("As [user] hits you with [src], japanese symbols flow through your mind."), span_hear("You hear smacking."))
-		M.grant_language(/datum/language/thayoss, TRUE, TRUE, LANGUAGE_MIND)
+		M.grant_language(/datum/language/thayoss, source = LANGUAGE_MIND)
 
 /obj/item/fuyo_manual
 	name = "Book of Fuyo"
@@ -126,7 +126,7 @@
 		return
 
 	to_chat(user, span_boldannounce("You start skimming through [src], and suddenly your mind is filled with chinese symbols."))
-	user.grant_language(/datum/language/fuyo, TRUE, TRUE, LANGUAGE_MIND)
+	user.grant_language(/datum/language/fuyo, source = LANGUAGE_MIND)
 
 
 /obj/item/fuyo_manual/attack(mob/living/M, mob/living/user)
@@ -144,7 +144,7 @@
 		M.visible_message(span_danger("[user] beats [M] over the head with [src]!"), span_userdanger("[user] beats you over the head with [src]!"), span_hear("You hear smacking."))
 	else
 		M.visible_message(span_notice("[user] teaches [M] by beating [M.p_them()] over the head with [src]!"), span_boldnotice("As [user] hits you with [src], chinese symbols flow through your mind."), span_hear("You hear smacking."))
-		M.grant_language(/datum/language/fuyo, TRUE, TRUE, LANGUAGE_MIND)
+		M.grant_language(/datum/language/fuyo, source = LANGUAGE_MIND)
 
 /obj/item/paper/fluff/claymore
 	name = "PRODUCT USAGE GUIDE"

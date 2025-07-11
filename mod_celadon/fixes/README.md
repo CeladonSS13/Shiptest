@@ -97,6 +97,8 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code/modules/missions/outpost/research_mission.dm` - Окргуление координат
 
+- EDIT: `code/modules/clothing/head/helmet.dm` - Отображение оверлеев
+
 - ADD: `code/datums/looping_sounds/machinery_sounds.dm` - Гравген во включённом состоянии жужжит.
 - ADD: `code/game/machinery/shuttle/ship_gravity.dm` - Гравген во включённом состоянии слегка светится, жужжит, а "интерфейс" светится в темноте. А также добавлено взаимодействие с ЕМП, при котором с 50% шансом он переключится.
 - ADD: `code/game/mecha/equipment/tools/mining_tools.dm` Мех с активной дрелью теперь копает камень.
@@ -117,9 +119,10 @@ Weebstick (Красная катана) теперь нельзя сломать
 - `mod_celadon/fixes/code/research_mission.dm` - вроде перезаписывает
 
 <!-- fax_name -->
+<!-- 
 - `code\controllers\subsystem\overmap.dm`: `proc/spawn_ship_at_start`,
 - `code\modules\paperwork\fax.dm`: `proc/connect_to_shuttle`
-
+ -->
 <!--
   Если ты добавлял новый модульный оверрайд, его нужно указать здесь.
   Здесь указываются оверрайды в твоём моде и папке `_master_files`

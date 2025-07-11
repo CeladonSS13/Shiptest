@@ -2,8 +2,10 @@
 	icon_state = "refill_clothes"
 
 /obj/machinery/vending/wardrobe
-	default_price = 200
-	extra_price = 500
+	// [CELADON-REMOVE] - CELADON_ECONOMY - Вынесено в модуль. Иначе оверайд будет
+	// default_price = 200
+	// extra_price = 500
+	// [/CELADON-REMOVE]
 	input_display_header = "Returned Clothing"
 	light_mask = "wardrobe-light-mask"
 

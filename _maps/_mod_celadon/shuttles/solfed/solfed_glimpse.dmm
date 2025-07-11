@@ -2527,6 +2527,15 @@
 /obj/item/clothing/under/solfed/formal,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
+"Uc" = (
+/obj/effect/spawner/structure/window/shuttle,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "glimpse_windows";
+	name = "External Shutters";
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
 "Ud" = (
 /obj/structure/railing/wood,
 /obj/structure/chair/comfy/blue/corpo/directional/east,
@@ -3435,10 +3444,10 @@ zH
 zH
 sN
 KH
-MN
-MN
-MN
-MN
+Uc
+Uc
+Uc
+Uc
 GY
 GY
 MN

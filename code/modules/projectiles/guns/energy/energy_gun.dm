@@ -44,7 +44,6 @@
 	name = "SL AL-655 'Hades' energy rifle"
 	desc = "The standard issue rifle of Nanotrasen's Security Forces. Most have been put in long term storage following the ICW, and usually aren't issued to low ranking security divisions."
 	icon_state = "energytac"
-	item_state = "energytac50"
 	ammo_x_offset = 2
 	charge_sections = 5
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/assault/sharplite, /obj/item/ammo_casing/energy/disabler/sharplite)

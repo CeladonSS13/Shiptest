@@ -210,7 +210,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow/tendril = 20,
 		// [/CELADON-ADD]
 		/mob/living/simple_animal/hostile/asteroid/wolf = 30,
-		/mob/living/simple_animal/hostile/asteroid/polarbear = 30,
+		// /mob/living/simple_animal/hostile/asteroid/polarbear = 30, // [CELADON-REMOVE] - удаляем старый код их
 		/mob/living/simple_animal/hostile/asteroid/wolf = 40,
 		/mob/living/basic/bear/polar = 40,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow/nest = 20,

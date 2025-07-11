@@ -25,6 +25,7 @@ ID мода: CELADON_RESPRITE
 - Камеры охраны заменены на Эрисовские.
 - Ковбойские сапоги заменены на новые.
 - Мусорки заменены на новые.
+- Подняты спрайты шлемов под оверлеи
 - Заменены спрайты шлемов и масок для сарати
 - Заменены спрайты, рад коллекторов, эмиттеров, генераторов поля, генераторы электрополя, луч между генераторами поля
 <!--
@@ -95,6 +96,7 @@ ID мода: CELADON_RESPRITE
 - `mod_celadon/_storge_icons/icons/helms_snouted.dmi`
 - `mod_celadon/_storge_icons/icons/mask_snouted.dmi`
 - `mod_celadon/_storge_icons/icons`
+- `mod_celadon/_storge_icons/icons/items/clothing/head/helmet_celadon.dmi`
 - `mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo_boxes.dmi`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
@@ -105,7 +107,7 @@ ID мода: CELADON_RESPRITE
 
 ### Авторы:
 
-MrCat15352, Yata9arsu, Kottason, RalseiDreemuurr
+MrCat15352, Yata9arsu, Kottason, RalseiDreemuurr, KOCMOHABT
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.

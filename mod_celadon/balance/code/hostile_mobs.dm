@@ -214,24 +214,6 @@ GLOBAL_LIST_INIT(onecardinalwest, WEST)
 	armour_penetration = 15
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 50, "bio" = 20, "rad" = 20, "fire" = 20, "acid" = 20)
 
-// /mob/living/simple_animal/hostile/asteroid/lobstrosity/beach
-
-
-/mob/living/simple_animal/hostile/asteroid/polarbear
-	move_to_delay = 6
-	armour_penetration = 25
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 50, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
-
-// /mob/living/simple_animal/hostile/asteroid/polarbear/lesser
-
-/mob/living/simple_animal/hostile/asteroid/polarbear/warrior
-	move_to_delay = 4
-	maxHealth = 200
-	health = 200
-	armour_penetration = 35
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 50, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
-
-
 /mob/living/simple_animal/hostile/asteroid/wolf
 	move_to_delay = 13
 	ranged_cooldown_time = 45
@@ -327,23 +309,30 @@ GLOBAL_LIST_INIT(onecardinalwest, WEST)
 
 // /mob/living/simple_animal/hostile/alien/maid
 
+/// MARK: BEAR
 
-/mob/living/simple_animal/hostile/bear
+/mob/living/basic/bear
 	armour_penetration = 20
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 10)
 
-/mob/living/simple_animal/hostile/bear/Hudson
+// /mob/living/basic/bear/hudson
 
-/mob/living/simple_animal/hostile/bear/snow
+// /mob/living/basic/bear/cave
+
+/mob/living/basic/bear/polar
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 10, "bio" = 10, "rad" = 10, "fire" = 40, "acid" = 10)
 
-/mob/living/simple_animal/hostile/bear/frontier
+/mob/living/basic/bear/frontier
 	armour_penetration = 35
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 10, "rad" = 15, "fire" = 30, "acid" = 30)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 35, "bomb" = 35, "bio" = 10, "rad" = 15, "fire" = 35, "acid" = 35)
 
-// /mob/living/simple_animal/hostile/bear/cave
+/mob/living/basic/bear/polar/warrior
+	armour_penetration = 40
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 40, "bio" = 10, "rad" = 40, "fire" = 40, "acid" = 40)
 
-// /mob/living/simple_animal/hostile/bear/butter
+// /mob/living/basic/bear/polar/cave
+
+// /mob/living/basic/bear/polar/butter
 
 
 // /mob/living/simple_animal/hostile/poison/bees

@@ -1245,14 +1245,10 @@
 "aMq" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/vending/wardrobe/viro_wardrobe{
-	pixel_x = 15;
-	default_price = 700;
-	extra_price = 900
+	pixel_x = 15
 	},
 /obj/machinery/vending/wardrobe/chem_wardrobe{
-	pixel_x = -7;
-	default_price = 700;
-	extra_price = 900
+	pixel_x = -7
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/dop_zone_2)
@@ -8557,9 +8553,7 @@
 	pixel_y = -32
 	},
 /obj/machinery/vending/wardrobe/curator_wardrobe{
-	pixel_x = -5;
-	default_price = 700;
-	extra_price = 900
+	pixel_x = -5
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/dop_zone_2)
@@ -16161,7 +16155,7 @@
 "jqt" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/bear/frontier{
+/mob/living/basic/bear/frontier{
 	name = "Billy guard";
 	health = 1200
 	},
@@ -16770,9 +16764,7 @@
 /area/outpost/fraction/inteq)
 "jNm" = (
 /obj/machinery/vending/clothing{
-	all_items_free = 1;
-	default_price = 120;
-	extra_price = 240
+	all_items_free = 1
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/dop_zone_2)
@@ -16885,14 +16877,10 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/directional/south,
 /obj/machinery/vending/wardrobe/law_wardrobe{
-	pixel_x = -16;
-	default_price = 700;
-	extra_price = 900
+	pixel_x = -16
 	},
 /obj/machinery/vending/wardrobe/det_wardrobe{
-	pixel_x = 5;
-	default_price = 700;
-	extra_price = 900
+	pixel_x = 5
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/dop_zone_2)
@@ -19358,13 +19346,6 @@
 /obj/machinery/recycler,
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/fraction/nanotrasen)
-"lwm" = (
-/obj/effect/turf_decal/corner_techfloor_gray/diagonal{
-	layer = 2.030
-	},
-/obj/structure/table/wood,
-/turf/open/floor/plasteel/dark,
-/area/outpost/cargo)
 "lwu" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 4
@@ -24982,10 +24963,7 @@
 /obj/structure/sign/poster/official/random{
 	pixel_x = -32
 	},
-/obj/machinery/vending/wardrobe/cargo_wardrobe{
-	default_price = 700;
-	extra_price = 900
-	},
+/obj/machinery/vending/wardrobe/cargo_wardrobe,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
@@ -25219,10 +25197,7 @@
 "oKH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/directional/west,
-/obj/machinery/vending/wardrobe/atmos_wardrobe{
-	default_price = 700;
-	extra_price = 900
-	},
+/obj/machinery/vending/wardrobe/atmos_wardrobe,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/dop_zone_2)
@@ -26496,9 +26471,7 @@
 /area/outpost/fraction/syndi/donkco_shop)
 "pAg" = (
 /obj/machinery/vending/wardrobe/gene_wardrobe{
-	pixel_x = 5;
-	default_price = 700;
-	extra_price = 900
+	pixel_x = 5
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/dop_zone_2)
@@ -28142,9 +28115,7 @@
 	network = list("outpostelysium")
 	},
 /obj/machinery/vending/wardrobe/hydro_wardrobe{
-	pixel_x = -1;
-	default_price = 700;
-	extra_price = 900
+	pixel_x = -1
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/dop_zone_2)
@@ -31600,9 +31571,7 @@
 /area/outpost/crew/lounge/cab_1)
 "sCc" = (
 /obj/machinery/vending/wardrobe/science_wardrobe{
-	pixel_x = 3;
-	default_price = 700;
-	extra_price = 900
+	pixel_x = 3
 	},
 /obj/machinery/light/dim/directional/south,
 /turf/open/floor/plasteel/tech,
@@ -34996,14 +34965,10 @@
 "uDL" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/vending/wardrobe/medi_wardrobe{
-	pixel_x = 13;
-	default_price = 700;
-	extra_price = 900
+	pixel_x = 13
 	},
 /obj/machinery/vending/wardrobe/robo_wardrobe{
-	pixel_x = -9;
-	default_price = 700;
-	extra_price = 900
+	pixel_x = -9
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/dop_zone_2)
@@ -35253,10 +35218,7 @@
 /obj/structure/sign/poster/official/random{
 	pixel_y = -32
 	},
-/obj/machinery/vending/wardrobe/chap_wardrobe{
-	default_price = 700;
-	extra_price = 900
-	},
+/obj/machinery/vending/wardrobe/chap_wardrobe,
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/dop_zone_2)
 "uLC" = (
@@ -39054,10 +39016,7 @@
 	pixel_x = -10;
 	network = list("outpostelysium")
 	},
-/obj/machinery/vending/wardrobe/engi_wardrobe{
-	default_price = 700;
-	extra_price = 900
-	},
+/obj/machinery/vending/wardrobe/engi_wardrobe,
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/dop_zone_2)
 "wTE" = (
@@ -41265,14 +41224,10 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/radio/intercom/directional/south,
 /obj/machinery/vending/wardrobe/chef_wardrobe{
-	pixel_x = 10;
-	default_price = 700;
-	extra_price = 900
+	pixel_x = 10
 	},
 /obj/machinery/vending/wardrobe/bar_wardrobe{
-	pixel_x = -11;
-	default_price = 700;
-	extra_price = 900
+	pixel_x = -11
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/dop_zone_2)
@@ -71930,8 +71885,8 @@ qtK
 tgL
 rfa
 nfo
-lwm
 svY
+cLD
 cLD
 aeD
 rfa

@@ -855,6 +855,9 @@
 		else
 			set_stat(CONSCIOUS)
 	diag_hud_set_status()
+// [CELADON-ADD] - FIX_DIAGNISTIC_HUD
+	diag_hud_set_health()
+// [/CELADON-ADD]
 	diag_hud_set_aishell()
 	update_health_hud()
 

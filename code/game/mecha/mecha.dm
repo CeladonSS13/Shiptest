@@ -551,7 +551,11 @@
 	return
 
 /obj/mecha/proc/handle_unique_action(mob/user)
-	mech_unique_action.Activate()
+// [CELADON-EDIT] - FIX_MECH
+//	mech_unique_action.Activate() // CELADON-EDIT - ORIGINAL
+	if(!mech_unique_action == null)
+		mech_unique_action.Activate()
+// [/CELADON-EDIT]
 	return
 
 
@@ -997,6 +1001,9 @@
 		else if(user.has_buckled_mobs())
 			to_chat(user, span_warning("You can't enter the exosuit with other creatures attached to you!"))
 		else
+// [CELADON-ADD] - FIX_MECH
+			ADD_TRAIT(M, TRAIT_HANDS_BLOCKED, VEHICLE_TRAIT)
+// [/CELADON-ADD]
 			moved_inside(user)
 	else
 		to_chat(user, span_warning("You stop entering the exosuit!"))
@@ -1004,6 +1011,10 @@
 // wake up should go off here
 /obj/mecha/proc/moved_inside(mob/living/carbon/human/H)
 	. = FALSE
+// [CELADON-ADD] - FIX_MECH
+	if(ishuman(H) && !Adjacent(H))
+		return FALSE
+// [/CELADON-ADD]
 	if(H && H.client && (H in range(1)))
 		occupant = H
 		H.forceMove(src)
@@ -1150,6 +1161,9 @@
 	silicon_pilot = FALSE
 	SEND_SIGNAL(src,COMSIG_MECH_EXITED,L)
 	if(mob_container.forceMove(newloc))//ejecting mob container
+// [CELADON-ADD] - FIX_MECH
+		REMOVE_TRAIT(L, TRAIT_HANDS_BLOCKED, VEHICLE_TRAIT)
+// [/CELADON-ADD]
 		log_message("[mob_container] moved out.", LOG_MECHA)
 		L << browse(null, "window=exosuit")
 
@@ -1331,4 +1345,8 @@ GLOBAL_VAR_INIT(year_integer, text2num(year)) // = 2013???
 /// Sets the direction of the mecha and all of its occcupents, required for FOV. Alternatively one could make a recursive contents registration and register topmost direction changes in the fov component
 /obj/mecha/proc/set_dir_mecha(new_dir)
 	setDir(new_dir)
-	occupant.setDir(new_dir)
+// [CELADON-EDIT] - FIX_MECH
+//	occupant.setDir(new_dir) // CELADON-EDIT - ORIGINAL
+	if(!occupant == null)
+		occupant.setDir(new_dir)
+// [/CELADON-EDIT]

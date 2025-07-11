@@ -288,47 +288,65 @@ mod_celadon/_storge_sounds
 
 Обязательно укажите все изменённые файлы в `README.md` мода.
 
-В этом случае применяются следующие обозначения:
-- **Добавление**
+Для комментирования строк используются двойные слеши `//`, блочное комментирование `/**/` ОЧЕНЬ редко используется, по причине того что гитхаб при мержи с апстримом игнорирует такой код, вызывая конфликты.
+
+Всего есть три основные операции для редактирования кода внутри *кор кода*: ADD, REMOVE, EDIT. Перед ними всегда ставится пометка проекта: CELADON. Затем через тире ставится ID, к какому модпаку принадлежат изменения. А после, но не обязательно через тире можно оставить комментарий или написать куда были перемещены изменения.
+
+КОНСТРУКЦИИ:
+```
+	// [CELADON-ADD] - ID_МОДПАКА - КОММЕНТАРИЙ_НЕОБЯЗАТЕЛЬНЫЙ
+	// [CELADON-REMOVE] - ID_МОДПАКА - КОММЕНТАРИЙ_КУДА_ПЕРЕМЕЩЕНО_ЕСЛИ_ЕСТЬ
+	// [CELADON-EDIT] - ID_МОДПАКА - КОММЕНТАРИЙ_НЕОБЯЗАТЕЛЬНЫЙ
+```
+
+Примеры использования:
+- **Добавление (одна строка)**
   ```dm
-  // [CELADON-ADD] - SHUTTLE_TOGGLE - (Необязательно - причина или комментарий)
+  var/adminEmergencyNoRecall = FALSE	// [CELADON-ADD] - SHUTTLE_TOGGLE - Причина или комментарий (Необязательно)
+  ```
+- **Добавление (множество строк)**
+  ```dm
+  // [CELADON-ADD] - SHUTTLE_TOGGLE - Причина или комментарий (Необязательно)
   var/adminEmergencyNoRecall = FALSE
   var/lastMode = SHUTTLE_IDLE
   var/lastCallTime = 6000
   // [/CELADON-ADD]
   ```
-- **Удаление**
+
+- **Удаление (одна строка)**
   ```dm
-  // [CELADON-REMOVE] - SHUTTLE_TOGGLE - (Необязательно - причина или комментарий)
-  /*
-  for(var/obj/docking_port/stationary/S in stationary)
-  if(S.id = id)
-    return S
-  */
+  // var/obj/docking_port/stationary/S	// [CELADON-REMOVE] - SHUTTLE_TOGGLE - Причина или комментарий (Необязательно)
+  ```
+- **Удаление (множество строк)**
+  ```dm
+  // [CELADON-REMOVE] - SHUTTLE_TOGGLE - Причина или комментарий (Необязательно)
+  //  for(var/obj/docking_port/stationary/S in stationary)
+  //  if(S.id = id)
+  //    return S
   // [/CELADON-REMOVE]
   ```
+
   Для удаления с перемещением в другой файл:
   ```dm
-  // [CELADON-REMOVE] - SHUTTLE_TOGGLE - (Перемещено в /mod_celadon/shuttle_toggle/randomverbs.dm)
-  /*
-  /client/proc/admin_call_shuttle()
-    set category = "Admin - Events"
-    set name = "Call Shuttle"
-
-    if(EMERGENCY_AT_LEAST_DOCKED)
-      return
-
-    ...
-
-    message_admins(span_adminnotice("[key_name_admin(usr)] admin-called the emergency shuttle."))
-    return
-  */
+  // [CELADON-REMOVE] - SHUTTLE_TOGGLE - Перемещено в /mod_celadon/shuttle_toggle/randomverbs.dm
+  //  /client/proc/admin_call_shuttle()
+  //    set category = "Admin - Events"
+  //    set name = "Call Shuttle"
+  
+  //    if(EMERGENCY_AT_LEAST_DOCKED)
+  //      return
+  
+  //    ...
+  
+  //    message_admins(span_adminnotice("[key_name_admin(usr)] admin-called the emergency shuttle."))
+  //    return
   // [/CELADON-REMOVE]
   ```
+
 - **Изменение**
   ```dm
-  // [CELADON-EDIT] - SHUTTLE_TOGGLE - (Необязательно - причина или комментарий)
-  // if(SHUTTLE_STRANDED, SHUTTLE_ESCAPE) // CELADON-EDIT - ORIGINAL
+  // [CELADON-EDIT] - SHUTTLE_TOGGLE - Причина или комментарий (Необязательно)
+  // if(SHUTTLE_STRANDED, SHUTTLE_ESCAPE) // ORIGINAL
   if(SHUTTLE_STRANDED, SHUTTLE_ESCAPE, SHUTTLE_DISABLED)
   // [/CELADON-EDIT]
       return 1

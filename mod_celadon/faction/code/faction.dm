@@ -20,7 +20,7 @@
 
 /datum/faction/elysium
 	name = FACTION_ELYSIUM
-	prefixes = list("EUSM", "EUSQ", "EUSF", "EUSR",)
+	prefixes = list("EUSM", "EUSQ", "EUSF", "EUSR", "ESV")
 
 /datum/faction/pirate
 	name = FACTION_PIRATES
