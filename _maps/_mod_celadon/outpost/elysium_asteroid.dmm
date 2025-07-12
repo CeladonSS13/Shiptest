@@ -2047,8 +2047,7 @@
 	dir = 10
 	},
 /obj/structure/toilet/secret{
-	dir = 4;
-	secret_type = /obj/item/storage/box/donkpockets/donkpocketgondola
+	dir = 4
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/library)
@@ -2279,11 +2278,11 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/outpost/crew/canteen)
 "fP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/chair{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/sepia,
 /area/outpost/crew/canteen)
 "fQ" = (
@@ -2933,7 +2932,6 @@
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/solfed)
 "hD" = (
-/obj/structure/table/wood,
 /obj/item/trash/plate{
 	pixel_x = 5;
 	pixel_y = 6
@@ -2941,6 +2939,7 @@
 /obj/item/reagent_containers/food/drinks/soda_cans/cola{
 	pixel_x = -5
 	},
+/obj/structure/table/wood,
 /turf/open/floor/plasteel/sepia,
 /area/outpost/crew/canteen)
 "hE" = (
@@ -10329,12 +10328,12 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/inteq)
 "zS" = (
-/obj/structure/chair{
-	dir = 4
-	},
 /obj/machinery/light/directional/north,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
+	},
+/obj/structure/chair{
+	dir = 4
 	},
 /turf/open/floor/plasteel/sepia,
 /area/outpost/crew/canteen)
@@ -12906,6 +12905,10 @@
 /obj/structure/lattice/clockwork,
 /turf/closed/indestructible/reinforced,
 /area/outpost/fraction/nanotrasen)
+"Gg" = (
+/obj/machinery/aug_manipulator,
+/turf/open/floor/plasteel,
+/area/outpost/vacant_rooms)
 "Gh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/contraband/random{
@@ -13818,21 +13821,24 @@
 	},
 /area/outpost/fraction/solfed)
 "Iq" = (
-/obj/structure/table/wood,
-/obj/item/trash/plate{
-	pixel_x = 1;
-	pixel_y = -3
-	},
-/obj/item/food/meatbun,
-/obj/structure/sign/poster/contraband/eat{
-	pixel_y = 32
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
+/obj/structure/sign/poster/contraband/eat{
+	pixel_y = 32
+	},
+/obj/structure/table/wood,
+/obj/item/trash/plate{
+	pixel_x = 8;
+	pixel_y = -2
+	},
+/obj/item/food/bread/meat{
+	pixel_y = 6;
+	pixel_x = 8
+	},
 /obj/item/reagent_containers/food/drinks/soda_cans/vimukti{
-	pixel_x = -8;
-	pixel_y = 9
+	pixel_x = -9;
+	pixel_y = 2
 	},
 /turf/open/floor/plasteel/sepia,
 /area/outpost/crew/canteen)
@@ -17850,8 +17856,7 @@
 /area/outpost/fraction/nanotrasen)
 "Sa" = (
 /obj/structure/toilet/secret{
-	dir = 4;
-	secret_type = /obj/item/storage/box/donkpockets/donkpocketgondola
+	dir = 4
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/outpost/crew/canteen)
@@ -19652,14 +19657,15 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/hallway/fore)
 "Wx" = (
-/obj/structure/chair{
-	dir = 8
-	},
 /obj/machinery/newscaster/directional/north{
 	pixel_y = 33
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair{
+	dir = 8
 	},
 /turf/open/floor/plasteel/sepia,
 /area/outpost/crew/canteen)
@@ -38182,7 +38188,7 @@ QT
 ps
 Ee
 Ee
-Ee
+Gg
 QT
 Nu
 jh
@@ -41727,7 +41733,7 @@ Sa
 gP
 Wx
 dQ
-GC
+AA
 gK
 hF
 GG
