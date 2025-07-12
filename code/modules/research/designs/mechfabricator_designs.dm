@@ -653,35 +653,6 @@
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
-// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
-/datum/design/mech_mousetrap_mortar
-	name = "H.O.N.K Mousetrap Mortar"
-	id = "mech_mousetrap_mortar"
-	build_type = MECHFAB
-	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/mousetrap_mortar
-	materials = list(/datum/material/iron=20000,/datum/material/hellstone=5000)
-	construction_time = 300
-	category = list("Exosuit Equipment")
-
-/datum/design/mech_banana_mortar
-	name = "H.O.N.K Banana Mortar"
-	id = "mech_banana_mortar"
-	build_type = MECHFAB
-	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/banana_mortar
-	materials = list(/datum/material/iron=20000,/datum/material/hellstone=5000)
-	construction_time = 300
-	category = list("Exosuit Equipment")
-
-/datum/design/mech_punching_glove
-	name = "Oingo Boingo Punch-face"
-	id = "mech_punching_face"
-	build_type = MECHFAB
-	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/punching_glove
-	materials = list(/datum/material/iron=20000,/datum/material/hellstone=7500)
-	construction_time = 400
-	category = list("Exosuit Equipment")
-// [CELADON-ADD]
-
 /////////////////////////////////////////
 //////////////Borg Upgrades//////////////
 /////////////////////////////////////////
