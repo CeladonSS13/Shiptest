@@ -343,6 +343,7 @@ weapons
 	contains = list(
 		/obj/item/mecha_parts/mecha_equipment/weapon/energy/mecha_kineticgun
 	)
+*/
 
 /*/datum/supply_pack/mech/weapon/carbine
 	name = "Downpour kit"
@@ -360,6 +361,7 @@ weapons
 		/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser
 	)*/
 
+/*
 /datum/supply_pack/mech/weapon/ion_cannon
 	name = "MK4 ion cannon kit"
 	desc = "Contains a heavy ion cannon for disabling technology in large blasts."
