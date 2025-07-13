@@ -340,19 +340,19 @@ MARK: 5.56x45
 */
 
 // /datum/supply_pack/faction/independent/ammo/box556_box
-// 	name = "5.56mm Ammo Box Crate"
+// 	name = "5.56x45mm Ammo Box Crate"
 // 	desc = "A box of standard 5.56x45mm ammo."
 // 	contains = list(/obj/item/storage/box/ammo/a556_box)
 // 	cost = 500
 
 // /datum/supply_pack/faction/independent/ammo/box556/a856_box
-// 	name = "5.56mm EP Ammo Box Crate"
+// 	name = "5.56x45mm EP Ammo Box Crate"
 // 	desc = "A box of enhanced performance 5.56x45mm ammo."
 // 	contains = list(/obj/item/storage/box/ammo/a556_box/a856)
 // 	cost = 650
 
 /*
-MARK: 7.62
+MARK: 7.62x40
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoa762_ammo_box
@@ -404,10 +404,6 @@ MARK: .300
 	desc = "Contains a ten-round .300 TRAC ammo box for sniper rifles such as the HP Scout."
 	contains = list(/obj/item/storage/box/ammo/a300/trac)
 	cost = 250 //TTD 310
-
-/*
-MARK: .308
-*/
 
 /datum/supply_pack/faction/independent/ammo/a308_box
 	name = ".308 Ammo Box Crate"
