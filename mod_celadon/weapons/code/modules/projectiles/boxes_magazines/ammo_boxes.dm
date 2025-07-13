@@ -7,7 +7,7 @@
 > 8x58
 > 410x76mm
 
-MARK: 5.56x45mm
+MARK: 5.56x45
 */
 
 //Коробки 5.56x45mm, плюс стандартная коробка так как ее нету в основном коде
@@ -171,7 +171,7 @@ MARK: 5.56x45mm
 	generate_items_inside(items_inside,src)
 
 //
-// MARK: 410x76mm
+// MARK: 410x76
 //
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/a410
