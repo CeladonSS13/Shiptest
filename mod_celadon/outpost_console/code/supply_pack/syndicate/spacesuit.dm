@@ -12,8 +12,8 @@
 	name = "Armored Space Suit Crate"
 	desc = "Contains one armored spacesuit. Generic enough to be manufactured and distributed by most ex-Coalition groups."
 	cost = 1500
-	contains = list(/obj/item/clothing/suit/space/syndicate/black,
-					/obj/item/clothing/head/helmet/space/syndicate/black)
+	contains = list(/obj/item/clothing/suit/space/syndicate,
+					/obj/item/clothing/head/helmet/space/syndicate)
 
 /datum/supply_pack/faction/syndicate/spacesuit/cmt_hardsuit
 	name = "CMT Hardsuit Crate"
