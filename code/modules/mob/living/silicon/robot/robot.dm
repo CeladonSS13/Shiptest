@@ -654,6 +654,12 @@
 	set_module = /obj/item/robot_module/security
 	icon_state = "sec"
 
+// [CELADIN-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+/mob/living/silicon/robot/modules/clown
+	set_module = /obj/item/robot_module/clown
+	icon_state = "clown"
+// [/CELADIN-ADD]
+
 /mob/living/silicon/robot/modules/peacekeeper
 	set_module = /obj/item/robot_module/peacekeeper
 	icon_state = "peace"

@@ -532,6 +532,10 @@
 	desc = "A large duffel bag for holding lots of funny gags!"
 	icon_state = "duffel-clown"
 	item_state = "duffel-clown"
+
+/obj/item/storage/backpack/duffelbag/clown/cream_pie/PopulateContents()
+	for(var/i in 1 to 10)
+		new /obj/item/reagent_containers/food/snacks/pie/cream(src)
 // [/CELADON-ADD]
 
 /obj/item/storage/backpack/fireproof
