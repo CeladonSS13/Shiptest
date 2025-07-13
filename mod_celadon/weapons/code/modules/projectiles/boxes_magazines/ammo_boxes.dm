@@ -39,17 +39,17 @@ MARK: 5.56x45
 	generate_items_inside(items_inside,src)
 
 /obj/item/storage/box/ammo/a556_box/a856
-	name = "A856 ammo box (5.56x45mm)"
-	desc = "A box of standard 5.56x45mm ammo."
-	icon_state = "a556_45box_big-up"
+	name = "ammo box (5.56x45mm EP)"
+	desc = "A box of 5.56x45mm enhanced-performance ammo."
+	icon_state = "a556_45box_big-ep"
 /obj/item/storage/box/ammo/a556_box/a856/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a556_45/a856 = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/storage/box/ammo/a556_box/m903
-	name = "M903 ammo box (5.56x45mm)"
-	desc = "A box of armour-piercing 5.56x45mm ammo."
+	name = "ammo box (5.56x45mm AP)"
+	desc = "A box of 5.56x45mm armour-piercing ammo."
 	icon_state = "a556_45box_big-ap"
 /obj/item/storage/box/ammo/a556_box/m903/PopulateContents()
 	var/static/items_inside = list(
