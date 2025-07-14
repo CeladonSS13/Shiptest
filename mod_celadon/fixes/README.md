@@ -127,7 +127,8 @@ Weebstick (Красная катана) теперь нельзя сломать
 ### Дефайны
 
 <!-- fax_name -->
-- `code/__defines/~mod_celadon/ship.dm`
+<!-- - `code/__defines/~mod_celadon/ship.dm` -->
+- `code/__DEFINES/radio.dm` - Переименование частоты SolGov -> SolFed
 
 <!--
   Если требовалось добавить какие-либо дефайны, укажи файлы,
