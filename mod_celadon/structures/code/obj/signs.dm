@@ -73,7 +73,7 @@
 
 /obj/structure/sign/directions/outpost/nanotrasen/animation
 	name = "nanotrasen sign"
-	desc = "A direction sign, pointing out which way the NanoTrasen faction."
+	desc = "A animation direction sign, pointing out which way the NanoTrasen faction."
 	icon_state = "nt_a"
 
 /obj/structure/sign/directions/outpost/solfed
@@ -95,3 +95,8 @@
 	name = "sell sign"
 	desc = "A direction sign, pointing out which way the Selling pad."
 	icon_state = "sell"
+
+/obj/structure/sign/directions/outpost/exit
+	name = "exit sign"
+	desc = "A direction sign, pointing out which way the Exit."
+	icon_state = "exit"
