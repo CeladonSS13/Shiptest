@@ -30,7 +30,6 @@
 	name = "Milkshake"
 	description = "So, it's milkshake."
 	color = rgb(221, 221, 221)
-	boozepwr = 0
 	taste_description = "pretty milk and cream"
 	glass_icon_state = "milkshake"
 	glass_name = "glass of milkshake"
@@ -47,7 +46,6 @@
 	name = "NuTella milkshake"
 	description = "This is a Nutella milkshake."
 	color = rgb(80, 32, 0)
-	boozepwr = 0
 	taste_description = "pretty milk and chocolate"
 	glass_icon_state = "nutellamilkshake"
 	glass_name = "glass of nutella milkshake"
