@@ -21,4 +21,4 @@
 
 /datum/chemical_reaction/drink/ntella_shake
 	results = list(/datum/reagent/consumable/milkshake/nutella = 6)
-	required_reagents = list(/datum/reagent/consumable/milkshake = 5, /obj/item/reagent_containers/food/snacks/chocolatebar = 1)
+	required_reagents = list(/datum/reagent/consumable/milkshake = 5, /datum/reagent/consumable/coco = 1)
