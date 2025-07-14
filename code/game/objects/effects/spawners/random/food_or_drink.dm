@@ -264,6 +264,7 @@
 		/obj/item/seeds/sugarcane,
 		/obj/item/seeds/sunflower,
 		/obj/item/seeds/tea,
+		/obj/item/seeds/tea/catnip,	// [CELADON-ADD] - DRINKS_AND_FOOD
 		/obj/item/seeds/tobacco,
 		/obj/item/seeds/tomato,
 		/obj/item/seeds/tower,
