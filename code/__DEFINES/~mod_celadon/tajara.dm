@@ -32,4 +32,4 @@
 #define TAJARA_SUIT_PATH 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/onmob_suit_tajara.dmi'
 
 /// The natural temperature for a body
-#define TAJARAN_BODYTEMP_NORMAL 313.15
+#define TAJARAN_BODYTEMP_NORMAL 311.15
