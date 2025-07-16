@@ -117,14 +117,17 @@
 	icon_state = "inteqheadband"
 	item_state = "inteqheadband"
 
-/obj/item/clothing/head/hooded/padded
-	name = "feathered serenity hood"
-	icon_state = "paddedhood"
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/overlay/neck.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/cloaks.dmi'
-	clothing_flags = SNUG_FIT
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+// /obj/item/clothing/head/hooded/padded
+// 	name = "feathered serenity hood"
+// 	icon_state = "paddedhood_full"
+// 	item_state = "paddedhood_full"
+// 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/overlay/neck.dmi'
+// 	icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/cloaks.dmi'
+// 	clothing_flags = SNUG_FIT
+// 	flags_inv = HIDEMASK | HIDEEARS | HIDEEYES | HIDEFACE | HIDEHAIR | HIDEFACIALHAIR | HIDESNOUT
 
-/obj/item/clothing/head/hooded/padded/alt
-	name = "feathered serenity hood"
-	icon_state = "paddedhoodalt"
+// /obj/item/clothing/head/hooded/padded/alt
+// 	name = "feathered serenity hood"
+// 	icon_state = "paddedhoodalt_full"
+// 	item_state = "paddedhoodalt_full"
+

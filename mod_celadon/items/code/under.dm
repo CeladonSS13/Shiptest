@@ -161,10 +161,11 @@
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/clothing/suit/in_hands/padded_left.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/clothing/suit/in_hands/padded_right.dmi'
 	icon_state = "paddedunder"
-	inhand_icon_state = "paddedunder"
+	// inhand_icon_state = "paddedunder"
+	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON | TAJARA_VARIATION | RIOL_VARIATION
 
 /obj/item/clothing/under/padded/alt
 	name = "feathered serenity dress"
 	desc = "A meticulously handcrafted dress that is lined on the inside with feathers and down. Twirling in this dress provides a satisfying result!"
 	icon_state = "paddeddress"
-	inhand_icon_state = "paddeddress"
+	// inhand_icon_state = "paddeddress"
