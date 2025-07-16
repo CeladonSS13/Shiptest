@@ -527,6 +527,13 @@
 	},
 /turf/open/floor/marble/black,
 /area/ship/hallway/fore)
+"hW" = (
+/obj/item/gun/ballistic/automatic/smg/wt550{
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/turf/template_noop,
+/area/template_noop)
 "hX" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -1075,8 +1082,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/structure/guncloset,
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
-/obj/item/gun/ballistic/automatic/assault/hydra,
-/obj/item/gun/ballistic/automatic/assault/hydra,
 /obj/machinery/light/directional/north,
 /obj/item/gun/ballistic/automatic/smg/vector{
 	name = "Special Operations Vector";
@@ -1086,6 +1091,18 @@
 	desc = "A police carbine based on an old design originating from earth, Solar Federation. Modified by Gorlex and used as a common security SMG. Chambered in 45."
 	},
 /obj/item/gun/ballistic/automatic/assault/saiga,
+/obj/item/gun/ballistic/automatic/smg/wt550{
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/obj/item/gun/ballistic/automatic/smg/wt550{
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/obj/item/gun/ballistic/automatic/smg/wt550{
+	pixel_x = 0;
+	pixel_y = 0
+	},
 /turf/open/floor/plasteel/lightdark,
 /area/ship/security/armory)
 "si" = (
@@ -1825,16 +1842,6 @@
 	name = "Ammo Locker";
 	req_access_txt = "1"
 	},
-/obj/item/ammo_box/magazine/m556_42_hydra,
-/obj/item/ammo_box/magazine/m556_42_hydra,
-/obj/item/ammo_box/magazine/m556_42_hydra,
-/obj/item/ammo_box/magazine/m556_42_hydra,
-/obj/item/ammo_box/magazine/m556_42_hydra,
-/obj/item/ammo_box/magazine/m556_42_hydra,
-/obj/item/storage/box/ammo/a556_42,
-/obj/item/storage/box/ammo/a556_42,
-/obj/item/storage/box/ammo/a556_42,
-/obj/item/storage/box/ammo/a556_42,
 /obj/item/attachment/laser_sight,
 /obj/item/attachment/laser_sight,
 /obj/item/attachment/laser_sight,
@@ -1846,6 +1853,21 @@
 /obj/item/ammo_box/magazine/saiga,
 /obj/item/storage/box/ammo/a410_ammo_box,
 /obj/item/ammo_box/magazine/saiga,
+/obj/item/ammo_box/magazine/wt550m9,
+/obj/item/ammo_box/magazine/wt550m9,
+/obj/item/ammo_box/magazine/wt550m9,
+/obj/item/ammo_box/magazine/wt550m9,
+/obj/item/ammo_box/magazine/wt550m9,
+/obj/item/ammo_box/magazine/wt550m9,
+/obj/item/ammo_box/magazine/wt550m9,
+/obj/item/ammo_box/magazine/wt550m9,
+/obj/item/ammo_box/magazine/wt550m9,
+/obj/item/storage/box/ammo/c46x30mm,
+/obj/item/storage/box/ammo/c46x30mm,
+/obj/item/storage/box/ammo/c46x30mm,
+/obj/item/storage/box/ammo/c46x30mm,
+/obj/item/storage/box/ammo/c46x30mm,
+/obj/item/storage/box/ammo/c46x30mm,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "CZ" = (
@@ -3961,7 +3983,7 @@ xo
 xo
 xo
 xo
-xo
+hW
 eD
 zO
 PP

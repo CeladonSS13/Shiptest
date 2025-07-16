@@ -2446,7 +2446,7 @@
 	speak_emote = list("rants","screams","sobs");
 	verb_exclaim = "rants";
 	verb_yell = "rants";
-	weapon_drop_chance = 100
+	weapon_drop_chance = 0
 	},
 /turf/open/floor/carpet/blue,
 /area/ruin/lavaland/factory/manager_office)
@@ -2626,7 +2626,7 @@
 /area/ruin/lavaland/factory/warehouse)
 "yq" = (
 /obj/structure/displaycase/noalert{
-	start_showpiece_type = /obj/item/gun/energy/e_gun/hades
+	start_showpiece_type = /obj/item/melee/duelenergy/saber/red
 	},
 /turf/open/floor/carpet/blue,
 /area/ruin/lavaland/factory/manager_office)
@@ -5266,6 +5266,7 @@
 /area/overmap_encounter/planetoid/cave/explored)
 "ZO" = (
 /obj/item/radio,
+/obj/item/melee/duelenergy/saber/yellow,
 /turf/open/floor/plating/moss,
 /area/overmap_encounter/planetoid/lava/explored)
 "ZS" = (
