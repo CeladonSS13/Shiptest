@@ -527,13 +527,6 @@
 	},
 /turf/open/floor/marble/black,
 /area/ship/hallway/fore)
-"hW" = (
-/obj/item/gun/ballistic/automatic/smg/wt550{
-	pixel_x = 0;
-	pixel_y = 0
-	},
-/turf/template_noop,
-/area/template_noop)
 "hX" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -1091,17 +1084,17 @@
 	desc = "A police carbine based on an old design originating from earth, Solar Federation. Modified by Gorlex and used as a common security SMG. Chambered in 45."
 	},
 /obj/item/gun/ballistic/automatic/assault/saiga,
-/obj/item/gun/ballistic/automatic/smg/wt550{
-	pixel_x = 0;
-	pixel_y = 0
+/obj/item/gun/ballistic/automatic/smg/sidewinder{
+	pixel_x = -10;
+	pixel_y = 4
 	},
-/obj/item/gun/ballistic/automatic/smg/wt550{
-	pixel_x = 0;
-	pixel_y = 0
+/obj/item/gun/ballistic/automatic/smg/sidewinder{
+	pixel_x = -10;
+	pixel_y = 4
 	},
-/obj/item/gun/ballistic/automatic/smg/wt550{
-	pixel_x = 0;
-	pixel_y = 0
+/obj/item/gun/ballistic/automatic/smg/sidewinder{
+	pixel_x = -10;
+	pixel_y = 4
 	},
 /turf/open/floor/plasteel/lightdark,
 /area/ship/security/armory)
@@ -1853,21 +1846,45 @@
 /obj/item/ammo_box/magazine/saiga,
 /obj/item/storage/box/ammo/a410_ammo_box,
 /obj/item/ammo_box/magazine/saiga,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/storage/box/ammo/c46x30mm,
-/obj/item/storage/box/ammo/c46x30mm,
-/obj/item/storage/box/ammo/c46x30mm,
-/obj/item/storage/box/ammo/c46x30mm,
-/obj/item/storage/box/ammo/c46x30mm,
-/obj/item/storage/box/ammo/c46x30mm,
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/storage/box/ammo/c57x39,
+/obj/item/storage/box/ammo/c57x39,
+/obj/item/storage/box/ammo/c57x39,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "CZ" = (
@@ -3258,6 +3275,14 @@
 	name = "Syndicate dogtag";
 	desc = "And the dog tag marked with the name and rank of a Syndicate member."
 	},
+/obj/item/gun/ballistic/automatic/pistol/ringneck,
+/obj/item/gun/ballistic/automatic/pistol/ringneck,
+/obj/item/gun/ballistic/automatic/pistol/ringneck,
+/obj/item/gun/ballistic/automatic/pistol/ringneck,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
 /turf/open/floor/marble/black,
 /area/ship/crew/cryo)
 "XM" = (
@@ -3983,7 +4008,7 @@ xo
 xo
 xo
 xo
-hW
+xo
 eD
 zO
 PP
