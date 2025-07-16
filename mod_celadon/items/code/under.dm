@@ -152,3 +152,19 @@
 	. = ..()
 	var/obj/item/clothing/accessory/maidapron/inteq/A = new (src)
 	attach_accessory(A)
+
+/obj/item/clothing/under/padded
+	name = "feathered serenity suit"
+	desc = "A meticulously handcrafted suit that is lined on the inside with feathers and down."
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/suit.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/suits.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/clothing/suit/in_hands/padded_left.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/clothing/suit/in_hands/padded_right.dmi'
+	icon_state = "paddedunder"
+	inhand_icon_state = "paddedunder"
+
+/obj/item/clothing/under/padded/alt
+	name = "feathered serenity dress"
+	desc = "A meticulously handcrafted dress that is lined on the inside with feathers and down. Twirling in this dress provides a satisfying result!"
+	icon_state = "paddeddress"
+	inhand_icon_state = "paddeddress"
