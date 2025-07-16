@@ -1,10 +1,10 @@
-/datum/reagent/pax/catnip
-	name = "Catnip"
+/datum/reagent/pax/mint
+	name = "Mint"
 	taste_description = "grass"
 	description = "A colourless liquid that makes people more peaceful and felines happier."
 	metabolization_rate = 1.75 * REAGENTS_METABOLISM
 
-/datum/reagent/pax/catnip/on_mob_life(mob/living/carbon/C)
+/datum/reagent/pax/mint/on_mob_life(mob/living/carbon/C)
 	if(istajara(C))
 		if(prob(20))
 			C.emote("nya")

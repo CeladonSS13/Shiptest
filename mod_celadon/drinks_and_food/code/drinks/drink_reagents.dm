@@ -14,16 +14,16 @@
 	..()
 	. = 1
 
-/datum/reagent/consumable/catnip_tea
-	name = "Catnip Tea"
-	description = "A sleepy and tasty catnip tea!"
+/datum/reagent/consumable/mint_tea
+	name = "Mint Tea"
+	description = "A sleepy and tasty mint tea!"
 	color = "#101000" // rgb: 16, 16, 0
-	taste_description = "sugar and catnip"
-	glass_icon_state = "catnip_tea"
-	glass_name = "glass of catnip tea"
+	taste_description = "sugar and mint"
+	glass_icon_state = "mint_tea"
+	glass_name = "glass of mint tea"
 	glass_desc = "A purrfect drink for a cat."
 
-/datum/reagent/consumable/catnip_tea/on_mob_life(mob/living/carbon/C)
+/datum/reagent/consumable/mint_tea/on_mob_life(mob/living/carbon/C)
 	C.adjustStaminaLoss(min(50 - C.getStaminaLoss(), 3))
 	if(istajara(C))
 		if(prob(20))

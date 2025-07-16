@@ -4,12 +4,12 @@
 
 /datum/chemical_reaction/drink/frisky_kitty
 	results = list(/datum/reagent/consumable/ethanol/frisky_kitty = 2)
-	required_reagents = list(/datum/reagent/consumable/catnip_tea = 1,  /datum/reagent/consumable/milk = 1)
+	required_reagents = list(/datum/reagent/consumable/mint_tea = 1,  /datum/reagent/consumable/milk = 1)
 	required_temp = 296 //Just above room temp (22.85'C)
 
-/datum/chemical_reaction/drink/catnip_tea
-	results = list(/datum/reagent/consumable/catnip_tea = 10)
-	required_reagents = list(/datum/reagent/consumable/tea = 5, /datum/reagent/pax/catnip = 2)
+/datum/chemical_reaction/drink/mint_tea
+	results = list(/datum/reagent/consumable/mint_tea = 10)
+	required_reagents = list(/datum/reagent/consumable/tea = 5, /datum/reagent/pax/mint = 2)
 
 /datum/chemical_reaction/drink/zenstar
 	results = list(/datum/reagent/consumable/ethanol/zenstar = 5)

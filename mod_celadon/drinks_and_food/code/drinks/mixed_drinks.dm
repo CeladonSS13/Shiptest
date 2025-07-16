@@ -1,12 +1,12 @@
 /datum/reagent/consumable/ethanol/frisky_kitty
 	name = "Frisky Kitty"
-	description = "Warm milk mixed with catnip."
+	description = "Warm milk mixed with mint."
 	color = "#FCF7D4" //(252, 247, 212)
 	boozepwr = 0
-	taste_description = "Warm milk and catnip"
+	taste_description = "Warm milk and mint"
 	glass_icon_state = "frisky_kitty"
 	glass_name = "cup of frisky kitty"
-	glass_desc = "Warm milk and some catnip."
+	glass_desc = "Warm milk and some mint."
 
 /datum/reagent/consumable/ethanol/frisky_kitty/expose_mob(mob/living/M, methods, reac_volume)
 	if(istajara(M))
