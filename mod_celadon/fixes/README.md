@@ -99,6 +99,9 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code/modules/clothing/head/helmet.dm` - Отображение оверлеев
 
+
+- EDIT: `code/modules/surgery/surgery_step.dm` - Исправление ухода операции в бесконечный цикл 
+
 - ADD: `code/datums/looping_sounds/machinery_sounds.dm` - Гравген во включённом состоянии жужжит.
 - ADD: `code/game/machinery/shuttle/ship_gravity.dm` - Гравген во включённом состоянии слегка светится, жужжит, а "интерфейс" светится в темноте. А также добавлено взаимодействие с ЕМП, при котором с 50% шансом он переключится.
 - ADD: `code/game/mecha/equipment/tools/mining_tools.dm` Мех с активной дрелью теперь копает камень.
@@ -133,7 +136,8 @@ Weebstick (Красная катана) теперь нельзя сломать
 ### Дефайны
 
 <!-- fax_name -->
-- `code/__defines/~mod_celadon/ship.dm`
+<!-- - `code/__defines/~mod_celadon/ship.dm` -->
+- `code/__DEFINES/radio.dm` - Переименование частоты SolGov -> SolFed
 
 <!--
   Если требовалось добавить какие-либо дефайны, укажи файлы,
