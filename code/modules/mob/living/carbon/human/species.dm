@@ -914,7 +914,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			bodyparts_to_add -= "tajara_facial_hairs"
 
 	if("tajara_ears_markings" in mutant_bodyparts)
-		if(!H.dna.features["tajara_ears_markings"] || H.dna.features["tajara_ears_markings"] == "None" || H.head && (H.head.flags_inv & HIDEFACE) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEFACE)) || !HD) // || HD.status == BODYTYPE_ROBOTIC
+		if(!H.dna.features["tajara_ears_markings"] || H.dna.features["tajara_ears_markings"] == "None" || H.head && (H.head.flags_inv & HIDEEARS) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEEARS)) || !HD) // || HD.status == BODYTYPE_ROBOTIC
 			bodyparts_to_add -= "tajara_ears_markings"
 
 	if("tajara_head_markings" in mutant_bodyparts)
@@ -934,7 +934,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			bodyparts_to_add -= "tajara_hairs"
 
 	if("tajara_ears" in mutant_bodyparts)
-		if(!H.dna.features["tajara_ears"] || H.dna.features["tajara_ears"] == "None" || (H.head && (H.head.flags_inv & HIDEHAIR)))
+		if(!H.dna.features["tajara_ears"] || H.dna.features["tajara_ears"] == "None" || (H.head && (H.head.flags_inv & HIDEEARS)))
 			bodyparts_to_add -= "tajara_ears"
 
 	if("tajara_tail" in mutant_bodyparts)
@@ -957,7 +957,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			bodyparts_to_add -= "riol_facial_hairs"
 
 	if("riol_ears_markings" in mutant_bodyparts)
-		if(!H.dna.features["riol_ears_markings"] || H.dna.features["riol_ears_markings"] == "None" || H.head && (H.head.flags_inv & HIDEFACE) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEFACE)) || !HD) // || HD.status == BODYTYPE_ROBOTIC
+		if(!H.dna.features["riol_ears_markings"] || H.dna.features["riol_ears_markings"] == "None" || H.head && (H.head.flags_inv & HIDEEARS) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEEARS)) || !HD) // || HD.status == BODYTYPE_ROBOTIC
 			bodyparts_to_add -= "riol_ears_markings"
 
 	if("riol_head_markings" in mutant_bodyparts)
@@ -993,7 +993,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			bodyparts_to_add -= "riol_tail"
 
 	if("riol_ears" in mutant_bodyparts)
-		if(!H.dna.features["riol_ears"] || H.dna.features["riol_ears"] == "None" || (H.head && (H.head.flags_inv & HIDEHAIR)))
+		if(!H.dna.features["riol_ears"] || H.dna.features["riol_ears"] == "None" || (H.head && (H.head.flags_inv & HIDEEARS)))
 			bodyparts_to_add -= "riol_ears"
 	// [/CELADON-ADD]
 
