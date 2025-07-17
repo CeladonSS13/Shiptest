@@ -111,6 +111,8 @@ ADD: `code/modules/overmap/objects/event_datum.dm` : Добавляем дебр
 EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Делаем так чтобы кепори могли брать мелкие предметы в клюв
 EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Поднимаем скорость кепори до -0.30
 
+ADD: `code/modules/mob/living/carbon/human/species_types/lizardpeople.dm` : Даём сарати резист к огню на 15%
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
