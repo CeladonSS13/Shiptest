@@ -17,6 +17,7 @@ ID мода:
 	CELADON_BALANCE_CD
 	CELADON_BALANCE_MOBS
 	CELADON_BALANCE_OVERMAP_EVENTS
+	CELADON_BALANCE_SPECIES
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов. Добавлены
@@ -106,6 +107,9 @@ EDIT: `code/__DEFINES/storage.dm`
 EDIT: `code/game/objects/items/storage/backpack.dm`
 
 ADD: `code/modules/overmap/objects/event_datum.dm` : Добавляем дебрисам рандом на безопасную скорость полетов
+
+EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Делаем так чтобы кепори могли брать мелкие предметы в клюв
+EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Поднимаем скорость кепори до -0.30
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
