@@ -118,9 +118,25 @@
 /obj/item/clothing/suit/toggle/blackhs
 	name = "black replica greatcoat"
 	desc = "This is replica, a greatcoat HOS enhanced with a special style for those with a commanding presence."
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/suit.dmi'
 	icon_state = "blackhs"
 	item_state = "blackhs"
 	blood_overlay_type = "coat"
 	body_parts_covered = CHEST | ARMS | GROIN
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 50, "rad" = 0, "fire" = 50, "acid" = 50)
 	togglename = "buttons"
+
+/obj/item/clothing/suit/chaplainsuit/shrinehand
+	name = "shrinehand robe"
+	desc = "Won't help you communicate with spirits, but you'll certainly look the part."
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/costume.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/costume.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/clothing/under/in_hands/costume_left.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/clothing/under/in_hands/costume_right.dmi'
+	icon_state = "shrinehand"
+	item_state = "shrinehand"
+	body_parts_covered = CHEST | GROIN | LEGS | ARMS
+	flags_inv = HIDEJUMPSUIT
+
+// Продолжение тут code/modules/jobs/job_types/chaplain/chaplain_costumes.dm в арке
