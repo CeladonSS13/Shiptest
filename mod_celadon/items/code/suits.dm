@@ -106,3 +106,21 @@
 	icon_state = "DutchJacket"
 	item_state = "DutchJacket"
 	body_parts_covered = ARMS
+
+/obj/item/clothing/suit/armadyne
+	name = "Red Coat"
+	desc = "A greatcoat enhanced with a special style for those with a commanding presence."
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/suit.dmi'
+	icon_state = "armadyne_trench"
+	item_state = "armadyne_trench"
+
+/obj/item/clothing/suit/toggle/blackhs
+	name = "black replica greatcoat"
+	desc = "This is replica, a greatcoat HOS enhanced with a special style for those with a commanding presence."
+	icon_state = "blackhs"
+	item_state = "blackhs"
+	blood_overlay_type = "coat"
+	body_parts_covered = CHEST | ARMS | GROIN
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 50, "rad" = 0, "fire" = 50, "acid" = 50)
+	togglename = "buttons"
