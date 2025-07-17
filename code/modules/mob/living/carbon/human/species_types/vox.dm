@@ -19,6 +19,7 @@
 	species_eye_path = 'icons/mob/species/vox/vox_parts.dmi'
 	punchdamagelow = 6
 	punchdamagehigh = 12
+	coldmod = 0.8	// [CELADON-ADD] - CELADON_BALANCE_SPECIES - Даем воксам резист к холоду на 20%
 	mutanttongue = /obj/item/organ/tongue/vox
 	species_language_holder = /datum/language_holder/vox
 
