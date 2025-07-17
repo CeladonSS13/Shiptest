@@ -108,7 +108,6 @@ EDIT: `code/game/objects/items/storage/backpack.dm`
 
 ADD: `code/modules/overmap/objects/event_datum.dm` : Добавляем дебрисам рандом на безопасную скорость полетов
 
-EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Делаем так чтобы кепори могли брать мелкие предметы в клюв
 EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Поднимаем скорость кепори до -0.30
 ADD: `code/modules/mob/living/carbon/human/species_types/lizardpeople.dm` : Даём сарати резист к огню на 15%
 ADD: `code/modules/mob/living/carbon/human/species_types/vox.dm` : Даём воксам резист к холоду на 20%
