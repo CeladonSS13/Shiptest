@@ -85,7 +85,7 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code\modules\hydroponics\gene_modder.dm` - Добавление удаления мусора а не данных с диска
 
-- EDIT: `code\modules\hydroponics\grown\replicapod.dm` - Исправление отобрежения ДНК на сканере 
+- EDIT: `code\modules\hydroponics\grown\replicapod.dm` - Исправление отобрежения ДНК на сканере
 
 - EDIT: `code\modules\hydroponics\grown\replicapod.dm` - Исправлено появление людей из капусты
 
@@ -99,7 +99,9 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code/modules/clothing/head/helmet.dm` - Отображение оверлеев
 
-- EDIT: `code/modules/surgery/surgery_step.dm` - Исправление ухода операции в бесконечный цикл 
+- EDIT: `code/modules/surgery/surgery_step.dm` - Исправление ухода операции в бесконечный цикл
+
+- EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Делаем так чтобы кепори могли брать мелкие предметы в клюв
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,

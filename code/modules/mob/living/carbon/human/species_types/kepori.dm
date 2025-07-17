@@ -136,7 +136,7 @@
 	if(slot != ITEM_SLOT_MASK)
 		return FALSE
 	//Blocks all items that are equippable to other slots. (block anything with a flag that ISN'T item_slot_mask)
-	if(I.slot_flags & ~ITEM_SLOT_KEPORI_BEAK)
+	if(I.slot_flags && !ITEM_SLOT_KEPORI_BEAK)	// [CELADON-EDIT] - CELADON_FIXES - Было if(I.slot_flags & ~ITEM_SLOT_KEPORI_BEAK)
 		return FALSE
 	if(H.wear_mask && !swap)
 		return FALSE
