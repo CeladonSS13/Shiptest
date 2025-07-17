@@ -945,3 +945,47 @@
 	message = "СМЕРТЬ МОНОПОЛИСТАМ!"
 	user.visible_message(span_bolddanger(message))
 	COOLDOWN_START(src, cooldown, 3 SECONDS)
+
+#define BASIC_MINER_SKIN "Miner Plushie"
+#define RED_MINER_SKIN "Bloody Miner Plushie"
+
+/obj
+	var/always_reskinnable = FALSE
+
+/obj/item/toy/plush/celadon/miner
+	name = BASIC_MINER_SKIN
+	desc = "Тот самый Шахтёр, способный провести геноцид планетарного объекта."
+	icon_state = "miner_plushie"
+	item_state = "miner_plushie"
+	attack_verb = list("killed", "slashed", "annihilates")
+	squeak_override = list('sound/effects/hit_punch.ogg' = 1)
+	always_reskinnable = TRUE
+	gender = MALE
+	unique_reskin = list(
+		BASIC_MINER_SKIN = list(RESKIN_ICON_STATE = "miner_plushie", RESKIN_ITEM_STATE = "miner_plushie"),
+		RED_MINER_SKIN = list(RESKIN_ICON_STATE = "bloody_miner_plushie", RESKIN_ITEM_STATE = "bloody_miner_plushie")
+	)
+	COOLDOWN_DECLARE(cooldown)
+
+/obj/item/toy/plush/celadon/miner/reskin_obj(mob/user)
+	. = ..()
+	name = current_skin
+	if(COOLDOWN_FINISHED(src, cooldown))
+		COOLDOWN_START(src, cooldown, 6 SECONDS)
+		switch(current_skin)
+			if(BASIC_MINER_SKIN)
+				icon_state = "miner_plushie"
+				item_state = "miner_plushie"
+				say("Ну вот. Сегодня я умру.")
+				playsound(src, 'mod_celadon/_storge_sounds/sound/items/miner_plushie.ogg', 50, 1)
+			else
+				icon_state = "bloody_miner_plushie"
+				item_state = "bloody_miner_plushie"
+				say("Кишки, огромные кишки! Убей их… должен убить их всех! Разорвать… и… рвать! Демоны… они повсюду. Должен… убить их всех!")
+				playsound(src, 'mod_celadon/_storge_sounds/sound/items/bloody_miner_plushie.ogg', 50, 1)
+	if(ismob(loc))
+		var/mob/M = loc
+		M.update_inv_hands()
+
+#undef BASIC_MINER_SKIN
+#undef RED_MINER_SKIN
