@@ -23,9 +23,6 @@
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
-	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
-	// uses_integrity = TRUE
-	// [/CELADON-REMOVE]
 
 	brute_reduction = 5
 	burn_reduction = 4
@@ -51,9 +48,6 @@
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
-	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
-	// uses_integrity = TRUE
-	// [/CELADON-REMOVE]
 
 	brute_reduction = 5
 	burn_reduction = 4
@@ -79,9 +73,6 @@
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
-	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
-	// uses_integrity = TRUE
-	// [/CELADON-REMOVE]
 
 	brute_reduction = 5
 	burn_reduction = 4
@@ -107,9 +98,6 @@
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
-	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
-	// uses_integrity = TRUE
-	// [/CELADON-REMOVE]
 
 	brute_reduction = 5
 	burn_reduction = 4
@@ -134,9 +122,6 @@
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
-	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
-	// uses_integrity = TRUE
-	// [/CELADON-REMOVE]
 
 	brute_reduction = 5
 	burn_reduction = 4
@@ -239,9 +224,6 @@
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC
-	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
-	// uses_integrity = TRUE
-	// [/CELADON-REMOVE]
 
 	brute_reduction = 5
 	burn_reduction = 4

@@ -136,7 +136,7 @@
 	flags_1 = CONDUCT_1
 	attack_verb = list("attacked", "slashed", "cut", "sliced")
 	force = 12
-	sharpness = IS_SHARP
+	sharpness = SHARP_EDGED
 	can_charge = FALSE
 
 	heat = 3800
@@ -202,10 +202,7 @@
 			span_notice("You start fixing some of the dents on [target == user ? "your" : "[target]'s"] [parse_zone(attackedLimb.body_zone)]."))
 	if(!use_tool(target, user, delay = (target == user ? 5 SECONDS : 0.5 SECONDS), amount = 1, volume = 25))
 		return TRUE
-	// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
-	// item_heal_robotic(target, user, brute_heal = 15, burn_heal = 0, integrity_loss = 5)	// CELADON-EDIT = ORIGINAL
 	item_heal_robotic(target, user, brute_heal = 15, burn_heal = 0)
-	// [/CELADON-REMOVE]
 	return TRUE
 
 /obj/item/gun/energy/plasmacutter/use(amount)
