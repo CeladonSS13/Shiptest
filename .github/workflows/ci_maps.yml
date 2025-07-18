@@ -1,16 +1,13 @@
 name: Сборка и Компиляция Карт
 on:
   push:
-    branches:
-      - beta-dev
-      - "project/**"
+    branches: [beta-dev]
+    paths:
+      - '_maps/**'
   pull_request:
-    branches:
-      - beta-dev
-      - "project/**"
-  merge_group:
-    branches:
-      - beta-dev
+    branches: [beta-dev]
+    paths:
+      - '_maps/**'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
