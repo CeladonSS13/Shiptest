@@ -160,19 +160,11 @@
 		if(BODY_ZONE_L_LEG)
 			if(species.is_digitigrade(src))
 				L = robotic ? new species.species_robotic_digi_l_leg() : new species.species_digi_l_leg()
-			// [CELADON-ADD] - CELADON_RIOL
-			else if(species.is_digitigrade(src) && BODYTYPE_RIOL)
-				L = new species.riol_digi_l_leg()
-			// [/CELADON-ADD]
 			else
 				L = robotic ? new species.species_robotic_l_leg() : new species.species_l_leg()
 		if(BODY_ZONE_R_LEG)
 			if(species.is_digitigrade(src))
 				L = robotic ? new species.species_robotic_digi_r_leg() : new species.species_digi_r_leg()
-			// [CELADON-ADD] - CELADON_RIOL
-			else if(species.is_digitigrade(src) && BODYTYPE_RIOL)
-				L = new species.riol_digi_r_leg()
-			// [/CELADON-ADD]
 			else
 				L = robotic ? new species.species_robotic_r_leg() : new species.species_r_leg()
 		if(BODY_ZONE_CHEST)
