@@ -2986,33 +2986,27 @@
 	pixel_y = -2
 	},
 /obj/item/reagent_containers/pill/charcoal{
-	list_reagents = list(/datum/reagent/medicine/charcoal = 10);
 	name = "charcoal pill (10u)"
 	},
 /obj/item/reagent_containers/pill/charcoal{
-	list_reagents = list(/datum/reagent/medicine/charcoal = 10);
 	name = "charcoal pill (10u)"
 	},
 /obj/item/reagent_containers/pill/charcoal{
-	list_reagents = list(/datum/reagent/medicine/charcoal = 10);
 	name = "charcoal pill (10u)"
 	},
 /obj/item/reagent_containers/syringe/thializid{
-	list_reagents = list(/datum/reagent/medicine/thializid = 15);
 	icon_state = "syringe_15";
 	dir = 4;
 	pixel_x = 1;
 	pixel_y = 5
 	},
 /obj/item/reagent_containers/syringe/thializid{
-	list_reagents = list(/datum/reagent/medicine/thializid = 15);
 	icon_state = "syringe_15";
 	dir = 4;
 	pixel_x = 1;
 	pixel_y = -3
 	},
 /obj/item/reagent_containers/syringe/thializid{
-	list_reagents = list(/datum/reagent/medicine/thializid = 15);
 	icon_state = "syringe_15";
 	dir = 4;
 	pixel_x = 8;
@@ -3024,19 +3018,15 @@
 	pixel_y = -1
 	},
 /obj/item/reagent_containers/pill/potassiodide{
-	list_reagents = list(/datum/reagent/medicine/potass_iodide = 15);
 	name = "potassium iodide pill (15u)"
 	},
 /obj/item/reagent_containers/pill/potassiodide{
-	list_reagents = list(/datum/reagent/medicine/potass_iodide = 15);
 	name = "potassium iodide pill (15u)"
 	},
 /obj/item/reagent_containers/pill/potassiodide{
-	list_reagents = list(/datum/reagent/medicine/potass_iodide = 15);
 	name = "potassium iodide pill (15u)"
 	},
 /obj/item/reagent_containers/hypospray/medipen/penacid{
-	list_reagents = list(/datum/reagent/medicine/pen_acid = 10);
 	dir = 4;
 	pixel_x = 8;
 	pixel_y = 8
@@ -3533,12 +3523,8 @@
 /obj/item/geiger_counter,
 /obj/item/clothing/suit/radiation,
 /obj/item/clothing/head/radiation,
-/obj/item/reagent_containers/hypospray/medipen/penacid{
-	list_reagents = list(/datum/reagent/medicine/pen_acid = 10)
-	},
-/obj/item/reagent_containers/hypospray/medipen/penacid{
-	list_reagents = list(/datum/reagent/medicine/pen_acid = 10)
-	},
+/obj/item/reagent_containers/hypospray/medipen/penacid,
+/obj/item/reagent_containers/hypospray/medipen/penacid,
 /obj/item/clothing/glasses/meson,
 /obj/item/clothing/glasses/meson/prescription,
 /obj/item/geiger_counter{
@@ -4510,9 +4496,7 @@
 	pixel_y = -2
 	},
 /obj/item/lightreplacer,
-/obj/item/reagent_containers/spray/cleaner{
-	list_reagents = list(/datum/reagent/space_cleaner = 100)
-	},
+/obj/item/reagent_containers/spray/cleaner,
 /obj/item/soap/nanotrasen,
 /obj/item/holosign_creator,
 /obj/item/melee/flyswatter,
@@ -4521,7 +4505,6 @@
 	pixel_y = 4
 	},
 /obj/item/reagent_containers/spray/cleaner{
-	list_reagents = list(/datum/reagent/space_cleaner = 100);
 	dir = 1;
 	pixel_x = -4;
 	pixel_y = 4
@@ -4712,7 +4695,6 @@
 	pixel_y = 2
 	},
 /obj/item/reagent_containers/food/drinks/bottle/pineapplejuice{
-	list_reagents = list(/datum/reagent/consumable/pineapplejuice = 100);
 	dir = 4;
 	pixel_x = -7;
 	pixel_y = -3
@@ -5417,21 +5399,11 @@
 	req_access = list(28);
 	dir = 4
 	},
-/obj/item/reagent_containers/condiment/flour{
-	list_reagents = list(/datum/reagent/consumable/flour = 30)
-	},
-/obj/item/reagent_containers/condiment/flour{
-	list_reagents = list(/datum/reagent/consumable/flour = 30)
-	},
-/obj/item/reagent_containers/condiment/flour{
-	list_reagents = list(/datum/reagent/consumable/flour = 30)
-	},
-/obj/item/reagent_containers/condiment/rice{
-	list_reagents = list(/datum/reagent/consumable/rice = 30)
-	},
-/obj/item/reagent_containers/condiment/sugar{
-	list_reagents = list(/datum/reagent/consumable/sugar = 50)
-	},
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/rice,
+/obj/item/reagent_containers/condiment/sugar,
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered/corprejectrooms)
 "aiV" = (
@@ -5635,12 +5607,10 @@
 	},
 /obj/structure/closet/cardboard/metal,
 /obj/item/reagent_containers/food/drinks/waterbottle/large{
-	list_reagents = list(/datum/reagent/water = 100);
 	pixel_x = 3;
 	pixel_y = 3
 	},
 /obj/item/reagent_containers/food/drinks/waterbottle/large{
-	list_reagents = list(/datum/reagent/water = 100);
 	pixel_x = 4;
 	pixel_y = -2
 	},
@@ -5683,46 +5653,24 @@
 	req_access = list(28);
 	dir = 8
 	},
-/obj/item/reagent_containers/condiment/milk{
-	list_reagents = list(/datum/reagent/consumable/milk = 50)
-	},
-/obj/item/reagent_containers/condiment/milk{
-	list_reagents = list(/datum/reagent/consumable/milk = 50)
-	},
-/obj/item/reagent_containers/condiment/milk{
-	list_reagents = list(/datum/reagent/consumable/milk = 50)
-	},
-/obj/item/reagent_containers/condiment/milk{
-	list_reagents = list(/datum/reagent/consumable/milk = 50)
-	},
-/obj/item/reagent_containers/condiment/milk{
-	list_reagents = list(/datum/reagent/consumable/milk = 50)
-	},
-/obj/item/reagent_containers/condiment/soymilk{
-	list_reagents = list(/datum/reagent/consumable/soymilk = 50)
-	},
-/obj/item/reagent_containers/condiment/soymilk{
-	list_reagents = list(/datum/reagent/consumable/soymilk = 50)
-	},
-/obj/item/reagent_containers/condiment/soymilk{
-	list_reagents = list(/datum/reagent/consumable/soymilk = 50)
-	},
-/obj/item/reagent_containers/condiment/soymilk{
-	list_reagents = list(/datum/reagent/consumable/soymilk = 50)
-	},
-/obj/item/reagent_containers/condiment/soymilk{
-	list_reagents = list(/datum/reagent/consumable/soymilk = 50)
-	},
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/soymilk,
+/obj/item/reagent_containers/condiment/soymilk,
+/obj/item/reagent_containers/condiment/soymilk,
+/obj/item/reagent_containers/condiment/soymilk,
+/obj/item/reagent_containers/condiment/soymilk,
 /obj/item/storage/fancy/egg_box,
 /obj/item/storage/fancy/egg_box,
 /obj/item/reagent_containers/condiment/soysauce{
-	list_reagents = list(/datum/reagent/consumable/soysauce = 50);
 	name = "soy sauce bottle";
 	pixel_x = 3;
 	pixel_y = 3
 	},
 /obj/item/reagent_containers/condiment/mayonnaise{
-	list_reagents = list(/datum/reagent/consumable/mayonnaise = 50);
 	name = "mayonnaise jar"
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
@@ -5814,9 +5762,7 @@
 	pixel_x = 3;
 	pixel_y = 4
 	},
-/obj/item/reagent_containers/food/snacks/chocolatebar{
-	list_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/sugar = 2, /datum/reagent/consumable/coco = 2)
-	},
+/obj/item/reagent_containers/food/snacks/chocolatebar,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/unpowered/corprejectrooms)
 "ajl" = (
@@ -6001,7 +5947,6 @@
 /obj/item/reagent_containers/food/snacks/grown/sweet_potato{
 	pixel_x = 5;
 	pixel_y = 2;
-	list_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 3, /datum/reagent/consumable/nutriment = 6)
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered/corprejectrooms)
@@ -6163,12 +6108,10 @@
 	icon_state = "door_closed"
 	},
 /obj/item/reagent_containers/condiment/peppermill{
-	list_reagents = list(/datum/reagent/consumable/blackpepper = 20);
 	pixel_x = -8;
 	pixel_y = 2
 	},
 /obj/item/reagent_containers/condiment/saltshaker{
-	list_reagents = list(/datum/reagent/consumable/sodiumchloride = 20);
 	pixel_x = -8;
 	pixel_y = 12
 	},
@@ -8251,12 +8194,10 @@
 /area/overmap_encounter/planetoid/lava/explored)
 "anj" = (
 /obj/item/reagent_containers/hypospray/combat{
-	list_reagents = list(/datum/reagent/medicine/epinephrine = 30, /datum/reagent/medicine/omnizine = 30, /datum/reagent/medicine/leporazine = 15, /datum/reagent/medicine/atropine = 15);
 	pixel_x = -4;
 	pixel_y = -5
 	},
 /obj/item/reagent_containers/glass/bottle/dexalin{
-	list_reagents = list(/datum/reagent/medicine/dexalin = 50);
 	pixel_x = 8;
 	pixel_y = 3
 	},
@@ -8342,22 +8283,18 @@
 	},
 /obj/structure/closet/wall/directional/west,
 /obj/item/reagent_containers/syringe/contraband/fentanyl{
-	list_reagents = list(/datum/reagent/toxin/fentanyl = 15);
 	icon_state = "syringe_15";
 	pixel_x = -3;
 	pixel_y = 4
 	},
 /obj/item/reagent_containers/syringe/contraband/methamphetamine{
-	list_reagents = list(/datum/reagent/drug/methamphetamine = 15);
 	icon_state = "syringe_15"
 	},
 /obj/item/reagent_containers/syringe/charcoal{
-	list_reagents = list(/datum/reagent/medicine/charcoal = 15);
 	icon_state = "syringe_15";
 	pixel_x = -3
 	},
 /obj/item/reagent_containers/food/drinks/beer{
-	list_reagents = list(/datum/reagent/consumable/ethanol/beer = 30);
 	pixel_x = -4
 	},
 /obj/machinery/light/small/directional/south{
@@ -8374,7 +8311,6 @@
 "ans" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/glass/bottle/epinephrine{
-	list_reagents = list(/datum/reagent/medicine/epinephrine = 50);
 	pixel_x = 8;
 	pixel_y = -2
 	},
@@ -8623,24 +8559,12 @@
 	pixel_x = 4;
 	pixel_y = 4
 	},
-/obj/item/reagent_containers/glass/bottle/antitoxin/sleeper{
-	list_reagents = list(/datum/reagent/medicine/antitoxin = 50)
-	},
-/obj/item/reagent_containers/glass/bottle/bicaridine/sleeper{
-	list_reagents = list(/datum/reagent/medicine/bicaridine = 50)
-	},
-/obj/item/reagent_containers/glass/bottle/dexalin/sleeper{
-	list_reagents = list(/datum/reagent/medicine/dexalin = 50)
-	},
-/obj/item/reagent_containers/glass/bottle/epinephrine/sleeper{
-	list_reagents = list(/datum/reagent/medicine/epinephrine = 50)
-	},
-/obj/item/reagent_containers/glass/bottle/kelotane/sleeper{
-	list_reagents = list(/datum/reagent/medicine/kelotane = 50)
-	},
-/obj/item/reagent_containers/glass/bottle/morphine/sleeper{
-	list_reagents = list(/datum/reagent/medicine/morphine = 30)
-	},
+/obj/item/reagent_containers/glass/bottle/antitoxin/sleeper,
+/obj/item/reagent_containers/glass/bottle/bicaridine/sleeper,
+/obj/item/reagent_containers/glass/bottle/dexalin/sleeper,
+/obj/item/reagent_containers/glass/bottle/epinephrine/sleeper,
+/obj/item/reagent_containers/glass/bottle/kelotane/sleeper,
+/obj/item/reagent_containers/glass/bottle/morphine/sleeper,
 /obj/item/stock_parts/manipulator{
 	pixel_x = 4;
 	pixel_y = -5
@@ -8659,48 +8583,36 @@
 /obj/item/reagent_containers/blood,
 /obj/item/reagent_containers/blood,
 /obj/item/reagent_containers/blood/AMinus{
-	list_reagents = list(/datum/reagent/blood = 200);
 	name = "blood pack - A-"
 	},
 /obj/item/reagent_containers/blood/BMinus{
-	list_reagents = list(/datum/reagent/blood = 200);
 	name = "blood pack - B-"
 	},
 /obj/item/reagent_containers/blood/BPlus{
-	list_reagents = list(/datum/reagent/blood = 200);
 	name = "blood pack - B+"
 	},
 /obj/item/reagent_containers/blood/OMinus{
-	list_reagents = list(/datum/reagent/blood = 200);
 	name = "blood pack - O-"
 	},
 /obj/item/reagent_containers/blood/OPlus{
-	list_reagents = list(/datum/reagent/blood = 200);
 	name = "blood pack - O+"
 	},
 /obj/item/reagent_containers/blood/lizard{
-	list_reagents = list(/datum/reagent/blood = 200);
 	name = "blood pack - L"
 	},
-/obj/item/reagent_containers/blood/elzuose{
-	list_reagents = list(/datum/reagent/consumable/liquidelectricity = 200)
-	},
+/obj/item/reagent_containers/blood/elzuose,
 /obj/item/reagent_containers/blood/synthetic{
-	list_reagents = list(/datum/reagent/blood = 200);
 	name = "blood pack - Coolant"
 	},
 /obj/item/reagent_containers/blood/random{
-	list_reagents = list(/datum/reagent/blood = 200);
 	name = "blood pack - L";
 	icon_state = "bloodpack"
 	},
 /obj/item/reagent_containers/blood/random{
-	list_reagents = list(/datum/reagent/blood = 200);
 	name = "blood pack - Coolant";
 	icon_state = "bloodpack"
 	},
 /obj/item/reagent_containers/blood/random{
-	list_reagents = list(/datum/reagent/blood = 200);
 	name = "blood pack - O+";
 	icon_state = "bloodpack"
 	},
@@ -8948,24 +8860,12 @@
 	pixel_x = 7;
 	pixel_y = 2
 	},
-/obj/item/reagent_containers/food/snacks/ration/entree/lemon_pepper_chicken{
-	list_reagents = list(/datum/reagent/consumable/nutriment = 6)
-	},
-/obj/item/reagent_containers/food/snacks/ration/side/jellied_eels{
-	list_reagents = list(/datum/reagent/consumable/nutriment = 4)
-	},
-/obj/item/reagent_containers/food/snacks/ration/side/pretzel_sticks_honey_mustard{
-	list_reagents = list(/datum/reagent/consumable/nutriment = 4)
-	},
-/obj/item/reagent_containers/food/snacks/ration/snack/blue_raspberry_candies{
-	list_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/sugar = 3)
-	},
-/obj/item/reagent_containers/food/snacks/ration/snack/peanut_cranberry_mix{
-	list_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/sugar = 3)
-	},
-/obj/item/reagent_containers/food/snacks/ration/pack/freeze_dried_coffee_chocolate{
-	list_reagents = list(/datum/reagent/consumable/coffee = 5, /datum/reagent/consumable/coco = 3)
-	},
+/obj/item/reagent_containers/food/snacks/ration/entree/lemon_pepper_chicken,
+/obj/item/reagent_containers/food/snacks/ration/side/jellied_eels,
+/obj/item/reagent_containers/food/snacks/ration/side/pretzel_sticks_honey_mustard,
+/obj/item/reagent_containers/food/snacks/ration/snack/blue_raspberry_candies,
+/obj/item/reagent_containers/food/snacks/ration/snack/peanut_cranberry_mix,
+/obj/item/reagent_containers/food/snacks/ration/pack/freeze_dried_coffee_chocolate,
 /obj/item/ration_heater,
 /obj/item/holosign_creator/security{
 	dir = 1;
@@ -9721,24 +9621,20 @@
 	pixel_y = -2
 	},
 /obj/item/reagent_containers/pill/mannitol{
-	list_reagents = list(/datum/reagent/medicine/mannitol = 50);
 	name = "mannitol pill (50u)";
 	pixel_x = -2
 	},
 /obj/item/reagent_containers/pill/mannitol{
-	list_reagents = list(/datum/reagent/medicine/mannitol = 50);
 	name = "mannitol pill (50u)";
 	pixel_x = 1;
 	pixel_y = -7
 	},
 /obj/item/reagent_containers/pill/mannitol{
-	list_reagents = list(/datum/reagent/medicine/mannitol = 50);
 	name = "mannitol pill (50u)";
 	pixel_x = 5;
 	pixel_y = -3
 	},
 /obj/item/reagent_containers/pill/epinephrine{
-	list_reagents = list(/datum/reagent/medicine/epinephrine = 15);
 	name = "epinephrine pill (15u)";
 	pixel_x = 5
 	},
@@ -9751,61 +9647,51 @@
 	},
 /obj/structure/table_frame,
 /obj/item/reagent_containers/pill/epinephrine{
-	list_reagents = list(/datum/reagent/medicine/epinephrine = 15);
 	name = "epinephrine pill (15u)";
 	pixel_x = -8;
 	pixel_y = -7
 	},
 /obj/item/reagent_containers/pill/epinephrine{
-	list_reagents = list(/datum/reagent/medicine/epinephrine = 15);
 	name = "epinephrine pill (15u)";
 	pixel_x = 8;
 	pixel_y = -2
 	},
 /obj/item/reagent_containers/pill/epinephrine{
-	list_reagents = list(/datum/reagent/medicine/epinephrine = 15);
 	name = "epinephrine pill (15u)";
 	pixel_x = 3;
 	pixel_y = 8
 	},
 /obj/item/reagent_containers/pill/epinephrine{
-	list_reagents = list(/datum/reagent/medicine/epinephrine = 15);
 	name = "epinephrine pill (15u)";
 	pixel_x = -6;
 	pixel_y = 5
 	},
 /obj/item/reagent_containers/pill/epinephrine{
-	list_reagents = list(/datum/reagent/medicine/epinephrine = 15);
 	name = "epinephrine pill (15u)";
 	pixel_x = 5;
 	pixel_y = -7
 	},
 /obj/item/reagent_containers/pill/epinephrine{
-	list_reagents = list(/datum/reagent/medicine/epinephrine = 15);
 	name = "epinephrine pill (15u)";
 	pixel_x = -5;
 	pixel_y = 3
 	},
 /obj/item/reagent_containers/pill/mannitol{
-	list_reagents = list(/datum/reagent/medicine/mannitol = 50);
 	name = "mannitol pill (50u)";
 	pixel_x = -4;
 	pixel_y = -6
 	},
 /obj/item/reagent_containers/pill/mannitol{
-	list_reagents = list(/datum/reagent/medicine/mannitol = 50);
 	name = "mannitol pill (50u)";
 	pixel_x = -1;
 	pixel_y = 2
 	},
 /obj/item/reagent_containers/pill/mannitol{
-	list_reagents = list(/datum/reagent/medicine/mannitol = 50);
 	name = "mannitol pill (50u)";
 	pixel_x = 2;
 	pixel_y = 2
 	},
 /obj/item/reagent_containers/pill/mannitol{
-	list_reagents = list(/datum/reagent/medicine/mannitol = 50);
 	name = "mannitol pill (50u)";
 	pixel_x = 3
 	},
@@ -9822,7 +9708,6 @@
 /obj/item/clothing/mask/surgical,
 /obj/item/razor,
 /obj/item/reagent_containers/medigel/synthflesh{
-	list_reagents = list(/datum/reagent/medicine/synthflesh = 60);
 	pixel_x = -3;
 	pixel_y = -1
 	},
@@ -10510,24 +10395,12 @@
 	pixel_x = -4;
 	pixel_y = -2
 	},
-/obj/item/reagent_containers/food/drinks/beer{
-	list_reagents = list(/datum/reagent/consumable/ethanol/beer = 30)
-	},
-/obj/item/reagent_containers/food/drinks/beer{
-	list_reagents = list(/datum/reagent/consumable/ethanol/beer = 30)
-	},
-/obj/item/reagent_containers/food/drinks/beer{
-	list_reagents = list(/datum/reagent/consumable/ethanol/beer = 30)
-	},
-/obj/item/reagent_containers/food/drinks/beer{
-	list_reagents = list(/datum/reagent/consumable/ethanol/beer = 30)
-	},
-/obj/item/reagent_containers/food/drinks/beer{
-	list_reagents = list(/datum/reagent/consumable/ethanol/beer = 30)
-	},
-/obj/item/reagent_containers/food/drinks/beer{
-	list_reagents = list(/datum/reagent/consumable/ethanol/beer = 30)
-	},
+/obj/item/reagent_containers/food/drinks/beer,
+/obj/item/reagent_containers/food/drinks/beer,
+/obj/item/reagent_containers/food/drinks/beer,
+/obj/item/reagent_containers/food/drinks/beer,
+/obj/item/reagent_containers/food/drinks/beer,
+/obj/item/reagent_containers/food/drinks/beer,
 /obj/item/toy/plush/spider{
 	dir = 4;
 	pixel_x = 2;
@@ -10540,35 +10413,30 @@
 	pixel_y = 4
 	},
 /obj/item/reagent_containers/pill/neurine{
-	list_reagents = list(/datum/reagent/medicine/neurine = 10);
 	name = "neurine pill (10u)";
 	dir = 4;
 	pixel_x = 2;
 	pixel_y = 1
 	},
 /obj/item/reagent_containers/pill/neurine{
-	list_reagents = list(/datum/reagent/medicine/neurine = 10);
 	name = "neurine pill (10u)";
 	dir = 4;
 	pixel_x = -1;
 	pixel_y = 7
 	},
 /obj/item/reagent_containers/pill/neurine{
-	list_reagents = list(/datum/reagent/medicine/neurine = 10);
 	name = "neurine pill (10u)";
 	dir = 4;
 	pixel_x = 3;
 	pixel_y = 5
 	},
 /obj/item/reagent_containers/pill/neurine{
-	list_reagents = list(/datum/reagent/medicine/neurine = 10);
 	name = "neurine pill (10u)";
 	dir = 4;
 	pixel_x = -5;
 	pixel_y = 8
 	},
 /obj/item/reagent_containers/pill/neurine{
-	list_reagents = list(/datum/reagent/medicine/neurine = 10);
 	name = "neurine pill (10u)";
 	dir = 4;
 	pixel_x = 1;
@@ -10835,9 +10703,7 @@
 /obj/item/rcl/pre_loaded{
 	icon_state = "rcl-30"
 	},
-/obj/item/reagent_containers/spray/weedspray{
-	list_reagents = list(/datum/reagent/toxin/plantbgone/weedkiller = 100)
-	},
+/obj/item/reagent_containers/spray/weedspray,
 /obj/item/sparkler{
 	pixel_x = -9
 	},

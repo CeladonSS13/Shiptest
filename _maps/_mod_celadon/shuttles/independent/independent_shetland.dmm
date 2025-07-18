@@ -531,9 +531,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/fore)
 "eJ" = (
-/obj/effect/spawner/random/vending/snack{
-	all_items_free = 1
-	},
+/obj/effect/spawner/random/vending/snack,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "eP" = (
@@ -2451,7 +2449,6 @@
 /obj/machinery/door/airlock/engineering{
 	dir = 4;
 	name = "Reactor";
-	normalspeed = 0
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
@@ -4553,7 +4550,6 @@
 /area/ship/crew/hydroponics)
 "Tc" = (
 /obj/effect/spawner/random/vending/cola{
-	all_items_free = 1
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
