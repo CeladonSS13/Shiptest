@@ -12,25 +12,19 @@
 		return TRUE
 	return FALSE
 
-/datum/emote/living/subtlerag/run_emote(mob/user, params, type_override = null)
-	if(is_banned_from(user, "emote"))
-		to_chat(user, "You cannot send subtle emotes (banned).")
-		return FALSE
-	else if(user.client && user.client.prefs.muted & MUTE_IC)
-		to_chat(user, "You cannot send IC messages (muted).")
-		return FALSE
+/datum/emote/living/subtlerag/run_emote(mob/living/user, params, type_override = null)
+	if(SSdbcore.IsConnected())
+		if(is_banned_from(user, "emote"))
+			to_chat(user, "You cannot send subtle emotes (banned).")
+			return FALSE
+		else if(user.client && user.client.prefs.muted & MUTE_IC)
+			to_chat(user, "You cannot send IC messages (muted).")
+			return FALSE
 	else if(!params)
-		var/subtle_emote = stripped_multiline_input(user, "Choose an emote to display.", "subtlerag" , null, MAX_MESSAGE_LEN)
+		user.set_typing_indicator(TRUE, isMe = TRUE)
+		var/subtle_emote = stripped_multiline_input(user, "Choose an emote to display.", "Subtlerag" , null, MAX_MESSAGE_LEN)
+		user.set_typing_indicator(FALSE)
 		if(subtle_emote && !check_invalid(user, subtle_emote))
-			var/type = input("Is this a visible or hearable emote?") as null|anything in list("Visible", "Hearable")
-			switch(type)
-				if("Visible")
-					emote_type = EMOTE_VISIBLE
-				if("Hearable")
-					emote_type = EMOTE_AUDIBLE
-				else
-					alert("Unable to use this emote, must be either hearable or visible.")
-					return
 			message = subtle_emote
 		else
 			return FALSE
