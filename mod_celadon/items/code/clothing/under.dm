@@ -161,6 +161,7 @@
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/clothing/suit/in_hands/padded_left.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/clothing/suit/in_hands/padded_right.dmi'
 	icon_state = "paddedunder"
+	item_state = "paddedunder"
 	// inhand_icon_state = "paddedunder"
 	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON | TAJARA_VARIATION | RIOL_VARIATION
 
@@ -168,4 +169,34 @@
 	name = "feathered serenity dress"
 	desc = "A meticulously handcrafted dress that is lined on the inside with feathers and down. Twirling in this dress provides a satisfying result!"
 	icon_state = "paddeddress"
+	item_state = "paddeddress"
 	// inhand_icon_state = "paddeddress"
+
+// MARK: SKIRTS
+/obj/item/clothing/under/dress/skirt/swimming
+	name = "red bra and striped skirt"
+	desc = "A red side-slit skirt with stripes! Comes with a matching two-tone bra."
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/swimming_skirts.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/swimming_skirts.dmi'
+	icon_state = "striped_skirt"
+	item_state = "striped_skirt"
+	body_parts_covered = CHEST | GROIN | LEGS
+	roll_down = TRUE
+	has_sensor = NO_SENSORS
+	random_sensor = FALSE
+	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON | TAJARA_VARIATION | RIOL_VARIATION
+	// greyscale_config = null
+	// greyscale_config_worn = null
+	// greyscale_colors = null
+
+/obj/item/clothing/under/dress/skirt/swimming/red_skirt
+	name = "red bra and skirt"
+	desc = "An eye-catching knee-length red skirt, with a golden-yellow trim. Comes with a matching two-tone bra."
+	icon_state = "red_skirt"
+	item_state = "red_skirt"
+
+/obj/item/clothing/under/dress/skirt/swimming/black_skirt
+	name = "black bra and skirt"
+	desc = "A black side-slit skirt with a golden-yellow trim. Screams 'affluent goth'. Comes with a funky-looking matching bra."
+	icon_state = "black_skirt"
+	item_state = "black_skirt"
