@@ -1,7 +1,7 @@
 //shows a list of clients we could send PMs to, then forwards our choice to cmd_Mentor_pm
 /client/proc/cmd_mentor_pm_panel()
-	set category = "Mentor"
-	set name = "Mentor PM"
+	// set category = "Mentor"
+	// set name = "Mentor PM" // [CELADON-DELETE] Mentors not works!!!
 	if(!check_mentor())
 		to_chat(src, span_warning("Error: Mentor-PM-Panel: Only Mentors may use this command."))
 		return

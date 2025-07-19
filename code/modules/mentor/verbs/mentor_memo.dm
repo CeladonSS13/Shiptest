@@ -1,6 +1,6 @@
 /client/proc/mentor_memo()
-	set name = "Mentor Memos"
-	set category = "Server"
+	// set name = "Mentor Memos" // [CELADON-DELETE] Mentors not works!!!
+	// set category = "Server"
 	if(!check_rights(0))
 		return
 	if(!SSdbcore.IsConnected())
@@ -12,8 +12,8 @@
 	mentor_memo_output(memotask)
 
 /client/proc/show_mentor_memo()
-	set name = "Show Memos"
-	set category = "Mentor"
+	// set name = "Show Memos" // [CELADON-DELETE] Mentors not works!!!
+	// set category = "Mentor"
 	if(!check_mentor())
 		return
 	if(!SSdbcore.IsConnected())

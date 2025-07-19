@@ -128,10 +128,10 @@ GLOBAL_PROTECT(href_token)
 		log_admin("[key_name(usr)][msg]")
 		return
 	if(owner)
-		GLOB.admins -= owner
+		// GLOB.admins -= owner
 		owner.remove_admin_verbs()
 		owner.init_verbs()
-		owner.holder = null
+		// owner.holder = null
 		owner = null
 
 /datum/admins/proc/check_for_rights(rights_required)
