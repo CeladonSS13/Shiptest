@@ -97,6 +97,13 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code/modules/missions/outpost/research_mission.dm` - Окргуление координат
 
+- ADD: `code/datums/looping_sounds/machinery_sounds.dm` - Гравген во включённом состоянии жужжит.
+- ADD: `code/game/machinery/shuttle/ship_gravity.dm` - Гравген во включённом состоянии слегка светится, жужжит, а "интерфейс" светится в темноте. А также добавлено взаимодействие с ЕМП, при котором с 50% шансом он переключится.
+- ADD: `code/game/mecha/equipment/tools/mining_tools.dm` Мех с активной дрелью теперь копает камень.
+- ADD: `code/game/objects/structures/crates_lockers/closets.dm` Мехи теперь нельзя пихать в ящики.
+- ADD: `code/modules/projectiles/gun.dm` - Действие прицеливания теперь выдаётся только когда оружие держится в двух руках.
+- EDIT: `code/game/atoms_movable.dm` - В космосе теперь нельзя передвигаться за счёт взаимно пульнутых мобов
+
 - EDIT: `code/modules/clothing/head/helmet.dm` - Отображение оверлеев
 
 - EDIT: `code/modules/surgery/surgery_step.dm` - Исправление ухода операции в бесконечный цикл
