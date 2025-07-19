@@ -1,0 +1,75 @@
+name: Сообщить о баге
+description: Сообщить найденой ошибке в игре
+title: "[БАГ]: "
+labels: [БАГ]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Называйте заголовок кратко и понятно:
+        ### ПРИМЕР: `[БАГ]: Автолат - Вызывает невыносимые лаги`
+        Это поможет быстрее передать сути проблемы.
+        Можно называть и так:
+        **`[БАГ]: Неработающий автолат - Создающий лаги`**
+        #### Так же в игре есть кнопка «Bug Report» в правом верхнем углу игры, при её нажатии часть информации ниже заполнится автоматически.
+        #### Если же это проблема на карте/руине, то используйте другую форму чтоб ваша проблема не потерялась среди багов и для более быстрой реакции маперов.
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: Описание бага
+      description: Четкое и понятное описание сути бага.
+      placeholder: Не работает автолат, вызывает лаги при попытке с ним взаимодействовать.
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug_reproduction
+    attributes:
+      label: Шаги воспроизведения
+      description: Опишите способ воспроизведения бага.
+      placeholder: |
+        1. Найти автолат
+        2. Открыть его меню, кликнул ЛКМ
+        3. Получить лаги
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behaviour
+    attributes:
+      label: Ожидаемое поведение
+      description: Четкое и понятное описание того, что должно было произойти.
+      placeholder: Работающий автолат, без лагов.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Дополнительная информация
+      description: (Опционально) Здесь можете описать любую дополнительную информацию, которая касается бага. Также можете приложить скриншоты.
+      placeholder: Любая дополнительная информация, которая поможет лучше описать суть проблемы.
+
+  - type: markdown
+    attributes:
+      value: "## Техническая информация"
+
+  - type: input
+    id: reporting-version
+    attributes:
+      label: "Версия клиента:"
+      description: |
+        Укажите версию клиента, на которой произошёл баг. Указана в клиенте BYOND в меню 'About BYOND...'.
+        Настоятельно рекомендуется указать эту информацию, особенно если вас беспокоят визуальные аспекты игры.
+      placeholder: "xxx.xxxx"
+    validations:
+      required: false
+
+  - type: input
+    id: round-id
+    attributes:
+      label: "Round ID:"
+      description: Если вы обнаружили эту проблему, играя на серверах, размещенных на Celadon, сообщите Round ID можно найти на панели состояния в игре или в канале дискорд сервера https://discord.gg/rxsggTJzY3, в канале #round-report
+      placeholder: "XXXXXX"
+    validations:
+      required: false
