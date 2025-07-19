@@ -1451,7 +1451,7 @@
 				pod = new()
 			// [CELADON-ADD] - logging admin actions.
 			message_admins("[key_name(usr)] spawned [number] x [english_list(paths)] at [where] - [ADMIN_VERBOSEJMP(loc)].")
-			log_celadon_admin("ADMIN: [key_name(usr)] spawned [number] x [english_list(paths)] at [where] - [target.x]x[target.y]x[target.z].")
+			log_celadon_admin("ADMIN: [key_name(usr)] spawned [number] x [english_list(paths)] at [where] - X[target.x]/Y[target.y]/Z[target.z].")
 			// [/CELADON-ADD]
 			for (var/path in paths)
 				for (var/i = 0; i < number; i++)
