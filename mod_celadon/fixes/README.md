@@ -12,7 +12,9 @@
 <!-- Название мода. Не важно на русском или на английском. -->
 ## Fixes - фиксы
 
-ID мода: CELADON_FIXES
+ID мода: 
+CELADON_FIXES
+CELADON_FIXES_BLOOD
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -104,6 +106,10 @@ Weebstick (Красная катана) теперь нельзя сломать
 - EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Делаем так чтобы кепори могли брать мелкие предметы в клюв
 
 - EDIT: `code/datums/mapgen/planetary/waterGenerator.dm` : Убираем спавн лавы на водяной планете
+
+- EDIT, ADD: `code/modules/mob/living/blood.dm` : Вводим нормальный уровень для крови
+- EDIT, ADD: `code/game/machinery/iv_drip.dm` : Проверка крови у пациента
+- ADD: `code/modules/reagents/chemistry/holder.dm` : Вводим ограничения на шприцы, бикеры, капельницы
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
