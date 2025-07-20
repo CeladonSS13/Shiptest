@@ -25,9 +25,16 @@ SUBSYSTEM_DEF(ai_controllers)
 /datum/controller/subsystem/ai_controllers/fire(resumed)
 	for(var/datum/ai_controller/ai_controller as anything in active_ai_controllers)
 		// [CELADON-EDIT] — IDLE_NPC_SLEEP
-		ai_controller.check_should_sleep()
-		// [/CELADON-EDIT]
+		if(isnull(ai_controller)) // Раньше удаление из списка было в ai_controller/proc/set_ai_status(), но чтобы мониторить отключенных перенёс из прока выключение на проверку удалённого датума
+			active_ai_controllers -= ai_controller.pawn
+			continue
 
+		ai_controller.check_should_sleep()
+
+		if(ai_controller.ai_status == AI_STATUS_OFF)
+			continue
+
+		// [/CELADON-EDIT]
 		if(!COOLDOWN_FINISHED(ai_controller, failed_planning_cooldown))
 			continue
 
