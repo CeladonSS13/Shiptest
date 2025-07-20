@@ -158,7 +158,7 @@
 		message += "\n Следующие экспериментальные изменения активны и возможно причина вашей проблемы. В таком случае, постарайтесь не плодить ишуи, и попробуйте найти существующую, где вы можете оставить больше деталей: \n"
 		message += GLOB.revdata.GetTestMergeInfo(FALSE)
 
-	if(tgui_alert(usr, message, "Сообщить о баге, это откроет браузер. Вы уверены?", list("Да", "Нет")) != "Да")
+	if(tgui_alert(usr, message, "Сообщить о баге", list("Да", "Нет")) != "Да")
 		return
 
 	var/base_link = githuburl + "/issues/new?template=bug_report_form.yml"
