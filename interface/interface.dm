@@ -163,13 +163,14 @@
 
 	var/base_link = githuburl + "/issues/new?template=bug_report_form.yml"
 	var/list/concatable = list(base_link)
-
-	var/client_version = "[byond_version].[byond_build]"
-	concatable += ("&reporting-version=" + client_version)
+	var/servername = CONFIG_GET(string/servername)
+	var/client_version = "Версия клиента: [byond_version].[byond_build]"
 
 	// the way it works is that we use the ID's that are baked into the template YML and replace them with values that we can collect in game.
 	if(GLOB.round_id)
-		concatable += ("&round-id=" + GLOB.round_id)
+		concatable += ("&additional-info=" + "[client_version]\nRound ID: [GLOB.round_id][servername ? " ([servername])" : ""]")
+	else
+		concatable += ("&additional-info=" + client_version)
 
 	// Insert testmerges
 	if(has_testmerge_data)
@@ -179,7 +180,7 @@
 			all_tms += "- \[[tm.title]\]([githuburl]/pull/[tm.number])"
 		var/all_tms_joined = jointext(all_tms, "\n")
 
-		concatable += ("&test-merges=" + url_encode(all_tms_joined))
+		concatable += ("&additional-info=" + "[client_version]\n[url_encode(all_tms_joined)]")
 
 	DIRECT_OUTPUT(src, link(jointext(concatable, "")))
 
