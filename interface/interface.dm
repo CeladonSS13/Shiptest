@@ -194,7 +194,7 @@
 		to_chat(src, span_danger("Cсылка на Discord не установлена в конфигурацию сервера. Пожалуйста, оповестите об этом хоста."))
 		return
 
-	if(tgui_alert(usr, "Перейти на наш Discord сервер, это откроет браузер. Вы уверены?", "GitHub", list("Да", "Нет")) != "Да")
+	if(tgui_alert(usr, "Перейти на наш Discord сервер, это откроет браузер. Вы уверены?", "Перейти на Discord сервер", list("Да", "Нет")) != "Да")
 		return
 
 	DIRECT_OUTPUT(src, link(discordurl))
