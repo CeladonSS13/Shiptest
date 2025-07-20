@@ -7,8 +7,20 @@
 
 /// This is the main proc. It instantly moves our mobile port to stationary port `new_dock`.
 /obj/docking_port/mobile/proc/initiate_docking(obj/docking_port/stationary/new_dock, movement_direction, force=FALSE)
+	log_shuttle("[src] [REF(src)] DOCKING: Initiating docking to [new_dock] [REF(new_dock)], Force: [force]")
+	
+	// Проверка на QDELETED для предотвращения ошибок
+	if(QDELETED(src))
+		log_shuttle("[src] [REF(src)] DOCKING: ERROR - Source port is being deleted")
+		return DOCKING_IMMOBILIZED
+	
+	if(QDELETED(new_dock))
+		log_shuttle("[src] [REF(src)] DOCKING: ERROR - Target port [new_dock] [REF(new_dock)] is being deleted")
+		return DOCKING_NULL_DESTINATION
+	
 	// Crashing this ship with NO SURVIVORS
 	if(new_dock.docked == src)
+		log_shuttle("[src] [REF(src)] DOCKING: Already docked to [new_dock] [REF(new_dock)]")
 		remove_ripples()
 		return DOCKING_SUCCESS
 
@@ -160,14 +172,22 @@
 		throw_exception(e3)
 
 /obj/docking_port/mobile/proc/takeoff(list/old_turfs, list/new_turfs, list/moved_atoms, rotation, movement_direction, obj/docking_port/stationary/old_dock, obj/docking_port/stationary/new_dock, area/underlying_old_area, list/all_towed_shuttles)
+	log_shuttle("[src] [REF(src)] TAKEOFF: From [old_dock] [REF(old_dock)] to [new_dock] [REF(new_dock)], Towed shuttles: [all_towed_shuttles.len]")
 	var/list/exceptions_list = list()
 	//Keep track of what shuttles we're landing on in case we're relanding on a shuttle we were on.
 	var/list/parent_shuttles = list()
-	if(old_dock && old_dock.owner_ship)
+	if(old_dock && old_dock.owner_ship && !QDELETED(old_dock.owner_ship))
+		log_shuttle("[src] [REF(src)] TAKEOFF: Removing from towed_shuttles of [old_dock.owner_ship] [REF(old_dock.owner_ship)]")
 		old_dock.owner_ship.towed_shuttles -= src
-	if(new_dock.owner_ship)
+	else if(old_dock && old_dock.owner_ship)
+		log_shuttle("[src] [REF(src)] TAKEOFF: WARNING - Old dock owner ship is being deleted: [old_dock.owner_ship] [REF(old_dock.owner_ship)]")
+		
+	if(new_dock.owner_ship && !QDELETED(new_dock.owner_ship))
+		log_shuttle("[src] [REF(src)] TAKEOFF: Adding to towed_shuttles of [new_dock.owner_ship] [REF(new_dock.owner_ship)]")
 		new_dock.owner_ship.towed_shuttles |= src
 		parent_shuttles += new_dock.owner_ship
+	else if(new_dock.owner_ship)
+		log_shuttle("[src] [REF(src)] TAKEOFF: WARNING - New dock owner ship is being deleted: [new_dock.owner_ship] [REF(new_dock.owner_ship)]")
 	//Matrix multiply to get from current coords to new coords
 	//Calculate this before this mobile port moves
 	var/matrix/displacement_matrix = matrix(-src.x, -src.y, MATRIX_TRANSLATE) * matrix(rotation, MATRIX_ROTATE) *matrix(new_dock.x, new_dock.y, MATRIX_TRANSLATE)
@@ -272,6 +292,7 @@
 		throw_exception(e4)
 
 /obj/docking_port/mobile/proc/cleanup_runway(obj/docking_port/stationary/new_dock, list/old_turfs, list/new_turfs, list/areas_to_move, list/moved_atoms, rotation, movement_direction, area/underlying_old_area, list/all_towed_shuttles)
+	log_shuttle("[src] [REF(src)] CLEANUP: Starting cleanup for docking to [new_dock] [REF(new_dock)], Moved atoms: [moved_atoms.len]")
 	var/list/exceptions_list = list()
 	for(var/area/A1 in underlying_old_area)
 		try
