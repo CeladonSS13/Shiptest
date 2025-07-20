@@ -6,7 +6,7 @@ PROCESSING_SUBSYSTEM_DEF(radiation)
 	var/list/warned_atoms = list()
 
 	// Максимальное значение радиации для предотвращения чрезмерного накопления
-	var/max_radiation_value = 10000	// [CELADON-ADD] - CELADON_FIXES_RADIATION
+	var/max_radiation_value = 500000	// [CELADON-ADD] - CELADON_FIXES_RADIATION
 
 /datum/controller/subsystem/processing/radiation/proc/warn(datum/component/radioactive/contamination)
 	if(!contamination || !contamination.parent || QDELETED(contamination))
