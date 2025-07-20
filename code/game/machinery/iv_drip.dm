@@ -137,9 +137,12 @@
 				// [CELADON-ADD] - CELADON_FIXES_BLOOD
 				// Проверяем, если это кровь и если у пациента уже достаточно крови
 				var/actual_transfer_amount = transfer_amount * seconds_per_tick * 0.5
-				var/datum/reagent/blood/B = beaker.reagents.has_reagent(/datum/reagent/blood)
-				if(B && ishuman(attached))
+				
+				// Проверяем, содержит ли контейнер кровь
+				if(ishuman(attached) && beaker.reagents.has_reagent(/datum/reagent/blood))
 					var/mob/living/carbon/human/H = attached
+					
+					// Ограничиваем переливание крови до BLOOD_VOLUME_NORMAL независимо от типа крови
 					if(H.blood_volume >= BLOOD_VOLUME_NORMAL)
 						actual_transfer_amount = min(actual_transfer_amount, BLOOD_VOLUME_NORMAL - H.blood_volume)
 						if(actual_transfer_amount <= 0)
