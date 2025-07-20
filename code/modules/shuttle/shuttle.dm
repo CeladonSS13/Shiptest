@@ -35,7 +35,18 @@
 	var/obj/hangar_crate_spawner/crate_spawner = null
 
 /obj/docking_port/Destroy(force)
+	var/caller = "Unknown"
+	var/stack_trace_info = "[ADMIN_FULLMONTY(src)]"
+	try
+		caller = usr ? "[usr] ([usr.ckey])" : "Server/Internal"
+		stack_trace_info = "\n[ADMIN_FULLMONTY(src)]\n[ADMIN_COORDJMP(src)]\nCaller: [caller]\nStack Trace: [stack_trace()]"
+		log_shuttle("[src] [REF(src)] DESTROYING: Called by [caller], Force: [force], Docked: [docked ? REF(docked) : "null"]")
+		message_admins("Docking port [src] is being destroyed! [stack_trace_info]")
+	catch(var/exception/e)
+		log_shuttle("Error logging docking port destruction: [e]")
+
 	if(docked)
+		log_shuttle("[src] [REF(src)] DESTROYING: Clearing docked reference [docked] [REF(docked)]")
 		docked.docked = null
 		docked = null
 	return ..()
@@ -486,14 +497,24 @@
 	SSshuttle.mobile += src
 
 /obj/docking_port/mobile/Destroy(force)
+	var/caller = "Unknown"
+	var/stack_trace_info = "[ADMIN_FULLMONTY(src)]"
+	try
+		caller = usr ? "[usr] ([usr.ckey])" : "Server/Internal"
+		stack_trace_info = "\n[ADMIN_FULLMONTY(src)]\n[ADMIN_COORDJMP(src)]\nCaller: [caller]\nForce: [force]\nDocked: [docked ? REF(docked) : "null"]\nStack Trace: [stack_trace()]"
+		log_shuttle("[src] [REF(src)] MOBILE DESTROYING: Called by [caller], Force: [force], Docked: [docked ? REF(docked) : "null"]")
+	catch(var/exception/e)
+		log_shuttle("Error logging mobile docking port destruction: [e]")
+
 	if(!QDELETED(current_ship))
-		message_admins("Shuttle [src] tried to delete at [ADMIN_VERBOSEJMP(src)], but failed!")
+		message_admins("Shuttle [src] tried to delete at [ADMIN_VERBOSEJMP(src)], but failed! [stack_trace_info]")
 		stack_trace("Ship attempted deletion while current ship still exists! Aborting!")
 		return QDEL_HINT_LETMELIVE
 
 	if(SSticker.IsRoundInProgress())
-		message_admins("Shuttle [src] deleted at [ADMIN_VERBOSEJMP(src)]")
-		log_game("Shuttle [src] deleted at [AREACOORD(src)]")
+		message_admins("Shuttle [src] deleted at [ADMIN_VERBOSEJMP(src)] [stack_trace_info]")
+		log_game("Shuttle [src] deleted at [AREACOORD(src)], called by [caller]")
+		log_shuttle("[src] [REF(src)] MOBILE DESTROYING: In progress round deletion")
 
 	spawn_points.Cut()
 
@@ -576,13 +597,29 @@
 //Returns all shuttles on top of this shuttle.
 //This list is topologically sorted; for any shuttle that is above another shuttle, the higher shuttle will come after the lower shuttle in the list.
 /obj/docking_port/mobile/proc/get_all_towed_shuttles()
+	log_shuttle("[src] [REF(src)] TOWED: Getting all towed shuttles, Current towed: [towed_shuttles.len]")
 	//Generate a list of all edges in the towed shuttle heirarchy with src as the root.
 	var/list/edges = list(src)
 	var/obj/docking_port/mobile/M
 	var/dequeue_pointer = 0
 	while(dequeue_pointer++ < length(edges))
 		M = edges[dequeue_pointer]
+		if(QDELETED(M))
+			log_shuttle("[src] [REF(src)] TOWED: WARNING - Shuttle [M] [REF(M)] is being deleted, skipping")
+			continue
+			
+		log_shuttle("[src] [REF(src)] TOWED: Processing [M] [REF(M)], Towed shuttles: [M.towed_shuttles.len]")
 		for(var/obj/docking_port/mobile/child in M.towed_shuttles)
+			if(QDELETED(child))
+				log_shuttle("[src] [REF(src)] TOWED: WARNING - Child shuttle [child] [REF(child)] is being deleted, skipping")
+				continue
+				
+			// Проверка на циклические ссылки
+			if(child == src)
+				log_shuttle("[src] [REF(src)] TOWED: ERROR - Detected cyclic reference, child is self")
+				continue
+				
+			log_shuttle("[src] [REF(src)] TOWED: Adding child [child] [REF(child)] to edges")
 			edges[child] = edges[child] ? edges[child] | M : list(M)
 	edges -= src
 
@@ -599,18 +636,43 @@
 				edges -= M
 				roots += M
 	if(edges.len) //If the graph is cyclic, that means that a shuttle is directly or indirectly landed ontop of itself. Cyclic shuttles have not moved from edges to .
-		CRASH("The towed shuttles of [src] is cyclic, a shuttle is ontop of itself!")
+		var/error_msg = "The towed shuttles of [src] is cyclic, a shuttle is ontop of itself!"
+		log_shuttle("[src] [REF(src)] TOWED: ERROR - [error_msg]")
+		message_admins("Shuttle error detected: [error_msg] at [ADMIN_VERBOSEJMP(src)]")
+		
+		// Попытка исправить циклические ссылки
+		for(var/obj/docking_port/mobile/problem_shuttle in edges)
+			log_shuttle("[src] [REF(src)] TOWED: Attempting to fix cyclic reference by removing [problem_shuttle] [REF(problem_shuttle)] from towed_shuttles")
+			towed_shuttles -= problem_shuttle
+			
+		// Возвращаем только себя, чтобы избежать краша
+		return list(src)
 
 //this is to check if this shuttle can physically dock at dock S
 /obj/docking_port/mobile/proc/canDock(obj/docking_port/stationary/S, intention_to_dock = TRUE)
+	log_shuttle("[src] [REF(src)] CANDOCK: Checking if can dock to [S] [REF(S)], Intention to dock: [intention_to_dock]")
+	
+	// Проверка на QDELETED для предотвращения ошибок
+	if(QDELETED(src))
+		log_shuttle("[src] [REF(src)] CANDOCK: ERROR - Source port is being deleted")
+		return SHUTTLE_NOT_A_DOCKING_PORT
+	
+	if(QDELETED(S))
+		log_shuttle("[src] [REF(src)] CANDOCK: ERROR - Target port [S] [REF(S)] is being deleted")
+		return SHUTTLE_NOT_A_DOCKING_PORT
+	
 	//coordinate of combined shuttle bounds in our dock's vector space (positive Y towards shuttle direction, positive determinant, our dock at (0,0))
-	var/list/bounds = return_union_bounds(get_all_towed_shuttles())
+	var/list/all_shuttles = get_all_towed_shuttles()
+	log_shuttle("[src] [REF(src)] CANDOCK: Got [all_shuttles.len] towed shuttles")
+	
+	var/list/bounds = return_union_bounds(all_shuttles)
 	var/tow_dwidth = bounds[1]
 	var/tow_dheight = bounds[2]
 	var/tow_rwidth = bounds[3] - tow_dwidth
 	var/tow_rheight = bounds[4] - tow_dheight
 
 	if(!istype(S))
+		log_shuttle("[src] [REF(src)] CANDOCK: Target is not a docking port")
 		return SHUTTLE_NOT_A_DOCKING_PORT
 
 	if(!S.enabled)
@@ -664,12 +726,26 @@
 	return SHUTTLE_CAN_DOCK
 
 /obj/docking_port/mobile/proc/check_dock(obj/docking_port/stationary/S, silent=FALSE, intention_to_dock = TRUE, datum/docking_ticket/ticket)
+	log_shuttle("[src] [REF(src)] CHECK_DOCK: Checking dock to [S] [REF(S)], Silent: [silent], Intention to dock: [intention_to_dock]")
+	
+	// Проверка на QDELETED для предотвращения ошибок
+	if(QDELETED(src))
+		log_shuttle("[src] [REF(src)] CHECK_DOCK: ERROR - Source port is being deleted")
+		return FALSE
+	
+	if(QDELETED(S))
+		log_shuttle("[src] [REF(src)] CHECK_DOCK: ERROR - Target port [S] [REF(S)] is being deleted")
+		return FALSE
+	
 	var/status = canDock(S, intention_to_dock)
+	log_shuttle("[src] [REF(src)] CHECK_DOCK: Status: [status]")
+	
 	if(status == SHUTTLE_CAN_DOCK)
 		return TRUE
 	else
 		if(status != SHUTTLE_ALREADY_DOCKED && !silent) // SHUTTLE_ALREADY_DOCKED is no cause for error
 			var/msg = "Shuttle [src] cannot dock at [S], error: [status]"
+			log_shuttle("[src] [REF(src)] CHECK_DOCK: [msg]")
 			message_admins(msg)
 		// We're already docked there, don't need to do anything.
 		// Triggering shuttle movement code in place is weird
@@ -774,8 +850,14 @@
 				oldT.ScrapeAway(baseturf_cache.len - k + 1)
 				break
 
+	log_shuttle("[src] [REF(src)] JUMP_NULL: Preparing to delete towed shuttles: [all_towed_shuttles.len - 1]")
 	for(var/obj/docking_port/mobile/shuttle in all_towed_shuttles - src)
+		if(QDELETED(shuttle))
+			log_shuttle("[src] [REF(src)] JUMP_NULL: WARNING - Towed shuttle [shuttle] [REF(shuttle)] is already being deleted")
+			continue
+		log_shuttle("[src] [REF(src)] JUMP_NULL: Deleting towed shuttle [shuttle] [REF(shuttle)]")
 		qdel(shuttle, TRUE)
+	log_shuttle("[src] [REF(src)] JUMP_NULL: Clearing towed_shuttles list, size: [towed_shuttles.len]")
 	towed_shuttles.Cut()
 
 /obj/docking_port/mobile/proc/create_ripples(obj/docking_port/stationary/S1, animate_time)
