@@ -155,10 +155,10 @@
 
 	var/message = "Нашли баг? Сообщите о нём нам! Это откроет вам страницу создания Issue на Github, открыть?"
 	if(has_testmerge_data)
-		message += "\n Следующие экспериментальные изменения активны и возможно причина вашей проблемы. В таком случае, постарайтесь не плодить ишуи, и попробуйте найти существующую, где вы можете оставить больше деталей: \n"
+		message += "\n Следующие экспериментальные изменения активны: \n"
 		message += GLOB.revdata.GetTestMergeInfo(FALSE)
 
-	if(tgui_alert(usr, message, "Сообщить о баге", list("Да", "Нет")) != "Да")
+	if(tgalert(usr, message, "Сообщить о баге", "Да", "Нет") != "Да")
 		return
 
 	var/base_link = githuburl + "/issues/new?template=bug_report_form.yml"
@@ -178,7 +178,7 @@
 		for(var/entry in testmerge_data)
 			var/datum/tgs_revision_information/test_merge/tm = entry
 			all_tms += "- \[[tm.title]\]([githuburl]/pull/[tm.number])"
-		var/all_tms_joined = jointext(all_tms, "\n")
+		var/all_tms_joined = jointext(all_tms, "%0A") // %0A is a newline for URL encoding because i don't trust \n to not break
 
 		concatable += ("&additional-info=" + "[client_version]\n[url_encode(all_tms_joined)]")
 
