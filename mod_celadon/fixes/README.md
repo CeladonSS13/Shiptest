@@ -17,7 +17,6 @@ ID мода: CELADON_FIXES
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
 -->
-CELADON_FIXES_RADIATION
 
 ### Описание мода
 
@@ -106,11 +105,6 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code/datums/mapgen/planetary/waterGenerator.dm` : Убираем спавн лавы на водяной планете
 
-
-
-
-
-- `code/datums/components/radioactive.dm`, `code/controllers/subsystem/radiation.dm`, `code/__HELPERS/radiation.dm`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
