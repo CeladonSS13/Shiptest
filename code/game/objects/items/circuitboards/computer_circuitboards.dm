@@ -41,10 +41,10 @@
 	to_chat(user, span_notice("Currently set to \"[dept_list[target_dept]]\"."))
 
 
-//obj/item/circuitboard/computer/shield
-//	name = "Shield Control (Computer Board)"
-//	icon_state = "command"
-//	build_path = /obj/machinery/computer/stationshield
+/obj/item/circuitboard/computer/ship/shield_control	// [CELADON] - CELADON_SHIP_SHIELD - Перенести потом
+	name = "Shield Control (Computer Board)"
+	icon_state = "command"
+	build_path = /obj/machinery/computer/ship/shield_control
 
 //Engineering
 

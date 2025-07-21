@@ -602,6 +602,14 @@
 	build_path = /obj/item/circuitboard/machine/shieldwallgen/atmos
 	category = list("Misc. Machinery")
 
+/datum/design/board/shield_generator	// [CELADON] - CELADON_SHIP_SHIELD - Перенести потом
+	name = "Machine Design (Ship Shield Generator)"
+	desc = "The circuit board for a ship shield generator."
+	id = "shield_generator"
+	build_path = /obj/item/circuitboard/machine/shield_generator
+	category = list("Engineering Machinery")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+
 /datum/design/board/fax
 	name = "Machine Design (Fax Machine)"
 	desc = "The circuit board for a fax machine."

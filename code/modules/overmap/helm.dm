@@ -270,6 +270,33 @@
 	.["burnPercentage"] = current_ship.burn_percentage
 	// [CELADON-ADD] - CELADON_OVERMAP_ARPA - Это вагабонд насрал
 	.["rotating"] = current_ship.rotating
+	
+	// Добавляем информацию о щитах
+	.["has_shields"] = FALSE
+	.["shield_percentage"] = 0
+	.["shield_status"] = "Нет щитов"
+	
+	// Проверяем наличие системы щитов
+	if(current_ship.shield_system)
+		.["has_shields"] = TRUE
+		.["shield_percentage"] = current_ship.shield_system.get_shield_percentage()
+		
+		if(current_ship.shield_system.active)
+			if(current_ship.shield_system.recharging)
+				var/recharge_time_left = 0
+				if(current_ship.shield_system.recharge_timer_id)
+					recharge_time_left = timeleft(current_ship.shield_system.recharge_timer_id) / 10
+				.["shield_status"] = "Перезарядка ([round(recharge_time_left)]с)"
+			else
+				.["shield_status"] = "Активны"
+		else
+			if(current_ship.shield_system.recharging)
+				var/recharge_time_left = 0
+				if(current_ship.shield_system.recharge_timer_id)
+					recharge_time_left = timeleft(current_ship.shield_system.recharge_timer_id) / 10
+				.["shield_status"] = "Перезарядка ([round(recharge_time_left)]с)"
+			else
+				.["shield_status"] = "Отключены"
 	// [/CELADON-ADD]
 	for(var/datum/weakref/engine in current_ship.shuttle_port.engine_list)
 		var/obj/machinery/power/shuttle/engine/real_engine = engine.resolve()

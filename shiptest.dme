@@ -135,6 +135,7 @@
 #include "code\__DEFINES\ruins.dm"
 #include "code\__DEFINES\rust_g.dm"
 #include "code\__DEFINES\say.dm"
+#include "code\__DEFINES\shields.dm"	// [CELADON] - CELADON_SHIP_SHIELD - Перенести потом
 #include "code\__DEFINES\shuttles.dm"
 #include "code\__DEFINES\sight.dm"
 #include "code\__DEFINES\skills.dm"
@@ -176,6 +177,7 @@
 #include "code\__DEFINES\dcs\signals\signals_mod.dm"
 #include "code\__DEFINES\dcs\signals\signals_overmap.dm"
 #include "code\__DEFINES\dcs\signals\signals_reagent.dm"
+#include "code\__DEFINES\dcs\signals\signals_shield.dm"	// [CELADON] - CELADON_SHIP_SHIELD - Перенести потом
 #include "code\__DEFINES\dcs\signals\signals_storage.dm"
 #include "code\__DEFINES\dcs\signals\signals_atom\signals_atom_attack.dm"
 #include "code\__DEFINES\dcs\signals\signals_mob\signals_mob_carbon.dm"
@@ -3077,8 +3079,14 @@
 #include "code\modules\overmap\planets\planet_types.dm"
 #include "code\modules\overmap\ships\controlled_ship_datum.dm"
 #include "code\modules\overmap\ships\owner_action.dm"
+#include "code\modules\overmap\ships\shield_console.dm"	// [CELADON] - CELADON_SHIP_SHIELD - Перенести потом
+#include "code\modules\overmap\ships\shield_effects.dm"	// [CELADON] - CELADON_SHIP_SHIELD - Перенести потом
+#include "code\modules\overmap\ships\shield_flicker.dm"	// [CELADON] - CELADON_SHIP_SHIELD - Перенести потом
 #include "code\modules\overmap\ships\ship_application.dm"
+#include "code\modules\overmap\ships\ship_collision.dm"	// [CELADON] - CELADON_SHIP_SHIELD - Перенести потом
 #include "code\modules\overmap\ships\ship_datum.dm"
+#include "code\modules\overmap\ships\ship_hazards.dm"	// [CELADON] - CELADON_SHIP_SHIELD - Перенести потом
+#include "code\modules\overmap\ships\ship_shields.dm"	// [CELADON] - CELADON_SHIP_SHIELD - Перенести потом
 #include "code\modules\paperwork\biscuit.dm"
 #include "code\modules\paperwork\carbonpaper.dm"
 #include "code\modules\paperwork\clipboard.dm"

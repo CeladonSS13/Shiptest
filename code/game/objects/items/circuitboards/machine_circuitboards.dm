@@ -1577,3 +1577,15 @@
 
 /obj/item/circuitboard/machine/turret/ruin
 	def_components = list(/obj/item/gun/energy = /obj/item/stack/sheet/metal)
+
+/obj/item/circuitboard/machine/shield_generator // [CELADON] - CELADON_SHIP_SHIELD - Перенести потом
+	name = "Shield Generator (Machine Board)"
+	icon_state = "engineering"
+	build_path = /obj/machinery/power/shield_generator
+	req_components = list(
+		/obj/item/stock_parts/capacitor/quadratic = 5,
+		/obj/item/stock_parts/manipulator/femto = 3,
+		/obj/item/stock_parts/micro_laser/quadultra = 3,
+		/obj/item/stack/cable_coil = 10,
+		/obj/item/stack/sheet/bluespace_crystal = 2)
+	needs_anchored = TRUE

@@ -263,6 +263,14 @@
 	category = list("Computer Boards")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 
+/datum/design/board/ship/shield_control	// [CELADON] - CELADON_SHIP_SHIELD - Перенести потом
+	name = "Computer Design (Shield Control)"
+	desc = "Allows for the construction of circuit boards used to build a shield control console."
+	id = "shield_control"
+	build_path = /obj/item/circuitboard/computer/ship/shield_control
+	category = list("Computer Boards")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+
 //////////////Shuttle Computers///////////////
 /datum/design/board/shuttle/shuttle_helm
 	name = "Computer Design (Shuttle Helm Console)"

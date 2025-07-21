@@ -152,18 +152,18 @@ const SharedContent = (_props, context) => {
                 tooltip="Decrease Signal Length"
                 tooltipPosition="right"
                 icon="arrow-left"
-				// [CELADON-ADD] - subshuttle fix
-				disabled={data.issubshuttle != null}
-				// [/CELADON-ADD] - subshuttle fix
+                // [CELADON-ADD] - subshuttle fix
+                disabled={data.issubshuttle != null}
+                // [/CELADON-ADD] - subshuttle fix
                 onClick={() => act('sensor_decrease')}
               />
               <Button
                 tooltip="Increase Signal Length"
                 tooltipPosition="right"
                 icon="arrow-right"
-				// [CELADON-ADD] - subshuttle fix
-				disabled={data.issubshuttle != null}
-				// [/CELADON-ADD] - subshuttle fix
+                // [CELADON-ADD] - subshuttle fix
+                disabled={data.issubshuttle != null}
+                // [/CELADON-ADD] - subshuttle fix
                 onClick={() => act('sensor_increase')}
               />
             </Table.Cell>
@@ -195,9 +195,42 @@ const ShipContent = (_props, context) => {
     x,
     y,
     arpa_ships = [],
+    // [CELADON] - CELADON_SHIP_SHIELD - Пиздец, как это комментить?
+    has_shields,
+    shield_percentage,
+    shield_status,
   } = data;
   return (
     <>
+      {/* Добавляем секцию для отображения информации о щитах */}
+      <Section title="Щиты">
+        <LabeledList>
+          <LabeledList.Item label="Статус">
+            {has_shields ? (
+              <>
+                <ProgressBar
+                  ranges={{
+                    good: [75, Infinity],
+                    average: [25, 75],
+                    bad: [-Infinity, 25],
+                  }}
+                  value={shield_percentage}
+                  maxValue={100}
+                >
+                  <AnimatedNumber
+                    value={shield_percentage}
+                    format={(value) => Math.round(value)}
+                  />
+                  %
+                </ProgressBar>
+                <div style={{ 'marginTop': '5px' }}>{shield_status}</div>
+              </>
+            ) : (
+              'Нет щитов'
+            )}
+          </LabeledList.Item>
+        </LabeledList>
+      </Section>
       <Section title="Velocity">
         <LabeledList>
           <LabeledList.Item label="Speed">
@@ -246,10 +279,11 @@ const ShipContent = (_props, context) => {
             <Table.Cell>{ship.name}</Table.Cell>
             <Divider vertical hidden />
             <Table.Cell>BRG:{ship.brg}°</Table.Cell>
-            <Table.Cell>T/CPA:{ship.cpa}m {ship.tcpa}s</Table.Cell>
+            <Table.Cell>
+              T/CPA:{ship.cpa}m {ship.tcpa}s
+            </Table.Cell>
           </Table.Row>
         ))}
-
       </Section>
       <Section
         title="Engines"
@@ -368,9 +402,11 @@ const ShipControlContent = (_props, context) => {
             tooltip="Undock"
             tooltipPosition="left"
             icon="sign-out-alt"
-			// [CELADON-EDIT] - subshuttles fix
-            disabled={!data.docked || data.docking || data.motheroutpost != null}
-			// [/CELADON-EDIT] - subshuttles fix
+            // [CELADON-EDIT] - subshuttles fix, CELADON_SHIP_SHIELD
+            disabled={
+              !data.docked || data.docking || data.motheroutpost != null
+            }
+            // [/CELADON-EDIT] - subshuttles fix
             onClick={() => act('undock')}
           />
           <Button
@@ -410,9 +446,8 @@ const ShipControlContent = (_props, context) => {
                   mb={1}
                   color={rotating === -1 && 'good'}
                   disabled={!flyable}
-                  onClick={() =>
-                    act('rotate_left')
-                  }
+                  // [CELADON] - CELADON_SHIP_SHIELD - Пиздец, как это комментить?
+                  onClick={() => act('rotate_left')}
                 />
               </Table.Cell>
               <Table.Cell width={1}>
@@ -435,9 +470,8 @@ const ShipControlContent = (_props, context) => {
                   mb={1}
                   color={rotating === 1 && 'good'}
                   disabled={!flyable}
-                  onClick={() =>
-                    act('rotate_right')
-                  }
+                  // [CELADON] - CELADON_SHIP_SHIELD - Пиздец, как это комментить?
+                  onClick={() => act('rotate_right')}
                 />
               </Table.Cell>
             </Table.Row>
