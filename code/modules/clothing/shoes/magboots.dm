@@ -46,7 +46,7 @@
 		A.UpdateButtonIcon()
 
 /obj/item/clothing/shoes/magboots/negates_gravity()
-	return clothing_flags & NOSLIP
+	return magpulse // [CELADON-EDIT] - FIXES_CELADON_MAGBOOTS // return clothing_flags & NOSLIP // ORIGINAL
 
 /obj/item/clothing/shoes/magboots/examine(mob/user)
 	. = ..()
