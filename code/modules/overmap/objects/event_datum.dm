@@ -144,7 +144,18 @@
 				affect_ship(Ship)
 
 /datum/overmap/event/meteor/affect_ship(datum/overmap/ship/controlled/Ship)
-	spawn_meteor(meteor_types, Ship.shuttle_port.get_virtual_level(), 0, Ship.shuttle_port)
+	// Проверяем, есть ли у корабля активные щиты
+	if(Ship.shield_system && Ship.shield_system.active && Ship.shield_system.can_protect_from("meteor"))
+		// Пытаемся поглотить урон щитами (примерная оценка урона от метеорита)
+		var/damage = 30 // Средний урон от метеорита
+		var/absorbed = Ship.shield_system.absorb_damage(damage, "meteor")
+		if(absorbed >= damage)
+			// Создаем визуальный эффект поглощения метеорита
+			Ship.create_shield_effects_on_ship(2)
+			return
+	
+	// Используем addtimer для асинхронного спавна метеорита
+	addtimer(CALLBACK(src, PROC_REF(do_spawn_meteor), Ship), 0)
 
 /datum/overmap/event/meteor/minor
 	name = "asteroid field (minor)"
@@ -176,6 +187,12 @@
 		/obj/effect/meteor/flaming=10,
 	)
 
+/**
+ * Асинхронный спавн метеорита
+ */
+/datum/overmap/event/meteor/proc/do_spawn_meteor(datum/overmap/ship/controlled/Ship)
+	spawn_meteor(meteor_types, Ship.shuttle_port.get_virtual_level(), 0, Ship.shuttle_port)
+
 ///Electromagnetic - explodes your IPCs
 /datum/overmap/event/emp
 	name = "electromagnetic storm (moderate)"
@@ -203,6 +220,27 @@
 /datum/overmap/event/emp/affect_ship(datum/overmap/ship/controlled/ship)
 	if(!(COOLDOWN_FINISHED(ship, event_cooldown)))
 		return
+	
+	// Проверяем, есть ли у корабля активные щиты
+	if(ship.shield_system && ship.shield_system.active && ship.shield_system.can_protect_from("ion_storm"))
+		// Пытаемся поглотить урон щитами
+		var/damage = strength * 10 // Преобразуем силу в урон для щитов
+		var/absorbed = ship.shield_system.absorb_damage(damage, "ion_storm")
+		if(absorbed >= damage)
+			// Создаем визуальный эффект поглощения ионного шторма
+			ship.create_shield_effects_on_ship(3)
+			
+			// Воспроизводим звук для экипажа
+			for(var/mob/crew as anything in GLOB.player_list)
+				if(ship.shuttle_port.is_in_shuttle_bounds(crew))
+					crew.playsound_local(crew, 'sound/effects/overmap/neutron_pulse.ogg', 30) // Приглушенный звук
+					to_chat(crew, span_notice("Щиты корабля поглотили ионный шторм!"))
+			
+			// Устанавливаем кулдаун для следующего события
+			COOLDOWN_START(ship, event_cooldown, 5 SECONDS)
+			return
+	
+	// Если нет щитов или они не поглотили весь урон, продолжаем как обычно
 	priority_announce("WARNING: Brace for inbound magnetic pulse.", "[src]", 'sound/effects/overmap/telegraph.ogg', sender_override = name, zlevel = ship.shuttle_port.virtual_z())
 
 	addtimer(CALLBACK(src, PROC_REF(affect_ship_2), ship), 2 SECONDS)
@@ -212,20 +250,39 @@
 	if(!(locate(ship) in get_nearby_overmap_objects()))
 		return
 
+	// Проверяем щиты еще раз на случай, если они были активированы после первой проверки
+	if(ship.shield_system && ship.shield_system.active && ship.shield_system.can_protect_from("ion_storm"))
+		// Пытаемся поглотить урон щитами
+		var/damage = strength * 10 // Преобразуем силу в урон для щитов
+		var/absorbed = ship.shield_system.absorb_damage(damage, "ion_storm")
+		if(absorbed >= damage)
+			// Создаем визуальный эффект поглощения ионного шторма
+			ship.create_shield_effects_on_ship(3)
+			
+			// Воспроизводим звук для экипажа
+			for(var/mob/crew as anything in GLOB.player_list)
+				if(ship.shuttle_port.is_in_shuttle_bounds(crew))
+					crew.playsound_local(crew, 'sound/effects/overmap/neutron_pulse.ogg', 30) // Приглушенный звук
+					to_chat(crew, span_notice("Щиты корабля поглотили ионный шторм!"))
+			return
+
 	var/area/source_area = pick(ship.shuttle_port.shuttle_areas)
-
 	var/source_object = pick(source_area.contents)
-
-	empulse(get_turf(source_object), round(rand(strength / 4, strength)), rand(strength, strength * 2))
-
-	for(var/mob/living/carbon/affected_mob as anything in range(round(strength * 2), get_turf(source_object)))
-		if(!istype(affected_mob))
-			continue
-		affected_mob.flash_act(1, 1)
+	
+	// Используем addtimer, чтобы не блокировать основной поток
+	addtimer(CALLBACK(src, PROC_REF(do_emp_pulse), get_turf(source_object), strength), 0)
 
 	for(var/mob/affected_mob as anything in GLOB.player_list)
 		if(ship.shuttle_port.is_in_shuttle_bounds(affected_mob))
 			affected_mob.playsound_local(affected_mob, 'sound/effects/overmap/neutron_pulse.ogg', 100)
+
+/datum/overmap/event/emp/proc/do_emp_pulse(turf/source_turf, emp_strength)
+	empulse(source_turf, round(rand(emp_strength / 4, emp_strength)), rand(emp_strength, emp_strength * 2))
+	
+	for(var/mob/living/carbon/affected_mob as anything in range(round(emp_strength * 2), source_turf))
+		if(!istype(affected_mob))
+			continue
+		affected_mob.flash_act(1, 1)
 
 /datum/overmap/event/emp/modify_emptyspace_mapgen(datum/overmap/dynamic/our_planet)
 	our_planet.weather_controller_type = /datum/weather_controller/shrouded
@@ -271,6 +328,27 @@
 /datum/overmap/event/flare/affect_ship(datum/overmap/ship/controlled/ship)
 	if(!(COOLDOWN_FINISHED(ship, event_cooldown)))
 		return
+	
+	// Проверяем, есть ли у корабля активные щиты
+	if(ship.shield_system && ship.shield_system.active && ship.shield_system.can_protect_from("fire_storm"))
+		// Пытаемся поглотить урон щитами
+		var/damage = strength * 15 // Преобразуем силу в урон для щитов
+		var/absorbed = ship.shield_system.absorb_damage(damage, "fire_storm")
+		if(absorbed >= damage)
+			// Создаем визуальный эффект поглощения солнечной вспышки
+			ship.create_shield_effects_on_ship(3)
+			
+			// Воспроизводим звук для экипажа
+			for(var/mob/crew as anything in GLOB.player_list)
+				if(ship.shuttle_port.is_in_shuttle_bounds(crew))
+					crew.playsound_local(crew, 'sound/effects/overmap/solar_flare.ogg', 30) // Приглушенный звук
+					to_chat(crew, span_notice("Щиты корабля поглотили солнечную вспышку!"))
+			
+			// Устанавливаем кулдаун для следующего события
+			COOLDOWN_START(ship, event_cooldown, 5 SECONDS)
+			return
+	
+	// Если нет щитов или они не поглотили весь урон, продолжаем как обычно
 	priority_announce("WARNING: Brace for inbound solar flare.", "[src]", 'sound/effects/overmap/telegraph.ogg', sender_override = name, zlevel = ship.shuttle_port.virtual_z())
 
 	addtimer(CALLBACK(src, PROC_REF(affect_ship_2), ship), 2 SECONDS)
@@ -280,16 +358,28 @@
 	if(!(locate(ship) in get_nearby_overmap_objects()))
 		return
 
+	// Проверяем щиты еще раз на случай, если они были активированы после первой проверки
+	if(ship.shield_system && ship.shield_system.active && ship.shield_system.can_protect_from("fire_storm"))
+		// Пытаемся поглотить урон щитами
+		var/damage = strength * 15 // Преобразуем силу в урон для щитов
+		var/absorbed = ship.shield_system.absorb_damage(damage, "fire_storm")
+		if(absorbed >= damage)
+			// Создаем визуальный эффект поглощения солнечной вспышки
+			ship.create_shield_effects_on_ship(3)
+			
+			// Воспроизводим звук для экипажа
+			for(var/mob/crew as anything in GLOB.player_list)
+				if(ship.shuttle_port.is_in_shuttle_bounds(crew))
+					crew.playsound_local(crew, 'sound/effects/overmap/solar_flare.ogg', 30) // Приглушенный звук
+					to_chat(crew, span_notice("Щиты корабля поглотили солнечную вспышку!"))
+			return
+
 	var/area/source_area = pick(ship.shuttle_port.shuttle_areas)
-
 	var/source_object = pick(source_area.contents)
+	var/turf/source_turf = get_turf(source_object)
 
-	flame_radius(get_turf(source_object), round(rand(strength / 2, strength)), rand(strength, strength * 2))
-
-	for(var/mob/living/carbon/affected_mob as anything in range(round(strength * 2), get_turf(source_object)))
-		if(!istype(affected_mob))
-			continue
-		affected_mob.flash_act(1, 1)
+	// Используем addtimer для асинхронного вызова flame_radius
+	addtimer(CALLBACK(src, PROC_REF(do_flame_radius), source_turf, strength), 0)
 
 	for(var/mob/affected_mob as anything in GLOB.player_list)
 		if(ship.shuttle_port.is_in_shuttle_bounds(affected_mob))
@@ -315,6 +405,17 @@
 	chain_rate = 4
 	strength = 8
 
+/**
+ * Асинхронный вызов flame_radius
+ */
+/datum/overmap/event/flare/proc/do_flame_radius(turf/source_turf, flare_strength)
+	flame_radius(source_turf, round(rand(flare_strength / 2, flare_strength)), rand(flare_strength, flare_strength * 2))
+	
+	for(var/mob/living/carbon/affected_mob as anything in range(round(flare_strength * 2), source_turf))
+		if(!istype(affected_mob))
+			continue
+		affected_mob.flash_act(1, 1)
+
 ///ELECTRICAL STORM - explodes your computer and IPCs
 /datum/overmap/event/electric
 	name = "electrical storm (moderate)"
@@ -339,13 +440,36 @@
 	current_overmap.post_edit_token_state(src)
 
 /datum/overmap/event/electric/affect_ship(datum/overmap/ship/controlled/S)
+	// Проверяем, есть ли у корабля активные щиты
+	if(S.shield_system && S.shield_system.active)
+		// Пытаемся поглотить урон щитами
+		var/damage = rand(min_damage, max_damage) / 100 // Преобразуем урон в более подходящий масштаб для щитов
+		var/absorbed = S.shield_system.absorb_damage(damage, "electric_storm")
+		if(absorbed >= damage)
+			// Создаем визуальный эффект поглощения электрического разряда
+			S.create_shield_effects_on_ship(3)
+			
+			// Воспроизводим звук для экипажа
+			for(var/mob/crew as anything in GLOB.player_list)
+				if(S.shuttle_port.is_in_shuttle_bounds(crew))
+					crew.playsound_local(crew, THUNDER_SOUND, 30) // Приглушенный звук
+					to_chat(crew, span_notice("Щиты корабля поглотили электрический разряд!"))
+			return
+	
+	// Если нет щитов или они не поглотили весь урон, продолжаем как обычно
 	var/datum/virtual_level/ship_vlevel = S.shuttle_port.get_virtual_level()
 	var/turf/source = ship_vlevel.get_side_turf(pick(GLOB.cardinals))
-	tesla_zap(source, 32, rand(min_damage, max_damage), zap_flag)
-
+	
+	// Используем addtimer, чтобы не блокировать основной поток
+	addtimer(CALLBACK(src, PROC_REF(do_tesla_zap), source, rand(min_damage, max_damage), zap_flag), 0)
+	
+	// Воспроизводим звук для экипажа
 	for(var/mob/poor_crew as anything in GLOB.player_list)
 		if(S.shuttle_port.is_in_shuttle_bounds(poor_crew))
 			poor_crew.playsound_local(poor_crew, THUNDER_SOUND, rand(min_damage, max_damage))
+
+/datum/overmap/event/electric/proc/do_tesla_zap(turf/source, damage, zap_flags)
+	tesla_zap(source, 32, damage, zap_flags)
 
 
 /datum/overmap/event/electric/modify_emptyspace_mapgen(datum/overmap/dynamic/our_planet)
@@ -581,12 +705,38 @@
 	current_overmap.post_edit_token_state(src)
 
 /datum/overmap/event/anomaly/affect_ship(datum/overmap/ship/controlled/S)
+	// Проверяем, есть ли у корабля активные щиты
+	if(S.shield_system && S.shield_system.active && S.shield_system.can_protect_from("anomaly"))
+		// Пытаемся поглотить урон щитами
+		var/damage = 50 // Стандартный урон от аномалии
+		var/absorbed = S.shield_system.absorb_damage(damage, "anomaly")
+		if(absorbed >= damage)
+			// Создаем визуальный эффект поглощения аномалии
+			S.create_shield_effects_on_ship(3)
+			
+			// Воспроизводим звук для экипажа
+			for(var/mob/crew as anything in GLOB.player_list)
+				if(S.shuttle_port.is_in_shuttle_bounds(crew))
+					crew.playsound_local(crew, 'sound/effects/bamf.ogg', 30) // Приглушенный звук
+					to_chat(crew, span_notice("Щиты корабля поглотили аномальную энергию!"))
+			return
+
 	var/area/source_area = pick(S.shuttle_port.shuttle_areas)
 	var/source_object = pick(source_area.contents)
-	new /obj/effect/spawner/random/anomaly/storm(get_turf(source_object))
+	var/turf/source_turf = get_turf(source_object)
+	
+	// Используем addtimer для асинхронного создания аномалии
+	addtimer(CALLBACK(src, PROC_REF(do_spawn_anomaly), source_turf), 0)
+	
 	for(var/mob/M as anything in GLOB.player_list)
 		if(S.shuttle_port.is_in_shuttle_bounds(M))
 			M.playsound_local(M, 'sound/effects/bamf.ogg', 100)
+
+/**
+ * Асинхронное создание аномалии
+ */
+/datum/overmap/event/anomaly/proc/do_spawn_anomaly(turf/source_turf)
+	new /obj/effect/spawner/random/anomaly/storm(source_turf)
 
 GLOBAL_LIST_INIT(overmap_event_pick_list, list(
 	/datum/overmap/event/wormhole = 10,

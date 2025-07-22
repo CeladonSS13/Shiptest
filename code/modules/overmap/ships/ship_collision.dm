@@ -76,18 +76,34 @@
 		"port",
 		"habitat",
 		"colony",
-		"settlement"
+		"settlement",
+		"post",
+		"trading",
+		"research",
+		"mining",
+		"refinery",
+		"factory",
+		"lab",
+		"center",
+		"hub",
+		"beacon"
 	)
 
 	// Проверяем тип объекта по имени
 	if(obj.name)
+		// Проверяем все аванпосты и станции по типу
+		if(istype(obj, /datum/overmap/outpost))
+			return TRUE
+		
+		// Проверяем по ключевым словам в имени
+		var/lower_name = lowertext(obj.name)
 		for(var/safe_type in safe_event_types)
-			if(findtext(lowertext(obj.name), safe_type))
+			if(findtext(lower_name, safe_type))
 				return TRUE
 
 	// Проверяем, можно ли пристыковаться к объекту
 	if(obj.interaction_options)
-		if(INTERACTION_OVERMAP_DOCK in obj.interaction_options || INTERACTION_OVERMAP_QUICKDOCK in obj.interaction_options)
+		if((INTERACTION_OVERMAP_DOCK in obj.interaction_options) || (INTERACTION_OVERMAP_QUICKDOCK in obj.interaction_options))
 			return TRUE
 
 	// Добавляем другие типы безопасных объектов по мере необходимости
@@ -116,14 +132,14 @@
 		var/area/mob_area = get_area(H)
 		if(mob_area in areas)
 			// Сообщаем о срабатывании щитов
-			to_chat(H, span_notice("Щиты поглотили внешнее воздействие."))
+			to_chat(H, span_warning("Щиты поглотили внешнее воздействие!"))
 
 			// Создаем вспышку на экране игрока
 			var/atom/movable/screen/fullscreen/flash = H.overlay_fullscreen("shield_flash", /atom/movable/screen/fullscreen/flash, 1)
 			flash.color = "#00BBFF" // Голубой цвет для щитов
 
 			// Воспроизводим звук щита
-			playsound(H, 'sound/weapons/emitter2.ogg', 50, TRUE)
+			playsound(H, 'sound/weapons/pulse.ogg', 50, TRUE)
 
 			// Убираем вспышку через короткое время
 			addtimer(CALLBACK(H, TYPE_PROC_REF(/mob, clear_fullscreen), "shield_flash"), 5)

@@ -104,44 +104,8 @@
 	if(!parent_ship)
 		return
 
-	// Получаем все зоны корабля
-	var/list/areas = parent_ship.get_areas()
-	if(!areas || !areas.len)
-		return
-
-	// Гарантируем создание минимум 5 эффектов щита
-	var/flicker_count = max(5, min(areas.len, 8)) // Минимум 5, максимум 8 эффектов
-	var/list/selected_areas = areas.Copy()
-	// Перемешиваем список областей для случайного выбора
-	shuffle_inplace(selected_areas)
-
-	// Создаем эффекты щита в выбранных областях
-	var/effects_created = 0
-	for(var/i = 1 to min(flicker_count, selected_areas.len))
-		var/area/A = selected_areas[i]
-		var/list/turfs = get_area_turfs(A)
-		if(turfs.len > 0)
-			var/turf/T = pick(turfs)
-			new /obj/effect/shield_flicker(T)
-			effects_created++
-
-	// Если не удалось создать достаточно эффектов в разных областях,
-	// добавляем оставшиеся в случайных местах
-	while(effects_created < 5 && areas.len > 0)
-		var/area/A = pick(areas)
-		var/list/turfs = get_area_turfs(A)
-		if(turfs.len > 0)
-			var/turf/T = pick(turfs)
-			new /obj/effect/shield_flicker(T)
-			effects_created++
-
-	// Создаем дополнительный эффект щита
-	// Используем объект из shield_effects.dm
-	var/area/impact_area = pick(areas)
-	var/list/impact_turfs = get_area_turfs(impact_area)
-	if(impact_turfs.len > 0)
-		var/turf/impact_T = pick(impact_turfs)
-		new /obj/effect/shield_impact(impact_T)
+	// Используем существующую функцию корабля для создания эффектов
+	parent_ship.create_shield_effects_on_ship(2)
 
 /**
  * Завершает перезарядку щитов
@@ -207,9 +171,9 @@ GLOBAL_LIST_EMPTY(shield_generators)
  */
 /obj/machinery/power/shield_generator
 	name = "генератор щитов"
-	desc = "Мощное устройство, создающее защитное поле вокруг корабля."
-	icon = 'icons/obj/machines/ship_gravity.dmi'
-	icon_state = "shipgrav_o"
+	desc = "Мощное устройство, создающее защитное поле вокруг корабля. Мощность полей 10к."
+	icon = 'mod_celadon/_storge_icons/icons/machinery/ship_shield.dmi'
+	icon_state = "shield_generator-off"
 	density = TRUE
 	anchored = TRUE
 	use_power = IDLE_POWER_USE
@@ -243,9 +207,9 @@ GLOBAL_LIST_EMPTY(shield_generators)
 /obj/machinery/power/shield_generator/update_icon_state()
 	. = ..()
 	if(active)
-		icon_state = "shipgrav"
+		icon_state = "shield_generator-on"
 	else
-		icon_state = "shipgrav_o"
+		icon_state = "shield_generator-off"
 
 /obj/machinery/power/shield_generator/process()
 	if(!active)
@@ -258,6 +222,49 @@ GLOBAL_LIST_EMPTY(shield_generators)
 
 	update_icon()
 
+/obj/machinery/power/shield_generator/medium
+	name = "средний генератор щитов"
+	desc = "Мощное устройство, создающее защитное поле вокруг корабля. Мощность полей 50к."
+	idle_power_usage = 100
+	active_power_usage = 2000
+	/// Максимальная мощность генератора (кВт)
+	max_power = 50000
+	/// Текущая накопленная мощность (кВт)
+	stored_power = 0
+	/// Скорость накопления энергии (кВт в секунду)
+	charge_rate = 2000
+
+
+/obj/machinery/power/shield_generator/heavy
+	name = "большой генератор щитов"
+	desc = "Мощное устройство, создающее защитное поле вокруг корабля. Мощность полей 100к."
+	idle_power_usage = 100
+	active_power_usage = 10000
+	/// Максимальная мощность генератора (кВт)
+	max_power = 100000
+	/// Текущая накопленная мощность (кВт)
+	stored_power = 0
+	/// Скорость накопления энергии (кВт в секунду)
+	charge_rate = 10000
+
+/obj/machinery/power/shield_generator/admin
+	name = "админский генератор щитов"
+	desc = "Мощное устройство, создающее защитное поле вокруг корабля. Мощность полей 1кк. Потребление низкое."
+	idle_power_usage = 10
+	active_power_usage = 100
+	/// Максимальная мощность генератора (кВт)
+	max_power = 1000000
+	/// Текущая накопленная мощность (кВт)
+	stored_power = 1000000
+	/// Скорость накопления энергии (кВт в секунду)
+	charge_rate = 10000
+
+/obj/machinery/power/shield_generator/admin/update_icon_state()
+	. = ..()
+	if(active)
+		icon_state = "shield_generator_admin-on"
+	else
+		icon_state = "shield_generator_admin-off"
 /**
  * Получает энергию из сети
  *
@@ -300,6 +307,9 @@ GLOBAL_LIST_EMPTY(shield_generators)
 					var/list/areas = ship.get_areas()
 					if(A in areas)
 						shield_system = new /datum/ship_shield(ship)
+						// Устанавливаем мощность щита в зависимости от типа генератора
+						shield_system.max_shield_power = max_power / 10 // Мощность щита - 10% от мощности генератора
+						shield_system.current_shield_power = shield_system.max_shield_power
 						shield_system.activate()
 						break
 

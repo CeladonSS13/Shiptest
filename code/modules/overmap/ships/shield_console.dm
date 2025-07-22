@@ -7,7 +7,9 @@
 /obj/machinery/computer/ship/shield_control
 	name = "консоль управления щитами"
 	desc = "Используется для управления системой щитов корабля."
-	icon_screen = "shield"
+	icon = 'icons/obj/machines/computer.dmi'
+	icon_state = "shields"
+	// icon_screen = "shields"
 	circuit = /obj/item/circuitboard/computer/ship/shield_control
 
 	/// Связанный генератор щитов
@@ -35,31 +37,56 @@
 	. = ..()
 	// Ищем генератор щитов на корабле
 	find_generator()
+	update_appearance()
+	START_PROCESSING(SSobj, src)
+
+/obj/machinery/computer/ship/shield_control/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
+
+/obj/machinery/computer/ship/shield_control/process()
+	update_appearance()
 
 /**
  * Обновление иконки в зависимости от состояния щитов
  */
-/obj/machinery/computer/ship/shield_control/update_icon()
+/obj/machinery/computer/ship/shield_control/update_appearance(updates)
+	. = ..(updates)
+	update_icon_state()
+	update_overlays()
+
+/obj/machinery/computer/ship/shield_control/update_icon_state()
 	. = ..()
+	if(machine_stat & (NOPOWER|BROKEN))
+		icon_state = "computer-off"
+		return
+	
+	icon_state = "computer"
+
+/obj/machinery/computer/ship/shield_control/update_overlays()
+	. = ..()
+	
+	if(machine_stat & (NOPOWER|BROKEN))
+		return
 
 	if(!linked_generator)
-		icon_screen = "shield"
+		. += "shields"
 		return
 
 	if(linked_generator.shield_system && linked_generator.shield_system.recharging)
-		icon_screen = "shield_recharge"
+		. += "shield_recharge"
 	else if(linked_generator.active && linked_generator.shield_system)
 		var/shield_percentage = linked_generator.shield_system.get_shield_percentage()
 		if(shield_percentage > 75)
-			icon_screen = "shield_100"
+			. += "shields-integrity-100"
 		else if(shield_percentage > 50)
-			icon_screen = "shield_75"
+			. += "shields-integrity-60"
 		else if(shield_percentage > 25)
-			icon_screen = "shield_50"
+			. += "shields-integrity-40"
 		else
-			icon_screen = "shield_25"
+			. += "shields-integrity-20"
 	else
-		icon_screen = "shield"
+		. += "shields"
 
 /**
  * Поиск генератора щитов на корабле
@@ -96,6 +123,7 @@
 				var/area/generator_area = get_area(generator)
 				if(generator_area in ship.get_areas())
 					linked_generator = generator
+					update_appearance()
 					break
 
 /**
@@ -175,6 +203,7 @@
 				linked_generator.deactivate()
 			else
 				linked_generator.activate()
+			update_appearance()
 			return TRUE
 
 		if("find_generator")
