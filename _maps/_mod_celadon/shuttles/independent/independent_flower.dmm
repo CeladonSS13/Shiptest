@@ -564,6 +564,9 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ship/crew/hydroponics)
+"uw" = (
+/turf/open/floor/plasteel/dark,
+/area/ship/crew/hydroponics)
 "uA" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -949,9 +952,9 @@
 /turf/open/floor/plating/rust,
 /area/ship/engineering)
 "Hd" = (
-/obj/structure/window/fulltile,
-/obj/structure/grille,
-/turf/open/floor/plating,
+/obj/structure/cable,
+/obj/machinery/power/shield_generator/heavy,
+/turf/open/floor/plasteel/dark,
 /area/ship/crew/hydroponics)
 "HI" = (
 /obj/machinery/airalarm/directional/west,
@@ -987,10 +990,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/hydroponics)
 "Jb" = (
-/obj/machinery/door/airlock/command/glass{
-	dir = 4;
-	req_access_txt = "35"
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -1008,6 +1007,12 @@
 	},
 /obj/effect/turf_decal/corner/opaque/blue/half{
 	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -1036,16 +1041,14 @@
 /turf/open/floor/plating/rust,
 /area/ship/external)
 "KD" = (
-/obj/structure/table/wood,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
-/obj/machinery/microwave{
-	pixel_y = 5;
-	pixel_x = -1
-	},
 /obj/effect/turf_decal/corner/opaque/blue/half{
 	dir = 4
+	},
+/obj/machinery/computer/ship/shield_control{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -1427,6 +1430,12 @@
 "Sy" = (
 /obj/item/paper/crumpled/bloody{
 	default_raw_text = "Дерево мстит..."
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/crew/hydroponics)
+"SB" = (
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/hydroponics)
@@ -1958,9 +1967,9 @@ AF
 Fi
 Fi
 Jb
+SB
 Hd
-Hd
-Hd
+uw
 Lm
 Fi
 Fi

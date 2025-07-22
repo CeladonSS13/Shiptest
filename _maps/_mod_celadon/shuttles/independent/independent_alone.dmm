@@ -267,7 +267,11 @@
 /area/ship/bridge)
 "HH" = (
 /obj/machinery/light/directional/west,
-/turf/open/floor/plasteel/dark,
+/obj/structure/cable{
+	icon_state = "0-10"
+	},
+/obj/machinery/power/shield_generator/admin,
+/turf/open/floor/plating,
 /area/ship/bridge)
 "Jb" = (
 /obj/structure/fans/tiny,
@@ -277,6 +281,12 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
+/area/ship/bridge)
+"NZ" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel,
 /area/ship/bridge)
 "Ou" = (
 /obj/structure/cable{
@@ -298,11 +308,13 @@
 /obj/structure/cable{
 	icon_state = "5-8"
 	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel,
 /area/ship/bridge)
 "SC" = (
-/obj/item/trash/chips,
-/mob/living/basic/cockroach,
+/obj/machinery/computer/ship/shield_control,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Ta" = (
@@ -391,7 +403,10 @@
 "WS" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/newscaster/directional/north,
-/turf/open/floor/mineral/plastitanium,
+/obj/structure/cable{
+	icon_state = "5-8"
+	},
+/turf/open/floor/plating,
 /area/ship/bridge)
 "YD" = (
 /obj/structure/cable{
@@ -488,7 +503,7 @@ pz
 pz
 xO
 vw
-ll
+NZ
 ll
 CA
 bd
