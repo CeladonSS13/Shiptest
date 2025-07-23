@@ -17,8 +17,10 @@
 	var/obj/item/pda/P = locate(params["target"]) in GLOB.PDAs  //Leaving it alone in case it may do something useful, I guess.
 	send_virus(P,user)
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/cartridge/virus/clown
 	name = "\improper Honkworks 5.0 cartridge"
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/pda.dmi'
 	icon_state = "cart-clown"
 	desc = "A data cartridge for portable microcomputers. It smells vaguely of bananas."
 	access = CART_CLOWN
@@ -36,6 +38,7 @@
 
 /obj/item/cartridge/virus/mime
 	name = "\improper Gestur-O 1000 cartridge"
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/pda.dmi'
 	icon_state = "cart-mi"
 	access = CART_MIME
 
@@ -50,6 +53,7 @@
 		target.ttone = "silence"
 	else
 		to_chat(U, span_alert("PDA not found."))
+// [/CELADON-ADD]
 
 /obj/item/cartridge/virus/syndicate
 	name = "\improper Detomatix cartridge"
@@ -66,7 +70,7 @@
 		charges--
 		var/difficulty = 0
 		if(target.cartridge)
-			difficulty += BitCount(target.cartridge.access&(CART_MEDICAL | CART_SECURITY | CART_ENGINE | CART_CLOWN | CART_JANITOR))
+			difficulty += BitCount(target.cartridge.access&(CART_MEDICAL | CART_SECURITY | CART_ENGINE | CART_CLOWN | CART_JANITOR))	//difficulty += BitCount(target.cartridge.access&(CART_MEDICAL | CART_SECURITY | CART_ENGINE | CART_JANITOR))	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 		else
 			log_bomber(U, "triggered a PDA explosion on", target, "[!is_special_character(U) ? "(TRIGGED BY NON-ANTAG)" : ""]")
 			U.show_message(span_notice("Success!"), MSG_VISUAL)

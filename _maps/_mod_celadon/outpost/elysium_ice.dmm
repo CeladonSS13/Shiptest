@@ -1696,21 +1696,21 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/engineering/atmospherics)
 "aXk" = (
-/obj/item/reagent_containers/food/snacks/grown/cannabis,
-/obj/item/reagent_containers/food/snacks/grown/cannabis,
-/obj/item/reagent_containers/food/snacks/grown/cannabis,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/rainbow,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/rainbow,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/rainbow,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/ultimate,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/ultimate,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/ultimate,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/white,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/white,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/white,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/death,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/death,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/death,
+/obj/item/food/grown/cannabis,
+/obj/item/food/grown/cannabis,
+/obj/item/food/grown/cannabis,
+/obj/item/food/grown/cannabis/rainbow,
+/obj/item/food/grown/cannabis/rainbow,
+/obj/item/food/grown/cannabis/rainbow,
+/obj/item/food/grown/cannabis/ultimate,
+/obj/item/food/grown/cannabis/ultimate,
+/obj/item/food/grown/cannabis/ultimate,
+/obj/item/food/grown/cannabis/white,
+/obj/item/food/grown/cannabis/white,
+/obj/item/food/grown/cannabis/white,
+/obj/item/food/grown/cannabis/death,
+/obj/item/food/grown/cannabis/death,
+/obj/item/food/grown/cannabis/death,
 /obj/structure/closet/secure_closet/bar{
 	req_one_access_txt = "8125";
 	req_access = null
@@ -6301,7 +6301,7 @@
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/cryo)
 "dNt" = (
-/obj/item/reagent_containers/food/snacks/grown/ambrosia{
+/obj/item/food/grown/ambrosia{
 	pixel_y = -3;
 	pixel_x = -11
 	},
@@ -7986,17 +7986,17 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
 	},
-/obj/item/reagent_containers/food/snacks/grown/ambrosia{
+/obj/item/food/grown/ambrosia{
 	pixel_y = 11
 	},
-/obj/item/reagent_containers/food/snacks/grown/ambrosia{
+/obj/item/food/grown/ambrosia{
 	pixel_y = 11
 	},
-/obj/item/reagent_containers/food/snacks/grown/ambrosia{
+/obj/item/food/grown/ambrosia{
 	pixel_y = -3;
 	pixel_x = -11
 	},
-/obj/item/reagent_containers/food/snacks/grown/ambrosia,
+/obj/item/food/grown/ambrosia,
 /obj/item/clothing/mask/cigarette/rollie/cannabis,
 /obj/item/clothing/mask/cigarette/rollie/cannabis,
 /obj/item/bong{
@@ -10113,7 +10113,7 @@
 /area/outpost/crew/dop_zone_1)
 "fSb" = (
 /obj/machinery/hydroponics/soil,
-/obj/item/reagent_containers/food/snacks/grown/pumpkin/blumpkin,
+/obj/item/food/grown/pumpkin/blumpkin,
 /mob/living/simple_animal/hostile/asteroid/roach/hunter,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
@@ -11478,7 +11478,7 @@
 "gIA" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/scrap,
-/obj/item/reagent_containers/food/snacks/grown/meatwheat,
+/obj/item/food/grown/meatwheat,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -13565,12 +13565,12 @@
 /area/outpost/exterior)
 "hVG" = (
 /obj/structure/closet/secure_closet/freezer/meat,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/kitchen_coldroom/freezerfloor/freezer_blue,
 /area/outpost/crew/canteen)
@@ -16213,11 +16213,11 @@
 	},
 /area/outpost/exterior)
 "jsY" = (
-/obj/item/reagent_containers/food/snacks/grown/ambrosia{
+/obj/item/food/grown/ambrosia{
 	pixel_y = 10;
 	pixel_x = 6
 	},
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/vulgaris{
+/obj/item/food/grown/ambrosia/vulgaris{
 	pixel_x = -7;
 	pixel_y = 0
 	},
@@ -19142,19 +19142,18 @@
 /area/outpost/exterior)
 "loH" = (
 /obj/structure/closet/secure_closet/freezer/meat,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/lizard,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/ethereal,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/fly,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/moth,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/plant,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/riol,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/shadow,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/skeleton,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/slime,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/spider,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/squid,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/tajara,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/zombie,
+/obj/item/food/meat/slab/human/mutant/lizard,
+/obj/item/food/meat/slab/human/mutant/ethereal,
+/obj/item/food/meat/slab/human/mutant/fly,
+/obj/item/food/meat/slab/human/mutant/moth,
+/obj/item/food/meat/slab/human/mutant/plant,
+/obj/item/food/meat/slab/human/mutant/riol,
+/obj/item/food/meat/slab/human/mutant/shadow,
+/obj/item/food/meat/slab/human/mutant/skeleton,
+/obj/item/food/meat/slab/human/mutant/slime,
+/obj/item/food/meat/slab/human/mutant/spider,
+/obj/item/food/meat/slab/human/mutant/tajara,
+/obj/item/food/meat/slab/human/mutant/zombie,
 /obj/effect/spawner/random/food_or_drink,
 /obj/effect/spawner/random/food_or_drink,
 /turf/open/floor/plating/asteroid/icerock/temperate,
@@ -20175,7 +20174,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/scrap,
-/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/food/grown/wheat,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -20816,7 +20815,7 @@
 "mmv" = (
 /mob/living/simple_animal/hostile/asteroid/roach,
 /obj/machinery/hydroponics/soil,
-/obj/item/reagent_containers/food/snacks/grown/pumpkin/blumpkin,
+/obj/item/food/grown/pumpkin/blumpkin,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "mmM" = (
@@ -20996,15 +20995,15 @@
 "msg" = (
 /obj/effect/turf_decal/corner/opaque/black/mono,
 /obj/effect/turf_decal/corner/opaque/neutral/diagonal,
-/obj/item/reagent_containers/food/snacks/grown/wheat,
-/obj/item/reagent_containers/food/snacks/grown/wheat,
-/obj/item/reagent_containers/food/snacks/grown/wheat,
-/obj/item/reagent_containers/food/snacks/grown/wheat,
-/obj/item/reagent_containers/food/snacks/grown/wheat,
-/obj/item/reagent_containers/food/snacks/grown/wheat,
-/obj/item/reagent_containers/food/snacks/grown/wheat,
-/obj/item/reagent_containers/food/snacks/grown/wheat,
-/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/food/grown/wheat,
+/obj/item/food/grown/wheat,
+/obj/item/food/grown/wheat,
+/obj/item/food/grown/wheat,
+/obj/item/food/grown/wheat,
+/obj/item/food/grown/wheat,
+/obj/item/food/grown/wheat,
+/obj/item/food/grown/wheat,
+/obj/item/food/grown/wheat,
 /obj/structure/closet/secure_closet/freezer/wall/directional/south,
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/canteen)
@@ -21523,7 +21522,7 @@
 	},
 /area/outpost/vacant_rooms/trash_factory)
 "mIL" = (
-/obj/item/reagent_containers/food/snacks/grown/ambrosia{
+/obj/item/food/grown/ambrosia{
 	pixel_y = 11
 	},
 /obj/effect/landmark/portal_exit{
@@ -22609,12 +22608,12 @@
 	},
 /obj/item/clothing/shoes/clown_shoes/banana_shoes,
 /obj/item/food/bread/banana,
-/obj/item/reagent_containers/food/snacks/grown/banana,
-/obj/item/reagent_containers/food/snacks/grown/banana,
-/obj/item/reagent_containers/food/snacks/grown/banana,
-/obj/item/reagent_containers/food/snacks/grown/banana,
-/obj/item/reagent_containers/food/snacks/grown/banana,
-/obj/item/reagent_containers/food/snacks/grown/banana/bluespace,
+/obj/item/food/grown/banana,
+/obj/item/food/grown/banana,
+/obj/item/food/grown/banana,
+/obj/item/food/grown/banana,
+/obj/item/food/grown/banana,
+/obj/item/food/grown/banana/bluespace,
 /obj/item/soap,
 /obj/structure/closet/secure_closet/bar{
 	req_one_access_txt = "8125";
@@ -23485,7 +23484,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/scrap,
-/obj/item/reagent_containers/food/snacks/grown/meatwheat,
+/obj/item/food/grown/meatwheat,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -24991,12 +24990,12 @@
 	pixel_x = 12;
 	pixel_y = -6
 	},
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia{
+/obj/item/food/grown/ambrosia/deus,
+/obj/item/food/grown/ambrosia/gaia{
 	pixel_y = 11;
 	pixel_x = 9
 	},
-/obj/item/reagent_containers/food/snacks/grown/ambrosia{
+/obj/item/food/grown/ambrosia{
 	pixel_y = -3;
 	pixel_x = 13
 	},
@@ -25965,7 +25964,7 @@
 "plX" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/reagent_containers/spray/waterflower,
-/obj/item/reagent_containers/food/snacks/grown/pumpkin/blumpkin,
+/obj/item/food/grown/pumpkin/blumpkin,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "pmx" = (
@@ -26442,10 +26441,10 @@
 	},
 /area/outpost/exterior)
 "pzG" = (
-/obj/item/reagent_containers/food/snacks/grown/ambrosia{
+/obj/item/food/grown/ambrosia{
 	pixel_y = 11
 	},
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/vulgaris{
+/obj/item/food/grown/ambrosia/vulgaris{
 	pixel_x = -7;
 	pixel_y = 0
 	},
@@ -26661,10 +26660,10 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "pGD" = (
-/obj/item/reagent_containers/food/snacks/grown/ambrosia{
+/obj/item/food/grown/ambrosia{
 	pixel_y = 11
 	},
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/vulgaris{
+/obj/item/food/grown/ambrosia/vulgaris{
 	pixel_x = -6;
 	pixel_y = -1
 	},
@@ -26799,7 +26798,7 @@
 /turf/open/floor/plating/rust,
 /area/outpost/fraction/separatist)
 "pLK" = (
-/obj/item/reagent_containers/food/snacks/grown/ambrosia{
+/obj/item/food/grown/ambrosia{
 	pixel_y = -3;
 	pixel_x = -11
 	},
@@ -30051,7 +30050,7 @@
 	},
 /area/outpost/exterior)
 "rGW" = (
-/obj/item/reagent_containers/food/snacks/grown/ambrosia{
+/obj/item/food/grown/ambrosia{
 	pixel_y = -3;
 	pixel_x = -11
 	},
@@ -32710,6 +32709,7 @@
 /area/outpost/cargo)
 "tiT" = (
 /obj/effect/turf_decal/corner/opaque/blue/three_quarters,
+/obj/machinery/aug_manipulator,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "tjo" = (
@@ -34140,7 +34140,7 @@
 	},
 /area/outpost/fraction/inteq)
 "ubD" = (
-/obj/item/reagent_containers/food/snacks/grown/ambrosia{
+/obj/item/food/grown/ambrosia{
 	pixel_y = -3;
 	pixel_x = -11
 	},
@@ -35833,11 +35833,11 @@
 /area/outpost/fraction/inteq)
 "vin" = (
 /obj/structure/closet/secure_closet/freezer/meat,
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken,
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken,
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken,
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken,
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken,
+/obj/item/food/meat/slab/chicken,
+/obj/item/food/meat/slab/chicken,
+/obj/item/food/meat/slab/chicken,
+/obj/item/food/meat/slab/chicken,
+/obj/item/food/meat/slab/chicken,
 /turf/open/floor/plasteel/kitchen_coldroom/freezerfloor/freezer_blue,
 /area/outpost/crew/canteen)
 "vip" = (
@@ -36116,7 +36116,7 @@
 "vrK" = (
 /obj/structure/bigDelivery,
 /obj/machinery/hydroponics/soil,
-/obj/item/reagent_containers/food/snacks/grown/pumpkin,
+/obj/item/food/grown/pumpkin,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "vsG" = (
@@ -37581,8 +37581,8 @@
 /area/outpost/exterior)
 "wkE" = (
 /obj/structure/closet/crate/hydroponics,
-/obj/item/clothing/suit/apron/overalls,
-/obj/item/clothing/suit/apron/overalls,
+/obj/item/clothing/under/overalls,
+/obj/item/clothing/under/overalls,
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/reagent_containers/glass/bucket,
@@ -37594,7 +37594,7 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/garden)
 "wkU" = (
-/obj/item/reagent_containers/food/snacks/grown/ambrosia{
+/obj/item/food/grown/ambrosia{
 	pixel_y = -3;
 	pixel_x = -11
 	},
@@ -39537,7 +39537,7 @@
 "xkb" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/reagent_containers/spray/waterflower,
-/obj/item/reagent_containers/food/snacks/grown/pumpkin,
+/obj/item/food/grown/pumpkin,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "xkv" = (
@@ -40112,10 +40112,10 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/reseption)
 "xEw" = (
-/obj/item/reagent_containers/food/snacks/grown/ambrosia{
+/obj/item/food/grown/ambrosia{
 	pixel_y = 11
 	},
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/vulgaris{
+/obj/item/food/grown/ambrosia/vulgaris{
 	pixel_x = -6;
 	pixel_y = 0
 	},
@@ -40191,7 +40191,7 @@
 "xFM" = (
 /mob/living/simple_animal/hostile/asteroid/roach/fuhrer,
 /obj/machinery/hydroponics/soil,
-/obj/item/reagent_containers/food/snacks/grown/pumpkin/blumpkin,
+/obj/item/food/grown/pumpkin/blumpkin,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "xFQ" = (
@@ -40435,8 +40435,8 @@
 /obj/item/reagent_containers/glass/beaker/large/fuel,
 /obj/structure/closet/wall/white/directional/east,
 /obj/structure/closet/crate/medical,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/death,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/death,
+/obj/item/food/grown/cannabis/death,
+/obj/item/food/grown/cannabis/death,
 /obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/plasteel/darkgreenfull/darkgreen{
 	dir = 6

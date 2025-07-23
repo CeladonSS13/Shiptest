@@ -1,6 +1,6 @@
 /client/verb/mentorhelp(msg as text)
-	set category = "Mentor"
-	set name = "Mentorhelp"
+	// set category = "Mentor"
+	// set name = "Mentorhelp" // [CELADON-DELETE] Mentors not works!!!
 
 	//clean the input msg
 	if(!msg)

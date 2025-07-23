@@ -517,6 +517,7 @@ SUBSYSTEM_DEF(shuttle)
 					user.forceMove(new_ship.get_jump_to_turf())
 					message_admins("[key_name_admin(user)] loaded [new_ship] ([S]) with the shuttle manipulator.")
 					log_admin("[key_name(user)] loaded [new_ship] ([S]) with the shuttle manipulator.</span>")
+					log_celadon_admin("\[SHUTTLE]: [key_name(user)] loaded [new_ship] ([S]) with the shuttle manipulator.") // [CELADON_ADD] - logging admin actions.
 					SSblackbox.record_feedback("tally", "shuttle_manipulator_spawned", 1, "[S]")
 
 		if("edit_template")
@@ -577,6 +578,7 @@ SUBSYSTEM_DEF(shuttle)
 					port_ship.blacklisted &= ~please_leave
 					message_admins("[key_name_admin(user)] unblocked [port_ship] from [please_leave].")
 					log_admin("[key_name_admin(user)] unblocked [port_ship] from [please_leave].")
+					log_celadon_admin("\[SHUTTLE]: [user.client]/[user.mind] unblocked [port_ship] from [please_leave].") // [CELADON_ADD] - logging admin actions.
 				return TRUE
 			var/reason = input(user, "Provide a reason for blacklisting, which will be displayed on docking attempts", "Bar Them From The Pearly Gates", "Contact local law enforcement for more information.") as null|text
 			if(!reason)
@@ -587,6 +589,7 @@ SUBSYSTEM_DEF(shuttle)
 			port_ship.blacklisted[please_leave] = reason
 			message_admins("[key_name_admin(user)] blacklisted [port_ship] from landing at [please_leave] with reason: [reason]")
 			log_admin("[key_name_admin(user)] blacklisted [port_ship] from landing at [please_leave] with reason: [reason]")
+			log_celadon_admin("\[SHUTTLE]: [user.client]/[user.mind] blacklisted [port_ship] from landing at [please_leave] with reason: [reason]") // [CELADON_ADD] - logging admin actions.
 			return TRUE
 
 		if("fly")

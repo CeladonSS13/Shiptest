@@ -14,7 +14,7 @@
 	emote_see = list("chirps loudly.", "cleans its whiskers with forelegs.")
 	turns_per_move = 4
 	turns_since_move = 0
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat = 2)
+	butcher_results = list(/obj/item/food/meat/roachmeat = 2)
 
 	var/blattedin_revives_left = 1 // how many times blattedin can get us back to life (as num for adminbus fun).
 	melee_damage_lower = 4

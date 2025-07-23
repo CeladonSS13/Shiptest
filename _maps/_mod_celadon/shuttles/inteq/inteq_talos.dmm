@@ -3762,6 +3762,7 @@
 /obj/item/gun/ballistic/shotgun/automatic/bulldog/inteq{
 	pixel_x = -8;
 	pixel_y = 8;
+
 	},
 /obj/structure/sign/poster/retro/lasergun_new{
 	pixel_x = -32
@@ -4096,7 +4097,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/crate/critter,
-/mob/living/simple_animal/hostile/hivebot/mechanic{
+/mob/living/basic/hivebot/mechanic{
 	desc = "A very rusty maintenance hivebot. Judging by the wires looping haphazardly from its panels and the Inteq shield spray painted on its chassis, somebody, somehow, has hacked it into complacency.";
 	environment_smash = 0;
 	faction = list("neutral");

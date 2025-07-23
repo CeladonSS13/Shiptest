@@ -57,35 +57,18 @@
 /obj/item/clothing/mask/fakemoustache/italian
 	name = "italian moustache"
 	desc = "Made from authentic Italian moustache hairs. Gives the wearer an irresistable urge to gesticulate wildly."
-	modifies_speech = TRUE
-
-/obj/item/clothing/mask/fakemoustache/italian/handle_speech(datum/source, list/speech_args)
-	var/message = speech_args[SPEECH_MESSAGE]
-	if(message[1] != "*")
-		message = " [message]"
-		var/list/italian_words = strings("italian_replacement.json", "italian")
-
-		for(var/key in italian_words)
-			var/value = italian_words[key]
-			if(islist(value))
-				value = pick(value)
-
-			message = replacetextEx(message, " [uppertext(key)]", " [uppertext(value)]")
-			message = replacetextEx(message, " [capitalize(key)]", " [capitalize(value)]")
-			message = replacetextEx(message, " [key]", " [value]")
-
-		if(prob(3))
-			message += pick(" Ravioli, ravioli, give me the formuoli!"," Mamma-mia!"," Mamma-mia! That's a spicy meat-ball!", " La la la la la funiculi funicula!")
-	speech_args[SPEECH_MESSAGE] = trim(message)
 
 /obj/item/clothing/mask/joy
 	name = "joy mask"
 	desc = "Express your happiness or hide your sorrows with this laughing face with crying tears of joy cutout."
 	icon_state = "joy"
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/clothing/mask/spamton
 	name = "Cursed Businessman's Mask"
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/masks.dmi'
 	icon_state = "big_shot"
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/mask.dmi'
 	item_state = "big_shot"
 	clothing_flags = ALLOWINTERNALS
 	visor_flags = ALLOWINTERNALS
@@ -115,7 +98,7 @@
 	var/message = speech_args[SPEECH_MESSAGE]
 	if(message[1] != "*")
 		message = " [message]"
-		var/list/spamton_words = strings("spamton_replacement.json", "spamton")
+		var/list/spamton_words = strings_load("spamton_replacement.json", "spamton", "mod_celadon/return_content_clowns/code/mime")
 
 		for(var/key in spamton_words)
 			var/value = spamton_words[key]
@@ -131,6 +114,7 @@
 /obj/item/clothing/mask/spamton/Initialize()
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, CURSED_MASK_TRAIT)
+// [/CELADON-ADD]
 
 /obj/item/clothing/mask/pig
 	name = "pig mask"
@@ -394,26 +378,3 @@
 	icon_state = "scarecrow_sack"
 	item_state = "scarecrow_sack"
 	flags_inv = HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
-
-/obj/item/clothing/mask/gondola
-	name = "gondola mask"
-	desc = "Genuine gondola fur."
-	icon_state = "gondola"
-	item_state = "gondola"
-	flags_inv = HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
-	w_class = WEIGHT_CLASS_SMALL
-	modifies_speech = TRUE
-
-/obj/item/clothing/mask/gondola/handle_speech(datum/source, list/speech_args)
-	var/message = speech_args[SPEECH_MESSAGE]
-	if(message[1] != "*")
-		message = " [message]"
-		var/list/spurdo_words = strings("spurdo_replacement.json", "spurdo")
-		for(var/key in spurdo_words)
-			var/value = spurdo_words[key]
-			if(islist(value))
-				value = pick(value)
-			message = replacetextEx(message,regex(uppertext(key),"g"), "[uppertext(value)]")
-			message = replacetextEx(message,regex(capitalize(key),"g"), "[capitalize(value)]")
-			message = replacetextEx(message,regex(key,"g"), "[value]")
-	speech_args[SPEECH_MESSAGE] = trim(message)

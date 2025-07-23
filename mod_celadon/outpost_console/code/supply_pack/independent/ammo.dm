@@ -433,16 +433,16 @@ MARK: .300
 MARK: 7.5x64
 */
 
-/datum/supply_pack/faction/independent/ammo/a75clip_box
-	name = "7.5x64mm Ammo Box Crate"
-	desc = "Contains a twenty-round 7.5x64mm ammo box for various sniper rifles such as the CM-F90 and the Boomslang series."
-	contains = list(/obj/item/storage/box/ammo/a75clip)
+/datum/supply_pack/faction/independent/ammo/a65clip_box
+	name = "6.5x57mm Ammo Box Crate"
+	desc = "Contains a twenty-round 6.5x57mm ammo box for various sniper rifles such as the CM-F90 and the Boomslang series."
+	contains = list(/obj/item/storage/box/ammo/a65clip)
 	cost = 400
 
 /datum/supply_pack/faction/independent/ammo/ammoa65clip_trackers
 	name = "6.5x57mm Tracker Shell Crate"
 	desc = "Contains a 10-round 6.5x57mm tracker box for various sniper rifles such as the CM-F90 and the Boomslang series."
-	contains = list(/obj/item/storage/box/ammo/a75clip/trac)
+	contains = list(/obj/item/storage/box/ammo/a65clip/trac)
 	cost = 300
 
 /*

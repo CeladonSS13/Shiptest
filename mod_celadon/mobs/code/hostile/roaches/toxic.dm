@@ -6,7 +6,7 @@
 	icon_aggro = "radioactiveroach_move"
 	icon_dead = "radioactiveroach_dead"
 
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat = 3)
+	butcher_results = list(/obj/item/food/meat/roachmeat = 3)
 	turns_per_move = 1
 	maxHealth = 40
 	health = 40
