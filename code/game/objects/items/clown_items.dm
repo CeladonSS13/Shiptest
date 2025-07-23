@@ -173,12 +173,14 @@
 	//LoadComponent so child types dont stack squeak components
 	LoadComponent(/datum/component/squeak, sound_list, 50)
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/bikehorn/attack(mob/living/carbon/M, mob/living/carbon/user)
 	if(user != M && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		if (HAS_TRAIT(H, TRAIT_CLUMSY)) //only clowns can unlock its true powers
 			SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "honk", /datum/mood_event/honk)
 	return ..()
+// [/CELADON-ADD]
 
 //air horn
 /obj/item/bikehorn/airhorn
@@ -186,6 +188,8 @@
 	desc = "Damn son, where'd you find this?"
 	icon_state = "air_horn"
 	sound_file = 'sound/items/airhorn2.ogg'
+
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 //golden bikehorn
 /obj/item/bikehorn/golden
 	name = "golden bike horn"
@@ -219,3 +223,4 @@
 	desc = "Just looking at this makes you want to giggle."
 	icon_state = "laughter"
 	list_reagents = list(/datum/reagent/consumable/laughter = 50)
+// [/CELADON-ADD]

@@ -3,8 +3,8 @@
 // 	reqs = list(
 // 		/datum/reagent/consumable/soymilk = 5,
 // 		/obj/item/food/bread/plain = 1,
-// 		/obj/item/reagent_containers/food/snacks/tofu = 3,
-// 		/obj/item/reagent_containers/food/snacks/grown/banana/mime = 1
+// 		/obj/item/food/tofu = 3,
+// 		/obj/item/food/grown/banana/mime = 1
 // 	)
 // 	result = /obj/item/food/bread/mimana
 // 	subcategory = CAT_BREAD
@@ -14,45 +14,45 @@
 // 	reqs = list(
 // 		/obj/item/ectoplasm = 1,
 // 		/datum/reagent/consumable/sodiumchloride = 2,
-// 		/obj/item/reagent_containers/food/snacks/bun = 1
+// 		/obj/item/food/bun = 1
 // 	)
-// 	result = /obj/item/reagent_containers/food/snacks/burger/ghost
+// 	result = /obj/item/food/burger/ghost
 // 	subcategory = CAT_BURGER
 
 // /datum/crafting_recipe/food/clownburger
 // 	name = "Clown burger"
 // 	reqs = list(
 // 		/obj/item/clothing/mask/gas/clown_hat = 1,
-// 		/obj/item/reagent_containers/food/snacks/bun = 1
+// 		/obj/item/food/bun = 1
 // 	)
-// 	result = /obj/item/reagent_containers/food/snacks/burger/clown
+// 	result = /obj/item/food/burger/clown
 // 	subcategory = CAT_BURGER
 
 // /datum/crafting_recipe/food/mimeburger
 // 	name = "Mime burger"
 // 	reqs = list(
 // 		/obj/item/clothing/mask/gas/mime = 1,
-// 		/obj/item/reagent_containers/food/snacks/bun = 1
+// 		/obj/item/food/bun = 1
 // 	)
-// 	result = /obj/item/reagent_containers/food/snacks/burger/mime
+// 	result = /obj/item/food/burger/mime
 // 	subcategory = CAT_BURGER
 
 // /datum/crafting_recipe/food/spellburger
 // 	name = "Spell burger"
 // 	reqs = list(
 // 		/obj/item/clothing/head/wizard/fake = 1,
-// 		/obj/item/reagent_containers/food/snacks/bun = 1
+// 		/obj/item/food/bun = 1
 // 	)
-// 	result = /obj/item/reagent_containers/food/snacks/burger/spell
+// 	result = /obj/item/food/burger/spell
 // 	subcategory = CAT_BURGER
 
 // /datum/crafting_recipe/food/spellburger2
 // 	name = "Spell burger"
 // 	reqs = list(
 // 		/obj/item/clothing/head/wizard = 1,
-// 		/obj/item/reagent_containers/food/snacks/bun = 1
+// 		/obj/item/food/bun = 1
 // 	)
-// 	result = /obj/item/reagent_containers/food/snacks/burger/spell
+// 	result = /obj/item/food/burger/spell
 // 	subcategory = CAT_BURGER
 
 // /datum/crafting_recipe/food/clowncake
@@ -61,7 +61,7 @@
 // 	reqs = list(
 // 		/obj/item/food/cake/plain = 1,
 // 		/obj/item/reagent_containers/food/snacks/sundae = 2,
-// 		/obj/item/reagent_containers/food/snacks/grown/banana = 5
+// 		/obj/item/food/grown/banana = 5
 // 	)
 // 	result = /obj/item/food/cake/clown_cake
 // 	subcategory = CAT_CAKE
@@ -71,11 +71,13 @@
 	reqs = list(
 		/datum/reagent/consumable/cream = 5,
 		/obj/item/clothing/mask/gas/clown_hat = 1,
-		/obj/item/reagent_containers/food/snacks/grown/cherries = 1,
-		/obj/item/reagent_containers/food/snacks/grown/banana = 2,
+		/obj/item/food/grown/cherries = 1,
+		/obj/item/food/grown/banana = 2,
 		/obj/item/reagent_containers/food/snacks/icecream = 1
+		///obj/item/food/icecream = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/honkdae
+	//result = /obj/item/reagent_containers/food/snacks/honkdae
 	subcategory = CAT_ICE
 
 /datum/crafting_recipe/food/mime_sc
@@ -101,21 +103,21 @@
 /datum/crafting_recipe/food/meatclown
 	name = "Meat Clown"
 	reqs = list(
-		/obj/item/reagent_containers/food/snacks/meat/steak/plain = 1,
-		/obj/item/reagent_containers/food/snacks/grown/banana = 1
+		/obj/item/food/meat/steak/plain = 1,
+		/obj/item/food/grown/banana = 1
 	)
-	result = /obj/item/reagent_containers/food/snacks/meatclown
+	result = /obj/item/food/meatclown
 	subcategory = CAT_MEAT
 
 /datum/crafting_recipe/food/donkpocket/honk
 	time = 15
 	name = "Honk-Pocket"
 	reqs = list(
-		/obj/item/reagent_containers/food/snacks/pastrybase = 1,
-		/obj/item/reagent_containers/food/snacks/grown/banana = 1,
+		/obj/item/food/pastrybase = 1,
+		/obj/item/food/grown/banana = 1,
 		/datum/reagent/consumable/sugar = 3
 	)
-	result = /obj/item/reagent_containers/food/snacks/donkpocket/honk
+	result = /obj/item/food/donkpocket/honk
 	subcategory = CAT_PASTRY
 
 /datum/crafting_recipe/food/mimetart
@@ -124,10 +126,11 @@
 	reqs = list(
 		/datum/reagent/consumable/milk = 5,
 		/datum/reagent/consumable/sugar = 5,
-		/obj/item/reagent_containers/food/snacks/pie/plain = 1,
+		/obj/item/food/pie/plain = 1,
 		/datum/reagent/consumable/nothing = 5
 	)
 	result = /obj/item/reagent_containers/food/snacks/pie/mimetart
+	//result = /obj/item/food/pie/mimetart
 	subcategory = CAT_PIE
 
 /datum/crafting_recipe/food/monkeysdelight
@@ -137,8 +140,8 @@
 		/datum/reagent/consumable/sodiumchloride = 1,
 		/datum/reagent/consumable/blackpepper = 1,
 		/obj/item/reagent_containers/glass/bowl = 1,
-		/obj/item/reagent_containers/food/snacks/monkeycube = 1,
-		/obj/item/reagent_containers/food/snacks/grown/banana = 1
+		/obj/item/food/monkeycube = 1,
+		/obj/item/food/grown/banana = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/soup/monkeysdelight
 	subcategory = CAT_SALAD
@@ -148,7 +151,7 @@
 	reqs = list(
 		/datum/reagent/water = 10,
 		/obj/item/reagent_containers/glass/bowl = 1,
-		/obj/item/reagent_containers/food/snacks/grown/banana = 1,
+		/obj/item/food/grown/banana = 1,
 		/obj/item/stack/sheet/mineral/hidden/hellstone = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/soup/clownstears
@@ -158,7 +161,7 @@
 // 	name = "Spesslaw"
 // 	reqs = list(
 // 		/obj/item/food/spaghetti/boiledspaghetti = 1,
-// 		/obj/item/reagent_containers/food/snacks/meatball = 4
+// 		/obj/item/food/meatball = 4
 // 	)
 // 	result = /obj/item/food/spaghetti/spesslaw
 // 	subcategory = CAT_SPAGHETTI

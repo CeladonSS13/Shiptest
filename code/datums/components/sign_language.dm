@@ -139,9 +139,11 @@
 	SIGNAL_HANDLER
 
 	var/mob/living/carbon/carbon_parent = parent
+// [CELADON-EDIT] - RETURN_CONTENT - CLOWN_RETURN_CONTENT
 	if(carbon_parent.mind?.miming)
 		to_chat(carbon_parent, span_green("You stop yourself from signing in favor of the artform of mimery!"))
 		return COMPONENT_CANNOT_SPEAK
+// [/CELADON-EDIT]
 
 	switch(check_signables_state())
 		if(SIGN_HANDS_FULL) // Full hands

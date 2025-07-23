@@ -13,7 +13,7 @@
 > 5.7x39mm
 > 12 Gauge
 > 5.56x42mm
-> 7.5x64mm
+> 6.5mm
 > .50 BMG
 > .410
 
@@ -224,19 +224,19 @@ MARK: 5.56x42mm
 
 
 /*
-MARK: 7.5x64mm
+MARK: 6.5mm
 */
 
-/datum/supply_pack/faction/syndicate/ammo/a75clip_box
-	name = "7.5x64mm Ammo Box Crate"
-	desc = "Contains a twenty-round 7.5x64mm ammo box for various sniper rifles such as the Boomslang series."
-	contains = list(/obj/item/storage/box/ammo/a75clip)
+/datum/supply_pack/faction/syndicate/ammo/a65clip_box
+	name = "6.5mm Ammo Box Crate"
+	desc = "Contains a twenty-round 6.5mm ammo box for various sniper rifles such as the Boomslang series."
+	contains = list(/obj/item/storage/box/ammo/a65clip)
 	cost = 200
 
-/datum/supply_pack/faction/syndicate/ammo/a75clip_trackers
-	name = "7.5x64mm Tracker Shell Crate"
-	desc = "Contains a 10-round 7.5x64mm tracker box for various sniper rifles such as the Boomslang series."
-	contains = list(/obj/item/storage/box/ammo/a75clip/trac)
+/datum/supply_pack/faction/syndicate/ammo/a65clip_trackers
+	name = "6.5mm Tracker Shell Crate"
+	desc = "Contains a 10-round 6.5mm tracker box for various sniper rifles such as the Boomslang series."
+	contains = list(/obj/item/storage/box/ammo/a65clip/trac)
 	cost = 250
 
 /*

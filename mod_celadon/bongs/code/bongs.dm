@@ -34,8 +34,8 @@
 	create_reagents(chem_volume, INJECTABLE | NO_REACT)
 
 /obj/item/bong/attackby(obj/item/used_item, mob/user, params)
-	if(istype(used_item, /obj/item/reagent_containers/food/snacks/grown/))
-		var/obj/item/reagent_containers/food/snacks/grown/grown_item = used_item
+	if(istype(used_item, /obj/item/food/grown/))
+		var/obj/item/food/grown/grown_item = used_item
 		if(packed_item)
 			balloon_alert(user, "already packed!")
 			return

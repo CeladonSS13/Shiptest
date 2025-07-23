@@ -28,6 +28,7 @@
 		/obj/item/clothing/head/beanie/orange = 3,
 		/obj/item/clothing/head/flatcap = 3,
 		/obj/item/clothing/head/flap = 3,
+		/obj/item/clothing/head/sunhat = 3,
 		/obj/item/clothing/head/beanie/teal = 3,
 		/obj/item/clothing/gloves/fingerless = 2,
 		/obj/item/clothing/neck/scarf/pink = 3,
@@ -121,7 +122,8 @@
 		/obj/item/clothing/mask/balaclava = 2,
 		/obj/item/storage/belt/fannypack/black = 2,
 		/obj/item/clothing/suit/jacket/letterman_syndie = 1,
-		/obj/item/towel = 3)
+		/obj/item/towel = 3,
+		/obj/item/clothing/mask/breath/facemask =3)
 	premium = list(
 		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/item/clothing/suit/jacket/leather/overcoat = 1,
@@ -132,8 +134,10 @@
 		/obj/item/storage/box/maid = 2,
 		/obj/item/instrument/piano_synth/headphones/spacepods = 1)
 	refill_canister = /obj/item/vending_refill/clothing
-	default_price = 10
-	extra_price = 60
+	// [CELADON-REMOVE] - CELADON_ECONOMY - Вынесено в модуль. Иначе оверайд будет
+	// default_price = 10
+	// extra_price = 60
+	// [/CELADON-REMOVE]
 	light_mask = "wardrobe-light-mask"
 	light_color = LIGHT_COLOR_ELECTRIC_GREEN
 

@@ -31,24 +31,24 @@ MARK: 5.56x39mm (M-90gl Carbine & P-16)
 	// bullet_per_box = 80
 
 /obj/item/ammo_casing/a556_45/a856
-	name = "5.56mm A856 bullet casing"
-	desc = "A 5.56mm bullet casing."
+	name = "5.56x45mm A856 bullet casing"
+	desc = "A 5.56x45mm bullet casing."
 	icon_state = "rifle-brass-incen"
 	caliber = "5.56x45mm"
 	projectile_type = /obj/projectile/bullet/a556_45/a856
 	// bullet_per_box = 80 // Хрен знает зачем это , ставим пока одинаковые значения везде
 
 /obj/item/ammo_casing/a556_45/m903
-	name = "5.56mm M903 bullet casing"
-	desc = "A 5.56mm bullet casing."
+	name = "5.56x45mm M903 bullet casing"
+	desc = "A 5.56x45mm bullet casing."
 	icon_state = "rifle-brass-ap"
 	caliber = "5.56x45mm"
 	projectile_type = /obj/projectile/bullet/a556_45/m903
 	// bullet_per_box = 80
 
 /obj/item/ammo_casing/a556_45/surplus
-	name = "5.56mm surplus bullet casing"
-	desc = "A 5.56mm bullet casing."
+	name = "5.56x45mm surplus bullet casing"
+	desc = "A 5.56x45mm bullet casing."
 	icon_state = "rifle-brass-surplus"
 	caliber = "5.56x45mm"
 	projectile_type = /obj/projectile/bullet/a556_45/surplus
@@ -98,10 +98,11 @@ MARK: 5.56x39mm (M-90gl Carbine & P-16)
 // MARK: 7.62x54mmR
 //
 
-/obj/item/ammo_casing/x762
-	name = "7,62x54 Winchester bullet casing"
-	desc = "A 7,62x54 Winchester bullet casing."
-	icon_state = "big-steel"
-	caliber = "7.62x54"
-	projectile_type = /obj/projectile/bullet/x762x54
-	// bullet_per_box = 80
+/obj/item/ammo_casing/x762_54
+	name = "7,62x54R bullet casing."
+	desc = "A 7,62x54R bullet casing. It doesn't look very good."
+	icon_state = "762_54-steel"
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/svd_bullet.dmi'
+	caliber = "7.62x54R"
+	projectile_type = /obj/projectile/bullet/x762_54
+	// bullet_per_box = 40

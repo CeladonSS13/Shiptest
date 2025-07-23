@@ -137,3 +137,16 @@
 
 /obj/item/ammo_box/magazine/skm_762_40/drum/empty
 	start_empty = TRUE
+
+//magazine for svd
+/obj/item/ammo_box/magazine/svd_rounds
+	name = "\improper SVD magazine (7.62x54mmR)"
+	desc = "A large caliber magazine for the SVD sniper rifle."
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi'
+	icon_state = "10_bullet-1"
+	base_icon_state = "10_bullet"
+	ammo_type = /obj/item/ammo_casing/x762_54
+	max_ammo = 10
+	caliber = "7.62x54R"
+	w_class = WEIGHT_CLASS_NORMAL
+	multiple_sprites = AMMO_BOX_FULL_EMPTY

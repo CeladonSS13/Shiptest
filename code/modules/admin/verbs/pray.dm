@@ -37,6 +37,10 @@
 	msg = span_adminnotice("[icon2html(cross, GLOB.admins)]<b><font color=[font_color]>[prayer_type][deity ? " (to [deity])" : ""]: </font>[ADMIN_FULLMONTY(src)] [ADMIN_SC(src)]:</b> [span_linkify("[msg]")]")
 
 	for(var/client/C in GLOB.admins)
+	// [CELADON-ADD] Add Sound for Pray
+		if(C.prefs.toggles & SOUND_PRAYERS)
+			SEND_SOUND(C, sound('mod_celadon/_storge_sounds/sound/announce/pray.ogg'))
+	// [/CELADON-ADD]
 		if(C.prefs.chat_toggles & CHAT_PRAYER)
 			to_chat(C, msg, confidential = TRUE)
 	to_chat(usr, span_info("You pray to the gods: \"[msg_tmp]\""), confidential = TRUE)

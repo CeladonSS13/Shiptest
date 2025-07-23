@@ -154,15 +154,18 @@ NO_MAG_GUN_HELPER(automatic/assault/morita1/swamp)
 	icon = 'mod_celadon/_storge_icons/icons/items/weapons/svd.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/svd_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/svd_righthand.dmi'
-	mob_overlay_icon = 'icons/obj/guns/manufacturer/hunterspride/onmob.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/weapons/overlay/svd_onmob.dmi'
 	inhand_x_dimension = 64
 	inhand_y_dimension = 32
-
+	zoomable = TRUE
+	zoom_amt = 6
+	zoom_out_amt = 1
 	fire_sound = "svd_fire"
 	icon_state = "svd"
 	item_state = "svd"
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
+	slot_flags = ITEM_SLOT_BACK
 	internal_magazine = FALSE
 	show_magazine_on_sprite = TRUE
 	default_ammo_type = /obj/item/ammo_box/magazine/svd_rounds
@@ -171,28 +174,16 @@ NO_MAG_GUN_HELPER(automatic/assault/morita1/swamp)
 	)
 
 	manufacturer = MANUFACTURER_NONE
-	zoomable = FALSE
 
 	rack_sound = 'mod_celadon/_storge_sounds/sound/gun/svd/svd_cocked.ogg'
 
 	fire_delay = 0.8 SECONDS
 
 	spread_unwielded = 25
-	recoil = 0
+	recoil = 0.01
 	recoil_unwielded = 4
 	wield_slowdown = 0.75
 NO_MAG_GUN_HELPER(automatic/marksman/svd)
-/obj/item/ammo_box/magazine/svd_rounds
-	name = "\improper SVD magazine (7.62x54mmR)"
-	desc = "A large caliber magazine for the SVD sniper rifle."
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/svd_ammo.dmi'
-	icon_state = "10_bullet-1"
-	base_icon_state = "10_bullet"
-	ammo_type = /obj/item/ammo_casing/x762
-	max_ammo = 10
-	caliber = "7.62x54"
-	w_class = WEIGHT_CLASS_NORMAL
-	multiple_sprites = AMMO_BOX_FULL_EMPTY
 
 // /obj/item/gun/ballistic/automatic/marksman/f4/inteq/no_mag
 // 	spawnwithmagazine = FALSE

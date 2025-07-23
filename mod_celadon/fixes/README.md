@@ -85,7 +85,7 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code\modules\hydroponics\gene_modder.dm` - Добавление удаления мусора а не данных с диска
 
-- EDIT: `code\modules\hydroponics\grown\replicapod.dm` - Исправление отобрежения ДНК на сканере 
+- EDIT: `code\modules\hydroponics\grown\replicapod.dm` - Исправление отобрежения ДНК на сканере
 
 - EDIT: `code\modules\hydroponics\grown\replicapod.dm` - Исправлено появление людей из капусты
 
@@ -97,8 +97,22 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code/modules/missions/outpost/research_mission.dm` - Окргуление координат
 
+- ADD: `code/datums/looping_sounds/machinery_sounds.dm` - Гравген во включённом состоянии жужжит.
+- ADD: `code/game/machinery/shuttle/ship_gravity.dm` - Гравген во включённом состоянии слегка светится, жужжит, а "интерфейс" светится в темноте. А также добавлено взаимодействие с ЕМП, при котором с 50% шансом он переключится.
+- ADD: `code/game/mecha/equipment/tools/mining_tools.dm` Мех с активной дрелью теперь копает камень.
+- ADD: `code/game/objects/structures/crates_lockers/closets.dm` Мехи теперь нельзя пихать в ящики.
+- ADD: `code/modules/projectiles/gun.dm` - Действие прицеливания теперь выдаётся только когда оружие держится в двух руках.
+- EDIT: `code/game/atoms_movable.dm` - В космосе теперь нельзя передвигаться за счёт взаимно пульнутых мобов
+
 - EDIT: `code/modules/clothing/head/helmet.dm` - Отображение оверлеев
 
+- EDIT: `code/modules/surgery/surgery_step.dm` - Исправление ухода операции в бесконечный цикл
+
+- EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Делаем так чтобы кепори могли брать мелкие предметы в клюв
+
+- EDIT: `code/datums/mapgen/planetary/waterGenerator.dm` : Убираем спавн лавы на водяной планете
+
+- ADD: `code/game/objects/items/food/donut.dm` : Прописано название стандартной иконки, вместо надписи ERROR
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
@@ -113,9 +127,10 @@ Weebstick (Красная катана) теперь нельзя сломать
 - `mod_celadon/fixes/code/research_mission.dm` - вроде перезаписывает
 
 <!-- fax_name -->
+<!-- 
 - `code\controllers\subsystem\overmap.dm`: `proc/spawn_ship_at_start`,
 - `code\modules\paperwork\fax.dm`: `proc/connect_to_shuttle`
-
+ -->
 <!--
   Если ты добавлял новый модульный оверрайд, его нужно указать здесь.
   Здесь указываются оверрайды в твоём моде и папке `_master_files`
@@ -126,7 +141,8 @@ Weebstick (Красная катана) теперь нельзя сломать
 ### Дефайны
 
 <!-- fax_name -->
-- `code/__defines/~mod_celadon/ship.dm`
+<!-- - `code/__defines/~mod_celadon/ship.dm` -->
+- `code/__DEFINES/radio.dm` - Переименование частоты SolGov -> SolFed
 
 <!--
   Если требовалось добавить какие-либо дефайны, укажи файлы,
