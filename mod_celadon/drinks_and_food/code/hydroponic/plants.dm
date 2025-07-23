@@ -8,11 +8,11 @@
 	plantname = "Mint Plant"
 	icon_dead = null
 	growthstages = 3
-	product = /obj/item/reagent_containers/food/snacks/grown/tea/mint
+	product = /obj/item/food/grown/tea/mint
 	reagents_add = list(/datum/reagent/pax/mint = 0.2, /datum/reagent/consumable/nutriment/vitamin = 0.06, /datum/reagent/toxin/teapowder = 0.1)
 	rarity = 50
 
-/obj/item/reagent_containers/food/snacks/grown/tea/mint
+/obj/item/food/grown/tea/mint
 	seed = /obj/item/seeds/tea/mint
 	name = "mint buds"
 	icon = 'mod_celadon/_storge_icons/icons/obj/hydroponics/harvest.dmi'

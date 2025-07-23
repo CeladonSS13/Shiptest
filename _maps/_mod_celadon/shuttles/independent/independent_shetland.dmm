@@ -2449,6 +2449,7 @@
 /obj/machinery/door/airlock/engineering{
 	dir = 4;
 	name = "Reactor";
+
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
@@ -2846,12 +2847,12 @@
 /obj/structure/closet/secure_closet/freezer/meat,
 /obj/item/storage/fancy/egg_box,
 /obj/item/storage/fancy/egg_box,
-/obj/item/reagent_containers/food/snacks/grown/potato,
-/obj/item/reagent_containers/food/snacks/grown/potato,
-/obj/item/reagent_containers/food/snacks/grown/potato,
-/obj/item/reagent_containers/food/snacks/grown/potato,
-/obj/item/reagent_containers/food/snacks/grown/potato,
-/obj/item/reagent_containers/food/snacks/grown/potato,
+/obj/item/food/grown/potato,
+/obj/item/food/grown/potato,
+/obj/item/food/grown/potato,
+/obj/item/food/grown/potato,
+/obj/item/food/grown/potato,
+/obj/item/food/grown/potato,
 /obj/item/reagent_containers/condiment/milk,
 /obj/item/reagent_containers/condiment/milk,
 /obj/item/reagent_containers/condiment/enzyme,
@@ -4550,6 +4551,7 @@
 /area/ship/crew/hydroponics)
 "Tc" = (
 /obj/effect/spawner/random/vending/cola{
+
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)

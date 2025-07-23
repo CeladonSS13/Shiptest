@@ -3,6 +3,7 @@
 	name = "clown PDA"
 	default_cartridge = /obj/item/cartridge/virus/clown
 	inserted_item = /obj/item/toy/crayon/rainbow
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/pda.dmi'
 	icon_state = "pda-clown"
 	desc = "A portable microcomputer by Thinktronic Systems, LTD. The surface is coated with polytetrafluoroethylene and banana drippings."
 	ttone = "honk"
@@ -27,6 +28,7 @@
 	name = "mime PDA"
 	default_cartridge = /obj/item/cartridge/virus/mime
 	inserted_item = /obj/item/toy/crayon/mime
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/pda.dmi'
 	icon_state = "pda-mime"
 	desc = "A portable microcomputer by Thinktronic Systems, LTD. The hardware has been modified for compliance with the vows of silence."
 	allow_emojis = TRUE

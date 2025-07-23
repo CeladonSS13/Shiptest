@@ -28,6 +28,7 @@
 		/obj/item/clothing/head/beanie/orange = 3,
 		/obj/item/clothing/head/flatcap = 3,
 		/obj/item/clothing/head/flap = 3,
+		/obj/item/clothing/head/sunhat = 3,
 		/obj/item/clothing/head/beanie/teal = 3,
 		/obj/item/clothing/gloves/fingerless = 2,
 		/obj/item/clothing/neck/scarf/pink = 3,
@@ -121,7 +122,8 @@
 		/obj/item/clothing/mask/balaclava = 2,
 		/obj/item/storage/belt/fannypack/black = 2,
 		/obj/item/clothing/suit/jacket/letterman_syndie = 1,
-		/obj/item/towel = 3)
+		/obj/item/towel = 3,
+		/obj/item/clothing/mask/breath/facemask =3)
 	premium = list(
 		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/item/clothing/suit/jacket/leather/overcoat = 1,

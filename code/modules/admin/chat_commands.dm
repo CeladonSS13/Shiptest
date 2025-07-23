@@ -57,7 +57,7 @@
 	embed.fields += new /datum/tgs_chat_embed/field("Interviews", "Open: [length(GLOB.interviews.open_interviews) - length(GLOB.interviews.interview_queue)]\nSubmitted: [length(GLOB.interviews.interview_queue)]\nClosed: [length(GLOB.interviews.closed_interviews)]")
 
 	embed.fields += new /datum/tgs_chat_embed/field("Режим", "[SSticker.mode ? SSticker.mode.name : "Не запущен"]")
-	embed.fields += new /datum/tgs_chat_embed/field("Время раунда", ROUND_TIME)
+	embed.fields += new /datum/tgs_chat_embed/field("Время раунда", ROUND_TIME())
 	embed.fields += new /datum/tgs_chat_embed/field("Time Dilation", "[round(SStime_track.time_dilation_current, 0.1)]% ([round(SStime_track.time_dilation_avg, 0.1)]% avg)")
 
 	for(var/datum/tgs_chat_embed/field/field as anything in embed.fields)
@@ -118,7 +118,7 @@
 	embed.fields += new /datum/tgs_chat_embed/field("Раунд", "[GLOB.round_id ? "[GLOB.round_id]" : "Не запущен"]")
 	embed.fields += new /datum/tgs_chat_embed/field("Игроки", "[length(GLOB.player_list) || "отсутствуют"]")
 	embed.fields += new /datum/tgs_chat_embed/field("Администраторы", "[length(GLOB.admins) || "отсутствуют"]")
-	embed.fields += new /datum/tgs_chat_embed/field("Время раунда", ROUND_TIME)
+	embed.fields += new /datum/tgs_chat_embed/field("Время раунда", ROUND_TIME())
 	embed.fields += new /datum/tgs_chat_embed/field("Time Dilation", "[round(SStime_track.time_dilation_current, 0.1)]% ([round(SStime_track.time_dilation_avg, 0.1)]% avg)")
 
 	for(var/datum/tgs_chat_embed/field/field as anything in embed.fields)

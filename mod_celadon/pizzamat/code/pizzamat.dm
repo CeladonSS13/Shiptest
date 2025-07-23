@@ -6,10 +6,10 @@
 	icon = 'mod_celadon/_storge_icons/icons/machinery/pizzamat.dmi'
 	icon_state = "pizzamat"
 	products = list(
-		/obj/item/reagent_containers/food/snacks/pizza/meat/rinmeat = 3,
-		/obj/item/reagent_containers/food/snacks/pizza/margherita = 3,
-		/obj/item/reagent_containers/food/snacks/pizza/sassysage = 3,
-		/obj/item/reagent_containers/food/snacks/pizza/pineapple/rinapple = 3)
+		/obj/item/food/pizza/meat/rinmeat = 3,
+		/obj/item/food/pizza/margherita = 3,
+		/obj/item/food/pizza/sassysage = 3,
+		/obj/item/food/pizza/pineapple/rinapple = 3)
 
 	refill_canister = /obj/item/vending_refill/pizzamat
 	default_price = 75
@@ -22,14 +22,14 @@
 	icon = 'mod_celadon/_storge_icons/icons/machinery/pizzamat.dmi'
 	icon_state = "refill_pizza"
 
-/obj/item/reagent_containers/food/snacks/pizza/meat/rinmeat
+/obj/item/food/pizza/meat/rinmeat
 	name = "Elite Meat pizza"
 	desc = "Greasy pizza with delicious meat, with special seasonings."
-	slice_path = /obj/item/reagent_containers/food/snacks/pizzaslice/meat
-	list_reagents = list(/datum/reagent/consumable/nutriment = 40, /datum/reagent/consumable/nutriment/vitamin = 8, /datum/reagent/drug/space_drugs = 10)
+	slice_type = /obj/item/food/pizzaslice/meat
+	food_reagents = list(/datum/reagent/consumable/nutriment = 40, /datum/reagent/consumable/nutriment/vitamin = 8, /datum/reagent/drug/space_drugs = 10)
 
-/obj/item/reagent_containers/food/snacks/pizza/pineapple/rinapple
+/obj/item/food/pizza/pineapple/rinapple
 	name = "\improper Hawaiian pizza"
 	desc = "Pizza is the equivalent of Einstein's riddle, but something seems wrong with it..."
-	slice_path = /obj/item/reagent_containers/food/snacks/pizzaslice/pineapple
-	list_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 3, /datum/reagent/yuck = 10)
+	slice_type = /obj/item/food/pizzaslice/pineapple
+	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 3, /datum/reagent/yuck = 10)

@@ -76,7 +76,7 @@
 
 	bodytemp_cold_damage_limit = TAJARAN_BODYTEMP_NORMAL - 70		//-30
 
-	meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/tajara 	//нарисовать/спиздить спрайт к нему
+	meat = /obj/item/food/meat/slab/human/mutant/tajara 	//нарисовать/спиздить спрайт к нему
 	//skinned_type = /obj/item/stack/sheet/animalhide/tajara						//нужно сделать кожу из таяран и нарисовать/спиздить спрайт к нему
 
 	species_language_holder = /datum/language_holder/tajara

@@ -362,18 +362,18 @@
 	AddComponent(/datum/component/two_handed)
 
 /// triggered on wield of two handed item
-/obj/item/gun/proc/on_wield(obj/item/source, mob/user)
+/obj/item/gun/proc/on_wield(obj/item/source, mob/user, instant)
 	wielded = TRUE
-	INVOKE_ASYNC(src, PROC_REF(do_wield), user)
+	INVOKE_ASYNC(src, PROC_REF(do_wield), user, instant)
 
-/obj/item/gun/proc/do_wield(mob/user)
+/obj/item/gun/proc/do_wield(mob/user, instant)
 	user.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/gun, multiplicative_slowdown = wield_slowdown)
 	wield_time = world.time + wield_delay
 // [CELADON-ADD] - CELADON_FIXES
 	if(azoom)
 		azoom.Grant(user)
 // [/CELADON-ADD]
-	if(wield_time > 0)
+	if(wield_time > 0 && !instant)
 		if(do_after(
 			user,
 			wield_delay,

@@ -12,15 +12,15 @@
 
 /datum/supply_pack/faction/independent/exploration/lava
 	name = "Lava Exploration Kit"
-	desc = "Contains 60 lavaproof rods, two pocket extinguishers and goggles to protect yourself from the heat."
-	cost = 500
+	desc = "Contains 100 rods, two pocket extinguishers and goggles to protect yourself from the heat."
+	cost = 300
 	contains = list(
 		/obj/item/extinguisher/mini,
 		/obj/item/extinguisher/mini,
 		/obj/item/clothing/glasses/heat,
 		/obj/item/clothing/glasses/heat,
-		/obj/item/stack/rods/lava/thirty,
-		/obj/item/stack/rods/lava/thirty,
+		/obj/item/stack/rods/fifty,
+		/obj/item/stack/rods/fifty,
 	)
 	crate_name = "Lava Exploration Kit"
 
@@ -45,11 +45,11 @@ MARK:	General Gear
 
 /datum/supply_pack/faction/independent/exploration/lavaproof_rods
 	name ="Lavaproof Rods Crate"
-	desc = "Contains 60 lavaproof rods for safely traversing molten pits."
+	desc = "Contains 100 lavaproof rods for safely traversing molten pits."
 	cost = 200
 	contains = list(
-		/obj/item/stack/rods/lava/thirty,
-		/obj/item/stack/rods/lava/thirty,
+		/obj/item/stack/rods/fifty,
+		/obj/item/stack/rods/fifty,
 		)
 	crate_name = "Lavaproof Rod Crate"
 

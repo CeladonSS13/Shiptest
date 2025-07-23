@@ -617,10 +617,10 @@
 /obj/effect/turf_decal/corner/transparent/bar,
 /obj/item/storage/cans/sixbeer,
 /obj/machinery/airalarm/directional/south,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
 /turf/open/floor/plasteel,
 /area/ship/crew)
 "lm" = (
@@ -1759,8 +1759,8 @@
 	req_access = list(11)
 	},
 /obj/item/clothing/mask/gas/syndicate,
-/obj/item/clothing/suit/space/syndicate,
-/obj/item/clothing/head/helmet/space/syndicate,
+/obj/item/clothing/suit/space/syndicate/white_red,
+/obj/item/clothing/head/helmet/space/syndicate/white_red,
 /obj/effect/turf_decal/industrial/traffic/full,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
@@ -1784,8 +1784,8 @@
 /obj/machinery/suit_storage_unit/inherit/industrial{
 	req_access = list(11)
 	},
-/obj/item/clothing/suit/space/syndicate/black/engie,
-/obj/item/clothing/head/helmet/space/syndicate/black/engie,
+/obj/item/clothing/suit/space/syndicate/engie,
+/obj/item/clothing/head/helmet/space/syndicate/engie,
 /obj/item/tank/jetpack/carbondioxide,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/machinery/camera/autoname{
@@ -3188,8 +3188,8 @@
 	pixel_x = 19;
 	pixel_y = 9
 	},
-/obj/item/clothing/suit/space/syndicate,
-/obj/item/clothing/head/helmet/space/syndicate,
+/obj/item/clothing/suit/space/syndicate/white_red,
+/obj/item/clothing/head/helmet/space/syndicate/white_red,
 /obj/machinery/camera/autoname{
 	dir = 10
 	},

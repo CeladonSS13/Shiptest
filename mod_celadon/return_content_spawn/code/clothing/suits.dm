@@ -80,7 +80,7 @@
 	flags_inv = HIDEJUMPSUIT
 	allowed = list(/obj/item/megaphone/clown,
 					/obj/item/soap,
-					/obj/item/reagent_containers/food/snacks/pie/cream,
+					/obj/item/food/pie/cream,
 					/obj/item/bikehorn,
 					/obj/item/bikehorn/golden,
 					/obj/item/bikehorn/airhorn,
@@ -90,7 +90,7 @@
 					/obj/item/toy/crayon/spraycan,
 					/obj/item/toy/crayon/spraycan/lubecan,
 					/obj/item/grown/bananapeel,
-					/obj/item/reagent_containers/food/snacks/grown/banana)
+					/obj/item/food/grown/banana)
 
 /obj/item/clothing/suit/hooded/cloak/goliath/polar
 	name = "polar cloak"
