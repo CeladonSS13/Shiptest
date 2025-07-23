@@ -44,6 +44,7 @@ GLOBAL_VAR(restart_counter)
 
 	load_admins()
 	load_mentors() //WS edit - Mentors
+	setup_mentors() // Инициализация системы ментор тикетов 	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
 
 	//SetupLogs depends on the RoundID, so lets check
 	//DB schema and set RoundID if we can
@@ -143,6 +144,7 @@ GLOBAL_VAR(restart_counter)
 	GLOB.tgui_log = "[GLOB.log_directory]/tgui.log"
 	GLOB.world_shuttle_log = "[GLOB.log_directory]/shuttle.log"
 	GLOB.world_celadon_admin_log = "[GLOB.log_directory]/admin.log" // [CELADON-ADD] - Добавляем логирование админских действий.
+	GLOB.world_mentor_log = "[GLOB.log_directory]/mentor.log" // Добавляем логирование действий менторов
 
 	GLOB.demo_log = "[GLOB.log_directory]/demo.log"
 
@@ -165,6 +167,7 @@ GLOBAL_VAR(restart_counter)
 	start_log(GLOB.tgui_log)
 	start_log(GLOB.world_shuttle_log)
 	start_log(GLOB.world_celadon_admin_log) // [CELADON-ADD] - Добавляем логирование админских действий.
+	start_log(GLOB.world_mentor_log) // Добавляем логирование действий менторов
 
 	var/latest_changelog = file("[global.config.directory]/../html/changelogs/archive/" + time2text(world.timeofday, "YYYY-MM") + ".yml")
 	GLOB.changelog_hash = fexists(latest_changelog) ? md5(latest_changelog) : 0 //for telling if the changelog has changed recently

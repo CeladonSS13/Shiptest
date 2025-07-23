@@ -2537,6 +2537,8 @@
 #include "code\modules\mapping\space_management\traits.dm"
 #include "code\modules\mapping\space_management\zlevel_manager.dm"
 #include "code\modules\mentor\holder2.dm"
+#include "code\modules\mentor\mentor_defines.dm"	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
+#include "code\modules\mentor\mentor_logging.dm"	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
 #include "code\modules\mentor\mentor_ranks.dm"
 #include "code\modules\mentor\mentor_verbs.dm"
 #include "code\modules\mentor\verbs\dementor.dm"
@@ -2544,6 +2546,9 @@
 #include "code\modules\mentor\verbs\mentorhelp.dm"
 #include "code\modules\mentor\verbs\mentorpm.dm"
 #include "code\modules\mentor\verbs\mentorsay.dm"
+#include "code\modules\mentor\verbs\mentortickets.dm"	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
+#include "code\modules\mentor\mentor_admin.dm"	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
+#include "code\modules\mentor\mentor_init.dm"	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
 #include "code\modules\mining\abandoned_crates.dm"
 #include "code\modules\mining\drill.dm"
 #include "code\modules\mining\fulton.dm"

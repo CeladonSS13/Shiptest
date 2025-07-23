@@ -1400,6 +1400,8 @@
 			log_looc(log_text)
 		if(LOG_SUBTLER)
 			log_subtler(log_text)
+		if(LOG_MENTOR)	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
+			log_mentor(log_text)
 		else
 			stack_trace("Invalid individual logging type: [message_type]. Defaulting to [LOG_GAME] (LOG_GAME).")
 			log_game(log_text)

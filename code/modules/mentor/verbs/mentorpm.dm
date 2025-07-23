@@ -1,7 +1,7 @@
 //shows a list of clients we could send PMs to, then forwards our choice to cmd_Mentor_pm
-/client/proc/cmd_mentor_pm_panel()
-	// set category = "Mentor"
-	// set name = "Mentor PM" // [CELADON-DELETE] Mentors not works!!!
+/client/proc/cmd_mentor_pm_panel(msg as text)	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
+	set category = "Mentor"	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
+	set name = "Mentor PM"	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
 	if(!check_mentor())
 		to_chat(src, span_warning("Error: Mentor-PM-Panel: Only Mentors may use this command."))
 		return
@@ -20,6 +20,9 @@
 	cmd_mentor_pm(targets[target],null)
 	SSblackbox.record_feedback("tally", "mentor_verb", 1, "Mentor PM")
 
+	msg = emoji_parse(copytext_char(sanitize(msg), 1, MAX_MESSAGE_LEN))	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
+	mob.log_talk(msg, LOG_MSAY)	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
+	mob.log_talk(msg, LOG_MENTOR)	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
 
 //takes input from cmd_mentor_pm_context, cmd_Mentor_pm_panel or /client/Topic and sends them a PM.
 //Fetching a message if needed. src is the sender and C is the target client
@@ -38,6 +41,18 @@
 		else
 			mentorhelp(msg)	//Mentor we are replying to left. Mentorhelp instead
 		return
+
+	// Создаем или используем существующий тикет
+	if(C.current_mticket && C.current_mticket.initiator == C)	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
+		var/datum/mentor_help/MH = C.current_mticket
+		if(check_mentor())
+			if(!MH.claimed_by)
+				MH.claim(key_name_mentor(src))
+			else if(MH.claimed_by != usr.key)
+				if(alert("Ticket уже взят [MH.claimed_by]. Перехватить?", "Mentorhelp", "Да", "Нет") != "Да")
+					return
+				MH.claim(key_name_mentor(src))
+		MH.add_interaction("[key_name_mentor(src)] ответил [key_name_mentor(C)]: [msg]")
 
 	to_chat(GLOB.admins | GLOB.mentors, "<font color='notice'>[src] has started replying to [whom]'s mhelp.</font>")
 
@@ -83,3 +98,10 @@
 	for(var/client/X in GLOB.mentors)
 		if(X.key!=key && X.key!=C.key)	//check client/X is an Mentor and isn't the sender or recipient
 			to_chat(X, span_mentornotice("<B>Mentor PM: [key_name(src, X, 0)]-&gt;[key_name(C, X, 0)]:</B> [msg]")) //inform X
+
+	// Обновляем тикет, если он существует
+	if(C.current_mticket && C.current_mticket.initiator == C)	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
+		var/datum/mentor_help/MH = C.current_mticket
+		MH.add_interaction("[key_name_mentor(src)] to [key_name_mentor(C)]: [msg]")
+		if(check_mentor())
+			MH.claim(key_name_mentor(src))

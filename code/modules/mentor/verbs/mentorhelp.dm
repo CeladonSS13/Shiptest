@@ -1,29 +1,35 @@
 /client/verb/mentorhelp(msg as text)
-	// set category = "Mentor"
-	// set name = "Mentorhelp" // [CELADON-DELETE] Mentors not works!!!
+	set category = "Mentor"	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
+	set name = "Mentorhelp"	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
 
-	//clean the input msg
-	if(!msg)
+	if(GLOB.say_disabled)	//This is here to try to identify lag problems	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
+		to_chat(usr, span_danger("Speech is currently admin-disabled."), confidential = TRUE)	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
 		return
-	msg = sanitize(copytext(msg,1,MAX_MESSAGE_LEN))
-	if(!msg || !mob)
-		return
+	//handle muting and automuting
 	if(prefs.muted & MUTE_MENTORHELP)
-		to_chat(src, span_warning("You are unable to use mentorhelp (muted)."))
+		to_chat(src, span_danger("Error: Mentor-PM: You cannot send mentorhelps (Muted)."), confidential = TRUE)	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
+		return	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
+	if(handle_spam_prevention(msg,MUTE_MENTORHELP))	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
 		return
-	var/show_char = CONFIG_GET(flag/mentors_mobname_only)
-	var/mentor_msg = span_mentornotice("<b>[span_info("MENTORHELP:</b> <b>[key_name_mentor(src, 1, 0, 1, show_char)]</b>:")] [msg]")
-	log_mentor("MENTORHELP: [key_name_mentor(src, 0, 0, 0, 0)]: [msg]")
 
-	for(var/client/X in GLOB.mentors)
-		SEND_SOUND(X, 'sound/items/bikehorn.ogg')
-		to_chat(X, mentor_msg)
+	msg = trim(msg)	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
 
-	to_chat(src, span_mentornotice("PM to-<b>Mentors</b>: [msg]"))
+	if(!msg)	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
+		return
 
-	//spam prevention, 60 second delay
-	remove_verb(src, /client/verb/mentorhelp)
-	addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(add_verb), src, /client/verb/mentorhelp), 1 MINUTES, TIMER_STOPPABLE)
+	if(current_mticket)	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
+		if(alert(usr, "You already have a ticket open. Is this for the same issue?","Mentorhelp","Yes","No") != "No")
+			if(current_mticket)
+				current_mticket.message_no_recipient(msg)
+				current_mticket.timeout_verb()
+				return
+			else
+				to_chat(usr, span_warning("Ticket not found, creating new one..."), confidential = TRUE)
+		else
+			current_mticket.add_interaction("[key_name_mentor(usr)] opened a new ticket.")
+			current_mticket.close()
+
+	new /datum/mentor_help(msg, src)	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
 
 /proc/get_mentor_counts()
 	. = list("total" = 0, "afk" = 0, "present" = 0)

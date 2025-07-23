@@ -96,6 +96,8 @@
 
 /datum/config_entry/flag/log_shuttle // log shuttle related actions, ie shuttle computers, shuttle manipulator, emergency console
 
+/datum/config_entry/flag/log_mentor // log mentor actions and tickets	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
+
 /datum/config_entry/flag/log_timers_on_bucket_reset // logs all timers in buckets on automatic bucket reset (Useful for timer debugging)
 
 /datum/config_entry/flag/allow_admin_ooccolor // Allows admins with relevant permissions to have their own ooc colour

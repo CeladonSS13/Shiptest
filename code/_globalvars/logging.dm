@@ -48,6 +48,10 @@ GLOBAL_VAR(world_celadon_admin_log)
 GLOBAL_PROTECT(world_celadon_admin_log)
 // [/CELADON-ADD]
 
+// Logging for mentor actions.	// [CELADON] - CELADON_MENTOR_TICKET - вынести в модуль потом
+GLOBAL_VAR(world_mentor_log)
+GLOBAL_PROTECT(world_mentor_log)
+
 GLOBAL_VAR(perf_log)
 GLOBAL_PROTECT(perf_log)
 
