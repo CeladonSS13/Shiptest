@@ -30,6 +30,7 @@
 	var/shield_bash_sound = 'sound/effects/shieldbash.ogg'
 	var/recoil_bonus = -2
 	var/broken = FALSE
+	var/broken_shield	// [CELADON-ADD] - Флаг на включение сломаных щитов из модов
 
 /obj/item/shield/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
 	. = ..()
@@ -42,6 +43,11 @@
 /obj/item/shield/obj_break(damage_flag)
 	. = ..()
 	if(!broken)
+		if(broken_shield)
+			icon = 'mod_celadon/_storge_icons/icons/items/weapons/shields.dmi'
+			icon_state = "[src::icon_state]_broken"
+			lefthand_file = null
+			righthand_file = null
 		if(isliving(loc))
 			loc.balloon_alert(loc, "[src] cracks!")
 		name = "broken [src::name]"
@@ -84,20 +90,29 @@
 	integrity_failure = 0.1
 	material_flags = MATERIAL_NO_EFFECTS
 
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/shields.dmi'	// [CELADON-ADD]
+	broken_shield = TRUE	// [CELADON-ADD]
+
 /obj/item/shield/riot/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/melee/baton))
 		if(COOLDOWN_FINISHED(src, baton_bash))
 			user.visible_message(span_warning("[user] bashes [src] with [W]!"))
 			playsound(src, shield_bash_sound, 50, TRUE)
 			COOLDOWN_START(src, baton_bash, BATON_BASH_COOLDOWN)
-	else if(istype(W, /obj/item/stack/sheet/metal))
+	else if(W.tool_behaviour == TOOL_WELDER)	//else if(istype(W, /obj/item/stack/sheet/metal)) [CELADON-EDIT]
 		if (obj_integrity >= max_integrity)
 			to_chat(user, span_warning("[src] is already in perfect condition."))
 		else
-			var/obj/item/stack/sheet/metal/T = W
-			T.use(1)
+			//var/obj/item/stack/sheet/metal/T = W	[CELADON-EDIT]
+			//T.use(1)	[CELADON-EDIT]
+			if(!W.use_tool(src, user, 40, volume=50, amount=2))
+				return
+			if(broken_shield)
+				icon_state = "ballistic"
+				lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
+				righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
 			obj_integrity = max_integrity
-			to_chat(user, span_notice("You repair [src] with [T]."))
+			to_chat(user, span_notice("You repair [src] with [W]."))	//to_chat(user, span_notice("You repair [src] with [T].")) [CELADON-EDIT]
 			name = src::name
 			broken = FALSE
 			block_chance = 70
@@ -111,6 +126,9 @@
 	force = 24
 	attack_verb = list("stabbed", "gashed")
 	hitsound = 'sound/weapons/bladeslice.ogg'
+
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/shields.dmi'	// [CELADON-ADD]
+	broken_shield = TRUE	// [CELADON-ADD]
 
 /obj/item/shield/riot/roman
 	name = "\improper Roman shield"
@@ -162,6 +180,9 @@
 	icon_state = "flashshield"
 	item_state = "flashshield"
 	var/obj/item/assembly/flash/handheld/embedded_flash
+
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/shields.dmi'	// [CELADON-ADD]
+	broken_shield = TRUE	// [CELADON-ADD]
 
 /obj/item/shield/riot/flash/Initialize()
 	. = ..()
@@ -289,6 +310,9 @@
 	throw_range = 4
 	w_class = WEIGHT_CLASS_NORMAL
 	var/active = 0
+
+	icon = 'icons/obj/shields.dmi'	// [CELADON-ADD]
+	broken_shield = TRUE	// [CELADON-ADD]
 
 /obj/item/shield/riot/tele/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
 	if(active)
