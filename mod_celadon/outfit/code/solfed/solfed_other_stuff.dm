@@ -309,6 +309,7 @@
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 30, "bomb" = 40, "bio" = 100, "rad" = 75, "fire" = 75, "acid" = 75)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/solfed/elysium
 	resistance_flags = FIRE_PROOF
+	slowdown = 0.75
 
 //backpacks
 /obj/item/storage/backpack/satchel/solfed
