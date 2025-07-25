@@ -121,11 +121,11 @@
 				heirloom_type = /obj/item/clothing/under/shorts/purple
 			//Medical
 			if("Chief Medical Officer")
-				heirloom_type = /obj/item/storage/firstaid/ancient/heirloom
+				heirloom_type = /obj/item/flashlight/pen
 			if("Medical Doctor")
-				heirloom_type = /obj/item/storage/firstaid/ancient/heirloom
+				heirloom_type = /obj/item/flashlight/pen
 			if("Paramedic")
-				heirloom_type = /obj/item/storage/firstaid/ancient/heirloom
+				heirloom_type = /obj/item/flashlight/pen
 			if("Psychologist")
 				heirloom_type = /obj/item/storage/pill_bottle
 			if("Chemist")

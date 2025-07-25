@@ -422,7 +422,7 @@
 			if(prob(45))
 				new /obj/item/circuitboard/machine/stasis(loc)
 			if(prob(45))
-				new /obj/item/stack/medical/suture/medicated(loc)
+				new /obj/item/stack/medical/suture(loc)
 			if(prob(45))
 				new /obj/item/stack/medical/mesh/advanced(loc)
 			if(prob(35))

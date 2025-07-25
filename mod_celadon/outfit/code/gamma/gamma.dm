@@ -158,5 +158,5 @@
 	w_class = WEIGHT_CLASS_SMALL
 	block_chance = 60
 	armour_penetration = 20
-	sharpness = IS_SHARP
+	sharpness = SHARP_EDGED
 	attack_verb = list("slashed", "cut")
