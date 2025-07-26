@@ -9,8 +9,8 @@
 	slot_flags = ITEM_SLOT_BACK
 	force = 10
 	item_flags = SLOWS_WHILE_IN_HAND
-	slowdown = 0.5
-	drag_slowdown = 0.5
+	slowdown = 0.5			//slowdown = 1.25 [CELADON-EDIT]
+	drag_slowdown = 0.5		//drag_slowdown = 1.25 [CELADON-EDIT]
 	block_chance = 50
 	throwforce = 5
 	throw_speed = 2
@@ -84,8 +84,8 @@
 	custom_materials = list(/datum/material/iron=8500)
 
 	force = 15
-	max_integrity = 900
-	block_chance = 70
+	max_integrity = 600
+	block_chance = 60
 	integrity_failure = 0.1
 	material_flags = MATERIAL_NO_EFFECTS
 
@@ -121,9 +121,9 @@
 			to_chat(user, span_notice("You repair [src] with [T]."))
 			name = src::name
 			broken = FALSE
-			block_chance = 70
-			slowdown = 0.5
-			drag_slowdown = 0.5
+			block_chance = 60
+			slowdown = 0.5			//slowdown = 1.25 [CELADON-EDIT]
+			drag_slowdown = 0.5		//drag_slowdown = 1.25 [CELADON-EDIT]
 
 /obj/item/shield/riot/spike
 	name = "spike shield"
