@@ -30,6 +30,7 @@
 	var/shield_bash_sound = 'sound/effects/shieldbash.ogg'
 	var/recoil_bonus = -2
 	var/broken = FALSE
+
 	var/broken_shield	// [CELADON-ADD] - Флаг на включение сломаных щитов из модов
 	// в руках допилить да
 
@@ -147,6 +148,8 @@
 	custom_materials = list(/datum/material/iron=8500)
 	max_integrity = 65
 
+	icon = 'icons/obj/shields.dmi'
+
 /obj/item/shield/riot/roman/fake
 	desc = "Bears an inscription on the inside: <i>\"Romanes venio domus\"</i>. It appears to be a bit flimsy."
 	block_chance = 0
@@ -172,6 +175,8 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	var/shield_break_leftover = /obj/item/stack/sheet/mineral/wood
 	var/shield_break_sound = 'sound/effects/bang.ogg'
+
+	icon = 'icons/obj/shields.dmi'
 
 /obj/item/shield/riot/buckler/obj_destruction(damage_flag)
 	playsound(src, shield_break_sound, 50)
