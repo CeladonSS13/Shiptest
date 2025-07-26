@@ -2,6 +2,14 @@
 	category = "Security Supplies"
 	crate_type = /obj/structure/closet/crate/secure/gear
 
+/datum/supply_pack/faction/syndicate/sec_supply/saber
+	name = "Double-Bladed Energy Sword Crate"
+	desc = "Contains one double-bladed energy sword, for when simply killing someone isn't enough."
+	cost = 3000
+	contains = list(/obj/item/melee/duelenergy/saber)
+	crate_name = "dualsaber crate"
+	crate_type = /obj/structure/closet/crate/secure/weapon
+
 /datum/supply_pack/faction/syndicate/sec_supply/flamethrower
 	name = "Flamethrower Crate"
 	desc = "Contains one flamethrower. Point the nozzle away from anything important."

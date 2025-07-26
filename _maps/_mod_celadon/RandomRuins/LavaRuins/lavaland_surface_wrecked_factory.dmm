@@ -718,9 +718,9 @@
 /obj/item/reagent_containers/food/drinks/beer/light,
 /obj/item/reagent_containers/food/drinks/beer/light,
 /obj/item/reagent_containers/food/drinks/beer/light,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
 /obj/item/reagent_containers/condiment/flour,
 /obj/item/reagent_containers/condiment/rice,
 /obj/item/storage/fancy/egg_box,
@@ -1610,9 +1610,9 @@
 /obj/item/storage/fancy/egg_box,
 /obj/item/reagent_containers/condiment/flour,
 /obj/item/reagent_containers/condiment/rice,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
 /turf/open/floor/plasteel,
 /area/ruin/lavaland/factory/dorms)
 "oJ" = (
@@ -2446,7 +2446,7 @@
 	speak_emote = list("rants","screams","sobs");
 	verb_exclaim = "rants";
 	verb_yell = "rants";
-	weapon_drop_chance = 100
+	weapon_drop_chance = 0
 	},
 /turf/open/floor/carpet/blue,
 /area/ruin/lavaland/factory/manager_office)
@@ -2626,7 +2626,7 @@
 /area/ruin/lavaland/factory/warehouse)
 "yq" = (
 /obj/structure/displaycase/noalert{
-	start_showpiece_type = /obj/item/gun/energy/e_gun/hades
+	start_showpiece_type = /obj/item/melee/duelenergy/saber/red
 	},
 /turf/open/floor/carpet/blue,
 /area/ruin/lavaland/factory/manager_office)

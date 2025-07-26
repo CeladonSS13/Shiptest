@@ -887,8 +887,8 @@
 /area/overmap_encounter/planetoid/lava/explored)
 "zb" = (
 /mob/living/simple_animal/hostile/megafauna/blood_drunk_miner{
-	loot = list(/obj/item/melee/transforming/cleaving_saw,/obj/item/gun/energy/kinetic_accelerator,/obj/item/keycard/gatedrop/lavacanyon);
-	crusher_loot = list(/obj/item/melee/transforming/cleaving_saw,/obj/item/gun/energy/kinetic_accelerator,/obj/item/crusher_trophy/miner_eye,/obj/item/keycard/gatedrop/lavacanyon)
+	loot = list(/obj/item/gun/energy/kinetic_accelerator,/obj/item/keycard/gatedrop/lavacanyon);
+	crusher_loot = list(/obj/item/gun/energy/kinetic_accelerator,/obj/item/crusher_trophy/miner_eye,/obj/item/keycard/gatedrop/lavacanyon)
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/cave/explored)
@@ -1744,11 +1744,11 @@
 /area/overmap_encounter/planetoid/cave/explored)
 "XH" = (
 /obj/effect/gibspawner/human,
-/obj/item/reagent_containers/food/snacks/meat/slab/goliath{
+/obj/item/food/meat/slab/goliath{
 	pixel_x = 7;
 	pixel_y = -5
 	},
-/obj/item/reagent_containers/food/snacks/meat/slab/goliath{
+/obj/item/food/meat/slab/goliath{
 	pixel_x = -4;
 	pixel_y = 8
 	},

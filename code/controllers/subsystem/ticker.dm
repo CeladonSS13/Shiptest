@@ -287,9 +287,6 @@ SUBSYSTEM_DEF(ticker)
 	SSredbot.send_discord_message("ooc", "**A new round has begun.**")
 //[CELADON-EDIT]- MUSIC_CELADON
 //	SEND_SOUND(world, sound('sound/roundstart/addiguana.ogg'))//CELADON-EDIT-ORIGINAL
-	if(login_music_name)
-		var/count_name = length(SSticker.login_music_name)
-		to_chat(world, span_redteamradio("<B>Playing lobby music: [copytext(SSticker.login_music_name, 1, count_name-3)].</B>"))
 	SEND_SOUND(world, sound('mod_celadon/_storge_sounds/sound/lobby/sztart.ogg'))
 //[/CELADON-EDIT]
 

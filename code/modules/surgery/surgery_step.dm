@@ -129,6 +129,10 @@
 				var/obj/item/bodypart/operated_bodypart = target.get_bodypart(target_zone) ? target.get_bodypart(target_zone) : target.get_bodypart(BODY_ZONE_CHEST)
 				if(operated_bodypart?.bodytype & BODYPART_ORGANIC) //robot limbs are built to be opened and stuff
 					commit_malpractice(user, target, target_zone, tool, surgery)
+// [CELADON-ADD] - CELADON_FIXES - фикс бесконечной рекурсии
+				else
+					advance = TRUE
+// [/CELADON-ADD]
 
 		if(chem_check_result && !advance)
 			return .(user, target, target_zone, tool, surgery, try_to_fail) //automatically re-attempt if failed for reason other than lack of required chemical
@@ -221,12 +225,12 @@
 	if(require_all_chems)
 		. = TRUE
 		for(var/R in chems_needed)
-			if(!target.reagents.has_reagent(R))
+			if(!target.has_reagent(R))
 				return FALSE
 	else
 		. = FALSE
 		for(var/R in chems_needed)
-			if(target.reagents.has_reagent(R))
+			if(target.has_reagent(R))
 				return TRUE
 
 /datum/surgery_step/proc/get_chem_list()

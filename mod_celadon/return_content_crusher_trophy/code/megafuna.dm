@@ -286,7 +286,7 @@
 	crusher_loot = /obj/item/crusher_trophy/lobster_claw
 
 /mob/living/simple_animal/hostile/asteroid/wolf
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 2, /obj/item/stack/sheet/sinew/wolf = 2, /obj/item/stack/sheet/bone = 2, /obj/item/crusher_trophy/wolf_ear = 0.5)
+	butcher_results = list(/obj/item/food/meat/slab = 2, /obj/item/stack/sheet/sinew/wolf = 2, /obj/item/stack/sheet/bone = 2, /obj/item/crusher_trophy/wolf_ear = 0.5)
 	crusher_loot = /obj/item/crusher_trophy/wolf_ear
 
 /mob/living/basic/bear/polar

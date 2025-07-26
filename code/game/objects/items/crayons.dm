@@ -505,7 +505,9 @@
 	reagent_contents = list(/datum/reagent/consumable/nutriment = 0.5,  /datum/reagent/colorful_reagent/powder/white/crayon = 1.5)
 	dye_color = DYE_WHITE
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/toy/crayon/mime
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/crayons.dmi'
 	icon_state = "crayonmime"
 	desc = "A very sad-looking crayon."
 	paint_color = "#FFFFFF"
@@ -513,6 +515,7 @@
 	reagent_contents = list(/datum/reagent/consumable/nutriment = 0.5, /datum/reagent/colorful_reagent/powder/invisible = 1.5)
 	charges = -1
 	dye_color = DYE_MIME
+// [/CELADON-ADD]
 
 /obj/item/toy/crayon/rainbow
 	icon_state = "crayonrainbow"
@@ -562,6 +565,12 @@
 /obj/item/storage/crayons/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/toy/crayon))
 		var/obj/item/toy/crayon/C = W
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+/*
+		if(C.crayon_color == "rainbow")
+			to_chat(usr, span_warning("This crayon is too powerful to be contained in this box!"))
+			return
+*/
 		switch(C.crayon_color)
 			if("mime")
 				to_chat(usr, span_warning("This crayon is too sad to be contained in this box!"))
@@ -569,6 +578,7 @@
 			if("rainbow")
 				to_chat(usr, span_warning("This crayon is too powerful to be contained in this box!"))
 				return
+// [/CELADON-ADD]
 		if(istype(W, /obj/item/toy/crayon/spraycan))
 			to_chat(user, span_warning("Spraycans are not crayons!"))
 			return
@@ -737,9 +747,11 @@
 	actually_paints = FALSE
 	paint_color = "#000000"
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/toy/crayon/spraycan/lubecan
 	name = "slippery spraycan"
 	desc = "You can barely keep hold of this thing."
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/crayons.dmi'
 	icon_state = "clowncan2_cap"
 	icon_capped = "clowncan2_cap"
 	icon_uncapped = "clowncan2"
@@ -754,6 +766,7 @@
 /obj/item/toy/crayon/spraycan/mimecan
 	name = "silent spraycan"
 	desc = "Art is best seen, not heard."
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/crayons.dmi'
 	icon_state = "mimecan_cap"
 	icon_capped = "mimecan_cap"
 	icon_uncapped = "mimecan"
@@ -765,6 +778,7 @@
 	pre_noise = FALSE
 	post_noise = FALSE
 	reagent_contents = list(/datum/reagent/consumable/nothing = 1, /datum/reagent/toxin/mutetoxin = 1)
+// [/CELADON-ADD]
 
 /obj/item/toy/crayon/spraycan/infinite
 	name = "infinite spraycan"

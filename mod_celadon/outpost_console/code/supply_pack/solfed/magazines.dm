@@ -54,3 +54,25 @@
 	desc = "Contains a Solar Federation weapon cell, compatible with gauss weaponry."
 	contains = list(/obj/item/stock_parts/cell/gun/solgov)
 	cost = 500
+
+/* 5.56x45mm */
+
+/datum/supply_pack/faction/solfed/magazine/g36_sh
+	name = "G36 Short Magazine Double Pack Crate"
+	desc = "Contains two 5.56x45mm magazines for the G36 family rifles, with a capacity of 20 rounds."
+	contains = list(/obj/item/ammo_box/magazine/g36/sh/empty,
+					/obj/item/ammo_box/magazine/g36/sh/empty)
+	cost = 1400
+
+/datum/supply_pack/faction/solfed/magazine/g36
+	name = "G36 Standard Magazine Double Pack Crate"
+	desc = "Contains two 5.56x45mm magazines for the G36 family rifles, with a capacity of 30 rounds."
+	contains = list(/obj/item/ammo_box/magazine/g36/empty,
+					/obj/item/ammo_box/magazine/g36/empty)
+	cost = 1950
+
+/datum/supply_pack/faction/solfed/magazine/g36_drum
+	name = "G36 Drum Magazine Crate"
+	desc = "Contains 5.56x45mm drum magazine for the G36 family rifles, with a capacity of 75 rounds."
+	contains = list(/obj/item/ammo_box/magazine/g36/drum/empty)
+	cost = 5000

@@ -215,6 +215,12 @@
 	if (CONFIG_GET(flag/log_job_debug))
 		WRITE_LOG(GLOB.world_job_debug_log, "JOB: [text]")
 
+// [CELADON-ADD] - Logging for admin actions.
+/proc/log_celadon_admin(text)
+	if (CONFIG_GET(flag/log_admin))
+		WRITE_LOG(GLOB.world_celadon_admin_log, "[text]")
+// [/CELADON-ADD]
+
 /* Log to both DD and the logfile. */
 /proc/log_world(text)
 #ifdef USE_CUSTOM_ERROR_HANDLER
