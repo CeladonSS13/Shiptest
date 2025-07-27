@@ -155,6 +155,12 @@ MARK: Bundles
 	crate_name = "big band musical instruments crate"
 	crate_type = /obj/structure/closet/crate/wooden
 
+/datum/supply_pack/faction/independent/civilian/bank_card_crate
+	name = "Box of Spare Bank Cards"
+	desc = "A box of spare IDs for replacing a lost bankcard."
+	cost = 100
+	contains = list(/obj/item/storage/box/bankcard)
+
 /*
 MARK: Decoration / flooring
 */
