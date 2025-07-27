@@ -243,6 +243,17 @@
 		else
 			R = target.reagents
 			target_atom = target
+	// [CELADON-ADD] - CELADON_FIXES_BLOOD
+	// Проверка на переливание крови в живое существо
+	if(method == INJECT && ishuman(target_atom))
+		var/mob/living/carbon/human/H = target_atom
+		var/datum/reagent/blood/B = has_reagent(/datum/reagent/blood)
+		if(B && H.blood_volume >= (BLOOD_VOLUME_NORMAL - 0.5)) // Добавляем небольшой запас для предотвращения перелива
+			// Если у человека уже нормальный уровень крови, ограничиваем количество переливаемой крови
+			amount = min(amount, BLOOD_VOLUME_NORMAL - H.blood_volume)
+			if(amount <= 0)
+				return 0
+	// [/CELADON-ADD]
 
 	amount = min(min(amount, src.total_volume), R.maximum_volume-R.total_volume)
 	var/trans_data = null

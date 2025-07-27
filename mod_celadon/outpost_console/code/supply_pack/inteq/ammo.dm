@@ -89,7 +89,7 @@ MARK: .44
 	name = ".44 Roumain Hollow Point Ammo Box Crate"
 	desc = "Contains a 48-round box of .44 roumain hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/a44roum_hp)
-	cost = 265
+	cost = 350
 
 /*
 MARK: .357

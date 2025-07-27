@@ -108,6 +108,8 @@ EDIT: `code/game/objects/items/storage/backpack.dm`
 
 ADD: `code/modules/overmap/objects/event_datum.dm` : Добавляем дебрисам рандом на безопасную скорость полетов
 
+EDIT: `code/modules/vehicles/scooter.dm` : Ускорение от роликов равно 35% а не 100% как было
+
 EDIT: `code/game/objects/items/shields.dm` : Реворк-Переработка щитов
 EDIT: `code/game/objects/items.dm` : Звуки для щитов
 
