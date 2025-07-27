@@ -123,18 +123,18 @@
 */
 
 /datum/supply_pack/faction/independent/sec_supply/riotshields
-	name = "Riot Shield Crate"
-	desc = "Contains a riot shield, effective at holding back hostile fauna, xenofauna, or large crowds."
-	cost = 600
+	name = "Ballistic Shield Crate"
+	desc = "Contains a ballistic shield, effective at holding back hostile fauna, xenofauna, or large crowds."
+	cost = 1200
 	contains = list(/obj/item/shield/riot)
-	crate_name = "riot shield crate"
+	crate_name = "ballistic shield crate"
 
 /datum/supply_pack/faction/independent/sec_supply/teleriotshields
-	name = "Telescopic Riot Shield Crate"
-	desc = "Contains a telescopic riot shield, effective at holding back hostile fauna, xenofauna, or large crowds in tight spaces."
-	cost = 750
+	name = "Telescopic Shield Crate"
+	desc = "Contains a telescopic shield, effective at holding back hostile fauna, xenofauna, or large crowds in tight spaces."
+	cost = 1500
 	contains = list(/obj/item/shield/riot/tele)
-	crate_name = "riot shield crate"
+	crate_name = "telescopic shield crate"
 
 /datum/supply_pack/faction/independent/sec_supply/survknives
 	name = "Survival Knives Crate"

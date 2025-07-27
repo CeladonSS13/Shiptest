@@ -1,4 +1,8 @@
 #define BATON_BASH_COOLDOWN (3 SECONDS)
+/*
+ * [CELADON-OVERRIDE] - Файл глоабльно изменен, ID-мода для поиска: BALLISTIC_SHIELD
+ * Причина: Переработка механики щитов (https://github.com/CeladonSS13/Shiptest/pull/1901)
+ */
 
 /obj/item/shield
 	name = "shield"
@@ -9,8 +13,8 @@
 	slot_flags = ITEM_SLOT_BACK
 	force = 10
 	item_flags = SLOWS_WHILE_IN_HAND
-	slowdown = 0.5
-	drag_slowdown = 0.5
+	//slowdown = 0.5		// [CELADON-REMOVE] - BALLISTIC_SHIELD - Rebalance
+	//drag_slowdown = 1.25	// [CELADON-REMOVE]
 	block_chance = 50
 	throwforce = 5
 	throw_speed = 2
@@ -31,10 +35,9 @@
 	var/recoil_bonus = -2
 	var/broken = FALSE
 
-/obj/item/shield/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
-	. = ..()
-	if(.)
-		on_block(owner, hitby, attack_text, damage, attack_type)
+// спрайты риотки блок
+// спрайт
+	var/broken_shield	// [CELADON-ADD] - Флаг на включение сломаных щитов из модов - BALLISTIC_SHIELD - Extended Edition
 
 /obj/item/shield/proc/on_block(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", damage = 0, attack_type = MELEE_ATTACK)
 	take_damage(damage)
@@ -44,10 +47,18 @@
 	if(!broken)
 		if(isliving(loc))
 			loc.balloon_alert(loc, "[src] cracks!")
+// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
+			var/mob/living/user = loc
+			user.dropItemToGround(src, force = TRUE)
+		playsound(src, 'sound/effects/glassbr3.ogg', 100)
+		if(broken_shield)
+			icon = 'mod_celadon/_storge_icons/icons/items/weapons/shields.dmi'
+			icon_state = "[src::icon_state]_broken"
+// [/CELADON-ADD]
 		name = "broken [src::name]"
 		block_chance = 0
 		slowdown = 0
-		drag_slowdown = 0
+		//drag_slowdown = 0	// [CELADON-REMOVE] - BALLISTIC_SHIELD - Rebalance
 		broken = TRUE
 
 /obj/item/shield/examine(mob/user)
@@ -74,15 +85,26 @@
 
 /obj/item/shield/riot
 	name = "ballistic shield"
-	desc = "A shield adept at blocking blunt objects and bullets from connecting with the torso of the shield wielder. Use metal to repair."
+	desc = "A shield adept at blocking blunt objects and bullets from connecting with the torso of the shield wielder. Use 10 plasteel to repair."
 	icon_state = "ballistic"
 	custom_materials = list(/datum/material/iron=8500)
 
 	force = 15
-	max_integrity = 900
-	block_chance = 70
+	max_integrity = 600
+	block_chance = 60
 	integrity_failure = 0.1
 	material_flags = MATERIAL_NO_EFFECTS
+
+// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition + Rebalance
+	slowdown = 0.5
+	max_integrity = 900
+	block_chance = 70
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/shields.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/shields_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/shields_righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/weapons/shields_back.dmi'
+	broken_shield = TRUE
+// [/CELADON-ADD]
 
 /obj/item/shield/riot/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/melee/baton))
@@ -90,23 +112,32 @@
 			user.visible_message(span_warning("[user] bashes [src] with [W]!"))
 			playsound(src, shield_bash_sound, 50, TRUE)
 			COOLDOWN_START(src, baton_bash, BATON_BASH_COOLDOWN)
-	else if(istype(W, /obj/item/stack/sheet/metal))
+	else if(istype(W, /obj/item/stack/sheet/plasteel))
 		if (obj_integrity >= max_integrity)
 			to_chat(user, span_warning("[src] is already in perfect condition."))
-		else
-			var/obj/item/stack/sheet/metal/T = W
-			T.use(1)
+		while(obj_integrity < max_integrity)
+			if(!do_after(user, 3 SECONDS, target= src)) //if(!do_after(user, 30, target= src)) // [CELADON-EDIT] - ORIGIRAL
+				return
+			var/obj/item/stack/sheet/plasteel/T = W
+			T.use(10)
+//	[CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
+			if(broken_shield)
+				if(istype(src, /obj/item/shield/riot/tele))
+					icon_state = "[src::icon_state]1"
+				else
+					icon_state = "[src::icon_state]"
+//	[/CELADON-ADD]
 			obj_integrity = max_integrity
 			to_chat(user, span_notice("You repair [src] with [T]."))
 			name = src::name
 			broken = FALSE
-			block_chance = 70
-			slowdown = 0.5
-			drag_slowdown = 0.5
+			block_chance = 60
+			slowdown = 0.5			//slowdown = 1.25 [CELADON-EDIT] - BALLISTIC_SHIELD - Rebalance
+			//drag_slowdown = 1.25	// [/CELADON-REMOVE]
 
 /obj/item/shield/riot/spike
 	name = "spike shield"
-	desc = "A ballistic shield adept at blocking blunt objects and bullets, adorned with a vicious spike. Use metal to repair"
+	desc = "A ballistic shield adept at blocking blunt objects and bullets, adorned with a vicious spike. Use 10 plasteel to repair"
 	icon_state = "spike"
 	force = 24
 	attack_verb = list("stabbed", "gashed")
@@ -123,6 +154,11 @@
 	custom_materials = list(/datum/material/iron=8500)
 	max_integrity = 65
 
+// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
+	icon = 'icons/obj/shields.dmi'
+	broken_shield = FALSE
+// [/CELADON-ADD]
+
 /obj/item/shield/riot/roman/fake
 	desc = "Bears an inscription on the inside: <i>\"Romanes venio domus\"</i>. It appears to be a bit flimsy."
 	block_chance = 0
@@ -135,8 +171,8 @@
 	desc = "A medieval wooden buckler."
 	icon_state = "buckler"
 	item_state = "buckler"
-	slowdown = 0
-	drag_slowdown = 0
+	//slowdown = 0			// [CELADON-REMOVE] - BALLISTIC_SHIELD - Rebalance
+	//drag_slowdown = 0		// [CELADON-REMOVE]
 	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
 	custom_materials = list(/datum/material/wood = MINERAL_MATERIAL_AMOUNT * 10)
@@ -149,6 +185,11 @@
 	var/shield_break_leftover = /obj/item/stack/sheet/mineral/wood
 	var/shield_break_sound = 'sound/effects/bang.ogg'
 
+// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
+	icon = 'icons/obj/shields.dmi'
+	broken_shield = FALSE
+// [/CELADON-ADD]
+
 /obj/item/shield/riot/buckler/obj_destruction(damage_flag)
 	playsound(src, shield_break_sound, 50)
 	new shield_break_leftover(get_turf(src))
@@ -158,7 +199,7 @@
 
 /obj/item/shield/riot/flash
 	name = "strobe shield"
-	desc = "A shield with a built in, high intensity light capable of blinding and disorienting suspects. Takes regular handheld flashes as bulbs. Use metal to repair."
+	desc = "A shield with a built in, high intensity light capable of blinding and disorienting suspects. Takes regular handheld flashes as bulbs. Use 10 plasteel to repair."
 	icon_state = "flashshield"
 	item_state = "flashshield"
 	var/obj/item/assembly/flash/handheld/embedded_flash
@@ -193,7 +234,7 @@
 			return
 		else
 			to_chat(user, span_notice("You begin to replace the bulb..."))
-			if(do_after(user, 20, target = user))
+			if(do_after(user, 2 SECONDS, target = user))	//if(do_after(user, 20, target = user)) // [CELADON-EDIT] - ORIGIRAL
 				if(flash.burnt_out || !flash || QDELETED(flash))
 					return
 				playsound(src, 'sound/items/deconstruct.ogg', 50, TRUE)
@@ -290,12 +331,26 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	var/active = 0
 
+// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
+	desc = "An advanced riot shield made of lightweight materials that collapses for easy storage. Use 10 plasteel to repair."
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/shields_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/shields_righthand.dmi'
+	max_integrity = 600
+	block_chance = 60
+	slowdown = 0.3
+	broken_shield = TRUE
+// [/CELADON-ADD]
+
 /obj/item/shield/riot/tele/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
 	if(active)
 		return ..()
 	return 0
 
 /obj/item/shield/riot/tele/attack_self(mob/living/user)
+// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition - Сломаный щит нельзя сложить
+	if(broken)
+		return
+// [/CELADON-ADD]
 	active = !active
 	icon_state = "teleriot[active]"
 	playsound(src.loc, 'sound/weapons/batonextend.ogg', 50, TRUE)

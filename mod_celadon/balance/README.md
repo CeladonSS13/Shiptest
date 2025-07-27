@@ -18,6 +18,7 @@ ID мода:
 	CELADON_BALANCE_MOBS
 	CELADON_BALANCE_OVERMAP_EVENTS
 	CELADON_BALANCE_SPECIES
+	BALLISTIC_SHIELD
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов. Добавлены
@@ -110,6 +111,9 @@ ADD: `code/modules/overmap/objects/event_datum.dm` : Добавляем дебр
 
 EDIT: `code/modules/vehicles/scooter.dm` : Ускорение от роликов равно 35% а не 100% как было
 
+EDIT: `code/game/objects/items/shields.dm` : Реворк-Переработка щитов
+EDIT: `code/game/objects/items.dm` : Звуки для щитов
+
 EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Поднимаем скорость кепори до -0.30
 ADD: `code/modules/mob/living/carbon/human/species_types/lizardpeople.dm` : Даём сарати резист к огню на 15%
 ADD: `code/modules/mob/living/carbon/human/species_types/vox.dm` : Даём воксам резист к холоду на 20%
@@ -164,6 +168,7 @@ ADD: `code/modules/mob/living/carbon/human/species_types/vox.dm` : Даём во
 - Изменения попаданий по лежачим - MrCat15352
 - Убрано замедление от синдидюффелей - Quinal
 - Изменение взрыва клешни - Molniz
+- Реворк щитов - KOCMOHABT
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.
