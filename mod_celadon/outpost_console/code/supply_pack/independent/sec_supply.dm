@@ -125,7 +125,7 @@
 /datum/supply_pack/faction/independent/sec_supply/riotshields
 	name = "Riot Shield Crate"
 	desc = "Contains a riot shield, effective at holding back hostile fauna, xenofauna, or large crowds."
-	cost = 1000
+	cost = 1200
 	contains = list(/obj/item/shield/riot)
 	crate_name = "riot shield crate"
 

@@ -90,13 +90,15 @@
 	custom_materials = list(/datum/material/iron=8500)
 
 	force = 15
-	max_integrity = 900	//max_integrity = 600 // [CELADON-EDIT] - BALLISTIC_SHIELD - Rebalance
+	max_integrity = 600
 	block_chance = 60
 	integrity_failure = 0.1
 	material_flags = MATERIAL_NO_EFFECTS
 
-// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
+// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition + Rebalance
 	slowdown = 0.5
+	max_integrity = 900
+	block_chance = 70
 	icon = 'mod_celadon/_storge_icons/icons/items/weapons/shields.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/shields_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/shields_righthand.dmi'
@@ -141,8 +143,6 @@
 	attack_verb = list("stabbed", "gashed")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 
-	broken_shield = TRUE	// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
-
 /obj/item/shield/riot/roman
 	name = "\improper Roman shield"
 	desc = "Bears an inscription on the inside: <i>\"Romanes venio domus\"</i>."
@@ -154,7 +154,10 @@
 	custom_materials = list(/datum/material/iron=8500)
 	max_integrity = 65
 
-	icon = 'icons/obj/shields.dmi'	// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
+// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
+	icon = 'icons/obj/shields.dmi'
+	broken_shield = FALSE
+// [/CELADON-ADD]
 
 /obj/item/shield/riot/roman/fake
 	desc = "Bears an inscription on the inside: <i>\"Romanes venio domus\"</i>. It appears to be a bit flimsy."
@@ -182,7 +185,10 @@
 	var/shield_break_leftover = /obj/item/stack/sheet/mineral/wood
 	var/shield_break_sound = 'sound/effects/bang.ogg'
 
-	icon = 'icons/obj/shields.dmi'	// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
+// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
+	icon = 'icons/obj/shields.dmi'
+	broken_shield = FALSE
+// [/CELADON-ADD]
 
 /obj/item/shield/riot/buckler/obj_destruction(damage_flag)
 	playsound(src, shield_break_sound, 50)
@@ -197,8 +203,6 @@
 	icon_state = "flashshield"
 	item_state = "flashshield"
 	var/obj/item/assembly/flash/handheld/embedded_flash
-
-	broken_shield = TRUE	// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
 
 /obj/item/shield/riot/flash/Initialize()
 	. = ..()
@@ -326,11 +330,13 @@
 	throw_range = 4
 	w_class = WEIGHT_CLASS_NORMAL
 	var/active = 0
+
 // [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
 	desc = "An advanced riot shield made of lightweight materials that collapses for easy storage. Use 10 plasteel to repair."
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/shields_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/shields_righthand.dmi'
 	max_integrity = 600
+	block_chance = 60
 	slowdown = 0.3
 	broken_shield = TRUE
 // [/CELADON-ADD]
@@ -341,7 +347,7 @@
 	return 0
 
 /obj/item/shield/riot/tele/attack_self(mob/living/user)
-// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
+// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition - Сломаный щит нельзя сложить
 	if(broken)
 		return
 // [/CELADON-ADD]
