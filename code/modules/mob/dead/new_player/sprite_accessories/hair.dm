@@ -3,10 +3,7 @@
 // You do not need to define _s or _l sub-states, game automatically does this for you //what is this
 
 /datum/sprite_accessory/hair
-	// [CELADON-EDIT] - CELADON_QOL
-	// icon = 'icons/mob/human_face.dmi'	  // default icon for all hairs // CELADON-EDIT -> ORIGINAL
-	icon = 'mod_celadon/_storge_icons/icons/species/human/human_face.dmi'	  // default icon for all hairs
-	// [/CELADON-EDIT]
+	icon = 'icons/mob/human_face.dmi'	  // default icon for all hairs
 	body_zone = BODY_ZONE_HEAD
 
 /datum/sprite_accessory/hair/afro
