@@ -13,7 +13,7 @@
 
 /datum/component/radioactive/Initialize(_strength=0, _source, _half_life=RAD_HALF_LIFE, _can_contaminate=TRUE)
 	// shouldn't ever happen, but it pays to be a little careful
-	// Ограничиваем максимальное значение радиации
+	// Ограничиваем максимальное значение радиации // [CELADON-ADD]
 	strength = SSradiation.cap_radiation(_strength)	// [CELADON-EDIT] - CELADON_FIXES_RADIATION // strength = min(_strength, INFINITY)	// ORIGINAL
 	source = _source
 	hl3_release_date = _half_life
@@ -48,7 +48,8 @@
 	if(!hl3_release_date)
 		return
 
-	// [CELADON-ADD] - CELADON_FIXES_RADIATION
+	// [CELADON-EDIT] - CELADON_FIXES_RADIATION
+	//strength -= strength / hl3_release_date	// ORIGINAL
 	// Ускоренное уменьшение для больших значений
 	if(strength > 1000)
 		// Для больших значений уменьшаем быстрее
@@ -59,7 +60,7 @@
 		strength -= strength / hl3_release_date
 
 	// Проверка на минимальное значение
-	// [/CELADON-ADD]
+	// [/CELADON-EDIT]
 	if(strength <= RAD_BACKGROUND_RADIATION)
 		qdel(src)
 		return PROCESS_KILL
