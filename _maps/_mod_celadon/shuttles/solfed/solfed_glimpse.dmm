@@ -2020,7 +2020,14 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/mod/control/pre_equipped/engineering,
+/obj/item/clothing/suit/space/solgov{
+	desc = "Originally designed by independent contractors on Luna for the purposes of survival in hazardous environments, the lightweight Tortoise Microlite Armored Suit now sees widespread use by SolFed's exploration teams.";
+	name = "\improper SolFed Vacuum Suit"
+	},
+/obj/item/clothing/head/helmet/space/solgov{
+	name = "\improper SolFed Vacuum Helmet"
+	},
+/obj/item/tank/jetpack/carbondioxide,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "LU" = (
