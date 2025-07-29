@@ -309,8 +309,10 @@
 		// thrust_used += real_engine.burn_engine(percentage, seconds_per_tick)
 
 	thrust_used = thrust_used / (shuttle_port.turf_count * 100)
-	est_thrust = thrust_used * 100 / (percentage * seconds_per_tick) //cheeky way of rechecking the thrust, check it every time it's used
-
+// [CELADON-EDIT] - CELADON FIXES | FIX_DISPLAY_TRUSTER
+	//est_thrust = thrust_used * 100 / (percentage * seconds_per_tick) //cheeky way of rechecking the thrust, check it every time it's used // ORIGINAL
+	est_thrust = thrust_used / percentage * 100 //cheeky way of rechecking the thrust, check it every time it's used
+// [/CELADON-EDIT]
 	return thrust_used
 
 /**
@@ -322,8 +324,10 @@
 		real_engine.update_engine()
 		if(real_engine.enabled)
 			calculated_thrust += real_engine.thrust
-	est_thrust = calculated_thrust / (shuttle_port.turf_count * 100) * 1 SECONDS / SSphysics.wait
-
+// [CELADON-EDIT] - CELADON FIXES | FIX_DISPLAY_TRUSTER
+	//est_thrust = calculated_thrust / (shuttle_port.turf_count * 100) * 1 SECONDS / SSphysics.wait	// ORIGINAL
+	est_thrust = calculated_thrust / (shuttle_port.turf_count * 100)
+// [/CELADON-EDIT]
 /**
  * Calculates the average fuel fullness of all engines.
  */
