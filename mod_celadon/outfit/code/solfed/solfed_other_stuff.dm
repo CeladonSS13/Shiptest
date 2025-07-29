@@ -422,7 +422,5 @@
 	user.changeNext_move(CLICK_CD_RANGE) //double the attack speed
 
 /obj/item/melee/energy/sword/saber/knife/pre_active //used by solfed dynamic gen mobs
-	icon_state = "eknifeblue
+	icon_state = "eknifeyellow"
 	base_icon_state = "eknife"
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/eknifes_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/in_hands/eknifes_righthand.dmi'
