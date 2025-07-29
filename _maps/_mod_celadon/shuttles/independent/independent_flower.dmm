@@ -223,11 +223,18 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/hydroponics)
 "hn" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/window/reinforced/spawner{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/machinery/suit_storage_unit/inherit,
+/obj/item/clothing/head/helmet/space/eva,
+/obj/item/clothing/suit/space/eva,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
 	},
-/obj/machinery/suit_storage_unit/mining/eva,
-/turf/open/floor/plating,
+/turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "ho" = (
 /obj/structure/cable{
@@ -1495,6 +1502,15 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/hydroponics)
+"Vh" = (
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/solar,
+/obj/effect/turf_decal/solarpanel,
+/obj/machinery/suit_storage_unit/independent,
+/turf/open/floor/plating,
+/area/ship/external)
 "Vi" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -1766,7 +1782,7 @@ xx
 eR
 "}
 (6,1,1) = {"
-ex
+Vh
 Xy
 Fp
 Fp
