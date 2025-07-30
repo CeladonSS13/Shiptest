@@ -9,7 +9,7 @@
 	maxbodytemp = 400
 	unsuitable_atmos_damage = 15
 	faction = list(ROLE_DEATHSQUAD)
-	loot = null
+	loot = list()
 	check_friendly_fire = TRUE
 	dodging = TRUE
 	rapid_melee = 2
@@ -50,7 +50,6 @@
 	attack_sound = 'sound/weapons/blade1.ogg'
 	status_flags = 0
 	rapid_melee = 3
-	loot = null
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/solfed/marine/melee/heavy
 
 	r_hand = /obj/item/melee/energy/sword/saber/knife/pre_active
@@ -193,7 +192,6 @@
 /mob/living/simple_animal/hostile/human/solfed/melee/space/elysium
 	name = "Elysium Brigade Mulazim"
 	desc = "A true patriot of his nation, tightly holding a starbulan Scimitar, ready to kill on sight any traitor he sees."
-	loot = null
 	r_hand = /obj/item/melee/skimitar
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/solfed/space/elysium
 	armor_base = /obj/item/clothing/suit/space/hardsuit/solfed/elysium
