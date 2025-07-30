@@ -59,7 +59,7 @@
 	melee_damage_lower = 20
 	melee_damage_upper = 20
 
-	projectile_deflect_chance = 20
+	projectile_deflect_chance = 75
 
 /* ranged guys */
 
