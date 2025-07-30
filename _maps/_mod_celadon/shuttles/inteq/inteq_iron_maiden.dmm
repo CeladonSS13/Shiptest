@@ -148,7 +148,7 @@
 /obj/item/clothing/mask/gas/sechailer,
 /obj/item/tank/internals/oxygen,
 /obj/structure/cable,
-/obj/item/clothing/suit/space/hardsuit/syndi/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/crew/cryo)
 "gE" = (
@@ -619,7 +619,7 @@
 	},
 /obj/item/clothing/mask/gas/sechailer,
 /obj/effect/turf_decal/siding/brown,
-/obj/item/clothing/suit/space/hardsuit/syndi/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /obj/item/tank/internals/oxygen,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
@@ -712,8 +712,8 @@
 /obj/machinery/light/directional/south,
 /obj/item/clothing/mask/gas/sechailer,
 /obj/effect/turf_decal/siding/brown,
-/obj/item/clothing/suit/space/hardsuit/syndi/inteq,
 /obj/item/tank/internals/oxygen,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "ze" = (
@@ -793,8 +793,6 @@
 /obj/item/ammo_box/magazine/g36,
 /obj/item/ammo_box/magazine/g36,
 /obj/item/ammo_box/magazine/g36,
-/obj/item/ammo_box/magazine/g36,
-/obj/item/ammo_box/magazine/g36,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "EH" = (
@@ -831,7 +829,7 @@
 /obj/structure/sign/poster/contraband/inteq{
 	pixel_y = -32
 	},
-/obj/item/clothing/suit/space/hardsuit/syndi/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /obj/item/tank/internals/oxygen,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
@@ -1117,7 +1115,7 @@
 	},
 /obj/item/stack/cable_coil/red,
 /obj/item/clothing/under/syndicate/inteq/artificer,
-/obj/item/clothing/suit/space/hardsuit/syndi/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /obj/item/tank/internals/oxygen,
 /obj/item/gun/ballistic/automatic/pistol/commander/inteq,
 /obj/item/ammo_box/magazine/co9mm{
@@ -1232,7 +1230,7 @@
 /obj/structure/sign/poster/contraband/inteq{
 	pixel_y = 32
 	},
-/obj/item/clothing/suit/space/hardsuit/syndi/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /obj/item/tank/internals/oxygen,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
@@ -1329,6 +1327,19 @@
 /obj/item/tank/internals/plasmaman/full,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
+"Ua" = (
+/obj/machinery/suit_storage_unit/inherit{
+	req_access_txt = "147"
+	},
+/obj/item/clothing/mask/gas/sechailer,
+/obj/effect/turf_decal/siding/brown{
+	dir = 1
+	},
+/obj/machinery/light/directional/north,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
+/obj/item/tank/internals/oxygen,
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/cargo)
 "Uk" = (
 /obj/effect/turf_decal/box,
 /obj/effect/turf_decal/trimline/opaque/solgovgold/arrow_ccw{
@@ -1339,8 +1350,6 @@
 	},
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq,
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq,
-/obj/item/gun/ballistic/automatic/assault/g36/inteq,
-/obj/item/gun/ballistic/automatic/assault/g36/inteq,
 /obj/item/gun/ballistic/automatic/assault/g36/inteq,
 /obj/item/gun/ballistic/automatic/assault/g36/inteq,
 /turf/open/floor/plasteel/mono/dark,
@@ -1512,8 +1521,8 @@
 	dir = 1
 	},
 /obj/machinery/light/directional/north,
-/obj/item/clothing/suit/space/hardsuit/syndi/inteq,
 /obj/item/tank/internals/oxygen,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "VP" = (
@@ -1741,7 +1750,7 @@ vI
 (6,1,1) = {"
 vI
 hb
-VO
+Ua
 Ku
 kS
 Sx

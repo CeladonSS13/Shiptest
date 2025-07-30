@@ -16,6 +16,7 @@ ID мода:
 CELADON_FIXES
 CELADON_FIXES_BLOOD
 FIX_DISPLAY_TRUSTER
+FIXES_ICON_IN_HAND_MOB
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -123,6 +124,10 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 FIX_DISPLAY_TRUSTER
 - EDIT: `code/modules/overmap/ships/controlled_ship_datum.dm` : Откатывает на прежнее отображение скорости, у нас другой вид перемещения корабликов
+
+FIXES_ICON_MOB_IN_HAND
+- EDIT: `code/__HELPERS/dynamic_human_icon_gen.dm` : Прописано название стандартной иконки, вместо надписи ERROR
+
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,

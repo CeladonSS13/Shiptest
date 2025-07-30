@@ -560,6 +560,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
+/obj/item/storage/box/ammo/ferrolance,
 /turf/open/floor/plasteel/white,
 /area/ship/security/prison)
 "hD" = (
@@ -1402,6 +1403,8 @@
 	},
 /obj/item/gun/ballistic/automatic/powered/gauss/gar,
 /obj/item/gun/ballistic/automatic/powered/gauss/gar,
+/obj/item/gun/ballistic/automatic/powered/gauss/gar,
+/obj/item/gun/ballistic/automatic/powered/gauss/gar,
 /turf/open/floor/plasteel/white,
 /area/ship/security/prison)
 "qI" = (
@@ -1945,12 +1948,31 @@
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "xy" = (
-/obj/structure/chair/office{
-	dir = 4
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 4
 	},
+/obj/structure/closet/secure_closet/wall/directional/west{
+	icon_state = "sec_wall";
+	name = "Ammo Locker";
+	dir = 4;
+	pixel_x = 30
+	},
+/obj/item/ammo_box/magazine/gar,
+/obj/item/ammo_box/magazine/gar,
+/obj/item/ammo_box/magazine/gar,
+/obj/item/ammo_box/magazine/gar,
+/obj/item/ammo_box/magazine/gar,
+/obj/item/ammo_box/magazine/gar,
+/obj/item/ammo_box/magazine/gar,
+/obj/item/ammo_box/magazine/gar,
+/obj/item/stock_parts/cell/gun/solgov,
+/obj/item/stock_parts/cell/gun/solgov,
+/obj/item/stock_parts/cell/gun/solgov,
+/obj/item/stock_parts/cell/gun/solgov,
+/obj/item/stock_parts/cell/gun/solgov,
+/obj/item/stock_parts/cell/gun/solgov,
+/obj/item/stock_parts/cell/gun/solgov,
+/obj/item/stock_parts/cell/gun/solgov,
 /turf/open/floor/plasteel/white,
 /area/ship/security/prison)
 "xD" = (
@@ -2171,21 +2193,30 @@
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/office)
 "zR" = (
-/obj/machinery/computer/secure_data/laptop{
-	dir = 1;
-	pixel_y = 4
+/obj/structure/closet/secure_closet/security{
+	populate = 0;
+	name = "marine's locker";
+	anchored = 1
 	},
 /obj/structure/window/reinforced,
-/obj/item/stamp/hos{
-	name = "armorer's rubber stamp";
-	pixel_x = -14;
-	pixel_y = 10
-	},
-/obj/structure/table/reinforced,
 /obj/effect/turf_decal/techfloor{
 	dir = 6
 	},
-/obj/item/radio/intercom/directional/east,
+/obj/item/melee/energy/sword/saber/knife,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/glasses/hud/security/sunglasses,
+/obj/item/radio/headset/solgov/alt,
+/obj/item/radio{
+	icon_state = "sec_radio"
+	},
+/obj/item/clothing/under/solfed,
+/obj/item/clothing/under/solfed/camo,
+/obj/item/clothing/head/helmet/solfed/m11,
+/obj/item/clothing/suit/armor/vest/marine,
+/obj/item/storage/belt/military/solfed,
+/obj/item/clothing/gloves/combat/solfed,
+/obj/item/clothing/glasses/sunglasses/ballistic,
+/obj/item/clothing/head/solfed/beret,
 /turf/open/floor/plasteel/white,
 /area/ship/security/prison)
 "zS" = (
@@ -2354,18 +2385,16 @@
 /obj/item/ammo_box/magazine/modelh,
 /obj/item/ammo_box/magazine/modelh,
 /obj/item/binoculars,
-/obj/item/ammo_box/magazine/gar,
 /obj/item/hatchet/wooden{
 	name = "Tomahawk";
 	force = 20;
 	throwforce = 25
 	},
 /obj/item/clothing/glasses/hud/security/sunglasses,
-/obj/item/gun/ballistic/automatic/powered/gauss/gar,
-/obj/item/storage/box/ammo/ferrolance,
 /obj/item/storage/backpack/solfed,
 /obj/item/clothing/under/solfed/formal,
 /obj/item/clothing/suit/armor/solfed/formal,
+/obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/office)
 "BJ" = (
@@ -2580,6 +2609,11 @@
 /obj/item/clothing/under/solfed,
 /obj/item/clothing/under/solfed/camo,
 /obj/item/clothing/head/helmet/solfed/m11,
+/obj/item/clothing/suit/armor/vest/marine,
+/obj/item/storage/belt/military/solfed,
+/obj/item/clothing/gloves/combat/solfed,
+/obj/item/clothing/glasses/sunglasses/ballistic,
+/obj/item/clothing/head/solfed/beret,
 /turf/open/floor/plasteel/white,
 /area/ship/security/prison)
 "Ef" = (
@@ -2851,15 +2885,28 @@
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "Gu" = (
+/obj/structure/closet/secure_closet/security{
+	populate = 0;
+	name = "marine's locker";
+	anchored = 1
+	},
 /obj/structure/window/reinforced,
 /obj/effect/turf_decal/techfloor,
-/obj/structure/closet/cabinet{
-	name = "ammunition"
+/obj/item/melee/energy/sword/saber/knife,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/glasses/hud/security/sunglasses,
+/obj/item/radio/headset/solgov/alt,
+/obj/item/radio{
+	icon_state = "sec_radio"
 	},
-/obj/item/ammo_box/magazine/gar,
-/obj/item/ammo_box/magazine/gar,
-/obj/item/storage/box/ammo/ferrolance,
-/obj/item/storage/box/ammo/ferrolance,
+/obj/item/clothing/under/solfed,
+/obj/item/clothing/under/solfed/camo,
+/obj/item/clothing/head/helmet/solfed/m11,
+/obj/item/clothing/suit/armor/vest/marine,
+/obj/item/storage/belt/military/solfed,
+/obj/item/clothing/gloves/combat/solfed,
+/obj/item/clothing/glasses/sunglasses/ballistic,
+/obj/item/clothing/head/solfed/beret,
 /turf/open/floor/plasteel/white,
 /area/ship/security/prison)
 "Gw" = (
@@ -3770,6 +3817,11 @@
 /obj/item/clothing/under/solfed,
 /obj/item/clothing/under/solfed/camo,
 /obj/item/clothing/head/helmet/solfed/m11,
+/obj/item/clothing/suit/armor/vest/marine,
+/obj/item/storage/belt/military/solfed,
+/obj/item/clothing/gloves/combat/solfed,
+/obj/item/clothing/glasses/sunglasses/ballistic,
+/obj/item/clothing/head/solfed/beret,
 /turf/open/floor/plasteel/white,
 /area/ship/security/prison)
 "RT" = (
