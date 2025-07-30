@@ -904,8 +904,8 @@
 	. = ..() && intentional
 
 /datum/emote/living/custom/proc/check_invalid(mob/user, input)
-	var/static/regex/stop_bad_mime = regex(@"says|exclaims|yells|asks")
-	if(stop_bad_mime.Find(input, 1, 1))
+	var/static/regex/stop_bypasser = regex(@"says|exclaims|yells|asks")
+	if(stop_bypasser.Find(input, 1, 1))
 		to_chat(user, span_danger("Invalid emote."))
 		return TRUE
 	return FALSE

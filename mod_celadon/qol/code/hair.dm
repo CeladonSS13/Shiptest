@@ -1,3 +1,4 @@
 /datum/sprite_accessory/hair/ziegler
-		name = "Ziegler"
-		icon_state = "hair_ziegler"
+	icon = 'mod_celadon/_storge_icons/icons/species/human/human_face.dmi'
+	name = "Ziegler"
+	icon_state = "hair_ziegler"

@@ -11,7 +11,7 @@
 	speak_emote = list("purrs.", "meows.")
 	emote_see = list("shakes her head.", "shivers.")
 	speak_chance = 0.75
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 6)
+	butcher_results = list(/obj/item/food/meat/slab = 6)
 	response_help_simple = "pets"
 	response_disarm_simple = "rubs"
 	response_harm_simple = "makes terrible mistake by kicking"
@@ -23,7 +23,7 @@
 	attack_verb_simple = "slashed"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 
-	var/obj/item/reagent_containers/food/snacks/snack = null
+	var/obj/item/food/snack = null
 
 	var/list/tolerated = list()
 	var/list/despised = list()
@@ -79,8 +79,8 @@
 			snack = null
 			foodtarget = 0
 			if (can_eat())
-				for(var/obj/item/reagent_containers/food/snacks/S in oview(src,1))
-					if(!istype(S, /obj/item/reagent_containers/food/snacks/grown))
+				for(var/obj/item/food/S in oview(src,1))
+					if(!istype(S, /obj/item/food/grown))
 						if(isturf(S.loc))
 							snack = S
 							foodtarget = 1
@@ -110,13 +110,13 @@
 
 /mob/living/simple_animal/iriska/proc/bite_targeted_food()
 	if(snack) //sanity
-		if(snack.bitecount == 0 || prob(25))
+		if(snack.bite_consumption == 0 || prob(25))
 			manual_emote("nibbles away at \the [snack]")
-		snack.bitecount++
-		var/satur = snack.list_reagents[/datum/reagent/consumable/nutriment]
+		snack.bite_consumption++
+		var/satur = snack.food_reagents[/datum/reagent/consumable/nutriment]
 		if(satur)
 			nutrition += satur
-		if(snack.bitecount >= 5)
+		if(snack.bite_consumption >= 5)
 			qdel(snack)
 
 /mob/living/simple_animal/iriska/proc/react_to_mob()

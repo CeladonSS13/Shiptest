@@ -50,7 +50,7 @@
 	suit = /obj/item/clothing/suit/hooded/wintercoat/engineering
 	backpack_contents = list(
 		/obj/item/reagent_containers/spray/waterflower = 1,
-		/obj/item/reagent_containers/food/snacks/grown/banana = 1,
+		/obj/item/food/grown/banana = 1,
 		)
 
 	implants = list(/obj/item/implant/sad_trombone)

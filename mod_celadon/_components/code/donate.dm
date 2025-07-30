@@ -7,9 +7,9 @@
 /datum/donator/New(client/owner)
 	..()
 	src.key = owner.key
-	load_vip_tiers()
+	load_vip_tiers(owner)
 
-/datum/donator/proc/load_vip_tiers()
+/datum/donator/proc/load_vip_tiers(client/owner)
 	var/donators_text = file2text("[global.config.directory]/donators.txt")
 	if (!donators_text)
 		return
@@ -18,9 +18,9 @@
 	while (donators_regex.Find(donators_text))
 		if (donators_regex.group[1] == src.ckey || donators_regex.group[1] == src.key)
 			donator_tier = text2num(donators_regex.group[2])
-			if (donator_tier >= 1 || check_rights_for(src, R_ADMIN))
+			if (donator_tier >= 1 || check_rights_for(owner, R_ADMIN))
 				LAZYADD(DONATOR_GHOST_LIST, VIP_GHOST_TIER1_LIST)
-			if (donator_tier >= 3 || check_rights_for(src, R_ADMIN))
+			if (donator_tier >= 3 || check_rights_for(owner, R_ADMIN))
 				LAZYADD(DONATOR_GHOST_LIST, VIP_GHOST_TIER3_LIST)
 
 // MARK: New Buttons

@@ -1075,8 +1075,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/structure/guncloset,
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
-/obj/item/gun/ballistic/automatic/assault/hydra,
-/obj/item/gun/ballistic/automatic/assault/hydra,
 /obj/machinery/light/directional/north,
 /obj/item/gun/ballistic/automatic/smg/vector{
 	name = "Special Operations Vector";
@@ -1086,6 +1084,18 @@
 	desc = "A police carbine based on an old design originating from earth, Solar Federation. Modified by Gorlex and used as a common security SMG. Chambered in 45."
 	},
 /obj/item/gun/ballistic/automatic/assault/saiga,
+/obj/item/gun/ballistic/automatic/smg/sidewinder{
+	pixel_x = -10;
+	pixel_y = 4
+	},
+/obj/item/gun/ballistic/automatic/smg/sidewinder{
+	pixel_x = -10;
+	pixel_y = 4
+	},
+/obj/item/gun/ballistic/automatic/smg/sidewinder{
+	pixel_x = -10;
+	pixel_y = 4
+	},
 /turf/open/floor/plasteel/lightdark,
 /area/ship/security/armory)
 "si" = (
@@ -1825,16 +1835,6 @@
 	name = "Ammo Locker";
 	req_access_txt = "1"
 	},
-/obj/item/ammo_box/magazine/m556_42_hydra,
-/obj/item/ammo_box/magazine/m556_42_hydra,
-/obj/item/ammo_box/magazine/m556_42_hydra,
-/obj/item/ammo_box/magazine/m556_42_hydra,
-/obj/item/ammo_box/magazine/m556_42_hydra,
-/obj/item/ammo_box/magazine/m556_42_hydra,
-/obj/item/storage/box/ammo/a556_42,
-/obj/item/storage/box/ammo/a556_42,
-/obj/item/storage/box/ammo/a556_42,
-/obj/item/storage/box/ammo/a556_42,
 /obj/item/attachment/laser_sight,
 /obj/item/attachment/laser_sight,
 /obj/item/attachment/laser_sight,
@@ -1846,6 +1846,45 @@
 /obj/item/ammo_box/magazine/saiga,
 /obj/item/storage/box/ammo/a410_ammo_box,
 /obj/item/ammo_box/magazine/saiga,
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/storage/box/ammo/c57x39,
+/obj/item/storage/box/ammo/c57x39,
+/obj/item/storage/box/ammo/c57x39,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "CZ" = (
@@ -2158,10 +2197,10 @@
 /area/ship/hallway/central)
 "GG" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
 /obj/item/reagent_containers/condiment/flour,
 /obj/item/reagent_containers/condiment/flour,
 /obj/item/reagent_containers/condiment/sugar,
@@ -3236,6 +3275,14 @@
 	name = "Syndicate dogtag";
 	desc = "And the dog tag marked with the name and rank of a Syndicate member."
 	},
+/obj/item/gun/ballistic/automatic/pistol/ringneck,
+/obj/item/gun/ballistic/automatic/pistol/ringneck,
+/obj/item/gun/ballistic/automatic/pistol/ringneck,
+/obj/item/gun/ballistic/automatic/pistol/ringneck,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
 /turf/open/floor/marble/black,
 /area/ship/crew/cryo)
 "XM" = (

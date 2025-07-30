@@ -5,6 +5,7 @@
 /obj/item/clothing/accessory/fan_clown_pin
 	name = "Clown Pin"
 	desc = "A pin to show off your appreciation for clowns and clowning"
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/accessories.dmi'
 	icon_state = "fan_clown_pin"
 	above_suit = FALSE
 	minimize_when_attached = TRUE
@@ -23,6 +24,7 @@
 /obj/item/clothing/accessory/fan_mime_pin
 	name = "Mime Pin"
 	desc = "A pin to show off your appreciation for mimes and miming"
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/accessories.dmi'
 	icon_state = "fan_mime_pin"
 	above_suit = FALSE
 	minimize_when_attached = TRUE

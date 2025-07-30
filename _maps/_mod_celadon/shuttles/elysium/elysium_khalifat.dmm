@@ -5,8 +5,8 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/closet/emcloset/wall/directional/east,
-/obj/item/clothing/suit/space/syndicate/black/engie,
-/obj/item/clothing/head/helmet/space/syndicate/black/engie,
+/obj/item/clothing/suit/space/syndicate/engie,
+/obj/item/clothing/head/helmet/space/syndicate/engie,
 /obj/effect/decal/cleanable/glass,
 /obj/item/folder/documents/syndicate/red,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -177,7 +177,7 @@
 	pixel_y = 7;
 	pixel_x = 9
 	},
-/obj/item/reagent_containers/food/snacks/donut/berry{
+/obj/item/food/donut/berry{
 	pixel_x = -4;
 	color = "#730622";
 	name = "suspicious red donut"
@@ -268,7 +268,7 @@
 /area/ship/bridge)
 "bL" = (
 /obj/structure/altar_of_gods,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
+/obj/item/food/grown/ambrosia/gaia,
 /turf/open/floor/wood/ebony,
 /area/ship/science/ai_chamber)
 "bM" = (
@@ -425,7 +425,7 @@
 /obj/effect/turf_decal/corner/opaque/lime{
 	dir = 4
 	},
-/obj/item/reagent_containers/food/snacks/grown/ambrosia{
+/obj/item/food/grown/ambrosia{
 	pixel_y = -3;
 	pixel_x = -11
 	},
@@ -2613,25 +2613,25 @@
 	pixel_x = -3
 	},
 /obj/structure/closet/crate/large,
-/obj/item/reagent_containers/food/snacks/burger{
+/obj/item/food/burger{
 	pixel_x = 4
 	},
-/obj/item/reagent_containers/food/snacks/burger{
+/obj/item/food/burger{
 	pixel_x = 4
 	},
-/obj/item/reagent_containers/food/snacks/burger{
+/obj/item/food/burger{
 	pixel_x = 4
 	},
-/obj/item/reagent_containers/food/snacks/burger{
+/obj/item/food/burger{
 	pixel_x = 4
 	},
-/obj/item/reagent_containers/food/snacks/burger{
+/obj/item/food/burger{
 	pixel_x = 4
 	},
-/obj/item/reagent_containers/food/snacks/burger{
+/obj/item/food/burger{
 	pixel_x = 4
 	},
-/obj/item/reagent_containers/food/snacks/burger{
+/obj/item/food/burger{
 	pixel_x = 4
 	},
 /turf/open/floor/plasteel/mono/dark,
@@ -4603,7 +4603,7 @@
 	},
 /obj/item/clothing/under/syndicate/gec,
 /obj/item/clothing/shoes/magboots/syndie,
-/obj/item/clothing/head/helmet/space/syndicate/black/engie,
+/obj/item/clothing/head/helmet/space/syndicate/engie,
 /obj/structure/closet/secure_closet/engineering_personal{
 	req_access = list(150,10);
 	populate = 0
@@ -6252,7 +6252,7 @@
 	dir = 9
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia{
+/obj/item/food/grown/ambrosia{
 	pixel_y = 11
 	},
 /turf/open/floor/plating,
@@ -6611,14 +6611,14 @@
 /obj/effect/turf_decal/corner/opaque/orange/full,
 /obj/effect/turf_decal/steeldecal/steel_decals_central1,
 /obj/structure/table/glass,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/white,
+/obj/item/food/grown/cannabis/white,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "Ku" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/item/reagent_containers/food/snacks/meat/slab/xeno,
+/obj/item/food/meat/slab/xeno,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/dark,
@@ -7725,7 +7725,7 @@
 	},
 /obj/structure/closet/emcloset,
 /obj/effect/spawner/random/maintenance/four,
-/obj/item/reagent_containers/food/snacks/burger,
+/obj/item/food/burger,
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 1
 	},
@@ -8001,7 +8001,7 @@
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/closet/emcloset/wall/directional/east,
-/obj/item/clothing/suit/space/syndicate/black/engie,
+/obj/item/clothing/head/helmet/space/syndicate/engie,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/atmospherics)
 "SD" = (
@@ -9181,7 +9181,7 @@
 	},
 /obj/machinery/light/directional/south,
 /obj/item/clothing/shoes/magboots/syndie,
-/obj/item/clothing/head/helmet/space/syndicate/black/engie,
+/obj/item/clothing/head/helmet/space/syndicate/engie,
 /obj/item/pipe_dispenser,
 /obj/item/storage/belt/utility/syndicate,
 /obj/item/clothing/under/syndicate/gec,

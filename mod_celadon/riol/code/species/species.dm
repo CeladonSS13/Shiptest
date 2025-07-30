@@ -7,8 +7,6 @@
 /datum/species
 	/// Does the species use skintones or not?
 	var/use_skintoneriol = FALSE
-	var/obj/item/bodypart/riol_digi_l_leg = /obj/item/bodypart/leg/left/riol/digitigrade
-	var/obj/item/bodypart/riol_digi_r_leg = /obj/item/bodypart/leg/right/riol/digitigrade
 
 /datum/species/riol
 	name = "\improper Riol"
@@ -22,6 +20,7 @@
 	disliked_food = VEGETABLES | FRUIT | GRAIN | GROSS
 	liked_food = MEAT | RAW | DAIRY
 	digitigrade_customization = DIGITIGRADE_OPTIONAL
+
 
 	attack_verb = "slash"
 	attack_sound = 'sound/weapons/slash.ogg'
@@ -74,7 +73,7 @@
 
 	bodytemp_cold_damage_limit = RIOL_BODYTEMP_NORMAL - 70		//-30
 
-	meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/riol 	//нарисовать/спиздить спрайт к нему
+	meat = /obj/item/food/meat/slab/human/mutant/riol 	//нарисовать/спиздить спрайт к нему
 	//skinned_type = /obj/item/stack/sheet/animalhide/riol						//нужно сделать кожу из таяран и нарисовать/спиздить спрайт к нему
 
 	species_language_holder = /datum/language_holder/riol
@@ -92,8 +91,8 @@
 	species_r_arm = /obj/item/bodypart/r_arm/riol
 	species_l_leg = /obj/item/bodypart/leg/left/riol
 	species_r_leg = /obj/item/bodypart/leg/right/riol
-	riol_digi_l_leg = /obj/item/bodypart/leg/left/riol/digitigrade
-	riol_digi_r_leg = /obj/item/bodypart/leg/right/riol/digitigrade
+	species_digi_l_leg = /obj/item/bodypart/leg/left/riol/digitigrade
+	species_digi_r_leg = /obj/item/bodypart/leg/right/riol/digitigrade
 
 	species_robotic_chest = /obj/item/bodypart/chest/robot
 	species_robotic_head = /obj/item/bodypart/head/robot

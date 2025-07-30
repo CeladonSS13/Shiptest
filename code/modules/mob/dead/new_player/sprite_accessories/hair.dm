@@ -3,10 +3,7 @@
 // You do not need to define _s or _l sub-states, game automatically does this for you //what is this
 
 /datum/sprite_accessory/hair
-	// [CELADON-EDIT] - CELADON_QOL
-	// icon = 'icons/mob/human_face.dmi'	  // default icon for all hairs // CELADON-EDIT -> ORIGINAL
-	icon = 'mod_celadon/_storge_icons/icons/species/human/human_face.dmi'	  // default icon for all hairs
-	// [/CELADON-EDIT]
+	icon = 'icons/mob/human_face.dmi'	  // default icon for all hairs
 	body_zone = BODY_ZONE_HEAD
 
 /datum/sprite_accessory/hair/afro
@@ -305,6 +302,14 @@
 	name = "Gloomy (Long)"
 	icon_state = "hair_gloomylong"
 
+/datum/sprite_accessory/hair/longergloomy
+	name = "Gloomy (Longer)"
+	icon_state = "hair_longergloomy"
+
+/datum/sprite_accessory/hair/messychop
+	name = "Messy Chop"
+	icon_state = "hair_messychop"
+
 /datum/sprite_accessory/hair/halfbang
 	name = "Half-banged Hair"
 	icon_state = "hair_halfbang"
@@ -376,6 +381,10 @@
 /datum/sprite_accessory/hair/long_over_eye
 	name = "Long Over Eye"
 	icon_state = "hair_longovereye"
+
+/datum/sprite_accessory/hair/longbun
+	name = "Long Bun"
+	icon_state = "hair_longbun"
 
 /datum/sprite_accessory/hair/longbangs
 	name = "Long Bangs"

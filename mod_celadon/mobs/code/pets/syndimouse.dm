@@ -28,7 +28,7 @@
 	// icon_living = "mouse_[body_color]"
 	// icon_dead = "mouse_[body_color]_dead"
 
-/obj/item/reagent_containers/food/snacks/deadmouse
+/obj/item/food/deadmouse
 	icon = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets.dmi'
 	icon_state = "mouse_red_dead"
 	desc = "Dead mouse in a spacesuit. Taraja's favorite food"
