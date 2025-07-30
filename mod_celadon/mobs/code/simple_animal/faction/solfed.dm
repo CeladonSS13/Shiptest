@@ -159,8 +159,8 @@
 /mob/living/simple_animal/hostile/human/solfed/ranged/panzerfaust
 	name = "\improper SolFed Feldwebel"
 	desc = "A well-armed SolFed navy Feldwebel. Ready to protect his navy with a Panzerfaust, FOR THE FATHERLAND!"
-	rapid = 1
-	rapid_fire_delay = 30
+	rapid = 3
+	rapid_fire_delay = 50
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/solfed/marine/sergeant
 	casingtype = /obj/item/ammo_casing/caseless/rocket
 	r_hand = /obj/item/gun/ballistic/rocketlauncher/solgov
