@@ -1,0 +1,12 @@
+name: "Оставить предложение"
+title: "[ФИЧА]: "
+description: "Любые идеи для игры."
+labels: ["🔷Фича"]
+body:
+  - type: textarea
+    id: description
+    validations:
+      required: true
+    attributes:
+      label: "Описание"
+      description: "Опишите идею/фичу"
