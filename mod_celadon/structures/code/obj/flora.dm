@@ -26,7 +26,7 @@
 
 /obj/effect/floor_decal/crystal
 	name = "crystals"
-	icon = 'mod_celadon/_storge_icons/icons/structures/turf/crystal.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/structures//crystal.dmi'
 	icon_state = "crystal_gen"
 	layer = 2
 

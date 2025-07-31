@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/syndicate/ammo
-	group = "Ammunition"
+	category = "Ammunition"
 
 /* MARK: = Ammo List =
 [*] - отсутствуют.
@@ -7,13 +7,13 @@
 
 > .22lr
 > .357
-> 9mm
-> 10mm
+> 9x18mm
+> 10x22mm
 > .45
 > 5.7x39mm
 > 12 Gauge
 > 5.56x42mm
-> 7.5x64mm
+> 6.5mm
 > .50 BMG
 > .410
 
@@ -61,52 +61,52 @@ MARK: .357
 	cost = 320
 
 /*
-MARK: 9mm
+MARK: 9x18mm
 */
 
 /datum/supply_pack/faction/syndicate/ammo/c9mm_ammo_box
-	name = "9mm Ammo Box Crate"
-	desc = "9mm ammo box for guns like the commander. Contains 45 shells"
+	name = "9x18mm Ammo Box Crate"
+	desc = "9x18mm ammo box for guns like the commander. Contains 45 shells"
 	contains = list(/obj/item/storage/box/ammo/c9mm)
 	cost = 200
 
 /datum/supply_pack/faction/syndicate/ammo/c9mmap_ammo_box
-	name = "9mm AP Ammo Box Crate"
-	desc = "Contains a 45-round 9mm box loaded with armor piercing ammo."
+	name = "9x18mm AP Ammo Box Crate"
+	desc = "Contains a 45-round 9x18mm box loaded with armor piercing ammo."
 	contains = list(/obj/item/storage/box/ammo/c9mm_ap)
 	cost = 250
 
 /datum/supply_pack/faction/syndicate/ammo/c9mmhp_ammo_box
-	name = "9mm HP Ammo Box Crate"
-	desc = "Contains a 45-round 9mm box loaded with hollow point ammo, great against unarmored targets."
+	name = "9x18mm HP Ammo Box Crate"
+	desc = "Contains a 45-round 9x18mm box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c9mm_hp)
 	cost = 250
 
 /datum/supply_pack/faction/syndicate/ammo/c9mm_rubber
-	name = "9mm Rubber Ammo Box Crate"
-	desc = "Contains a 45-round 9mm box loaded with less-than-lethal rubber rounds."
+	name = "9x18mm Rubber Ammo Box Crate"
+	desc = "Contains a 45-round 9x18mm box loaded with less-than-lethal rubber rounds."
 	contains = list(/obj/item/storage/box/ammo/c9mm_rubber)
 	cost = 200
 
 /*
-MARK: 10mm
+MARK: 10x22mm
 */
 
 /datum/supply_pack/faction/syndicate/ammo/c10mm_ammo_box
-	name = "10mm Ammo Box Crate"
-	desc = "Contains a 10mm ammo box for guns like the Ringneck"
+	name = "10x22mm Ammo Box Crate"
+	desc = "Contains a 10x22mm ammo box for guns like the Ringneck"
 	contains = list(/obj/item/storage/box/ammo/c10mm)
 	cost = 350
 
 /datum/supply_pack/faction/syndicate/ammo/c10mm_ammo_box_ap
-	name = "10mm AP Ammo Box Crate"
-	desc = "Contains a 10mm AP ammo box for guns like the Ringneck"
+	name = "10x22mm AP Ammo Box Crate"
+	desc = "Contains a 10x22mm AP ammo box for guns like the Ringneck"
 	contains = list(/obj/item/storage/box/ammo/c10mm_ap)
 	cost = 350
 
 /datum/supply_pack/faction/syndicate/ammo/c10mm_ammo_box_hp
-	name = "10mm HP Ammo Box Crate"
-	desc = "Contains a 10mm HP ammo box for guns like the Ringneck"
+	name = "10x22mm HP Ammo Box Crate"
+	desc = "Contains a 10x22mm HP ammo box for guns like the Ringneck"
 	contains = list(/obj/item/storage/box/ammo/c10mm_hp)
 	cost = 350
 
@@ -208,35 +208,35 @@ MARK: 5.56x42mm
 	name = "5.56x42 Ammo Box Crate"
 	desc = "Contains a 5.56x42mm ammo box for guns like the SMR-80 Hydra"
 	contains = list(/obj/item/storage/box/ammo/a556_42)
-	cost = 700
+	cost = 300
 
 /datum/supply_pack/faction/syndicate/ammo/c556_ammo_box_ap
 	name = "5.56x42 AP Ammo Box Crate"
 	desc = "Contains a 5.56x42mm AP ammo box for guns like the SMR-80 Hydra"
 	contains = list(/obj/item/storage/box/ammo/a556_42/ap)
-	cost = 900
+	cost = 500
 
 /datum/supply_pack/faction/syndicate/ammo/c556_ammo_box_hp
 	name = "5.56x42 HP Ammo Box Crate"
 	desc = "Contains a 5.56x42mm HP ammo box for guns like the SMR-80 Hydra"
 	contains = list(/obj/item/storage/box/ammo/a556_42/hp)
-	cost = 800
+	cost = 375
 
 
 /*
-MARK: 7.5x64mm
+MARK: 6.5mm
 */
 
-/datum/supply_pack/faction/syndicate/ammo/a75clip_box
-	name = "7.5x64mm Ammo Box Crate"
-	desc = "Contains a twenty-round 7.5x64mm ammo box for various sniper rifles such as the Boomslang series."
-	contains = list(/obj/item/storage/box/ammo/a75clip)
+/datum/supply_pack/faction/syndicate/ammo/a65clip_box
+	name = "6.5mm Ammo Box Crate"
+	desc = "Contains a twenty-round 6.5mm ammo box for various sniper rifles such as the Boomslang series."
+	contains = list(/obj/item/storage/box/ammo/a65clip)
 	cost = 200
 
-/datum/supply_pack/faction/syndicate/ammo/a75clip_trackers
-	name = "7.5x64mm Tracker Shell Crate"
-	desc = "Contains a 10-round 7.5x64mm tracker box for various sniper rifles such as the Boomslang series."
-	contains = list(/obj/item/storage/box/ammo/a75clip/trac)
+/datum/supply_pack/faction/syndicate/ammo/a65clip_trackers
+	name = "6.5mm Tracker Shell Crate"
+	desc = "Contains a 10-round 6.5mm tracker box for various sniper rifles such as the Boomslang series."
+	contains = list(/obj/item/storage/box/ammo/a65clip/trac)
 	cost = 250
 
 /*

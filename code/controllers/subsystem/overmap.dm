@@ -236,7 +236,7 @@ SUBSYSTEM_DEF(overmap)
 	if(our_spawn_location)
 		system_to_spawn_in = our_spawn_location.current_overmap
 
-	if(!ship_loc && template.space_spawn)
+	if(!ship_loc || template.space_spawn)	// [CELADON-EDIT] Изменено, так как корабли с параметром space-spawn: true всё равно спавнились на аванпосту. OldCode: if(!ship_loc && template.space_spawn)
 		ship_loc = null
 	else
 		ship_loc = SSovermap.outposts[1]
@@ -335,7 +335,7 @@ SUBSYSTEM_DEF(overmap)
 	///the tileset we use, just the icon we force tokens to use, override only if nessary
 	// [CELADON-EDIT] - CELADON_OVERMAP
 	// var/tileset = 'icons/misc/overmap.dmi'	// CELADON-EDIT - ORIGINAL
-	var/tileset = 'mod_celadon/_storge_icons/icons/overmap/overmap.dmi'
+	var/tileset = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap.dmi'
 	// [/CELADON-EDIT]
 
 	///This is the flag that makes it so all overmap objects use the same uniform color above. If false, tokens use their default colors
@@ -614,7 +614,7 @@ SUBSYSTEM_DEF(overmap)
 			),
 			// [CELADON-EDIT] - CELADON_MAP_EXPANSION - Координаты спавна руин
 			// vlevel.high_y-used_ruin.height-6 - vlevel.reserved_margin,	// ORIGINAL
-			vlevel.high_y - used_ruin.height - 70 - vlevel.reserved_margin,
+			vlevel.high_y - used_ruin.height - 60 - vlevel.reserved_margin,
 			// [/CELADON-EDIT]
 			vlevel.z_value
 		)
@@ -625,7 +625,11 @@ SUBSYSTEM_DEF(overmap)
 	// fill in the turfs, AFTER generating the ruin. this prevents them from generating within the ruin
 	// and ALSO prevents the ruin from being spaced when it spawns in
 	// WITHOUT needing to fill the reservation with a bunch of dummy turfs
-	mapgen.populate_turfs(vlevel.get_unreserved_block())
+	if(dynamic_datum.populate_turfs)
+		mapgen.populate_turfs(vlevel.get_unreserved_block())
+
+	///post generation things, such as greebles or smoothening out terrain generation.
+	mapgen.post_generation(vlevel.get_unreserved_block())
 
 	if(dynamic_datum.weather_controller_type)
 		new dynamic_datum.weather_controller_type(mapzone)
@@ -747,12 +751,12 @@ SUBSYSTEM_DEF(overmap)
 	// 	docking_ports += quaternary_dock
 	// [/CELADON-REMOVE]
 
-	var/list/spawned_mission_pois = list()
+	var/list/datum/weakref/spawned_mission_pois = list()
 	for(var/obj/effect/landmark/mission_poi/mission_poi in SSmissions.unallocated_pois)
 		if(!vlevel.is_in_bounds(mission_poi))
 			continue
 
-		spawned_mission_pois += mission_poi
+		spawned_mission_pois += WEAKREF(mission_poi)
 		SSmissions.unallocated_pois -= mission_poi
 
 
@@ -828,7 +832,7 @@ SUBSYSTEM_DEF(overmap)
 /datum/overmap_star_system/proc/overmap_container_view(user = usr) //this is broken rn, idfk know html viewers works
 	if(!overmap_container)
 		return
-	. += "<a href='?src=[REF(src)];refresh=1'>\[Refresh\]</a><br><code>"
+	. += "<a href='byond://?src=[REF(src)];refresh=1'>\[Refresh\]</a><br><code>"
 	for(var/y in size to 1 step -1)
 		for(var/x in 1 to size)
 			var/tile
@@ -843,7 +847,7 @@ SUBSYSTEM_DEF(overmap)
 			else
 				tile = "."
 				thing_to_link = overmap_container[x][y]
-			. += "<a href='?src=[REF(src)];view_object=[REF(thing_to_link)]' title='[x]x, [y]y'>[add_leading(add_trailing(tile, 2), 3)]</a>" //"centers" the character
+			. += "<a href='byond://?src=[REF(src)];view_object=[REF(thing_to_link)]' title='[x]x, [y]y'>[add_leading(add_trailing(tile, 2), 3)]</a>" //"centers" the character
 		. += "<br>"
 		CHECK_TICK
 	. += "</code>"
@@ -1132,39 +1136,6 @@ SUBSYSTEM_DEF(overmap)
 	has_outpost = TRUE
 	can_be_selected_randomly = FALSE
 	encounters_refresh = TRUE
-
-/datum/overmap_star_system/shiptest/New(generate_now=TRUE)
-	//1/10 rounds
-	if(!prob(10))
-		return ..()
-
-	//Small easter egg so all these palletes doesn't go to waste in the event mines
-	var/list/possible_overmaps = subtypesof(/datum/overmap_star_system)
-
-	//check if can_be_selected_randomly is false, if so remove them
-	for(var/datum/overmap_star_system/interating_overmap as anything in possible_overmaps)
-		if(!interating_overmap.can_be_selected_randomly)
-			possible_overmaps -= interating_overmap
-
-	var/datum/overmap_star_system/picked_overmap = pick(possible_overmaps)
-	if(!picked_overmap)
-		return ..() //something went wrong but we ball
-
-	//main colors, used for dockable terrestrials, and background
-	primary_color = picked_overmap.primary_color
-	secondary_color = picked_overmap.secondary_color
-
-	//hazard colors, used for the overmap hazards and sun
-	hazard_primary_color = picked_overmap.hazard_primary_color
-	hazard_secondary_color = picked_overmap.hazard_secondary_color
-
-	//structure colors, used for ships and outposts/colonies
-	primary_structure_color = picked_overmap.primary_structure_color
-	secondary_structure_color = picked_overmap.secondary_structure_color
-
-	override_object_colors = TRUE
-	overmap_icon_state = picked_overmap.overmap_icon_state
-	return ..()
 
 /datum/overmap_star_system/shiptest/create_map()
 	. = ..()

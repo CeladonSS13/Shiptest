@@ -7,6 +7,7 @@
 	drag_slowdown = 1.5		// Same as a prone mob
 	max_integrity = 200
 	integrity_failure = 0.25
+	obj_flags = parent_type::obj_flags | ELEVATED_SURFACE
 	armor = list("melee" = 20, "bullet" = 10, "laser" = 10, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 60)
 
 	var/icon_door = null
@@ -117,6 +118,12 @@
 		. += span_notice("The parts are <b>welded</b> together.")
 	else if(secure && !opened)
 		. += span_notice("Alt-click to [locked ? "unlock" : "lock"].")
+	// [CELADON-ADD] - CELADON_RETURN_CONTENT_QUIRKS
+	if(isliving(user))
+		var/mob/living/L = user
+		if(HAS_TRAIT(L, TRAIT_SKITTISH))
+			. += "<span class='notice'>Ctrl-Shift-click [src] to jump inside.</span>"
+	// [/CELADON-ADD]
 
 /obj/structure/closet/CanAllowThrough(atom/movable/mover, border_dir)
 	. = ..()
@@ -146,12 +153,12 @@
 			if(user)
 				to_chat(user, span_danger("There's something too large in [src], preventing it from closing."))
 			return FALSE
-// Cel-Add - No Mechs in crates
+// [CELADON-ADD] - CELADON_FIXES // Cel-Add - No Mechs in crates
 	for(var/obj/mecha/mech in T) // Лучше бы сделал общую проверку предметов, но я хз какой вар сравнивать. Whatever
 		if(user)
 			to_chat(user, "<span class='danger'>There's something too large in [src], preventing it from closing.</span>")
 		return FALSE
-// /Cel-Add
+// [/CELADON-ADD] // /Cel-Add
 	return TRUE
 
 /obj/structure/closet/dump_contents()
@@ -488,6 +495,15 @@
 		return
 	else
 		togglelock(user)
+
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_QUIRKS
+/obj/structure/closet/CtrlShiftClick(mob/living/user)
+	if(!HAS_TRAIT(user, TRAIT_SKITTISH))
+		return ..()
+	if(!user.canUseTopic(src, BE_CLOSE) || !isturf(user.loc))
+		return
+	dive_into(user)
+// [/CELADON-ADD]
 
 /obj/structure/closet/proc/togglelock(mob/living/user, silent)
 	if(secure && !broken)

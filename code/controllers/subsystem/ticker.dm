@@ -18,6 +18,7 @@ SUBSYSTEM_DEF(ticker)
 	var/datum/game_mode/mode = null
 
 	var/login_music							//music played in pregame lobby
+	var/login_music_name					//music played in pregame lobby
 	var/round_end_sound						//music/jingle played when the world reboots
 	var/round_end_sound_sent = TRUE			//If all clients have loaded it
 
@@ -98,6 +99,7 @@ SUBSYSTEM_DEF(ticker)
 				if(L[1] == "exclude")
 					continue
 				music += S
+				login_music_name = S
 
 	var/old_login_music = trim(file2text("data/last_round_lobby_music.txt"))
 	if(music.len > 1)
@@ -281,11 +283,13 @@ SUBSYSTEM_DEF(ticker)
 	round_start_time = world.time
 	round_start_timeofday = world.timeofday
 	SSdbcore.SetRoundStart()
-
 	to_chat(world, span_notice("<B>Welcome to [station_name()], enjoy your stay!</B>"))
 	SSredbot.send_discord_message("ooc", "**A new round has begun.**")
 //[CELADON-EDIT]- MUSIC_CELADON
 //	SEND_SOUND(world, sound('sound/roundstart/addiguana.ogg'))//CELADON-EDIT-ORIGINAL
+	if(login_music_name)
+		var/count_name = length(SSticker.login_music_name)
+		to_chat(world, span_redteamradio("<B>Playing lobby music: [copytext(SSticker.login_music_name, 1, count_name-3)].</B>"))
 	SEND_SOUND(world, sound('mod_celadon/_storge_sounds/sound/lobby/sztart.ogg'))
 //[/CELADON-EDIT]
 
@@ -363,7 +367,7 @@ SUBSYSTEM_DEF(ticker)
 	if(!hpc)
 		listclearnulls(queued_players)
 		for (var/mob/dead/new_player/NP in queued_players)
-			to_chat(NP, span_userdanger("The alive players limit has been released!<br><a href='?src=[REF(NP)];late_join=override'>[html_encode(">>Join Game<<")]</a>"))
+			to_chat(NP, span_userdanger("The alive players limit has been released!<br><a href='byond://?src=[REF(NP)];late_join=override'>[html_encode(">>Join Game<<")]</a>"))
 			SEND_SOUND(NP, sound('sound/misc/notice1.ogg'))
 			NP.LateChoices()
 		queued_players.len = 0
@@ -378,7 +382,7 @@ SUBSYSTEM_DEF(ticker)
 			listclearnulls(queued_players)
 			if(living_player_count() < hpc)
 				if(next_in_line && next_in_line.client)
-					to_chat(next_in_line, span_userdanger("A slot has opened! You have approximately 20 seconds to join. <a href='?src=[REF(next_in_line)];late_join=override'>\>\>Join Game\<\<</a>"))
+					to_chat(next_in_line, span_userdanger("A slot has opened! You have approximately 20 seconds to join. <a href='byond://?src=[REF(next_in_line)];late_join=override'>\>\>Join Game\<\<</a>"))
 					SEND_SOUND(next_in_line, sound('sound/misc/notice1.ogg'))
 					next_in_line.LateChoices()
 					return

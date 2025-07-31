@@ -1,7 +1,7 @@
 // Coloured lighting because fabulous
 /obj/machinery/light/colored
 	name = "light fixture"
-	icon = 'mod_celadon/_storge_icons/icons/obj/coloredlights.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/structures/obj/coloredlights.dmi'
 	base_state = "yellow"		// base description and icon_state
 	icon_state = "yellow1"
 	// emissive_state = "emissive"

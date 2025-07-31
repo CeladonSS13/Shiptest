@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/independent/gun
-	group = "Guns"
+	category = "Guns"
 	crate_type = /obj/structure/closet/crate/secure/weapon
 
 /* MARK: = Gun List =
@@ -58,7 +58,7 @@ MARK:		Pistols
 
 /datum/supply_pack/faction/independent/gun/ringneck
 	name = "Ringneck Pistol Crate"
-	desc = "Contains a civillian variant of the Ringneck pistol, produced by Scarborough Arms and chambered in 10mm."
+	desc = "Contains a civillian variant of the Ringneck pistol, produced by Scarborough Arms and chambered in 10x22mm."
 	cost = 1000
 	contains = list(/obj/item/storage/guncase/pistol/ringneck)
 
@@ -83,7 +83,7 @@ MARK:		Pistols
 
 /datum/supply_pack/faction/independent/gun/glock
 	name = "Glock Pistol Crate"
-	desc = "Contains a 9mm Glock pistol and two additional magazines for it."
+	desc = "Contains a 9x18mm Glock pistol and two additional magazines for it."
 	cost = 1300
 	contains = list(/obj/item/storage/guncase/glock)
 	crate_name = "auto rifle crate"
@@ -108,7 +108,7 @@ MARK: SMGs
 /datum/supply_pack/faction/independent/gun/firestorm
 	name = "Firestorm SMG Crate"
 	desc = "Contains a Hunter's Pride SMG, intended for internal use by hunters and chambered in .44 Roumain."
-	cost = 3000
+	cost = 4000
 	contains = list(/obj/item/storage/guncase/firestorm)
 	crate_name = "SMG crate"
 
@@ -348,13 +348,13 @@ MARK: Pistols
 
 // /datum/supply_pack/faction/independent/gun/cm23
 // 	name = "CM-23 Pistol Crate"
-// 	desc = "Contains a 10mm CM-23 Pistol, standard issue of the Colonial Minutemen."
+// 	desc = "Contains a 10x22mm CM-23 Pistol, standard issue of the Colonial Minutemen."
 // 	cost = 1000
 // 	contains = list(/obj/item/storage/guncase/pistol/cm23)
 
 // /datum/supply_pack/faction/independent/gun/cm70
 // 	name = "CM-70 Machinepistol Crate"
-// 	desc = "Contains a 9mm machinepistol produced proudly within Lanchester City. Colonial Minuteman issue only."
+// 	desc = "Contains a 9x18mm machinepistol produced proudly within Lanchester City. Colonial Minuteman issue only."
 // 	cost = 2500
 // 	contains = list(/obj/item/storage/guncase/pistol/cm70)
 

@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/syndicate/armor
-	group = "Armor"
+	category = "Armor"
 
 /datum/supply_pack/faction/syndicate/armor/hardliner_armor
 	name = "Hardliner Armor Crate"

@@ -479,6 +479,27 @@
 	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION | KEPORI_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
 	// [/CELADON-ADD]
 
+//Ramzi Elite Suit
+/obj/item/clothing/head/helmet/space/hardsuit/syndi/ramzi/elite
+	name = "elite rust-red hardsuit helmet"
+	desc = "An elite version of the rusted-red hardsuit helmet, with improved armour and fireproofing. The armour is worn and heavy. It is in EVA mode."
+	alt_desc = "An elite version of the rusted-red hardsuit, with improved armour and fireproofing. The armour is worn and heavy. It is in travel mode."
+	hardsuit_type = "ramzielite"
+	icon_state = "hardsuit1-ramzielite"
+	item_state = "hardsuit1-ramzielite"
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 100, "acid" = 80)
+
+/obj/item/clothing/suit/space/hardsuit/syndi/ramzi/elite
+	name = "elite rust-red hardsuit"
+	desc = "An elite version of the rusted-red hardsuit, with improved armour and fireproofing. The armour is worn and heavy. It is in EVA mode."
+	alt_desc = "An elite version of the rusted-red hardsuit, with improved armour and fireproofing. The armour is worn and heavy. It is in EVA mode."
+	icon_state = "hardsuit1-ramzielite"
+	item_state = "hardsuit1-ramzielite"
+	hardsuit_type = "ramzielite"
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/ramzi/elite
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 100, "acid" = 80)
+	slowdown = 1.25
+
 //Elite Syndie suit
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite
 	name = "elite syndicate hardsuit helmet"
@@ -563,28 +584,6 @@
 	icon_state = "hardsuit1-cyberparamed"
 	hardsuit_type = "cyberparamed"
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 35, "energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 65, "fire" = 75, "acid" = 40)
-
-//Pointman Hardsuit
-/obj/item/clothing/suit/space/hardsuit/syndi/inteq
-	name = "pointman hardsuit"
-	desc = "One of Inteq's strudiest and finest combat armors. It is in EVA mode. Retrofitted by the IRMG."
-	alt_desc = "One of Inteq's strudiest and finest combat armors. It is in travel mode. Retrofitted by the IRMG."
-	icon_state = "hardsuit1-pointman"
-	hardsuit_type = "pointman"
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/inteq
-	// [CELADON-EDIT] - TAJARA, CELADON_RIOL
-	// supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION // CELADON-EDIT - ORIGINAL
-	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION | KEPORI_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
-	// [/CELADON-EDIT]
-
-/obj/item/clothing/head/helmet/space/hardsuit/syndi/inteq
-	name = "pointman hardsuit helmet"
-	desc = "One of Inteq's strudiest and finest combat armors. It is in EVA mode. Retrofitted by the IRMG."
-	alt_desc = "One of Inteq's strudiest and finest combat armors. It is in travel mode. Retrofitted by the IRMG."
-	icon_state = "hardsuit1-pointman"
-	hardsuit_type = "pointman"
-	full_retraction = TRUE
-	supports_variations = VOX_VARIATION | KEPORI_VARIATION
 
 	//Medical hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/medical
@@ -680,17 +679,18 @@
 
 //Security hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/security
-	name = "security hardsuit helmet"
-	desc = "A special helmet designed for work in a hazardous, low pressure environment. Has an additional layer of armor."
+	name = "\improper Vigilitas Guardian hardsuit helmet"
+	desc = "A helmet with a wide visor commonly seen with Vigilitas Interstellar security contractors."
 	icon_state = "hardsuit0-sec"
 	item_state = "sec_helm"
 	hardsuit_type = "sec"
 	armor = list("melee" = 35, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
+	supports_variations = SNOUTED_VARIATION
 
 /obj/item/clothing/suit/space/hardsuit/security
 	icon_state = "hardsuit-sec"
-	name = "security hardsuit"
-	desc = "A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor."
+	name = "\improper Vigilitas Guardian hardsuit"
+	desc = "A hardsuit commonly employed in security operations by Vigilitas Interstellar, often used for basic patrol duty and light engagements."
 	item_state = "sec_hardsuit"
 	armor = list("melee" = 35, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security
@@ -706,16 +706,17 @@
 
 //Head of Security hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/security/hos
-	name = "heavy security hardsuit helmet"
-	desc = "A special bulky helmet designed for work in a hazardous, low pressure environment. Has an additional layer of armor."
+	name = "\improper Vigilitas Sentinel hardsuit helmet"
+	desc = "An especially armored helmet with a narrow visor and armored facemask, commonly seen with high ranking Vigilitas Interstellar security contractors."
 	icon_state = "hardsuit0-hos"
 	hardsuit_type = "hos"
 	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 40, "bomb" = 25, "bio" = 100, "rad" = 50, "fire" = 95, "acid" = 95)
+	supports_variations = SNOUTED_VARIATION
 
 /obj/item/clothing/suit/space/hardsuit/security/hos
 	icon_state = "hardsuit-hos"
-	name = "heavy security hardsuit"
-	desc = "A special bulky suit that protects against hazardous, low pressure environments. Has an additional layer of armor."
+	name = "\improper Vigilitas Sentinel hardsuit"
+	desc = "A modified heavy hardsuit commonly employed by higher ranking members of Vigilitas Interstellar during security operations."
 	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 40, "bomb" = 25, "bio" = 100, "rad" = 50, "fire" = 95, "acid" = 95)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security/hos
 	jetpack = /obj/item/tank/jetpack/suit
@@ -1101,121 +1102,3 @@
 	hardsuit_type = "independent-mining"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/mining/independent
 	armor = list("melee" = 30, "bullet" = 10, "laser" = 5, "energy" = 20, "bomb" = 50, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 75)
-
-
-//Inteq Hardsuit
-
-/obj/item/clothing/head/helmet/space/hardsuit/security/inteq
-	name = "inteq hardsuit helmet"
-	desc = "A somewhat boxy, monocular visored helmet designed for hazardous, low pressure environments. It has the letters 'IRMG' imprinted onto the earpad."
-	icon_state = "hardsuit0-inteq"
-	item_state = "hardsuit-inteq"
-	hardsuit_type = "inteq"
-	armor = list("melee" = 40, "bullet" = 35, "laser" = 30, "energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
-	supports_variations = SNOUTED_VARIATION
-
-/obj/item/clothing/suit/space/hardsuit/security/inteq
-	name = "inteq hardsuit"
-	desc = "A heavy-duty looking suit that protects against hazardous, low pressure environments. It's bulk provides ample protection, if not a bit cumbersome to wear."
-	icon_state = "hardsuit-inteq"
-	item_state = "hardsuit-inteq"
-	hardsuit_type = "inteq"
-
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security/inteq
-	// [CELADON-EDIT] - TAJARA, CELADON_RIOL
-	// supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION // CELADON-EDIT - ORIGINAL
-	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
-	// [/CELADON-EDIT]
-	armor = list("melee" = 40, "bullet" = 35, "laser" = 30, "energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
-
-//solarian
-/obj/item/clothing/head/helmet/space/hardsuit/solgov
-	name = "\improper SolGov hardsuit helmet"
-	desc = "An armored spaceproof helmet, its visor is reminiscent of knights of yore."
-	icon_state = "hardsuit0-solgov"
-	item_state = "hardsuit0-solgov"
-	hardsuit_type = "solgov"
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 60, "bio" = 100, "rad" = 60, "fire" = 90, "acid" = 75)
-
-/obj/item/clothing/suit/space/hardsuit/solgov //see this is a good path. not fucking /security/independant/inteq. its just /hardsuit/solgov
-	icon_state = "hardsuit_solgov"
-	name = "\improper SolGov hardsuit"
-	desc = "An armored spaceproof suit. A powered exoskeleton keeps the suit light and mobile."
-	item_state = "hardsuit_solgov"
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 60, "bio" = 100, "rad" = 60, "fire" = 90, "acid" = 75) //intentionally the fucking strong, this is master chief-tier armor //is this really what you call the strong?? is this the best solgov has to offer??????
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/solgov
-	allowed = list(/obj/item/gun, /obj/item/ammo_box,/obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/melee/energy/sword/saber, /obj/item/restraints/handcuffs, /obj/item/tank/internals)
-	slowdown = 0.5
-	// [CELADON-EDIT] - TAJARA, CELADON_RIOL
-	// supports_variations = DIGITIGRADE_VARIATION // CELADON-EDIT - ORIGINAL
-	supports_variations = DIGITIGRADE_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
-	// [/CELADON-EDIT]
-
-/obj/item/clothing/head/helmet/space/hardsuit/quixote
-	name = "\improper Quixote mobility hardsuit helmet"
-	desc = "The integrated helmet of a Quixote mobility hardsuit."
-	icon_state = "hardsuit0-quixote"
-	item_state = "quixote-helm"
-	max_integrity = 300
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 40, "energy" = 25, "bomb" = 50, "bio" = 100, "rad" = 60, "fire" = 50, "acid" = 100)
-	hardsuit_type = "quixote"
-	max_heat_protection_temperature = 20000
-
-/obj/item/clothing/suit/space/hardsuit/quixote
-	name = "\improper Quixote mobility hardsuit"
-	desc = "The Quixote mobility suit is the magnum opus of Phorsman equipment, combining durable composite armor with high mobility thrusters."
-	icon_state = "quixotesuit"
-	item_state = "quixotesuit"
-	max_integrity = 300
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 40, "energy" = 25, "bomb" = 50, "bio" = 100, "rad" = 60, "fire" = 50, "acid" = 100)
-	allowed = list(/obj/item/gun, /obj/item/flashlight, /obj/item/tank/internals, /obj/item/ammo_box)
-	actions_types = list(/datum/action/item_action/toggle_helmet)
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/quixote
-	jetpack = /obj/item/tank/jetpack/suit
-	slowdown = 0.3
-	max_heat_protection_temperature = 20000
-	var/datum/action/innate/quixotejump/jump
-
-/obj/item/clothing/suit/space/hardsuit/quixote/Initialize()
-	. = ..()
-	jump = new(src)
-
-/obj/item/clothing/suit/space/hardsuit/quixote/Destroy()
-	QDEL_NULL(jump)
-	return ..()
-
-/obj/item/clothing/suit/space/hardsuit/quixote/equipped(mob/user, slot)
-	. = ..()
-	if(slot == ITEM_SLOT_OCLOTHING)
-		jump.Grant(user)
-		user.update_icons()
-	else //If it is equipped in any slot except for our outer clothing, we can't dash
-		jump.Remove(user)
-		user.update_icons()
-
-/obj/item/clothing/suit/space/hardsuit/quixote/dropped(mob/user)
-	. = ..()
-	jump.Remove(user)
-	user.update_icons()
-
-/obj/item/clothing/suit/space/hardsuit/quixote/ui_action_click(mob/user, action)
-	if(action == /datum/action/innate/quixotejump)
-		jump.Activate()
-	else
-		return ..()
-
-/obj/item/clothing/head/helmet/space/hardsuit/quixote/dimensional
-	name = "\improper Quixote metaspacial hardsuit helmet"
-	desc = "The integrated helmet of a Quixote metaspace navigation hardsuit."
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 40, "energy" = 35, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
-
-/obj/item/clothing/suit/space/hardsuit/quixote/dimensional
-	name = "\improper Quixote metaspacial hardsuit"
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 40, "energy" = 35, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
-	desc = "The Quixote metaspacial mobility suit is the magnum opus of dimensional navigation equipment, combining durable composite armor with high mobility thrusters and defensive plating rated for all manner of exotic particles."
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/quixote/dimensional
-	slowdown = 0.2
-	// [CELADON-EDIT] - TAJARA, CELADON_RIOL
-	// supports_variations = DIGITIGRADE_VARIATION // CELADON-EDIT - ORIGINAL
-	supports_variations = DIGITIGRADE_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
-	// [/CELADON-EDIT]

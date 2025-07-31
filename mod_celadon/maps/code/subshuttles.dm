@@ -109,29 +109,32 @@
 	description = "Independent"
 	prefix = "sISV"
 	name_categories = list("GENERAL", "SPACE")
+
 /datum/map_template/shuttle/subshuttles/jet_lancer
 	file_name = "syndicate_jet_lancer"
 	name = "Jet Lancer-class Boarding Vessel"
 	description = "Syndicate"
 	prefix = "sLSSV"
+
 /datum/map_template/shuttle/subshuttles/module_one
 	file_name = "independent_module_one"
 	name = "Module-Ship-One"
 	description = "Independent"
 	prefix = "sIMV"
+
 /datum/map_template/shuttle/subshuttles/module_two
 	file_name = "independent_module_two"
 	name = "Module-Ship-two"
 	description = "Independent"
 	prefix = "sIMV"
-/datum/map_template/shuttle/subshuttles/nail
 
+/datum/map_template/shuttle/subshuttles/nail
 	description = "Pirate"
 	prefix = "sRSV"
+
 /datum/map_template/shuttle/subshuttles/feather
 	file_name = "solfed_feather"
 	name = "Feather-class Supply Vessel"
-
 	description = "Solar Federation"
 	prefix = "sSFSV"
 	name_categories = list("GENERAL", "SPACE", "BRITISH_NAVY", "NATURAL")
@@ -139,14 +142,12 @@
 /datum/map_template/shuttle/subshuttles/rider
 	file_name = "nanotrasen_rider"
 	name = "Rider Dropship"
-
 	description = "Nanotrasen"
 	prefix = "sNTSV"
 
 /datum/map_template/shuttle/subshuttles/tadpole
 	file_name = "inteq_tadpole"
 	name = "Tadpole"
-
 	description = "InteQ"
 	prefix = "sIQSV"
 
@@ -154,20 +155,17 @@
 /datum/map_template/shuttle/ruin/ruin_jox
 	file_name = "syndicate_Jox"
 	name = "Jox Drop Ship"
-
 	description = "\[RUIN\] Syndicate"
 	prefix = "sSSV"
 
 /datum/map_template/shuttle/subshuttles/vespa
 	file_name = "solfed_vespa"
 	name = "Vespa Expeditionary Dropship"
-
 	description = "Solar Federation"
 	prefix = "sSFSV"
 
 /datum/map_template/shuttle/subshuttles/felon
 	file_name = "elysium_felon"
 	name = "Felon Drug Carrier"
-
 	description = "Elysium"
 	prefix = "sEUSV"

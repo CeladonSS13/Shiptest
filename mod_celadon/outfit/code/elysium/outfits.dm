@@ -1,7 +1,7 @@
 /obj/item/card/id/elysium_com
 	name = "\improper Elysium Central Command access card"
 	desc = "An access card sourced from Elysium Central Command."
-	icon = 'mod_celadon/_storge_icons/icons/obj/elysium_card.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/elysium_card.dmi'
 	icon_state = "elysium_com"
 	uses_overlays = FALSE
 	registered_age = null

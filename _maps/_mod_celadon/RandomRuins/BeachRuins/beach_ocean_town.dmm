@@ -330,7 +330,7 @@
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "df" = (
 /obj/effect/decal/cleanable/glass,
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -470,7 +470,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/beach/oceantown/bar)
 "ek" = (
-/turf/open/floor/plating/grass/jungle,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "el" = (
 /obj/structure/table,
@@ -488,7 +488,7 @@
 /area/ruin/beach/oceantown/shop)
 "ep" = (
 /obj/machinery/grill,
-/obj/item/reagent_containers/food/snacks/meat/steak,
+/obj/item/food/meat/steak,
 /turf/open/floor/wood{
 	light_range = 2
 	},
@@ -673,7 +673,7 @@
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "fB" = (
 /obj/effect/turf_decal/siding/wood,
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -737,7 +737,7 @@
 /turf/open/floor/carpet/black,
 /area/ruin/beach/oceantown/bar)
 "fZ" = (
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -1073,7 +1073,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/beach/oceantown/shop)
 "iY" = (
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -1384,10 +1384,10 @@
 /obj/structure/flora/tree/jungle{
 	icon_state = "tree3"
 	},
-/turf/open/floor/plating/grass/jungle,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "ls" = (
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -1662,7 +1662,7 @@
 	dir = 8;
 	icon_state = "plating"
 	},
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -1726,7 +1726,7 @@
 /area/ruin/beach/oceantown/bar)
 "ox" = (
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/plating/grass/jungle,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "oz" = (
 /obj/effect/turf_decal/weather/sand{
@@ -1988,7 +1988,7 @@
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "qF" = (
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen")
 	},
 /turf/open/floor/plating/asteroid/sand/lit,
@@ -2178,7 +2178,7 @@
 "sd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/gibs/old,
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -2221,7 +2221,7 @@
 /obj/machinery/shower{
 	dir = 1
 	},
-/mob/living/simple_animal/hostile/bear/cave,
+/mob/living/basic/bear/cave,
 /turf/open/floor/plasteel/mono,
 /area/ruin/beach/oceantown)
 "sr" = (
@@ -2275,7 +2275,7 @@
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "sS" = (
 /obj/machinery/light/small/directional/south,
-/obj/item/gun/ballistic/revolver/empty,
+/obj/item/gun/ballistic/revolver/detective/empty,
 /obj/effect/mob_spawn/human/beach,
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/wood,
@@ -2496,7 +2496,7 @@
 	dir = 5
 	},
 /obj/item/roastingstick,
-/obj/item/reagent_containers/food/snacks/sausage,
+/obj/item/food/sausage,
 /turf/open/floor/plating/dirt{
 	light_range = 2
 	},
@@ -2736,7 +2736,7 @@
 /obj/structure/flora/tree/jungle/small{
 	icon_state = "tree1"
 	},
-/turf/open/floor/plating/grass/jungle,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "xF" = (
 /obj/item/kirbyplants/random,
@@ -3140,7 +3140,7 @@
 /obj/structure/flora/tree/jungle/small{
 	icon_state = "tree2"
 	},
-/turf/open/floor/plating/grass/jungle,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "Ap" = (
 /obj/structure/window{
@@ -3778,7 +3778,7 @@
 /turf/open/floor/plating/grass/beach/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "Fv" = (
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen")
 	},
 /turf/open/floor/plating/dirt{
@@ -4006,23 +4006,23 @@
 "GZ" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/closet/crate/freezer,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sausage,
+/obj/item/food/sausage,
+/obj/item/food/sausage,
+/obj/item/food/sausage,
+/obj/item/food/sausage,
+/obj/item/food/sausage,
+/obj/item/food/sausage,
+/obj/item/food/sausage,
+/obj/item/food/sausage,
+/obj/item/food/sausage,
+/obj/item/food/sausage,
+/obj/item/food/sausage,
+/obj/item/food/sausage,
+/obj/item/food/sausage,
+/obj/item/food/sausage,
+/obj/item/food/sausage,
+/obj/item/food/sausage,
+/obj/item/food/sausage,
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "Hd" = (
@@ -4126,7 +4126,6 @@
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "HW" = (
 /obj/structure/table,
-/obj/item/stack/sheet/mineral/coal/ten,
 /turf/open/floor/wood{
 	light_range = 2
 	},
@@ -4434,7 +4433,7 @@
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "Km" = (
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -4614,7 +4613,7 @@
 /obj/effect/turf_decal/siding/blue/corner{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -4915,7 +4914,6 @@
 /turf/open/floor/wood,
 /area/ruin/beach/oceantown)
 "Nw" = (
-/obj/item/stack/sheet/mineral/coal/ten,
 /turf/open/floor/plasteel/dark,
 /area/ruin/beach/oceantown/shop)
 "Ny" = (
@@ -5061,12 +5059,12 @@
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "Ov" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/food/snacks/muffin,
-/obj/item/reagent_containers/food/snacks/muffin,
-/obj/item/reagent_containers/food/snacks/muffin,
-/obj/item/reagent_containers/food/snacks/muffin,
-/obj/item/reagent_containers/food/snacks/muffin,
-/obj/item/reagent_containers/food/snacks/muffin,
+/obj/item/food/muffin,
+/obj/item/food/muffin,
+/obj/item/food/muffin,
+/obj/item/food/muffin,
+/obj/item/food/muffin,
+/obj/item/food/muffin,
 /turf/open/floor/plasteel/patterned/grid,
 /area/ruin/beach/oceantown/shop)
 "OH" = (
@@ -5150,9 +5148,6 @@
 /obj/effect/turf_decal/siding/blue/corner,
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
 /turf/open/floor/plasteel,
-/area/ruin/beach/oceantown/shop)
-"Pf" = (
-/turf/open/floor/plasteel/dark,
 /area/ruin/beach/oceantown/shop)
 "Ph" = (
 /obj/effect/spawner/structure/window,
@@ -5320,7 +5315,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -5542,7 +5537,7 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/ruin/beach/oceantown/shop)
 "ST" = (
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -5590,7 +5585,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/weather/sand,
-/obj/item/reagent_containers/food/snacks/sausage,
+/obj/item/food/sausage,
 /turf/open/floor/plating/dirt{
 	light_range = 2
 	},
@@ -5827,13 +5822,6 @@
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "VP" = (
 /obj/structure/rack,
-/obj/item/stack/sheet/mineral/coal/ten,
-/obj/item/stack/sheet/mineral/coal/ten,
-/obj/item/stack/sheet/mineral/coal/ten,
-/obj/item/stack/sheet/mineral/coal/ten,
-/obj/item/stack/sheet/mineral/coal/ten,
-/obj/item/stack/sheet/mineral/coal/ten,
-/obj/item/stack/sheet/mineral/coal/ten,
 /turf/open/floor/plasteel/patterned/grid,
 /area/ruin/beach/oceantown/shop)
 "VQ" = (
@@ -5875,7 +5863,7 @@
 /area/ruin/beach/oceantown)
 "VW" = (
 /obj/machinery/light/small/directional/west,
-/mob/living/simple_animal/hostile/bear/cave{
+/mob/living/basic/bear/cave{
 	faction = list("Frontiersmen");
 	health = 210
 	},
@@ -6069,7 +6057,7 @@
 	dir = 1
 	},
 /obj/machinery/light/directional/east,
-/obj/item/reagent_containers/food/snacks/muffin,
+/obj/item/food/muffin,
 /obj/item/stack/sheet/metal/twenty,
 /obj/effect/decal/cleanable/blood/squirt,
 /obj/effect/mob_spawn/human/corpse/pirate/ranged,
@@ -6079,11 +6067,11 @@
 /obj/effect/turf_decal/corner/opaque/white/diagonal{
 	dir = 8
 	},
-/obj/item/reagent_containers/food/snacks/muffin,
+/obj/item/food/muffin,
 /turf/open/floor/plasteel,
 /area/ruin/beach/oceantown/shop)
 "XW" = (
-/mob/living/simple_animal/hostile/bear/cave,
+/mob/living/basic/bear/cave,
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "XY" = (
@@ -6271,10 +6259,6 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/wood,
 /area/ruin/beach/oceantown/hotel)
-"ZJ" = (
-/obj/structure/rack,
-/turf/open/floor/plasteel/patterned/grid,
-/area/ruin/beach/oceantown/shop)
 "ZK" = (
 /obj/structure/table/wood,
 /obj/machinery/jukebox/boombox,
@@ -6722,7 +6706,7 @@ Mi
 sD
 Tu
 UX
-Pf
+Nw
 Nw
 rQ
 WW
@@ -6799,11 +6783,11 @@ Mi
 wF
 Mi
 aM
-Pf
+Nw
 JY
 aP
 jX
-ZJ
+VP
 KX
 yc
 AY
@@ -6953,7 +6937,7 @@ Mi
 jv
 Mi
 UX
-ZJ
+VP
 hc
 VP
 mY

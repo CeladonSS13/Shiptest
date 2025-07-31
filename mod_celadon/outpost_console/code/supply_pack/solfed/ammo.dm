@@ -1,44 +1,67 @@
 /datum/supply_pack/faction/solfed/ammo
-	group = "Ammunition"
+	category = "Ammunition"
 
 /* MARK: = Ammo List =
 [*] - отсутствуют.
 [-] - отключены.
 
-> 9mm
+> 9x18mm
 > 5.56 Caseless
 > 5.56x42mm
+> 7.62x40mm
 > Ferroslugs
 > Ferro Pellets
 > Ferro Lances
 > 8x58mm Caseless
 
-MARK: 9mm
+MARK: 9x18mm
 */
 
 /datum/supply_pack/faction/solfed/ammo/c9mm_ammo_box
-	name = "9mm Ammo Box Crate"
-	desc = "9mm ammo box for guns like the Vector. Contains 45 shells"
+	name = "9x18mm Ammo Box Crate"
+	desc = "9x18mm ammo box for guns like the Vector. Contains 45 shells"
 	contains = list(/obj/item/storage/box/ammo/c9mm)
 	cost = 200
 
 /datum/supply_pack/faction/solfed/ammo/c9mmap_ammo_box
-	name = "9mm AP Ammo Box Crate"
-	desc = "Contains a 45-round 9mm box loaded with armor piercing ammo."
+	name = "9x18mm AP Ammo Box Crate"
+	desc = "Contains a 45-round 9x18mm box loaded with armor piercing ammo."
 	contains = list(/obj/item/storage/box/ammo/c9mm_ap)
 	cost = 250
 
 /datum/supply_pack/faction/solfed/ammo/c9mmhp_ammo_box
-	name = "9mm HP Ammo Box Crate"
-	desc = "Contains a 45-round 9mm box loaded with hollow point ammo, great against unarmored targets."
+	name = "9x18mm HP Ammo Box Crate"
+	desc = "Contains a 45-round 9x18mm box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c9mm_hp)
 	cost = 250
 
 /datum/supply_pack/faction/solfed/ammo/c9mmrubber_ammo_box
-	name = "9mm Rubber Ammo Box Crate"
-	desc = "Contains a 45-round 9mm box loaded with less-than-lethal rubber rounds."
+	name = "9x18mm Rubber Ammo Box Crate"
+	desc = "Contains a 45-round 9x18mm box loaded with less-than-lethal rubber rounds."
 	contains = list(/obj/item/storage/box/ammo/c9mm_rubber)
 	cost = 200
+
+/*
+MARK: 5.56x45mm
+*/
+
+/datum/supply_pack/faction/solfed/ammo/box556_box
+	name = "5.56x45mm Ammo Box Crate"
+	desc = "Contains one 60-round 5.56x45mm ammo."
+	contains = list(/obj/item/storage/box/ammo/a556_box)
+	cost = 500
+
+/datum/supply_pack/faction/solfed/ammo/box556/a856_box
+	name = "5.56x45mm Enhanced Performance Ammo Box Crate"
+	desc = "Contains one 60-round 5.56x45mm Enhanced Performance ammo."
+	contains = list(/obj/item/storage/box/ammo/a556_box/a856)
+	cost = 650
+
+/datum/supply_pack/faction/solfed/ammo/box556/m903_box
+	name = "5.56x45mm Armour Piercing Ammo Box Crate"
+	desc = "Contains one 60-round 5.56x45mm Armour Piercing ammo."
+	contains = list(/obj/item/storage/box/ammo/a556_box/m903)
+	cost = 1300
 
 /*
 MARK: 5.56 Caseless
@@ -89,6 +112,16 @@ MARK: 5.56x42mm
 	desc = "Contains one 60-round 5.56x42mm Hollow Point box."
 	contains = list(/obj/item/storage/box/ammo/a556_42/hp)
 	cost = 375
+
+/*
+MARK: 7.62x40mm
+*/
+
+/datum/supply_pack/faction/solfed/ammo/a762_40_rubber
+	name = "box of 7.62x40mm rubber ammo"
+	desc = "A box of standard 7.62x40mm rubber ammo."
+	contains = list(/obj/item/storage/box/ammo/a762_40/rubber)
+	cost = 7777
 
 /*
 MARK: Ferroslugs

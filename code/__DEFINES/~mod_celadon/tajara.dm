@@ -27,9 +27,9 @@
 
 
 // Дополнение к code/__DEFINES/species_clothing_defines.dm
-#define TAJARA_MASK_PATH 'mod_celadon/_storge_icons/icons/clothing/onmob_mask_tajara.dmi'
-#define TAJARA_HEAD_PATH 'mod_celadon/_storge_icons/icons/clothing/onmob_head_tajara.dmi'
-#define TAJARA_SUIT_PATH 'mod_celadon/_storge_icons/icons/clothing/onmob_suit_tajara.dmi'
+#define TAJARA_MASK_PATH 'mod_celadon/_storge_icons/icons/items/clothing/mask/overlay/onmob_mask_tajara.dmi'
+#define TAJARA_HEAD_PATH 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/onmob_head_tajara.dmi'
+#define TAJARA_SUIT_PATH 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/onmob_suit_tajara.dmi'
 
 /// The natural temperature for a body
 #define TAJARAN_BODYTEMP_NORMAL 313.15

@@ -2,8 +2,8 @@
 // 		Suits
 //********************
 /obj/item/clothing/suit/armor/vest/tajaran_replica				// Исключение, засунут в лодаут в таком виде, понравился игрокам (пофикшена броня)
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/overlay/tajara_items_overlay.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	name = "white tactical armor vest (replika)"
 	desc = "Эта одежда была сделана в тёмных подвалах. Она похожа с виду на зимний тактический бронижилет, но это лишь реплика её."
 	icon_state = "snowsuit"
@@ -17,8 +17,8 @@
 	resistance_flags = NONE
 
 /obj/item/clothing/suit/space/hardsuit/tajaran
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/overlay/tajara_items_overlay.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	allowed = list(/obj/item/gun,
 					/obj/item/ammo_box,
 					/obj/item/ammo_casing,
@@ -28,8 +28,8 @@
 					/obj/item/melee/knife/combat)
 
 /obj/item/clothing/head/helmet/space/hardsuit/tajaran
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/helmet.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/overlay/helmet.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/helmet.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/helmetdpra.dmi'
 
 /obj/item/clothing/suit/space/hardsuit/tajaran/void_nka
 	name = "new kingdom mercantile voidsuit"
@@ -41,8 +41,8 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/tajaran/void_nka
 
 /obj/item/clothing/head/helmet/space/hardsuit/tajaran/void_nka
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/helmet.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/overlay/helmet.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/helmet.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/helmetdpra.dmi'
 	name = "new kingdom mercantile voidsuit helmet"
 	desc = "An amalgamation of old civilian voidsuits and diving suits. This bulky space suit is used by the crew of the New Kingdom's mercantile navy."
 	icon_state = "nkavoid"
@@ -61,8 +61,8 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/tajaran/void_dpra
 
 /obj/item/clothing/head/helmet/space/hardsuit/tajaran/void_dpra
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/helmet.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/overlay/helmet.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/helmet.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/helmetdpra.dmi'
 	name = "people's volunteer spacer militia voidsuit helmet"
 	desc = "A refitted, sturdy voidsuit created from Hegemony models acquired during the liberation of Gakal'zaal. These armored models are issued to the People's Volunteer Spacer Militia."
 	icon_state = "DPRAvoidsuit"
@@ -82,8 +82,8 @@
 
 /obj/item/clothing/suit/toggle/leather_jacket/midriff
 	name = "cropped leather jacket"
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/suits/cropped_leather_jacket.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/suits/cropped_leather_jacket.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/cropped_leather_jacket.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/cropped_leather_jacket.dmi'
 	desc = "A thick leather jacket that doesn't actually cover the waist. Rebel against what's expected of your jacket!"
 	icon_state = "mid"
 	item_state = "mid"
@@ -92,8 +92,8 @@
 /obj/item/clothing/suit/yakuza
 	name = "tojo clan jacket"
 	desc = "The jacket of a mad dog."
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/suits.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/suit.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/suit.dmi'
 	icon_state = "MajimaJacket"
 	item_state = "MajimaJacket"
 	body_parts_covered = ARMS
@@ -101,8 +101,8 @@
 /obj/item/clothing/suit/dutch
 	name = "dutch's jacket"
 	desc = "For those long nights on the beach in Tahiti."
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/suits.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/suit.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/suit.dmi'
 	icon_state = "DutchJacket"
 	item_state = "DutchJacket"
 	body_parts_covered = ARMS

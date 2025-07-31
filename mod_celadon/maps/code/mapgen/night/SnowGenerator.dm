@@ -96,7 +96,7 @@
 		/obj/structure/flora/grass/both = 12,
 		/obj/structure/flora/ash/chilly = 4,
 		/obj/structure/flora/ash/garden/frigid = 2,
-		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/obj/landmine.dmi'} = 1
+		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/items/misc/landmine.dmi'} = 1
 	)
 	flora_spawn_chance = 10
 	mob_spawn_chance = 1
@@ -107,7 +107,7 @@
 		// [/CELADON-ADD]
 		/mob/living/simple_animal/hostile/asteroid/wolf/random = 30,
 		/obj/structure/spawner/burrow/ice_planet = 4,
-		/mob/living/simple_animal/hostile/asteroid/polarbear/random = 30,
+		/mob/living/basic/bear/polar = 30,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow = 50,
 		/mob/living/simple_animal/hostile/asteroid/goldgrub = 10,
 		/mob/living/simple_animal/hostile/asteroid/ice_demon/random = 10,
@@ -162,7 +162,7 @@
 		/obj/structure/flora/tree/pine = 20,
 		/obj/structure/flora/tree/dead = 6,
 		/obj/structure/flora/grass/both = 8,
-		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/obj/landmine.dmi'} = 1,
+		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/items/misc/landmine.dmi'} = 1,
 	)
 
 /datum/biome/snow/forest/dense/night
@@ -174,7 +174,7 @@
 		/obj/structure/flora/tree/pine = 20,
 		/obj/structure/flora/grass/both = 6,
 		/obj/structure/flora/tree/dead = 3,
-		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/obj/landmine.dmi'} = 1,
+		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/items/misc/landmine.dmi'} = 1,
 	)
 
 /datum/biome/arctic/night
@@ -201,7 +201,7 @@
 		// [/CELADON-ADD]
 		/mob/living/simple_animal/hostile/asteroid/wolf/random = 30,
 		/obj/structure/spawner/burrow/ice_planet = 2,
-		/mob/living/simple_animal/hostile/asteroid/polarbear/random = 30,
+		/mob/living/basic/bear/polar = 30,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow = 50,
 		/mob/living/simple_animal/hostile/asteroid/goldgrub = 10,
 		/mob/living/simple_animal/hostile/asteroid/ice_demon/random = 5,
@@ -227,7 +227,7 @@
 	mob_spawn_chance = 2
 	mob_spawn_list = list(
 		/mob/living/simple_animal/hostile/asteroid/wolf/random = 30,
-		/mob/living/simple_animal/hostile/asteroid/polarbear/random = 30,
+		/mob/living/basic/bear/polar = 30,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow = 50,
 		/mob/living/simple_animal/hostile/asteroid/goldgrub = 10,
 		/mob/living/simple_animal/hostile/asteroid/ice_demon/random = 5,
@@ -291,7 +291,7 @@
 		// [/CELADON-ADD]
 		/mob/living/simple_animal/hostile/asteroid/wolf/random = 30,
 		/obj/structure/spawner/burrow/ice_planet = 4,
-		/mob/living/simple_animal/hostile/asteroid/polarbear/random = 30,
+		/mob/living/basic/bear/polar = 30,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow = 50,
 		/mob/living/simple_animal/hostile/asteroid/goldgrub = 10,
 		/mob/living/simple_animal/hostile/asteroid/ice_demon/random = 5,
@@ -344,7 +344,7 @@
 	mob_spawn_chance = 2
 	mob_spawn_list = list(
 		/mob/living/simple_animal/hostile/asteroid/wolf/random = 30,
-		/mob/living/simple_animal/hostile/asteroid/polarbear/random = 30,
+		/mob/living/basic/bear/polar = 30,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow = 50,
 		/mob/living/simple_animal/hostile/asteroid/goldgrub = 10,
 		/mob/living/simple_animal/hostile/asteroid/ice_demon/random = 10,

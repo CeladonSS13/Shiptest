@@ -350,7 +350,6 @@
 			qdel(language_holder)
 			var/species_holder = initial(mrace.species_language_holder)
 			language_holder = new species_holder(src)
-		update_atom_languages()
 		// [CELADON-ADD] - CELADON_EMOTES
 		client?.init_verbs()
 		// [/CELADON-ADD]

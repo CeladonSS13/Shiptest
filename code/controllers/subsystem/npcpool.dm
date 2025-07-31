@@ -39,10 +39,11 @@ SUBSYSTEM_DEF(npcpool)
 		if(!SA.ckey && !SA.notransform)
 			if(SA.stat != DEAD)
 				SA.handle_automated_movement()
-			if(SA.stat != DEAD)
 				SA.handle_automated_action()
-			if(SA.stat != DEAD)
 				SA.handle_automated_speech()
+				// [CELADON-EDIT] — IDLE_NPC_SLEEP
+				SA.check_should_sleep()
+				// [/CELADON-EDIT]
 		if (MC_TICK_CHECK)
 			--failed_fires
 			return

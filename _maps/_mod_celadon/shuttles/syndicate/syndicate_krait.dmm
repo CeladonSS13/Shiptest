@@ -616,8 +616,8 @@
 /area/ship/cargo)
 "fl" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/suit/space/syndicate/black/red,
-/obj/item/clothing/head/helmet/space/syndicate/black/red,
+/obj/item/clothing/suit/space/syndicate/white_red,
+/obj/item/clothing/head/helmet/space/syndicate/white_red,
 /obj/item/tank/internals/oxygen/red,
 /obj/machinery/atmospherics/pipe/layer_manifold{
 	dir = 4
@@ -1388,9 +1388,9 @@
 /obj/item/reagent_containers/condiment/soymilk,
 /obj/item/reagent_containers/condiment/soysauce,
 /obj/item/reagent_containers/condiment/enzyme,
-/obj/item/reagent_containers/food/snacks/fishmeat,
-/obj/item/reagent_containers/food/snacks/fishmeat,
-/obj/item/reagent_containers/food/snacks/fishmeat,
+/obj/item/food/fishmeat,
+/obj/item/food/fishmeat,
+/obj/item/food/fishmeat,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/canteen)
 "lo" = (
@@ -1653,11 +1653,11 @@
 	pixel_y = 4
 	},
 /obj/item/reagent_containers/condiment/saltshaker,
-/obj/item/reagent_containers/food/snacks/onigiri{
+/obj/item/food/onigiri{
 	pixel_y = 16;
 	pixel_x = -7
 	},
-/obj/item/reagent_containers/food/snacks/onigiri{
+/obj/item/food/onigiri{
 	pixel_y = 4;
 	pixel_x = -10
 	},
@@ -3628,6 +3628,11 @@
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
+"Ff" = (
+/obj/machinery/cryopod/syndicate,
+/obj/machinery/computer/cryopod/directional/west,
+/turf/open/floor/circuit/red,
+/area/ship/crew/dorm)
 "Fg" = (
 /obj/effect/turf_decal/corner/transparent/syndiered/border,
 /obj/effect/turf_decal/corner/transparent/syndiered/bordercorner{
@@ -4038,7 +4043,7 @@
 	pixel_y = 13;
 	pixel_x = 8
 	},
-/obj/item/food/cake/brain,
+/obj/item/food/cake/trumpet,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/science/storage)
 "Jb" = (
@@ -4231,8 +4236,8 @@
 /area/ship/security/dock)
 "Kg" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/suit/space/syndicate/black/red,
-/obj/item/clothing/head/helmet/space/syndicate/black/red,
+/obj/item/clothing/suit/space/syndicate/white_red,
+/obj/item/clothing/head/helmet/space/syndicate/white_red,
 /obj/item/tank/internals/oxygen/red,
 /obj/item/clothing/mask/gas/syndicate,
 /turf/open/floor/plasteel/dark,
@@ -5508,8 +5513,8 @@
 /obj/item/lighter/clockwork{
 	pixel_y = 15
 	},
-/obj/item/reagent_containers/food/snacks/nigiri_sushi,
-/obj/item/reagent_containers/food/snacks/nigiri_sushi{
+/obj/item/food/nigiri_sushi,
+/obj/item/food/nigiri_sushi{
 	pixel_x = 6
 	},
 /obj/item/reagent_containers/condiment/saltshaker{
@@ -5752,8 +5757,8 @@
 /area/ship/bridge)
 "YM" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/suit/space/syndicate/black/red,
-/obj/item/clothing/head/helmet/space/syndicate/black/red,
+/obj/item/clothing/suit/space/syndicate/white_red,
+/obj/item/clothing/head/helmet/space/syndicate/white_red,
 /obj/item/tank/internals/oxygen/red,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/effect/turf_decal/trimline/opaque/bar/filled/corner{
@@ -6189,7 +6194,7 @@ zx
 dq
 Vo
 vJ
-sK
+Ff
 dz
 Xd
 fO

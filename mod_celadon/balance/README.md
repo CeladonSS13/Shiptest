@@ -16,6 +16,8 @@ ID мода:
 	CELADON_BALANCE
 	CELADON_BALANCE_CD
 	CELADON_BALANCE_MOBS
+	CELADON_BALANCE_OVERMAP_EVENTS
+	BALLISTIC_SHIELD
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов. Добавлены
@@ -104,6 +106,15 @@ EDIT: `code/__DEFINES/clothing.dm`
 EDIT: `code/__DEFINES/storage.dm`
 EDIT: `code/game/objects/items/storage/backpack.dm`
 
+ADD: `code/modules/overmap/objects/event_datum.dm` : Добавляем дебрисам рандом на безопасную скорость полетов
+
+EDIT: `code/modules/vehicles/scooter.dm` : Ускорение от роликов равно 35% а не 100% как было
+
+EDIT: `code/game/objects/items/shields.dm` : Реворк-Переработка щитов
+EDIT: `code/game/objects/items.dm` : Звуки для щитов
+
+REMOVE: `code/modules/mining/equipment/kinetic_crusher.dm` : Убрано отталкивает от кинетик-крашера
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -154,6 +165,7 @@ EDIT: `code/game/objects/items/storage/backpack.dm`
 - Изменения попаданий по лежачим - MrCat15352
 - Убрано замедление от синдидюффелей - Quinal
 - Изменение взрыва клешни - Molniz
+- Реворк щитов - KOCMOHABT
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.

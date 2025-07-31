@@ -15,10 +15,11 @@
 #define BLOCK_Z_IN_DOWN (1<<11) //! Should this object block z falling from above?
 #define BLOCK_Z_IN_UP (1<<12) //! Should this object block z uprise from below?
 #define INFINITE_RESKIN (1<<13) // We can reskin this item infinitely
+#define ELEVATED_SURFACE (1<<14) // Should this object prevent open flames left on it from igniting the ground?
 // [CELADON-ADD] - CELADON_STRUCTURES - Барикады
-#define IGNORE_DENSITY (1<<14) 				//! Can we ignore density when building on this object? (for example, directional windows and grilles)
-#define BLOCKS_CONSTRUCTION (1<<15) 				//! Does this object prevent things from being built on it?
-#define BLOCKS_CONSTRUCTION_DIR (1<<16)					//! Does this object prevent same-direction things from being built on it?
+#define IGNORE_DENSITY (1<<15) 				//! Can we ignore density when building on this object? (for example, directional windows and grilles)
+#define BLOCKS_CONSTRUCTION (1<<16) 				//! Does this object prevent things from being built on it?
+#define BLOCKS_CONSTRUCTION_DIR (1<<17)					//! Does this object prevent same-direction things from being built on it?
 // [/CELADON-ADD]
 
 

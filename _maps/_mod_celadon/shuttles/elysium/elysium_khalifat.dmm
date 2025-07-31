@@ -5,8 +5,8 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/closet/emcloset/wall/directional/east,
-/obj/item/clothing/suit/space/syndicate/black/engie,
-/obj/item/clothing/head/helmet/space/syndicate/black/engie,
+/obj/item/clothing/suit/space/syndicate/engie,
+/obj/item/clothing/head/helmet/space/syndicate/engie,
 /obj/effect/decal/cleanable/glass,
 /obj/item/folder/documents/syndicate/red,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -177,7 +177,7 @@
 	pixel_y = 7;
 	pixel_x = 9
 	},
-/obj/item/reagent_containers/food/snacks/donut/berry{
+/obj/item/food/donut/berry{
 	pixel_x = -4;
 	color = "#730622";
 	name = "suspicious red donut"
@@ -236,7 +236,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/glass,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "bE" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -268,7 +268,7 @@
 /area/ship/bridge)
 "bL" = (
 /obj/structure/altar_of_gods,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
+/obj/item/food/grown/ambrosia/gaia,
 /turf/open/floor/wood/ebony,
 /area/ship/science/ai_chamber)
 "bM" = (
@@ -425,7 +425,7 @@
 /obj/effect/turf_decal/corner/opaque/lime{
 	dir = 4
 	},
-/obj/item/reagent_containers/food/snacks/grown/ambrosia{
+/obj/item/food/grown/ambrosia{
 	pixel_y = -3;
 	pixel_x = -11
 	},
@@ -531,7 +531,6 @@
 	},
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering";
-	normalspeed = 0;
 	req_access_txt = null;
 	dir = 4
 	},
@@ -845,7 +844,7 @@
 /obj/structure/barricade/wooden/crude,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "et" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
@@ -1023,7 +1022,6 @@
 	},
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering";
-	normalspeed = 0;
 	req_access_txt = null;
 	dir = 4
 	},
@@ -1237,7 +1235,6 @@
 "gL" = (
 /obj/structure/sauna_oven_steam,
 /obj/item/reagent_containers/food/drinks/waterbottle/large,
-/obj/item/stack/sheet/mineral/coal/ten,
 /turf/open/floor/plating/wasteplanet/rust,
 /area/ship/cargo)
 "gQ" = (
@@ -1609,7 +1606,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering";
-	normalspeed = 0;
 	req_access_txt = null
 	},
 /turf/open/floor/plasteel/telecomms_floor,
@@ -2617,25 +2613,25 @@
 	pixel_x = -3
 	},
 /obj/structure/closet/crate/large,
-/obj/item/reagent_containers/food/snacks/burger{
+/obj/item/food/burger{
 	pixel_x = 4
 	},
-/obj/item/reagent_containers/food/snacks/burger{
+/obj/item/food/burger{
 	pixel_x = 4
 	},
-/obj/item/reagent_containers/food/snacks/burger{
+/obj/item/food/burger{
 	pixel_x = 4
 	},
-/obj/item/reagent_containers/food/snacks/burger{
+/obj/item/food/burger{
 	pixel_x = 4
 	},
-/obj/item/reagent_containers/food/snacks/burger{
+/obj/item/food/burger{
 	pixel_x = 4
 	},
-/obj/item/reagent_containers/food/snacks/burger{
+/obj/item/food/burger{
 	pixel_x = 4
 	},
-/obj/item/reagent_containers/food/snacks/burger{
+/obj/item/food/burger{
 	pixel_x = 4
 	},
 /turf/open/floor/plasteel/mono/dark,
@@ -3104,7 +3100,7 @@
 /obj/item/stack/ore/salvage/scrapmetal/ten,
 /obj/structure/flora/bigplant,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "rb" = (
 /obj/effect/turf_decal/industrial/warning,
@@ -3135,7 +3131,6 @@
 	},
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering";
-	normalspeed = 0;
 	req_access_txt = null
 	},
 /turf/open/floor/plasteel/dark,
@@ -3336,7 +3331,7 @@
 	},
 /obj/structure/flora/grass/jungle,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "sO" = (
 /obj/structure/cable{
@@ -3743,7 +3738,7 @@
 	id = "twinkle_sm"
 	},
 /obj/machinery/atmospherics/pipe/simple/green/visible,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "vL" = (
 /obj/structure/chair/comfy/shuttle{
@@ -3851,7 +3846,6 @@
 	},
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering";
-	normalspeed = 0;
 	req_access_txt = null;
 	dir = 4
 	},
@@ -4180,7 +4174,6 @@
 "ya" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering";
-	normalspeed = 0;
 	req_access_txt = null;
 	dir = 4
 	},
@@ -4610,7 +4603,7 @@
 	},
 /obj/item/clothing/under/syndicate/gec,
 /obj/item/clothing/shoes/magboots/syndie,
-/obj/item/clothing/head/helmet/space/syndicate/black/engie,
+/obj/item/clothing/head/helmet/space/syndicate/engie,
 /obj/structure/closet/secure_closet/engineering_personal{
 	req_access = list(150,10);
 	populate = 0
@@ -5564,7 +5557,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/radiation,
 /obj/effect/decal/cleanable/glass,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "EX" = (
 /obj/effect/turf_decal/steeldecal/steel_decals_central6{
@@ -6235,7 +6228,7 @@
 	},
 /obj/effect/decal/cleanable/glass,
 /obj/item/stack/ore/salvage/scrapmetal/ten,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "Ii" = (
 /obj/structure/table/reinforced,
@@ -6259,7 +6252,7 @@
 	dir = 9
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia{
+/obj/item/food/grown/ambrosia{
 	pixel_y = 11
 	},
 /turf/open/floor/plating,
@@ -6445,7 +6438,7 @@
 /obj/item/stack/ore/salvage/scrapsilver,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "Jr" = (
 /obj/effect/decal/cleanable/plasma,
@@ -6618,14 +6611,14 @@
 /obj/effect/turf_decal/corner/opaque/orange/full,
 /obj/effect/turf_decal/steeldecal/steel_decals_central1,
 /obj/structure/table/glass,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/white,
+/obj/item/food/grown/cannabis/white,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "Ku" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/item/reagent_containers/food/snacks/meat/slab/xeno,
+/obj/item/food/meat/slab/xeno,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/dark,
@@ -6894,7 +6887,7 @@
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 5
 	},
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "Mr" = (
 /obj/machinery/porta_turret/ship/elysium{
@@ -7007,7 +7000,7 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/tree/jungle/small,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "Nh" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -7732,11 +7725,7 @@
 	},
 /obj/structure/closet/emcloset,
 /obj/effect/spawner/random/maintenance/four,
-/obj/item/reagent_containers/food/snacks/burger/red{
-	name = "suspicious red burger";
-	desc = "A suspicious looking burger.";
-	color = "#730622"
-	},
+/obj/item/food/burger,
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 1
 	},
@@ -8012,7 +8001,7 @@
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/closet/emcloset/wall/directional/east,
-/obj/item/clothing/suit/space/syndicate/black/engie,
+/obj/item/clothing/head/helmet/space/syndicate/engie,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/atmospherics)
 "SD" = (
@@ -8126,7 +8115,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "Tl" = (
 /obj/effect/turf_decal/spline/fancy/opaque/black{
@@ -8220,7 +8209,7 @@
 /obj/effect/decal/cleanable/glass,
 /obj/structure/barricade/wooden/crude,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/grass/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "TR" = (
 /obj/item/trash/syndi_cakes,
@@ -9192,7 +9181,7 @@
 	},
 /obj/machinery/light/directional/south,
 /obj/item/clothing/shoes/magboots/syndie,
-/obj/item/clothing/head/helmet/space/syndicate/black/engie,
+/obj/item/clothing/head/helmet/space/syndicate/engie,
 /obj/item/pipe_dispenser,
 /obj/item/storage/belt/utility/syndicate,
 /obj/item/clothing/under/syndicate/gec,

@@ -2,8 +2,8 @@
 // 		Cloaks
 //********************
 /obj/item/clothing/suit/hooded/cloak/tajaran
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/overlay/tajara_items_overlay.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	lefthand_file = 'icons/mob/inhands/clothing/suits_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/clothing/suits_righthand.dmi'
 	slot_flags = ITEM_SLOT_OCLOTHING | ITEM_SLOT_NECK
@@ -14,8 +14,8 @@
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/tajaran
 
 /obj/item/clothing/head/hooded/cloakhood/tajaran
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/overlay/tajara_items_overlay.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	flags_inv = HIDEEARS | HIDEEYES |HIDEHAIR | HIDEFACIALHAIR
 	name = "gruff cloak"
 	desc = "A cloak designated for the lowest classes."
@@ -88,8 +88,8 @@
 	item_state = "maroon_cloak_hat"
 
 /obj/item/clothing/replica_trenchcoat
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/suits/cloaks.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/suits/cloaks.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/cloaks.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/overlay/cloaks.dmi'
 	slot_flags = ITEM_SLOT_OCLOTHING | ITEM_SLOT_NECK
 	name = "replica armored trenchcloak"
 	desc = "This replica one appears to be designed to be draped over one's shoulders rather than worn normally.."
@@ -102,8 +102,8 @@
 /obj/item/clothing/neck/cloak/nanotrasen/cape
 	name = "\improper Nanotrasen Officer's cape"
 	desc = "Nanotrasen Cloak. This variant displays the wearer's affiliation with the NT crew."
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/cloak_nt.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/cloak_nt.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/cloak_nt.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/overlay/cloak_nt.dmi'
 	icon_state = "cape"
 	item_state = "cape"
 
@@ -140,8 +140,8 @@
 /obj/item/clothing/neck/cloak/cape
 	name = "dominian cape"
 	desc = "This is a cape in the style of Dominian nobility. It's the latest fashion across Dominian space."
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/cape.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/cape.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/cape.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/overlay/cape.dmi'
 	icon_state = "dominian_cape"
 	item_state = "dominian_cape"
 

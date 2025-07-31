@@ -3,7 +3,7 @@
 */
 
 /datum/sprite_accessory/ipc_hair
-	icon = 'mod_celadon/_storge_icons/icons/ipc/ipc_hair.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/ipc/ipc_hair.dmi'
 	color_src = HAIR
 
 /datum/sprite_accessory/ipc_hair/none

@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/solfed/civilian
-	group = "Civilian & Decoration"
+	category = "Civilian & Decoration"
 
 /datum/supply_pack/faction/solfed/civilian/fountainpens
 	name = "Calligraphy Crate"

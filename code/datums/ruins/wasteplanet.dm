@@ -44,6 +44,7 @@
 	desc = "The IRMG has lost contact with one of it's contractees, and the associated Vanguard. All IRMG persons in the area are either already on-assignment, or unavailable. The IRMG is willing to contract out the retrieval of Vanguard Kavur's corpse to any entity in system."
 	faction = /datum/faction/inteq
 	value = 2500
+	mission_limit = 1
 	setpiece_item = /mob/living/carbon/human
 
 /datum/map_template/ruin/wasteplanet/yard
@@ -55,16 +56,17 @@
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
 
 /datum/map_template/ruin/wasteplanet/icwbase
-	name = "ICW Era Comms and Medical base."
+	name = "ICW Era Comms and Medical base"
 	description = "A former Syndicate Coalition base during the ICW, left to waste. It seems it has some new residents.."
 	id = "wasteplanet_icwbase"
 	suffix = "wasteplanet_icwbase.dmm"
 
 	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
-	ruin_mission_types = list(
+/*	ruin_mission_types = list(
 		/datum/mission/ruin/multiple/notes,
 		/datum/mission/ruin/signaled/kill/kitt
 	)
+*/
 
 /* Aurora wrote these */
 

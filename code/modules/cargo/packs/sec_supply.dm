@@ -2,7 +2,7 @@
 	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
 
 /datum/supply_pack/sec_supply
-	group = "Security Supplies"
+	category = "Security Supplies"
 	crate_type = /obj/structure/closet/crate/secure/gear
 
 /*
@@ -14,6 +14,13 @@
 	cost = 600
 	contains = list(/obj/item/clothing/accessory/holster)
 	crate_name = "holster crate"
+
+/datum/supply_pack/sec_supply/seclite
+	name = "Seclite Crate"
+	desc = "Contains a single high power flashlight, complete with the hardware for attachment to standard helmet mounting brackets"
+	contains = list(/obj/item/flashlight/seclite)
+	cost = 100
+	crate_name = "seclite crate"
 
 /datum/supply_pack/sec_supply/securitybarriers
 	name = "Security Barrier Grenade"
@@ -115,9 +122,9 @@
 */
 
 /datum/supply_pack/sec_supply/riotshields
-	name = "Riot Shield Crate"
-	desc = "Contains a riot shield, effective at holding back hostile fauna, xenofauna, or large crowds."
-	cost = 600
+	name = "Ballistic Shield Crate"
+	desc = "Contains a ballistic shield, effective at holding back hostile fauna, xenofauna, or large crowds."
+	cost = 1000
 	contains = list(/obj/item/shield/riot)
 	crate_name = "riot shield crate"
 

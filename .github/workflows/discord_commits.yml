@@ -1,0 +1,34 @@
+name: Discord Notify Commits
+
+on:
+  push:
+    branches:
+      - beta-dev
+      - alpha-stable
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get commit count
+        id: count
+        run: |
+          echo "COMMITS_COUNT=$(jq '.commits | length' $GITHUB_EVENT_PATH)" >> $GITHUB_ENV
+
+      - name: Format commit list
+        id: commits
+        run: |
+            echo "COMMITS<<EOF" >> $GITHUB_ENV
+            jq -r '.commits[:5][] | "[`" + (.id[0:7]) + "`](" + .url + ") " + .message + " - " + .author.name' $GITHUB_EVENT_PATH >> $GITHUB_ENV
+            echo "EOF" >> $GITHUB_ENV
+
+      - name: Send Discord Commit Notification
+        uses: stegzilla/discord-notify@v4
+        with:
+          webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
+          title: "[${{ github.ref_name }}] ${{ env.COMMITS_COUNT }} new commits"
+          title_url: ${{ github.event.head_commit.url }}
+          message: |
+            ${{ env.COMMITS }}
+          username: ${{ github.event.pusher.name }}
+          avatar_url: ${{ github.event.sender.avatar_url }}

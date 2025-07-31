@@ -1,7 +1,7 @@
 
 /obj/item/clothing/suit/armor/vest/capcarapace/syndievest
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/suits/suits.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/suits/suits.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/undersuits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/undersuits.dmi'
 	name = "captain's parade coat"
 	desc = "For when an armoured vest isn't fashionable enough."
 	icon_state = "syndievest"
@@ -10,8 +10,8 @@
 	supports_variations = DIGITIGRADE_VARIATION
 
 /obj/item/clothing/suit/toggle/armor/centcom_formal
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/suits/suits.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/suits/suits.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/undersuits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/undersuits.dmi'
 	name = "\improper CentCom formal coat"
 	desc = "A stylish coat given to CentCom Commanders. Perfect for sending ERTs to suicide missions with style!"
 	icon_state = "centcom_formal"
@@ -23,8 +23,8 @@
 	togglename = "centcom"
 
 /obj/item/clothing/suit/toggle/armor/hos_formal
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/suits/suits.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/suits/suits.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/undersuits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/undersuits.dmi'
 	name = "\improper Head of Security's parade jacket"
 	desc = "For when an armoured vest isn't fashionable enough."
 	icon_state = "hosformal"
@@ -35,8 +35,8 @@
 	togglename = "hosformal"
 
 /obj/item/clothing/suit/toggle/armor/captains_formal
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/suits/suits.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/mob/suits/suits.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/undersuits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/undersuits.dmi'
 	name = "\improper Head of Security's parade jacket"
 	desc = "captain's parade coat"
 	desc = "For when an armoured vest isn't fashionable enough."

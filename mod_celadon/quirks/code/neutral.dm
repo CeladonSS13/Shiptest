@@ -1,5 +1,5 @@
 /datum/quirk/dwarfism
-	name = "dwarfism"
+	name = "Dwarfism"
 	desc = "Makes you wiry and shallow."
 	value = 0
 	mob_traits = list(TRAIT_DWARF, TRAIT_SCOOPABLE)

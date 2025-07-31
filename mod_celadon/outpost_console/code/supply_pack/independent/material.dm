@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/independent/material
-	group = "Materials & Sheets"
+	category = "Materials & Sheets"
 
 /*
 		Basic construction materials

@@ -1,5 +1,5 @@
 /obj/effect/turf_decal/solgov
-	icon = 'mod_celadon/_storge_icons/icons/solfed/structures/sol_fed_Logo.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/structures/logo/sol_fed_logo.dmi'
 	icon_state = "11"
 
 /obj/effect/turf_decal/solgov/top

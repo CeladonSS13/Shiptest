@@ -46,7 +46,7 @@
 
 /datum/supply_pack/gun/glock
 	name = "Оружейный ящик Glock"
-	desc = "Содержит пистолет Glock калибра 9mm и одну дополнительную обойму к нему."
+	desc = "Содержит пистолет Glock калибра 9x18mm и одну дополнительную обойму к нему."
 	cost = 1300
 	contains = list(/obj/item/storage/guncase/glock)
 	crate_name = "auto rifle crate"

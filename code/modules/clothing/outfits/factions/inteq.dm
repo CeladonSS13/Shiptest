@@ -1,5 +1,6 @@
 /datum/outfit/job/inteq
 	name = "IRMG - Base Outfit"
+	faction = FACTION_PLAYER_INTEQ
 	faction_icon = "bg_inteq"
 
 	uniform = /obj/item/clothing/under/syndicate/inteq
@@ -12,17 +13,11 @@
 	//[/CELADON-REMOVE]
 	courierbag = /obj/item/storage/backpack/messenger/inteq
 
-/datum/outfit/job/inteq/post_equip(mob/living/carbon/human/H, visualsOnly)
-	. = ..()
-	if(visualsOnly)
-		return
-	H.faction |= list(FACTION_PLAYER_INTEQ)
-
 ///assistants
 
 /datum/outfit/job/inteq/assistant
-	name = "IRMG - Recruit"
-	id_assignment = "Recruit"
+	name = "IRMG - Auxiliary"
+	id_assignment = "Auxiliary"
 	jobtype = /datum/job/assistant
 	job_icon = "assistant"
 
@@ -163,6 +158,7 @@
 	suit = null
 	belt = null
 	mask = null
+	glasses = null
 	gloves = null
 
 /datum/outfit/job/inteq/security/beluga
@@ -196,6 +192,13 @@
 	belt = /obj/item/storage/belt/utility/full/engi
 	r_pocket = /obj/item/t_scanner
 
+/datum/outfit/job/inteq/engineer/empty
+	name = "IRMG - Artificer (Naked)"
+
+	head = null
+	belt = null
+	r_pocket = null
+
 //wardens
 
 /datum/outfit/job/inteq/warden
@@ -217,18 +220,16 @@
 	suit_store = null
 
 	courierbag = /obj/item/storage/backpack/messenger/inteq
-	backpack_contents = list(/obj/item/melee/classic_baton=1)
 
-/datum/outfit/job/inteq/warden/pilot
-	name = "IRMG - Shuttle Pilot"
-	job_icon = "securityofficer"
-	id_assignment = "Shuttle Pilot"
+/datum/outfit/job/inteq/warden/empty
+	name = "IRMG - Master At Arms (Naked)"
 
-	head = /obj/item/clothing/head/soft/inteq
-	suit = /obj/item/clothing/suit/armor/vest/alt
+	head = null
+	glasses = null
+	mask = null
 	belt = null
-	mask = /obj/item/clothing/mask/breath
-	gloves = /obj/item/clothing/gloves/fingerless
+	suit = null
+	gloves = null
 
 // cmo
 
@@ -257,3 +258,34 @@
 	suit_store = null
 	dcoat = null
 	r_pocket = null
+
+// supply
+
+/datum/outfit/job/inteq/pilot
+	name = "IRMG - Shuttle Pilot"
+	jobtype = /datum/job/mining
+	job_icon = "securityofficer"
+	id_assignment = "Shuttle Pilot"
+
+	head = /obj/item/clothing/head/soft/inteq
+	glasses = /obj/item/clothing/glasses/sunglasses/big
+	mask = /obj/item/clothing/mask/balaclava/inteq
+	belt = /obj/item/storage/belt/security/webbing/inteq/alt
+	suit = /obj/item/clothing/suit/hooded/wintercoat/security/inteq/alt
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security/inteq
+	gloves = /obj/item/clothing/gloves/combat
+	ears = /obj/item/radio/headset/inteq/alt
+	shoes = /obj/item/clothing/shoes/combat
+
+/datum/outfit/job/inteq/pilot/empty
+	name = "IRMG - Shuttle Pilot (Naked)"
+	jobtype = /datum/job/mining
+	job_icon = "securityofficer"
+	id_assignment = "Shuttle Pilot"
+
+	head = null
+	glasses = null
+	mask = null
+	belt = null
+	suit = null
+	gloves = null

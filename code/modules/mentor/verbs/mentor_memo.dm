@@ -1,6 +1,6 @@
 /client/proc/mentor_memo()
-	set name = "Mentor Memos"
-	set category = "Server"
+	// set name = "Mentor Memos" // [CELADON-DELETE] Mentors not works!!!
+	// set category = "Server"
 	if(!check_rights(0))
 		return
 	if(!SSdbcore.IsConnected())
@@ -12,8 +12,8 @@
 	mentor_memo_output(memotask)
 
 /client/proc/show_mentor_memo()
-	set name = "Show Memos"
-	set category = "Mentor"
+	// set name = "Show Memos" // [CELADON-DELETE] Mentors not works!!!
+	// set category = "Mentor"
 	if(!check_mentor())
 		return
 	if(!SSdbcore.IsConnected())
@@ -108,7 +108,7 @@
 				var/last_editor = query_memoshow.item[4]
 				output += "[span_memo("Mentor memo by <span class='prefix'>[ckey]")] on [timestamp]"
 				if(last_editor)
-					output += "<br>[span_memoedit("Last edit by [last_editor] <A href='?_src_=holder;mentormemoeditlist=[ckey]'>(Click here to see edit log)</A>")]"
+					output += "<br>[span_memoedit("Last edit by [last_editor] <A href='byond://?_src_=holder;mentormemoeditlist=[ckey]'>(Click here to see edit log)</A>")]"
 				output += "<br>[memotext]</span><br>"
 			if(!output)
 				to_chat(src, "No memos found in database.")

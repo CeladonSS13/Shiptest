@@ -1,7 +1,7 @@
 /obj/item/coin/day_s
 	name = "day 'S' coin"
 	desc = "Стороны монетки напоминают вам одну историю о том, что в мире существуют цели, важнее даже собственной жизни."
-	icon = 'mod_celadon/_storge_icons/icons/events/coin.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/coin.dmi'
 	icon_state = "coin_valid"
 	sideslist = list("valid", "salad")
 	material_flags = NONE
@@ -34,7 +34,7 @@
 /obj/structure/reagent_dispensers/uranium
 	name = "Enriched uranium"
 	desc = "The Separatists of Elysium managed to steal a couple of activated uranium vaults from the Solar Federation, triggering Operation Sandstorm"
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/uranium_storage.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/uranium_storage.dmi'
 	icon_state = "nuclear"
 	density = TRUE
 	anchored = FALSE

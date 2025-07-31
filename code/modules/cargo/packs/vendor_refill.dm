@@ -2,7 +2,7 @@
 	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
 
 /datum/supply_pack/vendor_refill
-	group = "Vendor Refills"
+	category = "Vendor Refills"
 	crate_type = /obj/structure/closet/crate
 
 /datum/supply_pack/vendor_refill/bartending

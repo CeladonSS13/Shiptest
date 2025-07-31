@@ -16,7 +16,7 @@
 	mob_size = MOB_SIZE_HUMAN
 	blattedin_revives_left = 0 //He only lives once, cuz he's huge
 
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat/fuhrer = 6)
+	butcher_results = list(/obj/item/food/meat/roachmeat/fuhrer = 6)
 
 	var/distress_level = 0
 	var/distress_calls = 1 //Each fuhrer can only call for help once in its life

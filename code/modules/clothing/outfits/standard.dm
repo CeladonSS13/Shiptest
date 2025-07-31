@@ -84,7 +84,12 @@
 
 	head = /obj/item/clothing/head/helmet/space/plasmaman
 	uniform = /obj/item/clothing/under/plasmaman
+// [CELADON-EDIT] - QoL Plasmamen
+/* CELADON-EDIT - ORIGINAL
 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+*/
+	r_pocket= /obj/item/tank/internals/plasmaman/belt/full
+// [/CELADON-EDIT]
 	mask = /obj/item/clothing/mask/breath
 	gloves = /obj/item/clothing/gloves/color/plasmaman
 
@@ -118,17 +123,25 @@
 	H.faction |= list(FACTION_PLAYER_SYNDICATE,
 					FACTION_PLAYER_NANOTRASEN,
 					FACTION_PLAYER_SOLFED,
+					FACTION_PLAYER_SOLCON,
 					FACTION_PLAYER_NANOTRASEN,
 					FACTION_PLAYER_INTEQ,
-					FACTION_ELYSIUM,
-					FACTION_PIRATES,
 					FACTION_PLAYER_FRONTIERSMEN,
 					FACTION_PLAYER_MINUTEMAN,
-					FACTION_PLAYER_SOLCON,
 					FACTION_PLAYER_ROUMAIN,
 					FACTION_PLAYER_GEZENA,
+					FACTION_PLAYER_ELYSIUM,
+					FACTION_ELYSIUM,
+					FACTION_PIRATES,
 					FACTION_ANTAG_SYNDICATE,
-					FACTION_ANTAG_FRONTIERSMEN
+					FACTION_ANTAG_FRONTIERSMEN,
+					FACTION_RAMZI,
+					FACTION_HOSTILE,
+					FACTION_NEUTRAL,
+					FACTION_RAT,
+					ROLE_DEATHSQUAD,
+					SPECIES_SKELETON,
+					ROLE_ALIEN,
 					)
 	ADD_TRAIT(H, TRAIT_MINDSHIELD, "status_effect")
 	// [/CELADON-ADD]

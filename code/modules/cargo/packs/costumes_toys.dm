@@ -2,7 +2,7 @@
 	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
 
 /datum/supply_pack/costumes_toys
-	group = "Costumes & Toys"
+	category = "Costumes & Toys"
 
 /*
 		Toys

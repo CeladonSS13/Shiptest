@@ -14,7 +14,7 @@
 	throw_message = "does nothing to the rocky hide of the"
 
 /mob/living/simple_animal/hostile/asteroid/goliath/beast/tendril
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/goliath = 2, /obj/item/stack/sheet/bone = 2, /obj/item/stack/sheet/sinew = 2)
+	butcher_results = list(/obj/item/food/meat/slab/goliath = 2, /obj/item/stack/sheet/bone = 2, /obj/item/stack/sheet/sinew = 2)
 	fromtendril = TRUE
 
 // Goliath broodmother child - не знаю, нужно ли это или нет, в случае чего расскомментировать
@@ -33,7 +33,7 @@
 
 //goat
 /mob/living/simple_animal/hostile/retaliate/goat
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 4, /obj/item/clothing/head/goatpelt = 1)
+	butcher_results = list(/obj/item/food/meat/slab = 4, /obj/item/clothing/head/goatpelt = 1)
 
 //penguin
 /mob/living/simple_animal/pet/penguin/emperor/shamebrero

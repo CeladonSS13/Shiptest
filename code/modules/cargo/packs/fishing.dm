@@ -2,7 +2,7 @@
 	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
 
 /datum/supply_pack/fish
-	group = "Fishing Essentials"
+	category = "Fishing Essentials"
 
 
 /datum/supply_pack/fish/fishingkit

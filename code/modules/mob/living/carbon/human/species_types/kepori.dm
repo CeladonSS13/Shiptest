@@ -6,7 +6,7 @@
 	inherent_traits = list(TRAIT_SCOOPABLE)
 	mutant_bodyparts = list("kepori_body_feathers", "kepori_head_feathers", "kepori_tail_feathers", "kepori_feathers")
 	default_features = list("mcolor" = "0F0", "wings" = "None", "kepori_feathers" = "None", "kepori_head_feathers" = "None",  "kepori_body_feathers" = "None", "kepori_tail_feathers" = "None")
-	meat = /obj/item/reagent_containers/food/snacks/meat/slab/chicken
+	meat = /obj/item/food/meat/slab/chicken
 	disliked_food = FRIED | GROSS | CLOTH
 	liked_food = MEAT | GORE
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP
@@ -136,7 +136,7 @@
 	if(slot != ITEM_SLOT_MASK)
 		return FALSE
 	//Blocks all items that are equippable to other slots. (block anything with a flag that ISN'T item_slot_mask)
-	if(I.slot_flags & ~ITEM_SLOT_KEPORI_BEAK)
+	if(I.slot_flags && !ITEM_SLOT_KEPORI_BEAK)	// [CELADON-EDIT] - CELADON_FIXES - Было if(I.slot_flags & ~ITEM_SLOT_KEPORI_BEAK)
 		return FALSE
 	if(H.wear_mask && !swap)
 		return FALSE

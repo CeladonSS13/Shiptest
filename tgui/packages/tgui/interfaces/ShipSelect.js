@@ -191,11 +191,16 @@ export const ShipSelect = (props, context) => {
                       <Button
                         content="Select"
                         tooltip={
-                          !data.autoMeet &&
-                          data.playMin < job.minTime &&
-                          'You do not have enough playtime to play this job.'
+                          (!data.autoMeet &&
+                            data.playMin < job.minTime &&
+                            'You do not have enough playtime to play this job.') ||
+                          (data.officerBanned &&
+                            'You are banned from playing officer roles')
                         }
-                        disabled={!data.autoMeet && data.playMin < job.minTime}
+                        disabled={
+                          (!data.autoMeet && data.playMin < job.minTime) ||
+                          (data.officerBanned && job.officer)
+                        }
                         onClick={() => {
                           act('join', {
                             ship: selectedShip.ref,
@@ -301,10 +306,7 @@ export const ShipSelect = (props, context) => {
                   <LabeledList.Item label="Map Link">
                     <a /* Добавляем внешнюю ссылку для детального осмотра корабля */
                       href={
-                        'https://map.celadon.pro/Shiptest/' +
-                        template.faction +
-                        '/' +
-                        template.shortName
+                        'https://map.celadon.pro/Shiptest/' + template.shortName
                       }
                       target="_blank"
                       rel="noreferrer"

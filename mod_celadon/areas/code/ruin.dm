@@ -146,6 +146,34 @@
 	name = "Cargo Mining"
 	icon_state = "mining"
 
+/area/ruin/asteroid/limafacility/office
+	name = "Office"
+	icon_state = "bridge"
+
+/area/ruin/asteroid/limafacility/lightzone
+	name = "Light Zone"
+	icon_state = "yellow"
+
+/area/ruin/asteroid/limafacility/heavyzone
+	name = "Heavy Zone"
+	icon_state = "green"
+
+/area/ruin/asteroid/limafacility/security
+	name = "Security"
+	icon_state = "security"
+
+/area/ruin/asteroid/limafacility/dorm
+	name = "Dorm"
+	icon_state = "crew_quarters"
+
+/area/ruin/asteroid/limafacility/hangar
+	name = "Cargo"
+	icon_state = "storage"
+
+/area/ruin/asteroid/limafacility/shuttle
+	name = "shuttle"
+	icon_state = "shuttle"
+
 /// MARK: Ocean Town
 
 /area/ruin/beach/oceantown

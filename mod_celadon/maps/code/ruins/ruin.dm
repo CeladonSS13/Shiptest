@@ -1166,6 +1166,14 @@
 	suffix = "asteroid_wrecker_outpost.dmm"
 	cost = 3
 
+/datum/map_template/ruin/asteroid/lima_facility
+	id = "lima_facility"
+	name = "Lima Facility"
+	description = "The secret facility from which the S.O.S. signal was sent."
+	suffix = "lima_facility.dmm"
+	cost = 4
+	allow_duplicates = FALSE
+
 //							///
 //		MARK: Reebe
 //							///

@@ -42,15 +42,15 @@
 
 /datum/species/moth/on_species_gain(mob/living/carbon/human/H)
 	..()
-	H.verbs |= /mob/living/carbon/human/proc/emote_flap
-	H.verbs |= /mob/living/carbon/human/proc/emote_aflap
+	// H.verbs |= /mob/living/carbon/human/proc/emote_flap
+	// H.verbs |= /mob/living/carbon/human/proc/emote_aflap
 	H.verbs |= /mob/living/carbon/human/proc/emote_flutter
 	H.verbs |= /mob/living/carbon/human/proc/emote_mothchitter
 
 /datum/species/moth/on_species_loss(mob/living/carbon/human/H)
 	..()
-	H.verbs -= /mob/living/carbon/human/proc/emote_flap
-	H.verbs -= /mob/living/carbon/human/proc/emote_aflap
+	// H.verbs -= /mob/living/carbon/human/proc/emote_flap
+	// H.verbs -= /mob/living/carbon/human/proc/emote_aflap
 	H.verbs -= /mob/living/carbon/human/proc/emote_flutter
 	H.verbs -= /mob/living/carbon/human/proc/emote_mothchitter
 
@@ -120,14 +120,28 @@
 
 /datum/species/vox/on_species_gain(mob/living/carbon/human/H)
 	..()
-	H.verbs |= /mob/living/carbon/human/proc/emote_wag
-	// H.verbs |= /mob/living/carbon/human/proc/emote_swag
+	H.verbs |= /mob/living/carbon/human/proc/emote_tailthump
+	H.verbs |= /mob/living/carbon/human/proc/emote_kepiclick
 	H.verbs |= /mob/living/carbon/human/proc/emote_quill
 
 /datum/species/vox/on_species_loss(mob/living/carbon/human/H)
 	..()
-	H.verbs -= /mob/living/carbon/human/proc/emote_wag
-	// H.verbs -= /mob/living/carbon/human/proc/emote_swag
+	H.verbs -= /mob/living/carbon/human/proc/emote_tailthump
+	H.verbs -= /mob/living/carbon/human/proc/emote_kepiclick
+	H.verbs -= /mob/living/carbon/human/proc/emote_quill
+
+// MARK: KEPORI
+
+/datum/species/kepori/on_species_gain(mob/living/carbon/human/H)
+	..()
+	H.verbs |= /mob/living/carbon/human/proc/emote_kepiclick
+	H.verbs |= /mob/living/carbon/human/proc/emote_kepiwhistle
+	H.verbs |= /mob/living/carbon/human/proc/emote_quill
+
+/datum/species/kepori/on_species_loss(mob/living/carbon/human/H)
+	..()
+	H.verbs -= /mob/living/carbon/human/proc/emote_kepiclick
+	H.verbs -= /mob/living/carbon/human/proc/emote_kepiwhistle
 	H.verbs -= /mob/living/carbon/human/proc/emote_quill
 
 // MARK: SKELETON

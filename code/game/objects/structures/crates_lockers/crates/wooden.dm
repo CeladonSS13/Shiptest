@@ -9,6 +9,7 @@
 	open_sound_volume = 25
 	close_sound_volume = 50
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNSS
 /obj/structure/closet/crate/wooden/toy
 	name = "toy box"
 	desc = "It has the words \"Clown + Mime\" written underneath of it with marker."
@@ -18,5 +19,6 @@
 	new	/obj/item/megaphone/clown(src)
 	new	/obj/item/reagent_containers/food/drinks/soda_cans/canned_laughter(src)
 	new /obj/item/pneumatic_cannon/pie(src)
-	new /obj/item/reagent_containers/food/snacks/pie/cream(src)
+	new /obj/item/food/pie/cream(src)
 	new /obj/item/storage/crayons(src)
+// [/CELADON-ADD]

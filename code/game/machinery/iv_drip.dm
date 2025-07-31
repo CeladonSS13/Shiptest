@@ -134,7 +134,25 @@
 				if(istype(beaker, /obj/item/reagent_containers/blood))
 					// speed up transfer on blood packs
 					transfer_amount *= 2
-				beaker.reagents.trans_to(attached, transfer_amount * seconds_per_tick * 0.5, method = INJECT, show_message = FALSE) //make reagents reacts, but don't spam messages
+				// [CELADON-ADD] - CELADON_FIXES_BLOOD
+				// Проверяем, если это кровь и если у пациента уже достаточно крови
+				var/actual_transfer_amount = transfer_amount * seconds_per_tick * 0.5
+				
+				// Проверяем, содержит ли контейнер кровь
+				if(ishuman(attached) && beaker.reagents.has_reagent(/datum/reagent/blood))
+					var/mob/living/carbon/human/H = attached
+					
+					// Ограничиваем переливание крови до BLOOD_VOLUME_NORMAL независимо от типа крови
+					if(H.blood_volume >= BLOOD_VOLUME_NORMAL)
+						actual_transfer_amount = min(actual_transfer_amount, BLOOD_VOLUME_NORMAL - H.blood_volume)
+						if(actual_transfer_amount <= 0)
+							if(prob(5))
+								visible_message(span_hear("[src] pings, indicating the patient has reached normal blood level."))
+							return
+				// [/CELADON-ADD][CELADON-EDIT] - CELADON_FIXES_BLOOD
+				// beaker.reagents.trans_to(attached, transfer_amount * seconds_per_tick * 0.5, method = INJECT, show_message = FALSE) //make reagents reacts, but don't spam messages // ORIGINAL
+				beaker.reagents.trans_to(attached, actual_transfer_amount, method = INJECT, show_message = FALSE) //make reagents reacts, but don't spam messages
+				// [/CELADON-EDIT]
 				update_appearance()
 
 		// Take blood

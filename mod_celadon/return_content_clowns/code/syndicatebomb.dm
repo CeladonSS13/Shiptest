@@ -4,6 +4,7 @@
 
 /obj/machinery/syndicatebomb/badmin/clown
 	name = "clown bomb"
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/assemblies.dmi'
 	icon_state = "clown-bomb"
 	desc = "HONK."
 	payload = /obj/item/bombcore/badmin/summon/clown

@@ -20,7 +20,7 @@
 	name = "Laughing Larry"
 	desc = "A laughing, jovial figure. Something seems stuck in his throat."
 	icon_state = "clownbeacon"
-	icon = 'icons/obj/device.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/device.dmi'
 	max_integrity = 200
 	max_mobs = 15
 	spawn_time = 150

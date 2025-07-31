@@ -8,9 +8,9 @@
 
 	// uses modular icon file
 	if(istype(chosen_sign, /datum/barsign/celadon/large))
-		icon = 'mod_celadon/_storge_icons/icons/barsigns96x96.dmi'
+		icon = 'mod_celadon/_storge_icons/icons/structures/barsigns/barsigns96x96.dmi'
 	else
-		icon = 'mod_celadon/_storge_icons/icons/barsigns.dmi'
+		icon = 'mod_celadon/_storge_icons/icons/structures/barsigns/barsigns.dmi'
 
 /datum/barsign
 	var/neon_color /// The emission color of the neon light
@@ -19,7 +19,7 @@
 /obj/machinery/barsign // All Signs are 64 by 32 pixels, they take two tiles
 	name = "bar sign"
 	desc = "A bar sign which has not been initialized, somehow. Complain at a coder!"
-	icon = 'mod_celadon/_storge_icons/icons/barsigns.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/structures/barsigns/barsigns.dmi'
 	icon_state = "empty"
 	req_access = list(ACCESS_BAR)
 	max_integrity = 500
@@ -147,7 +147,7 @@
 /// CORE CODE - END
 
 /obj/structure/sign/barsign
-	icon = 'mod_celadon/_storge_icons/icons/barsigns.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/structures/barsigns/barsigns.dmi'
 
 /datum/barsign/celadon/topmen
 	name = "Top Men"

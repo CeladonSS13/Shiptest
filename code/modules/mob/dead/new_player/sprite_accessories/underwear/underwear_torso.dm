@@ -7,6 +7,8 @@
 	name = "Nude"
 	icon_state = null
 
+// [CELADON-REMOVE] - CELADON_UNDERWEAR - Новая одежда (Перенос в модуль) => mod_celadon/underwear
+/* CELADON-REMOVE - ORIGINAL
 //Start normal shirts
 
 //Female undergarment tops
@@ -148,3 +150,5 @@
 	name = "Tank Top (Asexual)"
 	icon_state = "ace"
 	use_static = TRUE
+*/
+// [/CELADON-REMOVE]

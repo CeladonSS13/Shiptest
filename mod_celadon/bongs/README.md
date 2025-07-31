@@ -62,7 +62,7 @@ ID мода: CELADON_BONGS
 
 - `icons/effects/atmospherics.dmi`
 - `mod_celadon/_storge_sounds/sound`
-- `mod_celadon/_storge_icons/icons/bongs`
+- `mod_celadon/_storge_icons/icons/items/bongs`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.

@@ -100,7 +100,7 @@
 	flora_spawn_list = list(/obj/structure/flora/rock/beach = 1, /obj/structure/flora/rock/asteroid = 6)
 	mob_spawn_chance = 1
 	mob_spawn_list = list(
-		/mob/living/simple_animal/hostile/bear/cave = 5,
+		/mob/living/basic/bear/cave = 5,
 		/mob/living/simple_animal/hostile/asteroid/lobstrosity/beach = 1,
 	)
 	feature_spawn_chance = 0.5
@@ -134,5 +134,8 @@
 	)
 
 /datum/biome/cave/waterplanet/fault
-	open_turf_types = list(/turf/open/lava = 5, /turf/open/water/stormy_planet_underground = 1)
+	// [CELADON-EDIT] - CELADON_FIXES - Убираем лаву с генерации водяной планеты
+	// open_turf_types = list(/turf/open/lava = 5, /turf/open/water/stormy_planet_underground = 1)	// ORIGINAL
+	open_turf_types = list(/turf/open/water/stormy_planet_underground = 1)
+	// [/CELADON-EDIT]
 	mob_spawn_chance = 0

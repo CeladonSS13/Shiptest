@@ -5,7 +5,6 @@
 // Для общего карго диапазон цены выбирается между -10% до +10% к цене
 // Для фракционного карго скидка выбрана от 0% до -25% к цене
 // Для экспорта ценник может варироваться от -40% до +10% к цене
-// Для Вендор автоматов диапазон цен от -25% до -15%
 
 // Также после тестов возможно прописывать любые формулы и значения
 // Также цены указаны не на отдельные категории. В будущем будет по
@@ -31,18 +30,6 @@
 #define PRICES_GENERAL_MIN				0.9
 #define PRICES_GENERAL_MAX				1.1
 
-// ЦЕНА НА ТОВАРЫ ВЕНДОМАТОВ
-#define PRICES_VENDING_MIN				0.75
-#define PRICES_VENDING_PREMIUM_MIN		0.85
-
-
-#define PRICES_VENDING_REFILL			0.9
-#define PRICES_VENDING_TAGGER			0.9
-
 // Пока общие на все категории
 #define PRICES_EXPORT_GENERAL_MIN		0.6
 #define PRICES_EXPORT_GENERAL_MAX		1.1
-
-// Bounty
-#define BOUNTY_ASSISTANT_MIN			0.9
-#define BOUNTY_ASSISTANT_MAX			1.1

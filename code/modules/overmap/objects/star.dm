@@ -201,7 +201,7 @@
 	. = ..()
 	// [CELADON-EDIT] - CELADON_OVERMAP
 	// token.icon = 'icons/misc/overmap_large.dmi'	// CELADON-EDIT - ORIGINAL
-	token.icon = 'mod_celadon/_storge_icons/icons/overmap/overmap_large.dmi'
+	token.icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap_large.dmi'
 	// [/CELADON-EDIT]
 	token.bound_height = 64
 	token.bound_width = 64
@@ -254,7 +254,7 @@
 	. = ..()
 	// [CELADON-EDIT] - CELADON_OVERMAP
 	// token.icon = 'icons/misc/overmap_larger.dmi'	// CELADON-EDIT - ORIGINAL
-	token.icon = 'mod_celadon/_storge_icons/icons/overmap/overmap_larger.dmi'
+	token.icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap_larger.dmi'
 	// [/CELADON-EDIT]
 	token.bound_height = 96
 	token.bound_width = 96
@@ -315,7 +315,7 @@
 	token.cut_overlays()
 	// [CELADON-EDIT] - CELADON_OVERMAP
 	// token.icon = 'icons/misc/overmap_larger.dmi'	// CELADON-EDIT - ORIGINAL
-	token.icon = 'mod_celadon/_storge_icons/icons/overmap/overmap_larger.dmi'
+	token.icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap_larger.dmi'
 	// [/CELADON-EDIT]
 	token.bound_height = 96
 	token.bound_width = 96
@@ -375,7 +375,7 @@
 	. = ..()
 	// [CELADON-EDIT] - CELADON_OVERMAP
 	// token.icon = 'icons/misc/overmap_larger.dmi'	// CELADON-EDIT - ORIGINAL
-	token.icon = 'mod_celadon/_storge_icons/icons/overmap/overmap_larger.dmi'
+	token.icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap_larger.dmi'
 	// [/CELADON-EDIT]
 	token.bound_height = 96
 	token.bound_width = 96
@@ -415,7 +415,7 @@
 	. = ..()
 	// [CELADON-EDIT] - CELADON_OVERMAP
 	// token.icon = 'icons/misc/overmap_larger.dmi'	// CELADON-EDIT - ORIGINAL
-	token.icon = 'mod_celadon/_storge_icons/icons/overmap/overmap_larger.dmi'
+	token.icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap_larger.dmi'
 	// [/CELADON-EDIT]
 	token.bound_height = 96
 	token.bound_width = 96
