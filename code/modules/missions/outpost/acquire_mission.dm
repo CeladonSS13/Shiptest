@@ -1,5 +1,5 @@
 /datum/mission/outpost/acquire
-	desc = "Get me some things."
+	desc = "БЛЯТЬ, ОПИСАНИЕ СЛОМАЛОСЬ - СООБЩИТЕ ОБ ЭТОМ СИСТЕМНОМУ АДМИНИСТРАТОРУ!"	//desc = "Get me some things."	// [CELADON-EDIT] - CELADON_ECONOMY - Оповещение об ЯВНОЙ ошибке
 
 	/// The type of container to be spawned when the mission is accepted.
 	var/atom/movable/container_type
