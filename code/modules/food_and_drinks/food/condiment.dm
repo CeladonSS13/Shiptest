@@ -235,32 +235,19 @@
 	volume = 10
 	amount_per_transfer_from_this = 10
 	possible_transfer_amounts = list()
-	// [CELADON-EDIT] - FOOD_AND_DRINKS - Починка спрайтов кетчупа и майонеза
-	// possible_states = list(
-		// 	/datum/reagent/consumable/ketchup = list("condi_ketchup", "Ketchup", "A packet of ketchup. The old standby, given by the fistful."),
-		// /datum/reagent/consumable/capsaicin = list("condi_hotsauce", "Hotsauce", "A packet of hotsauce. Good for spicing up food."),
-		// /datum/reagent/consumable/soysauce = list("condi_soysauce", "Soy Sauce", "A packet of soy sauce. Good on rice."),
-		// /datum/reagent/consumable/frostoil = list("condi_frostoil", "Coldsauce", "A packet of coldsauce. Good for... cooling down food?"),
-		// /datum/reagent/consumable/sodiumchloride = list("condi_salt", "Salt Shaker", "A shaker full of salt. Make sure the cap is on tight!"),
-		// /datum/reagent/consumable/blackpepper = list("condi_pepper", "Pepper Mill", "A handheld mill to grind down peppercorn. Often used to flavor food... or make people sneeze."),
-		// /datum/reagent/consumable/cornoil = list("condi_cornoil", "Corn Oil", "A (presumably) corn-sourced oil. Good for cooking."),
-		// /datum/reagent/consumable/sugar = list("condi_sugar", "Sugar", "A packet of sugar. Used for sweetening, typically."),
-		// /datum/reagent/consumable/astrotame = list("condi_astrotame", "Astrotame", "An artificial sweetener. Just be careful to not give yourself a headache with too much!"),
-		// /datum/reagent/consumable/bbqsauce = list("condi_bbq", "BBQ sauce", "A sweet and savory packet of barbeque sauce. It's sticky!"), // CELADON-EDIT - ORIGINAL
-	// 	)
+
 	possible_states = list(
-		/datum/reagent/consumable/ketchup = list("icon_state" = "condi_ketchup", "item_state" = "", "icon_empty" = "", "name" = "ketchup", "desc" = "You feel more American already."),
-		/datum/reagent/consumable/capsaicin = list("icon_state" = "condi_hotsauce", "item_state" = "", "icon_empty" = "", "name" = "hotsauce", "desc" = "You can almost TASTE the stomach ulcers!"),
-		/datum/reagent/consumable/soysauce = list("icon_state" = "condi_soysauce", "item_state" = "", "icon_empty" = "", "name" = "soy sauce", "desc" = "A salty soy-based flavoring."),
-		/datum/reagent/consumable/frostoil = list("icon_state" = "condi_coldsauce", "item_state" = "", "icon_empty" = "", "name" = "coldsauce", "desc" = "Leaves the tongue numb from its passage."),
-		/datum/reagent/consumable/sodiumchloride = list("icon_state" = "condi_salt", "item_state" = "", "icon_empty" = "", "name" = "salt", "desc" = "Salt. From dead crew, presumably."),
-		/datum/reagent/consumable/blackpepper = list("icon_state" = "condi_pepper", "item_state" = "", "icon_empty" = "", "name" = "pepper mill", "desc" = "Often used to flavor food or make people sneeze."),
-		/datum/reagent/consumable/cornoil = list("icon_state" = "condi_cornoil", "item_state" = "", "icon_empty" = "", "name" = "corn oil", "desc" = "A delicious oil used in cooking. Made from corn."),
-		/datum/reagent/consumable/sugar = list("icon_state" = "condi_sugar", "item_state" = "", "icon_empty" = "", "name" = "sugar", "desc" = "Tasty spacey sugar!"),
-		/datum/reagent/consumable/astrotame = list("icon_state" = "condi_astrotame", "item_state" = "", "icon_empty" = "", "name" = "Astrotame", "desc" = "The sweetness of a thousand sugars but none of the calories."),
-		/datum/reagent/consumable/bbqsauce = list("icon_state" = "condi_bbq", "item_state" = "", "icon_empty" = "", "name" = "bbq sauce", "desc" = "Hand wipes not included.")
+		/datum/reagent/consumable/ketchup = list("condi_ketchup", "Ketchup", "A packet of ketchup. The old standby, given by the fistful."),
+		/datum/reagent/consumable/capsaicin = list("condi_hotsauce", "Hotsauce", "A packet of hotsauce. Good for spicing up food."),
+		/datum/reagent/consumable/soysauce = list("condi_soysauce", "Soy Sauce", "A packet of soy sauce. Good on rice."),
+		/datum/reagent/consumable/frostoil = list("condi_frostoil", "Coldsauce", "A packet of coldsauce. Good for... cooling down food?"),
+		/datum/reagent/consumable/sodiumchloride = list("condi_salt", "Salt Shaker", "A shaker full of salt. Make sure the cap is on tight!"),
+		/datum/reagent/consumable/blackpepper = list("condi_pepper", "Pepper Mill", "A handheld mill to grind down peppercorn. Often used to flavor food... or make people sneeze."),
+		/datum/reagent/consumable/cornoil = list("condi_cornoil", "Corn Oil", "A (presumably) corn-sourced oil. Good for cooking."),
+		/datum/reagent/consumable/sugar = list("condi_sugar", "Sugar", "A packet of sugar. Used for sweetening, typically."),
+		/datum/reagent/consumable/astrotame = list("condi_astrotame", "Astrotame", "An artificial sweetener. Just be careful to not give yourself a headache with too much!"),
+		/datum/reagent/consumable/bbqsauce = list("condi_bbq", "BBQ sauce", "A sweet and savory packet of barbeque sauce. It's sticky!"),
 		)
-	// [/CELADON-EDIT]
 
 /obj/item/reagent_containers/condiment/pack/create_reagents(max_vol, flags)
 	. = ..()
