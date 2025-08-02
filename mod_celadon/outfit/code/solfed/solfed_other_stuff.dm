@@ -420,3 +420,7 @@
 /obj/item/melee/energy/sword/saber/knife/melee_attack_chain(mob/user, atom/target, params)
 	. = ..()
 	user.changeNext_move(CLICK_CD_RANGE) //double the attack speed
+
+/obj/item/melee/energy/sword/saber/knife/pre_active //used by solfed dynamic gen mobs
+	icon_state = "eknifeyellow"
+	base_icon_state = "eknife"

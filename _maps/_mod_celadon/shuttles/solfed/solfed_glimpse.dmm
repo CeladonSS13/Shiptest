@@ -1613,9 +1613,9 @@
 /obj/item/gun/ballistic/automatic/pistol/solgov,
 /obj/item/gun/ballistic/automatic/pistol/solgov,
 /obj/item/gun/ballistic/automatic/pistol/solgov,
-/obj/item/gun/ballistic/automatic/pistol/solgov,
-/obj/item/gun/ballistic/automatic/pistol/solgov,
 /obj/machinery/airalarm/directional/south,
+/obj/item/gun/ballistic/automatic/assault/g36,
+/obj/item/gun/ballistic/automatic/assault/g36,
 /turf/open/floor/wood/ebony,
 /area/ship/security/armory)
 "Gq" = (
@@ -2020,7 +2020,14 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/mod/control/pre_equipped/engineering,
+/obj/item/clothing/suit/space/solgov{
+	desc = "Originally designed by independent contractors on Luna for the purposes of survival in hazardous environments, the lightweight Tortoise Microlite Armored Suit now sees widespread use by SolFed's exploration teams.";
+	name = "\improper SolFed Vacuum Suit"
+	},
+/obj/item/clothing/head/helmet/space/solgov{
+	name = "\improper SolFed Vacuum Helmet"
+	},
+/obj/item/tank/jetpack/carbondioxide,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "LU" = (
@@ -2142,10 +2149,16 @@
 /obj/item/ammo_box/magazine/pistol556mm,
 /obj/item/ammo_box/magazine/pistol556mm,
 /obj/item/ammo_box/magazine/pistol556mm,
-/obj/item/ammo_box/magazine/pistol556mm,
-/obj/item/ammo_box/magazine/pistol556mm,
-/obj/item/ammo_box/magazine/pistol556mm,
-/obj/item/ammo_box/magazine/pistol556mm,
+/obj/item/storage/box/ammo/a556_box,
+/obj/item/storage/box/ammo/a556_box,
+/obj/item/storage/box/ammo/a556_box,
+/obj/item/storage/box/ammo/a556_box,
+/obj/item/ammo_box/magazine/g36,
+/obj/item/ammo_box/magazine/g36,
+/obj/item/ammo_box/magazine/g36,
+/obj/item/ammo_box/magazine/g36,
+/obj/item/ammo_box/magazine/g36,
+/obj/item/ammo_box/magazine/g36,
 /turf/open/floor/wood/ebony,
 /area/ship/security/armory)
 "NU" = (

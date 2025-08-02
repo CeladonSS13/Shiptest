@@ -1387,6 +1387,29 @@
 /obj/structure/railing{
 	dir = 5
 	},
+/obj/structure/rack,
+/obj/item/ammo_box/magazine/pistol556mm{
+	pixel_x = -12
+	},
+/obj/item/ammo_box/magazine/pistol556mm{
+	pixel_x = -7
+	},
+/obj/item/ammo_box/magazine/pistol556mm{
+	pixel_x = 6
+	},
+/obj/item/ammo_box/magazine/pistol556mm{
+	pixel_x = -7
+	},
+/obj/item/gun/ballistic/automatic/pistol/solgov{
+	pixel_y = 6;
+	layer = 3.2;
+	pixel_x = -6
+	},
+/obj/item/gun/ballistic/automatic/pistol/solgov{
+	pixel_y = 6;
+	layer = 3.2;
+	pixel_x = 5
+	},
 /turf/open/floor/marble/black,
 /area/ship/bridge)
 "vd" = (
@@ -2410,11 +2433,11 @@
 	},
 /area/ship/general/cargo/cargo_bay)
 "MH" = (
-/obj/structure/cable{
-	icon_state = "4-8"
+/obj/structure/table/wood/fancy/royalblack,
+/obj/structure/sign/poster/solfed/random{
+	pixel_y = 32
 	},
-/obj/structure/sign/poster/solfed/random,
-/turf/closed/wall/r_wall/syndicate,
+/turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
 "Nd" = (
 /obj/machinery/power/apc/auto_name/directional/east,
@@ -3751,8 +3774,8 @@ qH
 qH
 qH
 Sf
+Yw
 MH
-Ro
 Ro
 ys
 ys
