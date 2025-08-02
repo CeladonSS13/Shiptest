@@ -60,7 +60,7 @@
 			var/mob/living/carbon/H = hood.loc
 			H.transferItemToLoc(hood, src, TRUE)
 			H.update_inv_wear_suit()
-			//update_appearance() - СУКА
+			//update_appearance() - FIXES_ICON - СУКА
 			//H.regenerate_icons()
 		else
 			hood.forceMove(src)
@@ -94,7 +94,7 @@
 			else if(H.equip_to_slot_if_possible(hood,ITEM_SLOT_HEAD,0,0,1))
 				suittoggled = TRUE
 				H.update_inv_wear_suit()
-				//update_appearance()
+				//update_appearance() - FIXES_ICON - СУКА ИЗ-ЗА ЭТОГО СЛОМАЛИСЬ ВСЕ КАПЮШОНЫ
 				//H.regenerate_icons()
 				for(var/X in actions)
 					var/datum/action/A = X
