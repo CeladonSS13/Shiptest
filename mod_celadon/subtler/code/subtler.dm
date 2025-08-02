@@ -7,7 +7,7 @@
 	mob_type_blacklist_typecache = list(/mob/living/brain)
 
 /datum/emote/living/subtlerag/proc/check_invalid(mob/user, input)
-	if(stop_bad_mime.Find(input, 1, 1))
+	if(stop_bypasser.Find(input, 1, 1))
 		to_chat(user, span_danger("Invalid emote."))
 		return TRUE
 	return FALSE
