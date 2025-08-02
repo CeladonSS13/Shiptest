@@ -15,6 +15,7 @@
 ID мода: 
 CELADON_FIXES
 CELADON_FIXES_BLOOD
+FIXES_ICON_IN_HAND_MOB
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -119,6 +120,9 @@ Weebstick (Красная катана) теперь нельзя сломать
 - ADD: `code/modules/reagents/chemistry/holder.dm` : Вводим ограничения на шприцы, бикеры, капельницы
 
 - ADD: `code/game/objects/items/food/donut.dm` : Прописано название стандартной иконки, вместо надписи ERROR
+
+FIXES_ICON_MOB_IN_HAND
+- EDIT: `code/__HELPERS/dynamic_human_icon_gen.dm` : Прописано название стандартной иконки, вместо надписи ERROR
 
 
 <!--

@@ -50,9 +50,13 @@
 	if(!HAS_TRAIT(src, TRAIT_WIELDED))
 		return
 
+// [CELADON-REMOVE] - CELADON_BALANCE
+/* ORIGINAL
 	var/atom/throw_target = get_edge_target_turf(target, user.dir)
 	if(!target.anchored)
 		target.throw_at(throw_target, rand(1,2), 2, user, gentle = TRUE)
+*/
+// [/CELADON-REMOVE]
 
 	var/datum/status_effect/crusher_damage/C = target.has_status_effect(STATUS_EFFECT_CRUSHERDAMAGETRACKING)
 	var/target_health = target.health

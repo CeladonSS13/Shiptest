@@ -19,6 +19,7 @@ ID мода:
 	CELADON_BALANCE_OVERMAP_EVENTS
 	CELADON_BALANCE_SPECIES
 	BALLISTIC_SHIELD
+	BALANCE_RACE
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов. Добавлены
@@ -113,6 +114,10 @@ EDIT: `code/modules/vehicles/scooter.dm` : Ускорение от ролико�
 
 EDIT: `code/game/objects/items/shields.dm` : Реворк-Переработка щитов
 EDIT: `code/game/objects/items.dm` : Звуки для щитов
+
+REMOVE: `code/modules/mining/equipment/kinetic_crusher.dm` : Убрано отталкивает от кинетик-крашера
+
+BALANCE_RACE
 
 EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Поднимаем скорость кепори до -0.30
 ADD: `code/modules/mob/living/carbon/human/species_types/lizardpeople.dm` : Даём сарати резист к огню на 15%

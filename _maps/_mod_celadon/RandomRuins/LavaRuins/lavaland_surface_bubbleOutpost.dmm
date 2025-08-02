@@ -23,9 +23,6 @@
 	mood_bonus = -1;
 	mood_message = "<span class='red'>What happened here..\n</span>"
 	})
-"bA" = (
-/turf/open/floor/plating/grass/lava/orange,
-/area/overmap_encounter/planetoid/lava)
 "bC" = (
 /obj/effect/decal/cleanable/blood/footprints{
 	dir = 1
@@ -67,7 +64,7 @@
 /area/overmap_encounter/planetoid/lava/explored)
 "cs" = (
 /obj/structure/flora/firebush,
-/turf/open/floor/plating/grass/lava/orange,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "cw" = (
 /obj/effect/decal/cleanable/blood/tracks{
@@ -106,7 +103,7 @@
 /area/overmap_encounter/planetoid/lava/explored)
 "dB" = (
 /obj/effect/mob_spawn/human/miner,
-/turf/open/floor/plating/grass/lava/orange,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "dN" = (
 /obj/structure/lattice/catwalk,
@@ -149,12 +146,6 @@
 	color = "FCFC35"
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/lava/explored)
-"er" = (
-/obj/structure/fence{
-	dir = 1
-	},
-/turf/open/floor/plating/grass/lava/orange,
 /area/overmap_encounter/planetoid/lava/explored)
 "eu" = (
 /obj/structure/toilet{
@@ -431,14 +422,14 @@
 /area/overmap_encounter/planetoid/lava/explored)
 "iT" = (
 /obj/structure/flora/tree/dead/tall,
-/turf/open/floor/plating/grass/lava/orange,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava)
 "jC" = (
 /turf/template_noop,
 /area/overmap_encounter/planetoid/lava/explored)
 "jF" = (
 /obj/structure/flora/ausbushes/grassybush/hell,
-/turf/open/floor/plating/grass/lava,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "ko" = (
 /obj/machinery/conveyor,
@@ -448,10 +439,6 @@
 	mood_bonus = -1;
 	mood_message = "<span class='red'>What happened here..\n</span>"
 	})
-"ky" = (
-/obj/structure/flora/ausbushes/grassybush/hell,
-/turf/open/floor/plating/grass/lava/orange,
-/area/overmap_encounter/planetoid/lava/explored)
 "ld" = (
 /obj/machinery/power/terminal{
 	dir = 4
@@ -477,7 +464,7 @@
 /area/overmap_encounter/planetoid/lava/explored)
 "ls" = (
 /mob/living/simple_animal/hostile/asteroid/goliath/beast/tendril,
-/turf/open/floor/plating/grass/lava/orange,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "lU" = (
 /obj/effect/turf_decal/industrial/warning{
@@ -490,7 +477,7 @@
 /obj/structure/fence/corner{
 	dir = 1
 	},
-/turf/open/floor/plating/grass/lava,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "mu" = (
 /obj/effect/turf_decal/industrial/warning{
@@ -629,7 +616,7 @@
 /area/overmap_encounter/planetoid/lava/explored)
 "oR" = (
 /obj/structure/flora/tree/dead/barren,
-/turf/open/floor/plating/grass/lava,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "oV" = (
 /obj/effect/turf_decal/siding/wideplating,
@@ -662,7 +649,7 @@
 /area/overmap_encounter/planetoid/lava/explored)
 "pp" = (
 /obj/structure/flora/tree/dead/hell,
-/turf/open/floor/plating/grass/lava/orange,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "qJ" = (
 /obj/effect/turf_decal/road/line{
@@ -783,7 +770,7 @@
 /area/overmap_encounter/planetoid/lava/explored)
 "to" = (
 /obj/structure/flora/tree/dead/tall/grey,
-/turf/open/floor/plating/grass/lava/orange,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "ty" = (
 /obj/effect/decal/cleanable/confetti,
@@ -800,7 +787,7 @@
 /area/overmap_encounter/planetoid/lava/explored)
 "tN" = (
 /obj/structure/flora/ausbushes/sparsegrass/hell,
-/turf/open/floor/plating/grass/lava,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "tP" = (
 /turf/open/floor/carpet,
@@ -907,11 +894,11 @@
 /obj/structure/fence{
 	dir = 4
 	},
-/turf/open/floor/plating/grass/lava,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "uY" = (
 /obj/structure/marker_beacon,
-/turf/open/floor/plating/grass/lava,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "vb" = (
 /obj/item/trash/chips,
@@ -1033,10 +1020,6 @@
 	mood_bonus = -1;
 	mood_message = "<span class='red'>What happened here..\n</span>"
 	})
-"xj" = (
-/obj/structure/flora/ausbushes/sparsegrass/hell,
-/turf/open/floor/plating/grass/lava/orange,
-/area/overmap_encounter/planetoid/lava/explored)
 "xl" = (
 /obj/effect/mob_spawn/human/miner,
 /turf/open/floor/plating/asteroid/basalt/lava,
@@ -1087,7 +1070,7 @@
 /area/overmap_encounter/planetoid/lava/explored)
 "yG" = (
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/plating/grass/lava/orange,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "yH" = (
 /obj/effect/turf_decal/road/line{
@@ -1155,7 +1138,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava,
 /area/overmap_encounter/planetoid/lava/explored)
 "zC" = (
-/turf/open/floor/plating/grass/lava,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "zK" = (
 /obj/effect/turf_decal/siding/wideplating,
@@ -1271,10 +1254,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/overmap_encounter/planetoid/lava/explored)
-"CJ" = (
-/obj/structure/flora/ausbushes/ywflowers/hell,
-/turf/open/floor/plating/grass/lava/orange,
-/area/overmap_encounter/planetoid/lava/explored)
 "CN" = (
 /obj/effect/turf_decal/siding/thinplating,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -1371,9 +1350,6 @@
 	mood_bonus = -1;
 	mood_message = "<span class='red'>What happened here..\n</span>"
 	})
-"Fr" = (
-/turf/open/floor/plating/grass/lava/orange,
-/area/overmap_encounter/planetoid/lava/explored)
 "Ft" = (
 /obj/machinery/conveyor{
 	dir = 10
@@ -1437,7 +1413,7 @@
 /obj/structure/fence{
 	dir = 1
 	},
-/turf/open/floor/plating/grass/lava,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "GM" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -1508,11 +1484,11 @@
 /obj/structure/fence/corner{
 	dir = 6
 	},
-/turf/open/floor/plating/grass/lava/orange,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "Jd" = (
 /obj/structure/flora/ausbushes/fullgrass/hell,
-/turf/open/floor/plating/grass/lava,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "Je" = (
 /obj/machinery/power/apc/auto_name/directional/west{
@@ -1555,7 +1531,7 @@
 	})
 "Kl" = (
 /obj/effect/gibspawner/generic,
-/turf/open/floor/plating/grass/lava/orange,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "KB" = (
 /obj/machinery/conveyor,
@@ -1596,10 +1572,6 @@
 	color = "FCFC35"
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/lava/explored)
-"LE" = (
-/obj/structure/marker_beacon,
-/turf/open/floor/plating/grass/lava/orange,
 /area/overmap_encounter/planetoid/lava/explored)
 "LM" = (
 /obj/machinery/conveyor,
@@ -1744,7 +1716,7 @@
 	})
 "Pm" = (
 /obj/structure/flora/tree/dead/tall,
-/turf/open/floor/plating/grass/lava/orange,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "PI" = (
 /obj/effect/turf_decal/road/line{
@@ -1949,7 +1921,7 @@
 /area/overmap_encounter/planetoid/lava/explored)
 "SS" = (
 /obj/structure/flora/ausbushes/grassybush/hell,
-/turf/open/floor/plating/grass/lava/orange,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava)
 "Tn" = (
 /obj/effect/turf_decal/number/four{
@@ -1977,12 +1949,6 @@
 	mood_bonus = -1;
 	mood_message = "<span class='red'>What happened here..\n</span>"
 	})
-"TH" = (
-/obj/structure/fence{
-	dir = 4
-	},
-/turf/open/floor/plating/grass/lava/orange,
-/area/overmap_encounter/planetoid/lava/explored)
 "TK" = (
 /obj/structure/fence/corner{
 	dir = 1
@@ -1991,7 +1957,7 @@
 /area/overmap_encounter/planetoid/lava/explored)
 "Ub" = (
 /obj/structure/flora/ausbushes/ywflowers/hell,
-/turf/open/floor/plating/grass/lava/orange,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava)
 "Up" = (
 /obj/effect/decal/cleanable/blood/tracks{
@@ -2086,7 +2052,7 @@
 	})
 "Ve" = (
 /obj/structure/flora/ausbushes/ywflowers/hell,
-/turf/open/floor/plating/grass/lava,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "Vw" = (
 /obj/effect/turf_decal/industrial/warning{
@@ -2111,7 +2077,7 @@
 	mood_message = "<span class='red'>What happened here..\n</span>"
 	})
 "WI" = (
-/turf/open/floor/plating/grass/lava,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava)
 "WR" = (
 /obj/machinery/vending/mining_equipment{
@@ -2170,7 +2136,7 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 8
 	},
-/turf/open/floor/plating/grass/lava/orange,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "XM" = (
 /obj/effect/turf_decal/siding/thinplating{
@@ -2418,18 +2384,18 @@ CX
 CX
 CX
 CX
-bA
-bA
-bA
-bA
-bA
-bA
-bA
-bA
-bA
-bA
-bA
-bA
+WI
+WI
+WI
+WI
+WI
+WI
+WI
+WI
+WI
+WI
+WI
+WI
 CX
 CX
 CX
@@ -2455,23 +2421,23 @@ jC
 jC
 jC
 jC
-Fr
-Fr
-ky
-Fr
-Fr
-Fr
-xj
-Fr
-Fr
+zC
+zC
+jF
+zC
+zC
+zC
+tN
+zC
+zC
 yG
-Fr
-Fr
+zC
+zC
 cs
-xj
-Fr
+tN
+zC
 yG
-Fr
+zC
 CX
 CX
 CX
@@ -2495,25 +2461,25 @@ jC
 jC
 jC
 jC
-ky
-Fr
-Fr
+jF
+zC
+zC
 cs
-Fr
-Fr
-xj
-Fr
+zC
+zC
+tN
+zC
 yG
-CJ
-ky
-Fr
+Ve
+jF
+zC
 yG
-Fr
-Fr
-ky
-Fr
+zC
+zC
+jF
+zC
 yG
-Fr
+zC
 jC
 jC
 jC
@@ -2536,9 +2502,9 @@ jC
 jC
 TK
 CW
-er
-er
-er
+GF
+GF
+GF
 CW
 CW
 CW
@@ -2575,7 +2541,7 @@ WI
 CX
 jC
 jC
-Fr
+zC
 sT
 PQ
 wd
@@ -2614,10 +2580,10 @@ zC
 WI
 "}
 (9,1,1) = {"
-bA
-Fr
-Fr
-Fr
+WI
+zC
+zC
+zC
 sT
 PI
 hg
@@ -2656,10 +2622,10 @@ jF
 zC
 "}
 (10,1,1) = {"
-ky
-Fr
-ky
-Fr
+jF
+zC
+jF
+zC
 sD
 rX
 se
@@ -2698,9 +2664,9 @@ GF
 mi
 "}
 (11,1,1) = {"
-Fr
-xj
-Fr
+zC
+tN
+zC
 wd
 sT
 xw
@@ -2740,9 +2706,9 @@ uY
 uO
 "}
 (12,1,1) = {"
-Fr
+zC
 pp
-Fr
+zC
 wd
 sT
 PQ
@@ -2782,9 +2748,9 @@ wd
 sD
 "}
 (13,1,1) = {"
-ky
-xj
-Fr
+jF
+tN
+zC
 wd
 sD
 wd
@@ -2825,7 +2791,7 @@ sT
 "}
 (14,1,1) = {"
 wd
-Fr
+zC
 wd
 wd
 sT
@@ -3412,9 +3378,9 @@ wd
 wd
 "}
 (28,1,1) = {"
-Fr
-Fr
-Fr
+zC
+zC
+zC
 wd
 wd
 wd
@@ -3450,13 +3416,13 @@ YR
 wd
 wd
 wd
-Fr
-Fr
+zC
+zC
 "}
 (29,1,1) = {"
 cs
-xj
-Fr
+tN
+zC
 ls
 wd
 wd
@@ -3490,16 +3456,16 @@ wd
 wd
 wd
 wd
-Fr
-Fr
-xj
-Fr
+zC
+zC
+tN
+zC
 "}
 (30,1,1) = {"
 gf
 gf
-ky
-Fr
+jF
+zC
 sD
 wd
 wd
@@ -3532,9 +3498,9 @@ wd
 wd
 wd
 wd
-xj
-ky
-ky
+tN
+jF
+jF
 gf
 "}
 (31,1,1) = {"
@@ -3542,7 +3508,7 @@ gf
 gf
 gf
 cs
-TH
+uO
 wd
 wd
 wd
@@ -3574,19 +3540,19 @@ wd
 wd
 wd
 wd
-ky
+jF
 cs
 gf
 gf
 "}
 (32,1,1) = {"
-bA
+WI
 QD
 gf
 gf
-TH
-LE
-Fr
+uO
+uY
+zC
 wd
 PQ
 wd
@@ -3614,10 +3580,10 @@ tl
 wd
 wd
 PQ
-Fr
-Fr
+zC
+zC
 to
-Fr
+zC
 gf
 gf
 "}
@@ -3627,17 +3593,17 @@ QD
 gf
 gf
 IZ
-er
-er
+GF
+GF
 CW
 CW
-er
-er
-er
-er
-er
-er
-er
+GF
+GF
+GF
+GF
+GF
+GF
+GF
 CW
 CW
 CW
@@ -3656,10 +3622,10 @@ wd
 wd
 wd
 wd
-xj
-Fr
-xj
-Fr
+tN
+zC
+tN
+zC
 gf
 gf
 "}
@@ -3669,23 +3635,23 @@ QD
 gf
 jC
 jC
-ky
-ky
-ky
-Fr
-ky
-Fr
+jF
+jF
+jF
+zC
+jF
+zC
 pp
-ky
-xj
-xj
-Fr
-Fr
-Fr
-CJ
+jF
+tN
+tN
+zC
+zC
+zC
+Ve
 jC
-Fr
-Fr
+zC
+zC
 wd
 NS
 NS
@@ -3698,9 +3664,9 @@ wd
 wd
 wd
 wd
-CJ
-ky
-ky
+Ve
+jF
+jF
 gf
 QD
 CX
@@ -3712,8 +3678,8 @@ CX
 jC
 jC
 cs
-Fr
-bA
+zC
+WI
 SS
 CX
 CX
@@ -3726,8 +3692,8 @@ CX
 CX
 jC
 gf
-ky
-Fr
+jF
+zC
 wd
 wd
 NS
@@ -3739,8 +3705,8 @@ wd
 wd
 wd
 wd
-Fr
-Fr
+zC
+zC
 cs
 QD
 QD
@@ -3781,9 +3747,9 @@ wd
 wd
 wd
 wd
-ky
-ky
-xj
+jF
+jF
+tN
 QD
 QD
 QD
@@ -3811,8 +3777,8 @@ QD
 QD
 QD
 gf
-ky
-Fr
+jF
+zC
 XH
 wd
 wd
@@ -3852,7 +3818,7 @@ CX
 QD
 QD
 QD
-Fr
+zC
 Kl
 dB
 XH
@@ -3867,7 +3833,7 @@ tl
 wd
 wd
 wd
-bA
+WI
 QD
 QD
 CX
@@ -3896,7 +3862,7 @@ QD
 QD
 iT
 SS
-ky
+jF
 XH
 wd
 wd
@@ -3935,9 +3901,9 @@ CX
 CX
 CX
 Ub
-bA
+WI
 SS
-bA
+WI
 ZN
 iz
 ZN
