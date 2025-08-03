@@ -6,7 +6,7 @@
 	name = "Double-Bladed Energy Sword Crate"
 	desc = "Contains one double-bladed energy sword, for when simply killing someone isn't enough."
 	cost = 10000
-	contains = list(/obj/item/melee/duelenergy/saber)
+	contains = list(/obj/item/melee/duelenergy/saber/red)
 	crate_name = "dualsaber crate"
 	crate_type = /obj/structure/closet/crate/secure/weapon
 
