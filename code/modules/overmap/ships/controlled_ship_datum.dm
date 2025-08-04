@@ -32,6 +32,8 @@
 	var/obj/item/key/ship/shipkey
 	/// All helms connected to this ship
 	var/list/obj/machinery/computer/helm/helms = list()
+	/// All weapon consoles connected to this ship - SHIPS_GUN_SYSTEM
+	var/list/obj/machinery/computer/ship_weapons/weapon_consoles = list()
 	/// Is helm access for this ship locked
 	var/helm_locked = FALSE
 	///Shipwide bank account used for cargo consoles and bounty payouts.
@@ -192,6 +194,7 @@
 	SSovermap.controlled_ships -= src
 	current_overmap.controlled_ships -= src
 	helms.Cut()
+	weapon_consoles.Cut() // SHIPS_GUN_SYSTEM
 	QDEL_LIST(missions)
 	LAZYCLEARLIST(owner_candidates)
 	if(!QDELETED(shuttle_port))

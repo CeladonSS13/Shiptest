@@ -1,5 +1,8 @@
 #define INIT_ORDER_MODPACKS 16.5
 
+// SHIPS_GUN_SYSTEM - Ship weapons system modpack
+#include "ship_weapons/_ship_weapons.dm"
+
 SUBSYSTEM_DEF(modpacks)
 	name = "Modpacks"
 	init_order = INIT_ORDER_MODPACKS
