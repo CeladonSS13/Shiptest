@@ -26,15 +26,6 @@
 //Прочее
 	var/obj/item/ammo_box/magazine/g36/sh/alternate_magazine
 NO_MAG_GUN_HELPER(automatic/assault/g36sh)
-/obj/item/gun/ballistic/automatic/assault/g36sh/Initialize()
-	. = ..()
-	if (!alternate_magazine)
-		alternate_magazine = new default_ammo_type(src)
-	// spawnwithmagazine = FALSE
-	default_ammo_type = /obj/item/ammo_box/magazine/g36
-	allowed_ammo_types = list(
-		/obj/item/ammo_box/magazine/g36, /obj/item/ammo_box/magazine/g36/sh, /obj/item/ammo_box/magazine/g36/drum
-	)
 
 /obj/item/gun/ballistic/automatic/assault/g36sh/inteq
 	name = "\improper G36m-SH"
@@ -71,15 +62,6 @@ NO_MAG_GUN_HELPER(automatic/assault/g36sh/inteq)
 	)
 	var/obj/item/ammo_box/magazine/g36/alternate_magazine
 NO_MAG_GUN_HELPER(automatic/assault/g36)
-/obj/item/gun/ballistic/automatic/assault/g36/Initialize()
-	. = ..()
-	if (!alternate_magazine)
-		alternate_magazine = new default_ammo_type(src)
-	// spawnwithmagazine = FALSE
-	default_ammo_type = /obj/item/ammo_box/magazine/g36
-	allowed_ammo_types = list(
-		/obj/item/ammo_box/magazine/g36,
-	)
 
 // /obj/item/gun/ballistic/automatic/assault/g36/no_mag
 // 		spawnwithmagazine = FALSE
