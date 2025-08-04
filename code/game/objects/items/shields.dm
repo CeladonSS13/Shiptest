@@ -97,8 +97,8 @@
 
 // [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition + Rebalance
 	slowdown = 0.5
-	max_integrity = 900
-	block_chance = 70
+	max_integrity = 600
+	block_chance = 60
 	icon = 'mod_celadon/_storge_icons/icons/items/weapons/shields.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/shields_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/shields_righthand.dmi'
@@ -335,8 +335,8 @@
 	desc = "An advanced riot shield made of lightweight materials that collapses for easy storage. Use 10 plasteel to repair."
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/shields_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/shields_righthand.dmi'
-	max_integrity = 600
-	block_chance = 60
+	max_integrity = 400
+	block_chance = 50
 	slowdown = 0.3
 	broken_shield = TRUE
 // [/CELADON-ADD]
