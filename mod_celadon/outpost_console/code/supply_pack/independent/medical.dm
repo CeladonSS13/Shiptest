@@ -58,6 +58,22 @@
 	contains = list(/obj/machinery/iv_drip)
 	crate_name = "iv drip crate"
 
+/datum/supply_pack/medical/bloodpacks
+	name = "Blood Pack Variety Crate"
+	desc = "Contains several different blood packs for reintroducing blood to patients."
+	cost = 700
+	contains = list(/obj/item/reagent_containers/blood/APlus,
+					/obj/item/reagent_containers/blood/AMinus,
+					/obj/item/reagent_containers/blood/BPlus,
+					/obj/item/reagent_containers/blood/BMinus,
+					/obj/item/reagent_containers/blood/OPlus,
+					/obj/item/reagent_containers/blood/OMinus,
+					/obj/item/reagent_containers/blood/lizard,
+					/obj/item/reagent_containers/blood/elzuose,
+					/obj/item/reagent_containers/blood/synthetic)
+	crate_name = "blood freezer"
+	crate_type = /obj/structure/closet/crate/freezer
+
 /datum/supply_pack/faction/independent/medical/defibs
 	name = "Defibrillator Crate"
 	desc = "Contains a defibrillator for bringing the recently deceased back to life."
