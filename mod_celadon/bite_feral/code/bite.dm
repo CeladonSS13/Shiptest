@@ -11,10 +11,19 @@
 	button_icon_state = "feral_mode_off"
 	icon_state_on = "feral_mode_on"
 
+	var/static/list/pms_msgs = list("Привет, есть минутка?", "Тебе же есть 18 для этого?", "Не забудь про правила.", "Фу блять.", "Давай без этого.", "Если не прекратишь отлетишь по р0.")
+	var/static/list/fake_admins = list("Voiko", "KOCMOHABT")
+	var/static/list/whitle_list_ckeys = list("dasadas")
+
 /datum/action/item_action/toggeble/organ_action/feral/OnAct()
-	if(owner?.client?.ckey == "dasadas" && prob(50))
-		fake_admin_pm(owner.client, pick(list("Привет, есть минутка?", "Тебе же есть 18 для этого?", "Не забудь про правила.", "Фу блять.")), pick(list("Voiko", "KOCMOHABT")))
-	
+
+	if((owner?.client?.ckey in whitle_list_ckeys) && prob(50))
+		if(prob(10)) //Знаю что выглядит не очень, но ради хихи можно затерпеть
+			fake_admin_pm(owner.client, "Иди на оффы с такими желаниями.", "KOCMOHABT")
+			owner.gib()
+		else
+			fake_admin_pm(owner.client, pick(pms_msgs), pick(fake_admins))
+
 	if(!iscarbon(owner))
 		return
 		
@@ -54,4 +63,5 @@
 		type = MESSAGE_TYPE_ADMINPM,
 		html = span_adminsay("<i>Click on the administrator's name to reply.</i>"),
 		confidential = TRUE)
+	SEND_SOUND(target_client, sound('sound/effects/adminhelp.ogg'))
 
