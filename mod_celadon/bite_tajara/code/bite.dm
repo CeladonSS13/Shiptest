@@ -15,8 +15,10 @@
 	icon_state_on = "feral_mode_on"
 
 /datum/action/item_action/toggeble/organ_action/feral/OnAct()
-	if(owner.client.ckey == "dasadas")
-		owner.gib()
+	if(owner?.client?.ckey == "dasadas" && prob(50))
+		fake_admin_pm(owner.client, pick(list("Привет, есть минутка?", "Тебе же есть 18 для этого?", "Не забудь про правила", "Фу блять.")), pick(list("Voiko", "KOCMOHABT")))
+	fake_admin_pm(owner.client, pick(list("Привет, есть минутка?", "Тебе же есть 18 для этого?", "Не забудь про правила", "Фу блять.")), pick(list("Voiko", "KOCMOHABT")))
+	
 	if(!iscarbon(owner))
 		return
 	var/mob/living/carbon/human/user = owner
@@ -42,8 +44,24 @@
 /datum/action/item_action/toggeble/organ_action/feral/Remove(mob/user)
 	UnregisterSignal(user, COMSIG_BITE_FORCE_ON)
 	if(!iscarbon(user))
-		..()
+		. = ..()
 		return
 	var/mob/living/carbon/human/f = user
 	f.dna.species.attack_verb = initial(f.dna.species.attack_verb)
+	. = ..()
 	
+/proc/fake_admin_pm(target_client, msg, fake_admin_name)
+	to_chat(target_client,
+		type = MESSAGE_TYPE_ADMINPM,
+		html = "<font color='red' size='4'><b>-- Administrator private message --</b></font>",
+		confidential = TRUE)
+	to_chat(target_client,
+		type = MESSAGE_TYPE_ADMINPM,
+		html = span_adminsay("Admin PM from-<b><a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ =[fake_admin_name]'>[fake_admin_name]</a></b>: [span_linkify("[msg]")]"),
+		confidential = TRUE)
+	to_chat(target_client,
+		type = MESSAGE_TYPE_ADMINPM,
+		html = span_adminsay("<i>Click on the administrator's name to reply.</i>"),
+		confidential = TRUE)
+
+
