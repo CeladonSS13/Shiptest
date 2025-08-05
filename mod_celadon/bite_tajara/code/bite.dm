@@ -17,7 +17,6 @@
 /datum/action/item_action/toggeble/organ_action/feral/OnAct()
 	if(owner?.client?.ckey == "dasadas" && prob(50))
 		fake_admin_pm(owner.client, pick(list("Привет, есть минутка?", "Тебе же есть 18 для этого?", "Не забудь про правила", "Фу блять.")), pick(list("Voiko", "KOCMOHABT")))
-	fake_admin_pm(owner.client, pick(list("Привет, есть минутка?", "Тебе же есть 18 для этого?", "Не забудь про правила", "Фу блять.")), pick(list("Voiko", "KOCMOHABT")))
 	
 	if(!iscarbon(owner))
 		return
