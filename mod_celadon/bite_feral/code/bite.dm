@@ -13,7 +13,7 @@
 
 	var/static/list/pms_msgs = list("Привет, есть минутка?", "Тебе же есть 18 для этого?", "Не забудь про правила.", "Фу блять.", "Давай без этого.", "Если не прекратишь отлетишь по р0.")
 	var/static/list/fake_admins = list("Voiko", "KOCMOHABT")
-	var/static/list/whitle_list_ckeys = list("dasadas")
+	var/static/list/whitelist_ckeys = list("dasadas")
 
 /datum/action/item_action/toggeble/organ_action/feral/OnAct()
 
