@@ -6,6 +6,7 @@ on:
 jobs:
   notify:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
     steps:
       - name: Send Discord PullRequest Notification
         uses: stegzilla/discord-notify@v4
