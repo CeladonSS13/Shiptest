@@ -1750,7 +1750,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	else
 
 		var/atk_verb = user.dna.species.attack_verb
-		// [CELADON-ADD] CELADON_BITE_TAJARA
+		// [CELADON-ADD] CELADON_BITE_FERAL
 		var/attack_verb_bonus = 0 //Ну а хуле
 		var/sanity_level_mood = 5
 		SEND_SIGNAL(user, COMSIG_REQUEST_SANITY_LEVEL, &sanity_level_mood)
@@ -1759,7 +1759,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		var/crazy_feral_cat = clamp((starving_cat_bonus * sanity_level_mood), 0, 100)
 		if(prob(crazy_feral_cat))
 			atk_verb = ATTACK_EFFECT_BITE
-		// [/CELADON-ADD] CELADON_BITE_TAJARA
+		// [/CELADON-ADD] CELADON_BITE_FERAL
 		if(target.body_position == LYING_DOWN)
 			atk_verb = ATTACK_EFFECT_KICK
 
@@ -1770,7 +1770,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				user.do_attack_animation(target, ATTACK_EFFECT_CLAW)
 			if(ATTACK_EFFECT_SMASH)
 				user.do_attack_animation(target, ATTACK_EFFECT_SMASH)
-			// [CELADON-ADD] CELADON_BITE_TAJARA
+			// [CELADON-ADD] CELADON_BITE_FERAL
 			if(ATTACK_EFFECT_BITE)
 				if(user.is_mouth_covered()) //Намордник
 					user.balloon_alert(user, "у вас закрыт рот")
@@ -1782,11 +1782,11 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			else
 				user.do_attack_animation(target, ATTACK_EFFECT_PUNCH)
 
-		// [CELADON-EDIT] CELADON_BITE_TAJARA
+		// [CELADON-EDIT] CELADON_BITE_FERAL
 		//var/damage = rand(user.dna.species.punchdamagelow, user.dna.species.punchdamagehigh) // CELADON-EDIT - ORIGINAL
 		var/damage = rand(user.dna.species.punchdamagelow + attack_verb_bonus, user.dna.species.punchdamagehigh + attack_verb_bonus)
 		// [/CELADON-EDIT]
-		// [CELADON-ADD] CELADON_BITE_TAJARA
+		// [CELADON-ADD] CELADON_BITE_FERAL
 		if(user != target && (target.mob_biotypes & MOB_ORGANIC)) //мне уже похуй на качество кода
 			var/datum/reagents/tasty_meal = new()
 			tasty_meal.add_reagent(/datum/reagent/consumable/nutriment/protein, round(damage/3, 1))

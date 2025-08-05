@@ -2,8 +2,8 @@
 /// desc - описание для модпака. Может использоваться для списка глаголов модпака в качестве описания.
 /// author - автор(ы) этого модпака.
 
-/datum/modpack/bite_tajara
-	name = "Bite tajara"
+/datum/modpack/bite_feral
+	name = "Bite feral"
 	desc = "Добавляет таярам возможность делать кусь :3"
 	author = "Pelmenik123 (code)"
 
