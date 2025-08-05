@@ -133,16 +133,16 @@
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
 "E" = (
-/obj/docking_port/mobile{
-	dir = 2;
-	port_direction = 8;
-	preferred_direction = 4;
-	name = "rider"
-	},
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/security/glass/seclock{
 	dir = 4;
 	name = "Equipment Room"
+	},
+/obj/docking_port/mobile{
+	dir = 8;
+	name = "nail shuttle";
+	port_direction = 2;
+	preferred_direction = 8
 	},
 /turf/open/floor/plasteel/lightdark,
 /area/ship/bridge)
