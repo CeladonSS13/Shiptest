@@ -16,13 +16,8 @@
 	var/static/list/whitelist_ckeys = list("dasadas")
 
 /datum/action/item_action/toggeble/organ_action/feral/OnAct()
-
-	if((owner?.client?.ckey in whitle_list_ckeys) && prob(50))
-		if(prob(10)) //Знаю что выглядит не очень, но ради хихи можно затерпеть
-			fake_admin_pm(owner.client, "Иди на оффы с такими желаниями.", "KOCMOHABT")
-			owner.gib()
-		else
-			fake_admin_pm(owner.client, pick(pms_msgs), pick(fake_admins))
+	if((owner?.client?.ckey in whitelist_ckeys) && prob(5))
+		fake_admin_pm(owner.client, pick(pms_msgs), pick(fake_admins))
 
 	if(!iscarbon(owner))
 		return
