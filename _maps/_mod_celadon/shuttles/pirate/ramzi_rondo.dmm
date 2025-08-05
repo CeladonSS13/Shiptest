@@ -21,38 +21,52 @@
 	pixel_y = -6;
 	pixel_x = 6
 	},
-/obj/item/clothing/under/syndicate{
-	pixel_y = 8;
-	pixel_x = 7
-	},
-/obj/item/clothing/under/syndicate{
-	pixel_y = 8;
-	pixel_x = 7
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 4
 	},
-/obj/item/clothing/under/syndicate/skirt{
-	pixel_y = 8;
-	pixel_x = -8
-	},
-/obj/item/clothing/under/syndicate/skirt{
-	pixel_y = 8;
-	pixel_x = -8
-	},
-/obj/item/clothing/under/syndicate/suns/pkuniform{
-	pixel_y = -7;
-	pixel_x = -7
-	},
-/obj/item/clothing/under/syndicate/suns/pkuniform{
-	pixel_y = -7;
-	pixel_x = -7
-	},
 /obj/item/clothing/gloves/combat{
 	pixel_y = -5
 	},
 /obj/item/clothing/gloves/combat{
 	pixel_y = -5
+	},
+/obj/item/clothing/neck/shemagh/ramzi{
+	pixel_x = -6;
+	pixel_y = -4
+	},
+/obj/item/clothing/neck/shemagh/ramzi{
+	pixel_x = -6;
+	pixel_y = -4
+	},
+/obj/item/storage/backpack/security{
+	pixel_y = 9
+	},
+/obj/item/storage/backpack/security{
+	pixel_y = 9
+	},
+/obj/item/storage/backpack/satchel/sec{
+	pixel_x = -1;
+	pixel_y = 6
+	},
+/obj/item/storage/backpack/satchel/sec{
+	pixel_x = -1;
+	pixel_y = 6
+	},
+/obj/item/clothing/under/syndicate/ramzi{
+	pixel_x = 9;
+	pixel_y = 7
+	},
+/obj/item/clothing/under/syndicate/ramzi{
+	pixel_x = 9;
+	pixel_y = 7
+	},
+/obj/item/clothing/under/syndicate/ramzi/overalls{
+	pixel_x = -8;
+	pixel_y = 7
+	},
+/obj/item/clothing/under/syndicate/ramzi/overalls{
+	pixel_x = -8;
+	pixel_y = 7
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew)
@@ -1196,8 +1210,8 @@
 /obj/machinery/light/directional/west,
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
-/obj/item/clothing/mask/gas/syndicate,
 /obj/item/tank/jetpack/oxygen/harness,
+/obj/item/clothing/mask/gas/ramzi,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "pY" = (
@@ -1356,9 +1370,9 @@
 	dir = 8
 	},
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
-/obj/item/clothing/mask/gas/syndicate,
 /obj/effect/turf_decal/corner/opaque/syndiered/half,
 /obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/clothing/mask/gas/ramzi,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/armory)
 "tP" = (
@@ -1412,24 +1426,30 @@
 	pixel_y = 6;
 	pixel_x = 10
 	},
-/obj/item/clothing/suit/armor/vest/capcarapace/syndievest{
-	pixel_x = -7
+/obj/item/melee/classic_baton/telescopic/contractor_baton{
+	pixel_x = 4
 	},
-/obj/item/clothing/head/HoS/syndicate{
+/obj/effect/turf_decal/corner/opaque/syndiered/half{
+	dir = 1
+	},
+/obj/item/clothing/suit/armor/ramzi/officer{
+	pixel_y = -6;
+	pixel_x = -6
+	},
+/obj/item/clothing/head/ramzi/beret{
 	pixel_y = 5;
 	pixel_x = -8
 	},
-/obj/item/clothing/head/HoS/beret/syndicate{
+/obj/item/clothing/suit/armor/ramzi/captain{
+	pixel_x = 8;
+	pixel_y = -4
+	},
+/obj/item/clothing/head/ramzi/peaked{
 	pixel_y = 5;
-	pixel_x = 4
+	pixel_x = 9
 	},
-/obj/item/clothing/suit/armor/vest/capcarapace/syndicate{
-	pixel_y = -5;
-	pixel_x = 4
-	},
-/obj/item/melee/classic_baton/telescopic/contractor_baton,
-/obj/effect/turf_decal/corner/opaque/syndiered/half{
-	dir = 1
+/obj/item/clothing/under/syndicate/ramzi/officer{
+	pixel_y = 8
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
@@ -1590,7 +1610,6 @@
 "vH" = (
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi/elite,
-/obj/item/clothing/mask/gas/syndicate,
 /obj/machinery/firealarm/directional/east,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
@@ -1599,6 +1618,7 @@
 /obj/machinery/camera/autoname{
 	dir = 1
 	},
+/obj/item/clothing/mask/gas/ramzi,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "vT" = (
@@ -1780,34 +1800,6 @@
 	name = "armor locker";
 	req_one_access_txt = "1"
 	},
-/obj/item/clothing/suit/armor/vest/syndie{
-	pixel_y = -7;
-	pixel_x = -4
-	},
-/obj/item/clothing/suit/armor/vest/syndie{
-	pixel_y = -7;
-	pixel_x = -4
-	},
-/obj/item/clothing/suit/armor/vest/syndie{
-	pixel_y = -7;
-	pixel_x = -4
-	},
-/obj/item/clothing/suit/armor/vest/syndie{
-	pixel_y = -7;
-	pixel_x = -4
-	},
-/obj/item/clothing/head/helmet/swat{
-	pixel_y = 5;
-	pixel_x = -4
-	},
-/obj/item/clothing/head/helmet/swat{
-	pixel_y = 5;
-	pixel_x = -4
-	},
-/obj/item/clothing/head/helmet/swat{
-	pixel_y = 5;
-	pixel_x = -4
-	},
 /obj/item/clothing/glasses/hud/security/sunglasses/ngr{
 	name = "Gorlex modified mesons";
 	pixel_y = 8;
@@ -1844,6 +1836,42 @@
 /obj/item/clothing/mask/balaclava/combat{
 	pixel_y = -4;
 	pixel_x = 10
+	},
+/obj/item/clothing/suit/armor/ramzi{
+	pixel_y = -7;
+	pixel_x = -4
+	},
+/obj/item/clothing/suit/armor/ramzi{
+	pixel_y = -7;
+	pixel_x = -4
+	},
+/obj/item/clothing/suit/armor/ramzi{
+	pixel_y = -7;
+	pixel_x = -4
+	},
+/obj/item/clothing/suit/armor/ramzi{
+	pixel_y = -7;
+	pixel_x = -4
+	},
+/obj/item/clothing/head/helmet/ramzi{
+	icon_state = "ramzi_x11";
+	pixel_y = 5;
+	pixel_x = -4
+	},
+/obj/item/clothing/head/helmet/ramzi{
+	icon_state = "ramzi_x11";
+	pixel_y = 5;
+	pixel_x = -4
+	},
+/obj/item/clothing/head/helmet/ramzi{
+	icon_state = "ramzi_x11";
+	pixel_y = 5;
+	pixel_x = -4
+	},
+/obj/item/clothing/head/helmet/ramzi{
+	icon_state = "ramzi_x11";
+	pixel_y = 5;
+	pixel_x = -4
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/armory)
@@ -2157,9 +2185,9 @@
 "BE" = (
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
-/obj/item/clothing/mask/gas/syndicate,
 /obj/effect/turf_decal/corner/opaque/syndiered/three_quarters,
 /obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/clothing/mask/gas/ramzi,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/armory)
 "BT" = (
@@ -2198,26 +2226,24 @@
 /obj/structure/closet/wall/orange/directional/east{
 	name = "locker"
 	},
-/obj/item/clothing/gloves/combat/insul{
-	pixel_y = -9
-	},
 /obj/item/tank/internals/emergency_oxygen/double{
 	pixel_x = -10;
 	pixel_y = -3
 	},
-/obj/item/clothing/head/hardhat/red{
-	name = "hard hat";
-	pixel_x = 6;
-	pixel_y = 12
-	},
-/obj/item/clothing/suit/hazardvest/ngr{
-	desc = "A blood-red high-visibility vest typically used in work zones by the Gorlex.";
-	pixel_y = -1;
-	pixel_x = 6
-	},
 /obj/item/clothing/glasses/welding{
 	pixel_y = 9;
 	pixel_x = -4
+	},
+/obj/item/clothing/head/hardhat/ramzi{
+	pixel_y = 12;
+	pixel_x = 6
+	},
+/obj/item/clothing/suit/ramzi{
+	pixel_y = -1;
+	pixel_x = 6
+	},
+/obj/item/clothing/gloves/combat/insul{
+	pixel_y = -9
 	},
 /obj/item/storage/belt/utility/syndicate{
 	pixel_y = -7
@@ -2263,13 +2289,13 @@
 "CW" = (
 /obj/effect/decal/cleanable/crayon{
 	icon_state = "n";
-	pixel_x = -18;
-	pixel_y = -4
+	pixel_x = -25;
+	pixel_y = -5
 	},
 /obj/effect/decal/cleanable/crayon{
 	icon_state = "d";
-	pixel_x = -5;
-	pixel_y = -4
+	pixel_x = -11;
+	pixel_y = -6
 	},
 /obj/effect/turf_decal/steeldecal/steel_decals4{
 	dir = 10
@@ -2398,14 +2424,17 @@
 	pixel_x = -11;
 	pixel_y = -10
 	},
-/obj/item/clothing/head/ngr/surgical{
-	desc = "A surgical cap used by field medics of the Gorlex's 2nd Battlegroup.";
-	pixel_x = 5;
-	pixel_y = -4
-	},
 /obj/item/clothing/mask/surgical{
 	pixel_y = -9;
 	pixel_x = 6
+	},
+/obj/item/clothing/head/ramzi/surgical{
+	pixel_y = -4;
+	pixel_x = 5
+	},
+/obj/item/clothing/suit/ramzi/smock{
+	pixel_y = -13;
+	pixel_x = 8
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/armory)
@@ -3271,7 +3300,7 @@
 /obj/effect/decal/cleanable/crayon{
 	icon_state = "a";
 	pixel_y = -5;
-	pixel_x = 4
+	pixel_x = -4
 	},
 /turf/open/floor/engine/hull/reinforced{
 	icon = 'mod_celadon/_storge_icons/icons/structures/floors/metal_2.dmi';
@@ -3371,11 +3400,11 @@
 "SC" = (
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
-/obj/item/clothing/mask/gas/syndicate,
 /obj/effect/turf_decal/corner/opaque/syndiered/three_quarters{
 	dir = 8
 	},
 /obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/clothing/mask/gas/ramzi,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/armory)
 "SD" = (
