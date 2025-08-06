@@ -34,9 +34,9 @@
 
 	equipping_sound = EQUIP_SOUND_VFAST_GENERIC
 	unequipping_sound = UNEQUIP_SOUND_VFAST_GENERIC
-	// [CELADON-EDIT] - CELADON_BALANCE_CD
+	// [CELADON-REMOVE] - CELADON_BALANCE_CD
 	//equip_delay_self = EQUIP_DELAY_BACK
-	// [/CELADON-EDIT]
+	// [/CELADON-REMOVE]
 	equip_delay_other = EQUIP_DELAY_BACK * 1.5
 	strip_delay = EQUIP_DELAY_BACK * 1.5
 	equip_self_flags = EQUIP_ALLOW_MOVEMENT | EQUIP_SLOWDOWN
@@ -218,9 +218,9 @@
 
 	equipping_sound = null
 	unequipping_sound = null
-	// [CELADON-EDIT] - CELADON_BALANCE_CD
+	// [CELADON-REMOVE] - CELADON_BALANCE_CD
 	//equip_delay_self = null
-	// [/CELADON-EDIT]
+	// [/CELADON-REMOVE]
 	equip_delay_other = EQUIP_DELAY_BACK
 	strip_delay = EQUIP_DELAY_BACK
 
