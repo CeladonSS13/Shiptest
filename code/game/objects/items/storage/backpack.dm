@@ -48,10 +48,9 @@
 	STR.max_volume = STORAGE_VOLUME_BACKPACK
 	STR.max_w_class = MAX_WEIGHT_CLASS_BACKPACK
 	STR.use_sound = 'sound/items/storage/unzip.ogg'
-	// [CELADON-EDIT] - CELADON_BALANCE_CD
+	// [CELADON-REMOVE] - CELADON_BALANCE_CD
 	// STR.worn_access = FALSE
-	STR.worn_access = TRUE
-	// [/CELADON-EDIT]
+	// [/CELADON-REMOVE]
 
 /obj/item/storage/backpack/examine(mob/user)
 	. = ..()
@@ -224,12 +223,16 @@
 	equip_delay_other = EQUIP_DELAY_BACK
 	strip_delay = EQUIP_DELAY_BACK
 
+// [CELADON-REMOVE] - CELADON_BALANCE_CD
+/*
 /obj/item/storage/backpack/satchel/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_volume = STORAGE_VOLUME_SATCHEL
 	STR.max_w_class = MAX_WEIGHT_CLASS_M_CONTAINER
 	STR.worn_access = TRUE
+*/
+// [CELADON-REMOVE]
 
 /obj/item/storage/backpack/satchel/leather
 	name = "leather satchel"
