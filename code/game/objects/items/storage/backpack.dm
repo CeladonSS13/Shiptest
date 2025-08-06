@@ -218,7 +218,9 @@
 
 	equipping_sound = null
 	unequipping_sound = null
-	equip_delay_self = null
+	// [CELADON-EDIT] - CELADON_BALANCE_CD
+	//equip_delay_self = null
+	// [/CELADON-EDIT]
 	equip_delay_other = EQUIP_DELAY_BACK
 	strip_delay = EQUIP_DELAY_BACK
 
