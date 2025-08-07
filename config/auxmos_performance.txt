@@ -1,0 +1,20 @@
+# AUXMOS Performance Configuration
+# Добавить в config.txt или установить как переменные окружения
+
+# Количество потоков для AUXMOS (по числу ядер CPU)
+AUXMOS_THREAD_COUNT 4
+
+# Максимальное время обработки в мс
+AUXMOS_MAX_PROCESSING_TIME 15
+
+# Лимит тайлов за цикл
+AUXMOS_TURF_LIMIT 10000
+
+# Лимит excited groups
+AUXMOS_EXCITED_GROUP_LIMIT 500
+
+# Включить агрессивные оптимизации
+AUXMOS_AGGRESSIVE_OPTIMIZATIONS 1
+
+# Размер буфера для газовых смесей
+AUXMOS_GAS_MIXTURE_BUFFER 2048

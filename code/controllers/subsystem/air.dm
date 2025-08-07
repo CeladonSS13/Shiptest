@@ -2,7 +2,7 @@ SUBSYSTEM_DEF(air)
 	name = "Atmospherics"
 	init_order = INIT_ORDER_AIR
 	priority = FIRE_PRIORITY_AIR
-	wait = 0.5 SECONDS
+	wait = 1 SECONDS
 	flags = SS_BACKGROUND
 	runlevels = RUNLEVEL_GAME | RUNLEVEL_POSTGAME
 
@@ -61,19 +61,25 @@ SUBSYSTEM_DEF(air)
 
 	var/planet_equalize_enabled = TRUE
 	// Max number of turfs equalization will grab.
-	var/equalize_turf_limit = 30
+	var/equalize_turf_limit = 100
 	// Max number of turfs to look for a space turf, and max number of turfs that will be decompressed.
-	var/equalize_hard_turf_limit = 2000
+	var/equalize_hard_turf_limit = 5000
 	// Whether equalization should be enabled at all.
 	var/equalize_enabled = TRUE
 	// The ratio of gas "shared" from the immutable planetary atmos mix to planetary tiles
-	var/planet_share_ratio = 0.25
+	var/planet_share_ratio = 0.15
 	// Whether turf-to-turf heat exchanging should be enabled.
 	var/heat_enabled = FALSE
 	// Max number of times process_turfs will share in a tick.
-	var/share_max_steps = 3
+	var/share_max_steps = 5
 	// Excited group processing will try to equalize groups with total pressure difference less than this amount.
-	var/excited_group_pressure_goal = 1
+	var/excited_group_pressure_goal = 2
+
+	// Performance optimization vars
+	var/adaptive_processing = TRUE
+	var/max_cost_threshold = 50
+	var/min_cost_threshold = 10
+	var/performance_mode = 0
 
 	var/lasttick = 0
 
@@ -128,6 +134,14 @@ SUBSYSTEM_DEF(air)
 /datum/controller/subsystem/air/fire(resumed = FALSE)
 	var/timer = TICK_USAGE_REAL
 	var/seconds_per_tick = wait * 0.1
+	
+	// Performance monitoring
+	if(adaptive_processing && times_fired % 10 == 0)
+		adjust_performance()
+	if(times_fired % 50 == 0)
+		performance_monitor()
+	if(times_fired % 300 == 0)
+		cleanup_gas_mixtures()
 
 	//Rebuilds can happen at any time, so this needs to be done outside of the normal system
 	cost_rebuilds = 0
@@ -562,3 +576,58 @@ SUBSYSTEM_DEF(air)
 #undef SSAIR_ACTIVETURFS
 #undef SSAIR_TURF_POST_PROCESS
 #undef SSAIR_FINALIZE_TURFS
+
+// PERFORMANCE OPTIMIZATION PROCS
+/datum/controller/subsystem/air/proc/adjust_performance()
+	if(!adaptive_processing)
+		return
+		
+	var/avg_cost = (cost_turfs + cost_groups + cost_equalize) / 3
+	
+	if(avg_cost > max_cost_threshold)
+		equalize_turf_limit = max(20, equalize_turf_limit - 10)
+		share_max_steps = max(2, share_max_steps - 1)
+	else if(avg_cost < min_cost_threshold)
+		equalize_turf_limit = min(150, equalize_turf_limit + 5)
+		share_max_steps = min(7, share_max_steps + 1)
+
+/datum/controller/subsystem/air/proc/set_performance_mode(mode)
+	performance_mode = mode
+	switch(mode)
+		if(0)
+			wait = 1 SECONDS
+			equalize_turf_limit = 100
+			share_max_steps = 5
+		if(1)
+			wait = 1.5 SECONDS
+			equalize_turf_limit = 60
+			share_max_steps = 3
+		if(2)
+			wait = 2 SECONDS
+			equalize_turf_limit = 30
+			share_max_steps = 2
+
+/datum/controller/subsystem/air/proc/performance_monitor()
+	var/total_cost = cost_turfs + cost_groups + cost_equalize + cost_pipenets
+	
+	if(total_cost > 80 && performance_mode < 2)
+		set_performance_mode(performance_mode + 1)
+		message_admins("Атмосфера: режим производительности [performance_mode]")
+		
+	else if(total_cost < 30 && performance_mode > 0)
+		set_performance_mode(performance_mode - 1)
+		message_admins("Атмосфера: режим качества [performance_mode]")
+
+/datum/controller/subsystem/air/proc/optimize_gas_reactions()
+	return // Отключено для совместимости
+
+/datum/controller/subsystem/air/proc/cleanup_gas_mixtures()
+	var/cleaned = 0
+	for(var/datum/gas_mixture/GM in world)
+		if(GM.total_moles() < 0.01)
+			qdel(GM)
+			cleaned++
+			if(cleaned > 100) break
+	
+	if(cleaned > 0)
+		log_world("Очищено [cleaned] газовых смесей")

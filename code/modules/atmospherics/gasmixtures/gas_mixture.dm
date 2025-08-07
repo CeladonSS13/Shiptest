@@ -138,6 +138,13 @@ GLOBAL_LIST_INIT(auxtools_atmos_initialized, FALSE)
 /datum/gas_mixture/proc/vv_react(datum/holder)
 	return react(holder)
 
+/datum/gas_mixture/proc/is_processing_worthy()
+	if(total_moles() < 0.1)
+		return FALSE
+	if(abs(return_temperature() - T20C) < 5)
+		return FALSE
+	return TRUE
+
 /datum/gas_mixture/proc/remove(amount)
 	//Proportionally removes amount of gas from the gas_mixture
 	//Returns: gas_mixture with the gases removed

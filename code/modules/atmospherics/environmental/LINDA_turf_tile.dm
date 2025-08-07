@@ -7,6 +7,10 @@
 	var/list/atmos_adjacent_turfs
 	//bitfield of dirs in which we thermal conductivity is blocked
 	var/conductivity_blocked_directions = NONE
+	
+	// Performance optimization vars
+	var/adjacency_cache_time = 0
+	var/list/cached_adjacent_turfs
 
 	//used for mapping and for breathing while in walls (because that's a thing that needs to be accounted for...)
 	//string parsed by /datum/gas/proc/copy_from_turf
@@ -29,6 +33,7 @@
 	var/flammability = 0.3
 
 	var/list/atmos_overlay_types //gas IDs of current active gas overlays
+	var/last_significant_change = 0
 
 /turf/open/Initialize(mapload, inherited_virtual_z)
 	air = new(2500,src)
@@ -246,3 +251,17 @@
 		else if(move_force > 0)
 			step(src, direction)
 		last_high_pressure_movement_air_cycle = SSair.times_fired
+/turf/proc/get_cached_adjacent_turfs()
+	if(world.time - adjacency_cache_time > 50)
+		cached_adjacent_turfs = get_atmos_adjacent_turfs()
+		adjacency_cache_time = world.time
+	return cached_adjacent_turfs
+
+/turf/open/proc/needs_processing()
+	if(!air)
+		return FALSE
+	if(world.time - last_significant_change > 100)
+		return FALSE
+	if(air.total_moles() < 0.05)
+		return FALSE
+	return TRUE
