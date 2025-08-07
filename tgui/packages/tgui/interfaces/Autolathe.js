@@ -278,14 +278,14 @@ const MaterialRow = (props, context) => {
               onClick={() => onRelease(5)}
             />
             <Button
-              disabled={material.sheets_amount < 15}
-              content="x15"
-              onClick={() => onRelease(15)}
+              disabled={material.sheets_amount < 10}
+              content="x10"
+              onClick={() => onRelease(10)}
             />
             <Button
-              disabled={material.sheets_amount < 30}
-              content="x30"
-              onClick={() => onRelease(30)}
+              disabled={material.sheets_amount < 25}
+              content="x25"
+              onClick={() => onRelease(25)}
             />
           </Table.Cell>
           <Table.Cell collapsing textAlign="right">
