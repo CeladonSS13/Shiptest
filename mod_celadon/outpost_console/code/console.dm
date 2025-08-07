@@ -88,6 +88,8 @@
 				if(ishuman(usr))
 					var/mob/living/carbon/human/user = usr
 					user.put_in_hands(cash_chip)
+				// Логирование снятие денег
+				log_econ("[key_name(usr)] withdrew [val] credits as holochip from [src.name] at [AREACOORD(src)]")
 				playsound(src, 'sound/machines/twobeep_high.ogg', 50, TRUE)
 				src.visible_message(span_notice("[src] dispenses a holochip."))
 			return TRUE
@@ -157,6 +159,8 @@
 					rank = "Silicon"
 				var/datum/supply_order/SO = new(pack, name, rank, usr.ckey, "")
 				new /obj/effect/pod_landingzone(landing_turf, podType, SO)
+				// Логирование оплаты
+				log_econ("[key_name(usr)] purchased [pack.name] for [pack.cost] credits from [src.name] at [AREACOORD(src)]")
 				update_appearance() // ??????????????????
 				return TRUE
 
