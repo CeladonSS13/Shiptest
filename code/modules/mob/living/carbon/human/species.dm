@@ -1752,7 +1752,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		var/atk_verb = user.dna.species.attack_verb
 		// [CELADON-ADD] CELADON_BITE_FERAL
 		var/attack_verb_bonus = 0 //Ну а хуле
-		var/sanity_level_mood = 5
+		var/sanity_level_mood = 2
 		SEND_SIGNAL(user, COMSIG_REQUEST_SANITY_LEVEL, &sanity_level_mood)
 		//Копирывание логики укусов
 		var/starving_cat_bonus = user.nutrition <= NUTRITION_LEVEL_HUNGRY ? 10 : 1
