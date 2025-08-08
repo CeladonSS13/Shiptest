@@ -520,6 +520,7 @@ update_label()
 	icon_state = "ert_janitor"
 	assignment = "Jannie"
 	uses_overlays = FALSE
+	job_icon = "scrambled"	// [CELADON-ADD] - CELADON_ADD_HUDS
 
 /obj/item/card/id/debug/Initialize()
 	// [CELADON-EDIT] - CELADON_ACCESS
