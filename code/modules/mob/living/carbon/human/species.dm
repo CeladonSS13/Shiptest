@@ -1786,12 +1786,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		//var/damage = rand(user.dna.species.punchdamagelow, user.dna.species.punchdamagehigh) // CELADON-EDIT - ORIGINAL
 		var/damage = rand(user.dna.species.punchdamagelow + attack_verb_bonus, user.dna.species.punchdamagehigh + attack_verb_bonus)
 		// [/CELADON-EDIT]
-		// [CELADON-ADD] CELADON_BITE_FERAL
-		if(user != target && (target.mob_biotypes & MOB_ORGANIC)) //мне уже похуй на качество кода
-			var/datum/reagents/tasty_meal = new()
-			tasty_meal.add_reagent(/datum/reagent/consumable/nutriment/protein, round(damage/3, 1))
-			tasty_meal.trans_to(user, tasty_meal.total_volume, transfered_by = user, method = INGEST)
-		// [/CELADON-ADD]
 		var/obj/item/bodypart/affecting = target.get_bodypart(ran_zone(user.zone_selected))
 
 		var/miss_chance = 100//calculate the odds that a punch misses entirely. considers stamina and brute damage of the puncher. punches miss by default to prevent weird cases
@@ -1831,7 +1825,12 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			target.apply_damage(damage, user.dna.species.attack_type, affecting, armor_block)
 			target.apply_damage(damage*1.5, STAMINA, affecting, armor_block)
 			log_combat(user, target, "punched")
-
+		// [CELADON-ADD] CELADON_BITE_FERAL
+		if(user != target && (target.mob_biotypes & MOB_ORGANIC) && (atk_verb == ATTACK_EFFECT_BITE)) //мне уже похуй на качество кода
+			var/datum/reagents/tasty_meal = new()
+			tasty_meal.add_reagent(/datum/reagent/consumable/nutriment/protein, round(damage/3, 1))
+			tasty_meal.trans_to(user, tasty_meal.total_volume, transfered_by = user, method = INGEST)
+		// [/CELADON-ADD]
 		if((target.stat != DEAD) && damage >= user.dna.species.punchstunthreshold)
 			target.visible_message(span_danger("[user] knocks [target] down!"), \
 							span_userdanger("You're knocked down by [user]!"), span_hear("You hear aggressive shuffling followed by a loud thud!"), COMBAT_MESSAGE_RANGE, user)
