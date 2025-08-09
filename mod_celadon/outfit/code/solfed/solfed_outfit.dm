@@ -301,7 +301,7 @@
 /datum/outfit/job/solfed/miner
 	name = "SolFed - Contract Miner"
 	jobtype = /datum/job/mining
-	job_icon = "stationminer"
+	job_icon = "shaftminer"
 
 	id = /obj/item/card/id/solfed
 	uniform = /obj/item/clothing/under/solfed/industrial
