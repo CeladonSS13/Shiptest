@@ -19,6 +19,11 @@
 	name = "sleeper a medical doctor"
 	desc = "A closed apparatus designed for the medic."
 
+// // Cryopod for coroner
+// /obj/machinery/cryopod/outpost/coroner
+// 	name = "sleeper a coroner"
+// 	desc = "A closed apparatus designed for the coroner."
+
 // Исключение для бомжа
 /obj/structure/bed/outpost/wagabond
 	name = "bed a wagabond"
