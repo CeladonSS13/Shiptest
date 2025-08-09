@@ -436,6 +436,10 @@
 	planetary_atmos = 1
 	},
 /area/outpost/crew/bar)
+"alP" = (
+/obj/machinery/photocopier,
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue/office)
 "alX" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -1072,6 +1076,21 @@
 	},
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar/bar_zone)
+"aGX" = (
+/obj/machinery/door/airlock/medical/glass{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue/office)
 "aGY" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -1661,6 +1680,11 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"aWL" = (
+/obj/structure/table/glass,
+/obj/machinery/fax/coroner,
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue/office)
 "aWM" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
@@ -6994,6 +7018,10 @@
 	},
 /turf/open/floor/carpet/green,
 /area/outpost/medical/hall_2)
+"efQ" = (
+/obj/machinery/light/directional/west,
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue/storage)
 "efW" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 9
@@ -7542,6 +7570,10 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"etK" = (
+/obj/structure/table/glass,
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue/office)
 "euy" = (
 /obj/structure/painting_custom{
 	pixel_y = 32;
@@ -8275,6 +8307,12 @@
 	layer = 2.454
 	},
 /area/outpost/exterior)
+"ePm" = (
+/obj/structure/bodycontainer/morgue/monitored{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue)
 "eQc" = (
 /turf/closed/indestructible/titanium/nodiagnonal,
 /area/outpost/medical/hall_2)
@@ -9959,6 +9997,9 @@
 /obj/structure/chair/stool,
 /turf/open/floor/carpet/royalblack,
 /area/outpost/fraction/syndi)
+"fKW" = (
+/turf/closed/indestructible/reinforced,
+/area/outpost/medical/morgue)
 "fMv" = (
 /obj/effect/turf_decal/trimline/opaque/red/line,
 /obj/structure/cable{
@@ -10442,6 +10483,12 @@
 /obj/effect/decal/cleanable/robot_debris/old,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
+"gbl" = (
+/obj/effect/mob_spawn/human/elysium_outpost/coroner{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue)
 "gbp" = (
 /turf/open/floor/plasteel/freezer,
 /area/outpost/fraction/syndi)
@@ -13389,6 +13436,10 @@
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/garden)
+"hQR" = (
+/obj/effect/spawner/structure/window/reinforced/indestructible,
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue/office)
 "hQU" = (
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
@@ -15226,6 +15277,12 @@
 /obj/effect/decal/cleanable/blood/gibs/down,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
+"iQw" = (
+/obj/structure/chair/office/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue/office)
 "iQM" = (
 /obj/structure/railing{
 	dir = 8
@@ -18449,6 +18506,12 @@
 	},
 /turf/open/floor/wood,
 /area/outpost/fraction/solfed)
+"kPp" = (
+/obj/machinery/door/airlock/medical/glass{
+	dir = 4
+	},
+/turf/open/floor/concrete/slab_3,
+/area/outpost/medical/morgue)
 "kPG" = (
 /obj/structure/statue_ships/elysium_aldaama/ne,
 /turf/open/floor/wood/walnut{
@@ -18625,6 +18688,10 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/outpost/fraction/syndi)
+"kTQ" = (
+/obj/machinery/papershredder,
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue)
 "kUD" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 8
@@ -19713,6 +19780,12 @@
 "lDB" = (
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/fraction/inteq)
+"lEd" = (
+/obj/machinery/conveyor{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue)
 "lEU" = (
 /obj/structure/statue_ships/inteq_caliban/se,
 /obj/structure/railing/wood{
@@ -23499,6 +23572,10 @@
 	planetary_atmos = 1
 	},
 /area/outpost/crew/lounge/cab_2)
+"nQL" = (
+/obj/structure/filingcabinet/double/grey,
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue/office)
 "nQO" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -24133,6 +24210,10 @@
 	},
 /turf/open/floor/wood,
 /area/outpost/fraction/solfed)
+"ohe" = (
+/obj/machinery/light/directional/west,
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue)
 "ohq" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 5
@@ -25300,6 +25381,15 @@
 "oNe" = (
 /turf/closed/indestructible/reinforced,
 /area/outpost/security/bay)
+"oNp" = (
+/obj/machinery/body_conveyor{
+	dir = 8
+	},
+/obj/machinery/conveyor{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue)
 "oOm" = (
 /obj/structure/railing{
 	layer = 3.07
@@ -26994,6 +27084,9 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"pPw" = (
+/turf/closed/indestructible/reinforced,
+/area/outpost/medical/morgue/office)
 "pQj" = (
 /obj/effect/turf_decal/trimline/opaque/beige/filled/line{
 	dir = 1
@@ -27671,6 +27764,9 @@
 /obj/item/clothing/head/wizard/fake,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
+"qoz" = (
+/turf/closed/indestructible/plastitanium/nodiagnonal,
+/area/outpost/medical/morgue/office)
 "qoM" = (
 /obj/effect/turf_decal/corner/opaque/black/mono,
 /obj/effect/turf_decal/corner/opaque/neutral/diagonal,
@@ -29264,6 +29360,12 @@
 	planetary_atmos = 1
 	},
 /area/outpost/crew/canteen)
+"riR" = (
+/obj/machinery/computer/coroner_console{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue)
 "riW" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/spline/fancy/opaque/black{
@@ -33304,6 +33406,10 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo)
+"tCc" = (
+/obj/structure/coroner_forms_dispenser,
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue/office)
 "tCR" = (
 /obj/effect/turf_decal/siding/white,
 /obj/effect/turf_decal/borderfloor{
@@ -33658,6 +33764,10 @@
 	},
 /turf/open/floor/wood/ebony,
 /area/outpost/fraction/separatist)
+"tNu" = (
+/obj/machinery/light/directional/west,
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue/office)
 "tNX" = (
 /obj/effect/spawner/random/medical,
 /turf/open/floor/plating/asteroid/icerock/temperate,
@@ -33965,6 +34075,9 @@
 	layer = 2.454
 	},
 /area/outpost/exterior)
+"tWD" = (
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue/storage)
 "tWE" = (
 /turf/open/floor/carpet/red_gold{
 	planetary_atmos = 1
@@ -34268,6 +34381,12 @@
 /obj/effect/landmark/ert_outpost_spawn,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/armory)
+"ueH" = (
+/obj/machinery/door/airlock/medical/glass{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue)
 "ufr" = (
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood,
@@ -35200,6 +35319,9 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/operations/outpost_command)
+"uKD" = (
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue/office)
 "uLk" = (
 /obj/machinery/computer/arcade{
 	dir = 4;
@@ -36832,6 +36954,16 @@
 	planetary_atmos = 1
 	},
 /area/outpost/crew/bar/vip_zone)
+"vUj" = (
+/obj/structure/table/glass,
+/obj/item/paper_bin{
+	pixel_x = 9
+	},
+/obj/item/pen/fountain{
+	pixel_x = 9
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/medical/morgue/office)
 "vUr" = (
 /obj/structure/sign/flag/syndie/directional/south,
 /obj/machinery/outpost_selling_pad,
@@ -72852,18 +72984,18 @@ rgY
 rgY
 rgY
 rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
+fKW
+oNp
+fKW
+kPp
+fKW
+fKW
+fKW
+pPw
+pPw
+pPw
+pPw
+pPw
 rgY
 mNw
 fhh
@@ -73039,18 +73171,18 @@ rgY
 rgY
 rgY
 rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
+fKW
+lEd
+riR
+bob
+efQ
+tWD
+tWD
+qoz
+nQL
+iQw
+tNu
+alP
 rgY
 mNw
 bob
@@ -73226,18 +73358,18 @@ rgY
 rgY
 rgY
 rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
+fKW
+lEd
+bob
+bob
+tWD
+tWD
+tWD
+hQR
+etK
+vUj
+uKD
+tCc
 rgY
 mNw
 njG
@@ -73413,18 +73545,18 @@ rgY
 rgY
 rgY
 rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
+fKW
+bob
+bob
+bob
+tWD
+tWD
+tWD
+hQR
+uKD
+uKD
+uKD
+aWL
 rgY
 mNw
 cxg
@@ -73600,18 +73732,18 @@ rgY
 rgY
 rgY
 rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
+fKW
+fKW
+fKW
+ueH
+fKW
+fKW
+fKW
+pPw
+aGX
+pPw
+pPw
+pPw
 rgY
 mNw
 rUw
@@ -73787,18 +73919,18 @@ rgY
 rgY
 rgY
 rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
+fKW
+kTQ
+ohe
+bob
+ohe
+bob
+bob
+ohe
+bob
+fKW
+noN
+noN
 rgY
 mNw
 uJr
@@ -73974,18 +74106,18 @@ rgY
 rgY
 rgY
 rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
+fKW
+afM
+afM
+afM
+afM
+afM
+afM
+afM
+afM
+fKW
+noN
+noN
 rgY
 mNw
 afM
@@ -74161,17 +74293,17 @@ rgY
 rgY
 rgY
 rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
+fKW
+gbl
+ePm
+ePm
+ePm
+ePm
+ePm
+ePm
+ePm
+fKW
+noN
 rgY
 rgY
 mNw
@@ -74348,17 +74480,17 @@ rgY
 rgY
 rgY
 rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
-rgY
+fKW
+fKW
+fKW
+fKW
+fKW
+fKW
+fKW
+fKW
+fKW
+fKW
+noN
 rgY
 rgY
 mNw
