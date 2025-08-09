@@ -20,10 +20,6 @@
 	},
 /turf/open/floor/hangar/plasteel/white,
 /area/ruin/jungle/syndifort2)
-"aq" = (
-/obj/structure/spacevine,
-/turf/open/floor/plating/asteroid/dirt/grass/jungle/yellow,
-/area/overmap_encounter/planetoid/cave/explored)
 "aD" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/hangar/plasteel/white,
@@ -526,7 +522,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/space/basic,
+/turf/open/floor/plating/jungleplanet,
 /area/ruin/jungle/syndifort)
 "he" = (
 /obj/structure/flora/tree/jungle/small{
@@ -1617,11 +1613,8 @@
 /turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/overmap_encounter/planetoid/jungle/explored)
 "wn" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/closed/indestructible/rock,
-/area/overmap_encounter/planetoid/cave/explored)
+/turf/closed/wall/mineral/plastitanium,
+/area/ruin/jungle/syndifort3)
 "wo" = (
 /obj/structure/flora/rock/jungle,
 /obj/structure/flora/grass/jungle,
@@ -2269,10 +2262,6 @@
 "Ew" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/floor/plating/ship/water/beach/deep,
-/area/overmap_encounter/planetoid/jungle/explored)
-"Ex" = (
-/obj/structure/flora/grass/jungle,
-/turf/template_noop,
 /area/overmap_encounter/planetoid/jungle/explored)
 "EA" = (
 /obj/structure/spacevine/dense,
@@ -3175,8 +3164,8 @@
 /area/overmap_encounter/planetoid/jungle/explored)
 "PJ" = (
 /obj/effect/decal/remains/human,
-/obj/item/clothing/glasses/thermal/eyepatch{
-	name = "eyepatch"
+/obj/item/clothing/glasses/eyepatch{
+	name = "optical thermal eyepatch"
 	},
 /obj/item/clothing/neck/tie/red,
 /turf/open/floor/plating/ship/water/beach/deep,
@@ -3730,9 +3719,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/jungle/syndifort)
-"Vi" = (
-/turf/closed/wall/mineral/plastitanium,
-/area/ruin/jungle/syndifort3)
 "Vl" = (
 /obj/item/mine/proximity/explosive/live,
 /obj/structure/spacevine,
@@ -5074,7 +5060,7 @@ tZ
 qx
 dw
 Nc
-aq
+ds
 ds
 ds
 ds
@@ -5223,7 +5209,7 @@ ds
 ds
 ds
 ds
-Rb
+ds
 Xa
 Xa
 Xa
@@ -6279,7 +6265,7 @@ PZ
 qx
 Nc
 Nc
-Ex
+Px
 qx
 FV
 sx
@@ -6654,8 +6640,8 @@ Xa
 Xa
 Xa
 Xa
-ds
-ds
+Rb
+Rb
 Xa
 Xa
 Xa
@@ -6726,8 +6712,8 @@ ds
 Xa
 Xa
 Xa
-ds
-ds
+Rb
+Rb
 Xa
 Xa
 Xa
@@ -7162,11 +7148,11 @@ ds
 Xa
 Xa
 Au
-Vi
-Vi
-Vi
-Vi
-Vi
+wn
+wn
+wn
+wn
+wn
 Sf
 Sf
 Sf
@@ -7233,12 +7219,12 @@ ds
 ds
 ds
 jh
-Vi
-Vi
+wn
+wn
 KT
 UO
 JA
-Vi
+wn
 Nb
 RJ
 iR
@@ -7304,14 +7290,14 @@ qx
 ds
 ds
 ds
-Vi
-Vi
+wn
+wn
 RR
 iO
 ma
 xr
-Vi
-Vi
+wn
+wn
 Pj
 Xa
 Xa
@@ -7376,14 +7362,14 @@ qx
 ds
 ds
 ds
-Vi
+wn
 zF
 XE
 Cc
 iO
-Vi
+wn
 yH
-Vi
+wn
 MP
 EQ
 Ga
@@ -7448,7 +7434,7 @@ Gh
 qx
 ds
 ds
-Vi
+wn
 Zp
 PP
 yT
@@ -7520,14 +7506,14 @@ qx
 qx
 ds
 ds
-Vi
+wn
 Cn
 iO
 op
 gw
-Vi
+wn
 HH
-Vi
+wn
 MP
 Ap
 jv
@@ -7592,14 +7578,14 @@ dw
 bc
 rK
 ds
-Vi
-Vi
+wn
+wn
 Hf
 ma
 ma
 Uj
-Vi
-Vi
+wn
+wn
 Pj
 Xa
 Xa
@@ -7665,13 +7651,13 @@ rK
 rK
 ds
 ds
-Vi
-Vi
+wn
+wn
 KT
 iO
 JT
-Vi
-Vi
+wn
+wn
 Xa
 iR
 Xa
@@ -7735,14 +7721,14 @@ Nc
 ks
 fN
 ks
-PZ
+qx
 ds
 ds
-Vi
-Vi
-Vi
-Vi
-Vi
+wn
+wn
+wn
+wn
+wn
 Xa
 Xa
 Xa
@@ -7807,8 +7793,8 @@ Nc
 Nc
 Nc
 Nc
-PZ
-PZ
+qx
+Nc
 ds
 ds
 ds
@@ -7881,7 +7867,7 @@ Nc
 ks
 Nc
 Nc
-PZ
+ks
 ds
 ds
 ds
@@ -7966,7 +7952,7 @@ Xa
 Xa
 Xa
 Xa
-wn
+ds
 ds
 ds
 ds
@@ -8037,7 +8023,7 @@ Xa
 Xa
 Xa
 ys
-wn
+ds
 ds
 ds
 ds
