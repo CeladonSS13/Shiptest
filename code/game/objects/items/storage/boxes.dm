@@ -1458,8 +1458,10 @@
 		/obj/item/pda=1,\
 		/obj/item/modular_computer/tablet/preset/advanced=1,\
 		/obj/item/geiger_counter=1,\
+		/* // [CELADON-REMOVE]
 		/obj/item/construction/rcd/combat/admin=1,\
 		/obj/item/pipe_dispenser=1,\
+		*/ // [/CELADON-REMOVE]
 		/obj/item/card/emag=1,\
 		/obj/item/spacecash/bundle/c10000=5,\
 		/obj/item/healthanalyzer/advanced=1,\
