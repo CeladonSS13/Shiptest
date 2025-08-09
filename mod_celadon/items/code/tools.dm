@@ -60,3 +60,14 @@
 	fixable.adjust_wear(-wear_reduction)
 	user.visible_message(span_notice("[user] finishes cleaning [fixable]!"), span_notice("You finish cleaning [fixable], [fixable.gun_wear < wear_reduction ? "and it's in pretty good condition" : "though it would benefit from another cycle"]."))
 	uses--
+
+/obj/item/areaeditor/shuttle/disposable
+	name = "Shuttle Expansion Disposable Permit"
+	desc = "A disposable set of documents used to expand flyable shuttles."
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/permit.dmi'
+	icon_state = "permit"
+
+/obj/item/areaeditor/shuttle/proc/check_disposable(mob/creator)
+	spawn(1)
+	del src
+	creator.update_appearance()
