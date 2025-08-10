@@ -117,7 +117,6 @@
 		return FALSE
 
 	var/icon/hudicon = icon('mod_celadon/_storge_icons/icons/mobs/hud.dmi', "hud[initial(to_equip.outfit.faction_icon)]")
-
 	hudicon.Blend(icon('mod_celadon/_storge_icons/icons/mobs/hud.dmi', "hud[initial(to_equip.outfit.job_icon)]"), ICON_OVERLAY)
 // [/CELADON-EDIT]
 	hudicon.Crop(1, 17, 8, 24)
