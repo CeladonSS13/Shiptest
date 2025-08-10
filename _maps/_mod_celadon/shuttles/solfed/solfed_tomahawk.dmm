@@ -1860,6 +1860,11 @@
 /obj/item/storage/box/ammo/ferrolance,
 /obj/item/storage/box/ammo/ferrolance,
 /obj/machinery/light/colored/red,
+/obj/machinery/light_switch{
+	dir = 8;
+	pixel_x = 21;
+	pixel_y = 10
+	},
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "xk" = (
@@ -2421,11 +2426,6 @@
 	},
 /obj/effect/turf_decal/techfloor{
 	dir = 4
-	},
-/obj/machinery/light_switch{
-	dir = 8;
-	pixel_x = 21;
-	pixel_y = -12
 	},
 /obj/machinery/space_heater,
 /obj/structure/cable{
