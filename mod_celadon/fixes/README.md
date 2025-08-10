@@ -123,6 +123,10 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - ADD: `code/game/objects/items/food/donut.dm` : Прописано название стандартной иконки, вместо надписи ERROR
 
+- EDIT: `code/modules/overmap/objects/dynamic_datum.dm` : Использывание нового прока для остановки уничтожения планеты
+- ADD: `code/controllers/subsystem/overmap.dm` : При начале генерации планеты убирает таймер на удаление планеты
+- ADD: `mod_celadon/mobs/code/ai_controller.dm` : Добавляет новую переменную где представляет pawn в качестве var/mob/temp
+- EDIT: `mod_celadon/mobs/code/ai_controller.dm` : Если на мобе игрок отключает ИИ, если игрока нет то действует как обычно.
 FIX_DISPLAY_TRUSTER
 - EDIT: `code/modules/overmap/ships/controlled_ship_datum.dm` : Откатывает на прежнее отображение скорости, у нас другой вид перемещения корабликов
 
@@ -183,7 +187,7 @@ FIXES_ICON
 ### Авторы:
 
 
-RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFaceLesS, Burbonchik, MrRomainzZ, Molniz, Redwizz, Sjerty, Garomt, Ganza9991, KOCMOHABT
+RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFaceLesS, Burbonchik, MrRomainzZ, Molniz, Redwizz, Sjerty, Garomt, Ganza9991, KOCMOHABT, Pelmenik123
 
 <!--
   Здесь находится твой никнейм

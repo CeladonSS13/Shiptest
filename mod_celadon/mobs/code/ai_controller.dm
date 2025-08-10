@@ -14,10 +14,19 @@
 
 	var/players_on_virtual_z = 0
 	if(virt_z)
+		// [CELADON-ADD] - CELADON_FIXES
+		var/mob/temp = pawn
+		// [/CELADON-ADD]
 		players_on_virtual_z = LAZYACCESS(SSmobs.players_by_virtual_z, "[virt_z]")
-		if(ai_status == AI_STATUS_ON && !length(players_on_virtual_z))
+		// [CELADON-EDIT] - CELADON_FIXES
+		//if(ai_status == AI_STATUS_ON && !length(players_on_virtual_z)) - ORIGINAL
+		if((ai_status == AI_STATUS_ON && !length(players_on_virtual_z)) || temp?.key)
+		// [/CELADON-EDIT]
 			set_ai_status(AI_STATUS_OFF)
-		else if(ai_status == AI_STATUS_OFF && length(players_on_virtual_z))
+		// [CELADON-EDIT] - CELADON_FIXES
+		//else if(ai_status == AI_STATUS_OFF && length(players_on_virtual_z)) - ORIGINAL
+		else if((ai_status == AI_STATUS_OFF && length(players_on_virtual_z)) && !temp?.key)
+		// [/CELADON-EDIT]
 			set_ai_status(AI_STATUS_ON)
 
 // Вызывается при создании моба для проверки наличия игроков поблизости

@@ -164,9 +164,11 @@
 	return TRUE
 
 /datum/overmap/dynamic/proc/reset_dynamic()
-	QDEL_NULL(token.countdown)
-	STOP_PROCESSING(SSfastprocess, src)
-
+	// [CELADON-EDIT] - CELADON_FIXES
+	//	QDEL_NULL(token.countdown) // ORIGINAL
+	//	STOP_PROCESSING(SSfastprocess, src) // ORIGINAL
+	stop_countdown()
+	// [/CELADON-EDIT]
 	if(!can_reset_dynamic())
 		return
 

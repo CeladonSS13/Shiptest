@@ -597,7 +597,9 @@ SUBSYSTEM_DEF(overmap)
 	)
 
 	vlevel.reserve_margin(QUADRANT_SIZE_BORDER)
-
+	// [CELADON-ADD] - CELADON_FIXES
+	dynamic_datum.stop_countdown()
+	// [/CELADON-ADD]
 	mapgen.pre_generation(dynamic_datum)
 
 	// the generataed turfs start unpopulated (i.e. no flora / fauna / etc.). we add that AFTER placing the ruin, relying on the ruin's areas to determine what gets populated
