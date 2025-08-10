@@ -112,7 +112,9 @@
 			if(HUD_LIST_LIST)
 				hud_list[hud] = list()
 			else
-				var/image/I = image('mod_celadon/_storge_icons/icons/mobs/hud.dmi', src, "")	//var/image/I = image('icons/mob/hud.dmi', src, "")
+				// [CELADON-EDIT] - OLD_CODE: var/image/I = image('icons/mob/hud.dmi', src, "")
+				var/image/I = image('mod_celadon/_storge_icons/icons/mobs/hud.dmi', src, "")
+				// [/CELADON-EDIT]
 				I.appearance_flags = RESET_COLOR|RESET_TRANSFORM
 				hud_list[hud] = I
 
