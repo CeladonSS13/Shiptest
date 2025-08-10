@@ -3440,7 +3440,14 @@
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 10
 	},
-/obj/item/radio/intercom/wideband/directional/south,
+/obj/item/radio/intercom/wideband/directional/south{
+	pixel_x = -4
+	},
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_x = 11;
+	pixel_y = -15
+	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "PX" = (
@@ -4031,7 +4038,6 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/storage)
 "VP" = (
-/obj/item/radio/intercom/directional/south,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
