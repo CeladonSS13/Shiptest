@@ -58,7 +58,7 @@
 	contains = list(/obj/machinery/iv_drip)
 	crate_name = "iv drip crate"
 
-/datum/supply_pack/medical/bloodpacks
+/datum/supply_pack/faction/independent/medical/bloodpacks
 	name = "Blood Pack Variety Crate"
 	desc = "Contains several different blood packs for reintroducing blood to patients."
 	cost = 700
