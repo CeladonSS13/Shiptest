@@ -144,26 +144,11 @@
 /area/ship/crew/canteen/kitchen)
 "bP" = (
 /obj/structure/table/wood,
-/obj/item/stamp/solfed/captain{
-	pixel_y = 3;
-	pixel_x = -4
-	},
-/obj/item/pen/solfed{
-	pixel_y = -1;
-	pixel_x = -8
-	},
-/obj/item/desk_flag/solgov{
-	pixel_y = 12;
-	pixel_x = -4
-	},
-/obj/item/paper_bin{
-	pixel_y = 2;
-	pixel_x = 7
-	},
 /obj/structure/cable{
 	icon_state = "0-1"
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
+/obj/machinery/fax/solgov,
 /turf/open/floor/wood,
 /area/ship/bridge)
 "bQ" = (
@@ -1644,6 +1629,10 @@
 	pixel_x = 1
 	},
 /obj/machinery/firealarm/directional/west,
+/obj/item/desk_flag/solgov{
+	pixel_y = 15;
+	pixel_x = 10
+	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "vo" = (
@@ -2518,6 +2507,10 @@
 	pixel_x = -8;
 	layer = 2.8
 	},
+/obj/item/desk_flag/solgov{
+	pixel_y = 12;
+	pixel_x = -4
+	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "EH" = (
@@ -2611,6 +2604,19 @@
 	dir = 1
 	},
 /obj/machinery/airalarm/directional/south,
+/obj/structure/table/wood,
+/obj/item/paper_bin{
+	pixel_y = 2;
+	pixel_x = 7
+	},
+/obj/item/stamp/solfed/captain{
+	pixel_y = 3;
+	pixel_x = -4
+	},
+/obj/item/pen/solfed{
+	pixel_y = -1;
+	pixel_x = -8
+	},
 /turf/open/floor/wood,
 /area/ship/bridge)
 "FK" = (
