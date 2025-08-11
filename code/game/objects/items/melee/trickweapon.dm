@@ -30,8 +30,9 @@
 		transform_cooldown_time = (CLICK_CD_MELEE * 0.25), \
 		force_on = active_force, \
 		throwforce_on = active_throwforce, \
+		hitsound_on = hitsound, \
 		attack_verb_on = list("cleave", "swipe", "slash", "chop"), \
-	)
+	)	//add: hitsound_on = hitsound, \ // [CELADON-ADD] - Фикс бага на звук лазерного меча
 	RegisterSignal(src, COMSIG_TRANSFORMING_ON_TRANSFORM, PROC_REF(on_transform))
 
 /obj/item/melee/cleaving_saw/examine(mob/user)
