@@ -46,7 +46,10 @@
 	user.changeNext_move(CLICK_CD_MELEE * 0.25)
 	if(user)
 		balloon_alert(user, "[active ? "opened" : "closed"] [src]")
-	playsound(user, 'sound/magic/clockwork/fellowship_armory.ogg', 35, TRUE, frequency = 90000 - (active * 30000))
+// [CELADON-EDIT] - Изменены звуки раскрытия/закрытия
+//	playsound(user, 'sound/magic/clockwork/fellowship_armory.ogg', 35, TRUE, frequency = 90000 - (active * 30000))
+	playsound(user, active ? 'mod_celadon/_storge_sounds/sound/weapons/cleaving_saw_open.ogg' : 'mod_celadon/_storge_sounds/sound/weapons/cleaving_saw_close.ogg', 35, TRUE, frequency = 90000 - (active * 30000))
+// [/CELADON-EDIT]
 	return COMPONENT_NO_DEFAULT_MESSAGE
 
 /obj/item/melee/cleaving_saw/melee_attack_chain(mob/user, atom/target, params)
