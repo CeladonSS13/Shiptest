@@ -127,7 +127,9 @@
 /obj/effect/turf_decal/corner/opaque/cybersunteal/border{
 	dir = 9
 	},
-/obj/machinery/door/airlock/multi_tile/medical,
+/obj/machinery/door/airlock/multi_tile/medical{
+	name = "Medbay"
+	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/door/firedoor/border_only,
@@ -2020,7 +2022,9 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "zd" = (
-/obj/machinery/door/airlock/multi_tile/solgov,
+/obj/machinery/door/airlock/multi_tile/solgov{
+	name = "Cafeteria"
+	},
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
@@ -3700,7 +3704,7 @@
 	},
 /obj/machinery/door/airlock/solgov{
 	dir = 8;
-	name = "Cafeteria"
+	name = "Crew Quarters"
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/crewtwo)
@@ -4061,7 +4065,7 @@
 	},
 /obj/machinery/door/airlock/solgov{
 	req_one_access = list(20);
-	name = "Captain's Quarters";
+	name = "Kommandant's Quarters";
 	id_tag = "sgi_captainbolt";
 	dir = 4
 	},
@@ -4132,7 +4136,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Wt" = (
-/obj/machinery/door/airlock/multi_tile/solgov,
+/obj/machinery/door/airlock/multi_tile/solgov{
+	name = "Restroom"
+	},
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
