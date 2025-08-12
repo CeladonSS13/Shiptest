@@ -97,8 +97,8 @@
 
 // [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition + Rebalance
 	slowdown = 0.5
-	max_integrity = 500
-	block_chance = 50
+	max_integrity = 600
+	block_chance = 60
 	icon = 'mod_celadon/_storge_icons/icons/items/weapons/shields.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/shields_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/shields_righthand.dmi'
