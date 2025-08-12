@@ -534,8 +534,8 @@
 	desc = "Be the ancient warrior you always wanted to be. Block bullets and impale your enemies."
 	item = /obj/item/shield/riot/spike
 
-	cost_min = 1000
-	cost_max = 1500
+	cost_min = 1800
+	cost_max = 2500
 	stock_max = 2
 	availability_prob = 50
 
