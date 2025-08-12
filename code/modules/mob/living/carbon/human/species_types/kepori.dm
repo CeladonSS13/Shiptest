@@ -20,7 +20,7 @@
 	coldmod = 1.5
 	// brutemod = 1.5
 	// burnmod = 1.5
-	speedmod = -0.10
+	speedmod = -0.30	// [CELADON-EDIT] - CELADON_BALANCE_SPECIES - Было -0.10
 
 	bodytemp_heat_damage_limit = HUMAN_BODYTEMP_HEAT_DAMAGE_LIMIT + 35
 	bodytemp_cold_damage_limit = HUMAN_BODYTEMP_COLD_DAMAGE_LIMIT + 3

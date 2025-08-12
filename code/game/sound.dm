@@ -212,11 +212,6 @@ distance_multiplier - Can be used to multiply the distance at which the sound is
 
 	if(prefs && (prefs.toggles & SOUND_LOBBY))
 		SEND_SOUND(src, sound(SSticker.login_music, repeat = 0, wait = 0, volume = vol, channel = CHANNEL_LOBBYMUSIC)) // MAD JAMS
-// [CELADON-ADD]- MUSIC_CELADON
-		if(SSticker.login_music_name)
-			var/count_name = length(SSticker.login_music_name)
-			to_chat(world, span_redteamradio("<B>Playing lobby music: [copytext(SSticker.login_music_name, 1, count_name-3)].</B>"))
-// [/CELADON-ADD]
 
 /proc/get_rand_frequency()
 	return rand(32000, 55000) //Frequency stuff only works with 45kbps oggs.

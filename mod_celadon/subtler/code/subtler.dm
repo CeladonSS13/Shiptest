@@ -13,13 +13,12 @@
 	return FALSE
 
 /datum/emote/living/subtlerag/run_emote(mob/living/user, params, type_override = null)
-	if(SSdbcore.IsConnected())
-		if(is_banned_from(user, "emote"))
-			to_chat(user, "You cannot send subtle emotes (banned).")
-			return FALSE
-		else if(user.client && user.client.prefs.muted & MUTE_IC)
-			to_chat(user, "You cannot send IC messages (muted).")
-			return FALSE
+	if(is_banned_from(user, "emote"))
+		to_chat(user, "You cannot send subtle emotes (banned).")
+		return FALSE
+	else if(user.client && user.client.prefs.muted & MUTE_IC)
+		to_chat(user, "You cannot send IC messages (muted).")
+		return FALSE
 	else if(!params)
 		user.set_typing_indicator(TRUE, isMe = TRUE)
 		var/subtle_emote = stripped_multiline_input(user, "Choose an emote to display.", "Subtlerag" , null, MAX_MESSAGE_LEN)

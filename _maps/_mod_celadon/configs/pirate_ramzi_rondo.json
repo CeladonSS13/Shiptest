@@ -1,0 +1,33 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Rondo-class Assault Vessel",
+	"map_short_name": "Rondo",
+	"description": "'Rondo' - судно ранее используемое синдикатом как разведывательно, изначально снабжалось системой оптического камуфляжа. Однако из-за несовершенства технологии, любое повреждение экранирования приводило к полному отключению систем, в связи с чем судну требовался длительный ремонт. Ко всему прочему, использование технологии оптического камуфляжа, а тем более его ремонт требовали высокую степень квалификации экипажа, в результате чего система камуфляжа была снята, а сами суда из-за своей малой эффективности отправлены на утилизацию в верфи конструкторского бюро. От полного уничтожения данные суда были спасены во время рейда группировкой Рамзи верфей, благодаря чему некоторые экземпляры попали на черный рынок, а оставшиеся до сих пор находятся во владении некоторых боевых формирований.",
+	"map_path": "_maps/_mod_celadon/shuttles/pirate/ramzi_rondo.dmm",
+	"enabled" : true,
+	"limit": 1,
+	"sensor_range": 6,
+	"space_spawn": true,
+	"prefix": "RSV",
+	"faction": "/datum/faction/pirate",
+	"tags": [
+		"Combat",
+		"Riot",
+		"RP Focus"
+	],
+	"namelists": [
+		"PIRATES",
+		"NATURAL_AGGRESSIVE"
+	],
+	"job_slots": {
+		"Battle Master": {
+			"outfit": "/datum/outfit/job/ramzi_clique/captain",
+			"officer": true,
+			"slots": 1
+		},
+		"Commando": {
+			"outfit": "/datum/outfit/job/ramzi_clique/trooper",
+			"slots": 5
+		}
+	}
+}

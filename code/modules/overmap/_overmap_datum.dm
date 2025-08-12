@@ -406,7 +406,7 @@
 	return FALSE
 
 /datum/overmap/ship/controlled/do_hail(mob/living/user, datum/overmap/interact_target)
-	if(!interact_target || interact_target==src)
+	if(!interact_target)	//if(!interact_target || interact_target==src)	// [CELADON-EDIT] - CELADON_OVERMAP - SHIP_HAIL_HIMSELF - Возвращаем фичу на сообщение кораблей самим себе
 		return "Invalid Target."
 	var/input = stripped_input(user, "Please choose a message to hail the target with.", "Hailing Vessel")
 	if(!input)

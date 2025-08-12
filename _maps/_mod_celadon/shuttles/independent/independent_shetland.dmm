@@ -2449,7 +2449,7 @@
 /obj/machinery/door/airlock/engineering{
 	dir = 4;
 	name = "Reactor";
-
+	
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
@@ -3646,15 +3646,15 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/starboard_fore)
 "Lz" = (
-/obj/item/reagent_containers/food/snacks/canned/beans{
+/obj/item/food/canned/beans{
 	pixel_x = -5;
 	pixel_y = 3
 	},
-/obj/item/reagent_containers/food/snacks/canned/beans{
+/obj/item/food/canned/beans{
 	pixel_x = 2;
 	pixel_y = 3
 	},
-/obj/item/reagent_containers/food/snacks/canned/beans{
+/obj/item/food/canned/beans{
 	pixel_x = -2
 	},
 /obj/item/reagent_containers/food/drinks/waterbottle/large{
@@ -4551,7 +4551,7 @@
 /area/ship/crew/hydroponics)
 "Tc" = (
 /obj/effect/spawner/random/vending/cola{
-
+	
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)

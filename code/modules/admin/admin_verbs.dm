@@ -695,7 +695,6 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	if(has_antag_hud())
 		toggle_combo_hud()
 
-	cmd_mentor_dementor(src) // [CELADON-ADD] Bad Code. Mentors not works!!!
 	holder.deactivate()
 
 	to_chat(src, span_interface("You are now a normal player."))
@@ -718,7 +717,6 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 			log_admin_private("[key_name(src)][msg]")
 			return
 
-	cmd_mentor_rementor() // [CELADON-ADD] Bad Code. Mentors not works!!!
 	A.associate(src)
 
 	if (!holder)
