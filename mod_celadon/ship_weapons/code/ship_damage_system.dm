@@ -87,20 +87,19 @@
 	qdel(src)
 
 // Update weapon damage dealing
-/obj/machinery/porta_turret/ship/weapon_system/deal_damage_to_target(datum/overmap/target)
+/obj/machinery/porta_turret/ship/weapon_system/deal_damage_to_target(datum/overmap/target, distance)
 	if(!istype(target, /datum/overmap/ship/controlled))
 		return ..()
 	
 	var/datum/overmap/ship/controlled/target_ship = target
-	var/damage_amount = 0
 	
-	switch(weapon_type)
-		if("laser")
-			damage_amount = 15
-		if("ballistic")
-			damage_amount = 20
-		if("explosive")
-			damage_amount = 35
+	// Calculate damage based on base_damage and distance
+	var/damage_amount = base_damage
+	if(distance > weapon_range * 0.5)
+		damage_amount *= 0.7 // Damage falloff at long range
+	
+	// Apply burst multiplier
+	damage_amount *= weapon_burst_count
 	
 	target_ship.take_weapon_damage(damage_amount, weapon_type)
 	

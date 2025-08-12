@@ -10,6 +10,7 @@ type Data = {
   targeting_mode: boolean;
   weapons: WeaponData[];
   nearby_targets: TargetData[];
+  ready_weapons_count: number;
 };
 
 type WeaponData = {
@@ -98,7 +99,7 @@ export const ShipWeapons = (props, context) => {
                 icon="bullseye"
                 color="red"
                 onClick={() => act('fire_all')}
-                disabled={!target_x || !target_y}
+                disabled={!target_x || !target_y || data.ready_weapons_count === 0}
               >
                 Fire All Weapons
               </Button>
@@ -112,7 +113,7 @@ export const ShipWeapons = (props, context) => {
           </LabeledList>
         </Section>
 
-        <Section title="Nearby Targets" maxHeight="200px" scrollable>
+        <Section title="Nearby Targets" height="200px" scrollable>
           <Table>
             <Table.Row header>
               <Table.Cell>Name</Table.Cell>

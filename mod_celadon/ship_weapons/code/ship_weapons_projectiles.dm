@@ -24,6 +24,20 @@
 	light_color = "#ffaa00"
 	light_range = 3
 
+/obj/projectile/ship_weapon/beam
+	name = "ship beam"
+	icon_state = "beam"
+	light_color = "#00ffff"
+	light_range = 4
+	speed = 1
+
+/obj/projectile/ship_weapon/plasma
+	name = "ship plasma"
+	icon_state = "plasma"
+	light_color = "#ff00ff"
+	light_range = 3
+	speed = 1.5
+
 // Add projectile firing to weapons
 /obj/machinery/porta_turret/ship/weapon_system/fire_at_target(target_x, target_y)
 	. = ..()
@@ -48,6 +62,10 @@
 			projectile = new /obj/projectile/ship_weapon/ballistic(get_turf(src))
 		if("explosive")
 			projectile = new /obj/projectile/ship_weapon/explosive(get_turf(src))
+		if("beam")
+			projectile = new /obj/projectile/ship_weapon/beam(get_turf(src))
+		if("plasma")
+			projectile = new /obj/projectile/ship_weapon/plasma(get_turf(src))
 	
 	if(projectile)
 		var/angle = get_angle(src, target_turf)

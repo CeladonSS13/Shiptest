@@ -64,12 +64,19 @@
 	.["target_y"] = target_y
 	.["targeting_mode"] = targeting_mode
 	.["weapons"] = list()
+	var/ready_weapons_count = 0
 
 	for(var/obj/machinery/porta_turret/ship/weapon_system/weapon in connected_weapons)
 		if(!weapon || QDELETED(weapon))
 			connected_weapons -= weapon
 			continue
 
+		// Calculate current accuracy for display
+		var/distance = 0
+		if(target_x && target_y)
+			distance = sqrt((current_ship.x - target_x)**2 + (current_ship.y - target_y)**2)
+		var/current_accuracy = weapon.calculate_accuracy(distance)
+		
 		var/list/weapon_data = list(
 			"name" = weapon.name,
 			"type" = weapon.weapon_type,
@@ -77,10 +84,23 @@
 			"state" = weapon.weapon_state,
 			"ammo" = weapon.ammo_count,
 			"max_ammo" = weapon.max_ammo,
-			"ref" = REF(weapon)
+			"ref" = REF(weapon),
+			"class" = weapon.weapon_class,
+			"damage" = weapon.base_damage,
+			"accuracy" = current_accuracy,
+			"charge_time" = weapon.charge_time,
+			"cooldown_time" = weapon.cooldown_time,
+			"burst_count" = weapon.weapon_burst_count,
+			"tracking_speed" = weapon.tracking_speed,
+			"armor_pen" = weapon.armor_penetration
 		)
 		.["weapons"] += list(weapon_data)
+		
+		// Count ready weapons
+		if(weapon.can_fire())
+			ready_weapons_count++
 
+	.["ready_weapons_count"] = ready_weapons_count
 	.["nearby_targets"] = list()
 	if(current_ship && current_ship.current_overmap)
 		// Get all objects in current system
