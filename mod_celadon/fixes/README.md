@@ -123,6 +123,8 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - ADD: `code/game/objects/items/food/donut.dm` : Прописано название стандартной иконки, вместо надписи ERROR
 
+- ADD: `code/controllers/subsystem/overmap.dm` : Прерывает удаление планеты при начале ее генерации.
+
 FIX_DISPLAY_TRUSTER
 - EDIT: `code/modules/overmap/ships/controlled_ship_datum.dm` : Откатывает на прежнее отображение скорости, у нас другой вид перемещения корабликов
 
