@@ -22,7 +22,7 @@
 	var/ammo_count = 100
 	/// Max ammo capacity
 	var/max_ammo = 100
-	
+
 	// New accuracy system
 	/// Base accuracy percentage (0-100)
 	var/base_accuracy = BASE_ACCURACY
@@ -30,7 +30,7 @@
 	var/accuracy_falloff = ACCURACY_FALLOFF_PER_TILE
 	/// Minimum accuracy percentage
 	var/min_accuracy = MIN_ACCURACY
-	
+
 	// Enhanced weapon characteristics
 	/// Weapon class (light/medium/heavy)
 	var/weapon_class = WEAPON_CLASS_LIGHT
@@ -80,11 +80,11 @@
 	// Create visual miss effect near target coordinates
 	var/miss_x = target_x + rand(-2, 2)
 	var/miss_y = target_y + rand(-2, 2)
-	
+
 	// Clamp to valid overmap coordinates
 	miss_x = clamp(miss_x, 1, 30)
 	miss_y = clamp(miss_y, 1, 30)
-	
+
 	// Create small explosion effect at miss location
 	var/turf/miss_turf = OVERMAP_TOKEN_TURF(miss_x, miss_y, system)
 	if(miss_turf)
@@ -113,18 +113,18 @@
 	// Calculate accuracy based on distance
 	var/accuracy = calculate_accuracy(distance)
 	var/hit_success = prob(accuracy)
-	
+
 	// Find target at coordinates
 	var/datum/overmap/target = locate_target_at_coords(target_x, target_y, current_ship.current_overmap)
-	
+
 	// Play weapon sound
 	play_weapon_sound()
-	
+
 	// Fire burst if applicable
 	for(var/i = 1 to weapon_burst_count)
 		if(i > 1)
 			sleep(2) // Small delay between burst shots
-			
+
 		if(hit_success && target)
 			deal_damage_to_target(target, distance)
 		else
@@ -174,7 +174,7 @@
 	var/explosion_heavy = 0
 	var/explosion_light = 1
 	var/explosion_flash = 2
-	
+
 	switch(weapon_class)
 		if(WEAPON_CLASS_LIGHT)
 			explosion_heavy = 0
@@ -231,8 +231,8 @@
 // Light Laser Turret
 /obj/machinery/porta_turret/ship/weapon_system/laser
 	name = "light laser turret"
-	icon = 'icons/obj/turrets.dmi'
-	icon_state = "standard_stun"
+	icon = 'mod_celadon/_storge_icons/icons/machinery/system_weapons.dmi'
+	icon_state = "laser"
 	weapon_type = "laser"
 	weapon_class = WEAPON_CLASS_LIGHT
 	ship_damage_type = SHIP_DAMAGE_ENERGY
@@ -273,6 +273,8 @@
 // Light Ballistic Turret
 /obj/machinery/porta_turret/ship/weapon_system/ballistic
 	name = "light ballistic turret"
+	icon = 'mod_celadon/_storge_icons/icons/machinery/system_weapons.dmi'
+	icon_state = "laser"
 	weapon_type = "ballistic"
 	weapon_class = WEAPON_CLASS_LIGHT
 	ship_damage_type = SHIP_DAMAGE_KINETIC
