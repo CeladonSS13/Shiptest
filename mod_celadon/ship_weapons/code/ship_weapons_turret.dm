@@ -141,7 +141,9 @@
 	return TRUE
 
 /obj/machinery/porta_turret/ship/weapon_system/proc/locate_target_at_coords(target_x, target_y, datum/overmap_star_system/system)
-	for(var/datum/overmap/ship/target in system.overmap_objects)
+	for(var/datum/overmap/target in system.overmap_objects)
+		if(!istype(target, /datum/overmap/ship))
+			continue
 		if(target.x == target_x && target.y == target_y)
 			return target
 	return null
