@@ -251,7 +251,7 @@
 	heat_protection = CHEST|GROIN|ARMS
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
 	resistance_flags = NONE
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "energy" = 30, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "energy" = 30, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 10)
 
 /obj/item/clothing/suit/armor/solfed/formal/elysium
 	name = "Elysium Brigade formal coat"
@@ -276,6 +276,9 @@
 	item_state = "sfcaptaingloves"
 
 //masks
+/obj/item/clothing/mask/gas/solfed
+	parent_type = /obj/item/clothing/mask/gas/clip
+
 /obj/item/clothing/mask/gas/solfed/elysium
 	name = "Elysium Brigade gas mask"
 	desc = "A green-colored gas mask used by SolFed's elysium brigade. Can you feel freedom filling the air?"
@@ -286,6 +289,12 @@
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 //spacesuits
+/obj/item/clothing/head/helmet/space/hardsuit/solfed
+	parent_type = /obj/item/clothing/head/helmet/space/hardsuit/solgov
+
+/obj/item/clothing/suit/space/hardsuit/solfed
+	parent_type = /obj/item/clothing/suit/space/hardsuit/solgov
+
 /obj/item/clothing/head/helmet/space/hardsuit/solfed/elysium
 	name = "Elysium Brigade hardsuit helmet"
 	desc = "This is the hardsuit helmet of the Solar Federation Elysium Brigade. It's a dark green color, and its panes glow green."
@@ -293,10 +302,8 @@
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/space_suit/overlay/spacesuits_headsf.dmi'
 	icon_state = "hardsuit0-ebrigadehelm"
 	item_state = "hardsuit0-ebrigadehelm"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 50, "bio" = 100, "rad" = 75, "fire" = 75, "acid" = 75)
 	actions_types = list()
 	hardsuit_type = "elysium"
-	resistance_flags = FIRE_PROOF
 
 /obj/item/clothing/suit/space/hardsuit/solfed/elysium
 	name = "Elysium Brigade hardsuit"
@@ -306,10 +313,7 @@
 	icon_state = "hardsuit0-ebrigade"
 	item_state = "hardsuit0-ebrigade"
 	hardsuit_type = "elysium"
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 30, "bomb" = 40, "bio" = 100, "rad" = 75, "fire" = 75, "acid" = 75)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/solfed/elysium
-	resistance_flags = FIRE_PROOF
-	slowdown = 0.75
 
 //backpacks
 /obj/item/storage/backpack/satchel/solfed
