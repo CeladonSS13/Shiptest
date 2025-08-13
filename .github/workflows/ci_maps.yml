@@ -5,7 +5,7 @@ on:
     paths:
       - '_maps/**'
   pull_request:
-    branches: [beta-dev]
+    branches: [beta-dev, UPDATE-SYNC]
     paths:
       - '_maps/**'
 

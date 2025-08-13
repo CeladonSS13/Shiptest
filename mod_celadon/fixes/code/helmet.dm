@@ -26,49 +26,39 @@
 
 /obj/item/clothing/head/helmet/bulletproof
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
-	content_overlays = TRUE
 
 /obj/item/clothing/head/helmet/swat
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
-	content_overlays = TRUE
 
 /obj/item/clothing/head/helmet/hardliners
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
-	content_overlays = TRUE
 
 /obj/item/clothing/head/helmet/inteq
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
-	content_overlays = TRUE
 
 /obj/item/clothing/head/helmet/ngr
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
-	content_overlays = TRUE
 
 /obj/item/clothing/head/helmet/syndie
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
-	content_overlays = TRUE
 
 /obj/item/clothing/head/helmet/medical
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
-	content_overlays = TRUE
 
 /obj/item/clothing/head/helmet/sec
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
-	content_overlays = TRUE
 
-// MARK: +Flashlight
+/obj/item/clothing/head/helmet/ramzi
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 
 /obj/item/clothing/head/helmet/gezena
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
-	content_overlays = TRUE
-	can_flashlight = TRUE
+
+// MARK: +Flashlight
 
 /obj/item/clothing/head/helmet/blueshirt
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 	content_overlays = TRUE
-	can_flashlight = TRUE
-
-/obj/item/clothing/head/helmet/frontier
 	can_flashlight = TRUE
 
 /obj/item/clothing/head/helmet/riot

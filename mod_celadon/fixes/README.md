@@ -15,7 +15,10 @@
 ID мода: 
 CELADON_FIXES
 CELADON_FIXES_BLOOD
+FIX_DISPLAY_TRUSTER
 FIXES_ICON_IN_HAND_MOB
+FIXES_ICON
+FIXES_SOUND
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -121,9 +124,18 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - ADD: `code/game/objects/items/food/donut.dm` : Прописано название стандартной иконки, вместо надписи ERROR
 
+FIX_DISPLAY_TRUSTER
+- EDIT: `code/modules/overmap/ships/controlled_ship_datum.dm` : Откатывает на прежнее отображение скорости, у нас другой вид перемещения корабликов
+
 FIXES_ICON_MOB_IN_HAND
 - EDIT: `code/__HELPERS/dynamic_human_icon_gen.dm` : Прописано название стандартной иконки, вместо надписи ERROR
 
+FIXES_ICON
+- EDIT: `code/modules/clothing/suits/toggles.dm` - СУКА ИЗ-ЗА ЭТОГО СЛОМАЛИСЬ ВСЕ КАПЮШОНЫ
+
+FIXES_SOUND
+- ADD:	`code/game/objects/items/melee/trickweapon.dm` - Баг звука энерго меча у пилы
+- EDIT:	`code/game/objects/items/melee/trickweapon.dm` - Новые звуки открытия/закрытия пилы
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,

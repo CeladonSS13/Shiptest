@@ -5,7 +5,7 @@
 /datum/supply_pack/faction/solfed/sec_supply/halberd
 	name = "Energy Halberd Crate"
 	desc = "Contains one Solarian Energy Halberd, for issue to your local Sonnensoldner battalion."
-	cost = 3000
+	cost = 10000
 	contains = list(/obj/item/melee/duelenergy/halberd)
 	crate_name = "energy halberd crate"
 

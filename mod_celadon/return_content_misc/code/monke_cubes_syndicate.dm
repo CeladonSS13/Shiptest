@@ -102,7 +102,7 @@
 /obj/item/storage/bag/easterbasket/Initialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.set_holdable(list(/obj/item/reagent_containers/food/snacks/egg, /obj/item/reagent_containers/food/snacks/chocolateegg, /obj/item/reagent_containers/food/snacks/boiledegg))
+	STR.set_holdable(list(/obj/item/food/egg, /obj/item/food/chocolateegg, /obj/item/food/boiledegg))
 
 /obj/item/storage/bag/easterbasket/proc/countEggs()
 	cut_overlays()
@@ -171,7 +171,7 @@
 	/obj/item/toy/redbutton,
 	/obj/item/toy/windupToolbox)
 	new won(where)
-	new/obj/item/reagent_containers/food/snacks/chocolateegg(where)
+	new /obj/item/food/chocolateegg(where)
 
 /obj/item/reagent_containers/food/snacks/egg/attack_self(mob/user)
 	..()
@@ -197,66 +197,56 @@
 	result = /obj/item/food/hotcrossbun
 	subcategory = CAT_MISCFOOD
 
-/obj/item/reagent_containers/food/snacks/scotchegg
+/obj/item/food/scotchegg
 	name = "scotch egg"
 	desc = "A boiled egg wrapped in a delicious, seasoned meatball."
 	icon_state = "scotchegg"
-	bonus_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/vitamin = 2)
-	bitesize = 3
-	filling_color = "#FFFFF0"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 6)
-
-//	bite_consumption = 3
-//	filling_color = "#FFFFF0"
-//	food_reagents = list(/datum/reagent/consumable/nutriment = 6)
+	bite_consumption = 3
+	//filling_color = "#FFFFF0"
+	food_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/consumable/nutriment/vitamin = 2)
 
 /datum/crafting_recipe/food/scotchegg
 	name = "Scotch egg"
 	reqs = list(
 		/datum/reagent/consumable/sodiumchloride = 1,
 		/datum/reagent/consumable/blackpepper = 1,
-		/obj/item/reagent_containers/food/snacks/boiledegg = 1,
-		/obj/item/reagent_containers/food/snacks/boiledegg = 1,
+		/obj/item/food/boiledegg = 1,
+		/obj/item/food/boiledegg = 1,
 		/obj/item/food/spiderleg = 1
 	)
-	result = /obj/item/reagent_containers/food/snacks/scotchegg
+	result = /obj/item/food/scotchegg
 	subcategory = CAT_MISCFOOD
 
-/obj/item/reagent_containers/food/snacks/soup/mammi
+/obj/item/food/soup/mammi
 	name = "Mammi"
 	desc = "A bowl of mushy bread and milk. It reminds you, not too fondly, of a bowel movement."
 	icon_state = "mammi"
-	bonus_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 1)
-	list_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/consumable/nutriment/vitamin = 1)
-	//food_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/consumable/nutriment/vitamin = 1)
+	food_reagents = list(/datum/reagent/consumable/nutriment = 11, /datum/reagent/consumable/nutriment/vitamin = 2)
 
 /datum/crafting_recipe/food/mammi
 	name = "Mammi"
 	reqs = list(
 		/obj/item/food/bread/plain = 1,
-		/obj/item/reagent_containers/food/snacks/chocolatebar = 1,
+		/obj/item/food/chocolatebar = 1,
 		///obj/item/reagent_containers/food/snacks/chocolatebar = 1,
 		/datum/reagent/consumable/milk = 5
 	)
-	result = /obj/item/reagent_containers/food/snacks/soup/mammi
+	result = /obj/item/food/soup/mammi
 
 	subcategory = CAT_MISCFOOD
 
-/obj/item/reagent_containers/food/snacks/chocolatebunny
+/obj/item/food/chocolatebunny
 	name = "chocolate bunny"
 	desc = "Contains less than 10% real rabbit!"
 	icon_state = "chocolatebunny"
-	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 1)
-	list_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/consumable/nutriment/vitamin = 1)
-	//food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/sugar = 2, /datum/reagent/consumable/coco = 2)
-	filling_color = "#A0522D"
+	food_reagents = list(/datum/reagent/consumable/nutriment = 9, /datum/reagent/consumable/nutriment/vitamin = 2)
+	//filling_color = "#A0522D"
 
 /datum/crafting_recipe/food/chocolatebunny
 	name = "Chocolate bunny"
 	reqs = list(
 		/datum/reagent/consumable/sugar = 2,
-		/obj/item/reagent_containers/food/snacks/chocolatebar = 1
-		///obj/item/reagent_containers/food/snacks/chocolatebar = 1
+		/obj/item/food/chocolatebar = 1
 	)
-	result = /obj/item/reagent_containers/food/snacks/chocolatebunny
+	result = /obj/item/food/chocolatebunny
 	subcategory = CAT_MISCFOOD

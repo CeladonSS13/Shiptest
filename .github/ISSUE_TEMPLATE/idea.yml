@@ -1,0 +1,12 @@
+name: "Предложить идею"
+title: "[ИДЕЯ]: "
+description: "Любые идеи для игры, ваша шиза в материю."
+labels: ["💡 Идея"]
+body:
+  - type: textarea
+    id: description
+    validations:
+      required: true
+    attributes:
+      label: "Описание"
+      description: "Опишите идею/фичу"

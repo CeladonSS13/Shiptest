@@ -3,6 +3,7 @@
 
 /obj/item/storage/box/ammo/a308
 	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
+	icon_state = "a308box-HP"
 
 /obj/item/storage/box/ammo/a308/hunterspride
 	icon_state = "a308box"
