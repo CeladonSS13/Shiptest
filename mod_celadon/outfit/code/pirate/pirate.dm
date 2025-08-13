@@ -39,4 +39,5 @@
 /datum/outfit/job/independent/doctor/pirate
 	box = /obj/item/storage/box/survival/pirate
 	faction_icon = "bg_pirate"
+	job_icon = "paramedic"
 
