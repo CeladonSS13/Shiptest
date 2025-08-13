@@ -107,6 +107,9 @@
 		for(var/datum/overmap/target in current_ship.current_overmap.overmap_objects)
 			if(target == current_ship || target.docked_to == current_ship)
 				continue
+			// Only show ships as targets
+			if(!istype(target, /datum/overmap/ship))
+				continue
 			// Only show targets within sensor range
 			var/distance = sqrt((current_ship.x - target.x)**2 + (current_ship.y - target.y)**2)
 			if(distance > current_ship.sensor_range)
