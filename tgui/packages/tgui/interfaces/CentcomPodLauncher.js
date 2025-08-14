@@ -227,7 +227,7 @@ const STYLES = [
   { title: 'Syndie Missile' },
   { title: 'Supply Box' },
   { title: 'Clown Pod' },
-  { title: 'Fruit' },
+  // { title: 'Fruit' },  // [CELADON-REMOVE] - CELADON_RETURN_REVERSE_MENU
   { title: 'Invisible' },
   { title: 'Gondola' },
   { title: 'Seethrough' },
@@ -761,11 +761,11 @@ const ReverseMenu = (props, context) => {
                 disabled={!data.effectReverse}
                 selected={
                   option.key
-                  // [CELADON-EDIT] - CELADON_RETURN_ReverseMenu
-                  // CELADON-EDIT - ORIGINAL
-                  // ? data.reverse_option_list[option.key]
-                  // : data.reverse_option_list[option.title]
-                    ? data.reverseOptionList[option.key]
+                    ? // [CELADON-EDIT] - CELADON_RETURN_REVERSE_MENU
+                      // CELADON-EDIT - ORIGINAL
+                      // ? data.reverse_option_list[option.key]
+                      // : data.reverse_option_list[option.title]
+                      data.reverseOptionList[option.key]
                     : data.reverseOptionList[option.title]
                   // [/CELADON-EDIT]
                 }
