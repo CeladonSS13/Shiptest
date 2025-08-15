@@ -401,7 +401,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
-/area/ship/cargo)
+/area/ship/storage)
 "fg" = (
 /obj/machinery/computer/security/telescreen/entertainment{
 	pixel_y = -8
@@ -726,7 +726,7 @@
 	},
 /obj/effect/turf_decal/techfloor,
 /turf/open/floor/plasteel/tech,
-/area/ship/cargo)
+/area/ship/storage)
 "kF" = (
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 1
@@ -907,6 +907,9 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "mZ" = (
@@ -1035,7 +1038,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
-/area/ship/cargo)
+/area/ship/storage)
 "nE" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/maintenance/fore)
@@ -1227,14 +1230,8 @@
 /obj/machinery/camera/autoname{
 	dir = 1
 	},
-/obj/machinery/firealarm/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
-	},
-/obj/machinery/light_switch{
-	dir = 1;
-	pixel_x = 11;
-	pixel_y = -20
 	},
 /obj/effect/turf_decal/techfloor{
 	dir = 8
@@ -1243,7 +1240,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
-/area/ship/cargo)
+/area/ship/storage)
 "pT" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 9
@@ -1268,7 +1265,6 @@
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "qc" = (
-/obj/machinery/firealarm/directional/east,
 /obj/effect/turf_decal/trimline/opaque/solgovgold/corner{
 	dir = 8
 	},
@@ -1378,7 +1374,7 @@
 	dir = 4
 	},
 /turf/open/floor/engine/hull,
-/area/ship/cargo)
+/area/ship/storage)
 "qL" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1401,7 +1397,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
-/area/ship/cargo)
+/area/ship/storage)
 "rf" = (
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/corner{
 	dir = 8
@@ -1637,7 +1633,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
-/area/ship/cargo)
+/area/ship/storage)
 "to" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1847,10 +1843,6 @@
 /obj/effect/turf_decal/trimline/opaque/solgovgold/warning,
 /obj/effect/turf_decal/techfloor{
 	dir = 1
-	},
-/obj/machinery/light_switch{
-	pixel_y = 23;
-	pixel_x = 11
 	},
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/structure/closet/crate/large,
@@ -2265,7 +2257,7 @@
 	dir = 4
 	},
 /turf/open/floor/engine/hull,
-/area/ship/cargo)
+/area/ship/storage)
 "zN" = (
 /obj/machinery/cryopod{
 	dir = 1
@@ -2436,7 +2428,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
-/area/ship/cargo)
+/area/ship/storage)
 "BG" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#D5A66E";
@@ -2617,7 +2609,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
-/area/ship/cargo)
+/area/ship/storage)
 "Dt" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
@@ -2627,7 +2619,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
-/area/ship/cargo)
+/area/ship/storage)
 "DV" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -2996,8 +2988,9 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
+/obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/tech,
-/area/ship/cargo)
+/area/ship/storage)
 "HD" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#D5A66E"
@@ -3238,7 +3231,7 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ship/cargo)
+/area/ship/storage)
 "Lf" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1;
@@ -3362,6 +3355,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "LX" = (
@@ -3711,7 +3705,7 @@
 	dir = 4
 	},
 /turf/open/floor/engine/hull,
-/area/ship/cargo)
+/area/ship/storage)
 "Qy" = (
 /obj/item/kirbyplants{
 	icon_state = "plant-27";
@@ -3861,7 +3855,7 @@
 	dir = 10
 	},
 /turf/open/floor/plasteel/tech,
-/area/ship/cargo)
+/area/ship/storage)
 "Sk" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -3942,6 +3936,7 @@
 /obj/effect/turf_decal/siding/wood{
 	color = "#D5A66E"
 	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "To" = (
@@ -4240,6 +4235,17 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/techfloor{
 	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc/auto_name/directional/west{
+	pixel_y = 3
+	},
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -20;
+	pixel_y = -11
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
@@ -4662,6 +4668,7 @@
 /obj/effect/turf_decal/spline/fancy/transparent/solgovgold,
 /obj/effect/turf_decal/corner/opaque/solgovblue/half,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
 "Zy" = (
