@@ -73,7 +73,7 @@
 	dir = 6;
 	id = "tomahawk_turrets"
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "bn" = (
 /obj/structure/cable{
@@ -149,7 +149,7 @@
 /obj/structure/sign/number/one{
 	color = "#c48d26"
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew)
 "cg" = (
 /obj/effect/turf_decal/techfloor{
@@ -273,7 +273,7 @@
 	color = "#c48d26";
 	dir = 1
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/storage)
 "ds" = (
 /obj/effect/turf_decal/corner_techfloor_gray/full,
@@ -339,7 +339,7 @@
 	dir = 1
 	},
 /obj/machinery/newscaster/directional/west,
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew/law_office)
 "em" = (
 /obj/structure/toilet{
@@ -391,7 +391,7 @@
 	dir = 5;
 	id = "tomahawk_turrets"
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "fc" = (
 /obj/structure/cable{
@@ -406,14 +406,14 @@
 /obj/machinery/computer/security/telescreen/entertainment{
 	pixel_y = -8
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/security/prison)
 "fj" = (
 /obj/machinery/porta_turret/ship/solfed{
 	dir = 9;
 	id = "tomahawk_turrets"
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "fM" = (
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
@@ -441,7 +441,7 @@
 /area/ship/crew)
 "gA" = (
 /obj/machinery/atmospherics/pipe/simple/green/hidden/layer1,
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/engineering)
 "gR" = (
 /obj/structure/chair/comfy/red,
@@ -604,14 +604,14 @@
 /obj/structure/sign/number/eight{
 	color = "#c48d26"
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew/law_office)
 "je" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#4d362c";
 	dir = 9
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/security/prison)
 "jl" = (
 /obj/structure/cable{
@@ -630,7 +630,7 @@
 /turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "jy" = (
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/engineering)
 "jK" = (
 /obj/structure/chair/plastic{
@@ -714,7 +714,7 @@
 /obj/structure/sign/number/nine{
 	color = "#c48d26"
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew/law_office)
 "kz" = (
 /obj/structure/cable{
@@ -847,10 +847,11 @@
 /obj/machinery/computer/operating{
 	dir = 1
 	},
+/obj/machinery/light/colored/white,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "lQ" = (
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew/crewtwo)
 "mi" = (
 /obj/structure/chair/comfy/beige/old/directional/east,
@@ -934,7 +935,7 @@
 /obj/machinery/vending/wallmed{
 	pixel_y = 5
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/medical)
 "nh" = (
 /obj/structure/table/wood,
@@ -1040,7 +1041,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "nE" = (
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/maintenance/fore)
 "nF" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -1224,7 +1225,7 @@
 /area/ship/crew/canteen/kitchen)
 "pA" = (
 /obj/structure/sign/solfed,
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew/crewtwo)
 "pC" = (
 /obj/machinery/camera/autoname{
@@ -1479,7 +1480,7 @@
 /area/ship/security/prison)
 "rw" = (
 /obj/structure/sign/poster/official/cleanliness,
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/engineering)
 "rz" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -1489,7 +1490,7 @@
 /area/ship/security/prison)
 "rE" = (
 /obj/structure/sign/solfed,
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew)
 "rK" = (
 /obj/item/storage/belt/military/solfed,
@@ -1505,8 +1506,9 @@
 /obj/item/sign/flag/solfed,
 /obj/item/melee/energy/sword/saber/knife,
 /obj/item/clothing/gloves/combat/solfed,
-/obj/structure/closet/wall/blue/directional/west,
-/obj/item/tank/jetpack/suit,
+/obj/structure/closet/wall/blue/directional/west{
+	req_access = list(57)
+	},
 /obj/effect/turf_decal/spline/fancy/transparent/solgovgold{
 	dir = 8
 	},
@@ -1551,7 +1553,7 @@
 /turf/open/floor/wood/walnut,
 /area/ship/crew)
 "so" = (
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew/canteen/kitchen)
 "su" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
@@ -1594,7 +1596,7 @@
 /area/ship/bridge)
 "ti" = (
 /obj/structure/sign/solfed,
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew/law_office)
 "tl" = (
 /obj/structure/cable{
@@ -1697,7 +1699,7 @@
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "ut" = (
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "uM" = (
 /obj/structure/cable{
@@ -2025,7 +2027,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "xp" = (
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew/law_office)
 "xs" = (
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
@@ -2063,7 +2065,7 @@
 /area/ship/hallway/central)
 "xD" = (
 /obj/structure/sign/solfed,
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/engineering)
 "xF" = (
 /obj/structure/flora/ausbushes/brflowers{
@@ -2073,7 +2075,9 @@
 	dir = 9
 	},
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/plating/asteroid/dirt/grass/jungle/yellow,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle/yellow{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15"
+	},
 /area/ship/crew/law_office)
 "xO" = (
 /obj/effect/turf_decal/corner/opaque/cybersunteal/border{
@@ -2117,7 +2121,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/storage)
 "yg" = (
 /obj/structure/cable{
@@ -2163,6 +2167,7 @@
 /obj/item/reagent_containers/pill/stimulant,
 /obj/item/reagent_containers/pill/stimulant,
 /obj/item/reagent_containers/pill/stimulant,
+/obj/machinery/light/colored/white,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "zd" = (
@@ -2352,7 +2357,7 @@
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "AK" = (
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/security/prison)
 "AS" = (
 /obj/structure/closet/cabinet,
@@ -2657,7 +2662,7 @@
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "En" = (
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/medical)
 "Eu" = (
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
@@ -2705,6 +2710,9 @@
 	},
 /obj/effect/turf_decal/corner/opaque/solgovblue/three_quarters{
 	dir = 1
+	},
+/obj/structure/sign/poster/solgov/mars{
+	pixel_x = -32
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
@@ -2960,7 +2968,7 @@
 /area/ship/external)
 "Hh" = (
 /obj/structure/sign/solfed,
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/maintenance/fore)
 "Hp" = (
 /obj/structure/cable{
@@ -3033,7 +3041,6 @@
 /obj/machinery/stasis{
 	dir = 4
 	},
-/obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "Ip" = (
@@ -3127,7 +3134,7 @@
 	dir = 6;
 	id = "tomahawk_turrets"
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "Jk" = (
 /obj/effect/turf_decal/siding/wood{
@@ -3149,7 +3156,7 @@
 /area/ship/crew/crewtwo)
 "Jo" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/engineering)
 "Jp" = (
 /obj/structure/sign/poster/solgov/sonnensoldner{
@@ -3165,7 +3172,7 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
 "Jv" = (
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/hallway/central)
 "JF" = (
 /obj/structure/cable{
@@ -3190,7 +3197,7 @@
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/law_office)
 "JQ" = (
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew)
 "JT" = (
 /obj/effect/turf_decal/siding/wood{
@@ -3219,7 +3226,7 @@
 /area/ship/security/prison)
 "KX" = (
 /obj/structure/sign/poster/contraband/hacking_guide,
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/engineering)
 "KZ" = (
 /obj/structure/cable{
@@ -3258,6 +3265,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue/three_quarters{
 	dir = 4
 	},
+/obj/item/clothing/suit/space/hardsuit/solgov,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
 "Lp" = (
@@ -3493,7 +3501,7 @@
 	color = "#c48d26";
 	dir = 1
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/storage)
 "Nv" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
@@ -4033,11 +4041,11 @@
 	dir = 1;
 	color = "#c48d26"
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/storage)
 "TT" = (
 /obj/structure/cable,
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/medical)
 "TX" = (
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/corner,
@@ -4267,7 +4275,7 @@
 	dir = 10;
 	id = "tomahawk_turrets"
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "VF" = (
 /obj/effect/turf_decal/techfloor{
@@ -4275,7 +4283,7 @@
 	},
 /obj/effect/turf_decal/spline/fancy/transparent/solgovgold/corner,
 /obj/effect/turf_decal/trimline/opaque/solgovgold/corner,
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/storage)
 "VP" = (
 /obj/structure/cable{
@@ -4357,7 +4365,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/law_office)
 "Wm" = (
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/storage)
 "Wq" = (
 /obj/structure/cable{
@@ -4458,7 +4466,7 @@
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 1
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew/law_office)
 "XO" = (
 /obj/structure/sign/poster/contraband/random{
@@ -4484,9 +4492,7 @@
 /obj/effect/turf_decal/corner_techfloor_gray{
 	dir = 10
 	},
-/obj/structure/sign/poster/clip/enlist{
-	pixel_y = -32
-	},
+/obj/structure/sign/flag/solfed/directional/north,
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "XZ" = (
@@ -4567,7 +4573,7 @@
 	dir = 1;
 	color = "#c48d26"
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/storage)
 "YV" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -4732,7 +4738,7 @@
 /area/ship/crew)
 "ZK" = (
 /obj/machinery/light/small/directional/west,
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/security/prison)
 "ZL" = (
 /obj/structure/fluff/hedge/opaque{
@@ -4783,7 +4789,7 @@
 /obj/structure/sign/number/four{
 	color = "#c48d26"
 	},
-/turf/closed/wall/mineral/plastitanium,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew/law_office)
 "ZS" = (
 /obj/effect/turf_decal/techfloor/orange{
