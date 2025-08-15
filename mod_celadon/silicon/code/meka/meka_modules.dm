@@ -28,7 +28,7 @@
 		/obj/item/borg/cyborghug/medical,
 		/obj/item/stack/medical/gauze/cyborg,
 		/obj/item/organ_storage,
-		/obj/item/borg/lollipop,
+		///obj/item/borg/lollipop,
 		/obj/item/extinguisher/mini,
 		/obj/item/gps/cyborg,
 		/obj/item/crowbar/cyborg,
@@ -375,7 +375,7 @@
 		/obj/item/lighter,
 		/obj/item/storage/bag/tray,
 		/obj/item/reagent_containers/borghypo/borgshaker,
-		/obj/item/borg/lollipop,
+		///obj/item/borg/lollipop,
 		/obj/item/stack/cable_coil/cyborg,
 		/obj/item/borg/apparatus/beaker/service)
 	emag_modules = list(/obj/item/reagent_containers/borghypo/borgshaker/hacked)

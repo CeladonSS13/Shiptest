@@ -167,6 +167,9 @@
 	SSovermap.controlled_ships += src
 	current_overmap.controlled_ships += src
 
+	GLOB.ship_select_tgui?.update_static_data_for_all_viewers()
+	GLOB.crew_manifest_tgui?.update_static_data_for_all_viewers()
+
 	// [CELADON-ADD] - CELADON_COMPONENT - Добавляем оповещении о пиратах
 	if(istype(get_faction(), /datum/faction/pirate))
 		var/datum/overmap/outpost/outpost = SSovermap.outposts[1]
@@ -213,6 +216,8 @@
 		// it handles removal itself
 		qdel(applications[a_key])
 	LAZYCLEARLIST(applications)
+	GLOB.ship_select_tgui?.update_static_data_for_all_viewers()
+	GLOB.crew_manifest_tgui?.update_static_data_for_all_viewers()
 	// set ourselves to ownerless to unregister signals
 	set_owner_mob(null)
 
@@ -405,6 +410,14 @@
 	job_holder_refs[human_job] += WEAKREF(H)
 	if(H.account_id)
 		crew_bank_accounts += WEAKREF(H.get_bank_account())
+
+	GLOB.crew_manifest_tgui?.update_static_data_for_all_viewers()
+	GLOB.ship_select_tgui?.update_static_data_for_all_viewers()
+
+/datum/overmap/ship/controlled/proc/manifest_remove(mob/living/carbon/human/removed)
+	manifest -= removed.real_name
+	GLOB.crew_manifest_tgui?.update_static_data_for_all_viewers()
+	GLOB.ship_select_tgui?.update_static_data_for_all_viewers()
 
 /**
  * adds a mob's real name to a crew's guestbooks

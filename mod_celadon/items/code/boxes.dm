@@ -14,8 +14,7 @@
 		/obj/item/tank/internals/emergency_oxygen/engi = 1,\
 		/obj/item/reagent_containers/hypospray/medipen = 1,\
 		/obj/item/reagent_containers/pill/penacid = 1,\
-		/obj/item/reagent_containers/food/snacks/ration = 1,\
-		//obj/item/reagent_containers/food/snacks/ration = 1,
+		/obj/item/food/ration = 1,\
 		/obj/item/radio = 1,\
 		/obj/item/crowbar = 1,\
 		)
@@ -81,8 +80,7 @@
 		/obj/item/tank/internals/emergency_oxygen/engi = 1,\
 		/obj/item/reagent_containers/hypospray/medipen = 1,\
 		/obj/item/reagent_containers/pill/penacid = 1,\
-		/obj/item/reagent_containers/food/snacks/ration = 1,\
-		//obj/item/reagent_containers/food/snacks/ration = 1,
+		/obj/item/food/ration = 1,\
 		/obj/item/radio = 1,\
 		/obj/item/crowbar = 1,\
 		)
@@ -104,8 +102,7 @@
 		/obj/item/tank/internals/emergency_oxygen = 1,\
 		/obj/item/reagent_containers/hypospray/medipen = 1,\
 		/obj/item/reagent_containers/pill/charcoal = 1,\
-		/obj/item/reagent_containers/food/snacks/ration/bar = 1,\
-		//obj/item/reagent_containers/food/snacks/ration = 1,
+		/obj/item/food/ration/bar = 1,\
 		/obj/item/flashlight/flare = 1,\
 		/obj/item/radio = 1,\
 		)

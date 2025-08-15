@@ -164,23 +164,23 @@ export const Autolathe = (props, context) => {
                           <Flex.Item grow={1}>
                             <Button
                               icon="hammer"
-                              content="10"
-                              disabled={!design.mult10}
+                              content="15"
+                              disabled={!design.mult15}
                               onClick={() =>
                                 act('make', {
                                   id: design.id,
-                                  multiplier: '10',
+                                  multiplier: '15',
                                 })
                               }
                             />
                             <Button
                               icon="hammer"
-                              content="25"
-                              disabled={!design.mult25}
+                              content="30"
+                              disabled={!design.mult30}
                               onClick={() =>
                                 act('make', {
                                   id: design.id,
-                                  multiplier: '25',
+                                  multiplier: '30',
                                 })
                               }
                             />
