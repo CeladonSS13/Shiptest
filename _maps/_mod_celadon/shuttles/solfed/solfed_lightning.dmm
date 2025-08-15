@@ -432,13 +432,6 @@
 	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/command_crew)
-"eO" = (
-/obj/machinery/porta_turret/ship/solfed/light{
-	dir = 10;
-	id = "Canary_turrets"
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
 "eW" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
@@ -527,13 +520,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo/cargo_bay)
-"fC" = (
-/obj/machinery/porta_turret/ship/solfed/light{
-	dir = 6;
-	id = "Canary_turrets"
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
 "fJ" = (
 /obj/machinery/light/colored/blue{
 	dir = 8;
@@ -1399,7 +1385,6 @@
 /obj/item/clothing/glasses/meson/engine,
 /obj/item/clothing/glasses/meson/sunglasses,
 /obj/effect/turf_decal/techfloor,
-/obj/item/storage/belt/sabre/solgov,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "oN" = (
@@ -2707,13 +2692,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
-"Bu" = (
-/obj/machinery/porta_turret/ship/solfed/light{
-	dir = 5;
-	id = "Canary_turrets"
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
 "Bw" = (
 /obj/structure/sign/poster/bay/bay_55{
 	pixel_y = 32
@@ -3731,13 +3709,6 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue/bordercorner,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
-"MH" = (
-/obj/machinery/porta_turret/ship/solfed/light{
-	dir = 9;
-	id = "Canary_turrets"
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
 "ML" = (
 /obj/effect/turf_decal/trimline/opaque/solgovblue/line{
 	dir = 9
@@ -3911,10 +3882,6 @@
 /turf/open/floor/plasteel/strongdark,
 /area/ship/crew/canteen)
 "OR" = (
-/obj/machinery/turretid/ship{
-	id = "Canary_turrets";
-	pixel_x = -32
-	},
 /obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 4
 	},
@@ -5145,7 +5112,7 @@ ri
 DK
 ri
 fd
-eO
+Sq
 yQ
 yQ
 yQ
@@ -5176,7 +5143,7 @@ yQ
 yQ
 yQ
 yQ
-MH
+Sq
 Zj
 qE
 UH
@@ -5650,7 +5617,7 @@ yQ
 yQ
 yQ
 yQ
-Bu
+Sq
 pq
 pq
 pq
@@ -5678,7 +5645,7 @@ Qg
 Qg
 Qg
 Qg
-fC
+Sq
 yQ
 yQ
 yQ
@@ -5951,7 +5918,7 @@ yQ
 yQ
 yQ
 yQ
-Bu
+Sq
 Sq
 Sq
 Kz
@@ -5965,7 +5932,7 @@ ta
 ye
 Sq
 Sq
-fC
+Sq
 yQ
 yQ
 yQ
