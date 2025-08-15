@@ -1,33 +1,4 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"ah" = (
-/obj/structure/fluff/hedge/opaque{
-	pixel_y = -1
-<<<<<<< Updated upstream
-	},
-/obj/effect/turf_decal/siding/wood{
-	color = "#D5A66E"
-	},
-/obj/effect/turf_decal/spline/fancy/wood/three_quarters{
-	layer = 5
-=======
-	},
-/obj/effect/turf_decal/siding/wood{
-	color = "#D5A66E"
-	},
-/obj/structure/railing/wood{
-	dir = 8
-	},
-/obj/structure/railing/wood{
-	dir = 1;
-	layer = 2
-	},
-/obj/structure/railing/wood{
-	dir = 4
->>>>>>> Stashed changes
-	},
-/obj/structure/railing/wood,
-/turf/open/floor/wood,
-/area/ship/hallway/central)
 "ap" = (
 /obj/machinery/power/terminal{
 	dir = 8
@@ -159,7 +130,7 @@
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/corner{
 	dir = 8
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "bP" = (
 /obj/structure/table/wood,
@@ -181,11 +152,6 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/crew)
 "cg" = (
-/obj/machinery/door/firedoor/border_only,
-/obj/effect/turf_decal/industrial/traffic,
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 4
 	},
@@ -247,21 +213,14 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
+/obj/effect/turf_decal/spline/fancy/transparent/solgovgold{
 	dir = 4
 	},
-<<<<<<< Updated upstream
-/obj/effect/turf_decal/corner_techfloor_grid,
-/obj/effect/turf_decal/techfloor/corner,
-/turf/open/floor/plasteel/tech,
-/area/ship/crew/janitor)
-=======
-/obj/effect/turf_decal/corner/transparent/solgovgold/half{
+/obj/effect/turf_decal/corner/opaque/solgovblue/half{
 	dir = 4
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "db" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1;
@@ -320,8 +279,8 @@
 /obj/effect/turf_decal/corner_techfloor_gray/full,
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/suit/space/hardsuit/solgov,
-/obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/clothing/mask/gas/sechailer,
+/obj/item/tank/jetpack/oxygen/security,
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "dK" = (
@@ -362,24 +321,6 @@
 	},
 /obj/effect/turf_decal/siding/wood{
 	color = "#D5A66E";
-<<<<<<< Updated upstream
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wood{
-	color = "#D5A66E"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/turf/open/floor/carpet/royalblue,
-/area/ship/hallway/central)
-"ej" = (
-/obj/machinery/door/firedoor/border_only{
-=======
->>>>>>> Stashed changes
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/wood{
@@ -397,16 +338,9 @@
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 1
 	},
-<<<<<<< Updated upstream
-/obj/machinery/door/firedoor/border_only,
-/obj/machinery/newscaster/directional/west,
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
-=======
 /obj/machinery/newscaster/directional/west,
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "em" = (
 /obj/structure/toilet{
 	pixel_y = 1;
@@ -416,10 +350,6 @@
 /obj/item/newspaper{
 	pixel_x = -9
 	},
-<<<<<<< Updated upstream
-/turf/open/floor/plasteel/tech,
-/area/ship/crew/janitor)
-=======
 /obj/item/newspaper{
 	pixel_x = -9;
 	pixel_y = -5
@@ -432,7 +362,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "eo" = (
 /obj/machinery/power/smes/shuttle/precharged{
 	dir = 4
@@ -606,7 +535,7 @@
 /turf/open/floor/wood/ebony,
 /area/ship/hallway/central)
 "hH" = (
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "hR" = (
 /obj/effect/turf_decal/siding/wood{
@@ -630,31 +559,20 @@
 /turf/open/floor/wood,
 /area/ship/bridge)
 "ia" = (
-<<<<<<< Updated upstream
-/obj/effect/turf_decal/techfloor{
-	dir = 4
-	},
-/obj/machinery/firealarm/directional/east,
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
-=======
 /obj/structure/chair/wood{
 	dir = 8
 	},
 /obj/machinery/airalarm/directional/north,
-/obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
+/obj/effect/turf_decal/spline/fancy/transparent/solgovgold{
 	dir = 1
 	},
-/obj/effect/turf_decal/industrial/outline{
-	color = "#2d2a4e"
-	},
-/obj/effect/turf_decal/corner/transparent/solgovgold/half{
+/obj/effect/turf_decal/corner/opaque/solgovblue/half{
 	dir = 1
 	},
+/obj/effect/turf_decal/industrial/outline/red,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "iD" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -662,10 +580,7 @@
 /obj/structure/chair/wood{
 	dir = 8
 	},
-/obj/effect/turf_decal/industrial/outline{
-	color = "#2d2a4e"
-	},
-/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/industrial/outline/red,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
 "iH" = (
@@ -690,11 +605,7 @@
 	color = "#c48d26"
 	},
 /turf/closed/wall/mineral/plastitanium,
-<<<<<<< Updated upstream
-/area/ship/cargo)
-=======
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "je" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#4d362c";
@@ -716,7 +627,7 @@
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 4
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "jy" = (
 /turf/closed/wall/mineral/plastitanium,
@@ -734,17 +645,12 @@
 /obj/machinery/light/colored{
 	dir = 1
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "jP" = (
 /obj/structure/fluff/hedge/opaque{
 	pixel_y = -1
 	},
-<<<<<<< Updated upstream
-/obj/effect/turf_decal/spline/fancy/wood/three_quarters{
-	layer = 5
-	},
-=======
 /obj/structure/railing/wood{
 	dir = 8
 	},
@@ -756,7 +662,6 @@
 	dir = 4
 	},
 /obj/structure/railing/wood,
->>>>>>> Stashed changes
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "ko" = (
@@ -772,28 +677,17 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
 	},
-<<<<<<< Updated upstream
-/obj/effect/turf_decal/techfloor{
-	dir = 8
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
-"kp" = (
-/turf/open/floor/wood/ebony,
-=======
 /obj/structure/chair/comfy/blue/old/directional/north{
 	dir = 4;
 	pixel_y = 7
 	},
-/obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
+/obj/effect/turf_decal/spline/fancy/transparent/solgovgold{
 	dir = 8
 	},
-/obj/effect/turf_decal/corner/transparent/solgovgold/half{
+/obj/effect/turf_decal/corner/opaque/solgovblue/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/industrial/outline{
-	color = "#2d2a4e"
-	},
+/obj/effect/turf_decal/industrial/outline/yellow,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
 "kp" = (
@@ -808,7 +702,6 @@
 	color = "#D5A66E"
 	},
 /turf/open/floor/carpet/purple,
->>>>>>> Stashed changes
 /area/ship/crew/crewtwo)
 "kr" = (
 /obj/effect/turf_decal/corner_techfloor_gray{
@@ -822,11 +715,7 @@
 	color = "#c48d26"
 	},
 /turf/closed/wall/mineral/plastitanium,
-<<<<<<< Updated upstream
-/area/ship/cargo)
-=======
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "kz" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -835,10 +724,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 8
 	},
-<<<<<<< Updated upstream
-=======
 /obj/effect/turf_decal/techfloor,
->>>>>>> Stashed changes
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "kF" = (
@@ -855,27 +741,15 @@
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "la" = (
-/obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
-	dir = 6
-	},
 /obj/structure/filingcabinet/wide{
 	dir = 8
 	},
-<<<<<<< Updated upstream
-/obj/item/mop,
-/obj/item/reagent_containers/glass/bucket{
-	pixel_x = -5
+/obj/effect/turf_decal/spline/fancy/transparent/solgovgold{
+	dir = 6
 	},
-/obj/item/storage/bag/trash{
-	pixel_x = 5
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/crew/janitor)
-=======
-/obj/effect/turf_decal/corner/transparent/solgovgold/three_quarters,
+/obj/effect/turf_decal/corner/opaque/solgovblue/three_quarters,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "li" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
@@ -933,6 +807,8 @@
 /obj/structure/sign/poster/bay/bay_41{
 	pixel_y = 32
 	},
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/jetpack/suit,
 /turf/open/floor/wood,
 /area/ship/bridge)
 "lG" = (
@@ -988,13 +864,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
-<<<<<<< Updated upstream
-/turf/open/floor/wood/ebony,
-/area/ship/crew/crewtwo)
-"mt" = (
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/cargo)
-=======
 /obj/effect/turf_decal/siding/wood{
 	color = "#D5A66E";
 	dir = 8
@@ -1012,39 +881,32 @@
 /turf/open/floor/carpet/purple,
 /area/ship/crew/crewtwo)
 "mt" = (
-/obj/structure/table/wood/fancy/purple,
-/obj/item/paper_bin{
-	pixel_y = 5
+/obj/structure/chair/wood{
+	dir = 8
 	},
-/obj/item/stamp/solgov{
-	pixel_y = 5
-	},
-/obj/item/pen/solfed{
-	pixel_y = 8
-	},
-/obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
+/obj/machinery/light/colored{
 	dir = 1
 	},
-/obj/effect/turf_decal/corner/transparent/solgovgold/half{
+/obj/structure/sign/flag/solfed/directional/south,
+/obj/effect/turf_decal/spline/fancy/transparent/solgovgold{
 	dir = 1
 	},
+/obj/effect/turf_decal/corner/opaque/solgovblue/half{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/outline/red,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "mL" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/door/firedoor/border_only,
-/obj/effect/turf_decal/industrial/traffic,
 /obj/effect/turf_decal/industrial/stand_clear/white{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "mZ" = (
@@ -1081,8 +943,6 @@
 	color = "#543c30"
 	},
 /obj/machinery/firealarm/directional/south,
-<<<<<<< Updated upstream
-=======
 /obj/item/candle/infinite{
 	pixel_y = 2;
 	light_on = 1;
@@ -1095,20 +955,11 @@
 	light_on = 1;
 	layer = 3.1
 	},
->>>>>>> Stashed changes
 /turf/open/floor/wood/ebony,
 /area/ship/crew/crewtwo)
 "nm" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	color = "#543C30"
-<<<<<<< Updated upstream
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/turf/open/floor/wood/ebony,
-=======
 	},
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -1127,18 +978,11 @@
 	color = "#D5A66E"
 	},
 /turf/open/floor/carpet/purple,
->>>>>>> Stashed changes
 /area/ship/crew/crewtwo)
 "no" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8;
 	color = "#543C30"
-<<<<<<< Updated upstream
-	},
-/obj/machinery/airalarm/directional/west,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/wood/ebony,
-=======
 	},
 /obj/machinery/airalarm/directional/west,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -1154,7 +998,6 @@
 	color = "#D5A66E"
 	},
 /turf/open/floor/carpet/purple,
->>>>>>> Stashed changes
 /area/ship/crew/crewtwo)
 "ny" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -1231,14 +1074,14 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "nQ" = (
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 1
 	},
 /obj/machinery/vending/coffee,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "oe" = (
 /obj/machinery/vending/cigarette,
@@ -1326,6 +1169,14 @@
 /obj/machinery/firealarm/directional/north,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
+"oW" = (
+/obj/structure/table/wood/fancy/purple,
+/obj/item/desk_flag/solfed{
+	pixel_x = -7;
+	pixel_y = 4
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/crew/law_office)
 "oY" = (
 /obj/effect/turf_decal/techfloor,
 /obj/effect/decal/cleanable/dirt,
@@ -1388,6 +1239,9 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
+/obj/effect/turf_decal/trimline/opaque/solgovgold/warning{
+	dir = 4
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "pT" = (
@@ -1409,8 +1263,8 @@
 	},
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/suit/space/hardsuit/solgov,
-/obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/clothing/mask/gas/sechailer,
+/obj/item/tank/jetpack/oxygen/security,
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "qc" = (
@@ -1424,11 +1278,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 5
 	},
-<<<<<<< Updated upstream
-/obj/structure/closet/crate/bin,
-=======
 /obj/structure/reagent_dispensers/fueltank,
->>>>>>> Stashed changes
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "qd" = (
@@ -1451,49 +1301,6 @@
 	icon_state = "sec";
 	name = "marine locker";
 	req_access_txt = "2"
-<<<<<<< Updated upstream
-	},
-/obj/item/ammo_box/magazine/pistol556mm,
-/obj/item/ammo_box/magazine/pistol556mm,
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/glasses/sunglasses/ballistic,
-/obj/item/storage/belt/military/solfed,
-/obj/item/clothing/suit/armor/vest/marine,
-/obj/item/gun/ballistic/automatic/pistol/solgov,
-/obj/item/radio/headset/solgov/alt,
-/obj/item/clothing/under/solfed,
-/obj/item/clothing/mask/balaclava/combat,
-/obj/item/clothing/shoes/jackboots,
-/obj/item/clothing/shoes/jackboots,
-/obj/effect/spawner/random/food_or_drink/ration,
-/obj/item/encryptionkey/solgov{
-	pixel_x = -5;
-	pixel_y = 1
-	},
-/obj/item/clothing/gloves/combat/solfed,
-/obj/item/clothing/head/solfed/beret,
-/obj/item/clothing/under/solfed/camo,
-/obj/item/melee/energy/sword/saber/knife,
-/obj/item/clothing/head/helmet/solfed/m11,
-/obj/effect/turf_decal/corner_techfloor_gray/full{
-	dir = 8
-	},
-/obj/structure/sign/flag/solfed/directional/west,
-/obj/machinery/light/colored/red{
-	dir = 1
-	},
-/turf/open/floor/plasteel/darkredfull,
-/area/ship/security/prison)
-"qq" = (
-/obj/effect/turf_decal/techfloor{
-	dir = 1
-	},
-/obj/structure/closet/emcloset/wall/directional/north,
-/turf/open/floor/plasteel/tech,
-/area/ship/crew/janitor)
-"qB" = (
-/obj/machinery/autolathe,
-=======
 	},
 /obj/item/ammo_box/magazine/pistol556mm,
 /obj/item/ammo_box/magazine/pistol556mm,
@@ -1526,6 +1333,7 @@
 	},
 /obj/item/restraints/handcuffs/tape,
 /obj/item/melee/baton/loaded,
+/obj/item/tank/internals/emergency_oxygen/double,
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "qq" = (
@@ -1550,7 +1358,6 @@
 /obj/machinery/autolathe,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/metal/fifty,
->>>>>>> Stashed changes
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "qI" = (
@@ -1563,6 +1370,12 @@
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
 	dir = 1;
 	id = "tomahawk_cargo_halo"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
 	},
 /turf/open/floor/engine/hull,
 /area/ship/cargo)
@@ -1584,12 +1397,9 @@
 /obj/machinery/light/colored{
 	dir = 8
 	},
-<<<<<<< Updated upstream
-=======
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
->>>>>>> Stashed changes
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "rf" = (
@@ -1606,7 +1416,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "rk" = (
 /obj/item/kirbyplants/photosynthetic{
@@ -1630,7 +1440,7 @@
 	pixel_y = -16;
 	dir = 1
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "rm" = (
 /obj/structure/closet/secure_closet{
@@ -1666,11 +1476,9 @@
 /obj/machinery/light/colored/red{
 	dir = 1
 	},
-<<<<<<< Updated upstream
-=======
 /obj/item/restraints/handcuffs/tape,
 /obj/item/melee/baton/loaded,
->>>>>>> Stashed changes
+/obj/item/tank/internals/emergency_oxygen/double,
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "rw" = (
@@ -1688,17 +1496,6 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/crew)
 "rK" = (
-<<<<<<< Updated upstream
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/effect/turf_decal/techfloor{
-	dir = 8
-	},
-/obj/machinery/light/colored{
-	dir = 8
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
-=======
 /obj/item/storage/belt/military/solfed,
 /obj/item/gun/ballistic/automatic/pistol/solgov,
 /obj/item/ammo_box/magazine/pistol556mm,
@@ -1713,24 +1510,20 @@
 /obj/item/melee/energy/sword/saber/knife,
 /obj/item/clothing/gloves/combat/solfed,
 /obj/structure/closet/wall/blue/directional/west,
-/obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
+/obj/item/tank/jetpack/suit,
+/obj/effect/turf_decal/spline/fancy/transparent/solgovgold{
 	dir = 8
 	},
-/obj/effect/turf_decal/corner/transparent/solgovgold/half{
+/obj/effect/turf_decal/corner/opaque/solgovblue/half{
 	dir = 8
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "rZ" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-<<<<<<< Updated upstream
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
-=======
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
 	},
@@ -1749,9 +1542,9 @@
 	color = "#D5A66E";
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "sb" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#4d362c";
@@ -1803,36 +1596,10 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
-<<<<<<< Updated upstream
-"ti" = (
-/obj/structure/sign/solfed,
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/crew/janitor)
-=======
-"tg" = (
-/obj/structure/chair/wood{
-	dir = 8
-	},
-/obj/machinery/light/colored{
-	dir = 1
-	},
-/obj/structure/sign/flag/solfed/directional/south,
-/obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
-	dir = 1
-	},
-/obj/effect/turf_decal/industrial/outline{
-	color = "#2d2a4e"
-	},
-/obj/effect/turf_decal/corner/transparent/solgovgold/half{
-	dir = 1
-	},
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/crew/law_office)
 "ti" = (
 /obj/structure/sign/solfed,
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "tl" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1840,20 +1607,13 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-<<<<<<< Updated upstream
-/obj/structure/table/wood,
-=======
->>>>>>> Stashed changes
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
 /obj/machinery/light/colored{
 	dir = 1
 	},
-<<<<<<< Updated upstream
-=======
 /obj/structure/sign/flag/solfed/directional/south,
->>>>>>> Stashed changes
 /turf/open/floor/wood/walnut,
 /area/ship/crew)
 "tn" = (
@@ -1872,6 +1632,9 @@
 	},
 /obj/effect/turf_decal/techfloor{
 	dir = 8
+	},
+/obj/effect/turf_decal/trimline/opaque/solgovgold/warning{
+	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
@@ -1928,7 +1691,7 @@
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 10
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "uf" = (
 /obj/effect/turf_decal/siding/wood/corner,
@@ -2013,27 +1776,28 @@
 /turf/open/floor/plating,
 /area/ship/crew)
 "vs" = (
-<<<<<<< Updated upstream
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
-=======
 /obj/structure/table/wood/fancy/purple,
-/obj/item/desk_flag/solfed{
-	pixel_x = -7;
-	pixel_y = 4
+/obj/item/paper_bin{
+	pixel_y = 5
+	},
+/obj/item/stamp/solgov{
+	pixel_y = 5
+	},
+/obj/item/pen/solfed{
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/spline/fancy/transparent/solgovgold{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/solgovblue/half{
+	dir = 1
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "vE" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#4d362c"
 	},
-<<<<<<< Updated upstream
-/obj/structure/curtain/cloth,
-/obj/effect/spawner/bunk_bed,
-=======
 /obj/item/kirbyplants{
 	icon_state = "plant-27";
 	pixel_y = -2;
@@ -2045,7 +1809,6 @@
 	pixel_y = -10;
 	pixel_x = 11
 	},
->>>>>>> Stashed changes
 /turf/open/floor/wood/walnut,
 /area/ship/crew)
 "vG" = (
@@ -2089,11 +1852,8 @@
 	pixel_y = 23;
 	pixel_x = 11
 	},
-<<<<<<< Updated upstream
-=======
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/structure/closet/crate/large,
->>>>>>> Stashed changes
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "vL" = (
@@ -2128,11 +1888,9 @@
 	dir = 5
 	},
 /obj/machinery/airalarm/directional/north,
-<<<<<<< Updated upstream
-=======
 /obj/item/restraints/handcuffs/fake,
 /obj/item/melee/baton/loaded,
->>>>>>> Stashed changes
+/obj/item/tank/internals/emergency_oxygen/double,
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "wf" = (
@@ -2184,24 +1942,14 @@
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "wD" = (
-<<<<<<< Updated upstream
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/effect/turf_decal/techfloor{
-	dir = 4
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
-=======
 /obj/structure/chair/wood{
 	dir = 8
 	},
-/obj/effect/turf_decal/industrial/outline{
-	color = "#2d2a4e"
-	},
-/obj/effect/turf_decal/corner/transparent/solgovgold/half,
+/obj/effect/turf_decal/spline/fancy/transparent/solgovgold,
+/obj/effect/turf_decal/corner/opaque/solgovblue/half,
+/obj/effect/turf_decal/industrial/outline/red,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "wM" = (
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 9
@@ -2285,41 +2033,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "xp" = (
-<<<<<<< Updated upstream
-/obj/machinery/door/poddoor{
-	dir = 4;
-	id = "space_cops_starboard_launcher";
-	name = "Cargo Bay Blast Door"
-	},
-/obj/structure/fans/tiny,
-/turf/open/floor/plating,
-/area/ship/crew/janitor)
-"xs" = (
-/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
-/obj/machinery/door/poddoor/shutters{
-	id = "bridgetohallway";
-	name = "Blast Shutters";
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/bridge)
-"xu" = (
-/obj/structure/closet/crate/bin,
-/obj/effect/turf_decal/siding/wood{
-	color = "#D5A66E";
-	dir = 5
-=======
-/obj/structure/chair/wood{
-	dir = 8
->>>>>>> Stashed changes
-	},
-/obj/machinery/light/colored,
-/obj/structure/sign/flag/solfed/directional/north,
-/obj/effect/turf_decal/corner/transparent/solgovgold/half,
-/obj/effect/turf_decal/industrial/outline{
-	color = "#2d2a4e"
-	},
-/turf/open/floor/plasteel/mono/dark,
+/turf/closed/wall/mineral/plastitanium,
 /area/ship/crew/law_office)
 "xs" = (
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
@@ -2349,31 +2063,6 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8;
 	color = "#543C30"
-<<<<<<< Updated upstream
-	},
-/obj/machinery/light/colored{
-	dir = 8
-	},
-/turf/open/floor/wood/ebony,
-/area/ship/hallway/central)
-"xD" = (
-/obj/structure/sign/solfed,
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/engineering)
-"xF" = (
-/obj/machinery/firealarm/directional/east,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 1
-	},
-/obj/effect/spawner/random/maintenance/five,
-/obj/effect/spawner/random/maintenance/three,
-/obj/structure/closet/crate/trashcart,
-/obj/effect/turf_decal/techfloor{
-	dir = 6
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
-=======
 	},
 /obj/machinery/light/colored{
 	dir = 8
@@ -2394,7 +2083,6 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/plating/asteroid/dirt/grass/jungle/yellow,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "xO" = (
 /obj/effect/turf_decal/corner/opaque/cybersunteal/border{
 	dir = 4
@@ -2422,7 +2110,7 @@
 	pixel_y = 23;
 	id = "tomahawk_kitchen"
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "xV" = (
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
@@ -2500,7 +2188,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "zD" = (
 /obj/structure/cable{
@@ -2553,11 +2241,9 @@
 /obj/effect/turf_decal/corner_techfloor_gray{
 	dir = 5
 	},
-<<<<<<< Updated upstream
-=======
 /obj/item/restraints/handcuffs/tape,
 /obj/item/melee/baton/loaded,
->>>>>>> Stashed changes
+/obj/item/tank/internals/emergency_oxygen/double,
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "zL" = (
@@ -2571,6 +2257,12 @@
 	dir = 4;
 	id = "tomahawk_cargo";
 	name = "Cargo Bay Blast Door"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
 	},
 /turf/open/floor/engine/hull,
 /area/ship/cargo)
@@ -2625,8 +2317,26 @@
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 9
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
+"Aj" = (
+/obj/structure/fluff/hedge/opaque{
+	pixel_y = 4;
+	layer = 3
+	},
+/obj/structure/railing/wood,
+/obj/structure/railing/wood{
+	dir = 4
+	},
+/obj/structure/railing/wood{
+	dir = 8
+	},
+/obj/structure/railing/wood{
+	dir = 1;
+	layer = 2
+	},
+/turf/open/floor/wood,
+/area/ship/hallway/central)
 "Al" = (
 /obj/effect/turf_decal/corner_techfloor_gray{
 	dir = 10
@@ -2793,7 +2503,7 @@
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 1
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "CC" = (
 /obj/structure/cable{
@@ -2903,6 +2613,9 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/blood/old,
+/obj/effect/turf_decal/trimline/opaque/solgovgold/warning{
+	dir = 4
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "Dt" = (
@@ -2910,12 +2623,9 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/techfloor{
-<<<<<<< Updated upstream
-	dir = 4
-=======
 	dir = 6
->>>>>>> Stashed changes
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "DV" = (
@@ -2995,27 +2705,15 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "ER" = (
-/obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
+/obj/effect/turf_decal/spline/fancy/transparent/solgovgold{
 	dir = 10
 	},
-/obj/effect/turf_decal/corner/transparent/solgovgold/three_quarters{
+/obj/effect/turf_decal/corner/opaque/solgovblue/three_quarters{
 	dir = 1
 	},
-<<<<<<< Updated upstream
-/obj/machinery/light/directional/south,
-/obj/structure/closet/crate/bin,
-/obj/effect/turf_decal/techfloor{
-	dir = 10
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
-"EY" = (
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
-=======
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
 "EY" = (
@@ -3035,7 +2733,6 @@
 	},
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "Fm" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/layer1{
 	dir = 1
@@ -3276,7 +2973,6 @@
 "Hp" = (
 /obj/structure/cable{
 	icon_state = "4-8"
-<<<<<<< Updated upstream
 	},
 /obj/effect/turf_decal/siding/wood{
 	color = "#D5A66E";
@@ -3295,46 +2991,13 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /turf/open/floor/carpet/royalblue,
 /area/ship/hallway/central)
-"HD" = (
-/obj/effect/turf_decal/siding/wood{
-	color = "#D5A66E"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/open/floor/wood,
-/area/ship/hallway/central)
-"HK" = (
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/structure/closet/crate/trashcart,
+"Hs" = (
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/techfloor{
-	dir = 9
+	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
-/area/ship/crew/janitor)
-=======
-	},
-/obj/effect/turf_decal/siding/wood{
-	color = "#D5A66E";
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wood{
-	color = "#D5A66E"
-	},
-/obj/effect/turf_decal/siding/wood{
-	color = "#D5A66E";
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
-/turf/open/floor/carpet/royalblue,
-/area/ship/hallway/central)
+/area/ship/cargo)
 "HD" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#D5A66E"
@@ -3350,15 +3013,14 @@
 /area/ship/hallway/central)
 "HK" = (
 /obj/machinery/firealarm/directional/north,
-/obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
+/obj/effect/turf_decal/spline/fancy/transparent/solgovgold{
 	dir = 1
 	},
-/obj/effect/turf_decal/corner/transparent/solgovgold/half{
+/obj/effect/turf_decal/corner/opaque/solgovblue/half{
 	dir = 1
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "Ih" = (
 /obj/effect/turf_decal/spline/fancy/transparent/solgovgold,
 /obj/effect/turf_decal/trimline/opaque/solgovgold/warning,
@@ -3475,12 +3137,6 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
 "Jk" = (
-<<<<<<< Updated upstream
-/obj/item/kirbyplants/photosynthetic{
-	icon_state = "plant-06"
-	},
-=======
->>>>>>> Stashed changes
 /obj/effect/turf_decal/siding/wood{
 	dir = 6;
 	color = "#543C30"
@@ -3488,10 +3144,6 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-<<<<<<< Updated upstream
-/obj/machinery/light/colored,
-=======
->>>>>>> Stashed changes
 /obj/machinery/power/apc/auto_name/directional/east{
 	pixel_y = 9
 	},
@@ -3510,19 +3162,15 @@
 /obj/structure/sign/poster/solgov/sonnensoldner{
 	pixel_y = 32
 	},
-<<<<<<< Updated upstream
-/turf/open/floor/plasteel/tech,
-/area/ship/crew/janitor)
-=======
-/obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
+/obj/effect/turf_decal/spline/fancy/transparent/solgovgold{
 	dir = 5
 	},
-/obj/effect/turf_decal/corner/transparent/solgovgold/three_quarters{
+/obj/effect/turf_decal/corner/opaque/solgovblue/three_quarters{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "Jv" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/hallway/central)
@@ -3536,13 +3184,6 @@
 /obj/machinery/navbeacon/wayfinding/cargo{
 	name = "navigation beacon"
 	},
-<<<<<<< Updated upstream
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 5
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
-=======
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/effect/turf_decal/siding/wood{
 	color = "#D5A66E";
@@ -3552,9 +3193,9 @@
 	color = "#D5A66E";
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "JQ" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/crew)
@@ -3575,7 +3216,7 @@
 /area/ship/crew)
 "Kk" = (
 /obj/effect/decal/cleanable/confetti,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "Kw" = (
 /obj/effect/turf_decal/corner_techfloor_gray{
@@ -3613,31 +3254,19 @@
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "Li" = (
-<<<<<<< Updated upstream
-/obj/machinery/airalarm/directional/west,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/glass/fifty,
-/obj/structure/closet/crate,
-/obj/effect/turf_decal/techfloor{
-	dir = 9
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
-=======
 /obj/machinery/suit_storage_unit/inherit{
 	layer = 2.4
 	},
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/clothing/mask/gas/sechailer,
-/obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
+/obj/effect/turf_decal/spline/fancy/transparent/solgovgold{
 	dir = 9
 	},
-/obj/effect/turf_decal/corner/transparent/solgovgold/three_quarters{
+/obj/effect/turf_decal/corner/opaque/solgovblue/three_quarters{
 	dir = 4
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "Lp" = (
 /obj/effect/turf_decal/trimline/opaque/solgovgold/warning{
 	dir = 8
@@ -3719,12 +3348,16 @@
 /turf/open/floor/wood,
 /area/ship/security/prison)
 "LN" = (
-/turf/closed/wall/mineral/plastitanium,
-<<<<<<< Updated upstream
-/area/ship/crew/janitor)
-=======
+/obj/structure/chair/wood{
+	dir = 8
+	},
+/obj/machinery/light/colored,
+/obj/structure/sign/flag/solfed/directional/north,
+/obj/effect/turf_decal/spline/fancy/transparent/solgovgold,
+/obj/effect/turf_decal/corner/opaque/solgovblue/half,
+/obj/effect/turf_decal/industrial/outline/red,
+/turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "LO" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 8
@@ -3811,7 +3444,6 @@
 	},
 /obj/item/clothing/mask/gas/sechailer,
 /obj/item/clothing/suit/space/hardsuit/solgov,
-/obj/item/tank/internals/emergency_oxygen/double,
 /turf/open/floor/carpet/royalblue,
 /area/ship/bridge)
 "MJ" = (
@@ -3855,7 +3487,7 @@
 /obj/machinery/firealarm/directional/north{
 	pixel_x = -7
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "Nk" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -4007,10 +3639,6 @@
 	color = "#D5A66E";
 	dir = 4
 	},
-<<<<<<< Updated upstream
-/obj/effect/decal/cleanable/dirt,
-=======
->>>>>>> Stashed changes
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
 /obj/structure/cable{
@@ -4076,6 +3704,12 @@
 	dir = 2;
 	id = "tomahawk_cargo_halo"
 	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
 /turf/open/floor/engine/hull,
 /area/ship/cargo)
 "Qy" = (
@@ -4095,7 +3729,7 @@
 	dir = 4
 	},
 /obj/machinery/airalarm/directional/west,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "Qz" = (
 /obj/structure/fans/tiny,
@@ -4107,17 +3741,10 @@
 /turf/open/floor/plating,
 /area/ship/maintenance/fore)
 "QB" = (
-<<<<<<< Updated upstream
-/obj/structure/reagent_dispensers/fueltank,
-/obj/effect/turf_decal/techfloor,
-=======
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/techfloor{
-	dir = 8
-	},
->>>>>>> Stashed changes
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
+/obj/effect/turf_decal/spline/fancy/transparent/solgovgold,
+/obj/effect/turf_decal/corner/opaque/solgovblue/half,
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/crew/law_office)
 "QM" = (
 /obj/structure/tank_dispenser,
 /obj/machinery/light/small/directional/north,
@@ -4133,15 +3760,10 @@
 /obj/structure/sign/poster/contraband/cybersun_borg{
 	pixel_y = 32
 	},
-<<<<<<< Updated upstream
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/crew/janitor)
-=======
 /obj/effect/turf_decal/corner/transparent/syndiered/diagonal,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "Rf" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -4168,38 +3790,25 @@
 /area/ship/engineering)
 "Rx" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "Rz" = (
-<<<<<<< Updated upstream
-/obj/machinery/light/small/directional/north,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/obj/item/radio/intercom/directional/north{
-	pixel_y = 28
-	},
-/obj/effect/turf_decal/techfloor{
-	dir = 5
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/crew/janitor)
-=======
 /obj/effect/turf_decal/corner/transparent/syndiered/diagonal,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "RA" = (
 /obj/effect/turf_decal/corner_techfloor_gray{
 	dir = 9
 	},
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/suit/space/hardsuit/solgov,
-/obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/clothing/mask/gas/sechailer,
 /obj/machinery/light/colored/red{
 	dir = 8
 	},
+/obj/item/tank/jetpack/oxygen/security,
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "RI" = (
@@ -4242,31 +3851,17 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-<<<<<<< Updated upstream
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/effect/turf_decal/corner/opaque/solgovgold/half{
-	dir = 8
-	},
-/obj/effect/turf_decal/techfloor/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/techfloor/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/opaque/solgovblue/warning{
-	dir = 8
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/crew/janitor)
-=======
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
+"Sa" = (
+/obj/machinery/light/colored{
+	dir = 8
+	},
+/obj/effect/turf_decal/techfloor{
+	dir = 10
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/cargo)
 "Sk" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -4286,22 +3881,12 @@
 	codes_txt = "patrol;next_patrol=dorms";
 	location = "cargo"
 	},
-<<<<<<< Updated upstream
-/obj/effect/turf_decal/techfloor{
-	dir = 4
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
-=======
 /obj/structure/chair/wood{
 	dir = 8
 	},
-/obj/effect/turf_decal/industrial/outline{
-	color = "#2d2a4e"
-	},
+/obj/effect/turf_decal/industrial/outline/red,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "Sz" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4366,8 +3951,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-<<<<<<< Updated upstream
-=======
 /obj/structure/table/wood/fancy/purple,
 /obj/machinery/computer/secure_data/laptop{
 	dir = 8;
@@ -4376,16 +3959,6 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
-"Tp" = (
-/obj/machinery/light/colored{
-	dir = 8
-	},
-/obj/effect/turf_decal/techfloor{
-	dir = 10
-	},
->>>>>>> Stashed changes
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
 "Tr" = (
 /obj/machinery/power/smes/shuttle/precharged{
 	dir = 4
@@ -4480,7 +4053,7 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "Ul" = (
 /obj/effect/turf_decal/spline/fancy/transparent/solgovgold{
@@ -4489,12 +4062,9 @@
 /obj/effect/turf_decal/trimline/opaque/solgovgold/warning{
 	dir = 1
 	},
-<<<<<<< Updated upstream
-=======
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 8
 	},
->>>>>>> Stashed changes
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "UD" = (
@@ -4518,7 +4088,7 @@
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 6
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "UF" = (
 /obj/structure/cable{
@@ -4560,16 +4130,6 @@
 /area/ship/hallway/central)
 "UJ" = (
 /obj/structure/chair/comfy/beige/directional/west,
-<<<<<<< Updated upstream
-/obj/effect/turf_decal/siding/wood{
-	dir = 6;
-	color = "#543C30"
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 1
-	},
-/turf/open/floor/wood/ebony,
-=======
 /obj/effect/turf_decal/siding/wood{
 	dir = 6;
 	color = "#543C30"
@@ -4589,7 +4149,6 @@
 	color = "#D5A66E"
 	},
 /turf/open/floor/carpet/purple,
->>>>>>> Stashed changes
 /area/ship/crew/crewtwo)
 "UO" = (
 /obj/effect/turf_decal/corner_techfloor_gray/full,
@@ -4614,7 +4173,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen/kitchen)
 "UU" = (
 /obj/effect/turf_decal/siding/wood{
@@ -4678,30 +4237,16 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/maintenance/fore)
 "Vp" = (
-/obj/machinery/door/firedoor/border_only,
-/obj/effect/turf_decal/industrial/traffic,
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/dirt,
-<<<<<<< Updated upstream
-=======
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
->>>>>>> Stashed changes
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "VA" = (
 /obj/machinery/navbeacon/wayfinding{
 	location = "Storage Bay"
 	},
-<<<<<<< Updated upstream
-/obj/effect/turf_decal/techfloor,
-/obj/structure/closet/firecloset/wall/directional/south,
-/turf/open/floor/plasteel/tech,
-/area/ship/crew/janitor)
-=======
 /obj/structure/window/reinforced/fulltile/shuttle{
 	color = "#2d2a4e"
 	},
@@ -4711,7 +4256,6 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "VD" = (
 /obj/machinery/porta_turret/ship/solfed{
 	dir = 10;
@@ -4767,17 +4311,6 @@
 /area/ship/medical)
 "Wi" = (
 /obj/structure/fluff/hedge/opaque{
-<<<<<<< Updated upstream
-	pixel_y = 4
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 1;
-	color = "#543C30"
-	},
-/obj/effect/turf_decal/spline/fancy/wood/three_quarters{
-	layer = 5
-	},
-=======
 	pixel_y = 4;
 	layer = 3
 	},
@@ -4796,7 +4329,6 @@
 	dir = 1;
 	layer = 2
 	},
->>>>>>> Stashed changes
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "Wl" = (
@@ -4813,16 +4345,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/door/firedoor/border_only,
-<<<<<<< Updated upstream
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
-=======
 /obj/machinery/door/airlock/solgov/glass{
 	name = "Feldwebel Brieff Room"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "Wm" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/storage)
@@ -4855,18 +4382,13 @@
 /turf/open/floor/wood/ebony,
 /area/ship/crew/crewtwo)
 "Wu" = (
-<<<<<<< Updated upstream
-/obj/structure/closet/crate/large,
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/obj/effect/turf_decal/techfloor,
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
-=======
-/obj/effect/turf_decal/spline/fancy/transparent/solgovblue,
-/obj/effect/turf_decal/corner/transparent/solgovgold/three_quarters,
+/obj/effect/turf_decal/spline/fancy/transparent/solgovgold{
+	dir = 4
+	},
+/obj/effect/turf_decal/spline/fancy/transparent/solgovgold,
+/obj/effect/turf_decal/corner/opaque/solgovblue/three_quarters,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "WE" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -4930,26 +4452,8 @@
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 1
 	},
-<<<<<<< Updated upstream
-/obj/effect/turf_decal/spline/fancy/transparent/solgovblue/corner{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only,
-/obj/structure/sign/warning/nosmoking{
-	pixel_x = 32
-	},
-/obj/effect/turf_decal/techfloor{
-	dir = 4
-	},
-/obj/machinery/light/colored{
-	dir = 4
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
-=======
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "XO" = (
 /obj/structure/sign/poster/contraband/random{
 	pixel_x = -32
@@ -4958,32 +4462,6 @@
 	color = "#4d362c";
 	dir = 10
 	},
-<<<<<<< Updated upstream
-/obj/machinery/washing_machine,
-/turf/open/floor/wood/walnut,
-/area/ship/crew)
-"XT" = (
-/obj/machinery/door/window/eastright,
-/obj/machinery/button/massdriver{
-	id = "space_cops_starboard_launcher";
-	name = "starboard mass driver button";
-	pixel_x = 7;
-	pixel_y = 25
-	},
-/obj/effect/turf_decal/industrial/loading{
-	dir = 4
-	},
-/obj/effect/turf_decal/corner/opaque/solgovblue/full,
-/turf/open/floor/plasteel/white,
-/area/ship/crew/janitor)
-"XY" = (
-/obj/effect/turf_decal/corner_techfloor_gray{
-	dir = 10
-	},
-/obj/structure/sign/poster/clip/enlist{
-	pixel_y = -32
-	},
-=======
 /obj/effect/spawner/bunk_bed,
 /obj/structure/curtain/cloth,
 /turf/open/floor/wood/walnut,
@@ -5003,7 +4481,6 @@
 /obj/structure/sign/poster/clip/enlist{
 	pixel_y = -32
 	},
->>>>>>> Stashed changes
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "XZ" = (
@@ -5182,23 +4659,11 @@
 /turf/open/floor/wood/walnut,
 /area/ship/crew)
 "Zs" = (
-<<<<<<< Updated upstream
-/obj/machinery/light/small/directional/south,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/effect/decal/cleanable/oil,
+/obj/effect/turf_decal/spline/fancy/transparent/solgovgold,
+/obj/effect/turf_decal/corner/opaque/solgovblue/half,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/reagent_dispensers/watertank,
-/obj/effect/turf_decal/techfloor{
-	dir = 10
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/crew/janitor)
-=======
-/obj/effect/turf_decal/spline/fancy/transparent/solgovblue,
-/obj/effect/turf_decal/corner/transparent/solgovgold/half,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "Zy" = (
 /turf/open/floor/wood/walnut,
 /area/ship/crew)
@@ -5265,11 +4730,6 @@
 "ZL" = (
 /obj/structure/fluff/hedge/opaque{
 	pixel_y = 4
-<<<<<<< Updated upstream
-	},
-/obj/effect/turf_decal/spline/fancy/wood/three_quarters{
-	layer = 5
-=======
 	},
 /obj/structure/railing/wood{
 	dir = 8
@@ -5281,7 +4741,6 @@
 /obj/structure/railing/wood{
 	dir = 1;
 	layer = 2
->>>>>>> Stashed changes
 	},
 /turf/open/floor/wood,
 /area/ship/hallway/central)
@@ -5318,11 +4777,7 @@
 	color = "#c48d26"
 	},
 /turf/closed/wall/mineral/plastitanium,
-<<<<<<< Updated upstream
-/area/ship/cargo)
-=======
 /area/ship/crew/law_office)
->>>>>>> Stashed changes
 "ZS" = (
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 8
@@ -5804,7 +5259,7 @@ UD
 so
 Wi
 eg
-ah
+Aj
 En
 En
 TT
@@ -5917,22 +5372,13 @@ WY
 Ul
 Vp
 qX
-<<<<<<< Updated upstream
-vs
-qX
+Hs
+Sa
 ej
 vs
 To
-vs
-=======
->>>>>>> Stashed changes
+oW
 QB
-Tp
-ej
-mt
-To
-vs
-Zs
 iM
 "}
 (32,1,1) = {"
@@ -5971,7 +5417,7 @@ ia
 Sl
 wD
 xF
-LN
+xp
 "}
 (34,1,1) = {"
 PX
@@ -5985,17 +5431,11 @@ nE
 tn
 De
 pC
-LN
-<<<<<<< Updated upstream
-LN
-iD
-LN
-=======
-tg
-iD
 xp
->>>>>>> Stashed changes
+mt
+iD
 LN
+xp
 aZ
 "}
 (35,1,1) = {"
@@ -6010,11 +5450,11 @@ nE
 Qp
 zL
 qI
-LN
+xp
 HK
 RT
 Zs
-LN
+xp
 PX
 "}
 (36,1,1) = {"
@@ -6029,11 +5469,11 @@ nE
 PX
 WT
 PX
-LN
+xp
 Jp
 cY
 la
-LN
+xp
 PX
 "}
 (37,1,1) = {"
@@ -6048,11 +5488,11 @@ nE
 PX
 PX
 PX
-LN
+xp
 qq
 VA
-LN
-LN
+xp
+xp
 PX
 "}
 (38,1,1) = {"
@@ -6067,10 +5507,10 @@ nE
 PX
 PX
 PX
-LN
+xp
 Rz
 em
-LN
+xp
 PX
 PX
 "}
@@ -6086,9 +5526,9 @@ nE
 PX
 PX
 PX
-LN
+xp
 XT
-LN
+xp
 ti
 PX
 PX
@@ -6105,9 +5545,9 @@ nE
 PX
 PX
 PX
-LN
+xp
 QS
-LN
+xp
 PX
 PX
 PX
@@ -6124,12 +5564,8 @@ nE
 PX
 PX
 PX
-LN
-<<<<<<< Updated upstream
 xp
-=======
-LN
->>>>>>> Stashed changes
+xp
 aZ
 PX
 PX
