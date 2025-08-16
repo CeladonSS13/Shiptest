@@ -50,6 +50,14 @@
 		return
 	if(QDELETED(src) || QDELETED(user))
 		return
+
+	// [CELADON-ADD] - CELADON: DISCORD VERIFY
+	if(CONFIG_GET(flag/DiscordVerify))
+		if(!checkDiscordVerify(user.ckey))
+			to_chat(usr, span_danger("Ваш аккаунт не верифицирован в Discord.\n Пожалуйста, используйте кнопку 'Verify Discord Account' во вкладке 'Special Verbs' для Discord верификации."))
+			return
+	// [/CELADON-ADD]
+
 	var/ghost_role = alert("Become [mob_name]? (Warning, You can no longer be revived!)",,"Yes","No")
 
 	if(ghost_role == "No" || !loc)
