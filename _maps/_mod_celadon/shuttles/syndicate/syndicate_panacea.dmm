@@ -1513,6 +1513,21 @@
 	},
 /turf/open/floor/suns/dark/plain,
 /area/ship/crew/office/lobby)
+"iM" = (
+/obj/effect/spawner/structure/window/shuttle,
+/obj/structure/grille,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "Panacea_bridge_shuts"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
 "iN" = (
 /obj/structure/table/wood/reinforced,
 /obj/item/toy/plush/blahaj{
@@ -2033,6 +2048,21 @@
 /obj/effect/turf_decal/suns/line/marble/fill,
 /turf/open/floor/suns/dark/plain,
 /area/ship/crew/office/lobby)
+"mB" = (
+/obj/effect/spawner/structure/window/shuttle,
+/obj/structure/grille,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "Panacea_bridge_shuts";
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
 "mD" = (
 /obj/effect/turf_decal/suns/capital_u/marble{
 	dir = 4
@@ -3289,6 +3319,13 @@
 /area/ship/crew/dorm)
 "tJ" = (
 /obj/effect/spawner/structure/window/shuttle,
+/obj/structure/grille,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
 /obj/machinery/door/poddoor/shutters{
 	id = "Panacea_bridge_shuts";
 	dir = 4
@@ -4949,6 +4986,19 @@
 	color = "#D2BC9D"
 	},
 /area/ship/crew/hydroponics)
+"Dp" = (
+/obj/effect/spawner/structure/window/shuttle,
+/obj/structure/grille,
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "Panacea_bridge_shuts";
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
 "Dq" = (
 /obj/effect/turf_decal/suns/line/marble,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -7320,6 +7370,19 @@
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/suns/dark/plain,
 /area/ship/crew/canteen/kitchen)
+"Rt" = (
+/obj/effect/spawner/structure/window/shuttle,
+/obj/structure/grille,
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "Panacea_bridge_shuts";
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
 "Ru" = (
 /obj/effect/turf_decal/suns/line/marble/fill{
 	dir = 1
@@ -7573,6 +7636,21 @@
 	},
 /turf/open/floor/suns/dark/plain,
 /area/ship/crew/ccommons)
+"SO" = (
+/obj/effect/spawner/structure/window/shuttle,
+/obj/structure/grille,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "Panacea_bridge_shuts";
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
 "SP" = (
 /obj/effect/turf_decal/suns/line/marble/fill{
 	dir = 1
@@ -9430,7 +9508,7 @@ KY
 kw
 Hl
 Bc
-tJ
+Rt
 Xw
 wT
 Go
@@ -9467,13 +9545,13 @@ AW
 Va
 Hl
 zc
-tJ
-tJ
-tJ
-tJ
-tJ
-tJ
-tJ
+mB
+SO
+SO
+SO
+SO
+iM
+Dp
 zc
 Pz
 Rh
