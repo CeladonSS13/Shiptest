@@ -28,6 +28,12 @@
 #include "clumsy_table/_clumsy_table.dme"
 #include "quirks/_quirks.dme"
 
+// --- SECRET --- //
+#if fexists("+secret/__secret.dme") && !defined(DISABLE_SECRETS)
+#include "+secret/__secret.dme"
+#endif
+#include "_secrets/__secret_public.dme"
+
 // --- ICONS --- //
 #include "parallax/_parallax.dme"
 #include "resprite/_resprite.dme"
