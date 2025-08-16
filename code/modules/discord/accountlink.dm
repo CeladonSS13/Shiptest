@@ -1,10 +1,6 @@
 // IF you have linked your account, this will trigger a verify of the user
 /client/verb/verify_in_discord()
-	// [CELADON-REMOVE] - CELADON_QOL - Очистка вкладки ООС, перенос части в Special Verbs
-	/*
-	set category = "OOC"
-	*/
-	// [/CELADON-REMOVE]
+	set category = "Special Verbs"
 	set name = "Verify Discord Account"
 	set desc = "Verify your discord account with your BYOND account"
 
@@ -15,6 +11,12 @@
 	if(!SSdiscord && !SSdiscord.reverify_cache)
 		to_chat(src, span_warning("Wait for the Discord subsystem to finish initialising"))
 		return
+	// [CELADON-ADD] - Проверка на то, что система верификации включена
+	if(CONFIG_GET(flag/DiscordVerify))
+		if(checkDiscordVerify(src.ckey))
+			to_chat(usr, span_danger("Ваш аккаунт уже привязан к DISCORD. Больше не жми на эту кнопку, пожалуйста."))
+			return
+	// [/CELADON-ADD]
 	var/message = ""
 	// Simple sanity check to prevent a user doing this too often
 	var/cached_one_time_token = SSdiscord.reverify_cache[usr.ckey]

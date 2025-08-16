@@ -29,10 +29,12 @@
 #include "quirks/_quirks.dme"
 
 // --- SECRET --- //
-#if fexists("+secret/__secret.dme") && !defined(DISABLE_SECRETS)
-#include "+secret/__secret.dme"
-#endif
+
+#if fexists("../+secret/__secret.dme") && !defined(DISABLE_SECRETS)
+#include "../+secret/__secret.dme"
+#else
 #include "_secrets/__secret_public.dme"
+#endif
 
 // --- ICONS --- //
 #include "parallax/_parallax.dme"
