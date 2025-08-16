@@ -205,3 +205,17 @@
 /area/ruin/beach/float_resort/villa
 	name = "float resort villa"
 	icon_state = "float_resort_villa"
+
+/// MARK: jungleplanet
+/area/ruin/jungle/syndifortmed
+	name = "Syndi Fort Medbay"
+	icon_state = "blue"
+/area/ruin/jungle/syndifort2
+	name = "Syndi Fort 2"
+	icon_state = "red"
+/area/ruin/jungle/syndifort3
+	name = "Syndi Fort 3"
+	icon_state = "yellow"
+/area/ruin/jungle/syndifortshuttle
+	name = "Syndi Fort Shuttle"
+	icon_state = "green"
