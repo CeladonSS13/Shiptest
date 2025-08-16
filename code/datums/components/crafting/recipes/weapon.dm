@@ -279,3 +279,43 @@
 				/obj/item/stack/sheet/sinew = 3)
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
+
+/datum/crafting_recipe/watcherbola
+	name = "Watcher Bola"
+	always_availible = FALSE
+	result = /obj/item/restraints/legcuffs/bola/watcher
+	time = 30
+	reqs = list(/obj/item/stack/sheet/animalhide/goliath_hide = 2,
+				/obj/item/restraints/handcuffs/cable/sinew = 1)
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+
+/datum/crafting_recipe/bonesword
+	name = "Bone Sword"
+	always_availible = FALSE
+	result = /obj/item/melee/sword/bone
+	time = 40
+	reqs = list(/obj/item/stack/sheet/bone = 3,
+				/obj/item/stack/sheet/sinew = 2)
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+
+
+/datum/crafting_recipe/goliathshield
+	name = "Goliath shield"
+	always_availible = FALSE
+	result = /obj/item/shield/riot/goliath
+	time = 60
+	reqs = list(/obj/item/stack/sheet/bone = 4,
+				/obj/item/stack/sheet/animalhide/goliath_hide = 3)
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+
+/datum/crafting_recipe/crystalamulet
+	name = "Crystal Amulet"
+	always_availible = FALSE
+	result = /obj/item/clothing/neck/crystal_amulet
+	time = 4 SECONDS
+	reqs = list(/obj/item/strange_crystal = 3)
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON

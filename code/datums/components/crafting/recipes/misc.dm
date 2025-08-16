@@ -245,3 +245,24 @@
 		/datum/reagent/toxin/coffeepowder = 10,
 	)
 	category = CAT_MISC
+
+/datum/crafting_recipe/headpike
+	name = "Spike Head (Glass Spear)"
+	time = 65
+	reqs = list(/obj/item/melee/spear = 1,
+				/obj/item/bodypart/head = 1)
+	parts = list(/obj/item/bodypart/head = 1,
+			/obj/item/melee/spear = 1)
+	blacklist = list(/obj/item/melee/spear/explosive, /obj/item/melee/spear/bone)
+	result = /obj/structure/headpike
+	category = CAT_MISC
+
+/datum/crafting_recipe/headpikebone
+	name = "Spike Head (Bone Spear)"
+	time = 65
+	reqs = list(/obj/item/melee/spear/bone = 1,
+				/obj/item/bodypart/head = 1)
+	parts = list(/obj/item/bodypart/head = 1,
+			/obj/item/melee/spear/bone = 1)
+	result = /obj/structure/headpike/bone
+	category = CAT_MISC

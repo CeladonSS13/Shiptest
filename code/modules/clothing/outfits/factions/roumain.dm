@@ -10,6 +10,10 @@
 	if(visualsOnly)
 		return
 	var/list/crafting_recipe_types = list(
+		/datum/crafting_recipe/watcherbola,
+		/datum/crafting_recipe/bonesword,
+		/datum/crafting_recipe/goliathshield,
+		/datum/crafting_recipe/crystalamulet,
 		/datum/crafting_recipe/bonespear,
 		/datum/crafting_recipe/boneaxe
 	)
