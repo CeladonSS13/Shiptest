@@ -121,6 +121,8 @@ EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Подн�
 ADD: `code/modules/mob/living/carbon/human/species_types/lizardpeople.dm` : Даём сарати резист к огню на 15%
 ADD: `code/modules/mob/living/carbon/human/species_types/vox.dm` : Даём воксам резист к холоду на 20%
 
+ADD: `code/game/objects/items/storage/belt.dm` : Добавлен новый филтр крови в возможность грузить в мед разгрузку
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
