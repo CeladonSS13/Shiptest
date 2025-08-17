@@ -151,6 +151,7 @@
 		special(M, name)
 		MM.name = M.real_name
 		special_post_appearance(M, name)
+	// [CELADON-ADD] - CELADON_GHOST_ROLES
 		// Issue player loadout for ghost role when they chose to load character slot
 		if(ishuman(M) && load_character && M.client && M.client.prefs?.equipped_gear && length(M.client.prefs.equipped_gear))
 			var/mob/living/carbon/human/H = M
@@ -169,6 +170,8 @@
 			else if(!H.put_in_hands(loadout_dumper, TRUE))
 				loadout_dumper.forceMove(get_turf(H))
 				to_chat(H, span_warning("Unable to place your loadout box into hands, dropped at your feet."))
+	spawned_mob_ref = WEAKREF(M)
+	// [/CELADON-ADD]
 	if(uses > 0)
 		uses--
 	if(!permanent && !uses)
