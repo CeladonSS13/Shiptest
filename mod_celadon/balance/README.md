@@ -18,6 +18,7 @@ ID мода:
 	CELADON_BALANCE_MOBS
 	CELADON_BALANCE_OVERMAP_EVENTS
 	CELADON_BALANCE_SPECIES
+	CELADON_BALANCE_VENDING
 	BALLISTIC_SHIELD
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
