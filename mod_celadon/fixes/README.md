@@ -122,8 +122,6 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Делаем так чтобы кепори могли брать мелкие предметы в клюв
 
-- EDIT: `code/datums/mapgen/planetary/waterGenerator.dm` : Убираем спавн лавы на водяной планете
-
 - EDIT, ADD: `code/modules/mob/living/blood.dm` : Вводим нормальный уровень для крови
 - EDIT, ADD: `code/game/machinery/iv_drip.dm` : Проверка крови у пациента
 - ADD: `code/modules/reagents/chemistry/holder.dm` : Вводим ограничения на шприцы, бикеры, капельницы
