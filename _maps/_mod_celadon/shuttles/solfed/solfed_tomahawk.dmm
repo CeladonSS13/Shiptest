@@ -284,15 +284,12 @@
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "dK" = (
-/obj/structure/sign/poster/solgov/solgov_logo{
-	pixel_y = 32
-	},
-/obj/structure/sign/poster/solgov/solgov_logo{
-	pixel_y = 32
-	},
 /obj/effect/turf_decal/siding/wood{
 	color = "#D5A66E";
 	dir = 1
+	},
+/obj/structure/sign/solfed{
+	pixel_y = 32
 	},
 /turf/open/floor/wood,
 /area/ship/hallway/central)
@@ -1559,12 +1556,12 @@
 /area/ship/crew/canteen/kitchen)
 "su" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/obj/structure/sign/poster/solgov/solgov_logo{
-	pixel_y = 32
-	},
 /obj/effect/turf_decal/siding/wood{
 	color = "#D5A66E";
 	dir = 1
+	},
+/obj/structure/sign/solfed{
+	pixel_y = 32
 	},
 /turf/open/floor/wood,
 /area/ship/hallway/central)
@@ -2648,13 +2645,13 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
-/obj/structure/sign/poster/solgov/solgov_logo{
-	pixel_y = -32
-	},
 /obj/effect/turf_decal/siding/wood{
 	color = "#D5A66E"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/solfed{
+	pixel_y = -32
+	},
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "Ej" = (
@@ -2665,6 +2662,7 @@
 	color = "#D5A66E";
 	dir = 6
 	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "En" = (
@@ -3953,7 +3951,9 @@
 /obj/effect/turf_decal/siding/wood{
 	color = "#D5A66E"
 	},
-/obj/structure/extinguisher_cabinet/directional/south,
+/obj/structure/sign/solfed{
+	pixel_y = -32
+	},
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "To" = (
