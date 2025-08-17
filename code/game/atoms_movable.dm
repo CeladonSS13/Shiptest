@@ -374,15 +374,30 @@
 
 	var/list/new_locs
 	if(is_multi_tile_object && isturf(newloc))
-		new_locs = block(
-			newloc,
-			locate(
-				min(world.maxx, newloc.x + CEILING(bound_width / 32, 1)),
-				min(world.maxy, newloc.y + CEILING(bound_height / 32, 1)),
-				newloc.z
-				)
-		) // If this is a multi-tile object then we need to predict the new locs and check if they allow our entrance.
-		for(var/atom/entering_loc as anything in new_locs)
+		// [CELADON-EDIT] - CELADON_SPACEPOD - Убираем проверку на тайле на котором стоим и меняем логику колизии у мультитайловых объектов
+		// new_locs = block(
+		// 	newloc,
+		// 	locate(
+		// 		min(world.maxx, newloc.x + CEILING(bound_width / 32, 1)),
+		// 		min(world.maxy, newloc.y + CEILING(bound_height / 32, 1)),
+		// 		newloc.z
+		// 		)
+		// ) // If this is a multi-tile object then we need to predict the new locs and check if they allow our entrance.
+		// for(var/atom/entering_loc as anything in new_locs)	// CELADON-EDIT - ORIGINAL
+		new_locs = isturf(newloc) ? block(
+        locate(
+            newloc.x+(-bound_x)/world.icon_size,
+            newloc.y+(-bound_y)/world.icon_size,
+            newloc.z
+            ),
+        locate(
+            newloc.x+(-bound_x+bound_width)/world.icon_size-1,
+            newloc.y+(-bound_y+bound_height)/world.icon_size-1,
+            newloc.z
+            )
+        ) : list(newloc)
+		for(var/atom/entering_loc in (new_locs - locs))
+		// [/CELADON-EDIT]
 			if(!entering_loc.Enter(src))
 				return
 			if(SEND_SIGNAL(src, COMSIG_MOVABLE_PRE_MOVE, entering_loc) & COMPONENT_MOVABLE_BLOCK_PRE_MOVE)

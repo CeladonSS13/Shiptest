@@ -26,6 +26,12 @@
 
 /client
 	var/mouseControlObject = null
+	// [CELADON-ADD] - CELADON_SPACEPOD
+	///Used in MouseDrag to preserve the last mouse-entered location. Weakref
+	var/datum/weakref/mouse_location_ref = null
+	///Used in MouseDrag to preserve the last mouse-entered object. Weakref
+	var/datum/weakref/mouse_object_ref
+	// [/CELADON-ADD]
 
 /client/MouseDown(datum/object, location, control, params)
 	if(QDELETED(object)) //Yep, you can click on qdeleted things before they have time to nullspace. Fun.
