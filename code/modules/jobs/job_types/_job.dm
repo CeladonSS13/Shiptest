@@ -28,6 +28,8 @@
 	///Levels unlocked at roundstart in physiology
 	var/list/roundstart_experience
 
+	var/anomalyLoadout = FALSE
+
 /datum/job/New(new_name, datum/outfit/job/new_outfit)
 	if(!new_name)
 		return

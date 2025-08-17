@@ -278,6 +278,7 @@ SUBSYSTEM_DEF(mapping)
 				job_slot.display_order = length(S.job_slots)
 				job_slot.wiki_page = value["wiki_page"]
 				job_slot.officer = value["officer"]
+				job_slot.anomalyLoadout = value["anomaly_loadout"]
 				slots = value["slots"]
 
 			if(!job_slot || !slots)

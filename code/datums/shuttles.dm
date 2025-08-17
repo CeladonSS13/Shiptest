@@ -54,6 +54,8 @@
 
 	var/static/list/outfits
 
+	
+
 /datum/map_template/shuttle/proc/prerequisites_met()
 	return TRUE
 
