@@ -260,9 +260,6 @@
 /area/ship/hallway/central)
 "di" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
@@ -809,6 +806,9 @@
 /obj/machinery/atmospherics/components/binary/pump/on/layer2{
 	dir = 8
 	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "kj" = (
@@ -1225,10 +1225,10 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 4
 	},
-/obj/structure/cable/yellow{
-	icon_state = "1-8"
-	},
 /obj/machinery/light/directional/east,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "qv" = (
@@ -2247,6 +2247,9 @@
 /obj/item/storage/belt/utility/syndicate{
 	pixel_y = -7
 	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Cv" = (
@@ -2476,7 +2479,7 @@
 	pixel_y = 44;
 	pixel_x = -1
 	},
-/obj/machinery/computer/communications{
+/obj/machinery/modular_computer/console/preset/command{
 	dir = 4
 	},
 /obj/machinery/newscaster/security_unit/directional/west,
@@ -2699,9 +2702,6 @@
 	},
 /area/ship/external)
 "Ia" = (
-/obj/structure/cable/yellow{
-	icon_state = "2-4"
-	},
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
@@ -2797,6 +2797,9 @@
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
@@ -3056,6 +3059,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
@@ -3744,13 +3750,11 @@
 /area/ship/hallway/central)
 "YN" = (
 /obj/machinery/power/terminal,
-/obj/structure/cable/yellow{
-	icon_state = "0-8"
-	},
 /obj/machinery/airalarm/directional/east,
 /obj/effect/turf_decal/techfloor{
 	dir = 4
 	},
+/obj/structure/cable/yellow,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "YU" = (
