@@ -163,7 +163,9 @@
 /area/hangar)
 "dr" = (
 /obj/structure/flora/rock/pile/icy,
-/turf/open/water/beach/deep,
+/turf/open/water/beach/deep{
+	mouse_opacity = 0
+	},
 /area/hangar)
 "ea" = (
 /obj/effect/decal/cleanable/dirt,
@@ -271,7 +273,10 @@
 	},
 /area/hangar)
 "fM" = (
-/obj/structure/reagent_dispensers/fueltank,
+/obj/structure/reagent_dispensers/fueltank{
+	anchored = 1;
+	desc = "Вы видите как к топливной тележке прикреплена записка, где большими красными буквами написано: данная тележка собственность аванпоста! Поэтому данная тележка приварена к полу намертво. Тот кто решит спиздеть её - получит по шапке!."
+	},
 /turf/open/floor/plasteel/dark{
 	planetary_atmos = 1
 	},
@@ -795,7 +800,9 @@
 	dir = 8;
 	layer = 4.1
 	},
-/turf/open/water/beach/deep,
+/turf/open/water/beach/deep{
+	mouse_opacity = 0
+	},
 /area/hangar)
 "uX" = (
 /obj/effect/turf_decal/trimline/opaque/yellow/filled/arrow_cw{
@@ -966,7 +973,9 @@
 	},
 /area/hangar)
 "zX" = (
-/obj/structure/reagent_dispensers/watertank,
+/obj/structure/reagent_dispensers/watertank{
+	mouse_opacity = 0
+	},
 /obj/machinery/light/directional/east,
 /turf/open/floor/plasteel/dark{
 	planetary_atmos = 1
@@ -1097,7 +1106,9 @@
 	},
 /area/hangar)
 "Fi" = (
-/turf/open/water/beach/deep,
+/turf/open/water/beach/deep{
+	mouse_opacity = 0
+	},
 /area/hangar)
 "Fm" = (
 /obj/machinery/door/airlock/outpost{

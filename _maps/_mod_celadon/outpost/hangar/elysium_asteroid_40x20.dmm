@@ -422,7 +422,9 @@
 /area/hangar)
 "jS" = (
 /obj/structure/flora/rock/icy,
-/turf/open/water/beach/deep,
+/turf/open/water/beach/deep{
+	mouse_opacity = 0
+	},
 /area/hangar)
 "jX" = (
 /obj/effect/turf_decal/siding/wood{
@@ -1154,7 +1156,9 @@
 /area/hangar)
 "wk" = (
 /obj/structure/flora/rock/pile/icy,
-/turf/open/water/beach/deep,
+/turf/open/water/beach/deep{
+	mouse_opacity = 0
+	},
 /area/hangar)
 "wm" = (
 /obj/structure/grille/indestructible,
@@ -1436,8 +1440,8 @@
 /obj/effect/turf_decal/box/corners{
 	dir = 1
 	},
-/obj/structure/reagent_dispensers/watertank,
 /obj/item/radio/intercom/directional/north,
+/obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plasteel/patterned/cargo_one{
 	planetary_atmos = 1
 	},
@@ -2282,10 +2286,13 @@
 /obj/effect/turf_decal/box/corners{
 	dir = 1
 	},
-/obj/structure/reagent_dispensers/fueltank,
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/industrial/fire{
 	dir = 4
+	},
+/obj/structure/reagent_dispensers/fueltank{
+	anchored = 1;
+	desc = "Вы видите как к топливной тележке прикреплена записка, где большими красными буквами написано: данная тележка собственность аванпоста! Поэтому данная тележка приварена к полу намертво. Тот кто решит спиздеть её - получит по шапке!."
 	},
 /turf/open/floor/plasteel/patterned/cargo_one{
 	planetary_atmos = 1
@@ -2377,7 +2384,9 @@
 	},
 /area/hangar)
 "Xq" = (
-/turf/open/water/beach/deep,
+/turf/open/water/beach/deep{
+	mouse_opacity = 0
+	},
 /area/hangar)
 "Xs" = (
 /obj/structure/catwalk/over/plated_catwalk,

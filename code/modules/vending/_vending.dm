@@ -196,7 +196,8 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 
 	Radio = new /obj/item/radio(src)
 	Radio.listening = 0
-	if(istype(get_area(src.loc), /area/outpost) || istype(get_area(src.loc), /area/ruin))
+	// Только если изначально было TRUE, то проверяем область
+	if(all_items_free && (istype(get_area(src.loc), /area/outpost) || istype(get_area(src.loc), /area/ruin)))	// [CELADON-EDIT] - CELADON_BALANCE_VENDING // if(istype(get_area(src.loc), /area/outpost) || istype(get_area(src.loc), /area/ruin))	// ORIGINAL
 		all_items_free = FALSE
 
 /obj/machinery/vending/Destroy()
