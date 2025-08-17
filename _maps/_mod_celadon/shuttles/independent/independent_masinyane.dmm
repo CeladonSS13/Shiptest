@@ -573,18 +573,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
-"Nf" = (
-/obj/machinery/button/door{
-	pixel_y = -3;
-	id = "sunsetexit2";
-	name = "Emergency exit";
-	dir = 4;
-	pixel_x = 8;
-	req_ship_access = 1;
-	req_access = list(50, 10, 5, 1, 20)
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
 "Ng" = (
 /obj/machinery/atmospherics/pipe/simple/purple{
 	dir = 4
@@ -955,7 +943,7 @@ Xe
 Md
 "}
 (10,1,1) = {"
-Nf
+Wn
 Wn
 Iw
 QR
