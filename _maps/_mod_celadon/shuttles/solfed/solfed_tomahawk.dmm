@@ -595,8 +595,16 @@
 /obj/structure/fluff/hedge/opaque{
 	pixel_y = 4
 	},
-/obj/effect/turf_decal/spline/fancy/wood/three_quarters{
-	layer = 5
+/obj/structure/railing/wood{
+	dir = 8
+	},
+/obj/structure/railing/wood{
+	dir = 4
+	},
+/obj/structure/railing/wood,
+/obj/structure/railing/wood{
+	dir = 1;
+	layer = 2
 	},
 /turf/open/floor/wood/ebony,
 /area/ship/hallway/central)
@@ -931,12 +939,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
-"nf" = (
-/obj/machinery/vending/wallmed{
-	pixel_y = 5
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/medical)
 "nh" = (
 /obj/structure/table/wood,
 /obj/item/toy/cards/deck{
@@ -1579,18 +1581,21 @@
 	dir = 1;
 	pixel_y = -22;
 	pixel_x = -9;
-	id = "bridge"
+	id = "bridge";
+	name = "Bridge Windows"
 	},
 /obj/machinery/button/door{
 	dir = 1;
 	pixel_y = -22;
 	pixel_x = 8;
-	id = "bridgetohallway"
+	id = "bridgetohallway";
+	name = "Hallway"
 	},
 /obj/machinery/button/door{
 	dir = 1;
 	pixel_y = -34;
-	id = "tomahawk_armory"
+	id = "tomahawk_armory";
+	name = "Armory"
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
@@ -2137,9 +2142,10 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 1
 	},
-/obj/machinery/button{
-	pixel_y = 23;
-	id = "tomahawk_sleeper"
+/obj/machinery/button/door{
+	pixel_y = 22;
+	id = "tomahawk_sleeper";
+	name = "Crew Window"
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew)
@@ -3660,6 +3666,9 @@
 /obj/effect/turf_decal/corner/opaque/cybersunteal/border,
 /obj/structure/table/glass,
 /obj/item/storage/case/surgery,
+/obj/machinery/vending/wallmed{
+	pixel_y = -29
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "PS" = (
@@ -5201,7 +5210,7 @@ En
 Zf
 Zg
 Py
-nf
+En
 PX
 "}
 (22,1,1) = {"
