@@ -16,6 +16,7 @@ ID мода:
 	CELADON_BALANCE
 	CELADON_BALANCE_CD
 	CELADON_BALANCE_MOBS
+	CELADON_BALANCE_CHISEL
 	CELADON_BALANCE_OVERMAP_EVENTS
 	CELADON_BALANCE_SPECIES
 	BALLISTIC_SHIELD
@@ -122,6 +123,9 @@ ADD: `code/modules/mob/living/carbon/human/species_types/lizardpeople.dm` : Да
 ADD: `code/modules/mob/living/carbon/human/species_types/vox.dm` : Даём воксам резист к холоду на 20%
 
 ADD: `code/game/objects/items/storage/belt.dm` : Добавлен новый филтр крови в возможность грузить в мед разгрузку
+
+CELADON_BALANCE_CHISEL
+ADD: `code/game/objects/items/tools/chisel.dm` : видоизменяем долото делая его нормальным
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
