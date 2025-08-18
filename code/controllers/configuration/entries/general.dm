@@ -110,6 +110,8 @@
 
 /datum/config_entry/flag/auth_admin_testing // auth server allows admin testing and other actions
 
+/datum/config_entry/flag/DiscordVerify // [CELADON-ADD] - Добавляем систему верификации аккаунтов через Discord
+
 /datum/config_entry/number/vote_delay	// minimum time between voting sessions (deciseconds, 10 minute default)
 	config_entry_value = 6000
 	integer = FALSE
@@ -231,22 +233,22 @@
 /datum/config_entry/string/banappeals
 
 /datum/config_entry/string/wikiurl
-	config_entry_value = "https://shiptest.net/wiki/"
+	config_entry_value = "https://wiki.celadon.pro/"
 
 /datum/config_entry/string/loreurl
 	config_entry_value = "https://shiptest.net/wiki/Lore_Primer"
 
 /datum/config_entry/string/rulesurl
-	config_entry_value = "https://shiptest.net/wiki/Rules"
+	config_entry_value = "https://wiki.celadon.pro/index.php/Правила_игры"
 
 /datum/config_entry/string/githuburl
-	config_entry_value = "https://github.com/shiptest-ss13/Shiptest"
+	config_entry_value = "https://github.com/CeladonSS13/Shiptest"
 
 /datum/config_entry/string/discordurl
-	config_entry_value = "https://shiptest.net/discord"
+	config_entry_value = "https://discord.gg/rxsggTJzY3"
 
 /datum/config_entry/string/mapviewerurl
-	config_entry_value = "https://shiptest.net/map"
+	config_entry_value = "https://map.celadon.pro/"
 
 /datum/config_entry/string/centcom_ban_db	// URL for the CentCom Galactic Ban DB API
 

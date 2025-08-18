@@ -261,7 +261,7 @@
 	// [CELADON-EDIT] — CRUSHER_MARK_ON_MOBS
 	// if(owner.mob_size >= MOB_SIZE_LARGE)
 	if(owner.mob_size >= MOB_SIZE_HUMAN && !(ishuman(owner)))
-	// [CELADON-EDIT]
+	// [/CELADON-EDIT]
 		marked_underlay = mutable_appearance('icons/effects/effects.dmi', "shield2")
 		marked_underlay.pixel_x = -owner.pixel_x
 		marked_underlay.pixel_y = -owner.pixel_y

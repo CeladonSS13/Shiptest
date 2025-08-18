@@ -1,5 +1,7 @@
 /datum/supply_pack/faction/independent/civilian
 	category = "Civilian & Decoration"
+	crate_name = "civilian supply crate"
+	crate_type = /obj/structure/closet/crate/wooden
 
 /* MARK: = Decoration =
 
@@ -155,6 +157,12 @@ MARK: Bundles
 	crate_name = "big band musical instruments crate"
 	crate_type = /obj/structure/closet/crate/wooden
 
+/datum/supply_pack/faction/independent/civilian/bank_card_crate
+	name = "Box of Spare Bank Cards"
+	desc = "A box of spare IDs for replacing a lost bankcard."
+	cost = 100
+	contains = list(/obj/item/storage/box/bankcard)
+
 /*
 MARK: Decoration / flooring
 */
@@ -248,6 +256,20 @@ MARK: Decoration / flooring
 					/obj/item/clothing/shoes/sneakers/black)
 	crate_name = "spare jumpsuits crate"
 	crate_type = /obj/structure/closet/crate/wooden
+
+/datum/supply_pack/faction/independent/civilian/satchel
+	name = "Spare Satchel Crate"
+	desc = "Contains a spare backpack, for the intrepid traveller who managed to lose the last one."
+	cost = 75
+	contains = list(/obj/item/storage/backpack/satchel, /obj/item/storage/backpack)
+	crate_name = "spare backpack bag crate"
+
+/datum/supply_pack/faction/independent/civilian/duffels
+	name = "Spare Duffelbag Crate"
+	desc = "Contains a spare duffelbag. Ideal for carrying items across long distances."
+	cost = 75
+	contains = list(/obj/item/storage/backpack/duffelbag)
+	crate_name = "spare duffelbag crate"
 
 /datum/supply_pack/faction/independent/civilian/broadcast_camera
 	name = "Broadcast Camera Crate"

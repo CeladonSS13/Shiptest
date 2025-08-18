@@ -196,7 +196,14 @@
 	name = "Shuttle Expansion Permit"
 	desc = "A set of paperwork which is used to expand flyable shuttles."
 	contains = list(/obj/item/areaeditor/shuttle)
-	cost = 20000
+	cost = 10000
+	crate_name = "blueprint crate"
+
+/datum/supply_pack/faction/independent/tools/blueprints_shuttle
+	name = "Shuttle Expansion Disposable Permit"
+	desc = "A disposable set of documents used to expand flyable shuttles."
+	contains = list(/obj/item/areaeditor/shuttle/disposable)
+	cost = 2000
 	crate_name = "blueprint crate"
 
 /datum/supply_pack/faction/independent/tools/crucks_box

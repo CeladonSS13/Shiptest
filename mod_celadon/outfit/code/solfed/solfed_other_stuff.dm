@@ -309,6 +309,7 @@
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 30, "bomb" = 40, "bio" = 100, "rad" = 75, "fire" = 75, "acid" = 75)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/solfed/elysium
 	resistance_flags = FIRE_PROOF
+	slowdown = 0.75
 
 //backpacks
 /obj/item/storage/backpack/satchel/solfed
@@ -419,3 +420,7 @@
 /obj/item/melee/energy/sword/saber/knife/melee_attack_chain(mob/user, atom/target, params)
 	. = ..()
 	user.changeNext_move(CLICK_CD_RANGE) //double the attack speed
+
+/obj/item/melee/energy/sword/saber/knife/pre_active //used by solfed dynamic gen mobs
+	icon_state = "eknifeyellow"
+	base_icon_state = "eknife"

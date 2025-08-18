@@ -217,16 +217,11 @@ multiple modular subtrees with behaviors
 	ai_status = new_ai_status
 	switch(ai_status)
 		if(AI_STATUS_ON)
-			// [CELADON-ADD] — IDLE_NPC_SLEEP
-			if(!(src in SSai_controllers.active_ai_controllers))
-			// [CELADON-ADD]
-				SSai_controllers.active_ai_controllers += src
+			SSai_controllers.active_ai_controllers += src
 			START_PROCESSING(SSai_behaviors, src)
 		if(AI_STATUS_OFF)
 			STOP_PROCESSING(SSai_behaviors, src)
-			// [CELADON-REMOVE] — IDLE_NPC_SLEEP — Перенёс прок на удаление из листа в сабсистему
-			// SSai_controllers.active_ai_controllers -= src
-			// [CELADON-REMOVE]
+			SSai_controllers.active_ai_controllers -= src
 			CancelActions()
 
 /datum/ai_controller/proc/PauseAi(time)

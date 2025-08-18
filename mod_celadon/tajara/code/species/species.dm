@@ -61,20 +61,20 @@
 
 	default_color = "424242"
 
-	burnmod = 1.1
-	heatmod = 1.3
-	coldmod = 0.7
+	burnmod = 1.3
+	heatmod = 1.2
+	coldmod = 0.9
 	staminamod = 0.85
 
-	bodytemp_heat_damage_limit = TAJARAN_BODYTEMP_NORMAL + 20		//60
+	bodytemp_heat_damage_limit = TAJARAN_BODYTEMP_NORMAL + 30		//70
 
-	max_temp_comfortable = TAJARAN_BODYTEMP_NORMAL + 10				//50
+	max_temp_comfortable = TAJARAN_BODYTEMP_NORMAL + 20				//60
 
-	bodytemp_normal = TAJARAN_BODYTEMP_NORMAL						//40
+	bodytemp_normal = TAJARAN_BODYTEMP_NORMAL						//38
 
-	min_temp_comfortable = TAJARAN_BODYTEMP_NORMAL - 50				//-10
+	min_temp_comfortable = TAJARAN_BODYTEMP_NORMAL - 30				//-10
 
-	bodytemp_cold_damage_limit = TAJARAN_BODYTEMP_NORMAL - 70		//-30
+	bodytemp_cold_damage_limit = TAJARAN_BODYTEMP_NORMAL - 40		//-20
 
 	meat = /obj/item/food/meat/slab/human/mutant/tajara 	//нарисовать/спиздить спрайт к нему
 	//skinned_type = /obj/item/stack/sheet/animalhide/tajara						//нужно сделать кожу из таяран и нарисовать/спиздить спрайт к нему

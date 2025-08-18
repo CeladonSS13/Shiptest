@@ -12,7 +12,13 @@
 <!-- Название мода. Не важно на русском или на английском. -->
 ## Fixes - фиксы
 
-ID мода: CELADON_FIXES
+ID мода: 
+CELADON_FIXES
+CELADON_FIXES_BLOOD
+FIX_DISPLAY_TRUSTER
+FIXES_ICON_IN_HAND_MOB
+FIXES_ICON
+FIXES_SOUND
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -72,6 +78,12 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code/modules/research/rdconsole.dm` - Попытка изменить абьюз, когда игрок мог внести семена сколько угодно раз, пересобирая тупо консоль. Сделано через глобальный список.
 
+- EDIT: `code/modules/research/designs.dm` - [CELADON-EDIT] - CELADON_FIXES - Инициализация `obj/item/disk/design_disk/Initialize()` переписана на фиксированный индексный список слотов `1..max_blueprints` без ассоциативных ключей. `starting_blueprints` раскладываются по индексам, оставшиеся слоты `null`.
+- EDIT: `code/modules/research/rdconsole.dm` - [CELADON-EDIT] - CELADON_FIXES -
+  - `ui_designdisk()` теперь рисует строго по индексам 1..max_blueprints и нормализует длину `blueprints.len = max_blueprints`.
+  - `copy_design` записывает дизайн строго по индексу слота без сжатия списка.
+  - `clear_design` очищает либо все слоты, либо один слот установкой `null` по индексу; не используется `list -= value`.
+
 - ADD: `/obj/machinery/computer/telecomms/server/ui_interact` - Добавляем поддержку UTF-8
 - ADD: `/obj/machinery/computer/telecomms/monitor/ui_interact` - Добавляем поддержку UTF-8
 
@@ -110,9 +122,26 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Делаем так чтобы кепори могли брать мелкие предметы в клюв
 
-- EDIT: `code/datums/mapgen/planetary/waterGenerator.dm` : Убираем спавн лавы на водяной планете
+- EDIT, ADD: `code/modules/mob/living/blood.dm` : Вводим нормальный уровень для крови
+- EDIT, ADD: `code/game/machinery/iv_drip.dm` : Проверка крови у пациента
+- ADD: `code/modules/reagents/chemistry/holder.dm` : Вводим ограничения на шприцы, бикеры, капельницы
 
 - ADD: `code/game/objects/items/food/donut.dm` : Прописано название стандартной иконки, вместо надписи ERROR
+
+- ADD: `code/controllers/subsystem/overmap.dm` : Прерывает удаление планеты при начале ее генерации.
+
+FIX_DISPLAY_TRUSTER
+- EDIT: `code/modules/overmap/ships/controlled_ship_datum.dm` : Откатывает на прежнее отображение скорости, у нас другой вид перемещения корабликов
+
+FIXES_ICON_MOB_IN_HAND
+- EDIT: `code/__HELPERS/dynamic_human_icon_gen.dm` : Прописано название стандартной иконки, вместо надписи ERROR
+
+FIXES_ICON
+- EDIT: `code/modules/clothing/suits/toggles.dm` - СУКА ИЗ-ЗА ЭТОГО СЛОМАЛИСЬ ВСЕ КАПЮШОНЫ
+
+FIXES_SOUND
+- ADD:	`code/game/objects/items/melee/trickweapon.dm` - Баг звука энерго меча у пилы
+- EDIT:	`code/game/objects/items/melee/trickweapon.dm` - Новые звуки открытия/закрытия пилы
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
@@ -166,6 +195,8 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 
 RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFaceLesS, Burbonchik, MrRomainzZ, Molniz, Redwizz, Sjerty, Garomt, Ganza9991, KOCMOHABT
+
+- Автор фикса дисков дизайнов: Турон/Mirag1993
 
 <!--
   Здесь находится твой никнейм

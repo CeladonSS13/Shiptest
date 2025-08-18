@@ -73,12 +73,17 @@
 		/obj/item/clothing/mask/gas/clown_hat = 1,
 		/obj/item/food/grown/cherries = 1,
 		/obj/item/food/grown/banana = 2,
-		/obj/item/reagent_containers/food/snacks/icecream = 1
-		///obj/item/food/icecream = 1
+		/obj/item/food/icecream = 1
 	)
-	result = /obj/item/reagent_containers/food/snacks/honkdae
-	//result = /obj/item/reagent_containers/food/snacks/honkdae
+	result = /obj/item/food/honkdae
 	subcategory = CAT_ICE
+
+/obj/item/food/snowcones/mime
+	name = "mime snowcone"
+	desc = "Nothing syrup drizzled over a snowball in a paper cup. It tastes like it wasn't flavored at all..."
+	icon_state = "mime_sc"
+	food_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nothing = 5)
+	tastes = list("ice" = 1, "water" = 1, "nothing" = 5)
 
 /datum/crafting_recipe/food/mime_sc
 	name = "Mime snowcone"
@@ -87,7 +92,7 @@
 		/datum/reagent/consumable/ice = 15,
 		/datum/reagent/consumable/nothing = 5
 	)
-	result = /obj/item/reagent_containers/food/snacks/snowcones/mime
+	result = /obj/item/food/snowcones/mime
 	subcategory = CAT_ICE
 
 // /datum/crafting_recipe/food/clown_sc	 // NEEDS_TO_FIX_ALARM!
@@ -129,8 +134,7 @@
 		/obj/item/food/pie/plain = 1,
 		/datum/reagent/consumable/nothing = 5
 	)
-	result = /obj/item/reagent_containers/food/snacks/pie/mimetart
-	//result = /obj/item/food/pie/mimetart
+	result = /obj/item/food/pie/mimetart
 	subcategory = CAT_PIE
 
 /datum/crafting_recipe/food/monkeysdelight
@@ -143,8 +147,16 @@
 		/obj/item/food/monkeycube = 1,
 		/obj/item/food/grown/banana = 1
 	)
-	result = /obj/item/reagent_containers/food/snacks/soup/monkeysdelight
+	result = /obj/item/food/soup/monkeysdelight
 	subcategory = CAT_SALAD
+
+/obj/item/food/soup/clownstears
+	name = "clown's tears"
+	desc = "A bowl of a mix of ingredients that invokes the immediate laughter of the viewer. It's too difficult to visually describe it without being overcome with fits of laughing."
+	icon_state = "clownstears"
+	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/banana = 10, /datum/reagent/water = 5, /datum/reagent/consumable/nutriment/vitamin = 18, /datum/reagent/consumable/clownstears = 20)
+	tastes = list("laughter" = 1)
+	foodtypes = FRUIT | SUGAR
 
 /datum/crafting_recipe/food/clownstears
 	name = "Clowns tears"
@@ -154,7 +166,7 @@
 		/obj/item/food/grown/banana = 1,
 		/obj/item/stack/sheet/mineral/hidden/hellstone = 1
 	)
-	result = /obj/item/reagent_containers/food/snacks/soup/clownstears
+	result = /obj/item/food/soup/clownstears
 	subcategory = CAT_SOUP
 
 // /datum/crafting_recipe/food/spesslaw
