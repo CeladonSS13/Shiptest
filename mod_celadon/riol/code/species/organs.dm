@@ -9,6 +9,7 @@
 	icon = 'mod_celadon/_storge_icons/icons/species/riol/riol_organs.dmi'	//пока такая хурма, но нужно будет сделать уши отдельно от головы и втыкнуть в какой-либо файл
 	icon_state = "ears"					//когда будут уши в каком-то файле, тогда и поменяешь
 	damage_multiplier = 2
+	bang_protect = -0.2	// CELADON_BALANCE_SPECIES - Снижаем устойчивость к громким звукам на 20%
 
 /obj/item/organ/ears/riol/Insert(mob/living/carbon/human/ear_owner, special = 0, drop_if_replaced = TRUE)
 	..()

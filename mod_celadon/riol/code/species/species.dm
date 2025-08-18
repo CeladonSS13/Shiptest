@@ -58,9 +58,9 @@
 
 	default_color = "424242"
 
-	burnmod = 1.1
-	heatmod = 1.3
-	coldmod = 0.7
+	burnmod = 1.3
+	heatmod = 1.2
+	coldmod = 0.85
 	speedmod = -0.05
 
 	bodytemp_heat_damage_limit = RIOL_BODYTEMP_NORMAL + 20		//60
@@ -69,9 +69,9 @@
 
 	bodytemp_normal = RIOL_BODYTEMP_NORMAL						//40
 
-	min_temp_comfortable = RIOL_BODYTEMP_NORMAL - 50				//-10
+	min_temp_comfortable = RIOL_BODYTEMP_NORMAL - 35				//-10
 
-	bodytemp_cold_damage_limit = RIOL_BODYTEMP_NORMAL - 70		//-30
+	bodytemp_cold_damage_limit = RIOL_BODYTEMP_NORMAL - 45		//-30
 
 	meat = /obj/item/food/meat/slab/human/mutant/riol 	//нарисовать/спиздить спрайт к нему
 	//skinned_type = /obj/item/stack/sheet/animalhide/riol						//нужно сделать кожу из таяран и нарисовать/спиздить спрайт к нему

@@ -40,6 +40,7 @@
 	actions_types = list(/datum/action/item_action/organ_action/toggle)
 	var/active = FALSE
 	var/current_lighting_alpha = null
+	flash_protect = FLASH_PROTECTION_SENSITIVE	// CELADON_BALANCE_SPECIES - Для баланса, глаза стали чувствительными
 
 /obj/item/organ/eyes/tajara/Initialize()
 	current_lighting_alpha = lighting_alpha

@@ -29,6 +29,14 @@
 #include "clumsy_table/_clumsy_table.dme"
 #include "quirks/_quirks.dme"
 
+// --- SECRET --- //
+
+#if fexists("../+secret/__secret.dme") && !defined(DISABLE_SECRETS)
+#include "../+secret/__secret.dme"
+#else
+#include "_secrets/__secret_public.dme"
+#endif
+
 // --- ICONS --- //
 #include "parallax/_parallax.dme"
 #include "resprite/_resprite.dme"
@@ -86,7 +94,7 @@
 #include "lifeline_minus/_lifeline_minus.dme"
 #include "robotic_honk/_robotic_honk.dme"
 #include "wideband/_wideband.dme"
-#include "fix_tail/_fix_tail.dme"
+// #include "fix_tail/_fix_tail.dme"	-	Отключен по приказу хэда шиптеста
 #include "survey_handheld/_survey_handheld.dme"
 #include "underwear/_underwear.dme"
 #include "increase_weapon_durability/_increase_weapon_durability.dme"

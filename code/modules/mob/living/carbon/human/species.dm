@@ -989,7 +989,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			bodyparts_to_add -= "riol_hairs"
 
 	if("riol_tail" in mutant_bodyparts)
-		if(!H.dna.features["riol_tail"] || H.dna.features["riol_tail"] == "None" || H.wear_suit && (H.wear_suit.flags_inv & HIDEJUMPSUIT))
+		if(!H.dna.features["riol_tail"] || H.dna.features["riol_tail"] == "None" || (H.wear_suit && (H.wear_suit.flags_inv & HIDETAIL)))
 			bodyparts_to_add -= "riol_tail"
 
 	if("riol_ears" in mutant_bodyparts)

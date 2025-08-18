@@ -2,12 +2,12 @@
 
 /datum/outfit/job/elysium
 	box = /obj/item/storage/box/survival/independent
+	faction_icon = "bg_elysium"
 
 
 /obj/item/card/id/elysium
 	desc = "A Elysium ID with no proper access to speak of."
 	icon = 'mod_celadon/_storge_icons/icons/items/misc/elysium_card.dmi'
-	faction_icon = "bg_pgf"
 	icon_state = "elysium"
 
 /obj/item/card/id/elysium/captain

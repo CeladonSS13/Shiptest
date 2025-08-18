@@ -571,6 +571,8 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 //		playsound(src, 'sound/weapons/effects/deflect.ogg', 100)	// Original
 		if(istype(src, /obj/item/shield))
 			playsound(src, pick('mod_celadon/_storge_sounds/sound/gun/shieldhit1.wav', 'mod_celadon/_storge_sounds/sound/gun/shieldhit2.wav'), 100)
+		else if(istype(src, /obj/item/melee/sword))
+			playsound(src, pick('mod_celadon/_storge_sounds/sound/gun/sword_p1.ogg', 'mod_celadon/_storge_sounds/sound/gun/sword_p2.ogg', 'mod_celadon/_storge_sounds/sound/gun/sword_p3.ogg'), 100)
 		else
 			playsound(src, 'sound/weapons/effects/deflect.ogg', 100)
 // [/CELADON-EDIT]

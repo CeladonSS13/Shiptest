@@ -543,7 +543,7 @@
 			return TRUE
 		if("add_text")
 			var/paper_input = params["text"]
-			var/this_input_length = length(paper_input)
+			var/this_input_length = length_char(paper_input)
 
 			if(this_input_length == 0)
 				to_chat(user, pick("Writing block strikes again!", "You forgot to write anything!"))
@@ -646,7 +646,7 @@
 /obj/item/paper/proc/get_total_length()
 	var/total_length = 0
 	for(var/datum/paper_input/entry as anything in raw_text_inputs)
-		total_length += length(entry.raw_text)
+		total_length += length_char(entry.raw_text)
 
 	return total_length
 

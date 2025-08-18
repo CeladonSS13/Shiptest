@@ -119,7 +119,11 @@
 	for(var/datum/design/D in blueprints)
 		var/unbuildable = FALSE // we can't build the design currently
 		var/m10 = FALSE // 10x mult
-		var/m25 = FALSE // 25x mult
+// [CELADON-EDIT] - CELADON_QOL - AUTOLATE_MAXSTACK
+//		var/m25 = FALSE // 25x mult
+		var/m15 = FALSE // 15x mult
+		var/m30 = FALSE // 30x mult
+// [/CELADON-EDIT]
 		var/m50 = FALSE // 50x mult
 		var/m5 = FALSE // 5x mult
 		var/sheets = FALSE // sheets or no?
@@ -134,8 +138,14 @@
 					max_multiplier = min(D.maxstack, round(mats.get_material_amount(mat)/D.materials[mat]))
 				if (max_multiplier>10 && !disabled)
 					m10 = TRUE
-				if (max_multiplier>25 && !disabled)
-					m25 = TRUE
+// [CELADON-EDIT] - CELADON_QOL - AUTOLATE_MAXSTACK
+//				if (max_multiplier>25 && !disabled)
+//					m25 = TRUE
+				if (max_multiplier>15 && !disabled)
+					m15 = TRUE
+				if (max_multiplier>30 && !disabled)
+					m30 = TRUE
+// [/CELADON-EDIT]
 		else
 			if(!unbuildable)
 				if(!disabled && can_build(D, 5))
@@ -154,7 +164,11 @@
 			buildable = unbuildable,
 			mult5 = m5,
 			mult10 = m10,
-			mult25 = m25,
+// [CELADON-EDIT] - AUTOLATE_MAXSTACK
+//			mult25 = m25,
+			mult15 = m15,
+			mult30 = m30,
+// [/CELADON-EDIT]
 			mult50 = m50,
 			sheet = sheets,
 			maxmult = max_multiplier,
@@ -188,7 +202,7 @@
 		eject(usr)
 
 	if(action == "materialEject")
-// [CELADON-ADD] - FIX_LATHE
+// [CELADON-ADD] - CELADON_QOL - FIX_LATHE
 		if (busy)
 			to_chat(usr, "<span class=\"alert\">The autolathe is busy. Please wait for completion of previous operation.</span>")
 			return
