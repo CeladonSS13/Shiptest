@@ -62,6 +62,10 @@ items/fov/fov_effects.dmi
 items/mob/head/costume.dmi
 items/mob/head/hats.dmi
 
+mecha_96x96.dmi
+mecha_equipment.dmi
+mecha.dmi
+
 items/mob/inhands/books_lefthand.dmi
 items/mob/inhands/books_righthand.dmi
 items/mob/inhands/hands.dmi
@@ -230,9 +234,6 @@ elysium_brigade.dmi
 flags.dmi
 jellypeople.dmi
 language.dmi
-mecha_96x96.dmi
-mecha_equipment.dmi
-mecha.dmi
 musician.dmi
 parallax.dmi
 pizzamat.dmi

@@ -1,8 +1,8 @@
 /* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
 	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
 
- /datum/supply_pack/armor
-	group = "Armor"
+/datum/supply_pack/armor
+	category = "Armor"
 	crate_type = /obj/structure/closet/crate/secure
 
 
@@ -93,7 +93,7 @@
 	faction_locked = TRUE
 
 //gezena
-/datum/supply_pack/armor/pgf_armor
+/datum/supply_pack/armor/pgf_marine_armor
 	name = "Raksha-plate Crate"
 	desc = "One set of standard issue Raksha-plate armor, highly protective and very mobile. The helmet is adjustable for horns."
 	cost = 1500

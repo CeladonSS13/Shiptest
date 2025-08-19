@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/independent/tools
-	group = "Tools & Tanks"
+	category = "Tools & Tanks"
 	crate_type = /obj/structure/closet/crate/engineering
 
 /*
@@ -41,7 +41,7 @@
 
 /datum/supply_pack/faction/independent/tools/bodycamera
 	name = "Body Camera Crate"
-	desc = "Contains two portable cameras, designed to help keep track of a working group at all times."
+	desc = "Contains two portable cameras, designed to help keep track of a working category at all times."
 	cost = 250
 	contains = list(/obj/item/bodycamera,
 					/obj/item/bodycamera,
@@ -54,6 +54,13 @@
 	cost = 500
 	contains = list(/obj/item/storage/belt/military/assault)
 	crate_name = "assault belt crate"
+
+/datum/supply_pack/faction/independent/tools/milbelt
+	name = "Military Chest Rig"
+	desc = "Contains an chest rig, with not one, not two, but seven pockets."
+	cost = 1000
+	contains = list(/obj/item/storage/belt/military)
+	crate_name = "chest rig crate"
 
 /datum/supply_pack/faction/independent/tools/cellcharger
 	name = "Cell Charger Crate"
@@ -189,7 +196,14 @@
 	name = "Shuttle Expansion Permit"
 	desc = "A set of paperwork which is used to expand flyable shuttles."
 	contains = list(/obj/item/areaeditor/shuttle)
-	cost = 20000
+	cost = 10000
+	crate_name = "blueprint crate"
+
+/datum/supply_pack/faction/independent/tools/blueprints_shuttle
+	name = "Shuttle Expansion Disposable Permit"
+	desc = "A disposable set of documents used to expand flyable shuttles."
+	contains = list(/obj/item/areaeditor/shuttle/disposable)
+	cost = 2000
 	crate_name = "blueprint crate"
 
 /datum/supply_pack/faction/independent/tools/crucks_box

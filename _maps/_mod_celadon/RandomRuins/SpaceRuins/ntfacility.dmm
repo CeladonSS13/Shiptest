@@ -1618,9 +1618,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/powered)
 "KJ" = (
-/obj/item/gun/ballistic/revolver/detective{
-	spawnwithmagazine = 0
-	},
+/obj/item/gun/ballistic/revolver/detective,
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1808,8 +1806,6 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/item/clothing/head/hopcap{
 	desc = "It's good to be the king.";
-	icon = 'icons/obj/clothing/hats.dmi';
-	mob_overlay_icon = 'icons/mob/clothing/head.dmi';
 	name = "captains's cap";
 	pixel_x = 5;
 	pixel_y = -4

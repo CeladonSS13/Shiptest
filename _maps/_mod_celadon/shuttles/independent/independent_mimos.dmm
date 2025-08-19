@@ -141,7 +141,7 @@
 /area/ship/crew/canteen)
 "bg" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/hotdog,
+/obj/item/food/hotdog,
 /obj/item/trash/plate{
 	pixel_x = 7;
 	pixel_y = 6
@@ -626,7 +626,7 @@
 /obj/structure/closet/secure_closet/engineering_personal{
 	req_access = null
 	},
-/obj/item/reagent_containers/food/snacks/kebab/rat/double,
+/obj/item/food/kebab/rat/double,
 /obj/item/clothing/suit/space/hardsuit,
 /turf/open/floor/plasteel/vaporwave{
 	icon_state = "floorscorched1"
@@ -1102,7 +1102,7 @@
 	},
 /obj/structure/closet/crate/bin,
 /obj/item/storage/cans/sixbeer,
-/obj/item/reagent_containers/food/snacks/cheesiehonkers,
+/obj/item/food/cheesiehonkers,
 /obj/item/reagent_containers/food/drinks/beer/light,
 /turf/open/floor/wood/mahogany,
 /area/ship/security)
@@ -1566,30 +1566,15 @@
 /area/ship/security)
 "rR" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/canned/peaches{
-	pixel_y = 10;
-	pixel_x = 5
-	},
-/obj/item/reagent_containers/food/snacks/canned/peaches{
-	pixel_y = 10;
-	pixel_x = 5
-	},
-/obj/item/reagent_containers/food/snacks/canned/peaches{
-	pixel_y = 10;
-	pixel_x = 5
-	},
-/obj/item/reagent_containers/food/snacks/canned/peaches{
-	pixel_y = 10;
-	pixel_x = 5
-	},
-/obj/item/reagent_containers/food/snacks/canned/peaches{
-	pixel_y = 10;
-	pixel_x = 5
-	},
-/obj/item/reagent_containers/food/snacks/canned/beans,
-/obj/item/reagent_containers/food/snacks/canned/beans,
-/obj/item/reagent_containers/food/snacks/canned/beans,
-/obj/item/reagent_containers/food/snacks/canned/beans,
+/obj/item/food/canned/peaches,
+/obj/item/food/canned/peaches,
+/obj/item/food/canned/peaches,
+/obj/item/food/canned/peaches,
+/obj/item/food/canned/peaches,
+/obj/item/food/canned/beans,
+/obj/item/food/canned/beans,
+/obj/item/food/canned/beans,
+/obj/item/food/canned/beans,
 /obj/effect/spawner/random/food_or_drink/ration,
 /obj/effect/spawner/random/food_or_drink/ration,
 /obj/machinery/door/window/northright{
@@ -3085,9 +3070,9 @@
 /obj/item/clothing/mask/gas/clown_hat,
 /obj/item/bikehorn,
 /obj/item/pneumatic_cannon/pie,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
-/obj/item/reagent_containers/food/snacks/pie/cream,
+/obj/item/food/pie/cream,
+/obj/item/food/pie/cream,
+/obj/item/food/pie/cream,
 /obj/item/clothing/shoes/clown_shoes,
 /turf/open/floor/plasteel,
 /area/ship/engineering)
@@ -3211,7 +3196,7 @@
 	pixel_y = -16
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
-/obj/item/reagent_containers/food/snacks/grilledcheese,
+/obj/item/food/grilled_cheese_sandwich,
 /obj/item/trash/plate{
 	pixel_x = 7;
 	pixel_y = 2
@@ -4261,15 +4246,15 @@
 /turf/closed/wall/mineral/titanium/interior,
 /area/ship/security)
 "Yf" = (
-/obj/item/reagent_containers/food/snacks/grown/cannabis{
+/obj/item/food/grown/cannabis{
 	pixel_x = 10;
 	pixel_y = 4
 	},
-/obj/item/reagent_containers/food/snacks/grown/cannabis{
+/obj/item/food/grown/cannabis{
 	pixel_x = 9;
 	pixel_y = 4
 	},
-/obj/item/reagent_containers/food/snacks/grown/cannabis/white{
+/obj/item/food/grown/cannabis/white{
 	pixel_x = 8;
 	pixel_y = 4
 	},
@@ -4319,7 +4304,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/item/clothing/suit/space/hardsuit/quixote,
+/obj/item/clothing/suit/space/hardsuit,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 4
 	},

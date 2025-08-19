@@ -106,10 +106,6 @@
 	name = "Fireball"
 	spell_type = /obj/effect/proc_holder/spell/aimed/fireball
 
-/datum/spellbook_entry/rod_form
-	name = "Rod Form"
-	spell_type = /obj/effect/proc_holder/spell/targeted/rod_form
-
 /datum/spellbook_entry/magicm
 	name = "Magic Missile"
 	spell_type = /obj/effect/proc_holder/spell/targeted/projectile/magic_missile
@@ -300,6 +296,7 @@
 	limit = 3
 	category = "Assistance"
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /datum/spellbook_entry/item/hugbottle
 	name = "Bottle of Tickles"
 	desc = "A bottle of magically infused fun, the smell of which will \
@@ -313,6 +310,7 @@
 	cost = 1 //non-destructive; it's just a jape, sibling!
 	limit = 3
 	category = "Assistance"
+// [/CELADON-ADD]
 
 /datum/spellbook_entry/item/battlemage
 	name = "Battlemage Armour"
@@ -515,6 +513,13 @@
 			qdel(O)
 	else if(istype(O, /obj/item/antag_spawner/slaughter_demon))
 		to_chat(user, span_notice("On second thought, maybe summoning a demon is a bad idea. You refund your points."))
+// [CELADON-EDIT] - CELADON_RETURN_CONTENT_CLOWNS
+/*
+		uses += 2
+		for(var/datum/spellbook_entry/item/bloodbottle/BB in entries)
+			if(!isnull(BB.limit))
+				BB.limit++
+*/
 		if(istype(O, /obj/item/antag_spawner/slaughter_demon/laughter))
 			uses += 1
 			for(var/datum/spellbook_entry/item/hugbottle/HB in entries)
@@ -525,6 +530,7 @@
 			for(var/datum/spellbook_entry/item/bloodbottle/BB in entries)
 				if(!isnull(BB.limit))
 					BB.limit++
+// [/CELADON-EDIT]
 		qdel(O)
 
 /obj/item/spellbook/proc/GetCategoryHeader(category)

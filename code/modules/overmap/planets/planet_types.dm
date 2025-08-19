@@ -32,7 +32,7 @@
 	///How much of a radio message we mess up on nearby or on landed/orbitting ships
 	var/interference_power = 0
 	// [CELADON-ADD] - CELADON_OVERMAP_ICON - Это вагабонд насрал
-	var/icon = 'mod_celadon/_storge_icons/icons/overmap/overmap.dmi'
+	var/icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap.dmi'
 	var/pixel_w = 0
 	var/pixel_z = 0
 	// [/CELADON-ADD]
@@ -54,11 +54,8 @@
 	ruin_type = RUINTYPE_LAVA
 	interference_power = 5
 
-	primary_ores = list(\
-		/obj/item/stack/ore/sulfur,
-		/obj/item/stack/ore/galena,
-		/obj/item/stack/ore/sulfur/pyrite,
-		/obj/item/stack/ore/magnetite,
+	primary_ores = list(
+		/obj/item/stack/ore/iron,
 		/obj/item/stack/ore/plasma,
 		)
 
@@ -79,9 +76,7 @@
 	ruin_type = RUINTYPE_ICE
 
 	primary_ores = list(\
-		/obj/item/stack/ore/malachite,
-		/obj/item/stack/ore/quartzite,
-		/obj/item/stack/ore/hematite,
+		/obj/item/stack/ore/iron,
 		/obj/item/stack/ore/gold,
 		)
 
@@ -100,9 +95,6 @@
 	weather_controller_type = /datum/weather_controller/lush
 	ruin_type = RUINTYPE_JUNGLE
 	primary_ores = list(\
-		/obj/item/stack/ore/graphite/coal,
-		/obj/item/stack/ore/malachite,
-		/obj/item/stack/ore/sulfur,
 		/obj/item/stack/ore/gold,
 		/obj/item/stack/ore/diamond, //this isnt very common, but it's more common here than every other planet, so i list it here
 		)
@@ -122,8 +114,7 @@
 	weather_controller_type = /datum/weather_controller/rockplanet
 	ruin_type = RUINTYPE_ROCK
 	primary_ores = list(\
-		/obj/item/stack/ore/hematite,
-		/obj/item/stack/ore/sulfur,
+		/obj/item/stack/ore/iron,
 		)
 
 /datum/planet_type/sand
@@ -141,9 +132,8 @@
 	weather_controller_type = /datum/weather_controller/desert
 	ruin_type = RUINTYPE_SAND
 	primary_ores = list(\
-		/obj/item/stack/ore/quartzite,
-		/obj/item/stack/ore/hematite,
-		/obj/item/stack/ore/rutile,
+		/obj/item/stack/ore/iron,
+		/obj/item/stack/ore/titanium,
 		)
 
 
@@ -162,8 +152,7 @@
 	weather_controller_type = /datum/weather_controller/lush
 	ruin_type = RUINTYPE_BEACH
 	primary_ores = list(\
-		/obj/item/stack/ore/hematite,
-		/obj/item/stack/ore/malachite,
+		/obj/item/stack/ore/iron,
 		/obj/item/stack/ore/plasma,
 		)
 
@@ -199,11 +188,12 @@
 	weather_controller_type = null
 	ruin_type = null // asteroid ruins when
 	weight = 0
+#ifndef RUIN_PLACEMENT_TEST
 	selfloop = TRUE
+#endif
 	primary_ores = list(\
 		/obj/item/stack/ore/plasma,
-		/obj/item/stack/ore/hematite,
-		/obj/item/stack/ore/malachite,
+		/obj/item/stack/ore/iron,
 		)
 
 /datum/planet_type/spaceruin
@@ -216,7 +206,9 @@
 	default_baseturf = /turf/open/space
 	weather_controller_type = null
 	ruin_type = RUINTYPE_SPACE
+#ifndef RUIN_PLACEMENT_TEST
 	selfloop = TRUE
+#endif
 
 /datum/planet_type/waste
 	name = "waste disposal planetoid"
@@ -234,11 +226,9 @@
 	ruin_type = RUINTYPE_WASTE
 	interference_power = 5
 	primary_ores = list(\
-		/obj/item/stack/ore/sulfur,
-		/obj/item/stack/ore/hematite,
+		/obj/item/stack/ore/iron,
 		/obj/item/stack/ore/plasma,
-		/obj/item/stack/ore/autunite,
-		/obj/item/stack/ore/galena,
+		/obj/item/stack/ore/uranium,
 		)
 
 
@@ -249,7 +239,7 @@
 	icon_state = "giant"
 	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	//	color = COLOR_DARK_MODERATE_ORANGE
-	icon = 'mod_celadon/_storge_icons/icons/overmap/overmap_large.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap_large.dmi'
 	pixel_w = -8
 	pixel_z = -8
 	// [/CELADON-EDIT]
@@ -271,7 +261,7 @@
 // 	//	color = COLOR_PURPLE
 // 	// icon_state = "giant"
 // 	icon_state = "planet-plasma"
-// 	icon = 'mod_celadon/_storge_icons/icons/overmap/overmap_large.dmi'
+// 	icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap_large.dmi'
 // 	pixel_w = -8
 // 	pixel_z = -8
 // 	// [/CELADON-EDIT]
@@ -299,8 +289,7 @@
 
 	primary_ores = list(\
 		/obj/item/stack/ore/plasma,
-		/obj/item/stack/ore/hematite,
-		/obj/item/stack/ore/malachite,
+		/obj/item/stack/ore/iron,
 		)
 
 /datum/planet_type/desert
@@ -316,10 +305,7 @@
 	gravity = STANDARD_GRAVITY
 	default_baseturf = /turf/open/floor/plating/asteroid/desert/lit
 	weather_controller_type = /datum/weather_controller/desert_yellow
-	primary_ores = list(\
-		/obj/item/stack/ore/graphite/coal,
-		/obj/item/stack/ore/sulfur,
-		/obj/item/stack/ore/quartzite,
+	primary_ores = list(
 		/obj/item/stack/ore/gold,
 		)
 
@@ -339,9 +325,9 @@
 	interference_power = 100
 
 	primary_ores = list(\
-		/obj/item/stack/ore/autunite,
+		/obj/item/stack/ore/uranium,
 		/obj/item/stack/ore/plasma,
-		/obj/item/stack/ore/magnetite,
+		/obj/item/stack/ore/iron,
 		)
 
 /datum/planet_type/moon
@@ -358,9 +344,8 @@
 	weather_controller_type = null
 
 	primary_ores = list(\
-		/obj/item/stack/ore/quartzite,
-		/obj/item/stack/ore/hematite,
-		/obj/item/stack/ore/rutile,
+		/obj/item/stack/ore/iron,
+		/obj/item/stack/ore/titanium,
 		)
 
 /datum/planet_type/battlefield

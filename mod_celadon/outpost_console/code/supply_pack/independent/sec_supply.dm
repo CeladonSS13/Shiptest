@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/independent/sec_supply
-	group = "Security Supplies"
+	category = "Security Supplies"
 	crate_type = /obj/structure/closet/crate/secure/gear
 
 /*
@@ -12,6 +12,13 @@
 	cost = 600
 	contains = list(/obj/item/clothing/accessory/holster)
 	crate_name = "holster crate"
+
+/datum/supply_pack/faction/independent/sec_supply/seclite
+	name = "Seclite Crate"
+	desc = "Contains a single high power flashlight, complete with the hardware for attachment to standard helmet mounting brackets"
+	contains = list(/obj/item/flashlight/seclite)
+	cost = 100
+	crate_name = "seclite crate"
 
 /datum/supply_pack/faction/independent/sec_supply/securitybarriers
 	name = "Security Barrier Grenades"
@@ -30,11 +37,18 @@
 	cost = 150
 	crate_name = "sandbag crate"
 
+/datum/supply_pack/faction/independent/sec_supply/maintenance_kit_small
+	name = "Firearm Maintenance Small Kit"
+	desc = "A minimal firearm maintenance kit with 15 uses, specifically designed for lubricating moving parts."
+	contains = list(/obj/item/gun_maint_kit/small)
+	cost = 375
+	crate_name = "maintenance kit crate"
+
 /datum/supply_pack/faction/independent/sec_supply/maintenance_kit
 	name = "Firearm Maintenance Kit"
-	desc = "Contains a five-use firearm maintenance kit, useful for cleaning blood, sand, and mud out of guns."
+	desc = "Contains a large firearm maintenance kit for full servicing, with five uses, useful for cleaning blood, sand, and dirt from guns."
 	contains = list(/obj/item/gun_maint_kit)
-	cost = 100 //Price check this later. It's probably fine but it might be okay if it's a little more expensive
+	cost = 500
 	crate_name = "maintenance kit crate"
 
 /datum/supply_pack/faction/independent/sec_supply/flashbangs
@@ -116,18 +130,18 @@
 */
 
 /datum/supply_pack/faction/independent/sec_supply/riotshields
-	name = "Riot Shield Crate"
-	desc = "Contains a riot shield, effective at holding back hostile fauna, xenofauna, or large crowds."
-	cost = 600
+	name = "Ballistic Shield Crate"
+	desc = "Contains a ballistic shield, effective at holding back hostile fauna, xenofauna, or large crowds."
+	cost = 1200
 	contains = list(/obj/item/shield/riot)
-	crate_name = "riot shield crate"
+	crate_name = "ballistic shield crate"
 
 /datum/supply_pack/faction/independent/sec_supply/teleriotshields
-	name = "Telescopic Riot Shield Crate"
-	desc = "Contains a telescopic riot shield, effective at holding back hostile fauna, xenofauna, or large crowds in tight spaces."
-	cost = 750
+	name = "Telescopic Shield Crate"
+	desc = "Contains a telescopic shield, effective at holding back hostile fauna, xenofauna, or large crowds in tight spaces."
+	cost = 1500
 	contains = list(/obj/item/shield/riot/tele)
-	crate_name = "riot shield crate"
+	crate_name = "telescopic shield crate"
 
 /datum/supply_pack/faction/independent/sec_supply/survknives
 	name = "Survival Knives Crate"

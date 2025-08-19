@@ -213,8 +213,8 @@
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/item/tank/internals/oxygen/red,
 /obj/item/clothing/mask/gas/solfed,
-/obj/item/clothing/suit/space/syndicate/black,
-/obj/item/clothing/head/helmet/space/syndicate/black/blue,
+/obj/item/clothing/suit/space,
+/obj/item/clothing/head/helmet/space/light,
 /turf/open/floor/plasteel/tech,
 /area/ruin/asteroid/wreckeroutpost/maincorridore)
 "db" = (
@@ -399,7 +399,7 @@
 /area/ruin/asteroid/wreckeroutpost/armory)
 "fd" = (
 /obj/effect/decal/remains/human,
-/turf/open/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/smoothed/airless,
 /area/overmap_encounter/planetoid/asteroid/explored)
 "fe" = (
 /obj/effect/decal/cleanable/glass,
@@ -681,7 +681,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "jE" = (
-/turf/open/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/smoothed/airless,
 /area/overmap_encounter/planetoid/asteroid/explored)
 "jF" = (
 /obj/effect/turf_decal/industrial/caution{
@@ -974,7 +974,7 @@
 /area/ruin/asteroid/wreckeroutpost/maint)
 "nE" = (
 /obj/structure/closet/crate/bin,
-/obj/item/reagent_containers/food/snacks/badrecipe,
+/obj/item/food/badrecipe,
 /obj/item/trash/boritos,
 /obj/item/trash/semki,
 /turf/open/floor/wood,
@@ -1908,7 +1908,7 @@
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "Au" = (
 /obj/item/stack/ore/salvage/scrapmetal,
-/turf/open/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/smoothed/airless,
 /area/overmap_encounter/planetoid/asteroid/explored)
 "Ax" = (
 /obj/machinery/light/small/directional/north,
@@ -2957,13 +2957,13 @@
 /turf/open/floor/plating,
 /area/ruin/asteroid/wreckeroutpost/maint)
 "NJ" = (
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab/corgi,
-/obj/item/reagent_containers/food/snacks/meat/slab/corgi,
-/obj/item/reagent_containers/food/snacks/meat/slab/corgi,
-/obj/item/reagent_containers/food/snacks/meat/slab/gondola,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab/corgi,
+/obj/item/food/meat/slab/corgi,
+/obj/item/food/meat/slab/corgi,
+/obj/item/food/meat/slab/corgi,
 /obj/structure/closet/secure_closet{
 	icon_state = "freezer";
 	name = "refrigerator"
@@ -3389,7 +3389,7 @@
 /area/ruin/asteroid/wreckeroutpost/cargomining)
 "Tc" = (
 /obj/structure/spawner/carp,
-/turf/open/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/smoothed/airless,
 /area/overmap_encounter/planetoid/asteroid/explored)
 "Te" = (
 /obj/effect/turf_decal/industrial/fire{
@@ -3635,7 +3635,7 @@
 /obj/structure/lattice{
 	icon_state = "lattice-143"
 	},
-/turf/open/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/smoothed/airless,
 /area/overmap_encounter/planetoid/asteroid/explored)
 "WI" = (
 /obj/machinery/door/airlock/command{

@@ -22,7 +22,7 @@
 		"hel","ischt","far","va","baram","yereng","tech","lach","sam","mak","lich","gen","or","ag","ekt","gek","stag","onn", \
 		"bin","ket","yarl","volf","eyanech","kresvz","azunayn","ghchv"
 	)
-	icon = 'mod_celadon/_storge_icons/icons/language.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/assets/language.dmi'
 	icon_state = "canilunzt"
 	default_priority = 90
 

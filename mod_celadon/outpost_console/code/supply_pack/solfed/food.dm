@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/solfed/food
-	group = "Food & Agricultural"
+	category = "Food & Agricultural"
 
 /datum/supply_pack/faction/solfed/food/beerkeg
 	name = "Beer Keg"

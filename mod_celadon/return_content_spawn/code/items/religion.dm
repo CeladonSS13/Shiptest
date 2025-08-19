@@ -1,8 +1,8 @@
 /obj/item/clothing/shoes/plate
 	name = "Plate Boots"
 	desc = "Metal boots, they look heavy."
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/shoes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/feet.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/feet.dmi'
 	icon_state = "crusader"
 	w_class = WEIGHT_CLASS_NORMAL
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60) //does this even do anything on boots?

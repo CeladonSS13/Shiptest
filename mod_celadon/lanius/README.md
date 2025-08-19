@@ -34,9 +34,9 @@ ID мода: CELADON_LANIUS
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- mod_celadon/_storge_icons/icons/lanius/lanius_bodyparts.dmi
-- mod_celadon/_storge_icons/icons/lanius/lanius_organs.dmi
-- mod_celadon/_storge_icons/icons/lanius/screen_alert.dmi
+- mod_celadon/_storge_icons/icons/species/lanius/lanius_bodyparts.dmi
+- mod_celadon/_storge_icons/icons/species/lanius/lanius_organs.dmi
+- mod_celadon/_storge_icons/icons/species/lanius/screen_alert.dmi
 - mod_celadon/_storge_sounds/sound/lanius/bp_sfx_RockMan_Thud1_01.ogg
 - mod_celadon/_storge_sounds/sound/lanius/bp_sfx_RockMan_Thud2_01.ogg
 - mod_celadon/_storge_sounds/sound/lanius/bp_sfx_RockMan_Thud2_01.ogg

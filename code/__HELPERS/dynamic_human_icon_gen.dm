@@ -36,12 +36,15 @@ GLOBAL_LIST_EMPTY(dynamic_human_appearances)
 		if(dummy.is_holding(carried_item))
 			var/datum/component/two_handed/twohanded = carried_item.GetComponent(/datum/component/two_handed)
 			if(twohanded)
-				twohanded.wield(dummy)
-			/*
-			var/datum/component/transforming/transforming = carried_item.GetComponent(/datum/component/transforming)
-			if(transforming)
-				transforming.set_active(carried_item)
-			*/
+				twohanded.wield(dummy, instant = TRUE)
+// [CELADON-EDIT] - CELADON_FIXES - FIXES_ICON_MOB_IN_HAND - Рука + Лицо
+//			var/datum/component/transforming/transforming = carried_item.GetComponent(/datum/component/transforming)
+//			if(transforming)
+//				transforming.set_active(carried_item)
+				var/datum/component/transforming/transforming = carried_item.GetComponent(/datum/component/transforming)
+				if(transforming)
+					transforming.set_active(carried_item)
+// [/CELADON-EDIT]
 		if(bloody_slots & carried_item.slot_flags)
 			carried_item.add_mob_blood(dummy)
 	//dummy.update_held_items()

@@ -54,9 +54,6 @@
 
 	var/static/list/outfits
 
-	/// checks if we should NOT spawn /obj/effect/spawner/random/test_ship_matspawn, delete this when ships have new mats mapped in
-	var/matbundle_spawned = FALSE
-
 /datum/map_template/shuttle/proc/prerequisites_met()
 	return TRUE
 
@@ -357,6 +354,7 @@
 	category = "subshuttles"
 	faction = /datum/faction/independent
 	starting_funds = 0
+	unique_ship_access = FALSE
 
 /datum/map_template/shuttle/subshuttles/pill
 	file_name = "independent_pill"
@@ -472,3 +470,24 @@
 	name = "Gauze-class Ambulance Pod"
 	faction = /datum/faction/syndicate/cybersun
 	prefix = "CSSV"
+
+/datum/map_template/shuttle/subshuttles/thunder
+	file_name = "inteq_thunder"
+	name = "Thunder-class Interceptor"
+	faction = /datum/faction/inteq
+	token_icon_state = "ship_tiny_generic"
+	prefix = "IRMV"
+
+/datum/map_template/shuttle/subshuttles/bonnie
+	file_name = "independent_bonnie"
+	name = "Bonnie-class Cargo Hauler"
+	token_icon_state = "ship_tiny_generic"
+	prefix = "SV"
+
+/datum/map_template/shuttle/subshuttles/flea
+	file_name = "ramzi_flea"
+	name = "Flea-class Boarding Cutter"
+	faction = /datum/faction/ramzi
+	token_icon_state = "ship_tiny_generic"
+	prefix = "ISV"
+

@@ -8,6 +8,8 @@
 	var/datum/secrets_menu/tgui  = new(usr)//create the datum
 	tgui.ui_interact(usr)//datum has a tgui component, here we open the window
 
+	log_celadon_admin("ADMIN: [key_name_admin(holder)] openned Secrets Panel.") // [CELADON_ADD] - logging admin actions.
+
 /datum/secrets_menu
 	var/client/holder //client of whoever is using this datum
 	var/is_debugger = FALSE
@@ -192,22 +194,6 @@
 			message_admins(span_adminnotice("[key_name_admin(holder)] reset the sector's name."))
 			priority_announce("[command_name()] has renamed the sector to \"[new_name]\".")
 		//!fun! buttons.
-		if("virus")
-			if(!is_funmin)
-				return
-			SSblackbox.record_feedback("nested tally", "admin_secrets_fun_used", 1, list("Virus Outbreak"))
-			switch(alert("Do you want this to be a random disease or do you have something in mind?",,"Make Your Own","Random","Choose"))
-				if("Make Your Own")
-					AdminCreateVirus(holder)
-				if("Random")
-					var/datum/round_event_control/disease_outbreak/DC = locate(/datum/round_event_control/disease_outbreak) in SSevents.control
-					E = DC.run_event()
-				if("Choose")
-					var/virus = input("Choose the virus to spread", "BIOHAZARD") as null|anything in sortList(typesof(/datum/disease), /proc/cmp_typepaths_asc)
-					var/datum/round_event_control/disease_outbreak/DC = locate(/datum/round_event_control/disease_outbreak) in SSevents.control
-					var/datum/round_event/disease_outbreak/DO = DC.run_event()
-					DO.virus_type = virus
-					E = DO
 		if("allspecies")
 			if(!is_funmin)
 				return

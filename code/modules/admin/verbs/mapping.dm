@@ -44,6 +44,7 @@ GLOBAL_LIST_INIT(admin_verbs_debug_extra, list(
 	/client/proc/start_line_profiling,
 	/client/proc/stop_line_profiling,
 	/client/proc/check_timer_sources,
+	/client/proc/allow_browser_inspect,
 	/client/proc/air_status, //Air things
 	/client/proc/air_status_loc, //More air things
 	/client/proc/manipulate_organs,
@@ -64,7 +65,7 @@ GLOBAL_PROTECT(admin_verbs_debug_extra)
 /obj/effect/debugging/marker
 	// [CELADON-EDIT] - CELADON_AREAS - Иначе никак не подсунуть свои зоны
 	// icon = 'icons/turf/areas.dmi' // CELADON-EDIT - ORIGINAL
-	icon = 'mod_celadon/_storge_icons/icons/areas.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/assets/areas.dmi'
 	// [CELADON-EDIT]
 	icon_state = "yellow"
 

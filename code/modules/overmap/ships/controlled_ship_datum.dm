@@ -88,17 +88,24 @@
 	///The cooldown for events hitting this ship. Generally used by events with a big consquence and fires slower than normal, like flares
 	COOLDOWN_DECLARE(event_cooldown)
 
-	/// checks if we spawned /obj/effect/spawner/random/test_ship_matspawn on a autolathe on the ship, if TRUE, we don't spawn another when another autolathe is spawned. Delete this var when ships have the new mats mapped
-	var/matbundle_spawned = FALSE
+	/// [CELADON-ADD] Таймер, что даёт время на становление пиратами или пацифистами для независимых суден.
+	COOLDOWN_DECLARE(rename_prefix_cooldown)
+	/// [/CELADON-ADD]
 
 /datum/overmap/ship/controlled/Rename(new_name, force = FALSE)
 	var/old_name = name
-	var/full_name = "[source_template.prefix] [new_name]"
+	var/full_name = "Error"
+	// [CELADON-ADD] - Возможность сменить префикс корабля для PISV или RSV.
+	if(!COOLDOWN_FINISHED(src, rename_prefix_cooldown))
+		full_name = "[new_name]"
+	else
+		full_name = "[source_template.prefix] [new_name]"
+	// [/CELADON-ADD]
 	if(!force && !COOLDOWN_FINISHED(src, rename_cooldown) || !..(full_name, force))
 		return FALSE
 
 	message_admins("[key_name_admin(usr)] renamed vessel '[old_name]' to '[full_name]'")
-	log_admin("[key_name(src)] has renamed vessel '[old_name]' to '[full_name]'")
+	log_admin("[usr.ckey] ([usr.real_name]) on [key_name(src)] has renamed vessel '[old_name]' to '[full_name]'")
 	SSblackbox.record_feedback("text", "ship_renames", 1, full_name)
 
 	real_name = new_name
@@ -133,7 +140,6 @@
 		unique_ship_access = source_template.unique_ship_access
 		job_slots = source_template.job_slots?.Copy()
 		stationary_icon_state = creation_template.token_icon_state
-		matbundle_spawned = creation_template.matbundle_spawned
 		alter_token_appearance()
 		if(create_shuttle)
 			shuttle_port = SSshuttle.load_template(creation_template, src)
@@ -160,16 +166,28 @@
 #endif
 	SSovermap.controlled_ships += src
 	current_overmap.controlled_ships += src
-	// [CELADON-ADD] - CELADON_COMPONENT - Добавляем оповещении о пиратах - NEEDS_TO_FIX_ALARM!
-	// if(get_faction() == "Pirates") //Проверка шипа на принадлежность к пиратской фракции
-	// 	radio = new(src.token)
-	// 	radio.name = "Outpost Security System" //Имя, что показывается в вайдбанде
-	// 	radio.talk_into(radio, "На датчиках дальнего действия обнаружена неавторизированная деятельность! Всем кораблям быть в боевой готовности!", FREQ_WIDEBAND) //Сообщение и путь в вайдбанд
-	// 	qdel(radio)
+
+	GLOB.ship_select_tgui?.update_static_data_for_all_viewers()
+	GLOB.crew_manifest_tgui?.update_static_data_for_all_viewers()
+
+	// [CELADON-ADD] - CELADON_COMPONENT - Добавляем оповещении о пиратах
+	if(istype(get_faction(), /datum/faction/pirate))
+		var/datum/overmap/outpost/outpost = SSovermap.outposts[1]
+		if(outpost)
+			if(!outpost.radio)
+				outpost.radio = new(outpost.token)
+			outpost.radio.name = "Outpost Security System"
+			var/T = rand(180,360) SECONDS //3-5mins
+			addtimer(CALLBACK(outpost.radio, TYPE_PROC_REF(/obj/item, talk_into), outpost.radio, "На датчиках дальнего действия обнаружен неавторизированный корабль. Всем кораблям рекомендуется быть в боевой готовности.", FREQ_WIDEBAND), T)
+	// При создании корабля даётся 10 минут на то, чтобы стать PISV или RSV.
+	COOLDOWN_START(src, rename_prefix_cooldown, 10 MINUTES)
+
+/datum/overmap/outpost // Это тут потому-что если верхнее перепишется, то нижнее тоже. Срать вечно 🤙
+	var/obj/item/radio/intercom/wideband/radio
 	// [/CELADON-ADD]
 
-// /datum/overmap/ship/controlled/proc/get_faction() - NEEDS_TO_FIX_ALARM!
-// 	return source_template.faction_name
+/datum/overmap/ship/controlled/proc/get_faction()
+	return source_template.faction
 
 /datum/overmap/ship/controlled/Destroy()
 	//SHOULD be called first
@@ -198,6 +216,8 @@
 		// it handles removal itself
 		qdel(applications[a_key])
 	LAZYCLEARLIST(applications)
+	GLOB.ship_select_tgui?.update_static_data_for_all_viewers()
+	GLOB.crew_manifest_tgui?.update_static_data_for_all_viewers()
 	// set ourselves to ownerless to unregister signals
 	set_owner_mob(null)
 
@@ -294,8 +314,10 @@
 		// thrust_used += real_engine.burn_engine(percentage, seconds_per_tick)
 
 	thrust_used = thrust_used / (shuttle_port.turf_count * 100)
+// [CELADON-EDIT] - CELADON FIXES | FIX_DISPLAY_TRUSTER
+	//est_thrust = thrust_used * 100 / (percentage * seconds_per_tick) //cheeky way of rechecking the thrust, check it every time it's used // ORIGINAL
 	est_thrust = thrust_used / percentage * 100 //cheeky way of rechecking the thrust, check it every time it's used
-
+// [/CELADON-EDIT]
 	return thrust_used
 
 /**
@@ -307,8 +329,10 @@
 		real_engine.update_engine()
 		if(real_engine.enabled)
 			calculated_thrust += real_engine.thrust
+// [CELADON-EDIT] - CELADON FIXES | FIX_DISPLAY_TRUSTER
+	//est_thrust = calculated_thrust / (shuttle_port.turf_count * 100) * 1 SECONDS / SSphysics.wait	// ORIGINAL
 	est_thrust = calculated_thrust / (shuttle_port.turf_count * 100)
-
+// [/CELADON-EDIT]
 /**
  * Calculates the average fuel fullness of all engines.
  */
@@ -386,6 +410,14 @@
 	job_holder_refs[human_job] += WEAKREF(H)
 	if(H.account_id)
 		crew_bank_accounts += WEAKREF(H.get_bank_account())
+
+	GLOB.crew_manifest_tgui?.update_static_data_for_all_viewers()
+	GLOB.ship_select_tgui?.update_static_data_for_all_viewers()
+
+/datum/overmap/ship/controlled/proc/manifest_remove(mob/living/carbon/human/removed)
+	manifest -= removed.real_name
+	GLOB.crew_manifest_tgui?.update_static_data_for_all_viewers()
+	GLOB.ship_select_tgui?.update_static_data_for_all_viewers()
 
 /**
  * adds a mob's real name to a crew's guestbooks

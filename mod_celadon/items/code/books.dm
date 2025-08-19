@@ -1,9 +1,9 @@
 /obj/item/elysm_manual
 	name = "Book of Elysm"
 	desc = "The book's cover reads: \"The national language of the Republic of Elysium, which is a mixture of Ard al-Elysm Almaveud and newly arrived settlers speaking a variation of Arabic 2378 Sol\""
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/book.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/mob/inhands/books_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/mob/inhands/books_righthand.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/book.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/books_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/books_righthand.dmi'
 	icon_state = "elysm_book"
 
 /obj/item/elysm_manual/attack_self(mob/living/user)
@@ -15,7 +15,7 @@
 		return
 
 	to_chat(user, span_boldannounce("You start skimming through [src], and suddenly your mind is filled with arabic symbols."))
-	user.grant_language(/datum/language/elysm, TRUE, TRUE, LANGUAGE_MIND)
+	user.grant_language(/datum/language/elysm, source = LANGUAGE_MIND)
 
 
 /obj/item/elysm_manual/attack(mob/living/M, mob/living/user)
@@ -33,14 +33,14 @@
 		M.visible_message(span_danger("[user] beats [M] over the head with [src]!"), span_userdanger("[user] beats you over the head with [src]!"), span_hear("You hear smacking."))
 	else
 		M.visible_message(span_notice("[user] teaches [M] by beating [M.p_them()] over the head with [src]!"), span_boldnotice("As [user] hits you with [src], arabic symbols flow through your mind."), span_hear("You hear smacking."))
-		M.grant_language(/datum/language/elysm, TRUE, TRUE, LANGUAGE_MIND)
+		M.grant_language(/datum/language/elysm, source = LANGUAGE_MIND)
 
 /obj/item/alquadim_manual
 	name = "Book of Alquadim-Elysm"
 	desc = "The book's cover reads: \"The traditional ancient language of the Elysium Republic, originated in Ard al-Elysm Almaveuda, which are representatives of the Arabic language of 2147, isolated for almost 2 centuries\""
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/book.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/mob/inhands/books_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/mob/inhands/books_righthand.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/book.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/books_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/books_righthand.dmi'
 	icon_state = "alquadim_elysm"
 
 /obj/item/alquadim_manual/attack_self(mob/living/user)
@@ -52,7 +52,7 @@
 		return
 
 	to_chat(user, span_boldannounce("You start skimming through [src], and suddenly your mind is filled with arabic symbols."))
-	user.grant_language(/datum/language/alquadim, TRUE, TRUE, LANGUAGE_MIND)
+	user.grant_language(/datum/language/alquadim, source = LANGUAGE_MIND)
 
 
 /obj/item/alquadim_manual/attack(mob/living/M, mob/living/user)
@@ -70,14 +70,14 @@
 		M.visible_message(span_danger("[user] beats [M] over the head with [src]!"), span_userdanger("[user] beats you over the head with [src]!"), span_hear("You hear smacking."))
 	else
 		M.visible_message(span_notice("[user] teaches [M] by beating [M.p_them()] over the head with [src]!"), span_boldnotice("As [user] hits you with [src], arabic symbols flow through your mind."), span_hear("You hear smacking."))
-		M.grant_language(/datum/language/alquadim, TRUE, TRUE, LANGUAGE_MIND)
+		M.grant_language(/datum/language/alquadim, source = LANGUAGE_MIND)
 
 /obj/item/thayos_manual
 	name = "Book of Thayoss"
 	desc = "The book's cover reads: \"The national language of the Thayos Interstellar Empire, which is a modification of Japanese 2475\""
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/book.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/mob/inhands/books_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/mob/inhands/books_righthand.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/book.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/books_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/books_righthand.dmi'
 	icon_state = "thayos_book"
 
 /obj/item/thayos_manual/attack_self(mob/living/user)
@@ -89,7 +89,7 @@
 		return
 
 	to_chat(user, span_boldannounce("You start skimming through [src], and suddenly your mind is filled with japanese symbols."))
-	user.grant_language(/datum/language/thayoss, TRUE, TRUE, LANGUAGE_MIND)
+	user.grant_language(/datum/language/thayoss, source = LANGUAGE_MIND)
 
 
 /obj/item/thayos_manual/attack(mob/living/M, mob/living/user)
@@ -107,14 +107,14 @@
 		M.visible_message(span_danger("[user] beats [M] over the head with [src]!"), span_userdanger("[user] beats you over the head with [src]!"), span_hear("You hear smacking."))
 	else
 		M.visible_message(span_notice("[user] teaches [M] by beating [M.p_them()] over the head with [src]!"), span_boldnotice("As [user] hits you with [src], japanese symbols flow through your mind."), span_hear("You hear smacking."))
-		M.grant_language(/datum/language/thayoss, TRUE, TRUE, LANGUAGE_MIND)
+		M.grant_language(/datum/language/thayoss, source = LANGUAGE_MIND)
 
 /obj/item/fuyo_manual
 	name = "Book of Fuyo"
 	desc = "The book's cover reads: \"The second language of the Taios Interstellar Empire, which is a modification of Chinese 2475\""
-	icon = 'mod_celadon/_storge_icons/icons/items/obj/book.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/mob/inhands/books_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/mob/inhands/books_righthand.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/book.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/books_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/books_righthand.dmi'
 	icon_state = "fuyo_book"
 
 /obj/item/fuyo_manual/attack_self(mob/living/user)
@@ -126,7 +126,7 @@
 		return
 
 	to_chat(user, span_boldannounce("You start skimming through [src], and suddenly your mind is filled with chinese symbols."))
-	user.grant_language(/datum/language/fuyo, TRUE, TRUE, LANGUAGE_MIND)
+	user.grant_language(/datum/language/fuyo, source = LANGUAGE_MIND)
 
 
 /obj/item/fuyo_manual/attack(mob/living/M, mob/living/user)
@@ -144,7 +144,7 @@
 		M.visible_message(span_danger("[user] beats [M] over the head with [src]!"), span_userdanger("[user] beats you over the head with [src]!"), span_hear("You hear smacking."))
 	else
 		M.visible_message(span_notice("[user] teaches [M] by beating [M.p_them()] over the head with [src]!"), span_boldnotice("As [user] hits you with [src], chinese symbols flow through your mind."), span_hear("You hear smacking."))
-		M.grant_language(/datum/language/fuyo, TRUE, TRUE, LANGUAGE_MIND)
+		M.grant_language(/datum/language/fuyo, source = LANGUAGE_MIND)
 
 /obj/item/paper/fluff/claymore
 	name = "PRODUCT USAGE GUIDE"

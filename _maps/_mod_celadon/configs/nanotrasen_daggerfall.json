@@ -1,0 +1,47 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Daggerfall-class Assault Vessel",
+	"map_short_name": "Daggerfall",
+	"description": "NTSPSV 'Daggerfall'- Судно Нанотрейзен специального назначения которое был разработано Nakamura Engineering по запросу Vigilitas Interstellar для устранения враждебных криминальных формирований и контроля безопасности активов Nanotrasen. Был введен в эксплутацию как аналог малоэффективного судна 'Bolide', основные функции его предшественника были унаследованы и усовершенствованы. При разработке этого судна Nakamura Engineering за прототип был взят 'Tomahawk' регулярных сил Солнечной Федерации. ",
+	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_daggerfall.dmm",
+	"subshuttle": "Rider",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 4,
+	"starting_funds": 1000,
+	"prefix": "NTSPSV",
+	"faction": "/datum/faction/nt",
+	"tags": [
+		"Combat",
+		"Riot",
+		"Subshuttle"
+	],
+	"namelists": [
+		"NANOTRASEN",
+		"WEAPONS"
+	],
+	"job_slots": {
+		"LP Lieutenant": {
+			"outfit": "/datum/outfit/job/nanotrasen/captain/lp",
+			"officer": true,
+			"slots": 1
+		},
+		"LP Engineering Specialist": {
+			"outfit": "/datum/outfit/job/nanotrasen/engineer/lp",
+			"officer": true,
+			"slots": 1
+		},
+		"LP Security Operative": {
+			"outfit": "/datum/outfit/job/nanotrasen/security/lp",
+			"slots": 3
+		},
+		"LP Medical Specialist": {
+			"outfit": "/datum/outfit/job/nanotrasen/doctor/lp",
+			"slots": 1
+		},
+		"LP Survival Specialist": {
+			"outfit": "/datum/outfit/job/nanotrasen/miner",
+			"slots":1
+		}
+	}
+}

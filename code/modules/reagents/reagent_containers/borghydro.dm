@@ -148,6 +148,7 @@ Borg Hypospray
 	reagent_ids = list (/datum/reagent/toxin/acid/fluacid, /datum/reagent/toxin/mutetoxin, /datum/reagent/toxin/cyanide, /datum/reagent/toxin/sodium_thiopental, /datum/reagent/toxin/heparin, /datum/reagent/toxin/lexorin)
 	accepts_reagent_upgrades = FALSE
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/reagent_containers/borghypo/clown
 	name = "laughter injector"
 	desc = "Keeps the crew happy and productive!"
@@ -159,6 +160,7 @@ Borg Hypospray
 	desc = "Keeps the crew so happy they don't work!"
 	reagent_ids = list(/datum/reagent/consumable/superlaughter)
 	accepts_reagent_upgrades = FALSE
+// [CELADON-ADD]
 
 /obj/item/reagent_containers/borghypo/syndicate
 	name = "syndicate cyborg hypospray"

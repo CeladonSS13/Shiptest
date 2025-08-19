@@ -196,6 +196,7 @@
 	uniform = /obj/item/clothing/under/plasmaman/hop
 	gloves = /obj/item/clothing/gloves/color/plasmaman/black
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /datum/outfit/plasmaman/mime
 	name = "Plasmamime"
 
@@ -211,6 +212,7 @@
 	uniform = /obj/item/clothing/under/plasmaman/clown
 	mask = /obj/item/clothing/mask/gas/clown_hat
 	gloves = /obj/item/clothing/gloves/color/plasmaman/clown
+// [/CELADON-ADD]
 
 /datum/outfit/plasmaman/solgov //WS edit sgr
 	name = "Plasmasolgov"

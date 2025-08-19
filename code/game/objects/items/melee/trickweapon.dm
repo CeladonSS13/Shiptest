@@ -30,8 +30,9 @@
 		transform_cooldown_time = (CLICK_CD_MELEE * 0.25), \
 		force_on = active_force, \
 		throwforce_on = active_throwforce, \
+		hitsound_on = hitsound, \
 		attack_verb_on = list("cleave", "swipe", "slash", "chop"), \
-	)
+	)	//add: hitsound_on = hitsound, \ // [CELADON-ADD] - FIXES_SOUND - Фикс бага на звук лазерного меча
 	RegisterSignal(src, COMSIG_TRANSFORMING_ON_TRANSFORM, PROC_REF(on_transform))
 
 /obj/item/melee/cleaving_saw/examine(mob/user)
@@ -45,7 +46,10 @@
 	user.changeNext_move(CLICK_CD_MELEE * 0.25)
 	if(user)
 		balloon_alert(user, "[active ? "opened" : "closed"] [src]")
-	playsound(user, 'sound/magic/clockwork/fellowship_armory.ogg', 35, TRUE, frequency = 90000 - (active * 30000))
+// [CELADON-EDIT] - FIXES_SOUND - Изменены звуки раскрытия/закрытия
+//	playsound(user, 'sound/magic/clockwork/fellowship_armory.ogg', 35, TRUE, frequency = 90000 - (active * 30000))
+	playsound(user, active ? 'mod_celadon/_storge_sounds/sound/weapons/cleaving_saw_open.ogg' : 'mod_celadon/_storge_sounds/sound/weapons/cleaving_saw_close.ogg', 35, TRUE, frequency = 90000 - (active * 30000))
+// [/CELADON-EDIT]
 	return COMPONENT_NO_DEFAULT_MESSAGE
 
 /obj/item/melee/cleaving_saw/melee_attack_chain(mob/user, atom/target, params)

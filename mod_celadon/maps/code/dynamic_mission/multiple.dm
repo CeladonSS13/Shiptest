@@ -1,40 +1,40 @@
 /datum/mission/ruin/multiple/moonshine_crates
-	name = "Retrieve Booze"
-	desc = "So... Uh.. I'm looking for someone to go pick up the alcohol I bought from a local brewer. They said they deliver - but it's been like 3 weeks, and I really need this for a party... Can you go and pick it up from them?"
-	author = "Guy Raelman"
-	faction = /datum/faction/independent
-	value = 1750
-	mission_limit = 1
-	setpiece_item = /obj/item/storage/bottles/moonshine/sealed
-	specific_item = FALSE
-	required_count = 3
+	name = "Доставьте Выпивку"
+	desc = "Э-э-э... Собственно, мне нужен кто-то, кто может достать выпивку у местного поставщика. Слетайте к ним и привезите её сюда. Они говорили, что сами доставят её, но вот уже три недели прошло, а выпивка мне всё ещё нужна... Вечеринка у меня намечается, понимаете?"
+	// author = "Guy Raelman"
+	// faction = /datum/faction/independent
+	// value = 1750
+	// mission_limit = 1
+	// setpiece_item = /obj/item/storage/bottles/moonshine/sealed
+	// specific_item = FALSE
+	// required_count = 3
 
 /datum/mission/ruin/multiple/moonshine_crates/distillery
-	name = "Assess and Retrieve Booze Supply"
-	desc = "One of the main suppliers of my store's moonshine has stopped shipping out our orders, and we still have several outstanding! Find our sealed crates of booze and bring them back."
-	author = "Tallymere Party Store"
-	mission_limit = 1
-	value = 2500
+	name = "Найдите и Верните Поставку Алкоголя"
+	desc = "Один из главных поставщиков самогона для нашего магазина перестал подвозить заказы, а нам ведь что-то да нужно продавать! Найдите запечатанные коробки алкашки и доставьте их к нам."
+	// author = "Tallymere Party Store"
+	// mission_limit = 1
+	// value = 2500
 
 /* Aurora wrote these */
 
 /datum/mission/ruin/multiple/notes
-	name = "recover research notes"
-	desc = "Hello, on behalf of Cybersun Biodynamics, we are offering an active bounty on the return of the research notes of Dr. Margret Kithin, located in a former base of operations of which we lost contact with in recent years. Last we saw, the facility had been claimed by pirate elements, who seemed keen on desecrating the facility. We only care about our research being returned."
-	faction = /datum/faction/syndicate/cybersun
-	value = 8000
-	mission_limit = 1
-	setpiece_item = /obj/item/documents/syndicate/cybersun/biodynamics
-	required_count = 2
+	name = "Верните Исследовательские Работы"
+	desc = "Доброго времени суток. Cybersun Biodynamics требуется подрядчик, готовый вернуть исследовательские работы доктора Margret Kithin. Работы распологаются на бывшей оперативной базе, от которой не было вестей уже несколько лет. По последним данным, базу заняли пиратские группировки, которые никак не заинтересованы в поддержании адекватного состояния базы. Единственное, чего мы хотим - доставка утерянных документов их законному владельцу."
+	// faction = /datum/faction/syndicate/cybersun
+	// value = 8000
+	// mission_limit = 1
+	// setpiece_item = /obj/item/documents/syndicate/cybersun/biodynamics
+	// required_count = 2
 
 /datum/mission/ruin/multiple/e11_stash
-	name = "recover a stash of Eoehoma weapons"
-	desc = "My first mate found an Eoehoma document detailing a production plant for energy weapons in the sector, we'll pay well if you can recover and deliver 6 guns back to us."
-	faction = /datum/faction/independent
-	value = 2750
-	mission_limit = 1
-	setpiece_item = /obj/item/gun/energy/e_gun/e11
-	required_count = 6
+	name = "Доставьте Пачку Оружия 'Eoehoma'"
+	desc = "Мой добрый напарник нашёл документы Eoehoma, в которых сообщается о месторасположении предприятия по производству энергооружия. Мы щедро вознаградим того, кто доставит нам 6 энергопушек с вышеупомянутого предприятия."
+	// faction = /datum/faction/independent
+	// value = 2750
+	// mission_limit = 1
+	// setpiece_item = /obj/item/gun/energy/e_gun/e11
+	// required_count = 6
 
 // СМ. -> code/datums/ruins/whitesands.dm
 // /datum/mission/ruin/multiple/e11_stash/can_turn_in(atom/movable/item_to_check)

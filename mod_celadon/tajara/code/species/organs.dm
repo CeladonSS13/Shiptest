@@ -34,12 +34,13 @@
 
 /obj/item/organ/eyes/tajara
 	name = "Tajara eyes"
-	icon = 'mod_celadon/_storge_icons/icons/tajara/tajara_organs.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/tajara/tajara_organs.dmi'
 	icon_state = "night_eyes_off"
 	desc = "Some eyes"
 	actions_types = list(/datum/action/item_action/organ_action/toggle)
 	var/active = FALSE
 	var/current_lighting_alpha = null
+	flash_protect = FLASH_PROTECTION_SENSITIVE	// CELADON_BALANCE_SPECIES - Для баланса, глаза стали чувствительными
 
 /obj/item/organ/eyes/tajara/Initialize()
 	current_lighting_alpha = lighting_alpha

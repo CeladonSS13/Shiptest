@@ -1,8 +1,8 @@
 /obj/item/passport
 	name = "passport"
 	desc = "This is an electronic passport that contains all open information about owner."
-	icon = 'mod_celadon/_storge_icons/icons/obj/passport.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/obj/passport.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/passport.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/misc/passport.dmi'
 	icon_state = "passport"
 	item_state = "passport"
 	w_class = WEIGHT_CLASS_SMALL

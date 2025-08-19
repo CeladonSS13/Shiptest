@@ -32,7 +32,7 @@
 /area/ship/general/engineering
 	name = "Engineering"
 	icon_state = "eng"
-	ambientsounds = ENGINEERING
+	ambientsounds = AMBIENCE_ENGI
 	lighting_colour_tube = "#ffce93"
 	lighting_colour_bulb = "#ffbc6f"
 	sound_environment = SOUND_AREA_LARGE_ENCLOSED
@@ -60,7 +60,7 @@
 /area/ship/general/medical
 	name = "Medbay 1"
 	icon_state = "med_1"
-	ambientsounds = MEDICAL
+	ambientsounds = AMBIENCE_MEDICAL
 	lighting_colour_tube = "#e7f8ff"
 	lighting_colour_bulb = "#d5f2ff"
 	min_ambience_cooldown = 90 SECONDS

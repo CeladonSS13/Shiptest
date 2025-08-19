@@ -98,12 +98,8 @@
 	icon = 'icons/effects/ore_visuals.dmi'
 	appearance_flags = TILE_BOUND
 	duration = 35
-	// [CELADON-EDIT] - RETURN_CONTENT
-	// pixel_x = 0
-	// pixel_y = 0	// ORIGINAL
-	pixel_x = -224
-	pixel_y = -224
-	// [/CELADON-EDIT]
+	pixel_x = 0
+	pixel_y = 0
 
 /obj/effect/temp_visual/mining_overlay/Initialize()
 	. = ..()

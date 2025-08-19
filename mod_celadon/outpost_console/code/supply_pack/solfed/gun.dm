@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/solfed/gun
-	group = "Guns"
+	category = "Guns"
 
 /datum/supply_pack/faction/solfed/gun/pistole_c
 	name = "Solar Pistole C"
@@ -36,7 +36,7 @@
 
 /datum/supply_pack/faction/solfed/gun/vector
 	name = "Vector Carbine"
-	desc = "Contains a classic automatic carbine from earth, solar system. Chambered in 9mm."
+	desc = "Contains a classic automatic carbine from earth, solar system. Chambered in 9x18mm."
 	contains = list(/obj/item/storage/guncase/vector)
 	cost = 3500
 

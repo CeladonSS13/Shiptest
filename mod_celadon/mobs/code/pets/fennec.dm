@@ -1,9 +1,9 @@
 /mob/living/simple_animal/pet/fox/fennec
 	name = "Red"
 	desc = "It's a fennec!"
-	icon = 'mod_celadon/_storge_icons/icons/mobs/pets.dmi'
-	held_lh = 'mod_celadon/_storge_icons/icons/mobs/animals_held_lh.dmi'
-	held_rh = 'mod_celadon/_storge_icons/icons/mobs/animals_held_rh.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets.dmi'
+	held_lh = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets_held_lh.dmi'
+	held_rh = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets_held_rh.dmi'
 	icon_state = "fennec"
 	icon_living = "fennec"
 	icon_dead = "fennec_dead"

@@ -64,6 +64,14 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 	if(prefs.hearted)
 		var/datum/asset/spritesheet/sheet = get_asset_datum(/datum/asset/spritesheet/chat)
 		keyname = "[sheet.icon_tag("emoji-heart")][keyname]"
+	// [CELADON-ADD] - CELADON_DONATE / Значения GLOB.OOC_COLOR были заменены на COLOR_OOC для возможности замены цвета для donator_tier.
+	var/COLOR_OOC = GLOB.OOC_COLOR
+	if(donator.donator_tier > 0)
+		var/icon/donator_icon = icon('mod_celadon/_storge_icons/icons/assets/vip/ooc_icon.png')
+		keyname = "[icon2html(donator_icon, world)] " + "[keyname]"
+	if(donator.donator_tier > 1)
+		COLOR_OOC = "CC008C"
+	// [/CELADON-ADD]
 	//The linkify span classes and linkify=TRUE below make ooc text get clickable chat href links if you pass in something resembling a url
 	for(var/client/C in GLOB.clients)
 		if(C.prefs.chat_toggles & CHAT_OOC)
@@ -76,17 +84,17 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 					else
 						to_chat(C, span_adminobserverooc("[span_prefix("OOC:")] <EM>[keyname][holder.fakekey ? "/([holder.fakekey])" : ""]:</EM> <span class='message linkify'>[msg]</span>"), MESSAGE_TYPE_OOC)
 				else
-					if(GLOB.OOC_COLOR)
-						to_chat(C, span_oocplain("<font color='[GLOB.OOC_COLOR]'><b>[span_prefix("OOC:")] <EM>[holder.fakekey ? holder.fakekey : key]:</EM> <span class='message linkify'>[msg]</span></b></font>"), MESSAGE_TYPE_OOC)
+					if(COLOR_OOC)
+						to_chat(C, span_oocplain("<font color='[COLOR_OOC]'><b>[span_prefix("OOC:")] <EM>[holder.fakekey ? holder.fakekey : key]:</EM> <span class='message linkify'>[msg]</span></b></font>"), MESSAGE_TYPE_OOC)
 					else
 						to_chat(C, span_ooc("[span_prefix("OOC:")] <EM>[holder.fakekey ? holder.fakekey : key]:</EM> <span class='message linkify'>[msg]</span>"), MESSAGE_TYPE_OOC)
 
 			else if(!(key in C.prefs.ignoring))
-				if(GLOB.OOC_COLOR)
+				if(COLOR_OOC)
 					if(check_mentor())
 						to_chat(C, span_oocplain("<font color='["#00b40f"]'><b>[span_prefix("OOC:")] <EM>[keyname]:</EM> <span class='message linkify'>[msg]</span></b></font>"), MESSAGE_TYPE_OOC)
 					else
-						to_chat(C, span_oocplain("<font color='[GLOB.OOC_COLOR]'><b>[span_prefix("OOC:")] <EM>[keyname]:</EM> <span class='message linkify'>[msg]</span></b></font>"), MESSAGE_TYPE_OOC)
+						to_chat(C, span_oocplain("<font color='[COLOR_OOC]'><b>[span_prefix("OOC:")] <EM>[keyname]:</EM> <span class='message linkify'>[msg]</span></b></font>"), MESSAGE_TYPE_OOC)
 				else
 					to_chat(C, span_ooc("[span_prefix("OOC:")] <EM>[keyname]:</EM> <span class='message linkify'>[msg]</span>"), MESSAGE_TYPE_OOC)
 

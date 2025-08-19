@@ -1,6 +1,6 @@
 // Simple Animal - Constructs
 /mob/living/simple_animal/hostile/construct
-	icon = 'mod_celadon/_storge_icons/icons/mobs/cult.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/mobs/constructs/cult.dmi'
 	var/glowtheme = "cult"
 
 /////////////////Juggernaut///////////////

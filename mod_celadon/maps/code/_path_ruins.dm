@@ -62,6 +62,18 @@
 	allow_duplicates = FALSE
 	cost = 5
 
+/datum/map_template/ruin/moon
+	prefix = "_maps/_mod_celadon/RandomRuins/MoonRuins/"
+	ruin_type = RUINTYPE_MOON
+	cost = 1
+/datum/map_template/ruin/water
+	prefix = "_maps/_mod_celadon/RandomRuins/WaterRuins/"
+	ruin_type = RUINTYPE_WATER
+	cost = 1
+/datum/map_template/ruin/desert
+	prefix = "_maps/_mod_celadon/RandomRuins/DesertRuins/"
+	ruin_type = RUINTYPE_DESERT
+	cost = 1
 /datum/map_template/ruin/earth_sand
 	prefix = "_maps/_mod_celadon/RandomRuins/EarthSandRuins/"
 	allow_duplicates = FALSE

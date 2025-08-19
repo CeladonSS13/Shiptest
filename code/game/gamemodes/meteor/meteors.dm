@@ -41,9 +41,9 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 
 // [CELADON-ADD] - CELADON_OVERMAP_COLLISION - Это вагабонд насрал
 
-/proc/spawn_meteors_alt(number = 10, list/meteortypes, port, dirc)
+/proc/spawn_meteors_alt(number = 10, list/meteortypes, vlevel, port, dirc)
 	for(var/i = 0; i < number; i++)
-		spawn_meteor(meteortypes, port, 0, dirc)
+		spawn_meteor(meteortypes, vlevel, 0, port, dirc)
 
 // [/CELADON-ADD]
 
@@ -94,7 +94,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	var/threat = 0 // used for determining which meteors are most interesting
 	var/lifetime = DEFAULT_METEOR_LIFETIME
 	var/timerid = null
-	var/list/meteordrop = list(/obj/item/stack/ore/hematite)
+	var/list/meteordrop = list(/obj/item/stack/ore/iron)
 	var/dropamt = 2
 
 /obj/effect/meteor/Move()
@@ -281,7 +281,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	name = "glowing meteor"
 	icon_state = "glowing"
 	heavy = 1
-	meteordrop = list(/obj/item/stack/ore/autunite)
+	meteordrop = list(/obj/item/stack/ore/uranium)
 	threat = 15
 
 
@@ -299,13 +299,20 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	hits = 2
 	heavy = 1
 	meteorsound = 'sound/effects/blobattack.ogg'
-	meteordrop = list(/obj/item/reagent_containers/food/snacks/meat/slab/human, /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant, /obj/item/organ/heart, /obj/item/organ/lungs, /obj/item/organ/tongue, /obj/item/organ/appendix/)
+	meteordrop = list(
+		/obj/item/food/meat/slab/human,
+		/obj/item/food/meat/slab/human/mutant,
+		/obj/item/organ/heart,
+		/obj/item/organ/lungs,
+		/obj/item/organ/tongue,
+		/obj/item/organ/appendix,
+		)
 	var/meteorgibs = /obj/effect/gibspawner/generic
 	threat = 2
 
 /obj/effect/meteor/meaty/Initialize()
 	for(var/path in meteordrop)
-		if(path == /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant)
+		if(path == /obj/item/food/meat/slab/human/mutant)
 			meteordrop -= path
 			meteordrop += pick(subtypesof(path))
 
@@ -331,7 +338,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 //Meaty Ore Xeno edition
 /obj/effect/meteor/meaty/xeno
 	color = "#5EFF00"
-	meteordrop = list(/obj/item/reagent_containers/food/snacks/meat/slab/xeno, /obj/item/organ/tongue/alien)
+	meteordrop = list(/obj/item/food/meat/slab/xeno, /obj/item/organ/tongue/alien)
 	meteorgibs = /obj/effect/gibspawner/xeno
 
 /obj/effect/meteor/meaty/xeno/Initialize()
@@ -405,7 +412,7 @@ GLOBAL_LIST_INIT(meteorsSPOOKY, list(/obj/effect/meteor/pumpkin))
 	hits = 10
 	heavy = 1
 	dropamt = 1
-	meteordrop = list(/obj/item/clothing/head/hardhat/pumpkinhead, /obj/item/reagent_containers/food/snacks/grown/pumpkin)
+	meteordrop = list(/obj/item/clothing/head/hardhat/pumpkinhead, /obj/item/food/grown/pumpkin)
 	threat = 100
 
 /obj/effect/meteor/pumpkin/Initialize()

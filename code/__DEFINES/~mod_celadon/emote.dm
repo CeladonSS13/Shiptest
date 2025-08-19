@@ -55,6 +55,7 @@
 #define EMOTE_SULK 					"Обидеться"
 #define EMOTE_SWAY 					"Качаться на месте"
 #define EMOTE_SWEAR 				"Ругнуться"
+#define EMOTE_GLASSES 				"Поправить очки"
 #define EMOTE_TILT 					"Наклонить голову"
 #define EMOTE_TREMBLE 				"Дрожать в ужасе"
 #define EMOTE_TWITCH 				"Сильно дёргаться"
@@ -161,6 +162,9 @@
 #define EMOTE_SPECIES_WSMILE		"Слегка улыбнуться"
 #define EMOTE_SPECIES_CLACK_SPIDER	"Щёлкнуть жвалами"
 #define EMOTE_SPECIES_SNAP			"Щёлкнуть пальцами"
+#define EMOTE_SPECIES_TAILTHUMP		"Ударить хвостом"
+#define EMOTE_SPECIES_KEPICLICK		"Щёлкнуть клювом"
+#define EMOTE_SPECIES_KEPIWHISTLE	"Свистеть"
 
 
 /// Carbon Emotes

@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/independent/costumes_toys
-	group = "Costumes & Toys"
+	category = "Costumes & Toys"
 
 /datum/supply_pack/faction/independent/costumes_toys/training_toolbox
 	name = "Training Toolbox Crate"

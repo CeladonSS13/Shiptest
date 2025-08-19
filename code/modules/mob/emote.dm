@@ -44,10 +44,6 @@
 /datum/emote/flip
 	key = "flip"
 	key_third_person = "flips"
-	// [CELADON-ADD] - CELADON_COMPONENTS_EMOTE - Эмоции
-	message = "делает кувырок."
-	emote_type = EMOTE_VISIBLE
-	// [/CELADON-ADD]
 	hands_use_check = TRUE
 	mob_type_allowed_typecache = list(/mob/living, /mob/dead/observer)
 	mob_type_ignore_stat_typecache = list(/mob/dead/observer)
