@@ -21,6 +21,7 @@ FIXES_ICON
 FIXES_SOUND
 MECH_WEAPON
 FIXES_CHAMELEON
+FIXES_GOLIATH_TENTACLES
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -158,6 +159,8 @@ FIXES_SOUND
 FIXES_CHAMELEON
 - EDIT: `code/datums/mutations/chameleon.dm` - Чиним крит баг с вечной невидимостью
 
+FIXES_GOLIATH_TENTACLES
+- ADD: `code/modules/mob/living/simple_animal/hostile/mining_mobs/goliath.dm` : Добавляем прок и прверки на жизненный цикл тентакли и её создателя
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
