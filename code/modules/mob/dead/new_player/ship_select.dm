@@ -164,6 +164,14 @@
 		if(!S.is_join_option())
 			continue
 
+		// [CELADON-ADD] - YOU_NOT_SEPARATIST
+		// Проверка ограничений по видам для кораблей фракции Elysium
+		if(S.source_template.faction.name == FACTION_ELYSIUM)
+			var/species_id = user.client?.prefs?.pref_species?.id
+			if(species_id != "human" && species_id != "ipc" && species_id != "lanius")
+				continue
+		// [/CELADON-ADD]
+
 		var/list/ship_jobs = list()
 		for(var/datum/job/job as anything in S.job_slots)
 			var/slots = S.job_slots[job]
@@ -197,6 +205,12 @@
 		var/datum/map_template/shuttle/T = SSmapping.ship_purchase_list[template_name]
 		if(!T.enabled)
 			continue
+
+		// Проверка ограничений по видам для шаблонов кораблей фракции Elysium
+		if(T.faction.name == FACTION_ELYSIUM)
+			var/species_id = user.client?.prefs?.pref_species?.id
+			if(species_id != "human" && species_id != "ipc" && species_id != "lanius")
+				continue
 		var/list/ship_data = list(
 			"name" = T.name,
 			"faction" = T.faction.name,
