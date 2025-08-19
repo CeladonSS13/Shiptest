@@ -284,12 +284,15 @@
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "dK" = (
+/obj/structure/sign/poster/solgov/solgov_logo{
+	pixel_y = 32
+	},
+/obj/structure/sign/poster/solgov/solgov_logo{
+	pixel_y = 32
+	},
 /obj/effect/turf_decal/siding/wood{
 	color = "#D5A66E";
 	dir = 1
-	},
-/obj/structure/sign/solfed{
-	pixel_y = 32
 	},
 /turf/open/floor/wood,
 /area/ship/hallway/central)
@@ -592,16 +595,8 @@
 /obj/structure/fluff/hedge/opaque{
 	pixel_y = 4
 	},
-/obj/structure/railing/wood{
-	dir = 8
-	},
-/obj/structure/railing/wood{
-	dir = 4
-	},
-/obj/structure/railing/wood,
-/obj/structure/railing/wood{
-	dir = 1;
-	layer = 2
+/obj/effect/turf_decal/spline/fancy/wood/three_quarters{
+	layer = 5
 	},
 /turf/open/floor/wood/ebony,
 /area/ship/hallway/central)
@@ -936,6 +931,12 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
+"nf" = (
+/obj/machinery/vending/wallmed{
+	pixel_y = 5
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/medical)
 "nh" = (
 /obj/structure/table/wood,
 /obj/item/toy/cards/deck{
@@ -1252,6 +1253,11 @@
 	pixel_y = 19
 	},
 /obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 1
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "pZ" = (
@@ -1556,12 +1562,12 @@
 /area/ship/crew/canteen/kitchen)
 "su" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/structure/sign/poster/solgov/solgov_logo{
+	pixel_y = 32
+	},
 /obj/effect/turf_decal/siding/wood{
 	color = "#D5A66E";
 	dir = 1
-	},
-/obj/structure/sign/solfed{
-	pixel_y = 32
 	},
 /turf/open/floor/wood,
 /area/ship/hallway/central)
@@ -1578,21 +1584,18 @@
 	dir = 1;
 	pixel_y = -22;
 	pixel_x = -9;
-	id = "bridge";
-	name = "Bridge Windows"
+	id = "bridge"
 	},
 /obj/machinery/button/door{
 	dir = 1;
 	pixel_y = -22;
 	pixel_x = 8;
-	id = "bridgetohallway";
-	name = "Hallway"
+	id = "bridgetohallway"
 	},
 /obj/machinery/button/door{
 	dir = 1;
 	pixel_y = -34;
-	id = "tomahawk_armory";
-	name = "Armory"
+	id = "tomahawk_armory"
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
@@ -2139,10 +2142,9 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 1
 	},
-/obj/machinery/button/door{
-	pixel_y = 22;
-	id = "tomahawk_sleeper";
-	name = "Crew Window"
+/obj/machinery/button{
+	pixel_y = 23;
+	id = "tomahawk_sleeper"
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew)
@@ -2263,12 +2265,6 @@
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
-	},
-/obj/docking_port/mobile{
-	dir = 4;
-	launch_status = 0;
-	preferred_direction = 4;
-	port_direction = 2
 	},
 /turf/open/floor/engine/hull,
 /area/ship/storage)
@@ -2651,13 +2647,13 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
+/obj/structure/sign/poster/solgov/solgov_logo{
+	pixel_y = -32
+	},
 /obj/effect/turf_decal/siding/wood{
 	color = "#D5A66E"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/solfed{
-	pixel_y = -32
-	},
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "Ej" = (
@@ -2668,7 +2664,6 @@
 	color = "#D5A66E";
 	dir = 6
 	},
-/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "En" = (
@@ -2975,7 +2970,7 @@
 	width = 30
 	},
 /turf/template_noop,
-/area/template_noop)
+/area/ship/external)
 "Hh" = (
 /obj/structure/sign/solfed,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -3484,6 +3479,9 @@
 /obj/machinery/atmospherics/pipe/simple/green/hidden/layer1{
 	dir = 6
 	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "MT" = (
@@ -3590,6 +3588,9 @@
 /obj/machinery/atmospherics/pipe/simple/green/hidden/layer1{
 	dir = 10
 	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Os" = (
@@ -3670,9 +3671,6 @@
 /obj/effect/turf_decal/corner/opaque/cybersunteal/border,
 /obj/structure/table/glass,
 /obj/item/storage/case/surgery,
-/obj/machinery/vending/wallmed{
-	pixel_y = -29
-	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "PS" = (
@@ -3957,9 +3955,7 @@
 /obj/effect/turf_decal/siding/wood{
 	color = "#D5A66E"
 	},
-/obj/structure/sign/solfed{
-	pixel_y = -32
-	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "To" = (
@@ -4455,6 +4451,15 @@
 	},
 /turf/open/floor/wood,
 /area/ship/crew)
+"WT" = (
+/obj/docking_port/mobile{
+	dir = 4;
+	launch_status = 0;
+	preferred_direction = 4;
+	port_direction = 2
+	},
+/turf/template_noop,
+/area/ship/external)
 "WY" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -5207,7 +5212,7 @@ En
 Zf
 Zg
 Py
-En
+nf
 PX
 "}
 (22,1,1) = {"
@@ -5486,7 +5491,7 @@ dS
 UY
 nE
 PX
-PX
+WT
 PX
 xp
 Jp
