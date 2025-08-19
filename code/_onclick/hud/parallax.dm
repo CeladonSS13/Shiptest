@@ -5,75 +5,85 @@
 	if (!apply_parallax_pref(viewmob)) //don't want shit computers to crash when specing someone with insane parallax, so use the viewer's pref
 		return
 
-	// if(!length(current_client.parallax_layers_cached))
 	if(!length(current_client.parallax_layers_cached))
 		current_client.parallax_layers_cached = list()
-		// current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1(null, current_client.view)
-		// [CELADON-EDIT] - CELADON_PARALLAX
-		// current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1(null, current_client.view)
-		// current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_2(null, current_client.view)	// CELADON-EDIT - ORIGINAL
-		// Layer 1
-		if(prob(10))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/random/infection(null, current_client.view)
+
+		// [CELADON-EDIT] - CELADON_PARALLAX - Дохера изменений оригинала, смотри историю файла
+		// Layer 1 - Background stars (выбираем случайно 1 из 17)
+		var/list/layer_1_types = list(
+			/atom/movable/screen/parallax_layer/layer_1_0,
+			/atom/movable/screen/parallax_layer/layer_1_1,
+			/atom/movable/screen/parallax_layer/layer_1_2,
+			/atom/movable/screen/parallax_layer/layer_1_3,
+			/atom/movable/screen/parallax_layer/layer_1_4,
+			/atom/movable/screen/parallax_layer/layer_1_5,
+			/atom/movable/screen/parallax_layer/layer_1_6,
+			/atom/movable/screen/parallax_layer/layer_1_7,
+			/atom/movable/screen/parallax_layer/layer_1_8,
+			/atom/movable/screen/parallax_layer/layer_1_9,
+			/atom/movable/screen/parallax_layer/layer_1_10,
+			/atom/movable/screen/parallax_layer/layer_1_11,
+			/atom/movable/screen/parallax_layer/layer_1_12,
+			/atom/movable/screen/parallax_layer/layer_1_13,
+			/atom/movable/screen/parallax_layer/layer_1_14,
+			/atom/movable/screen/parallax_layer/layer_1_15,
+			/atom/movable/screen/parallax_layer/layer_1_16
+		)
+		var/selected_layer_1 = pick(layer_1_types)
+		var/atom/movable/screen/parallax_layer/layer_1 = new selected_layer_1(null, current_client.view)
+		layer_1.alpha = 200
+		current_client.parallax_layers_cached += layer_1
+
+		// Layer 2 - Nebulae
+		var/list/layer_2_configs = list(
+			list("type" = /atom/movable/screen/parallax_layer/layer_2, "chance" = 20, "alpha" = 150),
+			list("type" = /atom/movable/screen/parallax_layer/layer_2_1, "chance" = 10, "alpha" = 150),
+			list("type" = /atom/movable/screen/parallax_layer/layer_2_2, "chance" = 5, "alpha" = 150),
+			list("type" = /atom/movable/screen/parallax_layer/layer_2_3, "chance" = 30, "alpha" = 150),
+			list("type" = /atom/movable/screen/parallax_layer/layer_2_4, "chance" = 30, "alpha" = 150)
+		)
+		for(var/i in 1 to length(layer_2_configs))
+			var/list/config = layer_2_configs[i]
+			var/chance_val = config["chance"]
+			if(prob(chance_val))
+				var/layer_type = config["type"]
+				var/atom/movable/screen/parallax_layer/new_layer = new layer_type(null, current_client.view)
+				new_layer.alpha = config["alpha"]
+				current_client.parallax_layers_cached += new_layer
+
+		// Layer 3 - Foreground
+		var/list/layer_3_configs = list(
+			list("type" = /atom/movable/screen/parallax_layer/layer_3, "chance" = 30, "alpha" = 255),
+			list("type" = /atom/movable/screen/parallax_layer/layer_3_1, "chance" = 30, "alpha" = 255),
+			list("type" = /atom/movable/screen/parallax_layer/layer_3_2, "chance" = 30, "alpha" = 255)
+		)
+		for(var/i in 1 to length(layer_3_configs))
+			var/list/config = layer_3_configs[i]
+			var/chance_val = config["chance"]
+			if(prob(chance_val))
+				var/layer_type = config["type"]
+				var/atom/movable/screen/parallax_layer/new_layer = new layer_type(null, current_client.view)
+				new_layer.alpha = config["alpha"]
+				current_client.parallax_layers_cached += new_layer
+
+		// Layer 4 - Random objects (выбираем случайно 1 из random слоев)
+		var/list/layer_4_types = list(
+			/atom/movable/screen/parallax_layer/random,
+			/atom/movable/screen/parallax_layer/random/infection,
+			/atom/movable/screen/parallax_layer/random/gas,
+			/atom/movable/screen/parallax_layer/random/trash,
+			/atom/movable/screen/parallax_layer/random/asteroids
+		)
 		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1_0(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1_1(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1_2(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1_3(null, current_client.view)
-		if(prob(25))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1_4(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1_5(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1_6(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1_7(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1_8(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1_9(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1_10(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1_11(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1_12(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1_13(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1_14(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1_15(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1_16(null, current_client.view)
-		// Layer 2
-		if(prob(20))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_2(null, current_client.view)
-		if(prob(10))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_2_1(null, current_client.view)
-		if(prob(5))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_2_2(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_2_3(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_2_4(null, current_client.view)
+			var/selected_layer_4 = pick(layer_4_types)
+			var/atom/movable/screen/parallax_layer/layer_4 = new selected_layer_4(null, current_client.view)
+			layer_4.alpha = 255
+			current_client.parallax_layers_cached += layer_4
 		// [/CELADON-EDIT]
+		// Обязательные слои
 		current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/planet(null, current_client.view)
 		if(SSparallax.random_layer)
 			current_client.parallax_layers_cached += new SSparallax.random_layer
-		// [CELADON-EDIT] - CELADON_PARALLAX
-		// current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_3(null, current_client.view)	// CELADON-EDIT - ORIGINAL
-		// Layer 3
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_3(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_3_1(null, current_client.view)
-		if(prob(30))
-			current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_3_2(null, current_client.view)
-		// [/CELADON-EDIT]
 
 	current_client.parallax_layers = current_client.parallax_layers_cached.Copy()
 
@@ -164,16 +174,21 @@
 		current_client.dont_animate_parallax = world.time + min(animate_time, PARALLAX_LOOP_TIME)
 		animatedir = current_client.parallax_movedir
 
+	// [CELADON-ADD] - CELADON_PARALLAX
+	var/size = 480
+	if(current_client.prefs && current_client.prefs.parallax_quality == PARALLAX_QUALITY_HIGH)
+		size = 960
+	// [/CELADON-ADD]
 	var/matrix/newtransform
 	switch(animatedir)
 		if(NORTH)
-			newtransform = matrix(1, 0, 0, 0, 1, 480)
+			newtransform = matrix(1, 0, 0, 0, 1, size)		// [CELADON-EDIT] - CELADON_PARALLAX - matrix(1, 0, 0, 0, 1, 480)
 		if(SOUTH)
-			newtransform = matrix(1, 0, 0, 0, 1,-480)
+			newtransform = matrix(1, 0, 0, 0, 1, -size)		// [CELADON-EDIT] - CELADON_PARALLAX - matrix(1, 0, 0, 0, 1,-480)
 		if(EAST)
-			newtransform = matrix(1, 0, 480, 0, 1, 0)
+			newtransform = matrix(1, 0, size, 0, 1, 0)		// [CELADON-EDIT] - CELADON_PARALLAX - matrix(1, 0, 480, 0, 1, 0)
 		if(WEST)
-			newtransform = matrix(1, 0,-480, 0, 1, 0)
+			newtransform = matrix(1, 0, -size, 0, 1, 0)		// [CELADON-EDIT] - CELADON_PARALLAX - matrix(1, 0,-480, 0, 1, 0)
 
 	var/shortesttimer
 	if(!skip_windups)
@@ -355,6 +370,8 @@
 	layer = 3
 
 /atom/movable/screen/parallax_layer/random
+	icon_state = "empty"	// [CELADON-ADD] - CELADON_PARALLAX
+	alpha = 150				// [CELADON-ADD] - CELADON_PARALLAX
 	blend_mode = BLEND_OVERLAY
 	speed = 3
 	layer = 3
@@ -376,9 +393,12 @@
 // [CELADON-ADD] - CELADON_PARALLAX
 /atom/movable/screen/parallax_layer/random/gas
 	icon_state = "gas"
+	speed = 0.1
 
 /atom/movable/screen/parallax_layer/random/trash
 	icon_state = "trash"
+	alpha = 200
+	speed = 0.3
 
 /atom/movable/screen/parallax_layer/random/infection
 	icon_state = "infection"

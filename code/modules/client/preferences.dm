@@ -200,6 +200,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/clientfps = 60 //WS Edit - Client FPS Tweak
 
 	var/parallax
+	var/parallax_quality = PARALLAX_QUALITY_MEDIUM	// [CELADON-ADD] - CELADON_PARALLAX
 	///Do we show screentips, if so, how big?
 	var/screentip_pref = TRUE
 	///Color of screentips at top of screen
@@ -1347,7 +1348,17 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				else
 					dat += "High"
 			dat += "</a><br>"
-
+			// [CELADON-ADD] - CELADON_PARALLAX
+			dat += "<b>Parallax Quality:</b> <a href='byond://?_src_=prefs;preference=parallax_quality'>"
+			switch (parallax_quality)
+				if (PARALLAX_QUALITY_LOW)
+					dat += "Low (480p)"
+				if (PARALLAX_QUALITY_HIGH)
+					dat += "High (960p)"
+				else
+					dat += "Medium (480p)"
+			dat += "</a><br>"
+			// [/CELADON-ADD]
 			dat += "<b>Set screentip mode:</b> <a href='byond://?_src_=prefs;preference=screentipmode'>[screentip_pref ? "Enabled" : "Disabled"]</a><br>"
 			dat += "<b>Screentip color:</b><span style='border: 1px solid #161616; background-color: [screentip_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=screentipcolor'>Change</a><BR>"
 
@@ -2734,7 +2745,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					parallax = WRAP(parallax - 1, PARALLAX_INSANE, PARALLAX_DISABLE + 1)
 					if (parent && parent.mob && parent.mob.hud_used)
 						parent.mob.hud_used.update_parallax_pref(parent.mob)
-
+				// [CELADON-ADD] - CELADON_PARALLAX
+				if("parallax_quality")
+					parallax_quality = WRAP(parallax_quality + 1, PARALLAX_QUALITY_LOW, PARALLAX_QUALITY_HIGH + 1)
+					if (parent && parent.mob && parent.mob.hud_used)
+						parent.mob.hud_used.update_parallax_pref(parent.mob)
+				// [/CELADON-ADD]
 				if("screentipmode")
 					screentip_pref = !screentip_pref
 
