@@ -1,10 +1,17 @@
-//Я забыл как добавлять просто к родительской залупе
-/obj/item/organ/tongue/tajara
-	actions_types = list(/datum/action/item_action/toggeble/organ_action/feral)
 
-/obj/item/organ/tongue/riol
-	actions_types = list(/datum/action/item_action/toggeble/organ_action/feral)
+/mob/living/carbon/human/proc/bite_feral_switch() // Lizard, Tajara
+	set name = "> Кусаться/Перестать кусаться ►"
+	set category = "Genetic"
+	if(dna.species.attack_verb == ATTACK_EFFECT_BITE)
+		balloon_alert(src, "вы перестаете кусаться")
+		dna.species.attack_verb = initial(dna.species.attack_verb)
+	else
+		balloon_alert(src, "вы готовы укусить кого нибудь!")
+		dna.species.attack_verb = ATTACK_EFFECT_BITE
+	
 
+//Код жалко выбрасывать. Оставлю на память
+/*
 /datum/action/item_action/toggeble/organ_action/feral
 	name = "Кусаться"
 	icon_icon = 'mod_celadon/_storge_icons/icons/actions/actions.dmi'
@@ -37,4 +44,4 @@
 	var/mob/living/carbon/human/f = user
 	f.dna.species.attack_verb = initial(f.dna.species.attack_verb)
 	. = ..()
-	
+*/

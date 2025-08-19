@@ -1773,7 +1773,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			// [CELADON-ADD] CELADON_BITE_FERAL
 			if(ATTACK_EFFECT_BITE)
 				if(user.is_mouth_covered()) //Намордник
-					user.balloon_alert(user, "у вас закрыт рот")
+					user.balloon_alert(user, "рот заблокирован!")
 					return FALSE
 
 				user.do_attack_animation(target, ATTACK_EFFECT_BITE)
@@ -1826,7 +1826,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			target.apply_damage(damage*1.5, STAMINA, affecting, armor_block)
 			log_combat(user, target, "punched")
 		// [CELADON-ADD] CELADON_BITE_FERAL
-		if(user != target && (target.mob_biotypes & MOB_ORGANIC) && (atk_verb == ATTACK_EFFECT_BITE)) //мне уже похуй на качество кода
+		if(user != target && (target.mob_biotypes & MOB_ORGANIC) && (atk_verb == ATTACK_EFFECT_BITE))
 			var/datum/reagents/tasty_meal = new()
 			tasty_meal.add_reagent(/datum/reagent/consumable/nutriment/protein, round(damage/3, 1))
 			tasty_meal.trans_to(user, tasty_meal.total_volume, transfered_by = user, method = INGEST)
