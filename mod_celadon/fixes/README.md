@@ -20,6 +20,7 @@ FIXES_ICON_IN_HAND_MOB
 FIXES_ICON
 FIXES_SOUND
 MECH_WEAPON
+FIXES_CHAMELEON
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -153,6 +154,10 @@ FIXES_ICON
 FIXES_SOUND
 - ADD:	`code/game/objects/items/melee/trickweapon.dm` - Баг звука энерго меча у пилы
 - EDIT:	`code/game/objects/items/melee/trickweapon.dm` - Новые звуки открытия/закрытия пилы
+
+FIXES_CHAMELEON
+- EDIT: `code/datums/mutations/chameleon.dm` - Чиним крит баг с вечной невидимостью
+
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
