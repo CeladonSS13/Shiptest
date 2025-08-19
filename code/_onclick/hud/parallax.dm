@@ -10,27 +10,9 @@
 
 		// [CELADON-EDIT] - CELADON_PARALLAX - Дохера изменений оригинала, смотри историю файла
 		// Layer 1 - Background stars (выбираем случайно 1 из 17)
-		var/list/layer_1_types = list(
-			/atom/movable/screen/parallax_layer/layer_1_0,
-			/atom/movable/screen/parallax_layer/layer_1_1,
-			/atom/movable/screen/parallax_layer/layer_1_2,
-			/atom/movable/screen/parallax_layer/layer_1_3,
-			/atom/movable/screen/parallax_layer/layer_1_4,
-			/atom/movable/screen/parallax_layer/layer_1_5,
-			/atom/movable/screen/parallax_layer/layer_1_6,
-			/atom/movable/screen/parallax_layer/layer_1_7,
-			/atom/movable/screen/parallax_layer/layer_1_8,
-			/atom/movable/screen/parallax_layer/layer_1_9,
-			/atom/movable/screen/parallax_layer/layer_1_10,
-			/atom/movable/screen/parallax_layer/layer_1_11,
-			/atom/movable/screen/parallax_layer/layer_1_12,
-			/atom/movable/screen/parallax_layer/layer_1_13,
-			/atom/movable/screen/parallax_layer/layer_1_14,
-			/atom/movable/screen/parallax_layer/layer_1_15,
-			/atom/movable/screen/parallax_layer/layer_1_16
-		)
-		var/selected_layer_1 = pick(layer_1_types)
-		var/atom/movable/screen/parallax_layer/layer_1 = new selected_layer_1(null, current_client.view)
+		var/layer_1_index = rand(0, 16)
+		var/layer_1_path = text2path("/atom/movable/screen/parallax_layer/layer_1_[layer_1_index]")
+		var/atom/movable/screen/parallax_layer/layer_1 = new layer_1_path(null, current_client.view)
 		layer_1.alpha = 200
 		current_client.parallax_layers_cached += layer_1
 
@@ -67,16 +49,11 @@
 				current_client.parallax_layers_cached += new_layer
 
 		// Layer 4 - Random objects (выбираем случайно 1 из random слоев)
-		var/list/layer_4_types = list(
-			/atom/movable/screen/parallax_layer/random,
-			/atom/movable/screen/parallax_layer/random/infection,
-			/atom/movable/screen/parallax_layer/random/gas,
-			/atom/movable/screen/parallax_layer/random/trash,
-			/atom/movable/screen/parallax_layer/random/asteroids
-		)
 		if(prob(30))
-			var/selected_layer_4 = pick(layer_4_types)
-			var/atom/movable/screen/parallax_layer/layer_4 = new selected_layer_4(null, current_client.view)
+			var/list/random_types = list("", "infection", "gas", "trash", "asteroids")
+			var/selected_type = pick(random_types)
+			var/layer_4_path = selected_type ? text2path("/atom/movable/screen/parallax_layer/random/[selected_type]") : /atom/movable/screen/parallax_layer/random
+			var/atom/movable/screen/parallax_layer/layer_4 = new layer_4_path(null, current_client.view)
 			layer_4.alpha = 255
 			current_client.parallax_layers_cached += layer_4
 		// [/CELADON-EDIT]
