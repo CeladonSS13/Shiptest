@@ -370,6 +370,7 @@
 // [CELADON-ADD] - CELADON_PARALLAX
 /atom/movable/screen/parallax_layer/random/gas
 	icon_state = "gas"
+	blend_mode = BLEND_ADD
 	speed = 0.1
 
 /atom/movable/screen/parallax_layer/random/trash
@@ -379,6 +380,7 @@
 
 /atom/movable/screen/parallax_layer/random/infection
 	icon_state = "infection"
+	blend_mode = BLEND_ADD
 	speed = 0.6
 	layer = 1
 
