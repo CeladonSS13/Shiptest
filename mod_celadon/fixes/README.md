@@ -22,6 +22,8 @@ FIXES_SOUND
 MECH_WEAPON
 FIXES_CHAMELEON
 FIXES_GOLIATH_TENTACLES
+FIXES_SHIP_LOGIN_DOUBLE_NAME
+FIXES_WETHIDE
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -161,6 +163,12 @@ FIXES_CHAMELEON
 
 FIXES_GOLIATH_TENTACLES
 - ADD: `code/modules/mob/living/simple_animal/hostile/mining_mobs/goliath.dm` : Добавляем прок и прверки на жизненный цикл тентакли и её создателя
+FIXES_SHIP_LOGIN_DOUBLE_NAME
+- ADD: `code/modules/mob/dead/new_player/ship_select.dm` : Поднимаем проверку на одинаковые имена ДО создания корабля, чтобы избежать спавна изолированного корабля
+
+FIXES_WETHIDE
+- EDIT: `code/modules/food_and_drinks/kitchen_machinery/smartfridge.dm` : Заменен устаревший метод `update_icon()` на `update_appearance()`
+- EDIT: `code/game/objects/items/stacks/sheets/leather.dm` : Исправлен неправильный путь класса. Изменено `/obj/item/stack/sheet/leather/wetleather/Initialize` на `/obj/item/stack/sheet/wethide/Initialize`. Это позволяет мокрой коже правильно добавить элемент `dryable` при инициализации
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
