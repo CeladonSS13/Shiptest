@@ -195,3 +195,10 @@
 	/// Used by SSserver_maint to detect if a client is newly AFK.
 	var/last_seen_afk = 0
 
+// [CELADON-ADD] - ADMIN-PANEL - Black Reality
+	/// Last Admin Verbs used
+	var/list/last_verbs_used = list()
+
+	/// Literally Admin Verbs Menu
+	var/datum/admin_menu/admin_menu
+// [/CELADON-ADD]
