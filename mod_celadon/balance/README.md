@@ -20,6 +20,7 @@ ID мода:
 	CELADON_BALANCE_OVERMAP_EVENTS
 	CELADON_BALANCE_SPECIES
 	BALLISTIC_SHIELD
+	YOU_NOT_SEPARATIST
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов. Добавлены
@@ -126,6 +127,9 @@ ADD: `code/game/objects/items/storage/belt.dm` : Добавлен новый ф�
 
 CELADON_BALANCE_CHISEL
 ADD: `code/game/objects/items/tools/chisel.dm` : видоизменяем долото делая его нормальным
+
+YOU_NOT_SEPARATIST
+ADD: `code/modules/mob/dead/new_player/ship_select.dm` : Добавляем сокрытие определенных кораблей для определенных видов
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
