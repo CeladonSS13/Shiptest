@@ -107,15 +107,18 @@
 		// 		C.link_console(src, usr)//rather than in beacon's Initialize(), we can assign the computer to the beacon by reusing this proc)
 		// 		printed_beacons++//printed_beacons starts at 0, so the first one out will be called beacon # 1
 		// 		beacon.name = "Supply Pod Beacon #[printed_beacons]" // NEEDS_TO_FIX_ALARM!
-		if("add")
+		//if("add")
+		if("purchase")
+			var/list/purchasing = params["cart"]
+			var/total_cost = text2num(params["total"])
 			var/area/current_area = get_area(src)
 			var/datum/supply_pack/pack = SSshuttle.supply_packs[text2path(params["id"])]
 			if(!pack || !charge_account?.has_money(pack.cost) || !istype(current_area))
 				playsound(src, 'sound/machines/buzz-sigh.ogg', 50, TRUE)
-				if(!charge_account?.has_money(pack.cost) && message_cooldown <= world.time)
-					say("ERROR: Infufficient funds! Transaction canceled.")
+				if(!charge_account.adjust_money(-total_cost, CREDIT_LOG_CARGO))
+					say("ERROR: Insufficent funds! Transaction canceled.")
 					message_cooldown = world.time + 5 SECONDS
-				return
+					return
 
 			var/turf/landing_turf
 			// if(!isnull(beacon) && use_beacon) // prioritize beacons over landing in cargobay // NEEDS_TO_FIX_ALARM!
@@ -145,7 +148,7 @@
 			// note that, because of CHECK_TICK above, we aren't sure if we can
 			// afford the pack, even though we checked earlier. luckily adjust_money
 			// returns false if the account can't afford the price
-			if(landing_turf && charge_account.adjust_money(-pack.cost))
+			if(landing_turf && charge_account.adjust_money(-total_cost))
 				var/name = "*None Provided*"
 				var/rank = "*None Provided*"
 				if(ishuman(usr))
@@ -157,6 +160,8 @@
 					rank = "Silicon"
 				var/datum/supply_order/SO = new(pack, name, rank, usr.ckey, "")
 				new /obj/effect/pod_landingzone(landing_turf, podType, SO)
+				playsound(src, 'sound/machines/twobeep_high.ogg', 50, TRUE)
+				say("Order incoming!")
 				update_appearance() // ??????????????????
 				return TRUE
 
