@@ -21,7 +21,7 @@
 
 /datum/supply_pack/faction/inteq/magazine/co9mm_mag
 	name = "Commisioner pistol magazine"
-	desc = "A 12-round double-stack 9x18mm magazine for Commander pistols. These rounds do okay damage, but struggle against armor."
+	desc = "Contains a 9x18mm magazine for Commander pistols, with a capacity of 12 rounds. These rounds do okay damage, but struggle against armor."
 	contains = list(/obj/item/ammo_box/magazine/co9mm/empty)
 	cost = 150
 
