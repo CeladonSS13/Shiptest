@@ -596,6 +596,9 @@ SUBSYSTEM_DEF(overmap)
 		QUADRANT_MAP_SIZE
 	)
 
+	// [CELADON-ADD] - CELADON_FIXES
+	dynamic_datum.stop_countdown()
+	// [/CELADON-ADD]
 	vlevel.reserve_margin(QUADRANT_SIZE_BORDER)
 
 	mapgen.pre_generation(dynamic_datum)

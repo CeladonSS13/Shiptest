@@ -25,6 +25,22 @@
 	)
 //Прочее
 	var/obj/item/ammo_box/magazine/g36/sh/alternate_magazine
+
+	// Attachments
+	valid_attachments = SOLAR_ATTACHMENTS
+	slot_available = list(
+		ATTACHMENT_SLOT_MUZZLE = 1,
+		ATTACHMENT_SLOT_RAIL = 1,
+		ATTACHMENT_SLOT_SCOPE = 1,
+	)
+
+	// Overlay offsets for 48x32 icon
+	slot_offsets = list(
+		ATTACHMENT_SLOT_MUZZLE = list("x" = 42, "y" = 19),
+		ATTACHMENT_SLOT_RAIL   = list("x" = 33, "y" = 16),
+		ATTACHMENT_SLOT_SCOPE  = list("x" = 16, "y" = 26),
+	)
+
 NO_MAG_GUN_HELPER(automatic/assault/g36sh)
 
 /obj/item/gun/ballistic/automatic/assault/g36sh/inteq
@@ -61,6 +77,22 @@ NO_MAG_GUN_HELPER(automatic/assault/g36sh/inteq)
 		/obj/item/ammo_box/magazine/g36, /obj/item/ammo_box/magazine/g36/sh, /obj/item/ammo_box/magazine/g36/drum
 	)
 	var/obj/item/ammo_box/magazine/g36/alternate_magazine
+
+	// Attachments
+	valid_attachments = SOLAR_ATTACHMENTS
+	slot_available = list(
+		ATTACHMENT_SLOT_MUZZLE = 1,
+		ATTACHMENT_SLOT_RAIL = 1,
+		ATTACHMENT_SLOT_SCOPE = 1,
+	)
+
+	// Overlay offsets for 48x32 icon
+	slot_offsets = list(
+		ATTACHMENT_SLOT_MUZZLE = list("x" = 46, "y" = 19),
+		ATTACHMENT_SLOT_RAIL   = list("x" = 33, "y" = 16),
+		ATTACHMENT_SLOT_SCOPE  = list("x" = 16, "y" = 26),
+	)
+
 NO_MAG_GUN_HELPER(automatic/assault/g36)
 
 // /obj/item/gun/ballistic/automatic/assault/g36/no_mag
