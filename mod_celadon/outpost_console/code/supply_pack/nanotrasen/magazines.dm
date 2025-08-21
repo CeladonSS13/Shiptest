@@ -19,7 +19,7 @@ MARK: VI
 
 /datum/supply_pack/faction/nanotrasen/magazine/wt550_mag
 	name = "WT-550 Auto Rifle Magazine Crate"
-	desc = "Contains a 4.6x30mm magazine for the WT-550 Auto Rifle, with a capacity of 20 rounds."
+	desc = "Contains a 4.6x30mm magazine for the WT-550 Auto Rifle, with a capacity of 30 rounds."
 	cost = 300
 	contains = list(/obj/item/ammo_box/magazine/wt550m9/empty)
 
