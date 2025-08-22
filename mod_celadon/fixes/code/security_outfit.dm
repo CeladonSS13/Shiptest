@@ -1,4 +1,6 @@
-//Модуль для фикса сломанных оффовских security одежд
+//Модуль для фикса сломанных оффовских security одежд.
+//Путь до файла - code/modules/clothing/under/jobs/security.dm
+//Путь до атласа оффов - /icons/mob/clothing/under/security.dmi
 
 /obj/item/clothing/under/rank/security/officer/skirt
 	roll_sleeves = FALSE
@@ -60,3 +62,9 @@
 
 /obj/item/clothing/under/rank/security/officer/camo
 	roll_sleeves = FALSE
+
+
+//Отдельный фикс конкретного предмета
+
+/obj/item/clothing/under/utility/skirt
+	roll_down = FALSE
