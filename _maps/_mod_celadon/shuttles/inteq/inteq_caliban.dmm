@@ -34,7 +34,7 @@
 /obj/item/reagent_containers/food/drinks/waterbottle,
 /obj/item/reagent_containers/food/drinks/waterbottle,
 /obj/item/reagent_containers/food/drinks/waterbottle,
-/obj/effect/mapping_helpers/crate_shelve,
+/obj/structure/crate_shelf/built,
 /turf/open/floor/pod,
 /area/ship/security/weapons_control)
 "ag" = (
@@ -201,7 +201,7 @@
 /obj/structure/sign/warning/explosives/alt{
 	pixel_y = -32
 	},
-/obj/effect/mapping_helpers/crate_shelve,
+/obj/structure/crate_shelf/built,
 /turf/open/floor/pod,
 /area/ship/security/weapons_control)
 "bI" = (
@@ -545,7 +545,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/office)
 "eu" = (
-/turf/open/floor/plasteel/stairs/rockplanet{
+/turf/open/floor/plasteel/stairs{
 	dir = 8
 	},
 /area/ship/bridge)
@@ -2005,9 +2005,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -2090,10 +2087,6 @@
 /obj/item/paper_bin,
 /obj/item/pen/fountain,
 /obj/structure/table/reinforced,
-/obj/effect/turf_decal/trimline/opaque/yellow/line{
-	layer = 2.040;
-	dir = 10
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
@@ -2101,6 +2094,10 @@
 /obj/item/bodycamera{
 	pixel_x = 7;
 	pixel_y = 8
+	},
+/obj/effect/turf_decal/trimline/opaque/yellow/line{
+	layer = 2.040;
+	dir = 9
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
@@ -5236,7 +5233,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
 /turf/open/floor/plasteel/mono/dark,
