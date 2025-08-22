@@ -28,18 +28,22 @@
 #define VOX_UNIFORM_PATH 'icons/mob/species/vox/onmob_uniform_vox.dmi'
 #define VOX_BACK_PATH 'icons/mob/species/vox/onmob_back_vox.dmi'
 #define VOX_SHOES_PATH 'icons/mob/species/vox/onmob_feet_vox.dmi'
-#define VOX_SUIT_PATH 'icons/mob/species/vox/onmob_suit_vox.dmi'
+// [CELADON-EDIT] -
+//#define VOX_SUIT_PATH 'icons/mob/species/vox/onmob_suit_vox.dmi'
+#define VOX_SUIT_PATH 'mod_celadon/_storge_icons/icons/items/clothing/spec/vox/onmob_suit_vox.dmi'
+// [/CELADON-EDIT]
 #define VOX_EARS_PATH 'icons/mob/species/vox/onmob_ears_vox.dmi'
 #define VOX_MASK_PATH 'icons/mob/species/vox/onmob_mask_vox.dmi'
 #define VOX_NECK_PATH 'icons/mob/species/vox/onmob_neck_vox.dmi'
-#define VOX_HEAD_PATH 'icons/mob/species/vox/onmob_head_vox.dmi'
+// [CELADON-EDIT] -
+//#define VOX_HEAD_PATH 'icons/mob/species/vox/onmob_head_vox.dmi'
+#define VOX_HEAD_PATH 'mod_celadon/_storge_icons/icons/items/clothing/spec/vox/onmob_head_vox.dmi'
+// [/CELADON-EDIT]
 #define VOX_GLOVES_PATH 'icons/mob/species/vox/onmob_hands_vox.dmi'
 #define VOX_GLASSES_PATH 'icons/mob/species/vox/onmob_eyes_vox.dmi'
 #define VOX_BELT_PATH 'icons/mob/species/vox/onmob_belt_vox.dmi'
 // [CELADON-EDIT] - CELADON_UNDERWEAR
-/* CELADON-EDIT - ORIGINAL
-#define VOX_UNDERWEAR_TORSO_PATH 'icons/mob/clothing/underwear/species/vox/underwear_torso_vox.dmi'
-*/
+// #define VOX_UNDERWEAR_TORSO_PATH 'icons/mob/clothing/underwear/species/vox/underwear_torso_vox.dmi'
 #define VOX_UNDERWEAR_TORSO_PATH 'mod_celadon/_storge_icons/icons/items/clothing/underwear/species/vox/underwear_torso_vox.dmi'
 // [/CELADON-EDIT]
 #define VOX_UNDERWEAR_LEGS_PATH 'icons/mob/clothing/underwear/species/vox/underwear_legs_vox.dmi'
@@ -58,11 +62,9 @@
 #define KEPORI_GLOVES_PATH 'icons/mob/species/kepori/onmob_hands_kepori.dmi'
 #define KEPORI_BELT_PATH 'icons/mob/species/kepori/onmob_belt_kepori.dmi'
 // [CELADON-EDIT] - CELADON_UNDERWEAR
-/* CELADON-EDIT - ORIGINAL
-#define KEPORI_UNDERWEAR_TORSO_PATH 'icons/mob/clothing/underwear/species/kepori/underwear_torso_kepori.dmi'
-#define KEPORI_UNDERWEAR_LEGS_PATH 'icons/mob/clothing/underwear/species/kepori/underwear_legs_kepori.dmi'
-#define KEPORI_UNDERWEAR_SOCKS_PATH 'icons/mob/clothing/underwear/species/kepori/underwear_socks_kepori.dmi'
-*/
+//#define KEPORI_UNDERWEAR_TORSO_PATH 'icons/mob/clothing/underwear/species/kepori/underwear_torso_kepori.dmi'
+//#define KEPORI_UNDERWEAR_LEGS_PATH 'icons/mob/clothing/underwear/species/kepori/underwear_legs_kepori.dmi'
+//#define KEPORI_UNDERWEAR_SOCKS_PATH 'icons/mob/clothing/underwear/species/kepori/underwear_socks_kepori.dmi'
 #define KEPORI_UNDERWEAR_TORSO_PATH 'mod_celadon/_storge_icons/icons/items/clothing/underwear/species/kepori/underwear_torso_kepori.dmi'
 #define KEPORI_UNDERWEAR_LEGS_PATH 'mod_celadon/_storge_icons/icons/items/clothing/underwear/species/kepori/underwear_legs_kepori.dmi'
 #define KEPORI_UNDERWEAR_SOCKS_PATH 'mod_celadon/_storge_icons/icons/items/clothing/underwear/species/kepori/underwear_socks_kepori.dmi'
