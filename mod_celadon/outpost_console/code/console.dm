@@ -149,16 +149,7 @@
 			// afford the pack, even though we checked earlier. luckily adjust_money
 			// returns false if the account can't afford the price
 			if(landing_turf && charge_account.adjust_money(-total_cost))
-				var/name = "*None Provided*"
-				var/rank = "*None Provided*"
-				if(ishuman(usr))
-					var/mob/living/carbon/human/H = usr
-					name = H.get_authentification_name()
-					rank = H.get_assignment(hand_first = TRUE)
-				else if(issilicon(usr))
-					name = usr.real_name
-					rank = "Silicon"
-				var/datum/supply_order/SO = new(pack, name, rank, usr.ckey, "")
+				var/datum/supply_order/SO = new(pack, usr.ckey, "")
 				new /obj/effect/pod_landingzone(landing_turf, podType, SO)
 				playsound(src, 'sound/machines/twobeep_high.ogg', 50, TRUE)
 				say("Order incoming!")
