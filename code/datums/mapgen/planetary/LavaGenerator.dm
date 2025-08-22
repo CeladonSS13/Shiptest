@@ -107,12 +107,14 @@
 		/obj/effect/spawner/random/anomaly/lava = 2,
 		/obj/structure/flora/rock/hell = 14,
 		/obj/structure/vein/lavaland = 5,
-		/obj/structure/vein/lavaland/classtwo = 2,
+		/obj/structure/vein/lavaland/classtwo = 4,
+		/obj/structure/vein/lavaland/classtwo/rare = 2,
 		// [CELADON - ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/structure/elite_tumor = 2,
 		// [/CELADON - ADD]
 		/obj/structure/geyser/random = 2,
-		/obj/structure/vein/lavaland/classthree = 1,
+		/obj/structure/vein/lavaland/classthree = 2,
+		/obj/structure/vein/lavaland/classthree/rare = 1,
 		/obj/effect/spawner/random/anomaly/lava = 1,
 		// [CELADON - ADD] - CELADON_RETURN_LANDMINE
 		/obj/effect/spawner/minefield = 1,

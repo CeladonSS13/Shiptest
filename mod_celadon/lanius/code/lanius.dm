@@ -16,7 +16,7 @@
 	species_gibs = "lanius"
 	loreblurb = "The Lanius are a metallic scavenger race, \
 	 whose biological composition somehow drains oxygen from atmosphere."
-	species_eye_path = 'mod_celadon/_storge_icons/icons/lanius/lanius_organs.dmi'
+	species_eye_path = 'mod_celadon/_storge_icons/icons/species/lanius/lanius_organs.dmi'
 	species_traits = list(EYECOLOR, EMOTE_OVERLAY, NOBLOOD, MUTCOLORS, NO_UNDERWEAR, NOHUSK, NO_BONES)
 	inherent_traits = list(TRAIT_NOBREATH, TRAIT_RESISTHEAT,TRAIT_RESISTCOLD,TRAIT_RESISTHIGHPRESSURE,TRAIT_RESISTLOWPRESSURE,TRAIT_NOFIRE,TRAIT_CHUNKYFINGERS,TRAIT_VIRUSIMMUNE,TRAIT_PIERCEIMMUNE,TRAIT_NODISMEMBER,TRAIT_SHOCKIMMUNE,TRAIT_GENELESS)
 	inherent_biotypes = MOB_HUMANOID | MOB_ORGANIC | MOB_MINERAL

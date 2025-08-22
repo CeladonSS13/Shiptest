@@ -232,7 +232,6 @@
 	// Updates the token with the new position.
 	token.abstract_move(OVERMAP_TOKEN_TURF(x, y, current_overmap))
 	SEND_SIGNAL(src, COMSIG_OVERMAP_MOVED, old_x, old_y)
-	SEND_SIGNAL(src, COMSIG_OVERMAP_MOVE_SELF, src)
 	return TRUE
 
 /**
@@ -407,7 +406,7 @@
 	return FALSE
 
 /datum/overmap/ship/controlled/do_hail(mob/living/user, datum/overmap/interact_target)
-	if(!interact_target)
+	if(!interact_target)	//if(!interact_target || interact_target==src)	// [CELADON-EDIT] - CELADON_OVERMAP - SHIP_HAIL_HIMSELF - Возвращаем фичу на сообщение кораблей самим себе
 		return "Invalid Target."
 	var/input = stripped_input(user, "Please choose a message to hail the target with.", "Hailing Vessel")
 	if(!input)

@@ -6,9 +6,10 @@
 
 /obj/item/organ/ears/riol
 	name = "riol ears"
-	icon = 'mod_celadon/_storge_icons/icons/riol/riol_organs.dmi'	//пока такая хурма, но нужно будет сделать уши отдельно от головы и втыкнуть в какой-либо файл
+	icon = 'mod_celadon/_storge_icons/icons/species/riol/riol_organs.dmi'	//пока такая хурма, но нужно будет сделать уши отдельно от головы и втыкнуть в какой-либо файл
 	icon_state = "ears"					//когда будут уши в каком-то файле, тогда и поменяешь
 	damage_multiplier = 2
+	bang_protect = -0.2	// CELADON_BALANCE_SPECIES - Снижаем устойчивость к громким звукам на 20%
 
 /obj/item/organ/ears/riol/Insert(mob/living/carbon/human/ear_owner, special = 0, drop_if_replaced = TRUE)
 	..()
@@ -34,7 +35,7 @@
 
 /obj/item/organ/eyes/riol
 	name = "Riol eyes"
-	icon = 'mod_celadon/_storge_icons/icons/riol/riol_organs.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/riol/riol_organs.dmi'
 	icon_state = "eyes"
 	desc = "Some eyes"
 
@@ -47,7 +48,7 @@
 /obj/item/organ/tail/riol
 	name = "\improper Riol tail"
 	desc = "A severed Riol's tail."
-	icon = 'mod_celadon/_storge_icons/icons/riol/riol_lang.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/riol/riol_lang.dmi'
 	icon_state = "vulptail"
 	color = "#661111"
 	tail_type = "Long"

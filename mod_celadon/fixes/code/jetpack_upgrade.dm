@@ -1,7 +1,7 @@
 /obj/item/tank/jetpack/suit
 	name = "hardsuit jetpack upgrade"
 	desc = "A modular, compact set of thrusters designed to integrate with a hardsuit. It is fueled by a tank inserted into the suit's storage compartment."
-	icon = 'mod_celadon/_storge_icons/icons/obj/jetpack_suit/items.dmi' //Changed item icon
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/jetpackitems.dmi' //Changed item icon
 	icon_state = "jetpack_upgrade"
 	item_state = "jetpack-black"
 	w_class = WEIGHT_CLASS_NORMAL
@@ -15,7 +15,7 @@
 /obj/item/tank/jetpack/suit
 	name = "hardsuit jetpack upgrade"
 	desc = "A modular, compact set of thrusters designed to integrate with a hardsuit. It is fueled by a tank inserted into the suit's storage compartment."
-	icon = 'mod_celadon/_storge_icons/icons/obj/jetpack_suit/items.dmi' // Changed item icon
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/jetpackitems.dmi' // Changed item icon
 	icon_state = "jetpack_upgrade"
 	item_state = "jetpack-black"
 	w_class = WEIGHT_CLASS_NORMAL
@@ -30,7 +30,7 @@
 	if(!istype(loc, /obj/item/clothing/suit/space/hardsuit) || !ishuman(loc.loc) || loc.loc != user)
 		return
 	var/mob/living/carbon/human/H = user
-	icon = 'mod_celadon/_storge_icons/icons/obj/jetpack_suit/tank.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/jetpacktank.dmi'
 	icon_state = "jetpack_upgrade-on"
 	tank = H.s_store
 	air_contents = tank.air_contents
@@ -39,7 +39,7 @@
 	..()
 
 /obj/item/tank/jetpack/suit/turn_off(mob/user)
-	icon = 'mod_celadon/_storge_icons/icons/obj/jetpack_suit/tank.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/jetpacktank.dmi'
 	icon_state = "jetpack_upgrade"
 	tank = null
 	air_contents = temp_air_contents

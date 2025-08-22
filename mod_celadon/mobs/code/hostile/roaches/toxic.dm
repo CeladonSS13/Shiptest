@@ -6,7 +6,7 @@
 	icon_aggro = "radioactiveroach_move"
 	icon_dead = "radioactiveroach_dead"
 
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat = 3)
+	butcher_results = list(/obj/item/food/meat/roachmeat = 3)
 	turns_per_move = 1
 	maxHealth = 40
 	health = 40
@@ -45,7 +45,7 @@
 
 /obj/projectile/roach_spit
 	name = "Glowing bile"
-	icon = 'mod_celadon/_storge_icons/icons/mobs/hivemind.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/mobs/roaches.dmi'
 	icon_state = "goo_proj"
 	damage_type = list(BURN = 15)
 	irradiate = 5

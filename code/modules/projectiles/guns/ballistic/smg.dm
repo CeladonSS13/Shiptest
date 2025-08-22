@@ -1,4 +1,5 @@
 /obj/item/gun/ballistic/automatic/smg
+	bad_type = /obj/item/gun/ballistic/automatic/smg
 	show_magazine_on_sprite = TRUE
 
 	burst_size = 2
@@ -27,9 +28,9 @@
 
 	gunslinger_recoil_bonus = 2
 	gunslinger_spread_bonus = 16
-	wear_minor_threshold = 120
-	wear_major_threshold = 360
-	wear_maximum = 600
+	wear_minor_threshold = 240
+	wear_major_threshold = 720
+	wear_maximum = 1200
 
 /obj/item/gun/ballistic/automatic/smg/wt550
 	name = "\improper WT-550 Automatic Rifle"
@@ -47,7 +48,9 @@
 	actions_types = list()
 	show_magazine_on_sprite = TRUE
 	show_magazine_on_sprite_ammo = TRUE
+// [CELADON-ADD] - ADD_SHOW_AMMOCAPACITY_ON_MAGAZINE
 	show_ammo_capacity_on_magazine_sprite = TRUE
+// [/CELADON-ADD]
 	empty_indicator = TRUE
 	manufacturer = MANUFACTURER_NANOTRASEN_OLD
 	fire_sound = 'sound/weapons/gun/smg/smg_heavy.ogg'
@@ -77,11 +80,12 @@
 	name = "\improper SKM-24v"
 	desc = "The SKM-24v was a carbine modification of the SKM-24 during the Frontiersmen War. This, however, is just a shoddy imitation of that carbine, effectively an SKM-24 with a sawed down barrel and a folding wire stock. Can be fired with the stock folded, though accuracy suffers. Chambered in 4.6x30mm."
 
-	icon = 'icons/obj/guns/48x32guns.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/back.dmi'
 	icon_state = "skm_carbine"
 	item_state = "skm_carbine"
-
+	icon = 'icons/obj/guns/manufacturer/hermits/48x32.dmi'
+	lefthand_file = 'icons/obj/guns/manufacturer/hermits/lefthand.dmi'
+	righthand_file = 'icons/obj/guns/manufacturer/hermits/righthand.dmi'
+	mob_overlay_icon = 'icons/obj/guns/manufacturer/hermits/onmob.dmi'
 	fire_sound = 'sound/weapons/gun/rifle/skm_smg.ogg'
 
 	rack_sound = 'sound/weapons/gun/rifle/skm_cocked.ogg'
@@ -169,6 +173,8 @@
 		/obj/item/attachment/foldable_stock/inteq
 	)
 	default_attachments = list(/obj/item/attachment/foldable_stock/inteq)
+
+NO_MAG_GUN_HELPER(automatic/smg/skm_carbine/inteq)
 
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/saber
 	name = "\improper Nanotrasen Saber SMG"

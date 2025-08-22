@@ -1,5 +1,8 @@
+/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
+	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
+
 /datum/supply_pack/tools
-	group = "Tools & Tanks"
+	category = "Tools & Tanks"
 	crate_type = /obj/structure/closet/crate/engineering
 
 /*
@@ -31,12 +34,9 @@
 
 /datum/supply_pack/tools/engigear
 	name = "Engineering Gear Crate"
-	desc = "Contains three toolbelts and 2 sets of meson goggles."
-	cost = 750
+	desc = "Contains one toolbelt and a set of meson goggles."
+	cost = 250
 	contains = list(/obj/item/storage/belt/utility,
-					/obj/item/storage/belt/utility,
-					/obj/item/storage/belt/utility,
-					/obj/item/clothing/glasses/meson/engine,
 					/obj/item/clothing/glasses/meson/engine)
 	crate_name = "engineering gear crate"
 
@@ -50,11 +50,18 @@
 	crate_name = "bodycamera crate"
 
 /datum/supply_pack/tools/assbelt
-	name = "Assault Belt"
+	name = "Assault Belt Crate"
 	desc = "Contains an assault belt, with not one, not two, but six pockets."
-	cost = 500
+	cost = 300
 	contains = list(/obj/item/storage/belt/military/assault)
 	crate_name = "assault belt crate"
+
+/datum/supply_pack/tools/chestrig
+	name = "Chest Rig Crate"
+	desc = "Contains a chest rig, with seven places to store small items."
+	cost = 500
+	contains = list(/obj/item/storage/belt/military)
+	crate_name = "chest rig crate"
 
 /datum/supply_pack/tools/cellcharger
 	name = "Cell Charger Crate"
@@ -71,14 +78,11 @@
 
 /datum/supply_pack/tools/mining
 	name = "Basic Mining Crate"
-	desc = "Contains two pickaxes, two ore bags, and two manual mining scanners."
-	cost = 500 //cheaper to send your legions to war (mining) (also you can just print all this asides the scanners so what's the point anyway)
+	desc = "Contains one miniature pickaxe, an ore bag, and a manual mining scanner."
+	cost = 250 //cheaper to send your legions to war (mining) (also you can just print all this asides the scanners so what's the point anyway)
 	contains = list(
-		/obj/item/pickaxe,
 		/obj/item/pickaxe/mini,
 		/obj/item/storage/bag/ore,
-		/obj/item/storage/bag/ore,
-		/obj/item/mining_scanner,
 		/obj/item/mining_scanner)
 	crate_name = "basic mining crate"
 	faction = /datum/faction/nt/ns_logi
@@ -217,4 +221,6 @@
 	)
 	crate_name = "foam tank crate"
 	crate_type = /obj/structure/closet/crate/large
-	no_bundle = TRUE
+  no_bundle = TRUE
+
+[/CELADON-DELETE] */

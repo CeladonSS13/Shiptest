@@ -422,12 +422,13 @@
 /obj/item/storage/box/ammo/ferropellet,
 /obj/item/storage/box/ammo/ferropellet,
 /obj/item/storage/box/ammo/ferropellet,
-/obj/item/storage/box/ammo/c556mm,
-/obj/item/storage/box/ammo/c556mm,
-/obj/item/storage/box/ammo/c556mm,
 /obj/item/ammo_box/magazine/gauss,
 /obj/item/ammo_box/magazine/gauss,
 /obj/item/ammo_box/magazine/gauss,
+/obj/item/ammo_box/magazine/g36,
+/obj/item/ammo_box/magazine/g36,
+/obj/item/ammo_box/magazine/g36,
+/obj/item/storage/box/ammo/a556_box,
 /turf/open/floor/marble/black,
 /area/ship/security)
 "cY" = (
@@ -609,6 +610,7 @@
 	pixel_x = 0;
 	pixel_y = 32
 	},
+/obj/item/gun/ballistic/automatic/assault/g36,
 /turf/open/floor/marble/black,
 /area/ship/security)
 "fj" = (
@@ -1438,11 +1440,11 @@
 /obj/item/reagent_containers/blood/random,
 /obj/item/reagent_containers/blood/random,
 /obj/item/reagent_containers/blood/random,
-/obj/item/reagent_containers/food/snacks/meat/slab/synthmeat{
+/obj/item/food/meat/slab/synthmeat{
 	pixel_y = 3
 	},
-/obj/item/reagent_containers/food/snacks/meat/slab/synthmeat,
-/obj/item/reagent_containers/food/snacks/meat/slab/synthmeat{
+/obj/item/food/meat/slab/synthmeat,
+/obj/item/food/meat/slab/synthmeat{
 	pixel_y = -3
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line,
@@ -1890,7 +1892,6 @@
 /turf/open/floor/plasteel/strongdark,
 /area/ship/hangar)
 "qj" = (
-/mob/living/simple_animal/bot/cleanbot/cleanbotmk2,
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 1
 	},
@@ -2312,6 +2313,19 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
+/area/ship/hangar)
+"ug" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/mob/living/simple_animal/bot/cleanbot,
+/turf/open/floor/plasteel/strongdark,
 /area/ship/hangar)
 "ui" = (
 /obj/structure/cable{
@@ -3494,19 +3508,19 @@
 /area/ship/engineering/electrical)
 "Fc" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken{
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab/chicken{
 	pixel_x = -4
 	},
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken{
+/obj/item/food/meat/slab/chicken{
 	pixel_x = -4
 	},
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken{
+/obj/item/food/meat/slab/chicken{
 	pixel_x = -4
 	},
 /obj/item/reagent_containers/condiment/flour,
@@ -4140,10 +4154,10 @@
 /area/ship/engineering/electrical)
 "LW" = (
 /obj/structure/table/reinforced/titaniumglass,
-/obj/machinery/fax/nanotrasen,
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 5
 	},
+/obj/machinery/fax/solgov,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "Mo" = (
@@ -5007,6 +5021,9 @@
 /obj/machinery/computer/rdconsole/core{
 	dir = 8
 	},
+/obj/item/research_notes/loot/medium,
+/obj/item/research_notes/loot/medium,
+/obj/item/research_notes/loot/small,
 /turf/open/floor/marble,
 /area/ship/science)
 "UU" = (
@@ -5353,7 +5370,7 @@
 	pixel_x = -3;
 	pixel_y = 6
 	},
-/obj/item/reagent_containers/food/snacks/burger/baconburger{
+/obj/item/food/burger/baconburger{
 	pixel_x = 0;
 	pixel_y = -5;
 	name = "Chicken Bacon Onion burger"
@@ -6399,7 +6416,7 @@ ej
 vl
 uw
 iN
-Vp
+ug
 wj
 ab
 cM

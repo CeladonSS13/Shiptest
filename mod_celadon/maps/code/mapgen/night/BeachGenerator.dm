@@ -106,7 +106,7 @@
 	flora_spawn_chance = 25
 	mob_spawn_list = list(
 		/mob/living/simple_animal/butterfly = 1,
-		/mob/living/simple_animal/chicken/rabbit/normal = 1,
+		/mob/living/simple_animal/chicken/rabbit = 1,
 		/mob/living/simple_animal/mouse = 1,
 		/mob/living/simple_animal/cow = 1,
 		/mob/living/simple_animal/deer = 1
@@ -168,7 +168,7 @@
 	flora_spawn_list = list(/obj/structure/flora/rock/beach = 1, /obj/structure/flora/rock/asteroid = 6)
 	mob_spawn_chance = 1
 	mob_spawn_list = list(
-		/mob/living/simple_animal/hostile/bear/cave = 5,
+		/mob/living/basic/bear/cave = 5,
 		/mob/living/simple_animal/hostile/asteroid/lobstrosity/beach = 1,
 	)
 

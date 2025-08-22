@@ -97,7 +97,7 @@
 		/obj/structure/flora/ash/chilly = 4,
 		/obj/structure/flora/ash/garden/frigid = 2,
 		// [CELADON - ADD] - CELADON_RETURN_LANDMINE
-		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/obj/landmine.dmi'} = 1,
+		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/items/misc/landmine.dmi'} = 1,
 		// [/CELADON - ADD]
 	)
 	flora_spawn_chance = 10
@@ -105,7 +105,7 @@
 	mob_spawn_list = list(
 		/mob/living/simple_animal/hostile/asteroid/wolf/random = 30,
 		/obj/structure/spawner/burrow/ice_planet = 4,
-		/mob/living/simple_animal/hostile/asteroid/polarbear/random = 30,
+		/obj/effect/spawner/random/polar_bear = 30,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow = 25,
 		/mob/living/simple_animal/hostile/asteroid/goldgrub = 10,
 		/mob/living/simple_animal/hostile/asteroid/ice_demon/random = 5,
@@ -119,7 +119,9 @@
 		/obj/structure/spawner/burrow/ice_planet = 80,
 		/obj/structure/vein/ice = 25,
 		/obj/structure/vein/ice/classtwo = 50,
+		/obj/structure/vein/ice/classtwo/rare = 10,
 		/obj/structure/vein/ice/classthree = 10,
+		/obj/structure/vein/ice/classthree/rare = 5,
 		// [CELADON - ADD] - CELADON_RETURN_LANDMINE
 		/obj/effect/spawner/minefield = 2,
 		// [/CELADON - ADD]
@@ -158,7 +160,7 @@
 		/obj/structure/flora/tree/dead = 6,
 		/obj/structure/flora/grass/both = 8,
 		// [CELADON - ADD] - CELADON_RETURN_LANDMINE
-		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/obj/landmine.dmi'} = 1,
+		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/items/misc/landmine.dmi'} = 1,
 		// [/CELADON - ADD]
 	)
 
@@ -169,7 +171,7 @@
 		/obj/structure/flora/grass/both = 6,
 		/obj/structure/flora/tree/dead = 3,
 		// [CELADON - ADD] - CELADON_RETURN_LANDMINE
-		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/obj/landmine.dmi'} = 1,
+		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/items/misc/landmine.dmi'} = 1,
 		// [/CELADON - ADD]
 	)
 
@@ -189,7 +191,7 @@
 	mob_spawn_list = list(
 		/mob/living/simple_animal/hostile/asteroid/wolf/random = 30,
 		/obj/structure/spawner/burrow/ice_planet = 2,
-		/mob/living/simple_animal/hostile/asteroid/polarbear/random = 30,
+		/obj/effect/spawner/random/polar_bear = 30,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow = 25,
 		/mob/living/simple_animal/hostile/asteroid/goldgrub = 10,
 		/mob/living/simple_animal/hostile/asteroid/ice_demon/random = 1,
@@ -213,7 +215,7 @@
 	mob_spawn_chance = 2
 	mob_spawn_list = list(
 		/mob/living/simple_animal/hostile/asteroid/wolf/random = 30,
-		/mob/living/simple_animal/hostile/asteroid/polarbear/random = 30,
+		/obj/effect/spawner/random/polar_bear = 30,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow = 25,
 		/mob/living/simple_animal/hostile/asteroid/goldgrub = 10,
 		/mob/living/simple_animal/hostile/asteroid/ice_demon/random = 1,
@@ -269,7 +271,7 @@
 	mob_spawn_list = list(
 		/mob/living/simple_animal/hostile/asteroid/wolf/random = 30,
 		/obj/structure/spawner/burrow/ice_planet = 4,
-		/mob/living/simple_animal/hostile/asteroid/polarbear/random = 30,
+		/obj/effect/spawner/random/polar_bear = 30,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow = 25,
 		/mob/living/simple_animal/hostile/asteroid/goldgrub = 10,
 		/mob/living/simple_animal/hostile/asteroid/ice_demon/random = 1,
@@ -316,7 +318,7 @@
 	mob_spawn_chance = 2
 	mob_spawn_list = list(
 		/mob/living/simple_animal/hostile/asteroid/wolf/random = 30,
-		/mob/living/simple_animal/hostile/asteroid/polarbear/random = 30,
+		/obj/effect/spawner/random/polar_bear = 30,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow = 25,
 		/mob/living/simple_animal/hostile/asteroid/goldgrub = 10,
 		/mob/living/simple_animal/hostile/asteroid/ice_demon/random = 1,

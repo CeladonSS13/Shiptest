@@ -22,11 +22,6 @@
 /area/ruin/space/has_grav/astraeus/custodial{
 	name = "Midship Block"
 	})
-"ae" = (
-/turf/closed/wall/mineral/titanium/overspace,
-/area/ruin/space/has_grav/astraeus/dorms_med{
-	name = "Aft Block"
-	})
 "af" = (
 /obj/effect/turf_decal/corner/transparent/bar,
 /obj/effect/turf_decal/corner/transparent/bar{
@@ -176,7 +171,7 @@
 "aC" = (
 /obj/structure/closet/crate/freezer,
 /obj/item/organ/appendix,
-/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/food/meat/slab,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
 	},
@@ -187,8 +182,8 @@
 "aD" = (
 /obj/structure/closet/crate/freezer,
 /obj/item/organ/brain,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/slime,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab/human/mutant/slime,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
 	},
@@ -213,11 +208,6 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/astraeus/dorms_med{
 	name = "Aft Block"
-	})
-"aI" = (
-/turf/closed/wall/mineral/titanium/overspace,
-/area/ruin/space/has_grav/astraeus/bridge{
-	name = "Fore Block"
 	})
 "aL" = (
 /obj/structure/cable{
@@ -570,9 +560,9 @@
 	})
 "bR" = (
 /obj/structure/closet/crate/freezer,
-/obj/item/reagent_containers/food/snacks/hugemushroomslice,
+/obj/item/food/hugemushroomslice,
 /obj/item/organ/appendix,
-/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/food/meat/slab,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 2
 	},
@@ -693,7 +683,7 @@
 /obj/structure/table,
 /obj/item/melee/knife/butcher,
 /obj/item/reagent_containers/food/drinks/beer,
-/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/food/meat,
 /obj/effect/turf_decal/corner/opaque/blue{
 	dir = 4
 	},
@@ -791,7 +781,7 @@
 	name = "Aft Block"
 	})
 "cp" = (
-/obj/item/reagent_containers/food/snacks/hugemushroomslice,
+/obj/item/food/hugemushroomslice,
 /obj/effect/turf_decal/corner/transparent/bar,
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 1
@@ -919,7 +909,7 @@
 	name = "Fore Block"
 	})
 "cJ" = (
-/obj/item/reagent_containers/food/snacks/hugemushroomslice,
+/obj/item/food/hugemushroomslice,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/astraeus/custodial{
 	name = "Midship Block"
@@ -1040,8 +1030,8 @@
 	})
 "cS" = (
 /obj/structure/closet/crate/freezer,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
 /turf/open/floor/plasteel/white,
 /area/ruin/space/has_grav/astraeus/dorms_med{
 	name = "Aft Block"
@@ -2032,16 +2022,6 @@
 /area/ruin/space/has_grav/astraeus/custodial{
 	name = "Midship Block"
 	})
-"ff" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/turf/open/floor/plasteel{
-	icon_state = "panelscorched"
-	},
-/area/ruin/space/has_grav/astraeus/custodial{
-	name = "Midship Block"
-	})
 "fg" = (
 /obj/structure/kitchenspike,
 /obj/effect/turf_decal/corner/transparent/bar,
@@ -2328,7 +2308,7 @@
 	})
 "fO" = (
 /obj/structure/closet/crate/freezer,
-/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/food/meat,
 /turf/open/floor/plasteel/showroomfloor,
 /area/ruin/space/has_grav/astraeus/dorms_med{
 	name = "Aft Block"
@@ -2354,7 +2334,7 @@
 	name = "Aft Block"
 	})
 "fS" = (
-/turf/open/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/smoothed/airless,
 /area/ruin/space/has_grav/astraeus/disposals{
 	name = "BMP Asteroids"
 	})
@@ -2379,20 +2359,6 @@
 	},
 /area/ruin/space/has_grav/astraeus/bridge{
 	name = "Fore Block"
-	})
-"fW" = (
-/turf/open/floor/plasteel{
-	icon_state = "platingdmg3"
-	},
-/area/ruin/space/has_grav/astraeus/custodial{
-	name = "Midship Block"
-	})
-"fX" = (
-/turf/open/floor/plasteel{
-	icon_state = "platingdmg1"
-	},
-/area/ruin/space/has_grav/astraeus/custodial{
-	name = "Midship Block"
 	})
 "fY" = (
 /obj/effect/mapping_helpers/airlock/locked,
@@ -2488,7 +2454,7 @@
 	name = "Fore Block"
 	})
 "gp" = (
-/turf/open/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/smoothed/airless,
 /area/ruin/space/has_grav/astraeus/bridge{
 	name = "Fore Block"
 	})
@@ -2499,7 +2465,7 @@
 	name = "Fore Block"
 	})
 "gs" = (
-/turf/open/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/smoothed/airless,
 /area/ruin/space/has_grav/astraeus/custodial{
 	name = "Midship Block"
 	})
@@ -2570,9 +2536,9 @@
 	})
 "gE" = (
 /obj/effect/decal/remains/human,
-/obj/item/clothing/head/helmet/space/syndicate/green/dark,
+/obj/item/clothing/head/helmet/space/pilot,
 /obj/effect/gibspawner/generic,
-/turf/open/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/smoothed/airless,
 /area/ruin/space/has_grav/astraeus/disposals{
 	name = "BMP Asteroids"
 	})
@@ -2605,8 +2571,8 @@
 	})
 "gJ" = (
 /obj/effect/gibspawner/robot,
-/turf/open/floor/plasteel/airless{
-	icon_state = "floorscorched2"
+/turf/open/floor/plating/airless{
+	icon_state = "platingdmg3"
 	},
 /area/ruin/space/has_grav/astraeus/bridge{
 	name = "Fore Block"
@@ -2655,8 +2621,8 @@
 	name = "Aft Block"
 	})
 "gQ" = (
-/obj/item/clothing/suit/space/syndicate/green/dark,
-/turf/open/floor/plating/asteroid/airless,
+/obj/item/clothing/suit/space/pilot,
+/turf/open/floor/plating/asteroid/smoothed/airless,
 /area/ruin/space/has_grav/astraeus/disposals{
 	name = "BMP Asteroids"
 	})
@@ -2822,7 +2788,7 @@
 	})
 "hn" = (
 /obj/item/clothing/gloves/color/fyellow,
-/turf/open/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/smoothed/airless,
 /area/ruin/space/has_grav/astraeus/disposals{
 	name = "BMP Asteroids"
 	})
@@ -3210,9 +3176,7 @@
 	})
 "Op" = (
 /obj/machinery/porta_turret{
-	dir = 8;
-	installation = /obj/item/gun/energy/lasercannon;
-	set_obj_flags = "EMAGGED"
+	dir = 8
 	},
 /turf/open/floor/engine,
 /area/ruin/space/has_grav/astraeus/dorms_med{
@@ -3220,7 +3184,7 @@
 	})
 "OQ" = (
 /obj/machinery/light/small/directional/north,
-/turf/open/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/smoothed/airless,
 /area/ruin/space/has_grav/astraeus/bridge{
 	name = "Fore Block"
 	})
@@ -3249,9 +3213,7 @@
 	})
 "RG" = (
 /obj/machinery/porta_turret{
-	dir = 8;
-	installation = /obj/item/gun/energy/lasercannon;
-	set_obj_flags = "EMAGGED"
+	dir = 8
 	},
 /turf/open/floor/engine,
 /area/ruin/space/has_grav/astraeus/bridge{
@@ -3312,7 +3274,7 @@
 	pixel_x = 0;
 	pixel_y = 25
 	},
-/turf/open/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/smoothed/airless,
 /area/ruin/space/has_grav/astraeus/custodial{
 	name = "Midship Block"
 	})
@@ -3688,14 +3650,14 @@ aa
 aa
 aa
 aa
-aI
+hE
 ee
 dG
 ed
 ed
 eH
 ee
-aI
+hE
 aa
 aa
 aa
@@ -3738,7 +3700,7 @@ aa
 aa
 aa
 aa
-aI
+hE
 hE
 bV
 cY
@@ -3747,7 +3709,7 @@ Xc
 cY
 bV
 ee
-aI
+hE
 aa
 aa
 gc
@@ -3788,7 +3750,7 @@ aa
 aa
 aa
 aa
-aI
+hE
 hE
 bV
 bV
@@ -3838,7 +3800,7 @@ aa
 aa
 aa
 aa
-aI
+hE
 hE
 bV
 bV
@@ -4445,7 +4407,7 @@ aa
 aa
 aa
 aa
-aI
+hE
 aY
 bq
 ee
@@ -4511,10 +4473,10 @@ ei
 ei
 eJ
 ei
-ff
+ei
 dB
 ce
-fW
+ej
 aT
 gb
 gb
@@ -4616,7 +4578,7 @@ dz
 dz
 fA
 ej
-fX
+gt
 ge
 gb
 gb
@@ -4667,7 +4629,7 @@ ce
 fg
 ce
 ce
-fW
+hg
 fm
 Mx
 gb
@@ -5714,7 +5676,7 @@ aa
 aa
 aa
 aa
-ae
+dk
 ht
 al
 al
@@ -5749,7 +5711,7 @@ fY
 al
 hs
 ht
-ae
+dk
 aa
 aa
 aa
@@ -5766,7 +5728,7 @@ aa
 aa
 aa
 aa
-ae
+dk
 ht
 al
 ac
@@ -5799,7 +5761,7 @@ cE
 ht
 hr
 ht
-ae
+dk
 aa
 aa
 aa
@@ -5818,7 +5780,7 @@ aa
 aa
 aa
 aa
-ae
+dk
 ht
 ht
 aG
@@ -5849,7 +5811,7 @@ gN
 cE
 ht
 ac
-ae
+dk
 aa
 aa
 aa
@@ -5870,7 +5832,7 @@ aa
 aa
 aa
 aa
-ae
+dk
 ht
 aG
 al
@@ -5899,7 +5861,7 @@ cE
 cE
 cE
 ht
-ae
+dk
 aa
 aa
 aa
@@ -6024,7 +5986,7 @@ aa
 aa
 aa
 aa
-ae
+dk
 ht
 aP
 aP
@@ -6051,7 +6013,7 @@ gP
 ht
 Ae
 ht
-ae
+dk
 aa
 aa
 aa
@@ -6076,7 +6038,7 @@ aa
 aa
 aa
 aa
-ae
+dk
 ht
 ht
 ht
@@ -6101,7 +6063,7 @@ ht
 ht
 ht
 ht
-ae
+dk
 aa
 aa
 aa
@@ -6133,7 +6095,7 @@ aa
 aa
 aa
 aa
-ae
+dk
 ac
 cW
 do
@@ -6146,7 +6108,7 @@ al
 al
 fG
 ht
-ae
+dk
 aa
 aa
 aa
@@ -6287,7 +6249,7 @@ aa
 aa
 aa
 aa
-ae
+dk
 ht
 dq
 ED
@@ -6298,7 +6260,7 @@ eS
 ZB
 fs
 ht
-ae
+dk
 aa
 aa
 aa

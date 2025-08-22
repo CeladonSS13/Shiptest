@@ -97,26 +97,26 @@
 	name = "paper"
 	assets = list(
 		// [CELADON-ADD] - CELADON_STAMPS
-		"stamp-inteq-celadon" = 'mod_celadon/_storge_icons/icons/png/large_stamp-inteq.png',
-		"inteq-mothership-stamp" = 'mod_celadon/_storge_icons/icons/png/inteq_mothership_stamp.png',
-		"solfed-corps-commander-stamp" = 'mod_celadon/_storge_icons/icons/png/sf_commander_stamp.png',
-		"solfed-captain" = 'mod_celadon/_storge_icons/icons/png/sf_captain_stamp.png',
-		"elysium-brigade-captain-stamp" = 'mod_celadon/_storge_icons/icons/png/elysium_brigade_stamp.png',
-		"elysium-republic-stamp" = 'mod_celadon/_storge_icons/icons/png/elysium_republic_stamp.png',
-		"elysium-avanpost-stamp" = 'mod_celadon/_storge_icons/icons/png/elysium_outpost_stamp.png',
-		"nt-cent-command-stamp" = 'mod_celadon/_storge_icons/icons/png/nanotrasen_central_command_stamp.png',
-		"nt-captain-stamp" = 'mod_celadon/_storge_icons/icons/png/nanotrasen_captain_stamp.png',
-		"syndicate-captain-stamp" = 'mod_celadon/_storge_icons/icons/png/syndicate_captain_stamp.png',
-		"stamp-df" = 'mod_celadon/_storge_icons/icons/png/large_stamp-df_generic.png',
-		"stamp-df_captain" = 'mod_celadon/_storge_icons/icons/png/large_stamp-df_captain.png',
-		"stamp-df_meddir" = 'mod_celadon/_storge_icons/icons/png/large_stamp-df_med_dir.png',
-		"stamp-ne" = 'mod_celadon/_storge_icons/icons/png/large_stamp-ne_generic.png',
-		"stamp-ne_captain" = 'mod_celadon/_storge_icons/icons/png/large_stamp-ne_captain.png',
-		"stamp-ne_engdir" = 'mod_celadon/_storge_icons/icons/png/large_stamp-ne_eng_dir.png',
+		"stamp-inteq-celadon" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-inteq.png',
+		"inteq-mothership-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/inteq_mothership_stamp.png',
+		"solfed-corps-commander-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/sf_commander_stamp.png',
+		"solfed-captain" = 'mod_celadon/_storge_icons/icons/assets/png/sf_captain_stamp.png',
+		"elysium-brigade-captain-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/elysium_brigade_stamp.png',
+		"elysium-republic-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/elysium_republic_stamp.png',
+		"elysium-avanpost-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/elysium_outpost_stamp.png',
+		"nt-cent-command-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/nanotrasen_central_command_stamp.png',
+		"nt-captain-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/nanotrasen_captain_stamp.png',
+		"syndicate-captain-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/syndicate_captain_stamp.png',
+		"stamp-df" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-df_generic.png',
+		"stamp-df_captain" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-df_captain.png',
+		"stamp-df_meddir" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-df_med_dir.png',
+		"stamp-ne" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-ne_generic.png',
+		"stamp-ne_captain" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-ne_captain.png',
+		"stamp-ne_engdir" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-ne_eng_dir.png',
 		// [/CELADON-ADD]
 		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
-		"stamp-mime" = 'mod_celadon/_storge_icons/icons/png/large_stamp-mime.png',
-		"stamp-clown" = 'mod_celadon/_storge_icons/icons/png/large_stamp-clown.png',
+		"stamp-mime" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-mime.png',
+		"stamp-clown" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-clown.png',
 		// [/CELADON-ADD]
 		"stamp-deny" = 'icons/stamp_icons/large_stamp-deny.png',
 		"stamp-ok" = 'icons/stamp_icons/large_stamp-ok.png',
@@ -137,8 +137,13 @@
 		"stamp-inteq_artificer" = 'icons/stamp_icons/large_stamp-inteq_artificer.png',
 		"stamp-inteq_corpsman" = 'icons/stamp_icons/large_stamp-inteq_corpsman.png',
 		"stamp-clip" = 'icons/stamp_icons/large_stamp-clip.png',
-		"stamp-bard" = 'icons/stamp_icons/large_stamp-bard.png',
-		"stamp-gold" = 'icons/stamp_icons/large_stamp-gold.png',
+		"stamp-clip_cmm" = 'icons/stamp_icons/large_stamp-clip_cmm.png',
+		"stamp-clip_gold" = 'icons/stamp_icons/large_stamp-clip_gold.png',
+		"stamp-clip_bard" = 'icons/stamp_icons/large_stamp-clip_bard.png',
+		"stamp-clip_lord" = 'icons/stamp_icons/large_stamp-clip_lord.png',
+		"stamp-clip_land" = 'icons/stamp_icons/large_stamp-clip_land.png',
+		"stamp-clip_meld" = 'icons/stamp_icons/large_stamp-clip_meld.png',
+		"stamp-clip_deed" = 'icons/stamp_icons/large_stamp-clip_deed.png',
 		"stamp-cybersun" = 'icons/stamp_icons/large_stamp-cybersun.png',
 		"stamp-biodynamics" = 'icons/stamp_icons/large_stamp-biodynamics.png',
 		"stamp-donk" = 'icons/stamp_icons/large_stamp-donk.png',
@@ -277,13 +282,15 @@
 		"meteors" = 'icons/UI_Icons/Achievements/Misc/meteors.png',
 		"timewaste" = 'icons/UI_Icons/Achievements/Misc/timewaste.png',
 		"upgrade" = 'icons/UI_Icons/Achievements/Misc/upgrade.png',
-		"clownking" = 'icons/UI_Icons/Achievements/Misc/clownking.png',
-		"clownthanks" = 'icons/UI_Icons/Achievements/Misc/clownthanks.png',
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+		"clownking" = 'mod_celadon/_storge_icons/icons/assets/png/clownking.png',
+		"clownthanks" = 'mod_celadon/_storge_icons/icons/assets/png/clownthanks.png',
+// [/CELADON-ADD]
 		"rule8" = 'icons/UI_Icons/Achievements/Misc/rule8.png',
 		"snail" = 'icons/UI_Icons/Achievements/Misc/snail.png',
 		"mining" = 'icons/UI_Icons/Achievements/Skills/mining.png',
 		// [CELADON-ADD] - CELADON_ACHIEVEMENTS
-		"theinnerhell" = 'mod_celadon/_storge_icons/icons/png/theinnerhell.png'
+		"theinnerhell" = 'mod_celadon/_storge_icons/icons/assets/png/theinnerhell.png'
 		// [/CELADON-ADD]
 	)
 
@@ -492,7 +499,7 @@
 	for (var/style in 1 to length(GLOB.podstyles))
 		// [CELADON-EDIT] - CELADON_ELYSIUMPOD
 		// var/icon_file = 'icons/obj/supplypods.dmi' // CELADON-EDIT - ORIGINAL
-		var/icon_file = 'mod_celadon/_storge_icons/icons/supplypods.dmi'
+		var/icon_file = 'mod_celadon/_storge_icons/icons/structures/supplypods.dmi'
 		// [/CELADON-EDIT]
 		var/states = icon_states(icon_file)
 		if (style == STYLE_SEETHROUGH)

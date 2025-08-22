@@ -1,20 +1,20 @@
 /obj/item/clothing/head/beanie/christmas
 	name = "christmas beanie"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	icon_state = "beaniechristmas"
 
 /obj/item/clothing/head/beanie/waldo
 	name = "red striped bobble hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "If you're going on a worldwide hike, you'll need some cold protection."
 	icon_state = "waldo_hat"
 
 /obj/item/clothing/head/beanie/rasta
 	name = "rastacap"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Perfect for tucking in those dreadlocks."
 	icon_state = "beanierasta"
 
@@ -22,55 +22,55 @@
 
 /obj/item/clothing/head/beret/vintage
 	name = "vintage beret"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "A well-worn beret."
 	icon_state = "vintageberet"
 	dog_fashion = null
 
 /obj/item/clothing/head/beret/archaic
 	name = "archaic beret"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "An absolutely ancient beret."
 	icon_state = "archaicberet"
 	dog_fashion = null
 
 /obj/item/clothing/head/collectable/petehat
 	name = "ultra rare Pete's hat!"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "It smells faintly of plasma."
 	icon_state = "petehat"
 
 /obj/item/clothing/head/collectable/xenom
 	name = "collectable xenomorph helmet!"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Hiss hiss hiss!"
 	clothing_flags = SNUG_FIT
 	icon_state = "xenom"
 
 /obj/item/clothing/head/collectable/paper
 	name = "collectable paper hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "What looks like an ordinary paper hat is actually a rare and valuable collector's edition paper hat. Keep away from water, fire, and Curators."
 	icon_state = "paper"
 	dog_fashion = /datum/dog_fashion/head
 
 /obj/item/clothing/head/collectable/slime
 	name = "collectable slime hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Just like a real brain slug!"
 	icon_state = "headslime"
 	clothing_flags = SNUG_FIT
 
 /obj/item/clothing/head/collectable/rabbitears
 	name = "collectable rabbit ears"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Not as lucky as the feet!"
 	icon_state = "bunny"
 
@@ -78,30 +78,30 @@
 
 /obj/item/clothing/head/collectable/HoS
 	name = "collectable HoS hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Now you too can beat prisoners, set silly sentences, and arrest for no reason!"
 	icon_state = "hoscap"
 
 /obj/item/clothing/head/collectable/HoP
 	name = "collectable HoP hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "It's your turn to demand excessive paperwork, signatures, stamps, and hire more clowns! Papers, please!"
 	icon_state = "hopcap_nt"
 	dog_fashion = /datum/dog_fashion/head/head_of_personnel
 
 /obj/item/clothing/head/caphat/nt
 	name = "captain's hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	icon_state = "captain_nt"
 
 //Head of Personnel
 /obj/item/clothing/head/hopcap
 	name = "head of personnel's cap"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	icon_state = "hopcap"
 	desc = "The symbol of true bureaucratic micromanagement."
 	dog_fashion = /datum/dog_fashion/head/head_of_personnel
@@ -113,23 +113,23 @@
 //Cargo
 /obj/item/clothing/head/supply_chief
 	name = "supply chief's cap"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "The one thing between you and 40 boxes of orderable pizza is the person wearing this hat."
 	icon_state = "supply_chief_cap"
 
 /obj/item/clothing/head/deliveries_officer
 	name = "deliveries officer's cap"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Whether through fires, the vacuum of space, or hordes of souless husks of grey suited criminals, your crate will always be delivered!"
 	icon_state = "deliveries_officer_cap"
 
 //Chaplain
 /obj/item/clothing/head/nun_hood
 	name = "nun hood"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Maximum piety in this star system."
 	icon_state = "nun_hood"
 	flags_inv = HIDEHAIR
@@ -137,15 +137,15 @@
 
 /obj/item/clothing/head/bishopmitre
 	name = "bishop mitre"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "An opulent hat that functions as a radio to God. Or as a lightning rod, depending on who you ask."
 	icon_state = "bishopmitre"
 
 /obj/item/clothing/head/witchunter
 	name = "witchunter hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "This hat saw much use back in the day."
 	icon_state = "witchhunterhat"
 	item_state = "witchhunterhat"
@@ -155,47 +155,47 @@
 
 /obj/item/clothing/head/spacepolice
 	name = "space police cap"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "A blue cap for patrolling the daily beat."
 	icon_state = "policecap_families"
 	item_state = "policecap_families"
 
 /obj/item/clothing/head/powdered_wig
 	name = "powdered wig"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "A powdered wig."
 	icon_state = "pwig"
 	item_state = "pwig"
 
 /obj/item/clothing/head/canada
 	name = "striped red tophat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "It smells like fresh donut holes. / <i>Il sent comme des trous de beignets frais.</i>"
 	icon_state = "canada"
 	item_state = "canada"
 
 /obj/item/clothing/head/redcoat
 	name = "redcoat's hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	icon_state = "redcoat"
 	desc = "<i>'I guess it's a redhead.'</i>"
 
 /obj/item/clothing/head/plaguedoctorhat
 	name = "plague doctor's hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "These were once used by plague doctors. They're pretty much useless."
 	icon_state = "plaguedoctor"
 	permeability_coefficient = 0.01
 
 /obj/item/clothing/head/hasturhood
 	name = "hastur's hood"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "It's <i>unspeakably</i> stylish."
 	icon_state = "hasturhood"
 	flags_inv = HIDEHAIR
@@ -203,8 +203,8 @@
 
 /obj/item/clothing/head/cueball
 	name = "cueball helmet"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "A large, featureless white orb meant to be worn on your head. How do you even see out of this thing?"
 	icon_state = "cueball"
 	item_state="cueball"
@@ -214,8 +214,8 @@
 
 /obj/item/clothing/head/justice
 	name = "justice hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Fight for what's righteous!"
 	icon_state = "justicered"
 	item_state = "justicered"
@@ -241,8 +241,8 @@
 
 /obj/item/clothing/head/rabbitears
 	name = "rabbit ears"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "A headband with a pair of faux rabbit ears."
 	icon_state = "bunny"
 
@@ -250,16 +250,16 @@
 
 /obj/item/clothing/head/bowler
 	name = "bowler-hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Gentleman, elite aboard!"
 	icon_state = "bowler"
 	item_state = "bowler"
 
 /obj/item/clothing/head/witchwig
 	name = "witch costume wig"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Eeeee~heheheheheheh!"
 	icon_state = "witch"
 	item_state = "witch"
@@ -267,8 +267,8 @@
 
 /obj/item/clothing/head/chicken
 	name = "chicken suit head"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Bkaw!"
 	icon_state = "chickenhead"
 	item_state = "chickensuit"
@@ -277,8 +277,8 @@
 
 /obj/item/clothing/head/xenos
 	name = "xenos helmet"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	icon_state = "xenos"
 	item_state = "xenos_helm"
 	desc = "A helmet made out of chitinous alien hide."
@@ -288,8 +288,8 @@
 
 /obj/item/clothing/head/sombrero
 	name = "sombrero"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	icon_state = "sombrero"
 	item_state = "sombrero"
 	desc = "You can practically taste the fiesta."
@@ -318,8 +318,8 @@
 
 /obj/item/clothing/head/jester
 	name = "jester hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "A hat with bells, to add some merriness to the suit."
 	icon_state = "jester_hat"
 
@@ -333,15 +333,15 @@
 
 /obj/item/clothing/head/scarecrow_hat
 	name = "scarecrow hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "A simple straw hat."
 	icon_state = "scarecrow_hat"
 
 /obj/item/clothing/head/lobsterhat
 	name = "foam lobster head"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "When everything's going to crab, protecting your head is the best choice."
 	icon_state = "lobster_hat"
 	clothing_flags = SNUG_FIT
@@ -349,68 +349,68 @@
 
 /obj/item/clothing/head/drfreezehat
 	name = "doctor freeze's wig"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "A cool wig for cool people."
 	icon_state = "drfreeze_hat"
 	flags_inv = HIDEHAIR
 
 /obj/item/clothing/head/pharaoh
 	name = "pharaoh hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Walk like an Egyptian."
 	icon_state = "pharoah_hat"
 	item_state = "pharoah_hat"
 
 /obj/item/clothing/head/nemes
 	name = "headdress of Nemes"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Lavish space tomb not included."
 	icon_state = "nemes_headdress"
 
 /obj/item/clothing/head/delinquent
 	name = "delinquent hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Good grief."
 	icon_state = "delinquent"
 
 /obj/item/clothing/head/clownmitre
 	name = "Hat of the Honkmother"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "It's hard for parishoners to see a banana peel on the floor when they're looking up at your glorious chapeau."
 	icon_state = "clownmitre"
 
 /obj/item/clothing/head/kippah
 	name = "kippah"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Signals that you follow the Jewish Halakha. Keeps the head covered and the soul extra-Orthodox."
 	icon_state = "kippah"
 
 /obj/item/clothing/head/taqiyahwhite
 	name = "white taqiyah"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "An extra-mustahabb way of showing your devotion to Allah."
 	icon_state = "taqiyahwhite"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 
 /obj/item/clothing/head/taqiyahred
 	name = "red taqiyah"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "An extra-mustahabb way of showing your devotion to Allah."
 	icon_state = "taqiyahred"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 
 /obj/item/clothing/head/shrine_wig
 	name = "shrine maiden's wig"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Purify in style!"
 	flags_inv = HIDEHAIR //bald
 	mob_overlay_icon = 'icons/mob/large-worn-icons/64x64/head.dmi'
@@ -421,16 +421,16 @@
 
 /obj/item/clothing/head/goatpelt
 	name = "goat pelt hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Fuzzy and Warm!"
 	icon_state = "goatpelt"
 	item_state = "goatpelt"
 
 /obj/item/clothing/head/jackbros
 	name = "frosty hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Hee-ho!"
 	icon_state = "JackFrostHat"
 	item_state = "JackFrostHat"
@@ -440,8 +440,8 @@
  */
 /obj/item/clothing/head/hardhat/cakehat
 	name = "cakehat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "You put the cake on your head. Brilliant."
 	icon_state = "hardhat_cakehat"
 	item_state = "hardhat_cakehat"
@@ -492,8 +492,8 @@
 
 /obj/item/clothing/head/hardhat/cakehat/energycake
 	name = "energy cake"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "You put the energy sword on your cake. Brilliant."
 	icon_state = "hardhat_energycake"
 	item_state = "hardhat_energycake"
@@ -517,8 +517,8 @@
 
 /obj/item/clothing/head/hardhat/reindeer
 	name = "novelty reindeer hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Some fake antlers and a very fake red nose."
 	icon_state = "hardhat_reindeer"
 	item_state = "hardhat_reindeer"
@@ -530,8 +530,8 @@
 
 /obj/item/clothing/head/foilhat
 	name = "tinfoil hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Thought control rays, psychotronic scanning. Don't mind that, I'm protected cause I made this hat."
 	icon_state = "foilhat"
 	item_state = "foilhat"
@@ -596,32 +596,32 @@
 /// WIZARD
 /obj/item/clothing/head/wizard/red
 	name = "red wizard hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Strange-looking red hat-wear that most certainly belongs to a real magic user."
 	icon_state = "redwizard"
 	dog_fashion = /datum/dog_fashion/head/red_wizard
 
 /obj/item/clothing/head/wizard/yellow
 	name = "yellow wizard hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Strange-looking yellow hat-wear that most certainly belongs to a powerful magic user."
 	icon_state = "yellowwizard"
 	dog_fashion = null
 
 /obj/item/clothing/head/wizard/black
 	name = "black wizard hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Strange-looking black hat-wear that most certainly belongs to a real skeleton. Spooky."
 	icon_state = "blackwizard"
 	dog_fashion = null
 
 /obj/item/clothing/head/wizard/fake
 	name = "wizard hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "It has WIZZARD written across it in sequins. Comes with a cool beard."
 	icon_state = "wizard-fake"
 	gas_transfer_coefficient = 1
@@ -632,16 +632,16 @@
 
 /obj/item/clothing/head/wizard/marisa
 	name = "witch hat"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "Strange-looking hat-wear. Makes you want to cast fireballs."
 	icon_state = "marisa"
 	dog_fashion = null
 
 /obj/item/clothing/head/wizard/magus
 	name = "\improper Magus helm"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	desc = "A mysterious helmet that hums with an unearthly power."
 	icon_state = "magus"
 	item_state = "magus"
@@ -650,8 +650,8 @@
 ///Bunny Suit
 /obj/item/clothing/head/bunnyhead
 	name = "Easter Bunny Head"
-	icon = 'mod_celadon/_storge_icons/icons/clothing/obj/hats.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/clothing/overlay/head.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi'
+	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi'
 	icon_state = "bunnyhead"
 	item_state = "bunnyhead"
 	desc = "Considerably more cute than 'Frank'."

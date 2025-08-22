@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/nanotrasen/armor
-	group = "Armor"
+	category = "Armor"
 
 /datum/supply_pack/faction/nanotrasen/armor/armorsec
 	name = "Nanotrasen Security Kit"

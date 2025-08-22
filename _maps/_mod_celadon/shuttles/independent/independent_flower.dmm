@@ -958,13 +958,15 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/obj/item/kirbyplants/random,
 /obj/effect/turf_decal/corner/opaque/brown/border{
 	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/suit_storage_unit/inherit,
+/obj/item/clothing/suit/space/eva,
+/obj/item/clothing/head/helmet/space/eva,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "Ih" = (

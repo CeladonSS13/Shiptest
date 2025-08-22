@@ -106,7 +106,6 @@
 		/obj/item/toy/plush/celadon/hampter/syndi,
 		/obj/item/toy/plush/celadon/hampter/death_squad,
 		/obj/item/toy/plush/celadon/hampter/ert_squad,
-		/obj/item/toy/plush/celadon/hampter/cute,
 		/obj/item/toy/plush/carpplushie/ice,
 		/obj/item/toy/plush/carpplushie/silent,
 		/obj/item/toy/plush/carpplushie/electric,

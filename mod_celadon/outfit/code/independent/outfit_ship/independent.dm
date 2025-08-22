@@ -270,10 +270,15 @@
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/color/green
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/hydro
-	suit = /obj/item/clothing/suit/apron/overalls
+	suit = /obj/item/clothing/under/overalls
 	gloves  =/obj/item/clothing/gloves/botanic_leather
 	suit_store = /obj/item/plant_analyzer
 
 	backpack = /obj/item/storage/backpack/botany
 	satchel = /obj/item/storage/backpack/satchel/hyd
 	courierbag = /obj/item/storage/backpack/messenger/hyd
+
+// Janitor - У оффов не был прописан jobtype и это вызывало рантайм. Прописываем его здесь. Увы.
+
+/datum/outfit/job/prisoner
+	jobtype = /datum/job/prisoner

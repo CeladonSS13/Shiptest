@@ -3,7 +3,7 @@
 	name = "Juggernaut"
 	real_name = "Juggernaut"
 	desc = "A massive, purple glowing armored construct built to spearhead attacks and soak up enemy fire."
-	icon = 'mod_celadon/_storge_icons/icons/mobs/wizard_constructs.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/mobs/constructs/wizard.dmi'
 	icon_state = "juggernaut"
 	icon_living = "juggernaut"
 	maxHealth = 150
@@ -49,7 +49,7 @@
 	name = "Wraith"
 	real_name = "Wraith"
 	desc = "A wicked, clawed shell constructed to assassinate enemies and sow chaos behind enemy lines."
-	icon = 'mod_celadon/_storge_icons/icons/mobs/wizard_constructs.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/mobs/constructs/wizard.dmi'
 	icon_state = "wraith"
 	icon_living = "wraith"
 	maxHealth = 30
@@ -99,7 +99,7 @@
 //////////////
 /obj/effect/temp_visual/dir_setting/wraith/wizard
 	name = "shadow"
-	icon = 'mod_celadon/_storge_icons/icons/mobs/wizard_constructs.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/mobs/constructs/wizard.dmi'
 	icon_state = "phase_shift2_wizard"
 	duration = 6
 
@@ -130,7 +130,7 @@
 	name = "Artificer"
 	real_name = "Artificer"
 	desc = "A bulbous construct dedicated to building and maintaining the Cult of Nar'Sie's armies."
-	icon = 'mod_celadon/_storge_icons/icons/mobs/wizard_constructs.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/mobs/constructs/wizard.dmi'
 	icon_state = "artificer"
 	icon_living = "artificer"
 	maxHealth = 50
@@ -172,7 +172,7 @@
 	name = "Harvester"
 	real_name = "Harvester"
 	desc = "A long, thin construct built to herald Nar'Sie's rise. It'll be all over soon."
-	icon = 'mod_celadon/_storge_icons/icons/mobs/wizard_constructs.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/mobs/constructs/wizard.dmi'
 	icon_state = "harvester"
 	icon_living = "harvester"
 	maxHealth = 40

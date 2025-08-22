@@ -67,9 +67,9 @@ SUBSYSTEM_DEF(overmap)
 
 /datum/controller/subsystem/overmap/fire()
 	for(var/datum/overmap_star_system/current_system as anything in tracked_star_systems)
-		if(!current_system.mission_system_enabled)
+		if(!current_system.encounters_refresh)
 			continue
-		current_system.handle_dynamic_missions()
+		current_system.handle_dynamic_encounters()
 
 	if(events_enabled)
 		for(var/datum/overmap/event/E as anything in events)
@@ -236,7 +236,7 @@ SUBSYSTEM_DEF(overmap)
 	if(our_spawn_location)
 		system_to_spawn_in = our_spawn_location.current_overmap
 
-	if(!ship_loc && template.space_spawn)
+	if(!ship_loc || template.space_spawn)	// [CELADON-EDIT] Изменено, так как корабли с параметром space-spawn: true всё равно спавнились на аванпосту. OldCode: if(!ship_loc && template.space_spawn)
 		ship_loc = null
 	else
 		ship_loc = SSovermap.outposts[1]
@@ -310,8 +310,8 @@ SUBSYSTEM_DEF(overmap)
 	var/max_overmap_dynamic_events
 	///Do we have a outpost in this system?
 	var/has_outpost = FALSE
-	///Do we modifiy our dynamic encounters every so often for missions? Disbaled on base type so non-main overmaps dont hog up missions(?)
-	var/mission_system_enabled = FALSE
+	///The abliltiy for the system to automaticly spawn and despawn dynamic encounters
+	var/encounters_refresh = FALSE
 	/// Our faction of the outpost
 	var/faction
 
@@ -335,7 +335,7 @@ SUBSYSTEM_DEF(overmap)
 	///the tileset we use, just the icon we force tokens to use, override only if nessary
 	// [CELADON-EDIT] - CELADON_OVERMAP
 	// var/tileset = 'icons/misc/overmap.dmi'	// CELADON-EDIT - ORIGINAL
-	var/tileset = 'mod_celadon/_storge_icons/icons/overmap/overmap.dmi'
+	var/tileset = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap.dmi'
 	// [/CELADON-EDIT]
 
 	///This is the flag that makes it so all overmap objects use the same uniform color above. If false, tokens use their default colors
@@ -444,10 +444,10 @@ SUBSYSTEM_DEF(overmap)
 	switch(generator_type)
 		if(OVERMAP_GENERATOR_SOLAR)
 			spawn_events_in_orbits()
-			spawn_ruin_levels_in_orbits()
 		if(OVERMAP_GENERATOR_RANDOM)
 			spawn_events()
-			spawn_ruin_levels()
+
+	spawn_ruin_levels()
 
 	if(has_outpost)
 		spawn_outpost()
@@ -486,18 +486,6 @@ SUBSYSTEM_DEF(overmap)
 			if(!prob(E.spread_chance))
 				continue
 			new event_type(position, src)
-
-/datum/overmap_star_system/proc/spawn_ruin_levels_in_orbits()
-	for(var/i in 1 to max_overmap_dynamic_events)
-		new /datum/overmap/dynamic(system_spawned_in = src)
-
-/**
- * Spawns a new dynamic encounter when old one is deleted. Called by dynamic encounters being deleted.
- */
-/datum/overmap_star_system/proc/replace_dynamic_datum()
-	if(length(dynamic_encounters) < max_overmap_dynamic_events)
-		var/list/results = get_unused_overmap_square()
-		new /datum/overmap/dynamic(results, src)
 
 /**
  * Creates an overmap object for each ruin level, making them accessible.
@@ -564,7 +552,7 @@ SUBSYSTEM_DEF(overmap)
 /**
  * This is tangentily related to dynmaic missions, its doing the same despawn thing you added for overmap events. Its meant to cycle out planets very slowly.
  */
-/datum/overmap_star_system/proc/handle_dynamic_missions()
+/datum/overmap_star_system/proc/handle_dynamic_encounters()
 	if(length(dynamic_encounters) < max_overmap_dynamic_events)
 		spawn_ruin_level()
 	if(COOLDOWN_FINISHED(src, dynamic_despawn_cooldown))
@@ -608,6 +596,9 @@ SUBSYSTEM_DEF(overmap)
 		QUADRANT_MAP_SIZE
 	)
 
+	// [CELADON-ADD] - CELADON_FIXES
+	dynamic_datum.stop_countdown()
+	// [/CELADON-ADD]
 	vlevel.reserve_margin(QUADRANT_SIZE_BORDER)
 
 	mapgen.pre_generation(dynamic_datum)
@@ -626,7 +617,7 @@ SUBSYSTEM_DEF(overmap)
 			),
 			// [CELADON-EDIT] - CELADON_MAP_EXPANSION - Координаты спавна руин
 			// vlevel.high_y-used_ruin.height-6 - vlevel.reserved_margin,	// ORIGINAL
-			vlevel.high_y - used_ruin.height - 70 - vlevel.reserved_margin,
+			vlevel.high_y - used_ruin.height - 60 - vlevel.reserved_margin,
 			// [/CELADON-EDIT]
 			vlevel.z_value
 		)
@@ -637,7 +628,11 @@ SUBSYSTEM_DEF(overmap)
 	// fill in the turfs, AFTER generating the ruin. this prevents them from generating within the ruin
 	// and ALSO prevents the ruin from being spaced when it spawns in
 	// WITHOUT needing to fill the reservation with a bunch of dummy turfs
-	mapgen.populate_turfs(vlevel.get_unreserved_block())
+	if(dynamic_datum.populate_turfs)
+		mapgen.populate_turfs(vlevel.get_unreserved_block())
+
+	///post generation things, such as greebles or smoothening out terrain generation.
+	mapgen.post_generation(vlevel.get_unreserved_block())
 
 	if(dynamic_datum.weather_controller_type)
 		new dynamic_datum.weather_controller_type(mapzone)
@@ -759,12 +754,12 @@ SUBSYSTEM_DEF(overmap)
 	// 	docking_ports += quaternary_dock
 	// [/CELADON-REMOVE]
 
-	var/list/spawned_mission_pois = list()
+	var/list/datum/weakref/spawned_mission_pois = list()
 	for(var/obj/effect/landmark/mission_poi/mission_poi in SSmissions.unallocated_pois)
 		if(!vlevel.is_in_bounds(mission_poi))
 			continue
 
-		spawned_mission_pois += mission_poi
+		spawned_mission_pois += WEAKREF(mission_poi)
 		SSmissions.unallocated_pois -= mission_poi
 
 
@@ -840,7 +835,7 @@ SUBSYSTEM_DEF(overmap)
 /datum/overmap_star_system/proc/overmap_container_view(user = usr) //this is broken rn, idfk know html viewers works
 	if(!overmap_container)
 		return
-	. += "<a href='?src=[REF(src)];refresh=1'>\[Refresh\]</a><br><code>"
+	. += "<a href='byond://?src=[REF(src)];refresh=1'>\[Refresh\]</a><br><code>"
 	for(var/y in size to 1 step -1)
 		for(var/x in 1 to size)
 			var/tile
@@ -855,7 +850,7 @@ SUBSYSTEM_DEF(overmap)
 			else
 				tile = "."
 				thing_to_link = overmap_container[x][y]
-			. += "<a href='?src=[REF(src)];view_object=[REF(thing_to_link)]' title='[x]x, [y]y'>[add_leading(add_trailing(tile, 2), 3)]</a>" //"centers" the character
+			. += "<a href='byond://?src=[REF(src)];view_object=[REF(thing_to_link)]' title='[x]x, [y]y'>[add_leading(add_trailing(tile, 2), 3)]</a>" //"centers" the character
 		. += "<br>"
 		CHECK_TICK
 	. += "</code>"
@@ -1143,40 +1138,7 @@ SUBSYSTEM_DEF(overmap)
 /datum/overmap_star_system/shiptest
 	has_outpost = TRUE
 	can_be_selected_randomly = FALSE
-	mission_system_enabled = TRUE
-
-/datum/overmap_star_system/shiptest/New(generate_now=TRUE)
-	//1/10 rounds
-	if(!prob(10))
-		return ..()
-
-	//Small easter egg so all these palletes doesn't go to waste in the event mines
-	var/list/possible_overmaps = subtypesof(/datum/overmap_star_system)
-
-	//check if can_be_selected_randomly is false, if so remove them
-	for(var/datum/overmap_star_system/interating_overmap as anything in possible_overmaps)
-		if(!interating_overmap.can_be_selected_randomly)
-			possible_overmaps -= interating_overmap
-
-	var/datum/overmap_star_system/picked_overmap = pick(possible_overmaps)
-	if(!picked_overmap)
-		return ..() //something went wrong but we ball
-
-	//main colors, used for dockable terrestrials, and background
-	primary_color = picked_overmap.primary_color
-	secondary_color = picked_overmap.secondary_color
-
-	//hazard colors, used for the overmap hazards and sun
-	hazard_primary_color = picked_overmap.hazard_primary_color
-	hazard_secondary_color = picked_overmap.hazard_secondary_color
-
-	//structure colors, used for ships and outposts/colonies
-	primary_structure_color = picked_overmap.primary_structure_color
-	secondary_structure_color = picked_overmap.secondary_structure_color
-
-	override_object_colors = TRUE
-	overmap_icon_state = picked_overmap.overmap_icon_state
-	return ..()
+	encounters_refresh = TRUE
 
 /datum/overmap_star_system/shiptest/create_map()
 	. = ..()

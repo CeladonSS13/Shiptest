@@ -51,10 +51,9 @@
 	var/max_missions
 	/// List of missions that can be accepted at this outpost. Missions which have been accepted are removed from this list.
 	var/list/datum/mission/missions
-	/// List of all of the things this outpost offers
-	var/list/supply_packs = list()
-	/// our 'Order number'
-	var/ordernum = 1
+
+	var/datum/cargo_market/outpost/market
+
 	/// Our faction of the outpost
 	var/datum/faction/faction
 	/// simple var that toggles the flag on/off, neant for eventing purposes
@@ -82,8 +81,11 @@
 	// doing this after the main level is loaded means that the outpost areas are all renamed for us
 	Rename(gen_outpost_name())
 
+	if(!market)
+		market = new()
+		market.name = "[name] market"
+
 	fill_missions()
-	populate_cargo()
 	addtimer(CALLBACK(src, PROC_REF(fill_missions)), 10 MINUTES, TIMER_STOPPABLE|TIMER_LOOP|TIMER_DELETE_ME)
 
 /datum/overmap/outpost/Destroy(...)
@@ -162,17 +164,6 @@
 		var/datum/mission/outpost/M = new mission_type(src)
 		LAZYADD(missions, M)
 
-/datum/overmap/outpost/proc/populate_cargo()
-	ordernum = rand(1, 99000)
-
-	for(var/datum/supply_pack/current_pack as anything in subtypesof(/datum/supply_pack))
-		current_pack = new current_pack()
-		if(current_pack.faction)
-			current_pack.faction = SSfactions.factions[current_pack.faction]
-		if(!current_pack.contains)
-			continue
-		supply_packs += current_pack
-
 /datum/overmap/outpost/proc/load_main_level()
 	if(!main_template)
 		CRASH("[src] ([src.type]) tried to load without a template!")
@@ -239,6 +230,11 @@
 	var/obj/docking_port/stationary/h_dock
 	var/datum/map_template/outpost/h_template = get_hangar_template(dock_requester.shuttle_port)
 
+	// [CELADON-ADD] - CELADON_COMPONENT - Pirates Update
+	if(dock_requester.source_template.category == "Pirates") //Проверка шипа на пиратскую фракцию
+		return new /datum/docking_ticket(_docking_error = "Docking request denied: Unauthorized ship") //Запрет пиратам на стыковку с аванпостом
+	// [/CELADON-ADD]
+
 	if(src in dock_requester.blacklisted)
 		return new /datum/docking_ticket(_docking_error = "Docking request denied: [dock_requester.blacklisted[src]]")
 
@@ -255,17 +251,7 @@
 			"for ship [dock_requester] (template [dock_requester.source_template])!"
 		)
 		return FALSE
-
-	// [CELADON-ADD] - CELADON_COMPONENT - Pirates Update - NEEDS_TO_FIX_ALARM!
-	// if(dock_requester.get_faction() == "Pirates") //Проверка шипа на пиратскую фракцию
-	// 	return new /datum/docking_ticket(_docking_error = "Неавторизованным лицам отказано в стыковке с аванпостом.") //Запрет пиратам на стыковку с аванпостом
-	// [/CELADON-ADD]
-
-	// if(src in dock_requester.blacklisted)
-	// 	return new /datum/docking_ticket(_docking_error = "Docking request denied: [dock_requester.blacklisted[src]]")
-
-	// adjust_dock_to_shuttle(h_dock, dock_requester.shuttle_port)
-	return new /datum/docking_ticket(h_dock, src, dock_requester)	// Это новое
+	return new /datum/docking_ticket(h_dock, src, dock_requester)
 
 /datum/overmap/outpost/get_dockable_locations(datum/overmap/requesting_interactor)
 	var/list/docks = list()
@@ -411,6 +397,10 @@
 		if(!vlevel.is_in_bounds(num_mark))
 			continue
 		num_mark.write_number(hangar_num) // deletes the mark
+	for(var/obj/effect/landmark/outpost/shaft_number/shaft_mark in GLOB.outpost_landmarks)
+		if(!vlevel.is_in_bounds(shaft_mark))
+			continue
+		shaft_mark.write_number(shaft.name) // deletes the mark
 	for(var/obj/effect/landmark/outpost/hangar_crate_spawner/crate_spawner_mark in GLOB.outpost_landmarks)
 		if(!vlevel.is_in_bounds(crate_spawner_mark))
 			continue

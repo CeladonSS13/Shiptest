@@ -10,7 +10,7 @@
 	attack_verb = "burn"
 	attack_sound = 'sound/weapons/etherealhit.ogg'
 	miss_sound = 'sound/weapons/etherealmiss.ogg'
-	meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/ethereal
+	meat = /obj/item/food/meat/slab/human/mutant/ethereal
 	mutantstomach = /obj/item/organ/stomach/ethereal
 	mutanttongue = /obj/item/organ/tongue/ethereal
 	siemens_coeff = 0.5 //They thrive on energy
@@ -100,7 +100,7 @@
 	button_icon_state = "plant-22"
 	// [CELADON-EDIT] - CELADON_FLORA
 	// icon_icon = 'icons/obj/flora/plants.dmi' // CELADON-EDIT - ORIGINAL
-	icon_icon = 'mod_celadon/_storge_icons/icons/plants.dmi'
+	icon_icon = 'mod_celadon/_storge_icons/icons/structures/obj/flora/plants.dmi'
 	// [/CELADON-EDIT]
 	background_icon_state = "bg_alien"
 

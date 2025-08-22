@@ -20,7 +20,7 @@
 /obj/item/ammo_box/shuffler/a12g
 	name = "buckshot shuffler"
 	desc = "Buckshot magazine with shuffle function. Don't forget your release of liability."
-	icon = 'mod_celadon/_storge_icons/icons/ammo/ammo.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi'
 	base_icon_state = "buckshot_shuffler"
 	icon_state = "buckshot_shuffler-0"
 	caliber = "12ga"

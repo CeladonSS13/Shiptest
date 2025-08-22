@@ -113,6 +113,7 @@
 /obj/item/organ/heart/demon/Stop()
 	return 0 // Always beating.
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /mob/living/simple_animal/slaughter/laughter
 	// The laughter demon! It's everyone's best friend! It just wants to hug
 	// them so much, it wants to hug everyone at once!
@@ -154,7 +155,7 @@
 
 /mob/living/simple_animal/slaughter/laughter/Initialize()
 	. = ..()
-	if(SSevents.holidays && SSevents.holidays[APRIL_FOOLS])
+	if(check_holidays(APRIL_FOOLS))
 		icon_state = "honkmon"
 
 /mob/living/simple_animal/slaughter/laughter/Destroy()
@@ -195,3 +196,4 @@
 		victim.forceMove(get_turf(victim))
 		victim.exit_blood_effect()
 		victim.visible_message(span_warning("[victim] falls out of the air, covered in blood, looking highly confused. And dead."))
+// [/CELADON-ADD]

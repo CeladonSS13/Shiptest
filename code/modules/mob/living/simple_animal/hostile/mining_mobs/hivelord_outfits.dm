@@ -182,7 +182,7 @@
 			/obj/item/pickaxe/silver = 4,
 			/obj/item/pickaxe/diamond = 2,
 			/obj/item/gun/energy/kinetic_accelerator = 2,
-			/obj/item/kinetic_crusher/old = 1
+			// /obj/item/kinetic_crusher/old = 1 - [CELADON-DELETE] - Баланс
 			)
 		)
 	if(prob(75))
@@ -249,8 +249,8 @@
 	else if (prob(75))
 		backpack_contents = list()
 		back = pick_weight(list(
-			/obj/item/kinetic_crusher = 9,
-			/obj/item/kinetic_crusher/old = 1
+			// /obj/item/kinetic_crusher = 9, - [CELADON-DELETE] - Баланс
+			// /obj/item/kinetic_crusher/old = 1 - [CELADON-DELETE] - Баланс
 			)
 		)
 
@@ -380,7 +380,6 @@
 			/obj/item/stock_parts/matter_bin/adv = 2,
 			/obj/item/survey_handheld = 1,
 			/obj/item/weldingtool/electric = 1,
-			/obj/item/mmi/posibrain = 1,
 			/obj/item/reagent_containers/glass/beaker/plastic = 1,
 			/obj/item/organ/eyes/robotic/shield = 1,
 			/obj/item/organ/eyes/robotic/glow = 1,

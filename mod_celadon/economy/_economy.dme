@@ -20,10 +20,10 @@
 #include "code/exports/tools.dm"
 #include "code/exports/weapons.dm"
 
-#include "code/missions/_mission.dm"
+// #include "code/missions/_mission.dm"
 #include "code/missions/acquire_mission.dm"
 // #include "code/missions/drill_mission.dm"
-#include "code/missions/research_mission.dm"
+// #include "code/missions/research_mission.dm"
 
 #include "code/supply_pack/_prices.dm"
 #include "code/supply_pack/ammo.dm"
@@ -57,12 +57,10 @@
 
 #include "code/supply_pack_faction/inteq/_prices.dm"
 #include "code/supply_pack_faction/inteq/clothing.dm"
-#include "code/supply_pack_faction/inteq/gun.dm"
 
 #include "code/supply_pack_faction/nanotrasen/_prices.dm"
 #include "code/supply_pack_faction/nanotrasen/ammo.dm"
 #include "code/supply_pack_faction/nanotrasen/clothing.dm"
-#include "code/supply_pack_faction/nanotrasen/gun.dm"
 
 #include "code/supply_pack_faction/solfed/_prices.dm"
 #include "code/supply_pack_faction/solfed/ammo.dm"

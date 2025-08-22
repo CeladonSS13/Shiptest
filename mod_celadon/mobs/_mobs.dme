@@ -3,6 +3,7 @@
 
 #include "_mobs.dm"
 
+#include "code/ai_controller.dm"
 #include "code/hostile/roaches/reagent_containers.dm"
 #include "code/hostile/roaches/roach.dm"
 #include "code/hostile/roaches/fuhrer.dm"
@@ -33,6 +34,7 @@
 #include "code/pets/emma.dm"
 #include "code/pets/fennec.dm"
 #include "code/pets/moro.dm"
+#include "code/pets/pig.dm"
 #include "code/pets/rouge.dm"
 #include "code/pets/syndicat.dm"
 #include "code/pets/syndifox.dm"
@@ -41,6 +43,8 @@
 
 #include "code/simple_animal/bots.dm"
 #include "code/simple_animal/iriska.dm"
+#include "code/simple_animal/faction/solfed.dm"
+#include "code/simple_animal/faction/solfed_corpse.dm"
 
 #include "code/animamobs.dm"
 

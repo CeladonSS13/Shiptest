@@ -1,23 +1,27 @@
 /datum/mission/outpost/research
 	name = "Electrical storm research mission"
-	desc = " require data on the behavior of electrical storms in the system for an ongoing study. \
+	desc = " requires data on the behavior of electrical storms in the system for an ongoing study. \
 			Please anchor the attached sensor array to your ship and fly it through the storms. \
 			It must be powered to collect the data. "
-	value = 3000 // base value, before adding bonus for number of things to fly through
+	value = 1850 // base value, before adding bonus for number of things to fly through
 	duration = 60 MINUTES
 	weight = 8
 
 	var/datum/overmap/objective_type = /datum/overmap/event/electric
 	var/obj/machinery/mission_scanner/scanner
+	///how many storms have we flown through already
 	var/num_current = 0
+	///goal number of storms
 	var/num_wanted = 5
 	var/researcher_name
+	///how much is a storm worth to fly through
+	var/storm_value = 150
 
 /datum/mission/outpost/research/New(...)
 	researcher_name = SSmissions.get_researcher_name()
-	num_wanted = rand(num_wanted - 1, num_wanted + 1)
-	// value += num_wanted * 150	// [CELADON-REMOVE] - CELADON_ECONOMY
-	desc = researcher_name + desc
+	num_wanted = rand(num_wanted - 2, num_wanted + 2)
+	value += num_wanted * storm_value
+	desc = "[researcher_name] [desc]"
 	return ..()
 
 /datum/mission/outpost/research/accept(datum/overmap/ship/controlled/acceptor, turf/accept_loc)
@@ -54,7 +58,10 @@
 	var/obj/docking_port/mobile/scanner_port
 	if(failed || (num_current >= num_wanted))
 		return
-	over_obj = locate(objective_type) in ship.current_overmap.overmap_container[ship.x][ship.y]
+	// [CELADON-EDIT] - CELADON_FIXES - Округляем координаты
+	// over_obj = locate(objective_type) in ship.current_overmap.overmap_container[ship.x][ship.y]	// ORIGINAL
+	over_obj = locate(objective_type) in ship.current_overmap.overmap_container[floor(ship.x)][floor(ship.y)]
+	// [/CELADON-EDIT]
 	scanner_port = SSshuttle.get_containing_shuttle(scanner)
 	if(!over_obj || !scanner.is_operational || scanner_port?.current_ship != servant)
 		return
@@ -65,7 +72,8 @@
 	desc = " require data on the behavior of asteroid fields in the system for an ongoing study. \
 			Please anchor the attached sensor array to your ship and fly it through the fields. \
 			It must be powered to collect the data."
-	value = 4000
+	value = 1500
+	storm_value = 200
 	weight = 4
 	objective_type = /datum/overmap/event/meteor
 
@@ -74,7 +82,8 @@
 	desc = " require data on the migration patterns of space carp for an ongoing study. \
 			Please anchor the attached sensor array to your ship and fly it through the fields. \
 			It must be powered to collect the data."
-	value = 2000
+	value = 88
+	storm_value = 150
 	weight = 4
 	num_wanted = 3
 	objective_type = /datum/overmap/event/meteor/carp
@@ -84,7 +93,8 @@
 	desc = " require data on the density of space dust for updated navcharts. \
 			Please anchor the attached sensor array to your ship and fly it through the fields. \
 			It must be powered to collect the data."
-	value = 1000
+	value = 800
+	storm_value = 150
 	weight = 4
 	objective_type = /datum/overmap/event/meteor/dust
 
@@ -93,8 +103,9 @@
 	desc = "We require data on the behavior of radiation storms in the system for an ongoing study. \
 			Please anchor the attached sensor array to your ship and fly it through the fields. \
 			It must be powered to collect the data."
-	value = 3500
+	value = 1500
 	weight = 2
+	storm_value = 100
 	objective_type = /datum/overmap/event/rad
 
 /datum/mission/outpost/research/ion
@@ -102,8 +113,9 @@
 	desc = "We require data on the behavior of electromagnetic storms in the system for an ongoing study. \
 			Please anchor the attached sensor array to your ship and fly it through the storms. \
 			It must be powered to collect the data."
-	value = 5500
+	value = 2500
 	weight = 2
+	storm_value = 100
 	objective_type = /datum/overmap/event/emp
 
 /datum/mission/outpost/research/flare
@@ -111,7 +123,8 @@
 	desc = "We require data on the behavior of solar flares in the system for an ongoing study. \
 			Please anchor the attached sensor array to your ship and fly it through the fields. \
 			It must be powered to collect the data."
-	value = 4500
+	value = 2000
+	storm_value = 200
 	weight = 2
 	objective_type = /datum/overmap/event/flare
 

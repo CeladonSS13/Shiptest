@@ -146,6 +146,34 @@
 	name = "Cargo Mining"
 	icon_state = "mining"
 
+/area/ruin/asteroid/limafacility/office
+	name = "Office"
+	icon_state = "bridge"
+
+/area/ruin/asteroid/limafacility/lightzone
+	name = "Light Zone"
+	icon_state = "yellow"
+
+/area/ruin/asteroid/limafacility/heavyzone
+	name = "Heavy Zone"
+	icon_state = "green"
+
+/area/ruin/asteroid/limafacility/security
+	name = "Security"
+	icon_state = "security"
+
+/area/ruin/asteroid/limafacility/dorm
+	name = "Dorm"
+	icon_state = "crew_quarters"
+
+/area/ruin/asteroid/limafacility/hangar
+	name = "Cargo"
+	icon_state = "storage"
+
+/area/ruin/asteroid/limafacility/shuttle
+	name = "shuttle"
+	icon_state = "shuttle"
+
 /// MARK: Ocean Town
 
 /area/ruin/beach/oceantown
@@ -177,3 +205,17 @@
 /area/ruin/beach/float_resort/villa
 	name = "float resort villa"
 	icon_state = "float_resort_villa"
+
+/// MARK: jungleplanet
+/area/ruin/jungle/syndifortmed
+	name = "Syndi Fort Medbay"
+	icon_state = "blue"
+/area/ruin/jungle/syndifort2
+	name = "Syndi Fort 2"
+	icon_state = "red"
+/area/ruin/jungle/syndifort3
+	name = "Syndi Fort 3"
+	icon_state = "yellow"
+/area/ruin/jungle/syndifortshuttle
+	name = "Syndi Fort Shuttle"
+	icon_state = "green"

@@ -29,10 +29,7 @@
 	if(heat_creation)
 		heat_engine()
 	var/to_use = fuel_use * (percentage / 100) * seconds_per_tick
-	// [CELADON-EDIT] - CELADON_FIXES
-	// return resolved_heater.consume_fuel(to_use, fuel_type) / to_use * percentage / 100 * thrust //This proc returns how much was actually burned, so let's use that and multiply it by the thrust to get all the thrust we CAN give.	 // CELADON-EDIT - ORIGINAL
-	return resolved_heater.consume_fuel(to_use, fuel_type)
-	// [/CELADON-EDIT]
+	return resolved_heater.consume_fuel(to_use, fuel_type) / to_use * percentage / 100 * thrust //This proc returns how much was actually burned, so let's use that and multiply it by the thrust to get all the thrust we CAN give.
 
 /obj/machinery/power/shuttle/engine/fueled/return_fuel()
 	. = ..()
@@ -144,7 +141,7 @@
 	///what portion of the mols in the attached heater to "burn"
 	var/fuel_consumption = 0.0125
 	//multiplier for thrust
-	thrust = 3
+	thrust = 8
 	//used by stockparts, efficiency_multiplier
 	var/consumption_multiplier = 1
 	//If this engine should create heat when burned.

@@ -7,7 +7,7 @@
 	species_traits = list(EYECOLOR)
 	mutant_bodyparts = list("vox_head_quills", "vox_neck_quills")
 	default_features = list("mcolor" = "0F0", "wings" = "None", "vox_head_quills" = "None", "vox_neck_quills" = "None", "body_size" = "Normal")
-	meat = /obj/item/reagent_containers/food/snacks/meat/slab/chicken
+	meat = /obj/item/food/meat/slab/chicken
 	disliked_food = GRAIN
 	liked_food = MEAT
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP
@@ -19,6 +19,7 @@
 	species_eye_path = 'icons/mob/species/vox/vox_parts.dmi'
 	punchdamagelow = 6
 	punchdamagehigh = 12
+	coldmod = 0.8	// [CELADON-ADD] - CELADON_BALANCE_SPECIES - Даем воксам резист к холоду на 20%
 	mutanttongue = /obj/item/organ/tongue/vox
 	species_language_holder = /datum/language_holder/vox
 

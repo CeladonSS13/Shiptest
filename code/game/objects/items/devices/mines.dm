@@ -473,11 +473,11 @@
 /obj/item/mine/pressure/explosive/fire/mine_effect(mob/victim)
 	if(victim?.is_holding(src))//in case it's been picked up
 		for(var/turf/T in view(4,victim))
-			T.IgniteTurf(15)
+			T.ignite_turf(15)
 			new /obj/effect/hotspot(T)
 	else
 		for(var/turf/T in view(4,src))
-			T.IgniteTurf(15)
+			T.ignite_turf(15)
 			new /obj/effect/hotspot(T)
 	. = ..()
 
@@ -592,10 +592,10 @@
 /obj/item/mine/proximity/explosive/plasma/mine_effect(mob/victim)
 	if(victim.is_holding(src))//in case it's been picked up
 		for(var/turf/T in view(3,victim))
-			T.IgniteTurf(25, "green")
+			T.ignite_turf(25, "green")
 	else
 		for(var/turf/T in view(3,src))
-			T.IgniteTurf(25, "green")
+			T.ignite_turf(25, "green")
 	. = ..()
 
 //Manhacks... so pretty...
@@ -852,22 +852,3 @@ LIVE_MINE_HELPER(pressure/sound)
 		/obj/item/mine/pressure/explosive/shrapnel/live = 3,
 		/obj/item/mine/pressure/explosive/rad/live = 3,
 		/obj/item/mine/pressure/explosive/fire/live = 3)
-
-/obj/effect/spawner/minefield
-	name = "minefield spawner"
-	var/minerange = 9
-	var/minetype = /obj/item/mine/pressure/explosive/rusty/live
-
-/obj/effect/spawner/minefield/Initialize(mapload)
-	. = ..()
-	for(var/turf/open/T in view(minerange,loc))
-		if(prob(5))
-			new minetype(T)
-
-/obj/effect/spawner/minefield/random
-	name = "random minefield spawner"
-	minetype = /obj/effect/spawner/random/mine
-
-/obj/effect/spawner/minefield/manhack
-	name = "manhack field spawner"
-	minetype = /obj/item/mine/proximity/spawner/manhack/live

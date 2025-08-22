@@ -330,9 +330,9 @@
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "iS" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/riol,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/riol,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/riol,
+/obj/item/food/meat/slab/human/mutant/riol,
+/obj/item/food/meat/slab/human/mutant/riol,
+/obj/item/food/meat/slab/human/mutant/riol,
 /obj/item/organ/tail/riol,
 /turf/open/floor/wood/ebony,
 /area/ruin/rockplanet/lasttemplar/dorm)
@@ -870,8 +870,7 @@
 /turf/open/floor/suns/dark,
 /area/ruin/rockplanet/lasttemplar/office)
 "wt" = (
-/obj/machinery/porta_turret/ship/ramzi/light{
-	dir = 8;
+/obj/machinery/porta_turret/ruin/ramzi/light{
 	id = "LastTemplar"
 	},
 /turf/open/floor/plating/asteroid/rockplanet,
@@ -931,7 +930,7 @@
 /turf/open/floor/concrete/pavement/rockplanet/lit,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "xv" = (
-/obj/machinery/porta_turret/ship/ramzi/heavy{
+/obj/machinery/porta_turret/ruin/ramzi/heavy{
 	id = "LastTemplar"
 	},
 /turf/open/floor/plating/asteroid/rockplanet,
@@ -1061,13 +1060,13 @@
 "yV" = (
 /obj/structure/table/wood,
 /obj/item/bong/lungbuster,
-/obj/item/reagent_containers/food/snacks/grown/cannabis,
-/obj/item/reagent_containers/food/snacks/grown/cannabis,
+/obj/item/food/grown/cannabis,
+/obj/item/food/grown/cannabis,
 /turf/open/floor/wood/ebony,
 /area/ruin/rockplanet/lasttemplar/dorm)
 "zk" = (
 /mob/living/simple_animal/hostile/human/ramzi/ranged/space/stormtrooper/smg{
-	health = 200S;
+	health = 200;
 	maxHealth = 200
 	},
 /obj/structure/cable/yellow{
@@ -1135,7 +1134,7 @@
 /area/ruin/rockplanet/lasttemplar/medbay)
 "AU" = (
 /obj/structure/table/glass,
-/obj/item/reagent_containers/food/snacks/cookie,
+/obj/item/food/cookie,
 /obj/item/reagent_containers/food/drinks/coffee{
 	pixel_y = 16;
 	pixel_x = 12
@@ -1152,7 +1151,7 @@
 /area/ruin/rockplanet/lasttemplar/office)
 "Bk" = (
 /obj/structure/table/glass,
-/obj/item/reagent_containers/food/snacks/cherrycupcake{
+/obj/item/food/cherrycupcake{
 	pixel_y = 9
 	},
 /turf/open/floor/wood/ebony,
@@ -1299,8 +1298,7 @@
 	health = 500;
 	melee_damage_lower = 50;
 	melee_damage_upper = 50;
-	maxHealth = 500;
-	movespeed_modification = 1.2
+	maxHealth = 500
 	},
 /turf/open/floor/suns/diagonal{
 	color = "#792f27"
@@ -1478,7 +1476,7 @@
 /turf/open/floor/concrete/pavement/rockplanet/lit,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "IA" = (
-/obj/item/food/cake/clown_cake,
+/obj/item/food/cake/bsvc,
 /obj/structure/table/wood,
 /turf/open/floor/wood/ebony,
 /area/ruin/rockplanet/lasttemplar/dorm)
@@ -2093,12 +2091,11 @@
 	gps_name = "???l";
 	melee_damage_lower = 30;
 	melee_damage_upper = 35;
-	move_to_delay = 1;
 	aggro_vision_range = 8;
 	crusher_loot = list(/obj/item/upgradescroll);
 	loot = list(/obj/item/clothing/suit/space/hardsuit/ert/paranormal/inquisitor);
 	speed = 2;
-	movespeed_modification = 1.2
+	move_to_delay = 1
 	},
 /obj/effect/temp_visual/cult/turf,
 /obj/effect/decal/cleanable/dirt,
@@ -4116,7 +4113,7 @@ MQ
 MQ
 Vm
 he
-wt
+ps
 Jc
 QZ
 Dn
@@ -4219,7 +4216,7 @@ he
 he
 he
 he
-ps
+wt
 qq
 he
 YV

@@ -3,7 +3,7 @@
 /// author - автор(ы) этого модпака.
 
 /datum/modpack/return_content_clowns
-	name = "Return conten clown and mime"
+	name = "Return content clown and mime"
 	desc = "Этот мод возвращает вырезаный контент офами, клоунов и мимов и все что с ними связано обратно в билд."
 	author = "MrCat15352"
 

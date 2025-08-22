@@ -20,14 +20,14 @@
 
 /datum/faction/elysium
 	name = FACTION_ELYSIUM
-	prefixes = list("EUSM", "EUSQ", "EUSF", "EUSR",)
+	prefixes = list("EUSM", "EUSQ", "EUSF", "EUSR", "ESV")
 
 /datum/faction/pirate
 	name = FACTION_PIRATES
-	prefixes = list("PIRATE")
+	prefixes = list("PIRATE", "RSV")
 
 /datum/faction/nt
-	prefixes = list("NTSV", "NTBSV", "NTASV", "NTSSV", "NTTSV", "NTMSV", "NTLSV", "NTDSV", "NTSPSV",)
+	prefixes = list("NTSV", "NTBSV", "NTASV", "NTSSV", "NTTSV", "NTMSV", "NTLSV", "NTDSV", "NTSPSV", "NTESV", "NTRSV")
 
 /datum/faction/inteq
 	prefixes = list("IRMV", "IQMSSV", "BIQSV", "LIQSV", "SPIQSV")
@@ -36,4 +36,4 @@
 	prefixes = list("SFSV", "BSFSV", "ASFSV", "SSFSV", "MDSFSV", "LSFSV", "MSFSV", "SPSFSV")
 
 /datum/faction/syndicate
-	prefixes = list("SEV", "SSV", "SMMV", "PCAC", "SSASV", "SSSV", "SOSSV", "TSSV", "SABSV", "BSSV", "ASSV", "MSSV", "LSSV", "DSSV")
+	prefixes = list("SEV", "SSV", "SMMV", "PCAC", "SSASV", "SSSV", "SOSSV", "TSSV", "SABSV", "BSSV", "ASSV", "MSSV", "LSSV", "DSSV", "RSSV",)

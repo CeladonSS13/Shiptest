@@ -1,6 +1,6 @@
 /client/proc/cmd_mentor_say(msg as text)
-	set category = "Mentor"
-	set name = "Msay"
+	// set category = "Mentor"
+	// set name = "Msay" // [CELADON-DELETE] Mentors not works!!!
 	set hidden = 1
 	if(!check_mentor())
 		return
@@ -17,7 +17,7 @@
 		MESSAGE_TYPE_MENTORCHAT,
 		confidential = TRUE)
 
-	SSblackbox.record_feedback("tally", "mentor_verb", 1, "Msay") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+	SSblackbox.record_feedback("tally", "mentor_verb", 1, "Msay")
 
 /client/proc/get_mentor_say()
 	var/msg = input(src, null, "msay \"text\"") as text|null

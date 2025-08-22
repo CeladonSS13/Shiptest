@@ -1,6 +1,6 @@
 
 
-/mob/living/carbon/apply_damage(damage, damagetype = BRUTE, def_zone = null, blocked = FALSE, forced = FALSE, spread_damage = FALSE, break_modifier = 1, sharpness = FALSE)
+/mob/living/carbon/apply_damage(damage, damagetype = BRUTE, def_zone = null, blocked = FALSE, forced = FALSE, spread_damage = FALSE, sharpness = FALSE)
 	SEND_SIGNAL(src, COMSIG_MOB_APPLY_DAMGE, damage, damagetype, def_zone)
 	var/hit_percent = (100-blocked)/100
 	if(!damage || (!forced && hit_percent <= 0))
@@ -21,7 +21,7 @@
 	switch(damagetype)
 		if(BRUTE)
 			if(BP)
-				if(BP.receive_damage(damage_amount, 0, break_modifier, sharpness = sharpness))
+				if(BP.receive_damage(damage_amount, 0, sharpness = sharpness))
 					update_damage_overlays()
 			else //no bodypart, we deal damage with a more general method.
 				adjustBruteLoss(damage_amount, forced = forced)
@@ -29,7 +29,7 @@
 				shake_animation(damage_amount)
 		if(BURN)
 			if(BP)
-				if(BP.receive_damage(0, damage_amount, break_modifier, sharpness = sharpness))
+				if(BP.receive_damage(0, damage_amount, sharpness = sharpness))
 					update_damage_overlays()
 			else
 				adjustFireLoss(damage_amount, forced = forced)
@@ -53,15 +53,28 @@
 
 
 //These procs fetch a cumulative total damage from all bodyparts
+// [CELADON-EDIT] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
+// /mob/living/carbon/getBruteLoss(ignore_integrity = TRUE)	// CELADON-EDIT - ORIGINAL
 /mob/living/carbon/getBruteLoss()
+// [/CELADON-EDIT]
 	var/amount = 0
 	for(var/obj/item/bodypart/BP as anything in bodyparts)
+// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
+//		if (!ignore_integrity && BP.get_curable_damage() <= 0)
+//			continue
+// [/CELADON-REMOVE]
 		amount += BP.brute_dam
 	return amount
-
+// [CELADON-EDIT] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
+// /mob/living/carbon/getFireLoss(ignore_integrity = TRUE)	// CELADON-EDIT - ORIGINAL
 /mob/living/carbon/getFireLoss()
+// [/CELADON-EDIT]
 	var/amount = 0
 	for(var/obj/item/bodypart/BP as anything in bodyparts)
+// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
+//		if (!ignore_integrity && BP.get_curable_damage() <= 0)
+//			continue
+// [/CELADON-REMOVE]
 		amount += BP.burn_dam
 	return amount
 

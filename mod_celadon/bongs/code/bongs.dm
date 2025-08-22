@@ -1,9 +1,9 @@
 /obj/item/bong
 	name = "bong"
 	desc = "Technically known as a water pipe."
-	icon = 'mod_celadon/_storge_icons/icons/bongs/bong.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/bongs/lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/bongs/righthand.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/bong.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/bong_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/bong_righthand.dmi'
 	icon_state = "bongoff"
 
 	///The icon state when the bong is lit
@@ -34,8 +34,8 @@
 	create_reagents(chem_volume, INJECTABLE | NO_REACT)
 
 /obj/item/bong/attackby(obj/item/used_item, mob/user, params)
-	if(istype(used_item, /obj/item/reagent_containers/food/snacks/grown/))
-		var/obj/item/reagent_containers/food/snacks/grown/grown_item = used_item
+	if(istype(used_item, /obj/item/food/grown/))
+		var/obj/item/food/grown/grown_item = used_item
 		if(packed_item)
 			balloon_alert(user, "already packed!")
 			return

@@ -59,7 +59,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	///If your race uses a non standard bloodtype (A+, O-, AB-, etc). For example, lizards have L type blood.
 	var/exotic_bloodtype = ""
 	///What the species drops when gibbed by a gibber machine.
-	var/meat = /obj/item/reagent_containers/food/snacks/meat/slab/human
+	var/meat = /obj/item/food/meat/slab/human
 	///What skin the species drops when gibbed by a gibber machine.
 	var/skinned_type
 	///Bitfield for food types that the species likes, giving them a mood boost. Lizards like meat, for example.
@@ -486,7 +486,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		C.setToxLoss(0, TRUE, TRUE)
 
 	if(TRAIT_NOMETABOLISM in inherent_traits)
-		C.reagents.end_metabolization(C, keep_liverless = TRUE)
+		C.end_metabolization(C, keep_liverless = TRUE)
 
 	if(TRAIT_GENELESS in inherent_traits)
 		C.dna.remove_all_mutations() // Radiation immune mobs can't get mutations normally
@@ -722,7 +722,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 						sclera_overlay = mutable_appearance('icons/mob/species/kepori/kepori_eyes.dmi', eyes.sclera_icon_state, -BODYPARTS_LAYER)
 					// [CELADON-ADD] - CELADON_LANIUS
 					else if(islanius(H))
-						eye_overlay = mutable_appearance('mod_celadon/_storge_icons/icons/lanius/lanius_organs.dmi', eyes.eye_icon_state, -BODYPARTS_LAYER)
+						eye_overlay = mutable_appearance('mod_celadon/_storge_icons/icons/species/lanius/lanius_organs.dmi', eyes.eye_icon_state, -BODYPARTS_LAYER)
 					// [/CELADON-ADD]
 					else
 						eye_overlay = mutable_appearance(species_eye_path || 'icons/mob/human_face.dmi', eyes.eye_icon_state, -BODYPARTS_LAYER)
@@ -914,7 +914,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			bodyparts_to_add -= "tajara_facial_hairs"
 
 	if("tajara_ears_markings" in mutant_bodyparts)
-		if(!H.dna.features["tajara_ears_markings"] || H.dna.features["tajara_ears_markings"] == "None" || H.head && (H.head.flags_inv & HIDEFACE) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEFACE)) || !HD) // || HD.status == BODYTYPE_ROBOTIC
+		if(!H.dna.features["tajara_ears_markings"] || H.dna.features["tajara_ears_markings"] == "None" || H.head && (H.head.flags_inv & HIDEEARS) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEEARS)) || !HD) // || HD.status == BODYTYPE_ROBOTIC
 			bodyparts_to_add -= "tajara_ears_markings"
 
 	if("tajara_head_markings" in mutant_bodyparts)
@@ -934,7 +934,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			bodyparts_to_add -= "tajara_hairs"
 
 	if("tajara_ears" in mutant_bodyparts)
-		if(!H.dna.features["tajara_ears"] || H.dna.features["tajara_ears"] == "None" || (H.head && (H.head.flags_inv & HIDEHAIR)))
+		if(!H.dna.features["tajara_ears"] || H.dna.features["tajara_ears"] == "None" || (H.head && (H.head.flags_inv & HIDEEARS)))
 			bodyparts_to_add -= "tajara_ears"
 
 	if("tajara_tail" in mutant_bodyparts)
@@ -957,7 +957,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			bodyparts_to_add -= "riol_facial_hairs"
 
 	if("riol_ears_markings" in mutant_bodyparts)
-		if(!H.dna.features["riol_ears_markings"] || H.dna.features["riol_ears_markings"] == "None" || H.head && (H.head.flags_inv & HIDEFACE) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEFACE)) || !HD) // || HD.status == BODYTYPE_ROBOTIC
+		if(!H.dna.features["riol_ears_markings"] || H.dna.features["riol_ears_markings"] == "None" || H.head && (H.head.flags_inv & HIDEEARS) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEEARS)) || !HD) // || HD.status == BODYTYPE_ROBOTIC
 			bodyparts_to_add -= "riol_ears_markings"
 
 	if("riol_head_markings" in mutant_bodyparts)
@@ -989,11 +989,11 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			bodyparts_to_add -= "riol_hairs"
 
 	if("riol_tail" in mutant_bodyparts)
-		if(!H.dna.features["riol_tail"] || H.dna.features["riol_tail"] == "None" || H.wear_suit && (H.wear_suit.flags_inv & HIDEJUMPSUIT))
+		if(!H.dna.features["riol_tail"] || H.dna.features["riol_tail"] == "None" || (H.wear_suit && (H.wear_suit.flags_inv & HIDETAIL)))
 			bodyparts_to_add -= "riol_tail"
 
 	if("riol_ears" in mutant_bodyparts)
-		if(!H.dna.features["riol_ears"] || H.dna.features["riol_ears"] == "None" || (H.head && (H.head.flags_inv & HIDEHAIR)))
+		if(!H.dna.features["riol_ears"] || H.dna.features["riol_ears"] == "None" || (H.head && (H.head.flags_inv & HIDEEARS)))
 			bodyparts_to_add -= "riol_ears"
 	// [/CELADON-ADD]
 
@@ -1955,7 +1955,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 	return TRUE
 
-/datum/species/proc/apply_damage(damage, damagetype = BRUTE, def_zone = null, blocked, mob/living/carbon/human/H, forced = FALSE, spread_damage = FALSE, break_modifier = 1, sharpness = FALSE)
+/datum/species/proc/apply_damage(damage, damagetype = BRUTE, def_zone = null, blocked, mob/living/carbon/human/H, forced = FALSE, spread_damage = FALSE, sharpness = FALSE)
 	SEND_SIGNAL(H, COMSIG_MOB_APPLY_DAMGE, damage, damagetype, def_zone)
 	var/hit_percent = (100-(blocked+armor))/100
 	hit_percent = (hit_percent * (100-H.physiology.damage_resistance))/100
@@ -1978,7 +1978,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			H.damageoverlaytemp = 20
 			var/damage_amount = forced ? damage : damage * hit_percent * brutemod * H.physiology.brute_mod
 			if(BP)
-				if(BP.receive_damage(damage_amount, 0, break_modifier = break_modifier, sharpness = sharpness))
+				if(BP.receive_damage(damage_amount, 0, sharpness = sharpness))
 					H.update_damage_overlays()
 			else//no bodypart, we deal damage with a more general method.
 				H.adjustBruteLoss(damage_amount)
@@ -1988,7 +1988,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			H.damageoverlaytemp = 20
 			var/damage_amount = forced ? damage : damage * hit_percent * burnmod * H.physiology.burn_mod
 			if(BP)
-				if(BP.receive_damage(0, damage_amount, break_modifier = break_modifier, sharpness = sharpness))
+				if(BP.receive_damage(0, damage_amount, sharpness = sharpness))
 					H.update_damage_overlays()
 			else
 				H.adjustFireLoss(damage_amount)

@@ -10,6 +10,7 @@
 	initial_temperature = TCMB
 	thermal_conductivity = 0
 	heat_capacity = 700000
+	flammability = -INFINITY // not a single chance in hell
 	initial_gas_mix = AIRLESS_ATMOS
 
 	FASTDMM_PROP(\

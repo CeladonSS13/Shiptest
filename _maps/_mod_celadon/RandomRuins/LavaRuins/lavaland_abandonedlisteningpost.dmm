@@ -63,7 +63,7 @@
 /area/ruin/unpowered/listening_post/commons)
 "bL" = (
 /obj/structure/flora/tree/dead/tall,
-/turf/open/floor/plating/grass/lava,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/ruin/unpowered)
 "bT" = (
 /obj/structure/chair/plastic{
@@ -152,7 +152,9 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 4
 	},
-/obj/effect/landmark/mission_poi/main/blackbox,
+/obj/effect/landmark/mission_poi/main/blackbox{
+	mission_index = 2
+	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered/listening_post/operations)
 "db" = (
@@ -518,11 +520,13 @@
 	pixel_x = -4
 	},
 /obj/item/spacecash/bundle/loadsamoney,
-/obj/item/documents/syndicate,
 /obj/machinery/light/small/directional/north,
 /obj/item/folder/documents/syndicate/red,
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 9
+	},
+/obj/effect/landmark/mission_poi/main{
+	type_to_spawn = /obj/item/documents/syndicate
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered/listening_post/operations)
@@ -618,10 +622,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/unpowered/listening_post/engineering)
-"kB" = (
-/obj/structure/flora/tree/dead/tall,
-/turf/open/floor/plating/grass/lava/purple,
-/area/ruin/unpowered)
 "lb" = (
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable{
@@ -704,13 +704,9 @@
 	},
 /turf/open/floor/carpet/nanoweave/red,
 /area/ruin/unpowered/listening_post/commons)
-"mp" = (
-/obj/structure/flora/ausbushes/sparsegrass/hell,
-/turf/open/floor/plating/grass/lava/purple,
-/area/ruin/unpowered)
 "mF" = (
 /obj/structure/flora/tree/dead/tall/grey,
-/turf/open/floor/plating/grass/lava,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/ruin/unpowered)
 "mG" = (
 /obj/structure/table/reinforced,
@@ -1174,10 +1170,6 @@
 /obj/structure/sign/departments/engineering,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/unpowered/listening_post/engineering)
-"tM" = (
-/obj/structure/flora/ausbushes/sparsegrass/hell,
-/turf/open/floor/plating/grass/lava/orange,
-/area/ruin/unpowered)
 "tS" = (
 /turf/open/floor/hangar/plasteel/white,
 /area/ruin/unpowered/listening_post)
@@ -1223,10 +1215,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered/listening_post/commons)
-"vC" = (
-/obj/structure/flora/ausbushes/grassybush/hell,
-/turf/open/floor/plating/grass/lava/orange,
-/area/ruin/unpowered)
 "vG" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -1315,10 +1303,6 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/ruin/unpowered/listening_post/canteen)
-"xv" = (
-/obj/structure/flora/ausbushes/grassybush/hell,
-/turf/open/floor/plating/grass/lava/purple,
-/area/ruin/unpowered)
 "xR" = (
 /obj/structure/table/reinforced,
 /obj/item/cutting_board{
@@ -1378,9 +1362,6 @@
 	},
 /turf/open/floor/carpet/nanoweave/red,
 /area/ruin/unpowered/listening_post/commons)
-"yN" = (
-/turf/open/floor/plating/grass/lava/purple,
-/area/ruin/unpowered)
 "yZ" = (
 /obj/item/trash/can{
 	pixel_y = -12;
@@ -1578,7 +1559,7 @@
 /area/ruin/unpowered/listening_post/operations)
 "BO" = (
 /obj/structure/flora/ausbushes/sparsegrass/hell,
-/turf/open/floor/plating/grass/lava,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/ruin/unpowered)
 "Cx" = (
 /obj/machinery/door/airlock/hatch{
@@ -1599,18 +1580,15 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/directional/west,
 /obj/structure/rack,
-/obj/item/reagent_containers/food/snacks/canned/beans{
+/obj/item/food/canned/beans{
 	pixel_y = 11;
 	pixel_x = 4
 	},
-/obj/item/reagent_containers/food/snacks/canned/beans{
+/obj/item/food/canned/beans{
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/obj/item/reagent_containers/food/snacks/canned/peaches{
-	pixel_y = 7;
-	pixel_x = 7
-	},
+/obj/item/food/canned/peaches,
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered/listening_post/canteen)
 "DE" = (
@@ -1968,10 +1946,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered/listening_post/canteen)
-"LI" = (
-/obj/structure/flora/tree/dead/barren,
-/turf/open/floor/plating/grass/lava/orange,
-/area/ruin/unpowered)
 "LV" = (
 /obj/structure/sign/warning/gasmask,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -2017,7 +1991,7 @@
 /area/ruin/unpowered/listening_post/operations)
 "MN" = (
 /obj/structure/flora/tree/dead/barren,
-/turf/open/floor/plating/grass/lava,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/ruin/unpowered)
 "MU" = (
 /obj/machinery/computer/security{
@@ -2250,9 +2224,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered/listening_post/commons)
-"QP" = (
-/turf/open/floor/plating/grass/lava/orange,
-/area/ruin/unpowered)
 "QS" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/arrow_ccw{
 	icon_state = "trimline";
@@ -2317,7 +2288,7 @@
 /area/ruin/unpowered/listening_post)
 "Tp" = (
 /obj/structure/flora/ausbushes/grassybush/hell,
-/turf/open/floor/plating/grass/lava,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/ruin/unpowered)
 "Ty" = (
 /obj/structure/cable{
@@ -2365,7 +2336,7 @@
 /turf/open/floor/carpet/nanoweave/red,
 /area/ruin/unpowered/listening_post/commons)
 "TS" = (
-/turf/open/floor/plating/grass/lava,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/ruin/unpowered)
 "Ut" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/arrow_ccw{
@@ -2385,7 +2356,7 @@
 "UB" = (
 /obj/structure/flora/ausbushes/sparsegrass/hell,
 /obj/structure/flora/ausbushes/sparsegrass/hell,
-/turf/open/floor/plating/grass/lava/orange,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/ruin/unpowered)
 "UV" = (
 /obj/structure/chair/office/light{
@@ -2477,7 +2448,7 @@
 /area/ruin/unpowered/listening_post)
 "Xi" = (
 /obj/structure/flora/ausbushes/fullgrass/hell,
-/turf/open/floor/plating/grass/lava,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/ruin/unpowered)
 "Xk" = (
 /obj/structure/cable{
@@ -2548,14 +2519,14 @@
 /area/ruin/unpowered/listening_post/operations)
 "YP" = (
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/food/snacks/ration{
+/obj/item/food/ration{
 	pixel_x = -8;
 	pixel_y = 1
 	},
-/obj/item/reagent_containers/food/snacks/ration{
+/obj/item/food/ration{
 	pixel_y = 4
 	},
-/obj/item/reagent_containers/food/snacks/ration{
+/obj/item/food/ration{
 	pixel_y = 7;
 	pixel_x = -9
 	},
@@ -3038,7 +3009,7 @@ zI
 zI
 Ta
 Ta
-yN
+TS
 Ap
 Ap
 qV
@@ -3075,8 +3046,8 @@ YK
 Qq
 zI
 Ta
-yN
-yN
+TS
+TS
 Ap
 qV
 qV
@@ -3085,7 +3056,7 @@ qV
 qV
 qV
 Ap
-QP
+TS
 Ap
 Ap
 Ap
@@ -3113,20 +3084,20 @@ Mg
 xR
 LB
 Ap
-mp
-kB
-yN
+BO
+bL
+TS
 qV
 qV
 "}
 (15,1,1) = {"
 qV
 qV
-QP
-QP
-QP
-QP
-QP
+TS
+TS
+TS
+TS
+TS
 Ap
 Ap
 Ta
@@ -3151,20 +3122,20 @@ wr
 YP
 LB
 Ap
-mp
-yN
-yN
+BO
+TS
+TS
 qV
 qV
 "}
 (16,1,1) = {"
 qV
 qV
-QP
-tM
-tM
-QP
-QP
+TS
+BO
+BO
+TS
+TS
 Ap
 Ap
 Ta
@@ -3189,8 +3160,8 @@ Zd
 aU
 LB
 Ap
-mp
-yN
+BO
+TS
 Ap
 qV
 qV
@@ -3198,12 +3169,12 @@ qV
 (17,1,1) = {"
 qV
 qV
-QP
-QP
-tM
-tM
-QP
-QP
+TS
+TS
+BO
+BO
+TS
+TS
 Ap
 Ap
 Ta
@@ -3228,20 +3199,20 @@ eU
 zI
 Ta
 mh
-mp
-yN
+BO
+TS
 qV
 qV
 "}
 (18,1,1) = {"
 qV
 qV
-QP
-QP
-QP
-tM
-tM
-QP
+TS
+TS
+TS
+BO
+BO
+TS
 Ap
 Ta
 Ta
@@ -3266,7 +3237,7 @@ DS
 ae
 Ta
 Ap
-yN
+TS
 Ap
 qV
 qV
@@ -3274,12 +3245,12 @@ qV
 (19,1,1) = {"
 qV
 qV
-QP
-QP
-LI
-QP
-tM
-QP
+TS
+TS
+MN
+TS
+BO
+TS
 Ap
 Ap
 Ta
@@ -3312,13 +3283,13 @@ qV
 (20,1,1) = {"
 qV
 qV
-QP
-QP
-QP
-vC
-QP
-tM
-QP
+TS
+TS
+TS
+Tp
+TS
+BO
+TS
 Ap
 Ta
 Ta
@@ -3351,12 +3322,12 @@ qV
 qV
 qV
 Ap
-tM
-tM
-QP
-QP
-QP
-QP
+BO
+BO
+TS
+TS
+TS
+TS
 Ap
 Ta
 Ta
@@ -3389,12 +3360,12 @@ qV
 qV
 qV
 Ap
-QP
-tM
-QP
-LI
-vC
-QP
+TS
+BO
+TS
+MN
+Tp
+TS
 Ap
 Ta
 Ta
@@ -3427,12 +3398,12 @@ qV
 qV
 Ap
 Ap
-QP
-QP
-tM
-QP
-QP
-QP
+TS
+TS
+BO
+TS
+TS
+TS
 Ap
 Ta
 Ta
@@ -3466,11 +3437,11 @@ qV
 Ap
 Ap
 Ap
-QP
-tM
-QP
-vC
-QP
+TS
+BO
+TS
+Tp
+TS
 Ap
 Ap
 Ta
@@ -3504,11 +3475,11 @@ qV
 qV
 Ap
 Ap
-QP
-QP
+TS
+TS
 UB
-QP
-QP
+TS
+TS
 Ap
 Ap
 Ta
@@ -3543,9 +3514,9 @@ qV
 Pj
 Ap
 Ap
-QP
-QP
-QP
+TS
+TS
+TS
 Ap
 Ap
 Ap
@@ -3582,8 +3553,8 @@ Ap
 Ap
 Ap
 Ap
-QP
-QP
+TS
+TS
 Ap
 Ap
 Ap
@@ -3778,9 +3749,9 @@ Ap
 Ap
 Ap
 Ap
-yN
-yN
-yN
+TS
+TS
+TS
 Ap
 Ta
 Ta
@@ -3815,12 +3786,12 @@ Ap
 Ap
 Ap
 Ap
-yN
-mp
-mp
-mp
-yN
-yN
+TS
+BO
+BO
+BO
+TS
+TS
 Ap
 Ta
 Ta
@@ -3852,13 +3823,13 @@ qV
 Ap
 Ap
 Ap
-yN
-mp
-mp
-mp
-mp
-mp
-yN
+TS
+BO
+BO
+BO
+BO
+BO
+TS
 Ap
 Ap
 Ap
@@ -3890,11 +3861,11 @@ qV
 Ap
 Ap
 Ap
-yN
-mp
-mp
-xv
-yN
+TS
+BO
+BO
+Tp
+TS
 Ap
 Ap
 Ap

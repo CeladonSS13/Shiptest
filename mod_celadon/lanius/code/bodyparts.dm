@@ -2,7 +2,7 @@
 /obj/item/organ/tongue/lanius
 	name = "lanius jaw"
 	desc = "Jaw of one of this lanius thing.. Better brought it back to him."
-	icon = 'mod_celadon/_storge_icons/icons/lanius/lanius_organs.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/lanius/lanius_organs.dmi'
 	icon_state = "tongue"
 	say_mod = "clicks"
 	decay_factor = 5
@@ -21,7 +21,7 @@
 /obj/item/organ/brain/lanius
 	name = "lanius core"
 	desc = "This is core of every lanius. Where did you get this?"
-	icon = 'mod_celadon/_storge_icons/icons/lanius/lanius_organs.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/lanius/lanius_organs.dmi'
 	icon_state = "heart"
 	zone = BODY_ZONE_CHEST
 	decay_factor = 5
@@ -71,7 +71,7 @@
 	organ_flags = ORGAN_FROZEN
 
 /obj/item/bodypart/head/lanius
-	icon = 'mod_celadon/_storge_icons/icons/lanius/lanius_bodyparts.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/lanius/lanius_bodyparts.dmi'
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_LANIUS
@@ -81,7 +81,7 @@
 	return
 
 /obj/item/bodypart/chest/lanius
-	icon = 'mod_celadon/_storge_icons/icons/lanius/lanius_bodyparts.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/lanius/lanius_bodyparts.dmi'
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_LANIUS
@@ -90,28 +90,28 @@
 	bodytype =  BODYTYPE_HUMANOID | BODYTYPE_ORGANIC
 
 /obj/item/bodypart/l_arm/lanius
-	icon = 'mod_celadon/_storge_icons/icons/lanius/lanius_bodyparts.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/lanius/lanius_bodyparts.dmi'
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_LANIUS
 	bodytype =  BODYTYPE_HUMANOID | BODYTYPE_ORGANIC
 
 /obj/item/bodypart/r_arm/lanius
-	icon = 'mod_celadon/_storge_icons/icons/lanius/lanius_bodyparts.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/lanius/lanius_bodyparts.dmi'
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_LANIUS
 	bodytype =  BODYTYPE_HUMANOID | BODYTYPE_ORGANIC
 
 /obj/item/bodypart/leg/left/lanius
-	icon = 'mod_celadon/_storge_icons/icons/lanius/lanius_bodyparts.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/lanius/lanius_bodyparts.dmi'
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_LANIUS
 	bodytype =  BODYTYPE_HUMANOID | BODYTYPE_ORGANIC
 
 /obj/item/bodypart/leg/right/lanius
-	icon = 'mod_celadon/_storge_icons/icons/lanius/lanius_bodyparts.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/lanius/lanius_bodyparts.dmi'
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_LANIUS

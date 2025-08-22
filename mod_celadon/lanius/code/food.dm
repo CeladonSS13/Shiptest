@@ -91,14 +91,14 @@ var/ration = list( /obj/item/stack/sheet/metal,
 // АХТУНГИ!
 
 /atom/movable/screen/alert/hungry/lanius
-	icon = 'mod_celadon/_storge_icons/icons/lanius/screen_alert.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/lanius/screen_alert.dmi'
 	name = "Hungry"
 	desc = "Some food would be good right about now."
 	icon_state = "hungry"
 
 
 /atom/movable/screen/alert/starving/lanius
-	icon = 'mod_celadon/_storge_icons/icons/lanius/screen_alert.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/species/lanius/screen_alert.dmi'
 	name = "Starving"
 	desc = "You're severely malnourished. The hunger pains make moving around a chore."
 	icon_state = "starving"

@@ -1,7 +1,7 @@
 //shows a list of clients we could send PMs to, then forwards our choice to cmd_Mentor_pm
 /client/proc/cmd_mentor_pm_panel()
-	set category = "Mentor"
-	set name = "Mentor PM"
+	// set category = "Mentor"
+	// set name = "Mentor PM" // [CELADON-DELETE] Mentors not works!!!
 	if(!check_mentor())
 		to_chat(src, span_warning("Error: Mentor-PM-Panel: Only Mentors may use this command."))
 		return
@@ -18,7 +18,7 @@
 			targets["(No Mob) - [T]"] = T
 	var/target = input(src,"To whom shall we send a message?","Mentor PM",null) as null|anything in sortList(targets)
 	cmd_mentor_pm(targets[target],null)
-	SSblackbox.record_feedback("tally", "mentor_verb", 1, "Mentor PM") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+	SSblackbox.record_feedback("tally", "mentor_verb", 1, "Mentor PM")
 
 
 //takes input from cmd_mentor_pm_context, cmd_Mentor_pm_panel or /client/Topic and sends them a PM.
