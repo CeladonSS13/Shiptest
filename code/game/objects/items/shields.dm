@@ -38,6 +38,7 @@
 // спрайты риотки блок
 // спрайт
 	var/broken_shield	// [CELADON-ADD] - Флаг на включение сломаных щитов из модов - BALLISTIC_SHIELD - Extended Edition
+	var/spread_bonus = 0 // [CELADON-ADD] - Щиты так же уменьшают разброс - BALLISTIC_SHIELD - Extended Chituka Edition
 
 /obj/item/shield/proc/on_block(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", damage = 0, attack_type = MELEE_ATTACK)
 	take_damage(damage)
@@ -96,6 +97,7 @@
 	material_flags = MATERIAL_NO_EFFECTS
 
 // [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition + Rebalance
+	spread_bonus = -3
 	slowdown = 0.5
 	max_integrity = 600
 	block_chance = 60
