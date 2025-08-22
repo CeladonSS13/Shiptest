@@ -10,8 +10,7 @@
 		/obj/item/stack/cable_coil/cut = 80,
 		/obj/item/stack/ore/salvage/scraptitanium/five = 60,
 		/obj/item/stack/ore/salvage/scrapmetal/five = 60,
-		/obj/item/stack/ore/salvage/scrapbluespace = 60,
-				/obj/item/computer_hardware/processor_unit = 40,
+		/obj/item/computer_hardware/processor_unit = 40,
 		/obj/item/computer_hardware/processor_unit = 40,
 		/obj/item/stock_parts/subspace/amplifier = 40,
 		/obj/item/stock_parts/subspace/amplifier = 40,
@@ -32,6 +31,12 @@
 						Through a complex, delicate weave of heat exchangers, Heat sinks installed on the ship recycles the heat generated into usable energy. The system works well, but the delicate nature of the exchange renders it highly volatile. \n\
 						Unfortunately, this monstrosity stuck in the endless loop of reloading... It seems internals have been melt..")
 
+/obj/item/trash/railgun_sabot
+	name = "84 mm hybrid railgun sabot"
+	desc = "A railgun sabot with propellant inside. Now this is rubbish. But what happens if you load it inside th... Huh..."
+	icon = 'icons/obj/ammunition/ammo_bullets.dmi'
+	icon_state = "84mm-hedp"
+
 /obj/structure/salvageable/railgun_platform
 	name = "Railgun platform"
 	desc = "The cells in this platform are the \n\
@@ -50,19 +55,31 @@
 		/obj/item/stock_parts/capacitor/quadratic = 40,
 		/obj/item/stock_parts/capacitor/quadratic = 40,
 		/obj/item/stock_parts/capacitor/quadratic = 40,
-		/obj/item/stock_parts/cell/crap/empty = 40,
-		/obj/item/stack/ore/salvage/scrapbluespace = 60)
+		/obj/item/stock_parts/cell/high/empty = 40)
 	bound_x = -32
 	bound_width = 64
 	pixel_x = -32
 	pixel_y = -64
+	var/volatility = 10
 
 /obj/structure/salvageable/railgun_platform/examine_more(mob/user)
 	. = ..()
-	. += span_warning("A side effect of their high capacity is a proportional increase in volatility, but before you install, you must agree to relieve yourself of all liability.")
+	. += span_warning("A side effect of their high capacity is a proportional increase in volatility, but before you install, you must agree to relieve yourself of all liability. \n\
+	You probably can make it 'safe' with some fumbling around.")
+
+/obj/structure/salvageable/railgun_platform/attacked_by(obj/item/attacking_item, mob/living/user)
+	loc.balloon_alert_to_viewers("[user] is loading the fucking BSA!", "I'm loading the BSA, I'm doing it!",10)
+	if(istype(attacking_item, /obj/item/trash/tray))
+		volatility = 100
+	. = ..()
+
+
+/obj/structure/salvageable/railgun_platform/interact(mob/user)
+	. = ..()
+	volatility = 1
 
 /obj/structure/salvageable/railgun_platform/crowbar_act(mob/living/user, obj/item/tool)
-	if(prob(10))
+	if(prob(volatility))
 		visible_message(span_danger("\The [src] internals scream, as the explosion enlights everyone around!"),
 			span_hear("You hear a loud electrical crack!"))
 		user.show_message("Apparently you have touched the WRONG place with the crowbar! OOPSIE!!")

@@ -11,6 +11,8 @@
 	/obj/item/stock_parts/cell/hyper = 3,
 	/obj/item/mod/module/anomaly_locked/antigrav/prebuilt = 3,
 	/obj/item/mod/module/tether = 3,
+	/obj/item/mod/module/shield = 2,
+	/obj/item/mod/module/shield/inteq = 1
 	)
 	contraband = list()
 	premium = list()

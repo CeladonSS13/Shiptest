@@ -22,7 +22,7 @@
 	add_avail(lastgen) // add power in process() so it doesn't update power output separately from the rest of the powernet (bad)
 	update_overlays()
 
-/obj/machinery/power/shuttle/engine/turbine/process_atmos(delta_time)
+/obj/machinery/power/shuttle/engine/turbine/degraded/process_atmos(delta_time)
 	if(!compressor)
 		set_machine_stat(BROKEN)
 		locate_machinery() // try to find the missing piece
