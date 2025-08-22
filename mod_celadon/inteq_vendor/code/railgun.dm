@@ -68,9 +68,12 @@
 	You probably can make it 'safe' with some fumbling around.")
 
 /obj/structure/salvageable/railgun_platform/attacked_by(obj/item/attacking_item, mob/living/user)
-	loc.balloon_alert_to_viewers("[user] is loading the fucking BSA!", "I'm loading the BSA, I'm doing it!",10)
-	if(istype(attacking_item, /obj/item/trash/tray))
-		volatility = 100
+
+	if(istype(attacking_item, /obj/item/trash/railgun_sabot))
+		loc.balloon_alert_to_viewers("[user] is loading the fucking BSA!", "I'm loading the BSA, I'm doing it!",10)
+		if(do_after(user,15,src))
+			volatility = 100
+			qdel(attacking_item)
 	. = ..()
 
 
