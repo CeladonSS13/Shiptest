@@ -264,11 +264,18 @@
 	color = "#B31008" // rgb: 179, 16, 8
 	taste_description = "scorching agony"
 
+/*
+
+
+[CELADON-REMOVE] - IPC GAS - (Перемещено в mod_celadon\IPC_gas\code\ipc_gas.dm)
+
+
 /datum/reagent/consumable/condensedcapsaicin/expose_mob(mob/living/M, method=TOUCH, reac_volume)
 	if(!ishuman(M) && !ismonkey(M))
 		return
 
 	var/mob/living/carbon/victim = M
+	// var/mob/living/carbon/human
 	if(method == TOUCH || method == SMOKE || method == VAPOR)
 		var/pepper_proof = victim.is_pepper_proof()
 
@@ -295,6 +302,9 @@
 			if(prob(5))
 				victim.vomit()
 
+[CELADON-REMOVE]
+
+*/
 /datum/reagent/consumable/condensedcapsaicin/on_mob_life(mob/living/carbon/M)
 	if(!M.has_reagent(/datum/reagent/consumable/milk))
 		if(prob(10))
