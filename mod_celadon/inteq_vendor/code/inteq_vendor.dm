@@ -64,3 +64,16 @@
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "mining_voucher"
 	w_class = WEIGHT_CLASS_TINY
+
+/obj/structure/sign/poster/contraband/caliban
+	name = "The innocent Caliban poster"
+	desc = "InteQ's official answer to all 'Caliban's Curse' rumors that has spread around the systems. \n\
+	There is a text in bottom right corner, copying Company's state regarding this: \n\
+	\n\
+	'InteQ officially declares the innocence of Caliban-class ships, disregarding all rumors about: \n\
+	Planets 'burned to the plating', \n\
+	Forced System Radiation Infusal, \n\
+	System 'black-outs' caused by ship's engine, \n\
+	And any other Space Convention violations by crew of said ships'."
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/poster_inteq_caliban.dmi'
+	icon_state = "poster_inteq_caliban"

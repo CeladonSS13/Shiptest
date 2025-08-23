@@ -4052,6 +4052,9 @@
 	dir = 8
 	},
 /obj/structure/reagent_dispensers/watertank,
+/obj/structure/sign/poster/contraband/caliban{
+	pixel_y = 30
+	},
 /turf/open/floor/pod,
 /area/ship/security/weapons_control)
 "BJ" = (
@@ -6685,6 +6688,10 @@
 /obj/structure/reagent_dispensers/water_cooler{
 	name = "Coffee heater";
 	reagent_id = /datum/reagent/consumable/coffee
+	},
+/obj/structure/sign/poster/contraband/caliban{
+	pixel_x = 0;
+	pixel_y = 30
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/canteen)
