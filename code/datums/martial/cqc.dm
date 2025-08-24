@@ -119,6 +119,7 @@
 		D.adjustStaminaLoss(50)
 		D.apply_damage(25, A.dna.species.attack_type)
 	return TRUE
+/* [CELDON-REMOVE] -> _cqc.dm -> author - XAH
 
 /datum/martial_art/cqc/grab_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
 	if(A.a_intent == INTENT_GRAB && A!=D && can_use(A)) // A!=D prevents grabbing yourself
@@ -137,6 +138,8 @@
 		return TRUE
 	else
 		return FALSE
+
+[CELDON-REMOVE] */
 
 /datum/martial_art/cqc/harm_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
 	if(!can_use(A))
