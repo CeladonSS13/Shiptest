@@ -69,10 +69,6 @@
 
 //proc used to handle inserting items or reagents into rnd machines
 /obj/machinery/rnd/proc/Insert_Item(obj/item/I, mob/user)
-	// [ADD-CELADON]
-	if(istype(I, /obj/item/stack))
-		AfterMaterialInsert(I, null, null)
-	// [/ADD-CELADON]
 	return
 
 //whether the machine can have an item inserted in its current state.
@@ -113,21 +109,7 @@
 		use_power(MINERAL_MATERIAL_AMOUNT / 10)
 	else
 		var/obj/item/stack/S = item_inserted
-		stack_name = S.mats_per_unit[1]
+		stack_name = S.name
 		use_power(min(1000, (amount_inserted / 100)))
-	// [CELADON-ADD] - Добавляем анимации при вставке материалов в техфаб и протолат.
-	// THE VOICES!!!!
-	// for(var/D in src.datum_components)
-	// 	if(istype(D, /datum/component/material_container))
-	// 		var/datum/component/material_container/M = D
-	// 		var/datum/component/material_container
-	// 		var/obj/item/stack/S = item_inserted.mats_per_unit[1]
-	// 		var/T = S.value
-	// 		break
-	if(istype(src, /obj/machinery/rnd/production/protolathe/department))
-		flick_overlay_view(mutable_appearance('mod_celadon/_storge_icons/icons/machinery/research.dmi', "protolathe_[stack_name]"), 1 SECONDS)
-	else if(istype(src, /obj/machinery/rnd/production/techfab/department))
-		flick_overlay_view(mutable_appearance('mod_celadon/_storge_icons/icons/machinery/research.dmi', "techfab_[stack_name]"), 1 SECONDS)
-	// [/CELADON-ADD]
 	add_overlay("protolathe_[stack_name]")
 	addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, cut_overlay), "protolathe_[stack_name]"), 10)
