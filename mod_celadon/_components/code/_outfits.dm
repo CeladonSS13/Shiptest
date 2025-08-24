@@ -67,3 +67,7 @@
 	name = "A debug outfit"
 	uniform = /obj/item/clothing/under/misc/adminsuit
 	gloves = /obj/item/clothing/gloves/combat{siemens_coefficient = 0}
+
+/obj/item/card/id/debug
+	assignment = "Bluespace Technician"
+	job_icon = "scrambled"
