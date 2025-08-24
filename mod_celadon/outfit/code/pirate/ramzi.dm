@@ -1,5 +1,8 @@
-//Ramzi_Clique celadon - аутфиты которые используются на рондо
+//Ramzi_Clique celadon - овверайд задника аутфитов под пиратскую тему-
+/datum/outfit/job/ramzi
+	faction_icon = "bg_pirate"
 
+//Ramzi_Clique celadon - аутфиты которые используются на рондо
 /datum/outfit/job/ramzi_clique
 	name = "Ramzi Clique Rondo - Base Outfit"
 
@@ -7,12 +10,11 @@
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
 	ears = /obj/item/radio/headset/pirate/alt
-	mask = /obj/item/clothing/mask/gas/ramzi
 	neck = /obj/item/clothing/neck/dogtag/ramzi
 	id = /obj/item/card/id
-	box = /obj/item/storage/box/survival/syndicate
+	box = /obj/item/storage/box/survival/ramzi
 
-	faction_icon = "bg_syndicate"
+	faction_icon = "bg_pirate"
 
 	backpack = /obj/item/storage/backpack/security
 	satchel = /obj/item/storage/backpack/satchel/sec
@@ -26,7 +28,7 @@
 	H.faction |= list(FACTION_PIRATES)
 
 /datum/outfit/job/ramzi_clique/captain
-	name = "Battle Master"
+	name = "Ramzi Clique Rondo - Battle Master"
 
 	id_assignment = "Battle Master"
 	job_icon = "captain"
@@ -39,7 +41,7 @@
 	suit = /obj/item/clothing/suit/armor/ramzi/officer
 
 /datum/outfit/job/ramzi_clique/trooper
-	name = "Commando"
+	name = "Ramzi Clique Rondo - Commando"
 
 	id_assignment = "Commando"
 	jobtype = /datum/job/officer

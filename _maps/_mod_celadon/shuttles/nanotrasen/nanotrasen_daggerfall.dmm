@@ -246,6 +246,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/item/radio/intercom/directional/north,
 /turf/open/floor/plastic,
 /area/ship/crew/canteen/kitchen)
 "dt" = (
@@ -304,6 +305,9 @@
 	pixel_x = 8;
 	pixel_y = 22
 	},
+/obj/item/radio/intercom/directional/north{
+	pixel_x = -6
+	},
 /turf/open/floor/suns/hatch/walnut,
 /area/ship/crew)
 "ec" = (
@@ -311,10 +315,6 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/opaque/ntblue/bordercorner,
-/obj/machinery/turretid/ship{
-	pixel_y = -25;
-	id = "tomahawk_turrets"
-	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "ei" = (
@@ -594,9 +594,8 @@
 "iA" = (
 /obj/docking_port/stationary{
 	dwidth = 15;
-	width = 30;
 	height = 15;
-	dir = 2
+	width = 30
 	},
 /turf/template_noop,
 /area/space)
@@ -1302,8 +1301,12 @@
 	},
 /obj/item/kirbyplants/photosynthetic{
 	icon_state = "plant-01";
-	pixel_x = 4;
+	pixel_x = -1;
 	pixel_y = 5
+	},
+/obj/item/radio/intercom/wideband/directional/east,
+/obj/item/radio/intercom/directional/east{
+	pixel_x = 40
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
@@ -3238,6 +3241,9 @@
 	},
 /obj/effect/turf_decal/trimline/opaque/pink/line{
 	dir = 4
+	},
+/obj/item/radio/intercom/directional/east{
+	pixel_y = -7
 	},
 /turf/open/floor/plastic,
 /area/ship/crew/canteen/kitchen)

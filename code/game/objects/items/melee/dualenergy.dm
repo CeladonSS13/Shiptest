@@ -89,6 +89,7 @@
 		impale(user)
 		return
 
+// [CELADON-EDIT] Переопределено в модуле: mod_celadon\items\code\melee.dm
 /obj/item/melee/duelenergy/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
 	if(HAS_TRAIT(src, TRAIT_WIELDED))
 		return ..()

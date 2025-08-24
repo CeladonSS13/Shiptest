@@ -506,7 +506,7 @@ update_label()
 /obj/item/card/id/ert/clown/Initialize()
 	access = get_all_accesses()
 	. = ..()
-// [/CELADON-ADD]S
+// [/CELADON-ADD]
 
 /obj/item/card/id/ert/deathsquad
 	desc = "An access card colored in black and red."
@@ -520,6 +520,7 @@ update_label()
 	icon_state = "ert_janitor"
 	assignment = "Jannie"
 	uses_overlays = FALSE
+	job_icon = "scrambled"	// [CELADON-ADD] - CELADON_ADD_HUDS
 
 /obj/item/card/id/debug/Initialize()
 	// [CELADON-EDIT] - CELADON_ACCESS
