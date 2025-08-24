@@ -117,9 +117,9 @@
 		if(toolset)
 			return ui_action_click()
 		if(device)
-			//[CELADON] Fix - Putting a MODsuit's device in active hand, instead of any hand
+			// [CELADON-ADD] - FIX_MODSUIT - Putting a MODsuit's device in active hand, instead of any hand
 			if(mod.wearer.put_in_active_hand(device))
-			//[CELADON] Fix
+			// [/CELADON-ADD]
 				to_chat(mod.wearer,span_notice("You extend \the [device]."))
 				RegisterSignal(mod.wearer, COMSIG_ATOM_EXITED, PROC_REF(on_exit))
 				RegisterSignal(mod.wearer, COMSIG_KB_MOB_DROPITEM_DOWN, PROC_REF(dropkey))
@@ -172,10 +172,10 @@
 	if(module_type == MODULE_ACTIVE)
 		mod.selected_module = null
 		if(display_message)
-		//[CELADON] Fixes modsuits not retracting items - runtime was here
+		// [CELADON-ADD] - FIX_MODSUIT - Fixes modsuits not retracting items - runtime was here
 			//to_chat(mod.wearer,span_warning(device ? "You retract \the [device]." : "\The [src] deactivates."))
 			to_chat(mod.wearer,span_warning("You retract \the [device]."))
-		//[CELADON] Fix
+		// [/CELADON-ADD]
 		if(device)
 			mod.wearer.transferItemToLoc(device, src, force = TRUE)
 			UnregisterSignal(mod.wearer, COMSIG_ATOM_EXITED)
