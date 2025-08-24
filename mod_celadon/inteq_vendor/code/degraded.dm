@@ -34,7 +34,7 @@
 	// the TURBGENQ and TURBGENG values
 
 	lastgen = ((compressor.rpm / TURBGENQ)**TURBGENG) * TURBGENQ * productivity
-	thrust = lastgen * POWER_TO_THRUST*0.2 // second law
+	thrust = lastgen * POWER_TO_THRUST // second law
 
 	var/turf/outturf = get_step(src, dir)
 	if(!LAZYLEN(outturf.atmos_adjacent_turfs))
