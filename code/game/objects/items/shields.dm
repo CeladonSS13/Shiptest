@@ -39,6 +39,8 @@
 // спрайт
 	var/broken_shield	// [CELADON-ADD] - Флаг на включение сломаных щитов из модов - BALLISTIC_SHIELD - Extended Edition
 	var/spread_bonus = 0 // [CELADON-ADD] - Щиты так же уменьшают разброс - BALLISTIC_SHIELD - Extended Chituka Edition
+	var/braking_sound = 'sound/effects/glassbr3.ogg'
+	var/braking_alert = "cracks!"
 
 /obj/item/shield/proc/on_block(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", damage = 0, attack_type = MELEE_ATTACK)
 	take_damage(damage)
@@ -47,11 +49,11 @@
 	. = ..()
 	if(!broken)
 		if(isliving(loc))
-			loc.balloon_alert(loc, "[src] cracks!")
-// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
+		// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
+			loc.balloon_alert(loc, "[src] [braking_alert]")
 			var/mob/living/user = loc
 			user.dropItemToGround(src, force = TRUE)
-		playsound(src, 'sound/effects/glassbr3.ogg', 100)
+		playsound(src, braking_sound, 100)
 		if(broken_shield)
 			icon = 'mod_celadon/_storge_icons/icons/items/weapons/shields.dmi'
 			icon_state = "[src::icon_state]_broken"

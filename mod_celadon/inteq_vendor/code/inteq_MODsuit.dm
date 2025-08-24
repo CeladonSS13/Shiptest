@@ -1,5 +1,8 @@
 #define COMSIG_MOD_SHIELD_DESTROYED "mod_shield_destroyed"
 
+/obj/item/mod/control
+	activation_step_time = 1.5 SECONDS
+
 /datum/mod_theme/inteq
 	name = "InteQ"
 	desc = "This one is made by InteQ."
@@ -67,26 +70,25 @@
 	var/initial_integrity = 0
 
 
-/obj/item/mod/module/shield/Initialize()
-	. = ..()
-	RegisterSignal(device, COMSIG_MOD_SHIELD_DESTROYED, PROC_REF(update_shield))
-
-
 /obj/item/mod/module/shield/Destroy()
 	. = ..()
 	UnregisterSignal(device,COMSIG_MOD_SHIELD_DESTROYED)
 
 
 /obj/item/mod/module/shield/on_activation()
+	RegisterSignal(device, COMSIG_MOD_SHIELD_DESTROYED, PROC_REF(on_deactivation))
+	playsound(loc, 'sound/weapons/saberon.ogg', 35, TRUE)
 	device.obj_integrity = change_integrity(device)
 	var/power_to_drain = (device.max_integrity - change_integrity(device)) * 5 //So that we drain 5 power per RESTORED integrity
 	drain_power(power_to_drain)
 	. = ..()
 
 
-/obj/item/mod/module/shield/on_deactivation()
+/obj/item/mod/module/shield/on_deactivation(display_message = TRUE, deleting = FALSE)
 	. = ..()
+	playsound(loc, 'sound/weapons/saberoff.ogg', 35, TRUE)
 	update_shield()
+	UnregisterSignal(device, COMSIG_MOD_SHIELD_DESTROYED)
 
 
 /obj/item/mod/module/shield/proc/change_integrity(obj/item/shield/riot/mod/shield)
@@ -102,7 +104,6 @@
 	start_time = world.time
 	initial_integrity = shield_integrity
 	mod.wearer.transferItemToLoc(device, src, TRUE)
-	src.on_deactivation()
 
 
 /obj/item/shield/riot/mod
@@ -120,6 +121,10 @@
 	var/shield_break_sound = 'sound/effects/sparks1.ogg'
 	var/shield_break_leftover = /obj/effect/particle_effect/sparks
 	max_integrity = 150
+	broken_shield = FALSE
+	braking_sound = 'sound/effects/sparks1.ogg'
+	braking_alert = "Shield's down!"
+	integrity_failure = -10000
 
 /obj/item/shield/riot/mod/emp_act(severity)
 	obj_integrity = 1
@@ -127,12 +132,13 @@
 	. = ..()
 
 
-/obj/item/shield/riot/mod/obj_destruction(damage_flag)
-	playsound(src, shield_break_sound, 50)
+/obj/item/shield/riot/mod/obj_destruction()
+	playsound(loc, shield_break_sound, 35)
 	new shield_break_leftover(get_turf(src))
 	if(isliving(loc))
-		loc.balloon_alert(loc, "shield's down!")
+		loc.balloon_alert(loc, "Shield's down!")
 	obj_integrity = 1
+	broken = FALSE
 	var/shield_integrity = obj_integrity
 	SEND_SIGNAL(src, COMSIG_MOD_SHIELD_DESTROYED, shield_integrity)
 
@@ -214,6 +220,7 @@
 		/obj/item/mod/module/storage,
 		/obj/item/mod/module/flashlight_inteq,
 		/obj/item/mod/module/magnetic_harness,
+		/obj/item/mod/module/shield,
 	)
 
 /obj/item/mod/control/pre_equipped/inteq/elite
@@ -224,6 +231,7 @@
 		/obj/item/mod/module/magnetic_harness,
 		/obj/item/mod/module/flashlight_inteq,
 		/obj/item/mod/module/dna_lock,
-		/obj/item/mod/module/power_kick
+		/obj/item/mod/module/power_kick,
+		/obj/item/mod/module/shield/inteq,
 	)
 

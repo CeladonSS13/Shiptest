@@ -11,8 +11,6 @@
 	/obj/item/stock_parts/cell/hyper = 3,
 	/obj/item/mod/module/anomaly_locked/antigrav/prebuilt = 3,
 	/obj/item/mod/module/tether = 3,
-	/obj/item/mod/module/shield = 2,
-	/obj/item/mod/module/shield/inteq = 1
 	)
 	contraband = list()
 	premium = list()
@@ -20,7 +18,9 @@
 
 	var/voucher_items = list(
 		"MOD suit" = /obj/item/mod/control/pre_equipped/inteq,
-		"Rig suit" = /obj/item/clothing/suit/space/hardsuit/syndi/inteq
+		"Rig suit" = list(
+		/obj/item/clothing/suit/space/hardsuit/syndi/inteq,
+		/obj/item/shield/riot/tele),
 		)
 
 
