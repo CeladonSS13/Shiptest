@@ -172,10 +172,10 @@
 	if(module_type == MODULE_ACTIVE)
 		mod.selected_module = null
 		if(display_message)
-		// [CELADON-ADD] - FIX_MODSUIT - Fixes modsuits not retracting items - runtime was here
+		// [CELADON-EDIT] - FIX_MODSUIT - Fixes modsuits not retracting items - runtime was here
 			//to_chat(mod.wearer,span_warning(device ? "You retract \the [device]." : "\The [src] deactivates."))
 			to_chat(mod.wearer,span_warning("You retract \the [device]."))
-		// [/CELADON-ADD]
+		// [/CELADON-EDIT]
 		if(device)
 			mod.wearer.transferItemToLoc(device, src, force = TRUE)
 			UnregisterSignal(mod.wearer, COMSIG_ATOM_EXITED)
