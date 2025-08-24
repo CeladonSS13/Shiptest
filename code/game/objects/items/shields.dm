@@ -51,9 +51,11 @@
 	if(!broken)
 		if(isliving(loc))
 // [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
+			//loc.balloon_alert(loc, "[src] cracks!")
 			loc.balloon_alert(loc, "[src] [braking_alert]")
 			var/mob/living/user = loc
 			user.dropItemToGround(src, force = TRUE)
+		//playsound(src, 'sound/effects/glassbr3.ogg', 100)
 		playsound(src, braking_sound, 100)
 		if(broken_shield)
 			icon = 'mod_celadon/_storge_icons/icons/items/weapons/shields.dmi'
