@@ -674,7 +674,7 @@
 
 		return
 
-// [CELADON-EDIT] -
+// [CELADON-EDIT] - UNFUCK_SPRAYCAN
 	//if(isobj(target) && !istype(target, /obj/effect/decal/cleanable/crayon/gang) && !istype(target, /obj/item/clothing))
 	if(isobj(target) && !istype(target, /obj/effect/decal/cleanable/crayon/gang))
 // [/CELADON-EDIT]
