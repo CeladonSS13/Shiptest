@@ -23,6 +23,11 @@
 		/obj/item/clothing/neck/cloak/cape/armsman = 3,
 		/obj/item/clothing/neck/cloak/cape/elysium = 3,
 		/obj/item/clothing/neck/cloak/cape/elysium/white = 3,
+		/obj/item/clothing/under/el_cloth_1 = 5,
+		/obj/item/clothing/under/el_cloth_2 = 5,
+		/obj/item/clothing/under/el_cloth_3 = 5,
+		/obj/item/clothing/under/el_cloth_4 = 5,
+		/obj/item/clothing/head/beret/elysium = 5,
 		// [/CELADON-ADD]
 		/obj/item/clothing/head/beanie = 3,
 		/obj/item/clothing/head/soft = 3,
