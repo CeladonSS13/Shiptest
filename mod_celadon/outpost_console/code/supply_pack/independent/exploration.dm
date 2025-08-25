@@ -43,16 +43,6 @@
 MARK:	General Gear
 */
 
-/datum/supply_pack/faction/independent/exploration/lavaproof_rods
-	name ="Lavaproof Rods Crate"
-	desc = "Contains 100 lavaproof rods for safely traversing molten pits."
-	cost = 200
-	contains = list(
-		/obj/item/stack/rods/fifty,
-		/obj/item/stack/rods/fifty,
-		)
-	crate_name = "Lavaproof Rod Crate"
-
 /datum/supply_pack/faction/independent/exploration/capsules
 	name = "Bluespace Shelter Capsule"
 	desc = "Contains a Bluespace Shelter Capsule, for instant shelter in rough situations."
