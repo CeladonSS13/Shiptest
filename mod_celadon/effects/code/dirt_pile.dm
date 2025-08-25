@@ -97,8 +97,7 @@
 			)
 			var/obj/structure/safe/S = new(get_turf(src))
 			// Устанавливаем 10-значный код
-			S.combination_length = 10
-			S.reset_combination()
+			S.number_of_tumblers = 10
 			// Добавляем случайный лут в сейф
 			var/obj/effect/spawner/random/outpost_loot/loot_spawner = new(S)
 			loot_spawner.spawn_loot()
@@ -173,8 +172,7 @@
 
 	var/obj/structure/safe/S = new safe_type(get_turf(src))
 	// Устанавливаем 10-значный код
-	S.combination_length = 10
-	S.reset_combination()
+	S.number_of_tumblers = 10
 	// Добавляем случайный лут в сейф
 	var/obj/effect/spawner/random/outpost_loot/loot_spawner = new(S)
 	loot_spawner.spawn_loot()
