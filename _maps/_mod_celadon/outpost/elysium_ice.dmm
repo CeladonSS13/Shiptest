@@ -690,6 +690,9 @@
 	layer = 2.030
 	},
 /obj/structure/fluff/hedge/opaque,
+/obj/structure/sign/departments/sell{
+	pixel_y = 32
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "asi" = (
@@ -2280,17 +2283,8 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo/smeltery)
 "blk" = (
-/obj/structure/chair/stool{
-	dir = 8;
-	pixel_y = 14;
-	pixel_x = 9
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
-	},
-/obj/item/lighter/zippo/clown{
-	pixel_y = 16;
-	pixel_x = 11
 	},
 /turf/open/floor/carpet/royalblack,
 /area/outpost/vacant_rooms/office)
@@ -3652,6 +3646,25 @@
 /obj/item/toy/talking/neznakomka,
 /turf/open/floor/carpet/black,
 /area/outpost/crew/lounge)
+"ccE" = (
+/obj/effect/turf_decal/siding/wood{
+	color = "#543C30";
+	dir = 8
+	},
+/obj/structure/railing/wood{
+	dir = 8
+	},
+/obj/structure/chair/stool{
+	dir = 8;
+	pixel_y = 14;
+	pixel_x = 9
+	},
+/obj/item/lighter/zippo/clown{
+	pixel_y = 16;
+	pixel_x = 11
+	},
+/turf/open/floor/wood/mahogany,
+/area/outpost/crew/canteen)
 "cdc" = (
 /obj/structure/chair/comfy/grey/directional/east,
 /obj/effect/turf_decal/siding/wood{
@@ -9605,20 +9618,11 @@
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/solfed)
 "fuO" = (
-/obj/effect/turf_decal/siding/wood{
-	color = "#543C30";
-	dir = 8
+/obj/item/clothing/neck/cloak/cape/elysium/white,
+/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+	layer = 2.454
 	},
-/obj/structure/railing/wood{
-	dir = 8
-	},
-/obj/structure/chair/stool{
-	dir = 8;
-	pixel_y = 28;
-	pixel_x = 17
-	},
-/turf/open/floor/wood/mahogany,
-/area/outpost/crew/canteen)
+/area/outpost/exterior)
 "fuZ" = (
 /obj/structure/chair/sofa/brown/old,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -13293,6 +13297,10 @@
 /obj/item/pen/uplink{
 	pixel_y = 13
 	},
+/obj/item/pen/elysium{
+	pixel_x = 0;
+	pixel_y = 6
+	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/operations/outpost_command)
 "hyv" = (
@@ -14666,6 +14674,22 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plasteel/patterned,
 /area/outpost/crew/bathroom)
+"ikk" = (
+/obj/structure/dirt_pile,
+/obj/item/clothing/head/helmet/space/hardsuit/security/gamma/white_squadron_rig,
+/obj/item/clothing/gloves/combat/gamma,
+/obj/item/clothing/shoes/gamma,
+/obj/item/clothing/suit/armor/vest/gamma,
+/obj/item/clothing/suit/space/hardsuit/security/gamma/white_squadron_rig,
+/obj/item/clothing/under/gamma/uniform,
+/obj/item/melee/gamma_tomahawk,
+/obj/item/storage/backpack/messenger/gamma,
+/obj/item/storage/belt/security/webbing/gamma,
+/obj/item/clothing/head/helmet/riot/gamma_vision,
+/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+	layer = 2.454
+	},
+/area/outpost/exterior)
 "iko" = (
 /obj/effect/decal/cleanable/ash,
 /turf/open/floor/plating/asteroid/icerock/temperate,
@@ -17306,6 +17330,7 @@
 /area/outpost/vacant_rooms/trash_factory)
 "jIs" = (
 /obj/structure/table/wood,
+/obj/item/desk_flag/elysium,
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/solfed)
 "jJr" = (
@@ -20516,6 +20541,11 @@
 	},
 /turf/open/floor/carpet/black,
 /area/outpost/fraction/syndi)
+"lIu" = (
+/obj/structure/table/wood,
+/obj/item/desk_flag/elysium,
+/turf/open/floor/plasteel/tech,
+/area/outpost/operations/outpost_command)
 "lIw" = (
 /obj/structure/chair/office{
 	dir = 4
@@ -21887,7 +21917,8 @@
 /area/outpost/vacant_rooms/trash_factory)
 "mwJ" = (
 /mob/living/simple_animal/hostile/cavern_geist{
-	desc = "A near-mythical predator, known to haunt the caverns. Its eyes sparkle with a mixture of intelligence and malice."
+	desc = "A near-mythical predator, known to haunt the caverns. Its eyes sparkle with a mixture of intelligence and malice.";
+	health = 1500
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
 	layer = 2.454
@@ -22192,6 +22223,7 @@
 /obj/structure/window{
 	dir = 4
 	},
+/obj/item/clothing/head/beret/elysium,
 /turf/open/floor/carpet/green,
 /area/outpost/vacant_rooms/trash_factory)
 "mFM" = (
@@ -25218,6 +25250,7 @@
 	dir = 4;
 	pixel_x = 8
 	},
+/obj/item/clothing/head/beret/elysium,
 /turf/open/floor/carpet/green,
 /area/outpost/vacant_rooms/trash_factory)
 "oma" = (
@@ -29196,6 +29229,7 @@
 	pixel_x = 11
 	},
 /obj/structure/table/wood/reinforced,
+/obj/item/folder/elysium,
 /turf/open/floor/plasteel/tech,
 /area/outpost/operations/outpost_command)
 "qzZ" = (
@@ -29633,6 +29667,10 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/fraction/solfed)
+"qOM" = (
+/obj/item/clothing/neck/cloak/cape/elysium,
+/turf/open/floor/plating/asteroid/icerock/temperate,
+/area/outpost/exterior)
 "qPh" = (
 /obj/effect/turf_decal/box/corners{
 	dir = 4
@@ -32810,6 +32848,7 @@
 	dir = 8
 	},
 /obj/item/storage/fancy/heart_box,
+/obj/item/lighter/zippo/elysium,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/operations/outpost_command)
 "sFZ" = (
@@ -36376,6 +36415,11 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
+"uIL" = (
+/obj/structure/table/wood,
+/obj/item/documents/elysium,
+/turf/open/floor/plasteel/tech,
+/area/outpost/operations/outpost_command)
 "uJm" = (
 /obj/effect/mob_spawn/human/corpse/wizard{
 	short_desc = "Вы видите тело одетое в робу академии наук. Оно все в ранениях и укусах. А рядом с телом на стене находятся кровоподтеки, которые тянутся к зеленой лампочке. Кажется что оно активировано?"
@@ -42188,6 +42232,13 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/plasteel/patterned/grid,
 /area/outpost/fraction/inteq)
+"xWt" = (
+/obj/structure/chair/bench/olive/directional/north,
+/obj/item/lighter/zippo/elysium,
+/turf/open/floor/wood/walnut{
+	planetary_atmos = 1
+	},
+/area/outpost/crew/library)
 "xWu" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 1
@@ -45166,7 +45217,7 @@ gok
 gok
 gok
 mwJ
-gok
+ikk
 gok
 bBa
 hQU
@@ -47780,7 +47831,7 @@ ovN
 hQU
 hQU
 hQU
-hQU
+qOM
 hQU
 hQU
 hQU
@@ -51980,7 +52031,7 @@ gok
 gok
 ajt
 gok
-gok
+fuO
 gok
 gok
 oyC
@@ -53551,9 +53602,9 @@ eaN
 sLF
 aku
 aku
-aku
-aku
-aku
+oyC
+oyC
+oyC
 xaH
 xaH
 xaH
@@ -53737,10 +53788,10 @@ xJW
 nxN
 aku
 ngu
-sYZ
-sYZ
-sYZ
-sYZ
+aku
+oyC
+oyC
+oyC
 xaH
 vEK
 dUL
@@ -53924,10 +53975,10 @@ sYZ
 eoa
 iMH
 sYZ
-sYZ
-sYZ
-sYZ
-sYZ
+aku
+aku
+aku
+aku
 xaH
 pWX
 oGH
@@ -55446,7 +55497,7 @@ gVH
 cjs
 dgA
 kAh
-kAh
+lIu
 oII
 sfN
 dIe
@@ -55633,7 +55684,7 @@ jee
 oII
 dgA
 vnX
-kAh
+uIL
 oII
 lbq
 riW
@@ -60060,8 +60111,8 @@ xPT
 ydh
 gRJ
 gRJ
+ccE
 gRJ
-fuO
 wqQ
 uRf
 vja
@@ -69975,7 +70026,7 @@ nZz
 iEM
 qDS
 jjR
-efz
+xWt
 lxo
 lxo
 uwP
