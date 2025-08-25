@@ -23,7 +23,7 @@
 		/obj/item/clothing/under/rank/command/nt/skirt = 2,
 		/obj/item/clothing/under/rank/security/brig_phys/nt/skirt = 2,
 		/obj/item/clothing/under/rank/security/officer/nt = 2,
-		/obj/item/clothing/under/rank/security/officer/nt/skirt = 2
+		/obj/item/clothing/under/rank/security/officer/nt/skirt = 2,
 		/obj/item/clothing/head/beret/dominia = 2,
 		/obj/item/clothing/head/beret/dominia/army = 2,
 		/obj/item/clothing/head/beret/dominia/consular = 2,
@@ -38,7 +38,6 @@
 /obj/machinery/vending/clothing/admin
 	name = "ClothesMate Admin" //renamed to make the slogan rhyme
 	desc = "A vending machine for clothing for Administration."
-	icon = 'mod_celadon/_storge_icons/icons/machinery/vending.dmi'
 	icon_state = "secdrobe"
 	icon_deny = "secdrobe-deny"
 	product_slogans = "Dress for success!;Prepare to look swagalicious!;Look at all this swag!;Why leave style up to fate? Use the ClothesMate!"
