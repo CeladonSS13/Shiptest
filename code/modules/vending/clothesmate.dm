@@ -16,6 +16,13 @@
 		/obj/item/clothing/head/sombrero = 1,
 		/obj/item/clothing/suit/poncho = 1,
 		/obj/item/clothing/suit/vapeshirt = 1,
+		/obj/item/clothing/neck/cloak/cape = 3,
+		/obj/item/clothing/neck/cloak/cape/white = 3,
+		/obj/item/clothing/neck/cloak/cape/zavod = 3,
+		/obj/item/clothing/neck/cloak/cape/hospital = 3,
+		/obj/item/clothing/neck/cloak/cape/armsman = 3,
+		/obj/item/clothing/neck/cloak/cape/elysium = 3,
+		/obj/item/clothing/neck/cloak/cape/elysium/white = 3,
 		// [/CELADON-ADD]
 		/obj/item/clothing/head/beanie = 3,
 		/obj/item/clothing/head/soft = 3,
