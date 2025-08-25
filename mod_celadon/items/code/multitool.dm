@@ -33,19 +33,19 @@
 			if(0)
 				atmosanalyzer_scan(user, (target.return_analyzable_air() ? target : get_turf(target)))
 			if(1)
-				healthscan(user, target)
+				healthscan(user, target, advanced = TRUE)
 			if(2)
 				chemscan(user, target)
 
 // Дебаговский трикодер
-/obj/item/multitool/tricorder/ranged
+/obj/item/multitool/tricorder/debug
 	name = "long-range tricorder"
 	desc = "A multifunctional device that can perform a wide range of tasks. A hand-held long-range environmental scanner which reports current gas levels."
 	icon_state = "tricorder_atmos"
 	medicalTricorder = TRUE
 	ranged_scan_distance = 15
 
-/obj/item/multitool/tricorder/ranged/attack_self(mob/user)
+/obj/item/multitool/tricorder/debug/attack_self(mob/user)
 	mode++
 	if(mode > 2)
 		mode = 0
@@ -69,6 +69,7 @@
 	max_matter = INFINITY
 	matter = INFINITY
 	upgrade = RCD_UPGRADE_FRAMES | RCD_UPGRADE_SIMPLE_CIRCUITS
+	delay_mod = 0.3
 
 /obj/item/construction/plumbing
 	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
@@ -80,8 +81,8 @@
 	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
 
 /obj/item/analyzer/ranged
-	desc = "A hand-held long-range environmental scanner which reports current gas levels."
 	name = "long-range gas analyzer"
+	desc = "A hand-held long-range environmental scanner which reports current gas levels."
 	icon_state = "analyzerranged"
 	custom_materials = list(/datum/material/iron = 400, /datum/material/glass = 1000, /datum/material/gold = 200, /datum/material/plastic = 200)
 	var/ranged_scan_distance = 15

@@ -482,7 +482,7 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 #define BSRPD_CAPAC_NEW 125
 
 /obj/item/pipe_dispenser/bluespace
-	name = "Блюспейс-RPD"
+	name = "Bluespace-RPD"
 	desc = "Пример, когда технологии позволяют не свариться в собственном соку при постройке очередного двигателя."
 	icon_state = "rpd_ranged"
 	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
