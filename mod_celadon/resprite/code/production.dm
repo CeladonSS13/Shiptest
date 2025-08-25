@@ -7,15 +7,18 @@
 	icon_state = "protolathe"
 
 /obj/machinery/rnd/production/proc/add_department_stripe(obj/machinery/rnd/production/M, list/overlays)
-    if(M.department_tag)
-        var/stripe_icon = "techfab_stripe_[lowertext(M.department_tag)]"
-        var/mutable_appearance/stripe_overlay = mutable_appearance('mod_celadon/_storge_icons/icons/machinery/research.dmi', stripe_icon)
-        overlays += stripe_overlay
+	if(M.department_tag)
+		var/stripe_icon = "techfab_stripe_[lowertext(M.department_tag)]"
+		if(istype(src, /obj/machinery/rnd/production/circuit_imprinter))
+			stripe_icon = "circtuit_stripe_[lowertext(M.department_tag)]"
+
+		var/mutable_appearance/stripe_overlay = mutable_appearance('mod_celadon/_storge_icons/icons/machinery/research.dmi', stripe_icon)
+		overlays += stripe_overlay
 
 /obj/machinery/rnd/production/update_overlays()
-    . = ..()
-    add_department_stripe(src, .)
-    return .
+	. = ..()
+	add_department_stripe(src, .)
+	return .
 
 /obj/machinery/rnd/AfterMaterialInsert(obj/item/item_inserted, id_inserted, amount_inserted)
 	if(skip_next_insert_anim)
