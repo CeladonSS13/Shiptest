@@ -19,6 +19,12 @@ FIX_DISPLAY_TRUSTER
 FIXES_ICON_IN_HAND_MOB
 FIXES_ICON
 FIXES_SOUND
+MECH_WEAPON
+FIXES_CHAMELEON
+FIXES_GOLIATH_TENTACLES
+FIXES_SHIP_LOGIN_DOUBLE_NAME
+FIXES_WETHIDE
+FIXES_DRILLCLASS
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -31,6 +37,8 @@ FIXES_SOUND
 Weebstick (Красная катана) теперь нельзя сломать, 
 вытащив меч при подготовке блинка. (Если что-то сломается всёравно, попросите 
 вызвать proc "unprime_unlock" у ближайшего админа)
+
+**Фикс бесконечного спавна мобов при добыче:** Исправляет критический баг с бесконечным спавном мобов при использовании industrial grade mining drill в миссиях. Добавляет проверки завершения миссии во всех ключевых точках логики спавна мобов, а также защиту от продолжения спавна при удалении или поломке бура. Дополнительно производит балансировку жил класса 4 для более справедливой сложности.
 
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
@@ -78,6 +86,12 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code/modules/research/rdconsole.dm` - Попытка изменить абьюз, когда игрок мог внести семена сколько угодно раз, пересобирая тупо консоль. Сделано через глобальный список.
 
+- EDIT: `code/modules/research/designs.dm` - [CELADON-EDIT] - CELADON_FIXES - Инициализация `obj/item/disk/design_disk/Initialize()` переписана на фиксированный индексный список слотов `1..max_blueprints` без ассоциативных ключей. `starting_blueprints` раскладываются по индексам, оставшиеся слоты `null`.
+- EDIT: `code/modules/research/rdconsole.dm` - [CELADON-EDIT] - CELADON_FIXES -
+  - `ui_designdisk()` теперь рисует строго по индексам 1..max_blueprints и нормализует длину `blueprints.len = max_blueprints`.
+  - `copy_design` записывает дизайн строго по индексу слота без сжатия списка.
+  - `clear_design` очищает либо все слоты, либо один слот установкой `null` по индексу; не используется `list -= value`.
+
 - ADD: `/obj/machinery/computer/telecomms/server/ui_interact` - Добавляем поддержку UTF-8
 - ADD: `/obj/machinery/computer/telecomms/monitor/ui_interact` - Добавляем поддержку UTF-8
 
@@ -92,6 +106,16 @@ Weebstick (Красная катана) теперь нельзя сломать
 - EDIT: `code\modules\hydroponics\gene_modder.dm` - Добавление удаления мусора а не данных с диска
 
 - EDIT: `code\modules\hydroponics\grown\replicapod.dm` - Исправление отобрежения ДНК на сканере
+
+MECH_WEAPON
+### Исправление бага перезарядки мех-оружия (SOB-3, BRM-6, SGL-6)
+**Проблема:** Оружие с `disabledreload = TRUE` (SOB-3 Clusterbang, BRM-6 Missile Rack, SGL-6 Flashbang) не могло быть перезаряжено из-за отсутствия переменной `projectiles`, что приводило к `projectiles_max = 0` и неправильной работе логики `ammo_resupply()`.
+**Решение:** Добавлены недостающие переменные `projectiles` для корректной работы автоматической инициализации `projectiles_max`.
+**Изменения:**
+- ADD: `code/game/mecha/equipment/weapons/weapons.dm`: `/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/breaching` -> `projectiles = 6` (с тегом `[CELADON-ADD]`)
+- ADD: `code/game/mecha/equipment/weapons/weapons.dm`: `/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/flashbang` -> `projectiles = 6` (с тегом `[CELADON-ADD]`)
+- ADD: `code/game/mecha/equipment/weapons/weapons.dm`: `/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/flashbang/clusterbang` -> `projectiles = 3` (с тегом `[CELADON-ADD]`)
+**Автор:** Турон/Mirag1993
 
 - EDIT: `code\modules\hydroponics\grown\replicapod.dm` - Исправлено появление людей из капусты
 
@@ -116,13 +140,13 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Делаем так чтобы кепори могли брать мелкие предметы в клюв
 
-- EDIT: `code/datums/mapgen/planetary/waterGenerator.dm` : Убираем спавн лавы на водяной планете
-
 - EDIT, ADD: `code/modules/mob/living/blood.dm` : Вводим нормальный уровень для крови
 - EDIT, ADD: `code/game/machinery/iv_drip.dm` : Проверка крови у пациента
 - ADD: `code/modules/reagents/chemistry/holder.dm` : Вводим ограничения на шприцы, бикеры, капельницы
 
 - ADD: `code/game/objects/items/food/donut.dm` : Прописано название стандартной иконки, вместо надписи ERROR
+
+- ADD: `code/controllers/subsystem/overmap.dm` : Прерывает удаление планеты при начале ее генерации.
 
 FIX_DISPLAY_TRUSTER
 - EDIT: `code/modules/overmap/ships/controlled_ship_datum.dm` : Откатывает на прежнее отображение скорости, у нас другой вид перемещения корабликов
@@ -136,6 +160,25 @@ FIXES_ICON
 FIXES_SOUND
 - ADD:	`code/game/objects/items/melee/trickweapon.dm` - Баг звука энерго меча у пилы
 - EDIT:	`code/game/objects/items/melee/trickweapon.dm` - Новые звуки открытия/закрытия пилы
+
+FIXES_CHAMELEON
+- EDIT: `code/datums/mutations/chameleon.dm` - Чиним крит баг с вечной невидимостью
+
+FIXES_GOLIATH_TENTACLES
+- ADD: `code/modules/mob/living/simple_animal/hostile/mining_mobs/goliath.dm` : Добавляем прок и прверки на жизненный цикл тентакли и её создателя
+FIXES_SHIP_LOGIN_DOUBLE_NAME
+- ADD: `code/modules/mob/dead/new_player/ship_select.dm` : Поднимаем проверку на одинаковые имена ДО создания корабля, чтобы избежать спавна изолированного корабля
+
+FIXES_WETHIDE
+- EDIT: `code/modules/food_and_drinks/kitchen_machinery/smartfridge.dm` : Заменен устаревший метод `update_icon()` на `update_appearance()`
+- EDIT: `code/game/objects/items/stacks/sheets/leather.dm` : Исправлен неправильный путь класса. Изменено `/obj/item/stack/sheet/leather/wetleather/Initialize` на `/obj/item/stack/sheet/wethide/Initialize`. Это позволяет мокрой коже правильно добавить элемент `dryable` при инициализации
+
+FIXES_DRILLCLASS - **Фикс бесконечного спавна мобов при добыче**
+- ADD: `code/modules/mining/drill.dm` - Добавлена проверка завершения миссии в `process()` и вызов `stop_spawning()` в `Destroy()`
+- ADD: `code/modules/mining/ore_veins.dm` - Добавлены проверки завершения миссии в `begin_spawning()`, `process()` и `increment_wave_tally()`
+- ADD: `code/modules/missions/dynamic/signaled.dm` - Добавлен вызов `stop_spawning()` при завершении миссии в `mine_success()`
+- EDIT: `code/modules/mining/ore_veins.dm` - Добавлена проверка `QDELETED(our_drill)` в `increment_wave_tally()` для защиты от удаленных буров
+- EDIT: `code/modules/mining/ore_veins.dm` - Балансировка жил класса 4: `max_mobs = 4` (было 6), `spawn_time = 12 SECONDS` (было 8), `wave_length = 30 SECONDS` (было 45)
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
@@ -189,6 +232,9 @@ FIXES_SOUND
 
 
 RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFaceLesS, Burbonchik, MrRomainzZ, Molniz, Redwizz, Sjerty, Garomt, Ganza9991, KOCMOHABT
+
+- Автор фикса дисков дизайнов: Турон/Mirag1993
+- Автор фикса бесконечного спавна мобов: Турон/Mirag1993
 
 <!--
   Здесь находится твой никнейм

@@ -32,7 +32,16 @@
 	owner.alpha = CHAMELEON_MUTATION_DEFAULT_TRANSPARENCY
 
 /datum/mutation/human/chameleon/on_losing(mob/living/carbon/human/owner)
-	if(..())
-		return
-	owner.alpha = 255
-	UnregisterSignal(owner, COMSIG_MOVABLE_MOVED)
+	// [CELADON-EDIT] - FIXES_CHAMELEON
+	// if(..())
+		// return
+	// owner.alpha = 255
+	// UnregisterSignal(owner, COMSIG_MOVABLE_MOVED)	// ORIGINAL
+	// Сначала сбрасываем альфа-канал и отписываемся от сигналов
+	if(owner)
+		owner.alpha = 255
+		UnregisterSignal(owner, COMSIG_MOVABLE_MOVED)
+		UnregisterSignal(owner, COMSIG_HUMAN_EARLY_UNARMED_ATTACK)
+	// Затем вызываем родительскую функцию
+	..()
+	// [/CELADON-EDIT]

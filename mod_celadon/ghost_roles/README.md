@@ -42,7 +42,8 @@ ID мода: CELADON_GHOST_ROLES
 
 ### Изменения *кор кода*
 
-- Отсутствуют
+- `code/modules/awaymissions/corpse.dm`
+- `code/game/machinery/cryopod.dm`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

@@ -309,6 +309,22 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod/retro, 17)
 /obj/machinery/cryopod/proc/despawn_occupant()
 	var/mob/living/mob_occupant = occupant
 
+	// [CELADON-ADD] - CELADON_GHOST_ROLES
+	// Check if this is a ghost role
+	if(!mob_occupant.mind?.original_ship)
+		// Ghost role - simple deletion without crew processing
+		if(mob_occupant.client)
+			mob_occupant.ghostize(TRUE)
+
+		for(var/obj/item/W in mob_occupant.GetAllContents())
+			qdel(W)
+
+		open_machine()
+		qdel(mob_occupant)
+		occupant = null
+		return
+	// [/CELADON-ADD]
+
 	if(!isnull(mob_occupant.mind.original_ship))
 		var/datum/overmap/ship/controlled/original_ship_instance = mob_occupant.mind.original_ship.resolve()
 

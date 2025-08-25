@@ -28,6 +28,14 @@
 #include "clumsy_table/_clumsy_table.dme"
 #include "quirks/_quirks.dme"
 
+// --- SECRET --- //
+
+#if fexists("../+secret/__secret.dme") && !defined(DISABLE_SECRETS)
+#include "../+secret/__secret.dme"
+#else
+#include "_secrets/__secret_public.dme"
+#endif
+
 // --- ICONS --- //
 #include "parallax/_parallax.dme"
 #include "resprite/_resprite.dme"
@@ -91,6 +99,7 @@
 #include "increase_weapon_durability/_increase_weapon_durability.dme"
 #include "quickbind_pocket_and_neck/_quickbind_pocket_and_neck.dme"
 #include "add_item_for_slot_ears/_add_item_for_slot_ears.dme"
+#include "bite_feral/_bite_feral.dme"
 
 // --- RETURNS --- //
 #include "return_content_clowns/_return_content_clowns.dme"

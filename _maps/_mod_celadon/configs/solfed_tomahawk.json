@@ -2,13 +2,13 @@
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
 	"map_name": "Tomahawk-class Scout Vessel",
 	"map_short_name": "Tomahawk",
-	"description": "Корабль Солнечной Федерации класса Томагавк служит для фронтовой разведки с боем. Данный корабль обладает хорошей скоростью, не смотря на свои габариты. На судне предусмотрены рабочие места для двух медиков, трёх полевых инженеров и одного корабельного. С консультациями капитану помогает надзиратель, у которого есть своя каюта",
+	"description": "Корабль Солнечной Федерации класса Томагавк служит для фронтовой разведки с боем, cо временем начала космических экспансий 23 века о чем может подсказывать его обшивка. Данный корабль обладает хорошей скоростью, не смотря на свои габариты. На судне предусмотрены рабочие места для двух медиков, трёх полевых инженеров и одного корабельного.",
 	"map_path": "_maps/_mod_celadon/shuttles/solfed/solfed_tomahawk.dmm",
 	"enabled": true,
 	"limit": 1,
 	"sensor_range": 4,
-	"starting_funds": 4000,
-	"prefix": "SFSV",
+	"starting_funds": 2000,
+	"prefix": "BSFSV",
 	"faction": "/datum/faction/solgov",
 	"tags": ["Разведка", "Бой", "Шахтёрство"],
 	"namelists": [
@@ -30,7 +30,7 @@
 		},
 		"Marine": {
 			"outfit": "/datum/outfit/job/solfed/marine",
-			"slots": 4
+			"slots": 3
 		},
 		"Meeresarzt": {
 			"outfit": "/datum/outfit/job/solfed/doctor",
@@ -43,10 +43,6 @@
 		"Contracted Miner": {
 			"outfit": "/datum/outfit/job/solfed/miner",
 			"slots": 3
-		},
-		"Gehilfe": {
-			"outfit": "/datum/outfit/job/solfed/assistant",
-			"slots" : 2
 		}
 	}
 }
