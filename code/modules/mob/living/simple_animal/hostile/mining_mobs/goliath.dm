@@ -68,6 +68,12 @@
 
 /mob/living/simple_animal/hostile/asteroid/goliath/death(gibbed)
 	move_resist = MOVE_RESIST_DEFAULT
+	// [CELADON-ADD] - FIXES_GOLIATH_TENTACLES
+	// Удаляем все тентакли при смерти голиафа
+	for(var/obj/effect/temp_visual/goliath_tentacle/T in world)
+		if(T.spawner == src)
+			qdel(T)
+	// [/CELADON-ADD]
 	..()
 
 /mob/living/simple_animal/hostile/asteroid/goliath/gib()
@@ -266,6 +272,12 @@
 /mob/living/simple_animal/hostile/asteroid/goliath/beast/ancient/Life()
 	. = ..()
 	if(!.) // dead
+		// [CELADON-ADD] - FIXES_GOLIATH_TENTACLES
+		// Удаляем все тентакли при смерти древнего голиафа
+		for(var/obj/effect/temp_visual/goliath_tentacle/T in world)
+			if(T.spawner == src)
+				qdel(T)
+		// [/CELADON-ADD]
 		return
 	if(AIStatus != AI_ON)
 		return
@@ -327,10 +339,22 @@
 	// [/CELADON-EDIT]
 
 /obj/effect/temp_visual/goliath_tentacle/proc/tripanim()
+	// [CELADON-ADD] - FIXES_GOLIATH_TENTACLES
+	// Проверяем, жив ли еще создатель
+	if(QDELETED(spawner) || (spawner && spawner.stat == DEAD))
+		qdel(src)
+		return
+	// [/CELADON-ADD]
 	deltimer(timerid)
 	timerid = addtimer(CALLBACK(src, PROC_REF(trip)), 3, TIMER_STOPPABLE)
 
 /obj/effect/temp_visual/goliath_tentacle/proc/trip()
+	// [CELADON-ADD] - FIXES_GOLIATH_TENTACLES
+	// Проверяем, жив ли еще создатель
+	if(QDELETED(spawner) || (spawner && spawner.stat == DEAD))
+		qdel(src)
+		return
+	// [/CELADON-ADD]
 	var/latched = FALSE
 	for(var/mob/living/L in loc)
 		if((!QDELETED(spawner) && spawner.faction_check_mob(L)) || L.stat == DEAD)

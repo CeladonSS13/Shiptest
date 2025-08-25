@@ -80,8 +80,18 @@
 		update_icon_state()
 	if(!active && our_vein?.currently_spawning)
 		our_vein.stop_spawning()
+	// [CELADON-ADD] - CELADON_FIXES - FIXES_DRILLCLASS - Дополнительная проверка для буров миссии
+	if(istype(src, /obj/machinery/drill/mission) && our_vein?.currently_spawning)
+		var/obj/machinery/drill/mission/mission_drill = src
+		if(mission_drill.num_current >= mission_drill.num_wanted)
+			our_vein.stop_spawning()
+	// [/CELADON-ADD]
 
 /obj/machinery/drill/Destroy()
+	// [CELADON-ADD] - CELADON_FIXES - FIXES_DRILLCLASS - Останавливаем спавн мобов при удалении бура
+	if(our_vein?.currently_spawning)
+		our_vein.stop_spawning()
+	// [/CELADON-ADD]
 	QDEL_NULL(soundloop)
 	QDEL_NULL(cell)
 	return ..()

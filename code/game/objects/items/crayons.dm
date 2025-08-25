@@ -674,8 +674,10 @@
 
 		return
 
-
-	if(isobj(target) && !istype(target, /obj/effect/decal/cleanable/crayon/gang) && !istype(target, /obj/item/clothing))
+// [CELADON-EDIT] - UNFUCK_SPRAYCAN
+	//if(isobj(target) && !istype(target, /obj/effect/decal/cleanable/crayon/gang) && !istype(target, /obj/item/clothing))
+	if(isobj(target) && !istype(target, /obj/effect/decal/cleanable/crayon/gang))
+// [/CELADON-EDIT]
 		if(actually_paints)
 			if(color_hex2num(paint_color) < 350 && !istype(target, /obj/structure/window) && !istype(target, /obj/effect/decal/cleanable/crayon)) //Colors too dark are rejected
 				to_chat(usr, span_warning("A color that dark on an object like this? Surely not..."))
