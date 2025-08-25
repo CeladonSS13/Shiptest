@@ -35,3 +35,12 @@
 	name = "\improper Asteroid Field"
 	sound_environment = SOUND_ENVIRONMENT_QUARRY
 	ambientsounds = AMBIENCE_SPACE
+
+/area/overmap_encounter/planetoid/desert/explored
+	area_flags = VALID_TERRITORY
+
+/area/overmap_encounter/planetoid/water/explored
+	area_flags = VALID_TERRITORY
+
+/area/overmap_encounter/planetoid/moon/explored
+	area_flags = VALID_TERRITORY

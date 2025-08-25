@@ -50,6 +50,14 @@
 		return
 	if(QDELETED(src) || QDELETED(user))
 		return
+
+	// [CELADON-ADD] - CELADON: DISCORD VERIFY
+	if(CONFIG_GET(flag/DiscordVerify))
+		if(!checkDiscordVerify(user.ckey))
+			to_chat(usr, span_danger("Ваш аккаунт не верифицирован в Discord.\n Пожалуйста, используйте кнопку 'Verify Discord Account' во вкладке 'Special Verbs' для Discord верификации."))
+			return
+	// [/CELADON-ADD]
+
 	var/ghost_role = alert("Become [mob_name]? (Warning, You can no longer be revived!)",,"Yes","No")
 
 	if(ghost_role == "No" || !loc)
@@ -143,6 +151,27 @@
 		special(M, name)
 		MM.name = M.real_name
 		special_post_appearance(M, name)
+	// [CELADON-ADD] - CELADON_GHOST_ROLES
+		// Issue player loadout for ghost role when they chose to load character slot
+		if(ishuman(M) && load_character && M.client && M.client.prefs?.equipped_gear && length(M.client.prefs.equipped_gear))
+			var/mob/living/carbon/human/H = M
+			var/obj/item/storage/box/loadout_dumper = new()
+
+			for(var/gear_id in M.client.prefs.equipped_gear)
+				var/datum/gear/new_gear = GLOB.gear_datums[gear_id]
+				if(new_gear)
+					// spawn item into the box; spawn_item handles role replacements via job/assigned_role
+					new_gear.spawn_item(loadout_dumper, H)
+
+			// try to place box into back storage, else into hands, else drop on turf
+			var/datum/component/storage/back_storage = H.back?.GetComponent(/datum/component/storage)
+			if(back_storage)
+				back_storage.handle_item_insertion(loadout_dumper, TRUE)
+			else if(!H.put_in_hands(loadout_dumper, TRUE))
+				loadout_dumper.forceMove(get_turf(H))
+				to_chat(H, span_warning("Unable to place your loadout box into hands, dropped at your feet."))
+	spawned_mob_ref = WEAKREF(M)
+	// [/CELADON-ADD]
 	if(uses > 0)
 		uses--
 	if(!permanent && !uses)

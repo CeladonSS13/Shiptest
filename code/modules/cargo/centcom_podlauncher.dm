@@ -835,14 +835,20 @@ GLOBAL_DATUM_INIT(podlauncher, /datum/centcom_podlauncher, new)
 
 /obj/effect/hallucination/simple/supplypod_selector
 	name = "Supply Selector (Only you can see this)"
-	image_icon = 'icons/obj/supplypods_32x32.dmi'
+// [CELADON-EDIT] - CELADON_RETURN_REVERSE_MENU
+//	image_icon = 'icons/obj/supplypods_32x32.dmi'
+	image_icon = 'mod_celadon/_storge_icons/icons/structures/supplypods_32x32.dmi'
+// [/CELADON-EDIT]
 	image_state = "selector"
 	image_layer = FLY_LAYER
 	alpha = 150
 
 /obj/effect/hallucination/simple/dropoff_location
 	name = "Dropoff Location (Only you can see this)"
-	image_icon = 'icons/obj/supplypods_32x32.dmi'
+// [CELADON-EDIT] - CELADON_RETURN_REVERSE_MENU
+//	image_icon = 'icons/obj/supplypods_32x32.dmi'
+	image_icon = 'mod_celadon/_storge_icons/icons/structures/supplypods_32x32.dmi'
+// [/CELADON-EDIT]
 	image_state = "dropoff_indicator"
 	image_layer = FLY_LAYER
 	alpha = 0
