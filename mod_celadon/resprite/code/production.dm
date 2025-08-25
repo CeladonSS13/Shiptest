@@ -1,12 +1,10 @@
 /obj/machinery/rnd/production/techfab/department
 	icon = 'mod_celadon/_storge_icons/icons/machinery/research.dmi'
 	icon_state = "techfab"
-	var/tmp/skip_next_insert_anim = FALSE
 
 /obj/machinery/rnd/production/protolathe/department
 	icon = 'mod_celadon/_storge_icons/icons/machinery/research.dmi'
 	icon_state = "protolathe"
-	var/tmp/skip_next_insert_anim = FALSE
 
 /obj/machinery/rnd/production/proc/add_department_stripe(obj/machinery/rnd/production/M, list/overlays)
     if(M.department_tag)
