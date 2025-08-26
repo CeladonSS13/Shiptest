@@ -27,7 +27,6 @@
 
 /obj/item/multitool/tricorder/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
 	. = ..()
-
 	if(can_see(user, target, ranged_scan_distance))
 		switch(mode)
 			if(0)
@@ -36,6 +35,8 @@
 				healthscan(user, target, advanced = TRUE)
 			if(2)
 				chemscan(user, target)
+	var/sound_to_play = (mode == 0) ? 'sound/effects/pop.ogg' : 'sound/effects/fastbeep.ogg'
+	playsound(src, sound_to_play, 10)
 
 // Дебаговский трикодер
 /obj/item/multitool/tricorder/debug
@@ -44,23 +45,28 @@
 	icon_state = "tricorder_atmos"
 	medicalTricorder = TRUE
 	ranged_scan_distance = 15
+	tool_behaviour = "atmos"
+
+/obj/item/multitool/tricorder/debug/examine()
+	. = ..()
+	. += "The mode is: [tool_behaviour] scan"
 
 /obj/item/multitool/tricorder/debug/attack_self(mob/user)
 	mode++
 	if(mode > 2)
 		mode = 0
-	var/modes
+
 	switch(mode)
 		if(0)
-			modes = "atmos"
+			tool_behaviour = "atmos"
 		if(1)
-			modes = "health"
+			tool_behaviour = "health"
 		if(2)
-			modes = "chem"
+			tool_behaviour = "chem"
 
 	playsound(get_turf(user), 'sound/machines/click.ogg', 50, TRUE)
-	balloon_alert(user, "scanning: [modes]")
-	icon_state = "tricorder_[modes]"
+	balloon_alert(user, "mode: [tool_behaviour] scan")
+	icon_state = "tricorder_[tool_behaviour]"
 
 /obj/item/construction/rcd/arcd
 	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
@@ -77,12 +83,10 @@
 /obj/item/inducer
 	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
 
-/obj/item/analyzer
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
-
 /obj/item/analyzer/ranged
 	name = "long-range gas analyzer"
 	desc = "A hand-held long-range environmental scanner which reports current gas levels."
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
 	icon_state = "analyzerranged"
 	custom_materials = list(/datum/material/iron = 400, /datum/material/glass = 1000, /datum/material/gold = 200, /datum/material/plastic = 200)
 	var/ranged_scan_distance = 15
