@@ -702,10 +702,10 @@
 /turf/open/floor/carpet/red,
 /area/ruin/jungle)
 "lB" = (
-/obj/structure/displaycase{
-	start_showpiece_type = /obj/item/book_of_babel
+/obj/structure/table/wood/fancy/black,
+/obj/item/book_of_babel{
+	pixel_y = 4
 	},
-/obj/structure/spider/stickyweb,
 /turf/open/floor/carpet/nanoweave,
 /area/ruin/jungle)
 "lD" = (
@@ -905,6 +905,7 @@
 /turf/open/floor/carpet/red,
 /area/ruin/jungle)
 "on" = (
+/obj/structure/spider/stickyweb,
 /turf/open/floor/carpet/nanoweave,
 /area/ruin/jungle)
 "oq" = (
@@ -1946,7 +1947,6 @@
 /obj/structure/safe,
 /obj/item/codespeak_manual,
 /obj/item/keycard/library,
-/obj/item/key/displaycase,
 /obj/structure/spider/stickyweb,
 /turf/open/floor/carpet/black,
 /area/ruin/jungle)
@@ -3233,6 +3233,7 @@
 	name = "Shutters Button"
 	},
 /obj/effect/decal/cleanable/plastic,
+/obj/structure/spider/stickyweb,
 /turf/open/floor/carpet/nanoweave,
 /area/ruin/jungle)
 "YP" = (
