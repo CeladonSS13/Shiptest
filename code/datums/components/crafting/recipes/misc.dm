@@ -246,6 +246,7 @@
 	)
 	category = CAT_MISC
 
+// [CELADON-ADD] - TRIBAL-CRAFT
 /datum/crafting_recipe/headpike
 	name = "Spike Head (Glass Spear)"
 	time = 65
@@ -266,3 +267,4 @@
 			/obj/item/melee/spear/bone = 1)
 	result = /obj/structure/headpike/bone
 	category = CAT_MISC
+// [/CELADON-ADD]

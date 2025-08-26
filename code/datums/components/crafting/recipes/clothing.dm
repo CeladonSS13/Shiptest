@@ -214,6 +214,7 @@
 				/obj/item/stack/sheet/animalhide/goliath_hide = 2)
 	category = CAT_CLOTHING
 
+// [CELADON-ADD] - TRIBAL-CRAFT
 /datum/crafting_recipe/drakecloak
 	name = "Ash Drake Armour"
 	result = /obj/item/clothing/suit/hooded/cloak/drake
@@ -232,3 +233,4 @@
 				/obj/item/stack/sheet/animalhide/goliath_hide/polar_bear_hide = 2)
 	blacklist = list(/obj/item/stack/sheet/animalhide/goliath_hide)
 	category = CAT_CLOTHING
+// [/CELADON-ADD]
