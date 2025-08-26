@@ -35,7 +35,7 @@
 				healthscan(user, target, advanced = TRUE)
 			if(2)
 				chemscan(user, target)
-	var/sound_to_play = (mode == 0) ? 'sound/effects/pop.ogg' : 'sound/effects/fastbeep.ogg'
+	var/sound_to_play = mode ? 'sound/effects/pop.ogg' : 'sound/effects/fastbeep.ogg'
 	playsound(src, sound_to_play, 10)
 
 // Дебаговский трикодер
@@ -45,11 +45,11 @@
 	icon_state = "tricorder_atmos"
 	medicalTricorder = TRUE
 	ranged_scan_distance = 15
-	tool_behaviour = "atmos"
+	var/modes = "atmos"
 
 /obj/item/multitool/tricorder/debug/examine()
 	. = ..()
-	. += "The mode is: [tool_behaviour] scan"
+	. += "The mode is: [modes] scan"
 
 /obj/item/multitool/tricorder/debug/attack_self(mob/user)
 	mode++
@@ -58,15 +58,15 @@
 
 	switch(mode)
 		if(0)
-			tool_behaviour = "atmos"
+			modes = "atmos"
 		if(1)
-			tool_behaviour = "health"
+			modes = "health"
 		if(2)
-			tool_behaviour = "chem"
+			modes = "chem"
 
 	playsound(get_turf(user), 'sound/machines/click.ogg', 50, TRUE)
-	balloon_alert(user, "mode: [tool_behaviour] scan")
-	icon_state = "tricorder_[tool_behaviour]"
+	balloon_alert(user, "mode: [modes] scan")
+	icon_state = "tricorder_[modes]"
 
 /obj/item/construction/rcd/arcd
 	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
