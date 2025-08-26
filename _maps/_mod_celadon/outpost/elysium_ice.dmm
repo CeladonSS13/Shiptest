@@ -3977,10 +3977,6 @@
 	pixel_y = 14;
 	network = list("outpostelysium")
 	},
-/obj/machinery/door/poddoor/ert{
-	id = "ice_sec_medicals";
-	dir = 4
-	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/reseption)
 "cnP" = (
@@ -4997,7 +4993,6 @@
 /obj/effect/turf_decal/corner/opaque/blue/diagonal,
 /obj/item/storage/firstaid/medical,
 /obj/item/clothing/glasses/hud/health,
-/obj/item/storage/case/surgery,
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/medical/surgery_2)
 "cUM" = (
@@ -12764,10 +12759,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/door/poddoor/ert{
-	id = "ice_sec_medicals";
-	dir = 4
-	},
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -14163,12 +14154,9 @@
 "hXF" = (
 /obj/structure/closet/wall/med/directional/south,
 /obj/effect/turf_decal/corner/opaque/blue/diagonal,
-/obj/item/storage/firstaid/medical,
-/obj/item/clothing/glasses/hud/health/prescription,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
 	},
-/obj/item/storage/case/surgery,
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/medical/surgery_2)
 "hYb" = (
@@ -17242,6 +17230,16 @@
 /obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plating,
 /area/outpost/maintenance/starboard)
+"jGl" = (
+/obj/machinery/door/poddoor/preopen{
+	id = "outpost_security_window_cell_2"
+	},
+/obj/structure/grille,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/outpost/security)
 "jGS" = (
 /turf/open/floor/carpet/green,
 /area/outpost/fraction/separatist)
@@ -20575,15 +20573,12 @@
 "lIR" = (
 /obj/structure/closet/wall/med/directional/south,
 /obj/effect/turf_decal/corner/opaque/blue/diagonal,
-/obj/item/storage/firstaid/medical,
-/obj/item/clothing/glasses/hud/health,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
-/obj/item/storage/case/surgery,
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/medical/surgery_2)
 "lJa" = (
@@ -34904,9 +34899,6 @@
 	dir = 1
 	},
 /obj/machinery/door/firedoor/border_only,
-/obj/machinery/door/poddoor/ert{
-	id = "ice_sec_medicals_2"
-	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/palata_2)
 "tPk" = (
@@ -41573,11 +41565,6 @@
 	req_one_access_txt = "8123"
 	},
 /obj/effect/turf_decal/corner/opaque/blue/mono,
-/obj/machinery/door/poddoor/ert{
-	id = "ice_sec_medicals";
-	dir = 4;
-	layer = 3.31
-	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/reseption)
 "xEw" = (
@@ -54528,7 +54515,7 @@ gok
 gok
 gok
 gok
-oGh
+jGl
 soo
 doi
 sKr
