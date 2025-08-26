@@ -341,6 +341,11 @@
 
 	var/special_role_text = lowertext(name)
 
+// [CELADON-ADD] - RETURN-CONTRACTOR
+	if (contractor_hub)
+		result += contractor_round_end()
+// [/CELADON-ADD]
+
 	if(traitorwin)
 		result += span_greentext("The [special_role_text] was successful!")
 	else
