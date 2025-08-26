@@ -35,7 +35,7 @@
 				healthscan(user, target, advanced = TRUE)
 			if(2)
 				chemscan(user, target)
-	var/sound_to_play = mode ? 'sound/effects/pop.ogg' : 'sound/effects/fastbeep.ogg'
+	var/sound_to_play = mode ? 'sound/effects/fastbeep.ogg' : 'sound/effects/pop.ogg'
 	playsound(src, sound_to_play, 10)
 
 // Дебаговский трикодер
@@ -53,16 +53,14 @@
 
 /obj/item/multitool/tricorder/debug/attack_self(mob/user)
 	mode++
-	if(mode > 2)
-		mode = 0
-
 	switch(mode)
-		if(0)
-			modes = "atmos"
 		if(1)
 			modes = "health"
 		if(2)
 			modes = "chem"
+		if(3)
+			mode = 0
+			modes = "atmos"
 
 	playsound(get_turf(user), 'sound/machines/click.ogg', 50, TRUE)
 	balloon_alert(user, "mode: [modes] scan")
