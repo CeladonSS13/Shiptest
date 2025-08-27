@@ -80,7 +80,9 @@
 /turf/closed/wall/mineral/titanium/interior,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "ar" = (
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 2
+	},
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
@@ -111,7 +113,9 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/machinery/power/smes/shuttle,
+/obj/machinery/power/smes/shuttle{
+	dir = 2
+	},
 /obj/structure/cable{
 	icon_state = "0-1"
 	},
@@ -124,7 +128,9 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/machinery/power/smes/shuttle,
+/obj/machinery/power/smes/shuttle{
+	dir = 2
+	},
 /obj/structure/cable{
 	icon_state = "0-1"
 	},
@@ -1833,6 +1839,7 @@
 /obj/effect/turf_decal/corner/opaque/red{
 	dir = 8
 	},
+/obj/item/storage/box/ammo/c45,
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/derelictoutpost)
 "kC" = (
@@ -1942,6 +1949,11 @@
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/cargostorage)
+"wZ" = (
+/obj/structure/table,
+/obj/structure/extinguisher_cabinet/directional/west,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/derelictoutpost/cargobay)
 "xA" = (
 /obj/structure/closet/crate/engineering,
 /obj/item/multitool,
@@ -2007,6 +2019,16 @@
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/cargostorage)
+"DS" = (
+/obj/structure/alien/weeds{
+	color = "#4BAE56";
+	desc = "A thick gelatinous surface covers the floor.  Someone get the golashes.";
+	name = "gelatinous floor"
+	},
+/obj/effect/decal/cleanable/blood/old,
+/obj/item/storage/box/ammo/c45,
+/turf/open/floor/plating/asteroid/smoothed,
+/area/ruin/space/has_grav/derelictoutpost)
 "Ei" = (
 /obj/structure/closet/crate,
 /obj/item/storage/pill_bottle/stimulant,
@@ -2021,10 +2043,19 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/cargostorage)
 "EZ" = (
-/obj/structure/extinguisher_cabinet/directional/north,
-/obj/effect/turf_decal/industrial/hatch/yellow,
-/turf/open/floor/plasteel,
-/area/ruin/space/has_grav/derelictoutpost/cargobay)
+/obj/effect/turf_decal/corner/opaque/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/red,
+/obj/effect/turf_decal/corner/opaque/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/corner/opaque/red{
+	dir = 8
+	},
+/obj/item/melee/knife/combat,
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/derelictoutpost)
 "FV" = (
 /obj/structure/closet/crate/engineering,
 /obj/item/storage/toolbox/mechanical,
@@ -2424,10 +2455,10 @@ af
 ai
 al
 ap
-aw
+wZ
 aw
 WJ
-EZ
+Rk
 aJ
 az
 bK
@@ -3005,7 +3036,7 @@ aa
 aa
 aY
 aK
-Xq
+EZ
 Oy
 Ir
 cz
@@ -3481,7 +3512,7 @@ cR
 cm
 dm
 cm
-dD
+DS
 cm
 cm
 cm
