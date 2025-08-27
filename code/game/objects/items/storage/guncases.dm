@@ -21,6 +21,7 @@
 	var/gun_type
 	var/mag_type
 	var/mag_count = 2
+	var/ammo_box
 	var/ammoless = TRUE
 	var/grab_loc = FALSE
 	var/holdable_items = list(
@@ -58,6 +59,8 @@
 		for(var/i in 1 to mag_count)
 			if(ispath(mag_type, /obj/item/ammo_box) | ispath(mag_type, /obj/item/stock_parts/cell))
 				new mag_type(src, ammoless)
+	if(ammo_box)
+		new ammo_box(src)
 
 /// Need to double check this in a seperate pr that adds this to a few ships
 /// Eats the items on its tile
