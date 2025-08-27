@@ -778,6 +778,7 @@
 /area/outpost/exterior)
 "aud" = (
 /obj/structure/disposalpipe/segment,
+/obj/structure/dirt_pile/random,
 /turf/open/floor/plasteel/stairs/stairs_pack/mid,
 /area/outpost/exterior)
 "aug" = (
@@ -2970,6 +2971,14 @@
 /obj/structure/fluff/hedge,
 /turf/open/floor/wood,
 /area/outpost/fraction/nanotrasen)
+"bNg" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/dirt_pile/random,
+/turf/open/floor/plasteel/patterned/brushed{
+	light_color = "#1B1D2E";
+	light_range = 2
+	},
+/area/outpost/exterior)
 "bNl" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
 	dir = 4
@@ -5376,6 +5385,7 @@
 	dir = 8;
 	pixel_x = -2
 	},
+/obj/structure/dirt_pile/random,
 /turf/open/floor/plasteel/stairs/stairs_pack/left_green,
 /area/outpost/exterior)
 "dhv" = (
@@ -11238,6 +11248,7 @@
 	},
 /area/outpost/crew/lounge/cab_1)
 "gpq" = (
+/obj/structure/dirt_pile/random,
 /turf/open/floor/plasteel/stairs/stairs_pack/left_green,
 /area/outpost/exterior)
 "gpy" = (
@@ -12885,6 +12896,7 @@
 /obj/effect/turf_decal/corner/transparent/green/bordercorner{
 	dir = 4
 	},
+/obj/structure/dirt_pile/random,
 /turf/open/floor/plasteel/patterned/brushed{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -15988,6 +16000,16 @@
 	},
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar/bar_zone)
+"iVK" = (
+/obj/effect/turf_decal/corner/transparent/green/bordercorner{
+	dir = 1
+	},
+/obj/structure/dirt_pile/random,
+/turf/open/floor/plasteel/patterned/brushed{
+	light_color = "#1B1D2E";
+	light_range = 2
+	},
+/area/outpost/exterior)
 "iWF" = (
 /obj/machinery/airalarm/directional/east,
 /obj/structure/cable{
@@ -16652,6 +16674,7 @@
 /area/outpost/maintenance/starboard)
 "jnf" = (
 /obj/effect/turf_decal/borderfloor/corner,
+/obj/structure/dirt_pile/random,
 /turf/open/floor/plasteel/patterned/brushed{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -17334,6 +17357,14 @@
 "jJr" = (
 /turf/closed/wall/r_wall,
 /area/outpost/vacant_rooms/office)
+"jJv" = (
+/obj/effect/turf_decal/corner/transparent/green/bordercorner,
+/obj/structure/dirt_pile/random,
+/turf/open/floor/plasteel/patterned/brushed{
+	light_color = "#1B1D2E";
+	light_range = 2
+	},
+/area/outpost/exterior)
 "jJw" = (
 /obj/machinery/newscaster/directional/south,
 /mob/living/simple_animal/pet/fox/fennec,
@@ -17626,6 +17657,7 @@
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "jYH" = (
+/obj/structure/dirt_pile/random,
 /turf/open/floor/plasteel/stairs/stairs_pack/right_green,
 /area/outpost/exterior)
 "jYN" = (
@@ -20590,6 +20622,7 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/surgery_1)
 "lJc" = (
+/obj/structure/dirt_pile/random,
 /turf/open/floor/plasteel/stairs/stairs_pack/mid,
 /area/outpost/exterior)
 "lJs" = (
@@ -31853,6 +31886,7 @@
 	dir = 4;
 	pixel_x = 2
 	},
+/obj/structure/dirt_pile/random,
 /turf/open/floor/plasteel/stairs/stairs_pack/right_green,
 /area/outpost/exterior)
 "sed" = (
@@ -62333,7 +62367,7 @@ fqu
 sRE
 mvu
 aud
-mpA
+bNg
 pda
 uWJ
 nig
@@ -62520,9 +62554,9 @@ pJO
 dOW
 hou
 jYH
-dOW
+iVK
 lEX
-nqd
+jJv
 ydg
 nig
 ieI
@@ -63455,7 +63489,7 @@ nkO
 sRE
 dOW
 lJc
-sRE
+rPi
 sRE
 jnf
 nDK
