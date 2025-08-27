@@ -277,29 +277,22 @@
 /area/ruin/space/has_grav/derelictoutpost/powerstorage)
 "bb" = (
 /obj/machinery/power/smes,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/powerstorage)
 "bc" = (
 /obj/structure/table,
 /obj/item/stock_parts/cell/hyper,
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/powerstorage)
 "bd" = (
-/obj/machinery/power/smes,
-/obj/structure/cable{
-	icon_state = "0-8"
+/obj/structure/alien/weeds{
+	color = "#4BAE56";
+	desc = "A thick gelatinous surface covers the floor.  Someone get the golashes.";
+	name = "gelatinous floor"
 	},
-/turf/open/floor/plasteel,
-/area/ruin/space/has_grav/derelictoutpost/powerstorage)
+/obj/effect/gibspawner/human/bodypartless,
+/turf/open/floor/plating/asteroid/smoothed,
+/area/ruin/space/has_grav/derelictoutpost)
 "be" = (
 /obj/structure/alien/weeds{
 	color = "#4BAE56";
@@ -428,6 +421,9 @@
 "br" = (
 /obj/machinery/power/terminal{
 	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
 	},
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/powerstorage)
@@ -1269,6 +1265,7 @@
 	icon_state = "trails_1";
 	name = "dried blood trail"
 	},
+/obj/effect/gibspawner/human/bodypartless,
 /turf/open/floor/plating/asteroid/smoothed,
 /area/ruin/space/has_grav/derelictoutpost)
 "dp" = (
@@ -2022,6 +2019,15 @@
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/cargobay)
+"BX" = (
+/obj/structure/alien/weeds{
+	color = "#4BAE56";
+	desc = "A thick gelatinous surface covers the floor.  Someone get the golashes.";
+	name = "gelatinous floor"
+	},
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/open/floor/mineral/titanium/blue,
+/area/ruin/space/has_grav/derelictoutpost/dockedship)
 "CW" = (
 /obj/structure/alien/weeds{
 	color = "#4BAE56";
@@ -2087,6 +2093,15 @@
 	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
+"FW" = (
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/derelictoutpost/powerstorage)
 "HN" = (
 /obj/machinery/door/poddoor{
 	id = "bigderelictshipdock"
@@ -2094,6 +2109,15 @@
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/derelictoutpost/cargobay)
+"In" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/derelictoutpost/powerstorage)
 "Ir" = (
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced{
@@ -2384,7 +2408,7 @@ aC
 aC
 aA
 bc
-bs
+In
 bs
 bZ
 cp
@@ -2419,8 +2443,8 @@ ad
 aC
 aC
 aA
-bd
-br
+bb
+FW
 bJ
 ca
 cq
@@ -2635,7 +2659,7 @@ ax
 aE
 aO
 aO
-be
+BX
 bu
 be
 at
@@ -3615,7 +3639,7 @@ cF
 cS
 cZ
 do
-cR
+bd
 cm
 cm
 dR
