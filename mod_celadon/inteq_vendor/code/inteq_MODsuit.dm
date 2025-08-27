@@ -143,6 +143,14 @@
 	SEND_SIGNAL(src, COMSIG_MOD_SHIELD_DESTROYED, shield_integrity)
 
 
+/obj/item/shield/riot/mod/attackby(obj/item/W, mob/user, params)
+	if(istype(W, /obj/item/melee/baton))
+		if(COOLDOWN_FINISHED(src, baton_bash))
+			user.visible_message(span_warning("[user] bashes [src] with [W]!"))
+			playsound(src, shield_bash_sound, 50, TRUE)
+			COOLDOWN_START(src, baton_bash, 30)
+
+
 /obj/item/mod/module/shield/inteq
 	name = "InteQ MOD retractable shield module"
 	desc = "A module installed into the forearm of the suit, extending into a sturdy shield as needed. \
