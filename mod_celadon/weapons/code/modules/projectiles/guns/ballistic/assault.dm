@@ -21,7 +21,7 @@
 	unique_mag_sprites_for_variants = TRUE
 	default_ammo_type = /obj/item/ammo_box/magazine/g36/sh
 	allowed_ammo_types = list(
-		/obj/item/ammo_box/magazine/g36/sh,
+		/obj/item/ammo_box/magazine/g36
 	)
 //Прочее
 	var/obj/item/ammo_box/magazine/g36/sh/alternate_magazine
@@ -74,7 +74,7 @@ NO_MAG_GUN_HELPER(automatic/assault/g36sh/inteq)
 	unique_mag_sprites_for_variants = TRUE
 	default_ammo_type = /obj/item/ammo_box/magazine/g36
 	allowed_ammo_types = list(
-		/obj/item/ammo_box/magazine/g36, /obj/item/ammo_box/magazine/g36/sh, /obj/item/ammo_box/magazine/g36/drum
+		/obj/item/ammo_box/magazine/g36
 	)
 	var/obj/item/ammo_box/magazine/g36/alternate_magazine
 

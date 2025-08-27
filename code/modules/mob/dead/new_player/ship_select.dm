@@ -31,6 +31,15 @@
 				spawnee.new_player_panel()
 				return
 
+			// [CELADON-ADD] - CELADON_FIXES
+			// Проверяем дублирование имен при входе на корабль
+			if(!spawnee.client.prefs.randomise[RANDOM_NAME])
+				var/name = spawnee.client.prefs.real_name
+				if(GLOB.real_names_joined.Find(name))
+					to_chat(spawnee, span_warning("Someone has spawned with this name already."))
+					spawnee.new_player_panel()
+					return
+			// [/CELADON-ADD]
 			var/did_application = FALSE
 			if(target.join_mode == SHIP_JOIN_MODE_APPLY)
 				var/datum/ship_application/current_application = target.get_application(spawnee)
@@ -78,6 +87,13 @@
 				return
 
 			var/datum/map_template/shuttle/template = SSmapping.ship_purchase_list[params["name"]]
+			// [CELADON-ADD] - CELADON_FIXES - фикс спавна пустых шаттлов (вагинобонд)
+			// Проверяем дублирование имен в самом начале
+			var/name = spawnee.client.prefs.real_name
+			if(GLOB.real_names_joined.Find(name))
+				to_chat(spawnee, span_warning("Someone has spawned with this name already."))
+				return
+			// [/CELADON-ADD]
 			if(SSovermap.ship_spawning)
 				to_chat(spawnee, span_danger("A ship is currently spawning. Try again in a little while."))
 				return
@@ -98,12 +114,6 @@
 			if(num_ships_with_template >= template.limit)
 				to_chat(spawnee, span_danger("There are already [num_ships_with_template] ships of this type; you cannot spawn more!"))
 				return
-			//[CELADON-ADD] -- CELADON_FIXES -- фикс спавна пустых шаттлов (вагинобонд)
-			var/name = spawnee.client.prefs.real_name
-			if(GLOB.real_names_joined.Find(name))
-				to_chat(usr, "<span class='warning'>Someone has spawned with this name already.")
-				return
-			//[/CELADON-ADD]
 
 			ui.close()
 
@@ -164,6 +174,14 @@
 		if(!S.is_join_option())
 			continue
 
+		// [CELADON-ADD] - YOU_NOT_SEPARATIST
+		// Проверка ограничений по видам для кораблей фракции Elysium
+		if(S.source_template.faction.name == FACTION_ELYSIUM)
+			var/species_id = user.client?.prefs?.pref_species?.id
+			if(species_id != "human" && species_id != "ipc" && species_id != "lanius")
+				continue
+		// [/CELADON-ADD]
+
 		var/list/ship_jobs = list()
 		for(var/datum/job/job as anything in S.job_slots)
 			var/slots = S.job_slots[job]
@@ -197,6 +215,12 @@
 		var/datum/map_template/shuttle/T = SSmapping.ship_purchase_list[template_name]
 		if(!T.enabled)
 			continue
+
+		// Проверка ограничений по видам для шаблонов кораблей фракции Elysium
+		if(T.faction.name == FACTION_ELYSIUM)
+			var/species_id = user.client?.prefs?.pref_species?.id
+			if(species_id != "human" && species_id != "ipc" && species_id != "lanius")
+				continue
 		var/list/ship_data = list(
 			"name" = T.name,
 			"faction" = T.faction.name,

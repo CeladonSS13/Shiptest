@@ -86,12 +86,12 @@
 
 /datum/supply_pack/faction/syndicate/magazine/bulldog
 	name = "Bulldog Box Magazine Crate"
-	desc = "Contains an 8-round 12ga box magazine for the Bulldog weapons platform."
+	desc = "Contains a 12ga box magazine for the Bulldog weapons platform, with a capacity of 8 rounds."
 	contains = list(/obj/item/ammo_box/magazine/m12g_bulldog/empty)
 	cost = 750
 
 /datum/supply_pack/faction/syndicate/magazine/bulldog_12
 	name = "Bulldog Drum Magazine Crate"
-	desc = "Contains a 12-round 12ga drum magazine for the Bulldog weapons platform."
+	desc = "Contains a 12ga drum magazine for the Bulldog weapons platform, with a capacity of 12 rounds."
 	contains = list(/obj/item/ammo_box/magazine/m12g_bulldog/drum/empty)
 	cost = 1500
