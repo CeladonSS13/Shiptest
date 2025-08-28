@@ -67,9 +67,9 @@
 	name = "mysterious dirt pile"
 	desc = "A pile of dirt that seems to shimmer slightly. Something unusual might be buried underneath."
 	var/list/possible_effects = list(
-		"safe" = 10,
+		"safe" = 5,
 		"item" = 40,
-		"effect" = 50
+		"effect" = 55
 	)
 
 /obj/structure/dirt_pile/random/Initialize()
@@ -103,7 +103,7 @@
 			for(var/i in 1 to S.number_of_tumblers)
 				S.tumblers.Add(rand(0, 99))
 			// Добавляем случайный лут в сейф
-			var/obj/effect/spawner/random/outpost_loot/loot_spawner = new(S)
+			var/obj/effect/spawner/random/outpost_loot/big/loot_spawner = new(S)
 			loot_spawner.spawn_loot()
 			qdel(loot_spawner)
 

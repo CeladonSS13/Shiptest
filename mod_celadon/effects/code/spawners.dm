@@ -1,7 +1,7 @@
 /obj/effect/spawner/random/outpost_loot
 	name = "outpost loot spawner"
 	icon_state = "cash"
-	spawn_loot_count = 3
+	spawn_loot_count = 1
 	loot = list(
 		/obj/item/spacecash/bundle/c1 = 10,
 		/obj/item/spacecash/bundle/c10 = 5,
@@ -95,6 +95,6 @@
 		/obj/item/clothing/suit/hawaiian/red = 1
 	)
 
-
-
-
+/obj/effect/spawner/random/outpost_loot/big
+	name = "outpost big loot spawner"
+	spawn_loot_count = 3
