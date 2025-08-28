@@ -123,9 +123,12 @@ SUBSYSTEM_DEF(jukeboxes)
 				continue
 
 			var/inrange = FALSE
+			// [CELADON-EDIT] - FIXES_JUKEBOX
+			// var/juke_volume = jukebox.volume || 70 // ORIGINAL
 			var/juke_volume = 70
 			if(jukebox.vars.Find("volume"))
 				juke_volume = jukebox.vars["volume"]
+			// [/CELADON-EDIT]
 			if(juke_volume <= 0 || !(M.virtual_z() in virtual_ids))
 				song_played.status = SOUND_MUTE | SOUND_UPDATE
 			else
