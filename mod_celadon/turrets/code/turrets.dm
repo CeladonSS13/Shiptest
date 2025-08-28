@@ -13,8 +13,8 @@
 	power_change()
 
 /obj/machinery/turretid/late_connect_to_shuttle(obj/docking_port/mobile/port, obj/docking_port/stationary/dock)
-	.=..()
 	SIGNAL_HANDLER
+	. = ..()
 
 	for(var/datum/weakref/ship_gun as anything in port.turret_list)
 		var/obj/machinery/porta_turret/turret_gun = ship_gun.resolve()
