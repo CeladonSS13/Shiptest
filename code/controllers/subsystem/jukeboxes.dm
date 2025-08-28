@@ -94,8 +94,12 @@ SUBSYSTEM_DEF(jukeboxes)
 		if(!istype(juketrack))
 			stack_trace("Invalid jukebox track datum.")
 			continue
+		// [CELADON-EDIT] - FIXES_JUKEBOX - Убираем строгость, чтобы можно было обращаться и к другим подобным жукбоксам объектам
+		// var/obj/machinery/jukebox/jukebox = jukeinfo[3]
+		// if(!istype(jukebox))	// ORIGINAL
 		var/obj/jukebox = jukeinfo[3]
 		if(!jukebox)
+		// [/CELADON-EDIT]
 			stack_trace("Nonexistant or invalid object associated with jukebox.")
 			continue
 		var/sound/song_played = sound(juketrack.song_path)
