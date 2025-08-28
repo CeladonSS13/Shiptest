@@ -1,8 +1,8 @@
 /obj/structure/dirt_pile
-	name = "dirt pile"
+	name = "empty dirt pile"
 	desc = "A small pile of dirt. Something might be buried underneath."
-	icon = 'icons/obj/flora/rocks.dmi'
-	icon_state = "snowrock_1"
+	icon = 'mod_celadon/_storge_icons/icons/structures/snow.dmi'
+	icon_state = "snowstone"
 	density = FALSE
 	anchored = TRUE
 	var/dug_up = FALSE
@@ -67,9 +67,9 @@
 	name = "mysterious dirt pile"
 	desc = "A pile of dirt that seems to shimmer slightly. Something unusual might be buried underneath."
 	var/list/possible_effects = list(
-		"safe" = 30,
+		"safe" = 10,
 		"item" = 40,
-		"effect" = 30
+		"effect" = 50
 	)
 
 /obj/structure/dirt_pile/random/Initialize()
@@ -98,6 +98,10 @@
 			var/obj/structure/safe/S = new(get_turf(src))
 			// Устанавливаем 10-значный код
 			S.number_of_tumblers = 10
+			// Генерируем новую комбинацию
+			S.tumblers = list()
+			for(var/i in 1 to S.number_of_tumblers)
+				S.tumblers.Add(rand(0, 99))
 			// Добавляем случайный лут в сейф
 			var/obj/effect/spawner/random/outpost_loot/loot_spawner = new(S)
 			loot_spawner.spawn_loot()
@@ -108,11 +112,10 @@
 				span_notice("[user] digs up [src], finding something valuable!"),
 				span_notice("You dig up [src] and find something interesting!")
 			)
-			var/item_type = pick(/obj/item/holochip, /obj/item/gun/energy/laser, /obj/item/clothing/suit/armor/vest, /obj/item/storage/toolbox/syndicate)
-			var/obj/item/I = new item_type(get_turf(src))
-			if(istype(I, /obj/item/holochip))
-				var/obj/item/holochip/H = I
-				H.credits = 1000
+			var/obj/effect/spawner/random/outpost_loot/loot_spawner = new(get_turf(src))
+			loot_spawner.spawn_loot_count = 1
+			loot_spawner.spawn_loot()
+			qdel(loot_spawner)
 
 		if("effect")
 			var/effect_type = rand(1,3)
@@ -173,6 +176,10 @@
 	var/obj/structure/safe/S = new safe_type(get_turf(src))
 	// Устанавливаем 10-значный код
 	S.number_of_tumblers = 10
+	// Генерируем новую комбинацию
+	S.tumblers = list()
+	for(var/i in 1 to S.number_of_tumblers)
+		S.tumblers.Add(rand(0, 99))
 	// Добавляем случайный лут в сейф
 	var/obj/effect/spawner/random/outpost_loot/loot_spawner = new(S)
 	loot_spawner.spawn_loot()
