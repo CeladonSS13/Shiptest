@@ -18,6 +18,9 @@
 	pixel_x = -8
 	sign_path = /obj/structure/sign/moniq
 
+/obj/item/sign/moniq/proc/can_hear()
+	return TRUE
+
 /obj/item/sign/moniq/Initialize()
 	. = ..()
 	var/matrix/M = transform
@@ -168,6 +171,9 @@
 	/// Volume of the songs played
 	var/volume = 70
 	pixel_x = -8
+
+/obj/structure/sign/moniq/proc/can_hear()
+	return TRUE
 
 
 /obj/structure/sign/moniq/Destroy()
