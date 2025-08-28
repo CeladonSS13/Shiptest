@@ -215,6 +215,7 @@
 /datum/outfit/outpost/medic
 	name = "Outpost Medical Doctor"
 
+	head = /obj/item/clothing/head/beret/dominia/medical
 	belt = /obj/item/pda/medical
 	ears = /obj/item/radio/headset/headset_med
 	uniform = /obj/item/clothing/under/rank/medical/doctor/blue
