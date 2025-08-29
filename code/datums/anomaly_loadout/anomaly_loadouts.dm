@@ -331,7 +331,7 @@
 			"faction" = FALSE,
 		)
 	
-/datum/anomalyloadout/proc/initIndieArmors
+/datum/anomalyloadout/proc/initIndieArmors()
 		GLOB.anomaly_loadout_armoroptions_indie[/obj/item/clothing/suit/armor/vest] = list(
 			"name" = "armor vest",
 			"desc" = "A slim Type I armored vest that provides decent protection against most types of damage.",
@@ -696,61 +696,9 @@
 
 /datum/anomalyloadout/syndicate/New()
 	. = ..()
-	weaponoptions[/obj/item/storage/guncase/pistol/himehabu/wammo] = list(
-			"name" = "PC-81 \"Himehabu\"",
-			"desc" = "An astonishingly compact machine pistol firing ultra-light projectiles, designed to be as small and concealable as possible while remaining a credible threat at very close range. Armor penetration is practically non-existent. Chambered in .22.",
-			"price" = 250,
-			"faction" = TRUE,
-	)  
-	weaponoptions[/obj/item/storage/guncase/pistol/asp/wammo] = list(
-			"name" = "BC-81 \"Asp\"",
-			"desc" = "An armor-piercing combat handgun once used by Syndicate strike teams, now primarily used by descendants of the Gorlex Marauders. Chambered in 5.7mm.",
-			"price" = 1250,
-			"faction" = TRUE,
-	)   
-	weaponoptions[/obj/item/storage/guncase/pistol/pc76/wammo] = list(
-			"name" = "PC-76 \"Ringneck\"",
-			"desc" = "A compact handgun used by most Syndicate-affiliated groups. Small enough to conceal in most pockets, making it popular for covert elements and simply as a compact defensive weapon. Chambered in 10x22mm.",
-			"price" = 1250,
-			"faction" = TRUE,
-	)   
-	weaponoptions[/obj/item/storage/guncase/pistol/a357/wammo] = list(
-			"name" = "R-23 \"Viper\"",
-			"desc" = "An imposing revolver used by officers and certain agents of Syndicate member factions during the ICW, still favored by captains and high-ranking officers of the former Syndicate. Chambered in .357 Magnum.",
-			"price" = 1750,
-			"faction" = TRUE,
-	) 
-	weaponoptions[/obj/item/storage/guncase/pistol/rattlesnake/wammo] = list(
-			"name" = "MP-84 \"Rattlesnake\"",
-			"desc" = "A machine pistol, once used by Syndicate infiltrators and special forces during the ICW. Still used by specialists in former Syndicate factions. Chambered in 9x18mm.",
-			"price" = 2500,
-			"faction" = TRUE,
-	)
-	weaponoptions[/obj/item/storage/guncase/bulldog/wammo] = list(
-			"name" = "SG-60r \"Bulldog\"",
-			"desc" = "A bullpup combat shotgun usually seen with a characteristic drum magazine. Wildly popular among Syndicate strike teams during the ICW, although it proved less useful against military-grade equipment. Still popular among former Syndicate factions, especially the Ramzi Clique pirates. Chambered in 12g.",
-			"price" = 4000,
-			"faction" = TRUE,
-	)
-	weaponoptions[/obj/item/storage/guncase/c20r/wammo] = list(
-			"name" = "C-20r \"Cobra\"",
-			"desc" = "A bullpup submachine gun with an integrated suppressor, heavily used by Syndicate strike teams during the ICW. Still sees widespread use by the descendants of the Gorlex Marauders. Chambered in .45.",
-			"price" = 2800,
-			"faction" = TRUE,
-	)
-	weaponoptions[/obj/item/storage/guncase/sidewinder/wammo] = list(
-			"name" = "CDW-81 \"Sidewinder\"",
-			"desc" = "An armor-piercing, compact personal defense weapon, introduced late into the Inter-Corporate War as an improvement over the C-20r when fighting armored personnel. Issued only in small numbers, and used today by specialists of former Syndicate factions. Chambered in 5.7mm.",
-			"price" = 3000,
-			"faction" = TRUE,
-	)
-	weaponoptions[/obj/item/storage/guncase/hydra/wammo] = list(
-			"name" = "SMR-80 \"Hydra\"",
-			"desc" = "Scarborough Arms' premier modular assault rifle platform. This is the basic configuration, optimized for light weight and handiness. A very well-regarded, if expensive and rare, assault rifle. Chambered in 5.56mm CLIP.",
-			"price" = 5000,
-			"faction" = TRUE,
-	)
-	
+	if(GLOB.anomaly_loadout_weaponoptions_syndie.len == 0)
+		initSyndieWeapons()
+	weaponoptions += GLOB.anomaly_loadout_weaponoptions_syndie
 
 	
 	engineering[/obj/item/storage/toolbox/syndicate] = list(
@@ -772,7 +720,61 @@
 			"faction" = TRUE,
 	)
 
-
+/datum/anomalyloadout/syndicate/proc/initSyndieWeapons()
+	GLOB.anomaly_loadout_weaponoptions_syndie[/obj/item/storage/guncase/pistol/himehabu/wammo] = list(
+			"name" = "PC-81 \"Himehabu\"",
+			"desc" = "An astonishingly compact machine pistol firing ultra-light projectiles, designed to be as small and concealable as possible while remaining a credible threat at very close range. Armor penetration is practically non-existent. Chambered in .22.",
+			"price" = 250,
+			"faction" = TRUE,
+	)  
+	GLOB.anomaly_loadout_weaponoptions_syndie[/obj/item/storage/guncase/pistol/asp/wammo] = list(
+			"name" = "BC-81 \"Asp\"",
+			"desc" = "An armor-piercing combat handgun once used by Syndicate strike teams, now primarily used by descendants of the Gorlex Marauders. Chambered in 5.7mm.",
+			"price" = 1250,
+			"faction" = TRUE,
+	)   
+	GLOB.anomaly_loadout_weaponoptions_syndie[/obj/item/storage/guncase/pistol/pc76/wammo] = list(
+			"name" = "PC-76 \"Ringneck\"",
+			"desc" = "A compact handgun used by most Syndicate-affiliated groups. Small enough to conceal in most pockets, making it popular for covert elements and simply as a compact defensive weapon. Chambered in 10x22mm.",
+			"price" = 1250,
+			"faction" = TRUE,
+	)   
+	GLOB.anomaly_loadout_weaponoptions_syndie[/obj/item/storage/guncase/pistol/a357/wammo] = list(
+			"name" = "R-23 \"Viper\"",
+			"desc" = "An imposing revolver used by officers and certain agents of Syndicate member factions during the ICW, still favored by captains and high-ranking officers of the former Syndicate. Chambered in .357 Magnum.",
+			"price" = 1750,
+			"faction" = TRUE,
+	) 
+	GLOB.anomaly_loadout_weaponoptions_syndie[/obj/item/storage/guncase/pistol/rattlesnake/wammo] = list(
+			"name" = "MP-84 \"Rattlesnake\"",
+			"desc" = "A machine pistol, once used by Syndicate infiltrators and special forces during the ICW. Still used by specialists in former Syndicate factions. Chambered in 9x18mm.",
+			"price" = 2500,
+			"faction" = TRUE,
+	)
+	GLOB.anomaly_loadout_weaponoptions_syndie[/obj/item/storage/guncase/bulldog/wammo] = list(
+			"name" = "SG-60r \"Bulldog\"",
+			"desc" = "A bullpup combat shotgun usually seen with a characteristic drum magazine. Wildly popular among Syndicate strike teams during the ICW, although it proved less useful against military-grade equipment. Still popular among former Syndicate factions, especially the Ramzi Clique pirates. Chambered in 12g.",
+			"price" = 4000,
+			"faction" = TRUE,
+	)
+	GLOB.anomaly_loadout_weaponoptions_syndie[/obj/item/storage/guncase/c20r/wammo] = list(
+			"name" = "C-20r \"Cobra\"",
+			"desc" = "A bullpup submachine gun with an integrated suppressor, heavily used by Syndicate strike teams during the ICW. Still sees widespread use by the descendants of the Gorlex Marauders. Chambered in .45.",
+			"price" = 2800,
+			"faction" = TRUE,
+	)
+	GLOB.anomaly_loadout_weaponoptions_syndie[/obj/item/storage/guncase/sidewinder/wammo] = list(
+			"name" = "CDW-81 \"Sidewinder\"",
+			"desc" = "An armor-piercing, compact personal defense weapon, introduced late into the Inter-Corporate War as an improvement over the C-20r when fighting armored personnel. Issued only in small numbers, and used today by specialists of former Syndicate factions. Chambered in 5.7mm.",
+			"price" = 3000,
+			"faction" = TRUE,
+	)
+	GLOB.anomaly_loadout_weaponoptions_syndie[/obj/item/storage/guncase/hydra/wammo] = list(
+			"name" = "SMR-80 \"Hydra\"",
+			"desc" = "Scarborough Arms' premier modular assault rifle platform. This is the basic configuration, optimized for light weight and handiness. A very well-regarded, if expensive and rare, assault rifle. Chambered in 5.56mm CLIP.",
+			"price" = 5000,
+			"faction" = TRUE,
+	)
 
 /datum/anomalyloadout/syndicate/cybersun
 
@@ -804,12 +806,6 @@
 /datum/anomalyloadout/syndicate/cybersun/captain/New()
 	. = ..()
 	loadoutpoints += 3000
-	uniform[/obj/item/clothing/under/syndicate/cybersun/officer] = list(
-			"name" = "cybersun officer's suit",
-			"desc" = "A crimson-red suit used by the officers employed by Cybersun.",
-			"price" = 0,
-			"faction" = TRUE,
-	)
 	armoroptions[/obj/item/clothing/suit/armor/vest/capcarapace/cybersun] = list(
 			"name" = "Cybersun captain's haori",
 			"desc" = "An extraordinarily fashionable haori, utilized by Cybersun captains. Weaved with armored fabric to protect the user from gunshots.",
