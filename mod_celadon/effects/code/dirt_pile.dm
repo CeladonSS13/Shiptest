@@ -5,6 +5,8 @@
 	icon_state = "snowstone"
 	density = FALSE
 	anchored = TRUE
+	light_color = COLOR_ICEPLANET_LIGHT
+	color = COLOR_ICEPLANET_LIGHT
 	var/dug_up = FALSE
 
 /obj/structure/dirt_pile/Initialize()
