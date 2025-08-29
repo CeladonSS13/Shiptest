@@ -3,7 +3,7 @@
 /datum/anomalyloadout
 	var/name = "fish"
 	var/desc = "glup glup glup"
-	var/loadoutpoints = 5000
+	var/loadoutpoints = 4000
 	var/list/weaponoptions = list()
 	var/weaponcostmult = 1
 	var/list/armoroptions = list()
@@ -338,6 +338,25 @@
 			"price" = 600,
 			"faction" = FALSE,
 		)
+		GLOB.anomaly_loadout_armoroptions_indie[/obj/item/clothing/suit/space/hardsuit/mining/independent] = list(
+			"name" = "mining hardsuit",
+			"desc" = "An inexpensive, widespread suit designed for work in hazardous, low pressure environments. Equipped with extra plating against blunt impacts and other common threats as well as a powerful shoulder-mounted floodlight. <br> Suits like this are a common sight among miners on the frontier, frequently equipped with additional improvised plating.",
+			"price" = 1500,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_armoroptions_indie[/obj/item/clothing/suit/space/hardsuit/medical] = list(
+			"name" = "medical hardsuit",
+			"desc" = "A special suit that protects against hazardous, low pressure environments. Built with lightweight materials for easier movement.",
+			"price" = 1500,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_armoroptions_indie[/obj/item/clothing/suit/space/hardsuit/engine] = list(
+			"name" = "engineering hardsuit",
+			"desc" = "A special suit that protects against hazardous, low pressure environments. Has radiation shielding.",
+			"price" = 1500,
+			"faction" = FALSE,
+		)
+		
 
 /datum/anomalyloadout/proc/initIndieDrip()
 		GLOB.anomaly_loadout_drip_indie[/obj/item/clothing/shoes/sneakers/black] = list(
@@ -605,12 +624,32 @@
 			"price" = 250,
 			"faction" = FALSE,
 		)
+		GLOB.anomaly_loadout_utility_indie[/obj/item/tank/internals/emergency_oxygen/engi] = list(
+			"name" = "extended-capacity emergency oxygen tank",
+			"desc" = "Used for emergencies. Contains very little oxygen, so try to conserve it until you actually need it.",
+			"price" = 30,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_utility_indie[/obj/item/tank/internals/oxygen] = list(
+			"name" = "oxygen tank",
+			"desc" = "A tank of oxygen, this one is blue.",
+			"price" = 30,
+			"faction" = FALSE,
+		)
+		
+		
 
 /datum/anomalyloadout/proc/initIndieMedical()
 	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/pouch/medical] = list(
 			"name" = "aid pouch",
 			"desc" = "An individual first aid kit, for use preventing and treating battlefield injuries. Contains 5 gauzes, 5 sutures, 5 regen meshes, and an epipen.",
 			"price" = 250,
+			"faction" = FALSE,
+	)
+	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/pouch/afak] = list(
+			"name" = "aid pouch (AFAK)",
+			"desc" = "An army first aid kit, for use preventing and treating battlefield injuries. Contains 15 sutures, 15 regen meshes, an epipen, and a survival pen.",
+			"price" = 400,
 			"faction" = FALSE,
 	)
 	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/firstaid/regular] = list(

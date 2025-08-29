@@ -65,6 +65,21 @@
 		/obj/item/reagent_containers/hypospray/medipen = 1)
 	generate_items_inside(items_inside,src)
 
+/obj/item/storage/pouch/medical/afak
+	name = "aid pouch"
+	desc = "An army first aid kit, for use preventing and treating battlefield injuries."
+
+
+/obj/item/storage/pouch/medical/afak/PopulateContents()
+	if(empty)
+		return
+	var/static/items_inside = list(
+		/obj/item/stack/medical/suture = 1,
+		/obj/item/stack/medical/mesh = 1,
+		/obj/item/reagent_containers/hypospray/medipen = 1,
+		/obj/item/reagent_containers/hypospray/medipen/survival = 1)
+	generate_items_inside(items_inside,src)
+
 /obj/item/storage/pouch/ammo
 	name = "ammunition pouch"
 	desc = "An ammunition pouch, commonly used by soldiers to hold additional ammo in an accessible location."
