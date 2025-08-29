@@ -28,15 +28,15 @@
 	///Levels unlocked at roundstart in physiology
 	var/list/roundstart_experience
 
-	var/anomalyLoadout = FALSE
+	var/datum/anomalyloadout/anomalyLoadout = null
 
-/datum/job/New(new_name, datum/outfit/job/new_outfit)
+/datum/job/New(new_name, datum/outfit/job/new_outfit, datum/anomalyloadout/al)
 	if(!new_name)
 		return
 
 	name = new_name
 	outfit = new_outfit
-
+	anomalyLoadout = al
 	var/datum/job/outfit_job = new new_outfit.jobtype
 	if(outfit_job)
 		access = outfit_job.get_access()

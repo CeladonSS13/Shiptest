@@ -271,6 +271,9 @@ SUBSYSTEM_DEF(mapping)
 				slots = value
 			else if(islist(value))
 				var/datum/outfit/job/job_outfit = text2path(value["outfit"])
+				var/datum/anomalyloadout/al
+				if(value["anomaly_loadout"])
+					al = text2path(value["anomaly_loadout"])
 				if(isnull(job_outfit))
 					stack_trace("Invalid job outfit: [value["outfit"]] on [S.name]'s config! Defaulting to assistant clothing.")
 					job_outfit = /datum/outfit/job/assistant
@@ -278,7 +281,7 @@ SUBSYSTEM_DEF(mapping)
 				job_slot.display_order = length(S.job_slots)
 				job_slot.wiki_page = value["wiki_page"]
 				job_slot.officer = value["officer"]
-				job_slot.anomalyLoadout = value["anomaly_loadout"]
+				job_slot.anomalyLoadout = al
 				slots = value["slots"]
 
 			if(!job_slot || !slots)
