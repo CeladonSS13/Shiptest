@@ -646,7 +646,7 @@
 			"price" = 250,
 			"faction" = FALSE,
 	)
-	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/pouch/afak] = list(
+	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/pouch/medical/afak] = list(
 			"name" = "aid pouch (AFAK)",
 			"desc" = "An army first aid kit, for use preventing and treating battlefield injuries. Contains 15 sutures, 15 regen meshes, an epipen, and a survival pen.",
 			"price" = 400,
