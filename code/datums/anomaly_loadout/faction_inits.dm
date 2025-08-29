@@ -1,0 +1,7 @@
+GLOBAL_LIST_EMPTY(anomaly_loadout_weaponoptions_indie)
+GLOBAL_LIST_EMPTY(anomaly_loadout_armoroptions_indie)
+GLOBAL_LIST_EMPTY(anomaly_loadout_drip_indie)
+GLOBAL_LIST_EMPTY(anomaly_loadout_hats_indie)
+GLOBAL_LIST_EMPTY(anomaly_loadout_utility_indie)
+GLOBAL_LIST_EMPTY(anomaly_loadout_engineering_indie)
+GLOBAL_LIST_EMPTY(anomaly_loadout_medical_indie)

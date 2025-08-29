@@ -1,3 +1,5 @@
+
+
 /datum/anomalyloadout
 	var/name = "fish"
 	var/desc = "glup glup glup"
@@ -117,409 +119,578 @@
 
 /datum/anomalyloadout/New()
 	. = ..()
-	drip[/obj/item/clothing/shoes/sneakers/black] = list(
-			"name" = "black shoes",
-			"desc" = "A pair of black shoes.",
-			"price" = 0,
-			"faction" = FALSE,
-	) 
-	drip[/obj/item/clothing/shoes/laceup] = list(
-			"name" = "laceup shoes",
-			"desc" = "The height of fashion, and they're pre-polished!",
-			"price" = 0,
-			"faction" = FALSE,
-	) 
-	drip[/obj/item/clothing/shoes/workboots] = list(
-			"name" = "work boots",
-			"desc" = "Nanotrasen-issue Engineering lace-up work boots for the especially blue-collar.",
-			"price" = 50,
-			"faction" = FALSE,
-	) 
-	drip[/obj/item/clothing/shoes/workboots/mining] = list(
-			"name" = "mining boots",
-			"desc" = "Steel-toed mining boots for motility in hazardous environments. Very good at keeping toes uncrushed.",
-			"price" = 50,
-			"faction" = FALSE,
-	) 
-	drip[/obj/item/clothing/shoes/combat] = list(
-			"name" = "combat boots",
-			"desc" = "High speed, low drag combat boots.",
-			"price" = 75,
-			"faction" = FALSE,
-	) 
-	engineering[/obj/item/storage/toolbox/electrical] = list(
-			"name" = "electrical toolbox",
-			"desc" = "Danger. Very robust.",
-			"price" = 150,
-			"faction" = FALSE,
-	)
-	engineering[/obj/item/storage/toolbox/mechanical] = list(
-			"name" = "mechanical toolbox",
-			"desc" = "Danger. Very robust.",
-			"price" = 150,
-			"faction" = FALSE,
-	)
-	engineering[/obj/item/weldingtool/electric] = list(
-			"name" = "electrical welding tool",
-			"desc" = "A welding tool capable of welding functionality through the use of electricity.",
-			"price" = 850,
-			"faction" = FALSE,
-	)
-	engineering[/obj/item/stock_parts/cell/high] = list(
-			"name" = "high-capacity power cell",
-			"desc" = "A rechargeable electrochemical power cell. This one is capable of holding 10MJ.",
-			"price" = 20,
-			"faction" = FALSE,
-	)
-	engineering[/obj/item/storage/belt/utility/full/engi] = list(
-			"name" = "full engineering toolbelt",
-			"desc" = "Contains all basic tools, including an industrial welder and a multitool!",
-			"price" = 200,
-			"faction" = FALSE,
-	)
-	engineering[/obj/item/clothing/gloves/color/yellow] = list(
-			"name" = "insulated gloves",
-			"desc" = "Access is a polite fiction",
-			"price" = 750,
-			"faction" = FALSE,
-	)
-	engineering[/obj/item/gear_pack/anglegrinder] = list(
-			"name" = "angle grinder",
-			"desc" = "Great for making enterances, dismantling salvage, and getting yourself tinitus. Don't forget a bowman to protect your ears!",
-			"price" = 1450,
-			"faction" = FALSE,
-	)
-	engineering[/obj/item/clothing/glasses/welding] = list(
-			"name" = "welding goggles",
-			"desc" = "Protects the eyes from bright flashes; approved by the mad scientist association.",
-			"price" = 150,
-			"faction" = FALSE,
-	)
-	engineering[/obj/item/storage/pouch/engi] = list(
-			"name" = "technician pouch",
-			"desc" = "An orange pouch used to hold a small amount of tools or supplies, often used for emergency repair kits. Fits into your pocket. Comes with a crowbar, screwdriver, wrench, and an emergency welding tool by default",
-			"price" = 250,
-			"faction" = FALSE,
-	)
-	engineering[/obj/item/storage/firstaid/radiation] = list(
-			"name" = "radiation treatment kit",
-			"desc" = "Used to treat severe radiation poisoning.",
-			"price" = 500,
-			"faction" = FALSE,
-	)
-	utility[/obj/item/clothing/head/helmet/space/eva] = list(
-			"name" = "EVA helmet",
-			"desc" = "A lightweight space helmet with the basic ability to protect the wearer from the vacuum of space during emergencies.",
-			"price" = 200,
-			"faction" = FALSE,
-	) 
-	utility[/obj/item/clothing/suit/space/eva] = list(
-			"name" = "EVA suit",
-			"desc" = "A lightweight space suit with the basic ability to protect the wearer from the vacuum of space during emergencies.",
-			"price" = 800,
-			"faction" = FALSE,
-	)
-	utility[/obj/item/flashlight/seclite] = list(
-			"name" = "seclite",
-			"desc" = "A robust flashlight used by security. Can be attached to most armored helmets",
-			"price" = 100,
-			"faction" = FALSE,
-	)
-	utility[/obj/item/attachment/rail_light] = list(
-			"name" = "rail light",
-			"desc" = "A flashlight made to be mounted on a firearm.",
-			"price" = 75,
-			"faction" = FALSE,
-	) 
-	utility[/obj/item/attachment/bayonet] = list(
-			"name" = "bayonet",
-			"desc" = "Stabby-Stabby",
-			"price" = 250,
-			"faction" = FALSE,
-	)
-	utility[/obj/item/soap] = list(
-			"name" = "soap",
-			"desc" = "A cheap bar of soap. Doesn't smell.",
-			"price" = 20,
-			"faction" = FALSE,
-	) 
-	utility[/obj/item/pickaxe/mini] = list(
-			"name" = "compact pickaxe",
-			"desc" = "A smaller, compact version of the standard pickaxe.",
-			"price" = 150,
-			"faction" = FALSE,
-	)
-	utility[/obj/item/pickaxe] = list(
-			"name" = "pickaxe",
-			"desc" = "A big, bulky pickaxe",
-			"price" = 100,
-			"faction" = FALSE,
-	)
-	utility[/obj/item/storage/bag/ore] = list(
-			"name" = "mining satchel",
-			"desc" = "This little bugger can be used to store and transport ores.",
-			"price" = 50,
-			"faction" = FALSE,
-	) 
-	utility[/obj/item/mining_scanner] = list(
-			"name" = "manual mining scanner",
-			"desc" = "A scanner that checks surrounding rock for useful minerals; it can also be used to stop gibtonite detonations.\nIt has a speaker that can be toggled with <b>alt+click</b>",
-			"price" = 50,
-			"faction" = FALSE,
-	)
-	utility[/obj/item/pickaxe/drill/jackhammer] = list(
-			"name" = "hypersonic jackhammer",
-			"desc" = "The epitome of conventional rock-smashing technology, invented by NT and cost-optimized by EXOCOM. Smashes rocks, objects, and unfortunate wildlife with sonic blasts.",
-			"price" = 1750,
-			"faction" = FALSE,
-	)
-	utility[/obj/item/radio/headset/alt] = list(
-			"name" = "bowman headset",
-			"desc" = "An updated, modular intercom that fits over the head. Protects ears from flashbangs.",
-			"price" = 50,
-			"faction" = FALSE,
-	)
-	utility[/obj/item/storage/belt/military] = list(
-			"name" = "chest rig",
-			"desc" = "A set of tactical webbing worn by military cosplayers and actual militaries alike.",
-			"price" = 500,
-			"faction" = FALSE,
-	)
-	utility[/obj/item/storage/belt/military/assault] = list(
-			"name" = "assault belt",
-			"desc" = "A tactical assault belt.",
-			"price" = 300,
-			"faction" = FALSE,
-	)
-	utility[/obj/item/clothing/accessory/holster] = list(
-			"name" = "shoulder holster",
-			"desc" = "A holster to carry a handgun and ammo.",
-			"price" = 600,
-			"faction" = FALSE,
-	)
-	utility[/obj/item/storage/box/emptysandbags] = list(
-			"name" = "box of empty sandbags",
-			"desc" = "Fortifications on a budget",
-			"price" = 150,
-			"faction" = FALSE,
-	)
-	utility[/obj/item/grenade/smokebomb] = list(
-			"name" = "smoke grenade",
-			"desc" = "A smoke grenade. Widely used by military forces on the frontier and beyond to screen unit movements and signal landing zones.",
-			"price" = 70,
-			"faction" = FALSE,
-	)
-	utility[/obj/item/storage/pouch] = list(
-			"name" = "utility pouch",
-			"desc" = "A small pouch for 2 small storing items.",
-			"price" = 150,
-			"faction" = FALSE,
-	) 
-	utility[/obj/item/storage/pouch/ammo] = list(
-			"name" = "ammunition pouch",
-			"desc" = "An ammunition pouch, commonly used by soldiers to hold additional ammo in an accessible location.",
-			"price" = 150,
-			"faction" = FALSE,
-	)
-	utility[/obj/item/storage/pouch/grenade] = list(
-			"name" = "grenade pouch",
-			"desc" = "A row of small pouches intended for holding explosives safely, primarily grenades.",
-			"price" = 150,
-			"faction" = FALSE,
-	)
-	utility[/obj/item/storage/pouch/squad] = list(
-			"name" = "command pouch",
-			"desc" = "A light blue pouch used by squad leaders everywhere to hold command equipment.",
-			"price" = 150,
-			"faction" = FALSE,
-	)
-	utility[/obj/item/shield/riot] = list(
-			"name" = "ballistic shield",
-			"desc" = "A shield adept at blocking blunt objects and bullets from connecting with the torso of the shield wielder. Use 10 plasteel to repair.",
-			"price" = 1000,
-			"faction" = FALSE,
-	) 
-	utility[/obj/item/shield/riot/tele] = list(
-			"name" = "telescopic shield",
-			"desc" = "An advanced riot shield made of lightweight materials that collapses for easy storage.",
-			"price" = 750,
-			"faction" = FALSE,
-	) 
-	utility[/obj/item/melee/knife/survival] = list(
-			"name" = "survival knife",
-			"desc" = "A hunting grade survival knife.",
-			"price" = 120,
-			"faction" = FALSE,
-	) 
-	utility[/obj/item/melee/sword/mass] = list(
-			"name" = "mass produced machete",
-			"desc" = "A mass-produced machete made of stamped steel, with a faux-leather grip for ease of handling. Right between that of a one-handed and two-handed weapon.",
-			"price" = 250,
-			"faction" = FALSE,
-	) 
-	utility[/obj/item/melee/knife/combat] = list(
-			"name" = "combat knife",
-			"desc" = "A military combat utility survival knife.",
-			"price" = 350,
-			"faction" = FALSE,
-	) 
-	utility[/obj/item/grenade/frag] = list(
-			"name" = "frag grenade",
-			"desc" = "An anti-personnel fragmentation grenade, this weapon excels at killing soft targets by shredding them with metal shrapnel.",
-			"price" = 250,
-			"faction" = FALSE,
-	)
-	armoroptions[/obj/item/clothing/suit/armor/vest] = list(
-			"name" = "armor vest",
-			"desc" = "A slim Type I armored vest that provides decent protection against most types of damage.",
-			"price" = 600,
-			"faction" = FALSE,
-	) 
-	hats[/obj/item/clothing/head/helmet/sec] = list(
-			"name" = "helmet",
-			"desc" = "Standard Security gear. Protects the head from impacts.",
-			"price" = 150,
-			"faction" = FALSE,
-	)
-	weaponoptions[/obj/item/storage/guncase/pistol/detective/wammo] = list(
+	
+	if(GLOB.anomaly_loadout_weaponoptions_indie.len == 0)
+		initIndieWeapons()
+	weaponoptions = GLOB.anomaly_loadout_weaponoptions_indie
+	if(GLOB.anomaly_loadout_armoroptions_indie.len == 0)
+		initIndieArmors()
+	armoroptions = GLOB.anomaly_loadout_armoroptions_indie
+	if(GLOB.anomaly_loadout_drip_indie.len == 0)
+		initIndieDrip()
+	drip = GLOB.anomaly_loadout_drip_indie
+	if(GLOB.anomaly_loadout_hats_indie.len == 0)
+		initIndieHats()
+	hats = GLOB.anomaly_loadout_hats_indie
+	if(GLOB.anomaly_loadout_utility_indie.len == 0)
+		initIndieUtility()
+	utility = GLOB.anomaly_loadout_utility_indie
+	if(GLOB.anomaly_loadout_engineering_indie.len == 0)
+		initIndieEngineering()
+	engineering = GLOB.anomaly_loadout_engineering_indie
+	if(GLOB.anomaly_loadout_medical_indie.len == 0)
+		initIndieMedical()
+	medical = GLOB.anomaly_loadout_medical_indie
+	
+
+/datum/anomalyloadout/proc/initIndieWeapons()
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/detective/wammo] = list(
 			"name" = "HP Detective Special",
 			"desc" = "A small law enforcement firearm. Originally commissioned by Nanotrasen for their Private Investigation division, it has become extremely popular among independent civilians as a cheap, compact sidearm. Uses .38 Special rounds.",
 			"price" = 600,
 			"faction" = FALSE,
-	)
-	weaponoptions[/obj/item/storage/guncase/pistol/firebrand/wammo] = list(
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/firebrand/wammo] = list(
 			"name" = "HP Firebrand",
 			"desc" = "An archaic precursor to revolver-type firearms, this gun was rendered completely obsolete millennia ago. While fast to fire, it is extremely inaccurate. Uses .357 ammo.",
 			"price" = 700,
 			"faction" = FALSE,
-	)
-	weaponoptions[/obj/item/storage/guncase/pistol/commander/wammo] = list(
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/commander/wammo] = list(
 			"name" = "VI Commander",
 			"desc" = "A service pistol produced as Vigilitas Interstellar's standard sidearm. Has a reputation for being easy to use, due to its light recoil and high magazine capacity. Chambered in 9x18mm.",
 			"price" = 750,
 			"faction" = FALSE,
-	)
-	weaponoptions[/obj/item/storage/guncase/pistol/ringneck/wammo] = list(
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/ringneck/wammo] = list(
 			"name" = "Ringneck-76",
 			"desc" = "A service handgun popular among law enforcement, mercenaries, and independent spacers with discerning tastes. Chambered in 10x22mm.",
 			"price" = 1000,
 			"faction" = FALSE,
-	)
-	weaponoptions[/obj/item/storage/guncase/pistol/candor/wammo] = list(
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/candor/wammo] = list(
 			"name" = "Candor",
 			"desc" = "A classic semi-automatic handgun, widely popular throughout the Frontier. An engraving on the slide marks it as a product of Hunter's Pride. Chambered in .45.",
 			"price" = 1000,
 			"faction" = FALSE,
-	)
-	weaponoptions[/obj/item/storage/guncase/pistol/shadow/wammo] = list(
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/shadow/wammo] = list(
 			"name" = "HP Shadow",
 			"desc" = "A mid-size revolver. Despite the antiquated design, it is cheap, reliable, and stylish, making it a favorite among fast-drawing spacers and the officers of various militaries, as well as small-time police units. Chambered in .44.",
 			"price" = 1000,
 			"faction" = FALSE,
-	)
-	weaponoptions[/obj/item/storage/guncase/pistol/m20_auto_elite/wammo] = list(
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/m20_auto_elite/wammo] = list(
 			"name" = "Model 20 \"Auto Elite\"",
 			"desc" = "A large handgun chambered .44 Roumain. Originally developed by Serene Outdoors for the Star City Police Department when their older handguns proved underpowered, the Auto Elite proved heavy and unwieldy in practice. It has nevertheless seen modest success as a sidearm for big game hunters and among customers looking to make an impression.",
 			"price" = 1250,
 			"faction" = FALSE,
-	)
-	
-	 
-	weaponoptions[/obj/item/storage/guncase/pistol/viper/wammo] = list(
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/viper/wammo] = list(
 			"name" = "Viper-23",
 			"desc" = "A powerful bull-barrel revolver. Very popular among mercenaries and the occasional well-to-do spacer or pirate for its flashy appearance and powerful cartridge. Chambered in .357 Magnum.",
 			"price" = 1500,
 			"faction" = FALSE,
-	)
-	medical[/obj/item/storage/pouch/medical] = list(
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/derringer/wammo] = list(
+			"name" = ".38 Derringer",
+			"desc" = "No. Just... no.",
+			"price" = 350,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/derringer/wammo] = list(
+			"name" = ".38 Derringer",
+			"desc" = "No. Just... no.",
+			"price" = 350,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/energy/laser] = list(
+			"name" = "SL L-204 laser gun",
+			"desc" = "A lasgun!",
+			"price" = 1000,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/miniegun] = list(
+			"name" = "miniature energy gun",
+			"desc" = "An egun but smol!",
+			"price" = 500,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/energy/egun] = list(
+			"name" = "energy rifle",
+			"desc" = "An egun!",
+			"price" = 1250,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/gun/energy/laser/scatter] = list(
+			"name" = "scatter laser gun",
+			"desc" = "A laser gun mimicking the function of a shotgun, manufactured with an adjustable lens capable of projecting scattershot or slugs.",
+			"price" = 1250,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/energy/iongun] = list(
+			"name" = "ion rifle",
+			"desc" = "A man-portable anti-armor weapon designed to disable mechanical threats at range. The high energy load requires the gun to cooldown between each shot.",
+			"price" = 3500,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/kalixpistol] = list(
+			"name" = "Etherbor SG-8",
+			"desc" = "Etherbor's current and sidearm offering. While marketed for the military, it's also available for civillians as an upgrade over older and obsolete beam pistols.",
+			"price" = 1000,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/energy/kalixrifle] = list(
+			"name" = "Etherbor BG-12 Beam Gun",
+			"desc" = "Etherbor Industries's current civilian energy weapon model. The BG-12 energy beam gun is identical to the military model, minus the removal of the full auto mode. Otherwise, it's no different from older hunting beams from Kalixcis's history.",
+			"price" = 3000,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/doublebarrel/wammo] = list(
+			"name" = "Double Barrel Shotgun",
+			"desc" = "Doom soundtrack sold seperately.",
+			"price" = 1000,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/conflagration/wammo] = list(
+			"name" = "HP Conflagration",
+			"desc" = "A lightweight lever-action shotgun with a 5 round ammunition capacity. The lever action allows it to be cycled quickly and acurrately. In theory, you could ever operate it one-handed. Chambered in 12g. 6 round capacity",
+			"price" = 1500,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/hellfire/wammo] = list(
+			"name" = "HP Hellfire",
+			"desc" = "A hefty pump-action riot shotgun with an eight-round tube, manufactured by Hunter's Pride. Especially popular among the Frontier's police forces. Chambered in 12g. 9 rounds capacity",
+			"price" = 2000,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/brimstone/wammo] = list(
+			"name" = "HP Brimstone",
+			"desc" = "A simple and sturdy pump-action shotgun sporting a 5-round capacity, manufactured by Hunter's Pride. Found widely throughout the Frontier in the hands of hunters, pirates, police, and countless others. Chambered in 12g.",
+			"price" = 2000,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/buckmaster/wammo] = list(
+			"name" = "Model 11 \"Buckmaster\"",
+			"desc" = "A semi-automatic hunting shotgun produced by Serene Outdoors. Much lighter and handier than military combat shotguns, it offers the same fire rate and magazine capacity, making it an excellent choice for hunting birds and large game or for security forces looking to upgrade from pump action guns. Chambered in 12g.",
+			"price" = 3000,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/cobra/wammo] = list(
+			"name" = "Cobra-20",
+			"desc" = "An older model of submachine gun manufactured by Scarborough Arms and marketed to mercenaries, law enforcement, and independent militia. Only became popular after the end of the ICW. Chambered in .45.",
+			"price" = 3000,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/wt550/wammo] = list(
+			"name" = "WT-550 Automatic Rifle",
+			"desc" = "An outdated PDW, used centuries ago by Nanotrasen security elements. Uses 4.6x30mm rounds.",
+			"price" = 3000,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/m12/wammo] = list(
+			"name" = "Model 12 \"Sporter\"",
+			"desc" = "An extremely popular target shooting rifle produced by Serene Outdoors. Inexpensive, widely available, and produced in massive numbers, the Sporter is also popular for hunting small game and ground birds. Chambered in .22 LR.",
+			"price" = 500,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/m15/wammo] = list(
+			"name" = "Model 15 Super Sporter",
+			"desc" = "A popular semi-automatic hunting rifle produced by Serene Outdoors. Solid all-round performance, high accuracy, and ease of access compared to military rifles makes the Super Sporter a popular choice for hunting medium game and occasionally self-defense. Chambered in 5.56mm.",
+			"price" = 2500,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/winchester/wammo] = list(
+			"name" = "HP Flaming Arrow",
+			"desc" = "A sturdy and lightweight lever-action rifle with hand-stamped Hunter's Pride marks on the receiver. A popular choice among Frontier homesteaders for hunting small game and rudimentary self-defense. Chambered in .38.",
+			"price" = 750,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/absolution/wammo] = list(
+			"name" = "HP Absolution",
+			"desc" = "A large lever-action rifle with hand-stamped Hunter's Pride marks on the receiver and an 8 round ammunition capacity. More powerful than the Flaming Arrow, the Absolution is a popular pick for hunting larger fauna like bears and goliaths, especially when a bolt action's slower rate of fire would be a liability. Chambered in .357.",
+			"price" = 2000,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/illestren/wammo] = list(
+			"name" = "HP Illestren",
+			"desc" = "A sturdy and conventional bolt-action rifle. One of Hunter's Pride's most successful firearms, the Illestren is popular among colonists, pirates, snipers, and countless others. Chambered in 8x50mmR.",
+			"price" = 1250,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/beacon/wammo] = list(
+			"name" = "HP Beacon",
+			"desc" = "A break-action rifle made by Hunter's Pride and sold to civilian hunters. Boasts excellent accuracy and stopping power. Uses .45-70 ammo.",
+			"price" = 1000,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/skm/wammo] = list(
+			"name" = "SKM-24",
+			"desc" = "An obsolete model of assault rifle once used by CLIP. Legendary for its durability and low cost, surplus rifles are commonplace on the Frontier, and the design has been widely copied. Chambered in 7.62x40mm CLIP.",
+			"price" = 5000,
+			"faction" = FALSE,
+		)
+	
+/datum/anomalyloadout/proc/initIndieArmors
+		GLOB.anomaly_loadout_armoroptions_indie[/obj/item/clothing/suit/armor/vest] = list(
+			"name" = "armor vest",
+			"desc" = "A slim Type I armored vest that provides decent protection against most types of damage.",
+			"price" = 600,
+			"faction" = FALSE,
+		)
+
+/datum/anomalyloadout/proc/initIndieDrip()
+		GLOB.anomaly_loadout_drip_indie[/obj/item/clothing/shoes/sneakers/black] = list(
+				"name" = "black shoes",
+				"desc" = "A pair of black shoes.",
+				"price" = 0,
+				"faction" = FALSE,
+		) 
+		GLOB.anomaly_loadout_drip_indie[/obj/item/clothing/shoes/laceup] = list(
+				"name" = "laceup shoes",
+				"desc" = "The height of fashion, and they're pre-polished!",
+				"price" = 0,
+				"faction" = FALSE,
+		) 
+		GLOB.anomaly_loadout_drip_indie[/obj/item/clothing/shoes/workboots] = list(
+				"name" = "work boots",
+				"desc" = "Nanotrasen-issue Engineering lace-up work boots for the especially blue-collar.",
+				"price" = 50,
+				"faction" = FALSE,
+		) 
+		GLOB.anomaly_loadout_drip_indie[/obj/item/clothing/shoes/workboots/mining] = list(
+				"name" = "mining boots",
+				"desc" = "Steel-toed mining boots for motility in hazardous environments. Very good at keeping toes uncrushed.",
+				"price" = 50,
+				"faction" = FALSE,
+		) 
+		GLOB.anomaly_loadout_drip_indie[/obj/item/clothing/shoes/combat] = list(
+				"name" = "combat boots",
+				"desc" = "High speed, low drag combat boots.",
+				"price" = 75,
+				"faction" = FALSE,
+		) 
+
+/datum/anomalyloadout/proc/initIndieHats()
+		GLOB.anomaly_loadout_hats_indie[/obj/item/clothing/head/helmet/sec] = list(
+			"name" = "helmet",
+			"desc" = "Standard Security gear. Protects the head from impacts.",
+			"price" = 150,
+			"faction" = FALSE,
+		)
+
+/datum/anomalyloadout/proc/initIndieEngineering()
+		GLOB.anomaly_loadout_engineering_indie[/obj/item/storage/toolbox/electrical] = list(
+			"name" = "electrical toolbox",
+			"desc" = "Danger. Very robust.",
+			"price" = 150,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_engineering_indie[/obj/item/storage/toolbox/mechanical] = list(
+			"name" = "mechanical toolbox",
+			"desc" = "Danger. Very robust.",
+			"price" = 150,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_engineering_indie[/obj/item/weldingtool/electric] = list(
+			"name" = "electrical welding tool",
+			"desc" = "A welding tool capable of welding functionality through the use of electricity.",
+			"price" = 850,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_engineering_indie[/obj/item/stock_parts/cell/high] = list(
+			"name" = "high-capacity power cell",
+			"desc" = "A rechargeable electrochemical power cell. This one is capable of holding 10MJ.",
+			"price" = 20,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_engineering_indie[/obj/item/storage/belt/utility/full/engi] = list(
+			"name" = "full engineering toolbelt",
+			"desc" = "Contains all basic tools, including an industrial welder and a multitool!",
+			"price" = 200,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_engineering_indie[/obj/item/clothing/gloves/color/yellow] = list(
+			"name" = "insulated gloves",
+			"desc" = "Access is a polite fiction",
+			"price" = 750,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_engineering_indie[/obj/item/gear_pack/anglegrinder] = list(
+			"name" = "angle grinder",
+			"desc" = "Great for making enterances, dismantling salvage, and getting yourself tinitus. Don't forget a bowman to protect your ears!",
+			"price" = 1450,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_engineering_indie[/obj/item/clothing/glasses/welding] = list(
+			"name" = "welding goggles",
+			"desc" = "Protects the eyes from bright flashes; approved by the mad scientist association.",
+			"price" = 150,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_engineering_indie[/obj/item/storage/pouch/engi] = list(
+			"name" = "technician pouch",
+			"desc" = "An orange pouch used to hold a small amount of tools or supplies, often used for emergency repair kits. Fits into your pocket. Comes with a crowbar, screwdriver, wrench, and an emergency welding tool by default",
+			"price" = 250,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_engineering_indie[/obj/item/storage/firstaid/radiation] = list(
+			"name" = "radiation treatment kit",
+			"desc" = "Used to treat severe radiation poisoning.",
+			"price" = 500,
+			"faction" = FALSE,
+		)
+
+/datum/anomalyloadout/proc/initIndieUtility()
+	
+		GLOB.anomaly_loadout_utility_indie[/obj/item/clothing/head/helmet/space/eva] = list(
+			"name" = "EVA helmet",
+			"desc" = "A lightweight space helmet with the basic ability to protect the wearer from the vacuum of space during emergencies.",
+			"price" = 200,
+			"faction" = FALSE,
+		) 
+		GLOB.anomaly_loadout_utility_indie[/obj/item/clothing/suit/space/eva] = list(
+			"name" = "EVA suit",
+			"desc" = "A lightweight space suit with the basic ability to protect the wearer from the vacuum of space during emergencies.",
+			"price" = 800,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_utility_indie[/obj/item/flashlight/seclite] = list(
+			"name" = "seclite",
+			"desc" = "A robust flashlight used by security. Can be attached to most armored helmets",
+			"price" = 100,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_utility_indie[/obj/item/attachment/rail_light] = list(
+			"name" = "rail light",
+			"desc" = "A flashlight made to be mounted on a firearm.",
+			"price" = 75,
+			"faction" = FALSE,
+		) 
+		GLOB.anomaly_loadout_utility_indie[/obj/item/attachment/bayonet] = list(
+			"name" = "bayonet",
+			"desc" = "Stabby-Stabby",
+			"price" = 250,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_utility_indie[/obj/item/soap] = list(
+			"name" = "soap",
+			"desc" = "A cheap bar of soap. Doesn't smell.",
+			"price" = 20,
+			"faction" = FALSE,
+		) 
+		GLOB.anomaly_loadout_utility_indie[/obj/item/pickaxe/mini] = list(
+			"name" = "compact pickaxe",
+			"desc" = "A smaller, compact version of the standard pickaxe.",
+			"price" = 150,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_utility_indie[/obj/item/pickaxe] = list(
+			"name" = "pickaxe",
+			"desc" = "A big, bulky pickaxe",
+			"price" = 100,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_utility_indie[/obj/item/storage/bag/ore] = list(
+			"name" = "mining satchel",
+			"desc" = "This little bugger can be used to store and transport ores.",
+			"price" = 50,
+			"faction" = FALSE,
+		) 
+		GLOB.anomaly_loadout_utility_indie[/obj/item/mining_scanner] = list(
+			"name" = "manual mining scanner",
+			"desc" = "A scanner that checks surrounding rock for useful minerals; it can also be used to stop gibtonite detonations.\nIt has a speaker that can be toggled with <b>alt+click</b>",
+			"price" = 50,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_utility_indie[/obj/item/pickaxe/drill/jackhammer] = list(
+			"name" = "hypersonic jackhammer",
+			"desc" = "The epitome of conventional rock-smashing technology, invented by NT and cost-optimized by EXOCOM. Smashes rocks, objects, and unfortunate wildlife with sonic blasts.",
+			"price" = 1750,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_utility_indie[/obj/item/radio/headset/alt] = list(
+			"name" = "bowman headset",
+			"desc" = "An updated, modular intercom that fits over the head. Protects ears from flashbangs.",
+			"price" = 50,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_utility_indie[/obj/item/storage/belt/military] = list(
+			"name" = "chest rig",
+			"desc" = "A set of tactical webbing worn by military cosplayers and actual militaries alike.",
+			"price" = 500,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_utility_indie[/obj/item/storage/belt/military/assault] = list(
+			"name" = "assault belt",
+			"desc" = "A tactical assault belt.",
+			"price" = 300,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_utility_indie[/obj/item/clothing/accessory/holster] = list(
+			"name" = "shoulder holster",
+			"desc" = "A holster to carry a handgun and ammo.",
+			"price" = 600,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_utility_indie[/obj/item/storage/box/emptysandbags] = list(
+			"name" = "box of empty sandbags",
+			"desc" = "Fortifications on a budget",
+			"price" = 150,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_utility_indie[/obj/item/grenade/smokebomb] = list(
+			"name" = "smoke grenade",
+			"desc" = "A smoke grenade. Widely used by military forces on the frontier and beyond to screen unit movements and signal landing zones.",
+			"price" = 70,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_utility_indie[/obj/item/storage/pouch] = list(
+			"name" = "utility pouch",
+			"desc" = "A small pouch for 2 small storing items.",
+			"price" = 150,
+			"faction" = FALSE,
+		) 
+		GLOB.anomaly_loadout_utility_indie[/obj/item/storage/pouch/ammo] = list(
+			"name" = "ammunition pouch",
+			"desc" = "An ammunition pouch, commonly used by soldiers to hold additional ammo in an accessible location.",
+			"price" = 150,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_utility_indie[/obj/item/storage/pouch/grenade] = list(
+			"name" = "grenade pouch",
+			"desc" = "A row of small pouches intended for holding explosives safely, primarily grenades.",
+			"price" = 150,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_utility_indie[/obj/item/storage/pouch/squad] = list(
+			"name" = "command pouch",
+			"desc" = "A light blue pouch used by squad leaders everywhere to hold command equipment.",
+			"price" = 150,
+			"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_utility_indie[/obj/item/shield/riot] = list(
+			"name" = "ballistic shield",
+			"desc" = "A shield adept at blocking blunt objects and bullets from connecting with the torso of the shield wielder. Use 10 plasteel to repair.",
+			"price" = 1000,
+			"faction" = FALSE,
+		) 
+		GLOB.anomaly_loadout_utility_indie[/obj/item/shield/riot/tele] = list(
+			"name" = "telescopic shield",
+			"desc" = "An advanced riot shield made of lightweight materials that collapses for easy storage.",
+			"price" = 750,
+			"faction" = FALSE,
+		) 
+		GLOB.anomaly_loadout_utility_indie[/obj/item/melee/knife/survival] = list(
+			"name" = "survival knife",
+			"desc" = "A hunting grade survival knife.",
+			"price" = 120,
+			"faction" = FALSE,
+		) 
+		GLOB.anomaly_loadout_utility_indie[/obj/item/melee/sword/mass] = list(
+			"name" = "mass produced machete",
+			"desc" = "A mass-produced machete made of stamped steel, with a faux-leather grip for ease of handling. Right between that of a one-handed and two-handed weapon.",
+			"price" = 250,
+			"faction" = FALSE,
+		) 
+		GLOB.anomaly_loadout_utility_indie[/obj/item/melee/knife/combat] = list(
+			"name" = "combat knife",
+			"desc" = "A military combat utility survival knife.",
+			"price" = 350,
+			"faction" = FALSE,
+		) 
+		GLOB.anomaly_loadout_utility_indie[/obj/item/grenade/frag] = list(
+			"name" = "frag grenade",
+			"desc" = "An anti-personnel fragmentation grenade, this weapon excels at killing soft targets by shredding them with metal shrapnel.",
+			"price" = 250,
+			"faction" = FALSE,
+		)
+
+/datum/anomalyloadout/proc/initIndieMedical()
+	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/pouch/medical] = list(
 			"name" = "aid pouch",
 			"desc" = "An individual first aid kit, for use preventing and treating battlefield injuries. Contains 5 gauzes, 5 sutures, 5 regen meshes, and an epipen.",
 			"price" = 250,
 			"faction" = FALSE,
 	)
-	medical[/obj/item/storage/firstaid/regular] = list(
+	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/firstaid/regular] = list(
 			"name" = "first-aid kit",
 			"desc" = "A first aid kit with the ability to heal common types of injuries.",
 			"price" = 400,
 			"faction" = FALSE,
 	)
-	medical[/obj/item/storage/firstaid/brute] = list(
+	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/firstaid/brute] = list(
 			"name" = "brute trauma treatment kit",
 			"desc" = "A first aid kit for when you get toolboxed.",
 			"price" = 500,
 			"faction" = FALSE,
 	)
-	medical[/obj/item/storage/firstaid/fire] = list(
+	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/firstaid/fire] = list(
 			"name" = "burn treatment kit",
 			"desc" = "A specialized medical kit for treating severe burns.",
 			"price" = 500,
 			"faction" = FALSE,
 	)
-	medical[/obj/item/storage/firstaid/toxin] = list(
+	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/firstaid/toxin] = list(
 			"name" = "toxin treatment kit",
 			"desc" = "Used to treat toxic blood content and radiation poisoning.",
 			"price" = 500,
 			"faction" = FALSE,
 	)
-	medical[/obj/item/storage/firstaid/advanced] = list(
+	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/firstaid/advanced] = list(
 			"name" = "advanced first aid kit",
 			"desc" = "An advanced kit to help deal with advanced wounds.",
 			"price" = 1100,
 			"faction" = FALSE,
 	)
-	medical[/obj/item/storage/firstaid/tactical] = list(
+	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/firstaid/tactical] = list(
 			"name" = "combat medical kit",
 			"desc" = "Some serious equipment. Also contains a belt defib.",
 			"price" = 4000,
 			"faction" = FALSE,
 	)
-	medical[/obj/item/storage/pill_bottle/charcoal] = list(
+	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/pill_bottle/charcoal] = list(
 			"name" = "charcoal pills",
 			"desc" = "7 charcoal pills to cleanse toxins both dispersed in your body, and in your bloodstream and stomach",
 			"price" = 200,
 			"faction" = FALSE,
 	)
-	medical[/obj/item/storage/pill_bottle/iron] = list(
+	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/pill_bottle/iron] = list(
 			"name" = "iron pills",
 			"desc" = "7 iron pills for blood defiency",
 			"price" = 200,
 			"faction" = FALSE,
 	)
-	medical[/obj/item/storage/pill_bottle/mannitol] = list(
+	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/pill_bottle/mannitol] = list(
 			"name" = "mannitol pills",
 			"desc" = "7 mannitol pills for brain damage and light traumas",
 			"price" = 200,
 			"faction" = FALSE,
 	)
-	medical[/obj/item/storage/pill_bottle/mining] = list(
+	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/pill_bottle/mining] = list(
 			"name" = "physical patches bottle",
 			"desc" = "contains a patch of silver sulf and 3 styptic acid",
 			"price" = 200,
 			"faction" = FALSE,
 	)
-	medical[/obj/item/storage/pill_bottle/mining] = list(
+	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/pill_bottle/mining] = list(
 			"name" = "physical patches bottle",
 			"desc" = "contains a patch of silver sulf and 3 styptic acid",
 			"price" = 200,
 			"faction" = FALSE,
 	)
-	medical[/obj/item/defibrillator/loaded] = list(
+	GLOB.anomaly_loadout_medical_indie[/obj/item/defibrillator/loaded] = list(
 			"name" = "defibrillator",
 			"desc" = "cracklepads!",
 			"price" = 750,
 			"faction" = FALSE,
 	)
-	medical[/obj/item/storage/case/surgery] = list(
+	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/case/surgery] = list(
 			"name" = "surgical case",
 			"desc" = "A large sterile tray with a lid for storing all of the tools you'd need for surgery.",
 			"price" = 3000,
 			"faction" = FALSE,
 	)
-
-
-	
-
-
 /datum/anomalyloadout/syndicate
 
 
@@ -554,7 +725,34 @@
 			"desc" = "A machine pistol, once used by Syndicate infiltrators and special forces during the ICW. Still used by specialists in former Syndicate factions. Chambered in 9x18mm.",
 			"price" = 2500,
 			"faction" = TRUE,
-	)  
+	)
+	weaponoptions[/obj/item/storage/guncase/bulldog/wammo] = list(
+			"name" = "SG-60r \"Bulldog\"",
+			"desc" = "A bullpup combat shotgun usually seen with a characteristic drum magazine. Wildly popular among Syndicate strike teams during the ICW, although it proved less useful against military-grade equipment. Still popular among former Syndicate factions, especially the Ramzi Clique pirates. Chambered in 12g.",
+			"price" = 4000,
+			"faction" = TRUE,
+	)
+	weaponoptions[/obj/item/storage/guncase/c20r/wammo] = list(
+			"name" = "C-20r \"Cobra\"",
+			"desc" = "A bullpup submachine gun with an integrated suppressor, heavily used by Syndicate strike teams during the ICW. Still sees widespread use by the descendants of the Gorlex Marauders. Chambered in .45.",
+			"price" = 2800,
+			"faction" = TRUE,
+	)
+	weaponoptions[/obj/item/storage/guncase/sidewinder/wammo] = list(
+			"name" = "CDW-81 \"Sidewinder\"",
+			"desc" = "An armor-piercing, compact personal defense weapon, introduced late into the Inter-Corporate War as an improvement over the C-20r when fighting armored personnel. Issued only in small numbers, and used today by specialists of former Syndicate factions. Chambered in 5.7mm.",
+			"price" = 3000,
+			"faction" = TRUE,
+	)
+	weaponoptions[/obj/item/storage/guncase/hydra/wammo] = list(
+			"name" = "SMR-80 \"Hydra\"",
+			"desc" = "Scarborough Arms' premier modular assault rifle platform. This is the basic configuration, optimized for light weight and handiness. A very well-regarded, if expensive and rare, assault rifle. Chambered in 5.56mm CLIP.",
+			"price" = 5000,
+			"faction" = TRUE,
+	)
+	
+
+	
 	engineering[/obj/item/storage/toolbox/syndicate] = list(
 			"name" = "black and red toolbox",
 			"desc" = "Syndicate toolbox, containing a full toolset and some insuls",
@@ -573,6 +771,7 @@
 			"price" = 50,
 			"faction" = TRUE,
 	)
+
 
 
 /datum/anomalyloadout/syndicate/cybersun
