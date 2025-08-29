@@ -84,14 +84,14 @@
 	network = "irmg_commnet"
 
 /obj/machinery/telecomms/relay/preset/minutemen
-	freq_listening = list(FREQ_EMERGENCY, FREQ_MINUTEMEN)
-	id = "CLIP Relay"
-	network = "clip_commnet"
+	freq_listening = list(FREQ_EMERGENCY, FREQ_RAMZI)
+	id = "Ramzi Relay"
+	network = "ramzi_commnet"
 
 /obj/machinery/telecomms/relay/preset/solgov
-	freq_listening = list(FREQ_EMERGENCY, FREQ_SOLGOV)
-	id = "SolGov Relay"
-	network = "solgov_commnet"
+	freq_listening = list(FREQ_EMERGENCY, FREQ_SOLFED)
+	id = "SolFed Relay"
+	network = "solfed_commnet"
 
 /obj/machinery/telecomms/relay/preset/syndicate
 	freq_listening = list(FREQ_EMERGENCY, FREQ_SYNDICATE)
@@ -100,13 +100,23 @@
 
 /obj/machinery/telecomms/relay/preset/frontiersmen
 	freq_listening = list(FREQ_EMERGENCY, FREQ_PIRATE)
-	id = "Frontiersmen Relay"
-	network = "frontier_commnet"
+	id = "Unidentified Relay"
+	network = "unidentified_commnet"
 
 /obj/machinery/telecomms/relay/preset/pgf
-	freq_listening = list(FREQ_EMERGENCY, FREQ_PGF)
-	id = "PGF Relay"
-	network = "pgf_commnet"
+	freq_listening = list(FREQ_EMERGENCY, FREQ_ELYSIUM)
+	id = "Elysium Relay"
+	network = "elysium_commnet"
+
+/obj/machinery/telecomms/relay/preset/vox
+	freq_listening = list(FREQ_EMERGENCY, FREQ_VOX)
+	id = "Raider Relay"
+	network = "raider_commnet"
+
+/obj/machinery/telecomms/relay/preset/suns
+	freq_listening = list(FREQ_EMERGENCY, FREQ_SUNS)
+	id = "SUNS Relay"
+	network = "suns_commnet"
 
 //Generic preset relay
 /obj/machinery/telecomms/relay/preset/auto

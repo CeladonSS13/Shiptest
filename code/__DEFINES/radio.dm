@@ -17,29 +17,41 @@
 #define RADIO_KEY_CENTCOM "e"
 #define RADIO_TOKEN_CENTCOM ":e"
 
-#define RADIO_CHANNEL_SOLGOV "SolFed" //#define RADIO_CHANNEL_SOLGOV "SolGov"	// [CELADON-EDIT] - CELADON_FIXES
-#define RADIO_KEY_SOLGOV "s"
-#define RADIO_TOKEN_SOLGOV ":s"
+#define RADIO_CHANNEL_SOLFED "SolFed" //#define RADIO_CHANNEL_SOLGOV "SolGov"	// [CELADON-EDIT] - FACTION_RADIO
+#define RADIO_KEY_SOLFED "s"
+#define RADIO_TOKEN_SOLFED ":s"
 
 #define RADIO_CHANNEL_NANOTRASEN "Nanotrasen"
 #define RADIO_KEY_NANOTRASEN "n"
 #define RADIO_TOKEN_NANOTRASEN ":n"
 
-#define RADIO_CHANNEL_MINUTEMEN "Minutemen"
-#define RADIO_KEY_MINUTEMEN "m"
-#define RADIO_TOKEN_MINUTEMEN ":m"
+// [CELADON-EDIT] - FACTION_RADIO
+#define RADIO_CHANNEL_VOX "Raider"
+#define RADIO_KEY_VOX "v"
+#define RADIO_TOKEN_VOX ":v"
 
-#define RADIO_CHANNEL_PGF "PGF"
-#define RADIO_KEY_PGF "g"
-#define RADIO_TOKEN_PGF ":g"
+#define RADIO_CHANNEL_SUNS "SUNS"
+#define RADIO_KEY_SUNS "n"
+#define RADIO_TOKEN_SUNS ":n"
+
+#define RADIO_CHANNEL_RAMZI "Ramzi" //#define RADIO_CHANNEL_MINUTEMEN "Minutemen"	// [CELADON-EDIT] - FACTION_RADIO
+#define RADIO_KEY_RAMZI "r"
+#define RADIO_TOKEN_RAMZI ":r"
+
+#define RADIO_CHANNEL_ELYSIUM "Elysium" //#define RADIO_CHANNEL_PGF "PGF"	// [CELADON-EDIT] - FACTION_RADIO
+#define RADIO_KEY_ELYSIUM "e"
+#define RADIO_TOKEN_ELYSIUM ":e"
+// [/CELADON-EDIT]
 
 #define RADIO_CHANNEL_INTEQ "Inteq"
 #define RADIO_KEY_INTEQ "q"
 #define RADIO_TOKEN_INTEQ ":q"
 
-#define RADIO_CHANNEL_PIRATE "Pirate"
-#define RADIO_KEY_PIRATE "y"
-#define RADIO_TOKEN_PIRATE ":y"
+// [CELADON-EDIT] - FACTION_RADIO
+#define RADIO_CHANNEL_PIRATE "Unidentified"
+#define RADIO_KEY_PIRATE "p"
+#define RADIO_TOKEN_PIRATE ":p"
+// [/CELADON-EDIT]
 
 #define RADIO_CHANNEL_WIDEBAND "Wideband"
 #define RADIO_KEY_WIDEBAND "w"
@@ -54,12 +66,14 @@
 
 #define FREQ_SYNDICATE 1213 // Syndicate Coalition comms frequency, dark brown
 #define FREQ_CENTCOM 1337 // NT-CentCom comms frequency, gray
-#define FREQ_SOLGOV 1345 // SolGov comms frequency, dark blue WS ADDITION
+#define FREQ_VOX 1341
+#define FREQ_SUNS 1343
+#define FREQ_SOLFED 1345 // SolGov comms frequency, dark blue WS ADDITION
 #define FREQ_INTEQ 1347 // Inteq comms frequency, light brown
-#define FREQ_PGF 1349 // PGF comms frequency, lime green
+#define FREQ_ELYSIUM 1349 // PGF comms frequency, lime green
 #define FREQ_NANOTRASEN 1351 // Nanotrasen comms frequency, plum
 #define FREQ_EMERGENCY 1353 // Emergency comms frequency, red
-#define FREQ_MINUTEMEN 1355 // Minutemen comms frequency, soft blue
+#define FREQ_RAMZI 1355 // Minutemen comms frequency, soft blue
 #define FREQ_PIRATE 1359 // Pirate comms frequency, gold
 
 #define FREQ_HOLOGRID_SOLUTION 1433

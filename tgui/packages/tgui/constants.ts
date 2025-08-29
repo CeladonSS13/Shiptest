@@ -70,7 +70,7 @@ export const CSS_COLORS = [
 /* IF YOU CHANGE THIS KEEP IT IN SYNC WITH CHAT CSS */
 export const RADIO_CHANNELS = [
   {
-    name: 'Coalition',
+    name: 'Syndicate',
     freq: 1213,
     color: '#8f4a4b',
   },
@@ -100,7 +100,7 @@ export const RADIO_CHANNELS = [
     color: '#2681a5',
   },
   {
-    name: 'SolCon',
+    name: 'SolFed',
     freq: 1345,
     color: '#7589af',
   },
@@ -110,14 +110,14 @@ export const RADIO_CHANNELS = [
     color: '#b88646',
   },
   {
-    name: 'PGF',
+    name: 'Elysium', // [CELADON-EDIT] - FACTION_RADIO
     freq: 1349,
     color: '#199943',
   },
   {
     name: 'Nanotrasen',
     freq: 1351,
-    color: '#c68cfa',
+    color: '#57b8f0',
   },
   {
     name: 'Emergency',
@@ -125,14 +125,14 @@ export const RADIO_CHANNELS = [
     color: '#dd3535',
   },
   {
-    name: 'Minutemen',
+    name: 'Ramzi',
     freq: 1355,
-    color: '#57b8f0',
+    color: '#796755',
   },
   {
     name: 'Unidentified',
     freq: 1359,
-    color: '#fcdf03',
+    color: '#4d4d4d',
   },
   {
     name: 'Common',
@@ -143,6 +143,16 @@ export const RADIO_CHANNELS = [
     name: 'Wideband',
     freq: 1681,
     color: '#8de7b6',
+  },
+  {
+    name: 'Raider',
+    freq: 1341,
+    color: '#fcdf03',
+  },
+  {
+    name: 'SUNS',
+    freq: 1343,
+    color: '#4e3399',
   },
 ] as const;
 

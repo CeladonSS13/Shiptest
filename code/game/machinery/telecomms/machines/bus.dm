@@ -72,10 +72,10 @@
 	autolinkers = list("processor4", "inteq", "receiverB", "messaging")
 
 /obj/machinery/telecomms/bus/preset_five
-	id = "CLIP Communications Bus"
+	id = "Ramzi Communications Bus"
 	network = "tcommsat"
-	freq_listening = list(FREQ_MINUTEMEN, FREQ_COMMON)
-	autolinkers = list("processor5", "minutemen", "messaging")
+	freq_listening = list(FREQ_RAMZI, FREQ_COMMON)
+	autolinkers = list("processor5", "ramzi", "messaging")
 
 /obj/machinery/telecomms/bus/preset_six
 	id = "Hacked Communications Bus"
@@ -84,10 +84,10 @@
 	autolinkers = list("processor6", "pirate", "receiverB", "messaging")
 
 /obj/machinery/telecomms/bus/preset_seven
-	id = "SolGov Communications Bus"
+	id = "SolFed Communications Bus"
 	network = "tcommsat"
-	freq_listening = list(FREQ_SOLGOV, FREQ_COMMON)
-	autolinkers = list("processor7", "solgov", "receiverA", "messaging")
+	freq_listening = list(FREQ_SOLFED, FREQ_COMMON)
+	autolinkers = list("processor7", "solfed", "receiverA", "messaging")
 
 /obj/machinery/telecomms/bus/preset_seven/Initialize()
 	. = ..()

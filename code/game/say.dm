@@ -5,15 +5,17 @@
 */
 GLOBAL_LIST_INIT(freqtospan, list(
 	"[FREQ_NANOTRASEN]" = "ntradio",
-	"[FREQ_MINUTEMEN]" = "clipradio",
+	"[FREQ_RAMZI]" = "ramziradio",
 	"[FREQ_INTEQ]" = "irmgradio",
-	"[FREQ_PGF]" = "pgfradio",
+	"[FREQ_ELYSIUM]" = "elysiumradio",
 	"[FREQ_PIRATE]" = "pirradio",
 	"[FREQ_EMERGENCY]" = "emrgradio",
 	"[FREQ_SYNDICATE]" = "syndradio",
 	"[FREQ_CENTCOM]" = "centcomradio",
-	"[FREQ_SOLGOV]" = "solgovradio",
+	"[FREQ_SOLFED]" = "solfedradio",
 	"[FREQ_WIDEBAND]" = "widebandradio",
+	"[FREQ_VOX]" = "voxradio",
+	"[FREQ_SUNS]" = "sunsradio",
 	))
 
 GLOBAL_LIST_INIT(freqcolor, list())

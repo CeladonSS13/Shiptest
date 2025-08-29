@@ -486,3 +486,58 @@
 	name = "old radio"
 	icon_state = "radio"
 	desc = "An old handheld radio. You could use it, if you really wanted to."
+
+/obj/item/radio/transceiver
+	name = "transceiver"
+	desc = "A tactical communications device for those times when you need it."
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/radio.dmi'
+	icon_state = "walkietalkiesec"
+	item_state = "walkietalkiesec"
+	freerange = TRUE
+	frequency = FREQ_EMERGENCY
+	freqlock = TRUE
+
+/obj/item/radio/transceiver/nanotrasen
+	name = "nanotrasen transceiver"
+	frequency = FREQ_NANOTRASEN
+	keyslot = /obj/item/encryptionkey/nanotrasen
+
+/obj/item/radio/transceiver/syndicate
+	name = "syndicate transceiver"
+	frequency = FREQ_SYNDICATE
+	keyslot = /obj/item/encryptionkey/syndicate
+
+/obj/item/radio/transceiver/solgov
+	name = "solfed transceiver"
+	frequency = FREQ_SOLFED
+	keyslot = /obj/item/encryptionkey/solgov
+
+/obj/item/radio/transceiver/inteq
+	name = "inteq transceiver"
+	frequency = FREQ_INTEQ
+	keyslot = /obj/item/encryptionkey/inteq
+
+/obj/item/radio/transceiver/pirate
+	name = "unidentified transceiver"
+	frequency = FREQ_PIRATE
+	keyslot = /obj/item/encryptionkey/pirate
+
+/obj/item/radio/transceiver/elysium
+	name = "elysium transceiver"
+	frequency = FREQ_ELYSIUM
+	keyslot = /obj/item/encryptionkey/pgf
+
+/obj/item/radio/transceiver/ramzi
+	name = "ramzi transceiver"
+	frequency = FREQ_RAMZI
+	keyslot = /obj/item/encryptionkey/ramzi
+
+/obj/item/radio/transceiver/vox
+	name = "raider transceiver"
+	frequency = FREQ_VOX
+	keyslot = /obj/item/encryptionkey/vox
+
+/obj/item/radio/transceiver/suns
+	name = "suns transceiver"
+	frequency = FREQ_SUNS
+	keyslot = /obj/item/encryptionkey/suns
