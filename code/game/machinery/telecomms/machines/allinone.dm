@@ -19,7 +19,7 @@
 /obj/machinery/telecomms/allinone/Initialize()
 	. = ..()
 	if (intercept)
-		freq_listening = list(FREQ_SYNDICATE)
+		freq_listening = list(FREQ_WIDEBAND)	//freq_listening = list(FREQ_SYNDICATE)
 
 /obj/machinery/telecomms/allinone/receive_signal(datum/signal/subspace/signal)
 	if(!istype(signal) || signal.transmission_method != TRANSMISSION_SUBSPACE)  // receives on subspace only
