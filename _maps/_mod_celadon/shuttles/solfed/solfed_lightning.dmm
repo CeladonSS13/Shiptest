@@ -833,20 +833,14 @@
 /turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen)
 "jM" = (
-/obj/machinery/power/terminal{
+/obj/docking_port/stationary{
+	width = 30;
+	height = 15;
+	dwidth = 15;
 	dir = 8
 	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/docking_port/mobile{
-	dir = 2;
-	launch_status = 0;
-	port_direction = 8;
-	preferred_direction = 4
-	},
-/turf/open/floor/plasteel/heavymetal/var4,
-/area/ship/engineering)
+/turf/template_noop,
+/area/template_noop)
 "jQ" = (
 /obj/machinery/chem_heater{
 	pixel_y = 3
@@ -2167,11 +2161,11 @@
 	},
 /area/ship/general/cargo)
 "wr" = (
-/obj/docking_port/stationary{
-	width = 30;
-	height = 15;
-	dwidth = 15;
-	dir = 8
+/obj/docking_port/mobile{
+	dir = 8;
+	launch_status = 0;
+	port_direction = 4;
+	preferred_direction = 4
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
@@ -4793,7 +4787,7 @@ yQ
 yQ
 yQ
 yQ
-yQ
+jM
 yQ
 yQ
 yQ
@@ -4835,7 +4829,7 @@ yQ
 yQ
 yQ
 yQ
-MU
+wr
 yQ
 yQ
 yQ
@@ -4877,7 +4871,7 @@ yQ
 yQ
 yQ
 yQ
-wr
+MU
 yQ
 yQ
 yQ
@@ -4977,7 +4971,7 @@ yQ
 yQ
 mS
 mS
-jM
+cV
 mS
 mS
 yQ
