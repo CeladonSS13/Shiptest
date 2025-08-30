@@ -3,7 +3,7 @@
 /datum/anomalyloadout
 	var/name = "fish"
 	var/desc = "glup glup glup"
-	var/loadoutpoints = 4000
+	var/loadoutpoints = 3000
 	var/list/weaponoptions = list()
 	var/weaponcostmult = 1
 	var/list/armoroptions = list()
@@ -145,61 +145,61 @@
 
 /datum/anomalyloadout/proc/initIndieWeapons()
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/detective/wammo] = list(
-			"name" = "HP Detective Special",
+			"name" = "HP Detective Special (.38)",
 			"desc" = "A small law enforcement firearm. Originally commissioned by Nanotrasen for their Private Investigation division, it has become extremely popular among independent civilians as a cheap, compact sidearm. Uses .38 Special rounds.",
 			"price" = 600,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/firebrand/wammo] = list(
-			"name" = "HP Firebrand",
+			"name" = "HP Firebrand (.357)",
 			"desc" = "An archaic precursor to revolver-type firearms, this gun was rendered completely obsolete millennia ago. While fast to fire, it is extremely inaccurate. Uses .357 ammo.",
 			"price" = 700,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/commander/wammo] = list(
-			"name" = "VI Commander",
+			"name" = "VI Commander (9x18mm)",
 			"desc" = "A service pistol produced as Vigilitas Interstellar's standard sidearm. Has a reputation for being easy to use, due to its light recoil and high magazine capacity. Chambered in 9x18mm.",
 			"price" = 750,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/ringneck/wammo] = list(
-			"name" = "Ringneck-76",
+			"name" = "Ringneck-76 (10x22mm)",
 			"desc" = "A service handgun popular among law enforcement, mercenaries, and independent spacers with discerning tastes. Chambered in 10x22mm.",
 			"price" = 1000,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/candor/wammo] = list(
-			"name" = "Candor",
+			"name" = "Candor (.45)",
 			"desc" = "A classic semi-automatic handgun, widely popular throughout the Frontier. An engraving on the slide marks it as a product of Hunter's Pride. Chambered in .45.",
 			"price" = 1000,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/shadow/wammo] = list(
-			"name" = "HP Shadow",
+			"name" = "HP Shadow (.44)",
 			"desc" = "A mid-size revolver. Despite the antiquated design, it is cheap, reliable, and stylish, making it a favorite among fast-drawing spacers and the officers of various militaries, as well as small-time police units. Chambered in .44.",
 			"price" = 1000,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/m20_auto_elite/wammo] = list(
-			"name" = "Model 20 \"Auto Elite\"",
+			"name" = "Model 20 \"Auto Elite\" (.44)",
 			"desc" = "A large handgun chambered .44 Roumain. Originally developed by Serene Outdoors for the Star City Police Department when their older handguns proved underpowered, the Auto Elite proved heavy and unwieldy in practice. It has nevertheless seen modest success as a sidearm for big game hunters and among customers looking to make an impression.",
 			"price" = 1250,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/viper/wammo] = list(
-			"name" = "Viper-23",
+			"name" = "Viper-23 (.357)",
 			"desc" = "A powerful bull-barrel revolver. Very popular among mercenaries and the occasional well-to-do spacer or pirate for its flashy appearance and powerful cartridge. Chambered in .357 Magnum.",
 			"price" = 1500,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/derringer/wammo] = list(
-			"name" = ".38 Derringer",
+			"name" = ".38 Derringer (.357)",
 			"desc" = "No. Just... no.",
 			"price" = 350,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/pistol/derringer/wammo] = list(
-			"name" = ".38 Derringer",
+			"name" = ".38 Derringer (.38)",
 			"desc" = "No. Just... no.",
 			"price" = 350,
 			"faction" = FALSE,
@@ -247,85 +247,85 @@
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/doublebarrel/wammo] = list(
-			"name" = "Double Barrel Shotgun",
+			"name" = "Double Barrel Shotgun (12g)",
 			"desc" = "Doom soundtrack sold seperately.",
 			"price" = 1000,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/conflagration/wammo] = list(
-			"name" = "HP Conflagration",
+			"name" = "HP Conflagration (12g)",
 			"desc" = "A lightweight lever-action shotgun with a 5 round ammunition capacity. The lever action allows it to be cycled quickly and acurrately. In theory, you could ever operate it one-handed. Chambered in 12g. 6 round capacity",
 			"price" = 1500,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/hellfire/wammo] = list(
-			"name" = "HP Hellfire",
+			"name" = "HP Hellfire (12g)",
 			"desc" = "A hefty pump-action riot shotgun with an eight-round tube, manufactured by Hunter's Pride. Especially popular among the Frontier's police forces. Chambered in 12g. 9 rounds capacity",
 			"price" = 2000,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/brimstone/wammo] = list(
-			"name" = "HP Brimstone",
+			"name" = "HP Brimstone (12g)",
 			"desc" = "A simple and sturdy pump-action shotgun sporting a 5-round capacity, manufactured by Hunter's Pride. Found widely throughout the Frontier in the hands of hunters, pirates, police, and countless others. Chambered in 12g.",
 			"price" = 2000,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/buckmaster/wammo] = list(
-			"name" = "Model 11 \"Buckmaster\"",
+			"name" = "Model 11 \"Buckmaster\" (12g)",
 			"desc" = "A semi-automatic hunting shotgun produced by Serene Outdoors. Much lighter and handier than military combat shotguns, it offers the same fire rate and magazine capacity, making it an excellent choice for hunting birds and large game or for security forces looking to upgrade from pump action guns. Chambered in 12g.",
 			"price" = 3000,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/cobra/wammo] = list(
-			"name" = "Cobra-20",
+			"name" = "Cobra-20 (.45)",
 			"desc" = "An older model of submachine gun manufactured by Scarborough Arms and marketed to mercenaries, law enforcement, and independent militia. Only became popular after the end of the ICW. Chambered in .45.",
 			"price" = 3000,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/wt550/wammo] = list(
-			"name" = "WT-550 Automatic Rifle",
+			"name" = "WT-550 Automatic Rifle (4.6x30mm)",
 			"desc" = "An outdated PDW, used centuries ago by Nanotrasen security elements. Uses 4.6x30mm rounds.",
 			"price" = 3000,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/m12/wammo] = list(
-			"name" = "Model 12 \"Sporter\"",
+			"name" = "Model 12 \"Sporter\" (.22LR)",
 			"desc" = "An extremely popular target shooting rifle produced by Serene Outdoors. Inexpensive, widely available, and produced in massive numbers, the Sporter is also popular for hunting small game and ground birds. Chambered in .22 LR.",
 			"price" = 500,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/m15/wammo] = list(
-			"name" = "Model 15 Super Sporter",
+			"name" = "Model 15 Super Sporter (5.56x42 CLIP)",
 			"desc" = "A popular semi-automatic hunting rifle produced by Serene Outdoors. Solid all-round performance, high accuracy, and ease of access compared to military rifles makes the Super Sporter a popular choice for hunting medium game and occasionally self-defense. Chambered in 5.56mm.",
 			"price" = 2500,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/winchester/wammo] = list(
-			"name" = "HP Flaming Arrow",
+			"name" = "HP Flaming Arrow (.38)",
 			"desc" = "A sturdy and lightweight lever-action rifle with hand-stamped Hunter's Pride marks on the receiver. A popular choice among Frontier homesteaders for hunting small game and rudimentary self-defense. Chambered in .38.",
 			"price" = 750,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/absolution/wammo] = list(
-			"name" = "HP Absolution",
+			"name" = "HP Absolution (.357)",
 			"desc" = "A large lever-action rifle with hand-stamped Hunter's Pride marks on the receiver and an 8 round ammunition capacity. More powerful than the Flaming Arrow, the Absolution is a popular pick for hunting larger fauna like bears and goliaths, especially when a bolt action's slower rate of fire would be a liability. Chambered in .357.",
 			"price" = 2000,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/illestren/wammo] = list(
-			"name" = "HP Illestren",
+			"name" = "HP Illestren (8x50mmR)",
 			"desc" = "A sturdy and conventional bolt-action rifle. One of Hunter's Pride's most successful firearms, the Illestren is popular among colonists, pirates, snipers, and countless others. Chambered in 8x50mmR.",
 			"price" = 1250,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/beacon/wammo] = list(
-			"name" = "HP Beacon",
+			"name" = "HP Beacon (.45-70)",
 			"desc" = "A break-action rifle made by Hunter's Pride and sold to civilian hunters. Boasts excellent accuracy and stopping power. Uses .45-70 ammo.",
 			"price" = 1000,
 			"faction" = FALSE,
 		)
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/skm/wammo] = list(
-			"name" = "SKM-24",
+			"name" = "SKM-24 (7.62x40mm CLIP)",
 			"desc" = "An obsolete model of assault rifle once used by CLIP. Legendary for its durability and low cost, surplus rifles are commonplace on the Frontier, and the design has been widely copied. Chambered in 7.62x40mm CLIP.",
 			"price" = 5000,
 			"faction" = FALSE,
