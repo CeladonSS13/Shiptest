@@ -850,9 +850,6 @@
 	pixel_y = -14;
 	pixel_x = -4
 	},
-/obj/effect/turf_decal/weather/snow/surround{
-	dir = 4
-	},
 /turf/open/floor/plating/asteroid/snow/under/lit,
 /area/outpost/external)
 "cm" = (
@@ -1059,9 +1056,6 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/outpost/fraction/solfed)
 "cQ" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 8
-	},
 /obj/vehicle/ridden/lavaboat{
 	dir = 8;
 	name = "boat";
@@ -1489,9 +1483,6 @@
 /area/outpost/fraction/inteq)
 "dO" = (
 /obj/effect/turf_decal/snow,
-/obj/effect/turf_decal/weather/snow{
-	dir = 8
-	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/hallway/starboard)
 "dP" = (
@@ -2137,9 +2128,6 @@
 /area/outpost/crew/garden)
 "fx" = (
 /obj/structure/spacevine/dense,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
-	},
 /turf/open/floor/plating/asteroid/sand/lit{
 	light_range = 2
 	},
@@ -2509,12 +2497,6 @@
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/fraction/syndi)
 "gr" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 10
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 9
-	},
 /obj/structure/fluff/beach_umbrella/syndi,
 /turf/open/floor/carpet/red_gold,
 /area/outpost/hallway/central)
@@ -2879,7 +2861,7 @@
 /area/outpost/cargo/faction/solfed)
 "hw" = (
 /obj/structure/barricade/sandbags,
-/turf/open/floor/plating/dirt/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/outpost/hallway/central)
 "hx" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3150,7 +3132,7 @@
 /area/outpost/cargo/office)
 "id" = (
 /obj/effect/spawner/random/food_or_drink/ration,
-/turf/open/floor/plating/dirt/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/outpost/hallway/central)
 "ie" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -3669,7 +3651,7 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/fraction/inteq)
 "jp" = (
-/turf/open/floor/plating/dirt/jungle,
+/turf/open/floor/plating/asteroid/dirt/jungle,
 /area/outpost/hallway/central)
 "jq" = (
 /obj/structure/flora/rock{
@@ -3758,9 +3740,6 @@
 /area/outpost/crew/library)
 "jA" = (
 /obj/structure/spacevine,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 9
-	},
 /turf/open/floor/plating/asteroid/sand/lit{
 	light_range = 2
 	},
@@ -4757,9 +4736,6 @@
 	pixel_y = 3;
 	pixel_x = -1
 	},
-/obj/effect/turf_decal/weather/snow{
-	dir = 9
-	},
 /turf/open/floor/plating/asteroid/snow/under/lit,
 /area/outpost/external)
 "mf" = (
@@ -5357,7 +5333,7 @@
 /area/outpost/cargo/faction/all)
 "nK" = (
 /obj/structure/closet/crate/goldcrate,
-/obj/item/survey_handheld/elite,
+/obj/item/survey_handheld_rnd/elite,
 /obj/effect/spawner/random/medical/memeorgans,
 /turf/open/floor/concrete,
 /area/outpost/hallway/central)
@@ -5513,12 +5489,6 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/outpost/hallway/central)
-"nX" = (
-/obj/effect/turf_decal/weather/sand/corner{
-	dir = 4
-	},
-/turf/open/water/beach,
-/area/outpost/hallway/central)
 "nY" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 8
@@ -5622,7 +5592,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/vehicle/ridden/atv{
+/obj/effect/decal/cleanable/oil/slippery{
 	dir = 1
 	},
 /turf/open/floor/engine,
@@ -7447,7 +7417,7 @@
 /obj/structure/flora/rock{
 	icon_state = "basalt2"
 	},
-/turf/open/floor/plating/dirt/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/outpost/hallway/central)
 "sL" = (
 /obj/structure/railing/wood{
@@ -9285,9 +9255,6 @@
 /area/outpost/hallway/central)
 "xk" = (
 /obj/structure/bonfire/prelit,
-/obj/effect/turf_decal/weather/snow{
-	dir = 1
-	},
 /turf/open/floor/plating/asteroid/snow/under/lit,
 /area/outpost/external)
 "xl" = (
@@ -9787,12 +9754,6 @@
 	},
 /obj/structure/opacity_blocker,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
-/area/outpost/hallway/central)
-"yw" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 10
-	},
-/turf/open/water/beach,
 /area/outpost/hallway/central)
 "yx" = (
 /obj/effect/spawner/random/stockparts,
@@ -10509,12 +10470,6 @@
 /turf/open/floor/wood,
 /area/outpost/crew/dorm)
 "An" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 5
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 6
-	},
 /turf/open/floor/carpet/red_gold,
 /area/outpost/hallway/central)
 "Ao" = (
@@ -12851,7 +12806,7 @@
 /area/outpost/operations)
 "FS" = (
 /obj/effect/spawner/random/decoration/glowstick,
-/turf/open/floor/plating/dirt/jungle,
+/turf/open/floor/plating/asteroid/dirt/jungle,
 /area/outpost/hallway/central)
 "FT" = (
 /obj/structure/chair/office{
@@ -13042,9 +12997,6 @@
 /obj/item/toy/snowball{
 	pixel_y = 5;
 	pixel_x = 1
-	},
-/obj/effect/turf_decal/weather/snow{
-	dir = 10
 	},
 /turf/open/floor/plating/asteroid/snow/under/lit,
 /area/outpost/external)
@@ -13877,7 +13829,7 @@
 /area/outpost/hallway/central)
 "Ix" = (
 /obj/effect/spawner/random/structure/crate_abandoned,
-/turf/open/floor/plating/dirt/jungle,
+/turf/open/floor/plating/asteroid/dirt/jungle,
 /area/outpost/hallway/central)
 "Iy" = (
 /obj/structure/window/reinforced/spawner/west,
@@ -14268,15 +14220,6 @@
 	},
 /turf/open/floor/wood{
 	icon_state = "wood-broken7"
-	},
-/area/outpost/hallway/central)
-"Jn" = (
-/obj/structure/spacevine/dense,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/turf/open/floor/plating/asteroid/sand/lit{
-	light_range = 2
 	},
 /area/outpost/hallway/central)
 "Jo" = (
@@ -14701,12 +14644,6 @@
 /obj/structure/closet/emcloset/wall/directional/east,
 /turf/open/floor/wood,
 /area/outpost/hallway/central)
-"Kl" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 8
-	},
-/turf/open/water/beach,
-/area/outpost/hallway/central)
 "Kn" = (
 /obj/machinery/telecomms/allinone/indestructible,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -14777,7 +14714,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/vehicle/ridden/atv{
+/obj/effect/decal/cleanable/oil/slippery{
 	dir = 1
 	},
 /turf/open/floor/plating{
@@ -14998,7 +14935,7 @@
 /area/outpost/cargo/faction/all/zone_1)
 "Lb" = (
 /mob/living/simple_animal/hostile/netherworld/migo,
-/turf/open/floor/plating/dirt/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/outpost/hallway/central)
 "Lc" = (
 /turf/open/lava/smooth/lava_land_surface,
@@ -16363,9 +16300,6 @@
 /obj/item/shovel,
 /obj/item/flashlight/lantern{
 	pixel_x = 7
-	},
-/obj/effect/turf_decal/weather/snow{
-	dir = 6
 	},
 /turf/open/floor/plating/asteroid/snow/under/lit,
 /area/outpost/external)
@@ -18724,15 +18658,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/patterned/grid,
 /area/outpost/hallway/fore)
-"Uj" = (
-/obj/structure/spacevine,
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 1
-	},
-/turf/open/floor/plating/asteroid/sand/lit{
-	light_range = 2
-	},
-/area/outpost/hallway/central)
 "Uk" = (
 /obj/structure/disposalpipe/segment{
 	dir = 6
@@ -18892,7 +18817,7 @@
 /area/outpost/maintenance/fore)
 "UH" = (
 /obj/structure/flora/driftlog,
-/turf/open/floor/plating/dirt/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/outpost/hallway/central)
 "UI" = (
 /obj/structure/railing/corner{
@@ -19337,7 +19262,7 @@
 /turf/closed/indestructible/reinforced,
 /area/outpost/fraction/nanotrasen)
 "VE" = (
-/turf/open/floor/plating/dirt/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/outpost/hallway/central)
 "VF" = (
 /obj/effect/turf_decal/siding/wood{
@@ -19965,7 +19890,7 @@
 	desc = "Here lies our great brother and infamous pirate"
 	},
 /obj/effect/spawner/random/clothing/costume,
-/turf/open/floor/plating/dirt/jungle,
+/turf/open/floor/plating/asteroid/dirt/jungle,
 /area/outpost/hallway/central)
 "Xo" = (
 /obj/effect/turf_decal/trimline/opaque/beige/filled/warning{
@@ -20734,12 +20659,6 @@
 /turf/open/floor/concrete/tiles,
 /area/outpost/hallway/aft)
 "Zn" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 10
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 9
-	},
 /obj/structure/fluff/beach_umbrella/cap,
 /turf/open/floor/carpet/red_gold,
 /area/outpost/hallway/central)
@@ -43850,7 +43769,7 @@ ME
 TJ
 TJ
 FS
-Jn
+fx
 FZ
 dV
 TJ
@@ -44037,7 +43956,7 @@ ME
 TJ
 Xn
 jp
-Jn
+fx
 FZ
 FZ
 fe
@@ -44224,7 +44143,7 @@ ME
 TJ
 Ix
 jA
-Uj
+jA
 FZ
 FZ
 WO
@@ -44410,7 +44329,7 @@ TJ
 TJ
 TJ
 fx
-Uj
+jA
 FZ
 FZ
 FZ
@@ -45346,8 +45265,8 @@ TJ
 kk
 FM
 cQ
-Kl
-yw
+ox
+ox
 Sy
 fm
 uM
@@ -45534,8 +45453,8 @@ ES
 FM
 ox
 ox
-nX
-yw
+ox
+ox
 fe
 fe
 TJ
@@ -45722,7 +45641,7 @@ FM
 Uq
 Uq
 ox
-nX
+ox
 TJ
 TJ
 TJ

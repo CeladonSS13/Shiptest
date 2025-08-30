@@ -1203,3 +1203,24 @@
 	description = "It seems whoever left here was so nice they left very vauluable items behind. How thoughtful."
 	suffix = "reebe_decayed_sm.dmm"
 	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE, RUIN_TAG_HAZARDOUS)
+//							///
+//		MARK: Moon
+//							///
+
+
+
+
+
+
+//							///
+//		MARK: Desert
+//							///
+
+
+
+
+
+
+//							///
+//		MARK: Water
+//							///

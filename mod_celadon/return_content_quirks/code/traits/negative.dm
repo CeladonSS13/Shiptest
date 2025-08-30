@@ -121,11 +121,11 @@
 				heirloom_type = /obj/item/clothing/under/shorts/purple
 			//Medical
 			if("Chief Medical Officer")
-				heirloom_type = /obj/item/storage/firstaid/ancient/heirloom
+				heirloom_type = /obj/item/flashlight/pen
 			if("Medical Doctor")
-				heirloom_type = /obj/item/storage/firstaid/ancient/heirloom
+				heirloom_type = /obj/item/flashlight/pen
 			if("Paramedic")
-				heirloom_type = /obj/item/storage/firstaid/ancient/heirloom
+				heirloom_type = /obj/item/flashlight/pen
 			if("Psychologist")
 				heirloom_type = /obj/item/storage/pill_bottle
 			if("Chemist")
@@ -318,7 +318,7 @@
 
 	switch(rand(1,3))
 		if(1)
-			quirk_holder.set_jitter(10)
+			quirk_holder.set_timed_status_effect(10 SECONDS, /datum/status_effect/jitter, only_if_higher = TRUE)
 			msg += "causing you to start fidgeting!"
 		if(2)
 			quirk_holder.stuttering = max(3, quirk_holder.stuttering)

@@ -100,9 +100,8 @@
 			W.combined_access |= card.access
 
 /datum/outfit/job/solfed
-	name = "SolFed Base Outfit"
-
-	faction_icon = "bg_solgov"
+	name = "SolFed - Base Outfit"
+	faction_icon = "bg_solfed"
 
 /datum/outfit/job/solfed/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
@@ -116,9 +115,11 @@
 	box = /obj/item/storage/box/survival/solfed
 
 /datum/outfit/job/solfed/ert/inspector
+	name = "SolFed - Inspector"
 	box = /obj/item/storage/box/survival/solfed
 
 /datum/outfit/job/solfed/sonnensoldner
+	name = "SolFed - Sonnensoldner"
 	box = /obj/item/storage/box/survival/solfed
 
 /datum/outfit/job/solfed/engineer
@@ -300,7 +301,7 @@
 /datum/outfit/job/solfed/miner
 	name = "SolFed - Contract Miner"
 	jobtype = /datum/job/mining
-	job_icon = "stationminer"
+	job_icon = "shaftminer"
 
 	id = /obj/item/card/id/solfed
 	uniform = /obj/item/clothing/under/solfed/industrial
@@ -354,6 +355,8 @@
 	backpack = /obj/item/storage/backpack/messenger/com
 	gloves = null
 
+	faction_icon = "bg_elysium"
+
 /datum/outfit/job/solfed/captain/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_captain_access(H)
@@ -370,6 +373,8 @@
 	id = /obj/item/card/id/solfed
 	neck = null
 
+	faction_icon = "bg_elysium"
+
 /datum/outfit/job/solfed/sergeant/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_head_access(H)
@@ -384,6 +389,8 @@
 	gloves = null
 	shoes = /obj/item/clothing/shoes/combat
 	uniform = /obj/item/clothing/under/solfed/camo/elysium
+
+	faction_icon = "bg_elysium"
 
 /datum/outfit/job/solfed/marine/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -400,6 +407,8 @@
 	shoes = /obj/item/clothing/shoes/combat
 	uniform = /obj/item/clothing/under/solfed/camo/elysium
 
+	faction_icon = "bg_elysium"
+
 /datum/outfit/job/solfed/doctor/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_engineer_access(H)
@@ -415,6 +424,8 @@
 	belt = /obj/item/storage/belt/utility/full/engi
 	shoes = /obj/item/clothing/shoes/combat
 	uniform = /obj/item/clothing/under/solfed/camo/elysium
+
+	faction_icon = "bg_elysium"
 
 /datum/outfit/job/solfed/engineer/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()

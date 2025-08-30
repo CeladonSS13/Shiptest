@@ -22,7 +22,7 @@ _UNUSED/tajara_helmet.dmi
 ammo/ammo_bullets.dmi
 ammo/ammo.dmi
 ammo/projectiles.dmi
-
+actions/actions.dmi
 bongs/bong.dmi
 bongs/lefthand.dmi
 bongs/righthand.dmi

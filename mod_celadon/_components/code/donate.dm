@@ -10,7 +10,7 @@
 	load_vip_tiers(owner)
 
 /datum/donator/proc/load_vip_tiers(client/owner)
-	var/donators_text = file2text("[global.config.directory]/donators.txt")
+	var/donators_text = file2text("[global.config.directory]/_celadon/donators.txt")
 	if (!donators_text)
 		return
 
