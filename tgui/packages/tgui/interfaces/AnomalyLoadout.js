@@ -1,10 +1,10 @@
 import { useBackend, useLocalState } from '../backend';
 import {
   Button,
-  // Input,
+  Input,
   Section,
   // Tabs,
-  //Table,
+  // Table,
   LabeledList,
   Collapsible,
   Flex,
@@ -30,6 +30,44 @@ export const AnomalyLoadout = (props, context) => {
   const [engineeringcostmult] = useLocalState(context, "engineeringcostmult", data.engineeringcostmult);
   const [medical] = useLocalState(context, "medical", data.medical);
   const [medicalcostmult] = useLocalState(context, "medicalcostmult", data.medicalcostmult);
+
+  const [searchText, setSearchText] = useLocalState(context, 'searchText', '');
+  const weaponSlop = Object.entries(weaponoptions).filter(([id, item]) => {
+    const name = (item?.name ?? "").toLowerCase();
+    const desc = (item?.desc ?? "").toLowerCase();
+    return name.includes(searchText) || desc.includes(searchText);
+  });
+  const armorSlop = Object.entries(armoroptions).filter(([key, item]) => {
+    const name = (item?.name ?? "").toLowerCase();
+    const desc = (item?.desc ?? "").toLowerCase();
+    return name.includes(searchText) || desc.includes(searchText);
+  });
+  const dripSlop = Object.entries(drip).filter(([key, item]) => {
+    const name = (item?.name ?? "").toLowerCase();
+    const desc = (item?.desc ?? "").toLowerCase();
+    return name.includes(searchText) || desc.includes(searchText);
+  });
+  const hatsSlop = Object.entries(hats).filter(([key, item]) => {
+    const name = (item?.name ?? "").toLowerCase();
+    const desc = (item?.desc ?? "").toLowerCase();
+    return name.includes(searchText) || desc.includes(searchText);
+  });
+  const utilitySlop = Object.entries(utility).filter(([key, item]) => {
+    const name = (item?.name ?? "").toLowerCase();
+    const desc = (item?.desc ?? "").toLowerCase();
+    return name.includes(searchText) || desc.includes(searchText);
+  });
+  const engineeringSlop = Object.entries(engineering).filter(([key, item]) => {
+    const name = (item?.name ?? "").toLowerCase();
+    const desc = (item?.desc ?? "").toLowerCase();
+    return name.includes(searchText) || desc.includes(searchText);
+  });
+  const medicalSlop = Object.entries(medical).filter(([key, item]) => {
+    const name = (item?.name ?? "").toLowerCase();
+    const desc = (item?.desc ?? "").toLowerCase();
+    return name.includes(searchText) || desc.includes(searchText);
+  });
+
 
 
   
@@ -62,12 +100,13 @@ export const AnomalyLoadout = (props, context) => {
               ))}
           </Flex.Item >
           <Flex.Item basis="50%">
-            Buyable Items
-              {
+            Buyable Items  <Input placeholder="Search..." autoFocus value={searchText} onInput={(_, value) => setSearchText(value.toLowerCase())} />
+              {/*
+                JSON.stringify(weaponSlop, null, 2)
               // WEAPONS 
-              }
+              */}
               <Collapsible title="Weapons">
-                {Object.entries(weaponoptions).map(([key, item]) => (
+                {weaponSlop.map(([key, item]) => (
                     <Collapsible title={item.name} key={item.path}>
                       <LabeledList>
                         <LabeledList.Item label="Description">
@@ -94,7 +133,7 @@ export const AnomalyLoadout = (props, context) => {
               // ARMOR 
               }
               <Collapsible title="Armor">
-                {Object.entries(armoroptions).map(([key, item]) => (
+                {armorSlop.map(([key, item]) => (
                     <Collapsible title={item.name} key={item.path}>
                       <LabeledList>
                         <LabeledList.Item label="Description">
@@ -121,7 +160,7 @@ export const AnomalyLoadout = (props, context) => {
               // DRIP 
               }
               <Collapsible title="Shoes">
-                {Object.entries(drip).map(([key, item]) => (
+                {dripSlop.map(([key, item]) => (
                     <Collapsible title={item.name} key={item.path}>
                       <LabeledList>
                         <LabeledList.Item label="Description">
@@ -148,7 +187,7 @@ export const AnomalyLoadout = (props, context) => {
               // HATS 
               }
               <Collapsible title="hats">
-                {Object.entries(hats).map(([key, item]) => (
+                {hatsSlop.map(([key, item]) => (
                     <Collapsible title={item.name} key={item.path}>
                       <LabeledList>
                         <LabeledList.Item label="Description">
@@ -175,7 +214,7 @@ export const AnomalyLoadout = (props, context) => {
               // UTILITY 
               }
               <Collapsible title="utility">
-                {Object.entries(utility).map(([key, item]) => (
+                {utilitySlop.map(([key, item]) => (
                     <Collapsible title={item.name} key={item.path}>
                       <LabeledList>
                         <LabeledList.Item label="Description">
@@ -202,7 +241,7 @@ export const AnomalyLoadout = (props, context) => {
               // ENGINEERING 
               }
               <Collapsible title="engineering">
-                {Object.entries(engineering).map(([key, item]) => (
+                {engineeringSlop.map(([key, item]) => (
                     <Collapsible title={item.name} key={item.path}>
                       <LabeledList>
                         <LabeledList.Item label="Description">
@@ -229,7 +268,7 @@ export const AnomalyLoadout = (props, context) => {
               // MEDICAL 
               }
               <Collapsible title="medical">
-                {Object.entries(medical).map(([key, item]) => (
+                {medicalSlop.map(([key, item]) => (
                     <Collapsible title={item.name} key={item.path}>
                       <LabeledList>
                         <LabeledList.Item label="Description">
