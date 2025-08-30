@@ -207,6 +207,30 @@
 /obj/item/ammo_box/magazine/gar,
 /obj/item/ammo_box/magazine/gar,
 /obj/machinery/firealarm/directional/south,
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 10
+	},
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 10
+	},
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 10
+	},
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 10
+	},
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 10
+	},
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 10
+	},
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 10
+	},
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 10
+	},
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "cY" = (
@@ -1253,6 +1277,11 @@
 	pixel_y = 19
 	},
 /obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 1
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "pZ" = (
@@ -1996,20 +2025,20 @@
 /obj/effect/turf_decal/corner_techfloor_gray/full{
 	dir = 4
 	},
-/obj/structure/rack,
-/obj/item/storage/box/ammo/ferrolance,
-/obj/item/storage/box/ammo/ferrolance,
-/obj/item/storage/box/ammo/ferrolance,
-/obj/item/storage/box/ammo/ferrolance,
-/obj/item/storage/box/ammo/ferrolance,
-/obj/item/storage/box/ammo/ferrolance,
-/obj/item/storage/box/ammo/ferrolance,
-/obj/item/storage/box/ammo/ferrolance,
 /obj/machinery/light/colored/red,
 /obj/machinery/light_switch{
 	dir = 8;
 	pixel_x = 21;
 	pixel_y = 10
+	},
+/obj/structure/table,
+/obj/machinery/recharger{
+	pixel_y = 5;
+	pixel_x = -7
+	},
+/obj/machinery/recharger{
+	pixel_y = 5;
+	pixel_x = 7
 	},
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
@@ -2339,18 +2368,18 @@
 	dir = 10
 	},
 /obj/structure/rack,
-/obj/item/stock_parts/cell/gun/solgov,
-/obj/item/stock_parts/cell/gun/solgov,
-/obj/item/stock_parts/cell/gun/solgov,
-/obj/item/stock_parts/cell/gun/solgov,
-/obj/item/stock_parts/cell/gun/solgov,
-/obj/item/stock_parts/cell/gun/solgov,
-/obj/item/stock_parts/cell/gun/solgov,
-/obj/item/stock_parts/cell/gun/solgov,
 /obj/structure/cable{
 	icon_state = "0-1"
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
+/obj/item/storage/box/ammo/ferrolance,
+/obj/item/storage/box/ammo/ferrolance,
+/obj/item/storage/box/ammo/ferrolance,
+/obj/item/storage/box/ammo/ferrolance,
+/obj/item/storage/box/ammo/ferrolance,
+/obj/item/storage/box/ammo/ferrolance,
+/obj/item/storage/box/ammo/ferrolance,
+/obj/item/storage/box/ammo/ferrolance,
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "Aw" = (

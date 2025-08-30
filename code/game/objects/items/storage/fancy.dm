@@ -149,9 +149,14 @@
 			return
 		var/image/current_huevo = image(icon = icon, icon_state = "eggbox_eggoverlay")
 		if(egg_count <= 6) //less than 6 eggs
-			current_huevo.pixel_x = (3*(egg_count-1))
+		// [CELADON-EDIT] - CELADON_RESPRITE
+		//	current_huevo.pixel_x = (3*(egg_count-1))
+		//else //if more than 6, make an extra row
+		//	current_huevo.pixel_x = (3*(egg_count-7)) //-7 to 'reset' it
+			current_huevo.pixel_x = (5*(egg_count-1))
 		else //if more than 6, make an extra row
-			current_huevo.pixel_x = (3*(egg_count-7)) //-7 to 'reset' it
+			current_huevo.pixel_x = (5*(egg_count-7)) //-7 to 'reset' it
+		// [/CELADON-EDIT]
 			current_huevo.pixel_y = -3
 		add_overlay(current_huevo)
 

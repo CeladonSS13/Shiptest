@@ -5,7 +5,7 @@
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/feet.dmi'
 	icon_state = "crusader"
 	w_class = WEIGHT_CLASS_NORMAL
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60) //does this even do anything on boots?
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60, "wound" = 20) //does this even do anything on boots?
 	clothing_flags = NOSLIP
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOES_MIN_TEMP_PROTECT

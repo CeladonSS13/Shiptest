@@ -81,11 +81,9 @@
 	pixel_x = -23;
 	dir = 4
 	},
-/obj/machinery/power/port_gen/pacman/super{
-	anchored = 1
-	},
+/obj/machinery/power/smes/engineering,
 /obj/structure/cable{
-	icon_state = "0-2"
+	icon_state = "0-4"
 	},
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering)
@@ -987,10 +985,12 @@
 /turf/open/floor/engine/hull,
 /area/ship/external)
 "nD" = (
+/obj/machinery/power/port_gen/pacman/super{
+	anchored = 1
+	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/smes/engineering,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/electrical)
 "nG" = (
@@ -1008,9 +1008,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "nI" = (
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
 /obj/effect/turf_decal/trimline/opaque/orange/corner{
 	dir = 1
 	},
@@ -1114,6 +1111,12 @@
 /obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
+"px" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/engine/hull,
+/area/ship/external)
 "pE" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 9
@@ -1545,18 +1548,12 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "ug" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
+/obj/effect/turf_decal/trimline/opaque/orange/warning,
 /obj/machinery/power/terminal{
-	dir = 8
+	dir = 1
 	},
 /obj/structure/cable{
 	icon_state = "0-8"
-	},
-/obj/effect/turf_decal/trimline/opaque/orange/warning,
-/obj/structure/cable{
-	icon_state = "0-1"
 	},
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering)
@@ -1611,9 +1608,6 @@
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering/electrical)
 "uY" = (
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
 /obj/effect/turf_decal/trimline/opaque/orange/corner{
 	dir = 8
 	},
@@ -1678,14 +1672,15 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "vy" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4";
+	tag = null
 	},
 /turf/open/floor/plasteel/heavymetal,
 /area/ship/engineering/electrical)
@@ -2147,8 +2142,9 @@
 /obj/structure/cable{
 	icon_state = "0-1"
 	},
-/obj/machinery/power/port_gen/pacman/super{
-	anchored = 1
+/obj/machinery/power/smes/engineering,
+/obj/structure/cable{
+	icon_state = "0-4"
 	},
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering/electrical)
@@ -2713,20 +2709,12 @@
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "Hl" = (
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/terminal{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
+/obj/machinery/power/terminal,
 /obj/effect/turf_decal/trimline/opaque/orange/warning{
 	dir = 9
 	},
 /obj/structure/cable{
-	icon_state = "0-2"
+	icon_state = "0-8"
 	},
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering/electrical)
@@ -3332,13 +3320,15 @@
 /turf/closed/wall/mineral/titanium/exterior,
 /area/ship/crew/canteen/kitchen)
 "Ps" = (
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
 /obj/effect/turf_decal/trimline/opaque/orange/end{
 	dir = 8
 	},
-/obj/machinery/power/smes/engineering,
+/obj/machinery/power/port_gen/pacman/super{
+	anchored = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Pz" = (
@@ -3417,14 +3407,14 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "Qa" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
 	},
 /turf/open/floor/plasteel/heavymetal,
 /area/ship/engineering)
@@ -4416,7 +4406,7 @@ nZ
 nZ
 Xh
 aU
-aU
+px
 Lg
 hA
 Rv
