@@ -388,7 +388,26 @@
 				"desc" = "High speed, low drag combat boots.",
 				"price" = 75,
 				"faction" = FALSE,
-		) 
+		)
+		GLOB.anomaly_loadout_drip_indie[/obj/item/clothing/shoes/cowboy] = list(
+				"name" = "cowboy boots",
+				"desc" = "A small sticker lets you know they've been inspected for snakes, It is unclear how long ago the inspection took place...",
+				"price" = 75,
+				"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_drip_indie[/obj/item/clothing/shoes/cowboy/black] = list(
+				"name" = "cowboy boots, black",
+				"desc" = "A small sticker lets you know they've been inspected for snakes, It is unclear how long ago the inspection took place...",
+				"price" = 75,
+				"faction" = FALSE,
+		)
+		GLOB.anomaly_loadout_drip_indie[/obj/item/clothing/shoes/cowboy/white] = list(
+				"name" = "cowboy boots, white",
+				"desc" = "A small sticker lets you know they've been inspected for snakes, It is unclear how long ago the inspection took place...",
+				"price" = 75,
+				"faction" = FALSE,
+		)
+		
 
 /datum/anomalyloadout/proc/initIndieHats()
 		GLOB.anomaly_loadout_hats_indie[/obj/item/clothing/head/helmet/sec] = list(
