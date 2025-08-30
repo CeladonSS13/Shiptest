@@ -210,6 +210,11 @@
 		return
 	update_appearance()
 	SpinAnimation(10, 1)
+	var/matrix/M = matrix(transform)
+	M.Turn(rand(-170,170))
+	transform = M
+	pixel_x = rand(-12, 12)
+	pixel_y = rand(-12, 12)
 	var/turf/location = get_turf(src)
 	if(bounce_sfx_override)
 		addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(playsound), src, pick(bounce_sfx_override), 20, 1), bounce_delay) //Soft / non-solid turfs that shouldn't make a sound when a shell casing is ejected over them.

@@ -299,6 +299,9 @@ GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 			pixel_y = rand(-5, 5)
 	if (icon_prefix)
 		icon_state = "[icon_prefix][icon_state]"
+	var/matrix/M = matrix(transform)
+	M.Turn(rand(-170, 170))
+	transform = M
 
 	if(!mapload)
 		SSblackbox.record_feedback("tally", "station_mess_created", 1, name)

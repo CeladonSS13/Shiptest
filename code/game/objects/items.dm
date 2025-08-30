@@ -828,7 +828,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		. = callback.Invoke()
 	item_flags &= ~IN_INVENTORY
 	var/matrix/M = matrix(transform)
-	M.Turn(rand(-360, 360))
+	M.Turn(rand(-170, 170))
 	transform = M
 	pixel_x = initial(pixel_x) + rand(-12, 12)
 	pixel_y = initial(pixel_y) + rand(-12, 12)
