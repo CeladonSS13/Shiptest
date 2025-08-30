@@ -89,7 +89,7 @@
 	autolinkers = list("syndicate", "broadcasterB")
 
 /obj/machinery/telecomms/server/presets/minutemen
-	id = "CLIP Server"
+	id = "Ramzi Server"
 	freq_listening = list(FREQ_RAMZI, FREQ_COMMON)
 	autolinkers = list("ramzi", "broadcasterA")
 

@@ -14,3 +14,10 @@
 	desc = "Nanotrasen eswords are failing to properly deliver solarian freedom? Try this!"
 	contains = list(/obj/item/melee/energy/sword/saber/knife/blue)
 	cost = 450
+
+/datum/supply_pack/faction/solfed/sec_supply/radio
+	name = "Radio Transceiver Crate"
+	desc = "Contains one tactical communications device."
+	cost = 300
+	contains = list(/obj/item/radio/transceiver/solfed)
+	crate_name = "radio transceiver crate"

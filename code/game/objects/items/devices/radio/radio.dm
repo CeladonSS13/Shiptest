@@ -497,6 +497,8 @@
 	frequency = FREQ_EMERGENCY
 	freqlock = TRUE
 
+// MARK: Фракционные рации
+// Можно купить в карго
 /obj/item/radio/transceiver/nanotrasen
 	name = "nanotrasen transceiver"
 	frequency = FREQ_NANOTRASEN
@@ -507,7 +509,7 @@
 	frequency = FREQ_SYNDICATE
 	keyslot = /obj/item/encryptionkey/syndicate
 
-/obj/item/radio/transceiver/solgov
+/obj/item/radio/transceiver/solfed
 	name = "solfed transceiver"
 	frequency = FREQ_SOLFED
 	keyslot = /obj/item/encryptionkey/solgov
@@ -517,6 +519,7 @@
 	frequency = FREQ_INTEQ
 	keyslot = /obj/item/encryptionkey/inteq
 
+// Не встречаются в игре, нельзя найти
 /obj/item/radio/transceiver/pirate
 	name = "unidentified transceiver"
 	frequency = FREQ_PIRATE

@@ -26,6 +26,13 @@
 	crate_name = "demolitions charge crate"
 	crate_type = /obj/structure/closet/crate/secure/weapon
 
+/datum/supply_pack/faction/syndicate/sec_supply/radio
+	name = "Radio Transceiver Crate"
+	desc = "Contains one tactical communications device."
+	cost = 300
+	contains = list(/obj/item/radio/transceiver/syndicate)
+	crate_name = "radio transceiver crate"
+
 // /datum/supply_pack/faction/syndicate/sec_supply/fire - [Криво работают]
 // 	name = "Incendiary Weapons Crate"
 // 	desc = "Burn, baby burn. Contains three incendiary grenades and three prebuilt flamethrowers."

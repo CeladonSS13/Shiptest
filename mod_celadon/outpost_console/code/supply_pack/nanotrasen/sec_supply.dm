@@ -9,3 +9,10 @@
 	contains = list(/obj/item/kinetic_crusher)
 	crate_name = "dualsaber crate"
 	crate_type = /obj/structure/closet/crate/secure/weapon
+
+/datum/supply_pack/faction/nanotrasen/sec_supply/radio
+	name = "Radio Transceiver Crate"
+	desc = "Contains one tactical communications device."
+	cost = 300
+	contains = list(/obj/item/radio/transceiver/nanotrasen)
+	crate_name = "radio transceiver crate"

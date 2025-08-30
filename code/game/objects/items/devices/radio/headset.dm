@@ -125,6 +125,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	name = "SUNS headset"
 	icon_state = "suns_headset"
 	desc = "A headset worn by staff and students of SUNS, both in the frontier and elsewhere."
+	keyslot2 = new /obj/item/encryptionkey/suns
 
 /obj/item/radio/headset/syndicate/suns/command
 	name = "SUNS command headset"
@@ -135,6 +136,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	name = "SUNS bowman headset"
 	icon_state = "suns_headset_alt"
 	desc = "A headset worn by staff and students of SUNS, both in the frontier and elsewhere. Protects ears from distractions during exams."
+	keyslot2 = new /obj/item/encryptionkey/suns
 
 /obj/item/radio/headset/syndicate/alt/suns/command
 	name = "SUNS bowman command headset"

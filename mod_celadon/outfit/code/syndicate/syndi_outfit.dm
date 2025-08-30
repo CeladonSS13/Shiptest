@@ -64,7 +64,52 @@
 	box = /obj/item/storage/box/survival/syndicate
 
 /datum/outfit/job/syndicate/assistant/suns
-	box = /obj/item/storage/box/survival/syndicate
+	box = /obj/item/storage/box/survival/syndicate/suns
+	ears = /obj/item/radio/headset/syndicate/suns
+
+/datum/outfit/job/syndicate/bartender/suns
+	box = /obj/item/storage/box/survival/syndicate/suns
+	ears = /obj/item/radio/headset/syndicate/suns
+
+/datum/outfit/job/syndicate/botanist/suns
+	box = /obj/item/storage/box/survival/syndicate/suns
+	ears = /obj/item/radio/headset/syndicate/suns
+
+/datum/outfit/job/syndicate/captain/suns
+	box = /obj/item/storage/box/survival/syndicate/suns
+	ears = /obj/item/radio/headset/syndicate/alt/suns/command
+
+/datum/outfit/job/syndicate/cmo/suns
+	box = /obj/item/storage/box/survival/syndicate/suns
+	ears = /obj/item/radio/headset/syndicate/suns
+
+/datum/outfit/job/syndicate/head_of_personnel/suns
+	box = /obj/item/storage/box/survival/syndicate/suns
+	ears = /obj/item/radio/headset/syndicate/suns
+
+/datum/outfit/job/syndicate/hos/suns
+	box = /obj/item/storage/box/survival/syndicate/suns
+	ears = /obj/item/radio/headset/syndicate/suns
+
+/datum/outfit/job/syndicate/doctor/suns
+	box = /obj/item/storage/box/survival/syndicate/suns
+	ears = /obj/item/radio/headset/syndicate/suns
+
+/datum/outfit/job/syndicate/psychologist/suns
+	box = /obj/item/storage/box/survival/syndicate/suns
+	ears = /obj/item/radio/headset/syndicate/suns
+
+/datum/outfit/job/syndicate/science/suns
+	box = /obj/item/storage/box/survival/syndicate/suns
+	ears = /obj/item/radio/headset/syndicate/suns
+
+/datum/outfit/job/syndicate/security/suns
+	box = /obj/item/storage/box/survival/syndicate/suns
+	ears = /obj/item/radio/headset/syndicate/suns
+
+/datum/outfit/job/syndicate/engineer/suns
+	box = /obj/item/storage/box/survival/syndicate/suns
+	ears = /obj/item/radio/headset/syndicate/suns
 
 /datum/outfit/job/syndicate/science/cybersun
     name = "Syndicate - Scientist"
