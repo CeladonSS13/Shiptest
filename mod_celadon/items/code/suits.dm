@@ -10,7 +10,7 @@
 	item_state = "snowsuit"
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/t_scanner, /obj/item/radio)
 	body_parts_covered = NONE
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "fire" = 0, "acid" = 0, "wound" = 0)
 	cold_protection = NONE
 	min_cold_protection_temperature = NONE
 	heat_protection = NONE
@@ -36,7 +36,7 @@
 	desc = "An amalgamation of old civilian voidsuits and diving suits. This bulky space suit is used by the crew of the New Kingdom's mercantile navy."
 	icon_state = "nkavoid"
 	item_state = "nkavoid"
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 35, "energy" = 10, "bomb" = 30, "bio" = 100, "rad" = 40, "fire" = 40, "acid" = 30)
+	armor = list("melee" = 30, "bullet" = 25, "laser" = 35, "energy" = 10, "bomb" = 30, "bio" = 100, "rad" = 40, "fire" = 40, "acid" = 30, "wound" = 20)
 	strip_delay = 60
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/tajaran/void_nka
 
@@ -47,7 +47,7 @@
 	desc = "An amalgamation of old civilian voidsuits and diving suits. This bulky space suit is used by the crew of the New Kingdom's mercantile navy."
 	icon_state = "nkavoid"
 	item_state = "nkavoid"
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 35, "energy" = 10, "bomb" = 30, "bio" = 100, "rad" = 40, "fire" = 40, "acid" = 30)
+	armor = list("melee" = 30, "bullet" = 25, "laser" = 35, "energy" = 10, "bomb" = 30, "bio" = 100, "rad" = 40, "fire" = 40, "acid" = 30, "wound" = 20)
 	strip_delay = 60
 	actions_types = list()
 
@@ -56,7 +56,7 @@
 	desc = "A refitted, sturdy voidsuit created from Hegemony models acquired during the liberation of Gakal'zaal. These armored models are issued to the People's Volunteer Spacer Militia."
 	icon_state = "DPRAvoidsuit"
 	item_state = "DPRAvoidsuit"
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 35, "energy" = 10, "bomb" = 30, "bio" = 100, "rad" = 40, "fire" = 40, "acid" = 30)
+	armor = list("melee" = 30, "bullet" = 25, "laser" = 35, "energy" = 10, "bomb" = 30, "bio" = 100, "rad" = 40, "fire" = 40, "acid" = 30, "wound" = 20)
 	strip_delay = 60
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/tajaran/void_dpra
 
@@ -67,7 +67,7 @@
 	desc = "A refitted, sturdy voidsuit created from Hegemony models acquired during the liberation of Gakal'zaal. These armored models are issued to the People's Volunteer Spacer Militia."
 	icon_state = "DPRAvoidsuit"
 	item_state = "DPRAvoidsuit"
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 35, "energy" = 10, "bomb" = 30, "bio" = 100, "rad" = 40, "fire" = 40, "acid" = 30)
+	armor = list("melee" = 30, "bullet" = 25, "laser" = 35, "energy" = 10, "bomb" = 30, "bio" = 100, "rad" = 40, "fire" = 40, "acid" = 30, "wound" = 20)
 	strip_delay = 60
 	actions_types = list()
 

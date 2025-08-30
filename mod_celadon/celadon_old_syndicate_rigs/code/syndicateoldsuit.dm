@@ -17,7 +17,7 @@
 	icon_state = "hardsuit0-syndiesst"
 	item_state = "hardsuit1-syndiesst"
 	hardsuit_type = "syndiesst"
-	armor = list("melee" = 45, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 70)
+	armor = list("melee" = 45, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 70, "wound" = 20)
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/shabbymedical
 	name = "shabby elite medical syndicate hardsuit helmet"
@@ -28,7 +28,7 @@
 	icon_state = "hardsuit0-syndiemed"
 	item_state = "hardsuit1-syndiemed"
 	hardsuit_type = "syndiemed"
-	armor = list("melee" = 45, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 70)
+	armor = list("melee" = 45, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 70, "wound" = 20)
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/shabbyengineer
 	name = "shabby engineer elite syndicate hardsuit helmet"
@@ -39,7 +39,7 @@
 	icon_state = "hardsuit0-syndiecontractor"
 	item_state = "hardsuit1-syndiecontractor"
 	hardsuit_type = "syndiecontractor"
-	armor = list("melee" = 45, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 70)
+	armor = list("melee" = 45, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 70, "wound" = 20)
 
 /obj/item/clothing/suit/space/hardsuit/syndi/elite/oldsst
 	name = "elite SST hardsuit"
@@ -124,7 +124,7 @@
 	item_state = "hardsuit1-syndiecontractor"
 	hardsuit_type = "syndiecontractor"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/shabbyengineer
-	armor = list("melee" = 45, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 70)
+	armor = list("melee" = 45, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 70, "wound" = 20)
 
 /obj/item/clothing/suit/space/hardsuit/syndi/elite/shabbymedical
 	name = "shabby elite medical syndicate hardsuit"
@@ -136,7 +136,7 @@
 	item_state = "hardsuit1-syndiemed"
 	hardsuit_type = "syndiemed"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/shabbymedical
-	armor = list("melee" = 45, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 70)
+	armor = list("melee" = 45, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 70, "wound" = 20)
 
 /obj/item/clothing/suit/space/hardsuit/syndi/elite/shabbyoldsst
 	name = "shabby elite SST hardsuit"
@@ -148,4 +148,4 @@
 	item_state = "hardsuit1-syndiesst"
 	hardsuit_type = "syndiesst"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/shabbysst
-	armor = list("melee" = 45, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 70)
+	armor = list("melee" = 45, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 70, "wound" = 20)

@@ -17,7 +17,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	block_chance = 10
 	armour_penetration = 35
-	sharpness = IS_SHARP
+	sharpness = SHARP_EDGED
 	attack_verb = list("slashed", "cut")
 	hitsound = 'sound/weapons/rapierhit.ogg'
 	custom_materials = list(/datum/material/iron = 1000)

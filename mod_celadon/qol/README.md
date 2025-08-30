@@ -17,6 +17,7 @@ ID мода: CELADON_QOL
 FIX_LATHE
 AUTOLATE_MAXSTACK
 ADMIN-PANEL
+UNFUCK_SPRAYCAN
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
