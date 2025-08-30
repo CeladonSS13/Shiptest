@@ -2,7 +2,7 @@
 	name = "shuttle component"
 	desc = "Something for shuttles."
 	density = TRUE
-	obj_integrity = 250
+	atom_integrity = 250
 	max_integrity = 250
 	// [CELADON-EDIT] - CELADON_BALANCE
 	// icon = 'icons/obj/shuttle.dmi' // CELADON-EDIT - ORIGINAL

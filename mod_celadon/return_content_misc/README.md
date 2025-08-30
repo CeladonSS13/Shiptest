@@ -14,6 +14,7 @@
 ID мода: RETURN_CONTENT_MISC
 
 RETURN_MINES_FIELD
+TRIBAL-CRAFT
 
 ### Описание мода
 
@@ -29,8 +30,11 @@ RETURN_MINES_FIELD
 -->
 
 ### Изменения *кор кода*
-- Отсутствуют
-
+TRIBAL-CRAFT
+- EDIT: `code/datums/components/crafting/recipes/clothing.dm`	: Добавление трайбл-крафтов
+- EDIT: `code/datums/components/crafting/recipes/misc.dm`		:
+- EDIT: `code/datums/components/crafting/recipes/weapon.dm`		: Выше ^
+- EDIT: `code/modules/clothing/outfits/factions/roumain.dm`		:
 ### Оверрайды
 
 - Отсутствуют

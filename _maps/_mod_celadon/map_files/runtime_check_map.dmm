@@ -1061,7 +1061,7 @@
 /turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/space)
 "cQ" = (
-/turf/open/floor/plating/dirt/icemoon,
+/turf/open/floor/plating/asteroid/dirt,
 /area/space)
 "cU" = (
 /turf/open/floor/plasteel/stairs/wood/birch,
@@ -1403,7 +1403,7 @@
 /turf/closed/wall/mineral/gold/yesdiag,
 /area/space)
 "in" = (
-/turf/open/floor/plating/grass/beach,
+/turf/open/floor/plating/asteroid/dirt/grass/beach,
 /area/space)
 "iq" = (
 /turf/open/space/basic,
@@ -3086,12 +3086,11 @@
 /obj/item/stack/medical/gauze/cyborg,
 /obj/item/stack/medical/ointment,
 /obj/item/stack/medical/suture,
-/obj/item/stack/medical/suture/medicated,
 /obj/item/stack/medical/mesh,
 /obj/item/stack/medical/mesh/advanced,
 /obj/item/stack/medical/aloe,
 /obj/item/stack/medical/splint,
-/obj/item/stack/medical/splint/ghetto,
+/obj/item/stack/medical/splint/hunter,
 /obj/item/stack/medical/bruise_pack/herb,
 /obj/item/stack/medical/ointment/herb,
 /obj/item/stack/rods,
@@ -3663,8 +3662,6 @@
 /obj/item/storage/pill_bottle,
 /obj/item/storage/bag/chemistry,
 /obj/item/storage/bag/bio,
-/obj/item/storage/firstaid/ancient,
-/obj/item/storage/firstaid/ancient/heirloom,
 /obj/item/storage/firstaid/fire,
 /obj/item/storage/firstaid/toxin,
 /obj/item/storage/pill_bottle/charcoal/less,
@@ -5342,9 +5339,6 @@
 "oo" = (
 /turf/open/floor/goonplaque,
 /area/space)
-"or" = (
-/turf/open/floor/plating/dirt/dry,
-/area/space)
 "os" = (
 /turf/open/space/basic,
 /area/outpost/fraction/nanotrasen)
@@ -5388,7 +5382,7 @@
 /turf/open/space/basic,
 /area/ruin/jungle/cavecrew/security)
 "pa" = (
-/turf/open/floor/plating/dirt/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/space)
 "pc" = (
 /turf/open/space/basic,
@@ -9818,7 +9812,7 @@
 /obj/structure/filler,
 /obj/structure/carp_rift,
 /obj/vehicle,
-/obj/vehicle/ridden/atv,
+/obj/effect/decal/cleanable/oil/slippery,
 /obj/vehicle/ridden/bicycle,
 /obj/vehicle/ridden/lavaboat,
 /obj/vehicle/ridden/lavaboat/dragon,
@@ -9862,7 +9856,7 @@
 /mob/living/simple_animal/sloth,
 /mob/living/simple_animal/hostile/retaliate/goat,
 /mob/living/simple_animal/chicken,
-/mob/living/simple_animal/cow,
+/mob/living/basic/cow,
 /mob/living/simple_animal/hostile/carp/cayenne,
 /mob/living/simple_animal/butterfly,
 /mob/living/simple_animal/hostile/retaliate/poison/snake,
@@ -10023,8 +10017,8 @@
 /mob/living/simple_animal/pet/dog/corgi/puppy/void,
 /mob/living/simple_animal/pet/dog/corgi/Lisa,
 /mob/living/simple_animal/hostile/retaliate/goat,
-/mob/living/simple_animal/cow,
-/mob/living/simple_animal/cow/wisdom,
+/mob/living/basic/cow,
+/mob/living/basic/cow,
 /mob/living/simple_animal/chick,
 /mob/living/simple_animal/chicken,
 /mob/living/simple_animal/hostile/retaliate/chicken,
@@ -10373,9 +10367,6 @@
 "qM" = (
 /turf/open/floor/plasteel/kitchen_coldroom/freezerfloor/freezer_grey,
 /area/space)
-"qO" = (
-/turf/open/floor/plating/dirt,
-/area/space)
 "qR" = (
 /turf/open/space/basic,
 /area/ship/bridge)
@@ -10491,7 +10482,7 @@
 /turf/open/floor/marble,
 /area/space)
 "st" = (
-/turf/open/floor/plating/grass/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/grass/rockplanet,
 /area/space)
 "sw" = (
 /turf/open/space/basic,
@@ -10613,9 +10604,6 @@
 "ul" = (
 /turf/open/space/basic,
 /area/outpost/medical/morgue)
-"un" = (
-/turf/open/floor/plating/dirt/old,
-/area/space)
 "up" = (
 /turf/open/floor/plasteel/patterned/ridged/rockplanet/lit,
 /area/space)
@@ -11253,7 +11241,7 @@
 /turf/open/space/basic,
 /area/ship/science)
 "Ey" = (
-/turf/open/floor/plating/dirt/jungle,
+/turf/open/floor/plating/asteroid/dirt/jungle,
 /area/space)
 "Ez" = (
 /turf/open/space/basic,
@@ -11364,9 +11352,6 @@
 "Gc" = (
 /turf/open/space/basic,
 /area/ruin/wasteplanet/wasteplanet_radiation/main)
-"Ge" = (
-/turf/open/floor/plating/dirt/dark,
-/area/space)
 "Gl" = (
 /turf/closed/indestructible/fakedoor,
 /area/space)
@@ -11452,7 +11437,7 @@
 /turf/open/floor/mineral/plastitanium/airless,
 /area/space)
 "HT" = (
-/turf/open/floor/plating/dirt/jungle/wasteland,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
 /area/space)
 "HX" = (
 /turf/open/space/basic,
@@ -12146,7 +12131,7 @@
 /turf/open/floor/plasteel/stairs/old,
 /area/space)
 "RG" = (
-/turf/open/floor/plating/dirt/jungle/dark,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
 /area/space)
 "RK" = (
 /turf/open/floor/concrete/wasteplanet/lit,
@@ -12926,9 +12911,9 @@
 /obj/effect/mob_spawn/human/corpse/damaged/legioninfested,
 /obj/effect/mob_spawn/human/corpse/damaged/whitesands,
 /obj/effect/mob_spawn/human/corpse/damaged/legioninfested/dwarf,
-/obj/effect/mob_spawn/human/corpse/damaged/whitesands/gunslinger,
-/obj/effect/mob_spawn/human/corpse/damaged/whitesands/hunter,
-/obj/effect/mob_spawn/human/corpse/damaged/whitesands/survivor,
+/obj/effect/mob_spawn/human/corpse/damaged/whitesands,
+/obj/effect/mob_spawn/human/corpse/damaged/whitesands,
+/obj/effect/mob_spawn/human/corpse/damaged/whitesands,
 /obj/effect/mob_spawn/human/corpse/assistant/beesease_infection,
 /obj/effect/mob_spawn/human/corpse/assistant/brainrot_infection,
 /obj/effect/mob_spawn/human/corpse/assistant/husked,
@@ -13168,7 +13153,7 @@
 /obj/effect/turf_decal/syndicateemblem,
 /obj/effect/turf_decal/techfloor,
 /obj/effect/turf_decal/trimline,
-/obj/effect/turf_decal/weather,
+/obj/effect/turf_decal/sand,
 /obj/effect/turf_decal/zoo,
 /obj/effect/warp_cube,
 /obj/effect/wind,
@@ -14444,7 +14429,7 @@ df
 KG
 WK
 nq
-Ge
+cQ
 gG
 wN
 mM
@@ -14496,7 +14481,7 @@ nR
 kX
 cX
 ZW
-qO
+cQ
 yz
 pk
 Xx
@@ -14548,7 +14533,7 @@ HC
 gO
 cC
 ri
-or
+cQ
 Jd
 Sr
 SQ
@@ -14808,7 +14793,7 @@ fO
 NC
 Uw
 kD
-un
+cQ
 rv
 Iy
 Ya
