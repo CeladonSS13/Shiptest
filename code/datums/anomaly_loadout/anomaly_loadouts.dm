@@ -294,6 +294,13 @@
 			"price" = 500,
 			"faction" = FALSE,
 		)
+		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/m13/wammo] = list(
+			"name" = "Model 13 \"Larker\" (.22LR)",
+			"desc" = "A common after-market modification of the Model 12 \"Sporter\" rifle, keyed to fire a three round burst.",
+			"price" = 750,
+			"faction" = FALSE,
+		)
+		
 		GLOB.anomaly_loadout_weaponoptions_indie[/obj/item/storage/guncase/m15/wammo] = list(
 			"name" = "Model 15 Super Sporter (5.56x42 CLIP)",
 			"desc" = "A popular semi-automatic hunting rifle produced by Serene Outdoors. Solid all-round performance, high accuracy, and ease of access compared to military rifles makes the Super Sporter a popular choice for hunting medium game and occasionally self-defense. Chambered in 5.56mm.",
@@ -695,10 +702,16 @@
 			"price" = 500,
 			"faction" = FALSE,
 	)
+	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/firstaid/medical] = list(
+			"name" = "\"MD\" medical aid kit",
+			"desc" = "A medkit for practicing Medical Doctors! Contains everything a standard first aid kit does, and some wound tending tools as well. Does NOT come with a health analyzer!",
+			"price" = 1100,
+			"faction" = FALSE,
+	)
 	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/firstaid/advanced] = list(
 			"name" = "advanced first aid kit",
 			"desc" = "An advanced kit to help deal with advanced wounds.",
-			"price" = 1100,
+			"price" = 700,
 			"faction" = FALSE,
 	)
 	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/firstaid/tactical] = list(
