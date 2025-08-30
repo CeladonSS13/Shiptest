@@ -199,9 +199,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/turf_decal/weather/snow{
-	dir = 1
-	},
 /obj/effect/turf_decal/snow,
 /turf/open/floor/plasteel/tech/techmaint{
 	initial_gas_mix = "ICEMOON_ATMOS"
@@ -347,7 +344,6 @@
 /area/ruin)
 "nI" = (
 /obj/effect/turf_decal/snow,
-/obj/effect/turf_decal/weather/snow,
 /turf/open/floor/plating{
 	icon_state = "platingdmg3";
 	initial_gas_mix = "ICEMOON_ATMOS"
@@ -630,9 +626,6 @@
 "wX" = (
 /obj/item/stack/cable_coil/cut/red,
 /obj/effect/turf_decal/snow,
-/obj/effect/turf_decal/weather/snow{
-	dir = 1
-	},
 /turf/open/floor/plating{
 	icon_state = "platingdmg3";
 	initial_gas_mix = "ICEMOON_ATMOS"
@@ -704,14 +697,6 @@
 	pixel_y = 0
 	},
 /area/ruin)
-"zq" = (
-/obj/effect/turf_decal/weather/snow,
-/obj/effect/turf_decal/snow,
-/turf/open/floor/plating{
-	icon_state = "platingdmg3";
-	initial_gas_mix = "ICEMOON_ATMOS"
-	},
-/area/overmap_encounter/planetoid/cave/explored)
 "zx" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/mechanical,
@@ -1176,16 +1161,6 @@
 /mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper,
 /turf/open/floor/plasteel/lightdark,
 /area/ruin)
-"SU" = (
-/obj/effect/turf_decal/weather/snow{
-	dir = 1
-	},
-/obj/effect/turf_decal/snow,
-/turf/open/floor/plating{
-	icon_state = "platingdmg3";
-	initial_gas_mix = "ICEMOON_ATMOS"
-	},
-/area/overmap_encounter/planetoid/cave/explored)
 "Tb" = (
 /obj/machinery/door/airlock/external,
 /turf/open/floor/plasteel/tech/grid,
@@ -2135,7 +2110,7 @@ DM
 ey
 ey
 YH
-SU
+aF
 wk
 AU
 gv
@@ -2165,7 +2140,7 @@ ey
 gv
 RX
 aF
-zq
+aF
 gv
 bZ
 oe
