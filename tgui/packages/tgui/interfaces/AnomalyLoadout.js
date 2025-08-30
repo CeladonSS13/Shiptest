@@ -107,7 +107,7 @@ export const AnomalyLoadout = (props, context) => {
               */}
               <Collapsible title="Weapons">
                 {weaponSlop.map(([key, item]) => (
-                    <Collapsible title={item.name} key={item.path}>
+                    <Collapsible title={item.name} key={item.path} style={{ margin: '2px', 'margin-left': '10px' }}>
                       <LabeledList>
                         <LabeledList.Item label="Description">
                           {item.desc}
@@ -134,7 +134,7 @@ export const AnomalyLoadout = (props, context) => {
               }
               <Collapsible title="Armor">
                 {armorSlop.map(([key, item]) => (
-                    <Collapsible title={item.name} key={item.path}>
+                    <Collapsible title={item.name} key={item.path} style={{ margin: '2px', 'margin-left': '10px' }}>
                       <LabeledList>
                         <LabeledList.Item label="Description">
                           {item.desc}
@@ -161,7 +161,7 @@ export const AnomalyLoadout = (props, context) => {
               }
               <Collapsible title="Shoes">
                 {dripSlop.map(([key, item]) => (
-                    <Collapsible title={item.name} key={item.path}>
+                    <Collapsible title={item.name} key={item.path} style={{ margin: '2px', 'margin-left': '10px' }}>
                       <LabeledList>
                         <LabeledList.Item label="Description">
                           {item.desc}
@@ -188,7 +188,7 @@ export const AnomalyLoadout = (props, context) => {
               }
               <Collapsible title="hats">
                 {hatsSlop.map(([key, item]) => (
-                    <Collapsible title={item.name} key={item.path}>
+                    <Collapsible title={item.name} key={item.path} style={{ margin: '2px', 'margin-left': '10px' }}>
                       <LabeledList>
                         <LabeledList.Item label="Description">
                           {item.desc}
@@ -215,7 +215,7 @@ export const AnomalyLoadout = (props, context) => {
               }
               <Collapsible title="utility">
                 {utilitySlop.map(([key, item]) => (
-                    <Collapsible title={item.name} key={item.path}>
+                    <Collapsible title={item.name} key={item.path} style={{ margin: '2px', 'margin-left': '10px' }}>
                       <LabeledList>
                         <LabeledList.Item label="Description">
                           {item.desc}
@@ -242,7 +242,7 @@ export const AnomalyLoadout = (props, context) => {
               }
               <Collapsible title="engineering">
                 {engineeringSlop.map(([key, item]) => (
-                    <Collapsible title={item.name} key={item.path}>
+                    <Collapsible title={item.name} key={item.path} style={{ margin: '2px', 'margin-left': '10px' }}>
                       <LabeledList>
                         <LabeledList.Item label="Description">
                           {item.desc}
@@ -269,7 +269,7 @@ export const AnomalyLoadout = (props, context) => {
               }
               <Collapsible title="medical">
                 {medicalSlop.map(([key, item]) => (
-                    <Collapsible title={item.name} key={item.path}>
+                    <Collapsible title={item.name} key={item.path} style={{ margin: '2px', 'margin-left': '10px' }}>
                       <LabeledList>
                         <LabeledList.Item label="Description">
                           {item.desc}
