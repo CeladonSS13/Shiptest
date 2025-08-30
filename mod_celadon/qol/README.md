@@ -18,6 +18,7 @@ FIX_LATHE
 AUTOLATE_MAXSTACK
 ADMIN-PANEL
 UNFUCK_SPRAYCAN
+BLOOD_EXAMINE
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -144,6 +145,9 @@ ADMIN-PANEL
 - ADD `code/modules/admin/admin_verbs.dm`			- Добавляет Админ панель в игру
 - ADD `code/modules/client/client_defines.dm` 		-
 - ADD `tgui/packages/tgui/interfaces/AdminVerbs.js` -
+
+BLOOD_EXAMINE
+- EDIT `code/datums/elements/decals/blood.dm` - Подстветка красным цветом кровавых предметов
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
