@@ -827,10 +827,11 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	if (callback) //call the original callback
 		. = callback.Invoke()
 	item_flags &= ~IN_INVENTORY
-	if(!pixel_y && !pixel_x && !(item_flags & NO_PIXEL_RANDOM_DROP))
-		pixel_x = rand(-8,8)
-		pixel_y = rand(-8,8)
-
+	var/matrix/M = matrix(transform)
+	M.Turn(rand(-360, 360))
+	transform = M
+	pixel_x = initial(pixel_x) + rand(-12, 12)
+	pixel_y = initial(pixel_y) + rand(-12, 12)
 
 /obj/item/proc/remove_item_from_storage(atom/newLoc) //please use this if you're going to snowflake an item out of a obj/item/storage
 	if(!newLoc)
