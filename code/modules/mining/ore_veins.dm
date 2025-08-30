@@ -118,6 +118,12 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	return ..()
 
 /obj/structure/vein/proc/begin_spawning()
+	// [CELADON-ADD] - CELADON_FIXES - FIXES_DRILLCLASS - Проверяем, не завершена ли миссия перед запуском спавна
+	if(istype(our_drill, /obj/machinery/drill/mission))
+		var/obj/machinery/drill/mission/mission_drill = our_drill
+		if(mission_drill.num_current >= mission_drill.num_wanted)
+			return
+	// [/CELADON-ADD]
 	currently_spawning = TRUE
 	START_PROCESSING(SSprocessing, src)
 
@@ -132,6 +138,17 @@ GLOBAL_LIST_EMPTY(ore_veins)
 /obj/structure/vein/process(seconds_per_tick)
 	if(!currently_spawning)
 		return
+	// [CELADON-ADD] - CELADON_FIXES - FIXES_DRILLCLASS - Проверяем, существует ли бур
+	if(!our_drill || QDELETED(our_drill))
+		stop_spawning()
+		return
+	// Дополнительная проверка для буров миссии
+	if(istype(our_drill, /obj/machinery/drill/mission))
+		var/obj/machinery/drill/mission/mission_drill = our_drill
+		if(mission_drill.num_current >= mission_drill.num_wanted)
+			stop_spawning()
+			return
+	// [/CELADON-ADD]
 	try_spawning_spawner()
 
 /obj/structure/vein/proc/try_spawning_spawner()
@@ -169,9 +186,21 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	return spawning_tile
 
 /obj/structure/vein/proc/increment_wave_tally()
-	if(!our_drill || !our_drill.active)
+	// [CELADON-EDIT] - CELADON_FIXES - FIXES_DRILLCLASS - Добавлена проверка QDELETED для защиты от удаленных буров
+	//if(!our_drill || !our_drill.active)
+	//	wave_tally = 0
+	//	return TRUE
+	if(!our_drill || QDELETED(our_drill) || !our_drill.active)
 		wave_tally = 0
 		return TRUE
+
+	// Проверяем, не завершена ли миссия (для буров миссии)
+	if(istype(our_drill, /obj/machinery/drill/mission))
+		var/obj/machinery/drill/mission/mission_drill = our_drill
+		if(mission_drill.num_current >= mission_drill.num_wanted)
+			wave_tally = 0
+			return FALSE
+	// [/CELADON-EDIT]
 	wave_tally += 1
 	if(wave_tally > waves_per_break)
 		wave_tally = 0
@@ -280,6 +309,11 @@ GLOBAL_LIST_EMPTY(ore_veins)
 /obj/structure/vein/classfour
 	mining_charges = 30
 	vein_class = 4
+	// [CELADON-ADD] - CELADON_FIXES - FIXES_DRILLCLASS - Балансировка жил класса 4
+	max_mobs = 4				// Сбалансированное количество мобов (было 6)
+	spawn_time = 12 SECONDS		// Увеличенный интервал спавна (было 8)
+	wave_length = 30 SECONDS	// Уменьшено для более динамичной миссии (было 45)
+	// [/CELADON-ADD]
 //
 // Ice planets
 
@@ -369,8 +403,11 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		/obj/item/stack/ore/bluespace_crystal = 4,
 		/obj/item/stack/ore/ice = 8,
 		)
-	max_mobs = 6
-	spawn_time = 8 SECONDS
+	// [CELADON-ADD] - CELADON_FIXES - FIXES_DRILLCLASS - Балансировка жил класса 4 (Ice)
+	max_mobs = 4				// Уменьшено с 6 до 4
+	spawn_time = 12 SECONDS		// Увеличено с 8 до 12 секунд
+	wave_length = 30 SECONDS	// Уменьшено с 45 до 30 секунд для более динамичной миссии
+	// [/CELADON-ADD]
 //Jungle
 
 /obj/structure/vein/jungle
@@ -605,6 +642,11 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		/obj/item/stack/ore/diamond = 5,
 		/obj/item/stack/ore/bluespace_crystal = 4,
 		)
+	// [CELADON-EDIT] - CELADON_FIXES - Балансировка жил класса 4 (Rockplanet)
+	max_mobs = 4              // Сбалансированное количество мобов (было 6)
+	spawn_time = 12 SECONDS   // Увеличенный интервал спавна (было 8)
+	wave_length = 30 SECONDS  // Уменьшено для более динамичной миссии (было 45)
+	// [/CELADON-EDIT]
 
 //moons, have a dupe of asteroid but less of an emphasis on  goliaths
 

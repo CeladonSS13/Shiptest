@@ -80,7 +80,9 @@
 /turf/closed/wall/mineral/titanium/interior,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "ar" = (
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 2
+	},
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
@@ -111,7 +113,9 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/machinery/power/smes/shuttle,
+/obj/machinery/power/smes/shuttle{
+	dir = 2
+	},
 /obj/structure/cable{
 	icon_state = "0-1"
 	},
@@ -124,7 +128,9 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/machinery/power/smes/shuttle,
+/obj/machinery/power/smes/shuttle{
+	dir = 2
+	},
 /obj/structure/cable{
 	icon_state = "0-1"
 	},
@@ -271,29 +277,22 @@
 /area/ruin/space/has_grav/derelictoutpost/powerstorage)
 "bb" = (
 /obj/machinery/power/smes,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/powerstorage)
 "bc" = (
 /obj/structure/table,
 /obj/item/stock_parts/cell/hyper,
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/powerstorage)
 "bd" = (
-/obj/machinery/power/smes,
-/obj/structure/cable{
-	icon_state = "0-8"
+/obj/structure/alien/weeds{
+	color = "#4BAE56";
+	desc = "A thick gelatinous surface covers the floor.  Someone get the golashes.";
+	name = "gelatinous floor"
 	},
-/turf/open/floor/plasteel,
-/area/ruin/space/has_grav/derelictoutpost/powerstorage)
+/obj/effect/gibspawner/human/bodypartless,
+/turf/open/floor/plating/asteroid/smoothed,
+/area/ruin/space/has_grav/derelictoutpost)
 "be" = (
 /obj/structure/alien/weeds{
 	color = "#4BAE56";
@@ -422,6 +421,9 @@
 "br" = (
 /obj/machinery/power/terminal{
 	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
 	},
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/powerstorage)
@@ -1263,6 +1265,7 @@
 	icon_state = "trails_1";
 	name = "dried blood trail"
 	},
+/obj/effect/gibspawner/human/bodypartless,
 /turf/open/floor/plating/asteroid/smoothed,
 /area/ruin/space/has_grav/derelictoutpost)
 "dp" = (
@@ -1833,6 +1836,7 @@
 /obj/effect/turf_decal/corner/opaque/red{
 	dir = 8
 	},
+/obj/item/storage/box/ammo/c45,
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/derelictoutpost)
 "kC" = (
@@ -1862,6 +1866,15 @@
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/cargostorage)
+"nj" = (
+/obj/structure/alien/weeds{
+	color = "#4BAE56";
+	desc = "A thick gelatinous surface covers the floor.  Someone get the golashes.";
+	name = "gelatinous floor"
+	},
+/obj/item/storage/box/ammo/a12g_buckshot,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/derelictoutpost)
 "of" = (
 /obj/structure/closet/crate,
 /obj/item/pda/clear,
@@ -1942,6 +1955,11 @@
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/cargostorage)
+"wZ" = (
+/obj/structure/table,
+/obj/structure/extinguisher_cabinet/directional/west,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/derelictoutpost/cargobay)
 "xA" = (
 /obj/structure/closet/crate/engineering,
 /obj/item/multitool,
@@ -2001,12 +2019,45 @@
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/cargobay)
+"BX" = (
+/obj/structure/alien/weeds{
+	color = "#4BAE56";
+	desc = "A thick gelatinous surface covers the floor.  Someone get the golashes.";
+	name = "gelatinous floor"
+	},
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/open/floor/mineral/titanium/blue,
+/area/ruin/space/has_grav/derelictoutpost/dockedship)
+"CW" = (
+/obj/structure/alien/weeds{
+	color = "#4BAE56";
+	desc = "A thick gelatinous surface covers the floor.  Someone get the golashes.";
+	name = "gelatinous floor"
+	},
+/obj/effect/decal/cleanable/blood/old{
+	dir = 8;
+	icon_state = "trails_1";
+	name = "dried blood trail"
+	},
+/obj/effect/decal/remains/human,
+/turf/open/floor/plating/asteroid/smoothed,
+/area/ruin/space/has_grav/derelictoutpost)
 "Dm" = (
 /obj/structure/closet/crate/medical,
 /obj/item/storage/firstaid/regular,
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/cargostorage)
+"DS" = (
+/obj/structure/alien/weeds{
+	color = "#4BAE56";
+	desc = "A thick gelatinous surface covers the floor.  Someone get the golashes.";
+	name = "gelatinous floor"
+	},
+/obj/effect/decal/cleanable/blood/old,
+/obj/item/storage/box/ammo/c45,
+/turf/open/floor/plating/asteroid/smoothed,
+/area/ruin/space/has_grav/derelictoutpost)
 "Ei" = (
 /obj/structure/closet/crate,
 /obj/item/storage/pill_bottle/stimulant,
@@ -2021,10 +2072,19 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/cargostorage)
 "EZ" = (
-/obj/structure/extinguisher_cabinet/directional/north,
-/obj/effect/turf_decal/industrial/hatch/yellow,
-/turf/open/floor/plasteel,
-/area/ruin/space/has_grav/derelictoutpost/cargobay)
+/obj/effect/turf_decal/corner/opaque/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/red,
+/obj/effect/turf_decal/corner/opaque/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/corner/opaque/red{
+	dir = 8
+	},
+/obj/item/melee/knife/combat,
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/derelictoutpost)
 "FV" = (
 /obj/structure/closet/crate/engineering,
 /obj/item/storage/toolbox/mechanical,
@@ -2033,6 +2093,15 @@
 	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
+"FW" = (
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/derelictoutpost/powerstorage)
 "HN" = (
 /obj/machinery/door/poddoor{
 	id = "bigderelictshipdock"
@@ -2040,6 +2109,15 @@
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/derelictoutpost/cargobay)
+"In" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/derelictoutpost/powerstorage)
 "Ir" = (
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced{
@@ -2164,6 +2242,15 @@
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/cargostorage)
+"ZS" = (
+/obj/structure/alien/weeds{
+	color = "#4BAE56";
+	desc = "A thick gelatinous surface covers the floor.  Someone get the golashes.";
+	name = "gelatinous floor"
+	},
+/obj/item/gun/ballistic/shotgun/brimstone/empty,
+/turf/open/floor/plating/asteroid/smoothed,
+/area/ruin/space/has_grav/derelictoutpost)
 
 (1,1,1) = {"
 aa
@@ -2321,7 +2408,7 @@ aC
 aC
 aA
 bc
-bs
+In
 bs
 bZ
 cp
@@ -2356,8 +2443,8 @@ ad
 aC
 aC
 aA
-bd
-br
+bb
+FW
 bJ
 ca
 cq
@@ -2424,10 +2511,10 @@ af
 ai
 al
 ap
-aw
+wZ
 aw
 WJ
-EZ
+Rk
 aJ
 az
 bK
@@ -2572,7 +2659,7 @@ ax
 aE
 aO
 aO
-be
+BX
 bu
 be
 at
@@ -3005,7 +3092,7 @@ aa
 aa
 aY
 aK
-Xq
+EZ
 Oy
 Ir
 cz
@@ -3445,7 +3532,7 @@ bF
 bF
 ci
 bF
-bl
+nj
 bF
 bl
 cm
@@ -3481,7 +3568,7 @@ cR
 cm
 dm
 cm
-dD
+DS
 cm
 cm
 cm
@@ -3515,9 +3602,9 @@ aZ
 cE
 cR
 cm
-dn
+CW
 du
-cR
+ZS
 dt
 cR
 cR
@@ -3552,7 +3639,7 @@ cF
 cS
 cZ
 do
-cR
+bd
 cm
 cm
 dR

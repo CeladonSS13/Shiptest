@@ -71,7 +71,7 @@
 	icon_state = "jungle"
 	// color = COLOR_LIME
 	mapgen = /datum/map_generator/planet_generator/jungle/night
-	default_baseturf = /turf/open/floor/plating/dirt/jungle
+	default_baseturf = /turf/open/floor/plating/asteroid/dirt/jungle
 	gravity = STANDARD_GRAVITY
 	weather_controller_type = /datum/weather_controller/lush
 	ruin_type = RUINTYPE_JUNGLE

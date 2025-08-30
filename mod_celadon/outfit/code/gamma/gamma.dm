@@ -11,7 +11,7 @@
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hard_suit/overlay/gammaerthead.dmi'
 	icon_state = "gamma_vision"
 	item_state = "gamma_vision"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 30, "energy" = 25, "bomb" = 50, "bio" = 100, "fire" = 40, "acid" = 50)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 30, "energy" = 25, "bomb" = 50, "bio" = 100, "fire" = 40, "acid" = 50, "wound" = 30)
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
 	clothing_flags = STOPSPRESSUREDAMAGE
 	resistance_flags = FIRE_PROOF | ACID_PROOF
@@ -64,7 +64,7 @@
 	icon_state = "hardsuit0-gamma"
 	item_state = "hardsuit1-gamma"
 	hardsuit_type = "gamma"
-	armor = list("melee" = 35, "bullet" = 25, "laser" = 20,"energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
+	armor = list("melee" = 35, "bullet" = 25, "laser" = 20,"energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75, "wound" = 20)
 
 /obj/item/clothing/suit/space/hardsuit/security/gamma/white_squadron_rig
 	name = "white squadron rig"
@@ -74,7 +74,7 @@
 	icon_state = "white_squadron_rig"
 	item_state = "white_squadron_rig"
 	hardsuit_type = "gamma"
-	armor = list("melee" = 35, "bullet" = 25, "laser" = 20,"energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
+	armor = list("melee" = 35, "bullet" = 25, "laser" = 20,"energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75, "wound" = 20)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security/gamma/white_squadron_rig
 
 /obj/item/clothing/suit/armor/vest/gamma
@@ -84,7 +84,7 @@
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/gammauniform.dmi'
 	icon_state = "white_squadron_jacket"
 	item_state = "white_squadron_jacket"
-	armor = list("melee" = 38, "bullet" = 33, "laser" = 33, "energy" = 43, "bomb" = 28, "bio" = 3, "rad" = 3, "fire" = 53, "acid" = 53)
+	armor = list("melee" = 38, "bullet" = 33, "laser" = 33, "energy" = 43, "bomb" = 28, "bio" = 3, "rad" = 3, "fire" = 53, "acid" = 53, "wound" = 10)
 
 /obj/item/clothing/under/gamma/uniform
 	name = "Комбенизон ГАММЫ"
@@ -158,5 +158,5 @@
 	w_class = WEIGHT_CLASS_SMALL
 	block_chance = 60
 	armour_penetration = 20
-	sharpness = IS_SHARP
+	sharpness = SHARP_EDGED
 	attack_verb = list("slashed", "cut")
