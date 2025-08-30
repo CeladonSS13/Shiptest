@@ -10,7 +10,7 @@
 /datum/quirk/drunkhealing/on_process(seconds_per_tick)
 	var/mob/living/carbon/C = quirk_holder
 	// Whitesands Start - Prevent Prosthetic healing from liquor
-	switch(C.drunkenness)
+	switch(C.get_drunk_amount())
 		if (6 to 40)
 			C.adjustBruteLoss(-0.1*seconds_per_tick, FALSE, FALSE, BODYTYPE_ORGANIC)
 			C.adjustFireLoss(-0.05*seconds_per_tick, FALSE, FALSE, BODYTYPE_ORGANIC)

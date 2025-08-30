@@ -184,7 +184,7 @@
 	id = "Daggerfall_turrets"
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
+/area/ship/crew)
 "cc" = (
 /obj/effect/turf_decal/corner/opaque/ntblue/border{
 	dir = 10
@@ -596,7 +596,7 @@
 	width = 30
 	},
 /turf/template_noop,
-/area/space)
+/area/template_noop)
 "iX" = (
 /obj/effect/turf_decal/ntspaceworks_small/right{
 	dir = 4
@@ -829,7 +829,7 @@
 	id = "Daggerfall_turrets"
 	},
 /turf/closed/wall/mineral/titanium/exterior,
-/area/ship/bridge)
+/area/ship/engineering)
 "lB" = (
 /obj/effect/turf_decal/trimline/opaque/deforestblue/line{
 	dir = 10
@@ -940,6 +940,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
+"mQ" = (
+/obj/machinery/porta_turret/ship/nt/pulse{
+	dir = 6;
+	id = "Daggerfall_turrets"
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/medical)
 "ni" = (
 /obj/effect/turf_decal/corner/opaque/ntblue/border{
 	dir = 6
@@ -1148,7 +1155,7 @@
 	id = "Daggerfall_turrets"
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
+/area/ship/engineering)
 "qk" = (
 /turf/open/floor/suns/hatch/walnut,
 /area/ship/crew)
@@ -2046,7 +2053,7 @@
 	id = "skybreaker_turrets"
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
+/area/ship/crew)
 "zW" = (
 /obj/effect/turf_decal/trimline/opaque/beige/line{
 	dir = 6
@@ -2949,7 +2956,7 @@
 	id = "Daggerfall_turrets"
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
+/area/ship/medical)
 "Lx" = (
 /obj/machinery/computer/helm{
 	dir = 8
@@ -3042,7 +3049,7 @@
 	},
 /obj/effect/turf_decal/corner/opaque/ntblue/half,
 /turf/closed/wall/mineral/titanium/exterior,
-/area/ship/bridge)
+/area/ship/engineering/electrical)
 "Mu" = (
 /obj/effect/turf_decal/trimline/opaque/pink/corner{
 	dir = 1
@@ -3470,7 +3477,8 @@
 	dir = 1
 	},
 /obj/machinery/power/apc/auto_name/directional/south{
-	pixel_x = 6
+	pixel_x = 6;
+	pixel_y = -29
 	},
 /obj/effect/turf_decal/trimline/opaque/nsorange/line,
 /turf/open/floor/plasteel/heavymetal,
@@ -3804,7 +3812,7 @@
 	id = "Daggerfall_turrets"
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
+/area/ship/engineering/electrical)
 "Uz" = (
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
 	id = "KaU_Ang"
@@ -5150,7 +5158,7 @@ AC
 zB
 vM
 AC
-qa
+mQ
 ck
 ck
 ck
