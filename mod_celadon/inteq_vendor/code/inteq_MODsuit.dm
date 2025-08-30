@@ -78,7 +78,7 @@
 /obj/item/mod/module/shield/on_activation()
 	RegisterSignal(device, COMSIG_MOD_SHIELD_DESTROYED, PROC_REF(on_deactivation))
 	playsound(loc, 'sound/weapons/saberon.ogg', 35, TRUE)
-	device.obj_integrity = change_integrity(device)
+	device.atom_integrity = change_integrity(device)
 	var/power_to_drain = (device.max_integrity - change_integrity(device)) * 5 //So that we drain 5 power per RESTORED integrity
 	drain_power(power_to_drain)
 	. = ..()
@@ -93,9 +93,9 @@
 
 /obj/item/mod/module/shield/proc/change_integrity(obj/item/shield/riot/mod/shield)
 	var/restored_integrity = ((world.time - start_time) * 5) / 10 //So we regenerate 5 integrity per
-	if(shield.obj_integrity + restored_integrity >= shield.max_integrity) //So we don't return an object with 200 integrity with a 100 max
+	if(shield.atom_integrity + restored_integrity >= shield.max_integrity) //So we don't return an object with 200 integrity with a 100 max
 		return shield.max_integrity
-	return shield.obj_integrity + restored_integrity
+	return shield.atom_integrity + restored_integrity
 
 
 /obj/item/mod/module/shield/proc/update_shield(shield_integrity)
@@ -127,19 +127,20 @@
 	integrity_failure = -10000
 
 /obj/item/shield/riot/mod/emp_act(severity)
-	obj_integrity = 1
-	SEND_SIGNAL(src, COMSIG_MOD_SHIELD_DESTROYED, obj_integrity)
+	atom_integrity = 1
+	SEND_SIGNAL(src, COMSIG_MOD_SHIELD_DESTROYED, atom_integrity)
 	. = ..()
 
 
-/obj/item/shield/riot/mod/obj_destruction()
+/obj/item/shield/riot/mod/atom_destruction()
+	SHOULD_CALL_PARENT(FALSE)
 	playsound(loc, shield_break_sound, 35)
 	new shield_break_leftover(get_turf(src))
 	if(isliving(loc))
 		loc.balloon_alert(loc, "Shield's down!")
-	obj_integrity = 1
+	atom_integrity = 1
 	broken = FALSE
-	var/shield_integrity = obj_integrity
+	var/shield_integrity = atom_integrity
 	SEND_SIGNAL(src, COMSIG_MOD_SHIELD_DESTROYED, shield_integrity)
 
 
