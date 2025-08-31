@@ -99,7 +99,7 @@ export const SoundPanelSettings = (props, context) => {
             onClick={() => act('ship_ambience')}
           />
         </Section>
-        <Section title="Педальное">
+        <Section title="Административное">
           <Button
             icon={adminhelp ? 'volume-up' : 'volume-mute'}
             color={adminhelp ? 'green' : 'transparent'}

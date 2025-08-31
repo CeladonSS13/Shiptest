@@ -44,7 +44,7 @@ export const ChatSettingsPanel = (props, context) => {
     <Window title="Настройка чата" width={250} height={400}>
       <Window.Content scrollable>
         <Section title="Основное">
-          {chat.map((a) => (
+          {ghost.map((a) => (
             <Button
               fluid
               key={a.key}
@@ -55,8 +55,8 @@ export const ChatSettingsPanel = (props, context) => {
             />
           ))}
         </Section>
-        <Section title="Призрак">
-          {ghost.map((a) => (
+        <Section title="Глобальное">
+          {chat.map((a) => (
             <Button
               fluid
               key={a.key}
