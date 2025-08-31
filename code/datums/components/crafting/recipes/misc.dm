@@ -141,24 +141,35 @@
 	result = /obj/item/reagent_containers/glass/filter
 	category = CAT_MISC
 
-/datum/crafting_recipe/splint
-	name = "Makeshift Splint"
+/datum/crafting_recipe/huntersplint
+	name = "Hunter Splint"
+	result = /obj/item/stack/medical/splint/hunter
+	time = 30
 	reqs = list(
-			/obj/item/stack/rods = 2,
-			/obj/item/stack/sheet/cotton/cloth = 4)
-	result = /obj/item/stack/medical/splint/ghetto
+		/obj/item/stack/sheet/bone = 2,
+		/obj/item/stack/sheet/sinew = 1
+	)
 	category = CAT_MISC
-// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
-// /datum/crafting_recipe/replacement_structure
-// 	name = "Structure Repair Kit"
-// 	tools = list(TOOL_SCREWDRIVER, TOOL_WIRECUTTER) //hole punching and scissors
-// 	reqs = list(
-// 			/obj/item/stack/rods = 3,
-// 			/obj/item/stack/sheet/mineral/titanium = 1,
-// 			/obj/item/stack/cable_coil = 2)
-// 	result = /obj/item/stack/medical/structure
-// 	category = CAT_MISC
-// [/CELADON-REMOVE]
+
+/datum/crafting_recipe/improvsplintwood
+	name = "Improvised Wooden Splint"
+	result = /obj/item/stack/medical/splint/improvised
+	time = 30
+	reqs = list(
+		/obj/item/stack/sheet/mineral/wood = 2,
+		/obj/item/stack/sheet/cotton/cloth = 2,
+	)
+	category = CAT_MISC
+
+/datum/crafting_recipe/improvsplintrods
+	name = "Improvised Metal Splint"
+	result = /obj/item/stack/medical/splint/improvised_metal
+	time = 30
+	reqs = list(
+		/obj/item/stack/rods = 4,
+		/obj/item/stack/sheet/cotton/cloth = 2,
+	)
+	category = CAT_MISC
 
 /datum/crafting_recipe/portableseedextractor
 	name = "Portable seed extractor"
@@ -245,3 +256,26 @@
 		/datum/reagent/toxin/coffeepowder = 10,
 	)
 	category = CAT_MISC
+
+// [CELADON-ADD] - TRIBAL-CRAFT
+/datum/crafting_recipe/headpike
+	name = "Spike Head (Glass Spear)"
+	time = 65
+	reqs = list(/obj/item/melee/spear = 1,
+				/obj/item/bodypart/head = 1)
+	parts = list(/obj/item/bodypart/head = 1,
+			/obj/item/melee/spear = 1)
+	blacklist = list(/obj/item/melee/spear/explosive, /obj/item/melee/spear/bone)
+	result = /obj/structure/headpike
+	category = CAT_MISC
+
+/datum/crafting_recipe/headpikebone
+	name = "Spike Head (Bone Spear)"
+	time = 65
+	reqs = list(/obj/item/melee/spear/bone = 1,
+				/obj/item/bodypart/head = 1)
+	parts = list(/obj/item/bodypart/head = 1,
+			/obj/item/melee/spear/bone = 1)
+	result = /obj/structure/headpike/bone
+	category = CAT_MISC
+// [/CELADON-ADD]

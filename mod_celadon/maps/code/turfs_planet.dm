@@ -33,9 +33,9 @@
 	pixel_x = -9
 	pixel_y = -9
 
-/turf/open/floor/plating/grass/lava/purple/plasma_gaint
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland/plasma_gaint
 	initial_gas_mix = PLASMA_GIANT_ATMOS
-	baseturfs = /turf/open/floor/plating/grass/lava/purple/plasma_gaint
+	baseturfs = /turf/open/floor/plating/asteroid/dirt/grass/lavaland/plasma_gaint
 	icon = 'icons/turf/floors/lava_grass_purple.dmi'
 	smooth_icon = 'icons/turf/floors/lava_grass_purple.dmi'
 

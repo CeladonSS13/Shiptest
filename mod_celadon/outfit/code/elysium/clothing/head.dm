@@ -92,7 +92,7 @@
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/space_suit/overlay/el_space.dmi'
 	icon_state = "space_elysium"
 	mob_overlay_state = "space_elysium"
-	armor = list("melee" = 20, "bullet" = 15, "laser" = 15, "energy" = 20, "bomb" = 35, "bio" = 100, "rad" = 75, "fire" = 50, "acid" = 100)
+	armor = list("melee" = 20, "bullet" = 15, "laser" = 15, "energy" = 20, "bomb" = 35, "bio" = 100, "rad" = 75, "fire" = 50, "acid" = 100, "wound" = 20)
 
 /// CentCom Elyzium
 /obj/item/clothing/head/turban_elysium

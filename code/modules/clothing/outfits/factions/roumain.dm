@@ -10,6 +10,7 @@
 	if(visualsOnly)
 		return
 	var/list/crafting_recipe_types = list(
+		/datum/crafting_recipe/crystalamulet,	// [CELADON-ADD] - TRIBAL-CRAFT
 		/datum/crafting_recipe/bonespear,
 		/datum/crafting_recipe/boneaxe
 	)
