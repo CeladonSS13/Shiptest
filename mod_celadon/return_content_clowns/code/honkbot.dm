@@ -194,7 +194,7 @@ Maintenance panel panel is [open ? "opened" : "closed"]"},
 		if(ishuman(C))
 			C.stuttering = 20
 			C.adjustEarDamage(0, 5) //far less damage than the H.O.N.K.
-			C.set_jitter(50)
+			C.set_timed_status_effect(50 SECONDS, /datum/status_effect/jitter, only_if_higher = TRUE)
 			C.Paralyze(60)
 			var/mob/living/carbon/human/H = C
 			if(client) //prevent spam from players..

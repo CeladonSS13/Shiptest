@@ -71,7 +71,7 @@
 	desc = "A reinforced EVA space suits with an armor vest attached to it. It has lots of abrasion marks and places where the paint has peeled off, this space suit has definetly seen much. It has Republic of Elysium flag armbands on the left arm and leg."
 	icon_state = "space_elysium"
 	mob_overlay_state = "space_elysium"
-	armor = list("melee" = 30, "bullet" = 20, "laser" = 30, "energy" = 30, "bomb" = 20, "bio" = 50, "rad" = 60, "fire" = 60, "acid" = 75)
+	armor = list("melee" = 30, "bullet" = 20, "laser" = 30, "energy" = 30, "bomb" = 20, "bio" = 50, "rad" = 60, "fire" = 60, "acid" = 75, "wound" = 20)
 	slowdown = 0.5
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals, /obj/item/melee/skimitar, /obj/item/gun)
 

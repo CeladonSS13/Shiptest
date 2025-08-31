@@ -30,7 +30,7 @@
 	name = "Scientific Hardsuit Crate"
 	desc = "Contains one science hardsuit, designed to provide safety under advanced experimental conditions, or while handling explosives."
 	cost = 2000
-	contains = list(/obj/item/clothing/suit/space/hardsuit/rd)
+	contains = list(/obj/item/clothing/suit/space/hardsuit/bomb)
 	crate_name = "scientific hardsuit crate"
 	crate_type = /obj/structure/closet/crate/secure/science
 

@@ -19,7 +19,7 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/exo/large
 	body_parts_covered = CHEST | GROIN | ARMS
 	supports_variations = DIGITIGRADE_VARIATION
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 40, "energy" = 50, "bomb" = 35, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 60)
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 40, "energy" = 50, "bomb" = 35, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 60, "wound" = 10)
 	togglename = "centcom"
 
 /obj/item/clothing/suit/toggle/armor/hos_formal
@@ -31,7 +31,7 @@
 	item_state = "hosformal"
 	body_parts_covered = CHEST | GROIN | ARMS
 	supports_variations = DIGITIGRADE_VARIATION
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 90)
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 90, "wound" = 10)
 	togglename = "hosformal"
 
 /obj/item/clothing/suit/toggle/armor/captains_formal
@@ -44,6 +44,6 @@
 	item_state = "capformal"
 	body_parts_covered = CHEST | GROIN | ARMS
 	supports_variations = DIGITIGRADE_VARIATION
-	armor = list("melee" = 35, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	armor = list("melee" = 35, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 10)
 	togglename = "capformal"
 
