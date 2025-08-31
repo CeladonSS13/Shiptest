@@ -92,7 +92,7 @@
 
 
 /obj/item/mod/module/shield/proc/change_integrity(obj/item/shield/riot/mod/shield)
-	var/restored_integrity = ((world.time - start_time) * 5) / 10 //So we regenerate 5 integrity per
+	var/restored_integrity = ((world.time - start_time) * 10) / 10 //So we regenerate 10 integrity per second
 	if(shield.atom_integrity + restored_integrity >= shield.max_integrity) //So we don't return an object with 200 integrity with a 100 max
 		return shield.max_integrity
 	return shield.atom_integrity + restored_integrity
@@ -120,11 +120,11 @@
 	slowdown = 0.3
 	var/shield_break_sound = 'sound/effects/sparks1.ogg'
 	var/shield_break_leftover = /obj/effect/particle_effect/sparks
-	max_integrity = 150
+	max_integrity = 350
 	broken_shield = FALSE
 	braking_sound = 'sound/effects/sparks1.ogg'
 	braking_alert = "Shield's down!"
-	integrity_failure = -10000
+	integrity_failure = -10000 // So it doesn't become broken
 
 /obj/item/shield/riot/mod/emp_act(severity)
 	atom_integrity = 1
