@@ -2,8 +2,22 @@ import { useBackend } from '../backend';
 import { Button, Section } from '../components';
 import { Window } from '../layouts';
 
+interface SoundSetting {
+  adminhelp: boolean;
+  midi: boolean;
+  ambience: boolean;
+  copyrighted: boolean;
+  lobby: boolean;
+  instruments: boolean;
+  ship_ambience: boolean;
+  prayers: boolean;
+  announcements: boolean;
+  endofround: boolean;
+  jukebox: boolean;
+}
+
 export const SoundPanelSettings = (props, context) => {
-  const { act, data } = useBackend(context);
+  const { act, data } = useBackend<SoundSetting>(context);
   const {
     adminhelp,
     midi,

@@ -2,8 +2,20 @@ import { useBackend } from '../backend';
 import { Section, Button } from '../components';
 import { Window } from '../layouts';
 
+interface ChatSetting {
+  key: string;
+  desc: string;
+  enabled: boolean;
+  type: string;
+}
+
+interface Data {
+  ghost?: ChatSetting[];
+  chat?: ChatSetting[];
+}
+
 export const ChatSettingsPanel = (props, context) => {
-  const { act, data } = useBackend(context);
+  const { act, data } = useBackend<Data>(context);
   const ghostPreSort = data.ghost || [];
   const ghost = ghostPreSort.sort((a, b) => {
     const descA = a.desc.toLowerCase();
