@@ -1,5 +1,5 @@
 ///from base of [/atom/proc/update_integrity]: (old_value, new_value)
-#define COMSIG_ATOM_INTEGRITY_CHANGED "atom_integrity_changed"
+//#define COMSIG_ATOM_INTEGRITY_CHANGED "atom_integrity_changed"
 
 /**
  * Checks whether the target turf is in a valid state to accept a directional construction
