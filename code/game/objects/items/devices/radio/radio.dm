@@ -501,32 +501,38 @@
 // Можно купить в карго
 /obj/item/radio/transceiver/nanotrasen
 	name = "nanotrasen transceiver"
+	icon_state = "walkietalkie_nt"
 	frequency = FREQ_NANOTRASEN
 	keyslot = /obj/item/encryptionkey/nanotrasen
 
 /obj/item/radio/transceiver/syndicate
 	name = "syndicate transceiver"
+	icon_state = "walkietalkie_syndi"
 	frequency = FREQ_SYNDICATE
 	keyslot = /obj/item/encryptionkey/syndicate
 
 /obj/item/radio/transceiver/solfed
 	name = "solfed transceiver"
+	icon_state = "walkietalkie_sf"
 	frequency = FREQ_SOLFED
 	keyslot = /obj/item/encryptionkey/solgov
 
 /obj/item/radio/transceiver/inteq
 	name = "inteq transceiver"
+	icon_state = "walkietalkie_inteq"
 	frequency = FREQ_INTEQ
 	keyslot = /obj/item/encryptionkey/inteq
 
 // Не встречаются в игре, нельзя найти
 /obj/item/radio/transceiver/pirate
 	name = "unidentified transceiver"
+	icon_state = "walkietalkie_pirate"
 	frequency = FREQ_PIRATE
 	keyslot = /obj/item/encryptionkey/pirate
 
 /obj/item/radio/transceiver/elysium
 	name = "elysium transceiver"
+	icon_state = "walkietalkie_eusm"
 	frequency = FREQ_ELYSIUM
 	keyslot = /obj/item/encryptionkey/pgf
 
