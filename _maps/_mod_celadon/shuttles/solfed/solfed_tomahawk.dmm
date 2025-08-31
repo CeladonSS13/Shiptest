@@ -954,12 +954,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
-"nf" = (
-/obj/machinery/vending/wallmed{
-	pixel_y = 5
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/medical)
 "nh" = (
 /obj/structure/table/wood,
 /obj/item/toy/cards/deck{
@@ -3695,6 +3689,9 @@
 /obj/effect/turf_decal/corner/opaque/cybersunteal/border,
 /obj/structure/table/glass,
 /obj/item/storage/case/surgery,
+/obj/machinery/vending/wallmed{
+	pixel_y = -27
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "PS" = (
@@ -5236,7 +5233,7 @@ En
 Zf
 Zg
 Py
-nf
+En
 PX
 "}
 (22,1,1) = {"
