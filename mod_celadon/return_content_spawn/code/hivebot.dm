@@ -422,7 +422,7 @@
 			if(prob(45))
 				new /obj/item/circuitboard/machine/stasis(loc)
 			if(prob(45))
-				new /obj/item/stack/medical/suture/medicated(loc)
+				new /obj/item/stack/medical/suture(loc)
 			if(prob(45))
 				new /obj/item/stack/medical/mesh/advanced(loc)
 			if(prob(35))
@@ -774,7 +774,7 @@
 				new /mob/living/basic/cockroach/glockroach(loc)
 			new /obj/item/geiger_counter(loc)
 			new /mob/living/basic/cockroach/glockroach(loc)
-			new /turf/open/floor/plating/dirt(loc)
+			new /turf/open/floor/plating/asteroid/dirt(loc)
 		if(15)//the backroom freezer
 			visible_message(span_userdanger("The faint hallogen glow of a faraway kitchen greets you."))
 			if(prob(45))

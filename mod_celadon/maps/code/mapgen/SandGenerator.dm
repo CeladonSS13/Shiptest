@@ -94,7 +94,7 @@
 
 /datum/biome/earth_sand/forest
 	open_turf_types = list(
-		/turf/open/floor/plating/grass/beach/lit = 10,
+		/turf/open/floor/plating/asteroid/dirt/grass/beach = 10,
 		/turf/open/floor/plating/asteroid/sand/lit = 1
 	)
 	flora_spawn_list = list(
@@ -121,7 +121,7 @@
 
 /datum/biome/earth_sand/plains/dense
 	open_turf_types = list(
-		/turf/open/floor/plating/grass/beach/lit = 10,
+		/turf/open/floor/plating/asteroid/dirt/grass/beach = 10,
 		/turf/open/floor/plating/asteroid/sand/lit = 1
 	)
 	flora_spawn_chance = 5

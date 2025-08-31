@@ -30,7 +30,6 @@
 		// [/CELADON-ADD]
 		/obj/item/clothing/suit/jacket/leather/duster = 1,
 		/obj/item/clothing/suit/jacket/miljacket = 1,
-		/obj/item/clothing/suit/jacket/puffer = 1,
 		/obj/item/clothing/suit/gothcoat = 1,
 		/obj/item/clothing/suit/toggle/industrial = 1,
 		/obj/item/clothing/suit/toggle/hazard = 1,
@@ -163,7 +162,6 @@
 	if(prob(25))
 		suit = pick_weight(list(
 			/obj/item/clothing/suit/hooded/explorer = 18,
-			/obj/item/clothing/suit/hooded/explorer/old = 1,
 			/obj/item/clothing/suit/hooded/cloak/goliath = 1
 			)
 		)
@@ -196,7 +194,6 @@
 	if(prob(75))
 		mask = pick_weight(list(
 			/obj/item/clothing/mask/gas/explorer = 9,
-			/obj/item/clothing/mask/gas/explorer/old = 1
 			)
 		)
 	if(prob(50))

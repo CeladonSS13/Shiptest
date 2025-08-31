@@ -24,6 +24,7 @@ FIXES_CHAMELEON
 FIXES_GOLIATH_TENTACLES
 FIXES_SHIP_LOGIN_DOUBLE_NAME
 FIXES_WETHIDE
+FIXES_DRILLCLASS
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -36,6 +37,8 @@ FIXES_WETHIDE
 Weebstick (Красная катана) теперь нельзя сломать, 
 вытащив меч при подготовке блинка. (Если что-то сломается всёравно, попросите 
 вызвать proc "unprime_unlock" у ближайшего админа)
+
+**Фикс бесконечного спавна мобов при добыче:** Исправляет критический баг с бесконечным спавном мобов при использовании industrial grade mining drill в миссиях. Добавляет проверки завершения миссии во всех ключевых точках логики спавна мобов, а также защиту от продолжения спавна при удалении или поломке бура. Дополнительно производит балансировку жил класса 4 для более справедливой сложности.
 
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
@@ -170,6 +173,13 @@ FIXES_WETHIDE
 - EDIT: `code/modules/food_and_drinks/kitchen_machinery/smartfridge.dm` : Заменен устаревший метод `update_icon()` на `update_appearance()`
 - EDIT: `code/game/objects/items/stacks/sheets/leather.dm` : Исправлен неправильный путь класса. Изменено `/obj/item/stack/sheet/leather/wetleather/Initialize` на `/obj/item/stack/sheet/wethide/Initialize`. Это позволяет мокрой коже правильно добавить элемент `dryable` при инициализации
 
+FIXES_DRILLCLASS - **Фикс бесконечного спавна мобов при добыче**
+- ADD: `code/modules/mining/drill.dm` - Добавлена проверка завершения миссии в `process()` и вызов `stop_spawning()` в `Destroy()`
+- ADD: `code/modules/mining/ore_veins.dm` - Добавлены проверки завершения миссии в `begin_spawning()`, `process()` и `increment_wave_tally()`
+- ADD: `code/modules/missions/dynamic/signaled.dm` - Добавлен вызов `stop_spawning()` при завершении миссии в `mine_success()`
+- EDIT: `code/modules/mining/ore_veins.dm` - Добавлена проверка `QDELETED(our_drill)` в `increment_wave_tally()` для защиты от удаленных буров
+- EDIT: `code/modules/mining/ore_veins.dm` - Балансировка жил класса 4: `max_mobs = 4` (было 6), `spawn_time = 12 SECONDS` (было 8), `wave_length = 30 SECONDS` (было 45)
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -224,6 +234,7 @@ FIXES_WETHIDE
 RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFaceLesS, Burbonchik, MrRomainzZ, Molniz, Redwizz, Sjerty, Garomt, Ganza9991, KOCMOHABT
 
 - Автор фикса дисков дизайнов: Турон/Mirag1993
+- Автор фикса бесконечного спавна мобов: Турон/Mirag1993
 
 <!--
   Здесь находится твой никнейм

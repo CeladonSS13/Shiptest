@@ -1,5 +1,5 @@
 ///from base of [/atom/proc/update_integrity]: (old_value, new_value)
-#define COMSIG_ATOM_INTEGRITY_CHANGED "atom_integrity_changed"
+//#define COMSIG_ATOM_INTEGRITY_CHANGED "atom_integrity_changed"
 
 /**
  * Checks whether the target turf is in a valid state to accept a directional construction
@@ -24,16 +24,6 @@
 				return FALSE
 	return TRUE
 
-/// Get the atom's armor reference
-/obj/proc/get_armor()
-	RETURN_TYPE(/datum/armor)
-	return (armor ||= getArmor(type))
-
-/// Helper to get a specific rating for the atom's armor
-/obj/proc/get_armor_rating(damage_type)
-	var/datum/armor/armor = get_armor()
-	return armor?.getRating(damage_type)
-
 /// Sets the armor of this atom to the specified armor
 /obj/proc/set_armor(datum/armor/armor)
 	if(src.armor == armor)
@@ -46,15 +36,6 @@
 /obj/proc/set_armor_rating(damage_type, rating)
 	var/datum/armor/armor = get_armor()
 	set_armor(armor.generate_new_with_specific(list("[damage_type]" = rating)))
-
-/// Proc for recovering obj_integrity. Returns the amount repaired by
-/obj/proc/repair_damage(amount)
-	if(amount <= 0) // We only recover here
-		return
-	var/new_integrity = min(max_integrity, obj_integrity + amount)
-	. = new_integrity - obj_integrity
-
-	obj_integrity = max_integrity
 
 /obj/structure/CanAllowThrough(atom/movable/mover, turf/target)
 	. = ..()
@@ -217,7 +198,7 @@
 		if(!disassembled && destroyed_stack_amount)
 			stack_amt = destroyed_stack_amount
 		else
-			stack_amt = round(stack_amount * (obj_integrity/max_integrity)) //Get an amount of sheets back equivalent to remaining health. Obviously, fully destroyed means 0
+			stack_amt = round(stack_amount * (atom_integrity/max_integrity)) //Get an amount of sheets back equivalent to remaining health. Obviously, fully destroyed means 0
 
 		if(stack_amt)
 			new stack_type (loc, stack_amt)
@@ -242,7 +223,7 @@
 /obj/structure/deployable_barricade/update_icon()
 	. = ..()
 	var/damage_state
-	var/percentage = (obj_integrity / max_integrity) * 100
+	var/percentage = (atom_integrity / max_integrity) * 100
 	switch(percentage)
 		if(-INFINITY to 25)
 			damage_state = 3
@@ -393,7 +374,7 @@
 	. = ..()
 	if(istype(I, /obj/item/stack/sheet/mineral/wood))
 		var/obj/item/stack/sheet/mineral/wood/D = I
-		if(obj_integrity >= max_integrity)
+		if(atom_integrity >= max_integrity)
 			return
 
 		if(D.get_amount() < 1)
@@ -402,7 +383,7 @@
 
 		visible_message(span_notice("[user] begins to repair [src]."))
 
-		if(!do_after(user,20, src) || obj_integrity >= max_integrity)
+		if(!do_after(user,20, src) || atom_integrity >= max_integrity)
 			return
 
 		if(!D.use(1))
@@ -456,7 +437,7 @@
 		if(barricade_upgrade_type)
 			to_chat(user, span_warning("[src] cannot be folded up with upgrades attached, remove them first!"))
 			return FALSE
-		if(obj_integrity < max_integrity)
+		if(atom_integrity < max_integrity)
 			to_chat(user, span_warning("[src] cannot be folded up while damaged!"))
 			return FALSE
 		user.visible_message(span_notice("[user] starts folding [src] up!"), span_notice("You start folding [src] up!"))
@@ -469,7 +450,7 @@
 			if(barricade_upgrade_type)
 				to_chat(user, span_warning("[src] cannot be folded up with upgrades attached, remove them first!"))
 				return FALSE
-			if(obj_integrity < max_integrity)
+			if(atom_integrity < max_integrity)
 				to_chat(user, span_warning("[src] cannot be folded up while damaged!"))
 				return FALSE
 			user.visible_message(span_notice("[user] folds [src] up!"), span_notice("You neatly fold [src] up!"))
@@ -487,7 +468,7 @@
 	if(!barricade_upgrade_type)
 		return
 	var/damage_state
-	var/percentage = (obj_integrity / max_integrity) * 100
+	var/percentage = (atom_integrity / max_integrity) * 100
 	switch(percentage)
 		if(-INFINITY to 25)
 			damage_state = 3
@@ -508,7 +489,7 @@
 /obj/structure/deployable_barricade/metal/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/stack/sheet/metal))
 		var/obj/item/stack/sheet/metal/metal_sheets = I
-		if(can_upgrade && obj_integrity < max_integrity)
+		if(can_upgrade && atom_integrity < max_integrity)
 			return attempt_barricade_upgrade(I, user, params)
 
 		if(metal_sheets.get_amount() < repair_amount)
@@ -517,7 +498,7 @@
 
 		visible_message(span_notice("[user] begins to repair [src]."))
 
-		if(!do_after(user, 2 SECONDS, src) || obj_integrity >= max_integrity)
+		if(!do_after(user, 2 SECONDS, src) || atom_integrity >= max_integrity)
 			return FALSE
 
 		if(!metal_sheets.use(repair_amount))
@@ -531,7 +512,7 @@
 	if(barricade_upgrade_type)
 		to_chat(user, span_warning("[src] is already upgraded."))
 		return FALSE
-	if(obj_integrity < max_integrity)
+	if(atom_integrity < max_integrity)
 		to_chat(user, span_warning("You cannot upgrade [src] until it has been repaired!"))
 		return FALSE
 
@@ -588,11 +569,11 @@
 	if(!welding_tool.isOn())
 		return FALSE
 
-	if(obj_integrity <= max_integrity * 0.3)
+	if(atom_integrity <= max_integrity * 0.3)
 		to_chat(user, span_warning("[src] is too damaged to be repaired with a welder!"))
 		return TRUE
 
-	if(obj_integrity >= max_integrity)
+	if(atom_integrity >= max_integrity)
 		to_chat(user, span_warning("[src] does not need repairing."))
 		return TRUE
 
@@ -603,7 +584,7 @@
 	if(!do_after(user, 5 SECONDS, src))
 		return TRUE
 
-	if(obj_integrity <= max_integrity * 0.3 || obj_integrity >= max_integrity)
+	if(atom_integrity <= max_integrity * 0.3 || atom_integrity >= max_integrity)
 		return TRUE
 
 	if(!welding_tool.use(2))
