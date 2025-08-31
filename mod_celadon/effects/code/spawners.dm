@@ -77,8 +77,6 @@
 		/obj/item/clothing/suit/jacket/leather = 1,
 		/obj/item/clothing/suit/jacket/leather/duster = 1,
 		/obj/item/clothing/suit/jacket/leather/duster/command = 1,
-		/obj/item/clothing/suit/jacket/puffer = 1,
-		/obj/item/clothing/suit/jacket/puffer/vest = 1,
 		/obj/item/clothing/suit/jacket/miljacket = 1,
 		/obj/item/clothing/suit/jacket/letterman = 1,
 		/obj/item/clothing/suit/jacket/letterman_red = 1,
