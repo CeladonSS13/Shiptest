@@ -140,7 +140,10 @@ SUBSYSTEM_DEF(jukeboxes)
 				if((get_area(M) in areas) || (M in hearerscache))
 					inrange = TRUE
 
+			// [CELADON-EDIT] - FIXES_JUKEBOX
+			//M.playsound_local(currentturf, null, jukebox.volume, channel = jukeinfo[2], S = song_played, envwet = (inrange ? -250 : 0), envdry = (inrange ? 0 : -10000))
 			M.playsound_local(currentturf, null, juke_volume, channel = jukeinfo[2], S = song_played, envwet = (inrange ? -250 : 0), envdry = (inrange ? 0 : -10000))
+			// [/CELADON-EDIT]
 
 			if(MC_TICK_CHECK)
 				return

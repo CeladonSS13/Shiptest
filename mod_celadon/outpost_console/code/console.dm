@@ -265,8 +265,6 @@
 
 	flags_1 = NODECONSTRUCT_1
 	tgui_shared_states = list(outpostTab = "\"cargo\"")
-	
-	var/last_purchase_time = 0
 
 /obj/machinery/computer/cargo/faction/Initialize()
 	. = ..()
@@ -441,12 +439,6 @@
 	var/list/data = faction_ui_static_data(user, /datum/faction/independent)
 	return data
 
-/obj/machinery/computer/cargo/faction/ui_act(action, params, datum/tgui/ui)
-	if(action == "add")
-		if(world.time < last_purchase_time + 50)
-			return FALSE
-		last_purchase_time = world.time
-	return ..()
 
 /obj/machinery/computer/cargo/faction/independent/computer_1
 	name = "Independent outpost console #1"
