@@ -373,6 +373,14 @@
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/attack_self(mob/user)
 	on = !on
 	set_light_on(on)
+	// [CELADON-ADD] - FIXES_DEBUG_SUIT - фиксим фонарик переключение фонарика
+	if(on)
+		to_chat(user, span_notice("You turn on [src]'s flashlight."))
+		playsound(src, 'sound/weapons/magin.ogg', 40, TRUE)
+	else
+		to_chat(user, span_notice("You turn off [src]'s flashlight."))
+		playsound(src, 'sound/weapons/magout.ogg', 40, TRUE)
+	// [/CELADON-ADD]
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/proc/toggle_mode(mob/user) //Toggle Helmet
 	if(!isturf(user.loc))
