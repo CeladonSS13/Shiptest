@@ -38,7 +38,6 @@
 // [CELADON-ADD] - Флаг на включение сломаных щитов из модов - BALLISTIC_SHIELD - Extended Edition
 	var/broken_shield
 	var/spread_bonus = 0
-	// BALLISTIC_SHIELD - Extended Chituka Edition
 	var/braking_sound = 'sound/effects/glassbr3.ogg'
 	var/braking_alert = "cracks!"
 // [/CELADON-ADD]
@@ -51,11 +50,10 @@
 	if(!broken)
 		if(isliving(loc))
 // [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
-			//loc.balloon_alert(loc, "[src] cracks!")
+			//loc.balloon_alert(loc, "[src] cracks!") // [CELADON-EDIT]
 			loc.balloon_alert(loc, "[src] [braking_alert]")
 			var/mob/living/user = loc
 			user.dropItemToGround(src, force = TRUE)
-		//playsound(src, 'sound/effects/glassbr3.ogg', 100)
 		playsound(src, braking_sound, 100)
 		if(broken_shield)
 			icon = 'mod_celadon/_storge_icons/icons/items/weapons/shields.dmi'
