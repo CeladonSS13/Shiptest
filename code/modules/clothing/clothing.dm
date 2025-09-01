@@ -101,12 +101,15 @@
 			to_chat(user, span_notice("You start eating [src]..."))
 			user.visible_message(span_notice("[user] eats [src]."), span_notice("You eat [src]. It tastes like dust and lint."))
 			user.reagents.add_reagent(/datum/reagent/consumable/nutriment, 1)
+			take_damage(15, sound_effect=FALSE)
+			playsound(M.loc,'sound/items/eatfood.ogg', rand(10,50), TRUE)
 		else
-			to_chat(user, span_notice("You try to feed [src] to [M]..."))
-			user.visible_message(span_notice("[user] feeds [src] to [M]."), span_notice("You feed [src] to [M]."))
-			M.reagents.add_reagent(/datum/reagent/consumable/nutriment, 1)
-		take_damage(15, sound_effect=FALSE)
-		playsound(M.loc,'sound/items/eatfood.ogg', rand(10,50), TRUE)
+			if(do_after(user, 10, M))
+				to_chat(user, span_notice("You try to feed [src] to [M]..."))
+				user.visible_message(span_notice("[user] feeds [src] to [M]."), span_notice("You feed [src] to [M]."))
+				M.reagents.add_reagent(/datum/reagent/consumable/nutriment, 1)
+				take_damage(15, sound_effect=FALSE)
+				playsound(M.loc,'sound/items/eatfood.ogg', rand(10,50), TRUE)
 	// [CELADON-EDIT]
 	else
 		return ..()
