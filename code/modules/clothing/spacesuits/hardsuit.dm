@@ -48,6 +48,10 @@
 	user.update_inv_head()	//so our mob-overlays update
 
 	set_light_on(on)
+	// [CELADON-ADD] - FIXES_DEBUG_SUIT - фиксим фонарик переключение фонарика
+	to_chat(user, span_notice("You turn [on ? "on" : "off"] [src]'s flashlight."))
+	playsound(src, on ? 'sound/weapons/magin.ogg' : 'sound/weapons/magout.ogg', 40, TRUE)
+	// [/CELADON-ADD]
 
 	for(var/X in actions)
 		var/datum/action/A = X
@@ -374,12 +378,8 @@
 	on = !on
 	set_light_on(on)
 	// [CELADON-ADD] - FIXES_DEBUG_SUIT - фиксим фонарик переключение фонарика
-	if(on)
-		to_chat(user, span_notice("You turn on [src]'s flashlight."))
-		playsound(src, 'sound/weapons/magin.ogg', 40, TRUE)
-	else
-		to_chat(user, span_notice("You turn off [src]'s flashlight."))
-		playsound(src, 'sound/weapons/magout.ogg', 40, TRUE)
+	to_chat(user, span_notice("You turn [on ? "on" : "off"] [src]'s flashlight."))
+	playsound(src, on ? 'sound/weapons/magin.ogg' : 'sound/weapons/magout.ogg', 40, TRUE)
 	// [/CELADON-ADD]
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/proc/toggle_mode(mob/user) //Toggle Helmet
@@ -1071,9 +1071,13 @@
 	return ..()
 
 /obj/item/clothing/head/helmet/space/light/proc/turn_on(mob/user)
+	to_chat(user, span_notice("You turn on [src]'s flashlight."))
+	playsound(src, 'sound/weapons/magin.ogg', 40, TRUE)
 	set_light_on(TRUE)
 
 /obj/item/clothing/head/helmet/space/light/proc/turn_off(mob/user)
+	to_chat(user, span_notice("You turn off [src]'s flashlight."))
+	playsound(src, 'sound/weapons/magout.ogg', 40, TRUE)
 	set_light_on(FALSE)
 
 ////Independents
