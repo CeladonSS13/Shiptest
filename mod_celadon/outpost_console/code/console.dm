@@ -443,7 +443,7 @@
 
 /obj/machinery/computer/cargo/faction/ui_act(action, params, datum/tgui/ui)
 	if(action == "add")
-		if(world.time < last_purchase_time + 50)
+		if(world.time < last_purchase_time + 10)
 			return FALSE
 		last_purchase_time = world.time
 	return ..()
