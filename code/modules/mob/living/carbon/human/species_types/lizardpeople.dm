@@ -101,6 +101,29 @@
 /datum/species/lizard/natural_bodytemperature_stabilization(datum/gas_mixture/environment, mob/living/carbon/human/H)
 	return 0
 
+// Пускай пока тут будет прок, потмо вынесу
+/datum/species/lizard/spec_life(mob/living/carbon/human/H)
+	..()
+	if(H.stat == DEAD)
+		return
+
+	var/current_health = H.health
+	var/max_health = H.maxHealth
+
+	if(current_health < max_health)
+		var/nutrition_level = H.nutrition
+		var/regen_rate
+
+		if(nutrition_level >= 200) // Вот тут можно поменять порог срабатывания. Я хз сколько нутриментов обычно бывает номрой
+			regen_rate = 2.5
+			H.adjust_nutrition(-100)
+		else
+			regen_rate = 0.5
+			H.adjust_nutrition(-20)
+
+		H.adjustBruteLoss(-regen_rate/2)
+		H.adjustFireLoss(-regen_rate/2)
+
 /datum/species/lizard/random_name(gender,unique,lastname)
 	if(unique)
 		return random_unique_lizard_name(gender)
