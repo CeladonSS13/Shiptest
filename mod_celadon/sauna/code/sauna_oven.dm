@@ -137,12 +137,7 @@
 		if(prob(10))
 			visible_message(span_danger("[src] sparks dangerously!"))
 			playsound(src, pick('sound/effects/sparks1.ogg', 'sound/effects/sparks2.ogg', 'sound/effects/sparks3.ogg', 'sound/effects/sparks4.ogg'), 75, TRUE)
-		if(prob(5))
-			lit = FALSE
-			STOP_PROCESSING(SSobj, src)
-			visible_message(span_warning("[src] shuts down due to overheating!"))
-			update_icon()
-			return
+
 	else
 		var/was_overheated = overheated
 		overheated = FALSE
