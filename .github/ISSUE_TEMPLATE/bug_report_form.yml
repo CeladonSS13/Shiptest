@@ -13,6 +13,16 @@ body:
         **`[БАГ]: Неработающий автолат - Создающий лаги`**
         #### В игре есть кнопка «Bug Report» в правом верхнем углу игры, при её нажатии часть информации ниже заполнится автоматически.
 
+  - type: checkboxes
+    id: feature_scope
+    attributes:
+      label: "Категория бага"
+      description: "К какому типу контента относится проблема?"
+      options:
+        - label: "🧱 Код"
+        - label: "🎨 Спрайты"
+        - label: "🗺 Карты"
+
   - type: textarea
     id: bug_description
     attributes:
@@ -64,15 +74,3 @@ body:
         (Опционально скриншоты)
         Версия клиента: XXX.XXXX
         Round ID: XXXXXX
-
-  - type: checkboxes
-    id: feature_scope
-    attributes:
-      label: "Категория бага"
-      description: "К какому типу контента относится проблема?"
-      options:
-        - label: "🧱 Код"
-        - label: "🎨 Спрайты"
-        - label: "🗺 Карты"
-    validations:
-      required: true

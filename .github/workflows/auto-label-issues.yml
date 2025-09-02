@@ -22,7 +22,7 @@ jobs:
             console.log('Issue body:', body);
 
             const labelsToAdd = [];
-            let foundCheckboxes = false;
+            let foundCheckboxesSection = false;
             let sectionToRemove = '';
 
             const scopeMap = {
@@ -31,21 +31,26 @@ jobs:
               '🗺 Карты': '🗺 Маппинг 🗺'
             };
 
-            if (body && body.includes('[x]')) {
-              console.log('Found checkboxes in body');
-              for (const [checkboxLabel, labelName] of Object.entries(scopeMap)) {
-                const checkboxRegex = new RegExp('\\[x\\]\\s*' + checkboxLabel.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-                if (checkboxRegex.test(body)) {
-                  labelsToAdd.push(labelName);
-                  foundCheckboxes = true;
-                  console.log('Found selected:', checkboxLabel, '->', labelName);
-                }
+            if (body) {
+              if (body.includes('Что потребует изменений?')) {
+                foundCheckboxesSection = true;
+                sectionToRemove = 'Что потребует изменений?';
+                console.log('Found "Что потребует изменений?" section');
+              } else if (body.includes('Категория бага')) {
+                foundCheckboxesSection = true;
+                sectionToRemove = 'Категория бага';
+                console.log('Found "Категория бага" section');
               }
 
-              if (body.includes('Что потребует изменений?')) {
-                sectionToRemove = 'Что потребует изменений?';
-              } else if (body.includes('Категория бага')) {
-                sectionToRemove = 'Категория бага';
+              if (body.includes('[x]')) {
+                console.log('Found checked checkboxes in body');
+                for (const [checkboxLabel, labelName] of Object.entries(scopeMap)) {
+                  const checkboxRegex = new RegExp('\\[x\\]\\s*' + checkboxLabel.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+                  if (checkboxRegex.test(body)) {
+                    labelsToAdd.push(labelName);
+                    console.log('Found selected:', checkboxLabel, '->', labelName);
+                  }
+                }
               }
             }
 
@@ -66,16 +71,16 @@ jobs:
               }
             }
 
-            core.setOutput('foundCheckboxes', foundCheckboxes);
+            core.setOutput('foundCheckboxesSection', foundCheckboxesSection);
             core.setOutput('sectionToRemove', sectionToRemove);
 
             return {
-              foundCheckboxes: foundCheckboxes,
+              foundCheckboxesSection: foundCheckboxesSection,
               sectionToRemove: sectionToRemove
             };
 
       - name: Clean up issue body
-        if: steps.process_issue.outputs.foundCheckboxes == 'true'
+        if: steps.process_issue.outputs.foundCheckboxesSection == 'true'
         uses: actions/github-script@v7
         env:
           SECTION_TO_REMOVE: ${{ steps.process_issue.outputs.sectionToRemove }}
