@@ -1,7 +1,7 @@
-name: Сообщить о баге
+name: 🐞 Сообщить о баге
 description: Сообщить найденой ошибке в игре
 title: "[БАГ]: "
-labels: [🐞 БАГ]
+type: Баг
 body:
   - type: markdown
     attributes:
@@ -12,7 +12,7 @@ body:
         Можно называть и так:
         **`[БАГ]: Неработающий автолат - Создающий лаги`**
         #### В игре есть кнопка «Bug Report» в правом верхнем углу игры, при её нажатии часть информации ниже заполнится автоматически.
-        #### Если же это проблема на карте/руине, то используйте другую форму чтоб ваша проблема не потерялась среди багов и для более быстрой реакции маперов.
+
   - type: textarea
     id: bug_description
     attributes:
@@ -29,7 +29,7 @@ body:
       description: Опишите способ воспроизведения бага.
       placeholder: |
         1. Найти автолат
-        2. Открыть его меню, кликнул ЛКМ
+        2. Открыть его меню, кликнуть ЛКМ
         3. Получить лаги
     validations:
       required: true
@@ -51,6 +51,7 @@ body:
         (Опционально скриншоты)
         Версия клиента: `XXX.XXXX`
         Round ID: `XXXXXX`
+
   - type: textarea
     id: additional-info
     attributes:
@@ -63,3 +64,15 @@ body:
         (Опционально скриншоты)
         Версия клиента: XXX.XXXX
         Round ID: XXXXXX
+
+  - type: checkboxes
+    id: feature_scope
+    attributes:
+      label: "Категория бага"
+      description: "К какому типу контента относится проблема?"
+      options:
+        - label: "🧱 Код"
+        - label: "🎨 Спрайты"
+        - label: "🗺 Карты"
+    validations:
+      required: true

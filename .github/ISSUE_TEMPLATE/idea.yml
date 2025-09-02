@@ -1,12 +1,33 @@
-name: "Предложить идею"
-title: "[ИДЕЯ]: "
+name: "🚀 Предложить идею"
 description: "Любые идеи для игры, ваша шиза в материю."
-labels: ["💡 Идея"]
+title: "[ИДЕЯ]: "
+type: Идея
 body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Называйте заголовок кратко и понятно:
+        ### ПРИМЕР: `[ИДЕЯ]: Автолат - Добавить новые функции`
+        Это поможет быстрее передать сути проблемы.
+        Можно называть и так:
+        **`[ИДЕЯ]: Добавить в автолат новый функционал`**
+
   - type: textarea
     id: description
-    validations:
-      required: true
     attributes:
       label: "Описание"
       description: "Опишите идею/фичу"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: feature_scope
+    attributes:
+      label: "Что потребует изменений?"
+      description: "Выберите типы изменений"
+      options:
+        - label: "🧱 Код"
+        - label: "🎨 Спрайты"
+        - label: "🗺 Карты"
+    validations:
+      required: true
