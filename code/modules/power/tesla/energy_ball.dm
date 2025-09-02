@@ -94,7 +94,7 @@
 		if(target && prob(10))
 			move_dir = get_dir(src,target)
 		var/turf/T = get_step(src, move_dir)
-		if(can_move(T) && tesla_can_move(T))
+		if(can_move(T) && tesla_can_move(T)) // [CELADON-EDIT] - FIXES_TESLA_ON_OVERMAP // if(can_move(T)) // ORIGINAL
 			forceMove(T)
 			setDir(move_dir)
 
@@ -153,14 +153,6 @@
 	. = ..()
 	if (!QDELETED(src))
 		qdel(src)
-
-/obj/singularity/energy_ball/proc/tesla_can_move(turf/T)
-	if(!T)
-		return FALSE
-	// Prevent tesla from moving into overmap turfs
-	if(istype(T, /turf/open/overmap))
-		return FALSE
-	return TRUE
 
 /proc/tesla_zap(atom/source, zap_range = 3, power, zap_flags = ZAP_DEFAULT_FLAGS, list/shocked_targets = list())
 	if(QDELETED(source))
