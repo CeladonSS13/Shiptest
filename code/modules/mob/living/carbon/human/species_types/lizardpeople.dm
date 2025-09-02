@@ -114,11 +114,11 @@
 		var/nutrition_level = H.nutrition
 		var/regen_rate
 
-		if(nutrition_level >= 200) // Вот тут можно поменять порог срабатывания. Я хз сколько нутриментов обычно бывает номрой
-			regen_rate = 2.5
+		if(nutrition_level >= 200) // Вот тут можно поменять порог срабатывания. Я хз сколько нутриментов обычно бывает нормой
+			regen_rate = 2
 			H.adjust_nutrition(-100)
 		else
-			regen_rate = 0.5
+			regen_rate = 0.8
 			H.adjust_nutrition(-20)
 
 		H.adjustBruteLoss(-regen_rate/2)
