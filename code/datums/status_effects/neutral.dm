@@ -241,6 +241,12 @@
 /// One of our possible takers moved, see if they left us hanging
 /datum/status_effect/offering/proc/check_taker_in_range(mob/living/carbon/taker)
 	SIGNAL_HANDLER
+	// [CELADON-ADD] - FIXES_OFFERING_EFFECTS
+	// Check if we still have the item first
+	if(!offered_item || owner.get_active_held_item() != offered_item)
+		qdel(src)
+		return
+	// [/CELADON-ADD]
 	if(owner.CanReach(taker) && !taker.incapacitated())
 		return
 
@@ -249,6 +255,12 @@
 /// The offerer moved, see if anyone is out of range now
 /datum/status_effect/offering/proc/check_owner_in_range(mob/living/carbon/source)
 	SIGNAL_HANDLER
+	// [CELADON-ADD] - FIXES_OFFERING_EFFECTS
+	// Check if we still have the item
+	if(!offered_item || owner.get_active_held_item() != offered_item)
+		qdel(src)
+		return
+	// [/CELADON-ADD]
 
 	for(var/i in possible_takers)
 		var/mob/living/carbon/checking_taker = i
@@ -257,6 +269,7 @@
 
 /// We lost the item, give it up
 /datum/status_effect/offering/proc/dropped_item(obj/item/source)
+	SIGNAL_HANDLER	// [CELADON-ADD] - FIXES_OFFERING_EFFECTS
 	qdel(src)
 
 //this effect gives the user an alert they can use to surrender quickly
