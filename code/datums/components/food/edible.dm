@@ -448,6 +448,10 @@ Behavior that's still missing from this component that original food items had t
 	if(!food_taste_reaction)
 		if(foodtypes & human_eater.dna.species.toxic_food)
 			food_taste_reaction = FOOD_TOXIC
+		// [CELADON-ADD] - FIXES_PIZZABOX_AND_PIZZA - Плотоядные расы (Риолы и Таяраны) могут есть мясную пиццу, даже если она содержит нелюбимые ингредиенты
+		else if(istype(parent, /obj/item/food/pizza) && (foodtypes & MEAT) && (human_eater.dna.species.liked_food & MEAT) && (human_eater.dna.species.disliked_food & VEGETABLES) && (human_eater.dna.species.disliked_food & GRAIN))
+			food_taste_reaction = FOOD_LIKED
+		// [/CELADON-ADD]
 		else if(foodtypes & human_eater.dna.species.disliked_food)
 			food_taste_reaction = FOOD_DISLIKED
 		else if(foodtypes & human_eater.dna.species.liked_food)

@@ -165,6 +165,8 @@
 	light_power = 0
 	light_system = 0
 	dynamic_lighting = 0
+	opacity = 1
+	density = 1
 
 ///MARK: Тюрфы для модульной anima
 

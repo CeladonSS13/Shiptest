@@ -129,7 +129,7 @@
 	crate_name = "plasmacutter crate"
 
 /*
-		Liquid tanks
+	MARK: Liquid tanks
 */
 
 /datum/supply_pack/faction/independent/tools/fueltank
@@ -220,6 +220,19 @@
 	crate_type = /obj/structure/closet/crate/wooden
 	crate_name = "basic mining crate"
 
-/*
-	MARK: Цистерны для жидкостей
-*/
+/obj/structure/closet/crate/privatecrate
+	desc = "A private steel crate."
+	icon_state = "privatecrate"
+
+/datum/supply_pack/faction/independent/tools/wall_painter
+	name = "Набор юного художника"
+	desc = "Содержит 1х покрасчик стен, 1х покрасчик труб, 1х покрасчик декалей, 1х покрасчик шлюзов, 1х долото."
+	cost = 1500
+	contains = list(
+		/obj/item/wall_painter,
+		/obj/item/pipe_painter,
+		/obj/item/decal_painter,
+		/obj/item/airlock_painter,
+		/obj/item/chisel)
+	crate_type = /obj/structure/closet/crate/privatecrate
+	crate_name = "private art crate"
