@@ -246,7 +246,3 @@ RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFa
   Если работал совместно - никнеймы тех, кто помогал.
   В случае порта чего-либо должна быть ссылка на источник.
 -->
-
-FIXES_OFFERING_EFFECTS
-- ADD: `code/datums/status_effects/neutral.dm`
-- EDIT: `code/modules/mob/living/carbon/inventory.dm`
