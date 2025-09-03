@@ -94,11 +94,8 @@
 					packs += pack
 
 			if(!length(packs) || !charge_account?.has_money(total_cost) || !istype(current_area))
-				playsound(src, 'sound/machines/buzz-sigh.ogg', 50, TRUE)
-				if(!charge_account.adjust_money(-total_cost, CREDIT_LOG_CARGO))
-					say("ERROR: Insufficent funds! Transaction canceled.")
-					message_cooldown = world.time + 5 SECONDS
-					return
+				message_cooldown = console_cooldown_feedback(src, "ERROR: Insufficent funds! Transaction canceled.", message_cooldown)
+				return TRUE
 
 			var/turf/landing_turf
 			if(!use_beacon)
@@ -115,11 +112,8 @@
 					empty_turfs += T
 					CHECK_TICK
 				if(!length(empty_turfs))
-					playsound(src, 'sound/machines/buzz-sigh.ogg', 50, TRUE)
-					if(message_cooldown <= world.time)
-						say("ERROR: Landing zone full! No space for drop!")
-						message_cooldown = world.time + 5 SECONDS
-					return
+					message_cooldown = console_cooldown_feedback(src, "ERROR: Landing zone full! No space for drop!", message_cooldown)
+					return TRUE
 				landing_turf = pick(empty_turfs)
 
 			if(landing_turf && charge_account.adjust_money(-total_cost))
@@ -148,6 +142,13 @@
 				// else
 				// 	mission.give_up() // NEEDS_TO_FIX_ALARM!
 				return TRUE
+
+/proc/console_cooldown_feedback(obj/source, msg, cooldown)
+	playsound(source, 'sound/machines/buzz-sigh.ogg', 50, TRUE)
+	if(cooldown <= world.time)
+		source.say(msg)
+		cooldown = world.time + 5 SECONDS
+	return cooldown
 
 /obj/machinery/computer/cargo/faction/proc/faction_ui_interact(mob/user, datum/tgui/ui, var/text, obj/src)
 	ui = SStgui.try_update_ui(user, src, ui)
