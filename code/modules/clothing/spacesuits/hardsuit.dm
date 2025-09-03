@@ -1071,13 +1071,17 @@
 	return ..()
 
 /obj/item/clothing/head/helmet/space/light/proc/turn_on(mob/user)
+// [CELADON-ADD] - FIXES_DEBUG_SUIT - фиксим фонарик переключение фонарика
 	to_chat(user, span_notice("You turn on [src]'s flashlight."))
 	playsound(src, 'sound/weapons/magin.ogg', 40, TRUE)
+// [/CELADON-ADD]
 	set_light_on(TRUE)
 
 /obj/item/clothing/head/helmet/space/light/proc/turn_off(mob/user)
+// [/CELADON-ADD] - FIXES_DEBUG_SUIT - фиксим фонарик переключение фонарика
 	to_chat(user, span_notice("You turn off [src]'s flashlight."))
 	playsound(src, 'sound/weapons/magout.ogg', 40, TRUE)
+// [/CELADON-ADD]
 	set_light_on(FALSE)
 
 ////Independents
