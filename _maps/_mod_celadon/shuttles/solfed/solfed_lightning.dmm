@@ -359,12 +359,16 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "ea" = (
-/obj/structure/cable{
-	icon_state = "2-4"
+/obj/structure/closet/wall/orange{
+	dir = 4;
+	name = "fuel locker";
+	pixel_x = 28
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/glass,
-/turf/open/floor/plasteel/heavymetal/var4,
+/obj/item/stack/sheet/mineral/uranium/twenty,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plasteel/heavymetal/var1,
 /area/ship/engineering)
 "eg" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/border{
@@ -833,19 +837,16 @@
 /turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen)
 "jM" = (
-/obj/machinery/power/terminal{
-	dir = 8
-	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
+/obj/machinery/power/shuttle/engine/electric/premium,
 /obj/docking_port/mobile{
-	dir = 2;
-	launch_status = 0;
-	port_direction = 8;
+	dir = 4;
+	port_direction = 2;
 	preferred_direction = 4
 	},
-/turf/open/floor/plasteel/heavymetal/var4,
+/turf/open/floor/plating,
 /area/ship/engineering)
 "jQ" = (
 /obj/machinery/chem_heater{
@@ -1209,19 +1210,13 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "nn" = (
-/obj/structure/cable{
-	icon_state = "1-2"
+/obj/machinery/power/terminal{
+	dir = 8
 	},
 /obj/structure/cable{
-	icon_state = "1-8"
+	icon_state = "0-2"
 	},
-/obj/structure/closet/wall/orange{
-	dir = 4;
-	name = "fuel locker";
-	pixel_x = 28
-	},
-/obj/item/stack/sheet/mineral/uranium/twenty,
-/turf/open/floor/plasteel/heavymetal/var1,
+/turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering)
 "np" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -1607,15 +1602,14 @@
 /area/ship/engineering)
 "rD" = (
 /obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/glass,
+/obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 4
-	},
-/turf/open/floor/plasteel/heavymetal/var2,
+/turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "rF" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -2167,14 +2161,11 @@
 	},
 /area/ship/general/cargo)
 "wr" = (
-/obj/docking_port/stationary{
-	width = 30;
-	height = 15;
-	dwidth = 15;
-	dir = 8
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
-/turf/open/floor/engine/hull/reinforced,
-/area/ship/external)
+/turf/open/floor/plasteel/heavymetal/var4,
+/area/ship/engineering)
 "wy" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
@@ -2803,16 +2794,11 @@
 /area/ship/medical)
 "CF" = (
 /obj/structure/cable{
-	icon_state = "1-2"
+	icon_state = "0-2"
 	},
-/obj/structure/closet/wall/orange{
-	dir = 4;
-	name = "fuel locker";
-	pixel_x = 28
+/obj/machinery/power/port_gen/pacman/super{
+	anchored = 1
 	},
-/obj/item/stack/sheet/mineral/uranium/twenty,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/glass,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "CP" = (
@@ -3035,9 +3021,11 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/ship/crew/cryo)
 "EK" = (
-/obj/machinery/power/smes/engineering,
 /obj/structure/cable{
 	icon_state = "0-1"
+	},
+/obj/machinery/power/terminal{
+	dir = 8
 	},
 /turf/open/floor/plasteel/heavymetal/var2,
 /area/ship/engineering)
@@ -3077,11 +3065,13 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "FP" = (
-/obj/structure/cable{
-	icon_state = "0-2"
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
 	},
-/obj/machinery/power/smes/engineering,
-/turf/open/floor/plasteel/heavymetal/var4,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plasteel/heavymetal/var2,
 /area/ship/engineering)
 "FR" = (
 /obj/machinery/power/terminal{
@@ -3286,18 +3276,10 @@
 /area/ship/engineering)
 "HI" = (
 /obj/structure/cable{
-	icon_state = "1-2"
+	icon_state = "0-1"
 	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
-	},
-/obj/machinery/power/terminal,
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/turf/open/floor/plasteel/heavymetal/var3,
+/obj/machinery/power/smes/engineering,
+/turf/open/floor/plasteel/heavymetal/var1,
 /area/ship/engineering)
 "HK" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -3525,16 +3507,13 @@
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/command_crew)
 "KF" = (
-/obj/structure/sign/poster/contraband/space_cola{
-	pixel_y = 32
+/obj/structure/cable{
+	icon_state = "0-1"
 	},
 /obj/machinery/power/port_gen/pacman/super{
 	anchored = 1
 	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/plasteel/heavymetal/var4,
+/turf/open/floor/plasteel/heavymetal/var2,
 /area/ship/engineering)
 "KG" = (
 /obj/structure/cable{
@@ -3792,19 +3771,15 @@
 /turf/open/floor/plasteel/strongdark,
 /area/ship/bridge)
 "Oi" = (
-/obj/structure/cable{
-	icon_state = "1-2"
+/obj/structure/closet/wall/orange{
+	dir = 4;
+	name = "fuel locker";
+	pixel_x = 28
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/obj/machinery/power/terminal{
-	dir = 1
-	},
-/turf/open/floor/plasteel/heavymetal/var2,
+/obj/item/stack/sheet/mineral/uranium/twenty,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "Oj" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -3935,8 +3910,14 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "Py" = (
-/turf/open/floor/plasteel/heavymetal/var4,
-/area/ship/engineering)
+/obj/docking_port/stationary{
+	width = 30;
+	height = 15;
+	dwidth = 15;
+	dir = 8
+	},
+/turf/template_noop,
+/area/template_noop)
 "PD" = (
 /obj/effect/turf_decal/trimline/opaque/cybersunteal/line{
 	dir = 6
@@ -4298,13 +4279,15 @@
 	},
 /area/ship/crew/hydroponics)
 "UD" = (
+/obj/structure/sign/poster/contraband/space_cola{
+	pixel_y = 32
+	},
+/obj/machinery/power/smes/engineering,
 /obj/structure/cable{
-	icon_state = "0-4"
+	d2 = 2;
+	icon_state = "0-2"
 	},
-/obj/machinery/power/port_gen/pacman/super{
-	anchored = 1
-	},
-/turf/open/floor/plasteel/heavymetal/var1,
+/turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "UH" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/bordercorner{
@@ -4325,6 +4308,9 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "UX" = (
@@ -4809,7 +4795,7 @@ yQ
 yQ
 yQ
 yQ
-bw
+yQ
 yQ
 yQ
 yQ
@@ -4835,24 +4821,6 @@ yQ
 yQ
 yQ
 yQ
-MU
-yQ
-yQ
-yQ
-yQ
-yQ
-yQ
-yQ
-yQ
-yQ
-yQ
-yQ
-yQ
-yQ
-yQ
-bw
-mS
-bw
 yQ
 yQ
 yQ
@@ -4868,7 +4836,25 @@ yQ
 yQ
 yQ
 yQ
-MU
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
 yQ
 yQ
 yQ
@@ -4877,7 +4863,175 @@ yQ
 yQ
 yQ
 yQ
-wr
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+"}
+(5,1,1) = {"
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+"}
+(6,1,1) = {"
+yQ
+yQ
+yQ
+Py
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+jM
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+"}
+(7,1,1) = {"
+yQ
+yQ
+yQ
+MU
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+bw
+mS
+bw
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+MU
+yQ
+yQ
+yQ
+"}
+(8,1,1) = {"
+yQ
+yQ
+yQ
+MU
 yQ
 yQ
 yQ
@@ -4915,7 +5069,7 @@ yQ
 yQ
 yQ
 "}
-(5,1,1) = {"
+(9,1,1) = {"
 yQ
 yQ
 yQ
@@ -4957,7 +5111,7 @@ yQ
 yQ
 yQ
 "}
-(6,1,1) = {"
+(10,1,1) = {"
 ri
 yQ
 yQ
@@ -4977,7 +5131,7 @@ yQ
 yQ
 mS
 mS
-jM
+cV
 mS
 mS
 yQ
@@ -4999,7 +5153,7 @@ yQ
 yQ
 Zj
 "}
-(7,1,1) = {"
+(11,1,1) = {"
 ri
 ri
 yQ
@@ -5041,7 +5195,7 @@ Zj
 Zj
 Zj
 "}
-(8,1,1) = {"
+(12,1,1) = {"
 ri
 ri
 ri
@@ -5083,7 +5237,7 @@ Zj
 kJ
 Zj
 "}
-(9,1,1) = {"
+(13,1,1) = {"
 ri
 DK
 ri
@@ -5125,7 +5279,7 @@ qE
 UH
 Zj
 "}
-(10,1,1) = {"
+(14,1,1) = {"
 ri
 iQ
 ri
@@ -5167,7 +5321,7 @@ Sp
 Lw
 Zj
 "}
-(11,1,1) = {"
+(15,1,1) = {"
 ri
 ib
 Vt
@@ -5178,8 +5332,8 @@ yQ
 yQ
 dK
 dK
-KF
-ea
+UD
+rD
 nl
 VA
 GM
@@ -5195,8 +5349,8 @@ Aj
 aX
 FR
 UN
-Py
-UD
+wr
+HI
 dK
 dK
 yQ
@@ -5209,7 +5363,7 @@ hh
 Ga
 YZ
 "}
-(12,1,1) = {"
+(16,1,1) = {"
 LN
 he
 SB
@@ -5219,9 +5373,9 @@ ri
 eB
 RM
 dK
-FP
-Oi
-nn
+CF
+EK
+ea
 cK
 UZ
 il
@@ -5236,10 +5390,10 @@ Wi
 xm
 Wi
 UZ
-rD
-CF
-HI
-EK
+FP
+Oi
+nn
+KF
 dK
 RM
 Wq
@@ -5251,7 +5405,7 @@ RN
 mR
 go
 "}
-(13,1,1) = {"
+(17,1,1) = {"
 zx
 wl
 Es
@@ -5293,7 +5447,7 @@ tS
 gW
 Tj
 "}
-(14,1,1) = {"
+(18,1,1) = {"
 Cu
 ZV
 kN
@@ -5335,7 +5489,7 @@ Lp
 BQ
 Zj
 "}
-(15,1,1) = {"
+(19,1,1) = {"
 ri
 Bw
 SR
@@ -5377,7 +5531,7 @@ lC
 Zj
 Zj
 "}
-(16,1,1) = {"
+(20,1,1) = {"
 ri
 ri
 JK
@@ -5419,7 +5573,7 @@ Zj
 Zj
 yQ
 "}
-(17,1,1) = {"
+(21,1,1) = {"
 yQ
 ri
 ri
@@ -5461,7 +5615,7 @@ Zj
 yQ
 yQ
 "}
-(18,1,1) = {"
+(22,1,1) = {"
 yQ
 yQ
 ri
@@ -5503,7 +5657,7 @@ yQ
 yQ
 yQ
 "}
-(19,1,1) = {"
+(23,1,1) = {"
 yQ
 yQ
 yQ
@@ -5545,7 +5699,7 @@ yQ
 yQ
 yQ
 "}
-(20,1,1) = {"
+(24,1,1) = {"
 yQ
 yQ
 yQ
@@ -5587,7 +5741,7 @@ yQ
 yQ
 yQ
 "}
-(21,1,1) = {"
+(25,1,1) = {"
 yQ
 yQ
 yQ
@@ -5629,7 +5783,7 @@ yQ
 yQ
 yQ
 "}
-(22,1,1) = {"
+(26,1,1) = {"
 yQ
 yQ
 yQ
@@ -5671,7 +5825,7 @@ yQ
 yQ
 yQ
 "}
-(23,1,1) = {"
+(27,1,1) = {"
 yQ
 yQ
 yQ
@@ -5713,7 +5867,7 @@ yQ
 yQ
 yQ
 "}
-(24,1,1) = {"
+(28,1,1) = {"
 yQ
 yQ
 yQ
@@ -5755,7 +5909,7 @@ yQ
 yQ
 yQ
 "}
-(25,1,1) = {"
+(29,1,1) = {"
 yQ
 yQ
 yQ
@@ -5797,7 +5951,7 @@ yQ
 yQ
 yQ
 "}
-(26,1,1) = {"
+(30,1,1) = {"
 yQ
 yQ
 yQ
@@ -5839,7 +5993,7 @@ yQ
 yQ
 yQ
 "}
-(27,1,1) = {"
+(31,1,1) = {"
 yQ
 yQ
 yQ
@@ -5881,7 +6035,7 @@ yQ
 yQ
 yQ
 "}
-(28,1,1) = {"
+(32,1,1) = {"
 yQ
 yQ
 yQ
@@ -5923,7 +6077,7 @@ yQ
 yQ
 yQ
 "}
-(29,1,1) = {"
+(33,1,1) = {"
 yQ
 yQ
 yQ
@@ -5965,7 +6119,7 @@ yQ
 yQ
 yQ
 "}
-(30,1,1) = {"
+(34,1,1) = {"
 yQ
 yQ
 yQ
@@ -6007,7 +6161,7 @@ yQ
 yQ
 yQ
 "}
-(31,1,1) = {"
+(35,1,1) = {"
 yQ
 yQ
 yQ
@@ -6049,7 +6203,7 @@ yQ
 yQ
 yQ
 "}
-(32,1,1) = {"
+(36,1,1) = {"
 yQ
 yQ
 yQ
@@ -6091,7 +6245,7 @@ yQ
 yQ
 yQ
 "}
-(33,1,1) = {"
+(37,1,1) = {"
 yQ
 yQ
 yQ
@@ -6133,7 +6287,7 @@ yQ
 yQ
 yQ
 "}
-(34,1,1) = {"
+(38,1,1) = {"
 yQ
 yQ
 yQ
@@ -6175,7 +6329,91 @@ yQ
 yQ
 yQ
 "}
-(35,1,1) = {"
+(39,1,1) = {"
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+"}
+(40,1,1) = {"
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+"}
+(41,1,1) = {"
 yQ
 yQ
 yQ
