@@ -180,9 +180,6 @@ FIXES_DRILLCLASS - **Фикс бесконечного спавна мобов �
 - EDIT: `code/modules/mining/ore_veins.dm` - Добавлена проверка `QDELETED(our_drill)` в `increment_wave_tally()` для защиты от удаленных буров
 - EDIT: `code/modules/mining/ore_veins.dm` - Балансировка жил класса 4: `max_mobs = 4` (было 6), `spawn_time = 12 SECONDS` (было 8), `wave_length = 30 SECONDS` (было 45)
 
-FIXES_TESLA_ON_OVERMAP
-- EDIT: `code/modules/power/tesla/energy_ball.dm`
-
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
