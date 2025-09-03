@@ -7,10 +7,10 @@ import { Data } from './types';
 
 export const OutpostCommunicationsCeladon = (props, context) => {
   const { act, data } = useBackend<Data>(context);
-  const { outpostDocked, onShip, points } = data;
+  const { outpostDocked, onShip, points, faction_theme } = data;
   const [tab, setTab] = useSharedState(context, 'outpostTab', '');
   return (
-    <Window width={600} height={700} resizable>
+    <Window theme={faction_theme} width={600} height={700} resizable>
       <Window.Content scrollable>
         <Section
           title={Math.round(points) + ' credits'}

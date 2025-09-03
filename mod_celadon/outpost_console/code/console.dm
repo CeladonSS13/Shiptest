@@ -49,6 +49,11 @@
 			for(var/datum/mission/M as anything in out.missions)
 				data["outpostMissions"] += list(M.get_tgui_info())
 
+	// Передаем фракционные темы в TGUI
+	if(istype(src, /obj/machinery/computer/cargo/faction))
+		var/obj/machinery/computer/cargo/faction/faction_console = src
+		data["faction_theme"] = faction_console.faction_theme
+
 	return data
 
 // UI статика	// КОД JOPA
@@ -262,6 +267,8 @@
 	flags_1 = NODECONSTRUCT_1
 	tgui_shared_states = list(outpostTab = "\"cargo\"")
 
+	var/faction_theme = null
+
 /obj/machinery/computer/cargo/faction/Initialize()
 	. = ..()
 	var/obj/item/circuitboard/computer/cargo/board = circuit
@@ -288,7 +295,7 @@
 /obj/machinery/computer/cargo/faction/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
-		ui = new(user, src, "OutpostCommunicationsFaction", name)
+		ui = new(user, src, "OutpostCommunicationsCeladon", name)
 		ui.open()
 		if(!charge_account)
 			reconnect()
@@ -318,6 +325,7 @@
 	name = "syndicate outpost console"
 	desc = "That outpost console belongs to Syndicate."
 	icon_screen = "syndishuttle"
+	faction_theme = "syndicate"
 	circuit = /obj/item/circuitboard/computer/cargo
 	light_color = COLOR_DARK_RED
 
@@ -327,9 +335,6 @@
 	podType = /obj/structure/closet/supplypod/syndicate
 
 	charge_account = ACCOUNT_SYN
-
-/obj/machinery/computer/cargo/faction/syndicate/ui_interact(mob/user, datum/tgui/ui)
-	faction_ui_interact(user, ui, "OutpostCommunicationsFactionSyndicate", src)
 
 
 /obj/machinery/computer/cargo/faction/syndicate/generate_pack_data()
@@ -361,6 +366,7 @@
 	name = "inteq outpost console"
 	desc = "That outpost console belongs to Inteq."
 	icon_screen = "ratvar1"
+	faction_theme = "inteq"
 	circuit = /obj/item/circuitboard/computer/cargo
 	light_color = COLOR_TAN_ORANGE
 
@@ -370,9 +376,6 @@
 	podType = /obj/structure/closet/supplypod/centcompod
 
 	charge_account = ACCOUNT_INT
-
-/obj/machinery/computer/cargo/faction/inteq/ui_interact(mob/user, datum/tgui/ui)
-	faction_ui_interact(user, ui, "OutpostCommunicationsFactionInteq", src)
 
 /obj/machinery/computer/cargo/faction/inteq/generate_pack_data()
 	supply_pack_data = generate_faction_pack_data(/datum/faction/inteq)
@@ -388,6 +391,7 @@
 	name = "SolFed outpost console"
 	desc = "That outpost console belongs to SolFed."
 	icon_screen = "vault"
+	faction_theme = "solfed"
 	circuit = /obj/item/circuitboard/computer/cargo
 	light_color = COLOR_DARK_CYAN
 
@@ -397,9 +401,6 @@
 	podType = /obj/structure/closet/supplypod/centcompod
 
 	charge_account = ACCOUNT_SLF
-
-/obj/machinery/computer/cargo/faction/solfed/ui_interact(mob/user, datum/tgui/ui)
-	faction_ui_interact(user, ui, "OutpostCommunicationsFactionSolfed", src)
 
 /obj/machinery/computer/cargo/faction/solfed/generate_pack_data()
 	supply_pack_data = generate_faction_pack_data(/datum/faction/solgov)
@@ -415,6 +416,7 @@
 	name = "Independent outpost console"
 	desc = "That outpost console belongs to Independent faction."
 	icon_screen = "idce"
+	faction_theme = "independent"
 	circuit = /obj/item/circuitboard/computer/cargo
 	light_color = COLOR_VIVID_YELLOW
 
@@ -424,9 +426,6 @@
 	podType = /obj/structure/closet/supplypod/elysiumpod
 
 	charge_account = ACCOUNT_IND
-
-/obj/machinery/computer/cargo/faction/independent/ui_interact(mob/user, datum/tgui/ui)
-	faction_ui_interact(user, ui, "OutpostCommunicationsFactionIndependent", src)
 
 /obj/machinery/computer/cargo/faction/independent/generate_pack_data()
 	supply_pack_data = generate_faction_pack_data(/datum/faction/independent)
@@ -462,6 +461,7 @@
 	name = "Nanotrasen outpost console"
 	desc = "That outpost console belongs to Nanotrasen."
 	icon_screen = "idcentcom"
+	faction_theme = "nt"
 	circuit = /obj/item/circuitboard/computer/cargo
 	light_color = LIGHT_COLOR_DARK_BLUE
 
@@ -471,9 +471,6 @@
 	podType = /obj/structure/closet/supplypod/centcompod
 
 	charge_account = ACCOUNT_NTN
-
-/obj/machinery/computer/cargo/faction/nanotrasen/ui_interact(mob/user, datum/tgui/ui)
-	faction_ui_interact(user, ui, "OutpostCommunicationsFactionNanotrasen", src)
 
 /obj/machinery/computer/cargo/faction/nanotrasen/generate_pack_data()
 	supply_pack_data = generate_faction_pack_data(/datum/faction/nt)
