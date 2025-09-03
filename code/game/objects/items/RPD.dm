@@ -331,11 +331,14 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 	return TRUE
 
 /obj/item/pipe_dispenser/pre_attack(atom/A, mob/user)
-	if(!user.CanReach(A) || bluespace) // so you cannot reverse Grinch pipes into anywhere
+	if(!user.CanReach(A))
 		return
 	else if(!user.IsAdvancedToolUser() || istype(A, /turf/open/space/transit))
 		return ..()
 
+	return try_build_pipe(A, user) ? TRUE : ..()
+
+/obj/item/pipe_dispenser/proc/try_build_pipe(atom/A, mob/user)
 	//So that changing the menu settings doesn't affect the pipes already being built.
 	var/queued_p_type = recipe.id
 	var/queued_p_dir = p_dir
@@ -349,15 +352,13 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 		A = get_turf(A)
 	var/can_make_pipe = (isturf(A) || is_type_in_typecache(A, make_pipe_whitelist))
 
-	. = TRUE
-
-	if((mode & DESTROY_MODE) && istype(A, /obj/item/pipe) || istype(A, /obj/structure/disposalconstruct) || istype(A, /obj/structure/c_transit_tube) || istype(A, /obj/structure/c_transit_tube_pod) || istype(A, /obj/item/pipe_meter))
+	if((mode & DESTROY_MODE) && (istype(A, /obj/item/pipe) || istype(A, /obj/structure/disposalconstruct) || istype(A, /obj/structure/c_transit_tube) || istype(A, /obj/structure/c_transit_tube_pod) || istype(A, /obj/item/pipe_meter)))
 		to_chat(user, span_notice("You start destroying a pipe..."))
 		playsound(get_turf(src), 'sound/machines/click.ogg', 50, TRUE)
 		if(do_after(user, destroy_speed, target = A))
 			activate()
 			qdel(A)
-		return
+		return TRUE
 
 	if((mode & PAINT_MODE))
 		if(istype(A, /obj/machinery/atmospherics/pipe) && !istype(A, /obj/machinery/atmospherics/pipe/layer_manifold))
@@ -365,23 +366,23 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 			to_chat(user, span_notice("You start painting \the [P] [paint_color]..."))
 			playsound(get_turf(src), 'sound/machines/click.ogg', 50, TRUE)
 			if(do_after(user, paint_speed, target = A))
-				P.paint(GLOB.pipe_paint_colors[paint_color]) //paint the pipe
-				user.visible_message(span_notice("[user] paints \the [P] [paint_color]."),span_notice("You paint \the [P] [paint_color]."))
-			return
+				P.paint(GLOB.pipe_paint_colors[paint_color])
+				user.visible_message(span_notice("[user] paints \the [P] [paint_color]."), span_notice("You paint \the [P] [paint_color]."))
+			return TRUE
 		var/obj/item/pipe/P = A
 		if(istype(P) && findtext("[P.pipe_type]", "/obj/machinery/atmospherics/pipe") && !findtext("[P.pipe_type]", "layer_manifold"))
 			to_chat(user, span_notice("You start painting \the [A] [paint_color]..."))
 			playsound(get_turf(src), 'sound/machines/click.ogg', 50, TRUE)
 			if(do_after(user, paint_speed, target = A))
-				A.add_atom_colour(GLOB.pipe_paint_colors[paint_color], FIXED_COLOUR_PRIORITY) //paint the pipe
-				user.visible_message(span_notice("[user] paints \the [A] [paint_color]."),span_notice("You paint \the [A] [paint_color]."))
-			return
+				A.add_atom_colour(GLOB.pipe_paint_colors[paint_color], FIXED_COLOUR_PRIORITY)
+				user.visible_message(span_notice("[user] paints \the [A] [paint_color]."), span_notice("You paint \the [A] [paint_color]."))
+			return TRUE
 
 	if(mode & BUILD_MODE)
 		switch(category) //if we've gotten this var, the target is valid
 			if(ATMOS_CATEGORY) //Making pipes
 				if(!can_make_pipe)
-					return ..()
+					return FALSE
 				playsound(get_turf(src), 'sound/machines/click.ogg', 50, TRUE)
 				if (recipe.type == /datum/pipe_info/meter)
 					to_chat(user, span_notice("You start building a meter..."))
@@ -391,15 +392,16 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 						PM.setAttachLayer(piping_layer)
 						if(mode & WRENCH_MODE)
 							PM.wrench_act(user, src)
+						return TRUE
 				else
 					if(recipe.all_layers == FALSE && (piping_layer == 1 || piping_layer == 5))
 						to_chat(user, span_notice("You can't build this object on the layer..."))
-						return ..()
+						return FALSE
 					to_chat(user, span_notice("You start building a pipe..."))
 					if(do_after(user, atmos_build_speed, target = A))
-						if(recipe.all_layers == FALSE && (piping_layer == 1 || piping_layer == 5))//double check to stop cheaters (and to not waste time waiting for something that can't be placed)
+						if(recipe.all_layers == FALSE && (piping_layer == 1 || piping_layer == 5))
 							to_chat(user, span_notice("You can't build this object on the layer..."))
-							return ..()
+							return FALSE
 						activate()
 						var/obj/machinery/atmospherics/path = queued_p_type
 						var/pipe_item_type = initial(path.construction_type) || /obj/item/pipe
@@ -416,23 +418,24 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 							P.add_atom_colour(GLOB.pipe_paint_colors[paint_color], FIXED_COLOUR_PRIORITY)
 						if(mode & WRENCH_MODE)
 							P.wrench_act(user, src)
+						return TRUE
 
 			if(DISPOSALS_CATEGORY) //Making disposals pipes
 				if(!can_make_pipe)
-					return ..()
-				A = get_turf(A)
-				if(isclosedturf(A))
+					return FALSE
+				var/turf/T = get_turf(A)
+				if(isclosedturf(T))
 					to_chat(user, span_warning("[src]'s error light flickers; there's something in the way!"))
-					return
+					return FALSE
 				to_chat(user, span_notice("You start building a disposals pipe..."))
 				playsound(get_turf(src), 'sound/machines/click.ogg', 50, TRUE)
 				if(do_after(user, disposal_build_speed, target = A))
-					var/obj/structure/disposalconstruct/C = new (A, queued_p_type, queued_p_dir, queued_p_flipped)
+					var/obj/structure/disposalconstruct/C = new (T, queued_p_type, queued_p_dir, queued_p_flipped)
 
 					if(!C.can_place())
 						to_chat(user, span_warning("There's not enough room to build that here!"))
 						qdel(C)
-						return
+						return FALSE
 
 					activate()
 
@@ -440,27 +443,26 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 					C.update_appearance()
 					if(mode & WRENCH_MODE)
 						C.wrench_act(user, src)
-					return
+					return TRUE
 
 			if(TRANSIT_CATEGORY) //Making transit tubes
 				if(!can_make_pipe)
-					return ..()
-				A = get_turf(A)
-				if(isclosedturf(A))
+					return FALSE
+				var/turf/T = get_turf(A)
+				if(isclosedturf(T))
 					to_chat(user, span_warning("[src]'s error light flickers; there's something in the way!"))
-					return
+					return FALSE
 				to_chat(user, span_notice("You start building a transit tube..."))
 				playsound(get_turf(src), 'sound/machines/click.ogg', 50, TRUE)
 				if(do_after(user, transit_build_speed, target = A))
 					activate()
 					if(queued_p_type == /obj/structure/c_transit_tube_pod)
-						var/obj/structure/c_transit_tube_pod/pod = new /obj/structure/c_transit_tube_pod(A)
+						var/obj/structure/c_transit_tube_pod/pod = new /obj/structure/c_transit_tube_pod(T)
 						pod.add_fingerprint(usr)
 						if(mode & WRENCH_MODE)
 							pod.wrench_act(user, src)
-
 					else
-						var/obj/structure/c_transit_tube/tube = new queued_p_type(A)
+						var/obj/structure/c_transit_tube/tube = new queued_p_type(T)
 						tube.setDir(queued_p_dir)
 
 						if(queued_p_flipped)
@@ -470,9 +472,9 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 						tube.add_fingerprint(usr)
 						if(mode & WRENCH_MODE)
 							tube.wrench_act(user, src)
-					return
-			else
-				return ..()
+					return TRUE
+
+	return FALSE
 
 /obj/item/pipe_dispenser/proc/activate()
 	playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, TRUE)
@@ -523,19 +525,20 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 	else
 		. += "<hr>Не могу разглядеть заряд отсюда."
 
-/obj/item/pipe_dispenser/bluespace/afterattack(atom/target, mob/user, prox)
-	if(prox) // If we are in proximity to the target, don't use charge and don't call this shitcode.
-		return ..()
-	if(bs_capac < (bs_use * (bs_prog + 1)))
+/obj/item/pipe_dispenser/bluespace/afterattack(atom/target, mob/user, proximity_flag)
+	if(proximity_flag)
+		return try_build_pipe(target, user) ? TRUE : ..()
+
+	if(bs_capac < bs_use)
 		to_chat(user, span_warning("Ох, [src] не имеет заряда."))
 		return FALSE
-	bs_prog++ // So people can't just spam click and get more uses
+
 	user.Beam(target, icon_state = "rped_upgrade", time = 1 SECONDS)
-	if(pre_attack(target, user))
-		bs_prog--
+
+	if(try_build_pipe(target, user))
 		bs_capac -= bs_use
 		return TRUE
-	bs_prog--
+
 	return FALSE
 
 #undef BSRPD_CAPAC_MAX
