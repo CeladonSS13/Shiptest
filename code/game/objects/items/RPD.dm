@@ -216,7 +216,7 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 	var/static/datum/pipe_info/first_disposal
 	var/static/datum/pipe_info/first_transit
 	var/mode = BUILD_MODE | DESTROY_MODE | WRENCH_MODE
-	var/bluespace = FALSE	//	Да я знаю что это шиткодинг, но мне впадлу это чинить
+	var/bluespace = FALSE	// [CELADON-ADD] -
 
 /obj/item/pipe_dispenser/Initialize()
 	. = ..()
@@ -331,7 +331,7 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 	return TRUE
 
 /obj/item/pipe_dispenser/pre_attack(atom/A, mob/user)
-	if(!user.CanReach(A))
+	if(!user.CanReach(A)) // so you cannot reverse Grinch pipes into anywhere
 		return
 	else if(!user.IsAdvancedToolUser() || istype(A, /turf/open/space/transit))
 		return ..()
@@ -394,7 +394,7 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 							PM.wrench_act(user, src)
 						return TRUE
 				else
-					if(recipe.all_layers == FALSE && (piping_layer == 1 || piping_layer == 5))
+					if(recipe.all_layers == FALSE && (piping_layer == 1 || piping_layer == 5))//double check to stop cheaters (and to not waste time waiting for something that can't be placed)
 						to_chat(user, span_notice("You can't build this object on the layer..."))
 						return FALSE
 					to_chat(user, span_notice("You start building a pipe..."))
@@ -479,58 +479,56 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 /obj/item/pipe_dispenser/proc/activate()
 	playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, TRUE)
 
-#define BSRPD_CAPAC_MAX 250
+#define BSRPD_CAPAC_MAX 50
 #define BSRPD_CAPAC_USE 1
-#define BSRPD_CAPAC_NEW 125
+#define BSRPD_CAPAC_NEW 5
 
 /obj/item/pipe_dispenser/bluespace
 	name = "Bluespace-RPD"
-	desc = "Пример, когда технологии позволяют не свариться в собственном соку при постройке очередного двигателя."
+	desc = "A breakthrough in pipe-laying technology prevents you from being burned to a crisp while building yet another engine."
 	icon_state = "rpd_ranged"
 	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
 	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
-	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
-	custom_materials = null
 	var/bs_capac = BSRPD_CAPAC_MAX
 	var/bs_use = BSRPD_CAPAC_USE
 	var/bs_prog = 0
 	bluespace = TRUE
 
 /obj/item/pipe_dispenser/bluespace/attackby(obj/item/item, mob/user, param)
-	if(istype(item, /obj/item/stack/sheet/bluespace_crystal))
+	if(istype(item, list(/obj/item/stack/sheet/bluespace_crystal, /obj/item/stack/ore/bluespace_crystal)))
 		if(BSRPD_CAPAC_NEW > (BSRPD_CAPAC_MAX - bs_capac) || bs_use == 0)
-			to_chat(user, span_warning("Не могу больше зарядить [src]!"))
+			to_chat(user, span_warning("[src] is at maximum charge capacity!"))
 			return
 		item.use(1)
-		to_chat(user, span_notice("Перезаряжаю блюспейс-конденсатор внутри [src]"))
+		to_chat(user, span_notice("Recharging the bluespace capacitor inside [src]"))
 		bs_capac += BSRPD_CAPAC_NEW
 		return
 	if(istype(item, /obj/item/assembly/signaler/anomaly/bluespace))
 		if(bs_use)
-			to_chat(user, span_notice("Вставляю [item] в [src]; теперь эта штука будет работать намного дольше!"))
+			to_chat(user, span_notice("Installing [item] into [src]; now this thing will work much forever!"))
 			bs_use = 0
 			qdel(item)
 		else
-			to_chat(user, span_warning("Куда заряжать [src] больше то!"))
+			to_chat(user, span_warning("Where to charge [src] more then!"))
 		return
 	return ..()
 
 /obj/item/pipe_dispenser/bluespace/examine(mob/user)
 	. = ..()
 	if(user.Adjacent(src))
-		. += "<hr>На данный момент имеет [bs_use == 0 ? "бесконечное количество" : bs_capac / bs_use] зарядов в остатке."
+		. += "Currently it has [bs_use == 0 ? "INFINITY" : bs_capac / bs_use] of charges."
 		if(bs_use != 0)
-			. += "\nБлюспейс-ядро не установлено."
+			. += "\nThe bluespace core is not installed."
 	else
-		. += "<hr>Не могу разглядеть заряд отсюда."
+		. += "I can't see from here."
 
 /obj/item/pipe_dispenser/bluespace/afterattack(atom/target, mob/user, proximity_flag)
 	if(proximity_flag)
 		return try_build_pipe(target, user) ? TRUE : ..()
 
 	if(bs_capac < bs_use)
-		to_chat(user, span_warning("Ох, [src] не имеет заряда."))
+		to_chat(user, span_warning("[src] has no charge."))
 		return FALSE
 
 	user.Beam(target, icon_state = "rped_upgrade", time = 1 SECONDS)

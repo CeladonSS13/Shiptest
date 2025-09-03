@@ -19,7 +19,7 @@
 
 	var/medicalTricorder = FALSE	//Set to TRUE for normal medical scanner, set to FALSE for a gutted version
 
-/*
+/*	// Оставленая фишка для суицида если вдруг вернутся в билд
 /obj/item/multitool/tricorder/suicide_act(mob/living/carbon/user)
 	user.visible_message(span_suicide("[user] пробует провести глубокий анализ себя!"))
 	return BRUTELOSS
@@ -27,6 +27,8 @@
 
 /obj/item/multitool/tricorder/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
 	. = ..()
+	if(mode > 0 && !istype(target, /mob/living))
+		return
 	if(can_see(user, target, ranged_scan_distance))
 		switch(mode)
 			if(0)
@@ -35,8 +37,7 @@
 				healthscan(user, target, advanced = TRUE)
 			if(2)
 				chemscan(user, target)
-	var/sound_to_play = mode ? 'sound/effects/fastbeep.ogg' : 'sound/effects/pop.ogg'
-	playsound(src, sound_to_play, 10)
+	playsound(src, mode ? 'sound/effects/fastbeep.ogg' : 'sound/effects/pop.ogg', 50)
 
 // Дебаговский трикодер
 /obj/item/multitool/tricorder/debug
@@ -86,7 +87,7 @@
 	desc = "A hand-held long-range environmental scanner which reports current gas levels."
 	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
 	icon_state = "analyzerranged"
-	custom_materials = list(/datum/material/iron = 400, /datum/material/glass = 1000, /datum/material/gold = 200, /datum/material/plastic = 200)
+	custom_materials = list(/datum/material/iron = 400, /datum/material/glass = 1000, /datum/material/gold = 200)
 	var/ranged_scan_distance = 15
 
 /obj/item/analyzer/ranged/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
