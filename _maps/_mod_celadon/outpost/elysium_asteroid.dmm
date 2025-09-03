@@ -423,7 +423,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/ebony,
 /area/outpost/fraction/solfed)
 "arC" = (
@@ -753,15 +752,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/cargo)
-"aGx" = (
-/obj/structure/bodycontainer/morgue{
-	dir = 8
-	},
-/obj/effect/mob_spawn/human/corpse/assistant/husked{
-	short_desc = "Тело все истощено. Местами оборвана одежда, видны следы укусов. На полу ногтями высечено имя Энди и стрелка указывающая на сломаную дверь."
-	},
-/turf/open/floor/plasteel/heavymetal/var4,
-/area/outpost/medical/morgue)
 "aGI" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/effect/decal/cleanable/dirt,
@@ -2463,10 +2453,6 @@
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/engineering)
-"bUz" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood/ebony,
-/area/outpost/fraction/solfed)
 "bVj" = (
 /obj/effect/turf_decal/trimline/opaque/nsorange/line{
 	dir = 4
@@ -6010,6 +5996,9 @@
 	icon_state = "0-1"
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
+/obj/effect/mob_spawn/human/corpse/assistant/husked{
+	short_desc = "Тело все истощено. Местами оборвана одежда, видны следы укусов. На полу ногтями высечено имя Энди и стрелка указывающая на сломаную дверь."
+	},
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/outpost/medical/morgue)
 "ewN" = (
@@ -8956,7 +8945,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/ebony,
 /area/outpost/fraction/solfed)
@@ -14049,7 +14037,7 @@
 /area/outpost/hallway/central)
 "klW" = (
 /obj/structure/chair/sofa/brown/right/directional/north,
-/obj/machinery/airalarm/directional/south,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/sepia,
 /area/outpost/crew/canteen)
 "kmS" = (
@@ -17231,7 +17219,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/ebony,
 /area/outpost/fraction/solfed)
 "mJM" = (
@@ -17594,11 +17581,6 @@
 /obj/effect/turf_decal/industrial/warning,
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
-"naU" = (
-/obj/structure/chair/wood,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood/ebony,
-/area/outpost/fraction/solfed)
 "nbM" = (
 /turf/closed/indestructible/rock/schist,
 /area/outpost/maintenance/aft)
@@ -20966,7 +20948,7 @@
 /turf/open/floor/concrete/slab_1,
 /area/outpost/hallway/aft)
 "pBt" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/plasteel/sepia,
 /area/outpost/crew/canteen)
 "pBN" = (
@@ -21876,7 +21858,6 @@
 	color = "#543C30";
 	dir = 10
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/solfed)
@@ -24848,8 +24829,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/ebony,
 /area/outpost/fraction/solfed)
 "stv" = (
@@ -30790,7 +30769,6 @@
 "wFN" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/effect/decal/cleanable/dirt,
 /obj/item/radio/intercom/directional/west,
 /turf/open/floor/wood/ebony,
 /area/outpost/fraction/solfed)
@@ -30832,7 +30810,6 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/outpost/fraction/inteq)
 "wHI" = (
-/obj/machinery/power/apc/auto_name/directional/west,
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
 	},
@@ -42755,8 +42732,8 @@ tea
 qUN
 nSi
 kbu
-bUz
-bUz
+uVb
+uVb
 guh
 nSi
 kax
@@ -43318,7 +43295,7 @@ nSi
 bJz
 eEG
 piS
-ssI
+yen
 ole
 pdc
 pdc
@@ -43505,7 +43482,7 @@ nSi
 nSi
 nSi
 tOE
-yen
+ssI
 nSi
 kax
 kax
@@ -43683,7 +43660,7 @@ pSt
 asz
 sNy
 srp
-bUz
+uVb
 gPz
 nSi
 nSi
@@ -43878,7 +43855,7 @@ nSi
 sSt
 bpf
 ope
-bUz
+uVb
 nEU
 kVq
 pdc
@@ -44057,12 +44034,12 @@ dSM
 kBt
 nSi
 lsK
-bUz
+uVb
 afn
 bpf
 dyJ
 nSi
-bUz
+uVb
 bpf
 kfK
 art
@@ -44244,15 +44221,15 @@ aJF
 kBt
 nSi
 mWp
-bUz
+uVb
 afn
 bpf
 uVb
 kVH
-bUz
+uVb
 bpf
 ope
-bUz
+uVb
 cBJ
 kVq
 pdc
@@ -44432,11 +44409,11 @@ kBt
 nSi
 qeb
 mJx
-naU
+afn
 bpf
 qwa
 nSi
-bUz
+uVb
 bpf
 bVP
 mJx
@@ -44623,10 +44600,10 @@ uVb
 uVb
 uVb
 dWK
-bUz
+uVb
 bpf
 ope
-bUz
+uVb
 khQ
 kVq
 pdc
@@ -44813,7 +44790,7 @@ nSi
 uVb
 bpf
 ope
-bUz
+uVb
 cBJ
 nSi
 kax
@@ -58637,7 +58614,7 @@ qHi
 uaw
 sTl
 gxt
-aGx
+gxt
 uaw
 ofJ
 rTz
