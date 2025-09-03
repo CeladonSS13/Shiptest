@@ -25,6 +25,7 @@ FIXES_GOLIATH_TENTACLES
 FIXES_SHIP_LOGIN_DOUBLE_NAME
 FIXES_WETHIDE
 FIXES_DRILLCLASS
+FIXES_MOTH_EATING_CLOTHING
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -182,6 +183,9 @@ FIXES_DRILLCLASS - **Фикс бесконечного спавна мобов �
 
 FIXES_MOVE_DIAGONAL_MOBS
 - EDIT: `code/modules/mob/living/simple_animal/simple_animal.dm`
+
+FIXES_MOTH_EATING_CLOTHING
+- EDIT: `code/modules/clothing/clothing.dm` - Фикс поедание молями еды в виде одежды. Убираем создание временных новых объектов еды, обращаемся напрямую к объектам еды
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
