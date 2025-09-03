@@ -25,6 +25,7 @@ FIXES_GOLIATH_TENTACLES
 FIXES_SHIP_LOGIN_DOUBLE_NAME
 FIXES_WETHIDE
 FIXES_DRILLCLASS
+FIXES_MOTH_EATING_CLOTHING
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -180,9 +181,9 @@ FIXES_DRILLCLASS - **Фикс бесконечного спавна мобов �
 - EDIT: `code/modules/mining/ore_veins.dm` - Добавлена проверка `QDELETED(our_drill)` в `increment_wave_tally()` для защиты от удаленных буров
 - EDIT: `code/modules/mining/ore_veins.dm` - Балансировка жил класса 4: `max_mobs = 4` (было 6), `spawn_time = 12 SECONDS` (было 8), `wave_length = 30 SECONDS` (было 45)
 
-FIXES_OFFERING_EFFECTS
-- ADD: `code/datums/status_effects/neutral.dm`
-- EDIT: `code/modules/mob/living/carbon/inventory.dm`
+
+FIXES_MOTH_EATING_CLOTHING
+- EDIT: `code/modules/clothing/clothing.dm` - Фикс поедание молями еды в виде одежды. Убираем создание временных новых объектов еды, обращаемся напрямую к объектам еды
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
@@ -245,3 +246,7 @@ RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFa
   Если работал совместно - никнеймы тех, кто помогал.
   В случае порта чего-либо должна быть ссылка на источник.
 -->
+
+FIXES_OFFERING_EFFECTS
+- ADD: `code/datums/status_effects/neutral.dm`
+- EDIT: `code/modules/mob/living/carbon/inventory.dm`
