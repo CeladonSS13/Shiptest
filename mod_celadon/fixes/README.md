@@ -180,9 +180,6 @@ FIXES_DRILLCLASS - **Фикс бесконечного спавна мобов �
 - EDIT: `code/modules/mining/ore_veins.dm` - Добавлена проверка `QDELETED(our_drill)` в `increment_wave_tally()` для защиты от удаленных буров
 - EDIT: `code/modules/mining/ore_veins.dm` - Балансировка жил класса 4: `max_mobs = 4` (было 6), `spawn_time = 12 SECONDS` (было 8), `wave_length = 30 SECONDS` (было 45)
 
-FIXES_PIZZABOX_AND_PIZZA - фиксим коробки с пиццей и возможность расам есть любимое блюдо с их ингридиентами, даже если там есть то что они не любят
-- ADD: `code/modules/food_and_drinks/pizzabox.dm`
-- ADD: `code/datums/components/food/edible.dm`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
