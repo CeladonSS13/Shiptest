@@ -86,8 +86,14 @@
 			var/list/purchasing = params["cart"]
 			var/total_cost = text2num(params["total"])
 			var/area/current_area = get_area(src)
-			var/datum/supply_pack/pack = SSshuttle.supply_packs[text2path(params["id"])]
-			if(!pack || !charge_account?.has_money(pack.cost) || !istype(current_area))
+			var/list/packs = list()
+			for(var/item in purchasing)
+				var/id = item["id"]
+				var/datum/supply_pack/pack = SSshuttle.supply_packs[text2path(id)]
+				if(pack)
+					packs += pack
+
+			if(!length(packs) || !charge_account?.has_money(total_cost) || !istype(current_area))
 				playsound(src, 'sound/machines/buzz-sigh.ogg', 50, TRUE)
 				if(!charge_account.adjust_money(-total_cost, CREDIT_LOG_CARGO))
 					say("ERROR: Insufficent funds! Transaction canceled.")
@@ -95,14 +101,15 @@
 					return
 
 			var/turf/landing_turf
-			if(!use_beacon)// find a suitable supplypod landing zone in cargobay
+			if(!use_beacon)
 				var/list/empty_turfs = list()
 				if(!landingzone)
 					reconnect()
 					if(!landingzone)
 						WARNING("[src] couldnt find a Ship/Cargo (aka cargobay) area on a ship, and as such it has set the supplypod landingzone to the area it resides in.")
 						landingzone = get_area(src)
-				for(var/turf/open/floor/T in landingzone.contents)//uses default landing zone
+
+				for(var/turf/open/floor/T in landingzone.contents)
 					if(T.is_blocked_turf())
 						continue
 					empty_turfs += T
@@ -116,7 +123,7 @@
 				landing_turf = pick(empty_turfs)
 
 			if(landing_turf && charge_account.adjust_money(-total_cost))
-				var/datum/supply_order/SO = new(pack, usr.ckey, "")
+				var/datum/supply_order/SO = new(packs, usr.ckey, "")
 				new /obj/effect/pod_landingzone(landing_turf, podType, SO)
 				playsound(src, 'sound/machines/twobeep_high.ogg', 50, TRUE)
 				say("Order incoming!")
