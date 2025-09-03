@@ -308,6 +308,11 @@ Behavior that's still missing from this component that original food items had t
 	var/fullness = eater.nutrition + 10 //The theoretical fullness of the person eating if they were to eat this
 
 	var/time_to_eat = (eater = feeder) ? eat_time : EAT_TIME_FORCE_FEED
+	// [CELADON-ADD] - FIXES_VORACIOUS
+	// Voracious trait makes eating faster
+	if(eater == feeder && HAS_TRAIT(eater, TRAIT_VORACIOUS))
+		time_to_eat *= 0.5 // Eat twice as fast
+	// [/CELADON-ADD]
 
 	if(eater == feeder)//If you're eating it yourself.
 		if(eat_time && !do_after(feeder, time_to_eat, eater, timed_action_flags = food_flags & FOOD_FINGER_FOOD ? IGNORE_USER_LOC_CHANGE | IGNORE_TARGET_LOC_CHANGE : NONE)) //Gotta pass the minimal eat time
