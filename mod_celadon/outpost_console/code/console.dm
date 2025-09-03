@@ -130,6 +130,25 @@
 				update_appearance()
 				return TRUE
 
+		if("mission-act")
+			var/datum/mission/mission = locate(params["ref"])
+			var/obj/docking_port/mobile/D = SSshuttle.get_containing_shuttle(src)
+			var/datum/overmap/ship/controlled/ship = D.current_ship
+			var/datum/overmap/outpost/outpost = ship.docked_to
+			if(!istype(outpost) || mission.source_outpost != outpost) // important to check these to prevent href fuckery
+				return
+			if(!mission.accepted)
+				if(LAZYLEN(ship.missions) >= ship.max_missions)
+					return
+				mission.accept(ship, loc)
+				return TRUE
+			else if(mission.servant == ship)
+				if(mission.can_complete())
+					mission.turn_in()
+				// else
+				// 	mission.give_up() // NEEDS_TO_FIX_ALARM!
+				return TRUE
+
 /obj/machinery/computer/cargo/faction/proc/faction_ui_interact(mob/user, datum/tgui/ui, var/text, obj/src)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)

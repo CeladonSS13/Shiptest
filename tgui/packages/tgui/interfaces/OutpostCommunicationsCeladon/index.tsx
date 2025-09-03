@@ -1,9 +1,9 @@
 import { useBackend, useSharedState } from '../../backend';
-import { Section, Tabs, Button, LabeledList, Stack } from '../../components';
+import { ProgressBar, Section, Tabs, Button, LabeledList, Box, Stack } from '../../components';
 import { Window } from '../../layouts';
 
 import { CargoCatalog } from './Catalog';
-import { Data } from './types';
+import { Mission, Data } from './types';
 
 export const OutpostCommunicationsCeladon = (props, context) => {
   const { act, data } = useBackend<Data>(context);
@@ -18,12 +18,22 @@ export const OutpostCommunicationsCeladon = (props, context) => {
             <Stack textAlign="center">
               <Stack.Item>
                 <Tabs>
-                  <Tabs.Tab
-                    selected={tab === 'cargo'}
-                    onClick={() => setTab('cargo')}
-                  >
-                    Cargo
-                  </Tabs.Tab>
+                  {!!onShip && (
+                    <Tabs.Tab
+                      selected={tab === 'shipMissions'}
+                      onClick={() => setTab('shipMissions')}
+                    >
+                      Current Missions
+                    </Tabs.Tab>
+                  )}
+                  {!!outpostDocked && (
+                    <Tabs.Tab
+                      selected={tab === 'outpostMissions'}
+                      onClick={() => setTab('outpostMissions')}
+                    >
+                      Available Missions
+                    </Tabs.Tab>
+                  )}
                 </Tabs>
               </Stack.Item>
               <Stack.Item>
@@ -42,6 +52,8 @@ export const OutpostCommunicationsCeladon = (props, context) => {
           }
         />
         {tab === 'cargo' && <CargoExpressContent />}
+        {tab === 'shipMissions' && !!onShip && <ShipMissionsContent />}
+        {tab === 'outpostMissions' && !!outpostDocked && (<OutpostMissionsContent />)}
       </Window.Content>
     </Window>
   );
@@ -60,4 +72,98 @@ const CargoExpressContent = (props, context) => {
       <CargoCatalog />
     </>
   );
+};
+
+const ShipMissionsContent = (props, context) => {
+  const { data } = useBackend<Data>(context);
+  const { numMissions, maxMissions, outpostDocked, shipMissions } = data;
+  return (
+    <Section title={'Current Missions ' + numMissions + '/' + maxMissions}>
+      <MissionsList showButton={outpostDocked} missions={shipMissions} />
+    </Section>
+  );
+};
+
+const OutpostMissionsContent = (props, context) => {
+  const { data } = useBackend<Data>(context);
+  const { numMissions, maxMissions, outpostDocked, outpostMissions } = data;
+  const disabled = numMissions >= maxMissions;
+  return (
+    <Section title={'Available Missions ' + numMissions + '/' + maxMissions}>
+      <MissionsList
+        showButton={outpostDocked}
+        missions={outpostMissions}
+        disabled={disabled}
+        tooltip={(disabled && 'You have too many missions!') || null}
+      />
+    </Section>
+  );
+};
+
+const MissionsList = (props, context) => {
+  const showButton = props.showButton as Boolean;
+  const disabled = props.disabled as Boolean;
+  const tooltip = props.tooltip as string;
+  const missionsArray = props.missions as Array<Mission>;
+  const { act } = useBackend(context);
+  //   const { numMissions, maxMissions } = data;
+
+  const buttonJSX = (mission: Mission, tooltip: string, disabled: Boolean) => {
+    return (
+      <Button
+        disabled={disabled}
+        tooltip={tooltip}
+        onClick={() =>
+          act('mission-act', {
+            ref: mission.ref,
+          })
+        }
+      >
+        {mission.actStr}
+      </Button>
+    );
+  };
+
+  const missionValues = (mission: Mission) => (
+    <Stack vertical>
+      <Stack.Item>
+        <Box inline mx={1}>
+          {`${mission.value} cr, completed: ${mission.progressStr}`}
+        </Box>
+      </Stack.Item>
+
+      <Stack.Item>
+        <ProgressBar
+          ranges={{
+            good: [0.75, 1],
+            average: [0.25, 0.75],
+            bad: [0, 0.25],
+          }}
+          value={mission.remaining / mission.duration}
+        >
+          {mission.timeStr}
+        </ProgressBar>
+      </Stack.Item>
+
+      <Stack.Item>
+        {(showButton && buttonJSX(mission, tooltip, disabled)) || undefined}
+      </Stack.Item>
+    </Stack>
+  );
+
+  const missionJSX = missionsArray.map((mission: Mission) => (
+    <>
+      <LabeledList.Item
+        verticalAlign="top"
+        labelWrap
+        label={mission.name}
+        buttons={missionValues(mission)}
+      >
+        {mission.desc}
+      </LabeledList.Item>
+      <LabeledList.Divider />
+    </>
+  ));
+
+  return <LabeledList>{missionJSX}</LabeledList>;
 };
