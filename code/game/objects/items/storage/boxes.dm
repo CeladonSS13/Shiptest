@@ -1443,6 +1443,7 @@
 		)
 	generate_items_inside(items_inside,src)
 
+// [CELADON-EDIT] - OMNI_TOOLS
 /obj/item/storage/box/cashbundledebug
 	name = "box of cash bundle"
 	icon_state = "secbox"
@@ -1451,6 +1452,7 @@
 /obj/item/storage/box/cashbundledebug/PopulateContents()
 	for(var/i in 1 to 5)
 		new /obj/item/spacecash/bundle/c10000(src)
+// [/CELADON-EDIT]
 
 /obj/item/storage/box/debugtools
 	name = "box of debug tools"
@@ -1464,8 +1466,11 @@
 		/obj/item/pda=1,\
 		/obj/item/modular_computer/tablet/preset/advanced=1,\
 		/obj/item/geiger_counter=1,\
+		/obj/item/construction/rcd/combat/admin=1,\
+		/obj/item/pipe_dispenser=1,\
 		/obj/item/card/emag=1,\
 		/obj/item/spacecash/bundle/c10000=5,\
+		/obj/item/healthanalyzer/advanced=1,\
 		/obj/item/disk/tech_disk/debug=1,\
 		/obj/item/uplink/debug=1,\
 		/obj/item/uplink/nuclear/debug=1,\
@@ -1483,6 +1488,7 @@
 		/obj/item/flashlight/emp/debug=1,\
 		/obj/item/modular_computer/tablet/preset/advanced=1,\
 		/obj/item/geiger_counter=1,\
+		/obj/item/construction/rcd/arcd/debug=1,\
 		/obj/item/card/emag=1,\
 		/obj/item/disk/tech_disk/debug=1,\
 		/obj/item/uplink/debug=1,\

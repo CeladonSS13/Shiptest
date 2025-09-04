@@ -110,18 +110,18 @@
 	new /obj/item/crowbar/power(src)
 	new /obj/item/weldingtool/electric(src)
 	new /obj/item/multitool/tricorder(src)
-	new /obj/item/stack/cable_coil(src,MAXCOIL,pick("red","yellow","orange"))
 	new /obj/item/pipe_dispenser(src)
 	new /obj/item/inducer(src)
+	new /obj/item/stack/cable_coil(src,MAXCOIL,pick("red","yellow","orange"))
 
 /obj/item/storage/belt/utility/chief/debug/full/PopulateContents()
 	new /obj/item/screwdriver/power(src)
 	new /obj/item/crowbar/power(src)
 	new /obj/item/weldingtool/electric(src)
 	new /obj/item/multitool/tricorder/range(src)
-	new /obj/item/construction/rcd/arcd/debug(src)
 	new /obj/item/pipe_dispenser/bluespace(src)
 	new /obj/item/inducer/debug(src)
+	new /obj/item/stack/cable_coil(src,MAXCOIL,"cyan")
 // [/CELADON-EDIT]
 
 /obj/item/storage/belt/utility/full/PopulateContents()
