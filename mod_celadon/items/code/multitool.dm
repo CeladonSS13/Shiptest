@@ -29,7 +29,7 @@
 	. = ..()
 	if(mode > 0 && !istype(target, /mob/living))
 		return
-	if(istype(istype(target, /turf/closed/))
+	if(istype(target, /turf/closed/))
 		return
 	if(can_see(user, target, ranged_scan_distance))
 		switch(mode)
@@ -97,3 +97,28 @@
 	if(!can_see(user, target, ranged_scan_distance))
 		return
 	atmosanalyzer_scan(user=user, target=get_turf(src), silent=FALSE)
+
+/obj/item/healthanalyzer/range
+	name = "long-range health analyzer"
+	desc = "A handheld body scanner capable of accurately detecting the patient's vital signs from a distance."
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
+	icon_state = "rangeanalyzer"
+	item_state = "rangeanalyzer"
+	healthmode = "rangeanalyzer"
+	reagentmode = "rangereagentanalyzer"
+	healthmodeinhand = "rangeanalyzer"
+	reagentmodeinhand = "rangereagentanalyzer"
+	works_from_distance = TRUE
+
+/obj/item/healthanalyzer/advanced
+	works_from_distance = TRUE
+
+/obj/item/healthanalyzer/afterattack(mob/living/M, mob/living/carbon/human/user, adjacent, params)
+	. = ..()
+	if(adjacent || !istype(M))
+		return ..()
+	if(works_from_distance)
+		M.Beam(user, icon_state = "medbeam", time = 5, beam_color = "#9ce")
+		attack(M, user)
+		return
+	return ..()
