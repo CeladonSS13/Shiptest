@@ -109,6 +109,7 @@
 	healthmodeinhand = "rangeanalyzer"
 	reagentmodeinhand = "rangereagentanalyzer"
 	works_from_distance = TRUE
+	custom_premium_price = 1000
 
 /obj/item/healthanalyzer/advanced
 	works_from_distance = TRUE
