@@ -83,7 +83,7 @@
 	name = "tricorder"
 	desc = "A multifunctional device that can perform a wide range of tasks."
 	icon_state = "tricorder"
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/tools.dmi'
 	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/multitool_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/multitool_righthand.dmi'
 	usesound = 'sound/weapons/etherealhit.ogg'
@@ -119,10 +119,14 @@
 /obj/item/multitool/tricorder/range
 	name = "long-range tricorder"
 	desc = "A multifunctional device that can perform a wide range of tasks. A hand-held long-range environmental scanner which reports current gas levels."
-	icon_state = "tricorder_atmos"
+	icon_state = "tricorder_ranged"
 	medicalTricorder = TRUE
 	ranged_scan_distance = 15
 	var/modes = "atmos"
+
+/obj/item/multitool/tricorder/range/Initialize()
+	. = ..()
+	update_appearance(UPDATE_ICON)
 
 /obj/item/multitool/tricorder/range/examine()
 	. = ..()
@@ -141,7 +145,18 @@
 
 	playsound(get_turf(user), 'sound/machines/click.ogg', 50, TRUE)
 	balloon_alert(user, "[modes] scan")
-	icon_state = "tricorder_[modes]"
+	update_appearance(UPDATE_ICON)
+
+/obj/item/multitool/tricorder/range/update_overlays()
+	. = ..()
+	if(modes)
+		switch(mode)
+			if(0)
+				. += "atmos_overlay"
+			if(1)
+				. += "health_overlay"
+			if(2)
+				. += "chem_overlay"
 
 /obj/item/construction/rcd/arcd/debug
 	max_matter = INFINITY
@@ -152,6 +167,8 @@
 /obj/item/inducer/debug
 	icon_state = "inducer-adv"
 	desc = "A tool for inductively charging internal power cells. This one has a white-bluespace color scheme, and seems to be rigged to transfer charge at a much faster rate."
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/overlay/tools_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
 	cell_type = null
 	powertransfer = 4000
 	cell_type = /obj/item/stock_parts/cell/bluespace
@@ -159,24 +176,25 @@
 // MARK: Рескины
 
 /obj/item/multitool
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
-
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/tools.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/overlay/tools_lefthand.dmi'
 
 /obj/item/construction/rcd/arcd
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/tools.dmi'
 
 /obj/item/construction/plumbing
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/tools.dmi'
 
 /obj/item/inducer
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/tools.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/overlay/tools_lefthand.dmi'
 
 // MARK: Газ Анализатор
 
 /obj/item/analyzer/ranged
 	name = "long-range gas analyzer"
 	desc = "A hand-held long-range environmental scanner which reports current gas levels."
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/tools.dmi'
 	icon_state = "analyzerranged"
 	custom_materials = list(/datum/material/iron = 400, /datum/material/glass = 1000, /datum/material/gold = 200)
 	var/ranged_scan_distance = 15
@@ -192,7 +210,7 @@
 /obj/item/healthanalyzer/range
 	name = "long-range health analyzer"
 	desc = "A handheld body scanner capable of accurately detecting the patient's vital signs from a distance."
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/tools.dmi'
 	icon_state = "rangeanalyzer"
 	item_state = "rangeanalyzer"
 	healthmode = "rangeanalyzer"
@@ -224,8 +242,8 @@
 	name = "Bluespace-RPD"
 	desc = "A breakthrough in pipe-laying technology prevents you from being burned to a crisp while building yet another engine."
 	icon_state = "rpd_ranged"
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
-	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/tools.dmi'
+	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/overlay/tools_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
 	var/bs_capac = BSRPD_CAPAC_MAX
 	var/bs_use = BSRPD_CAPAC_USE
