@@ -243,8 +243,13 @@
 				if(!(stop_automated_movement_when_pulled && pulledby)) //Some animals don't move when pulled
 					var/anydir = pick(GLOB.cardinals)
 					if(Process_Spacemove(anydir))
-						Move(get_step(src, anydir), anydir)
-						turns_since_move = 0
+						// [CELADON-EDIT] - FIXES_MOVE_DIAGONAL_MOBS - Проверка на диагональное движение
+						// Move(get_step(src, anydir), anydir) // ORIGINAL
+						var/turf/target = get_step(src, anydir)
+						if(target && can_move_to_turf(target, anydir))
+							Move(target, anydir)
+						// [/CELADON-EDIT]
+							turns_since_move = 0
 			return 1
 
 /mob/living/simple_animal/proc/handle_automated_speech(override)

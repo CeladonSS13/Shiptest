@@ -136,14 +136,16 @@
 				var/datum/component/material_container/mats = GetComponent(/datum/component/material_container)
 				for(var/datum/material/mat in D.materials)
 					max_multiplier = min(D.maxstack, round(mats.get_material_amount(mat)/D.materials[mat]))
-				if (max_multiplier>10 && !disabled)
-					m10 = TRUE
 // [CELADON-EDIT] - CELADON_QOL - AUTOLATE_MAXSTACK
+//				if (max_multiplier>10 && !disabled)
+//					m10 = TRUE
 //				if (max_multiplier>25 && !disabled)
 //					m25 = TRUE
-				if (max_multiplier>15 && !disabled)
+				if (max_multiplier>=10 && !disabled)
+					m10 = TRUE
+				if (max_multiplier>=15 && !disabled)
 					m15 = TRUE
-				if (max_multiplier>30 && !disabled)
+				if (max_multiplier>=30 && !disabled)
 					m30 = TRUE
 // [/CELADON-EDIT]
 		else
