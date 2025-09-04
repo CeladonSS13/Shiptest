@@ -202,7 +202,7 @@
 	display_name = "Anomaly Research"
 	description = "Unlock the potential of the mysterious anomalies that appear throughout the sector."
 	prereq_ids = list("adv_engi", "practical_bluespace")
-	design_ids = list("reactive_armour", "anomaly_neutralizer")
+	design_ids = list("reactive_armour", "anomaly_neutralizer", "bs_rpd")	// [CECADON-ADD] -
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000
 
@@ -257,7 +257,7 @@
 	display_name = "Applied Bluespace Research"
 	description = "Using bluespace to make things faster and better."
 	prereq_ids = list("bluespace_basic", "engineering")
-	design_ids = list("bs_rped","minerbag_holding", "bluespacebeaker", "bluespacesyringe", "phasic_scanning", "roastingstick", "ore_silo", "chem_dispenser", "biobag_holding", "engibag_holding", "plantbag_holding", "chembag_holding", "bs_rpd")	// [CECADON-ADD] -
+	design_ids = list("bs_rped","minerbag_holding", "bluespacebeaker", "bluespacesyringe", "phasic_scanning", "roastingstick", "ore_silo", "chem_dispenser", "biobag_holding", "engibag_holding", "plantbag_holding", "chembag_holding")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 	export_price = 5000
 
@@ -595,7 +595,7 @@
 	id = "exp_tools"
 	display_name = "Experimental Tools"
 	description = "Highly advanced tools."
-	design_ids = list("jawsoflife", "handdrill", "laserscalpel", "mechanicalpinches", "searingtool", "adv_gas_analazyer", "tricorder")	// [CELADON-ADD] -
+	design_ids = list("jawsoflife", "handdrill", "tricorder", "adv_gas_analazyer", "laserscalpel", "mechanicalpinches", "searingtool")	// [CELADON-ADD] -
 	prereq_ids = list("adv_engi")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000

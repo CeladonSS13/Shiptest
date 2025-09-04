@@ -29,6 +29,8 @@
 	. = ..()
 	if(mode > 0 && !istype(target, /mob/living))
 		return
+	if(istype(istype(target, /turf/closed/))
+		return
 	if(can_see(user, target, ranged_scan_distance))
 		switch(mode)
 			if(0)
@@ -37,7 +39,7 @@
 				healthscan(user, target, advanced = TRUE)
 			if(2)
 				chemscan(user, target)
-	playsound(src, mode ? 'sound/effects/fastbeep.ogg' : 'sound/effects/pop.ogg', 50)
+		playsound(src, mode ? 'sound/effects/fastbeep.ogg' : 'sound/effects/pop.ogg', 50)
 
 // Дебаговский трикодер
 /obj/item/multitool/tricorder/debug
