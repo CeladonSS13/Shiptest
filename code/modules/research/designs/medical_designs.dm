@@ -181,6 +181,7 @@
 	category = list("Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
 
+// [CELADON-ADD] -
 /datum/design/healthanalyzer_range
 	name = "Long-range Health Analyzer"
 	desc = "A handheld body scanner capable of accurately detecting the patient's vital signs from a distance."
@@ -190,6 +191,7 @@
 	materials = list(/datum/material/iron = 5000, /datum/material/glass = 2500, /datum/material/silver = 2000)
 	category = list("Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
+// [/CELADON-ADD]
 
 /datum/design/medigel
 	name = "Medical Gel"

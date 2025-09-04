@@ -93,7 +93,7 @@
 	icon_state = "utility_ce"
 	item_state = "utility_ce"
 
-//
+// [CELADON-EDIT] -
 /*
 /obj/item/storage/belt/utility/chief/full/PopulateContents()
 	new /obj/item/screwdriver/power(src)
@@ -122,7 +122,7 @@
 	new /obj/item/construction/rcd/arcd/debug(src)
 	new /obj/item/pipe_dispenser/bluespace(src)
 	new /obj/item/inducer/debug(src)
-//
+// [/CELADON-EDIT]
 
 /obj/item/storage/belt/utility/full/PopulateContents()
 	new /obj/item/screwdriver(src)

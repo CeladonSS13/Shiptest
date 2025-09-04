@@ -335,9 +335,9 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 		return
 	else if(!user.IsAdvancedToolUser() || istype(A, /turf/open/space/transit))
 		return ..()
+	return try_build_pipe(A, user) ? TRUE : ..() // [CELADON-ADD]
 
-	return try_build_pipe(A, user) ? TRUE : ..()
-
+// [CELADON-EDIT]
 /obj/item/pipe_dispenser/proc/try_build_pipe(atom/A, mob/user)
 	//So that changing the menu settings doesn't affect the pipes already being built.
 	var/queued_p_type = recipe.id
@@ -366,7 +366,7 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 			to_chat(user, span_notice("You start painting \the [P] [paint_color]..."))
 			playsound(get_turf(src), 'sound/machines/click.ogg', 50, TRUE)
 			if(do_after(user, paint_speed, target = A))
-				P.paint(GLOB.pipe_paint_colors[paint_color])
+				P.paint(GLOB.pipe_paint_colors[paint_color]) //paint the pipe
 				user.visible_message(span_notice("[user] paints \the [P] [paint_color]."), span_notice("You paint \the [P] [paint_color]."))
 			return TRUE
 		var/obj/item/pipe/P = A
@@ -374,7 +374,7 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 			to_chat(user, span_notice("You start painting \the [A] [paint_color]..."))
 			playsound(get_turf(src), 'sound/machines/click.ogg', 50, TRUE)
 			if(do_after(user, paint_speed, target = A))
-				A.add_atom_colour(GLOB.pipe_paint_colors[paint_color], FIXED_COLOUR_PRIORITY)
+				A.add_atom_colour(GLOB.pipe_paint_colors[paint_color], FIXED_COLOUR_PRIORITY) //paint the pipe
 				user.visible_message(span_notice("[user] paints \the [A] [paint_color]."), span_notice("You paint \the [A] [paint_color]."))
 			return TRUE
 
@@ -475,6 +475,7 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 					return TRUE
 
 	return FALSE
+// [/CELADON-EDIT]
 
 /obj/item/pipe_dispenser/proc/activate()
 	playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, TRUE)
