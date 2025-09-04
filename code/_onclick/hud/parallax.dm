@@ -388,114 +388,70 @@
 // MARK:Layer 1
 /atom/movable/screen/parallax_layer/layer_1/l_0
 	icon_state = "layer1_0"
-	speed = 0.6
-	layer = 1
 
 /atom/movable/screen/parallax_layer/layer_1/l_1
 	icon_state = "layer1_1"
-	speed = 0.6
-	layer = 1
 
 /atom/movable/screen/parallax_layer/layer_1/l_2
 	icon_state = "layer1_2"
-	speed = 0.6
-	layer = 1
 
 /atom/movable/screen/parallax_layer/layer_1/l_3
 	icon_state = "layer1_3"
-	speed = 0.6
-	layer = 1
 
 /atom/movable/screen/parallax_layer/layer_1/l_4
 	icon_state = "layer1_4"
-	speed = 0.6
-	layer = 1
 
 /atom/movable/screen/parallax_layer/layer_1/l_5
 	icon_state = "layer1_5"
-	speed = 0.6
-	layer = 1
 
 /atom/movable/screen/parallax_layer/layer_1/l_6
 	icon_state = "layer1_6"
-	speed = 0.6
-	layer = 1
 
 /atom/movable/screen/parallax_layer/layer_1/l_7
 	icon_state = "layer1_7"
-	speed = 0.6
-	layer = 1
 
 /atom/movable/screen/parallax_layer/layer_1/l_8
 	icon_state = "layer1_8"
-	speed = 0.6
-	layer = 1
 
 /atom/movable/screen/parallax_layer/layer_1/l_9
 	icon_state = "layer1_9"
-	speed = 0.6
-	layer = 1
 
 /atom/movable/screen/parallax_layer/layer_1/l_10
 	icon_state = "layer1_10"
-	speed = 0.6
-	layer = 1
 
 /atom/movable/screen/parallax_layer/layer_1/l_11
 	icon_state = "layer1_11"
-	speed = 0.6
-	layer = 1
 
 /atom/movable/screen/parallax_layer/layer_1/l_12
 	icon_state = "layer1_12"
-	speed = 0.6
-	layer = 1
 
 /atom/movable/screen/parallax_layer/layer_1/l_13
 	icon_state = "layer1_13"
-	speed = 0.6
-	layer = 1
 
 /atom/movable/screen/parallax_layer/layer_1/l_14
 	icon_state = "layer1_14"
-	speed = 0.6
-	layer = 1
 
 /atom/movable/screen/parallax_layer/layer_1/l_15
 	icon_state = "layer1_15"
-	speed = 0.6
-	layer = 1
 
 /atom/movable/screen/parallax_layer/layer_1/l_16
 	icon_state = "layer1_16"
-	speed = 0.6
-	layer = 1
 
 // MARK:Layer 2
 /atom/movable/screen/parallax_layer/layer_2/l_1
 	icon_state = "layer2_1"
-	speed = 1
-	layer = 2
 
 /atom/movable/screen/parallax_layer/layer_2/l_2
 	icon_state = "layer2_2"
-	speed = 1
-	layer = 2
 
 /atom/movable/screen/parallax_layer/layer_2/l_3
 	icon_state = "layer2_3"
-	speed = 1
-	layer = 2
 
 /atom/movable/screen/parallax_layer/layer_2/l_4
 	icon_state = "layer2_4"
-	speed = 1
-	layer = 2
 
 /atom/movable/screen/parallax_layer/layer_2/l_5
 	icon_state = "layer2_5"
-	speed = 1
-	layer = 2
 
 // MARK:Layer 3
 /atom/movable/screen/parallax_layer/layer_3/l_1
