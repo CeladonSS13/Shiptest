@@ -94,7 +94,7 @@
 	var/ranged_scan_distance = 1
 	var/medicalTricorder = FALSE	//Set to TRUE for normal medical scanner, set to FALSE for a gutted version
 
-/obj/item/multitool/tricorder/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
+/obj/item/multitool/tricorder/afterattack(atom/target, mob/user, proximity_flag)
 	. = ..()
 	if(mode > 0 && !istype(target, /mob/living))
 		return
@@ -105,16 +105,18 @@
 			if(0)
 				atmosanalyzer_scan(user, (target.return_analyzable_air() ? target : get_turf(target)))
 			if(1)
-				target.Beam(user, icon_state = "medbeam", time = 5, beam_color = "#9ce")
 				healthscan(user, target, advanced = TRUE)
+				if(!proximity_flag)
+					target.Beam(user, icon_state = "medbeam", time = 5, beam_color = "#9ce")
 			if(2)
-				target.Beam(user, icon_state = "medbeam", time = 5, beam_color = "#9ce")
 				chemscan(user, target)
+				if(!proximity_flag)
+					target.Beam(user, icon_state = "medbeam", time = 5, beam_color = "#9ce")
 		playsound(src, mode ? 'sound/effects/fastbeep.ogg' : 'sound/effects/pop.ogg', 10)
 
 // MARK: Дебаг-Аутфит
 
-/obj/item/multitool/tricorder/debug
+/obj/item/multitool/tricorder/range
 	name = "long-range tricorder"
 	desc = "A multifunctional device that can perform a wide range of tasks. A hand-held long-range environmental scanner which reports current gas levels."
 	icon_state = "tricorder_atmos"
@@ -122,11 +124,11 @@
 	ranged_scan_distance = 15
 	var/modes = "atmos"
 
-/obj/item/multitool/tricorder/debug/examine()
+/obj/item/multitool/tricorder/range/examine()
 	. = ..()
 	. += span_notice("The mode is: [modes] scan")
 
-/obj/item/multitool/tricorder/debug/attack_self(mob/user)
+/obj/item/multitool/tricorder/range/attack_self(mob/user)
 	mode++
 	switch(mode)
 		if(1)
@@ -169,6 +171,8 @@
 /obj/item/inducer
 	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
 
+// MARK: Газ Анализатор
+
 /obj/item/analyzer/ranged
 	name = "long-range gas analyzer"
 	desc = "A hand-held long-range environmental scanner which reports current gas levels."
@@ -177,7 +181,7 @@
 	custom_materials = list(/datum/material/iron = 400, /datum/material/glass = 1000, /datum/material/gold = 200)
 	var/ranged_scan_distance = 15
 
-/obj/item/analyzer/ranged/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
+/obj/item/analyzer/ranged/afterattack(atom/target, mob/user, proximity_flag)
 	. = ..()
 	if(!can_see(user, target, ranged_scan_distance))
 		return

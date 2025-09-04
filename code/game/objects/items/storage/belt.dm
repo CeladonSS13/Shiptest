@@ -118,7 +118,7 @@
 	new /obj/item/screwdriver/power(src)
 	new /obj/item/crowbar/power(src)
 	new /obj/item/weldingtool/electric(src)
-	new /obj/item/multitool/tricorder/debug(src)
+	new /obj/item/multitool/tricorder/range(src)
 	new /obj/item/construction/rcd/arcd/debug(src)
 	new /obj/item/pipe_dispenser/bluespace(src)
 	new /obj/item/inducer/debug(src)
