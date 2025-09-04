@@ -11,7 +11,7 @@
 		// [CELADON-EDIT] - CELADON_PARALLAX - Дохера изменений оригинала, смотри историю файла
 		// Layer 1 - Background stars (выбираем случайно 1 из 17)
 		var/layer_1_index = rand(0, 16)
-		var/layer_1_path = text2path("/atom/movable/screen/parallax_layer/layer_1_[layer_1_index]")
+		var/layer_1_path = text2path("/atom/movable/screen/parallax_layer/layer_1/l_[layer_1_index]")
 		var/atom/movable/screen/parallax_layer/layer_1 = new layer_1_path(null, current_client.view)
 		layer_1.alpha = 200
 		current_client.parallax_layers_cached += layer_1
@@ -19,10 +19,10 @@
 		// Layer 2 - Nebulae
 		var/list/layer_2_configs = list(
 			list("type" = /atom/movable/screen/parallax_layer/layer_2, "chance" = 20, "alpha" = 150),
-			list("type" = /atom/movable/screen/parallax_layer/layer_2_1, "chance" = 10, "alpha" = 150),
-			list("type" = /atom/movable/screen/parallax_layer/layer_2_2, "chance" = 5, "alpha" = 150),
-			list("type" = /atom/movable/screen/parallax_layer/layer_2_3, "chance" = 30, "alpha" = 150),
-			list("type" = /atom/movable/screen/parallax_layer/layer_2_4, "chance" = 30, "alpha" = 150)
+			list("type" = /atom/movable/screen/parallax_layer/layer_2/l_1, "chance" = 10, "alpha" = 150),
+			list("type" = /atom/movable/screen/parallax_layer/layer_2/l_2, "chance" = 5, "alpha" = 150),
+			list("type" = /atom/movable/screen/parallax_layer/layer_2/l_3, "chance" = 30, "alpha" = 150),
+			list("type" = /atom/movable/screen/parallax_layer/layer_2/l_4, "chance" = 30, "alpha" = 150)
 		)
 		for(var/i in 1 to length(layer_2_configs))
 			var/list/config = layer_2_configs[i]
@@ -36,8 +36,8 @@
 		// Layer 3 - Foreground
 		var/list/layer_3_configs = list(
 			list("type" = /atom/movable/screen/parallax_layer/layer_3, "chance" = 30, "alpha" = 255),
-			list("type" = /atom/movable/screen/parallax_layer/layer_3_1, "chance" = 30, "alpha" = 255),
-			list("type" = /atom/movable/screen/parallax_layer/layer_3_2, "chance" = 30, "alpha" = 255)
+			list("type" = /atom/movable/screen/parallax_layer/layer_3/l_1, "chance" = 30, "alpha" = 255),
+			list("type" = /atom/movable/screen/parallax_layer/layer_3/l_2, "chance" = 30, "alpha" = 255)
 		)
 		for(var/i in 1 to length(layer_3_configs))
 			var/list/config = layer_3_configs[i]
@@ -347,9 +347,11 @@
 	layer = 3
 
 /atom/movable/screen/parallax_layer/random
-	icon_state = "empty"	// [CELADON-ADD] - CELADON_PARALLAX
-	alpha = 150				// [CELADON-ADD] - CELADON_PARALLAX
-	blend_mode = BLEND_OVERLAY
+	// [CELADON-ADD] - CELADON_PARALLAX
+	icon_state = "empty"
+	alpha = 150
+	// [/CELADON-ADD]
+	blend_mode = BLEND_ADD	// [CELADON-EDIT] - CELADON_PARALLAX // ORIGINAL // blend_mode = BLEND_OVERLAY
 	speed = 3
 	layer = 3
 
@@ -368,9 +370,9 @@
 	icon_state = "planet"
 
 // [CELADON-ADD] - CELADON_PARALLAX
+// MARK:Random
 /atom/movable/screen/parallax_layer/random/gas
 	icon_state = "gas"
-	blend_mode = BLEND_ADD
 	speed = 0.1
 
 /atom/movable/screen/parallax_layer/random/trash
@@ -380,130 +382,125 @@
 
 /atom/movable/screen/parallax_layer/random/infection
 	icon_state = "infection"
-	blend_mode = BLEND_ADD
 	speed = 0.6
 	layer = 1
 
-// Layer 1
-/atom/movable/screen/parallax_layer/layer_1_0
+// MARK:Layer 1
+/atom/movable/screen/parallax_layer/layer_1/l_0
 	icon_state = "layer1_0"
 	speed = 0.6
 	layer = 1
 
-/atom/movable/screen/parallax_layer/layer_1_1
+/atom/movable/screen/parallax_layer/layer_1/l_1
 	icon_state = "layer1_1"
 	speed = 0.6
 	layer = 1
 
-/atom/movable/screen/parallax_layer/layer_1_2
+/atom/movable/screen/parallax_layer/layer_1/l_2
 	icon_state = "layer1_2"
 	speed = 0.6
 	layer = 1
 
-/atom/movable/screen/parallax_layer/layer_1_3
+/atom/movable/screen/parallax_layer/layer_1/l_3
 	icon_state = "layer1_3"
 	speed = 0.6
 	layer = 1
 
-/atom/movable/screen/parallax_layer/layer_1_4
+/atom/movable/screen/parallax_layer/layer_1/l_4
 	icon_state = "layer1_4"
 	speed = 0.6
 	layer = 1
 
-/atom/movable/screen/parallax_layer/layer_1_5
+/atom/movable/screen/parallax_layer/layer_1/l_5
 	icon_state = "layer1_5"
 	speed = 0.6
 	layer = 1
 
-/atom/movable/screen/parallax_layer/layer_1_6
+/atom/movable/screen/parallax_layer/layer_1/l_6
 	icon_state = "layer1_6"
 	speed = 0.6
 	layer = 1
 
-/atom/movable/screen/parallax_layer/layer_1_7
+/atom/movable/screen/parallax_layer/layer_1/l_7
 	icon_state = "layer1_7"
 	speed = 0.6
 	layer = 1
 
-/atom/movable/screen/parallax_layer/layer_1_8
+/atom/movable/screen/parallax_layer/layer_1/l_8
 	icon_state = "layer1_8"
 	speed = 0.6
 	layer = 1
 
-/atom/movable/screen/parallax_layer/layer_1_9
+/atom/movable/screen/parallax_layer/layer_1/l_9
 	icon_state = "layer1_9"
 	speed = 0.6
 	layer = 1
 
-/atom/movable/screen/parallax_layer/layer_1_10
+/atom/movable/screen/parallax_layer/layer_1/l_10
 	icon_state = "layer1_10"
 	speed = 0.6
 	layer = 1
 
-/atom/movable/screen/parallax_layer/layer_1_11
+/atom/movable/screen/parallax_layer/layer_1/l_11
 	icon_state = "layer1_11"
 	speed = 0.6
 	layer = 1
 
-/atom/movable/screen/parallax_layer/layer_1_12
+/atom/movable/screen/parallax_layer/layer_1/l_12
 	icon_state = "layer1_12"
 	speed = 0.6
 	layer = 1
 
-/atom/movable/screen/parallax_layer/layer_1_13
+/atom/movable/screen/parallax_layer/layer_1/l_13
 	icon_state = "layer1_13"
 	speed = 0.6
 	layer = 1
 
-/atom/movable/screen/parallax_layer/layer_1_14
+/atom/movable/screen/parallax_layer/layer_1/l_14
 	icon_state = "layer1_14"
 	speed = 0.6
 	layer = 1
 
-/atom/movable/screen/parallax_layer/layer_1_15
+/atom/movable/screen/parallax_layer/layer_1/l_15
 	icon_state = "layer1_15"
 	speed = 0.6
 	layer = 1
 
-/atom/movable/screen/parallax_layer/layer_1_16
+/atom/movable/screen/parallax_layer/layer_1/l_16
 	icon_state = "layer1_16"
 	speed = 0.6
 	layer = 1
 
-// Layer 2
-/atom/movable/screen/parallax_layer/layer_2_1
+// MARK:Layer 2
+/atom/movable/screen/parallax_layer/layer_2/l_1
 	icon_state = "layer2_1"
 	speed = 1
 	layer = 2
 
-/atom/movable/screen/parallax_layer/layer_2_2
+/atom/movable/screen/parallax_layer/layer_2/l_2
 	icon_state = "layer2_2"
 	speed = 1
 	layer = 2
 
-/atom/movable/screen/parallax_layer/layer_2_3
+/atom/movable/screen/parallax_layer/layer_2/l_3
 	icon_state = "layer2_3"
 	speed = 1
 	layer = 2
 
-/atom/movable/screen/parallax_layer/layer_2_4
+/atom/movable/screen/parallax_layer/layer_2/l_4
 	icon_state = "layer2_4"
 	speed = 1
 	layer = 2
 
-/atom/movable/screen/parallax_layer/layer_2_5
+/atom/movable/screen/parallax_layer/layer_2/l_5
 	icon_state = "layer2_5"
 	speed = 1
 	layer = 2
 
-// Layer 3
-/atom/movable/screen/parallax_layer/layer_3_1
+// MARK:Layer 3
+/atom/movable/screen/parallax_layer/layer_3/l_1
 	icon_state = "layer3_1"
-	speed = 1.4
-	layer = 3
 
-/atom/movable/screen/parallax_layer/layer_3_2
+/atom/movable/screen/parallax_layer/layer_3/l_2
 	icon_state = "layer3_2"
-	speed = 1.4
-	layer = 3
 // [/CELADON-ADD]
