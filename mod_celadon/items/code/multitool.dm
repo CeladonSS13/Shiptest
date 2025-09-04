@@ -50,7 +50,7 @@
 
 /obj/item/multitool/tricorder/debug/examine()
 	. = ..()
-	. += "The mode is: [modes] scan"
+	. += span_notice("The mode is: [modes] scan")
 
 /obj/item/multitool/tricorder/debug/attack_self(mob/user)
 	mode++
@@ -64,7 +64,7 @@
 			modes = "atmos"
 
 	playsound(get_turf(user), 'sound/machines/click.ogg', 50, TRUE)
-	balloon_alert(user, "mode: [modes] scan")
+	balloon_alert(user, "[modes] scan")
 	icon_state = "tricorder_[modes]"
 
 /obj/item/construction/rcd/arcd

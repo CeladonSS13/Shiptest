@@ -496,7 +496,7 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 	bluespace = TRUE
 
 /obj/item/pipe_dispenser/bluespace/attackby(obj/item/item, mob/user, param)
-	if(istype(item, list(/obj/item/stack/sheet/bluespace_crystal, /obj/item/stack/ore/bluespace_crystal)))
+	if(istype(item, /obj/item/stack/sheet/bluespace_crystal) || istype(item, /obj/item/stack/ore/bluespace_crystal))
 		if(BSRPD_CAPAC_NEW > (BSRPD_CAPAC_MAX - bs_capac) || bs_use == 0)
 			to_chat(user, span_warning("[src] is at maximum charge capacity!"))
 			return
@@ -517,27 +517,37 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 /obj/item/pipe_dispenser/bluespace/examine(mob/user)
 	. = ..()
 	if(user.Adjacent(src))
-		. += "Currently it has [bs_use == 0 ? "INFINITY" : bs_capac / bs_use] of charges."
+		. += span_notice("Currently it has [bs_use == 0 ? "INFINITY" : bs_capac / bs_use] of charges.")
 		if(bs_use != 0)
-			. += "\nThe bluespace core is not installed."
+			. += span_notice("\nThe bluespace core is not installed.")
 	else
-		. += "I can't see from here."
+		. += "I can't see charge from here."
 
-/obj/item/pipe_dispenser/bluespace/afterattack(atom/target, mob/user, proximity_flag)
+/obj/item/pipe_dispenser/bluespace/afterattack(atom/A, mob/user, proximity_flag)
+	if(!range_check(A, user))
+		return FALSE
+
 	if(proximity_flag)
-		return try_build_pipe(target, user) ? TRUE : ..()
+		return try_build_pipe(A, user) ? TRUE : ..()
 
 	if(bs_capac < bs_use)
 		to_chat(user, span_warning("[src] has no charge."))
 		return FALSE
 
-	user.Beam(target, icon_state = "rped_upgrade", time = 1 SECONDS)
+	user.Beam(A, icon_state = "rped_upgrade", time = 1 SECONDS)
 
-	if(try_build_pipe(target, user))
+	if(try_build_pipe(A, user))
 		bs_capac -= bs_use
 		return TRUE
 
 	return FALSE
+
+/obj/item/pipe_dispenser/bluespace/proc/range_check(atom/A, mob/user)
+	if(!(A in view(7, get_turf(user))))
+		to_chat(user, span_warning("The \'Out of Range\' light on [src] blinks red."))
+		return FALSE
+	else
+		return TRUE
 
 #undef BSRPD_CAPAC_MAX
 #undef BSRPD_CAPAC_USE
