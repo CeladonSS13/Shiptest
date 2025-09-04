@@ -115,7 +115,7 @@ GENE SCANNER
 
 /obj/item/healthanalyzer/attack(mob/living/M, mob/living/carbon/human/user)
 	flick("[icon_state]-anim", src) //makes it so that it plays the scan animation upon scanning, including clumsy scanning
-	playsound(src, 'sound/effects/fastbeep.ogg', 10, FALSE, 2)
+	playsound(src, 'sound/effects/fastbeep.ogg', 10)
 
 	// Clumsiness/brain damage check
 	if ((HAS_TRAIT(user, TRAIT_CLUMSY) || HAS_TRAIT(user, TRAIT_DUMB)) && prob(50))

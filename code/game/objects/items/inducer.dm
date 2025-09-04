@@ -186,11 +186,3 @@
 	desc = "A tool for inductively charging internal power cells. This one has a suspicious colour scheme, and seems to be rigged to transfer charge at a much faster rate."
 	powertransfer = 2000
 	cell_type = /obj/item/stock_parts/cell/super
-
-
-/obj/item/inducer/debug
-	icon_state = "inducer-adv"
-	desc = "A tool for inductively charging internal power cells. This one has a white-bluespace color scheme, and seems to be rigged to transfer charge at a much faster rate."
-	cell_type = null
-	powertransfer = 4000
-	cell_type = /obj/item/stock_parts/cell/bluespace

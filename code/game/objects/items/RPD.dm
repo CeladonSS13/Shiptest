@@ -394,12 +394,12 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 							PM.wrench_act(user, src)
 						return TRUE
 				else
-					if(recipe.all_layers == FALSE && (piping_layer == 1 || piping_layer == 5))//double check to stop cheaters (and to not waste time waiting for something that can't be placed)
+					if(recipe.all_layers == FALSE && (piping_layer == 1 || piping_layer == 5))
 						to_chat(user, span_notice("You can't build this object on the layer..."))
 						return FALSE
 					to_chat(user, span_notice("You start building a pipe..."))
 					if(do_after(user, atmos_build_speed, target = A))
-						if(recipe.all_layers == FALSE && (piping_layer == 1 || piping_layer == 5))
+						if(recipe.all_layers == FALSE && (piping_layer == 1 || piping_layer == 5))//double check to stop cheaters (and to not waste time waiting for something that can't be placed)
 							to_chat(user, span_notice("You can't build this object on the layer..."))
 							return FALSE
 						activate()
@@ -478,80 +478,6 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 
 /obj/item/pipe_dispenser/proc/activate()
 	playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, TRUE)
-
-#define BSRPD_CAPAC_MAX 50
-#define BSRPD_CAPAC_USE 1
-#define BSRPD_CAPAC_NEW 5
-
-/obj/item/pipe_dispenser/bluespace
-	name = "Bluespace-RPD"
-	desc = "A breakthrough in pipe-laying technology prevents you from being burned to a crisp while building yet another engine."
-	icon_state = "rpd_ranged"
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/multitool.dmi'
-	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
-	var/bs_capac = BSRPD_CAPAC_MAX
-	var/bs_use = BSRPD_CAPAC_USE
-	var/bs_prog = 0
-	bluespace = TRUE
-
-/obj/item/pipe_dispenser/bluespace/attackby(obj/item/item, mob/user, param)
-	if(istype(item, /obj/item/stack/sheet/bluespace_crystal) || istype(item, /obj/item/stack/ore/bluespace_crystal))
-		if(BSRPD_CAPAC_NEW > (BSRPD_CAPAC_MAX - bs_capac) || bs_use == 0)
-			to_chat(user, span_warning("[src] is at maximum charge capacity!"))
-			return
-		item.use(1)
-		to_chat(user, span_notice("Recharging the bluespace capacitor inside [src]"))
-		bs_capac += BSRPD_CAPAC_NEW
-		return
-	if(istype(item, /obj/item/assembly/signaler/anomaly/bluespace))
-		if(bs_use)
-			to_chat(user, span_notice("Installing [item] into [src]; now this thing will work much forever!"))
-			bs_use = 0
-			qdel(item)
-		else
-			to_chat(user, span_warning("Where to charge [src] more then!"))
-		return
-	return ..()
-
-/obj/item/pipe_dispenser/bluespace/examine(mob/user)
-	. = ..()
-	if(user.Adjacent(src))
-		. += span_notice("Currently it has [bs_use == 0 ? "INFINITY" : bs_capac / bs_use] of charges.")
-		if(bs_use != 0)
-			. += span_notice("\nThe bluespace core is not installed.")
-	else
-		. += "I can't see charge from here."
-
-/obj/item/pipe_dispenser/bluespace/afterattack(atom/A, mob/user, proximity_flag)
-	if(!range_check(A, user))
-		return FALSE
-
-	if(proximity_flag)
-		return try_build_pipe(A, user) ? TRUE : ..()
-
-	if(bs_capac < bs_use)
-		to_chat(user, span_warning("[src] has no charge."))
-		return FALSE
-
-	user.Beam(A, icon_state = "rped_upgrade", time = 1 SECONDS)
-
-	if(try_build_pipe(A, user))
-		bs_capac -= bs_use
-		return TRUE
-
-	return FALSE
-
-/obj/item/pipe_dispenser/bluespace/proc/range_check(atom/A, mob/user)
-	if(!(A in view(7, get_turf(user))))
-		to_chat(user, span_warning("The \'Out of Range\' light on [src] blinks red."))
-		return FALSE
-	else
-		return TRUE
-
-#undef BSRPD_CAPAC_MAX
-#undef BSRPD_CAPAC_USE
-#undef BSRPD_CAPAC_NEW
 
 #undef ATMOS_CATEGORY
 #undef DISPOSALS_CATEGORY
