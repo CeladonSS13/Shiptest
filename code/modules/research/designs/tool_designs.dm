@@ -41,7 +41,7 @@
 	category = list("Tool Designs")
 	departmental_flags =  DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_CARGO | DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
 
-// [CELADON-ADD] -
+// [CELADON-ADD] - OMNI_TOOLS
 /datum/design/bs_rpd
 	name = "Bluespace RPD"
 	desc = "Utilizing localized bluespace folding, this RPD variant can deploy and connect piping systems remotely, eliminating the need for direct physical access to hazardous or hard-to-reach locations."

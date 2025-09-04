@@ -48,7 +48,7 @@ RLD
 	if(upgrade & RCD_UPGRADE_SILO_LINK)
 		silo_mats = AddComponent(/datum/component/remote_materials, "RCD", mapload, FALSE)
 
-// [CELADON-EDIT] - Добавлены `span_notice() в сообщения`
+// [CELADON-EDIT] - OMNI_TOOLS - Добавлены `span_notice() в сообщения`
 /obj/item/construction/examine(mob/user)
 	. = ..()
 	. += span_notice("It currently holds [matter]/[max_matter] matter-units.")

@@ -93,7 +93,7 @@ GENE SCANNER
 	var/mode = SCANNER_VERBOSE
 	var/scanmode = SCANMODE_HEALTH
 	var/advanced = FALSE
-	var/works_from_distance = FALSE	// [/CELADON-ADD]
+	var/ranged_scan_distance // [/CELADON-ADD] - OMNI_TOOLS
 	var/healthmode = "analyzer-1"
 	var/reagentmode = "reagentanalyzer"
 	var/healthmodeinhand = "analyzer"

@@ -93,7 +93,7 @@
 	icon_state = "utility_ce"
 	item_state = "utility_ce"
 
-// [CELADON-EDIT] -
+// [CELADON-EDIT] - OMNI_TOOLS
 /*
 /obj/item/storage/belt/utility/chief/full/PopulateContents()
 	new /obj/item/screwdriver/power(src)

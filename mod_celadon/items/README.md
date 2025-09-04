@@ -13,6 +13,7 @@
 ## Items
 
 ID мода: CELADON_ITEMS
+OMNI_TOOLS
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -33,6 +34,9 @@ ID мода: CELADON_ITEMS
 - `code/modules/surgery/organs/tongue.dm`
 	-`var/static/list/languages_possible_base = typecacheof`
 - `code/modules/clothing/outfits/factions/inteq.dm`
+
+OMNI_TOOLS
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

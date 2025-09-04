@@ -69,7 +69,7 @@
 	starting_node = TRUE
 	display_name = "Basic Medical Equipment"
 	description = "Basic medical tools and equipment."
-// [CELADON-EDIT]
+// [CELADON-EDIT] - OMNI_TOOLS
 //	design_ids = list("cybernetic_liver", "cybernetic_heart", "cybernetic_lungs", "cybernetic_stomach", "scalpel", "circular_saw", "bonesetter", "surgical_tape", "surgicaldrill", "retractor", "cautery", "hemostat",
 //					"syringe", "plumbing_rcd", "beaker", "large_beaker", "xlarge_beaker", "dropper", "defibmountdefault", "portable_chem_mixer")
 	design_ids = list("cybernetic_liver", "cybernetic_heart", "cybernetic_lungs", "cybernetic_stomach", "scalpel", "circular_saw", "bonesetter", "surgical_tape", "surgicaldrill", "retractor", "cautery", "hemostat",
@@ -82,7 +82,7 @@
 	display_name = "Biological Technology"
 	description = "What makes us tick."	//the MC, silly!
 	prereq_ids = list("base")
-// [CELADON-EDIT]
+// [CELADON-EDIT] - OMNI_TOOLS
 //	design_ids = list("sleeper", "chem_heater", "chem_master", "pandemic", "defibrillator", "defibmount", "operating", "soda_dispenser", "beer_dispenser", "healthanalyzer", "medigel", "med_spray_bottle", "chem_pack", "blood_pack", "medical_kiosk", "crewpinpointerprox", "medipen_refiller", "prosthetic_l_arm", "prosthetic_r_arm", "prosthetic_l_leg", "prosthetic_r_leg", "kprosthetic_l_arm", "kprosthetic_r_arm", "kprosthetic_l_leg", "kprosthetic_r_leg", "vprosthetic_l_arm", "vprosthetic_r_arm", "vprosthetic_l_leg", "vprosthetic_r_leg", "lprosthetic_l_arm", "lprosthetic_r_arm", "lprosthetic_l_leg", "lprosthetic_r_leg")
 	design_ids = list("sleeper", "chem_heater", "chem_master", "pandemic", "defibrillator", "defibmount", "operating", "soda_dispenser", "beer_dispenser", "healthanalyzer_ranged", "medigel", "med_spray_bottle", "chem_pack", "blood_pack", "medical_kiosk", "crewpinpointerprox", "medipen_refiller", "prosthetic_l_arm", "prosthetic_r_arm", "prosthetic_l_leg", "prosthetic_r_leg", "kprosthetic_l_arm", "kprosthetic_r_arm", "kprosthetic_l_leg", "kprosthetic_r_leg", "vprosthetic_l_arm", "vprosthetic_r_arm", "vprosthetic_l_leg", "vprosthetic_r_leg", "lprosthetic_l_arm", "lprosthetic_r_arm", "lprosthetic_l_leg", "lprosthetic_r_leg")
 // [/CELADON-EDIT]
@@ -605,7 +605,7 @@
 	id = "exp_tools"
 	display_name = "Experimental Tools"
 	description = "Highly advanced tools."
-// [CELADON-EDIT] -
+// [CELADON-EDIT] - OMNI_TOOLS
 //	design_ids = list("jawsoflife", "handdrill", "laserscalpel", "mechanicalpinches", "searingtool")
 	design_ids = list("jawsoflife", "handdrill", "tricorder", "adv_gas_analazyer", "laserscalpel", "mechanicalpinches", "searingtool")
 // [/CELADON-EDIT]
