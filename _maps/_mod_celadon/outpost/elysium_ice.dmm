@@ -1590,7 +1590,7 @@
 /obj/structure/table/wood/reinforced/bar,
 /obj/machinery/chem_dispenser/drinks/beer{
 	dir = 8;
-	pixel_y = 15;
+	pixel_y = 24;
 	pixel_x = 12
 	},
 /obj/machinery/chem_dispenser/drinks{
@@ -1648,8 +1648,8 @@
 	},
 /obj/structure/table/wood/reinforced/bar,
 /obj/item/reagent_containers/food/drinks/shaker{
-	pixel_x = 6;
-	pixel_y = 7
+	pixel_x = -2;
+	pixel_y = 8
 	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -4789,12 +4789,9 @@
 /turf/closed/indestructible/titanium/nodiagnonal,
 /area/outpost/medical/surgery_2)
 "cOc" = (
-/obj/structure/bodycontainer/morgue{
-	dir = 1
-	},
 /obj/effect/turf_decal/corner/opaque/grey/mono,
-/obj/effect/mob_spawn/human/corpse/assistant/husked{
-	short_desc = "Тело все истощено. Местами оборвана одежда, видны следы укусов. На полу ногтями высечено имя Энди и стрелка указывающая на сломаную дверь."
+/obj/structure/bodycontainer/morgue/with_corpse{
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/medical/morgue)
@@ -5794,6 +5791,14 @@
 /obj/effect/turf_decal/trimline/opaque/purple/filled/line{
 	dir = 4
 	},
+/obj/item/mop,
+/obj/item/clothing/gloves/color/purple,
+/obj/item/clothing/neck/tie/purple,
+/obj/item/clothing/head/beanie/purple,
+/obj/item/reagent_containers/glass/rag,
+/obj/item/storage/belt/janitor,
+/obj/effect/spawner/random/trash/janitor_supplies,
+/obj/structure/closet/wall/directional/west,
 /turf/open/floor/plasteel/patterned,
 /area/outpost/vacant_rooms/shop)
 "dsN" = (
@@ -10111,12 +10116,9 @@
 	},
 /area/outpost/maintenance/fore)
 "fFx" = (
-/obj/structure/bodycontainer/morgue{
-	dir = 2
-	},
 /obj/effect/turf_decal/corner/opaque/grey/mono,
-/obj/effect/mob_spawn/human/corpse/assistant/husked{
-	short_desc = "Тело все истощено. Местами оборвана одежда, видны следы укусов. На полу ногтями высечено имя Энди и стрелка указывающая на сломаную дверь."
+/obj/structure/bodycontainer/morgue/with_corpse{
+	dir = 2
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/medical/morgue)
@@ -33918,9 +33920,7 @@
 /area/outpost/cargo)
 "sZT" = (
 /obj/effect/turf_decal/corner/opaque/grey/full,
-/obj/effect/spawner/random/trash/janitor_supplies,
 /obj/structure/table,
-/obj/item/storage/belt/janitor,
 /obj/item/toy/figure/janitor,
 /turf/open/floor/plasteel/patterned,
 /area/outpost/vacant_rooms/shop)
@@ -42735,12 +42735,12 @@
 /area/outpost/exterior)
 "xWx" = (
 /obj/effect/turf_decal/corner/opaque/grey/full,
-/mob/living/silicon/robot/modules/janitor,
 /obj/machinery/camera/autoname{
 	dir = 1;
 	pixel_y = -5;
 	network = list("outpostelysium")
 	},
+/obj/structure/janitorialcart,
 /turf/open/floor/plasteel/patterned,
 /area/outpost/vacant_rooms/shop)
 "xWy" = (
@@ -42824,12 +42824,6 @@
 /obj/effect/turf_decal/trimline/opaque/purple/filled/line{
 	dir = 1
 	},
-/obj/structure/janitorialcart,
-/obj/item/clothing/neck/tie/purple,
-/obj/item/clothing/head/beanie/purple,
-/obj/item/clothing/gloves/color/purple,
-/obj/item/mop,
-/obj/item/reagent_containers/glass/rag,
 /obj/item/caution{
 	pixel_y = 18;
 	pixel_x = -3
