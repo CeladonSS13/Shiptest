@@ -101,7 +101,7 @@
 		return
 	if(istype(target, /turf/closed/))
 		return
-	if(can_see(user, target, ranged_scan_distance))	// Не корректно работает
+	if(target in view(ranged_scan_distance, get_turf(user)))
 		switch(mode)
 			if(0)
 				atmosanalyzer_scan(user, (target.return_analyzable_air() ? target : get_turf(target)))
@@ -214,7 +214,7 @@
 	. = ..()
 	if(istype(target, /turf/closed/))
 		return
-	if(!can_see(user, target, ranged_scan_distance))	// Не корректно работает
+	if(!(target in view(ranged_scan_distance, get_turf(user))))
 		return
 	playsound(get_turf(user), 'sound/effects/pop.ogg', 50)
 	atmosanalyzer_scan(user=user, target=get_turf(src), silent=FALSE)
