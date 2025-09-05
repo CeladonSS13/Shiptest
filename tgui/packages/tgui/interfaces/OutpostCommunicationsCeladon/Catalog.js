@@ -2,7 +2,6 @@ import { flow } from 'common/fp';
 import { filter, sortBy } from 'common/collections';
 import { useBackend, useSharedState } from '../../backend';
 import {
-  Box,
   Button,
   Flex,
   Icon,
@@ -36,6 +35,8 @@ export const CargoCatalog = (props, context) => {
 
   const [cart, setCart] = useSharedState(context, 'cart', []);
 
+  const MAX_CART_ITEMS = 20;
+
   const cartTotal = cart.reduce(
     (cartTotal, entry) =>
       cartTotal + (entry.discountedcost ? entry.discountedcost : entry.cost),
@@ -47,17 +48,15 @@ export const CargoCatalog = (props, context) => {
       ? { packs: searchForSupplies(supplies, searchText) }
       : supplies.find((supply) => supply.name === activeSupplyName);
 
+  const removeFromCart = (indexToRemove) => {
+    setCart(cart.filter((_, index) => index !== indexToRemove));
+  };
+
   return (
     <>
-      <Section title="Cart">
-        <>
-          <Box inline my={1} mx={1}>
-            {cart.length === 0 && 'Cart is empty'}
-            {cart.length === 1 && '1 item'}
-            {cart.length >= 2 && cart.length + ' items'}{' '}
-            {cartTotal > 0 && `(${formatMoney(cartTotal)} cr)`}
-          </Box>
-          <>
+      <Section title="Order">
+        <Table.Row>
+          <Table.Cell>
             <Button
               icon="times"
               color="transparent"
@@ -67,6 +66,7 @@ export const CargoCatalog = (props, context) => {
             <Button
               color="green"
               content="Purchase"
+              disabled={cart.length === 0 || cart.length > MAX_CART_ITEMS}
               onClick={() => {
                 act('purchase', {
                   cart: cart,
@@ -75,14 +75,25 @@ export const CargoCatalog = (props, context) => {
                 setCart([]);
               }}
             />
-          </>
-        </>
+          </Table.Cell>
+          <Table.Cell textAlign="right" collapsing>
+            {cart.length === 0 && 'Order is empty'}
+          </Table.Cell>
+        </Table.Row>
         {cart.length !== 0 ? (
-          <Collapsible title="Cart Contents">
+          <Collapsible title="Order Contents">
             <Table>
-              {cart.map((pack) => {
+              {cart.map((pack, index) => {
                 return (
-                  <Table.Row key={pack} className="candystripe">
+                  <Table.Row key={index} className="candystripe">
+                    <Table.Cell collapsing>
+                      <Button
+                        icon="times"
+                        color="transparent"
+                        tooltip="Remove from order"
+                        onClick={() => removeFromCart(index)}
+                      />
+                    </Table.Cell>
                     <Table.Cell>
                       {(pack.discountedcost ? pack.discountedcost : pack.cost) +
                         ' cr'}
@@ -97,6 +108,21 @@ export const CargoCatalog = (props, context) => {
           </Collapsible>
         ) : (
           ''
+        )}
+        {cartTotal > 0 && (
+          <Table.Row>
+            <Table.Cell colSpan={2} bold>
+              Total: {formatMoney(cartTotal)} cr
+            </Table.Cell>
+            <Table.Cell
+              textAlign="right"
+              collapsing
+              color={cart.length >= MAX_CART_ITEMS ? 'red' : ''}
+            >
+              {cart.length >= 1 &&
+                'Contains: ' + cart.length + `/${MAX_CART_ITEMS} items`}{' '}
+            </Table.Cell>
+          </Table.Row>
         )}
       </Section>
       <Section title="Catalog">
@@ -120,18 +146,14 @@ export const CargoCatalog = (props, context) => {
                         if (value === searchText) {
                           return;
                         }
-
                         if (value.length) {
-                          // Start showing results
                           setActiveSupplyName('search_results');
                         } else if (activeSupplyName === 'search_results') {
-                          // return to normal category
                           setActiveSupplyName(supplies[0]?.name);
                         }
                         setSearchText(value);
                       }}
                       onChange={(e, value) => {
-                        // Allow edge cases like the X button to work
                         const onInput = e.target?.props?.onInput;
                         if (onInput) {
                           onInput(e, value);
@@ -159,9 +181,6 @@ export const CargoCatalog = (props, context) => {
             <Table>
               {activeSupply?.packs.map((pack) => {
                 const tags = [];
-                // if (pack.no_bundle) {
-                //   tags.push('No Grouping');
-                // }
                 if (pack.access) {
                   tags.push('Restricted');
                 }
@@ -176,6 +195,7 @@ export const CargoCatalog = (props, context) => {
                         fluid
                         tooltip={pack.desc}
                         tooltipPosition="left"
+                        disabled={cart.length >= MAX_CART_ITEMS}
                         onClick={() => setCart(cart.concat(pack))}
                       >
                         {formatMoney(
