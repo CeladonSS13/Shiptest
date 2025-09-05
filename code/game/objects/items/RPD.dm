@@ -335,7 +335,7 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 		return
 	else if(!user.IsAdvancedToolUser() || istype(A, /turf/open/space/transit))
 		return ..()
-	return try_build_pipe(A, user) ? TRUE : ..() // [CELADON-ADD] - OMNI_TOOLS
+	return try_build_pipe(A, user) // [CELADON-ADD] - OMNI_TOOLS
 
 // [CELADON-EDIT] - OMNI_TOOLS - Пиздец
 /obj/item/pipe_dispenser/proc/try_build_pipe(atom/A, mob/user)

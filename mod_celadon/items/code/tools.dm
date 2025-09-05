@@ -101,6 +101,7 @@
 		return
 	if(istype(target, /turf/closed/))
 		return
+	user.changeNext_move(CLICK_CD_RANGE)
 	if(target in view(ranged_scan_distance, get_turf(user)))
 		switch(mode)
 			if(0)
@@ -212,10 +213,11 @@
 
 /obj/item/analyzer/ranged/afterattack(atom/target, mob/user, proximity_flag)
 	. = ..()
-	if(istype(target, /turf/closed/))
-		return
 	if(!(target in view(ranged_scan_distance, get_turf(user))))
 		return
+	if(istype(target, /turf/closed/))
+		return
+	user.changeNext_move(CLICK_CD_RANGE)
 	playsound(get_turf(user), 'sound/effects/pop.ogg', 50)
 	atmosanalyzer_scan(user=user, target=get_turf(src), silent=FALSE)
 
@@ -244,6 +246,7 @@
 	if(adjacent || !istype(M))
 		return ..()
 	if(can_see(user, M, ranged_scan_distance))
+		user.changeNext_move(CLICK_CD_RANGE)
 		M.Beam(user, icon_state = "medbeam", time = 5, beam_color = "#9ce")
 		attack(M, user)
 		return
@@ -299,12 +302,13 @@
 		return FALSE
 
 	if(proximity_flag)
-		return try_build_pipe(A, user) ? TRUE : ..()
+		return ..()
 
 	if(bs_capac < bs_use)
 		to_chat(user, span_warning("[src] has no charge."))
 		return FALSE
 
+	user.changeNext_move(CLICK_CD_RANGE)
 	user.Beam(A, icon_state = "rped_upgrade", time = 1 SECONDS)
 
 	if(try_build_pipe(A, user))
