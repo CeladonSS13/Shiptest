@@ -186,7 +186,7 @@
 	name = "Long-range Health Analyzer"
 	desc = "A handheld body scanner capable of accurately detecting the patient's vital signs from a distance."
 	id = "healthanalyzer_ranged"
-	build_path = /obj/item/healthanalyzer/range
+	build_path = /obj/item/healthanalyzer/ranged
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = 5000, /datum/material/glass = 2500, /datum/material/silver = 2000)
 	category = list("Medical Designs")

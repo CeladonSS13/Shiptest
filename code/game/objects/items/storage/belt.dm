@@ -118,9 +118,9 @@
 	new /obj/item/screwdriver/power(src)
 	new /obj/item/crowbar/power(src)
 	new /obj/item/weldingtool/electric(src)
-	new /obj/item/multitool/tricorder/range(src)
+	new /obj/item/multitool/tricorder/ranged(src)
 	new /obj/item/pipe_dispenser/bluespace(src)
-	new /obj/item/inducer/debug(src)
+	new /obj/item/inducer/adv(src)
 	new /obj/item/stack/cable_coil(src,MAXCOIL,"cyan")
 // [/CELADON-EDIT]
 
