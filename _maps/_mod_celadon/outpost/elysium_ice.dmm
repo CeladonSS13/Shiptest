@@ -1089,7 +1089,6 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
 "aGT" = (
-/obj/effect/turf_decal/corner/opaque/neutral/full,
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
 /obj/structure/sink/kitchen{
 	dir = 4;
@@ -2003,7 +2002,7 @@
 /area/outpost/exterior)
 "bcG" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating/rust,
 /area/outpost/vacant_rooms/trash_factory)
 "bcJ" = (
@@ -2573,7 +2572,6 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/fraction/nanotrasen)
 "bvG" = (
-/obj/effect/turf_decal/corner/opaque/neutral/full,
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/plasteel/white,
@@ -2698,7 +2696,7 @@
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar/bar_zone)
 "bBa" = (
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
 	layer = 2.454
 	},
@@ -4380,7 +4378,7 @@
 "cAJ" = (
 /obj/machinery/light/small/directional/west,
 /obj/structure/flora/grass/jungle,
-/turf/open/floor/plating/grass,
+/turf/open/floor/grass,
 /area/outpost/crew/canteen)
 "cBm" = (
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
@@ -5185,7 +5183,7 @@
 /turf/open/floor/plasteel/elevatorshaft,
 /area/outpost/exterior)
 "cZn" = (
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -5597,10 +5595,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/checkpoint)
-"dlJ" = (
-/obj/structure/flora/rock/spire,
-/turf/open/floor/plating/asteroid/iceberg/lit,
-/area/outpost/exterior)
 "dlS" = (
 /obj/machinery/door/airlock{
 	dir = 4;
@@ -6597,7 +6591,7 @@
 	},
 /obj/item/reagent_containers/pill/happinesspsych,
 /obj/structure/closet/crate/large,
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -6766,7 +6760,6 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/surgery_1)
 "dRL" = (
-/obj/effect/turf_decal/corner/opaque/neutral/full,
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
@@ -6841,7 +6834,7 @@
 "dTJ" = (
 /obj/structure/flora/grass/jungle,
 /mob/living/basic/cow,
-/turf/open/floor/plating/grass,
+/turf/open/floor/grass,
 /area/outpost/crew/canteen)
 "dUy" = (
 /obj/item/lighter/zippo/ironic{
@@ -7673,7 +7666,7 @@
 /area/outpost/fraction/syndi)
 "eoY" = (
 /mob/living/basic/mouse/brown,
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "epu" = (
@@ -7844,7 +7837,6 @@
 /turf/open/floor/carpet/black,
 /area/outpost/crew/lounge)
 "evq" = (
-/obj/effect/turf_decal/corner/opaque/neutral/full,
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
 /obj/structure/closet/crate/hydroponics,
 /obj/item/spacecash/bundle/c10000,
@@ -8095,7 +8087,7 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo/office)
 "eCH" = (
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating/asteroid/whitesandsdriedair,
 /area/outpost/exterior)
 "eCI" = (
@@ -9531,7 +9523,6 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "frZ" = (
-/obj/effect/turf_decal/corner/opaque/neutral/full,
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/plasteel/white,
@@ -11274,7 +11265,7 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced/spawner,
-/turf/open/floor/plating/grass,
+/turf/open/floor/grass,
 /area/outpost/crew/canteen)
 "gmW" = (
 /obj/structure/flora/grass/green{
@@ -11320,7 +11311,7 @@
 	},
 /area/outpost/exterior)
 "gos" = (
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating/ice/temperate/gradus_minus_30,
 /area/outpost/exterior)
 "goK" = (
@@ -12796,7 +12787,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 1
 	},
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -13003,8 +12994,29 @@
 /turf/open/floor/carpet/black,
 /area/outpost/crew/lounge)
 "hmr" = (
-/turf/open/floor/plating/asteroid/iceberg/lit,
-/area/outpost/exterior)
+/obj/effect/turf_decal/corner/opaque/green/mono,
+/obj/effect/mob_spawn/human/elysium_outpost/cook,
+/obj/machinery/button/door{
+	pixel_y = 11;
+	id = "outpost_cook_kitchen";
+	name = "Bolt kitchen";
+	pixel_x = 22;
+	req_one_access_txt = "8124";
+	dir = 8
+	},
+/obj/machinery/button/door{
+	pixel_y = -1;
+	id = "outpost_cook_botanic";
+	name = "Bolt botanica";
+	pixel_x = 22;
+	req_one_access_txt = "8124";
+	dir = 8
+	},
+/obj/machinery/door/window{
+	req_one_access_txt = "8124"
+	},
+/turf/open/floor/plasteel/white,
+/area/outpost/crew/garden)
 "hmG" = (
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
 	layer = 2.030
@@ -14046,12 +14058,12 @@
 /turf/open/floor/carpet/black,
 /area/outpost/fraction/syndi)
 "hQM" = (
-/obj/item/radio/intercom/directional/west{
-	pixel_y = 7
+/obj/item/stack/sheet/mineral/wood,
+/turf/open/floor/whitesandsdriedair{
+	layer = 2.4;
+	planetary_atmos = 1
 	},
-/obj/effect/turf_decal/corner/opaque/green/diagonal,
-/turf/open/floor/plasteel/white,
-/area/outpost/crew/garden)
+/area/outpost/exterior)
 "hQU" = (
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
@@ -14710,7 +14722,7 @@
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
 	layer = 2.030
 	},
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "ihr" = (
@@ -16697,7 +16709,7 @@
 /turf/open/floor/carpet/black,
 /area/outpost/crew/lounge)
 "jjL" = (
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
 	layer = 2.454
 	},
@@ -16869,7 +16881,7 @@
 /turf/open/floor/marble,
 /area/outpost/fraction/solfed)
 "jpa" = (
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating,
 /area/outpost/exterior)
 "jpx" = (
@@ -17795,7 +17807,7 @@
 /turf/open/floor/wood,
 /area/outpost/exterior)
 "jXs" = (
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/wood,
 /area/outpost/exterior)
 "jXS" = (
@@ -18909,7 +18921,6 @@
 /turf/open/floor/plating/grass,
 /area/outpost/cargo)
 "kCJ" = (
-/obj/effect/turf_decal/corner/opaque/neutral/full,
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 5
@@ -21195,7 +21206,7 @@
 /obj/effect/turf_decal/siding/white/corner{
 	dir = 1
 	},
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plasteel/patterned/brushed{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -22857,7 +22868,7 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 4
 	},
-/turf/open/floor/plating/grass,
+/turf/open/floor/grass,
 /area/outpost/crew/canteen)
 "mQv" = (
 /obj/effect/turf_decal/techfloor/hole,
@@ -23271,7 +23282,7 @@
 	dir = 2;
 	req_one_access_txt = "8124"
 	},
-/turf/open/floor/plating/grass,
+/turf/open/floor/grass,
 /area/outpost/crew/canteen)
 "ncS" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -23443,7 +23454,7 @@
 /area/outpost/fraction/nanotrasen)
 "nga" = (
 /obj/structure/railing,
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
 	layer = 2.454
 	},
@@ -24340,7 +24351,7 @@
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/medical/hall_2)
 "nCi" = (
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
 	layer = 2.454
 	},
@@ -26375,7 +26386,7 @@
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
 	layer = 2.030
 	},
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /obj/effect/turf_decal/trimline/opaque/orange/corner{
 	dir = 8
 	},
@@ -27071,7 +27082,7 @@
 /area/outpost/exterior)
 "pfX" = (
 /obj/effect/decal/cleanable/glass/plasma,
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "pgd" = (
@@ -27445,6 +27456,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/machinery/light/dim/directional/south,
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/garden)
 "pqZ" = (
@@ -27508,7 +27520,6 @@
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/security/armory)
 "psm" = (
-/obj/effect/turf_decal/corner/opaque/neutral/full,
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
 /obj/machinery/door/airlock/glass{
 	req_one_access_txt = "8124";
@@ -28735,7 +28746,7 @@
 /turf/open/floor/carpet/black,
 /area/outpost/fraction/syndi)
 "qfz" = (
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/whitesandsdriedair{
 	layer = 2.4;
 	planetary_atmos = 1
@@ -28938,10 +28949,11 @@
 /turf/open/floor/plasteel/patterned,
 /area/outpost/cargo/smeltery)
 "qlB" = (
-/obj/effect/turf_decal/corner/opaque/neutral/full,
-/obj/effect/turf_decal/corner/opaque/green/diagonal,
-/turf/open/floor/plasteel/white,
-/area/outpost/crew/garden)
+/obj/item/stack/sheet/mineral/wood,
+/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+	layer = 2.454
+	},
+/area/outpost/exterior)
 "qlM" = (
 /obj/structure/table/abductor,
 /turf/open/floor/plating/abductor,
@@ -31276,7 +31288,7 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/engineering/atmospherics)
 "rBc" = (
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating/asteroid/icerock/smooth,
 /area/outpost/exterior)
 "rBd" = (
@@ -32439,7 +32451,7 @@
 	},
 /area/outpost/maintenance/starboard)
 "sju" = (
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /obj/structure/disposalpipe/segment{
 	layer = 1
 	},
@@ -33679,7 +33691,7 @@
 /obj/structure/window/reinforced/spawner,
 /obj/structure/flora/grass/jungle,
 /mob/living/simple_animal/chicken/rabbit,
-/turf/open/floor/plating/grass,
+/turf/open/floor/grass,
 /area/outpost/crew/canteen)
 "sTi" = (
 /obj/structure/cable{
@@ -34134,7 +34146,7 @@
 "tei" = (
 /obj/structure/flora/grass/jungle,
 /mob/living/simple_animal/chicken,
-/turf/open/floor/plating/grass,
+/turf/open/floor/grass,
 /area/outpost/crew/canteen)
 "teB" = (
 /obj/effect/turf_decal/trimline/opaque/beige/filled/line,
@@ -34401,7 +34413,6 @@
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "tmq" = (
-/obj/effect/turf_decal/corner/opaque/neutral/full,
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable{
@@ -35817,7 +35828,6 @@
 	},
 /area/outpost/exterior)
 "ubX" = (
-/obj/effect/turf_decal/corner/opaque/neutral/full,
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -36992,23 +37002,6 @@
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar/theatre)
 "uLL" = (
-/obj/machinery/button/door{
-	pixel_y = -1;
-	id = "outpost_cook_botanic";
-	name = "Bolt botanica";
-	pixel_x = 22;
-	req_one_access_txt = "8124";
-	dir = 8
-	},
-/obj/effect/mob_spawn/human/elysium_outpost/cook,
-/obj/machinery/button/door{
-	pixel_y = 11;
-	id = "outpost_cook_kitchen";
-	name = "Bolt kitchen";
-	pixel_x = 22;
-	req_one_access_txt = "8124";
-	dir = 8
-	},
 /turf/open/floor/plasteel/kitchen_coldroom/freezerfloor/freezer_blue,
 /area/outpost/crew/canteen)
 "uLM" = (
@@ -37658,7 +37651,7 @@
 /area/outpost/crew/bar/theatre)
 "vir" = (
 /obj/structure/flora/grass/jungle,
-/turf/open/floor/plating/grass,
+/turf/open/floor/grass,
 /area/outpost/crew/canteen)
 "viw" = (
 /obj/structure/plasticflaps/opaque{
@@ -39437,7 +39430,6 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/outpost/fraction/inteq)
 "wkl" = (
-/obj/effect/turf_decal/corner/opaque/neutral/full,
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
 /obj/machinery/door/airlock/glass{
 	req_one_access_txt = "8124"
@@ -39615,7 +39607,7 @@
 /turf/open/floor/carpet/red,
 /area/outpost/crew/dop_zone_1)
 "wnE" = (
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "wnS" = (
@@ -40074,7 +40066,7 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
 "wxo" = (
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plasteel/patterned/brushed{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -41883,7 +41875,7 @@
 	},
 /area/outpost/fraction/nanotrasen)
 "xyp" = (
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/wood/walnut{
 	planetary_atmos = 1
 	},
@@ -42198,7 +42190,7 @@
 	},
 /obj/structure/flora/grass/jungle,
 /mob/living/simple_animal/chick/holo,
-/turf/open/floor/plating/grass,
+/turf/open/floor/grass,
 /area/outpost/crew/canteen)
 "xHh" = (
 /obj/effect/turf_decal/corner/opaque/lime/half{
@@ -42294,9 +42286,7 @@
 /area/outpost/cargo)
 "xJz" = (
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
-/obj/structure/sign/poster/bay/random{
-	pixel_y = 32
-	},
+/obj/machinery/light/dim/directional/north,
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/garden)
 "xJW" = (
@@ -42340,7 +42330,7 @@
 	},
 /area/outpost/exterior)
 "xLl" = (
-/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating/asteroid/icerock,
 /area/outpost/exterior)
 "xLt" = (
@@ -57057,12 +57047,12 @@ mbO
 bxm
 mbO
 aBJ
-aBJ
+aji
 aji
 duT
 wkE
 xHt
-hQM
+sRL
 gyC
 aGT
 aji
@@ -57244,11 +57234,11 @@ sSm
 sSm
 sSm
 lLY
-lLY
 aji
-qlB
-qlB
-qlB
+hmr
+sRL
+sRL
+sRL
 frZ
 kCJ
 tmq
@@ -57431,9 +57421,9 @@ xOh
 sSm
 sSm
 xOh
-lLY
 aji
-qlB
+aji
+sRL
 pCc
 pCc
 pCc
@@ -57620,9 +57610,9 @@ sSm
 sSm
 sSm
 aji
-qlB
 sRL
-qlB
+sRL
+sRL
 bvG
 dRL
 ubX
@@ -72484,7 +72474,7 @@ wgM
 gok
 wgM
 gok
-gok
+qlB
 gok
 gok
 wlS
@@ -72856,7 +72846,7 @@ wgM
 jGy
 gok
 jGy
-gok
+qlB
 bBa
 gok
 jsV
@@ -73041,12 +73031,12 @@ rgY
 gMS
 gMS
 gok
-gok
+qlB
 gok
 ocs
 rMi
 bWp
-gok
+qlB
 gok
 ajt
 gok
@@ -73233,7 +73223,7 @@ gok
 gok
 qfz
 qfz
-ajt
+hQM
 jsV
 gok
 gok
@@ -73605,7 +73595,7 @@ wgM
 wgM
 gok
 yao
-ajt
+hQM
 ajt
 qfz
 qfz
@@ -73791,7 +73781,7 @@ gMS
 gMS
 gMS
 wgM
-gok
+qlB
 qfz
 uxW
 mAP
@@ -73978,12 +73968,12 @@ rgY
 rgY
 gMS
 gMS
-gok
+qlB
 jGy
 gMS
 gok
 gok
-gok
+qlB
 xvR
 gok
 gok
@@ -76025,9 +76015,9 @@ rgY
 rgY
 rgY
 oyC
-hmr
-hmr
-hmr
+oyC
+oyC
+oyC
 aPp
 aPp
 rgY
@@ -76211,11 +76201,11 @@ rgY
 rgY
 rgY
 rgY
-hmr
+oyC
 gok
 gok
-hmr
-hmr
+oyC
+oyC
 oyC
 aPp
 rgY
@@ -76397,12 +76387,12 @@ rgY
 rgY
 rgY
 rgY
-hmr
+oyC
 gok
 pnH
 jUM
 gok
-hmr
+oyC
 oyC
 rgY
 rgY
@@ -76585,11 +76575,11 @@ rgY
 rgY
 rgY
 rgY
-hmr
+oyC
 gok
 aSr
 gok
-hmr
+oyC
 fNg
 rgY
 rgY
@@ -76773,9 +76763,9 @@ rgY
 rgY
 rgY
 oyC
-dlJ
+fNg
 gok
-hmr
+oyC
 oyC
 rgY
 rgY
@@ -76961,7 +76951,7 @@ rgY
 rgY
 rgY
 oyC
-hmr
+oyC
 rgY
 rgY
 rgY
