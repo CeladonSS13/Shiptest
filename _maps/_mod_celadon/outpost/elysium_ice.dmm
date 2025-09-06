@@ -297,6 +297,9 @@
 	icon_state = "4-8"
 	},
 /obj/effect/turf_decal/corner/opaque/grey/diagonal,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/plasteel/patterned,
 /area/outpost/vacant_rooms/shop)
 "aji" = (
@@ -8797,9 +8800,6 @@
 /turf/open/floor/plating/ice/temperate/gradus_minus_30,
 /area/outpost/exterior)
 "eVL" = (
-/obj/structure/disposalpipe/segment{
-	dir = 5
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
@@ -8810,6 +8810,9 @@
 	icon_state = "4-8"
 	},
 /obj/effect/turf_decal/corner/opaque/grey/diagonal,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/plasteel/patterned,
 /area/outpost/vacant_rooms/shop)
 "eVM" = (
@@ -26226,6 +26229,9 @@
 	icon_state = "4-8"
 	},
 /obj/effect/turf_decal/corner/opaque/grey/diagonal,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/plasteel/patterned,
 /area/outpost/vacant_rooms/shop)
 "oEH" = (
@@ -27400,6 +27406,14 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
+"pqa" = (
+/obj/effect/turf_decal/borderfloorwhite/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/grey/diagonal,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel/patterned,
+/area/outpost/vacant_rooms/shop)
 "pql" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 8
@@ -27933,6 +27947,9 @@
 	icon_state = "4-8"
 	},
 /obj/effect/turf_decal/corner/opaque/grey/diagonal,
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
 /turf/open/floor/plasteel/patterned,
 /area/outpost/vacant_rooms/shop)
 "pEq" = (
@@ -27996,8 +28013,6 @@
 /area/outpost/fraction/separatist)
 "pIa" = (
 /obj/structure/closet/emcloset/wall/directional/east,
-/obj/machinery/disposal/bin,
-/obj/structure/disposalpipe/trunk,
 /obj/effect/turf_decal/borderfloorwhite/corner{
 	dir = 4
 	},
@@ -39246,6 +39261,8 @@
 	dir = 9
 	},
 /obj/effect/turf_decal/corner/opaque/grey/diagonal,
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk,
 /turf/open/floor/plasteel/patterned,
 /area/outpost/vacant_rooms/shop)
 "wfn" = (
@@ -54609,7 +54626,7 @@ kZI
 erC
 kZI
 weR
-rcw
+pqa
 pDA
 eDk
 kZI
@@ -54797,7 +54814,7 @@ dXG
 xhn
 rcw
 nbI
-pDA
+eVL
 eDk
 kZI
 gok
@@ -55358,7 +55375,7 @@ vSK
 nbI
 nbI
 nbI
-pDA
+eVL
 olr
 aim
 gok
