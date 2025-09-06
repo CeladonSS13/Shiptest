@@ -1,5 +1,5 @@
 /obj/structure/salvageable/railgun
-	name = "Malfunctionaning Caliban's 'WAR' railgun"
+	name = "Malfunctioning Caliban's 'WAR' railgun"
 	desc = "This railgun has massive power draw, yet it is a modified version with discarding sabot that increases its heat production. Two rails are surrounded by a helical barrel that ejects shots at tremendous speed."
 	icon = 'mod_celadon/_storge_icons/icons/machinery/caliban_rail.dmi'
 	icon_state = "railgun-malf"
