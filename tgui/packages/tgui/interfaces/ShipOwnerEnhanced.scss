@@ -1,0 +1,199 @@
+.ship-owner-enhanced {
+  .application-card {
+    border: 2px solid #4a4a4a;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px 0;
+    background-color: #2a2a2a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+    .character-info {
+      margin-right: 20px;
+      flex: 1;
+      min-width: 0; // Важно для правильного сжатия flex элемента
+
+      .character-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+
+        .character-name {
+          flex: 1;
+
+          .name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+          }
+
+          .ckey {
+            font-size: 12px;
+            color: #cccccc;
+          }
+        }
+
+        .status-badges {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          align-items: flex-end;
+        }
+
+        .status-badge {
+          padding: 4px 8px;
+          border-radius: 4px;
+          font-size: 12px;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: #000000;
+
+          &.pending {
+            background-color: #ffaa00;
+          }
+
+          &.accepted {
+            background-color: #00ff00;
+          }
+
+          &.denied {
+            background-color: #ff0000;
+          }
+
+          &.invalid-character {
+            background-color: #ff6600;
+            color: #ffffff;
+            animation: blink 2s infinite;
+          }
+        }
+
+        @keyframes blink {
+          0%, 50% { opacity: 1; }
+          51%, 100% { opacity: 0.5; }
+        }
+      }
+
+      .character-details {
+        .detail-row {
+          margin-bottom: 8px;
+
+          .age,
+          .species,
+          .gender {
+            font-size: 14px;
+            color: #aaaaff;
+            margin-right: 16px;
+          }
+
+          .target-job {
+            font-size: 14px;
+            color: #ffaaaa;
+          }
+        }
+
+        .quirks-section {
+          margin-bottom: 8px;
+
+          .quirks-label {
+            font-size: 12px;
+            color: #ffaaaa;
+            margin-bottom: 4px;
+          }
+
+          .quirks-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
+
+            .quirk-badge {
+              display: inline-block;
+              padding: 2px 6px;
+              border-radius: 4px;
+              font-size: 10px;
+              font-weight: bold;
+              color: #000000;
+
+              &.good {
+                background-color: #aaffaa;
+              }
+
+              &.bad {
+                background-color: #ffaaaa;
+              }
+
+              &.neutral {
+                background-color: #aaaaff;
+              }
+            }
+          }
+        }
+
+        .message-section {
+          margin-bottom: 8px;
+
+          .message-label {
+            font-size: 12px;
+            color: #aaffaa;
+            margin-bottom: 4px;
+
+            &.denial-reason {
+              color: #ffaaaa;
+            }
+          }
+
+          .message-text {
+            font-size: 11px;
+            color: #cccccc;
+            background-color: #1a1a1a;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #333333;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
+            // Ограничиваем высоту и добавляем скролл для длинных сообщений
+            max-height: 80px;
+            overflow-y: auto;
+
+            &.denial-reason {
+              border-color: #ff4444;
+              background-color: #2a1a1a;
+            }
+          }
+        }
+      }
+
+      .action-buttons {
+        margin-top: 16px;
+        display: flex;
+        gap: 8px;
+      }
+    }
+
+    .character-photo {
+      width: 128px;
+      height: 128px;
+      border: 3px solid #4a4a4a;
+      border-radius: 8px;
+      background-color: #1a1a1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0; // Не позволяем фото сжиматься
+
+      img {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+
+      .no-photo {
+        color: #666666;
+        font-size: 12px;
+        text-align: center;
+        padding: 8px;
+      }
+    }
+  }
+}

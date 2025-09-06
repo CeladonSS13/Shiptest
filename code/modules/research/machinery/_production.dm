@@ -31,6 +31,12 @@
 	materials = AddComponent(/datum/component/remote_materials, "lathe", mapload)
 	RefreshParts()
 
+	// [CELADON-ADD] - Анимации при вставке материалов в техфаб и протолат.
+	RegisterSignal(src, COMSIG_PARENT_ATTACKBY, PROC_REF(OnMatInsertAnimationHook))
+	if(materials && materials.mat_container && !materials.silo)
+		materials.mat_container.after_insert = CALLBACK(src, PROC_REF(AfterMaterialInsert))
+	// [/CELADON-ADD]
+
 /obj/machinery/rnd/production/Destroy()
 	materials = null
 	cached_designs = null

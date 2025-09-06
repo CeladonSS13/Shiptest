@@ -467,6 +467,20 @@
 		"safe_dial.png" = 'html/safe_dial.png'
 	)
 
+// [CELADON-ADD] - SHIP_SELECTION_REWORK - Добавляем asset для логотипов фракций
+/datum/asset/simple/faction_logos
+	assets = list(
+		"nanotrasen.png" = 'mod_celadon/_storge_icons/icons/assets/logo/nanotrasen.png',
+		"syndicate.png" = 'mod_celadon/_storge_icons/icons/assets/logo/syndicate.png',
+		"inteq.png" = 'mod_celadon/_storge_icons/icons/assets/logo/inteq.png',
+		"solfed.png" = 'mod_celadon/_storge_icons/icons/assets/logo/solfed.png',
+		"independent.png" = 'mod_celadon/_storge_icons/icons/assets/logo/independent.png',
+		"elysium.png" = 'mod_celadon/_storge_icons/icons/assets/logo/elysium.png',
+		"pirates.png" = 'mod_celadon/_storge_icons/icons/assets/logo/pirates.png',
+		"other.png" = 'mod_celadon/_storge_icons/icons/assets/logo/other.png'
+	)
+// [/CELADON-ADD]
+
 /datum/asset/simple/pai
 	assets = list(
 		"paigrid.png" = 'html/paigrid.png'

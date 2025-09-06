@@ -29,6 +29,7 @@
 		/obj/item/pinpointer/crew = 1)
 	contraband = list(/obj/item/reagent_containers/pill/tox = 2)
 	premium = list(
+		/obj/item/healthanalyzer/ranged = 2,	// [CELADON-ADD] - OMNI_TOOLS
 		/obj/item/clothing/glasses/hud/health = 1,
 		/obj/item/clothing/glasses/hud/health/prescription = 1,
 		/obj/item/shears = 1,

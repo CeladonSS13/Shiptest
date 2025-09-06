@@ -1,39 +1,3 @@
-//временный фикс говнокода оффов
-/obj/machinery/porta_turret/connect_to_shuttle(obj/docking_port/mobile/port, obj/docking_port/stationary/dock)
-	id = "[text_ref(port)][id]"
-	port.turret_list |= WEAKREF(src)
-
-/obj/machinery/porta_turret/set_state(on, new_lethal, new_flags)
-	.=..()
-	if(!isnull(new_flags))
-		turret_flags = new_flags
-
-	lethal = new_lethal
-	toggle_on(on)
-	power_change()
-
-/obj/machinery/turretid/late_connect_to_shuttle(obj/docking_port/mobile/port, obj/docking_port/stationary/dock)
-	.=..()
-	SIGNAL_HANDLER
-
-	for(var/datum/weakref/ship_gun as anything in port.turret_list)
-		var/obj/machinery/porta_turret/turret_gun = ship_gun.resolve()
-		//skip if it doesn't exist or if the id doesn't match
-		if(turret_gun?.id != id)
-			continue
-
-		turret_refs += ship_gun
-
-	update_turrets()
-	UnregisterSignal(port, COMSIG_SHIP_DONE_CONNECTING)
-
-//дает всем турелям нормальные флаги для агрессивного поведения
-/obj/machinery/porta_turret
-	turret_flags = TURRET_FLAG_DEFAULT_CELADON
-
-/obj/machinery/turretid
-	turret_flags = TURRET_FLAG_DEFAULT_CELADON
-
 // Syndicate outdated turrets
 /obj/machinery/porta_turret/syndicate/interior_45
 	name = "machine gun turret (.45)"

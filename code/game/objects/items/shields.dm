@@ -35,22 +35,26 @@
 	var/recoil_bonus = -2
 	var/broken = FALSE
 
-// спрайты риотки блок
-// спрайт
-	var/broken_shield	// [CELADON-ADD] - Флаг на включение сломаных щитов из модов - BALLISTIC_SHIELD - Extended Edition
+// [CELADON-ADD] - Флаг на включение сломаных щитов из модов - BALLISTIC_SHIELD - Extended Edition
+	var/broken_shield
+	var/spread_bonus = 0
+	var/braking_sound = 'sound/effects/glassbr3.ogg'
+	var/braking_alert = "cracks!"
+// [/CELADON-ADD]
 
 /obj/item/shield/proc/on_block(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", damage = 0, attack_type = MELEE_ATTACK)
 	take_damage(damage)
 
-/obj/item/shield/obj_break(damage_flag)
+/obj/item/shield/atom_break(damage_flag)
 	. = ..()
 	if(!broken)
 		if(isliving(loc))
-			loc.balloon_alert(loc, "[src] cracks!")
 // [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
+			//loc.balloon_alert(loc, "[src] cracks!") // [CELADON-EDIT]
+			loc.balloon_alert(loc, "[src] [braking_alert]")
 			var/mob/living/user = loc
 			user.dropItemToGround(src, force = TRUE)
-		playsound(src, 'sound/effects/glassbr3.ogg', 100)
+		playsound(src, braking_sound, 100)
 		if(broken_shield)
 			icon = 'mod_celadon/_storge_icons/icons/items/weapons/shields.dmi'
 			icon_state = "[src::icon_state]_broken"
@@ -63,7 +67,7 @@
 
 /obj/item/shield/examine(mob/user)
 	. = ..()
-	var/healthpercent = round((obj_integrity/max_integrity) * 100, 1)
+	var/healthpercent = round((atom_integrity/max_integrity) * 100, 1)
 	switch(healthpercent)
 		if(50 to 99)
 			. += span_info("It looks slightly damaged.")
@@ -96,6 +100,7 @@
 	material_flags = MATERIAL_NO_EFFECTS
 
 // [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition + Rebalance
+	spread_bonus = -3
 	slowdown = 0.5
 	max_integrity = 600
 	block_chance = 60
@@ -113,9 +118,9 @@
 			playsound(src, shield_bash_sound, 50, TRUE)
 			COOLDOWN_START(src, baton_bash, BATON_BASH_COOLDOWN)
 	else if(istype(W, /obj/item/stack/sheet/plasteel))
-		if (obj_integrity >= max_integrity)
+		if (atom_integrity >= max_integrity)
 			to_chat(user, span_warning("[src] is already in perfect condition."))
-		while(obj_integrity < max_integrity)
+		while(atom_integrity < max_integrity)
 			if(!do_after(user, 3 SECONDS, target= src)) //if(!do_after(user, 30, target= src)) // [CELADON-EDIT] - ORIGIRAL
 				return
 			var/obj/item/stack/sheet/plasteel/T = W
@@ -127,7 +132,7 @@
 				else
 					icon_state = "[src::icon_state]"
 //	[/CELADON-ADD]
-			obj_integrity = max_integrity
+			atom_integrity = max_integrity
 			to_chat(user, span_notice("You repair [src] with [T]."))
 			name = src::name
 			broken = FALSE
@@ -190,7 +195,8 @@
 	broken_shield = FALSE
 // [/CELADON-ADD]
 
-/obj/item/shield/riot/buckler/obj_destruction(damage_flag)
+/obj/item/shield/riot/buckler/atom_destruction(damage_flag)
+
 	playsound(src, shield_break_sound, 50)
 	new shield_break_leftover(get_turf(src))
 	if(isliving(loc))
