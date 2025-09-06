@@ -220,6 +220,7 @@
 	user.changeNext_move(CLICK_CD_RANGE)
 	playsound(get_turf(user), 'sound/effects/pop.ogg', 50)
 	atmosanalyzer_scan(user=user, target=get_turf(src), silent=FALSE)
+	flick("[icon_state]_act", src)
 
 // MARK: Мед-Сканер
 
