@@ -24188,7 +24188,9 @@
 /area/outpost/fraction/syndi)
 "ruV" = (
 /obj/effect/spawner/random/mine,
-/turf/open/space/basic,
+/turf/open/floor/plating/airless{
+	alpha = 0
+	},
 /area/space)
 "ruZ" = (
 /turf/open/floor/concrete/slab_3,
@@ -25425,7 +25427,9 @@
 	},
 /obj/effect/spawner/random/mine,
 /obj/structure/lattice,
-/turf/open/space/basic,
+/turf/open/floor/plating/airless{
+	alpha = 0
+	},
 /area/outpost/external)
 "srp" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
