@@ -5284,6 +5284,18 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
+"dch" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/corner/opaque/neutral/mono,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 5;
+	color = "#808080"
+	},
+/obj/item/food/cheese/wheel,
+/turf/open/floor/wood/walnut{
+	planetary_atmos = 1
+	},
+/area/outpost/crew/canteen)
 "dcW" = (
 /obj/item/reagent_containers/food/drinks/mug/coco{
 	pixel_y = 9;
@@ -6476,10 +6488,16 @@
 	},
 /area/outpost/crew/canteen)
 "dLB" = (
-/obj/effect/turf_decal/corner/opaque/neutral/diagonal,
-/obj/effect/turf_decal/corner/opaque/black/mono,
-/obj/effect/turf_decal/corner/opaque/neutral/diagonal,
-/turf/open/floor/plasteel/white,
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/corner/opaque/neutral/mono,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 9;
+	color = "#808080"
+	},
+/obj/item/food/cheese/wheel,
+/turf/open/floor/wood/walnut{
+	planetary_atmos = 1
+	},
 /area/outpost/crew/canteen)
 "dLM" = (
 /obj/effect/turf_decal/trimline/opaque/vired/warning{
@@ -11178,6 +11196,26 @@
 	},
 /turf/open/floor/carpet/black,
 /area/outpost/fraction/syndi)
+"gkG" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/corner/opaque/neutral/mono,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 5;
+	color = "#808080"
+	},
+/obj/item/storage/fancy/egg_box,
+/obj/item/storage/fancy/egg_box{
+	pixel_x = 0;
+	pixel_y = 7
+	},
+/obj/item/storage/fancy/egg_box{
+	pixel_x = 0;
+	pixel_y = 15
+	},
+/turf/open/floor/wood/walnut{
+	planetary_atmos = 1
+	},
+/area/outpost/crew/canteen)
 "gkW" = (
 /obj/structure/spider/stickyweb{
 	color = "#808080"
@@ -11440,9 +11478,7 @@
 	dir = 8;
 	color = "#808080"
 	},
-/obj/machinery/disposal/bin{
-	density = 0
-	},
+/obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
@@ -16883,6 +16919,9 @@
 	pixel_x = -1;
 	pixel_y = 5
 	},
+/obj/machinery/light/colored/white{
+	pixel_y = -6
+	},
 /turf/open/floor/marble,
 /area/outpost/fraction/solfed)
 "jpa" = (
@@ -19323,7 +19362,9 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue{
 	dir = 10
 	},
-/obj/machinery/light/colored/white,
+/obj/machinery/light/colored/white{
+	pixel_y = -6
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/fraction/solfed)
 "kOx" = (
@@ -19597,6 +19638,14 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/fraction/solfed)
+"kVr" = (
+/obj/effect/turf_decal/borderfloorwhite/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/grey/diagonal,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel/patterned,
+/area/outpost/vacant_rooms/shop)
 "kVv" = (
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 4
@@ -22072,19 +22121,16 @@
 	},
 /area/outpost/exterior)
 "msg" = (
-/obj/effect/turf_decal/corner/opaque/black/mono,
-/obj/effect/turf_decal/corner/opaque/neutral/diagonal,
-/obj/item/food/grown/wheat,
-/obj/item/food/grown/wheat,
-/obj/item/food/grown/wheat,
-/obj/item/food/grown/wheat,
-/obj/item/food/grown/wheat,
-/obj/item/food/grown/wheat,
-/obj/item/food/grown/wheat,
-/obj/item/food/grown/wheat,
-/obj/item/food/grown/wheat,
-/obj/structure/closet/secure_closet/freezer/wall/directional/south,
-/turf/open/floor/plasteel/white,
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/corner/opaque/neutral/mono,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1;
+	color = "#808080"
+	},
+/obj/item/food/cheese/wheel,
+/turf/open/floor/wood/walnut{
+	planetary_atmos = 1
+	},
 /area/outpost/crew/canteen)
 "msE" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -23656,6 +23702,14 @@
 	},
 /turf/open/floor/carpet/black,
 /area/outpost/crew/lounge)
+"nlx" = (
+/obj/effect/turf_decal/corner/opaque/black/mono,
+/obj/effect/turf_decal/corner/opaque/neutral/diagonal,
+/obj/item/kirbyplants/random,
+/turf/open/floor/wood/walnut{
+	planetary_atmos = 1
+	},
+/area/outpost/crew/canteen)
 "nlC" = (
 /obj/machinery/computer/mission,
 /turf/open/floor/plasteel/tech/techmaint,
@@ -26587,9 +26641,24 @@
 /turf/open/floor/marble/black,
 /area/outpost/cargo)
 "oNa" = (
-/obj/effect/turf_decal/corner/opaque/black/mono,
-/obj/effect/turf_decal/corner/opaque/neutral/diagonal,
-/turf/open/floor/plasteel/white,
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/corner/opaque/neutral/mono,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 9;
+	color = "#808080"
+	},
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/milk{
+	pixel_x = -9;
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/condiment/milk{
+	pixel_x = 8;
+	pixel_y = 6
+	},
+/turf/open/floor/wood/walnut{
+	planetary_atmos = 1
+	},
 /area/outpost/crew/canteen)
 "oNb" = (
 /obj/item/mine/pressure/explosive/heavy/live,
@@ -27133,6 +27202,15 @@
 	dir = 9;
 	color = "#808080"
 	},
+/obj/item/food/grown/tomato,
+/obj/item/food/grown/tomato{
+	pixel_x = 5;
+	pixel_y = 12
+	},
+/obj/item/food/grown/tomato{
+	pixel_x = -8;
+	pixel_y = 12
+	},
 /turf/open/floor/wood/walnut{
 	planetary_atmos = 1
 	},
@@ -27406,14 +27484,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
-"pqa" = (
-/obj/effect/turf_decal/borderfloorwhite/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/opaque/grey/diagonal,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel/patterned,
-/area/outpost/vacant_rooms/shop)
 "pql" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 8
@@ -28592,6 +28662,26 @@
 /mob/living/simple_animal/pet/dog/corgi/Lisa/zlatchek,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
+"pYy" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/corner/opaque/neutral/mono,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1;
+	color = "#808080"
+	},
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/flour{
+	pixel_x = 5;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/condiment/flour{
+	pixel_x = -5;
+	pixel_y = 8
+	},
+/turf/open/floor/wood/walnut{
+	planetary_atmos = 1
+	},
+/area/outpost/crew/canteen)
 "pYD" = (
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
 	layer = 2.030
@@ -33171,6 +33261,10 @@
 	},
 /turf/open/floor/plasteel/mono,
 /area/outpost/cargo/faction/solfed)
+"sCU" = (
+/obj/item/reagent_containers/condiment/pack,
+/turf/closed/wall/r_wall,
+/area/outpost/crew/garden)
 "sDk" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 5
@@ -35820,9 +35914,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/obj/machinery/disposal/bin{
-	density = 0
-	},
+/obj/machinery/disposal/bin,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -35886,6 +35978,15 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1;
 	color = "#808080"
+	},
+/obj/item/food/grown/carrot,
+/obj/item/food/grown/carrot{
+	pixel_x = 9;
+	pixel_y = 11
+	},
+/obj/item/food/grown/carrot{
+	pixel_x = 0;
+	pixel_y = 10
 	},
 /turf/open/floor/wood/walnut{
 	planetary_atmos = 1
@@ -41519,6 +41620,12 @@
 	light_range = 2
 	},
 /area/outpost/vacant_rooms/trash_factory)
+"xky" = (
+/obj/effect/turf_decal/corner/opaque/black/mono,
+/obj/effect/turf_decal/corner/opaque/neutral/diagonal,
+/obj/item/kirbyplants/random,
+/turf/open/floor/plasteel/white,
+/area/outpost/crew/canteen)
 "xkD" = (
 /turf/open/floor/plasteel/sepia,
 /area/outpost/crew/lounge)
@@ -41843,6 +41950,15 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 5;
 	color = "#808080"
+	},
+/obj/item/food/grown/cabbage,
+/obj/item/food/grown/cabbage{
+	pixel_x = 7;
+	pixel_y = 9
+	},
+/obj/item/food/grown/cabbage{
+	pixel_x = -8;
+	pixel_y = 10
 	},
 /turf/open/floor/wood/walnut{
 	planetary_atmos = 1
@@ -54626,7 +54742,7 @@ kZI
 erC
 kZI
 weR
-pqa
+kVr
 pDA
 eDk
 kZI
@@ -58375,7 +58491,7 @@ sRL
 sRL
 sRL
 cBm
-aji
+sCU
 guo
 bBa
 nkD
@@ -59123,7 +59239,7 @@ nGO
 ehv
 bOF
 iNv
-oNa
+pYy
 ryn
 gok
 kvO
@@ -59310,7 +59426,7 @@ ybG
 txz
 ryn
 apZ
-oNa
+gkG
 ryn
 gok
 kvO
@@ -59497,7 +59613,7 @@ ryn
 ryn
 ryn
 apZ
-oNa
+xky
 ryn
 gok
 kvO
@@ -60058,7 +60174,7 @@ mQj
 xGX
 gmC
 bAc
-ozm
+dch
 ryn
 gok
 kvO
@@ -60245,7 +60361,7 @@ ozm
 ozm
 hHk
 feu
-ozm
+nlx
 ryn
 gok
 kvO
