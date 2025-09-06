@@ -1352,6 +1352,9 @@
 /turf/open/lava/smooth/lava_land_surface,
 /area/outpost/hallway/central)
 "bdq" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo/office)
 "bdA" = (
@@ -1392,9 +1395,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/destTagger,
 /obj/machinery/light/directional/north,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo/office)
 "bee" = (
@@ -3690,7 +3690,6 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "cGh" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/structure/chair/bench/olive/directional/west{
 	dir = 2
 	},
@@ -4596,6 +4595,12 @@
 /obj/structure/table/glass,
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
+"dkK" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/turf/open/floor/plasteel/tech,
+/area/outpost/cargo/office)
 "dli" = (
 /obj/effect/turf_decal/corner/transparent/blue/full,
 /obj/machinery/door/airlock/medical/glass,
@@ -5217,6 +5222,11 @@
 /obj/structure/closet/firecloset/wall/directional/north,
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/engineering)
+"dNr" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/turf/open/floor/plasteel/grimy,
+/area/outpost/cargo)
 "dNs" = (
 /obj/structure/table/glass,
 /obj/structure/disposalpipe/segment{
@@ -10369,7 +10379,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
+	dir = 5
 	},
 /turf/open/floor/plasteel/grimy,
 /area/outpost/cargo)
@@ -11165,6 +11175,10 @@
 /obj/effect/turf_decal/trimline/opaque/blue/filled/line,
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
+"ibz" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/turf/open/floor/plasteel/tech,
+/area/outpost/cargo/office)
 "ibA" = (
 /obj/structure/deployable_barricade/guardrail{
 	dir = 8
@@ -12896,9 +12910,6 @@
 /obj/item/paper/crumpled/ruins,
 /obj/item/paper/fluff/jobs,
 /obj/machinery/newscaster/directional/south,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 1
-	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo/office)
 "jkY" = (
@@ -16986,9 +16997,6 @@
 	pixel_x = -9;
 	pixel_y = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
 /obj/machinery/door/window/brigdoor/northright{
 	dir = 8;
 	pixel_x = -1;
@@ -18064,6 +18072,8 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo)
 "mZn" = (
@@ -20507,8 +20517,8 @@
 /area/outpost/hallway/central)
 "oQV" = (
 /obj/effect/decal/cleanable/generic,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 10
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo/office)
@@ -21095,10 +21105,7 @@
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/aft)
 "pmV" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/obj/structure/chair/bench/olive/directional/west{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/grimy,
 /area/outpost/cargo)
 "pnl" = (
@@ -21402,6 +21409,8 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo/office)
 "pwN" = (
@@ -23772,12 +23781,6 @@
 /turf/open/floor/concrete/slab_4,
 /area/outpost/hallway/central)
 "rdm" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -23787,6 +23790,8 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/cargo)
 "rdL" = (
@@ -25900,9 +25905,6 @@
 /area/outpost/crew/canteen)
 "sLl" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 8
-	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo/office)
 "sLL" = (
@@ -26020,9 +26022,6 @@
 	},
 /obj/machinery/computer/secure_data/laptop{
 	pixel_x = 14
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
 	},
 /obj/structure/window/reinforced/spawner/west,
 /turf/open/floor/plasteel/tech,
@@ -28081,6 +28080,10 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo/office)
 "uoo" = (
@@ -28684,6 +28687,12 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/showroomfloor,
 /area/outpost/crew/bar/bar_zone)
+"uKi" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel/grimy,
+/area/outpost/cargo)
 "uKK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/industrial/warning{
@@ -29268,9 +29277,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 5
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy,
 /area/outpost/cargo)
@@ -29843,6 +29849,8 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo/office)
 "vsM" = (
@@ -52164,8 +52172,8 @@ wGI
 mny
 kkN
 kkN
-kkN
-mny
+dNr
+fhk
 jrD
 iad
 bFW
@@ -52351,8 +52359,8 @@ hSO
 mny
 fwl
 bFW
-pmV
-fhk
+cGh
+uKi
 epd
 cfz
 bFW
@@ -52725,7 +52733,7 @@ enO
 gHU
 mny
 lAm
-mny
+pmV
 htW
 jrD
 rfY
@@ -54780,8 +54788,8 @@ qYr
 iAK
 gSI
 sLl
-bdq
-bdq
+dkK
+ibz
 uok
 vsL
 pwF
