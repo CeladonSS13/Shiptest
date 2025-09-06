@@ -5654,7 +5654,7 @@
 /obj/machinery/button/door{
 	id = "outpost_cook_kitchen";
 	name = "BOLT KITCHEN";
-	req_one_access_txt = "8123";
+	req_one_access_txt = "8124";
 	pixel_y = -21;
 	dir = 1
 	},
@@ -32100,7 +32100,9 @@
 /obj/structure/railing/corner/wood{
 	dir = 8
 	},
-/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/fullgrass{
+	pixel_x = 7
+	},
 /turf/open/floor/grass,
 /area/outpost/hallway/fore)
 "xej" = (
