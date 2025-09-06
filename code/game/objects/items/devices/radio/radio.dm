@@ -538,15 +538,18 @@
 
 /obj/item/radio/transceiver/ramzi
 	name = "ramzi transceiver"
+	icon_state = "walkietalkie_ramzi"
 	frequency = FREQ_RAMZI
 	keyslot = /obj/item/encryptionkey/ramzi
 
 /obj/item/radio/transceiver/vox
 	name = "raider transceiver"
+	icon_state = "walkietalkie_vox"
 	frequency = FREQ_VOX
 	keyslot = /obj/item/encryptionkey/vox
 
 /obj/item/radio/transceiver/suns
 	name = "suns transceiver"
+	icon_state = "walkietalkie_suns"
 	frequency = FREQ_SUNS
 	keyslot = /obj/item/encryptionkey/suns
