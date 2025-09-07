@@ -13,6 +13,9 @@
 ## Респрйты текстур
 
 ID мода: CELADON_RESPRITE
+
+CELADON_ADD_HUDS
+JETPACK_RESPRITE
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -59,6 +62,14 @@ ID мода: CELADON_RESPRITE
 	   - `icon_state = "landing_noanim"`
 
 - EDIT: `code\modules\instruments\stationary.dm`: `/obj/structure/musician/piano/Initialize(mapload)` -> изменен прок на выборку спрайта пиано
+
+CELADON_ADD_HUDS
+- EDIT: `code/modules/admin/team_panel.dm` : 	Замена путей хадов на наши
+- EDIT: `code/modules/autowiki/pages/ships.dm` :	Выше ^
+- EDIT: `code/modules/mob/mob.dm` :					Выше ^
+
+JETPACK_RESPRITE
+- EDIT: `code/game/objects/items/tanks/jetpack.dm` : Заменена функция по обновлению спрайтов на оверлеи
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

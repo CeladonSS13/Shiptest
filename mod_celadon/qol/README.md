@@ -13,6 +13,11 @@
 ## QoL - Улучшения всего и вся
 
 ID мода: CELADON_QOL
+
+FIX_LATHE
+AUTOLATE_MAXSTACK
+ADMIN-PANEL
+UNFUCK_SPRAYCAN
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -130,6 +135,15 @@ ID мода: CELADON_QOL
 
 - ADD: `code/modules/power/singularity/singularity.dm` - добавляем сингулярность которая не излучает радиацию.
 
+AUTOLATE_MAXSTACK, FIX_LATHE
+- EDIT `code/game/machinery/autolathe.dm` - Добавление/изменения макс стопок в автолате
+- EDIT `code/game/machinery/autolathe.dm` - Удаляет абуз с дюпом
+- EDIT `tgui/packages/tgui/interfaces/Autolathe.js` - Интерфейсы под них
+
+ADMIN-PANEL
+- ADD `code/modules/admin/admin_verbs.dm`			- Добавляет Админ панель в игру
+- ADD `code/modules/client/client_defines.dm` 		-
+- ADD `tgui/packages/tgui/interfaces/AdminVerbs.js` -
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

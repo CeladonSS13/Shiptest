@@ -7,12 +7,12 @@
 @use 'sass:meta';
 
 @use '../colors.scss' with (
-  $primary: #2b2b2b,
+  $primary: #774b27,
   $fg-map-keys: (),
   $bg-map-keys: ()
 );
 @use '../base.scss' with (
-  $color-bg: #a5a200,
+  $color-bg: #3a1a0a,
   $color-bg-grad-spread: 6%
 );
 
@@ -24,25 +24,25 @@
   @include meta.load-css(
     '../components/Button.scss',
     $with: (
-      'color-transparent-text': rgb(0, 0, 0),
+      'color-transparent-text': #e6c878,
       'color-default': colors.$primary,
       'color-disabled': #363636,
-      'color-selected': #776b01,
+      'color-selected': #e6c878,
       'color-caution': #ffae00,
-      'color-danger': #d9ff00
+      'color-danger': #ff0000
     )
   );
   @include meta.load-css(
     '../components/Input.scss',
-    $with: ('border-color': #423100)
+    $with: ('border-color': #e6c878)
   );
   @include meta.load-css(
     '../components/NoticeBox.scss',
-    $with: ('background-color': #918e00)
+    $with: ('background-color': #774b27)
   );
   @include meta.load-css(
     '../components/NumberInput.scss',
-    $with: ('border-color': #423100)
+    $with: ('border-color': #e6c878)
   );
   @include meta.load-css(
     '../components/ProgressBar.scss',
@@ -51,7 +51,7 @@
   @include meta.load-css('../components/Section.scss');
   @include meta.load-css(
     '../components/Tooltip.scss',
-    $with: ('background-color': #918e00)
+    $with: ('background-color': #3a1a0a)
   );
 
   // Layouts
@@ -59,7 +59,7 @@
   @include meta.load-css('../layouts/Window.scss');
   @include meta.load-css(
     '../layouts/TitleBar.scss',
-    $with: ('background-color': #914e01)
+    $with: ('background-color': #774b27)
   );
 
   .Layout__content {

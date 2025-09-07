@@ -70,7 +70,7 @@
 		/obj/item/food/grown/cabbage = 1,
 	)
 	result = /obj/item/food/eggwrap
-	category = CAT_EGG
+	subcategory = CAT_EGG
 
 /datum/crafting_recipe/food/chawanmushi
 	name = "Chawanmushi"
@@ -81,4 +81,4 @@
 		/obj/item/food/grown/mushroom/chanterelle = 1
 	)
 	result = /obj/item/food/chawanmushi
-	category = CAT_EGG
+	subcategory = CAT_EGG

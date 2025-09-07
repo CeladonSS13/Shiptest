@@ -64,4 +64,19 @@
 
 // DEBUG OUTFIT
 /datum/outfit/debug //Даем изолиррованность перчаткам
+	name = "A debug outfit"
+	uniform = /obj/item/clothing/under/misc/adminsuit
 	gloves = /obj/item/clothing/gloves/combat{siemens_coefficient = 0}
+
+/obj/item/card/id/debug
+	assignment = "Bluespace Technician"
+	job_icon = "scrambled"
+
+/obj/item/storage/belt/utility/chief/debug
+	name = "\improper Bluespace Technician's toolbelt"
+
+/obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/debug
+	name = "bluespace technician hardsuit helmet"
+
+/obj/item/clothing/suit/space/hardsuit/syndi/elite/debug
+	name = "bluespace technician hardsuit"

@@ -380,6 +380,13 @@
 	var/writing_stats = istype(attacking_item) ? attacking_item.get_writing_implement_details() : null
 
 	if(!writing_stats)
+		if (attacking_item.sharpness > SHARP_NONE && !istype(src, /obj/item/paper/paperslip) && do_after(user, 5, src))
+			playsound(src.loc, 'sound/weapons/slash.ogg', 50, TRUE)
+			to_chat(user, span_notice("You neatly cut [src]."))
+			new /obj/item/paper/paperslip(get_turf(src))
+			new /obj/item/paper/paperslip(get_turf(src))
+			qdel(src)
+			return
 		ui_interact(user)
 		return ..()
 
@@ -543,7 +550,7 @@
 			return TRUE
 		if("add_text")
 			var/paper_input = params["text"]
-			var/this_input_length = length(paper_input)
+			var/this_input_length = length_char(paper_input)
 
 			if(this_input_length == 0)
 				to_chat(user, pick("Writing block strikes again!", "You forgot to write anything!"))
@@ -646,7 +653,7 @@
 /obj/item/paper/proc/get_total_length()
 	var/total_length = 0
 	for(var/datum/paper_input/entry as anything in raw_text_inputs)
-		total_length += length(entry.raw_text)
+		total_length += length_char(entry.raw_text)
 
 	return total_length
 

@@ -454,7 +454,7 @@
 	var/throwforce_on = 15
 	var/damtype_on = BURN
 	flags_inv = HIDEEARS|HIDEHAIR
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 20)
 	light_range = 2 //luminosity when on
 	flags_cover = HEADCOVERSEYES
 	heat = 999
@@ -523,7 +523,7 @@
 	icon_state = "hardhat_reindeer"
 	item_state = "hardhat_reindeer"
 	flags_inv = 0
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 20)
 	light_range = 1 //luminosity when on
 
 	dog_fashion = /datum/dog_fashion/head/reindeer

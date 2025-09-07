@@ -262,7 +262,7 @@
 /* Kept for SRM use */
 /datum/crafting_recipe/bonespear
 	name = "Bone Spear"
-	always_availible = FALSE
+	//always_availible = FALSE	// [CELADON-REMOVE]	- TRIBAL-CRAFT
 	result = /obj/item/melee/spear/bone
 	time = 30
 	reqs = list(/obj/item/stack/sheet/bone = 4,
@@ -272,10 +272,48 @@
 
 /datum/crafting_recipe/boneaxe
 	name = "Bone Axe"
-	always_availible = FALSE
+	//always_availible = FALSE	// [CELADON-REMOVE]	- TRIBAL-CRAFT
 	result = /obj/item/melee/axe/bone
 	time = 50
 	reqs = list(/obj/item/stack/sheet/bone = 6,
 				/obj/item/stack/sheet/sinew = 3)
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
+
+// [CELADON-ADD] - TRIBAL-CRAFT
+/datum/crafting_recipe/bonesword
+	name = "Bone Sword"
+	result = /obj/item/melee/sword/bone
+	time = 40
+	reqs = list(/obj/item/stack/sheet/bone = 3,
+				/obj/item/stack/sheet/sinew = 2)
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+
+/datum/crafting_recipe/goliathshield
+	name = "Goliath shield"
+	result = /obj/item/shield/riot/goliath
+	time = 60
+	reqs = list(/obj/item/stack/sheet/bone = 4,
+				/obj/item/stack/sheet/animalhide/goliath_hide = 3)
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+
+/datum/crafting_recipe/watcherbola
+	name = "Watcher Bola"
+	result = /obj/item/restraints/legcuffs/bola/watcher
+	time = 30
+	reqs = list(/obj/item/stack/sheet/animalhide/goliath_hide = 2,
+				/obj/item/restraints/handcuffs/cable/sinew = 1)
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+
+/datum/crafting_recipe/crystalamulet
+	name = "Crystal Amulet"
+	always_availible = FALSE
+	result = /obj/item/clothing/neck/crystal_amulet
+	time = 4 SECONDS
+	reqs = list(/obj/item/strange_crystal = 3)
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+// [/CELADON-ADD]

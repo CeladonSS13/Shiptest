@@ -14,10 +14,11 @@
 
 	var/players_on_virtual_z = 0
 	if(virt_z)
+		var/mob/temp = pawn
 		players_on_virtual_z = LAZYACCESS(SSmobs.players_by_virtual_z, "[virt_z]")
-		if(ai_status == AI_STATUS_ON && !length(players_on_virtual_z))
+		if((ai_status == AI_STATUS_ON && !length(players_on_virtual_z)) || temp?.key)
 			set_ai_status(AI_STATUS_OFF)
-		else if(ai_status == AI_STATUS_OFF && length(players_on_virtual_z))
+		else if((ai_status == AI_STATUS_OFF && length(players_on_virtual_z)) && !temp?.key)
 			set_ai_status(AI_STATUS_ON)
 
 // Вызывается при создании моба для проверки наличия игроков поблизости

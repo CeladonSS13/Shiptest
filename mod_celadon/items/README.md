@@ -13,6 +13,7 @@
 ## Items
 
 ID мода: CELADON_ITEMS
+OMNI_TOOLS
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -33,6 +34,18 @@ ID мода: CELADON_ITEMS
 - `code/modules/surgery/organs/tongue.dm`
 	-`var/static/list/languages_possible_base = typecacheof`
 - `code/modules/clothing/outfits/factions/inteq.dm`
+
+OMNI_TOOLS	-	Обновлены инструменты
+- `code/game/objects/items/RCD.dm`						:	Добавлены span_notice() в сообщения
+- `code/game/objects/items/RPD.dm`						:	Переписан функционал под отдельный прок для Bluespace-RPD
+- `code/game/objects/items/devices/scanners.dm`			:	Добавлен вар
+- `code/game/objects/items/storage/belt.dm`				:	Дебаг-пояс
+- `code/game/objects/items/storage/boxes.dm`			:	Изменение дебаг-аутфита
+- `code/modules/clothing/outfits/standard.dm`			:	Оверайд Дебаг пояса
+- `code/modules/research/designs/medical_designs.dm`	:	Добавлена технология в ноды
+- `code/modules/research/designs/tool_designs.dm`		:	Добавлена технология в ноды
+- `code/modules/research/techweb/all_nodes.dm`			:	В сами ноды добавлены технологии
+- `code/modules/vending/medical.dm` 					:	В вендоры добавлен бюджетный дистанционный анализатор
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

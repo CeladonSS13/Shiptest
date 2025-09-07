@@ -1443,17 +1443,25 @@
 		)
 	generate_items_inside(items_inside,src)
 
+// [CELADON-EDIT] - OMNI_TOOLS
+/obj/item/storage/box/cashbundledebug
+	name = "box of cash bundle"
+	icon_state = "secbox"
+	illustration = "writing_syndie"
+
+/obj/item/storage/box/cashbundledebug/PopulateContents()
+	for(var/i in 1 to 5)
+		new /obj/item/spacecash/bundle/c10000(src)
+// [/CELADON-EDIT]
+
 /obj/item/storage/box/debugtools
 	name = "box of debug tools"
 	icon_state = "syndiebox"
 
 /obj/item/storage/box/debugtools/PopulateContents()
+// [CELADON-EDIT] - OMNI_TOOLS
+/*
 	var/static/items_inside = list(
-		// [CELADON-ADD] - CELADON_COMPONENTS
-		/obj/item/shovel = 1,\
-		/obj/item/stamp/chameleon = 1,\
-		/obj/item/gun/medbeam = 1,\
-		// [/CELADON-ADD]
 		/obj/item/flashlight/emp/debug=1,\
 		/obj/item/pda=1,\
 		/obj/item/modular_computer/tablet/preset/advanced=1,\
@@ -1470,6 +1478,27 @@
 		/obj/item/storage/box/beakers/variety=1,\
 		/obj/item/storage/box/material=1
 		)
+*/
+	var/static/items_inside = list(
+		// [CELADON-ADD] - CELADON_COMPONENTS
+		/obj/item/shovel = 1,\
+		/obj/item/stamp/chameleon = 1,\
+		/obj/item/gun/medbeam = 1,\
+		// [/CELADON-ADD]
+		/obj/item/flashlight/emp/debug=1,\
+		/obj/item/modular_computer/tablet/preset/advanced=1,\
+		/obj/item/geiger_counter=1,\
+		/obj/item/construction/rcd/arcd/debug=1,\
+		/obj/item/card/emag=1,\
+		/obj/item/disk/tech_disk/debug=1,\
+		/obj/item/uplink/debug=1,\
+		/obj/item/uplink/nuclear/debug=1,\
+		/obj/item/storage/box/cashbundledebug=1,\
+		/obj/item/storage/box/beakers/bluespace=1,\
+		/obj/item/storage/box/beakers/variety=1,\
+		/obj/item/storage/box/material=1
+		)
+// [/CELADON-EDIT]
 	generate_items_inside(items_inside,src)
 
 /obj/item/storage/box/plastic

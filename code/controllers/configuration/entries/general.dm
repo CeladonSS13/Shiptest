@@ -110,6 +110,8 @@
 
 /datum/config_entry/flag/auth_admin_testing // auth server allows admin testing and other actions
 
+/datum/config_entry/flag/DiscordVerify // [CELADON-ADD] - Добавляем систему верификации аккаунтов через Discord
+
 /datum/config_entry/number/vote_delay	// minimum time between voting sessions (deciseconds, 10 minute default)
 	config_entry_value = 6000
 	integer = FALSE

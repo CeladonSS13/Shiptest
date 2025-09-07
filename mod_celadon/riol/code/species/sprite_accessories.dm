@@ -507,6 +507,10 @@
 	icon_state = "hair_longstraightponytail"
 
 /datum/sprite_accessory/riol_hairs/long_over_eye
+	name = "Short Over Eye"
+	icon_state = "hair_shortovereye"
+
+/datum/sprite_accessory/riol_hairs/long_over_eye
 	name = "Long Over Eye"
 	icon_state = "hair_longovereye"
 

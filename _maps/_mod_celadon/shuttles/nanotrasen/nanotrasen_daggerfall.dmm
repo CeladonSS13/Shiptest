@@ -81,11 +81,9 @@
 	pixel_x = -23;
 	dir = 4
 	},
-/obj/machinery/power/port_gen/pacman/super{
-	anchored = 1
-	},
+/obj/machinery/power/smes/engineering,
 /obj/structure/cable{
-	icon_state = "0-2"
+	icon_state = "0-4"
 	},
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering)
@@ -186,7 +184,7 @@
 	id = "Daggerfall_turrets"
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
+/area/ship/crew)
 "cc" = (
 /obj/effect/turf_decal/corner/opaque/ntblue/border{
 	dir = 10
@@ -246,6 +244,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/item/radio/intercom/directional/north,
 /turf/open/floor/plastic,
 /area/ship/crew/canteen/kitchen)
 "dt" = (
@@ -304,6 +303,9 @@
 	pixel_x = 8;
 	pixel_y = 22
 	},
+/obj/item/radio/intercom/directional/north{
+	pixel_x = -6
+	},
 /turf/open/floor/suns/hatch/walnut,
 /area/ship/crew)
 "ec" = (
@@ -311,10 +313,6 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/opaque/ntblue/bordercorner,
-/obj/machinery/turretid/ship{
-	pixel_y = -25;
-	id = "tomahawk_turrets"
-	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "ei" = (
@@ -594,12 +592,11 @@
 "iA" = (
 /obj/docking_port/stationary{
 	dwidth = 15;
-	width = 30;
 	height = 15;
-	dir = 2
+	width = 30
 	},
 /turf/template_noop,
-/area/space)
+/area/template_noop)
 "iX" = (
 /obj/effect/turf_decal/ntspaceworks_small/right{
 	dir = 4
@@ -832,7 +829,7 @@
 	id = "Daggerfall_turrets"
 	},
 /turf/closed/wall/mineral/titanium/exterior,
-/area/ship/bridge)
+/area/ship/engineering)
 "lB" = (
 /obj/effect/turf_decal/trimline/opaque/deforestblue/line{
 	dir = 10
@@ -943,6 +940,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
+"mQ" = (
+/obj/machinery/porta_turret/ship/nt/pulse{
+	dir = 6;
+	id = "Daggerfall_turrets"
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/medical)
 "ni" = (
 /obj/effect/turf_decal/corner/opaque/ntblue/border{
 	dir = 6
@@ -988,10 +992,12 @@
 /turf/open/floor/engine/hull,
 /area/ship/external)
 "nD" = (
+/obj/machinery/power/port_gen/pacman/super{
+	anchored = 1
+	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/smes/engineering,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/electrical)
 "nG" = (
@@ -1009,9 +1015,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "nI" = (
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
 /obj/effect/turf_decal/trimline/opaque/orange/corner{
 	dir = 1
 	},
@@ -1146,7 +1149,7 @@
 	id = "Daggerfall_turrets"
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
+/area/ship/engineering)
 "qk" = (
 /turf/open/floor/suns/hatch/walnut,
 /area/ship/crew)
@@ -1302,8 +1305,12 @@
 	},
 /obj/item/kirbyplants/photosynthetic{
 	icon_state = "plant-01";
-	pixel_x = 4;
+	pixel_x = -1;
 	pixel_y = 5
+	},
+/obj/item/radio/intercom/wideband/directional/east,
+/obj/item/radio/intercom/directional/east{
+	pixel_x = 40
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
@@ -1542,18 +1549,12 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "ug" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
+/obj/effect/turf_decal/trimline/opaque/orange/warning,
 /obj/machinery/power/terminal{
-	dir = 8
+	dir = 1
 	},
 /obj/structure/cable{
 	icon_state = "0-8"
-	},
-/obj/effect/turf_decal/trimline/opaque/orange/warning,
-/obj/structure/cable{
-	icon_state = "0-1"
 	},
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering)
@@ -1608,9 +1609,6 @@
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering/electrical)
 "uY" = (
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
 /obj/effect/turf_decal/trimline/opaque/orange/corner{
 	dir = 8
 	},
@@ -1675,14 +1673,15 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "vy" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4";
+	tag = null
 	},
 /turf/open/floor/plasteel/heavymetal,
 /area/ship/engineering/electrical)
@@ -2048,7 +2047,7 @@
 	id = "skybreaker_turrets"
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
+/area/ship/crew)
 "zW" = (
 /obj/effect/turf_decal/trimline/opaque/beige/line{
 	dir = 6
@@ -2144,8 +2143,9 @@
 /obj/structure/cable{
 	icon_state = "0-1"
 	},
-/obj/machinery/power/port_gen/pacman/super{
-	anchored = 1
+/obj/machinery/power/smes/engineering,
+/obj/structure/cable{
+	icon_state = "0-4"
 	},
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering/electrical)
@@ -2710,20 +2710,12 @@
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "Hl" = (
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/terminal{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
+/obj/machinery/power/terminal,
 /obj/effect/turf_decal/trimline/opaque/orange/warning{
 	dir = 9
 	},
 /obj/structure/cable{
-	icon_state = "0-2"
+	icon_state = "0-8"
 	},
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering/electrical)
@@ -2958,7 +2950,7 @@
 	id = "Daggerfall_turrets"
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
+/area/ship/medical)
 "Lx" = (
 /obj/machinery/computer/helm{
 	dir = 8
@@ -3051,7 +3043,7 @@
 	},
 /obj/effect/turf_decal/corner/opaque/ntblue/half,
 /turf/closed/wall/mineral/titanium/exterior,
-/area/ship/bridge)
+/area/ship/engineering/electrical)
 "Mu" = (
 /obj/effect/turf_decal/trimline/opaque/pink/corner{
 	dir = 1
@@ -3239,6 +3231,9 @@
 /obj/effect/turf_decal/trimline/opaque/pink/line{
 	dir = 4
 	},
+/obj/item/radio/intercom/directional/east{
+	pixel_y = -7
+	},
 /turf/open/floor/plastic,
 /area/ship/crew/canteen/kitchen)
 "Oy" = (
@@ -3326,13 +3321,15 @@
 /turf/closed/wall/mineral/titanium/exterior,
 /area/ship/crew/canteen/kitchen)
 "Ps" = (
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
 /obj/effect/turf_decal/trimline/opaque/orange/end{
 	dir = 8
 	},
-/obj/machinery/power/smes/engineering,
+/obj/machinery/power/port_gen/pacman/super{
+	anchored = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Pz" = (
@@ -3411,14 +3408,14 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "Qa" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
 	},
 /turf/open/floor/plasteel/heavymetal,
 /area/ship/engineering)
@@ -3474,7 +3471,8 @@
 	dir = 1
 	},
 /obj/machinery/power/apc/auto_name/directional/south{
-	pixel_x = 6
+	pixel_x = 6;
+	pixel_y = -29
 	},
 /obj/effect/turf_decal/trimline/opaque/nsorange/line,
 /turf/open/floor/plasteel/heavymetal,
@@ -3808,7 +3806,7 @@
 	id = "Daggerfall_turrets"
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
+/area/ship/engineering/electrical)
 "Uz" = (
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
 	id = "KaU_Ang"
@@ -5154,7 +5152,7 @@ AC
 zB
 vM
 AC
-qa
+mQ
 ck
 ck
 ck
