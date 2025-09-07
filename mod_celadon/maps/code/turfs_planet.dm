@@ -211,7 +211,7 @@
 	planetary_atmos = FALSE
 
 ///MARK: Джунглиевый турф
-/turf/open/floor/plating/grass/jungle/lit/anima
+/turf/open/floor/plating/asteroid/dirt/grass/jungle/lit/anima
 	initial_gas_mix = ANIMA_DEFAULT_ATMOS
 	planetary_atmos = FALSE
 
