@@ -307,7 +307,8 @@ Behavior that's still missing from this component that original food items had t
 		return
 	var/fullness = eater.nutrition + 10 //The theoretical fullness of the person eating if they were to eat this
 
-	var/time_to_eat = (eater = feeder) ? eat_time : EAT_TIME_FORCE_FEED
+	var/time_to_eat = (eater == feeder) ? eat_time : EAT_TIME_FORCE_FEED
+
 	// [CELADON-ADD] - FIXES_VORACIOUS
 	// Voracious trait makes eating faster
 	if(eater == feeder && HAS_TRAIT(eater, TRAIT_VORACIOUS))
