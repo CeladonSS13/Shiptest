@@ -93,6 +93,8 @@
 	icon_state = "utility_ce"
 	item_state = "utility_ce"
 
+// [CELADON-EDIT] - OMNI_TOOLS
+/*
 /obj/item/storage/belt/utility/chief/full/PopulateContents()
 	new /obj/item/screwdriver/power(src)
 	new /obj/item/crowbar/power(src)
@@ -101,6 +103,26 @@
 	new /obj/item/stack/cable_coil(src,MAXCOIL,pick("red","yellow","orange"))
 	new /obj/item/extinguisher/mini(src)
 	new /obj/item/analyzer(src)
+*/
+
+/obj/item/storage/belt/utility/chief/full/PopulateContents()
+	new /obj/item/screwdriver/power(src)
+	new /obj/item/crowbar/power(src)
+	new /obj/item/weldingtool/electric(src)
+	new /obj/item/multitool/tricorder(src)
+	new /obj/item/pipe_dispenser(src)
+	new /obj/item/inducer(src)
+	new /obj/item/stack/cable_coil(src,MAXCOIL,pick("red","yellow","orange"))
+
+/obj/item/storage/belt/utility/chief/debug/full/PopulateContents()
+	new /obj/item/screwdriver/power(src)
+	new /obj/item/crowbar/power(src)
+	new /obj/item/weldingtool/electric(src)
+	new /obj/item/multitool/tricorder/ranged(src)
+	new /obj/item/pipe_dispenser/bluespace(src)
+	new /obj/item/inducer/adv(src)
+	new /obj/item/stack/cable_coil(src,MAXCOIL,"cyan")
+// [/CELADON-EDIT]
 
 /obj/item/storage/belt/utility/full/PopulateContents()
 	new /obj/item/screwdriver(src)
@@ -204,6 +226,7 @@
 		/obj/item/clothing/mask/breath/medical,
 		/obj/item/scalpel,
 		/obj/item/circular_saw,
+		/obj/item/blood_filter,	// [CELADON-ADD] - CELADON_BALANCE
 		/obj/item/surgicaldrill,
 		/obj/item/retractor,
 		/obj/item/cautery,
@@ -252,6 +275,7 @@
 /obj/item/storage/belt/medical/surgery/PopulateContents()
 	new /obj/item/scalpel(src)
 	new /obj/item/circular_saw(src)
+	new /obj/item/blood_filter(src)	// [CELADON-ADD] - CELADON_BALANCE
 	new /obj/item/surgicaldrill(src)
 	new /obj/item/retractor(src)
 	new /obj/item/cautery(src)
@@ -262,6 +286,7 @@
 /obj/item/storage/belt/medical/webbing/surgery/PopulateContents()
 	new /obj/item/scalpel(src)
 	new /obj/item/circular_saw(src)
+	new /obj/item/blood_filter(src)	// [CELADON-ADD] - CELADON_BALANCE
 	new /obj/item/surgicaldrill(src)
 	new /obj/item/retractor(src)
 	new /obj/item/cautery(src)

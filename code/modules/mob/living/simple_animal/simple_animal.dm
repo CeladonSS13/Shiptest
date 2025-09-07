@@ -142,8 +142,14 @@
 	///What kind of footstep this mob should have. Null if it shouldn't have any.
 	var/footstep_type
 
-	/// Base armor value on this mob for running armor checks
-	var/datum/armor/armor
+	///How much wounding power it has
+	var/wound_bonus = 5
+	///How much bare wounding power it has
+	var/bare_wound_bonus = 0
+	///If the attacks from this are sharp
+	var/sharpness = SHARP_NONE
+	///Generic flags
+	var/simple_mob_flags = NONE
 
 
 /mob/living/simple_animal/Initialize(mapload)
@@ -202,10 +208,6 @@
 		else
 			tame_chance += bonus_tame_chance
 
-///Extra effects to add when the mob is tamed, such as adding a riding component
-/mob/living/simple_animal/proc/tamed(whomst)
-	return
-
 /mob/living/simple_animal/examine(mob/user)
 	. = ..()
 	if(stat == DEAD)
@@ -241,8 +243,13 @@
 				if(!(stop_automated_movement_when_pulled && pulledby)) //Some animals don't move when pulled
 					var/anydir = pick(GLOB.cardinals)
 					if(Process_Spacemove(anydir))
-						Move(get_step(src, anydir), anydir)
-						turns_since_move = 0
+						// [CELADON-EDIT] - FIXES_MOVE_DIAGONAL_MOBS - Проверка на диагональное движение
+						// Move(get_step(src, anydir), anydir) // ORIGINAL
+						var/turf/target = get_step(src, anydir)
+						if(target && can_move_to_turf(target, anydir))
+							Move(target, anydir)
+						// [/CELADON-EDIT]
+							turns_since_move = 0
 			return 1
 
 /mob/living/simple_animal/proc/handle_automated_speech(override)

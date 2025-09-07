@@ -8,6 +8,7 @@
 	H.verbs |= /mob/living/carbon/human/proc/emote_growl
 	// H.verbs |= /mob/living/carbon/human/proc/emote_ururu
 	H.verbs |= /mob/living/carbon/human/proc/emote_fpurr
+	H.verbs |= /mob/living/carbon/human/proc/bite_feral_switch
 
 /datum/species/riol/on_species_loss(mob/living/carbon/human/H)
 	..()
@@ -17,6 +18,7 @@
 	H.verbs -= /mob/living/carbon/human/proc/emote_growl
 	// H.verbs -= /mob/living/carbon/human/proc/emote_ururu
 	H.verbs -= /mob/living/carbon/human/proc/emote_fpurr
+	H.verbs -= /mob/living/carbon/human/proc/bite_feral_switch
 
 // MARK: IPC
 
@@ -80,6 +82,7 @@
 	H.verbs |= /mob/living/carbon/human/proc/emote_meow
 	H.verbs |= /mob/living/carbon/human/proc/emote_mrow
 	H.verbs |= /mob/living/carbon/human/proc/emote_mrowss
+	H.verbs |= /mob/living/carbon/human/proc/bite_feral_switch
 
 /datum/species/tajara/on_species_loss(mob/living/carbon/human/H)
 	..()
@@ -91,6 +94,7 @@
 	H.verbs -= /mob/living/carbon/human/proc/emote_meow
 	H.verbs -= /mob/living/carbon/human/proc/emote_mrow
 	H.verbs -= /mob/living/carbon/human/proc/emote_mrowss
+	H.verbs -= /mob/living/carbon/human/proc/bite_feral_switch
 
 // MARK: LIZARD
 
