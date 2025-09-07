@@ -6624,7 +6624,9 @@
 	dir = 2;
 	color = "#808080"
 	},
-/obj/structure/table,
+/obj/machinery/vending/dinnerware{
+	all_items_free = 1
+	},
 /turf/open/floor/plasteel,
 /area/outpost/crew/bar/bar_zone)
 "eHe" = (
@@ -12777,7 +12779,7 @@
 /obj/structure/chair/comfy/grey/directional/north{
 	dir = 8
 	},
-/turf/open/space/basic,
+/turf/open/floor/wood,
 /area/outpost/vacant_rooms/office)
 "jdu" = (
 /obj/structure/disposalpipe/segment{
@@ -12805,16 +12807,6 @@
 /obj/structure/railing/wood{
 	dir = 5;
 	layer = 2.79
-	},
-/obj/machinery/button/door{
-	id = "cabinka_bar_1";
-	name = "Bolt Door Cab 1";
-	specialfunctions = 4;
-	normaldoorcontrol = 1;
-	pixel_y = 10;
-	pixel_x = -10;
-	dir = 8;
-	layer = 3.1
 	},
 /obj/structure/table/glass/plasma_glass,
 /obj/item/flashlight/lamp/green{
@@ -13898,6 +13890,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/plating,
 /area/outpost/fraction/syndi/donkco_shop)
 "jSI" = (
@@ -14134,6 +14127,23 @@
 /obj/structure/barricade/wooden/snowed,
 /turf/open/floor/plating/asteroid/snow/airless,
 /area/outpost/external)
+"kaY" = (
+/obj/structure/curtain/cloth/purpl{
+	dir = 4;
+	pixel_x = -32
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/button/door{
+	id = "cabinka_bar_1";
+	name = "Bolt Door Cab 1";
+	specialfunctions = 4;
+	normaldoorcontrol = 1;
+	pixel_y = 24;
+	pixel_x = -1;
+	layer = 3.1
+	},
+/turf/open/floor/wood,
+/area/outpost/crew/dop_zone_1)
 "kbl" = (
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 4
@@ -16739,6 +16749,12 @@
 	},
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/operations)
+"lRZ" = (
+/obj/structure/girder,
+/obj/structure/fans/tiny/invisible,
+/obj/structure/fans/tiny/invisible,
+/turf/open/floor/plating,
+/area/outpost/fraction/syndi)
 "lSl" = (
 /obj/structure/flora/herb/f,
 /obj/structure/sign/directions/outpost/bar{
@@ -18846,6 +18862,11 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/marble,
 /area/outpost/fraction/nanotrasen)
+"nxr" = (
+/obj/structure/lattice,
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
+/area/space)
 "nyo" = (
 /obj/machinery/firealarm/directional/east,
 /turf/open/floor/plasteel/sepia,
@@ -43432,7 +43453,7 @@ pdc
 pdc
 pdc
 kax
-kax
+cGD
 jff
 jff
 jff
@@ -43619,7 +43640,7 @@ pdc
 pfP
 pdc
 kax
-kax
+cGD
 gSe
 qaB
 qsL
@@ -43806,7 +43827,7 @@ pdc
 pdc
 pdc
 kax
-kax
+cGD
 usv
 aGI
 rII
@@ -43993,7 +44014,7 @@ kax
 uXL
 pdc
 kax
-kax
+cGD
 rPf
 qaB
 fhX
@@ -44180,7 +44201,7 @@ kax
 pdc
 pdc
 kax
-kax
+cGD
 jff
 jff
 qZX
@@ -46432,7 +46453,7 @@ peG
 wlC
 wlC
 wlC
-kax
+cGD
 eDi
 vbe
 uMa
@@ -46619,11 +46640,11 @@ peH
 dYj
 rBc
 wlC
-kax
-kax
-kax
+cGD
+cGD
+cGD
 sWm
-rzy
+lRZ
 woD
 ntR
 djq
@@ -46806,9 +46827,9 @@ qOt
 dYj
 giH
 wlC
-kax
-kax
-kax
+cGD
+cGD
+cGD
 ckd
 jff
 bxg
@@ -46993,9 +47014,9 @@ mka
 dYj
 oEJ
 wlC
-kax
-kax
-kax
+cGD
+cGD
+cGD
 acO
 jff
 fYt
@@ -47180,11 +47201,11 @@ kpW
 dYj
 rJj
 wlC
-kax
-kax
-kax
+cGD
+cGD
+cGD
 acO
-rzy
+lRZ
 uaW
 ezt
 qLi
@@ -47367,9 +47388,9 @@ mka
 qhS
 tvb
 wlC
-kax
-kax
-kax
+cGD
+cGD
+cGD
 ckd
 jff
 wYu
@@ -47554,11 +47575,11 @@ ecQ
 fQH
 fQH
 wlC
-kax
+cGD
 sry
 xeJ
 ojm
-rzy
+lRZ
 fYt
 qLi
 ezt
@@ -47744,7 +47765,7 @@ wlC
 wlC
 jSq
 wlC
-kax
+cGD
 rzy
 vlU
 dxD
@@ -47931,7 +47952,7 @@ wlC
 hbM
 xKT
 wlC
-kax
+cGD
 jff
 jff
 oDk
@@ -48118,8 +48139,8 @@ wlC
 qLB
 xKT
 wlC
-kax
-kax
+cGD
+cGD
 pJp
 qLi
 wFq
@@ -48270,7 +48291,7 @@ qwb
 uGW
 utH
 kax
-wci
+nxr
 pdc
 pdc
 utH
@@ -48305,9 +48326,9 @@ wlC
 bnM
 mjz
 wlC
-kax
-kax
-kax
+cGD
+cGD
+cGD
 foP
 glL
 jff
@@ -48492,10 +48513,10 @@ wlC
 qal
 xKT
 wlC
-kax
-kax
-kax
-kax
+cGD
+cGD
+cGD
+cGD
 xQU
 xQU
 jff
@@ -48679,7 +48700,7 @@ wxI
 sEH
 qfL
 wlC
-kax
+cGD
 aVr
 xlk
 cWu
@@ -54654,7 +54675,7 @@ dOA
 wPF
 ylo
 qYr
-ese
+kaY
 ese
 oGm
 qYr
