@@ -111,27 +111,27 @@ GLOBAL_LIST_INIT(outpost_exports, gen_outpost_exports())
 			if(redeemed_exp == null || length(cached_valid_exports[redeemed_exp]) == 0)
 				CRASH("passed a bad export type through ui_act of [src]")
 			else
-				redeem_export(redeemed_exp, usr) // [CN-E] - CELADON_COMPONENTS_LOGS // redeem_export(redeemed_exp)
+				redeem_export(redeemed_exp, usr) // [CELADON-EDIT] - CELADON_COMPONENTS_LOGS // redeem_export(redeemed_exp)
 			update_static_data(usr, ui)
 			return TRUE
 
-/obj/machinery/computer/outpost_export_console/proc/redeem_export(datum/export/exp, mob/user) // [CN-E] - CELADON_COMPONENTS_LOGS // /obj/machinery/computer/outpost_export_console/proc/redeem_export(datum/export/exp)
+/obj/machinery/computer/outpost_export_console/proc/redeem_export(datum/export/exp, mob/user) // [CELADON-EDIT] - CELADON_COMPONENTS_LOGS // /obj/machinery/computer/outpost_export_console/proc/redeem_export(datum/export/exp)
 	if(!(exp in cached_valid_exports))
 		CRASH("somehow [exp] is not in cached_valid_exports")
 	var/total_payout = 0
-	var/list/sold_items = list() // [CN-A] - CELADON_COMPONENTS_LOGS
+	var/list/sold_items = list() // [CELADON-ADD] - CELADON_COMPONENTS_LOGS
 	for(var/atom/exp_atom as anything in cached_valid_exports[exp])
 		if(!exp.applies_to(exp_atom))
 			CRASH("tried to sell [exp_atom] with [exp] but it no longer applies to it")
 		total_payout += exp.sell_object(exp_atom, dry_run = FALSE, apply_elastic = TRUE)
-		sold_items += exp_atom.name // [CN-A] - CELADON_COMPONENTS_LOGS
+		sold_items += exp_atom.name // [CELADON-ADD] - CELADON_COMPONENTS_LOGS
 
 		cached_valid_exports[exp] -= exp_atom
 		qdel(exp_atom)
 
 	cached_valid_exports -= exp
 
-	log_econ("[key_name(user)] exported [exp.unit_name] ([sold_items.Join(", ")]) for [total_payout] credits at [AREACOORD(src)]") // [CN-A] - CELADON_COMPONENTS_LOGS
+	log_econ("[key_name(user)] exported [exp.unit_name] ([sold_items.Join(", ")]) for [total_payout] credits at [AREACOORD(src)]") // [CELADON-ADD] - CELADON_COMPONENTS_LOGS
 
 	do_sparks(5, 0, linked_pad.loc)
 	new /obj/item/spacecash/bundle(loc, total_payout)
