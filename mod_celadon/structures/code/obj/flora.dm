@@ -91,3 +91,47 @@
 /obj/effect/floor_decal/snowrocks/Initialize(mapload, newdir, newcolour, bypass, set_icon_state)
 	icon_state = "rocksmall[rand(1,2)]"
 	. = ..()
+
+/// MARK: WILD PLANTS
+//grass
+/obj/structure/flora/herb
+	name = "herb"
+	desc = "This is herb"
+	icon = 'mod_celadon/_storge_icons/icons/structures/obj/flora/wild_plants.dmi'
+	icon_state = "herb_1"
+	gender = PLURAL	//"this is grass" not "this is a grass"
+
+/obj/structure/flora/herb/a
+	icon_state = "herb_2"
+
+/obj/structure/flora/herb/b
+	icon_state = "herb_3"
+
+/obj/structure/flora/herb/c
+	icon_state = "herb_4"
+
+/obj/structure/flora/herb/d
+	icon_state = "herb_5"
+
+/obj/structure/flora/herb/e
+	icon_state = "herb_6"
+
+/obj/structure/flora/herb/f
+	icon_state = "herb_7"
+
+/obj/structure/flora/herb/g
+	icon_state = "herb_8"
+
+/obj/structure/flora/flytrap
+	name = "flytrap"
+	desc = "This is flytrap"
+	icon = 'mod_celadon/_storge_icons/icons/structures/obj/flora/wild_plants.dmi'
+	icon_state = "flytrap"
+	gender = PLURAL	//"this is grass" not "this is a grass"
+
+/obj/structure/flora/explosive_shrooms
+	name = "explosive shrooms"
+	desc = "This is explosive shrooms"
+	icon = 'mod_celadon/_storge_icons/icons/structures/obj/flora/wild_plants.dmi'
+	icon_state = "explosive_shrooms"
+	gender = PLURAL	//"this is grass" not "this is a grass"
