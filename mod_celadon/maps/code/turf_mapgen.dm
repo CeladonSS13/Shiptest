@@ -15,7 +15,7 @@
 	. = ..()
 	var/static/list/random_turfs = list(
 		/turf/open/chasm,
-		/turf/open/floor/fakepit
+		/turf/open/floor/fakepit/unknown
 	)
 	var/turf_type = pick(random_turfs)
 	ChangeTurf(turf_type, flags = CHANGETURF_INHERIT_AIR)
