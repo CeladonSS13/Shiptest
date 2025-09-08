@@ -290,7 +290,7 @@ SUBSYSTEM_DEF(ticker)
 	if(login_music_name)
 		var/count_name = length(SSticker.login_music_name)
 		to_chat(world, span_redteamradio("<B>Playing lobby music: [copytext(SSticker.login_music_name, 1, count_name-3)].</B>"))
-	SEND_SOUND(world, sound('mod_celadon/_storge_sounds/sound/lobby/sztart.ogg'))
+	SEND_SOUND(world, sound('mod_celadon/_storage_sounds/sound/lobby/sztart.ogg'))
 //[/CELADON-EDIT]
 
 	current_state = GAME_STATE_PLAYING
@@ -573,7 +573,7 @@ SUBSYSTEM_DEF(ticker)
 		'sound/roundend/shiptestingthursday.ogg',
 //[CELADON-EDIT]- MUSIC_CELADON
 //		'sound/roundend/gayrights.ogg'\//CELADON-EDIT-ORIGINAL
-		'mod_celadon/_storge_sounds/sound/lobby/voiko_law.ogg'\
+		'mod_celadon/_storage_sounds/sound/lobby/voiko_law.ogg'\
 //[/CELADON-EDIT]
 		)
 	///The reference to the end of round sound that we have chosen.

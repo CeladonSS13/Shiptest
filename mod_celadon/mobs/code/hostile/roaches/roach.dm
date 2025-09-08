@@ -10,7 +10,7 @@
 	health = 10
 	mob_size = MOB_SIZE_SMALL
 	density = FALSE //Swarming roaches! They also more robust that way.
-	attack_sound = 'mod_celadon/_storge_sounds/sound/insect_battle_bite.ogg'
+	attack_sound = 'mod_celadon/_storage_sounds/sound/insect_battle_bite.ogg'
 	emote_see = list("chirps loudly.", "cleans its whiskers with forelegs.")
 	turns_per_move = 4
 	turns_since_move = 0

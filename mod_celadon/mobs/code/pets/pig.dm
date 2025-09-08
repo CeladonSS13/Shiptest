@@ -15,8 +15,8 @@
 	see_in_dark = 3
 	maxHealth = 50
 	health = 50
-	attacked_sound = 'mod_celadon/_storge_sounds/sound/mobs/pig/oink.ogg'
-	deathsound = 'mod_celadon/_storge_sounds/sound/mobs/pig/death.ogg'
+	attacked_sound = 'mod_celadon/_storage_sounds/sound/mobs/pig/oink.ogg'
+	deathsound = 'mod_celadon/_storage_sounds/sound/mobs/pig/death.ogg'
 	butcher_results = list(/obj/item/food/meat/slab/pig = 3)
 	density = TRUE
 	mob_size = MOB_SIZE_LARGE
@@ -37,7 +37,7 @@
 	if(stat)
 		return
 	if(prob(10))
-		var/chosen_sound = pick('mod_celadon/_storge_sounds/sound/mobs/pig/hru.ogg', 'mod_celadon/_storge_sounds/sound/mobs/pig/oink.ogg', 'mod_celadon/_storge_sounds/sound/mobs/pig/squeak.ogg')
+		var/chosen_sound = pick('mod_celadon/_storage_sounds/sound/mobs/pig/hru.ogg', 'mod_celadon/_storage_sounds/sound/mobs/pig/oink.ogg', 'mod_celadon/_storage_sounds/sound/mobs/pig/squeak.ogg')
 		playsound(src, chosen_sound, 50, TRUE)
 
 /mob/living/simple_animal/pet/dog/corgi/pig/update_corgi_fluff()

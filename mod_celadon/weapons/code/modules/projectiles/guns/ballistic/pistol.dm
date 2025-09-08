@@ -11,7 +11,7 @@
 	allowed_ammo_types = list(
 		/obj/item/ammo_box/magazine/usp45_standart,
 	)
-	fire_sound = 'mod_celadon/_storge_sounds/sound/gun/shot_usp45.wav'
+	fire_sound = 'mod_celadon/_storage_sounds/sound/gun/shot_usp45.wav'
 	rack_sound = 'sound/weapons/gun/pistol/candor_cocked.ogg' //На будущее заменить
 	lock_back_sound = 'sound/weapons/gun/pistol/slide_lock.ogg' //На будущее заменить
 	bolt_drop_sound = 'sound/weapons/gun/pistol/slide_drop.ogg' //На будущее заменить
@@ -40,7 +40,7 @@ NO_MAG_GUN_HELPER(automatic/pistol/usp45)
 	allowed_ammo_types = list(
 		/obj/item/ammo_box/magazine/glock_standart,
 	)
-	fire_sound = 'mod_celadon/_storge_sounds/sound/gun/shot_glock.wav'
+	fire_sound = 'mod_celadon/_storage_sounds/sound/gun/shot_glock.wav'
 	load_sound = 'sound/weapons/gun/pistol/mag_insert.ogg'//На будущее заменить
 	load_empty_sound = 'sound/weapons/gun/pistol/mag_insert.ogg'//На будущее заменить
 	eject_sound = 'sound/weapons/gun/pistol/mag_release.ogg'//На будущее заменить

@@ -118,7 +118,7 @@
 	number_of_shots = 3
 	cooldown_duration = 2 SECONDS
 	rate_of_fire = 1
-	firesound = 'mod_celadon/_storge_sounds/sound/gun/turret9mm.ogg'
+	firesound = 'mod_celadon/_storage_sounds/sound/gun/turret9mm.ogg'
 	overheatsound = 'sound/weapons/gun/smg/smgrack.ogg'
 	can_be_undeployed = TRUE
 	spawned_on_undeploy = /obj/item/deployable_turret_folded

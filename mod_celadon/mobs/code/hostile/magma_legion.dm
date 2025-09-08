@@ -65,7 +65,7 @@
 	attack_verb_continuous = "bites"
 	attack_verb_simple = "bite"
 	speak_emote = list("echoes")
-	attack_sound = 'mod_celadon/_storge_sounds/sound/effects/boom_small.ogg'
+	attack_sound = 'mod_celadon/_storage_sounds/sound/effects/boom_small.ogg'
 	throw_message = "is shrugged off by"
 	del_on_death = TRUE
 	stat_attack = SOFT_CRIT

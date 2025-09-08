@@ -10,7 +10,7 @@
 	icon_state = "g36sh"
 	item_state = "g36sh"
 //Звуки
-	fire_sound = 'mod_celadon/_storge_sounds/sound/gun/g36sh.ogg'
+	fire_sound = 'mod_celadon/_storage_sounds/sound/gun/g36sh.ogg'
 //Характеристики
 	manufacturer = MANUFACTURER_SOLARARMORIES
 	spread = 4
@@ -64,7 +64,7 @@ NO_MAG_GUN_HELPER(automatic/assault/g36sh/inteq)
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_righthand.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/back.dmi'
-	fire_sound = 'mod_celadon/_storge_sounds/sound/gun/g36.ogg'
+	fire_sound = 'mod_celadon/_storage_sounds/sound/gun/g36.ogg'
 	icon_state = "g36"
 	item_state = "g36"
 	manufacturer = MANUFACTURER_SOLARARMORIES
@@ -115,7 +115,7 @@ NO_MAG_GUN_HELPER(automatic/assault/g36/inteq)
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_righthand.dmi'
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32guns.dmi'
-	fire_sound = 'mod_celadon/_storge_sounds/sound/gun/morita1.ogg'
+	fire_sound = 'mod_celadon/_storage_sounds/sound/gun/morita1.ogg'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/back.dmi'
 	icon_state = "morita1"
 	item_state = "morita1"
@@ -189,7 +189,7 @@ NO_MAG_GUN_HELPER(automatic/assault/morita1/swamp)
 
 	manufacturer = MANUFACTURER_NONE
 
-	rack_sound = 'mod_celadon/_storge_sounds/sound/gun/svd/svd_cocked.ogg'
+	rack_sound = 'mod_celadon/_storage_sounds/sound/gun/svd/svd_cocked.ogg'
 
 	fire_delay = 0.8 SECONDS
 

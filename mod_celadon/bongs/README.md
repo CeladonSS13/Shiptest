@@ -61,7 +61,7 @@ ID мода: CELADON_BONGS
 ### Используемые файлы, не содержащиеся в модпаке
 
 - `icons/effects/atmospherics.dmi`
-- `mod_celadon/_storge_sounds/sound`
+- `mod_celadon/_storage_sounds/sound`
 - `mod_celadon/_storage_icons/icons/items/bongs`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,

@@ -67,7 +67,7 @@ ID мода: CELADON_FOOD_AND_DRINKS
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- `mod_celadon/_storge_sounds/sound`
+- `mod_celadon/_storage_sounds/sound`
 - `mod_celadon/_storage_icons/icons`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,

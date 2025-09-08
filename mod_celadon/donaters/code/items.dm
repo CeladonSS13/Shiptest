@@ -26,15 +26,15 @@
 	var/text = get_text()
 	say(text)
 	playsound(loc, pick(
-			'mod_celadon/_storge_sounds/sound/voice/human_male_warcry_1.ogg',
-			'mod_celadon/_storge_sounds/sound/voice/human_male_warcry_2.ogg',
-			'mod_celadon/_storge_sounds/sound/voice/human_male_warcry_3.ogg',
-			'mod_celadon/_storge_sounds/sound/voice/human_male_warcry_4.ogg',
-			'mod_celadon/_storge_sounds/sound/voice/human_male_warcry_5.ogg',
-			'mod_celadon/_storge_sounds/sound/voice/human_male_warcry_6.ogg',
-			'mod_celadon/_storge_sounds/sound/voice/human_male_warcry_7.ogg',
-			'mod_celadon/_storge_sounds/sound/voice/human_male_warcry_8.ogg',
-			'mod_celadon/_storge_sounds/sound/voice/human_male_warcry_9.ogg'), 50, FALSE)
+			'mod_celadon/_storage_sounds/sound/voice/human_male_warcry_1.ogg',
+			'mod_celadon/_storage_sounds/sound/voice/human_male_warcry_2.ogg',
+			'mod_celadon/_storage_sounds/sound/voice/human_male_warcry_3.ogg',
+			'mod_celadon/_storage_sounds/sound/voice/human_male_warcry_4.ogg',
+			'mod_celadon/_storage_sounds/sound/voice/human_male_warcry_5.ogg',
+			'mod_celadon/_storage_sounds/sound/voice/human_male_warcry_6.ogg',
+			'mod_celadon/_storage_sounds/sound/voice/human_male_warcry_7.ogg',
+			'mod_celadon/_storage_sounds/sound/voice/human_male_warcry_8.ogg',
+			'mod_celadon/_storage_sounds/sound/voice/human_male_warcry_9.ogg'), 50, FALSE)
 	visible_message(span_warning("СМЕРТЬ КСЕНОСАМ!"), span_hear("Никакой пощады!"))
 	COOLDOWN_START(src, cooldown, 2 SECONDS)
 

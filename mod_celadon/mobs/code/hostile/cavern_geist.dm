@@ -33,7 +33,7 @@
 	mob_size = MOB_SIZE_LARGE
 	environment_smash = 2
 	attack_verb_simple = "mangled"
-	attack_sound = 'mod_celadon/_storge_sounds/sound/weapons/bloodyslice.ogg'
+	attack_sound = 'mod_celadon/_storage_sounds/sound/weapons/bloodyslice.ogg'
 
 	// see_invisible = SEE_INVISIBLE_NOLIGHTING
 	possible_a_intents = list(INTENT_HELP, INTENT_GRAB, INTENT_DISARM, INTENT_HARM)

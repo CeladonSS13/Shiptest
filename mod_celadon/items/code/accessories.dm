@@ -18,8 +18,8 @@
 /obj/item/clothing/accessory/tajaran
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
-	drop_sound = 'mod_celadon/_storge_sounds/sound/drop/accessory.ogg'
-	pickup_sound = 'mod_celadon/_storge_sounds/sound/pickup/accessory.ogg'
+	drop_sound = 'mod_celadon/_storage_sounds/sound/drop/accessory.ogg'
+	pickup_sound = 'mod_celadon/_storage_sounds/sound/pickup/accessory.ogg'
 
 /obj/item/clothing/accessory/tajaran/charm/raskariim
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'

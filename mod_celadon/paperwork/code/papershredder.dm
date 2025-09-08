@@ -77,7 +77,7 @@ var/list/alldirs = list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAS
 			paperamount += paper_result
 			user.canUnEquip(W)
 			qdel(W)
-			playsound(src.loc, 'mod_celadon/_storge_sounds/sound/effects/pshred.ogg', 75, 1)
+			playsound(src.loc, 'mod_celadon/_storage_sounds/sound/effects/pshred.ogg', 75, 1)
 			flick(shred_anim, src)
 			if(paperamount > max_paper)
 				to_chat(user, span_danger("\The [src] was too full, and shredded paper goes everywhere!"))

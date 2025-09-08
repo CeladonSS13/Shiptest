@@ -113,8 +113,8 @@
 		if(do_after(M, 5 SECONDS, target = src))
 			new /obj/effect/temp_visual/boarding_out(get_turf(src))
 			var/obj/effect/temp_visual/boarding_in/T = new /obj/effect/temp_visual/boarding_in(teleport_location)
-			playsound(src, 'mod_celadon/_storge_sounds/sound/boarding_pad.ogg', 60, TRUE, frequency = 1)
-			playsound(T, 'mod_celadon/_storge_sounds/sound/boarding_pad.ogg', 60, TRUE, frequency = 1)
+			playsound(src, 'mod_celadon/_storage_sounds/sound/boarding_pad.ogg', 60, TRUE, frequency = 1)
+			playsound(T, 'mod_celadon/_storage_sounds/sound/boarding_pad.ogg', 60, TRUE, frequency = 1)
 			M.invisibility = INVISIBILITY_INVINISMIN // making boarder 1sec invisible for showing animation
 
 			if(do_after(M, 1 SECONDS, target = src))
