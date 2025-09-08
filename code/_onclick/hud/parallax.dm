@@ -334,6 +334,7 @@
 
 /atom/movable/screen/parallax_layer/layer_1
 	icon_state = "layer1"
+	blend_mode = BLEND_DEFAULT	// [CELADON-ADD] - CELADON_PARALLAX
 	speed = 0.6
 	layer = 1
 
