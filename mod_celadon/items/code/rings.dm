@@ -61,7 +61,8 @@
 	if(!is_open)
 		icon_state = base_icon_state
 		return ..()
-	
+
+
 	if(!contents.len)
 		icon_state = "[base_icon_state]0"
 	else
