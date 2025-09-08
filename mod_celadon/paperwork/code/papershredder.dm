@@ -93,9 +93,8 @@ var/list/alldirs = list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAS
 /obj/machinery/papershredder/verb/empty_contents()
 	set name = "Empty bin"
 	set category = "Object"
-	set src in range(1)
+	set src in oview(1)
 
-	// if(usr.stat || usr.restrained() || usr.weakened || usr.paralysis || usr.lying || usr.stunned)
 	if(usr.stat || usr.restrained())
 		return
 
@@ -111,7 +110,7 @@ var/list/alldirs = list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAS
 	if(empty_into && !istype(empty_into))
 		empty_into = null
 
-	if(empty_into && empty_into.contents.len >= empty_into.storage_slots)
+	if(empty_into && empty_into.storage_slots && empty_into.contents.len >= empty_into.storage_slots)
 		to_chat(user, span_notice("\The [empty_into] is full."))
 		return
 
@@ -119,9 +118,9 @@ var/list/alldirs = list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAS
 		var/obj/item/shreddedp/SP = get_shredded_paper()
 		if(!SP) break
 		if(empty_into)
-			empty_into.canStrip(SP)
-			if(empty_into.contents.len >= empty_into.storage_slots)
+			if(empty_into.storage_slots && empty_into.contents.len >= empty_into.storage_slots)
 				break
+			SP.forceMove(empty_into)
 	if(empty_into)
 		if(paperamount)
 			to_chat(user, span_notice("You fill \the [empty_into] with as much shredded paper as it will carry."))
