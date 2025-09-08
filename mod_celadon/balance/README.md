@@ -19,6 +19,7 @@ ID мода:
 	CELADON_BALANCE_CHISEL
 	CELADON_BALANCE_OVERMAP_EVENTS
 	CELADON_BALANCE_SPECIES
+	CELADON_BALANCE_VENDING
 	BALLISTIC_SHIELD
 	YOU_NOT_SEPARATIST
 <!--
@@ -130,6 +131,9 @@ ADD: `code/game/objects/items/tools/chisel.dm` : видоизменяем дол
 
 YOU_NOT_SEPARATIST
 ADD: `code/modules/mob/dead/new_player/ship_select.dm` : Добавляем сокрытие определенных кораблей для определенных видов
+
+CELADON_BALANCE_VENDING
+EDIT: `code/modules/vending/_vending.dm` : Убираем автоматическое сбрасывание к платным покупкам у всех торрговых автоматах что НЕ относятся к руинкам
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,

@@ -196,7 +196,11 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 
 	Radio = new /obj/item/radio(src)
 	Radio.listening = 0
-	if(istype(get_area(src.loc), /area/outpost) || istype(get_area(src.loc), /area/ruin))
+	// Машины на аванпостах сохранят значение all_items_free = TRUE если оно было установлено на карте.
+	// [CELADON-EDIT] - CELADON_BALANCE_VENDING - Машины на аванпостах сохранят значение all_items_free = TRUE если оно было установлено на карте
+	// if(istype(get_area(src.loc), /area/outpost) || istype(get_area(src.loc), /area/ruin))	// ORIGINAL
+	if(all_items_free && istype(get_area(src.loc), /area/ruin))
+	// [/CELADON-EDIT]
 		all_items_free = FALSE
 
 /obj/machinery/vending/Destroy()
