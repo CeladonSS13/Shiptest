@@ -2567,18 +2567,13 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/crew)
 "zr" = (
-/obj/effect/turf_decal/corner/opaque/syndiered/half{
-	dir = 4
-	},
-/obj/effect/turf_decal/spline/fancy/opaque/black{
-	dir = 4
-	},
-/obj/machinery/recharge_station,
 /obj/machinery/light/small/directional/west,
 /obj/machinery/camera/autoname{
 	dir = 10
 	},
-/turf/open/floor/mineral/plastitanium,
+/obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/crate_shelf,
+/turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "zC" = (
 /obj/effect/turf_decal/spline/fancy/opaque/syndiered{
@@ -2843,7 +2838,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/light_switch{
-	pixel_y = 23;
+	pixel_y = 22;
 	pixel_x = 12
 	},
 /turf/open/floor/plasteel/tech,
@@ -2967,6 +2962,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/crew)
 "EB" = (
@@ -3915,6 +3911,9 @@
 	pixel_y = -6;
 	pixel_x = -7
 	},
+/obj/item/blood_filter{
+	pixel_y = -8
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/engineering)
 "LE" = (
@@ -4046,7 +4045,6 @@
 /obj/effect/turf_decal/corner/opaque/syndiered/three_quarters{
 	dir = 1
 	},
-/obj/machinery/newscaster/security_unit/directional/west,
 /obj/item/storage/box/drinkingglasses{
 	pixel_y = 2;
 	pixel_x = -9
@@ -4076,8 +4074,12 @@
 	pixel_x = 7
 	},
 /obj/structure/closet/wall/red/directional/south{
-	name = "Bartender's locker"
+	name = "Bartender's locker";
+	dir = 8;
+	pixel_y = 0;
+	pixel_x = -32
 	},
+/obj/machinery/newscaster/security_unit/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/crew)
 "Nx" = (
@@ -4474,7 +4476,6 @@
 	desc = "Smells kind of fishy.";
 	name = "Cayenne II's bed"
 	},
-/obj/structure/extinguisher_cabinet/directional/south,
 /obj/machinery/light/directional/west,
 /mob/living/simple_animal/hostile/carp{
 	desc = "The presonal pet of a missing agent. He is trained to attack all enemies of the Syndicate... and possibly not only enemies.";
@@ -4804,7 +4805,6 @@
 	height = 15;
 	width = 30;
 	dwidth = 15;
-	name = "main ember dock";
 	dir = 2
 	},
 /turf/template_noop,
@@ -6756,7 +6756,7 @@ dd
 mF
 An
 An
-tK
+Zl
 An
 An
 An
@@ -6784,7 +6784,7 @@ dd
 An
 An
 An
-Zl
+An
 An
 An
 An
