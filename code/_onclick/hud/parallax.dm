@@ -49,12 +49,13 @@
 				current_client.parallax_layers_cached += new_layer
 
 		// Layer 4 - Random objects (выбираем случайно 1 из random слоев)
-		if(prob(30))
-			var/list/random_types = list("", "infection", "gas", "trash", "asteroids")
+		if(prob(10))
+			var/list/random_types = list("trash", "asteroids")
 			var/selected_type = pick(random_types)
 			var/layer_4_path = selected_type ? text2path("/atom/movable/screen/parallax_layer/random/[selected_type]") : /atom/movable/screen/parallax_layer/random
 			var/atom/movable/screen/parallax_layer/layer_4 = new layer_4_path(null, current_client.view)
 			layer_4.alpha = 255
+			layer_4.blend_mode = BLEND_DEFAULT
 			current_client.parallax_layers_cached += layer_4
 		// [/CELADON-EDIT]
 		// Обязательные слои
@@ -349,7 +350,7 @@
 /atom/movable/screen/parallax_layer/random
 	// [CELADON-ADD] - CELADON_PARALLAX
 	icon_state = "empty"
-	alpha = 150
+	alpha = 0
 	// [/CELADON-ADD]
 	blend_mode = BLEND_ADD	// [CELADON-EDIT] - CELADON_PARALLAX // ORIGINAL // blend_mode = BLEND_OVERLAY
 	speed = 3
@@ -357,6 +358,7 @@
 
 /atom/movable/screen/parallax_layer/random/asteroids
 	icon_state = "asteroids"
+	alpha = 255
 
 /atom/movable/screen/parallax_layer/planet
 	icon_state = "planet"
@@ -371,19 +373,19 @@
 
 // [CELADON-ADD] - CELADON_PARALLAX
 // MARK:Random
-/atom/movable/screen/parallax_layer/random/gas
-	icon_state = "gas"
-	speed = 0.1
+// /atom/movable/screen/parallax_layer/random/gas
+// 	icon_state = "gas"
+// 	speed = 0.1
 
 /atom/movable/screen/parallax_layer/random/trash
 	icon_state = "trash"
-	alpha = 200
+	alpha = 255
 	speed = 0.3
 
-/atom/movable/screen/parallax_layer/random/infection
-	icon_state = "infection"
-	speed = 0.6
-	layer = 1
+// /atom/movable/screen/parallax_layer/random/infection
+// 	icon_state = "infection"
+// 	speed = 0.6
+// 	layer = 1
 
 // MARK:Layer 1
 /atom/movable/screen/parallax_layer/layer_1/l_0
