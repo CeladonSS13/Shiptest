@@ -439,7 +439,6 @@
 	var/list/data = faction_ui_static_data(user, /datum/faction/independent)
 	return data
 
-
 /obj/machinery/computer/cargo/faction/independent/computer_1
 	name = "Independent outpost console #1"
 	desc = "That outpost console #1 belongs to Independent faction."
