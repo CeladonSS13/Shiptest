@@ -18,7 +18,7 @@
 /obj/machinery/porta_turret/syndicate/grenade_40mm
 	name = "mounted grenade launcher (40mm)"
 	desc = "Syndicate 40mm grenade launcher defense turret. If you've had this much time to look at it, you're probably already dead."
-	icon = 'mod_celadon/_storge_icons/icons/structures/turrets.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/turrets.dmi'
 	icon_state = "syndie_grenade"
 	base_icon_state = "syndie_grenade"
 	stun_projectile = /obj/projectile/bullet/a40mm
@@ -66,7 +66,7 @@
 /obj/machinery/porta_turret/syndicate/no_access/grenade_40mm
 	name = "mounted grenade launcher (40mm)"
 	desc = "Syndicate 40mm grenade launcher defense turret. If you've had this much time to look at it, you're probably already dead."
-	icon = 'mod_celadon/_storge_icons/icons/structures/turrets.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/turrets.dmi'
 	icon_state = "syndie_grenade"
 	base_icon_state = "syndie_grenade"
 	stun_projectile = /obj/projectile/bullet/a40mm

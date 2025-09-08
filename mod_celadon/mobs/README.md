@@ -88,7 +88,7 @@ ID мода: CELADON_MOBS
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- `mod_celadon/_storge_icons/icons/mobs`
+- `mod_celadon/_storage_icons/icons/mobs`
 - `mod_celadon/_storge_sounds/sound`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,

@@ -8,10 +8,10 @@
 	worn_slot_flags = ITEM_SLOT_HEAD
 	unique_pet = TRUE
 	gender = FEMALE
-	icon = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets.dmi'
-	held_lh = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets_held_lh.dmi'
-	held_rh = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets_held_rh.dmi'
-	head_icon = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets_head.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/mobs/pet_content/pets.dmi'
+	held_lh = 'mod_celadon/_storage_icons/icons/mobs/pet_content/pets_held_lh.dmi'
+	held_rh = 'mod_celadon/_storage_icons/icons/mobs/pet_content/pets_held_rh.dmi'
+	head_icon = 'mod_celadon/_storage_icons/icons/mobs/pet_content/pets_head.dmi'
 
 /mob/living/simple_animal/pet/cat/alta/Life()
 	return
@@ -38,10 +38,10 @@
 	worn_slot_flags = ITEM_SLOT_HEAD
 	unique_pet = TRUE
 	gender = FEMALE
-	icon = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets.dmi'
-	held_lh = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets_held_lh.dmi'
-	held_rh = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets_held_rh.dmi'
-	head_icon = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets_head.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/mobs/pet_content/pets.dmi'
+	held_lh = 'mod_celadon/_storage_icons/icons/mobs/pet_content/pets_held_lh.dmi'
+	held_rh = 'mod_celadon/_storage_icons/icons/mobs/pet_content/pets_held_rh.dmi'
+	head_icon = 'mod_celadon/_storage_icons/icons/mobs/pet_content/pets_head.dmi'
 
 /mob/living/simple_animal/pet/cat/space/alta/Life()
 	return

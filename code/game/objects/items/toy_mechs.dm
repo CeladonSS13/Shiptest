@@ -509,7 +509,7 @@
 /obj/item/toy/prize/honk
 	name = "toy H.O.N.K."
 	desc = "6/14"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/toy.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/toy.dmi'
 	icon_state = "honktoy"
 	max_combat_health = 4 //140 integrity
 	special_attack_type = SPECIAL_ATTACK_OTHER

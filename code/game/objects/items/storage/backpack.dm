@@ -106,9 +106,9 @@
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/storage/backpack/mime
 	name = "Parcel Parceaux"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpacks.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpack_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpack_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/backpacks.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/backpack_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/backpack_righthand.dmi'
 	desc = "A silent backpack made for those silent workers. Silence Co."
 	icon_state = "mimepack"
 	item_state = "mimepack"
@@ -199,9 +199,9 @@
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/storage/backpack/ert/clown
 	name = "emergency response team clown backpack"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpacks.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpack_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpack_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/backpacks.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/backpack_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/backpack_righthand.dmi'
 	desc = "A spacious backpack with lots of pockets, worn by Clowns of an Emergency Response Team."
 	icon_state = "ert_clown"
 // [/CELADON-ADD]

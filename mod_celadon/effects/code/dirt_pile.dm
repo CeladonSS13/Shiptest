@@ -1,7 +1,7 @@
 /obj/structure/dirt_pile
 	name = "empty dirt pile"
 	desc = "A small pile of dirt. Something might be buried underneath."
-	icon = 'mod_celadon/_storge_icons/icons/structures/snow.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/snow.dmi'
 	icon_state = "snowstone"
 	density = FALSE
 	anchored = TRUE

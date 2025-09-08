@@ -68,7 +68,7 @@ ID мода: LOBBY_CELADON
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- `mod_celadon/_storge_icons/icons`
+- `mod_celadon/_storage_icons/icons`
 - `mod_celadon/_storge_sounds/sound`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,

@@ -12,8 +12,8 @@ var/round_start_time
 /obj/item/pocketwatch
 	name = "pocketwatch"
 	desc = "A watch that goes in your pocket."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	icon_state = "pocketwatch"
 	var/closed = FALSE
 

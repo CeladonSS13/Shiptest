@@ -1,5 +1,5 @@
 /obj/structure/chair/sofa/green
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/sofa.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/sofa.dmi'
 	icon_state = "green_sofa_middle"
 
 /obj/structure/chair/sofa/green/left

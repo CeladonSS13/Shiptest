@@ -2,7 +2,7 @@
 	name = "Pig"
 	real_name = "Pig"
 	desc = "Grunts."
-	icon = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/mobs/pet_content/pets.dmi'
 	icon_state = "pigs"
 	icon_living = "pigs"
 	icon_dead = "pigs_dead"
@@ -60,7 +60,7 @@
 /obj/item/food/meat/slab/pig
 	name = "salo"
 	icon_state = "salo"
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/salo.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/salo.dmi'
 	foodtypes = MEAT
 
 /obj/item/food/meat/slab/pig/make_processable()
@@ -69,4 +69,4 @@
 /obj/item/food/meat/rawcutlet/plain/salo
 	name = "salo"
 	icon_state = "salo_slice"
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/salo.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/salo.dmi'

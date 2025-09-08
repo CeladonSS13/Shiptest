@@ -129,14 +129,14 @@ mod_celadon/hello_world
   - `icons` - содержит **только** файлы изображений
   - `sounds` - содержит **только** файлы звуков
 
-Это `_storge_icons` и `_storge_sounds` и выглядеть их структура будет так:
+Это `_storage_icons` и `_storge_sounds` и выглядеть их структура будет так:
 ```
-mod_celadon/_storge_icons
+mod_celadon/_storage_icons
 ├─ icons
 │  ├─ any_icon.dmi
 │  ╰─ some_icon.png
-├─ _storge_icons.dm
-├─ _storge_icons.dme
+├─ _storage_icons.dm
+├─ _storage_icons.dme
 ╰─ README.md
 ```
 

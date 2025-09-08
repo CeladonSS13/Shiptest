@@ -1,7 +1,7 @@
 /obj/item/wall_painter
 	name = "wall painter"
 	desc = "Продвинутый инструмент для покраски стен с настраиваемыми цветами. Используйте на стенах для нанесения краски или в руке для настройки цвета. Обладает автогенерацией краски."
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/wall_painter.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/wall_painter.dmi'
 	icon_state = "wall_painter"
 	item_state = "wall_painter"
 	w_class = WEIGHT_CLASS_SMALL

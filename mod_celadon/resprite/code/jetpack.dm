@@ -4,10 +4,10 @@
 	drop_sound = 'mod_celadon/_storge_sounds/sound/items/gas_tank_drop.ogg'
 
 /obj/item/tank/internals/plasmaman
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/tank.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/tank.dmi'
 
 /obj/item/tank/jetpack
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/tank.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/tank.dmi'
 	var/classic = TRUE
 
 /obj/item/tank/jetpack/update_icon_state()

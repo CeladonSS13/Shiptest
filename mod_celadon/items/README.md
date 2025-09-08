@@ -83,13 +83,13 @@ OMNI_TOOLS	-	Обновлены инструменты
 ### Используемые файлы, не содержащиеся в модпаке
 
 - `mods/_master_files/icons/obj/alien.dmi`
-- `mod_celadon/_storge_icons/icons/items`
-- `mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi`
+- `mod_celadon/_storage_icons/icons/items`
+- `mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo.dmi`
 - `sound/weapons/gun/shotgun/insert_shell.ogg`
-- `mod_celadon/_storge_icons/icons/items/clothing/back/obj.dmi`
-- `mod_celadon/_storge_icons/icons/items/clothing/back/overlay/onmob.dmi`
-- `mod_celadon/_storge_icons/icons/items/clothing/head/overlay/head.dmi`
-- `mod_celadon/_storge_icons/icons/items/clothing/head/hats.dmi`
+- `mod_celadon/_storage_icons/icons/items/clothing/back/obj.dmi`
+- `mod_celadon/_storage_icons/icons/items/clothing/back/overlay/onmob.dmi`
+- `mod_celadon/_storage_icons/icons/items/clothing/head/overlay/head.dmi`
+- `mod_celadon/_storage_icons/icons/items/clothing/head/hats.dmi`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.

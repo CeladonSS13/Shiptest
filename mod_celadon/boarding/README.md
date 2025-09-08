@@ -78,7 +78,7 @@ ID мода: CELADON_BOARDING
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- mods/_storge_icons/icons/boarding.dmi
+- mods/_storage_icons/icons/boarding.dmi
 - mods/_storge_sounds/sound/boarding_pad.ogg
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,

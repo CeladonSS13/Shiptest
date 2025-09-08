@@ -1,7 +1,7 @@
 
 ## Хранилище иконок
 
-ID мода: CELADON_STORGE_ICONS
+ID мода: CELADON_STORAGE_ICONS
 
 ### Описание мода
 
