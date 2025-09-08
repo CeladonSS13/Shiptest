@@ -33,6 +33,8 @@ export const ShipSelect = (props, context) => {
 
   const ships = data.ships || [];
   const templates = data.templates || [];
+  const epoch = data.epoch || 0;
+  const loading = data.loading || false;
 
   const [currentTab, setCurrentTab] = useLocalState(context, 'tab', 1);
 
@@ -66,6 +68,7 @@ export const ShipSelect = (props, context) => {
 
   return (
     <Window
+      key={`shipselect:${currentTab}:${epoch}`}
       title="Ship Select [INTERCEPTOR v3-FINAL]"
       width={860}
       height={640}
@@ -77,7 +80,12 @@ export const ShipSelect = (props, context) => {
             <Tabs.Tab
               key={`${index}-${tabbing.name}`}
               selected={currentTab === tabbing.tab}
-              onClick={() => setCurrentTab(tabbing.tab)}
+              onClick={() => {
+                if (!loading) {
+                  setCurrentTab(tabbing.tab);
+                }
+              }}
+              disabled={loading}
               style={{ flex: 1, textAlign: 'center' }}
             >
               {tabbing.name}
@@ -376,8 +384,11 @@ export const ShipSelect = (props, context) => {
                   />
                   <Button
                     content="Back"
+                    disabled={loading}
                     onClick={() => {
-                      setCurrentTab(1);
+                      if (!loading) {
+                        setCurrentTab(1);
+                      }
                     }}
                   />
                 </>

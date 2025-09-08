@@ -203,6 +203,10 @@ FIXES_TESLA_ON_OVERMAP
 FIXES_VORACIOUS
 - ADD: `code/datums/components/food/edible.dm` - добавляем проверку на квирк и ускоряем процес поедания в 2 раза
 
+FIXES_JUKEBOX
+- EDIT: `code/controllers/subsystem/jukeboxes.dm` - правим нахождение звука и типа, для работы muz-tv. Попытка исправить просачивание музыки сквозь EDGE
+
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

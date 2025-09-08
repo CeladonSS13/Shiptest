@@ -68,9 +68,11 @@
 		parent_ship.owner_act.set_blinking(TRUE)
 		SEND_SOUND(parent_ship.owner_mob, sound('sound/misc/server-ready.ogg', volume=50))
 		// [CELADON-EDIT] - SHIP_SELECTION_REWORK
-		//var/message = \
-		//	"<span class='looc'>[app_name] [show_key ? "([app_key]) " : null]applied to your ship: [app_msg]\n" + \
-		//	"<a href=?src=[REF(src)];application_accept=1>(ACCEPT)</a> / <a href=?src=[REF(src)];application_deny=1>(DENY)</a></span>"
+		/*
+		var/message = \
+			"<span class='looc'>[app_name] [show_key ? "([app_key]) " : null]applied to your ship: [app_msg]\n" + \//
+			"<a href=?src=[REF(src)];application_accept=1>(ACCEPT)</a> / <a href=?src=[REF(src)];application_deny=1>(DENY)</a></span>"
+		*/
 		var/message = \
 			"<span class='looc'>[app_name] [show_key ? "([app_key]) " : null]applied to your ship: [clean_html_entities(app_msg)]\n" + \
 			"<a href=?src=[REF(src)];application_accept=1>(ACCEPT)</a> / <a href=?src=[REF(src)];application_deny=1>(DENY)</a></span>"

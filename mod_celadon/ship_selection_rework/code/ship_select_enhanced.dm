@@ -24,8 +24,8 @@
 
 		current_preview_faction = faction_name
 
-		// Обновляем UI
-		SStgui.update_uis(src)
+		// Обновляем UI через очередь
+		queue_ui_update()
 		return TRUE
 
 	// Обработка открытия ссылок на вики
@@ -156,7 +156,15 @@
 				CRASH("Ship attemped to be bought at spawn menu, but spawning outpost was not selected! This is bad!")
 
 			to_chat(spawnee, "<span class='danger'>Your [template.name] is being prepared. Please be patient!</span>")
+
+			// Устанавливаем состояние загрузки и делаем epoch bump для полного ремоунта UI
+			set_loading_state(TRUE)
+			bump_epoch_and_queue()
+
 			var/datum/overmap/ship/controlled/target = SSovermap.spawn_ship_at_start(template, ship_loc, selected_system)
+
+			// Снимаем состояние загрузки после спавна
+			set_loading_state(FALSE)
 
 			if(!target?.shuttle_port)
 				to_chat(spawnee, span_danger("There was an error loading the ship. Please contact admins!"))

@@ -5,6 +5,10 @@
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "cryopod"
 	// mob_species = /datum/species/human
+	/// Whether this role should be replenished when player leaves via cryopod
+	var/replenish_role = TRUE
+	/// Reference to the cryopod that will handle respawning
+	var/datum/weakref/linked_cryopod
 
 // Cook
 
@@ -124,6 +128,7 @@
 	important_info = "Внимание! Данная роль является пока что сырой! У вас пока нету цели конкретной, придумайте сами или попросите администрацию."
 	short_desc = "Вы бродяга. Ищите еду, пытайтесь выжить на этом куске металла в космосе, погрузитесь в мир нищеты (халявной еды и пива в бесплатных автоматах)!"
 	flavour_text = "Вы бродяга. Только вы сами знаете как вы стали им, было ли это подставой или быть может не оплатили ипотеку на судно? никто не скажет уже точно, главное одно, надо как-то прожить очередной день..."
+	replenish_role = FALSE
 
 /obj/effect/mob_spawn/human/elysium_outpost/wagabond/Destroy()
 	new /obj/structure/bed/outpost/wagabond(drop_location())

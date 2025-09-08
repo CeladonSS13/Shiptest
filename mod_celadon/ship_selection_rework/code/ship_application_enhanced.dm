@@ -115,7 +115,12 @@
 
 // Enhanced application status change with denial reason notification
 /datum/ship_application/application_status_change(new_status)
-	if(status != SHIP_APPLICATION_PENDING)
+	// Разрешаем изменение статуса с ACCEPTED на DENIED (например, при смене персонажа)
+	// Но запрещаем изменение с DENIED на что-то еще
+	if(status == SHIP_APPLICATION_DENIED && new_status != SHIP_APPLICATION_DENIED)
+		return
+	// Запрещаем изменение статуса, если заявка уже в финальном состоянии и мы не переходим в DENIED
+	if(status == SHIP_APPLICATION_ACCEPTED && new_status != SHIP_APPLICATION_DENIED)
 		return
 	status = new_status
 	to_chat(usr, span_notice("Application [status]."), MESSAGE_TYPE_INFO)
@@ -129,16 +134,22 @@
 	switch(status)
 		if(SHIP_APPLICATION_ACCEPTED)
 			to_chat(app_mob, span_notice("Your application to [parent_ship] was accepted!"), MESSAGE_TYPE_INFO)
-			for(var/datum/tgui/ui in SStgui.open_uis)
-				if(ui.interface == "ShipSelect" && ui.user == app_mob)
-					ui.send_update()
-					break
+			// Обновляем UI через очередь вместо прямого вызова send_update
+			if(app_mob)
+				for(var/datum/tgui/ui in SStgui.open_uis)
+					if(ui.interface == "ShipSelect" && ui.user == app_mob && istype(ui.src_object, /datum/ship_select))
+						var/datum/ship_select/ship_select = ui.src_object
+						ship_select.queue_ui_update()
+						break
 		if(SHIP_APPLICATION_DENIED)
 			var/denial_message = "Your application to [parent_ship] was denied!"
 			if(denial_reason && length(denial_reason))
 				denial_message += "\nПричина: [denial_reason]"
 			to_chat(app_mob, span_warning(denial_message), MESSAGE_TYPE_INFO)
-			for(var/datum/tgui/ui in SStgui.open_uis)
-				if(ui.interface == "ShipSelect" && ui.user == app_mob)
-					ui.send_update()
-					break
+			// Обновляем UI через очередь вместо прямого вызова send_update
+			if(app_mob)
+				for(var/datum/tgui/ui in SStgui.open_uis)
+					if(ui.interface == "ShipSelect" && ui.user == app_mob && istype(ui.src_object, /datum/ship_select))
+						var/datum/ship_select/ship_select = ui.src_object
+						ship_select.queue_ui_update()
+						break
