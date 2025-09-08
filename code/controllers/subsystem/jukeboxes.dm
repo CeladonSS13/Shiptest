@@ -113,10 +113,10 @@ SUBSYSTEM_DEF(jukeboxes)
 		var/list/virtual_ids = list(zone.id)
 		var/list/areas = list(get_area(jukebox))
 		if(above_turf && istransparentturf(above_turf))
-			virtual_ids += above_turf.virtual_z
+			// virtual_ids += above_turf.virtual_z	// [CELADON-REMOVE] - FIXES_JUKEBOX - Попытка починить баг со слышимостью на соседних вирт. уровнях
 			areas += get_area(above_turf)
 		if(below_turf && istransparentturf(below_turf))
-			virtual_ids += below_turf.virtual_z
+			// virtual_ids += below_turf.virtual_z	// [CELADON-REMOVE] - FIXES_JUKEBOX - Попытка починить баг со слышимостью на соседних вирт. уровнях
 			areas += get_area(below_turf)
 
 		song_played.falloff = jukeinfo[4]
