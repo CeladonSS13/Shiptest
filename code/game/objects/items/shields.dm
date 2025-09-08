@@ -35,9 +35,12 @@
 	var/recoil_bonus = -2
 	var/broken = FALSE
 
-// спрайты риотки блок
-// спрайт
-	var/broken_shield	// [CELADON-ADD] - Флаг на включение сломаных щитов из модов - BALLISTIC_SHIELD - Extended Edition
+// [CELADON-ADD] - Флаг на включение сломаных щитов из модов - BALLISTIC_SHIELD - Extended Edition
+	var/broken_shield
+	var/spread_bonus = 0
+	var/braking_sound = 'sound/effects/glassbr3.ogg'
+	var/braking_alert = "cracks!"
+// [/CELADON-ADD]
 
 /obj/item/shield/proc/on_block(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", damage = 0, attack_type = MELEE_ATTACK)
 	take_damage(damage)
@@ -46,11 +49,12 @@
 	. = ..()
 	if(!broken)
 		if(isliving(loc))
-			loc.balloon_alert(loc, "[src] cracks!")
 // [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
+			//loc.balloon_alert(loc, "[src] cracks!") // [CELADON-EDIT]
+			loc.balloon_alert(loc, "[src] [braking_alert]")
 			var/mob/living/user = loc
 			user.dropItemToGround(src, force = TRUE)
-		playsound(src, 'sound/effects/glassbr3.ogg', 100)
+		playsound(src, braking_sound, 100)
 		if(broken_shield)
 			icon = 'mod_celadon/_storge_icons/icons/items/weapons/shields.dmi'
 			icon_state = "[src::icon_state]_broken"
@@ -96,6 +100,7 @@
 	material_flags = MATERIAL_NO_EFFECTS
 
 // [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition + Rebalance
+	spread_bonus = -3
 	slowdown = 0.5
 	max_integrity = 600
 	block_chance = 60

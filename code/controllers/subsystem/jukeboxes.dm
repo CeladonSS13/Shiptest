@@ -113,10 +113,10 @@ SUBSYSTEM_DEF(jukeboxes)
 		var/list/virtual_ids = list(zone.id)
 		var/list/areas = list(get_area(jukebox))
 		if(above_turf && istransparentturf(above_turf))
-			virtual_ids += above_turf.virtual_z
+			// virtual_ids += above_turf.virtual_z	// [CELADON-REMOVE] - FIXES_JUKEBOX - Попытка починить баг со слышимостью на соседних вирт. уровнях
 			areas += get_area(above_turf)
 		if(below_turf && istransparentturf(below_turf))
-			virtual_ids += below_turf.virtual_z
+			// virtual_ids += below_turf.virtual_z	// [CELADON-REMOVE] - FIXES_JUKEBOX - Попытка починить баг со слышимостью на соседних вирт. уровнях
 			areas += get_area(below_turf)
 
 		song_played.falloff = jukeinfo[4]
@@ -127,21 +127,21 @@ SUBSYSTEM_DEF(jukeboxes)
 				continue
 
 			var/inrange = FALSE
-			// [CELADON-EDIT] - FIXES_JUKEBOX
-			// var/juke_volume = jukebox.volume || 70 // ORIGINAL
+			// [CELADON-EDIT] - FIXES_JUKEBOX - Для работоспособности звука, выносим громкость в общий параметр объекта
+			// if(jukebox.volume <= 0 || !(M.virtual_z() in virtual_ids)) // ORIGINAL
 			var/juke_volume = 70
 			if(jukebox.vars.Find("volume"))
 				juke_volume = jukebox.vars["volume"]
-			// [/CELADON-EDIT]
 			if(juke_volume <= 0 || !(M.virtual_z() in virtual_ids))
+			// [/CELADON-EDIT]
 				song_played.status = SOUND_MUTE | SOUND_UPDATE
 			else
 				song_played.status = SOUND_UPDATE
 				if((get_area(M) in areas) || (M in hearerscache))
 					inrange = TRUE
 
-			// [CELADON-EDIT] - FIXES_JUKEBOX
-			//M.playsound_local(currentturf, null, jukebox.volume, channel = jukeinfo[2], S = song_played, envwet = (inrange ? -250 : 0), envdry = (inrange ? 0 : -10000))
+			// [CELADON-EDIT] - FIXES_JUKEBOX - Для работоспособности звука, выносим громкость в общий параметр объекта
+			// M.playsound_local(currentturf, null, jukebox.volume, channel = jukeinfo[2], S = song_played, envwet = (inrange ? -250 : 0), envdry = (inrange ? 0 : -10000))
 			M.playsound_local(currentturf, null, juke_volume, channel = jukeinfo[2], S = song_played, envwet = (inrange ? -250 : 0), envdry = (inrange ? 0 : -10000))
 			// [/CELADON-EDIT]
 

@@ -1,0 +1,261 @@
+/* Стили для компонента FactionInfo */
+
+.faction-info-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+}
+
+.faction-info-placeholder-text {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+  text-align: center;
+  padding: 1rem;
+}
+
+.faction-info-left {
+  margin-right: 0.5rem;
+  height: 100%;
+  min-height: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.faction-info-right {
+  margin-left: 0.5rem;
+  height: 100%;
+  min-height: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.faction-description {
+  font-size: 12px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.75rem;
+  padding: 0.4rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  border-left: 3px solid var(--color-good);
+}
+
+.outfit-preview-container {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.outfit-name {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.preview-container {
+  text-align: center;
+  margin: 0.5rem 0;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 128px;
+  min-width: 128px;
+  width: 100%;
+}
+
+.preview-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.outfit-preview-image {
+  width: 128px !important;
+  height: 128px !important;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+  flex: 0 0 auto;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+  }
+}
+
+/* Анимация для плавного появления */
+.faction-info-left,
+.faction-info-right {
+  animation: fadeInSlide 0.3s ease-out;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Адаптивность для маленьких экранов */
+@media (max-width: 1200px) {
+  .outfit-preview-image {
+    max-width: 180px;
+  }
+
+  .outfit-preview-container {
+    min-height: 240px;
+  }
+
+  .preview-container {
+    min-height: 200px;
+  }
+
+  .faction-description {
+    font-size: 12px;
+  }
+
+  .outfit-name {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 800px) {
+  .outfit-preview-image {
+    max-width: 160px;
+  }
+
+  .outfit-preview-container {
+    min-height: 220px;
+  }
+
+  .preview-container {
+    min-height: 180px;
+  }
+}
+
+/* ===== Equipment left pane: optimized 2x2 grid ===== */
+.EquipmentPane {
+  --gap: 8px;
+  --frame-pad: 6px;
+  --card-pad-x: 6px;
+
+  /* Чтоб внутренняя геометрия считалась по границам бокса */
+  &,
+  .equip-card,
+  .preview-frame,
+  .sprite-grid {
+    box-sizing: border-box;
+  }
+
+  /* Карточка и рамка — компактнее */
+  .equip-card {
+    padding: 10px var(--card-pad-x);
+    margin: 0; /* убираем возможный горизонтальный margin */
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.4);
+      border-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .preview-frame {
+    padding: var(--frame-pad);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    overflow: hidden; /* страховка от 1px артефактов */
+    text-align: center;
+    margin: 0.25rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Сетка 2x2 с центрированием одной иконки */
+  .sprite-grid {
+    display: grid;
+    grid-template-columns: repeat(2, var(--cell));
+    grid-auto-rows: var(--cell);
+    gap: var(--gap);
+
+    /* ширина сетки = 2 ячейки + отступ */
+    width: calc(var(--cell) * 2 + var(--gap));
+    max-width: 100%;
+    margin: 0 auto; /* центрируем внутри рамки */
+
+    /* центрируем иконку в сетке */
+    justify-items: center;
+    align-items: center;
+  }
+
+  /* Картинки строго по клетке с центрированием */
+  .sprite-grid .sprite-img,
+  .outfit-preview-image {
+    width: var(--cell) !important;
+    height: var(--cell) !important;
+    max-width: none !important;
+    max-height: none !important;
+    image-rendering: pixelated !important;
+    display: block;
+    object-fit: contain;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    margin: auto; /* центрируем иконку в ячейке */
+
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.4);
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+      transform: scale(1.05);
+      transition: all 0.2s ease;
+    }
+  }
+}

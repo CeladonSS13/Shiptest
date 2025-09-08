@@ -882,6 +882,11 @@
 	var/final_spread = 0
 	var/randomized_gun_spread = 0
 	var/randomized_bonus_spread = 0
+	// [CELADON-ADD] - BALLISTIC_SHIELD - Небольшое снижение разброса при использовании щита
+	var/obj/item/shield/shield = user.get_inactive_held_item()
+	if(istype(shield) && spread_unwielded > 0)
+		bonus_spread += shield.spread_bonus
+	// [CELADON-ADD]
 
 	final_spread += bonus_spread
 

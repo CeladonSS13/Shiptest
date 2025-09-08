@@ -181,8 +181,31 @@ FIXES_DRILLCLASS - **Фикс бесконечного спавна мобов �
 - EDIT: `code/modules/mining/ore_veins.dm` - Добавлена проверка `QDELETED(our_drill)` в `increment_wave_tally()` для защиты от удаленных буров
 - EDIT: `code/modules/mining/ore_veins.dm` - Балансировка жил класса 4: `max_mobs = 4` (было 6), `spawn_time = 12 SECONDS` (было 8), `wave_length = 30 SECONDS` (было 45)
 
+FIXES_MOVE_DIAGONAL_MOBS
+- EDIT: `code/modules/mob/living/simple_animal/simple_animal.dm`
+
+FIXES_DEBUG_SUIT
+- ADD: `code/modules/clothing/spacesuits/hardsuit.dm` - Добавляем сообщение и звуки сьютам когда те переключают фонарики, в частности это для дебаг сьюта
+
 FIXES_MOTH_EATING_CLOTHING
 - EDIT: `code/modules/clothing/clothing.dm` - Фикс поедание молями еды в виде одежды. Убираем создание временных новых объектов еды, обращаемся напрямую к объектам еды
+
+FIXES_PIZZABOX_AND_PIZZA - фиксим коробки с пиццей и возможность расам есть любимое блюдо с их ингридиентами, даже если там есть то что они не любят
+- ADD: `code/modules/food_and_drinks/pizzabox.dm`
+- ADD: `code/datums/components/food/edible.dm`
+
+FIXES_NETWORK_NT
+- ADD: `code/modules/modular_computers/file_system/programs/ntdownloader.dm` - показываем информацию о отсутвующей сети
+
+FIXES_TESLA_ON_OVERMAP
+- EDIT: `code/modules/power/tesla/energy_ball.dm`
+
+FIXES_VORACIOUS
+- ADD: `code/datums/components/food/edible.dm` - добавляем проверку на квирк и ускоряем процес поедания в 2 раза
+
+FIXES_JUKEBOX
+- EDIT: `code/controllers/subsystem/jukeboxes.dm` - правим нахождение звука и типа, для работы muz-tv. Попытка исправить просачивание музыки сквозь EDGE
+
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,

@@ -64,8 +64,7 @@
 	name = "CMO"
 	icon_state = "cmo"
 
-/// MARK: ENGINEERING
-
+/// MARK:  ENGINEERING
 
 /area/outpost/engineering/ce
 	name = "Chief of Engineer"
@@ -86,7 +85,6 @@
 /area/outpost/engineering/atmos
 	name = "Atmos"
 	icon_state = "atmos2"
-
 
 /// MARK: LONGUE
 

@@ -64,7 +64,6 @@ JETPACK_RESPRITE
 - EDIT: `code\modules\instruments\stationary.dm`: `/obj/structure/musician/piano/Initialize(mapload)` -> изменен прок на выборку спрайта пиано
 
 CELADON_ADD_HUDS
-- ADD: `code/game/objects/items/cards_ids.dm` : Добавлена иконка професии для дебаг-аутфита
 - EDIT: `code/modules/admin/team_panel.dm` : 	Замена путей хадов на наши
 - EDIT: `code/modules/autowiki/pages/ships.dm` :	Выше ^
 - EDIT: `code/modules/mob/mob.dm` :					Выше ^
