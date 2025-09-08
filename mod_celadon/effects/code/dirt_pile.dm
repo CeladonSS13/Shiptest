@@ -60,11 +60,9 @@
 	desc = "A pile of dirt that has been dug up."
 	icon_state = "lavarocks2"
 
-	// Drop all contents
 	for(var/obj/item/I in contents)
 		I.forceMove(get_turf(src))
 
-// Dirt pile with random effects
 /obj/structure/dirt_pile/random
 	name = "mysterious dirt pile"
 	desc = "A pile of dirt that seems to shimmer slightly. Something unusual might be buried underneath."
@@ -148,7 +146,6 @@
 
 	qdel(src)
 
-// Original safe dirt pile
 /obj/structure/dirt_pile/safe
 	name = "suspicious dirt pile"
 	desc = "A pile of dirt that looks like it's hiding something big underneath."
@@ -187,5 +184,3 @@
 	loot_spawner.spawn_loot()
 	qdel(loot_spawner)
 	qdel(src)
-
-// Dirt pile acts as simple container
