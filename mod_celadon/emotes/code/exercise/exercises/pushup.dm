@@ -75,9 +75,9 @@
 	is_bold_message = TRUE
 	staminaloss_per_exercise = 10
 	sounds = list(
-		'mod_celadon/_storge_sounds/sound/emotes/claps/clap1.ogg',
-		'mod_celadon/_storge_sounds/sound/emotes/claps/clap2.ogg',
-		'mod_celadon/_storge_sounds/sound/emotes/claps/clap3.ogg',
+		'mod_celadon/_storage_sounds/sound/emotes/claps/clap1.ogg',
+		'mod_celadon/_storage_sounds/sound/emotes/claps/clap2.ogg',
+		'mod_celadon/_storage_sounds/sound/emotes/claps/clap3.ogg',
 		)
 
 /datum/exercise/pushup/clap/fast

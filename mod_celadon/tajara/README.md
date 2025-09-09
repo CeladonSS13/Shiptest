@@ -136,9 +136,9 @@ ID мода: TAJARA
 ### Используемые файлы, не содержащиеся в модпаке
 
 - `icons/mob/augmentation/augments_lizard.dmi`
-- `mod_celadon/_storge_icons/icons`
-- `mod_celadon/_storge_icons/icons/tajara`
-- `mod_celadon/_storge_sounds/sound`
+- `mod_celadon/_storage_icons/icons`
+- `mod_celadon/_storage_icons/icons/tajara`
+- `mod_celadon/_storage_sounds/sound`
 
 ### Авторы:
 

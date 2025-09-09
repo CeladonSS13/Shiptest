@@ -5,9 +5,9 @@
 	icon_state = "fennec_eldritch"
 	icon_dead = "fennec_eldritch_dead"
 	icon_living = "fennec_eldritch"
-	icon = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets.dmi'
-	held_lh = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets_held_lh.dmi'
-	held_rh = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets_held_rh.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/mobs/pet_content/pets.dmi'
+	held_lh = 'mod_celadon/_storage_icons/icons/mobs/pet_content/pets_held_lh.dmi'
+	held_rh = 'mod_celadon/_storage_icons/icons/mobs/pet_content/pets_held_rh.dmi'
 
 /mob/living/simple_animal/pet/fox/fennec/eldritch/update_resting()
 	. = ..()

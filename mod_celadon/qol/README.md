@@ -50,7 +50,7 @@ UNFUCK_SPRAYCAN
 ### Изменения *кор кода*
 
 - ADD `code/game/objects/items/storage/wallets.dm`: `/obj/item/storage/wallet/ComponentInitialize()`: `STR.set_holdable`: `/obj/item/melee/knife/letter_opener,`, `/obj/item/key`
-- EDIT `code/modules/mob/dead/new_player/sprite_accessories/hair.dm`: `/datum/sprite_accessory/hair`: `icon` = `mod_celadon/_storge_icons/icons/species/human/human_face.dmi`
+- EDIT `code/modules/mob/dead/new_player/sprite_accessories/hair.dm`: `/datum/sprite_accessory/hair`: `icon` = `mod_celadon/_storage_icons/icons/species/human/human_face.dmi`
 - EDIT `code/game/objects/items/binoculars.dm`: `/obj/item/binoculars`: `slot_flags` = `ITEM_SLOT_NECK`
 - EDIT `code/modules/mob/living/silicon/silicon.dm`: `/mob/living/silicon/proc/checklaws()`
 - EDIT `code/game/objects/items/AI_modules.dm`: `/obj/item/aiModule/core/full/asimov/attack_self(mob/user as mob)`
@@ -181,7 +181,7 @@ ADMIN-PANEL
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- `mod_celadon/_storge_icons/icons/assets/qol`
+- `mod_celadon/_storage_icons/icons/assets/qol`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.

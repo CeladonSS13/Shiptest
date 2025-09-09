@@ -1,13 +1,13 @@
 /obj/structure/statue/bronze/masson_kills		// Origin -> code\game\objects\structures\statues.dm
 	name = "Masson Kill's"
 	desc = "Статуя самого лучшего администратора что вы можете встретить в новогоднюю ночь. Его мешок полон подарков. Надеюсь, ты вел себя хорошо?"
-	icon = 'mod_celadon/_storge_icons/icons/structures/statue.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/statue.dmi'
 	icon_state = "masson_kills"
 
 /obj/structure/statue/large
 	name = "statue"
 	desc = "A statue."
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/statuelarge.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/statuelarge.dmi'
 	anchored = 1
 
 /obj/structure/statue/large/phoron

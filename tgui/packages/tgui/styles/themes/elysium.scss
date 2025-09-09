@@ -1,0 +1,67 @@
+/*
+  Copyright (c) 2024 Celadon
+  Elysium theme for TGUI
+*/
+
+@use 'sass:color';
+@use 'sass:meta';
+
+@use '../colors.scss' with (
+  $primary: #228b22,
+  $fg-map-keys: (),
+  $bg-map-keys: ()
+);
+@use '../base.scss' with (
+  $color-bg: #0a2a0a,
+  $color-bg-grad-spread: 6%
+);
+
+.theme-elysium {
+  // Atomic classes
+  @include meta.load-css('../atomic/color.scss');
+
+  // Components
+  @include meta.load-css(
+    '../components/Button.scss',
+    $with: (
+      'color-default': colors.$primary,
+      'color-disabled': #363636,
+      'color-selected': #32cd32,
+      'color-caution': #be6209,
+      'color-danger': #9a9d00
+    )
+  );
+  @include meta.load-css(
+    '../components/Input.scss',
+    $with: ('border-color': #87ce87)
+  );
+  @include meta.load-css(
+    '../components/NoticeBox.scss',
+    $with: ('background-color': #013b01)
+  );
+  @include meta.load-css(
+    '../components/NumberInput.scss',
+    $with: ('border-color': #87ce87)
+  );
+  @include meta.load-css(
+    '../components/ProgressBar.scss',
+    $with: ('background-color': rgba(0, 0, 0, 0.5))
+  );
+  @include meta.load-css('../components/Section.scss');
+  @include meta.load-css(
+    '../components/Tooltip.scss',
+    $with: ('background-color': #0a2a0a)
+  );
+
+  // Layouts
+  @include meta.load-css('../layouts/Layout.scss');
+  @include meta.load-css('../layouts/Window.scss');
+  @include meta.load-css(
+    '../layouts/TitleBar.scss',
+    $with: ('background-color': #013b01)
+  );
+
+  .Layout__content {
+    background-image: url('../../assets/bg-separatist.svg');
+  }
+}
