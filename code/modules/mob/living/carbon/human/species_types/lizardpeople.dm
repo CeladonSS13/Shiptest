@@ -112,17 +112,27 @@
 
 	if(current_health < max_health)
 		var/nutrition_level = H.nutrition
-		var/regen_rate
+		var/regen_rate = 0
+		var/nutrition_cost = 0
 
-		if(nutrition_level >= 200) // Вот тут можно поменять порог срабатывания. Я хз сколько нутриментов обычно бывает нормой
-			regen_rate = 2
-			H.adjust_nutrition(-100)
+		if(nutrition_level >= 550 && nutrition_level <= 600) // Секретный специальный реген
+			regen_rate = 0.1
+			nutrition_cost = 0
+		elseif(nutrition_level >= NUTRITION_LEVEL_WELL_FED) // Сытый
+			regen_rate = 1.5
+			nutrition_cost = 15
+		elseif(nutrition_level >= NUTRITION_LEVEL_FED) // Хорошо накормлен
+			regen_rate = 1
+			nutrition_cost = 10
+		elseif(nutrition_level >= NUTRITION_LEVEL_HUNGRY) // Накормлен
+			regen_rate = 0.5
+			nutrition_cost = 5
 		else
-			regen_rate = 0.8
-			H.adjust_nutrition(-20)
+			return // Нет регенерации если слишком голоден
 
-		H.adjustBruteLoss(-regen_rate/2)
-		H.adjustFireLoss(-regen_rate/2)
+		H.adjust_nutrition(-nutrition_cost)
+		H.adjustBruteLoss(-regen_rate)
+		H.adjustFireLoss(-regen_rate)
 
 /datum/species/lizard/random_name(gender,unique,lastname)
 	if(unique)
