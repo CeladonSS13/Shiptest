@@ -10,9 +10,11 @@
 -->
 
 <!-- Название мода. Не важно на русском или на английском. -->
-## IPC shassis - ИПС шасси
-
-ID мода: CELADON_IPC_CHASSIS
+## IPC - ИПС шасси и не только
+ID модов: 
+CELADON_IPC_CHASSIS
+CELADON_IPC_HAIR
+CELADON_IPC_SURGERY
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -20,7 +22,7 @@ ID мода: CELADON_IPC_CHASSIS
 
 ### Описание мода
 
-Этот мод добавляет новые шасси ИПС.
+CELADON_IPC_CHASSIS - Этот мод добавляет новые шасси ИПС.
 В состав `ipc.dm` входит:
 - `none`
 - `android`
@@ -51,6 +53,17 @@ ID мода: CELADON_IPC_CHASSIS
 - `xion_economy`
 - `zion_main`
 - `zion_spirit`
+
+CELADON_IPC_SURGERY
+Этот мод чинит и вносит изменения в хирургию для ИПС.
+`ipc_surgery.dm` -> `/datum/surgery/robo_brain_surgery`
+`ipc_surgery.dm` -> `/datum/surgery/robo_brain_surgery/can_start`
+`ipc_surgery.dm` -> `/datum/surgery_step/fix_robo_brain`
+`ipc_surgery.dm` -> `/datum/surgery_step/fix_robo_brain/preop`
+`ipc_surgery.dm` -> `/datum/surgery_step/fix_robo_brain/success`
+`ipc_surgery.dm` -> `/datum/surgery_step/fix_robo_brain/failure`
+Дополняет кор код
+`ipc_surgery.dm` -> `/datum/surgery/brain_surgery/can_start`
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
   А также любая полезная информация.
@@ -101,7 +114,7 @@ ID мода: CELADON_IPC_CHASSIS
 
 ### Авторы:
 
-SnrBydlo
+SnrBydlo, Feenie
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.
