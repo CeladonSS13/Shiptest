@@ -1,9 +1,9 @@
 /obj/item/bong
 	name = "bong"
 	desc = "Technically known as a water pipe."
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/bong.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/bong_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/bong_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/bong.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/bong_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/bong_righthand.dmi'
 	icon_state = "bongoff"
 
 	///The icon state when the bong is lit
@@ -86,7 +86,7 @@
 	if(!packed_item || !lit)
 		return
 	hit_mob.visible_message(span_notice("[user] starts [hit_mob == user ? "taking a hit from [src]." : "forcing [hit_mob] to take a hit from [src]!"]"), hit_mob == user ? span_notice("You start taking a hit from [src].") : span_userdanger("[user] starts forcing you to take a hit from [src]!"))
-	playsound(src, 'mod_celadon/_storge_sounds/sound/heatdam.ogg', 50, TRUE)
+	playsound(src, 'mod_celadon/_storage_sounds/sound/heatdam.ogg', 50, TRUE)
 	if(!do_after(user, 40))
 		return
 	to_chat(hit_mob, span_notice("You finish taking a hit from the [src]."))
@@ -99,10 +99,10 @@
 			spawn_cloud(pos, smoke_range)
 	if(moan_chance > 0)
 		if(prob(moan_chance))
-			playsound(hit_mob, pick('mod_celadon/_storge_sounds/sound/lungbust_moan1.ogg','mod_celadon/_storge_sounds/sound/lungbust_moan2.ogg', 'mod_celadon/_storge_sounds/sound/lungbust_moan3.ogg'), 50, TRUE)
+			playsound(hit_mob, pick('mod_celadon/_storage_sounds/sound/lungbust_moan1.ogg','mod_celadon/_storage_sounds/sound/lungbust_moan2.ogg', 'mod_celadon/_storage_sounds/sound/lungbust_moan3.ogg'), 50, TRUE)
 			hit_mob.emote("moan")
 		else
-			playsound(hit_mob, pick('mod_celadon/_storge_sounds/sound/lungbust_cough1.ogg','mod_celadon/_storge_sounds/sound/lungbust_cough2.ogg'), 50, TRUE)
+			playsound(hit_mob, pick('mod_celadon/_storage_sounds/sound/lungbust_cough1.ogg','mod_celadon/_storage_sounds/sound/lungbust_cough2.ogg'), 50, TRUE)
 			hit_mob.emote("cough")
 	if(bong_hits <= 0)
 		balloon_alert(hit_mob, "out of uses!")

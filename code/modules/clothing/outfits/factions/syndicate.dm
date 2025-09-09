@@ -472,7 +472,7 @@
 	head = /obj/item/clothing/head/beret/cmo/cybersun
 	suit = /obj/item/clothing/suit/toggle/labcoat/raincoat
 	l_hand = /obj/item/storage/firstaid/medical
-	suit_store = /obj/item/flashlight/pen
+	suit_store = /obj/item/flashlight/pen/paramedic
 	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
 	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 	// [/CELADON-REMOVE]
@@ -490,7 +490,7 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat/suns/cmo
 	l_hand = /obj/item/storage/firstaid/medical
 	r_hand = /obj/item/storage/belt/sabre/suns/cmo
-	suit_store = /obj/item/flashlight/pen
+	suit_store = /obj/item/flashlight/pen/paramedic
 	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
 	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 	// [/CELADON-REMOVE]
@@ -761,7 +761,7 @@
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile/evil
 	belt = /obj/item/storage/belt/medical/paramedic
 	id = /obj/item/card/id
-	suit_store = /obj/item/flashlight/pen
+	suit_store = /obj/item/flashlight/pen/paramedic
 	backpack_contents = list(/obj/item/roller=1)
 	pda_slot = ITEM_SLOT_LPOCKET
 	box = /obj/item/storage/box/survival/medical

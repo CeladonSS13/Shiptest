@@ -41,6 +41,8 @@
 	strip_delay = EQUIP_DELAY_BACK * 1.5
 	equip_self_flags = EQUIP_ALLOW_MOVEMENT | EQUIP_SLOWDOWN
 
+	custom_price = 50
+
 /obj/item/storage/backpack/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
@@ -104,9 +106,9 @@
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/storage/backpack/mime
 	name = "Parcel Parceaux"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpacks.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpack_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpack_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/backpacks.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/backpack_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/backpack_righthand.dmi'
 	desc = "A silent backpack made for those silent workers. Silence Co."
 	icon_state = "mimepack"
 	item_state = "mimepack"
@@ -197,9 +199,9 @@
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/storage/backpack/ert/clown
 	name = "emergency response team clown backpack"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpacks.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpack_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/backpack_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/backpacks.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/backpack_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/backpack_righthand.dmi'
 	desc = "A spacious backpack with lots of pockets, worn by Clowns of an Emergency Response Team."
 	icon_state = "ert_clown"
 // [/CELADON-ADD]
@@ -478,7 +480,8 @@
 	new /obj/item/surgicaldrill(src)
 	new /obj/item/cautery(src)
 	new /obj/item/clothing/mask/surgical(src)
-	new /obj/item/razor(src)
+	new /obj/item/bonesetter(src)
+	new /obj/item/stack/sticky_tape/surgical(src)
 
 /obj/item/storage/backpack/duffelbag/sec
 	name = "security duffel bag"

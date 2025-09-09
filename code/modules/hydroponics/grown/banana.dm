@@ -54,7 +54,7 @@
 	name = "pack of mimana seeds"
 	desc = "They're seeds that grow into mimana trees. When grown, keep away from mime."
 	icon = 'icons/obj/hydroponics/seeds.dmi'
-	growing_icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/growing_fruits.dmi'
+	growing_icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/growing_fruits.dmi'
 	icon_state = "seed-mimana"
 	species = "mimana"
 	plantname = "Mimana Tree"
@@ -69,9 +69,9 @@
 	seed = /obj/item/seeds/banana/mime
 	name = "mimana"
 	desc = "It's an excellent prop for a mime."
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/harvest.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/food_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/food_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/harvest.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/food_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/food_righthand.dmi'
 	icon_state = "mimana"
 	trash_type = /obj/item/grown/bananapeel/mimanapeel
 	filling_color = "#FFFFEE"
@@ -81,9 +81,9 @@
 	seed = /obj/item/seeds/banana/mime
 	name = "mimana peel"
 	desc = "A mimana peel."
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/harvest.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/food_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/food_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/harvest.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/food_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/food_righthand.dmi'
 	icon_state = "mimana_peel"
 	item_state = "mimana_peel"
 // [/CELADON-ADD]

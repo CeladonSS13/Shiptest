@@ -151,6 +151,27 @@
 		special(M, name)
 		MM.name = M.real_name
 		special_post_appearance(M, name)
+	// [CELADON-ADD] - CELADON_GHOST_ROLES
+		// Issue player loadout for ghost role when they chose to load character slot
+		if(ishuman(M) && load_character && M.client && M.client.prefs?.equipped_gear && length(M.client.prefs.equipped_gear))
+			var/mob/living/carbon/human/H = M
+			var/obj/item/storage/box/loadout_dumper = new()
+
+			for(var/gear_id in M.client.prefs.equipped_gear)
+				var/datum/gear/new_gear = GLOB.gear_datums[gear_id]
+				if(new_gear)
+					// spawn item into the box; spawn_item handles role replacements via job/assigned_role
+					new_gear.spawn_item(loadout_dumper, H)
+
+			// try to place box into back storage, else into hands, else drop on turf
+			var/datum/component/storage/back_storage = H.back?.GetComponent(/datum/component/storage)
+			if(back_storage)
+				back_storage.handle_item_insertion(loadout_dumper, TRUE)
+			else if(!H.put_in_hands(loadout_dumper, TRUE))
+				loadout_dumper.forceMove(get_turf(H))
+				to_chat(H, span_warning("Unable to place your loadout box into hands, dropped at your feet."))
+	spawned_mob_ref = WEAKREF(M)
+	// [/CELADON-ADD]
 	if(uses > 0)
 		uses--
 	if(!permanent && !uses)
@@ -326,12 +347,28 @@
 
 /obj/effect/mob_spawn/cow
 	name = "sleeper"
-	mob_type = 	/mob/living/simple_animal/cow
+	mob_type = 	/mob/living/basic/cow
 	death = FALSE
 	roundstart = FALSE
 	mob_gender = FEMALE
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper"
+
+/obj/effect/mob_spawn/animal_corpse
+	name = "animal corpse spawner"
+	mob_type = /mob/living/basic/mouse
+	death = TRUE
+	icon = 'icons/mob/lavaland/lavaland_monsters_wide.dmi'
+	icon_state = "goliath_dead_helper"
+
+/obj/effect/mob_spawn/animal_corpse/goliath
+	name = "dead goliath"
+	mob_type = /mob/living/simple_animal/hostile/asteroid/goliath/beast
+
+/obj/effect/mob_spawn/animal_corpse/wolf
+	name = "dead wolf"
+	mob_type = /mob/living/simple_animal/hostile/asteroid/wolf
+
 
 // I'll work on making a list of corpses people request for maps, or that I think will be commonly used. Syndicate operatives for example.
 

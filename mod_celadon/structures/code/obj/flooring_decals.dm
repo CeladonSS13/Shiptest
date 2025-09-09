@@ -1,6 +1,6 @@
 /obj/effect/turf_decal/zaklepki
 	name = "zaklepki"
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/decales/zaklepki.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/decales/zaklepki.dmi'
 	icon_state = "zak_1"
 	// color = COLOR_TILE_GRAY
 

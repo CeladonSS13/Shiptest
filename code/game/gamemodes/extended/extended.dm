@@ -30,7 +30,7 @@
 /datum/game_mode/extended/announced/send_intercept(report = 0)
 	// [CELADON-EDIT] - CELADON_QOL
 	// priority_announce("Thanks to the tireless efforts of our security and intelligence divisions, there are currently no credible threats to [station_name()]. All station construction projects have been authorized. Have a secure shift!", "Security Report", 'sound/ai/commandreport.ogg')		// CELADON-EDIT - ORIGINAL
-	priority_announce("Инициализация системы Griffon завершена. Все последние данные успешно задокументированы. Данные последних секторных карт были загружены в общую сеть. Спасибо за посещение [station_name()]. Желаем вам успешных приключений.", "Колониальная сеть объявлений", 'mod_celadon/_storge_sounds/sound/ai/commandreport.ogg')
+	priority_announce("Инициализация системы Griffon завершена. Все последние данные успешно задокументированы. Данные последних секторных карт были загружены в общую сеть. Спасибо за посещение [station_name()]. Желаем вам успешных приключений.", "Колониальная сеть объявлений", 'mod_celadon/_storage_sounds/sound/ai/commandreport.ogg')
 	// [/CELADON-EDIT]
 
 

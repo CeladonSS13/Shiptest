@@ -20,7 +20,7 @@
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/cartridge/virus/clown
 	name = "\improper Honkworks 5.0 cartridge"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/pda.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/pda.dmi'
 	icon_state = "cart-clown"
 	desc = "A data cartridge for portable microcomputers. It smells vaguely of bananas."
 	access = CART_CLOWN
@@ -38,7 +38,7 @@
 
 /obj/item/cartridge/virus/mime
 	name = "\improper Gestur-O 1000 cartridge"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/pda.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/pda.dmi'
 	icon_state = "cart-mi"
 	access = CART_MIME
 

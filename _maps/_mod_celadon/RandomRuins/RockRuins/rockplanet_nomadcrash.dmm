@@ -16,10 +16,6 @@
 	},
 /turf/open/floor/plasteel/rockvault,
 /area/ruin/rockplanet/nomad)
-"aX" = (
-/obj/effect/turf_decal/weather/dirt,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "ba" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -38,7 +34,7 @@
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "bS" = (
 /mob/living/simple_animal/hostile/asteroid/elite/broodmother_child/rockplanet,
-/turf/open/floor/plating/dirt/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "cd" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -58,34 +54,11 @@
 	},
 /turf/open/floor/engine/hull/interior,
 /area/ruin/rockplanet/nomad)
-"cr" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 9
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 5
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "cO" = (
 /obj/structure/chair/plastic{
 	dir = 4
 	},
 /turf/open/floor/engine/hull/rockplanet,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"cP" = (
-/obj/effect/turf_decal/weather/dirt,
-/obj/structure/flora/rock{
-	icon_state = "redrocks2"
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"cU" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 8
-	},
-/obj/structure/barricade/sandbags,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "df" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible/layer2{
@@ -103,15 +76,7 @@
 /turf/open/floor/plating/asteroid/rockplanet/lit,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "dM" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
 /obj/structure/railing,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"ef" = (
-/obj/effect/turf_decal/weather/dirt,
-/mob/living/simple_animal/hostile/netherworld,
 /turf/open/floor/plating/asteroid/rockplanet/lit,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "ei" = (
@@ -127,24 +92,11 @@
 /turf/open/floor/plating/rockplanet,
 /area/ruin/rockplanet/nomad)
 "fc" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 10
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
 /obj/structure/frame/machine,
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
 /area/ruin/rockplanet/nomad)
-"fd" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/obj/structure/barricade/sandbags,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "fe" = (
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -167,12 +119,6 @@
 	name = "Helm"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/rockplanet/nomad)
-"fK" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 1
-	},
-/turf/open/floor/plating,
 /area/ruin/rockplanet/nomad)
 "fM" = (
 /obj/machinery/door/airlock/external{
@@ -213,7 +159,7 @@
 /turf/open/floor/plating,
 /area/ruin/rockplanet/nomad)
 "gY" = (
-/turf/open/floor/plating/dirt/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/ruin/rockplanet/nomad)
 "ha" = (
 /obj/structure/cable{
@@ -246,7 +192,7 @@
 /obj/structure/flora/rock{
 	icon_state = "basalt"
 	},
-/turf/open/floor/plating/dirt/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/ruin/rockplanet/nomad)
 "il" = (
 /obj/effect/turf_decal/spline/fancy/opaque/yellow{
@@ -297,22 +243,8 @@
 "jm" = (
 /turf/closed/mineral/random/rockplanet,
 /area/ruin/rockplanet/nomad)
-"jw" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 10
-	},
-/obj/structure/barricade/sandbags,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "jC" = (
 /mob/living/simple_animal/hostile/asteroid/elite/broodmother_child/rockplanet,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"jD" = (
-/obj/effect/turf_decal/weather/dirt/corner,
-/obj/structure/flora/rock{
-	icon_state = "redrock2"
-	},
 /turf/open/floor/plating/asteroid/rockplanet/lit,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "jI" = (
@@ -349,28 +281,10 @@
 "lg" = (
 /turf/closed/wall,
 /area/ruin/rockplanet/nomad)
-"lw" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "lz" = (
 /obj/machinery/power/smes/shuttle/precharged,
 /turf/open/floor/plating/rockplanet,
 /area/ruin/rockplanet/nomad)
-"mu" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 10
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "mz" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -383,20 +297,11 @@
 /area/ruin/rockplanet/nomad)
 "mW" = (
 /obj/structure/barricade/sandbags,
-/turf/open/floor/plating/dirt/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "nf" = (
 /turf/open/floor/plasteel/rockplanet,
 /area/ruin/rockplanet/nomad)
-"nB" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
-	},
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 8
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "oq" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -438,13 +343,6 @@
 	},
 /turf/open/floor/plasteel/rockvault,
 /area/ruin/rockplanet/nomad)
-"oZ" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/obj/effect/turf_decal/weather/dirt,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "pb" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -454,27 +352,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/rockplanet/nomad)
-"po" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 9
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"pH" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 9
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"pJ" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "pV" = (
 /obj/machinery/atmospherics/components/binary/pump/on/layer2{
 	dir = 8;
@@ -504,15 +381,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/rockplanet/nomad)
-"qM" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "qU" = (
 /obj/structure/closet/crate,
 /obj/item/stack/sheet/metal/ten,
@@ -523,35 +391,10 @@
 	},
 /turf/open/floor/plasteel/rockvault,
 /area/ruin/rockplanet/nomad)
-"rc" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 4
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "rD" = (
 /obj/structure/frame/machine,
-/turf/open/floor/plating/dirt/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/jungle,
 /area/ruin/rockplanet/nomad)
-"rH" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 8
-	},
-/obj/structure/flora/driftlog,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"rW" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 4
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "rY" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -566,32 +409,6 @@
 /obj/item/stock_parts/manipulator/femto,
 /turf/open/floor/plasteel/rockplanet,
 /area/ruin/rockplanet/nomad)
-"sy" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 1
-	},
-/obj/structure/railing,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"sK" = (
-/obj/effect/turf_decal/weather/dirt/corner,
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 8
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"sR" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/turf/closed/wall/mineral/sandstone,
-/area/ruin/rockplanet/nomad)
 "sX" = (
 /obj/structure/cable/yellow{
 	icon_state = "5-8"
@@ -600,15 +417,6 @@
 /area/ruin/rockplanet/nomad)
 "tA" = (
 /obj/structure/flora/tree/dead/tall/grey,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"tI" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
-	},
-/obj/structure/flora/rock{
-	icon_state = "redrocks1"
-	},
 /turf/open/floor/plating/asteroid/rockplanet/lit,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "tX" = (
@@ -620,9 +428,6 @@
 /turf/open/floor/plating,
 /area/ruin/rockplanet/nomad)
 "uo" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 9
-	},
 /obj/item/stack/cable_coil/random/five,
 /obj/item/wirecutters,
 /turf/open/floor/plating,
@@ -631,26 +436,12 @@
 /obj/effect/decal/cleanable/blood/gibs/up,
 /turf/open/floor/plasteel/tech,
 /area/ruin/rockplanet/nomad)
-"uD" = (
-/obj/effect/turf_decal/weather/dirt,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "uK" = (
 /obj/effect/turf_decal/corner_techfloor_grid{
 	dir = 6
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ruin/rockplanet/nomad)
-"uL" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 1
-	},
-/obj/structure/barricade/sandbags,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "uN" = (
 /obj/structure/table,
 /obj/item/crowbar/large,
@@ -708,13 +499,7 @@
 /turf/open/floor/plating/asteroid/rockplanet/wet,
 /area/ruin/rockplanet/nomad)
 "vM" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 10
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
-	},
-/turf/open/floor/plating/grass/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/grass/rockplanet,
 /area/ruin/rockplanet/nomad)
 "vN" = (
 /obj/effect/turf_decal/spline/fancy/opaque/yellow{
@@ -732,32 +517,9 @@
 "vS" = (
 /turf/open/floor/engine/hull/rockplanet,
 /area/ruin/rockplanet/nomad)
-"vW" = (
-/obj/effect/turf_decal/weather/dirt/corner,
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 1
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "wf" = (
 /turf/open/floor/plasteel/rockvault,
 /area/ruin/rockplanet/nomad)
-"wq" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 8
-	},
-/obj/structure/railing,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"wW" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "xk" = (
 /obj/effect/turf_decal/techfloor,
 /obj/structure/cable{
@@ -778,21 +540,6 @@
 /obj/structure/rack,
 /turf/open/floor/plasteel/rockvault,
 /area/ruin/rockplanet/nomad)
-"yb" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 1
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"yn" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 10
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/turf/open/floor/plating/grass/rockplanet,
-/area/ruin/rockplanet/nomad)
 "yw" = (
 /obj/structure/flora/rock/asteroid{
 	icon_state = "asteroid2"
@@ -811,15 +558,9 @@
 	icon_state = "4-8"
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/bottlegreen,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
-	},
 /turf/open/floor/plating/rockplanet,
 /area/ruin/rockplanet/nomad)
 "zp" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
-	},
 /obj/machinery/telecomms/receiver,
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
@@ -871,15 +612,6 @@
 	},
 /turf/open/floor/plating/asteroid/rockplanet/wet,
 /area/ruin/rockplanet/nomad)
-"AS" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 8
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "AX" = (
 /obj/effect/turf_decal/spline/fancy/opaque/yellow{
 	dir = 4
@@ -890,13 +622,6 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ruin/rockplanet/nomad)
-"Ba" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 1
-	},
-/mob/living/simple_animal/hostile/asteroid/elite/broodmother_child/rockplanet,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "Bc" = (
 /obj/machinery/power/smes/shuttle/precharged{
 	dir = 4
@@ -909,73 +634,23 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/rockplanet/nomad)
-"Bi" = (
-/obj/effect/turf_decal/weather/dirt,
-/mob/living/simple_animal/hostile/asteroid/elite/broodmother_child/rockplanet,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "Bs" = (
 /turf/open/floor/engine/hull/rockplanet,
 /area/overmap_encounter/planetoid/rockplanet/explored)
-"Bt" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 9
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"BA" = (
-/obj/effect/turf_decal/weather/dirt,
-/obj/structure/barricade/sandbags,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"BX" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 4
-	},
-/obj/structure/barricade/sandbags,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"Cm" = (
-/obj/effect/turf_decal/weather/dirt,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/turf/closed/wall/mineral/sandstone,
-/area/ruin/rockplanet/nomad)
 "CC" = (
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/turf/open/floor/plating/dirt/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/jungle,
 /area/ruin/rockplanet/nomad)
 "CN" = (
 /turf/open/floor/plasteel/stairs/rockplanet,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"CT" = (
-/obj/effect/turf_decal/weather/dirt/corner,
-/obj/structure/railing{
-	dir = 8
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "DJ" = (
 /obj/structure/flora/rock/asteroid{
 	icon_state = "asteroid2"
 	},
 /obj/structure/flora/driftlog,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"DP" = (
-/obj/effect/turf_decal/weather/dirt/corner,
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 4
-	},
 /turf/open/floor/plating/asteroid/rockplanet/lit,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "DR" = (
@@ -988,7 +663,7 @@
 /turf/open/floor/plating,
 /area/ruin/rockplanet/nomad)
 "Ec" = (
-/turf/open/floor/plating/dirt/jungle/lit,
+/turf/open/floor/plating/asteroid/dirt/jungle,
 /area/ruin/rockplanet/nomad)
 "Em" = (
 /obj/structure/rack,
@@ -1040,11 +715,6 @@
 /obj/effect/decal/cleanable/blood/gibs/body,
 /turf/open/floor/plasteel/tech,
 /area/ruin/rockplanet/nomad)
-"EK" = (
-/obj/effect/turf_decal/weather/dirt/corner,
-/obj/structure/barricade/sandbags,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "EL" = (
 /obj/structure/table_frame,
 /turf/open/floor/plasteel/rockvault,
@@ -1088,9 +758,6 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 5
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plating,
 /area/ruin/rockplanet/nomad)
@@ -1101,18 +768,6 @@
 /obj/item/chair/stool/bar,
 /turf/open/floor/plating/rockplanet,
 /area/ruin/rockplanet/nomad)
-"He" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 4
-	},
-/turf/open/water/rockplanet,
-/area/ruin/rockplanet/nomad)
-"Hi" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 8
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "Hr" = (
 /obj/structure/rack,
 /obj/item/ammo_box/magazine/m45,
@@ -1152,33 +807,12 @@
 /obj/item/stock_parts/cell/high,
 /turf/open/floor/engine/hull/rockplanet,
 /area/overmap_encounter/planetoid/rockplanet/explored)
-"Iw" = (
-/obj/effect/turf_decal/weather/dirt,
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 8
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "IG" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/visible{
 	dir = 4
 	},
 /turf/open/floor/plasteel/rockvault,
 /area/ruin/rockplanet/nomad)
-"IH" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 9
-	},
-/obj/effect/turf_decal/weather/dirt,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"IX" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/obj/effect/turf_decal/weather/dirt/corner,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "IY" = (
 /obj/effect/decal/cleanable/glass/plasma,
 /turf/open/floor/plating,
@@ -1195,23 +829,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/rockplanet/nomad)
-"JA" = (
-/obj/effect/turf_decal/weather/dirt/corner,
-/obj/structure/flora/rock{
-	icon_state = "redrocks3"
-	},
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 8
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"JL" = (
-/obj/effect/turf_decal/weather/dirt,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/turf/open/floor/plating/grass/rockplanet,
-/area/ruin/rockplanet/nomad)
 "JN" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1222,10 +839,6 @@
 /obj/effect/decal/cleanable/blood/gibs/down,
 /turf/open/floor/plating,
 /area/ruin/rockplanet/nomad)
-"Kl" = (
-/obj/effect/turf_decal/weather/dirt/corner,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "Kn" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
 /turf/open/floor/plating,
@@ -1245,15 +858,6 @@
 	},
 /turf/open/floor/plasteel/rockvault,
 /area/ruin/rockplanet/nomad)
-"KN" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "KW" = (
 /obj/effect/decal/cleanable/robot_debris/gib,
 /obj/item/stack/sheet/metal/five{
@@ -1278,12 +882,6 @@
 "Lk" = (
 /turf/open/floor/plasteel/grimy,
 /area/ruin/rockplanet/nomad)
-"Ly" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 5
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "LA" = (
 /obj/structure/cable{
 	icon_state = "4-10"
@@ -1322,12 +920,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/rockplanet/nomad)
-"Md" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "Me" = (
 /obj/structure/table,
 /obj/item/tank/internals/emergency_oxygen{
@@ -1348,12 +940,6 @@
 	},
 /turf/open/floor/plasteel/rockvault,
 /area/ruin/rockplanet/nomad)
-"Mi" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
-	},
-/turf/open/water/rockplanet,
-/area/ruin/rockplanet/nomad)
 "Ms" = (
 /obj/structure/flora/rock{
 	icon_state = "basalt"
@@ -1372,9 +958,6 @@
 /turf/open/floor/plasteel/rockvault,
 /area/ruin/rockplanet/nomad)
 "NV" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
 /obj/structure/railing/corner{
 	dir = 8
 	},
@@ -1386,13 +969,6 @@
 	},
 /turf/open/floor/plasteel/rockvault,
 /area/ruin/rockplanet/nomad)
-"Or" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
-	},
-/mob/living/simple_animal/hostile/asteroid/goliath/beast/rockplanet,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "Ot" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -1419,12 +995,6 @@
 /obj/effect/turf_decal/techfloor/hole,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ruin/rockplanet/nomad)
-"OM" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 10
-	},
-/turf/open/water/rockplanet,
-/area/ruin/rockplanet/nomad)
 "OP" = (
 /obj/structure/rack,
 /obj/item/storage/fancy/cigarettes/cigars,
@@ -1432,7 +1002,7 @@
 /turf/open/floor/plasteel/rockplanet,
 /area/ruin/rockplanet/nomad)
 "OR" = (
-/turf/open/floor/plating/dirt/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "OS" = (
 /obj/structure/rack,
@@ -1454,17 +1024,8 @@
 	pixel_x = -15;
 	pixel_y = 8
 	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 5
-	},
-/turf/open/floor/plating/grass/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/grass/rockplanet,
 /area/ruin/rockplanet/nomad)
-"OZ" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "Pn" = (
 /obj/machinery/power/smes/engineering{
 	charge = 1000
@@ -1485,10 +1046,6 @@
 "PH" = (
 /obj/structure/frame/machine,
 /turf/open/floor/engine/hull/rockplanet,
-/area/ruin/rockplanet/nomad)
-"PI" = (
-/obj/effect/turf_decal/weather/dirt,
-/turf/open/water/rockplanet,
 /area/ruin/rockplanet/nomad)
 "PX" = (
 /obj/structure/railing{
@@ -1547,21 +1104,6 @@
 /obj/machinery/power/shuttle/engine/electric,
 /turf/open/floor/engine/hull/rockplanet,
 /area/ruin/rockplanet/nomad)
-"RB" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 10
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"RM" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 1
-	},
-/obj/structure/flora/rock{
-	icon_state = "redrocks3"
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "RN" = (
 /obj/structure/fence/door{
 	dir = 4
@@ -1569,15 +1111,6 @@
 /obj/structure/curtain/cloth/grey,
 /turf/open/floor/plating/asteroid/rockplanet/wet,
 /area/ruin/rockplanet/nomad)
-"Sh" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 5
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "Si" = (
 /obj/machinery/power/shieldwallgen/atmos{
 	dir = 1
@@ -1585,30 +1118,9 @@
 /turf/open/floor/engine/hull/rockplanet,
 /area/ruin/rockplanet/nomad)
 "So" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 9
-	},
 /obj/item/stack/sheet/metal/five,
 /turf/open/floor/plating,
 /area/ruin/rockplanet/nomad)
-"SH" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 8
-	},
-/obj/structure/railing{
-	dir = 8
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"SN" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "Tb" = (
 /obj/structure/mecha_wreckage/ripley/firefighter,
 /turf/open/floor/plasteel/rockplanet,
@@ -1638,17 +1150,8 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
 /turf/open/floor/plating,
 /area/ruin/rockplanet/nomad)
-"TT" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "Ui" = (
 /obj/machinery/light/directional/south,
 /obj/effect/turf_decal/techfloor,
@@ -1668,33 +1171,12 @@
 /area/ruin/rockplanet/nomad)
 "UY" = (
 /mob/living/simple_animal/hostile/asteroid/goliath/beast/rockplanet,
-/turf/open/floor/plating/dirt/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "Vy" = (
 /obj/effect/decal/cleanable/xenoblood/xgibs,
 /turf/open/floor/plating/asteroid/rockplanet/wet,
 /area/ruin/rockplanet/nomad)
-"Wl" = (
-/obj/structure/barricade/sandbags,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"Wm" = (
-/obj/effect/turf_decal/weather/dirt,
-/obj/structure/flora/driftlog,
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
-"Xb" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 9
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "Xj" = (
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -1728,7 +1210,7 @@
 /area/ruin/rockplanet/nomad)
 "XX" = (
 /obj/structure/mineral_door/sandstone,
-/turf/open/floor/plating/dirt/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/ruin/rockplanet/nomad)
 "Yl" = (
 /obj/structure/table,
@@ -1800,9 +1282,6 @@
 /turf/open/floor/plasteel/rockplanet,
 /area/ruin/rockplanet/nomad)
 "Zf" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
-	},
 /obj/machinery/light/small/broken/directional/south,
 /obj/structure/rack,
 /obj/item/stock_parts/subspace/crystal{
@@ -1818,26 +1297,10 @@
 "Zy" = (
 /turf/closed/wall/mineral/iron,
 /area/ruin/rockplanet/nomad)
-"ZE" = (
-/obj/effect/turf_decal/weather/dirt,
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 1
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "ZO" = (
 /obj/structure/rack,
 /turf/open/floor/plasteel/rockvault,
 /area/ruin/rockplanet/nomad)
-"ZS" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
-	},
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 1
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
-/area/overmap_encounter/planetoid/rockplanet/explored)
 "ZZ" = (
 /obj/effect/turf_decal/spline/fancy/opaque/bottlegreen{
 	dir = 1
@@ -1924,16 +1387,16 @@ Qv
 Yy
 Yy
 Yy
-Kl
-Hi
+Yy
+Yy
 Yy
 vi
 Yy
 Yy
 Yy
 Yy
-Kl
-Hi
+Yy
+Yy
 Yy
 Qv
 Qv
@@ -1972,19 +1435,19 @@ Yy
 Yy
 Yy
 Yy
-Kl
-pJ
-Md
-TT
 Yy
 Yy
 Yy
 Yy
 Yy
 Yy
-aX
-Ly
-Hi
+Yy
+Yy
+Yy
+Yy
+Yy
+Yy
+Yy
 Yy
 Yy
 Qv
@@ -2022,20 +1485,20 @@ kV
 Yy
 vi
 Yy
-ef
+iN
 OR
 OR
-TT
 Yy
 Yy
 Yy
 Yy
 Yy
 Yy
-aX
+Yy
+Yy
 OR
-Ly
-Hi
+Yy
+Yy
 Yy
 Yy
 Qv
@@ -2072,20 +1535,20 @@ Yy
 Yy
 Yy
 Yy
-aX
+Yy
 OR
 OR
-TT
+Yy
 Yy
 HG
 Yy
 Yy
 Yy
 Yy
-rc
-RB
+Yy
+Yy
 OR
-TT
+Yy
 Yy
 Yy
 Yy
@@ -2122,20 +1585,20 @@ Yy
 uT
 Yy
 Er
-aX
+Yy
 OR
-pH
-yb
 Yy
 Yy
 Yy
-Kl
-Hi
 Yy
 Yy
-aX
+Yy
+Yy
+Yy
+Yy
+Yy
 OR
-TT
+Yy
 Yy
 Yy
 Yy
@@ -2172,20 +1635,20 @@ Yy
 Yy
 Yy
 Yy
-aX
+Yy
 OR
-TT
 Yy
 Yy
 Yy
 Yy
-rc
-yb
 Yy
 Yy
-aX
+Yy
+Yy
+Yy
+Yy
 OR
-TT
+Yy
 Yy
 Yy
 Yy
@@ -2222,20 +1685,20 @@ tA
 dJ
 Yy
 Yy
-DP
-KN
-sK
-Hi
+Yy
+Yy
+Yy
+Yy
 Yy
 Yy
 Yy
 Yy
 Yy
 vl
-Kl
-Md
+Yy
+Yy
 OR
-TT
+Yy
 Yy
 Yy
 kV
@@ -2272,20 +1735,20 @@ Yy
 Yy
 Yy
 Yy
-aX
+Yy
 OR
-wW
-TT
 Yy
 Yy
 Yy
 Yy
 Yy
 Yy
-aX
+Yy
+Yy
+Yy
 OR
 OR
-TT
+Yy
 Yy
 Yy
 Yy
@@ -2322,20 +1785,20 @@ Yy
 Yy
 Yy
 Yy
-aX
+Yy
 OR
 OR
-TT
+Yy
 Yy
 Yy
 Yy
 Yy
 Yy
 vi
-DP
-SN
+Yy
+Yy
 OR
-TT
+Yy
 vi
 Yy
 Yy
@@ -2371,21 +1834,21 @@ Ms
 Yy
 Yy
 Yy
-Kl
-Md
+Yy
+Yy
 OR
 OR
-TT
 Yy
 Yy
 Yy
 Yy
 Yy
 Yy
-aX
+Yy
+Yy
 OR
 OR
-TT
+Yy
 Yy
 Yy
 Yy
@@ -2421,21 +1884,21 @@ Yy
 Yy
 Yy
 kV
-aX
+Yy
 OR
 OR
 OR
-TT
+Yy
 Yy
 KX
 KX
 KX
 KX
 Yy
-aX
+Yy
 OR
 OR
-TT
+Yy
 Yy
 Yy
 Ms
@@ -2471,21 +1934,21 @@ Yy
 Yy
 Yy
 Yy
-aX
+Yy
 OR
 OR
 OR
-TT
+Yy
 KX
 Yy
 Yy
 Yy
 Yy
-EK
-Md
+KX
+Yy
 OR
-pH
-yb
+Yy
+Yy
 Yy
 Yy
 iN
@@ -2521,20 +1984,20 @@ Yy
 KX
 KX
 KX
-BA
+KX
 OR
 OR
-pH
-yb
+Yy
+Yy
 Yy
 Yy
 Yy
 gn
 DJ
-aX
+Yy
 OR
 OR
-TT
+Yy
 Yy
 Yy
 Yy
@@ -2571,20 +2034,20 @@ KX
 Yy
 Yy
 Yy
-rc
-RB
+Yy
+Yy
 OR
-TT
+Yy
 iN
 Yy
 Yy
 yw
 aw
 Yy
-aX
+Yy
 OR
 mW
-fd
+KX
 Yy
 Yy
 Yy
@@ -2622,19 +2085,19 @@ Yy
 Yy
 Yy
 Yy
-aX
+Yy
 OR
-TT
+Yy
 Yy
 Yy
 Yy
 HG
 yw
 vi
-DP
-qM
-nB
-uL
+Yy
+Yy
+Yy
+KX
 Yy
 Xq
 Yy
@@ -2672,19 +2135,19 @@ Yy
 Yy
 Yy
 vi
-aX
+Yy
 OR
-TT
 Yy
 Yy
 Yy
 Yy
-Kl
-Hi
-aX
+Yy
+Yy
+Yy
+Yy
 OR
-Ly
-cU
+Yy
+KX
 Yy
 Yy
 Yy
@@ -2722,19 +2185,19 @@ Yy
 Yy
 Yy
 Yy
-aX
-pH
-sy
+Yy
+Yy
+dM
 bv
 bv
 Io
-TT
-aX
-TT
-Bi
+Yy
+Yy
+Yy
+jC
 OR
 OR
-TT
+Yy
 KX
 Yy
 Yy
@@ -2772,22 +2235,22 @@ Yy
 Yy
 Yy
 Yy
-rc
-vW
-wq
+Yy
+Yy
+dM
 Bs
 cO
 Ir
-TT
-aX
-Ly
-Iw
+Yy
+Yy
+Yy
+Yy
 OR
 OR
-Ly
-Wl
-pJ
-Hi
+Yy
+KX
+Yy
+Yy
 vi
 Yy
 Yy
@@ -2822,17 +2285,17 @@ Yy
 Yy
 gn
 Yy
-Kl
-Or
+Yy
+vl
 dM
 Bs
 PX
 KA
-TT
-aX
+Yy
+Yy
 OR
-rW
-RB
+Yy
+Yy
 OR
 Ym
 XK
@@ -2871,18 +2334,18 @@ Yy
 Yy
 Yy
 Yy
-Kl
-Md
+Yy
+Yy
 OR
 dM
 CN
 CN
 CN
-TT
-rc
-OZ
-vW
-Md
+Yy
+Yy
+Yy
+Yy
+Yy
 Ym
 XK
 nf
@@ -2921,17 +2384,17 @@ Yy
 Yy
 Xq
 Yy
-aX
+Yy
 OR
 bS
 NV
 vF
-CT
-SH
+vF
+vF
 Yy
 Yy
 Yy
-aX
+Yy
 OR
 OR
 vS
@@ -2971,20 +2434,20 @@ Yy
 Yy
 Yy
 Yy
-aX
+Yy
 OR
 OR
-TT
-Kl
-Md
-TT
 Yy
 Yy
 Yy
-aX
+Yy
+Yy
+Yy
+Yy
+Yy
 OR
 OR
-mu
+Yy
 Si
 XK
 jm
@@ -3021,21 +2484,21 @@ kV
 Yy
 Yy
 Yy
-aX
+Yy
 OR
 OR
-TT
-aX
+Yy
+Yy
 OR
-TT
 Yy
 Yy
 Yy
-DP
-lw
+Yy
+Yy
+Yy
 OR
-rW
-tI
+Yy
+Xq
 jm
 jm
 jm
@@ -3071,20 +2534,20 @@ Yy
 Yy
 Yy
 vi
-aX
-IH
+Yy
+Yy
 OR
-TT
-Wm
+Yy
+HG
 OR
-TT
-Kl
-Hi
+Yy
+Yy
+Yy
 QJ
-aX
+Yy
 OR
-Xb
-rH
+Yy
+HG
 jm
 jm
 jm
@@ -3121,20 +2584,20 @@ Yy
 Yy
 Yy
 Yy
-rc
-ZE
+Yy
+Yy
 OR
-TT
-aX
+Yy
+Yy
 OR
-TT
-aX
-TT
-Kl
-Md
+Yy
+Yy
+Yy
+Yy
+Yy
 OR
 OR
-Ly
+Yy
 jm
 jm
 jm
@@ -3172,15 +2635,15 @@ Yy
 vl
 Yy
 Yy
-aX
+Yy
 OR
-TT
-rc
-OZ
-yb
-aX
-Ly
-Md
+Yy
+Yy
+Yy
+Yy
+Yy
+Yy
+Yy
 OR
 OR
 EM
@@ -3221,14 +2684,14 @@ Yy
 Yy
 Yy
 Yy
-jD
-Md
+dJ
+Yy
 OR
-Ly
-JA
-pJ
-pJ
-Md
+Yy
+vi
+Yy
+Yy
+Yy
 OR
 OR
 lg
@@ -3260,7 +2723,7 @@ jm
 jm
 jm
 jm
-pJ
+Yy
 Yy
 Yy
 Yy
@@ -3271,16 +2734,16 @@ Yy
 Yy
 Yy
 Yy
-aX
+Yy
 OR
 OR
 OR
-oZ
+Yy
 OR
 OR
 OR
 OR
-Bt
+Yy
 lg
 zx
 Xk
@@ -3311,8 +2774,8 @@ jm
 jm
 jm
 vM
-Sh
-Hi
+Yy
+Yy
 Yy
 Yy
 tA
@@ -3320,8 +2783,8 @@ Yy
 Yy
 Yy
 Er
-Kl
-Md
+Yy
+Yy
 OR
 OR
 YQ
@@ -3359,21 +2822,21 @@ jm
 jm
 jm
 jm
-PI
+XH
 gY
 gY
-Ly
-Hi
 Yy
 Yy
 Yy
 Yy
 Yy
 Yy
-aX
+Yy
+Yy
+Yy
 OR
 OR
-mu
+Yy
 YQ
 uh
 XK
@@ -3409,21 +2872,21 @@ jm
 jm
 jm
 jm
-He
-OM
+XH
+XH
 gY
-yn
-Ly
-Hi
+vM
+Yy
+Yy
 Yy
 Yy
 vi
 Yy
 Yy
-aX
+Yy
 OR
-cr
-ZS
+Yy
+Yy
 YQ
 dB
 lg
@@ -3460,17 +2923,17 @@ jm
 jm
 jm
 XH
-He
-OM
-JL
+XH
+XH
+vM
 hV
-TT
 Yy
 Yy
 Yy
 Yy
 Yy
-cP
+Yy
+kV
 OR
 YQ
 YQ
@@ -3511,18 +2974,18 @@ jm
 jm
 jm
 XH
-PI
+XH
 OY
 vM
-TT
+Yy
 uT
 kV
 Yy
-Kl
-pJ
-Iw
+Yy
+Yy
+Yy
 OR
-Cm
+YQ
 Zf
 lg
 uK
@@ -3561,18 +3024,18 @@ jm
 jm
 jm
 XH
-He
-Mi
+XH
+XH
 jm
-yb
 Yy
 Yy
 Yy
-aX
+Yy
+Yy
 OR
-uD
+Yy
 YQ
-sR
+YQ
 Ec
 CC
 GA
@@ -3617,10 +3080,10 @@ jm
 Yy
 Yy
 Yy
-Kl
-AS
-OZ
-ZE
+Yy
+Yy
+Yy
+Yy
 YQ
 zp
 Ec
@@ -3667,10 +3130,10 @@ Yy
 jC
 Yy
 Yy
-aX
-Ly
-Hi
-aX
+Yy
+Yy
+Yy
+Yy
 YQ
 rD
 uo
@@ -3717,13 +3180,13 @@ Yy
 Yy
 Yy
 KX
-aX
+Yy
 OR
-IX
-Md
+Yy
+Yy
 YQ
 So
-fK
+uh
 XK
 uh
 MV
@@ -3767,9 +3230,9 @@ Yy
 Yy
 Er
 Yy
-BA
+KX
 mW
-uD
+Yy
 OR
 XK
 DR
@@ -3815,12 +3278,12 @@ jm
 Xq
 Yy
 Yy
-Kl
-pJ
-Md
+Yy
+Yy
+Yy
 OR
-BX
-jw
+KX
+KX
 Ym
 XK
 Ym
@@ -3865,14 +3328,14 @@ Yy
 Yy
 Yy
 vi
-aX
+Yy
 OR
 OR
 UY
-Ly
-AS
-OZ
-RB
+Yy
+Yy
+Yy
+Yy
 OR
 XK
 LN
@@ -3914,13 +3377,13 @@ Yy
 Yy
 Yy
 Yy
-Kl
-Md
+Yy
+Yy
 OR
-po
+Yy
 OR
 OR
-TT
+Yy
 Yy
 kV
 jm
@@ -3963,14 +3426,14 @@ jm
 Yy
 Yy
 Yy
-Kl
-Md
+Yy
+Yy
 Ym
 XK
 OR
 OR
-pH
-RM
+Yy
+vi
 Yy
 Yy
 jm
@@ -4013,13 +3476,13 @@ Yy
 vi
 Yy
 Yy
-aX
+Yy
 Ym
 lg
-Bt
+Yy
 OR
 OR
-TT
+Yy
 Yy
 Yy
 Yy
@@ -4063,13 +3526,13 @@ Yy
 Yy
 tA
 Yy
-aX
+Yy
 XK
 eo
 eo
 lg
 Ym
-TT
+Yy
 Yy
 Ms
 jm
@@ -4119,7 +3582,7 @@ nf
 nf
 Ze
 XK
-TT
+Yy
 Yy
 Yy
 jm
@@ -4169,7 +3632,7 @@ Xj
 OP
 lg
 Ym
-TT
+Yy
 kV
 Yy
 jm
@@ -4218,8 +3681,8 @@ oq
 or
 Kn
 Ym
-OZ
-Ba
+Yy
+jC
 Yy
 jm
 jm

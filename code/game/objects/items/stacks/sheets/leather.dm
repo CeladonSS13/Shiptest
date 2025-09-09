@@ -115,7 +115,7 @@ GLOBAL_LIST_INIT(monkey_recipes, list ( \
 	var/wetness = 30 //Reduced when exposed to high temperautres
 	var/drying_threshold_temperature = 500 //Kelvin to start drying
 
-/obj/item/stack/sheet/leather/wetleather/Initialize(mapload, new_amount, merge)
+/obj/item/stack/sheet/wethide/Initialize(mapload, new_amount, merge)	// [CELADON-EDIT] - FIXES_WETHIDE // /obj/item/stack/sheet/leather/wetleather/Initialize(mapload, new_amount, merge)
 	. = ..()
 	AddElement(/datum/element/dryable, /obj/item/stack/sheet/leather)
 

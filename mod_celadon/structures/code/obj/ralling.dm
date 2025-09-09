@@ -1,5 +1,5 @@
 /obj/structure/railing/celebrate
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/railing.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/railing.dmi'
 	icon_state = "railing_celebrate"
 
 /obj/structure/railing/celebrate/corner

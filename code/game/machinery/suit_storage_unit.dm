@@ -172,11 +172,10 @@ LOCKED_SSU_HELPER(mining/eva)
 
 LOCKED_SSU_HELPER(cmo)
 
-/obj/machinery/suit_storage_unit/rd
-	name = "RD's suit storage unit"
-	suit_type = /obj/item/clothing/suit/space/hardsuit/rd
+/obj/machinery/suit_storage_unit/bomb
+	name = "bomb suit storage unit"
+	suit_type = /obj/item/clothing/suit/space/hardsuit/bomb
 	mask_type = /obj/item/clothing/mask/breath
-	req_access = list(ACCESS_RD)
 
 LOCKED_SSU_HELPER(rd)
 
@@ -591,12 +590,6 @@ LOCKED_SSU_HELPER(minutemen/pilot)
 			else
 				visible_message(span_warning("[src]'s door slides open, barraging you with the nauseating smell of charred flesh."))
 				mob_occupant.radiation = 0
-				if(iscarbon(mob_occupant))
-					var/mob/living/carbon/bacon = mob_occupant
-					for(var/obj/item/bodypart/grilling as anything in bacon.get_bleeding_parts(TRUE))
-						if(!grilling.can_bandage())
-							continue
-						grilling.apply_bandage(0.005, 600, "cauterization")
 			playsound(src, 'sound/machines/airlocks/standard/close.ogg', 25, TRUE)
 			var/list/things_to_clear = list() //Done this way since using GetAllContents on the SSU itself would include circuitry and such.
 			if(suit)

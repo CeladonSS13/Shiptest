@@ -1,5 +1,5 @@
 /obj/effect/turf_decal/solgov
-	icon = 'mod_celadon/_storge_icons/icons/structures/logo/sol_fed_logo.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/logo/sol_fed_logo.dmi'
 	icon_state = "11"
 
 /obj/effect/turf_decal/solgov/top
@@ -83,7 +83,7 @@
 //TSSC
 /obj/effect/turf_decal/tssc_small
 	name = "small tssc logo"
-	icon = 'mod_celadon/_storge_icons/icons/structures/manufacturer_decals.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/manufacturer_decals.dmi'
 	icon_state = "tssc-center"
 
 /obj/effect/turf_decal/tssc_small/left

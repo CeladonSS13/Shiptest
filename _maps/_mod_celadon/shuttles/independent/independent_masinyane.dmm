@@ -191,7 +191,8 @@
 /obj/machinery/button/door{
 	dir = 8;
 	id = "masinyane_blastdoors";
-	pixel_x = 23
+	pixel_x = 23;
+	req_ship_access = 1
 	},
 /obj/machinery/door/poddoor{
 	id = "masinyane_blastdoors";
@@ -489,7 +490,8 @@
 /obj/machinery/button/door{
 	dir = 4;
 	id = "masinyane_blastdoors";
-	pixel_x = -23
+	pixel_x = -23;
+	req_ship_access = 1
 	},
 /obj/docking_port/mobile{
 	dir = 4;

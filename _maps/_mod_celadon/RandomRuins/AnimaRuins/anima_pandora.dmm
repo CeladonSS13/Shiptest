@@ -8,7 +8,7 @@
 "aD" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/food/grown/mushroom/chanterelle,
-/turf/open/floor/plating/dirt/old/waste,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "aL" = (
 /obj/item/ammo_casing/spent{
@@ -45,12 +45,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/titanium/white,
 /area/ruin/anima)
-"cd" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/turf/open/water/waste,
-/area/ruin/anima)
 "cg" = (
 /obj/item/ammo_casing/spent{
 	icon_state = "pistol-brass-empty";
@@ -75,7 +69,7 @@
 /turf/open/floor/wood/waste,
 /area/ruin/anima)
 "dh" = (
-/turf/open/floor/plating/dirt/old/waste,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "dH" = (
 /turf/closed/indestructible/riveted/hierophant,
@@ -87,7 +81,7 @@
 /area/ruin/anima)
 "eB" = (
 /obj/item/reagent_containers/glass/bucket/wooden,
-/turf/open/floor/plating/grass/wasteplanet,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
 /area/ruin/anima)
 "fF" = (
 /obj/effect/decal/remains/human,
@@ -127,15 +121,6 @@
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/plating/asteroid/wasteplanet/lit/anima,
 /area/ruin/anima)
-"gO" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 5
-	},
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 4
-	},
-/turf/open/water/waste,
-/area/ruin/anima)
 "gX" = (
 /obj/effect/light_emitter{
 	set_cap = 3;
@@ -161,11 +146,6 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/titanium/white,
-/area/ruin/anima)
-"iT" = (
-/obj/effect/turf_decal/weather/dirt,
-/obj/effect/turf_decal/weather/dirt,
-/turf/open/water/waste,
 /area/ruin/anima)
 "iU" = (
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/dungeon,
@@ -197,12 +177,6 @@
 /obj/item/clothing/head/hooded/cloakhood/bone,
 /turf/open/floor/wood/waste,
 /area/ruin/anima)
-"jl" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/turf/open/water/waste/lit,
-/area/ruin/anima)
 "jn" = (
 /obj/item/ammo_casing/spent{
 	icon_state = "pistol-brass-empty"
@@ -217,7 +191,7 @@
 	pixel_x = 7;
 	pixel_y = 10
 	},
-/turf/open/floor/plating/dirt/old/waste,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "jq" = (
 /obj/structure/table/wood,
@@ -237,7 +211,7 @@
 	pixel_x = 6;
 	pixel_y = 7
 	},
-/turf/open/floor/plating/dirt/old/waste,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "jF" = (
 /obj/structure/table/wood,
@@ -311,7 +285,7 @@
 /area/ruin/anima)
 "mb" = (
 /obj/structure/destructible/tribal_torch,
-/turf/open/floor/plating/grass/wasteplanet,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
 /area/ruin/anima)
 "mr" = (
 /obj/structure/table/wood,
@@ -343,23 +317,11 @@
 	pixel_x = -10;
 	pixel_y = -5
 	},
-/turf/open/floor/plating/dirt/old/waste,
-/area/ruin/anima)
-"mF" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
-	},
-/turf/open/water/waste/lit,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "mI" = (
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/plating/grass/wasteplanet,
-/area/ruin/anima)
-"mO" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 1
-	},
-/turf/open/water/waste/lit,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
 /area/ruin/anima)
 "nq" = (
 /obj/item/stack/sheet/bone,
@@ -500,12 +462,12 @@
 	icon_state = "pistol-brass-empty"
 	},
 /obj/effect/mob_spawn/human/corpse/vigilitas_private,
-/turf/open/floor/plating/dirt/old/waste,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "tF" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/food/grown/mushroom/jupitercup,
-/turf/open/floor/plating/dirt/old/waste,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "tR" = (
 /obj/structure/closet/crate/grave,
@@ -527,15 +489,6 @@
 /obj/structure/table/reinforced,
 /obj/item/gem/phoron,
 /turf/open/indestructible/hierophant/waste,
-/area/ruin/anima)
-"vd" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 10
-	},
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 8
-	},
-/turf/open/water/waste,
 /area/ruin/anima)
 "ve" = (
 /obj/item/ammo_casing/spent{
@@ -566,7 +519,7 @@
 /area/ruin/anima)
 "wA" = (
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/plating/grass/wasteplanet,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
 /area/ruin/anima)
 "xc" = (
 /obj/structure/closet/crate/necropolis/tendril,
@@ -597,13 +550,6 @@
 /obj/structure/mineral_door/wood,
 /turf/open/floor/wood/waste,
 /area/ruin/anima)
-"yq" = (
-/obj/effect/turf_decal/weather/dirt,
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 8
-	},
-/turf/open/water/waste,
-/area/ruin/anima)
 "yI" = (
 /obj/item/ammo_casing/spent{
 	icon_state = "pistol-brass-empty"
@@ -624,15 +570,6 @@
 /obj/structure/mineral_door/wood,
 /turf/open/floor/wood/waste,
 /area/ruin/anima)
-"zs" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 10
-	},
-/turf/open/water/waste,
-/area/ruin/anima)
 "zy" = (
 /obj/effect/mob_spawn/human/corpse/vigilitas_trooper,
 /turf/open/indestructible/hierophant/two/waste,
@@ -641,12 +578,6 @@
 /obj/structure/window/reinforced/fulltile/shuttle,
 /obj/structure/grille,
 /turf/open/floor/plating/wasteplanet,
-/area/ruin/anima)
-"Al" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 10
-	},
-/turf/open/water/waste,
 /area/ruin/anima)
 "AI" = (
 /obj/structure/flora/rock,
@@ -666,14 +597,14 @@
 /mob/living/simple_animal/hostile/human/skeleton{
 	desc = "A villager resurrected by the power of an unknown deity, eternally seeking vengeance for its people."
 	},
-/turf/open/floor/plating/dirt/old/waste,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "Bv" = (
 /obj/structure/bonfire,
 /turf/open/floor/wood/waste,
 /area/ruin/anima)
 "BB" = (
-/turf/open/floor/plating/grass/wasteplanet,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
 /area/ruin/anima)
 "BL" = (
 /obj/structure/cable{
@@ -745,7 +676,7 @@
 /area/ruin/anima)
 "DF" = (
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/plating/grass/wasteplanet,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
 /area/ruin/anima)
 "DQ" = (
 /obj/structure/railing/corner/wood{
@@ -770,7 +701,7 @@
 /area/ruin/anima)
 "Eb" = (
 /obj/item/gun/ballistic/automatic/pistol/commander/no_mag,
-/turf/open/floor/plating/dirt/old/waste,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "Eo" = (
 /obj/structure/barricade/wooden,
@@ -830,7 +761,7 @@
 /obj/item/ammo_casing/spent{
 	icon_state = "pistol-brass-empty"
 	},
-/turf/open/floor/plating/dirt/old/waste,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "Gx" = (
 /obj/item/ammo_casing/spent{
@@ -846,13 +777,7 @@
 	pixel_x = 6;
 	pixel_y = -9
 	},
-/turf/open/floor/plating/dirt/old/waste,
-/area/ruin/anima)
-"Hi" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
-	},
-/turf/open/water/waste/lit,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "Hl" = (
 /obj/item/ammo_casing/spent{
@@ -886,7 +811,7 @@
 "HE" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/food/grown/mushroom/libertycap,
-/turf/open/floor/plating/dirt/old/waste,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "Ih" = (
 /obj/structure/fluff/divine/defensepylon,
@@ -989,12 +914,6 @@
 	},
 /turf/open/indestructible/hierophant/waste,
 /area/ruin/anima)
-"LB" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 8
-	},
-/turf/open/water/waste/lit,
-/area/ruin/anima)
 "LW" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -1012,7 +931,7 @@
 	pixel_x = 6;
 	pixel_y = -9
 	},
-/turf/open/floor/plating/dirt/old/waste,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "Mp" = (
 /obj/structure/fluff/divine/powerpylon,
@@ -1021,15 +940,6 @@
 	set_luminosity = 5
 	},
 /turf/open/indestructible/hierophant/waste,
-/area/ruin/anima)
-"Mv" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 4
-	},
-/turf/open/water/waste,
 /area/ruin/anima)
 "MA" = (
 /obj/item/ammo_casing/spent{
@@ -1075,7 +985,7 @@
 	pixel_x = -11;
 	pixel_y = -5
 	},
-/turf/open/floor/plating/dirt/old/waste,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "NA" = (
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
@@ -1113,10 +1023,6 @@
 	},
 /turf/open/floor/mineral/titanium/white,
 /area/ruin/anima)
-"Os" = (
-/obj/effect/turf_decal/weather/dirt/corner,
-/turf/open/water/waste,
-/area/ruin/anima)
 "Ot" = (
 /turf/open/floor/plating/asteroid/wasteplanet/lit/anima,
 /area/ruin/anima)
@@ -1127,19 +1033,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/wasteplanet,
 /area/ruin/anima)
-"OL" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 5
-	},
-/turf/open/water/waste/lit,
-/area/ruin/anima)
 "OM" = (
 /obj/item/ammo_casing/spent{
 	icon_state = "pistol-brass-empty";
 	pixel_x = 5;
 	pixel_y = 11
 	},
-/turf/open/floor/plating/dirt/old/waste,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "OO" = (
 /obj/structure/table/reinforced,
@@ -1185,7 +1085,7 @@
 /area/ruin/anima)
 "Qd" = (
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/plating/dirt/old/waste,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "Qj" = (
 /obj/structure/bonfire,
@@ -1197,12 +1097,6 @@
 "QC" = (
 /obj/structure/statue/bone/rib,
 /turf/open/floor/plating/asteroid/wasteplanet/lit/anima,
-/area/ruin/anima)
-"QD" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 4
-	},
-/turf/open/water/waste/lit,
 /area/ruin/anima)
 "QH" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1217,10 +1111,6 @@
 /obj/item/gun/ballistic/bow,
 /obj/item/ammo_casing/caseless/arrow/wood,
 /turf/open/floor/wood/waste,
-/area/ruin/anima)
-"Rx" = (
-/obj/effect/turf_decal/weather/dirt,
-/turf/open/water/waste,
 /area/ruin/anima)
 "RJ" = (
 /obj/item/ammo_casing/spent{
@@ -1327,12 +1217,6 @@
 	},
 /turf/open/floor/wood/waste,
 /area/ruin/anima)
-"Vb" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 5
-	},
-/turf/open/water/waste,
-/area/ruin/anima)
 "Vm" = (
 /obj/item/ammo_casing/spent{
 	icon_state = "pistol-brass-empty";
@@ -1346,12 +1230,6 @@
 /obj/structure/chair/wood,
 /turf/open/floor/wood/waste,
 /area/ruin/anima)
-"VP" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
-	},
-/turf/open/water/waste,
-/area/ruin/anima)
 "VT" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
@@ -1359,22 +1237,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/titanium/white,
 /area/ruin/anima)
-"Wn" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 9
-	},
-/turf/open/water/waste,
-/area/ruin/anima)
 "Ww" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/food/grown/mushroom/plumphelmet,
-/turf/open/floor/plating/dirt/old/waste,
-/area/ruin/anima)
-"WS" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 4
-	},
-/turf/open/water/waste,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "Xd" = (
 /obj/structure/table/reinforced,
@@ -1385,7 +1251,7 @@
 /mob/living/simple_animal/hostile/human/skeleton{
 	desc = "A villager resurrected by the power of an unknown deity, eternally seeking vengeance for its people."
 	},
-/turf/open/floor/plating/grass/wasteplanet,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
 /area/ruin/anima)
 "Xx" = (
 /obj/structure/table/wood,
@@ -1431,13 +1297,7 @@
 /area/ruin/anima)
 "Yn" = (
 /obj/item/scythe,
-/turf/open/floor/plating/dirt/old/waste,
-/area/ruin/anima)
-"Yq" = (
-/obj/effect/turf_decal/weather/dirt/corner{
-	dir = 8
-	},
-/turf/open/water/waste,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "Yw" = (
 /obj/item/gun/ballistic/automatic/pistol/commander/no_mag,
@@ -1465,7 +1325,7 @@
 /area/ruin/anima)
 "Zg" = (
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plating/dirt/old/waste,
+/turf/open/floor/plating/asteroid/dirt,
 /area/ruin/anima)
 "Zq" = (
 /turf/closed/wall/mineral/titanium,
@@ -2239,9 +2099,9 @@ BB
 BB
 dh
 dh
-Wn
-mF
-Al
+oi
+bd
+oi
 dh
 dh
 BB
@@ -2290,11 +2150,11 @@ DF
 mb
 dh
 Qd
-Wn
-mO
+oi
 bd
-WS
-Al
+bd
+oi
+oi
 dh
 dh
 BB
@@ -2341,13 +2201,13 @@ BB
 DF
 dh
 HE
-Wn
-mO
+oi
+bd
 bd
 oi
 oi
-QD
-Al
+bd
+oi
 dh
 wA
 BB
@@ -2392,14 +2252,14 @@ mI
 BB
 Yn
 Qd
-Wn
-mO
+oi
+bd
 bd
 oi
 oi
 oi
 bd
-Rx
+oi
 dh
 BB
 BB
@@ -2443,15 +2303,15 @@ oG
 BB
 Xq
 aD
-Wn
-mO
+oi
+bd
 oi
 oi
 oi
 oi
 oi
 bd
-Rx
+oi
 dh
 BB
 DF
@@ -2495,15 +2355,15 @@ oG
 BB
 wA
 Qd
-cd
-bd
-oi
 oi
 bd
 oi
+oi
+bd
+oi
 bd
 bd
-Rx
+oi
 dh
 mI
 BB
@@ -2547,15 +2407,15 @@ oG
 DF
 eB
 tF
-jl
+bd
 bd
 oi
 oi
 oi
-Os
-Hi
-Yq
-iT
+oi
+bd
+oi
+oi
 dh
 BB
 BB
@@ -2599,15 +2459,15 @@ oG
 BB
 DF
 Qd
-OL
-LB
+bd
+bd
 bd
 oi
 oi
-Rx
+oi
 dh
-Vb
-yq
+oi
+oi
 dh
 dh
 BB
@@ -2652,15 +2512,15 @@ BB
 BB
 dh
 Qd
-Vb
-LB
+oi
 bd
-Os
-VP
+bd
+oi
+oi
 dh
 dh
-gO
-vd
+oi
+oi
 dh
 dh
 oG
@@ -2705,15 +2565,15 @@ BB
 BB
 dh
 Ww
-Vb
-Hi
-VP
+oi
+bd
+oi
 dh
 dh
 dh
 dh
-Mv
-Al
+oi
+oi
 dh
 oG
 oG
@@ -2764,8 +2624,8 @@ dh
 dh
 dh
 dh
-Vb
-yq
+oi
+oi
 dh
 dh
 oG
@@ -2817,8 +2677,8 @@ BB
 dh
 dh
 dh
-gO
-vd
+oi
+oi
 dh
 oG
 oG
@@ -2870,8 +2730,8 @@ oG
 dh
 dh
 dh
-gO
-zs
+oi
+oi
 oG
 Ot
 AI
@@ -2923,8 +2783,8 @@ oG
 dh
 dh
 dh
-Vb
-Yq
+oi
+oi
 Ot
 Ot
 Ot
@@ -2976,7 +2836,7 @@ Ot
 dh
 dh
 dh
-cd
+oi
 oi
 Ot
 oi

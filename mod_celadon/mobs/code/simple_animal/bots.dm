@@ -2,7 +2,7 @@
 /mob/living/simple_animal/bot/medbot/catmedbot
 	name = "\improper MediKitty"
 	desc = "A little medical feline. He meows as he swings his syringe."
-	icon = 'mod_celadon/_storge_icons/icons/mobs/catmedbot.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/mobs/catmedbot.dmi'
 
 /mob/living/simple_animal/bot/medbot/catmedbot/update_icon()
 	. = ..()
