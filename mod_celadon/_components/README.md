@@ -103,7 +103,7 @@ CELADON_COMPONENTS_LOGS
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- `mod_celadon/_storge_sounds/sound`
+- `mod_celadon/_storage_sounds/sound`
 
 - `mod_celadon/outpost_console/code/console.dm`
 <!--

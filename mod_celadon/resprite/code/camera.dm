@@ -1,2 +1,2 @@
 /obj/machinery/camera
-	icon = 'mod_celadon/_storge_icons/icons/resprite/camera.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/camera.dmi'

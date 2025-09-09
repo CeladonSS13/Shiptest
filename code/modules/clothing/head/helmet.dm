@@ -183,9 +183,9 @@
 */
 	if(attached_light)
 		if(attached_light.on)
-			flashlightlight_overlay = mutable_appearance('mod_celadon/_storge_icons/icons/items/clothing/head/seclite_overlay.dmi', "[flashlight_state]_on")
+			flashlightlight_overlay = mutable_appearance('mod_celadon/_storage_icons/icons/items/clothing/head/seclite_overlay.dmi', "[flashlight_state]_on")
 		else
-			flashlightlight_overlay = mutable_appearance('mod_celadon/_storge_icons/icons/items/clothing/head/seclite_overlay.dmi', flashlight_state)
+			flashlightlight_overlay = mutable_appearance('mod_celadon/_storage_icons/icons/items/clothing/head/seclite_overlay.dmi', flashlight_state)
 		. += flashlightlight_overlay
 	if(content_overlays)
 		for(var/obj/item/I in contents)
@@ -217,9 +217,9 @@
 		return
 	if(attached_light)
 		if(attached_light.on)
-			flashlightlight_overlay = mutable_appearance('mod_celadon/_storge_icons/icons/items/clothing/head/overlay/seclite_overlay.dmi', "[flashlight_state]_on")
+			flashlightlight_overlay = mutable_appearance('mod_celadon/_storage_icons/icons/items/clothing/head/overlay/seclite_overlay.dmi', "[flashlight_state]_on")
 		else
-			flashlightlight_overlay = mutable_appearance('mod_celadon/_storge_icons/icons/items/clothing/head/overlay/seclite_overlay.dmi', flashlight_state)
+			flashlightlight_overlay = mutable_appearance('mod_celadon/_storage_icons/icons/items/clothing/head/overlay/seclite_overlay.dmi', flashlight_state)
 		. += flashlightlight_overlay
 	if(content_overlays)
 		for(var/obj/item/I in contents)

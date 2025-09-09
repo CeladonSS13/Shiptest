@@ -34,7 +34,7 @@
 
 // [CELADON-ADD] - CELADON_GRAVGEN
 /datum/looping_sound/gravity_generator
-	mid_sounds = list('mod_celadon/_storge_sounds/sound/effects/beam.ogg')
+	mid_sounds = list('mod_celadon/_storage_sounds/sound/effects/beam.ogg')
 	mid_length = 40
 	volume = 10
 	falloff_distance = 3

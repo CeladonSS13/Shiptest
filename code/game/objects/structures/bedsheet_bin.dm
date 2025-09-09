@@ -110,9 +110,9 @@ LINEN BINS
 /obj/item/bedsheet/mime
 	name = "mime's blanket"
 	desc = "A very soothing striped blanket.  All the noise just seems to fade out when you're under the covers in this."
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/bedsheets.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/bedsheet_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/bedsheet_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/bedsheets.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/bedsheet_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/bedsheet_righthand.dmi'
 	icon_state = "sheetmime"
 	item_state = "sheetmime"
 	dream_messages = list("silence", "gestures", "a pale face", "a gaping mouth", "the mime")
@@ -120,9 +120,9 @@ LINEN BINS
 /obj/item/bedsheet/clown
 	name = "clown's blanket"
 	desc = "A rainbow blanket with a clown mask woven in. It smells faintly of bananas."
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/bedsheets.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/bedsheet_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/bedsheet_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/bedsheets.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/bedsheet_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/bedsheet_righthand.dmi'
 	icon_state = "sheetclown"
 	item_state = "sheetrainbow"
 	dream_messages = list("honk", "laughter", "a prank", "a joke", "a smiling face", "the clown")
@@ -339,9 +339,9 @@ LINEN BINS
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/bedsheet/double/mime
 	name = "double mime's blanket"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/bedsheets.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/bedsheet_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/bedsheet_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/bedsheets.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/bedsheet_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/bedsheet_righthand.dmi'
 	icon_state = "double_sheetmime"
 	item_state = "sheetmime"
 	dream_messages = list("silence", "gestures", "a pale face", "a gaping mouth", "the mime")
@@ -349,9 +349,9 @@ LINEN BINS
 
 /obj/item/bedsheet/double/clown
 	name = "double clown's blanket"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/bedsheets.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/bedsheet_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/bedsheet_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/bedsheets.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/bedsheet_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/bedsheet_righthand.dmi'
 	icon_state = "double_sheetclown"
 	item_state = "sheetrainbow"
 	dream_messages = list("honk", "laughter", "a prank", "a joke", "a smiling face", "the clown")

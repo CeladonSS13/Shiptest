@@ -507,7 +507,7 @@
 
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/toy/crayon/mime
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/crayons.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/crayons.dmi'
 	icon_state = "crayonmime"
 	desc = "A very sad-looking crayon."
 	paint_color = "#FFFFFF"
@@ -754,7 +754,7 @@
 /obj/item/toy/crayon/spraycan/lubecan
 	name = "slippery spraycan"
 	desc = "You can barely keep hold of this thing."
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/crayons.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/crayons.dmi'
 	icon_state = "clowncan2_cap"
 	icon_capped = "clowncan2_cap"
 	icon_uncapped = "clowncan2"
@@ -769,7 +769,7 @@
 /obj/item/toy/crayon/spraycan/mimecan
 	name = "silent spraycan"
 	desc = "Art is best seen, not heard."
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/crayons.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/crayons.dmi'
 	icon_state = "mimecan_cap"
 	icon_capped = "mimecan_cap"
 	icon_uncapped = "mimecan"

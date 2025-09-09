@@ -32,7 +32,7 @@
 	///How much of a radio message we mess up on nearby or on landed/orbitting ships
 	var/interference_power = 0
 	// [CELADON-ADD] - CELADON_OVERMAP_ICON - Это вагабонд насрал
-	var/icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap.dmi'
+	var/icon = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap.dmi'
 	var/pixel_w = 0
 	var/pixel_z = 0
 	// [/CELADON-ADD]
@@ -256,7 +256,7 @@
 	icon_state = "giant"
 	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	//	color = COLOR_DARK_MODERATE_ORANGE
-	icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap_large.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap_large.dmi'
 	pixel_w = -8
 	pixel_z = -8
 	// [/CELADON-EDIT]
@@ -278,7 +278,7 @@
 // 	//	color = COLOR_PURPLE
 // 	// icon_state = "giant"
 // 	icon_state = "planet-plasma"
-// 	icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap_large.dmi'
+// 	icon = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap_large.dmi'
 // 	pixel_w = -8
 // 	pixel_z = -8
 // 	// [/CELADON-EDIT]

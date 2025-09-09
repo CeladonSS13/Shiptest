@@ -837,7 +837,7 @@ GLOBAL_DATUM_INIT(podlauncher, /datum/centcom_podlauncher, new)
 	name = "Supply Selector (Only you can see this)"
 // [CELADON-EDIT] - CELADON_RETURN_REVERSE_MENU
 //	image_icon = 'icons/obj/supplypods_32x32.dmi'
-	image_icon = 'mod_celadon/_storge_icons/icons/structures/supplypods_32x32.dmi'
+	image_icon = 'mod_celadon/_storage_icons/icons/structures/supplypods_32x32.dmi'
 // [/CELADON-EDIT]
 	image_state = "selector"
 	image_layer = FLY_LAYER
@@ -847,7 +847,7 @@ GLOBAL_DATUM_INIT(podlauncher, /datum/centcom_podlauncher, new)
 	name = "Dropoff Location (Only you can see this)"
 // [CELADON-EDIT] - CELADON_RETURN_REVERSE_MENU
 //	image_icon = 'icons/obj/supplypods_32x32.dmi'
-	image_icon = 'mod_celadon/_storge_icons/icons/structures/supplypods_32x32.dmi'
+	image_icon = 'mod_celadon/_storage_icons/icons/structures/supplypods_32x32.dmi'
 // [/CELADON-EDIT]
 	image_state = "dropoff_indicator"
 	image_layer = FLY_LAYER

@@ -1,7 +1,7 @@
 /obj/structure/salvageable/railgun
 	name = "Malfunctioning Caliban's 'WAR' railgun"
 	desc = "This railgun has massive power draw, yet it is a modified version with discarding sabot that increases its heat production. Two rails are surrounded by a helical barrel that ejects shots at tremendous speed."
-	icon = 'mod_celadon/_storge_icons/icons/machinery/caliban_rail.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/machinery/caliban_rail.dmi'
 	icon_state = "railgun-malf"
 	salvageable_parts = list(
 		/obj/item/stack/sheet/metal/five = 10,
@@ -42,7 +42,7 @@
 	desc = "The cells in this platform are the \n\
 			longest lasting, fastest cycling, and highest capacity solid state cells \n\
 			that can be sold to the private military. At the same time, they can discharge completely almost immediately, which is highly extraordinary."
-	icon = 'mod_celadon/_storge_icons/icons/machinery/caliban_rail.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/machinery/caliban_rail.dmi'
 	icon_state = "railgun_platform"
 	salvageable_parts = list(
 		/obj/item/stack/sheet/metal/five = 10,

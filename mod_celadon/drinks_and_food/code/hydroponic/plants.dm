@@ -1,8 +1,8 @@
 /obj/item/seeds/tea/mint
 	name = "mint seed pack"
-	icon = 'mod_celadon/_storge_icons/icons/obj/hydroponics/seeds.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/obj/hydroponics/seeds.dmi'
 	icon_state = "seed-mint"
-	growing_icon = 'mod_celadon/_storge_icons/icons/obj/hydroponics/growing.dmi'
+	growing_icon = 'mod_celadon/_storage_icons/icons/obj/hydroponics/growing.dmi'
 	desc = "Long stalks with flowering tips, they contain a chemical that attracts felines."
 	species = "mint"
 	plantname = "Mint Plant"
@@ -15,7 +15,7 @@
 /obj/item/food/grown/tea/mint
 	seed = /obj/item/seeds/tea/mint
 	name = "mint buds"
-	icon = 'mod_celadon/_storge_icons/icons/obj/hydroponics/harvest.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/obj/hydroponics/harvest.dmi'
 	icon_state = "mint"
 	filling_color = "#4582B4"
 	grind_results = list(/datum/reagent/pax/mint = 2, /datum/reagent/water = 1)

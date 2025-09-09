@@ -18,7 +18,7 @@
 /obj/machinery/porta_turret/syndicate/grenade_40mm
 	name = "mounted grenade launcher (40mm)"
 	desc = "Syndicate 40mm grenade launcher defense turret. If you've had this much time to look at it, you're probably already dead."
-	icon = 'mod_celadon/_storge_icons/icons/structures/turrets.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/turrets.dmi'
 	icon_state = "syndie_grenade"
 	base_icon_state = "syndie_grenade"
 	stun_projectile = /obj/projectile/bullet/a40mm
@@ -66,7 +66,7 @@
 /obj/machinery/porta_turret/syndicate/no_access/grenade_40mm
 	name = "mounted grenade launcher (40mm)"
 	desc = "Syndicate 40mm grenade launcher defense turret. If you've had this much time to look at it, you're probably already dead."
-	icon = 'mod_celadon/_storge_icons/icons/structures/turrets.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/turrets.dmi'
 	icon_state = "syndie_grenade"
 	base_icon_state = "syndie_grenade"
 	stun_projectile = /obj/projectile/bullet/a40mm
@@ -118,7 +118,7 @@
 	number_of_shots = 3
 	cooldown_duration = 2 SECONDS
 	rate_of_fire = 1
-	firesound = 'mod_celadon/_storge_sounds/sound/gun/turret9mm.ogg'
+	firesound = 'mod_celadon/_storage_sounds/sound/gun/turret9mm.ogg'
 	overheatsound = 'sound/weapons/gun/smg/smgrack.ogg'
 	can_be_undeployed = TRUE
 	spawned_on_undeploy = /obj/item/deployable_turret_folded
