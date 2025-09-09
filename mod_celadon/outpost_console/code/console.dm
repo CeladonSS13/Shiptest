@@ -78,8 +78,6 @@
 				if(ishuman(usr))
 					var/mob/living/carbon/human/user = usr
 					user.put_in_hands(cash_chip)
-				// Логирование снятие денег
-				log_econ("[key_name(usr)] withdrew [val] credits as holochip from [src.name] at [AREACOORD(src)]")
 				playsound(src, 'sound/machines/twobeep_high.ogg', 50, TRUE)
 				src.visible_message(span_notice("[src] dispenses a holochip."))
 			return TRUE
