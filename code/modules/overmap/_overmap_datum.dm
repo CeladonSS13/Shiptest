@@ -70,6 +70,7 @@
 // [CELADON-ADD] - CELADON_OVERMAP_STUFF - Это вагабонд насрал
 /obj/overmap
 	var/skip_alarm = 0
+	anchored = 1
 
 /proc/get_pixel_distance(atom/A, atom/B)
 	var/x_dist = 0
