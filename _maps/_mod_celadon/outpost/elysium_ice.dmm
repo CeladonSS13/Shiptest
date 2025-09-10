@@ -4357,11 +4357,11 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
+	dir = 1
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
@@ -10167,12 +10167,10 @@
 /turf/open/floor/plasteel/mono,
 /area/outpost/fraction/solfed)
 "fTD" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/structure/cable{
-	icon_state = "1-2"
+/obj/structure/toilet{
+	dir = 1
 	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/plasteel/showroomfloor,
 /area/outpost/medical/hall_1)
 "fTX" = (
 /obj/structure/disposalpipe/segment{
@@ -15491,23 +15489,17 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/inteq)
 "jaC" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
 /obj/structure/disposalpipe/junction{
 	dir = 1
 	},
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
-/obj/structure/cable{
-	icon_state = "2-4"
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 5
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
@@ -17674,17 +17666,8 @@
 	},
 /area/outpost/medical/storage)
 "kqV" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
@@ -22686,14 +22669,6 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
-"nqj" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel/white,
-/area/outpost/medical/hall_1)
 "nql" = (
 /obj/structure/chair/bench/grey/directional/north,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
@@ -22873,7 +22848,9 @@
 /turf/closed/indestructible/wood,
 /area/outpost/crew/lounge/cab_2)
 "ntV" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "nui" = (
@@ -23404,11 +23381,6 @@
 	},
 /area/outpost/crew/lounge/cab_2)
 "nLY" = (
-/obj/structure/toilet{
-	dir = 4;
-	pixel_x = -1;
-	pixel_y = 5
-	},
 /obj/machinery/door/window{
 	req_ship_access = 1;
 	dir = 4
@@ -29272,21 +29244,6 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/operations/outpost_command)
-"rjc" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/white,
-/area/outpost/medical/hall_1)
 "rjl" = (
 /obj/structure/painting_custom{
 	pixel_y = 32;
@@ -33141,16 +33098,7 @@
 	},
 /area/outpost/exterior)
 "twq" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
 /obj/effect/turf_decal/corner/opaque/blue,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
@@ -40676,16 +40624,10 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/fraction/solfed)
 "xSj" = (
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 9
-	},
 /obj/structure/extinguisher_cabinet/directional/south,
 /obj/effect/turf_decal/corner/opaque/blue/half,
-/obj/structure/disposalpipe/junction/yjunction{
-	dir = 1
+/obj/structure/disposalpipe/segment{
+	dir = 5
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
@@ -66526,7 +66468,7 @@ oUm
 oUm
 oUm
 oUm
-rgY
+oUm
 wes
 wes
 wes
@@ -66709,11 +66651,11 @@ ibZ
 rgP
 gEr
 vZQ
-rjc
+sTY
 oUm
 nLY
+fTD
 oUm
-rgY
 eQc
 eNA
 nBQ
@@ -66894,13 +66836,13 @@ ulU
 iiX
 nay
 ntV
-ntV
-ntV
-kqV
+sTY
+sTY
+sTY
 oWF
 lLv
 oUm
-eQc
+oUm
 eQc
 wgi
 wLi
@@ -67267,9 +67209,9 @@ tbZ
 mKO
 alx
 jaC
-fTD
-nqj
-nqj
+hxq
+hxq
+hxq
 xSj
 oUm
 oUm
@@ -67454,7 +67396,7 @@ iHZ
 wVy
 qtt
 cGJ
-sTY
+kqV
 sTY
 sTY
 sOn
