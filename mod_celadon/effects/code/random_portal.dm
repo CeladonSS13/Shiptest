@@ -14,7 +14,12 @@
 
 	if(possible_portals.len)
 		linked = pick(possible_portals)
+	else
+		linked = null
 
 /obj/effect/portal/permanent/random/teleport(atom/movable/M, force = FALSE)
 	set_linked()
+	if(!linked)
+		do_teleport(M, get_turf(src), 10)
+		return
 	. = ..(M, force)
