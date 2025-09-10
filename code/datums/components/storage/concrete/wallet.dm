@@ -1,3 +1,4 @@
+/* // [CELADON-REMOVE] - DONT_ALTCLICK_WALLET - Где карта? Нам нужна карта
 /datum/component/storage/concrete/wallet/on_alt_click_async(datum/source, mob/user)
 	if(!isliving(user) || !user.CanReach(parent) || user.incapacitated())
 		return
@@ -16,3 +17,4 @@
 		user.visible_message(span_warning("[user] draws [I] from [parent]!"), span_notice("You draw [I] from [parent]."))
 		return
 	..()
+*/ // [/CELADON-REMOVE]
