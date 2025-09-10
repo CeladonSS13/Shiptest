@@ -579,10 +579,11 @@
 /area/centcom/control)
 "bG" = (
 /obj/effect/landmark/error,
-/turf/open/floor/plating/ashplanet/wateryrock{
+/turf/open/floor/plating/asteroid/waterplanet{
 	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
 	planetary_atmos = 0
-	})
+	},
+/area/errorroom)
 "bH" = (
 /obj/structure/closet/crate/critter{
 	name = "DANGER: DO NOT OPEN"
@@ -2111,10 +2112,11 @@
 	icon_state = "ladder10";
 	invisibility = 100
 	},
-/turf/open/floor/plating/ashplanet/wateryrock{
+/turf/open/floor/plating/asteroid/waterplanet{
 	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
 	planetary_atmos = 0
-	})
+	},
+/area/errorroom)
 "gh" = (
 /turf/closed/indestructible/abductor,
 /area/abductor_ship)
@@ -4303,6 +4305,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/tdome/arena)
+"ml" = (
+/turf/open/water/stormy_planet_lit{
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "mm" = (
 /obj/machinery/vending/hydroseeds,
 /obj/effect/turf_decal/corner/opaque/green{
@@ -4851,6 +4858,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
+"nQ" = (
+/obj/structure/flora/rock/asteroid,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "nR" = (
 /obj/structure/closet/abductor,
 /turf/open/floor/plating/abductor,
@@ -7092,7 +7106,8 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "uo" = (
-/turf/closed/mineral/ash_rock)
+/turf/closed/mineral/random/waterplanet,
+/area/errorroom)
 "up" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/gun/energy/taser,
@@ -9243,7 +9258,8 @@
 /area/centcom)
 "AD" = (
 /obj/structure/speaking_tile,
-/turf/closed/mineral/ash_rock)
+/turf/closed/mineral/random/waterplanet,
+/area/errorroom)
 "AE" = (
 /obj/machinery/computer/crew{
 	dir = 4
@@ -13633,7 +13649,8 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "MW" = (
-/turf/closed/indestructible/riveted)
+/turf/closed/indestructible/riveted,
+/area/errorroom)
 "MX" = (
 /obj/effect/turf_decal/corner/transparent/neutral{
 	dir = 8
@@ -15415,11 +15432,12 @@
 /turf/open/floor/wood,
 /area/centcom/control)
 "RW" = (
-/obj/item/rupee,
-/turf/open/floor/plating/ashplanet/wateryrock{
+/obj/structure/flora/tree/dead_pine,
+/turf/open/floor/plating/asteroid/waterplanet{
 	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
 	planetary_atmos = 0
-	})
+	},
+/area/errorroom)
 "RY" = (
 /turf/closed/indestructible/abductor{
 	icon_state = "alien18"
@@ -16675,6 +16693,14 @@
 /obj/effect/turf_decal/corner/transparent/neutral/full,
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
+"Vz" = (
+/obj/structure/flora/rock/asteroid,
+/obj/item/rupee,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "VA" = (
 /obj/effect/turf_decal/corner/opaque/black/mono,
 /obj/effect/turf_decal/corner/transparent/lime/border{
@@ -17615,10 +17641,11 @@
 /turf/open/floor/plasteel/dark/wasteplanet,
 /area/outpost/exterior)
 "Yl" = (
-/turf/open/floor/plating/ashplanet/wateryrock{
+/turf/open/floor/plating/asteroid/waterplanet{
 	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
 	planetary_atmos = 0
-	})
+	},
+/area/errorroom)
 "Ym" = (
 /obj/effect/turf_decal/corner/opaque/red/three_quarters{
 	dir = 2
@@ -18291,6 +18318,13 @@
 /obj/effect/turf_decal/corner/transparent/neutral/full,
 /turf/open/floor/plasteel/dark,
 /area/tdome/tdomeobserve)
+"ZV" = (
+/obj/item/rupee,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "ZW" = (
 /obj/machinery/power/smes/shuttle/precharged{
 	dir = 1
@@ -19086,13 +19120,13 @@ gd
 gd
 MW
 uo
-RW
-RW
-RW
+nQ
+ZV
 Yl
-RW
-RW
-RW
+Yl
+ml
+ml
+Vz
 uo
 MW
 gd
@@ -19279,13 +19313,13 @@ gd
 gd
 MW
 uo
-RW
-RW
+ZV
 RW
 Yl
-RW
-RW
-RW
+Yl
+ZV
+ml
+ml
 uo
 MW
 gd
@@ -19472,13 +19506,13 @@ gd
 gd
 MW
 uo
-RW
-RW
-RW
+ZV
+Yl
+Yl
 Yl
 RW
-RW
-RW
+ml
+ml
 uo
 MW
 gd
@@ -19665,13 +19699,13 @@ gd
 gd
 MW
 uo
+RW
 Yl
 Yl
 Yl
+nQ
 Yl
-Yl
-Yl
-Yl
+ml
 uo
 MW
 gd
@@ -19858,10 +19892,10 @@ gd
 gd
 MW
 uo
-RW
-RW
-RW
+ZV
 Yl
+Yl
+ZV
 Yl
 Yl
 Yl
@@ -20051,9 +20085,9 @@ gd
 gd
 MW
 AD
-RW
-RW
-RW
+Yl
+Yl
+Yl
 Yl
 Yl
 bG
@@ -20244,9 +20278,9 @@ gd
 gd
 MW
 uo
-RW
-RW
-RW
+Yl
+Yl
+Yl
 Yl
 Yl
 Yl
@@ -20437,12 +20471,12 @@ gd
 gd
 MW
 uo
+RW
+ZV
 Yl
 Yl
 Yl
-Yl
-Yl
-Yl
+ZV
 Yl
 uo
 MW
@@ -20630,13 +20664,13 @@ gd
 gd
 MW
 uo
-RW
-RW
-RW
+Vz
 Yl
 RW
+Yl
+Yl
 RW
-RW
+Yl
 uo
 MW
 gd
@@ -20823,13 +20857,13 @@ gd
 gd
 MW
 uo
-RW
-RW
-RW
 Yl
-RW
-RW
-RW
+ZV
+Yl
+Yl
+ZV
+Yl
+ZV
 uo
 MW
 gd
@@ -21016,12 +21050,12 @@ gd
 gd
 MW
 uo
-RW
-RW
-RW
 Yl
 RW
-RW
+ZV
+Yl
+nQ
+Yl
 RW
 uo
 MW
