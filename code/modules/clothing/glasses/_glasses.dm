@@ -80,6 +80,7 @@
 	vision_flags = SEE_TURFS
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
 	glass_colour_type = /datum/client_colour/glass_colour/lightgreen
+	flags_cover = GLASSESCOVERSEYES | SEALS_EYES
 
 
 /obj/item/clothing/glasses/meson/night
@@ -104,6 +105,7 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 100)
 	custom_price = 250
 	supports_variations = VOX_VARIATION
+	flags_cover = GLASSESCOVERSEYES | SEALS_EYES
 
 /obj/item/clothing/glasses/science/item_action_slot_check(slot)
 	if(slot == ITEM_SLOT_EYES)
@@ -114,6 +116,7 @@
 	desc = "A pair of prescription glasses fitted with an analyzer for scanning items and reagents. "
 	icon_state = "prescriptionpurple"
 	vision_correction = 1
+	flags_cover = GLASSESCOVERSEYES
 
 /obj/item/clothing/glasses/science/prescription/fake
 	name = "science glasses"
@@ -130,6 +133,7 @@
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_INVISIBLE
 	glass_colour_type = /datum/client_colour/glass_colour/green
 	supports_variations = VOX_VARIATION
+	flags_cover = GLASSESCOVERSEYES | SEALS_EYES
 
 /obj/item/clothing/glasses/eyepatch
 	name = "eyepatch"
@@ -167,6 +171,7 @@
 	item_state = "glasses"
 	vision_flags = SEE_OBJS
 	glass_colour_type = /datum/client_colour/glass_colour/lightblue
+	flags_cover = GLASSESCOVERSEYES | SEALS_EYES
 
 /obj/item/clothing/glasses/material/mining
 	name = "optical material scanner"
@@ -248,6 +253,7 @@
 	item_state = "ballistic_goggles"
 	supports_variations = KEPORI_VARIATION | VOX_VARIATION
 	glass_colour_type = /datum/client_colour/glass_colour/lightblue
+	flags_cover = GLASSESCOVERSEYES | SEALS_EYES
 
 /obj/item/clothing/glasses/welding
 	name = "welding goggles"
@@ -351,6 +357,7 @@
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
 	flash_protect = FLASH_PROTECTION_SENSITIVE
 	glass_colour_type = /datum/client_colour/glass_colour/red
+	flags_cover = GLASSESCOVERSEYES | SEALS_EYES
 
 /obj/item/clothing/glasses/thermal/emp_act(severity)
 	. = ..()
@@ -389,6 +396,7 @@
 	icon_state = "eyepatch-0"
 	item_state = "eyepatch-0"
 	var/flipped = FALSE
+	flags_cover = GLASSESCOVERSEYES
 
 /obj/item/clothing/glasses/thermal/eyepatch/AltClick(mob/user)
 	. = ..()
