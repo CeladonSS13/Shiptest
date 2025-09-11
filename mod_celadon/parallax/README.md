@@ -28,8 +28,7 @@ ID мода: CELADON_PARALLAX
 
 ### Изменения *кор кода*
 
-- `code/_onclick/hud/parallax.dm`
-- `code/controllers/subsystem/parallax.dm`
+- EDIT: `code/_onclick/hud/parallax.dm`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

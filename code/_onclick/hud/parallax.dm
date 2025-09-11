@@ -8,7 +8,7 @@
 	if(!length(current_client.parallax_layers_cached))
 		current_client.parallax_layers_cached = list()
 
-		// [CELADON-EDIT] - CELADON_PARALLAX - Дохера изменений оригинала, смотри историю файла
+		// [CELADON-EDIT] - CELADON_PARALLAX
 		// Layer 1 - Background stars (выбираем случайно 1 из 17)
 		var/layer_1_index = rand(0, 16)
 		var/layer_1_path = text2path("/atom/movable/screen/parallax_layer/layer_1/l_[layer_1_index]")
@@ -57,8 +57,8 @@
 			layer_4.alpha = 255
 			layer_4.blend_mode = BLEND_DEFAULT
 			current_client.parallax_layers_cached += layer_4
-		// [/CELADON-EDIT]
 		// Обязательные слои
+		// [/CELADON-EDIT]
 		current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/planet(null, current_client.view)
 		if(SSparallax.random_layer)
 			current_client.parallax_layers_cached += new SSparallax.random_layer
@@ -152,21 +152,16 @@
 		current_client.dont_animate_parallax = world.time + min(animate_time, PARALLAX_LOOP_TIME)
 		animatedir = current_client.parallax_movedir
 
-	// [CELADON-ADD] - CELADON_PARALLAX
-	var/size = 480
-	if(current_client.prefs && current_client.prefs.parallax_quality == PARALLAX_QUALITY_HIGH)
-		size = 960
-	// [/CELADON-ADD]
 	var/matrix/newtransform
 	switch(animatedir)
 		if(NORTH)
-			newtransform = matrix(1, 0, 0, 0, 1, size)		// [CELADON-EDIT] - CELADON_PARALLAX - matrix(1, 0, 0, 0, 1, 480)
+			newtransform = matrix(1, 0, 0, 0, 1, 480)
 		if(SOUTH)
-			newtransform = matrix(1, 0, 0, 0, 1, -size)		// [CELADON-EDIT] - CELADON_PARALLAX - matrix(1, 0, 0, 0, 1,-480)
+			newtransform = matrix(1, 0, 0, 0, 1,-480)
 		if(EAST)
-			newtransform = matrix(1, 0, size, 0, 1, 0)		// [CELADON-EDIT] - CELADON_PARALLAX - matrix(1, 0, 480, 0, 1, 0)
+			newtransform = matrix(1, 0, 480, 0, 1, 0)
 		if(WEST)
-			newtransform = matrix(1, 0, -size, 0, 1, 0)		// [CELADON-EDIT] - CELADON_PARALLAX - matrix(1, 0,-480, 0, 1, 0)
+			newtransform = matrix(1, 0,-480, 0, 1, 0)
 
 	var/shortesttimer
 	if(!skip_windups)
