@@ -714,7 +714,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 						sclera_overlay = mutable_appearance('icons/mob/species/kepori/kepori_eyes.dmi', eyes.sclera_icon_state, -BODYPARTS_LAYER)
 					// [CELADON-ADD] - CELADON_LANIUS
 					else if(islanius(H))
-						eye_overlay = mutable_appearance('mod_celadon/_storge_icons/icons/species/lanius/lanius_organs.dmi', eyes.eye_icon_state, -BODYPARTS_LAYER)
+						eye_overlay = mutable_appearance('mod_celadon/_storage_icons/icons/species/lanius/lanius_organs.dmi', eyes.eye_icon_state, -BODYPARTS_LAYER)
 					// [/CELADON-ADD]
 					else
 						eye_overlay = mutable_appearance(species_eye_path || 'icons/mob/human_face.dmi', eyes.eye_icon_state, -BODYPARTS_LAYER)

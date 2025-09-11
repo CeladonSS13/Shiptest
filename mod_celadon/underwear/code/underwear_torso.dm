@@ -1,5 +1,5 @@
 /datum/sprite_accessory/undershirt
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
 
 // MARK: Female Tops
 

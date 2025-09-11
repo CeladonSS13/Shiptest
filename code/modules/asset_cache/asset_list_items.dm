@@ -97,26 +97,26 @@
 	name = "paper"
 	assets = list(
 		// [CELADON-ADD] - CELADON_STAMPS
-		"stamp-inteq-celadon" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-inteq.png',
-		"inteq-mothership-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/inteq_mothership_stamp.png',
-		"solfed-corps-commander-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/sf_commander_stamp.png',
-		"solfed-captain" = 'mod_celadon/_storge_icons/icons/assets/png/sf_captain_stamp.png',
-		"elysium-brigade-captain-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/elysium_brigade_stamp.png',
-		"elysium-republic-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/elysium_republic_stamp.png',
-		"elysium-avanpost-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/elysium_outpost_stamp.png',
-		"nt-cent-command-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/nanotrasen_central_command_stamp.png',
-		"nt-captain-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/nanotrasen_captain_stamp.png',
-		"syndicate-captain-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/syndicate_captain_stamp.png',
-		"stamp-df" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-df_generic.png',
-		"stamp-df_captain" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-df_captain.png',
-		"stamp-df_meddir" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-df_med_dir.png',
-		"stamp-ne" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-ne_generic.png',
-		"stamp-ne_captain" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-ne_captain.png',
-		"stamp-ne_engdir" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-ne_eng_dir.png',
+		"stamp-inteq-celadon" = 'mod_celadon/_storage_icons/icons/assets/png/large_stamp-inteq.png',
+		"inteq-mothership-stamp" = 'mod_celadon/_storage_icons/icons/assets/png/inteq_mothership_stamp.png',
+		"solfed-corps-commander-stamp" = 'mod_celadon/_storage_icons/icons/assets/png/sf_commander_stamp.png',
+		"solfed-captain" = 'mod_celadon/_storage_icons/icons/assets/png/sf_captain_stamp.png',
+		"elysium-brigade-captain-stamp" = 'mod_celadon/_storage_icons/icons/assets/png/elysium_brigade_stamp.png',
+		"elysium-republic-stamp" = 'mod_celadon/_storage_icons/icons/assets/png/elysium_republic_stamp.png',
+		"elysium-avanpost-stamp" = 'mod_celadon/_storage_icons/icons/assets/png/elysium_outpost_stamp.png',
+		"nt-cent-command-stamp" = 'mod_celadon/_storage_icons/icons/assets/png/nanotrasen_central_command_stamp.png',
+		"nt-captain-stamp" = 'mod_celadon/_storage_icons/icons/assets/png/nanotrasen_captain_stamp.png',
+		"syndicate-captain-stamp" = 'mod_celadon/_storage_icons/icons/assets/png/syndicate_captain_stamp.png',
+		"stamp-df" = 'mod_celadon/_storage_icons/icons/assets/png/large_stamp-df_generic.png',
+		"stamp-df_captain" = 'mod_celadon/_storage_icons/icons/assets/png/large_stamp-df_captain.png',
+		"stamp-df_meddir" = 'mod_celadon/_storage_icons/icons/assets/png/large_stamp-df_med_dir.png',
+		"stamp-ne" = 'mod_celadon/_storage_icons/icons/assets/png/large_stamp-ne_generic.png',
+		"stamp-ne_captain" = 'mod_celadon/_storage_icons/icons/assets/png/large_stamp-ne_captain.png',
+		"stamp-ne_engdir" = 'mod_celadon/_storage_icons/icons/assets/png/large_stamp-ne_eng_dir.png',
 		// [/CELADON-ADD]
 		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
-		"stamp-mime" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-mime.png',
-		"stamp-clown" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-clown.png',
+		"stamp-mime" = 'mod_celadon/_storage_icons/icons/assets/png/large_stamp-mime.png',
+		"stamp-clown" = 'mod_celadon/_storage_icons/icons/assets/png/large_stamp-clown.png',
 		// [/CELADON-ADD]
 		"stamp-deny" = 'icons/stamp_icons/large_stamp-deny.png',
 		"stamp-ok" = 'icons/stamp_icons/large_stamp-ok.png',
@@ -283,14 +283,14 @@
 		"timewaste" = 'icons/UI_Icons/Achievements/Misc/timewaste.png',
 		"upgrade" = 'icons/UI_Icons/Achievements/Misc/upgrade.png',
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
-		"clownking" = 'mod_celadon/_storge_icons/icons/assets/png/clownking.png',
-		"clownthanks" = 'mod_celadon/_storge_icons/icons/assets/png/clownthanks.png',
+		"clownking" = 'mod_celadon/_storage_icons/icons/assets/png/clownking.png',
+		"clownthanks" = 'mod_celadon/_storage_icons/icons/assets/png/clownthanks.png',
 // [/CELADON-ADD]
 		"rule8" = 'icons/UI_Icons/Achievements/Misc/rule8.png',
 		"snail" = 'icons/UI_Icons/Achievements/Misc/snail.png',
 		"mining" = 'icons/UI_Icons/Achievements/Skills/mining.png',
 		// [CELADON-ADD] - CELADON_ACHIEVEMENTS
-		"theinnerhell" = 'mod_celadon/_storge_icons/icons/assets/png/theinnerhell.png'
+		"theinnerhell" = 'mod_celadon/_storage_icons/icons/assets/png/theinnerhell.png'
 		// [/CELADON-ADD]
 	)
 
@@ -470,14 +470,14 @@
 // [CELADON-ADD] - SHIP_SELECTION_REWORK - Добавляем asset для логотипов фракций
 /datum/asset/simple/faction_logos
 	assets = list(
-		"nanotrasen.png" = 'mod_celadon/_storge_icons/icons/assets/logo/nanotrasen.png',
-		"syndicate.png" = 'mod_celadon/_storge_icons/icons/assets/logo/syndicate.png',
-		"inteq.png" = 'mod_celadon/_storge_icons/icons/assets/logo/inteq.png',
-		"solfed.png" = 'mod_celadon/_storge_icons/icons/assets/logo/solfed.png',
-		"independent.png" = 'mod_celadon/_storge_icons/icons/assets/logo/independent.png',
-		"elysium.png" = 'mod_celadon/_storge_icons/icons/assets/logo/elysium.png',
-		"pirates.png" = 'mod_celadon/_storge_icons/icons/assets/logo/pirates.png',
-		"other.png" = 'mod_celadon/_storge_icons/icons/assets/logo/other.png'
+		"nanotrasen.png" = 'mod_celadon/_storage_icons/icons/assets/logo/nanotrasen.png',
+		"syndicate.png" = 'mod_celadon/_storage_icons/icons/assets/logo/syndicate.png',
+		"inteq.png" = 'mod_celadon/_storage_icons/icons/assets/logo/inteq.png',
+		"solfed.png" = 'mod_celadon/_storage_icons/icons/assets/logo/solfed.png',
+		"independent.png" = 'mod_celadon/_storage_icons/icons/assets/logo/independent.png',
+		"elysium.png" = 'mod_celadon/_storage_icons/icons/assets/logo/elysium.png',
+		"pirates.png" = 'mod_celadon/_storage_icons/icons/assets/logo/pirates.png',
+		"other.png" = 'mod_celadon/_storage_icons/icons/assets/logo/other.png'
 	)
 // [/CELADON-ADD]
 
@@ -513,7 +513,7 @@
 	for (var/style in 1 to length(GLOB.podstyles))
 		// [CELADON-EDIT] - CELADON_ELYSIUMPOD
 		// var/icon_file = 'icons/obj/supplypods.dmi' // CELADON-EDIT - ORIGINAL
-		var/icon_file = 'mod_celadon/_storge_icons/icons/structures/supplypods.dmi'
+		var/icon_file = 'mod_celadon/_storage_icons/icons/structures/supplypods.dmi'
 		// [/CELADON-EDIT]
 		var/states = icon_states(icon_file)
 		if (style == STYLE_SEETHROUGH)

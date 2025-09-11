@@ -2,12 +2,12 @@
 	name = "\improper Sell sign"
 	sign_change_name = "Department - Cargo"
 	desc = "A sign labelling an area where you selling objects."
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/signs.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/signs.dmi'
 	icon_state = "sell"
 	is_editable = TRUE
 
 /obj/structure/sign/directions/outpost
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/directions.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/directions.dmi'
 
 
 /obj/structure/sign/directions/outpost/administration

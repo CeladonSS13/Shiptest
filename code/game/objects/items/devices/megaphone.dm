@@ -57,9 +57,9 @@
 /obj/item/megaphone/clown
 	name = "clown's megaphone"
 	desc = "Something that should not exist."
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/device.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/megaphone_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/other/clown_mime/megaphone_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/device.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/megaphone_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/other/clown_mime/megaphone_righthand.dmi'
 	icon_state = "megaphone-clown"
 	item_state = "megaphone-clown"
 	voicespan = list(SPAN_CLOWN)

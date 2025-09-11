@@ -64,9 +64,9 @@ reinforcements left it will attempt to evacuate*/
 
 		if (distress_calls)
 			distress_calls--
-			playsound(src.loc, 'mod_celadon/_storge_sounds/sound/shriek1.ogg', 100, 1, 8, 8)
+			playsound(src.loc, 'mod_celadon/_storage_sounds/sound/shriek1.ogg', 100, 1, 8, 8)
 			spawn(2)
-				playsound(src.loc, 'mod_celadon/_storge_sounds/sound/shriek1.ogg', 100, 1, 8, 8)
+				playsound(src.loc, 'mod_celadon/_storage_sounds/sound/shriek1.ogg', 100, 1, 8, 8)
 				//Playing the sound twice will make it sound really horrible
 
 			visible_message(span_danger("[src] emits a horrifying wail as nearby burrows stir to life!"))

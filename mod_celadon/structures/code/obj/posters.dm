@@ -1,6 +1,6 @@
 // MARK: BAY
 /obj/structure/sign/poster/bay
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/posters.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/posters.dmi'
 	icon_state = "poster_ripped"
 	poster_item_name = "bay poster"
 	poster_item_desc = "It's posters."
@@ -365,7 +365,7 @@
 
 // MARK: POLARIS
 /obj/structure/sign/poster/pol
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/posters.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/posters.dmi'
 	icon_state = "poster_ripped"
 	poster_item_name = "polaris poster"
 	poster_item_desc = "It's posters."
@@ -438,7 +438,7 @@
 
 // MARK: TG
 /obj/structure/sign/poster/tg
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/posters.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/posters.dmi'
 	icon_state = "poster_ripped"
 	poster_item_name = "tg poster"
 	poster_item_desc = "It's posters."

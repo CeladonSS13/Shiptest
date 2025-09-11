@@ -50,16 +50,16 @@
 /obj/item/clothing/under/plasmaman/mime
 	name = "mime envirosuit"
 	desc = "It's not very colourful."
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/plasmaman.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/plasmaman.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/plasmaman.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/plasmaman.dmi'
 	icon_state = "mime_envirosuit"
 	item_state = "mime_envirosuit"
 
 /obj/item/clothing/under/plasmaman/clown
 	name = "clown envirosuit"
 	desc = "<i>'HONK!'</i>"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/plasmaman.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/plasmaman.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/plasmaman.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/plasmaman.dmi'
 	icon_state = "clown_envirosuit"
 	item_state = "clown_envirosuit"
 // [/CELADON-ADD]

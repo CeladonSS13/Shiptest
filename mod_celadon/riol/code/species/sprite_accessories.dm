@@ -5,7 +5,7 @@
 // MARK: CHEST MARKINGS
 
 /datum/sprite_accessory/riol_chest_markings
-	icon = 'mod_celadon/_storge_icons/icons/species/riol/riol_markings.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/riol/riol_markings.dmi'
 	color_src = CHESTRIOLCOLORS
 	body_zone = BODY_ZONE_CHEST
 	synthetic_icon_state = "none"
@@ -31,7 +31,7 @@
 // MARK: BODY MARKINGS
 
 /datum/sprite_accessory/riol_body_markings
-	icon = 'mod_celadon/_storge_icons/icons/species/riol/riol_markings.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/riol/riol_markings.dmi'
 	name = "None"
 	icon_state = "none"
 	color_src = BODYRIOLCOLORS
@@ -118,7 +118,7 @@
 // MARK: NOSE MARKINGS
 
 /datum/sprite_accessory/riol_nose_markings
-	icon = 'mod_celadon/_storge_icons/icons/species/riol/riol_markings.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/riol/riol_markings.dmi'
 	color_src = NOSERIOLCOLORS
 	body_zone = BODY_ZONE_CHEST
 	synthetic_icon_state = "none"
@@ -140,7 +140,7 @@
 // MARK: EARS MARKINGS
 
 /datum/sprite_accessory/riol_ears_markings
-	icon = 'mod_celadon/_storge_icons/icons/species/riol/riol_markings.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/riol/riol_markings.dmi'
 	color_src = EARSRIOLCOLORS
 	body_zone = BODY_ZONE_HEAD
 
@@ -155,7 +155,7 @@
 // MARK: HEAD MARKINGS
 
 /datum/sprite_accessory/riol_head_markings
-	icon = 'mod_celadon/_storge_icons/icons/species/riol/riol_markings.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/riol/riol_markings.dmi'
 	name = "None"
 	icon_state = "none"
 	color_src = HEADRIOLCOLORS
@@ -201,7 +201,7 @@
 //	- У нас нету маркингов хвостов. Надо подумать что делать с этим
 
 /datum/sprite_accessory/riol_tail_markings
-	icon = 'mod_celadon/_storge_icons/icons/species/riol/riol_tail_markings.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/riol/riol_tail_markings.dmi'
 	name = "None"
 	icon_state = "none"
 	// em_block = TRUE
@@ -211,7 +211,7 @@
 	// secondary_color = TRUE
 
 /datum/sprite_accessory/riol_tail_markings_animated
-	icon = 'mod_celadon/_storge_icons/icons/species/riol/riol_tail_markings.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/riol/riol_tail_markings.dmi'
 	name = "None"
 	icon_state = "none"
 	// em_block = TRUE
@@ -275,13 +275,13 @@
 // MARK: TAIL
 
 /datum/sprite_accessory/tails/riol
-	icon = 'mod_celadon/_storge_icons/icons/species/riol/riol_tail.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/riol/riol_tail.dmi'
 	body_zone = BODY_ZONE_CHEST
 	secondary_color = TRUE
 	color_src = TAILRIOLCOLORS
 
 /datum/sprite_accessory/tails_animated/riol
-	icon = 'mod_celadon/_storge_icons/icons/species/riol/riol_tail.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/riol/riol_tail.dmi'
 	color_src = TAILRIOLCOLORS
 
 /datum/sprite_accessory/tails/riol/default
@@ -319,7 +319,7 @@
 // MARK: FACIAL HAIRS
 
 /datum/sprite_accessory/riol_facial_hairs
-	icon = 'mod_celadon/_storge_icons/icons/species/riol/riol_facial_hairs.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/riol/riol_facial_hairs.dmi'
 	name = "None"
 	icon_state = "facial_hair_none"
 	body_zone = BODY_ZONE_HEAD
@@ -383,7 +383,7 @@
 // MARK: HAIRS
 
 /datum/sprite_accessory/riol_hairs
-	icon = 'mod_celadon/_storge_icons/icons/species/riol/riol_hairs.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/riol/riol_hairs.dmi'
 	body_zone = BODY_ZONE_HEAD
 
 /datum/sprite_accessory/riol_hairs/none
@@ -521,7 +521,7 @@
 // MARK: EARS
 
 /datum/sprite_accessory/riol_ears
-	icon = 'mod_celadon/_storge_icons/icons/species/riol/riol_ears.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/riol/riol_ears.dmi'
 	body_zone = BODY_ZONE_HEAD
 	secondary_color = TRUE
 
