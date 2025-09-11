@@ -374,6 +374,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/outpost/hallway/aft)
+"aoi" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/outpost/exterior/ocean)
 "aok" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 1
@@ -657,6 +663,18 @@
 	},
 /turf/open/space/basic,
 /area/space)
+"aAp" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/door/airlock/multi_tile/medical,
+/obj/effect/turf_decal/corner/transparent/syndiered/mono,
+/obj/effect/turf_decal/industrial/traffic/fulltile,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/mapping_helpers/airlock/locked,
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/hall_2)
 "aBe" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -3332,6 +3350,15 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
+"coh" = (
+/obj/machinery/power/apc/auto_name/directional/north{
+	req_access_txt = "8100, 8111";
+	dir = 4;
+	pixel_y = 0;
+	pixel_x = 29
+	},
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/hall_2)
 "coJ" = (
 /obj/structure/railing{
 	dir = 4
@@ -4295,6 +4322,10 @@
 /obj/structure/flora/junglebush/large,
 /turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/outpost/hallway/central)
+"cSK" = (
+/obj/effect/turf_decal/industrial/warning,
+/turf/open/floor/plating,
+/area/outpost/exterior/ocean)
 "cTc" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -4341,6 +4372,15 @@
 	},
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/hallway/central)
+"cUq" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/hall_2)
 "cUs" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/wood,
@@ -6137,6 +6177,9 @@
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/outpost/fraction/inteq)
+"ebP" = (
+/turf/closed/indestructible/reinforced,
+/area/outpost/exterior/ocean)
 "ecd" = (
 /obj/item/reagent_containers/condiment/milk{
 	pixel_x = 8;
@@ -6238,6 +6281,11 @@
 	},
 /turf/open/floor/carpet/donk,
 /area/outpost/fraction/syndi/donkco_shop)
+"ecW" = (
+/obj/effect/turf_decal/industrial/warning,
+/obj/machinery/light/floor/hangar,
+/turf/open/floor/plating,
+/area/outpost/exterior/ocean)
 "edl" = (
 /obj/structure/window/reinforced{
 	dir = 1;
@@ -6359,19 +6407,13 @@
 /area/outpost/hallway/fore)
 "eiE" = (
 /obj/effect/turf_decal/corner/transparent/blue/half,
-/obj/effect/turf_decal/corner/transparent/lime/half{
-	dir = 1
-	},
-/obj/machinery/door/airlock/medical/glass{
-	req_one_access_txt = "8119"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/white,
-/area/outpost/medical/storage)
+/area/outpost/medical/hall_2)
 "eiT" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -11625,6 +11667,13 @@
 /area/ruin/beach/complex{
 	name = "Elysium Town"
 	})
+"hGG" = (
+/obj/structure/closet/crate/freezer/blood,
+/obj/item/reagent_containers/glass/beaker/plastic,
+/obj/item/reagent_containers/glass/beaker/plastic,
+/obj/item/reagent_containers/glass/beaker/plastic,
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/storage)
 "hGY" = (
 /obj/effect/turf_decal/techfloor/orange/corner{
 	dir = 8
@@ -13704,6 +13753,13 @@
 /obj/structure/catwalk/over/plated_catwalk,
 /turf/open/floor/plating/rust,
 /area/outpost/maintenance/aft)
+"jas" = (
+/obj/machinery/light/floor/hangar,
+/obj/effect/turf_decal/industrial/warning/corner{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/outpost/exterior/ocean)
 "jbL" = (
 /obj/effect/turf_decal/steeldecal/steel_decals10{
 	dir = 1
@@ -13867,10 +13923,9 @@
 /area/outpost/medical/palata_1)
 "jgN" = (
 /obj/effect/turf_decal/corner/transparent/lime/three_quarters,
-/obj/structure/closet/crate/freezer/blood,
-/obj/item/reagent_containers/glass/beaker/plastic,
-/obj/item/reagent_containers/glass/beaker/plastic,
-/obj/item/reagent_containers/glass/beaker/plastic,
+/obj/machinery/smartfridge/bloodbank/preloaded{
+	req_one_access_txt = "8123"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/storage)
 "jha" = (
@@ -14937,6 +14992,18 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/aft)
+"jVe" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/hall_2)
 "jVi" = (
 /obj/machinery/door/airlock/maintenance_hatch,
 /obj/effect/mapping_helpers/airlock/unres{
@@ -15788,6 +15855,13 @@
 /area/ruin/beach/complex{
 	name = "Elysium Town"
 	})
+"kwz" = (
+/obj/structure/chair/comfy/blue/corpo/directional/west,
+/obj/machinery/light/colored/white/directional/south{
+	pixel_y = -7
+	},
+/turf/open/floor/carpet/blue,
+/area/outpost/fraction/nanotrasen)
 "kwQ" = (
 /obj/effect/turf_decal/corner/opaque/yellow/full,
 /obj/effect/turf_decal/industrial/hatch/yellow,
@@ -16154,6 +16228,11 @@
 /area/ruin/beach/complex{
 	name = "Elysium Town"
 	})
+"kFd" = (
+/obj/machinery/light/floor/hangar,
+/obj/effect/turf_decal/industrial/warning/corner,
+/turf/open/floor/plating,
+/area/outpost/exterior/ocean)
 "kFi" = (
 /obj/structure/grille/broken,
 /obj/effect/decal/cleanable/dirt,
@@ -16235,6 +16314,9 @@
 	dir = 1
 	},
 /obj/item/trash/lifosa,
+/obj/machinery/light/colored/white/directional/south{
+	pixel_y = -7
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
 "kHK" = (
@@ -17586,10 +17668,6 @@
 /area/outpost/crew/library)
 "lFw" = (
 /obj/structure/railing/corner/wood,
-/obj/structure/flora/tree/palm{
-	icon_state = "palm2";
-	pixel_x = -31
-	},
 /turf/closed/indestructible/rock/jungle,
 /area/outpost/crew/garden)
 "lFy" = (
@@ -17988,6 +18066,12 @@
 	},
 /turf/open/floor/concrete/slab_4,
 /area/outpost/hallway/central)
+"lSc" = (
+/obj/effect/turf_decal/corner/transparent/syndiered/mono,
+/obj/effect/turf_decal/industrial/traffic/fulltile,
+/obj/effect/mapping_helpers/airlock/locked,
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/hall_2)
 "lSl" = (
 /obj/structure/sign/directions/outpost/bar{
 	pixel_y = -20
@@ -18518,6 +18602,18 @@
 	},
 /turf/open/floor/carpet/red_gold,
 /area/outpost/fraction/syndi/donkco_shop)
+"mii" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/hall_2)
 "miq" = (
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/grass,
@@ -18985,12 +19081,6 @@
 	name = "bolt door shuttle cargo";
 	req_one_access_txt = "8100"
 	},
-/obj/machinery/light_switch{
-	dir = 4;
-	pixel_x = -23;
-	pixel_y = -2;
-	id = "holo_nt_cargo"
-	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
 "mCd" = (
@@ -19319,6 +19409,13 @@
 /obj/structure/stone_tile/center/cracked,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/outpost/hallway/central)
+"mNb" = (
+/obj/machinery/door/airlock/multi_tile/medical,
+/obj/effect/turf_decal/industrial/traffic/fulltile,
+/obj/effect/turf_decal/corner/transparent/syndiered/mono,
+/obj/effect/mapping_helpers/airlock/locked,
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/hall_2)
 "mNo" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/railing/wood{
@@ -19377,6 +19474,12 @@
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/plating,
 /area/outpost/crew/dop_zone_2)
+"mQw" = (
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/hall_2)
 "mQI" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -19426,6 +19529,11 @@
 /obj/structure/table/wood/reinforced,
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
+"mRY" = (
+/obj/effect/turf_decal/corner/transparent/syndiered/mono,
+/obj/effect/turf_decal/industrial/traffic/fulltile,
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/hall_2)
 "mSb" = (
 /obj/machinery/conveyor/auto{
 	dir = 1;
@@ -19544,6 +19652,21 @@
 	},
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/fraction/syndi)
+"mXw" = (
+/obj/item/fishing_rod{
+	pixel_x = 15;
+	pixel_y = 8;
+	color = "#999999"
+	},
+/obj/structure/chair/plastic{
+	color = "#999999";
+	dir = 4;
+	layer = 2
+	},
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "mXx" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
@@ -20360,6 +20483,12 @@
 /obj/structure/flora/ausbushes/grassybush,
 /turf/open/floor/grass,
 /area/outpost/hallway/aft)
+"nDl" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/outpost/exterior/ocean)
 "nEb" = (
 /obj/effect/turf_decal/techfloor/orange,
 /obj/machinery/computer/monitor{
@@ -21577,11 +21706,18 @@
 /area/outpost/hallway/aft)
 "ozK" = (
 /obj/effect/turf_decal/corner/transparent/lime/half,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 4
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/door/airlock/medical/glass{
+	req_one_access_txt = "8119";
+	dir = 8
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/storage)
@@ -22734,11 +22870,8 @@
 /turf/open/floor/plasteel,
 /area/outpost/hallway/fore)
 "plM" = (
-/obj/effect/turf_decal/corner/transparent/lime/half{
-	dir = 1
-	},
 /turf/open/floor/plasteel/white,
-/area/outpost/medical/storage)
+/area/outpost/medical/hall_2)
 "plS" = (
 /obj/machinery/door/airlock/hatch{
 	dir = 8;
@@ -23504,6 +23637,15 @@
 /obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/red_gold,
 /area/outpost/fraction/syndi/donkco_shop)
+"pFk" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating,
+/area/outpost/exterior/ocean)
 "pFu" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/firealarm/directional/north,
@@ -23559,6 +23701,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
+"pHi" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "2-4";
+	tag = null
+	},
+/turf/open/floor/plating,
+/area/outpost/exterior/ocean)
 "pIp" = (
 /obj/effect/turf_decal/trimline/opaque/beige/filled/line{
 	dir = 1
@@ -23762,6 +23914,12 @@
 	},
 /turf/open/floor/concrete/slab_4,
 /area/outpost/hallway/aft)
+"pPw" = (
+/obj/effect/turf_decal/corner/transparent/lime/three_quarters{
+	dir = 8
+	},
+/turf/closed/indestructible/reinforced,
+/area/outpost/medical/storage)
 "pPY" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/brigdoor{
@@ -23960,6 +24118,15 @@
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/concrete/reinforced,
 /area/outpost/hallway/aft)
+"pZh" = (
+/obj/effect/turf_decal/industrial/traffic/fulltile,
+/obj/effect/turf_decal/corner/transparent/syndiered/mono,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/mapping_helpers/airlock/locked,
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/hall_2)
 "pZB" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -24590,6 +24757,16 @@
 	},
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/central)
+"qvy" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/traffic,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating,
+/area/outpost/exterior/ocean)
 "qvD" = (
 /obj/structure/flora/herb/f,
 /turf/open/floor/grass,
@@ -24702,6 +24879,9 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
+	},
+/obj/machinery/recharge_station{
+	pixel_y = 22
 	},
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_3)
@@ -24817,6 +24997,12 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/engineering/atmospherics)
+"qER" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/hall_2)
 "qFk" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#792f27";
@@ -25836,6 +26022,15 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/engineering/atmospherics)
+"ric" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/machinery/light_switch{
+	dir = 8;
+	pixel_x = 22;
+	pixel_y = 13
+	},
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/storage)
 "riK" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/portable_atmospherics/canister/proto,
@@ -26190,6 +26385,17 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/central)
+"rvN" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/machinery/light/floor/hangar,
+/obj/effect/turf_decal/industrial/traffic/corner,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating,
+/area/outpost/exterior/ocean)
 "rwj" = (
 /obj/effect/turf_decal/steeldecal/steel_decals10,
 /obj/effect/turf_decal/steeldecal/steel_decals10{
@@ -26844,6 +27050,16 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/nanoweave,
 /area/outpost/crew/canteen)
+"rSo" = (
+/obj/machinery/light/floor/hangar,
+/obj/effect/turf_decal/industrial/warning/corner{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating,
+/area/outpost/exterior/ocean)
 "rSv" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -27120,9 +27336,6 @@
 	},
 /obj/structure/cable{
 	icon_state = "0-8"
-	},
-/obj/machinery/power/apc/auto_name/directional/north{
-	req_access_txt = "8100, 8111"
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
@@ -27949,6 +28162,7 @@
 /turf/open/floor/plasteel/sepia,
 /area/outpost/crew/canteen)
 "sIT" = (
+/obj/structure/closet/crate/large,
 /turf/open/floor/plasteel/white,
 /area/outpost/fraction/nanotrasen)
 "sJi" = (
@@ -28941,6 +29155,13 @@
 	dir = 6
 	},
 /area/outpost/fraction/nanotrasen)
+"tuF" = (
+/obj/machinery/light/floor/hangar,
+/obj/effect/turf_decal/industrial/warning/corner{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/outpost/exterior/ocean)
 "tuK" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/effect/decal/cleanable/dirt,
@@ -29065,6 +29286,15 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/crew/dop_zone_1)
+"tyF" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/traffic/corner{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/outpost/exterior/ocean)
 "tzg" = (
 /obj/machinery/recycler{
 	mouse_opacity = 0
@@ -30147,6 +30377,7 @@
 /obj/effect/turf_decal/trimline/opaque/nsorange/corner{
 	dir = 8
 	},
+/obj/machinery/light/colored/white/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
 "ujg" = (
@@ -30314,14 +30545,16 @@
 	},
 /area/outpost/hallway/fore)
 "uqf" = (
-/obj/effect/turf_decal/corner/transparent/lime/three_quarters{
-	dir = 8
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 1
 	},
-/obj/machinery/smartfridge/bloodbank/preloaded{
-	req_one_access_txt = "8123"
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/white,
-/area/outpost/medical/storage)
+/area/outpost/medical/hall_2)
 "uqg" = (
 /obj/structure/destructible/tribal_torch{
 	pixel_y = 13
@@ -32005,6 +32238,15 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/concrete/slab_1,
 /area/outpost/hallway/aft)
+"vqj" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating,
+/area/outpost/exterior/ocean)
 "vqp" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -32858,6 +33100,16 @@
 	},
 /turf/open/floor/plasteel/patterned,
 /area/outpost/vacant_rooms/shop)
+"vQk" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/turf_decal/corner/transparent/syndiered/mono,
+/obj/effect/turf_decal/industrial/traffic/fulltile,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/hall_2)
 "vQr" = (
 /obj/singularity/no_radiation{
 	dissipate = 0;
@@ -33260,6 +33512,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete/slab_1,
 /area/outpost/hallway/central)
+"wgp" = (
+/obj/structure/fans/tiny,
+/obj/machinery/door/poddoor/ert{
+	id = "outpost_med_hangar";
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/outpost/exterior/ocean)
 "whu" = (
 /obj/structure/sink/kitchen{
 	dir = 4;
@@ -33747,6 +34007,12 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 5
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/storage)
 "wyz" = (
@@ -34139,6 +34405,16 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
+"wNg" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/traffic,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating,
+/area/outpost/exterior/ocean)
 "wNq" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	icon_state = "pipe11-4";
@@ -34975,6 +35251,12 @@
 	},
 /turf/open/floor/concrete/slab_1,
 /area/outpost/hallway/central)
+"xyK" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/outpost/exterior/ocean)
 "xzx" = (
 /obj/effect/turf_decal/corner/opaque/yellow{
 	dir = 1
@@ -34989,21 +35271,23 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/inteq)
 "xzT" = (
-/obj/effect/turf_decal/corner/transparent/lime/three_quarters,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 10
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/machinery/light_switch{
-	dir = 8;
-	pixel_x = 22;
-	pixel_y = 13
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
 	},
 /turf/open/floor/plasteel/white,
-/area/outpost/medical/storage)
+/area/outpost/medical/hall_2)
 "xAk" = (
 /obj/structure/chair/sofa/blue/right/directional/south,
 /obj/effect/turf_decal/siding/wood{
@@ -35101,6 +35385,15 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
+"xDw" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 8
+	},
+/obj/effect/turf_decal/techfloor{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/outpost/exterior/ocean)
 "xDQ" = (
 /obj/effect/turf_decal/corner/transparent/blue{
 	dir = 10
@@ -35733,6 +36026,18 @@
 /area/ruin/beach/complex{
 	name = "Elysium Town"
 	})
+"xZd" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/hall_2)
 "xZh" = (
 /obj/structure/window/reinforced{
 	pixel_y = -5
@@ -38334,7 +38639,7 @@ wTB
 vyT
 vyT
 qiS
-kLv
+mXw
 cNI
 vyT
 icc
@@ -51124,7 +51429,7 @@ weA
 xig
 nYp
 kjS
-wmK
+kwz
 gEb
 ydd
 tlR
@@ -55537,7 +55842,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+ruV
 pdc
 pdc
 pdc
@@ -56478,7 +56783,7 @@ pdc
 pdc
 bdG
 pdc
-pdc
+ruV
 pdc
 pdc
 pdc
@@ -58403,9 +58708,9 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
+cGD
+cGD
+cGD
 cGD
 cGD
 cGD
@@ -58587,12 +58892,12 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+cGD
+cGD
+cGD
+cGD
+cGD
+cGD
 cGD
 cGD
 cGD
@@ -58770,16 +59075,16 @@ pdc
 pdc
 pdc
 pdc
+cGD
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+cGD
+cGD
+cGD
+cGD
+cGD
+cGD
+cGD
 cGD
 cGD
 cGD
@@ -58957,16 +59262,16 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+cGD
+cGD
+cGD
+cGD
+cGD
+cGD
+cGD
+cGD
+cGD
+cGD
 cGD
 cGD
 cGD
@@ -59143,17 +59448,17 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+cGD
+cGD
+cGD
+cGD
+cGD
+cGD
+cGD
+cGD
+cGD
+cGD
+cGD
 cGD
 cGD
 cGD
@@ -59329,19 +59634,19 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
 cGD
+cGD
+ebP
+ebP
+ebP
+ebP
+ebP
+ebP
+ebP
+ebP
+ebP
+ebP
+ebP
 cGD
 cGD
 cGD
@@ -59516,19 +59821,19 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
 cGD
+cGD
+ebP
+kFd
+aoi
+aoi
+aoi
+pHi
+vqj
+vqj
+vqj
+rSo
+ebP
 cGD
 cGD
 cGD
@@ -59703,19 +60008,19 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
 cGD
+cGD
+ebP
+cSK
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+pFk
+ebP
 cGD
 cGD
 cGD
@@ -59889,20 +60194,20 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+cGD
+cGD
+cGD
+ebP
+cSK
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+pFk
+ebP
 cGD
 cGD
 cGD
@@ -60076,20 +60381,20 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+cGD
+cGD
+cGD
+ebP
+cSK
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+pFk
+ebP
 cGD
 cGD
 cGD
@@ -60263,20 +60568,20 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+cGD
+cGD
+cGD
+ebP
+cSK
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+pFk
+ebP
 cGD
 cGD
 cGD
@@ -60450,20 +60755,20 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
 cGD
+cGD
+cGD
+ebP
+cSK
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+pFk
+ebP
 cGD
 cGD
 cGD
@@ -60636,21 +60941,21 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
 cGD
+cGD
+cGD
+cGD
+ebP
+cSK
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+pFk
+ebP
 cGD
 cGD
 cGD
@@ -60824,24 +61129,24 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
 cGD
 cGD
 cGD
-cGD
-cGD
+ebP
+ecW
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+rvN
+ebP
+vfN
+vfN
+vfN
+vfN
 sNm
 gSz
 gSz
@@ -61011,24 +61316,24 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
 cGD
 cGD
 cGD
-cGD
-cGD
+ebP
+cSK
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+qvy
+mNb
+plM
+plM
+plM
+plM
 sNm
 sNm
 sNm
@@ -61198,27 +61503,27 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
 cGD
 cGD
 cGD
-cGD
-cGD
-cGD
-cGD
+ebP
+cSK
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+wNg
+pZh
+qER
+qER
+cUq
+plM
 hYN
 xTb
+hGG
 eZa
 eMi
 jZd
@@ -61385,27 +61690,27 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
 cGD
 cGD
 cGD
-cGD
-cGD
-cGD
+ebP
+cSK
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+tyF
+ebP
+plM
+plM
+mii
+plM
 hYN
 qek
+ric
 wyy
 jgN
 hYN
@@ -61572,27 +61877,27 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
 cGD
 cGD
 cGD
-cGD
-cGD
-cGD
-hYN
+ebP
+cSK
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+xyK
+ebP
 plM
+plM
+jVe
+plM
+hYN
+pPw
+hYN
 ozK
 hYN
 hYN
@@ -61759,26 +62064,26 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
 cGD
 cGD
 cGD
-cGD
-cGD
-hYN
+ebP
+cSK
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+xyK
+ebP
+plM
+plM
+xZd
+bjo
+aAp
+vQk
 uqf
 xzT
 eiE
@@ -61947,28 +62252,28 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
 cGD
 cGD
-cGD
-cGD
-hYN
-hYN
-hYN
-hYN
+ebP
+cSK
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+xDw
+xyK
+ebP
+plM
+plM
+plM
+plM
+lSc
+mRY
+mQw
+plM
+coh
 sbP
 aFX
 lAb
@@ -62134,26 +62439,26 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
 cGD
 cGD
-cGD
-cGD
-cGD
-cGD
+ebP
+jas
+nDl
+nDl
+nDl
+nDl
+nDl
+nDl
+nDl
+tuF
+ebP
+vfN
+vfN
+vfN
+vfN
+vfN
+vfN
+vfN
 cPd
 cPd
 fNR
@@ -62322,20 +62627,20 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+cGD
+ebP
+wgp
+wgp
+wgp
+wgp
+wgp
+wgp
+wgp
+wgp
+wgp
+ebP
+cGD
+cGD
 cGD
 cGD
 cGD
@@ -62521,9 +62826,9 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
+cGD
+cGD
+cGD
 cGD
 cGD
 cGD
@@ -62710,8 +63015,8 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
+cGD
+cGD
 cGD
 cGD
 cGD
@@ -62898,7 +63203,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+cGD
 pMQ
 pMQ
 cGD
