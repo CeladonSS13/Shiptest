@@ -15,18 +15,16 @@
 ## Список файлов что нужно собрать
 ```
 layer1/ (звезды):
-layer1_0.png, layer1_1.png, layer1_2.png, layer1_3.png, layer1_4.png, layer1_5.png
-layer1_6.png, layer1_7.png, layer1_8.png, layer1_9.png, layer1_10.png, layer1_11.png
-layer1_12.png, layer1_13.png, layer1_14.png, layer1_15.png, layer1_16.png
+Layer 1: layer1_0, layer1_1, ... layer1_20 (21 элемент)
 
 layer2/ (туманности):
-layer2.png, layer2_1.png, layer2_2.png, layer2_3.png, layer2_4.png
+Layer 2: layer2_0, layer2_1, ... layer2_20 (21 элемент)
 
 layer3/ (передний план):
-layer3.png, layer3_1.png, layer3_2.png
+Layer 3: layer3_0, layer3_1, ... layer3_20 (21 элемент)
 
 layer4/ (объекты):
-asteroids.png, trash.png, empty.png
+Layer 4: layer4_0, layer4_1, ... layer4_20 (21 элемент)
 ```
 
 Это жестко заданный список. Любой из файлов ты можешь заменить на свою картинку, главное чтобы имя было такое же!
