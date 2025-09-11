@@ -1,5 +1,5 @@
 /datum/sprite_accessory/undershirt
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
 
 // MARK: Female Tops
 
@@ -131,6 +131,10 @@
 /datum/sprite_accessory/undershirt/turtle_sleeveless
 	name = "Sleeveless Turtleneck (Greyscale)"
 	icon_state = "turtle_sleeveless"
+
+/datum/sprite_accessory/undershirt/turtle_smooth
+	name = "Smooth Turtleneck (Greyscale)"
+	icon_state = "turtle_smooth"
 
 /datum/sprite_accessory/undershirt/buttondown
 	name = "Button-down Shirt (Greyscale)"

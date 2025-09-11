@@ -6,7 +6,7 @@
 
 // Объектами сделано для того чтобы избежать шаблонизации в Wall
 /obj/structure_admin/indestructible/distress_shuttle
-	icon = 'mod_celadon/_storge_icons/icons/structures/shuttle/distress_shuttle.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/shuttle/distress_shuttle.dmi'
 	icon_state = "6,4"
 
 /obj/structure_admin/indestructible/distress_shuttle/decal_1

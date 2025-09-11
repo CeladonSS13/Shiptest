@@ -13,8 +13,8 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 	"Operative" = 'icons/hud/screen_operative.dmi',
 	"Clockwork" = 'icons/hud/screen_clockwork.dmi',
 // [CELADON-ADD] - NEW UI SCREENS
-	"Tetramon (Ru)" = 'mod_celadon/_storge_icons/icons/assets/hud/screen_tetramon.dmi',
-	"Wayfaron (Goon)" = 'mod_celadon/_storge_icons/icons/assets/hud/screen_wayfaron.dmi',
+	"Tetramon (Ru)" = 'mod_celadon/_storage_icons/icons/assets/hud/screen_tetramon.dmi',
+	"Wayfaron (Goon)" = 'mod_celadon/_storage_icons/icons/assets/hud/screen_wayfaron.dmi',
 // [/CELADON-ADD]
 	"Glass" = 'icons/hud/screen_glass.dmi'
 ))

@@ -40,7 +40,7 @@ ID мода: CELADON_UNDERWEAR
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- mod_celadon/_storge_icons/icons/items/clothing/underwear
+- mod_celadon/_storage_icons/icons/items/clothing/underwear
 
 ### Авторы
 

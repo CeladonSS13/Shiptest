@@ -1,13 +1,13 @@
 /obj/item/reverse_bear_trap
 	name = "reverse bear trap"
 	desc = "A horrifying set of shut metal jaws, rigged to a kitchen timer and secured by padlock to a head-mounted clamp. To apply, hit someone with it."
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/device.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/device.dmi'
 	icon_state = "reverse_bear_trap"
 	slot_flags = ITEM_SLOT_HEAD
 	flags_1 = CONDUCT_1
 	resistance_flags = FIRE_PROOF | UNACIDABLE
 	w_class = WEIGHT_CLASS_NORMAL
-	obj_integrity = 300
+	atom_integrity = 300
 	max_integrity = 300
 	item_state = "rack_parts"
 	lefthand_file = 'icons/mob/inhands/items_lefthand.dmi'

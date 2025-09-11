@@ -94,7 +94,7 @@
 		if(target && prob(10))
 			move_dir = get_dir(src,target)
 		var/turf/T = get_step(src, move_dir)
-		if(can_move(T))
+		if(can_move(T) && tesla_can_move(T)) // [CELADON-EDIT] - FIXES_TESLA_ON_OVERMAP // if(can_move(T)) // ORIGINAL
 			forceMove(T)
 			setDir(move_dir)
 

@@ -39,7 +39,7 @@
 	var/ghost_type = tgui_input_list(usr, "Какого призрака ты хочешь выбрать?", "Изменение призрака", client.donator.DONATOR_GHOST_LIST, 30 SECONDS)
 	if(!ghost_type)
 		return
-	icon = 'mod_celadon/_storge_icons/icons/assets/vip/ghost.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/assets/vip/ghost.dmi'
 	icon_state = ghost_type
 
 /mob/dead/observer/verb/ChangerColorGhost()

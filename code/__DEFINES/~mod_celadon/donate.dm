@@ -1,4 +1,4 @@
-// Список доступных иконок из файла: 'mod_celadon/_storge_icons/icons/assets/vip/ghost.dmi'
+// Список доступных иконок из файла: 'mod_celadon/_storage_icons/icons/assets/vip/ghost.dmi'
 #define VIP_GHOST_TIER1_LIST list(\
 	"ghost_classic",\
 	"ghost_old",\

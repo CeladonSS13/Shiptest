@@ -170,7 +170,7 @@
 /datum/team/custom/proc/admin_force_hud(mob/user)
 // [CELADON-EDIT] - CELADON_ADD_HUDS
 //	var/list/possible_icons = icon_states('icons/mob/hud.dmi')
-	var/list/possible_icons = icon_states('mod_celadon/_storge_icons/icons/resprite/hud/hud.dmi')
+	var/list/possible_icons = icon_states('mod_celadon/_storage_icons/icons/resprite/hud/hud.dmi')
 // [/CELADON-EDIT]
 	var/new_hud_state = input(user,"Choose hud icon state","Custom HUD","traitor") as null|anything in sortList(possible_icons)
 	if(!new_hud_state)

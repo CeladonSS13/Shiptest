@@ -1,5 +1,5 @@
 ///from base of [/atom/proc/update_integrity]: (old_value, new_value)
-#define COMSIG_ATOM_INTEGRITY_CHANGED "atom_integrity_changed"
+//#define COMSIG_ATOM_INTEGRITY_CHANGED "atom_integrity_changed"
 
 /**
  * Checks whether the target turf is in a valid state to accept a directional construction
@@ -24,16 +24,6 @@
 				return FALSE
 	return TRUE
 
-/// Get the atom's armor reference
-/obj/proc/get_armor()
-	RETURN_TYPE(/datum/armor)
-	return (armor ||= getArmor(type))
-
-/// Helper to get a specific rating for the atom's armor
-/obj/proc/get_armor_rating(damage_type)
-	var/datum/armor/armor = get_armor()
-	return armor?.getRating(damage_type)
-
 /// Sets the armor of this atom to the specified armor
 /obj/proc/set_armor(datum/armor/armor)
 	if(src.armor == armor)
@@ -47,15 +37,6 @@
 	var/datum/armor/armor = get_armor()
 	set_armor(armor.generate_new_with_specific(list("[damage_type]" = rating)))
 
-/// Proc for recovering obj_integrity. Returns the amount repaired by
-/obj/proc/repair_damage(amount)
-	if(amount <= 0) // We only recover here
-		return
-	var/new_integrity = min(max_integrity, obj_integrity + amount)
-	. = new_integrity - obj_integrity
-
-	obj_integrity = max_integrity
-
 /obj/structure/CanAllowThrough(atom/movable/mover, turf/target)
 	. = ..()
 
@@ -65,7 +46,7 @@
 // Snow, wood, sandbags, metal, plasteel
 
 /obj/structure/deployable_barricade
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/barricade.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/barricade.dmi'
 	anchored = TRUE
 	density = TRUE
 	climbable = TRUE
@@ -217,7 +198,7 @@
 		if(!disassembled && destroyed_stack_amount)
 			stack_amt = destroyed_stack_amount
 		else
-			stack_amt = round(stack_amount * (obj_integrity/max_integrity)) //Get an amount of sheets back equivalent to remaining health. Obviously, fully destroyed means 0
+			stack_amt = round(stack_amount * (atom_integrity/max_integrity)) //Get an amount of sheets back equivalent to remaining health. Obviously, fully destroyed means 0
 
 		if(stack_amt)
 			new stack_type (loc, stack_amt)
@@ -242,7 +223,7 @@
 /obj/structure/deployable_barricade/update_icon()
 	. = ..()
 	var/damage_state
-	var/percentage = (obj_integrity / max_integrity) * 100
+	var/percentage = (atom_integrity / max_integrity) * 100
 	switch(percentage)
 		if(-INFINITY to 25)
 			damage_state = 3
@@ -277,9 +258,9 @@
 	. = ..()
 	if(is_wired)
 		if(!closed)
-			. += image('mod_celadon/_storge_icons/icons/structures/obj/barricade.dmi', icon_state = "[barricade_type]_wire")
+			. += image('mod_celadon/_storage_icons/icons/structures/obj/barricade.dmi', icon_state = "[barricade_type]_wire")
 		else
-			. += image('mod_celadon/_storge_icons/icons/structures/obj/barricade.dmi', icon_state = "[barricade_type]_closed_wire")
+			. += image('mod_celadon/_storage_icons/icons/structures/obj/barricade.dmi', icon_state = "[barricade_type]_closed_wire")
 
 /obj/structure/deployable_barricade/verb/rotate()
 	set name = "Rotate barricade counterclockwise <"
@@ -378,7 +359,7 @@
 /obj/structure/deployable_barricade/wooden
 	name = "wooden barricade"
 	desc = "A wall hammered out of wooden planks may not even look very strong, but it still provides some protection."
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/barricade.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/barricade.dmi'
 	icon_state = "wooden"
 	max_integrity = 100
 	layer = OBJ_LAYER
@@ -393,7 +374,7 @@
 	. = ..()
 	if(istype(I, /obj/item/stack/sheet/mineral/wood))
 		var/obj/item/stack/sheet/mineral/wood/D = I
-		if(obj_integrity >= max_integrity)
+		if(atom_integrity >= max_integrity)
 			return
 
 		if(D.get_amount() < 1)
@@ -402,7 +383,7 @@
 
 		visible_message(span_notice("[user] begins to repair [src]."))
 
-		if(!do_after(user,20, src) || obj_integrity >= max_integrity)
+		if(!do_after(user,20, src) || atom_integrity >= max_integrity)
 			return
 
 		if(!D.use(1))
@@ -456,7 +437,7 @@
 		if(barricade_upgrade_type)
 			to_chat(user, span_warning("[src] cannot be folded up with upgrades attached, remove them first!"))
 			return FALSE
-		if(obj_integrity < max_integrity)
+		if(atom_integrity < max_integrity)
 			to_chat(user, span_warning("[src] cannot be folded up while damaged!"))
 			return FALSE
 		user.visible_message(span_notice("[user] starts folding [src] up!"), span_notice("You start folding [src] up!"))
@@ -469,7 +450,7 @@
 			if(barricade_upgrade_type)
 				to_chat(user, span_warning("[src] cannot be folded up with upgrades attached, remove them first!"))
 				return FALSE
-			if(obj_integrity < max_integrity)
+			if(atom_integrity < max_integrity)
 				to_chat(user, span_warning("[src] cannot be folded up while damaged!"))
 				return FALSE
 			user.visible_message(span_notice("[user] folds [src] up!"), span_notice("You neatly fold [src] up!"))
@@ -487,7 +468,7 @@
 	if(!barricade_upgrade_type)
 		return
 	var/damage_state
-	var/percentage = (obj_integrity / max_integrity) * 100
+	var/percentage = (atom_integrity / max_integrity) * 100
 	switch(percentage)
 		if(-INFINITY to 25)
 			damage_state = 3
@@ -499,16 +480,16 @@
 			damage_state = 0
 	switch(barricade_upgrade_type)
 		if(BARRICADE_TYPE_BOMB)
-			. += image('mod_celadon/_storge_icons/icons/structures/obj/barricade.dmi', icon_state = "+explosive_upgrade_[damage_state]")
+			. += image('mod_celadon/_storage_icons/icons/structures/obj/barricade.dmi', icon_state = "+explosive_upgrade_[damage_state]")
 		if(BARRICADE_TYPE_MELEE)
-			. += image('mod_celadon/_storge_icons/icons/structures/obj/barricade.dmi', icon_state = "+brute_upgrade_[damage_state]")
+			. += image('mod_celadon/_storage_icons/icons/structures/obj/barricade.dmi', icon_state = "+brute_upgrade_[damage_state]")
 		if(BARRICADE_TYPE_ACID)
-			. += image('mod_celadon/_storge_icons/icons/structures/obj/barricade.dmi', icon_state = "+burn_upgrade_[damage_state]")
+			. += image('mod_celadon/_storage_icons/icons/structures/obj/barricade.dmi', icon_state = "+burn_upgrade_[damage_state]")
 
 /obj/structure/deployable_barricade/metal/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/stack/sheet/metal))
 		var/obj/item/stack/sheet/metal/metal_sheets = I
-		if(can_upgrade && obj_integrity < max_integrity)
+		if(can_upgrade && atom_integrity < max_integrity)
 			return attempt_barricade_upgrade(I, user, params)
 
 		if(metal_sheets.get_amount() < repair_amount)
@@ -517,7 +498,7 @@
 
 		visible_message(span_notice("[user] begins to repair [src]."))
 
-		if(!do_after(user, 2 SECONDS, src) || obj_integrity >= max_integrity)
+		if(!do_after(user, 2 SECONDS, src) || atom_integrity >= max_integrity)
 			return FALSE
 
 		if(!metal_sheets.use(repair_amount))
@@ -531,7 +512,7 @@
 	if(barricade_upgrade_type)
 		to_chat(user, span_warning("[src] is already upgraded."))
 		return FALSE
-	if(obj_integrity < max_integrity)
+	if(atom_integrity < max_integrity)
 		to_chat(user, span_warning("You cannot upgrade [src] until it has been repaired!"))
 		return FALSE
 
@@ -539,7 +520,7 @@
 		to_chat(user, span_warning("You need at least <b>[BARRICADE_UPGRADE_REQUIRED_SHEETS]</b> to upgrade [src]!"))
 		return FALSE
 
-	var/static/list/cade_types = list(BARRICADE_TYPE_BOMB = image(icon = 'mod_celadon/_storge_icons/icons/structures/obj/barricade.dmi', icon_state = "explosive_obj"), BARRICADE_TYPE_MELEE = image(icon = 'mod_celadon/_storge_icons/icons/structures/obj/barricade.dmi', icon_state = "brute_obj"), BARRICADE_TYPE_ACID = image(icon = 'mod_celadon/_storge_icons/icons/structures/obj/barricade.dmi', icon_state = "burn_obj"))
+	var/static/list/cade_types = list(BARRICADE_TYPE_BOMB = image(icon = 'mod_celadon/_storage_icons/icons/structures/obj/barricade.dmi', icon_state = "explosive_obj"), BARRICADE_TYPE_MELEE = image(icon = 'mod_celadon/_storage_icons/icons/structures/obj/barricade.dmi', icon_state = "brute_obj"), BARRICADE_TYPE_ACID = image(icon = 'mod_celadon/_storage_icons/icons/structures/obj/barricade.dmi', icon_state = "burn_obj"))
 	var/choice = show_radial_menu(user, src, cade_types, require_near = TRUE, tooltips = TRUE)
 
 	user.visible_message(span_notice("[user] starts attaching [choice] to [src]."),
@@ -588,11 +569,11 @@
 	if(!welding_tool.isOn())
 		return FALSE
 
-	if(obj_integrity <= max_integrity * 0.3)
+	if(atom_integrity <= max_integrity * 0.3)
 		to_chat(user, span_warning("[src] is too damaged to be repaired with a welder!"))
 		return TRUE
 
-	if(obj_integrity >= max_integrity)
+	if(atom_integrity >= max_integrity)
 		to_chat(user, span_warning("[src] does not need repairing."))
 		return TRUE
 
@@ -603,7 +584,7 @@
 	if(!do_after(user, 5 SECONDS, src))
 		return TRUE
 
-	if(obj_integrity <= max_integrity * 0.3 || obj_integrity >= max_integrity)
+	if(atom_integrity <= max_integrity * 0.3 || atom_integrity >= max_integrity)
 		return TRUE
 
 	if(!welding_tool.use(2))
@@ -820,7 +801,7 @@
 		for(var/direction in GLOB.cardinals)
 			for(var/obj/structure/deployable_barricade/metal/plasteel/cade in get_step(src, direction))
 				if(((dir & (NORTH|SOUTH) && get_dir(src, cade) & (EAST|WEST)) || (dir & (EAST|WEST) && get_dir(src, cade) & (NORTH|SOUTH))) && dir == cade.dir && cade.linked && cade.closed == closed)
-					. += image('mod_celadon/_storge_icons/icons/structures/obj/barricade.dmi', icon_state = "[barricade_type]_[closed ? "closed" : "open"]_connection_[get_dir(src, cade)]")
+					. += image('mod_celadon/_storage_icons/icons/structures/obj/barricade.dmi', icon_state = "[barricade_type]_[closed ? "closed" : "open"]_connection_[get_dir(src, cade)]")
 
 /obj/structure/deployable_barricade/metal/plasteel/ex_act(severity)
 	switch(severity)
@@ -841,7 +822,7 @@
 /obj/item/quickdeploy
 	name = "C.U.C.K.S"
 	desc = "Compact Universal Complex Kinetic Self-expanding Barricade. Great for deploying quick fortifications."
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/barricade.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/barricade.dmi'
 	w_class = WEIGHT_CLASS_SMALL //While this is small, normal 50 stacks of metal is NORMAL so this is a bit on the bad space to cade ratio
 	var/delay = 0 //Delay on deploying the thing
 	var/atom/movable/thing_to_deploy = null
@@ -910,7 +891,7 @@
 /*----------------------*/
 
 /obj/item/storage/barricade
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/barricade.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/barricade.dmi'
 	name = "C.U.C.K.S box"
 	desc = "Contains several deployable barricades."
 	icon_state = "box_metal"

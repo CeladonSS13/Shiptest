@@ -1,6 +1,6 @@
 /obj/structure/sign/neon
 	desc = "A glowing sign."
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/signs.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/signs.dmi'
 	layer = LIGHTING_OBJS_PLANE
 	light_range = 3
 	light_power = 6.5
@@ -216,7 +216,7 @@
 /obj/structure/sign/neon/trafficsign
 	name = "stop traffic sign"
 	desc = "A sign to regulate road traffic."
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/road_signs.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/road_signs.dmi'
 	icon_state = "base"
 	var/overlay_state = "stop"
 	light_color = LIGHT_COLOR_NEONLIGHTBLUE
@@ -252,7 +252,7 @@
 	----------------------------------------------*/
 
 /obj/structure/sign/neon/big
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/signs_large.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/signs_large.dmi'
 	light_range = 6
 	light_power = 8
 
@@ -572,7 +572,7 @@
 /obj/structure/sign/neon/big/triangle
 	name = "big neon sign"
 	desc = "Some kind of triangle, but with big eye."
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/signs_verylarge.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/signs_verylarge.dmi'
 	icon_state = "trianglebig"
 	emissive_state = "trianglebig"
 	light_color = LIGHT_COLOR_NEONGREEN
@@ -580,7 +580,7 @@
 /obj/structure/sign/neon/big/wings
 	name = "big neon sign"
 	desc = "Cool neon wings."
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/signs_verylarge.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/signs_verylarge.dmi'
 	icon_state = "wings"
 	emissive_state = "wings"
 	light_color = LIGHT_COLOR_LIGHT_CYAN
@@ -607,7 +607,7 @@
 
 /obj/structure/sign/neon/strelka
 	name = "info strelka"
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/sign_road.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/sign_road.dmi'
 	icon_state = "strelka_green"
 	light_color = LIGHT_COLOR_GREEN
 	layer = 3
@@ -693,7 +693,7 @@
 	name = "sign"
 	desc = "A sign."
 	pixel_y = 25
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/signs.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/signs.dmi'
 
 /obj/structure/sign/double/city/gamecenter/
 	name = "Game Center"
@@ -792,7 +792,7 @@
 
 /obj/structure/sign/city/
 	desc = "A sign."
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/signs.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/signs.dmi'
 
 /obj/structure/sign/city/rent
 	name = "Rent sign"

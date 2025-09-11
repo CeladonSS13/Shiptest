@@ -5,7 +5,7 @@
 /datum/sprite_accessory/ipc_screens
 	// [CELADON-EDIT] - CELADON_IPC_CHASSIS
 	// icon = 'icons/mob/ipc_accessories.dmi' // CELADON-EDIT -> ORIGINAL
-	icon = 'mod_celadon/_storge_icons/icons/species/ipc/ipc_accessories.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/ipc/ipc_accessories.dmi'
 	// [/CELADON-EDIT]
 	color_src = EYECOLOR
 
@@ -181,7 +181,7 @@
 
 /datum/sprite_accessory/ipc_antennas
 	icon = 'icons/mob/ipc_accessories.dmi'
-	color_src = FACEHAIR // [CELADON-EDIT] - CELADON_IPC_HAIR
+	color_src = FACEHAIR
 
 /datum/sprite_accessory/ipc_antennas/none
 	name = "None"
@@ -297,7 +297,7 @@
 /datum/sprite_accessory/ipc_chassis // Used for changing limb icons, doesn't need to hold the actual icon. That's handled in ipc.dm
 	// [CELADON-EDIT] - CELADON_IPC_CHASSIS
 	// icon = null // CELADON-EDIT -> ORIGINAL
-	icon = 'mod_celadon/_storge_icons/icons/species/ipc/bodyparts.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/ipc/bodyparts.dmi'
 	// [/CELADON-EDIT]
 	icon_state = "who cares fuck you" // In order to pull the chassis correctly, we need AN icon_state(see line 36-39). It doesn't have to be useful, because it isn't used.
 	color_src = 0
@@ -372,8 +372,13 @@
 	has_snout = TRUE
 
 /datum/sprite_accessory/ipc_chassis/inteqsprinter
-	name = "Inteq Mothership 'Sprinter'"
+	name = "Inteq Mothership 'Sprinter' Type 1"
 	limbs_id = "inteqsprinter"
+	has_screen = FALSE
+
+/datum/sprite_accessory/ipc_chassis/inteqsprintertype2
+	name = "Inteq Mothership 'Sprinter' Type 2"
+	limbs_id = "inteqsprinter2"
 	has_screen = FALSE
 
 /datum/sprite_accessory/ipc_chassis/seekeripc
@@ -385,3 +390,9 @@
 	name = "Absolution-Lux 'Solferino'"
 	limbs_id = "ablux"
 	has_screen = FALSE
+
+/datum/sprite_accessory/ipc_chassis/humanipc
+	name = "Clover Corporation 'Humaniform'"
+	limbs_id = "humanipc"
+	has_screen = FALSE
+	use_eyes = TRUE

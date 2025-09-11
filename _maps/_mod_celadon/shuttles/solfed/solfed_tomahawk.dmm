@@ -207,6 +207,30 @@
 /obj/item/ammo_box/magazine/gar,
 /obj/item/ammo_box/magazine/gar,
 /obj/machinery/firealarm/directional/south,
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 10
+	},
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 10
+	},
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 10
+	},
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 10
+	},
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 10
+	},
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 10
+	},
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 10
+	},
+/obj/item/stock_parts/cell/gun/solgov{
+	pixel_x = 10
+	},
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "cY" = (
@@ -678,8 +702,7 @@
 	dir = 6
 	},
 /obj/structure/chair/comfy/blue/old/directional/north{
-	dir = 4;
-	pixel_y = 7
+	dir = 4
 	},
 /obj/effect/turf_decal/spline/fancy/transparent/solgovgold{
 	dir = 8
@@ -931,12 +954,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
-"nf" = (
-/obj/machinery/vending/wallmed{
-	pixel_y = 5
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/medical)
 "nh" = (
 /obj/structure/table/wood,
 /obj/item/toy/cards/deck{
@@ -1253,6 +1270,11 @@
 	pixel_y = 19
 	},
 /obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 1
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "pZ" = (
@@ -1996,20 +2018,20 @@
 /obj/effect/turf_decal/corner_techfloor_gray/full{
 	dir = 4
 	},
-/obj/structure/rack,
-/obj/item/storage/box/ammo/ferrolance,
-/obj/item/storage/box/ammo/ferrolance,
-/obj/item/storage/box/ammo/ferrolance,
-/obj/item/storage/box/ammo/ferrolance,
-/obj/item/storage/box/ammo/ferrolance,
-/obj/item/storage/box/ammo/ferrolance,
-/obj/item/storage/box/ammo/ferrolance,
-/obj/item/storage/box/ammo/ferrolance,
 /obj/machinery/light/colored/red,
 /obj/machinery/light_switch{
 	dir = 8;
 	pixel_x = 21;
 	pixel_y = 10
+	},
+/obj/structure/table,
+/obj/machinery/recharger{
+	pixel_y = 5;
+	pixel_x = -7
+	},
+/obj/machinery/recharger{
+	pixel_y = 5;
+	pixel_x = 7
 	},
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
@@ -2137,9 +2159,10 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 1
 	},
-/obj/machinery/button{
+/obj/machinery/button/door{
 	pixel_y = 23;
-	id = "tomahawk_sleeper"
+	id = "tomahawk_sleeper";
+	name = "Windows"
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew)
@@ -2339,18 +2362,18 @@
 	dir = 10
 	},
 /obj/structure/rack,
-/obj/item/stock_parts/cell/gun/solgov,
-/obj/item/stock_parts/cell/gun/solgov,
-/obj/item/stock_parts/cell/gun/solgov,
-/obj/item/stock_parts/cell/gun/solgov,
-/obj/item/stock_parts/cell/gun/solgov,
-/obj/item/stock_parts/cell/gun/solgov,
-/obj/item/stock_parts/cell/gun/solgov,
-/obj/item/stock_parts/cell/gun/solgov,
 /obj/structure/cable{
 	icon_state = "0-1"
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
+/obj/item/storage/box/ammo/ferrolance,
+/obj/item/storage/box/ammo/ferrolance,
+/obj/item/storage/box/ammo/ferrolance,
+/obj/item/storage/box/ammo/ferrolance,
+/obj/item/storage/box/ammo/ferrolance,
+/obj/item/storage/box/ammo/ferrolance,
+/obj/item/storage/box/ammo/ferrolance,
+/obj/item/storage/box/ammo/ferrolance,
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "Aw" = (
@@ -2965,7 +2988,7 @@
 	width = 30
 	},
 /turf/template_noop,
-/area/ship/external)
+/area/template_noop)
 "Hh" = (
 /obj/structure/sign/solfed,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -3474,6 +3497,9 @@
 /obj/machinery/atmospherics/pipe/simple/green/hidden/layer1{
 	dir = 6
 	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "MT" = (
@@ -3580,6 +3606,9 @@
 /obj/machinery/atmospherics/pipe/simple/green/hidden/layer1{
 	dir = 10
 	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Os" = (
@@ -3660,6 +3689,9 @@
 /obj/effect/turf_decal/corner/opaque/cybersunteal/border,
 /obj/structure/table/glass,
 /obj/item/storage/case/surgery,
+/obj/machinery/vending/wallmed{
+	pixel_y = -27
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "PS" = (
@@ -4448,7 +4480,7 @@
 	port_direction = 2
 	},
 /turf/template_noop,
-/area/ship/external)
+/area/template_noop)
 "WY" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -5201,7 +5233,7 @@ En
 Zf
 Zg
 Py
-nf
+En
 PX
 "}
 (22,1,1) = {"

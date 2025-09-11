@@ -335,7 +335,7 @@ SUBSYSTEM_DEF(overmap)
 	///the tileset we use, just the icon we force tokens to use, override only if nessary
 	// [CELADON-EDIT] - CELADON_OVERMAP
 	// var/tileset = 'icons/misc/overmap.dmi'	// CELADON-EDIT - ORIGINAL
-	var/tileset = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap.dmi'
+	var/tileset = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap.dmi'
 	// [/CELADON-EDIT]
 
 	///This is the flag that makes it so all overmap objects use the same uniform color above. If false, tokens use their default colors
@@ -732,7 +732,7 @@ SUBSYSTEM_DEF(overmap)
 	// 		secondary_docking_turf.y+RESERVE_DOCK_MAX_SIZE_SHORT+RESERVE_DOCK_DEFAULT_PADDING,
 	// 		secondary_docking_turf.z
 	// 	)
-
+	//
 	// 	var/obj/docking_port/stationary/tertiary_dock = new(tertiary_docking_turf)
 	// 	tertiary_dock.dir = NORTH
 	// 	tertiary_dock.name = "[encounter_name] docking location #3"
@@ -742,7 +742,7 @@ SUBSYSTEM_DEF(overmap)
 	// 	tertiary_dock.dwidth = 0
 	// 	tertiary_dock.adjust_dock_for_landing = TRUE
 	// 	docking_ports += tertiary_dock
-
+	//
 	// 	var/obj/docking_port/stationary/quaternary_dock = new(quaternary_docking_turf)
 	// 	quaternary_dock.dir = NORTH
 	// 	quaternary_dock.name = "[encounter_name] docking location #4"
@@ -752,6 +752,13 @@ SUBSYSTEM_DEF(overmap)
 	// 	quaternary_dock.dwidth = 0
 	// 	quaternary_dock.adjust_dock_for_landing = TRUE
 	// 	docking_ports += quaternary_dock
+	//
+	//else // we've spawned a ruin and are now checking for any docks that it has
+	//	for(var/obj/docking_port/stationary/port as obj in SSshuttle.stationary)
+	//		if(port.virtual_z() == vlevel.id)
+	//			if(port in docking_ports)
+	//				continue
+	//			docking_ports += port
 	// [/CELADON-REMOVE]
 
 	var/list/datum/weakref/spawned_mission_pois = list()

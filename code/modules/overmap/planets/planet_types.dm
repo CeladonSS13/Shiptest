@@ -32,7 +32,7 @@
 	///How much of a radio message we mess up on nearby or on landed/orbitting ships
 	var/interference_power = 0
 	// [CELADON-ADD] - CELADON_OVERMAP_ICON - Это вагабонд насрал
-	var/icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap.dmi'
+	var/icon = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap.dmi'
 	var/pixel_w = 0
 	var/pixel_z = 0
 	// [/CELADON-ADD]
@@ -90,7 +90,7 @@
 	icon_state = "jungle"
 	// [/CELADON-EDIT]
 	mapgen = /datum/map_generator/planet_generator/jungle
-	default_baseturf = /turf/open/floor/plating/dirt/jungle
+	default_baseturf = /turf/open/floor/plating/asteroid/dirt/jungle
 	gravity = STANDARD_GRAVITY
 	weather_controller_type = /datum/weather_controller/lush
 	ruin_type = RUINTYPE_JUNGLE
@@ -202,6 +202,23 @@
 	planet = DYNAMIC_WORLD_SPACERUIN
 	icon_state = "signal_strange"
 	color = null
+	mapgen = /datum/map_generator/planet_generator/asteroid
+	default_baseturf = /turf/open/space
+	weather_controller_type = null
+	ruin_type = RUINTYPE_SPACE
+#ifndef RUIN_PLACEMENT_TEST
+	selfloop = TRUE
+#endif
+
+// empty space if you need to run a space ruin the old way or just need an empty clearing for whatever reason
+
+/datum/planet_type/space
+	name = "weak energy signal"
+	desc = "A very weak energy signal originating from space."
+	planet = DYNAMIC_WORLD_SPACE_NO_RUIN
+	icon_state = "signal_strange"
+	color = null
+	weight = 0
 	mapgen = /datum/map_generator/single_turf/space
 	default_baseturf = /turf/open/space
 	weather_controller_type = null
@@ -239,7 +256,7 @@
 	icon_state = "giant"
 	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	//	color = COLOR_DARK_MODERATE_ORANGE
-	icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap_large.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap_large.dmi'
 	pixel_w = -8
 	pixel_z = -8
 	// [/CELADON-EDIT]
@@ -261,7 +278,7 @@
 // 	//	color = COLOR_PURPLE
 // 	// icon_state = "giant"
 // 	icon_state = "planet-plasma"
-// 	icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap_large.dmi'
+// 	icon = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap_large.dmi'
 // 	pixel_w = -8
 // 	pixel_z = -8
 // 	// [/CELADON-EDIT]
@@ -358,7 +375,7 @@
 
 	ruin_type = RUINTYPE_BATTLEFIELD // minor 'planets' have no ruins
 	mapgen = /datum/map_generator/planet_generator/battlefield
-	default_baseturf = /turf/open/floor/plating/dirt/jungle/dark/lit/battlefield
+	default_baseturf = /turf/open/floor/plating/asteroid/dirt/battlefield
 	gravity = STANDARD_GRAVITY
 	weather_controller_type = /datum/weather_controller/toxic
 

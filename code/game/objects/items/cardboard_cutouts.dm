@@ -18,8 +18,8 @@
 	possible_appearances = sortList(list(
 		"Assistant" = image(icon = src.icon, icon_state = "cutout_greytide"),
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
-		"Clown" = image(icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/bedsheets.dmi', icon_state = "cutout_clown"),
-		"Mime" = image(icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/bedsheets.dmi', icon_state = "cutout_mime"),
+		"Clown" = image(icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/bedsheets.dmi', icon_state = "cutout_clown"),
+		"Mime" = image(icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/bedsheets.dmi', icon_state = "cutout_mime"),
 // [/CELADON-ADD]
 		"Traitor" = image(icon = src.icon, icon_state = "cutout_traitor"),
 		"Nuke Op" = image(icon = src.icon, icon_state = "cutout_fluke"),

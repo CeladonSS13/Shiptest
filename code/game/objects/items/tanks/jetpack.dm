@@ -58,7 +58,7 @@
 	if(!allow_thrust(0.01, user))
 		return
 	on = TRUE
-	icon_state = "[initial(icon_state)]-on"
+	update_appearance(UPDATE_ICON)	//icon_state = "[initial(icon_state)]-on" // [CELADON-EDIT] - JETPACK_RESPRITE
 	ion_trail.start()
 	RegisterSignal(user, COMSIG_MOVABLE_MOVED, PROC_REF(move_react))
 	RegisterSignal(user, COMSIG_MOVABLE_PRE_MOVE, PROC_REF(pre_move_react))
@@ -68,7 +68,7 @@
 /obj/item/tank/jetpack/proc/turn_off(mob/living/user)
 	on = FALSE
 	stabilizers = FALSE
-	icon_state = initial(icon_state)
+	update_appearance(UPDATE_ICON)	//icon_state = initial(icon_state) // [CELADON-EDIT] - JETPACK_RESPRITE
 	ion_trail.stop()
 	UnregisterSignal(user, COMSIG_MOVABLE_MOVED)
 	UnregisterSignal(user, COMSIG_MOVABLE_PRE_MOVE)
