@@ -966,6 +966,16 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/outpost/cargo)
+"aKn" = (
+/obj/effect/turf_decal/siding/wood{
+	color = "#792f27"
+	},
+/obj/structure/sign/neon/big/twosides{
+	pixel_x = -8;
+	pixel_y = -30
+	},
+/turf/open/floor/carpet,
+/area/outpost/crew/library)
 "aKv" = (
 /turf/open/floor/engine/hull/reinforced,
 /area/outpost/external)
@@ -5090,9 +5100,27 @@
 	name = "Elysium Town"
 	})
 "duT" = (
-/obj/structure/curtain/cloth/elysium,
-/turf/open/floor/wood,
-/area/outpost/crew/library)
+/obj/machinery/door/window/survival_pod{
+	opacity = 1;
+	name = "Sauna"
+	},
+/obj/machinery/door/window/survival_pod{
+	dir = 1
+	},
+/obj/structure/fans/tiny/invisible,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/machinery/power/apc/auto_name/directional/west{
+	req_access_txt = "8100, 8111"
+	},
+/turf/open/floor/wood/birch{
+	planetary_atmos = 1
+	},
+/area/outpost/crew/lounge)
 "dvE" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -6337,11 +6365,22 @@
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/cargo/faction/nanotrasen)
 "ekt" = (
-/obj/structure/railing/wood{
-	dir = 8
+/obj/effect/turf_decal/siding/wood{
+	color = "#792f27";
+	dir = 1
 	},
-/obj/structure/curtain/cloth/elysium,
-/turf/open/floor/wood,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/carpet,
 /area/outpost/crew/library)
 "ekD" = (
 /obj/structure/chair/office,
@@ -6388,7 +6427,11 @@
 	color = "#792f27";
 	dir = 4
 	},
-/obj/structure/sign/neon/big/twosides,
+/obj/structure/noticeboard{
+	icon_state = "nboard05";
+	pixel_x = 24;
+	dir = 8
+	},
 /turf/open/floor/wood/mahogany,
 /area/outpost/crew/bar/bar_zone)
 "enH" = (
@@ -7741,6 +7784,18 @@
 /obj/effect/turf_decal/nanotrasen/ns/bottom_right,
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/cargo/faction/nanotrasen)
+"fgt" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/item/radio/intercom/directional/south,
+/turf/open/floor/wood/birch{
+	planetary_atmos = 1
+	},
+/area/outpost/crew/lounge)
 "fgy" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -9704,6 +9759,15 @@
 	},
 /turf/open/floor/plating/asteroid/wasteplanet,
 /area/outpost/hallway/central)
+"gAg" = (
+/obj/structure/fluff/hedge{
+	icon_state = "hedge-12"
+	},
+/obj/structure/sign/poster/official/moth{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/tech,
+/area/outpost/hallway/fore)
 "gAu" = (
 /turf/open/floor/plating/ship/water/beach,
 /area/ruin/beach/complex{
@@ -10476,7 +10540,7 @@
 "gZk" = (
 /obj/structure/sign/elysium,
 /turf/closed/indestructible/reinforced,
-/area/outpost/crew/library)
+/area/outpost/crew/lounge)
 "gZm" = (
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 1
@@ -12401,7 +12465,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/light/colored/green/directional/north{
-	pixel_y = 28
+	pixel_y = 14
 	},
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
@@ -12834,18 +12898,24 @@
 /turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/outpost/hallway/central)
 "iBR" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
+/obj/item/soap/deluxe,
+/obj/effect/turf_decal/borderfloorblack{
+	icon_state = "steel_decals9"
 	},
-/obj/structure/sign/poster/retro/radio{
-	pixel_x = 32
+/obj/machinery/shower{
+	pixel_y = 27
 	},
-/obj/item/radio/intercom/directional/north,
-/obj/structure/chair/sofa/olive/corner/directional/south,
-/turf/open/floor/wood{
-	icon_state = "wood-broken4"
+/obj/machinery/door/window/survival_pod{
+	opacity = 1
 	},
-/area/outpost/crew/library)
+/obj/structure/window/reinforced/spawner{
+	dir = 8;
+	pixel_x = -8;
+	opacity = 1
+	},
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/plasteel/showroomfloor,
+/area/outpost/crew/lounge)
 "iCh" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/sign/poster/contraband/peacemaker{
@@ -12977,9 +13047,14 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
 "iIh" = (
-/obj/structure/table/glass/light_glass,
-/turf/open/floor/wood,
-/area/outpost/crew/library)
+/obj/structure/chair/pew/right{
+	pixel_y = 3;
+	dir = 8
+	},
+/turf/open/floor/wood/birch{
+	planetary_atmos = 1
+	},
+/area/outpost/crew/lounge)
 "iIz" = (
 /obj/structure/cable{
 	icon_state = "2-4";
@@ -14222,6 +14297,12 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
 	},
 /turf/open/floor/wood/mahogany,
 /area/outpost/crew/bar/bar_zone)
@@ -15526,6 +15607,29 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/inteq)
+"krr" = (
+/obj/machinery/airalarm/directional/east,
+/obj/machinery/door/window/survival_pod{
+	dir = 8;
+	pixel_x = -8
+	},
+/obj/item/clothing/shoes/sandal{
+	pixel_x = -5;
+	pixel_y = 13
+	},
+/obj/machinery/light/small/directional/east{
+	pixel_y = 16
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
+/turf/open/floor/wood/birch{
+	planetary_atmos = 1
+	},
+/area/outpost/crew/lounge)
 "krC" = (
 /obj/structure/flora/junglebush/large,
 /turf/open/floor/grass/fairy/beach,
@@ -15619,6 +15723,17 @@
 	},
 /turf/open/floor/plasteel/mono,
 /area/outpost/fraction/inteq)
+"kvA" = (
+/obj/structure/sink/kitchen{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/wood/birch{
+	planetary_atmos = 1
+	},
+/area/outpost/crew/lounge)
 "kwl" = (
 /obj/effect/portal/permanent/random{
 	alpha = 0;
@@ -16365,6 +16480,9 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/structure/disposalpipe/segment,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/wood,
 /area/outpost/crew/library)
 "kQh" = (
@@ -17912,6 +18030,12 @@
 /obj/machinery/light/colored/green/directional/south{
 	pixel_y = -5
 	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/wood,
 /area/outpost/crew/library)
 "lVc" = (
@@ -19087,19 +19211,13 @@
 	},
 /area/outpost/hallway/central)
 "mLp" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
+/obj/structure/chair/pew/left{
+	pixel_y = 3
 	},
-/obj/structure/noticeboard{
-	icon_state = "nboard05";
-	pixel_y = 32
+/turf/open/floor/wood/birch{
+	planetary_atmos = 1
 	},
-/obj/structure/railing/wood{
-	dir = 8
-	},
-/obj/structure/chair/sofa/olive/corner/directional/east,
-/turf/open/floor/wood,
-/area/outpost/crew/library)
+/area/outpost/crew/lounge)
 "mLs" = (
 /obj/effect/portal/permanent/random{
 	alpha = 10;
@@ -21441,6 +21559,15 @@
 /obj/structure/flora/rock/pile/lava,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/outpost/hallway/central)
+"oBv" = (
+/obj/structure/chair/pew/left{
+	pixel_y = 3;
+	dir = 4
+	},
+/turf/open/floor/wood/birch{
+	planetary_atmos = 1
+	},
+/area/outpost/crew/lounge)
 "oBz" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -21617,10 +21744,61 @@
 	name = "Elysium Town"
 	})
 "oGg" = (
-/obj/machinery/newscaster/directional/east,
-/obj/structure/chair/sofa/olive/left/directional/west,
-/turf/open/floor/wood,
-/area/outpost/crew/library)
+/obj/structure/closet/wall/directional/west{
+	dir = 4;
+	pixel_x = 28
+	},
+/obj/item/towel{
+	pixel_x = -5;
+	pixel_y = 4
+	},
+/obj/item/towel{
+	pixel_x = -5;
+	pixel_y = 8
+	},
+/obj/item/towel{
+	pixel_y = 8;
+	pixel_x = -11
+	},
+/obj/item/towel{
+	pixel_x = -5;
+	pixel_y = 4
+	},
+/obj/item/lighter,
+/obj/item/clothing/shoes/sandal{
+	pixel_y = 8;
+	pixel_x = 12
+	},
+/obj/item/clothing/shoes/sandal{
+	pixel_x = 11;
+	pixel_y = 13
+	},
+/obj/item/clothing/shoes/sandal{
+	pixel_x = -5;
+	pixel_y = 13
+	},
+/obj/item/reagent_containers/glass/bucket/wooden{
+	pixel_x = 11;
+	pixel_y = -6;
+	layer = 2
+	},
+/obj/item/stack/sheet/mineral/wood/fifty{
+	pixel_x = 11;
+	pixel_y = 6
+	},
+/obj/structure/window/reinforced/spawner{
+	dir = 8;
+	pixel_x = -8;
+	opacity = 1
+	},
+/obj/item/clothing/shoes/sandal{
+	pixel_x = -5;
+	pixel_y = 13
+	},
+/turf/open/floor/wood/birch{
+	planetary_atmos = 1
+	},
+/area/outpost/crew/lounge)
 "oGm" = (
 /obj/structure/railing/corner/wood,
 /obj/structure/curtain/cloth/purpl{
@@ -26968,15 +27146,13 @@
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_1)
 "sgd" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
+/obj/structure/chair/pew/right{
+	pixel_y = 3
 	},
-/obj/structure/sign/poster/official/moth{
-	pixel_y = 32
+/turf/open/floor/wood/birch{
+	planetary_atmos = 1
 	},
-/obj/structure/chair/sofa/olive,
-/turf/open/floor/wood,
-/area/outpost/crew/library)
+/area/outpost/crew/lounge)
 "sgE" = (
 /obj/structure/sign/directions/outpost/elevator{
 	pixel_y = -19;
@@ -27256,6 +27432,26 @@
 /obj/effect/spawner/random/mine,
 /turf/open/space/basic,
 /area/outpost/external)
+"srS" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wood{
+	color = "#792f27";
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/sign/neon/big/japan{
+	pixel_y = 18;
+	pixel_x = -12
+	},
+/turf/open/floor/carpet,
+/area/outpost/crew/library)
 "ssI" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
@@ -27587,13 +27783,14 @@
 /turf/open/floor/plating/asteroid/icerock/cracked,
 /area/outpost/engineering/atmospherics)
 "sFc" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
+/obj/structure/chair/pew/left{
+	pixel_y = 3;
+	dir = 8
 	},
-/obj/structure/chair/sofa/olive,
-/obj/machinery/light/colored/directional/north,
-/turf/open/floor/wood,
-/area/outpost/crew/library)
+/turf/open/floor/wood/birch{
+	planetary_atmos = 1
+	},
+/area/outpost/crew/lounge)
 "sFg" = (
 /turf/closed/indestructible/reinforced,
 /area/outpost/crew/garden)
@@ -29267,6 +29464,9 @@
 /obj/machinery/door/poddoor/ert{
 	dir = 1;
 	id = "ice_bolt_bar"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
 /turf/open/floor/wood/mahogany,
 /area/outpost/crew/bar/bar_zone)
@@ -31203,7 +31403,10 @@
 	dir = 6
 	},
 /obj/machinery/power/apc/auto_name/directional/south{
-	req_access_txt = "8100, 8111"
+	req_access_txt = "8100, 8111";
+	dir = 4;
+	pixel_y = 2;
+	pixel_x = 28
 	},
 /obj/structure/cable{
 	icon_state = "0-1"
@@ -32961,11 +33164,11 @@
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/crew/cryo)
 "wed" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/table/glass/light_glass,
-/obj/effect/spawner/random/celadon_drink,
-/turf/open/floor/wood,
-/area/outpost/crew/library)
+/obj/structure/sauna_oven_steam,
+/turf/open/floor/wood/birch{
+	planetary_atmos = 1
+	},
+/area/outpost/crew/lounge)
 "weA" = (
 /obj/structure/chair/stool/bar{
 	dir = 1;
@@ -33279,22 +33482,15 @@
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_2)
 "wsD" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/kirbyplants{
-	icon_state = "plant-22";
-	pixel_x = -6;
-	pixel_y = -10
-	},
-/obj/structure/railing/wood{
-	dir = 8
-	},
-/obj/structure/chair/sofa/olive/right/directional/west{
+/obj/structure/chair/pew/right{
+	pixel_y = 3;
 	dir = 4
 	},
-/turf/open/floor/wood{
-	icon_state = "wood-broken4"
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/wood/birch{
+	planetary_atmos = 1
 	},
-/area/outpost/crew/library)
+/area/outpost/crew/lounge)
 "wsU" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -33315,14 +33511,8 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
 "wtK" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/obj/structure/bookcase/random/adult{
-	opacity = 1
-	},
-/turf/open/floor/wood,
-/area/outpost/crew/library)
+/turf/closed/indestructible/reinforced,
+/area/outpost/crew/lounge)
 "wuf" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -52209,7 +52399,7 @@ hrA
 sIE
 hrA
 hrA
-lVg
+gAg
 miy
 rwj
 uDM
@@ -58022,10 +58212,10 @@ dOR
 iup
 dYo
 gZk
-qTE
-aoQ
 wtK
-svS
+wtK
+wtK
+wtK
 inO
 mVC
 svS
@@ -58208,11 +58398,11 @@ xRQ
 vMu
 iup
 dEP
-qTE
+wtK
 mLp
 wsD
-daY
-ekt
+oBv
+wtK
 mlc
 ulP
 izk
@@ -58395,12 +58585,12 @@ xRQ
 vMu
 qrW
 ijv
-qTE
+wtK
 sgd
 wed
-daY
-duT
-vfK
+kvA
+wtK
+srS
 vsw
 bTO
 qxJ
@@ -58582,11 +58772,11 @@ xRQ
 vMu
 iup
 iiS
-qTE
+wtK
 sFc
 iIh
-daY
-duT
+fgt
+wtK
 vfK
 lAY
 aRN
@@ -58769,12 +58959,12 @@ jYA
 vMu
 oTk
 ugh
-qTE
+wtK
 iBR
 oGg
-daY
+krr
 duT
-vfK
+ekt
 mso
 gML
 clK
@@ -58956,11 +59146,11 @@ xRQ
 vMu
 iup
 dYo
-qTE
-qTE
-qTE
-qTE
-qTE
+wtK
+wtK
+wtK
+wtK
+wtK
 pip
 mso
 enF
@@ -59149,7 +59339,7 @@ llt
 vWT
 aFt
 ojM
-lAY
+aKn
 uVN
 mBo
 qFk
