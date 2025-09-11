@@ -606,9 +606,15 @@
 	name = "Elysium Town"
 	})
 "ayM" = (
-/obj/structure/fluff/steam_vent,
-/turf/open/floor/plasteel/dark,
-/area/outpost/fraction/nanotrasen)
+/obj/structure/window/reinforced{
+	dir = 1;
+	pixel_y = 5
+	},
+/obj/item/mine/proximity/explosive/live,
+/turf/open/floor/plating/airless{
+	alpha = 0
+	},
+/area/space)
 "ayQ" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -644,6 +650,13 @@
 	light_range = 2
 	},
 /area/outpost/hallway/central)
+"aAg" = (
+/obj/structure/window/reinforced/spawner{
+	alpha = 0;
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/space)
 "aBe" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -1148,11 +1161,12 @@
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/operations)
 "aRs" = (
-/obj/effect/turf_decal/sand/plating,
-/turf/open/floor/plating/asteroid/sand/ship,
-/area/ruin/beach/complex{
-	name = "Elysium Town"
-	})
+/mob/living/simple_animal/hostile/carp/holocarp{
+	name = "Okio";
+	color = "#FFD700"
+	},
+/turf/open/space/basic,
+/area/outpost/external)
 "aRI" = (
 /obj/structure/chair/wood{
 	pixel_y = -14;
@@ -1497,9 +1511,7 @@
 /area/outpost/fraction/syndi/donkco_shop)
 "bdG" = (
 /obj/effect/spawner/random/mine,
-/turf/open/floor/plating/airless{
-	alpha = 0
-	},
+/turf/open/space/basic,
 /area/space)
 "bdZ" = (
 /obj/structure/table/reinforced,
@@ -2956,10 +2968,12 @@
 /turf/open/floor/wood,
 /area/outpost/crew/library)
 "cdF" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/structure/fluff/steam_vent,
-/turf/open/floor/plasteel/dark,
-/area/outpost/fraction/nanotrasen)
+/obj/structure/window/reinforced/spawner{
+	dir = 4;
+	alpha = 0
+	},
+/turf/open/space/basic,
+/area/space)
 "cdH" = (
 /obj/machinery/light/colored/white/directional/north,
 /turf/open/floor/grass/snow/safe,
@@ -3914,7 +3928,8 @@
 	alpha = 0;
 	name = "r4";
 	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	id = "r4"
+	id = "r4";
+	mouse_opacity = 0
 	},
 /turf/open/floor/fakepit,
 /area/ruin/beach/complex{
@@ -4163,7 +4178,8 @@
 	alpha = 0;
 	name = "r2";
 	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	id = "r2"
+	id = "r2";
+	mouse_opacity = 0
 	},
 /turf/open/floor/fakepit,
 /area/ruin/beach/complex{
@@ -4269,12 +4285,12 @@
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/central)
 "cRJ" = (
-/obj/structure/deployable_barricade/sandbags,
-/obj/effect/turf_decal/sand/plating,
-/turf/open/floor/concrete/slab_4,
-/area/ruin/beach/complex{
-	name = "Elysium Town"
-	})
+/mob/living/simple_animal/hostile/carp/holocarp{
+	name = "Kenfa";
+	color = "#00FF00"
+	},
+/turf/open/space/basic,
+/area/outpost/external)
 "cSG" = (
 /obj/structure/flora/junglebush/large,
 /turf/open/floor/plating/asteroid/dirt/grass/jungle,
@@ -4930,6 +4946,13 @@
 	},
 /turf/open/floor/marble/black,
 /area/outpost/fraction/nanotrasen)
+"dnn" = (
+/obj/structure/window/reinforced/spawner{
+	alpha = 0;
+	dir = 1
+	},
+/turf/open/space/basic,
+/area/space)
 "dnT" = (
 /obj/machinery/suit_storage_unit/inherit,
 /obj/effect/turf_decal/industrial/warning{
@@ -5274,6 +5297,13 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/plating/rust,
 /area/outpost/hallway/central)
+"dCT" = (
+/mob/living/simple_animal/hostile/carp/holocarp{
+	name = "Kos";
+	color = "#00FFFF"
+	},
+/turf/open/space/basic,
+/area/outpost/external)
 "dDe" = (
 /turf/closed/indestructible/riveted/boss,
 /area/outpost/hallway/central)
@@ -6621,7 +6651,8 @@
 	icon_state = "plasmasoul";
 	icon = 'icons/effects/anomalies.dmi';
 	id = "r8";
-	density = 0
+	density = 0;
+	mouse_opacity = 0
 	},
 /turf/open/floor/plating/asteroid/sand/ship,
 /area/ruin/beach/complex{
@@ -9100,7 +9131,8 @@
 	alpha = 0;
 	name = "r9";
 	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	id = "r9"
+	id = "r9";
+	mouse_opacity = 0
 	},
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/ruin/beach/complex{
@@ -9469,6 +9501,7 @@
 /area/outpost/hallway/central)
 "gqg" = (
 /obj/structure/table/wood/reinforced/bar,
+/obj/item/binoculars,
 /turf/open/floor/wood/mahogany,
 /area/outpost/fraction/nanotrasen)
 "gqn" = (
@@ -10067,7 +10100,8 @@
 	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
 	icon_state = "plasmasoul";
 	icon = 'icons/effects/anomalies.dmi';
-	id = "r10"
+	id = "r10";
+	mouse_opacity = 0
 	},
 /turf/open/floor/plating/asteroid/sand/ship,
 /area/ruin/beach/complex{
@@ -10972,11 +11006,11 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
 "hnV" = (
-/obj/effect/spawner/random/mine,
-/obj/structure/lattice,
-/turf/open/floor/plating/airless{
-	alpha = 0
+/mob/living/simple_animal/hostile/carp/holocarp{
+	name = "Eva";
+	color = "#FF0000"
 	},
+/turf/open/space/basic,
 /area/outpost/external)
 "how" = (
 /obj/effect/turf_decal/corner/opaque/ntblue/full,
@@ -11182,7 +11216,8 @@
 	alpha = 0;
 	name = "r9";
 	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	id = "r9"
+	id = "r9";
+	mouse_opacity = 0
 	},
 /turf/open/floor/fakepit,
 /area/ruin/beach/complex{
@@ -11630,7 +11665,8 @@
 	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
 	icon = 'icons/effects/anomalies.dmi';
 	icon_state = "plasmasoul";
-	id = "r12"
+	id = "r12";
+	mouse_opacity = 0
 	},
 /turf/open/floor/plating/asteroid/sand/ship,
 /area/ruin/beach/complex{
@@ -12022,12 +12058,12 @@
 	name = "Elysium Town"
 	})
 "hXC" = (
-/obj/item/banner/separatist/mundane,
-/obj/effect/turf_decal/sand/plating,
-/turf/open/floor/concrete/slab_4,
-/area/ruin/beach/complex{
-	name = "Elysium Town"
-	})
+/mob/living/simple_animal/hostile/carp/holocarp{
+	name = "Cuil";
+	color = "#ff33cc"
+	},
+/turf/open/space/basic,
+/area/outpost/external)
 "hXT" = (
 /obj/structure/table/bronze,
 /obj/item/elysm_manual{
@@ -12442,6 +12478,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
+"imM" = (
+/obj/structure/window/reinforced/spawner{
+	alpha = 0
+	},
+/turf/open/space/basic,
+/area/space)
 "imN" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/effect/turf_decal/siding/wood,
@@ -15739,7 +15781,8 @@
 	alpha = 0;
 	name = "r1";
 	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	id = "r1"
+	id = "r1";
+	mouse_opacity = 0
 	},
 /turf/open/floor/fakepit,
 /area/ruin/beach/complex{
@@ -17835,7 +17878,8 @@
 	alpha = 0;
 	name = "r7";
 	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	id = "r7"
+	id = "r7";
+	mouse_opacity = 0
 	},
 /turf/open/floor/fakepit,
 /area/ruin/beach/complex{
@@ -19225,7 +19269,8 @@
 	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
 	icon_state = "plasmasoul";
 	icon = 'icons/effects/anomalies.dmi';
-	id = "r15"
+	id = "r15";
+	mouse_opacity = 0
 	},
 /turf/open/floor/plating/asteroid/sand/ship,
 /area/ruin/beach/complex{
@@ -22226,7 +22271,8 @@
 	alpha = 0;
 	name = "r3";
 	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	id = "r3"
+	id = "r3";
+	mouse_opacity = 0
 	},
 /turf/open/floor/fakepit,
 /area/ruin/beach/complex{
@@ -22362,7 +22408,8 @@
 	icon_state = "plasmasoul";
 	icon = 'icons/effects/anomalies.dmi';
 	id = "r11";
-	density = 0
+	density = 0;
+	mouse_opacity = 0
 	},
 /turf/open/floor/plating/asteroid/sand/ship,
 /area/ruin/beach/complex{
@@ -23225,7 +23272,8 @@
 	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
 	icon_state = "plasmasoul";
 	icon = 'icons/effects/anomalies.dmi';
-	id = "r14"
+	id = "r14";
+	mouse_opacity = 0
 	},
 /obj/machinery/conveyor/auto{
 	id = "outpost3";
@@ -26062,9 +26110,7 @@
 	})
 "ruV" = (
 /obj/item/mine/proximity/explosive/live,
-/turf/open/floor/plating/airless{
-	alpha = 0
-	},
+/turf/open/space/basic,
 /area/space)
 "ruZ" = (
 /turf/open/floor/concrete/slab_3,
@@ -27392,14 +27438,11 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
 "srk" = (
-/obj/structure/window/reinforced{
-	dir = 1;
-	pixel_y = 5
+/mob/living/simple_animal/hostile/carp/holocarp{
+	name = "Dusha";
+	color = "#0000CD"
 	},
-/obj/item/mine/proximity/explosive/live,
-/turf/open/floor/plating/airless{
-	alpha = 0
-	},
+/turf/open/space/basic,
 /area/outpost/external)
 "srp" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -30056,6 +30099,7 @@
 "ugG" = (
 /obj/structure/table/wood/reinforced/bar,
 /obj/item/trash/raisins,
+/obj/item/binoculars,
 /turf/open/floor/wood/mahogany,
 /area/outpost/fraction/nanotrasen)
 "uhV" = (
@@ -32006,7 +32050,8 @@
 	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
 	icon_state = "plasmasoul";
 	icon = 'icons/effects/anomalies.dmi';
-	id = "r13"
+	id = "r13";
+	mouse_opacity = 0
 	},
 /turf/open/floor/plating/asteroid/sand/ship,
 /area/ruin/beach/complex{
@@ -32131,6 +32176,13 @@
 /obj/effect/spawner/random/maintenance,
 /turf/open/floor/mineral/plastitanium/red,
 /area/outpost/cargo/faction/syndicate)
+"vuB" = (
+/mob/living/simple_animal/hostile/carp/holocarp{
+	name = "Agni";
+	color = "#7d1fb8"
+	},
+/turf/open/space/basic,
+/area/outpost/external)
 "vuC" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 1
@@ -35106,9 +35158,7 @@
 /area/outpost/fraction/inteq)
 "xFA" = (
 /obj/effect/spawner/random/maintenance/six,
-/turf/open/floor/plating/airless{
-	alpha = 0
-	},
+/turf/open/space/basic,
 /area/space)
 "xFN" = (
 /obj/machinery/light/colored/red{
@@ -35947,10 +35997,10 @@
 /obj/effect/portal/permanent/random{
 	alpha = 10;
 	name = "r16";
-	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
 	icon_state = "plasmasoul";
 	icon = 'icons/effects/anomalies.dmi';
-	id = "r16"
+	id = "r16";
+	mouse_opacity = 0
 	},
 /turf/open/floor/plating/asteroid/sand/ship,
 /area/ruin/beach/complex{
@@ -38106,10 +38156,10 @@ fSb
 ruS
 cnT
 cnT
-aRs
 cnT
 cnT
-cRJ
+cnT
+cnT
 ruS
 cnT
 ruS
@@ -38296,7 +38346,7 @@ ruS
 ruS
 ruS
 cnT
-hXC
+cnT
 ruS
 cnT
 ruS
@@ -47522,7 +47572,7 @@ xFO
 mBJ
 iHU
 vhj
-cdF
+vhj
 vhj
 sHX
 sxs
@@ -49018,7 +49068,7 @@ gEb
 nul
 cQb
 aSa
-ayM
+cQb
 owj
 cQb
 wkK
@@ -50674,11 +50724,11 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+cdF
+cdF
+cdF
+cdF
+cdF
 pdc
 pdc
 pdc
@@ -50860,13 +50910,13 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+imM
+vqD
+vqD
+vqD
+vqD
+vqD
+dnn
 pdc
 pdc
 pdc
@@ -51047,13 +51097,13 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+imM
+vqD
+vqD
+hnV
+vqD
+vqD
+dnn
 pdc
 pdc
 pdc
@@ -51234,13 +51284,13 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+imM
+cRJ
+vqD
+vqD
+vqD
+vuB
+dnn
 pdc
 pdc
 pdc
@@ -51421,13 +51471,13 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+imM
+vqD
+vqD
+aRs
+vqD
+vqD
+dnn
 pdc
 pdc
 pdc
@@ -51608,13 +51658,13 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+imM
+srk
+vqD
+vqD
+vqD
+dCT
+dnn
 pdc
 pdc
 pdc
@@ -51795,13 +51845,13 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+imM
+vqD
+vqD
+hXC
+vqD
+vqD
+dnn
 pdc
 pdc
 pdc
@@ -51982,13 +52032,13 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+imM
+vqD
+vqD
+vqD
+vqD
+vqD
+dnn
 pdc
 pdc
 pdc
@@ -52170,11 +52220,11 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+aAg
+aAg
+aAg
+aAg
+aAg
 pdc
 pdc
 pdc
@@ -54727,7 +54777,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+ruV
 pdc
 pdc
 pdc
@@ -56426,7 +56476,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+bdG
 pdc
 pdc
 pdc
@@ -56612,7 +56662,7 @@ pdc
 pdc
 pdc
 pdc
-bdG
+pdc
 pdc
 pdc
 pdc
@@ -56775,7 +56825,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+ruV
 pdc
 cGD
 utH
@@ -57336,7 +57386,7 @@ pdc
 pdc
 pdc
 pdc
-ruV
+pdc
 pdc
 pdc
 cGD
@@ -57520,7 +57570,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+ruV
 pdc
 pdc
 pdc
@@ -57551,7 +57601,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+ruV
 pdc
 pdc
 pdc
@@ -57708,7 +57758,7 @@ pdc
 pdc
 pdc
 pdc
-ruV
+pdc
 pdc
 pdc
 pdc
@@ -57737,7 +57787,7 @@ pdc
 pdc
 pdc
 pdc
-ruV
+pdc
 pdc
 pdc
 pdc
@@ -57890,7 +57940,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+ruV
 pdc
 pdc
 pdc
@@ -58107,7 +58157,7 @@ pdc
 pdc
 aOP
 pdc
-hnV
+lbE
 pdc
 pdc
 pdc
@@ -58817,7 +58867,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+ruV
 pdc
 pdc
 pdc
@@ -60311,7 +60361,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+ruV
 pdc
 pdc
 pdc
@@ -60874,7 +60924,7 @@ pdc
 pdc
 pdc
 pdc
-ruV
+pdc
 pdc
 pdc
 utH
@@ -61056,7 +61106,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+ruV
 pdc
 pdc
 pdc
@@ -61301,7 +61351,7 @@ utH
 cGD
 pdc
 pdc
-pdc
+ruV
 pdc
 pdc
 "}
@@ -61431,7 +61481,7 @@ pdc
 pdc
 pdc
 pdc
-ruV
+pdc
 pdc
 pdc
 pdc
@@ -62175,7 +62225,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+ruV
 pdc
 pdc
 pdc
@@ -62233,7 +62283,7 @@ pdc
 pdc
 pdc
 pdc
-ruV
+pdc
 pdc
 pdc
 pdc
@@ -62364,7 +62414,7 @@ pdc
 pdc
 pdc
 pdc
-ruV
+pdc
 pdc
 pdc
 iRu
@@ -63541,7 +63591,7 @@ pdc
 pdc
 pdc
 pdc
-ruV
+pdc
 pdc
 pdc
 pdc
@@ -63669,8 +63719,8 @@ pdc
 pdc
 pdc
 pdc
+ayM
 pdc
-srk
 pdc
 pdc
 pdc
@@ -63918,7 +63968,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+ruV
 pdc
 pdc
 pdc
@@ -64098,7 +64148,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+ruV
 pdc
 pdc
 pdc
@@ -64276,7 +64326,7 @@ pdc
 pdc
 pdc
 pdc
-ruV
+pdc
 pdc
 pdc
 hOg
@@ -64462,7 +64512,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+xFA
 pdc
 pdc
 pdc
@@ -64663,7 +64713,7 @@ pdc
 pdc
 pdc
 pdc
-ruV
+pdc
 pdc
 pdc
 pdc
@@ -64791,9 +64841,9 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
 ruV
+pdc
+pdc
 pdc
 pdc
 cvq
@@ -65021,7 +65071,7 @@ pdc
 pdc
 pdc
 pdc
-xFA
+pdc
 pdc
 pdc
 pdc
@@ -65227,7 +65277,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+ruV
 pdc
 pdc
 pdc
@@ -65731,7 +65781,7 @@ pdc
 pdc
 pdc
 pdc
-ruV
+pdc
 pdc
 pdc
 cGD
@@ -66102,7 +66152,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+ruV
 pdc
 pdc
 pdc
@@ -66852,7 +66902,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+ruV
 pdc
 pdc
 pdc
@@ -67048,7 +67098,7 @@ pdc
 pdc
 pdc
 pdc
-ruV
+pdc
 pdc
 pdc
 pdc
@@ -67231,7 +67281,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+ruV
 pdc
 pdc
 pdc
@@ -67798,7 +67848,7 @@ pdc
 pdc
 pdc
 pdc
-ruV
+pdc
 pdc
 pdc
 cGD
@@ -68170,7 +68220,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+ruV
 pdc
 pdc
 pdc
@@ -69695,7 +69745,7 @@ pdc
 pdc
 pdc
 pdc
-ruV
+pdc
 pdc
 pdc
 pdc
@@ -69879,12 +69929,12 @@ pdc
 pdc
 pdc
 pdc
+pdc
+pdc
+pdc
+pdc
+pdc
 ruV
-pdc
-pdc
-pdc
-pdc
-pdc
 pdc
 pdc
 pdc
@@ -70249,7 +70299,7 @@ pdc
 pdc
 pdc
 pdc
-pdc
+ruV
 pdc
 pdc
 pdc
