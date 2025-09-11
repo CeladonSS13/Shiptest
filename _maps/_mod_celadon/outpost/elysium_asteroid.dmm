@@ -112,6 +112,12 @@
 	},
 /turf/open/floor/plating/rust,
 /area/outpost/hallway/central)
+"acY" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "aen" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
@@ -363,6 +369,11 @@
 	planetary_atmos = 1
 	},
 /area/outpost/hallway/central)
+"anZ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/outpost/hallway/aft)
 "aok" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 1
@@ -455,6 +466,16 @@
 "asF" = (
 /turf/open/floor/marble/black,
 /area/outpost/fraction/nanotrasen)
+"aum" = (
+/obj/structure/sign/flag/separatist/directional/north,
+/turf/open/floor/plating/asteroid/ship{
+	planetary_atmos = 1;
+	light_power = 0.8;
+	light_range = 2
+	},
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "avg" = (
 /obj/structure/noticeboard{
 	icon_state = "nboard05";
@@ -564,6 +585,26 @@
 	},
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_2)
+"ayL" = (
+/obj/structure/platform/industrial_alt,
+/obj/structure/transit_tube{
+	icon_state = "closed_terminus1";
+	density = 0;
+	mouse_opacity = 0
+	},
+/obj/effect/portal/permanent/one_way{
+	id = "exit_separatist_outpost";
+	alpha = 0;
+	mouse_opacity = 0
+	},
+/obj/machinery/light/directional/south,
+/turf/open/floor/plating/grass{
+	light_power = 0.8;
+	light_range = 2
+	},
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "ayM" = (
 /obj/structure/fluff/steam_vent,
 /turf/open/floor/plasteel/dark,
@@ -887,7 +928,7 @@
 /area/outpost/crew/bar/bar_zone)
 "aJA" = (
 /obj/machinery/door/airlock/maintenance_hatch{
-	req_access_txt = "109";
+	req_access_txt = "8100, 8111";
 	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/unres{
@@ -1073,6 +1114,7 @@
 /area/outpost/hallway/central)
 "aQH" = (
 /obj/structure/table/wood/fancy/blue,
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/solfed)
 "aQI" = (
@@ -1095,6 +1137,12 @@
 	},
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/operations)
+"aRs" = (
+/obj/effect/turf_decal/sand/plating,
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "aRI" = (
 /obj/structure/chair/wood{
 	pixel_y = -14;
@@ -1214,6 +1262,13 @@
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/outpost/hallway/fore)
+"aWK" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	dir = 4;
+	req_one_access_txt = "8100, 8111, 8134"
+	},
+/turf/open/floor/concrete/slab_1,
+/area/outpost/hallway/aft)
 "aXa" = (
 /obj/effect/turf_decal/industrial/warning/corner{
 	color = "#808080";
@@ -1381,6 +1436,19 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
+"bcW" = (
+/obj/structure/table/wood,
+/obj/item/clothing/head/shemag/black,
+/obj/item/clothing/suit/armor/vest/elysium{
+	pixel_x = 8;
+	pixel_y = -2;
+	armor = list("melee" = 35, "bullet" = 60, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	},
+/obj/item/clothing/head/beret/elysium,
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "bdb" = (
 /obj/structure/window/reinforced/spawner/west,
 /obj/machinery/computer/med_data,
@@ -1938,6 +2006,14 @@
 	},
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/starboard)
+"bsb" = (
+/obj/item/storage/backpack/duffelbag/med/surgery,
+/obj/structure/table/scrap,
+/obj/item/bong,
+/turf/open/floor/suns,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "bsf" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -2197,10 +2273,8 @@
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/operations)
 "bCs" = (
-/obj/machinery/door/airlock/maintenance_hatch{
-	dir = 4
-	},
-/turf/open/floor/concrete/slab_1,
+/obj/effect/spawner/random/trash/grille_or_waste,
+/turf/open/floor/plating,
 /area/outpost/hallway/aft)
 "bCJ" = (
 /obj/structure/bed,
@@ -2336,6 +2410,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/fraction/syndi)
+"bKe" = (
+/obj/effect/turf_decal/spline/fancy/wood/three_quarters,
+/turf/open/floor/carpet/green,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "bKx" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2359,6 +2439,12 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/cargo)
+"bMw" = (
+/obj/effect/turf_decal/sand/plating,
+/turf/closed/wall/mineral/uranium/safe,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "bMJ" = (
 /obj/structure/table/wood/poker,
 /obj/structure/cable{
@@ -2373,6 +2459,7 @@
 	layer = 3.09;
 	dir = 1
 	},
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_3)
 "bNk" = (
@@ -2640,7 +2727,7 @@
 /area/outpost/hallway/fore)
 "bWJ" = (
 /obj/machinery/door/airlock/maintenance_hatch{
-	req_access_txt = "109";
+	req_access_txt = "8100, 8111";
 	dir = 4
 	},
 /obj/structure/cable{
@@ -2925,6 +3012,10 @@
 	light_range = 2
 	},
 /area/outpost/hallway/central)
+"cev" = (
+/obj/effect/spawner/random/trash/garbage,
+/turf/open/floor/plating,
+/area/outpost/hallway/aft)
 "cew" = (
 /obj/machinery/light/directional/east,
 /obj/effect/turf_decal/corner/opaque/neutral/half,
@@ -3192,6 +3283,12 @@
 	},
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/hallway/central)
+"cnT" = (
+/obj/effect/turf_decal/sand/plating,
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "coa" = (
 /obj/effect/turf_decal/box/corners{
 	dir = 4
@@ -3453,6 +3550,17 @@
 	},
 /turf/open/floor/plating/foam,
 /area/outpost/hallway/central)
+"cvr" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/machinery/conveyor/auto{
+	id = "outpost3";
+	use_static_power = 1;
+	alpha = 0
+	},
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "cvJ" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#792f27";
@@ -3463,6 +3571,12 @@
 	},
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
+"cwz" = (
+/obj/machinery/light/directional/north,
+/turf/open/floor/suns,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "cwH" = (
 /obj/structure/railing/wood{
 	layer = 3.1;
@@ -3785,6 +3899,17 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/outpost/cargo)
+"cGn" = (
+/obj/effect/portal/permanent/random{
+	alpha = 0;
+	name = "r4";
+	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
+	id = "r4"
+	},
+/turf/open/floor/fakepit,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "cGD" = (
 /turf/closed/indestructible/rock/schist,
 /area/outpost/external)
@@ -3867,6 +3992,16 @@
 /obj/structure/railing/corner/wood,
 /turf/open/floor/wood,
 /area/outpost/crew/library)
+"cIB" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/structure/sign/departments/evac{
+	pixel_x = -32
+	},
+/obj/effect/turf_decal/industrial/warning/fulltile,
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "cJg" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
@@ -3972,6 +4107,12 @@
 	},
 /turf/open/floor/plating/asteroid/snow/under/lit,
 /area/outpost/external)
+"cNI" = (
+/obj/structure/flora/grass/rockplanet,
+/turf/open/floor/plating/ship/water/beach,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "cOc" = (
 /obj/structure/flora/herb/b,
 /obj/structure/flora/ausbushes/fullgrass,
@@ -4007,6 +4148,17 @@
 /obj/machinery/disposal/bin,
 /turf/open/floor/plasteel/patterned/grid,
 /area/outpost/hallway/fore)
+"cOy" = (
+/obj/effect/portal/permanent/random{
+	alpha = 0;
+	name = "r2";
+	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
+	id = "r2"
+	},
+/turf/open/floor/fakepit,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "cOS" = (
 /obj/effect/turf_decal/corner/opaque/yellow/full,
 /obj/effect/turf_decal/industrial/hatch/yellow,
@@ -4106,6 +4258,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/central)
+"cRJ" = (
+/obj/structure/deployable_barricade/sandbags,
+/obj/effect/turf_decal/sand/plating,
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "cSG" = (
 /obj/structure/flora/junglebush/large,
 /turf/open/floor/plating/asteroid/dirt/grass/jungle,
@@ -4138,6 +4297,13 @@
 	},
 /turf/open/floor/carpet/black,
 /area/outpost/fraction/inteq)
+"cUg" = (
+/obj/structure/table/optable,
+/obj/item/clothing/head/beret/dominia/medical,
+/turf/open/floor/suns,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "cUh" = (
 /obj/effect/spawner/random/entertainment/gambling,
 /obj/structure/table/reinforced,
@@ -4192,6 +4358,7 @@
 /turf/open/floor/concrete/slab_4,
 /area/outpost/hallway/starboard)
 "cVs" = (
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/red_gold,
 /area/outpost/hallway/central)
 "cVD" = (
@@ -4333,6 +4500,22 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
+"cZn" = (
+/obj/machinery/power/smes/magical{
+	name = "power storage unit";
+	desc = "A high-capacity superconducting magnetic energy storage (SMES) unit.";
+	output_level = 120000;
+	input_level = 120000
+	},
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "cZt" = (
 /obj/effect/turf_decal/corner/opaque/yellow/full,
 /obj/effect/turf_decal/industrial/hatch/yellow,
@@ -4755,6 +4938,7 @@
 /obj/machinery/airalarm/directional/south{
 	req_access_txt = "8100, 8111"
 	},
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_2)
 "dow" = (
@@ -4898,6 +5082,13 @@
 	},
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/aft)
+"duA" = (
+/obj/structure/table/scrap,
+/obj/item/bong,
+/turf/open/floor/wood,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "duT" = (
 /obj/structure/curtain/cloth/elysium,
 /turf/open/floor/wood,
@@ -5033,6 +5224,12 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/armory)
+"dBN" = (
+/obj/structure/curtain/cloth/elysium,
+/turf/open/floor/carpet/green,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "dBY" = (
 /obj/effect/turf_decal/corner/transparent/blue{
 	dir = 10
@@ -5134,6 +5331,18 @@
 /obj/structure/flora/herb/f,
 /turf/open/floor/grass,
 /area/outpost/hallway/aft)
+"dFf" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/machinery/conveyor/auto{
+	id = "outpost3";
+	use_static_power = 1;
+	alpha = 0;
+	dir = 8
+	},
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "dFi" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -5367,6 +5576,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/black,
 /area/outpost/fraction/syndi)
 "dNG" = (
@@ -5480,6 +5690,11 @@
 /obj/structure/sign/flag/syndie/directional/east,
 /turf/open/floor/carpet/black,
 /area/outpost/fraction/syndi)
+"dQl" = (
+/turf/open/floor/plating,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "dRe" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 1
@@ -5511,6 +5726,13 @@
 	},
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/fraction/syndi)
+"dSy" = (
+/obj/structure/chair/sofa/olive/old/corner/directional/south,
+/obj/item/food/grown/cannabis,
+/turf/open/floor/carpet/green,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "dSM" = (
 /obj/effect/turf_decal/box/corners{
 	dir = 8
@@ -6062,6 +6284,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/outpost/hallway/fore)
+"eip" = (
+/obj/structure/table/wood/fancy/blue,
+/obj/machinery/newscaster/directional/south,
+/obj/effect/spawner/random/celadon_drink,
+/turf/open/floor/carpet/blue,
+/area/outpost/fraction/nanotrasen)
 "eis" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 1
@@ -6342,6 +6570,20 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/cargo)
+"ete" = (
+/obj/effect/portal/permanent/random{
+	alpha = 10;
+	name = "r8";
+	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
+	icon_state = "plasmasoul";
+	icon = 'icons/effects/anomalies.dmi';
+	id = "r8";
+	density = 0
+	},
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "etV" = (
 /obj/effect/turf_decal/corner/transparent/nsorange/three_quarters{
 	dir = 8
@@ -6387,6 +6629,15 @@
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/concrete/slab_4,
 /area/outpost/hallway/aft)
+"evq" = (
+/obj/structure/table/wood/reinforced/bar,
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
+	pixel_x = 10;
+	pixel_y = 13
+	},
+/obj/effect/spawner/random/celadon_drink,
+/turf/open/floor/wood/ebony,
+/area/outpost/fraction/solfed)
 "evr" = (
 /obj/structure/window/reinforced{
 	dir = 1;
@@ -6897,6 +7148,11 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
+"eJW" = (
+/obj/structure/table/wood/reinforced/bar,
+/obj/effect/spawner/random/celadon_drink,
+/turf/open/floor/wood/ebony,
+/area/outpost/fraction/solfed)
 "eKa" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/stairs/mid{
@@ -7025,6 +7281,15 @@
 /obj/structure/chair/office,
 /turf/open/floor/carpet/nanoweave,
 /area/outpost/vacant_rooms)
+"eOB" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/structure/platform/industrial_alt{
+	dir = 8
+	},
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "eOS" = (
 /turf/closed/indestructible/rock/jungle,
 /area/outpost/crew/garden)
@@ -7138,6 +7403,16 @@
 /obj/machinery/washing_machine,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/outpost/crew/canteen)
+"eVf" = (
+/obj/structure/table/bronze,
+/obj/item/storage/fancy/candle_box{
+	pixel_y = 1
+	},
+/obj/item/clothing/head/beret/dominia/priest,
+/turf/open/floor/suns/dark,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "eVi" = (
 /obj/machinery/conveyor/auto{
 	dir = 5;
@@ -7216,6 +7491,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/aft)
+"eWQ" = (
+/obj/structure/chair/sofa/olive/old/left/directional/west,
+/turf/open/floor/carpet/green,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "eYi" = (
 /obj/machinery/light/colored/orange{
 	dir = 1;
@@ -7523,6 +7804,14 @@
 	},
 /turf/open/floor/concrete/slab_3,
 /area/outpost/crew/garden)
+"fjO" = (
+/obj/structure/curtain/cloth/elysium{
+	dir = 4
+	},
+/turf/open/floor/suns/dark/pattern,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "fjV" = (
 /obj/structure/window/reinforced{
 	dir = 8;
@@ -7679,6 +7968,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/central)
+"fnT" = (
+/obj/structure/flora/tree/cactus,
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "fof" = (
 /obj/machinery/light/directional/west,
 /obj/effect/decal/cleanable/dirt,
@@ -7724,6 +8019,7 @@
 	pixel_y = 3;
 	pixel_x = 8
 	},
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood/mahogany,
 /area/outpost/crew/bar/bar_zone)
 "fpT" = (
@@ -8492,6 +8788,11 @@
 /obj/structure/fluff/hedge,
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/nanotrasen)
+"fQV" = (
+/turf/open/floor/carpet/green,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "fRh" = (
 /obj/item/stack/sheet/mineral/wood,
 /obj/effect/decal/cleanable/cobweb,
@@ -8512,6 +8813,9 @@
 /obj/structure/chair/bench/olive/directional/north,
 /turf/open/floor/concrete/slab_1,
 /area/outpost/hallway/aft)
+"fSb" = (
+/turf/closed/indestructible/rock/whitesands,
+/area/outpost/external)
 "fSy" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -8603,6 +8907,28 @@
 	},
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
+"fUR" = (
+/obj/structure/table/wood/fancy/green,
+/obj/item/clothing/head/shemag/black{
+	pixel_x = 6;
+	pixel_y = 11
+	},
+/obj/item/clothing/head/shemag/white{
+	pixel_x = 0;
+	pixel_y = 4
+	},
+/obj/item/clothing/head/shemag/green{
+	pixel_x = 7;
+	pixel_y = 0
+	},
+/turf/open/floor/plating/asteroid/sand{
+	light_power = 0.8;
+	light_range = 2;
+	light_color = "#FAE1AF"
+	},
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "fWd" = (
 /obj/structure/dresser,
 /obj/item/trash/candle{
@@ -8626,6 +8952,13 @@
 /obj/structure/railing/wood,
 /turf/open/floor/grass,
 /area/outpost/hallway/central)
+"fWF" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/curtain/cloth/elysium,
+/turf/open/floor/carpet/green,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "fXb" = (
 /obj/structure/railing/wood,
 /obj/structure/flora/ausbushes/fullgrass,
@@ -8651,6 +8984,18 @@
 /obj/effect/turf_decal/trimline/opaque/yellow/line,
 /turf/open/floor/plasteel/patterned/grid,
 /area/outpost/fraction/inteq)
+"fXP" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/machinery/conveyor/auto{
+	id = "outpost3";
+	use_static_power = 1;
+	alpha = 0;
+	dir = 1
+	},
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "fYq" = (
 /obj/machinery/conveyor/auto{
 	dir = 8;
@@ -8695,6 +9040,17 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel/grimy,
 /area/outpost/cargo)
+"gaj" = (
+/obj/effect/portal/permanent/random{
+	alpha = 0;
+	name = "r9";
+	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
+	id = "r9"
+	},
+/turf/open/floor/plating/asteroid/icerock/temperate,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "gaC" = (
 /obj/structure/table/wood/fancy/blue,
 /obj/machinery/newscaster/directional/south,
@@ -8843,7 +9199,7 @@
 	alpha = 0;
 	mouse_opacity = 0
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/fraction/syndi)
 "ghO" = (
 /obj/structure/chair/sofa/brown/corner/directional/north,
@@ -8974,7 +9330,6 @@
 "glO" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/aft)
 "glR" = (
@@ -9349,6 +9704,11 @@
 	},
 /turf/open/floor/plating/asteroid/wasteplanet,
 /area/outpost/hallway/central)
+"gAu" = (
+/turf/open/floor/plating/ship/water/beach,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "gBi" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 8
@@ -9417,6 +9777,13 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/maintenance/aft)
+"gDn" = (
+/obj/structure/chair/sofa/olive/old/directional/south,
+/obj/machinery/light/directional/north,
+/turf/open/floor/carpet/green,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "gDC" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -9484,6 +9851,22 @@
 /obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/concrete/tiles,
 /area/outpost/hallway/aft)
+"gGZ" = (
+/obj/machinery/power/rtg/geothermal,
+/obj/structure/sign/warning/electricshock{
+	pixel_x = -28
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "gHh" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
@@ -9607,6 +9990,25 @@
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
 /area/outpost/hallway/central)
+"gJE" = (
+/obj/machinery/conveyor/auto{
+	id = "outpost3";
+	use_static_power = 1;
+	alpha = 0;
+	dir = 1
+	},
+/obj/effect/portal/permanent/random{
+	alpha = 10;
+	name = "r10";
+	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
+	icon_state = "plasmasoul";
+	icon = 'icons/effects/anomalies.dmi';
+	id = "r10"
+	},
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "gJO" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -9692,6 +10094,7 @@
 	dir = 1
 	},
 /obj/structure/table/glass,
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/relax_room)
 "gMy" = (
@@ -9771,6 +10174,16 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo)
+"gNP" = (
+/obj/structure/deployable_barricade/sandbags,
+/turf/open/floor/plating/asteroid/ship{
+	planetary_atmos = 1;
+	light_power = 0.8;
+	light_range = 2
+	},
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "gOd" = (
 /obj/effect/turf_decal/industrial/fire/corner{
 	dir = 1
@@ -9804,6 +10217,13 @@
 "gOB" = (
 /turf/open/floor/plating/asteroid/icerock/cracked,
 /area/outpost/hallway/central)
+"gOP" = (
+/obj/structure/table/scrap,
+/obj/item/bong/lungbuster,
+/turf/open/floor/wood,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "gPz" = (
 /obj/machinery/photocopier,
 /obj/machinery/light/colored/white{
@@ -10081,10 +10501,6 @@
 /area/outpost/medical/hall_2)
 "haL" = (
 /obj/structure/table/wood/reinforced/bar,
-/obj/item/reagent_containers/food/drinks/mug{
-	pixel_x = -7;
-	pixel_y = -2
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
@@ -10094,6 +10510,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood/mahogany,
 /area/outpost/crew/bar/bar_zone)
 "hbc" = (
@@ -10216,6 +10633,7 @@
 	dir = 1
 	},
 /obj/structure/table/glass,
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/glass/red,
 /area/outpost/fraction/syndi)
 "hgx" = (
@@ -10695,6 +11113,17 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/outpost/fraction/syndi)
+"hsA" = (
+/obj/effect/portal/permanent/random{
+	alpha = 0;
+	name = "r9";
+	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
+	id = "r9"
+	},
+/turf/open/floor/fakepit,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "hsB" = (
 /obj/effect/turf_decal/techfloor/orange/corner{
 	dir = 1
@@ -10794,6 +11223,7 @@
 /area/outpost/hallway/central)
 "hwj" = (
 /obj/structure/table/glass/plasma_glass,
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_1)
 "hwy" = (
@@ -10878,6 +11308,19 @@
 	icon_state = "wood-broken4"
 	},
 /area/outpost/crew/library)
+"hzb" = (
+/obj/machinery/power/terminal{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/structure/catwalk/over,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "hzM" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -10999,6 +11442,21 @@
 /obj/structure/chair/sofa/brown/right/directional/north,
 /turf/open/floor/wood,
 /area/outpost/crew/library)
+"hDa" = (
+/obj/structure/table/wood,
+/obj/item/scythe,
+/turf/open/floor/carpet/green,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
+"hDb" = (
+/obj/structure/reagent_dispensers/uranium,
+/obj/effect/turf_decal/sand/plating,
+/obj/structure/sign/flag/separatist/directional/south,
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "hDN" = (
 /obj/machinery/door/poddoor/ert{
 	id = "OutpostPoligonExit_4";
@@ -11056,6 +11514,18 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/engineering)
+"hFo" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/icerock/temperate,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
+"hFx" = (
+/obj/effect/turf_decal/sand/plating,
+/turf/closed/indestructible/sandstone,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "hGY" = (
 /obj/effect/turf_decal/techfloor/orange/corner{
 	dir = 8
@@ -11084,6 +11554,24 @@
 /obj/effect/turf_decal/steeldecal/steel_decals10,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/crew/cryo)
+"hHD" = (
+/obj/machinery/conveyor/auto{
+	id = "outpost3";
+	use_static_power = 1;
+	alpha = 0
+	},
+/obj/effect/portal/permanent/random{
+	alpha = 10;
+	name = "r12";
+	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
+	icon = 'icons/effects/anomalies.dmi';
+	icon_state = "plasmasoul";
+	id = "r12"
+	},
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "hJa" = (
 /obj/effect/turf_decal/trimline/opaque/solgovgold/warning{
 	dir = 6
@@ -11271,6 +11759,11 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/operations)
+"hOO" = (
+/turf/open/floor/plating/asteroid/icerock/temperate,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "hOQ" = (
 /obj/effect/turf_decal/industrial/fire{
 	dir = 1
@@ -11309,6 +11802,12 @@
 /obj/structure/sign/flag/solfed/directional/east,
 /turf/open/floor/wood/ebony,
 /area/outpost/fraction/solfed)
+"hQT" = (
+/obj/structure/reagent_dispensers/cooking_oil,
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "hRs" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/white{
@@ -11451,6 +11950,33 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/inteq)
+"hXr" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/structure/mineral_door/sandstone,
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
+"hXC" = (
+/obj/item/banner/separatist/mundane,
+/obj/effect/turf_decal/sand/plating,
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
+"hXT" = (
+/obj/structure/table/bronze,
+/obj/item/elysm_manual{
+	pixel_x = 7;
+	pixel_y = 8
+	},
+/obj/item/storage/fancy/candle_box{
+	pixel_y = 1
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "hYa" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/cable{
@@ -11564,6 +12090,17 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/concrete/tiles,
 /area/outpost/hallway/central)
+"icc" = (
+/obj/structure/table/wood/fancy/green,
+/obj/item/clothing/head/turban/white,
+/turf/open/floor/plating/asteroid/sand{
+	light_power = 0.8;
+	light_range = 2;
+	light_color = "#FAE1AF"
+	},
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "ice" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south{
@@ -11794,6 +12331,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/showroomfloor,
 /area/outpost/medical/relax_room)
+"ilB" = (
+/obj/structure/mineral_door/sandstone,
+/turf/open/floor/wood,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "ilF" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -12847,7 +13390,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/aft)
 "iSN" = (
@@ -13029,6 +13571,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/outpost/crew/bar/bar_zone)
+"iZY" = (
+/obj/structure/fluff/paper/stack,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/outpost/hallway/aft)
 "jap" = (
 /obj/effect/decal/cleanable/garbage{
 	pixel_y = -7;
@@ -13767,6 +14315,7 @@
 /obj/effect/turf_decal/corner/transparent/blue/half{
 	dir = 8
 	},
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/reseption)
 "jBf" = (
@@ -13810,7 +14359,7 @@
 	assemblytype = /obj/structure/door_assembly/door_assembly_eng;
 	icon = 'icons/obj/doors/airlocks/station/engineering.dmi';
 	overlays_file = 'icons/obj/doors/airlocks/station/overlays.dmi';
-	req_access_txt = "101"
+	req_access_txt = "8100, 8111"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/tech,
@@ -14679,6 +15228,22 @@
 	},
 /turf/open/floor/carpet/black,
 /area/outpost/fraction/inteq)
+"khH" = (
+/obj/machinery/power/rtg/geothermal,
+/obj/structure/sign/warning/electricshock{
+	pixel_x = -28
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "khQ" = (
 /obj/structure/table/wood/fancy/orange,
 /turf/open/floor/wood/ebony,
@@ -14790,7 +15355,7 @@
 /obj/structure/girder{
 	anchored = 0
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/rust,
 /area/outpost/hallway/aft)
 "kjN" = (
 /obj/effect/turf_decal/industrial/traffic{
@@ -15034,6 +15599,7 @@
 	color = "#543c30"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/solfed)
 "kud" = (
@@ -15053,6 +15619,17 @@
 	},
 /turf/open/floor/plasteel/mono,
 /area/outpost/fraction/inteq)
+"kwl" = (
+/obj/effect/portal/permanent/random{
+	alpha = 0;
+	name = "r1";
+	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
+	id = "r1"
+	},
+/turf/open/floor/fakepit,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "kwQ" = (
 /obj/effect/turf_decal/corner/opaque/yellow/full,
 /obj/effect/turf_decal/industrial/hatch/yellow,
@@ -15236,6 +15813,7 @@
 /obj/item/storage/fancy/cigarettes/cigars/cohiba,
 /obj/item/storage/fancy/cigarettes/cigars/havana,
 /obj/item/lighter/clockwork,
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
 "kCQ" = (
@@ -15379,10 +15957,45 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
+"kEI" = (
+/obj/item/target{
+	icon = 'icons/mob/simple_frontiersman.dmi';
+	icon_state = "frontiersmanrangedminigun_mask"
+	},
+/obj/item/target{
+	icon = 'icons/obj/turrets.dmi';
+	icon_state = "machinegun";
+	pixel_y = -16
+	},
+/turf/open/floor/plating/asteroid/ship{
+	planetary_atmos = 1;
+	light_power = 0.8;
+	light_range = 2
+	},
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
+"kEO" = (
+/obj/structure/lattice,
+/obj/effect/spawner/random/celadon_drink,
+/turf/open/space/basic,
+/area/outpost/external)
 "kET" = (
 /obj/structure/flora/junglebush/c,
 /turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/outpost/hallway/central)
+"kFa" = (
+/obj/structure/chair/wood{
+	dir = 1
+	},
+/turf/open/floor/plating/asteroid/sand{
+	light_power = 0.8;
+	light_range = 2;
+	light_color = "#FAE1AF"
+	},
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "kFi" = (
 /obj/structure/grille/broken,
 /obj/effect/decal/cleanable/dirt,
@@ -15475,6 +16088,15 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/crew/dop_zone_3)
+"kIz" = (
+/turf/open/floor/plating/asteroid/sand{
+	light_power = 0.8;
+	light_range = 2;
+	light_color = "#FAE1AF"
+	},
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "kIK" = (
 /obj/structure/flora/rock/rockplanet,
 /turf/open/floor/plating/asteroid/rockplanet/safe,
@@ -15501,6 +16123,23 @@
 /obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/cryo)
+"kKf" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/item/storage/toolbox/drone,
+/obj/item/storage/toolbox/electrical,
+/obj/item/wrench,
+/obj/item/stack/sheet/mineral/plasma/twenty,
+/obj/item/stack/sheet/mineral/plasma/twenty,
+/obj/item/stack/sheet/mineral/plasma/twenty,
+/obj/structure/catwalk/over,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "kKw" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
@@ -15547,6 +16186,12 @@
 	},
 /turf/open/floor/wood,
 /area/outpost/vacant_rooms/office)
+"kLv" = (
+/obj/machinery/hydroponics/soil,
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "kLH" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/railing/wood{
@@ -15626,6 +16271,7 @@
 	pixel_y = 13
 	},
 /obj/machinery/newscaster/directional/north,
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/solfed)
 "kNI" = (
@@ -15704,6 +16350,7 @@
 	pixel_x = -8;
 	pixel_y = 7
 	},
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood/mahogany,
 /area/outpost/fraction/nanotrasen)
 "kPC" = (
@@ -15855,7 +16502,7 @@
 	dir = 1
 	},
 /obj/machinery/door/airlock/maintenance_hatch{
-	req_access_txt = "109"
+	req_access_txt = "8100, 8111"
 	},
 /turf/open/floor/plating,
 /area/outpost/maintenance/fore)
@@ -15867,6 +16514,9 @@
 "kWR" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/machinery/door/airlock/maintenance_hatch{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/unres{
 	dir = 4
 	},
 /turf/open/floor/plating,
@@ -16233,6 +16883,15 @@
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/grass,
 /area/outpost/crew/garden)
+"lkp" = (
+/obj/structure/table/wood,
+/obj/item/food/grown/cannabis,
+/obj/item/food/grown/aloe,
+/obj/machinery/light/directional/north,
+/turf/open/floor/carpet/green,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "lkA" = (
 /obj/structure/closet/secure_closet/ertMed,
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -16711,6 +17370,16 @@
 "lCF" = (
 /turf/closed/indestructible/reinforced,
 /area/outpost/medical/hall_1)
+"lCZ" = (
+/obj/structure/falsewall/sandstone,
+/turf/open/floor/plating/asteroid/ship{
+	planetary_atmos = 1;
+	light_power = 0.8;
+	light_range = 2
+	},
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "lDg" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 9
@@ -16845,6 +17514,7 @@
 /obj/item/reagent_containers/food/drinks/mug/coco{
 	pixel_x = 7
 	},
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood/mahogany,
 /area/outpost/crew/bar/bar_zone)
 "lIS" = (
@@ -16984,6 +17654,22 @@
 	},
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/fraction/syndi)
+"lNc" = (
+/obj/machinery/power/rtg/geothermal,
+/obj/structure/sign/warning/electricshock{
+	pixel_x = -28
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-1"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "lNk" = (
 /obj/structure/sign/flag/syndie/directional/south,
 /turf/open/floor/plasteel/dark_2,
@@ -17026,6 +17712,17 @@
 /obj/structure/chair/comfy/blue/corpo/directional/east,
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/nanotrasen)
+"lOk" = (
+/obj/effect/portal/permanent/random{
+	alpha = 0;
+	name = "r7";
+	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
+	id = "r7"
+	},
+/turf/open/floor/fakepit,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "lOL" = (
 /obj/structure/showcase/machinery/cloning_pod,
 /obj/effect/turf_decal/box/corners{
@@ -17033,6 +17730,19 @@
 	},
 /turf/open/floor/plating/rust,
 /area/outpost/maintenance/aft)
+"lPl" = (
+/obj/effect/turf_decal/spline/fancy/wood/three_quarters,
+/obj/machinery/light/directional/north,
+/turf/open/floor/carpet/green,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
+"lPy" = (
+/obj/structure/sign/flag/separatist/directional/south,
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "lQd" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -17141,6 +17851,16 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/hallway/fore)
+"lUc" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plating/asteroid/sand{
+	light_power = 0.8;
+	light_range = 2;
+	light_color = "#FAE1AF"
+	},
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "lUn" = (
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced{
@@ -17222,6 +17942,12 @@
 /obj/structure/curtain/bounty,
 /turf/open/floor/plating/catwalk_floor,
 /area/outpost/security)
+"lVB" = (
+/obj/structure/fluff/paper/stack{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/outpost/hallway/aft)
 "lVV" = (
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/fraction/syndi)
@@ -17354,6 +18080,14 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/closed/indestructible/reinforced,
 /area/outpost/engineering/atmospherics)
+"lZT" = (
+/obj/structure/fluff/paper/stack{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/outpost/hallway/aft)
 "mab" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/opaque/blue/filled/line{
@@ -17906,6 +18640,9 @@
 "mre" = (
 /obj/machinery/door/airlock/maintenance_hatch,
 /obj/structure/catwalk/over/plated_catwalk,
+/obj/effect/mapping_helpers/airlock/unres{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/outpost/maintenance/aft)
 "mrr" = (
@@ -18059,6 +18796,14 @@
 	},
 /turf/open/floor/wood/mahogany,
 /area/outpost/crew/bar/bar_zone)
+"mBG" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plating,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "mBJ" = (
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 4
@@ -18080,6 +18825,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
+"mCd" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/icerock/temperate,
+/area/outpost/external)
 "mCe" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
@@ -18197,6 +18946,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/engine,
 /area/outpost/maintenance/aft)
+"mGi" = (
+/obj/structure/table/scrap,
+/obj/item/seeds/cannabis,
+/obj/item/seeds/cannabis,
+/turf/open/floor/wood,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "mGn" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -18343,6 +19100,19 @@
 /obj/structure/chair/sofa/olive/corner/directional/east,
 /turf/open/floor/wood,
 /area/outpost/crew/library)
+"mLs" = (
+/obj/effect/portal/permanent/random{
+	alpha = 10;
+	name = "r15";
+	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
+	icon_state = "plasmasoul";
+	icon = 'icons/effects/anomalies.dmi';
+	id = "r15"
+	},
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "mLP" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -18367,6 +19137,13 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/fraction/inteq)
+"mMd" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/structure/sign/flag/separatist/directional/south,
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "mMC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -19139,6 +19916,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
+"nqX" = (
+/obj/effect/turf_decal/sand/plating,
+/turf/closed/indestructible/rock/whitesands,
+/area/outpost/external)
 "nsp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wood/corner{
@@ -19648,6 +20429,13 @@
 "nNc" = (
 /turf/open/floor/plating/ice/smooth,
 /area/outpost/fraction/nanotrasen)
+"nNy" = (
+/obj/structure/table/wood,
+/obj/item/food/grown/apple,
+/turf/open/floor/carpet/green,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "nNE" = (
 /obj/item/toy/plush/beeplushie{
 	pixel_y = 5;
@@ -19963,6 +20751,21 @@
 	},
 /turf/open/floor/carpet/nanoweave,
 /area/outpost/hallway/central)
+"ocf" = (
+/obj/structure/table/wood,
+/obj/item/stack/sheet/mineral/sandstone/thirty,
+/obj/item/stack/sheet/mineral/sandstone/thirty{
+	pixel_x = 10;
+	pixel_y = -2
+	},
+/obj/item/stack/sheet/mineral/sandstone/thirty{
+	pixel_x = -9;
+	pixel_y = 1
+	},
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "ocp" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/railing/wood{
@@ -20121,6 +20924,11 @@
 /obj/effect/spawner/random/entertainment/plushie,
 /turf/open/floor/concrete,
 /area/outpost/hallway/central)
+"ohS" = (
+/obj/structure/table/wood/fancy/orange,
+/obj/effect/spawner/random/celadon_drink,
+/turf/open/floor/wood/ebony,
+/area/outpost/fraction/solfed)
 "ohY" = (
 /obj/machinery/airalarm/directional/south{
 	req_access_txt = "8100, 8111"
@@ -20338,7 +21146,7 @@
 	assemblytype = /obj/structure/door_assembly/door_assembly_atmo;
 	icon = 'icons/obj/doors/airlocks/station/atmos.dmi';
 	overlays_file = 'icons/obj/doors/airlocks/station/overlays.dmi';
-	req_access_txt = "101"
+	req_access_txt = "8100, 8111"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/tech/techmaint,
@@ -20544,6 +21352,13 @@
 /obj/effect/turf_decal/trimline/opaque/nsorange/line,
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
+"oxm" = (
+/obj/effect/decal/cleanable/sprayweb,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/icerock/temperate,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "oxo" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -20795,6 +21610,12 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/outpost/crew/bar/bar_zone)
+"oFW" = (
+/obj/item/target/alien,
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "oGg" = (
 /obj/machinery/newscaster/directional/east,
 /obj/structure/chair/sofa/olive/left/directional/west,
@@ -21172,6 +21993,13 @@
 /obj/machinery/disposal/bin,
 /turf/open/floor/plasteel/patterned/grid,
 /area/outpost/hallway/fore)
+"oSs" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/structure/chair/wood,
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "oSt" = (
 /obj/effect/turf_decal/industrial/stand_clear,
 /turf/open/floor/plasteel/mono,
@@ -21208,6 +22036,24 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/concrete/tiles,
 /area/outpost/hallway/aft)
+"oTr" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/concrete/slab_4,
+/area/outpost/hallway/aft)
+"oTO" = (
+/obj/effect/portal/permanent/random{
+	alpha = 0;
+	name = "r3";
+	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
+	id = "r3"
+	},
+/turf/open/floor/fakepit,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "oTR" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	color = "#792f27";
@@ -21330,6 +22176,20 @@
 "oZT" = (
 /turf/closed/indestructible/rock/schist,
 /area/outpost/fraction/inteq)
+"oZX" = (
+/obj/effect/portal/permanent/random{
+	alpha = 10;
+	name = "r11";
+	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
+	icon_state = "plasmasoul";
+	icon = 'icons/effects/anomalies.dmi';
+	id = "r11";
+	density = 0
+	},
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "pak" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/structure/barricade,
@@ -21376,7 +22236,7 @@
 	assemblytype = /obj/structure/door_assembly/door_assembly_eng;
 	icon = 'icons/obj/doors/airlocks/station/engineering.dmi';
 	overlays_file = 'icons/obj/doors/airlocks/station/overlays.dmi';
-	req_access_txt = "101"
+	req_access_txt = "8100, 8111"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
@@ -21914,6 +22774,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/aft)
+"psw" = (
+/turf/closed/indestructible/rock/whitesands,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "psU" = (
 /obj/effect/turf_decal/trimline/opaque/nsorange/line{
 	dir = 8
@@ -21995,7 +22860,7 @@
 	assemblytype = /obj/structure/door_assembly/door_assembly_eng;
 	icon = 'icons/obj/doors/airlocks/station/engineering.dmi';
 	overlays_file = 'icons/obj/doors/airlocks/station/overlays.dmi';
-	req_access_txt = "101";
+	req_access_txt = "8100, 8111";
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -22069,6 +22934,12 @@
 	},
 /turf/open/floor/grass,
 /area/outpost/hallway/fore)
+"pwf" = (
+/obj/item/clothing/shoes/sandal,
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "pwF" = (
 /obj/machinery/door/airlock/outpost{
 	dir = 1;
@@ -22169,6 +23040,25 @@
 "pzg" = (
 /turf/closed/indestructible/reinforced,
 /area/outpost/medical/surgery_1)
+"pzu" = (
+/obj/effect/portal/permanent/random{
+	alpha = 10;
+	name = "r14";
+	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
+	icon_state = "plasmasoul";
+	icon = 'icons/effects/anomalies.dmi';
+	id = "r14"
+	},
+/obj/machinery/conveyor/auto{
+	id = "outpost3";
+	use_static_power = 1;
+	alpha = 0;
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "pAP" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -22385,6 +23275,7 @@
 	dir = 1;
 	mouse_opacity = 0
 	},
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/red_gold,
 /area/outpost/fraction/syndi/donkco_shop)
 "pFu" = (
@@ -22623,6 +23514,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/hallway/fore)
+"pPl" = (
+/obj/item/banner/separatist/mundane,
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "pPm" = (
 /obj/effect/turf_decal/corner/transparent/vired/mono,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -22687,6 +23584,19 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/vacant_rooms/trash_factory)
+"pRQ" = (
+/obj/structure/table/bronze,
+/obj/item/alquadim_manual{
+	pixel_x = 7;
+	pixel_y = 5
+	},
+/obj/item/storage/fancy/candle_box{
+	pixel_y = 1
+	},
+/turf/open/floor/suns/dark,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "pSt" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
@@ -23043,6 +23953,14 @@
 	},
 /turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
+"qgl" = (
+/obj/structure/table/wood,
+/obj/item/food/grown/cannabis,
+/obj/item/clothing/head/beret/elysium,
+/turf/open/floor/carpet/green,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "qgv" = (
 /obj/structure/chair/office{
 	dir = 1
@@ -23167,6 +24085,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/outpost/fraction/syndi)
+"qiS" = (
+/obj/machinery/light/floor{
+	alpha = 0
+	},
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "qiU" = (
 /obj/structure/railing/wood,
 /obj/machinery/light/colored/directional/north,
@@ -23341,6 +24267,20 @@
 	dir = 1
 	},
 /area/outpost/operations)
+"qpZ" = (
+/obj/item/stack/sheet/mineral/sandstone/thirty{
+	pixel_x = 10;
+	pixel_y = -2
+	},
+/obj/item/stack/sheet/mineral/sandstone/thirty,
+/obj/item/stack/sheet/mineral/sandstone/thirty{
+	pixel_x = -9;
+	pixel_y = 1
+	},
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "qqH" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -23410,6 +24350,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/engineering)
+"quC" = (
+/mob/living/simple_animal/hostile/retaliate/goat{
+	faction = list("goat", "playerElysium")
+	},
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "qvi" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 8
@@ -23870,6 +24818,11 @@
 	},
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/outpost/fraction/solfed)
+"qKo" = (
+/turf/closed/wall/mineral/uranium/safe,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "qKv" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -24043,6 +24996,12 @@
 	},
 /turf/open/floor/carpet/red,
 /area/outpost/vacant_rooms/office)
+"qNG" = (
+/obj/effect/landmark/portal_exit{
+	id = "exit_separatist_outpost"
+	},
+/turf/open/floor/plating,
+/area/outpost/hallway/aft)
 "qNO" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 8
@@ -24330,6 +25289,13 @@
 /obj/effect/turf_decal/industrial/warning,
 /turf/open/floor/plating,
 /area/outpost/maintenance/aft)
+"qWT" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/machinery/light/directional/south,
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "qXc" = (
 /obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning,
 /obj/machinery/door/firedoor/border_only{
@@ -24399,6 +25365,10 @@
 "qYr" = (
 /turf/closed/indestructible/reinforced,
 /area/outpost/crew/dop_zone_1)
+"qYY" = (
+/obj/effect/spawner/random/celadon_drink,
+/turf/open/space/basic,
+/area/space)
 "qZK" = (
 /obj/machinery/power/supermatter_crystal/shard/hugbox/fakecrystal{
 	color = "#0000FF";
@@ -24530,6 +25500,12 @@
 	},
 /turf/open/floor/carpet/nanoweave,
 /area/outpost/crew/canteen)
+"reH" = (
+/obj/effect/decal/cleanable/sprayweb,
+/turf/open/floor/plating/asteroid/icerock/temperate,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "rfU" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 1
@@ -24902,12 +25878,10 @@
 /turf/open/floor/plasteel/tech,
 /area/outpost/engineering)
 "ruS" = (
-/obj/structure/table/syndi,
-/obj/effect/turf_decal/spline/plain/opaque/syndiered{
-	dir = 1
-	},
-/turf/open/floor/carpet/royalblack,
-/area/outpost/fraction/syndi)
+/turf/closed/indestructible/sandstone,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "ruV" = (
 /obj/item/mine/proximity/explosive/live,
 /turf/open/floor/plating/airless{
@@ -24946,6 +25920,13 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
+"rvt" = (
+/obj/structure/table/wood,
+/obj/item/food/grown/carrot,
+/turf/open/floor/carpet/green,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "rvC" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -25041,6 +26022,13 @@
 	},
 /turf/open/floor/wood,
 /area/outpost/crew/dorm)
+"rye" = (
+/obj/structure/mineral_door/sandstone,
+/obj/effect/turf_decal/sand/plating,
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "ryA" = (
 /obj/structure/flora/tree/palm{
 	pixel_x = 16
@@ -25320,6 +26308,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/solfed)
 "rII" = (
@@ -25690,6 +26679,14 @@
 /obj/structure/closet/crate,
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/cargo/faction/nanotrasen)
+"rVs" = (
+/obj/structure/catwalk/over,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "rVx" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
@@ -25734,6 +26731,15 @@
 "rWC" = (
 /turf/open/floor/plasteel,
 /area/outpost/crew/canteen)
+"rXj" = (
+/obj/structure/sign/flag/separatist/directional/south,
+/obj/machinery/light/floor{
+	alpha = 0
+	},
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "rXS" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -26158,6 +27164,16 @@
 /obj/effect/spawner/random/stockparts,
 /turf/open/floor/plating/foam,
 /area/outpost/hallway/central)
+"snu" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/structure/table/wood,
+/obj/item/food/grown/cannabis,
+/obj/item/food/grown/cannabis,
+/obj/item/bong/lungbuster,
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "soy" = (
 /obj/machinery/door/airlock/grunge{
 	req_access_txt = "8133"
@@ -26253,6 +27269,20 @@
 	},
 /turf/open/floor/wood/ebony,
 /area/outpost/fraction/solfed)
+"ssS" = (
+/obj/structure/table/bronze,
+/obj/item/storage/fancy/candle_box{
+	pixel_y = 1
+	},
+/obj/item/storage/book/bible/koran{
+	pixel_x = 7;
+	pixel_y = -11
+	},
+/obj/item/clothing/head/beret/dominia/priest/red,
+/turf/open/floor/suns/dark,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "stv" = (
 /obj/structure/chair/sofa/brown/left{
 	dir = 4
@@ -26387,6 +27417,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /obj/structure/table/wood/fancy/blue,
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/nanotrasen)
 "szi" = (
@@ -26490,6 +27521,11 @@
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/outpost/hallway/central)
+"sCv" = (
+/turf/open/floor/suns/dark/pattern,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "sCZ" = (
 /obj/machinery/vending/boozeomat/outpost_access{
 	pixel_y = -32
@@ -26526,6 +27562,17 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/outpost/medical/relax_room)
+"sEx" = (
+/obj/item/paper{
+	pixel_x = 3;
+	pixel_y = 7;
+	default_raw_text = "Рамиль, мы отправляемся в котакомбы под аванпостом. Будем ждать тебя там. Запомни лаз, иначе придется тебе поплутать! Храни тебя Аллах"
+	},
+/obj/structure/fluff/paper/stack{
+	dir = 5
+	},
+/turf/open/floor/plating/rust,
+/area/outpost/hallway/aft)
 "sEH" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
@@ -27078,6 +28125,20 @@
 /obj/item/radio/intercom/directional/west,
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
+"taj" = (
+/obj/item/food/grown/cannabis,
+/obj/item/food/grown/cannabis,
+/obj/item/food/grown/cannabis,
+/obj/item/food/grown/cannabis,
+/obj/structure/table/wood,
+/obj/machinery/light/directional/south,
+/obj/item/seeds/cannabis,
+/obj/item/seeds/cannabis,
+/obj/item/bong/lungbuster,
+/turf/open/floor/wood,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "taJ" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/machinery/light/colored/red{
@@ -27418,6 +28479,7 @@
 /area/outpost/hallway/aft)
 "tlR" = (
 /obj/structure/table/glass,
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/royalblack,
 /area/outpost/fraction/nanotrasen)
 "tlS" = (
@@ -27607,6 +28669,13 @@
 "trX" = (
 /turf/closed/indestructible/rock/schist,
 /area/outpost/medical/palata_1)
+"tsf" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/item/clothing/shoes/sandal,
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "tsC" = (
 /obj/structure/table,
 /obj/effect/turf_decal/techfloor{
@@ -27848,6 +28917,11 @@
 "tDj" = (
 /turf/closed/indestructible/reinforced,
 /area/outpost/security/armory)
+"tEq" = (
+/turf/open/floor/suns/dark,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "tEu" = (
 /obj/effect/turf_decal/siding/thinplating/corner,
 /obj/effect/turf_decal/industrial/warning{
@@ -27873,6 +28947,13 @@
 	},
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/hallway/central)
+"tFx" = (
+/obj/effect/turf_decal/spline/fancy/wood/three_quarters,
+/obj/machinery/light/directional/south,
+/turf/open/floor/carpet/green,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "tFB" = (
 /obj/item/bot_assembly/firebot,
 /obj/effect/radiation,
@@ -27908,6 +28989,20 @@
 	},
 /turf/open/floor/plating/asteroid/rockplanet/lit,
 /area/outpost/hallway/central)
+"tHe" = (
+/obj/item/bong/lungbuster{
+	pixel_x = 1;
+	pixel_y = 12
+	},
+/obj/structure/table/wood,
+/obj/item/lighter{
+	pixel_x = -9
+	},
+/obj/item/food/grown/cannabis,
+/turf/open/floor/carpet/green,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "tHL" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -28610,6 +29705,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/concrete/slab_4,
 /area/outpost/hallway/aft)
+"ucN" = (
+/obj/structure/mineral_door/sandstone,
+/turf/open/floor/suns,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "ucV" = (
 /obj/structure/lattice/clockwork,
 /turf/open/space/basic,
@@ -29081,6 +30182,14 @@
 /obj/machinery/computer/communications,
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
+"utf" = (
+/obj/structure/fluff/paper/stack{
+	dir = 5
+	},
+/turf/open/floor/wood,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "uti" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -29304,10 +30413,7 @@
 	pixel_y = 6;
 	pixel_x = 10
 	},
-/obj/item/reagent_containers/food/drinks/bottle/sososeta{
-	pixel_x = 0;
-	pixel_y = 8
-	},
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/relax_room)
 "uAT" = (
@@ -29649,7 +30755,6 @@
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/crew/cryo)
 "uOK" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
 	},
@@ -29667,6 +30772,12 @@
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/outpost/fraction/inteq)
+"uPg" = (
+/obj/structure/chair/sofa/olive/old/right/directional/south,
+/turf/open/floor/carpet/green,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "uPA" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/machinery/light/colored/directional/south{
@@ -29767,6 +30878,21 @@
 	},
 /turf/open/floor/wood,
 /area/outpost/fraction/solfed)
+"uRH" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
+"uRJ" = (
+/obj/structure/reagent_dispensers/uranium,
+/obj/effect/turf_decal/sand/plating,
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "uSs" = (
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
@@ -30274,7 +31400,7 @@
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 1
 	},
-/obj/item/reagent_containers/food/drinks/cafelatte,
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/royalblack,
 /area/outpost/fraction/syndi)
 "vgQ" = (
@@ -30288,6 +31414,12 @@
 	},
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/starboard)
+"vgS" = (
+/obj/structure/closet/secure_closet/medical2,
+/turf/open/floor/suns,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "vhj" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/dark,
@@ -30658,6 +31790,25 @@
 	},
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/operations)
+"vqA" = (
+/obj/machinery/conveyor/auto{
+	id = "outpost3";
+	use_static_power = 1;
+	alpha = 0;
+	dir = 1
+	},
+/obj/effect/portal/permanent/random{
+	alpha = 10;
+	name = "r13";
+	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
+	icon_state = "plasmasoul";
+	icon = 'icons/effects/anomalies.dmi';
+	id = "r13"
+	},
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "vqB" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/siding/wood/corner{
@@ -30922,6 +32073,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/crew/cryo)
+"vyT" = (
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "vyZ" = (
 /obj/machinery/recharge_station{
 	pixel_y = 22
@@ -31042,6 +32198,13 @@
 /mob/living/simple_animal/hostile/venus_human_trap,
 /turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/outpost/hallway/central)
+"vDX" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/machinery/light/directional/north,
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "vEa" = (
 /obj/structure/railing{
 	dir = 8
@@ -31388,6 +32551,16 @@
 	},
 /turf/open/floor/plating/rust,
 /area/outpost/hallway/central)
+"vQc" = (
+/obj/structure/railing/wood{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/concrete/slab_3,
+/area/outpost/hallway/aft)
 "vQf" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -31501,6 +32674,19 @@
 /obj/effect/spawner/random/bedsheet,
 /turf/open/floor/carpet,
 /area/outpost/crew/dorm)
+"vSG" = (
+/obj/item/cultivator/rake,
+/obj/item/hatchet/wooden,
+/obj/structure/table/wood,
+/obj/item/clothing/head/beret/elysium,
+/turf/open/floor/plating/asteroid/sand{
+	light_power = 0.8;
+	light_range = 2;
+	light_color = "#FAE1AF"
+	},
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "vTb" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 1
@@ -31530,6 +32716,12 @@
 	},
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_1)
+"vVd" = (
+/obj/item/target,
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "vVK" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
@@ -31771,6 +32963,7 @@
 "wed" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/glass/light_glass,
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood,
 /area/outpost/crew/library)
 "weA" = (
@@ -32013,6 +33206,15 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/engine/hull/rockplanet,
 /area/outpost/hallway/central)
+"woU" = (
+/obj/structure/flora/ausbushes/fullgrass/hell{
+	light_power = 0;
+	light_range = 0
+	},
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "wpO" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
@@ -32058,6 +33260,16 @@
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood,
 /area/outpost/operations)
+"wsd" = (
+/obj/structure/transit_tube/crossing/horizontal,
+/obj/structure/platform/industrial_alt,
+/turf/open/floor/plating/grass{
+	light_power = 0.8;
+	light_range = 2
+	},
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "wsz" = (
 /obj/structure/railing/wood{
 	layer = 3.1;
@@ -32238,6 +33450,17 @@
 /obj/item/bedsheet/cmo,
 /turf/open/floor/carpet/cyan,
 /area/outpost/operations)
+"wwJ" = (
+/obj/machinery/power/port_gen/pacman,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "wwR" = (
 /obj/structure/sign/poster/contraband/red_rum,
 /turf/closed/indestructible/reinforced,
@@ -32309,6 +33532,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/aft)
+"wyB" = (
+/obj/structure/chair/sofa/olive/old/directional/south,
+/turf/open/floor/carpet/green,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "wyE" = (
 /obj/effect/turf_decal/corner/opaque/yellow/full,
 /obj/effect/turf_decal/industrial/hatch/yellow,
@@ -32390,6 +33619,15 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/armory)
+"wDF" = (
+/turf/open/floor/plating/asteroid/ship{
+	planetary_atmos = 1;
+	light_power = 0.8;
+	light_range = 2
+	},
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "wDN" = (
 /obj/structure/railing/wood{
 	color = "#55391A";
@@ -32740,6 +33978,7 @@
 /obj/effect/turf_decal/siding/wood{
 	color = "#792f27"
 	},
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood/mahogany,
 /area/outpost/crew/bar/bar_zone)
 "wRa" = (
@@ -32799,6 +34038,14 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
+"wTB" = (
+/obj/structure/sign/poster/elysium/sonofelysium{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "wTI" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -32811,6 +34058,11 @@
 /obj/effect/spawner/random/entertainment/plushie,
 /turf/open/floor/concrete,
 /area/outpost/hallway/central)
+"wUf" = (
+/obj/structure/table/wood/reinforced/bar,
+/obj/effect/spawner/random/celadon_drink,
+/turf/open/floor/wood/mahogany,
+/area/outpost/fraction/nanotrasen)
 "wUS" = (
 /obj/effect/turf_decal/trimline/opaque/nsorange/line{
 	dir = 8
@@ -33144,6 +34396,7 @@
 "xid" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/glass/plasma_glass,
+/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_1)
 "xig" = (
@@ -33640,7 +34893,9 @@
 /turf/open/floor/concrete/tiles,
 /area/outpost/hallway/central)
 "xEW" = (
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	req_one_access_txt = "8100, 8111, 8134"
+	},
 /turf/open/floor/concrete/slab_1,
 /area/outpost/hallway/aft)
 "xFs" = (
@@ -33811,6 +35066,11 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/vacant_rooms/trash_factory)
+"xLL" = (
+/turf/open/floor/suns,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "xMr" = (
 /obj/machinery/airalarm/directional/south{
 	req_access_txt = "8100, 8111"
@@ -33847,6 +35107,18 @@
 /obj/structure/chair,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/hallway/fore)
+"xNJ" = (
+/obj/effect/turf_decal/radiation,
+/obj/effect/turf_decal/sand/plating,
+/obj/structure/window/reinforced/spawner{
+	dir = 1;
+	mouse_opacity = 0
+	},
+/obj/structure/curtain/cloth/elysium/half,
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "xNO" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
@@ -34167,6 +35439,18 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete/slab_4,
 /area/outpost/hallway/starboard)
+"xWQ" = (
+/obj/machinery/conveyor/auto{
+	id = "outpost3";
+	use_static_power = 1;
+	alpha = 0;
+	dir = 1
+	},
+/obj/effect/turf_decal/sand/plating,
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "xWZ" = (
 /obj/structure/table/glass,
 /obj/item/paper_bin{
@@ -34201,6 +35485,14 @@
 	},
 /turf/open/floor/grass,
 /area/outpost/hallway/central)
+"xYA" = (
+/obj/structure/chair/wood{
+	dir = 1
+	},
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "xZh" = (
 /obj/structure/window/reinforced{
 	pixel_y = -5
@@ -34238,6 +35530,34 @@
 	},
 /turf/open/floor/concrete/slab_2,
 /area/outpost/hallway/central)
+"yaI" = (
+/obj/structure/table/wood/fancy/green,
+/obj/structure/table/wood/fancy/green,
+/obj/item/clothing/head/turban/black{
+	pixel_x = 13;
+	pixel_y = 0
+	},
+/obj/item/clothing/head/beret/dominia/consular,
+/turf/open/floor/plating/asteroid/sand{
+	light_power = 0.8;
+	light_range = 2;
+	light_color = "#FAE1AF"
+	},
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
+"yaN" = (
+/obj/structure/sign/poster/elysium/protest{
+	pixel_y = -32
+	},
+/turf/open/floor/plating/asteroid/ship{
+	planetary_atmos = 1;
+	light_power = 0.8;
+	light_range = 2
+	},
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "ybe" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -34344,6 +35664,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/ebony,
 /area/outpost/fraction/solfed)
+"yeV" = (
+/obj/structure/fluff/paper/stack{
+	dir = 5
+	},
+/turf/open/floor/plating,
+/area/outpost/hallway/aft)
 "yfg" = (
 /obj/structure/platform/wood/corner{
 	dir = 8
@@ -34427,6 +35753,19 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/cargo)
+"yjx" = (
+/obj/effect/portal/permanent/random{
+	alpha = 10;
+	name = "r16";
+	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
+	icon_state = "plasmasoul";
+	icon = 'icons/effects/anomalies.dmi';
+	id = "r16"
+	},
+/turf/open/floor/plating/asteroid/sand/ship,
+/area/ruin/beach/complex{
+	name = "Elysium Town"
+	})
 "yjK" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -34688,35 +36027,35 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
 "}
 (2,1,1) = {"
 pdc
@@ -34875,35 +36214,35 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+ruS
+ruS
+ruS
+ruS
+ruS
+ruS
+ruS
+ruS
+ruS
+fSb
+fSb
+fSb
+fSb
 "}
 (3,1,1) = {"
 pdc
@@ -35062,35 +36401,35 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+ruS
+cnT
+rye
+cnT
+cnT
+cnT
+xWQ
+vqA
+ruS
+fSb
+fSb
+fSb
+fSb
 "}
 (4,1,1) = {"
 pdc
@@ -35248,36 +36587,36 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+vVd
+vyT
+fnT
+vyT
+oFW
+fSb
+fSb
+ruS
+cnT
+ruS
+ruS
+ruS
+cnT
+ruS
+ruS
+ruS
+ruS
+ruS
+fSb
+fSb
 "}
 (5,1,1) = {"
 pdc
@@ -35435,36 +36774,36 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+ruS
+ruS
+ruS
+ruS
+fSb
+vyT
+vyT
+vyT
+vyT
+oFW
+vyT
+acY
+vyT
+fSb
+ruS
+cnT
+ruS
+hHD
+cvr
+cnT
+ruS
+cnT
+fXP
+gJE
+ruS
+fSb
+fSb
 "}
 (6,1,1) = {"
 pdc
@@ -35622,36 +36961,36 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+ruS
+vgS
+xLL
+ruS
+vyT
+vyT
+oFW
+acY
+qiS
+acY
+vyT
+vyT
+vyT
+fSb
+ruS
+cnT
+ruS
+ruS
+ruS
+cnT
+ruS
+cnT
+ruS
+ruS
+ruS
+ruS
+fSb
 "}
 (7,1,1) = {"
 pdc
@@ -35809,36 +37148,36 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+ruS
+cwz
+xLL
+ucN
+vyT
+vyT
+acY
+acY
+woU
+kIz
+vyT
+vyT
+vyT
+fSb
+ruS
+cnT
+rye
+cnT
+ruS
+cnT
+ruS
+cnT
+cnT
+rye
+cnT
+ruS
+fSb
 "}
 (8,1,1) = {"
 pdc
@@ -35996,36 +37335,36 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+ruS
+cUg
+bsb
+qKo
+fnT
+vyT
+woU
+vyT
+vyT
+vyT
+vyT
+vyT
+bcW
+fSb
+ruS
+ruS
+ruS
+cnT
+ruS
+cnT
+ruS
+ruS
+ruS
+ruS
+cnT
+ruS
+fSb
 "}
 (9,1,1) = {"
 pdc
@@ -36183,36 +37522,36 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+qKo
+qKo
+qKo
+qKo
+lPy
+vyT
+vyT
+vyT
+lUc
+lUc
+acY
+vyT
+bcW
+fSb
+ruS
+cnT
+rye
+cnT
+ruS
+cnT
+cnT
+rye
+cnT
+rye
+cnT
+ruS
+fSb
 "}
 (10,1,1) = {"
 pdc
@@ -36370,36 +37709,36 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+qKo
+rvt
+fQV
+qKo
+vyT
+vyT
+vyT
+vyT
+vyT
+vyT
+vyT
+vyT
+vyT
+fSb
+ruS
+cnT
+ruS
+ruS
+ruS
+ruS
+ruS
+ruS
+cnT
+ruS
+ruS
+ruS
+fSb
 "}
 (11,1,1) = {"
 pdc
@@ -36556,37 +37895,37 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+ruS
+lkp
+fQV
+ruS
+vyT
+woU
+vyT
+woU
+vyT
+vyT
+vyT
+yaI
+fUR
+fSb
+ruS
+cnT
+cnT
+aRs
+cnT
+cnT
+cRJ
+ruS
+cnT
+ruS
+fSb
+fSb
+fSb
 "}
 (12,1,1) = {"
 pdc
@@ -36743,37 +38082,37 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+ruS
+nNy
+fQV
+ruS
+wTB
+vyT
+vyT
+qiS
+kLv
+cNI
+vyT
+icc
+kFa
+fSb
+ruS
+ruS
+ruS
+ruS
+ruS
+cnT
+hXC
+ruS
+cnT
+ruS
+fSb
+fSb
+fSb
 "}
 (13,1,1) = {"
 pdc
@@ -36930,37 +38269,37 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+hDa
+fQV
+gOP
+xYA
+vyT
+kLv
+cNI
+cNI
+cNI
+vyT
+vyT
+vyT
+fSb
+fSb
+fSb
+ruS
+ete
+ruS
+cnT
+ruS
+ruS
+cnT
+ruS
+ruS
+ruS
+fSb
 "}
 (14,1,1) = {"
 pdc
@@ -37117,37 +38456,37 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+mGi
+fQV
+fQV
+duA
+xYA
+vyT
+woU
+cNI
+gAu
+woU
+vyT
+yaN
+ruS
+ruS
+ruS
+fSb
+ruS
+cnT
+rye
+cnT
+cnT
+rye
+cnT
+rye
+cnT
+ruS
+fSb
 "}
 (15,1,1) = {"
 pdc
@@ -37304,37 +38643,37 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+mGi
+fQV
+fQV
+duA
+xYA
+vyT
+cNI
+gAu
+gAu
+cNI
+vyT
+wDF
+ruS
+taj
+ruS
+fSb
+ruS
+oZX
+ruS
+cnT
+ruS
+ruS
+ruS
+ruS
+dFf
+ruS
+fSb
 "}
 (16,1,1) = {"
 pdc
@@ -37491,37 +38830,37 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+mGi
+mGi
+fQV
+gOP
+xYA
+vyT
+cNI
+gAu
+cNI
+woU
+vyT
+wDF
+ilB
+utf
+fSb
+fSb
+ruS
+ruS
+ruS
+mLs
+ruS
+ruS
+yjx
+ruS
+pzu
+ruS
+fSb
 "}
 (17,1,1) = {"
 pdc
@@ -37678,37 +39017,37 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+ruS
+ruS
+ilB
+ruS
+rXj
+woU
+kLv
+cNI
+cNI
+kLv
+vyT
+aum
+qKo
+qKo
+fSb
+fSb
+fSb
+fSb
+ruS
+ruS
+ruS
+ruS
+cnT
+ruS
+ruS
+ruS
+fSb
 "}
 (18,1,1) = {"
 pdc
@@ -37865,37 +39204,37 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+ruS
+vyT
+woU
+vyT
+vyT
+vyT
+cNI
+kLv
+vyT
+qiS
+wDF
+vyT
+ocf
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+woU
+fSb
+fSb
+fSb
+fSb
 "}
 (19,1,1) = {"
 pdc
@@ -38052,37 +39391,37 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+ruS
+vyT
+vyT
+quC
+vyT
+vyT
+vyT
+vyT
+vyT
+pwf
+wDF
+woU
+woU
+quC
+fSb
+fSb
+fSb
+fSb
+fSb
+vyT
+vyT
+wDF
+fSb
+fSb
+fSb
+fSb
 "}
 (20,1,1) = {"
 pdc
@@ -38239,37 +39578,37 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+ruS
+ruS
+vyT
+vyT
+vyT
+woU
+qpZ
+pPl
+wDF
+pPl
+vyT
+vyT
+vyT
+hQT
+fSb
+fSb
+fSb
+fSb
+vyT
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
 "}
 (21,1,1) = {"
 pdc
@@ -38426,37 +39765,37 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+hQT
+vyT
+vyT
+vyT
+fSb
+qKo
+lCZ
+ruS
+fSb
+hQT
+vyT
+hQT
+fSb
+fSb
+fSb
+woU
+wDF
+vyT
+vyT
+woU
+fSb
+fSb
+fSb
 "}
 (22,1,1) = {"
 pdc
@@ -38613,37 +39952,37 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+vSG
+vyT
+woU
+fSb
+wDF
+wDF
+vyT
+fSb
+fSb
+hQT
+hQT
+fSb
+fSb
+fSb
+vyT
+fSb
+woU
+fSb
+fSb
+fSb
+fSb
+fSb
 "}
 (23,1,1) = {"
 pdc
@@ -38801,36 +40140,36 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+vyT
+vyT
+fSb
+wDF
+gNP
+vyT
+vyT
+fSb
+fSb
+fSb
+fSb
+fSb
+vyT
+wDF
+vyT
+vyT
+fSb
+fSb
+fSb
+fSb
+fSb
 "}
 (24,1,1) = {"
 pdc
@@ -38988,36 +40327,36 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+vyT
+vyT
+fSb
+kEI
+gNP
+vyT
+vyT
+vyT
+woU
+fSb
+fSb
+vyT
+woU
+fSb
+vyT
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
 "}
 (25,1,1) = {"
 pdc
@@ -39175,36 +40514,36 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+woU
+vyT
+fSb
+fSb
+fSb
+woU
+fSb
+fSb
+wDF
+fSb
+fSb
+fSb
+vyT
+vyT
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
 "}
 (26,1,1) = {"
 pdc
@@ -39362,36 +40701,36 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+qKo
+qKo
+ruS
+rye
+rye
+qKo
+fSb
+fSb
+fSb
+fSb
+woU
+wDF
+wDF
+fSb
+wDF
+wDF
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
 "}
 (27,1,1) = {"
 pdc
@@ -39550,35 +40889,35 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+qKo
+uRJ
+xNJ
+cnT
+cnT
+qKo
+fSb
+fSb
+fSb
+fSb
+fSb
+vyT
+wDF
+vyT
+woU
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
 "}
 (28,1,1) = {"
 pdc
@@ -39737,35 +41076,35 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+qKo
+hDb
+xNJ
+cnT
+qWT
+ruS
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
 "}
 (29,1,1) = {"
 pdc
@@ -39926,33 +41265,33 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+qKo
+uRJ
+xNJ
+cnT
+cnT
+qKo
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
 "}
 (30,1,1) = {"
 pdc
@@ -40113,33 +41452,33 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+qKo
+qKo
+qKo
+hXr
+hXr
+ruS
+qKo
+qKo
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
 "}
 (31,1,1) = {"
 pdc
@@ -40300,33 +41639,33 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+qKo
+mMd
+cnT
+cnT
+cnT
+qKo
+qKo
+qKo
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+khH
+gGZ
+lNc
+fSb
 "}
 (32,1,1) = {"
 pdc
@@ -40487,33 +41826,33 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+qKo
+bMw
+bMw
+bMw
+vDX
+oSs
+snu
+qKo
+ruS
+wsd
+ruS
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+kKf
+rVs
+hzb
+fSb
 "}
 (33,1,1) = {"
 pdc
@@ -40675,32 +42014,32 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+qKo
+uPg
+fQV
+dBN
+tsf
+cnT
+cnT
+cnT
+cIB
+ayL
+ruS
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+wwJ
+mBG
+cZn
+fSb
 "}
 (34,1,1) = {"
 pdc
@@ -40862,32 +42201,32 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+ruS
+gDn
+qgl
+dBN
+cnT
+cnT
+cnT
+cnT
+cnT
+eOB
+ruS
+psw
+psw
+psw
+psw
+psw
+psw
+psw
+dQl
+uRH
+fSb
+fSb
 "}
 (35,1,1) = {"
 pdc
@@ -41049,32 +42388,32 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+ruS
+wyB
+tHe
+fWF
+tsf
+cnT
+qWT
+hFx
+hFx
+hFx
+ruS
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+ruS
+fSb
+fSb
 "}
 (36,1,1) = {"
 pdc
@@ -41236,32 +42575,32 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+qKo
+dSy
+eWQ
+dBN
+tsf
+cnT
+cnT
+hFx
+nqX
+nqX
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
 "}
 (37,1,1) = {"
 pdc
@@ -41424,31 +42763,31 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+qKo
+qKo
+qKo
+bMw
+ruS
+fjO
+fjO
+ruS
+ruS
+ruS
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
 "}
 (38,1,1) = {"
 pdc
@@ -41611,31 +42950,31 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+ruS
+bKe
+bKe
+sCv
+sCv
+bKe
+bKe
+ruS
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
 "}
 (39,1,1) = {"
 pdc
@@ -41799,28 +43138,28 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+ruS
+bKe
+bKe
+sCv
+sCv
+bKe
+bKe
+ruS
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
 pdc
 pdc
 "}
@@ -41986,24 +43325,24 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+ruS
+lPl
+bKe
+sCv
+sCv
+bKe
+tFx
+ruS
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
 pdc
 pdc
 pdc
@@ -42174,22 +43513,22 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+ruS
+tEq
+tEq
+sCv
+sCv
+tEq
+tEq
+ruS
+fSb
+fSb
+fSb
+fSb
+fSb
 pdc
 pdc
 pdc
@@ -42361,20 +43700,20 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+ruS
+ruS
+pRQ
+ssS
+eVf
+hXT
+ruS
+ruS
+fSb
+fSb
+fSb
 pdc
 pdc
 pdc
@@ -42549,19 +43888,19 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+ruS
+ruS
+ruS
+ruS
+ruS
+ruS
+fSb
+fSb
+fSb
+fSb
 pdc
 pdc
 pdc
@@ -42736,18 +44075,18 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
 pdc
 pdc
 pdc
@@ -42924,17 +44263,17 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
 pdc
 pdc
 pdc
@@ -43113,14 +44452,14 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
-pdc
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
+fSb
 pdc
 pdc
 pdc
@@ -44181,7 +45520,7 @@ hgt
 chp
 oFa
 hqJ
-ruS
+vgI
 oPY
 hsm
 jff
@@ -45644,7 +46983,7 @@ ciM
 hiG
 nSi
 sSt
-bpf
+eJW
 ope
 uVb
 nEU
@@ -45834,7 +47173,7 @@ uVb
 ciM
 kfK
 art
-khQ
+ohS
 kVq
 pdc
 pdc
@@ -46014,7 +47353,7 @@ nSi
 mWp
 uVb
 afn
-ciM
+evq
 uVb
 kVH
 uVb
@@ -46579,7 +47918,7 @@ kml
 uVt
 lHC
 uVb
-ciM
+evq
 ope
 uVb
 cBJ
@@ -49727,7 +51066,7 @@ pdc
 pdc
 pdc
 tOH
-gqg
+wUf
 weA
 xig
 nYp
@@ -49919,7 +51258,7 @@ weA
 xig
 nYp
 aLf
-gaC
+eip
 gEb
 dmp
 biP
@@ -52405,9 +53744,9 @@ mVj
 eCT
 nAN
 bbj
-cGD
-cGD
-cGD
+iTs
+qNG
+vXY
 cGD
 cGD
 cGD
@@ -52592,9 +53931,9 @@ fSC
 csX
 dHq
 bbj
-cGD
-cGD
-cGD
+cev
+bCs
+vXY
 cGD
 cGD
 cGD
@@ -52729,7 +54068,7 @@ cGD
 cGD
 cGD
 cGD
-eeQ
+oTO
 cGD
 hrA
 hrA
@@ -52779,9 +54118,9 @@ wKr
 xej
 bbj
 bbj
-cGD
-cGD
-cGD
+iTs
+iTs
+vXY
 bFW
 bFW
 bFW
@@ -52913,10 +54252,10 @@ qWM
 gYm
 cGD
 cGD
-eeQ
+cGn
 cGD
-eeQ
-eeQ
+oxm
+hFo
 cGD
 cGD
 cGD
@@ -52965,10 +54304,10 @@ bbj
 bbj
 bbj
 bbj
-cGD
-cGD
-cGD
-cGD
+cev
+bCs
+iTs
+bCs
 bFW
 iIz
 ice
@@ -53100,14 +54439,14 @@ sGl
 gYm
 cGD
 cGD
-eeQ
-eeQ
-eeQ
+hFo
+oxm
+oxm
 cGD
 cGD
-eeQ
 cGD
-eeQ
+cGD
+hsA
 cGD
 cGD
 hrA
@@ -53148,14 +54487,14 @@ esy
 bqq
 yiR
 bFW
-cGD
-cGD
-cGD
-cGD
-cGD
-cGD
-cGD
-cGD
+bCs
+iTs
+iTs
+iTs
+iTs
+iTs
+iTs
+bCs
 bFW
 xbQ
 bFW
@@ -53286,16 +54625,16 @@ gIF
 bBF
 gYm
 cGD
-eeQ
-eeQ
+mCd
+oxm
 cGD
-eeQ
 cGD
-eeQ
-eeQ
-eeQ
-eeQ
-eeQ
+cGD
+cGD
+cGD
+cGD
+hFo
+hFo
 cGD
 hrA
 ycl
@@ -53303,7 +54642,7 @@ ycl
 ycl
 hrA
 cGD
-eeQ
+kwl
 cGD
 ndE
 hhw
@@ -53335,8 +54674,8 @@ bFW
 bFW
 bMk
 bFW
-cGD
-cGD
+cev
+iTs
 bFW
 bFW
 bFW
@@ -53476,12 +54815,12 @@ cGD
 cGD
 cGD
 cGD
-eeQ
 cGD
 cGD
-eeQ
 cGD
-eeQ
+cGD
+cGD
+oxm
 cGD
 cGD
 hrA
@@ -53490,7 +54829,7 @@ ycl
 ycl
 hrA
 cGD
-eeQ
+hOO
 cGD
 ndE
 avT
@@ -53523,7 +54862,7 @@ bFW
 vxl
 bFW
 bFW
-cGD
+iTs
 bFW
 eZH
 yhW
@@ -53663,13 +55002,13 @@ gYm
 gYm
 cGD
 cGD
-eeQ
-eeQ
-eeQ
-eeQ
+hFo
+oxm
+oxm
+hFo
 cGD
-eeQ
-eeQ
+hFo
+cOy
 cGD
 hrA
 hrA
@@ -53677,7 +55016,7 @@ hrA
 hrA
 hrA
 cGD
-eeQ
+reH
 cGD
 ndE
 ndE
@@ -53710,7 +55049,7 @@ tks
 iVs
 bso
 bFW
-cGD
+iTs
 bFW
 xbM
 hSO
@@ -53849,23 +55188,23 @@ kDo
 jLn
 gYm
 cGD
-eeQ
-eeQ
+mCd
+hFo
 cGD
 cGD
-eeQ
+oxm
 cGD
-eeQ
-cGD
-cGD
-cGD
+oxm
 cGD
 cGD
 cGD
 cGD
 cGD
-eeQ
-eeQ
+cGD
+cGD
+cGD
+reH
+cGD
 cGD
 ndE
 lwY
@@ -53897,7 +55236,7 @@ xcO
 hTd
 muU
 bFW
-cGD
+iTs
 bFW
 iSR
 yhW
@@ -54037,21 +55376,21 @@ bwQ
 gYm
 cGD
 cGD
-eeQ
+lOk
 cGD
-eeQ
-eeQ
+cGn
+hFo
 cGD
-eeQ
-eeQ
-eeQ
-eeQ
+oxm
+oxm
+oxm
 cGD
-eeQ
 cGD
-eeQ
-eeQ
-eeQ
+cGn
+cGD
+reH
+reH
+hOO
 cGD
 cGD
 ndE
@@ -54084,7 +55423,7 @@ cOS
 tWs
 lss
 bFW
-cGD
+iTs
 bFW
 daE
 enO
@@ -54230,15 +55569,15 @@ cGD
 cGD
 cGD
 cGD
-eeQ
+hFo
 cGD
-eeQ
-eeQ
-eeQ
-eeQ
-eeQ
 cGD
-eeQ
+cGD
+hOO
+hOO
+reH
+cGD
+hOO
 cGD
 vXY
 vXY
@@ -54271,7 +55610,7 @@ oRV
 arC
 cxw
 bFW
-cGD
+iTs
 bFW
 bFW
 cew
@@ -54420,9 +55759,9 @@ vXY
 kjM
 vXY
 cGD
-eeQ
 cGD
-eeQ
+cGD
+gaj
 cGD
 vXY
 kjM
@@ -54431,7 +55770,7 @@ vXY
 eau
 gpg
 lyp
-nxr
+oTr
 vAq
 kYH
 omf
@@ -54458,7 +55797,7 @@ bFW
 mgy
 bee
 bFW
-vXY
+aWK
 bFW
 bFW
 bFW
@@ -54602,22 +55941,22 @@ gDd
 jLn
 iro
 gYm
-iTs
-iTs
-iTs
+anZ
+iZY
+sEx
 vXY
 cGD
 cGD
 cGD
-eeQ
+cGD
 cGD
 vXY
-iTs
-iTs
+sEx
+yeV
 xEW
 uOK
-iSJ
-iSJ
+glO
+glO
 iSJ
 iSJ
 glO
@@ -54789,8 +56128,8 @@ gYm
 bKx
 osO
 gYm
-iTs
-iTs
+anZ
+lVB
 iTs
 vXY
 cGD
@@ -54799,12 +56138,12 @@ cGD
 cGD
 vXY
 vXY
-iTs
-iTs
+iZY
+lZT
 vXY
 gVB
 uVT
-uVT
+vQc
 bxs
 nwm
 eAz
@@ -54977,7 +56316,7 @@ kQh
 enH
 gYm
 vXY
-bCs
+aWK
 vXY
 vXY
 vXY
@@ -54985,9 +56324,9 @@ tmh
 tmh
 tmh
 tmh
-iTs
-iTs
-iTs
+anZ
+anZ
+anZ
 vXY
 pqS
 pfU
@@ -57877,7 +59216,7 @@ hOg
 ngt
 hOg
 pdc
-pdc
+qYY
 pdc
 pdc
 pdc
@@ -61264,7 +62603,7 @@ pfV
 fzx
 srI
 hnA
-hOg
+kEO
 pdc
 pdc
 fHm
@@ -66478,7 +67817,7 @@ ydm
 ono
 utH
 cGD
-pdc
+qYY
 pdc
 pdc
 pdc
