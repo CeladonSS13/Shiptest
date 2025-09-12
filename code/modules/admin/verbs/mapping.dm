@@ -65,7 +65,7 @@ GLOBAL_PROTECT(admin_verbs_debug_extra)
 /obj/effect/debugging/marker
 	// [CELADON-EDIT] - CELADON_AREAS - Иначе никак не подсунуть свои зоны
 	// icon = 'icons/turf/areas.dmi' // CELADON-EDIT - ORIGINAL
-	icon = 'mod_celadon/_storge_icons/icons/assets/areas.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/assets/areas.dmi'
 	// [CELADON-EDIT]
 	icon_state = "yellow"
 

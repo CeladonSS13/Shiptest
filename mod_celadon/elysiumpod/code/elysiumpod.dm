@@ -9,4 +9,4 @@
 	podType = /obj/structure/closet/supplypod/elysiumpod
 
 /obj/structure/closet/supplypod
-	icon = 'mod_celadon/_storge_icons/icons/structures/supplypods.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/supplypods.dmi'

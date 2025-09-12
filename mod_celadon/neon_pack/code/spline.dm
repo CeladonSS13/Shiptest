@@ -1,6 +1,6 @@
 /obj/structure/neon_spline
 	name = "neon spline"
-	icon = 'mod_celadon/_storge_icons/icons/structures/neon_decals.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/neon_decals.dmi'
 	icon_state = "spline_fancy"
 	layer = NEON_DECALS_PLANE
 	light_power = 1.5

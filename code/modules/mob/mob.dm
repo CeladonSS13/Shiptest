@@ -114,7 +114,7 @@
 			else
 // [CELADON-EDIT] - CELADON_ADD_HUDS
 //				var/image/I = image('icons/mob/hud.dmi', src, "")
-				var/image/I = image('mod_celadon/_storge_icons/icons/resprite/hud/hud.dmi', src, "")
+				var/image/I = image('mod_celadon/_storage_icons/icons/resprite/hud/hud.dmi', src, "")
 // [/CELADON-EDIT]
 				I.appearance_flags = RESET_COLOR|RESET_TRANSFORM
 				hud_list[hud] = I

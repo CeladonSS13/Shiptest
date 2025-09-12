@@ -3,7 +3,7 @@
 /obj/structure_admin/indestructible/gun_berta
 	name = "Berta Blue"
 	desc = "300 мм чистой любви."
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/berta300.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/berta300.dmi'
 	icon_state = "gun_blue"
 	// bound_width = 160
 	// bound_height = 84
@@ -20,7 +20,7 @@
 /obj/structure_admin/indestructible/gun_elena
 	name = "Elena Blue"
 	desc = "300 мм чистой любви."
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/elena600.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/elena600.dmi'
 	icon_state = "gun_blue"
 	// bound_width = 316 ЛАГАЕТ ПОЧЕМУ?
 	// bound_height = 90

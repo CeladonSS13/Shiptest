@@ -1,5 +1,5 @@
 /mob/living/simple_animal/mouse/syndie
-	icon = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/mobs/pet_content/pets.dmi'
 	name = "SyndiMouse"
 	// body_color = "red"	// NEEDS_TO_FIX_ALARM!
 	icon_state = "mouse_red"
@@ -29,6 +29,6 @@
 	// icon_dead = "mouse_[body_color]_dead"
 
 /obj/item/food/deadmouse
-	icon = 'mod_celadon/_storge_icons/icons/mobs/pet_content/pets.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/mobs/pet_content/pets.dmi'
 	icon_state = "mouse_red_dead"
 	desc = "Dead mouse in a spacesuit. Taraja's favorite food"

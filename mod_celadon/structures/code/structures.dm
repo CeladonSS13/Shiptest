@@ -1,10 +1,10 @@
 /obj/structure/curtain/cloth/purpl
-	icon = 'mod_celadon/_storge_icons/icons/structures/fancy.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/fancy.dmi'
 	icon_type = "purpl_fancy"
 	icon_state = "purpl_fancy-open"
 
 /obj/structure/curtain/cloth/blacknormal
-	icon = 'mod_celadon/_storge_icons/icons/structures/fancy.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/fancy.dmi'
 	icon_type = "black_fancy"
 	icon_state = "black_fancy-open"
 
@@ -36,7 +36,7 @@
 
 // Новая разновидность снега, просто рескин
 /turf/open/floor/plating/asteroid/snow/temperatre/snow
-	icon = 'mod_celadon/_storge_icons/icons/structures/snow.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/snow.dmi'
 	icon_state = "snow"
 	icon_plating = "snow"
 
@@ -45,7 +45,7 @@
 	name = "snow rough"
 	desc = "It's so rough snow."
 	slowdown = 2.5
-	icon = 'mod_celadon/_storge_icons/icons/structures/snow.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/snow.dmi'
 	icon_state = "snow_rough"
 	icon_plating = "snow_rough"
 
@@ -53,7 +53,7 @@
 // Растительность для снега
 /obj/structure/flora/rock/pile/icy_stone
 	name = "icey stone"
-	icon = 'mod_celadon/_storge_icons/icons/structures/snow.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/snow.dmi'
 	icon_state = "snowstone"
 
 /obj/structure/flora/rock/pile/icy_stone/Initialize()
@@ -61,7 +61,7 @@
 	icon_state = "snowstone"
 
 /obj/structure/flora/ausbushes/snowshrub
-	icon = 'mod_celadon/_storge_icons/icons/structures/snow.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/snow.dmi'
 	icon_state = "snowshrub"
 
 /obj/structure/flora/ausbushes/snowshrub/Initialize()
@@ -71,7 +71,7 @@
 // MARK: DARK
 
 /turf/open/floor/plasteel/strongdark
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "dark"
 	base_icon_state = "dark"
 	floor_tile = /obj/item/stack/tile/plasteel/strongdark
@@ -80,7 +80,7 @@
 	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/plasteel/dark_2
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "dark"
 	base_icon_state = "dark"
 	floor_tile = /obj/item/stack/tile/plasteel/dark_2
@@ -89,7 +89,7 @@
 	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/plasteel/lightdark
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "lightdark"
 	base_icon_state = "lightdark"
 	floor_tile = /obj/item/stack/tile/plasteel/lightdark
@@ -99,7 +99,7 @@
 
 // MARK:  yellow
 /turf/open/floor/plasteel/darkyellowfull
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "darkyellowfull"
 	base_icon_state = "darkyellowfull"
 	floor_tile = /obj/item/stack/tile/plasteel/darkyellowfull
@@ -108,7 +108,7 @@
 	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/plasteel/darkyellowfull/darkyellow
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "darkyellow"
 	base_icon_state = "darkyellow"
 	floor_tile = /obj/item/stack/tile/plasteel/darkyellow
@@ -117,7 +117,7 @@
 	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/plasteel/darkyellowfull/darkyellowcorners
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "darkyellowcorners"
 	base_icon_state = "darkyellowcorners"
 	floor_tile = /obj/item/stack/tile/plasteel/darkyellowcorners
@@ -127,7 +127,7 @@
 
 // MARK:  green
 /turf/open/floor/plasteel/darkgreenfull
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "darkgreenfull"
 	base_icon_state = "darkgreenfull"
 	floor_tile = /obj/item/stack/tile/plasteel/darkgreenfull
@@ -136,7 +136,7 @@
 	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/plasteel/darkgreenfull/darkgreen
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "darkgreen"
 	base_icon_state = "darkgreen"
 	floor_tile = /obj/item/stack/tile/plasteel/darkgreen
@@ -145,7 +145,7 @@
 	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/plasteel/darkgreenfull/darkgreencorners
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "darkgreencorners"
 	base_icon_state = "darkgreencorners"
 	floor_tile = /obj/item/stack/tile/plasteel/darkgreencorners
@@ -155,7 +155,7 @@
 
 // MARK:  blue
 /turf/open/floor/plasteel/darkbluefull
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "darkbluefull"
 	base_icon_state = "darkbluefull"
 	floor_tile = /obj/item/stack/tile/plasteel/darkbluefull
@@ -164,7 +164,7 @@
 	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/plasteel/darkbluefull/darkblue
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "darkblue"
 	base_icon_state = "darkblue"
 	floor_tile = /obj/item/stack/tile/plasteel/darkblue
@@ -173,7 +173,7 @@
 	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/plasteel/darkbluefull/darkbluecorners
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "darkbluecorners"
 	base_icon_state = "darkbluecorners"
 	floor_tile = /obj/item/stack/tile/plasteel/darkbluecorners
@@ -183,7 +183,7 @@
 
 // MARK:  red
 /turf/open/floor/plasteel/darkredfull
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "darkredfull"
 	base_icon_state = "darkredfull"
 	floor_tile = /obj/item/stack/tile/plasteel/darkredfull
@@ -192,7 +192,7 @@
 	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/plasteel/darkredfull/darkred
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "darkred"
 	base_icon_state = "darkred"
 	floor_tile = /obj/item/stack/tile/plasteel/darkred
@@ -201,7 +201,7 @@
 	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/plasteel/darkredfull/darkredcorners
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "darkredcorners"
 	base_icon_state = "darkredcorners"
 	floor_tile = /obj/item/stack/tile/plasteel/darkredcorners
@@ -211,7 +211,7 @@
 
 // MARK:  purple
 /turf/open/floor/plasteel/darkpurplefull
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "darkpurplefull"
 	base_icon_state = "darkpurplefull"
 	floor_tile = /obj/item/stack/tile/plasteel/darkpurplefull
@@ -220,7 +220,7 @@
 	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/plasteel/darkpurplefull/darkpurple
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "darkpurple"
 	base_icon_state = "darkpurple"
 	floor_tile = /obj/item/stack/tile/plasteel/darkpurple
@@ -229,7 +229,7 @@
 	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/plasteel/darkpurplefull/darkpurplecorners
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "darkpurplecorners"
 	base_icon_state = "darkpurplecorners"
 	floor_tile = /obj/item/stack/tile/plasteel/darkpurplecorners
@@ -239,7 +239,7 @@
 
 // MARK:  brown
 /turf/open/floor/plasteel/darkbrownfull
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "darkbrownfull"
 	base_icon_state = "darkbrownfull"
 	floor_tile = /obj/item/stack/tile/plasteel/darkbrownfull
@@ -248,7 +248,7 @@
 	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/plasteel/darkbrownfull/darkbrown
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "darkbrown"
 	base_icon_state = "darkbrown"
 	floor_tile = /obj/item/stack/tile/plasteel/darkbrown
@@ -257,7 +257,7 @@
 	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/plasteel/darkbrownfull/darkbrowncorners
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/dark.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/dark.dmi'
 	icon_state = "darkbrowncorners"
 	base_icon_state = "darkbrowncorners"
 	floor_tile = /obj/item/stack/tile/plasteel/darkbrowncorners
@@ -268,7 +268,7 @@
 // MARK: HEAVY METALL
 
 /turf/open/floor/plasteel/heavymetal
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/metal_2.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/metal_2.dmi'
 	icon_state = "metal_1"
 	base_icon_state = "metal_1"
 	floor_tile = /obj/item/stack/tile/plasteel/heavymetal

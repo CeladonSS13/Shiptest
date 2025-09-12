@@ -1887,7 +1887,7 @@ GLOBAL_VAR_INIT(ssd_indicator_overlay, mutable_appearance('icons/mob/ssd_indicat
 		state_of_bubble = last_state_of_bubble
 	else
 		last_state_of_bubble = state_of_bubble
-	var/mutable_appearance/bubble_overlay = mutable_appearance('mod_celadon/_storge_icons/icons/assets/qol/talk.dmi', state_of_bubble, plane = RUNECHAT_PLANE)
+	var/mutable_appearance/bubble_overlay = mutable_appearance('mod_celadon/_storage_icons/icons/assets/qol/talk.dmi', state_of_bubble, plane = RUNECHAT_PLANE)
 	// [/CELADON-EDIT]
 	bubble_overlay.appearance_flags = RESET_COLOR | RESET_TRANSFORM | TILE_BOUND | PIXEL_SCALE
 	if(typing_indicator)
