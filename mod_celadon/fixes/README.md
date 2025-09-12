@@ -15,6 +15,7 @@
 ID мода: 
 CELADON_FIXES
 CELADON_FIXES_BLOOD
+CELADON_FIXES_DEBUG_ROOM
 FIX_DISPLAY_TRUSTER
 FIXES_ICON_IN_HAND_MOB
 FIXES_ICON
@@ -206,6 +207,9 @@ FIXES_VORACIOUS
 FIXES_JUKEBOX
 - EDIT: `code/controllers/subsystem/jukeboxes.dm` - правим нахождение звука и типа, для работы muz-tv. Попытка исправить просачивание музыки сквозь EDGE
 
+CELADON_FIXES_DEBUG_ROOM
+- EDIT: `code/modules/awaymissions/super_secret_room.dm` - фиксит сообщения для чата
+- ADD: `code/modules/awaymissions/signpost.dm` - фиксит лестницу, тепешает на координаты 139, 31, 3
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,

@@ -2108,9 +2108,9 @@
 /area/abductor_ship)
 "gg" = (
 /obj/structure/signpost/salvation{
+	invisibility = 100;
 	icon = 'icons/obj/structures.dmi';
-	icon_state = "ladder10";
-	invisibility = 100
+	icon_state = "ladder10"
 	},
 /turf/open/floor/plating/asteroid/waterplanet{
 	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
@@ -2649,6 +2649,13 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"hC" = (
+/obj/structure/flora/tree/dead_pine,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "hD" = (
 /obj/effect/turf_decal/corner/transparent/neutral/full,
 /obj/structure/railing/modern/corner{
@@ -5116,6 +5123,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
+"oA" = (
+/obj/structure/flora/rock/asteroid,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "oB" = (
 /obj/effect/turf_decal/elysium_logo/two_one,
 /turf/open/floor/marble/black,
@@ -8452,6 +8466,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/tdome/tdomeobserve)
+"yn" = (
+/obj/item/rupee,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "yo" = (
 /obj/structure/filingcabinet/medical,
 /obj/machinery/light/directional/north{
@@ -8819,6 +8840,14 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/centcom/control)
+"zs" = (
+/obj/structure/flora/rock/asteroid,
+/obj/item/rupee,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "zt" = (
 /obj/structure/table/wood,
 /obj/structure/plaque/static_plaque/golden{
@@ -15057,6 +15086,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
+"QY" = (
+/obj/item/rupee,
+/turf/open/water/stormy_planet_lit{
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "QZ" = (
 /obj/machinery/button/door/indestructible{
 	id = "thunderdomegen";
@@ -15432,9 +15467,7 @@
 /turf/open/floor/wood,
 /area/centcom/control)
 "RW" = (
-/obj/structure/flora/tree/dead_pine,
-/turf/open/floor/plating/asteroid/waterplanet{
-	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+/turf/open/water/stormy_planet_lit{
 	planetary_atmos = 0
 	},
 /area/errorroom)
@@ -19120,13 +19153,13 @@ gd
 gd
 MW
 uo
-nQ
-ZV
+zs
+yn
 Yl
-Yl
-ml
-ml
-Vz
+yn
+RW
+QY
+zs
 uo
 MW
 gd
@@ -19313,13 +19346,13 @@ gd
 gd
 MW
 uo
-ZV
+Yl
+hC
+Yl
+Yl
+Yl
 RW
-Yl
-Yl
-ZV
-ml
-ml
+RW
 uo
 MW
 gd
@@ -19506,13 +19539,13 @@ gd
 gd
 MW
 uo
-ZV
+yn
 Yl
+yn
 Yl
-Yl
+hC
 RW
-ml
-ml
+QY
 uo
 MW
 gd
@@ -19699,13 +19732,13 @@ gd
 gd
 MW
 uo
+hC
+Yl
+Yl
+Yl
+oA
+Yl
 RW
-Yl
-Yl
-Yl
-nQ
-Yl
-ml
 uo
 MW
 gd
@@ -19892,10 +19925,10 @@ gd
 gd
 MW
 uo
-ZV
+yn
 Yl
 Yl
-ZV
+yn
 Yl
 Yl
 Yl
@@ -20279,9 +20312,9 @@ gd
 MW
 uo
 Yl
+yn
 Yl
-Yl
-Yl
+yn
 Yl
 Yl
 Yl
@@ -20471,9 +20504,7 @@ gd
 gd
 MW
 uo
-RW
-ZV
-Yl
+hC
 Yl
 Yl
 ZV
@@ -20664,13 +20695,13 @@ gd
 gd
 MW
 uo
-Vz
+oA
 Yl
-RW
+hC
 Yl
-Yl
-RW
-Yl
+yn
+hC
+yn
 uo
 MW
 gd
@@ -20858,12 +20889,12 @@ gd
 MW
 uo
 Yl
-ZV
+yn
 Yl
 Yl
-ZV
 Yl
-ZV
+Yl
+Yl
 uo
 MW
 gd
@@ -21050,13 +21081,13 @@ gd
 gd
 MW
 uo
+yn
+hC
 Yl
-RW
-ZV
 Yl
-nQ
-Yl
-RW
+zs
+yn
+hC
 uo
 MW
 gd
