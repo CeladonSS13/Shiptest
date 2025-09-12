@@ -16,3 +16,5 @@
 #define TRAIT_SKITTISH "skittish"
 #define TRAIT_DRUNK_HEALING "drunk_healing"
 #define TRAIT_SNOB "snob"
+
+#define TRAIT_BROKEN_TEETH "broken_teeth"

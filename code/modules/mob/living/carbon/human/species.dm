@@ -1749,6 +1749,9 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 		var/atk_verb = user.dna.species.attack_verb
 		// [CELADON-ADD] CELADON_BITE_FERAL
+		var/obj/item/bodypart/affecting = target.get_bodypart(ran_zone(user.zone_selected))
+		var/armor_block = target.run_armor_check(affecting, "melee")
+
 		var/attack_verb_bonus = 0 //Ну а хуле
 		var/sanity_level_mood = 2
 		SEND_SIGNAL(user, COMSIG_REQUEST_SANITY_LEVEL, &sanity_level_mood)
@@ -1758,7 +1761,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		if(prob(crazy_feral_cat))
 			atk_verb = ATTACK_EFFECT_BITE
 		// [/CELADON-ADD] CELADON_BITE_FERAL
-		if(target.body_position == LYING_DOWN)
+		// [CELADON-EDIT] CELADON_BITE_FERAL
+		//if(target.body_position == LYING_DOWN) // CELADON-EDIT - ORIGINAL
+		if((target.body_position == LYING_DOWN) && (atk_verb != ATTACK_EFFECT_BITE))
+		// [/CELADON-EDIT]
 			atk_verb = ATTACK_EFFECT_KICK
 
 		switch(atk_verb)//this code is really stupid but some genius apparently made "claw" and "slash" two attack types but also the same one so it's needed i guess
@@ -1773,9 +1779,21 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				if(user.is_mouth_covered()) //Намордник
 					user.balloon_alert(user, "рот заблокирован!")
 					return FALSE
+				//Ебейшая проверОчка )))))00)))
+				if(((armor_block >= 25 && prob(armor_block)) || (!(target.mob_biotypes & MOB_ORGANIC) && prob(35))) && !HAS_TRAIT(user, TRAIT_BROKEN_TEETH))
+					ADD_TRAIT(user, TRAIT_BROKEN_TEETH, TRAIT_BROKEN_TEETH)
+					user.force_scream()
+					user.adjustStaminaLoss(20)
+					user.apply_damage(10, BRUTE, BODY_ZONE_HEAD)
+					user.balloon_alert(user, "ваши зубы хрустят!")
 
 				user.do_attack_animation(target, ATTACK_EFFECT_BITE)
-				attack_verb_bonus = 3
+
+				if(HAS_TRAIT(user, TRAIT_BROKEN_TEETH))
+					attack_verb_bonus = -2
+				else
+					attack_verb_bonus = 3
+
 			// [/CELADON-ADD]
 			else
 				user.do_attack_animation(target, ATTACK_EFFECT_PUNCH)
@@ -1784,7 +1802,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		//var/damage = rand(user.dna.species.punchdamagelow, user.dna.species.punchdamagehigh) // CELADON-EDIT - ORIGINAL
 		var/damage = rand(user.dna.species.punchdamagelow + attack_verb_bonus, user.dna.species.punchdamagehigh + attack_verb_bonus)
 		// [/CELADON-EDIT]
-		var/obj/item/bodypart/affecting = target.get_bodypart(ran_zone(user.zone_selected))
+		// [CELADON-EDIT] CELADON_BITE_FERAL
+		//var/obj/item/bodypart/affecting = target.get_bodypart(ran_zone(user.zone_selected)) // CELADON-EDIT - ORIGINAL
+
+		// [/CELADON-EDIT]
 
 		var/miss_chance = 100//calculate the odds that a punch misses entirely. considers stamina and brute damage of the puncher. punches miss by default to prevent weird cases
 		if(user.dna.species.punchdamagelow)
@@ -1800,8 +1821,9 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			to_chat(user, span_warning("Your [atk_verb] misses [target]!"))
 			log_combat(user, target, "attempted to punch")
 			return FALSE
-
-		var/armor_block = target.run_armor_check(affecting, "melee")
+		// [CELADON-EDIT] CELADON_BITE_FERAL
+		//var/armor_block = target.run_armor_check(affecting, "melee") // CELADON-EDIT - ORIGINAL
+		// [/CELADON-EDIT]
 
 		playsound(target.loc, user.dna.species.attack_sound, 25, TRUE, -1)
 
@@ -1827,7 +1849,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		// [CELADON-ADD] CELADON_BITE_FERAL
 		if(user != target && (target.mob_biotypes & MOB_ORGANIC) && (atk_verb == ATTACK_EFFECT_BITE))
 			var/datum/reagents/tasty_meal = new()
-			tasty_meal.add_reagent(/datum/reagent/consumable/nutriment/protein, round(damage/3, 1))
+			tasty_meal.add_reagent(/datum/reagent/consumable/nutriment/protein, round((damage/3) / 2, 1))
 			tasty_meal.trans_to(user, tasty_meal.total_volume, transfered_by = user, method = INGEST)
 		// [/CELADON-ADD]
 		if((target.stat != DEAD) && damage >= user.dna.species.punchstunthreshold)
