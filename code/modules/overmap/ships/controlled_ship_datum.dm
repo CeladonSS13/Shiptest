@@ -658,6 +658,8 @@
 	return ..()
 
 /obj/item/key/ship/attack_self(mob/user)
+	if(world.time <= user.next_move)
+        return
 	if(!master_ship || !Adjacent(user))
 		return ..()
 
