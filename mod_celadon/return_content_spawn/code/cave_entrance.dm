@@ -28,7 +28,7 @@
 			if("norm")
 				new /mob/living/basic/hivebot(get_turf(src))
 			if("range")
-				new /mob/living/basic/hivebot/range(get_turf(src))
+				new /mob/living/basic/hivebot/ranged(get_turf(src))
 			if("rapid")
 				new /mob/living/basic/hivebot/rapid(get_turf(src))
 

@@ -35,7 +35,7 @@
 				var/mob/living/basic/hivebot/H = new /mob/living/basic/hivebot(get_turf(src))
 				H.faction = faction
 			if("range")
-				var/mob/living/basic/hivebot/range/R = new /mob/living/basic/hivebot/range(get_turf(src))
+				var/mob/living/basic/hivebot/ranged/R = new /mob/living/basic/hivebot/ranged(get_turf(src))
 				R.faction = faction
 			if("rapid")
 				var/mob/living/basic/hivebot/rapid/F = new /mob/living/basic/hivebot/rapid(get_turf(src))

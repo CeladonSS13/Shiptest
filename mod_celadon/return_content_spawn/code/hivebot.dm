@@ -597,7 +597,7 @@
 				new /obj/item/stack/circuit_stack(loc)
 				new /mob/living/basic/hivebot/mechanic(loc)
 			if(prob(35))
-				new /mob/living/basic/hivebot/range(loc)
+				new /mob/living/basic/hivebot/ranged(loc)
 			if(prob(45))
 				new /obj/item/circuitboard/machine/dna_vault(loc)
 				new /mob/living/basic/hivebot/mechanic(loc)
