@@ -556,7 +556,7 @@
 				sleep(1)
 				playsound(user.loc, 'sound/machines/beep.ogg', 20, FALSE)
 			else
-				playsound(user.loc, 'sound/machines/beep.ogg',20, FALSE)
+				playsound(user.loc, 'sound/machines/beep.ogg', 20, FALSE)
 		else
 		// [/CELADON-ADD]
 			playsound(user.loc, helm_locked ? 'sound/machines/button4.ogg' : 'sound/machines/button3.ogg',20)
