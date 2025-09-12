@@ -549,7 +549,7 @@
 		helm_locked = TRUE
 	else
 		helm_locked = !helm_locked
-		//// [CELADON-ADD] - Дифферинцируем по звуку сигналку и ключи
+		//// [CELADON-ADD] - Well Done - Дифферинцируем по звуку сигналку и ключи
 		if(shipkey == target_helm)
 			if(helm_locked)
 				playsound(user.loc, 'sound/machines/beep.ogg', 20, FALSE, 0, SOUND_FALLOFF_EXPONENT, 50000)
