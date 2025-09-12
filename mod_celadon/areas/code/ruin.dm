@@ -219,3 +219,38 @@
 /area/ruin/jungle/syndifortshuttle
 	name = "Syndi Fort Shuttle"
 	icon_state = "green"
+
+/// MARK: Whitesand
+/area/ruin/whitesand/trainyard/shuttle
+	name = "shuttle"
+	icon_state = "shuttle"
+/area/ruin/whitesand/trainyard/engineering
+	name = "engineering"
+	icon_state = "yellow"
+/area/ruin/whitesand/trainyard/train
+	name = "train"
+	icon_state = "bridge"
+/area/ruin/whitesand/trainyard/cargo
+	name = "cargo"
+	icon_state = "mining"
+/area/ruin/whitesand/trainyard/dorm
+	name = "dorm"
+	icon_state = "crew_quarters"
+/area/ruin/whitesand/trainyard/hungar
+	name = "hungar"
+	icon_state = "storage"
+/area/ruin/whitesand/trainyard/carriage
+	name = "carriage"
+	icon_state = "green"
+/area/ruin/whitesand/trainyard/checkpoint
+	name = "checkpoint"
+	icon_state = "red"
+/area/ruin/whitesand/trainyard/checkpoint/second
+	name = "checkpoint 2"
+	icon_state = "blue"
+/area/ruin/whitesand/trainyard/checkpoint/storage
+	name = "storage"
+	icon_state = "quartstorage"
+/area/ruin/whitesand/trainyard/checkpoint/control
+	name = "control room"
+	icon_state = "captain"
