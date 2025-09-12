@@ -590,7 +590,7 @@
  * [COMSIG_ATOM_GET_EXAMINE_NAME] signal
  */
 /atom/proc/get_examine_name(mob/user)
-// [CELADON-EDIT] - Обновил legacy код...
+// [CELADON-EDIT] - Обновлен legacy код... // Не принимать обновы по нему с оффов код с TG
 	var/list/override = list(article, null, "<b>[name]</b>")
 	SEND_SIGNAL(src, COMSIG_ATOM_GET_EXAMINE_NAME, user, override)
 
