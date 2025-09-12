@@ -659,7 +659,7 @@
 
 /obj/item/key/ship/attack_self(mob/user)
 	// [CELADON-ADD] - Well Done cooldown
-	if(next_move > world.time)
+	if(user.next_move > world.time)
 		return
 	// [/CELADON-ADD]
 	if(!master_ship || !Adjacent(user))
