@@ -60,13 +60,13 @@
 	return FALSE
 
 /proc/apply_overload_effects(mob/living/carbon/C, overload_st, disgust_amount, ang, last_overload_throw)
-	var/chance_cyka = 30
+	var/chance_overload = 30
 	if(!C.resting)
-		chance_cyka += 30
+		chance_overload += 30
 	if(!C.buckled)
-		chance_cyka += 30
+		chance_overload += 30
 
-	if(prob(chance_cyka))
+	if(prob(chance_overload))
 		C.adjust_disgust(disgust_amount)
 
 	if(disgust_amount > 0 && world.time - last_overload_throw > 20 && !C.anchored && !C.buckled)
