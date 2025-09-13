@@ -211,6 +211,9 @@ CELADON_FIXES_DEBUG_ROOM
 - EDIT: `code/modules/awaymissions/super_secret_room.dm` - фиксит сообщения для чата
 - ADD: `code/modules/awaymissions/signpost.dm` - фиксит лестницу, тепешает на координаты 139, 31, 3
 
+FIXES_JELLY_BLOOD
+- EDIT, ADD: `code/modules/mob/living/carbon/human/species_types/jellypeople.dm` - Фиксим уровень крови здоровья
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
