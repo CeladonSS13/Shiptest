@@ -211,6 +211,12 @@ CELADON_FIXES_DEBUG_ROOM
 - EDIT: `code/modules/awaymissions/super_secret_room.dm` - фиксит сообщения для чата
 - ADD: `code/modules/awaymissions/signpost.dm` - фиксит лестницу, тепешает на координаты 139, 31, 3
 
+CRUSHER_MARK_ON_MOBS
+- EDIT: `code/datums/status_effects/debuffs.dm` - изменения от Ганзы
+- ADD: `code/datums/status_effects/debuffs.dm` - добавляем проверку на труп дял метки крашера
+- REMOVE: `code/modules/mining/equipment/kinetic_crusher.dm` - изменения от Ганзы
+- ADD: `code/modules/mining/equipment/kinetic_crusher.dm` - добавляем проверку на труп дял метки крашера
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
