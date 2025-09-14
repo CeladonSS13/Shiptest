@@ -19102,7 +19102,9 @@
 	pixel_x = 10;
 	pixel_y = -21;
 	name = "Door Bolt";
-	id = "waterbar_charge2"
+	id = "waterbar_charge2";
+	specialfunctions = 4;
+	normaldoorcontrol = 1
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/crew/canteen)
@@ -23094,7 +23096,9 @@
 	pixel_x = 21;
 	pixel_y = 10;
 	name = "Door Bolt";
-	id = "waterbar_stall1"
+	id = "waterbar_stall1";
+	specialfunctions = 4;
+	normaldoorcontrol = 1
 	},
 /obj/structure/toilet{
 	dir = 1
@@ -27483,7 +27487,9 @@
 	pixel_x = -21;
 	pixel_y = 10;
 	name = "Door Bolt";
-	id = "waterbar_stall2"
+	id = "waterbar_stall2";
+	specialfunctions = 4;
+	normaldoorcontrol = 1
 	},
 /obj/structure/toilet{
 	dir = 1
@@ -32568,7 +32574,9 @@
 	pixel_x = 10;
 	pixel_y = -21;
 	name = "Door Bolt";
-	id = "waterbar_charge1"
+	id = "waterbar_charge1";
+	specialfunctions = 4;
+	normaldoorcontrol = 1
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/crew/canteen)
