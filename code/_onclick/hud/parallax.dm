@@ -39,8 +39,7 @@
 			list("type" = /atom/movable/screen/parallax_layer/layer_3/l_1, "chance" = 30, "alpha" = 255),
 			list("type" = /atom/movable/screen/parallax_layer/layer_3/l_2, "chance" = 30, "alpha" = 255)
 		)
-		for(var/i in 1 to length(layer_3_configs))
-			var/list/config = layer_3_configs[i]
+		for(var/list/config in layer_3_configs)
 			var/chance_val = config["chance"]
 			if(prob(chance_val))
 				var/layer_type = config["type"]
