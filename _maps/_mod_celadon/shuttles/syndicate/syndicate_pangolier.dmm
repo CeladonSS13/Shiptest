@@ -2782,10 +2782,12 @@
 	},
 /obj/item/clothing/under/syndicate/cybersun/research{
 	pixel_x = 10;
-	pixel_y = 6
+	pixel_y = 6;
+	name = "cybersun coveralls"
 	},
 /obj/item/clothing/suit/armor/vest/capcarapace/cybersun{
-	pixel_x = 2
+	pixel_x = 2;
+	name = "cybersun captain's haori"
 	},
 /obj/item/clothing/head/beret/cmo/cybersun{
 	pixel_x = -7;
@@ -2819,7 +2821,7 @@
 	pixel_x = -2
 	},
 /obj/item/clothing/suit/armor/hardliners/sergeant{
-	name = "Cybersun jacket";
+	name = "cybersun jacket";
 	desc = "An armored jacket. They're reminiscent of the clothes worn by Hardliner sergeants, but they have been tailored special for you.";
 	pixel_x = 9
 	},
@@ -3028,6 +3030,7 @@
 	pixel_y = 6
 	},
 /obj/machinery/newscaster/security_unit/directional/west,
+/obj/machinery/airalarm/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "FD" = (
@@ -4546,7 +4549,7 @@
 "Rt" = (
 /obj/structure/filingcabinet/double/grey{
 	dir = 4;
-	pixel_x = -11;
+	pixel_x = -10;
 	density = 0
 	},
 /obj/item/clipboard,
@@ -4573,7 +4576,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
 	},
-/obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "RB" = (
@@ -5592,12 +5594,17 @@
 	dir = 4;
 	id = "Pango_engine_S"
 	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "YM" = (
 /obj/machinery/door/airlock/hatch{
 	dir = 8;
-	fast_close = 1;
 	name = "Security"
 	},
 /obj/machinery/door/firedoor/border_only{

@@ -127,6 +127,7 @@
 	job_icon = "securityofficer"
 
 	ears = /obj/item/radio/headset/syndicate/alt
+	uniform = /obj/item/clothing/under/syndicate/hardliners
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/color/black
 	mask = /obj/item/clothing/mask/breath/facemask
