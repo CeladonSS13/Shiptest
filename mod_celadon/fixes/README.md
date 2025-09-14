@@ -214,6 +214,18 @@ CELADON_FIXES_DEBUG_ROOM
 FIXES_REPAIR_BONE_COMPOUND
 - EDIT: `code/modules/surgery/bone_fractures.dm` - Исправил неверное название прока
 
+CRUSHER_MARK_ON_MOBS
+- EDIT: `code/datums/status_effects/debuffs.dm` - изменения от Ганзы
+- ADD: `code/datums/status_effects/debuffs.dm` - добавляем проверку на труп дял метки крашера
+- REMOVE: `code/modules/mining/equipment/kinetic_crusher.dm` - изменения от Ганзы
+- ADD: `code/modules/mining/equipment/kinetic_crusher.dm` - добавляем проверку на труп дял метки крашера
+
+FIXES_JELLY_BLOOD
+- EDIT, ADD: `code/modules/mob/living/carbon/human/species_types/jellypeople.dm` - Фиксим уровень крови здоровья
+
+FIXES_MOB_SPAWNER
+- REMOVE: `code/modules/mining/ore_veins.dm` - убраны селинги из спавнера Т3 бура в джунглях
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

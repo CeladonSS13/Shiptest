@@ -18,6 +18,8 @@ FIX_LATHE
 AUTOLATE_MAXSTACK
 ADMIN-PANEL
 UNFUCK_SPRAYCAN
+DONT_ALTCLICK_WALLET
+DEBUG_QUALITY
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -144,6 +146,14 @@ ADMIN-PANEL
 - ADD `code/modules/admin/admin_verbs.dm`			- Добавляет Админ панель в игру
 - ADD `code/modules/client/client_defines.dm` 		-
 - ADD `tgui/packages/tgui/interfaces/AdminVerbs.js` -
+
+DONT_ALTCLICK_WALLET - Убирает вытаскивание карты на Альт-клик
+- DEL `code/datums/components/storage/concrete/wallet.dm`
+- EDIT `code/game/objects/items/storage/wallets.dm`
+
+DEBUG_QUALITY
+- DEL `code/game/objects/items/storage/boxes.dm` -> `mod_celadon/qol/code/BluespaceTechnician.dm`
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
