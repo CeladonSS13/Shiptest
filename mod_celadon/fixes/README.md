@@ -211,9 +211,6 @@ CELADON_FIXES_DEBUG_ROOM
 - EDIT: `code/modules/awaymissions/super_secret_room.dm` - фиксит сообщения для чата
 - ADD: `code/modules/awaymissions/signpost.dm` - фиксит лестницу, тепешает на координаты 139, 31, 3
 
-FIXES_MOB_SPAWNER
-- REMOVE: `code/modules/mining/ore_veins.dm` - убраны селинги из спавнера Т3 бура в джунглях
-
 CRUSHER_MARK_ON_MOBS
 - EDIT: `code/datums/status_effects/debuffs.dm` - изменения от Ганзы
 - ADD: `code/datums/status_effects/debuffs.dm` - добавляем проверку на труп дял метки крашера
