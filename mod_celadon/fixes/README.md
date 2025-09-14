@@ -220,6 +220,9 @@ CRUSHER_MARK_ON_MOBS
 FIXES_MOB_SPAWNER
 - REMOVE: `code/modules/mining/ore_veins.dm` - убраны селинги из спавнера Т3 бура в джунглях
 
+FIXES_DYNAMIC_MISSION
+- EDIT: `code/modules/overmap/objects/dynamic_datum.dm` - Изменена логика в функции can_reset_dynamic(). Теперь объект не будет диспавниться если миссия все еще может быть завершена
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
