@@ -27,6 +27,16 @@ SUBSYSTEM_DEF(ambience)
 
 ///Attempts to play an ambient sound to a mob, returning the cooldown in deciseconds
 /area/proc/play_ambience(mob/M, sound/override_sound, volume = 27)
+	// [CELADON-ADD] - FIXES_AMBIENT_NO_EARS
+	// Check if the mob has ears to hear the ambience
+	if(iscarbon(M))
+		var/mob/living/carbon/C = M
+		if(!C.getorganslot(ORGAN_SLOT_EARS))
+			// No ears, no ambience
+			var/sound_file = override_sound ? override_sound.file : pick(ambientsounds)
+			var/sound_length = ceil(SSsound_cache.get_sound_length(sound_file))
+			return rand(min_ambience_cooldown + sound_length, max_ambience_cooldown + sound_length)
+	// [/CELADON-ADD]
 	var/sound/new_sound = override_sound || pick(ambientsounds)
 	new_sound = sound(new_sound, repeat = 0, wait = 0, volume = 25, channel = CHANNEL_AMBIENCE)
 
