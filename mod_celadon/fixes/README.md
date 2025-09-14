@@ -211,6 +211,9 @@ CELADON_FIXES_DEBUG_ROOM
 - EDIT: `code/modules/awaymissions/super_secret_room.dm` - фиксит сообщения для чата
 - ADD: `code/modules/awaymissions/signpost.dm` - фиксит лестницу, тепешает на координаты 139, 31, 3
 
+FIXES_AMBIENT_NO_EARS
+- ADD: `code/controllers/subsystem/ambience.dm` - Проверка на уши для эмбиента
+
 FIXES_REPAIR_BONE_COMPOUND
 - EDIT: `code/modules/surgery/bone_fractures.dm` - Исправил неверное название прока
 
