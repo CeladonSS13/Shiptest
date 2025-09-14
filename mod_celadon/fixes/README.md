@@ -220,6 +220,9 @@ CRUSHER_MARK_ON_MOBS
 FIXES_JELLY_BLOOD
 - EDIT, ADD: `code/modules/mob/living/carbon/human/species_types/jellypeople.dm` - Фиксим уровень крови здоровья
 
+FIXES_MOB_SPAWNER
+- REMOVE: `code/modules/mining/ore_veins.dm` - убраны селинги из спавнера Т3 бура в джунглях
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
