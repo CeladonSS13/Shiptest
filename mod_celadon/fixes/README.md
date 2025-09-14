@@ -211,14 +211,26 @@ CELADON_FIXES_DEBUG_ROOM
 - EDIT: `code/modules/awaymissions/super_secret_room.dm` - фиксит сообщения для чата
 - ADD: `code/modules/awaymissions/signpost.dm` - фиксит лестницу, тепешает на координаты 139, 31, 3
 
+FIXES_AMBIENT_NO_EARS
+- ADD: `code/controllers/subsystem/ambience.dm` - Проверка на уши для эмбиента
+
+FIXES_REPAIR_BONE_COMPOUND
+- EDIT: `code/modules/surgery/bone_fractures.dm` - Исправил неверное название прока
+
 CRUSHER_MARK_ON_MOBS
 - EDIT: `code/datums/status_effects/debuffs.dm` - изменения от Ганзы
-- ADD: `code/datums/status_effects/debuffs.dm` - добавляем проверку на труп дял метки крашера
+- ADD: `code/datums/status_effects/debuffs.dm` - добавляем проверку на труп для метки крашера
 - REMOVE: `code/modules/mining/equipment/kinetic_crusher.dm` - изменения от Ганзы
-- ADD: `code/modules/mining/equipment/kinetic_crusher.dm` - добавляем проверку на труп дял метки крашера
+- ADD: `code/modules/mining/equipment/kinetic_crusher.dm` - добавляем проверку на труп для метки крашера
+
+FIXES_JELLY_BLOOD
+- EDIT, ADD: `code/modules/mob/living/carbon/human/species_types/jellypeople.dm` - Фиксим уровень крови здоровья
 
 FIXES_MOB_SPAWNER
 - REMOVE: `code/modules/mining/ore_veins.dm` - убраны селинги из спавнера Т3 бура в джунглях
+
+FIXES_CALL_TO_SHIP
+- ADD: `code/game/machinery/hologram.dm` - добавлено возвращение TRUE, чтобы интерфейс обновлялся
 
 FIXES_ICON_OUT_OF_BORDER
 - ADD, EDIT: `code/datums/components/storage/ui.dm` - чиним позиционирование иснтрументов в контейнерах
