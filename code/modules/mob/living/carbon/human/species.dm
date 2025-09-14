@@ -1779,7 +1779,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				if(user.is_mouth_covered()) //Намордник
 					user.balloon_alert(user, "рот заблокирован!")
 					return FALSE
-				//Ебейшая проверОчка )))))00)))
 				if(((armor_block >= 25 && prob(armor_block)) || (!(target.mob_biotypes & MOB_ORGANIC) && prob(35))) && !HAS_TRAIT(user, TRAIT_BROKEN_TEETH))
 					ADD_TRAIT(user, TRAIT_BROKEN_TEETH, TRAIT_BROKEN_TEETH)
 					user.force_scream()
