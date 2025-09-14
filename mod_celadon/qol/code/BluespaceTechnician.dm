@@ -60,7 +60,7 @@
 /obj/item/storage/bag/sheetsnatcher/debug
 	name = "sheet snatcher of materials"
 	w_class = WEIGHT_CLASS_TINY
-	capacity = 5000;
+	capacity = 5000
 	component_type = /datum/component/storage/concrete/stack/debug
 
 /obj/item/storage/bag/sheetsnatcher/debug/ComponentInitialize()
