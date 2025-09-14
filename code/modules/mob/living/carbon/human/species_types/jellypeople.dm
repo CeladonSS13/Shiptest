@@ -53,7 +53,7 @@
 		return
 	// [CELADON-EDIT] - FIXES_JELLY_BLOOD
 	if(H.blood_volume <= 0)
-		H.blood_volume = max(H.blood_volume + 5, 0)
+		H.blood_volume = 0
 	if(!H.blood_volume)
 		H.blood_volume += 5
 	// [/CELADON-ADD]
