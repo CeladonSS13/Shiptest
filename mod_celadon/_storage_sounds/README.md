@@ -1,7 +1,7 @@
 
 ## Хранилище звуков
 
-ID мода: CELADON_STORGE_SOUNDS
+ID мода: CELADON_STORAGE_SOUNDS
 
 ### Описание мода
 

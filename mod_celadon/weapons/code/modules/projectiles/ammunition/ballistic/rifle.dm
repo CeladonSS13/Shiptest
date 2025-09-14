@@ -102,7 +102,7 @@ MARK: 5.56x39mm (M-90gl Carbine & P-16)
 	name = "7,62x54R bullet casing."
 	desc = "A 7,62x54R bullet casing. It doesn't look very good."
 	icon_state = "762_54-steel"
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/svd_bullet.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/svd_bullet.dmi'
 	caliber = "7.62x54R"
 	projectile_type = /obj/projectile/bullet/x762_54
 	// bullet_per_box = 40

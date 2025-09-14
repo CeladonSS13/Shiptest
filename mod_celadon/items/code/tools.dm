@@ -19,9 +19,9 @@
 // MARK: Repair Kit
 
 /obj/item/gun_maint_kit
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/items_and_weapons.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/tools_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/items_and_weapons.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_righthand.dmi'
 	icon_state = "repair_kit"
 	wear_reduction = 100
 	uses = 5
@@ -68,7 +68,7 @@
 /obj/item/areaeditor/shuttle/disposable
 	name = "Shuttle Expansion Disposable Permit"
 	desc = "A disposable set of documents used to expand flyable shuttles."
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/permit.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/permit.dmi'
 	icon_state = "permit"
 
 /obj/item/areaeditor/shuttle/proc/check_disposable(mob/creator)
@@ -84,9 +84,9 @@
 	desc = "A multifunctional device that can perform a wide range of tasks."
 	icon_state = "tricorder"
 	item_state = "tricorder"
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/tools.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/tools_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/tools.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_righthand.dmi'
 	usesound = 'sound/weapons/etherealhit.ogg'
 	custom_materials = list(/datum/material/iron = 500, /datum/material/silver = 300, /datum/material/gold = 300)
 	item_flags = NOBLUDGEON
@@ -180,33 +180,33 @@
 
 /obj/item/multitool
 	//icon_state = "multitool"
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/tools.dmi'
-	//lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
-	//righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/tools_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/tools.dmi'
+	//lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
+	//righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_righthand.dmi'
 
 /obj/item/inducer
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/tools.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/tools_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/tools.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_righthand.dmi'
 
 /obj/item/construction/rcd/arcd
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/tools.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/tools.dmi'
 
 /obj/item/construction/plumbing
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/tools.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/tools.dmi'
 
 /obj/item/stack/cable_coil
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/tools_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_righthand.dmi'
 
 // MARK: Газ Анализатор
 
 /obj/item/analyzer/ranged
 	name = "long-range gas analyzer"
 	desc = "A hand-held long-range environmental scanner which reports current gas levels."
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/tools.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/tools_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/tools.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_righthand.dmi'
 	icon_state = "analyzer_ranged"
 	custom_materials = list(/datum/material/iron = 400, /datum/material/glass = 1000, /datum/material/gold = 200)
 	var/ranged_scan_distance = 15
@@ -227,9 +227,9 @@
 /obj/item/healthanalyzer/ranged
 	name = "long-range health analyzer"
 	desc = "A handheld body scanner capable of accurately detecting the patient's vital signs from a distance."
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/tools.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/tools_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/tools.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_righthand.dmi'
 	icon_state = "ranged_analyzer"
 	item_state = "ranged_analyzer"
 	healthmode = "ranged_analyzer"
@@ -262,9 +262,9 @@
 	name = "Bluespace-RPD"
 	desc = "A breakthrough in pipe-laying technology prevents you from being burned to a crisp while building yet another engine."
 	icon_state = "rpd_ranged"
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/tools.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/tools_righthand.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/tools.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_righthand.dmi'
 	var/bs_capac = BSRPD_CAPAC_MAX
 	var/bs_use = BSRPD_CAPAC_USE
 	var/bs_prog = 0

@@ -1,10 +1,10 @@
 /obj/machinery/rnd/production/techfab/department
-	icon = 'mod_celadon/_storge_icons/icons/machinery/research.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/machinery/research.dmi'
 	icon_state = "techfab"
 	production_animation = "techfab_n"
 
 /obj/machinery/rnd/production/protolathe/department
-	icon = 'mod_celadon/_storge_icons/icons/machinery/research.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/machinery/research.dmi'
 	icon_state = "protolathe"
 	production_animation = "protolathe_n"
 
@@ -14,7 +14,7 @@
 		if(istype(src, /obj/machinery/rnd/production/circuit_imprinter))
 			stripe_icon = "circtuit_stripe_[lowertext(M.department_tag)]"
 
-		var/mutable_appearance/stripe_overlay = mutable_appearance('mod_celadon/_storge_icons/icons/machinery/research.dmi', stripe_icon)
+		var/mutable_appearance/stripe_overlay = mutable_appearance('mod_celadon/_storage_icons/icons/machinery/research.dmi', stripe_icon)
 		overlays += stripe_overlay
 
 /obj/machinery/rnd/production/update_overlays()
@@ -40,11 +40,11 @@
 		return
 
 	if(istype(src, /obj/machinery/rnd/production/protolathe/department))
-		flick_overlay_view(mutable_appearance('mod_celadon/_storge_icons/icons/machinery/research.dmi', "protolathe_[stack_name]"), 1 SECONDS)
+		flick_overlay_view(mutable_appearance('mod_celadon/_storage_icons/icons/machinery/research.dmi', "protolathe_[stack_name]"), 1 SECONDS)
 		add_overlay("protolathe_[stack_name]")
 		addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, cut_overlay), "protolathe_[stack_name]"), 10)
 	else if(istype(src, /obj/machinery/rnd/production/techfab/department))
-		flick_overlay_view(mutable_appearance('mod_celadon/_storge_icons/icons/machinery/research.dmi', "techfab_[stack_name]"), 1 SECONDS)
+		flick_overlay_view(mutable_appearance('mod_celadon/_storage_icons/icons/machinery/research.dmi', "techfab_[stack_name]"), 1 SECONDS)
 		add_overlay("techfab_[stack_name]")
 		addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, cut_overlay), "techfab_[stack_name]"), 10)
 
@@ -66,9 +66,9 @@
 
 	if(!MC.has_space(to_insert))
 		if(istype(src, /obj/machinery/rnd/production/protolathe/department))
-			flick_overlay_view(mutable_appearance('mod_celadon/_storge_icons/icons/machinery/research.dmi', "protolathe_deny"), 1 SECONDS)
+			flick_overlay_view(mutable_appearance('mod_celadon/_storage_icons/icons/machinery/research.dmi', "protolathe_deny"), 1 SECONDS)
 		else if(istype(src, /obj/machinery/rnd/production/techfab/department))
-			flick_overlay_view(mutable_appearance('mod_celadon/_storge_icons/icons/machinery/research.dmi', "techfab_deny"), 1 SECONDS)
+			flick_overlay_view(mutable_appearance('mod_celadon/_storage_icons/icons/machinery/research.dmi', "techfab_deny"), 1 SECONDS)
 		return
 
 	var/pre = MC.total_amount
@@ -94,10 +94,10 @@
 					use_power(min(ACTIVE_DRAW_HIGH, (inserted / 100)))
 
 				if(istype(src, /obj/machinery/rnd/production/protolathe/department))
-					flick_overlay_view(mutable_appearance('mod_celadon/_storge_icons/icons/machinery/research.dmi', "protolathe_[stack_name]"), 1 SECONDS)
+					flick_overlay_view(mutable_appearance('mod_celadon/_storage_icons/icons/machinery/research.dmi', "protolathe_[stack_name]"), 1 SECONDS)
 					add_overlay("protolathe_[stack_name]")
 					addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, cut_overlay), "protolathe_[stack_name]"), 10)
 				else if(istype(src, /obj/machinery/rnd/production/techfab/department))
-					flick_overlay_view(mutable_appearance('mod_celadon/_storge_icons/icons/machinery/research.dmi', "techfab_[stack_name]"), 1 SECONDS)
+					flick_overlay_view(mutable_appearance('mod_celadon/_storage_icons/icons/machinery/research.dmi', "techfab_[stack_name]"), 1 SECONDS)
 					add_overlay("techfab_[stack_name]")
 					addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, cut_overlay), "techfab_[stack_name]"), 10)

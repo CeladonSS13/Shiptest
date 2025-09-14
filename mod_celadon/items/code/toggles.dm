@@ -1,6 +1,6 @@
 /obj/item/clothing/neck/toggle
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'  //icons/mob/clothing/suits/toggle.dmi
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'  //icons/mob/clothing/suits/toggle.dmi
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	var/necktoggled = FALSE
 	var/togglename = null
 

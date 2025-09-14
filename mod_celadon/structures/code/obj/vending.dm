@@ -2,7 +2,7 @@
 /obj/machinery/vending/clothing/nt
 	name = "ClothesMate NT" //renamed to make the slogan rhyme
 	desc = "A vending machine for clothing for NT."
-	icon = 'mod_celadon/_storge_icons/icons/machinery/vending.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/machinery/vending.dmi'
 	icon_state = "clothes_nt"
 	icon_deny = "clothes_nt-deny"
 	product_slogans = "Dress for success!;Prepare to look swagalicious!;Look at all this swag!;Why leave style up to fate? Use the ClothesMate!"

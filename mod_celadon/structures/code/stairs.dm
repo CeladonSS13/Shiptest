@@ -1,5 +1,5 @@
 /turf/open/floor/plasteel/stairs/stairs_pack
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/stairs.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/stairs.dmi'
 	icon_state = "stairs"
 	base_icon_state = "stairs"
 	tiled_dirt = FALSE
@@ -53,7 +53,7 @@
 
 
 /turf/open/floor/plasteel/stairs/wood/stairs_pack
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/stairs.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/stairs.dmi'
 	icon_state = "wood"
 	base_icon_state = "wood"
 	color = WOOD_COLOR_YELLOW

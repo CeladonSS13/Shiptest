@@ -4,7 +4,7 @@
 /obj/item/clothing/wrists/watch/tajaran
 	name = "adhomian male watch"
 	desc = "An adhomian wrist watch made for male Tajara. Due to its use in the past wars, wrist watches are becoming more popular in Adhomai."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
 	icon_state = "watch_taj-male"
 	item_state = "watch_taj-male"
 	slot_flags = ITEM_SLOT_LPOCKET | ITEM_SLOT_RPOCKET
@@ -16,13 +16,13 @@
 	item_state = "watch_taj-female"
 
 /obj/item/clothing/accessory/tajaran
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
-	drop_sound = 'mod_celadon/_storge_sounds/sound/drop/accessory.ogg'
-	pickup_sound = 'mod_celadon/_storge_sounds/sound/pickup/accessory.ogg'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
+	drop_sound = 'mod_celadon/_storage_sounds/sound/drop/accessory.ogg'
+	pickup_sound = 'mod_celadon/_storage_sounds/sound/pickup/accessory.ogg'
 
 /obj/item/clothing/accessory/tajaran/charm/raskariim
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
 	mob_overlay_icon = null
 	name = "metal amulet"
 	desc = "An amulet made of some light metal."
@@ -89,8 +89,8 @@
 	desc = "The best part of a maid costume."
 	icon_state = "maidapron"
 	item_state = "maidapron"
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/accessories/obj.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/accessories/overlay/onmob.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/accessories/obj.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/accessories/overlay/onmob.dmi'
 	minimize_when_attached = FALSE
 	attachment_slot = null
 

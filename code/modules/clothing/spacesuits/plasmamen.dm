@@ -272,8 +272,8 @@
 /obj/item/clothing/head/helmet/space/plasmaman/mime
 	name = "mime envirosuit helmet"
 	desc = "The make-up is painted on, it's a miracle it doesn't chip. It's not very colourful."
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/spacesuits_helmet.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/spacesuits_helmet_on_mob.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/spacesuits_helmet.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/spacesuits_helmet_on_mob.dmi'
 	icon_state = "mime_envirohelm"
 	item_state = "mime_envirohelm"
 	visor_icon = "mime_envisor"
@@ -281,8 +281,8 @@
 /obj/item/clothing/head/helmet/space/plasmaman/clown
 	name = "clown envirosuit helmet"
 	desc = "The make-up is painted on, it's a miracle it doesn't chip. <i>'HONK!'</i>"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/spacesuits_helmet.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/spacesuits_helmet_on_mob.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/spacesuits_helmet.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/spacesuits_helmet_on_mob.dmi'
 	icon_state = "clown_envirohelm"
 	item_state = "clown_envirohelm"
 	visor_icon = "clown_envisor"
