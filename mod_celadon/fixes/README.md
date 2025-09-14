@@ -220,6 +220,10 @@ CRUSHER_MARK_ON_MOBS
 FIXES_MOB_SPAWNER
 - REMOVE: `code/modules/mining/ore_veins.dm` - убраны селинги из спавнера Т3 бура в джунглях
 
+FIXES_ICON_OUT_OF_BORDER
+- ADD, EDIT: `code/datums/components/storage/ui.dm` - чиним позиционирование иснтрументов в контейнерах
+- ADD: `code/datums/components/storage/concrete/_concrete.dm`
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
