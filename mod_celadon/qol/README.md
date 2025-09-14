@@ -19,6 +19,7 @@ AUTOLATE_MAXSTACK
 ADMIN-PANEL
 UNFUCK_SPRAYCAN
 BLOOD_EXAMINE
+DONT_ALTCLICK_WALLET
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -148,6 +149,10 @@ ADMIN-PANEL
 
 BLOOD_EXAMINE
 - EDIT `code/datums/elements/decals/blood.dm` - Подстветка красным цветом кровавых предметов
+
+DONT_ALTCLICK_WALLET - Убирает вытаскивание карты на Альт-клик
+- DEL `code/datums/components/storage/concrete/wallet.dm`
+- EDIT `code/game/objects/items/storage/wallets.dm`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
