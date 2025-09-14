@@ -166,6 +166,10 @@
 /obj/projectile/destabilizer/on_hit(atom/target, blocked = FALSE)
 	if(isliving(target))
 		var/mob/living/L = target
+		// [CELADON-ADD] — CRUSHER_MARK_ON_MOBS
+		if(L.stat == DEAD)
+			return FALSE
+		// [/CELADON-ADD]
 		// [CELADON-ADD] - RETURN_CONTENT_CRUSHER_TROPHY - Возвращаем легенду
 		var/had_effect = (L.has_status_effect(STATUS_EFFECT_CRUSHERMARK)) //used as a boolean
 		var/datum/status_effect/crusher_mark/CM = L.apply_status_effect(STATUS_EFFECT_CRUSHERMARK, hammer_synced)

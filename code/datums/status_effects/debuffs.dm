@@ -256,6 +256,10 @@
 		hammer_synced = new_hammer_synced
 
 /datum/status_effect/crusher_mark/on_apply()
+	// [CELADON-ADD] — CRUSHER_MARK_ON_MOBS
+	if(owner.stat == DEAD)
+		return FALSE
+	// [/CELADON-ADD]
 	// [CELADON-EDIT] — CRUSHER_MARK_ON_MOBS
 	// if(owner.mob_size >= MOB_SIZE_LARGE)
 	if(owner.mob_size >= MOB_SIZE_HUMAN && !(ishuman(owner)))

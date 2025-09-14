@@ -4860,6 +4860,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
+"nQ" = (
+/obj/structure/flora/rock/asteroid,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "nR" = (
 /obj/structure/closet/abductor,
 /turf/open/floor/plating/abductor,
@@ -5111,13 +5118,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
-"oA" = (
-/obj/structure/flora/rock/asteroid,
-/turf/open/floor/plating/asteroid/waterplanet{
-	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
-	planetary_atmos = 0
-	},
-/area/errorroom)
 "oB" = (
 /obj/effect/turf_decal/elysium_logo/two_one,
 /turf/open/floor/marble/black,
@@ -8454,13 +8454,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/tdome/tdomeobserve)
-"yn" = (
-/obj/item/rupee,
-/turf/open/floor/plating/asteroid/waterplanet{
-	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
-	planetary_atmos = 0
-	},
-/area/errorroom)
 "yo" = (
 /obj/structure/filingcabinet/medical,
 /obj/machinery/light/directional/north{
@@ -14122,6 +14115,13 @@
 /obj/effect/turf_decal/industrial/stand_clear/red,
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/cargo/faction)
+"Om" = (
+/obj/effect/turf_decal/corner/transparent/brown{
+	dir = 10
+	},
+/obj/machinery/vending/clothing/admin,
+/turf/open/floor/plasteel/dark,
+/area/centcom/supplypod)
 "On" = (
 /obj/effect/turf_decal/trimline/opaque/brown,
 /obj/structure/girder,
@@ -16633,6 +16633,10 @@
 	icon_state = "panelscorched"
 	},
 /area/centcom)
+"Vm" = (
+/obj/machinery/vending/clothing/admin,
+/turf/open/floor/plasteel/dark_2,
+/area/centcom/ferry)
 "Vn" = (
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/door/airlock/centcom{
@@ -18320,6 +18324,13 @@
 /obj/effect/turf_decal/corner/transparent/neutral/full,
 /turf/open/floor/plasteel/dark,
 /area/tdome/tdomeobserve)
+"ZV" = (
+/obj/item/rupee,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "ZW" = (
 /obj/machinery/power/smes/shuttle/precharged{
 	dir = 1
@@ -19116,9 +19127,9 @@ gd
 MW
 uo
 zs
-yn
+ZV
 Yl
-yn
+ZV
 RW
 QY
 zs
@@ -19501,9 +19512,9 @@ gd
 gd
 MW
 uo
-yn
+ZV
 Yl
-yn
+ZV
 Yl
 hC
 RW
@@ -19698,7 +19709,7 @@ hC
 Yl
 Yl
 Yl
-oA
+nQ
 Yl
 RW
 uo
@@ -19887,10 +19898,10 @@ gd
 gd
 MW
 uo
-yn
+ZV
 Yl
 Yl
-yn
+ZV
 Yl
 Yl
 Yl
@@ -20274,9 +20285,9 @@ gd
 MW
 uo
 Yl
-yn
+ZV
 Yl
-yn
+ZV
 Yl
 Yl
 Yl
@@ -20469,9 +20480,9 @@ uo
 hC
 Yl
 Yl
+ZV
 Yl
-Yl
-Yl
+ZV
 Yl
 uo
 MW
@@ -20659,13 +20670,13 @@ gd
 gd
 MW
 uo
-oA
+nQ
 Yl
 hC
 Yl
-yn
+ZV
 hC
-yn
+ZV
 uo
 MW
 gd
@@ -20853,7 +20864,7 @@ gd
 MW
 uo
 Yl
-yn
+ZV
 Yl
 Yl
 Yl
@@ -21045,12 +21056,12 @@ gd
 gd
 MW
 uo
-yn
+ZV
 hC
 Yl
 Yl
 zs
-yn
+ZV
 hC
 uo
 MW
@@ -46129,7 +46140,7 @@ Je
 Nz
 jF
 FW
-Nu
+Vm
 tG
 qG
 gs
@@ -50356,7 +50367,7 @@ CS
 Cd
 Cd
 Cd
-hx
+Om
 Od
 MG
 Qb
