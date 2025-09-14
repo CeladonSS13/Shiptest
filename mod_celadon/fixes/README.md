@@ -220,6 +220,9 @@ CRUSHER_MARK_ON_MOBS
 FIXES_MOB_SPAWNER
 - REMOVE: `code/modules/mining/ore_veins.dm` - убраны селинги из спавнера Т3 бура в джунглях
 
+FIXES_MODSUITS
+- ADD, REMOVE, EDIT: `code/modules/mod/modules/modules_antag.dm` - Выпиливаем неиспользуемые и сломанные опции модов
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
