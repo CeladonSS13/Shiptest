@@ -594,12 +594,12 @@
 	var/list/override = list(article, null, "<b>[name]</b>")
 	SEND_SIGNAL(src, COMSIG_ATOM_GET_EXAMINE_NAME, user, override)
 
-	if(!isnull(override[EXAMINE_POSITION_ARTICLE]) || !isnull(override[EXAMINE_POSITION_BEFORE]))
-		override -= null
-		if(!isnull(override[EXAMINE_POSITION_ARTICLE]))
-			return jointext(override, " ")
-		else
-			return "\a [jointext(override, " ")]"
+	if(!isnull(override[EXAMINE_POSITION_ARTICLE]))
+		override -= null // IF there is no "before", don't try to join it
+		return jointext(override, " ")
+	if(!isnull(override[EXAMINE_POSITION_BEFORE]))
+		override -= null // There is no article, don't try to join it
+		return "\a [jointext(override, " ")]"
 	return "\a <b>[src]</b>"
 // [/CELADON-EDIT]
 
