@@ -6,7 +6,6 @@ interface SoundSetting {
   adminhelp: boolean;
   midi: boolean;
   ambience: boolean;
-  copyrighted: boolean;
   lobby: boolean;
   instruments: boolean;
   ship_ambience: boolean;
@@ -22,7 +21,6 @@ export const SoundPanelSettings = (props, context) => {
     adminhelp,
     midi,
     ambience,
-    copyrighted,
     lobby,
     instruments,
     ship_ambience,
@@ -69,13 +67,6 @@ export const SoundPanelSettings = (props, context) => {
             content="Музыкальный автомат"
             fluid
             onClick={() => act('jukebox')}
-          />
-          <Button
-            icon={copyrighted ? 'volume-up' : 'volume-mute'}
-            color={copyrighted ? 'green' : 'transparent'}
-            content="Копирайтовые треки"
-            fluid
-            onClick={() => act('copyrighted')}
           />
           <Button
             icon={announcements ? 'volume-up' : 'volume-mute'}

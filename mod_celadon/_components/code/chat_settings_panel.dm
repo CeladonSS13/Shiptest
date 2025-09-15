@@ -91,14 +91,13 @@
 	data["adminhelp"] 		= C.prefs.toggles & SOUND_ADMINHELP
 	data["midi"] 			= C.prefs.toggles & SOUND_MIDI
 	data["ambience"] 		= C.prefs.toggles & SOUND_AMBIENCE
-	data["copyrighted"] 	= C.prefs.w_toggles & SOUND_COPYRIGHTED
 	data["lobby"] 			= C.prefs.toggles & SOUND_LOBBY
 	data["instruments"] 	= C.prefs.toggles & SOUND_INSTRUMENTS
 	data["ship_ambience"] 	= C.prefs.toggles & SOUND_SHIP_AMBIENCE
 	data["prayers"] 		= C.prefs.toggles & SOUND_PRAYERS
 	data["announcements"] 	= C.prefs.toggles & SOUND_ANNOUNCEMENTS
 	data["endofround"] 		= C.prefs.toggles & SOUND_ENDOFROUND
-	data["jukebox"] 		= C.prefs.w_toggles & SOUND_JUKEBOX
+	data["jukebox"] 		= C.prefs.toggles & SOUND_JUKEBOX
 
 	return data
 
@@ -123,8 +122,6 @@
 			usr.stop_sound_channel(CHANNEL_AMBIENCE)
 			usr.stop_sound_channel(CHANNEL_BUZZ)
 			usr.client.update_ambience_pref()
-		if("copyrighted")
-			C.prefs.w_toggles ^= SOUND_COPYRIGHTED
 		if("lobby")
 			C.prefs.toggles ^= SOUND_LOBBY
 			usr.stop_sound_channel(CHANNEL_LOBBYMUSIC)
@@ -142,7 +139,7 @@
 		if("endofround")
 			C.prefs.toggles ^= SOUND_ENDOFROUND
 		if("jukebox")
-			C.prefs.w_toggles ^= SOUND_JUKEBOX
+			C.prefs.toggles ^= SOUND_JUKEBOX
 			usr.stop_sound_channel(CHANNEL_JUKEBOX)
 
 	C.prefs.save_preferences()
