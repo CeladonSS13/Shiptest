@@ -14,7 +14,8 @@ interface Data {
   chat?: ChatSetting[];
 }
 
-export const ChatSettingsPanel = (props, context) => {
+type ChatSettingsPanelProps = {};
+export function ChatSettingsPanel(props: ChatSettingsPanelProps, context) {
   const { act, data } = useBackend<Data>(context);
   const ghostPreSort = data.ghost || [];
   const ghost = ghostPreSort.sort((a, b) => {
@@ -70,4 +71,4 @@ export const ChatSettingsPanel = (props, context) => {
       </Window.Content>
     </Window>
   );
-};
+}

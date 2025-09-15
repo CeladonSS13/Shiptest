@@ -15,7 +15,8 @@ interface SoundSetting {
   jukebox: boolean;
 }
 
-export const SoundPanelSettings = (props, context) => {
+type SoundPanelSettingsProps = {};
+export function SoundPanelSettings(props: SoundPanelSettingsProps, context) {
   const { act, data } = useBackend<SoundSetting>(context);
   const {
     adminhelp,
@@ -33,80 +34,42 @@ export const SoundPanelSettings = (props, context) => {
     <Window width={250} height={400} title="Настройки звука">
       <Window.Content>
         <Section title="Основное">
-          <Button
-            icon={midi ? 'volume-up' : 'volume-mute'}
-            color={midi ? 'green' : 'transparent'}
-            content="Админские мидис"
-            fluid
-            onClick={() => act('midi')}
-          />
-          <Button
-            icon={lobby ? 'volume-up' : 'volume-mute'}
-            color={lobby ? 'green' : 'transparent'}
-            content="Музыка в лобби"
-            fluid
-            onClick={() => act('lobby')}
-          />
-          <Button
-            icon={instruments ? 'volume-up' : 'volume-mute'}
-            color={instruments ? 'green' : 'transparent'}
-            content="Музыкальные инструменты"
-            fluid
-            onClick={() => act('instruments')}
-          />
-          <Button
-            icon={endofround ? 'volume-up' : 'volume-mute'}
-            color={endofround ? 'green' : 'transparent'}
-            content="Звук конца раунда"
-            fluid
-            onClick={() => act('endofround')}
-          />
-          <Button
-            icon={jukebox ? 'volume-up' : 'volume-mute'}
-            color={jukebox ? 'green' : 'transparent'}
-            content="Музыкальный автомат"
-            fluid
-            onClick={() => act('jukebox')}
-          />
-          <Button
-            icon={announcements ? 'volume-up' : 'volume-mute'}
-            color={announcements ? 'green' : 'transparent'}
-            content="Оповещения (Announcements)"
-            fluid
-            onClick={() => act('announcements')}
-          />
-          <Button
-            icon={ambience ? 'volume-up' : 'volume-mute'}
-            color={ambience ? 'green' : 'transparent'}
-            content="Окружение (Ambience)"
-            fluid
-            onClick={() => act('ambience')}
-          />
-          <Button
-            icon={ship_ambience ? 'volume-up' : 'volume-mute'}
-            color={ship_ambience ? 'green' : 'transparent'}
-            content="Шум корабля (Ambience)"
-            fluid
-            onClick={() => act('ship_ambience')}
-          />
+          {[
+            { k: 'midi', v: midi,  t: 'Админские мидис' },
+            { k: 'lobby', v: lobby, t: 'Музыка в лобби' },
+            { k: 'instruments', v: instruments, t: 'Музыкальные инструменты' },
+            { k: 'endofround', v: endofround, t: 'Звук конца раунда' },
+            { k: 'jukebox', v: jukebox, t: 'Музыкальный автомат' },
+            { k: 'announcements', v: announcements, t: 'Оповещения (Announcements)' },
+            { k: 'ambience', v: ambience, t: 'Окружение (Ambience)' },
+            { k: 'ship_ambience', v: ship_ambience, t: 'Шум корабля (Ambience)' },
+          ].map(({ k, v, t }) => (
+            <Button
+              key={k}
+              icon={v ? 'volume-up' : 'volume-mute'}
+              color={v ? 'green' : 'transparent'}
+              content={t}
+              fluid
+              onClick={() => act(k)}
+            />
+          ))}
         </Section>
         <Section title="Административное">
-          <Button
-            icon={adminhelp ? 'volume-up' : 'volume-mute'}
-            color={adminhelp ? 'green' : 'transparent'}
-            content="Ахелпы"
-            fluid
-            onClick={() => act('adminhelp')}
-          />
-          <Button
-            icon={prayers ? 'volume-up' : 'volume-mute'}
-            color={prayers ? 'green' : 'transparent'}
-            content="Молитвы"
-            fluid
-            onClick={() => act('prayers')}
-          />
+          {[
+            { k: 'adminhelp', v: adminhelp, t: 'Ахелпы' },
+            { k: 'prayers', v: prayers, t: 'Молитвы' },
+          ].map(({ k, v, t }) => (
+            <Button
+              key={k}
+              icon={v ? 'volume-up' : 'volume-mute'}
+              color={v ? 'green' : 'transparent'}
+              content={t}
+              fluid
+              onClick={() => act(k)}
+            />
+          ))}
         </Section>
       </Window.Content>
     </Window>
   );
-};
+}

@@ -482,7 +482,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	if(!tooltips)
 		tooltips = new /datum/tooltip(src)
 
-	//if (!interviewee)	// [CELADON-REMOVE] - Хуйня которая убивает при ре-конекте настройки слева менюшки
+	//if (!interviewee)	// [CELADON-REMOVE] - Прежняя проверка мешала корректной реинициализации левого меню после реконнекта
 	initialize_menus()
 
 	view_size = new(src, getScreenSize(prefs.widescreenpref))

@@ -57,6 +57,8 @@
 			var/key = params["key"]
 			if (key)
 				usr.client.prefs.toggles ^= key
+
+	usr.client.prefs.save_preferences()
 	. = TRUE
 
 ////////////////////////////////////////////////
