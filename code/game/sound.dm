@@ -215,7 +215,7 @@ distance_multiplier - Can be used to multiply the distance at which the sound is
 
 		if(Sticker.login_music_name)
 			var/music_name = SSticker.login_music_name
-			var/dot_position = findtext(music_name, ".")
+			var/dot_position = findlasttext(music_name, ".")
 			if(dot_position)
 				music_name = copytext(music_name, 1, dot_position)
 			to_chat(src, span_redteamradio("<B>Проигрывается музыка в лобби: [music_name]</B>"))
