@@ -33061,9 +33061,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/turf_decal/borderfloorwhite{
-	dir = 8
-	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
@@ -33078,17 +33075,7 @@
 	id = "outpost_ghost_janitor";
 	dir = 4
 	},
-/obj/effect/turf_decal/corner/opaque/grey/diagonal,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/turf/open/floor/plasteel/patterned,
+/turf/open/floor/plasteel/dark,
 /area/outpost/vacant_rooms/shop)
 "vQk" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
