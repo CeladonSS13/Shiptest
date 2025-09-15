@@ -14,8 +14,6 @@
 	if(acceleration_speed <= 0)
 		return
 	var/overload = ((abs(n_x) + abs(n_y)) / acceleration_speed)
-	if(overload <= 0)
-		return
 
 	if(world.time - last_overload_alarm > OVERLOAD_COOLDOWN)
 		last_overload_alarm = world.time
