@@ -63,7 +63,7 @@ ID мода: WIDEBAND_CHANGES
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- mod_celadon/_storge_sounds/sound/announce/sos.ogg
+- mod_celadon/_storage_sounds/sound/announce/sos.ogg
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.

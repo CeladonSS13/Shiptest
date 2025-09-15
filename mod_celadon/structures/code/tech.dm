@@ -1,5 +1,5 @@
 /turf/open/floor/circuit/techfloor_blue
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/techfloor.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/techfloor.dmi'
 	icon_state = "techfloor_blue"
 	icon_normal = "techfloor_blue"
 	light_color = COLOR_BRIGHT_BLUE

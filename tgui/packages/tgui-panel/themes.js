@@ -59,6 +59,8 @@ export const setClientTheme = (name) => {
       'github.text-color': '#000000',
       'report-issue.background-color': 'none',
       'report-issue.text-color': '#000000',
+      'fullscreen-toggle.background-color': 'none',
+      'fullscreen-toggle.text-color': '#000000',
       // Status and verb tabs
       'output.background-color': 'none',
       'output.text-color': '#000000',
@@ -109,10 +111,12 @@ export const setClientTheme = (name) => {
       'wiki.text-color': COLOR_DARK_TEXT,
       'lore.background-color': '#494949',
       'lore.text-color': COLOR_DARK_TEXT,
-      'github.background-color': '#3a3a3a',
+      'github.background-color': '#494949',
       'github.text-color': COLOR_DARK_TEXT,
-      'report-issue.background-color': '#492020',
+      'report-issue.background-color': '#494949',
       'report-issue.text-color': COLOR_DARK_TEXT,
+      'fullscreen-toggle.background-color': '#2a2a2a',
+      'fullscreen-toggle.text-color': COLOR_DARK_TEXT,
       // Status and verb tabs
       'output.background-color': COLOR_DARK_BG_DARKER,
       'output.text-color': COLOR_DARK_TEXT,

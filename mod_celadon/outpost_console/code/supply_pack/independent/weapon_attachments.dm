@@ -7,7 +7,7 @@
 /datum/supply_pack/faction/independent/attachment/rail_light
 	name = "Tactical Rail Light Crate"
 	desc = "Contains a single rail light to be mounted on a firearm."
-	cost = 100
+	cost = 75
 	contains = list(/obj/item/attachment/rail_light)
 	crate_name = "rail light crate"
 
@@ -47,13 +47,6 @@
 	cost = 100
 	contains = list(/obj/item/attachment/ammo_counter)
 	crate_name = "ammo counter crate"
-
-/datum/supply_pack/faction/independent/attachment/sling
-	name = "Shoulder Sling Crate"
-	desc = "Contains a single shoulder sling to be mounted on a firearm for easy carrying without armor holsters. Only compatible with longarms."
-	cost = 250
-	contains = list(/obj/item/attachment/sling)
-	crate_name = "shoulder sling crate"
 
 /datum/supply_pack/faction/independent/attachment/scope
 	name = "Scope Crate"

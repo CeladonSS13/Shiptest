@@ -3,19 +3,6 @@
 	crate_type = /obj/structure/closet/crate/engineering
 
 /*
-		Vehicles
-*/
-
-/datum/supply_pack/faction/independent/tools/all_terrain_vehicle
-	name = "All Terrain Vehicle"
-	desc = "Contains one ATV and a key, for when you want to explore the frontier in style."
-	cost = 2000
-	contains = list(/obj/vehicle/ridden/atv,
-					/obj/item/key)
-	crate_name = "ATV crate"
-	crate_type = /obj/structure/closet/crate/large
-
-/*
 		Actual tools
 */
 
@@ -142,7 +129,7 @@
 	crate_name = "plasmacutter crate"
 
 /*
-		Liquid tanks
+	MARK: Liquid tanks
 */
 
 /datum/supply_pack/faction/independent/tools/fueltank
@@ -196,7 +183,14 @@
 	name = "Shuttle Expansion Permit"
 	desc = "A set of paperwork which is used to expand flyable shuttles."
 	contains = list(/obj/item/areaeditor/shuttle)
-	cost = 20000
+	cost = 10000
+	crate_name = "blueprint crate"
+
+/datum/supply_pack/faction/independent/tools/blueprints_shuttle
+	name = "Shuttle Expansion Disposable Permit"
+	desc = "A disposable set of documents used to expand flyable shuttles."
+	contains = list(/obj/item/areaeditor/shuttle/disposable)
+	cost = 2000
 	crate_name = "blueprint crate"
 
 /datum/supply_pack/faction/independent/tools/crucks_box
@@ -226,6 +220,19 @@
 	crate_type = /obj/structure/closet/crate/wooden
 	crate_name = "basic mining crate"
 
-/*
-	MARK: Цистерны для жидкостей
-*/
+/obj/structure/closet/crate/privatecrate
+	desc = "A private steel crate."
+	icon_state = "privatecrate"
+
+/datum/supply_pack/faction/independent/tools/wall_painter
+	name = "Набор юного художника"
+	desc = "Содержит 1х покрасчик стен, 1х покрасчик труб, 1х покрасчик декалей, 1х покрасчик шлюзов, 1х долото."
+	cost = 1500
+	contains = list(
+		/obj/item/wall_painter,
+		/obj/item/pipe_painter,
+		/obj/item/decal_painter,
+		/obj/item/airlock_painter,
+		/obj/item/chisel)
+	crate_type = /obj/structure/closet/crate/privatecrate
+	crate_name = "private art crate"

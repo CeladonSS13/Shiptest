@@ -7,6 +7,9 @@
 	product_slogans = "Dress for success!;Prepare to look swagalicious!;Look at all this swag!;Why leave style up to fate? Use the ClothesMate!"
 	vend_reply = "Thank you for using the ClothesMate!"
 	products = list(
+		/obj/item/storage/backpack = 4,
+		/obj/item/storage/backpack/satchel = 4,
+		/obj/item/storage/backpack/duffelbag = 4,
 		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/item/clothing/head/beanie/christmas = 3,
 		/obj/item/clothing/head/beanie/rasta = 3,
@@ -16,6 +19,18 @@
 		/obj/item/clothing/head/sombrero = 1,
 		/obj/item/clothing/suit/poncho = 1,
 		/obj/item/clothing/suit/vapeshirt = 1,
+		/obj/item/clothing/neck/cloak/cape = 3,
+		/obj/item/clothing/neck/cloak/cape/white = 3,
+		/obj/item/clothing/neck/cloak/cape/zavod = 3,
+		/obj/item/clothing/neck/cloak/cape/hospital = 3,
+		/obj/item/clothing/neck/cloak/cape/armsman = 3,
+		/obj/item/clothing/neck/cloak/cape/elysium = 3,
+		/obj/item/clothing/neck/cloak/cape/elysium/white = 3,
+		/obj/item/clothing/under/el_cloth_1 = 5,
+		/obj/item/clothing/under/el_cloth_2 = 5,
+		/obj/item/clothing/under/el_cloth_3 = 5,
+		/obj/item/clothing/under/el_cloth_4 = 5,
+		/obj/item/clothing/head/beret/elysium = 5,
 		// [/CELADON-ADD]
 		/obj/item/clothing/head/beanie = 3,
 		/obj/item/clothing/head/soft = 3,
@@ -26,9 +41,11 @@
 		/obj/item/clothing/head/beanie/purple = 3,
 		/obj/item/clothing/head/beanie/yellow = 3,
 		/obj/item/clothing/head/beanie/orange = 3,
+		/obj/item/clothing/head/beanie/teal = 3,
 		/obj/item/clothing/head/flatcap = 3,
 		/obj/item/clothing/head/flap = 3,
-		/obj/item/clothing/head/beanie/teal = 3,
+		/obj/item/clothing/head/sunhat = 3,
+		/obj/item/clothing/head/hairbow = 3,
 		/obj/item/clothing/gloves/fingerless = 2,
 		/obj/item/clothing/neck/scarf/pink = 3,
 		/obj/item/clothing/neck/scarf/red = 3,
@@ -80,9 +97,9 @@
 		/obj/item/clothing/under/dress/skirt/pinafore/plaid/brown = 2,
 		/obj/item/clothing/under/suit/white/skirt = 2,
 		/obj/item/clothing/suit/jacket = 2,
-		/obj/item/clothing/suit/jacket/puffer/vest = 2,
-		/obj/item/clothing/suit/jacket/puffer = 2,
 		/obj/item/clothing/suit/toggle/windbreaker = 3,
+		/obj/item/clothing/suit/toggle/pufferjacket = 3,
+		/obj/item/clothing/suit/toggle/puffervest = 3,
 		/obj/item/clothing/suit/jacket/letterman = 2,
 		/obj/item/clothing/suit/jacket/letterman_red = 2,
 		/obj/item/clothing/glasses/regular = 2,
@@ -121,7 +138,8 @@
 		/obj/item/clothing/mask/balaclava = 2,
 		/obj/item/storage/belt/fannypack/black = 2,
 		/obj/item/clothing/suit/jacket/letterman_syndie = 1,
-		/obj/item/towel = 3)
+		/obj/item/towel = 3,
+		/obj/item/clothing/mask/breath/facemask =3)
 	premium = list(
 		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/item/clothing/suit/jacket/leather/overcoat = 1,
@@ -132,8 +150,10 @@
 		/obj/item/storage/box/maid = 2,
 		/obj/item/instrument/piano_synth/headphones/spacepods = 1)
 	refill_canister = /obj/item/vending_refill/clothing
-	default_price = 10
-	extra_price = 60
+	// [CELADON-REMOVE] - CELADON_ECONOMY - Вынесено в модуль. Иначе оверайд будет
+	// default_price = 10
+	// extra_price = 60
+	// [/CELADON-REMOVE]
 	light_mask = "wardrobe-light-mask"
 	light_color = LIGHT_COLOR_ELECTRIC_GREEN
 

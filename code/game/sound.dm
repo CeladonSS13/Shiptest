@@ -213,6 +213,13 @@ distance_multiplier - Can be used to multiply the distance at which the sound is
 	if(prefs && (prefs.toggles & SOUND_LOBBY))
 		SEND_SOUND(src, sound(SSticker.login_music, repeat = 0, wait = 0, volume = vol, channel = CHANNEL_LOBBYMUSIC)) // MAD JAMS
 
+	if(SSticker.login_music_name)
+		var/music_name = SSticker.login_music_name
+		var/dot_position = findtext(music_name, ".")
+		if(dot_position)
+			music_name = copytext(music_name, 1, dot_position)
+		to_chat(src, span_redteamradio("<B>Playing lobby music: [music_name]</B>"))
+
 /proc/get_rand_frequency()
 	return rand(32000, 55000) //Frequency stuff only works with 45kbps oggs.
 
@@ -330,8 +337,10 @@ distance_multiplier - Can be used to multiply the distance at which the sound is
 				soundin = pick('sound/weapons/gun/revolver/spin1.ogg', 'sound/weapons/gun/revolver/spin2.ogg', 'sound/weapons/gun/revolver/spin3.ogg')
 			if("law")
 				soundin = pick('sound/voice/beepsky/god.ogg', 'sound/voice/beepsky/iamthelaw.ogg', 'sound/voice/beepsky/secureday.ogg', 'sound/voice/beepsky/radio.ogg', 'sound/voice/beepsky/insult.ogg', 'sound/voice/beepsky/creep.ogg')
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 			if("honkbot_e")
 				soundin = pick('sound/items/bikehorn.ogg', 'sound/items/AirHorn2.ogg', 'sound/misc/sadtrombone.ogg', 'sound/items/AirHorn.ogg', 'sound/effects/reee.ogg',  'sound/items/WEEOO1.ogg', 'sound/voice/beepsky/iamthelaw.ogg', 'sound/voice/beepsky/creep.ogg','sound/magic/Fireball.ogg' ,'sound/effects/pray.ogg', 'sound/voice/hiss1.ogg','sound/machines/buzz-sigh.ogg', 'sound/machines/ping.ogg', 'sound/weapons/flashbang.ogg', 'sound/weapons/bladeslice.ogg')
+// [/CELADON-ADD]
 			if("goose")
 				soundin = pick('sound/creatures/goose1.ogg', 'sound/creatures/goose2.ogg', 'sound/creatures/goose3.ogg', 'sound/creatures/goose4.ogg')
 			if("warpspeed")
@@ -350,6 +359,6 @@ distance_multiplier - Can be used to multiply the distance at which the sound is
 				soundin = pick('sound/machines/switch1.ogg','sound/machines/switch2.ogg','sound/machines/switch3.ogg')
 			//[CELADON-ADD] - CELADON_WEAPONS - добавляем рандомизацию звуков при выстреле
 			if("svd_fire")
-				soundin = pick('mod_celadon/_storge_sounds/sound/gun/svd/svd1.ogg', 'mod_celadon/_storge_sounds/sound/gun/svd/svd2.ogg', 'mod_celadon/_storge_sounds/sound/gun/svd/svd3.ogg')
+				soundin = pick('mod_celadon/_storage_sounds/sound/gun/svd/svd1.ogg', 'mod_celadon/_storage_sounds/sound/gun/svd/svd2.ogg', 'mod_celadon/_storage_sounds/sound/gun/svd/svd3.ogg')
 			//[/CELADON-ADD] - CELADON_WEAPONS
 	return soundin

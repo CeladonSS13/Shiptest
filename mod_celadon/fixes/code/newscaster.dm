@@ -743,7 +743,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 				if(!(machine_stat & BROKEN))
 					return
 				to_chat(user, span_notice("Вы ремонтируете [src]."))
-				obj_integrity = max_integrity
+				atom_integrity = max_integrity
 				set_machine_stat(machine_stat & ~BROKEN)
 				update_appearance()
 		else
@@ -769,7 +769,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 		new /obj/item/shard(loc)
 	qdel(src)
 
-/obj/machinery/newscaster/obj_break(damage_flag)
+/obj/machinery/newscaster/atom_break(damage_flag)
 	. = ..()
 	if(.)
 		playsound(loc, 'sound/effects/glassbr3.ogg', 100, TRUE)
@@ -815,12 +815,17 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 			if(istype(human_user.wear_id, /obj/item/pda))
 				var/obj/item/pda/P = human_user.wear_id
 				if(P.id)
-					scanned_user = "[P.id.registered_name] ([P.id.assignment])"
+					scanned_user = "[P.id.registered_name])"
 				else
 					scanned_user = "Unknown"
 			else if(istype(human_user.wear_id, /obj/item/card/id))
 				var/obj/item/card/id/ID = human_user.wear_id
-				scanned_user ="[ID.registered_name] ([ID.assignment])"
+				scanned_user ="[ID.registered_name])"
+			else if(istype(human_user.wear_id, /obj/item/storage/wallet))
+				var/obj/item/storage/wallet/our_wallet = human_user.wear_id
+				if(our_wallet.front_id)
+					var/obj/item/card/id/ID = our_wallet.GetID()
+					scanned_user = "[ID.registered_name]"
 			else
 				scanned_user ="Unknown"
 		else

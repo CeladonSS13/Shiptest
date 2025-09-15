@@ -161,11 +161,11 @@
 	name = "Medical herbs"
 	desc = "Specifically created for severely ill individuals and those struggling with addiction."
 	cost = 5000
-	contains = list(/obj/item/reagent_containers/food/snacks/grown/cannabis,
-					/obj/item/reagent_containers/food/snacks/grown/cannabis,
-					/obj/item/reagent_containers/food/snacks/grown/cannabis,
-					/obj/item/reagent_containers/food/snacks/grown/cannabis,
-					/obj/item/reagent_containers/food/snacks/grown/cannabis,
-					/obj/item/reagent_containers/food/snacks/grown/cannabis)
+	contains = list(/obj/item/food/grown/cannabis,
+					/obj/item/food/grown/cannabis,
+					/obj/item/food/grown/cannabis,
+					/obj/item/food/grown/cannabis,
+					/obj/item/food/grown/cannabis,
+					/obj/item/food/grown/cannabis)
 	crate_name = "marijuana crate"
 	crate_type = /obj/structure/closet/crate/medical

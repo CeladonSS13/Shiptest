@@ -21,7 +21,7 @@
 
 /datum/mission/ruin/signaled/kill/frontiersmen
 	value = 2000
-	mission_limit = 3
+	mission_limit = 1 //[CELADON-EDIT] OLD- mission_limit = 3
 	mission_reward = list(
 		/obj/item/gun/ballistic/automatic/pistol/mauler,
 		/obj/item/gun/ballistic/automatic/pistol/spitter
@@ -31,7 +31,7 @@
 
 /datum/mission/ruin/signaled/kill/ramzi
 	value = 2500
-	mission_limit = 3
+	mission_limit = 1 //[CELADON-EDIT] OLD- mission_limit = 3
 	mission_reward = list(
 		/obj/item/gun/ballistic/automatic/smg/cobra,
 		/obj/item/gun/ballistic/automatic/smg/sidewinder,
@@ -47,7 +47,7 @@
 	setpiece_item = /obj/item/folder/documents/syndicate
 
 /datum/mission/ruin/signaled/kill/megafauna
-	mission_limit = 2
+	mission_limit = 1 //[CELADON-EDIT] OLD- mission_limit = 2
 
 /datum/mission/ruin/signaled/kill/megafauna/generate_mission_details()
 	registered_type = pick(
@@ -58,7 +58,7 @@
 
 /datum/mission/ruin/signaled/kill/elite
 	value = 6000
-	mission_limit = 2
+	mission_limit = 1 //[CELADON-EDIT] OLD- mission_limit = 2
 
 /datum/mission/ruin/signaled/kill/elite/generate_mission_details()
 	registered_type = pick(

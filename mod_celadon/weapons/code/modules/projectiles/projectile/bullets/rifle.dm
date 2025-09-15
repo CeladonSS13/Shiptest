@@ -24,7 +24,7 @@
 
 /obj/projectile/bullet/a308
 	name = ".308"
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/projectiles.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
 	icon_state = "bullet"
 	speed = 0.3
 	damage = 30
@@ -58,8 +58,8 @@
 	stamina = 38
 
 // MARK: 7.62x54mmR
-/obj/projectile/bullet/x762x54
+/obj/projectile/bullet/x762_54
 	name = "crude sniper bullet"
-	speed = 1.1
-	damage = 35
-	armour_penetration = 15
+	speed = 0.3
+	damage = 37
+	armour_penetration = 17

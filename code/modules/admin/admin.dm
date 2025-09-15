@@ -33,6 +33,7 @@
 		return
 
 	log_admin("[key_name(usr)] checked the individual player panel for [key_name(M)][isobserver(usr)?"":" while in game"].")
+	log_celadon_admin("ADMIN: [key_name(usr)] checked the individual player panel for [key_name(M)][isobserver(usr)?"":" while in game"].")
 
 	if(!M)
 		to_chat(usr, span_warning("You seem to be selecting a mob that doesn't exist anymore."), confidential = TRUE)
@@ -454,6 +455,8 @@
 	if(marked_datum && istype(marked_datum, /atom))
 		dat += "<A href='byond://?src=[REF(src)];[HrefToken()];dupe_marked_datum=1'>Duplicate Marked Datum</A><br>"
 
+	log_celadon_admin("ADMIN: [key_name(usr)] has entered Game Panel.") // [CELADON_ADD] - logging admin actions.
+
 	var/datum/browser/popup = new(usr, "admin2", null, 240, 280)
 	popup.set_content(dat)
 	popup.open()
@@ -679,6 +682,7 @@
 			to_chat(world, "<b>The game will start in [DisplayTimeText(newtime)].</b>", confidential = TRUE)
 			SEND_SOUND(world, sound('sound/ai/attention.ogg'))
 			log_admin("[key_name(usr)] set the pre-game delay to [DisplayTimeText(newtime)].")
+			log_celadon_admin("ADMIN: [key_name(usr)] set the pre-game delay to [DisplayTimeText(newtime)].") // [CELADON_ADD] - logging admin actions.
 		BLACKBOX_LOG_ADMIN_VERB("Delay Game Start")
 
 /datum/admins/proc/unprison(mob/M in GLOB.mob_list)
@@ -726,6 +730,7 @@
 			A.flags_1 |= ADMIN_SPAWNED_1
 
 	log_admin("[key_name(usr)] spawned [amount] x [chosen] at [AREACOORD(usr)]")
+	log_celadon_admin("ADMIN: [key_name(usr)] spawned [amount] x [chosen] at [AREACOORD(usr)]") // [CELADON_ADD] - logging admin actions.
 	BLACKBOX_LOG_ADMIN_VERB("Spawn Atom")
 
 /datum/admins/proc/podspawn_atom(object as text)
@@ -750,6 +755,7 @@
 		new /obj/effect/pod_landingzone(T, pod)
 
 	log_admin("[key_name(usr)] pod-spawned [chosen] at [AREACOORD(usr)]")
+	log_celadon_admin("ADMIN: [key_name(usr)] pod-spawned [chosen] at [AREACOORD(usr)]") // [CELADON_ADD] - logging admin actions.
 	BLACKBOX_LOG_ADMIN_VERB("Podspawn Atom")
 
 /datum/admins/proc/spawn_cargo(object as text)
@@ -768,6 +774,7 @@
 	S.generate(get_turf(usr))
 
 	log_admin("[key_name(usr)] spawned cargo pack [chosen] at [AREACOORD(usr)]")
+	log_celadon_admin("ADMIN: [key_name(usr)] spawned cargo pack [chosen] at [AREACOORD(usr)]") // [CELADON_ADD] - logging admin actions.
 	BLACKBOX_LOG_ADMIN_VERB("Spawn Cargo")
 
 
@@ -1007,6 +1014,8 @@
 	set category = "Admin.Game"
 	set name = "View Manifest"
 	set desc = "Opens the Manifest UI."
+
+	log_celadon_admin("ADMIN: [key_name(usr)] openned the crew manifest UI.") // [CELADON_ADD] - logging admin actions.
 
 	if(!GLOB.crew_manifest_tgui)
 		GLOB.crew_manifest_tgui = new /datum/crew_manifest(src)

@@ -7,6 +7,8 @@
 	name = "Nude"
 	icon_state = null
 
+// [CELADON-REMOVE] - CELADON_UNDERWEAR - Новая одежда (Перенос в модуль) => mod_celadon/underwear
+/* CELADON-REMOVE - ORIGINAL
 //Start normal shirts
 
 //Female undergarment tops
@@ -84,6 +86,10 @@
 	name = "Sleeveless Turtleneck (Greyscale)"
 	icon_state = "turtle_sleeveless"
 
+/datum/sprite_accessory/undershirt/turtle_smooth
+	name = "Smooth Turtleneck (Greyscale)"
+	icon_state = "turtle_smooth"
+
 /datum/sprite_accessory/undershirt/buttondown
 	name = "Button-down Shirt (Greyscale)"
 	icon_state = "button"
@@ -148,3 +154,5 @@
 	name = "Tank Top (Asexual)"
 	icon_state = "ace"
 	use_static = TRUE
+*/
+// [/CELADON-REMOVE]

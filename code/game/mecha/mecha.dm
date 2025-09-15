@@ -18,7 +18,7 @@
 	var/can_move = 0 //time of next allowed movement
 	var/mob/living/carbon/occupant = null
 	var/step_in = 10 //make a step in step_in/10 sec.
-	var/dir_in = 2//What direction will the mech face when entered/powered on? Defaults to South.
+	var/dir_in = SOUTH //What direction will the mech face when entered/powered on?
 	var/base_step_energy_drain = 15 //The base amount of energy the mech should consume each time it moves. This variable is a backup for when leg actuators affect the energy drain.
 	var/step_energy_drain  // How much energy the mech actually consumes when moving after modifiers (Eg, stock parts, leg actuators)
 	var/melee_energy_drain = 15
@@ -318,7 +318,7 @@
 
 /obj/mecha/examine(mob/user)
 	. = ..()
-	var/integrity = obj_integrity*100/max_integrity
+	var/integrity = atom_integrity*100/max_integrity
 	switch(integrity)
 		if(85 to 100)
 			. += "It's fully intact."
@@ -422,7 +422,7 @@
 				else
 					occupant.throw_alert("charge", /atom/movable/screen/alert/emptycell)
 
-		var/integrity = obj_integrity/max_integrity*100
+		var/integrity = atom_integrity/max_integrity*100
 		switch(integrity)
 			if(30 to 45)
 				occupant.throw_alert("exosuit damage", /atom/movable/screen/alert/low_mech_integrity, 1)
@@ -551,7 +551,11 @@
 	return
 
 /obj/mecha/proc/handle_unique_action(mob/user)
-	mech_unique_action.Activate()
+// [CELADON-EDIT] - FIX_MECH
+//	mech_unique_action.Activate() // CELADON-EDIT - ORIGINAL
+	if(mech_unique_action)
+		mech_unique_action.Activate()
+// [/CELADON-EDIT]
 	return
 
 
@@ -559,7 +563,7 @@
 ////////  Movement procs  ////////
 //////////////////////////////////
 
-///Plays the mech step sound effect. Split from movement procs so that other mechs (HONK) can override this one specific part.
+///Plays the mech step sound effect. Split from movement procs so that other mechs can override this one specific part.
 /obj/mecha/proc/play_stepsound()
 	if(stepsound)
 		playsound(src,stepsound,40,1)
@@ -742,7 +746,7 @@
 	if(!islist(possible_int_damage) || !length(possible_int_damage))
 		return
 	if(prob(20))
-		if(ignore_threshold || obj_integrity*100/max_integrity < internal_damage_threshold)
+		if(ignore_threshold || atom_integrity*100/max_integrity < internal_damage_threshold)
 			for(var/T in possible_int_damage)
 				if(internal_damage & T)
 					possible_int_damage -= T
@@ -751,7 +755,7 @@
 				if(int_dam_flag)
 					setInternalDamage(int_dam_flag)
 	if(prob(5))
-		if(ignore_threshold || obj_integrity*100/max_integrity < internal_damage_threshold)
+		if(ignore_threshold || atom_integrity*100/max_integrity < internal_damage_threshold)
 			if (length(equipment))
 				var/obj/item/mecha_parts/mecha_equipment/ME = pick(equipment)
 				qdel(ME)
@@ -988,7 +992,7 @@
 				final_delay = enter_delay/2
 
 	if(do_after(user, final_delay, target = src))
-		if(obj_integrity <= 0)
+		if(atom_integrity <= 0)
 			to_chat(user, span_warning("You cannot get in the [name], it has been destroyed!"))
 		else if(occupant)
 			to_chat(user, span_danger("[occupant] was faster! Try better next time, loser."))
@@ -997,6 +1001,9 @@
 		else if(user.has_buckled_mobs())
 			to_chat(user, span_warning("You can't enter the exosuit with other creatures attached to you!"))
 		else
+// [CELADON-ADD] - FIX_MECH
+			ADD_TRAIT(M, TRAIT_HANDS_BLOCKED, VEHICLE_TRAIT)
+// [/CELADON-ADD]
 			moved_inside(user)
 	else
 		to_chat(user, span_warning("You stop entering the exosuit!"))
@@ -1004,6 +1011,10 @@
 // wake up should go off here
 /obj/mecha/proc/moved_inside(mob/living/carbon/human/H)
 	. = FALSE
+// [CELADON-ADD] - FIX_MECH
+	if(ishuman(H) && !Adjacent(H))
+		return FALSE
+// [/CELADON-ADD]
 	if(H && H.client && (H in range(1)))
 		occupant = H
 		H.forceMove(src)
@@ -1150,6 +1161,9 @@
 	silicon_pilot = FALSE
 	SEND_SIGNAL(src,COMSIG_MECH_EXITED,L)
 	if(mob_container.forceMove(newloc))//ejecting mob container
+// [CELADON-ADD] - FIX_MECH
+		REMOVE_TRAIT(L, TRAIT_HANDS_BLOCKED, VEHICLE_TRAIT)
+// [/CELADON-ADD]
 		log_message("[mob_container] moved out.", LOG_MECHA)
 		L << browse(null, "window=exosuit")
 
@@ -1331,4 +1345,8 @@ GLOBAL_VAR_INIT(year_integer, text2num(year)) // = 2013???
 /// Sets the direction of the mecha and all of its occcupents, required for FOV. Alternatively one could make a recursive contents registration and register topmost direction changes in the fov component
 /obj/mecha/proc/set_dir_mecha(new_dir)
 	setDir(new_dir)
-	occupant.setDir(new_dir)
+// [CELADON-EDIT] - FIX_MECH
+//	occupant.setDir(new_dir) // CELADON-EDIT - ORIGINAL
+	if(!occupant == null)
+		occupant.setDir(new_dir)
+// [/CELADON-EDIT]

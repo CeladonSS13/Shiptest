@@ -16,6 +16,9 @@
 	var/obj/item/loaded_item = null //the item loaded inside the machine (currently only used by experimentor and destructive analyzer)
 	var/datum/techweb/linked_techweb
 
+	// [CELADON-ADD] - Анимации при вставке материалов в техфаб и протолат.
+	var/tmp/skip_next_insert_anim = FALSE
+	// [/CELADON-ADD]
 /obj/machinery/rnd/proc/reset_busy()
 	busy = FALSE
 

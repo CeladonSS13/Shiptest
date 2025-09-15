@@ -263,11 +263,6 @@ or something covering your eyes."
 		return
 	to_chat(L, span_mind_control("[command]"))
 
-/atom/movable/screen/alert/drunk //Not implemented
-	name = "Drunk"
-	desc = "All that alcohol you've been drinking is impairing your speech, motor skills, and mental cognition. Make sure to act like it."
-	icon_state = "drunk"
-
 /atom/movable/screen/alert/embeddedobject
 	name = "Embedded Object"
 	desc = "Something got lodged into your flesh and is causing major bleeding. It might fall out with time, but surgery is the safest way. \
@@ -705,7 +700,7 @@ so as to remain in compliance with the most up-to-date laws."
 /atom/movable/screen/alert/direction_lock
 	name = "Direction Lock"
 	desc = "You are facing only one direction, slowing your movement down. Click here to stop the direction lock."
-	icon = 'mod_celadon/_storge_icons/icons/assets/screen_alert.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/assets/screen_alert.dmi'
 	icon_state = "direction_lock"
 
 /atom/movable/screen/alert/direction_lock/Click()

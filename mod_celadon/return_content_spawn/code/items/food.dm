@@ -9,8 +9,8 @@
 /datum/crafting_recipe/food/clownchili
 	reqs = list(
 		/obj/item/reagent_containers/glass/bowl = 1,
-		/obj/item/reagent_containers/food/snacks/meat/cutlet = 2,
-		/obj/item/reagent_containers/food/snacks/grown/chili = 1,
-		/obj/item/reagent_containers/food/snacks/grown/tomato = 1,
+		/obj/item/food/meat/cutlet = 2,
+		/obj/item/food/grown/chili = 1,
+		/obj/item/food/grown/tomato = 1,
 		/obj/item/clothing/shoes/clown_shoes = 1
 	)

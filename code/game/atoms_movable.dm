@@ -838,7 +838,7 @@
 	if(has_gravity(src))
 		return 1
 
-	if(pulledby && (pulledby != pulling))
+	if(pulledby && (pulledby != pulling))	//if(pulledby)	// [CELADON-EDIT] - CELADON_GRAVGEN
 		return 1
 
 	if(throwing)

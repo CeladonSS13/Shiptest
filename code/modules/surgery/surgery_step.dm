@@ -129,6 +129,10 @@
 				var/obj/item/bodypart/operated_bodypart = target.get_bodypart(target_zone) ? target.get_bodypart(target_zone) : target.get_bodypart(BODY_ZONE_CHEST)
 				if(operated_bodypart?.bodytype & BODYPART_ORGANIC) //robot limbs are built to be opened and stuff
 					commit_malpractice(user, target, target_zone, tool, surgery)
+// [CELADON-ADD] - CELADON_FIXES - фикс бесконечной рекурсии
+				else
+					advance = TRUE
+// [/CELADON-ADD]
 
 		if(chem_check_result && !advance)
 			return .(user, target, target_zone, tool, surgery, try_to_fail) //automatically re-attempt if failed for reason other than lack of required chemical
@@ -221,12 +225,12 @@
 	if(require_all_chems)
 		. = TRUE
 		for(var/R in chems_needed)
-			if(!target.reagents.has_reagent(R))
+			if(!target.has_reagent(R))
 				return FALSE
 	else
 		. = FALSE
 		for(var/R in chems_needed)
-			if(target.reagents.has_reagent(R))
+			if(target.has_reagent(R))
 				return TRUE
 
 /datum/surgery_step/proc/get_chem_list()
@@ -252,7 +256,7 @@
 /datum/surgery_step/proc/commit_malpractice(mob/user, mob/living/carbon/target, target_zone, obj/item/tool, datum/surgery/surgery)
 	var/ouchie_mod = 1
 	var/fuckup_mod = 1
-	ouchie_mod *= clamp(1-target.drunkenness/SURGERY_DRUNK_MOD, 0, 1) // Drunkenness up to 40% (points? idk) will improve chances of avoiding horrible pain and suffering
+	ouchie_mod *= clamp(1-target.get_drunk_amount()/SURGERY_DRUNK_MOD, 0, 1) // Drunkenness up to 40% (points? idk) will improve chances of avoiding horrible pain and suffering
 	if(target.stat == UNCONSCIOUS) // Being "normally" asleep will SLIGHTLY improve your chances since it's intuitive behavior barring access to anything else
 		ouchie_mod *= target.getOxyLoss() >= 50 ? 0.6 : 0.8 // Being choked out will slightly improve chances on top of that. Emergent gameplay! (people already do this)
 	var/final_ouchie_chance = SURGERY_FUCKUP_CHANCE * ouchie_mod

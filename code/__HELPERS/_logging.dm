@@ -116,6 +116,10 @@
 	if (CONFIG_GET(flag/log_attack))
 		WRITE_LOG(GLOB.world_attack_log, "ATTACK: [text]")
 
+/proc/log_wounded(text)
+	if (CONFIG_GET(flag/log_attack))
+		WRITE_LOG(GLOB.world_attack_log, "WOUND: [text]")
+
 /proc/log_econ(text)
 	if (CONFIG_GET(flag/log_econ))
 		WRITE_LOG(GLOB.world_attack_log, "MONEY: [text]")
@@ -214,6 +218,12 @@
 /proc/log_job_debug(text)
 	if (CONFIG_GET(flag/log_job_debug))
 		WRITE_LOG(GLOB.world_job_debug_log, "JOB: [text]")
+
+// [CELADON-ADD] - Logging for admin actions.
+/proc/log_celadon_admin(text)
+	if (CONFIG_GET(flag/log_admin))
+		WRITE_LOG(GLOB.world_celadon_admin_log, "[text]")
+// [/CELADON-ADD]
 
 /* Log to both DD and the logfile. */
 /proc/log_world(text)

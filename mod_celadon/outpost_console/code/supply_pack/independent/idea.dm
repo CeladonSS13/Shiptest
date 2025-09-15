@@ -73,7 +73,7 @@
 
 /datum/supply_pack/faction/independent/idea/silicon/robot
 	name = "Cyborg assembly crate"
-	desc = "Build your own silicon friend only for 2000 credits! Contains all parts besides law changing circuits and carging station."
+	desc = "Build your own silicon friend only for 2000 credits! Contains all parts of cyborg."
 	cost = 3000
 	contains = list(/obj/item/paper/idea{
 					default_raw_text = "<center><h1 style='background-color:red;'>Thank you for shopping Space IDEA!</h1></center><h2 align='center'>Instructions for assembling YOUR Cyborg</h2><p>1. Insert into borg body one (1) power cell and five (5) parts of coil</p><p>2. Insert into borg head two (2) flashes</p><p>3. Place all cyborg parts on exoskeleton of borg</p><p>4. Turn on positronic brain by clicking on a big button on it, while its loading, it will glow yellow</p><p>5. Wait for brain to activate, now, it should beep loudly and now glow with light blue actively moving lines</p><p>6. Place positronic brain inside cyborg</p><i><p><center> Note: Warranty void if exposed to: High Humidity, High Temperatures, Grass, Mud, The Jungle, lonely Robotists.</center></p></i>"

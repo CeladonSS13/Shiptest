@@ -32,6 +32,9 @@
 	default_ammo_type = /obj/item/stock_parts/cell/gun/large
 	allowed_ammo_types = list(
 		/obj/item/stock_parts/cell/gun/large,
+// [CELADON-ADD] - FIX LARGE EMPTY CELL
+		/obj/item/stock_parts/cell/gun/large/empty,
+// [/CELADON-ADD]
 	)
 	canMouseDown = TRUE
 	var/aiming = FALSE
@@ -420,7 +423,7 @@
 	damage_type = BURN
 	flag = "energy"
 	range = 150
-	jitter = 10
+	jitter = 10 SECONDS
 	var/obj/item/gun/energy/beam_rifle/gun
 	var/structure_pierce_amount = 0				//All set to 0 so the gun can manually set them during firing.
 	var/structure_bleed_coeff = 0

@@ -48,7 +48,6 @@
 /turf/open/floor/plating,
 /area/ship/bridge)
 "h" = (
-/obj/structure/crate_shelf/built,
 /obj/effect/decal/cleanable/plasma,
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -56,9 +55,7 @@
 /obj/structure/closet/crate/hydroponics{
 	name = "bulk cannabis crate"
 	},
-/obj/structure/closet/crate/hydroponics{
-	name = "bulk ambrosia crate"
-	},
+/obj/structure/crate_shelf,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "i" = (
@@ -104,6 +101,9 @@
 	pixel_y = -16
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/closet/crate/hydroponics{
+	name = "bulk ambrosia crate"
+	},
 /turf/open/floor/mineral/plastitanium{
 	icon_state = "plastitanium_dam4"
 	},

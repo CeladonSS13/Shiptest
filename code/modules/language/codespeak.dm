@@ -41,7 +41,11 @@
 		return
 
 	to_chat(user, span_boldannounce("You start skimming through [src], and suddenly your mind is filled with codewords and responses."))
-	user.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
+// [CELADON-EDIT] - FIX_LANGUAGE_MIND
+//	user.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND) // CELADON-EDIT - ORIGINAL
+	user.grant_language(/datum/language/codespeak, source = LANGUAGE_MIND)
+// [/CELADON-EDIT]
+
 
 	use_charge(user)
 
@@ -60,7 +64,11 @@
 		M.visible_message(span_danger("[user] beats [M] over the head with [src]!"), span_userdanger("[user] beats you over the head with [src]!"), span_hear("You hear smacking."))
 	else
 		M.visible_message(span_notice("[user] teaches [M] by beating [M.p_them()] over the head with [src]!"), span_boldnotice("As [user] hits you with [src], codewords and responses flow through your mind."), span_hear("You hear smacking."))
-		M.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
+		M.grant_language(/datum/language/codespeak, source = LANGUAGE_MIND)
+// [CELADON-EDIT] - FIX_LANGUAGE_MIND
+//		M.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND) // CELADON-EDIT - ORIGINAL
+		M.grant_language(/datum/language/codespeak, source = LANGUAGE_MIND)
+// [/CELADON-EDIT]
 		use_charge(user)
 
 /obj/item/codespeak_manual/proc/use_charge(mob/user)

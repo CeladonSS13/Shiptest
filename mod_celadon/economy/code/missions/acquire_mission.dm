@@ -48,25 +48,3 @@
 	value = 2600
 	weight = 1
 	objective_type = /mob/living/simple_animal/bot/firebot/rockplanet
-
-/*
-/// MARK: Plasma
-*/
-/datum/mission/outpost/acquire/extraction/New(...)
-	desc = "[pick("Factions","Corporations","Federations")] require large amounts of plasma sheets \
-	for [pick("base","station","ships")]. You are tasked with extracting them in large quantities in a short period of time."
-
-/datum/mission/outpost/acquire/extraction_plasma
-	// type_mission = "extraction_plasma"
-	name = "Plasma required"
-	duration = 70 MINUTES
-	value = 600
-	weight = 1
-	container_type = /obj/structure/closet/crate/extraction/plasma
-	objective_type = /obj/item/stack/sheet/mineral/plasma
-	num_wanted = 250
-
-/obj/structure/closet/crate/extraction/plasma
-	name = "crate for plasma"
-	desc = "A plasma crate."
-	icon_state = "scicrate"

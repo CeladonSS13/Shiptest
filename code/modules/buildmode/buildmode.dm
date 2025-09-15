@@ -187,10 +187,12 @@
 			var/datum/buildmode/B = M.client.click_intercept
 			B.quit()
 			log_admin("[key_name(usr)] has left build mode.")
+			log_celadon_admin("ADMIN: [key_name(usr)] has left build mode.") // [CELADON-ADD] - logging admin actions.
 		else
 			new /datum/buildmode(M.client)
 			message_admins("[key_name_admin(usr)] has entered build mode.")
 			log_admin("[key_name(usr)] has entered build mode.")
+			log_celadon_admin("ADMIN: [key_name(usr)] has entered build mode.") // [CELADON-ADD] - logging admin actions.
 
 #undef BM_SWITCHSTATE_NONE
 #undef BM_SWITCHSTATE_MODE

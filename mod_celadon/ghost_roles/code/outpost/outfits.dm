@@ -25,7 +25,8 @@
 	id = /obj/item/card/id/elysium_cook
 	back = /obj/item/storage/backpack
 	backpack_contents = list(/obj/item/sharpener = 1,
-							/obj/item/plant_analyzer)
+							/obj/item/plant_analyzer,
+							/obj/item/spacecash/bundle/c100 = 3)
 
 /datum/outfit/outpost/cook/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -66,7 +67,8 @@
 							/obj/item/storage/box/ammo/a12g_rubbershot,
 							/obj/item/barcodescanner,
 							/obj/item/barcode = 5,
-							/obj/item/reagent_containers/food/drinks/shaker)
+							/obj/item/reagent_containers/food/drinks/shaker,
+							/obj/item/spacecash/bundle/c100 = 3)
 	shoes = /obj/item/clothing/shoes/laceup
 	box = /obj/item/storage/box/survival
 	id = /obj/item/card/id/elysium_Bartender
@@ -107,13 +109,12 @@
 	uniform = /obj/item/clothing/under/costume/maid/white
 	gloves = /obj/item/clothing/gloves/maid/white
 	back = /obj/item/storage/backpack
-	belt = /obj/item/pda/janitor
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced = 1)
+	belt = /obj/item/pda/bar
+	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced = 1,
+							/obj/item/spacecash/bundle/c100 = 3)
 	shoes = /obj/item/clothing/shoes/laceup
 	box = /obj/item/storage/box/survival
 	id = /obj/item/card/id/elysium_maid
-	suit_store = /obj/item/gun/ballistic/shotgun/doublebarrel
-	l_pocket = /obj/item/pda/bar
 	r_pocket = /obj/item/lighter
 
 // /datum/outfit/outpost/maid/pre_equip(mob/living/carbon/human/H, visualsOnly)
@@ -151,8 +152,9 @@
 	l_pocket = /obj/item/bikehorn
 	backpack_contents = list(
 		/obj/item/reagent_containers/spray/waterflower = 1,
-		/obj/item/reagent_containers/food/snacks/grown/banana = 1,
+		/obj/item/food/grown/banana = 1,
 		/obj/item/instrument/bikehorn = 1,
+		/obj/item/spacecash/bundle/c100 = 3
 		)
 
 	implants = list(/obj/item/implant/sad_trombone)
@@ -213,13 +215,14 @@
 /datum/outfit/outpost/medic
 	name = "Outpost Medical Doctor"
 
+	head = /obj/item/clothing/head/beret/dominia/medical
 	belt = /obj/item/pda/medical
 	ears = /obj/item/radio/headset/headset_med
 	uniform = /obj/item/clothing/under/rank/medical/doctor/blue
 	shoes = /obj/item/clothing/shoes/sneakers/white
 	suit =  /obj/item/clothing/suit/apron/surgical
 	id = /obj/item/card/id/elysium_medic
-	back = /obj/item/storage/backpack/duffelbag/med
+	back = /obj/item/storage/backpack/medic
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic = 1,
 							/obj/item/storage/backpack/medic = 1,
 							/obj/item/storage/backpack/satchel/med = 1,
@@ -236,8 +239,6 @@
 	..()
 	if(visualsOnly)
 		return
-	var/list/possible_boxes = subtypesof(/obj/item/storage/box/ingredients)
-	var/chosen_box = pick(possible_boxes)
-	var/obj/item/storage/box/I = new chosen_box(src)
+	var/obj/item/storage/box/medigels/I = new(src)
 	H.equip_to_slot_or_del(I, ITEM_SLOT_BACKPACK)
 

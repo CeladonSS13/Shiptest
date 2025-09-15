@@ -4,7 +4,7 @@
 /datum/supply_pack/faction/syndicate/mech/odysseus_parts
 	name = "202r construction kit"
 	desc = "Cybersun Biodynamics' premier solution to on-the-go medical treatment. Some assembly required."
-	cost = 5000
+	cost = 10000
 	contains = list(
 		/obj/item/mecha_parts/chassis/odysseus,
 		/obj/item/mecha_parts/part/odysseus_head,
@@ -22,7 +22,7 @@
 /datum/supply_pack/faction/syndicate/mech/gygax_parts
 	name = "501p construction kit"
 	desc = "An agile combat exosuit sold across the galaxy by Cybersun. Or at least the parts to it."
-	cost = 12000
+	cost = 20000
 	contains = list(
 		/obj/item/mecha_parts/chassis/gygax,
 		/obj/item/mecha_parts/part/gygax_head,
@@ -42,19 +42,19 @@
 	name = "Murdysseus Odysseus Conversion Kit"
 	desc = "A custom-made kit for converting the Odysseus into the Syndicate medical exoskeleton."
 	contains = list(/obj/item/mecha_parts/mecha_equipment/conversion_kit/murdysseus)
-	cost = 2500
+	cost = 500
 
 /datum/supply_pack/faction/syndicate/mech/gygaxblack
 	name = "Black Gygax Conversion Kit"
 	desc = "A custom-made kit for converting the Gigax combat exoskeleton into the specialized Syndicate combat exoskeleton."
 	contains = list(/obj/item/mecha_parts/mecha_equipment/conversion_kit/gygaxblack)
-	cost = 2500
+	cost = 500
 
 /datum/supply_pack/faction/syndicate/mech/duranddark
 	name = "Dark Durand Conversion Kit"
 	desc = "A custom-made kit for converting the Durand combat exoskeleton into the specialized Syndicate combat exoskeleton."
 	contains = list(/obj/item/mecha_parts/mecha_equipment/conversion_kit/duranddark)
-	cost = 2500
+	cost = 500
 
 /datum/supply_pack/faction/syndicate/mech/equipment/dark_upgrade
 	name = "515 EX upgrade kit"

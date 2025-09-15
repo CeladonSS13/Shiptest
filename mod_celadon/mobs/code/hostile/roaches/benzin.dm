@@ -9,7 +9,7 @@
 	maxHealth = 25
 	health = 25
 	melee_damage_upper = 3
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat/benzin = 3)
+	butcher_results = list(/obj/item/food/meat/roachmeat/benzin = 3)
 	var/total_volume = 0
 	weather_immunities = list("lava", "ash")
 
