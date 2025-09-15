@@ -23,10 +23,12 @@
 			if(i)
 				playsound(i, 'sound/effects/alert.ogg', 25, FALSE)
 
-	var/speeding_angle = get_angle_raw(0, 0, 0, 0, round((n_x/acceleration_speed) * OVERLOAD_FACTOR * 10), round((n_y/acceleration_speed) * OVERLOAD_FACTOR * 10), 0, 0)
+	var/speeding_angle = ATAN2(n_y, n_x)
 	var/ang = SIMPLIFY_DEGREES(speeding_angle - bow_heading + 270)
 	var/overload_st = 10 * OVERLOAD_FACTOR * overload
 	var/disgust_amount = round(overload * OVERLOAD_FACTOR)
+	var/throw_range = clamp(round(overload_st), 1, OVERLOAD_THROW_RANGE_MAX)
+	var/throw_speed = max(1, round(throw_range / 2))
 
 	for(var/mob/living/M in GLOB.player_list)
 		if(!M.client)
@@ -47,7 +49,7 @@
 		var/is_protected = check_overload_protection(C)
 
 		if(!is_protected)
-			apply_overload_effects(C, overload_st, disgust_amount, ang, src)
+			apply_overload_effects(C, overload_st, disgust_amount, ang, throw_range, throw_speed, src)
 
 // MARK: Функции
 
@@ -59,7 +61,7 @@
 	if(C.buckled && istype(C.buckled, /obj/structure/chair/comfy/shuttle))
 		return TRUE
 
-/proc/apply_overload_effects(mob/living/carbon/C, overload_st, disgust_amount, ang, datum/overmap/ship/controlled/ship)
+/proc/apply_overload_effects(mob/living/carbon/C, overload_st, disgust_amount, ang, throw_range, throw_speed, datum/overmap/ship/controlled/ship)
 	var/chance_overload = OVERLOAD_CHANCE
 	if(!C.resting)
 		chance_overload += OVERLOAD_CHANCE
@@ -71,7 +73,7 @@
 
 	if(disgust_amount > 0 && world.time - ship.last_overload_throw > OVERLOAD_COOLDOWN && !C.anchored && !C.buckled)
 		ship.last_overload_throw = world.time
-		C.throw_at(get_ranged_target_turf(C, angle2dir(ang), range = round(overload_st)), range = round(overload_st/2), speed = round(overload_st/2), thrower = C)
+		C.throw_at(get_ranged_target_turf(C, angle2dir(ang), range = throw_range), range = throw_range, speed = throw_speed, thrower = C)
 
 #undef OVERLOAD_FACTOR
 #undef OVERLOAD_CHANCE
