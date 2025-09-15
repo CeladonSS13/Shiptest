@@ -148,7 +148,7 @@ ADMIN-PANEL
 - ADD `tgui/packages/tgui/interfaces/AdminVerbs.js` -
 
 BLOOD_EXAMINE
-- EDIT `code/datums/elements/decals/blood.dm` - Подстветка красным цветом кровавых предметов
+- EDIT `code/datums/elements/decals/blood.dm` - Подсветка красным цветом кровавых предметов
 
 DONT_ALTCLICK_WALLET - Убирает вытаскивание карты на Альт-клик
 - DEL `code/datums/components/storage/concrete/wallet.dm`
