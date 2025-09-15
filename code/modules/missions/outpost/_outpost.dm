@@ -61,7 +61,7 @@
 		"duration" = src.duration,
 		"remaining" = time_remaining,
 // [CELADON-EDIT] - FIX_CORRECT_TIME_HOURS
-//		"timeStr" = time2text(time_remaining, "mm:ss"), // CELADON-EDIT - ORIGINAL
+//		"timeStr" = time2text(time_remaining, "hh:mm:ss"), // CELADON-EDIT - ORIGINAL
 		"timeStr" = time2text(time_remaining, time_remaining >= 36000? "[FLOOR(time_remaining/36000, 1)]:mm:ss" : "mm:ss"),
 // [/CELADON-EDIT]
 		"progressStr" = get_progress_string(),
