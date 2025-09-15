@@ -6,7 +6,7 @@
 	#define FACTION_SUNS "Student-Union of Naturalistic Sciences"
 #define FACTION_SOLFED "SolFed"
 #define FACTION_SOLCON "SolFed"
-#define FACTION_INTEQ "Inteq Risk Management Group"
+#define FACTION_INTEQ "InteQ"
 #define FACTION_NT "Nanotrasen"
 	#define FACTION_NS_LOGI "N+S Logistics"
 	#define FACTION_VIGILITAS "Vigilitas Interstellar"
@@ -47,8 +47,8 @@
 	#define PREFIX_NS_LOGI list("NSSV",)
 	#define PREFIX_VIGILITAS list("VISV",)
 #define PREFIX_FRONTIER list("FFV",)
-#define PREFIX_INDEPENDENT list("SV", "IMV", "ISV", "MSV",)
-#define PREFIX_ELYSIUM list("EUSM", "EUSQ", "EUSF", "EUSR",)
+#define PREFIX_INDEPENDENT list("SV", "IMV", "ISV", "MSV", "ЕSV")
+#define PREFIX_ELYSIUM list("EUSM", "EUSQ", "EUSF", "EUSR")
 #define PREFIX_PIRATES list("PIRATE", "RSV",)
 #define PREFIX_EVENT list("CLO",)
 

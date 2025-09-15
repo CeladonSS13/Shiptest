@@ -1,6 +1,6 @@
 /client/proc/cmd_mentor_say(msg as text)
-	set category = "Mentor"
-	set name = "Msay"
+	// set category = "Mentor"
+	// set name = "Msay" // [CELADON-DELETE] Mentors not works!!!
 	set hidden = 1
 	if(!check_mentor())
 		return

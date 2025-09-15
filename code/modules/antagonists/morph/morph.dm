@@ -26,12 +26,12 @@
 	melee_damage_upper = 20
 	see_in_dark = 8
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_INVISIBLE
-	vision_range = 1 // Only attack when target is close
+	vision_range = 2 // Only attack when target is close
 	wander = FALSE
 	attack_verb_continuous = "glomps"
 	attack_verb_simple = "glomp"
 	attack_sound = 'sound/effects/blobattack.ogg'
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 2)
+	butcher_results = list(/obj/item/food/meat/slab = 2)
 
 	var/morphed = FALSE
 	var/melee_damage_disguised = 0

@@ -1,11 +1,5 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ac" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 9
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 5
-	},
 /obj/structure/fluff/beach_umbrella/engine,
 /turf/open/floor/carpet/cyan,
 /area/centcom)
@@ -21,11 +15,11 @@
 /area/centcom/control)
 "ae" = (
 /obj/structure/closet/secure_closet/freezer/meat/open,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
 /turf/open/floor/plasteel,
 /area/centcom/holding)
 "af" = (
@@ -234,7 +228,7 @@
 /area/centcom)
 "aG" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/sashimi,
+/obj/item/food/sashimi,
 /turf/open/floor/wood,
 /area/centcom/holding)
 "aH" = (
@@ -504,7 +498,7 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/ausbushes/fernybush,
-/turf/open/floor/plating/asteroid,
+/turf/open/floor/plating/asteroid/smoothed,
 /area/tdome/tdomeobserve)
 "bv" = (
 /obj/effect/turf_decal/corner/transparent/neutral/full,
@@ -585,10 +579,11 @@
 /area/centcom/control)
 "bG" = (
 /obj/effect/landmark/error,
-/turf/open/floor/plating/ashplanet/wateryrock{
+/turf/open/floor/plating/asteroid/waterplanet{
 	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
 	planetary_atmos = 0
-	})
+	},
+/area/errorroom)
 "bH" = (
 /obj/structure/closet/crate/critter{
 	name = "DANGER: DO NOT OPEN"
@@ -1349,7 +1344,7 @@
 /area/outpost/cargo/faction)
 "dR" = (
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/food/snacks/mint,
+/obj/item/food/mint,
 /obj/item/reagent_containers/condiment/enzyme{
 	pixel_y = 5
 	},
@@ -1626,7 +1621,7 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/ausbushes/palebush,
-/turf/open/floor/plating/asteroid,
+/turf/open/floor/plating/asteroid/smoothed,
 /area/tdome/tdomeadmin)
 "eO" = (
 /obj/effect/turf_decal/corner/transparent/neutral/three_quarters{
@@ -1720,36 +1715,27 @@
 "fa" = (
 /turf/open/floor/plasteel/dark/wasteplanet,
 /area/outpost/exterior)
-"fb" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 5
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 6
-	},
-/turf/open/floor/carpet/royalblack,
-/area/centcom)
 "fc" = (
 /turf/closed/indestructible/riveted/command,
 /area/tdome/tdomeadmin)
 "fd" = (
 /obj/structure/closet/secure_closet/freezer/fridge/open,
-/obj/item/reagent_containers/food/snacks/grown/potato,
-/obj/item/reagent_containers/food/snacks/grown/potato,
-/obj/item/reagent_containers/food/snacks/grown/whitebeet,
-/obj/item/reagent_containers/food/snacks/grown/whitebeet,
-/obj/item/reagent_containers/food/snacks/grown/tomato,
-/obj/item/reagent_containers/food/snacks/grown/tomato,
-/obj/item/reagent_containers/food/snacks/grown/rice,
-/obj/item/reagent_containers/food/snacks/grown/rice,
-/obj/item/reagent_containers/food/snacks/grown/icepepper,
-/obj/item/reagent_containers/food/snacks/grown/icepepper,
-/obj/item/reagent_containers/food/snacks/grown/citrus/lemon,
-/obj/item/reagent_containers/food/snacks/grown/citrus/lime,
-/obj/item/reagent_containers/food/snacks/grown/citrus/orange,
-/obj/item/reagent_containers/food/snacks/grown/cherries,
-/obj/item/reagent_containers/food/snacks/grown/apple,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus,
+/obj/item/food/grown/potato,
+/obj/item/food/grown/potato,
+/obj/item/food/grown/whitebeet,
+/obj/item/food/grown/whitebeet,
+/obj/item/food/grown/tomato,
+/obj/item/food/grown/tomato,
+/obj/item/food/grown/rice,
+/obj/item/food/grown/rice,
+/obj/item/food/grown/icepepper,
+/obj/item/food/grown/icepepper,
+/obj/item/food/grown/citrus/lemon,
+/obj/item/food/grown/citrus/lime,
+/obj/item/food/grown/citrus/orange,
+/obj/item/food/grown/cherries,
+/obj/item/food/grown/apple,
+/obj/item/food/grown/ambrosia/deus,
 /obj/effect/turf_decal/corner/transparent/neutral/full,
 /turf/open/floor/plasteel/dark,
 /area/tdome/tdomeobserve)
@@ -1917,7 +1903,7 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "fC" = (
-/obj/item/reagent_containers/food/snacks/meat/slab/corgi,
+/obj/item/food/meat/slab/corgi,
 /turf/open/floor/grass,
 /area/centcom/evac)
 "fD" = (
@@ -2040,7 +2026,7 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/ausbushes/fernybush,
-/turf/open/floor/plating/asteroid,
+/turf/open/floor/plating/asteroid/smoothed,
 /area/tdome/tdomeadmin)
 "fW" = (
 /obj/structure/rack,
@@ -2122,14 +2108,15 @@
 /area/abductor_ship)
 "gg" = (
 /obj/structure/signpost/salvation{
+	invisibility = 100;
 	icon = 'icons/obj/structures.dmi';
-	icon_state = "ladder10";
-	invisibility = 100
+	icon_state = "ladder10"
 	},
-/turf/open/floor/plating/ashplanet/wateryrock{
+/turf/open/floor/plating/asteroid/waterplanet{
 	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
 	planetary_atmos = 0
-	})
+	},
+/area/errorroom)
 "gh" = (
 /turf/closed/indestructible/abductor,
 /area/abductor_ship)
@@ -2194,12 +2181,6 @@
 /turf/open/floor/plasteel/white,
 /area/centcom/holding)
 "gp" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 6
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 10
-	},
 /turf/open/floor/carpet/blue{
 	baseturfs = /turf/open/floor/plating/asteroid/whitesands
 	},
@@ -2218,12 +2199,6 @@
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "gt" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 10
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 9
-	},
 /obj/structure/fluff/beach_umbrella,
 /turf/open/floor/carpet/royalblack,
 /area/centcom)
@@ -2513,7 +2488,7 @@
 /turf/open/floor/carpet,
 /area/centcom/evac)
 "hg" = (
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/lizard,
+/obj/item/food/meat/slab/human/mutant/lizard,
 /turf/open/floor/grass,
 /area/centcom/evac)
 "hh" = (
@@ -2674,6 +2649,13 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"hC" = (
+/obj/structure/flora/tree/dead_pine,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "hD" = (
 /obj/effect/turf_decal/corner/transparent/neutral/full,
 /obj/structure/railing/modern/corner{
@@ -2859,27 +2841,27 @@
 /area/centcom/control)
 "ih" = (
 /obj/structure/closet/secure_closet/freezer/meat/open,
-/obj/item/reagent_containers/food/snacks/meat/rawbacon,
-/obj/item/reagent_containers/food/snacks/meat/rawbacon,
-/obj/item/reagent_containers/food/snacks/meat/rawbacon,
-/obj/item/reagent_containers/food/snacks/meat/rawbacon,
-/obj/item/reagent_containers/food/snacks/meat/slab/killertomato,
-/obj/item/reagent_containers/food/snacks/meat/slab/killertomato,
-/obj/item/reagent_containers/food/snacks/meat/slab/killertomato,
-/obj/item/reagent_containers/food/snacks/meat/slab/killertomato,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/lizard,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/lizard,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/lizard,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/lizard,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/meat/rawcutlet,
-/obj/item/reagent_containers/food/snacks/meat/rawcutlet,
-/obj/item/reagent_containers/food/snacks/meat/rawcutlet,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp,
+/obj/item/food/meat/rawbacon,
+/obj/item/food/meat/rawbacon,
+/obj/item/food/meat/rawbacon,
+/obj/item/food/meat/rawbacon,
+/obj/item/food/meat/slab/killertomato,
+/obj/item/food/meat/slab/killertomato,
+/obj/item/food/meat/slab/killertomato,
+/obj/item/food/meat/slab/killertomato,
+/obj/item/food/meat/slab/human/mutant/lizard,
+/obj/item/food/meat/slab/human/mutant/lizard,
+/obj/item/food/meat/slab/human/mutant/lizard,
+/obj/item/food/meat/slab/human/mutant/lizard,
+/obj/item/food/sausage,
+/obj/item/food/sausage,
+/obj/item/food/meat/rawcutlet,
+/obj/item/food/meat/rawcutlet,
+/obj/item/food/meat/rawcutlet,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
 /obj/effect/turf_decal/corner/transparent/neutral/full,
 /turf/open/floor/plasteel/dark,
 /area/tdome/tdomeobserve)
@@ -3159,12 +3141,6 @@
 /turf/open/floor/glass/red,
 /area/outpost/exterior)
 "iU" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 10
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 9
-	},
 /obj/structure/fluff/beach_umbrella/cap,
 /turf/open/floor/carpet/stellar,
 /area/centcom)
@@ -3312,12 +3288,6 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "jt" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 9
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 5
-	},
 /obj/structure/fluff/beach_umbrella/science,
 /turf/open/floor/carpet/blue{
 	baseturfs = /turf/open/floor/plating/asteroid/whitesands
@@ -3459,12 +3429,6 @@
 /turf/open/floor/plasteel/dark,
 /area/tdome/tdomeadmin)
 "jM" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 10
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 9
-	},
 /obj/structure/fluff/beach_umbrella,
 /turf/open/floor/carpet/royalblue,
 /area/centcom)
@@ -4896,6 +4860,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
+"nQ" = (
+/obj/structure/flora/rock/asteroid,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "nR" = (
 /obj/structure/closet/abductor,
 /turf/open/floor/plating/abductor,
@@ -5772,12 +5743,6 @@
 /turf/open/floor/pod/light,
 /area/outpost/exterior)
 "qy" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 10
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 9
-	},
 /obj/structure/fluff/beach_umbrella/cap,
 /turf/open/floor/carpet/executive,
 /area/centcom)
@@ -6029,7 +5994,7 @@
 /turf/open/floor/plating,
 /area/centcom)
 "rp" = (
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/slime,
+/obj/item/food/meat/slab/human/mutant/slime,
 /turf/open/floor/grass,
 /area/centcom/evac)
 "rq" = (
@@ -6198,15 +6163,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/tdome/tdomeobserve)
-"rL" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 6
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 10
-	},
-/turf/open/floor/carpet/cyan,
-/area/centcom)
 "rM" = (
 /obj/effect/turf_decal/corner/transparent/vired/three_quarters,
 /turf/open/floor/plasteel/dark,
@@ -6671,10 +6627,10 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/ausbushes/palebush,
-/turf/open/floor/plating/asteroid,
+/turf/open/floor/plating/asteroid/smoothed,
 /area/tdome/tdomeobserve)
 "tj" = (
-/mob/living/simple_animal/cow,
+/mob/living/basic/cow,
 /turf/open/floor/grass,
 /area/centcom/holding)
 "tk" = (
@@ -7152,7 +7108,8 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "uo" = (
-/turf/closed/mineral/ash_rock)
+/turf/closed/mineral/random/waterplanet,
+/area/errorroom)
 "up" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/gun/energy/taser,
@@ -7749,12 +7706,6 @@
 /turf/open/floor/plasteel,
 /area/centcom/evac)
 "vU" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 6
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 10
-	},
 /turf/open/floor/carpet/red,
 /area/centcom)
 "vV" = (
@@ -7879,12 +7830,6 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "wq" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 6
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 10
-	},
 /obj/structure/fluff/beach_umbrella/syndi,
 /turf/open/floor/carpet/donk,
 /area/centcom)
@@ -8005,7 +7950,7 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/fernybush,
-/turf/open/floor/plating/asteroid,
+/turf/open/floor/plating/asteroid/smoothed,
 /area/tdome/tdomeobserve)
 "wL" = (
 /turf/open/floor/plasteel,
@@ -8258,7 +8203,7 @@
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/ausbushes/palebush,
 /obj/machinery/light/directional/west,
-/turf/open/floor/plating/asteroid,
+/turf/open/floor/plating/asteroid/smoothed,
 /area/tdome/tdomeadmin)
 "xy" = (
 /obj/item/storage/firstaid/regular,
@@ -8458,7 +8403,7 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "yd" = (
-/obj/item/reagent_containers/food/snacks/meat/slab/xeno,
+/obj/item/food/meat/slab/xeno,
 /turf/open/floor/grass,
 /area/centcom/evac)
 "ye" = (
@@ -8876,6 +8821,14 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/centcom/control)
+"zs" = (
+/obj/structure/flora/rock/asteroid,
+/obj/item/rupee,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "zt" = (
 /obj/structure/table/wood,
 /obj/structure/plaque/static_plaque/golden{
@@ -9116,12 +9069,6 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "Ac" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 6
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 10
-	},
 /obj/structure/fluff/beach_umbrella,
 /turf/open/floor/carpet/orange,
 /area/centcom)
@@ -9161,12 +9108,6 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "Ai" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 9
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 5
-	},
 /obj/structure/fluff/beach_umbrella/security,
 /turf/open/floor/carpet/red,
 /area/centcom)
@@ -9327,7 +9268,8 @@
 /area/centcom)
 "AD" = (
 /obj/structure/speaking_tile,
-/turf/closed/mineral/ash_rock)
+/turf/closed/mineral/random/waterplanet,
+/area/errorroom)
 "AE" = (
 /obj/machinery/computer/crew{
 	dir = 4
@@ -9522,7 +9464,7 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/ausbushes/palebush,
-/turf/open/floor/plating/asteroid,
+/turf/open/floor/plating/asteroid/smoothed,
 /area/tdome/tdomeadmin)
 "Bk" = (
 /obj/structure/sink{
@@ -9555,8 +9497,8 @@
 /obj/item/reagent_containers/glass/beaker/large/fuel,
 /obj/structure/closet/wall/white/directional/east,
 /obj/structure/closet/crate/medical,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/death,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/death,
+/obj/item/food/grown/cannabis/death,
+/obj/item/food/grown/cannabis/death,
 /obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/plasteel/darkgreenfull/darkgreen{
 	dir = 6
@@ -9586,7 +9528,7 @@
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/ausbushes/fernybush,
 /obj/machinery/light/directional/east,
-/turf/open/floor/plating/asteroid,
+/turf/open/floor/plating/asteroid/smoothed,
 /area/tdome/tdomeadmin)
 "Bt" = (
 /obj/machinery/light/directional/west,
@@ -9979,7 +9921,6 @@
 /area/centcom/ferry)
 "CE" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/gun/ballistic/automatic/gyropistol,
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 4
 	},
@@ -12078,15 +12019,6 @@
 /obj/structure/frame,
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/exterior)
-"IE" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 9
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 5
-	},
-/turf/open/floor/carpet/donk,
-/area/centcom)
 "IF" = (
 /turf/open/floor/plasteel,
 /area/centcom/ferry)
@@ -13025,7 +12957,7 @@
 /area/outpost/exterior)
 "Lg" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/chawanmushi,
+/obj/item/food/chawanmushi,
 /turf/open/floor/wood,
 /area/centcom/holding)
 "Lh" = (
@@ -13727,7 +13659,8 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "MW" = (
-/turf/closed/indestructible/riveted)
+/turf/closed/indestructible/riveted,
+/area/errorroom)
 "MX" = (
 /obj/effect/turf_decal/corner/transparent/neutral{
 	dir = 8
@@ -14091,23 +14024,23 @@
 /area/centcom/supplypod)
 "NX" = (
 /obj/structure/closet/secure_closet/freezer/meat/open,
-/obj/item/reagent_containers/food/snacks/meat/slab/bear,
-/obj/item/reagent_containers/food/snacks/meat/slab/bear,
-/obj/item/reagent_containers/food/snacks/meat/slab/bear,
-/obj/item/reagent_containers/food/snacks/meat/slab/bear,
-/obj/item/reagent_containers/food/snacks/meat/slab/goliath,
-/obj/item/reagent_containers/food/snacks/meat/slab/goliath,
-/obj/item/reagent_containers/food/snacks/meat/slab/goliath,
-/obj/item/reagent_containers/food/snacks/meat/slab/goliath,
-/obj/item/reagent_containers/food/snacks/meat/slab/xeno,
-/obj/item/reagent_containers/food/snacks/meat/slab/xeno,
-/obj/item/reagent_containers/food/snacks/meat/slab/xeno,
-/obj/item/reagent_containers/food/snacks/meat/slab/xeno,
+/obj/item/food/meat/slab/bear,
+/obj/item/food/meat/slab/bear,
+/obj/item/food/meat/slab/bear,
+/obj/item/food/meat/slab/bear,
+/obj/item/food/meat/slab/goliath,
+/obj/item/food/meat/slab/goliath,
+/obj/item/food/meat/slab/goliath,
+/obj/item/food/meat/slab/goliath,
+/obj/item/food/meat/slab/xeno,
+/obj/item/food/meat/slab/xeno,
+/obj/item/food/meat/slab/xeno,
+/obj/item/food/meat/slab/xeno,
 /obj/item/food/spaghetti,
 /obj/item/food/spaghetti,
-/obj/item/reagent_containers/food/snacks/meat/rawcutlet,
-/obj/item/reagent_containers/food/snacks/meat/rawcutlet,
-/obj/item/reagent_containers/food/snacks/meat/rawcutlet,
+/obj/item/food/meat/rawcutlet,
+/obj/item/food/meat/rawcutlet,
+/obj/item/food/meat/rawcutlet,
 /obj/effect/turf_decal/corner/transparent/neutral/full,
 /turf/open/floor/plasteel/dark,
 /area/tdome/tdomeobserve)
@@ -14182,6 +14115,13 @@
 /obj/effect/turf_decal/industrial/stand_clear/red,
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/cargo/faction)
+"Om" = (
+/obj/effect/turf_decal/corner/transparent/brown{
+	dir = 10
+	},
+/obj/machinery/vending/clothing/admin,
+/turf/open/floor/plasteel/dark,
+/area/centcom/supplypod)
 "On" = (
 /obj/effect/turf_decal/trimline/opaque/brown,
 /obj/structure/girder,
@@ -15028,12 +14968,6 @@
 /turf/open/floor/wood,
 /area/centcom/holding)
 "QH" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 9
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 5
-	},
 /obj/structure/fluff/beach_umbrella/science,
 /turf/open/floor/carpet/purple,
 /area/centcom)
@@ -15065,15 +14999,6 @@
 /obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
-"QO" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 6
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 10
-	},
-/turf/open/floor/carpet/purple,
-/area/centcom)
 "QP" = (
 /obj/structure/bookcase/random/nonfiction,
 /obj/structure/window{
@@ -15142,6 +15067,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
+"QY" = (
+/obj/item/rupee,
+/turf/open/water/stormy_planet_lit{
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "QZ" = (
 /obj/machinery/button/door/indestructible{
 	id = "thunderdomegen";
@@ -15241,15 +15172,15 @@
 /turf/open/floor/plasteel/grimy,
 /area/outpost/exterior)
 "Rl" = (
-/obj/item/reagent_containers/food/snacks/canned/beans{
+/obj/item/food/canned/beans{
 	pixel_x = -5;
 	pixel_y = 3
 	},
-/obj/item/reagent_containers/food/snacks/canned/beans{
+/obj/item/food/canned/beans{
 	pixel_x = 2;
 	pixel_y = 3
 	},
-/obj/item/reagent_containers/food/snacks/canned/beans{
+/obj/item/food/canned/beans{
 	pixel_x = -2
 	},
 /obj/item/reagent_containers/food/drinks/waterbottle/large{
@@ -15517,11 +15448,10 @@
 /turf/open/floor/wood,
 /area/centcom/control)
 "RW" = (
-/obj/item/rupee,
-/turf/open/floor/plating/ashplanet/wateryrock{
-	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+/turf/open/water/stormy_planet_lit{
 	planetary_atmos = 0
-	})
+	},
+/area/errorroom)
 "RY" = (
 /turf/closed/indestructible/abductor{
 	icon_state = "alien18"
@@ -15966,7 +15896,7 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/ausbushes/palebush,
-/turf/open/floor/plating/asteroid,
+/turf/open/floor/plating/asteroid/smoothed,
 /area/tdome/tdomeobserve)
 "Tm" = (
 /obj/machinery/computer/secure_data,
@@ -16164,25 +16094,10 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/tdome/tdomeobserve)
-"TF" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 5
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 6
-	},
-/turf/open/floor/carpet/stellar,
-/area/centcom)
 "TG" = (
 /turf/open/floor/grass,
 /area/centcom/control)
 "TH" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 5
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 6
-	},
 /obj/item/clothing/shoes/sandal{
 	pixel_x = 19
 	},
@@ -16718,6 +16633,10 @@
 	icon_state = "panelscorched"
 	},
 /area/centcom)
+"Vm" = (
+/obj/machinery/vending/clothing/admin,
+/turf/open/floor/plasteel/dark_2,
+/area/centcom/ferry)
 "Vn" = (
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/door/airlock/centcom{
@@ -16834,15 +16753,6 @@
 /obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/centcom/control)
-"VG" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 5
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 6
-	},
-/turf/open/floor/carpet/executive,
-/area/centcom)
 "VH" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/gun/energy/laser/iot/lethal,
@@ -16968,7 +16878,7 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/fernybush,
-/turf/open/floor/plating/asteroid,
+/turf/open/floor/plating/asteroid/smoothed,
 /area/tdome/tdomeadmin)
 "Wd" = (
 /obj/structure/table/wood,
@@ -17055,25 +16965,25 @@
 /area/centcom)
 "Wo" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
-/obj/item/reagent_containers/food/snacks/grown/banana,
-/obj/item/reagent_containers/food/snacks/grown/banana,
-/obj/item/reagent_containers/food/snacks/grown/wheat,
-/obj/item/reagent_containers/food/snacks/grown/wheat,
-/obj/item/reagent_containers/food/snacks/grown/vanillapod,
-/obj/item/reagent_containers/food/snacks/grown/vanillapod,
-/obj/item/reagent_containers/food/snacks/grown/sugarcane,
-/obj/item/reagent_containers/food/snacks/grown/sugarcane,
-/obj/item/reagent_containers/food/snacks/grown/oat,
-/obj/item/reagent_containers/food/snacks/grown/oat,
-/obj/item/reagent_containers/food/snacks/grown/grapes,
-/obj/item/reagent_containers/food/snacks/grown/grapes,
-/obj/item/reagent_containers/food/snacks/grown/corn,
-/obj/item/reagent_containers/food/snacks/grown/corn,
-/obj/item/reagent_containers/food/snacks/grown/chili,
-/obj/item/reagent_containers/food/snacks/grown/chili,
-/obj/item/reagent_containers/food/snacks/grown/carrot,
-/obj/item/reagent_containers/food/snacks/grown/apple,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/vulgaris,
+/obj/item/food/grown/banana,
+/obj/item/food/grown/banana,
+/obj/item/food/grown/wheat,
+/obj/item/food/grown/wheat,
+/obj/item/food/grown/vanillapod,
+/obj/item/food/grown/vanillapod,
+/obj/item/food/grown/sugarcane,
+/obj/item/food/grown/sugarcane,
+/obj/item/food/grown/oat,
+/obj/item/food/grown/oat,
+/obj/item/food/grown/grapes,
+/obj/item/food/grown/grapes,
+/obj/item/food/grown/corn,
+/obj/item/food/grown/corn,
+/obj/item/food/grown/chili,
+/obj/item/food/grown/chili,
+/obj/item/food/grown/carrot,
+/obj/item/food/grown/apple,
+/obj/item/food/grown/ambrosia/vulgaris,
 /obj/effect/turf_decal/corner/transparent/neutral/full,
 /turf/open/floor/plasteel/dark,
 /area/tdome/tdomeobserve)
@@ -17737,10 +17647,11 @@
 /turf/open/floor/plasteel/dark/wasteplanet,
 /area/outpost/exterior)
 "Yl" = (
-/turf/open/floor/plating/ashplanet/wateryrock{
+/turf/open/floor/plating/asteroid/waterplanet{
 	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
 	planetary_atmos = 0
-	})
+	},
+/area/errorroom)
 "Ym" = (
 /obj/effect/turf_decal/corner/opaque/red/three_quarters{
 	dir = 2
@@ -18240,15 +18151,6 @@
 /obj/item/bedsheet/wiz,
 /turf/open/floor/carpet,
 /area/centcom/evac)
-"Zs" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 9
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 5
-	},
-/turf/open/floor/carpet/orange,
-/area/centcom)
 "Zt" = (
 /obj/effect/turf_decal/trimline/opaque/vired/corner{
 	dir = 4
@@ -18422,6 +18324,13 @@
 /obj/effect/turf_decal/corner/transparent/neutral/full,
 /turf/open/floor/plasteel/dark,
 /area/tdome/tdomeobserve)
+"ZV" = (
+/obj/item/rupee,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "ZW" = (
 /obj/machinery/power/smes/shuttle/precharged{
 	dir = 1
@@ -19217,13 +19126,13 @@ gd
 gd
 MW
 uo
-RW
-RW
-RW
+zs
+ZV
 Yl
+ZV
 RW
-RW
-RW
+QY
+zs
 uo
 MW
 gd
@@ -19410,11 +19319,11 @@ gd
 gd
 MW
 uo
-RW
-RW
-RW
 Yl
-RW
+hC
+Yl
+Yl
+Yl
 RW
 RW
 uo
@@ -19603,13 +19512,13 @@ gd
 gd
 MW
 uo
-RW
-RW
-RW
+ZV
 Yl
+ZV
+Yl
+hC
 RW
-RW
-RW
+QY
 uo
 MW
 gd
@@ -19796,13 +19705,13 @@ gd
 gd
 MW
 uo
+hC
 Yl
 Yl
 Yl
+nQ
 Yl
-Yl
-Yl
-Yl
+RW
 uo
 MW
 gd
@@ -19989,10 +19898,10 @@ gd
 gd
 MW
 uo
-RW
-RW
-RW
+ZV
 Yl
+Yl
+ZV
 Yl
 Yl
 Yl
@@ -20182,9 +20091,9 @@ gd
 gd
 MW
 AD
-RW
-RW
-RW
+Yl
+Yl
+Yl
 Yl
 Yl
 bG
@@ -20375,10 +20284,10 @@ gd
 gd
 MW
 uo
-RW
-RW
-RW
 Yl
+ZV
+Yl
+ZV
 Yl
 Yl
 Yl
@@ -20568,12 +20477,12 @@ gd
 gd
 MW
 uo
+hC
 Yl
 Yl
+ZV
 Yl
-Yl
-Yl
-Yl
+ZV
 Yl
 uo
 MW
@@ -20761,13 +20670,13 @@ gd
 gd
 MW
 uo
-RW
-RW
-RW
+nQ
 Yl
-RW
-RW
-RW
+hC
+Yl
+ZV
+hC
+ZV
 uo
 MW
 gd
@@ -20954,13 +20863,13 @@ gd
 gd
 MW
 uo
-RW
-RW
-RW
 Yl
-RW
-RW
-RW
+ZV
+Yl
+Yl
+Yl
+Yl
+Yl
 uo
 MW
 gd
@@ -21147,13 +21056,13 @@ gd
 gd
 MW
 uo
-RW
-RW
-RW
+ZV
+hC
 Yl
-RW
-RW
-RW
+Yl
+zs
+ZV
+hC
 uo
 MW
 gd
@@ -46231,7 +46140,7 @@ Je
 Nz
 jF
 FW
-Nu
+Vm
 tG
 qG
 gs
@@ -48442,7 +48351,7 @@ ZM
 ZM
 ZM
 QH
-QO
+PN
 TQ
 Kr
 Kr
@@ -48816,19 +48725,19 @@ Ey
 Kr
 TQ
 ac
-rL
+WV
 ZM
 ZM
-TF
+xE
 mV
-VG
+ij
 ZM
 TH
 Nv
-fb
+kE
 ZM
 ZM
-Zs
+ci
 Ac
 TQ
 Kr
@@ -49214,7 +49123,7 @@ hd
 hd
 hd
 ZM
-IE
+sA
 wq
 TQ
 Kr
@@ -50458,7 +50367,7 @@ CS
 Cd
 Cd
 Cd
-hx
+Om
 Od
 MG
 Qb

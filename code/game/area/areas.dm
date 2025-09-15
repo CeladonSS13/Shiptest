@@ -7,7 +7,7 @@
 	name = "Space"
 	// [CELADON-EDIT] - CELADON_AREAS - Иначе никак не подсунуть свои зоны
 	// icon = 'icons/turf/areas.dmi' // CELADON-EDIT - ORIGINAL
-	icon = 'mod_celadon/_storge_icons/icons/assets/areas.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/assets/areas.dmi'
 	// [CELADON-EDIT]
 	icon_state = "unknown"
 	layer = AREA_LAYER
@@ -426,6 +426,9 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 	//Lockdown airlocks
 	for(var/obj/machinery/door/DOOR in src)
 		close_and_lock_door(DOOR)
+
+	for(var/obj/structure/hazard/hazards in src)
+		hazards.alarm()
 
 	for (var/i in GLOB.silicon_mobs)
 		var/mob/living/silicon/SILICON = i

@@ -7,10 +7,10 @@
 > 8x58
 > 410x76mm
 
-MARK: 5.56mm
+MARK: 5.56x45
 */
 
-//Коробки 5.56 , плюс стандартная коробка так как ее нету в основном коде
+//Коробки 5.56x45mm, плюс стандартная коробка так как ее нету в основном коде
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/a556_45
 	ammo_type = /obj/item/ammo_casing/a556_45
@@ -31,28 +31,26 @@ MARK: 5.56mm
 /obj/item/storage/box/ammo/a556_box
 	name = "ammo box (5.56x45mm)"
 	desc = "A box of standard 5.56x45mm ammo."
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi'
-	icon_state = "a556box_856"
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
+	icon_state = "a556_45box_big"
 /obj/item/storage/box/ammo/a556_box/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a556_45 = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/storage/box/ammo/a556_box/a856
-	name = "A856 ammo box (5.56x45mm)"
-	desc = "A box of standard 5.56x45mm ammo."
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi'
-	icon_state = "a556box"
+	name = "ammo box (5.56x45mm EP)"
+	desc = "A box of 5.56x45mm enhanced-performance ammo."
+	icon_state = "a556_45box_big-ep"
 /obj/item/storage/box/ammo/a556_box/a856/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a556_45/a856 = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/storage/box/ammo/a556_box/m903
-	name = "M903 ammo box (5.56x45mm)"
-	desc = "A box of armour-piercing 5.56x45mm ammo."
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi'
-	icon_state = "a556_ap"
+	name = "ammo box (5.56x45mm AP)"
+	desc = "A box of 5.56x45mm armour-piercing ammo."
+	icon_state = "a556_45box_big-ap"
 /obj/item/storage/box/ammo/a556_box/m903/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a556_45/m903 = 4)
@@ -61,7 +59,7 @@ MARK: 5.56mm
 /obj/item/storage/box/ammo/a556_box/surplus
 	name = "surplus ammo box (5.56x45mm)"
 	desc = "A box of standard 5.56x45mm ammo."
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo.dmi'
 	icon_state = "a556box_surplus"
 /obj/item/storage/box/ammo/a556_box/surplus/PopulateContents()
 	var/static/items_inside = list(
@@ -98,7 +96,7 @@ MARK: 5.56mm
 /obj/item/storage/box/ammo/a308
 	name = "Коробка патронов .308"
 	desc = "Коробка стандартных патронов .308. Заводского качества, ещё в смазке."
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo.dmi'
 	icon_state = "308_fmj"
 
 /obj/item/storage/box/ammo/a308/PopulateContents()
@@ -164,7 +162,7 @@ MARK: 5.56mm
 /obj/item/storage/box/ammo/a858_ammo_box
 	name = "Ammo box (8x58mm Caseless)"
 	desc = "A box of standard 8x58mm ammo."
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo.dmi'
 	icon_state = "a858box"
 
 /obj/item/storage/box/ammo/a858_ammo_box/PopulateContents()
@@ -173,28 +171,28 @@ MARK: 5.56mm
 	generate_items_inside(items_inside,src)
 
 //
-// MARK: 410x76mm
+// MARK: 410x76
 //
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/a410
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/saiga_bullet.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/saiga_bullet.dmi'
 	ammo_type = /obj/item/ammo_casing/a410
 	max_ammo = 15
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/a410/slug
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/saiga_bullet.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/saiga_bullet.dmi'
 	ammo_type = /obj/item/ammo_casing/a410/a410_slug
 	max_ammo = 15
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/a410/flechette
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/saiga_bullet.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/saiga_bullet.dmi'
 	ammo_type = /obj/item/ammo_casing/a410/a410_flechette
 	max_ammo = 15
 
 /obj/item/storage/box/ammo/a410_ammo_box
 	name = "Ammo box (410x76mm buckshot)"
 	desc = "A box of buckshot 410x76mm ammo."
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/saiga_ammo.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/saiga_ammo.dmi'
 	icon_state = "410box_buckshot"
 /obj/item/storage/box/ammo/a410_ammo_box/PopulateContents()
 	var/static/items_inside = list(
@@ -204,7 +202,7 @@ MARK: 5.56mm
 /obj/item/storage/box/ammo/a410_ammo_box/slug
 	name = "Ammo box (410x76mm slug)"
 	desc = "A box of slug 410x76mm ammo."
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/saiga_ammo.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/saiga_ammo.dmi'
 	icon_state = "410box_slug"
 /obj/item/storage/box/ammo/a410_ammo_box/slug/PopulateContents()
 	var/static/items_inside = list(
@@ -214,9 +212,28 @@ MARK: 5.56mm
 /obj/item/storage/box/ammo/a410_ammo_box/flechette
 	name = "Ammo box (410x76mm flechette)"
 	desc = "A box of flechette 410x76mm ammo."
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/saiga_ammo.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/saiga_ammo.dmi'
 	icon_state = "410box_flechette"
 /obj/item/storage/box/ammo/a410_ammo_box/flechette/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a410/flechette = 4)
 	generate_items_inside(items_inside,src)
+//
+//     7.62x54mmR
+//
+/obj/item/ammo_box/magazine/ammo_stack/prefilled/x762_54
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/svd_bullet.dmi'
+	ammo_type = /obj/item/ammo_casing/x762_54
+	max_ammo = 10
+
+/obj/item/storage/box/ammo/x762_54
+	name = "box of 7.62x54mmR ammo"
+	desc = "A box of standard 7.62x54mmR ammo."
+	icon_state = "x762_54box"
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
+
+/obj/item/storage/box/ammo/x762_54/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/x762_54 = 4)
+	generate_items_inside(items_inside,src)
+

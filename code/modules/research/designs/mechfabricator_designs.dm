@@ -430,6 +430,7 @@
 	construction_time = 600
 	category = list("Durand")
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 //H.O.N.K
 /datum/design/honk_chassis
 	name = "Exosuit Chassis (\"H.O.N.K\")"
@@ -493,7 +494,7 @@
 	materials = list(/datum/material/iron=20000,/datum/material/hellstone=5000)
 	construction_time = 200
 	category = list("H.O.N.K")
-
+// [CELADON-ADD]
 
 //Phazon
 /datum/design/phazon_chassis
@@ -652,33 +653,6 @@
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
-/datum/design/mech_mousetrap_mortar
-	name = "H.O.N.K Mousetrap Mortar"
-	id = "mech_mousetrap_mortar"
-	build_type = MECHFAB
-	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/mousetrap_mortar
-	materials = list(/datum/material/iron=20000,/datum/material/hellstone=5000)
-	construction_time = 300
-	category = list("Exosuit Equipment")
-
-/datum/design/mech_banana_mortar
-	name = "H.O.N.K Banana Mortar"
-	id = "mech_banana_mortar"
-	build_type = MECHFAB
-	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/banana_mortar
-	materials = list(/datum/material/iron=20000,/datum/material/hellstone=5000)
-	construction_time = 300
-	category = list("Exosuit Equipment")
-
-/datum/design/mech_punching_glove
-	name = "Oingo Boingo Punch-face"
-	id = "mech_punching_face"
-	build_type = MECHFAB
-	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/punching_glove
-	materials = list(/datum/material/iron=20000,/datum/material/hellstone=7500)
-	construction_time = 400
-	category = list("Exosuit Equipment")
-
 /////////////////////////////////////////
 //////////////Borg Upgrades//////////////
 /////////////////////////////////////////
@@ -755,6 +729,7 @@
 	construction_time = 120
 	category = list("Cyborg Upgrade Modules")
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /datum/design/borg_transform_clown
 	name = "Cyborg Upgrade (Clown Module)"
 	id = "borg_transform_clown"
@@ -763,6 +738,7 @@
 	materials = list(/datum/material/iron = 15000, /datum/material/glass = 15000, /datum/material/hellstone = 1000)
 	construction_time = 120
 	category = list("Cyborg Upgrade Modules")
+// [CELADON-ADD]S
 
 /datum/design/borg_upgrade_selfrepair
 	name = "Cyborg Upgrade (Self-repair)"

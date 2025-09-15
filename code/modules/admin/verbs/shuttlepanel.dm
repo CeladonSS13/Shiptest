@@ -6,6 +6,7 @@
 	if(!check_rights(R_DEBUG))
 		return
 
+	log_celadon_admin("\[SHUTTLE]: [key_name(usr)] oppened Shuttle Manipulator.") // [CELADON_ADD] - logging admin actions.
 	SSshuttle.ui_interact(usr)
 
 /obj/docking_port/mobile/proc/admin_fly_shuttle(mob/user)
@@ -32,6 +33,7 @@
 			mode = SHUTTLE_IGNITING
 			setTimer(ignitionTime)
 			message_admins("\[SHUTTLE]: [key_name_admin(user)] has placed [name] into Infinite Transit.")
+			log_celadon_admin("\[SHUTTLE]: [user] has placed [name] into Infinite Transit.") // [CELADON_ADD] - logging admin actions.
 
 		if("Delete Shuttle")
 			if(alert(user, "Really delete [name]?", "Delete Shuttle", "Cancel", "Really!") != "Really!")
@@ -41,6 +43,7 @@
 			else
 				qdel(current_ship)
 			message_admins("\[SHUTTLE]: [key_name_admin(user)] has deleted [name].")
+			log_celadon_admin("\[SHUTTLE]: [user] has deleted [name].") // [CELADON_ADD] - logging admin actions.
 
 		else
 			if(options[selection])

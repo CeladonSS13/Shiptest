@@ -67,7 +67,7 @@
 	if(!floor_icon)
 		// [CELADON-EDIT] - CELADON_STRUCTURES
 		// floor_icon = icon('icons/turf/floors/tiles.dmi', floor_state, floor_dir) // CELADON-EDIT - ORIGINAL
-		floor_icon = icon('mod_celadon/_storge_icons/icons/structures/tiles.dmi', floor_state, floor_dir)
+		floor_icon = icon('mod_celadon/_storage_icons/icons/structures/tiles.dmi', floor_state, floor_dir)
 		// [/CELADON-EDIT]
 	user << browse_rsc(floor_icon, "floor.png")
 	var/dat = {"
@@ -134,7 +134,7 @@
 
 	// [CELADON-EDIT] - CELADON_STRUCTURES
 	// floor_icon = icon('icons/turf/floors/tiles.dmi', floor_state, floor_dir) // CELADON-EDIT - ORIGINAL
-	floor_icon = icon('mod_celadon/_storge_icons/icons/structures/tiles.dmi', floor_state, floor_dir)
+	floor_icon = icon('mod_celadon/_storage_icons/icons/structures/tiles.dmi', floor_state, floor_dir)
 	// [/CELADON-EDIT]
 	if(usr)
 		attack_self(usr)

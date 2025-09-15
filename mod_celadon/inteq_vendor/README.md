@@ -88,11 +88,11 @@ code/modules/mob/living/carbon/human/species : /datum/species/proc/handle_mutant
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-_storge_icons\mob\modsuit\mod_clothing
-_storge_icons\mob\modsuit\mod_modules
+_storage_icons\mob\modsuit\mod_clothing
+_storage_icons\mob\modsuit\mod_modules
 
-_storge_icons\obj\modsuit\mod_clothing
-_storge_icons\obj\modsuit\mod_modules
+_storage_icons\obj\modsuit\mod_clothing
+_storage_icons\obj\modsuit\mod_modules
 
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,

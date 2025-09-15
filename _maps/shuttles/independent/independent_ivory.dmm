@@ -31,7 +31,6 @@
 	pixel_y = -7;
 	pixel_x = 8
 	},
-/obj/item/attachment/sling,
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable/green{
 	icon_state = "0-4"
@@ -229,10 +228,10 @@
 	storage_capacity = 35;
 	anchored = 1
 	},
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken,
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/food/meat/slab/chicken,
+/obj/item/food/meat/slab/chicken,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
 /obj/item/storage/fancy/egg_box,
 /obj/item/storage/fancy/egg_box,
 /obj/item/reagent_containers/condiment/milk,
@@ -240,40 +239,26 @@
 /obj/item/reagent_containers/condiment/milk,
 /obj/item/reagent_containers/condiment/soymilk,
 /obj/item/reagent_containers/condiment/soymilk,
-/obj/item/reagent_containers/food/snacks/grown/tomato,
-/obj/item/reagent_containers/food/snacks/grown/tomato,
-/obj/item/reagent_containers/food/snacks/grown/tomato,
+/obj/item/food/grown/tomato,
+/obj/item/food/grown/tomato,
+/obj/item/food/grown/tomato,
 /obj/item/reagent_containers/condiment/rice,
 /obj/item/reagent_containers/condiment/rice,
 /obj/item/reagent_containers/condiment/flour,
 /obj/item/reagent_containers/condiment/flour,
 /obj/item/reagent_containers/condiment/sugar,
 /obj/item/reagent_containers/condiment/sugar,
-/obj/item/reagent_containers/food/snacks/grown/carrot,
-/obj/item/reagent_containers/food/snacks/grown/cabbage,
-/obj/item/reagent_containers/food/snacks/grown/onion,
-/obj/item/reagent_containers/food/snacks/grown/vanillapod,
-/obj/item/reagent_containers/food/snacks/grown/coffee{
-	dry = 1
-	},
-/obj/item/reagent_containers/food/snacks/grown/coffee{
-	dry = 1
-	},
-/obj/item/reagent_containers/food/snacks/grown/coffee{
-	dry = 1
-	},
-/obj/item/reagent_containers/food/snacks/grown/coffee{
-	dry = 1
-	},
-/obj/item/reagent_containers/food/snacks/grown/tea/astra{
-	dry = 1
-	},
-/obj/item/reagent_containers/food/snacks/grown/tea/astra{
-	dry = 1
-	},
-/obj/item/reagent_containers/food/snacks/grown/tea/astra{
-	dry = 1
-	},
+/obj/item/food/grown/carrot,
+/obj/item/food/grown/cabbage,
+/obj/item/food/grown/onion,
+/obj/item/food/grown/vanillapod,
+/obj/item/food/grown/coffee,
+/obj/item/food/grown/coffee,
+/obj/item/food/grown/coffee,
+/obj/item/food/grown/coffee,
+/obj/item/food/grown/tea/astra,
+/obj/item/food/grown/tea/astra,
+/obj/item/food/grown/tea/astra,
 /obj/item/radio/intercom/directional/west,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/ccommons)
@@ -2699,7 +2684,6 @@
 	},
 /obj/item/storage/backpack/satchel/eng,
 /obj/item/storage/backpack/industrial,
-/obj/item/clothing/under/rank/engineering/engineer,
 /obj/item/clothing/suit/hazardvest,
 /obj/item/clothing/suit/toggle/hazard,
 /obj/item/clothing/head/hardhat/weldhat/dblue,
@@ -2714,6 +2698,8 @@
 /obj/item/clothing/glasses/welding{
 	pixel_y = -3
 	},
+/obj/item/storage/belt/utility/full/engi,
+/obj/item/clothing/gloves/color/yellow,
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
 "YF" = (

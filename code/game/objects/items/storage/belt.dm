@@ -93,6 +93,8 @@
 	icon_state = "utility_ce"
 	item_state = "utility_ce"
 
+// [CELADON-EDIT] - OMNI_TOOLS
+/*
 /obj/item/storage/belt/utility/chief/full/PopulateContents()
 	new /obj/item/screwdriver/power(src)
 	new /obj/item/crowbar/power(src)
@@ -101,6 +103,26 @@
 	new /obj/item/stack/cable_coil(src,MAXCOIL,pick("red","yellow","orange"))
 	new /obj/item/extinguisher/mini(src)
 	new /obj/item/analyzer(src)
+*/
+
+/obj/item/storage/belt/utility/chief/full/PopulateContents()
+	new /obj/item/screwdriver/power(src)
+	new /obj/item/crowbar/power(src)
+	new /obj/item/weldingtool/electric(src)
+	new /obj/item/multitool/tricorder(src)
+	new /obj/item/pipe_dispenser(src)
+	new /obj/item/inducer(src)
+	new /obj/item/stack/cable_coil(src,MAXCOIL,pick("red","yellow","orange"))
+
+/obj/item/storage/belt/utility/chief/debug/full/PopulateContents()
+	new /obj/item/screwdriver/power(src)
+	new /obj/item/crowbar/power(src)
+	new /obj/item/weldingtool/electric(src)
+	new /obj/item/multitool/tricorder/ranged(src)
+	new /obj/item/pipe_dispenser/bluespace(src)
+	new /obj/item/inducer/adv(src)
+	new /obj/item/stack/cable_coil(src,MAXCOIL,"cyan")
+// [/CELADON-EDIT]
 
 /obj/item/storage/belt/utility/full/PopulateContents()
 	new /obj/item/screwdriver(src)
@@ -204,6 +226,7 @@
 		/obj/item/clothing/mask/breath/medical,
 		/obj/item/scalpel,
 		/obj/item/circular_saw,
+		/obj/item/blood_filter,	// [CELADON-ADD] - CELADON_BALANCE
 		/obj/item/surgicaldrill,
 		/obj/item/retractor,
 		/obj/item/cautery,
@@ -252,6 +275,7 @@
 /obj/item/storage/belt/medical/surgery/PopulateContents()
 	new /obj/item/scalpel(src)
 	new /obj/item/circular_saw(src)
+	new /obj/item/blood_filter(src)	// [CELADON-ADD] - CELADON_BALANCE
 	new /obj/item/surgicaldrill(src)
 	new /obj/item/retractor(src)
 	new /obj/item/cautery(src)
@@ -262,6 +286,7 @@
 /obj/item/storage/belt/medical/webbing/surgery/PopulateContents()
 	new /obj/item/scalpel(src)
 	new /obj/item/circular_saw(src)
+	new /obj/item/blood_filter(src)	// [CELADON-ADD] - CELADON_BALANCE
 	new /obj/item/surgicaldrill(src)
 	new /obj/item/retractor(src)
 	new /obj/item/cautery(src)
@@ -310,7 +335,7 @@
 		/obj/item/ammo_box/a300,
 		/obj/item/ammo_box/a762_stripper,
 		/obj/item/ammo_box/amagpellet_claris, //that's the last of the clips
-		/obj/item/reagent_containers/food/snacks/donut,
+		/obj/item/food/donut,
 		/obj/item/melee/knife/combat,
 		/obj/item/flashlight/seclite,
 		// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
@@ -325,7 +350,15 @@
 		/obj/item/stock_parts/cell/gun,
 		/obj/item/ammo_box/magazine/ammo_stack, //handfuls of bullets
 		/obj/item/bodycamera,
+		/obj/item/gun/ballistic/automatic/pistol,
+		/obj/item/gun/ballistic/revolver,
+		/obj/item/gun/energy/laser,
+		/obj/item/gun/energy/disabler,
+		/obj/item/gun/energy/kalix/pistol,
 		))
+	STR.can_hold_max_of_items = typecacheof(list(
+		/obj/item/gun = 1,
+	))
 
 /obj/item/storage/belt/security/full/PopulateContents()
 	new /obj/item/reagent_containers/spray/pepper(src)
@@ -470,7 +503,18 @@
 /obj/item/storage/belt/military/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	var/static/list/exception_cache = typecacheof(list(
+		/obj/item/gun/ballistic/automatic/pistol,
+		/obj/item/gun/ballistic/revolver,
+		/obj/item/gun/energy/laser,
+		/obj/item/gun/energy/disabler,
+		/obj/item/gun/energy/kalix/pistol,
+		))
+	STR.exception_hold = exception_cache
 	STR.max_w_class = WEIGHT_CLASS_SMALL
+	STR.can_hold_max_of_items = typecacheof(list(
+		/obj/item/gun = 1,
+	))
 
 /obj/item/storage/belt/military/cobra/PopulateContents()
 	. = ..()
@@ -510,7 +554,7 @@
 	STR.max_items = 6
 	STR.max_w_class = WEIGHT_CLASS_SMALL
 	STR.set_holdable(list(
-		/obj/item/reagent_containers/food/snacks,
+		/obj/item/food,
 		/obj/item/reagent_containers/food/drinks
 		))
 
@@ -518,20 +562,20 @@
 	var/rig_snacks
 	while(contents.len <= amount)
 		rig_snacks = pick(list(
-		/obj/item/reagent_containers/food/snacks/candy,
+		/obj/item/food/candy,
 		/obj/item/reagent_containers/food/drinks/dry_ramen,
-		/obj/item/reagent_containers/food/snacks/chips,
-		/obj/item/reagent_containers/food/snacks/sosjerky,
-		/obj/item/reagent_containers/food/snacks/syndicake,
-		/obj/item/reagent_containers/food/snacks/spacetwinkie,
-		/obj/item/reagent_containers/food/snacks/cheesiehonkers,
-		/obj/item/reagent_containers/food/snacks/nachos,
-		/obj/item/reagent_containers/food/snacks/cheesynachos,
-		/obj/item/reagent_containers/food/snacks/cubannachos,
-		/obj/item/reagent_containers/food/snacks/nugget,
+		/obj/item/food/chips,
+		/obj/item/food/sosjerky,
+		/obj/item/food/syndicake,
+		/obj/item/food/spacetwinkie,
+		/obj/item/food/cheesiehonkers,
+		/obj/item/food/nachos,
+		/obj/item/food/cheesynachos,
+		/obj/item/food/cubannachos,
+		/obj/item/food/nugget,
 		/obj/item/food/spaghetti/pastatomato,
-		/obj/item/reagent_containers/food/snacks/rofflewaffles,
-		/obj/item/reagent_containers/food/snacks/donkpocket,
+		/obj/item/food/rofflewaffles,
+		/obj/item/food/donkpocket,
 		/obj/item/reagent_containers/food/drinks/soda_cans/cola,
 		/obj/item/reagent_containers/food/drinks/soda_cans/comet_trail,
 		/obj/item/reagent_containers/food/drinks/soda_cans/tadrixx,
@@ -615,8 +659,7 @@
 		/obj/item/multitool,
 		/obj/item/reagent_containers/food/drinks/molotov,
 		/obj/item/grenade/c4,
-		/obj/item/reagent_containers/food/snacks/grown/cherry_bomb,
-		/obj/item/reagent_containers/food/snacks/grown/firelemon
+		/obj/item/food/grown/firelemon,
 		))
 
 /obj/item/storage/belt/grenade/full/PopulateContents()

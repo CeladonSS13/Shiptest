@@ -1180,11 +1180,11 @@
 /area/ship/security/prison)
 "gU" = (
 /obj/structure/table,
-/obj/item/stack/medical/splint/ghetto{
+/obj/item/stack/medical/splint/hunter{
 	pixel_y = -2;
 	pixel_x = -3
 	},
-/obj/item/stack/medical/splint/ghetto{
+/obj/item/stack/medical/splint/hunter{
 	pixel_y = -2;
 	pixel_x = -3
 	},
@@ -2061,7 +2061,7 @@
 /area/ship/maintenance/starboard)
 "ln" = (
 /obj/structure/chair/greyscale,
-/obj/item/reagent_containers/food/snacks/popcorn,
+/obj/item/food/popcorn,
 /obj/structure/railing/modern{
 	dir = 1
 	},
@@ -2313,7 +2313,7 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/obj/item/reagent_containers/food/snacks/urinalcake,
+/obj/item/food/urinalcake,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/toilet)
 "nb" = (
@@ -2833,8 +2833,8 @@
 /obj/item/reagent_containers/condiment/sugar,
 /obj/item/reagent_containers/condiment/sugar,
 /obj/item/reagent_containers/condiment/rice,
-/obj/item/reagent_containers/food/snacks/tofu,
-/obj/item/reagent_containers/food/snacks/tofu,
+/obj/item/food/tofu,
+/obj/item/food/tofu,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/crew/canteen/kitchen)
 "qh" = (
@@ -4388,7 +4388,7 @@
 /area/ship/crew/dorm/dormfour)
 "zL" = (
 /obj/structure/chair/greyscale,
-/obj/item/reagent_containers/food/snacks/sosjerky/healthy,
+/obj/item/food/sosjerky/healthy,
 /obj/structure/railing/modern{
 	dir = 1
 	},
@@ -4785,12 +4785,12 @@
 "Co" = (
 /obj/structure/table,
 /obj/item/storage/fancy/donut_box,
-/obj/item/reagent_containers/food/snacks/donut/jelly/plain,
-/obj/item/reagent_containers/food/snacks/donut/jelly/matcha,
-/obj/item/reagent_containers/food/snacks/donut/jelly/choco,
-/obj/item/reagent_containers/food/snacks/donut/jelly/caramel,
-/obj/item/reagent_containers/food/snacks/donut/jelly/berry,
-/obj/item/reagent_containers/food/snacks/donut/jelly/apple,
+/obj/item/food/donut/jelly/plain,
+/obj/item/food/donut/jelly/matcha,
+/obj/item/food/donut/jelly/choco,
+/obj/item/food/donut/jelly/caramel,
+/obj/item/food/donut/jelly/berry,
+/obj/item/food/donut/jelly/apple,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
 	},
@@ -4918,7 +4918,7 @@
 "Dd" = (
 /obj/structure/closet,
 /obj/item/clothing/suit/space/hardsuit/carp/old,
-/obj/item/clothing/mask/gas/explorer/old,
+/obj/item/clothing/mask/gas/explorer,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/machinery/light/directional/south,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -5139,7 +5139,7 @@
 /turf/open/floor/plating/rust,
 /area/ship/crew/canteen)
 "Er" = (
-/mob/living/simple_animal/cow,
+/mob/living/basic/cow,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
 	},
@@ -6186,7 +6186,7 @@
 /area/ship/crew/cryo)
 "JJ" = (
 /obj/structure/chair/greyscale,
-/obj/item/reagent_containers/food/snacks/nachos,
+/obj/item/food/nachos,
 /obj/structure/railing/modern{
 	dir = 1
 	},
@@ -6985,7 +6985,7 @@
 /area/ship/security/prison)
 "Og" = (
 /obj/structure/chair/greyscale,
-/obj/item/reagent_containers/food/snacks/no_raisin,
+/obj/item/food/no_raisin,
 /obj/structure/railing/modern{
 	dir = 1
 	},
@@ -7636,7 +7636,7 @@
 /obj/structure/closet,
 /obj/item/clothing/suit/space/orange,
 /obj/item/clothing/head/helmet/space/orange,
-/obj/item/clothing/mask/gas/explorer/old,
+/obj/item/clothing/mask/gas/explorer,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/effect/turf_decal/siding/brown/end{
 	dir = 4
@@ -8348,7 +8348,7 @@
 /area/ship/engineering/electrical)
 "Wu" = (
 /obj/structure/chair/greyscale,
-/obj/item/reagent_containers/food/snacks/cornchips,
+/obj/item/food/cornchips,
 /obj/structure/railing/modern{
 	dir = 1
 	},
@@ -8717,15 +8717,6 @@
 /area/ship/medical)
 "YN" = (
 /turf/open/floor/plating/rust,
-/area/ship/maintenance/starboard)
-"YR" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "YT" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/hidden/layer4{
@@ -9342,7 +9333,7 @@ GC
 nJ
 Fy
 ma
-YR
+ig
 IH
 FF
 eo

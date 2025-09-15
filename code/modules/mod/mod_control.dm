@@ -139,7 +139,7 @@
 		part.min_cold_protection_temperature = theme.min_cold_protection_temperature
 		part.siemens_coefficient = theme.siemens_coefficient
 	for(var/obj/item/part as anything in mod_parts)
-		RegisterSignal(part, COMSIG_OBJ_DESTRUCTION, PROC_REF(on_part_destruction))
+		RegisterSignal(part, COMSIG_ATOM_DESTRUCTION, PROC_REF(on_part_destruction))
 		RegisterSignal(part, COMSIG_PARENT_QDELETING, PROC_REF(on_part_deletion))
 	set_mod_skin(new_skin || theme.default_skin)
 	update_speed()
@@ -182,7 +182,7 @@
 	QDEL_NULL(wires)
 	return ..()
 
-/obj/item/mod/control/obj_destruction(damage_flag)
+/obj/item/mod/control/atom_destruction(damage_flag)
 	for(var/obj/item/mod/module/module as anything in modules)
 		uninstall(module)
 	for(var/obj/item/part as anything in mod_parts)
@@ -643,8 +643,8 @@
 		// [CELADON-EDIT] - inteq_vendor - REASSIGNING ICONS DIRECTORY
 		//part.icon = used_skin[MOD_ICON_OVERRIDE] || 'icons/obj/clothing/modsuit/mod_clothing.dmi' // [CELADON-EDIT] - ORIGINAL
 		//part.mob_overlay_icon = used_skin[MOD_WORN_ICON_OVERRIDE] || 'icons/mob/clothing/modsuit/mod_clothing.dmi' // [CELADON-EDIT] - ORIGINAL
-		part.icon = used_skin[MOD_ICON_OVERRIDE] || 'mod_celadon/_storge_icons/icons/items/clothing/mod_suit/mod_clothing.dmi'
-		part.mob_overlay_icon = used_skin[MOD_WORN_ICON_OVERRIDE] || 'mod_celadon/_storge_icons/icons/items/clothing/mod_suit/overlay/mod_clothing.dmi'
+		part.icon = used_skin[MOD_ICON_OVERRIDE] || 'mod_celadon/_storage_icons/icons/items/clothing/mod_suit/mod_clothing.dmi'
+		part.mob_overlay_icon = used_skin[MOD_WORN_ICON_OVERRIDE] || 'mod_celadon/_storage_icons/icons/items/clothing/mod_suit/overlay/mod_clothing.dmi'
 		// [CELADON-EDIT]
 
 		part.icon_state = "[skin]-[part.base_icon_state]"
@@ -707,7 +707,7 @@
 		overslotting_parts[part] = null
 	if(QDELETED(src))
 		return
-	obj_destruction(damage_flag)
+	atom_destruction(damage_flag)
 
 /obj/item/mod/control/proc/on_part_deletion(obj/item/part)
 	SIGNAL_HANDLER

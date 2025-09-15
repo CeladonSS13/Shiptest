@@ -178,9 +178,9 @@
 	)
 	mob_spawn_chance = 30
 	mob_spawn_list = list(
-		/mob/living/simple_animal/hostile/hivebot/strong/anima = 30,
-		/mob/living/simple_animal/hostile/hivebot/ranged/anima = 15,
-		/mob/living/simple_animal/hostile/hivebot/ranged/rapid/anima = 15,
+		/mob/living/basic/hivebot/strong/anima = 30,
+		/mob/living/basic/hivebot/ranged/anima = 15,
+		/mob/living/basic/hivebot/ranged/rapid/anima = 15,
 		/mob/living/simple_animal/hostile/mimic/anima = 40,
 		/mob/living/simple_animal/bot/firebot/rockplanet/anima = 15,
 		/mob/living/simple_animal/bot/secbot/ed209/rockplanet/anima = 3,

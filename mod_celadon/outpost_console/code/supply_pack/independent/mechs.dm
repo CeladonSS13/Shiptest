@@ -9,7 +9,7 @@ Completed Suits
 /datum/supply_pack/faction/independent/mech/ripley
 	name = "Surplus APLU MK-I"
 	desc = "A worn cargo loader that has aged out of active use. Comes with an attachable drill."
-	cost = 2000
+	cost = 4000
 	contains = list(
 		/obj/mecha/working/ripley/cargo,
 	)
@@ -22,7 +22,7 @@ Build Your Own Suit
 /datum/supply_pack/faction/independent/mech/ripley_parts
 	name = "APLU construction kit"
 	desc = "All the chassis components you would need to make a Ripley MK-I Powerloader"
-	cost = 3000
+	cost = 5000
 	contains = list(
 		/obj/item/mecha_parts/chassis/ripley,
 		/obj/item/mecha_parts/part/ripley_torso,
@@ -76,7 +76,7 @@ Mech Equipment
 /datum/supply_pack/faction/independent/mech/equipment/diamond_drill
 	name = "Exosuit diamond drill kit"
 	desc = "Contains mechanized diamond drill, for the enterprising prospector!"
-	cost = 750
+	cost = 1500
 	contains = list(
 		/obj/item/mecha_parts/mecha_equipment/drill/diamonddrill
 	)
@@ -354,31 +354,31 @@ ammo
 	name = "Flames Ripley MK-II RedConversion Kit"
 	desc = "A custom-made kit for converting the Ripley MK-II."
 	contains = list(/obj/item/mecha_parts/mecha_equipment/conversion_kit/flames_red)
-	cost = 2000
+	cost = 500
 
 /datum/supply_pack/faction/independent/mech/aluminizer
 	name = "Aluminizer Ripley MK-II Conversion Kit"
 	desc = "A custom-made kit for converting the Ripley MK-II."
 	contains = list(/obj/item/mecha_parts/mecha_equipment/conversion_kit/aluminizer)
-	cost = 2000
+	cost = 500
 
 /datum/supply_pack/faction/independent/mech/earth
 	name = "Ripley Ripley MK-II Earth Conversion Kit"
 	desc = "A custom-made kit for converting the Ripley MK-II."
 	contains = list(/obj/item/mecha_parts/mecha_equipment/conversion_kit/earth)
-	cost = 2000
+	cost = 500
 
 /datum/supply_pack/faction/independent/mech/ripley_zairjah
 	name = "Zairjah Ripley MK-II Conversion Kit"
 	desc = "A custom-made kit for converting the Ripley MK-II."
 	contains = list(/obj/item/mecha_parts/mecha_equipment/conversion_kit/ripley_zairjah)
-	cost = 2000
+	cost = 500
 
 /datum/supply_pack/faction/independent/mech/titan
 	name = "Titan Ripley MK-II Conversion Kit"
 	desc = "A custom-made kit for converting the Ripley MK-II."
 	contains = list(/obj/item/mecha_parts/mecha_equipment/conversion_kit/titan)
-	cost = 2000
+	cost = 500
 
 /*
 	MARK:	Gygax
@@ -388,7 +388,7 @@ ammo
 	name = "Prototype Gygax Conversion Kit"
 	desc = "A custom-made kit for converting the Gygax combat exoskeleton into a specialized combat exoskeleton."
 	contains = list(/obj/item/mecha_parts/mecha_equipment/conversion_kit/proto)
-	cost = 2500
+	cost = 500
 
 /*
 	MARK:	Durand
@@ -398,22 +398,22 @@ ammo
 	name = "Sarathi Durand Conversion Kit"
 	desc = "A custom-made kit for converting the Durand combat exoskeleton."
 	contains = list(/obj/item/mecha_parts/mecha_equipment/conversion_kit/sarathi)
-	cost = 2500
+	cost = 500
 
 /datum/supply_pack/faction/independent/mech/shire
 	name = "Shire Durand Conversion Kit"
 	desc = "A custom-made kit for converting the Durand combat exoskeleton."
 	contains = list(/obj/item/mecha_parts/mecha_equipment/conversion_kit/shire)
-	cost = 2500
+	cost = 500
 
 /datum/supply_pack/faction/independent/mech/executor
 	name = "Executor Durand Conversion Kit"
 	desc = "A custom-made kit for converting the Durand combat exoskeleton."
 	contains = list(/obj/item/mecha_parts/mecha_equipment/conversion_kit/executor)
-	cost = 2500
+	cost = 500
 
 /datum/supply_pack/faction/independent/mech/dollhouse
 	name = "Dollhouse Durand Conversion Kit"
 	desc = "A custom-made kit for converting the Durand combat exoskeleton."
 	contains = list(/obj/item/mecha_parts/mecha_equipment/conversion_kit/dollhouse)
-	cost = 2500
+	cost = 500

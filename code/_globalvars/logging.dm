@@ -43,6 +43,11 @@ GLOBAL_PROTECT(tgui_log)
 GLOBAL_VAR(world_shuttle_log)
 GLOBAL_PROTECT(world_shuttle_log)
 
+// [CELADON-ADD] - Logging for admin actions.
+GLOBAL_VAR(world_celadon_admin_log)
+GLOBAL_PROTECT(world_celadon_admin_log)
+// [/CELADON-ADD]
+
 GLOBAL_VAR(perf_log)
 GLOBAL_PROTECT(perf_log)
 

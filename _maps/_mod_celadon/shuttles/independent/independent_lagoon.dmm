@@ -329,27 +329,27 @@
 /area/ship/crew/dorm)
 "bC" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
 /obj/structure/closet/secure_closet/freezer/kitchen/wall/directional/west,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
@@ -1058,7 +1058,6 @@
 /area/ship/hallway/port)
 "gf" = (
 /obj/structure/flora/ausbushes/sparsegrass,
-/obj/effect/turf_decal/weather/sand,
 /obj/machinery/light/directional/west,
 /turf/open/floor/grass,
 /area/ship/hallway/central)
@@ -1351,7 +1350,6 @@
 /turf/open/floor/plasteel,
 /area/ship/hallway/fore)
 "id" = (
-/obj/effect/turf_decal/weather/sand,
 /obj/machinery/light/directional/east,
 /turf/open/floor/grass,
 /area/ship/hallway/central)
@@ -1642,12 +1640,6 @@
 /area/ship/crew)
 "jI" = (
 /obj/item/toy/seashell,
-/obj/effect/turf_decal/weather/sand{
-	dir = 10
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 4
-	},
 /turf/open/floor/carpet/green,
 /area/ship/hallway/central)
 "jM" = (
@@ -3770,8 +3762,8 @@
 /obj/item/reagent_containers/food/drinks/mug/coco{
 	pixel_y = 9
 	},
-/obj/item/reagent_containers/food/snacks/cracker,
-/obj/item/reagent_containers/food/snacks/cracker{
+/obj/item/food/cracker,
+/obj/item/food/cracker{
 	pixel_x = 6;
 	pixel_y = 3
 	},
@@ -3833,15 +3825,6 @@
 /area/ship/hallway/fore)
 "wZ" = (
 /obj/structure/fluff/beach_umbrella/cap,
-/obj/effect/turf_decal/weather/sand{
-	dir = 4
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 5
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 8
-	},
 /turf/open/floor/carpet/blue{
 	baseturfs = /turf/open/floor/plating/asteroid/sand/lit
 	},
@@ -4235,7 +4218,7 @@
 /turf/open/floor/grass,
 /area/ship/crew/canteen)
 "zs" = (
-/obj/item/reagent_containers/food/snacks/burger/fish,
+/obj/item/food/burger/fish,
 /obj/machinery/door/firedoor/border_only,
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
 /obj/structure/table/reinforced/titaniumglass,
@@ -4509,9 +4492,9 @@
 	dir = 1
 	},
 /obj/structure/closet/wall/directional/west,
-/obj/item/reagent_containers/food/snacks/grown/moonflower,
-/obj/item/reagent_containers/food/snacks/grown/moonflower,
-/obj/item/reagent_containers/food/snacks/grown/moonflower,
+/obj/item/food/grown/moonflower,
+/obj/item/food/grown/moonflower,
+/obj/item/food/grown/moonflower,
 /obj/item/storage/fancy/candle_box{
 	pixel_x = 12
 	},
@@ -5468,11 +5451,6 @@
 	},
 /turf/open/floor/carpet/black,
 /area/ship/crew)
-"Gw" = (
-/obj/structure/flora/ausbushes/ppflowers,
-/obj/effect/turf_decal/weather/sand,
-/turf/open/floor/grass,
-/area/ship/hallway/central)
 "GA" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8
@@ -5745,12 +5723,6 @@
 /turf/open/floor/plasteel,
 /area/ship/hallway/aft)
 "Iw" = (
-/obj/effect/turf_decal/weather/sand{
-	dir = 4
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 10
-	},
 /obj/item/clothing/shoes/sandal{
 	pixel_x = 19
 	},
@@ -6017,12 +5989,6 @@
 /area/ship/crew/janitor)
 "Kd" = (
 /obj/item/toy/beach_ball,
-/obj/effect/turf_decal/weather/sand{
-	dir = 10
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 4
-	},
 /turf/open/floor/carpet/red,
 /area/ship/hallway/central)
 "Kh" = (
@@ -6353,11 +6319,6 @@
 /obj/effect/turf_decal/trimline/opaque/green/arrow_ccw,
 /turf/open/floor/plating,
 /area/ship/engineering)
-"Mx" = (
-/obj/structure/flora/ausbushes/ywflowers,
-/obj/effect/turf_decal/weather/sand,
-/turf/open/floor/grass,
-/area/ship/hallway/central)
 "My" = (
 /obj/effect/turf_decal/corner/opaque/white/border{
 	dir = 9
@@ -6767,12 +6728,6 @@
 	pixel_x = 33
 	},
 /obj/structure/fluff/beach_umbrella/syndi,
-/obj/effect/turf_decal/weather/sand{
-	dir = 5
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 8
-	},
 /turf/open/floor/carpet/red,
 /area/ship/hallway/central)
 "PF" = (
@@ -7473,10 +7428,6 @@
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/plasteel,
 /area/ship/hallway/aft)
-"Tt" = (
-/obj/effect/turf_decal/weather/sand,
-/turf/open/floor/grass,
-/area/ship/hallway/central)
 "Tw" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -8208,7 +8159,7 @@
 	pixel_x = 5;
 	pixel_y = 9
 	},
-/obj/item/reagent_containers/food/snacks/egg{
+/obj/item/food/egg{
 	pixel_x = -8;
 	pixel_y = 4
 	},
@@ -8485,12 +8436,6 @@
 /area/ship/hallway/central)
 "ZA" = (
 /obj/structure/fluff/beach_umbrella/engine,
-/obj/effect/turf_decal/weather/sand{
-	dir = 5
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 8
-	},
 /turf/open/floor/carpet/green,
 /area/ship/hallway/central)
 "ZH" = (
@@ -9914,7 +9859,7 @@ cP
 cP
 BB
 cP
-Mx
+BI
 Zx
 qx
 RR
@@ -9955,7 +9900,7 @@ XI
 fs
 Eg
 cP
-Tt
+cP
 wZ
 Iw
 RR
@@ -9996,7 +9941,7 @@ Vi
 xz
 VE
 cP
-Gw
+zf
 qx
 LD
 RR

@@ -16,7 +16,12 @@ ID мода:
 	CELADON_BALANCE
 	CELADON_BALANCE_CD
 	CELADON_BALANCE_MOBS
+	CELADON_BALANCE_CHISEL
 	CELADON_BALANCE_OVERMAP_EVENTS
+	CELADON_BALANCE_SPECIES
+	CELADON_BALANCE_VENDING
+	BALLISTIC_SHIELD
+	YOU_NOT_SEPARATIST
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов. Добавлены
@@ -107,6 +112,29 @@ EDIT: `code/game/objects/items/storage/backpack.dm`
 
 ADD: `code/modules/overmap/objects/event_datum.dm` : Добавляем дебрисам рандом на безопасную скорость полетов
 
+EDIT: `code/modules/vehicles/scooter.dm` : Ускорение от роликов равно 35% а не 100% как было
+
+EDIT: `code/game/objects/items/shields.dm` : Реворк-Переработка щитов
+EDIT: `code/game/objects/items.dm` : Звуки для щитов
+
+REMOVE: `code/modules/mining/equipment/kinetic_crusher.dm` : Убрано отталкивает от кинетик-крашера
+
+CELADON_BALANCE_SPECIES
+EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Поднимаем скорость кепори до -0.30
+ADD: `code/modules/mob/living/carbon/human/species_types/lizardpeople.dm` : Даём сарати резист к огню на 15%
+ADD: `code/modules/mob/living/carbon/human/species_types/vox.dm` : Даём воксам резист к холоду на 20%
+
+ADD: `code/game/objects/items/storage/belt.dm` : Добавлен новый филтр крови в возможность грузить в мед разгрузку
+
+CELADON_BALANCE_CHISEL
+ADD: `code/game/objects/items/tools/chisel.dm` : видоизменяем долото делая его нормальным
+
+YOU_NOT_SEPARATIST
+ADD: `code/modules/mob/dead/new_player/ship_select.dm` : Добавляем сокрытие определенных кораблей для определенных видов
+
+CELADON_BALANCE_VENDING
+EDIT: `code/modules/vending/_vending.dm` : Убираем автоматическое сбрасывание к платным покупкам у всех торрговых автоматах что НЕ относятся к руинкам
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -138,7 +166,7 @@ ADD: `code/modules/overmap/objects/event_datum.dm` : Добавляем дебр
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- `mod_celadon/_storge_icons/icons`
+- `mod_celadon/_storage_icons/icons`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.
@@ -157,6 +185,7 @@ ADD: `code/modules/overmap/objects/event_datum.dm` : Добавляем дебр
 - Изменения попаданий по лежачим - MrCat15352
 - Убрано замедление от синдидюффелей - Quinal
 - Изменение взрыва клешни - Molniz
+- Реворк щитов - KOCMOHABT
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.

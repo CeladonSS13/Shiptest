@@ -4,7 +4,7 @@
 /datum/supply_pack/faction/nanotrasen/mech/mpgygax_parts
 	name = "NT-501p-MP construction kit"
 	desc = "A set of parts for the NT-501p-MP exosuit model, dervived from the original Cybersun designs and modified for mass production. The armor plating was reduced to cut costs for mass production, but the lighter weight allows the NT-501p-MP's modified servos to perform swift moderate distance charges without heavily taxing the power supply. "
-	cost = 8000
+	cost = 20000
 	contains = list(
 		/obj/item/mecha_parts/chassis/mp_gygax,
 		/obj/item/mecha_parts/part/gygax_head,
@@ -24,4 +24,4 @@
 	name = "NT Gygax Conversion Kit"
 	desc = "A custom-made kit for converting the Gygax combat exoskeleton into the specialized NanoTrasen combat exoskeleton."
 	contains = list(/obj/item/mecha_parts/mecha_equipment/conversion_kit/gygaxnt)
-	cost = 2500
+	cost = 500

@@ -85,7 +85,9 @@
 	head = /obj/item/clothing/head/helmet/space/plasmaman
 	uniform = /obj/item/clothing/under/plasmaman
 // [CELADON-EDIT] - QoL Plasmamen
-//	r_hand= /obj/item/tank/internals/plasmaman/belt/full // CELADON-EDIT - ORIGINAL
+/* CELADON-EDIT - ORIGINAL
+	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+*/
 	r_pocket= /obj/item/tank/internals/plasmaman/belt/full
 // [/CELADON-EDIT]
 	mask = /obj/item/clothing/mask/breath
@@ -99,7 +101,7 @@
 	ears = /obj/item/radio/headset/headset_cent/commander
 	mask = /obj/item/clothing/mask/gas/welding/up
 	gloves = /obj/item/clothing/gloves/combat/insul
-	belt = /obj/item/storage/belt/utility/chief/full
+	belt = /obj/item/storage/belt/utility/chief/debug/full	// [CELADON-EDIT] - OMNI_TOOLS
 	shoes = /obj/item/clothing/shoes/magboots/advance
 	id = /obj/item/card/id/debug
 	suit_store = /obj/item/tank/internals/oxygen

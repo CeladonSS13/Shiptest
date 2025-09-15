@@ -17,13 +17,13 @@
 /mob/living/simple_animal/hostile/asteroid/old_demon/anima
 	faction = list("anima")
 
-/mob/living/simple_animal/hostile/hivebot/strong/anima
+/mob/living/basic/hivebot/strong/anima
 	faction = list("anima")
 
-/mob/living/simple_animal/hostile/hivebot/ranged/anima
+/mob/living/basic/hivebot/ranged/anima
 	faction = list("anima")
 
-/mob/living/simple_animal/hostile/hivebot/ranged/rapid/anima
+/mob/living/basic/hivebot/ranged/rapid/anima
 	faction = list("anima")
 
 /mob/living/simple_animal/hostile/mimic/anima

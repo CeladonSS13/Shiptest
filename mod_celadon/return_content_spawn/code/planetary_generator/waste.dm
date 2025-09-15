@@ -1,8 +1,8 @@
 /datum/biome/waste/metal
 	mob_spawn_list = list( //nor organics, more biased towards hivebots though
-		/mob/living/simple_animal/hostile/hivebot/wasteplanet/strong = 80,
-		/mob/living/simple_animal/hostile/hivebot/wasteplanet/ranged = 50,
-		/mob/living/simple_animal/hostile/hivebot/wasteplanet/ranged/rapid = 50,
+		/mob/living/basic/hivebot/wasteplanet/strong = 80,
+		/mob/living/basic/hivebot/wasteplanet/ranged = 50,
+		/mob/living/basic/hivebot/wasteplanet/ranged/rapid = 50,
 		/mob/living/simple_animal/bot/firebot/rockplanet = 15,
 		/mob/living/simple_animal/bot/secbot/ed209/rockplanet = 3,
 		/mob/living/simple_animal/hostile/abandoned_minebot = 15,
@@ -16,9 +16,9 @@
 
 /datum/biome/cave/waste/metal //deeper in, there's no normal stuff here
 	mob_spawn_list = list( //nor organics, more biased towards hivebots though
-		/mob/living/simple_animal/hostile/hivebot/wasteplanet/strong = 80,
-		/mob/living/simple_animal/hostile/hivebot/wasteplanet/ranged = 50,
-		/mob/living/simple_animal/hostile/hivebot/wasteplanet/ranged/rapid = 50,
+		/mob/living/basic/hivebot/wasteplanet/strong = 80,
+		/mob/living/basic/hivebot/wasteplanet/ranged = 50,
+		/mob/living/basic/hivebot/wasteplanet/ranged/rapid = 50,
 		/mob/living/simple_animal/bot/firebot/rockplanet = 15,
 		/mob/living/simple_animal/bot/secbot/ed209/rockplanet = 3,
 		/mob/living/simple_animal/hostile/abandoned_minebot = 15,
@@ -32,10 +32,10 @@
 
 /datum/biome/cave/waste/metal/hivebot
 	mob_spawn_list = list( //Whoops! All hivebots!
-		/mob/living/simple_animal/hostile/hivebot/wasteplanet/strong = 80,
-		/mob/living/simple_animal/hostile/hivebot/wasteplanet/ranged = 50,
-		/mob/living/simple_animal/hostile/hivebot/wasteplanet/ranged/rapid = 50,
-		/mob/living/simple_animal/hostile/hivebot/wasteplanet/ranged/rapid = 50
+		/mob/living/basic/hivebot/wasteplanet/strong = 80,
+		/mob/living/basic/hivebot/wasteplanet/ranged = 50,
+		/mob/living/basic/hivebot/wasteplanet/ranged/rapid = 50,
+		/mob/living/basic/hivebot/wasteplanet/ranged/rapid = 50
 	)
 	feature_spawn_list = list(
 		/obj/structure/spawner/wasteplanet/hivebot/low_threat = 20,

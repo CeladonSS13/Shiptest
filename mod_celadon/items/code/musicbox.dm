@@ -1,11 +1,11 @@
 /obj/item/toy/musicbox
 	name = "Музыкальная шкатулка"
 	desc = "Надпись на дне: <i>Прекрасной вампирочке от её рычалки. С любовью на долгую память.</i>"
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/musicbox.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/musicbox.dmi'
 	icon_state = "box_close"
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/musicbox_hands_left.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/misc/in_hands/musicbox_hands_right.dmi'
-	usesound = 'mod_celadon/_storge_sounds/sound/items/musicbox.ogg'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/musicbox_hands_left.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/musicbox_hands_right.dmi'
+	usesound = 'mod_celadon/_storage_sounds/sound/items/musicbox.ogg'
 
 	COOLDOWN_DECLARE(musicbox_cooldown)
 
