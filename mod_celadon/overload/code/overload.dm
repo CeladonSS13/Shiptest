@@ -1,7 +1,7 @@
 #define OVERLOAD_FACTOR 32
 #define OVERLOAD_CHANCE 30
 #define OVERLOAD_COOLDOWN 20
-#define OVERLOAD_THROW_RANGE_MAX 8
+#define OVERLOAD_THROW_RANGE_MAX 6
 
 // MARK: Эффект перегрузки
 
