@@ -44,10 +44,6 @@
 	color = "#444547"
 	},
 /area/ship/hallway/aft)
-"aK" = (
-/obj/machinery/autolathe,
-/turf/closed/wall/mineral/titanium,
-/area/ship/cargo)
 "aN" = (
 /obj/effect/turf_decal/corner/opaque/black{
 	dir = 10
@@ -206,16 +202,16 @@
 /obj/effect/turf_decal/corner/opaque/syndiered{
 	dir = 6
 	},
-/obj/item/storage/guncase/pistol/rattlesnake{
-	pixel_y = -5
-	},
-/obj/item/storage/guncase/pistol/rattlesnake{
-	pixel_y = 3
-	},
 /obj/structure/window/reinforced{
 	dir = 1
 	},
 /obj/structure/closet/secure_closet/armorycage,
+/obj/item/storage/guncase/c20r{
+	pixel_y = -6
+	},
+/obj/item/storage/guncase/c20r{
+	pixel_y = 4
+	},
 /turf/open/floor/plasteel/white{
 	color = "#444547"
 	},
@@ -349,14 +345,6 @@
 /obj/item/clothing/glasses/hud/health/sunglasses,
 /obj/item/radio/headset/alt,
 /obj/item/bodycamera,
-/obj/item/reagent_containers/hypospray/medipen/badstop{
-	pixel_y = -5;
-	pixel_x = -8
-	},
-/obj/item/reagent_containers/hypospray/medipen/badstop{
-	pixel_y = -5;
-	pixel_x = -8
-	},
 /turf/open/floor/plasteel/white{
 	color = "#444547"
 	},
@@ -629,7 +617,7 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 8
 	},
-/obj/structure/aquarium/prefilled/cirrus{
+/obj/structure/aquarium/prefilled{
 	name = "Mr. Fish Storage"
 	},
 /turf/open/floor/plasteel/patterned/brushed,
@@ -1308,6 +1296,43 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
 	},
+/obj/structure/closet/crate/medical{
+	name = "hypospray crate"
+	},
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/morphine{
+	pixel_y = -6
+	},
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/morphine{
+	pixel_y = -6
+	},
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/chitosan{
+	pixel_y = -6;
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/chitosan{
+	pixel_y = -6;
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/chitosan{
+	pixel_y = -6;
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/morphine{
+	pixel_y = -6
+	},
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/stasis{
+	pixel_x = 6;
+	pixel_y = -6
+	},
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/stasis{
+	pixel_x = 6;
+	pixel_y = -6
+	},
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/stasis{
+	pixel_x = 6;
+	pixel_y = -6
+	},
+/obj/item/storage/box/hypospray/mkiii,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -1359,7 +1384,7 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 9
 	},
-/obj/structure/aquarium/prefilled/cirrus{
+/obj/structure/aquarium/prefilled{
 	name = "Mrs. Fish Storage"
 	},
 /turf/open/floor/plasteel/patterned/brushed,
@@ -1372,16 +1397,6 @@
 /obj/item/reagent_containers/condiment/rice,
 /obj/item/reagent_containers/condiment/rice,
 /obj/item/reagent_containers/condiment/rice,
-/obj/item/reagent_containers/food/snacks/grown/seaweed/sheet,
-/obj/item/reagent_containers/food/snacks/grown/seaweed/sheet,
-/obj/item/reagent_containers/food/snacks/grown/seaweed/sheet,
-/obj/item/reagent_containers/food/snacks/grown/seaweed/sheet,
-/obj/item/reagent_containers/food/snacks/grown/seaweed/sheet,
-/obj/item/reagent_containers/food/snacks/grown/seaweed/sheet,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp/imitation,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp/imitation,
-/obj/item/reagent_containers/food/snacks/grown/coffee,
-/obj/item/reagent_containers/food/snacks/grown/coffee,
 /obj/item/reagent_containers/condiment/soysauce{
 	pixel_x = 13;
 	pixel_y = 5
@@ -1408,6 +1423,16 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 8
 	},
+/obj/item/reagent_containers/food/snacks/grown/seaweed/sheet,
+/obj/item/reagent_containers/food/snacks/grown/seaweed/sheet,
+/obj/item/reagent_containers/food/snacks/grown/seaweed/sheet,
+/obj/item/reagent_containers/food/snacks/grown/seaweed/sheet,
+/obj/item/reagent_containers/food/snacks/grown/seaweed/sheet,
+/obj/item/reagent_containers/food/snacks/grown/seaweed/sheet,
+/obj/item/reagent_containers/food/snacks/fishmeat/carp/imitation,
+/obj/item/reagent_containers/food/snacks/fishmeat/carp/imitation,
+/obj/item/reagent_containers/food/snacks/grown/coffee,
+/obj/item/reagent_containers/food/snacks/grown/coffee,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/ccommons)
 "mE" = (
@@ -2148,10 +2173,6 @@
 	color = "#E6D2BA"
 	},
 /area/ship/crew/ccommons)
-"sH" = (
-/obj/machinery/chem_dispenser,
-/turf/closed/wall/mineral/titanium,
-/area/ship/hangar)
 "sJ" = (
 /obj/effect/turf_decal/trimline/opaque/cybersunteal/line{
 	dir = 5
@@ -3741,14 +3762,6 @@
 /obj/item/clothing/glasses/hud/health/sunglasses,
 /obj/item/radio/headset/alt,
 /obj/item/bodycamera,
-/obj/item/reagent_containers/hypospray/medipen/badstop{
-	pixel_y = -5;
-	pixel_x = -8
-	},
-/obj/item/reagent_containers/hypospray/medipen/badstop{
-	pixel_y = -5;
-	pixel_x = -8
-	},
 /turf/open/floor/plasteel/white{
 	color = "#444547"
 	},
@@ -4627,14 +4640,6 @@
 	pixel_y = 2;
 	pixel_x = -5
 	},
-/obj/item/reagent_containers/food/snacks/vegetariansushiroll{
-	pixel_y = 4;
-	pixel_x = -5
-	},
-/obj/item/reagent_containers/food/snacks/spicyfiletsushiroll{
-	pixel_x = -5;
-	pixel_y = -2
-	},
 /obj/item/kitchen/fork{
 	pixel_y = 3;
 	pixel_x = 12;
@@ -4648,6 +4653,14 @@
 /obj/effect/turf_decal/spline/fancy/wood/cee{
 	color = "#444547";
 	dir = 4
+	},
+/obj/item/reagent_containers/food/snacks/vegetariansushiroll{
+	pixel_y = 4;
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/food/snacks/spicyfiletsushiroll{
+	pixel_x = -5;
+	pixel_y = -2
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/ccommons)
@@ -5165,7 +5178,9 @@
 	},
 /obj/machinery/light/small/directional/east,
 /obj/item/disk/surgery/cybersun,
-/obj/item/disk/surgery/t2,
+/obj/item/disk/surgery/t2{
+	pixel_x = 6
+	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/medical/surgery)
 "Wu" = (
@@ -5476,27 +5491,30 @@
 	dir = 6
 	},
 /obj/machinery/light/directional/south,
-/obj/item/storage/box/ammo/c9mm_rubber{
-	pixel_y = -7;
-	pixel_x = 7
-	},
-/obj/item/storage/box/ammo/c9mm_rubber{
-	pixel_y = -2;
-	pixel_x = 7
-	},
-/obj/item/storage/box/ammo/c9mm_rubber{
+/obj/structure/closet/secure_closet/armorycage,
+/obj/item/storage/box/ammo/c45_rubber{
+	pixel_x = 6;
 	pixel_y = -7
 	},
-/obj/item/storage/box/ammo/c9mm_rubber{
-	pixel_y = -2
+/obj/item/storage/box/ammo/c45_rubber{
+	pixel_x = 6;
+	pixel_y = -3
 	},
-/obj/item/storage/box/ammo/c9mm{
+/obj/item/storage/box/ammo/c45_rubber{
+	pixel_x = 6;
+	pixel_y = 1
+	},
+/obj/item/storage/box/ammo/c45_ap{
 	pixel_x = -6;
 	pixel_y = -7
 	},
-/obj/item/storage/box/ammo/c9mm{
+/obj/item/storage/box/ammo/c45_ap{
 	pixel_x = -6;
-	pixel_y = -2
+	pixel_y = -3
+	},
+/obj/item/storage/box/ammo/c45_ap{
+	pixel_x = -6;
+	pixel_y = 1
 	},
 /obj/item/storage/box/ammo/c22lr{
 	pixel_y = 8;
@@ -5506,7 +5524,6 @@
 	pixel_y = 8;
 	pixel_x = -4
 	},
-/obj/structure/closet/secure_closet/armorycage,
 /turf/open/floor/plasteel/white{
 	color = "#444547"
 	},
@@ -5778,7 +5795,7 @@ fR
 gj
 QB
 YL
-sH
+cs
 Yj
 Yj
 Yj
@@ -6222,7 +6239,7 @@ Vn
 Vn
 Vn
 Vn
-aK
+Vn
 yi
 iN
 Kq
