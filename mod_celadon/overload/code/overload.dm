@@ -1,5 +1,7 @@
-//[CELADON-ADD] - перегрузка
 #define OVERLOAD_FACTOR 32
+#define OVERLOAD_CHANCE 30
+#define OVERLOAD_COOLDOWN 20
+#define OVERLOAD_THROW_RANGE_MAX 8
 
 // MARK: Эффект перегрузки
 
@@ -9,17 +11,19 @@
 
 /datum/overmap/ship/controlled/adjust_speed(n_x, n_y)
 	. = ..()
+	if(acceleration_speed <= 0)
+		return
 	var/overload = ((abs(n_x) + abs(n_y)) / acceleration_speed)
 	if(overload <= 0)
 		return
 
-	if(world.time - last_overload_alarm > 20)
+	if(world.time - last_overload_alarm > OVERLOAD_COOLDOWN)
 		last_overload_alarm = world.time
 		for(var/obj/i in helms)
 			if(i)
 				playsound(i, 'sound/effects/alert.ogg', 25, FALSE)
 
-	var/speeding_angle = get_angle_raw(0, 0, 0, 0, round((n_x/acceleration_speed) * OVERLOAD_FACTOR * 10), round((n_y/acceleration_speed) * OVERLOAD_FACTOR * 10), 0, 0 )
+	var/speeding_angle = get_angle_raw(0, 0, 0, 0, round((n_x/acceleration_speed) * OVERLOAD_FACTOR * 10), round((n_y/acceleration_speed) * OVERLOAD_FACTOR * 10), 0, 0)
 	var/ang = SIMPLIFY_DEGREES(speeding_angle - bow_heading + 270)
 	var/overload_st = 10 * OVERLOAD_FACTOR * overload
 	var/disgust_amount = round(overload * OVERLOAD_FACTOR)
@@ -29,7 +33,7 @@
 			continue
 
 		var/obj/check = pick(helms)
-		if(M.virtual_z() != check.virtual_z())
+		if(!check || M.virtual_z() != check.virtual_z())
 			continue
 
 		M.client.pixel_x = round(overload_st * sin(ang))
@@ -43,34 +47,33 @@
 		var/is_protected = check_overload_protection(C)
 
 		if(!is_protected)
-			apply_overload_effects(C, overload_st, disgust_amount, ang, last_overload_throw)
+			apply_overload_effects(C, overload_st, disgust_amount, ang, src)
 
 // MARK: Функции
 
 /proc/check_overload_protection(mob/living/carbon/C)
-	if(C.buckled)
-		if(istype(C.buckled, /obj/structure/chair/comfy/shuttle))
-			return TRUE
-		return FALSE
-
 	var/obj/item/clothing/shoes/magboots/boots = C.get_item_by_slot(ITEM_SLOT_FEET)
 	if(istype(boots) && boots.magpulse)
 		return TRUE
 
-	return FALSE
+	if(C.buckled && istype(C.buckled, /obj/structure/chair/comfy/shuttle))
+		return TRUE
 
-/proc/apply_overload_effects(mob/living/carbon/C, overload_st, disgust_amount, ang, last_overload_throw)
-	var/chance_overload = 30
+/proc/apply_overload_effects(mob/living/carbon/C, overload_st, disgust_amount, ang, datum/overmap/ship/controlled/ship)
+	var/chance_overload = OVERLOAD_CHANCE
 	if(!C.resting)
-		chance_overload += 30
+		chance_overload += OVERLOAD_CHANCE
 	if(!C.buckled)
-		chance_overload += 30
+		chance_overload += OVERLOAD_CHANCE
 
 	if(prob(chance_overload))
 		C.adjust_disgust(disgust_amount)
 
-	if(disgust_amount > 0 && world.time - last_overload_throw > 20 && !C.anchored && !C.buckled)
-		last_overload_throw = world.time
+	if(disgust_amount > 0 && world.time - ship.last_overload_throw > OVERLOAD_COOLDOWN && !C.anchored && !C.buckled)
+		ship.last_overload_throw = world.time
 		C.throw_at(get_ranged_target_turf(C, angle2dir(ang), range = round(overload_st)), range = round(overload_st/2), speed = round(overload_st/2), thrower = C)
 
 #undef OVERLOAD_FACTOR
+#undef OVERLOAD_CHANCE
+#undef OVERLOAD_COOLDOWN
+#undef OVERLOAD_THROW_RANGE_MAX
