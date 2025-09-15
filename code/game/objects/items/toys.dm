@@ -1210,7 +1210,7 @@
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/toy/figure/clown
 	name = "Clown action figure"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/toy.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/toy.dmi'
 	icon_state = "clown"
 	toysay = "Honk!"
 	toysound = 'sound/items/bikehorn.ogg'
@@ -1283,7 +1283,7 @@
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/toy/figure/mime
 	name = "Mime action figure"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/toy.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/toy.dmi'
 	icon_state = "mime"
 	toysay = "..."
 	toysound = null

@@ -78,7 +78,7 @@ ID мода: CELADON_BITE_FERAL
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- `mods/_storge_icons/icons/actions/actions.dmi`
+- `mods/_storage_icons/icons/actions/actions.dmi`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.

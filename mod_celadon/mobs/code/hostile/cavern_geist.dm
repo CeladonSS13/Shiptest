@@ -2,7 +2,7 @@
 	name = "cavern geist"
 	desc = "A near-mythical adhomian predator, known to haunt the caverns. Its eyes sparkle with a mixture of intelligence and malice."
 	speak_emote = list("gibbers")
-	icon = 'mod_celadon/_storge_icons/icons/mobs/cavern_geist.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/mobs/cavern_geist.dmi'
 	icon_state = "geist"
 	icon_living = "geist"
 	icon_dead = "geist_dead"
@@ -33,7 +33,7 @@
 	mob_size = MOB_SIZE_LARGE
 	environment_smash = 2
 	attack_verb_simple = "mangled"
-	attack_sound = 'mod_celadon/_storge_sounds/sound/weapons/bloodyslice.ogg'
+	attack_sound = 'mod_celadon/_storage_sounds/sound/weapons/bloodyslice.ogg'
 
 	// see_invisible = SEE_INVISIBLE_NOLIGHTING
 	possible_a_intents = list(INTENT_HELP, INTENT_GRAB, INTENT_DISARM, INTENT_HARM)

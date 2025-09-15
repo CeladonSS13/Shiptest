@@ -133,7 +133,7 @@
 	C.dna.add_mutation(OLFACTION_RIOL)
 
 /obj/effect/proc_holder/spell/targeted/olfaction/riol //Риольсик снифф + меняет иконку расовой способности у риолов на красивую
-	action_icon = 'mod_celadon/_storge_icons/icons/species/riol/riol_skills.dmi'
+	action_icon = 'mod_celadon/_storage_icons/icons/species/riol/riol_skills.dmi'
 	action_icon_state = "sniff"
 
 /datum/mutation/human/olfaction/riol //Создает ген риольсокго сниффа

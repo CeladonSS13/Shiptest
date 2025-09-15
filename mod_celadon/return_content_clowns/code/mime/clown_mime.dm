@@ -2,8 +2,8 @@
 /obj/item/clothing/under/rank/civilian/mime
 	name = "mime's outfit"
 	desc = "It's not very colourful."
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/service.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/service_on_mob.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/service.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/service_on_mob.dmi'
 	icon_state = "mime"
 	item_state = "mime"
 
@@ -27,8 +27,8 @@
 /obj/item/clothing/under/rank/civilian/clown
 	name = "clown suit"
 	desc = "<i>'HONK!'</i>"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/service.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/service_on_mob.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/service.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/service_on_mob.dmi'
 	icon_state = "clown"
 	item_state = "clown"
 

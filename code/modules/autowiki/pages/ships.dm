@@ -113,11 +113,11 @@
 	hudicon.Blend(icon('icons/mob/hud.dmi', "hud[initial(to_equip.outfit.job_icon)]"), ICON_OVERLAY)
 */
 
-	if(!icon_exists('mod_celadon/_storge_icons/icons/resprite/hud/hud.dmi', "hud[initial(to_equip.outfit.faction_icon)]"))
+	if(!icon_exists('mod_celadon/_storage_icons/icons/resprite/hud/hud.dmi', "hud[initial(to_equip.outfit.faction_icon)]"))
 		return FALSE
 
-	var/icon/hudicon = icon('mod_celadon/_storge_icons/icons/resprite/hud/hud.dmi', "hud[initial(to_equip.outfit.faction_icon)]")
-	hudicon.Blend(icon('mod_celadon/_storge_icons/icons/resprite/hud/hud.dmi', "hud[initial(to_equip.outfit.job_icon)]"), ICON_OVERLAY)
+	var/icon/hudicon = icon('mod_celadon/_storage_icons/icons/resprite/hud/hud.dmi', "hud[initial(to_equip.outfit.faction_icon)]")
+	hudicon.Blend(icon('mod_celadon/_storage_icons/icons/resprite/hud/hud.dmi', "hud[initial(to_equip.outfit.job_icon)]"), ICON_OVERLAY)
 // [/CELADON-EDIT]
 	hudicon.Crop(1, 17, 8, 24)
 

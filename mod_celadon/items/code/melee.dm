@@ -3,12 +3,12 @@
 		if((NON_PROJECTILE_ATTACKS).Find(attack_type) != null)
 			var check = prob(50)
 			if(check)
-				playsound(src.loc, 'mod_celadon/_storge_sounds/sound/weapons/laser_melee.ogg', 100, TRUE)
+				playsound(src.loc, 'mod_celadon/_storage_sounds/sound/weapons/laser_melee.ogg', 100, TRUE)
 			return check
 		else if(attack_type == PROJECTILE_ATTACK)
 			var check = prob(30)
 			if(check)
-				playsound(src.loc, 'mod_celadon/_storge_sounds/sound/weapons/laser_balist.ogg', 100, TRUE)
+				playsound(src.loc, 'mod_celadon/_storage_sounds/sound/weapons/laser_balist.ogg', 100, TRUE)
 			return check
 	return FALSE
 

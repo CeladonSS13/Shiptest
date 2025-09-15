@@ -109,10 +109,10 @@
 /obj/item/shield/riot/mod
 	name = "MOD telescopic shield"
 	desc = "An advanced riot shield made of lightweight materials that collapses for easy storage."
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/eshield.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/eshield.dmi'
 	icon_state = "teleriot1"
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/eshield_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/eshield_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/eshield_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/eshield_righthand.dmi'
 	custom_materials = null
 	slot_flags = null
 	force = 3

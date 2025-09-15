@@ -2,7 +2,7 @@
 // MARK: .308
 
 /obj/item/storage/box/ammo/a308
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
 	icon_state = "a308box-HP"
 
 /obj/item/storage/box/ammo/a308/hunterspride
@@ -20,7 +20,7 @@
 // MARK: 5.56x42
 
 /obj/item/storage/box/ammo/a556_42
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
 	icon_state = "a556_42box_big"
 
 /obj/item/storage/box/ammo/a556_box/a856
@@ -32,7 +32,7 @@
 // MARK: 7.62x40
 
 /obj/item/storage/box/ammo/a762_40
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
 
 /obj/item/storage/box/ammo/a762_40/inteq
 	icon_state = "a762_40box_big_inteq"

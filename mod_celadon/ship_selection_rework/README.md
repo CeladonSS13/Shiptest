@@ -57,7 +57,7 @@ ID мода: CELADON_SHIP_SELECTION_REWORK
 - `tgui/packages/tgui/interfaces/ShipSelect.js` - основной интерфейс выбора кораблей
 - `tgui/packages/tgui/interfaces/FactionButtons.js` - компонент кнопок фракций  
 - `tgui/packages/tgui/interfaces/Application.js` - модальное окно заявки
-- `mod_celadon/_storge_icons/icons/assets/logo/*.png` - логотипы фракций
+- `mod_celadon/_storage_icons/icons/assets/logo/*.png` - логотипы фракций
 
 ### Авторы
 

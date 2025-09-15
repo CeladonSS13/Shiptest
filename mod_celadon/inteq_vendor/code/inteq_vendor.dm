@@ -74,5 +74,5 @@
 	Forced System Radiation Infusal, \n\
 	System 'black-outs' caused by ship's engine, \n\
 	And any other Space Convention violations by crew of said ships'."
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/poster_inteq_caliban.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/poster_inteq_caliban.dmi'
 	icon_state = "poster_inteq_caliban"
