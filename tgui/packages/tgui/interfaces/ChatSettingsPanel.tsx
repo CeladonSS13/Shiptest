@@ -14,33 +14,19 @@ interface Data {
   chat?: ChatSetting[];
 }
 
+const sortByDesc = (items: ChatSetting[]) => {
+  return items.sort((a, b) => {
+    const descA = a.desc.toLowerCase();
+    const descB = b.desc.toLowerCase();
+    return descA.localeCompare(descB);
+  });
+};
+
 type ChatSettingsPanelProps = {};
 export function ChatSettingsPanel(props: ChatSettingsPanelProps, context) {
   const { act, data } = useBackend<Data>(context);
-  const ghostPreSort = data.ghost || [];
-  const ghost = ghostPreSort.sort((a, b) => {
-    const descA = a.desc.toLowerCase();
-    const descB = b.desc.toLowerCase();
-    if (descA < descB) {
-      return -1;
-    }
-    if (descA > descB) {
-      return 1;
-    }
-    return 0;
-  });
-  const chatPreSort = data.chat || [];
-  const chat = chatPreSort.sort((a, b) => {
-    const descA = a.desc.toLowerCase();
-    const descB = b.desc.toLowerCase();
-    if (descA < descB) {
-      return -1;
-    }
-    if (descA > descB) {
-      return 1;
-    }
-    return 0;
-  });
+  const ghost = sortByDesc(data.ghost || []);
+  const chat = sortByDesc(data.chat || []);
   return (
     <Window title="Настройка чата" width={250} height={400}>
       <Window.Content scrollable>

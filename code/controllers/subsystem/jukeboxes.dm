@@ -33,7 +33,7 @@ SUBSYSTEM_DEF(jukeboxes)
 	var/sound/song_to_init = sound(T.song_path)
 	song_to_init.status = SOUND_MUTE
 	for(var/mob/M in GLOB.player_list)
-		if(!(M?.client.prefs.toggles & SOUND_JUKEBOX))
+		if(!(M?.client?.prefs.toggles & SOUND_JUKEBOX))
 			continue
 
 		M.playsound_local(M, null, 100, channel = youvegotafreejukebox[2], S = song_to_init)
