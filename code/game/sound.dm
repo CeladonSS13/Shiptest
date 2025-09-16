@@ -218,7 +218,7 @@ distance_multiplier - Can be used to multiply the distance at which the sound is
 			var/dot_position = findlasttext(music_name, ".")
 			if(dot_position)
 				music_name = copytext(music_name, 1, dot_position)
-			to_chat(src, span_redteamradio("<B>Проигрывается музыка в лобби: [music_name]</B>"))
+			to_chat(src, span_redteamradio("<B>Музыка в лобби: [music_name]</B>"))
 
 /proc/get_rand_frequency()
 	return rand(32000, 55000) //Frequency stuff only works with 45kbps oggs.
