@@ -213,7 +213,7 @@ distance_multiplier - Can be used to multiply the distance at which the sound is
 	if(prefs && (prefs.toggles & SOUND_LOBBY))
 		SEND_SOUND(src, sound(SSticker.login_music, repeat = 0, wait = 0, volume = vol, channel = CHANNEL_LOBBYMUSIC)) // MAD JAMS
 
-		if(Sticker.login_music_name)
+		if(SSticker.login_music_name)
 			var/music_name = SSticker.login_music_name
 			var/dot_position = findlasttext(music_name, ".")
 			if(dot_position)
