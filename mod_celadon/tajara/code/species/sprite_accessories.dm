@@ -1,3 +1,4 @@
+// MARK: Markings chest
 /datum/sprite_accessory/tajara_chest_markings
 	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_markings.dmi'
 	color_src = CHESTTAJARACOLORS
@@ -43,7 +44,32 @@
 	name = "Back stripe marks"
 	icon_state = "backstripemarks"
 
-//Markings body
+// new
+/datum/sprite_accessory/tajara_chest_markings/belly_2
+	name = "Belly alt"
+	icon_state = "belly_chest"
+
+/datum/sprite_accessory/tajara_chest_markings/belly_full_2
+	name = "Full Belly alt"
+	icon_state = "fullbelly_chest"
+
+/datum/sprite_accessory/tajara_chest_markings/belly_crest_2
+	name = "Belly Crest alt"
+	icon_state = "crest_chest"
+
+/datum/sprite_accessory/tajara_chest_markings/patch_2
+	name = "Patch alt"
+	icon_state = "patch_chest"
+
+/datum/sprite_accessory/tajara_chest_markings/tiger_2
+	name = "Tiger alt"
+	icon_state = "tiger_chest"
+
+/datum/sprite_accessory/tajara_chest_markings/cheetah
+	name = "Cheetah"
+	icon_state = "cheetah"
+
+// MARK: Markings body
 
 /datum/sprite_accessory/tajara_body_markings
 	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_markings.dmi'
@@ -94,7 +120,7 @@
 	name = "Tat tiger"
 	icon_state = "tattiger"
 
-//Markings nose
+// MARK: Markings nose
 
 /datum/sprite_accessory/tajara_nose_markings
 	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_markings.dmi'
@@ -110,7 +136,7 @@
 	icon_state = "tajnose"
 	secondary_color = FALSE
 
-//Markings ears
+// MARK: Markings ears
 /datum/sprite_accessory/tajara_ears_markings
 	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_markings.dmi'
 	color_src = EARSTAJARACOLORS
@@ -127,7 +153,7 @@
 	name = "Inears"
 	icon_state = "inears"
 
-//Markings head
+// MARK: Markings head
 /datum/sprite_accessory/tajara_head_markings
 	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_markings.dmi'
 	color_src = HEADTAJARACOLORS
@@ -188,7 +214,52 @@
 	name = "Inears"
 	icon_state = "inears"
 
-//Start tails
+// new
+/datum/sprite_accessory/tajara_head_markings/tigerhead
+	name = "Tiger head"
+	icon_state = "tiger_head"
+
+/datum/sprite_accessory/tajara_head_markings/tigerface
+	name = "Tiger face"
+	icon_state = "tiger_face"
+
+/datum/sprite_accessory/tajara_head_markings/outears
+	name = "Outer ears"
+	icon_state = "outears_head"
+
+/datum/sprite_accessory/tajara_head_markings/inears
+	name = "Inner ears"
+	icon_state = "inears_head"
+
+/datum/sprite_accessory/tajara_head_markings/muzzle
+	name = "Muzzle"
+	icon_state = "muzzle_head"
+
+/datum/sprite_accessory/tajara_head_markings/muzinears
+	name = "Muzzle and Inner ears"
+	icon_state = "muzinears_head"
+
+/datum/sprite_accessory/tajara_head_markings/nose
+	name = "Nose"
+	icon_state = "nose_head"
+
+/datum/sprite_accessory/tajara_head_markings/muzzle2
+	name = "Muzzle Alt."
+	icon_state = "muzzle2_head"
+
+/datum/sprite_accessory/tajara_head_markings/points
+	name = "Points"
+	icon_state = "points_head"
+
+/datum/sprite_accessory/tajara_head_markings/patch
+	name = "Patch"
+	icon_state = "patch_head"
+
+/datum/sprite_accessory/tajara_head_markings/cheetah
+	name = "Cheetah"
+	icon_state = "cheetah_head"
+
+// MARK: tails
 
 /datum/sprite_accessory/tails/tajara
 	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_tail.dmi'
@@ -237,7 +308,7 @@
 	name = "Short"
 	icon_state = "short"
 
-//Face hairs
+// MARK: Face hairs
 
 /datum/sprite_accessory/tajara_facial_hairs
 	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_facial_hairs.dmi'
@@ -274,7 +345,36 @@
 	name = "Small stache"
 	icon_state = "facial_hairs_smallstache"
 
-//Start Hair
+// new
+/datum/sprite_accessory/tajara_facial_hairs/goatee_2
+	name = "Goatee alt"
+	icon_state = "facial_hairs_goatee_head"
+
+/datum/sprite_accessory/tajara_facial_hairs/goatee_faded
+	name = "Faded goatee"
+	icon_state = "facial_hairs_goatee_faded_head"
+
+/datum/sprite_accessory/tajara_facial_hairs/moustache_2
+	name = "Moustache alt"
+	icon_state = "facial_hairs_moustache_head"
+
+/datum/sprite_accessory/tajara_facial_hairs/faccial_mutton
+	name = "Facial_mutton"
+	icon_state = "facial_hairs_facial_mutton_head"
+
+/datum/sprite_accessory/tajara_facial_hairs/pencilstache_2
+	name = "Pencilstache alt"
+	icon_state = "facial_hairs_pencilstache_head"
+
+/datum/sprite_accessory/tajara_facial_hairs/sideburns_2
+	name = "Sideburns alt"
+	icon_state = "facial_hairs_sideburns_head"
+
+/datum/sprite_accessory/tajara_facial_hairs/smallstache_2
+	name = "Smallstache alt"
+	icon_state = "facial_hairs_smallstache_head"
+
+// MARK: Hair
 
 /datum/sprite_accessory/tajara_hairs
 	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_hairs.dmi'
@@ -472,7 +572,161 @@
 	name = "Tajara Swoop Long Alt"
 	icon_state = "hairs_longswoop_alt"
 
-//Start Ears
+// news
+/datum/sprite_accessory/tajara_hairs/braid_2
+	name = "Tajaran Braid"
+	icon_state = "hairs_no_ears_braid"
+
+/datum/sprite_accessory/tajara_hairs/clean_2
+	name = "Tajaran Clean"
+	icon_state = "hairs_no_ears_clean"
+
+/datum/sprite_accessory/tajara_hairs/bangs_2
+	name = "Tajaran Bangs"
+	icon_state = "hairs_no_ears_bangs"
+
+/datum/sprite_accessory/tajara_hairs/shaggy_2
+	name = "Tajaran Shaggy"
+	icon_state = "hairs_no_ears_shaggy"
+
+/datum/sprite_accessory/tajara_hairs/mohawk_2
+	name = "Tajaran Mohawk"
+	icon_state = "hairs_no_ears_mohawk"
+
+/datum/sprite_accessory/tajara_hairs/plait_2
+	name = "Tajaran Plait"
+	icon_state = "hairs_no_ears_plait"
+
+/datum/sprite_accessory/tajara_hairs/straight_2
+	name = "Tajaran Straight"
+	icon_state = "hairs_no_ears_straight"
+
+/datum/sprite_accessory/tajara_hairs/long_2
+	name = "Tajaran Long"
+	icon_state = "hairs_no_ears_long"
+
+/datum/sprite_accessory/tajara_hairs/rattail_2
+	name = "Tajaran Rattail"
+	icon_state = "hairs_no_ears_rattail"
+
+/datum/sprite_accessory/tajara_hairs/spikey_2
+	name = "Tajaran Spikey"
+	icon_state = "hairs_no_ears_spikey"
+
+/datum/sprite_accessory/tajara_hairs/messy_2
+	name = "Tajaran Messy"
+	icon_state = "hairs_no_ears_messy"
+
+/datum/sprite_accessory/tajara_hairs/ladiesretro_2
+	name = "Tajaran Ladiesretro"
+	icon_state = "hairs_no_ears_ladiesretro"
+
+/datum/sprite_accessory/tajara_hairs/victory_2
+	name = "Tajaran Victory"
+	icon_state = "hairs_no_ears_victory"
+
+/datum/sprite_accessory/tajara_hairs/bob_2
+	name = "Tajaran Bob"
+	icon_state = "hairs_no_ears_bob"
+
+/datum/sprite_accessory/tajara_hairs/marmalade
+	name = "Tajaran Marmalade"
+	icon_state = "hairs_no_ears_marmalade"
+
+/datum/sprite_accessory/tajara_hairs/stasy_morning
+	name = "Tajaran Stasy Morning"
+	icon_state = "hairs_no_ears_stasy_morning"
+
+/datum/sprite_accessory/tajara_hairs/punk_lying
+	name = "Tajaran Punk Lying"
+	icon_state = "hairs_no_ears_punk_lying"
+
+/datum/sprite_accessory/tajara_hairs/inari
+	name = "Tajaran Inari"
+	icon_state = "hairs_no_ears_inari"
+	// hair_appendages_inner = list("inari_a1" = HAIR_APPENDAGE_HANGING_REAR)
+
+/datum/sprite_accessory/tajara_hairs/frontbraids
+	name = "Tajaran Frontbraids"
+	icon_state = "hairs_no_ears_frontbraids"
+
+/datum/sprite_accessory/tajara_hairs/flipped
+	name = "Tajaran Flipped"
+	icon_state = "hairs_no_ears_flipped"
+
+/datum/sprite_accessory/tajara_hairs/cotton
+	name = "Tajaran Cotton"
+	icon_state = "hairs_no_ears_cotton"
+
+/datum/sprite_accessory/tajara_hairs/cottonalt
+	name = "Tajaran Cotton Alt."
+	icon_state = "hairs_no_ears_cottonalt"
+
+/datum/sprite_accessory/tajara_hairs/baum
+	name = "Tajaran Baum"
+	icon_state = "hairs_no_ears_baum"
+
+/datum/sprite_accessory/tajara_hairs/twintail
+	name = "Tajaran Twintail"
+	icon_state = "hairs_no_ears_twintail"
+
+/datum/sprite_accessory/tajara_hairs/stacy
+	name = "Tajaran Stacy"
+	icon_state = "hairs_no_ears_stacy"
+
+/datum/sprite_accessory/tajara_hairs/himecut2
+	name = "Tajaran Himecut"
+	icon_state = "hairs_no_ears_himecut2"
+
+/datum/sprite_accessory/tajara_hairs/himeup
+	name = "Tajaran Hime-up"
+	icon_state = "hairs_no_ears_himeup"
+
+/datum/sprite_accessory/tajara_hairs/pigtails
+	name = "Tajaran Pigtails"
+	icon_state = "hairs_no_ears_pigtails"
+
+/datum/sprite_accessory/tajara_hairs/shortovereye
+	name = "Tajaran Short Overeye"
+	icon_state = "hairs_no_ears_shortovereye"
+
+/datum/sprite_accessory/tajara_hairs/drillhairextended
+	name = "Tajaran Drill Hair Extended"
+	icon_state = "hairs_no_ears_drillhairextended"
+
+/datum/sprite_accessory/tajara_hairs/long3
+	name = "Tajaran Long"
+	icon_state = "hairs_no_ears_long3"
+
+/datum/sprite_accessory/tajara_hairs/rosa
+	name = "Tajaran Rosa"
+	icon_state = "hairs_no_ears_rosa"
+
+/datum/sprite_accessory/tajara_hairs/eighties
+	name = "Tajaran 80s"
+	icon_state = "hairs_no_ears_80s"
+
+/datum/sprite_accessory/tajara_hairs/country
+	name = "Tajaran Country"
+	icon_state = "hairs_no_ears_country"
+
+/datum/sprite_accessory/tajara_hairs/ponytail7
+	name = "Tajaran Side Ponytail"
+	icon_state = "hairs_no_ears_ponytail7"
+
+/datum/sprite_accessory/tajara_hairs/spikyponytail
+	name = "Tajaran Spiky Ponytail"
+	icon_state = "hairs_no_ears_spikyponytail"
+
+/datum/sprite_accessory/tajara_hairs/overeyetwo
+	name = "Tajaran Overeye Alt."
+	icon_state = "hairs_no_ears_overeyetwo"
+
+/datum/sprite_accessory/tajara_hairs/allthefuzz
+	name = "Tajaran Allthefuzz"
+	icon_state = "hairs_no_ears_allthefuzz"
+
+// MARK: Ears
 
 /datum/sprite_accessory/tajara_ears
 	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_ears.dmi'
