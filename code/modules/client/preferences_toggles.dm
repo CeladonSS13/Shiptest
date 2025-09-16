@@ -18,26 +18,26 @@
 
 /datum/verbs/menu/Settings/verb/setup_character()
 	set name = "Настройки"
-	set category = "Настройки"
+	set category = "Preferences"
 	set desc = "Основные настройки"
 	usr.client.prefs.current_tab = 2
 	usr.client.prefs.ShowChoices(usr)
 
 /datum/verbs/menu/Settings/verb/setup_sound()
 	set name = "Звук"
-	set category = "Настройки"
+	set category = "Preferences"
 	set desc = "Настройки звука"
 	new /datum/sound_panel(usr)
 
 /datum/verbs/menu/Settings/verb/setup_chat()
 	set name = "Чат"
-	set category = "Настройки"
+	set category = "Preferences"
 	set desc = "Настройки чата"
 	new /datum/chat_settings_panel(usr)
 
 /datum/verbs/menu/Settings/verb/stop_client_sounds()
 	set name = "Починить звук"
-	set category = "Особенное"
+	set category = "Special Verbs"
 	set desc = "Остановить звуки"
 	SEND_SOUND(usr, sound(null))
 	var/client/C = usr.client
