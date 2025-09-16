@@ -225,6 +225,7 @@
 	color = "#2d2a4e"
 	},
 /obj/item/bedsheet/solgov,
+/obj/machinery/light/directional/south,
 /turf/open/floor/suns/hatch/walnut,
 /area/ship/crew/dorm)
 "bS" = (
@@ -261,21 +262,15 @@
 /area/ship/crew/dorm/captain)
 "cp" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/three_quarters,
-/obj/structure/table/glass,
-/obj/item/paper_bin{
-	pixel_y = 6
+/obj/item/radio/intercom/wideband/directional/north{
+	pixel_y = 0;
+	dir = 2;
+	pixel_x = -1
 	},
-/obj/item/stamp/solfed/captain{
-	pixel_y = 8
+/obj/item/radio/intercom/table{
+	pixel_y = -7
 	},
-/obj/item/reagent_containers/food/drinks/modglass/large{
-	pixel_y = 7;
-	pixel_x = -6
-	},
-/obj/item/reagent_containers/food/drinks/bottle/wine{
-	pixel_y = 7;
-	pixel_x = 6
-	},
+/obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "cI" = (
@@ -787,15 +782,14 @@
 	pixel_x = 32;
 	pixel_y = 6
 	},
-/obj/structure/table/glass,
-/obj/item/radio/intercom/wideband/directional/north{
-	pixel_y = 10
-	},
 /obj/machinery/button/door{
 	dir = 8;
 	pixel_y = -7;
 	pixel_x = 23;
 	id = "chronicle_bridge"
+	},
+/obj/machinery/computer/camera_advanced{
+	dir = 8
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
@@ -1124,6 +1118,9 @@
 	pixel_x = 1
 	},
 /obj/machinery/light/directional/north,
+/obj/machinery/camera/autoname{
+	dir = 8
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew/crewtwo)
 "lV" = (
@@ -1178,14 +1175,19 @@
 	pixel_y = 1;
 	pixel_x = -8
 	},
+/obj/item/paper_bin{
+	pixel_y = 6
+	},
 /obj/item/folder/solfed{
 	pixel_x = 5
 	},
 /obj/item/pen/solgov{
 	pixel_x = 4
 	},
-/obj/item/dice/d20,
 /obj/structure/table/wood/fancy/blue,
+/obj/item/stamp/solfed/captain{
+	pixel_y = 8
+	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "mA" = (
@@ -1373,6 +1375,7 @@
 	dir = 10;
 	color = "#c9ecf0"
 	},
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/plasteel/freezer,
 /area/ship/crew/toilet)
 "nX" = (
@@ -1441,6 +1444,7 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
+/obj/structure/sign/flag/solfed/directional/east,
 /turf/open/floor/wood/birch,
 /area/ship/crew/dorm)
 "oC" = (
@@ -1472,9 +1476,6 @@
 /obj/effect/turf_decal/siding/wood{
 	color = "#332521";
 	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
@@ -1538,20 +1539,6 @@
 /obj/machinery/door/poddoor/shutters{
 	id = "chronicle_dorm";
 	name = "Blast Shutters"
-	},
-/obj/machinery/button/door{
-	pixel_y = 11;
-	pixel_x = 22;
-	dir = 8;
-	name = "window shutter control";
-	id = "chronicle_dorm"
-	},
-/obj/machinery/button/door{
-	pixel_y = 11;
-	pixel_x = 22;
-	dir = 8;
-	name = "window shutter control";
-	id = "chronicle_dorm"
 	},
 /turf/open/floor/plating,
 /area/ship/crew/canteen)
@@ -2611,12 +2598,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/canteen)
 "yu" = (
-/obj/machinery/button/door{
-	dir = 4;
-	pixel_y = -10;
-	pixel_x = -22;
-	id = "sgc_engine"
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
@@ -3073,11 +3054,11 @@
 /turf/closed/wall/mineral/titanium,
 /area/ship/engineering)
 "CU" = (
-/obj/structure/sign/flag/solfed/directional/south{
-	dir = 1
+/obj/structure/catwalk/over,
+/obj/machinery/camera/autoname{
+	dir = 5
 	},
-/obj/effect/turf_decal/industrial/warning/dust,
-/turf/open/floor/engine/hull,
+/turf/open/floor/plating/airless,
 /area/ship/external)
 "Da" = (
 /obj/machinery/light/directional/east{
@@ -3368,14 +3349,11 @@
 /area/ship/external)
 "Gt" = (
 /obj/machinery/camera/autoname{
-	dir = 4
-	},
-/obj/machinery/porta_turret/ship/solfed/heavy{
-	dir = 10;
-	id = "chronicle_turrets"
+	dir = 8;
+	pixel_x = -32
 	},
 /turf/closed/wall/mineral/titanium,
-/area/ship/bridge)
+/area/ship/crew/crewtwo)
 "Gu" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30"
@@ -3963,9 +3941,6 @@
 	req_one_access = list(61,11);
 	color = "#d727f2"
 	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /turf/open/floor/wood/walnut,
 /area/ship/bridge)
 "LC" = (
@@ -4542,6 +4517,9 @@
 /obj/machinery/computer/helm{
 	dir = 8
 	},
+/obj/structure/table/emptycomputer{
+	dir = 8
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "Sv" = (
@@ -4715,9 +4693,6 @@
 /obj/item/clothing/suit/toggle/labcoat/science,
 /obj/item/storage/belt/utility/full/engi,
 /obj/item/clothing/shoes/laceup,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
 /turf/open/floor/carpet/purple,
 /area/ship/bridge)
 "Uh" = (
@@ -4942,40 +4917,17 @@
 /turf/closed/wall/mineral/titanium,
 /area/ship/general/science/rnd)
 "We" = (
-/obj/structure/closet/cabinet,
-/obj/item/clothing/suit/solgov/dress,
-/obj/item/clothing/suit/solgov/jacket,
-/obj/item/radio/headset,
-/obj/item/radio/headset,
-/obj/item/radio/headset,
-/obj/item/radio/headset,
-/obj/item/radio,
-/obj/item/radio,
-/obj/item/clothing/under/solgov,
-/obj/item/clothing/under/solgov,
-/obj/item/clothing/under/solgov/dress,
-/obj/item/clothing/under/solgov/dress,
-/obj/item/clothing/suit/solgov/jacket,
-/obj/item/clothing/suit/solgov/dress,
-/obj/item/clothing/neck/cloak/gezena{
-	desc = "dark cape of a marine scout of the Solar Federation";
-	name = "\improper dark cape"
+/obj/machinery/camera/autoname{
+	dir = 8;
+	pixel_x = -32
 	},
-/obj/item/clothing/under/solgov,
-/obj/item/clothing/under/solgov,
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/suns/hatch/walnut,
-/area/ship/crew/dorm)
+/turf/closed/wall/mineral/titanium,
+/area/ship/crew/canteen)
 "Wj" = (
 /obj/effect/turf_decal/industrial/warning/dust,
 /turf/open/floor/engine/hull,
 /area/ship/external)
 "Wn" = (
-/obj/machinery/light_switch{
-	pixel_x = 20;
-	dir = 8;
-	pixel_y = 9
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 4
 	},
@@ -5090,11 +5042,6 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/obj/machinery/firealarm/directional/west{
-	dir = 1;
-	pixel_x = 0;
-	pixel_y = -15
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	icon_state = "pipe11-4";
 	dir = 5
@@ -5102,6 +5049,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 5
 	},
+/obj/machinery/firealarm/directional/south,
 /turf/open/floor/hangar/plasteel/dark,
 /area/ship/hallway/aft)
 "Xf" = (
@@ -5191,12 +5139,11 @@
 /area/ship/crew/canteen)
 "XN" = (
 /obj/structure/bed,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/south,
+/obj/item/bedsheet/solgov,
 /obj/structure/curtain/cloth{
 	color = "#2d2a4e"
 	},
-/obj/item/bedsheet/solgov,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/suns/hatch/walnut,
 /area/ship/crew/dorm)
@@ -5323,11 +5270,6 @@
 /area/ship/general/science/rnd)
 "ZN" = (
 /obj/machinery/firealarm/directional/west,
-/obj/machinery/light_switch{
-	dir = 4;
-	pixel_x = -22;
-	pixel_y = -11
-	},
 /obj/structure/table/optable,
 /obj/effect/turf_decal/corner/opaque/blue/half{
 	dir = 8
@@ -5672,7 +5614,7 @@ rD
 AN
 pF
 rH
-vR
+We
 vR
 az
 rw
@@ -5685,7 +5627,7 @@ zx
 Qy
 xC
 ME
-wv
+Gt
 ge
 Tn
 AN
@@ -5804,7 +5746,7 @@ oC
 Hz
 wv
 wv
-Gt
+vd
 rD
 rD
 rD
@@ -6224,7 +6166,7 @@ ow
 ti
 Pt
 sp
-qP
+CU
 rD
 rD
 rD
@@ -6234,7 +6176,7 @@ rD
 rD
 rD
 rD
-qP
+CU
 mt
 rZ
 wi
@@ -6282,7 +6224,7 @@ AU
 sT
 RV
 Gy
-CU
+Wj
 rD
 rD
 rD
@@ -6338,7 +6280,7 @@ Gy
 SH
 vQ
 nw
-We
+Pt
 Gy
 Wj
 rD
