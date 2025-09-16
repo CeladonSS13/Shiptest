@@ -197,10 +197,6 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	null, \
 	new/datum/stack_recipe("plasteel floor tile", /obj/item/stack/tile/plasteel, 1, 4, 20), \
 	new/datum/stack_recipe("metal rod", /obj/item/stack/rods, 1, 2, 60), \
-	// [CELADON-ADD] - CRAFTING_RECIPE_SUNS
-	null, \
-	new/datum/stack_recipe("dark grid tile", /obj/item/stack/tile/suns/grid, 1, req_amount = list(/obj/item/stack/sheet/mineral/sandstone = 1)), \
-	// [/CELADON-ADD]
 	null, \
 	new/datum/stack_recipe("wall girders", /obj/structure/girder, 2, time = 40, one_per_turf = TRUE, on_floor = TRUE, trait_booster = TRAIT_QUICK_BUILD, trait_modifier = 0.75), \
 	null, \
