@@ -48,9 +48,9 @@
 			if(W.hitsound)
 				// [CELADON-EDIT] - CELADON_QOL
 				// playsound(get_turf(src), 'sound/weapons/bladeslice.ogg', 100, FALSE, FALSE)		// CELADON-EDIT - ORIGINAL
-				playsound(get_turf(src), pick('mod_celadon/_storge_sounds/sound/trees/treechop1.ogg',
-											'mod_celadon/_storge_sounds/sound/trees/treechop2.ogg',
-											'mod_celadon/_storge_sounds/sound/trees/treechop3.ogg'), 100, FALSE, FALSE)
+				playsound(get_turf(src), pick('mod_celadon/_storage_sounds/sound/trees/treechop1.ogg',
+											'mod_celadon/_storage_sounds/sound/trees/treechop2.ogg',
+											'mod_celadon/_storage_sounds/sound/trees/treechop3.ogg'), 100, FALSE, FALSE)
 				// [/CELADON-EDIT]
 				user.visible_message(span_notice("[user] begins to cut down [src] with [W]."),span_notice("You begin to cut down [src] with [W]."), span_hear("You hear the sound of sawing."))
 			// [CELADON-EDIT] - CELADON_QOL
@@ -60,7 +60,7 @@
 				user.visible_message(span_notice("[user] fells [src] with the [W]."),span_notice("You fell [src] with the [W]."), span_hear("You hear the sound of a tree falling."))
 				// [CELADON-EDIT] - CELADON_QOL
 				// playsound(get_turf(src), 'sound/effects/meteorimpact.ogg', 100 , FALSE, FALSE) // CELADON-EDIT - ORIGINAL
-				playsound(get_turf(src), 'mod_celadon/_storge_sounds/sound/trees/zvuk-padayuschego-dereva.ogg', 100 , FALSE, FALSE)
+				playsound(get_turf(src), 'mod_celadon/_storage_sounds/sound/trees/zvuk-padayuschego-dereva.ogg', 100 , FALSE, FALSE)
 				// [/CELADON-EDIT]
 				user.log_message("cut down [src] at [AREACOORD(src)]", LOG_ATTACK)
 				for(var/i=1 to log_amount)
@@ -409,7 +409,7 @@
 	. = ..()
 	// [CELADON-EDIT] - CELADON_FLORA
 	// icon = 'icons/obj/flora/plants.dmi' // CELADON-EDIT - ORIGINAL
-	icon = 'mod_celadon/_storge_icons/icons/structures/obj/flora/plants.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/flora/plants.dmi'
 	// [/CELADON-EDIT]
 	if(!states)
 		generate_states()

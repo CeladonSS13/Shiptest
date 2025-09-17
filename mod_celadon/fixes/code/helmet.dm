@@ -12,10 +12,10 @@
 */
 
 /obj/item/proc/get_helmet_overlays()  // returns the icon for overlaying on a helmet
-	return mutable_appearance('mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/helmet_overlays.dmi', icon_state)
+	return mutable_appearance('mod_celadon/_storage_icons/icons/items/clothing/eyes/overlay/helmet_overlays.dmi', icon_state)
 
 /obj/item/proc/get_helmet_overlays_icon()
-	return mutable_appearance('mod_celadon/_storge_icons/icons/items/clothing/eyes/helmet_overlays.dmi', icon_state)
+	return mutable_appearance('mod_celadon/_storage_icons/icons/items/clothing/eyes/helmet_overlays.dmi', icon_state)
 
 // MARK: Null Pockets
 

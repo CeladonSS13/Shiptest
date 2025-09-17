@@ -14,7 +14,7 @@
 // #define FIRE 	"fire"
 // #define ACID 	"acid"
 #define MAGIC 	"magic"
-#define WOUND 	"wound"
+//#define WOUND 	"wound"
 // [/CELADON-ADD]
 #define ARMORID "armor-[melee]-[bullet]-[laser]-[energy]-[bomb]-[bio]-[rad]-[fire]-[acid]-[magic]-[wound]"
 

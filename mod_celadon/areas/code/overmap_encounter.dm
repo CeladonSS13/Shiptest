@@ -44,3 +44,6 @@
 
 /area/overmap_encounter/planetoid/moon/explored
 	area_flags = VALID_TERRITORY
+
+/area/overmap_encounter/planetoid/shrouded/explored
+	area_flags = VALID_TERRITORY

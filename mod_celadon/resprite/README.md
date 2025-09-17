@@ -64,7 +64,6 @@ JETPACK_RESPRITE
 - EDIT: `code\modules\instruments\stationary.dm`: `/obj/structure/musician/piano/Initialize(mapload)` -> изменен прок на выборку спрайта пиано
 
 CELADON_ADD_HUDS
-- ADD: `code/game/objects/items/cards_ids.dm` : Добавлена иконка професии для дебаг-аутфита
 - EDIT: `code/modules/admin/team_panel.dm` : 	Замена путей хадов на наши
 - EDIT: `code/modules/autowiki/pages/ships.dm` :	Выше ^
 - EDIT: `code/modules/mob/mob.dm` :					Выше ^
@@ -104,12 +103,12 @@ JETPACK_RESPRITE
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- `mod_celadon/_storge_icons/icons/resprite`
-- `mod_celadon/_storge_icons/icons/helms_snouted.dmi`
-- `mod_celadon/_storge_icons/icons/mask_snouted.dmi`
-- `mod_celadon/_storge_icons/icons`
-- `mod_celadon/_storge_icons/icons/items/clothing/head/helmet_celadon.dmi`
-- `mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo_boxes.dmi`
+- `mod_celadon/_storage_icons/icons/resprite`
+- `mod_celadon/_storage_icons/icons/helms_snouted.dmi`
+- `mod_celadon/_storage_icons/icons/mask_snouted.dmi`
+- `mod_celadon/_storage_icons/icons`
+- `mod_celadon/_storage_icons/icons/items/clothing/head/helmet_celadon.dmi`
+- `mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo_boxes.dmi`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.

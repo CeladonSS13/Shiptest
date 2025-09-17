@@ -464,7 +464,7 @@
  *
  * * dock_target - The overmap datum to dock to. Cannot be null.
  */
-/datum/overmap/proc/Dock(datum/overmap/dock_target, obj/docking_port/stationary/override_dock, force = FALSE)
+/datum/overmap/proc/Dock(datum/overmap/dock_target, obj/docking_port/stationary/override_dock, force = FALSE)	// [OVERWRITE] - FIXES_DOCKING - mod_celadon/fixes/code/dock_empty_space_fix.dm
 	SHOULD_CALL_PARENT(TRUE)
 	if(!istype(dock_target))
 		CRASH("Overmap datum [src] tried to dock to an invalid overmap datum.")

@@ -236,7 +236,10 @@
 			interference_level += data["interference"]
 			///If we are an observer, we get the unaltered messsage along with a % of how much of the message is corrupted to non-ghosts.
 			if(isobserver(hearer))
-				var/temp_message = message + " ([data["interference"]]% interference)"
+// [CELADON-EDIT] - Interference -> Радио Помехи
+//				var/temp_message = message + " ([data["interference"]]% interference)" // CELADON-EDIT - ORIGINAL
+				var/temp_message = message + " ([data["interference"]]% радиопомехи)"
+// [/CELADON-EDIT]
 				var/temp_rendered = virt.compose_message(virt, language, message, frequency, spans)
 				hearer.Hear(temp_rendered, virt, language, temp_message, frequency, spans, message_mods, radiosound)
 				continue
@@ -270,7 +273,10 @@
 	var/lang_name = data["language"]
 	var/log_text = "\[[get_radio_name(frequency)]\] [spans_part]\"[message]\" (language: [lang_name])"
 	if(data["interference"])
-		log_text += " ([data["interference"]]% interference)"
+// [CELADON-EDIT] - Interference -> Радио Помехи
+//		log_text += " ([data["interference"]]% interference)"// CELADON-EDIT - ORIGINAL
+		log_text += " ([data["interference"]]% радиопомехи)"
+// [/CELADON-EDIT]
 
 	var/mob/source_mob = virt.source
 	if(istype(source_mob))

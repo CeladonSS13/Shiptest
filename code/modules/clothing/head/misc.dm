@@ -141,7 +141,7 @@
 /obj/item/clothing/head/rice_hat
 	name = "rice hat"
 	desc = "Welcome to the rice fields, motherfucker."
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/hats.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/hats.dmi'
 	icon_state = "rice_hat"
 // [/CELADON-ADD]
 

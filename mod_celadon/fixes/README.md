@@ -15,6 +15,7 @@
 ID мода: 
 CELADON_FIXES
 CELADON_FIXES_BLOOD
+CELADON_FIXES_DEBUG_ROOM
 FIX_DISPLAY_TRUSTER
 FIXES_ICON_IN_HAND_MOB
 FIXES_ICON
@@ -25,6 +26,7 @@ FIXES_GOLIATH_TENTACLES
 FIXES_SHIP_LOGIN_DOUBLE_NAME
 FIXES_WETHIDE
 FIXES_DRILLCLASS
+FIXES_MOTH_EATING_CLOTHING
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -180,6 +182,69 @@ FIXES_DRILLCLASS - **Фикс бесконечного спавна мобов �
 - EDIT: `code/modules/mining/ore_veins.dm` - Добавлена проверка `QDELETED(our_drill)` в `increment_wave_tally()` для защиты от удаленных буров
 - EDIT: `code/modules/mining/ore_veins.dm` - Балансировка жил класса 4: `max_mobs = 4` (было 6), `spawn_time = 12 SECONDS` (было 8), `wave_length = 30 SECONDS` (было 45)
 
+FIXES_MOVE_DIAGONAL_MOBS
+- EDIT: `code/modules/mob/living/simple_animal/simple_animal.dm`
+
+FIXES_DEBUG_SUIT
+- ADD: `code/modules/clothing/spacesuits/hardsuit.dm` - Добавляем сообщение и звуки сьютам когда те переключают фонарики, в частности это для дебаг сьюта
+
+FIXES_MOTH_EATING_CLOTHING
+- EDIT: `code/modules/clothing/clothing.dm` - Фикс поедание молями еды в виде одежды. Убираем создание временных новых объектов еды, обращаемся напрямую к объектам еды
+
+FIXES_PIZZABOX_AND_PIZZA - фиксим коробки с пиццей и возможность расам есть любимое блюдо с их ингридиентами, даже если там есть то что они не любят
+- ADD: `code/modules/food_and_drinks/pizzabox.dm`
+- ADD: `code/datums/components/food/edible.dm`
+
+FIXES_NETWORK_NT
+- ADD: `code/modules/modular_computers/file_system/programs/ntdownloader.dm` - показываем информацию о отсутвующей сети
+
+FIXES_TESLA_ON_OVERMAP
+- EDIT: `code/modules/power/tesla/energy_ball.dm`
+
+FIXES_VORACIOUS
+- ADD: `code/datums/components/food/edible.dm` - добавляем проверку на квирк и ускоряем процес поедания в 2 раза
+
+FIXES_JUKEBOX
+- EDIT: `code/controllers/subsystem/jukeboxes.dm` - правим нахождение звука и типа, для работы muz-tv. Попытка исправить просачивание музыки сквозь EDGE
+
+CELADON_FIXES_DEBUG_ROOM
+- EDIT: `code/modules/awaymissions/super_secret_room.dm` - фиксит сообщения для чата
+- ADD: `code/modules/awaymissions/signpost.dm` - фиксит лестницу, тепешает на координаты 139, 31, 3
+
+FIXES_AMBIENT_NO_EARS
+- ADD: `code/controllers/subsystem/ambience.dm` - Проверка на уши для эмбиента
+
+FIXES_REPAIR_BONE_COMPOUND
+- EDIT: `code/modules/surgery/bone_fractures.dm` - Исправил неверное название прока
+
+FIXES_SPAWN_SHIP
+- EDIT: `code/controllers/subsystem/overmap.dm` - Изменен порядок приоритетов, теперь space_spawn имеет выше приоритет над позицией
+
+CRUSHER_MARK_ON_MOBS
+- EDIT: `code/datums/status_effects/debuffs.dm` - изменения от Ганзы
+- ADD: `code/datums/status_effects/debuffs.dm` - добавляем проверку на труп для метки крашера
+- REMOVE: `code/modules/mining/equipment/kinetic_crusher.dm` - изменения от Ганзы
+- ADD: `code/modules/mining/equipment/kinetic_crusher.dm` - добавляем проверку на труп для метки крашера
+
+FIXES_JELLY_BLOOD
+- EDIT, ADD: `code/modules/mob/living/carbon/human/species_types/jellypeople.dm` - Фиксим уровень крови здоровья
+
+FIXES_MOB_SPAWNER
+- REMOVE: `code/modules/mining/ore_veins.dm` - убраны селинги из спавнера Т3 бура в джунглях
+
+FIXES_CALL_TO_SHIP
+- ADD: `code/game/machinery/hologram.dm` - добавлено возвращение TRUE, чтобы интерфейс обновлялся
+
+FIXES_ICON_OUT_OF_BORDER
+- ADD, EDIT: `code/datums/components/storage/ui.dm` - чиним позиционирование иснтрументов в контейнерах
+- ADD: `code/datums/components/storage/concrete/_concrete.dm`
+
+FIXES_MODSUITS
+- ADD, REMOVE, EDIT: `code/modules/mod/modules/modules_antag.dm` - Выпиливаем неиспользуемые и сломанные опции модов
+
+FIXES_DYNAMIC_MISSION
+- EDIT: `code/modules/overmap/objects/dynamic_datum.dm` - Изменена логика в функции can_reset_dynamic(). Теперь объект не будет диспавниться если миссия все еще может быть завершена
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -191,6 +256,11 @@ FIXES_DRILLCLASS - **Фикс бесконечного спавна мобов �
 ### Оверрайды
 
 - `mod_celadon/fixes/code/research_mission.dm` - вроде перезаписывает
+
+dock_empty_space_fix.dm:
+- `Dock(datum/overmap/to_dock, datum/docking_ticket/ticket, force = FALSE)`
+- `dock_in_empty_space()`
+- `post_undocked(datum/overmap/dock_requester)`
 
 <!-- fax_name -->
 <!-- 

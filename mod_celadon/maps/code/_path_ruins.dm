@@ -70,6 +70,10 @@
 	prefix = "_maps/_mod_celadon/RandomRuins/WaterRuins/"
 	ruin_type = RUINTYPE_WATER
 	cost = 1
+/datum/map_template/ruin/shrouded
+	prefix = "_maps/_mod_celadon/RandomRuins/ShroudedRuins/"
+	ruin_type = RUINTYPE_SHROUDED
+	cost = 1
 /datum/map_template/ruin/desert
 	prefix = "_maps/_mod_celadon/RandomRuins/DesertRuins/"
 	ruin_type = RUINTYPE_DESERT
