@@ -9,7 +9,7 @@
 	glass_desc = "Warm milk and some mint."
 
 /datum/reagent/consumable/ethanol/frisky_kitty/expose_mob(mob/living/M, methods, reac_volume)
-	if(istajara(M))
+	if(istajaran(M))
 		quality = DRINK_FANTASTIC
 	else
 		quality = DRINK_GOOD
@@ -36,7 +36,7 @@
 	glass_desc = "You'd think something so balanced milk and cream."
 
 /datum/reagent/consumable/milkshake/expose_mob(mob/living/M, methods, reac_volume)
-	if(istajara(M))
+	if(istajaran(M))
 		quality = DRINK_FANTASTIC
 	else
 		quality = DRINK_GOOD

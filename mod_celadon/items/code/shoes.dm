@@ -51,7 +51,7 @@
 	icon_state = "heels_black"
 	item_state = "heels_black"
 
-/obj/item/clothing/shoes/galoshes/tajara_galoshes
+/obj/item/clothing/shoes/galoshes/tajaran_galoshes
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/miscellaneous.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/miscellaneous.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/left_miscellaneous.dmi'

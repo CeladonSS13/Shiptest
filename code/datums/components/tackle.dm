@@ -296,7 +296,7 @@
 				defense_mod += 1
 
 		// [CELADON-ADD] - SPECIES_TAJARAN - Tajara without tails are off-balance
-		if(istajara(T))
+		if(istajaran(T))
 			if(!T.getorganslot(ORGAN_SLOT_TAIL))
 				defense_mod -= 1
 		// [/CELADON-ADD]

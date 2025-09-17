@@ -150,7 +150,7 @@
 	slowdown = 0.2
 	// [CELADON-EDIT] - SPECIES_TAJARAN, CELADON_RIOL
 	// supports_variations = DIGITIGRADE_VARIATION // CELADON-EDIT - ORIGINAL
-	supports_variations = DIGITIGRADE_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
+	supports_variations = DIGITIGRADE_VARIATION | TAJARAN_VARIATION | RIOL_VARIATION
 	// [/CELADON-EDIT]
 
 /obj/item/clothing/suit/hazardvest/solgov

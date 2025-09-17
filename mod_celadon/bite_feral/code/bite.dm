@@ -1,5 +1,5 @@
 
-/mob/living/carbon/human/proc/bite_feral_switch() // Lizard, Tajara
+/mob/living/carbon/human/proc/bite_feral_switch() // Lizard, Tajaran
 	set name = "> Кусаться/Перестать кусаться ►"
 	set category = "Эмоции"
 	if(dna.species.attack_verb == ATTACK_EFFECT_BITE)

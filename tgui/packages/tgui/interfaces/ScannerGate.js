@@ -68,7 +68,7 @@ const TARGET_SPECIES_LIST = [
   },
   // [CELADON-ADD] - SPECIES_TAJARAN
   {
-    name: 'Tajara',
+    name: 'Tajaran',
     value: 'tajaran',
   },
   // [/CELADON-ADD]

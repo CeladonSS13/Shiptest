@@ -51,7 +51,7 @@ var/timer = 20
 	set category = "Эмоции"
 	emote_with_delay("fox_purr", timer)
 
-/mob/living/carbon/human/proc/emote_wag() // Lizard, Tajara
+/mob/living/carbon/human/proc/emote_wag() // Lizard, Tajaran
 	set name = "> " + EMOTE_SPECIES_WAG + " ►"
 	set category = "Эмоции"
 	emote_with_delay("wag", timer)

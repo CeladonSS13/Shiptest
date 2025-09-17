@@ -85,11 +85,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/skin_tone = "caucasian1"		//Skin color
 	var/eye_color = "000"				//Eye color
 	// [CELADON-ADD] - SPECIES_TAJARAN
-	var/tajara_ears_markings_color = "000"				//tajaran ears markings color
-	var/tajara_head_markings_color = "000"				//tajaran head markings color
-	var/tajara_nose_markings_color = "000"				//tajaran nose markings color
-	var/tajara_chest_markings_color = "000"				//tajaran chest markings color
-	var/tajara_body_markings_color = "000"				//tajaran body markings color
+	var/tajaran_ears_markings_color = "000"				//tajaran ears markings color
+	var/tajaran_head_markings_color = "000"				//tajaran head markings color
+	var/tajaran_nose_markings_color = "000"				//tajaran nose markings color
+	var/tajaran_chest_markings_color = "000"				//tajaran chest markings color
+	var/tajaran_body_markings_color = "000"				//tajaran body markings color
 	// [CELADON-ADD] - CELADON_RIOL
 	var/riol_ears_markings_color = "000"				//riol ears markings color
 	var/riol_head_markings_color = "000"				//riol head markings color
@@ -105,11 +105,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							"mcolor2" = "FFF",
 							"grad_style" = "None",
 							"grad_color" = "FFF",
-							"tajara_ears_markings_color" = "FFF",
-							"tajara_head_markings_color" = "FFF",
-							"tajara_nose_markings_color" = "FFF",
-							"tajara_chest_markings_color" = "FFF",
-							"tajara_body_markings_color" = "FFF",
+							"tajaran_ears_markings_color" = "FFF",
+							"tajaran_head_markings_color" = "FFF",
+							"tajaran_nose_markings_color" = "FFF",
+							"tajaran_chest_markings_color" = "FFF",
+							"tajaran_body_markings_color" = "FFF",
 							"ethcolor" = "9c3030",
 							"tail_lizard" = "Smooth",
 							"tail_human" = "None",
@@ -902,51 +902,51 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					mutant_category = 0
 
 			// [CELADON-ADD] - SPECIES_TAJARAN
-			if("tajara_ears" in pref_species.default_features)
+			if("tajaran_ears" in pref_species.default_features)
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
 				dat += "<h3>Ears</h3>"
-				dat += "<a href='byond://?_src_=prefs;preference=tajara_ears;task=input'>[features["tajara_ears"]]</a><BR>"
+				dat += "<a href='byond://?_src_=prefs;preference=tajaran_ears;task=input'>[features["tajaran_ears"]]</a><BR>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
 					dat += "</td>"
 					mutant_category = 0
 
-			if("tajara_ears_markings" in pref_species.default_features)
+			if("tajaran_ears_markings" in pref_species.default_features)
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
 				dat += "<h3>Ears markings</h3>"
-				dat += "<a href='byond://?_src_=prefs;preference=tajara_ears_markings;task=input'>[features["tajara_ears_markings"]]</a><BR>"
-				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_ears_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajara_ears_markings_color;task=input'>Change</a>"
+				dat += "<a href='byond://?_src_=prefs;preference=tajaran_ears_markings;task=input'>[features["tajaran_ears_markings"]]</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["tajaran_ears_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajaran_ears_markings_color;task=input'>Change</a>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
 					dat += "</td>"
 					mutant_category = 0
 
-			if("tajara_head_markings" in pref_species.default_features)
+			if("tajaran_head_markings" in pref_species.default_features)
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
 				dat += "<h3>Head markings</h3>"
-				dat += "<a href='byond://?_src_=prefs;preference=tajara_head_markings;task=input'>[features["tajara_head_markings"]]</a><BR>"
-				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_head_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajara_head_markings_color;task=input'>Change</a>"
+				dat += "<a href='byond://?_src_=prefs;preference=tajaran_head_markings;task=input'>[features["tajaran_head_markings"]]</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["tajaran_head_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajaran_head_markings_color;task=input'>Change</a>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
 					dat += "</td>"
 					mutant_category = 0
 
-			if("tajara_nose_markings" in pref_species.default_features)
+			if("tajaran_nose_markings" in pref_species.default_features)
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
 				dat += "<h3>Nose markings</h3>"
-				dat += "<a href='byond://?_src_=prefs;preference=tajara_nose_markings;task=input'>[features["tajara_nose_markings"]]</a><BR>"
-				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_nose_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajara_nose_markings_color;task=input'>Change</a>"
+				dat += "<a href='byond://?_src_=prefs;preference=tajaran_nose_markings;task=input'>[features["tajaran_nose_markings"]]</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["tajaran_nose_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajaran_nose_markings_color;task=input'>Change</a>"
 
 				//dat += "<h3>Skin Tone nose</h3>"
 				//dat += "<a href='byond://?_src_=prefs;preference=s_tone_nose;task=input'>[skin_tone_nose]</a>"
@@ -957,38 +957,38 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</td>"
 					mutant_category = 0
 
-			if("tajara_chest_markings" in pref_species.default_features)
+			if("tajaran_chest_markings" in pref_species.default_features)
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
 				dat += "<h3>Chest markings</h3>"
-				dat += "<a href='byond://?_src_=prefs;preference=tajara_chest_markings;task=input'>[features["tajara_chest_markings"]]</a><BR>"
-				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_chest_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajara_chest_markings_color;task=input'>Change</a>"
+				dat += "<a href='byond://?_src_=prefs;preference=tajaran_chest_markings;task=input'>[features["tajaran_chest_markings"]]</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["tajaran_chest_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajaran_chest_markings_color;task=input'>Change</a>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
 					dat += "</td>"
 					mutant_category = 0
 
-			if("tajara_body_markings" in pref_species.default_features)
+			if("tajaran_body_markings" in pref_species.default_features)
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
 				dat += "<h3>Body markings</h3>"
-				dat += "<a href='byond://?_src_=prefs;preference=tajara_body_markings;task=input'>[features["tajara_body_markings"]]</a><BR>"
-				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_body_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajara_body_markings_color;task=input'>Change</a>"
+				dat += "<a href='byond://?_src_=prefs;preference=tajaran_body_markings;task=input'>[features["tajaran_body_markings"]]</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["tajaran_body_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajaran_body_markings_color;task=input'>Change</a>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
 					dat += "</td>"
 					mutant_category = 0
 
-			if("tajara_tail" in pref_species.default_features)
+			if("tajaran_tail" in pref_species.default_features)
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
 				dat += "<h3>Tail</h3>"
-				dat += "<a href='byond://?_src_=prefs;preference=tajara_tail;task=input'>[features["tajara_tail"]]</a><BR>"
+				dat += "<a href='byond://?_src_=prefs;preference=tajaran_tail;task=input'>[features["tajaran_tail"]]</a><BR>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
@@ -2084,26 +2084,26 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				// [CELADON-ADD] - SPECIES_TAJARAN
 
-				if("tajara_ears_markings_color")
-					var/new_tajara_ears_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["tajara_ears_markings_color"]) as color|null
-					if(new_tajara_ears_markings_color)
-						features["tajara_ears_markings_color"] = sanitize_hexcolor(new_tajara_ears_markings_color)
-				if("tajara_head_markings_color")
-					var/new_tajara_ears_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["tajara_head_markings_color"]) as color|null
-					if(new_tajara_ears_markings_color)
-						features["tajara_head_markings_color"] = sanitize_hexcolor(new_tajara_ears_markings_color)
-				if("tajara_nose_markings_color")
-					var/new_tajara_nose_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["new_tajara_nose_markings_color"]) as color|null
-					if(new_tajara_nose_markings_color)
-						features["tajara_nose_markings_color"] = sanitize_hexcolor(new_tajara_nose_markings_color)
-				if("tajara_chest_markings_color")
-					var/new_tajara_chest_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["tajara_chest_markings_color"]) as color|null
-					if(new_tajara_chest_markings_color)
-						features["tajara_chest_markings_color"] = sanitize_hexcolor(new_tajara_chest_markings_color)
-				if("tajara_body_markings_color")
-					var/new_tajara_body_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["tajara_body_markings_color"]) as color|null
-					if(new_tajara_body_markings_color)
-						features["tajara_body_markings_color"] = sanitize_hexcolor(new_tajara_body_markings_color)
+				if("tajaran_ears_markings_color")
+					var/new_tajaran_ears_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["tajaran_ears_markings_color"]) as color|null
+					if(new_tajaran_ears_markings_color)
+						features["tajaran_ears_markings_color"] = sanitize_hexcolor(new_tajaran_ears_markings_color)
+				if("tajaran_head_markings_color")
+					var/new_tajaran_ears_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["tajaran_head_markings_color"]) as color|null
+					if(new_tajaran_ears_markings_color)
+						features["tajaran_head_markings_color"] = sanitize_hexcolor(new_tajaran_ears_markings_color)
+				if("tajaran_nose_markings_color")
+					var/new_tajaran_nose_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["new_tajaran_nose_markings_color"]) as color|null
+					if(new_tajaran_nose_markings_color)
+						features["tajaran_nose_markings_color"] = sanitize_hexcolor(new_tajaran_nose_markings_color)
+				if("tajaran_chest_markings_color")
+					var/new_tajaran_chest_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["tajaran_chest_markings_color"]) as color|null
+					if(new_tajaran_chest_markings_color)
+						features["tajaran_chest_markings_color"] = sanitize_hexcolor(new_tajaran_chest_markings_color)
+				if("tajaran_body_markings_color")
+					var/new_tajaran_body_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["tajaran_body_markings_color"]) as color|null
+					if(new_tajaran_body_markings_color)
+						features["tajaran_body_markings_color"] = sanitize_hexcolor(new_tajaran_body_markings_color)
 
 				// [CELADON-ADD] - CELADON_RIOL
 				if("riol_ears_markings_color")
@@ -2930,11 +2930,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		character.dna.species.mutant_bodyparts |= "tail_lizard"
 
 	// [CELADON-ADD] - SPECIES_TAJARAN
-	if("tajara_tail" in pref_species.default_features)
-		character.dna.species.mutant_bodyparts |= "tajara_tail"
+	if("tajaran_tail" in pref_species.default_features)
+		character.dna.species.mutant_bodyparts |= "tajaran_tail"
 
-	if("tajara_ears" in pref_species.default_features)
-		character.dna.species.mutant_bodyparts |= "tajara_ears"
+	if("tajaran_ears" in pref_species.default_features)
+		character.dna.species.mutant_bodyparts |= "tajaran_ears"
 
 	// [CELADON-ADD] - CELADON_RIOL
 	if("riol_tail" in pref_species.default_features)

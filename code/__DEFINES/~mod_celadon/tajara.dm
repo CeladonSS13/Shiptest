@@ -14,7 +14,7 @@
 
 
 // Хелпер как в code/__DEFINES/is_helpers.dm
-#define istajara(A) (is_species(A, /datum/species/tajaran))
+#define istajaran(A) (is_species(A, /datum/species/tajaran))
 
 
 // Дополнение к code/__DEFINES/mobs.dm
@@ -27,9 +27,9 @@
 
 
 // Дополнение к code/__DEFINES/species_clothing_defines.dm
-#define TAJARA_MASK_PATH 'mod_celadon/_storage_icons/icons/items/clothing/mask/overlay/onmob_mask_tajara.dmi'
-#define TAJARA_HEAD_PATH 'mod_celadon/_storage_icons/icons/items/clothing/head/overlay/onmob_head_tajara.dmi'
-#define TAJARA_SUIT_PATH 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/onmob_suit_tajara.dmi'
+#define TAJARAN_MASK_PATH 'mod_celadon/_storage_icons/icons/items/clothing/mask/overlay/onmob_mask_tajara.dmi'
+#define TAJARAN_HEAD_PATH 'mod_celadon/_storage_icons/icons/items/clothing/head/overlay/onmob_head_tajara.dmi'
+#define TAJARAN_SUIT_PATH 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/onmob_suit_tajara.dmi'
 
 /// The natural temperature for a body
 #define TAJARAN_BODYTEMP_NORMAL 311.15

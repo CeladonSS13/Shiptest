@@ -11,8 +11,8 @@
 	var/use_skintonetajara = FALSE
 
 /datum/species/tajaran
-	name = "\improper Tajara"
-	id = SPECIES_TAJARA
+	name = "\improper Tajaran"
+	id = SPECIES_TAJARAN
 	loreblurb = "The Tajara race is a species of feline-like bipeds hailing from the planet of Ahdomai in the \
 	S'randarr system. They have been brought up into the space age by the Humans and Skrell, and have been \
 	influenced heavily by their long history of Slavemaster rule. They have a structured, clan-influenced way \
@@ -35,27 +35,27 @@
 
 	species_traits = list(EYECOLOR, LIPS, HAIR, FACEHAIR, EMOTE_OVERLAY, MUTCOLORS, MUTCOLORS_SECONDARY, SKINNOSECOLORS, SKINTAJARACOLORS, EARSTAJARACOLORS, HEADTAJARACOLORS, NOSETAJARACOLORS, CHESTTAJARACOLORS, BODYTAJARACOLORS, HAS_FLESH, HAS_BONE)
 	mutant_bodyparts = list(
-		"tajara_ears",
-		"tajara_hairs",
-		"tajara_ears_markings",
-		"tajara_head_markings",
-		"tajara_nose_markings",
-		"tajara_facial_hairs",
-		"tajara_chest_markings",
-		"tajara_body_markings",
-		"tajara_tail"
+		"tajaran_ears",
+		"tajaran_hairs",
+		"tajaran_ears_markings",
+		"tajaran_head_markings",
+		"tajaran_nose_markings",
+		"tajaran_facial_hairs",
+		"tajaran_chest_markings",
+		"tajaran_body_markings",
+		"tajaran_tail"
 		)
 	default_features = list(
 		"mcolor" = "0F0",
-		"tajara_ears" = "Plain",
-		"tajara_hairs" = "Plain",
-		"tajara_ears_markings" = "None",
-		"tajara_head_markings" = "None",
-		"tajara_nose_markings" = "None",
-		"tajara_facial_hairs" = "None",
-		"tajara_chest_markings" = "None",
-		"tajara_body_markings" = "None",
-		"tajara_tail" = "long",
+		"tajaran_ears" = "Plain",
+		"tajaran_hairs" = "Plain",
+		"tajaran_ears_markings" = "None",
+		"tajaran_head_markings" = "None",
+		"tajaran_nose_markings" = "None",
+		"tajaran_facial_hairs" = "None",
+		"tajaran_chest_markings" = "None",
+		"tajaran_body_markings" = "None",
+		"tajaran_tail" = "long",
 		"body_size" = "Normal"
 		)
 
@@ -88,7 +88,7 @@
 	mutanttongue = /obj/item/organ/tongue/tajaran
 	mutant_organs = list(/obj/item/organ/tail/tajaran)
 
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ORGANIC
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ORGANIC
 
 	species_chest = /obj/item/bodypart/chest/tajaran
 	species_head = /obj/item/bodypart/head/tajaran
@@ -107,12 +107,12 @@
 /datum/species/tajaran/random_name(gender,unique,lastname)
 	//code by @valtor0
 	/*
-	var/static/list/tajara_female_ru_endings_list = list("и","а","о","е","й","ь") // Customise this with ru_name_syllables changes.
+	var/static/list/tajaran_female_ru_endings_list = list("и","а","о","е","й","ь") // Customise this with ru_name_syllables changes.
 	var/list/ru_name_syllables = list("кан","тай","кир","раи","кии","мир","кра","тэк","нал","вар","хар","марр","ран","дарр", \
 	"мирк","ири","дин","манг","рик","зар","раз","кель","шера","тар","кей","ар","но","маи","зир","кер","нир","ра",\
 	"ми","рир","сей","эка","гир","ари","нэй","нре","ак","таир","эрай","жин","мра","зур","рин","сар","кин","рид","эра","ри","эна")
 	*/
-	var/static/list/tajara_female_en_endings_list = list("i","a","o","e","y","u") // Customise this with en_name_syllables changes.
+	var/static/list/tajaran_female_en_endings_list = list("i","a","o","e","y","u") // Customise this with en_name_syllables changes.
 	var/list/en_name_syllables = list("kan","taj","kir","rai","kii","mir","kra","tak","nal","var","har","marr","ran","darr", \
 	"mirk","iri","din","mang","rik","zar","raz","kel","shera","tar","kai","ar","no","mai","air","ker","nir","ra",\
 	"mi","rir","sei","eka","gir","ari","nai","nre","ak","tajr","arai","jin","mra","aur","rin","sar","kin","rid","era","ri","ena")
@@ -128,7 +128,7 @@
 	full_name = "[capitalize(lowertext(new_name))]"
 	if(gender == FEMALE)
 		var/ending = copytext(full_name, -2)
-		if(!(ending in tajara_female_en_endings_list))
+		if(!(ending in tajaran_female_en_endings_list))
 			full_name += "а"
 	if(prob(75))
 		full_name += " [pick(list("Hadii","Kaitam","Jan-Hazan","Nyrir’Ahan"))]" //"Хадии","Кайтам","Жан-Хазан","Нъярир’Ахан"
@@ -138,9 +138,9 @@
 
 
 /datum/species/start_wagging_tail(mob/living/carbon/human/H)
-	if("tajara_tail" in mutant_bodyparts)
-		mutant_bodyparts -= "tajara_tail"
-		mutant_bodyparts |= "waggingtajara_tail"
+	if("tajaran_tail" in mutant_bodyparts)
+		mutant_bodyparts -= "tajaran_tail"
+		mutant_bodyparts |= "waggingtajaran_tail"
 
 	// if("riol_tail" in mutant_bodyparts)
 	// 	mutant_bodyparts -= "riol_tail"
@@ -149,9 +149,9 @@
 	return ..()
 
 /datum/species/stop_wagging_tail(mob/living/carbon/human/H)
-	if("waggingtajara_tail" in mutant_bodyparts)
-		mutant_bodyparts -= "waggingtajara_tail"
-		mutant_bodyparts |= "tajara_tail"
+	if("waggingtajaran_tail" in mutant_bodyparts)
+		mutant_bodyparts -= "waggingtajaran_tail"
+		mutant_bodyparts |= "tajaran_tail"
 
 	// if("waggingriol_tail" in mutant_bodyparts)
 	// 	mutant_bodyparts -= "waggingriol_tail"

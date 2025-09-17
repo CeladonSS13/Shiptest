@@ -324,7 +324,7 @@
 	icon_state = "facial_hair_none"
 	body_zone = BODY_ZONE_HEAD
 
-/datum/sprite_accessory/tajara_facial_hairs/none
+/datum/sprite_accessory/tajaran_facial_hairs/none
 	name = "None"
 	icon_state = "facial_hair_none"
 

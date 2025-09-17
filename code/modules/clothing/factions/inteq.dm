@@ -200,7 +200,7 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security/inteq
 	// [CELADON-EDIT] - SPECIES_TAJARAN, CELADON_RIOL
 	// supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION // CELADON-EDIT - ORIGINAL
-	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
+	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION | TAJARAN_VARIATION | RIOL_VARIATION
 	// [/CELADON-EDIT]
 	armor = list("melee" = 40, "bullet" = 35, "laser" = 30, "energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75, "wound" = 20)
 	supports_variations = DIGITIGRADE_VARIATION
@@ -253,7 +253,7 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/inteq
 	// [CELADON-EDIT] - SPECIES_TAJARAN, CELADON_RIOL
 	// supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION // CELADON-EDIT - ORIGINAL
-	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION | KEPORI_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
+	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION | KEPORI_VARIATION | TAJARAN_VARIATION | RIOL_VARIATION
 	// [/CELADON-EDIT]
 
 

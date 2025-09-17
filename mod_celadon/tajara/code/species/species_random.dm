@@ -37,13 +37,13 @@
 
 
 /datum/species/tajaran/get_hair_list_by_gender(gender)
-	return GLOB.tajara_hairs_list
+	return GLOB.tajaran_hairs_list
 
 /datum/species/tajaran/get_facial_hair_list_by_gender(gender)
-	return GLOB.tajara_facial_hairs_list
+	return GLOB.tajaran_facial_hairs_list
 
 /datum/species/tajaran/random_hairstyle(gender)
-	return pick(GLOB.tajara_hairs_list)
+	return pick(GLOB.tajaran_hairs_list)
 
 /datum/species/tajaran/random_facial_hairstyle(gender)
-	return pick(GLOB.tajara_facial_hairs_list)
+	return pick(GLOB.tajaran_facial_hairs_list)

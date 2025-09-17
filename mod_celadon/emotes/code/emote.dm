@@ -1411,7 +1411,7 @@
 /datum/emote/living/carbon/human/purr/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
-	if(!istajara(user))
+	if(!istajaran(user))
 		return FALSE
 	return TRUE
 
@@ -1432,7 +1432,7 @@
 /datum/emote/living/carbon/human/purrl/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
-	if(!istajara(user))
+	if(!istajaran(user))
 		return FALSE
 	return TRUE
 
@@ -1452,7 +1452,7 @@
 /datum/emote/living/carbon/human/mrowss/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
-	if(!istajara(user))
+	if(!istajaran(user))
 		return FALSE
 	return TRUE
 
@@ -1479,14 +1479,14 @@
 /datum/emote/living/carbon/human/hiss/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
-	if(!istajara(user) && !islizard(user))
+	if(!istajaran(user) && !islizard(user))
 		return FALSE
 	return TRUE
 
 /datum/emote/living/carbon/human/hiss/get_sound(mob/living/user)
 	if(!ishuman(user))
 		return
-	if(istajara(user))
+	if(istajaran(user))
 		return 'mod_celadon/_storage_sounds/sound/emotes/tajaran/hiss_tajaran.ogg'
 	if(islizard(user))
 		return 'sound/voice/lizard/hiss.ogg'
@@ -1596,7 +1596,7 @@
 /datum/emote/living/carbon/human/tajaran/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
-	if(!istajara(user))
+	if(!istajaran(user))
 		return FALSE
 	return TRUE
 

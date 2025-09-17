@@ -17,7 +17,7 @@ _UNUSED/mob_clothing/head.dmi
 _UNUSED/obj_clothing/suits.dmi
 _UNUSED/obj_clothing/hats.dmi
 _UNUSED/spacesuits_celadon_tajaran.dmi
-_UNUSED/tajara_helmet.dmi
+_UNUSED/tajaran_helmet.dmi
 
 ammo/ammo_bullets.dmi
 ammo/ammo.dmi
@@ -109,10 +109,10 @@ items/obj/book.dmi
 items/obj/helmet.dmi
 items/obj/language.dmi
 items/obj/ring.dmi
-items/obj/tajara_items.dmi
+items/obj/tajaran_items.dmi
 
 items/overlay/helmet.dmi
-items/overlay/tajara_items_overlay.dmi
+items/overlay/tajaran_items_overlay.dmi
 
 items/items.dmi
 items/plushes.dmi
@@ -212,13 +212,13 @@ structures/elysium_logo.dmi
 structures/statue.dmi
 structures/tiles.dmi
 
-tajaran/tajara_bodyparts.dmi
-tajaran/tajara_ears.dmi
-tajaran/tajara_facial_hairs.dmi
-tajaran/tajara_hairs.dmi
-tajaran/tajara_markings.dmi
-tajaran/tajara_organs.dmi
-tajaran/tajara_tail.dmi
+tajaran/tajaran_bodyparts.dmi
+tajaran/tajaran_ears.dmi
+tajaran/tajaran_facial_hairs.dmi
+tajaran/tajaran_hairs.dmi
+tajaran/tajaran_markings.dmi
+tajaran/tajaran_organs.dmi
+tajaran/tajaran_tail.dmi
 
 areas.dmi
 barsigns_long.dmi

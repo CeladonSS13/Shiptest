@@ -43,15 +43,15 @@
 	// [CELADON-ADD] - SPECIES_TAJARAN
 	skin_tone_nose = GLOB.skin_tones_nose[hex2num(copytext(seed, 1, 2)) % length(GLOB.skin_tones_nose)]
 
-	dna.features["tajara_ears"] = GLOB.tajara_ears_list[hex2num(copytext(seed, 2, 3)) % length(GLOB.tajara_ears_list) + 1]
-	dna.features["tajara_hairs"] = GLOB.tajara_hairs_list[hex2num(copytext(seed, 3, 4)) % length(GLOB.tajara_hairs_list) + 1]
-	dna.features["tajara_ears_markings"] = GLOB.tajara_ears_markings_list[hex2num(copytext(seed, 4, 5)) % length(GLOB.tajara_ears_markings_list) + 1]
-	dna.features["tajara_head_markings"] = GLOB.tajara_head_markings_list[hex2num(copytext(seed, 5, 6)) % length(GLOB.tajara_head_markings_list) + 1]
-	dna.features["tajara_nose_markings"] = GLOB.tajara_nose_markings_list[hex2num(copytext(seed, 6, 7)) % length(GLOB.tajara_nose_markings_list) + 1]
-	dna.features["tajara_facial_hairs"] = GLOB.tajara_facial_hairs_list[hex2num(copytext(seed, 7, 8)) % length(GLOB.tajara_facial_hairs_list) + 1]
-	dna.features["tajara_chest_markings"] = GLOB.tajara_chest_markings_list[hex2num(copytext(seed, 8, 9)) % length(GLOB.tajara_chest_markings_list) + 1]
-	dna.features["tajara_body_markings"] = GLOB.tajara_body_markings_list[hex2num(copytext(seed, 9, 10)) % length(GLOB.tajara_body_markings_list) + 1]
-	dna.features["tajara_tail"] = GLOB.tajara_tail_list[hex2num(copytext(seed, 10, 11)) % length(GLOB.tajara_tail_list) + 1]
+	dna.features["tajaran_ears"] = GLOB.tajaran_ears_list[hex2num(copytext(seed, 2, 3)) % length(GLOB.tajaran_ears_list) + 1]
+	dna.features["tajaran_hairs"] = GLOB.tajaran_hairs_list[hex2num(copytext(seed, 3, 4)) % length(GLOB.tajaran_hairs_list) + 1]
+	dna.features["tajaran_ears_markings"] = GLOB.tajaran_ears_markings_list[hex2num(copytext(seed, 4, 5)) % length(GLOB.tajaran_ears_markings_list) + 1]
+	dna.features["tajaran_head_markings"] = GLOB.tajaran_head_markings_list[hex2num(copytext(seed, 5, 6)) % length(GLOB.tajaran_head_markings_list) + 1]
+	dna.features["tajaran_nose_markings"] = GLOB.tajaran_nose_markings_list[hex2num(copytext(seed, 6, 7)) % length(GLOB.tajaran_nose_markings_list) + 1]
+	dna.features["tajaran_facial_hairs"] = GLOB.tajaran_facial_hairs_list[hex2num(copytext(seed, 7, 8)) % length(GLOB.tajaran_facial_hairs_list) + 1]
+	dna.features["tajaran_chest_markings"] = GLOB.tajaran_chest_markings_list[hex2num(copytext(seed, 8, 9)) % length(GLOB.tajaran_chest_markings_list) + 1]
+	dna.features["tajaran_body_markings"] = GLOB.tajaran_body_markings_list[hex2num(copytext(seed, 9, 10)) % length(GLOB.tajaran_body_markings_list) + 1]
+	dna.features["tajaran_tail"] = GLOB.tajaran_tail_list[hex2num(copytext(seed, 10, 11)) % length(GLOB.tajaran_tail_list) + 1]
 
 	// [CELADON-ADD] - CELADON_RIOL
 	dna.features["riol_ears"] 			= GLOB.riol_ears_list[hex2num(copytext(seed, 2, 3)) % length(GLOB.riol_ears_list) + 1]

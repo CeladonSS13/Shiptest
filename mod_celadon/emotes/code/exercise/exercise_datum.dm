@@ -179,7 +179,7 @@
 
 	valueloss += (exercises_in_a_row + 1) / exercise_difficulty_level * exercise_difficulty_level_valueloss
 
-	if(islanius(user) || istajara(user))
+	if(islanius(user) || istajaran(user))
 		valueloss *= 2
 	if(isriol(user) || iselzuose(user))
 		valueloss /= 2

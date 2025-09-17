@@ -2,8 +2,8 @@
 // 		Suits
 //********************
 /obj/item/clothing/suit/armor/vest/tajaran_replica				// Исключение, засунут в лодаут в таком виде, понравился игрокам (пофикшена броня)
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajaran_items_SORTIROVATI.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajaran_items_overlay_SORTIROVATI.dmi'
 	name = "white tactical armor vest (replika)"
 	desc = "Эта одежда была сделана в тёмных подвалах. Она похожа с виду на зимний тактический бронижилет, но это лишь реплика её."
 	icon_state = "snowsuit"
@@ -17,8 +17,8 @@
 	resistance_flags = NONE
 
 /obj/item/clothing/suit/space/hardsuit/tajaran
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajaran_items_SORTIROVATI.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajaran_items_overlay_SORTIROVATI.dmi'
 	allowed = list(/obj/item/gun,
 					/obj/item/ammo_box,
 					/obj/item/ammo_casing,

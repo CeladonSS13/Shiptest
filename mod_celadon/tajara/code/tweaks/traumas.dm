@@ -1,4 +1,4 @@
-/datum/controller/subsystem/traumas/proc/init_tajara_mod()
+/datum/controller/subsystem/traumas/proc/init_tajaran_mod()
 	// В оригинале этот список сортируется, но мы не будем замедлять инициализацию
 	// Плюс, таким образом этот страх окажется в конце списка и будет понятно, что
 	// он целадоновский, хз

@@ -25,7 +25,7 @@
 
 /datum/reagent/consumable/mint_tea/on_mob_life(mob/living/carbon/C)
 	C.adjustStaminaLoss(min(50 - C.getStaminaLoss(), 3))
-	if(istajara(C))
+	if(istajaran(C))
 		if(prob(20))
 			C.emote("nya")
 		if(prob(20))

@@ -2,8 +2,8 @@
 // 		Scarf
 //********************
 /obj/item/clothing/neck/scarf/tajaran //Default white color, same functionality as beanies.
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajaran_items_SORTIROVATI.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajaran_items_overlay_SORTIROVATI.dmi'
 	name = "fur scarf"
 	desc = "A furred scarf, a common item, this one is brown."
 	icon_state = "furscarf_brown"

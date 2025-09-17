@@ -13,12 +13,12 @@
 	description = "An amulet made of some light metal."
 	path = /obj/item/clothing/accessory/tajaran/charm/raskariim
 
-/datum/gear/accessory/watch_tajara_male
+/datum/gear/accessory/watch_tajaran_male
 	display_name = "adhomian male watch"
 	description = "An adhomian wrist watch made for male Tajara. Due to its use in the past wars, wrist watches are becoming more popular in Adhomai."
 	path = /obj/item/clothing/wrists/watch/tajaran
 
-/datum/gear/accessory/watch_tajara_female
+/datum/gear/accessory/watch_tajaran_female
 	display_name = "adhomian female watch"
 	description = "An adhomian wrist watch made for female Tajara. Due to its use in the past wars, wrist watches are becoming more popular in Adhomai."
 	path = /obj/item/clothing/wrists/watch/tajaran/female

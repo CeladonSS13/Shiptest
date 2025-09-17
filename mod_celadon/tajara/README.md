@@ -121,17 +121,17 @@ ID мода: SPECIES_TAJARAN
   - `SKINNOSECOLORS`
   - `SKINTAJARACOLORS`
   - `BAN_HURTTAJARA`
-  - `istajara(A)`
+  - `istajaran(A)`
   - `SPECIES_TAJARA`
   - `RANDOM_SKIN_TONE_NOSE`
   - `RANDOM_SKIN_TONE_TAJARA`
-  - `TAJARA_MASK_PATH`
-  - `TAJARA_HEAD_PATH`
-  - `TAJARA_SUIT_PATH`
+  - `TAJARAN_MASK_PATH`
+  - `TAJARAN_HEAD_PATH`
+  - `TAJARAN_SUIT_PATH`
 - `code/__DEFINES/inventory.dm`:
-  - `TAJARA_VARIATION`
+  - `TAJARAN_VARIATION`
 - `code/__DEFINES/mobs.dm`:
-  - `BODYTYPE_TAJARA`
+  - `BODYTYPE_TAJARAN`
 
 ### Используемые файлы, не содержащиеся в модпаке
 

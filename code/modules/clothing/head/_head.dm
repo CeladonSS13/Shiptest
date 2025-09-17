@@ -13,7 +13,7 @@
 	greyscale_colors = list(list(16,26))
 	// [CELADON-EDIT] - SPECIES_TAJARAN, CELADON_RIOL
 	// supports_variations = VOX_VARIATION // CELADON-EDIT - ORIGINAL
-	supports_variations = VOX_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
+	supports_variations = VOX_VARIATION | TAJARAN_VARIATION | RIOL_VARIATION
 	// [/CELADON-EDIT]
 	blood_overlay_type = "helmet"
 

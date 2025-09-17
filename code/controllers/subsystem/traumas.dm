@@ -183,7 +183,7 @@ SUBSYSTEM_DEF(traumas)
 	// Это единственное место где можно воткнуться после инициализации,
 	// но перед оповещением что подсистема запущена
 
-	init_tajara_mod()
+	init_tajaran_mod()
 
 	// [CELADON-ADD] - CELADON_RIOL
 	init_riol_mod()

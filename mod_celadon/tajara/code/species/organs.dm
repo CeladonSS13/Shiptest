@@ -34,7 +34,7 @@
 
 /obj/item/organ/eyes/tajaran
 	name = "Tajara eyes"
-	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajara_organs.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajaran_organs.dmi'
 	icon_state = "night_eyes_off"
 	desc = "Some eyes"
 	actions_types = list(/datum/action/item_action/organ_action/toggle)
@@ -113,21 +113,21 @@
 	..()
 	if(istype(H))
 		// Checks here are necessary so it wouldn't overwrite the tail of a tajaran it spawned in
-		if(!("tajara_tail" in H.dna.species.mutant_bodyparts))
-			if(!H.dna.features["tajara_tail"])
-				H.dna.features["tajara_tail"] = tail_type
-				H.dna.species.mutant_bodyparts |= "tajara_tail"
+		if(!("tajaran_tail" in H.dna.species.mutant_bodyparts))
+			if(!H.dna.features["tajaran_tail"])
+				H.dna.features["tajaran_tail"] = tail_type
+				H.dna.species.mutant_bodyparts |= "tajaran_tail"
 			else
-				H.dna.species.mutant_bodyparts["tajara_tail"] = H.dna.features["tajara_tail"]
+				H.dna.species.mutant_bodyparts["tajaran_tail"] = H.dna.features["tajaran_tail"]
 
 		H.update_body()
 
 /obj/item/organ/tail/tajaran/Remove(mob/living/carbon/human/H,  special = 0)
 	..()
 	if(istype(H))
-		H.dna.species.mutant_bodyparts -= "tajara_tail"
+		H.dna.species.mutant_bodyparts -= "tajaran_tail"
 		color = "#" + H.dna.features["mcolor"]
-		tail_type = H.dna.features["tajara_tail"]
+		tail_type = H.dna.features["tajaran_tail"]
 		H.update_body()
 
 /obj/item/organ/tail/tajaran/fake
@@ -165,16 +165,16 @@
 	if(speech_args[SPEECH_LANGUAGE] == /datum/language/siiktajr)
 		return
 
-	var/static/regex/tajara_rr = new("r+", "g")
-	var/static/regex/tajara_RR = new("R+", "g")
-	var/static/regex/tajara_ru_rr = new("р+", "g")
-	var/static/regex/tajara_ru_RR = new("Р+", "g")
+	var/static/regex/tajaran_rr = new("r+", "g")
+	var/static/regex/tajaran_RR = new("R+", "g")
+	var/static/regex/tajaran_ru_rr = new("р+", "g")
+	var/static/regex/tajaran_ru_RR = new("Р+", "g")
 	var/message = speech_args[SPEECH_MESSAGE]
 	if(message[1] != "*")
-		message = tajara_rr.Replace(message, pick("rr", "rrr", "rrrr", "rrrrr"))
-		message = tajara_RR.Replace(message, pick("Rr", "Rrr", "Rrrr", "Rrrrr"))
-		message = tajara_ru_rr.Replace_char(message, pick("рр", "ррр", "рррр", "ррррр"))
-		message = tajara_ru_RR.Replace_char(message, pick("Рр", "Ррр", "Рррр", "Ррррр"))
+		message = tajaran_rr.Replace(message, pick("rr", "rrr", "rrrr", "rrrrr"))
+		message = tajaran_RR.Replace(message, pick("Rr", "Rrr", "Rrrr", "Rrrrr"))
+		message = tajaran_ru_rr.Replace_char(message, pick("рр", "ррр", "рррр", "ррррр"))
+		message = tajaran_ru_RR.Replace_char(message, pick("Рр", "Ррр", "Рррр", "Ррррр"))
 	speech_args[SPEECH_MESSAGE] = message
 
 /obj/item/organ/tongue/tajaran/Initialize(mapload)

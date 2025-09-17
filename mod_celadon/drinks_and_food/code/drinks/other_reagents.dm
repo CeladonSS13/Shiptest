@@ -5,7 +5,7 @@
 	metabolization_rate = 1.75 * REAGENTS_METABOLISM
 
 /datum/reagent/pax/mint/on_mob_life(mob/living/carbon/C)
-	if(istajara(C))
+	if(istajaran(C))
 		if(prob(20))
 			C.emote("nya")
 		if(prob(20))

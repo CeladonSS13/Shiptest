@@ -2,8 +2,8 @@
 // 		Cloaks
 //********************
 /obj/item/clothing/suit/hooded/cloak/tajaran
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajaran_items_SORTIROVATI.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajaran_items_overlay_SORTIROVATI.dmi'
 	lefthand_file = 'icons/mob/inhands/clothing/suits_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/clothing/suits_righthand.dmi'
 	slot_flags = ITEM_SLOT_OCLOTHING | ITEM_SLOT_NECK
@@ -14,8 +14,8 @@
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/tajaran
 
 /obj/item/clothing/head/hooded/cloakhood/tajaran
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajaran_items_SORTIROVATI.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajaran_items_overlay_SORTIROVATI.dmi'
 	flags_inv = HIDEEARS | HIDEEYES |HIDEHAIR | HIDEFACIALHAIR
 	name = "gruff cloak"
 	desc = "A cloak designated for the lowest classes."

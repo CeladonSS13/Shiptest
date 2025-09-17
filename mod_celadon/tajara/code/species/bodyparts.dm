@@ -4,128 +4,128 @@
 
 
 /obj/item/bodypart/head/tajaran
-	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajara_bodyparts.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajaran_bodyparts.dmi'
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_TAJARA
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID | BODYTYPE_SNOUT
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID | BODYTYPE_SNOUT
 
 /obj/item/bodypart/chest/tajaran
-	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajara_bodyparts.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajaran_bodyparts.dmi'
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_TAJARA
 	is_dimorphic = FALSE
-	acceptable_bodytype = BODYTYPE_TAJARA | BODYTYPE_HUMANOID
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID
+	acceptable_bodytype = BODYTYPE_TAJARAN | BODYTYPE_HUMANOID
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID
 
 /obj/item/bodypart/l_arm/tajaran
-	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajara_bodyparts.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajaran_bodyparts.dmi'
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_TAJARA
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID
 
 /obj/item/bodypart/r_arm/tajaran
-	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajara_bodyparts.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajaran_bodyparts.dmi'
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_TAJARA
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID
 
 /obj/item/bodypart/leg/left/tajaran
-	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajara_bodyparts.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajaran_bodyparts.dmi'
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_TAJARA
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID
 
 /obj/item/bodypart/leg/right/tajaran
-	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajara_bodyparts.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajaran_bodyparts.dmi'
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_TAJARA
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID
 
 
 // Tajara Robotic (Synths)
 /obj/item/bodypart/chest/robot/tajaran
-	name = "prosthetic tajaran chest"
+	name = "prosthetic tajara chest"
 	is_dimorphic = TRUE
 	icon = 'icons/mob/augmentation/augments_lizard.dmi' // FIXME: TODO: ПОЧЕМУ ЛИЗАРД?!
 	should_draw_greyscale = TRUE
 	overlay_icon_state = TRUE
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ROBOTIC
-	acceptable_bodytype = BODYTYPE_TAJARA
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ROBOTIC
+	acceptable_bodytype = BODYTYPE_TAJARAN
 
 /obj/item/bodypart/head/robot/tajaran
-	name = "prosthetic tajaran head"
+	name = "prosthetic tajara head"
 	icon = 'icons/mob/augmentation/augments_lizard.dmi'
 	should_draw_greyscale = TRUE
 	overlay_icon_state = TRUE
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ROBOTIC
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ROBOTIC
 
 /obj/item/bodypart/l_arm/robot/tajaran
-	name = "prosthetic tajaran left arm"
+	name = "prosthetic tajara left arm"
 	icon = 'icons/mob/augmentation/augments_lizard.dmi'
 	should_draw_greyscale = TRUE
 	overlay_icon_state = TRUE
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ROBOTIC
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ROBOTIC
 
 /obj/item/bodypart/r_arm/robot/tajaran
-	name = "prosthetic tajaran right arm"
+	name = "prosthetic tajara right arm"
 	icon = 'icons/mob/augmentation/augments_lizard.dmi'
 	should_draw_greyscale = TRUE
 	overlay_icon_state = TRUE
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ROBOTIC
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ROBOTIC
 
 /obj/item/bodypart/leg/left/robot/tajaran
-	name = "prosthetic tajaran left leg"
+	name = "prosthetic tajara left leg"
 	icon = 'icons/mob/augmentation/augments_lizard.dmi'
 	should_draw_greyscale = TRUE
 	overlay_icon_state = TRUE
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ROBOTIC
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ROBOTIC
 
 /obj/item/bodypart/leg/left/robot/tajaran
-	name = "prosthetic tajaran right leg"
+	name = "prosthetic tajara right leg"
 	icon = 'icons/mob/augmentation/augments_lizard.dmi'
 	should_draw_greyscale = TRUE
 	overlay_icon_state = TRUE
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ROBOTIC
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ROBOTIC
 
 // Surplus tajaran Robotic
 /obj/item/bodypart/l_arm/robot/surplus/tajaran
-	name = "surplus prosthetic tajaran left arm"
+	name = "surplus prosthetic tajara left arm"
 	icon = 'icons/mob/augmentation/augments_lizard.dmi'
 	should_draw_greyscale = TRUE
 	overlay_icon_state = TRUE
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ROBOTIC
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ROBOTIC
 
 /obj/item/bodypart/r_arm/robot/surplus/tajaran
-	name = "surplus prosthetic tajaran right arm"
+	name = "surplus prosthetic tajara right arm"
 	icon = 'icons/mob/augmentation/augments_lizard.dmi'
 	should_draw_greyscale = TRUE
 	overlay_icon_state = TRUE
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ROBOTIC
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ROBOTIC
 
 /obj/item/bodypart/leg/left/robot/surplus/tajaran
-	name = "surplus prosthetic tajaran left leg"
+	name = "surplus prosthetic tajara left leg"
 	icon = 'icons/mob/augmentation/augments_lizard.dmi'
 	should_draw_greyscale = TRUE
 	overlay_icon_state = TRUE
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ROBOTIC
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ROBOTIC
 
 /obj/item/bodypart/leg/right/robot/surplus/tajaran
-	name = "surplus prosthetic tajaran right leg"
+	name = "surplus prosthetic tajara right leg"
 	icon = 'icons/mob/augmentation/augments_lizard.dmi'
 	should_draw_greyscale = TRUE
 	overlay_icon_state = TRUE
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ROBOTIC
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ROBOTIC
 
 /obj/item/bodypart/leg/left/robot/surplus/tajaran/digitigrade
-	name = "surplus prosthetic digitigrade tajaran left leg"
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ROBOTIC | BODYTYPE_DIGITIGRADE
+	name = "surplus prosthetic digitigrade tajara left leg"
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ROBOTIC | BODYTYPE_DIGITIGRADE
 
 /obj/item/bodypart/leg/right/robot/surplus/tajaran/digitigrade
-	name = "surplus prosthetic digitigrade tajaran right leg"
-	bodytype = BODYTYPE_TAJARA | BODYTYPE_ROBOTIC | BODYTYPE_DIGITIGRADE
+	name = "surplus prosthetic digitigrade tajara right leg"
+	bodytype = BODYTYPE_TAJARAN | BODYTYPE_ROBOTIC | BODYTYPE_DIGITIGRADE

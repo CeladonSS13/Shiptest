@@ -34,8 +34,8 @@
 	desc = "A well-worn fedora favored by explorers and archaeologists. Not very protective but still very stylish."
 	icon_state = "explorerhat"
 	item_state = "explorerhat"
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajaran_items_SORTIROVATI.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajaran_items_overlay_SORTIROVATI.dmi'
 	flags_inv = 0
 
 /obj/item/clothing/head/beret/dominia
