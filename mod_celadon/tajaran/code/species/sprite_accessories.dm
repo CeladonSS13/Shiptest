@@ -308,6 +308,38 @@
 	name = "Short"
 	icon_state = "short"
 
+/datum/sprite_accessory/tails/tajaran/huge
+	name = "Huge"
+	icon_state = "huge"
+
+/datum/sprite_accessory/tails_animated/tajaran/huge
+	name = "Huge"
+	icon_state = "huge"
+
+/datum/sprite_accessory/tails/tajaran/tiny
+	name = "Tiny"
+	icon_state = "tiny"
+
+/datum/sprite_accessory/tails_animated/tajaran/tiny
+	name = "Tiny"
+	icon_state = "tiny"
+
+/datum/sprite_accessory/tails/tajaran/short2
+	name = "Short alt"
+	icon_state = "short2"
+
+/datum/sprite_accessory/tails_animated/tajaran/short2
+	name = "Short alt"
+	icon_state = "short2"
+
+/datum/sprite_accessory/tails/tajaran/longnostrips2
+	name = "Long alt"
+	icon_state = "longnostrips2"
+
+/datum/sprite_accessory/tails_animated/tajaran/longnostrips2
+	name = "Long alt"
+	icon_state = "longnostrips2"
+
 // MARK: Face hairs
 
 /datum/sprite_accessory/tajaran_facial_hairs
