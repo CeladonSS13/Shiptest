@@ -1,5 +1,3 @@
-
-
 /datum/blackmarket_item/weapon/guncase/svd
 	name = "SR-33 Dragunov sniper rifle"
 	desc = "A semiautomatic sniper rifle, famed for it's marksmanship, and is built from the ground up for it. Fires 7.62x54mmR rounds."
