@@ -242,10 +242,6 @@
 	STR.set_holdable(list(
 			/obj/item/stack/sheet,
 			/obj/item/stack/tile/bronze
-			),
-		list(
-			/obj/item/stack/sheet/mineral/sandstone,
-			/obj/item/stack/sheet/mineral/wood
 			))
 	STR.max_combined_stack_amount = 300
 
