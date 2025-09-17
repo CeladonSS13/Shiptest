@@ -23,7 +23,7 @@
 	path = /obj/item/clothing/shoes/heels/black
 
 /datum/gear/footwear/galoshes/tajara_galoshes
-	display_name = "tajara galoshes"
+	display_name = "tajaran galoshes"
 	path = /obj/item/clothing/shoes/galoshes/tajara_galoshes
 
 /datum/gear/footwear/swimming

@@ -1,6 +1,6 @@
 // MARK: Markings chest
 /datum/sprite_accessory/tajara_chest_markings
-	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_markings.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajara_markings.dmi'
 	color_src = CHESTTAJARACOLORS
 	body_zone = BODY_ZONE_CHEST
 	synthetic_icon_state = "none"
@@ -72,7 +72,7 @@
 // MARK: Markings body
 
 /datum/sprite_accessory/tajara_body_markings
-	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_markings.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajara_markings.dmi'
 	color_src = BODYTAJARACOLORS
 	body_zone = BODY_ZONE_CHEST
 	synthetic_icon_state = "none"
@@ -123,7 +123,7 @@
 // MARK: Markings nose
 
 /datum/sprite_accessory/tajara_nose_markings
-	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_markings.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajara_markings.dmi'
 	color_src = NOSETAJARACOLORS
 	body_zone = BODY_ZONE_CHEST
 	synthetic_icon_state = "none"
@@ -138,7 +138,7 @@
 
 // MARK: Markings ears
 /datum/sprite_accessory/tajara_ears_markings
-	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_markings.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajara_markings.dmi'
 	color_src = EARSTAJARACOLORS
 	body_zone = BODY_ZONE_HEAD
 
@@ -155,7 +155,7 @@
 
 // MARK: Markings head
 /datum/sprite_accessory/tajara_head_markings
-	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_markings.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajara_markings.dmi'
 	color_src = HEADTAJARACOLORS
 	body_zone = BODY_ZONE_HEAD
 
@@ -261,57 +261,57 @@
 
 // MARK: tails
 
-/datum/sprite_accessory/tails/tajara
-	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_tail.dmi'
+/datum/sprite_accessory/tails/tajaran
+	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajara_tail.dmi'
 	body_zone = BODY_ZONE_CHEST
 	secondary_color = TRUE
 
-/datum/sprite_accessory/tails_animated/tajara
-	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_tail.dmi'
+/datum/sprite_accessory/tails_animated/tajaran
+	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajara_tail.dmi'
 
-/datum/sprite_accessory/tails/tajara/hudge
+/datum/sprite_accessory/tails/tajaran/hudge
 	name = "Hudge"
 	icon_state = "leopard"
 
-/datum/sprite_accessory/tails_animated/tajara/hudge
+/datum/sprite_accessory/tails_animated/tajaran/hudge
 	name = "Hudge"
 	icon_state = "leopard"
-/datum/sprite_accessory/tails/tajara/longnostrips
+/datum/sprite_accessory/tails/tajaran/longnostrips
 	name = "Long no strips"
 	icon_state = "longnostrips"
 
-/datum/sprite_accessory/tails_animated/tajara/longnostrips
+/datum/sprite_accessory/tails_animated/tajaran/longnostrips
 	name = "Long no strips"
 	icon_state = "longnostrips"
 
-/datum/sprite_accessory/tails/tajara/long
+/datum/sprite_accessory/tails/tajaran/long
 	name = "Long"
 	icon_state = "long"
 
-/datum/sprite_accessory/tails_animated/tajara/long
+/datum/sprite_accessory/tails_animated/tajaran/long
 	name = "Long"
 	icon_state = "long"
 
-/datum/sprite_accessory/tails/tajara/middle
+/datum/sprite_accessory/tails/tajaran/middle
 	name = "Middle"
 	icon_state = "middle"
 
-/datum/sprite_accessory/tails_animated/tajara/middle
+/datum/sprite_accessory/tails_animated/tajaran/middle
 	name = "Middle"
 	icon_state = "middle"
 
-/datum/sprite_accessory/tails/tajara/short
+/datum/sprite_accessory/tails/tajaran/short
 	name = "Short"
 	icon_state = "short"
 
-/datum/sprite_accessory/tails_animated/tajara/short
+/datum/sprite_accessory/tails_animated/tajaran/short
 	name = "Short"
 	icon_state = "short"
 
 // MARK: Face hairs
 
 /datum/sprite_accessory/tajara_facial_hairs
-	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_facial_hairs.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajara_facial_hairs.dmi'
 	body_zone = BODY_ZONE_HEAD
 
 /datum/sprite_accessory/tajara_facial_hairs/none
@@ -377,7 +377,7 @@
 // MARK: Hair
 
 /datum/sprite_accessory/tajara_hairs
-	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_hairs.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajara_hairs.dmi'
 	body_zone = BODY_ZONE_HEAD
 
 /datum/sprite_accessory/tajara_hairs/none
@@ -729,7 +729,7 @@
 // MARK: Ears
 
 /datum/sprite_accessory/tajara_ears
-	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_ears.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/species/tajaran/tajara_ears.dmi'
 	body_zone = BODY_ZONE_HEAD
 	secondary_color = TRUE
 

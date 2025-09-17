@@ -85,11 +85,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/skin_tone = "caucasian1"		//Skin color
 	var/eye_color = "000"				//Eye color
 	// [CELADON-ADD] - SPECIES_TAJARAN
-	var/tajara_ears_markings_color = "000"				//tajara ears markings color
-	var/tajara_head_markings_color = "000"				//tajara head markings color
-	var/tajara_nose_markings_color = "000"				//tajara nose markings color
-	var/tajara_chest_markings_color = "000"				//tajara chest markings color
-	var/tajara_body_markings_color = "000"				//tajara body markings color
+	var/tajara_ears_markings_color = "000"				//tajaran ears markings color
+	var/tajara_head_markings_color = "000"				//tajaran head markings color
+	var/tajara_nose_markings_color = "000"				//tajaran nose markings color
+	var/tajara_chest_markings_color = "000"				//tajaran chest markings color
+	var/tajara_body_markings_color = "000"				//tajaran body markings color
 	// [CELADON-ADD] - CELADON_RIOL
 	var/riol_ears_markings_color = "000"				//riol ears markings color
 	var/riol_head_markings_color = "000"				//riol head markings color

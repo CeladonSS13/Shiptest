@@ -1456,7 +1456,7 @@
 		return FALSE
 	return TRUE
 
-/datum/emote/living/carbon/human/hiss/tajara
+/datum/emote/living/carbon/human/hiss/tajaran
 	message_mime = "hisses silently."
 	// species_type_whitelist_typecache = list(/datum/species/tajaran)
 	sound = 'mod_celadon/_storage_sounds/sound/emotes/tajaran/hiss_tajaran.ogg'
@@ -1580,7 +1580,7 @@
 	volume = 50
 	muzzled_noises = list("слабо мяукающий")
 
-/datum/emote/living/carbon/human/tajara/mrow
+/datum/emote/living/carbon/human/tajaran/mrow
 	key = "mrow"
 	key_third_person = "mrow"
 	message = "раздражённо мяукает."
@@ -1593,7 +1593,7 @@
 	volume = 70
 	muzzled_noises = list("слабо раздраженный мяукающий")
 
-/datum/emote/living/carbon/human/tajara/can_run_emote(mob/user, status_check = TRUE , intentional)
+/datum/emote/living/carbon/human/tajaran/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
 	if(!istajara(user))
@@ -1726,24 +1726,24 @@
 // 	else
 // 		return pick(H.dna.species.male_cry_sound)
 
-// /datum/emote/living/carbon/human/tajara/purr
+// /datum/emote/living/carbon/human/tajaran/purr
 // 	key = "purr"
 // 	key_third_person = "purrs"
 // 	message = "мурчит"
 // 	emote_type = EMOTE_AUDIBLE
 // 	vary = TRUE
 
-// /datum/emote/living/carbon/human/tajara/purr/get_sound(mob/living/user)
+// /datum/emote/living/carbon/human/tajaran/purr/get_sound(mob/living/user)
 // 	return 'mod_celadon/_storage_sounds/sound/purr.ogg'
 
-// /datum/emote/living/carbon/human/tajara/purrl
+// /datum/emote/living/carbon/human/tajaran/purrl
 // 	key = "purrl"
 // 	key_third_person = "purrls"
 // 	message = "мурчит"
 // 	emote_type = EMOTE_AUDIBLE
 // 	vary = TRUE
 
-// /datum/emote/living/carbon/human/tajara/purrl/get_sound(mob/living/user)
+// /datum/emote/living/carbon/human/tajaran/purrl/get_sound(mob/living/user)
 // 	return 'mod_celadon/_storage_sounds/sound/purr_long.ogg'
 
 

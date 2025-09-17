@@ -11,7 +11,7 @@
 
 ## Раса - Таяры
 
-ID мода: TAJARA
+ID мода: SPECIES_TAJARAN
 
 ### Описание мода
 
@@ -100,23 +100,23 @@ ID мода: TAJARA
 
 ### Оверрайды
 
-- `mod_celadon/tajara/code/preferences/preferences.dm`:
+- `mod_celadon/tajaran/code/preferences/preferences.dm`:
   - `/datum/preferences/New()`
   - `/datum/preferences/process_link()`
   - `/datum/preferences/random_character()`
-- `mod_celadon/tajara/code/species/species.dm`:
+- `mod_celadon/tajaran/code/species/species.dm`:
   - `/datum/species/start_wagging_tail()`
   - `/datum/species/stop_wagging_tail()`
-- `mod_celadon/tajara/code/tweaks/crates.dm`:
+- `mod_celadon/tajaran/code/tweaks/crates.dm`:
   - `/obj/structure/closet/crate/freezer/surplus_limbs/PopulateContents()`
-- `mod_celadon/tajara/code/tweaks/limbgrower.dm`:
+- `mod_celadon/tajaran/code/tweaks/limbgrower.dm`:
   - `/obj/machinery/limbgrower/Initialize()`
-- `mod_celadon/tajara/code/tweaks/nanite_program.dm`:
+- `mod_celadon/tajaran/code/tweaks/nanite_program.dm`:
   - `/datum/nanite_program/sensor/species/New()`
 
 ### Дефайны
 
-- `code/__DEFINES/~mod_celadon/tajara.dm`:
+- `code/__DEFINES/~mod_celadon/tajaran.dm`:
   - `DNA_SKIN_TONE_NOSE_BLOCK`
   - `SKINNOSECOLORS`
   - `SKINTAJARACOLORS`
@@ -137,7 +137,7 @@ ID мода: TAJARA
 
 - `icons/mob/augmentation/augments_lizard.dmi`
 - `mod_celadon/_storage_icons/icons`
-- `mod_celadon/_storage_icons/icons/tajara`
+- `mod_celadon/_storage_icons/icons/tajaran`
 - `mod_celadon/_storage_sounds/sound`
 
 ### Авторы:

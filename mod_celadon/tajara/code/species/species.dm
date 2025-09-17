@@ -1,16 +1,16 @@
 /mob/living/carbon/human
-	var/skin_tone_nose = "black"    //Skin tone nose tajara
-	var/skin_tone_tajara = "Black"  //Skin tone tajara
+	var/skin_tone_nose = "black"    //Skin tone nose tajaran
+	var/skin_tone_tajara = "Black"  //Skin tone tajaran
 
-/mob/living/carbon/human/species/tajara
-	race = /datum/species/tajara
+/mob/living/carbon/human/species/tajaran
+	race = /datum/species/tajaran
 
 /datum/species
 	/// Does the species use skintones or not?
 	var/use_skintonesnose = FALSE
 	var/use_skintonetajara = FALSE
 
-/datum/species/tajara
+/datum/species/tajaran
 	name = "\improper Tajara"
 	id = SPECIES_TAJARA
 	loreblurb = "The Tajara race is a species of feline-like bipeds hailing from the planet of Ahdomai in the \
@@ -76,26 +76,26 @@
 
 	bodytemp_cold_damage_limit = TAJARAN_BODYTEMP_NORMAL - 40		//-20
 
-	meat = /obj/item/food/meat/slab/human/mutant/tajara 	//нарисовать/спиздить спрайт к нему
-	//skinned_type = /obj/item/stack/sheet/animalhide/tajara						//нужно сделать кожу из таяран и нарисовать/спиздить спрайт к нему
+	meat = /obj/item/food/meat/slab/human/mutant/tajaran 	//нарисовать/спиздить спрайт к нему
+	//skinned_type = /obj/item/stack/sheet/animalhide/tajaran						//нужно сделать кожу из таяран и нарисовать/спиздить спрайт к нему
 
-	species_language_holder = /datum/language_holder/tajara
+	species_language_holder = /datum/language_holder/tajaran
 
 	ass_image = 'icons/ass/asscat.png'
 
-	mutantears = /obj/item/organ/ears/tajara		//нужно отделить уши от головы. и можно кинуть их в тот же файл. потом в органе прописать путь к файлу + имя файла
-	mutanteyes = /obj/item/organ/eyes/tajara
-	mutanttongue = /obj/item/organ/tongue/tajara
-	mutant_organs = list(/obj/item/organ/tail/tajara)
+	mutantears = /obj/item/organ/ears/tajaran		//нужно отделить уши от головы. и можно кинуть их в тот же файл. потом в органе прописать путь к файлу + имя файла
+	mutanteyes = /obj/item/organ/eyes/tajaran
+	mutanttongue = /obj/item/organ/tongue/tajaran
+	mutant_organs = list(/obj/item/organ/tail/tajaran)
 
 	bodytype = BODYTYPE_TAJARA | BODYTYPE_ORGANIC
 
-	species_chest = /obj/item/bodypart/chest/tajara
-	species_head = /obj/item/bodypart/head/tajara
-	species_l_arm = /obj/item/bodypart/l_arm/tajara
-	species_r_arm = /obj/item/bodypart/r_arm/tajara
-	species_l_leg = /obj/item/bodypart/leg/left/tajara
-	species_r_leg = /obj/item/bodypart/leg/right/tajara
+	species_chest = /obj/item/bodypart/chest/tajaran
+	species_head = /obj/item/bodypart/head/tajaran
+	species_l_arm = /obj/item/bodypart/l_arm/tajaran
+	species_r_arm = /obj/item/bodypart/r_arm/tajaran
+	species_l_leg = /obj/item/bodypart/leg/left/tajaran
+	species_r_leg = /obj/item/bodypart/leg/right/tajaran
 
 	species_robotic_chest = /obj/item/bodypart/chest/robot
 	species_robotic_head = /obj/item/bodypart/head/robot
@@ -104,7 +104,7 @@
 	species_robotic_l_leg = /obj/item/bodypart/leg/left/robot/surplus
 	species_robotic_r_leg = /obj/item/bodypart/leg/right/robot/surplus
 
-/datum/species/tajara/random_name(gender,unique,lastname)
+/datum/species/tajaran/random_name(gender,unique,lastname)
 	//code by @valtor0
 	/*
 	var/static/list/tajara_female_ru_endings_list = list("и","а","о","е","й","ь") // Customise this with ru_name_syllables changes.

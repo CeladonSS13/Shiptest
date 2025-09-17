@@ -14,11 +14,11 @@
 
 
 // Хелпер как в code/__DEFINES/is_helpers.dm
-#define istajara(A) (is_species(A, /datum/species/tajara))
+#define istajara(A) (is_species(A, /datum/species/tajaran))
 
 
 // Дополнение к code/__DEFINES/mobs.dm
-#define SPECIES_TAJARA "tajara"
+#define SPECIES_TAJARA "tajaran"
 
 
 // Дополнение к code/__DEFINES/preferences.dm

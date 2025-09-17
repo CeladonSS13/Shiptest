@@ -7,7 +7,7 @@
 	id = "tajaralong"
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/synthflesh = 20)
-	build_path = /obj/item/organ/tail/tajara/fake
+	build_path = /obj/item/organ/tail/tajaran/fake
 	category = list("initial",SPECIES_TAJARA)
 
 /datum/design/tajara_tongue
@@ -15,5 +15,5 @@
 	id = "tajaratongue"
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/synthflesh = 10)
-	build_path = /obj/item/organ/tongue/tajara
+	build_path = /obj/item/organ/tongue/tajaran
 	category = list("initial",SPECIES_TAJARA)

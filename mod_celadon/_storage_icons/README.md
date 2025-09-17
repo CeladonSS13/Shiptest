@@ -212,13 +212,13 @@ structures/elysium_logo.dmi
 structures/statue.dmi
 structures/tiles.dmi
 
-tajara/tajara_bodyparts.dmi
-tajara/tajara_ears.dmi
-tajara/tajara_facial_hairs.dmi
-tajara/tajara_hairs.dmi
-tajara/tajara_markings.dmi
-tajara/tajara_organs.dmi
-tajara/tajara_tail.dmi
+tajaran/tajara_bodyparts.dmi
+tajaran/tajara_ears.dmi
+tajaran/tajara_facial_hairs.dmi
+tajaran/tajara_hairs.dmi
+tajaran/tajara_markings.dmi
+tajaran/tajara_organs.dmi
+tajaran/tajara_tail.dmi
 
 areas.dmi
 barsigns_long.dmi

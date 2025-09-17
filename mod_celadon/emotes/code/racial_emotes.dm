@@ -72,7 +72,7 @@
 
 // MARK: TAJARAN
 
-/datum/species/tajara/on_species_gain(mob/living/carbon/human/H)
+/datum/species/tajaran/on_species_gain(mob/living/carbon/human/H)
 	..()
 	H.verbs |= /mob/living/carbon/human/proc/emote_wag
 	// H.verbs |= /mob/living/carbon/human/proc/emote_swag
@@ -84,7 +84,7 @@
 	H.verbs |= /mob/living/carbon/human/proc/emote_mrowss
 	H.verbs |= /mob/living/carbon/human/proc/bite_feral_switch
 
-/datum/species/tajara/on_species_loss(mob/living/carbon/human/H)
+/datum/species/tajaran/on_species_loss(mob/living/carbon/human/H)
 	..()
 	H.verbs -= /mob/living/carbon/human/proc/emote_wag
 	// H.verbs -= /mob/living/carbon/human/proc/emote_swag

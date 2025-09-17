@@ -582,7 +582,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	//	else if(gender == FEMALE)
 	//		hairstyle								= sanitize_inlist(hairstyle, GLOB.hairstyles_female_list)
 	//		facial_hairstyle						= sanitize_inlist(facial_hairstyle, GLOB.facial_hairstyles_female_list) // CELADON-EDIT - ORIGINAL
-	if(species_id == "tajara")
+	if(species_id == "tajaran")
 		hairstyle								= sanitize_inlist(hairstyle, GLOB.tajara_hairs_list)
 		facial_hairstyle						= sanitize_inlist(facial_hairstyle, GLOB.tajara_facial_hairs_list)
 

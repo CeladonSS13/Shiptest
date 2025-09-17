@@ -1,9 +1,9 @@
 
 /datum/preferences
-	/// Nose skin color for tajara
+	/// Nose skin color for tajaran
 	var/skin_tone_nose = "black"
 
-	/// Body skin color for tajara
+	/// Body skin color for tajaran
 	var/skin_tone_tajara = "Black"
 
 /datum/preferences/New(client/C)

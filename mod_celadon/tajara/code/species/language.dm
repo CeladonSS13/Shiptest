@@ -1,4 +1,4 @@
-/datum/language_holder/tajara
+/datum/language_holder/tajaran
 	understood_languages = list(
 		/datum/language/galactic_common = list(LANGUAGE_ATOM),
 		/datum/language/siiktajr = list(LANGUAGE_ATOM)
