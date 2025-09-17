@@ -18,10 +18,10 @@ GLOBAL_LIST_INIT(skin_tones_nose, sortList(list(
 	"black"
 )))
 
-/proc/random_skin_tone_tajara()
-	return pick(GLOB.skin_tones_tajara)
+/proc/random_skin_tone_tajaran()
+	return pick(GLOB.skin_tones_tajaran)
 
-GLOBAL_LIST_INIT(skin_tones_tajara, sortList(list(
+GLOBAL_LIST_INIT(skin_tones_tajaran, sortList(list(
 	"Beaver Brown",
 	"Kochiba",
 	"Taupe",

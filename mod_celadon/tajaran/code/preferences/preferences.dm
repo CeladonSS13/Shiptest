@@ -4,7 +4,7 @@
 	var/skin_tone_nose = "black"
 
 	/// Body skin color for tajaran
-	var/skin_tone_tajara = "Black"
+	var/skin_tone_tajaran = "Black"
 
 /datum/preferences/New(client/C)
 	features += list(
@@ -31,8 +31,8 @@
 			switch(href_list["preference"])
 				//if("s_tone_nose")
 				//	skin_tone_nose = random_skin_tone_nose()
-				if("s_tone_tajara")
-					skin_tone_tajara = random_skin_tone_tajara()
+				if("s_tone_tajaran")
+					skin_tone_tajaran = random_skin_tone_tajaran()
 				if("s_tone_riol")
 					skin_tone_riol = random_skin_tone_riol()
 		if("input")
@@ -91,10 +91,10 @@
 					if(new_tajaran_tail)
 						features["tajaran_tail"] = new_tajaran_tail
 
-				if("s_tone_tajara")
-					var/new_s_tone_tajara = input(user, "Choose your character's skin-tone body:", "Character Preference")  as null|anything in GLOB.skin_tones_tajara
-					if(new_s_tone_tajara)
-						skin_tone_tajara = new_s_tone_tajara
+				if("s_tone_tajaran")
+					var/new_s_tone_tajaran = input(user, "Choose your character's skin-tone body:", "Character Preference")  as null|anything in GLOB.skin_tones_tajaran
+					if(new_s_tone_tajaran)
+						skin_tone_tajaran = new_s_tone_tajaran
 
 				//if("s_tone_nose")
 				//	var/new_s_tone_nose = input(user, "Choose your character's skin-tone nose:", "Character Preference")  as null|anything in GLOB.skin_tones_nose

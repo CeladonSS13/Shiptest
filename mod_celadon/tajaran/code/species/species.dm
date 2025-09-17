@@ -1,6 +1,6 @@
 /mob/living/carbon/human
 	var/skin_tone_nose = "black"    //Skin tone nose tajaran
-	var/skin_tone_tajara = "Black"  //Skin tone tajaran
+	var/skin_tone_tajaran = "Black"  //Skin tone tajaran
 
 /mob/living/carbon/human/species/tajaran
 	race = /datum/species/tajaran

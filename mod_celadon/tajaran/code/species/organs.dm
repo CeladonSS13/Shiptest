@@ -146,7 +146,7 @@
 	say_mod = "mrowls"
 	taste_sensitivity = 10 // combined nose + tongue, extra sensitive
 	modifies_speech = TRUE
-	var/static/list/languages_possible_tajara = typecacheof(list(
+	var/static/list/languages_possible_tajaran = typecacheof(list(
 		/datum/language/galactic_common,
 		/datum/language/kalixcian_common,
 		/datum/language/codespeak,
@@ -179,4 +179,4 @@
 
 /obj/item/organ/tongue/tajaran/Initialize(mapload)
 	. = ..()
-	languages_possible = languages_possible_tajara
+	languages_possible = languages_possible_tajaran

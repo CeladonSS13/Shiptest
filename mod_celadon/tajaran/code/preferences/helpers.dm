@@ -10,9 +10,9 @@
 		if("black")
 			. = "000000"
 
-/proc/skintonetajara2hex(skin_tone_tajara)
+/proc/skintonetajara2hex(skin_tone_tajaran)
 	. = 0
-	switch(skin_tone_tajara)
+	switch(skin_tone_tajaran)
 		if("Beaver Brown")
 			. = "9f8b70"
 		if("Kochiba")

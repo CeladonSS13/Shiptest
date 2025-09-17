@@ -794,7 +794,7 @@
 	else if(should_draw_greyscale)
 		// [CELADON-EDIT] - SPECIES_TAJARAN, CELADON_RIOL
 		// draw_color = (species_color) || (skin_tone && skintone2hex(skin_tone)) // CELADON-EDIT - ORIGINAL
-		draw_color = (species_color) || (skin_tone && skintone2hex(skin_tone)) || (skin_tone_nose && skintonenose2hex(skin_tone_nose)) || (skin_tone_tajara && skintonetajara2hex(skin_tone_tajara)) || (skin_tone_riol && skintoneriol2hex(skin_tone_riol))
+		draw_color = (species_color) || (skin_tone && skintone2hex(skin_tone)) || (skin_tone_nose && skintonenose2hex(skin_tone_nose)) || (skin_tone_tajaran && skintonetajara2hex(skin_tone_tajaran)) || (skin_tone_riol && skintoneriol2hex(skin_tone_riol))
 		// [/CELADON-EDIT]
 	else
 		draw_color = null
@@ -824,9 +824,9 @@
 
 		// [CELADON-ADD] - SPECIES_TAJARAN
 		if(S.use_skintonetajara)
-			skin_tone_tajara = H.skin_tone_tajara
+			skin_tone_tajaran = H.skin_tone_tajaran
 		else
-			skin_tone_tajara = ""
+			skin_tone_tajaran = ""
 
 		// [CELADON-ADD] - CELADON_RIOL
 		if(S.use_skintoneriol)
@@ -853,7 +853,7 @@
 		if(should_draw_greyscale) //Should the limb be colored?
 			// [CELADON-EDIT] - SPECIES_TAJARAN, CELADON_RIOL
 			// draw_color ||= (species_color) || (skin_tone && skintone2hex(skin_tone)) // CELADON-EDIT - ORIGINAL
-			draw_color ||= (species_color) || (skin_tone && skintone2hex(skin_tone)) || (skin_tone_nose && skintonenose2hex(skin_tone_nose)) || (skin_tone_tajara && skintonetajara2hex(skin_tone_tajara)) || (skin_tone_riol && skintoneriol2hex(skin_tone_riol))
+			draw_color ||= (species_color) || (skin_tone && skintone2hex(skin_tone)) || (skin_tone_nose && skintonenose2hex(skin_tone_nose)) || (skin_tone_tajaran && skintonetajara2hex(skin_tone_tajaran)) || (skin_tone_riol && skintoneriol2hex(skin_tone_riol))
 			// [/CELADON-EDIT]
 
 		dmg_overlay_type = S.damage_overlay_type
@@ -953,7 +953,7 @@
 		if(should_draw_greyscale) //Should the limb be colored outside of a forced color?
 			// [CELADON-EDIT] - SPECIES_TAJARAN, CELADON_RIOL
 			// draw_color ||= (species_color) || (skin_tone && skintone2hex(skin_tone)) // CELADON-EDIT - ORIGINAL
-			draw_color ||= (species_color) || (skin_tone && skintone2hex(skin_tone)) || (skin_tone_nose && skintonenose2hex(skin_tone_nose)) || (skin_tone_tajara && skintonetajara2hex(skin_tone_tajara)) || (skin_tone_riol && skintoneriol2hex(skin_tone_riol))
+			draw_color ||= (species_color) || (skin_tone && skintone2hex(skin_tone)) || (skin_tone_nose && skintonenose2hex(skin_tone_nose)) || (skin_tone_tajaran && skintonetajara2hex(skin_tone_tajaran)) || (skin_tone_riol && skintoneriol2hex(skin_tone_riol))
 			// [/CELADON-EDIT]
 
 

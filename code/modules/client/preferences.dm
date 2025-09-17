@@ -2853,7 +2853,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.skin_tone = skin_tone
 	// [CELADON-ADD] - SPECIES_TAJARAN
 	//character.skin_tone_nose = skin_tone_nose
-	character.skin_tone_tajara = skin_tone_tajara
+	character.skin_tone_tajaran = skin_tone_tajaran
 	// [CELADON-ADD] - CELADON_RIOL
 	character.skin_tone_riol = skin_tone_riol
 	// [/CELADON-ADD]

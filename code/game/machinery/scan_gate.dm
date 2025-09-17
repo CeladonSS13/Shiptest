@@ -152,7 +152,7 @@
 					if(SCANGATE_KEPORI)
 						scan_species = /datum/species/kepori
 					// [CELADON-ADD] - SPECIES_TAJARAN, LANIUS
-					if(SPECIES_TAJARA)
+					if(SPECIES_TAJARAN)
 						scan_species = /datum/species/tajaran
 					// [CELADON-ADD] - CELADON_RIOL, CELADON_LANIUS
 					if(SPECIES_RIOL)

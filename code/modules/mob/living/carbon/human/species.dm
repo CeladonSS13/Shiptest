@@ -1216,7 +1216,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 						if(SKINNOSECOLORS)
 							accessory_overlay.color = "#[(skintonenose2hex(H.skin_tone_nose))]"
 						if(SKINTAJARACOLORS)
-							accessory_overlay.color = "#[(skintonetajara2hex(H.skin_tone_tajara))]"
+							accessory_overlay.color = "#[(skintonetajara2hex(H.skin_tone_tajaran))]"
 						if(EARSTAJARACOLORS)
 							accessory_overlay.color = "#[H.dna.features["tajaran_ears_markings_color"]]"
 						if(HEADTAJARACOLORS)

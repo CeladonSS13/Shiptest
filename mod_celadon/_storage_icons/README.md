@@ -27,9 +27,9 @@ bongs/bong.dmi
 bongs/lefthand.dmi
 bongs/righthand.dmi
 
-clothing/onmob_head_tajara.dmi
-clothing/onmob_mask_tajara.dmi
-clothing/onmob_suit_tajara.dmi
+clothing/onmob_head_tajaran.dmi
+clothing/onmob_mask_tajaran.dmi
+clothing/onmob_suit_tajaran.dmi
 
 donaters/plushes.dmi
 
