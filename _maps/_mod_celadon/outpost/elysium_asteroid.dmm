@@ -1976,6 +1976,9 @@
 	pixel_y = 3;
 	pixel_x = 8
 	},
+/obj/machinery/airalarm/directional/west{
+	req_access_txt = "8100, 8111"
+	},
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/outpost/medical/morgue)
 "bpq" = (
@@ -2809,7 +2812,7 @@
 	dir = 1
 	},
 /obj/structure/curtain,
-/obj/machinery/airalarm/directional/west{
+/obj/machinery/airalarm/directional/east{
 	req_access_txt = "8100, 8111"
 	},
 /turf/open/floor/plasteel/white,
@@ -3351,11 +3354,11 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
 "coh" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	req_access_txt = "8100, 8111";
-	dir = 4;
-	pixel_y = 0;
-	pixel_x = 29
+/obj/machinery/power/apc/auto_name/directional/east{
+	req_access_txt = "8100, 8111"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
@@ -9569,9 +9572,6 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/corner/transparent/mauve/three_quarters,
-/obj/machinery/airalarm/directional/west{
-	req_access_txt = "8100, 8111"
-	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/palata_2)
 "grD" = (
@@ -10116,7 +10116,7 @@
 	pixel_y = 27
 	},
 /obj/structure/curtain,
-/obj/machinery/airalarm/directional/west{
+/obj/machinery/airalarm/directional/east{
 	req_access_txt = "8100, 8111"
 	},
 /turf/open/floor/plasteel/white,
@@ -17012,12 +17012,6 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
 /obj/machinery/light_switch{
 	pixel_y = 1;
 	pixel_x = -23;
@@ -18654,9 +18648,6 @@
 /obj/machinery/power/apc/auto_name/directional/south{
 	req_access_txt = "8100, 8111"
 	},
-/obj/machinery/airalarm/directional/west{
-	req_access_txt = "8100, 8111"
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/relax_room)
@@ -19111,7 +19102,9 @@
 	pixel_x = 10;
 	pixel_y = -21;
 	name = "Door Bolt";
-	id = "waterbar_charge2"
+	id = "waterbar_charge2";
+	specialfunctions = 4;
+	normaldoorcontrol = 1
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/crew/canteen)
@@ -21670,6 +21663,9 @@
 /obj/effect/turf_decal/corner/transparent/mauve/three_quarters{
 	dir = 1
 	},
+/obj/machinery/airalarm/directional/west{
+	req_access_txt = "8100, 8111"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/palata_2)
 "oyg" = (
@@ -23100,7 +23096,9 @@
 	pixel_x = 21;
 	pixel_y = 10;
 	name = "Door Bolt";
-	id = "waterbar_stall1"
+	id = "waterbar_stall1";
+	specialfunctions = 4;
+	normaldoorcontrol = 1
 	},
 /obj/structure/toilet{
 	dir = 1
@@ -23594,6 +23592,9 @@
 /obj/effect/turf_decal/corner/transparent/nsorange/three_quarters{
 	dir = 4
 	},
+/obj/machinery/airalarm/directional/west{
+	req_access_txt = "8100, 8111"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/relax_room)
 "pED" = (
@@ -23941,9 +23942,6 @@
 /area/outpost/operations)
 "pQn" = (
 /obj/structure/bookcase/random/fiction,
-/obj/machinery/airalarm/directional/east{
-	req_access_txt = "8100, 8111"
-	},
 /turf/open/floor/wood,
 /area/outpost/vacant_rooms/office)
 "pQy" = (
@@ -27334,9 +27332,6 @@
 /obj/effect/turf_decal/corner/transparent/blue/three_quarters{
 	dir = 8
 	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
 "sca" = (
@@ -27492,7 +27487,9 @@
 	pixel_x = -21;
 	pixel_y = 10;
 	name = "Door Bolt";
-	id = "waterbar_stall2"
+	id = "waterbar_stall2";
+	specialfunctions = 4;
+	normaldoorcontrol = 1
 	},
 /obj/structure/toilet{
 	dir = 1
@@ -28388,9 +28385,6 @@
 "sTl" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
-	},
-/obj/machinery/airalarm/directional/west{
-	req_access_txt = "8100, 8111"
 	},
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/outpost/medical/morgue)
@@ -30096,9 +30090,6 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 4
 	},
-/obj/machinery/airalarm/directional/east{
-	req_access_txt = "8100, 8111"
-	},
 /obj/effect/landmark/ert_outpost_spawn,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/armory)
@@ -31679,14 +31670,11 @@
 	color = "#792f27";
 	dir = 6
 	},
-/obj/machinery/power/apc/auto_name/directional/south{
-	req_access_txt = "8100, 8111";
-	dir = 4;
-	pixel_y = 2;
-	pixel_x = 28
-	},
 /obj/structure/cable{
 	icon_state = "0-1"
+	},
+/obj/machinery/power/apc/auto_name/directional/east{
+	req_access_txt = "8100, 8111"
 	},
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
@@ -32586,7 +32574,9 @@
 	pixel_x = 10;
 	pixel_y = -21;
 	name = "Door Bolt";
-	id = "waterbar_charge1"
+	id = "waterbar_charge1";
+	specialfunctions = 4;
+	normaldoorcontrol = 1
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/crew/canteen)
@@ -33071,9 +33061,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/turf_decal/borderfloorwhite{
-	dir = 8
-	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
@@ -33088,17 +33075,7 @@
 	id = "outpost_ghost_janitor";
 	dir = 4
 	},
-/obj/effect/turf_decal/corner/opaque/grey/diagonal,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/turf/open/floor/plasteel/patterned,
+/turf/open/floor/plasteel/dark,
 /area/outpost/vacant_rooms/shop)
 "vQk" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -35286,6 +35263,12 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
 "xAk" = (
@@ -36146,9 +36129,6 @@
 	pixel_x = -4;
 	mouse_opacity = 0
 	},
-/obj/machinery/power/apc/auto_name/directional/west{
-	req_access_txt = "8100, 8111"
-	},
 /obj/structure/cable{
 	d2 = 2;
 	icon_state = "0-2"
@@ -36161,6 +36141,10 @@
 /obj/item/kirbyplants/random{
 	pixel_y = 7;
 	pixel_x = 8
+	},
+/obj/machinery/power/apc/auto_name/directional/north{
+	pixel_x = 6;
+	req_access_txt = "8100, 8111"
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
@@ -62272,8 +62256,8 @@ plM
 lSc
 mRY
 mQw
-plM
 coh
+plM
 sbP
 aFX
 lAb

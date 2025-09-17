@@ -3405,10 +3405,6 @@
 /obj/effect/turf_decal/corner/opaque/lime/three_quarters{
 	dir = 4
 	},
-/obj/machinery/medipen_refiller{
-	pixel_x = -8;
-	pixel_y = 11
-	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "bWp" = (
@@ -8816,6 +8812,16 @@
 /obj/effect/decal/cleanable/molten_object/large,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/external)
+"eSi" = (
+/obj/effect/turf_decal/corner/opaque/lime/half{
+	dir = 1
+	},
+/obj/machinery/medipen_refiller{
+	pixel_x = -8;
+	pixel_y = 11
+	},
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/hall_1)
 "eSn" = (
 /obj/effect/turf_decal/trimline/opaque/white/corner,
 /obj/effect/turf_decal/trimline/opaque/white/corner{
@@ -10979,11 +10985,6 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
-/obj/machinery/medical_kiosk{
-	pixel_y = 21;
-	density = 0;
-	pixel_x = -8
-	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "gas" = (
@@ -12027,11 +12028,11 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/medical/morgue)
 "gCu" = (
-/obj/machinery/airalarm/directional/west{
-	req_access_txt = "8100, 8111"
-	},
 /obj/effect/turf_decal/corner/opaque/red/half{
 	dir = 4
+	},
+/obj/machinery/airalarm/directional/east{
+	req_access_txt = "8100, 8111"
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
@@ -12830,9 +12831,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/small/directional/east,
 /obj/machinery/button/door{
+	id = "ice_stool_2";
+	name = "Stool Lock";
 	pixel_y = 25;
-	name = "Door Bolt";
-	id = "waterbar_charge1"
+	pixel_x = -2;
+	normaldoorcontrol = 1;
+	specialfunctions = 4
 	},
 /turf/open/floor/plasteel/patterned,
 /area/outpost/crew/bathroom)
@@ -15019,8 +15023,8 @@
 /obj/machinery/button/door{
 	id = "ice_stool_1";
 	name = "Stool Lock";
-	pixel_y = 28;
-	pixel_x = -4;
+	pixel_y = 25;
+	pixel_x = -2;
 	normaldoorcontrol = 1;
 	specialfunctions = 4
 	},
@@ -15402,11 +15406,11 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
-/obj/machinery/airalarm/directional/west{
-	req_access_txt = "8100, 8111"
-	},
 /obj/effect/turf_decal/corner/opaque/red/half{
 	dir = 4
+	},
+/obj/machinery/airalarm/directional/east{
+	req_access_txt = "8100, 8111"
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
@@ -15971,10 +15975,7 @@
 /turf/open/floor/carpet/black,
 /area/outpost/fraction/nanotrasen)
 "iKP" = (
-/obj/machinery/medical_kiosk{
-	pixel_y = 15;
-	density = 0
-	},
+/obj/machinery/medical_kiosk,
 /obj/effect/turf_decal/corner/opaque/lime/half{
 	dir = 1
 	},
@@ -24181,7 +24182,7 @@
 /turf/open/floor/plasteel/tech,
 /area/outpost/operations/outpost_command)
 "nrc" = (
-/obj/machinery/airalarm/directional/west{
+/obj/machinery/airalarm/directional/east{
 	req_access_txt = "8100, 8111"
 	},
 /turf/open/floor/plasteel/tech,
@@ -24718,12 +24719,11 @@
 /turf/open/floor/plating,
 /area/outpost/medical/morgue)
 "nEH" = (
-/obj/machinery/power/apc/auto_name/directional/south{
-	use_static_power = 1;
-	req_access_txt = "8100, 8111"
-	},
 /obj/structure/cable{
 	icon_state = "0-4"
+	},
+/obj/machinery/power/apc/auto_name/directional/north{
+	req_access_txt = "8100, 8111"
 	},
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar/bar_zone)
@@ -25443,11 +25443,11 @@
 /obj/effect/turf_decal/trimline/opaque/vired/warning{
 	dir = 1
 	},
-/obj/machinery/power/apc/auto_name/directional/west{
-	req_access_txt = "8100, 8111"
-	},
 /obj/structure/cable{
 	icon_state = "0-4"
+	},
+/obj/machinery/power/apc/auto_name/directional/north{
+	req_access_txt = "8100, 8111"
 	},
 /turf/open/floor/plating,
 /area/outpost/medical/hall_2)
@@ -29670,6 +29670,7 @@
 /obj/effect/turf_decal/corner/opaque/blue/three_quarters{
 	dir = 4
 	},
+/obj/machinery/medical_kiosk,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "qtK" = (
@@ -34813,7 +34814,6 @@
 /area/outpost/exterior)
 "tiT" = (
 /obj/effect/turf_decal/corner/opaque/blue/three_quarters,
-/obj/machinery/aug_manipulator,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "tjo" = (
@@ -38722,7 +38722,7 @@
 /obj/machinery/firealarm/directional/east{
 	pixel_y = -19
 	},
-/obj/machinery/airalarm/directional/west{
+/obj/machinery/airalarm/directional/east{
 	req_access_txt = "8100, 8111"
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -40270,8 +40270,8 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/door/airlock/maintenance/external{
-	id_tag = "waterbar_charge1";
-	name = "Recharge Station 1"
+	id_tag = "ice_stool_2";
+	name = "Recharge Station"
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/bathroom)
@@ -42148,7 +42148,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 6
 	},
-/obj/machinery/airalarm/directional/west{
+/obj/machinery/airalarm/directional/east{
 	req_access_txt = "8100, 8111"
 	},
 /turf/open/floor/plasteel/tech,
@@ -42650,6 +42650,7 @@
 /area/outpost/security/armory)
 "xEf" = (
 /obj/machinery/light/directional/south,
+/obj/machinery/aug_manipulator,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
 "xEs" = (
@@ -72090,7 +72091,7 @@ rgY
 rgY
 rgY
 oUm
-pUw
+eSi
 jtM
 sjV
 sjV

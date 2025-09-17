@@ -257,6 +257,11 @@ FIXES_DYNAMIC_MISSION
 
 - `mod_celadon/fixes/code/research_mission.dm` - вроде перезаписывает
 
+dock_empty_space_fix.dm:
+- `Dock(datum/overmap/to_dock, datum/docking_ticket/ticket, force = FALSE)`
+- `dock_in_empty_space()`
+- `post_undocked(datum/overmap/dock_requester)`
+
 <!-- fax_name -->
 <!-- 
 - `code\controllers\subsystem\overmap.dm`: `proc/spawn_ship_at_start`,

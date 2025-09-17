@@ -291,7 +291,7 @@
 /**
  * Docks to an empty dynamic encounter. Used for intership interaction, structural modifications, and such
  */
-/datum/overmap/ship/controlled/proc/dock_in_empty_space()
+/datum/overmap/ship/controlled/proc/dock_in_empty_space()	// [OVERWRITE] - FIXES_DOCKING -mod_celadon/fixes/code/dock_empty_space_fix.dm
 	var/datum/overmap/dynamic/empty/empty_space = locate() in current_overmap.overmap_container[x][y]
 	if(!empty_space)
 		empty_space = new(list("x" = x, "y" = y), current_overmap)

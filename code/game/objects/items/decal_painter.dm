@@ -17,7 +17,7 @@
 
 	var/list/allowed_directions = list("south")
 
-	// [CELADON-EDIT] - CELADON_STRUCTURES
+	// [CELADON-EDIT] - CELADON_STRUCTURES, CRAFTING_RECIPE_SUNS
 	// var/static/list/allowed_states = list(
 	// 	"steel", "dark", "white", "freezer", "tile_full", "cargo_one_full",
 	// 	"kafel_full", "monotile", "grid", "ridged", "stairs",
@@ -33,7 +33,9 @@
 		"hexacrete_dark", "plaque", "tcomms", "titanium", "titanium_blue",
 		"titanium_yellow", "titanium_white", "plastitanium", "plastitanium_red",
 		"titanium_tiled", "titanium_tiled_blue", "titanium_tiled_yellow",
-		"titanium_tiled_white", "titanium_tiled_purple"
+		"titanium_tiled_white", "titanium_tiled_purple", "light", "lightplain",
+		"lightpattern", "lighthatched", "lightdiag", "darkchunky", "dark",
+		"darkplain", "darkpattern"
 	)
 	// [/CELADON-EDIT]
 
