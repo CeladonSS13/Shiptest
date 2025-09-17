@@ -467,7 +467,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	mob_types = list(
 		/mob/living/simple_animal/hostile/asteroid/wolf/random = 20,
 		/mob/living/simple_animal/hostile/poison/giant_spider/tarantula = 1,
-		/mob/living/simple_animal/hostile/jungle/seedling = 5,
+		// /mob/living/simple_animal/hostile/jungle/seedling = 5,	// [CELADON-REMOVE] - FIXES_MOB_SPAWNER - Убираем нечестных цветков
 		/mob/living/simple_animal/hostile/jungle/mega_arachnid = 20,
 		/mob/living/simple_animal/hostile/jungle/mook = 30,
 	)

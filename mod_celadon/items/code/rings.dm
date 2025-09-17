@@ -2,8 +2,8 @@
 	return
 
 /obj/item/clothing/gloves/ring
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/ring.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/hands/overlay/hands2.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/ring.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/hands/overlay/hands2.dmi'
 	name = "gold ring"
 	desc = "A tiny gold ring, sized to wrap around a finger."
 	gender = NEUTER
@@ -40,21 +40,46 @@
 /obj/item/storage/fancy/ringbox
 	name = "ring box"
 	desc = "A tiny box covered in soft red felt made for holding rings."
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/ring.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/ring.dmi'
 	icon_state = "gold ringbox"
+	base_icon_state = "gold ringbox"
 	w_class = WEIGHT_CLASS_TINY
 	spawn_type = /obj/item/clothing/gloves/ring
-	// spawn_count = 1
+	contents_tag = "ring"
 
-/obj/item/storage/fancy/ringbox/Initialize(mapload)
+/obj/item/storage/fancy/ringbox/ComponentInitialize()
 	. = ..()
-	// atom_storage.max_slots = 1
-	// atom_storage.can_hold = typecacheof(list(/obj/item/clothing/gloves/ring))
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_items = 1
+	STR.set_holdable(list(/obj/item/clothing/gloves/ring))
+
+/obj/item/storage/fancy/ringbox/PopulateContents()
+	if(spawn_type)
+		new spawn_type(src)
+
+/obj/item/storage/fancy/ringbox/update_icon_state()
+	if(!is_open)
+		icon_state = base_icon_state
+		return ..()
+
+	if(!contents.len)
+		icon_state = "[base_icon_state]0"
+	else
+		var/obj/item/clothing/gloves/ring/ring = contents[1]
+		if(istype(ring, /obj/item/clothing/gloves/ring/diamond))
+			icon_state = "[base_icon_state]1"
+		else if(istype(ring, /obj/item/clothing/gloves/ring/silver))
+			icon_state = "[base_icon_state]1"
+		else
+			icon_state = "[base_icon_state]1"
+	return ..()
 
 /obj/item/storage/fancy/ringbox/diamond
 	icon_state = "diamond ringbox"
+	base_icon_state = "diamond ringbox"
 	spawn_type = /obj/item/clothing/gloves/ring/diamond
 
 /obj/item/storage/fancy/ringbox/silver
 	icon_state = "silver ringbox"
+	base_icon_state = "silver ringbox"
 	spawn_type = /obj/item/clothing/gloves/ring/silver

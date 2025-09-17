@@ -24,6 +24,17 @@ Mineral Sheets
  */
 
 GLOBAL_LIST_INIT(sandstone_recipes, list ( \
+	// [CELADON-ADD] - CRAFTING_RECIPE_SUNS
+	new/datum/stack_recipe_list("SUNS floor tiles", list( \
+		new/datum/stack_recipe("white marble tile", /obj/item/stack/tile/suns, 2), \
+		new/datum/stack_recipe("white plain marble tile", /obj/item/stack/tile/suns/plain, 2), \
+		new/datum/stack_recipe("patterned white marble tile", /obj/item/stack/tile/suns/pattern, 2), \
+		new/datum/stack_recipe("black marble tile", /obj/item/stack/tile/suns/dark, 2), \
+		new/datum/stack_recipe("black plain marble tile", /obj/item/stack/tile/suns/dark/plain, 2), \
+		new/datum/stack_recipe("patterned black marble tile", /obj/item/stack/tile/suns/dark/pattern, 2), \
+		)), \
+	null, \
+	// [/CELADON-ADD]
 	new/datum/stack_recipe("pile of dirt", /obj/machinery/hydroponics/soil, 3, time = 10, one_per_turf = 1, on_floor = 1), \
 	new/datum/stack_recipe("sandstone door", /obj/structure/mineral_door/sandstone, 10, one_per_turf = 1, on_floor = 1), \
 	new/datum/stack_recipe("Breakdown into sand", /obj/item/stack/ore/glass, 1, one_per_turf = 0, on_floor = 1) \

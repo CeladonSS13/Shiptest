@@ -635,7 +635,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 				user.visible_message(span_notice("Without even breaking stride, [user] flips open and lights [src] in one smooth movement."), span_notice("Without even breaking stride, you flip open and light [src] in one smooth movement."))
 				// [CELADON-EDIT] - CELADON_ITEMS
 				// playsound(src.loc, 'sound/items/zippo_on.ogg', 100, 1)	// CELADON-EDIT - ORIGINAL
-				playsound(src.loc, pick('sound/items/zippo_on.ogg', 'mod_celadon/_storge_sounds/sound/effects/zippo_on.ogg'), 100, 1)
+				playsound(src.loc, pick('sound/items/zippo_on.ogg', 'mod_celadon/_storage_sounds/sound/effects/zippo_on.ogg'), 100, 1)
 				// [/CELADON-EDIT]
 			else
 				var/prot = FALSE
@@ -663,7 +663,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 				user.visible_message(span_notice("You hear a quiet click, as [user] shuts off [src] without even looking at what [user.p_theyre()] doing. Wow."), span_notice("You quietly shut off [src] without even looking at what you're doing. Wow."))
 				// [CELADON-EDIT] - CELADON_ITEMS
 				// playsound(src.loc, 'sound/items/zippo_off.ogg', 100, 1)	// CELADON-EDIT - ORIGINAL
-				playsound(src.loc, pick('sound/items/zippo_off.ogg', 'mod_celadon/_storge_sounds/sound/effects/zippo_off.ogg'), 100, 1)
+				playsound(src.loc, pick('sound/items/zippo_off.ogg', 'mod_celadon/_storage_sounds/sound/effects/zippo_off.ogg'), 100, 1)
 				// [/CELADON-EDIT]
 			else
 				user.visible_message(span_notice("[user] quietly shuts off [src]."), span_notice("You quietly shut off [src]."))

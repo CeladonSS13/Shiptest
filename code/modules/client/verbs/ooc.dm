@@ -67,7 +67,7 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 	// [CELADON-ADD] - CELADON_DONATE / Значения GLOB.OOC_COLOR были заменены на COLOR_OOC для возможности замены цвета для donator_tier.
 	var/COLOR_OOC = GLOB.OOC_COLOR
 	if(donator.donator_tier > 0)
-		var/icon/donator_icon = icon('mod_celadon/_storge_icons/icons/assets/vip/ooc_icon.png')
+		var/icon/donator_icon = icon('mod_celadon/_storage_icons/icons/assets/vip/ooc_icon.png')
 		keyname = "[icon2html(donator_icon, world)] " + "[keyname]"
 	if(donator.donator_tier > 1)
 		COLOR_OOC = "CC008C"
