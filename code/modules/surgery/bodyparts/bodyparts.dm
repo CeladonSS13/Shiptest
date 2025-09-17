@@ -792,7 +792,7 @@
 	if(mutation_color) //I hate mutations
 		draw_color = mutation_color
 	else if(should_draw_greyscale)
-		// [CELADON-EDIT] - TAJARA, CELADON_RIOL
+		// [CELADON-EDIT] - SPECIES_TAJARAN, CELADON_RIOL
 		// draw_color = (species_color) || (skin_tone && skintone2hex(skin_tone)) // CELADON-EDIT - ORIGINAL
 		draw_color = (species_color) || (skin_tone && skintone2hex(skin_tone)) || (skin_tone_nose && skintonenose2hex(skin_tone_nose)) || (skin_tone_tajara && skintonetajara2hex(skin_tone_tajara)) || (skin_tone_riol && skintoneriol2hex(skin_tone_riol))
 		// [/CELADON-EDIT]
@@ -822,7 +822,7 @@
 		else
 			skin_tone = ""
 
-		// [CELADON-ADD] - TAJARA
+		// [CELADON-ADD] - SPECIES_TAJARAN
 		if(S.use_skintonetajara)
 			skin_tone_tajara = H.skin_tone_tajara
 		else
@@ -851,7 +851,7 @@
 
 		draw_color = mutation_color
 		if(should_draw_greyscale) //Should the limb be colored?
-			// [CELADON-EDIT] - TAJARA, CELADON_RIOL
+			// [CELADON-EDIT] - SPECIES_TAJARAN, CELADON_RIOL
 			// draw_color ||= (species_color) || (skin_tone && skintone2hex(skin_tone)) // CELADON-EDIT - ORIGINAL
 			draw_color ||= (species_color) || (skin_tone && skintone2hex(skin_tone)) || (skin_tone_nose && skintonenose2hex(skin_tone_nose)) || (skin_tone_tajara && skintonetajara2hex(skin_tone_tajara)) || (skin_tone_riol && skintoneriol2hex(skin_tone_riol))
 			// [/CELADON-EDIT]
@@ -951,7 +951,7 @@
 
 		draw_color = mutation_color
 		if(should_draw_greyscale) //Should the limb be colored outside of a forced color?
-			// [CELADON-EDIT] - TAJARA, CELADON_RIOL
+			// [CELADON-EDIT] - SPECIES_TAJARAN, CELADON_RIOL
 			// draw_color ||= (species_color) || (skin_tone && skintone2hex(skin_tone)) // CELADON-EDIT - ORIGINAL
 			draw_color ||= (species_color) || (skin_tone && skintone2hex(skin_tone)) || (skin_tone_nose && skintonenose2hex(skin_tone_nose)) || (skin_tone_tajara && skintonetajara2hex(skin_tone_tajara)) || (skin_tone_riol && skintoneriol2hex(skin_tone_riol))
 			// [/CELADON-EDIT]

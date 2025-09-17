@@ -70,7 +70,7 @@
 	H.verbs -= /mob/living/carbon/human/proc/emote_bubble
 	H.verbs -= /mob/living/carbon/human/proc/emote_pop
 
-// MARK: TAJARA
+// MARK: TAJARAN
 
 /datum/species/tajara/on_species_gain(mob/living/carbon/human/H)
 	..()

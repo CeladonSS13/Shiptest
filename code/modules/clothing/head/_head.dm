@@ -11,7 +11,7 @@
 	var/can_toggle = null
 	greyscale_icon_state = "hat"
 	greyscale_colors = list(list(16,26))
-	// [CELADON-EDIT] - TAJARA, CELADON_RIOL
+	// [CELADON-EDIT] - SPECIES_TAJARAN, CELADON_RIOL
 	// supports_variations = VOX_VARIATION // CELADON-EDIT - ORIGINAL
 	supports_variations = VOX_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
 	// [/CELADON-EDIT]

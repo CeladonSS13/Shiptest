@@ -240,14 +240,14 @@
 	if(hairstyle)
 		H.hairstyle = hairstyle
 	else
-		// [CELADON-EDIT] - TAJARA - изменения базы
+		// [CELADON-EDIT] - SPECIES_TAJARAN - изменения базы
 		// H.hairstyle = random_hairstyle(H.gender) // CELADON-EDIT - ORIGINAL
 		H.hairstyle = H.dna.species.random_hairstyle(H.gender)
 		// [/CELADON-EDIT]
 	if(facial_hairstyle)
 		H.facial_hairstyle = facial_hairstyle
 	else
-		// [CELADON-EDIT] - TAJARA - изменения базы
+		// [CELADON-EDIT] - SPECIES_TAJARAN - изменения базы
 		// H.facial_hairstyle = random_facial_hairstyle(H.gender) // CELADON-EDIT - ORIGINAL
 		H.facial_hairstyle = H.dna.species.random_facial_hairstyle(H.gender)
 		// [/CELADON-EDIT]

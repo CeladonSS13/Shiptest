@@ -40,7 +40,7 @@
 	dna.features["ipc_screen"] = GLOB.ipc_screens_list[hex2num(copytext(seed, 19, 20)) % length(GLOB.ipc_screens_list) + 1]
 	dna.features["ipc_hair"] = GLOB.ipc_hair_list[hex2num(copytext(seed, 20, 21)) % length(GLOB.ipc_hair_list) + 1] // [CELADON-ADD] - CELADON_IPC_HAIR
 
-	// [CELADON-ADD] - TAJARA
+	// [CELADON-ADD] - SPECIES_TAJARAN
 	skin_tone_nose = GLOB.skin_tones_nose[hex2num(copytext(seed, 1, 2)) % length(GLOB.skin_tones_nose)]
 
 	dna.features["tajara_ears"] = GLOB.tajara_ears_list[hex2num(copytext(seed, 2, 3)) % length(GLOB.tajara_ears_list) + 1]

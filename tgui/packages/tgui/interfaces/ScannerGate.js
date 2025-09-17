@@ -66,7 +66,7 @@ const TARGET_SPECIES_LIST = [
     name: 'Kepori',
     value: 'kepori',
   },
-  // [CELADON-ADD] - TAJARA
+  // [CELADON-ADD] - SPECIES_TAJARAN
   {
     name: 'Tajara',
     value: 'tajara',

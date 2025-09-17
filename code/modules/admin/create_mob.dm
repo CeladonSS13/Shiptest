@@ -17,13 +17,13 @@
 	H.underwear = random_underwear(H.gender)
 	H.underwear_color = random_color()
 	H.skin_tone = random_skin_tone()
-	// [CELADON-EDIT] - TAJARA - изменения базы
+	// [CELADON-EDIT] - SPECIES_TAJARAN - изменения базы
 	// H.hairstyle = random_hairstyle(H.gender) // CELADON-EDIT - ORIGINAL
 	// H.facial_hairstyle = random_facial_hairstyle(H.gender) // CELADON-EDIT - ORIGINAL
 	H.hairstyle = H.dna.species.random_hairstyle(H.gender)
 	H.facial_hairstyle = H.dna.species.random_facial_hairstyle(H.gender)
 	// [/CELADON-EDIT]
-	// [CELADON-ADD] - TAJARA
+	// [CELADON-ADD] - SPECIES_TAJARAN
 	H.skin_tone_nose = random_skin_tone_nose()
 	// [/CELADON-ADD]
 	H.hair_color = random_color_natural()
@@ -54,7 +54,7 @@
 	H.dna.features["vox_neck_quills"] = pick(GLOB.vox_neck_quills_list)
 	H.dna.features["elzu_horns"] = pick(GLOB.elzu_horns_list)
 	H.dna.features["tail_elzu"] = pick(GLOB.tails_list_elzu)
-	// [CELADON-ADD] - TAJARA
+	// [CELADON-ADD] - SPECIES_TAJARAN
 	H.dna.features["tajara_ears"] = pick(GLOB.tajara_ears_list)
 	H.dna.features["tajara_hairs"] = pick(GLOB.tajara_hairs_list)
 	H.dna.features["tajara_ears_markings"] = pick(GLOB.tajara_ears_markings_list)

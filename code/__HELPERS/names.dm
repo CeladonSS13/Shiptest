@@ -202,7 +202,7 @@ GLOBAL_DATUM(syndicate_code_response_regex, /regex)
 						else
 							if(prob(10))
 								. += pick(lizard_name(MALE),lizard_name(FEMALE))
-							// [CELADON-ADD] - TAJARA
+							// [CELADON-ADD] - SPECIES_TAJARAN
 							if(prob(5))
 								. += pick(tajara_name(MALE),tajara_name(FEMALE))
 							// [CELADON-ADD] - CELADON_RIOL

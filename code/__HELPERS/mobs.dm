@@ -96,7 +96,7 @@
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/elzu_horns, GLOB.elzu_horns_list)
 	if(!GLOB.tails_list_elzu.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/elzu, GLOB.tails_list_elzu)
-	// [CELADON-ADD] - TAJARA
+	// [CELADON-ADD] - SPECIES_TAJARAN
 	if(!GLOB.tajara_chest_markings_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/tajara_chest_markings, GLOB.tajara_chest_markings_list)
 	if(!GLOB.tajara_body_markings_list.len)
@@ -165,14 +165,14 @@
 		"kepori_feathers" = pick(GLOB.kepori_feathers_list),
 		"kepori_tail_feathers" = pick(GLOB.kepori_tail_feathers_list),
 		"legs" = "Normal Legs",
-			// [CELADON-EDIT] - TAJARA - токс цвета ремув - изменения базы
+			// [CELADON-EDIT] - SPECIES_TAJARAN - токс цвета ремув - изменения базы
 		// "mcolor" = pick("FFFFFF","7F7F7F", "7FFF7F", "7F7FFF", "FF7F7F", "7FFFFF", "FF7FFF", "FFFF7F"),
 		// "mcolor2" = pick("FFFFFF","7F7F7F", "7FFF7F", "7F7FFF", "FF7F7F", "7FFFFF", "FF7FFF", "FFFF7F"),
 		// CELADON-EDIT - ORIGINAL
 		"mcolor" = pick("FFFFFF","7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
 		"mcolor2" = pick("FFFFFF","7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
 		// [/CELADON-EDIT]
-		// [CELADON-ADD] - TAJARA
+		// [CELADON-ADD] - SPECIES_TAJARAN
 		"tajara_ears_markings_color" = pick("FFFFFF","7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
 		"tajara_head_markings_color" = pick("FFFFFF","7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
 		"tajara_nose_markings_color" = pick("FFFFFF","7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
@@ -200,7 +200,7 @@
 		"vox_head_quills" = pick(GLOB.vox_head_quills_list),
 		"vox_neck_quills" = pick(GLOB.vox_neck_quills_list),
 		"wings" = "None",
-		// [CELADON-ADD] - TAJARA
+		// [CELADON-ADD] - SPECIES_TAJARAN
 		"tajara_ears" = pick(GLOB.tajara_ears_list),
 		"tajara_hairs" = pick(GLOB.tajara_hairs_list),
 		"tajara_ears_markings" = pick(GLOB.tajara_ears_markings_list),
@@ -225,7 +225,7 @@
 		// [/CELADON-ADD]
 	)
 
-// [CELADON-REMOVE] - TAJARA - Не вызовет ошибок, но будет неправильным использованием. Правильно: /datum/species/random_hairstyle()
+// [CELADON-REMOVE] - SPECIES_TAJARAN - Не вызовет ошибок, но будет неправильным использованием. Правильно: /datum/species/random_hairstyle()
 /*
 /proc/random_hairstyle(gender)
 	switch(gender)

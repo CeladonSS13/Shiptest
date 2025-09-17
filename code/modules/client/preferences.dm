@@ -84,7 +84,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/facial_hair_color = "000"		//Facial hair color
 	var/skin_tone = "caucasian1"		//Skin color
 	var/eye_color = "000"				//Eye color
-	// [CELADON-ADD] - TAJARA
+	// [CELADON-ADD] - SPECIES_TAJARAN
 	var/tajara_ears_markings_color = "000"				//tajara ears markings color
 	var/tajara_head_markings_color = "000"				//tajara head markings color
 	var/tajara_nose_markings_color = "000"				//tajara nose markings color
@@ -901,7 +901,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</td>"
 					mutant_category = 0
 
-			// [CELADON-ADD] - TAJARA
+			// [CELADON-ADD] - SPECIES_TAJARAN
 			if("tajara_ears" in pref_species.default_features)
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
@@ -2006,7 +2006,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						hair_color = sanitize_hexcolor(new_hair)
 
 				if("hairstyle")
-					// [CELADON-EDIT] - TAJARA - изменения базы
+					// [CELADON-EDIT] - SPECIES_TAJARAN - изменения базы
 					// var/new_hairstyle // CELADON-EDIT - ORIGINAL
 					// if(gender == MALE) // CELADON-EDIT - ORIGINAL
 					// 	new_hairstyle = input(user, "Choose your character's hairstyle:", "Character Preference")  as null|anything in GLOB.hairstyles_male_list // CELADON-EDIT - ORIGINAL
@@ -2020,7 +2020,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					// [/CELADON-EDIT]
 
 				if("next_hairstyle")
-					// [CELADON-EDIT] - TAJARA - изменения базы
+					// [CELADON-EDIT] - SPECIES_TAJARAN - изменения базы
 					// if (gender == MALE) // CELADON-EDIT - ORIGINAL
 					// 	hairstyle = next_list_item(hairstyle, GLOB.hairstyles_male_list) // CELADON-EDIT - ORIGINAL
 					// else if(gender == FEMALE) // CELADON-EDIT - ORIGINAL
@@ -2031,7 +2031,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					// [/CELADON-EDIT]
 
 				if("previous_hairstyle")
-					// [CELADON-EDIT] - TAJARA - изменения базы
+					// [CELADON-EDIT] - SPECIES_TAJARAN - изменения базы
 					// if (gender == MALE) // CELADON-EDIT - ORIGINAL
 					// 	hairstyle = previous_list_item(hairstyle, GLOB.hairstyles_male_list) // CELADON-EDIT - ORIGINAL
 					// else if(gender == FEMALE) // CELADON-EDIT - ORIGINAL
@@ -2047,7 +2047,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						facial_hair_color = sanitize_hexcolor(new_facial)
 
 				if("facial_hairstyle")
-					// [CELADON-EDIT] - TAJARA - изменения базы
+					// [CELADON-EDIT] - SPECIES_TAJARAN - изменения базы
 					// var/new_facial_hairstyle // CELADON-EDIT - ORIGINAL
 					// if(gender == MALE) // CELADON-EDIT - ORIGINAL
 					// 	new_facial_hairstyle = input(user, "Choose your character's facial-hairstyle:", "Character Preference")  as null|anything in GLOB.facial_hairstyles_male_list // CELADON-EDIT - ORIGINAL
@@ -2061,7 +2061,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					// [/CELADON-EDIT]
 
 				if("next_facehairstyle")
-					// [CELADON-EDIT] - TAJARA - изменения базы
+					// [CELADON-EDIT] - SPECIES_TAJARAN - изменения базы
 					// if (gender == MALE) // CELADON-EDIT - ORIGINAL
 					// 	facial_hairstyle = next_list_item(facial_hairstyle, GLOB.facial_hairstyles_male_list) // CELADON-EDIT - ORIGINAL
 					// else if(gender == FEMALE) // CELADON-EDIT - ORIGINAL
@@ -2072,7 +2072,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					// [/CELADON-EDIT]
 
 				if("previous_facehairstyle")
-					// [CELADON-EDIT] - TAJARA - изменения базы
+					// [CELADON-EDIT] - SPECIES_TAJARAN - изменения базы
 					// if (gender == MALE) // CELADON-EDIT - ORIGINAL
 					// 	facial_hairstyle = previous_list_item(facial_hairstyle, GLOB.facial_hairstyles_male_list) // CELADON-EDIT - ORIGINAL
 					// else if (gender == FEMALE) // CELADON-EDIT - ORIGINAL
@@ -2082,7 +2082,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					facial_hairstyle = previous_list_item(facial_hairstyle, pref_species.get_facial_hair_list_by_gender(gender))
 					// [/CELADON-EDIT]
 
-				// [CELADON-ADD] - TAJARA
+				// [CELADON-ADD] - SPECIES_TAJARAN
 
 				if("tajara_ears_markings_color")
 					var/new_tajara_ears_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["tajara_ears_markings_color"]) as color|null
@@ -2851,7 +2851,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			organ_eyes.eye_color = eye_color
 		organ_eyes.old_eye_color = eye_color
 	character.skin_tone = skin_tone
-	// [CELADON-ADD] - TAJARA
+	// [CELADON-ADD] - SPECIES_TAJARAN
 	//character.skin_tone_nose = skin_tone_nose
 	character.skin_tone_tajara = skin_tone_tajara
 	// [CELADON-ADD] - CELADON_RIOL
@@ -2929,7 +2929,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	if("tail_lizard" in pref_species.default_features)
 		character.dna.species.mutant_bodyparts |= "tail_lizard"
 
-	// [CELADON-ADD] - TAJARA
+	// [CELADON-ADD] - SPECIES_TAJARAN
 	if("tajara_tail" in pref_species.default_features)
 		character.dna.species.mutant_bodyparts |= "tajara_tail"
 

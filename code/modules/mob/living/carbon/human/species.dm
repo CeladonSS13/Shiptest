@@ -587,7 +587,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			facialhair_hidden = TRUE
 
 	if(H.facial_hairstyle && (FACEHAIR in species_traits) && !facialhair_hidden)
-		// [CELADON-EDIT] - TAJARA - изменения базы
+		// [CELADON-EDIT] - SPECIES_TAJARAN - изменения базы
 		// S = GLOB.facial_hairstyles_list[H.facial_hairstyle] // CELADON-EDIT - ORIGINAL
 		S = get_facial_hair_list_by_gender()[H.facial_hairstyle]
 		// [/CELADON-EDIT]
@@ -631,7 +631,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				hair_overlay.icon_state = "debrained"
 
 		else if(H.hairstyle && (HAIR in species_traits))
-			// [CELADON-EDIT] - TAJARA - изменения базы
+			// [CELADON-EDIT] - SPECIES_TAJARAN - изменения базы
 			// S = GLOB.hairstyles_list[H.hairstyle] // CELADON-EDIT - ORIGINAL
 			S = get_hair_list_by_gender()[H.hairstyle]
 			// [/CELADON-EDIT]
@@ -896,7 +896,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		if(!H.dna.features["vox_neck_quills"] || H.dna.features["vox_neck_quills"] == "None")
 			bodyparts_to_add -= "vox_neck_quills"
 
-	// [CELADON-ADD] - TAJARA
+	// [CELADON-ADD] - SPECIES_TAJARAN
 	if("tajara_nose_markings" in mutant_bodyparts)
 		if(!H.dna.features["tajara_nose_markings"] || H.dna.features["tajara_nose_markings"] == "None" || H.head && (H.head.flags_inv & HIDEFACE) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEFACE)) || !HD) // || HD.status == BODYTYPE_ROBOTIC
 			bodyparts_to_add -= "tajara_nose_markings"
@@ -1105,7 +1105,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 					S = GLOB.tails_list_elzu[H.dna.features["tail_elzu"]]
 				if("waggingtail_elzu")
 					S = GLOB.animated_tails_list_elzu[H.dna.features["tail_elzu"]]
-				// [CELADON-ADD] - TAJARA
+				// [CELADON-ADD] - SPECIES_TAJARAN
 				if("tajara_ears")
 					S = GLOB.tajara_ears_list[H.dna.features["tajara_ears"]]
 				if("tajara_hairs")
@@ -1166,7 +1166,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			else if(bodypart == "waggingtail_lizard" || bodypart == "waggingtail_human" || bodypart == "waggingtail_elzu")
 				bodypart = "waggingtail"
 
-			// [CELADON-ADD] - TAJARA - add лучше чем edit
+			// [CELADON-ADD] - SPECIES_TAJARAN - add лучше чем edit
 			else if (bodypart == "tajara_tail")
 				bodypart = "tail"
 			else if (bodypart == "waggingtajara_tail")
@@ -1212,7 +1212,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 						if(SKINCOLORS)
 							accessory_overlay.color = "#[(skintone2hex(H.skin_tone))]"
 
-						// [CELADON-ADD] - TAJARA
+						// [CELADON-ADD] - SPECIES_TAJARAN
 						if(SKINNOSECOLORS)
 							accessory_overlay.color = "#[(skintonenose2hex(H.skin_tone_nose))]"
 						if(SKINTAJARACOLORS)
@@ -2491,7 +2491,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	return (locate(/obj/item/organ/tail) in H.internal_organs)
 
 /datum/species/proc/is_wagging_tail(mob/living/carbon/human/H)
-	// [CELADON-EDIT] - TAJARA, CELADON_RIOL
+	// [CELADON-EDIT] - SPECIES_TAJARAN, CELADON_RIOL
 	// return ("waggingtail_human" in mutant_bodyparts) || ("waggingtail_lizard" in mutant_bodyparts) || ("waggingtail_elzu" in mutant_bodyparts) // CELADON-EDIT - ORIGINAL
 	return ("waggingtail_human" in mutant_bodyparts) || ("waggingtail_lizard" in mutant_bodyparts) || ("waggingtail_elzu" in mutant_bodyparts) || ("waggingtajara_tail" in mutant_bodyparts) || ("waggingriol_tail" in mutant_bodyparts)
 	// [/CELADON-EDIT]

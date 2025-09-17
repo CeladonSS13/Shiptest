@@ -476,7 +476,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	READ_FILE(S["feature_vox_neck_quills"], features["vox_neck_quills"])
 	READ_FILE(S["feature_elzu_horns"], features["elzu_horns"])
 	READ_FILE(S["feature_tail_elzu"], features["tail_elzu"])
-	// [CELADON-ADD] - TAJARA
+	// [CELADON-ADD] - SPECIES_TAJARAN
 	READ_FILE(S["skin_tone_nose"], features["skin_tone_nose"])
 	READ_FILE(S["feature_tajara_ears"], features["tajara_ears"])
 	READ_FILE(S["feature_tajara_hairs"], features["tajara_hairs"])
@@ -575,7 +575,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	randomise = SANITIZE_LIST(randomise)
 
-	// [CELADON-EDIT] - TAJARA, CELADON_RIOL
+	// [CELADON-EDIT] - SPECIES_TAJARAN, CELADON_RIOL
 	//	if(gender == MALE)
 	//		hairstyle								= sanitize_inlist(hairstyle, GLOB.hairstyles_male_list)
 	//		facial_hairstyle						= sanitize_inlist(facial_hairstyle, GLOB.facial_hairstyles_male_list)
@@ -592,7 +592,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	// [/CELADON-EDIT]
 	else
-		// [CELADON-EDIT] - TAJARA - изменения базы
+		// [CELADON-EDIT] - SPECIES_TAJARAN - изменения базы
 		//	hairstyle								= sanitize_inlist(hairstyle, GLOB.hairstyles_list)
 		//	facial_hairstyle						= sanitize_inlist(facial_hairstyle, GLOB.facial_hairstyles_list)
 		//	underwear								= sanitize_inlist(underwear, GLOB.underwear_list)
@@ -660,7 +660,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	features["tail_elzu"]				= sanitize_inlist(features["tail_elzu"], GLOB.tails_list_elzu)
 	features["flavor_text"]				= sanitize_text(features["flavor_text"], initial(features["flavor_text"]))
 
-	// [CELADON-ADD] - TAJARA
+	// [CELADON-ADD] - SPECIES_TAJARAN
 	features["skin_tone_nose"] = sanitize_inlist(features["skin_tone_nose"], GLOB.skin_tones_nose)
 	features["tajara_ears"] = sanitize_inlist(features["tajara_ears"], GLOB.tajara_ears_list, "Plain")
 	features["tajara_hairs"] = sanitize_inlist(features["tajara_hairs"], GLOB.tajara_hairs_list, "Plain")
@@ -777,7 +777,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["feature_tail_elzu"]			, features["tail_elzu"])
 	WRITE_FILE(S["fbp"]							, fbp)
 
-	// [CELADON-ADD] - TAJARA
+	// [CELADON-ADD] - SPECIES_TAJARAN
 	WRITE_FILE(S["skin_tone_nose"], features["skin_tone_nose"])
 	WRITE_FILE(S["feature_tajara_ears"], features["tajara_ears"])
 	WRITE_FILE(S["feature_tajara_hairs"], features["tajara_hairs"])

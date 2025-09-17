@@ -112,10 +112,10 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/ramzi
 	jetpack = null
 	armor = list("melee" = 35, "bullet" = 40, "laser" = 20,"energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75, "wound" = 20)
-// [CELADON-EDIT] - TAJARA, CELADON_RIOL, BALANCE
+// [CELADON-EDIT] - SPECIES_TAJARAN, CELADON_RIOL, BALANCE
 	//slowdown = 0.7	// [CELADON-REMOVE] - BALANCE
 	jetpack = null
-//	supports_variations = DIGITIGRADE_VARIATION | KEPORI_VARIATION | VOX_VARIATION	// [CELADON-EDIT] - TAJARA, CELADON_RIOL
+//	supports_variations = DIGITIGRADE_VARIATION | KEPORI_VARIATION | VOX_VARIATION	// [CELADON-EDIT] - SPECIES_TAJARAN, CELADON_RIOL
 	supports_variations = DIGITIGRADE_VARIATION | KEPORI_VARIATION | VOX_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
 // [/CELADON-EDIT]
 
