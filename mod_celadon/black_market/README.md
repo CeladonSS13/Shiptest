@@ -41,6 +41,7 @@ ID мода: CELADON_BLACK_MARKET
 
 ### Изменения *кор кода*
 Все изменения будут касатсья этого места: `code/modules/cargo/blackmarket/packs`
+- EDIT: `code/modules/cargo/blackmarket/packs/tools.dm`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
