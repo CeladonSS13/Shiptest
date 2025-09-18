@@ -120,7 +120,10 @@
 		. = ..()
 	else if(sectorwide == TRUE) // prevents incompatibility with broadcast cameras
 		return
-	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE))
+	// [CELADON-EDIT] - RADIO_TOP_USE - Даем пользоваться рацией в положении лежа
+	// else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE))	// ORIGINAL
+	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE) || (isliving(user) && !user.incapacitated(ignore_restraints = TRUE)))
+	// [/CELADON-EDIT]
 		broadcasting = !broadcasting
 		to_chat(user, span_notice("You toggle broadcasting [broadcasting ? "on" : "off"]."))
 
@@ -129,7 +132,10 @@
 		. = ..()
 	else if(sectorwide == TRUE) // prevents incompatibility with broadcast cameras
 		return
-	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE))
+	// [CELADON-EDIT] - RADIO_TOP_USE - Даем пользоваться рацией в положении лежа
+	// else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE))	// ORIGINAL
+	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE) || (isliving(user) && !user.incapacitated(ignore_restraints = TRUE)))
+	// [/CELADON-EDIT]
 		listening = !listening
 		to_chat(user, span_notice("You toggle speaker [listening ? "on" : "off"]."))
 
@@ -141,6 +147,13 @@
 		..()
 
 /obj/item/radio/ui_state(mob/user)
+	// [CELADON-ADD] - RADIO_TOP_USE - Даем пользоваться рацией в положении лежа
+	if(isliving(user))
+		var/mob/living/L = user
+		if(L.body_position == LYING_DOWN && L.stat == CONSCIOUS)
+			return GLOB.conscious_state
+		return GLOB.conscious_state
+	// [/CELADON-ADD]
 	return GLOB.inventory_state
 
 /obj/item/radio/ui_interact(mob/user, datum/tgui/ui, datum/ui_state/state)

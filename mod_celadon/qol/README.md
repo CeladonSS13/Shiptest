@@ -158,6 +158,9 @@ DONT_ALTCLICK_WALLET - Убирает вытаскивание карты на �
 DEBUG_QUALITY
 - DEL `code/game/objects/items/storage/boxes.dm` -> `mod_celadon/qol/code/BluespaceTechnician.dm`
 
+RADIO_TOP_USE
+- ADD, EDIT: `code/game/objects/items/devices/radio/radio.dm`
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
