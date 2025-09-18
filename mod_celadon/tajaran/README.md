@@ -11,7 +11,7 @@
 
 ## Раса - Таяры
 
-ID мода: SPECIES_TAJARAN
+ID мода: SPECIES_TAJARAN, SPECIES_TAJARAN_MIGRATION
 
 ### Описание мода
 

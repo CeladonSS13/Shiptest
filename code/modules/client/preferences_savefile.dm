@@ -5,7 +5,7 @@
 //	You do not need to raise this if you are adding new values that have sane defaults.
 //	Only raise this value when changing the meaning/format/name/layout of an existing value
 //	where you would want the updater procs below to run
-#define SAVEFILE_VERSION_MAX 42
+#define SAVEFILE_VERSION_MAX 43
 
 /*
 SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Carn
@@ -109,6 +109,45 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 			pref_species = new /datum/species/human
 			features["tail_human"] = "Cat"
 			features["ears"] = "Cat"
+	// [CELADON-ADD] - SPECIES_TAJARAN_MIGRATION - Миграция tajara -> tajaran
+	if(current_version < 43)
+		var/species_id
+		READ_FILE(S["species"], species_id)
+		if(species_id == "tajara")
+			WRITE_FILE(S["species"], "tajaran")
+			pref_species = new /datum/species/tajaran
+			var/old_ears, old_hairs, old_ears_markings, old_head_markings, old_nose_markings
+			var/old_facial_hairs, old_chest_markings, old_body_markings, old_tail
+			var/old_ears_color, old_head_color, old_nose_color, old_chest_color, old_body_color
+			READ_FILE(S["feature_tajara_ears"], old_ears)
+			READ_FILE(S["feature_tajara_hairs"], old_hairs)
+			READ_FILE(S["feature_tajara_ears_markings"], old_ears_markings)
+			READ_FILE(S["feature_tajara_head_markings"], old_head_markings)
+			READ_FILE(S["feature_tajara_nose_markings"], old_nose_markings)
+			READ_FILE(S["feature_tajara_facial_hairs"], old_facial_hairs)
+			READ_FILE(S["feature_tajara_chest_markings"], old_chest_markings)
+			READ_FILE(S["feature_tajara_body_markings"], old_body_markings)
+			READ_FILE(S["feature_tajara_tail"], old_tail)
+			READ_FILE(S["tajara_ears_markings_color"], old_ears_color)
+			READ_FILE(S["tajara_head_markings_color"], old_head_color)
+			READ_FILE(S["tajara_nose_markings_color"], old_nose_color)
+			READ_FILE(S["tajara_chest_markings_color"], old_chest_color)
+			READ_FILE(S["tajara_body_markings_color"], old_body_color)
+			if(old_ears) WRITE_FILE(S["feature_tajaran_ears"], old_ears)
+			if(old_hairs) WRITE_FILE(S["feature_tajaran_hairs"], old_hairs)
+			if(old_ears_markings) WRITE_FILE(S["feature_tajaran_ears_markings"], old_ears_markings)
+			if(old_head_markings) WRITE_FILE(S["feature_tajaran_head_markings"], old_head_markings)
+			if(old_nose_markings) WRITE_FILE(S["feature_tajaran_nose_markings"], old_nose_markings)
+			if(old_facial_hairs) WRITE_FILE(S["feature_tajaran_facial_hairs"], old_facial_hairs)
+			if(old_chest_markings) WRITE_FILE(S["feature_tajaran_chest_markings"], old_chest_markings)
+			if(old_body_markings) WRITE_FILE(S["feature_tajaran_body_markings"], old_body_markings)
+			if(old_tail) WRITE_FILE(S["feature_tajaran_tail"], old_tail)
+			if(old_ears_color) WRITE_FILE(S["tajaran_ears_markings_color"], old_ears_color)
+			if(old_head_color) WRITE_FILE(S["tajaran_head_markings_color"], old_head_color)
+			if(old_nose_color) WRITE_FILE(S["tajaran_nose_markings_color"], old_nose_color)
+			if(old_chest_color) WRITE_FILE(S["tajaran_chest_markings_color"], old_chest_color)
+			if(old_body_color) WRITE_FILE(S["tajaran_body_markings_color"], old_body_color)
+	// [/CELADON-ADD]
 
 /// checks through keybindings for outdated unbound keys and updates them
 /datum/preferences/proc/check_keybindings()
@@ -411,6 +450,11 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	var/species_id
 	READ_FILE(S["species"], species_id)
 	if(species_id)
+		// [CELADON-ADD] - SPECIES_TAJARAN_MIGRATION - Обратная совместимость: tajara -> tajaran
+		if(species_id == "tajara")
+			species_id = "tajaran"
+			WRITE_FILE(S["species"], species_id)
+		// [/CELADON-ADD]
 		var/newtype = GLOB.species_list[species_id]
 		if(newtype)
 			pref_species = new newtype
@@ -476,22 +520,37 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	READ_FILE(S["feature_vox_neck_quills"], features["vox_neck_quills"])
 	READ_FILE(S["feature_elzu_horns"], features["elzu_horns"])
 	READ_FILE(S["feature_tail_elzu"], features["tail_elzu"])
-	// [CELADON-ADD] - SPECIES_TAJARAN
+	// [CELADON-ADD] - SPECIES_TAJARAN, SPECIES_TAJARAN_MIGRATION
 	READ_FILE(S["skin_tone_nose"], features["skin_tone_nose"])
 	READ_FILE(S["feature_tajaran_ears"], features["tajaran_ears"])
+	if(!features["tajaran_ears"]) READ_FILE(S["feature_tajara_ears"], features["tajaran_ears"])	// Обратная совместимость: читаем сначала новые, потом старые ключи
 	READ_FILE(S["feature_tajaran_hairs"], features["tajaran_hairs"])
+	if(!features["tajaran_hairs"]) READ_FILE(S["feature_tajara_hairs"], features["tajaran_hairs"])
 	READ_FILE(S["feature_tajaran_ears_markings"], features["tajaran_ears_markings"])
+	if(!features["tajaran_ears_markings"]) READ_FILE(S["feature_tajara_ears_markings"], features["tajaran_ears_markings"])
 	READ_FILE(S["feature_tajaran_head_markings"], features["tajaran_head_markings"])
+	if(!features["tajaran_head_markings"]) READ_FILE(S["feature_tajara_head_markings"], features["tajaran_head_markings"])
 	READ_FILE(S["feature_tajaran_nose_markings"], features["tajaran_nose_markings"])
+	if(!features["tajaran_nose_markings"]) READ_FILE(S["feature_tajara_nose_markings"], features["tajaran_nose_markings"])
 	READ_FILE(S["feature_tajaran_facial_hairs"], features["tajaran_facial_hairs"])
+	if(!features["tajaran_facial_hairs"]) READ_FILE(S["feature_tajara_facial_hairs"], features["tajaran_facial_hairs"])
 	READ_FILE(S["feature_tajaran_chest_markings"], features["tajaran_chest_markings"])
+	if(!features["tajaran_chest_markings"]) READ_FILE(S["feature_tajara_chest_markings"], features["tajaran_chest_markings"])
 	READ_FILE(S["feature_tajaran_body_markings"], features["tajaran_body_markings"])
+	if(!features["tajaran_body_markings"]) READ_FILE(S["feature_tajara_body_markings"], features["tajaran_body_markings"])
 	READ_FILE(S["feature_tajaran_tail"], features["tajaran_tail"])
+	if(!features["tajaran_tail"]) READ_FILE(S["feature_tajara_tail"], features["tajaran_tail"])
 	READ_FILE(S["tajaran_ears_markings_color"], features["tajaran_ears_markings_color"])
+	if(!features["tajaran_ears_markings_color"]) READ_FILE(S["tajara_ears_markings_color"], features["tajaran_ears_markings_color"])
 	READ_FILE(S["tajaran_head_markings_color"], features["tajaran_head_markings_color"])
+	if(!features["tajaran_head_markings_color"]) READ_FILE(S["tajara_head_markings_color"], features["tajaran_head_markings_color"])
 	READ_FILE(S["tajaran_nose_markings_color"], features["tajaran_nose_markings_color"])
+	if(!features["tajaran_nose_markings_color"]) READ_FILE(S["tajara_nose_markings_color"], features["tajaran_nose_markings_color"])
 	READ_FILE(S["tajaran_chest_markings_color"], features["tajaran_chest_markings_color"])
+	if(!features["tajaran_chest_markings_color"]) READ_FILE(S["tajara_chest_markings_color"], features["tajaran_chest_markings_color"])
 	READ_FILE(S["tajaran_body_markings_color"], features["tajaran_body_markings_color"])
+	if(!features["tajaran_body_markings_color"]) READ_FILE(S["tajara_body_markings_color"], features["tajaran_body_markings_color"])
+	// [/CELADON-ADD]
 	// [CELADON-ADD] - CELADON_RIOL
 	READ_FILE(S["feature_riol_ears"], 				features["riol_ears"])
 	READ_FILE(S["feature_riol_hairs"], 				features["riol_hairs"])
