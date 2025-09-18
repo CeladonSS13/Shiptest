@@ -209,7 +209,7 @@
 //Биом джунглей
 /datum/biome/anima/jungle
 	open_turf_types = list(
-	/turf/open/floor/plating/grass/jungle/lit/anima = 1
+	/turf/open/floor/plating/asteroid/dirt/grass/jungle/lit/anima = 1
 	)
 	flora_spawn_chance = 70
 	flora_spawn_list = list(

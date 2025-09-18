@@ -79,6 +79,10 @@
 /obj/item/shield/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK, damage_type = BRUTE)
 	if(transparent && (hitby.pass_flags & PASSGLASS))
 		return FALSE
+// [CELADON-ADD] - BALLISTIC_SHIELD - Rebalance - Щиты не должны блокировать лежа
+	if(owner.body_position == LYING_DOWN)
+		final_block_chance -= 30
+// [/CELADON-ADD]
 	if(attack_type == THROWN_PROJECTILE_ATTACK)
 		final_block_chance += 30
 	if(attack_type == LEAP_ATTACK)
