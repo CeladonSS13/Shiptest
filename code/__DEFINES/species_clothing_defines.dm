@@ -30,14 +30,14 @@
 #define VOX_SHOES_PATH 'icons/mob/species/vox/onmob_feet_vox.dmi'
 // [CELADON-EDIT] -
 //#define VOX_SUIT_PATH 'icons/mob/species/vox/onmob_suit_vox.dmi'
-#define VOX_SUIT_PATH 'mod_celadon/_storge_icons/icons/items/clothing/spec/vox/onmob_suit_vox.dmi'
+#define VOX_SUIT_PATH 'mod_celadon/_storage_icons/icons/items/clothing/spec/vox/onmob_suit_vox.dmi'
 // [/CELADON-EDIT]
 #define VOX_EARS_PATH 'icons/mob/species/vox/onmob_ears_vox.dmi'
 #define VOX_MASK_PATH 'icons/mob/species/vox/onmob_mask_vox.dmi'
 #define VOX_NECK_PATH 'icons/mob/species/vox/onmob_neck_vox.dmi'
 // [CELADON-EDIT] -
 //#define VOX_HEAD_PATH 'icons/mob/species/vox/onmob_head_vox.dmi'
-#define VOX_HEAD_PATH 'mod_celadon/_storge_icons/icons/items/clothing/spec/vox/onmob_head_vox.dmi'
+#define VOX_HEAD_PATH 'mod_celadon/_storage_icons/icons/items/clothing/spec/vox/onmob_head_vox.dmi'
 // [/CELADON-EDIT]
 #define VOX_GLOVES_PATH 'icons/mob/species/vox/onmob_hands_vox.dmi'
 #define VOX_GLASSES_PATH 'icons/mob/species/vox/onmob_eyes_vox.dmi'
