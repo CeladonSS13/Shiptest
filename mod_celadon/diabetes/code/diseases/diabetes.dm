@@ -14,7 +14,6 @@
 	severity = DISEASE_SEVERITY_MEDIUM
 	bypasses_immunity = TRUE
 	var/insulin_timer = 0
-	var/insulin_required_time = 3000 // 5 minutes
 	var/sugar_buildup = 0
 
 /datum/disease/diabetes/stage_act()
