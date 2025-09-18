@@ -91,27 +91,6 @@
 
 /datum/supply_order/proc/generate(atom/location)
 	var/account_holder
-// [CELADON-ADD] - REVERT: Better cargo pack managment (#4419)
-	if(paying_account)
-		account_holder = paying_account.account_holder
-	else
-		account_holder = "Cargo"
-
-	var/datum/supply_pack/packs = supply_packs
-	var/obj/structure/closet/crate/container = packs.generate(location, paying_account)
-	generateManifest(container, account_holder, packs)
-	return container
-
-/datum/supply_order/combo/New(list/supply_packs, orderer, orderer_rank, orderer_ckey, reason, paying_account, ordering_outpost)
-	. = ..(null, orderer, orderer_rank, orderer_ckey, reason, paying_account, ordering_outpost)
-	src.supply_packs = supply_packs
-	for(var/datum/supply_pack/pack in supply_packs)
-		SSblackbox.record_feedback("nested tally", "crate_ordered", 1, list(pack.name, "amount"))
-		SSblackbox.record_feedback("nested tally", "crate_ordered", pack.cost, list(pack.name, "cost"))
-
-/datum/supply_order/combo/generate(atom/location)
-	var/account_holder
-// [/CELADON-ADD]
 	var/datum/supply_pack/initial_pack = supply_packs[1]
 
 	var/obj/structure/closet/crate/order_crate

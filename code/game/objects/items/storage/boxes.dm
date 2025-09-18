@@ -1443,17 +1443,14 @@
 		)
 	generate_items_inside(items_inside,src)
 
+// [CELADON-REMOVE] - DEBUG_QUALITY
+/*
 /obj/item/storage/box/debugtools
 	name = "box of debug tools"
 	icon_state = "syndiebox"
 
 /obj/item/storage/box/debugtools/PopulateContents()
 	var/static/items_inside = list(
-		// [CELADON-ADD] - CELADON_COMPONENTS
-		/obj/item/shovel = 1,\
-		/obj/item/stamp/chameleon = 1,\
-		/obj/item/gun/medbeam = 1,\
-		// [/CELADON-ADD]
 		/obj/item/flashlight/emp/debug=1,\
 		/obj/item/pda=1,\
 		/obj/item/modular_computer/tablet/preset/advanced=1,\
@@ -1471,6 +1468,8 @@
 		/obj/item/storage/box/material=1
 		)
 	generate_items_inside(items_inside,src)
+*/
+// [/CELADON-REMOVE]
 
 /obj/item/storage/box/plastic
 	name = "plastic box"

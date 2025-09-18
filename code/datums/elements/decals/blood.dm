@@ -30,7 +30,7 @@
 
 	var/atom/A = source
 	override[EXAMINE_POSITION_ARTICLE] = A.gender == PLURAL? "some" : "a"
-	override[EXAMINE_POSITION_BEFORE] = " blood-stained "
+	override[EXAMINE_POSITION_BEFORE] = "[span_boldannounce("blood-stained")]"	// [CELADON-EDIT] - BLOOD_EXAMINE
 	return COMPONENT_EXNAME_CHANGED
 
 ///this is probably quite bad, let me know if you have a better solution for this -S

@@ -22,7 +22,7 @@
 	cooldown = 10 SECONDS
 
 /datum/emote/living/carbon/human/riol/howl/get_sound(mob/living/user)
-	return 'mod_celadon/_storge_sounds/sound/riol/howl.ogg'
+	return 'mod_celadon/_storage_sounds/sound/riol/howl.ogg'
 
 /datum/emote/living/carbon/human/riol/growl
 	key = "growl"
@@ -34,9 +34,9 @@
 
 /datum/emote/living/carbon/human/riol/growl/get_sound(mob/living/user)
 	return pick(
-		'mod_celadon/_storge_sounds/sound/riol/growl1.ogg',
-		'mod_celadon/_storge_sounds/sound/riol/growl2.ogg',
-		'mod_celadon/_storge_sounds/sound/riol/growl3.ogg',
+		'mod_celadon/_storage_sounds/sound/riol/growl1.ogg',
+		'mod_celadon/_storage_sounds/sound/riol/growl2.ogg',
+		'mod_celadon/_storage_sounds/sound/riol/growl3.ogg',
 	)
 
 /datum/emote/living/carbon/human/riol/purr
@@ -49,7 +49,7 @@
 	cooldown = 2 SECONDS
 
 /datum/emote/living/carbon/human/riol/purr/get_sound(mob/living/user)
-	return 'mod_celadon/_storge_sounds/sound/fox_purr.ogg'
+	return 'mod_celadon/_storage_sounds/sound/fox_purr.ogg'
 
 /datum/emote/living/carbon/human/riol/bark
 	key = "bark"
@@ -61,7 +61,7 @@
 	cooldown = 2 SECONDS
 
 /datum/emote/living/carbon/human/riol/bark/get_sound(mob/living/user)
-	return 'mod_celadon/_storge_sounds/sound/fox_bark.ogg'
+	return 'mod_celadon/_storage_sounds/sound/fox_bark.ogg'
 
 /datum/emote/living/carbon/human/riol/wbark
 	key = "wbark"
@@ -73,4 +73,4 @@
 	cooldown = 2 SECONDS
 
 /datum/emote/living/carbon/human/riol/wbark/get_sound(mob/living/user)
-	return 'mod_celadon/_storge_sounds/sound/fox_wbark.ogg'
+	return 'mod_celadon/_storage_sounds/sound/fox_wbark.ogg'

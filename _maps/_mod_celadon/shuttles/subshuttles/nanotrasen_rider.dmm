@@ -27,10 +27,16 @@
 /obj/machinery/light/colored/red{
 	dir = 1
 	},
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/apc/auto_name/directional/north{
+	pixel_x = -4
+	},
 /obj/structure/cable{
 	d2 = 2;
 	icon_state = "0-2"
+	},
+/obj/machinery/light_switch{
+	pixel_x = 8;
+	pixel_y = 22
 	},
 /turf/open/floor/plasteel/lightdark,
 /area/ship/bridge)
@@ -44,6 +50,14 @@
 	charge = 4e+006
 	},
 /turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+"m" = (
+/obj/machinery/turretid/ship{
+	pixel_y = 10;
+	id = "ntrider";
+	pixel_x = -2
+	},
+/turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
 "o" = (
 /obj/structure/cable{
@@ -238,11 +252,6 @@
 /obj/structure/cable{
 	icon_state = "0-1"
 	},
-/obj/machinery/light_switch{
-	pixel_x = -10;
-	pixel_y = -20;
-	dir = 1
-	},
 /turf/open/floor/plasteel/lightdark,
 /area/ship/bridge)
 "P" = (
@@ -279,7 +288,8 @@
 /obj/machinery/button/door{
 	id = "rider_doors";
 	name = "window shutters";
-	pixel_y = 25
+	pixel_y = 25;
+	pixel_x = 8
 	},
 /obj/machinery/power/terminal{
 	dir = 8
@@ -287,6 +297,12 @@
 /obj/structure/cable{
 	d2 = 2;
 	icon_state = "0-2"
+	},
+/obj/machinery/button/door{
+	id = "rider_enginelocks";
+	name = "engine shutters";
+	pixel_y = 25;
+	pixel_x = -8
 	},
 /turf/open/floor/plasteel/lightdark,
 /area/ship/bridge)
@@ -345,7 +361,7 @@ c
 T
 x
 O
-c
+m
 "}
 (4,1,1) = {"
 h

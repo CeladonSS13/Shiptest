@@ -7,7 +7,7 @@
 
 /obj/item/card/id/elysium
 	desc = "A Elysium ID with no proper access to speak of."
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/elysium_card.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/elysium_card.dmi'
 	icon_state = "elysium"
 
 /obj/item/card/id/elysium/captain

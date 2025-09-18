@@ -126,7 +126,7 @@
 				playsound(Mob, landing_sound, 50)
 
 
-/datum/overmap/dynamic/post_undocked(datum/overmap/dock_requester)
+/datum/overmap/dynamic/post_undocked(datum/overmap/dock_requester)	// [OVERWRITE] - FIXES_DOCKING - mod_celadon/fixes/code/dock_empty_space_fix.dm
 	start_countdown()
 
 /datum/overmap/dynamic/proc/start_countdown(_lifespan = 60 SECONDS, _color = null)
@@ -158,7 +158,10 @@
 		return FALSE //Dont fuck over stranded people
 
 	for(var/datum/mission/ruin/dynamic_mission in dynamic_missions)
-		if(dynamic_mission.active && !dynamic_mission.bound_left_location)
+		// [CELADON-EDIT] - FIXES_DYNAMIC_MISSION - Исправляем диспавн предмета миссии
+		// if(dynamic_mission.active && !dynamic_mission.bound_left_location)	// ORIGINAL
+		if(dynamic_mission.active && (!dynamic_mission.bound_left_location || dynamic_mission.can_complete()))
+		// [/CELADON-EDIT]
 			return FALSE //Dont fuck over people trying to complete a mission.
 
 	return TRUE

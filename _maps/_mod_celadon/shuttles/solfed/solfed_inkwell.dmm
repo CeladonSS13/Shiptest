@@ -6181,19 +6181,6 @@
 /turf/closed/wall/mineral/titanium,
 /area/ship/hallway/starboard)
 "OC" = (
-/obj/machinery/button/door{
-	dir = 4;
-	id = "sgi_cargo1";
-	name = "blast door control";
-	pixel_x = -20;
-	pixel_y = 7
-	},
-/obj/machinery/button/shieldwallgen{
-	dir = 4;
-	pixel_y = -2;
-	pixel_x = -18;
-	id = "sgi_holocargo1"
-	},
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
@@ -7231,12 +7218,12 @@
 	dir = 1;
 	id = "sgi_holocargo1"
 	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "sgi_cargo1"
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
 	},
 /turf/open/floor/plasteel/patterned/ridged,
 /area/ship/cargo)

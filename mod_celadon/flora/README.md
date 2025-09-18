@@ -66,8 +66,8 @@ ID мода: CELADON_FLORA
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- `mod_celadon/_storge_sounds/sound`
-- `mod_celadon/_storge_icons/icons`
+- `mod_celadon/_storage_sounds/sound`
+- `mod_celadon/_storage_icons/icons`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.

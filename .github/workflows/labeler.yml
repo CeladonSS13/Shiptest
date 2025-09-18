@@ -19,7 +19,7 @@ jobs:
       - name: Check for conflicting PRs
         uses: eps1lon/actions-label-merge-conflict@releases/2.x
         with:
-          dirtyLabel: "Merge Conflict"
+          dirtyLabel: "🔥 Merge Conflict 🔥"
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           commentOnDirty: "Pull Request содержит конфликты. Устраните их, чтобы мы смогли оценить и принять запрос."
       - name: Apply labels based on changed files

@@ -112,6 +112,11 @@
 	thing.layer = initial(thing.layer)
 	thing.plane = initial(thing.plane)
 	thing.mouse_opacity = initial(thing.mouse_opacity)
+	// [CELADON-ADD] - FIXES_ICON_OUT_OF_BORDER - Сбрасываем позицию элемента для предотвращения визуальных багов
+	thing.pixel_x = initial(thing.pixel_x)
+	thing.pixel_y = initial(thing.pixel_y)
+	thing.screen_loc = null
+	// [/CELADON-ADD]
 	if(thing.maptext)
 		thing.maptext = ""
 
@@ -177,6 +182,11 @@
 		return FALSE
 	I.on_enter_storage(master)
 	I.item_flags |= IN_STORAGE
+	// [CELADON-ADD] - FIXES_ICON_OUT_OF_BORDER - Сбрасываем позицию элемента при помещении в хранилище
+	I.pixel_x = 0
+	I.pixel_y = 0
+	I.screen_loc = null
+	// [/CELADON-ADD]
 	refresh_mob_views()
 	I.mouse_opacity = MOUSE_OPACITY_OPAQUE //So you can click on the area around the item to equip it, instead of having to pixel hunt
 	if(M)

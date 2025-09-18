@@ -1,5 +1,5 @@
 /turf/open/floor/marble
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/marble.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/marble.dmi'
 	icon_state = "marble_white"
 	base_icon_state = "marble_white"
 	footstep = FOOTSTEP_WOOD
@@ -22,7 +22,7 @@
 	base_icon_state = "marble_border_diagonal"
 
 /turf/open/floor/terrazzo
-	icon = 'mod_celadon/_storge_icons/icons/structures/floors/marble.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/floors/marble.dmi'
 	icon_state = "terrazzo_beige"
 	base_icon_state = "terrazzo_beige"
 	footstep = FOOTSTEP_WOOD

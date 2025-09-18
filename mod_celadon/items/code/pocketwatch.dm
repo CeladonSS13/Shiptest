@@ -12,8 +12,8 @@ var/round_start_time
 /obj/item/pocketwatch
 	name = "pocketwatch"
 	desc = "A watch that goes in your pocket."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	icon_state = "pocketwatch"
 	var/closed = FALSE
 
@@ -21,11 +21,11 @@ var/round_start_time
 	if(!closed)
 		icon_state = "[initial(icon_state)]_closed"
 		to_chat(user, "You clasp the [name] shut.")
-		playsound(src.loc, 'mod_celadon/_storge_sounds/sound/blade_close.ogg', 50, 1)
+		playsound(src.loc, 'mod_celadon/_storage_sounds/sound/blade_close.ogg', 50, 1)
 	else
 		icon_state = "[initial(icon_state)]"
 		to_chat(user, "You flip the [name] open.")
-		playsound(src.loc, 'mod_celadon/_storge_sounds/sound/blade_open.ogg', 50, 1)
+		playsound(src.loc, 'mod_celadon/_storage_sounds/sound/blade_open.ogg', 50, 1)
 	closed = !closed
 
 /obj/item/pocketwatch/examine(mob/user, distance, is_adjacent)

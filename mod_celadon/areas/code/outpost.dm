@@ -10,7 +10,7 @@
 	max_ambience_cooldown = 180 SECONDS
 */
 
-/// MEDICAL
+/// MARK: MEDICAL
 
 /area/outpost/medical/reseption
 	name = "Reseption"
@@ -64,7 +64,29 @@
 	name = "CMO"
 	icon_state = "cmo"
 
-/// LONGUE
+/// MARK:  ENGINEERING
+
+/area/outpost/engineering/ce
+	name = "Chief of Engineer"
+	icon_state = "ce"
+
+/area/outpost/engineering/storges
+	name = "Storges"
+	icon_state = "storges"
+
+/area/outpost/engineering/storges/storge_1
+	name = "Storge 1"
+	icon_state = "storge_1"
+
+/area/outpost/engineering/storges/storge_2
+	name = "Storge 2"
+	icon_state = "storge_2"
+
+/area/outpost/engineering/atmos
+	name = "Atmos"
+	icon_state = "atmos2"
+
+/// MARK: LONGUE
 
 /area/outpost/crew/lounge/cab_1
 	name = "Cabinka 1"
@@ -86,7 +108,7 @@
 	icon_state = "lounge_cab_4"
 	sound_environment = SOUND_AREA_WOODFLOOR
 
-/// CREW
+/// MARK: CREW
 
 /area/outpost/crew/dop_zone_1
 	name = "Dop Zone 1"
@@ -100,7 +122,7 @@
 	name = "Dop Zone 3"
 	icon_state = "dop_zone_3"
 
-/// BAR
+/// MARK: BAR
 
 /area/outpost/crew/bar/vip_elysium_zone
 	name = "VIP Elysium Zone"
@@ -132,7 +154,7 @@
 	name = "Bar zone"
 	icon_state = "zone_bar"
 
-/// SECURITY
+/// MARK: SECURITY
 
 /area/outpost/security/bay
 	name = "Bay"
@@ -158,13 +180,13 @@
 	name = "Outpost Command"
 	icon_state = "outpost_command"
 
-/// VACANT
+/// MARK: VACANT
 
 /area/outpost/vacant_rooms/trash_factory
 	name = "Trash Factory"
 	icon_state = "trash_factory"
 
-/// FRACTIONS
+/// MARK: FRACTIONS
 
 /area/outpost/fraction
 	name = "Fraction"
@@ -205,7 +227,7 @@
 	icon_state = "faction_separatist"
 	sound_environment = SOUND_AREA_MEDIUM_SOFTFLOOR
 
-// CARGO FACTION
+/// MARK: CARGO FACTION
 
 /area/outpost/cargo/faction
 	name = "Cargo faction"

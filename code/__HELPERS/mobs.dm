@@ -225,8 +225,6 @@
 		// [/CELADON-ADD]
 	)
 
-// [CELADON-REMOVE] - TAJARA - Не вызовет ошибок, но будет неправильным использованием. Правильно: /datum/species/random_hairstyle()
-/*
 /proc/random_hairstyle(gender)
 	switch(gender)
 		if(MALE)
@@ -244,8 +242,6 @@
 			return pick(GLOB.facial_hairstyles_female_list)
 		else
 			return pick(GLOB.facial_hairstyles_list)
-*/
-// [/CELADON-REMOVE]
 
 /proc/random_unique_name(gender, attempts_to_find_unique_name=10)
 	for(var/i in 1 to attempts_to_find_unique_name)

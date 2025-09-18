@@ -143,8 +143,10 @@
 	var/charge_recovery = 1
 	/// Whether or not this shield can lose multiple charges.
 	var/lose_multiple_charges = FALSE
+	// [CELADON-REMOVE] - FIXES_MODSUITS - Удалено т.к. не используется
 	/// The item path to recharge this shielkd.
-	var/recharge_path = null
+	// var/recharge_path = null
+	// [/CELADON-REMOVE]
 	/// The icon file of the shield.
 	var/shield_icon_file = 'icons/effects/effects.dmi'
 	/// The icon_state of the shield.
@@ -157,8 +159,11 @@
 	charges = max_charges
 
 /obj/item/mod/module/energy_shield/on_suit_activation()
+	// [CELADON-EDIT] - FIXES_MODSUITS
+	// charge_recovery = charge_recovery, lose_multiple_charges = lose_multiple_charges, recharge_path = recharge_path, starting_charges = charges, shield_icon_file = shield_icon_file, shield_icon = shield_icon)	// ORIGINAL
 	mod.AddComponent(/datum/component/shielded, max_charges = max_charges, recharge_start_delay = recharge_start_delay, charge_increment_delay = charge_increment_delay, \
-	charge_recovery = charge_recovery, lose_multiple_charges = lose_multiple_charges, recharge_path = recharge_path, starting_charges = charges, shield_icon_file = shield_icon_file, shield_icon = shield_icon)
+	charge_recovery = charge_recovery, lose_multiple_charges = lose_multiple_charges, starting_charges = charges, shield_icon_file = shield_icon_file, shield_icon = shield_icon)
+	// [/CELADON-EDIT]
 	RegisterSignal(mod.wearer, COMSIG_HUMAN_CHECK_SHIELDS, PROC_REF(shield_reaction))
 
 /obj/item/mod/module/energy_shield/on_suit_deactivation(deleting = FALSE)
@@ -394,7 +399,7 @@
 	//mod.mob_overlay_state = initial(current_disguise.mob_overlay_state)
 	mod.item_state = initial(current_disguise.item_state)
 	mod.wearer.update_inv_back(mod.slot_flags)
-	RegisterSignal(mod, COMSIG_MOD_ACTIVATE, PROC_REF(return_look))
+	RegisterSignal(mod, COMSIG_MOD_ACTIVATE, PROC_REF(return_look), override = TRUE)	// [CELADON-ADD] - FIXES_MODSUITS
 
 /obj/item/mod/module/chameleon/proc/return_look()
 	mod.name = "[mod.theme.name] [initial(mod.name)]"

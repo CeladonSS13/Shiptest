@@ -73,7 +73,7 @@
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/solfed/guard
 	armor_base = /obj/item/clothing/suit/armor/vest
 	r_hand = /obj/item/gun/ballistic/automatic/pistol/glock
-	projectilesound = 'mod_celadon/_storge_sounds/sound/gun/shot_glock.wav'
+	projectilesound = 'mod_celadon/_storage_sounds/sound/gun/shot_glock.wav'
 
 /mob/living/simple_animal/hostile/human/solfed/guard/Aggro()
 	..()
@@ -101,7 +101,7 @@
 	armor_base = /obj/item/clothing/suit/armor/vest/marine
 	casingtype = /obj/item/ammo_casing/a556_45
 	r_hand = /obj/item/gun/ballistic/automatic/assault/g36
-	projectilesound = 'mod_celadon/_storge_sounds/sound/gun/g36.ogg'
+	projectilesound = 'mod_celadon/_storage_sounds/sound/gun/g36.ogg'
 
 /mob/living/simple_animal/hostile/human/solfed/ranged/gunner/elysium //I HATE CLIP GUNS
 	name = "\improper Elysium Brigade Haris"

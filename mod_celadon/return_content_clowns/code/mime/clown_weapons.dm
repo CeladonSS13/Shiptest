@@ -74,7 +74,7 @@
 	desc = "A shield that stops most melee attacks, protects user from almost all energy projectiles, and can be thrown to slip opponents."
 	throw_speed = 1
 	clumsy_check = 0
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/shields.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/shields.dmi'
 	base_icon_state = "bananaeshield"
 	force = 0
 	throwforce = 0

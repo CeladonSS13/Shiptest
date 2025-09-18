@@ -41,6 +41,38 @@
 	category = list("Tool Designs")
 	departmental_flags =  DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_CARGO | DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
 
+// [CELADON-ADD] - OMNI_TOOLS
+/datum/design/bs_rpd
+	name = "Bluespace RPD"
+	desc = "Utilizing localized bluespace folding, this RPD variant can deploy and connect piping systems remotely, eliminating the need for direct physical access to hazardous or hard-to-reach locations."
+	id = "bs_rpd"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 75000, /datum/material/glass = 37500, /datum/material/silver = 2500, /datum/material/titanium = 2500, /datum/material/bluespace = 10000)
+	build_path = /obj/item/pipe_dispenser/bluespace
+	category = list("Tool Designs")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_CARGO | DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
+
+/datum/design/adv_gas_analazyer
+	name = "Long-range Gas Analyzer"
+	desc = "A multifunctional device that can perform a wide range of tasks. A hand-held long-range environmental scanner which reports current gas levels."
+	id = "adv_gas_analazyer"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 1000, /datum/material/glass = 1500, /datum/material/gold = 500)
+	build_path = /obj/item/analyzer/ranged
+	category = list("Tool Designs")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_SCIENCE
+
+/datum/design/tricorder
+	name = "Tricorder"
+	desc = "A multifunctional device that can perform a wide range of tasks."
+	id = "tricorder"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 2000, /datum/material/silver = 1000, /datum/material/gold = 1000)
+	build_path = /obj/item/multitool/tricorder
+	category = list("Tool Designs")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_SCIENCE
+// [/CELADON-ADD]
+
 /datum/design/rcd_loaded
 	name = "Rapid Construction Device"
 	desc = "A tool that can construct and deconstruct walls, airlocks and floors on the fly."
