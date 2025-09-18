@@ -174,7 +174,7 @@
 	to_chat(M, span_userdanger("You go into hyperglycaemic shock! Lay off the twinkies!"))
 	M.AdjustSleeping(600)
 	// [CELADON-ADD] - CELADON_DIABETES - Повышенный шанс получить диабет
-	if(!M.HasDisease(new /datum/disease/diabetes))
+	if(!M.HasDiseaseType(/datum/disease/diabetes))
 		diabetes_buildup += 25
 		if(prob(15)) // 15% chance on overdose
 			to_chat(M, span_userdanger("The excessive sugar has damaged your pancreas! You have developed diabetes!"))

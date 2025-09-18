@@ -20,7 +20,6 @@
 	name = "insulin medipen"
 	desc = "A rapid-dose insulin injector for diabetic emergencies."
 	icon_state = "insulin"
-	inhand_icon_state = "insulin"
 	volume = 15
 	amount_per_transfer_from_this = 15
 
