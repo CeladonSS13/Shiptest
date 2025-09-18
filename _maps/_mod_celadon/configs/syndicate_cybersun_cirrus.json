@@ -1,22 +1,19 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
 	"map_name": "Cirrus-class Medical Carrack",
-	"faction": "/datum/faction/syndicate/cybersun",
-	"prefix": "MSSV",
-	"manufacturer": "ISF Spacecraft",
 	"map_short_name": "Cirrus-class",
-	"description": "Cirrus-class — это проект Cybersun, созданный для  предоставления услуг Trauma Team в дали от основных объектов Cybersun. Он оборудован для автономной работы своего подразделения, а также имеет пристыкованный к нему шаттл класса Gauze.",
+	"description": "Cirrus-class — это проект Cybersun, созданный для  предоставления услуг Trauma Team в дали от основных объектов Cybersun. Он полностью оборудован для автономной работы судна, а также имеет пристыкованный к нему шаттл класса Gauze, для высадки Trauma Team к пострадавшим.",
 	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_cybersun_cirrus.dmm",
 	"starting_funds": 1500,
+	"enabled": true,
 	"limit": 1,
-	"tags": [
-		"Medical",
-		"Subshuttle",
-		"Specialist"
-	],
+	"sensor_range": 5,
+	"prefix": "MSSV",
+	"faction": "/datum/faction/syndicate",
+	"tags": ["Медицинское"],
 	"namelists": [
+		"CYBERSUN",
 		"SPACE",
-		"BEASTS",
 		"NATURAL_AGGRESSIVE"
 	],
 	"job_slots": {
@@ -27,6 +24,11 @@
 		},
 		"Medical Director": {
 			"outfit": "/datum/outfit/job/syndicate/cmo",
+			"officer": true,
+			"slots": 1
+		},
+		"Cybersun Ambassador": {
+			"outfit": "/datum/outfit/job/syndicate/head_of_personnel/cybersun",
 			"officer": true,
 			"slots": 1
 		},
@@ -46,6 +48,5 @@
 			"outfit": "/datum/outfit/job/syndicate/assistant/cybersun",
 			"slots": 2
 		}
-	},
-	"enabled": true
+	}
 }
