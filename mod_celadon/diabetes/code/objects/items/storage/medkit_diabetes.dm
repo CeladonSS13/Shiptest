@@ -1,11 +1,11 @@
-/obj/item/storage/medkit/diabetes
+/obj/item/storage/firstaid/diabetes
 	name = "diabetes medical kit"
 	desc = "A specialized medical kit for diabetics containing insulin supplies and monitoring equipment."
 	icon_state = "firstaid"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
 
-/obj/item/storage/medkit/diabetes/PopulateContents()
+/obj/item/storage/firstaid/diabetes/PopulateContents()
 	if(empty)
 		return
 	var/static/items_inside = list(
