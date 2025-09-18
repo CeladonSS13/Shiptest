@@ -19,6 +19,5 @@
 
 /datum/quirk/diabetes/remove()
 	var/mob/living/carbon/human/H = quirk_holder
-	for(var/datum/disease/diabetes/D in H.diseases)
-		D.cure()
+	for(var/datum/disease/diabetes/D in H.diseases.Copy())
 		qdel(D)
