@@ -255,11 +255,11 @@ MARK:	Генерация энергии
 */
 
 /datum/supply_pack/faction/independent/machinery/smes
-	name = "SMES Plate"
-	desc = "A high-capacity superconducting magnetic energy storage (SMES) unit."
+   name = "SMES Circuit Board"
+   desc = "Electronics (circuit board) for a superconducting magnetic energy storage (SMES) unit."
 	cost = 500
 	contains = list(/obj/item/circuitboard/machine/smes)
-	crate_name = "power cell crate"
+	crate_name = "smes circuit board crate"
 	crate_type = /obj/structure/closet/crate/engineering/electrical
 
 /datum/supply_pack/faction/independent/machinery/pacman

@@ -11,7 +11,7 @@
 /datum/blackmarket_item/misc/meat
 	name = "Standard Meat Crate"
 	desc = "Less interesting, yet filling cuts of meat."
-	item = /obj/item/seeds/random
+	item = /obj/item/food/meat/slab
 
 	cost_min = 300
 	cost_max = 500
