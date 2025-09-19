@@ -33,11 +33,11 @@
 	availability_prob = 20
 
 /datum/blackmarket_item/ammo/saiga_rounds/slug
-	name = "shotgun magazine (12g slugs)"
+	name = "shotgun magazine (410x76mm slugs)"
 	item = /obj/item/ammo_box/magazine/saiga/slug
 
 /datum/blackmarket_item/ammo/saiga_rounds/flechette
-	name = "shotgun magazine (12g flechette)"
+	name = "shotgun magazine (410x76mm flechette)"
 	item = /obj/item/ammo_box/magazine/saiga/flechette
 
 // MARK: Saiga medium mag
@@ -53,11 +53,11 @@
 	availability_prob = 20
 
 /datum/blackmarket_item/ammo/saiga_rounds/medium/slug
-	name = "shotgun magazine (12g slugs)"
+	name = "shotgun magazine (410x76mm slugs)"
 	item = /obj/item/ammo_box/magazine/saiga/medium/slug
 
 /datum/blackmarket_item/ammo/saiga_rounds/medium/flechette
-	name = "shotgun magazine (12g flechette)"
+	name = "shotgun magazine (410x76mm flechette)"
 	item = /obj/item/ammo_box/magazine/saiga/medium/flechette
 
 // MARK: Saiga drum mag
@@ -73,9 +73,9 @@
 	availability_prob = 20
 
 /datum/blackmarket_item/ammo/saiga_rounds/drum/slug
-	name = "shotgun magazine (12g flechette)"
+	name = "shotgun magazine (410x76mm slugs)"
 	item = /obj/item/ammo_box/magazine/saiga/drum/slug
 
 /datum/blackmarket_item/ammo/saiga_rounds/drum/flechette
-	name = "shotgun magazine (12g flechette)"
+	name = "shotgun magazine (410x76mm flechette)"
 	item = /obj/item/ammo_box/magazine/saiga/drum/flechette
