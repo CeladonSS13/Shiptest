@@ -173,7 +173,7 @@
 					/obj/item/roller)
 	crate_name = "surgical supplies crate"
 
-/datum/supply_pack/faction/independent/medical/salglucanister
+/datum/supply_pack/faction/independent/medical/herbs
 	name = "Medical herbs"
 	desc = "Specifically created for severely ill individuals and those struggling with addiction."
 	cost = 5000
