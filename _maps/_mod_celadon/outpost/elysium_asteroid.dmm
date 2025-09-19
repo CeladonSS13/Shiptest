@@ -8876,6 +8876,9 @@
 /area/outpost/fraction/inteq)
 "fLC" = (
 /obj/effect/spawner/structure/window/reinforced/indestructible,
+/obj/machinery/door/poddoor/ert{
+	id = "outpost_bridge_lockdown_inners"
+	},
 /turf/open/floor/plating,
 /area/outpost/operations)
 "fMu" = (
@@ -16145,6 +16148,14 @@
 /obj/item/storage/fancy/cigarettes/cigars/havana,
 /obj/item/lighter/clockwork,
 /obj/effect/spawner/random/celadon_drink,
+/obj/machinery/button/door{
+	id = "outpost_bridge_lockdown_inners";
+	pixel_x = -8;
+	name = "Bridge Lockdown";
+	req_one_access_txt = "8100";
+	dir = 1;
+	pixel_y = 10
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
 "kCQ" = (
@@ -24343,6 +24354,9 @@
 	dir = 1;
 	req_one_access_txt = "8100"
 	},
+/obj/machinery/door/poddoor/ert{
+	id = "outpost_bridge_lockdown_inners"
+	},
 /turf/open/floor/plasteel,
 /area/outpost/operations)
 "qdS" = (
@@ -31424,6 +31438,10 @@
 	security_level = 6;
 	dir = 8;
 	req_one_access_txt = "8100"
+	},
+/obj/machinery/door/poddoor/ert{
+	id = "outpost_bridge_lockdown_inners";
+	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
