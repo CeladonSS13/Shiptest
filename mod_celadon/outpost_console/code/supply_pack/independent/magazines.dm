@@ -211,7 +211,7 @@
 					/obj/item/ammo_box/magazine/morita1/small/empty)
 	cost = 1000
 
- /datum/supply_pack/faction/independent/magazine/morita_ammo
+/datum/supply_pack/faction/independent/magazine/morita_ammo
  	name = "Morita MK1 Standard Magazine Double Pack Crate"
  	desc = "Contains two .310 caliber magazines for the Morita family rifles, with a capacity of 25 rounds."
  	contains = list(/obj/item/ammo_box/magazine/morita1/empty,
