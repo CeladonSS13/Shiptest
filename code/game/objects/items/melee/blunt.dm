@@ -57,10 +57,18 @@
 /obj/item/melee/sledgehammer/gorlex/attack(mob/living/target, mob/living/user)
 	. = ..()
 	if(!HAS_TRAIT(src, TRAIT_WIELDED))
+	// [CELADON-ADD] - FIXES_SLEDGEHAMMER_CRASH
+		return
+	if(!target || target.anchored)
+	// [/CELADON-ADD]
 		return
 	var/atom/throw_target = get_edge_target_turf(target, user.dir)
-	if(!target.anchored)
-		target.throw_at(throw_target, rand(throw_min,throw_max), 2, user, gentle = TRUE)
+	// [CELADON-EDIT] - FIXES_SLEDGEHAMMER_CRASH - Добавляем задержку
+	// if(!target.anchored)
+	// 	target.throw_at(throw_target, rand(throw_min,throw_max), 2, user, gentle = TRUE)	// ORIGINAL
+	if(throw_target)
+		addtimer(CALLBACK(target, TYPE_PROC_REF(/atom/movable, throw_at), throw_target, rand(throw_min,throw_max), 2, user, TRUE), 1)
+	// [/CELADON-EDIT]
 
 /obj/item/melee/sledgehammer/gorlex/afterattack(atom/A, mob/user, proximity)
 	. = ..()

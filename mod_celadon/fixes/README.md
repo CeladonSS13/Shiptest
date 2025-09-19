@@ -245,6 +245,10 @@ FIXES_MODSUITS
 FIXES_DYNAMIC_MISSION
 - EDIT: `code/modules/overmap/objects/dynamic_datum.dm` - Изменена логика в функции can_reset_dynamic(). Теперь объект не будет диспавниться если миссия все еще может быть завершена
 
+FIXES_SLEDGEHAMMER_CRASH
+- ADD: `code/game/atoms.dm`
+- EDIT: `code/game/objects/items/melee/blunt.dm`
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
