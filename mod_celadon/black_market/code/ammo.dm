@@ -21,7 +21,7 @@
 	availability_prob = 20
 
 // MARK: Saiga short mag
-/datum/blackmarket_item/ammo/saida_rounds
+/datum/blackmarket_item/ammo/saiga_rounds
 	name = "\improper saiga 6-bullet short magazine"
 	desc = "A simple saiga magazine designed to chamber 410x76mm."
 	item = /obj/item/ammo_box/magazine/saiga
@@ -32,18 +32,18 @@
 	stock_max = 6
 	availability_prob = 20
 
-/datum/blackmarket_item/ammo/saida_rounds/slug
+/datum/blackmarket_item/ammo/saiga_rounds/slug
 	name = "shotgun magazine (12g slugs)"
 	item = /obj/item/ammo_box/magazine/saiga/slug
 
-/datum/blackmarket_item/ammo/saida_rounds/flechette
+/datum/blackmarket_item/ammo/saiga_rounds/flechette
 	name = "shotgun magazine (12g flechette)"
 	item = /obj/item/ammo_box/magazine/saiga/flechette
 
 // MARK: Saiga medium mag
-/datum/blackmarket_item/ammo/saida_rounds/medium
+/datum/blackmarket_item/ammo/saiga_rounds/medium
 	name = "\improper saiga 9-bullet magazine"
-	name = "A simple saiga magazine designed to chamber 410x76mm."
+	desc = "A simple saiga magazine designed to chamber 410x76mm."
 	item = /obj/item/ammo_box/magazine/saiga/medium
 
 	cost_min = 5000
@@ -52,18 +52,18 @@
 	stock_max = 4
 	availability_prob = 20
 
-/datum/blackmarket_item/ammo/saida_rounds/medium/slug
+/datum/blackmarket_item/ammo/saiga_rounds/medium/slug
 	name = "shotgun magazine (12g slugs)"
 	item = /obj/item/ammo_box/magazine/saiga/medium/slug
 
-/datum/blackmarket_item/ammo/saida_rounds/medium/flechette
+/datum/blackmarket_item/ammo/saiga_rounds/medium/flechette
 	name = "shotgun magazine (12g flechette)"
 	item = /obj/item/ammo_box/magazine/saiga/medium/flechette
 
 // MARK: Saiga drum mag
-/datum/blackmarket_item/ammo/saida_rounds/drum
+/datum/blackmarket_item/ammo/saiga_rounds/drum
 	name = "\improper saiga 14-bullet drum magazine"
-	name = "A simple saiga magazine designed to chamber 410x76mm."
+	desc = "A simple saiga magazine designed to chamber 410x76mm."
 	item = /obj/item/ammo_box/magazine/saiga/drum
 
 	cost_min = 6000
@@ -72,10 +72,10 @@
 	stock_max = 2
 	availability_prob = 20
 
-/datum/blackmarket_item/ammo/saida_rounds/drum/slug
+/datum/blackmarket_item/ammo/saiga_rounds/drum/slug
 	name = "shotgun magazine (12g flechette)"
 	item = /obj/item/ammo_box/magazine/saiga/drum/slug
 
-/datum/blackmarket_item/ammo/saida_rounds/drum/flechette
+/datum/blackmarket_item/ammo/saiga_rounds/drum/flechette
 	name = "shotgun magazine (12g flechette)"
 	item = /obj/item/ammo_box/magazine/saiga/drum/flechette
