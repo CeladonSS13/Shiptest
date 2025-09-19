@@ -242,10 +242,12 @@
 	STR.set_holdable(list(
 			/obj/item/stack/sheet,
 			/obj/item/stack/tile/bronze
-			),
-		list(
-			/obj/item/stack/sheet/mineral/sandstone,
-			/obj/item/stack/sheet/mineral/wood
+// [CELADON-REMOVE] - DEBUG_QUALITY
+//			),
+//		list(
+//			/obj/item/stack/sheet/mineral/sandstone,
+//			/obj/item/stack/sheet/mineral/wood
+// [/CELADON-REMOVE]
 			))
 	STR.max_combined_stack_amount = 300
 
