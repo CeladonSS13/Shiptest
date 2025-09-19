@@ -447,3 +447,23 @@ MARK:	Ядра двигателей
 					/obj/item/circuitboard/computer/rdconsole)
 	crate_name = "hacked r&d kit"
 	crate_type = /obj/structure/closet/crate/science
+
+/**
+	MARK: Сервис
+ */
+
+/datum/supply_pack/faction/independent/machinery/booze_dispenser
+	name = "Booze Dispenser (Machine Board)"
+	desc = "The circuit board for a portable booze dispenser."
+	cost = 2500
+	contains = list(/obj/item/circuitboard/machine/chem_dispenser/drinks/beer)
+	crate_name = "service crate"
+	crate_type = /obj/structure/closet/crate/hydroponics
+
+/datum/supply_pack/faction/independent/machinery/soda_dispenser
+	name = "Soda Dispenser (Machine Board)"
+	desc = "The circuit board for a portable soda dispenser."
+	cost = 2500
+	contains = list(/obj/item/circuitboard/machine/chem_dispenser/drinks)
+	crate_name = "service crate"
+	crate_type = /obj/structure/closet/crate/hydroponics
