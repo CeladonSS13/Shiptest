@@ -49,14 +49,12 @@
 		visible_message(span_danger("Looks like \The [user] is unloading [src]!"))
 		if(do_after(user, 25, src))
 			volatility = 1
-			for(var/type in contents)
-				//var/obj/item/I = type
-				user.put_in_hands(type)
+			for(var/item in contents)
+				user.put_in_hands(item)
 	else
 		to_chat(user, span_danger("There is nothing I can do about it."))
 
-
-/obj/structure/salvageable/railgun_platform/crowbar_act(mob/living/user, obj/item/tool)
+/obj/structure/salvageable/railgun/crowbar_act(mob/living/user, obj/item/tool)
 	if(prob(volatility))
 		visible_message(span_danger("\The [src]'s internals scream, as the explosion enlights everyone around!"),
 			span_hear("You hear a loud electrical crack!"))
@@ -102,20 +100,18 @@
 	. += span_warning("A side effect of their high capacity is a proportional increase in volatility, but before you install, you must agree to relieve yourself of all liability. \n\
 	You probably can make it 'safe' with some fumbling around.")
 
-/obj/structure/salvageable/railgun_platform/attacked_by(obj/item/attacking_item, mob/living/user)
-
-	if(istype(attacking_item, /obj/item/trash/railgun_sabot))
-		user.balloon_alert_to_viewers("[user] is loading the fucking BSA!", "I'm loading the BSA, I'm doing it!",10)
-		if(do_after(user,15,src))
-			volatility = 100
-			attacking_item.forceMove(src)
-	. = ..()
-
 /obj/structure/salvageable/railgun_platform/attack_hand(mob/living/user)
 	. = ..()
 	visible_message(span_danger("\The [user] is messing with the [src] wiring!"))
-	if(do_after(user, 20, src))
-		volatility = 1
+	if(user.a_intent == INTENT_HELP)
+		to_chat(user, span_danger("Trying to fix the wiring..."))
+		if(do_after(user, 20, src))
+			volatility = 1
+	else
+		to_chat(user, span_danger("Connecting together some random wires... This won't end good for anyone."))
+		if(do_after(user,20,src))
+			volatility = 100
+
 
 /obj/structure/salvageable/railgun_platform/crowbar_act(mob/living/user, obj/item/tool)
 	if(prob(volatility))
