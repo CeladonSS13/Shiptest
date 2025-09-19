@@ -77,10 +77,10 @@
 
 /obj/item/mod/module/shield/on_activation()
 	RegisterSignal(device, COMSIG_MOD_SHIELD_DESTROYED, PROC_REF(on_deactivation))
-	playsound(loc, 'sound/weapons/saberon.ogg', 35, TRUE)
-	device.atom_integrity = change_integrity(device)
-	var/power_to_drain = (device.max_integrity - change_integrity(device)) * 5 //So that we drain 5 power per RESTORED integrity
-	drain_power(power_to_drain)
+	var/power_to_drain = (change_integrity(device)-device.atom_integrity) * 5 //So that we drain 5 power per RESTORED integrity
+	if(drain_power(power_to_drain))
+		playsound(loc, 'sound/weapons/saberon.ogg', 35, TRUE)
+		device.atom_integrity = change_integrity(device)
 	. = ..()
 
 
@@ -92,7 +92,7 @@
 
 
 /obj/item/mod/module/shield/proc/change_integrity(obj/item/shield/riot/mod/shield)
-	var/restored_integrity = ((world.time - start_time) * 10) / 10 //So we regenerate 10 integrity per second
+	var/restored_integrity = (world.time - start_time) //So we regenerate 10 integrity per second
 	if(shield.atom_integrity + restored_integrity >= shield.max_integrity) //So we don't return an object with 200 integrity with a 100 max
 		return shield.max_integrity
 	return shield.atom_integrity + restored_integrity
@@ -120,7 +120,7 @@
 	slowdown = 0.3
 	var/shield_break_sound = 'sound/effects/sparks1.ogg'
 	var/shield_break_leftover = /obj/effect/particle_effect/sparks
-	max_integrity = 350
+	max_integrity = 250
 	broken_shield = FALSE
 	braking_sound = 'sound/effects/sparks1.ogg'
 	braking_alert = "Shield's down!"
