@@ -11,7 +11,6 @@
 	// Animated beings of stone. They have increased defenses, and do not need to breathe. They're also slow as fuuuck.
 	name = "\improper Lanius"
 	id = SPECIES_LANIUS
-	sexes = FALSE
 	special_step_sounds = 'sound/effects/footstep/heavy1.ogg'
 	species_gibs = "lanius"
 	loreblurb = "The Lanius are a metallic scavenger race, \
