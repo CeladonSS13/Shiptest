@@ -361,6 +361,11 @@
 	var/mutativeness = 1
 
 /datum/spacevine_controller/New(turf/location, list/muts, potency, production, datum/round_event/event = null)
+	// [CELADON-ADD] - FIXES_SPAWNERS_ON_SPACE - Проверка на космотурф
+	if(isspaceturf(location))
+		qdel(src)
+		return
+	// [/CELADON-ADD]
 	vines = list()
 	growth_queue = list()
 	var/obj/structure/spacevine/SV = spawn_spacevine_piece(location, null, muts)
@@ -393,6 +398,10 @@
 	return ..()
 
 /datum/spacevine_controller/proc/spawn_spacevine_piece(turf/location, obj/structure/spacevine/parent, list/muts)
+	// [CELADON-ADD] - FIXES_SPAWNERS_ON_SPACE - Проверка на космотурф
+	if(isspaceturf(location))
+		return null
+	// [/CELADON-ADD]
 	var/obj/structure/spacevine/SV = new(location)
 	growth_queue += SV
 	vines += SV
