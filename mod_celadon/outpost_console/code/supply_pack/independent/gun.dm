@@ -211,13 +211,12 @@ MARK:		Shotguns
 	cost = 3000
 	crate_name = "shotgun crate"
 
-// [Balance? No Lore.]
-// /datum/supply_pack/faction/independent/gun/saiga
-// 	name = "Saiga-410 \"Saiga\" shotgun assault crate"
-// 	desc = "Contains a Saiga-410 assault shotgun and additional empty medium-sized magazines."
-// 	cost = 10850
-// 	contains = list(/obj/item/storage/guncase/saiga)
-// 	crate_name = "auto shotgun crate"
+/datum/supply_pack/faction/independent/gun/saiga
+	name = "Saiga-410 \"Saiga\" shotgun assault crate"
+	desc = "Contains a Saiga-410 assault shotgun and additional empty medium-sized magazines."
+	cost = 5500
+	contains = list(/obj/item/storage/guncase/saiga)
+	crate_name = "auto shotgun crate"
 
 /*
 MARK:		Rifles
@@ -308,34 +307,12 @@ MARK:		Rifles
 // 	contains = list(/obj/item/storage/guncase/g36sh)
 // 	crate_name = "auto rifle crate"
 
-// /datum/supply_pack/faction/independent/gun/morita1
-// 	name = "Morita Mk.I Rifle crate"
-// 	desc = "Contains a Morita Mk.I and two standard-sized magazines."
-// 	cost = 11000
-// 	contains = list(/obj/item/storage/guncase/morita1)
-// 	crate_name = "auto rifle crate"
-
-// /datum/supply_pack/faction/independent/gun/morita1_forest
-// 	name = "Morita Mk.I Forest Rifle crate"
-// 	desc = "Contains a Morita/Forest Mk.I and two standard-sized magazines."
-// 	cost = 11000
-// 	contains = list(/obj/item/storage/guncase/morita1_forest)
-// 	crate_name = "auto rifle crate"
-
-// /datum/supply_pack/faction/independent/gun/morita1_desert
-// 	name = "Morita Mk.I Desert Rifle crate"
-// 	desc = "Contains a Morita/Desert Mk.I and two standard-sized magazines."
-// 	cost = 11000
-// 	contains = list(/obj/item/storage/guncase/morita1_desert)
-// 	crate_name = "auto rifle crate"
-
-// /datum/supply_pack/faction/independent/gun/morita1_swamp
-// 	name = "Morita Mk.I Swamp Rifle crate"
-// 	desc = "Contains a Morita/Swamp Mk.I and two standard-sized magazines."
-// 	cost = 11000
-// 	contains = list(/obj/item/storage/guncase/morita1_swamp)
-// 	crate_name = "auto rifle crate"
-
+/datum/supply_pack/faction/independent/gun/morita1
+	name = "Morita Mk.I Rifle crate"
+	desc = "Contains a Morita Mk.I and two standard-sized magazines."
+	cost = 17000
+	contains = list(/obj/item/storage/guncase/morita1)
+	crate_name = "auto rifle crate"
 
 /*
 ===== Товары SRM & CLIP & PGF от офов. =====

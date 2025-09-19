@@ -130,36 +130,17 @@ NO_MAG_GUN_HELPER(automatic/assault/g36/inteq)
 	allowed_ammo_types = list(
 		/obj/item/ammo_box/magazine/morita1, /obj/item/ammo_box/magazine/morita1/small,  /obj/item/ammo_box/magazine/morita1/drum
 	)
+	unique_reskin = list(\
+		"Standart" = "morita1",
+		"Desert" = "morita1_desert",
+		"Forest" = "morita1_forest",
+		"Swamp" = "morita1_swamp",
+		)
+	unique_reskin_changes_inhand = TRUE
 NO_MAG_GUN_HELPER(automatic/assault/morita1)
 // /obj/item/gun/ballistic/automatic/assault/morita1/no_mag
 // 	spawnwithmagazine = FALSE
 
-/obj/item/gun/ballistic/automatic/assault/morita1/desert
-	name = "\improper Morita MK.I(desert)"
-	desc = "Стандартная пехотная автоматическая винтовка под калибр .308. Широко применяется армейскими корпусами в Союзе Человечества. Популярность в гражданских кругах заслужила после сьемок в фильме Starboat Troopes./Модификация с пустынным камуфляжем"
-	icon_state = "morita1_desert"
-	item_state = "morita1_desert"
-
-// /obj/item/gun/ballistic/automatic/assault/morita1/desert/no_mag
-// 	spawnwithmagazine = FALSE
-NO_MAG_GUN_HELPER(automatic/assault/morita1/desert)
-/obj/item/gun/ballistic/automatic/assault/morita1/forest
-	name = "\improper Morita MK.I(forest)"
-	desc = "Стандартная пехотная автоматическая винтовка под калибр .308. Широко применяется армейскими корпусами в Союзе Человечества. Популярность в гражданских кругах заслужила после сьемок в фильме Starboat Troopes./Модификация с лесным камуфляжем"
-	icon_state = "morita1_forest"
-	item_state = "morita1_forest"
-NO_MAG_GUN_HELPER(automatic/assault/morita1/forest)
-// /obj/item/gun/ballistic/automatic/assault/morita1/forest/no_mag
-// 	spawnwithmagazine = FALSE
-
-/obj/item/gun/ballistic/automatic/assault/morita1/swamp
-	name = "\improper Morita MK.I(swamp)"
-	desc = "Стандартная пехотная автоматическая винтовка под калибр .308. Широко применяется армейскими корпусами в Союзе Человечества. Популярность в гражданских кругах заслужила после сьемок в фильме Starboat Troopes./Модификация с болотным камуфляжем"
-	icon_state = "morita1_swamp"
-	item_state = "morita1_swamp"
-NO_MAG_GUN_HELPER(automatic/assault/morita1/swamp)
-// /obj/item/gun/ballistic/automatic/assault/morita1/swamp/no_mag
-// 	spawnwithmagazine = FALSE
 
 // СВД 7.62x54mmR
 /obj/item/gun/ballistic/automatic/marksman/svd
