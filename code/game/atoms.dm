@@ -1460,21 +1460,6 @@
  * * addition - is any additional text, which will be appended to the rest of the log line
  */
 /proc/log_combat(atom/user, atom/target, what_done, atom/object=null, addition=null)
-	// [CELADON-ADD] - FIXES_SLEDGEHAMMER_CRASH - Проверяем на бросок, топоры, молоты, фиксим рантайм
-	// Handle weakrefs
-	if(istype(user, /datum/weakref))
-		var/datum/weakref/ref = user
-		user = ref.resolve()
-	if(istype(target, /datum/weakref))
-		var/datum/weakref/ref = target
-		target = ref.resolve()
-	if(istype(object, /datum/weakref))
-		var/datum/weakref/ref = object
-		object = ref.resolve()
-
-	if(!user || !target)
-		return
-	// [/CELADON-ADD]
 	var/ssource = key_name(user)
 	var/starget = key_name(target)
 
