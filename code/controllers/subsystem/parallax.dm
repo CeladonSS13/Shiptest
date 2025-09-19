@@ -15,9 +15,8 @@ SUBSYSTEM_DEF(parallax)
 	// [CELADON-EDIT] - CELADON_PARALLAX
 	// if(prob(20))	//20% chance to pick a special extra layer, in this case just asteroids, no space dirt
 	// 	random_layer = /atom/movable/screen/parallax_layer/random/asteroids		// CELADON-EDIT - ORIGINAL
-	if(prob(20))	//20% шанса, что будет дополнительно слой присутствовать в космосе
+	if(prob(10))	//10% шанса, что будет дополнительно слой присутствовать в космосе
 		random_layer = pick(/atom/movable/screen/parallax_layer/random/trash,
-							/atom/movable/screen/parallax_layer/random/gas,
 							/atom/movable/screen/parallax_layer/random/asteroids)
 	// [/CELADON-EDIT]
 	planet_y_offset = rand(100, 160)

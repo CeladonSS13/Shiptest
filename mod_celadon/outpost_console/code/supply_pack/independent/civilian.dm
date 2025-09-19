@@ -229,7 +229,7 @@ MARK: Decoration / flooring
 /datum/supply_pack/faction/independent/civilian/jukebox
 	name = "Jukebox"
 	desc = "Things a bit dull in the workplace? How about jamming out to some tunes!"
-	cost = 30000
+	cost = 7500
 	contains = list(/obj/machinery/jukebox)
 	crate_name = "Jukebox"
 

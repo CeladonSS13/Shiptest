@@ -3,6 +3,10 @@
 
 //Example usage TOGGLE_CHECKBOX(datum/verbs/menu/Settings/Ghost/chatterbox, toggle_ghost_ears)()
 
+// [CELADON-EDIT] - NEW UI
+/datum/verbs/menu/Settings
+	name = "Настройки"
+
 //override because we don't want to save preferences twice.
 /datum/verbs/menu/Settings/Set_checked(client/C, verbpath)
 	if (checkbox == CHECKBOX_GROUP)
@@ -13,12 +17,36 @@
 		winset(C, "[verbpath]", "is-checked = [!checked]")
 
 /datum/verbs/menu/Settings/verb/setup_character()
-	set name = "Game Preferences"
+	set name = "Настройки"
 	set category = "Preferences"
-	set desc = "Open Game Preferences Window"
-	usr.client.prefs.current_tab = 1
+	set desc = "Основные настройки"
+	usr.client.prefs.current_tab = 2
 	usr.client.prefs.ShowChoices(usr)
 
+/datum/verbs/menu/Settings/verb/setup_sound()
+	set name = "Звук"
+	set category = "Preferences"
+	set desc = "Настройки звука"
+	new /datum/sound_panel(usr)
+
+/datum/verbs/menu/Settings/verb/setup_chat()
+	set name = "Чат"
+	set category = "Preferences"
+	set desc = "Настройки чата"
+	new /datum/chat_settings_panel(usr)
+
+/datum/verbs/menu/Settings/verb/stop_client_sounds()
+	set name = "Починить звук"
+	set category = "Special Verbs"
+	set desc = "Остановить звуки"
+	SEND_SOUND(usr, sound(null))
+	var/client/C = usr.client
+	C?.tgui_panel?.stop_music()
+	SSblackbox.record_feedback("nested tally", "preferences_verb", 1, list("Stop Self Sounds")) //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+// [/CELADON-EDIT]
+
+// [CELADON-REMOVE]	- NEW UI - Проще использовать отдельные менюшки чем пласт этого кода ниже
+/*
 //toggles
 /datum/verbs/menu/Settings/Ghost/chatterbox
 	name = "Chat Box Spam"
@@ -314,7 +342,8 @@ TOGGLE_CHECKBOX(/datum/verbs/menu/Settings, listen_bank_card)()
 	SSblackbox.record_feedback("nested tally", "preferences_verb", 1, list("Toggle Income Notifications", "[(usr.client.prefs.chat_toggles & CHAT_BANKCARD) ? "Enabled" : "Disabled"]"))
 /datum/verbs/menu/Settings/listen_bank_card/Get_checked(client/C)
 	return C.prefs.chat_toggles & CHAT_BANKCARD
-
+*/
+// [/CELADON-REMOVE]
 
 GLOBAL_LIST_INIT(ghost_forms, sortList(list("ghost","ghostking","ghostian2","skeleghost","ghost_red","ghost_black", \
 							"ghost_blue","ghost_yellow","ghost_green","ghost_pink", \

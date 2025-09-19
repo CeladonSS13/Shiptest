@@ -88,7 +88,7 @@
 		/obj/item/stack/sheet/mineral/hidden/hellstone=50,\
 		/obj/item/stack/sheet/mineral/wood=50,\
 		/obj/item/stack/sheet/plastic/fifty=1,\
-		/obj/item/stack/sheet/mineral/hidden/hellstone/fifty=1
+		/obj/item/stack/sheet/mineral/sandstone=50
 		)
 	generate_items_inside(items_inside,src)
 

@@ -705,7 +705,10 @@
 	item_state = "sec_helm"
 	hardsuit_type = "sec"
 	armor = list("melee" = 35, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75, "wound" = 20)
-	supports_variations = SNOUTED_VARIATION
+	// [CELADON-EDIT] - CELADON_VOX - WTF у них же есть даже в атласе спрайт...
+	//supports_variations = SNOUTED_VARIATION
+	supports_variations = SNOUTED_VARIATION | VOX_VARIATION
+	// [/CELADON-EDIT]
 
 /obj/item/clothing/suit/space/hardsuit/security
 	icon_state = "hardsuit-sec"

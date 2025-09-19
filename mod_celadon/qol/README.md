@@ -18,6 +18,7 @@ FIX_LATHE
 AUTOLATE_MAXSTACK
 ADMIN-PANEL
 UNFUCK_SPRAYCAN
+BLOOD_EXAMINE
 DONT_ALTCLICK_WALLET
 DEBUG_QUALITY
 <!--
@@ -146,6 +147,9 @@ ADMIN-PANEL
 - ADD `code/modules/admin/admin_verbs.dm`			- Добавляет Админ панель в игру
 - ADD `code/modules/client/client_defines.dm` 		-
 - ADD `tgui/packages/tgui/interfaces/AdminVerbs.js` -
+
+BLOOD_EXAMINE
+- EDIT `code/datums/elements/decals/blood.dm` - Подсветка красным цветом кровавых предметов
 
 DONT_ALTCLICK_WALLET - Убирает вытаскивание карты на Альт-клик
 - DEL `code/datums/components/storage/concrete/wallet.dm`
