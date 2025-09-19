@@ -1,7 +1,6 @@
 /datum/species/ipc // im fucking lazy mk2 and cant get sprites to normally work
 	name = "\improper Positronic" //inherited from the real species, for health scanners and things
 	id = SPECIES_IPC
-	sexes = FALSE
 	species_age_min = 0
 	species_age_max = 300
 	// [CELADON-EDIT] - CELADON_FOOD_AND_DRINKS - Всё для того чтобы ИПС могли пить синтанол и припой
