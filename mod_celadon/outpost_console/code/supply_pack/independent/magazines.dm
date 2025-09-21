@@ -204,46 +204,46 @@
 // 	contains = list(/obj/item/ammo_box/magazine/g36/drum/empty)
 // 	cost = 5000
 
-// /datum/supply_pack/faction/independent/magazine/morita_ammo_small
-// 	name = "Morita MK1 Short Magazine Double Pack Crate"
-// 	desc = "Contains two .310 caliber magazines for the Morita family rifles, with a capacity of 10 rounds."
-// 	contains = list(/obj/item/ammo_box/magazine/morita1/small/empty,
-// 					/obj/item/ammo_box/magazine/morita1/small/empty)
-// 	cost = 2000
+/datum/supply_pack/faction/independent/magazine/morita_ammo_small
+	name = "Morita MK1 Short Magazine Double Pack Crate"
+	desc = "Contains two .310 caliber magazines for the Morita family rifles, with a capacity of 10 rounds."
+	contains = list(/obj/item/ammo_box/magazine/morita1/small/empty,
+					/obj/item/ammo_box/magazine/morita1/small/empty)
+	cost = 1000
 
-// /datum/supply_pack/faction/independent/magazine/morita_ammo
-// 	name = "Morita MK1 Standard Magazine Double Pack Crate"
-// 	desc = "Contains two .310 caliber magazines for the Morita family rifles, with a capacity of 25 rounds."
-// 	contains = list(/obj/item/ammo_box/magazine/morita1/empty,
-// 					/obj/item/ammo_box/magazine/morita1/empty)
-// 	cost = 4000
+/datum/supply_pack/faction/independent/magazine/morita_ammo
+	name = "Morita MK1 Standard Magazine Double Pack Crate"
+	desc = "Contains two .310 caliber magazines for the Morita family rifles, with a capacity of 25 rounds."
+	contains = list(/obj/item/ammo_box/magazine/morita1/empty,
+					/obj/item/ammo_box/magazine/morita1/empty)
+	cost = 2000
 
-// /datum/supply_pack/faction/independent/magazine/morita_ammo_drum
-// 	name = "Morita MK1 Drum Magazine Crate"
-// 	desc = "Contains .310 caliber drum magazine for the Morita family rifles, with a capacity of 50 rounds."
-// 	contains = list(/obj/item/ammo_box/magazine/morita1/drum/empty)
-// 	cost = 5000
+/datum/supply_pack/faction/independent/magazine/morita_ammo_drum
+	name = "Morita MK1 Drum Magazine Crate"
+	desc = "Contains .310 caliber drum magazine for the Morita family rifles, with a capacity of 50 rounds."
+	contains = list(/obj/item/ammo_box/magazine/morita1/drum/empty)
+	cost = 5000
 
 // //Магазины для оружия
 
-// /datum/supply_pack/faction/independent/magazine/a410_saiga
-// 	name = "Saiga-410 Short Magazine Double Pack Crate"
-// 	desc = "Contains two .410 caliber short magazines for the Saiga-410 shotgun, containing 6 rounds."
-// 	contains = list(/obj/item/ammo_box/magazine/saiga/empty,
-// 					/obj/item/ammo_box/magazine/saiga/empty)
-// 	cost = 1800
+/datum/supply_pack/faction/independent/magazine/a410_saiga
+	name = "Saiga-410 Short Magazine Double Pack Crate"
+	desc = "Contains two .410 caliber short magazines for the Saiga-410 shotgun, containing 6 rounds."
+	contains = list(/obj/item/ammo_box/magazine/saiga/empty,
+					/obj/item/ammo_box/magazine/saiga/empty)
+	cost = 500
 
-// /datum/supply_pack/faction/independent/magazine/a410_saiga_medium
-//     name = "Saiga-410 Standard Magazine Crate"
-//     desc = "Contains .410 caliber magazine for the Saiga-410 shotgun, containing 9 rounds."
-//     contains = list(/obj/item/ammo_box/magazine/saiga/medium/empty)
-//     cost = 2800
+/datum/supply_pack/faction/independent/magazine/a410_saiga_medium
+	name = "Saiga-410 Standard Magazine Crate"
+	desc = "Contains .410 caliber magazine for the Saiga-410 shotgun, containing 9 rounds."
+	contains = list(/obj/item/ammo_box/magazine/saiga/medium/empty)
+	cost = 1500
 
-// /datum/supply_pack/faction/independent/magazine/a410_saiga_drum
-//     name = "Saiga-410 Drum Magazine Crate"
-//     desc = "Contains .410 caliber drum magazine for the Saiga-410 shotgun, containing 14 rounds."
-//     contains = list (/obj/item/ammo_box/magazine/saiga/drum/empty)
-//     cost = 5000
+/datum/supply_pack/faction/independent/magazine/a410_saiga_drum
+	name = "Saiga-410 Drum Magazine Crate"
+	desc = "Contains .410 caliber drum magazine for the Saiga-410 shotgun, containing 14 rounds."
+	contains = list (/obj/item/ammo_box/magazine/saiga/drum/empty)
+	cost = 3000
 
 // ===========================================================
 
