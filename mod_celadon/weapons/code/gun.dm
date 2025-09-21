@@ -23,27 +23,6 @@
 	contains = list(/obj/item/storage/guncase/morita1)
 	crate_name = "auto rifle crate"
 
-/datum/supply_pack/gun/morita1_forest
-	name = "Morita Mk.I Forest Rifle crate"
-	desc = "Содержит Morita/forest Mk.I. и одну дополнительную обойму стандартного размера."
-	cost = 11000
-	contains = list(/obj/item/storage/guncase/morita1_forest)
-	crate_name = "auto rifle crate"
-
-/datum/supply_pack/gun/morita1_desert
-	name = "Morita Mk.I Desert Rifle crate"
-	desc = "Содержит Morita/desert Mk.I. и одну дополнительную обойму стандартного размера."
-	cost = 11000
-	contains = list(/obj/item/storage/guncase/morita1_desert)
-	crate_name = "auto rifle crate"
-
-/datum/supply_pack/gun/morita1_swamp
-	name = "Morita Mk.I Swamp Rifle crate"
-	desc = "Содержит Morita/swamp Mk.I. и одну дополнительную обойму стандартного размера."
-	cost = 11000
-	contains = list(/obj/item/storage/guncase/morita1_swamp)
-	crate_name = "auto rifle crate"
-
 /datum/supply_pack/gun/glock
 	name = "Оружейный ящик Glock"
 	desc = "Содержит пистолет Glock калибра 9x18mm и одну дополнительную обойму к нему."

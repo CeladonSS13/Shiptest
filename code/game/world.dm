@@ -142,6 +142,7 @@ GLOBAL_VAR(restart_counter)
 	GLOB.world_paper_log = "[GLOB.log_directory]/paper.log"
 	GLOB.tgui_log = "[GLOB.log_directory]/tgui.log"
 	GLOB.world_shuttle_log = "[GLOB.log_directory]/shuttle.log"
+	GLOB.world_celadon_economic_log = "[GLOB.log_directory]/world_celadon_economic.log" // [CELADON-ADD] - CELADON_COMPONENTS_LOGS
 	GLOB.world_celadon_admin_log = "[GLOB.log_directory]/admin.log" // [CELADON-ADD] - Добавляем логирование админских действий.
 
 	GLOB.demo_log = "[GLOB.log_directory]/demo.log"
@@ -164,6 +165,7 @@ GLOBAL_VAR(restart_counter)
 	start_log(GLOB.world_job_debug_log)
 	start_log(GLOB.tgui_log)
 	start_log(GLOB.world_shuttle_log)
+	start_log(GLOB.world_celadon_economic_log) // [CELADON-ADD] - CELADON_COMPONENTS_LOGS
 	start_log(GLOB.world_celadon_admin_log) // [CELADON-ADD] - Добавляем логирование админских действий.
 
 	var/latest_changelog = file("[global.config.directory]/../html/changelogs/archive/" + time2text(world.timeofday, "YYYY-MM") + ".yml")
