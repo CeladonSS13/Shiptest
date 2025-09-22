@@ -45,7 +45,7 @@ MARK: Energy weapons
 	contains = list(/obj/item/stock_parts/cell/gun/mini/empty,
 					/obj/item/stock_parts/cell/gun/mini/empty,
 					/obj/item/stock_parts/cell/gun/mini/empty)
-	cost = 400
+	cost = 200
 
 /datum/supply_pack/faction/nanotrasen/magazine/powercells_basic
 	name = "NT Energy Weapon Basic Power Cell Supply Pack"

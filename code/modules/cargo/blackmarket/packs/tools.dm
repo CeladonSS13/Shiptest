@@ -81,8 +81,12 @@
 	desc = "Protect yourself from an unexpected Riot at your local Police department!"
 	item = /obj/item/shield/riot
 
-	cost_min = 300
-	cost_max = 800
+	// [CELADON-EDIT] - CELADON_BLACK_MARKET
+	// cost_min = 300
+	// cost_max = 800	// ORIGINAL
+	cost_min = 1500
+	cost_max = 2000
+	// [/CELADON-EDIT]
 	stock_max = 3
 	availability_prob = 50
 

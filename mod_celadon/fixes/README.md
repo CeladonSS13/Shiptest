@@ -249,6 +249,14 @@ FIXES_SLEDGEHAMMER_CRASH
 - ADD: `code/game/atoms.dm`
 - EDIT: `code/game/objects/items/melee/blunt.dm`
 
+FIXES_OFFERING_EFFECTS
+- ADD: `code/datums/status_effects/neutral.dm`
+- EDIT: `code/modules/mob/living/carbon/inventory.dm`
+
+FIXES_SPAWNERS_ON_SPACE - Проверка на космотурф
+- ADD: `code/game/objects/effects/spawners/mobspawner.dm`
+- ADD: `code/modules/events/spacevine.dm`
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -309,6 +317,27 @@ RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFa
 
 - Автор фикса дисков дизайнов: Турон/Mirag1993
 - Автор фикса бесконечного спавна мобов: Турон/Mirag1993
+- Автор фиксов производительности консолей: AI Assistant
+
+### Исправления производительности консолей
+
+**Проблема**: При открытии консоли карго или консоли заданий аванпоста FPS падал до 2 битов/сек, что делало игру практически неиграбельной.
+
+**Причина**: 
+- Консоль заданий аванпоста сканировала все предметы на площадке **каждый тик** (10 раз в секунду)
+- Консоль карго генерировала данные поставок **каждый тик** в `ui_static_data()`
+
+**Решение**:
+- ADD: `code/modules/cargo/outpost_bounty_console.dm` - Добавлен кулдаун в 1 секунду для кэширования экспортов
+- ADD: `code/modules/cargo/console.dm` - Добавлен кулдаун в 5 секунд для генерации данных поставок
+- EDIT: `code/modules/cargo/outpost_bounty_console.dm` - Кнопка "Refresh" принудительно обновляет кэш
+
+**Результат**: Значительное улучшение производительности при работе с консолями.
+
+**Теги изменений**:
+- `[CELADON-ADD]` - новые функции
+- `[CELADON-EDIT]` - изменения существующего кода  
+- `[CELADON-FIXES]` - исправления багов
 
 <!--
   Здесь находится твой никнейм

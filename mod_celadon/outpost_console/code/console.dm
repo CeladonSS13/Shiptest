@@ -121,6 +121,10 @@
 				new /obj/effect/pod_landingzone(landing_turf, podType, SO)
 				playsound(src, 'sound/machines/twobeep_high.ogg', 50, TRUE)
 				say("Order incoming!")
+				// Логирование покупок
+				for(var/datum/supply_pack/pack in packs)
+					log_econ("[key_name(usr)] purchased [pack.name] for [pack.cost] credits from [src.name] at [AREACOORD(src)]")
+				log_econ("[key_name(usr)] total purchase cost: [total_cost] credits from [src.name] at [AREACOORD(src)]")
 				update_appearance()
 				return TRUE
 
