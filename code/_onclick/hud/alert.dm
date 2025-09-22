@@ -696,6 +696,12 @@ so as to remain in compliance with the most up-to-date laws."
 	owner = null
 	screen_loc = ""
 
+// Water alerts
+/atom/movable/screen/alert/drowning
+	name = "Drowning"
+	desc = "You are underwater and struggling to breathe! Find air or breathing equipment quickly!"
+	icon_state = "not_enough_oxy"
+
 // [CELADON-ADD] - CELADON_EMOTES
 /atom/movable/screen/alert/direction_lock
 	name = "Direction Lock"

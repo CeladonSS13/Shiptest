@@ -165,6 +165,7 @@
 #include "code\__DEFINES\vote.dm"
 #include "code\__DEFINES\vv.dm"
 #include "code\__DEFINES\wall_dents.dm"
+#include "code\__DEFINES\water.dm"	// [CELADON-EVENT]
 #include "code\__DEFINES\wires.dm"
 #include "code\__DEFINES\wounds.dm"
 #include "code\__DEFINES\ai\ai.dm"
@@ -903,6 +904,7 @@
 #include "code\datums\status_effects\gas.dm"
 #include "code\datums\status_effects\neutral.dm"
 #include "code\datums\status_effects\status_effect.dm"
+#include "code\datums\status_effects\water_effects.dm"	// [CELADON-EVENT]
 #include "code\datums\status_effects\wound_effects.dm"
 #include "code\datums\status_effects\debuffs\dizzyness.dm"
 #include "code\datums\status_effects\debuffs\drunk.dm"
@@ -1401,6 +1403,7 @@
 #include "code\game\objects\items\toys.dm"
 #include "code\game\objects\items\trash.dm"
 #include "code\game\objects\items\vending_items.dm"
+#include "code\game\objects\items\water_spawner.dm"	// [CELADON-EVENT]
 #include "code\game\objects\items\wayfinding.dm"
 #include "code\game\objects\items\attachments\_attachment.dm"
 #include "code\game\objects\items\attachments\_gun_attachment.dm"
@@ -1742,6 +1745,7 @@
 #include "code\game\turfs\open\lava.dm"
 #include "code\game\turfs\open\openspace.dm"
 #include "code\game\turfs\open\water.dm"
+#include "code\game\turfs\open\water_dynamic.dm"	// [CELADON-EVENT]
 #include "code\game\turfs\open\floor\catwalk_plating.dm"
 #include "code\game\turfs\open\floor\conc_floor.dm"
 #include "code\game\turfs\open\floor\fancy_floor.dm"
@@ -1845,6 +1849,7 @@
 #include "code\modules\admin\verbs\shuttlepanel.dm"
 #include "code\modules\admin\verbs\spawnobjasmob.dm"
 #include "code\modules\admin\verbs\toggle_ship_spawn.dm"
+#include "code\modules\admin\verbs\water_admin.dm"	// [CELADON-EVENT]
 #include "code\modules\admin\verbs\debug\delete_active_missions.dm"
 #include "code\modules\admin\verbs\SDQL2\SDQL_2.dm"
 #include "code\modules\admin\verbs\SDQL2\SDQL_2_parser.dm"
@@ -2246,6 +2251,7 @@
 #include "code\modules\clothing\outfits\factions\syndicate.dm"
 #include "code\modules\clothing\shoes\_shoes.dm"
 #include "code\modules\clothing\shoes\colour.dm"
+#include "code\modules\clothing\shoes\fins.dm"	// [CELADON-EVENT]
 #include "code\modules\clothing\shoes\magboots.dm"
 #include "code\modules\clothing\shoes\miscellaneous.dm"
 #include "code\modules\clothing\spacesuits\_spacesuits.dm"
@@ -2263,6 +2269,7 @@
 #include "code\modules\clothing\suits\jobs.dm"
 #include "code\modules\clothing\suits\labcoat.dm"
 #include "code\modules\clothing\suits\miscellaneous.dm"
+#include "code\modules\clothing\suits\pufferjackets.dm"	// [CELADON-EVENT]
 #include "code\modules\clothing\suits\reactive_armour.dm"
 #include "code\modules\clothing\suits\toggles.dm"
 #include "code\modules\clothing\suits\utility.dm"
@@ -3081,6 +3088,7 @@
 #include "code\modules\movespeed\modifiers\misc.dm"
 #include "code\modules\movespeed\modifiers\mobs.dm"
 #include "code\modules\movespeed\modifiers\reagent.dm"
+#include "code\modules\movespeed\modifiers\water.dm"	// [CELADON-EVENT]
 #include "code\modules\ninja\__ninjaDefines.dm"
 #include "code\modules\ninja\energy_katana.dm"
 #include "code\modules\ninja\outfit.dm"
