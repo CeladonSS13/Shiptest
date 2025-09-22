@@ -1969,7 +1969,6 @@
 	pixel_y = 21;
 	pixel_x = 8
 	},
-/obj/structure/closet/secure_closet/medical3,
 /obj/item/storage/box/bodybags,
 /obj/item/storage/box/bodybags,
 /obj/item/storage/box/bodybags,
@@ -1980,6 +1979,10 @@
 /obj/item/reagent_containers/glass/rag{
 	pixel_y = 3;
 	pixel_x = 8
+	},
+/obj/structure/closet/secure_closet/medical3{
+	req_access = null;
+	req_one_access_txt = "8118"
 	},
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/outpost/medical/morgue)
@@ -13957,8 +13960,7 @@
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/mop,
 /obj/machinery/door/window{
-	req_one_access_txt = "8126";
-	mouse_opacity = 0
+	req_one_access_txt = "8123"
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/outpost/medical/relax_room)
@@ -25117,11 +25119,6 @@
 	pixel_y = 26
 	},
 /obj/structure/table/wood/reinforced/bar,
-/obj/machinery/reagentgrinder{
-	pixel_y = 12;
-	layer = 4.25;
-	pixel_x = 4
-	},
 /obj/item/reagent_containers/condiment/saltshaker{
 	desc = "Salt. From space oceans, presumably. A staple of modern medicine.";
 	pixel_x = -4;
@@ -25133,6 +25130,11 @@
 	pixel_y = 2
 	},
 /obj/machinery/light/colored/directional/east,
+/obj/machinery/reagentgrinder/constructed{
+	pixel_y = 10;
+	pixel_x = 5;
+	layer = 4.3
+	},
 /turf/open/floor/wood/mahogany,
 /area/outpost/crew/bar/bar_zone)
 "qFz" = (
@@ -28951,7 +28953,8 @@
 "thV" = (
 /obj/machinery/coffeemaker/premium{
 	pixel_y = 13;
-	density = 0
+	density = 0;
+	layer = 4
 	},
 /obj/structure/table/wood/reinforced/bar,
 /turf/open/floor/wood/mahogany,
@@ -35907,7 +35910,6 @@
 /obj/item/storage/box/maid,
 /obj/effect/spawner/random/trash/janitor_supplies,
 /obj/machinery/door/window{
-	mouse_opacity = 0;
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech/grid,
