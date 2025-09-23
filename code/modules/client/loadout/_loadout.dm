@@ -1,26 +1,32 @@
 GLOBAL_LIST_EMPTY(loadout_categories)
 GLOBAL_LIST_EMPTY(gear_datums)
-GLOBAL_LIST_EMPTY(loadout_parent_categories) // Родительские категории
+GLOBAL_LIST_EMPTY(loadout_parent_categories) // [CELADON-ADD] - CELADON_QOL_LOADOUT - Родительские категории
 
 /datum/loadout_category
 	var/category = ""
+	 // [CELADON-ADD] - CELADON_QOL_LOADOUT
 	var/parent_category = "" // Родительская категория
 	var/category_icon = "" // Иконка категории
 	var/category_order = 0 // Порядок сортировки
 	var/list/subcategories = list() // Подкатегории
+	 // [/CELADON-ADD]
 	var/list/gear = list()
 
+// [CELADON-EDIT] - CELADON_QOL_LOADOUT
+// /datum/loadout_category/New(cat)	// ORIGINAL
 /datum/loadout_category/New(cat, parent = "", icon = "", order = 0)
+// [/CELADON-EDIT]
 	category = cat
+	// [CELADON-ADD] - CELADON_QOL_LOADOUT
 	parent_category = parent
 	category_icon = icon
 	category_order = order
+	// [/CELADON-ADD]
 	..()
 
 ///Create a list of gear datums to sort
 /proc/populate_gear_list()
-	// Создаем родительские категории
-	create_parent_categories()
+	create_parent_categories()	// [CELADON-ADD] - CELADON_QOL_LOADOUT
 
 	for(var/geartype in subtypesof(/datum/gear))
 		var/datum/gear/G = geartype
@@ -38,26 +44,36 @@ GLOBAL_LIST_EMPTY(loadout_parent_categories) // Родительские кат�
 			WARNING("Loadout gear [G] is missing path definition")
 			continue
 
-		// Получаем информацию о категории
+		// [CELADON-ADD] - CELADON_QOL_LOADOUT - Получаем информацию о категории
 		var/category_info = get_category_info(use_category)
 		var/parent_cat = category_info["parent"]
 		var/cat_icon = category_info["icon"]
 		var/cat_order = category_info["order"]
+		// [/CELADON-ADD]
 
 		if(!GLOB.loadout_categories[use_category])
+			// [CELADON-EDIT] - CELADON_QOL_LOADOUT
+			// GLOB.loadout_categories[use_category] = new /datum/loadout_category(use_category)	// ORIGINAL
 			GLOB.loadout_categories[use_category] = new /datum/loadout_category(use_category, parent_cat, cat_icon, cat_order)
+			// [/CELADON-EDIT]
 
-			// Добавляем в родительскую категорию
+			// [CELADON-ADD] - CELADON_QOL_LOADOUT - Добавляем в родительскую категорию
 			if(parent_cat && GLOB.loadout_parent_categories[parent_cat])
 				var/datum/loadout_category/parent_LC = GLOB.loadout_parent_categories[parent_cat]
 				parent_LC.subcategories[use_category] = GLOB.loadout_categories[use_category]
+			// [/CELADON-ADD]
 
 		var/datum/loadout_category/LC = GLOB.loadout_categories[use_category]
 		GLOB.gear_datums[use_name] = new geartype
 		LC.gear[use_name] = GLOB.gear_datums[use_name]
 
-	// Сортируем категории
-	sort_categories()
+	// [CELADON-REMOVE] - CELADON_QOL_LOADOUT
+	// GLOB.loadout_categories = sortAssoc(GLOB.loadout_categories)
+	// for(var/loadout_category in GLOB.loadout_categories)
+	// 	var/datum/loadout_category/LC = GLOB.loadout_categories[loadout_category]
+	// 	LC.gear = sortAssoc(LC.gear)
+	// [/CELADON-REMOVE]
+	sort_categories()	// [CELADON-ADD] - CELADON_QOL_LOADOUT - Сортируем категории
 	return 1
 
 /datum/gear
@@ -152,6 +168,7 @@ GLOBAL_LIST_EMPTY(loadout_parent_categories) // Родительские кат�
 
 	return new gd.path(gd.location)
 
+// [CELADON-ADD] - CELADON_QOL_LOADOUT
 ///Создаем родительские категории
 /proc/create_parent_categories()
 	GLOB.loadout_parent_categories["Clothing"] = new /datum/loadout_category("Одежда", "", "icons/obj/clothing/suits.dmi", 1)
@@ -225,10 +242,7 @@ GLOBAL_LIST_EMPTY(loadout_parent_categories) // Родительские кат�
 ///Генерирует древовидную навигацию для loadout
 /proc/generate_loadout_tree_navigation(current_tab)
 	var/list/dat = list()
-	// [CELADON-EDIT] - CELADON_QOL_LOADOUT
-	// dat += "<center><b>"	// ORIGINAL
 	dat += "<div style='text-align: center; margin: 5px 0; padding: 5px; background: #2a2a2a; border-radius: 5px;'>"
-	// [/CELADON-EDIT]
 	var/firstcat = 1
 	for(var/category in GLOB.loadout_categories)
 		if(firstcat)
@@ -236,24 +250,16 @@ GLOBAL_LIST_EMPTY(loadout_parent_categories) // Родительские кат�
 		else
 			dat += " | "
 		if(category == current_tab)
-		// [CELADON-EDIT] - CELADON_QOL_LOADOUT
-		// dat += "<font color='#90EE90'><b>[category]</b></font>"	// ORIGINAL
 			dat += "<span style='color: #90EE90; font-weight: bold; padding: 2px 6px; background: #3a3a3a; border-radius: 3px;'>[category]</span>"
 		else
-		// [/CELADON-EDIT]
-	// [CELADON-EDIT] - CELADON_QOL_LOADOUT
-	// 		dat += "<a href='byond://?_src_=prefs;preference=gear;select_category=[category]'>[category]</a>"
-	// dat += "</b></center>"	// ORIGINAL
 			dat += "<a href='byond://?_src_=prefs;preference=gear;select_category=[category]' style='color: #87CEEB; text-decoration: none; padding: 2px 6px; border-radius: 3px;'>[category]</a>"
 	dat += "</div>"
-	// [/CELADON-EDIT]
 	return dat.Join()
 
 ///Генерирует CSS стили для древовидной навигации
 /proc/generate_loadout_tree_styles()
 	return ""
 
-// [CELADON-ADD] - CELADON_QOL_LOADOUT - Пускай все в одном месте будет
 ///Автоматически генерирует теги для предмета
 /datum/gear/proc/generate_auto_tags()
 	// Добавляем тег категории
