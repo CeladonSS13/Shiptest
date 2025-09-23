@@ -110,16 +110,16 @@
 /obj/item/clothing/suit/armadyne
 	name = "Red Coat"
 	desc = "A greatcoat enhanced with a special style for those with a commanding presence."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/suits.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/suit.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
 	icon_state = "armadyne_trench"
 	item_state = "armadyne_trench"
 
 /obj/item/clothing/suit/toggle/blackhs
 	name = "black replica greatcoat"
 	desc = "This is replica, a greatcoat HOS enhanced with a special style for those with a commanding presence."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/suits.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/suit.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
 	icon_state = "blackhs"
 	item_state = "blackhs"
 	blood_overlay_type = "coat"
@@ -130,10 +130,10 @@
 /obj/item/clothing/suit/chaplainsuit/shrinehand
 	name = "shrinehand robe"
 	desc = "Won't help you communicate with spirits, but you'll certainly look the part."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/costume.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/costume.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/clothing/under/in_hands/costume_left.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/clothing/under/in_hands/costume_right.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/costume.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/costume.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/under/in_hands/costume_left.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/under/in_hands/costume_right.dmi'
 	icon_state = "shrinehand"
 	item_state = "shrinehand"
 	body_parts_covered = CHEST | GROIN | LEGS | ARMS

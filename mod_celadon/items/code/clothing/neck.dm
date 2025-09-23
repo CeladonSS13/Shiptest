@@ -1,8 +1,8 @@
 /obj/item/clothing/suit/hooded/cloak/padded
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/overlay/neck.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/cloaks.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/clothing/neck/in_hands/padded_left.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/clothing/neck/in_hands/padded_right.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/neck/overlay/neck.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/neck/cloaks.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/neck/in_hands/padded_left.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/neck/in_hands/padded_right.dmi'
 	slot_flags = ITEM_SLOT_OCLOTHING | ITEM_SLOT_NECK
 	name = "feathered serenity cloak"
 	desc = "A meticulously handcrafted cloak that is lined with subtle pockets filled with feathers and down. Its design matches common styles from the followers of Univitarium."
@@ -11,8 +11,8 @@
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/padded
 
 /obj/item/clothing/head/hooded/cloakhood/padded
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/overlay/neck.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/neck/cloaks.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/neck/overlay/neck.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/neck/cloaks.dmi'
 	flags_inv = HIDEEARS | HIDEEYES | HIDEHAIR | HIDEFACIALHAIR
 	clothing_flags = SNUG_FIT
 	name = "feathered serenity cloak"

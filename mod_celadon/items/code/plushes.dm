@@ -977,12 +977,12 @@
 				icon_state = "miner_plushie"
 				item_state = "miner_plushie"
 				say("Ну вот. Сегодня я умру.")
-				playsound(src, 'mod_celadon/_storge_sounds/sound/items/miner_plushie.ogg', 50, 1)
+				playsound(src, 'mod_celadon/_storage_sounds/sound/items/miner_plushie.ogg', 50, 1)
 			else
 				icon_state = "bloody_miner_plushie"
 				item_state = "bloody_miner_plushie"
 				say("Кишки, огромные кишки! Убей их… должен убить их всех! Разорвать… и… рвать! Демоны… они повсюду. Должен… убить их всех!")
-				playsound(src, 'mod_celadon/_storge_sounds/sound/items/bloody_miner_plushie.ogg', 50, 1)
+				playsound(src, 'mod_celadon/_storage_sounds/sound/items/bloody_miner_plushie.ogg', 50, 1)
 	if(ismob(loc))
 		var/mob/M = loc
 		M.update_inv_hands()

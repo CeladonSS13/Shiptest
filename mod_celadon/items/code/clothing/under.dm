@@ -156,10 +156,10 @@
 /obj/item/clothing/under/padded
 	name = "feathered serenity suit"
 	desc = "A meticulously handcrafted suit that is lined on the inside with feathers and down."
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/overlay/suit.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/suit/suits.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/clothing/suit/in_hands/padded_left.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/clothing/suit/in_hands/padded_right.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suits.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/suit/in_hands/padded_left.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/suit/in_hands/padded_right.dmi'
 	icon_state = "paddedunder"
 	item_state = "paddedunder"
 	// inhand_icon_state = "paddedunder"
@@ -176,8 +176,8 @@
 /obj/item/clothing/under/dress/skirt/swimming
 	name = "red bra and striped skirt"
 	desc = "A red side-slit skirt with stripes! Comes with a matching two-tone bra."
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/swimming_skirts.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/under/overlay/swimming_skirts.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/swimming_skirts.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/swimming_skirts.dmi'
 	icon_state = "striped_skirt"
 	item_state = "striped_skirt"
 	body_parts_covered = CHEST | GROIN | LEGS

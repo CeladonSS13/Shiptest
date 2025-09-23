@@ -146,10 +146,10 @@
 /obj/item/clothing/shoes/jackboots/padded
 	name = "serenity jackboots"
 	desc = "Thick boots that is lined with feathers and down. Good footwear almost anticipating harsh weather."
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/overlay/feet.dmi'
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/feet/shoes.dmi'
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/clothing/feet/in_hands/padded_left.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/clothing/feet/in_hands/padded_right.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/feet.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/shoes.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/padded_left.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/padded_right.dmi'
 	icon_state = "paddedboots"
 	// inhand_icon_state = "paddedboots"
 	supports_variations = null
