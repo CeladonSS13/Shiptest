@@ -13,18 +13,18 @@
 	. = ..()
 	if(acceleration_speed <= 0)
 		return
-	var/overload = ((abs(n_x) + abs(n_y)) / acceleration_speed)
-
-	if(world.time - last_overload_alarm > OVERLOAD_COOLDOWN)
-		last_overload_alarm = world.time
-		for(var/obj/i in helms)
-			if(i)
-				playsound(i, 'sound/effects/alert.ogg', 25, FALSE)
+	var/overload = ((abs(n_x) + abs(n_y)) / acceleration_speed) * OVERLOAD_FACTOR
+	if(round(overload) > 0)
+		if(world.time - last_overload_alarm > OVERLOAD_COOLDOWN)
+			last_overload_alarm = world.time
+			for(var/obj/i in helms)
+				if(i)
+					playsound(i, 'sound/effects/alert.ogg', 25, FALSE)
 
 	var/speeding_angle = ATAN2(n_y, n_x)
 	var/ang = SIMPLIFY_DEGREES(speeding_angle - bow_heading + 270)
-	var/overload_st = 10 * OVERLOAD_FACTOR * overload
-	var/disgust_amount = round(overload * OVERLOAD_FACTOR)
+	var/overload_st = overload * 10
+	var/disgust_amount = round(overload)
 	var/throw_range = clamp(round(overload_st), 1, OVERLOAD_THROW_RANGE_MAX)
 	var/throw_speed = max(1, round(throw_range / 2))
 
