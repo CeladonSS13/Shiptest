@@ -21,7 +21,7 @@ GLOBAL_LIST_EMPTY(loadout_parent_categories) // Родительские кат�
 /proc/populate_gear_list()
 	// Создаем родительские категории
 	create_parent_categories()
-	
+
 	for(var/geartype in subtypesof(/datum/gear))
 		var/datum/gear/G = geartype
 
@@ -46,12 +46,12 @@ GLOBAL_LIST_EMPTY(loadout_parent_categories) // Родительские кат�
 
 		if(!GLOB.loadout_categories[use_category])
 			GLOB.loadout_categories[use_category] = new /datum/loadout_category(use_category, parent_cat, cat_icon, cat_order)
-			
+
 			// Добавляем в родительскую категорию
 			if(parent_cat && GLOB.loadout_parent_categories[parent_cat])
 				var/datum/loadout_category/parent_LC = GLOB.loadout_parent_categories[parent_cat]
 				parent_LC.subcategories[use_category] = GLOB.loadout_categories[use_category]
-			
+
 		var/datum/loadout_category/LC = GLOB.loadout_categories[use_category]
 		GLOB.gear_datums[use_name] = new geartype
 		LC.gear[use_name] = GLOB.gear_datums[use_name]
@@ -72,8 +72,15 @@ GLOBAL_LIST_EMPTY(loadout_parent_categories) // Родительские кат�
 	// [/CELADON-EDIT]
 	///Slot to equip to.
 	var/slot
+	// [CELADON-REMOVE] - CELADON_QOL_LOADOUT
 	///Roles that can spawn with this item.
 	var/list/allowed_roles
+	// [/CELADON-REMOVE]
+	// [CELADON-ADD] - CELADON_QOL_LOADOUT
+	///Factions that can spawn with this item.
+	var/list/allowed_factions
+	// Примеры 	allowed_factions = list("NanoTrasen", ...)
+	// [/CELADON-ADD]
 	///Stop certain species from receiving this gear
 	var/list/species_blacklist
 	///Only allow certain species to receive this gear
@@ -92,6 +99,14 @@ GLOBAL_LIST_EMPTY(loadout_parent_categories) // Родительские кат�
 	//Icon state of item
 	var/icon_state
 	// [/CELADON-ADD]
+	// [CELADON-ADD] - CELADON_QOL_LOADOUT
+	///Tags for search and filtering
+	var/list/tags = list()
+	///Cost in loadout points (if point system is used)
+	var/cost = 0
+	///Large preview icon for detailed view
+	var/preview_icon_large
+	// [/CELADON-ADD]
 
 /datum/gear/New()
 	..()
@@ -103,6 +118,14 @@ GLOBAL_LIST_EMPTY(loadout_parent_categories) // Родительские кат�
 		icon_state = initial(path.icon_state)
 		icon = initial(path.icon)
 	base64icon = icon2base64(icon(icon, icon_state, SOUTH, 1, FALSE))
+	// [/CELADON-ADD]
+	// [CELADON-ADD] - CELADON_QOL_LOADOUT
+	// Генерируем большую иконку для превью
+	if(!preview_icon_large)
+		preview_icon_large = icon2base64(icon(icon, icon_state, SOUTH, 1, FALSE))
+	// Автоматически определяем теги на основе категории и слота
+	if(!tags.len)
+		generate_auto_tags()
 	// [/CELADON-ADD]
 
 ///Called when the gear is first purchased
@@ -146,15 +169,15 @@ GLOBAL_LIST_EMPTY(loadout_parent_categories) // Родительские кат�
 		"Footwear" = list("parent" = "Clothing", "icon" = "icons/obj/clothing/shoes.dmi", "order" = 4),
 		"External Wear" = list("parent" = "Clothing", "icon" = "icons/obj/clothing/suits.dmi", "order" = 5),
 		"Eyewear" = list("parent" = "Clothing", "icon" = "icons/obj/clothing/glasses.dmi", "order" = 6),
-		
+
 		// Аксессуары
 		"Accessories" = list("parent" = "Accessories", "icon" = "icons/obj/clothing/accessories.dmi", "order" = 1),
 		"Gloves" = list("parent" = "Accessories", "icon" = "icons/obj/clothing/gloves.dmi", "order" = 2),
 		"Scarfs" = list("parent" = "Accessories", "icon" = "icons/obj/clothing/neck.dmi", "order" = 3),
-		
+
 		// Снаряжение
 		"General" = list("parent" = "Equipment", "icon" = "icons/obj/items_and_weapons.dmi", "order" = 1),
-		
+
 		// Личное
 		"Plushes" = list("parent" = "Personal", "icon" = "icons/obj/plushes.dmi", "order" = 1),
 		"Cloaks" = list("parent" = "Personal", "icon" = "icons/obj/clothing/cloaks.dmi", "order" = 2),
@@ -163,7 +186,7 @@ GLOBAL_LIST_EMPTY(loadout_parent_categories) // Родительские кат�
 		"Dress" = list("parent" = "Personal", "icon" = "icons/obj/clothing/under/dress.dmi", "order" = 5),
 		"OOC" = list("parent" = "Personal", "icon" = "icons/obj/toy.dmi", "order" = 6)
 	)
-	
+
 	return category_mapping[category] || list("parent" = "Equipment", "icon" = "", "order" = 99)
 
 ///Сортируем категории
@@ -174,11 +197,11 @@ GLOBAL_LIST_EMPTY(loadout_parent_categories) // Родительские кат�
 		var/datum/loadout_category/LC = GLOB.loadout_parent_categories[cat_name]
 		sorted_parents += list(list(LC.category_order, cat_name, LC))
 	sorted_parents = sortTim(sorted_parents, /proc/cmp_loadout_category_order)
-	
+
 	GLOB.loadout_parent_categories = list()
 	for(var/list/entry in sorted_parents)
 		GLOB.loadout_parent_categories[entry[2]] = entry[3]
-	
+
 	// Сортируем подкатегории
 	for(var/parent_name in GLOB.loadout_parent_categories)
 		var/datum/loadout_category/parent_LC = GLOB.loadout_parent_categories[parent_name]
@@ -187,7 +210,7 @@ GLOBAL_LIST_EMPTY(loadout_parent_categories) // Родительские кат�
 			var/datum/loadout_category/sub_LC = parent_LC.subcategories[sub_name]
 			sorted_subs += list(list(sub_LC.category_order, sub_name, sub_LC))
 		sorted_subs = sortTim(sorted_subs, /proc/cmp_loadout_category_order)
-		
+
 		parent_LC.subcategories = list()
 		for(var/list/entry in sorted_subs)
 			parent_LC.subcategories[entry[2]] = entry[3]
@@ -202,8 +225,10 @@ GLOBAL_LIST_EMPTY(loadout_parent_categories) // Родительские кат�
 ///Генерирует древовидную навигацию для loadout
 /proc/generate_loadout_tree_navigation(current_tab)
 	var/list/dat = list()
-	
-	dat += "<center><b>"
+	// [CELADON-EDIT] - CELADON_QOL_LOADOUT
+	// dat += "<center><b>"	// ORIGINAL
+	dat += "<div style='text-align: center; margin: 5px 0; padding: 5px; background: #2a2a2a; border-radius: 5px;'>"
+	// [/CELADON-EDIT]
 	var/firstcat = 1
 	for(var/category in GLOB.loadout_categories)
 		if(firstcat)
@@ -211,12 +236,68 @@ GLOBAL_LIST_EMPTY(loadout_parent_categories) // Родительские кат�
 		else
 			dat += " | "
 		if(category == current_tab)
-			dat += "<font color='#90EE90'><b>[category]</b></font>"
+		// [CELADON-EDIT] - CELADON_QOL_LOADOUT
+		// dat += "<font color='#90EE90'><b>[category]</b></font>"	// ORIGINAL
+			dat += "<span style='color: #90EE90; font-weight: bold; padding: 2px 6px; background: #3a3a3a; border-radius: 3px;'>[category]</span>"
 		else
-			dat += "<a href='byond://?_src_=prefs;preference=gear;select_category=[category]'>[category]</a>"
-	dat += "</b></center>"
+		// [/CELADON-EDIT]
+	// [CELADON-EDIT] - CELADON_QOL_LOADOUT
+	// 		dat += "<a href='byond://?_src_=prefs;preference=gear;select_category=[category]'>[category]</a>"
+	// dat += "</b></center>"	// ORIGINAL
+			dat += "<a href='byond://?_src_=prefs;preference=gear;select_category=[category]' style='color: #87CEEB; text-decoration: none; padding: 2px 6px; border-radius: 3px;'>[category]</a>"
+	dat += "</div>"
+	// [/CELADON-EDIT]
 	return dat.Join()
 
 ///Генерирует CSS стили для древовидной навигации
 /proc/generate_loadout_tree_styles()
 	return ""
+
+// [CELADON-ADD] - CELADON_QOL_LOADOUT - Пускай все в одном месте будет
+///Автоматически генерирует теги для предмета
+/datum/gear/proc/generate_auto_tags()
+	// Добавляем тег категории
+	if(sort_category)
+		tags += lowertext(sort_category)
+
+	// Добавляем тег слота
+	if(slot)
+		switch(slot)
+			if(ITEM_SLOT_HEAD)
+				tags += "head"
+			if(ITEM_SLOT_NECK)
+				tags += "neck"
+			if(ITEM_SLOT_GLOVES)
+				tags += "gloves"
+			if(ITEM_SLOT_FEET)
+				tags += "feet"
+
+	// Добавляем теги на основе названия
+	if(display_name)
+		var/list/name_words = splittext(lowertext(display_name), " ")
+		for(var/word in name_words)
+			if(length(word) > 2) // Игнорируем короткие слова
+				tags += word
+
+///Проверяет, соответствует ли предмет поисковому запросу
+/datum/gear/proc/matches_search(search_query)
+	if(!search_query || search_query == "")
+		return TRUE
+
+	search_query = lowertext(search_query)
+
+	// Поиск по названию
+	if(findtext(lowertext(display_name), search_query))
+		return TRUE
+
+	// Поиск по описанию
+	if(findtext(lowertext(description), search_query))
+		return TRUE
+
+	// Поиск по тегам
+	for(var/tag in tags)
+		if(findtext(lowertext(tag), search_query))
+			return TRUE
+
+	return FALSE
+// [/CELADON-ADD]
