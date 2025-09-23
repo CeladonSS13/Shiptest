@@ -2,6 +2,8 @@
 #define OVERLOAD_CHANCE 30
 #define OVERLOAD_COOLDOWN 20
 #define OVERLOAD_THROW_RANGE_MAX 6
+#define OVERLOAD_PROTECT_THROW (1<<0)
+#define OVERLOAD_PROTECT_EFFECTS (1<<1)
 
 // MARK: Эффект перегрузки
 
@@ -45,35 +47,38 @@
 
 		var/mob/living/carbon/C = M
 		var/is_protected = check_overload_protection(C)
-
-		if(!is_protected)
-			apply_overload_effects(C, overload_st, disgust_amount, ang, throw_range, throw_speed, src)
+		apply_overload_effects(C, overload_st, disgust_amount, ang, throw_range, throw_speed, src, is_protected)
 
 // MARK: Функции
 
 /proc/check_overload_protection(mob/living/carbon/C)
+	var/prot
 	var/obj/item/clothing/shoes/magboots/boots = C.get_item_by_slot(ITEM_SLOT_FEET)
 	if(istype(boots) && boots.magpulse)
-		return TRUE
-
+		prot |= OVERLOAD_PROTECT_THROW
 	if(C.buckled && istype(C.buckled, /obj/structure/chair/comfy/shuttle))
-		return TRUE
+		prot |= OVERLOAD_PROTECT_THROW | OVERLOAD_PROTECT_EFFECTS
+	return prot
 
-/proc/apply_overload_effects(mob/living/carbon/C, overload_st, disgust_amount, ang, throw_range, throw_speed, datum/overmap/ship/controlled/ship)
+/proc/apply_overload_effects(mob/living/carbon/C, overload_st, disgust_amount, ang, throw_range, throw_speed, datum/overmap/ship/controlled/ship, is_protected)
 	var/chance_overload = OVERLOAD_CHANCE
 	if(!C.resting)
 		chance_overload += OVERLOAD_CHANCE
 	if(!C.buckled)
 		chance_overload += OVERLOAD_CHANCE
 
-	if(prob(chance_overload))
+	if(!(is_protected & OVERLOAD_PROTECT_EFFECTS) && prob(chance_overload))
 		C.adjust_disgust(disgust_amount)
 
-	if(disgust_amount > 0 && world.time - ship.last_overload_throw > OVERLOAD_COOLDOWN && !C.anchored && !C.buckled)
+	if(disgust_amount > 0 && world.time - ship.last_overload_throw > OVERLOAD_COOLDOWN && !C.anchored && !C.buckled && !(is_protected & OVERLOAD_PROTECT_THROW))
 		ship.last_overload_throw = world.time
 		C.throw_at(get_ranged_target_turf(C, angle2dir(ang), range = throw_range), range = throw_range, speed = throw_speed, thrower = C)
+	else if(prob(5))
+		to_chat(C, span_warning("Перегрузка давит на вас, однаконо вы остаетесь на месте."))
 
 #undef OVERLOAD_FACTOR
 #undef OVERLOAD_CHANCE
 #undef OVERLOAD_COOLDOWN
 #undef OVERLOAD_THROW_RANGE_MAX
+#undef OVERLOAD_PROTECT_THROW
+#undef OVERLOAD_PROTECT_EFFECTS
