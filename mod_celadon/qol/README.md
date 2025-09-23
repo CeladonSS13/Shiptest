@@ -21,6 +21,7 @@ UNFUCK_SPRAYCAN
 BLOOD_EXAMINE
 DONT_ALTCLICK_WALLET
 DEBUG_QUALITY
+CELADON_QOL_LOADOUT
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -157,6 +158,12 @@ DONT_ALTCLICK_WALLET - Убирает вытаскивание карты на �
 
 DEBUG_QUALITY
 - DEL `code/game/objects/items/storage/boxes.dm` -> `mod_celadon/qol/code/BluespaceTechnician.dm`
+
+CELADON_QOL_LOADOUT
+- ADD, EDIT: `code/modules/client/preferences.dm`
+- ADD, EDIT, REMOVE: `code/modules/client/loadout/_loadout.dm`
+- REMOVE: `code/modules/client/loadout/loadout_accessories.dm`
+- REMOVE: `code/modules/client/loadout/loadout_hat.dm`
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
