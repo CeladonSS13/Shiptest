@@ -7,10 +7,10 @@
 /datum/donator/New(client/owner)
 	..()
 	src.key = owner.key
-	load_vip_tiers()
+	load_vip_tiers(owner)
 
-/datum/donator/proc/load_vip_tiers()
-	var/donators_text = file2text("[global.config.directory]/donators.txt")
+/datum/donator/proc/load_vip_tiers(client/owner)
+	var/donators_text = file2text("[global.config.directory]/_celadon/donators.txt")
 	if (!donators_text)
 		return
 
@@ -18,9 +18,9 @@
 	while (donators_regex.Find(donators_text))
 		if (donators_regex.group[1] == src.ckey || donators_regex.group[1] == src.key)
 			donator_tier = text2num(donators_regex.group[2])
-			if (donator_tier >= 1 || check_rights_for(src, R_ADMIN))
+			if (donator_tier >= 1 || check_rights_for(owner, R_ADMIN))
 				LAZYADD(DONATOR_GHOST_LIST, VIP_GHOST_TIER1_LIST)
-			if (donator_tier >= 3 || check_rights_for(src, R_ADMIN))
+			if (donator_tier >= 3 || check_rights_for(owner, R_ADMIN))
 				LAZYADD(DONATOR_GHOST_LIST, VIP_GHOST_TIER3_LIST)
 
 // MARK: New Buttons
@@ -39,7 +39,7 @@
 	var/ghost_type = tgui_input_list(usr, "Какого призрака ты хочешь выбрать?", "Изменение призрака", client.donator.DONATOR_GHOST_LIST, 30 SECONDS)
 	if(!ghost_type)
 		return
-	icon = 'mod_celadon/_storge_icons/icons/assets/vip/ghost.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/assets/vip/ghost.dmi'
 	icon_state = ghost_type
 
 /mob/dead/observer/verb/ChangerColorGhost()

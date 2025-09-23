@@ -8,6 +8,8 @@
 	var/datum/secrets_menu/tgui  = new(usr)//create the datum
 	tgui.ui_interact(usr)//datum has a tgui component, here we open the window
 
+	log_celadon_admin("ADMIN: [key_name_admin(holder)] openned Secrets Panel.") // [CELADON_ADD] - logging admin actions.
+
 /datum/secrets_menu
 	var/client/holder //client of whoever is using this datum
 	var/is_debugger = FALSE

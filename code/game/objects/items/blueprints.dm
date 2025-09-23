@@ -386,6 +386,11 @@
 
 	target_shuttle.recalculate_bounds()
 
+	// [CELADON-ADD] - Добавляем проверку на одноразовый предмет.
+	if(istype(src, /obj/item/areaeditor/shuttle/disposable))
+		check_disposable(creator)
+	// [/CELADON-ADD]
+
 	to_chat(creator, span_notice("You have created a new area, named [newA.name]. It is now weather proof, and constructing an APC will allow it to be powered."))
 	return TRUE
 

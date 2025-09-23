@@ -6,7 +6,7 @@
 	icon_aggro = "radioactiveroach_move"
 	icon_dead = "radioactiveroach_dead"
 
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat = 3)
+	butcher_results = list(/obj/item/food/meat/roachmeat = 3)
 	turns_per_move = 1
 	maxHealth = 40
 	health = 40
@@ -40,12 +40,12 @@
 			var/damage = rand(melee_damage_lower, melee_damage_upper)
 			L.apply_effect(10, EFFECT_IRRADIATE)
 			L.damage_clothes(damage, damage_flag = BURN)
-			playsound(src, 'mod_celadon/_storge_sounds/sound/insect_battle_screeching.ogg', 30, 1, -3)
+			playsound(src, 'mod_celadon/_storage_sounds/sound/insect_battle_screeching.ogg', 30, 1, -3)
 			L.visible_message(span_danger("\the [src] globs up some glowing bile all over \the [L]!"))
 
 /obj/projectile/roach_spit
 	name = "Glowing bile"
-	icon = 'mod_celadon/_storge_icons/icons/mobs/roaches.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/mobs/roaches.dmi'
 	icon_state = "goo_proj"
 	damage_type = list(BURN = 15)
 	irradiate = 5

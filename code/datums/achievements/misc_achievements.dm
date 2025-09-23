@@ -26,6 +26,7 @@
 	database_id = MEDAL_RODSUPLEX
 	icon = "featofstrength"
 
+// [CELADON-ADD] - RETURN_CONTENT - CLOWN_RETURN_CONTENT
 /datum/award/achievement/misc/round_and_full
 	name = "Round and Full"
 	desc = "Well at least you aren't down the river, I hear they eat people there."
@@ -37,6 +38,7 @@
 	desc = "100 honks later"
 	database_id = MEDAL_THANKSALOT
 	icon = "clownthanks"
+// [/CELADON-ADD]
 
 /datum/award/achievement/misc/helbitaljanken
 	name = "Helbitaljanken"

@@ -1,39 +1,3 @@
-//временный фикс говнокода оффов
-/obj/machinery/porta_turret/connect_to_shuttle(obj/docking_port/mobile/port, obj/docking_port/stationary/dock)
-	id = "[text_ref(port)][id]"
-	port.turret_list |= WEAKREF(src)
-
-/obj/machinery/porta_turret/set_state(on, new_lethal, new_flags)
-	.=..()
-	if(!isnull(new_flags))
-		turret_flags = new_flags
-
-	lethal = new_lethal
-	toggle_on(on)
-	power_change()
-
-/obj/machinery/turretid/late_connect_to_shuttle(obj/docking_port/mobile/port, obj/docking_port/stationary/dock)
-	.=..()
-	SIGNAL_HANDLER
-
-	for(var/datum/weakref/ship_gun as anything in port.turret_list)
-		var/obj/machinery/porta_turret/turret_gun = ship_gun.resolve()
-		//skip if it doesn't exist or if the id doesn't match
-		if(turret_gun?.id != id)
-			continue
-
-		turret_refs += ship_gun
-
-	update_turrets()
-	UnregisterSignal(port, COMSIG_SHIP_DONE_CONNECTING)
-
-//дает всем турелям нормальные флаги для агрессивного поведения
-/obj/machinery/porta_turret
-	turret_flags = TURRET_FLAG_DEFAULT_CELADON
-
-/obj/machinery/turretid
-	turret_flags = TURRET_FLAG_DEFAULT_CELADON
-
 // Syndicate outdated turrets
 /obj/machinery/porta_turret/syndicate/interior_45
 	name = "machine gun turret (.45)"
@@ -54,7 +18,7 @@
 /obj/machinery/porta_turret/syndicate/grenade_40mm
 	name = "mounted grenade launcher (40mm)"
 	desc = "Syndicate 40mm grenade launcher defense turret. If you've had this much time to look at it, you're probably already dead."
-	icon = 'mod_celadon/_storge_icons/icons/structures/turrets.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/turrets.dmi'
 	icon_state = "syndie_grenade"
 	base_icon_state = "syndie_grenade"
 	stun_projectile = /obj/projectile/bullet/a40mm
@@ -102,7 +66,7 @@
 /obj/machinery/porta_turret/syndicate/no_access/grenade_40mm
 	name = "mounted grenade launcher (40mm)"
 	desc = "Syndicate 40mm grenade launcher defense turret. If you've had this much time to look at it, you're probably already dead."
-	icon = 'mod_celadon/_storge_icons/icons/structures/turrets.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/turrets.dmi'
 	icon_state = "syndie_grenade"
 	base_icon_state = "syndie_grenade"
 	stun_projectile = /obj/projectile/bullet/a40mm
@@ -154,7 +118,7 @@
 	number_of_shots = 3
 	cooldown_duration = 2 SECONDS
 	rate_of_fire = 1
-	firesound = 'mod_celadon/_storge_sounds/sound/gun/turret9mm.ogg'
+	firesound = 'mod_celadon/_storage_sounds/sound/gun/turret9mm.ogg'
 	overheatsound = 'sound/weapons/gun/smg/smgrack.ogg'
 	can_be_undeployed = TRUE
 	spawned_on_undeploy = /obj/item/deployable_turret_folded
@@ -220,7 +184,7 @@
 /obj/machinery/porta_turret/ship/solfed/heavy
 	name = "Solarian Heavy Gauss Turret"
 	desc = "A powerful heavy gauss defence system used by Solfed's vessels. Uses ferromagnetic lances."
-	stun_projectile = /obj/projectile/bullet/a75clip/rubber
+	stun_projectile = /obj/projectile/bullet/a65clip/rubber
 	stun_projectile_sound = 'sound/weapons/gun/gauss/magrifle.ogg'
 	lethal_projectile = /obj/projectile/bullet/gauss/lance
 	lethal_projectile_sound = 'sound/weapons/gun/gauss/claris.ogg'
@@ -252,9 +216,9 @@
 /obj/machinery/porta_turret/ship/syndicate/ballistic/heavy
 	name = "Heavy Gorlex Ballistic Defence"
 	desc = "A heavy ballistic turret designed by the Gorlex Maurauders. An extremely powerful defence system."
-	stun_projectile = /obj/projectile/bullet/a75clip/rubber
+	stun_projectile = /obj/projectile/bullet/a65clip/rubber
 	stun_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg'
-	lethal_projectile = /obj/projectile/bullet/a75clip
+	lethal_projectile = /obj/projectile/bullet/a65clip
 	lethal_projectile_sound = 'sound/weapons/gun/sniper/cmf90.ogg'
 	max_integrity = 300
 

@@ -24,9 +24,9 @@
 	icon_state = sign.icon_state
 
 	if(sign.icon_state == "cyberslyph")
-		icon = 'mod_celadon/_storge_icons/icons/structures/barsigns/barsigns96x96.dmi'
+		icon = 'mod_celadon/_storage_icons/icons/structures/barsigns/barsigns96x96.dmi'
 	else
-		icon = 'mod_celadon/_storge_icons/icons/structures/barsigns/barsigns.dmi'
+		icon = 'mod_celadon/_storage_icons/icons/structures/barsigns/barsigns.dmi'
 	// [/CELADON-ADD]
 
 	if(sign.name)
@@ -50,9 +50,10 @@
 			var/new_sign = new D
 			return set_sign(new_sign)
 
-/obj/structure/sign/barsign/obj_break(damage_flag)
+/obj/structure/sign/barsign/atom_break(damage_flag)
 	if(!broken && !(flags_1 & NODECONSTRUCT_1))
 		broken = TRUE
+	. = ..()
 
 /obj/structure/sign/barsign/deconstruct(disassembled = TRUE)
 	new /obj/item/stack/sheet/metal(drop_location(), 2)

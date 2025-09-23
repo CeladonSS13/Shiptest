@@ -59,7 +59,7 @@
 /turf/open/floor/wood,
 /area/ship/crew/library)
 "aK" = (
-/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/food/grown/wheat,
 /obj/structure/table/wood/fancy,
 /obj/effect/turf_decal/siding/wood{
 	color = "#332521";
@@ -163,8 +163,8 @@
 /area/ship/engineering/electrical)
 "bX" = (
 /obj/structure/fermenting_barrel,
-/obj/item/reagent_containers/food/snacks/grown/oat,
-/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/food/grown/oat,
+/obj/item/food/grown/oat,
 /obj/effect/turf_decal/siding/wood{
 	color = "#332521";
 	dir = 4
@@ -447,7 +447,7 @@
 /area/ship/crew/chapel)
 "ek" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/cow,
+/mob/living/basic/cow,
 /turf/open/floor/grass/ship/jungle,
 /area/ship/crew/hydroponics)
 "eo" = (
@@ -879,9 +879,6 @@
 /obj/structure/railing/wood{
 	dir = 4
 	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
-	},
 /turf/open/floor/plasteel/stairs/right{
 	dir = 1
 	},
@@ -922,9 +919,6 @@
 /area/ship/crew/chapel)
 "hM" = (
 /obj/structure/railing/wood{
-	dir = 8
-	},
-/obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
 /turf/open/floor/plasteel/stairs/left{
@@ -1087,10 +1081,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/hydroponics)
-"jk" = (
-/obj/effect/turf_decal/weather/dirt,
-/turf/open/floor/ship/dirt/dark,
-/area/ship/crew/canteen)
 "jl" = (
 /obj/structure/railing{
 	dir = 4
@@ -2232,10 +2222,10 @@
 /obj/item/seeds/watermelon/holy,
 /obj/item/seeds/wheat/oat,
 /obj/item/seeds/wheat/oat,
-/obj/item/reagent_containers/food/snacks/grown/sugarcane,
+/obj/item/food/grown/sugarcane,
 /obj/item/seeds/wheat,
 /obj/item/seeds/wheat,
-/obj/item/reagent_containers/food/snacks/grown/sugarcane,
+/obj/item/food/grown/sugarcane,
 /obj/item/seeds/watermelon/holy,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/canteen)
@@ -2502,10 +2492,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
-"wy" = (
-/obj/effect/turf_decal/weather/dirt,
-/turf/open/floor/ship/dirt/dark,
-/area/ship/crew/hydroponics)
 "wz" = (
 /obj/effect/spawner/random/vending/snack,
 /obj/effect/turf_decal/siding/wood,
@@ -2961,9 +2947,6 @@
 /turf/open/floor/grass/ship/jungle,
 /area/ship/crew/canteen)
 "AW" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 9
-	},
 /obj/machinery/light/directional/north,
 /turf/open/floor/ship/dirt/dark,
 /area/ship/crew/hydroponics)
@@ -3097,9 +3080,6 @@
 /area/ship/crew/hydroponics)
 "Cu" = (
 /obj/item/flashlight/lantern,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 10
-	},
 /turf/open/floor/ship/dirt/dark,
 /area/ship/crew/hydroponics)
 "CL" = (
@@ -3380,13 +3360,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
-"EE" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/turf/open/floor/ship/dirt/dark,
-/area/ship/crew/hydroponics)
 "EO" = (
 /obj/structure/sink/kitchen{
 	dir = 1;
@@ -3849,12 +3822,6 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/toilet)
-"Jf" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
-	},
-/turf/open/floor/ship/dirt/dark,
-/area/ship/crew/hydroponics)
 "Jg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/railing/wood,
@@ -4463,11 +4430,11 @@
 	pixel_x = 9;
 	pixel_y = 9
 	},
-/obj/item/reagent_containers/food/snacks/cheesewedge{
+/obj/item/food/cheese/wedge{
 	pixel_x = 1;
 	pixel_y = 12
 	},
-/obj/item/reagent_containers/food/snacks/cheesewedge{
+/obj/item/food/cheese/wedge{
 	pixel_x = 5;
 	pixel_y = 3
 	},
@@ -4648,13 +4615,6 @@
 	},
 /turf/open/floor/wood,
 /area/ship/hallway/starboard)
-"PT" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
-	},
-/turf/open/floor/ship/dirt/dark,
-/area/ship/crew/hydroponics)
 "PU" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -4793,7 +4753,7 @@
 /area/ship/crew/canteen)
 "QE" = (
 /obj/structure/fermenting_barrel,
-/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/food/grown/wheat,
 /obj/effect/turf_decal/siding/wood{
 	color = "#332521";
 	dir = 6
@@ -5259,12 +5219,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/wood,
 /area/ship/hallway/fore)
-"Uj" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/turf/open/floor/ship/dirt/dark,
-/area/ship/crew/hydroponics)
 "Uo" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	dir = 4
@@ -5443,9 +5397,6 @@
 	color = "#332521";
 	dir = 1
 	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
-	},
 /turf/open/floor/ship/dirt/dark,
 /area/ship/crew/hydroponics)
 "VN" = (
@@ -5556,7 +5507,7 @@
 	dir = 8
 	},
 /obj/structure/table/wood/reinforced,
-/obj/item/reagent_containers/food/snacks/honeybar,
+/obj/item/food/honeybar,
 /turf/open/floor/wood,
 /area/ship/crew/chapel)
 "Wx" = (
@@ -6819,7 +6770,7 @@ yX
 Qv
 dM
 QZ
-EE
+OS
 oZ
 Cf
 rn
@@ -6859,11 +6810,11 @@ Qv
 Qv
 dM
 FM
-Uj
+Tl
 OZ
 Mj
 rn
-wy
+Tl
 bQ
 bQ
 fb
@@ -6938,7 +6889,7 @@ am
 fb
 bQ
 MI
-EE
+OS
 Lx
 eh
 JL
@@ -6986,7 +6937,7 @@ bQ
 HQ
 yT
 MV
-Jf
+Tl
 JL
 JL
 Tl
@@ -7069,7 +7020,7 @@ Tl
 Tl
 JL
 rn
-PT
+OS
 JL
 WH
 Vm
@@ -7182,7 +7133,7 @@ Tf
 fP
 Tf
 Tf
-jk
+Tf
 KW
 GF
 Fk

@@ -13,6 +13,9 @@
 ## Респрйты текстур
 
 ID мода: CELADON_RESPRITE
+
+CELADON_ADD_HUDS
+JETPACK_RESPRITE
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -59,6 +62,14 @@ ID мода: CELADON_RESPRITE
 	   - `icon_state = "landing_noanim"`
 
 - EDIT: `code\modules\instruments\stationary.dm`: `/obj/structure/musician/piano/Initialize(mapload)` -> изменен прок на выборку спрайта пиано
+
+CELADON_ADD_HUDS
+- EDIT: `code/modules/admin/team_panel.dm` : 	Замена путей хадов на наши
+- EDIT: `code/modules/autowiki/pages/ships.dm` :	Выше ^
+- EDIT: `code/modules/mob/mob.dm` :					Выше ^
+
+JETPACK_RESPRITE
+- EDIT: `code/game/objects/items/tanks/jetpack.dm` : Заменена функция по обновлению спрайтов на оверлеи
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -92,12 +103,12 @@ ID мода: CELADON_RESPRITE
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- `mod_celadon/_storge_icons/icons/resprite`
-- `mod_celadon/_storge_icons/icons/helms_snouted.dmi`
-- `mod_celadon/_storge_icons/icons/mask_snouted.dmi`
-- `mod_celadon/_storge_icons/icons`
-- `mod_celadon/_storge_icons/icons/items/clothing/head/helmet_celadon.dmi`
-- `mod_celadon/_storge_icons/icons/items/weapons/ammo/ammo_boxes.dmi`
+- `mod_celadon/_storage_icons/icons/resprite`
+- `mod_celadon/_storage_icons/icons/helms_snouted.dmi`
+- `mod_celadon/_storage_icons/icons/mask_snouted.dmi`
+- `mod_celadon/_storage_icons/icons`
+- `mod_celadon/_storage_icons/icons/items/clothing/head/helmet_celadon.dmi`
+- `mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo_boxes.dmi`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.

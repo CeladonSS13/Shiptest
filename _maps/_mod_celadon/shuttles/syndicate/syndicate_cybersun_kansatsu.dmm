@@ -34,9 +34,9 @@
 /area/ship/engineering)
 "bJ" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/head/helmet/space/syndicate/black/red,
+/obj/item/clothing/head/helmet/space/syndicate/white_red,
 /obj/item/tank/jetpack/oxygen/harness,
-/obj/item/clothing/suit/space/syndicate/black/red,
+/obj/item/clothing/suit/space/syndicate/white_red,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -952,9 +952,9 @@
 /area/ship/engineering)
 "vm" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/head/helmet/space/syndicate/black/red,
+/obj/item/clothing/head/helmet/space/syndicate/white_red,
 /obj/item/tank/jetpack/oxygen/harness,
-/obj/item/clothing/suit/space/syndicate/black/red,
+/obj/item/clothing/suit/space/syndicate/white_red,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
@@ -1319,9 +1319,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/engineering)
 "DL" = (
-/obj/structure/safe/floor{
-	number_of_tumblers = 3
-	},
+/obj/structure/safe/floor,
 /obj/item/melee/knife/combat,
 /obj/item/paper/crumpled{
 	default_raw_text = "Кажется, эти шприцы не то, чем кажутся.. Надо быть с ними поосторожнее.."

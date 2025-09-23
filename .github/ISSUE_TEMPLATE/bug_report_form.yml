@@ -1,0 +1,76 @@
+name: 🐞 Сообщить о баге
+description: Сообщить найденой ошибке в игре
+title: "[БАГ]: "
+type: Баг
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Называйте заголовок кратко и понятно:
+        ### ПРИМЕР: `[БАГ]: Автолат - Вызывает невыносимые лаги`
+        Это поможет быстрее передать сути проблемы.
+        Можно называть и так:
+        **`[БАГ]: Неработающий автолат - Создающий лаги`**
+        #### В игре есть кнопка «Bug Report» в правом верхнем углу игры, при её нажатии часть информации ниже заполнится автоматически.
+
+  - type: checkboxes
+    id: feature_scope
+    attributes:
+      label: "Категория бага"
+      description: "К какому типу контента относится проблема?"
+      options:
+        - label: "🧱 Код"
+        - label: "🎨 Спрайты"
+        - label: "🗺 Карты"
+
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: Описание бага
+      description: Четкое и понятное описание сути бага.
+      placeholder: Не работает автолат, вызывает лаги при попытке с ним взаимодействовать.
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug_reproduction
+    attributes:
+      label: Шаги воспроизведения
+      description: Опишите способ воспроизведения бага.
+      placeholder: |
+        1. Найти автолат
+        2. Открыть его меню, кликнуть ЛКМ
+        3. Получить лаги
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behaviour
+    attributes:
+      label: Ожидаемое поведение
+      description: Четкое и понятное описание того, что должно было произойти.
+      placeholder: Работающий автолат, без лагов.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Пример заполнения `Дополнительной информации`:
+        В чате при этом пишет что автолат занят, хотя на деле он не занят.
+        (Опционально скриншоты)
+        Версия клиента: `XXX.XXXX`
+        Round ID: `XXXXXX`
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Дополнительная информация
+      description: |
+        Укажите версию клиента, на которой произошёл баг. Указана в клиенте BYOND в меню 'About BYOND...'.
+        Round ID можно найти в игре в панели статуса, либо в канале дискорд сервера https://discord.gg/rxsggTJzY3 round-report
+      placeholder: |
+        Здесь можете описать любую дополнительную информацию, которая касается бага.
+        (Опционально скриншоты)
+        Версия клиента: XXX.XXXX
+        Round ID: XXXXXX

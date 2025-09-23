@@ -86,7 +86,7 @@ ID мода: CELADON_OUTFIT
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- `mod_celadon/_storge_icons/icons`
+- `mod_celadon/_storage_icons/icons`
 - `mods/_master_files/icons/obj/alien.dmi`
 - `icons/obj/clothing/belt_overlays.dmi`
 <!--

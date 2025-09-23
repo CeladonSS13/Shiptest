@@ -332,11 +332,11 @@
 
 /obj/item/book/granter/spell/random/Initialize()
 	. = ..()
-	// [CELADON-EDIT] - CELADON_RETURN_CONTENT_CLOWNS
-	// var/static/banned_spells = list(/obj/item/book/granter/spell/mimery_blockade)	// CELADON-EDIT - ORIGINAL
+// [CELADON-EDIT] - CELADON_RETURN_CONTENT_CLOWNS
+//	var/real_type = pick(subtypesof(/obj/item/book/granter/spell))	//
 	var/static/banned_spells = list(/obj/item/book/granter/spell/mimery_blockade, /obj/item/book/granter/spell/mimery_guns)
-	// [/CELADON-EDIT]
 	var/real_type = pick(subtypesof(/obj/item/book/granter/spell) - banned_spells)
+// [/CELADON-EDIT]
 	new real_type(loc)
 	return INITIALIZE_HINT_QDEL
 
@@ -450,7 +450,7 @@
 	desc = "A cook book that teaches you some more of the newest desserts. A best seller on Maxim."
 	crafting_recipe_types = list(
 		/datum/crafting_recipe/food/berrytart,
-		/datum/crafting_recipe/food/cocolavatart,
+		/datum/crafting_recipe/food/cocoalavatart,
 		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 		/datum/crafting_recipe/food/mimetart,
 		// /datum/crafting_recipe/food/clowncake,

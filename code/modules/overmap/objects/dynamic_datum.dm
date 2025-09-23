@@ -126,7 +126,7 @@
 				playsound(Mob, landing_sound, 50)
 
 
-/datum/overmap/dynamic/post_undocked(datum/overmap/dock_requester)
+/datum/overmap/dynamic/post_undocked(datum/overmap/dock_requester)	// [OVERWRITE] - FIXES_DOCKING - mod_celadon/fixes/code/dock_empty_space_fix.dm
 	start_countdown()
 
 /datum/overmap/dynamic/proc/start_countdown(_lifespan = 60 SECONDS, _color = null)
@@ -158,7 +158,10 @@
 		return FALSE //Dont fuck over stranded people
 
 	for(var/datum/mission/ruin/dynamic_mission in dynamic_missions)
-		if(dynamic_mission.active && !dynamic_mission.bound_left_location)
+		// [CELADON-EDIT] - FIXES_DYNAMIC_MISSION - Исправляем диспавн предмета миссии
+		// if(dynamic_mission.active && !dynamic_mission.bound_left_location)	// ORIGINAL
+		if(dynamic_mission.active && (!dynamic_mission.bound_left_location || dynamic_mission.can_complete()))
+		// [/CELADON-EDIT]
 			return FALSE //Dont fuck over people trying to complete a mission.
 
 	return TRUE
@@ -257,7 +260,7 @@
 		if(10, 11)
 			. += "[pick(GLOB.planet_prefixes)] [pick(GLOB.planet_names)]"
 		if(12)
-			. += "[pick(GLOB.adjectives)] [pick(GLOB.planet_names)]"
+			. += "[capitalize(pick(GLOB.adjectives))] [pick(GLOB.planet_names)]"
 
 /**
  * Load a level for a ship that's visiting the level.
@@ -285,6 +288,11 @@
 	var/datum/virtual_level/our_likely_vlevel = mapzone.virtual_levels[1]
 	if(istype(our_likely_vlevel) && selfloop)
 		our_likely_vlevel.selfloop()
+
+	for(var/obj/docking_port/stationary/port in reserve_docks)
+		if(port.roundstart_template)
+			port.name = "[name] auxillary docking location"
+			port.load_roundstart()
 
 	SEND_SIGNAL(src, COMSIG_OVERMAP_LOADED)
 	loading = FALSE
@@ -596,6 +604,9 @@
 	ambience_index = AMBIENCE_SPACE
 	light_range = 0
 	light_power = 0
+
+/area/overmap_encounter/planetoid/asteroid/explored
+	area_flags = VALID_TERRITORY
 
 /area/overmap_encounter/planetoid/gas_giant
 	name = "\improper Gas Giant"

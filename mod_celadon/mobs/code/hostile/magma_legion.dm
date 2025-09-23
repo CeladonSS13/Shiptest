@@ -2,7 +2,7 @@
 /mob/living/simple_animal/hostile/asteroid/hivelord/legion/magma
 	name = "magma legion"
 	desc = "You can still see what was once a human under the shifting mass of corruption."
-	icon = 'mod_celadon/_storge_icons/icons/mobs/magma_mobs/legion_magma.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/mobs/magma_mobs/legion_magma.dmi'
 	icon_state = "legion"
 	icon_living = "legion"
 	icon_aggro = "legion"
@@ -48,7 +48,7 @@
 /mob/living/simple_animal/hostile/asteroid/hivelordbrood/legion/magma
 	name = "legion"
 	desc = "One of many."
-	icon = 'mod_celadon/_storge_icons/icons/mobs/magma_mobs/legion_magma.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/mobs/magma_mobs/legion_magma.dmi'
 	icon_state = "legion_head"
 	icon_living = "legion_head"
 	icon_aggro = "legion_head"
@@ -65,7 +65,7 @@
 	attack_verb_continuous = "bites"
 	attack_verb_simple = "bite"
 	speak_emote = list("echoes")
-	attack_sound = 'mod_celadon/_storge_sounds/sound/effects/boom_small.ogg'
+	attack_sound = 'mod_celadon/_storage_sounds/sound/effects/boom_small.ogg'
 	throw_message = "is shrugged off by"
 	del_on_death = TRUE
 	stat_attack = SOFT_CRIT
@@ -93,7 +93,7 @@
 /obj/item/crusher_trophy/magma_skull/magma
 	name = "magma skull"
 	desc = "A dead and lifeless magma skull. Could be used in crafting."
-	icon = 'mod_celadon/_storge_icons/icons/mobs/magma_mobs/legion_magma.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/mobs/magma_mobs/legion_magma.dmi'
 	icon_state = "legion_skull"
 	denied_type = /obj/item/crusher_trophy/magma_skull/magma
 	bonus_value = 10

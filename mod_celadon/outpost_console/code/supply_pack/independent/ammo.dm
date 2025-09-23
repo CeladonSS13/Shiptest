@@ -18,7 +18,6 @@
 > 4.6x30
 > 5.7x39
 > 5.56 caseless
-> [*] .410
 > 12 Gauge
 > 5.56x42 (Hydra)
 > [-] 5.56x45 (G36)
@@ -33,6 +32,7 @@
 > ferro pellets
 > ferroslugs
 > ferro lances
+> .410
 
 Некоторые хорошие патроны были закомментированы и перенесены в отдельные фракционные карго.
 
@@ -314,6 +314,28 @@ MARK: 12 Gauge
 	contains = list(/obj/item/storage/box/techshot)
 
 /*
+MARK: .410
+*/
+
+/datum/supply_pack/faction/independent/ammo/a410_buckshot
+	name = ".410 Buckshot Box"
+	desc = "Contains a box with 60 buckshot cartridges of .410 caliber."
+	contains = list(/obj/item/storage/box/ammo/a410_ammo_box)
+	cost = 1000
+
+/datum/supply_pack/faction/independent/ammo/a410_flechette
+	name = ".410 Flechette Box"
+	desc = "Contains a box with 60 flechette rounds of .410 caliber."
+	contains = list(/obj/item/storage/box/ammo/a410_ammo_box/flechette)
+	cost = 1500
+
+/datum/supply_pack/faction/independent/ammo/a410_slug
+	name = ".410 Slug Box"
+	desc = "Contains a box with 60 slug cartridges of .410 caliber."
+	contains = list(/obj/item/storage/box/ammo/a410_ammo_box/slug)
+	cost = 2000
+
+/*
 MARK: 5.56x42
 */
 
@@ -433,16 +455,16 @@ MARK: .300
 MARK: 7.5x64
 */
 
-/datum/supply_pack/faction/independent/ammo/a75clip_box
-	name = "7.5x64mm Ammo Box Crate"
-	desc = "Contains a twenty-round 7.5x64mm ammo box for various sniper rifles such as the CM-F90 and the Boomslang series."
-	contains = list(/obj/item/storage/box/ammo/a75clip)
+/datum/supply_pack/faction/independent/ammo/a65clip_box
+	name = "6.5x57mm Ammo Box Crate"
+	desc = "Contains a twenty-round 6.5x57mm ammo box for various sniper rifles such as the CM-F90 and the Boomslang series."
+	contains = list(/obj/item/storage/box/ammo/a65clip)
 	cost = 400
 
 /datum/supply_pack/faction/independent/ammo/ammoa65clip_trackers
 	name = "6.5x57mm Tracker Shell Crate"
 	desc = "Contains a 10-round 6.5x57mm tracker box for various sniper rifles such as the CM-F90 and the Boomslang series."
-	contains = list(/obj/item/storage/box/ammo/a75clip/trac)
+	contains = list(/obj/item/storage/box/ammo/a65clip/trac)
 	cost = 300
 
 /*

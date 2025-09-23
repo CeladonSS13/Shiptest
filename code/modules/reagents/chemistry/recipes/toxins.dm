@@ -88,9 +88,11 @@
 	results = list(/datum/reagent/toxin/anacea = 3)
 	required_reagents = list(/datum/reagent/medicine/haloperidol = 1, /datum/reagent/impedrezene = 1, /datum/reagent/uranium/radium = 1)
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /datum/chemical_reaction/mimesbane
 	results = list(/datum/reagent/toxin/mimesbane = 3)
 	required_reagents = list(/datum/reagent/uranium/radium = 1, /datum/reagent/toxin/mutetoxin = 1, /datum/reagent/consumable/nothing = 1)
+// [CELADON-ADD]
 
 /datum/chemical_reaction/bonehurtingjuice
 	results = list(/datum/reagent/toxin/bonehurtingjuice = 5)

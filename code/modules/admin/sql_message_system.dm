@@ -35,7 +35,9 @@
 	if(!target_ckey)
 		target_ckey = admin_ckey
 	if(!text)
-		text = input(usr,"Write your [type]","Create [type]") as null|message
+		// [CELADON-EDIT] - OldCode: text = input(usr,"Write your [type]","Create [type]") as null|message
+		text = "\[Round ID: [GLOB.round_id]\] | " + input(usr,"Write your [type]","Create [type]") as null|message
+		// [/CELADON-EDIT]
 		if(!text)
 			return
 	if(!timestamp)

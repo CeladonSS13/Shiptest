@@ -12,7 +12,10 @@
 <!-- Название мода. Не важно на русском или на английском. -->
 ## Lazy Components
 
-ID мода: CELADON_COMPONENTS, CELADON_COMPONENTS_EMOTE
+ID модов: 
+CELADON_COMPONENTS
+CELADON_COMPONENTS_EMOTE
+CELADON_COMPONENTS_LOGS
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -35,7 +38,6 @@ ID мода: CELADON_COMPONENTS, CELADON_COMPONENTS_EMOTE
 Время для FOV
 `mod_celadon\_components\code\time.dm`
 
-
 ### Изменения *кор кода*
 
 - EDIT -> `code\modules\mob\living\carbon\emote.dm`
@@ -45,6 +47,11 @@ ID мода: CELADON_COMPONENTS, CELADON_COMPONENTS_EMOTE
 - ADD -> `code/modules/overmap/objects/outpost/outpost.dm` - запрет о пиратах
 - ADD -> `code/modules/donator/_donator.dm` - CELADON_DONATE
 - ADD -> `code/modules/client/verbs/ooc.dm` - CELADON_DONATE
+
+- EDIT -> `code/__HELPERS/_logging.dm` - хелперы для логирования экономики
+- ADD -> `code/_globalvars/logging.dm` - глобалвары для логирования экономики
+- ADD -> `code/game/world.dm` - чиним на правильное логирование в нужный файл экономику
+- ADD -> `code/modules/cargo/outpost_bounty_console.dm` - вводим логирование действий по покупке и снятию денег в фракционных консолях
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -96,7 +103,9 @@ ID мода: CELADON_COMPONENTS, CELADON_COMPONENTS_EMOTE
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- `mod_celadon/_storge_sounds/sound`
+- `mod_celadon/_storage_sounds/sound`
+
+- `mod_celadon/outpost_console/code/console.dm`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.
@@ -106,7 +115,7 @@ ID мода: CELADON_COMPONENTS, CELADON_COMPONENTS_EMOTE
 
 ### Авторы:
 
-Mirag1993, Voiko, RalseiDreemuurr, Ganza9991
+Mirag1993, Voiko, RalseiDreemuurr, Ganza9991, MrCat15352
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.

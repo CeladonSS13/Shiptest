@@ -198,7 +198,7 @@
 	STR.max_combined_w_class = 50
 	STR.max_items = 100
 	STR.set_holdable(list(
-		/obj/item/reagent_containers/food/snacks/grown,
+		/obj/item/food/grown,
 		/obj/item/seeds,
 		/obj/item/grown,
 		/obj/item/reagent_containers/honeycomb,
@@ -242,10 +242,12 @@
 	STR.set_holdable(list(
 			/obj/item/stack/sheet,
 			/obj/item/stack/tile/bronze
-			),
-		list(
-			/obj/item/stack/sheet/mineral/sandstone,
-			/obj/item/stack/sheet/mineral/wood
+// [CELADON-REMOVE] - DEBUG_QUALITY
+//			),
+//		list(
+//			/obj/item/stack/sheet/mineral/sandstone,
+//			/obj/item/stack/sheet/mineral/wood
+// [/CELADON-REMOVE]
 			))
 	STR.max_combined_stack_amount = 300
 
@@ -432,7 +434,7 @@
 		/obj/item/reagent_containers/blood,
 		/obj/item/reagent_containers/hypospray/medipen,
 		/obj/item/food/deadmouse,
-		/obj/item/reagent_containers/food/snacks/monkeycube,
+		/obj/item/food/monkeycube,
 		/obj/item/organ,
 		/obj/item/bodypart
 		))

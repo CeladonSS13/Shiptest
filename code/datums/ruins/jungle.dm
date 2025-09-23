@@ -70,10 +70,11 @@
 	description = "An abandoned airbase dating back to the ICW, partially scuttled, and moved right back into by the Ramzi Clique."
 	suffix = "jungle_bombed_starport.dmm"
 	ruin_tags = list(RUIN_TAG_HARD_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_HAZARDOUS, RUIN_TAG_LIVEABLE)
-	ruin_mission_types = list(
+/*	ruin_mission_types = list(
 		/datum/mission/ruin/signaled/kill/ramzi/airbase,
 		/datum/mission/ruin/icw_documents
 	)
+*/
 
 /datum/mission/ruin/signaled/kill/ramzi/airbase
 	mission_limit = 1
@@ -88,13 +89,6 @@
 	setpiece_item = /obj/item/folder/documents/syndicate/red
 	value = 1500
 
-/datum/map_template/ruin/jungle/medtech
-	name = "MedTech facility"
-	id = "medtech-facility"
-	description = "A MedTech pharmaceutical manufacturing plant where something went terribly wrong."
-	suffix = "jungle_medtech_outbreak.dmm"
-	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
-
 /datum/map_template/ruin/jungle/cavecrew
 	name = "Frontiersmen Cave"
 	id = "cavecrew"
@@ -105,3 +99,10 @@
 		/datum/mission/ruin/signaled/kill/frontiersmen,
 		/datum/mission/ruin/data_retrieval
 	)
+
+/datum/map_template/ruin/jungle/serene_hunts
+	name = "Serene Hunts"
+	id = "serene-hunts"
+	description = "Serene Outdoor's premier hunting resort and outlet. Well, it was until all the animals got out anyways."
+	suffix = "jungle_serene_hunts.dmm"
+	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE, RUIN_TAG_HAZARDOUS)

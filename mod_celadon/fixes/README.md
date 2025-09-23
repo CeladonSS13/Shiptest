@@ -12,7 +12,21 @@
 <!-- Название мода. Не важно на русском или на английском. -->
 ## Fixes - фиксы
 
-ID мода: CELADON_FIXES
+ID мода: 
+CELADON_FIXES
+CELADON_FIXES_BLOOD
+CELADON_FIXES_DEBUG_ROOM
+FIX_DISPLAY_TRUSTER
+FIXES_ICON_IN_HAND_MOB
+FIXES_ICON
+FIXES_SOUND
+MECH_WEAPON
+FIXES_CHAMELEON
+FIXES_GOLIATH_TENTACLES
+FIXES_SHIP_LOGIN_DOUBLE_NAME
+FIXES_WETHIDE
+FIXES_DRILLCLASS
+FIXES_MOTH_EATING_CLOTHING
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -25,6 +39,8 @@ ID мода: CELADON_FIXES
 Weebstick (Красная катана) теперь нельзя сломать, 
 вытащив меч при подготовке блинка. (Если что-то сломается всёравно, попросите 
 вызвать proc "unprime_unlock" у ближайшего админа)
+
+**Фикс бесконечного спавна мобов при добыче:** Исправляет критический баг с бесконечным спавном мобов при использовании industrial grade mining drill в миссиях. Добавляет проверки завершения миссии во всех ключевых точках логики спавна мобов, а также защиту от продолжения спавна при удалении или поломке бура. Дополнительно производит балансировку жил класса 4 для более справедливой сложности.
 
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
@@ -72,6 +88,12 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code/modules/research/rdconsole.dm` - Попытка изменить абьюз, когда игрок мог внести семена сколько угодно раз, пересобирая тупо консоль. Сделано через глобальный список.
 
+- EDIT: `code/modules/research/designs.dm` - [CELADON-EDIT] - CELADON_FIXES - Инициализация `obj/item/disk/design_disk/Initialize()` переписана на фиксированный индексный список слотов `1..max_blueprints` без ассоциативных ключей. `starting_blueprints` раскладываются по индексам, оставшиеся слоты `null`.
+- EDIT: `code/modules/research/rdconsole.dm` - [CELADON-EDIT] - CELADON_FIXES -
+  - `ui_designdisk()` теперь рисует строго по индексам 1..max_blueprints и нормализует длину `blueprints.len = max_blueprints`.
+  - `copy_design` записывает дизайн строго по индексу слота без сжатия списка.
+  - `clear_design` очищает либо все слоты, либо один слот установкой `null` по индексу; не используется `list -= value`.
+
 - ADD: `/obj/machinery/computer/telecomms/server/ui_interact` - Добавляем поддержку UTF-8
 - ADD: `/obj/machinery/computer/telecomms/monitor/ui_interact` - Добавляем поддержку UTF-8
 
@@ -87,6 +109,16 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code\modules\hydroponics\grown\replicapod.dm` - Исправление отобрежения ДНК на сканере
 
+MECH_WEAPON
+### Исправление бага перезарядки мех-оружия (SOB-3, BRM-6, SGL-6)
+**Проблема:** Оружие с `disabledreload = TRUE` (SOB-3 Clusterbang, BRM-6 Missile Rack, SGL-6 Flashbang) не могло быть перезаряжено из-за отсутствия переменной `projectiles`, что приводило к `projectiles_max = 0` и неправильной работе логики `ammo_resupply()`.
+**Решение:** Добавлены недостающие переменные `projectiles` для корректной работы автоматической инициализации `projectiles_max`.
+**Изменения:**
+- ADD: `code/game/mecha/equipment/weapons/weapons.dm`: `/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/breaching` -> `projectiles = 6` (с тегом `[CELADON-ADD]`)
+- ADD: `code/game/mecha/equipment/weapons/weapons.dm`: `/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/flashbang` -> `projectiles = 6` (с тегом `[CELADON-ADD]`)
+- ADD: `code/game/mecha/equipment/weapons/weapons.dm`: `/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/flashbang/clusterbang` -> `projectiles = 3` (с тегом `[CELADON-ADD]`)
+**Автор:** Турон/Mirag1993
+
 - EDIT: `code\modules\hydroponics\grown\replicapod.dm` - Исправлено появление людей из капусты
 
 - EDIT: `code/modules/mob/living/carbon/human/human_movement.dm` - Учитывается влияние обуви на гравитацию
@@ -97,14 +129,129 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code/modules/missions/outpost/research_mission.dm` - Окргуление координат
 
+- ADD: `code/datums/looping_sounds/machinery_sounds.dm` - Гравген во включённом состоянии жужжит.
+- ADD: `code/game/machinery/shuttle/ship_gravity.dm` - Гравген во включённом состоянии слегка светится, жужжит, а "интерфейс" светится в темноте. А также добавлено взаимодействие с ЕМП, при котором с 50% шансом он переключится.
+- ADD: `code/game/mecha/equipment/tools/mining_tools.dm` Мех с активной дрелью теперь копает камень.
+- ADD: `code/game/objects/structures/crates_lockers/closets.dm` Мехи теперь нельзя пихать в ящики.
+- ADD: `code/modules/projectiles/gun.dm` - Действие прицеливания теперь выдаётся только когда оружие держится в двух руках.
+- EDIT: `code/game/atoms_movable.dm` - В космосе теперь нельзя передвигаться за счёт взаимно пульнутых мобов
+
 - EDIT: `code/modules/clothing/head/helmet.dm` - Отображение оверлеев
 
 - EDIT: `code/modules/surgery/surgery_step.dm` - Исправление ухода операции в бесконечный цикл
 
 - EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Делаем так чтобы кепори могли брать мелкие предметы в клюв
 
-- EDIT: `code/datums/mapgen/planetary/waterGenerator.dm` : Убираем спавн лавы на водяной планете
+- EDIT, ADD: `code/modules/mob/living/blood.dm` : Вводим нормальный уровень для крови
+- EDIT, ADD: `code/game/machinery/iv_drip.dm` : Проверка крови у пациента
+- ADD: `code/modules/reagents/chemistry/holder.dm` : Вводим ограничения на шприцы, бикеры, капельницы
 
+- ADD: `code/game/objects/items/food/donut.dm` : Прописано название стандартной иконки, вместо надписи ERROR
+
+- ADD: `code/controllers/subsystem/overmap.dm` : Прерывает удаление планеты при начале ее генерации.
+
+FIX_DISPLAY_TRUSTER
+- EDIT: `code/modules/overmap/ships/controlled_ship_datum.dm` : Откатывает на прежнее отображение скорости, у нас другой вид перемещения корабликов
+
+FIXES_ICON_MOB_IN_HAND
+- EDIT: `code/__HELPERS/dynamic_human_icon_gen.dm` : Прописано название стандартной иконки, вместо надписи ERROR
+
+FIXES_ICON
+- EDIT: `code/modules/clothing/suits/toggles.dm` - СУКА ИЗ-ЗА ЭТОГО СЛОМАЛИСЬ ВСЕ КАПЮШОНЫ
+
+FIXES_SOUND
+- ADD:	`code/game/objects/items/melee/trickweapon.dm` - Баг звука энерго меча у пилы
+- EDIT:	`code/game/objects/items/melee/trickweapon.dm` - Новые звуки открытия/закрытия пилы
+
+FIXES_CHAMELEON
+- EDIT: `code/datums/mutations/chameleon.dm` - Чиним крит баг с вечной невидимостью
+
+FIXES_GOLIATH_TENTACLES
+- ADD: `code/modules/mob/living/simple_animal/hostile/mining_mobs/goliath.dm` : Добавляем прок и прверки на жизненный цикл тентакли и её создателя
+FIXES_SHIP_LOGIN_DOUBLE_NAME
+- ADD: `code/modules/mob/dead/new_player/ship_select.dm` : Поднимаем проверку на одинаковые имена ДО создания корабля, чтобы избежать спавна изолированного корабля
+
+FIXES_WETHIDE
+- EDIT: `code/modules/food_and_drinks/kitchen_machinery/smartfridge.dm` : Заменен устаревший метод `update_icon()` на `update_appearance()`
+- EDIT: `code/game/objects/items/stacks/sheets/leather.dm` : Исправлен неправильный путь класса. Изменено `/obj/item/stack/sheet/leather/wetleather/Initialize` на `/obj/item/stack/sheet/wethide/Initialize`. Это позволяет мокрой коже правильно добавить элемент `dryable` при инициализации
+
+FIXES_DRILLCLASS - **Фикс бесконечного спавна мобов при добыче**
+- ADD: `code/modules/mining/drill.dm` - Добавлена проверка завершения миссии в `process()` и вызов `stop_spawning()` в `Destroy()`
+- ADD: `code/modules/mining/ore_veins.dm` - Добавлены проверки завершения миссии в `begin_spawning()`, `process()` и `increment_wave_tally()`
+- ADD: `code/modules/missions/dynamic/signaled.dm` - Добавлен вызов `stop_spawning()` при завершении миссии в `mine_success()`
+- EDIT: `code/modules/mining/ore_veins.dm` - Добавлена проверка `QDELETED(our_drill)` в `increment_wave_tally()` для защиты от удаленных буров
+- EDIT: `code/modules/mining/ore_veins.dm` - Балансировка жил класса 4: `max_mobs = 4` (было 6), `spawn_time = 12 SECONDS` (было 8), `wave_length = 30 SECONDS` (было 45)
+
+FIXES_MOVE_DIAGONAL_MOBS
+- EDIT: `code/modules/mob/living/simple_animal/simple_animal.dm`
+
+FIXES_DEBUG_SUIT
+- ADD: `code/modules/clothing/spacesuits/hardsuit.dm` - Добавляем сообщение и звуки сьютам когда те переключают фонарики, в частности это для дебаг сьюта
+
+FIXES_MOTH_EATING_CLOTHING
+- EDIT: `code/modules/clothing/clothing.dm` - Фикс поедание молями еды в виде одежды. Убираем создание временных новых объектов еды, обращаемся напрямую к объектам еды
+
+FIXES_PIZZABOX_AND_PIZZA - фиксим коробки с пиццей и возможность расам есть любимое блюдо с их ингридиентами, даже если там есть то что они не любят
+- ADD: `code/modules/food_and_drinks/pizzabox.dm`
+- ADD: `code/datums/components/food/edible.dm`
+
+FIXES_NETWORK_NT
+- ADD: `code/modules/modular_computers/file_system/programs/ntdownloader.dm` - показываем информацию о отсутвующей сети
+
+FIXES_TESLA_ON_OVERMAP
+- EDIT: `code/modules/power/tesla/energy_ball.dm`
+
+FIXES_VORACIOUS
+- ADD: `code/datums/components/food/edible.dm` - добавляем проверку на квирк и ускоряем процес поедания в 2 раза
+
+FIXES_JUKEBOX
+- EDIT: `code/controllers/subsystem/jukeboxes.dm` - правим нахождение звука и типа, для работы muz-tv. Попытка исправить просачивание музыки сквозь EDGE
+
+CELADON_FIXES_DEBUG_ROOM
+- EDIT: `code/modules/awaymissions/super_secret_room.dm` - фиксит сообщения для чата
+- ADD: `code/modules/awaymissions/signpost.dm` - фиксит лестницу, тепешает на координаты 139, 31, 3
+
+FIXES_AMBIENT_NO_EARS
+- ADD: `code/controllers/subsystem/ambience.dm` - Проверка на уши для эмбиента
+
+FIXES_REPAIR_BONE_COMPOUND
+- EDIT: `code/modules/surgery/bone_fractures.dm` - Исправил неверное название прока
+
+FIXES_SPAWN_SHIP
+- EDIT: `code/controllers/subsystem/overmap.dm` - Изменен порядок приоритетов, теперь space_spawn имеет выше приоритет над позицией
+
+CRUSHER_MARK_ON_MOBS
+- EDIT: `code/datums/status_effects/debuffs.dm` - изменения от Ганзы
+- ADD: `code/datums/status_effects/debuffs.dm` - добавляем проверку на труп для метки крашера
+- REMOVE: `code/modules/mining/equipment/kinetic_crusher.dm` - изменения от Ганзы
+- ADD: `code/modules/mining/equipment/kinetic_crusher.dm` - добавляем проверку на труп для метки крашера
+
+FIXES_JELLY_BLOOD
+- EDIT, ADD: `code/modules/mob/living/carbon/human/species_types/jellypeople.dm` - Фиксим уровень крови здоровья
+
+FIXES_MOB_SPAWNER
+- REMOVE: `code/modules/mining/ore_veins.dm` - убраны селинги из спавнера Т3 бура в джунглях
+
+FIXES_CALL_TO_SHIP
+- ADD: `code/game/machinery/hologram.dm` - добавлено возвращение TRUE, чтобы интерфейс обновлялся
+
+FIXES_ICON_OUT_OF_BORDER
+- ADD, EDIT: `code/datums/components/storage/ui.dm` - чиним позиционирование иснтрументов в контейнерах
+- ADD: `code/datums/components/storage/concrete/_concrete.dm`
+
+FIXES_MODSUITS
+- ADD, REMOVE, EDIT: `code/modules/mod/modules/modules_antag.dm` - Выпиливаем неиспользуемые и сломанные опции модов
+
+FIXES_DYNAMIC_MISSION
+- EDIT: `code/modules/overmap/objects/dynamic_datum.dm` - Изменена логика в функции can_reset_dynamic(). Теперь объект не будет диспавниться если миссия все еще может быть завершена
+
+FIXES_OFFERING_EFFECTS
+- ADD: `code/datums/status_effects/neutral.dm`
+- EDIT: `code/modules/mob/living/carbon/inventory.dm`
+
+FIXES_SPAWNERS_ON_SPACE - Проверка на космотурф
+- ADD: `code/game/objects/effects/spawners/mobspawner.dm`
+- ADD: `code/modules/events/spacevine.dm`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -116,6 +263,11 @@ Weebstick (Красная катана) теперь нельзя сломать
 ### Оверрайды
 
 - `mod_celadon/fixes/code/research_mission.dm` - вроде перезаписывает
+
+dock_empty_space_fix.dm:
+- `Dock(datum/overmap/to_dock, datum/docking_ticket/ticket, force = FALSE)`
+- `dock_in_empty_space()`
+- `post_undocked(datum/overmap/dock_requester)`
 
 <!-- fax_name -->
 <!-- 
@@ -157,6 +309,30 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 
 RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFaceLesS, Burbonchik, MrRomainzZ, Molniz, Redwizz, Sjerty, Garomt, Ganza9991, KOCMOHABT
+
+- Автор фикса дисков дизайнов: Турон/Mirag1993
+- Автор фикса бесконечного спавна мобов: Турон/Mirag1993
+- Автор фиксов производительности консолей: AI Assistant
+
+### Исправления производительности консолей
+
+**Проблема**: При открытии консоли карго или консоли заданий аванпоста FPS падал до 2 битов/сек, что делало игру практически неиграбельной.
+
+**Причина**: 
+- Консоль заданий аванпоста сканировала все предметы на площадке **каждый тик** (10 раз в секунду)
+- Консоль карго генерировала данные поставок **каждый тик** в `ui_static_data()`
+
+**Решение**:
+- ADD: `code/modules/cargo/outpost_bounty_console.dm` - Добавлен кулдаун в 1 секунду для кэширования экспортов
+- ADD: `code/modules/cargo/console.dm` - Добавлен кулдаун в 5 секунд для генерации данных поставок
+- EDIT: `code/modules/cargo/outpost_bounty_console.dm` - Кнопка "Refresh" принудительно обновляет кэш
+
+**Результат**: Значительное улучшение производительности при работе с консолями.
+
+**Теги изменений**:
+- `[CELADON-ADD]` - новые функции
+- `[CELADON-EDIT]` - изменения существующего кода  
+- `[CELADON-FIXES]` - исправления багов
 
 <!--
   Здесь находится твой никнейм

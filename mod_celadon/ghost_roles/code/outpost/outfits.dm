@@ -152,7 +152,7 @@
 	l_pocket = /obj/item/bikehorn
 	backpack_contents = list(
 		/obj/item/reagent_containers/spray/waterflower = 1,
-		/obj/item/reagent_containers/food/snacks/grown/banana = 1,
+		/obj/item/food/grown/banana = 1,
 		/obj/item/instrument/bikehorn = 1,
 		/obj/item/spacecash/bundle/c100 = 3
 		)
@@ -215,13 +215,14 @@
 /datum/outfit/outpost/medic
 	name = "Outpost Medical Doctor"
 
+	head = /obj/item/clothing/head/beret/dominia/medical
 	belt = /obj/item/pda/medical
 	ears = /obj/item/radio/headset/headset_med
 	uniform = /obj/item/clothing/under/rank/medical/doctor/blue
 	shoes = /obj/item/clothing/shoes/sneakers/white
 	suit =  /obj/item/clothing/suit/apron/surgical
 	id = /obj/item/card/id/elysium_medic
-	back = /obj/item/storage/backpack/duffelbag/med
+	back = /obj/item/storage/backpack/medic
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic = 1,
 							/obj/item/storage/backpack/medic = 1,
 							/obj/item/storage/backpack/satchel/med = 1,
@@ -238,8 +239,6 @@
 	..()
 	if(visualsOnly)
 		return
-	var/list/possible_boxes = subtypesof(/obj/item/storage/box/ingredients)
-	var/chosen_box = pick(possible_boxes)
-	var/obj/item/storage/box/I = new chosen_box(src)
+	var/obj/item/storage/box/medigels/I = new(src)
 	H.equip_to_slot_or_del(I, ITEM_SLOT_BACKPACK)
 

@@ -77,6 +77,13 @@
 
 	if(num_current == num_wanted)
 		SEND_SIGNAL(src, COMSIG_DRILL_SAMPLES_DONE)
+		say("Required samples gathered, shutting down!")
+		if(active)
+			stop_mining()
+		// [CELADON-ADD] - CELADON_FIXES - FIXES_DRILLCLASS - Останавливаем спавн мобов в жиле при завершении миссии
+		if(our_vein?.currently_spawning)
+			our_vein.stop_spawning()
+		// [/CELADON-ADD]
 
 /obj/machinery/drill/mission/ruin
 	name = "industrial grade mining drill"

@@ -317,6 +317,7 @@
 	icon_state = "wooden_chair_wings_toppled"
 	origin_type = /obj/structure/chair/wood/wings
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/structure/chair/mime
 	name = "invisible chair"
 	desc = "The mime needs to sit down and shut up."
@@ -332,7 +333,7 @@
 
 /obj/structure/chair/mime/post_unbuckle_mob(mob/living/M)
 	M.pixel_y -= 5
-
+// [/CELADON-ADD]
 
 /obj/structure/chair/plastic
 	icon_state = "plastic_chair"

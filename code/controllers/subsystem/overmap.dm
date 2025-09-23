@@ -236,9 +236,14 @@ SUBSYSTEM_DEF(overmap)
 	if(our_spawn_location)
 		system_to_spawn_in = our_spawn_location.current_overmap
 
-	if(!ship_loc || template.space_spawn)	// [CELADON-EDIT] Изменено, так как корабли с параметром space-spawn: true всё равно спавнились на аванпосту. OldCode: if(!ship_loc && template.space_spawn)
+	// [CELADON-EDIT] - FIXES_SPAWN_SHIP - Изменено, так как корабли с параметром space-spawn: true всё равно спавнились на аванпосту. Изменен порядок приоритетов
+	// if(!ship_loc && template.space_spawn)
+	// 	ship_loc = null
+	// else	// ORIGINAL
+	if(template.space_spawn)
 		ship_loc = null
-	else
+	else if(!ship_loc)
+	// [/CELADON-EDIT]
 		ship_loc = SSovermap.outposts[1]
 
 	ship_spawning = TRUE
@@ -335,7 +340,7 @@ SUBSYSTEM_DEF(overmap)
 	///the tileset we use, just the icon we force tokens to use, override only if nessary
 	// [CELADON-EDIT] - CELADON_OVERMAP
 	// var/tileset = 'icons/misc/overmap.dmi'	// CELADON-EDIT - ORIGINAL
-	var/tileset = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap.dmi'
+	var/tileset = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap.dmi'
 	// [/CELADON-EDIT]
 
 	///This is the flag that makes it so all overmap objects use the same uniform color above. If false, tokens use their default colors
@@ -596,6 +601,9 @@ SUBSYSTEM_DEF(overmap)
 		QUADRANT_MAP_SIZE
 	)
 
+	// [CELADON-ADD] - CELADON_FIXES
+	dynamic_datum.stop_countdown()
+	// [/CELADON-ADD]
 	vlevel.reserve_margin(QUADRANT_SIZE_BORDER)
 
 	mapgen.pre_generation(dynamic_datum)
@@ -729,7 +737,7 @@ SUBSYSTEM_DEF(overmap)
 	// 		secondary_docking_turf.y+RESERVE_DOCK_MAX_SIZE_SHORT+RESERVE_DOCK_DEFAULT_PADDING,
 	// 		secondary_docking_turf.z
 	// 	)
-
+	//
 	// 	var/obj/docking_port/stationary/tertiary_dock = new(tertiary_docking_turf)
 	// 	tertiary_dock.dir = NORTH
 	// 	tertiary_dock.name = "[encounter_name] docking location #3"
@@ -739,7 +747,7 @@ SUBSYSTEM_DEF(overmap)
 	// 	tertiary_dock.dwidth = 0
 	// 	tertiary_dock.adjust_dock_for_landing = TRUE
 	// 	docking_ports += tertiary_dock
-
+	//
 	// 	var/obj/docking_port/stationary/quaternary_dock = new(quaternary_docking_turf)
 	// 	quaternary_dock.dir = NORTH
 	// 	quaternary_dock.name = "[encounter_name] docking location #4"
@@ -749,6 +757,13 @@ SUBSYSTEM_DEF(overmap)
 	// 	quaternary_dock.dwidth = 0
 	// 	quaternary_dock.adjust_dock_for_landing = TRUE
 	// 	docking_ports += quaternary_dock
+	//
+	//else // we've spawned a ruin and are now checking for any docks that it has
+	//	for(var/obj/docking_port/stationary/port as obj in SSshuttle.stationary)
+	//		if(port.virtual_z() == vlevel.id)
+	//			if(port in docking_ports)
+	//				continue
+	//			docking_ports += port
 	// [/CELADON-REMOVE]
 
 	var/list/datum/weakref/spawned_mission_pois = list()
@@ -1136,39 +1151,6 @@ SUBSYSTEM_DEF(overmap)
 	has_outpost = TRUE
 	can_be_selected_randomly = FALSE
 	encounters_refresh = TRUE
-
-/datum/overmap_star_system/shiptest/New(generate_now=TRUE)
-	//1/10 rounds
-	if(!prob(10))
-		return ..()
-
-	//Small easter egg so all these palletes doesn't go to waste in the event mines
-	var/list/possible_overmaps = subtypesof(/datum/overmap_star_system)
-
-	//check if can_be_selected_randomly is false, if so remove them
-	for(var/datum/overmap_star_system/interating_overmap as anything in possible_overmaps)
-		if(!interating_overmap.can_be_selected_randomly)
-			possible_overmaps -= interating_overmap
-
-	var/datum/overmap_star_system/picked_overmap = pick(possible_overmaps)
-	if(!picked_overmap)
-		return ..() //something went wrong but we ball
-
-	//main colors, used for dockable terrestrials, and background
-	primary_color = picked_overmap.primary_color
-	secondary_color = picked_overmap.secondary_color
-
-	//hazard colors, used for the overmap hazards and sun
-	hazard_primary_color = picked_overmap.hazard_primary_color
-	hazard_secondary_color = picked_overmap.hazard_secondary_color
-
-	//structure colors, used for ships and outposts/colonies
-	primary_structure_color = picked_overmap.primary_structure_color
-	secondary_structure_color = picked_overmap.secondary_structure_color
-
-	override_object_colors = TRUE
-	overmap_icon_state = picked_overmap.overmap_icon_state
-	return ..()
 
 /datum/overmap_star_system/shiptest/create_map()
 	. = ..()

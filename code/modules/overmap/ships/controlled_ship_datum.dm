@@ -133,7 +133,7 @@
  * * creation_template - The template used to create the ship.
  * * target_port - The port to dock the new ship to.
  */
-/datum/overmap/ship/controlled/Initialize(position, system_spawned_in, datum/map_template/shuttle/creation_template, create_shuttle = TRUE)
+/datum/overmap/ship/controlled/Initialize(position, system_spawned_in, datum/map_template/shuttle/creation_template, create_shuttle = TRUE, outpost_special_docking_perms)
 	. = ..()
 	if(creation_template)
 		source_template = creation_template
@@ -153,6 +153,8 @@
 			refresh_engines()
 		default_sensor_range = source_template.def_sensor_range
 		ship_account = new(name, source_template.starting_funds)
+		if(outpost_special_docking_perms)
+			outpost_special_dock_perms = TRUE
 
 	else
 		stack_trace("Attempted to create a controlled ship without a template!")
@@ -166,6 +168,9 @@
 #endif
 	SSovermap.controlled_ships += src
 	current_overmap.controlled_ships += src
+
+	GLOB.ship_select_tgui?.update_static_data_for_all_viewers()
+	GLOB.crew_manifest_tgui?.update_static_data_for_all_viewers()
 
 	// [CELADON-ADD] - CELADON_COMPONENT - Добавляем оповещении о пиратах
 	if(istype(get_faction(), /datum/faction/pirate))
@@ -213,6 +218,8 @@
 		// it handles removal itself
 		qdel(applications[a_key])
 	LAZYCLEARLIST(applications)
+	GLOB.ship_select_tgui?.update_static_data_for_all_viewers()
+	GLOB.crew_manifest_tgui?.update_static_data_for_all_viewers()
 	// set ourselves to ownerless to unregister signals
 	set_owner_mob(null)
 
@@ -284,7 +291,7 @@
 /**
  * Docks to an empty dynamic encounter. Used for intership interaction, structural modifications, and such
  */
-/datum/overmap/ship/controlled/proc/dock_in_empty_space()
+/datum/overmap/ship/controlled/proc/dock_in_empty_space()	// [OVERWRITE] - FIXES_DOCKING -mod_celadon/fixes/code/dock_empty_space_fix.dm
 	var/datum/overmap/dynamic/empty/empty_space = locate() in current_overmap.overmap_container[x][y]
 	if(!empty_space)
 		empty_space = new(list("x" = x, "y" = y), current_overmap)
@@ -309,8 +316,10 @@
 		// thrust_used += real_engine.burn_engine(percentage, seconds_per_tick)
 
 	thrust_used = thrust_used / (shuttle_port.turf_count * 100)
+// [CELADON-EDIT] - CELADON FIXES | FIX_DISPLAY_TRUSTER
+	//est_thrust = thrust_used * 100 / (percentage * seconds_per_tick) //cheeky way of rechecking the thrust, check it every time it's used // ORIGINAL
 	est_thrust = thrust_used / percentage * 100 //cheeky way of rechecking the thrust, check it every time it's used
-
+// [/CELADON-EDIT]
 	return thrust_used
 
 /**
@@ -322,8 +331,10 @@
 		real_engine.update_engine()
 		if(real_engine.enabled)
 			calculated_thrust += real_engine.thrust
+// [CELADON-EDIT] - CELADON FIXES | FIX_DISPLAY_TRUSTER
+	//est_thrust = calculated_thrust / (shuttle_port.turf_count * 100) * 1 SECONDS / SSphysics.wait	// ORIGINAL
 	est_thrust = calculated_thrust / (shuttle_port.turf_count * 100)
-
+// [/CELADON-EDIT]
 /**
  * Calculates the average fuel fullness of all engines.
  */
@@ -401,6 +412,14 @@
 	job_holder_refs[human_job] += WEAKREF(H)
 	if(H.account_id)
 		crew_bank_accounts += WEAKREF(H.get_bank_account())
+
+	GLOB.crew_manifest_tgui?.update_static_data_for_all_viewers()
+	GLOB.ship_select_tgui?.update_static_data_for_all_viewers()
+
+/datum/overmap/ship/controlled/proc/manifest_remove(mob/living/carbon/human/removed)
+	manifest -= removed.real_name
+	GLOB.crew_manifest_tgui?.update_static_data_for_all_viewers()
+	GLOB.ship_select_tgui?.update_static_data_for_all_viewers()
 
 /**
  * adds a mob's real name to a crew's guestbooks
@@ -519,13 +538,28 @@
 
 /datum/overmap/ship/controlled/proc/attempt_key_usage(mob/user, obj/item/key/ship/shipkey, obj/machinery/computer/helm/target_helm)
 	user.changeNext_move(CLICK_CD_MELEE)
+	// [CELADON-ADD] - Well Done!
+	if(shipkey == target_helm && shipkey.well_done)
+		playsound(user.loc, 'sound/machines/click.ogg', 20)
+		return
+	// [/CELADON-ADD]
 
 	if(shipkey.master_ship != src)
 		target_helm?.say("Invalid shipkey usage attempted, forcibly locking down.")
 		helm_locked = TRUE
 	else
 		helm_locked = !helm_locked
-		playsound(src, helm_locked ? 'sound/machines/button4.ogg' : 'sound/machines/button3.ogg')
+		// [CELADON-ADD] - Well Done - Дифферинцируем по звуку сигналку и ключи
+		if(shipkey == target_helm)
+			if(helm_locked)
+				playsound(user.loc, 'sound/machines/beep.ogg', 20, FALSE)
+				sleep(1)
+				playsound(user.loc, 'sound/machines/beep.ogg', 20, FALSE)
+			else
+				playsound(user.loc, 'sound/machines/beep.ogg', 20, FALSE)
+		else
+		// [/CELADON-ADD]
+			playsound(user.loc, helm_locked ? 'sound/machines/button4.ogg' : 'sound/machines/button3.ogg',20)
 
 	for(var/obj/machinery/computer/helm/helm as anything in helms)
 		SStgui.close_uis(helm)
@@ -535,10 +569,17 @@
 /datum/overmap/ship/controlled/alter_token_appearance()
 	if(!source_template)
 		return ..()
+	// [CELADON-EDIT] - REMOVE_INFO_CLASSSHIP - Убираем отображение класса корабля при шифт клике
+	/*
 	desc = {"[span_boldnotice("IFF is reporting the following:")]
 	[span_bold("Affiliation: ")][source_template.faction.name]
 	[span_bold("Class: ")][source_template.short_name]
 	[span_bold("Velocity: ")][round(get_speed(), 0.1)] Gm/s"}
+	*/
+	desc = {"[span_boldnotice("IFF is reporting the following:")]
+	[span_bold("Affiliation: ")][source_template.faction.name]
+	[span_bold("Velocity: ")][round(get_speed(), 0.1)] Gm/s"}
+	// [/CELADON-EDIT]
 	return ..()
 
 //when bluespace jumping gets moved to its own machine make this NOT look for non-vewscreen helms
@@ -587,6 +628,10 @@
 	)
 	var/random_color = TRUE //if the key uses random coloring (logic stolen from screwdriver.dm)
 	slot_flags = ITEM_SLOT_NECK
+	// [CELADON-ADD] - Well Done?
+	var/well_done = FALSE
+	// [/CELADON-ADD]
+
 
 /obj/item/key/ship/Initialize(mapload, datum/overmap/ship/controlled/master_ship)
 	. = ..()
@@ -613,9 +658,18 @@
 	return ..()
 
 /obj/item/key/ship/attack_self(mob/user)
+	// [CELADON-ADD] - Well Done cooldown
+	if(user.next_move > world.time)
+		return
+	// [/CELADON-ADD]
 	if(!master_ship || !Adjacent(user))
 		return ..()
 
 	master_ship.attempt_key_usage(user, src, src) // hello I am a helm console I promise
 	return TRUE
+
+// [CELADON-ADD] - Well Done act
+/obj/item/key/ship/microwave_act(obj/machinery/microwave/M)
+	well_done = TRUE
+// [/CELADON-ADD]
 

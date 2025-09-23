@@ -134,8 +134,5 @@
 	)
 
 /datum/biome/cave/waterplanet/fault
-	// [CELADON-EDIT] - CELADON_FIXES - Убираем лаву с генерации водяной планеты
-	// open_turf_types = list(/turf/open/lava = 5, /turf/open/water/stormy_planet_underground = 1)	// ORIGINAL
-	open_turf_types = list(/turf/open/water/stormy_planet_underground = 1)
-	// [/CELADON-EDIT]
+	open_turf_types = list(/turf/open/lava = 5, /turf/open/water/stormy_planet_underground = 1)
 	mob_spawn_chance = 0
