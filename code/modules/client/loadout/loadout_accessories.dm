@@ -151,7 +151,7 @@
 	slot = null
 
 /datum/gear/accessory/stethoscope
- display_name = "stethoscope"
+  display_name = "stethoscope"
 	path = /obj/item/clothing/neck/stethoscope
 	allowed_roles = list("Medical Doctor", "Chief Medical Officer")
 
