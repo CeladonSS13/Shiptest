@@ -1231,39 +1231,45 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			// dat += "<tr><td colspan=4><center><b>Current loadout usage: [length(equipped_gear)]/[CONFIG_GET(number/max_loadout_items)]</b> \[<a href='byond://?_src_=prefs;preference=gear;clear_loadout=1'>Clear Loadout</a>\] | \[<a href='byond://?_src_=prefs;preference=gear;toggle_loadout=1'>Toggle Loadout</a>\]</center></td></tr>"
 			dat += "<tr><td colspan=4><center><b>Current loadout usage: [length(equipped_gear)]/[max_loadout_items]</b> \[<a href='byond://?_src_=prefs;preference=gear;clear_loadout=1'>Clear Loadout</a>\] | \[<a href='byond://?_src_=prefs;preference=gear;toggle_loadout=1'>Toggle Loadout</a>\]</center></td></tr>"
 			// [/CELADON-EDIT]
-			dat += "<tr><td colspan=4><center><b>"
+			
 
-			var/firstcat = 1
-			for(var/category in GLOB.loadout_categories)
-				if(firstcat)
-					firstcat = 0
-				else
-					dat += " |"
-				if(category == gear_tab)
-					dat += " [span_linkoff("[category]")] "
-				else
-					dat += " <a href='byond://?_src_=prefs;preference=gear;select_category=[category]'>[category]</a> "
-			dat += "</b></center></td></tr>"
+			
+			// Древовидная навигация
+			dat += "<tr><td colspan=4>"
+			dat += generate_loadout_tree_navigation(gear_tab)
+			dat += "</td></tr>"
 
 			var/datum/loadout_category/LC = GLOB.loadout_categories[gear_tab]
+			if(!LC)
+				// Если категория не найдена, выбираем первую доступную
+				for(var/cat_name in GLOB.loadout_categories)
+					gear_tab = cat_name
+					LC = GLOB.loadout_categories[gear_tab]
+					break
+			
 			dat += "<tr><td colspan=3><hr></td></tr>"
 			dat += "<tr><td colspan=3><b><center>[LC.category]</center></b></td></tr>"
 			dat += "<tr><td colspan=3><hr></td></tr>"
 
 			dat += "<tr><td colspan=3><hr></td></tr>"
-			// [CELADON-EDIT] - CELADON_QOL
-			// dat += "<tr><td><b>Name</b></td>" // CELADON-EDIT - ORIGINAL
-			dat += "<tr><td align='middle'><b>Name</b></td>"
-			// [/CELADON-EDIT]
+			dat += "<tr><td><b>Name</b></td>"
 			dat += "<td><b>Restricted Jobs</b></td>"
-			dat += "<td><b>Description</b></td>"
+			dat += "<td><b>Description</b></td></tr>"
 			dat += "<tr><td colspan=3><hr></td></tr>"
 			for(var/gear_name in LC.gear)
 				var/datum/gear/G = LC.gear[gear_name]
-				// [CELADON-EDIT] - CELADON_QOL
-				// dat += "<tr style='vertical-align:top;'><td width=20%><a style='white-space:normal;' [(G.display_name in equipped_gear) ? "class='linkOn' " : ""]href='?_src_=prefs;preference=gear;toggle_gear=[G.display_name]'>[G.display_name]</a></td><td>" // CELADON-EDIT - ORIGINAL
-				dat += "<tr style='vertical-align:top;'><td align='middle' width=20%><a style='white-space:normal;' [(G.display_name in equipped_gear) ? "class='linkOn' " : ""]href='byond://?_src_=prefs;preference=gear;toggle_gear=[G.display_name]'>[G.display_name]</a><br/><img src=data:image/jpeg;base64,[G.base64icon] class='loadoutPreview'><hr></td><td>"
-				// [/CELADON-EDIT]
+				var/is_equipped = (G.display_name in equipped_gear)
+				
+				dat += "<tr style='vertical-align:top; [is_equipped ? "background: #2a4a2a;" : ""]'>"
+				
+				// Колонка с предметом
+				dat += "<td align='middle' width='20%'>"
+				dat += "<a style='white-space:normal;' [(G.display_name in equipped_gear) ? "class='linkOn' " : ""]href='byond://?_src_=prefs;preference=gear;toggle_gear=[G.display_name]'>[G.display_name]</a><br/>"
+				dat += "<img src='data:image/jpeg;base64,[G.base64icon]' class='loadoutPreview'><hr>"
+				dat += "</td>"
+				
+				// Колонка с профессиями
+				dat += "<td>"
 				if(G.allowed_roles)
 					dat += "<font size=2>"
 					var/list/allowedroles = list()
@@ -1271,7 +1277,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						allowedroles += role
 					dat += english_list(allowedroles, null, ", ")
 					dat += "</font>"
-				dat += "</td><td><font size=2><i>[G.description]</i></font></td></tr>"
+				dat += "</td>"
+				
+				// Колонка с описанием
+				dat += "<td><font size=2><i>[G.description]</i></font></td>"
+				
+				dat += "</tr>"
+
 			dat += "</table>"
 
 		if (3) // Game Preferences

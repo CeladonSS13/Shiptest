@@ -135,6 +135,7 @@ GLOBAL_LIST_EMPTY(loadout_parent_categories) // Родительские кат�
 	GLOB.loadout_parent_categories["Accessories"] = new /datum/loadout_category("Аксессуары", "", "icons/obj/clothing/accessories.dmi", 2)
 	GLOB.loadout_parent_categories["Equipment"] = new /datum/loadout_category("Снаряжение", "", "icons/obj/tools.dmi", 3)
 	GLOB.loadout_parent_categories["Personal"] = new /datum/loadout_category("Личное", "", "icons/obj/toy.dmi", 4)
+
 ///Получаем информацию о категории
 /proc/get_category_info(category)
 	var/list/category_mapping = list(
@@ -197,3 +198,25 @@ GLOBAL_LIST_EMPTY(loadout_parent_categories) // Родительские кат�
 ///Компаратор для сортировки категорий
 /proc/cmp_loadout_category_order(list/a, list/b)
 	return a[1] - b[1]
+
+///Генерирует древовидную навигацию для loadout
+/proc/generate_loadout_tree_navigation(current_tab)
+	var/list/dat = list()
+	
+	dat += "<center><b>"
+	var/firstcat = 1
+	for(var/category in GLOB.loadout_categories)
+		if(firstcat)
+			firstcat = 0
+		else
+			dat += " | "
+		if(category == current_tab)
+			dat += "<font color='#90EE90'><b>[category]</b></font>"
+		else
+			dat += "<a href='byond://?_src_=prefs;preference=gear;select_category=[category]'>[category]</a>"
+	dat += "</b></center>"
+	return dat.Join()
+
+///Генерирует CSS стили для древовидной навигации
+/proc/generate_loadout_tree_styles()
+	return ""
