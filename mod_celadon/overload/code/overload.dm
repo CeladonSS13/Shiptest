@@ -54,7 +54,7 @@
 /proc/check_overload_protection(mob/living/carbon/C)
 	var/prot
 	var/obj/item/clothing/shoes/magboots/boots = C.get_item_by_slot(ITEM_SLOT_FEET)
-	if(istype(boots) && boots.magpulse)
+	if((istype(boots) && boots.magpulse) || HAS_TRAIT(C, TRAIT_NOSLIPWATER))
 		prot |= OVERLOAD_PROTECT_THROW
 	if(C.buckled && istype(C.buckled, /obj/structure/chair/comfy/shuttle))
 		prot |= OVERLOAD_PROTECT_THROW | OVERLOAD_PROTECT_EFFECTS
