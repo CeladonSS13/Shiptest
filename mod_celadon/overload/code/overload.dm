@@ -52,7 +52,7 @@
 // MARK: Функции
 
 /proc/check_overload_protection(mob/living/carbon/C)
-	var/prot
+	var/prot = 0
 	var/obj/item/clothing/shoes/magboots/boots = C.get_item_by_slot(ITEM_SLOT_FEET)
 	if((istype(boots) && boots.magpulse) || HAS_TRAIT(C, TRAIT_NOSLIPWATER))
 		prot |= OVERLOAD_PROTECT_THROW
@@ -73,8 +73,6 @@
 	if(disgust_amount > 0 && world.time - ship.last_overload_throw > OVERLOAD_COOLDOWN && !C.anchored && !C.buckled && !(is_protected & OVERLOAD_PROTECT_THROW))
 		ship.last_overload_throw = world.time
 		C.throw_at(get_ranged_target_turf(C, angle2dir(ang), range = throw_range), range = throw_range, speed = throw_speed, thrower = C)
-	else if(prob(5))
-		to_chat(C, span_warning("Перегрузка давит на вас, однаконо вы остаетесь на месте."))
 
 #undef OVERLOAD_FACTOR
 #undef OVERLOAD_CHANCE
