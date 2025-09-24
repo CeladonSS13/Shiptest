@@ -117,7 +117,7 @@
 
 /obj/item/clothing/suit/toggle/blackhs
 	name = "black replica greatcoat"
-	desc = "This is replica, a greatcoat HOS enhanced with a special style for those with a commanding presence."
+	desc = "A replica HoS greatcoat, enhanced with a special style for those with a commanding presence."
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suits.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
 	icon_state = "blackhs"
