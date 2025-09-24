@@ -962,27 +962,26 @@
 		BASIC_MINER_SKIN = list(RESKIN_ICON_STATE = "miner_plushie", RESKIN_ITEM_STATE = "miner_plushie"),
 		RED_MINER_SKIN = list(RESKIN_ICON_STATE = "bloody_miner_plushie", RESKIN_ITEM_STATE = "bloody_miner_plushie")
 	)
+	unique_reskin_changes_base_icon_state = TRUE
+	unique_reskin_changes_inhand = TRUE
+	unique_reskin_changes_name = TRUE
 	COOLDOWN_DECLARE(cooldown)
 
-/obj/item/toy/plush/celadon/miner/reskin_obj(mob/user)
+/obj/item/toy/plush/celadon/miner/Initialize(mapload)
 	. = ..()
-	name = current_skin
-	if(COOLDOWN_FINISHED(src, cooldown))
-		COOLDOWN_START(src, cooldown, 6 SECONDS)
-		switch(current_skin)
-			if(BASIC_MINER_SKIN)
-				icon_state = "miner_plushie"
-				item_state = "miner_plushie"
-				say("Ну вот. Сегодня я умру.")
-				playsound(src, 'mod_celadon/_storage_sounds/sound/items/miner_plushie.ogg', 50, 1)
-			else
-				icon_state = "bloody_miner_plushie"
-				item_state = "bloody_miner_plushie"
-				say("Кишки, огромные кишки! Убей их… должен убить их всех! Разорвать… и… рвать! Демоны… они повсюду. Должен… убить их всех!")
-				playsound(src, 'mod_celadon/_storage_sounds/sound/items/bloody_miner_plushie.ogg', 50, 1)
-	if(ismob(loc))
-		var/mob/M = loc
-		M.update_inv_hands()
+	RegisterSignal(src, COMSIG_ITEM_RESKIN, PROC_REF(on_reskin))
+
+/obj/item/toy/plush/celadon/miner/proc/on_reskin(datum/source, mob/user)
+	if(!COOLDOWN_FINISHED(src, cooldown))
+		return
+	COOLDOWN_START(src, cooldown, 6 SECONDS)
+	switch(current_skin)
+		if(BASIC_MINER_SKIN)
+			say("Ну вот. Сегодня я умру.")
+			playsound(src, 'mod_celadon/_storage_sounds/sound/items/miner_plushie.ogg', 50, 1)
+		else
+			say("Кишки, огромные кишки! Убей их… должен убить их всех! Разорвать… и… рвать! Демоны… они повсюду. Должен… убить их всех!")
+			playsound(src, 'mod_celadon/_storage_sounds/sound/items/bloody_miner_plushie.ogg', 50, 1)
 
 #undef BASIC_MINER_SKIN
 #undef RED_MINER_SKIN
