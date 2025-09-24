@@ -151,5 +151,4 @@
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/padded_left.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/padded_right.dmi'
 	icon_state = "paddedboots"
-	// inhand_icon_state = "paddedboots"
 	supports_variations = null

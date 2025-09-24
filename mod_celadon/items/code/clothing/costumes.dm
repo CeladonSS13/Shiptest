@@ -61,7 +61,7 @@
 	supports_variations = DIGITIGRADE_VARIATION
 
 // Костюм горничной тактический белый без статов
-/obj/item/clothing/gloves/maid/white // есть проблема с тем что я не могу перекрасить красный цвет...
+/obj/item/clothing/gloves/maid/white
 	name = "maid sleeves"
 	desc = "Replica tacticute."
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/hands/gloves.dmi'

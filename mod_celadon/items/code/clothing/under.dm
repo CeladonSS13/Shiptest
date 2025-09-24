@@ -162,7 +162,6 @@
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/suit/in_hands/padded_right.dmi'
 	icon_state = "paddedunder"
 	item_state = "paddedunder"
-	// inhand_icon_state = "paddedunder"
 	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON | TAJARA_VARIATION | RIOL_VARIATION
 
 /obj/item/clothing/under/padded/alt
@@ -170,7 +169,6 @@
 	desc = "A meticulously handcrafted dress that is lined on the inside with feathers and down. Twirling in this dress provides a satisfying result!"
 	icon_state = "paddeddress"
 	item_state = "paddeddress"
-	// inhand_icon_state = "paddeddress"
 
 // MARK: SKIRTS
 /obj/item/clothing/under/dress/skirt/swimming
@@ -185,9 +183,6 @@
 	has_sensor = NO_SENSORS
 	random_sensor = FALSE
 	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON | TAJARA_VARIATION | RIOL_VARIATION
-	// greyscale_config = null
-	// greyscale_config_worn = null
-	// greyscale_colors = null
 
 /obj/item/clothing/under/dress/skirt/swimming/red_skirt
 	name = "red bra and skirt"

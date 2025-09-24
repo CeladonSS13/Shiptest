@@ -15,8 +15,8 @@
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/neck/cloaks.dmi'
 	flags_inv = HIDEEARS | HIDEEYES | HIDEHAIR | HIDEFACIALHAIR
 	clothing_flags = SNUG_FIT
-	name = "feathered serenity cloak"
-	desc = "A meticulously handcrafted cloak that is lined with subtle pockets filled with feathers and down. Its design matches common styles from the followers of Univitarium."
+	name = "feathered serenity hood"
+	desc = "A hood attached to a feathered serenity cloak."
 	icon_state = "paddedscarf_full"
 	item_state = "paddedscarf_full"
 
@@ -28,9 +28,3 @@
 /obj/item/clothing/head/hooded/cloakhood/padded/alt
 	icon_state = "paddedscarfalt_full"
 	item_state = "paddedscarfalt_full"
-
-
-// //Bandaid fix because obscurity is broken D:
-// /obj/item/clothing/neck/padded/proc/on_deployed()
-// 	var/mob/wearer = loc
-// 	wearer.update_body()

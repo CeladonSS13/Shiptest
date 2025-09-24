@@ -949,9 +949,6 @@
 #define BASIC_MINER_SKIN "Miner Plushie"
 #define RED_MINER_SKIN "Bloody Miner Plushie"
 
-/obj
-	var/always_reskinnable = FALSE
-
 /obj/item/toy/plush/celadon/miner
 	name = BASIC_MINER_SKIN
 	desc = "Тот самый Шахтёр, способный провести геноцид планетарного объекта."
@@ -959,7 +956,7 @@
 	item_state = "miner_plushie"
 	attack_verb = list("killed", "slashed", "annihilates")
 	squeak_override = list('sound/effects/hit_punch.ogg' = 1)
-	always_reskinnable = TRUE
+	var/always_reskinnable = TRUE
 	gender = MALE
 	unique_reskin = list(
 		BASIC_MINER_SKIN = list(RESKIN_ICON_STATE = "miner_plushie", RESKIN_ITEM_STATE = "miner_plushie"),
