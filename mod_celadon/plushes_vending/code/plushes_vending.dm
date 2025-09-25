@@ -114,7 +114,6 @@
 		/obj/item/toy/plush/celadon/kira = 1,
 		/obj/item/toy/plush/celadon/mira = 1,
 		/obj/item/toy/plush/celadon/tora = 1,
-		/obj/item/toy/plush/celadon/miner = 1,
 		/obj/item/toy/talking/neznakomka = 1,
 		/obj/item/toy/talking/barmen_tim = 1,)
 	contraband	= list(
