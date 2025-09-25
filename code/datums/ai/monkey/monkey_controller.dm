@@ -19,6 +19,7 @@ have ways of interacting with a specific mob and control it.
 		BB_MONKEY_CURRENT_ATTACK_TARGET = null,
 		BB_MONKEY_GUN_NEURONS_ACTIVATED = FALSE,
 		BB_MONKEY_GUN_WORKED = TRUE,
+		BB_MONKEY_WEAPON_PICKUP_COOLDOWN = 0,	// [CELADON-ADD] - FIXES_MONKEY_STOPPED_SPEEDUP
 		BB_MONKEY_NEXT_HUNGRY = 0
 	)
 	idle_behavior = /datum/idle_behavior/idle_monkey
@@ -69,6 +70,15 @@ have ways of interacting with a specific mob and control it.
 /datum/ai_controller/monkey/proc/TryFindWeapon()
 	var/mob/living/living_pawn = pawn
 
+	// [CELADON-ADD] - FIXES_MONKEY_STOPPED_SPEEDUP
+	// Check cooldown to prevent spam
+	if(world.time < blackboard[BB_MONKEY_WEAPON_PICKUP_COOLDOWN])
+		return FALSE
+
+	// Check if we're already trying to pick up something
+	if(blackboard[BB_MONKEY_PICKUPTARGET])
+		return FALSE
+	// [/CELADON-ADD]
 	if(!(locate(/obj/item) in living_pawn.held_items))
 		set_blackboard_key(BB_MONKEY_BEST_FORCE_FOUND, 0)
 
@@ -95,6 +105,7 @@ have ways of interacting with a specific mob and control it.
 		return FALSE
 
 	set_blackboard_key(BB_MONKEY_PICKUPTARGET, weapon)
+	set_blackboard_key(BB_MONKEY_WEAPON_PICKUP_COOLDOWN, world.time + 3 SECONDS)	// [CELADON-ADD] - FIXES_MONKEY_STOPPED_SPEEDUP
 	current_movement_target = weapon
 	if(pickpocket)
 		LAZYADD(current_behaviors, GET_AI_BEHAVIOR(/datum/ai_behavior/monkey_equip/pickpocket))

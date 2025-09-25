@@ -7,10 +7,12 @@
 /datum/ai_behavior/monkey_equip/finish_action(datum/ai_controller/controller, success)
 	. = ..()
 
-	if(!success) //Don't try again on this item if we failed
+	var/obj/item/target = controller.blackboard[BB_MONKEY_PICKUPTARGET]	// [CELADON-ADD] - FIXES_MONKEY_STOPPED_SPEEDUP
+	// [CELADON-EDIT] - FIXES_MONKEY_STOPPED_SPEEDUP
+	// if(!success) //Don't try again on this item if we failed	// ORIGINAL
+	if(!success && target)
+	// [CELADON-EDIT]
 		var/list/item_blacklist = controller.blackboard[BB_MONKEY_BLACKLISTITEMS]
-		var/obj/item/target = controller.blackboard[BB_MONKEY_PICKUPTARGET]
-
 		item_blacklist[target] = TRUE
 
 	controller.clear_blackboard_key(BB_MONKEY_PICKUPTARGET)
@@ -27,10 +29,18 @@
 	if(target.anchored) //Can't pick it up, so stop trying.
 		return AI_BEHAVIOR_DELAY | AI_BEHAVIOR_FAILED
 
+	// [CELADON-ADD] - FIXES_MONKEY_STOPPED_SPEEDUP
+	// Check if target is still in the same location and accessible
+	if(!living_pawn.CanReach(target))
+		return AI_BEHAVIOR_DELAY | AI_BEHAVIOR_FAILED
+	// [/CELADON-ADD]
 	// Strong weapon
 	else if(target.force > best_force)
 		living_pawn.drop_all_held_items()
-		living_pawn.put_in_hands(target)
+		// [CELADON-ADD] - FIXES_MONKEY_STOPPED_SPEEDUP
+		if(!living_pawn.put_in_hands(target))
+			return AI_BEHAVIOR_DELAY | AI_BEHAVIOR_FAILED
+		// [/CELADON-ADD]
 		controller.set_blackboard_key(BB_MONKEY_BEST_FORCE_FOUND, target.force)
 		return AI_BEHAVIOR_DELAY | AI_BEHAVIOR_SUCCEEDED
 
@@ -43,7 +53,10 @@
 
 	// EVERYTHING ELSE
 	else if(living_pawn.get_empty_held_index_for_side(LEFT_HANDS) || living_pawn.get_empty_held_index_for_side(RIGHT_HANDS))
-		living_pawn.put_in_hands(target)
+		// [CELADON-ADD] - FIXES_MONKEY_STOPPED_SPEEDUP
+		if(!living_pawn.put_in_hands(target))
+			return AI_BEHAVIOR_DELAY | AI_BEHAVIOR_FAILED
+		// [/CELADON-ADD]
 		return AI_BEHAVIOR_DELAY | AI_BEHAVIOR_SUCCEEDED
 
 	return AI_BEHAVIOR_DELAY | AI_BEHAVIOR_FAILED
@@ -52,15 +65,16 @@
 	required_distance = 0
 
 /datum/ai_behavior/monkey_equip/ground/perform(seconds_per_tick, datum/ai_controller/controller)
-	equip_item(controller)
+	return equip_item(controller)	// [CELADON-ADD] - FIXES_MONKEY_STOPPED_SPEEDUP
 
 /datum/ai_behavior/monkey_equip/pickpocket
 
 /datum/ai_behavior/monkey_equip/pickpocket/perform(seconds_per_tick, datum/ai_controller/controller)
 
 	if(controller.blackboard[BB_MONKEY_PICKPOCKETING]) //We are pickpocketing, don't do ANYTHING!!!!
-		return
+		return AI_BEHAVIOR_DELAY	// [CELADON-ADD] - FIXES_MONKEY_STOPPED_SPEEDUP
 	INVOKE_ASYNC(src, PROC_REF(attempt_pickpocket), controller)
+	return AI_BEHAVIOR_DELAY	// [CELADON-ADD] - FIXES_MONKEY_STOPPED_SPEEDUP
 
 /datum/ai_behavior/monkey_equip/pickpocket/proc/attempt_pickpocket(datum/ai_controller/controller)
 	var/obj/item/target = controller.blackboard[BB_MONKEY_PICKUPTARGET]
