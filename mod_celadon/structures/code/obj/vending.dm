@@ -116,5 +116,5 @@
 		/obj/item/clothing/under/costume/kilt = 5,
 		)
 	refill_canister = /obj/item/vending_refill/clothing
-	light_mask = "wardrobe-light-mask"
-	light_color = LIGHT_COLOR_LIGHT_CYAN
+	light_mask = "sakura-light-mask"
+	light_color = LIGHT_COLOR_PINK
