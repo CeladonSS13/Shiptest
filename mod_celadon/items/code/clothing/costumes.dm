@@ -127,31 +127,4 @@
 	icon_state = "kimono3"
 	item_state = "kimono3"
 
-/obj/item/clothing/under/costume/gi
-	name = "Martial Artist Gi"
-	desc = "Assistant, nukie, whatever. You can beat anyone; it's called hard work!"
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/costume.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/costume.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/under/in_hands/costume_left.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/under/in_hands/costume_right.dmi'
-	icon_state = "martial_arts_gi"
-	item_state = "martial_arts_gi"
-	// greyscale_config = /datum/greyscale_config/gi
-	// greyscale_config_worn = /datum/greyscale_config/gi/worn
-	greyscale_colors = "#f1eeee#000000"
-	// flags_1 = IS_PLAYER_COLORABLE_1
-	// female_sprite_flags = NO_FEMALE_UNIFORM
-	roll_sleeves = FALSE
-
-/obj/item/clothing/under/costume/gi/Initialize(mapload)
-	. = ..()
-	// AddElement(/datum/element/gags_recolorable)
-	update_icon(UPDATE_OVERLAYS)
-
-/obj/item/clothing/under/costume/gi/goku
-	name = "Sacred Gi"
-	desc = "Created by a man who touched the hearts and lives of many."
-	icon_state = "martial_arts_gi_goku"
-	item_state = "martial_arts_gi_goku"
-	greyscale_colors = "#f89925#3e6dd7"
 
