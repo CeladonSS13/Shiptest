@@ -13,6 +13,8 @@
 	if(!success && target)
 	// [CELADON-EDIT]
 		var/list/item_blacklist = controller.blackboard[BB_MONKEY_BLACKLISTITEMS]
+		// var/obj/item/target = controller.blackboard[BB_MONKEY_PICKUPTARGET]	// [CELADON-REMOVE] - FIXES_MONKEY_STOPPED_SPEEDUP
+
 		item_blacklist[target] = TRUE
 
 	controller.clear_blackboard_key(BB_MONKEY_PICKUPTARGET)
