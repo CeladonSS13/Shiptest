@@ -105,7 +105,7 @@ have ways of interacting with a specific mob and control it.
 		return FALSE
 
 	set_blackboard_key(BB_MONKEY_PICKUPTARGET, weapon)
-	set_blackboard_key(BB_MONKEY_WEAPON_PICKUP_COOLDOWN, world.time + 3 SECONDS)	// [CELADON-ADD] - FIXES_MONKEY_STOPPED_SPEEDUP
+	set_blackboard_key(BB_MONKEY_WEAPON_PICKUP_COOLDOWN, world.time + 1 SECONDS)	// [CELADON-ADD] - FIXES_MONKEY_STOPPED_SPEEDUP
 	current_movement_target = weapon
 	if(pickpocket)
 		LAZYADD(current_behaviors, GET_AI_BEHAVIOR(/datum/ai_behavior/monkey_equip/pickpocket))
