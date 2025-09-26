@@ -631,8 +631,8 @@ SUBSYSTEM_DEF(air)
 		if(QDELETED(GM))
 			to_remove += GM
 			continue
-		// Проверяем, что смесь не используется и почти пуста
-		if(GM.total_moles() < 0.01 && !GM.loc)
+		// Проверяем, что смесь почти пуста
+		if(GM.total_moles() < 0.01)
 			to_remove += GM
 			cleaned++
 			if(cleaned > 50) // Ограничиваем количество за тик
