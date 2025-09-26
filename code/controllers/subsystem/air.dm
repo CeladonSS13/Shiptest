@@ -134,7 +134,7 @@ SUBSYSTEM_DEF(air)
 /datum/controller/subsystem/air/fire(resumed = FALSE)
 	var/timer = TICK_USAGE_REAL
 	var/seconds_per_tick = wait * 0.1
-	
+
 	// Performance monitoring
 	if(adaptive_processing && times_fired % 10 == 0)
 		adjust_performance()
@@ -581,9 +581,9 @@ SUBSYSTEM_DEF(air)
 /datum/controller/subsystem/air/proc/adjust_performance()
 	if(!adaptive_processing)
 		return
-		
+
 	var/avg_cost = (cost_turfs + cost_groups + cost_equalize) / 3
-	
+
 	if(avg_cost > max_cost_threshold)
 		equalize_turf_limit = max(20, equalize_turf_limit - 10)
 		share_max_steps = max(2, share_max_steps - 1)
@@ -609,11 +609,11 @@ SUBSYSTEM_DEF(air)
 
 /datum/controller/subsystem/air/proc/performance_monitor()
 	var/total_cost = cost_turfs + cost_groups + cost_equalize + cost_pipenets
-	
+
 	if(total_cost > 80 && performance_mode < 2)
 		set_performance_mode(performance_mode + 1)
 		message_admins("Атмосфера: режим производительности [performance_mode]")
-		
+
 	else if(total_cost < 30 && performance_mode > 0)
 		set_performance_mode(performance_mode - 1)
 		message_admins("Атмосфера: режим качества [performance_mode]")
@@ -622,12 +622,28 @@ SUBSYSTEM_DEF(air)
 	return // Отключено для совместимости
 
 /datum/controller/subsystem/air/proc/cleanup_gas_mixtures()
+	// [CELADON-EDIT] - FIXES_PERFORMANCE - Эффективная очистка газовых смесей
 	var/cleaned = 0
-	for(var/datum/gas_mixture/GM in world)
-		if(GM.total_moles() < 0.01)
-			qdel(GM)
+	var/list/to_remove = list()
+	
+	// Используем глобальный список вместо итерации по world
+	for(var/datum/gas_mixture/GM in GLOB.gas_mixtures_list)
+		if(QDELETED(GM))
+			to_remove += GM
+			continue
+		// Проверяем, что смесь не используется и почти пуста
+		if(GM.total_moles() < 0.01 && !GM.loc)
+			to_remove += GM
 			cleaned++
-			if(cleaned > 100) break
+			if(cleaned > 50) // Ограничиваем количество за тик
+				break
+	
+	// Удаляем найденные смеси
+	for(var/datum/gas_mixture/GM in to_remove)
+		GLOB.gas_mixtures_list -= GM
+		if(!QDELETED(GM))
+			qdel(GM)
 	
 	if(cleaned > 0)
 		log_world("Очищено [cleaned] газовых смесей")
+	// [/CELADON-EDIT]
