@@ -83,6 +83,10 @@
 
 	var/mob/living/living_pawn = controller.pawn
 
+	// [CELADON-ADD] - FIXES_MONKEY_STOPPED_PICKPOCKET - Предотвращаем ошибку, когда макака пытается украсть предмет с пола
+	if(!isliving(victim))
+		return AI_BEHAVIOR_DELAY | AI_BEHAVIOR_FAILED
+	// [/CELADON-ADD]
 	victim.visible_message(span_warning("[living_pawn] starts trying to take [target] from [victim]!"), span_danger("[living_pawn] tries to take [target]!"))
 
 	controller.set_blackboard_key(BB_MONKEY_PICKPOCKETING, TRUE)

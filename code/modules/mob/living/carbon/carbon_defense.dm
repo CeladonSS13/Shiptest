@@ -113,7 +113,10 @@
 		return
 
 	var/extra_wound_details = ""
-	if(I.damtype == BRUTE && hit_bodypart.can_dismember())
+	// [CELADON-EDIT] - FIXES_RUNTIMES - Проверяем не только конкретный параметр у хит бодипарт, но и самого родителя на наличие
+	// if(I.damtype == BRUTE && hit_bodypart.can_dismember())	// ORIGINAL
+	if(I.damtype == BRUTE && istype(hit_bodypart, /obj/item/bodypart) && hit_bodypart.can_dismember())
+	// [/CELADON-EDIT]
 		var/mangled_state = hit_bodypart.get_mangled_state()
 		var/bio_state = get_biological_state()
 		if(mangled_state == BODYPART_MANGLED_BOTH)

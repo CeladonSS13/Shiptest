@@ -63,7 +63,15 @@ have ways of interacting with a specific mob and control it.
 	. = ..()
 	var/mob/living/living_pawn = pawn
 
-	if(IS_DEAD_OR_INCAP(living_pawn))
+	// [CELADON-EDIT] - FIXES_MONKEY_STOPPED_DEAD - Отрубаем ИИшку если макака полностью померла
+	// if(IS_DEAD_OR_INCAP(living_pawn))	// ORIGINAL
+	if(IS_DEAD_OR_INCAP(living_pawn) || living_pawn.stat == DEAD || QDELETED(living_pawn))
+		// Полностью отключаем AI и останавливаем движение при смерти
+		if(living_pawn && living_pawn.stat == DEAD && ai_status == AI_STATUS_ON)
+			walk(living_pawn, 0)
+			living_pawn.stop_pulling()
+			set_ai_status(AI_STATUS_OFF)
+	// [/CELADON-EDIT]
 		return FALSE
 
 ///re-used behavior pattern by monkeys for finding a weapon
