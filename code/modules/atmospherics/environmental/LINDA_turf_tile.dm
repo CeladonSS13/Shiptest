@@ -1,3 +1,8 @@
+// [CELADON-ADD] - FIXES_PERFORMANCE - Константы для кэширования и обработки турфов
+#define ADJACENCY_CACHE_LIFETIME 50
+#define INACTIVE_TURF_LIFETIME 100
+#define MIN_MOLES_FOR_PROCESSING 0.05
+// [/CELADON-ADD]
 /turf
 	//conductivity is divided by 10 when interacting with air for balance purposes
 	var/thermal_conductivity = 0.05
@@ -7,7 +12,7 @@
 	var/list/atmos_adjacent_turfs
 	//bitfield of dirs in which we thermal conductivity is blocked
 	var/conductivity_blocked_directions = NONE
-	
+
 	// Performance optimization vars
 	var/adjacency_cache_time = 0
 	var/list/cached_adjacent_turfs
@@ -252,7 +257,7 @@
 			step(src, direction)
 		last_high_pressure_movement_air_cycle = SSair.times_fired
 /turf/proc/get_cached_adjacent_turfs()
-	if(world.time - adjacency_cache_time > 50)
+	if(world.time - adjacency_cache_time > ADJACENCY_CACHE_LIFETIME)
 		cached_adjacent_turfs = get_atmos_adjacent_turfs()
 		adjacency_cache_time = world.time
 	return cached_adjacent_turfs
@@ -260,8 +265,8 @@
 /turf/open/proc/needs_processing()
 	if(!air)
 		return FALSE
-	if(world.time - last_significant_change > 100)
+	if(world.time - last_significant_change > INACTIVE_TURF_LIFETIME)
 		return FALSE
-	if(air.total_moles() < 0.05)
+	if(air.total_moles() < MIN_MOLES_FOR_PROCESSING)
 		return FALSE
 	return TRUE

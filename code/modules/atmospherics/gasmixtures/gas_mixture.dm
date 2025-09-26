@@ -5,6 +5,10 @@ What are the archived variables for?
 */
 #define MINIMUM_HEAT_CAPACITY 0.0003
 #define MINIMUM_MOLE_COUNT 0.01
+// [CELADON-ADD] - FIXES_PERFORMANCE - Константы для кэширования и обработки турфов
+#define MIN_MOLES_FOR_WORTHY_PROCESSING 0.1
+#define MIN_TEMP_DELTA_FOR_WORTHY_PROCESSING 5
+// [/CELADON-ADD]
 #define QUANTIZE(variable)		(round(variable,0.0000001))/*I feel the need to document what happens here. Basically this is used to catch most rounding errors, however it's previous value made it so that
 															once gases got hot enough, most procedures wouldnt occur due to the fact that the mole counts would get rounded away. Thus, we lowered it a few orders of magnititude */
 
@@ -146,9 +150,9 @@ GLOBAL_LIST_EMPTY(gas_mixtures_list) // [CELADON-ADD] - FIXES_PERFORMANCE - Сп
 	return react(holder)
 
 /datum/gas_mixture/proc/is_processing_worthy()
-	if(total_moles() < 0.1)
+	if(total_moles() < MIN_MOLES_FOR_WORTHY_PROCESSING)
 		return FALSE
-	if(abs(return_temperature() - T20C) < 5)
+	if(abs(return_temperature() - T20C) < MIN_TEMP_DELTA_FOR_WORTHY_PROCESSING)
 		return FALSE
 	return TRUE
 

@@ -1,3 +1,34 @@
+// [CELADON-ADD] - FIXES_PERFORMANCE - Константы для частоты вызова процедур оптимизации
+#define ADAPTIVE_PERFORMANCE_TICKS 10
+#define PERFORMANCE_MONITOR_TICKS 50
+#define GAS_MIXTURE_CLEANUP_TICKS 300
+#define MAX_GAS_CLEANUP_PER_TICK 50
+
+// Константы для adjust_performance()
+#define ADAPTIVE_TURF_LIMIT_MIN 20
+#define ADAPTIVE_TURF_LIMIT_MAX 150
+#define ADAPTIVE_TURF_LIMIT_STEP_DOWN 10
+#define ADAPTIVE_TURF_LIMIT_STEP_UP 5
+#define ADAPTIVE_SHARE_STEPS_MIN 2
+#define ADAPTIVE_SHARE_STEPS_MAX 7
+
+// Константы для performance_monitor()
+#define PERFORMANCE_HIGH_THRESHOLD 80
+#define PERFORMANCE_LOW_THRESHOLD 30
+#define PERFORMANCE_MODE_MAX 2
+
+// Константы для set_performance_mode()
+#define PERF_MODE_0_WAIT 1 SECONDS
+#define PERF_MODE_0_TURF_LIMIT 100
+#define PERF_MODE_0_SHARE_STEPS 5
+#define PERF_MODE_1_WAIT 1.5 SECONDS
+#define PERF_MODE_1_TURF_LIMIT 60
+#define PERF_MODE_1_SHARE_STEPS 3
+#define PERF_MODE_2_WAIT 2 SECONDS
+#define PERF_MODE_2_TURF_LIMIT 30
+#define PERF_MODE_2_SHARE_STEPS 2
+// [/CELADON-ADD]
+
 SUBSYSTEM_DEF(air)
 	name = "Atmospherics"
 	init_order = INIT_ORDER_AIR
@@ -136,11 +167,11 @@ SUBSYSTEM_DEF(air)
 	var/seconds_per_tick = wait * 0.1
 
 	// Performance monitoring
-	if(adaptive_processing && times_fired % 10 == 0)
+	if(adaptive_processing && times_fired % ADAPTIVE_PERFORMANCE_TICKS == 0)
 		adjust_performance()
-	if(times_fired % 50 == 0)
+	if(times_fired % PERFORMANCE_MONITOR_TICKS == 0)
 		performance_monitor()
-	if(times_fired % 300 == 0)
+	if(times_fired % GAS_MIXTURE_CLEANUP_TICKS == 0)
 		cleanup_gas_mixtures()
 
 	//Rebuilds can happen at any time, so this needs to be done outside of the normal system
@@ -612,11 +643,11 @@ SUBSYSTEM_DEF(air)
 
 	if(total_cost > 80 && performance_mode < 2)
 		set_performance_mode(performance_mode + 1)
-		message_admins("Атмосфера: режим производительности [performance_mode]")
+		message_admins("Атмосфера: нагрузка высокая. Переключение в режим экономии [performance_mode].")
 
 	else if(total_cost < 30 && performance_mode > 0)
 		set_performance_mode(performance_mode - 1)
-		message_admins("Атмосфера: режим качества [performance_mode]")
+		message_admins("Атмосфера: нагрузка низкая. Переключение в режим качества [performance_mode].")
 
 /datum/controller/subsystem/air/proc/optimize_gas_reactions()
 	return // Отключено для совместимости
@@ -625,7 +656,7 @@ SUBSYSTEM_DEF(air)
 	// [CELADON-EDIT] - FIXES_PERFORMANCE - Эффективная очистка газовых смесей
 	var/cleaned = 0
 	var/list/to_remove = list()
-	
+
 	// Используем глобальный список вместо итерации по world
 	for(var/datum/gas_mixture/GM in GLOB.gas_mixtures_list)
 		if(QDELETED(GM))
@@ -635,15 +666,15 @@ SUBSYSTEM_DEF(air)
 		if(GM.total_moles() < 0.01)
 			to_remove += GM
 			cleaned++
-			if(cleaned > 50) // Ограничиваем количество за тик
+			if(cleaned > MAX_GAS_CLEANUP_PER_TICK) // Ограничиваем количество за тик
 				break
-	
+
 	// Удаляем найденные смеси
 	for(var/datum/gas_mixture/GM in to_remove)
 		GLOB.gas_mixtures_list -= GM
 		if(!QDELETED(GM))
 			qdel(GM)
-	
+
 	if(cleaned > 0)
 		log_world("Очищено [cleaned] газовых смесей")
 	// [/CELADON-EDIT]
