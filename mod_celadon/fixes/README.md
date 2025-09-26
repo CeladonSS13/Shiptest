@@ -27,6 +27,11 @@ FIXES_SHIP_LOGIN_DOUBLE_NAME
 FIXES_WETHIDE
 FIXES_DRILLCLASS
 FIXES_MOTH_EATING_CLOTHING
+FIXES_RUNTIMES
+FIXES_MONKEY_STOPPED_SPEEDUP
+FIXES_MONKEY_STOPPED_DEAD
+FIXES_MONKEY_STOPPED_PICKPOCKET
+
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -252,6 +257,31 @@ FIXES_OFFERING_EFFECTS
 FIXES_SPAWNERS_ON_SPACE - Проверка на космотурф
 - ADD: `code/game/objects/effects/spawners/mobspawner.dm`
 - ADD: `code/modules/events/spacevine.dm`
+
+FIXES_RUNTIMES
+- ADD: `code/datums/ai/_ai_controller.dm` - Игра могла думать что моб все еще живой, ползанье будучи мертвым было возможно. Теперь нет
+- REMOVE: `code/datums/ai/_ai_controller.dm`
+- EDIT: `code/datums/ai/_ai_controller.dm`
+- ADD: `code/datums/ai/generic_actions.dm` - Проверка на жизнь моба pawn
+- EDIT: `code/datums/ai/generic_actions.dm`
+- ADD: `code/game/atoms.dm` - Когда нету чего то для того чтобы логировать в атаках, выставляется значение Null и вызывало рантайм. Теперь нет
+- EDIT: `code/modules/mob/living/carbon/carbon_defense.dm` - При проверках куда был нанесен удар предметом или пулями, игра могла не видеть или плохо понимать строки вида "chest" ожидая увидеть тип а не строку и вызывала ошибку состояния тела. Теперь нормально обрабатывается
+
+
+FIXES_MONKEY_STOPPED_SPEEDUP
+- ADD: `code/__DEFINES/ai/monkey.dm`
+- EDIT: `code/datums/ai/idle_behaviors/idle_monkey.dm`
+- ADD: `code/datums/ai/monkey/monkey_behaviors.dm`
+- EDIT: `code/datums/ai/monkey/monkey_behaviors.dm`
+- ADD: `code/datums/ai/monkey/monkey_controller.dm`
+- ADD: `code/datums/ai/monkey/monkey_subtrees.dm` - шансы подбора предмета
+
+FIXES_MONKEY_STOPPED_DEAD
+- EDIT: `code/datums/ai/monkey/monkey_controller.dm`
+
+FIXES_MONKEY_STOPPED_PICKPOCKET
+- ADD: `code/datums/ai/monkey/monkey_behaviors.dm`
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
