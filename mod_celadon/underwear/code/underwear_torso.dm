@@ -1,4 +1,4 @@
-/datum/sprite_accessory/undershirt
+/datum/sprite_accessory/undershirt/c
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
 
 // MARK: Female Tops
@@ -21,8 +21,6 @@
 
 /* CELADON-REPLACED
 /datum/sprite_accessory/undershirt/swimming
-	name = "Swimming Top"
-	icon_state = "swimming"
 */
 
 /datum/sprite_accessory/undershirt/straplessbra
@@ -43,23 +41,21 @@
 
 /* CELADON-REPLACED
 /datum/sprite_accessory/undershirt/beekini
-	name = "Bee-Kini Top"
-	icon_state = "beekini"
-	use_static = TRUE
 */
 
 // MARK: New Female Tops
-/datum/sprite_accessory/undershirt/tank_midriff
+/datum/sprite_accessory/undershirt/c/tank_midriff
 	name = "Midriff Bra"
 	icon_state = "top_midriff"
 
-/datum/sprite_accessory/undershirt/tank_midriff_alt
+/datum/sprite_accessory/undershirt/c/tank_midriff_alt
 	name = "Midriff Bra (Alt)"
 	icon_state = "top_midriff_alt"
 
 // [CELADON-REPLACED]
 /datum/sprite_accessory/undershirt/beekini
 	name = "Bee-Kini Top"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
 	icon_state = "beekini"
 	use_static = FALSE
 
@@ -68,33 +64,33 @@
 	icon_state = "swimming"
 // [/CELADON-REPLACED]
 
-/datum/sprite_accessory/undershirt/swim_onepiece
+/datum/sprite_accessory/undershirt/c/swim_onepiece
 	name = "Swim-Onepiece Top"
 	icon_state = "swim_onepiece"
 
-/datum/sprite_accessory/undershirt/swim_strapless_onepiece
+/datum/sprite_accessory/undershirt/c/swim_strapless_onepiece
 	name = "Swim-Onepiece Top (Alt)"
 	icon_state = "swim_strapless_onepiece"
 
-/datum/sprite_accessory/undershirt/swim_twopiece
+/datum/sprite_accessory/undershirt/c/swim_twopiece
 	name = "Swim-Twopiece Top"
 	icon_state = "swim_twopiece"
 
-/datum/sprite_accessory/undershirt/swim_strapless_twopiece
+/datum/sprite_accessory/undershirt/c/swim_strapless_twopiece
 	name = "Swim-Twopiece Top (Alt)"
 	icon_state = "swim_strapless_twopiece"
 
-/datum/sprite_accessory/undershirt/swim_stripe_black
+/datum/sprite_accessory/undershirt/c/swim_stripe_black
 	name = "Swim-Stripes Top (Black)"
 	icon_state = "swim_stripe_black"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/swim_stripe
+/datum/sprite_accessory/undershirt/c/swim_stripe
 	name = "Swim-Stripes Top (Blue)"
 	icon_state = "swim_stripe"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/bandages
+/datum/sprite_accessory/undershirt/c/bandages
 	name = "Bandages"
 	icon_state = "bandages"
 
@@ -144,6 +140,18 @@
 	name = "Short Sleeve Button-Down (Greyscale)"
 	icon_state = "button_short"
 
+/datum/sprite_accessory/undershirt/croptank
+	name = "Cropped Tank Top (Greyscale)"
+	icon_state = "croptank"
+
+/datum/sprite_accessory/undershirt/cropshort
+	name = "Cropped Short Sleeve (Greyscale)"
+	icon_state = "cropshortsleeve"
+
+/datum/sprite_accessory/undershirt/croptshirt
+	name = "Cropped T-shirt (Greyscale)"
+	icon_state = "croptshirt"
+
 /datum/sprite_accessory/undershirt/band
 	name = "T-Shirt (Band)"
 	icon_state = "band"
@@ -161,9 +169,6 @@
 
 /* CELADON-REPLACED
 /datum/sprite_accessory/undershirt/tankfire
-	name = "Tank Top (Fire)"
-	icon_state = "tank_fire"
-	use_static = TRUE
 */
 
 /datum/sprite_accessory/undershirt/rilena
@@ -171,83 +176,79 @@
 	icon_state = "rilena"
 	use_static = TRUE
 
-// MARK: Replaced Pride shirts
 
-// Pride shirts
-
-/datum/sprite_accessory/undershirt/tank_les
+// MARK: New Normal Shirt
+/datum/sprite_accessory/undershirt/c/question
 	name = "T-Shirt (Question)"
 	icon_state = "shirt_question"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/tank_bi
+/datum/sprite_accessory/undershirt/c/pogoman
 	name = "T-Shirt (Pacman)"
 	icon_state = "pogoman"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/tank_trans
+/datum/sprite_accessory/undershirt/c/tiedye
 	name = "T-Shirt (Tiedye)" //we gotta study this
 	icon_state = "shirt_tiedye"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/tank_enby
+/datum/sprite_accessory/undershirt/c/clown
 	name = "T-Shirt (Clown)"
 	icon_state = "shirt_clown"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/tank_ace
+/datum/sprite_accessory/undershirt/c/skull
 	name = "T-Shirt (Skull)"
 	icon_state = "shirt_skull"
 	use_static = TRUE
 
-// MARK: New Normal Shirt
-
-/datum/sprite_accessory/undershirt/shirt_alien
+/datum/sprite_accessory/undershirt/c/shirt_alien
 	name = "T-Shirt (Alien)"
 	icon_state = "shirt_alien"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/shirt_ian
+/datum/sprite_accessory/undershirt/c/shirt_ian
 	name = "T-Shirt (Ian)"
 	icon_state = "ian"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/shirt_corgi
+/datum/sprite_accessory/undershirt/c/shirt_corgi
 	name = "T-Shirt (Corgi)"
 	icon_state = "corgi"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/shirt_poly
+/datum/sprite_accessory/undershirt/c/shirt_poly
 	name = "T-Shirt (Poly)"
 	icon_state = "poly"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/shirt_elysium
+/datum/sprite_accessory/undershirt/c/shirt_elysium
 	name = "T-Shirt (Elysium)"
 	icon_state = "elysium"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/shirt_stripes
+/datum/sprite_accessory/undershirt/c/shirt_stripes
 	name = "T-Shirt (Stripes)"
 	icon_state = "shirt_stripes"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/bee_shirt
+/datum/sprite_accessory/undershirt/c/bee_shirt
 	name = "T-Shirt (Bee)"
 	icon_state = "bee_shirt"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/shirt_bc
+/datum/sprite_accessory/undershirt/c/shirt_bc
 	name = "T-Shirt (BC)"
 	icon_state = "shirt_bc"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/polo_blue
+/datum/sprite_accessory/undershirt/c/polo_blue
 	name = "Polo Shirt (Blue)"
 	icon_state = "polo_blue"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/polo_red
+/datum/sprite_accessory/undershirt/c/polo_red
 	name = "Polo Shirt (Red)"
 	icon_state = "polo_red"
 	use_static = TRUE
@@ -259,37 +260,37 @@
 	use_static = TRUE
 // [/CELADON-REPLACED]
 
-/datum/sprite_accessory/undershirt/tank_abstact
+/datum/sprite_accessory/undershirt/c/tank_abstact
 	name = "Tank Top (Abstract)"
 	icon_state = "tank_abstact"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/tank_stripes
+/datum/sprite_accessory/undershirt/c/tank_stripes
 	name = "Tank Top (Stripes)"
 	icon_state = "tank_stripes"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/tank_sun
+/datum/sprite_accessory/undershirt/c/tank_sun
 	name = "Tank Top (Sun)"
 	icon_state = "tank_sun"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/longstripe
+/datum/sprite_accessory/undershirt/c/longstripe
 	name = "Long-Stripes (Blue)"
 	icon_state = "longstripe"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/longstripe_black
+/datum/sprite_accessory/undershirt/c/longstripe_black
 	name = "Long-Stripes (Black)"
 	icon_state = "longstripe_black"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/longstripe_red
+/datum/sprite_accessory/undershirt/c/longstripe_red
 	name = "Long-Stripes (Red)"
 	icon_state = "longstripe_red"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/longstripe
+/datum/sprite_accessory/undershirt/c/longstripe
 	name = "Long-Stripes (Blue)"
 	icon_state = "longstripe"
 	use_static = TRUE
