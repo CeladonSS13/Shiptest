@@ -2039,6 +2039,7 @@
 /obj/machinery/cryopod{
 	dir = 1
 	},
+/obj/machinery/computer/cryopod/directional/south,
 /turf/open/floor/wood/walnut,
 /area/ship/crew)
 "zK" = (
@@ -3033,7 +3034,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/crew)
 "Mg" = (
-/obj/structure/crate_shelf,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/storage)
 "Mq" = (
@@ -3987,7 +3987,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/opaque/ntblue/half,
-/turf/open/floor/engine/hull/reinforced,
+/turf/open/floor/engine/hull,
 /area/ship/external)
 "Xs" = (
 /obj/effect/turf_decal/corner/opaque/ntblue/border{
