@@ -17,7 +17,7 @@
 	anomaly cores for [pick(list("research", "analysis", "technical development", "closer inspection", "some reason"))]."
 
 // Circuit boards, spare parts, etc.
-
+/* // [CELADON-REMOVE] - NO FUN ALLOWED
 /datum/export/solar/assembly
 	cost = 50
 	desc = "One solar panel assembly. Green energy, especially towards the inner system."
@@ -48,7 +48,7 @@
 	desc = "You find it? We want it."
 	unit_name = "miscellaneous computer part"
 	export_types = list(/obj/item/computer_hardware)
-
+*/
 /* if only
 /datum/export/stack/cable
 	cost = 0.1
