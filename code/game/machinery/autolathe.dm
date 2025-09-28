@@ -95,13 +95,10 @@
 			matcolour = M.color,
 		)
 		data["materials"] += list(material_data)
-	// [CELADON-FIX] - CELADON_AUTOLATHE: Fixed display logic for search results
-	if(selected_category && selected_category != "None" && !length(matching_designs))
+	if(selected_category != "None" && !length(matching_designs))
 		data["designs"] = handle_designs(stored_research.researched_designs, TRUE)
-	else if(length(matching_designs))
-		data["designs"] = handle_designs(matching_designs, FALSE)
 	else
-		data["designs"] = list()
+		data["designs"] = handle_designs(matching_designs, FALSE)
 	return data
 
 /obj/machinery/autolathe/proc/handle_designs(list/researched_designs, categorycheck)
@@ -200,8 +197,7 @@
 
 		for(var/v in stored_research.researched_designs)
 			var/datum/design/D = SSresearch.techweb_design_by_id(v)
-			// [CELADON-FIX] - CELADON_AUTOLATHE: Case-insensitive search
-			if(findtext(lowertext(D.name), lowertext(params["to_search"])))
+			if(findtext(D.name,params["to_search"]))
 				matching_designs.Add(D)
 		. = TRUE
 	if(action == "diskEject")

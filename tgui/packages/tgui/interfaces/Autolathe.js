@@ -14,7 +14,7 @@ import {
 } from 'tgui-core/components';
 import { capitalize } from 'tgui-core/string';
 
-import { useBackend, useSharedState } from '../backend';
+import { useBackend, useLocalState } from '../backend';
 import { Window } from '../layouts';
 
 export const Autolathe = (props) => {
@@ -29,11 +29,10 @@ export const Autolathe = (props) => {
     hasDisk,
     active,
   } = data;
-  const [current_category, setCategory] = useSharedState(
-    'autolathe_category',
+  const [current_category, setCategory] = useLocalState(
+    'current_category',
     'None',
   );
-  const [searchText, setSearchText] = useSharedState('autolathe_search', '');
   const filteredmaterials = materials.filter(
     (material) => material.mineral_amount > 0,
   );
@@ -95,17 +94,13 @@ export const Autolathe = (props) => {
           <Input
             fluid
             placeholder="Search Recipes..."
-            value={searchText}
+            selfClear
             onChange={(e, value) => {
-              setSearchText(value);
               if (value.length) {
                 act('search', {
                   to_search: value,
                 });
                 setCategory('results for "' + value + '"');
-              } else {
-                act('menu');
-                setCategory('None');
               }
             }}
           />
@@ -254,10 +249,7 @@ export const Autolathe = (props) => {
 const MaterialRow = (props) => {
   const { material, materialsmax, onRelease } = props;
 
-  const [amount, setAmount] = useSharedState(
-    'autolathe_amount_' + material.name,
-    1,
-  );
+  const [amount, setAmount] = useLocalState('amount' + material.name, 1);
 
   const amountAvailable = Math.floor(material.amount);
   return (
