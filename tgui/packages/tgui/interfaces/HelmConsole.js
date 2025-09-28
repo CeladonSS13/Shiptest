@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef, useState } from 'react';
 import {
   AnimatedNumber,
   Button,
@@ -16,8 +17,52 @@ import { decodeHtmlEntities } from 'tgui-core/string';
 import { useBackend } from '../backend';
 import { Window } from '../layouts';
 
+// [CELADON-ADD] - CELADON_OVERMAP_FIX - Исправление бага овермапы в BYOND 516
+// OvermapPane - автоматическое исправление овермапы при первом открытии
+const OvermapPane = ({ mapRef }) => {
+  const { act } = useBackend();
+  const hostRef = useRef(null);
+  const [ready, setReady] = useState(false);
+  const [triggered, setTriggered] = useState(false);
+
+  useLayoutEffect(() => {
+    const el = hostRef.current;
+    if (!el || triggered) return;
+
+    const measure = () => {
+      const r = el.getBoundingClientRect();
+      if (r.width > 2 && r.height > 2 && !ready) {
+        setReady(true);
+        // Обновляем карту ТОЛЬКО при первом открытии (без изменения sensor_range)
+        setTimeout(() => {
+          act('refresh_map');
+          setTriggered(true);
+        }, 100);
+      }
+    };
+
+    // Только первый замер, без ResizeObserver
+    measure();
+  }, [ready, triggered, act]);
+
+  return (
+    <div className="OvermapFrame">
+      <div ref={hostRef} className="OvermapFill">
+        {ready && (
+          <ByondUi
+            params={{ id: mapRef, type: 'map' }}
+            style={{ width: '100%', height: '100%' }}
+          />
+        )}
+      </div>
+    </div>
+  );
+};
+// [/CELADON-ADD]
+
 export const HelmConsole = (_props) => {
   const { data } = useBackend();
+  if (!data) return null;
   const { mapRef, isViewer } = data;
   return (
     <Window width={870} height={708}>
@@ -34,14 +79,7 @@ export const HelmConsole = (_props) => {
             <div className="NoticeBox">Ship docked to: {data.docked}</div>
           )}
         </div>
-        <ByondUi
-          className="CameraConsole__map"
-          params={{
-            id: mapRef,
-            type: 'map',
-            zoomMode: 'distort',
-          }}
-        />
+        <OvermapPane mapRef={mapRef} />
       </div>
     </Window>
   );

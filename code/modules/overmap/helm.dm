@@ -158,6 +158,7 @@
 		current_ship = port.current_ship
 		current_ship.helms |= src
 
+
 /obj/machinery/computer/helm/ui_interact(mob/living/user, datum/tgui/ui)
 	// Update UI
 	if(!current_ship && !reload_ship())
@@ -172,11 +173,10 @@
 		user.put_in_hands(key)
 		return
 
-	// [CELADON-ADD] - CELADON_TGUI_FIX - Фиксит отображение овермапы в терминале.
-	if(current_ship.sensor_range < 1) {
-		current_ship.sensor_range = 1;
-		current_ship.token.update_screen();
-	}
+	// [CELADON-ADD] - CELADON_TGUI_FIX - // Ensure minimal sensor range and render frame BEFORE registering map objects
+	if(current_ship.sensor_range < 1)
+		current_ship.sensor_range = 1
+	current_ship.token.update_screen()
 	// [/CELADON-ADD]
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
@@ -190,12 +190,11 @@
 		if(length(concurrent_users) == 1 && is_living)
 			playsound(src, 'sound/machines/terminal_on.ogg', 25, FALSE)
 			use_power(active_power_usage)
-		// Register map objects
+		// Register map objects, do not re-render here (mirrors security console)
 		if(current_ship)
 			user.client.register_map_obj(current_ship.token.cam_screen)
 			user.client.register_map_obj(current_ship.token.cam_plane_master)
 			user.client.register_map_obj(current_ship.token.cam_background)
-			current_ship.token.update_screen()
 
 		// Open UI
 		ui = new(user, src, "HelmConsole", name)
@@ -260,10 +259,10 @@
 	.["y"] = current_ship.y || current_ship.docked_to.y
 	.["docking"] = current_ship.docking
 	.["docked"] = current_ship.docked_to
-	// [CELADON-EDIT] - CELADON_OVERMAP_ARPA - Это вагабонд насрал
+	// [CELADON-EDIT] - Ensure numeric values for UI AnimatedNumber
 	// .["heading"] = dir2text(current_ship.get_heading()) || "None"
-	.["course"] = "[current_ship.get_alt_heading()]°"
-	.["heading"] = "[current_ship.bow_heading]°"
+	.["course"] = current_ship.get_alt_heading()
+	.["heading"] = current_ship.bow_heading
 	// [/CELADON-EDIT]
 	// .["heading"] = dir2text(current_ship.get_heading()) || "None"	// КОД JOPA
 	.["sector"] = current_ship.current_overmap.name
@@ -337,7 +336,38 @@
 	. = TRUE
 
 	switch(action) // Universal topics
-		// [CELADON-ADD] - CELADON_OVERMAP_STUFF - Это вагабонд насрал
+		// [CELADON-ADD] - CELADON_OVERMAP_FIX - Handshake размера окна карты
+		if("map_size") // Handshake размера окна карты
+			if(current_ship?.token)
+				var/obj/overmap/O = current_ship.token
+				var/w = text2num(params["w"])
+				var/h = text2num(params["h"])
+				if(w && h)
+					// жёстко задаём размер именно вторичной карты этого окна
+					winset(usr, O.map_name, "anchor=southwest;pos=1,1;size=[w]x[h];zoom-mode=distort")
+					// подстраховка: перепривязка и позиция
+					O.cam_screen.assigned_map = O.map_name
+					O.cam_plane_master.assigned_map = O.map_name
+					O.cam_background.assigned_map = O.map_name
+					O.cam_screen.set_position(1, 1)
+			return
+		if("refresh_map") // Двухходовка: сначала больше радиус, потом нормальный
+			if(current_ship?.token)
+				var/obj/overmap/O = current_ship.token
+				// rebind на всякий
+				O.cam_screen.assigned_map = O.map_name
+				O.cam_plane_master.assigned_map = O.map_name
+				O.cam_background.assigned_map = O.map_name
+				O.cam_screen.set_position(1, 1)
+
+				// Ход 1: временно больше радиус (НЕ меняем sensor_range корабля!)
+				var/tmp_r = max(current_ship.sensor_range, 1) + 1
+				O.update_screen(tmp_r)
+
+				// Ход 2: сразу отрисовать реальный кадр
+				O.update_screen()
+			return
+		// CELADON_OVERMAP_STUFF - Это вагабонд насрал
 		if("sensor_increase")
 			//овермап сенсорс максимальная дальность апдейт
 			current_ship.sensor_range = min(current_ship.default_sensor_range, current_ship.sensor_range+1)
