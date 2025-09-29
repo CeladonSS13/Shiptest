@@ -8,7 +8,7 @@
 /datum/export/claymore
 	unit_name = "defused claymores"
 	desc = "The Confederated League maintains an active bounty program for the disposal of UXO. Make the frontier a safer place today!"
-	cost = 1250
+	cost = 500 // cost = 1250 // [CELADON-EDIT] - Вы с ума сошли?
 	elasticity_coeff = 0.1
 	export_types = list(/obj/item/mine/directional/claymore)
 
