@@ -84,23 +84,23 @@
 /turf/open/water/MakeSlippery(wet_setting, min_wet_time, wet_time_to_add, max_wet_time, permanent) //water? wet? not in this economy.
 	return
 
-/turf/open/water/Entered(atom/movable/AM)
-	. = ..()
-	if(isliving(AM))
-		var/mob/living/L = AM
-		apply_water_effects_to_mob(L, src)
+// /turf/open/water/Entered(atom/movable/AM)
+// 	. = ..()
+// 	if(isliving(AM))
+// 		var/mob/living/L = AM
+		// apply_water_effects_to_mob(L, src) // ЧЕТО ДЕЛАЛ С ВОДОЙ
 
-/turf/open/water/Exited(atom/movable/AM, direction)
-	. = ..()
-	if(isliving(AM))
-		var/mob/living/L = AM
-		var/turf/T = get_turf(L)
-		if(get_water_level_at_turf(T) == WATER_LEVEL_NONE)
-			L.remove_status_effect(/datum/status_effect/drowning)
-			L.remove_status_effect(/datum/status_effect/water_slowdown)
-			L.remove_status_effect(/datum/status_effect/underwater_overlay)
-			L.remove_status_effect(/datum/status_effect/water_pressure)
-			L.apply_status_effect(/datum/status_effect/lung_water_clearing)
+// /turf/open/water/Exited(atom/movable/AM, direction)
+// 	. = ..()
+// 	if(isliving(AM))
+// 		var/mob/living/L = AM
+// 		var/turf/T = get_turf(L)
+// 		if(get_water_level_at_turf(T) == WATER_LEVEL_NONE)
+// 			L.remove_status_effect(/datum/status_effect/drowning)
+// 			L.remove_status_effect(/datum/status_effect/water_slowdown)
+// 			L.remove_status_effect(/datum/status_effect/underwater_overlay)
+// 			L.remove_status_effect(/datum/status_effect/water_pressure)
+// 			L.apply_status_effect(/datum/status_effect/lung_water_clearing)
 
 /turf/open/water/proc/get_light(obj/item/source, target_light, target_power, target_color,)
 	light_range = target_light
