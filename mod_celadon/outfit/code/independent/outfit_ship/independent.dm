@@ -24,36 +24,45 @@
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/chemist
+	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/ce
+	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/cmo
+	job_icon = "chiefmedicalofficer"
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/engineer
+	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/hos
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/doctor
+	job_icon = "medicaldoctor"
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/miner
+	job_icon = "shaftminer"
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/paramedic
+	job_icon = "paramedic"
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/security
+	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/warden
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/assistant/fancy/lagoon
+	job_icon = "assistant"
 	name = "Independent - Fancy (Formal Uniform)"
 
 	shoes = /obj/item/clothing/shoes/laceup
@@ -202,6 +211,7 @@
 // Bartender
 
 /datum/outfit/job/independent/bartender/lagoon
+	job_icon = "bartender"
 	name = "Independent - Bartender"
 
 	glasses = /obj/item/clothing/glasses/sunglasses/reagent
@@ -281,4 +291,5 @@
 // Janitor - У оффов не был прописан jobtype и это вызывало рантайм. Прописываем его здесь. Увы.
 
 /datum/outfit/job/prisoner
+	job_icon = "assistant"
 	jobtype = /datum/job/prisoner

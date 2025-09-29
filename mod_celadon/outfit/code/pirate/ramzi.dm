@@ -28,6 +28,7 @@
 	H.faction |= list(FACTION_PIRATES)
 
 /datum/outfit/job/ramzi_clique/captain
+	job_icon = "assistant"
 	name = "Ramzi Clique Rondo - Battle Master"
 
 	id_assignment = "Battle Master"
@@ -41,6 +42,7 @@
 	suit = /obj/item/clothing/suit/armor/ramzi/officer
 
 /datum/outfit/job/ramzi_clique/trooper
+	job_icon = "assistant"
 	name = "Ramzi Clique Rondo - Commando"
 
 	id_assignment = "Commando"

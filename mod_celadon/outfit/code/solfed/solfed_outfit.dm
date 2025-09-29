@@ -123,12 +123,15 @@
 	box = /obj/item/storage/box/survival/solfed
 
 /datum/outfit/job/solfed/engineer
+	job_icon = "stationengineer"
 	box = /obj/item/storage/box/survival/solfed
 
 /datum/outfit/job/solfed/doctor
+	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/solfed
 
 /datum/outfit/job/solfed/miner
+	job_icon = "stationengineer"
 	box = /obj/item/storage/box/survival/solfed
 
 // Ученые
@@ -344,6 +347,7 @@
 
 //	Капитан	//
 /datum/outfit/job/solfed/captain/elysium
+	job_icon = "assistant"
 	name = "SolFed - Elysium Musharif"
 
 	head = /obj/item/clothing/head/solfed/beret/elysium
@@ -363,6 +367,7 @@
 
 //	Хос	//
 /datum/outfit/job/solfed/sergeant/elysium
+	job_icon = "assistant"
 	name = "SolFed - Elysium Mulazim"
 
 	head = /obj/item/clothing/head/solfed/beret/elysium
@@ -381,6 +386,7 @@
 
 //	Офицер	//
 /datum/outfit/job/solfed/marine/elysium
+	job_icon = "assistant"
 	name = "SolFed - Elysium Haris"
 
 	id = /obj/item/card/id/solfed
@@ -398,6 +404,7 @@
 
 //	медик	//
 /datum/outfit/job/solfed/doctor/elysium
+	job_icon = "assistant"
 	name = "SolFed - Elysium Shafi"
 
 	id = /obj/item/card/id/solfed
@@ -415,6 +422,7 @@
 
 //	Инженер	//
 /datum/outfit/job/solfed/engineer/elysium
+	job_icon = "assistant"
 	name = "SolFed - Elysium Khabeer Fanni"
 
 	id = /obj/item/card/id/solfed

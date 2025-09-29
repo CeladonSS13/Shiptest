@@ -68,6 +68,7 @@
 
 //рекрут
 /datum/outfit/job/inteq/assistant/celadon
+	job_icon = "assistant"
 	name = "Recruit (InteQ)"
 	id = /obj/item/card/id/inteq/recruit
 
@@ -82,6 +83,7 @@
 //Капитан
 
 /datum/outfit/job/inteq/captain/celadon
+	job_icon = "assistant"
 	name = "Vanguard (InteQ)"
 	head = /obj/item/clothing/head/beret/sec/hos/inteq
 	mask = /obj/item/clothing/mask/gas/sechailer/swat
@@ -98,6 +100,7 @@
 //Командир
 
 /datum/outfit/job/inteq/captain/honorable/celadon
+	job_icon = "assistant"
 	name = "Honorable Vanguard (InteQ)"
 	head = /obj/item/clothing/head/beret/sec/hos/inteq/honorable
 	mask = /obj/item/clothing/mask/gas/sechailer/swat
@@ -115,6 +118,7 @@
 //Арьергард. Rearguard
 
 /datum/outfit/job/inteq/captain/rearguard/celadon
+	job_icon = "assistant"
 	name = "Rearguard (InteQ)"
 	id_assignment = "Rearguard"
 	head = /obj/item/clothing/head/beret/sec/hos/inteq
@@ -129,6 +133,7 @@
 
 // Лейтенант первого класса
 /datum/outfit/job/inteq/captain/enfco/celadon
+	job_icon = "assistant"
 	name = "Enforcer class One (InteQ)"
 	head = /obj/item/clothing/head/beret/sec/hos/inteq
 	mask = /obj/item/clothing/mask/balaclava
@@ -147,6 +152,7 @@
 //Парамедик
 
 /datum/outfit/job/inteq/paramedic/celadon
+	job_icon = "assistant"
 	name = "Corpsman (InteQ)"
 	ears = /obj/item/radio/headset/inteq
 	id = /obj/item/card/id/inteq/corspman
@@ -182,6 +188,7 @@
 //Служба безопасности
 
 /datum/outfit/job/inteq/security/celadon
+	job_icon = "assistant"
 	name = "Enforcer (InteQ)"
 	id = /obj/item/card/id/inteq/enf
 
@@ -192,6 +199,7 @@
 // Варден
 
 /datum/outfit/job/inteq/warden/celadon
+	job_icon = "assistant"
 	name = "Master At Arms (InteQ)"
 	id = /obj/item/card/id/inteq/maas
 
@@ -202,6 +210,7 @@
 // Главный инженер
 
 /datum/outfit/job/inteq/ce/celadon
+	job_icon = "assistant"
 	name = "Artificer Class One (InteQ)"
 	id = /obj/item/card/id/inteq/afr/ce
 
@@ -212,6 +221,7 @@
 //Инженегр
 
 /datum/outfit/job/inteq/engineer/celadon
+	job_icon = "assistant"
 	name = "Artificer (InteQ)"
 	id = /obj/item/card/id/inteq/afr
 

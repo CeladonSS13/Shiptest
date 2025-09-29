@@ -43,6 +43,7 @@
 	box = /obj/item/storage/box/survival/syndicate
 
 /datum/outfit/job/syndicate/miner/twink
+	job_icon = "shaftminer"
 	box = /obj/item/storage/box/survival/syndicate
 
 /datum/outfit/job/syndicate/paramedic
@@ -52,15 +53,18 @@
 	box = /obj/item/storage/box/survival/syndicate
 
 /datum/outfit/job/syndicate/cmo
+	job_icon = "chiefmedicalofficer"
 	box = /obj/item/storage/box/survival/syndicate
 
 /datum/outfit/job/syndicate/security
+	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/syndicate
 
 /datum/outfit/job/syndicate/hos
 	box = /obj/item/storage/box/survival/syndicate
 
 /datum/outfit/job/syndicate/assistant
+	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/syndicate
 
 /datum/outfit/job/syndicate/assistant/suns

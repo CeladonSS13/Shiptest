@@ -29,39 +29,50 @@
 	box = /obj/item/storage/box/survival/nanotrasen
 
 /datum/outfit/job/nanotrasen/hos
+	job_icon = "headofsecurity"
 	box = /obj/item/storage/box/survival/nanotrasen
 
 /datum/outfit/job/nanotrasen/engineer
+	job_icon = "stationengineer"
 	box = /obj/item/storage/box/survival/nanotrasen
 
 /datum/outfit/job/nanotrasen/security
+	job_icon = "securityofficer"
 	box = /obj/item/storage/box/survival/nanotrasen
 
 /datum/outfit/job/nanotrasen/paramedic
+	job_icon = "paramedic"
 	box = /obj/item/storage/box/survival/nanotrasen
 
 /datum/outfit/job/nanotrasen/doctor
+	job_icon = "medicaldoctor"
 	box = /obj/item/storage/box/survival/nanotrasen
 
 /datum/outfit/job/nanotrasen/cmo
 	box = /obj/item/storage/box/survival/nanotrasen
 
 /datum/outfit/job/nanotrasen/warden
+	job_icon = "warden"
 	box = /obj/item/storage/box/survival/nanotrasen
 
 /datum/outfit/job/nanotrasen/ce
+	job_icon = "chiefengineer"
 	box = /obj/item/storage/box/survival/nanotrasen
 
 /datum/outfit/job/nanotrasen/atmos
+	job_icon = "stationengineer"
 	box = /obj/item/storage/box/survival/nanotrasen
 
 /datum/outfit/job/nanotrasen/miner
+	job_icon = "shaftminer"
 	box = /obj/item/storage/box/survival/nanotrasen
 
 /datum/outfit/job/nanotrasen/doctor/lp
+	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/nanotrasen
 
 /datum/outfit/job/nanotrasen/chemist
+	job_icon = "chemist"
 	box = /obj/item/storage/box/survival/nanotrasen
 
 //// MARK: MARK: Научный директор - РД
@@ -250,6 +261,7 @@
 /// MARK: ЕРТ коммандер
 
 /datum/outfit/job/nanotrasen/security/ert/commander
+	job_icon = "assistant"
 	name = "Nanotrasen - ERT Сommander"
 
 	uniform = /obj/item/clothing/under/rank/security/officer/blueshirt
