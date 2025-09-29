@@ -346,7 +346,7 @@
 	name = "\improper SolFed keycard"
 	desc = "A SolFed keycard with no proper access to speak of."
 	assignment = "Navy member"
-	icon = 'mod_celadon/_storage_icons/icons/items/misc/sfcard.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/card.dmi'
 	icon_state = "solfed"
 	uses_overlays = FALSE
 
