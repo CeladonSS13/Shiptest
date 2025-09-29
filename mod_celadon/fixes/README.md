@@ -27,6 +27,7 @@ FIXES_SHIP_LOGIN_DOUBLE_NAME
 FIXES_WETHIDE
 FIXES_DRILLCLASS
 FIXES_MOTH_EATING_CLOTHING
+FIXES_ANTAG_NINJA
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -252,6 +253,13 @@ FIXES_OFFERING_EFFECTS
 FIXES_SPAWNERS_ON_SPACE - Проверка на космотурф
 - ADD: `code/game/objects/effects/spawners/mobspawner.dm`
 - ADD: `code/modules/events/spacevine.dm`
+
+FIXES_ANTAG_NINJA
+- EDIT, ADD, REMOVE: `code/modules/ninja/suit/suit.dm`
+- EDIT, ADD: `code/modules/ninja/energy_katana.dm`
+- EDIT: `code/modules/ninja/suit/suit_attackby.dm`
+
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
