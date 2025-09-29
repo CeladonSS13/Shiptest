@@ -44,7 +44,11 @@
 	visor_flags = BLOCK_GAS_SMOKE_EFFECT | ALLOWINTERNALS
 	visor_flags_inv = HIDEFACIALHAIR
 	visor_flags_cover = MASKCOVERSMOUTH
-	actions_types = list(/datum/action/item_action/adjust)	// [CELADON-ADD]
+// [CELADON-ADD]
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/mask/mask.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/mask/overlay/mask.dmi'
+	actions_types = list(/datum/action/item_action/adjust)
+// [/CELADON-ADD]
 	armor = list("melee" = 0, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 0, "bio" = 50, "rad" = 0, "fire" = 20, "acid" = 40)
 	resistance_flags = FIRE_PROOF
 
