@@ -3,6 +3,7 @@
 
 #include "_outfit.dm"
 
+#include "code/elysium/outfit_ship/card_id.dm"
 #include "code/elysium/clothing/armor.dm"
 #include "code/elysium/clothing/belt.dm"
 #include "code/elysium/clothing/clothing.dm"
@@ -10,7 +11,6 @@
 #include "code/elysium/clothing/shoes.dm"
 #include "code/elysium/clothing/suits.dm"
 #include "code/elysium/clothing/under.dm"
-
 #include "code/elysium/outfit_ship/elysium.dm"
 #include "code/elysium/elysium_merch.dm"
 #include "code/elysium/items.dm"
@@ -19,10 +19,12 @@
 
 #include "code/gamma/gamma.dm"
 
+#include "code/independent/outfit_ship/card_id.dm"
 #include "code/independent/outfit_ship/independent.dm"
+#include "code/independent/outfit_ship/roumain.dm"
 
+#include "code/inteq/card_id.dm"
 #include "code/inteq/armor.dm"
-#include "code/inteq/cards_ids.dm"
 #include "code/inteq/inteq_outfit.dm"
 
 #include "code/nanotrasen/nt_card_id.dm"
@@ -35,11 +37,15 @@
 #include "code/solfed/solfed_other_stuff.dm"
 #include "code/solfed/solfed_outfit.dm"
 
+#include "code/syndicate/card_id.dm"
 #include "code/syndicate/syndi_outfit.dm"
 
+#include "code/card_id.dm"
 #include "code/event.dm"
 #include "code/standard.dm"
 
+#include "code/pirate/card_id.dm"
+#include "code/pirate/frontiersmen.dm"
 #include "code/pirate/ramzi.dm"
 #include "code/pirate/pirate.dm"
 

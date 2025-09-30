@@ -1,7 +1,7 @@
 /obj/item/card/id/elysium_com
 	name = "\improper Elysium Central Command access card"
 	desc = "An access card sourced from Elysium Central Command."
-	icon = 'mod_celadon/_storage_icons/icons/items/misc/elysium_card.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/card.dmi'
 	icon_state = "elysium_com"
 	uses_overlays = FALSE
 	registered_age = null
@@ -207,7 +207,7 @@
 
 	name = "Avanpost Chief Medical Officer"
 
-	id = /obj/item/card/id/silver/elysium_cmo
+	id = /obj/item/card/id/outpost/cmo
 	belt = /obj/item/pda/heads/cmo
 	l_pocket = /obj/item/pinpointer/crew
 	ears = /obj/item/radio/headset/headset_com
