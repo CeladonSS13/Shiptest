@@ -293,3 +293,80 @@
 /datum/outfit/job/prisoner
 	job_icon = "assistant"
 	jobtype = /datum/job/prisoner
+
+// Все остальные аутфиты
+
+/datum/outfit/job/independent/lawyer
+	job_icon = "assistant"
+
+/datum/outfit/job/independent/assistant/waiter
+	job_icon = "assistant"
+
+/datum/outfit/job/independent/scientist
+	job_icon = "scientist"
+
+/datum/outfit/job/independent/captain/masinyane
+	job_icon = "assistant"
+
+/datum/outfit/job/independent/cargo_tech
+	job_icon = "assistant"
+
+/datum/outfit/job/independent/captain/western
+	job_icon = "captain"
+
+/datum/outfit/job/independent/quartermaster/western
+	job_icon = "assistant"
+
+/datum/outfit/job/independent/miner/hazard
+	job_icon = "shaftminer"
+
+/datum/outfit/job/independent/cook
+	job_icon = "cook"
+
+/datum/outfit/job/independent/hop/western
+	job_icon = "assistant"
+
+/datum/outfit/job/independent/roboticist
+	job_icon = "assistant"
+
+/datum/outfit/job/independent/security/western
+	job_icon = "securityofficer"
+
+/datum/outfit/job/independent/cmo/pharma
+	job_icon = "assistant"
+
+/datum/outfit/job/independent/chemist/pharma
+	job_icon = "assistant"
+
+/datum/outfit/job/independent/bartender/pharma
+	job_icon = "assistant"
+
+/datum/outfit/job/independent/botanist/pharma
+	job_icon = "assistant"
+
+/datum/outfit/job/independent/assistant/pharma
+	job_icon = "assistant"
+
+/datum/outfit/job/independent/detective
+	job_icon = "detective"
+
+/datum/outfit/job/independent/captain/manager
+	job_icon = "assistant"
+
+/datum/outfit/job/independent/bartender/disarmed
+	job_icon = "bartender"
+
+/datum/outfit/job/independent/curator/dungeonmaster
+	job_icon = "headofsecurity"
+
+/datum/outfit/job/independent/assistant/artist
+	job_icon = "assistant"
+
+/datum/outfit/job/independent/engineer/salvage
+	job_icon = "assistant"
+
+/datum/outfit/job/independent/rd
+	job_icon = "researchdirector"
+
+/datum/outfit/job/independent/miner/scientist
+	job_icon = "assistant"

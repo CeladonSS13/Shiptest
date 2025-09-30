@@ -228,3 +228,13 @@
 /datum/outfit/job/inteq/engineer/celadon/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_inteq_g_acces(H)
+
+// Все остальные
+/datum/outfit/job/inteq/security/beluga
+	job_icon = "chiefengineer"
+
+/datum/outfit/job/inteq/captain
+	job_icon = "researchdirector"
+
+/datum/outfit/job/inteq/security
+	job_icon = "chiefengineer"

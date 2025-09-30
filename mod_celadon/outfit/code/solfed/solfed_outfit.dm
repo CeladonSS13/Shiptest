@@ -438,3 +438,8 @@
 /datum/outfit/job/solfed/engineer/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_engineer_access(H)
+
+// Все остальные
+
+/datum/outfit/job/solgov/patient
+	job_icon = "assistant"
