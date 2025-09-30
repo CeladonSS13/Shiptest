@@ -432,60 +432,60 @@
 	ears = /obj/item/radio/headset/nanotrasen/alt
 	backpack_contents = list(/obj/item/construction/rcd/loaded)
 
-// Все остальные
-/datum/outfit/job/nanotrasen/captain
-	job_icon = "captain"
+// Все остальные аутфиты. При надобности расскоментить
+// /datum/outfit/job/nanotrasen/captain
+// 	job_icon = "captain"
 
-/datum/outfit/job/nanotrasen/lawyer
-	job_icon = "lawyer"
+// /datum/outfit/job/nanotrasen/lawyer
+// 	job_icon = "lawyer"
 
-/datum/outfit/job/nanotrasen/assistant
-	job_icon = "assistant"
+// /datum/outfit/job/nanotrasen/assistant
+// 	job_icon = "assistant"
 
-/datum/outfit/job/nanotrasen/hop
-	job_icon = "chiefengineer"
+// /datum/outfit/job/nanotrasen/hop
+// 	job_icon = "chiefengineer"
 
-/datum/outfit/job/nanotrasen/quartermaster
-	job_icon = "assistant"
+// /datum/outfit/job/nanotrasen/quartermaster
+// 	job_icon = "assistant"
 
-/datum/outfit/job/nanotrasen/lawyer/corporaterepresentative
-	job_icon = "assistant"
+// /datum/outfit/job/nanotrasen/lawyer/corporaterepresentative
+// 	job_icon = "assistant"
 
-/datum/outfit/job/nanotrasen/cargo_tech
-	job_icon = "assistant"
+// /datum/outfit/job/nanotrasen/cargo_tech
+// 	job_icon = "assistant"
 
-/datum/outfit/job/nanotrasen/scientist
-	job_icon = "scientist"
+// /datum/outfit/job/nanotrasen/scientist
+// 	job_icon = "scientist"
 
-/datum/outfit/job/nanotrasen/roboticist
-	job_icon = "roboticist"
+// /datum/outfit/job/nanotrasen/roboticist
+// 	job_icon = "roboticist"
 
-/datum/outfit/job/nanotrasen/captain/lp
-	job_icon = "assistant"
+// /datum/outfit/job/nanotrasen/captain/lp
+// 	job_icon = "assistant"
 
-/datum/outfit/job/nanotrasen/engineer/lp
-	job_icon = "stationengineer"
+// /datum/outfit/job/nanotrasen/engineer/lp
+// 	job_icon = "stationengineer"
 
-/datum/outfit/job/nanotrasen/security/lp
-	job_icon = "securityofficer"
+// /datum/outfit/job/nanotrasen/security/lp
+// 	job_icon = "securityofficer"
 
-/datum/outfit/job/nanotrasen/captain/centcom
-	job_icon = "captain"
+// /datum/outfit/job/nanotrasen/captain/centcom
+// 	job_icon = "captain"
 
-/datum/outfit/job/nanotrasen/security/ert/med
-	job_icon = "chiefengineer"
+// /datum/outfit/job/nanotrasen/security/ert/med
+// 	job_icon = "chiefengineer"
 
-/datum/outfit/job/nanotrasen/security/ert/engi
-	job_icon = "chiefengineer"
+// /datum/outfit/job/nanotrasen/security/ert/engi
+// 	job_icon = "chiefengineer"
 
-/datum/outfit/job/nanotrasen/pilot
-	job_icon = "assistant"
+// /datum/outfit/job/nanotrasen/pilot
+// 	job_icon = "assistant"
 
-/datum/outfit/job/nanotrasen/security/mech_pilot
-	job_icon = "assistant"
+// /datum/outfit/job/nanotrasen/security/mech_pilot
+// 	job_icon = "assistant"
 
-/datum/outfit/job/nanotrasen/brig_phys
-	job_icon = "assistant"
+// /datum/outfit/job/nanotrasen/brig_phys
+// 	job_icon = "assistant"
 
-/datum/outfit/job/nanotrasen/captain/ns
-	job_icon = "captain"
+// /datum/outfit/job/nanotrasen/captain/ns
+// 	job_icon = "captain"

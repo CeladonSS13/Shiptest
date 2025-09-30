@@ -439,7 +439,6 @@
 	. = ..()
 	get_solfed_engineer_access(H)
 
-// Все остальные
-
-/datum/outfit/job/solgov/patient
-	job_icon = "assistant"
+// Все остальные аутфиты. При надобности расскоментить
+// /datum/outfit/job/solgov/patient
+// 	job_icon = "assistant"

@@ -11,7 +11,7 @@
 	head = /obj/item/clothing/head/shemag/green
 	uniform = /obj/item/clothing/under/color/darkgreen
 	shoes = /obj/item/clothing/shoes/sneakers/black
-	id = /obj/item/card/id/elysium/assistant
+	id = /obj/item/card/id/elysium/crew
 
 /datum/outfit/job/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -71,7 +71,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	ears = /obj/item/radio/headset/alt
 	backpack_contents = list(/obj/item/melee/knife/switchblade)
-	id = /obj/item/card/id/elysium/security
+	id = /obj/item/card/id/elysium/crew
 
 /datum/outfit/job/elysium/security/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -88,7 +88,7 @@
 	backpack = /obj/item/storage/backpack/satchel
 	uniform = /obj/item/clothing/under/utility
 	shoes = /obj/item/clothing/shoes/jackboots
-	id = /obj/item/card/id/elysium/assistant
+	id = /obj/item/card/id/elysium/crew
 
 /datum/outfit/job/elysium/assistant/post_equip(mob/living/carbon/human/H)
 	. = ..()
