@@ -62,28 +62,28 @@
 		for (var/obj/item/card/id/card in W.contents)
 			W.combined_access |= card.access
 
-	// Даём Интекам свой дюфель взятый с Блюмуна, не имеет никаких отличающих стат
-/datum/outfit/job/inteq
-	duffelbag = /obj/item/storage/backpack/duffelbag/inteq
+// Даём Интекам свой дюфель взятый с Блюмуна, не имеет никаких отличающих стат
+/datum/outfit/job/inteq/celadon
+	// uses_overlays = FALSE
+	jobtype = /datum/job/assistant
 
-//рекрут
-/datum/outfit/job/inteq/assistant/celadon
-	job_icon = "assistant"
+	id = /obj/item/card/id/inteq
+	duffelbag = /obj/item/storage/backpack/duffelbag/inteq
+	box = /obj/item/storage/box/survival/inteq	// Даёт всем интекашкам брендовый сурвивал бокс
+
+//MARK: Рекрут
+/datum/outfit/job/inteq/celadon/assistant
 	name = "Recruit (InteQ)"
+
 	id = /obj/item/card/id/inteq/recruit
 
-/datum/outfit/job/inteq/assistant/celadon/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/inteq/celadon/assistant/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_inteq_g_acces(H)
 
-	// Даёт всем интекашкам брендовый сурвивал бокс
-/datum/outfit/job/inteq
-	box = /obj/item/storage/box/survival/inteq
-
-//Капитан
-
-/datum/outfit/job/inteq/captain/celadon
-	job_icon = "assistant"
+//MARK: Капитан
+/datum/outfit/job/inteq/celadon/captain
+	job_icon = "captain"
 	name = "Vanguard (InteQ)"
 	head = /obj/item/clothing/head/beret/sec/hos/inteq
 	mask = /obj/item/clothing/mask/gas/sechailer/swat
@@ -93,13 +93,12 @@
 	gloves = /obj/item/clothing/gloves/combat
 	id = /obj/item/card/id/inteq/vanguard
 
-/datum/outfit/job/inteq/captain/celadon/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/inteq/celadon/captain/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_inteq_all_acces(H)
 
-//Командир
-
-/datum/outfit/job/inteq/captain/honorable/celadon
+//MARK: Командир
+/datum/outfit/job/inteq/celadon/honorable
 	job_icon = "assistant"
 	name = "Honorable Vanguard (InteQ)"
 	head = /obj/item/clothing/head/beret/sec/hos/inteq/honorable
@@ -111,29 +110,27 @@
 	gloves = /obj/item/clothing/gloves/combat
 	id = /obj/item/card/id/inteq/vanguard
 
-/datum/outfit/job/inteq/captain/honorable/celadon/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/inteq/celadon/honorable/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_inteq_all_acces(H)
 
-//Арьергард. Rearguard
+//MARK: Арьергард. Rearguard
 
-/datum/outfit/job/inteq/captain/rearguard/celadon
-	job_icon = "assistant"
+/datum/outfit/job/inteq/celadon/rearguard
 	name = "Rearguard (InteQ)"
 	id_assignment = "Rearguard"
 	head = /obj/item/clothing/head/beret/sec/hos/inteq
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
 	suit = /obj/item/clothing/suit/armor/vest/inteq
 	gloves = /obj/item/clothing/gloves/combat
-	id = /obj/item/card/id/inteq/rearguard
+	id = /obj/item/card/id/inteq/honorable_rearguard
 
-/datum/outfit/job/inteq/captain/rearguard/celadon/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/inteq/celadon/rearguard/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_inteq_all_acces(H)
 
-// Лейтенант первого класса
-/datum/outfit/job/inteq/captain/enfco/celadon
-	job_icon = "assistant"
+//MARK: Лейтенант первого класса
+/datum/outfit/job/inteq/celadon/enforcer
 	name = "Enforcer class One (InteQ)"
 	head = /obj/item/clothing/head/beret/sec/hos/inteq
 	mask = /obj/item/clothing/mask/balaclava
@@ -142,32 +139,30 @@
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/usp45
 	belt = /obj/item/ammo_box/magazine/usp45_standart
 	gloves = /obj/item/clothing/gloves/combat
-	id = /obj/item/card/id/inteq/vanguard
-	id = /obj/item/card/id/inteq/enfco
+	id = /obj/item/card/id/inteq/enforcer
 
-/datum/outfit/job/inteq/captain/enfco/celadon/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/inteq/celadon/enforcer/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_inteq_all_acces(H)
 
-//Парамедик
+//MARK: Парамедик
 
-/datum/outfit/job/inteq/paramedic/celadon
-	job_icon = "assistant"
+/datum/outfit/job/inteq/celadon/paramedic
 	name = "Corpsman (InteQ)"
 	ears = /obj/item/radio/headset/inteq
-	id = /obj/item/card/id/inteq/corspman
+	id = /obj/item/card/id/inteq/medic
 
-/datum/outfit/job/inteq/paramedic/celadon/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/inteq/celadon/paramedic/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_inteq_g_acces(H)
 
 //Главный медик
 
-/datum/outfit/job/inteq/cmo/celadon
+/datum/outfit/job/inteq/celadon/cmo
 	name = "IRMG - Honorable Corpsman"
 	id_assignment = "Honorable Corpsman"
-	jobtype = /datum/job/cmo
-	job_icon = "chiefmedicalofficer"
+	// jobtype = /datum/job/cmo
+	// job_icon = "chiefmedicalofficer"
 
 	belt = /obj/item/storage/belt/medical/webbing/paramedic
 	ears = /obj/item/radio/headset/inteq/captain
@@ -178,54 +173,51 @@
 	alt_suit = /obj/item/clothing/suit/armor/inteq/corpsman
 	dcoat = /obj/item/clothing/suit/armor/hos/inteq
 	r_pocket = /obj/item/pda/medical
+	id = /obj/item/card/id/inteq/honorable_medic
 
 	chameleon_extras = null
 
-/datum/outfit/job/inteq/cmo/celadon/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/inteq/celadon/cmo/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_inteq_g_acces(H)
 
-//Служба безопасности
+//MARK: Служба безопасности
 
-/datum/outfit/job/inteq/security/celadon
-	job_icon = "assistant"
+/datum/outfit/job/inteq/celadon/security
 	name = "Enforcer (InteQ)"
-	id = /obj/item/card/id/inteq/enf
+	id = /obj/item/card/id/inteq/enforcer
 
-/datum/outfit/job/inteq/security/celadon/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/inteq/celadon/security/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_inteq_gsec_acces(H)
 
-// Варден
+//MARK: Варден
 
-/datum/outfit/job/inteq/warden/celadon
-	job_icon = "assistant"
+/datum/outfit/job/inteq/celadon/warden
 	name = "Master At Arms (InteQ)"
-	id = /obj/item/card/id/inteq/maas
+	id = /obj/item/card/id/inteq/master_at_arms
 
-/datum/outfit/job/inteq/warden/celadon/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/inteq/celadon/warden/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_inteq_gsec_acces(H)
 
-// Главный инженер
+//MARK: Главный инженер
 
-/datum/outfit/job/inteq/ce/celadon
-	job_icon = "assistant"
+/datum/outfit/job/inteq/celadon/ce
 	name = "Artificer Class One (InteQ)"
-	id = /obj/item/card/id/inteq/afr/ce
+	id = /obj/item/card/id/inteq/honorable_artificer
 
-/datum/outfit/job/inteq/ce/celadon/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/inteq/celadon/ce/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_inteq_all_acces(H)
 
 //Инженегр
 
-/datum/outfit/job/inteq/engineer/celadon
-	job_icon = "assistant"
+/datum/outfit/job/inteq/celadon/engineer
 	name = "Artificer (InteQ)"
-	id = /obj/item/card/id/inteq/afr
+	id = /obj/item/card/id/inteq/artificer
 
-/datum/outfit/job/inteq/engineer/celadon/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/inteq/celadon/engineer/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_inteq_g_acces(H)
 

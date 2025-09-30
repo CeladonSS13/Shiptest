@@ -1,51 +1,96 @@
 /obj/item/card/id/inteq
-	desc = "A inteq ID with no proper access to speak of."
-	icon = 'mod_celadon/_storage_icons/icons/resprite/card.dmi'
+	job_icon = "inteq"
 	faction_icon = "bg_inteq"
-	icon_state = "inteqrt"
+	icon = 'mod_celadon/_storage_icons/icons/resprite/card.dmi'
+	icon_state = "idiq_assistant"
+	desc = "A inteq ID with no proper access to speak of."
+	uses_overlays = FALSE
 
 /obj/item/card/id/inteq/vanguard
+	job_icon = "captain"
 	desc = "A inteq ID with no proper access to speak of.This one indicates a Vanguard"
 	icon_state = "idiq_vanguard"
 	assignment = "Vanguard"
 
 /obj/item/card/id/inteq/master_at_arms
+	job_icon = "warden"
 	desc = "A inteq ID with no proper access to speak of.This one indicates a Master At Arms"
 	icon_state = "idiq_masteratarms"
 	assignment = "Master At Arms"
 
 /obj/item/card/id/inteq/enforcer
+	job_icon = "lieutenant"
 	desc = "A InteQ ID with no proper access to speak of. This one indicates a Enforcer."
 	icon_state = "idiq_enforcer"
 	assignment = "Enforcer"
 
 /obj/item/card/id/inteq/artificer
-	desc = "A InteQ ID with no proper access to speak of. This one indicates a Artificer Class One."
+	job_icon = "stationengineer"
+	desc = "A InteQ ID with no proper access to speak of. This one indicates a Artificer."
 	icon_state = "idiq_artificer"
-	assignment = "Artificer Class One"
+	assignment = "Artificer"
 
 /obj/item/card/id/inteq/medic
+	job_icon = "medicaldoctor"
 	desc = "A InteQ ID with no proper access to speak of. This one indicates a Medic."
 	icon_state = "idiq_medic"
-	assignment = "Medic Class One"
+	assignment = "Medic"
 
 /obj/item/card/id/inteq/recruit
+	job_icon = "assistant"
 	desc = "A InteQ ID with no proper access to speak of. This one indicates a Recruit."
 	icon_state = "idiq_assistant"
 	assignment = "Recruit"
 
 // MARK: Калибан
-/obj/item/card/id/inteq/honorable_vanguard
+/obj/item/card/id/inteq/honorable_rearguard
+	job_icon = "captain"
 	desc = "A InteQ ID with whith proper access to speak of. This one indicates a Rearguard from flagship vessels."
 	icon_state = "idiqh_honorablevanguard"
 	assignment = "Rearguard"
 
 /obj/item/card/id/inteq/honorable_artificer
-	desc = "A InteQ ID with whith proper access to speak of. This one indicates a Artificer Class Two from flagship vessels."
+	job_icon = "chiefengineer"
+	desc = "A InteQ ID with whith proper access to speak of. This one indicates a Artificer Class One from flagship vessels."
 	icon_state = "idiqh_artificer"
-	assignment = "Artificer Class Two"
+	assignment = "Artificer Class One"
 
 /obj/item/card/id/inteq/honorable_medic
-	desc = "A InteQ ID with whith proper access to speak of. This one indicates a Medic Class Two from flagship vessels."
+	job_icon = "chiefmedicalofficer"
+	desc = "A InteQ ID with whith proper access to speak of. This one indicates a Medic Class One from flagship vessels."
 	icon_state = "idiqh_medic"
-	assignment = "Medic Class Two"
+	assignment = "Medic Class One"
+
+
+// /obj/item/card/id/inteq/rearguard
+// 	desc = "A inteq ID with no proper access to speak of.This one indicates a Rearguard"
+// 	icon_state = "inteqvanguard"
+// 	assignment = "Rearguard"
+// 	job_icon = "captain"
+
+
+// /obj/item/card/id/inteq/enfco
+// 	desc = "A inteq ID with no proper access to speak of.This one indicates a Enforcer Class One"
+// 	icon_state = "inteqenfco"
+// 	assignment = "Enforcer Class One"
+// 	job_icon = "headofsecurity"
+
+
+
+// /obj/item/card/id/inteq/afr/ce
+// 	desc = "A InteQ ID with no proper access to speak of. This one indicates a Artificer Class One."
+// 	icon_state = "inteqafrse"
+// 	assignment = "Artificer Class One"
+// 	job_icon = "chiefengineer"
+
+// /obj/item/card/id/inteq/corspman
+// 	desc = "A InteQ ID with no proper access to speak of. This one indicates a Corspman."
+// 	icon_state = "inteqcsn"
+// 	assignment = "Corspman"
+// 	job_icon = "paramedic"
+
+// /obj/item/card/id/inteq/recruit
+// 	desc = "A InteQ ID with no proper access to speak of. This one indicates a Recruit."
+// 	icon_state = "inteqrt"
+// 	assignment = "Recruit"
+// 	job_icon = "assistant"
