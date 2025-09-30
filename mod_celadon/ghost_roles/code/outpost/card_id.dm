@@ -69,6 +69,7 @@
 	icon_state = "ideusm_captain"
 	assignment = "CMO"
 	job_icon = "chiefmedicalofficer"
+	uses_overlays = TRUE
 
 /obj/item/card/id/outpost/cmo/Initialize()
 	access = get_med_accesses_outpost(0)

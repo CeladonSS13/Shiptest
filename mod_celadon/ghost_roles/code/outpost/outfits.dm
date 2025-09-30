@@ -222,7 +222,7 @@
 	shoes = /obj/item/clothing/shoes/sneakers/white
 	suit =  /obj/item/clothing/suit/apron/surgical
 	// id = /obj/item/card/id/outpost/medic
-	id = /obj/item/card/id/outpost/cmo
+	id = /obj/item/card/id/outpost/medic
 	back = /obj/item/storage/backpack/medic
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic = 1,
 							/obj/item/storage/backpack/medic = 1,
