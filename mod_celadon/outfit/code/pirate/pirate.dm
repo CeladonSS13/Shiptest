@@ -49,3 +49,6 @@
 	faction_icon = "bg_pirate"
 	job_icon = "paramedic"
 
+// Pirate: Powder Monkey Outfit
+/datum/outfit/job/independent/engineer/pirate/celadon
+	name = "Powder Monkey (Pirate)"

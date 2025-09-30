@@ -370,3 +370,10 @@
 
 /datum/outfit/job/independent/miner/scientist
 	job_icon = "assistant"
+
+
+/datum/outfit/job/independent/hop
+	head = /obj/item/clothing/head/hopcap
+
+/datum/outfit/job/independent/quartermaster
+	head = /obj/item/clothing/head/supply_chief
