@@ -6,54 +6,46 @@
 
 /obj/item/card/id/inteq/vanguard
 	desc = "A inteq ID with no proper access to speak of.This one indicates a Vanguard"
-	icon_state = "inteqvanguard"
+	icon_state = "idiq_vanguard"
 	assignment = "Vanguard"
-	job_icon = "captain"
 
-/obj/item/card/id/inteq/rearguard
-	desc = "A inteq ID with no proper access to speak of.This one indicates a Rearguard"
-	icon_state = "inteqvanguard"
-	assignment = "Rearguard"
-	job_icon = "captain"
-
-/obj/item/card/id/inteq/enfco
-	desc = "A inteq ID with no proper access to speak of.This one indicates a Enforcer Class One"
-	icon_state = "inteqenfco"
-	assignment = "Enforcer Class One"
-	job_icon = "headofsecurity"
-
-/obj/item/card/id/inteq/maas
+/obj/item/card/id/inteq/master_at_arms
 	desc = "A inteq ID with no proper access to speak of.This one indicates a Master At Arms"
-	icon_state = "inteqmaas"
+	icon_state = "idiq_masteratarms"
 	assignment = "Master At Arms"
-	job_icon = "warden"
 
-/obj/item/card/id/inteq/enf
+/obj/item/card/id/inteq/enforcer
 	desc = "A InteQ ID with no proper access to speak of. This one indicates a Enforcer."
-	icon_state = "inteqenf"
+	icon_state = "idiq_enforcer"
 	assignment = "Enforcer"
-	job_icon = "securityofficer"
 
-/obj/item/card/id/inteq/afr
+/obj/item/card/id/inteq/artificer
 	desc = "A InteQ ID with no proper access to speak of. This one indicates a Artificer Class One."
-	icon_state = "inteqafr"
+	icon_state = "idiq_artificer"
 	assignment = "Artificer Class One"
-	job_icon = "stationengineer"
 
-/obj/item/card/id/inteq/afr/ce
-	desc = "A InteQ ID with no proper access to speak of. This one indicates a Artificer Class One."
-	icon_state = "inteqafrse"
-	assignment = "Artificer Class One"
-	job_icon = "chiefengineer"
-
-/obj/item/card/id/inteq/corspman
-	desc = "A InteQ ID with no proper access to speak of. This one indicates a Corspman."
-	icon_state = "inteqcsn"
-	assignment = "Corspman"
-	job_icon = "paramedic"
+/obj/item/card/id/inteq/medic
+	desc = "A InteQ ID with no proper access to speak of. This one indicates a Medic."
+	icon_state = "idiq_medic"
+	assignment = "Medic Class One"
 
 /obj/item/card/id/inteq/recruit
 	desc = "A InteQ ID with no proper access to speak of. This one indicates a Recruit."
-	icon_state = "inteqrt"
+	icon_state = "idiq_assistant"
 	assignment = "Recruit"
-	job_icon = "assistant"
+
+// MARK: Калибан
+/obj/item/card/id/inteq/honorable_vanguard
+	desc = "A InteQ ID with whith proper access to speak of. This one indicates a Rearguard from flagship vessels."
+	icon_state = "idiqh_honorablevanguard"
+	assignment = "Rearguard"
+
+/obj/item/card/id/inteq/honorable_artificer
+	desc = "A InteQ ID with whith proper access to speak of. This one indicates a Artificer Class Two from flagship vessels."
+	icon_state = "idiqh_artificer"
+	assignment = "Artificer Class Two"
+
+/obj/item/card/id/inteq/honorable_medic
+	desc = "A InteQ ID with whith proper access to speak of. This one indicates a Medic Class Two from flagship vessels."
+	icon_state = "idiqh_medic"
+	assignment = "Medic Class Two"
