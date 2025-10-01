@@ -4,30 +4,6 @@
 	box = /obj/item/storage/box/survival/independent
 	faction_icon = "bg_elysium"
 
-
-/obj/item/card/id/elysium
-	desc = "A Elysium ID with no proper access to speak of."
-	icon = 'mod_celadon/_storage_icons/icons/resprite/card.dmi'
-	icon_state = "elysium"
-
-/obj/item/card/id/elysium/captain
-	desc = "A Elysium ID with no proper access to speak of. This one indicates a Caid"
-	icon_state = "elysium"
-	assignment = "Caid"
-	job_icon = "captain"
-
-/obj/item/card/id/elysium/security
-	desc = "A Elysium ID with no proper access to speak of. This one indicates a Mukatell"
-	icon_state = "elysium"
-	assignment = "Mukatell"
-	job_icon = "securityofficer"
-
-/obj/item/card/id/elysium/assistant
-	desc = "A Elysium ID with no proper access to speak of. This one indicates a Ahisa`i"
-	icon_state = "elysium"
-	assignment = "Ahisa`i"
-	job_icon = "assistant"
-
 /datum/outfit/job/elysium
 	name = "Elysium - Base Outfit"
 
@@ -35,7 +11,7 @@
 	head = /obj/item/clothing/head/shemag/green
 	uniform = /obj/item/clothing/under/color/darkgreen
 	shoes = /obj/item/clothing/shoes/sneakers/black
-	id = /obj/item/card/id/elysium/assistant
+	id = /obj/item/card/id/cel/elysium/crew
 
 /datum/outfit/job/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -78,7 +54,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	mask = /obj/item/clothing/mask/bandana/green
 	ears = /obj/item/radio/headset/heads/captain/alt
-	id = /obj/item/card/id/elysium/captain
+	id = /obj/item/card/id/cel/elysium/captain
 
 /datum/outfit/job/elysium/captain/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -95,7 +71,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	ears = /obj/item/radio/headset/alt
 	backpack_contents = list(/obj/item/melee/knife/switchblade)
-	id = /obj/item/card/id/elysium/security
+	id = /obj/item/card/id/cel/elysium/crew
 
 /datum/outfit/job/elysium/security/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -112,7 +88,7 @@
 	backpack = /obj/item/storage/backpack/satchel
 	uniform = /obj/item/clothing/under/utility
 	shoes = /obj/item/clothing/shoes/jackboots
-	id = /obj/item/card/id/elysium/assistant
+	id = /obj/item/card/id/cel/elysium/crew
 
 /datum/outfit/job/elysium/assistant/post_equip(mob/living/carbon/human/H)
 	. = ..()

@@ -1,16 +1,16 @@
-/obj/item/card/id/elysium_com
+/obj/item/card/id/cel/elysium_com
 	name = "\improper Elysium Central Command access card"
 	desc = "An access card sourced from Elysium Central Command."
-	icon = 'mod_celadon/_storage_icons/icons/items/misc/elysium_card.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/card.dmi'
 	icon_state = "elysium_com"
 	uses_overlays = FALSE
 	registered_age = null
 
-/obj/item/card/id/elysium_com/Initialize()
+/obj/item/card/id/cel/elysium_com/Initialize()
 	access = get_all_centcom_access()+get_all_accesses_outpost()
 	. = ..()
 
-/obj/item/card/id/elysium_com/has_ship_access(datum/overmap/ship/controlled/ship)
+/obj/item/card/id/cel/elysium_com/has_ship_access(datum/overmap/ship/controlled/ship)
 	return TRUE
 
 /obj/effect/mob_spawn/human/bridgeofficerelysium
@@ -27,7 +27,7 @@
 	shoes = /obj/item/clothing/shoes/sneakers/sandals_cc/admin
 	head = /obj/item/clothing/head/shemag_elysium/admin
 	glasses = /obj/item/clothing/glasses/thermal/syndi/admin
-	id = /obj/item/card/id/elysium_com
+	id = /obj/item/card/id/cel/elysium_com
 	belt = /obj/item/storage/belt/security/webbing/elysium/vest_black
 	l_pocket = /obj/item/restraints/handcuffs
 	r_pocket = /obj/item/melee/baseball_bat/homerun/central_command
@@ -66,7 +66,7 @@
 	box = /obj/item/storage/box/survival/security
 	suit_store = /obj/item/gun/ballistic/revolver/mateba
 	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
-	id = /obj/item/card/id/elysium_com
+	id = /obj/item/card/id/cel/elysium_com
 
 	back = /obj/item/storage/backpack/satchel
 	backpack_contents = list(/obj/item/melee/classic_baton,
@@ -95,7 +95,7 @@
 	shoes = /obj/item/clothing/shoes/sneakers/sandals_cc/admin
 	l_pocket = /obj/item/melee/baseball_bat/homerun/central_command
 	r_pocket = /obj/item/lighter
-	id = /obj/item/card/id/elysium_com
+	id = /obj/item/card/id/cel/elysium_com
 
 	back = /obj/item/storage/backpack/satchel
 	backpack_contents = list(/obj/item/melee/classic_baton,
@@ -136,7 +136,7 @@
 	shoes = /obj/item/clothing/shoes/sneakers/sandals_cc/admin
 	l_pocket = /obj/item/melee/baseball_bat/homerun/central_command
 	r_pocket = /obj/item/lighter
-	id = /obj/item/card/id/elysium_com
+	id = /obj/item/card/id/cel/elysium_com
 
 	back = /obj/item/storage/backpack/satchel
 	backpack_contents = list(/obj/item/melee/classic_baton,
@@ -176,7 +176,7 @@
 	r_pocket = /obj/item/lighter
 	l_pocket = /obj/item/melee/baseball_bat/homerun/central_command
 	back = /obj/item/storage/backpack/satchel/leather
-	id = /obj/item/card/id/elysium_com
+	id = /obj/item/card/id/cel/elysium_com
 
 	back = /obj/item/storage/backpack/satchel
 	backpack_contents = list(/obj/item/melee/classic_baton,
@@ -207,7 +207,7 @@
 
 	name = "Avanpost Chief Medical Officer"
 
-	id = /obj/item/card/id/silver/elysium_cmo
+	id = /obj/item/card/id/outpost/cmo
 	belt = /obj/item/pda/heads/cmo
 	l_pocket = /obj/item/pinpointer/crew
 	ears = /obj/item/radio/headset/headset_com
