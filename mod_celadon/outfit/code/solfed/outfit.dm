@@ -4,6 +4,7 @@
 /datum/outfit/job/solfed
 	name = "SolFed - Base Outfit"
 	faction = FACTION_PLAYER_SOLFED
+	job_icon = "hudsf_fieldside"
 	faction_icon = "bg_solfed"
 
 	box = /obj/item/storage/box/survival/solfed
@@ -114,9 +115,8 @@
 /datum/outfit/job/solfed/scientist
 	name = "SolFed - Wissenschaftler"
 	jobtype = /datum/job/scientist
-	job_icon = "scientist"
 
-	id = /obj/item/card/id/cel/solfed/crew
+	id = /obj/item/card/id/cel/solfed/crew/scientist
 	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solgov/formal
 	shoes = /obj/item/clothing/shoes/laceup
@@ -129,9 +129,9 @@
 
 /datum/outfit/job/solfed/scientist/roboticist
 	name = "SolFed - Roboterkonstrukteur"
-	job_icon = "roboticist"
 	jobtype = /datum/job/roboticist
 
+	id = /obj/item/card/id/cel/solfed/crew/roboticist
 	uniform = /obj/item/clothing/under/rank/rnd/roboticist
 	suit = /obj/item/clothing/suit/longcoat/robowhite
 
@@ -142,9 +142,8 @@
 /datum/outfit/job/solfed/marine
 	name = "SolFed - Marine"
 	jobtype = /datum/job/officer
-	job_icon = "sonnensoldner"
 
-	id = /obj/item/card/id/cel/solfed/crew
+	id = /obj/item/card/id/cel/solfed/crew/marine
 	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solfed
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -156,8 +155,8 @@
 /datum/outfit/job/solfed/marine/pilot
 	name = "SolFed - Schwerer Roboterpilot"
 	jobtype = /datum/job/officer
-	job_icon = "sonnensoldner"
 
+	id = /obj/item/card/id/cel/solfed/crew/marine/pilot
 	head = /obj/item/clothing/head/solfed/cap
 	glasses = /obj/item/clothing/glasses/sunglasses
 	suit = /obj/item/clothing/suit/jacket/leather
@@ -165,7 +164,8 @@
 /datum/outfit/job/solfed/captain
 	name = "SolFed - Kommandant"
 	jobtype = /datum/job/captain
-	job_icon = "solgovrepresentative" // idk
+	job_icon = "sf_komandant"
+
 	id = /obj/item/card/id/cel/solfed/captain
 	gloves = /obj/item/clothing/gloves/combat/solfed/captain
 	ears = /obj/item/radio/headset/solgov/alt/captain
@@ -188,7 +188,7 @@
 /datum/outfit/job/solfed/captain/admiral
 	name = "SolFed - Flottenadmiral"
 	jobtype = /datum/job/captain
-	job_icon = "solgovrepresentative"
+	job_icon = "sf_admiral"
 
 	id = /obj/item/card/id/cel/solfed/admiral
 	suit = /obj/item/clothing/suit/armor/solfed/formal
@@ -198,12 +198,12 @@
 /datum/outfit/job/solfed/sergeant
 	name = "SolFed - Feldwebel"
 	jobtype = /datum/job/captain
-	job_icon = "solgovrepresentative"
+	job_icon = "sf_command"
 
+	id = /obj/item/card/id/cel/solfed/command/sergeant
 	uniform = /obj/item/clothing/under/solfed/camo
 	shoes = /obj/item/clothing/shoes/combat
 	backpack = /obj/item/storage/backpack/ert/engineer
-	id = /obj/item/card/id/cel/solfed/command
 
 /datum/outfit/job/solfed/sergeant/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -212,9 +212,9 @@
 /datum/outfit/job/solfed/hop
 	name = "SolFed - Personalvorgesetzter"
 	jobtype = /datum/job/head_of_personnel
-	job_icon = "headofpersonnel"
+	job_icon = "sf_command"
 
-	id = /obj/item/card/id/cel/solfed/command
+	id = /obj/item/card/id/cel/solfed/command/hop
 	uniform = /obj/item/clothing/under/solfed
 	shoes = /obj/item/clothing/shoes/laceup
 
@@ -230,9 +230,8 @@
 /datum/outfit/job/solfed/doctor
 	name = "SolFed - Meeresarzt"
 	jobtype = /datum/job/paramedic
-	job_icon = "medicaldoctor"
 
-	id = /obj/item/card/id/cel/solfed/crew
+	id = /obj/item/card/id/cel/solfed/crew/doctor
 	uniform = /obj/item/clothing/under/solfed/medical
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/solfed/surgical
@@ -248,9 +247,8 @@
 /datum/outfit/job/solfed/engineer
 	name = "SolFed - Marinemechaniker"
 	jobtype = /datum/job/engineer
-	job_icon = "stationengineer"
 
-	id = /obj/item/card/id/cel/solfed/crew
+	id = /obj/item/card/id/cel/solfed/crew/engineer
 	uniform = /obj/item/clothing/under/solfed/industrial
 	shoes = /obj/item/clothing/shoes/workboots
 	head = /obj/item/clothing/head/hardhat/solfed
@@ -267,7 +265,7 @@
 /datum/outfit/job/solfed/assistant
 	name = "SolFed - Gehilfe"
 	jobtype = /datum/job/assistant
-	job_icon = "assistant"
+	job_icon = "sf_shipside"
 
 	id = /obj/item/card/id/cel/solfed/assistant
 	uniform = /obj/item/clothing/under/solfed/assistant
@@ -281,9 +279,8 @@
 /datum/outfit/job/solfed/miner
 	name = "SolFed - Contract Miner"
 	jobtype = /datum/job/mining
-	job_icon = "shaftminer"
 
-	id = /obj/item/card/id/cel/solfed/crew
+	id = /obj/item/card/id/cel/solfed/crew/miner
 	uniform = /obj/item/clothing/under/solfed/industrial
 	shoes = /obj/item/clothing/shoes/workboots
 	head = /obj/item/clothing/head/hardhat/solfed
@@ -300,9 +297,9 @@
 /datum/outfit/job/solfed/quartermaster
 	name = "SolFed - Logistikbeauftragter"
 	jobtype = /datum/job/qm
-	job_icon = "quartermaster"
+	job_icon = "sf_command"
 
-	id = /obj/item/card/id/cel/solfed/command
+	id = /obj/item/card/id/cel/solfed/command/quartermaster
 	uniform = /obj/item/clothing/under/solfed
 	head = /obj/item/clothing/head/solfed/beret
 	shoes = /obj/item/clothing/shoes/laceup
@@ -318,12 +315,12 @@
 	get_solfed_general_access(H)
 
 /datum/outfit/job/solfed/patient
-	job_icon = "assistant" // todo: bug rye for patient icon // rye. rye. give me 50 gazillion billion dollars paypal
+	job_icon = "sf_shipside" // todo: bug rye for patient icon // rye. rye. give me 50 gazillion billion dollars paypal
+	jobtype = /datum/job/prisoner
 	name = "SolFed - Attentive Care Patient"
 	id_assignment = "Attentive Care Patient"
-	jobtype = /datum/job/prisoner
 
-	id = /obj/item/card/id/patient
+	id = /obj/item/card/id/cel/solfed/patient
 	uniform = /obj/item/clothing/under/rank/medical/gown
 	alt_suit = null
 	shoes = /obj/item/clothing/shoes/sandal/slippers
@@ -333,8 +330,8 @@
 
 //	Капитан	//
 /datum/outfit/job/solfed/captain/elysium
-	job_icon = "assistant"
 	name = "SolFed - Elysium Musharif"
+	faction_icon = "bg_elysium"
 
 	id = /obj/item/card/id/cel/solfed/captain/elysium
 	head = /obj/item/clothing/head/solfed/beret/elysium
@@ -345,18 +342,16 @@
 	backpack = /obj/item/storage/backpack/messenger/com
 	gloves = null
 
-	faction_icon = "bg_elysium"
-
 /datum/outfit/job/solfed/captain/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_captain_access(H)
 
 //MARK:	Хос
 /datum/outfit/job/solfed/sergeant/elysium
-	job_icon = "headofsecurity"
 	name = "SolFed - Elysium Mulazim"
+	faction_icon = "bg_elysium"
 
-	id = /obj/item/card/id/cel/solfed/command/elysium
+	id = /obj/item/card/id/cel/solfed/command/sergeant/elysium
 	head = /obj/item/clothing/head/solfed/beret/elysium
 	uniform = /obj/item/clothing/under/solfed/camo/elysium
 	suit = /obj/item/clothing/suit/armor/solfed/formal/elysium
@@ -364,25 +359,21 @@
 	ears = /obj/item/radio/headset/solgov/alt
 	neck = null
 
-	faction_icon = "bg_elysium"
-
 /datum/outfit/job/solfed/sergeant/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_head_access(H)
 
 //MARK:	Офицер
 /datum/outfit/job/solfed/marine/elysium
-	job_icon = "securityofficer"
 	name = "SolFed - Elysium Haris"
+	faction_icon = "bg_elysium"
 
-	id = /obj/item/card/id/cel/solfed/crew/elysium
+	id = /obj/item/card/id/cel/solfed/crew/marine/elysium
 	head = null
 	suit = null
 	gloves = null
 	shoes = /obj/item/clothing/shoes/combat
 	uniform = /obj/item/clothing/under/solfed/camo/elysium
-
-	faction_icon = "bg_elysium"
 
 /datum/outfit/job/solfed/marine/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -390,17 +381,15 @@
 
 //MARK:	медик
 /datum/outfit/job/solfed/doctor/elysium
-	job_icon = "assistant"
 	name = "SolFed - Elysium Shafi"
+	faction_icon = "bg_elysium"
 
-	id = /obj/item/card/id/cel/solfed/crew/elysium
+	id = /obj/item/card/id/cel/solfed/crew/doctor/elysium
 	head = null
 	suit = null
 	gloves = null
 	shoes = /obj/item/clothing/shoes/combat
 	uniform = /obj/item/clothing/under/solfed/camo/elysium
-
-	faction_icon = "bg_elysium"
 
 /datum/outfit/job/solfed/doctor/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -408,10 +397,10 @@
 
 //MARK:	Инженер
 /datum/outfit/job/solfed/engineer/elysium
-	job_icon = "assistant"
 	name = "SolFed - Elysium Khabeer Fanni"
+	faction_icon = "bg_elysium"
 
-	id = /obj/item/card/id/cel/solfed/crew/elysium
+	id = /obj/item/card/id/cel/solfed/crew/engineer/elysium
 	head = null
 	suit = null
 	gloves = null
@@ -419,7 +408,6 @@
 	shoes = /obj/item/clothing/shoes/combat
 	uniform = /obj/item/clothing/under/solfed/camo/elysium
 
-	faction_icon = "bg_elysium"
 
 /datum/outfit/job/solfed/engineer/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
