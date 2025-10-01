@@ -96,7 +96,7 @@
 	name = "SolFed Energy Nahkampfkrieger Corpse"
 	head = /obj/item/clothing/head/helmet/solfed/m11
 	glasses = /obj/item/clothing/glasses/night
-	id = /obj/item/card/id/cel/solfed/commander
+	id = /obj/item/card/id/cel/solfed/admiral
 
 /obj/effect/mob_spawn/human/corpse/solfed/marine/pistol
 	name = "SolFed Seitenwaffenmeister"
@@ -212,7 +212,7 @@
 	gloves = /obj/item/clothing/gloves/combat/solfed/captain
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	r_pocket = /obj/item/tank/internals/emergency_oxygen
-	id = /obj/item/card/id/cel/solfed/commander
+	id = /obj/item/card/id/cel/solfed/admiral
 
 /obj/effect/mob_spawn/human/corpse/solfed/space/elysium
 	name = "Elysium Brigade Space Haris"
@@ -244,4 +244,4 @@
 	head = /obj/item/clothing/head/helmet/space/hardsuit/solgov
 	mask = /obj/item/clothing/mask/balaclava/combat
 	back = /obj/item/tank/jetpack/oxygen
-	id = /obj/item/card/id/cel/solfed/commander
+	id = /obj/item/card/id/cel/solfed/admiral
