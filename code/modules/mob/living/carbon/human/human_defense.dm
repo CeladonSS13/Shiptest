@@ -92,7 +92,7 @@
 
 				return BULLET_ACT_FORCE_PIERCE // complete projectile permutation
 
-		if(check_shields(P, P.damage, "the [P.name]", PROJECTILE_ATTACK, P.armour_penetration))
+		if(check_shields(P, P.damage, "the [P.name]", PROJECTILE_ATTACK, P.armour_penetration, P.damage_type))	// [CELADON-EDIT] - Вы сейчас серьезно не проверяете что за тип урона?
 			P.on_hit(src, 100, def_zone, piercing_hit)
 			return BULLET_ACT_HIT
 
@@ -115,13 +115,13 @@
 		return TRUE
 	return FALSE
 
-/mob/living/carbon/human/proc/check_shields(atom/AM, damage, attack_text = "the attack", attack_type = MELEE_ATTACK, armour_penetration = 0)
+/mob/living/carbon/human/proc/check_shields(atom/AM, damage, attack_text = "the attack", attack_type = MELEE_ATTACK, armour_penetration = 0, damage_type = BRUTE)	// [CELADON-EDIT] - Вы сейчас серьезно не проверяете что за тип урона?
 	var/block_chance_modifier = round(damage / -3)
 
 	var/obj/item/shield = get_best_shield()
 	if(shield)
 		var/final_block_chance = shield.block_chance - (clamp((armour_penetration - shield.armour_penetration)/2,0,100)) + block_chance_modifier
-		var/shield_result = shield.hit_reaction(src, AM, attack_text, final_block_chance, damage, attack_type)
+		var/shield_result = shield.hit_reaction(src, AM, attack_text, final_block_chance, damage, attack_type, damage_type)	// [CELADON-EDIT] - Вы сейчас серьезно не проверяете что за тип урона?
 		if(shield_result >= 1)
 			return TRUE
 		if(shield_result == -1)
