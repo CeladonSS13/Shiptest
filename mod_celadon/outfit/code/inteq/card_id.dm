@@ -7,56 +7,47 @@
 	uses_overlays = FALSE
 
 /obj/item/card/id/inteq/vanguard
-	job_icon = "captain"
 	desc = "A inteq ID with no proper access to speak of.This one indicates a Vanguard"
 	icon_state = "idiq_vanguard"
 	assignment = "Vanguard"
 
 /obj/item/card/id/inteq/master_at_arms
-	job_icon = "warden"
 	desc = "A inteq ID with no proper access to speak of.This one indicates a Master At Arms"
 	icon_state = "idiq_masteratarms"
 	assignment = "Master At Arms"
 
 /obj/item/card/id/inteq/enforcer
-	job_icon = "lieutenant"
 	desc = "A InteQ ID with no proper access to speak of. This one indicates a Enforcer."
 	icon_state = "idiq_enforcer"
 	assignment = "Enforcer"
 
 /obj/item/card/id/inteq/artificer
-	job_icon = "stationengineer"
 	desc = "A InteQ ID with no proper access to speak of. This one indicates a Artificer."
 	icon_state = "idiq_artificer"
 	assignment = "Artificer"
 
 /obj/item/card/id/inteq/medic
-	job_icon = "medicaldoctor"
 	desc = "A InteQ ID with no proper access to speak of. This one indicates a Medic."
 	icon_state = "idiq_medic"
 	assignment = "Medic"
 
 /obj/item/card/id/inteq/recruit
-	job_icon = "assistant"
 	desc = "A InteQ ID with no proper access to speak of. This one indicates a Recruit."
 	icon_state = "idiq_assistant"
 	assignment = "Recruit"
 
 // MARK: Калибан
 /obj/item/card/id/inteq/honorable_rearguard
-	job_icon = "captain"
 	desc = "A InteQ ID with whith proper access to speak of. This one indicates a Rearguard from flagship vessels."
 	icon_state = "idiqh_honorablevanguard"
 	assignment = "Rearguard"
 
 /obj/item/card/id/inteq/honorable_artificer
-	job_icon = "chiefengineer"
 	desc = "A InteQ ID with whith proper access to speak of. This one indicates a Artificer Class One from flagship vessels."
 	icon_state = "idiqh_artificer"
 	assignment = "Artificer Class One"
 
 /obj/item/card/id/inteq/honorable_medic
-	job_icon = "chiefmedicalofficer"
 	desc = "A InteQ ID with whith proper access to speak of. This one indicates a Medic Class One from flagship vessels."
 	icon_state = "idiqh_medic"
 	assignment = "Medic Class One"
