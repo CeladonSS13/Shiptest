@@ -23,10 +23,12 @@
 	. = ..()
 	get_nt_general_access(H)
 
-// MARK: сурвивал бокс
 // Даёт всем НТшкам брендовый сурвивал бокс
 /datum/outfit/job/nanotrasen/celadon
+	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/nanotrasen
+
+// MARK: Обычные
 
 /datum/outfit/job/nanotrasen/celadon/hos
 	job_icon = "headofsecurity"
@@ -432,60 +434,184 @@
 	ears = /obj/item/radio/headset/nanotrasen/alt
 	backpack_contents = list(/obj/item/construction/rcd/loaded)
 
-// Все остальные аутфиты. При надобности расскоментить
-// /datum/outfit/job/nanotrasen/celadon/captain
+// MARK: NT Nakamura
+/datum/outfit/job/nanotrasen/celadon/nakamura_ce
+	job_icon = "chiefengineer"
+	name = "Cheif of Engeneer"
+
+	id = /obj/item/card/id/nanotrasen/nakamura_ce
+
+/datum/outfit/job/nanotrasen/celadon/nakamura_command
+	job_icon = "quartermaster"
+	name = "Quartermaster"
+
+	id = /obj/item/card/id/nanotrasen/nakamura_command
+
+/datum/outfit/job/nanotrasen/celadon/nakamura_atmostechnic
+	job_icon = "atmospherictechnician"
+	name = "Atmospheric Technician"
+
+	id = /obj/item/card/id/nanotrasen/nakamura_atmostechnic
+
+/datum/outfit/job/nanotrasen/celadon/nakamura_engeneer
+	job_icon = "stationengineer"
+	name = "Engeneer"
+
+	id = /obj/item/card/id/nanotrasen/nakamura_engeneer
+
+/datum/outfit/job/nanotrasen/celadon/nakamura_assistant
+	job_icon = "assistant"
+	name = "Assistant"
+
+	id = /obj/item/card/id/nanotrasen/nakamura_assistant
+
+// MARK: NT DeForest
+/datum/outfit/job/nanotrasen/celadon/deforest_cmo
+	job_icon = "chiefmedicalofficer"
+	name = "Cheif of Medical Officer"
+
+	id = /obj/item/card/id/nanotrasen/deforest_cmo
+
+/datum/outfit/job/nanotrasen/celadon/deforest_researcher
+	job_icon = "scientist"
+	name = "Researcher"
+
+	id = /obj/item/card/id/nanotrasen/deforest_researcher
+
+/datum/outfit/job/nanotrasen/celadon/deforest_chemist
+	job_icon = "chemist"
+	name = "Chemist"
+
+	id = /obj/item/card/id/nanotrasen/deforest_chemist
+
+/datum/outfit/job/nanotrasen/celadon/deforest_medic
+	job_icon = "medicaldoctor"
+	name = "Medical Doctor"
+
+	id = /obj/item/card/id/nanotrasen/deforest_medic
+
+/datum/outfit/job/nanotrasen/celadon/deforest_assistant
+	job_icon = "assistant"
+	name = "Assistant"
+
+	id = /obj/item/card/id/nanotrasen/deforest_assistant
+
+// MARK: NT N+S Logistic
+/datum/outfit/job/nanotrasen/celadon/nslogistic_captain
+	job_icon = "captain"
+	name = "Captain"
+
+	id = /obj/item/card/id/nanotrasen/nslogistic_captain
+
+/datum/outfit/job/nanotrasen/celadon/nslogistic_rd
+	job_icon = "researchdirector"
+	name = "Research Director"
+
+	id = /obj/item/card/id/nanotrasen/nslogistic_rd
+
+/datum/outfit/job/nanotrasen/celadon/nslogistic_quartermaster
+	job_icon = "quartermaster"
+	name = "Quartermaster"
+
+	id = /obj/item/card/id/nanotrasen/nslogistic_quartermaster
+
+/datum/outfit/job/nanotrasen/celadon/nslogistic_miner
+	job_icon = "shaftminer"
+	name = "Shaft Miner"
+
+	id = /obj/item/card/id/nanotrasen/nslogistic_miner
+
+/datum/outfit/job/nanotrasen/celadon/nslogistic_assistant
+	job_icon = "assistant"
+	name = "Assistant"
+
+	id = /obj/item/card/id/nanotrasen/nslogistic_assistant
+
+// MARK: NT Vigilitas
+/datum/outfit/job/nanotrasen/celadon/vigilitas_leutenant
+	job_icon = "clip_cmm6"
+	name = "Leutenant"
+
+	id = /obj/item/card/id/nanotrasen/vigilitas_leutenant
+
+/datum/outfit/job/nanotrasen/celadon/vigilitas_sergeant
+	job_icon = "clip_cmm5"
+	name = "Sergeant"
+
+	id = /obj/item/card/id/nanotrasen/vigilitas_sergeant
+
+/datum/outfit/job/nanotrasen/celadon/vigilitas_engeneer
+	job_icon = "stationengineer"
+	name = "Engeneer"
+
+	id = /obj/item/card/id/nanotrasen/vigilitas_engeneer
+
+/datum/outfit/job/nanotrasen/celadon/vigilitas_medic
+	job_icon = "medicaldoctor"
+	name = "Medic"
+
+	id = /obj/item/card/id/nanotrasen/vigilitas_medic
+
+/datum/outfit/job/nanotrasen/celadon/vigilitas_security
+	job_icon = "securityofficer"
+	name = "Security"
+
+	id = /obj/item/card/id/nanotrasen/vigilitas_security
+
+// Все остальные аутфиты офов. При надобности расскоментить
+// /datum/outfit/job/nanotrasen/captain
 // 	job_icon = "captain"
 
-// /datum/outfit/job/nanotrasen/celadon/lawyer
+// /datum/outfit/job/nanotrasen/lawyer
 // 	job_icon = "lawyer"
 
-// /datum/outfit/job/nanotrasen/celadon/assistant
+// /datum/outfit/job/nanotrasen/assistant
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/nanotrasen/celadon/hop
+// /datum/outfit/job/nanotrasen/hop
 // 	job_icon = "chiefengineer"
 
-// /datum/outfit/job/nanotrasen/celadon/quartermaster
+// /datum/outfit/job/nanotrasen/quartermaster
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/nanotrasen/celadon/lawyer/corporaterepresentative
+// /datum/outfit/job/nanotrasen/lawyer/corporaterepresentative
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/nanotrasen/celadon/cargo_tech
+// /datum/outfit/job/nanotrasen/cargo_tech
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/nanotrasen/celadon/scientist
+// /datum/outfit/job/nanotrasen/scientist
 // 	job_icon = "scientist"
 
-// /datum/outfit/job/nanotrasen/celadon/roboticist
+// /datum/outfit/job/nanotrasen/roboticist
 // 	job_icon = "roboticist"
 
-// /datum/outfit/job/nanotrasen/celadon/captain/lp
+// /datum/outfit/job/nanotrasen/captain/lp
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/nanotrasen/celadon/engineer/lp
+// /datum/outfit/job/nanotrasen/engineer/lp
 // 	job_icon = "stationengineer"
 
-// /datum/outfit/job/nanotrasen/celadon/security/lp
+// /datum/outfit/job/nanotrasen/security/lp
 // 	job_icon = "securityofficer"
 
-// /datum/outfit/job/nanotrasen/celadon/captain/centcom
+// /datum/outfit/job/nanotrasen/captain/centcom
 // 	job_icon = "captain"
 
-// /datum/outfit/job/nanotrasen/celadon/security/ert/med
+// /datum/outfit/job/nanotrasen/security/ert/med
 // 	job_icon = "chiefengineer"
 
-// /datum/outfit/job/nanotrasen/celadon/security/ert/engi
+// /datum/outfit/job/nanotrasen/security/ert/engi
 // 	job_icon = "chiefengineer"
 
-// /datum/outfit/job/nanotrasen/celadon/pilot
+// /datum/outfit/job/nanotrasen/pilot
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/nanotrasen/celadon/security/mech_pilot
+// /datum/outfit/job/nanotrasen/security/mech_pilot
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/nanotrasen/celadon/brig_phys
+// /datum/outfit/job/nanotrasen/brig_phys
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/nanotrasen/celadon/captain/ns
+// /datum/outfit/job/nanotrasen/captain/ns
 // 	job_icon = "captain"
