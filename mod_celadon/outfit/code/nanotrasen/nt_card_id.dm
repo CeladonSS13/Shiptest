@@ -8,75 +8,63 @@
 
 // MARK: Nakamura
 /obj/item/card/id/nanotrasen/nakamura_ce
-	job_icon = "chiefengineer"
 	desc = "A NanoTrasen Nakamura ID with no proper access to speak of. This one indicates a Cheif of Engeneer."
 	icon_state = "idnaka_chiefengeneer"
 	assignment = "Cheif of Engeneer"
 
 /obj/item/card/id/nanotrasen/nakamura_command
-	job_icon = "quartermaster"
 	desc = "A NanoTrasen Nakamura ID with no proper access to speak of. This one indicates a Quartermaster."
 	icon_state = "idnaka_command"
 	assignment = "Quartermaster"
 
 /obj/item/card/id/nanotrasen/nakamura_atmostechnic
-	job_icon = "atmospherictechnician"
 	desc = "A NanoTrasen Nakamura ID with no proper access to speak of. This one indicates a Atmospheric Technician."
 	icon_state = "idnaka_atmostechnic"
 	assignment = "Atmospheric Technician"
 
 /obj/item/card/id/nanotrasen/nakamura_engeneer
-	job_icon = "stationengineer"
 	desc = "A NanoTrasen Nakamura ID with no proper access to speak of. This one indicates a Engeneer."
 	icon_state = "idnaka_atmostechnic"
 	assignment = "Engeneer"
 
 /obj/item/card/id/nanotrasen/nakamura_assistant
-	job_icon = "assistant"
 	desc = "A NanoTrasen Nakamura ID with no proper access to speak of. This one indicates a Assistant."
 	icon_state = "idnaka_assistant"
 	assignment = "Assistant"
 
 // MARK: DeForest
 /obj/item/card/id/nanotrasen/deforest_cmo
-	job_icon = "chiefmedicalofficer"
 	desc = "A NanoTrasen DeForest ID with no proper access to speak of. This one indicates a Cheif of Medical Officer."
 	icon_state = "iddf_chiefmedicalofficer"
 	assignment = "Cheif of Medical Officer"
 
 /obj/item/card/id/nanotrasen/deforest_researcher
-	job_icon = "scientist"
 	desc = "A NanoTrasen DeForest ID with no proper access to speak of. This one indicates a Researcher."
 	icon_state = "iddf_researcher"
 	assignment = "Researcher"
 
 /obj/item/card/id/nanotrasen/deforest_chemist
-	job_icon = "chemist"
 	desc = "A NanoTrasen DeForest ID with no proper access to speak of. This one indicates a Chemist."
 	icon_state = "iddf_chemist"
 	assignment = "Chemist"
 
 /obj/item/card/id/nanotrasen/deforest_medic
-	job_icon = "medicaldoctor"
 	desc = "A NanoTrasen DeForest ID with no proper access to speak of. This one indicates a Medical Doctor."
 	icon_state = "iddf_medic"
 	assignment = "Medical Doctor"
 
 /obj/item/card/id/nanotrasen/deforest_assistant
-	job_icon = "assistant"
 	desc = "A NanoTrasen DeForest ID with no proper access to speak of. This one indicates a Assistant."
 	icon_state = "iddf_assistant"
 	assignment = "Assistant"
 
 // MARK: N+S Logistic
 /obj/item/card/id/nanotrasen/nslogistic_captain
-	job_icon = "captain"
 	desc = "A NanoTrasen N+S Logistic ID with no proper access to speak of. This one Captain."
 	icon_state = "idns_captain"
 	assignment = "Captain"
 
 /obj/item/card/id/nanotrasen/nslogistic_rd
-	job_icon = "researchdirector"
 	desc = "A NanoTrasen N+S Logistic ID with no proper access to speak of. This one indicates a Research Director."
 	icon_state = "idns_researchdirector"
 	assignment = "Research Director"
