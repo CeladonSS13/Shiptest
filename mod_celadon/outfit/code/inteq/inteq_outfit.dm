@@ -77,6 +77,7 @@
 
 //MARK: Рекрут
 /datum/outfit/job/inteq/celadon/assistant
+	job_icon = "assistant"
 	name = "Recruit (InteQ)"
 
 	id = /obj/item/card/id/inteq/recruit
@@ -108,6 +109,7 @@
 
 //MARK: Арьергард. Rearguard
 /datum/outfit/job/inteq/celadon/rearguard
+	job_icon = "captain"
 	name = "Rearguard (InteQ)"
 	id_assignment = "Rearguard"
 	head = /obj/item/clothing/head/beret/sec/hos/inteq
@@ -118,6 +120,7 @@
 
 //MARK: Лейтенант первого класса
 /datum/outfit/job/inteq/celadon/enforcer
+	job_icon = "lieutenant"
 	name = "Enforcer class One (InteQ)"
 	head = /obj/item/clothing/head/beret/sec/hos/inteq
 	mask = /obj/item/clothing/mask/balaclava
@@ -130,16 +133,16 @@
 
 //MARK: Парамедик
 /datum/outfit/job/inteq/celadon/paramedic
+	job_icon = "medicaldoctor"
 	name = "Corpsman (InteQ)"
 	ears = /obj/item/radio/headset/inteq
 	id = /obj/item/card/id/inteq/medic
 
 //MARK: Главный медик
 /datum/outfit/job/inteq/celadon/cmo
-	name = "IRMG - Honorable Corpsman"
+	job_icon = "chiefmedicalofficer"
 	id_assignment = "Honorable Corpsman"
-	// jobtype = /datum/job/cmo
-	// job_icon = "chiefmedicalofficer"
+	name = "IRMG - Honorable Corpsman"
 
 	belt = /obj/item/storage/belt/medical/webbing/paramedic
 	ears = /obj/item/radio/headset/inteq/captain
@@ -156,21 +159,25 @@
 
 //MARK: Служба безопасности
 /datum/outfit/job/inteq/celadon/security
+	job_icon = "lieutenant"
 	name = "Enforcer (InteQ)"
 	id = /obj/item/card/id/inteq/enforcer
 
 //MARK: Варден
 /datum/outfit/job/inteq/celadon/warden
+	job_icon = "warden"
 	name = "Master At Arms (InteQ)"
 	id = /obj/item/card/id/inteq/master_at_arms
 
 //MARK: Главный инженер
 /datum/outfit/job/inteq/celadon/ce
+	job_icon = "chiefengineer"
 	name = "Artificer Class One (InteQ)"
 	id = /obj/item/card/id/inteq/honorable_artificer
 
 //MARK: Инженегр
 /datum/outfit/job/inteq/celadon/engineer
+	job_icon = "stationengineer"
 	name = "Artificer (InteQ)"
 	id = /obj/item/card/id/inteq/artificer
 
