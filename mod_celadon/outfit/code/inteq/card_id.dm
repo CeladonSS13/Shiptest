@@ -4,12 +4,12 @@
 	uses_overlays = FALSE
 
 /obj/item/card/id/cel/inteq/vanguard
-	desc = "A inteq ID with no proper access to speak of.This one indicates a Vanguard"
+	desc = "A inteq ID with no proper access to speak of. This one indicates a Vanguard"
 	icon_state = "idiq_vanguard"
 	assignment = "Vanguard"
 
 /obj/item/card/id/cel/inteq/master_at_arms
-	desc = "A inteq ID with no proper access to speak of.This one indicates a Master At Arms"
+	desc = "A inteq ID with no proper access to speak of. This one indicates a Master At Arms"
 	icon_state = "idiq_masteratarms"
 	assignment = "Master At Arms"
 
@@ -51,14 +51,14 @@
 
 
 // /obj/item/card/id/cel/inteq/rearguard
-// 	desc = "A inteq ID with no proper access to speak of.This one indicates a Rearguard"
+// 	desc = "A inteq ID with no proper access to speak of. This one indicates a Rearguard"
 // 	icon_state = "inteqvanguard"
 // 	assignment = "Rearguard"
 // 	job_icon = "captain"
 
 
 // /obj/item/card/id/cel/inteq/enfco
-// 	desc = "A inteq ID with no proper access to speak of.This one indicates a Enforcer Class One"
+// 	desc = "A inteq ID with no proper access to speak of. This one indicates a Enforcer Class One"
 // 	icon_state = "inteqenfco"
 // 	assignment = "Enforcer Class One"
 // 	job_icon = "headofsecurity"
