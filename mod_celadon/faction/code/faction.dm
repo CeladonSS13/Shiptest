@@ -4,7 +4,7 @@
 	H.faction |= list(FACTION_PLAYER_SYNDICATE)
 
 //	Nanotrasen
-/datum/outfit/job/nanotrasen/celadon/post_equip(mob/living/carbon/human/H, visualsOnly)
+/datum/outfit/job/nanotrasen/cel/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	H.faction |= list(FACTION_PLAYER_NANOTRASEN, FACTION_PLAYER_SOLFED)
 
@@ -14,7 +14,7 @@
 	H.faction |= list(FACTION_PLAYER_SOLFED, FACTION_PLAYER_NANOTRASEN)
 
 //	InteQ
-/datum/outfit/job/inteq/post_equip(mob/living/carbon/human/H, visualsOnly)
+/datum/outfit/job/inteq/cel/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	H.faction |= list(FACTION_PLAYER_INTEQ)
 
