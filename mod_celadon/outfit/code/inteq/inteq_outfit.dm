@@ -67,7 +67,7 @@
 	// uses_overlays = FALSE
 	jobtype = /datum/job/assistant
 
-	id = /obj/item/card/id/inteq
+	id = /obj/item/card/id/cel/inteq
 	duffelbag = /obj/item/storage/backpack/duffelbag/inteq
 	box = /obj/item/storage/box/survival/inteq	// Даёт всем интекашкам брендовый сурвивал бокс
 
@@ -80,7 +80,7 @@
 	job_icon = "assistant"
 	name = "Recruit (InteQ)"
 
-	id = /obj/item/card/id/inteq/recruit
+	id = /obj/item/card/id/cel/inteq/recruit
 
 //MARK: Капитан
 /datum/outfit/job/inteq/celadon/captain
@@ -92,7 +92,7 @@
 	suit = /obj/item/clothing/suit/armor/vest/inteq
 	suit_store = /obj/item/gun/ballistic/revolver/horizonx
 	gloves = /obj/item/clothing/gloves/combat
-	id = /obj/item/card/id/inteq/vanguard
+	id = /obj/item/card/id/cel/inteq/vanguard
 
 //MARK: Командир
 /datum/outfit/job/inteq/celadon/honorable
@@ -105,7 +105,7 @@
 	suit = /obj/item/clothing/suit/armor/hos/inteq/honorable
 	suit_store = /obj/item/gun/ballistic/revolver/horizonx
 	gloves = /obj/item/clothing/gloves/combat
-	id = /obj/item/card/id/inteq/vanguard
+	id = /obj/item/card/id/cel/inteq/vanguard
 
 //MARK: Арьергард. Rearguard
 /datum/outfit/job/inteq/celadon/rearguard
@@ -116,7 +116,7 @@
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
 	suit = /obj/item/clothing/suit/armor/vest/inteq
 	gloves = /obj/item/clothing/gloves/combat
-	id = /obj/item/card/id/inteq/honorable_rearguard
+	id = /obj/item/card/id/cel/inteq/honorable_rearguard
 
 //MARK: Лейтенант первого класса
 /datum/outfit/job/inteq/celadon/enforcer
@@ -129,14 +129,14 @@
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/usp45
 	belt = /obj/item/ammo_box/magazine/usp45_standart
 	gloves = /obj/item/clothing/gloves/combat
-	id = /obj/item/card/id/inteq/enforcer
+	id = /obj/item/card/id/cel/inteq/enforcer
 
 //MARK: Парамедик
 /datum/outfit/job/inteq/celadon/paramedic
 	job_icon = "medicaldoctor"
 	name = "Corpsman (InteQ)"
 	ears = /obj/item/radio/headset/inteq
-	id = /obj/item/card/id/inteq/medic
+	id = /obj/item/card/id/cel/inteq/medic
 
 //MARK: Главный медик
 /datum/outfit/job/inteq/celadon/cmo
@@ -153,7 +153,7 @@
 	alt_suit = /obj/item/clothing/suit/armor/inteq/corpsman
 	dcoat = /obj/item/clothing/suit/armor/hos/inteq
 	r_pocket = /obj/item/pda/medical
-	id = /obj/item/card/id/inteq/honorable_medic
+	id = /obj/item/card/id/cel/inteq/honorable_medic
 
 	chameleon_extras = null
 
@@ -161,25 +161,25 @@
 /datum/outfit/job/inteq/celadon/security
 	job_icon = "lieutenant"
 	name = "Enforcer (InteQ)"
-	id = /obj/item/card/id/inteq/enforcer
+	id = /obj/item/card/id/cel/inteq/enforcer
 
 //MARK: Варден
 /datum/outfit/job/inteq/celadon/warden
 	job_icon = "warden"
 	name = "Master At Arms (InteQ)"
-	id = /obj/item/card/id/inteq/master_at_arms
+	id = /obj/item/card/id/cel/inteq/master_at_arms
 
 //MARK: Главный инженер
 /datum/outfit/job/inteq/celadon/ce
 	job_icon = "chiefengineer"
 	name = "Artificer Class One (InteQ)"
-	id = /obj/item/card/id/inteq/honorable_artificer
+	id = /obj/item/card/id/cel/inteq/honorable_artificer
 
 //MARK: Инженегр
 /datum/outfit/job/inteq/celadon/engineer
 	job_icon = "stationengineer"
 	name = "Artificer (InteQ)"
-	id = /obj/item/card/id/inteq/artificer
+	id = /obj/item/card/id/cel/inteq/artificer
 
 // Все остальные аутфиты. При надобности расскоментить
 // /datum/outfit/job/inteq/security/beluga

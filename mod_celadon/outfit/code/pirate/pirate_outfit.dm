@@ -16,7 +16,7 @@
 
 	jobtype = /datum/job/captain
 
-	id = /obj/item/card/id/pirate/captain
+	id = /obj/item/card/id/cel/pirate/captain
 	ears = /obj/item/radio/headset/pirate/captain
 	uniform = /obj/item/clothing/under/costume/pirate
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -55,7 +55,7 @@
 
 	jobtype = /datum/job/engineer
 
-	id = /obj/item/card/id/pirate/engeneer
+	id = /obj/item/card/id/cel/pirate/engeneer
 	ears = /obj/item/radio/headset/pirate
 	uniform = /obj/item/clothing/under/costume/sailor
 	head = /obj/item/clothing/head/bandana
@@ -90,7 +90,7 @@
 
 	jobtype = /datum/job/officer
 
-	id = /obj/item/card/id/pirate/security
+	id = /obj/item/card/id/cel/pirate/security
 	ears = /obj/item/radio/headset/pirate
 	uniform = /obj/item/clothing/under/syndicate/camo
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -127,7 +127,7 @@
 
 	jobtype = /datum/job/doctor
 
-	id = /obj/item/card/id/pirate/medic
+	id = /obj/item/card/id/cel/pirate/medic
 	ears = /obj/item/radio/headset/pirate
 	uniform = /obj/item/clothing/under/costume/sailor
 	shoes = /obj/item/clothing/shoes/sneakers/white
@@ -148,7 +148,7 @@
 
 	jobtype = /datum/job/assistant
 
-	id = /obj/item/card/id/pirate/assistant
+	id = /obj/item/card/id/cel/pirate/assistant
 	uniform = /obj/item/clothing/under/costume/pirate
 	suit = /obj/item/clothing/suit/pirate
 	head = /obj/item/clothing/head/bandana

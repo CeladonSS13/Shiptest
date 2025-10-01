@@ -439,124 +439,124 @@
 	job_icon = "chiefengineer"
 	name = "Cheif of Engeneer"
 
-	id = /obj/item/card/id/nanotrasen/nakamura_ce
+	id = /obj/item/card/id/cel/nanotrasen/nakamura_ce
 
 /datum/outfit/job/nanotrasen/celadon/nakamura_command
 	job_icon = "quartermaster"
 	name = "Quartermaster"
 
-	id = /obj/item/card/id/nanotrasen/nakamura_command
+	id = /obj/item/card/id/cel/nanotrasen/nakamura_command
 
 /datum/outfit/job/nanotrasen/celadon/nakamura_atmostechnic
 	job_icon = "atmospherictechnician"
 	name = "Atmospheric Technician"
 
-	id = /obj/item/card/id/nanotrasen/nakamura_atmostechnic
+	id = /obj/item/card/id/cel/nanotrasen/nakamura_atmostechnic
 
 /datum/outfit/job/nanotrasen/celadon/nakamura_engeneer
 	job_icon = "stationengineer"
 	name = "Engeneer"
 
-	id = /obj/item/card/id/nanotrasen/nakamura_engeneer
+	id = /obj/item/card/id/cel/nanotrasen/nakamura_engeneer
 
 /datum/outfit/job/nanotrasen/celadon/nakamura_assistant
 	job_icon = "assistant"
 	name = "Assistant"
 
-	id = /obj/item/card/id/nanotrasen/nakamura_assistant
+	id = /obj/item/card/id/cel/nanotrasen/nakamura_assistant
 
 // MARK: NT DeForest
 /datum/outfit/job/nanotrasen/celadon/deforest_cmo
 	job_icon = "chiefmedicalofficer"
 	name = "Cheif of Medical Officer"
 
-	id = /obj/item/card/id/nanotrasen/deforest_cmo
+	id = /obj/item/card/id/cel/nanotrasen/deforest_cmo
 
 /datum/outfit/job/nanotrasen/celadon/deforest_researcher
 	job_icon = "scientist"
 	name = "Researcher"
 
-	id = /obj/item/card/id/nanotrasen/deforest_researcher
+	id = /obj/item/card/id/cel/nanotrasen/deforest_researcher
 
 /datum/outfit/job/nanotrasen/celadon/deforest_chemist
 	job_icon = "chemist"
 	name = "Chemist"
 
-	id = /obj/item/card/id/nanotrasen/deforest_chemist
+	id = /obj/item/card/id/cel/nanotrasen/deforest_chemist
 
 /datum/outfit/job/nanotrasen/celadon/deforest_medic
 	job_icon = "medicaldoctor"
 	name = "Medical Doctor"
 
-	id = /obj/item/card/id/nanotrasen/deforest_medic
+	id = /obj/item/card/id/cel/nanotrasen/deforest_medic
 
 /datum/outfit/job/nanotrasen/celadon/deforest_assistant
 	job_icon = "assistant"
 	name = "Assistant"
 
-	id = /obj/item/card/id/nanotrasen/deforest_assistant
+	id = /obj/item/card/id/cel/nanotrasen/deforest_assistant
 
 // MARK: NT N+S Logistic
 /datum/outfit/job/nanotrasen/celadon/nslogistic_captain
 	job_icon = "captain"
 	name = "Captain"
 
-	id = /obj/item/card/id/nanotrasen/nslogistic_captain
+	id = /obj/item/card/id/cel/nanotrasen/nslogistic_captain
 
 /datum/outfit/job/nanotrasen/celadon/nslogistic_rd
 	job_icon = "researchdirector"
 	name = "Research Director"
 
-	id = /obj/item/card/id/nanotrasen/nslogistic_rd
+	id = /obj/item/card/id/cel/nanotrasen/nslogistic_rd
 
 /datum/outfit/job/nanotrasen/celadon/nslogistic_quartermaster
 	job_icon = "quartermaster"
 	name = "Quartermaster"
 
-	id = /obj/item/card/id/nanotrasen/nslogistic_quartermaster
+	id = /obj/item/card/id/cel/nanotrasen/nslogistic_quartermaster
 
 /datum/outfit/job/nanotrasen/celadon/nslogistic_miner
 	job_icon = "shaftminer"
 	name = "Shaft Miner"
 
-	id = /obj/item/card/id/nanotrasen/nslogistic_miner
+	id = /obj/item/card/id/cel/nanotrasen/nslogistic_miner
 
 /datum/outfit/job/nanotrasen/celadon/nslogistic_assistant
 	job_icon = "assistant"
 	name = "Assistant"
 
-	id = /obj/item/card/id/nanotrasen/nslogistic_assistant
+	id = /obj/item/card/id/cel/nanotrasen/nslogistic_assistant
 
 // MARK: NT Vigilitas
 /datum/outfit/job/nanotrasen/celadon/vigilitas_leutenant
 	job_icon = "clip_cmm6"
 	name = "Leutenant"
 
-	id = /obj/item/card/id/nanotrasen/vigilitas_leutenant
+	id = /obj/item/card/id/cel/nanotrasen/vigilitas_leutenant
 
 /datum/outfit/job/nanotrasen/celadon/vigilitas_sergeant
 	job_icon = "clip_cmm5"
 	name = "Sergeant"
 
-	id = /obj/item/card/id/nanotrasen/vigilitas_sergeant
+	id = /obj/item/card/id/cel/nanotrasen/vigilitas_sergeant
 
 /datum/outfit/job/nanotrasen/celadon/vigilitas_engeneer
 	job_icon = "stationengineer"
 	name = "Engeneer"
 
-	id = /obj/item/card/id/nanotrasen/vigilitas_engeneer
+	id = /obj/item/card/id/cel/nanotrasen/vigilitas_engeneer
 
 /datum/outfit/job/nanotrasen/celadon/vigilitas_medic
 	job_icon = "medicaldoctor"
 	name = "Medic"
 
-	id = /obj/item/card/id/nanotrasen/vigilitas_medic
+	id = /obj/item/card/id/cel/nanotrasen/vigilitas_medic
 
 /datum/outfit/job/nanotrasen/celadon/vigilitas_security
 	job_icon = "securityofficer"
 	name = "Security"
 
-	id = /obj/item/card/id/nanotrasen/vigilitas_security
+	id = /obj/item/card/id/cel/nanotrasen/vigilitas_security
 
 // Все остальные аутфиты офов. При надобности расскоментить
 // /datum/outfit/job/nanotrasen/captain
