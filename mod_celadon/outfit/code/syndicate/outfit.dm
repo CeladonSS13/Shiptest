@@ -204,12 +204,6 @@
 // /datum/outfit/job/syndicate/cargo_tech/donk
 // 	job_icon = "chiefengineer"
 
-// /datum/outfit/job/syndicate/captain/suns
-// 	job_icon = "captain"
-
-// /datum/outfit/job/syndicate/cmo/suns
-// 	job_icon = "medicaldoctor"
-
 // /datum/outfit/job/syndicate/security/suns
 // 	job_icon = "chiefengineer"
 

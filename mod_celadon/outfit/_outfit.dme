@@ -5,7 +5,8 @@
 
 #include "code/card_id.dm"
 
-#include "code/elysium/outfit_ship/card_id.dm"
+#include "code/_outpost/outfits.dm"
+
 #include "code/elysium/clothing/armor.dm"
 #include "code/elysium/clothing/belt.dm"
 #include "code/elysium/clothing/clothing.dm"
@@ -13,34 +14,34 @@
 #include "code/elysium/clothing/shoes.dm"
 #include "code/elysium/clothing/suits.dm"
 #include "code/elysium/clothing/under.dm"
-#include "code/elysium/outfit_ship/elysium.dm"
-#include "code/elysium/elysium_merch.dm"
+#include "code/elysium/card_id.dm"
+#include "code/elysium/outfit.dm"
+#include "code/elysium/merch.dm"
 #include "code/elysium/items.dm"
-#include "code/elysium/outfits.dm"
 #include "code/elysium/skimitar.dm"
 
 #include "code/gamma/gamma.dm"
 
-#include "code/independent/outfit_ship/card_id.dm"
-#include "code/independent/outfit_ship/independent.dm"
-#include "code/independent/outfit_ship/roumain.dm"
+#include "code/independent/card_id.dm"
+#include "code/independent/outfit.dm"
+#include "code/independent/roumain.dm"
 
 #include "code/inteq/card_id.dm"
+#include "code/inteq/outfit.dm"
 #include "code/inteq/armor.dm"
-#include "code/inteq/inteq_outfit.dm"
 
-#include "code/nanotrasen/nt_card_id.dm"
-#include "code/nanotrasen/nt_outfit.dm"
-#include "code/nanotrasen/nt_decals.dm"
-#include "code/nanotrasen/nt_other_stuff.dm"
+#include "code/nanotrasen/card_id.dm"
+#include "code/nanotrasen/outfit.dm"
+#include "code/nanotrasen/decals.dm"
+#include "code/nanotrasen/other_stuff.dm"
 
-#include "code/solfed/solfed_card_id.dm"
-#include "code/solfed/solfed_decal.dm"
-#include "code/solfed/solfed_other_stuff.dm"
-#include "code/solfed/solfed_outfit.dm"
+#include "code/solfed/card_id.dm"
+#include "code/solfed/outfit.dm"
+#include "code/solfed/decal.dm"
+#include "code/solfed/other_stuff.dm"
 
 #include "code/syndicate/card_id.dm"
-#include "code/syndicate/syndi_outfit.dm"
+#include "code/syndicate/outfit.dm"
 
 #include "code/event.dm"
 #include "code/standard.dm"
