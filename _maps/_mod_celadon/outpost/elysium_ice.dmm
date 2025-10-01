@@ -3185,9 +3185,7 @@
 	},
 /area/outpost/crew/bar/vip_zone)
 "bQR" = (
-/obj/structure/plasticflaps/opaque{
-	mouse_opacity = 0
-	},
+/obj/structure/plasticflaps/outpost,
 /obj/machinery/conveyor/auto{
 	dir = 8;
 	id = "outpost3";
@@ -5162,10 +5160,7 @@
 	dir = 1;
 	pixel_y = -22
 	},
-/obj/structure/plasticflaps/opaque{
-	mouse_opacity = 0;
-	layer = 5.1
-	},
+/obj/structure/plasticflaps/outpost,
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
 	layer = 2.038
 	},
@@ -8062,17 +8057,10 @@
 /obj/structure/transit_tube/junction{
 	dir = 8
 	},
-/obj/structure/plasticflaps/opaque{
-	mouse_opacity = 0;
-	layer = 5.1
-	},
+/obj/structure/plasticflaps/outpost,
 /obj/effect/turf_decal/borderfloorblack/corner{
 	pixel_y = 8;
 	pixel_x = -8
-	},
-/obj/structure/plasticflaps/opaque{
-	mouse_opacity = 0;
-	layer = 5.1
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/outpost/cargo)
@@ -9101,6 +9089,11 @@
 	planetary_atmos = 1
 	},
 /area/outpost/crew/lounge/cab_1)
+"fai" = (
+/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+	layer = 2.038
+	},
+/area/outpost/exterior)
 "faN" = (
 /obj/item/canvas/twentythreeXnineteen,
 /obj/structure/easel{
@@ -14902,9 +14895,7 @@
 	id = "outpost3";
 	use_static_power = 1
 	},
-/obj/structure/plasticflaps/opaque{
-	mouse_opacity = 0
-	},
+/obj/structure/plasticflaps/outpost,
 /obj/effect/turf_decal/industrial/fire/fulltile,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
@@ -15977,9 +15968,7 @@
 	dir = 1;
 	id = "outpost3"
 	},
-/obj/structure/plasticflaps/opaque{
-	mouse_opacity = 0
-	},
+/obj/structure/plasticflaps/outpost,
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/fraction/nanotrasen)
@@ -20208,9 +20197,7 @@
 /turf/open/floor/plasteel/patterned,
 /area/outpost/cargo/smeltery)
 "liJ" = (
-/obj/structure/plasticflaps/opaque{
-	mouse_opacity = 0
-	},
+/obj/structure/plasticflaps/outpost,
 /obj/machinery/conveyor/auto{
 	dir = 8;
 	id = "outpost3";
@@ -20443,9 +20430,7 @@
 	use_static_power = 1
 	},
 /obj/structure/fans/tiny/invisible,
-/obj/structure/plasticflaps/opaque{
-	mouse_opacity = 0
-	},
+/obj/structure/plasticflaps/outpost,
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/fraction/syndi)
 "lqe" = (
@@ -26714,9 +26699,7 @@
 	id = "outpost3";
 	use_static_power = 1
 	},
-/obj/structure/plasticflaps/opaque{
-	mouse_opacity = 0
-	},
+/obj/structure/plasticflaps/outpost,
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/engine/hull/reinforced,
 /area/outpost/fraction/inteq)
@@ -27855,10 +27838,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/obj/structure/plasticflaps/opaque{
-	mouse_opacity = 0;
-	layer = 5.1
-	},
+/obj/structure/plasticflaps/outpost,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/outpost/cargo)
 "prC" = (
@@ -29606,10 +29586,7 @@
 	dir = 1;
 	layer = 5
 	},
-/obj/structure/plasticflaps/opaque{
-	mouse_opacity = 0;
-	layer = 5.1
-	},
+/obj/structure/plasticflaps/outpost,
 /obj/effect/turf_decal/borderfloorblack/corner{
 	pixel_y = 8;
 	pixel_x = -8
@@ -32481,10 +32458,7 @@
 	dir = 5;
 	id = "outpost3"
 	},
-/obj/structure/plasticflaps/opaque{
-	mouse_opacity = 0;
-	opacity = 0
-	},
+/obj/structure/plasticflaps/outpost,
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/fraction/nanotrasen)
 "rUO" = (
@@ -36764,10 +36738,7 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "upQ" = (
-/obj/structure/plasticflaps/opaque{
-	mouse_opacity = 0;
-	layer = 5.1
-	},
+/obj/structure/plasticflaps/outpost,
 /obj/structure/platform/industrial{
 	dir = 1
 	},
@@ -37263,10 +37234,7 @@
 /turf/open/floor/plating/ice/temperate/gradus_minus_30,
 /area/outpost/exterior)
 "uDD" = (
-/obj/structure/plasticflaps/opaque{
-	mouse_opacity = 0;
-	layer = 5.1
-	},
+/obj/structure/plasticflaps/outpost,
 /obj/structure/platform/industrial{
 	dir = 1
 	},
@@ -38231,10 +38199,7 @@
 /turf/open/floor/grass,
 /area/outpost/crew/canteen)
 "viw" = (
-/obj/structure/plasticflaps/opaque{
-	mouse_opacity = 0;
-	layer = 5.1
-	},
+/obj/structure/plasticflaps/outpost,
 /obj/structure/platform/industrial,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/outpost/cargo)
@@ -39379,9 +39344,7 @@
 	use_static_power = 1
 	},
 /obj/structure/fans/tiny/invisible,
-/obj/structure/plasticflaps/opaque{
-	mouse_opacity = 0
-	},
+/obj/structure/plasticflaps/outpost,
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/fraction/solfed)
 "vWi" = (
@@ -71134,7 +71097,7 @@ gok
 kEC
 gok
 gok
-gok
+fai
 gMS
 rgY
 nZz
