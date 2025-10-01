@@ -47,6 +47,8 @@
 	name = "Elysium - Caid"
 	job_icon = "captain"
 	jobtype = /datum/job/captain
+
+	id = /obj/item/card/id/cel/elysium/captain
 	backpack = /obj/item/storage/backpack/satchel/leather
 	gloves = /obj/item/clothing/gloves/color/black
 	back = /obj/item/storage/backpack/satchel/leather
@@ -54,7 +56,6 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	mask = /obj/item/clothing/mask/bandana/green
 	ears = /obj/item/radio/headset/heads/captain/alt
-	id = /obj/item/card/id/cel/elysium/captain
 
 /datum/outfit/job/elysium/captain/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -64,6 +65,8 @@
 	name = "Elysium - Mukatell"
 	job_icon = "securityofficer"
 	jobtype = /datum/job/officer
+
+	id = /obj/item/card/id/cel/elysium/crew/security
 	gloves = /obj/item/clothing/gloves/color/black
 	mask = /obj/item/clothing/mask/bandana/green
 	backpack = /obj/item/storage/backpack/satchel
@@ -71,7 +74,6 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	ears = /obj/item/radio/headset/alt
 	backpack_contents = list(/obj/item/melee/knife/switchblade)
-	id = /obj/item/card/id/cel/elysium/crew
 
 /datum/outfit/job/elysium/security/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -82,13 +84,13 @@
 	job_icon = "assistant"
 	jobtype = /datum/job/assistant
 
+	id = /obj/item/card/id/cel/elysium/crew
 	suit = /obj/item/clothing/suit/apparel/black
 	gloves = /obj/item/clothing/gloves/fingerless
 	head = /obj/item/clothing/head/shemag/black
 	backpack = /obj/item/storage/backpack/satchel
 	uniform = /obj/item/clothing/under/utility
 	shoes = /obj/item/clothing/shoes/jackboots
-	id = /obj/item/card/id/cel/elysium/crew
 
 /datum/outfit/job/elysium/assistant/post_equip(mob/living/carbon/human/H)
 	. = ..()

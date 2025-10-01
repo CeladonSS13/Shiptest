@@ -12,6 +12,10 @@
 	icon_state = "ideusm_civilian"
 	assignment = "Crew"
 
+/obj/item/card/id/cel/elysium/crew/security
+	desc = "A Elysium ID with no proper access to speak of. This one indicates a Security"
+	assignment = "Security"
+
 // /obj/item/card/id/cel/elysium/captain	// Под вопросом
 // 	desc = "A Elysium ID with no proper access to speak of. This one indicates a Caid"
 // 	icon_state = "elysium"
