@@ -1,6 +1,6 @@
 // Доступы для Синдикеков
 
-/datum/outfit/job/syndicate/proc/get_syndi_general_access(mob/living/carbon/human/H)
+/datum/outfit/job/syndicate/cel/proc/get_syndi_general_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
@@ -19,58 +19,62 @@
 		for (var/obj/item/card/id/card in W.contents)
 			W.combined_access |= card.access
 
-/datum/outfit/job/syndicate/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/syndicate/cel/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_syndi_general_access(H)
 
-	// Даёт всем синдешкам брендовый сурвивал бокс
-/datum/outfit/job/syndicate
+// Даёт всем синдешкам брендовый сурвивал бокс
+/datum/outfit/job/syndicate/cel
+	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/syndicate
 
-/datum/outfit/job/syndicate/atmos
-	box = /obj/item/storage/box/survival/syndicate
+/datum/outfit/job/syndicate/cel
 
-/datum/outfit/job/syndicate/chemist
-	box = /obj/item/storage/box/survival/syndicate
 
-/datum/outfit/job/syndicate/ce
-	box = /obj/item/storage/box/survival/syndicate
+/datum/outfit/job/syndicate/cel/atmos
 
-/datum/outfit/job/syndicate/engineer
-	box = /obj/item/storage/box/survival/syndicate
 
-/datum/outfit/job/syndicate/miner
-	box = /obj/item/storage/box/survival/syndicate
+/datum/outfit/job/syndicate/cel/chemist
 
-/datum/outfit/job/syndicate/miner/twink
+
+/datum/outfit/job/syndicate/cel/ce
+
+
+/datum/outfit/job/syndicate/cel/engineer
+
+
+/datum/outfit/job/syndicate/cel/miner
+
+
+/datum/outfit/job/syndicate/cel/miner/twink
 	job_icon = "shaftminer"
-	box = /obj/item/storage/box/survival/syndicate
 
-/datum/outfit/job/syndicate/paramedic
-	box = /obj/item/storage/box/survival/syndicate
 
-/datum/outfit/job/syndicate/doctor
-	box = /obj/item/storage/box/survival/syndicate
+/datum/outfit/job/syndicate/cel/paramedic
 
-/datum/outfit/job/syndicate/cmo
+
+/datum/outfit/job/syndicate/cel/doctor
+
+
+/datum/outfit/job/syndicate/cel/cmo
 	job_icon = "chiefmedicalofficer"
-	box = /obj/item/storage/box/survival/syndicate
 
-/datum/outfit/job/syndicate/security
+
+/datum/outfit/job/syndicate/cel/security
 	job_icon = "assistant"
-	box = /obj/item/storage/box/survival/syndicate
 
-/datum/outfit/job/syndicate/hos
-	box = /obj/item/storage/box/survival/syndicate
 
-/datum/outfit/job/syndicate/assistant
+/datum/outfit/job/syndicate/cel/hos
+
+
+/datum/outfit/job/syndicate/cel/assistant
 	job_icon = "assistant"
-	box = /obj/item/storage/box/survival/syndicate
 
-/datum/outfit/job/syndicate/assistant/suns
-	box = /obj/item/storage/box/survival/syndicate
 
-/datum/outfit/job/syndicate/science/cybersun
+/datum/outfit/job/syndicate/cel/assistant/suns
+
+
+/datum/outfit/job/syndicate/cel/science/cybersun
     name = "Syndicate - Scientist"
     jobtype = /datum/job/scientist
     job_icon = "scientist"
@@ -86,7 +90,7 @@
 
 // MARK: Директор Исследований Киберсан
 
-/datum/outfit/job/syndicate/science/Director
+/datum/outfit/job/syndicate/cel/science/Director
 	name = "Syndicate - Research and Development Team Leader (Cybersun)"
 	id_assignment = "Research and Development Team Leader"
 	jobtype = /datum/job/rd
@@ -102,141 +106,141 @@
 	glasses = /obj/item/clothing/glasses/sunglasses
 
 // Все остальные аутфиты. При надобности расскоментить
-// /datum/outfit/job/syndicate/captain/suns
+// /datum/outfit/job/syndicate/cel/captain/suns
 // 	job_icon = "captain"
 
-// /datum/outfit/job/syndicate/cmo/suns
+// /datum/outfit/job/syndicate/cel/cmo/suns
 // 	job_icon = "medicaldoctor"
 
-// /datum/outfit/job/syndicate/doctor/suns
+// /datum/outfit/job/syndicate/cel/doctor/suns
 // 	job_icon = "medicaldoctor"
 
-// /datum/outfit/job/syndicate/engineer/suns
+// /datum/outfit/job/syndicate/cel/engineer/suns
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/syndicate/botanist/suns
+// /datum/outfit/job/syndicate/cel/botanist/suns
 // 	job_icon = "chiefengineer"
 
-// /datum/outfit/job/syndicate/psychologist/suns
+// /datum/outfit/job/syndicate/cel/psychologist/suns
 // 	job_icon = "psychologist"
 
-// /datum/outfit/job/syndicate/patient
+// /datum/outfit/job/syndicate/cel/patient
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/syndicate/captain/cybersun
+// /datum/outfit/job/syndicate/cel/captain/cybersun
 // 	job_icon = "captain"
 
-// /datum/outfit/job/syndicate/head_of_personnel/cybersun
+// /datum/outfit/job/syndicate/cel/head_of_personnel/cybersun
 // 	job_icon = "captain"
 
-// /datum/outfit/job/syndicate/engineer/cybersun
+// /datum/outfit/job/syndicate/cel/engineer/cybersun
 // 	job_icon = "stationengineer"
 
-// /datum/outfit/job/syndicate/miner/cybersun
+// /datum/outfit/job/syndicate/cel/miner/cybersun
 // 	job_icon = "shaftminer"
 
-// /datum/outfit/job/syndicate/paramedic/cybersun
+// /datum/outfit/job/syndicate/cel/paramedic/cybersun
 // 	job_icon = "paramedic"
 
-// /datum/outfit/job/syndicate/assistant/cybersun
+// /datum/outfit/job/syndicate/cel/assistant/cybersun
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/syndicate/captain/ngr
+// /datum/outfit/job/syndicate/cel/captain/ngr
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/syndicate/doctor/ngr
+// /datum/outfit/job/syndicate/cel/doctor/ngr
 // 	job_icon = "paramedic"
 
-// /datum/outfit/job/syndicate/engineer/ngr
+// /datum/outfit/job/syndicate/cel/engineer/ngr
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/syndicate/security/ngr
+// /datum/outfit/job/syndicate/cel/security/ngr
 // 	job_icon = "securityofficer"
 
-// /datum/outfit/job/syndicate/captain/gorlex
+// /datum/outfit/job/syndicate/cel/captain/gorlex
 // 	job_icon = "captain"
 
-// /datum/outfit/job/syndicate/ce/ngr
+// /datum/outfit/job/syndicate/cel/ce/ngr
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/syndicate/engineer/gorlex
+// /datum/outfit/job/syndicate/cel/engineer/gorlex
 // 	job_icon = "stationengineer"
 
-// /datum/outfit/job/syndicate/miner/gorlex
+// /datum/outfit/job/syndicate/cel/miner/gorlex
 // 	job_icon = "shaftminer"
 
-// /datum/outfit/job/syndicate/assistant/gorlex
+// /datum/outfit/job/syndicate/cel/assistant/gorlex
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/syndicate/hos/gorlex
+// /datum/outfit/job/syndicate/cel/hos/gorlex
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/syndicate/doctor/gorlex
+// /datum/outfit/job/syndicate/cel/doctor/gorlex
 // 	job_icon = "medicaldoctor"
 
-// /datum/outfit/job/syndicate/security/gorlex
+// /datum/outfit/job/syndicate/cel/security/gorlex
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/syndicate/head_of_personnel
+// /datum/outfit/job/syndicate/cel/head_of_personnel
 // 	job_icon = "chiefengineer"
 
-// /datum/outfit/job/syndicate/bartender
+// /datum/outfit/job/syndicate/cel/bartender
 // 	job_icon = "bartender"
 
-// /datum/outfit/job/syndicate/ce/gec
+// /datum/outfit/job/syndicate/cel/ce/gec
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/syndicate/engineer/gec
+// /datum/outfit/job/syndicate/cel/engineer/gec
 // 	job_icon = "stationengineer"
 
-// /datum/outfit/job/syndicate/atmos/gec
+// /datum/outfit/job/syndicate/cel/atmos/gec
 // 	job_icon = "atmospherictechnician"
 
-// /datum/outfit/job/syndicate/miner/gec
+// /datum/outfit/job/syndicate/cel/miner/gec
 // 	job_icon = "shaftminer"
 
-// /datum/outfit/job/syndicate/assistant/gec
+// /datum/outfit/job/syndicate/cel/assistant/gec
 // 	job_icon = "chiefengineer"
 
-// /datum/outfit/job/syndicate/quartermaster/donk
+// /datum/outfit/job/syndicate/cel/quartermaster/donk
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/syndicate/cargo_tech/donk
+// /datum/outfit/job/syndicate/cel/cargo_tech/donk
 // 	job_icon = "chiefengineer"
 
-// /datum/outfit/job/syndicate/security/suns
+// /datum/outfit/job/syndicate/cel/security/suns
 // 	job_icon = "chiefengineer"
 
-// /datum/outfit/job/syndicate/doctor/suns
+// /datum/outfit/job/syndicate/cel/doctor/suns
 // 	job_icon = "medicaldoctor"
 
-// /datum/outfit/job/syndicate/engineer/suns
+// /datum/outfit/job/syndicate/cel/engineer/suns
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/syndicate/psychologist/suns
+// /datum/outfit/job/syndicate/cel/psychologist/suns
 // 	job_icon = "psychologist"
 
-// /datum/outfit/job/syndicate/bartender/suns
+// /datum/outfit/job/syndicate/cel/bartender/suns
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/syndicate/patient
+// /datum/outfit/job/syndicate/cel/patient
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/syndicate/captain/twink
+// /datum/outfit/job/syndicate/cel/captain/twink
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/syndicate/hos/twink
+// /datum/outfit/job/syndicate/cel/hos/twink
 // 	job_icon = "headofsecurity"
 
-// /datum/outfit/job/syndicate/paramedic/twink
+// /datum/outfit/job/syndicate/cel/paramedic/twink
 // 	job_icon = "chiefmedicalofficer"
 
-// /datum/outfit/job/syndicate/engineer/twink
+// /datum/outfit/job/syndicate/cel/engineer/twink
 // 	job_icon = "stationengineer"
 
-// /datum/outfit/job/syndicate/security/twink
+// /datum/outfit/job/syndicate/cel/security/twink
 // 	job_icon = "securityofficer"
 
-// /datum/outfit/job/syndicate/bartender/twink
+// /datum/outfit/job/syndicate/cel/bartender/twink
 // 	job_icon = "bartender"
 

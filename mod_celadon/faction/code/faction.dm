@@ -1,5 +1,5 @@
 //	Syndicate
-/datum/outfit/job/syndicate/post_equip(mob/living/carbon/human/H, visualsOnly)
+/datum/outfit/job/syndicate/cel/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	H.faction |= list(FACTION_PLAYER_SYNDICATE)
 
