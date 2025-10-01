@@ -4,7 +4,7 @@
 	H.faction |= list(FACTION_PLAYER_SYNDICATE)
 
 //	Nanotrasen
-/datum/outfit/job/nanotrasen/post_equip(mob/living/carbon/human/H, visualsOnly)
+/datum/outfit/job/nanotrasen/celadon/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	H.faction |= list(FACTION_PLAYER_NANOTRASEN, FACTION_PLAYER_SOLFED)
 

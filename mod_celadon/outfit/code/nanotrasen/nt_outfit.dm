@@ -1,6 +1,6 @@
 /// MARK: Доступы для Нанотрахенов
 
-/datum/outfit/job/nanotrasen/proc/get_nt_general_access(mob/living/carbon/human/H)
+/datum/outfit/job/nanotrasen/celadon/proc/get_nt_general_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
@@ -19,65 +19,65 @@
 		for (var/obj/item/card/id/card in W.contents)
 			W.combined_access |= card.access
 
-/datum/outfit/job/nanotrasen/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/nanotrasen/celadon/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_nt_general_access(H)
 
-//// MARK: MARK: сурвивал бокс
+// MARK: сурвивал бокс
 // Даёт всем НТшкам брендовый сурвивал бокс
-/datum/outfit/job/nanotrasen
+/datum/outfit/job/nanotrasen/celadon
 	box = /obj/item/storage/box/survival/nanotrasen
 
-/datum/outfit/job/nanotrasen/hos
+/datum/outfit/job/nanotrasen/celadon/hos
 	job_icon = "headofsecurity"
 	box = /obj/item/storage/box/survival/nanotrasen
 
-/datum/outfit/job/nanotrasen/engineer
+/datum/outfit/job/nanotrasen/celadon/engineer
 	job_icon = "stationengineer"
 	box = /obj/item/storage/box/survival/nanotrasen
 
-/datum/outfit/job/nanotrasen/security
+/datum/outfit/job/nanotrasen/celadon/security
 	job_icon = "securityofficer"
 	box = /obj/item/storage/box/survival/nanotrasen
 
-/datum/outfit/job/nanotrasen/paramedic
+/datum/outfit/job/nanotrasen/celadon/paramedic
 	job_icon = "paramedic"
 	box = /obj/item/storage/box/survival/nanotrasen
 
-/datum/outfit/job/nanotrasen/doctor
+/datum/outfit/job/nanotrasen/celadon/doctor
 	job_icon = "medicaldoctor"
 	box = /obj/item/storage/box/survival/nanotrasen
 
-/datum/outfit/job/nanotrasen/cmo
+/datum/outfit/job/nanotrasen/celadon/cmo
 	box = /obj/item/storage/box/survival/nanotrasen
 
-/datum/outfit/job/nanotrasen/warden
+/datum/outfit/job/nanotrasen/celadon/warden
 	job_icon = "warden"
 	box = /obj/item/storage/box/survival/nanotrasen
 
-/datum/outfit/job/nanotrasen/ce
+/datum/outfit/job/nanotrasen/celadon/ce
 	job_icon = "chiefengineer"
 	box = /obj/item/storage/box/survival/nanotrasen
 
-/datum/outfit/job/nanotrasen/atmos
+/datum/outfit/job/nanotrasen/celadon/atmos
 	job_icon = "stationengineer"
 	box = /obj/item/storage/box/survival/nanotrasen
 
-/datum/outfit/job/nanotrasen/miner
+/datum/outfit/job/nanotrasen/celadon/miner
 	job_icon = "shaftminer"
 	box = /obj/item/storage/box/survival/nanotrasen
 
-/datum/outfit/job/nanotrasen/doctor/lp
+/datum/outfit/job/nanotrasen/celadon/doctor/lp
 	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/nanotrasen
 
-/datum/outfit/job/nanotrasen/chemist
+/datum/outfit/job/nanotrasen/celadon/chemist
 	job_icon = "chemist"
 	box = /obj/item/storage/box/survival/nanotrasen
 
-//// MARK: MARK: Научный директор - РД
+// MARK: Научный директор - РД
 
-/datum/outfit/job/nanotrasen/rd
+/datum/outfit/job/nanotrasen/celadon/rd
 	name = "Nanotrasen - Science Director"
 	job_icon = "researchdirector"
 	jobtype = /datum/job/rd
@@ -97,9 +97,9 @@
 
 	chameleon_extras = /obj/item/stamp/rd
 
-//// MARK: MARK: Медицинский директор - СМО
+// MARK: Медицинский директор - СМО
 
-/datum/outfit/job/nanotrasen/cmo
+/datum/outfit/job/nanotrasen/celadon/cmo
 	name = "Nanotrasen - Medical Director"
 	job_icon = "chiefmedicalofficer"
 	jobtype = /datum/job/cmo
@@ -118,9 +118,9 @@
 
 	chameleon_extras = /obj/item/stamp/cmo
 
-//// MARK: MARK: Медицинский Директор - СМО капитан
+// MARK: Медицинский Директор - СМО капитан
 
-/datum/outfit/job/nanotrasen/cmo/captain
+/datum/outfit/job/nanotrasen/celadon/cmo/captain
 	name = "Nanotrasen - Medical Director (Captain)"
 	job_icon = "chiefmedicalofficer"
 	jobtype = /datum/job/captain
@@ -145,9 +145,9 @@
 
 	chameleon_extras = /obj/item/stamp/cmo
 
-//// MARK: MARK: Инженерный Директор - СЕ капитан
+// MARK: Инженерный Директор - СЕ капитан
 
-/datum/outfit/job/nanotrasen/ce/captain
+/datum/outfit/job/nanotrasen/celadon/ce/captain
 	name = "Nanotrasen - Engineering Director (Captain)"
 	job_icon = "chiefengineer"
 	jobtype = /datum/job/captain
@@ -171,9 +171,9 @@
 
 	chameleon_extras = /obj/item/stamp/ce
 
-//// MARK: MARK: Химик
+// MARK: Химик
 
-/datum/outfit/job/nanotrasen/chemist
+/datum/outfit/job/nanotrasen/celadon/chemist
 	name = "Nanotrasen - Chemist"
 	job_icon = "chemist"
 	jobtype = /datum/job/chemist
@@ -194,7 +194,7 @@
 
 /// MARK: Генетик
 
-/datum/outfit/job/nanotrasen/geneticist
+/datum/outfit/job/nanotrasen/celadon/geneticist
 	name = "Nanotrasen - Genetical Researcher"
 	job_icon = "geneticist"
 	jobtype = /datum/job/geneticist
@@ -215,7 +215,7 @@
 
 /// MARK: Директор СБ - ХОС капитан
 
-/datum/outfit/job/nanotrasen/hos/captain
+/datum/outfit/job/nanotrasen/celadon/hos/captain
 	name = "Nanotrasen - Security Director (Captain)"
 	job_icon = "headofsecurity"
 	jobtype = /datum/job/captain
@@ -243,7 +243,7 @@
 
 /// MARK: лп уборщик
 
-/datum/outfit/job/nanotrasen/janitor/lp
+/datum/outfit/job/nanotrasen/celadon/janitor/lp
 	name = "Nanotrasen - LP Janitorial Specialist"
 	jobtype = /datum/job/janitor
 	job_icon = "janitor"
@@ -260,7 +260,7 @@
 
 /// MARK: ЕРТ коммандер
 
-/datum/outfit/job/nanotrasen/security/ert/commander
+/datum/outfit/job/nanotrasen/celadon/security/ert/commander
 	job_icon = "assistant"
 	name = "Nanotrasen - ERT Сommander"
 
@@ -278,7 +278,7 @@
 
 /// MARK: Nanotrasen Tactical Assault Team лидер
 
-/datum/outfit/job/nanotrasen/ntas/commander
+/datum/outfit/job/nanotrasen/celadon/ntas/commander
 	name = "NTAS Leader"
 	jobtype = /datum/job/captain
 	job_icon = "captain"
@@ -293,7 +293,7 @@
 
 /// MARK: Nanotrasen Tactical Assault Team сбуха
 
-/datum/outfit/job/nanotrasen/ntas/operative
+/datum/outfit/job/nanotrasen/celadon/ntas/operative
 	name = "NTAS Security Operative"
 	jobtype = /datum/job/hos
 	job_icon = "headofsecurity"
@@ -309,7 +309,7 @@
 
 /// MARK: Nanotrasen Tactical Assault Team медик
 
-/datum/outfit/job/nanotrasen/ntas/medic
+/datum/outfit/job/nanotrasen/celadon/ntas/medic
 	name = "NTAS Medical Operative"
 	jobtype = /datum/job/cmo
 	job_icon = "chiefmedicalofficer"
@@ -326,7 +326,7 @@
 
 /// MARK: Nanotrasen Tactical Assault Team инженер
 
-/datum/outfit/job/nanotrasen/ntas/engineer
+/datum/outfit/job/nanotrasen/celadon/ntas/engineer
 	name = "NTAS Engineering Operative"
 	jobtype = /datum/job/chief_engineer
 	job_icon = "chiefengineer"
@@ -342,7 +342,7 @@
 
 /// MARK: Nanotrasen Tactical Assault Team уборщичек
 
-/datum/outfit/job/nanotrasen/ntas/janitor
+/datum/outfit/job/nanotrasen/celadon/ntas/janitor
 	name = "NTAS Custodial Operative"
 	jobtype = /datum/job/janitor
 	job_icon = "janitor"
@@ -358,7 +358,7 @@
 
 /// MARK: слешер капитан
 
-/datum/outfit/job/nanotrasen/intel/captain
+/datum/outfit/job/nanotrasen/celadon/intel/captain
 	name = "Intelligence Officer"
 	jobtype = /datum/job/captain
 	job_icon = "captain"
@@ -378,7 +378,7 @@
 
 /// MARK: слешер сбуха
 
-/datum/outfit/job/nanotrasen/intel/operative
+/datum/outfit/job/nanotrasen/celadon/intel/operative
 	name = "Security Operative"
 	jobtype = /datum/job/hos
 	job_icon = "headofsecurity"
@@ -397,7 +397,7 @@
 
 /// MARK: слешер медик
 
-/datum/outfit/job/nanotrasen/intel/medic
+/datum/outfit/job/nanotrasen/celadon/intel/medic
 	name = "Medical Technician"
 	jobtype = /datum/job/cmo
 	job_icon = "chiefmedicalofficer"
@@ -416,7 +416,7 @@
 
 /// MARK: слешер инженер
 
-/datum/outfit/job/nanotrasen/intel/engineer
+/datum/outfit/job/nanotrasen/celadon/intel/engineer
 	name = "Engineering Technician"
 	jobtype = /datum/job/chief_engineer
 	job_icon = "chiefengineer"
@@ -433,59 +433,59 @@
 	backpack_contents = list(/obj/item/construction/rcd/loaded)
 
 // Все остальные аутфиты. При надобности расскоментить
-// /datum/outfit/job/nanotrasen/captain
+// /datum/outfit/job/nanotrasen/celadon/captain
 // 	job_icon = "captain"
 
-// /datum/outfit/job/nanotrasen/lawyer
+// /datum/outfit/job/nanotrasen/celadon/lawyer
 // 	job_icon = "lawyer"
 
-// /datum/outfit/job/nanotrasen/assistant
+// /datum/outfit/job/nanotrasen/celadon/assistant
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/nanotrasen/hop
+// /datum/outfit/job/nanotrasen/celadon/hop
 // 	job_icon = "chiefengineer"
 
-// /datum/outfit/job/nanotrasen/quartermaster
+// /datum/outfit/job/nanotrasen/celadon/quartermaster
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/nanotrasen/lawyer/corporaterepresentative
+// /datum/outfit/job/nanotrasen/celadon/lawyer/corporaterepresentative
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/nanotrasen/cargo_tech
+// /datum/outfit/job/nanotrasen/celadon/cargo_tech
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/nanotrasen/scientist
+// /datum/outfit/job/nanotrasen/celadon/scientist
 // 	job_icon = "scientist"
 
-// /datum/outfit/job/nanotrasen/roboticist
+// /datum/outfit/job/nanotrasen/celadon/roboticist
 // 	job_icon = "roboticist"
 
-// /datum/outfit/job/nanotrasen/captain/lp
+// /datum/outfit/job/nanotrasen/celadon/captain/lp
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/nanotrasen/engineer/lp
+// /datum/outfit/job/nanotrasen/celadon/engineer/lp
 // 	job_icon = "stationengineer"
 
-// /datum/outfit/job/nanotrasen/security/lp
+// /datum/outfit/job/nanotrasen/celadon/security/lp
 // 	job_icon = "securityofficer"
 
-// /datum/outfit/job/nanotrasen/captain/centcom
+// /datum/outfit/job/nanotrasen/celadon/captain/centcom
 // 	job_icon = "captain"
 
-// /datum/outfit/job/nanotrasen/security/ert/med
+// /datum/outfit/job/nanotrasen/celadon/security/ert/med
 // 	job_icon = "chiefengineer"
 
-// /datum/outfit/job/nanotrasen/security/ert/engi
+// /datum/outfit/job/nanotrasen/celadon/security/ert/engi
 // 	job_icon = "chiefengineer"
 
-// /datum/outfit/job/nanotrasen/pilot
+// /datum/outfit/job/nanotrasen/celadon/pilot
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/nanotrasen/security/mech_pilot
+// /datum/outfit/job/nanotrasen/celadon/security/mech_pilot
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/nanotrasen/brig_phys
+// /datum/outfit/job/nanotrasen/celadon/brig_phys
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/nanotrasen/captain/ns
+// /datum/outfit/job/nanotrasen/celadon/captain/ns
 // 	job_icon = "captain"

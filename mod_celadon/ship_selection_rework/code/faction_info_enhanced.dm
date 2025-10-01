@@ -20,8 +20,8 @@ GLOBAL_LIST_INIT(faction_info_data, list(
 		"description" = "Мегакорпорация-освоитель рубежей: добыча, исследования, станции и флот — всё ради прибыли и прогресса. Внутри царят протоколы и отчётность, но взамен — доступ к лучшим технологиям, стабильные контракты и карьерный рост.",
 		"wiki_url" = "https://wiki.celadon.pro/index.php/Nanotrasen",
 		"outfits" = list(
-			/datum/outfit/job/nanotrasen/captain,
-			/datum/outfit/job/nanotrasen/assistant
+			/datum/outfit/job/nanotrasen/celadon/captain,
+			/datum/outfit/job/nanotrasen/celadon/assistant
 		)
 	),
 	"syndicate" = list(
