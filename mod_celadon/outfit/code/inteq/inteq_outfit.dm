@@ -71,15 +71,15 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/inteq
 	box = /obj/item/storage/box/survival/inteq	// Даёт всем интекашкам брендовый сурвивал бокс
 
+/datum/outfit/job/inteq/celadon/post_equip(mob/living/carbon/human/H)
+	. = ..()
+	get_inteq_g_acces(H)
+
 //MARK: Рекрут
 /datum/outfit/job/inteq/celadon/assistant
 	name = "Recruit (InteQ)"
 
 	id = /obj/item/card/id/inteq/recruit
-
-/datum/outfit/job/inteq/celadon/assistant/post_equip(mob/living/carbon/human/H)
-	. = ..()
-	get_inteq_g_acces(H)
 
 //MARK: Капитан
 /datum/outfit/job/inteq/celadon/captain
@@ -92,10 +92,6 @@
 	suit_store = /obj/item/gun/ballistic/revolver/horizonx
 	gloves = /obj/item/clothing/gloves/combat
 	id = /obj/item/card/id/inteq/vanguard
-
-/datum/outfit/job/inteq/celadon/captain/post_equip(mob/living/carbon/human/H)
-	. = ..()
-	get_inteq_all_acces(H)
 
 //MARK: Командир
 /datum/outfit/job/inteq/celadon/honorable
@@ -110,12 +106,7 @@
 	gloves = /obj/item/clothing/gloves/combat
 	id = /obj/item/card/id/inteq/vanguard
 
-/datum/outfit/job/inteq/celadon/honorable/post_equip(mob/living/carbon/human/H)
-	. = ..()
-	get_inteq_all_acces(H)
-
 //MARK: Арьергард. Rearguard
-
 /datum/outfit/job/inteq/celadon/rearguard
 	name = "Rearguard (InteQ)"
 	id_assignment = "Rearguard"
@@ -124,10 +115,6 @@
 	suit = /obj/item/clothing/suit/armor/vest/inteq
 	gloves = /obj/item/clothing/gloves/combat
 	id = /obj/item/card/id/inteq/honorable_rearguard
-
-/datum/outfit/job/inteq/celadon/rearguard/post_equip(mob/living/carbon/human/H)
-	. = ..()
-	get_inteq_all_acces(H)
 
 //MARK: Лейтенант первого класса
 /datum/outfit/job/inteq/celadon/enforcer
@@ -141,23 +128,13 @@
 	gloves = /obj/item/clothing/gloves/combat
 	id = /obj/item/card/id/inteq/enforcer
 
-/datum/outfit/job/inteq/celadon/enforcer/post_equip(mob/living/carbon/human/H)
-	. = ..()
-	get_inteq_all_acces(H)
-
 //MARK: Парамедик
-
 /datum/outfit/job/inteq/celadon/paramedic
 	name = "Corpsman (InteQ)"
 	ears = /obj/item/radio/headset/inteq
 	id = /obj/item/card/id/inteq/medic
 
-/datum/outfit/job/inteq/celadon/paramedic/post_equip(mob/living/carbon/human/H)
-	. = ..()
-	get_inteq_g_acces(H)
-
-//Главный медик
-
+//MARK: Главный медик
 /datum/outfit/job/inteq/celadon/cmo
 	name = "IRMG - Honorable Corpsman"
 	id_assignment = "Honorable Corpsman"
@@ -177,49 +154,25 @@
 
 	chameleon_extras = null
 
-/datum/outfit/job/inteq/celadon/cmo/post_equip(mob/living/carbon/human/H)
-	. = ..()
-	get_inteq_g_acces(H)
-
 //MARK: Служба безопасности
-
 /datum/outfit/job/inteq/celadon/security
 	name = "Enforcer (InteQ)"
 	id = /obj/item/card/id/inteq/enforcer
 
-/datum/outfit/job/inteq/celadon/security/post_equip(mob/living/carbon/human/H)
-	. = ..()
-	get_inteq_gsec_acces(H)
-
 //MARK: Варден
-
 /datum/outfit/job/inteq/celadon/warden
 	name = "Master At Arms (InteQ)"
 	id = /obj/item/card/id/inteq/master_at_arms
 
-/datum/outfit/job/inteq/celadon/warden/post_equip(mob/living/carbon/human/H)
-	. = ..()
-	get_inteq_gsec_acces(H)
-
 //MARK: Главный инженер
-
 /datum/outfit/job/inteq/celadon/ce
 	name = "Artificer Class One (InteQ)"
 	id = /obj/item/card/id/inteq/honorable_artificer
 
-/datum/outfit/job/inteq/celadon/ce/post_equip(mob/living/carbon/human/H)
-	. = ..()
-	get_inteq_all_acces(H)
-
-//Инженегр
-
+//MARK: Инженегр
 /datum/outfit/job/inteq/celadon/engineer
 	name = "Artificer (InteQ)"
 	id = /obj/item/card/id/inteq/artificer
-
-/datum/outfit/job/inteq/celadon/engineer/post_equip(mob/living/carbon/human/H)
-	. = ..()
-	get_inteq_g_acces(H)
 
 // Все остальные аутфиты. При надобности расскоментить
 // /datum/outfit/job/inteq/security/beluga
