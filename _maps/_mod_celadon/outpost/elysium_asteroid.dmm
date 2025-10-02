@@ -650,6 +650,18 @@
 /obj/effect/turf_decal/siding/wood/corner,
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/starboard)
+"azO" = (
+/obj/structure/window{
+	dir = 8;
+	pixel_x = -3;
+	mouse_opacity = 0
+	},
+/obj/structure/urinal{
+	dir = 1;
+	pixel_y = 27
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/crew/canteen)
 "azT" = (
 /turf/open/floor/wood{
 	light_range = 2
@@ -19640,28 +19652,6 @@
 /obj/effect/turf_decal/industrial/traffic/fulltile,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
-"mRZ" = (
-/obj/structure/toilet{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/oil,
-/obj/effect/decal/cleanable/insectguts,
-/obj/effect/decal/cleanable/greenglow,
-/obj/effect/decal/cleanable/leaper_sludge,
-/obj/effect/decal/cleanable/glitter,
-/obj/effect/decal/cleanable/glass,
-/obj/effect/decal/cleanable/generic,
-/obj/machinery/light/small/built/directional/south,
-/obj/effect/decal/cleanable/wrapping,
-/turf/open/floor/plasteel/mono/dark,
-/area/outpost/crew/canteen)
 "mSb" = (
 /obj/machinery/conveyor/auto{
 	dir = 1;
@@ -28468,14 +28458,6 @@
 	},
 /turf/open/floor/carpet/nanoweave,
 /area/outpost/vacant_rooms)
-"sRz" = (
-/obj/structure/window{
-	dir = 8;
-	pixel_x = -3;
-	mouse_opacity = 0
-	},
-/turf/open/floor/plasteel/dark,
-/area/outpost/crew/canteen)
 "sRB" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 8
@@ -32114,6 +32096,12 @@
 	planetary_atmos = 1
 	},
 /area/outpost/hallway/central)
+"vix" = (
+/obj/structure/falsewall/reinforced{
+	req_one_access_txt = "8131"
+	},
+/turf/open/floor/fakepit,
+/area/outpost/crew/canteen)
 "viF" = (
 /obj/structure/toilet/secret{
 	secret_type = /obj/item/storage/box/donkpockets;
@@ -32954,6 +32942,14 @@
 /obj/structure/chair/bench/red/directional/north,
 /turf/open/floor/carpet/royalblack,
 /area/outpost/hallway/central)
+"vIT" = (
+/obj/structure/window{
+	dir = 8;
+	pixel_x = -3;
+	mouse_opacity = 0
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/crew/canteen)
 "vJv" = (
 /obj/machinery/newscaster/directional/west,
 /turf/open/floor/plasteel/dark,
@@ -33275,15 +33271,25 @@
 /turf/open/floor/plasteel,
 /area/outpost/operations)
 "vRZ" = (
-/obj/structure/window{
-	dir = 8;
-	pixel_x = -3;
-	mouse_opacity = 0
+/obj/structure/toilet{
+	dir = 1
 	},
-/obj/structure/urinal{
-	dir = 1;
-	pixel_y = 27
-	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/oil,
+/obj/effect/decal/cleanable/insectguts,
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/leaper_sludge,
+/obj/effect/decal/cleanable/glitter,
+/obj/effect/decal/cleanable/glass,
+/obj/effect/decal/cleanable/generic,
+/obj/machinery/light/small/built/directional/south,
+/obj/effect/decal/cleanable/wrapping,
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/crew/canteen)
 "vSg" = (
@@ -34457,20 +34463,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/inteq)
-"wJd" = (
-/obj/machinery/button/door{
-	dir = 4;
-	pixel_x = -21;
-	pixel_y = 10;
-	name = "Door Bolt";
-	id = "aster_bar_stall3"
-	},
-/obj/structure/toilet{
-	dir = 1
-	},
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/plasteel/mono/dark,
-/area/outpost/crew/canteen)
 "wJh" = (
 /obj/structure/sign/moniq{
 	pixel_y = 28;
@@ -36557,6 +36549,20 @@
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/plating,
 /area/outpost/fraction/syndi)
+"ylI" = (
+/obj/machinery/button/door{
+	dir = 4;
+	pixel_x = -21;
+	pixel_y = 10;
+	name = "Door Bolt";
+	id = "aster_bar_stall3"
+	},
+/obj/structure/toilet{
+	dir = 1
+	},
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/crew/canteen)
 "yme" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 8
@@ -61364,7 +61370,7 @@ mCh
 gWG
 pkB
 vyZ
-wJd
+ylI
 aIl
 cGD
 cGD
@@ -61921,7 +61927,7 @@ aIl
 hMo
 eVx
 aIl
-vRZ
+azO
 pkB
 pkB
 aIl
@@ -62112,7 +62118,7 @@ prV
 pkB
 pkB
 skl
-mRZ
+vRZ
 aIl
 cGD
 cGD
@@ -62299,7 +62305,7 @@ prV
 pkB
 eJq
 aIl
-aIl
+vix
 aIl
 cGD
 cGD
@@ -62482,7 +62488,7 @@ maA
 iNo
 oel
 aIl
-sRz
+vIT
 pkB
 pkB
 aIl
