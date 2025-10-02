@@ -3237,13 +3237,10 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
 "ckd" = (
-/obj/structure/extinguisher_cabinet/directional/north{
-	pixel_x = -6
+/obj/machinery/recharge_station{
+	pixel_y = 22
 	},
-/obj/machinery/firealarm/directional/north{
-	pixel_x = 6
-	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/mono/dark,
 /area/outpost/crew/canteen)
 "ckm" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
@@ -6453,17 +6450,10 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/inteq)
 "ejk" = (
-/obj/structure/sink{
-	dir = 8;
-	pixel_x = 14;
-	pixel_y = 5
+/obj/machinery/door/airlock{
+	name = "Bathroom Stall 2";
+	id_tag = "aster_bar_stall2"
 	},
-/obj/structure/mirror{
-	pixel_y = 6;
-	pixel_x = 27
-	},
-/obj/effect/turf_decal/corner/transparent/blue/full,
-/obj/machinery/light/small/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/canteen)
 "ejS" = (
@@ -7293,10 +7283,7 @@
 /turf/open/floor/wood,
 /area/outpost/vacant_rooms/office)
 "eJq" = (
-/obj/machinery/door/airlock{
-	name = "Bathroom Stall 2";
-	id_tag = "waterbar_stall2"
-	},
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/canteen)
 "eJu" = (
@@ -8110,9 +8097,6 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/sign/departments/restroom{
-	pixel_y = -32
-	},
 /turf/open/floor/carpet/nanoweave,
 /area/outpost/crew/canteen)
 "fnK" = (
@@ -10628,10 +10612,7 @@
 /turf/open/floor/plating/rust,
 /area/outpost/fraction/syndi)
 "gWG" = (
-/obj/structure/sign/warning/electricshock{
-	pixel_x = -24;
-	pixel_y = 6
-	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/canteen)
 "gWO" = (
@@ -12555,8 +12536,19 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "ilg" = (
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/plasteel/dark,
+/obj/machinery/light/small/directional/east,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/toilet{
+	dir = 1
+	},
+/obj/machinery/button/door{
+	dir = 4;
+	pixel_x = -21;
+	pixel_y = 10;
+	name = "Door Bolt";
+	id = "aster_bar_stall2"
+	},
+/turf/open/floor/plasteel/mono/dark,
 /area/outpost/crew/canteen)
 "ilq" = (
 /obj/effect/decal/cleanable/dirt,
@@ -16219,10 +16211,8 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/inteq)
 "kDP" = (
-/obj/machinery/door/airlock/maintenance/external{
-	dir = 4;
-	id_tag = "waterbar_charge2";
-	name = "Recharge Station 2"
+/obj/structure/sign/warning/electricshock{
+	pixel_y = 31
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/canteen)
@@ -19234,14 +19224,6 @@
 	pixel_y = 22
 	},
 /obj/effect/decal/cleanable/oil,
-/obj/machinery/light/small/directional/south,
-/obj/machinery/button/door{
-	dir = 1;
-	pixel_x = 10;
-	pixel_y = -21;
-	name = "Door Bolt";
-	id = "waterbar_charge2"
-	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/crew/canteen)
 "mCp" = (
@@ -23221,19 +23203,10 @@
 /turf/open/floor/grass,
 /area/outpost/hallway/aft)
 "prV" = (
-/obj/machinery/light/small/directional/east,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/button/door{
-	dir = 8;
-	pixel_x = 21;
-	pixel_y = 10;
-	name = "Door Bolt";
-	id = "waterbar_stall1"
+/obj/structure/extinguisher_cabinet/directional/north{
+	pixel_x = -6
 	},
-/obj/structure/toilet{
-	dir = 1
-	},
-/turf/open/floor/plasteel/mono/dark,
+/turf/open/floor/plasteel/dark,
 /area/outpost/crew/canteen)
 "psd" = (
 /obj/structure/rack,
@@ -27448,12 +27421,31 @@
 	},
 /area/outpost/hallway/central)
 "sax" = (
-/obj/machinery/door/airlock/maintenance/external{
+/obj/machinery/button/door{
 	dir = 4;
-	id_tag = "waterbar_charge1";
-	name = "Recharge Station 1"
+	pixel_x = -21;
+	pixel_y = 10;
+	name = "Door Bolt";
+	id = "aster_bar_stall1"
 	},
-/turf/open/floor/plasteel/dark,
+/obj/structure/toilet{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/oil,
+/obj/effect/decal/cleanable/insectguts,
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/leaper_sludge,
+/obj/effect/decal/cleanable/glitter,
+/obj/effect/decal/cleanable/glass,
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/plasteel/mono/dark,
 /area/outpost/crew/canteen)
 "saI" = (
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
@@ -27625,16 +27617,9 @@
 /turf/closed/indestructible/reinforced,
 /area/outpost/fraction/nanotrasen)
 "skl" = (
-/obj/machinery/light/small/directional/west,
-/obj/machinery/button/door{
-	dir = 4;
-	pixel_x = -21;
-	pixel_y = 10;
-	name = "Door Bolt";
-	id = "waterbar_stall2"
-	},
-/obj/structure/toilet{
-	dir = 1
+/obj/machinery/door/airlock{
+	name = "Bathroom Stall 1";
+	id_tag = "aster_bar_stall1"
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/crew/canteen)
@@ -30940,6 +30925,9 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
+/obj/structure/sign/departments/restroom{
+	pixel_y = -32
+	},
 /turf/open/floor/carpet/nanoweave,
 /area/outpost/crew/canteen)
 "uyh" = (
@@ -32718,19 +32706,11 @@
 	name = "Elysium Town"
 	})
 "vyZ" = (
-/obj/machinery/recharge_station{
-	pixel_y = 22
+/obj/machinery/door/airlock{
+	name = "Bathroom Stall 3";
+	id_tag = "aster_bar_stall3"
 	},
-/obj/machinery/light/small/directional/south,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/button/door{
-	dir = 1;
-	pixel_x = 10;
-	pixel_y = -21;
-	name = "Door Bolt";
-	id = "waterbar_charge1"
-	},
-/turf/open/floor/plasteel/mono/dark,
+/turf/open/floor/plasteel/dark,
 /area/outpost/crew/canteen)
 "vzF" = (
 /obj/effect/turf_decal/box/red/corners{
@@ -33281,11 +33261,18 @@
 /turf/open/floor/plasteel,
 /area/outpost/operations)
 "vRZ" = (
-/obj/machinery/door/airlock{
-	name = "Bathroom Stall 1";
-	id_tag = "waterbar_stall1"
+/obj/machinery/light/small/directional/west,
+/obj/machinery/button/door{
+	dir = 4;
+	pixel_x = -21;
+	pixel_y = 10;
+	name = "Door Bolt";
+	id = "aster_bar_stall3"
 	},
-/turf/open/floor/plasteel/dark,
+/obj/structure/toilet{
+	dir = 1
+	},
+/turf/open/floor/plasteel/mono/dark,
 /area/outpost/crew/canteen)
 "vSg" = (
 /obj/structure/flora/herb/g,
@@ -61348,10 +61335,10 @@ lFl
 lre
 aIl
 mCh
-aIl
+gWG
 vyZ
+vRZ
 aIl
-cGD
 cGD
 cGD
 cGD
@@ -61535,12 +61522,12 @@ aaJ
 vNo
 aIl
 kDP
-aIl
-sax
-aIl
+eJq
 aIl
 aIl
 aIl
+cGD
+cGD
 cGD
 pdc
 pdc
@@ -61722,12 +61709,12 @@ qSD
 vOi
 aIl
 ckd
-gWG
 pkB
+ejk
 ilg
-eJq
-skl
 aIl
+cGD
+cGD
 cGD
 cGD
 pdc
@@ -61906,15 +61893,15 @@ rWC
 oAb
 aIl
 hMo
-oel
-blm
-twd
-twd
-egU
-aSl
+eVx
+aIl
+kDP
+pkB
 aIl
 aIl
 aIl
+cGD
+cGD
 cGD
 cGD
 pdc
@@ -62095,13 +62082,13 @@ aIl
 uxa
 fmV
 aIl
-mod
-fTx
-fTx
-fTx
-vRZ
-prV
+ckd
+pkB
+skl
+sax
 aIl
+cGD
+cGD
 cGD
 pdc
 pdc
@@ -62282,13 +62269,13 @@ aIl
 hMo
 eVx
 aIl
-eER
-wdO
-wdO
-ejk
+prV
+eJq
 aIl
 aIl
 aIl
+cGD
+cGD
 cGD
 pdc
 pdc
@@ -62467,13 +62454,13 @@ fcl
 rey
 maA
 iNo
-eVx
+oel
+blm
+twd
+egU
+aSl
 aIl
-aIl
-aIl
-aIl
-aIl
-aIl
+cGD
 cGD
 cGD
 cGD
@@ -62656,10 +62643,10 @@ wEw
 awn
 uyb
 aIl
-cGD
-cGD
-cGD
-cGD
+mod
+fTx
+fTx
+aIl
 cGD
 cGD
 cGD
@@ -62843,12 +62830,12 @@ aIl
 aIl
 aIl
 aIl
+eER
+wdO
+wdO
+aIl
 cGD
 cGD
-cGD
-cGD
-cGD
-pdc
 pdc
 pdc
 pdc
@@ -63029,11 +63016,11 @@ cGD
 cGD
 cGD
 cGD
-cGD
-cGD
-cGD
-cGD
-cGD
+aIl
+aIl
+aIl
+aIl
+aIl
 cGD
 pdc
 pdc
@@ -63221,7 +63208,7 @@ cGD
 cGD
 cGD
 cGD
-pdc
+cGD
 pdc
 pdc
 pdc
@@ -63404,10 +63391,10 @@ cGD
 cGD
 pdc
 cGD
-cGD
 pdc
 pdc
-cGD
+pdc
+pdc
 pdc
 pdc
 pdc
@@ -63591,7 +63578,7 @@ cGD
 pdc
 pdc
 pdc
-cGD
+pdc
 pdc
 pdc
 pdc
@@ -63783,8 +63770,8 @@ pdc
 pdc
 pdc
 pdc
-pdc
-pdc
+cGD
+cGD
 pdc
 pdc
 pdc
