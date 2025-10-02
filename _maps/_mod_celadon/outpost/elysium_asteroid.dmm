@@ -5117,6 +5117,14 @@
 /obj/machinery/mission_pad,
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/inteq)
+"dsg" = (
+/obj/structure/window{
+	dir = 8;
+	pixel_x = -3;
+	mouse_opacity = 0
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/crew/canteen)
 "dsN" = (
 /obj/effect/turf_decal/corner/opaque/ntblue/full,
 /obj/effect/turf_decal/trimline/opaque/neutral/filled/warning,
@@ -9875,6 +9883,21 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security)
+"gyR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/toilet{
+	dir = 1
+	},
+/obj/machinery/button/door{
+	dir = 4;
+	pixel_x = -21;
+	pixel_y = 10;
+	name = "Door Bolt";
+	id = "aster_bar_stall2"
+	},
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/crew/canteen)
 "gzj" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -12536,12 +12559,26 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "ilg" = (
-/obj/structure/window{
-	dir = 8;
-	pixel_x = -3;
-	mouse_opacity = 0
+/obj/structure/toilet{
+	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/oil,
+/obj/effect/decal/cleanable/insectguts,
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/leaper_sludge,
+/obj/effect/decal/cleanable/glitter,
+/obj/effect/decal/cleanable/glass,
+/obj/effect/decal/cleanable/generic,
+/obj/machinery/light/small/built/directional/south,
+/obj/effect/decal/cleanable/wrapping,
+/turf/open/floor/plasteel/mono/dark,
 /area/outpost/crew/canteen)
 "ilq" = (
 /obj/effect/decal/cleanable/dirt,
@@ -20402,16 +20439,6 @@
 /obj/structure/fluff/hedge,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
-"nuY" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/transparent/blue/filled/line{
-	dir = 4
-	},
-/obj/structure/extinguisher_cabinet/directional/south,
-/turf/open/floor/plasteel/dark,
-/area/outpost/crew/canteen)
 "nvv" = (
 /obj/effect/turf_decal/corner/transparent/blue/half{
 	dir = 1
@@ -21231,11 +21258,14 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
-	dir = 1
+/obj/structure/sign/departments/restroom{
+	pixel_y = -32
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
 	},
 /turf/open/floor/carpet/nanoweave,
 /area/outpost/crew/canteen)
@@ -21872,6 +21902,20 @@
 	},
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/central)
+"oBD" = (
+/obj/machinery/button/door{
+	dir = 4;
+	pixel_x = -21;
+	pixel_y = 10;
+	name = "Door Bolt";
+	id = "aster_bar_stall3"
+	},
+/obj/structure/toilet{
+	dir = 1
+	},
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/crew/canteen)
 "oCc" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
@@ -27425,19 +27469,14 @@
 	},
 /area/outpost/hallway/central)
 "sax" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/toilet{
-	dir = 1
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 4
 	},
-/obj/machinery/button/door{
-	dir = 4;
-	pixel_x = -21;
-	pixel_y = 10;
-	name = "Door Bolt";
-	id = "aster_bar_stall2"
+/obj/effect/turf_decal/trimline/transparent/blue/filled/line{
+	dir = 4
 	},
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/plasteel/mono/dark,
+/obj/structure/extinguisher_cabinet/directional/south,
+/turf/open/floor/plasteel/dark,
 /area/outpost/crew/canteen)
 "saI" = (
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
@@ -30721,6 +30760,18 @@
 /obj/machinery/door/poddoor/shutters/preopen,
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo)
+"usd" = (
+/obj/structure/window{
+	dir = 8;
+	pixel_x = -3;
+	mouse_opacity = 0
+	},
+/obj/structure/urinal{
+	dir = 1;
+	pixel_y = 27
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/crew/canteen)
 "use" = (
 /turf/open/floor/grass/fairy/beach,
 /area/outpost/hallway/central)
@@ -30908,17 +30959,14 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 9
-	},
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/structure/sign/departments/restroom{
-	pixel_y = -32
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
 	},
 /turf/open/floor/carpet/nanoweave,
 /area/outpost/crew/canteen)
@@ -31006,10 +31054,6 @@
 /obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/relax_room)
-"uAo" = (
-/obj/structure/falsewall/reinforced,
-/turf/open/floor/fakepit,
-/area/outpost/crew/canteen)
 "uAT" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -31650,28 +31694,6 @@
 "uXL" = (
 /turf/open/floor/plating/asteroid/icerock,
 /area/outpost/external)
-"uXW" = (
-/obj/structure/toilet{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/oil,
-/obj/effect/decal/cleanable/insectguts,
-/obj/effect/decal/cleanable/greenglow,
-/obj/effect/decal/cleanable/leaper_sludge,
-/obj/effect/decal/cleanable/glitter,
-/obj/effect/decal/cleanable/glass,
-/obj/effect/decal/cleanable/generic,
-/obj/machinery/light/small/built/directional/south,
-/obj/effect/decal/cleanable/wrapping,
-/turf/open/floor/plasteel/mono/dark,
-/area/outpost/crew/canteen)
 "uYn" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -33279,18 +33301,8 @@
 /turf/open/floor/plasteel,
 /area/outpost/operations)
 "vRZ" = (
-/obj/machinery/button/door{
-	dir = 4;
-	pixel_x = -21;
-	pixel_y = 10;
-	name = "Door Bolt";
-	id = "aster_bar_stall3"
-	},
-/obj/structure/toilet{
-	dir = 1
-	},
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/plasteel/mono/dark,
+/obj/structure/falsewall/reinforced,
+/turf/open/floor/fakepit,
 /area/outpost/crew/canteen)
 "vSg" = (
 /obj/structure/flora/herb/g,
@@ -34547,18 +34559,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
-"wMR" = (
-/obj/structure/window{
-	dir = 8;
-	pixel_x = -3;
-	mouse_opacity = 0
-	},
-/obj/structure/urinal{
-	dir = 1;
-	pixel_y = 27
-	},
-/turf/open/floor/plasteel/mono/dark,
-/area/outpost/crew/canteen)
 "wNg" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
@@ -61368,7 +61368,7 @@ mCh
 gWG
 pkB
 vyZ
-vRZ
+oBD
 aIl
 cGD
 cGD
@@ -61742,7 +61742,7 @@ ckd
 pkB
 pkB
 ejk
-sax
+gyR
 aIl
 cGD
 cGD
@@ -61925,7 +61925,7 @@ aIl
 hMo
 eVx
 aIl
-wMR
+usd
 pkB
 pkB
 aIl
@@ -62116,7 +62116,7 @@ prV
 pkB
 pkB
 skl
-uXW
+ilg
 aIl
 cGD
 cGD
@@ -62303,7 +62303,7 @@ prV
 pkB
 eJq
 aIl
-uAo
+vRZ
 aIl
 cGD
 cGD
@@ -62486,7 +62486,7 @@ maA
 iNo
 oel
 aIl
-ilg
+dsg
 pkB
 pkB
 aIl
@@ -62862,7 +62862,7 @@ aIl
 aIl
 mod
 fTx
-nuY
+sax
 aIl
 cGD
 cGD
