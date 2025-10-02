@@ -8,9 +8,9 @@
 	icon_state = "idpirate_captain"
 	assignment = "Captain"
 
-/obj/item/card/id/cel/pirate/engeneer
+/obj/item/card/id/cel/pirate/engineer
 	icon_state = "idpirate_engineer"
-	assignment = "Engeneer"
+	assignment = "Engineer"
 
 /obj/item/card/id/cel/pirate/security
 	icon_state = "idpirate_security"

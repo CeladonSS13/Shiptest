@@ -48,14 +48,14 @@
 	implants = list(/obj/item/implant/radio)
 	accessory = null
 
-// MARK: Engeneer
+// MARK: Engineer
 /datum/outfit/job/pirate/engineer
 	job_icon = "assistant"
 	name = "Independent - Engineer (Pirate)"
 
 	jobtype = /datum/job/engineer
 
-	id = /obj/item/card/id/cel/pirate/engeneer
+	id = /obj/item/card/id/cel/pirate/engineer
 	ears = /obj/item/radio/headset/pirate
 	uniform = /obj/item/clothing/under/costume/sailor
 	head = /obj/item/clothing/head/bandana

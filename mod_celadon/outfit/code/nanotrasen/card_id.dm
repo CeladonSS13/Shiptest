@@ -5,9 +5,9 @@
 
 // MARK: Nakamura
 /obj/item/card/id/cel/nanotrasen/nakamura_ce
-	desc = "A NanoTrasen Nakamura ID with no proper access to speak of. This one indicates a Cheif of Engeneer."
-	icon_state = "idnaka_chiefengeneer"
-	assignment = "Cheif of Engeneer"
+	desc = "A NanoTrasen Nakamura ID with no proper access to speak of. This one indicates a Cheif of Engineer."
+	icon_state = "idnaka_chiefengineer"
+	assignment = "Cheif of Engineer"
 
 /obj/item/card/id/cel/nanotrasen/nakamura_command
 	desc = "A NanoTrasen Nakamura ID with no proper access to speak of. This one indicates a Quartermaster."
@@ -19,10 +19,10 @@
 	icon_state = "idnaka_atmostechnic"
 	assignment = "Atmospheric Technician"
 
-/obj/item/card/id/cel/nanotrasen/nakamura_engeneer
-	desc = "A NanoTrasen Nakamura ID with no proper access to speak of. This one indicates a Engeneer."
+/obj/item/card/id/cel/nanotrasen/nakamura_engineer
+	desc = "A NanoTrasen Nakamura ID with no proper access to speak of. This one indicates a Engineer."
 	icon_state = "idnaka_atmostechnic"
-	assignment = "Engeneer"
+	assignment = "Engineer"
 
 /obj/item/card/id/cel/nanotrasen/nakamura_assistant
 	desc = "A NanoTrasen Nakamura ID with no proper access to speak of. This one indicates a Assistant."
@@ -92,10 +92,10 @@
 	icon_state = "idvigi_sergeant"
 	assignment = "Sergeant"
 
-/obj/item/card/id/cel/nanotrasen/vigilitas_engeneer
-	desc = "A NanoTrasen Vigilitas ID with no proper access to speak of. This one indicates a Engeneer."
-	icon_state = "idvigi_engeneer"
-	assignment = "Engeneer"
+/obj/item/card/id/cel/nanotrasen/vigilitas_engineer
+	desc = "A NanoTrasen Vigilitas ID with no proper access to speak of. This one indicates a Engineer."
+	icon_state = "idvigi_engineer"
+	assignment = "Engineer"
 
 /obj/item/card/id/cel/nanotrasen/vigilitas_medic
 	desc = "A NanoTrasen Vigilitas ID with no proper access to speak of. This one indicates a Medic."

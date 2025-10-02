@@ -624,7 +624,7 @@
 // MARK: NT Nakamura
 /datum/outfit/job/nanotrasen/cel/nakamura_ce
 	job_icon = "chiefengineer"
-	name = "Cheif of Engeneer"
+	name = "Cheif of Engineer"
 
 	id = /obj/item/card/id/cel/nanotrasen/nakamura_ce
 
@@ -640,11 +640,11 @@
 
 	id = /obj/item/card/id/cel/nanotrasen/nakamura_atmostechnic
 
-/datum/outfit/job/nanotrasen/cel/nakamura_engeneer
+/datum/outfit/job/nanotrasen/cel/nakamura_engineer
 	job_icon = "stationengineer"
-	name = "Engeneer"
+	name = "Engineer"
 
-	id = /obj/item/card/id/cel/nanotrasen/nakamura_engeneer
+	id = /obj/item/card/id/cel/nanotrasen/nakamura_engineer
 
 /datum/outfit/job/nanotrasen/cel/nakamura_assistant
 	job_icon = "assistant"
@@ -727,11 +727,11 @@
 
 	id = /obj/item/card/id/cel/nanotrasen/vigilitas_sergeant
 
-/datum/outfit/job/nanotrasen/cel/vigilitas_engeneer
+/datum/outfit/job/nanotrasen/cel/vigilitas_engineer
 	job_icon = "stationengineer"
-	name = "Engeneer"
+	name = "Engineer"
 
-	id = /obj/item/card/id/cel/nanotrasen/vigilitas_engeneer
+	id = /obj/item/card/id/cel/nanotrasen/vigilitas_engineer
 
 /datum/outfit/job/nanotrasen/cel/vigilitas_medic
 	job_icon = "medicaldoctor"
