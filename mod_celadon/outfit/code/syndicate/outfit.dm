@@ -99,6 +99,7 @@
 /datum/outfit/job/syndicate/cel/assistant/suns
 	name = "Syndicate - Freshman (SUNS)"
 	id_assignment = "Freshman"
+	faction_icon = "bg_suns"
 
 	id = /obj/item/card/id/cel/syndicate/assistant/suns
 	uniform = /obj/item/clothing/under/syndicate/suns
@@ -188,6 +189,8 @@
 /datum/outfit/job/syndicate/cel/bartender/suns
 	name = "Syndicate - Student Mixologist (SUNS)"
 	id_assignment = "Student Mixologist"
+	faction_icon = "bg_suns"
+	job_icon = "suns_bartender"
 
 	id = /obj/item/card/id/cel/syndicate/crew/bartender/suns
 	uniform = /obj/item/clothing/under/syndicate/suns/uniform2
@@ -244,6 +247,8 @@
 /datum/outfit/job/syndicate/cel/botanist/suns
 	name = "Syndicate - Botanist-Chemist (SUNS)"
 	id_assignment = "Botanist-Chemist"
+	faction_icon = "bg_suns"
+	job_icon = "suns_sci"
 
 	id = /obj/item/card/id/cel/syndicate/crew/botanist/suns
 	uniform = /obj/item/clothing/under/syndicate/suns/sciencejumpsuit
@@ -321,6 +326,7 @@
 
 /datum/outfit/job/syndicate/cel/captain/suns
 	name = "Syndicate - Captain (SUNS)"
+	faction_icon = "bg_suns"
 
 	id = /obj/item/card/id/cel/syndicate/captain/suns
 	uniform = /obj/item/clothing/under/syndicate/suns/captain
@@ -456,6 +462,8 @@
 /datum/outfit/job/syndicate/cel/cmo/suns
 	name = "Syndicate - Medical Instructor (SUNS)"
 	id_assignment = "Medical Instructor"
+	faction_icon = "bg_suns"
+	job_icon = "suns_cmo"
 
 	id = /obj/item/card/id/cel/syndicate/command_cmo/suns
 	uniform = /obj/item/clothing/under/syndicate/suns/doctorscrubs
@@ -509,6 +517,8 @@
 /datum/outfit/job/syndicate/cel/head_of_personnel/suns	// Не юзается
 	name = "Syndicate - Academic Staff (SUNS)"
 	id_assignment = "Academic Staff"
+	faction_icon = "bg_suns"
+	job_icon = "suns_hop"
 
 	id = /obj/item/card/id/cel/syndicate/command_hop/suns
 	uniform = /obj/item/clothing/under/syndicate/suns/xo
@@ -584,6 +594,8 @@
 /datum/outfit/job/syndicate/cel/hos/suns	// Не юзается
 	name = "Syndicate - Senior Peacekeeper (SUNS)"
 	id_assignment = "Senior Peacekeeper"
+	faction_icon = "bg_suns"
+	job_icon = "suns_hos"
 
 	id = /obj/item/card/id/cel/syndicate/command_hos/suns
 	uniform = /obj/item/clothing/under/syndicate/suns/pkuniform
@@ -641,6 +653,8 @@
 
 /datum/outfit/job/syndicate/cel/doctor/suns
 	name = "Syndicate - Medical Doctor (SUNS)"
+	faction_icon = "bg_suns"
+	job_icon = "suns_doctor"
 
 	id = /obj/item/card/id/cel/syndicate/crew/doctor/suns
 	uniform = /obj/item/clothing/under/syndicate/suns/doctorscrubs
@@ -756,6 +770,7 @@
 
 /datum/outfit/job/syndicate/cel/psychologist/suns
 	name = "Syndicate - Psychologist (SUNS)"
+	faction_icon = "bg_suns"
 
 	id = /obj/item/card/id/cel/syndicate/crew/doctor/psychologist/suns
 	uniform = /obj/item/clothing/under/syndicate/suns/uniform3
@@ -776,7 +791,7 @@
 	name = "Syndicate - Long Term Patient"
 	id_assignment = "Long Term Patient"
 	jobtype = /datum/job/prisoner
-	job_icon = "assistant"
+	job_icon = "suns_patient"
 
 	id = /obj/item/card/id/cel/syndicate/patient_suns
 	uniform = /obj/item/clothing/under/rank/medical/gown
@@ -823,6 +838,8 @@
 
 /datum/outfit/job/syndicate/cel/science/suns	// Не юзается
 	name = "Syndicate - Scientist (SUNS)"
+	faction_icon = "bg_suns"
+	job_icon = "suns_sci"
 
 	id = /obj/item/card/id/cel/syndicate/crew/scientist/suns
 	uniform = /obj/item/clothing/under/syndicate/suns/sciencejumpsuit
@@ -933,6 +950,8 @@
 /datum/outfit/job/syndicate/cel/security/suns
 	name = "Syndicate - Peacekeeper (SUNS)"
 	id_assignment = "Peacekeeper"
+	faction_icon = "bg_suns"
+	job_icon = "suns_peacekeeper"
 
 	id = /obj/item/card/id/cel/syndicate/crew/security/suns
 	uniform = /obj/item/clothing/under/syndicate/suns/pkuniform
@@ -990,8 +1009,29 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	ears = /obj/item/radio/headset/alt
 
+/datum/outfit/job/syndicate/cel/miner/suns	// Не юзается
+	name = "Syndicate - Miner (SUNS)"
+	faction_icon = "bg_suns"
+	job_icon = "suns_miner"
+
+	id = /obj/item/card/id/cel/syndicate/crew/miner
+	uniform = /obj/item/clothing/under/syndicate/suns/workerjumpsuit
+	mask = /obj/item/clothing/mask/gas/syndicate/voicechanger
+	shoes = /obj/item/clothing/shoes/jackboots/suns
+	glasses = null
+	gloves = null
+	ears = null
+	r_pocket = null
+	l_pocket = null
+	belt = null
+
+	backpack = /obj/item/storage/backpack/security
+	satchel = /obj/item/storage/backpack/satchel/sec
+	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
+	courierbag = /obj/item/storage/backpack/messenger/sec
+
 /datum/outfit/job/syndicate/cel/miner/twink
-	name = "Syndicate - Miner (Twinkleshine, SUNS)"
+	name = "Syndicate - Miner (Twinkleshine)"
 
 	id = /obj/item/card/id/cel/syndicate/crew/miner
 	uniform = /obj/item/clothing/under/syndicate/suns/workerjumpsuit
@@ -1122,6 +1162,8 @@
 
 /datum/outfit/job/syndicate/cel/engineer/suns
 	name = "Syndicate - Ship Engineer (SUNS)"
+	faction_icon = "bg_suns"
+	job_icon = "suns_eng"
 
 	id = /obj/item/card/id/cel/syndicate/crew/engineer/suns
 	uniform = /obj/item/clothing/under/syndicate/suns/workerjumpsuit

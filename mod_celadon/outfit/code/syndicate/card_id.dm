@@ -289,6 +289,10 @@
 /obj/item/card/id/cel/syndicate/crew/security/suns/alternate
 	assignment = "Peacekeeper - Casual(SUNS)"
 
+/obj/item/card/id/cel/syndicate/crew/miner/suns
+	assignment = "Miner (SUNS)"
+	icon_state = "idsuns_crew"
+
 /obj/item/card/id/cel/syndicate/crew/bartender/suns
 	assignment = "Student Mixologist (SUNS)"
 	icon_state = "idsuns_crew"
