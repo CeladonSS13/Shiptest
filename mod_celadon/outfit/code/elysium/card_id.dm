@@ -1,5 +1,6 @@
 /obj/item/card/id/cel/elysium
 	icon_state = "ideusm_civilian"
+	assignment = "Crew"
 	uses_overlays = FALSE
 
 /obj/item/card/id/cel/elysium/captain
