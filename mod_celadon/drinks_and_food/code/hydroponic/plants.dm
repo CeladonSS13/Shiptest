@@ -1,5 +1,3 @@
-//Фиксим спрайты семян
-
 /obj/item/seeds/dote_berries
 	icon = 'mod_celadon/_storage_icons/icons/obj/hydroponics/seeds.dmi'
 	icon_state = "seed-dote"
