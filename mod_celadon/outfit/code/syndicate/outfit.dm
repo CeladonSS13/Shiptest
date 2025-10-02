@@ -422,7 +422,7 @@
 	name = "Syndicate - Chief Engineer (Gorlex)"
 
 	id = /obj/item/card/id/cel/syndicate/command_ce/gorlex
-	head = /obj/item/clothing/head/hardhat/gorlex
+	head = /obj/item/clothing/head/hardhat
 	ears = /obj/item/radio/headset/syndicate/alt
 	uniform = /obj/item/clothing/under/syndicate/gorlex
 	shoes = /obj/item/clothing/shoes/combat
@@ -444,7 +444,7 @@
 	head = /obj/item/clothing/head/beret/cmo
 	suit = /obj/item/clothing/suit/toggle/labcoat/raincoat
 	l_hand = /obj/item/storage/firstaid/medical
-	suit_store = /obj/item/flashlight/pen/paramedicox/survival/medical
+	suit_store = /obj/item/flashlight/pen/paramedic
 
 /datum/outfit/job/syndicate/cel/cmo/cybersun
 	name = "Syndicate - Medical Director (Cybersun)"
