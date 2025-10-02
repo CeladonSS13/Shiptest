@@ -14,7 +14,7 @@
 #include "code/elysium/clothing/shoes.dm"
 #include "code/elysium/clothing/suits.dm"
 #include "code/elysium/clothing/under.dm"
-#include "code/elysium/card_id.dm"
+#include "code/elysium/_card_id.dm"
 #include "code/elysium/outfit.dm"
 #include "code/elysium/merch.dm"
 #include "code/elysium/items.dm"
@@ -22,31 +22,37 @@
 
 #include "code/gamma/gamma.dm"
 
-#include "code/independent/card_id.dm"
+#include "code/independent/_card_id.dm"
 #include "code/independent/outfit.dm"
 #include "code/independent/roumain.dm"
 
-#include "code/inteq/card_id.dm"
+#include "code/inteq/_card_id.dm"
 #include "code/inteq/outfit.dm"
 #include "code/inteq/armor.dm"
 
-#include "code/nanotrasen/card_id.dm"
+#include "code/nanotrasen/_card_id.dm"
 #include "code/nanotrasen/outfit.dm"
 #include "code/nanotrasen/decals.dm"
 #include "code/nanotrasen/other_stuff.dm"
 
-#include "code/solfed/card_id.dm"
+#include "code/solfed/_card_id.dm"
 #include "code/solfed/outfit.dm"
 #include "code/solfed/decal.dm"
 #include "code/solfed/other_stuff.dm"
 
-#include "code/syndicate/card_id.dm"
-#include "code/syndicate/outfit.dm"
+#include "code/syndicate/_card_id.dm"
+#include "code/syndicate/_syndicate_outfit.dm"
+#include "code/syndicate/cybersun_outfit.dm"
+#include "code/syndicate/donkco_outfit.dm"
+#include "code/syndicate/gec_outfit.dm"
+#include "code/syndicate/gorlex_outfit.dm"
+#include "code/syndicate/suns_outfit.dm"
+#include "code/syndicate/twinkle_outfit.dm"
 
 #include "code/event.dm"
 #include "code/standard.dm"
 
-#include "code/pirate/card_id.dm"
+#include "code/pirate/_card_id.dm"
 #include "code/pirate/pirate_outfit.dm"
 #include "code/pirate/ramzi_outfit.dm"
 #include "code/pirate/frontiersmen_outfit.dm"

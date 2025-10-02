@@ -319,7 +319,14 @@
 	icon_state = "idsuns_crew"
 
 /obj/item/card/id/cel/syndicate/assistant/suns
+	assignment = "Freshman (SUNS)"
 	icon_state = "idsuns_assistant"
+
+/obj/item/card/id/cel/syndicate/assistant/suns/janitor
+	assignment = "Junior (SUNS)"
+
+/obj/item/card/id/cel/syndicate/assistant/suns/graduate
+	assignment = "Graduate (SUNS)"
 
 /obj/item/card/id/cel/syndicate/patient_suns
 	icon_state = "idsuns_patient"
