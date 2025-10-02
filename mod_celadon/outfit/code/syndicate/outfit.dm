@@ -50,6 +50,7 @@
 /datum/outfit/job/syndicate/cel/assistant/gorlex
 	name = "Syndicate - Junior Agent (Hardliner)"
 
+	id = /obj/item/card/id/cel/syndicate/assistant/gorlex
 	uniform = /obj/item/clothing/under/syndicate/hardliners
 	alt_uniform = /obj/item/clothing/under/syndicate/hardliners/jumpsuit
 
@@ -57,6 +58,7 @@
 	name = "Syndicate - Deckhand (GEC)"
 	id_assignment = "Deckhand"
 
+	id = /obj/item/card/id/cel/syndicate/assistant/gec
 	uniform = /obj/item/clothing/under/syndicate
 	suit = /obj/item/clothing/suit/toggle/hazard
 
@@ -65,6 +67,7 @@
 /datum/outfit/job/syndicate/cel/assistant/cybersun
 	name = "Syndicate - Junior Agent (Cybersun)"
 
+	id = /obj/item/card/id/cel/syndicate/assistant/cybersun
 	uniform = /obj/item/clothing/under/syndicate/cybersun
 	shoes = /obj/item/clothing/shoes/jackboots
 	r_pocket = /obj/item/radio
@@ -76,7 +79,6 @@
 
 	uniform = /obj/item/clothing/under/syndicate
 	mask = /obj/item/clothing/mask/gas/syndicate/voicechanger
-	id = /obj/item/card/id/cel/syndicate/crew_id
 	belt = null
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = null
@@ -98,6 +100,7 @@
 	name = "Syndicate - Freshman (SUNS)"
 	id_assignment = "Freshman"
 
+	id = /obj/item/card/id/cel/syndicate/assistant/suns
 	uniform = /obj/item/clothing/under/syndicate/suns
 	alt_uniform = /obj/item/clothing/under/syndicate/suns/alt
 	suit = /obj/item/clothing/suit/toggle/suns/alt
@@ -106,20 +109,19 @@
 	gloves = null
 	ears = null
 
-
 	backpack = /obj/item/storage/backpack
 	satchel  = /obj/item/storage/backpack/satchel
 	duffelbag = /obj/item/storage/backpack/duffelbag
 	courierbag = /obj/item/storage/backpack/messenger
 
-/datum/outfit/job/syndicate/cel/assistant/suns/halfway
+/datum/outfit/job/syndicate/cel/assistant/suns/halfway	// не юзается нигде
 	name = "Syndicate - Junior (SUNS)"
 	id_assignment = "Junior"
 
 	uniform = /obj/item/clothing/under/syndicate/suns/uniform2
 	alt_uniform = /obj/item/clothing/under/syndicate/suns/uniform2/alt
 
-/datum/outfit/job/syndicate/cel/assistant/suns/complete
+/datum/outfit/job/syndicate/cel/assistant/suns/complete	// не юзается нигде
 	name = "Syndicate - Graduate (SUNS)"
 	id_assignment = "Graduate"
 
@@ -133,8 +135,8 @@
 	jobtype = /datum/job/atmos
 	job_icon = "atmospherictechnician"
 
+	id = /obj/item/card/id/cel/syndicate/crew/atmos
 	belt = /obj/item/storage/belt/utility/atmostech
-
 	uniform = /obj/item/clothing/under/rank/engineering/atmospheric_technician
 	alt_uniform = /obj/item/clothing/under/rank/engineering/engineer/hazard
 	alt_suit = /obj/item/clothing/suit/hazardvest
@@ -153,11 +155,10 @@
 /datum/outfit/job/syndicate/cel/atmos/gec
 	name = "Syndicate - Atmospheric Technician (GEC)"
 
+	id = /obj/item/card/id/cel/syndicate/crew/atmos/gec
 	uniform = /obj/item/clothing/under/syndicate/gec/atmos_tech
 	suit = /obj/item/clothing/suit/toggle/hazard
 	head = /obj/item/clothing/head/hardhat
-	id = /obj/item/card/id/cel/syndicate/crew_id
-
 
 //MARK: bartenders
 
@@ -166,7 +167,7 @@
 	jobtype = /datum/job/bartender
 	job_icon = "bartender"
 
-	id = /obj/item/card/id/cel/syndicate/crew_id
+	id = /obj/item/card/id/cel/syndicate/crew/bartender
 	head = /obj/item/clothing/head/HoS/beret/syndicate
 	glasses = /obj/item/clothing/glasses/sunglasses/reagent
 	uniform = /obj/item/clothing/under/rank/civilian/bartender
@@ -188,6 +189,7 @@
 	name = "Syndicate - Student Mixologist (SUNS)"
 	id_assignment = "Student Mixologist"
 
+	id = /obj/item/card/id/cel/syndicate/crew/bartender/suns
 	uniform = /obj/item/clothing/under/syndicate/suns/uniform2
 	alt_uniform = /obj/item/clothing/under/syndicate/suns/alt
 	mask = /obj/item/clothing/mask/breath/suns
@@ -210,7 +212,6 @@
 	name = "Syndicate - Bartender (Twinkleshine, Donk)"
 
 	uniform = /obj/item/clothing/under/syndicate/donk
-	id = /obj/item/card/id/cel/syndicate/crew_id
 	mask = /obj/item/clothing/mask/gas/syndicate/voicechanger
 	suit = null
 	belt = null
@@ -235,6 +236,7 @@
 	jobtype = /datum/job/hydro
 	job_icon = "botanist"
 
+	id = /obj/item/card/id/cel/syndicate/crew/botanist
 	suit = /obj/item/clothing/suit/apron
 	gloves  =/obj/item/clothing/gloves/botanic_leather
 	suit_store = /obj/item/plant_analyzer
@@ -243,8 +245,8 @@
 	name = "Syndicate - Botanist-Chemist (SUNS)"
 	id_assignment = "Botanist-Chemist"
 
+	id = /obj/item/card/id/cel/syndicate/crew/botanist/suns
 	uniform = /obj/item/clothing/under/syndicate/suns/sciencejumpsuit
-	id = /obj/item/card/id/cel/syndicate/crew_id
 	shoes = /obj/item/clothing/shoes/sneakers/suns
 	glasses = /obj/item/clothing/glasses/science/suns
 	suit =  /obj/item/clothing/suit/hooded/suns
@@ -263,7 +265,7 @@
 	jobtype = /datum/job/captain
 	job_icon = "captain"
 
-	id = /obj/item/card/id/cel/syndicate/captain_id
+	id = /obj/item/card/id/cel/syndicate/captain
 	ears = /obj/item/radio/headset/syndicate/alt/captain
 	uniform = /obj/item/clothing/under/syndicate/ngr/officer
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -280,6 +282,7 @@
 	name = "Flotilla Admiral (Twinkleshine, ACLF)"
 	id_assignment = "Flotilla Admiral"
 
+	id = /obj/item/card/id/cel/syndicate/admiral
 	uniform = /obj/item/clothing/under/syndicate/ngr/officer
 	head = null
 	gloves = /obj/item/clothing/gloves/color/white
@@ -299,6 +302,8 @@
 
 /datum/outfit/job/syndicate/cel/captain/gorlex
 	name = "Syndicate - Captain (Hardliner)"
+
+	id = /obj/item/card/id/cel/syndicate/captain/gorlex
 	uniform = /obj/item/clothing/under/syndicate/hardliners/officer
 
 	head = /obj/item/clothing/head/hardliners/peaked
@@ -308,6 +313,7 @@
 /datum/outfit/job/syndicate/cel/captain/cybersun
 	name = "Syndicate - Captain (Cybersun)"
 
+	id = /obj/item/card/id/cel/syndicate/captain/cybersun
 	uniform = /obj/item/clothing/under/syndicate/cybersun/officer
 	suit = /obj/item/clothing/suit/armor/vest/capcarapace/cybersun
 	head = /obj/item/clothing/head/HoS/cybersun
@@ -316,6 +322,7 @@
 /datum/outfit/job/syndicate/cel/captain/suns
 	name = "Syndicate - Captain (SUNS)"
 
+	id = /obj/item/card/id/cel/syndicate/captain/suns
 	uniform = /obj/item/clothing/under/syndicate/suns/captain
 	shoes = /obj/item/clothing/shoes/combat/suns
 	head = /obj/item/clothing/head/suns/captain
@@ -337,7 +344,7 @@
 	jobtype = /datum/job/cargo_tech
 	job_icon = "cargotechnician"
 
-	id = /obj/item/card/id/cel/syndicate/crew_id
+	id = /obj/item/card/id/cel/syndicate/crew/cargo_tech
 	uniform = /obj/item/clothing/under/syndicate/donk
 	suit = /obj/item/clothing/suit/hazardvest/donk
 
@@ -350,6 +357,8 @@
 	name = "Syndicate - Customer Associate (Donk)"
 	id_assignment = "Customer Associate"
 
+	id = /obj/item/card/id/cel/syndicate/crew/cargo_tech/donkco
+
 //MARK: chemist
 
 /datum/outfit/job/syndicate/cel/chemist	// Не юзается
@@ -357,9 +366,8 @@
 	jobtype = /datum/job/chemist
 	job_icon = "chemist"
 
+	id = /obj/item/card/id/cel/syndicate/crew/chemist
 	uniform = /obj/item/clothing/under/syndicate
-	id = /obj/item/card/id/cel/syndicate/crew_id
-
 	glasses = /obj/item/clothing/glasses/science
 	shoes = /obj/item/clothing/shoes/sneakers/white
 	suit =  /obj/item/clothing/suit/toggle/labcoat/chemist
@@ -367,11 +375,11 @@
 /datum/outfit/job/syndicate/cel/chemist/gec	// Не юзается
 	name = "Syndicate - Chemist (GEC)"
 
+	id = /obj/item/card/id/cel/syndicate/crew/chemist/gec
 	uniform = /obj/item/clothing/under/syndicate/intern
 	suit = /obj/item/clothing/suit/toggle/hazard
 	head = /obj/item/clothing/head/hardhat
 	belt = /obj/item/storage/belt/utility/full/engi
-	id = /obj/item/card/id/cel/syndicate/crew_id
 
 //MARK: Chief Engineer
 
@@ -380,7 +388,7 @@
 	jobtype = /datum/job/chief_engineer
 	job_icon = "chiefengineer"
 
-	id = /obj/item/card/id/cel/syndicate/crew_id
+	id = /obj/item/card/id/cel/syndicate/command_ce
 	ears = /obj/item/radio/headset/syndicate/alt
 	glasses = /obj/item/clothing/glasses/sunglasses
 
@@ -402,17 +410,18 @@
 /datum/outfit/job/syndicate/cel/ce/gec
 	name = "Syndicate - Chief Engineer (GEC)"
 
+	id = /obj/item/card/id/cel/syndicate/command_ce/gec
 	uniform = /obj/item/clothing/under/syndicate/gec/chief_engineer
 	suit = /obj/item/clothing/suit/toggle/hazard
 	head = /obj/item/clothing/head/hardhat/white
 	shoes =/obj/item/clothing/shoes/laceup
 	ears = /obj/item/radio/headset/syndicate/alt/captain
-	id = /obj/item/card/id/cel/syndicate/captain_id
 	gloves = /obj/item/clothing/gloves/color/yellow
 
 /datum/outfit/job/syndicate/cel/ce/gorlex
 	name = "Syndicate - Chief Engineer (Gorlex)"
 
+	id = /obj/item/card/id/cel/syndicate/command_ce/gorlex
 	head = /obj/item/clothing/head/hardhat/gorlex
 	ears = /obj/item/radio/headset/syndicate/alt
 	uniform = /obj/item/clothing/under/syndicate/gorlex
@@ -422,28 +431,35 @@
 //MARK: Chief Medical Officer
 
 /datum/outfit/job/syndicate/cel/cmo
-	name = "Syndicate - Medical Director (Cybersun)"
+	name = "Syndicate - Medical Director"
 	id_assignment = "Medical Director"
 	jobtype = /datum/job/cmo
 	job_icon = "chiefmedicalofficer"
 
-	uniform = /obj/item/clothing/under/rank/medical/chief_medical_officer/cybersun
+	id = /obj/item/card/id/cel/syndicate/command_cmo
+	uniform = /obj/item/clothing/under/rank/medical/chief_medical_officer
 	ears = /obj/item/radio/headset/syndicate/alt/captain
-	id = /obj/item/card/id/cel/syndicate/captain_id
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/pinpointer/crew
-	head = /obj/item/clothing/head/beret/cmo/cybersun
+	head = /obj/item/clothing/head/beret/cmo
 	suit = /obj/item/clothing/suit/toggle/labcoat/raincoat
 	l_hand = /obj/item/storage/firstaid/medical
 	suit_store = /obj/item/flashlight/pen/paramedicox/survival/medical
+
+/datum/outfit/job/syndicate/cel/cmo/cybersun
+	name = "Syndicate - Medical Director (Cybersun)"
+
+	id = /obj/item/card/id/cel/syndicate/command_cmo/cybersun
+	uniform = /obj/item/clothing/under/rank/medical/chief_medical_officer/cybersun
+	head = /obj/item/clothing/head/beret/cmo/cybersun
 
 /datum/outfit/job/syndicate/cel/cmo/suns
 	name = "Syndicate - Medical Instructor (SUNS)"
 	id_assignment = "Medical Instructor"
 
+	id = /obj/item/card/id/cel/syndicate/command_cmo/suns
 	uniform = /obj/item/clothing/under/syndicate/suns/doctorscrubs
 	ears = /obj/item/radio/headset/syndicate/alt/captain
-	id = /obj/item/card/id/cel/syndicate/captain_id
 	shoes = /obj/item/clothing/shoes/combat/suns
 	l_pocket = /obj/item/pinpointer/crew
 	suit = /obj/item/clothing/suit/toggle/labcoat/suns/cmo
@@ -467,12 +483,12 @@
 	jobtype = /datum/job/head_of_personnel
 	job_icon = "headofpersonnel"
 
+	id =
 	ears = /obj/item/radio/headset/syndicate/alt
 	uniform = /obj/item/clothing/under/syndicate
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/HoS/beret/syndicate
 	gloves = /obj/item/clothing/gloves/color/white
-	id = /obj/item/card/id/cel/syndicate/crew_id
 	r_pocket = /obj/item/melee/knife/survival
 	glasses = /obj/item/clothing/glasses/hud/health
 	backpack_contents = list(/obj/item/storage/box/ids=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
@@ -481,19 +497,20 @@
 	name = "Syndicate - Intelligence Officer (Cybersun)"
 	id_assignment = "Intelligence Officer"
 
+	id =
 	ears = /obj/item/radio/headset/syndicate/alt
 	uniform = /obj/item/clothing/under/syndicate/cybersun/officer
 	suit = /obj/item/clothing/suit/cybersun_suit
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/HoS/cybersun
 	gloves = /obj/item/clothing/gloves/combat
-	id = /obj/item/card/id/cel/syndicate/crew_id
 	glasses = /obj/item/clothing/glasses/sunglasses
 
 /datum/outfit/job/syndicate/cel/head_of_personnel/suns	// Не юзается
 	name = "Syndicate - Academic Staff (SUNS)"
 	id_assignment = "Academic Staff"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate/suns/xo
 	suit = /obj/item/clothing/suit/armor/vest/suns/xo
 	belt = /obj/item/storage/belt/sabre/suns
@@ -516,11 +533,11 @@
 	jobtype = /datum/job/hos
 	job_icon = "headofsecurity"
 
+	id =
 	ears = /obj/item/radio/headset/syndicate/alt
 	uniform = /obj/item/clothing/under/syndicate/combat
 	head = /obj/item/clothing/head/HoS/syndicate
 	suit = /obj/item/clothing/suit/armor/vest/syndie
-	id = /obj/item/card/id/cel/syndicate/crew_id
 	shoes = /obj/item/clothing/shoes/jackboots
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 
@@ -528,10 +545,10 @@
 	name = "Syndicate - Sergeant (Hardliner)"
 	id_assignment = "Sergeant"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate/hardliners/officer
 	head = /obj/item/clothing/head/hardliners/peaked
 	suit = /obj/item/clothing/suit/armor/hardliners/sergeant
-	id = /obj/item/card/id/cel/syndicate/crew_id
 	shoes = /obj/item/clothing/shoes/combat
 
 /datum/outfit/job/syndicate/cel/hos/twink
@@ -539,9 +556,9 @@
 	id_assignment = "Lieutenant"
 	job_icon = "lieutenant"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate/ngr/officer
 	mask = /obj/item/clothing/mask/gas/syndicate/voicechanger
-	id = /obj/item/card/id/cel/syndicate/lieutenant
 	head = null
 	ears = null
 	gloves = /obj/item/clothing/gloves/combat
@@ -569,6 +586,7 @@
 	name = "Syndicate - Senior Peacekeeper (SUNS)"
 	id_assignment = "Senior Peacekeeper"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate/suns/pkuniform
 	suit = /obj/item/clothing/suit/armor/vest/suns/hos
 	belt = /obj/item/melee/sword/sabre/suns/telescopic
@@ -592,6 +610,7 @@
 	name = "Syndicate - Redshield Officer (Twinkleshine, SUNS)"
 	id_assignment = "Redshield Officer"
 
+	id =
 	suit = null
 	mask = /obj/item/clothing/mask/gas/syndicate/voicechanger
 	ears = null
@@ -610,8 +629,8 @@
 	jobtype = /datum/job/doctor
 	job_icon = "medicaldoctor"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate
-	id = /obj/item/card/id/cel/syndicate/crew_id
 	shoes = /obj/item/clothing/shoes/jackboots
 	alt_suit = /obj/item/clothing/suit/apron/surgical
 	backpack = /obj/item/storage/backpack/medic
@@ -622,6 +641,7 @@
 /datum/outfit/job/syndicate/cel/doctor/suns
 	name = "Syndicate - Medical Doctor (SUNS)"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate/suns/doctorscrubs
 	shoes = /obj/item/clothing/shoes/sneakers/suns
 	suit = /obj/item/clothing/suit/toggle/labcoat/suns/doctorlabcoat
@@ -638,6 +658,7 @@
 /datum/outfit/job/syndicate/cel/doctor/cybersun
 	name = "Syndicate - Medical Doctor (Cybersun)"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate/medic
 	accessory = /obj/item/clothing/accessory/armband/medblue
 	shoes = /obj/item/clothing/shoes/combat
@@ -645,11 +666,11 @@
 /datum/outfit/job/syndicate/cel/doctor/gorlex
 	name = "Syndicate - Medical Doctor (Hardliner)"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate/hardliners
 	head = /obj/item/clothing/head/hardliners
 	suit = /obj/item/clothing/suit/hardliners
 	glasses = /obj/item/clothing/glasses/hud/health
-	id = /obj/item/card/id/cel/syndicate/crew_id
 	shoes = /obj/item/clothing/shoes/combat
 
 //MARK: paramedics
@@ -659,7 +680,7 @@
 	jobtype = /datum/job/paramedic
 	job_icon = "paramedic"
 
-	id = /obj/item/card/id/cel/syndicate/crew_id
+	id =
 	uniform = /obj/item/clothing/under/syndicate/gorlex
 	alt_uniform = null
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -669,7 +690,6 @@
 	alt_suit = /obj/item/clothing/suit/apron/surgical
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile/evil
 	belt = /obj/item/storage/belt/medical/paramedic
-	id = /obj/item/card/id
 	suit_store = /obj/item/flashlight/pen/paramedic
 	backpack_contents = list(/obj/item/roller=1)
 	pda_slot = ITEM_SLOT_LPOCKET
@@ -681,6 +701,7 @@
 	name = "Syndicate - Field Medic (Cybersun Industries)"
 	id_assignment = "Field Medic"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate/medic
 	head = /obj/item/clothing/head/soft/cybersun/medical
 	shoes = /obj/item/clothing/shoes/combat
@@ -689,9 +710,9 @@
 /datum/outfit/job/syndicate/cel/paramedic/twink
 	name = "Syndicate - Medic (Twinkleshine, Cybersun)"
 
+	id =
 	mask = /obj/item/clothing/mask/gas/syndicate/voicechanger
 	uniform = /obj/item/clothing/under/rank/medical/doctor/red
-	id = /obj/item/card/id/cel/syndicate/crew_id/med
 	belt = null
 	head = null
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile/evil
@@ -722,7 +743,7 @@
 	jobtype = /datum/job/psychologist
 	job_icon = "psychologist"
 
-	id = /obj/item/card/id/cel/syndicate/crew_id
+	id =
 	uniform = /obj/item/clothing/under/rank/medical/psychiatrist
 	suit = /obj/item/clothing/suit/toggle/labcoat
 	shoes = /obj/item/clothing/shoes/laceup
@@ -733,6 +754,7 @@
 /datum/outfit/job/syndicate/cel/psychologist/suns
 	name = "Syndicate - Psychologist (SUNS)"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate/suns/uniform3
 	alt_uniform = /obj/item/clothing/under/syndicate/suns/uniform3/alt
 	suit = /obj/item/clothing/suit/toggle/suns
@@ -753,7 +775,7 @@
 	jobtype = /datum/job/prisoner
 	job_icon = "assistant"
 
-	id = /obj/item/card/id/patient
+	id =
 	uniform = /obj/item/clothing/under/rank/medical/gown
 	alt_suit = null
 	shoes = /obj/item/clothing/shoes/sandal/slippers
@@ -765,8 +787,7 @@
 	jobtype = /datum/job/qm
 	job_icon = "quartermaster"
 
-	id = /obj/item/card/id/cel/syndicate/captain_id
-
+	id =
 	ears = /obj/item/radio/headset/syndicate/alt
 	uniform = /obj/item/clothing/under/syndicate/donk/qm
 	suit = /obj/item/clothing/suit/hazardvest/donk/qm
@@ -778,8 +799,8 @@
 
 /datum/outfit/job/syndicate/cel/quartermaster/donk
 	name = "Syndicate - Manager (Donk)"
-	id = /obj/item/card/id/cel/syndicate/captain_id
 
+	id =
 	ears = /obj/item/radio/headset/syndicate/alt
 	uniform = /obj/item/clothing/under/syndicate/donk/qm
 	suit = /obj/item/clothing/suit/hazardvest/donk/qm
@@ -793,12 +814,14 @@
 	jobtype = /datum/job/scientist
 	job_icon = "scientist"
 
+	id =
 	suit = /obj/item/clothing/suit/toggle/labcoat/science
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/science
 
 /datum/outfit/job/syndicate/cel/science/suns	// Не юзается
 	name = "Syndicate - Scientist (SUNS)"
-//more futureproofing than anything, the Aegis currently uses /datum/outfit/job/syndicate/cel/botanist/suns for a similar role
+
+	id =
 	uniform = /obj/item/clothing/under/syndicate/suns/sciencejumpsuit
 	suit = /obj/item/clothing/suit/hooded/suns
 	shoes = /obj/item/clothing/shoes/sneakers/suns
@@ -815,6 +838,7 @@
     jobtype = /datum/job/scientist
     job_icon = "scientist"
 
+	id =
     uniform = /obj/item/clothing/under/syndicate/cybersun/research
     suit = /obj/item/clothing/suit/toggle/labcoat
     head = /obj/item/clothing/head/soft/cybersun
@@ -831,13 +855,13 @@
 	jobtype = /datum/job/rd
 	job_icon = "headofpersonnel"
 
+	id =
 	ears = /obj/item/radio/headset/syndicate/alt
 	uniform = /obj/item/clothing/under/syndicate/cybersun/officer
 	suit = /obj/item/clothing/suit/cybersun_suit
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/HoS/cybersun
 	gloves = /obj/item/clothing/gloves/combat
-	id = /obj/item/card/id/cel/syndicate/crew_id
 	glasses = /obj/item/clothing/glasses/sunglasses
 
 //MARK: security officers
@@ -848,9 +872,9 @@
 	jobtype = /datum/job/officer
 	job_icon = "securityofficer"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate
 	back = /obj/item/storage/backpack
-	id = /obj/item/card/id/cel/syndicate/crew_id
 
 	ears = /obj/item/radio/headset/alt
 	gloves = /obj/item/clothing/gloves/color/black
@@ -863,6 +887,7 @@
 	id_assignment = "Trooper"
 	job_icon = "securityofficer"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate/hardliners
 	gloves = /obj/item/clothing/gloves/color/black
 	shoes = /obj/item/clothing/shoes/combat
@@ -872,14 +897,15 @@
 	id_assignment = "Pilot"
 	job_icon = "securityofficer"
 
+	id =
 	head = /obj/item/clothing/head/helmet/hardliners/swat
 
 /datum/outfit/job/syndicate/cel/security/twink
 	name = "Syndicate - Operative (Twinkleshine)"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate/combat
 	mask = /obj/item/clothing/mask/gas/syndicate/voicechanger
-	id = /obj/item/card/id/cel/syndicate/crew_id
 	head = null
 	ears = null
 	suit = null
@@ -905,6 +931,7 @@
 	name = "Syndicate - Peacekeeper (SUNS)"
 	id_assignment = "Peacekeeper"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate/suns/pkuniform
 	suit = /obj/item/clothing/suit/armor/vest/suns
 	alt_suit = /obj/item/clothing/suit/toggle/suns/pkcoat
@@ -934,6 +961,7 @@
 	jobtype = /datum/job/mining
 	job_icon = "shaftminer"
 
+	id =
 	ears = /obj/item/radio/headset/headset_cargo/mining
 	shoes = /obj/item/clothing/shoes/workboots/mining
 	gloves = /obj/item/clothing/gloves/explorer
@@ -950,6 +978,7 @@
 	name = "Syndicate - Wrecker (Hardliner)"
 	id_assignment = "Wrecker"
 
+	id =
 	head = /obj/item/clothing/head/hardhat/hardliners
 	suit = /obj/item/clothing/suit/hazardvest/hardliners
 	uniform = /obj/item/clothing/under/syndicate/hardliners/jumpsuit
@@ -960,9 +989,9 @@
 /datum/outfit/job/syndicate/cel/miner/twink
 	name = "Syndicate - Miner (Twinkleshine, SUNS)"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate/suns/workerjumpsuit
 	mask = /obj/item/clothing/mask/gas/syndicate/voicechanger
-	id = /obj/item/card/id/cel/syndicate/crew_id
 	shoes = /obj/item/clothing/shoes/jackboots/suns
 	glasses = null
 	gloves = null
@@ -984,7 +1013,7 @@
 	name = "Syndicate - Field Agent (Cybersun)"
 	id_assignment = "Field Agent"
 
-	id = /obj/item/card/id/cel/syndicate/crew_id
+	id =
 	ears = /obj/item/radio/headset
 	uniform = /obj/item/clothing/under/syndicate/cybersun
 	accessory = /obj/item/clothing/accessory/armband/cargo
@@ -994,7 +1023,7 @@
 /datum/outfit/job/syndicate/cel/miner/gec
 	name = "Syndicate - Shaft Miner (GEC)"
 
-	id = /obj/item/card/id/cel/syndicate/crew_id
+	id =
 	ears = /obj/item/radio/headset
 	uniform = /obj/item/clothing/under/syndicate
 	alt_uniform = null
@@ -1013,7 +1042,7 @@
 	jobtype = /datum/job/engineer
 	job_icon = "stationengineer"
 
-	id = /obj/item/card/id/cel/syndicate/crew_id
+	id =
 	uniform = /obj/item/clothing/under/syndicate
 	alt_uniform = /obj/item/clothing/under/syndicate/gec
 	accessory = /obj/item/clothing/accessory/armband/engine
@@ -1036,16 +1065,17 @@
 	name = "Syndicate - Ship Engineer (GEC)"
 	id_assignment = "Ship Engineer"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate/gec
 	alt_uniform = null
 	suit = /obj/item/clothing/suit/toggle/hazard
 	head = /obj/item/clothing/head/hardhat
-	id = /obj/item/card/id/cel/syndicate/crew_id
 
 /datum/outfit/job/syndicate/cel/engineer/gorlex
 	name = "Syndicate - Mechanic (Hardliner)"
 	id_assignment = "Mechanic"
 
+	id =
 	head = /obj/item/clothing/head/hardhat/hardliners
 	suit = /obj/item/clothing/suit/hazardvest/hardliners
 	uniform = /obj/item/clothing/under/syndicate/hardliners
@@ -1055,9 +1085,9 @@
 /datum/outfit/job/syndicate/cel/engineer/twink
 	name = "Syndicate - Ship Engineer (Twinkleshine, GEC)"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate/gec
 	alt_uniform = null
-	id = /obj/item/card/id/cel/syndicate/crew_id/engi
 	mask = /obj/item/clothing/mask/gas/syndicate/voicechanger
 	ears = null
 	accessory = null
@@ -1079,6 +1109,7 @@
 /datum/outfit/job/syndicate/cel/engineer/cybersun
 	name = "Syndicate - Engineer (Cybersun)"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate/cybersun/research
 	shoes = /obj/item/clothing/shoes/workboots
 	r_pocket = /obj/item/radio
@@ -1088,6 +1119,7 @@
 /datum/outfit/job/syndicate/cel/engineer/suns
 	name = "Syndicate - Ship Engineer (SUNS)"
 
+	id =
 	uniform = /obj/item/clothing/under/syndicate/suns/workerjumpsuit
 	suit = /obj/item/clothing/suit/toggle/suns/workervest
 	gloves = /obj/item/clothing/gloves/suns/yellow
