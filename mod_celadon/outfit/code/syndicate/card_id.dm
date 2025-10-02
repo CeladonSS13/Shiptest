@@ -7,52 +7,52 @@
 //MARK: SYNDICATE
 
 /obj/item/card/id/cel/syndicate/admiral
-	icon_state = "idsyndicate_admiral"
 	assignment = "Admiral"
+	icon_state = "idsyndicate_admiral"
 	access = list(ACCESS_SYNDICATE, ACCESS_ROBOTICS, ACCESS_ARMORY, ACCESS_SYNDICATE_LEADER)
 
 /obj/item/card/id/cel/syndicate/captain
-	icon_state = "idsyndicate_captain"
 	assignment = "Captain"
+	icon_state = "idsyndicate_captain"
 	access = list(ACCESS_SYNDICATE, ACCESS_ROBOTICS, ACCESS_ARMORY, ACCESS_SYNDICATE_LEADER)
 
 /obj/item/card/id/cel/syndicate/command_rd
-	icon_state = "idsyndicate_command"
 	assignment = "Research Director"
+	icon_state = "idsyndicate_command"
 	access = list(ACCESS_SYNDICATE, ACCESS_ROBOTICS, ACCESS_RD, ACCESS_SYNDICATE_LEADER)
 
 /obj/item/card/id/cel/syndicate/command_ce
-	icon_state = "idsyndicate_command"
 	assignment = "Chief Engineer"
+	icon_state = "idsyndicate_command"
 	access = list(ACCESS_SYNDICATE, ACCESS_ENGINE, ACCESS_CE,  ACCESS_CONSTRUCTION, ACCESS_SYNDICATE_LEADER)
 
 /obj/item/card/id/cel/syndicate/command_cmo
-	icon_state = "idsyndicate_command"
 	assignment = "Medical Director"
+	icon_state = "idsyndicate_command"
 	access = list(ACCESS_SYNDICATE, ACCESS_MEDICAL, ACCESS_CMO, ACCESS_SYNDICATE_LEADER)
 
 /obj/item/card/id/cel/syndicate/command_hop
-	icon_state = "idsyndicate_command"
 	assignment = "Bridge Officer"
+	icon_state = "idsyndicate_command"
 	access = list(ACCESS_SYNDICATE, ACCESS_HOP, ACCESS_SYNDICATE_LEADER)
 
 /obj/item/card/id/cel/syndicate/command_hos
-	icon_state = "idsyndicate_command"
 	assignment = "Head Of Security"
+	icon_state = "idsyndicate_command"
 	access = list(ACCESS_SYNDICATE, ACCESS_SECURITY, ACCESS_HOS, ACCESS_SYNDICATE_LEADER)
 
 /obj/item/card/id/cel/syndicate/command_qm
-	icon_state = "idsyndicate_command"
 	assignment = "Quartermaster"
+	icon_state = "idsyndicate_command"
 	access = list(ACCESS_SYNDICATE, ACCESS_CARGO, ACCESS_QM,ACCESS_SYNDICATE_LEADER)
 
 /obj/item/card/id/cel/syndicate/crew
-	icon_state = "idsyndicate_crew"
 	assignment = "Operative"
+	icon_state = "idsyndicate_crew"
 
 /obj/item/card/id/cel/syndicate/crew/security
-	icon_state = "idsyndicate_crew"
 	assignment = "Operative"
+	icon_state = "idsyndicate_crew"
 	access = list(ACCESS_SYNDICATE, ACCESS_SECURITY)
 
 /obj/item/card/id/cel/syndicate/crew/bartender
@@ -106,8 +106,8 @@
 	access = list(ACCESS_SYNDICATE, ACCESS_ARMORY)
 
 /obj/item/card/id/cel/syndicate/assistant
-	icon_state = "idsyndicate_assistant"
 	assignment = "Assistant"
+	icon_state = "idsyndicate_assistant"
 
 //MARK: GEC
 
@@ -159,8 +159,8 @@
 	icon_state = "iddc_crew"
 
 /obj/item/card/id/cel/syndicate/crew/cargo_tech/donkco
-	icon_state = "iddc_crew"
 	assignment = "Customer Associate (Donk)"
+	icon_state = "iddc_crew"
 
 /obj/item/card/id/cel/syndicate/assistant/donkco
 	icon_state = "iddc_assistant"
@@ -217,12 +217,12 @@
 	icon_state = "idgorlex_command"
 
 /obj/item/card/id/cel/syndicate/command_ce/gorlex
-	icon_state = "idgorlex_command"
 	assignment = "Chief Engineer (Gorlex)"
+	icon_state = "idgorlex_command"
 
 /obj/item/card/id/cel/syndicate/command_hos/gorlex
-	icon_state = "idgorlex_command"
 	assignment = "Sergeant (Hardliner)"
+	icon_state = "idgorlex_command"
 
 /obj/item/card/id/cel/syndicate/crew/gorlex
 	icon_state = "idgorlex_crew"
