@@ -2,7 +2,7 @@
 //MARK:	SOLAR FEDERATION
 //										//
 /datum/outfit/job/solfed
-	name = "SolFed - Base Outfit"
+	name = "SF - Base Outfit"
 	faction = FACTION_PLAYER_SOLFED
 	job_icon = "hudsf_fieldside"
 	faction_icon = "bg_solfed"
@@ -113,7 +113,7 @@
 
 //MARK:	Ученые
 /datum/outfit/job/solfed/scientist
-	name = "SolFed - Wissenschaftler"
+	name = "SF - Wissenschaftler"
 	jobtype = /datum/job/scientist
 
 	id = /obj/item/card/id/cel/solfed/crew/scientist
@@ -128,7 +128,7 @@
 	courierbag = /obj/item/storage/backpack/messenger/tox
 
 /datum/outfit/job/solfed/scientist/roboticist
-	name = "SolFed - Roboterkonstrukteur"
+	name = "SF - Roboterkonstrukteur"
 	jobtype = /datum/job/roboticist
 
 	id = /obj/item/card/id/cel/solfed/crew/roboticist
@@ -140,7 +140,7 @@
 //MARK:	Военно-морской флот
 
 /datum/outfit/job/solfed/marine
-	name = "SolFed - Marine"
+	name = "SF - Marine"
 	jobtype = /datum/job/officer
 
 	id = /obj/item/card/id/cel/solfed/crew/marine
@@ -153,7 +153,7 @@
 	get_solfed_marine_access(H)
 
 /datum/outfit/job/solfed/marine/pilot
-	name = "SolFed - Schwerer Roboterpilot"
+	name = "SF - Schwerer Roboterpilot"
 	jobtype = /datum/job/officer
 
 	id = /obj/item/card/id/cel/solfed/crew/marine/pilot
@@ -162,7 +162,7 @@
 	suit = /obj/item/clothing/suit/jacket/leather
 
 /datum/outfit/job/solfed/captain
-	name = "SolFed - Kommandant"
+	name = "SF - Kommandant"
 	jobtype = /datum/job/captain
 	job_icon = "sf_komandant"
 
@@ -186,7 +186,7 @@
 	get_solfed_captain_access(H)
 
 /datum/outfit/job/solfed/captain/admiral
-	name = "SolFed - Flottenadmiral"
+	name = "SF - Flottenadmiral"
 	jobtype = /datum/job/captain
 	job_icon = "sf_admiral"
 
@@ -196,7 +196,7 @@
 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/captain)
 
 /datum/outfit/job/solfed/sergeant
-	name = "SolFed - Feldwebel"
+	name = "SF - Feldwebel"
 	jobtype = /datum/job/captain
 	job_icon = "sf_command"
 
@@ -210,7 +210,7 @@
 	get_solfed_head_access(H)
 
 /datum/outfit/job/solfed/hop
-	name = "SolFed - Personalvorgesetzter"
+	name = "SF - Personalvorgesetzter"
 	jobtype = /datum/job/head_of_personnel
 	job_icon = "sf_command"
 
@@ -228,7 +228,7 @@
 	get_solfed_head_access(H)
 
 /datum/outfit/job/solfed/doctor
-	name = "SolFed - Meeresarzt"
+	name = "SF - Meeresarzt"
 	jobtype = /datum/job/paramedic
 
 	id = /obj/item/card/id/cel/solfed/crew/doctor
@@ -245,7 +245,7 @@
 	get_solfed_engineer_access(H)
 
 /datum/outfit/job/solfed/engineer
-	name = "SolFed - Marinemechaniker"
+	name = "SF - Marinemechaniker"
 	jobtype = /datum/job/engineer
 
 	id = /obj/item/card/id/cel/solfed/crew/engineer
@@ -263,7 +263,7 @@
 	get_solfed_engineer_access(H)
 
 /datum/outfit/job/solfed/assistant
-	name = "SolFed - Gehilfe"
+	name = "SF - Gehilfe"
 	jobtype = /datum/job/assistant
 	job_icon = "sf_shipside"
 
@@ -277,7 +277,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
 
 /datum/outfit/job/solfed/miner
-	name = "SolFed - Contract Miner"
+	name = "SF - Contract Miner"
 	jobtype = /datum/job/mining
 
 	id = /obj/item/card/id/cel/solfed/crew/miner
@@ -295,7 +295,7 @@
 	get_solfed_general_access(H)
 
 /datum/outfit/job/solfed/quartermaster
-	name = "SolFed - Logistikbeauftragter"
+	name = "SF - Logistikbeauftragter"
 	jobtype = /datum/job/qm
 	job_icon = "sf_command"
 
@@ -317,7 +317,7 @@
 /datum/outfit/job/solfed/patient
 	job_icon = "sf_shipside" // todo: bug rye for patient icon // rye. rye. give me 50 gazillion billion dollars paypal
 	jobtype = /datum/job/prisoner
-	name = "SolFed - Attentive Care Patient"
+	name = "SF - Attentive Care Patient"
 	id_assignment = "Attentive Care Patient"
 
 	id = /obj/item/card/id/cel/solfed/patient
@@ -330,7 +330,7 @@
 
 //	Капитан	//
 /datum/outfit/job/solfed/captain/elysium
-	name = "SolFed - Elysium Musharif"
+	name = "SF - Elysium Musharif"
 	faction_icon = "bg_elysium"
 
 	id = /obj/item/card/id/cel/solfed/captain/elysium
@@ -348,7 +348,7 @@
 
 //MARK:	Хос
 /datum/outfit/job/solfed/sergeant/elysium
-	name = "SolFed - Elysium Mulazim"
+	name = "SF - Elysium Mulazim"
 	faction_icon = "bg_elysium"
 
 	id = /obj/item/card/id/cel/solfed/command/sergeant/elysium
@@ -365,7 +365,7 @@
 
 //MARK:	Офицер
 /datum/outfit/job/solfed/marine/elysium
-	name = "SolFed - Elysium Haris"
+	name = "SF - Elysium Haris"
 	faction_icon = "bg_elysium"
 
 	id = /obj/item/card/id/cel/solfed/crew/marine/elysium
@@ -381,7 +381,7 @@
 
 //MARK:	медик
 /datum/outfit/job/solfed/doctor/elysium
-	name = "SolFed - Elysium Shafi"
+	name = "SF - Elysium Shafi"
 	faction_icon = "bg_elysium"
 
 	id = /obj/item/card/id/cel/solfed/crew/doctor/elysium
@@ -397,7 +397,7 @@
 
 //MARK:	Инженер
 /datum/outfit/job/solfed/engineer/elysium
-	name = "SolFed - Elysium Khabeer Fanni"
+	name = "SF - Elysium Khabeer Fanni"
 	faction_icon = "bg_elysium"
 
 	id = /obj/item/card/id/cel/solfed/crew/engineer/elysium
