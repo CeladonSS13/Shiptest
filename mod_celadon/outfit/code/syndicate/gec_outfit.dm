@@ -1,7 +1,7 @@
 //MARK: Command
 
 /datum/outfit/job/syndicate/cel/ce/gec
-	name = "Syndicate - Chief Engineer (GEC)"
+	name = "Syndicate GEC - Chief Engineer"
 
 	id = /obj/item/card/id/cel/syndicate/command_ce/gec
 	uniform = /obj/item/clothing/under/syndicate/gec/chief_engineer
@@ -14,7 +14,7 @@
 //MARK: Crew
 
 /datum/outfit/job/syndicate/cel/atmos/gec
-	name = "Syndicate - Atmospheric Technician (GEC)"
+	name = "Syndicate GEC - Atmospheric Technician"
 
 	id = /obj/item/card/id/cel/syndicate/crew/atmos/gec
 	uniform = /obj/item/clothing/under/syndicate/gec/atmos_tech
@@ -22,7 +22,7 @@
 	head = /obj/item/clothing/head/hardhat
 
 /datum/outfit/job/syndicate/cel/chemist/gec	// Не юзается
-	name = "Syndicate - Chemist (GEC)"
+	name = "Syndicate GEC - Chemist"
 
 	id = /obj/item/card/id/cel/syndicate/crew/chemist/gec
 	uniform = /obj/item/clothing/under/syndicate/intern
@@ -31,7 +31,7 @@
 	belt = /obj/item/storage/belt/utility/full/engi
 
 /datum/outfit/job/syndicate/cel/miner/gec
-	name = "Syndicate - Shaft Miner (GEC)"
+	name = "Syndicate GEC - Shaft Miner"
 
 	id = /obj/item/card/id/cel/syndicate/crew/miner/gec
 	ears = /obj/item/radio/headset
@@ -45,7 +45,7 @@
 	suit_store = /obj/item/tank/internals/emergency_oxygen/double
 
 /datum/outfit/job/syndicate/cel/engineer/gec
-	name = "Syndicate - Ship Engineer (GEC)"
+	name = "Syndicate GEC - Ship Engineer"
 	id_assignment = "Ship Engineer"
 
 	id = /obj/item/card/id/cel/syndicate/crew/engineer/gec
@@ -57,7 +57,7 @@
 //MARK: Assistant
 
 /datum/outfit/job/syndicate/cel/assistant/gec
-	name = "Syndicate - Deckhand (GEC)"
+	name = "Syndicate GEC - Deckhand"
 	id_assignment = "Deckhand"
 
 	id = /obj/item/card/id/cel/syndicate/assistant/gec

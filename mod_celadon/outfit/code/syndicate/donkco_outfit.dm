@@ -1,7 +1,7 @@
 //MARK: Command
 
 /datum/outfit/job/syndicate/cel/quartermaster/donk
-	name = "Syndicate - Manager (Donk)"
+	name = "Syndicate DonkCo - Manager"
 
 	id = /obj/item/card/id/cel/syndicate/command_qm/donkco
 	ears = /obj/item/radio/headset/syndicate/alt
@@ -13,7 +13,7 @@
 //MARK: Crew
 
 /datum/outfit/job/syndicate/cel/cargo_tech/donk
-	name = "Syndicate - Customer Associate (Donk)"
+	name = "Syndicate DonkCo - Customer Associate"
 	id_assignment = "Customer Associate"
 
 	id = /obj/item/card/id/cel/syndicate/crew/cargo_tech/donkco

@@ -1,7 +1,7 @@
 //MARK: Captain
 
 /datum/outfit/job/syndicate/cel/captain/suns
-	name = "Syndicate - Captain (SUNS)"
+	name = "Syndicate SUNS - Captain"
 	faction_icon = "bg_suns"
 
 	id = /obj/item/card/id/cel/syndicate/captain/suns
@@ -22,7 +22,7 @@
 //MARK: Command
 
 /datum/outfit/job/syndicate/cel/cmo/suns
-	name = "Syndicate - Medical Instructor (SUNS)"
+	name = "Syndicate SUNS - Medical Instructor"
 	id_assignment = "Medical Instructor"
 	faction_icon = "bg_suns"
 	job_icon = "suns_cmo"
@@ -46,7 +46,7 @@
 	courierbag = /obj/item/storage/backpack/messenger
 
 /datum/outfit/job/syndicate/cel/head_of_personnel/suns	// Не юзается
-	name = "Syndicate - Academic Staff (SUNS)"
+	name = "Syndicate SUNS - Academic Staff"
 	id_assignment = "Academic Staff"
 	faction_icon = "bg_suns"
 	job_icon = "suns_hop"
@@ -68,7 +68,7 @@
 	courierbag = /obj/item/storage/backpack/messenger
 
 /datum/outfit/job/syndicate/cel/hos/suns	// Не юзается
-	name = "Syndicate - Senior Peacekeeper (SUNS)"
+	name = "Syndicate SUNS - Senior Peacekeeper"
 	id_assignment = "Senior Peacekeeper"
 	faction_icon = "bg_suns"
 	job_icon = "suns_hos"
@@ -89,7 +89,7 @@
 	courierbag = /obj/item/storage/backpack/messenger
 
 /datum/outfit/job/syndicate/cel/hos/suns/alt	// Не юзается
-	name = "Syndicate - Senior Peacekeeper Alt (SUNS)"
+	name = "Syndicate SUNS - Senior Peacekeeper Alt"
 
 	id = /obj/item/card/id/cel/syndicate/command_hos/suns/alt
 	suit = /obj/item/clothing/suit/armor/vest/suns/ehos
@@ -98,7 +98,7 @@
 //MARK: Crew
 
 /datum/outfit/job/syndicate/cel/bartender/suns
-	name = "Syndicate - Student Mixologist (SUNS)"
+	name = "Syndicate SUNS - Student Mixologist"
 	id_assignment = "Student Mixologist"
 	faction_icon = "bg_suns"
 	job_icon = "suns_bartender"
@@ -123,7 +123,7 @@
 	backpack_contents = null
 
 /datum/outfit/job/syndicate/cel/botanist/suns
-	name = "Syndicate - Botanist-Chemist (SUNS)"
+	name = "Syndicate SUNS - Botanist-Chemist"
 	id_assignment = "Botanist-Chemist"
 	faction_icon = "bg_suns"
 	job_icon = "suns_sci"
@@ -142,7 +142,7 @@
 	courierbag = /obj/item/storage/backpack/messenger
 
 /datum/outfit/job/syndicate/cel/doctor/suns
-	name = "Syndicate - Medical Doctor (SUNS)"
+	name = "Syndicate SUNS - Medical Doctor"
 	faction_icon = "bg_suns"
 	job_icon = "suns_doctor"
 
@@ -161,7 +161,7 @@
 	courierbag = /obj/item/storage/backpack/messenger
 
 /datum/outfit/job/syndicate/cel/psychologist/suns
-	name = "Syndicate - Psychologist (SUNS)"
+	name = "Syndicate SUNS - Psychologist"
 	faction_icon = "bg_suns"
 
 	id = /obj/item/card/id/cel/syndicate/crew/doctor/psychologist/suns
@@ -178,7 +178,7 @@
 	courierbag = /obj/item/storage/backpack/messenger
 
 /datum/outfit/job/syndicate/cel/security/suns
-	name = "Syndicate - Peacekeeper (SUNS)"
+	name = "Syndicate SUNS - Peacekeeper"
 	id_assignment = "Peacekeeper"
 	faction_icon = "bg_suns"
 	job_icon = "suns_peacekeeper"
@@ -199,7 +199,7 @@
 	courierbag = /obj/item/storage/backpack/messenger
 
 /datum/outfit/job/syndicate/cel/engineer/suns
-	name = "Syndicate - Ship Engineer (SUNS)"
+	name = "Syndicate SUNS - Ship Engineer"
 	faction_icon = "bg_suns"
 	job_icon = "suns_eng"
 
@@ -218,7 +218,7 @@
 	courierbag = /obj/item/storage/backpack/messenger
 
 /datum/outfit/job/syndicate/cel/science/suns	// Не юзается
-	name = "Syndicate - Scientist (SUNS)"
+	name = "Syndicate SUNS - Scientist"
 	faction_icon = "bg_suns"
 	job_icon = "suns_sci"
 
@@ -235,7 +235,7 @@
 	courierbag = /obj/item/storage/backpack/messenger
 
 /datum/outfit/job/syndicate/cel/security/suns/alternate	// Не юзается
-	name = "Syndicate - Peacekeeper - Casual(SUNS)"
+	name = "Syndicate SUNS - Peacekeeper - Casual"
 	id_assignment = "Peacekeeper"
 
 	id = /obj/item/card/id/cel/syndicate/crew/security/suns/alternate
@@ -244,7 +244,7 @@
 	head = null
 
 /datum/outfit/job/syndicate/cel/miner/suns	// Не юзается
-	name = "Syndicate - Miner (SUNS)"
+	name = "Syndicate SUNS - Miner"
 	faction_icon = "bg_suns"
 	job_icon = "suns_miner"
 
@@ -267,7 +267,7 @@
 //MARK: Assistant
 
 /datum/outfit/job/syndicate/cel/assistant/suns
-	name = "Syndicate - Freshman (SUNS)"
+	name = "Syndicate SUNS - Freshman"
 	id_assignment = "Freshman"
 	faction_icon = "bg_suns"
 
@@ -286,7 +286,7 @@
 	courierbag = /obj/item/storage/backpack/messenger
 
 /datum/outfit/job/syndicate/cel/assistant/suns/halfway	// не юзается нигде
-	name = "Syndicate - Junior (SUNS)"
+	name = "Syndicate SUNS - Junior"
 	id_assignment = "Junior"
 	job_icon = "suns_janitor"
 
@@ -295,7 +295,7 @@
 	alt_uniform = /obj/item/clothing/under/syndicate/suns/uniform2/alt
 
 /datum/outfit/job/syndicate/cel/assistant/suns/complete	// не юзается нигде
-	name = "Syndicate - Graduate (SUNS)"
+	name = "Syndicate SUNS - Graduate"
 	id_assignment = "Graduate"
 
 	id = /obj/item/card/id/cel/syndicate/assistant/suns/graduate

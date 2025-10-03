@@ -1,7 +1,7 @@
 //MARK: Admiral
 
 /datum/outfit/job/syndicate/cel/captain/twink
-	name = "Flotilla Admiral (Twinkleshine, ACLF)"
+	name = "Syndicate Twinkleshine - Flotilla Admiral (ACLF)"
 	id_assignment = "Flotilla Admiral"
 
 	id = /obj/item/card/id/cel/syndicate/admiral
@@ -23,7 +23,7 @@
 //MARK: Command
 
 /datum/outfit/job/syndicate/cel/hos/twink
-	name = "Syndicate - Lieutenant (Twinkleshine)"
+	name = "Syndicate Twinkleshine - Lieutenant"
 	id_assignment = "Lieutenant"
 	job_icon = "lieutenant"
 
@@ -53,7 +53,7 @@
 	assign_codename(H)
 
 /datum/outfit/job/syndicate/cel/hos/suns/twink	// Не юзается ??????
-	name = "Syndicate - Redshield Officer (Twinkleshine, SUNS)"
+	name = "Syndicate Twinkleshine SUNS - Redshield Officer"
 	id_assignment = "Redshield Officer"
 
 	id = /obj/item/card/id/cel/syndicate/command_hos/suns/twink
@@ -71,7 +71,7 @@
 //MARK: Crew
 
 /datum/outfit/job/syndicate/cel/bartender/twink
-	name = "Syndicate - Bartender (Twinkleshine, Donk)"
+	name = "Syndicate Twinkleshine DonkCo - Bartender"
 
 	uniform = /obj/item/clothing/under/syndicate/donk
 	mask = /obj/item/clothing/mask/gas/syndicate/voicechanger
@@ -93,7 +93,7 @@
 	assign_codename(H)
 
 /datum/outfit/job/syndicate/cel/paramedic/twink
-	name = "Syndicate - Medic (Twinkleshine, Cybersun)"
+	name = "Syndicate Twinkleshine Cybersun - Medic"
 
 	id = /obj/item/card/id/cel/syndicate/crew/doctor/paramedic
 	mask = /obj/item/clothing/mask/gas/syndicate/voicechanger
@@ -122,7 +122,7 @@
 	assign_codename(H)
 
 /datum/outfit/job/syndicate/cel/security/twink
-	name = "Syndicate - Operative (Twinkleshine)"
+	name = "Syndicate Twinkleshine - Operative"
 
 	id = /obj/item/card/id/cel/syndicate/crew/security
 	uniform = /obj/item/clothing/under/syndicate/combat
@@ -149,7 +149,7 @@
 	assign_codename(H)
 
 /datum/outfit/job/syndicate/cel/miner/twink
-	name = "Syndicate - Miner (Twinkleshine)"
+	name = "Syndicate Twinkleshine - Miner"
 
 	id = /obj/item/card/id/cel/syndicate/crew/miner
 	uniform = /obj/item/clothing/under/syndicate/suns/workerjumpsuit
@@ -172,7 +172,7 @@
 	assign_codename(H)
 
 /datum/outfit/job/syndicate/cel/engineer/twink
-	name = "Syndicate - Ship Engineer (Twinkleshine, GEC)"
+	name = "Syndicate Twinkleshine GEC - Ship Engineer"
 
 	id = /obj/item/card/id/cel/syndicate/crew/engineer
 	uniform = /obj/item/clothing/under/syndicate/gec
@@ -198,7 +198,7 @@
 //MARK: Assistant
 
 /datum/outfit/job/syndicate/cel/assistant/twink
-	name = "Syndicate - Deck Assistant (Twinkleshine)"
+	name = "Syndicate Twinkleshine - Deck Assistant"
 	id_assignment = "Deck Assistant"
 
 	uniform = /obj/item/clothing/under/syndicate
