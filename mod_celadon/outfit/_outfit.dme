@@ -5,6 +5,9 @@
 
 #include "code/card_id.dm"
 
+#include "code/nanotrasen/structure/decals.dm"
+#include "code/nanotrasen/structure/other_stuff.dm"
+
 #include "code/_outpost/outfits.dm"
 
 #include "code/elysium/clothing/armor.dm"
@@ -31,9 +34,13 @@
 #include "code/inteq/armor.dm"
 
 #include "code/nanotrasen/_card_id.dm"
-#include "code/nanotrasen/outfit.dm"
-#include "code/nanotrasen/decals.dm"
-#include "code/nanotrasen/other_stuff.dm"
+#include "code/nanotrasen/_nanotrasen_outfit.dm"
+#include "code/nanotrasen/deforest_outfit.dm"
+#include "code/nanotrasen/intelligence_outfit.dm"
+#include "code/nanotrasen/nakamura_outfit.dm"
+#include "code/nanotrasen/nslogistic_outfit.dm"
+#include "code/nanotrasen/ntas_outfit.dm"
+#include "code/nanotrasen/vigilitas_outfit.dm"
 
 #include "code/solfed/_card_id.dm"
 #include "code/solfed/outfit.dm"
