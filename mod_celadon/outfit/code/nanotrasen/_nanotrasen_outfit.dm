@@ -28,6 +28,35 @@
 	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/nanotrasen
 
+// Captain
+/datum/outfit/job/nanotrasen/cel/captain
+	name = "Nanotrasen - Captain"
+	job_icon = "captain"
+	jobtype = /datum/job/captain
+
+	id = /obj/item/card/id/gold
+	belt = /obj/item/pda/captain
+	gloves = /obj/item/clothing/gloves/color/captain/nt
+	ears = /obj/item/radio/headset/nanotrasen/captain
+	uniform = /obj/item/clothing/under/nanotrasen/captain
+	alt_uniform = /obj/item/clothing/under/nanotrasen/captain/skirt
+	suit = /obj/item/clothing/suit/armor/nanotrasen/captain
+	alt_suit = /obj/item/clothing/suit/armor/nanotrasen/captain/parade
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/captain
+	shoes = /obj/item/clothing/shoes/laceup
+	neck = /obj/item/clothing/neck/cloak/nanotrasen
+	head = /obj/item/clothing/head/nanotrasen/captain/peaked
+	backpack_contents = null
+
+	backpack = /obj/item/storage/backpack/captain
+	satchel = /obj/item/storage/backpack/satchel/cap
+	duffelbag = /obj/item/storage/backpack/duffelbag/captain
+	courierbag = /obj/item/storage/backpack/messenger/com
+
+	accessory = /obj/item/clothing/accessory/medal/gold/captain
+
+	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/captain)
+
 /datum/outfit/job/nanotrasen/cel/hos
 	job_icon = "headofsecurity"
 	name = "Nanotrasen - Head of Security"
@@ -265,6 +294,23 @@
 /datum/outfit/job/nanotrasen/cel/chemist
 	job_icon = "chemist"
 
+// Quartermaster
+/datum/outfit/job/nanotrasen/cel/quartermaster
+	name = "Nanotrasen - Quartermaster"
+	jobtype = /datum/job/qm
+	job_icon = "quartermaster"
+
+	ears = /obj/item/radio/headset/headset_cargo
+	head = /obj/item/clothing/head/nanotrasen/cap/supply
+	uniform = /obj/item/clothing/under/nanotrasen/supply/qm
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/cargo
+	shoes = /obj/item/clothing/shoes/sneakers/brown
+	glasses = /obj/item/clothing/glasses/sunglasses
+	l_hand = /obj/item/clipboard
+	backpack_contents = list(/obj/item/modular_computer/tablet/preset/cargo=1)
+
+	chameleon_extras = /obj/item/stamp/qm
+
 // MARK: Научный директор - РД
 
 /datum/outfit/job/nanotrasen/cel/rd
@@ -444,6 +490,25 @@
 	belt = /obj/item/storage/belt/janitor
 	gloves = /obj/item/clothing/gloves/color/purple
 	back = /obj/item/storage/backpack/ert/janitor
+
+// Assistant
+/datum/outfit/job/nanotrasen/cel/assistant
+	name = "Nanotrasen - Assistant"
+	jobtype = /datum/job/assistant
+	job_icon = "assistant"
+
+	uniform = /obj/item/clothing/under/nanotrasen
+	shoes = /obj/item/clothing/shoes/sneakers/black
+	belt = /obj/item/pda
+
+/datum/outfit/job/nanotrasen/cel/assistant/empty
+	name = "Nanotrasen - Assistant (Naked)"
+	jobtype = /datum/job/assistant
+	job_icon = "assistant"
+
+	uniform = /obj/item/clothing/under/nanotrasen
+	shoes = /obj/item/clothing/shoes/sneakers/black
+	belt = null
 
 /// MARK: ЕРТ коммандер
 
