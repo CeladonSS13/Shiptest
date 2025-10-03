@@ -245,7 +245,7 @@
 /obj/item/healthanalyzer/afterattack(mob/living/M, mob/living/carbon/human/user, adjacent, params)
 	. = ..()
 	if(adjacent || !ranged_scan_distance)
-		return ..()
+		return .
 	if(!istype(M))
 		return
 	if(can_see(user, M, ranged_scan_distance))
