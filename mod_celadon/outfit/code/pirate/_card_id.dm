@@ -24,7 +24,7 @@
 	icon_state = "idpirate_assistant"
 	assignment = "Assistant"
 
-// MARK: Pirate
+// MARK: Ramzi
 /obj/item/card/id/cel/ramzi
 	faction_icon = "bg_pirate"
 	icon_state = "idramzi_commando"
