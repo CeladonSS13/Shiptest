@@ -468,7 +468,7 @@
 /// MARK: Nanotrasen Tactical Assault Team лидер
 
 /datum/outfit/job/nanotrasen/cel/ntas/commander
-	name = "NTAS Leader"
+	name = "Nanotrasen TAS - Leader"
 	jobtype = /datum/job/captain
 	job_icon = "captain"
 	implants = list(/obj/item/implant/mindshield, /obj/item/organ/cyberimp/eyes/hud/security)
@@ -483,7 +483,7 @@
 /// MARK: Nanotrasen Tactical Assault Team сбуха
 
 /datum/outfit/job/nanotrasen/cel/ntas/operative
-	name = "NTAS Security Operative"
+	name = "Nanotrasen TAS - Security Operative"
 	jobtype = /datum/job/hos
 	job_icon = "headofsecurity"
 	implants = list(/obj/item/implant/mindshield)
@@ -499,7 +499,7 @@
 /// MARK: Nanotrasen Tactical Assault Team медик
 
 /datum/outfit/job/nanotrasen/cel/ntas/medic
-	name = "NTAS Medical Operative"
+	name = "Nanotrasen TAS - Medical Operative"
 	jobtype = /datum/job/cmo
 	job_icon = "chiefmedicalofficer"
 	implants = list(/obj/item/implant/mindshield)
@@ -516,7 +516,7 @@
 /// MARK: Nanotrasen Tactical Assault Team инженер
 
 /datum/outfit/job/nanotrasen/cel/ntas/engineer
-	name = "NTAS Engineering Operative"
+	name = "Nanotrasen TAS - Engineering Operative"
 	jobtype = /datum/job/chief_engineer
 	job_icon = "chiefengineer"
 	implants = list(/obj/item/implant/mindshield)
@@ -532,7 +532,7 @@
 /// MARK: Nanotrasen Tactical Assault Team уборщичек
 
 /datum/outfit/job/nanotrasen/cel/ntas/janitor
-	name = "NTAS Custodial Operative"
+	name = "Nanotrasen TAS - Custodial Operative"
 	jobtype = /datum/job/janitor
 	job_icon = "janitor"
 	implants = list(/obj/item/implant/mindshield)
@@ -548,7 +548,7 @@
 /// MARK: слешер капитан
 
 /datum/outfit/job/nanotrasen/cel/intel/captain
-	name = "Intelligence Officer"
+	name = "Nanotrasen Intelligence - Officer"
 	jobtype = /datum/job/captain
 	job_icon = "captain"
 	implants = list(/obj/item/implant/mindshield)
@@ -568,7 +568,7 @@
 /// MARK: слешер сбуха
 
 /datum/outfit/job/nanotrasen/cel/intel/operative
-	name = "Security Operative"
+	name = "Nanotrasen Intelligence - Security Operative"
 	jobtype = /datum/job/hos
 	job_icon = "headofsecurity"
 	implants = list(/obj/item/implant/mindshield)
@@ -587,7 +587,7 @@
 /// MARK: слешер медик
 
 /datum/outfit/job/nanotrasen/cel/intel/medic
-	name = "Medical Technician"
+	name = "Nanotrasen Intelligence - Medical Technician"
 	jobtype = /datum/job/cmo
 	job_icon = "chiefmedicalofficer"
 	implants = list(/obj/item/implant/mindshield)
@@ -606,7 +606,7 @@
 /// MARK: слешер инженер
 
 /datum/outfit/job/nanotrasen/cel/intel/engineer
-	name = "Engineering Technician"
+	name = "Nanotrasen Intelligence - Engineering Technician"
 	jobtype = /datum/job/chief_engineer
 	job_icon = "chiefengineer"
 	implants = list(/obj/item/implant/mindshield)
@@ -622,183 +622,129 @@
 	backpack_contents = list(/obj/item/construction/rcd/loaded)
 
 // MARK: NT Nakamura
+
 /datum/outfit/job/nanotrasen/cel/nakamura_ce
+	name = "Nanotrasen Nakamura - Cheif of Engineer"
 	job_icon = "chiefengineer"
-	name = "Cheif of Engineer"
 
 	id = /obj/item/card/id/cel/nanotrasen/nakamura_ce
 
 /datum/outfit/job/nanotrasen/cel/nakamura_command
+	name = "Nanotrasen Nakamura - Quartermaster"
 	job_icon = "quartermaster"
-	name = "Quartermaster"
 
 	id = /obj/item/card/id/cel/nanotrasen/nakamura_command
 
 /datum/outfit/job/nanotrasen/cel/nakamura_atmostechnic
+	name = "Nanotrasen Nakamura - Atmospheric Technician"
 	job_icon = "atmospherictechnician"
-	name = "Atmospheric Technician"
 
 	id = /obj/item/card/id/cel/nanotrasen/nakamura_atmostechnic
 
 /datum/outfit/job/nanotrasen/cel/nakamura_engineer
+	name = "Nanotrasen Nakamura - Engineer"
 	job_icon = "stationengineer"
-	name = "Engineer"
 
 	id = /obj/item/card/id/cel/nanotrasen/nakamura_engineer
 
 /datum/outfit/job/nanotrasen/cel/nakamura_assistant
+	name = "Nanotrasen Nakamura - Assistant"
 	job_icon = "assistant"
-	name = "Assistant"
 
 	id = /obj/item/card/id/cel/nanotrasen/nakamura_assistant
 
 // MARK: NT DeForest
+
 /datum/outfit/job/nanotrasen/cel/deforest_cmo
+	name = "Nanotrasen DeForest - Cheif of Medical Officer"
 	job_icon = "chiefmedicalofficer"
-	name = "Cheif of Medical Officer"
 
 	id = /obj/item/card/id/cel/nanotrasen/deforest_cmo
 
 /datum/outfit/job/nanotrasen/cel/deforest_researcher
+	name = "Nanotrasen DeForest - Researcher"
 	job_icon = "scientist"
-	name = "Researcher"
 
 	id = /obj/item/card/id/cel/nanotrasen/deforest_researcher
 
 /datum/outfit/job/nanotrasen/cel/deforest_chemist
+	name = "Nanotrasen DeForest - Chemist"
 	job_icon = "chemist"
-	name = "Chemist"
 
 	id = /obj/item/card/id/cel/nanotrasen/deforest_chemist
 
 /datum/outfit/job/nanotrasen/cel/deforest_medic
+	name = "Nanotrasen DeForest - Medical Doctor"
 	job_icon = "medicaldoctor"
-	name = "Medical Doctor"
 
 	id = /obj/item/card/id/cel/nanotrasen/deforest_medic
 
 /datum/outfit/job/nanotrasen/cel/deforest_assistant
+	name = "Nanotrasen DeForest - Assistant"
 	job_icon = "assistant"
-	name = "Assistant"
 
 	id = /obj/item/card/id/cel/nanotrasen/deforest_assistant
 
 // MARK: NT N+S Logistic
+
 /datum/outfit/job/nanotrasen/cel/nslogistic_captain
+	name = "Nanotrasen N+S Logistic - Captain"
 	job_icon = "captain"
-	name = "Captain"
 
 	id = /obj/item/card/id/cel/nanotrasen/nslogistic_captain
 
 /datum/outfit/job/nanotrasen/cel/nslogistic_rd
+	name = "Nanotrasen N+S Logistic - Research Director"
 	job_icon = "researchdirector"
-	name = "Research Director"
 
 	id = /obj/item/card/id/cel/nanotrasen/nslogistic_rd
 
 /datum/outfit/job/nanotrasen/cel/nslogistic_quartermaster
+	name = "Nanotrasen N+S Logistic - Quartermaster"
 	job_icon = "quartermaster"
-	name = "Quartermaster"
 
 	id = /obj/item/card/id/cel/nanotrasen/nslogistic_quartermaster
 
 /datum/outfit/job/nanotrasen/cel/nslogistic_miner
+	name = "Nanotrasen N+S Logistic - Shaft Miner"
 	job_icon = "shaftminer"
-	name = "Shaft Miner"
 
 	id = /obj/item/card/id/cel/nanotrasen/nslogistic_miner
 
 /datum/outfit/job/nanotrasen/cel/nslogistic_assistant
+	name = "Nanotrasen N+S Logistic - Assistant"
 	job_icon = "assistant"
-	name = "Assistant"
 
 	id = /obj/item/card/id/cel/nanotrasen/nslogistic_assistant
 
 // MARK: NT Vigilitas
+
 /datum/outfit/job/nanotrasen/cel/vigilitas_leutenant
+	name = "Nanotrasen Vigilitas - Leutenant"
 	job_icon = "clip_cmm6"
-	name = "Leutenant"
 
 	id = /obj/item/card/id/cel/nanotrasen/vigilitas_leutenant
 
 /datum/outfit/job/nanotrasen/cel/vigilitas_sergeant
+	name = "Nanotrasen Vigilitas - Sergeant"
 	job_icon = "clip_cmm5"
-	name = "Sergeant"
 
 	id = /obj/item/card/id/cel/nanotrasen/vigilitas_sergeant
 
 /datum/outfit/job/nanotrasen/cel/vigilitas_engineer
+	name = "Nanotrasen Vigilitas - Engineer"
 	job_icon = "stationengineer"
-	name = "Engineer"
 
 	id = /obj/item/card/id/cel/nanotrasen/vigilitas_engineer
 
 /datum/outfit/job/nanotrasen/cel/vigilitas_medic
+	name = "Nanotrasen Vigilitas - Medic"
 	job_icon = "medicaldoctor"
-	name = "Medic"
 
 	id = /obj/item/card/id/cel/nanotrasen/vigilitas_medic
 
 /datum/outfit/job/nanotrasen/cel/vigilitas_security
+	name = "Nanotrasen Vigilitas - Security"
 	job_icon = "securityofficer"
-	name = "Security"
 
 	id = /obj/item/card/id/cel/nanotrasen/vigilitas_security
-
-// Все остальные аутфиты офов. При надобности расскоментить
-// /datum/outfit/job/nanotrasen/captain
-// 	job_icon = "captain"
-
-// /datum/outfit/job/nanotrasen/lawyer
-// 	job_icon = "lawyer"
-
-// /datum/outfit/job/nanotrasen/assistant
-// 	job_icon = "assistant"
-
-// /datum/outfit/job/nanotrasen/hop
-// 	job_icon = "chiefengineer"
-
-// /datum/outfit/job/nanotrasen/quartermaster
-// 	job_icon = "assistant"
-
-// /datum/outfit/job/nanotrasen/lawyer/corporaterepresentative
-// 	job_icon = "assistant"
-
-// /datum/outfit/job/nanotrasen/cargo_tech
-// 	job_icon = "assistant"
-
-// /datum/outfit/job/nanotrasen/scientist
-// 	job_icon = "scientist"
-
-// /datum/outfit/job/nanotrasen/roboticist
-// 	job_icon = "roboticist"
-
-// /datum/outfit/job/nanotrasen/captain/lp
-// 	job_icon = "assistant"
-
-// /datum/outfit/job/nanotrasen/engineer/lp
-// 	job_icon = "stationengineer"
-
-// /datum/outfit/job/nanotrasen/security/lp
-// 	job_icon = "securityofficer"
-
-// /datum/outfit/job/nanotrasen/captain/centcom
-// 	job_icon = "captain"
-
-// /datum/outfit/job/nanotrasen/security/ert/med
-// 	job_icon = "chiefengineer"
-
-// /datum/outfit/job/nanotrasen/security/ert/engi
-// 	job_icon = "chiefengineer"
-
-// /datum/outfit/job/nanotrasen/pilot
-// 	job_icon = "assistant"
-
-// /datum/outfit/job/nanotrasen/security/mech_pilot
-// 	job_icon = "assistant"
-
-// /datum/outfit/job/nanotrasen/brig_phys
-// 	job_icon = "assistant"
-
-// /datum/outfit/job/nanotrasen/captain/ns
-// 	job_icon = "captain"
