@@ -77,14 +77,14 @@
 //MARK: Рекрут
 /datum/outfit/job/inteq/cel/assistant
 	job_icon = "assistant"
-	name = "InteQ - Recruit"
+	name = "IQ - Recruit"
 
 	id = /obj/item/card/id/cel/inteq/recruit
 
 //MARK: Капитан
 /datum/outfit/job/inteq/cel/captain
 	job_icon = "captain"
-	name = "InteQ - Vanguard"
+	name = "IQ - Vanguard"
 	head = /obj/item/clothing/head/beret/sec/hos/inteq
 	mask = /obj/item/clothing/mask/gas/sechailer/swat
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
@@ -96,7 +96,7 @@
 //MARK: Командир
 /datum/outfit/job/inteq/cel/honorable
 	job_icon = "assistant"
-	name = "InteQ - Honorable Vanguard"
+	name = "IQ - Honorable Vanguard"
 	head = /obj/item/clothing/head/beret/sec/hos/inteq/honorable
 	mask = /obj/item/clothing/mask/gas/sechailer/swat
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
@@ -109,7 +109,7 @@
 //MARK: Арьергард. Rearguard
 /datum/outfit/job/inteq/cel/rearguard
 	job_icon = "captain"
-	name = "InteQ - Rearguard"
+	name = "IQ - Rearguard"
 	id_assignment = "Rearguard"
 	head = /obj/item/clothing/head/beret/sec/hos/inteq
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
@@ -120,7 +120,7 @@
 //MARK: Лейтенант первого класса
 /datum/outfit/job/inteq/cel/enforcer
 	job_icon = "lieutenant"
-	name = "InteQ - Enforcer class One"
+	name = "IQ - Enforcer class One"
 	head = /obj/item/clothing/head/beret/sec/hos/inteq
 	mask = /obj/item/clothing/mask/balaclava
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
@@ -133,7 +133,7 @@
 //MARK: Парамедик
 /datum/outfit/job/inteq/cel/paramedic
 	job_icon = "medicaldoctor"
-	name = "InteQ - Corpsman"
+	name = "IQ - Corpsman"
 	ears = /obj/item/radio/headset/inteq
 	id = /obj/item/card/id/cel/inteq/medic
 
@@ -141,7 +141,7 @@
 /datum/outfit/job/inteq/cel/cmo
 	job_icon = "chiefmedicalofficer"
 	id_assignment = "Honorable Corpsman"
-	name = "InteQ IRMG - Honorable Corpsman"
+	name = "IQ - Honorable Corpsman"
 
 	belt = /obj/item/storage/belt/medical/webbing/paramedic
 	ears = /obj/item/radio/headset/inteq/captain
@@ -159,25 +159,25 @@
 //MARK: Служба безопасности
 /datum/outfit/job/inteq/cel/security
 	job_icon = "lieutenant"
-	name = "InteQ - Enforcer"
+	name = "IQ - Enforcer"
 	id = /obj/item/card/id/cel/inteq/enforcer
 
 //MARK: Варден
 /datum/outfit/job/inteq/cel/warden
 	job_icon = "warden"
-	name = "InteQ - Master At Arms"
+	name = "IQ - Master At Arms"
 	id = /obj/item/card/id/cel/inteq/master_at_arms
 
 //MARK: Главный инженер
 /datum/outfit/job/inteq/cel/ce
 	job_icon = "chiefengineer"
-	name = "InteQ - Artificer Class One"
+	name = "IQ - Artificer Class One"
 	id = /obj/item/card/id/cel/inteq/honorable_artificer
 
 //MARK: Инженегр
 /datum/outfit/job/inteq/cel/engineer
 	job_icon = "stationengineer"
-	name = "InteQ - Artificer"
+	name = "IQ - Artificer"
 	id = /obj/item/card/id/cel/inteq/artificer
 
 // Все остальные аутфиты. При надобности расскоментить
