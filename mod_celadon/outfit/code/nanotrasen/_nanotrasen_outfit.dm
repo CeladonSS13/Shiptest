@@ -30,7 +30,7 @@
 
 // Captain
 /datum/outfit/job/nanotrasen/cel/captain
-	name = "Nanotrasen common - Captain"
+	name = "NT - Captain"
 	job_icon = "captain"
 	jobtype = /datum/job/captain
 
@@ -59,7 +59,7 @@
 
 /datum/outfit/job/nanotrasen/cel/hos
 	job_icon = "headofsecurity"
-	name = "Nanotrasen common - Head of Security"
+	name = "NT - Head of Security"
 	jobtype = /datum/job/hos
 
 	id = /obj/item/card/id/silver
@@ -90,7 +90,7 @@
 
 /datum/outfit/job/nanotrasen/cel/engineer
 	job_icon = "stationengineer"
-	name = "Nanotrasen common - Engineer"
+	name = "NT - Engineer"
 	jobtype = /datum/job/engineer
 
 	belt = /obj/item/storage/belt/utility/full/engi
@@ -112,7 +112,7 @@
 
 /datum/outfit/job/nanotrasen/cel/security
 	job_icon = "securityofficer"
-	name = "Nanotrasen common - Security Officer"
+	name = "NT - Security Officer"
 	jobtype = /datum/job/officer
 
 	ears = /obj/item/radio/headset/alt
@@ -136,7 +136,7 @@
 
 /datum/outfit/job/nanotrasen/cel/paramedic
 	job_icon = "paramedic"
-	name = "Nanotrasen common - Paramedic"
+	name = "NT - Paramedic"
 	jobtype = /datum/job/paramedic
 
 	ears = /obj/item/radio/headset/headset_med
@@ -159,7 +159,7 @@
 
 /datum/outfit/job/nanotrasen/cel/doctor
 	job_icon = "medicaldoctor"
-	name = "Nanotrasen common - Medical Doctor"
+	name = "NT - Medical Doctor"
 	jobtype = /datum/job/doctor
 
 	belt = /obj/item/pda/medical
@@ -180,7 +180,7 @@
 
 /datum/outfit/job/nanotrasen/cel/warden
 	job_icon = "warden"
-	name = "Nanotrasen common - Warden"
+	name = "NT - Warden"
 	jobtype = /datum/job/warden
 
 	ears = /obj/item/radio/headset/headset_sec/alt
@@ -205,7 +205,7 @@
 
 /datum/outfit/job/nanotrasen/cel/ce
 	job_icon = "chiefengineer"
-	name = "Nanotrasen common - Chief Engineer"
+	name = "NT - Chief Engineer"
 	jobtype = /datum/job/chief_engineer
 
 	id = /obj/item/card/id/silver
@@ -228,7 +228,7 @@
 
 /datum/outfit/job/nanotrasen/cel/atmos
 	job_icon = "stationengineer"
-	name = "Nanotrasen common - Atmos Tech"
+	name = "NT - Atmos Tech"
 	jobtype = /datum/job/atmos
 
 	belt = /obj/item/storage/belt/utility/atmostech
@@ -246,7 +246,7 @@
 
 /datum/outfit/job/nanotrasen/cel/miner
 	job_icon = "shaftminer"
-	name = "Nanotrasen common - Miner"
+	name = "NT - Miner"
 	jobtype = /datum/job/mining
 
 	ears = /obj/item/radio/headset/headset_cargo/mining
@@ -273,7 +273,7 @@
 
 /datum/outfit/job/nanotrasen/cel/doctor/lp
 	job_icon = "assistant"
-	name = "Nanotrasen common - LP Medical Specialist"
+	name = "NT - LP Medical Specialist"
 	id_assignment = "Medical Specialist"
 
 	implants = list(/obj/item/implant/mindshield)
@@ -296,7 +296,7 @@
 
 // Quartermaster
 /datum/outfit/job/nanotrasen/cel/quartermaster
-	name = "Nanotrasen common - Quartermaster"
+	name = "NT - Quartermaster"
 	jobtype = /datum/job/qm
 	job_icon = "quartermaster"
 
@@ -314,7 +314,7 @@
 // MARK: Научный директор - РД
 
 /datum/outfit/job/nanotrasen/cel/rd
-	name = "Nanotrasen common - Science Director"
+	name = "NT - Science Director"
 	job_icon = "researchdirector"
 	jobtype = /datum/job/rd
 	id = /obj/item/card/id/silver
@@ -336,7 +336,7 @@
 // MARK: Медицинский директор - СМО
 
 /datum/outfit/job/nanotrasen/cel/cmo
-	name = "Nanotrasen common - Medical Director"
+	name = "NT - Medical Director"
 	job_icon = "chiefmedicalofficer"
 	jobtype = /datum/job/cmo
 	id = /obj/item/card/id/silver
@@ -357,7 +357,7 @@
 // MARK: Медицинский Директор - СМО капитан
 
 /datum/outfit/job/nanotrasen/cel/cmo/captain
-	name = "Nanotrasen common - Medical Director (Captain)"
+	name = "NT - Medical Director (Captain)"
 	job_icon = "chiefmedicalofficer"
 	jobtype = /datum/job/captain
 
@@ -384,7 +384,7 @@
 // MARK: Инженерный Директор - СЕ капитан
 
 /datum/outfit/job/nanotrasen/cel/ce/captain
-	name = "Nanotrasen common - Engineering Director (Captain)"
+	name = "NT - Engineering Director (Captain)"
 	job_icon = "chiefengineer"
 	jobtype = /datum/job/captain
 
@@ -410,7 +410,7 @@
 // MARK: Химик
 
 /datum/outfit/job/nanotrasen/cel/chemist
-	name = "Nanotrasen common - Chemist"
+	name = "NT - Chemist"
 	job_icon = "chemist"
 	jobtype = /datum/job/chemist
 
@@ -430,7 +430,7 @@
 /// MARK: Генетик
 
 /datum/outfit/job/nanotrasen/cel/geneticist
-	name = "Nanotrasen common - Genetical Researcher"
+	name = "NT - Genetical Researcher"
 	job_icon = "geneticist"
 	jobtype = /datum/job/geneticist
 
@@ -449,7 +449,7 @@
 /// MARK: Директор СБ - ХОС капитан
 
 /datum/outfit/job/nanotrasen/cel/hos/captain
-	name = "Nanotrasen common - Security Director (Captain)"
+	name = "NT - Security Director (Captain)"
 	job_icon = "headofsecurity"
 	jobtype = /datum/job/captain
 
@@ -477,7 +477,7 @@
 /// MARK: лп уборщик
 
 /datum/outfit/job/nanotrasen/cel/janitor/lp
-	name = "Nanotrasen common - LP Janitorial Specialist"
+	name = "NT - LP Janitorial Specialist"
 	jobtype = /datum/job/janitor
 	job_icon = "janitor"
 
@@ -493,7 +493,7 @@
 
 // Assistant
 /datum/outfit/job/nanotrasen/cel/assistant
-	name = "Nanotrasen common - Assistant"
+	name = "NT - Assistant"
 	jobtype = /datum/job/assistant
 	job_icon = "assistant"
 
@@ -502,7 +502,7 @@
 	belt = /obj/item/pda
 
 /datum/outfit/job/nanotrasen/cel/assistant/empty
-	name = "Nanotrasen common - Assistant (Naked)"
+	name = "NT - Assistant (Naked)"
 	jobtype = /datum/job/assistant
 	job_icon = "assistant"
 
@@ -514,7 +514,7 @@
 
 /datum/outfit/job/nanotrasen/cel/security/ert/commander
 	job_icon = "assistant"
-	name = "Nanotrasen common - ERT Сommander"
+	name = "NT - ERT Сommander"
 
 	uniform = /obj/item/clothing/under/rank/security/officer/blueshirt
 	shoes = /obj/item/clothing/shoes/combat

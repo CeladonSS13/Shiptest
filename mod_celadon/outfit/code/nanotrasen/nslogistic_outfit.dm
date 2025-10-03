@@ -1,7 +1,7 @@
 // MARK: Captain
 
 /datum/outfit/job/nanotrasen/cel/captain/nslogistic
-	name = "Nanotrasen N+S Logistic - Captain"
+	name = "NT N+S Logistic - Captain"
 	job_icon = "captain"
 
 	id = /obj/item/card/id/cel/nanotrasen/nslogistic_captain
@@ -9,13 +9,13 @@
 // MARK: Command
 
 /datum/outfit/job/nanotrasen/cel/rd/nslogistic
-	name = "Nanotrasen N+S Logistic - Research Director"
+	name = "NT N+S Logistic - Research Director"
 	job_icon = "researchdirector"
 
 	id = /obj/item/card/id/cel/nanotrasen/nslogistic_rd
 
 /datum/outfit/job/nanotrasen/cel/quartermaster/nslogistic
-	name = "Nanotrasen N+S Logistic - Quartermaster"
+	name = "NT N+S Logistic - Quartermaster"
 	job_icon = "quartermaster"
 
 	id = /obj/item/card/id/cel/nanotrasen/nslogistic_quartermaster
@@ -23,7 +23,7 @@
 // MARK: Crew
 
 /datum/outfit/job/nanotrasen/cel/miner/nslogistic
-	name = "Nanotrasen N+S Logistic - Shaft Miner"
+	name = "NT N+S Logistic - Shaft Miner"
 	job_icon = "shaftminer"
 
 	id = /obj/item/card/id/cel/nanotrasen/nslogistic_miner
@@ -31,7 +31,7 @@
 // MARK: Assistant
 
 /datum/outfit/job/nanotrasen/cel/assistant/nslogistic
-	name = "Nanotrasen N+S Logistic - Assistant"
+	name = "NT N+S Logistic - Assistant"
 	job_icon = "assistant"
 
 	id = /obj/item/card/id/cel/nanotrasen/nslogistic_assistant

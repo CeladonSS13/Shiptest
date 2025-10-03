@@ -1,7 +1,7 @@
 /// MARK: слешер капитан
 
 /datum/outfit/job/nanotrasen/cel/intel/captain
-	name = "Nanotrasen Intelligence - Officer"
+	name = "NT Intelligence - Officer"
 	jobtype = /datum/job/captain
 	job_icon = "captain"
 	implants = list(/obj/item/implant/mindshield)
@@ -20,7 +20,7 @@
 /// MARK: слешер сбуха
 
 /datum/outfit/job/nanotrasen/cel/intel/operative
-	name = "Nanotrasen Intelligence - Security Operative"
+	name = "NT Intelligence - Security Operative"
 	jobtype = /datum/job/hos
 	job_icon = "headofsecurity"
 	implants = list(/obj/item/implant/mindshield)
@@ -37,7 +37,7 @@
 /// MARK: слешер медик
 
 /datum/outfit/job/nanotrasen/cel/intel/medic
-	name = "Nanotrasen Intelligence - Medical Technician"
+	name = "NT Intelligence - Medical Technician"
 	jobtype = /datum/job/cmo
 	job_icon = "chiefmedicalofficer"
 	implants = list(/obj/item/implant/mindshield)
@@ -54,7 +54,7 @@
 /// MARK: слешер инженер
 
 /datum/outfit/job/nanotrasen/cel/intel/engineer
-	name = "Nanotrasen Intelligence - Engineering Technician"
+	name = "NT Intelligence - Engineering Technician"
 	jobtype = /datum/job/chief_engineer
 	job_icon = "chiefengineer"
 	implants = list(/obj/item/implant/mindshield)
