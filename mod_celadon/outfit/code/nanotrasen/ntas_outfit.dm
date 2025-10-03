@@ -1,3 +1,5 @@
+/// Nanotrasen Tactical Assault Team лидер
+
 /datum/outfit/job/nanotrasen/cel/ntas/commander
 	name = "Nanotrasen TAS - Leader"
 	jobtype = /datum/job/captain
