@@ -24,14 +24,14 @@
 	get_syndi_general_access(H)
 
 /datum/outfit/job/syndicate/cel
-	name = "Syndicate common - Base Outfit"
+	name = "Syndi - Base Outfit"
 	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/syndicate
 
 //MARK: Captain
 
 /datum/outfit/job/syndicate/cel/captain
-	name = "Syndicate common - Captain"
+	name = "Syndi - Captain"
 	jobtype = /datum/job/captain
 	job_icon = "captain"
 
@@ -51,7 +51,7 @@
 //MARK: Command
 
 /datum/outfit/job/syndicate/cel/ce	// Не юзается
-	name = "Syndicate common - Chief Engineer"
+	name = "Syndi - Chief Engineer"
 	jobtype = /datum/job/chief_engineer
 	job_icon = "chiefengineer"
 
@@ -74,7 +74,7 @@
 	chameleon_extras = /obj/item/stamp/ce
 
 /datum/outfit/job/syndicate/cel/cmo
-	name = "Syndicate common - Medical Director"
+	name = "Syndi - Medical Director"
 	id_assignment = "Medical Director"
 	jobtype = /datum/job/cmo
 	job_icon = "chiefmedicalofficer"
@@ -90,7 +90,7 @@
 	suit_store = /obj/item/flashlight/pen/paramedic
 
 /datum/outfit/job/syndicate/cel/head_of_personnel
-	name = "Syndicate common - Bridge Officer"
+	name = "Syndi - Bridge Officer"
 	id_assignment = "Bridge Officer"
 	jobtype = /datum/job/head_of_personnel
 	job_icon = "headofpersonnel"
@@ -106,7 +106,7 @@
 	backpack_contents = list(/obj/item/storage/box/ids=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
 
 /datum/outfit/job/syndicate/cel/hos	// Не юзается
-	name = "Syndicate common - Head Of Security"
+	name = "Syndi - Head Of Security"
 	jobtype = /datum/job/hos
 	job_icon = "headofsecurity"
 
@@ -119,7 +119,7 @@
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 
 /datum/outfit/job/syndicate/cel/quartermaster	// Не юзается
-	name = "Syndicate common - Quartermaster"
+	name = "Syndi - Quartermaster"
 	jobtype = /datum/job/qm
 	job_icon = "quartermaster"
 
@@ -136,7 +136,7 @@
 //MARK: Crew
 
 /datum/outfit/job/syndicate/cel/bartender
-	name = "Syndicate common - Bartender"
+	name = "Syndi - Bartender"
 	jobtype = /datum/job/bartender
 	job_icon = "bartender"
 
@@ -159,7 +159,7 @@
 		to_chat(H, span_notice("You're not technically old enough to access or serve alcohol, but your ID has been discreetly modified to display your age as [AGE_MINOR]. Try to keep that a secret!"))
 
 /datum/outfit/job/syndicate/cel/botanist	// Не юзается
-	name = "Syndicate common - Botanist"
+	name = "Syndi - Botanist"
 	jobtype = /datum/job/hydro
 	job_icon = "botanist"
 
@@ -169,7 +169,7 @@
 	suit_store = /obj/item/plant_analyzer
 
 /datum/outfit/job/syndicate/cel/cargo_tech	// Не юзается
-	name = "Syndicate common - Cargo Tech"
+	name = "Syndi - Cargo Tech"
 	jobtype = /datum/job/cargo_tech
 	job_icon = "cargotechnician"
 
@@ -182,7 +182,7 @@
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/cargo=1)
 
 /datum/outfit/job/syndicate/cel/atmos	// не юзается нигде
-	name = "Syndicate common - Atmospheric Technician"
+	name = "Syndi - Atmospheric Technician"
 	jobtype = /datum/job/atmos
 	job_icon = "atmospherictechnician"
 
@@ -204,7 +204,7 @@
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
 /datum/outfit/job/syndicate/cel/chemist	// Не юзается
-	name = "Syndicate common - Chemist"
+	name = "Syndi - Chemist"
 	jobtype = /datum/job/chemist
 	job_icon = "chemist"
 
@@ -216,7 +216,7 @@
 
 
 /datum/outfit/job/syndicate/cel/doctor
-	name = "Syndicate common - Medical Doctor"
+	name = "Syndi - Medical Doctor"
 	jobtype = /datum/job/doctor
 	job_icon = "medicaldoctor"
 
@@ -230,7 +230,7 @@
 	courierbag = /obj/item/storage/backpack/messenger/med
 
 /datum/outfit/job/syndicate/cel/paramedic	// Не юзается
-	name = "Syndicate common - Paramedic"
+	name = "Syndi - Paramedic"
 	jobtype = /datum/job/paramedic
 	job_icon = "paramedic"
 
@@ -249,7 +249,7 @@
 	pda_slot = ITEM_SLOT_LPOCKET
 
 /datum/outfit/job/syndicate/cel/psychologist	// Не юзается
-	name = "Syndicate common - Psychologist"
+	name = "Syndi - Psychologist"
 	jobtype = /datum/job/psychologist
 	job_icon = "psychologist"
 
@@ -261,7 +261,7 @@
 	l_hand = /obj/item/clipboard
 	pda_slot = ITEM_SLOT_BELT
 /datum/outfit/job/syndicate/cel/science	// Не юзается
-	name = "Syndicate common - Scientist"
+	name = "Syndi - Scientist"
 	jobtype = /datum/job/scientist
 	job_icon = "scientist"
 
@@ -270,7 +270,7 @@
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/science
 
 /datum/outfit/job/syndicate/cel/security
-	name = "Syndicate common - Operative"
+	name = "Syndi - Operative"
 	id_assignment = "Operative"
 	jobtype = /datum/job/officer
 	job_icon = "securityofficer"
@@ -286,7 +286,7 @@
 	r_pocket = /obj/item/assembly/flash/handheld
 
 /datum/outfit/job/syndicate/cel/miner	// Не юзается
-	name = "Syndicate common - Miner"
+	name = "Syndi - Miner"
 	jobtype = /datum/job/mining
 	job_icon = "shaftminer"
 
@@ -304,7 +304,7 @@
 						)
 
 /datum/outfit/job/syndicate/cel/engineer	// Не юзается
-	name = "Syndicate common - Ship Technician"
+	name = "Syndi - Ship Technician"
 	id_assignment = "Ship Technician"
 	jobtype = /datum/job/engineer
 	job_icon = "stationengineer"
@@ -331,7 +331,7 @@
 //MARK: Assistant
 
 /datum/outfit/job/syndicate/cel/assistant
-	name = "Syndicate common - Junior Agent"
+	name = "Syndi - Junior Agent"
 	id_assignment = "Junior Agent"
 	jobtype = /datum/job/assistant
 	job_icon = "assistant"
@@ -350,7 +350,7 @@
 //MARK: Patient
 
 /datum/outfit/job/syndicate/cel/patient
-	name = "Syndicate common - Long Term Patient"
+	name = "Syndi - Long Term Patient"
 	id_assignment = "Long Term Patient"
 	jobtype = /datum/job/prisoner
 	job_icon = "suns_patient"
