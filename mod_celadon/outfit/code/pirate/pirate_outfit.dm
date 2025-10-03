@@ -72,7 +72,7 @@
 
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced = 1)
 
-/datum/outfit/job/pirate/engineer/jupiter
+/datum/outfit/job/pirate/engineer/jupiter	// Не юзается
 	name = "Independent - Engineer (Nodesman)"
 
 	uniform = /obj/item/clothing/under/utility
@@ -154,7 +154,7 @@
 	head = /obj/item/clothing/head/bandana
 	shoes = /obj/item/clothing/shoes/sneakers/black
 
-/datum/outfit/job/pirate/assistant/jupiter
+/datum/outfit/job/pirate/assistant/jupiter	// Не юзается
 	name = "Independent - Assistant (Nodesman)"
 
 	uniform = /obj/item/clothing/under/utility
