@@ -1,7 +1,7 @@
 //MARK: Captain
 
 /datum/outfit/job/syndicate/cel/captain/gorlex
-	name = "Syndicate Hardliner - Captain"
+	name = "Syndicate Gorlex - Captain"
 
 	id = /obj/item/card/id/cel/syndicate/captain/gorlex
 	uniform = /obj/item/clothing/under/syndicate/hardliners/officer
@@ -23,7 +23,7 @@
 	gloves = /obj/item/clothing/gloves/color/red/insulated
 
 /datum/outfit/job/syndicate/cel/hos/gorlex
-	name = "Syndicate Hardliner - Sergeant"
+	name = "Syndicate Gorlex - Sergeant"
 	id_assignment = "Sergeant"
 
 	id = /obj/item/card/id/cel/syndicate/command_hos/gorlex
@@ -34,7 +34,7 @@
 
 //MARK: Crew
 /datum/outfit/job/syndicate/cel/doctor/gorlex
-	name = "Syndicate Hardliner - Medical Doctor"
+	name = "Syndicate Gorlex - Medical Doctor"
 
 	id = /obj/item/card/id/cel/syndicate/crew/doctor/gorlex
 	uniform = /obj/item/clothing/under/syndicate/hardliners
@@ -49,7 +49,7 @@
 	id = /obj/item/card/id/cel/syndicate/crew/doctor/paramedic/gorlex
 
 /datum/outfit/job/syndicate/cel/security/gorlex
-	name = "Syndicate Hardliner - Trooper"
+	name = "Syndicate Gorlex - Trooper"
 	id_assignment = "Trooper"
 	job_icon = "securityofficer"
 
@@ -59,7 +59,7 @@
 	shoes = /obj/item/clothing/shoes/combat
 
 /datum/outfit/job/syndicate/cel/security/gorlex/pilot	// Не юзается
-	name = "Syndicate Hardliner - Pilot"
+	name = "Syndicate Gorlex - Pilot"
 	id_assignment = "Pilot"
 	job_icon = "securityofficer"
 
@@ -67,7 +67,7 @@
 	head = /obj/item/clothing/head/helmet/hardliners/swat
 
 /datum/outfit/job/syndicate/cel/miner/gorlex
-	name = "Syndicate Hardliner - Wrecker"
+	name = "Syndicate Gorlex - Wrecker"
 	id_assignment = "Wrecker"
 
 	id = /obj/item/card/id/cel/syndicate/crew/miner/gorlex
@@ -79,7 +79,7 @@
 	ears = /obj/item/radio/headset/alt
 
 /datum/outfit/job/syndicate/cel/engineer/gorlex
-	name = "Syndicate Hardliner - Mechanic"
+	name = "Syndicate Gorlex - Mechanic"
 	id_assignment = "Mechanic"
 
 	id = /obj/item/card/id/cel/syndicate/crew/engineer/gorlex
@@ -92,7 +92,7 @@
 //MARK: Assistant
 
 /datum/outfit/job/syndicate/cel/assistant/gorlex
-	name = "Syndicate Hardliner - Junior Agent"
+	name = "Syndicate Gorlex - Junior Agent"
 
 	id = /obj/item/card/id/cel/syndicate/assistant/gorlex
 	uniform = /obj/item/clothing/under/syndicate/hardliners
