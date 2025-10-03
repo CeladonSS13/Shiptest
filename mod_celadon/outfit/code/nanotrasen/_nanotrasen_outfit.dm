@@ -25,7 +25,6 @@
 
 // Даёт всем НТшкам брендовый сурвивал бокс
 /datum/outfit/job/nanotrasen/cel
-	name = "Nanotrasen common"
 	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/nanotrasen
 
