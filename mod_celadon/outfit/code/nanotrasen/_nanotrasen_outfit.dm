@@ -31,6 +31,7 @@
 /datum/outfit/job/nanotrasen/cel/captain
 	name = "NT - Captain"
 	job_icon = "captain"
+
 	jobtype = /datum/job/captain
 
 	id = /obj/item/card/id/gold
@@ -59,6 +60,7 @@
 /datum/outfit/job/nanotrasen/cel/hos
 	job_icon = "headofsecurity"
 	name = "NT - Head of Security"
+
 	jobtype = /datum/job/hos
 
 	id = /obj/item/card/id/silver
@@ -90,6 +92,7 @@
 /datum/outfit/job/nanotrasen/cel/engineer
 	job_icon = "stationengineer"
 	name = "NT - Engineer"
+
 	jobtype = /datum/job/engineer
 
 	belt = /obj/item/storage/belt/utility/full/engi
@@ -112,6 +115,7 @@
 /datum/outfit/job/nanotrasen/cel/security
 	job_icon = "securityofficer"
 	name = "NT - Security Officer"
+
 	jobtype = /datum/job/officer
 
 	ears = /obj/item/radio/headset/alt
@@ -136,6 +140,7 @@
 /datum/outfit/job/nanotrasen/cel/paramedic
 	job_icon = "paramedic"
 	name = "NT - Paramedic"
+
 	jobtype = /datum/job/paramedic
 
 	ears = /obj/item/radio/headset/headset_med
@@ -159,6 +164,7 @@
 /datum/outfit/job/nanotrasen/cel/doctor
 	job_icon = "medicaldoctor"
 	name = "NT - Medical Doctor"
+
 	jobtype = /datum/job/doctor
 
 	belt = /obj/item/pda/medical
@@ -180,6 +186,7 @@
 /datum/outfit/job/nanotrasen/cel/warden
 	job_icon = "warden"
 	name = "NT - Warden"
+
 	jobtype = /datum/job/warden
 
 	ears = /obj/item/radio/headset/headset_sec/alt
@@ -205,6 +212,7 @@
 /datum/outfit/job/nanotrasen/cel/ce
 	job_icon = "chiefengineer"
 	name = "NT - Chief Engineer"
+
 	jobtype = /datum/job/chief_engineer
 
 	id = /obj/item/card/id/silver
@@ -228,6 +236,7 @@
 /datum/outfit/job/nanotrasen/cel/atmos
 	job_icon = "stationengineer"
 	name = "NT - Atmos Tech"
+
 	jobtype = /datum/job/atmos
 
 	belt = /obj/item/storage/belt/utility/atmostech
@@ -246,6 +255,7 @@
 /datum/outfit/job/nanotrasen/cel/miner
 	job_icon = "shaftminer"
 	name = "NT - Miner"
+
 	jobtype = /datum/job/mining
 
 	ears = /obj/item/radio/headset/headset_cargo/mining
@@ -296,8 +306,9 @@
 // Quartermaster
 /datum/outfit/job/nanotrasen/cel/quartermaster
 	name = "NT - Quartermaster"
-	jobtype = /datum/job/qm
 	job_icon = "quartermaster"
+
+	jobtype = /datum/job/qm
 
 	ears = /obj/item/radio/headset/headset_cargo
 	head = /obj/item/clothing/head/nanotrasen/cap/supply
@@ -315,7 +326,9 @@
 /datum/outfit/job/nanotrasen/cel/rd
 	name = "NT - Science Director"
 	job_icon = "researchdirector"
+
 	jobtype = /datum/job/rd
+
 	id = /obj/item/card/id/silver
 	ears = /obj/item/radio/headset/nanotrasen
 	uniform = /obj/item/clothing/under/nanotrasen/science/director
@@ -337,7 +350,9 @@
 /datum/outfit/job/nanotrasen/cel/cmo
 	name = "NT - Medical Director"
 	job_icon = "chiefmedicalofficer"
+
 	jobtype = /datum/job/cmo
+
 	id = /obj/item/card/id/silver
 	ears = /obj/item/radio/headset/nanotrasen
 	head = /obj/item/clothing/head/beret/cmo
@@ -358,6 +373,7 @@
 /datum/outfit/job/nanotrasen/cel/cmo/captain
 	name = "NT - Medical Director (Captain)"
 	job_icon = "chiefmedicalofficer"
+
 	jobtype = /datum/job/captain
 
 	id = /obj/item/card/id/gold
@@ -385,6 +401,7 @@
 /datum/outfit/job/nanotrasen/cel/ce/captain
 	name = "NT - Engineering Director (Captain)"
 	job_icon = "chiefengineer"
+
 	jobtype = /datum/job/captain
 
 	id = /obj/item/card/id/gold
@@ -411,6 +428,7 @@
 /datum/outfit/job/nanotrasen/cel/chemist
 	name = "NT - Chemist"
 	job_icon = "chemist"
+
 	jobtype = /datum/job/chemist
 
 	belt = /obj/item/pda/chemist
@@ -431,6 +449,7 @@
 /datum/outfit/job/nanotrasen/cel/geneticist
 	name = "NT - Genetical Researcher"
 	job_icon = "geneticist"
+
 	jobtype = /datum/job/geneticist
 
 	belt = /obj/item/pda/geneticist
@@ -450,6 +469,7 @@
 /datum/outfit/job/nanotrasen/cel/hos/captain
 	name = "NT - Security Director (Captain)"
 	job_icon = "headofsecurity"
+
 	jobtype = /datum/job/captain
 
 	id = /obj/item/card/id/gold
@@ -478,13 +498,14 @@
 /datum/outfit/job/nanotrasen/cel/janitor/lp
 	name = "NT - LP Janitorial Specialist"
 	jobtype = /datum/job/janitor
+
 	job_icon = "janitor"
 
 	uniform = /obj/item/clothing/under/nanotrasen/janitor
 	shoes = /obj/item/clothing/shoes/sneakers/black
 	suit = /obj/item/clothing/suit/nanotrasen/suitjacket
 	head = /obj/item/clothing/head/nanotrasen/cap/janitor
-	id = /obj/item/card/id/lpjanitor
+	id = /obj/item/card/id/cel/lpjanitor
 	ears = /obj/item/radio/headset/nanotrasen
 	belt = /obj/item/storage/belt/janitor
 	gloves = /obj/item/clothing/gloves/color/purple
@@ -494,6 +515,7 @@
 /datum/outfit/job/nanotrasen/cel/assistant
 	name = "NT - Assistant"
 	jobtype = /datum/job/assistant
+
 	job_icon = "assistant"
 
 	uniform = /obj/item/clothing/under/nanotrasen

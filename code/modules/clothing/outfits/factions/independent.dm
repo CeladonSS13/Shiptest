@@ -1,4 +1,5 @@
 /datum/outfit/job/independent
+	icon =
 	name = "Independent - Base Outfit"
 	faction_icon = "bg_indie"
 

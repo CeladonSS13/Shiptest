@@ -24,8 +24,6 @@
 	get_syndi_general_access(H)
 
 /datum/outfit/job/syndicate/cel
-	name = "Syndi - Base Outfit"
-	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/syndicate
 
 //MARK: Captain
@@ -33,6 +31,7 @@
 /datum/outfit/job/syndicate/cel/captain
 	name = "Syndi - Captain"
 	jobtype = /datum/job/captain
+
 	job_icon = "captain"
 
 	id = /obj/item/card/id/cel/syndicate/captain
@@ -53,6 +52,7 @@
 /datum/outfit/job/syndicate/cel/ce	// Не юзается
 	name = "Syndi - Chief Engineer"
 	jobtype = /datum/job/chief_engineer
+
 	job_icon = "chiefengineer"
 
 	id = /obj/item/card/id/cel/syndicate/command_ce
@@ -77,6 +77,7 @@
 	name = "Syndi - Medical Director"
 	id_assignment = "Medical Director"
 	jobtype = /datum/job/cmo
+
 	job_icon = "chiefmedicalofficer"
 
 	id = /obj/item/card/id/cel/syndicate/command_cmo
@@ -93,6 +94,7 @@
 	name = "Syndi - Bridge Officer"
 	id_assignment = "Bridge Officer"
 	jobtype = /datum/job/head_of_personnel
+
 	job_icon = "headofpersonnel"
 
 	id = /obj/item/card/id/cel/syndicate/command_hop
@@ -108,6 +110,7 @@
 /datum/outfit/job/syndicate/cel/hos	// Не юзается
 	name = "Syndi - Head Of Security"
 	jobtype = /datum/job/hos
+
 	job_icon = "headofsecurity"
 
 	id = /obj/item/card/id/cel/syndicate/command_hop
@@ -121,6 +124,7 @@
 /datum/outfit/job/syndicate/cel/quartermaster	// Не юзается
 	name = "Syndi - Quartermaster"
 	jobtype = /datum/job/qm
+
 	job_icon = "quartermaster"
 
 	id = /obj/item/card/id/cel/syndicate/command_qm
@@ -138,6 +142,7 @@
 /datum/outfit/job/syndicate/cel/bartender
 	name = "Syndi - Bartender"
 	jobtype = /datum/job/bartender
+
 	job_icon = "bartender"
 
 	id = /obj/item/card/id/cel/syndicate/crew/bartender
@@ -161,6 +166,7 @@
 /datum/outfit/job/syndicate/cel/botanist	// Не юзается
 	name = "Syndi - Botanist"
 	jobtype = /datum/job/hydro
+
 	job_icon = "botanist"
 
 	id = /obj/item/card/id/cel/syndicate/crew/botanist
@@ -171,6 +177,7 @@
 /datum/outfit/job/syndicate/cel/cargo_tech	// Не юзается
 	name = "Syndi - Cargo Tech"
 	jobtype = /datum/job/cargo_tech
+
 	job_icon = "cargotechnician"
 
 	id = /obj/item/card/id/cel/syndicate/crew/cargo_tech
@@ -184,6 +191,7 @@
 /datum/outfit/job/syndicate/cel/atmos	// не юзается нигде
 	name = "Syndi - Atmospheric Technician"
 	jobtype = /datum/job/atmos
+
 	job_icon = "atmospherictechnician"
 
 	id = /obj/item/card/id/cel/syndicate/crew/atmos
@@ -206,6 +214,7 @@
 /datum/outfit/job/syndicate/cel/chemist	// Не юзается
 	name = "Syndi - Chemist"
 	jobtype = /datum/job/chemist
+
 	job_icon = "chemist"
 
 	id = /obj/item/card/id/cel/syndicate/crew/chemist
@@ -218,6 +227,7 @@
 /datum/outfit/job/syndicate/cel/doctor
 	name = "Syndi - Medical Doctor"
 	jobtype = /datum/job/doctor
+
 	job_icon = "medicaldoctor"
 
 	id = /obj/item/card/id/cel/syndicate/crew/doctor
@@ -232,6 +242,7 @@
 /datum/outfit/job/syndicate/cel/paramedic	// Не юзается
 	name = "Syndi - Paramedic"
 	jobtype = /datum/job/paramedic
+
 	job_icon = "paramedic"
 
 	id = /obj/item/card/id/cel/syndicate/crew/doctor/paramedic
@@ -251,6 +262,7 @@
 /datum/outfit/job/syndicate/cel/psychologist	// Не юзается
 	name = "Syndi - Psychologist"
 	jobtype = /datum/job/psychologist
+
 	job_icon = "psychologist"
 
 	id = /obj/item/card/id/cel/syndicate/crew/doctor/psychologist
@@ -263,6 +275,7 @@
 /datum/outfit/job/syndicate/cel/science	// Не юзается
 	name = "Syndi - Scientist"
 	jobtype = /datum/job/scientist
+
 	job_icon = "scientist"
 
 	id = /obj/item/card/id/cel/syndicate/crew/scientist
@@ -273,6 +286,7 @@
 	name = "Syndi - Operative"
 	id_assignment = "Operative"
 	jobtype = /datum/job/officer
+
 	job_icon = "securityofficer"
 
 	id = /obj/item/card/id/cel/syndicate/crew/security
@@ -288,6 +302,7 @@
 /datum/outfit/job/syndicate/cel/miner	// Не юзается
 	name = "Syndi - Miner"
 	jobtype = /datum/job/mining
+
 	job_icon = "shaftminer"
 
 	id = /obj/item/card/id/cel/syndicate/crew/miner
@@ -307,6 +322,7 @@
 	name = "Syndi - Ship Technician"
 	id_assignment = "Ship Technician"
 	jobtype = /datum/job/engineer
+
 	job_icon = "stationengineer"
 
 	id = /obj/item/card/id/cel/syndicate/crew/engineer
@@ -334,6 +350,7 @@
 	name = "Syndi - Junior Agent"
 	id_assignment = "Junior Agent"
 	jobtype = /datum/job/assistant
+
 	job_icon = "assistant"
 
 	uniform = /obj/item/clothing/under/syndicate/intern
@@ -353,6 +370,7 @@
 	name = "Syndi - Long Term Patient"
 	id_assignment = "Long Term Patient"
 	jobtype = /datum/job/prisoner
+
 	job_icon = "suns_patient"
 
 	id = /obj/item/card/id/cel/syndicate/patient_suns
