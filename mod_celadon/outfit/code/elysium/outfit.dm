@@ -1,17 +1,14 @@
 //hopefully дает всему элизиуму коробки для выживания ИСВ(бомжей)
-
-/datum/outfit/job/elysium
-	box = /obj/item/storage/box/survival/independent
-	faction_icon = "bg_elysium"
-
 /datum/outfit/job/elysium
 	name = "Elysium - Base Outfit"
+	faction_icon = "bg_elysium"
 
-	backpack = null
+	id = /obj/item/card/id/cel/elysium/crew
 	head = /obj/item/clothing/head/shemag/green
 	uniform = /obj/item/clothing/under/color/darkgreen
 	shoes = /obj/item/clothing/shoes/sneakers/black
-	id = /obj/item/card/id/cel/elysium/crew
+	box = /obj/item/storage/box/survival/independent
+	backpack = null
 
 /datum/outfit/job/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -45,8 +42,8 @@
 
 /datum/outfit/job/elysium/captain
 	name = "Elysium - Caid"
-	job_icon = "captain"
 	jobtype = /datum/job/captain
+	job_icon = "captain"
 
 	id = /obj/item/card/id/cel/elysium/captain
 	backpack = /obj/item/storage/backpack/satchel/leather
@@ -63,8 +60,8 @@
 
 /datum/outfit/job/elysium/security
 	name = "Elysium - Mukatell"
-	job_icon = "securityofficer"
 	jobtype = /datum/job/officer
+	job_icon = "securityofficer"
 
 	id = /obj/item/card/id/cel/elysium/crew/security
 	gloves = /obj/item/clothing/gloves/color/black
@@ -81,8 +78,8 @@
 
 /datum/outfit/job/elysium/assistant
 	name = "Elysium - Ahisa`i"
-	job_icon = "assistant"
 	jobtype = /datum/job/assistant
+	job_icon = "assistant"
 
 	id = /obj/item/card/id/cel/elysium/crew
 	suit = /obj/item/clothing/suit/apparel/black
