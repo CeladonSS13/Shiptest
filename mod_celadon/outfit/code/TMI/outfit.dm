@@ -1,20 +1,15 @@
 // MARK: Survival box
 // Меняет обычный бокс на пиратскую тему, и меняем им фоны
 /datum/outfit/job/tmi
-	job_icon = "assistant"
-	name = "TMI - Base Outfit"
-	// faction = FACTION_PLAYER_TMI	// Нету такой подфракции, но будет
-	// faction_icon = "bg_tmi"	// Нету такой подфракции, но будет
-
 	id = /obj/item/card/id/cel/tmi
-	// box = /obj/item/storage/box/survival/tmi	// Нету такой подфракции, но будет
 
 // MARK: Captain
 
 /datum/outfit/job/tmi/captain
 	name = "TMI - Captain Outfit"
-	jobtype = /datum/job/captain
 	job_icon = "captain"
+
+	jobtype = /datum/job/captain
 
 	id = /obj/item/card/id/cel/tmi/captain
 
@@ -40,7 +35,8 @@
 
 /datum/outfit/job/tmi/assistant
 	name = "TMI - Assistant Outfit"
-	jobtype = /datum/job/assistant
 	job_icon = "assistant"
+
+	jobtype = /datum/job/assistant
 
 	id = /obj/item/card/id/cel/tmi/assistant
