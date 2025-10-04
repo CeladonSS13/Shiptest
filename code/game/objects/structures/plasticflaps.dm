@@ -33,6 +33,10 @@
 /obj/structure/plasticflaps/screwdriver_act(mob/living/user, obj/item/W)
 	if(..())
 		return TRUE
+//	[CELADON-ADD] - Да-да, очень смешно делать некликабельные структуры вместо того чтоб просто сделать из бессмертными и вырубить им разборку
+	if(istype(src, /obj/structure/plasticflaps/outpost))
+		return FALSE
+//	[/CELADON-ADD]
 	add_fingerprint(user)
 	var/action = anchored ? "unscrews [src] from" : "screws [src] to"
 	var/uraction = anchored ? "unscrew [src] from " : "screw [src] to"
