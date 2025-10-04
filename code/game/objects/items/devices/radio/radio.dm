@@ -115,13 +115,12 @@
 	. = ..()
 	AddComponent(/datum/component/empprotection, EMP_PROTECT_WIRES)
 
-// [CELADON-EDIT] - QOL - Разрешаем использование UI раций в лежачем положении
 /obj/item/radio/AltClick(mob/user)
 	if(headset)
 		. = ..()
 	else if(sectorwide == TRUE) // prevents incompatibility with broadcast cameras
 		return
-	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE, TRUE)) // floor_okay = TRUE
+	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE))
 		broadcasting = !broadcasting
 		to_chat(user, span_notice("You toggle broadcasting [broadcasting ? "on" : "off"]."))
 
@@ -130,10 +129,9 @@
 		. = ..()
 	else if(sectorwide == TRUE) // prevents incompatibility with broadcast cameras
 		return
-	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE, TRUE)) // floor_okay = TRUE
+	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE))
 		listening = !listening
 		to_chat(user, span_notice("You toggle speaker [listening ? "on" : "off"]."))
-// [/CELADON-EDIT]
 
 /obj/item/radio/interact(mob/user)
 	if(unscrewed && !isAI(user))
@@ -142,10 +140,8 @@
 	else
 		..()
 
-// [CELADON-EDIT] - QOL - Разрешаем использование UI раций в лежачем положении
 /obj/item/radio/ui_state(mob/user)
-	return GLOB.portable_device_state
-// [/CELADON-EDIT]
+	return GLOB.inventory_state
 
 /obj/item/radio/ui_interact(mob/user, datum/tgui/ui, datum/ui_state/state)
 	ui = SStgui.try_update_ui(user, src, ui)

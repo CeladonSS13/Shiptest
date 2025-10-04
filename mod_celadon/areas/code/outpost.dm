@@ -29,8 +29,8 @@
 	icon_state = "hall_2"
 
 /area/outpost/medical/storage
-	name = "Storage"
-	icon_state = "storage"
+	name = "Storge"
+	icon_state = "storge"
 
 /area/outpost/medical/surgery_1
 	name = "Surgery 1"
@@ -70,17 +70,17 @@
 	name = "Chief of Engineer"
 	icon_state = "ce"
 
-/area/outpost/engineering/storages
-	name = "Storages"
-	icon_state = "storages"
+/area/outpost/engineering/storges
+	name = "Storges"
+	icon_state = "storges"
 
-/area/outpost/engineering/storages/storage_1
-	name = "Storage 1"
-	icon_state = "storage_1"
+/area/outpost/engineering/storges/storge_1
+	name = "Storge 1"
+	icon_state = "storge_1"
 
-/area/outpost/engineering/storages/storage_2
-	name = "Storage 2"
-	icon_state = "storage_2"
+/area/outpost/engineering/storges/storge_2
+	name = "Storge 2"
+	icon_state = "storge_2"
 
 /area/outpost/engineering/atmos
 	name = "Atmos"

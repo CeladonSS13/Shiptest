@@ -13,10 +13,7 @@
 	var/datum/action/innate/dash/ninja/jaunt
 	var/dash_toggled = TRUE
 
-// [CELADON-EDIT] - FIXES_ANTAG_NINJA
-// /obj/item/melee/sword/energy_katana/Initialize()	// ORIGINAL
-/obj/item/melee/sword/energy_katana/Initialize(mapload)
-// [/CELADON-EDIT]
+/obj/item/melee/sword/energy_katana/Initialize()
 	. = ..()
 	jaunt = new(src)
 	spark_system = new /datum/effect_system/spark_spread()
@@ -29,21 +26,8 @@
 
 /obj/item/melee/sword/energy_katana/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
 	. = ..()
-	// [CELADON-ADD] - FIXES_ANTAG_NINJA
-	if(!ishuman(user))
-		return
-	var/mob/living/carbon/human/H = user
-	var/obj/item/clothing/suit/space/space_ninja/ninja_suit = H.wear_suit
-	if(!istype(ninja_suit))
-		to_chat(user, span_warning("<b>ERROR</b>: garments incompatible with carbon material jaunt. Please suit up in compatible garments."))
-		return
-	if(!dash_toggled || Adjacent(target) || target.density)
-		return
-	if(ninja_suit.s_coold > 0)
-		to_chat(user, span_warning("<b>ERROR</b>: suit is on cooldown."))
-		return
-	// [/CELADON-ADD]
-	jaunt.Teleport(user, target)
+	if(dash_toggled)
+		jaunt.Teleport(user, target)
 	if(proximity_flag && (isobj(target) || issilicon(target)))
 		spark_system.start()
 		playsound(user, "sparks", 50, TRUE, SHORT_RANGE_SOUND_EXTRARANGE)
@@ -66,13 +50,11 @@
 //To throw it at the ninja
 /obj/item/melee/sword/energy_katana/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
 	if(ishuman(hit_atom))
-		// [CELADON-ADD] - FIXES_ANTAG_NINJA
-		var/mob/living/carbon/human/hit_human = hit_atom
-		if(istype(hit_human.wear_suit, /obj/item/clothing/suit/space/space_ninja))
-			var/obj/item/clothing/suit/space/space_ninja/ninja_suit = hit_human.wear_suit
-			if(ninja_suit.energyKatana == src)
-				returnToOwner(hit_human, 0, 1)
-		// [/CELADON-ADD]
+		var/mob/living/carbon/human/H = hit_atom
+		if(istype(H.wear_suit, /obj/item/clothing/suit/space/space_ninja))
+			var/obj/item/clothing/suit/space/space_ninja/SN = H.wear_suit
+			if(SN.energyKatana == src)
+				returnToOwner(H, 0, 1)
 				return
 
 	..()
@@ -91,10 +73,7 @@
 	if(user.put_in_hands(src))
 		msg = "Your Energy Katana teleports into your hand!"
 	else if(user.equip_to_slot_if_possible(src, ITEM_SLOT_BELT, 0, 1, 1))
-		// [CELADON-EDIT] - FIXES_ANTAG_NINJA
-		// msg = "Your Energy Katana teleports back to you, sheathing itself as it does so!</span>"	// ORIGINAL
-		msg = "Your Energy Katana teleports back to you, sheathing itself as it does so!"
-		// [/CELADON-EDIT]
+		msg = "Your Energy Katana teleports back to you, sheathing itself as it does so!</span>"
 	else
 		msg = "Your Energy Katana teleports to your location!"
 

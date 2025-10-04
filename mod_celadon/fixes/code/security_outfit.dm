@@ -1,11 +1,6 @@
-//Модуль для фикса сломанных одежд. Закатывание рукавов или же самой одежды.
-
+//Модуль для фикса сломанных оффовских security одежд.
 //Путь до файла - code/modules/clothing/under/jobs/security.dm
-//Путь до атласа - /icons/mob/clothing/under/security.dmi
-
-//Два предмета, что не удалось починить, но они сломаны:
-//	/obj/item/clothing/under/rank/security/brig_phys/nt
-//	/obj/item/clothing/under/rank/security/brig_phys/nt/skirt
+//Путь до атласа оффов - /icons/mob/clothing/under/security.dmi
 
 /obj/item/clothing/under/rank/security/officer/skirt
 	roll_sleeves = FALSE
@@ -18,6 +13,19 @@
 
 /obj/item/clothing/under/rank/security/detective/grey/skirt
 	roll_sleeves = FALSE
+
+//Эта вещь сломана полностью и абсолютно и не фиксится никак
+/obj/item/clothing/under/rank/security/brig_phys/nt
+	icon_state = "security_medic"
+	item_state = "rbrig_phys"
+	mob_overlay_state = "security_medic"
+
+//Тоже самое, что и выше
+/obj/item/clothing/under/rank/security/brig_phys/nt/skirt
+	icon_state = "security_medic_skirt"
+	item_state = "rbrig_phys_skirt"
+	roll_sleeves = FALSE
+	mob_overlay_state = "security_medic_skirt"
 
 /obj/item/clothing/under/rank/security/warden/skirt
 	roll_sleeves = FALSE
@@ -55,14 +63,8 @@
 /obj/item/clothing/under/rank/security/officer/camo
 	roll_sleeves = FALSE
 
-//Путь до файла - code/modules/clothing/under/miscellaneous.dm
-//Путь до спрайта - icons/mob/clothing/under/misc.dmi
+
+//Отдельный фикс конкретного предмета
 
 /obj/item/clothing/under/utility/skirt
 	roll_down = FALSE
-
-//Путь до файла - code/modules/clothing/under/syndicate.dm
-//Путь до атласа - icons/mob/clothing/under/syndicate.dmi
-
-/obj/item/clothing/under/syndicate/cybersun/officer
-	roll_sleeves = FALSE
