@@ -4,10 +4,6 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/inteq
 	box = /obj/item/storage/box/survival/inteq	// Даёт всем интекашкам брендовый сурвивал бокс
 
-/datum/outfit/job/inteq/cel/post_equip(mob/living/carbon/human/H)
-	. = ..()
-	get_inteq_g_acces(H)
-
 //MARK: Рекрут
 /datum/outfit/job/inteq/cel/assistant
 	name = "IQ - Recruit"
