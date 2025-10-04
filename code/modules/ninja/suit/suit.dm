@@ -171,33 +171,34 @@ Contents:
 	H.gloves.item_state = "s-ninjan"
 
 // [CELADON-REMOVE] - FIXES_ANTAG_NINJA - Вынесено в модуль
-// //This proc allows the suit to be taken off.
-// /obj/item/clothing/suit/space/space_ninja/proc/unlock_suit()
-// 	affecting = null
-// 	REMOVE_TRAIT(src, TRAIT_NODROP, NINJA_SUIT_TRAIT)
-// 	slowdown = 1
-// 	icon_state = "s-ninja"
-// 	if(n_hood)//Should be attached, might not be attached.
-// 		REMOVE_TRAIT(n_hood, TRAIT_NODROP, NINJA_SUIT_TRAIT)
-// 	if(n_shoes)
-// 		REMOVE_TRAIT(n_shoes, TRAIT_NODROP, NINJA_SUIT_TRAIT)
-// 		n_shoes.slowdown++
-// 	if(n_gloves)
-// 		n_gloves.icon_state = "s-ninja"
-// 		n_gloves.item_state = "s-ninja"
-// 		REMOVE_TRAIT(n_gloves, TRAIT_NODROP, NINJA_SUIT_TRAIT)
-// 		n_gloves.candrain = FALSE
-// 		n_gloves.draining = FALSE
+/* //This proc allows the suit to be taken off.
+/obj/item/clothing/suit/space/space_ninja/proc/unlock_suit()
+	affecting = null
+	REMOVE_TRAIT(src, TRAIT_NODROP, NINJA_SUIT_TRAIT)
+	slowdown = 1
+	icon_state = "s-ninja"
+	if(n_hood)//Should be attached, might not be attached.
+		REMOVE_TRAIT(n_hood, TRAIT_NODROP, NINJA_SUIT_TRAIT)
+	if(n_shoes)
+		REMOVE_TRAIT(n_shoes, TRAIT_NODROP, NINJA_SUIT_TRAIT)
+		n_shoes.slowdown++
+	if(n_gloves)
+		n_gloves.icon_state = "s-ninja"
+		n_gloves.item_state = "s-ninja"
+		REMOVE_TRAIT(n_gloves, TRAIT_NODROP, NINJA_SUIT_TRAIT)
+		n_gloves.candrain = FALSE
+		n_gloves.draining = FALSE
 
 
-// /obj/item/clothing/suit/space/space_ninja/examine(mob/user)
-// 	. = ..()
-// 	if(s_initialized)
-// 		if(user == affecting)
-// 			. += "All systems operational. Current energy capacity: <B>[DisplayEnergy(cell.charge)]</B>.\n"+\
-// 			"The CLOAK-tech device is <B>[stealth?"active":"inactive"]</B>.\n"+\
-// 			"There are <B>[s_bombs]</B> smoke bomb\s remaining.\n"+\
-// 			"There are <B>[a_boost]</B> adrenaline booster\s remaining."
+/obj/item/clothing/suit/space/space_ninja/examine(mob/user)
+	. = ..()
+	if(s_initialized)
+		if(user == affecting)
+			. += "All systems operational. Current energy capacity: <B>[DisplayEnergy(cell.charge)]</B>.\n"+\
+			"The CLOAK-tech device is <B>[stealth?"active":"inactive"]</B>.\n"+\
+			"There are <B>[s_bombs]</B> smoke bomb\s remaining.\n"+\
+			"There are <B>[a_boost]</B> adrenaline booster\s remaining."
+*/
 // [/CELADON-REMOVE]
 
 /obj/item/clothing/suit/space/space_ninja/ui_action_click(mob/user, action)

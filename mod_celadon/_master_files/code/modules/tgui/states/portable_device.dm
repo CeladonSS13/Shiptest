@@ -1,5 +1,6 @@
 /**
  * tgui state: portable_device_state
+ * Основано на примере кода из "code\modules\tgui\states\inventory.dm"
  *
  * Checks that the src_object is in the user's inventory
  * and that the user is conscious. Allows UI interaction
