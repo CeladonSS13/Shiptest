@@ -1030,6 +1030,26 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"aEk" = (
+/obj/structure/transit_tube/junction/flipped{
+	layer = 5;
+	dir = 4
+	},
+/obj/effect/turf_decal/borderfloorblack/corner{
+	pixel_y = 8;
+	pixel_x = -8
+	},
+/obj/structure/platform/industrial{
+	dir = 1;
+	pixel_y = -22
+	},
+/obj/structure/platform/industrial{
+	pixel_y = 18
+	},
+/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+	layer = 2.038
+	},
+/area/outpost/exterior)
 "aEQ" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
@@ -8597,16 +8617,11 @@
 	density = 0;
 	dir = 1
 	},
-/obj/structure/transit_tube_pod{
-	dir = 4;
-	layer = 3.9
-	},
-/obj/structure/transit_tube/station{
-	layer = 5;
-	dir = 1
-	},
 /obj/structure/sign/poster/bay/random{
 	pixel_y = -32
+	},
+/obj/structure/transit_tube/station/dispenser{
+	layer = 5
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/outpost/cargo)
@@ -15431,6 +15446,20 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
+"isG" = (
+/obj/structure/platform/industrial{
+	density = 0;
+	dir = 1
+	},
+/obj/structure/sign/poster/bay/random{
+	pixel_y = -32
+	},
+/obj/structure/transit_tube/station/dispenser/flipped{
+	dir = 1;
+	layer = 5
+	},
+/turf/open/floor/plasteel/elevatorshaft,
+/area/outpost/exterior)
 "isO" = (
 /obj/structure/transit_tube/curved{
 	dir = 1;
@@ -36765,15 +36794,12 @@
 	density = 0;
 	dir = 8
 	},
-/obj/structure/transit_tube/station{
-	layer = 5;
-	dir = 4
-	},
-/obj/structure/transit_tube_pod{
-	layer = 3.9
-	},
 /obj/structure/sign/poster/bay/random{
 	pixel_x = 32
+	},
+/obj/structure/transit_tube/station/dispenser/flipped{
+	layer = 5;
+	dir = 4
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/outpost/exterior)
@@ -37608,6 +37634,19 @@
 "uMO" = (
 /obj/structure/stone_tile/surrounding/cracked,
 /turf/open/floor/plating/asteroid/icerock/smooth,
+/area/outpost/exterior)
+"uMP" = (
+/obj/structure/platform/industrial{
+	density = 0;
+	dir = 1
+	},
+/obj/structure/sign/poster/bay/random{
+	pixel_y = -32
+	},
+/obj/structure/transit_tube/station/dispenser/flipped{
+	layer = 5
+	},
+/turf/open/floor/plasteel/elevatorshaft,
 /area/outpost/exterior)
 "uNe" = (
 /obj/structure/reagent_dispensers/fueltank,
@@ -43402,17 +43441,10 @@
 	density = 0;
 	dir = 1
 	},
-/obj/structure/transit_tube_pod{
-	dir = 4;
-	layer = 3.9
-	},
-/obj/structure/transit_tube/station{
-	layer = 5;
-	dir = 1
-	},
 /obj/structure/sign/poster/bay/random{
 	pixel_y = -32
 	},
+/obj/structure/transit_tube/station/dispenser/flipped,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/outpost/exterior)
 "xZI" = (
@@ -67525,7 +67557,7 @@ gok
 xxJ
 wJn
 gJf
-xZy
+isG
 tDD
 nDt
 qvM
@@ -70768,7 +70800,7 @@ jas
 gok
 xvR
 pfJ
-xZy
+uMP
 tDD
 mYt
 qvM
@@ -71330,7 +71362,7 @@ gok
 gok
 gok
 gok
-nkD
+aEk
 gok
 xnU
 gok

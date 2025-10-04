@@ -3213,9 +3213,7 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
 "ckd" = (
-/obj/machinery/recharge_station{
-	pixel_y = 22
-	},
+/obj/machinery/recharge_station,
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/crew/lounge/cab_1)
 "ckm" = (
@@ -18386,6 +18384,10 @@
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/outpost/hallway/central)
+"lXF" = (
+/obj/structure/falsewall/reinforced,
+/turf/open/space/basic,
+/area/outpost/crew/lounge/cab_1)
 "lXT" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -61910,7 +61912,7 @@ blm
 kmM
 pkB
 blm
-blm
+lXF
 blm
 cGD
 cGD
