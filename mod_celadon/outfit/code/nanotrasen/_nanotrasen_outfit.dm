@@ -25,7 +25,6 @@
 
 // Даёт всем НТшкам брендовый сурвивал бокс
 /datum/outfit/job/nanotrasen/cel
-	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/nanotrasen
 
 // Captain
@@ -503,11 +502,7 @@
 
 /datum/outfit/job/nanotrasen/cel/assistant/empty
 	name = "NT - Assistant (Naked)"
-	jobtype = /datum/job/assistant
-	job_icon = "assistant"
 
-	uniform = /obj/item/clothing/under/nanotrasen
-	shoes = /obj/item/clothing/shoes/sneakers/black
 	belt = null
 
 /// MARK: ЕРТ коммандер
