@@ -797,6 +797,10 @@
 	pixel_x = 9
 	},
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/bot/medbot/catmedbot{
+	anchored = 1;
+	name = "\improper Niesa Medicat"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
 "aEA" = (
@@ -915,8 +919,8 @@
 /obj/structure/sign/poster/contraband/syndicate_recruitment{
 	pixel_x = 32
 	},
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/spawner/random/vending/cola,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "aIq" = (
@@ -4243,7 +4247,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/turf/open/floor/plating/rust,
+/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "cQr" = (
 /obj/effect/turf_decal/trimline/opaque/beige/filled/warning{
@@ -8017,10 +8021,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/mob/living/simple_animal/bot/medbot/catmedbot{
-	anchored = 1;
-	name = "\improper Niesa Medicat"
-	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "flU" = (
@@ -10501,7 +10501,7 @@
 /area/outpost/fraction/nanotrasen)
 "gSq" = (
 /obj/machinery/door/airlock/multi_tile/public/glass,
-/turf/open/floor/plating,
+/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "gSz" = (
 /turf/open/floor/engine/air,
