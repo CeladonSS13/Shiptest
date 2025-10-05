@@ -244,8 +244,10 @@
 
 /obj/item/healthanalyzer/afterattack(mob/living/M, mob/living/carbon/human/user, adjacent, params)
 	. = ..()
-	if(adjacent || !istype(M))
-		return ..()
+	if(adjacent || !ranged_scan_distance)
+		return .
+	if(!istype(M))
+		return
 	if(can_see(user, M, ranged_scan_distance))
 		user.changeNext_move(CLICK_CD_RANGE)
 		M.Beam(user, icon_state = "medbeam", time = 5, beam_color = "#9ce")
