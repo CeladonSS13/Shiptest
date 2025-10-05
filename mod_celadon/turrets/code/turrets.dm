@@ -241,3 +241,19 @@
 	faction = list(FACTION_PIRATES, "Turret")
 	icon_state = "syndie_off"
 	base_icon_state = "syndie"
+
+// EVENT
+/obj/machinery/porta_turret/ruin/ramzi/grenade_40mm
+	name = "mounted grenade launcher (40mm)"
+	desc = "Syndicate 40mm grenade launcher defense turret. If you've had this much time to look at it, you're probably already dead."
+	icon = 'mod_celadon/_storage_icons/icons/structures/turrets.dmi'
+	icon_state = "syndie_grenade"
+	base_icon_state = "syndie_grenade"
+	stun_projectile = /obj/projectile/bullet/a40mm
+	lethal_projectile = /obj/projectile/bullet/a40mm
+	lethal_projectile_sound = 'sound/weapons/gun/general/rocket_launch.ogg'
+	stun_projectile_sound = 'sound/weapons/gun/general/rocket_launch.ogg'
+	scan_range = 14
+	shot_delay = 30
+	max_integrity = 500
+	integrity_failure = 0.7

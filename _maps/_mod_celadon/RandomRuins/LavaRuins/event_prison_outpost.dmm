@@ -466,11 +466,11 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "gH" = (
-/obj/machinery/porta_turret/syndicate/no_access/grenade_40mm{
+/obj/machinery/porta_turret/ruin/ramzi/grenade_40mm{
 	dir = 8;
-	pixel_y = 5;
 	faction = list("playerSolFedERT","turret")
 	},
+/obj/machinery/light/floor/hangar,
 /turf/open/floor/plasteel/heavymetal/var5,
 /area/centcom/prison)
 "gJ" = (
@@ -550,9 +550,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "ie" = (
-/obj/structure/fence{
-	dir = 1
-	},
+/obj/machinery/light/floor/hangar,
 /turf/open/floor/plating/asteroid/basalt/lava,
 /area/ruin/lavaland)
 "ij" = (
@@ -2229,12 +2227,6 @@
 	},
 /obj/effect/turf_decal/trimline/transparent/syndiered/corner,
 /turf/open/floor/plasteel/heavymetal/var4,
-/area/ruin/lavaland)
-"Fy" = (
-/obj/structure/fence/door{
-	dir = 4
-	},
-/turf/open/floor/plating/asteroid/basalt/lava,
 /area/ruin/lavaland)
 "FA" = (
 /obj/structure/table,
@@ -9859,10 +9851,10 @@ eQ
 eQ
 RM
 ww
+ie
 ww
 ww
-ww
-ww
+ie
 ww
 XZ
 ww
@@ -10011,10 +10003,10 @@ eQ
 eQ
 RM
 ww
+ie
 ww
 ww
-ww
-ww
+ie
 ww
 RM
 ww
@@ -10085,14 +10077,14 @@ eQ
 eQ
 eQ
 eQ
-RM
+YP
 ww
 ww
 ww
 ww
 ww
 ww
-RM
+YP
 eQ
 eQ
 eQ
@@ -10161,14 +10153,14 @@ ww
 eQ
 eQ
 eQ
-RM
 ww
 ww
 ww
 ww
 ww
 ww
-RM
+ww
+ww
 eQ
 eQ
 eQ
@@ -10237,14 +10229,14 @@ pY
 ww
 eQ
 eQ
-RM
 ww
 ww
 ww
 ww
 ww
 ww
-RM
+ww
+ww
 eQ
 eQ
 eQ
@@ -10313,14 +10305,14 @@ pY
 pY
 ww
 eQ
-RM
 ww
 ww
 ww
 ww
 ww
 ww
-RM
+ww
+ww
 eQ
 eQ
 eQ
@@ -10389,14 +10381,14 @@ pY
 pY
 ww
 ww
-RM
-gH
-ww
-ww
-ww
 ww
 gH
-RM
+ww
+ww
+ww
+ww
+gH
+ww
 ww
 eQ
 ww
@@ -10465,14 +10457,14 @@ pY
 pY
 pY
 pY
-YP
-ie
-ie
-Fy
-WR
-ie
-ie
-YP
+ww
+ww
+ww
+ww
+ww
+ww
+ww
+ww
 ww
 pY
 pY
