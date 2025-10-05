@@ -1,3 +1,23 @@
+/obj/item/seeds/dote_berries
+	icon = 'mod_celadon/_storage_icons/icons/obj/hydroponics/seeds.dmi'
+	icon_state = "seed-dote"
+
+/obj/item/seeds/dotu_fime
+	icon = 'mod_celadon/_storage_icons/icons/obj/hydroponics/seeds.dmi'
+	icon_state = "seed-dotu"
+
+/obj/item/seeds/fara_li
+	icon = 'mod_celadon/_storage_icons/icons/obj/hydroponics/seeds.dmi'
+	icon_state = "seed-farali"
+
+/obj/item/seeds/refa_li
+	icon = 'mod_celadon/_storage_icons/icons/obj/hydroponics/seeds.dmi'
+	icon_state = "seed-refali"
+
+/obj/item/seeds/sososi
+	icon = 'mod_celadon/_storage_icons/icons/obj/hydroponics/seeds.dmi'
+	icon_state = "seed-sososi"
+
 /obj/item/seeds/tea/mint
 	name = "mint seed pack"
 	icon = 'mod_celadon/_storage_icons/icons/obj/hydroponics/seeds.dmi'

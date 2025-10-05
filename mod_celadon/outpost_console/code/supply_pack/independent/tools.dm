@@ -3,7 +3,7 @@
 	crate_type = /obj/structure/closet/crate/engineering
 
 /*
-		Actual tools
+	MARK: Actual tools
 */
 
 /datum/supply_pack/faction/independent/tools/toolbox
@@ -127,6 +127,13 @@
 	cost = 2500
 	contains = list(/obj/item/gun/energy/plasmacutter)
 	crate_name = "plasmacutter crate"
+
+/datum/supply_pack/faction/independent/tools/rcl
+	name = "Rapid cable layer Crate"
+	desc = "Contains a rapid cable layer."
+	cost = 600
+	contains = list(/obj/item/rcl)
+	crate_name = "rapid cable layer crate"
 
 /*
 	MARK: Liquid tanks
