@@ -77,54 +77,20 @@
 	icon_state = "maid"
 	item_state = "maid"
 
-/obj/item/clothing/under/costume/yukata
-	name = "black yukata"
-	desc = "A comfortable black cotton yukata inspired by traditional designs, perfect for a non-formal setting."
+/obj/item/clothing/under/costume/kimono_sigmar
+	name = "short-sleeved kimono"
+	desc = "A traditional ancient Earth Japanese Kimono. It's white with a gold trim and burnished gold ivy pattern."
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/costume.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/costume.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/under/in_hands/costume_left.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/under/in_hands/costume_right.dmi'
-	icon_state = "yukata1"
-	item_state = "yukata1"
-	body_parts_covered = CHEST | GROIN | ARMS
-	roll_sleeves = FALSE
-	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON
+	icon_state = "kimono_gold"
+	item_state = "kimono_gold"
 
-/obj/item/clothing/under/costume/yukata/green
-	name = "green yukata"
-	desc = "A comfortable green cotton yukata inspired by traditional designs, perfect for a non-formal setting."
-	icon_state = "yukata2"
-	item_state = "yukata2"
-
-/obj/item/clothing/under/costume/yukata/white
-	name = "white yukata"
-	desc = "A comfortable white cotton yukata inspired by traditional designs, perfect for a non-formal setting."
-	icon_state = "yukata3"
-	item_state = "yukata3"
-
-/obj/item/clothing/under/costume/kimono
-	name = "black kimono"
-	desc = "A luxurious black silk kimono with traditional flair, ideal for elegant festive occasions."
+/obj/item/clothing/under/costume/maid_dragon
+	name = "dragon maid uniform"
+	desc = "A uniform for a kitchen maid, stylized to have draconic detailing."
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/costume.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/costume.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/under/in_hands/costume_left.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/under/in_hands/costume_right.dmi'
-	icon_state = "kimono1"
-	item_state = "kimono1"
-	body_parts_covered = CHEST | GROIN | ARMS
-	roll_sleeves = FALSE
+	icon_state = "dragon_maid"
+	item_state = "dragon_maid"
+	body_parts_covered = CHEST | GROIN
 	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON
-
-/obj/item/clothing/under/costume/kimono/red
-	name = "red kimono"
-	desc = "A luxurious red silk kimono with traditional flair, ideal for elegant festive occasions."
-	icon_state = "kimono2"
-	item_state = "kimono2"
-
-/obj/item/clothing/under/costume/kimono/purple
-	name = "purple kimono"
-	desc = "A luxurious purple silk kimono with traditional flair, ideal for elegant festive occasions."
-	icon_state = "kimono3"
-	item_state = "kimono3"
-
-

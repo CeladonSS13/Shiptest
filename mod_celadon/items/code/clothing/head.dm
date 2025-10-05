@@ -87,6 +87,7 @@
 	name = "Navy blue cap"
 	desc = "A navy blue cap."
 	icon_state = "navyblue_cap"
+	item_state = "navyblue_cap"
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/hats.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/overlay/head.dmi'
 
@@ -94,6 +95,7 @@
 	name = "Navy blue beret"
 	desc = "A navy blue beret."
 	icon_state = "navyblue_beret"
+	item_state = "navyblue_beret"
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/hats.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/overlay/head.dmi'
 

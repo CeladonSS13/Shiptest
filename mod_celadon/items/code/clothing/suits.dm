@@ -92,7 +92,7 @@
 /obj/item/clothing/suit/yakuza
 	name = "tojo clan jacket"
 	desc = "The jacket of a mad dog."
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suits.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
 	icon_state = "MajimaJacket"
 	item_state = "MajimaJacket"
@@ -101,7 +101,7 @@
 /obj/item/clothing/suit/dutch
 	name = "dutch's jacket"
 	desc = "For those long nights on the beach in Tahiti."
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suits.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
 	icon_state = "DutchJacket"
 	item_state = "DutchJacket"
@@ -110,7 +110,7 @@
 /obj/item/clothing/suit/armadyne
 	name = "Red Coat"
 	desc = "A greatcoat enhanced with a special style for those with a commanding presence."
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suits.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
 	icon_state = "armadyne_trench"
 	item_state = "armadyne_trench"
@@ -118,7 +118,7 @@
 /obj/item/clothing/suit/toggle/blackhs
 	name = "black replica greatcoat"
 	desc = "A replica HoS greatcoat, enhanced with a special style for those with a commanding presence."
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suits.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
 	icon_state = "blackhs"
 	item_state = "blackhs"
@@ -140,3 +140,149 @@
 	flags_inv = HIDEJUMPSUIT
 
 // Продолжение тут code/modules/jobs/job_types/chaplain/chaplain_costumes.dm в арке
+
+/obj/item/clothing/suit/blutigen_kimono
+	name = "Blutigen kimono"
+	desc = "For the eyes bestowed upon this shall seek adventure..."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/costume.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/costume.dmi'
+	icon_state = "blutigen_kimono"
+	item_state = "blutigen_kimono"
+	body_parts_covered = CHEST | GROIN | ARMS
+	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON
+
+/obj/item/clothing/suit/yukata
+	name = "black yukata"
+	desc = "A comfortable black cotton yukata inspired by traditional designs, perfect for a non-formal setting."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/costume.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/costume.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/under/in_hands/costume_left.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/under/in_hands/costume_right.dmi'
+	icon_state = "yukata1"
+	item_state = "yukata1"
+	body_parts_covered = CHEST | GROIN | ARMS
+	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON
+
+/obj/item/clothing/suit/yukata/green
+	name = "green yukata"
+	desc = "A comfortable green cotton yukata inspired by traditional designs, perfect for a non-formal setting."
+	icon_state = "yukata2"
+	item_state = "yukata2"
+
+/obj/item/clothing/suit/yukata/white
+	name = "white yukata"
+	desc = "A comfortable white cotton yukata inspired by traditional designs, perfect for a non-formal setting."
+	icon_state = "yukata3"
+	item_state = "yukata3"
+
+/obj/item/clothing/suit/kimono
+	name = "black kimono"
+	desc = "A luxurious black silk kimono with traditional flair, ideal for elegant festive occasions."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/costume.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/costume.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/under/in_hands/costume_left.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/under/in_hands/costume_right.dmi'
+	icon_state = "kimono1"
+	item_state = "kimono1"
+	body_parts_covered = CHEST | GROIN | ARMS
+	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON
+
+/obj/item/clothing/suit/kimono/red
+	name = "red kimono"
+	desc = "A luxurious red silk kimono with traditional flair, ideal for elegant festive occasions."
+	icon_state = "kimono2"
+	item_state = "kimono2"
+
+/obj/item/clothing/suit/kimono/purple
+	name = "purple kimono"
+	desc = "A luxurious purple silk kimono with traditional flair, ideal for elegant festive occasions."
+	icon_state = "kimono3"
+	item_state = "kimono3"
+
+/obj/item/clothing/suit/jacket/cherno
+	name = "silver-buttoned coat"
+	desc = "A comfy-looking blue coat. It looks a bit fancy, with shiny silver buttons and a few belts!"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
+	icon_state = "chernocoat"
+	item_state = "chernocoat"
+	body_parts_covered = CHEST | GROIN | ARMS
+	cold_protection = CHEST | GROIN | ARMS
+	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+
+/obj/item/clothing/suit/jacket/brasspriest
+	name = "brasspriest coat"
+	desc = "A reddish coat with brass-clad parts embed into said coat. You can hear the faint noise of some cogs turning from time to time inside."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
+	icon_state = "brasspriest"
+	item_state = "brasspriest"
+	body_parts_covered = CHEST | GROIN | LEGS | ARMS
+	cold_protection = CHEST | GROIN | LEGS | ARMS
+
+/obj/item/clothing/suit/razurathcoat
+	name = "Golden Nanotrasen Officer Coat"
+	desc = "A fancy Nanotrasen officer coat. Now darker, golder, and cooler than ever!"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
+	icon_state = "razurath_coat"
+	item_state = "razurath_coat"
+
+/obj/item/clothing/suit/jacket/bomber_donor
+	name = "old hoodie"
+	desc = "A somewhat well worn jacket, appears to be way too big considering who owns it."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
+	icon_state = "bomber"
+	item_state = "bomber"
+
+/obj/item/clothing/suit/toggle/labcoat/tenrai
+	name = "Tenrai labcoat"
+	desc = "A labcoat crafted from a variety of pristine materials, sewn together with a frightening amount of skill. The fabric is aery, smooth as silk, and exceptionally pleasant to the touch. The golden stripes are visible in the dark, working as a beacon to the injured. A small label on the inside of it reads \"Tenrai Kitsunes Supremacy\"."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
+	base_icon_state = "tenraicoat"
+	icon_state = "tenraicoat"
+	item_state = "tenraicoat"
+	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON
+
+/obj/item/clothing/suit/toggle/labcoat/tenrai/worn_overlays(mutable_appearance/standing, isinhands, icon_file)
+	. = ..()
+	if(!isinhands)
+		. += emissive_appearance(icon_file, "[icon_state]-emissive", src, alpha = src.alpha)
+
+/obj/item/clothing/suit/jacket/gorlex_harness
+	name = "engine technician harness"
+	desc = "A blood-red engineering technician harness. You can't seem to figure out a use to it, but it seems to seal magnetically in some places."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
+	icon_state = "gorlexharness"
+	item_state = "gorlexharness"
+
+// /obj/item/clothing/head/hooded/occult
+// 	name = "hood"
+// 	desc = "Certainly makes you look more ominous."
+// icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
+// mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
+// 	icon_state = "occulthood"
+// 	item_state = "occulthood"
+// 	supports_variations = NONE
+
+/obj/item/clothing/suit/occult
+	name = "occult collector's coat"
+	desc = "A big, heavy coat lined with leather and ivory cloth, adorned with a hood. It looks dusty."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
+	icon_state = "occultcoat"
+	item_state = "occultcoat"
+	// hoodtype = /obj/item/clothing/head/hooded/occult
+	supports_variations = NONE
+
+/obj/item/clothing/suit/scraparmour
+	name = "scrap armour"
+	desc = "A shoddily crafted piece of armour. It provides no benefit apart from being clunky."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
+	icon_state = "scraparmor"
+	item_state = "scraparmor"
+	body_parts_covered = CHEST

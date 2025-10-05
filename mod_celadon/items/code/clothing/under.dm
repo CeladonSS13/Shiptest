@@ -157,7 +157,7 @@
 	name = "feathered serenity suit"
 	desc = "A meticulously handcrafted suit that is lined on the inside with feathers and down."
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suits.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/suit/in_hands/padded_left.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/suit/in_hands/padded_right.dmi'
 	icon_state = "paddedunder"
@@ -170,7 +170,7 @@
 	icon_state = "paddeddress"
 	item_state = "paddeddress"
 
-// MARK: SKIRTS
+// MARK: SWIMMING SKIRTS
 /obj/item/clothing/under/dress/skirt/swimming
 	name = "red bra and striped skirt"
 	desc = "A red side-slit skirt with stripes! Comes with a matching two-tone bra."
@@ -195,3 +195,27 @@
 	desc = "A black side-slit skirt with a golden-yellow trim. Screams 'affluent goth'. Comes with a funky-looking matching bra."
 	icon_state = "black_skirt"
 	item_state = "black_skirt"
+
+/obj/item/clothing/under/dress/skirt/swimming/jute
+	name = "close brown skirt"
+	desc = "A brown side-slit skirt with a yellow trim."
+	icon_state = "jute"
+	item_state = "jute"
+
+/obj/item/clothing/under/dress/skirt/swimming/bikini
+	name = "starlight singer bikini"
+	desc = "This is bikini"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/swimming_skirts.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/swimming_skirts.dmi'
+	icon_state = "bikini"
+	item_state = "bikini"
+	body_parts_covered = CHEST | GROIN
+
+/obj/item/clothing/under/occult
+	name = "occult collector's outfit"
+	desc = "A set of clothes fit for someone dapper that isn't afraid of getting dirty."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/under.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/under.dmi'
+	icon_state = "occultoutfit"
+	item_state = "occultoutfit"
+	supports_variations = NONE
