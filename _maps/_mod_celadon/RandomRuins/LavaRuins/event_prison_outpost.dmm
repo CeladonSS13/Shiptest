@@ -175,8 +175,10 @@
 /turf/open/floor/plating/asteroid/basalt/lava,
 /area/ruin/lavaland)
 "ck" = (
-/obj/effect/turf_decal/corner/opaque/solgovblue/border,
-/turf/open/floor/plasteel/white,
+/obj/effect/landmark/outpost/subshuttle_dock{
+	subship_template = /datum/map_template/shuttle/subshuttles/pebble
+	},
+/turf/open/floor/plating,
 /area/ruin/lavaland)
 "cp" = (
 /obj/effect/turf_decal/techfloor/orange{
@@ -200,6 +202,13 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/plasteel/tech,
+/area/ruin/lavaland)
+"cB" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/machinery/light/directional/west,
+/turf/open/floor/plasteel/dark,
 /area/ruin/lavaland)
 "cE" = (
 /obj/effect/decal/cleanable/dirt,
@@ -245,9 +254,8 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "cU" = (
-/obj/machinery/light/small/directional/east,
-/mob/living/basic/mouse/brown,
-/turf/open/floor/plasteel/tech,
+/obj/effect/turf_decal/number/one,
+/turf/open/floor/plating,
 /area/ruin/lavaland)
 "cW" = (
 /obj/effect/turf_decal/industrial/warning/corner,
@@ -290,14 +298,6 @@
 /area/ruin/lavaland)
 "dk" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/tech,
-/area/ruin/lavaland)
-"do" = (
-/obj/structure/toilet{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/mob/living/basic/mouse/brown,
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "dx" = (
@@ -358,8 +358,9 @@
 /turf/open/lava/smooth/lava_land_surface,
 /area/overmap_encounter/planetoid/lava/explored)
 "eU" = (
-/obj/item/assembly/mousetrap,
-/turf/open/floor/plasteel,
+/obj/structure/rack,
+/obj/item/powersink,
+/turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "fc" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/visible/layer2{
@@ -368,17 +369,18 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/heavymetal/var2,
 /area/ruin/lavaland)
+"fd" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/machinery/light/directional/east,
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland)
 "fj" = (
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
-/turf/open/floor/plasteel/tech,
-/area/ruin/lavaland)
-"fn" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/mob/living/basic/mouse/brown,
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "fo" = (
@@ -446,12 +448,10 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland)
 "gt" = (
-/obj/machinery/light/small/directional/east,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/mob/living/basic/mouse/brown,
-/turf/open/floor/plasteel/tech,
+/obj/structure/chair/plastic{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
 /area/ruin/lavaland)
 "gu" = (
 /obj/effect/turf_decal/industrial/warning{
@@ -496,6 +496,10 @@
 /obj/machinery/door/firedoor/heavy,
 /turf/open/floor/plasteel/heavymetal/var2,
 /area/ruin/lavaland)
+"hj" = (
+/obj/item/food/meat/slab/mouse,
+/turf/open/floor/plating/asteroid/basalt/lava,
+/area/ruin/lavaland)
 "hF" = (
 /obj/effect/turf_decal/techfloor/hole{
 	pixel_y = 12
@@ -538,12 +542,6 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/lavaland)
-"hY" = (
-/obj/item/clothing/mask/pig/cursed{
-	desc = "Проклятье 220!"
-	},
-/turf/open/floor/plating/asteroid/basalt/lava,
 /area/ruin/lavaland)
 "ia" = (
 /obj/effect/turf_decal/trimline/transparent/solgovgold/warning{
@@ -628,11 +626,6 @@
 	pixel_y = 28
 	},
 /turf/open/floor/plasteel/showroomfloor,
-/area/ruin/lavaland)
-"iR" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/basic/mouse/brown,
-/turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "iS" = (
 /obj/machinery/light/directional/west,
@@ -782,11 +775,12 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland)
 "lu" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4
-	},
-/obj/machinery/light/directional/west,
-/turf/open/floor/plasteel/dark,
+/obj/machinery/light/small/directional/east,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/basic/mouse/brown,
+/turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "lv" = (
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
@@ -862,6 +856,10 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/white,
+/area/ruin/lavaland)
+"mJ" = (
+/obj/effect/turf_decal/number/eight,
+/turf/open/floor/plating,
 /area/ruin/lavaland)
 "mN" = (
 /obj/machinery/light/small/directional/south,
@@ -1040,12 +1038,6 @@
 "om" = (
 /turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ruin/lavaland)
-"op" = (
-/obj/structure/chair/plastic{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/ruin/lavaland)
 "os" = (
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
 	dir = 8
@@ -1088,8 +1080,8 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "ph" = (
-/mob/living/basic/mouse/brown,
-/turf/open/floor/plasteel/tech,
+/obj/item/reagent_scanner,
+/turf/open/floor/plating/asteroid/basalt/lava,
 /area/ruin/lavaland)
 "pq" = (
 /obj/structure/sign/poster/official/foam_force_ad,
@@ -1176,6 +1168,10 @@
 	},
 /obj/machinery/door/firedoor/heavy,
 /turf/open/floor/plasteel/heavymetal/var2,
+/area/ruin/lavaland)
+"qy" = (
+/mob/living/basic/mouse/brown,
+/turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "qB" = (
 /obj/machinery/atmospherics/components/binary/pump/on/layer2,
@@ -1339,8 +1335,8 @@
 /turf/open/floor/noslip,
 /area/ruin/lavaland)
 "tZ" = (
-/obj/item/food/meat/slab/mouse,
-/turf/open/floor/plating/asteroid/basalt/lava,
+/obj/effect/turf_decal/number/nine,
+/turf/open/floor/plating,
 /area/ruin/lavaland)
 "um" = (
 /obj/structure/table,
@@ -1459,11 +1455,13 @@
 /turf/open/floor/plasteel,
 /area/ruin/lavaland)
 "wn" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 8
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer4{
+	dir = 10
 	},
-/obj/machinery/light/directional/east,
-/turf/open/floor/plasteel/dark,
+/obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
+	dir = 10
+	},
+/turf/open/floor/plasteel/heavymetal/var2,
 /area/ruin/lavaland)
 "wr" = (
 /obj/effect/turf_decal/solgov/all,
@@ -1676,10 +1674,12 @@
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland)
 "yu" = (
-/obj/effect/landmark/outpost/subshuttle_dock{
-	subship_template = /datum/map_template/shuttle/subshuttles/pebble
+/obj/structure/toilet{
+	dir = 1
 	},
-/turf/open/floor/plating,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/basic/mouse/brown,
+/turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "yy" = (
 /obj/machinery/mineral/labor_claim_console{
@@ -1954,11 +1954,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
-"Cm" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/basic/mouse/brown,
-/turf/open/floor/plasteel/tech,
-/area/ruin/lavaland)
 "Co" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
@@ -1976,10 +1971,6 @@
 /obj/item/pickaxe/rusted,
 /obj/item/clothing/head/hardhat/nanotrasen,
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/lavaland)
-"CD" = (
-/obj/item/reagent_scanner,
-/turf/open/floor/plating/asteroid/basalt/lava,
 /area/ruin/lavaland)
 "CE" = (
 /obj/machinery/light/directional/west,
@@ -2100,6 +2091,15 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/firedoor/heavy,
 /obj/structure/grille,
+/turf/open/floor/plasteel/heavymetal/var2,
+/area/ruin/lavaland)
+"Ej" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer4{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
+	dir = 9
+	},
 /turf/open/floor/plasteel/heavymetal/var2,
 /area/ruin/lavaland)
 "Er" = (
@@ -2272,6 +2272,12 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland)
+"FO" = (
+/obj/machinery/light/small/directional/east,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/basic/mouse/brown,
+/turf/open/floor/plasteel/tech,
+/area/ruin/lavaland)
 "FU" = (
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
 	dir = 8
@@ -2344,12 +2350,6 @@
 	},
 /turf/open/floor/plasteel/heavymetal/var2,
 /area/ruin/lavaland)
-"GW" = (
-/obj/machinery/light/small/directional/east,
-/obj/effect/decal/cleanable/dirt,
-/mob/living/basic/mouse/brown,
-/turf/open/floor/plasteel/tech,
-/area/ruin/lavaland)
 "Hd" = (
 /obj/structure/table/reinforced,
 /obj/machinery/jukebox/boombox{
@@ -2367,10 +2367,6 @@
 	pixel_y = 24
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/lavaland)
-"Hg" = (
-/obj/effect/turf_decal/number/four,
-/turf/open/floor/plating,
 /area/ruin/lavaland)
 "Hh" = (
 /obj/effect/turf_decal/trimline/transparent/vired/warning{
@@ -2656,13 +2652,8 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "Ky" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer4{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
-	dir = 10
-	},
-/turf/open/floor/plasteel/heavymetal/var2,
+/obj/item/assembly/mousetrap,
+/turf/open/floor/plasteel,
 /area/ruin/lavaland)
 "KE" = (
 /obj/effect/turf_decal/trimline/transparent/vired/warning{
@@ -2736,6 +2727,12 @@
 /obj/effect/turf_decal/techfloor/hole{
 	pixel_y = 12
 	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/lavaland)
+"Lz" = (
+/obj/structure/rack,
+/obj/item/plunger,
+/obj/item/pushbroom,
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "LA" = (
@@ -3008,6 +3005,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland)
+"OG" = (
+/obj/item/clothing/mask/pig/cursed{
+	desc = "Проклятье 220!"
+	},
+/turf/open/floor/plating/asteroid/basalt/lava,
+/area/ruin/lavaland)
 "OJ" = (
 /obj/machinery/light/directional/south,
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
@@ -3017,6 +3020,11 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
+/area/ruin/lavaland)
+"OL" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/basic/mouse/brown,
+/turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "OU" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer4,
@@ -3064,25 +3072,10 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
-"PC" = (
-/obj/structure/rack,
-/obj/item/plunger,
-/obj/item/pushbroom,
-/turf/open/floor/plasteel/tech,
-/area/ruin/lavaland)
 "PF" = (
 /obj/structure/window/reinforced/fulltile/shuttle,
 /obj/structure/grille,
 /turf/open/floor/noslip,
-/area/ruin/lavaland)
-"PI" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer4{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
-	dir = 9
-	},
-/turf/open/floor/plasteel/heavymetal/var2,
 /area/ruin/lavaland)
 "PK" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3141,6 +3134,12 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
+"QJ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/basic/mouse/brown,
+/turf/open/floor/plasteel/tech,
+/area/ruin/lavaland)
 "QM" = (
 /obj/effect/turf_decal/trimline/transparent/vired/corner{
 	dir = 8
@@ -3150,10 +3149,6 @@
 	},
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/plasteel/tech,
-/area/ruin/lavaland)
-"QO" = (
-/obj/effect/turf_decal/number/one,
-/turf/open/floor/plating,
 /area/ruin/lavaland)
 "Rj" = (
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
@@ -3172,8 +3167,9 @@
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland)
 "Rn" = (
-/obj/effect/turf_decal/number/nine,
-/turf/open/floor/plating,
+/obj/machinery/light/small/directional/east,
+/mob/living/basic/mouse/brown,
+/turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "Ro" = (
 /obj/machinery/light/small/directional/east,
@@ -3291,6 +3287,10 @@
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland)
 "Th" = (
+/obj/item/mine/proximity/explosive/live{
+	opacity = 1;
+	mouse_opacity = 0
+	},
 /obj/item/clothing/suit/space/hardsuit/ert/clown{
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 35, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
 	},
@@ -3352,6 +3352,11 @@
 	dir = 9
 	},
 /turf/open/floor/plasteel/dark,
+/area/ruin/lavaland)
+"Uh" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/basic/mouse/brown,
+/turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "Ur" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3525,6 +3530,10 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
+"Wn" = (
+/obj/effect/turf_decal/corner/opaque/solgovblue/border,
+/turf/open/floor/plasteel/white,
+/area/ruin/lavaland)
 "Wo" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/visible/layer2{
 	dir = 4
@@ -3585,11 +3594,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland)
-"XF" = (
-/obj/structure/rack,
-/obj/item/powersink,
-/turf/open/floor/plasteel/tech,
-/area/ruin/lavaland)
 "XH" = (
 /obj/structure/toilet,
 /obj/effect/decal/cleanable/dirt,
@@ -3603,6 +3607,10 @@
 /area/ruin/lavaland)
 "XK" = (
 /turf/open/floor/plasteel/dark,
+/area/ruin/lavaland)
+"XR" = (
+/obj/effect/turf_decal/number/four,
+/turf/open/floor/plating,
 /area/ruin/lavaland)
 "XZ" = (
 /obj/structure/fence/door,
@@ -3671,10 +3679,6 @@
 "YU" = (
 /obj/effect/turf_decal/solgov/all/top,
 /turf/open/floor/plasteel/white,
-/area/ruin/lavaland)
-"Za" = (
-/obj/effect/turf_decal/number/eight,
-/turf/open/floor/plating,
 /area/ruin/lavaland)
 "Ze" = (
 /obj/effect/decal/cleanable/dirt,
@@ -4161,10 +4165,10 @@ Jz
 Jz
 Jz
 Jz
-eU
-eU
-eU
-eU
+Ky
+Ky
+Ky
+Ky
 Jz
 Jz
 Jz
@@ -4234,7 +4238,7 @@ kg
 kg
 kg
 Jz
-eU
+Ky
 Ll
 Ll
 Ay
@@ -4243,7 +4247,7 @@ Ll
 Ay
 Ll
 Ll
-eU
+Ky
 Jz
 HZ
 yV
@@ -4282,7 +4286,7 @@ kg
 kg
 kg
 kg
-kg
+eQ
 kg
 kg
 Th
@@ -4436,9 +4440,9 @@ UZ
 eQ
 eQ
 eQ
-ww
-ww
-ww
+eQ
+eQ
+eQ
 eQ
 kg
 eQ
@@ -4690,7 +4694,7 @@ kg
 kg
 kg
 Jz
-eU
+Ky
 lR
 lR
 FU
@@ -4699,7 +4703,7 @@ lR
 lc
 lR
 lR
-eU
+Ky
 Jz
 oh
 oh
@@ -4937,7 +4941,7 @@ iU
 Nt
 QF
 dx
-Cm
+OL
 dk
 To
 Jz
@@ -5303,7 +5307,7 @@ PK
 dx
 fE
 Ze
-do
+yu
 Jz
 kg
 kg
@@ -5394,7 +5398,7 @@ gk
 PK
 dx
 fE
-iR
+Uh
 yl
 Jz
 kg
@@ -5529,7 +5533,7 @@ gT
 gk
 PK
 dx
-ph
+qy
 dk
 wE
 Jz
@@ -6054,7 +6058,7 @@ kg
 kg
 Jz
 aT
-gt
+lu
 gT
 dx
 fE
@@ -6070,7 +6074,7 @@ kg
 kg
 Jz
 vP
-fn
+QJ
 um
 Jz
 gT
@@ -6154,7 +6158,7 @@ gk
 Ck
 Jz
 jm
-cU
+Rn
 vP
 Jz
 kg
@@ -6382,7 +6386,7 @@ pf
 fE
 Jz
 rj
-GW
+FO
 vP
 Jz
 kg
@@ -6510,7 +6514,7 @@ kg
 kg
 Jz
 fR
-gt
+lu
 fE
 dx
 fE
@@ -6723,7 +6727,7 @@ ww
 ww
 ww
 ww
-CD
+ph
 kg
 kg
 kg
@@ -6973,7 +6977,7 @@ Fx
 nh
 uz
 xT
-op
+gt
 OJ
 Jz
 Jz
@@ -7039,7 +7043,7 @@ ww
 bb
 Or
 da
-ck
+Wn
 Jz
 Jz
 Jz
@@ -7115,7 +7119,7 @@ ww
 bb
 Or
 da
-ck
+Wn
 NP
 XK
 XK
@@ -7245,7 +7249,7 @@ kg
 kg
 kg
 kg
-hY
+OG
 ww
 kg
 kg
@@ -7514,7 +7518,7 @@ Bc
 om
 Ei
 Ge
-Ky
+wn
 AG
 AG
 AG
@@ -7522,7 +7526,7 @@ GR
 AG
 AG
 AG
-PI
+Ej
 Ge
 Jz
 Jz
@@ -7984,7 +7988,7 @@ kg
 kg
 kg
 kg
-QO
+cU
 kg
 kg
 kg
@@ -8060,7 +8064,7 @@ kg
 kg
 kg
 kg
-Rn
+tZ
 kg
 kg
 kg
@@ -8136,7 +8140,7 @@ kg
 kg
 kg
 kg
-Za
+mJ
 kg
 kg
 kg
@@ -8212,7 +8216,7 @@ kg
 kg
 kg
 kg
-Hg
+XR
 kg
 kg
 kg
@@ -8235,7 +8239,7 @@ kg
 kg
 kg
 kg
-tZ
+hj
 kg
 kg
 kg
@@ -8349,16 +8353,16 @@ kg
 kg
 Jz
 cW
-lu
+cB
 mt
 mt
-lu
+cB
 gr
 cW
-lu
+cB
 mt
 mt
-lu
+cB
 gr
 Jz
 kg
@@ -8428,13 +8432,13 @@ nD
 iz
 iz
 iz
-yu
+ck
 dj
 nD
 iz
 iz
 iz
-yu
+ck
 dj
 Jz
 kg
@@ -8496,8 +8500,8 @@ DZ
 AL
 mG
 Jz
-PC
-XF
+Lz
+eU
 Jz
 Tn
 nD
@@ -8881,16 +8885,16 @@ og
 sh
 Jz
 Av
-wn
+fd
 gu
 gu
-wn
+fd
 ev
 Av
-wn
+fd
 gu
 gu
-wn
+fd
 ev
 Jz
 kg
