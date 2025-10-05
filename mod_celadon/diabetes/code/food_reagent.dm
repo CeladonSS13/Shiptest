@@ -1,6 +1,6 @@
 /datum/reagent/consumable/sugar
-	nutriment_factor = 5 * REAGENTS_METABOLISM // Reduced from 10 to 5
-	overdose_threshold = 100 // Reduced from 200 to 100
+	nutriment_factor = 2
+	overdose_threshold = 120
 	var/diabetes_buildup = 0
 
 /datum/reagent/consumable/sugar/on_mob_life(mob/living/carbon/M)
