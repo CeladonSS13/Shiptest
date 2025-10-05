@@ -45,6 +45,9 @@ DEBUG_QUALITY
 - /slur теперь заменяет символы кириллицы на "пьяный вариант" и пропускает пробел
 - /check_for_custom_say_emote теперь нормально работает с кириллицей
 - добавлен вариант "bloodbank" в список для выбора при настройке платы умного холодильника
+- разрешено использование UI раций (переключение режимов) в лежачем положении
+
+**Документация по состояниям UI**: `mod_celadon/states_documentation/` - подробная документация по использованию `portable_device_state` для портативных устройств
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
   А также любая полезная информация.
@@ -106,6 +109,12 @@ DEBUG_QUALITY
 
 - EDIT `code\modules\mob\mob_helpers.dm`: `/proc/slur`
 - EDIT `code\modules\mob\mob_helpers.dm`: `/proc/stutter`
+
+Радио для лежачих персонажей
+- EDIT `code/game/objects/items/devices/radio/radio.dm`: `/obj/item/radio/AltClick(mob/user)` - добавлен параметр `floor_okay = TRUE` в `canUseTopic`
+- EDIT `code/game/objects/items/devices/radio/radio.dm`: `/obj/item/radio/CtrlShiftClick(mob/user)` - добавлен параметр `floor_okay = TRUE` в `canUseTopic`
+- ADD `code/modules/tgui/states/portable_device.dm`: `/datum/ui_state/portable_device_state` - создано универсальное состояние для портативных устройств с активным UI в лежачем положении
+- EDIT `code/game/objects/items/devices/radio/radio.dm`: `/obj/item/radio/ui_state(mob/user)` - изменен с `GLOB.inventory_state` на `GLOB.portable_device_state`
 
 ООС вкладка	
 - EDIT `code/modules/client/verbs/ooc.dm` -> Убраны неиспользуемые кнопки "Message Of The Day" "Show Policy" со вкладки ООС.Перемещена кнопка "Fit Viewport" со вкладки "ООС" во вкладку "Special Verbs"
@@ -205,7 +214,7 @@ DEBUG_QUALITY
 
 ### Авторы:
 
-RalseiDreemuurr, MysticalFaceLesS, MrCat15352, Yata9arasu, MrRomainzZ, Cuildipie
+RalseiDreemuurr, MysticalFaceLesS, MrCat15352, Yata9arasu, MrRomainzZ, Cuildipie, Mirag1993
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.
