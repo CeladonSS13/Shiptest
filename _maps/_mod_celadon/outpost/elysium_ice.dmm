@@ -22206,6 +22206,11 @@
 	},
 /area/outpost/crew/bar)
 "mmO" = (
+/obj/machinery/conveyor/auto{
+	dir = 8;
+	id = "outpost3";
+	use_static_power = 1
+	},
 /obj/machinery/light/floor{
 	color = "#FF0000";
 	light_color = "#FF0000"
@@ -74765,8 +74770,8 @@ rgY
 rgY
 rgY
 jtk
-dri
 mmO
+jtk
 jtk
 rgY
 rgY
