@@ -311,6 +311,31 @@
 
 	chameleon_extras = /obj/item/gun/energy/kinetic_accelerator
 
+// Lawyer
+/datum/outfit/job/nanotrasen/cel/lawyer
+	name = "NT - Lawyer"
+	job_icon = "lawyer"
+	jobtype = /datum/job/lawyer
+
+	ears = /obj/item/radio/headset/headset_srvsec
+	uniform = /obj/item/clothing/under/nanotrasen/affairs
+	suit = /obj/item/clothing/suit/nanotrasen/suitjacket
+	shoes = /obj/item/clothing/shoes/laceup
+	l_hand = /obj/item/storage/briefcase/lawyer
+	l_pocket = /obj/item/laser_pointer
+	r_pocket = /obj/item/clothing/accessory/lawyers_badge
+
+// Corp. Rep
+/datum/outfit/job/nanotrasen/cel/lawyer/corporaterepresentative
+	name = "NT - Corporate Representative"
+	id_assignment = "Corporate Representative"
+	job_icon = "nanotrasen"
+
+	ears = /obj/item/radio/headset/headset_cent
+	l_hand = /obj/item/clipboard
+	r_pocket = /obj/item/pen/fountain
+
+
 /datum/outfit/job/nanotrasen/cel/doctor/lp
 	job_icon = "assistant"
 	name = "NT - LP Medical Specialist"
