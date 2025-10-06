@@ -141,34 +141,42 @@
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/structure/crate_shelf,
-/obj/structure/closet/crate,
-/obj/item/reagent_containers/blood/random{
-	pixel_y = -6;
-	pixel_x = -7
+/obj/structure/closet/crate{
+	icon_state = "scicrate";
+	name = "AI Assembly crate"
 	},
-/obj/item/reagent_containers/blood/random{
-	pixel_y = 2;
-	pixel_x = -7
+/obj/item/stack/sheet/plasteel/five{
+	pixel_y = -1;
+	pixel_x = -5;
+	amount = 4
 	},
-/obj/item/reagent_containers/blood/random{
-	pixel_y = 8;
-	pixel_x = -7
+/obj/item/stack/sheet/rglass{
+	pixel_y = 3;
+	pixel_x = -2;
+	amount = 2
 	},
-/obj/item/blood_filter{
-	pixel_y = -8
+/obj/item/borg/upgrade/ai{
+	pixel_x = -6;
+	pixel_y = 8
 	},
-/obj/machinery/iv_drip,
-/obj/item/reagent_containers/blood/universal{
-	pixel_y = -6;
-	pixel_x = 7
+/obj/item/aicard{
+	pixel_y = -5;
+	pixel_x = 9
 	},
-/obj/item/reagent_containers/blood/universal{
-	pixel_y = 1;
-	pixel_x = 7
+/obj/item/circuitboard/computer/aifixer{
+	pixel_y = -4;
+	pixel_x = 6
 	},
-/obj/item/reagent_containers/blood/universal{
-	pixel_y = 8;
-	pixel_x = 7
+/obj/item/aiModule/reset/purge{
+	pixel_x = 5
+	},
+/obj/item/circuitboard/aicore{
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/obj/item/aiModule/core/full/syndicate{
+	pixel_x = 5;
+	pixel_y = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
@@ -1011,10 +1019,6 @@
 	pixel_y = 2
 	},
 /obj/machinery/light/directional/west,
-/obj/item/melee/knife/combat{
-	pixel_y = -8;
-	pixel_x = 10
-	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "ko" = (
@@ -3747,6 +3751,35 @@
 	layer = 2.04
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/black,
+/obj/structure/closet/crate/large,
+/obj/machinery/iv_drip,
+/obj/item/reagent_containers/blood/universal{
+	pixel_y = -6;
+	pixel_x = 7
+	},
+/obj/item/reagent_containers/blood/universal{
+	pixel_y = 1;
+	pixel_x = 7
+	},
+/obj/item/reagent_containers/blood/universal{
+	pixel_y = 8;
+	pixel_x = 7
+	},
+/obj/item/reagent_containers/blood/random{
+	pixel_y = -6;
+	pixel_x = -7
+	},
+/obj/item/reagent_containers/blood/random{
+	pixel_y = 2;
+	pixel_x = -7
+	},
+/obj/item/reagent_containers/blood/random{
+	pixel_y = 8;
+	pixel_x = -7
+	},
+/obj/item/blood_filter{
+	pixel_y = -8
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/engineering)
 "LE" = (
@@ -5284,10 +5317,6 @@
 	pixel_y = 2
 	},
 /obj/machinery/airalarm/directional/south,
-/obj/item/melee/knife/combat{
-	pixel_y = -8;
-	pixel_x = 10
-	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "YB" = (
