@@ -89,6 +89,37 @@
 
 	chameleon_extras = list(/obj/item/gun/energy/e_gun/hos, /obj/item/stamp/hos)
 
+// Head of Personnel
+/datum/outfit/job/nanotrasen/cel/hop
+	name = "NT - Head of Personnel"
+	job_icon = "headofpersonnel"
+	jobtype = /datum/job/head_of_personnel
+
+	belt = /obj/item/pda/heads/head_of_personnel
+	id = /obj/item/card/id/silver
+	ears = /obj/item/radio/headset/headset_com
+	uniform = /obj/item/clothing/under/nanotrasen/officer
+	alt_uniform = /obj/item/clothing/under/nanotrasen/officer/skirt
+	suit = /obj/item/clothing/suit/toggle/nanotrasen
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/captain
+	shoes = /obj/item/clothing/shoes/laceup
+	head = /obj/item/clothing/head/nanotrasen/officer
+
+	backpack_contents = list(
+						/obj/item/storage/box/ids = 1,
+						/obj/item/modular_computer/tablet/preset/advanced = 1,
+						)
+
+	backpack = /obj/item/storage/backpack/captain
+	satchel = /obj/item/storage/backpack/satchel/cap
+	duffelbag = /obj/item/storage/backpack/duffelbag/captain
+	courierbag = /obj/item/storage/backpack/messenger/com
+
+	chameleon_extras = list(
+						/obj/item/gun/energy/e_gun,
+						/obj/item/stamp/nanotrasen/officer,
+						)
+
 /datum/outfit/job/nanotrasen/cel/engineer
 	job_icon = "stationengineer"
 	name = "NT - Engineer"
@@ -310,6 +341,7 @@
 
 	jobtype = /datum/job/qm
 
+	id = /obj/item/card/id/gold
 	ears = /obj/item/radio/headset/headset_cargo
 	head = /obj/item/clothing/head/nanotrasen/cap/supply
 	uniform = /obj/item/clothing/under/nanotrasen/supply/qm
