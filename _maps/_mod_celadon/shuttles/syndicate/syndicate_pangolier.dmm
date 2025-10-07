@@ -794,7 +794,7 @@
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = 12;
-	pixel_y = -17
+	pixel_y = -16
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
@@ -960,7 +960,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/light_switch{
-	pixel_y = 23;
+	pixel_y = 27;
 	pixel_x = 12
 	},
 /turf/open/floor/plasteel/tech,
@@ -1104,13 +1104,13 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
 	},
 /obj/machinery/light/directional/east,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "lL" = (
@@ -1506,15 +1506,15 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
 /obj/effect/turf_decal/siding/thinplating/dark/corner{
 	dir = 1;
 	layer = 2.04
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
@@ -1580,9 +1580,9 @@
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
 	dir = 4
 	},
-/obj/machinery/atmospherics/components/binary/pump/on/layer2,
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/effect/turf_decal/spline/fancy/opaque/black,
+/obj/machinery/atmospherics/components/binary/pump/on/layer2,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/engineering)
 "qm" = (
@@ -1966,7 +1966,6 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/components/unary/tank/air{
-	dir = 8;
 	piping_layer = 2
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -2156,7 +2155,7 @@
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = 12;
-	pixel_y = -17
+	pixel_y = -16
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/science)
@@ -2589,7 +2588,7 @@
 /obj/machinery/light_switch{
 	dir = 8;
 	pixel_y = 12;
-	pixel_x = 19
+	pixel_x = 20
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew)
@@ -2734,7 +2733,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/light_switch{
-	pixel_y = 22;
+	pixel_y = 23;
 	pixel_x = 12
 	},
 /turf/open/floor/plasteel/tech,
@@ -3753,18 +3752,6 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black,
 /obj/structure/closet/crate/large,
 /obj/machinery/iv_drip,
-/obj/item/reagent_containers/blood/universal{
-	pixel_y = -6;
-	pixel_x = 7
-	},
-/obj/item/reagent_containers/blood/universal{
-	pixel_y = 1;
-	pixel_x = 7
-	},
-/obj/item/reagent_containers/blood/universal{
-	pixel_y = 8;
-	pixel_x = 7
-	},
 /obj/item/reagent_containers/blood/random{
 	pixel_y = -6;
 	pixel_x = -7
@@ -3779,6 +3766,18 @@
 	},
 /obj/item/blood_filter{
 	pixel_y = -8
+	},
+/obj/item/reagent_containers/blood/OMinus{
+	pixel_y = -6;
+	pixel_x = 7
+	},
+/obj/item/reagent_containers/blood/OMinus{
+	pixel_x = 7;
+	pixel_y = 2
+	},
+/obj/item/reagent_containers/blood/OMinus{
+	pixel_x = 7;
+	pixel_y = 8
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/engineering)
@@ -4142,16 +4141,9 @@
 /area/ship/science)
 "OM" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/storage/firstaid{
-	pixel_x = -7
-	},
 /obj/item/storage/pill_bottle/charcoal{
 	pixel_x = 7;
 	pixel_y = 8
-	},
-/obj/item/healthanalyzer{
-	pixel_y = -1;
-	pixel_x = 6
 	},
 /obj/effect/turf_decal/corner/opaque/syndiered/three_quarters{
 	dir = 1
@@ -4165,6 +4157,13 @@
 	pixel_x = 0;
 	dir = 2;
 	pixel_y = -32
+	},
+/obj/item/storage/firstaid/regular{
+	pixel_x = -7
+	},
+/obj/item/healthanalyzer{
+	pixel_y = -1;
+	pixel_x = 6
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/science)
@@ -4295,7 +4294,7 @@
 "PQ" = (
 /obj/machinery/button/door{
 	dir = 1;
-	pixel_x = 6;
+	pixel_x = 4;
 	pixel_y = -26;
 	name = "Vault button";
 	id = "Pango_vault";
@@ -4314,7 +4313,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /obj/machinery/light_switch{
 	dir = 1;
-	pixel_x = -7;
+	pixel_x = -6;
 	pixel_y = -25
 	},
 /turf/open/floor/plasteel/tech,
