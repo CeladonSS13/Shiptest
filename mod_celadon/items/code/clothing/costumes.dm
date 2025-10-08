@@ -94,3 +94,9 @@
 	item_state = "dragon_maid"
 	body_parts_covered = CHEST | GROIN
 	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON
+
+/obj/item/clothing/under/suit/waiter/occult
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/under.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/under.dmi'
+	icon_state = "occultoutfit"
+	item_state = "occultoutfit"

@@ -219,3 +219,37 @@
 	icon_state = "occultoutfit"
 	item_state = "occultoutfit"
 	supports_variations = NONE
+
+/obj/item/clothing/under/rank/civilian/chaplain/divine_archer
+	name = "divine archer's garb"
+	desc = "Inner garb for divine archers."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/under.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/under.dmi'
+	icon_state = "archergarb"
+	item_state = "archergarb"
+
+/obj/item/clothing/under/rank/civilian/lawyer/cel_black
+	name = "lawyer black suit"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/under.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/under.dmi'
+	icon_state = "lawyer_black"
+	item_state = "lawyer_black"
+
+/obj/item/clothing/under/rank/civilian/lawyer/cel_black/skirt
+	name = "lawyer black suitskirt"
+	icon_state = "lawyer_black_skirt"
+	item_state = "lawyer_black_skirt"
+	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON | VOX_VARIATION
+
+/obj/item/clothing/under/rank/civilian/lawyer/cel_purpl
+	name = "lawyer black suit"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/under.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/under.dmi'
+	icon_state = "lawyer_purp"
+	item_state = "lawyer_purp"
+
+/obj/item/clothing/under/rank/civilian/lawyer/cel_purpl/skirt
+	name = "lawyer purple suitskirt"
+	icon_state = "lawyer_purp_skirt"
+	item_state = "lawyer_purp_skirt"
+	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON | VOX_VARIATION
