@@ -290,7 +290,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
 
 /datum/outfit/job/solfed/miner
-	name = "SF - Contract Miner"
+	name = "SF - Vertrags-Miner"
 	jobtype = /datum/job/mining
 
 	id = /obj/item/card/id/cel/solfed/crew/miner
