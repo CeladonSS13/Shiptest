@@ -229,6 +229,7 @@
 
 /datum/outfit/job/solfed/doctor
 	name = "SF - Expeditionary Meeresarzt"
+	job_icon = "sf_fieldside"
 
 	jobtype = /datum/job/doctor
 
