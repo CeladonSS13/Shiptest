@@ -44,11 +44,12 @@
 //MARK: Арьергард. Rearguard
 /datum/outfit/job/inteq/cel/rearguard
 	name = "IQ - Rearguard"
-	jobtype = /datum/job/captain
 	job_icon = "captain"
 	id_assignment = "Rearguard"
 
-	id = /obj/item/card/id/cel/inteq/honorable_rearguard
+	jobtype = /datum/job/captain
+
+	id = /obj/item/card/id/cel/inteq/vanguard
 	head = /obj/item/clothing/head/beret/sec/hos/inteq
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
 	suit = /obj/item/clothing/suit/armor/vest/inteq
@@ -128,4 +129,4 @@
 	jobtype = /datum/job/engineer
 	job_icon = "stationengineer"
 
-	id = /obj/item/card/id/cel/inteq/honorable_artificer
+	id = /obj/item/card/id/cel/inteq/artificer
