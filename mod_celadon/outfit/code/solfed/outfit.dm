@@ -114,6 +114,8 @@
 //MARK:	Ученые
 /datum/outfit/job/solfed/scientist
 	name = "SF - Wissenschaftler"
+	job_icon = "sf_fieldside"
+
 	jobtype = /datum/job/scientist
 
 	id = /obj/item/card/id/cel/solfed/crew/scientist
@@ -129,6 +131,7 @@
 
 /datum/outfit/job/solfed/scientist/roboticist
 	name = "SF - Roboterkonstrukteur"
+
 	jobtype = /datum/job/roboticist
 
 	id = /obj/item/card/id/cel/solfed/crew/roboticist
@@ -141,6 +144,8 @@
 
 /datum/outfit/job/solfed/marine
 	name = "SF - Marine"
+	job_icon = "sf_fieldside"
+
 	jobtype = /datum/job/officer
 
 	id = /obj/item/card/id/cel/solfed/crew/marine
@@ -154,6 +159,7 @@
 
 /datum/outfit/job/solfed/marine/pilot
 	name = "SF - Schwerer Roboterpilot"
+
 	jobtype = /datum/job/officer
 
 	id = /obj/item/card/id/cel/solfed/crew/marine/pilot
@@ -163,8 +169,9 @@
 
 /datum/outfit/job/solfed/captain
 	name = "SF - Kommandant"
-	jobtype = /datum/job/captain
 	job_icon = "sf_komandant"
+
+	jobtype = /datum/job/captain
 
 	id = /obj/item/card/id/cel/solfed/captain
 	gloves = /obj/item/clothing/gloves/combat/solfed/captain
@@ -187,8 +194,9 @@
 
 /datum/outfit/job/solfed/captain/admiral
 	name = "SF - Flottenadmiral"
-	jobtype = /datum/job/captain
 	job_icon = "sf_admiral"
+
+	jobtype = /datum/job/captain
 
 	id = /obj/item/card/id/cel/solfed/admiral
 	suit = /obj/item/clothing/suit/armor/solfed/formal
@@ -197,8 +205,9 @@
 
 /datum/outfit/job/solfed/sergeant
 	name = "SF - Feldwebel"
-	jobtype = /datum/job/captain
 	job_icon = "sf_command"
+
+	jobtype = /datum/job/captain
 
 	id = /obj/item/card/id/cel/solfed/command/sergeant
 	uniform = /obj/item/clothing/under/solfed/camo
@@ -211,8 +220,9 @@
 
 /datum/outfit/job/solfed/hop
 	name = "SF - Personalvorgesetzter"
-	jobtype = /datum/job/head_of_personnel
 	job_icon = "sf_command"
+
+	jobtype = /datum/job/head_of_personnel
 
 	id = /obj/item/card/id/cel/solfed/command/hop
 	uniform = /obj/item/clothing/under/solfed
@@ -260,6 +270,8 @@
 
 /datum/outfit/job/solfed/engineer
 	name = "SF - Marinemechaniker"
+	job_icon = "sf_fieldside"
+
 	jobtype = /datum/job/engineer
 
 	id = /obj/item/card/id/cel/solfed/crew/engineer
@@ -278,8 +290,9 @@
 
 /datum/outfit/job/solfed/assistant
 	name = "SF - Gehilfe"
-	jobtype = /datum/job/assistant
 	job_icon = "sf_shipside"
+
+	jobtype = /datum/job/assistant
 
 	id = /obj/item/card/id/cel/solfed/assistant
 	uniform = /obj/item/clothing/under/solfed/assistant
@@ -292,6 +305,8 @@
 
 /datum/outfit/job/solfed/miner
 	name = "SF - Vertrags-Miner"
+	job_icon = "sf_fieldside"
+
 	jobtype = /datum/job/mining
 
 	id = /obj/item/card/id/cel/solfed/crew/miner
@@ -310,8 +325,9 @@
 
 /datum/outfit/job/solfed/quartermaster
 	name = "SF - Logistikbeauftragter"
-	jobtype = /datum/job/qm
 	job_icon = "sf_command"
+
+	jobtype = /datum/job/qm
 
 	id = /obj/item/card/id/cel/solfed/command/quartermaster
 	uniform = /obj/item/clothing/under/solfed
@@ -329,10 +345,11 @@
 	get_solfed_general_access(H)
 
 /datum/outfit/job/solfed/patient
-	job_icon = "sf_shipside" // todo: bug rye for patient icon // rye. rye. give me 50 gazillion billion dollars paypal
-	jobtype = /datum/job/prisoner
 	name = "SF - Attentive Care Patient"
+	job_icon = "sf_shipside" // todo: bug rye for patient icon // rye. rye. give me 50 gazillion billion dollars paypal
 	id_assignment = "Attentive Care Patient"
+
+	jobtype = /datum/job/prisoner
 
 	id = /obj/item/card/id/cel/solfed/patient
 	uniform = /obj/item/clothing/under/rank/medical/gown

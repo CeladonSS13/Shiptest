@@ -93,10 +93,12 @@
 /obj/item/card/id/cel/solfed/crew/doctor/elysium
 	desc = "A SolFed Elysium Brigade ID with no proper access to speak of. This one indicates a Doctor"
 	assignment = "Doctor"
+	icon_state = "idbrigade_crew"
 
 /obj/item/card/id/cel/solfed/crew/engineer/elysium
 	desc = "A SolFed Elysium Brigade ID with no proper access to speak of. This one indicates a Engineer"
 	assignment = "Engineer"
+	icon_state = "idbrigade_crew"
 
 /obj/item/card/id/cel/solfed/assistant/elysium
 	desc = "A SolFed Elysium Brigade ID with no proper access to speak of. This one indicates a Assistant"
