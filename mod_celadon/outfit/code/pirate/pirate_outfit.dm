@@ -40,7 +40,6 @@
 
 	job_icon = "assistant"
 
-	id = /obj/item/card/id/cel/pirate/command
 	uniform = /obj/item/clothing/under/utility
 	gloves = /obj/item/clothing/gloves/combat
 	suit = /obj/item/clothing/suit/armor/vest/marine/medium
