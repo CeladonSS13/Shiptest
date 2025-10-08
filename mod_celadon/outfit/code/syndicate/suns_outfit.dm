@@ -96,32 +96,6 @@
 	head = /obj/item/clothing/head/HoS/syndicate/suns
 
 //MARK: Crew
-
-/datum/outfit/job/syndicate/cel/bartender/suns
-	name = "Syndi SUNS - Student Mixologist"
-	id_assignment = "Student Mixologist"
-	faction_icon = "bg_suns"
-	job_icon = "suns_bartender"
-
-	id = /obj/item/card/id/cel/syndicate/crew/bartender/suns
-	uniform = /obj/item/clothing/under/syndicate/suns/uniform2
-	alt_uniform = /obj/item/clothing/under/syndicate/suns/alt
-	mask = /obj/item/clothing/mask/breath/suns
-	suit = null
-	belt = null
-	head = null
-	shoes = /obj/item/clothing/shoes/laceup/suns
-	gloves = null
-	ears = null
-	accessory = /obj/item/clothing/accessory/waistcoat/suns/poof
-
-	backpack = /obj/item/storage/backpack
-	satchel  = /obj/item/storage/backpack/satchel
-	duffelbag = /obj/item/storage/backpack/duffelbag
-	courierbag = /obj/item/storage/backpack/messenger
-
-	backpack_contents = null
-
 /datum/outfit/job/syndicate/cel/botanist/suns
 	name = "Syndi SUNS - Botanist-Chemist"
 	id_assignment = "Botanist-Chemist"
@@ -301,6 +275,31 @@
 	id = /obj/item/card/id/cel/syndicate/assistant/suns/graduate
 	uniform = /obj/item/clothing/under/syndicate/suns/uniform3
 	alt_uniform = /obj/item/clothing/under/syndicate/suns/uniform3/alt
+
+/datum/outfit/job/syndicate/cel/assistant/suns/bartender
+	name = "Syndi SUNS - Student Mixologist"
+	id_assignment = "Student Mixologist"
+	faction_icon = "bg_suns"
+	job_icon = "suns_bartender"
+
+	id = /obj/item/card/id/cel/syndicate/crew/bartender/suns
+	uniform = /obj/item/clothing/under/syndicate/suns/uniform2
+	alt_uniform = /obj/item/clothing/under/syndicate/suns/alt
+	mask = /obj/item/clothing/mask/breath/suns
+	suit = null
+	belt = null
+	head = null
+	shoes = /obj/item/clothing/shoes/laceup/suns
+	gloves = null
+	ears = null
+	accessory = /obj/item/clothing/accessory/waistcoat/suns/poof
+
+	backpack = /obj/item/storage/backpack
+	satchel  = /obj/item/storage/backpack/satchel
+	duffelbag = /obj/item/storage/backpack/duffelbag
+	courierbag = /obj/item/storage/backpack/messenger
+
+	backpack_contents = null
 
 //MARK: Patient
 
