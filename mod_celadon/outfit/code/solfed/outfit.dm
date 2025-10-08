@@ -254,6 +254,9 @@
 
 	jobtype = /datum/job/paramedic
 
+/datum/outfit/job/solfed/doctor/scientist
+	name = "SF - Medical Scientist"
+
 /datum/outfit/job/solfed/engineer
 	name = "SF - Marinemechaniker"
 	jobtype = /datum/job/engineer
