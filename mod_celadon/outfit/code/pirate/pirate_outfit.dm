@@ -1,8 +1,8 @@
 // MARK: Survival box
 // Меняет обычный бокс на пиратскую тему, и меняем им фоны
 /datum/outfit/job/pirate
-	job_icon = "assistant"
 	name = "Pirate - Base Outfit"
+	job_icon = "assistant"
 	faction = FACTION_PLAYER_PIRATE
 	faction_icon = "bg_pirate"
 
@@ -11,8 +11,8 @@
 
 // MARK: Captain
 /datum/outfit/job/pirate/captain
+	name = "Pirate - Captain"
 	job_icon = "captain"
-	name = "Captain (Pirate)"
 
 	jobtype = /datum/job/captain
 
@@ -36,9 +36,11 @@
 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/captain)
 
 /datum/outfit/job/pirate/captain/jupiter
-	job_icon = "assistant"
-	name = "Independent - Captain (Nodesman)"
+	name = "Pirate - Captain (Nodesman)"
 
+	job_icon = "assistant"
+
+	id = /obj/item/card/id/cel/pirate/command
 	uniform = /obj/item/clothing/under/utility
 	gloves = /obj/item/clothing/gloves/combat
 	suit = /obj/item/clothing/suit/armor/vest/marine/medium
@@ -48,10 +50,41 @@
 	implants = list(/obj/item/implant/radio)
 	accessory = null
 
+/datum/outfit/job/pirate/hop
+	name = "Pirate - Bridge Officer"
+	id_assignment = "Helmsman"
+	job_icon = "headofpersonnel"
+
+	jobtype = /datum/job/head_of_personnel
+
+	id = /obj/item/card/id/cel/pirate/security
+	ears = /obj/item/radio/headset/pirate/alt
+	uniform = /obj/item/clothing/under/costume/pirate
+	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/pirate
+	gloves = /obj/item/clothing/gloves/combat
+	r_pocket = /obj/item/melee/knife/survival
+
+/datum/outfit/job/pirate/hos
+	name = "Frontiersmen - Deck Boss"
+	id_assignment = "Deck Boss"
+	job_icon = "headofsecurity"
+	jobtype = /datum/job/hos
+
+	id = /obj/item/card/id/cel/pirate/security
+	accessory = /obj/item/clothing/accessory/armband
+	uniform = /obj/item/clothing/under/frontiersmen/officer
+	head = /obj/item/clothing/head/beret/sec/frontier/officer
+	suit = /obj/item/clothing/suit/armor/vest/bulletproof/frontier
+	shoes = /obj/item/clothing/shoes/jackboots
+	gloves = /obj/item/clothing/gloves/combat
+	backpack_contents = list(/obj/item/clothing/mask/gas/frontiersmen, /obj/item/melee/baton/loaded = 1)
+	suit_store = null
+
 // MARK: Engineer
 /datum/outfit/job/pirate/engineer
+	name = "Pirate - Engineer"
 	job_icon = "assistant"
-	name = "Independent - Engineer (Pirate)"
 
 	jobtype = /datum/job/engineer
 
@@ -73,7 +106,7 @@
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced = 1)
 
 /datum/outfit/job/pirate/engineer/jupiter	// Не юзается
-	name = "Independent - Engineer (Nodesman)"
+	name = "Pirate - Engineer (Nodesman)"
 
 	uniform = /obj/item/clothing/under/utility
 	head = /obj/item/clothing/head/soft/black
@@ -85,8 +118,8 @@
 
 // MARK: Security
 /datum/outfit/job/pirate/security
+	name = "Pirate - Security Officer"
 	job_icon = "assistant"
-	name = "Independent - Security Officer (Pirate)"
 
 	jobtype = /datum/job/officer
 
@@ -109,7 +142,7 @@
 	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
 
 /datum/outfit/job/pirate/security/jupiter
-	name = "Independent - Security Officer (Nodesman)"
+	name = "Pirate - Security Officer (Nodesman)"
 
 	uniform = /obj/item/clothing/under/utility
 	head = /obj/item/clothing/head/soft/black
@@ -122,8 +155,8 @@
 
 // MARK: Medic
 /datum/outfit/job/pirate/medic
+	name = "Pirate - Medical Doctor"
 	job_icon = "paramedic"
-	name = "Independent - Medical Doctor (Pirate)"
 
 	jobtype = /datum/job/doctor
 
@@ -141,10 +174,34 @@
 
 	chameleon_extras = /obj/item/gun/syringe
 
+/datum/outfit/job/pirate/cook
+	name = "Pirate - Cook"
+	job_icon = "cook"
+
+	jobtype = /datum/job/cook
+
+	ears = /obj/item/radio/headset/headset_srv
+	shoes = /obj/item/clothing/shoes/laceup
+	uniform = /obj/item/clothing/under/rank/civilian/chef
+	suit = /obj/item/clothing/suit/toggle/chef
+	alt_suit = /obj/item/clothing/suit/apron/chef
+	head = /obj/item/clothing/head/chefhat
+	mask = /obj/item/clothing/mask/fakemoustache/italian
+	backpack_contents = list(/obj/item/sharpener = 1)
+
+/datum/outfit/job/pirate/cook/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	var/list/possible_boxes = subtypesof(/obj/item/storage/box/ingredients)
+	var/chosen_box = pick(possible_boxes)
+	var/obj/item/storage/box/I = new chosen_box(src)
+	H.equip_to_slot_or_del(I,ITEM_SLOT_BACKPACK)
+
 // MARK: Assistant
 /datum/outfit/job/pirate/assistant
+	name = "Pirate - Assistant"
 	job_icon = "assistant"
-	name = "Independent - Assistant (Pirate)"
 
 	jobtype = /datum/job/assistant
 
@@ -155,7 +212,7 @@
 	shoes = /obj/item/clothing/shoes/sneakers/black
 
 /datum/outfit/job/pirate/assistant/jupiter	// Не юзается
-	name = "Independent - Assistant (Nodesman)"
+	name = "Pirate - Assistant (Nodesman)"
 
 	uniform = /obj/item/clothing/under/utility
 	head = /obj/item/clothing/head/soft/black
@@ -166,4 +223,4 @@
 
 // Pirate: Powder Monkey Outfit ???
 /datum/outfit/job/pirate/engineer/celadon
-	name = "Powder Monkey (Pirate)"
+	name = "Pirate - Powder Monkey"
