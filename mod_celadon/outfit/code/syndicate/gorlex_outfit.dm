@@ -32,6 +32,9 @@
 	suit = /obj/item/clothing/suit/armor/hardliners/sergeant
 	shoes = /obj/item/clothing/shoes/combat
 
+/datum/outfit/job/syndicate/cel/hos/gorlex/lieutenant
+	name = "Syndi Gorlex - Lieutenant"
+
 //MARK: Crew
 /datum/outfit/job/syndicate/cel/doctor/gorlex
 	name = "Syndi Gorlex - Medical Doctor"
@@ -57,6 +60,10 @@
 	uniform = /obj/item/clothing/under/syndicate/hardliners
 	gloves = /obj/item/clothing/gloves/color/black
 	shoes = /obj/item/clothing/shoes/combat
+
+/datum/outfit/job/syndicate/cel/security/gorlex/commando
+	name = "Syndi Gorlex - Commando"
+	id_assignment = "Commando"
 
 /datum/outfit/job/syndicate/cel/security/gorlex/pilot	// Не юзается
 	name = "Syndi Gorlex - Pilot"
@@ -97,3 +104,6 @@
 	id = /obj/item/card/id/cel/syndicate/assistant/gorlex
 	uniform = /obj/item/clothing/under/syndicate/hardliners
 	alt_uniform = /obj/item/clothing/under/syndicate/hardliners/jumpsuit
+
+/datum/outfit/job/syndicate/cel/assistant/gorlex/operative
+	name = "Syndi Gorlex - Operative"
