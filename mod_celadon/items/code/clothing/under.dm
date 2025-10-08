@@ -234,6 +234,7 @@
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/under.dmi'
 	icon_state = "lawyer_black"
 	item_state = "lawyer_black"
+	roll_sleeves = TRUE
 
 /obj/item/clothing/under/rank/civilian/lawyer/cel_black/skirt
 	name = "lawyer black suitskirt"
@@ -247,6 +248,7 @@
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/under.dmi'
 	icon_state = "lawyer_purp"
 	item_state = "lawyer_purp"
+	roll_sleeves = TRUE
 
 /obj/item/clothing/under/rank/civilian/lawyer/cel_purpl/skirt
 	name = "lawyer purple suitskirt"
