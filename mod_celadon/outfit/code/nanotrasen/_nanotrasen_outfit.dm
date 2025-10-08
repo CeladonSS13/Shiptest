@@ -314,8 +314,8 @@
 // Lawyer
 /datum/outfit/job/nanotrasen/cel/lawyer
 	name = "NT - Lawyer"
-	job_icon = "lawyer"
 	jobtype = /datum/job/lawyer
+	job_icon = "lawyer"
 
 	ears = /obj/item/radio/headset/headset_srvsec
 	uniform = /obj/item/clothing/under/nanotrasen/affairs
