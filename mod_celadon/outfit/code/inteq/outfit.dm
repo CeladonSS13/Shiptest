@@ -76,7 +76,7 @@
 	jobtype = /datum/job/paramedic
 	name = "IQ - Corpsman"
 
-	id = /obj/item/card/id/cel/inteq/honorable_medic
+	id = /obj/item/card/id/cel/inteq/medic
 	ears = /obj/item/radio/headset/inteq
 
 //MARK: Главный медик
