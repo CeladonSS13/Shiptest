@@ -101,6 +101,11 @@
 		/obj/item/clothing/under/dress/skirt/swimming/black_skirt = 5,
 		/obj/item/clothing/under/dress/skirt/swimming/jute = 5,
 		/obj/item/clothing/suit/archercoat = 5,
+		/obj/item/clothing/under/rank/civilian/chaplain/divine_archer = 5,
+		/obj/item/clothing/under/rank/civilian/lawyer/cel_black = 5,
+		/obj/item/clothing/under/rank/civilian/lawyer/cel_black/skirt = 5,
+		/obj/item/clothing/under/rank/civilian/lawyer/cel_purpl = 5,
+		/obj/item/clothing/under/rank/civilian/lawyer/cel_purpl/skirt = 5,
 		)
 	premium = list(
 		/obj/item/clothing/gloves/maid/white = 5,
