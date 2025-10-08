@@ -4873,6 +4873,7 @@
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/newscaster/security_unit/directional/west,
 /turf/open/floor/carpet/green,
 /area/outpost/operations/outpost_command)
 "cOL" = (
@@ -15042,8 +15043,8 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/machinery/newscaster/security_unit/directional/east,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/newscaster/directional/east,
 /turf/open/floor/wood/walnut{
 	planetary_atmos = 1
 	},
@@ -22205,6 +22206,11 @@
 	},
 /area/outpost/crew/bar)
 "mmO" = (
+/obj/machinery/conveyor/auto{
+	dir = 8;
+	id = "outpost3";
+	use_static_power = 1
+	},
 /obj/machinery/light/floor{
 	color = "#FF0000";
 	light_color = "#FF0000"
@@ -22677,7 +22683,7 @@
 	pixel_y = 6;
 	pixel_x = -1
 	},
-/obj/machinery/newscaster/security_unit/directional/west,
+/obj/machinery/newscaster/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/outpost/security)
 "mAg" = (
@@ -25705,11 +25711,11 @@
 	pixel_y = 6;
 	pixel_x = -1
 	},
-/obj/machinery/newscaster/security_unit/directional/west,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1;
 	color = "#808080"
 	},
+/obj/machinery/newscaster/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/outpost/security)
 "ofR" = (
@@ -34229,10 +34235,10 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
 	},
-/obj/machinery/newscaster/security_unit/directional/south,
 /obj/machinery/firealarm/directional/south{
 	pixel_x = 12
 	},
+/obj/machinery/newscaster/directional/south,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/checkpoint)
 "sSO" = (
@@ -34835,6 +34841,10 @@
 /obj/item/spacecash/bundle/c10,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo/faction/all/zone_3)
+"thf" = (
+/obj/machinery/newscaster/security_unit/directional/north,
+/turf/open/floor/plasteel/tech,
+/area/outpost/operations/outpost_command)
 "thl" = (
 /obj/effect/turf_decal/borderfloor{
 	layer = 2.030
@@ -57594,7 +57604,7 @@ wMX
 wMX
 wMX
 wMX
-oII
+thf
 oII
 oII
 oII
@@ -74760,8 +74770,8 @@ rgY
 rgY
 rgY
 jtk
-dri
 mmO
+jtk
 jtk
 rgY
 rgY
