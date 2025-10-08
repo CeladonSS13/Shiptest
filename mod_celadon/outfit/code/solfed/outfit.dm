@@ -228,21 +228,31 @@
 	get_solfed_head_access(H)
 
 /datum/outfit/job/solfed/doctor
-	name = "SF - Meeresarzt"
-	jobtype = /datum/job/paramedic
+	name = "SF - Expeditionary Meeresarzt"
+
+	jobtype = /datum/job/doctor
 
 	id = /obj/item/card/id/cel/solfed/crew/doctor
 	uniform = /obj/item/clothing/under/solfed/medical
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/solfed/surgical
-
+	ears = /obj/item/radio/headset/headset_med
+	accessory = /obj/item/clothing/accessory/armband/medblue
+	suit =  /obj/item/clothing/suit/solgov/jacket
+	l_hand = /obj/item/storage/firstaid/medical
 	backpack = /obj/item/storage/backpack/solfed
 	satchel = /obj/item/storage/backpack/satchel/solfed
 	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
+	courierbag = /obj/item/storage/backpack/messenger/med
 
 /datum/outfit/job/solfed/doctor/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_engineer_access(H)
+
+/datum/outfit/job/solfed/doctor/paramedic
+	name = "SF - Meeresarzt"
+
+	jobtype = /datum/job/paramedic
 
 /datum/outfit/job/solfed/engineer
 	name = "SF - Marinemechaniker"
