@@ -119,7 +119,7 @@
 
 /obj/item/card/id/cel/syndicate/command_ce/gec
 	assignment = "Chief Engineer (GEC)"
-	icon_state = "idsyndicate_captain"
+	icon_state = "idgec_captain"
 
 /obj/item/card/id/cel/syndicate/crew/gec
 	icon_state = "idgec_crew"
