@@ -125,8 +125,8 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat/science
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/science
 
-	backpack = /obj/item/storage/backpack/science
-	satchel = /obj/item/storage/backpack/satchel/tox
+	backpack = /obj/item/storage/backpack/solfed
+	satchel = /obj/item/storage/backpack/satchel/solfed
 	courierbag = /obj/item/storage/backpack/messenger/tox
 
 /datum/outfit/job/solfed/scientist/roboticist
@@ -152,14 +152,13 @@
 	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solfed
 	shoes = /obj/item/clothing/shoes/jackboots
-	backpack = /obj/item/storage/backpack/ert/engineer
+	backpack = /obj/item/storage/backpack/solfed
 	suit = /obj/item/clothing/suit/armor/vest/solgov
 	gloves = /obj/item/clothing/gloves/combat
 	head = /obj/item/clothing/head/solgov/sonnensoldner
 	r_pocket = null
 	l_pocket = null
 	back = /obj/item/storage/backpack
-	backpack_contents = list(/obj/item/crowbar/power)
 
 /datum/outfit/job/solfed/marine/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -220,7 +219,7 @@
 	id = /obj/item/card/id/cel/solfed/command/sergeant
 	uniform = /obj/item/clothing/under/solfed/formal
 	shoes = /obj/item/clothing/shoes/combat
-	backpack = /obj/item/storage/backpack/ert/engineer
+	backpack = /obj/item/storage/backpack/solfed
 	suit = /obj/item/clothing/suit/armor/vest/solgov
 	ears = /obj/item/radio/headset/solgov/alt
 	gloves = /obj/item/clothing/gloves/combat
@@ -393,7 +392,7 @@
 	suit = /obj/item/clothing/suit/armor/solfed/formal/elysium
 	shoes = /obj/item/clothing/shoes/combat
 	ears = /obj/item/radio/headset/solgov/alt/captain
-	backpack = /obj/item/storage/backpack/messenger/com
+	backpack = /obj/item/storage/backpack/solfed
 	gloves = null
 
 /datum/outfit/job/solfed/captain/elysium/post_equip(mob/living/carbon/human/H)
