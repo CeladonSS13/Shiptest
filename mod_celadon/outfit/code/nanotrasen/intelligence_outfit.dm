@@ -11,12 +11,13 @@
 	uniform = /obj/item/clothing/under/nanotrasen/captain
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
-	backpack = /obj/item/storage/backpack/satchel/leather
 	suit = /obj/item/clothing/suit/armor/nanotrasen/captain/parade
 	suit_store = /obj/item/gun/ballistic/revolver/mateba
 	head = /obj/item/clothing/head/nanotrasen/captain/peaked
 	glasses = /obj/item/clothing/glasses/sunglasses
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
+	backpack = /obj/item/storage/backpack/ert
+
 	backpack_contents = list(/obj/item/ammo_box/a357, /obj/item/ammo_box/a357)
 
 /// MARK: слешер сбуха
