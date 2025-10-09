@@ -162,6 +162,7 @@ SUBSYSTEM_DEF(ticker)
 			if(CONFIG_GET(string/servername) == "\[RU] Celadon Shiptest: Beta")
 				send2chat("<@&1226515994332102687>, запущен новый раунд на сервере: **" + CONFIG_GET(string/servername) + "**!", CONFIG_GET(string/chat_announce_new_game))
 			SSredbot.send_discord_message("ooc", "**Новый раунд скоро начнётся.**")
+			// [/CELADON-EDIT]
 			current_state = GAME_STATE_PREGAME
 			//Everyone who wants to be an observer is now spawned
 			create_observers()
