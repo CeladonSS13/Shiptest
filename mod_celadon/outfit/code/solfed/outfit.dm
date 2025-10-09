@@ -153,9 +153,9 @@
 	uniform = /obj/item/clothing/under/solfed/camo
 	shoes = /obj/item/clothing/shoes/jackboots
 	backpack = /obj/item/storage/backpack/solfed
-	suit = /obj/item/clothing/suit/armor/vest/solgov
-	gloves = /obj/item/clothing/gloves/combat
-	head = /obj/item/clothing/head/solgov/sonnensoldner
+	suit = /obj/item/clothing/suit/armor/vest/marine
+	gloves = /obj/item/clothing/gloves/combat/solfed
+	head = /obj/item/clothing/head/beret/solgov
 	mask = /obj/item/clothing/mask/balaclava/combat
 	r_pocket = null
 	l_pocket = null
@@ -306,6 +306,7 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	head = /obj/item/clothing/head/hardhat/solfed
 	belt = /obj/item/storage/belt/utility/full/engi
+	suit = /obj/item/clothing/suit/hazardvest/solgov
 
 	backpack = /obj/item/storage/backpack/solfed
 	satchel = /obj/item/storage/backpack/satchel/solfed
@@ -427,9 +428,9 @@
 	faction_icon = "bg_elysium"
 
 	id = /obj/item/card/id/cel/solfed/crew/marine/elysium
-	head = null
-	suit = null
-	gloves = null
+	head = /obj/item/clothing/head/beret/elysium
+	suit = /obj/item/clothing/suit/armor/vest/marine
+	gloves = /obj/item/clothing/gloves/combat/solfed
 	shoes = /obj/item/clothing/shoes/combat
 	uniform = /obj/item/clothing/under/solfed/camo/elysium
 
@@ -443,9 +444,6 @@
 	faction_icon = "bg_elysium"
 
 	id = /obj/item/card/id/cel/solfed/crew/doctor/elysium
-	head = null
-	suit = null
-	gloves = null
 	shoes = /obj/item/clothing/shoes/combat
 	uniform = /obj/item/clothing/under/solfed/camo/elysium
 
@@ -459,9 +457,7 @@
 	faction_icon = "bg_elysium"
 
 	id = /obj/item/card/id/cel/solfed/crew/engineer/elysium
-	head = null
-	suit = null
-	gloves = null
+	head = /obj/item/clothing/head/hardhat/solfed
 	belt = /obj/item/storage/belt/utility/full/engi
 	shoes = /obj/item/clothing/shoes/combat
 	uniform = /obj/item/clothing/under/solfed/camo/elysium
