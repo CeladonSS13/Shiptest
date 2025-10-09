@@ -249,7 +249,6 @@
 	head = /obj/item/clothing/head/solfed/surgical
 	ears = /obj/item/radio/headset/headset_med
 	accessory = /obj/item/clothing/accessory/armband/medblue
-	suit =  /obj/item/clothing/suit/solgov/jacket
 	l_hand = /obj/item/storage/firstaid/medical
 	backpack = /obj/item/storage/backpack/solfed
 	satchel = /obj/item/storage/backpack/satchel/solfed
@@ -267,6 +266,8 @@
 
 /datum/outfit/job/solfed/doctor/scientist
 	name = "SF - Medical Scientist"
+
+	suit =  /obj/item/clothing/suit/solgov/jacket
 
 /datum/outfit/job/solfed/engineer
 	name = "SF - Marinemechaniker"
