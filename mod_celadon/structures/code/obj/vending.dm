@@ -115,7 +115,6 @@
 		/obj/item/clothing/under/costume/draculass = 5,
 		/obj/item/clothing/under/costume/sailor = 5,
 		/obj/item/clothing/under/costume/jackbros = 5,
-		/obj/item/clothing/under/costume/jabroni = 1,
 		/obj/item/clothing/under/dress/pinktutu = 3,
 		/obj/item/clothing/under/dress/formal_red = 3,
 		/obj/item/clothing/under/dress/countess = 3,
