@@ -136,6 +136,8 @@
 		/obj/item/clothing/suit/jacket/cherno = 2,
 		/obj/item/clothing/suit/jacket/brasspriest = 2,
 		/obj/item/clothing/suit/razurathcoat = 2,
+		/obj/item/clothing/under/rank/civilian/bartender/purple = 2,
+		/obj/item/clothing/under/rank/civilian/bartender/purple/alt = 2,
 		/obj/item/clothing/suit/jacket/bomber = 2,
 		/obj/item/clothing/suit/toggle/labcoat/tenrai = 2,
 		/obj/item/clothing/suit/jacket/gorlex_harness = 2,

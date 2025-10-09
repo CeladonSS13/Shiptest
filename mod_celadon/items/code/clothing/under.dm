@@ -255,3 +255,11 @@
 	icon_state = "lawyer_purp_skirt"
 	item_state = "lawyer_purp_skirt"
 	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON | VOX_VARIATION
+
+/obj/item/clothing/under/rank/civilian/bartender/purple/alt
+	name = "purple bartender's uniform"
+	desc = "It looks like it has lots of flair!"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/under.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/under.dmi'
+	icon_state = "purplebartender"
+	item_state = "purplebartender"
