@@ -228,7 +228,7 @@
 	icon_state = "razurath_coat"
 	item_state = "razurath_coat"
 
-/obj/item/clothing/suit/jacket/bomber_donor
+/obj/item/clothing/suit/jacket/bomber
 	name = "old hoodie"
 	desc = "A somewhat well worn jacket, appears to be way too big considering who owns it."
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
