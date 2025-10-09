@@ -179,6 +179,7 @@
 
 	jobtype = /datum/job/cook
 
+	id = /obj/item/card/id/cel/pirate/security
 	ears = /obj/item/radio/headset/headset_srv
 	shoes = /obj/item/clothing/shoes/laceup
 	uniform = /obj/item/clothing/under/rank/civilian/chef
