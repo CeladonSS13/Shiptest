@@ -152,6 +152,15 @@
 	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solfed
 	shoes = /obj/item/clothing/shoes/jackboots
+	backpack = /obj/item/storage/backpack/ert/engineer
+	suit = /obj/item/clothing/suit/armor/vest/solgov
+	gloves = /obj/item/clothing/gloves/combat
+	head = /obj/item/clothing/head/solgov/sonnensoldner
+	r_pocket = null
+	l_pocket = null
+	back = /obj/item/storage/backpack
+	box = /obj/item/storage/box/survival
+	backpack_contents = list(/obj/item/crowbar/power)
 
 /datum/outfit/job/solfed/marine/post_equip(mob/living/carbon/human/H)
 	. = ..()
