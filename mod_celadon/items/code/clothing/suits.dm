@@ -290,8 +290,8 @@
 /obj/item/clothing/suit/renuar
 	name = "renuar suit"
 	desc = "This is renuar suit. Worn."
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/costume.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/costume.dmi'
 	icon_state = "renuar"
 	item_state = "renuar"
 	cold_protection = CHEST | GROIN | LEGS | ARMS
