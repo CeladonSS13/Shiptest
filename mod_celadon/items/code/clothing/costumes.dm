@@ -67,7 +67,7 @@
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/hands/gloves.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/hands/overlay/hands.dmi'
 	icon_state = "syndimaid_arms"
-	mob_overlay_state = "tacticool_arms"
+	mob_overlay_state = "syndimaid_arms"
 
 /obj/item/clothing/under/costume/maid/white
 	name = "maid tacticute costume"
