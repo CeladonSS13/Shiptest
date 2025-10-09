@@ -158,7 +158,7 @@
 	head = /obj/item/clothing/head/solgov/sonnensoldner
 	r_pocket = null
 	l_pocket = null
-	back = /obj/item/storage/backpack
+	back = /obj/item/storage/backpack/solfed
 
 /datum/outfit/job/solfed/marine/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -226,7 +226,7 @@
 	head = /obj/item/clothing/head/solgov/sonnensoldner
 	r_pocket = null
 	l_pocket = null
-	back = /obj/item/storage/backpack
+	back = /obj/item/storage/backpack/solfed
 
 /datum/outfit/job/solfed/sergeant/post_equip(mob/living/carbon/human/H)
 	. = ..()
