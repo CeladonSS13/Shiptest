@@ -143,6 +143,7 @@
 		/obj/item/clothing/under/occult = 2,
 		/obj/item/clothing/suit/scraparmour = 2,
 		/obj/item/clothing/under/costume/maid_dragon = 1,
+		/obj/item/clothing/suit/renuar = 3,
 		)
 	refill_canister = /obj/item/vending_refill/clothing
 	light_mask = "sakura-light-mask"
