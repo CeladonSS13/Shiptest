@@ -984,11 +984,16 @@
 /obj/item/toy/plush/celadon/mibib
 	name = "Mibib plushie"
 	desc = "Мягкая игрушка милого животного. Вы припоминаете, что видели её в каком-то фильме, в названии которого было что-то про звёзды. Но милота игрушки совсем свела вас с ума..."
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/plushes_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/plushes_righthand.dmi'
 	icon_state = "mibib"
 	item_state = "mibib"
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/toy/plush/celadon/grogu
 	name = "Grogu plushie"
 	desc = "Мягкая игрушка милого животного. Вы припоминаете, что видели её в каком-то фильме, в названии которого было что-то про звёзды. Но милота игрушки совсем свела вас с ума..."
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/plushes_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/plushes_righthand.dmi'
 	icon_state = "grogu"
 	item_state = "grogu"
