@@ -329,8 +329,10 @@
 /datum/outfit/job/nanotrasen/cel/lawyer/corporaterepresentative
 	name = "NT - Corporate Representative"
 	id_assignment = "Corporate Representative"
-	job_icon = "nanotrasen"
 
+	job_icon = "lieutenant"
+
+	id = /obj/item/card/id/silver
 	ears = /obj/item/radio/headset/headset_cent
 	l_hand = /obj/item/clipboard
 	r_pocket = /obj/item/pen/fountain

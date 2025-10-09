@@ -11,6 +11,7 @@
 	job_icon = "assistant"
 
 	id = /obj/item/card/id/cel/inteq/recruit
+	mask = /obj/item/clothing/mask/balaclava
 	ears = /obj/item/radio/headset
 	r_pocket = /obj/item/radio
 
@@ -29,19 +30,13 @@
 	gloves = /obj/item/clothing/gloves/combat
 
 //MARK: Командир
-/datum/outfit/job/inteq/cel/honorable
+/datum/outfit/job/inteq/cel/captain/honorable
 	name = "IQ - Honorable Vanguard"
-	jobtype = /datum/job/captain
-	job_icon = "captain"
 
-	id = /obj/item/card/id/cel/inteq/vanguard
+	id = /obj/item/card/id/cel/inteq/honorable_rearguard
 	head = /obj/item/clothing/head/beret/sec/hos/inteq/honorable
-	mask = /obj/item/clothing/mask/gas/sechailer/swat
-	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
 	uniform = /obj/item/clothing/under/syndicate/inteq/honorable
 	suit = /obj/item/clothing/suit/armor/hos/inteq/honorable
-	suit_store = /obj/item/gun/ballistic/revolver/horizonx
-	gloves = /obj/item/clothing/gloves/combat
 
 //MARK: Арьергард. Rearguard
 /datum/outfit/job/inteq/cel/rearguard
@@ -97,6 +92,7 @@
 	id_assignment = "Honorable Corpsman"
 
 	id = /obj/item/card/id/cel/inteq/honorable_medic
+	head = /obj/item/clothing/head/medical/beret
 	belt = /obj/item/storage/belt/medical/webbing/paramedic
 	ears = /obj/item/radio/headset/inteq/captain
 	uniform = /obj/item/clothing/under/syndicate/inteq/corpsman
@@ -105,7 +101,6 @@
 	suit = /obj/item/clothing/suit/hooded/wintercoat/security/inteq/alt
 	alt_suit = /obj/item/clothing/suit/armor/inteq/corpsman
 	dcoat = /obj/item/clothing/suit/armor/hos/inteq
-	r_pocket = /obj/item/pda/medical
 
 	chameleon_extras = null
 
