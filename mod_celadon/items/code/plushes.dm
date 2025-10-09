@@ -987,7 +987,7 @@
 	icon_state = "mibib"
 	item_state = "mibib"
 
-/obj/item/toy/plush/celadon/mibib
+/obj/item/toy/plush/celadon/grogu
 	name = "Grogu plushie"
 	desc = "Он такой маленький и милый и зеленый."
 	icon_state = "grogu"
