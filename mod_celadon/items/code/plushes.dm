@@ -983,12 +983,12 @@
 
 /obj/item/toy/plush/celadon/mibib
 	name = "Mibib plushie"
-	desc = "Очаровательная таяра альбинос в нижнем белье, так и манит её погладить."
+	desc = "Эвок."
 	icon_state = "mibib"
 	item_state = "mibib"
 
 /obj/item/toy/plush/celadon/mibib
 	name = "Grogu plushie"
-	desc = "Очаровательная таяра альбинос в нижнем белье, так и манит её погладить."
+	desc = "Он такой маленький и милый и зеленый."
 	icon_state = "grogu"
 	item_state = "grogu"
