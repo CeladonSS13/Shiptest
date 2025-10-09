@@ -52,6 +52,9 @@ CELADON_COMPONENTS_LOGS
 - ADD -> `code/_globalvars/logging.dm` - глобалвары для логирования экономики
 - ADD -> `code/game/world.dm` - чиним на правильное логирование в нужный файл экономику
 - ADD -> `code/modules/cargo/outpost_bounty_console.dm` - вводим логирование действий по покупке и снятию денег в фракционных консолях
+
+CELADON_COMPONENTS
+- EDIT: `code/controllers/subsystem/ticker.dm`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
