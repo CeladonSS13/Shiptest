@@ -21,7 +21,7 @@
 
 /obj/item/card/id/cel/nanotrasen/nakamura_engineer
 	desc = "A NanoTrasen Nakamura ID with no proper access to speak of. This one indicates a Engineer."
-	icon_state = "idnaka_atmostechnic"
+	icon_state = "idnaka_engineer"
 	assignment = "Engineer"
 
 /obj/item/card/id/cel/nanotrasen/nakamura_assistant
