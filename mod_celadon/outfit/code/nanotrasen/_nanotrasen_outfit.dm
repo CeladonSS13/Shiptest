@@ -521,6 +521,7 @@
 	satchel = /obj/item/storage/backpack/satchel/tox
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	courierbag = /obj/item/storage/backpack/messenger/tox
+
 /// MARK: Директор СБ - ХОС капитан
 
 /datum/outfit/job/nanotrasen/cel/hos/captain
