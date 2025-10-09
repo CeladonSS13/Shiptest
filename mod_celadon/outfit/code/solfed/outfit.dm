@@ -213,6 +213,15 @@
 	uniform = /obj/item/clothing/under/solfed/camo
 	shoes = /obj/item/clothing/shoes/combat
 	backpack = /obj/item/storage/backpack/ert/engineer
+	suit = /obj/item/clothing/suit/armor/vest/solgov
+	ears = /obj/item/radio/headset/solgov/alt
+	gloves = /obj/item/clothing/gloves/combat
+	head = /obj/item/clothing/head/solgov/sonnensoldner
+	r_pocket = null
+	l_pocket = null
+	back = /obj/item/storage/backpack
+	box = /obj/item/storage/box/survival
+	backpack_contents = list(/obj/item/crowbar/power)
 
 /datum/outfit/job/solfed/sergeant/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -232,6 +241,13 @@
 	satchel = /obj/item/storage/backpack/satchel/solfed
 	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
 	courierbag = /obj/item/storage/backpack/messenger/com
+	ears = /obj/item/radio/headset/solgov/captain
+	head = /obj/item/clothing/head/solgov
+	neck = /obj/item/clothing/neck/cloak/overseer
+	suit = /obj/item/clothing/suit/armor/vest/solgov/overseer
+	backpack_contents = list(/obj/item/storage/box/ids=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
+
+	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/officer)
 
 /datum/outfit/job/solfed/hop/post_equip(mob/living/carbon/human/H)
 	. = ..()
