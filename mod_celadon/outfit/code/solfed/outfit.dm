@@ -150,12 +150,13 @@
 
 	id = /obj/item/card/id/cel/solfed/crew/marine
 	ears = /obj/item/radio/headset/solgov/alt
-	uniform = /obj/item/clothing/under/solfed
+	uniform = /obj/item/clothing/under/solfed/camo
 	shoes = /obj/item/clothing/shoes/jackboots
 	backpack = /obj/item/storage/backpack/solfed
 	suit = /obj/item/clothing/suit/armor/vest/solgov
 	gloves = /obj/item/clothing/gloves/combat
 	head = /obj/item/clothing/head/solgov/sonnensoldner
+	mask = /obj/item/clothing/mask/balaclava/combat
 	r_pocket = null
 	l_pocket = null
 	back = /obj/item/storage/backpack/solfed
