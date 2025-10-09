@@ -35,6 +35,10 @@
 	desc = "A SolFed ID with no proper access to speak of. This one indicates a Sergeant"
 	assignment = "Sergeant"
 
+/obj/item/card/id/cel/solfed/command/medical_scientist
+	desc = "A SolFed ID with no proper access to speak of. This one indicates a Medical Scientist"
+	assignment = "Medical Scientist"
+
 /obj/item/card/id/cel/solfed/crew
 	desc = "A SolFed ID with no proper access to speak of. This one indicates a Crew"
 	icon_state = "idsf_crew"

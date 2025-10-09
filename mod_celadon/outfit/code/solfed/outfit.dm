@@ -286,10 +286,14 @@
 
 	jobtype = /datum/job/paramedic
 
-/datum/outfit/job/solfed/doctor/scientist
+/datum/outfit/job/solfed/doctor/medical_scientist
 	name = "SF - Medical Scientist"
+	job_icon = "sf_command"
 
+	id = /obj/item/card/id/cel/solfed/command/medical_scientist
 	suit =  /obj/item/clothing/suit/solgov/jacket
+	head = /obj/item/clothing/head/solfed/beret
+	l_hand = /obj/item/staff/stick
 
 /datum/outfit/job/solfed/engineer
 	name = "SF - Marinemechaniker"
