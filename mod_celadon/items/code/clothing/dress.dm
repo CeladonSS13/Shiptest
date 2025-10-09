@@ -64,3 +64,43 @@
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/dress.dmi'
 	icon_state = "countess"
 	item_state = "countess"
+
+/obj/item/clothing/under/dress/black_and_white
+	name = "black and white dress"
+	desc = "The unic dress."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/dress.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/dress.dmi'
+	icon_state = "dress_black"
+	item_state = "dress_black"
+
+/obj/item/clothing/under/dress/evning_black
+	name = "evning black dress"
+	desc = "The unic dress."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/dress.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/dress.dmi'
+	icon_state = "dress_black_e"
+	item_state = "dress_black_e"
+
+/obj/item/clothing/under/dress/evning_black_open
+	name = "evning black open dress"
+	desc = "The unic dress."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/dress.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/dress.dmi'
+	icon_state = "dress_black_b"
+	item_state = "dress_black_b"
+
+/obj/item/clothing/under/dress/dress_pink_white
+	name = "white and pink dress"
+	desc = "The unic dress."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/dress.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/dress.dmi'
+	icon_state = "dress_pink"
+	item_state = "dress_pink"
+
+/obj/item/clothing/under/dress/dress_melon_white
+	name = "white of melon dress"
+	desc = "The unic dress."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/dress.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/dress.dmi'
+	icon_state = "dress_mel"
+	item_state = "dress_mel"
