@@ -71,6 +71,7 @@
 	product_slogans = "Облачись в традиции Востока!;Элегантность в каждой складке!;Кимоно - путь к гармонии!;Стиль самурая для современности!;Красота цветущей сакуры в одежде!" //Я не умею переводить на англ.язык чтобы не потерять смысл
 	vend_reply = "Спасибо за покупку! Пусть одежда принесет вам удачу!"
 	products = list(
+		/obj/item/clothing/under/dress/dress_pink_white = 5,
 		/obj/item/clothing/suit/blutigen_kimono = 5,
 		/obj/item/clothing/under/costume/kimono_sigmar = 5,
 		/obj/item/clothing/suit/kimono = 5,
@@ -117,12 +118,7 @@
 		/obj/item/clothing/under/costume/roman = 5,
 		/obj/item/clothing/under/costume/draculass = 5,
 		/obj/item/clothing/under/costume/sailor = 5,
-		/obj/item/clothing/under/costume/mech_suit = 5,
-		/obj/item/clothing/under/costume/mech_suit/blue = 5,
-		/obj/item/clothing/under/costume/mech_suit/white = 5,
 		/obj/item/clothing/under/costume/jackbros = 5,
-		/obj/item/clothing/under/costume/gladiator = 5,
-		/obj/item/clothing/under/costume/kilt = 5,
 		/obj/item/clothing/under/costume/jabroni = 1,
 		/obj/item/clothing/under/dress/pinktutu = 3,
 		/obj/item/clothing/under/dress/formal_red = 3,
@@ -133,6 +129,10 @@
 		/obj/item/clothing/under/dress/wedding/purple = 2,
 		/obj/item/clothing/under/dress/wedding/blue = 2,
 		/obj/item/clothing/under/dress/wedding/red = 2,
+		/obj/item/clothing/under/dress/black_and_white = 2,
+		/obj/item/clothing/under/dress/evning_black = 2,
+		/obj/item/clothing/under/dress/evning_black_open = 2,
+		/obj/item/clothing/under/dress/dress_melon_white = 2,
 		/obj/item/clothing/suit/jacket/cherno = 2,
 		/obj/item/clothing/suit/jacket/brasspriest = 2,
 		/obj/item/clothing/suit/razurathcoat = 2,
