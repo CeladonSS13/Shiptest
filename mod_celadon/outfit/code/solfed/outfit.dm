@@ -159,7 +159,6 @@
 	r_pocket = null
 	l_pocket = null
 	back = /obj/item/storage/backpack
-	box = /obj/item/storage/box/survival
 	backpack_contents = list(/obj/item/crowbar/power)
 
 /datum/outfit/job/solfed/marine/post_equip(mob/living/carbon/human/H)
@@ -219,7 +218,7 @@
 	jobtype = /datum/job/captain
 
 	id = /obj/item/card/id/cel/solfed/command/sergeant
-	uniform = /obj/item/clothing/under/solfed/camo
+	uniform = /obj/item/clothing/under/solfed/formal
 	shoes = /obj/item/clothing/shoes/combat
 	backpack = /obj/item/storage/backpack/ert/engineer
 	suit = /obj/item/clothing/suit/armor/vest/solgov
@@ -229,8 +228,6 @@
 	r_pocket = null
 	l_pocket = null
 	back = /obj/item/storage/backpack
-	box = /obj/item/storage/box/survival
-	backpack_contents = list(/obj/item/crowbar/power)
 
 /datum/outfit/job/solfed/sergeant/post_equip(mob/living/carbon/human/H)
 	. = ..()
