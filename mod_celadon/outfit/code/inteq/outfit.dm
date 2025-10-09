@@ -11,6 +11,8 @@
 	job_icon = "assistant"
 
 	id = /obj/item/card/id/cel/inteq/recruit
+	ears = /obj/item/radio/headset
+	r_pocket = /obj/item/radio
 
 //MARK: Капитан
 /datum/outfit/job/inteq/cel/captain
@@ -77,7 +79,15 @@
 	name = "IQ - Corpsman"
 
 	id = /obj/item/card/id/cel/inteq/medic
-	ears = /obj/item/radio/headset/inteq
+	uniform = /obj/item/clothing/under/syndicate/inteq/corpsman
+	head = /obj/item/clothing/head/soft/inteq/corpsman
+	suit = /obj/item/clothing/suit/armor/inteq/corpsman
+	shoes = /obj/item/clothing/shoes/combat
+	belt = /obj/item/storage/belt/medical/webbing/paramedic
+	ears = /obj/item/radio/headset/headset_medsec/alt
+
+	suit_store = /obj/item/flashlight/pen/paramedic
+	backpack_contents = list(/obj/item/roller=1)
 
 //MARK: Главный медик
 /datum/outfit/job/inteq/cel/cmo
@@ -106,6 +116,20 @@
 	job_icon = "lieutenant"
 
 	id = /obj/item/card/id/cel/inteq/enforcer
+	ears = /obj/item/radio/headset/alt
+	head = /obj/item/clothing/head/helmet/inteq
+	suit = /obj/item/clothing/suit/armor/vest/alt
+	belt = /obj/item/storage/belt/security/webbing/inteq
+	mask = /obj/item/clothing/mask/balaclava/inteq
+	uniform = /obj/item/clothing/under/syndicate/inteq
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security/inteq
+	shoes = /obj/item/clothing/shoes/combat
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
+	gloves = /obj/item/clothing/gloves/combat
+
+	backpack = /obj/item/storage/backpack/messenger/inteq
+	satchel = /obj/item/storage/backpack/messenger/inteq
+	courierbag = /obj/item/storage/backpack/messenger/inteq
 
 //MARK: Варден
 /datum/outfit/job/inteq/cel/warden
@@ -115,6 +139,20 @@
 
 	id = /obj/item/card/id/cel/inteq/master_at_arms
 
+	ears = /obj/item/radio/headset/inteq/alt
+	head = /obj/item/clothing/head/warden/inteq
+	uniform = /obj/item/clothing/under/syndicate/inteq
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
+	mask = /obj/item/clothing/mask/balaclava/inteq
+	belt = /obj/item/storage/belt/military/assault
+	suit = /obj/item/clothing/suit/armor/vest/security/warden/inteq
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security/inteq
+	shoes = /obj/item/clothing/shoes/combat
+	gloves = /obj/item/clothing/gloves/combat
+	suit_store = null
+
+	courierbag = /obj/item/storage/backpack/messenger/inteq
+
 //MARK: Главный инженер
 /datum/outfit/job/inteq/cel/ce
 	name = "IQ - Artificer Class One"
@@ -122,6 +160,18 @@
 	job_icon = "chiefengineer"
 
 	id = /obj/item/card/id/cel/inteq/honorable_artificer
+	ears = /obj/item/radio/headset/inteq
+	uniform = /obj/item/clothing/under/syndicate/inteq/artificer
+	head = /obj/item/clothing/head/hardhat/white
+	mask = /obj/item/clothing/mask/balaclava/inteq
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security/inteq
+	shoes = /obj/item/clothing/shoes/combat
+	gloves = /obj/item/clothing/gloves/color/yellow
+	belt = /obj/item/storage/belt/utility/full
+	belt = /obj/item/storage/belt/utility/chief/full
+	courierbag = /obj/item/storage/backpack/messenger/inteq
+
+	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced = 1)
 
 //MARK: Инженегр
 /datum/outfit/job/inteq/cel/engineer
@@ -130,3 +180,9 @@
 	job_icon = "stationengineer"
 
 	id = /obj/item/card/id/cel/inteq/artificer
+	ears = /obj/item/radio/headset/alt
+	uniform = /obj/item/clothing/under/syndicate/inteq/artificer
+	head = /obj/item/clothing/head/soft/inteq
+	shoes = /obj/item/clothing/shoes/combat
+	belt = /obj/item/storage/belt/utility/full/engi
+	r_pocket = /obj/item/t_scanner
