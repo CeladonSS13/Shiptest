@@ -557,9 +557,9 @@
 	name = "NT - Loss Prevention Lieutenant"
 	id_assignment = "Lieutenant"
 
+	id = /obj/item/card/id/lplieu
 	implants = list(/obj/item/implant/mindshield)
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
-	id = /obj/item/card/id/lplieu
 	belt = /obj/item/pda/captain
 	gloves = /obj/item/clothing/gloves/color/black
 	uniform = /obj/item/clothing/under/rank/security/head_of_security/alt/lp
@@ -576,9 +576,11 @@
 	name = "NT - LP Security Specialist"
 	id_assignment = "Security Specialist"
 
+	job_icon = "warden"
+
+	id = /obj/item/card/id/lpsec
 	implants = list(/obj/item/implant/mindshield)
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
-	id = /obj/item/card/id/lpsec
 	belt = /obj/item/pda/security
 	gloves = /obj/item/clothing/gloves/color/black
 	uniform = /obj/item/clothing/under/rank/security/head_of_security/nt/lp
@@ -594,9 +596,11 @@
 /datum/outfit/job/nanotrasen/cel/engineer/lp
 	name = "NT - LP Engineering Specialist"
 
+	job_icon = "chiefengineer"
+
+	id = /obj/item/card/id/lpengie
 	implants = list(/obj/item/implant/mindshield)
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
-	id = /obj/item/card/id/lpengie
 	gloves = /obj/item/clothing/gloves/color/yellow
 	uniform = /obj/item/clothing/under/rank/engineering/engineer/nt/lp
 	alt_uniform = /obj/item/clothing/under/rank/engineering/engineer/nt/skirt/lp
@@ -612,9 +616,11 @@
 	name = "NT - LP Medical Specialist"
 	id_assignment = "Medical Specialist"
 
+	job_icon = "chiefmedicalofficer"
+
+	id = /obj/item/card/id/lpmed
 	implants = list(/obj/item/implant/mindshield)
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
-	id = /obj/item/card/id/lpmed
 	belt = /obj/item/pda/medical
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
 	uniform = /obj/item/clothing/under/rank/medical/paramedic/lp
@@ -626,7 +632,6 @@
 	satchel = /obj/item/storage/backpack/satchel/med
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	courierbag = /obj/item/storage/backpack/messenger/med
-	box = /obj/item/storage/box/survival/medical
 
 /datum/outfit/job/nanotrasen/cel/janitor/lp
 	name = "NT - LP Janitorial Specialist"
