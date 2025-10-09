@@ -24,6 +24,9 @@
 
 	id = /obj/item/card/id/cel/nanotrasen/deforest_medic
 
+/datum/outfit/job/nanotrasen/cel/deforest_medic/paramedic
+	name = "NT DeForest - Paramedic"
+
 /datum/outfit/job/nanotrasen/cel/deforest_assistant
 	name = "NT DeForest - Assistant"
 	job_icon = "assistant"
