@@ -155,7 +155,7 @@
 	backpack = /obj/item/storage/backpack/solfed
 	suit = /obj/item/clothing/suit/armor/vest/marine
 	gloves = /obj/item/clothing/gloves/combat/solfed
-	head = /obj/item/clothing/head/beret/solgov
+	head = /obj/item/clothing/head/solfed/beret
 	mask = /obj/item/clothing/mask/balaclava/combat
 	r_pocket = null
 	l_pocket = null
@@ -185,8 +185,9 @@
 	gloves = /obj/item/clothing/gloves/combat/solfed/captain
 	ears = /obj/item/radio/headset/solgov/alt/captain
 	uniform =  /obj/item/clothing/under/solfed/formal
+	suit = /obj/item/clothing/suit/armor/vest/solgov/captain
 	shoes = /obj/item/clothing/shoes/laceup
-	head = /obj/item/clothing/head/solfed/beret
+	head = /obj/item/clothing/head/solgov/captain
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 
 	backpack = /obj/item/storage/backpack/solfed
@@ -221,10 +222,10 @@
 	uniform = /obj/item/clothing/under/solfed/formal
 	shoes = /obj/item/clothing/shoes/combat
 	backpack = /obj/item/storage/backpack/solfed
-	suit = /obj/item/clothing/suit/armor/vest/solgov
+	suit = /obj/item/clothing/suit/armor/vest/solgov/overseer
 	ears = /obj/item/radio/headset/solgov/alt
 	gloves = /obj/item/clothing/gloves/combat
-	head = /obj/item/clothing/head/solgov/sonnensoldner
+	head = /obj/item/clothing/head/solfed/beret
 	r_pocket = null
 	l_pocket = null
 	back = /obj/item/storage/backpack/solfed
