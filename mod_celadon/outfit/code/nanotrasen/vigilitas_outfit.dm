@@ -17,7 +17,7 @@
 	jobtype = /datum/job/warden
 
 	id = /obj/item/card/id/cel/nanotrasen/vigilitas_sergeant
-		belt = /obj/item/pda/heads/hos
+	belt = /obj/item/pda/heads/hos
 	ears = /obj/item/radio/headset/nanotrasen/alt
 	uniform = /obj/item/clothing/under/nanotrasen/security/director
 	alt_uniform = null
