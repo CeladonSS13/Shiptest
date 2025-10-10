@@ -67,18 +67,10 @@
 	belt = /obj/item/pda/heads/hos
 	ears = /obj/item/radio/headset/nanotrasen/alt
 	uniform = /obj/item/clothing/under/nanotrasen/security/director
-	alt_uniform = null
 	shoes = /obj/item/clothing/shoes/jackboots
-	suit = /obj/item/clothing/suit/armor/nanotrasen/slim
-	alt_suit = /obj/item/clothing/suit/armor/nanotrasen/sec_director
-	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
 	gloves = /obj/item/clothing/gloves/color/black
 	head = /obj/item/clothing/head/nanotrasen/beret/security/command
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
-	suit_store = null
-	r_pocket = /obj/item/assembly/flash/handheld
-	l_pocket = /obj/item/restraints/handcuffs
-	backpack_contents = list(/obj/item/melee/classic_baton=1)
 
 	backpack = /obj/item/storage/backpack/security
 	satchel = /obj/item/storage/backpack/satchel/sec
@@ -130,11 +122,10 @@
 	l_pocket = /obj/item/pda/engineering
 	ears = /obj/item/radio/headset/headset_eng
 	uniform = /obj/item/clothing/under/nanotrasen/engineering
-	head = /obj/item/clothing/head/hardhat/nanotrasen
-	suit = /obj/item/clothing/suit/nanotrasen/vest
+	head = /obj/item/clothing/head/hardhat
+	suit = /obj/item/clothing/suit/hazardvest
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/engineering
 	shoes = /obj/item/clothing/shoes/workboots
-	r_pocket = /obj/item/t_scanner
 
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
@@ -291,19 +282,8 @@
 
 	ears = /obj/item/radio/headset/headset_cargo/mining
 	shoes = /obj/item/clothing/shoes/workboots/mining
-	head = /obj/item/clothing/head/hardhat/nanotrasen
 	gloves = /obj/item/clothing/gloves/color/black
 	uniform = /obj/item/clothing/under/nanotrasen/supply/miner
-	suit = /obj/item/clothing/suit/nanotrasen/vest
-	dcoat = /obj/item/clothing/suit/hooded/wintercoat/miner
-	r_pocket = /obj/item/storage/bag/ore
-
-	backpack_contents = list(
-						/obj/item/flashlight/seclite=1,
-						/obj/item/melee/knife/survival=1,
-						/obj/item/stack/marker_beacon/ten=1,
-						/obj/item/radio/weather_monitor=1,
-						)
 
 	backpack = /obj/item/storage/backpack/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
@@ -336,27 +316,6 @@
 	ears = /obj/item/radio/headset/headset_cent
 	l_hand = /obj/item/clipboard
 	r_pocket = /obj/item/pen/fountain
-
-
-/datum/outfit/job/nanotrasen/cel/doctor/lp
-	job_icon = "assistant"
-	name = "NT - LP Medical Specialist"
-	id_assignment = "Medical Specialist"
-
-	implants = list(/obj/item/implant/mindshield)
-	ears = /obj/item/radio/headset/nanotrasen/alt/captain
-	id = /obj/item/card/id/lpmed
-	belt = /obj/item/pda/medical
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile
-	uniform = /obj/item/clothing/under/rank/medical/paramedic/lp
-	alt_uniform = /obj/item/clothing/under/rank/medical/paramedic/skirt/lp
-	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
-	shoes = /obj/item/clothing/shoes/sneakers/white
-	head = /obj/item/clothing/head/beret/med
-
-	satchel = /obj/item/storage/backpack/satchel/med
-	duffelbag = /obj/item/storage/backpack/duffelbag/med
-	courierbag = /obj/item/storage/backpack/messenger/med
 
 /datum/outfit/job/nanotrasen/cel/chemist
 	job_icon = "chemist"
@@ -650,6 +609,32 @@
 	belt = /obj/item/storage/belt/janitor
 	gloves = /obj/item/clothing/gloves/color/purple
 	back = /obj/item/storage/backpack/ert/janitor
+
+/datum/outfit/job/nanotrasen/cel/miner/lp
+	job_icon = "shaftminer"
+	name = "NT - LP Miner"
+
+	ears = /obj/item/radio/headset/headset_cargo/mining
+	shoes = /obj/item/clothing/shoes/workboots/mining
+	head = /obj/item/clothing/head/hardhat/nanotrasen
+	gloves = /obj/item/clothing/gloves/color/black
+	uniform = /obj/item/clothing/under/nanotrasen/supply/miner
+	suit = /obj/item/clothing/suit/nanotrasen/vest
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/miner
+	r_pocket = /obj/item/storage/bag/ore
+
+	backpack_contents = list(
+						/obj/item/flashlight/seclite = 1,
+						/obj/item/melee/knife/survival = 1,
+						/obj/item/stack/marker_beacon/ten = 1,
+						/obj/item/radio/weather_monitor = 1,
+						)
+
+	backpack = /obj/item/storage/backpack/explorer
+	satchel = /obj/item/storage/backpack/satchel/explorer
+	duffelbag = /obj/item/storage/backpack/duffelbag
+
+	chameleon_extras = /obj/item/gun/energy/kinetic_accelerator
 
 // Assistant
 /datum/outfit/job/nanotrasen/cel/assistant

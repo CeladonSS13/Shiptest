@@ -273,7 +273,11 @@
 	ears = /obj/item/radio/headset/headset_med
 	accessory = /obj/item/clothing/accessory/armband/medblue
 	l_hand = /obj/item/storage/firstaid/medical
+	belt = /obj/item/pda/medical
+	gloves = /obj/item/clothing/gloves/color/latex/nitrile
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
 	backpack = /obj/item/storage/backpack/solfed
+
 	satchel = /obj/item/storage/backpack/satchel/solfed
 	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
 	courierbag = /obj/item/storage/backpack/messenger/med
