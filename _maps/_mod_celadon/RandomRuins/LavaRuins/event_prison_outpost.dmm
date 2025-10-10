@@ -122,14 +122,16 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland)
 "bp" = (
-/obj/structure/bed{
-	dir = 4
-	},
-/obj/item/bedsheet/solgov{
+/obj/effect/turf_decal/trimline/transparent/vired/filled/warning{
 	dir = 1
 	},
-/turf/open/floor/wood,
-/area/ruin/lavaland)
+/obj/effect/turf_decal/trimline/transparent/vired/filled/warning,
+/obj/machinery/light/small/directional/east{
+	color = "#FF0000";
+	light_color = "#FF0000"
+	},
+/turf/open/floor/plasteel/dark,
+/area/centcom/prison)
 "bG" = (
 /obj/machinery/computer/prisoner{
 	dir = 8
@@ -288,6 +290,10 @@
 	pixel_y = -3
 	},
 /obj/item/pipe_dispenser,
+/obj/machinery/light/small/directional/east{
+	color = "#FF0000";
+	light_color = "#FF0000"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland)
 "dj" = (
@@ -678,7 +684,6 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland)
 "jM" = (
@@ -1124,10 +1129,13 @@
 /turf/open/floor/plasteel/white,
 /area/ruin/lavaland)
 "pR" = (
-/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/trimline/transparent/vired/filled/warning,
 /obj/effect/turf_decal/trimline/transparent/vired/filled/warning{
 	dir = 1
+	},
+/obj/machinery/light/small/directional/east{
+	color = "#FF0000";
+	light_color = "#FF0000"
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/prison)
@@ -1330,6 +1338,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "tX" = (
+/mob/living/simple_animal/hostile/cavern_geist/augmented,
 /turf/open/floor/noslip,
 /area/ruin/lavaland)
 "tZ" = (
@@ -2206,12 +2215,15 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "Fq" = (
-/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/trimline/transparent/vired/warning{
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/transparent/vired/filled/warning{
 	dir = 4
+	},
+/obj/machinery/light/small/directional/east{
+	color = "#FF0000";
+	light_color = "#FF0000"
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/prison)
@@ -2329,8 +2341,11 @@
 /turf/open/floor/plasteel/patterned,
 /area/ruin/lavaland)
 "GO" = (
-/obj/machinery/light/directional/east,
 /obj/structure/tank_dispenser/oxygen,
+/obj/machinery/light/small/directional/east{
+	color = "#FF0000";
+	light_color = "#FF0000"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "GR" = (
@@ -2455,13 +2470,10 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "Iz" = (
-/obj/machinery/light/directional/north,
-/obj/effect/turf_decal/trimline/transparent/vired/filled/warning{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/transparent/vired/filled/warning,
-/turf/open/floor/plasteel/dark,
-/area/centcom/prison)
+/obj/effect/mob_spawn/human/event_escape_from_prison/guard,
+/obj/item/bedsheet/solgov,
+/turf/open/floor/wood,
+/area/ruin/lavaland)
 "IE" = (
 /obj/effect/turf_decal/corner/opaque/solgovgold/diagonal{
 	dir = 4
@@ -2942,15 +2954,9 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland)
 "NQ" = (
-/obj/machinery/light/directional/south,
-/obj/effect/turf_decal/trimline/transparent/vired/warning{
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/transparent/vired/filled/warning{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/prison)
+/mob/living/simple_animal/hostile/cavern_geist,
+/turf/open/floor/plating/asteroid/basalt/lava,
+/area/ruin/lavaland)
 "NW" = (
 /obj/machinery/light/small/directional/west,
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
@@ -3164,11 +3170,14 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland)
 "Ro" = (
-/obj/machinery/light/small/directional/east,
 /obj/machinery/atmospherics/components/binary/volume_pump/on/layer4{
 	dir = 8
 	},
 /obj/effect/turf_decal/corner/transparent/nsorange/mono,
+/obj/machinery/light/small/directional/east{
+	color = "#FF0000";
+	light_color = "#FF0000"
+	},
 /turf/open/floor/plasteel/heavymetal/var2,
 /area/ruin/lavaland)
 "Rr" = (
@@ -6113,8 +6122,8 @@ kg
 kg
 kg
 kg
-kg
-kg
+ww
+ww
 kg
 kg
 kg
@@ -6189,8 +6198,8 @@ kg
 kg
 kg
 kg
-kg
-kg
+ww
+NQ
 kg
 kg
 kg
@@ -6266,8 +6275,8 @@ kg
 kg
 kg
 kg
-kg
-kg
+ww
+ww
 kg
 kg
 kg
@@ -6343,7 +6352,7 @@ kg
 kg
 kg
 kg
-kg
+ww
 kg
 kg
 kg
@@ -6418,9 +6427,9 @@ kg
 kg
 kg
 kg
-kg
-kg
-kg
+ww
+ww
+ww
 kg
 kg
 kg
@@ -6495,7 +6504,7 @@ kg
 kg
 kg
 kg
-kg
+ww
 kg
 kg
 kg
@@ -6523,15 +6532,15 @@ kg
 Jz
 Sz
 sL
-bp
+yj
 Jz
 Sz
 sL
-bp
+yj
 Jz
 Sz
 sL
-bp
+yj
 Jz
 kg
 kg
@@ -6675,15 +6684,15 @@ kg
 Jz
 AA
 Mo
-yj
+Iz
 Jz
 AA
 Mo
-yj
+Iz
 Jz
 AA
 Mo
-yj
+Iz
 Jz
 kg
 kg
@@ -9170,7 +9179,7 @@ Sj
 Hh
 ng
 BT
-NQ
+Hh
 Sj
 kg
 kg
@@ -9322,7 +9331,7 @@ Sj
 Fq
 VQ
 VQ
-VQ
+Fq
 Sj
 kg
 kg
@@ -9471,7 +9480,7 @@ kg
 kg
 kg
 Sj
-Iz
+PP
 jM
 jM
 tx
@@ -9623,7 +9632,7 @@ ww
 kg
 kg
 Sj
-PP
+bp
 jM
 jM
 pR
