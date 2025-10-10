@@ -92,7 +92,7 @@
 	id_assignment = "Honorable Corpsman"
 
 	id = /obj/item/card/id/cel/inteq/honorable_medic
-	head = /obj/item/clothing/head/medical/beret/beret
+	head = /obj/item/clothing/head/beret/cmo
 	belt = /obj/item/storage/belt/medical/webbing/paramedic
 	ears = /obj/item/radio/headset/inteq/captain
 	uniform = /obj/item/clothing/under/syndicate/inteq/corpsman
