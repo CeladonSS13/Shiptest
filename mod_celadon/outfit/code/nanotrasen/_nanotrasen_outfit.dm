@@ -167,14 +167,14 @@
 
 	ears = /obj/item/radio/headset/headset_med
 	uniform = /obj/item/clothing/under/nanotrasen/medical/paramedic
-	head = /obj/item/clothing/head/nanotrasen/cap/medical
+	head = null
 	shoes = /obj/item/clothing/shoes/sneakers/blue
-	suit =  /obj/item/clothing/suit/toggle/labcoat/nanotrasen/paramedic
+	suit =  null
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical/paramedic
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile
+	gloves = null
 	id = /obj/item/card/id
 
-	backpack_contents = list(/obj/item/roller=1)
+	backpack_contents = null
 
 	backpack = /obj/item/storage/backpack/medic
 	satchel = /obj/item/storage/backpack/satchel/med
@@ -282,8 +282,8 @@
 
 	ears = /obj/item/radio/headset/headset_cargo/mining
 	shoes = /obj/item/clothing/shoes/workboots/mining
-	gloves = /obj/item/clothing/gloves/color/black
 	uniform = /obj/item/clothing/under/nanotrasen/supply/miner
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/miner
 
 	backpack = /obj/item/storage/backpack/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
@@ -348,6 +348,7 @@
 	jobtype = /datum/job/rd
 
 	id = /obj/item/card/id/silver
+	head = /obj/item/clothing/head/beret/rd
 	ears = /obj/item/radio/headset/nanotrasen
 	uniform = /obj/item/clothing/under/nanotrasen/science/director
 	shoes = /obj/item/clothing/shoes/sneakers/brown
