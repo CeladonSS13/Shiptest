@@ -430,3 +430,102 @@
 /datum/outfit/job/solfed/engineer/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_engineer_access(H)
+
+// Группа быстрого реагирования (ERT)
+
+/datum/outfit/job/solfed/captain/combat
+	name = "SolFed - Kommandant"
+	jobtype = /datum/job/captain
+	job_icon = "solgovrepresentative"
+	id = /obj/item/card/id/solfed/commander
+
+	gloves = /obj/item/clothing/gloves/combat/solfed
+	ears = /obj/item/radio/headset/solgov/alt/captain
+	uniform = /obj/item/clothing/under/solfed/formal
+	shoes = /obj/item/clothing/shoes/jackboots/knife
+	head = /obj/item/clothing/head/solfed/beret
+	belt = /obj/item/storage/belt/military/solfed
+	suit = /obj/item/clothing/suit/armor/solfed/formal
+	mask = /obj/item/clothing/mask/gas/solfed
+
+	backpack = /obj/item/storage/backpack/solfed
+	satchel = /obj/item/storage/backpack/satchel/solfed
+	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
+
+	accessory = null
+
+/datum/outfit/job/solfed/sergeant/combat
+	name = "SolFed - Feldwebel"
+	jobtype = /datum/job/captain
+	job_icon = "solgovrepresentative"
+	id = /obj/item/card/id/solfed
+
+	gloves = /obj/item/clothing/gloves/combat/solfed
+	mask = /obj/item/clothing/mask/gas/solfed
+	ears = /obj/item/radio/headset/solgov/alt
+	uniform = /obj/item/clothing/under/solfed/camo
+	shoes = /obj/item/clothing/shoes/jackboots/knife
+	head = /obj/item/clothing/head/solfed/beret
+	belt = /obj/item/storage/belt/military/solfed
+	suit = /obj/item/clothing/suit/armor/vest/marine
+
+	backpack = /obj/item/storage/backpack/solfed
+	satchel = /obj/item/storage/backpack/satchel/solfed
+	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
+
+/datum/outfit/job/solfed/marine/combat
+	name = "SolFed - Marine"
+	jobtype = /datum/job/officer
+	job_icon = "sonnensoldner"
+	id = /obj/item/card/id/solfed
+
+	gloves = /obj/item/clothing/gloves/combat/solfed
+	mask = /obj/item/clothing/mask/gas/solfed
+	ears = /obj/item/radio/headset/solgov/alt
+	uniform = /obj/item/clothing/under/solfed/camo
+	shoes = /obj/item/clothing/shoes/jackboots/knife
+	head = /obj/item/clothing/head/helmet/solfed/m11
+	belt = /obj/item/storage/belt/military/solfed
+	suit = /obj/item/clothing/suit/armor/vest/marine/medium
+
+	backpack = /obj/item/storage/backpack/solfed
+	satchel = /obj/item/storage/backpack/satchel/solfed
+	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
+
+/datum/outfit/job/solfed/doctor/combat
+	name = "SolFed - Meeresarzt"
+	jobtype = /datum/job/paramedic
+	job_icon = "medicaldoctor"
+	id = /obj/item/card/id/solfed
+
+	gloves = /obj/item/clothing/gloves/color/latex/nitrile
+	mask = /obj/item/clothing/mask/gas/solfed
+	ears = /obj/item/radio/headset/solgov/alt
+	uniform = /obj/item/clothing/under/solfed/medical
+	shoes = /obj/item/clothing/shoes/jackboots/knife
+	head = /obj/item/clothing/head/helmet/solfed/m11
+	belt = /obj/item/storage/belt/military/solfed/medical
+	suit = /obj/item/clothing/suit/armor/vest/marine
+
+	backpack = /obj/item/storage/backpack/solfed
+	satchel = /obj/item/storage/backpack/satchel/solfed
+	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
+
+/datum/outfit/job/solfed/engineer/combat
+	name = "SolFed - Marinemechaniker"
+	jobtype = /datum/job/engineer
+	job_icon = "stationengineer"
+	id = /obj/item/card/id/solfed
+
+	gloves = /obj/item/clothing/gloves/combat/solfed
+	mask = /obj/item/clothing/mask/gas/solfed
+	ears = /obj/item/radio/headset/solgov/alt
+	uniform = /obj/item/clothing/under/solfed/industrial
+	shoes = /obj/item/clothing/shoes/jackboots/knife
+	head = /obj/item/clothing/head/helmet/solfed/m11
+	belt = /obj/item/storage/belt/utility/full/engi
+	suit = /obj/item/clothing/suit/armor/vest/marine
+
+	backpack = /obj/item/storage/backpack/solfed
+	satchel = /obj/item/storage/backpack/satchel/solfed
+	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
