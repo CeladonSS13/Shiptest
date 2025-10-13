@@ -67,7 +67,10 @@
 			message_admins("A restart vote has passed, but there are active admins on with +SERVER, so it has been canceled. If you wish, you may restart the server.")
 			return
 
-		SSticker.Reboot("Restart vote successful.", "restart vote", 1)
+		// [CELADON-EDIT] - CELADON_DEBUG - Увеличиваем задержку с 0.1 сек до 1 сек, чтобы дать другим процессам успеть завершиться
+		// SSticker.Reboot("Restart vote successful.", "restart vote", 1)	// ORIGINAL
+		SSticker.Reboot("Restart vote successful.", "restart vote", 10)
+		// [/CELADON-EDIT]
 		return
 
 	CRASH("[type] wasn't passed a valid winning choice. (Got: [winning_option || "null"])")

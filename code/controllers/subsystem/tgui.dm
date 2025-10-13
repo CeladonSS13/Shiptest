@@ -151,19 +151,30 @@ SUBSYSTEM_DEF(tgui)
 		mob/user,
 		datum/src_object,
 		datum/tgui/ui)
+	log_game("TGUI_DEBUG: try_update_ui called for [src_object] by [user?.ckey || "null"]")
+
 	// Look up a UI if it wasn't passed
 	if(isnull(ui))
 		ui = get_open_ui(user, src_object)
+		log_game("TGUI_DEBUG: get_open_ui returned [ui ? "found UI" : "null"]")
+
 	// Couldn't find a UI.
 	if(isnull(ui))
+		log_game("TGUI_DEBUG: No UI found, returning null")
 		return null
+
 	ui.process_status()
+	log_game("TGUI_DEBUG: UI status after process_status: [ui.status]")
+
 	// UI ended up with the closed status
 	// or is actively trying to close itself.
 	// FIXME: Doesn't actually fix the paper bug.
 	if(ui.status <= UI_CLOSE)
+		log_game("TGUI_DEBUG: UI status <= UI_CLOSE, closing UI")
 		ui.close()
 		return null
+
+	log_game("TGUI_DEBUG: Sending UI update")
 	ui.send_update()
 	return ui
 
@@ -297,13 +308,18 @@ SUBSYSTEM_DEF(tgui)
  * required ui datum/tgui The UI to be added.
  */
 /datum/controller/subsystem/tgui/proc/on_open(datum/tgui/ui)
+	log_admin("TGUI_DEBUG: on_open called for [ui.src_object] by [ui.user?.ckey || "null"]")
+
 	var/key = "[REF(ui.src_object)]"
 	if(isnull(open_uis_by_src[key]) || !istype(open_uis_by_src[key], /list))
 		open_uis_by_src[key] = list()
+		log_admin("TGUI_DEBUG: Created new UI list for key [key]")
+
 	ui.user.tgui_open_uis |= ui
 	var/list/uis = open_uis_by_src[key]
 	uis |= ui
 	open_uis |= ui
+	log_admin("TGUI_DEBUG: UI successfully added to tracking lists")
 
 /**
  * private
@@ -315,18 +331,26 @@ SUBSYSTEM_DEF(tgui)
  * return bool If the UI was removed or not.
  */
 /datum/controller/subsystem/tgui/proc/on_close(datum/tgui/ui)
+	log_admin("TGUI_DEBUG: on_close called for [ui.src_object] by [ui.user?.ckey || "null"]")
+
 	var/key = "[REF(ui.src_object)]"
 	if(isnull(open_uis_by_src[key]) || !istype(open_uis_by_src[key], /list))
+		log_admin("TGUI_DEBUG: No UI list found for key [key], returning FALSE")
 		return FALSE
+
 	// Remove it from the list of processing UIs.
 	open_uis.Remove(ui)
 	// If the user exists, remove it from them too.
 	if(ui.user)
 		ui.user.tgui_open_uis.Remove(ui)
+
 	var/list/uis = open_uis_by_src[key]
 	uis.Remove(ui)
 	if(length(uis) == 0)
 		open_uis_by_src.Remove(key)
+		log_admin("TGUI_DEBUG: Removed empty UI list for key [key]")
+
+	log_admin("TGUI_DEBUG: UI successfully removed from tracking lists")
 	return TRUE
 
 /**

@@ -169,10 +169,19 @@
 	SSredbot.send_discord_message("ooc", "**The round has ended.**")
 	log_game("The round has ended.")
 
+	// [CELADON-ADD] - CELADON_DEBUG - Логируем
+	log_game("ROUNDEND_DEBUG: round_end_events before execution: [round_end_events ? "[length(round_end_events)] callbacks" : "NULL/EMPTY"]")
+	if(round_end_events)
+		for(var/i = 1; i <= length(round_end_events); i++)
+			var/datum/callback/cb = round_end_events[i]
+			log_game("ROUNDEND_DEBUG: Callback [i]: [cb] - [cb?.object].[cb?.delegate]")
+	// [/CELADON-ADD]
 	for(var/I in round_end_events)
 		var/datum/callback/cb = I
 		cb.InvokeAsync()
+	log_game("ROUNDEND_DEBUG: About to clear round_end_events list")	// [CELADON-ADD] - CELADON_DEBUG - Логируем
 	LAZYCLEARLIST(round_end_events)
+	log_game("ROUNDEND_DEBUG: round_end_events after clearing: [round_end_events ? "[length(round_end_events)] items" : "NULL/EMPTY"]")	// [CELADON-ADD] - CELADON_DEBUG - Логируем
 
 	var/speed_round = FALSE
 	if(world.time - SSticker.round_start_time <= 300 SECONDS)

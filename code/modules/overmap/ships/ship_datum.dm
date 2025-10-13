@@ -166,9 +166,13 @@
 	// [CELADON-EDIT] - CELADON_OVERMAP_STUFF - Это вагабонд насрал
 	//	if(movement_callback_id)
 	//		deltimer(movement_callback_id, SSovermap_movement)
+	log_game("SHIP_DESTROY_DEBUG: [src] ([type]) starting Destroy() process")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 	clear_trails()
+	log_game("SHIP_DESTROY_DEBUG: [src] trails cleared")// [CELADON-ADD] - CELADON_DEBUG - Логируем
+	var/result = ..()
+	log_game("SHIP_DESTROY_DEBUG: [src] parent Destroy() returned: [result]")// [CELADON-ADD] - CELADON_DEBUG - Логируем
+	return result
 	// [/CELADON-EDIT]
-	return ..()
 
 /datum/overmap/ship/complete_dock(datum/overmap/dock_target, datum/docking_ticket/ticket)
 	. = ..()

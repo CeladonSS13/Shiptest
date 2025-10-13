@@ -68,7 +68,10 @@ the parameters are from the client, meaning object is what they clicked on, not 
 		if(istype(object, /obj/overmap))
 			var/obj/overmap/selected_token = object
 			log_admin("Build Mode: [key_name(target_client)] deleted [selected_token.name] at [AREACOORD(object)] [selected_token.parent.x], [selected_token.parent.y].")
+			log_game("BUILDMODE_DELETE_DEBUG: Attempting to delete [selected_token.parent] ([selected_token.parent.type])")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 			qdel(selected_token.parent)
+			log_game("BUILDMODE_DELETE_DEBUG: qdel() called, checking if still exists...")// [CELADON-ADD] - CELADON_DEBUG - Логируем
+			addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(log_game), "BUILDMODE_DELETE_DEBUG: 1 second later - object still exists: [!QDELETED(selected_token.parent)]"), 1 SECONDS)// [CELADON-ADD] - CELADON_DEBUG - Добавляем таймер
 
 	else if (right_click && alt_click)
 		if(check_rights(R_DEBUG|R_SERVER))	//Prevents buildmoded non-admins from breaking everything.

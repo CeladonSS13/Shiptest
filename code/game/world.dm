@@ -239,16 +239,22 @@ GLOBAL_VAR(restart_counter)
 	qdel(src)	//shut it down
 
 /world/Reboot(reason = 0, fast_track = FALSE)
+	log_game("WORLD_REBOOT_DEBUG: world.Reboot() called with reason=[reason], fast_track=[fast_track]")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 	if (reason || fast_track) //special reboot, do none of the normal stuff
+		log_game("WORLD_REBOOT_DEBUG: Special reboot mode - skipping normal shutdown")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 		if (usr)
 			log_admin("[key_name(usr)] Has requested an immediate world restart via client side debugging tools")
 			message_admins("[key_name_admin(usr)] Has requested an immediate world restart via client side debugging tools")
 		to_chat(world, span_boldannounce("Rebooting World immediately due to host request."))
 	else
+		log_game("WORLD_REBOOT_DEBUG: Normal reboot mode - running Master.Shutdown()")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 		to_chat(world, span_boldannounce("Rebooting world..."))
 		Master.Shutdown()	//run SS shutdowns
+		log_game("WORLD_REBOOT_DEBUG: Master.Shutdown() completed")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 
+	log_game("WORLD_REBOOT_DEBUG: About to call TgsReboot()")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 	TgsReboot()
+	log_game("WORLD_REBOOT_DEBUG: TgsReboot() completed")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 
 #ifdef UNIT_TESTS
 	FinishTestRun()
@@ -272,11 +278,16 @@ GLOBAL_VAR(restart_counter)
 					do_hard_reboot = FALSE
 
 		if(do_hard_reboot)
+			log_admin("WORLD_REBOOT_DEBUG: Performing hard reboot")
 			log_world("World hard rebooted at [time_stamp()]")
 			shutdown_logging() // See comment below.
+			log_admin("WORLD_REBOOT_DEBUG: About to call TgsEndProcess()")
 			TgsEndProcess()
+			log_admin("WORLD_REBOOT_DEBUG: TgsEndProcess() completed - this should not appear")
 
+	log_admin("WORLD_REBOOT_DEBUG: Performing normal reboot")
 	log_world("World rebooted at [time_stamp()]")
+	log_admin("WORLD_REBOOT_DEBUG: About to shutdown logging and call parent")
 	shutdown_logging() // Past this point, no logging procs can be used, at risk of data loss.
 	..()
 

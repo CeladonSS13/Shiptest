@@ -192,36 +192,47 @@
 	return source_template.faction
 
 /datum/overmap/ship/controlled/Destroy()
+	log_game("CONTROLLED_SHIP_DESTROY_DEBUG: [src] ([type]) starting Destroy() process")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 	//SHOULD be called first
 	. = ..()
+	log_game("CONTROLLED_SHIP_DESTROY_DEBUG: [src] parent Destroy() returned: [.]")// [CELADON-ADD] - CELADON_DEBUG - Логируем
+	log_game("CONTROLLED_SHIP_DESTROY_DEBUG: [src] removing from SSovermap lists")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 	SSovermap.controlled_ships -= src
 	current_overmap.controlled_ships -= src
+	log_game("CONTROLLED_SHIP_DESTROY_DEBUG: [src] clearing helms and missions")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 	helms.Cut()
 	QDEL_LIST(missions)
 	LAZYCLEARLIST(owner_candidates)
+	log_game("CONTROLLED_SHIP_DESTROY_DEBUG: [src] handling shuttle_port: [shuttle_port]")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 	if(!QDELETED(shuttle_port))
 		shuttle_port.current_ship = null
 		qdel(shuttle_port, TRUE)
 		shuttle_port = null
+	log_game("CONTROLLED_SHIP_DESTROY_DEBUG: [src] handling accounts")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 	if(!QDELETED(ship_account))
 		QDEL_NULL(ship_account)
 	if(!QDELETED(shipkey))
 		QDEL_NULL(shipkey)
+	log_game("CONTROLLED_SHIP_DESTROY_DEBUG: [src] clearing lists")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 	manifest.Cut()
 	crew_bank_accounts.Cut()
 	job_holder_refs.Cut()
 	job_slots.Cut()
 	blacklisted.Cut()
+	log_game("CONTROLLED_SHIP_DESTROY_DEBUG: [src] handling applications")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 	for(var/a_key in applications)
 		if(isnull(applications[a_key]))
 			continue
 		// it handles removal itself
 		qdel(applications[a_key])
 	LAZYCLEARLIST(applications)
+	log_game("CONTROLLED_SHIP_DESTROY_DEBUG: [src] updating TGUIs")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 	GLOB.ship_select_tgui?.update_static_data_for_all_viewers()
 	GLOB.crew_manifest_tgui?.update_static_data_for_all_viewers()
 	// set ourselves to ownerless to unregister signals
+	log_game("CONTROLLED_SHIP_DESTROY_DEBUG: [src] setting owner to null")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 	set_owner_mob(null)
+	log_game("CONTROLLED_SHIP_DESTROY_DEBUG: [src] Destroy() completed")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 
 /datum/overmap/ship/controlled/get_jump_to_turf()
 	return get_turf(shuttle_port)

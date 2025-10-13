@@ -523,28 +523,40 @@ SUBSYSTEM_DEF(ticker)
 
 /datum/controller/subsystem/ticker/proc/Reboot(reason, end_string, delay)
 	set waitfor = FALSE
+	log_game("REBOOT_DEBUG: Reboot() called with reason=[reason], end_string=[end_string], delay=[delay]")// [CELADON-ADD] - CELADON_DEBUG - Логируем
+
 	if(usr && !check_rights(R_SERVER, TRUE))
+		log_game("REBOOT_DEBUG: Reboot cancelled - insufficient rights for user [usr]")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 		return
 
 	if(!delay)
 		delay = CONFIG_GET(number/round_end_countdown) * 10
+		log_game("REBOOT_DEBUG: No delay specified, using config default: [delay]")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 
 	var/skip_delay = check_rights()
+	log_game("REBOOT_DEBUG: skip_delay=[skip_delay], delay_end=[delay_end]")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 	if(delay_end && !skip_delay)
+		log_game("REBOOT_DEBUG: Reboot delayed by admin - delay_end=TRUE")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 		to_chat(world, span_boldannounce("An admin has delayed the round end."))
 		return
 
+	log_game("REBOOT_DEBUG: Starting reboot countdown with delay [delay]")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 	to_chat(world, span_boldannounce("Rebooting World in [DisplayTimeText(delay)]. [reason]"))
 
 	var/start_wait = world.time
+	log_game("REBOOT_DEBUG: Waiting for round_end_sound_sent=[round_end_sound_sent] at time [start_wait]")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 	UNTIL(round_end_sound_sent || (world.time - start_wait) > (delay * 2))	//don't wait forever
+	log_game("REBOOT_DEBUG: Sound wait finished. round_end_sound_sent=[round_end_sound_sent], time_elapsed=[world.time - start_wait]")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 	sleep(delay - (world.time - start_wait))
+	log_game("REBOOT_DEBUG: Sleep finished. Current time=[world.time], delay_end=[delay_end]")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 
 	if(delay_end && !skip_delay)
+		log_game("REBOOT_DEBUG: Reboot cancelled after sleep - delay_end became TRUE")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 		to_chat(world, span_boldannounce("Reboot was cancelled by an admin."))
 		return
 	if(end_string)
 		end_state = end_string
+		log_game("REBOOT_DEBUG: End state set to [end_string]")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 
 	var/statspage = CONFIG_GET(string/roundstatsurl)
 	var/gamelogloc = CONFIG_GET(string/gamelogurl)
@@ -553,9 +565,11 @@ SUBSYSTEM_DEF(ticker)
 	else if(gamelogloc)
 		to_chat(world, span_info("Round logs can be located <a href=\"[gamelogloc]\">at this website!</a>"))
 
+	log_game("REBOOT_DEBUG: About to call world.Reboot() - final step")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 	log_game(span_boldannounce("Rebooting World. [reason]"))
 
 	world.Reboot()
+	log_game("REBOOT_DEBUG: world.Reboot() call completed - this should not appear if reboot worked")// [CELADON-ADD] - CELADON_DEBUG - Логируем
 
 /datum/controller/subsystem/ticker/Shutdown()
 	gather_newscaster() //called here so we ensure the log is created even upon admin reboot
