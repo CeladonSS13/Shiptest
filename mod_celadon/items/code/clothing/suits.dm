@@ -100,6 +100,15 @@
 	item_state = "MajimaJacket"
 	body_parts_covered = ARMS
 
+/obj/item/clothing/suit/dutch
+	name = "dutch's jacket"
+	desc = "For those long nights on the beach in Tahiti."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
+	icon_state = "DutchJacket"
+	item_state = "DutchJacket"
+	body_parts_covered = ARMS
+
 /obj/item/clothing/suit/armadyne
 	name = "Red Coat"
 	desc = "A greatcoat enhanced with a special style for those with a commanding presence."
