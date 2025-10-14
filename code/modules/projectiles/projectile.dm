@@ -530,7 +530,7 @@
 			return FALSE
 	else
 		var/mob/living/L = target
-		// [CELADON-EDIT] - CELADON_BALANCE - Делаем шансы на попадания
+		// [CELADON-EDIT] - BALANCE_CAN_HIT_TARGET - Делаем шансы на попадания
 		if(iscarbon(L))
 			if(direct_target && !L.density && firer.density && prob(90)) // 85% что пуля попадет в лежащую цель от стоящего стрелка
 				return TRUE
@@ -544,7 +544,7 @@
 		// If target not able to use items, move and stand - or if they're just dead, pass over.
 		if(L.stat || (!hit_stunned_targets && HAS_TRAIT(L, TRAIT_IMMOBILIZED) && HAS_TRAIT(L, TRAIT_FLOORED) && HAS_TRAIT(L, TRAIT_HANDS_BLOCKED)))
 			return FALSE
-	// [CELADON-EDIT] - CELADON_BALANCE - Делаем шансы на попадания
+	// [CELADON-EDIT] - BALANCE_CAN_HIT_TARGET - Делаем шансы на попадания
 	// return TRUE 	// CELADON-EDIT - ORIGINAL
 	if(prob(50))	// С вероятность 50% шальная пуля зацепит лежащего
 		return TRUE

@@ -96,7 +96,8 @@ EDIT: `code/__DEFINES/turfs.dm`	- Меняем минимальный урон �
 EDIT: `code/game/turfs/closed/walls.dm` - Меняем хп стены в 2 раза = 800, увеличиваем минимальный порог урона с 8 до 25
 EDIT: `code/game/turfs/closed/minerals.dm` - Убираем флаг на минимальный дамаг стене, назначаем числовой параметр. И даем сопротивление стене из камня в 70% и хп в 1200
 
-EDIT: `code/modules/projectiles/projectile.dm` : Меняем систему лежания и попадания по лежачим и стоячи
+BALANCE_CAN_HIT_TARGET
+- EDIT: `code/modules/projectiles/projectile.dm` : Меняем систему лежания и попадания по лежачим и стоячи
 
 EDIT: `code/modules/modular_computers/file_system/programs/radar.dm` : ставим заглушку, чтобы не пользовались планшетиком с радарчиком, пока кодеры не придумают иной вариант. Главное не забыть
 
