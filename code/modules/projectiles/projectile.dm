@@ -532,11 +532,11 @@
 		var/mob/living/L = target
 		// [CELADON-EDIT] - CELADON_BALANCE - Делаем шансы на попадания
 		if(iscarbon(L))
-			if(direct_target && !L.density && firer.density && prob(85)) // 85% что пуля попадет в лежащую цель от стоящего стрелка
+			if(direct_target && !L.density && firer.density && prob(90)) // 85% что пуля попадет в лежащую цель от стоящего стрелка
 				return TRUE
-			if(direct_target && !L.density && !firer.density && prob(70)) // 70% что пуля попадет в лежащую цель от лежащего стрелка
+			if(direct_target && !L.density && !firer.density && prob(75)) // 75% что пуля попадет в лежащую цель от лежащего стрелка
 				return TRUE
-			if(direct_target && L.density && !firer.density && prob(90)) // 90% пуля попадет в стоящую цель от лежачего стрелка
+			if(direct_target && L.density && !firer.density && prob(60)) // 60% пуля попадет в стоящую цель от лежачего стрелка
 				return TRUE
 		else if(direct_target)
 			return TRUE
@@ -546,7 +546,7 @@
 			return FALSE
 	// [CELADON-EDIT] - CELADON_BALANCE - Делаем шансы на попадания
 	// return TRUE 	// CELADON-EDIT - ORIGINAL
-	if(prob(25))	// С вероятность 20% шальная пуля зацепит лежащего
+	if(prob(50))	// С вероятность 50% шальная пуля зацепит лежащего
 		return TRUE
 	return FALSE
 	// [/CELADON-EDIT]
