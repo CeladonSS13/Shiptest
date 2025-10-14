@@ -4891,20 +4891,6 @@
 /obj/effect/turf_decal/trimline/opaque/beige/filled/corner,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
-"cPz" = (
-/obj/effect/turf_decal/corner_techfloor_gray/diagonal{
-	layer = 2.030
-	},
-/mob/living/basic/iriska{
-	dir = 4;
-	layer = 3;
-	pixel_x = -3
-	},
-/obj/structure/railing{
-	dir = 6
-	},
-/turf/open/floor/plasteel/dark,
-/area/outpost/cargo)
 "cPG" = (
 /obj/item/stack/sheet/mineral/wood/fifty{
 	pixel_x = 11;
@@ -43384,6 +43370,11 @@
 	layer = 2.030
 	},
 /obj/effect/turf_decal/trimline/opaque/orange/line,
+/mob/living/basic/iriska{
+	dir = 1;
+	layer = 3;
+	pixel_x = -3
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "xVp" = (
@@ -71549,7 +71540,7 @@ rfa
 rfa
 rfa
 rfa
-cPz
+cLD
 igZ
 kfn
 xOL
