@@ -79,6 +79,8 @@
 /obj/item/clothing/suit/toggle/leather_jacket
 	icon_state = "gothcoat"
 	item_state = "gothcoat"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/costume.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/costume.dmi'
 
 /obj/item/clothing/suit/toggle/leather_jacket/midriff
 	name = "cropped leather jacket"
@@ -96,15 +98,6 @@
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
 	icon_state = "MajimaJacket"
 	item_state = "MajimaJacket"
-	body_parts_covered = ARMS
-
-/obj/item/clothing/suit/dutch
-	name = "dutch's jacket"
-	desc = "For those long nights on the beach in Tahiti."
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
-	icon_state = "DutchJacket"
-	item_state = "DutchJacket"
 	body_parts_covered = ARMS
 
 /obj/item/clothing/suit/armadyne
