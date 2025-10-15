@@ -149,14 +149,15 @@
 	jobtype = /datum/job/officer
 
 	id = /obj/item/card/id/cel/solfed/crew/marine
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solfed/camo
 	shoes = /obj/item/clothing/shoes/jackboots
 	backpack = /obj/item/storage/backpack/solfed
-	suit = /obj/item/clothing/suit/armor/vest/alt
+	suit = /obj/item/clothing/suit/armor/solgov_trenchcoat
 	gloves = /obj/item/clothing/gloves/combat/solfed
 	head = /obj/item/clothing/head/solfed/beret
-	mask = /obj/item/clothing/mask/balaclava/combat
+	mask = /obj/item/clothing/mask/gas/solfed/elysium
 	r_pocket = null
 	l_pocket = null
 	back = /obj/item/storage/backpack/solfed
@@ -222,15 +223,18 @@
 	jobtype = /datum/job/captain
 
 	id = /obj/item/card/id/cel/solfed/command/sergeant
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
+	mask = /obj/item/clothing/mask/gas/solfed/elysium
 	uniform = /obj/item/clothing/under/solfed/formal
-	shoes = /obj/item/clothing/shoes/combat
+	shoes = /obj/item/clothing/shoes/laceup
 	backpack = /obj/item/storage/backpack/solfed
-	suit = /obj/item/clothing/suit/armor/vest/solgov/overseer
+	suit = /obj/item/clothing/suit/armor/solgov_trenchcoat
 	ears = /obj/item/radio/headset/solgov/alt
-	gloves = /obj/item/clothing/gloves/combat
+	gloves = /obj/item/clothing/gloves/color/latex
 	head = /obj/item/clothing/head/solfed/beret
 	r_pocket = null
 	l_pocket = null
+	l_hand = /obj/item/staff/stick
 	back = /obj/item/storage/backpack/solfed
 
 /datum/outfit/job/solfed/sergeant/post_equip(mob/living/carbon/human/H)
@@ -299,9 +303,10 @@
 	job_icon = "sf_command"
 
 	id = /obj/item/card/id/cel/solfed/command/medical_scientist
-	suit =  /obj/item/clothing/suit/solgov/jacket
+	ears = /obj/item/radio/headset/solgov/alt
 	head = /obj/item/clothing/head/solfed/beret
 	l_hand = /obj/item/staff/stick
+	suit =  /obj/item/clothing/suit/solgov/jacket
 	belt = null
 
 /datum/outfit/job/solfed/engineer
@@ -376,6 +381,9 @@
 	uniform = /obj/item/clothing/under/solfed
 	head = /obj/item/clothing/head/solfed/beret
 	shoes = /obj/item/clothing/shoes/laceup
+	r_pocket = /obj/item/clipboard
+	ears = /obj/item/radio/headset/solgov/alt
+	neck = /obj/item/clothing/neck/tie/black
 	suit = /obj/item/clothing/suit/solgov/overcoat
 
 	backpack = /obj/item/storage/backpack/solfed
