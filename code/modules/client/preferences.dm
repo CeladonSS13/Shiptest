@@ -1300,12 +1300,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				// Фракция над картинкой
 				if(G.allowed_factions && G.allowed_factions.len)
 					var/list/faction_color_map = list(
-						"NanoTrasen" = "#0077ff",
-						"Syndicate" = "#ff1900",
-						"Independent" = "#a0a0a0",
-						"SolFed" = "#ff9d00",
+						"NanoTrasen" = "#283674",
+						"Syndicate" = "#9c0808",
+						"Independent" = "#7e6641",
+						"SolFed" = "#ffd700",
 						"Pirates" = "#000000",
-						"Elysium" = "#207a14"
+						"Elysium" = "#006400"
 					)
 					var/list/colored_roles = list()
 					for(var/role in G.allowed_factions)
