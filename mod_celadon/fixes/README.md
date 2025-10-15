@@ -143,9 +143,22 @@ MECH_WEAPON
 
 - EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Делаем так чтобы кепори могли брать мелкие предметы в клюв
 
-- EDIT, ADD: `code/modules/mob/living/blood.dm` : Вводим нормальный уровень для крови
-- EDIT, ADD: `code/game/machinery/iv_drip.dm` : Проверка крови у пациента
-- ADD: `code/modules/reagents/chemistry/holder.dm` : Вводим ограничения на шприцы, бикеры, капельницы
+- EDIT, ADD: `code/modules/mob/living/blood.dm` : Вводим нормальный уровень для крови [CELADON-FIXES][CELADON_FIXES_BLOOD]
+- EDIT, ADD: `code/game/machinery/iv_drip.dm` : Проверка крови у пациента (ограничение через IV) [CELADON-EDIT][CELADON-FIXES][CELADON_FIXES_BLOOD]
+- ADD: `code/modules/reagents/chemistry/holder.dm` : Ограничения на INJECT (шприцы/бикеры/капельницы) [CELADON-ADD][CELADON-FIXES][CELADON_FIXES_BLOOD]
+
+#### Кровь: корректное отображение типа
+- ADD: `code/modules/mob/living/carbon/human/human_helpers.dm` : добавлен `proc/get_blood_type_display()` [CELADON-ADD]
+- EDIT: `code/game/machinery/computer/Operating.dm` : выводит тип крови через `get_blood_type_display()` [CELADON-EDIT]
+- EDIT: `code/game/machinery/medical_kiosk.dm` : выводит тип крови через `get_blood_type_display()` [CELADON-EDIT]
+- EDIT: `code/game/objects/items/devices/scanners.dm` : анализатор здоровья использует `get_blood_type_display()` [CELADON-EDIT]
+- EDIT: `code/game/machinery/computer/dna_console.dm` : буфер ДНК сохраняет человекочитаемый тип крови [CELADON-EDIT]
+- EDIT: `code/datums/datacore.dm` : записи медкарт используют безопасное имя крови [CELADON-EDIT]
+- EDIT: `code/modules/admin/verbs/secrets.dm` : список ДНК показывает корректный тип крови [CELADON-EDIT]
+
+#### Вид: Elzuose
+- EDIT: `mod_celadon/ethereal_fix/code/ethereal.dm` : `exotic_blood = /datum/reagent/consumable/liquidelectricity`, `exotic_bloodtype = "E"` [CELADON-EDIT]
+
 
 - ADD: `code/game/objects/items/food/donut.dm` : Прописано название стандартной иконки, вместо надписи ERROR
 
