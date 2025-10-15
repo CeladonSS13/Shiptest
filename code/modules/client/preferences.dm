@@ -1303,7 +1303,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						"NanoTrasen" = "#283674",
 						"Syndicate" = "#9c0808",
 						"Independent" = "#7e6641",
-						"SolFed" = "#ffd700",
+						"InteQ" = "#4d291F",
+						"SolFed" = "#191970",
 						"Pirates" = "#000000",
 						"Elysium" = "#006400"
 					)
