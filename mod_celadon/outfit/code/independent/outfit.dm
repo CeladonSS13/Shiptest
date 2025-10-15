@@ -289,7 +289,8 @@
 	r_pocket = /obj/item/pda
 	backpack_contents = list(/obj/item/cane = 1,
 							/obj/item/clothing/glasses/monocle = 1,
-							/obj/item/clothing/neck/scarf/tajaran/orange = 1)
+							/obj/item/clothing/neck/scarf/tajaran/orange = 1,
+							/obj/item/passport/solgov = 1)
 
 // /datum/outfit/job/independent/assistant/waiter
 // 	job_icon = "assistant"
