@@ -272,8 +272,7 @@
 	head = /obj/item/clothing/head/solfed/surgical
 	ears = /obj/item/radio/headset/headset_med
 	accessory = /obj/item/clothing/accessory/armband/medblue
-	l_hand = /obj/item/storage/firstaid/medical
-	belt = /obj/item/pda/medical
+	l_hand = /obj/item/storage/firstaid
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
 	backpack = /obj/item/storage/backpack/solfed
