@@ -153,7 +153,7 @@
 	uniform = /obj/item/clothing/under/solfed/camo
 	shoes = /obj/item/clothing/shoes/jackboots
 	backpack = /obj/item/storage/backpack/solfed
-	suit = /obj/item/clothing/suit/armor/vest/marine
+	suit = /obj/item/clothing/suit/armor/vest/alt
 	gloves = /obj/item/clothing/gloves/combat/solfed
 	head = /obj/item/clothing/head/solfed/beret
 	mask = /obj/item/clothing/mask/balaclava/combat
@@ -182,6 +182,7 @@
 	jobtype = /datum/job/captain
 
 	id = /obj/item/card/id/cel/solfed/captain
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	gloves = /obj/item/clothing/gloves/combat/solfed/captain
 	ears = /obj/item/radio/headset/solgov/alt/captain
 	uniform =  /obj/item/clothing/under/solfed/formal
@@ -189,6 +190,7 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/solgov/captain
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
+	neck = /obj/item/clothing/neck/cloak/solgov
 
 	backpack = /obj/item/storage/backpack/solfed
 	satchel = /obj/item/storage/backpack/satchel/solfed
@@ -207,6 +209,7 @@
 
 	jobtype = /datum/job/captain
 
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	id = /obj/item/card/id/cel/solfed/admiral
 	suit = /obj/item/clothing/suit/armor/solfed/formal
 
@@ -275,6 +278,7 @@
 	l_hand = /obj/item/storage/firstaid
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
+	suit = /obj/item/clothing/suit/toggle/labcoat/paramedic
 	backpack = /obj/item/storage/backpack/solfed
 
 	satchel = /obj/item/storage/backpack/satchel/solfed
@@ -298,6 +302,7 @@
 	suit =  /obj/item/clothing/suit/solgov/jacket
 	head = /obj/item/clothing/head/solfed/beret
 	l_hand = /obj/item/staff/stick
+	belt = null
 
 /datum/outfit/job/solfed/engineer
 	name = "SF - Marinemechaniker"
@@ -351,6 +356,12 @@
 	satchel = /obj/item/storage/backpack/satchel/solfed
 	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
 
+	backpack_contents = list(
+		/obj/item/flashlight/seclite = 1,\
+		/obj/item/melee/knife/survival = 1,\
+		/obj/item/stack/marker_beacon/ten = 1,\
+		/obj/item/radio/weather_monitor = 1)
+
 /datum/outfit/job/solfed/miner/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_general_access(H)
@@ -403,7 +414,7 @@
 	shoes = /obj/item/clothing/shoes/combat
 	ears = /obj/item/radio/headset/solgov/alt/captain
 	backpack = /obj/item/storage/backpack/solfed
-	gloves = null
+	gloves = /obj/item/clothing/gloves/combat
 
 /datum/outfit/job/solfed/captain/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -414,6 +425,7 @@
 	name = "SF - Elysium Mulazim"
 	faction_icon = "bg_elysium"
 
+	gloves = null
 	id = /obj/item/card/id/cel/solfed/command/sergeant/elysium
 	head = /obj/item/clothing/head/solfed/beret/elysium
 	uniform = /obj/item/clothing/under/solfed/camo/elysium
@@ -433,7 +445,7 @@
 
 	id = /obj/item/card/id/cel/solfed/crew/marine/elysium
 	head = /obj/item/clothing/head/beret/elysium
-	suit = /obj/item/clothing/suit/armor/vest/marine
+	suit = /obj/item/clothing/suit/armor/vest/alt
 	gloves = /obj/item/clothing/gloves/combat/solfed
 	shoes = /obj/item/clothing/shoes/combat
 	uniform = /obj/item/clothing/under/solfed/camo/elysium
@@ -450,6 +462,7 @@
 	id = /obj/item/card/id/cel/solfed/crew/doctor/elysium
 	shoes = /obj/item/clothing/shoes/combat
 	uniform = /obj/item/clothing/under/solfed/camo/elysium
+	belt = null
 
 /datum/outfit/job/solfed/doctor/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
