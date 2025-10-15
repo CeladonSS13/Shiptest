@@ -28,6 +28,7 @@ FIXES_WETHIDE
 FIXES_DRILLCLASS
 FIXES_MOTH_EATING_CLOTHING
 FIXES_ANTAG_NINJA
+FIXES_REPAIR_PUNCTURE_SURGERY
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -272,6 +273,9 @@ FIXES_ANTAG_NINJA
 - EDIT, ADD: `code/modules/ninja/energy_katana.dm`
 - EDIT: `code/modules/ninja/suit/suit_attackby.dm`
 
+FIXES_REPAIR_PUNCTURE_SURGERY
+- EDIT: `code/modules/surgery/repair_puncture.dm` - Исправлен баг операции "Repair puncture", где каутер на шаге 3 (seal_veins) перебивался прямой процедурой прижигания раны. Заменен TOOL_CAUTERY на TOOL_HEMOSTAT для устранения конфликта приоритетов между хирургией и прямым лечением ран.
+
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
@@ -329,11 +333,12 @@ dock_empty_space_fix.dm:
 ### Авторы:
 
 
-RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFaceLesS, Burbonchik, MrRomainzZ, Molniz, Redwizz, Sjerty, Garomt, Ganza9991, KOCMOHABT
+RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFaceLesS, Burbonchik, MrRomainzZ, Molniz, Redwizz, Sjerty, Garomt, Ganza9991, KOCMOHABT, AI Assistant
 
 - Автор фикса дисков дизайнов: Турон/Mirag1993
 - Автор фикса бесконечного спавна мобов: Турон/Mirag1993
 - Автор фиксов производительности консолей: AI Assistant
+- Автор фикса операции Repair puncture: AI Assistant
 
 ### Исправления производительности консолей
 

@@ -23,7 +23,9 @@
 
 //SURGERY STEPS
 
-///// realign the blood vessels so we can reweld them
+// [CELADON-EDIT] - FIXES_REPAIR_PUNCTURE_SURGERY - Обновляем комментарий с "reweld" на "seal"
+///// realign the blood vessels so we can seal them
+// [/CELADON-EDIT]
 /datum/surgery_step/repair_innards
 	name = "realign blood vessels"
 	implements = list(TOOL_HEMOSTAT = 100, TOOL_SCALPEL = 85, TOOL_WIRECUTTER = 40)
@@ -66,36 +68,36 @@
 	surgery.operated_bodypart.receive_damage(brute=rand(4,8), sharpness=SHARP_EDGED, wound_bonus = 10)
 
 ///// Sealing the vessels back together
+// [CELADON-EDIT] - FIXES_REPAIR_PUNCTURE_SURGERY - Заменяем TOOL_CAUTERY на TOOL_HEMOSTAT для устранения конфликта с прямой процедурой прижигания ран
 /datum/surgery_step/seal_veins
-	name = "weld veins" // if your doctor says they're going to weld your blood vessels back together, you're either A) on SS13, or B) in grave mortal peril
-	implements = list(TOOL_CAUTERY = 100, /obj/item/gun/energy/laser = 90, TOOL_WELDER = 70, /obj/item = 30)
+	name = "clamp veins" // if your doctor says they're going to clamp your blood vessels back together, you're either A) on SS13, or B) in grave mortal peril
+	implements = list(TOOL_HEMOSTAT = 100, TOOL_RETRACTOR = 85)
 	time = 4 SECONDS
+// [/CELADON-EDIT]
 
-/datum/surgery_step/seal_veins/tool_check(mob/user, obj/item/tool)
-	if(implement_type == TOOL_WELDER || implement_type == /obj/item)
-		return tool.get_temperature()
-
-	return TRUE
 
 /datum/surgery_step/seal_veins/preop(mob/user, mob/living/carbon/target, target_zone, obj/item/tool, datum/surgery/surgery)
 	var/datum/wound/pierce/pierce_wound = surgery.operated_wound
 	if(!pierce_wound)
 		user.visible_message("<span class='notice'>[user] looks for [target]'s [parse_zone(user.zone_selected)].</span>", "<span class='notice'>You look for [target]'s [parse_zone(user.zone_selected)]...</span>")
 		return
-	display_results(user, target, "<span class='notice'>You begin to meld some of the split blood vessels in [target]'s [parse_zone(user.zone_selected)]...</span>",
-		"<span class='notice'>[user] begins to meld some of the split blood vessels in [target]'s [parse_zone(user.zone_selected)] with [tool].</span>",
-		"<span class='notice'>[user] begins to meld some of the split blood vessels in [target]'s [parse_zone(user.zone_selected)].</span>")
+// [CELADON-EDIT] - FIXES_REPAIR_PUNCTURE_SURGERY
+	display_results(user, target, "<span class='notice'>You begin to clamp the split blood vessels in [target]'s [parse_zone(user.zone_selected)]...</span>",
+		"<span class='notice'>[user] begins to clamp the split blood vessels in [target]'s [parse_zone(user.zone_selected)] with [tool].</span>",
+		"<span class='notice'>[user] begins to clamp the split blood vessels in [target]'s [parse_zone(user.zone_selected)].</span>")
+// [/CELADON-EDIT]
 
 /datum/surgery_step/seal_veins/success(mob/user, mob/living/carbon/target, target_zone, obj/item/tool, datum/surgery/surgery, default_display_results = FALSE)
 	var/datum/wound/pierce/pierce_wound = surgery.operated_wound
 	if(!pierce_wound)
 		to_chat(user, "<span class='warning'>[target] has no puncture there!</span>")
 		return ..()
-
-	display_results(user, target, "<span class='notice'>You successfully meld some of the split blood vessels in [target]'s [parse_zone(target_zone)] with [tool].</span>",
-		"<span class='notice'>[user] successfully melds some of the split blood vessels in [target]'s [parse_zone(target_zone)] with [tool]!</span>",
-		"<span class='notice'>[user] successfully melds some of the split blood vessels in [target]'s [parse_zone(target_zone)]!</span>")
-	log_combat(user, target, "dressed burns in", addition="INTENT: [uppertext(user.a_intent)]")
+// [CELADON-EDIT] - FIXES_REPAIR_PUNCTURE_SURGERY
+	display_results(user, target, "<span class='notice'>You successfully clamp some of the split blood vessels in [target]'s [parse_zone(target_zone)] with [tool].</span>",
+		"<span class='notice'>[user] successfully clamps some of the split blood vessels in [target]'s [parse_zone(target_zone)] with [tool]!</span>",
+		"<span class='notice'>[user] successfully clamps some of the split blood vessels in [target]'s [parse_zone(target_zone)]!</span>")
+	log_combat(user, target, "clamped vessels in", addition="INTENT: [uppertext(user.a_intent)]")
+// [/CELADON-EDIT]
 	pierce_wound.blood_flow -= 0.5
 	if(pierce_wound.blood_flow > 0)
 		surgery.status = REALIGN_INNARDS
