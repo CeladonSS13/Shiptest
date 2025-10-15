@@ -24,15 +24,12 @@
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/chemist
-	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/ce
-	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/cmo
-	job_icon = "chiefmedicalofficer"
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/engineer
@@ -42,26 +39,21 @@
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/doctor
-	job_icon = "medicaldoctor"
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/miner
-	job_icon = "shaftminer"
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/paramedic
-	job_icon = "paramedic"
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/security
-	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/warden
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/assistant/fancy/lagoon
-	job_icon = "assistant"
 	name = "Independent - Fancy (Formal Uniform)"
 
 	shoes = /obj/item/clothing/shoes/laceup
@@ -287,6 +279,9 @@
 /datum/outfit/job/prisoner
 	job_icon = "assistant"
 	jobtype = /datum/job/prisoner
+
+/datum/outfit/job/assistant
+	r_pocket = null
 
 // Все остальные аутфиты. При надобности расскоментить
 
