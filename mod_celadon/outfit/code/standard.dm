@@ -30,8 +30,8 @@
 // /datum/outfit/job/scientist
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/paramedic
-// 	job_icon = "paramedic"
+/datum/outfit/job/paramedic
+	l_pocket = null
 
 // /datum/outfit/job/chemist
 // 	job_icon = "chemist"

@@ -318,14 +318,16 @@
 // /datum/outfit/job/independent/roboticist
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/independent/security/western
-// 	job_icon = "securityofficer"
+/datum/outfit/job/independent/security/western
+	job_icon = "securityofficer"
 
 // /datum/outfit/job/independent/cmo/pharma
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/independent/chemist/pharma
-// 	job_icon = "assistant"
+/datum/outfit/job/independent/chemist/pharma
+	job_icon = "medicaldoctor"
+
+	l_pocket = null
 
 // /datum/outfit/job/independent/bartender/pharma
 // 	job_icon = "assistant"
@@ -333,8 +335,8 @@
 // /datum/outfit/job/independent/botanist/pharma
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/independent/assistant/pharma
-// 	job_icon = "assistant"
+/datum/outfit/job/independent/assistant/pharma
+	job_icon = "medicaldoctor"
 
 // /datum/outfit/job/independent/detective
 // 	job_icon = "detective"
