@@ -36,7 +36,6 @@
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/engineer
-	job_icon = "assistant"
 	box = /obj/item/storage/box/survival/independent
 
 /datum/outfit/job/independent/hos
@@ -140,7 +139,6 @@
 	satchel = /obj/item/storage/backpack/satchel/sec
 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
 	courierbag = /obj/item/storage/backpack/messenger/sec
-	box = /obj/item/storage/box/survival/security
 
 	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
 	//The helmet is necessary because /obj/item/clothing/head/helmet/sec is overwritten in the chameleon list by the standard helmet, which has the same name and icon state
@@ -165,8 +163,6 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	courierbag = /obj/item/storage/backpack/messenger/med
 
-	box = /obj/item/storage/box/survival/medical
-
 	chameleon_extras = /obj/item/gun/syringe
 
 // Atmos Tech
@@ -186,8 +182,6 @@
 	satchel = /obj/item/storage/backpack/satchel/eng
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	courierbag = /obj/item/storage/backpack/messenger/engi
-
-	box = /obj/item/storage/box/survival/engineer
 
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced = 1,
 							/obj/item/spacecash/bundle/c100 = 3)
