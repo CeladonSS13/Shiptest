@@ -285,8 +285,11 @@
 
 // Все остальные аутфиты. При надобности расскоментить
 
-// /datum/outfit/job/independent/lawyer
-// 	job_icon = "assistant"
+/datum/outfit/job/independent/lawyer
+	r_pocket = /obj/item/pda
+	backpack_contents = list(/obj/item/cane = 1,
+							/obj/item/clothing/glasses/monocle = 1,
+							/obj/item/clothing/neck/scarf/tajaran/orange = 1)
 
 // /datum/outfit/job/independent/assistant/waiter
 // 	job_icon = "assistant"
@@ -362,6 +365,8 @@
 // /datum/outfit/job/independent/miner/scientist
 // 	job_icon = "assistant"
 
+/datum/outfit/job/independent/hop/beluga
+	id = /obj/item/card/id/cel/inteq/enforcer
 
 // /datum/outfit/job/independent/hop
 // 	head = /obj/item/clothing/head/hopcap
