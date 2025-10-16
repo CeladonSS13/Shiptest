@@ -3,19 +3,16 @@
 
 /obj/item/storage/belt/examine(mob/user)
 	. = ..()
-	. += span_notice("<b>Ctrl+Click</b> чтобы переключить слой одежды.")
+	. += span_notice("<b>Ctrl+Click</b> чтобы переключить слой ношения.")
 
 /obj/item/storage/belt/CtrlClick(mob/user)
-	if(..())
-		return TRUE
-	if(!user.canUseTopic(src, BE_CLOSE))
+	if(..() || !user.canUseTopic(src, BE_CLOSE))
 		return
 	under_clothing = !under_clothing
 	to_chat(user, span_notice("[src] теперь [under_clothing ? "под одеждой" : "поверх одежды"]."))
-	if(ishuman(user))
-		var/mob/living/carbon/human/H = user
-		if(H.belt == src)
-			H.update_inv_belt()
+	var/mob/living/carbon/human/H = user
+	if(istype(H) && H.belt == src)
+		H.update_inv_belt()
 	return TRUE
 
 /obj/item/storage/belt/build_worn_icon(default_layer = 0, default_icon_file = null, isinhands = FALSE, override_state = null, override_file = null, datum/species/mob_species = null, direction = null)
