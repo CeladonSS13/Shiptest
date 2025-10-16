@@ -414,3 +414,7 @@
 /obj/item/melee/energy/sword/saber/knife/pre_active //used by solfed dynamic gen mobs
 	icon_state = "eknifeyellow"
 	base_icon_state = "eknife"
+
+/obj/item/clothing/neck/cloak/solgovcap/solfed
+	name = "SolFed captain's cloak";
+	desc = "Worn by SolFed captains. It smells faintly of bureaucracy."

@@ -157,7 +157,7 @@
 	suit = /obj/item/clothing/suit/armor/solgov_trenchcoat
 	gloves = /obj/item/clothing/gloves/combat/solfed
 	head = /obj/item/clothing/head/solfed/beret
-	mask = /obj/item/clothing/mask/gas/solfed/elysium
+	mask = /obj/item/clothing/mask/gas/sechailer
 	r_pocket = null
 	l_pocket = null
 	back = /obj/item/storage/backpack/solfed
@@ -191,7 +191,7 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/solgov/captain
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
-	neck = /obj/item/clothing/neck/cloak/solgov
+	neck = /obj/item/clothing/neck/cloak/solgovcap/solfed
 
 	backpack = /obj/item/storage/backpack/solfed
 	satchel = /obj/item/storage/backpack/satchel/solfed
@@ -224,7 +224,7 @@
 
 	id = /obj/item/card/id/cel/solfed/command/sergeant
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
-	mask = /obj/item/clothing/mask/gas/solfed/elysium
+	mask = /obj/item/clothing/mask/gas/sechailer
 	uniform = /obj/item/clothing/under/solfed/formal
 	shoes = /obj/item/clothing/shoes/laceup
 	backpack = /obj/item/storage/backpack/solfed
@@ -441,6 +441,7 @@
 	shoes = /obj/item/clothing/shoes/combat
 	ears = /obj/item/radio/headset/solgov/alt
 	neck = null
+	l_hand = null
 
 /datum/outfit/job/solfed/sergeant/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
