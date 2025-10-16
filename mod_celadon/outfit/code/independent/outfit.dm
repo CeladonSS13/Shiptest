@@ -362,8 +362,7 @@
 // /datum/outfit/job/independent/miner/scientist
 // 	job_icon = "assistant"
 
-/datum/outfit/job/independent/hop/beluga
-	id = /obj/item/card/id/cel/inteq/enforcer
+// /datum/outfit/job/independent/hop/beluga
 
 // /datum/outfit/job/independent/hop
 // 	head = /obj/item/clothing/head/hopcap

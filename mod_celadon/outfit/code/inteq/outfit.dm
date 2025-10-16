@@ -126,6 +126,22 @@
 	satchel = /obj/item/storage/backpack/messenger/inteq
 	courierbag = /obj/item/storage/backpack/messenger/inteq
 
+/datum/outfit/job/inteq/cel/security/beluga
+	name = "IRMG - Enforcer (Beluga)"
+
+	head = /obj/item/clothing/head/beret/sec/inteq
+	accessory = /obj/item/clothing/accessory/waistcoat
+	suit = null
+	belt = null
+	mask = null
+	shoes = /obj/item/clothing/shoes/laceup
+	glasses = null
+	gloves = /obj/item/clothing/gloves/color/evening
+
+	backpack = /obj/item/storage/backpack/messenger/inteq
+	satchel = /obj/item/storage/backpack/messenger/inteq
+	courierbag = /obj/item/storage/backpack/messenger/inteq
+
 //MARK: Варден
 /datum/outfit/job/inteq/cel/warden
 	name = "IQ - Master At Arms"
