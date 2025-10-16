@@ -28,6 +28,19 @@
 
 	id = /obj/item/card/id/cel/nanotrasen/nslogistic_miner
 
+/datum/outfit/job/nanotrasen/cel/cargo_tech/nslogistic
+	name = "NT N+S Logistic - Cargo Tech"
+	jobtype = /datum/job/cargo_tech
+	job_icon = "cargotechnician"
+
+	id = /obj/item/card/id/cel/nanotrasen/nslogistic_cargo_tech
+	belt = /obj/item/pda/cargo
+	ears = /obj/item/radio/headset/headset_cargo
+	head = /obj/item/clothing/head/nanotrasen/cap/supply
+	uniform = /obj/item/clothing/under/nanotrasen/supply
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/cargo
+	backpack_contents = list(/obj/item/modular_computer/tablet/preset/cargo=1)
+
 // MARK: Assistant
 
 /datum/outfit/job/nanotrasen/cel/assistant/nslogistic

@@ -76,6 +76,11 @@
 	icon_state = "idns_miner"
 	assignment = "Shaft Miner"
 
+/obj/item/card/id/cel/nanotrasen/nslogistic_cargo_tech
+	desc = "A NanoTrasen N+S Logistic ID with no proper access to speak of. This one indicates a Cargo Tech."
+	icon_state = "idns_miner"
+	assignment = "Cargo Tech"
+
 /obj/item/card/id/cel/nanotrasen/nslogistic_assistant
 	desc = "A NanoTrasen N+S Logistic ID with no proper access to speak of. This one indicates a Assistant."
 	icon_state = "idns_assistant"
