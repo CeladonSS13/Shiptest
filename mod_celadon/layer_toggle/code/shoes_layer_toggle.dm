@@ -1,13 +1,17 @@
 /obj/item/clothing/shoes
 	var/under_clothing = FALSE
 
+/obj/item/clothing/shoes/examine(mob/user)
+	. = ..()
+	. += span_notice("<b>Ctrl+Click</b> чтобы переключить слой одежды.")
+
 /obj/item/clothing/shoes/CtrlClick(mob/user)
 	if(..())
 		return TRUE
 	if(!user.canUseTopic(src, BE_CLOSE))
 		return
 	under_clothing = !under_clothing
-	to_chat(user, span_notice("[src] теперь [under_clothing ? "под" : "поверх"] одежды."))
+	to_chat(user, span_notice("[src] теперь [under_clothing ? "под одеждой" : "поверх одежды"]."))
 	if(ishuman(user))
 		var/mob/living/carbon/human/H = user
 		if(H.shoes == src)
