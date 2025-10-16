@@ -2,9 +2,9 @@
 /// desc - описание для модпака. Может использоваться для списка глаголов модпака в качестве описания.
 /// author - автор(ы) этого модпака.
 
-/datum/modpack/shoes_layer_toggle
-	name = "Shoes layer toggle"
-	desc = "Этот модуль добавляет возможность переключать отображение обуви между обычным слоем (поверх одежды) и слоем под одеждой."
+/datum/modpack/layer_toggle
+	name = "Layer toggle"
+	desc = "Этот модуль добавляет возможность переключать отображение между обычным слоем (поверх одежды) и слоем под одеждой."
 	author = "MrCat15352"
 
 /// Эти проки нужны, для того чтобы инициализировать датумы в определенный момент времени
@@ -15,13 +15,13 @@
 /// (можешь использовать все три, но запуск билда увеличится на 0.1 сек, за каждый датум в модпаке)
 
 // Инициализация ДО
-// /datum/modpack/shoes_layer_toggle/pre_initialize()
+// /datum/modpack/layer_toggle/pre_initialize()
 // 	. = ..()
 
 // // Инициализация ВОВРЕМЯ
-// /datum/modpack/shoes_layer_toggle/initialize()
+// /datum/modpack/layer_toggle/initialize()
 // 	. = ..()
 
 // // Инициализация ПОСЛЕ
-// /datum/modpack/shoes_layer_toggle/post_initialize()
+// /datum/modpack/layer_toggle/post_initialize()
 // 	. = ..()
