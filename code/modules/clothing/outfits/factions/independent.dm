@@ -222,10 +222,10 @@
 	uniform = /obj/item/clothing/under/rank/command/head_of_personnel
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/captain
 	shoes = /obj/item/clothing/shoes/sneakers/brown
-	// [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички
+	// [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички и КПК
 	// backpack_contents = list(/obj/item/storage/box/ids=1,
 	// /obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced = 1)	// CELADON-EDIT - ORIGINAL
-	backpack_contents = list(/obj/item/storage/box/ids=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
+	backpack_contents = list(/obj/item/storage/box/ids=1)
 	// [/CELADON-EDIT]
 
 	backpack = /obj/item/storage/backpack/captain
@@ -425,7 +425,7 @@
 	courierbag = /obj/item/storage/backpack/messenger/engi
 
 	box = /obj/item/storage/box/survival/engineer
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
+	// backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем КПК
 
 /datum/outfit/job/independent/engineer/salvage
 	name = "Independent - Engineer (Salvager)"
@@ -494,10 +494,7 @@
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	head = /obj/item/clothing/head/hardhat/white
 	gloves = /obj/item/clothing/gloves/color/black
-	// [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)	// CELADON-EDIT - ORIGINAL
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
-	// [/CELADON-EDIT]
+	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички и КПК
 
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
@@ -545,7 +542,7 @@
 	ears = /obj/item/radio/headset/headset_cargo
 	uniform = /obj/item/clothing/under/color/lightbrown
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/cargo
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/cargo=1)
+	// backpack_contents = list(/obj/item/modular_computer/tablet/preset/cargo=1)	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем КПК
 
 // Atmos Tech
 
@@ -567,7 +564,7 @@
 
 	box = /obj/item/storage/box/survival/engineer
 
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
+	// backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем КПК
 
 // Scientist
 
@@ -643,7 +640,7 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	glasses = /obj/item/clothing/glasses/sunglasses
 	r_pocket = /obj/item/clipboard
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/cargo=1)
+	// backpack_contents = list(/obj/item/modular_computer/tablet/preset/cargo=1)	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем КПК
 
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
@@ -893,7 +890,7 @@
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/civilian/janitor
 
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
+	// backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем КПК
 
 // Research Director
 
@@ -910,10 +907,7 @@
 	alt_suit = /obj/item/clothing/suit/toggle/suspenders
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/science //WS Edit - Alt Uniforms
 	l_hand = /obj/item/clipboard
-	// [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)	// CELADON-EDIT - ORIGINAL
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
-	// [/CELADON-EDIT]
+	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички и КПК
 
 	backpack = /obj/item/storage/backpack/science
 	satchel = /obj/item/storage/backpack/satchel/tox

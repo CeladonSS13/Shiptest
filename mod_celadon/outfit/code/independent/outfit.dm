@@ -98,7 +98,6 @@
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 
 	backpack_contents = list(/obj/item/storage/box/ids = 1,
-							/obj/item/modular_computer/tablet/preset/advanced = 1,
 							/obj/item/spacecash/bundle/c500 = 1)
 
 	backpack = /obj/item/storage/backpack/captain
@@ -175,8 +174,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	courierbag = /obj/item/storage/backpack/messenger/engi
 
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced = 1,
-							/obj/item/spacecash/bundle/c100 = 3)
+	backpack_contents = list(/obj/item/spacecash/bundle/c100 = 3)
 
 // Cook
 
@@ -253,8 +251,6 @@
 
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/civilian/janitor
-
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
 // Botanist
 
