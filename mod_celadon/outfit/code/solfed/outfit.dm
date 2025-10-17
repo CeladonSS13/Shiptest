@@ -260,7 +260,7 @@
 	name = "SF - Scientific Overseer"
 	job_icon = "sf_command"
 
-	id = /obj/item/card/id/cel/solfed/command/medical_scientist
+	id = /obj/item/card/id/cel/solfed/command/medical_scientist/overseer
 	ears = /obj/item/radio/headset/solgov/alt
 	head = /obj/item/clothing/head/solfed/beret
 	l_hand = /obj/item/staff/stick
