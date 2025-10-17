@@ -2,7 +2,7 @@
 	name = "NT - Loss Prevention Lieutenant"
 	id_assignment = "Lieutenant"
 
-	id = /obj/item/card/id/lplieu
+	id = /obj/item/card/id/cel/lplieu
 	implants = list(/obj/item/implant/mindshield)
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
 	belt = /obj/item/pda/captain
@@ -23,7 +23,7 @@
 
 	job_icon = "warden"
 
-	id = /obj/item/card/id/lpsec
+	id = /obj/item/card/id/cel/lpsec
 	implants = list(/obj/item/implant/mindshield)
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
 	belt = /obj/item/pda/security
@@ -43,7 +43,7 @@
 
 	job_icon = "chiefengineer"
 
-	id = /obj/item/card/id/lpengie
+	id = /obj/item/card/id/cel/lpengie
 	implants = list(/obj/item/implant/mindshield)
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
 	gloves = /obj/item/clothing/gloves/color/yellow
@@ -63,7 +63,7 @@
 
 	job_icon = "chiefmedicalofficer"
 
-	id = /obj/item/card/id/lpmed
+	id = /obj/item/card/id/cel/lpmed
 	implants = list(/obj/item/implant/mindshield)
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
 	belt = /obj/item/pda/medical
@@ -79,17 +79,45 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	courierbag = /obj/item/storage/backpack/messenger/med
 
+/datum/outfit/job/nanotrasen/cel/miner/lp
+	name = "NT - LP Shaft Miner"
+	id_assignment = "Shaft Miner"
+
+	id = /obj/item/card/id/cel/lpmed
+	ears = /obj/item/radio/headset/headset_cargo/mining
+	shoes = /obj/item/clothing/shoes/workboots/mining
+	head = /obj/item/clothing/head/hardhat/nanotrasen
+	gloves = /obj/item/clothing/gloves/color/black
+	uniform = /obj/item/clothing/under/nanotrasen/supply/miner
+	suit = /obj/item/clothing/suit/nanotrasen/vest
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/miner
+	r_pocket = /obj/item/storage/bag/ore
+
+	backpack_contents = list(
+						/obj/item/flashlight/seclite = 1,
+						/obj/item/melee/knife/survival = 1,
+						/obj/item/stack/marker_beacon/ten = 1,
+						/obj/item/radio/weather_monitor = 1,
+						)
+
+	backpack = /obj/item/storage/backpack/explorer
+	satchel = /obj/item/storage/backpack/satchel/explorer
+	duffelbag = /obj/item/storage/backpack/duffelbag
+	box = /obj/item/storage/box/survival/mining
+
+	chameleon_extras = /obj/item/gun/energy/kinetic_accelerator
+
 /datum/outfit/job/nanotrasen/cel/janitor/lp
 	name = "NT - LP Janitorial Specialist"
 	jobtype = /datum/job/janitor
 
 	job_icon = "janitor"
 
+	id = /obj/item/card/id/cel/lpjanitor
 	uniform = /obj/item/clothing/under/nanotrasen/janitor
 	shoes = /obj/item/clothing/shoes/sneakers/black
 	suit = /obj/item/clothing/suit/nanotrasen/suitjacket
 	head = /obj/item/clothing/head/nanotrasen/cap/janitor
-	id = /obj/item/card/id/cel/lpjanitor
 	ears = /obj/item/radio/headset/nanotrasen
 	belt = /obj/item/storage/belt/janitor
 	gloves = /obj/item/clothing/gloves/color/purple
@@ -101,6 +129,7 @@
 	job_icon = "shaftminer"
 	name = "NT - LP Miner"
 
+	id = /obj/item/card/id/cel/lpminer
 	ears = /obj/item/radio/headset/headset_cargo/mining
 	shoes = /obj/item/clothing/shoes/workboots/mining
 	head = /obj/item/clothing/head/hardhat/nanotrasen

@@ -116,8 +116,34 @@
 	icon_state = "idvigi_security"
 	assignment = "Security"
 
-// MARK: Обычные
+// MARK: LP
+
 /obj/item/card/id/cel/lpjanitor
 	icon_state = "ert_janitor"
 	desc = "The LP Janitor Specialist's ID card."
 	name = "LP Janitor Specialist"
+
+/obj/item/card/id/cel/lpminer
+	icon_state = "ert_chaplain"	// Временно поставил такой спрайт
+	desc = "The LP Shaft Miner Specialist's ID card."
+	name = "LP Shaft Miner"
+
+/obj/item/card/id/cel/lpengie
+	desc = "The LP Engineering Specialist's ID card."
+	icon_state = "ert_engineer"
+	name = "LP Engineering Specialist"
+
+/obj/item/card/id/cel/lpmed
+	desc = "The LP Medical Specialist's ID card."
+	icon_state = "ert_medic"
+	name = "LP Medical Specialist"
+
+/obj/item/card/id/cel/lpsec
+	desc = "The LP Security Specialist's ID card."
+	icon_state = "ert_security"
+	name = "LP Security Specialist"
+
+/obj/item/card/id/cel/lplieu
+	name = "LP Lieutenant's ID"
+	desc = "The LP Lieutenant's ID card."
+	icon_state = "ert_commander"

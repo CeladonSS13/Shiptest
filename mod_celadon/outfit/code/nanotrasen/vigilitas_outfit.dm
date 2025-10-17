@@ -8,6 +8,28 @@
 
 	id = /obj/item/card/id/cel/nanotrasen/vigilitas_leutenant
 
+/datum/outfit/job/nanotrasen/cel/captain/vigilitas/darect
+	belt = /obj/item/pda/heads/hos
+	gloves = /obj/item/clothing/gloves/combat
+	ears = /obj/item/radio/headset/nanotrasen/alt/captain
+	uniform = /obj/item/clothing/under/nanotrasen/security/director
+	suit = /obj/item/clothing/suit/armor/nanotrasen/sec_director
+	alt_suit = /obj/item/clothing/suit/toggle/armor/hos_formal
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
+	shoes = /obj/item/clothing/shoes/combat
+	neck = /obj/item/clothing/neck/scarf/black
+	head = /obj/item/clothing/head/nanotrasen/beret/security/command
+
+	backpack = /obj/item/storage/backpack/security
+	satchel = /obj/item/storage/backpack/satchel/sec
+	duffelbag = /obj/item/storage/backpack/duffelbag/sec
+	courierbag = /obj/item/storage/backpack/messenger/sec
+	accessory = /obj/item/clothing/accessory/medal/silver/security
+
+	implants = list(/obj/item/implant/mindshield)
+
+	chameleon_extras = /obj/item/stamp/hos
+
 // MARK: Command
 
 /datum/outfit/job/nanotrasen/cel/hos/vigilitas
