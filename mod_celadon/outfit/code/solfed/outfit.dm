@@ -155,12 +155,27 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	backpack = /obj/item/storage/backpack/solfed
 	suit = /obj/item/clothing/suit/armor/solgov_trenchcoat
-	gloves = /obj/item/clothing/gloves/combat/solfed
-	head = /obj/item/clothing/head/solfed/beret
 	mask = /obj/item/clothing/mask/gas/sechailer
 	r_pocket = null
 	l_pocket = null
 	back = /obj/item/storage/backpack/solfed
+	ears = /obj/item/radio/headset/alt
+	gloves = /obj/item/clothing/gloves/combat
+	head = /obj/item/clothing/head/helmet/sec
+	alt_suit = /obj/item/clothing/suit/armor/vest/security/officer
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
+	l_pocket = /obj/item/restraints/handcuffs
+	r_pocket = /obj/item/assembly/flash/handheld
+	backpack_contents = null
+	backpack = /obj/item/storage/backpack/security
+	satchel = /obj/item/storage/backpack/satchel/sec
+	duffelbag = /obj/item/storage/backpack/duffelbag/sec
+	courierbag = /obj/item/storage/backpack/messenger/sec
+	box = /obj/item/storage/box/survival/security
+
+	implants = list(/obj/item/implant/mindshield)
+
+	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
 
 /datum/outfit/job/solfed/marine/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -226,20 +241,31 @@
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	mask = /obj/item/clothing/mask/gas/sechailer
 	uniform = /obj/item/clothing/under/solfed/formal
-	shoes = /obj/item/clothing/shoes/laceup
+	shoes = /obj/item/clothing/shoes/combat
 	backpack = /obj/item/storage/backpack/solfed
 	suit = /obj/item/clothing/suit/armor/solgov_trenchcoat
 	ears = /obj/item/radio/headset/solgov/alt
-	gloves = /obj/item/clothing/gloves/color/latex
+	gloves = /obj/item/clothing/gloves/combat
 	head = /obj/item/clothing/head/solfed/beret
 	r_pocket = null
 	l_pocket = null
-	l_hand = /obj/item/staff/stick
+	l_hand = null
 	back = /obj/item/storage/backpack/solfed
 
 /datum/outfit/job/solfed/sergeant/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_head_access(H)
+
+/datum/outfit/job/solfed/doctor/medical_scientist/overseer
+	name = "SF - Scientific Overseer"
+	job_icon = "sf_command"
+
+	id = /obj/item/card/id/cel/solfed/command/medical_scientist
+	ears = /obj/item/radio/headset/solgov/alt
+	head = /obj/item/clothing/head/solfed/beret
+	l_hand = /obj/item/staff/stick
+	suit =  /obj/item/clothing/suit/solgov/jacket
+	belt = null
 
 /datum/outfit/job/solfed/hop
 	name = "SF - Personalvorgesetzter"

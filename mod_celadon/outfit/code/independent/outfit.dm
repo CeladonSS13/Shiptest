@@ -362,7 +362,23 @@
 // /datum/outfit/job/independent/miner/scientist
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/independent/hop/beluga
+/datum/outfit/job/independent/hop/beluga
+	job_icon = "headofpersonnel"
+	jobtype = /datum/job/head_of_personnel
+
+	id = /obj/item/card/id/silver
+	ears = /obj/item/radio/headset/headset_com
+	uniform = /obj/item/clothing/under/rank/command/head_of_personnel
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/captain
+	shoes = /obj/item/clothing/shoes/sneakers/brown
+	backpack_contents = list(/obj/item/storage/box/ids = 1)
+
+	backpack = /obj/item/storage/backpack/captain
+	satchel = /obj/item/storage/backpack/satchel/cap
+	duffelbag = /obj/item/storage/backpack/duffelbag/captain
+	courierbag = /obj/item/storage/backpack/messenger/com
+
+	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/officer)
 
 // /datum/outfit/job/independent/hop
 // 	head = /obj/item/clothing/head/hopcap
