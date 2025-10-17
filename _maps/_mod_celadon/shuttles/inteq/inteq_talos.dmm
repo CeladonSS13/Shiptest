@@ -336,7 +336,7 @@
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "bK" = (
-/obj/machinery/porta_turret/ship/inteq{
+/obj/machinery/porta_turret/ship/inteq/light{
 	id = "talos_turrets"
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -1638,7 +1638,6 @@
 /obj/effect/turf_decal/techfloor,
 /obj/structure/crate_shelf,
 /obj/structure/closet/crate/secure/weapon,
-/obj/item/mecha_parts/mecha_equipment/thrusters/ion,
 /obj/item/mecha_parts/weapon_bay,
 /obj/item/mecha_parts/mecha_equipment/weapon/energy/carbine,
 /obj/item/mecha_parts/mecha_equipment/repair_droid,
@@ -3116,7 +3115,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "pP" = (
-/obj/machinery/porta_turret/ship/inteq{
+/obj/machinery/porta_turret/ship/inteq/light{
 	id = "talos_turrets";
 	dir = 10
 	},
@@ -3268,7 +3267,7 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/hangar)
 "qs" = (
-/obj/machinery/porta_turret/ship/inteq{
+/obj/machinery/porta_turret/ship/inteq/light{
 	id = "talos_turrets";
 	dir = 9
 	},
@@ -3329,9 +3328,8 @@
 	},
 /area/ship/hangar)
 "qJ" = (
-/obj/machinery/porta_turret/ship/inteq{
-	id = "talos_turrets";
-	dir = 6
+/obj/machinery/porta_turret/ship/inteq/light{
+	id = "talos_turrets"
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering/communications)
@@ -3593,6 +3591,13 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /turf/open/floor/plating,
 /area/ship/crew/canteen)
+"rY" = (
+/obj/machinery/porta_turret/ship/inteq{
+	dir = 5;
+	id = "talos_turrets"
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/hallway/port)
 "si" = (
 /obj/structure/sign/number/four,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -3634,6 +3639,18 @@
 	dir = 8
 	},
 /obj/structure/rack,
+/obj/item/ammo_box/magazine/co9mm{
+	pixel_x = -5
+	},
+/obj/item/ammo_box/magazine/co9mm{
+	pixel_x = -5
+	},
+/obj/item/ammo_box/magazine/co9mm{
+	pixel_x = -5
+	},
+/obj/item/ammo_box/magazine/co9mm{
+	pixel_x = -5
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "ss" = (
@@ -6141,7 +6158,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "Ek" = (
-/obj/machinery/porta_turret/ship/inteq{
+/obj/machinery/porta_turret/ship/inteq/light{
 	id = "talos_turrets";
 	dir = 5
 	},
@@ -6872,9 +6889,9 @@
 /turf/open/floor/plasteel/white,
 /area/ship/cargo)
 "Ii" = (
-/obj/machinery/porta_turret/ship/inteq{
-	dir = 5;
-	id = "talos_turrets"
+/obj/machinery/porta_turret/ship/inteq/light{
+	id = "talos_turrets";
+	dir = 1
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/crew/crewtwo)
@@ -8140,7 +8157,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hangar)
 "OU" = (
-/obj/machinery/porta_turret/ship/inteq{
+/obj/machinery/porta_turret/ship/inteq/light{
 	id = "talos_turrets";
 	dir = 10
 	},
@@ -8453,7 +8470,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "QU" = (
-/obj/machinery/porta_turret/ship/inteq{
+/obj/machinery/porta_turret/ship/inteq/light{
 	id = "talos_turrets";
 	dir = 9
 	},
@@ -9751,6 +9768,12 @@
 /obj/structure/closet/secure_closet/armorycage,
 /obj/effect/turf_decal/siding/black{
 	dir = 8
+	},
+/obj/item/gun/ballistic/automatic/pistol/commander/inteq{
+	pixel_y = 5
+	},
+/obj/item/gun/ballistic/automatic/pistol/commander/inteq{
+	pixel_y = 5
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
@@ -11286,7 +11309,7 @@ tk
 tk
 tk
 gL
-bT
+rY
 em
 Bz
 kk
