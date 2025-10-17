@@ -50,6 +50,10 @@
 	icon_state = "iddf_medic"
 	assignment = "Medical Doctor"
 
+/obj/item/card/id/cel/nanotrasen/deforest_medic/paramedic
+	desc = "A NanoTrasen DeForest ID with no proper access to speak of. This one indicates a Paramedic."
+	assignment = "Paramedic"
+
 /obj/item/card/id/cel/nanotrasen/deforest_assistant
 	desc = "A NanoTrasen DeForest ID with no proper access to speak of. This one indicates a Assistant."
 	icon_state = "iddf_assistant"
