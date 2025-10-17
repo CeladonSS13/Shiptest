@@ -486,6 +486,21 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	courierbag = /obj/item/storage/backpack/messenger/tox
 
+/datum/outfit/job/nanotrasen/cel/scientist
+	name = "NT - Scientist"
+	jobtype = /datum/job/scientist
+	job_icon = "scientist"
+
+	ears = /obj/item/radio/headset/headset_sci
+	uniform = /obj/item/clothing/under/nanotrasen/science
+	shoes = /obj/item/clothing/shoes/sneakers/white
+	suit = /obj/item/clothing/suit/toggle/labcoat/nanotrasen
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/science
+
+	backpack = /obj/item/storage/backpack/science
+	satchel = /obj/item/storage/backpack/satchel/tox
+	courierbag = /obj/item/storage/backpack/messenger/tox
+
 /// MARK: Директор СБ - ХОС капитан
 
 /datum/outfit/job/nanotrasen/cel/hos/captain

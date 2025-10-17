@@ -73,6 +73,7 @@
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
 	shoes = /obj/item/clothing/shoes/sneakers/white
 	head = /obj/item/clothing/head/beret/med
+	suit =  /obj/item/clothing/suit/toggle/labcoat/nanotrasen/paramedic
 
 	satchel = /obj/item/storage/backpack/satchel/med
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
@@ -93,6 +94,8 @@
 	belt = /obj/item/storage/belt/janitor
 	gloves = /obj/item/clothing/gloves/color/purple
 	back = /obj/item/storage/backpack/ert/janitor
+
+	implants = list(/obj/item/implant/mindshield)
 
 /datum/outfit/job/nanotrasen/cel/miner/lp
 	job_icon = "shaftminer"
