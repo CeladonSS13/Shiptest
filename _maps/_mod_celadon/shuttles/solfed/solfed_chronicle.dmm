@@ -886,9 +886,6 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/techfloor/corner,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
 /obj/effect/turf_decal/corner/opaque/solgovblue/half,
 /turf/open/floor/plasteel/white,
 /area/ship/engineering)
@@ -900,14 +897,8 @@
 /turf/closed/wall/mineral/titanium,
 /area/ship/crew/dorm/captain)
 "ja" = (
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
-	},
-/obj/machinery/power/port_gen/pacman,
-/obj/item/stack/sheet/mineral/plasma/ten,
 /obj/effect/turf_decal/techfloor,
+/obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "jd" = (
@@ -2129,12 +2120,6 @@
 /turf/open/floor/plasteel/white,
 /area/ship/general/science/rnd)
 "ty" = (
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
@@ -2151,8 +2136,9 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue/half{
 	dir = 1
 	},
-/obj/structure/chair/office/dark{
-	dir = 4
+/obj/structure/cable{
+	icon_state = "2-4";
+	tag = null
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/engineering)
@@ -2510,12 +2496,12 @@
 /area/ship/cargo)
 "xt" = (
 /obj/effect/turf_decal/techfloor,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
 /obj/machinery/power/smes/engineering,
 /obj/effect/turf_decal/techfloor{
 	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-1"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
@@ -2674,14 +2660,10 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 9
 	},
 /obj/machinery/newscaster/directional/west,
-/obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "yv" = (
@@ -3018,6 +3000,9 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 10
 	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "BH" = (
@@ -3057,17 +3042,18 @@
 /area/ship/crew/crewtwo)
 "Cb" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
 /obj/machinery/power/terminal{
 	dir = 8
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 1
+	},
+/obj/item/stack/sheet/mineral/plasma/ten,
+/obj/machinery/power/port_gen/pacman{
+	anchored = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
@@ -4478,6 +4464,7 @@
 	dir = 4
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/item/stack/sheet/mineral/plasma/ten,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "Qm" = (
