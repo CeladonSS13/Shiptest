@@ -93,6 +93,11 @@
 	// destroy can call remove_wound() and remove_wound() calls qdel, so we check to make sure there's anything to remove first
 	if(limb?.wounds && (src in limb.wounds))
 		remove_wound()
+	// [CELADON-TODO] - FIXES_REPAIR_PUNCTURE_SURGERY
+	// ЕРЕСЬ: linked_status_effect не удаляется явно, полагается на сигнал COMSIG_CARBON_LOSE_WOUND
+	// Возможна утечка памяти если сигнал не доходит или обрабатывается неправильно
+	// TODO: Проверить нужно ли вручную удалять: QDEL_NULL(linked_status_effect)
+	// [/CELADON-TODO]
 	set_limb(null)
 	victim = null
 	return ..()
