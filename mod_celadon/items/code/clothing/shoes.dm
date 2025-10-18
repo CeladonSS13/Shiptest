@@ -152,4 +152,4 @@
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/padded_right.dmi'
 	item_state = "paddedboots"
 	icon_state = "paddedboots"
-	supports_variations = null
+	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON
