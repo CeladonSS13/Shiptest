@@ -87,7 +87,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/door/poddoor{
-	id = "58"
+	id = "fistofF_armory"
 	},
 /turf/open/floor/mineral/titanium,
 /area/ship/security)
@@ -513,10 +513,10 @@
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
 	dir = 8;
-	id = "sgi_holocargo1"
+	id = "fistofF_holobay_S"
 	},
 /obj/machinery/door/poddoor{
-	id = "45"
+	id = "fistofF_blast_S"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
@@ -861,8 +861,8 @@
 /area/ship/security)
 "eW" = (
 /obj/machinery/porta_turret/ship/solfed{
-	dir = 9;
-	id = "tomahawk_turrets"
+	dir = 6;
+	id = "fistofF_turrets"
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/bridge)
@@ -987,7 +987,7 @@
 	dir = 5
 	},
 /obj/machinery/button/door{
-	id = "solc_eng";
+	id = "fistofF_eng";
 	name = "Engine Shutters";
 	pixel_x = 8;
 	pixel_y = 19
@@ -1138,7 +1138,7 @@
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/machinery/door/poddoor{
 	dir = 4;
-	id = "solc_eng"
+	id = "fistofF_eng"
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
@@ -1271,7 +1271,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue/full,
 /obj/machinery/turretid/ship{
 	pixel_y = -27;
-	id = "tomahawk_turrets"
+	id = "fistofF_turrets"
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
@@ -1373,7 +1373,7 @@
 	},
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/poddoor{
-	id = "49"
+	id = "fistofF_blast_N"
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security)
@@ -1881,15 +1881,15 @@
 /obj/machinery/button/shieldwallgen{
 	pixel_y = -1;
 	pixel_x = 22;
-	id = "twinkle_holobay";
+	id = "fistofF_holobay";
 	dir = 8
 	},
 /obj/machinery/button/door{
 	pixel_y = -10;
 	name = "Cargo Doors";
-	id = "49";
 	pixel_x = 23;
-	dir = 8
+	dir = 8;
+	id = "fistofF_blast_N"
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security)
@@ -2368,7 +2368,7 @@
 /obj/machinery/power/shieldwallgen/atmos{
 	anchored = 1;
 	dir = 8;
-	id = "twinkle_holobay";
+	id = "fistofF_holobay";
 	locked = 1
 	},
 /obj/structure/cable{
@@ -2377,7 +2377,7 @@
 	pixel_y = 1
 	},
 /obj/machinery/door/poddoor{
-	id = "49"
+	id = "fistofF_blast_N"
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security)
@@ -2700,7 +2700,7 @@
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/machinery/door/poddoor{
 	dir = 4;
-	id = "solc_eng"
+	id = "fistofF_eng"
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/engineering/engine)
@@ -2749,7 +2749,7 @@
 /obj/machinery/power/shieldwallgen/atmos{
 	anchored = 1;
 	dir = 4;
-	id = "twinkle_holobay";
+	id = "fistofF_holobay";
 	locked = 1
 	},
 /obj/structure/cable{
@@ -2758,7 +2758,7 @@
 	pixel_y = 1
 	},
 /obj/machinery/door/poddoor{
-	id = "49"
+	id = "fistofF_blast_N"
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security)
@@ -3426,7 +3426,7 @@
 	dir = 1
 	},
 /obj/machinery/door/poddoor{
-	id = "58"
+	id = "fistofF_armory"
 	},
 /turf/open/floor/mineral/titanium,
 /area/ship/security)
@@ -4267,10 +4267,10 @@
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
 	dir = 4;
-	id = "sgi_holocargo1"
+	id = "fistofF_holobay_S"
 	},
 /obj/machinery/door/poddoor{
-	id = "45"
+	id = "fistofF_blast_S"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
@@ -4360,6 +4360,13 @@
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/crew/crewthree)
+"BH" = (
+/obj/machinery/porta_turret/ship/solfed{
+	dir = 9;
+	id = "fistofF_turrets"
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
 "BJ" = (
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/structure/window/plasma/reinforced/spawner,
@@ -4730,7 +4737,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/button/door{
-	id = 58;
+	id = "fistofF_armory";
 	dir = 1;
 	pixel_y = -25
 	},
@@ -5093,14 +5100,14 @@
 	},
 /obj/machinery/button/shieldwallgen{
 	dir = 4;
-	id = "sgi_holocargo1";
+	id = "fistofF_holobay_S";
 	pixel_x = -18;
 	pixel_y = 2
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/garbage,
 /obj/machinery/button/door{
-	id = 45;
+	id = "fistofF_blast_S";
 	dir = 4;
 	pixel_x = -20;
 	pixel_y = -7
@@ -6178,6 +6185,12 @@
 /obj/machinery/atmospherics/components/unary/outlet_injector/layer4,
 /turf/open/floor/engine/n2,
 /area/ship/engineering/atmospherics)
+"Mj" = (
+/obj/machinery/porta_turret/ship/solfed{
+	id = "fistofF_turrets"
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
 "Mk" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue{
 	dir = 10
@@ -6372,6 +6385,13 @@
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/engineering/engine)
+"NH" = (
+/obj/machinery/porta_turret/ship/solfed{
+	dir = 10;
+	id = "fistofF_turrets"
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
 "NJ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -6511,7 +6531,7 @@
 	},
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/poddoor{
-	id = "45"
+	id = "fistofF_blast_S"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
@@ -7402,6 +7422,13 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
+"UD" = (
+/obj/machinery/porta_turret/ship/solfed{
+	dir = 1;
+	id = "fistofF_turrets"
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
 "UE" = (
 /obj/machinery/mineral/ore_redemption{
 	dir = 8;
@@ -7461,7 +7488,7 @@
 	dir = 2
 	},
 /obj/machinery/door/poddoor{
-	id = "45"
+	id = "fistofF_blast_S"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
@@ -7996,6 +8023,13 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
+"XN" = (
+/obj/machinery/porta_turret/ship/solfed{
+	dir = 5;
+	id = "fistofF_turrets"
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
 "XV" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -8137,7 +8171,7 @@
 	dir = 9
 	},
 /obj/machinery/door/poddoor{
-	id = "58"
+	id = "fistofF_armory"
 	},
 /turf/open/floor/mineral/titanium,
 /area/ship/security)
@@ -8289,7 +8323,7 @@ mQ
 mQ
 mQ
 mQ
-eW
+BH
 aB
 cZ
 cZ
@@ -8300,7 +8334,7 @@ cZ
 cZ
 cZ
 aB
-eW
+NH
 mQ
 mQ
 mQ
@@ -8583,7 +8617,7 @@ mQ
 (11,1,1) = {"
 mQ
 mQ
-eW
+BH
 bZ
 bZ
 aI
@@ -8606,7 +8640,7 @@ fJ
 tG
 tG
 aB
-eW
+NH
 mQ
 mQ
 "}
@@ -8973,7 +9007,7 @@ mQ
 (24,1,1) = {"
 mQ
 mQ
-eW
+UD
 zV
 zV
 zV
@@ -8996,7 +9030,7 @@ VP
 VP
 VP
 VP
-eW
+Mj
 mQ
 mQ
 "}
@@ -9213,7 +9247,7 @@ mQ
 (32,1,1) = {"
 mQ
 mQ
-eW
+XN
 XJ
 XJ
 XJ
@@ -9424,7 +9458,7 @@ mQ
 mQ
 mQ
 mQ
-eW
+XN
 iQ
 pr
 qS
@@ -9787,7 +9821,7 @@ mQ
 mQ
 mQ
 mQ
-eW
+XN
 vc
 vc
 vc

@@ -61,13 +61,13 @@
 	supports_variations = DIGITIGRADE_VARIATION
 
 // Костюм горничной тактический белый без статов
-/obj/item/clothing/gloves/maid/white // есть проблема с тем что я не могу перекрасить красный цвет...
+/obj/item/clothing/gloves/maid/white
 	name = "maid sleeves"
 	desc = "Replica tacticute."
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/hands/gloves.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/hands/overlay/hands.dmi'
 	icon_state = "syndimaid_arms"
-	mob_overlay_state = "tacticool_arms"
+	mob_overlay_state = "syndimaid_arms"
 
 /obj/item/clothing/under/costume/maid/white
 	name = "maid tacticute costume"
@@ -76,3 +76,27 @@
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/maidunder.dmi'
 	icon_state = "maid"
 	item_state = "maid"
+
+/obj/item/clothing/under/costume/kimono_sigmar
+	name = "short-sleeved kimono"
+	desc = "A traditional ancient Earth Japanese Kimono. It's white with a gold trim and burnished gold ivy pattern."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/costume.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/costume.dmi'
+	icon_state = "kimono_gold"
+	item_state = "kimono_gold"
+
+/obj/item/clothing/under/costume/maid_dragon
+	name = "dragon maid uniform"
+	desc = "A uniform for a kitchen maid, stylized to have draconic detailing."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/costume.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/costume.dmi'
+	icon_state = "dragon_maid"
+	item_state = "dragon_maid"
+	body_parts_covered = CHEST | GROIN
+	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON
+
+/obj/item/clothing/under/suit/waiter/occult
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/under.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/under.dmi'
+	icon_state = "occultoutfit"
+	item_state = "occultoutfit"

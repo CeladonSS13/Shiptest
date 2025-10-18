@@ -115,7 +115,6 @@
 	desc = "A heavy plushie of a rather large and hungry shark"
 	icon_state = "plushie_sharknet"
 	attack_verb = list("cuddle", "squish", "weh")
-	w_class = WEIGHT_CLASS_NORMAL
 	squeak_override = list('mod_celadon/_storage_sounds/sound/plushes/voice/slime_squish.ogg' = 1)
 	young = TRUE //No.
 
@@ -731,6 +730,7 @@
 	name = "hampter"
 	desc = "The people demand hampters!"
 	icon_state = "hampter"
+	w_class = WEIGHT_CLASS_TINY
 
 /obj/item/toy/plush/celadon/hampter/asisstant
 	name = "hampter the Assitant"
@@ -782,7 +782,6 @@
 	desc = "A cute soft toy of a beaver. Holding it in your hands, you can hardly restrain yourself from screaming with happiness."
 	icon_state = "beaver_plushie"
 	item_state = "beaver_plushie"
-	w_class = WEIGHT_CLASS_SMALL
 	gender = MALE
 	COOLDOWN_DECLARE(cooldown)
 
@@ -849,7 +848,6 @@
 	desc = "Эта рыжая морда может и выглядит мило и безобидно, но всегда держи в уме то, что под ее халатом есть кабура со Стечкиным."
 	icon_state = "rimri"
 	item_state = "rimri"
-	w_class = WEIGHT_CLASS_SMALL
 	gender = FEMALE
 	COOLDOWN_DECLARE(cooldown)
 
@@ -886,7 +884,6 @@
 	desc = "Это игрушка кого-то вам напоминает, но кого, не понятно. Кошка какая-то..."
 	icon_state = "kira"
 	item_state = "kira"
-	w_class = WEIGHT_CLASS_SMALL
 	gender = FEMALE
 	COOLDOWN_DECLARE(cooldown)
 
@@ -910,7 +907,6 @@
 	desc = "Очаровательная таяра альбинос в нижнем белье, так и манит её погладить."
 	icon_state = "mira"
 	item_state = "mira"
-	w_class = WEIGHT_CLASS_SMALL
 	gender = FEMALE
 	COOLDOWN_DECLARE(cooldown)
 
@@ -930,7 +926,6 @@
 	desc = "Пышная и мягкая плюшевая девушка с крашером в руках и ненавистью к НТ в глазах. Взглянув на неё, так и хочется прокричать \"For the syndicate!\""
 	icon_state = "tora"
 	item_state = "tora"
-	w_class = WEIGHT_CLASS_SMALL
 	gender = FEMALE
 	COOLDOWN_DECLARE(cooldown)
 	squeak_override = list('mod_celadon/_storage_sounds/sound/emotes/tajaran/mrowss.ogg' = 1)
@@ -985,3 +980,20 @@
 
 #undef BASIC_MINER_SKIN
 #undef RED_MINER_SKIN
+
+/obj/item/toy/plush/celadon/mibib
+	name = "Mibib plushie"
+	desc = "Мягкая игрушка милого животного. Вы припоминаете, что видели её в каком-то фильме, в названии которого было что-то про звёзды. Но милота игрушки совсем свела вас с ума..."
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/plushes_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/plushes_righthand.dmi'
+	icon_state = "mibib"
+	item_state = "mibib"
+	w_class = WEIGHT_CLASS_NORMAL
+
+/obj/item/toy/plush/celadon/grogu
+	name = "Grogu plushie"
+	desc = "Мягкая игрушка милого животного. Вы припоминаете, что видели её в каком-то фильме, в названии которого было что-то про звёзды. Но милота игрушки совсем свела вас с ума..."
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/plushes_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/plushes_righthand.dmi'
+	icon_state = "grogu"
+	item_state = "grogu"

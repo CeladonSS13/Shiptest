@@ -68,3 +68,13 @@
 	body_parts_covered = CHEST | ARMS | GROIN
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 	supports_variations = DIGITIGRADE_VARIATION
+
+/obj/item/clothing/suit/archercoat
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/costume.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/costume.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/under/in_hands/costume_left.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/under/in_hands/costume_right.dmi'
+	name = "archer coat"
+	desc = "A ceremonial robe resembling an archmage's mantle from ancient legends. Despite the name, it contains no magical power, but looks quite impressive."
+	icon_state = "archercoat"
+	item_state = "archercoat"

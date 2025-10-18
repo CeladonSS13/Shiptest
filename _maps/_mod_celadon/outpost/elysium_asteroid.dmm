@@ -13513,7 +13513,15 @@
 "iQN" = (
 /obj/machinery/light/colored/orange/directional/west,
 /obj/effect/turf_decal/siding/wood{
-	dir = 8
+	color = "#543C30";
+	dir = 9
+	},
+/obj/item/paper/crumpled{
+	default_raw_text = "Записка содержит небольшую переписку работника дизайнера и боссом компании по выпуску торговых автоматов. Б: Я тебе запрещаю, выпускать такие пузатые автоматы! Они не красивые, уродские! Р: Но вы только посмотрите на этот тонкий арт, цветущая сакура, иероглиф, ну умиротворение же скажите? Б: Нет! И нет! Никакие жирные кабаны не будут на моей территории! Р: А если я скажу что художник готов внести пожертвование в общее дело а? Б: Ааа! Благотворительность, ну что ж ты так сразу н есказал! Давай сюда патент подпишу.";
+	pixel_x = 6;
+	pixel_y = 23;
+	layer = 2.8;
+	name = "Придавленный листок бумажки"
 	},
 /turf/open/floor/carpet/donk,
 /area/outpost/fraction/syndi/donkco_shop)
@@ -15333,6 +15341,13 @@
 /obj/effect/spawner/random/bedsheet,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/palata_1)
+"kcv" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 1
+	},
+/turf/open/floor/carpet/donk,
+/area/outpost/fraction/syndi/donkco_shop)
 "kcy" = (
 /obj/machinery/power/apc/auto_name/directional/south{
 	req_access_txt = "8100, 8111"
@@ -28915,6 +28930,13 @@
 /obj/machinery/door/airlock,
 /turf/open/floor/marble,
 /area/outpost/fraction/nanotrasen)
+"tfI" = (
+/obj/machinery/vending/clothing/sakura,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood/jungleplanet,
+/area/outpost/fraction/syndi/donkco_shop)
 "tfJ" = (
 /obj/structure/window/reinforced{
 	dir = 4;
@@ -49192,7 +49214,7 @@ utH
 pOV
 bnF
 wlC
-hVY
+tfI
 iQN
 rFV
 peG
@@ -49378,9 +49400,9 @@ pdc
 utH
 bOi
 oeI
-dqm
-eQm
-kGF
+wlC
+hVY
+kcv
 ecQ
 peH
 dYj
@@ -49565,7 +49587,7 @@ hOg
 pns
 oXk
 rer
-dqm
+wlC
 vgy
 teX
 ive
