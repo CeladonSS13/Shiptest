@@ -333,12 +333,7 @@ dock_empty_space_fix.dm:
 ### Авторы:
 
 
-RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFaceLesS, Burbonchik, MrRomainzZ, Molniz, Redwizz, Sjerty, Garomt, Ganza9991, KOCMOHABT, AI Assistant
-
-- Автор фикса дисков дизайнов: Турон/Mirag1993
-- Автор фикса бесконечного спавна мобов: Турон/Mirag1993
-- Автор фиксов производительности консолей: AI Assistant
-- Автор фикса операции Repair puncture: AI Assistant
+RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFaceLesS, Burbonchik, MrRomainzZ, Molniz, Redwizz, Sjerty, Garomt, Ganza9991, KOCMOHABT
 
 ### Исправления производительности консолей
 
