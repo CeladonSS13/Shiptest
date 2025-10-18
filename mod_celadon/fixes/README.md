@@ -276,6 +276,8 @@ FIXES_ANTAG_NINJA
 FIXES_MEDBOT_RUNTIME_PATH_NULL - Добавляем проверки на null путь
 - EDIT: `code/modules/mob/living/simple_animal/bot/medbot.dm`
 
+FIXES_HOODED_ICONS
+- 'code/modules/clothing/suits/toggles.dm'
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

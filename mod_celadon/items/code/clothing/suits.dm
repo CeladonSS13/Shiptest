@@ -79,6 +79,8 @@
 /obj/item/clothing/suit/toggle/leather_jacket
 	icon_state = "gothcoat"
 	item_state = "gothcoat"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/costume.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/costume.dmi'
 
 /obj/item/clothing/suit/toggle/leather_jacket/midriff
 	name = "cropped leather jacket"
