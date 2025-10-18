@@ -154,14 +154,14 @@
 	uniform = /obj/item/clothing/under/solfed/camo
 	shoes = /obj/item/clothing/shoes/jackboots
 	backpack = /obj/item/storage/backpack/solfed
-	suit = /obj/item/clothing/suit/armor/solgov_trenchcoat
+	suit = /obj/item/clothing/suit/armor/vest
 	mask = /obj/item/clothing/mask/gas/sechailer
 	r_pocket = null
 	l_pocket = null
 	back = /obj/item/storage/backpack/solfed
 	ears = /obj/item/radio/headset/alt
-	gloves = /obj/item/clothing/gloves/combat
-	head = /obj/item/clothing/head/helmet/sec
+	gloves = /obj/item/clothing/gloves/combat/solfed
+	head = /obj/item/clothing/head/solfed/beret
 	alt_suit = /obj/item/clothing/suit/armor/vest/security/officer
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
 	l_pocket = /obj/item/restraints/handcuffs
@@ -172,8 +172,6 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
 	courierbag = /obj/item/storage/backpack/messenger/sec
 	box = /obj/item/storage/box/survival/security
-
-	implants = list(/obj/item/implant/mindshield)
 
 	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
 
@@ -449,6 +447,7 @@
 	ears = /obj/item/radio/headset/solgov/alt/captain
 	backpack = /obj/item/storage/backpack/solfed
 	gloves = /obj/item/clothing/gloves/combat
+	neck = null
 
 /datum/outfit/job/solfed/captain/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
