@@ -1,184 +1,285 @@
-/mob/living/simple_animal/iriska
+/mob/living/basic/iriska
 	name = "Iriska"
-	desc = "The captain's own cat. Fat and lazy."
+	desc = "The captain's own cat. Fat and lazy. She's absolutely massive and looks impossibly heavy."
 	icon = 'mod_celadon/_storage_icons/icons/mobs/pet_content/pets.dmi'
 	icon_state = "iriska"
 	icon_dead = "iriska_dead"
-	health = 80
-	maxHealth = 80
-	wander = FALSE
-	turns_per_move = 0
+	health = 250
+	maxHealth = 250
 	speak_emote = list("purrs.", "meows.")
-	emote_see = list("shakes her head.", "shivers.")
-	speak_chance = 0.75
 	butcher_results = list(/obj/item/food/meat/slab = 6)
 	response_help_simple = "pets"
 	response_disarm_simple = "rubs"
 	response_harm_simple = "makes terrible mistake by kicking"
-	atmos_requirements = list("min_oxy" = 16, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
 	mob_size = MOB_SIZE_HUGE
-	harm_intent_damage = 20
 	melee_damage_lower = 10
-	melee_damage_upper = 30
+	melee_damage_upper = 20
 	attack_verb_simple = "slashed"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
+	ai_controller = /datum/ai_controller/basic_controller/iriska
 
-	var/obj/item/food/snack = null
+	armor = list(MELEE = 20, BULLET = 20, LASER = 5, ENERGY = 15, BOMB = 10, BIO = 0, FIRE = 10, ACID = 0)
 
 	var/list/tolerated = list()
 	var/list/despised = list()
-
-	var/min_scan_interval = 1//Minimum and maximum number of procs between a foodscan. Animals will slow down if there's no food around for a while
-	var/max_scan_interval = 10
-	var/scan_interval = 5		//current scan interval, clamped between min and max
-								//It gradually increases up to max when its left alone, to save performance
-								//It will drop back to 1 if it spies any food.
-								//This short time makes animals more responsive to interactions and more fun to play with
-
-	var/foodtarget = 0
-	var/turns_since_scan = 0
-	var/hunger_enabled = 1 //ignores hunger if 0
 	var/nutrition_tick = 0
+	var/hunger_timer = 0
+	var/last_hunger_emote = 0
+	var/killer_name = null
+	var/rage_target = null
+	var/rage_timer = 0
+	var/list/ranged_attackers = list()
 
-/mob/living/simple_animal/iriska/Initialize(mapload)
+/mob/living/basic/iriska/Initialize(mapload)
 	. = ..()
 	nutrition = 50
 
-/mob/living/simple_animal/iriska/proc/can_eat()
-	if (!hunger_enabled || nutrition > 45)
-		return 0	//full
+/mob/living/basic/iriska/can_be_pulled(atom/movable/puller, grab_state, force, supress_message)
+	if(ismecha(puller))
+		return TRUE
+	if(!supress_message)
+		to_chat(puller, "<span class='warning'>[src] is far too heavy to move by hand! You'd need a mech or something equally powerful.</span>")
+		manual_emote("doesn't budge an inch despite [puller]'s efforts")
+	return FALSE
 
-	else if (nutrition > 40)
-		return 1	//content
+/mob/living/basic/iriska/Move()
+	return FALSE
 
-	else return 2	//hungry
+/mob/living/basic/iriska/forceMove(atom/destination)
+	if(ismecha(usr))
+		return ..(destination)
+	return FALSE
 
-/mob/living/simple_animal/iriska/Life()
-	.=..()
+/mob/living/basic/iriska/bullet_act(obj/projectile/P)
+	if(P.firer && ishuman(P.firer))
+		var/mob/living/carbon/human/shooter = P.firer
+		despised += shooter.real_name
+		if(shooter.real_name in tolerated)
+			tolerated -= shooter.real_name
+		ranged_attackers += shooter.real_name
+		manual_emote("roars in fury at being shot by [shooter]!")
+		say("RRRAAAAWWWWRRRR!")
 
-	if(AIStatus == AI_ON)
-		handle_nutrition()
-		seek_food()
-		react_to_mob()
+		if(prob(50))
+			to_chat(shooter, "<span class='userdanger'>You feel Iriska's hateful gaze burning into your soul...</span>")
+			playsound(shooter, 'sound/hallucinations/growl1.ogg', 50, TRUE)
 
-/mob/living/simple_animal/iriska/proc/handle_nutrition()
-	if(nutrition_tick < 2)
-		nutrition_tick++
-	else
-		nutrition--
-		nutrition_tick = 0
+	if(prob(40))
+		manual_emote("shrugs off the attack, her thick fat absorbing most of the impact")
+		visible_message("[P] seems to barely penetrate [src]'s thick hide!")
 
-/mob/living/simple_animal/iriska/proc/seek_food()
-	turns_since_scan++
-	if(turns_since_scan >= scan_interval)
-		turns_since_scan = 0
-		if(snack && (!(isturf(snack.loc) || (foodtarget && !can_eat()) )))
-			snack = null
-			foodtarget = 0
-		if(!snack || !(snack.loc in oview(src, 1)))
-			snack = null
-			foodtarget = 0
-			if (can_eat())
-				for(var/obj/item/food/S in oview(src,1))
-					if(!istype(S, /obj/item/food/grown))
-						if(isturf(S.loc))
-							snack = S
-							foodtarget = 1
-							break
+	return ..()
 
-		if(snack) // once she starts eating she will not stop until food is eaten, even if she exceeds  50 nutrition. Fat bitch
-			scan_interval = min_scan_interval
+/mob/living/basic/iriska/apply_damage(damage, damagetype = BRUTE, def_zone = null, blocked = 0, forced = FALSE, spread_damage = FALSE, wound_bonus = 0, bare_wound_bonus = 0, sharpness = NONE)
+	if(damagetype == BRUTE || damagetype == BURN)
+		damage = damage * 0.6
+		if(prob(25))
+			manual_emote("wobbles as her fat absorbs the impact")
+			visible_message("The attack seems to sink into [src]'s massive bulk!")
 
-			if (snack.loc.x < src.x)
-				setDir(WEST)
-			else if (snack.loc.x > src.x)
-				setDir(EAST)
-			else if (snack.loc.y < src.y)
-				setDir(SOUTH)
-			else if (snack.loc.y > src.y)
-				setDir(NORTH)
-			else
-				setDir(SOUTH)
+	return ..(damage, damagetype, def_zone, blocked, forced, spread_damage, wound_bonus, bare_wound_bonus, sharpness)
 
-			if(isturf(snack.loc) && Adjacent(get_turf(snack), src))
-				var/mob/mob = get_mob_by_key(snack.fingerprintslast)
-				bite_targeted_food(snack)
-				if(!(mob in despised))
-					tolerate(mob)
-	else
-		scan_interval = max(min_scan_interval, min(scan_interval+1, max_scan_interval))
+/mob/living/basic/iriska/attackby(obj/item/O, mob/user)
+	var/is_food = FALSE
+	if(istype(O, /obj/item/food) || istype(O, /obj/item/reagent_containers/food) || (O.reagents && O.reagents.has_reagent(/datum/reagent/consumable/nutriment)))
+		is_food = TRUE
 
-/mob/living/simple_animal/iriska/proc/bite_targeted_food()
-	if(snack) //sanity
-		if(snack.bite_consumption == 0 || prob(25))
-			manual_emote("nibbles away at \the [snack]")
-		snack.bite_consumption++
-		var/satur = snack.food_reagents[/datum/reagent/consumable/nutriment]
-		if(satur)
-			nutrition += satur
-		if(snack.bite_consumption >= 5)
-			qdel(snack)
+	if(is_food && ishuman(user))
+		var/mob/living/carbon/human/H = user
+		if(H.real_name in despised)
+			manual_emote("refuses the food from [H] with disdain")
+			say("HISSSS!")
+			return
 
-/mob/living/simple_animal/iriska/proc/react_to_mob()
-	for(var/mob/living/M in oview(src, 1))
-		if (M.stat != DEAD)
+		if(nutrition < 45)
+			manual_emote("eagerly devours the [O]")
+			nutrition = min(nutrition + 10, 50)
+			hunger_timer = 0
+			if(!(H.real_name in tolerated) && prob(40))
+				tolerated += H.real_name
+				manual_emote("looks at [H] approvingly")
+			say("Purrr...")
+			qdel(O)
+			return
+		else
+			manual_emote("sniffs the food but walks away, already full")
+			return
 
-			if(iscorgi(M))
-				if(prob(5)) to_chat(M, "pointedly ignores [M].")
+	. = ..()
+	if(O.force && ishuman(user))
+		var/mob/living/carbon/human/H = user
+		despised += H.real_name
+		if(H.real_name in tolerated)
+			tolerated -= H.real_name
+		manual_emote("hisses angrily at [H], eyes filled with hatred")
+		rage_target = H
+		rage_timer = 100
+		manual_emote("enters a furious rage!")
+		say("RRRAAAAWWWWRRRR!")
 
-			else if(iscat(M))
-				var/verb = pick("meows", "mews", "mrowls")
-				if(prob(5)) to_chat(M, "[verb] at [M].")
+/mob/living/basic/iriska/attack_hand(mob/living/carbon/human/M)
+	if(!ishuman(M))
+		return ..()
 
-			else if(ishuman(M))
-				if(M.real_name in tolerated)
-					if(prob(2)) say("Meoow!")
-
-				else if ((M.job == "Captain") && !(M.real_name in despised)) // Recognize captain
-					tolerated |= M.real_name
-					to_chat(M, "looks at [M] with a hint of respect.")
-
-				else
-					assert_dominance(M)
-
-			else
-				assert_dominance(M)
-	return
-
-/mob/living/simple_animal/iriska/proc/assert_dominance(var/mob/target_mob)
-	if(prob(15)) say("HSSSSS")
-	if(!Adjacent(target_mob))
+	if(M.real_name in despised)
+		manual_emote("hisses and tries to scratch [M]")
+		say("HISSSS!")
+		if(prob(40))
+			manual_emote("raises her massive paw menacingly")
+			if(prob(30))
+				M.apply_damage(rand(25, 45), BRUTE, pick(BODY_ZONE_CHEST, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM))
+				M.visible_message("[src] swipes [M] with her huge paw!", "Iriska's paw hits you like a sledgehammer!")
+				playsound(src, attack_sound, 50, TRUE)
+				killer_name = M.real_name
 		return
-	if(isliving(target_mob))
-		CanAttack(target_mob)
-		return target_mob
 
-/mob/living/simple_animal/iriska/proc/despise(mob/living/carbon/human/M as mob)
-	if(istype(M))
-		despised |= M.real_name
+	if(M.a_intent == INTENT_DISARM)
+		despised += M.real_name
 		if(M.real_name in tolerated)
 			tolerated -= M.real_name
+		manual_emote("hisses angrily at [M], eyes filled with hatred")
+		return ..()
 
-/mob/living/simple_animal/iriska/proc/tolerate(mob/living/carbon/human/M as mob)
-	if(istype(M))
-		if(!(M.real_name in tolerated) && prob(30))
-			to_chat(M, "looks at [M] approvingly.")
-			tolerated += M.real_name
+	if(M.a_intent == INTENT_HARM)
+		despised += M.real_name
+		if(M.real_name in tolerated)
+			tolerated -= M.real_name
+		rage_target = M
+		rage_timer = 100
+		manual_emote("enters a furious rage!")
+		say("RRRAAAAWWWWRRRR!")
+		return ..()
 
-/mob/living/simple_animal/iriska/attackby(var/obj/item/O, var/mob/user)
-	. = ..()
-	if(O.force)
-		despise(user)
+	if(M.a_intent == INTENT_HELP && M.real_name in tolerated)
+		if(prob(20))
+			say("PRRRR")
+			manual_emote("purrs contentedly as [M] pets her")
+		return
 
-/mob/living/simple_animal/iriska/attack_hand(mob/living/carbon/human/M as mob)
-	. = ..()
-	if(M.a_intent == INTENT_DISARM)
-		despise(M)
-	if((M.a_intent == INTENT_HELP) && (M in tolerated))
-		if(prob(15)) say("PRRRR")
+	return ..()
 
-/mob/living/simple_animal/iriska/death(gibbed, deathmessage = "dies!")
-	.=..()
+/mob/living/basic/iriska/death(gibbed, deathmessage = "dies!")
+	rage_timer = 0
+	rage_target = null
 
-	snack = null
-	return ..(gibbed,deathmessage)
+	if(killer_name)
+		log_game("[killer_name] killed Iriska the cat.")
+		message_admins("[killer_name] has killed Iriska and received the curse!")
+
+	for(var/attacker_name in ranged_attackers)
+		for(var/mob/living/carbon/human/H in GLOB.player_list)
+			if(H.real_name == attacker_name)
+				to_chat(H, "<span class='userdanger'>Iriska's dying curse reaches you across the station... You feel watched.</span>")
+				playsound(H, 'sound/hallucinations/wail.ogg', 25, TRUE)
+
+	playsound(src, 'sound/hallucinations/wail.ogg', 100, TRUE)
+	for(var/mob/M in range(10, src))
+		if(M.client)
+			to_chat(M, "<span class='danger'>A bone-chilling wail echoes through the air as Iriska's spirit departs...</span>")
+
+	return ..(gibbed, deathmessage)
+
+/datum/ai_controller/basic_controller/iriska
+	ai_movement = /datum/ai_movement/basic_avoidance
+	planning_subtrees = list(
+		/datum/ai_planning_subtree/iriska_behavior,
+	)
+
+/datum/ai_planning_subtree/iriska_behavior
+
+/datum/ai_planning_subtree/iriska_behavior/SelectBehaviors(datum/ai_controller/controller, seconds_per_tick)
+	var/mob/living/basic/iriska/cat = controller.pawn
+	if(!istype(cat))
+		return
+
+	var/players_nearby = FALSE
+	for(var/mob/living/carbon/human/H in range(7, cat))
+		if(H.client && H.stat != DEAD)
+			players_nearby = TRUE
+			break
+
+	if(!players_nearby)
+		return
+
+	if(cat.nutrition_tick < 3)
+		cat.nutrition_tick++
+	else
+		cat.nutrition = max(0, cat.nutrition - 1)
+		cat.nutrition_tick = 0
+
+	if(cat.nutrition < 30 && cat.stat != DEAD)
+		cat.hunger_timer++
+		if(cat.hunger_timer > 10 && world.time - cat.last_hunger_emote > 300)
+			cat.manual_emote("looks around hungrily and meows pitifully")
+			cat.say("Mrow... mrow...")
+			cat.balloon_alert_to_viewers("hungry!")
+			cat.last_hunger_emote = world.time
+
+		if(cat.hunger_timer > 20)
+			cat.balloon_alert_to_viewers("starving!")
+	else
+		cat.hunger_timer = 0
+
+	for(var/obj/item/S in range(1, cat))
+		var/is_food = FALSE
+		if(istype(S, /obj/item/food) || istype(S, /obj/item/reagent_containers/food) || (S.reagents && S.reagents.has_reagent(/datum/reagent/consumable/nutriment)))
+			is_food = TRUE
+
+		if(is_food && isturf(S.loc) && cat.nutrition < 45)
+			cat.manual_emote("nibbles away at \the [S]")
+			cat.nutrition = min(cat.nutrition + 5, 50)
+			cat.hunger_timer = 0
+			qdel(S)
+			break
+
+	if(cat.rage_timer > 0 && cat.stat != DEAD)
+		cat.rage_timer--
+		if(cat.rage_target && get_dist(cat, cat.rage_target) <= 1)
+			var/mob/living/carbon/human/target = cat.rage_target
+			if(target.stat != DEAD && target.health > 0)
+				cat.manual_emote("savagely mauls [target]!")
+				target.apply_damage(rand(35, 55), BRUTE, pick(BODY_ZONE_CHEST, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM))
+				if(prob(25))
+					target.apply_damage(20, BRUTE, pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG))
+					target.visible_message("[cat] brutally mauls [target]!", "Iriska tears into you with uncontrolled fury!")
+				playsound(cat, cat.attack_sound, 75, TRUE)
+				cat.killer_name = target.real_name
+				if(target.health <= 0)
+					cat.rage_timer = 0
+					cat.rage_target = null
+					cat.manual_emote("stands over the beaten [target], breathing heavily")
+		else
+			cat.rage_timer = 0
+			cat.rage_target = null
+
+	for(var/mob/living/carbon/human/M in range(1, cat))
+		if(M.stat == DEAD || !M.client)
+			continue
+
+		if(M.real_name in cat.despised && cat.stat != DEAD)
+			if(prob(30))
+				cat.say("HISSSS!")
+			if(prob(20))
+				cat.manual_emote("raises her massive paw menacingly")
+				if(prob(30))
+					M.apply_damage(rand(25, 45), BRUTE, pick(BODY_ZONE_CHEST, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM))
+					if(prob(15))
+						M.apply_damage(15, BRUTE, pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG))
+						M.visible_message("[cat] strikes [M] with bone-crushing force!", "You feel something crack under Iriska's massive paw!")
+					else
+						M.visible_message("[cat] swipes [M] with her huge paw!", "Iriska's paw hits you like a sledgehammer!")
+					playsound(cat, cat.attack_sound, 50, TRUE)
+					cat.killer_name = M.real_name
+
+		else if(M.real_name in cat.tolerated)
+			if(prob(5))
+				cat.say("Meoow!")
+
+		else if(M.job == "Captain")
+			cat.tolerated += M.real_name
+			cat.manual_emote("looks at [M] with respect")
+
+		else if(cat.nutrition < 30 && cat.hunger_timer > 15)
+			if(!(M.real_name in cat.tolerated))
+				cat.despised += M.real_name
+				cat.manual_emote("glares angrily, remembering [M.real_name]'s neglect")

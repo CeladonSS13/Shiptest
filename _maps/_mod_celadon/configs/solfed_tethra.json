@@ -1,0 +1,44 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Tethra-class Response Vessel",
+	"map_short_name": "Tethra",
+	"description": "Корабль Солнечной Федерации класса Тетра относится к числу судов быстрого реагирования, зачастую использульзуемый в целях разведки и конвоирования заключенных. Несмотря на изначальные цели, судно снабжено необходимой экипировкой для участия в боевых столкновениях и рейдах. Несмотря на свои габариты, судно имеет превосходную маневренность и скорость. ",
+	"map_path": "_maps/_mod_celadon/shuttles/solfed/solfed_tethra.dmm",
+	"enabled": false,
+	"limit": 1,
+	"sensor_range": 5,
+	"starting_funds": 2000,
+	"prefix": "BSFSV",
+	"faction": "/datum/faction/solgov",
+	"tags": ["Боевой"],
+	"namelists": [
+		"SOLFED",
+		"SPACE",
+		"BRITISH_NAVY",
+		"NATURAL"
+	],
+	"job_slots": {
+		"Kommandant": {
+			"outfit": "/datum/outfit/job/solfed/captain/combat",
+			"officer": true,
+			"slots": 1
+		},
+		"Feldwebel": {
+			"outfit": "/datum/outfit/job/solfed/sergeant/combat",
+			"officer": true,
+			"slots": 1
+		},
+		"Marine": {
+			"outfit": "/datum/outfit/job/solfed/marine/combat",
+			"slots": 2
+		},
+		"Meeresarzt": {
+			"outfit": "/datum/outfit/job/solfed/doctor/combat",
+			"slots": 1
+		},
+		"Marinemechaniker": {
+			"outfit": "/datum/outfit/job/solfed/engineer/combat",
+			"slots": 1
+		}
+	}
+}

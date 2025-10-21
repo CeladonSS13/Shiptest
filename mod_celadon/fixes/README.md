@@ -272,7 +272,8 @@ FIXES_ANTAG_NINJA
 - EDIT, ADD: `code/modules/ninja/energy_katana.dm`
 - EDIT: `code/modules/ninja/suit/suit_attackby.dm`
 
-
+FIXES_HOODED_ICONS
+- 'code/modules/clothing/suits/toggles.dm'
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
