@@ -555,6 +555,13 @@
 	cost = 2
 	ruin_mission_types = list(/datum/mission/ruin/blackbox)
 
+/datum/map_template/ruin/lavaland/event_escape_from_prison_solfed
+	id = "event_escape_from_prison_solfed"
+	name = "EVENT Escape from SF prison"
+	description = "Ивентовая карта на побег от солфедов."
+	suffix = "event_prison_outpost.dmm"
+	cost = 5
+	allow_duplicates = FALSE
 //							///
 //		MARK: Rockplanet
 //							///
