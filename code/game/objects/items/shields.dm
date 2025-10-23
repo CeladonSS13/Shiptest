@@ -42,7 +42,11 @@
 	var/braking_alert = "cracks!"
 // [/CELADON-ADD]
 
-/obj/item/shield/proc/on_block(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", damage = 0, attack_type = MELEE_ATTACK)
+/obj/item/shield/proc/on_block(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", damage = 0, attack_type = MELEE_ATTACK, damage_type)
+// [CELADON-ADD] - BALLISTIC_SHIELD - Rebalance - Щиты не должны ломаться лол
+	if(damage_type != BRUTE && damage_type != BURN)
+		return FALSE
+// [/CELADON-ADD]
 	take_damage(damage)
 
 /obj/item/shield/atom_break(damage_flag)
@@ -77,10 +81,6 @@
 			. += span_warning("It's falling apart!")
 
 /obj/item/shield/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK, damage_type = BRUTE)
-// [CELADON-ADD] - BALLISTIC_SHIELD - Rebalance - Дизейблеры могли ломать шит, лол
-	if(damage_type != BRUTE && damage_type != BURN)
-		return FALSE
-// [/CELADON-ADD]
 	if(transparent && (hitby.pass_flags & PASSGLASS))
 		return FALSE
 // [CELADON-ADD] - BALLISTIC_SHIELD - Rebalance - Щиты не должны блокировать лежа
