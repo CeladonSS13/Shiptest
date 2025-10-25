@@ -102,8 +102,6 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	courierbag = /obj/item/storage/backpack/messenger/engi
 
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced = 1)
-
 /datum/outfit/job/cel/pirate/engineer/jupiter	// Не юзается
 	name = "Pirate - Engineer (Nodesman)"
 

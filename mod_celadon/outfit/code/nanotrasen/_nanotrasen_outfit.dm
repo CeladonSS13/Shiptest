@@ -95,10 +95,7 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/nanotrasen/officer
 
-	backpack_contents = list(
-						/obj/item/storage/box/ids = 1,
-						/obj/item/modular_computer/tablet/preset/advanced = 1,
-						)
+	backpack_contents = list(/obj/item/storage/box/ids = 1)
 
 	backpack = /obj/item/storage/backpack/captain
 	satchel = /obj/item/storage/backpack/satchel/cap
@@ -243,8 +240,6 @@
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	head = /obj/item/clothing/head/hardhat/nanotrasen/white
 	gloves = /obj/item/clothing/gloves/color/black
-
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced = 1)
 
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng

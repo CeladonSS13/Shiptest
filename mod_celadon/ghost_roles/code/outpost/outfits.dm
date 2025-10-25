@@ -110,8 +110,7 @@
 	gloves = /obj/item/clothing/gloves/maid/white
 	back = /obj/item/storage/backpack
 	belt = /obj/item/pda/bar
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced = 1,
-							/obj/item/spacecash/bundle/c100 = 3)
+	backpack_contents = list(/obj/item/spacecash/bundle/c100 = 3)
 	shoes = /obj/item/clothing/shoes/laceup
 	box = /obj/item/storage/box/survival
 	id = /obj/item/card/id/outpost/maid

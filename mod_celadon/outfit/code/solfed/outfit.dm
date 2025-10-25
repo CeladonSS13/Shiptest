@@ -168,7 +168,7 @@
 	head = /obj/item/clothing/head/solgov
 	neck = /obj/item/clothing/neck/cloak/overseer
 	suit = /obj/item/clothing/suit/armor/vest/solgov/overseer
-	backpack_contents = list(/obj/item/storage/box/ids=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
+	backpack_contents = list(/obj/item/storage/box/ids=1)
 
 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/officer)
 

@@ -498,7 +498,7 @@
 	id = /obj/item/card/id/syndicate_command/crew_id
 	r_pocket = /obj/item/melee/knife/survival
 	glasses = /obj/item/clothing/glasses/hud/health
-	backpack_contents = list(/obj/item/storage/box/ids=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
+	backpack_contents = list(/obj/item/storage/box/ids=1)
 
 /datum/outfit/job/cel/syndicate/head_of_personnel/ngr
 	name = "Syndicate - Ensign (NGR)"

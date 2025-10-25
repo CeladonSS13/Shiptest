@@ -176,8 +176,6 @@
 	belt = /obj/item/storage/belt/utility/chief/full
 	courierbag = /obj/item/storage/backpack/messenger/inteq
 
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced = 1)
-
 //MARK: Инженегр
 /datum/outfit/job/cel/inteq/engineer
 	name = "IQ - Artificer"

@@ -188,8 +188,7 @@
 	suit = /obj/item/clothing/suit/armor/vest/solgov/overseer
 	shoes = /obj/item/clothing/shoes/laceup
 
-	backpack_contents = list(/obj/item/storage/box/ids = 1,
-							/obj/item/modular_computer/tablet/preset/advanced = 1)
+	backpack_contents = list(/obj/item/storage/box/ids = 1)
 
 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/officer)
 

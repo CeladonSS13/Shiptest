@@ -95,8 +95,6 @@
 
 	courierbag = /obj/item/storage/backpack/messenger/inteq
 
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced = 1)
-
 ///paramedic
 
 /datum/outfit/job/cel/inteq/paramedic
