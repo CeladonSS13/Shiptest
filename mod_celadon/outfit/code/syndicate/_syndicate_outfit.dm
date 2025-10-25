@@ -23,9 +23,6 @@
 	. = ..()
 	get_syndi_general_access(H)
 
-/datum/outfit/job/cel/syndicate
-	box = /obj/item/storage/box/survival/syndicate
-
 //MARK: Captain
 
 /datum/outfit/job/cel/syndicate/captain

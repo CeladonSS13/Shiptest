@@ -5,7 +5,7 @@
 	faction = FACTION_PLAYER_SYNDICATE
 
 	uniform = /obj/item/clothing/under/color/black
-	box = /obj/item/storage/box/survival
+	box = /obj/item/storage/box/survival/syndicate
 	id = /obj/item/card/id/syndicate_command/crew_id
 
 	faction_icon = "bg_syndicate"
