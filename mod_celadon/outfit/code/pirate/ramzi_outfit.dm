@@ -1,9 +1,9 @@
 //Ramzi_Clique celadon - овверайд задника аутфитов под пиратскую тему-
-/datum/outfit/job/ramzi
+/datum/outfit/job/cel/ramzi
 	faction_icon = "bg_pirate"
 
 //Ramzi_Clique celadon - аутфиты которые используются на рондо
-/datum/outfit/job/ramzi_clique
+/datum/outfit/job/cel/ramzi_clique
 	name = "Ramzi Clique Rondo - Base Outfit"
 
 	uniform = /obj/item/clothing/under/syndicate/ramzi
@@ -21,13 +21,13 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
 	courierbag = /obj/item/storage/backpack/messenger/sec
 
-/datum/outfit/job/ramzi_clique/post_equip(mob/living/carbon/human/H, visualsOnly)
+/datum/outfit/job/cel/ramzi_clique/post_equip(mob/living/carbon/human/H, visualsOnly)
 	.=..()
 	if(visualsOnly)
 		return
 	H.faction |= list(FACTION_PIRATES)
 
-/datum/outfit/job/ramzi_clique/captain
+/datum/outfit/job/cel/ramzi_clique/captain
 	job_icon = "assistant"
 	name = "Ramzi Clique Rondo - Battle Master"
 
@@ -41,7 +41,7 @@
 	head = /obj/item/clothing/head/ramzi/beret
 	suit = /obj/item/clothing/suit/armor/ramzi/officer
 
-/datum/outfit/job/ramzi_clique/trooper
+/datum/outfit/job/cel/ramzi_clique/trooper
 	job_icon = "assistant"
 	name = "Ramzi Clique Rondo - Commando"
 
