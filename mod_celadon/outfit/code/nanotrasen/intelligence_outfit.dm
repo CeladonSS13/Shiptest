@@ -1,6 +1,6 @@
 /// MARK: слешер капитан
 
-/datum/outfit/job/nanotrasen/cel/intel/captain
+/datum/outfit/job/cel/nanotrasen/intel/captain
 	name = "NT Intelligence - Officer"
 	job_icon = "captain"
 
@@ -22,7 +22,7 @@
 
 /// MARK: слешер сбуха
 
-/datum/outfit/job/nanotrasen/cel/intel/operative
+/datum/outfit/job/cel/nanotrasen/intel/operative
 	name = "NT Intelligence - Security Operative"
 	job_icon = "headofsecurity"
 
@@ -41,7 +41,7 @@
 
 /// MARK: слешер медик
 
-/datum/outfit/job/nanotrasen/cel/intel/medic
+/datum/outfit/job/cel/nanotrasen/intel/medic
 	name = "NT Intelligence - Medical Technician"
 	job_icon = "chiefmedicalofficer"
 
@@ -60,7 +60,7 @@
 
 /// MARK: слешер инженер
 
-/datum/outfit/job/nanotrasen/cel/intel/engineer
+/datum/outfit/job/cel/nanotrasen/intel/engineer
 	name = "NT Intelligence - Engineering Technician"
 	job_icon = "chiefengineer"
 

@@ -1,6 +1,6 @@
 /// MARK: Доступы для Нанотрахенов
 
-/datum/outfit/job/nanotrasen/cel/proc/get_nt_general_access(mob/living/carbon/human/H)
+/datum/outfit/job/cel/nanotrasen/proc/get_nt_general_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
@@ -19,16 +19,12 @@
 		for (var/obj/item/card/id/card in W.contents)
 			W.combined_access |= card.access
 
-/datum/outfit/job/nanotrasen/cel/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/cel/nanotrasen/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_nt_general_access(H)
 
-// Даёт всем НТшкам брендовый сурвивал бокс
-/datum/outfit/job/nanotrasen/cel
-	box = /obj/item/storage/box/survival/nanotrasen
-
 // Captain
-/datum/outfit/job/nanotrasen/cel/captain
+/datum/outfit/job/cel/nanotrasen/captain
 	name = "NT - Captain"
 	job_icon = "captain"
 
@@ -59,7 +55,7 @@
 
 	implants = list(/obj/item/implant/mindshield)
 
-/datum/outfit/job/nanotrasen/cel/hos
+/datum/outfit/job/cel/nanotrasen/hos
 	job_icon = "headofsecurity"
 	name = "NT - Head of Security"
 
@@ -84,7 +80,7 @@
 	chameleon_extras = list(/obj/item/gun/energy/e_gun/hos, /obj/item/stamp/hos)
 
 // Head of Personnel
-/datum/outfit/job/nanotrasen/cel/hop
+/datum/outfit/job/cel/nanotrasen/hop
 	name = "NT - Head of Personnel"
 	job_icon = "headofpersonnel"
 	jobtype = /datum/job/head_of_personnel
@@ -114,7 +110,7 @@
 						/obj/item/stamp/nanotrasen/officer,
 						)
 
-/datum/outfit/job/nanotrasen/cel/engineer
+/datum/outfit/job/cel/nanotrasen/engineer
 	job_icon = "stationengineer"
 	name = "NT - Engineer"
 
@@ -136,7 +132,7 @@
 
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
-/datum/outfit/job/nanotrasen/cel/security
+/datum/outfit/job/cel/nanotrasen/security
 	job_icon = "securityofficer"
 	name = "NT - Security Officer"
 
@@ -161,7 +157,7 @@
 
 	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
 
-/datum/outfit/job/nanotrasen/cel/paramedic
+/datum/outfit/job/cel/nanotrasen/paramedic
 	job_icon = "paramedic"
 	name = "NT - Paramedic"
 
@@ -185,7 +181,7 @@
 
 	chameleon_extras = /obj/item/gun/syringe
 
-/datum/outfit/job/nanotrasen/cel/doctor
+/datum/outfit/job/cel/nanotrasen/doctor
 	job_icon = "medicaldoctor"
 	name = "NT - Medical Doctor"
 
@@ -205,9 +201,9 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	courierbag = /obj/item/storage/backpack/messenger/med
 
-/datum/outfit/job/nanotrasen/cel/cmo
+/datum/outfit/job/cel/nanotrasen/cmo
 
-/datum/outfit/job/nanotrasen/cel/warden
+/datum/outfit/job/cel/nanotrasen/warden
 	job_icon = "warden"
 	name = "NT - Warden"
 
@@ -233,7 +229,7 @@
 
 	chameleon_extras = /obj/item/gun/ballistic/shotgun/automatic/m11
 
-/datum/outfit/job/nanotrasen/cel/ce
+/datum/outfit/job/cel/nanotrasen/ce
 	job_icon = "chiefengineer"
 	name = "NT - Chief Engineer"
 
@@ -257,7 +253,7 @@
 
 	chameleon_extras = /obj/item/stamp/ce
 
-/datum/outfit/job/nanotrasen/cel/atmos
+/datum/outfit/job/cel/nanotrasen/atmos
 	job_icon = "stationengineer"
 	name = "NT - Atmos Tech"
 
@@ -276,7 +272,7 @@
 	courierbag = /obj/item/storage/backpack/messenger/engi
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
-/datum/outfit/job/nanotrasen/cel/miner
+/datum/outfit/job/cel/nanotrasen/miner
 	job_icon = "shaftminer"
 	name = "NT - Miner"
 
@@ -294,7 +290,7 @@
 	chameleon_extras = /obj/item/gun/energy/kinetic_accelerator
 
 // Lawyer
-/datum/outfit/job/nanotrasen/cel/lawyer
+/datum/outfit/job/cel/nanotrasen/lawyer
 	name = "NT - Lawyer"
 	jobtype = /datum/job/lawyer
 	job_icon = "lawyer"
@@ -308,7 +304,7 @@
 	r_pocket = /obj/item/clothing/accessory/lawyers_badge
 
 // Corp. Rep
-/datum/outfit/job/nanotrasen/cel/lawyer/corporaterepresentative
+/datum/outfit/job/cel/nanotrasen/lawyer/corporaterepresentative
 	name = "NT - Corporate Representative"
 	id_assignment = "Corporate Representative"
 
@@ -319,11 +315,11 @@
 	l_hand = /obj/item/clipboard
 	r_pocket = /obj/item/pen/fountain
 
-/datum/outfit/job/nanotrasen/cel/chemist
+/datum/outfit/job/cel/nanotrasen/chemist
 	job_icon = "chemist"
 
 // Quartermaster
-/datum/outfit/job/nanotrasen/cel/quartermaster
+/datum/outfit/job/cel/nanotrasen/quartermaster
 	name = "NT - Quartermaster"
 	job_icon = "quartermaster"
 
@@ -343,7 +339,7 @@
 
 // MARK: Научный директор - РД
 
-/datum/outfit/job/nanotrasen/cel/rd
+/datum/outfit/job/cel/nanotrasen/rd
 	name = "NT - Science Director"
 	job_icon = "researchdirector"
 
@@ -368,7 +364,7 @@
 
 // MARK: Медицинский директор - СМО
 
-/datum/outfit/job/nanotrasen/cel/cmo
+/datum/outfit/job/cel/nanotrasen/cmo
 	name = "NT - Medical Director"
 	job_icon = "chiefmedicalofficer"
 
@@ -391,7 +387,7 @@
 
 // MARK: Медицинский Директор - СМО капитан
 
-/datum/outfit/job/nanotrasen/cel/cmo/captain
+/datum/outfit/job/cel/nanotrasen/cmo/captain
 	name = "NT - Medical Director (Captain)"
 	job_icon = "chiefmedicalofficer"
 
@@ -419,7 +415,7 @@
 
 // MARK: Инженерный Директор - СЕ капитан
 
-/datum/outfit/job/nanotrasen/cel/ce/captain
+/datum/outfit/job/cel/nanotrasen/ce/captain
 	name = "NT - Engineering Director (Captain)"
 	job_icon = "chiefengineer"
 
@@ -446,7 +442,7 @@
 
 // MARK: Химик
 
-/datum/outfit/job/nanotrasen/cel/chemist
+/datum/outfit/job/cel/nanotrasen/chemist
 	name = "NT - Chemist"
 	job_icon = "chemist"
 
@@ -467,7 +463,7 @@
 
 /// MARK: Генетик
 
-/datum/outfit/job/nanotrasen/cel/geneticist
+/datum/outfit/job/cel/nanotrasen/geneticist
 	name = "NT - Genetical Researcher"
 	job_icon = "geneticist"
 
@@ -486,7 +482,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	courierbag = /obj/item/storage/backpack/messenger/tox
 
-/datum/outfit/job/nanotrasen/cel/scientist
+/datum/outfit/job/cel/nanotrasen/scientist
 	name = "NT - Scientist"
 	jobtype = /datum/job/scientist
 	job_icon = "scientist"
@@ -503,7 +499,7 @@
 
 /// MARK: Директор СБ - ХОС капитан
 
-/datum/outfit/job/nanotrasen/cel/hos/captain
+/datum/outfit/job/cel/nanotrasen/hos/captain
 	name = "NT - Security Director (Captain)"
 	job_icon = "headofsecurity"
 
@@ -531,7 +527,7 @@
 	chameleon_extras = /obj/item/stamp/hos
 
 // Assistant
-/datum/outfit/job/nanotrasen/cel/assistant
+/datum/outfit/job/cel/nanotrasen/assistant
 	name = "NT - Assistant"
 	jobtype = /datum/job/assistant
 
@@ -541,14 +537,14 @@
 	shoes = /obj/item/clothing/shoes/sneakers/black
 	belt = /obj/item/pda
 
-/datum/outfit/job/nanotrasen/cel/assistant/empty
+/datum/outfit/job/cel/nanotrasen/assistant/empty
 	name = "NT - Assistant (Naked)"
 
 	belt = null
 
 /// MARK: ЕРТ коммандер
 
-/datum/outfit/job/nanotrasen/cel/security/ert/commander
+/datum/outfit/job/cel/nanotrasen/security/ert/commander
 	job_icon = "assistant"
 	name = "NT - ERT Сommander"
 

@@ -1,6 +1,6 @@
 // MARK: Captain
 
-/datum/outfit/job/nanotrasen/cel/ce/nakamura
+/datum/outfit/job/cel/nanotrasen/ce/nakamura
 	name = "NT Nakamura - Cheif of Engineer"
 	job_icon = "chiefengineer"
 
@@ -8,7 +8,7 @@
 
 // MARK: Command
 
-/datum/outfit/job/nanotrasen/cel/quartermaster/nakamura
+/datum/outfit/job/cel/nanotrasen/quartermaster/nakamura
 	name = "NT Nakamura - Quartermaster"
 	job_icon = "quartermaster"
 
@@ -16,13 +16,13 @@
 
 // MARK: Crew
 
-/datum/outfit/job/nanotrasen/cel/atmos/nakamura
+/datum/outfit/job/cel/nanotrasen/atmos/nakamura
 	name = "NT Nakamura - Atmospheric Technician"
 	job_icon = "atmospherictechnician"
 
 	id = /obj/item/card/id/cel/nanotrasen/nakamura_atmostechnic
 
-/datum/outfit/job/nanotrasen/cel/engineer/nakamura
+/datum/outfit/job/cel/nanotrasen/engineer/nakamura
 	name = "NT Nakamura - Engineer"
 	job_icon = "stationengineer"
 
@@ -30,7 +30,7 @@
 
 // MARK: Assistant
 
-/datum/outfit/job/nanotrasen/cel/assistant/nakamura
+/datum/outfit/job/cel/nanotrasen/assistant/nakamura
 	name = "NT Nakamura - Assistant"
 	job_icon = "assistant"
 

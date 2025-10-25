@@ -1,6 +1,6 @@
 // MARK: Captain
 
-/datum/outfit/job/nanotrasen/cel/captain/vigilitas
+/datum/outfit/job/cel/nanotrasen/captain/vigilitas
 	name = "NT Vigilitas - Leutenant"
 	job_icon = "clip_cmm6"
 
@@ -8,7 +8,7 @@
 
 	id = /obj/item/card/id/cel/nanotrasen/vigilitas_leutenant
 
-/datum/outfit/job/nanotrasen/cel/captain/vigilitas/darect
+/datum/outfit/job/cel/nanotrasen/captain/vigilitas/darect
 	belt = /obj/item/pda/heads/hos
 	gloves = /obj/item/clothing/gloves/combat
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
@@ -32,7 +32,7 @@
 
 // MARK: Command
 
-/datum/outfit/job/nanotrasen/cel/hos/vigilitas
+/datum/outfit/job/cel/nanotrasen/hos/vigilitas
 	name = "NT Vigilitas - Sergeant"
 	job_icon = "clip_cmm5"
 
@@ -66,7 +66,7 @@
 
 // MARK: Crew
 
-/datum/outfit/job/nanotrasen/cel/engineer/vigilitas
+/datum/outfit/job/cel/nanotrasen/engineer/vigilitas
 	name = "NT Vigilitas - Engineer"
 	job_icon = "stationengineer"
 
@@ -91,7 +91,7 @@
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
 
-/datum/outfit/job/nanotrasen/cel/doctor/vigilitas
+/datum/outfit/job/cel/nanotrasen/doctor/vigilitas
 	name = "NT Vigilitas - Medical Doctor"
 	job_icon = "medicaldoctor"
 
@@ -114,7 +114,7 @@
 
 // MARK: Assistant
 
-/datum/outfit/job/nanotrasen/cel/security/vigilitas
+/datum/outfit/job/cel/nanotrasen/security/vigilitas
 	name = "NT Vigilitas - Security"
 	job_icon = "securityofficer"
 

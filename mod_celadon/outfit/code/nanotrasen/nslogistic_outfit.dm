@@ -1,6 +1,6 @@
 // MARK: Captain
 
-/datum/outfit/job/nanotrasen/cel/captain/nslogistic
+/datum/outfit/job/cel/nanotrasen/captain/nslogistic
 	name = "NT N+S Logistic - Captain"
 	job_icon = "captain"
 
@@ -8,13 +8,13 @@
 
 // MARK: Command
 
-/datum/outfit/job/nanotrasen/cel/rd/nslogistic
+/datum/outfit/job/cel/nanotrasen/rd/nslogistic
 	name = "NT N+S Logistic - Research Director"
 	job_icon = "researchdirector"
 
 	id = /obj/item/card/id/cel/nanotrasen/nslogistic_rd
 
-/datum/outfit/job/nanotrasen/cel/quartermaster/nslogistic
+/datum/outfit/job/cel/nanotrasen/quartermaster/nslogistic
 	name = "NT N+S Logistic - Quartermaster"
 	job_icon = "quartermaster"
 
@@ -22,13 +22,13 @@
 
 // MARK: Crew
 
-/datum/outfit/job/nanotrasen/cel/miner/nslogistic
+/datum/outfit/job/cel/nanotrasen/miner/nslogistic
 	name = "NT N+S Logistic - Shaft Miner"
 	job_icon = "shaftminer"
 
 	id = /obj/item/card/id/cel/nanotrasen/nslogistic_miner
 
-/datum/outfit/job/nanotrasen/cel/cargo_tech/nslogistic
+/datum/outfit/job/cel/nanotrasen/cargo_tech/nslogistic
 	name = "NT N+S Logistic - Cargo Tech"
 	jobtype = /datum/job/cargo_tech
 	job_icon = "cargotechnician"
@@ -43,7 +43,7 @@
 
 // MARK: Assistant
 
-/datum/outfit/job/nanotrasen/cel/assistant/nslogistic
+/datum/outfit/job/cel/nanotrasen/assistant/nslogistic
 	name = "NT N+S Logistic - Assistant"
 	job_icon = "assistant"
 

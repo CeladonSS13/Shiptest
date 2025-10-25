@@ -1,4 +1,4 @@
-/datum/outfit/job/nanotrasen/cel/captain/lp
+/datum/outfit/job/cel/nanotrasen/captain/lp
 	name = "NT - Loss Prevention Lieutenant"
 	id_assignment = "Lieutenant"
 
@@ -17,7 +17,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/captain
 	courierbag = /obj/item/storage/backpack/messenger/com
 
-/datum/outfit/job/nanotrasen/cel/security/lp
+/datum/outfit/job/cel/nanotrasen/security/lp
 	name = "NT - LP Security Specialist"
 	id_assignment = "Security Specialist"
 
@@ -38,7 +38,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
 	courierbag = /obj/item/storage/backpack/messenger/sec
 
-/datum/outfit/job/nanotrasen/cel/engineer/lp
+/datum/outfit/job/cel/nanotrasen/engineer/lp
 	name = "NT - LP Engineering Specialist"
 
 	job_icon = "chiefengineer"
@@ -57,7 +57,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	courierbag = /obj/item/storage/backpack/messenger/engi
 
-/datum/outfit/job/nanotrasen/cel/doctor/lp
+/datum/outfit/job/cel/nanotrasen/doctor/lp
 	name = "NT - LP Medical Specialist"
 	id_assignment = "Medical Specialist"
 
@@ -79,7 +79,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	courierbag = /obj/item/storage/backpack/messenger/med
 
-/datum/outfit/job/nanotrasen/cel/miner/lp
+/datum/outfit/job/cel/nanotrasen/miner/lp
 	name = "NT - LP Shaft Miner"
 	id_assignment = "Shaft Miner"
 
@@ -107,7 +107,7 @@
 
 	chameleon_extras = /obj/item/gun/energy/kinetic_accelerator
 
-/datum/outfit/job/nanotrasen/cel/janitor/lp
+/datum/outfit/job/cel/nanotrasen/janitor/lp
 	name = "NT - LP Janitorial Specialist"
 	jobtype = /datum/job/janitor
 
@@ -125,7 +125,7 @@
 
 	implants = list(/obj/item/implant/mindshield)
 
-/datum/outfit/job/nanotrasen/cel/miner/lp
+/datum/outfit/job/cel/nanotrasen/miner/lp
 	job_icon = "shaftminer"
 	name = "NT - LP Miner"
 
