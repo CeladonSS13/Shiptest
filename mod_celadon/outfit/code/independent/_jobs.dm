@@ -7,7 +7,6 @@
 	uniform = /obj/item/clothing/under/utility
 	box = /obj/item/storage/box/survival/independent
 
-
 // MARK:Assistant
 
 /datum/outfit/job/cel/independent/assistant
@@ -1017,3 +1016,11 @@
 	ears = /obj/item/radio/headset/headset_med
 	belt = /obj/item/storage/bag/plants
 	uniform = /obj/item/clothing/under/utility
+
+// MARK: Saint-Roumain
+
+/datum/outfit/job/cel/independent/roumain
+	name = "Saint-Roumain Militia - Base Outfit"
+	faction = FACTION_PLAYER_ROUMAIN
+	uniform = /obj/item/clothing/under/suit/roumain
+	faction_icon = "bg_srm"
