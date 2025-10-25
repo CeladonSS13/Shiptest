@@ -1,6 +1,6 @@
 // MARK: Survival box
 // Меняет обычный бокс на пиратскую тему, и меняем им фоны
-/datum/outfit/job/pirate
+/datum/outfit/job/cel/pirate
 	name = "Pirate - Base Outfit"
 	job_icon = "assistant"
 	faction = FACTION_PLAYER_PIRATE
@@ -10,7 +10,7 @@
 	id = /obj/item/card/id
 
 // MARK: Captain
-/datum/outfit/job/pirate/captain
+/datum/outfit/job/cel/pirate/captain
 	name = "Pirate - Captain"
 	job_icon = "captain"
 
@@ -35,7 +35,7 @@
 
 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/captain)
 
-/datum/outfit/job/pirate/captain/jupiter
+/datum/outfit/job/cel/pirate/captain/jupiter
 	name = "Pirate - Captain (Nodesman)"
 
 	job_icon = "assistant"
@@ -49,7 +49,7 @@
 	implants = list(/obj/item/implant/radio)
 	accessory = null
 
-/datum/outfit/job/pirate/hop
+/datum/outfit/job/cel/pirate/hop
 	name = "Pirate - Bridge Officer"
 	id_assignment = "Helmsman"
 	job_icon = "headofpersonnel"
@@ -64,7 +64,7 @@
 	gloves = /obj/item/clothing/gloves/combat
 	r_pocket = /obj/item/melee/knife/survival
 
-/datum/outfit/job/pirate/hos
+/datum/outfit/job/cel/pirate/hos
 	name = "Frontiersmen - Deck Boss"
 	id_assignment = "Deck Boss"
 	job_icon = "headofsecurity"
@@ -81,7 +81,7 @@
 	suit_store = null
 
 // MARK: Engineer
-/datum/outfit/job/pirate/engineer
+/datum/outfit/job/cel/pirate/engineer
 	name = "Pirate - Engineer"
 	job_icon = "assistant"
 
@@ -104,7 +104,7 @@
 
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced = 1)
 
-/datum/outfit/job/pirate/engineer/jupiter	// Не юзается
+/datum/outfit/job/cel/pirate/engineer/jupiter	// Не юзается
 	name = "Pirate - Engineer (Nodesman)"
 
 	uniform = /obj/item/clothing/under/utility
@@ -116,7 +116,7 @@
 	implants = list(/obj/item/implant/radio)
 
 // MARK: Security
-/datum/outfit/job/pirate/security
+/datum/outfit/job/cel/pirate/security
 	name = "Pirate - Security Officer"
 	job_icon = "assistant"
 
@@ -140,7 +140,7 @@
 
 	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
 
-/datum/outfit/job/pirate/security/jupiter
+/datum/outfit/job/cel/pirate/security/jupiter
 	name = "Pirate - Security Officer (Nodesman)"
 
 	uniform = /obj/item/clothing/under/utility
@@ -153,7 +153,7 @@
 	implants = list(/obj/item/implant/radio)
 
 // MARK: Medic
-/datum/outfit/job/pirate/medic
+/datum/outfit/job/cel/pirate/medic
 	name = "Pirate - Medical Doctor"
 	job_icon = "paramedic"
 
@@ -173,7 +173,7 @@
 
 	chameleon_extras = /obj/item/gun/syringe
 
-/datum/outfit/job/pirate/cook
+/datum/outfit/job/cel/pirate/cook
 	name = "Pirate - Cook"
 	job_icon = "cook"
 
@@ -189,7 +189,7 @@
 	mask = /obj/item/clothing/mask/fakemoustache/italian
 	backpack_contents = list(/obj/item/sharpener = 1)
 
-/datum/outfit/job/pirate/cook/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/cel/pirate/cook/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -199,7 +199,7 @@
 	H.equip_to_slot_or_del(I,ITEM_SLOT_BACKPACK)
 
 // MARK: Assistant
-/datum/outfit/job/pirate/assistant
+/datum/outfit/job/cel/pirate/assistant
 	name = "Pirate - Assistant"
 	job_icon = "assistant"
 
@@ -211,7 +211,7 @@
 	head = /obj/item/clothing/head/bandana
 	shoes = /obj/item/clothing/shoes/sneakers/black
 
-/datum/outfit/job/pirate/assistant/jupiter	// Не юзается
+/datum/outfit/job/cel/pirate/assistant/jupiter	// Не юзается
 	name = "Pirate - Assistant (Nodesman)"
 
 	uniform = /obj/item/clothing/under/utility
@@ -222,5 +222,5 @@
 	implants = list(/obj/item/implant/radio)
 
 // Pirate: Powder Monkey Outfit ???
-/datum/outfit/job/pirate/engineer/celadon
+/datum/outfit/job/cel/pirate/engineer/celadon
 	name = "Pirate - Powder Monkey"
