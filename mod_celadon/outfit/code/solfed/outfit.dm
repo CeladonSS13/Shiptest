@@ -89,7 +89,6 @@
 	suit = /obj/item/clothing/suit/armor/vest/solgov/captain
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/solgov/captain
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 	neck = /obj/item/clothing/neck/cloak/solgovcap/solfed
 
 	backpack = /obj/item/storage/backpack/solfed

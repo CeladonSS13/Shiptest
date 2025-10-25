@@ -224,8 +224,7 @@
 	// id = /obj/item/card/id/outpost/medic
 	id = /obj/item/card/id/outpost/medic
 	back = /obj/item/storage/backpack/medic
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic = 1,
-							/obj/item/storage/backpack/medic = 1,
+	backpack_contents = list(/obj/item/storage/backpack/medic = 1,
 							/obj/item/storage/backpack/satchel/med = 1,
 							/obj/item/storage/backpack/messenger/med = 1,
 							/obj/item/clothing/suit/hooded/wintercoat/medical = 1,

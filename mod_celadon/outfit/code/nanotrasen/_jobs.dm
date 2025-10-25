@@ -100,9 +100,6 @@
 
 	backpack_contents = list(
 						/obj/item/storage/box/ids=1,
-						// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
-						// /obj/item/melee/classic_baton/telescopic=1,
-						// [/CELADON-REMOVE]
 						/obj/item/modular_computer/tablet/preset/advanced = 1,
 						)
 
@@ -270,12 +267,7 @@
 	head = /obj/item/clothing/head/hardhat/nanotrasen/white
 	gloves = /obj/item/clothing/gloves/color/black
 
-	backpack_contents = list(
-						// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
-						// /obj/item/melee/classic_baton/telescopic=1,
-						// [/CELADON-REMOVE]
-						/obj/item/modular_computer/tablet/preset/advanced=1,
-						)
+	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced = 1,)
 
 
 	backpack = /obj/item/storage/backpack/industrial
