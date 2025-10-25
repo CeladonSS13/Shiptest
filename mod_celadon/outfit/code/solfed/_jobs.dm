@@ -1,27 +1,121 @@
+//										//
+//MARK:	SOLAR FEDERATION
+//										//
 /datum/outfit/job/cel/solfed
-	name = "SolGov Base Outfit"
-	faction = FACTION_PLAYER_SOLCON
-	faction_icon = "bg_solgov"
+	name = "SF - Base Outfit"
+	faction = FACTION_PLAYER_SOLFED
+	job_icon = "hudsf_fieldside"
+	faction_icon = "bg_solfed"
+
+	box = /obj/item/storage/box/survival/solfed
+	id = /obj/item/card/id/cel/solfed
+
+/datum/outfit/job/cel/solfed/proc/get_solfed_captain_access(mob/living/carbon/human/H)
+	var/obj/item/storage/wallet/W = null
+	for (var/obj/item/O in H.contents)
+		if (istype(O, /obj/item/storage/wallet))
+			W = O
+			break
+	if (W)
+		var/obj/item/card/id/I = null
+		for (var/obj/item/O in W.contents)
+			if (istype(O, /obj/item/card/id))
+				I = O
+				break
+		if (I)
+			I.access += list(ACCESS_SOLGOV, ACCESS_CAPTAIN, ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
+			I.update_label()
+		W.combined_access = list()
+		for (var/obj/item/card/id/card in W.contents)
+			W.combined_access |= card.access
+
+/datum/outfit/job/cel/solfed/proc/get_solfed_head_access(mob/living/carbon/human/H)
+	var/obj/item/storage/wallet/W = null
+	for (var/obj/item/O in H.contents)
+		if (istype(O, /obj/item/storage/wallet))
+			W = O
+			break
+	if (W)
+		var/obj/item/card/id/I = null
+		for (var/obj/item/O in W.contents)
+			if (istype(O, /obj/item/card/id))
+				I = O
+				break
+		if (I)
+			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
+			I.update_label()
+		W.combined_access = list()
+		for (var/obj/item/card/id/card in W.contents)
+			W.combined_access |= card.access
+
+/datum/outfit/job/cel/solfed/proc/get_solfed_marine_access(mob/living/carbon/human/H)
+	var/obj/item/storage/wallet/W = null
+	for (var/obj/item/O in H.contents)
+		if (istype(O, /obj/item/storage/wallet))
+			W = O
+			break
+	if (W)
+		var/obj/item/card/id/I = null
+		for (var/obj/item/O in W.contents)
+			if (istype(O, /obj/item/card/id))
+				I = O
+				break
+		if (I)
+			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
+			I.update_label()
+		W.combined_access = list()
+		for (var/obj/item/card/id/card in W.contents)
+			W.combined_access |= card.access
+
+/datum/outfit/job/cel/solfed/proc/get_solfed_engineer_access(mob/living/carbon/human/H)
+	var/obj/item/storage/wallet/W = null
+	for (var/obj/item/O in H.contents)
+		if (istype(O, /obj/item/storage/wallet))
+			W = O
+			break
+	if (W)
+		var/obj/item/card/id/I = null
+		for (var/obj/item/O in W.contents)
+			if (istype(O, /obj/item/card/id))
+				I = O
+				break
+		if (I)
+			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
+			I.update_label()
+		W.combined_access = list()
+		for (var/obj/item/card/id/card in W.contents)
+			W.combined_access |= card.access
+
+//MARK:	SolFed outpost access
+
+/datum/outfit/job/cel/solfed/proc/get_solfed_general_access(mob/living/carbon/human/H)
+	var/obj/item/storage/wallet/W = null
+	for (var/obj/item/O in H.contents)
+		if (istype(O, /obj/item/storage/wallet))
+			W = O
+			break
+	if (W)
+		var/obj/item/card/id/I = null
+		for (var/obj/item/O in W.contents)
+			if (istype(O, /obj/item/card/id))
+				I = O
+				break
+		if (I)
+			I.access += list(ACCESS_OUTPOST_FACTION_SOLFED)
+			I.update_label()
+		W.combined_access = list()
+		for (var/obj/item/card/id/card in W.contents)
+			W.combined_access |= card.access
 
 /datum/outfit/job/cel/solfed/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	if(visualsOnly)
 		return
 	H.grant_language(/datum/language/solarian_international)
-
-/datum/outfit/job/cel/solfed/assistant
-	name = "SolGov - Scribe"
-	id_assignment = "Scribe"
-	jobtype = /datum/job/assistant
-	job_icon = "scribe"
-
-	head = /obj/item/clothing/head/beret/solgov/plain
-	uniform = /obj/item/clothing/under/solgov/formal
-	shoes = /obj/item/clothing/shoes/laceup
-	suit = /obj/item/clothing/suit/solgov
+	get_solfed_general_access(H)
 
 /datum/outfit/job/cel/solfed/bureaucrat
-	name = "SolGov - Bureaucrat"
+	name = "SF - Bureaucrat"
 	id_assignment = "Bureaucrat"
 	jobtype = /datum/job/curator
 	job_icon = "curator"
@@ -38,30 +132,8 @@
 		/obj/item/barcodescanner = 1
 	)
 
-/datum/outfit/job/cel/solfed/captain
-	name = "SolGov - Captain"
-	jobtype = /datum/job/captain
-	job_icon = "solgovrepresentative" // idk
-
-	id = /obj/item/card/id/gold
-	gloves = /obj/item/clothing/gloves/combat
-	ears = /obj/item/radio/headset/solgov/alt/captain
-	uniform =  /obj/item/clothing/under/solgov/formal/captain
-	suit = /obj/item/clothing/suit/armor/vest/solgov/captain
-	shoes = /obj/item/clothing/shoes/laceup
-	head = /obj/item/clothing/head/solgov/captain
-
-	backpack = /obj/item/storage/backpack/captain
-	satchel = /obj/item/storage/backpack/satchel/cap
-	duffelbag = /obj/item/storage/backpack/duffelbag/captain
-	courierbag = /obj/item/storage/backpack/messenger/com
-
-	accessory = /obj/item/clothing/accessory/medal/gold/captain
-
-	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/captain)
-
 /datum/outfit/job/cel/solfed/sonnensoldner
-	name = "SolGov - Sonnensöldner"
+	name = "SF - Sonnensöldner"
 	id_assignment = "Sonnensöldner"
 	jobtype = /datum/job/officer
 	job_icon = "sonnensoldner"
@@ -76,11 +148,10 @@
 	l_pocket = null
 	shoes = /obj/item/clothing/shoes/workboots
 	back = /obj/item/storage/backpack
-	box = /obj/item/storage/box/survival
 	backpack_contents = list(/obj/item/crowbar/power)
 
 /datum/outfit/job/cel/solfed/representative
-	name = "SolGov - Solarian Representative"
+	name = "SF - Solarian Representative"
 	jobtype = /datum/job/solgov
 	job_icon = "solgovrepresentative"
 
@@ -104,7 +175,7 @@
 	)
 
 /datum/outfit/job/cel/solfed/overseer
-	name = "SolGov - Overseer"
+	name = "SF - Overseer"
 	id_assignment = "Overseer"
 	jobtype = /datum/job/head_of_personnel
 	job_icon = "headofpersonnel"
@@ -122,52 +193,8 @@
 
 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/officer)
 
-/datum/outfit/job/cel/solfed/doctor
-	name = "SolGov - Medical Doctor"
-	jobtype = /datum/job/doctor
-	job_icon = "medicaldoctor"
-
-	ears = /obj/item/radio/headset/headset_med
-	uniform = /obj/item/clothing/under/solgov/formal
-	accessory = /obj/item/clothing/accessory/armband/medblue
-	shoes = /obj/item/clothing/shoes/laceup
-	head = /obj/item/clothing/head/solgov_surgery
-	suit =  /obj/item/clothing/suit/solgov/jacket
-	l_hand = /obj/item/storage/firstaid/medical
-
-	backpack = /obj/item/storage/backpack/medic
-	satchel = /obj/item/storage/backpack/satchel/med
-	duffelbag = /obj/item/storage/backpack/duffelbag/med
-	courierbag = /obj/item/storage/backpack/messenger/med
-	box = /obj/item/storage/box/survival/medical
-
-/datum/outfit/job/cel/solfed/miner
-	name = "SolGov - Field Engineer"
-	id_assignment = "Field Engineer"
-	jobtype = /datum/job/mining
-	job_icon = "shaftminer"
-
-	ears = /obj/item/radio/headset/headset_cargo/mining
-	shoes = /obj/item/clothing/shoes/workboots/mining
-	gloves = /obj/item/clothing/gloves/explorer
-	uniform = /obj/item/clothing/under/solgov
-	accessory = /obj/item/clothing/accessory/armband/cargo
-	head = /obj/item/clothing/head/hardhat/solgov
-	suit =  /obj/item/clothing/suit/hazardvest/solgov
-	l_pocket = /obj/item/reagent_containers/hypospray/medipen/survival
-	r_pocket = /obj/item/storage/bag/ore	//causes issues if spawned in backpack
-	backpack_contents = list(
-		/obj/item/flashlight/seclite=1,\
-		/obj/item/melee/knife/survival=1,\
-		/obj/item/stack/marker_beacon/ten=1)
-
-	backpack = /obj/item/storage/backpack/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
-	duffelbag = /obj/item/storage/backpack/duffelbag
-	box = /obj/item/storage/box/survival/mining
-
 /datum/outfit/job/cel/solfed/psychologist
-	name = "SolGov - Psychologist"
+	name = "SF - Psychologist"
 	jobtype = /datum/job/psychologist
 	job_icon = "psychologist"
 
@@ -182,52 +209,3 @@
 	backpack = /obj/item/storage/backpack/medic
 	satchel = /obj/item/storage/backpack/satchel/med
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
-
-/datum/outfit/job/cel/solfed/patient
-	name = "SolGov - Attentive Care Patient"
-	id_assignment = "Attentive Care Patient"
-	jobtype = /datum/job/prisoner
-	job_icon = "assistant" // todo: bug rye for patient icon // rye. rye. give me 50 gazillion billion dollars paypal
-
-	id = /obj/item/card/id/patient
-	uniform = /obj/item/clothing/under/rank/medical/gown
-	alt_suit = null
-	shoes = /obj/item/clothing/shoes/sandal/slippers
-
-/datum/outfit/job/cel/solfed/engineer
-	name = "SolGov - Ship Engineer"
-	id_assignment = "Ship Engineer"
-	jobtype = /datum/job/engineer
-	job_icon = "stationengineer"
-
-	belt = /obj/item/storage/belt/utility/full/engi
-	ears = /obj/item/radio/headset/headset_eng
-	uniform = /obj/item/clothing/under/solgov/formal
-	accessory = /obj/item/clothing/accessory/armband/engine
-	head = /obj/item/clothing/head/hardhat/solgov
-	suit =  /obj/item/clothing/suit/hazardvest/solgov
-	shoes = /obj/item/clothing/shoes/workboots
-	r_pocket = /obj/item/t_scanner
-
-	backpack = /obj/item/storage/backpack/industrial
-	satchel = /obj/item/storage/backpack/satchel/eng
-	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
-	courierbag = /obj/item/storage/backpack/messenger/engi
-
-	box = /obj/item/storage/box/survival/engineer
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
-
-/datum/outfit/job/cel/solfed/quartermaster
-	name = "SolGov - Logistics Deck Officer"
-	id_assignment = "Logistics Deck Officer"
-	jobtype = /datum/job/qm
-	job_icon = "quartermaster"
-
-	ears = /obj/item/radio/headset/solgov/captain
-	uniform = /obj/item/clothing/under/solgov/formal
-	suit = /obj/item/clothing/suit/solgov/overcoat
-	shoes = /obj/item/clothing/shoes/laceup
-	head = /obj/item/clothing/head/flatcap/solgov
-	glasses = /obj/item/clothing/glasses/sunglasses
-	l_hand = /obj/item/clipboard
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/cargo=1)

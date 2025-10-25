@@ -42,8 +42,6 @@
 	id = /obj/item/card/id/syndicate_command/crew_id
 	r_pocket = /obj/item/radio
 
-	box = /obj/item/storage/box/survival
-
 /datum/outfit/job/cel/syndicate/assistant/gorlex
 	name = "Syndicate - Junior Agent (Hardliner)"
 
@@ -113,7 +111,6 @@
 	shoes = /obj/item/clothing/shoes/laceup/suns
 	gloves = null
 	ears = null
-	box = /obj/item/storage/box/survival
 
 	backpack = /obj/item/storage/backpack
 	satchel  = /obj/item/storage/backpack/satchel
@@ -154,8 +151,6 @@
 	satchel = /obj/item/storage/backpack/satchel/eng
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	courierbag = /obj/item/storage/backpack/messenger/engi
-
-	box = /obj/item/storage/box/survival/engineer
 
 	pda_slot = ITEM_SLOT_LPOCKET
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
@@ -388,8 +383,6 @@
 	shoes = /obj/item/clothing/shoes/sneakers/white
 	suit =  /obj/item/clothing/suit/toggle/labcoat/chemist
 
-	box = /obj/item/storage/box/survival/medical
-
 /datum/outfit/job/cel/syndicate/chemist/gec
 	name = "Syndicate - Chemist (GEC)"
 
@@ -421,7 +414,6 @@
 	satchel = /obj/item/storage/backpack/satchel/eng
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	courierbag = /obj/item/storage/backpack/messenger/engi
-	box = /obj/item/storage/box/survival/engineer
 	pda_slot = ITEM_SLOT_LPOCKET
 	chameleon_extras = /obj/item/stamp/ce
 
@@ -469,7 +461,6 @@
 	l_hand = /obj/item/storage/firstaid/medical
 	suit_store = /obj/item/flashlight/pen/paramedic
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
-	box = /obj/item/storage/box/survival/medical
 
 /datum/outfit/job/cel/syndicate/cmo/suns
 	name = "Syndicate - Medical Instructor (SUNS)"
@@ -679,7 +670,6 @@
 	id = /obj/item/card/id/syndicate_command/crew_id
 	shoes = /obj/item/clothing/shoes/jackboots
 	alt_suit = /obj/item/clothing/suit/apron/surgical
-	box = /obj/item/storage/box/survival/medical
 	backpack = /obj/item/storage/backpack/medic
 	satchel = /obj/item/storage/backpack/satchel/med
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie/med
@@ -752,7 +742,6 @@
 	suit_store = /obj/item/flashlight/pen/paramedic
 	backpack_contents = list(/obj/item/roller=1)
 	pda_slot = ITEM_SLOT_LPOCKET
-	box = /obj/item/storage/box/survival/medical
 
 /datum/outfit/job/cel/syndicate/paramedic/gorlex
 	name = "Syndicate - Paramedic (Gorlex)"
@@ -908,9 +897,6 @@
 	l_pocket = /obj/item/restraints/handcuffs
 	r_pocket = /obj/item/assembly/flash/handheld
 
-	box = /obj/item/storage/box/survival/security
-
-
 /datum/outfit/job/cel/syndicate/security/gorlex
 	name = "Syndicate - Trooper (Hardliner)"
 	id_assignment = "Trooper"
@@ -1018,7 +1004,6 @@
 						/obj/item/stack/marker_beacon/ten=1,
 						/obj/item/radio/weather_monitor=1,
 						)
-	box = /obj/item/storage/box/survival/mining
 
 /datum/outfit/job/cel/syndicate/miner/gorlex
 	name = "Syndicate - Wrecker (Hardliner)"
@@ -1061,8 +1046,6 @@
 	satchel = /obj/item/storage/backpack/satchel/sec
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
 	courierbag = /obj/item/storage/backpack/messenger/sec
-
-	box = /obj/item/storage/box/survival/mining
 
 /datum/outfit/job/cel/syndicate/miner/twink/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -1117,7 +1100,6 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	courierbag = /obj/item/storage/backpack/messenger/engi
 
-	box = /obj/item/storage/box/survival/engineer
 	pda_slot = ITEM_SLOT_LPOCKET
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
