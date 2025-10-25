@@ -3,7 +3,10 @@
 
 #include "_outfit.dm"
 
+#include "code/jobs.dm"
 #include "code/card_id.dm"
+#include "code/event.dm"
+#include "code/standard.dm"
 
 #include "code/nanotrasen/structure/decals.dm"
 #include "code/nanotrasen/structure/other_stuff.dm"
@@ -61,9 +64,6 @@
 #include "code/syndicate/gorlex_outfit.dm"
 #include "code/syndicate/suns_outfit.dm"
 #include "code/syndicate/twinkle_outfit.dm"
-
-#include "code/event.dm"
-#include "code/standard.dm"
 
 #include "code/pirate/_card_id.dm"
 #include "code/pirate/pirate_outfit.dm"
