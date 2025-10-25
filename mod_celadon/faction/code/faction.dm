@@ -14,7 +14,7 @@
 	H.faction |= list(FACTION_PLAYER_SOLFED, FACTION_PLAYER_NANOTRASEN)
 
 //	InteQ
-/datum/outfit/job/inteq/cel/post_equip(mob/living/carbon/human/H, visualsOnly)
+/datum/outfit/job/cel/inteq/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	H.faction |= list(FACTION_PLAYER_INTEQ)
 

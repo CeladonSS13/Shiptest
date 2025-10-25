@@ -1,11 +1,5 @@
-// Даём Интекам свой дюфель взятый с Блюмуна, не имеет никаких отличающих стат
-/datum/outfit/job/inteq/cel
-	id = /obj/item/card/id/cel/inteq
-	duffelbag = /obj/item/storage/backpack/duffelbag/inteq
-	box = /obj/item/storage/box/survival/inteq	// Даёт всем интекашкам брендовый сурвивал бокс
-
 //MARK: Рекрут
-/datum/outfit/job/inteq/cel/assistant
+/datum/outfit/job/cel/inteq/assistant
 	name = "IQ - Recruit"
 	jobtype = /datum/job/assistant
 	job_icon = "assistant"
@@ -16,7 +10,7 @@
 	r_pocket = /obj/item/radio
 
 //MARK: Капитан
-/datum/outfit/job/inteq/cel/captain
+/datum/outfit/job/cel/inteq/captain
 	name = "IQ - Vanguard"
 	jobtype = /datum/job/captain
 	job_icon = "captain"
@@ -30,7 +24,7 @@
 	gloves = /obj/item/clothing/gloves/combat
 
 //MARK: Командир
-/datum/outfit/job/inteq/cel/captain/honorable
+/datum/outfit/job/cel/inteq/captain/honorable
 	name = "IQ - Honorable Vanguard"
 
 	id = /obj/item/card/id/cel/inteq/honorable_rearguard
@@ -39,7 +33,7 @@
 	suit = /obj/item/clothing/suit/armor/hos/inteq/honorable
 
 //MARK: Арьергард. Rearguard
-/datum/outfit/job/inteq/cel/rearguard
+/datum/outfit/job/cel/inteq/rearguard
 	name = "IQ - Rearguard"
 	job_icon = "captain"
 	id_assignment = "Rearguard"
@@ -53,7 +47,7 @@
 	gloves = /obj/item/clothing/gloves/combat
 
 //MARK: Лейтенант первого класса
-/datum/outfit/job/inteq/cel/enforcer
+/datum/outfit/job/cel/inteq/enforcer
 	name = "IQ - Enforcer class One"
 	jobtype = /datum/job/warden
 	job_icon = "lieutenant"
@@ -68,7 +62,7 @@
 	gloves = /obj/item/clothing/gloves/combat
 
 //MARK: Парамедик
-/datum/outfit/job/inteq/cel/paramedic
+/datum/outfit/job/cel/inteq/paramedic
 	job_icon = "medicaldoctor"
 	jobtype = /datum/job/paramedic
 	name = "IQ - Corpsman"
@@ -85,7 +79,7 @@
 	backpack_contents = list(/obj/item/roller=1)
 
 //MARK: Главный медик
-/datum/outfit/job/inteq/cel/cmo
+/datum/outfit/job/cel/inteq/cmo
 	name = "IQ - Honorable Corpsman"
 	jobtype = /datum/job/cmo
 	job_icon = "chiefmedicalofficer"
@@ -105,7 +99,7 @@
 	chameleon_extras = null
 
 //MARK: Служба безопасности
-/datum/outfit/job/inteq/cel/security
+/datum/outfit/job/cel/inteq/security
 	name = "IQ - Enforcer"
 	jobtype = /datum/job/officer
 	job_icon = "lieutenant"
@@ -126,7 +120,7 @@
 	satchel = /obj/item/storage/backpack/messenger/inteq
 	courierbag = /obj/item/storage/backpack/messenger/inteq
 
-/datum/outfit/job/inteq/cel/security/beluga
+/datum/outfit/job/cel/inteq/security/beluga
 	name = "IRMG - Enforcer (Beluga)"
 
 	head = /obj/item/clothing/head/beret/sec/inteq
@@ -143,7 +137,7 @@
 	courierbag = /obj/item/storage/backpack/messenger/inteq
 
 //MARK: Варден
-/datum/outfit/job/inteq/cel/warden
+/datum/outfit/job/cel/inteq/warden
 	name = "IQ - Master At Arms"
 	jobtype = /datum/job/warden
 	job_icon = "warden"
@@ -165,7 +159,7 @@
 	courierbag = /obj/item/storage/backpack/messenger/inteq
 
 //MARK: Главный инженер
-/datum/outfit/job/inteq/cel/ce
+/datum/outfit/job/cel/inteq/ce
 	name = "IQ - Artificer Class One"
 	jobtype = /datum/job/chief_engineer
 	job_icon = "chiefengineer"
@@ -185,7 +179,7 @@
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced = 1)
 
 //MARK: Инженегр
-/datum/outfit/job/inteq/cel/engineer
+/datum/outfit/job/cel/inteq/engineer
 	name = "IQ - Artificer"
 	jobtype = /datum/job/engineer
 	job_icon = "stationengineer"
