@@ -109,7 +109,7 @@
 	short_desc = "You are a Separatist of Elysium."
 	mob_species = /datum/species/human
 	assignedrole = "Separatist of Elysium"
-	outfit = /datum/outfit/job/elysium
+	outfit = /datum/outfit/job/cel/elysium
 	flavour_text = "You must cleanse this world of xenospecies and all those who oppose it."
 
 /obj/effect/mob_spawn/human/elysium_town/Destroy()
