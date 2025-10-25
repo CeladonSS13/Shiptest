@@ -4,9 +4,6 @@
 
 	id = /obj/item/card/id
 
-	uniform = /obj/item/clothing/under/utility
-	box = /obj/item/storage/box/survival/independent
-
 // MARK:Assistant
 
 /datum/outfit/job/cel/independent/assistant
