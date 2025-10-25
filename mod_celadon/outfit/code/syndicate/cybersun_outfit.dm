@@ -1,6 +1,6 @@
 //MARK: Captain
 
-/datum/outfit/job/syndicate/cel/captain/cybersun
+/datum/outfit/job/cel/syndicate/captain/cybersun
 	name = "Syndi Cybersun - Captain"
 
 	id = /obj/item/card/id/cel/syndicate/captain/cybersun
@@ -11,14 +11,14 @@
 
 //MARK: Command
 
-/datum/outfit/job/syndicate/cel/cmo/cybersun
+/datum/outfit/job/cel/syndicate/cmo/cybersun
 	name = "Syndi Cybersun - Medical Director"
 
 	id = /obj/item/card/id/cel/syndicate/command_cmo/cybersun
 	uniform = /obj/item/clothing/under/rank/medical/chief_medical_officer/cybersun
 	head = /obj/item/clothing/head/beret/cmo/cybersun
 
-/datum/outfit/job/syndicate/cel/head_of_personnel/cybersun
+/datum/outfit/job/cel/syndicate/head_of_personnel/cybersun
 	name = "Syndi Cybersun - Intelligence Officer"
 	id_assignment = "Intelligence Officer"
 
@@ -31,7 +31,7 @@
 	gloves = /obj/item/clothing/gloves/combat
 	glasses = /obj/item/clothing/glasses/sunglasses
 
-/datum/outfit/job/syndicate/cel/science/director
+/datum/outfit/job/cel/syndicate/science/director
 	name = "Syndi Cybersun - Research and Development Team Leader"
 	id_assignment = "Research and Development Team Leader"
 	jobtype = /datum/job/rd
@@ -48,7 +48,7 @@
 
 //MARK: Crew
 
-/datum/outfit/job/syndicate/cel/doctor/cybersun
+/datum/outfit/job/cel/syndicate/doctor/cybersun
 	name = "Syndi Cybersun - Medical Doctor"
 
 	id = /obj/item/card/id/cel/syndicate/crew/doctor/cybersun
@@ -56,7 +56,7 @@
 	accessory = /obj/item/clothing/accessory/armband/medblue
 	shoes = /obj/item/clothing/shoes/combat
 
-/datum/outfit/job/syndicate/cel/paramedic/cybersun
+/datum/outfit/job/cel/syndicate/paramedic/cybersun
 	name = "Syndi Cybersun - Field Medic (Cybersun Industries)"
 	id_assignment = "Field Medic"
 
@@ -66,7 +66,7 @@
 	shoes = /obj/item/clothing/shoes/combat
 	suit = /obj/item/clothing/suit/toggle/labcoat/raincoat
 
-/datum/outfit/job/syndicate/cel/science/cybersun
+/datum/outfit/job/cel/syndicate/science/cybersun
 	name = "Syndi Cybersun - Scientist"
 	jobtype = /datum/job/scientist
 	job_icon = "scientist"
@@ -80,7 +80,7 @@
 	satchel = /obj/item/storage/backpack/satchel/tox
 	courierbag = /obj/item/storage/backpack/messenger/tox
 
-/datum/outfit/job/syndicate/cel/miner/cybersun
+/datum/outfit/job/cel/syndicate/miner/cybersun
 	name = "Syndi Cybersun - Field Agent"
 	id_assignment = "Field Agent"
 
@@ -91,7 +91,7 @@
 	head = /obj/item/clothing/head/soft/cybersun
 	r_pocket = /obj/item/radio
 
-/datum/outfit/job/syndicate/cel/engineer/cybersun
+/datum/outfit/job/cel/syndicate/engineer/cybersun
 	name = "Syndi Cybersun - Engineer"
 
 	id = /obj/item/card/id/cel/syndicate/crew/engineer/cybersun
@@ -103,7 +103,7 @@
 
 //MARK: Assistant
 
-/datum/outfit/job/syndicate/cel/assistant/cybersun
+/datum/outfit/job/cel/syndicate/assistant/cybersun
 	name = "Syndi Cybersun - Junior Agent"
 
 	id = /obj/item/card/id/cel/syndicate/assistant/cybersun

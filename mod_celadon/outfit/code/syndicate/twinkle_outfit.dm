@@ -1,6 +1,6 @@
 //MARK: Admiral
 
-/datum/outfit/job/syndicate/cel/captain/twink
+/datum/outfit/job/cel/syndicate/captain/twink
 	name = "Syndi Twinkleshine - Flotilla Admiral (ACLF)"
 	id_assignment = "Flotilla Admiral"
 
@@ -16,13 +16,13 @@
 	backpack_contents = null
 	implants = list(/obj/item/implant/weapons_auth)
 
-/datum/outfit/job/syndicate/cel/captain/twink/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/cel/syndicate/captain/twink/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	assign_codename(H)
 
 //MARK: Command
 
-/datum/outfit/job/syndicate/cel/hos/twink
+/datum/outfit/job/cel/syndicate/hos/twink
 	name = "Syndi Twinkleshine - Lieutenant"
 	id_assignment = "Lieutenant"
 	job_icon = "lieutenant"
@@ -48,11 +48,11 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
 	courierbag = /obj/item/storage/backpack/messenger/sec
 
-/datum/outfit/job/syndicate/cel/hos/twink/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/cel/syndicate/hos/twink/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	assign_codename(H)
 
-/datum/outfit/job/syndicate/cel/hos/suns/twink	// Не юзается ??????
+/datum/outfit/job/cel/syndicate/hos/suns/twink	// Не юзается ??????
 	name = "Syndi Twinkleshine SUNS - Redshield Officer"
 	id_assignment = "Redshield Officer"
 
@@ -64,13 +64,13 @@
 	suit_store = null
 	glasses = null
 
-/datum/outfit/job/syndicate/cel/hos/suns/twink/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/cel/syndicate/hos/suns/twink/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	assign_codename(H)
 
 //MARK: Crew
 
-/datum/outfit/job/syndicate/cel/bartender/twink
+/datum/outfit/job/cel/syndicate/bartender/twink
 	name = "Syndi Twinkleshine DonkCo - Bartender"
 
 	uniform = /obj/item/clothing/under/syndicate/donk
@@ -88,11 +88,11 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
 	courierbag = /obj/item/storage/backpack/messenger/sec
 
-/datum/outfit/job/syndicate/cel/bartender/twink/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/cel/syndicate/bartender/twink/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	assign_codename(H)
 
-/datum/outfit/job/syndicate/cel/paramedic/twink
+/datum/outfit/job/cel/syndicate/paramedic/twink
 	name = "Syndi Twinkleshine Cybersun - Medic"
 
 	id = /obj/item/card/id/cel/syndicate/crew/doctor/paramedic
@@ -117,11 +117,11 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie/med
 	courierbag = /obj/item/storage/backpack/messenger/sec
 
-/datum/outfit/job/syndicate/cel/paramedic/twink/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/cel/syndicate/paramedic/twink/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	assign_codename(H)
 
-/datum/outfit/job/syndicate/cel/security/twink
+/datum/outfit/job/cel/syndicate/security/twink
 	name = "Syndi Twinkleshine - Operative"
 
 	id = /obj/item/card/id/cel/syndicate/crew/security
@@ -144,11 +144,11 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
 	courierbag = /obj/item/storage/backpack/messenger/sec
 
-/datum/outfit/job/syndicate/cel/security/twink/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/cel/syndicate/security/twink/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	assign_codename(H)
 
-/datum/outfit/job/syndicate/cel/miner/twink
+/datum/outfit/job/cel/syndicate/miner/twink
 	name = "Syndi Twinkleshine - Miner"
 
 	id = /obj/item/card/id/cel/syndicate/crew/miner
@@ -167,11 +167,11 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
 	courierbag = /obj/item/storage/backpack/messenger/sec
 
-/datum/outfit/job/syndicate/cel/miner/twink/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/cel/syndicate/miner/twink/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	assign_codename(H)
 
-/datum/outfit/job/syndicate/cel/engineer/twink
+/datum/outfit/job/cel/syndicate/engineer/twink
 	name = "Syndi Twinkleshine GEC - Ship Engineer"
 
 	id = /obj/item/card/id/cel/syndicate/crew/engineer
@@ -191,13 +191,13 @@
 	r_pocket = null
 	implants = list(/obj/item/implant/weapons_auth)
 
-/datum/outfit/job/syndicate/cel/engineer/twink/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/cel/syndicate/engineer/twink/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	assign_codename(H)
 
 //MARK: Assistant
 
-/datum/outfit/job/syndicate/cel/assistant/twink
+/datum/outfit/job/cel/syndicate/assistant/twink
 	name = "Syndi Twinkleshine - Deck Assistant"
 	id_assignment = "Deck Assistant"
 
@@ -214,6 +214,6 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
 	courierbag = /obj/item/storage/backpack/messenger/sec
 
-/datum/outfit/job/syndicate/cel/assistant/twink/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/cel/syndicate/assistant/twink/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	assign_codename(H)

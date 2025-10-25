@@ -1,6 +1,6 @@
 //MARK: Доступы для Синдикеков
 
-/datum/outfit/job/syndicate/cel/proc/get_syndi_general_access(mob/living/carbon/human/H)
+/datum/outfit/job/cel/syndicate/proc/get_syndi_general_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
@@ -19,16 +19,16 @@
 		for (var/obj/item/card/id/card in W.contents)
 			W.combined_access |= card.access
 
-/datum/outfit/job/syndicate/cel/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/cel/syndicate/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_syndi_general_access(H)
 
-/datum/outfit/job/syndicate/cel
+/datum/outfit/job/cel/syndicate
 	box = /obj/item/storage/box/survival/syndicate
 
 //MARK: Captain
 
-/datum/outfit/job/syndicate/cel/captain
+/datum/outfit/job/cel/syndicate/captain
 	name = "Syndi - Captain"
 	jobtype = /datum/job/captain
 
@@ -49,7 +49,7 @@
 
 //MARK: Command
 
-/datum/outfit/job/syndicate/cel/ce	// Не юзается
+/datum/outfit/job/cel/syndicate/ce	// Не юзается
 	name = "Syndi - Chief Engineer"
 	jobtype = /datum/job/chief_engineer
 
@@ -73,7 +73,7 @@
 	pda_slot = ITEM_SLOT_LPOCKET
 	chameleon_extras = /obj/item/stamp/ce
 
-/datum/outfit/job/syndicate/cel/cmo
+/datum/outfit/job/cel/syndicate/cmo
 	name = "Syndi - Medical Director"
 	id_assignment = "Medical Director"
 	jobtype = /datum/job/cmo
@@ -90,7 +90,7 @@
 	l_hand = /obj/item/storage/firstaid/medical
 	suit_store = /obj/item/flashlight/pen/paramedic
 
-/datum/outfit/job/syndicate/cel/head_of_personnel
+/datum/outfit/job/cel/syndicate/head_of_personnel
 	name = "Syndi - Bridge Officer"
 	id_assignment = "Bridge Officer"
 	jobtype = /datum/job/head_of_personnel
@@ -107,7 +107,7 @@
 	glasses = /obj/item/clothing/glasses/hud/health
 	backpack_contents = list(/obj/item/storage/box/ids=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
 
-/datum/outfit/job/syndicate/cel/hos	// Не юзается
+/datum/outfit/job/cel/syndicate/hos	// Не юзается
 	name = "Syndi - Head Of Security"
 	jobtype = /datum/job/hos
 
@@ -121,7 +121,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 
-/datum/outfit/job/syndicate/cel/quartermaster	// Не юзается
+/datum/outfit/job/cel/syndicate/quartermaster	// Не юзается
 	name = "Syndi - Quartermaster"
 	jobtype = /datum/job/qm
 
@@ -139,7 +139,7 @@
 
 //MARK: Crew
 
-/datum/outfit/job/syndicate/cel/bartender
+/datum/outfit/job/cel/syndicate/bartender
 	name = "Syndi - Bartender"
 	jobtype = /datum/job/bartender
 
@@ -155,7 +155,7 @@
 	backpack_contents = list(/obj/item/storage/box/beanbag=1)
 	shoes = /obj/item/clothing/shoes/laceup
 
-/datum/outfit/job/syndicate/cel/bartender/post_equip(mob/living/carbon/human/H, visualsOnly)
+/datum/outfit/job/cel/syndicate/bartender/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 
 	var/obj/item/card/id/W = H.get_idcard()
@@ -163,7 +163,7 @@
 		W.registered_age = AGE_MINOR
 		to_chat(H, span_notice("You're not technically old enough to access or serve alcohol, but your ID has been discreetly modified to display your age as [AGE_MINOR]. Try to keep that a secret!"))
 
-/datum/outfit/job/syndicate/cel/botanist	// Не юзается
+/datum/outfit/job/cel/syndicate/botanist	// Не юзается
 	name = "Syndi - Botanist"
 	jobtype = /datum/job/hydro
 
@@ -174,7 +174,7 @@
 	gloves  =/obj/item/clothing/gloves/botanic_leather
 	suit_store = /obj/item/plant_analyzer
 
-/datum/outfit/job/syndicate/cel/cargo_tech	// Не юзается
+/datum/outfit/job/cel/syndicate/cargo_tech	// Не юзается
 	name = "Syndi - Cargo Tech"
 	jobtype = /datum/job/cargo_tech
 
@@ -188,7 +188,7 @@
 	l_hand = /obj/item/export_scanner
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/cargo=1)
 
-/datum/outfit/job/syndicate/cel/atmos	// не юзается нигде
+/datum/outfit/job/cel/syndicate/atmos	// не юзается нигде
 	name = "Syndi - Atmospheric Technician"
 	jobtype = /datum/job/atmos
 
@@ -211,7 +211,7 @@
 	pda_slot = ITEM_SLOT_LPOCKET
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
-/datum/outfit/job/syndicate/cel/chemist	// Не юзается
+/datum/outfit/job/cel/syndicate/chemist	// Не юзается
 	name = "Syndi - Chemist"
 	jobtype = /datum/job/chemist
 
@@ -224,7 +224,7 @@
 	suit =  /obj/item/clothing/suit/toggle/labcoat/chemist
 
 
-/datum/outfit/job/syndicate/cel/doctor
+/datum/outfit/job/cel/syndicate/doctor
 	name = "Syndi - Medical Doctor"
 	jobtype = /datum/job/doctor
 
@@ -239,7 +239,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie/med
 	courierbag = /obj/item/storage/backpack/messenger/med
 
-/datum/outfit/job/syndicate/cel/paramedic	// Не юзается
+/datum/outfit/job/cel/syndicate/paramedic	// Не юзается
 	name = "Syndi - Paramedic"
 	jobtype = /datum/job/paramedic
 
@@ -259,7 +259,7 @@
 	backpack_contents = list(/obj/item/roller=1)
 	pda_slot = ITEM_SLOT_LPOCKET
 
-/datum/outfit/job/syndicate/cel/psychologist	// Не юзается
+/datum/outfit/job/cel/syndicate/psychologist	// Не юзается
 	name = "Syndi - Psychologist"
 	jobtype = /datum/job/psychologist
 
@@ -272,7 +272,7 @@
 	alt_uniform = null
 	l_hand = /obj/item/clipboard
 	pda_slot = ITEM_SLOT_BELT
-/datum/outfit/job/syndicate/cel/science	// Не юзается
+/datum/outfit/job/cel/syndicate/science	// Не юзается
 	name = "Syndi - Scientist"
 	jobtype = /datum/job/scientist
 
@@ -282,7 +282,7 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat/science
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/science
 
-/datum/outfit/job/syndicate/cel/security
+/datum/outfit/job/cel/syndicate/security
 	name = "Syndi - Operative"
 	id_assignment = "Operative"
 	jobtype = /datum/job/officer
@@ -299,7 +299,7 @@
 	l_pocket = /obj/item/restraints/handcuffs
 	r_pocket = /obj/item/assembly/flash/handheld
 
-/datum/outfit/job/syndicate/cel/miner	// Не юзается
+/datum/outfit/job/cel/syndicate/miner	// Не юзается
 	name = "Syndi - Miner"
 	jobtype = /datum/job/mining
 
@@ -318,7 +318,7 @@
 						/obj/item/radio/weather_monitor=1,
 						)
 
-/datum/outfit/job/syndicate/cel/engineer	// Не юзается
+/datum/outfit/job/cel/syndicate/engineer	// Не юзается
 	name = "Syndi - Ship Technician"
 	id_assignment = "Ship Technician"
 	jobtype = /datum/job/engineer
@@ -346,7 +346,7 @@
 
 //MARK: Assistant
 
-/datum/outfit/job/syndicate/cel/assistant
+/datum/outfit/job/cel/syndicate/assistant
 	name = "Syndi - Junior Agent"
 	id_assignment = "Junior Agent"
 	jobtype = /datum/job/assistant
@@ -366,7 +366,7 @@
 
 //MARK: Patient
 
-/datum/outfit/job/syndicate/cel/patient
+/datum/outfit/job/cel/syndicate/patient
 	name = "Syndi - Long Term Patient"
 	id_assignment = "Long Term Patient"
 	jobtype = /datum/job/prisoner

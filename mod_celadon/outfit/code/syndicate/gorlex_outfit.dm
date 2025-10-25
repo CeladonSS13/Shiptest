@@ -1,6 +1,6 @@
 //MARK: Captain
 
-/datum/outfit/job/syndicate/cel/captain/gorlex
+/datum/outfit/job/cel/syndicate/captain/gorlex
 	name = "Syndi Gorlex - Captain"
 
 	id = /obj/item/card/id/cel/syndicate/captain/gorlex
@@ -12,7 +12,7 @@
 
 //MARK: Command
 
-/datum/outfit/job/syndicate/cel/ce/gorlex
+/datum/outfit/job/cel/syndicate/ce/gorlex
 	name = "Syndi Gorlex - Chief Engineer"
 
 	id = /obj/item/card/id/cel/syndicate/command_ce/gorlex
@@ -22,7 +22,7 @@
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/color/red/insulated
 
-/datum/outfit/job/syndicate/cel/hos/gorlex
+/datum/outfit/job/cel/syndicate/hos/gorlex
 	name = "Syndi Gorlex - Sergeant"
 	id_assignment = "Sergeant"
 
@@ -32,11 +32,11 @@
 	suit = /obj/item/clothing/suit/armor/hardliners/sergeant
 	shoes = /obj/item/clothing/shoes/combat
 
-/datum/outfit/job/syndicate/cel/hos/gorlex/lieutenant
+/datum/outfit/job/cel/syndicate/hos/gorlex/lieutenant
 	name = "Syndi Gorlex - Lieutenant"
 
 //MARK: Crew
-/datum/outfit/job/syndicate/cel/doctor/gorlex
+/datum/outfit/job/cel/syndicate/doctor/gorlex
 	name = "Syndi Gorlex - Medical Doctor"
 
 	id = /obj/item/card/id/cel/syndicate/crew/doctor/gorlex
@@ -46,12 +46,12 @@
 	glasses = /obj/item/clothing/glasses/hud/health
 	shoes = /obj/item/clothing/shoes/combat
 
-/datum/outfit/job/syndicate/cel/paramedic/gorlex	// Не юзается
+/datum/outfit/job/cel/syndicate/paramedic/gorlex	// Не юзается
 	name = "Syndi Gorlex - Paramedic"
 
 	id = /obj/item/card/id/cel/syndicate/crew/doctor/paramedic/gorlex
 
-/datum/outfit/job/syndicate/cel/security/gorlex
+/datum/outfit/job/cel/syndicate/security/gorlex
 	name = "Syndi Gorlex - Trooper"
 	id_assignment = "Trooper"
 	job_icon = "securityofficer"
@@ -61,11 +61,11 @@
 	gloves = /obj/item/clothing/gloves/color/black
 	shoes = /obj/item/clothing/shoes/combat
 
-/datum/outfit/job/syndicate/cel/security/gorlex/commando
+/datum/outfit/job/cel/syndicate/security/gorlex/commando
 	name = "Syndi Gorlex - Commando"
 	id_assignment = "Commando"
 
-/datum/outfit/job/syndicate/cel/security/gorlex/pilot	// Не юзается
+/datum/outfit/job/cel/syndicate/security/gorlex/pilot	// Не юзается
 	name = "Syndi Gorlex - Pilot"
 	id_assignment = "Pilot"
 	job_icon = "securityofficer"
@@ -73,7 +73,7 @@
 	id = /obj/item/card/id/cel/syndicate/crew/security/gorlex/pilot
 	head = /obj/item/clothing/head/helmet/hardliners/swat
 
-/datum/outfit/job/syndicate/cel/miner/gorlex
+/datum/outfit/job/cel/syndicate/miner/gorlex
 	name = "Syndi Gorlex - Wrecker"
 	id_assignment = "Wrecker"
 
@@ -85,7 +85,7 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	ears = /obj/item/radio/headset/alt
 
-/datum/outfit/job/syndicate/cel/engineer/gorlex
+/datum/outfit/job/cel/syndicate/engineer/gorlex
 	name = "Syndi Gorlex - Mechanic"
 	id_assignment = "Mechanic"
 
@@ -98,12 +98,12 @@
 
 //MARK: Assistant
 
-/datum/outfit/job/syndicate/cel/assistant/gorlex
+/datum/outfit/job/cel/syndicate/assistant/gorlex
 	name = "Syndi Gorlex - Junior Agent"
 
 	id = /obj/item/card/id/cel/syndicate/assistant/gorlex
 	uniform = /obj/item/clothing/under/syndicate/hardliners
 	alt_uniform = /obj/item/clothing/under/syndicate/hardliners/jumpsuit
 
-/datum/outfit/job/syndicate/cel/assistant/gorlex/operative
+/datum/outfit/job/cel/syndicate/assistant/gorlex/operative
 	name = "Syndi Gorlex - Operative"
