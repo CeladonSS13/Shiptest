@@ -1,59 +1,4 @@
-//дает всем трупам из легионов(я надеюсь что всем) коробки для выживания исв
-/datum/outfit/generic
-	box = /obj/item/storage/box/survival/independent
-
-/datum/outfit/generic/security
-	box = /obj/item/storage/box/survival/independent
-
-/datum/outfit/generic/miner
-	box = /obj/item/storage/box/survival/independent
-
-/datum/outfit/generic/doctor
-	box = /obj/item/storage/box/survival/independent
-
-/datum/outfit/generic/engineer
-	box = /obj/item/storage/box/survival/independent
-
-
-
-//дает всем нефракционышам коробку для выживания исв
-/datum/outfit/job/independent
-	box = /obj/item/storage/box/survival/independent
-
-/datum/outfit/job/independent/ert/technician
-	box = /obj/item/storage/box/survival/independent
-
-/datum/outfit/job/independent/chemist
-	box = /obj/item/storage/box/survival/independent
-
-/datum/outfit/job/independent/ce
-	box = /obj/item/storage/box/survival/independent
-
-/datum/outfit/job/independent/cmo
-	box = /obj/item/storage/box/survival/independent
-
-/datum/outfit/job/independent/engineer
-	box = /obj/item/storage/box/survival/independent
-
-/datum/outfit/job/independent/hos
-	box = /obj/item/storage/box/survival/independent
-
-/datum/outfit/job/independent/doctor
-	box = /obj/item/storage/box/survival/independent
-
-/datum/outfit/job/independent/miner
-	box = /obj/item/storage/box/survival/independent
-
-/datum/outfit/job/independent/paramedic
-	box = /obj/item/storage/box/survival/independent
-
-/datum/outfit/job/independent/security
-	box = /obj/item/storage/box/survival/independent
-
-/datum/outfit/job/independent/warden
-	box = /obj/item/storage/box/survival/independent
-
-/datum/outfit/job/independent/assistant/fancy/lagoon
+/datum/outfit/job/cel/independent/assistant/fancy/lagoon
 	name = "Independent - Fancy (Formal Uniform)"
 
 	shoes = /obj/item/clothing/shoes/laceup
@@ -61,7 +6,7 @@
 	head = /obj/item/clothing/head/beret/grey
 	l_pocket = /obj/item/spacecash/bundle/c500
 
-/datum/outfit/job/independent/captain/lagoon
+/datum/outfit/job/cel/independent/captain/lagoon
 	name = "Independent - Captain"
 	job_icon = "captain"
 	jobtype = /datum/job/captain
@@ -86,7 +31,7 @@
 
 // Head of Personnel
 
-/datum/outfit/job/independent/hop/lagoon
+/datum/outfit/job/cel/independent/hop/lagoon
 	name = "Independent - Head of Personnel"
 	job_icon = "headofpersonnel"
 	jobtype = /datum/job/head_of_personnel
@@ -109,7 +54,7 @@
 
 // Head of Security
 
-/datum/outfit/job/independent/security/lagoon
+/datum/outfit/job/cel/independent/security/lagoon
 	name = "Independent - Security Officer"
 	jobtype = /datum/job/officer
 	job_icon = "securityofficer"
@@ -136,7 +81,7 @@
 
 // Engineer
 
-/datum/outfit/job/independent/doctor/lagoon
+/datum/outfit/job/cel/independent/doctor/lagoon
 	name = "Independent - Medical Doctor"
 	job_icon = "medicaldoctor"
 	jobtype = /datum/job/doctor
@@ -158,7 +103,7 @@
 
 // Atmos Tech
 
-/datum/outfit/job/independent/atmos/lagoon
+/datum/outfit/job/cel/independent/atmos/lagoon
 	name = "Independent - Atmos Tech"
 	jobtype = /datum/job/atmos
 	job_icon = "atmospherictechnician"
@@ -178,7 +123,7 @@
 
 // Cook
 
-/datum/outfit/job/independent/cook/lagoon
+/datum/outfit/job/cel/independent/cook/lagoon
 	name = "Independent - Cook"
 	jobtype = /datum/job/cook
 	job_icon = "cook"
@@ -194,7 +139,7 @@
 
 // Bartender
 
-/datum/outfit/job/independent/bartender/lagoon
+/datum/outfit/job/cel/independent/bartender/lagoon
 	job_icon = "bartender"
 	name = "Independent - Bartender"
 
@@ -210,7 +155,7 @@
 
 // Curator
 
-/datum/outfit/job/independent/curator/lagoon
+/datum/outfit/job/cel/independent/curator/lagoon
 	name = "Independent - Curator"
 	job_icon = "curator"
 	jobtype = /datum/job/curator
@@ -228,7 +173,7 @@
 
 // Chaplain
 
-/datum/outfit/job/independent/chaplain/lagoon
+/datum/outfit/job/cel/independent/chaplain/lagoon
 	name = "Independent - Chaplain"
 	job_icon = "chaplain"
 	jobtype = /datum/job/chaplain
@@ -244,7 +189,7 @@
 
 // Janitor
 
-/datum/outfit/job/independent/janitor/lagoon
+/datum/outfit/job/cel/independent/janitor/lagoon
 	name = "Independent - Janitor"
 	job_icon = "janitor"
 	jobtype = /datum/job/janitor
@@ -254,7 +199,7 @@
 
 // Botanist
 
-/datum/outfit/job/independent/botanist/lagoon
+/datum/outfit/job/cel/independent/botanist/lagoon
 	name = "Independent - Botanist"
 	job_icon = "botanist"
 	jobtype = /datum/job/hydro
@@ -281,88 +226,89 @@
 
 // Все остальные аутфиты. При надобности расскоментить
 
-/datum/outfit/job/independent/lawyer
+/datum/outfit/job/cel/independent/lawyer
 	r_pocket = /obj/item/pda
 	backpack_contents = list(/obj/item/cane = 1,
 							/obj/item/clothing/glasses/monocle = 1,
 							/obj/item/clothing/neck/scarf/tajaran/orange = 1,
 							/obj/item/passport/solgov = 1)
 
-// /datum/outfit/job/independent/assistant/waiter
+// /datum/outfit/job/cel/independent/assistant/waiter
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/independent/scientist
+// /datum/outfit/job/cel/independent/scientist
 // 	job_icon = "scientist"
 
-// /datum/outfit/job/independent/captain/masinyane
+// /datum/outfit/job/cel/independent/captain/masinyane
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/independent/cargo_tech
+// /datum/outfit/job/cel/independent/cargo_tech
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/independent/captain/western
+// /datum/outfit/job/cel/independent/captain/western
 // 	job_icon = "captain"
 
-// /datum/outfit/job/independent/quartermaster/western
+// /datum/outfit/job/cel/independent/quartermaster/western
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/independent/miner/hazard
+// /datum/outfit/job/cel/independent/miner/hazard
 // 	job_icon = "shaftminer"
 
-// /datum/outfit/job/independent/cook
+// /datum/outfit/job/cel/independent/cook
 // 	job_icon = "cook"
 
-// /datum/outfit/job/independent/hop/western
+/datum/outfit/job/cel/independent/hop/western
+	backpack_contents = list(/obj/item/storage/box/ids=1)
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/independent/roboticist
+// /datum/outfit/job/cel/independent/roboticist
 // 	job_icon = "assistant"
 
-/datum/outfit/job/independent/security/western
+/datum/outfit/job/cel/independent/security/western
 	job_icon = "securityofficer"
 
-// /datum/outfit/job/independent/cmo/pharma
+// /datum/outfit/job/cel/independent/cmo/pharma
 // 	job_icon = "assistant"
 
-/datum/outfit/job/independent/chemist/pharma
+/datum/outfit/job/cel/independent/chemist/pharma
 	job_icon = "medicaldoctor"
 
 	l_pocket = null
 
-// /datum/outfit/job/independent/bartender/pharma
+// /datum/outfit/job/cel/independent/bartender/pharma
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/independent/botanist/pharma
+// /datum/outfit/job/cel/independent/botanist/pharma
 // 	job_icon = "assistant"
 
-/datum/outfit/job/independent/assistant/pharma
+/datum/outfit/job/cel/independent/assistant/pharma
 	job_icon = "medicaldoctor"
 
-// /datum/outfit/job/independent/detective
+// /datum/outfit/job/cel/independent/detective
 // 	job_icon = "detective"
 
-// /datum/outfit/job/independent/captain/manager
+// /datum/outfit/job/cel/independent/captain/manager
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/independent/bartender/disarmed
+// /datum/outfit/job/cel/independent/bartender/disarmed
 // 	job_icon = "bartender"
 
-// /datum/outfit/job/independent/curator/dungeonmaster
+// /datum/outfit/job/cel/independent/curator/dungeonmaster
 // 	job_icon = "headofsecurity"
 
-// /datum/outfit/job/independent/assistant/artist
+// /datum/outfit/job/cel/independent/assistant/artist
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/independent/engineer/salvage
+// /datum/outfit/job/cel/independent/engineer/salvage
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/independent/rd
+// /datum/outfit/job/cel/independent/rd
 // 	job_icon = "researchdirector"
 
-// /datum/outfit/job/independent/miner/scientist
+// /datum/outfit/job/cel/independent/miner/scientist
 // 	job_icon = "assistant"
 
-/datum/outfit/job/independent/hop/beluga
+/datum/outfit/job/cel/independent/hop/beluga
 	job_icon = "headofpersonnel"
 	jobtype = /datum/job/head_of_personnel
 
@@ -380,8 +326,8 @@
 
 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/officer)
 
-// /datum/outfit/job/independent/hop
+// /datum/outfit/job/cel/independent/hop
 // 	head = /obj/item/clothing/head/hopcap
 
-// /datum/outfit/job/independent/quartermaster
+// /datum/outfit/job/cel/independent/quartermaster
 // 	head = /obj/item/clothing/head/supply_chief
