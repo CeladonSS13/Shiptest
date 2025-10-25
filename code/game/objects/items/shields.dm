@@ -84,6 +84,12 @@
 	if(transparent && (hitby.pass_flags & PASSGLASS))
 		return FALSE
 // [CELADON-ADD] - BALLISTIC_SHIELD - Rebalance - Щиты не должны блокировать лежа
+	if(isprojectile(hitby))
+		var/obj/projectile/bullet = hitby
+		if(!defense_check(get_turf(owner), get_turf(bullet?.fired_from), owner?.dir))
+			return FALSE
+	else if(!defense_check(get_turf(owner), get_turf(hitby), owner?.dir))
+		return FALSE
 	if(owner.body_position == LYING_DOWN)
 		final_block_chance -= 30
 // [/CELADON-ADD]
@@ -94,6 +100,28 @@
 	. = ..()
 	if(.)
 		on_block(owner, hitby, attack_text, damage, attack_type, damage_type)
+
+// [CELADON-ADD] - BALLISTIC_SHIELD - Rebalance
+/obj/item/shield/proc/defense_check(turf/aloc, turf/bloc, mobdir)
+	. = TRUE
+	var/dx = aloc.x - bloc.x
+	var/dy = aloc.y - bloc.y
+
+	switch(mobdir)
+		if(NORTH)
+			if(abs(dx) <= dy * 2)
+				. = FALSE
+		if(SOUTH)
+			if(abs(dx) <= dy * -2)
+				. = FALSE
+		if(EAST)
+			if(abs(dy) <= dx * 2)
+				. = FALSE
+		if(WEST)
+			if(abs(dy) <= dx * -2)
+				. = FALSE
+	return
+// [/CELADON-ADD]
 
 /obj/item/shield/riot
 	name = "ballistic shield"
