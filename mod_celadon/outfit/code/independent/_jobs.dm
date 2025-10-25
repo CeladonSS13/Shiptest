@@ -98,9 +98,6 @@
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/captain //WS Edit - Alt Uniforms
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/caphat
-	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
-	// [/CELADON-REMOVE]
 
 	backpack = /obj/item/storage/backpack/captain
 	satchel = /obj/item/storage/backpack/satchel/cap
@@ -293,7 +290,6 @@
 	satchel = /obj/item/storage/backpack/satchel/sec
 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
 	courierbag = /obj/item/storage/backpack/messenger/sec
-	box = /obj/item/storage/box/survival/security
 
 	chameleon_extras = list(/obj/item/gun/energy/e_gun/hos, /obj/item/stamp/hos)
 
@@ -350,7 +346,6 @@
 	satchel = /obj/item/storage/backpack/satchel/sec
 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
 	courierbag = /obj/item/storage/backpack/messenger/sec
-	box = /obj/item/storage/box/survival/security
 
 	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
 	//The helmet is necessary because /obj/item/clothing/head/helmet/sec is overwritten in the chameleon list by the standard helmet, which has the same name and icon state
@@ -422,9 +417,6 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	courierbag = /obj/item/storage/backpack/messenger/engi
 
-	box = /obj/item/storage/box/survival/engineer
-	// backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем КПК
-
 /datum/outfit/job/cel/independent/engineer/salvage
 	name = "Independent - Engineer (Salvager)"
 
@@ -473,7 +465,6 @@
 	satchel = /obj/item/storage/backpack/satchel/sec
 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
 	courierbag = /obj/item/storage/backpack/messenger/sec
-	box = /obj/item/storage/box/survival/security
 
 	chameleon_extras = /obj/item/gun/ballistic/shotgun/automatic/m11
 
@@ -492,14 +483,12 @@
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	head = /obj/item/clothing/head/hardhat/white
 	gloves = /obj/item/clothing/gloves/color/black
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички и КПК
 
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	courierbag = /obj/item/storage/backpack/messenger/engi
 
-	box = /obj/item/storage/box/survival/engineer
 	chameleon_extras = /obj/item/stamp/ce
 
 // MARK:Medical Doctor
@@ -520,8 +509,6 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	courierbag = /obj/item/storage/backpack/messenger/med
 
-	box = /obj/item/storage/box/survival/medical
-
 	chameleon_extras = /obj/item/gun/syringe
 
 /datum/outfit/job/cel/independent/doctor/pirate
@@ -540,7 +527,6 @@
 	ears = /obj/item/radio/headset/headset_cargo
 	uniform = /obj/item/clothing/under/color/lightbrown
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/cargo
-	// backpack_contents = list(/obj/item/modular_computer/tablet/preset/cargo=1)	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем КПК
 
 // MARK:Atmos Tech
 
@@ -559,10 +545,6 @@
 	satchel = /obj/item/storage/backpack/satchel/eng
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	courierbag = /obj/item/storage/backpack/messenger/engi
-
-	box = /obj/item/storage/box/survival/engineer
-
-	// backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем КПК
 
 // MARK:Scientist
 
@@ -619,8 +601,6 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	courierbag = /obj/item/storage/backpack/messenger/para
 
-	box = /obj/item/storage/box/survival/medical
-
 	chameleon_extras = /obj/item/gun/syringe
 
 // MARK:Quartermaster
@@ -638,7 +618,6 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	glasses = /obj/item/clothing/glasses/sunglasses
 	r_pocket = /obj/item/clipboard
-	// backpack_contents = list(/obj/item/modular_computer/tablet/preset/cargo=1)	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем КПК
 
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
@@ -672,7 +651,6 @@
 	backpack = /obj/item/storage/backpack/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	duffelbag = /obj/item/storage/backpack/duffelbag
-	box = /obj/item/storage/box/survival/mining
 
 	chameleon_extras = /obj/item/gun/energy/kinetic_accelerator
 
@@ -864,8 +842,6 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	courierbag = /obj/item/storage/backpack/messenger/chem
 
-	box = /obj/item/storage/box/survival/medical
-
 	chameleon_extras = /obj/item/gun/syringe
 
 /datum/outfit/job/cel/independent/chemist/pharma
@@ -888,8 +864,6 @@
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/civilian/janitor
 
-	// backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем КПК
-
 // MARK:Research Director
 
 /datum/outfit/job/cel/independent/rd
@@ -905,7 +879,6 @@
 	alt_suit = /obj/item/clothing/suit/toggle/suspenders
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/science //WS Edit - Alt Uniforms
 	l_hand = /obj/item/clipboard
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички и КПК
 
 	backpack = /obj/item/storage/backpack/science
 	satchel = /obj/item/storage/backpack/satchel/tox
@@ -927,16 +900,11 @@
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	suit = /obj/item/clothing/suit/toggle/labcoat/cmo
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
-	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
-	// [/CELADON-REMOVE]
 
 	backpack = /obj/item/storage/backpack/medic
 	satchel = /obj/item/storage/backpack/satchel/med
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	courierbag = /obj/item/storage/backpack/messenger/med
-
-	box = /obj/item/storage/box/survival/medical
 
 	chameleon_extras = list(/obj/item/gun/syringe, /obj/item/stamp/cmo)
 
@@ -955,10 +923,7 @@
 	backpack = /obj/item/storage/backpack/chemistry
 	satchel = /obj/item/storage/backpack/satchel/chem
 	courierbag = /obj/item/storage/backpack/messenger/chem
-	// [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/storage/bag/chemistry=1)	// CELADON-EDIT - ORIGINAL
-	backpack_contents = list(/obj/item/storage/bag/chemistry=1)
-	// [/CELADON-EDIT]
+	backpack_contents = list(/obj/item/storage/bag/chemistry = 1)
 
 // MARK:Detective
 

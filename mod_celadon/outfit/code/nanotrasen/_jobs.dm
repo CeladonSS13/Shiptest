@@ -32,9 +32,6 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	neck = /obj/item/clothing/neck/cloak/nanotrasen
 	head = /obj/item/clothing/head/nanotrasen/captain/peaked
-	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
-	// [/CELADON-REMOVE]
 
 	backpack = /obj/item/storage/backpack/captain
 	satchel = /obj/item/storage/backpack/satchel/cap

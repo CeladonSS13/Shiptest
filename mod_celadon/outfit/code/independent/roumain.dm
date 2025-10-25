@@ -55,15 +55,10 @@
 	backpack = /obj/item/storage/backpack/cultpack
 	satchel = /obj/item/storage/backpack/cultpack
 
-	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/book/manual/srmlore=1,
-	// 	/obj/item/stamp/chap = 1,
-	// 	/obj/item/melee/classic_baton/telescopic=1,
-	// )	// CELADON-EDIT - ORIGINAL
-	backpack_contents = list(/obj/item/book/manual/srmlore=1,
-		/obj/item/stamp/roumain = 1,
+	backpack_contents = list(/obj/item/book/manual/srmlore = 1,
+							/obj/item/stamp/roumain = 1,
 	)
-	// [/CELADON-REMOVE]
+
 	chameleon_extras = null
 
 // Second-In-Command
@@ -85,15 +80,10 @@
 	backpack = /obj/item/storage/backpack/cultpack
 	satchel = /obj/item/storage/backpack/cultpack
 
-	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/book/manual/srmlore=1,
-	// 	/obj/item/stamp/chap = 1,
-	// 	/obj/item/melee/classic_baton/telescopic=1,
-	// )	// CELADON-EDIT - ORIGINAL
-	backpack_contents = list(/obj/item/book/manual/srmlore=1,
-		/obj/item/stamp/roumain = 1,
+	backpack_contents = list(/obj/item/book/manual/srmlore = 1,
+							/obj/item/stamp/roumain = 1,
 	)
-	// [/CELADON-REMOVE]
+
 	chameleon_extras = null
 
 /datum/outfit/job/cel/independent/roumain/security
