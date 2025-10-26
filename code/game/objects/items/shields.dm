@@ -42,7 +42,11 @@
 	var/braking_alert = "cracks!"
 // [/CELADON-ADD]
 
-/obj/item/shield/proc/on_block(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", damage = 0, attack_type = MELEE_ATTACK)
+/obj/item/shield/proc/on_block(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", damage = 0, attack_type = MELEE_ATTACK, damage_type)
+// [CELADON-ADD] - BALLISTIC_SHIELD - Rebalance - Щиты не должны ломаться лол
+	if(damage_type != BRUTE && damage_type != BURN)
+		return FALSE
+// [/CELADON-ADD]
 	take_damage(damage)
 
 /obj/item/shield/atom_break(damage_flag)
@@ -80,6 +84,12 @@
 	if(transparent && (hitby.pass_flags & PASSGLASS))
 		return FALSE
 // [CELADON-ADD] - BALLISTIC_SHIELD - Rebalance - Щиты не должны блокировать лежа
+	if(isprojectile(hitby))
+		var/obj/projectile/bullet = hitby
+		if(!defense_check(get_turf(owner), get_turf(bullet?.fired_from), owner?.dir))
+			return FALSE
+	else if(!defense_check(get_turf(owner), get_turf(hitby), owner?.dir))
+		return FALSE
 	if(owner.body_position == LYING_DOWN)
 		final_block_chance -= 30
 // [/CELADON-ADD]
@@ -90,6 +100,28 @@
 	. = ..()
 	if(.)
 		on_block(owner, hitby, attack_text, damage, attack_type, damage_type)
+
+// [CELADON-ADD] - BALLISTIC_SHIELD - Rebalance
+/obj/item/shield/proc/defense_check(turf/aloc, turf/bloc, mobdir)
+	. = TRUE
+	var/dx = aloc.x - bloc.x
+	var/dy = aloc.y - bloc.y
+
+	switch(mobdir)
+		if(NORTH)
+			if(abs(dx) <= dy * 2)
+				. = FALSE
+		if(SOUTH)
+			if(abs(dx) <= dy * -2)
+				. = FALSE
+		if(EAST)
+			if(abs(dy) <= dx * 2)
+				. = FALSE
+		if(WEST)
+			if(abs(dy) <= dx * -2)
+				. = FALSE
+	return
+// [/CELADON-ADD]
 
 /obj/item/shield/riot
 	name = "ballistic shield"
@@ -132,17 +164,19 @@
 //	[CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
 			if(broken_shield)
 				if(istype(src, /obj/item/shield/riot/tele))
-					icon_state = "[src::icon_state]1"
+					icon_state = "teleriot1"
 				else
-					icon_state = "[src::icon_state]"
+					icon_state = initial(icon_state)
 //	[/CELADON-ADD]
 			atom_integrity = max_integrity
 			to_chat(user, span_notice("You repair [src] with [T]."))
 			name = src::name
 			broken = FALSE
-			block_chance = 60
-			slowdown = 0.5			//slowdown = 1.25 [CELADON-EDIT] - BALLISTIC_SHIELD - Rebalance
-			//drag_slowdown = 1.25	// [/CELADON-REMOVE]
+// [CELADON-EDIT] - BALLISTIC_SHIELD - Extended Edition
+			block_chance = initial(block_chance)	//block_chance = 60
+			slowdown = initial(slowdown)			//slowdown = 1.25
+			//drag_slowdown = initial(drag_slowdown) // drag_slowdown = 1.25
+// [/CELADON-EDIT]
 
 /obj/item/shield/riot/spike
 	name = "spike shield"
@@ -174,14 +208,15 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	max_integrity = 30
 	recoil_bonus = 0 //it's PLASTIC
+	slowdown = 0		// [CELADON-REMOVE] - BALLISTIC_SHIELD - Rebalance
 
 /obj/item/shield/riot/buckler
 	name = "wooden buckler"
 	desc = "A medieval wooden buckler."
 	icon_state = "buckler"
 	item_state = "buckler"
-	//slowdown = 0			// [CELADON-REMOVE] - BALLISTIC_SHIELD - Rebalance
-	//drag_slowdown = 0		// [CELADON-REMOVE]
+	slowdown = 0
+	//drag_slowdown = 0		// [CELADON-REMOVE] - BALLISTIC_SHIELD - Rebalance
 	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
 	custom_materials = list(/datum/material/wood = MINERAL_MATERIAL_AMOUNT * 10)
@@ -394,5 +429,6 @@
 	block_chance = 25
 	max_integrity = 70
 	w_class = WEIGHT_CLASS_BULKY
+	slowdown = 0		// [CELADON-REMOVE] - BALLISTIC_SHIELD - Rebalance
 
 #undef BATON_BASH_COOLDOWN

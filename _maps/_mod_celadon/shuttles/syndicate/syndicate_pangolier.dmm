@@ -9,50 +9,24 @@
 	name = "weapon locker";
 	dir = 2;
 	pixel_x = 0;
-	pixel_y = -28
+	pixel_y = -28;
+	req_access = list(1);
+	req_ship_access = 1
 	},
-/obj/item/melee/classic_baton/telescopic{
-	pixel_y = -1;
-	pixel_x = -5
-	},
-/obj/item/melee/classic_baton/telescopic{
-	pixel_y = -5;
-	pixel_x = -5
-	},
-/obj/item/melee/knife/combat{
-	pixel_y = -2;
-	pixel_x = 10
-	},
-/obj/item/melee/knife/combat{
-	pixel_y = -8;
-	pixel_x = 10
-	},
-/obj/item/storage/box/teargas{
-	pixel_y = 10;
-	pixel_x = -8
-	},
-/obj/item/storage/box/flashbangs{
-	pixel_y = 10;
-	pixel_x = 7
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /obj/item/storage/box/syndie_kit/throwing_weapons{
-	pixel_x = -8;
-	pixel_y = 1
+	pixel_x = -1;
+	pixel_y = 10
 	},
 /obj/item/storage/box/handcuffs{
 	pixel_x = 7;
 	pixel_y = 2
 	},
-/obj/item/restraints/legcuffs/bola/energy,
-/obj/item/restraints/legcuffs/bola/energy,
-/obj/item/restraints/legcuffs/bola/energy,
-/obj/item/restraints/legcuffs/bola/energy,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/item/gun_maint_kit/small{
-	pixel_x = 11;
-	pixel_y = -8
+/obj/item/storage/box/teargas{
+	pixel_y = 2;
+	pixel_x = -8
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
@@ -62,7 +36,6 @@
 	},
 /obj/structure/closet/secure_closet/wall/directional/south{
 	icon_state = "cargo_wall";
-	req_access_txt = list(1);
 	name = "tool's locker";
 	dir = 1;
 	pixel_y = 28
@@ -167,51 +140,44 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/crate_shelf,
+/obj/structure/closet/crate{
+	icon_state = "scicrate";
+	name = "AI Assembly crate"
+	},
 /obj/item/stack/sheet/plasteel/five{
-	pixel_y = -2;
+	pixel_y = -1;
 	pixel_x = -5;
 	amount = 4
 	},
 /obj/item/stack/sheet/rglass{
-	pixel_y = 2;
-	pixel_x = -2
-	},
-/obj/item/stack/cable_coil/red{
-	pixel_x = 9;
-	pixel_y = -5
-	},
-/obj/item/circuitboard/computer/aifixer{
-	pixel_y = -8;
-	pixel_x = -2
-	},
-/obj/item/circuitboard/aicore{
+	pixel_y = 3;
 	pixel_x = -2;
-	pixel_y = -3
+	amount = 2
 	},
-/obj/item/aiModule/core/full/syndicate{
-	pixel_y = 4;
-	pixel_x = -3
-	},
-/obj/item/aiModule/reset/purge{
-	pixel_y = 10;
-	pixel_x = -3
+/obj/item/borg/upgrade/ai{
+	pixel_x = -6;
+	pixel_y = 8
 	},
 /obj/item/aicard{
 	pixel_y = -5;
 	pixel_x = 9
 	},
-/obj/item/mmi/posibrain{
-	pixel_x = 7;
-	pixel_y = 7
+/obj/item/circuitboard/computer/aifixer{
+	pixel_y = -4;
+	pixel_x = 6
 	},
-/obj/item/borg/upgrade/ai{
-	pixel_x = 9;
-	pixel_y = -7
+/obj/item/aiModule/reset/purge{
+	pixel_x = 5
 	},
-/obj/structure/closet/crate/science{
-	name = "AI assembly crate"
+/obj/item/circuitboard/aicore{
+	pixel_x = 6;
+	pixel_y = 4
 	},
-/obj/structure/crate_shelf,
+/obj/item/aiModule/core/full/syndicate{
+	pixel_x = 5;
+	pixel_y = 8
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "aV" = (
@@ -248,9 +214,6 @@
 	name = "locker"
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/syndiered,
-/obj/item/clothing/glasses/meson{
-	pixel_y = 6
-	},
 /obj/item/clothing/gloves/explorer{
 	pixel_y = -8
 	},
@@ -284,6 +247,10 @@
 /obj/item/clothing/head/hardhat/ngr{
 	pixel_y = 5;
 	pixel_x = 11
+	},
+/obj/item/clothing/glasses/sunglasses{
+	pixel_y = 8;
+	pixel_x = -6
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
@@ -351,13 +318,6 @@
 /obj/machinery/computer/rdconsole/core,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/science)
-"cu" = (
-/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
-	dir = 5;
-	id = "Pango_turret"
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/bridge)
 "cw" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 9
@@ -484,13 +444,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
-"dK" = (
-/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
-	dir = 9;
-	id = "Pango_turret"
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/bridge)
 "dN" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Dormitories"
@@ -520,7 +473,7 @@
 /obj/machinery/light_switch{
 	dir = 4;
 	pixel_y = 13;
-	pixel_x = -20
+	pixel_x = -19
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm)
@@ -737,7 +690,8 @@
 	dir = 4;
 	pixel_x = -27;
 	id = "Pango_cargo";
-	name = "Cargo button"
+	name = "Cargo button";
+	req_ship_access = 1
 	},
 /obj/machinery/button/shieldwallgen{
 	dir = 4;
@@ -840,7 +794,7 @@
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = 12;
-	pixel_y = -17
+	pixel_y = -15
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
@@ -871,7 +825,7 @@
 /obj/item/clothing/suit/space/syndicate/white_red,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/item/clothing/head/helmet/space/syndicate/white_red,
-/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
 "iO" = (
@@ -915,34 +869,26 @@
 	},
 /obj/structure/closet/secure_closet/wall/directional/west{
 	icon_state = "sec_wall";
-	name = "Weapon locker";
+	name = "locker";
 	dir = 1;
 	pixel_x = 0;
 	pixel_y = 28
 	},
 /obj/item/gps{
 	pixel_y = -5;
-	pixel_x = -9
+	pixel_x = -7
 	},
 /obj/item/gps{
 	pixel_y = -5;
-	pixel_x = -1
-	},
-/obj/item/gps{
-	pixel_y = -5;
-	pixel_x = 7
+	pixel_x = 3
 	},
 /obj/item/gps{
 	pixel_y = 8;
-	pixel_x = -9
+	pixel_x = -7
 	},
 /obj/item/gps{
 	pixel_y = 8;
-	pixel_x = -1
-	},
-/obj/item/gps{
-	pixel_y = 8;
-	pixel_x = 7
+	pixel_x = 3
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1014,7 +960,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/light_switch{
-	pixel_y = 23;
+	pixel_y = 21;
 	pixel_x = 12
 	},
 /turf/open/floor/plasteel/tech,
@@ -1027,7 +973,8 @@
 	anchored = 1;
 	icon_state = "syndicate";
 	name = "Commado's locker";
-	req_one_access_txt = list(1)
+	req_access = list(1);
+	req_ship_access = 1
 	},
 /obj/item/clothing/shoes/combat{
 	pixel_x = 9;
@@ -1150,13 +1097,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
-"lF" = (
-/obj/machinery/power/shuttle/engine/electric/premium,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/plating,
-/area/ship/engineering)
 "lG" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 5
@@ -1164,13 +1104,13 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
 	},
 /obj/machinery/light/directional/east,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "lL" = (
@@ -1296,7 +1236,7 @@
 /obj/item/clothing/suit/space/syndicate/white_red,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/item/clothing/head/helmet/space/syndicate/white_red,
-/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/internals/oxygen/yellow,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "oC" = (
@@ -1337,9 +1277,6 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 1
 	},
-/obj/item/clothing/glasses/meson{
-	pixel_y = 6
-	},
 /obj/item/clothing/gloves/explorer{
 	pixel_y = -8
 	},
@@ -1372,6 +1309,13 @@
 /obj/item/clothing/head/hardhat/ngr{
 	pixel_y = 5;
 	pixel_x = 11
+	},
+/obj/item/clothing/glasses/sunglasses{
+	pixel_y = 8;
+	pixel_x = -6
+	},
+/obj/machinery/camera/autoname{
+	dir = 9
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
@@ -1416,9 +1360,6 @@
 /obj/effect/turf_decal/spline/fancy/opaque/syndiered{
 	dir = 6
 	},
-/obj/item/clothing/glasses/meson{
-	pixel_y = 6
-	},
 /obj/item/clothing/gloves/explorer{
 	pixel_y = -8
 	},
@@ -1453,6 +1394,10 @@
 /obj/item/clothing/head/hardhat/ngr{
 	pixel_y = 5;
 	pixel_x = 11
+	},
+/obj/item/clothing/glasses/sunglasses{
+	pixel_y = 8;
+	pixel_x = -6
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
@@ -1561,15 +1506,15 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
 /obj/effect/turf_decal/siding/thinplating/dark/corner{
 	dir = 1;
 	layer = 2.04
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
@@ -1600,35 +1545,34 @@
 	req_one_access_txt = "1";
 	pixel_x = -13
 	},
-/obj/item/ammo_box/magazine/m12g_bulldog/drum/slug{
-	pixel_x = -7
-	},
-/obj/item/ammo_box/magazine/m12g_bulldog/slug{
-	pixel_y = -3;
-	pixel_x = -4
-	},
 /obj/item/ammo_box/magazine/m12g_bulldog{
 	pixel_y = -3;
-	pixel_x = 2
-	},
-/obj/item/storage/box/ammo/a12g_slug{
-	pixel_y = 10;
-	pixel_x = -11
-	},
-/obj/item/storage/box/ammo/a12g_buckshot{
-	pixel_y = 10;
-	pixel_x = 6
-	},
-/obj/item/attachment/rail_light{
-	pixel_x = 10;
-	pixel_y = -6
+	pixel_x = -3
 	},
 /obj/structure/sign/poster/contraband/bulldog{
 	pixel_x = -32
 	},
 /obj/structure/closet/secure_closet/wall/directional/south{
 	icon_state = "sec_wall";
-	name = "locker"
+	name = "locker";
+	req_access = list(19);
+	req_ship_access = 1
+	},
+/obj/item/ammo_box/magazine/m12g_bulldog{
+	pixel_y = -3;
+	pixel_x = 2
+	},
+/obj/item/storage/box/ammo/a12g_buckshot{
+	pixel_y = 10;
+	pixel_x = 6
+	},
+/obj/item/storage/box/ammo/a12g_slug{
+	pixel_y = 10;
+	pixel_x = -11
+	},
+/obj/item/attachment/rail_light{
+	pixel_x = 10;
+	pixel_y = -6
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
@@ -1636,9 +1580,9 @@
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
 	dir = 4
 	},
-/obj/machinery/atmospherics/components/binary/pump/on/layer2,
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/effect/turf_decal/spline/fancy/opaque/black,
+/obj/machinery/atmospherics/components/binary/pump/on/layer2,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/engineering)
 "qm" = (
@@ -1748,13 +1692,14 @@
 /area/ship/science)
 "qZ" = (
 /obj/structure/safe{
-	tumblers = list(24, 19)
+	tumblers = list(24, 16)
 	},
 /obj/item/clothing/accessory/holster,
 /obj/item/codespeak_manual/unlimited,
 /obj/item/coin/antagtoken,
 /obj/machinery/door/window/brigdoor/westleft{
-	req_access_txt = list(20)
+	req_access = list(19);
+	req_ship_access = 1
 	},
 /obj/item/storage/box/ammo/a357,
 /obj/item/storage/box/ammo/a357,
@@ -1845,7 +1790,7 @@
 /obj/item/clothing/suit/space/syndicate/white_red,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/item/clothing/head/helmet/space/syndicate/white_red,
-/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/internals/oxygen/yellow,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "sc" = (
@@ -2021,7 +1966,6 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/components/unary/tank/air{
-	dir = 8;
 	piping_layer = 2
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -2068,7 +2012,6 @@
 "uo" = (
 /obj/structure/closet/secure_closet/wall/directional/south{
 	icon_state = "cargo_wall";
-	req_access_txt = list(1);
 	name = "tool's locker"
 	},
 /obj/item/clothing/mask/gas/syndicate{
@@ -2116,33 +2059,9 @@
 "uC" = (
 /obj/structure/closet/secure_closet/wall/directional/south{
 	icon_state = "sec_wall";
-	name = "locker"
-	},
-/obj/item/gun/ballistic/automatic/smg/vector{
-	name = "Special Operations Vector";
-	projectile_damage_multiplier = 1.2;
-	allowed_ammo_types = list(/obj/item/ammo_box/magazine/m45_cobra);
-	default_ammo_type = 0;
-	desc = "A police carbine based on an old design originating from earth, Solar Federation. Modified by Gorlex and used as a common security SMG. Chambered in 45.";
-	pixel_y = -10
-	},
-/obj/item/ammo_box/magazine/m45_cobra{
-	pixel_x = -5
-	},
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra{
-	pixel_x = 5
-	},
-/obj/item/ammo_box/magazine/m45_cobra{
-	pixel_x = 10
-	},
-/obj/item/storage/box/ammo/c45{
-	pixel_y = 11;
-	pixel_x = 11
-	},
-/obj/item/storage/box/ammo/c45{
-	pixel_y = 11;
-	pixel_x = -6
+	name = "locker";
+	req_access = list(19);
+	req_ship_access = 1
 	},
 /obj/effect/turf_decal/trimline/opaque/bar/corner{
 	dir = 1
@@ -2154,13 +2073,32 @@
 /obj/effect/turf_decal/trimline/opaque/bar/corner{
 	dir = 4
 	},
-/obj/item/attachment/silencer{
-	pixel_x = 6;
-	pixel_y = -9
+/obj/item/gun/ballistic/shotgun/automatic/bulldog/no_mag{
+	pixel_y = -10
+	},
+/obj/item/ammo_box/magazine/m12g_bulldog/drum{
+	req_one_access_txt = "1";
+	pixel_x = -13
+	},
+/obj/item/ammo_box/magazine/m12g_bulldog{
+	pixel_y = -3;
+	pixel_x = -3
+	},
+/obj/item/ammo_box/magazine/m12g_bulldog{
+	pixel_y = -3;
+	pixel_x = 2
 	},
 /obj/item/attachment/rail_light{
 	pixel_x = 10;
-	pixel_y = -5
+	pixel_y = -6
+	},
+/obj/item/storage/box/ammo/a12g_buckshot{
+	pixel_y = 10;
+	pixel_x = 6
+	},
+/obj/item/storage/box/ammo/a12g_slug{
+	pixel_y = 10;
+	pixel_x = -11
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
@@ -2217,7 +2155,7 @@
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = 12;
-	pixel_y = -17
+	pixel_y = -14
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/science)
@@ -2721,8 +2659,8 @@
 	icon_state = "sec_wall";
 	name = "Captain's locker";
 	pixel_y = 31;
-	req_access_txt = list(20);
-	dir = 1
+	dir = 1;
+	req_access = list(20)
 	},
 /obj/item/clothing/gloves/combat{
 	pixel_y = -8;
@@ -2795,7 +2733,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/light_switch{
-	pixel_y = 22;
+	pixel_y = 21;
 	pixel_x = 12
 	},
 /turf/open/floor/plasteel/tech,
@@ -2839,7 +2777,7 @@
 "CW" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Captain Quarters";
-	req_access = list(20);
+	req_access = list(19);
 	dir = 4
 	},
 /obj/machinery/door/firedoor/border_only{
@@ -2993,8 +2931,8 @@
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/suit/space/hardsuit/syndi/cybersun/paramed,
 /obj/item/clothing/mask/gas/syndicate,
-/obj/item/tank/internals/emergency_oxygen/double,
 /obj/machinery/firealarm/directional/east,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/science)
 "FN" = (
@@ -3019,7 +2957,7 @@
 /obj/item/clothing/suit/space/syndicate/white_red,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/item/clothing/head/helmet/space/syndicate/white_red,
-/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
 "Gi" = (
@@ -3061,13 +2999,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/general/command_crew)
-"Gw" = (
-/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
-	dir = 6;
-	id = "Pango_turret"
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/cargo)
 "GE" = (
 /obj/effect/turf_decal/spline/fancy/opaque/syndiered{
 	dir = 6
@@ -3082,14 +3013,6 @@
 /obj/structure/chair/handrail{
 	dir = 8
 	},
-/obj/item/tank/internals/oxygen/empty{
-	pixel_x = 8;
-	pixel_y = -9
-	},
-/obj/item/tank/internals/oxygen/empty{
-	pixel_x = 8;
-	pixel_y = -1
-	},
 /obj/item/pickaxe/mini{
 	pixel_y = -4
 	},
@@ -3101,16 +3024,6 @@
 /obj/item/storage/bag/ore{
 	pixel_y = 8;
 	pixel_x = -4
-	},
-/obj/item/mining_scanner{
-	pixel_x = 10
-	},
-/obj/item/mining_scanner{
-	pixel_x = 10;
-	pixel_y = 7
-	},
-/obj/machinery/camera/autoname{
-	dir = 9
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
@@ -3182,7 +3095,7 @@
 	pixel_x = -3
 	},
 /obj/item/paper{
-	default_raw_text = "Guys. We couldn't find a place to put your piece of crap, and we're behind schedule... but that's not what I'm talking about, anyway, as compensation we suggest having a good evening or two.<br> P.S. DB Engineer";
+	default_raw_text = "Guys. We couldn't find a place to put your piece of crap (AI), and we're behind schedule... but that's not what I'm talking about, anyway, as compensation we suggest having a good evening or two.<br> P.S. DB Engineer";
 	pixel_y = -4;
 	pixel_x = 8
 	},
@@ -3344,7 +3257,7 @@
 /obj/item/clothing/suit/space/syndicate/white_red,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/item/clothing/head/helmet/space/syndicate/white_red,
-/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
 "IL" = (
@@ -3395,7 +3308,8 @@
 "IS" = (
 /obj/machinery/blackbox_recorder,
 /obj/machinery/door/window/brigdoor/westleft{
-	req_access_txt = list(20)
+	req_access = list(19);
+	req_ship_access = 1
 	},
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/circuit/red,
@@ -3410,8 +3324,7 @@
 /obj/structure/closet/secure_closet{
 	anchored = 1;
 	icon_state = "syndicate";
-	name = "locker";
-	req_one_access_txt = "1"
+	name = "locker"
 	},
 /obj/item/storage/toolbox/electrical,
 /obj/item/flashlight{
@@ -3421,7 +3334,8 @@
 	pixel_y = 24;
 	pixel_x = -5;
 	name = "Emergency exit button";
-	id = "Pango_exit"
+	id = "Pango_exit";
+	req_ship_access = 1
 	},
 /obj/machinery/light/small/directional/east,
 /obj/item/toy/talking/neznakomka{
@@ -3430,9 +3344,6 @@
 	},
 /obj/item/storage/toolbox/mechanical{
 	pixel_y = -8
-	},
-/obj/item/tank/internals/emergency_oxygen/engi{
-	pixel_x = -2
 	},
 /obj/item/tank/internals/emergency_oxygen/engi{
 	pixel_y = -5;
@@ -3598,7 +3509,7 @@
 /area/ship/bridge)
 "Jx" = (
 /obj/machinery/door/airlock/vault{
-	req_access_txt = list(20)
+	req_access = list(19)
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/general/command_crew)
@@ -3688,7 +3599,8 @@
 /obj/structure/closet/secure_closet{
 	anchored = 1;
 	icon_state = "syndicate";
-	name = "lieutenant's locker"
+	name = "lieutenant's locker";
+	req_access = list(19)
 	},
 /obj/item/clothing/shoes/combat{
 	pixel_x = 9;
@@ -3776,9 +3688,6 @@
 	icon_state = "syndicate";
 	name = "locker"
 	},
-/obj/item/clothing/glasses/meson{
-	pixel_y = 6
-	},
 /obj/item/clothing/gloves/explorer{
 	pixel_y = -8
 	},
@@ -3812,6 +3721,10 @@
 	pixel_y = 5;
 	pixel_x = 11
 	},
+/obj/item/clothing/glasses/sunglasses{
+	pixel_y = 8;
+	pixel_x = -6
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
 "Lj" = (
@@ -3839,20 +3752,8 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black,
 /obj/structure/closet/crate/large,
 /obj/machinery/iv_drip,
-/obj/item/reagent_containers/blood/universal{
-	pixel_y = 8;
-	pixel_x = 7
-	},
-/obj/item/reagent_containers/blood/universal{
-	pixel_y = 1;
-	pixel_x = 7
-	},
-/obj/item/reagent_containers/blood/universal{
-	pixel_y = -6;
-	pixel_x = 7
-	},
 /obj/item/reagent_containers/blood/random{
-	pixel_y = 8;
+	pixel_y = -6;
 	pixel_x = -7
 	},
 /obj/item/reagent_containers/blood/random{
@@ -3860,11 +3761,23 @@
 	pixel_x = -7
 	},
 /obj/item/reagent_containers/blood/random{
-	pixel_y = -6;
+	pixel_y = 8;
 	pixel_x = -7
 	},
 /obj/item/blood_filter{
 	pixel_y = -8
+	},
+/obj/item/reagent_containers/blood/OMinus{
+	pixel_y = -6;
+	pixel_x = 7
+	},
+/obj/item/reagent_containers/blood/OMinus{
+	pixel_x = 7;
+	pixel_y = 2
+	},
+/obj/item/reagent_containers/blood/OMinus{
+	pixel_x = 7;
+	pixel_y = 8
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/engineering)
@@ -3905,7 +3818,7 @@
 /obj/item/clothing/suit/space/syndicate/white_red,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/item/clothing/head/helmet/space/syndicate/white_red,
-/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
 "LT" = (
@@ -4166,7 +4079,8 @@
 	dir = 8
 	},
 /obj/machinery/vending/tool{
-	all_items_free = 1
+	all_items_free = 1;
+	premium = list(/obj/item/storage/belt/utility = 2, /obj/item/clothing/head/welding = 1, /obj/item/clothing/gloves/color/yellow = 1)
 	},
 /obj/machinery/firealarm/directional/east,
 /obj/machinery/light/directional/south,
@@ -4198,9 +4112,7 @@
 	dir = 5
 	},
 /obj/structure/chair/stool/bar{
-	dir = 8;
-	pixel_y = 5;
-	pixel_x = -10
+	dir = 8
 	},
 /obj/structure/sign/poster/contraband/syndicate_recruitment{
 	pixel_y = -31
@@ -4229,20 +4141,9 @@
 /area/ship/science)
 "OM" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/storage/firstaid{
-	pixel_x = -7;
-	pixel_y = 7
-	},
-/obj/item/storage/firstaid{
-	pixel_x = -7
-	},
 /obj/item/storage/pill_bottle/charcoal{
 	pixel_x = 7;
 	pixel_y = 8
-	},
-/obj/item/healthanalyzer{
-	pixel_y = -1;
-	pixel_x = 6
 	},
 /obj/effect/turf_decal/corner/opaque/syndiered/three_quarters{
 	dir = 1
@@ -4256,6 +4157,13 @@
 	pixel_x = 0;
 	dir = 2;
 	pixel_y = -32
+	},
+/obj/item/storage/firstaid/regular{
+	pixel_x = -7
+	},
+/obj/item/healthanalyzer{
+	pixel_y = -1;
+	pixel_x = 6
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/science)
@@ -4386,10 +4294,12 @@
 "PQ" = (
 /obj/machinery/button/door{
 	dir = 1;
-	pixel_x = 6;
+	pixel_x = 4;
 	pixel_y = -26;
 	name = "Vault button";
-	id = "Pango_vault"
+	id = "Pango_vault";
+	req_access = list(19);
+	req_ship_access = 1
 	},
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
 /obj/effect/turf_decal/spline/fancy/opaque/syndiered{
@@ -4403,7 +4313,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /obj/machinery/light_switch{
 	dir = 1;
-	pixel_x = -7;
+	pixel_x = -6;
 	pixel_y = -25
 	},
 /turf/open/floor/plasteel/tech,
@@ -4610,47 +4520,11 @@
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 8
 	},
-/obj/structure/closet/secure_closet/wall/directional/west{
-	icon_state = "sec_wall";
-	name = "EVA Locker"
-	},
 /obj/effect/turf_decal/spline/fancy/opaque/syndiered/corner{
 	dir = 4
 	},
 /obj/structure/cable{
 	icon_state = "1-4"
-	},
-/obj/item/tank/jetpack/oxygen/harness{
-	pixel_y = -1;
-	pixel_x = -6
-	},
-/obj/item/tank/jetpack/oxygen/harness{
-	pixel_y = -6;
-	pixel_x = -6
-	},
-/obj/item/clothing/shoes/magboots/syndie{
-	pixel_y = -3;
-	pixel_x = 8
-	},
-/obj/item/clothing/shoes/magboots/syndie{
-	pixel_y = -10;
-	pixel_x = 8
-	},
-/obj/item/clothing/suit/space/syndicate/white_red{
-	pixel_y = 6;
-	pixel_x = 9
-	},
-/obj/item/clothing/suit/space/syndicate/white_red{
-	pixel_y = 6;
-	pixel_x = -7
-	},
-/obj/item/clothing/head/helmet/space/syndicate/white_red{
-	pixel_y = 12;
-	pixel_x = 8
-	},
-/obj/item/clothing/head/helmet/space/syndicate/white_red{
-	pixel_y = 12;
-	pixel_x = -8
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
@@ -4775,15 +4649,13 @@
 	},
 /obj/machinery/computer/helm/viewscreen/directional/south,
 /obj/effect/turf_decal/corner/opaque/syndiered/half,
-/obj/item/pen/sleepy{
-	pixel_x = -2;
-	pixel_y = 4;
-	icon_state = "pen-fountain-o";
-	desc = "It's an expensive Oak fountain pen. The nib is quite sharp."
-	},
 /obj/item/pen/edagger{
 	pixel_x = -8;
 	pixel_y = 1
+	},
+/obj/item/pen/fountain/captain{
+	pixel_y = 3;
+	pixel_x = -1
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/general/command_crew)
@@ -4845,7 +4717,7 @@
 /area/ship/crew)
 "US" = (
 /obj/machinery/door/airlock/vault{
-	req_access_txt = list(20)
+	req_access = list(19)
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security)
@@ -5158,8 +5030,8 @@
 	icon_state = "sec_wall";
 	name = "Emergency locker";
 	pixel_y = 31;
-	req_access_txt = list(20);
-	dir = 1
+	dir = 1;
+	req_access = list(20)
 	},
 /obj/item/reagent_containers/food/drinks/bottle/whiskey{
 	pixel_x = -9;
@@ -5333,13 +5205,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/science)
-"Yq" = (
-/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
-	dir = 10;
-	id = "Pango_turret"
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/bridge)
 "Yr" = (
 /obj/machinery/camera/autoname{
 	network = list("GEC")
@@ -5405,7 +5270,8 @@
 	anchored = 1;
 	icon_state = "syndicate";
 	name = "Commado's locker";
-	req_one_access_txt = list(1)
+	req_access = list(1);
+	req_ship_access = 1
 	},
 /obj/item/clothing/shoes/combat{
 	pixel_x = 9;
@@ -5478,14 +5344,6 @@
 /obj/structure/chair/handrail{
 	dir = 4
 	},
-/obj/item/tank/internals/oxygen/empty{
-	pixel_x = 8;
-	pixel_y = -9
-	},
-/obj/item/tank/internals/oxygen/empty{
-	pixel_x = 8;
-	pixel_y = -1
-	},
 /obj/item/pickaxe/mini,
 /obj/item/pickaxe/mini{
 	pixel_y = -4
@@ -5497,13 +5355,6 @@
 /obj/item/storage/bag/ore{
 	pixel_y = 8;
 	pixel_x = -4
-	},
-/obj/item/mining_scanner{
-	pixel_x = 10
-	},
-/obj/item/mining_scanner{
-	pixel_x = 10;
-	pixel_y = 7
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
@@ -5527,7 +5378,8 @@
 "YM" = (
 /obj/machinery/door/airlock/hatch{
 	dir = 8;
-	name = "Security"
+	name = "Security";
+	req_access = list(1)
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
@@ -5611,7 +5463,9 @@
 	name = "armor locker";
 	dir = 2;
 	pixel_x = 0;
-	pixel_y = -28
+	pixel_y = -28;
+	req_access = list(1);
+	req_ship_access = 1
 	},
 /obj/item/clothing/head/helmet/ngr{
 	pixel_x = -8;
@@ -5855,11 +5709,11 @@ ni
 eH
 sL
 ni
-lF
+wU
 VY
 An
 VY
-lF
+wU
 ni
 yN
 sX
@@ -5884,9 +5738,9 @@ aQ
 fe
 oy
 lL
-lF
+wU
 An
-lF
+wU
 xO
 sa
 YB
@@ -5913,7 +5767,7 @@ qb
 Mk
 qf
 wE
-lF
+wU
 xO
 qf
 Mk
@@ -6072,7 +5926,7 @@ An
 An
 An
 An
-dK
+NF
 dq
 pR
 xU
@@ -6090,7 +5944,7 @@ Kn
 gb
 gb
 gb
-Yq
+ln
 An
 An
 An
@@ -6408,7 +6262,7 @@ An
 An
 An
 An
-cu
+Zq
 sc
 NK
 XR
@@ -6426,7 +6280,7 @@ qu
 oV
 oY
 Ro
-Gw
+mF
 An
 An
 An

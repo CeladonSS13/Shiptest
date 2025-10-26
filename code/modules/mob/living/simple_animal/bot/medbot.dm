@@ -403,7 +403,7 @@
 		return
 
 	//Patient has moved away from us!
-	else if(patient && path.len && (get_dist(patient,path[path.len]) > 2))
+	else if(patient && path && path.len && (get_dist(patient,path[path.len]) > 2))	// [CELADON-EDIT] - FIXES_MEDBOT_RUNTIME_PATH_NULL \\ else if(patient && path.len && (get_dist(patient,path[path.len]) > 2))
 		path = list()
 		mode = BOT_IDLE
 		last_found = world.time
@@ -412,7 +412,7 @@
 		soft_reset()
 		return
 
-	if(patient && path.len == 0 && (get_dist(src,patient) > 1))
+	if(patient && (!path || path.len == 0) && (get_dist(src,patient) > 1))	// [CELADON-EDIT] - FIXES_MEDBOT_RUNTIME_PATH_NULL \\ if(patient && path.len == 0 && (get_dist(src,patient) > 1))
 		path = get_path_to(src, patient, 30,id=access_card)
 		mode = BOT_MOVING
 		if(!path.len) //try to get closer if you can't reach the patient directly
@@ -420,13 +420,12 @@
 			if(!path.len) //Do not chase a patient we cannot reach.
 				soft_reset()
 
-	if(path.len > 0 && patient)
+	if(path && path.len > 0 && patient)	// [CELADON-EDIT] - FIXES_MEDBOT_RUNTIME_PATH_NULL \\ if(path.len > 0 && patient)
 		if(!bot_move(path[path.len]))
 			oldpatient = patient
 			soft_reset()
 		return
-
-	if(path.len > 8 && patient)
+	if(path && path.len > 8 && patient)	// [CELADON-EDIT] - FIXES_MEDBOT_RUNTIME_PATH_NULL \\ if(path.len > 8 && patient)
 		frustration++
 
 	if(auto_patrol && !stationary_mode && !patient)

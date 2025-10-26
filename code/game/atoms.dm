@@ -1460,6 +1460,21 @@
  * * addition - is any additional text, which will be appended to the rest of the log line
  */
 /proc/log_combat(atom/user, atom/target, what_done, atom/object=null, addition=null)
+	// [CELADON-ADD] - FIXES_RUNTIMES - Исправляет рантайм с нуль логами атак
+	if(!user || !target)
+		return
+	// Resolve weakrefs to actual atoms
+	if(istype(user, /datum/weakref))
+		var/datum/weakref/user_ref = user
+		user = user_ref.resolve()
+		if(!user)
+			return
+	if(istype(target, /datum/weakref))
+		var/datum/weakref/target_ref = target
+		target = target_ref.resolve()
+		if(!target)
+			return
+	// [/CELADON-ADD]
 	var/ssource = key_name(user)
 	var/starget = key_name(target)
 

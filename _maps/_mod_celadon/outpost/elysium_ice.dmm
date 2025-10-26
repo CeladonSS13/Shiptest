@@ -18423,8 +18423,8 @@
 	density = 0;
 	dir = 4
 	},
-/obj/structure/transit_tube/station/dispenser/reverse{
-	dir = 4;
+/obj/structure/transit_tube/station/dispenser/flipped{
+	dir = 8;
 	layer = 4
 	},
 /turf/open/floor/plasteel/elevatorshaft,
@@ -24112,7 +24112,7 @@
 /obj/structure/platform/industrial{
 	dir = 8
 	},
-/obj/structure/transit_tube/junction/flipped{
+/obj/structure/transit_tube/junction{
 	layer = 5
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre/snow{
@@ -31173,7 +31173,7 @@
 	pixel_y = 9;
 	layer = 5.2
 	},
-/obj/structure/transit_tube/junction/flipped{
+/obj/structure/transit_tube/junction{
 	layer = 5;
 	dir = 1
 	},
@@ -36951,9 +36951,9 @@
 /obj/structure/sign/poster/bay/random{
 	pixel_x = 32
 	},
-/obj/structure/transit_tube/station/dispenser/reverse{
-	dir = 8;
-	layer = 4
+/obj/structure/transit_tube/station/dispenser{
+	layer = 4;
+	dir = 4
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/outpost/exterior)
