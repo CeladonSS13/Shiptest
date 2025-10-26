@@ -12,7 +12,7 @@
 /obj/item/clothing/suit/magusred
 	name = "magus robes"
 	desc = "A set of armored robes worn by the followers of Nar'Sie."
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suits.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
 	icon_state = "magusred"
 	item_state = "magusred"

@@ -8,3 +8,10 @@
 	cost = 1500
 	contains = list(/obj/item/melee/sledgehammer/gorlex)
 	crate_name = "sledgehammer crate"
+
+/datum/supply_pack/faction/syndicate/tools/borg_module_syndicate_random
+	name = "Syndicate unknown borg module Crate"
+	desc = "Contains a unknown upgrade borg module of Syndicate."
+	cost = 10000
+	contains = list(/obj/item/borg/upgrade/transform/syndicate_random)
+	crate_name = "syndicate borg module crate"

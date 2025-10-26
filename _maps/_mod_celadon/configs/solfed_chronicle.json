@@ -1,10 +1,10 @@
 {
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
-	"map_name": "Chronicle-class Sensor Frigate",
+	"map_name": "Chronicle-class Research and Development Frigate",
 	"map_short_name": "Chronicle",
-	"description": "Оснащенный сложным набором сенсоров и мощными утилитами для работы с данными, 'Chronicle' - это канцелярская рабочая лошадка, способная собирать и обрабатывать огромные объемы информации. Часто используемый для переписи населения и межзвездных исследований, 'Chronicle' также является фаворитом Evidenzkompanien, часто используемым для разведывательных операций. Учитывая этот факт, судна класса 'Chronicle' часто подвергаются повышенному контролю со стороны патрулей, что несколько снижает их эффективность как инструмента шпионажа. В ЩИТСПАВНЕ ПО ПРИЧИНЕ: Заменен на другой шип Firetale!",
+	"description": "Научно-исследовательское судно класса 'Chronicle' — высокотехнологичный фрегат Солнечной Федерации, оснащённый всем необходимым для эффективных исследований в различных областях науки. Судно оборудовано дорогостоящим ядром ИИ и хранилищем для него, рассчитано на длительные экспедиции в удалённые сектора космоса, укомплектовано исследовательской группой из высококвалифицированных сотрудников под руководством научного руководителя и коменданта, а также всем, что необходимо для продуктивного старта экспедиций. Эти качества делают 'Chronicle' одним из лучших научных судов, когда‑либо разработанных Солнечной Федерацией.",
 	"map_path": "_maps/_mod_celadon/shuttles/solfed/solfed_chronicle.dmm",
-	"enabled": false,
+	"enabled": true,
 	"limit": 1,
 	"sensor_range": 4,
 	"prefix": "SFSV",
@@ -17,13 +17,13 @@
 		"NATURAL"
 	],
 	"job_slots": {
-		"Captain": {
+		"Kommandant": {
 			"outfit": "/datum/outfit/job/solfed/captain",
 			"officer": true,
 			"slots": 1
 		},
-		"Aufseher": {
-			"outfit": "/datum/outfit/job/solfed/hop",
+		"Scientific Overseer": {
+			"outfit": "/datum/outfit/job/solfed/sergeant",
 			"officer": true,
 			"slots": 1
 		},
@@ -33,14 +33,14 @@
 		},
 		"Ship Engineer": {
 			"outfit": "/datum/outfit/job/solfed/engineer",
-			"slots": 2
+			"slots": 1
 		},
-		"Field Engineer": {
+		"Contracted Miner": {
 			"outfit": "/datum/outfit/job/solfed/miner",
 			"slots": 2
 		},
-		"Scribe": {
-			"outfit": "/datum/outfit/job/solfed/assistant",
+		"Academician": {
+			"outfit": "/datum/outfit/job/solfed/scientist",
 			"slots" : 2
 		}
 	}

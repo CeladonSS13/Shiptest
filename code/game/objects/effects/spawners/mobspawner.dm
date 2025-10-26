@@ -2,6 +2,10 @@
 	var/static/mob_category = rand(1, 3)
 
 /obj/effect/spawner/random/randomthreat/Initialize(mapload)
+	// [CELADON-ADD] - FIXES_SPAWNERS_ON_SPACE - Проверка на космотурф
+	if(isspaceturf(get_turf(src)))
+		return INITIALIZE_HINT_QDEL
+	// [/CELADON-ADD]
 	switch(mob_category)
 		if(1)
 			loot = list(

@@ -597,7 +597,7 @@
 				new /obj/item/stack/circuit_stack(loc)
 				new /mob/living/basic/hivebot/mechanic(loc)
 			if(prob(35))
-				new /mob/living/basic/hivebot/range(loc)
+				new /mob/living/basic/hivebot/ranged(loc)
 			if(prob(45))
 				new /obj/item/circuitboard/machine/dna_vault(loc)
 				new /mob/living/basic/hivebot/mechanic(loc)
@@ -751,7 +751,7 @@
 			new /obj/item/cultivator/rake(loc)
 			new /obj/structure/spacevine(loc)
 			new /mob/living/simple_animal/hostile/venus_human_trap(loc)
-			new /turf/open/floor/plating/grass(loc)
+			new /turf/open/floor/plating/asteroid/dirt/grass(loc)
 		if(14)//fallout ss13
 			visible_message(span_userdanger("You hear a geiger counter click and smell ash."))
 			playsound(loc,'sound/items/radiostatic.ogg', 100, FALSE, 50, TRUE, TRUE)
@@ -974,4 +974,4 @@
 				new /mob/living/simple_animal/hostile/gorilla(loc)
 			new /obj/item/sequence_scanner(loc)
 			new /obj/structure/flora/grass/jungle(loc)
-			new /turf/open/floor/plating/grass/jungle(loc)
+			new /turf/open/floor/plating/asteroid/dirt/grass/jungle(loc)

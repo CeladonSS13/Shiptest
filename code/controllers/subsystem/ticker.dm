@@ -145,16 +145,24 @@ SUBSYSTEM_DEF(ticker)
 
 	return ..()
 
-/* /datum/controller/subsystem/ticker/fire()		Transfer => mod_celadon/_components/_components.dm
+/datum/controller/subsystem/ticker/fire()
 	switch(current_state)
 		if(GAME_STATE_STARTUP)
 			/*if(Master.initializations_finished_with_no_players_logged_in)		WS Edit - Countdown after init
 				timeLeft = (CONFIG_GET(number/lobby_countdown) * 10)		WS Edit - Countdown after init */
 			for(var/client/C in GLOB.clients)
 				window_flash(C, ignorepref = TRUE) //let them know lobby has opened up.
-			to_chat(world, span_boldnotice("Welcome to [station_name()]!"))
-			send2chat("New round starting!", CONFIG_GET(string/chat_announce_new_game))
-			SSredbot.send_discord_message("ooc", "**A new round is beginning.**")
+			// [CELADON-EDIT] - CELADON_COMPONENTS
+			// to_chat(world, span_boldnotice("Welcome to [station_name()]!"))
+			// send2chat("New round starting!", CONFIG_GET(string/chat_announce_new_game))
+			// SSredbot.send_discord_message("ooc", "**A new round is beginning.**")	// ORIGINAL
+			to_chat(world, span_boldnotice("Добро пожаловать на [station_name()]!"))
+			if(CONFIG_GET(string/servername) == "\[RU] Celadon Shiptest: Alpha")
+				send2chat("<@&1100202952943218738>, запущен новый раунд на сервере: **" + CONFIG_GET(string/servername) + "**!", CONFIG_GET(string/chat_announce_new_game))
+			if(CONFIG_GET(string/servername) == "\[RU] Celadon Shiptest: Beta")
+				send2chat("<@&1226515994332102687>, запущен новый раунд на сервере: **" + CONFIG_GET(string/servername) + "**!", CONFIG_GET(string/chat_announce_new_game))
+			SSredbot.send_discord_message("ooc", "**Новый раунд скоро начнётся.**")
+			// [/CELADON-EDIT]
 			current_state = GAME_STATE_PREGAME
 			//Everyone who wants to be an observer is now spawned
 			create_observers()
@@ -205,7 +213,7 @@ SUBSYSTEM_DEF(ticker)
 				toggle_ooc(TRUE) // Turn it on
 				toggle_dooc(TRUE)
 				declare_completion(force_ending)
-				Master.SetRunLevel(RUNLEVEL_POSTGAME) */
+				Master.SetRunLevel(RUNLEVEL_POSTGAME)
 
 
 /datum/controller/subsystem/ticker/proc/setup()
@@ -287,9 +295,6 @@ SUBSYSTEM_DEF(ticker)
 	SSredbot.send_discord_message("ooc", "**A new round has begun.**")
 //[CELADON-EDIT]- MUSIC_CELADON
 //	SEND_SOUND(world, sound('sound/roundstart/addiguana.ogg'))//CELADON-EDIT-ORIGINAL
-	if(login_music_name)
-		var/count_name = length(SSticker.login_music_name)
-		to_chat(world, span_redteamradio("<B>Playing lobby music: [copytext(SSticker.login_music_name, 1, count_name-3)].</B>"))
 	SEND_SOUND(world, sound('mod_celadon/_storage_sounds/sound/lobby/sztart.ogg'))
 //[/CELADON-EDIT]
 

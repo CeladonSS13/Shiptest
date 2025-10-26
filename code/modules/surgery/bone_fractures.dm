@@ -23,7 +23,10 @@
 	requires_real_bodypart = TRUE
 	targetable_wound = /datum/wound/blunt/critical
 
-/datum/surgery/reset_compound_fracture/can_start(mob/living/user, mob/living/carbon/target)
+// [CELADON-EDIT] - FIXES_REPAIR_BONE_COMPOUND - исправляем неверное имя прока
+// /datum/surgery/reset_compound_fracture/can_start(mob/living/user, mob/living/carbon/target)	// ORIGINAL
+/datum/surgery/repair_bone_compound/can_start(mob/living/user, mob/living/carbon/target)
+// [/CELADON-EDIT]
 	if(..())
 		var/obj/item/bodypart/targeted_bodypart = target.get_bodypart(user.zone_selected)
 		return(targeted_bodypart.get_wound_type(targetable_wound))

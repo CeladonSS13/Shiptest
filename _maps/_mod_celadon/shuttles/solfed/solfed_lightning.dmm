@@ -378,6 +378,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo/cargo_bay)
 "eu" = (
@@ -766,6 +767,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/airalarm/directional/east,
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
 "ja" = (
@@ -855,6 +857,7 @@
 /obj/effect/turf_decal/trimline/opaque/orange/line{
 	dir = 1
 	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "jZ" = (
@@ -944,6 +947,16 @@
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel/heavymetal/var1,
 /area/ship/crew/canteen)
+"kx" = (
+/obj/machinery/light/floor{
+	light_color = "#6496FA"
+	},
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 4;
+	piping_layer = 2
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external)
 "kI" = (
 /obj/effect/turf_decal/trimline/opaque/solgovgold/end{
 	dir = 4;
@@ -1612,9 +1625,7 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "rF" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
@@ -1886,7 +1897,6 @@
 /obj/item/clothing/suit/armor/vest/solgov/captain,
 /obj/item/clothing/under/solgov/formal/captain,
 /obj/item/clothing/gloves/combat,
-/obj/item/door_remote/captain,
 /obj/item/storage/belt/sabre/solgov,
 /obj/item/clothing/under/solgov,
 /obj/item/clothing/under/solgov/dress,
@@ -2638,7 +2648,8 @@
 /turf/open/floor/wood/walnut,
 /area/ship/crew/cryo)
 "Bb" = (
-/obj/machinery/portable_atmospherics/canister/oxygen,
+/obj/machinery/atmospherics/components/binary/pump/on/layer2,
+/obj/structure/closet/firecloset/wall/directional/east,
 /turf/open/floor/plasteel/heavymetal/var1,
 /area/ship/engineering)
 "Be" = (
@@ -3842,6 +3853,7 @@
 	pixel_x = -20;
 	pixel_y = 10
 	},
+/obj/machinery/holopad,
 /turf/open/floor/plasteel/strongdark,
 /area/ship/bridge)
 "Pb" = (
@@ -4026,7 +4038,10 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "QH" = (
-/obj/structure/punching_bag,
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 4;
+	piping_layer = 2
+	},
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering)
 "Rk" = (
@@ -5371,7 +5386,7 @@ Ww
 oj
 ri
 eB
-RM
+kx
 dK
 CF
 EK

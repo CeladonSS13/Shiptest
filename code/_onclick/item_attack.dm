@@ -113,7 +113,10 @@
 	if(!force)
 		playsound(loc, 'sound/weapons/tap.ogg', get_clamped_volume(), TRUE, -1)
 	else if(hitsound)
-		playsound(loc, hitsound, get_clamped_volume(), TRUE, extrarange = stealthy_audio ? SILENCED_SOUND_EXTRARANGE : -1, falloff_distance = 0)
+		// [CELADON-ADD] - FIXES_SOUND_LIST_CRASH - Обрабатываем списки звуков (pick из списка) для топоров/следхаммеров
+		var/sound_to_play = islist(hitsound) ? pick(hitsound) : hitsound
+		// [/CELADON-ADD]
+		playsound(loc, sound_to_play, get_clamped_volume(), TRUE, extrarange = stealthy_audio ? SILENCED_SOUND_EXTRARANGE : -1, falloff_distance = 0)
 
 	target_mob.lastattacker = user.real_name
 	target_mob.lastattackerckey = user.ckey

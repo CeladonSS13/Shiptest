@@ -22,6 +22,7 @@ ID мода:
 	CELADON_BALANCE_VENDING
 	BALLISTIC_SHIELD
 	YOU_NOT_SEPARATIST
+	SLOW_SPEED_CRAWLING
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов. Добавлены
@@ -135,6 +136,8 @@ ADD: `code/modules/mob/dead/new_player/ship_select.dm` : Добавляем со
 CELADON_BALANCE_VENDING
 EDIT: `code/modules/vending/_vending.dm` : Убираем автоматическое сбрасывание к платным покупкам у всех торрговых автоматах что НЕ относятся к руинкам
 
+SLOW_SPEED_CRAWLING
+- EDIT: `code/__DEFINES/combat.dm`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

@@ -61,6 +61,15 @@
 	crate_name = "armor crate"
 	crate_type = /obj/structure/closet/crate/secure/plasma
 
+/datum/supply_pack/faction/independent/armor/heavy_marine_armor
+	name = "Heavy Tactical Armor Crate"
+	desc = "One set of well-rounded heavy tactical body armor. Plates are attached to the vest and cover the limbs. The set includes a helmet and chestpiece."
+	cost = 7000
+	contains = list(/obj/item/clothing/suit/armor/vest/marine/heavy,
+					/obj/item/clothing/head/helmet/bulletproof/x11)
+	crate_name = "armor crate"
+	crate_type = /obj/structure/closet/crate/secure/plasma
+
 /datum/supply_pack/faction/independent/armor/ablative
 	name = "Ablative Trenchcoat Crate"
 	desc = "Experimental trenchcoat specially crafted to reflect and absorb laser and disabler shots. Don't expect it to do all that much against an axe or a shotgun, however."

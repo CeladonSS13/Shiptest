@@ -15,6 +15,7 @@
 ID мода: 
 CELADON_FIXES
 CELADON_FIXES_BLOOD
+CELADON_FIXES_DEBUG_ROOM
 FIX_DISPLAY_TRUSTER
 FIXES_ICON_IN_HAND_MOB
 FIXES_ICON
@@ -26,6 +27,12 @@ FIXES_SHIP_LOGIN_DOUBLE_NAME
 FIXES_WETHIDE
 FIXES_DRILLCLASS
 FIXES_MOTH_EATING_CLOTHING
+FIXES_RUNTIMES
+FIXES_MONKEY_STOPPED_SPEEDUP
+FIXES_MONKEY_STOPPED_DEAD
+FIXES_MONKEY_STOPPED_PICKPOCKET
+FIXES_ANTAG_NINJA
+FIXES_MEDBOT_RUNTIME_PATH_NULL
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -141,9 +148,22 @@ MECH_WEAPON
 
 - EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Делаем так чтобы кепори могли брать мелкие предметы в клюв
 
-- EDIT, ADD: `code/modules/mob/living/blood.dm` : Вводим нормальный уровень для крови
-- EDIT, ADD: `code/game/machinery/iv_drip.dm` : Проверка крови у пациента
-- ADD: `code/modules/reagents/chemistry/holder.dm` : Вводим ограничения на шприцы, бикеры, капельницы
+- EDIT, ADD: `code/modules/mob/living/blood.dm` : Вводим нормальный уровень для крови [CELADON-FIXES][CELADON_FIXES_BLOOD]
+- EDIT, ADD: `code/game/machinery/iv_drip.dm` : Проверка крови у пациента (ограничение через IV) [CELADON-EDIT][CELADON-FIXES][CELADON_FIXES_BLOOD]
+- ADD: `code/modules/reagents/chemistry/holder.dm` : Ограничения на INJECT (шприцы/бикеры/капельницы) [CELADON-ADD][CELADON-FIXES][CELADON_FIXES_BLOOD]
+
+#### Кровь: корректное отображение типа
+- ADD: `code/modules/mob/living/carbon/human/human_helpers.dm` : добавлен `proc/get_blood_type_display()` [CELADON-ADD]
+- EDIT: `code/game/machinery/computer/Operating.dm` : выводит тип крови через `get_blood_type_display()` [CELADON-EDIT]
+- EDIT: `code/game/machinery/medical_kiosk.dm` : выводит тип крови через `get_blood_type_display()` [CELADON-EDIT]
+- EDIT: `code/game/objects/items/devices/scanners.dm` : анализатор здоровья использует `get_blood_type_display()` [CELADON-EDIT]
+- EDIT: `code/game/machinery/computer/dna_console.dm` : буфер ДНК сохраняет человекочитаемый тип крови [CELADON-EDIT]
+- EDIT: `code/datums/datacore.dm` : записи медкарт используют безопасное имя крови [CELADON-EDIT]
+- EDIT: `code/modules/admin/verbs/secrets.dm` : список ДНК показывает корректный тип крови [CELADON-EDIT]
+
+#### Вид: Elzuose
+- EDIT: `mod_celadon/ethereal_fix/code/ethereal.dm` : `exotic_blood = /datum/reagent/consumable/liquidelectricity`, `exotic_bloodtype = "E"` [CELADON-EDIT]
+
 
 - ADD: `code/game/objects/items/food/donut.dm` : Прописано название стандартной иконки, вместо надписи ERROR
 
@@ -206,7 +226,86 @@ FIXES_VORACIOUS
 FIXES_JUKEBOX
 - EDIT: `code/controllers/subsystem/jukeboxes.dm` - правим нахождение звука и типа, для работы muz-tv. Попытка исправить просачивание музыки сквозь EDGE
 
+CELADON_FIXES_DEBUG_ROOM
+- EDIT: `code/modules/awaymissions/super_secret_room.dm` - фиксит сообщения для чата
+- ADD: `code/modules/awaymissions/signpost.dm` - фиксит лестницу, тепешает на координаты 139, 31, 3
 
+FIXES_AMBIENT_NO_EARS
+- ADD: `code/controllers/subsystem/ambience.dm` - Проверка на уши для эмбиента
+
+FIXES_REPAIR_BONE_COMPOUND
+- EDIT: `code/modules/surgery/bone_fractures.dm` - Исправил неверное название прока
+
+FIXES_SPAWN_SHIP
+- EDIT: `code/controllers/subsystem/overmap.dm` - Изменен порядок приоритетов, теперь space_spawn имеет выше приоритет над позицией
+
+CRUSHER_MARK_ON_MOBS
+- EDIT: `code/datums/status_effects/debuffs.dm` - изменения от Ганзы
+- ADD: `code/datums/status_effects/debuffs.dm` - добавляем проверку на труп для метки крашера
+- REMOVE: `code/modules/mining/equipment/kinetic_crusher.dm` - изменения от Ганзы
+- ADD: `code/modules/mining/equipment/kinetic_crusher.dm` - добавляем проверку на труп для метки крашера
+
+FIXES_JELLY_BLOOD
+- EDIT, ADD: `code/modules/mob/living/carbon/human/species_types/jellypeople.dm` - Фиксим уровень крови здоровья
+
+FIXES_MOB_SPAWNER
+- REMOVE: `code/modules/mining/ore_veins.dm` - убраны селинги из спавнера Т3 бура в джунглях
+
+FIXES_CALL_TO_SHIP
+- ADD: `code/game/machinery/hologram.dm` - добавлено возвращение TRUE, чтобы интерфейс обновлялся
+
+FIXES_ICON_OUT_OF_BORDER
+- ADD, EDIT: `code/datums/components/storage/ui.dm` - чиним позиционирование иснтрументов в контейнерах
+- ADD: `code/datums/components/storage/concrete/_concrete.dm`
+
+FIXES_MODSUITS
+- ADD, REMOVE, EDIT: `code/modules/mod/modules/modules_antag.dm` - Выпиливаем неиспользуемые и сломанные опции модов
+
+FIXES_DYNAMIC_MISSION
+- EDIT: `code/modules/overmap/objects/dynamic_datum.dm` - Изменена логика в функции can_reset_dynamic(). Теперь объект не будет диспавниться если миссия все еще может быть завершена
+
+FIXES_OFFERING_EFFECTS
+- ADD: `code/datums/status_effects/neutral.dm`
+- EDIT: `code/modules/mob/living/carbon/inventory.dm`
+
+FIXES_SPAWNERS_ON_SPACE - Проверка на космотурф
+- ADD: `code/game/objects/effects/spawners/mobspawner.dm`
+- ADD: `code/modules/events/spacevine.dm`
+
+
+FIXES_RUNTIMES
+- ADD: `code/datums/ai/_ai_controller.dm` - Игра могла думать что моб все еще живой, ползанье будучи мертвым было возможно. Теперь нет
+- REMOVE: `code/datums/ai/_ai_controller.dm`
+- EDIT: `code/datums/ai/_ai_controller.dm`
+- ADD: `code/datums/ai/generic_actions.dm` - Проверка на жизнь моба pawn
+- EDIT: `code/datums/ai/generic_actions.dm`
+- ADD: `code/game/atoms.dm` - Когда нету чего то для того чтобы логировать в атаках, выставляется значение Null и вызывало рантайм. Теперь нет
+- EDIT: `code/modules/mob/living/carbon/carbon_defense.dm` - При проверках куда был нанесен удар предметом или пулями, игра могла не видеть или плохо понимать строки вида "chest" ожидая увидеть тип а не строку и вызывала ошибку состояния тела. Теперь нормально обрабатывается
+
+FIXES_MONKEY_STOPPED_SPEEDUP
+- ADD: `code/__DEFINES/ai/monkey.dm`
+- EDIT: `code/datums/ai/idle_behaviors/idle_monkey.dm`
+- ADD: `code/datums/ai/monkey/monkey_behaviors.dm`
+- EDIT: `code/datums/ai/monkey/monkey_behaviors.dm`
+- ADD: `code/datums/ai/monkey/monkey_controller.dm`
+- ADD: `code/datums/ai/monkey/monkey_subtrees.dm` - шансы подбора предмета
+
+FIXES_MONKEY_STOPPED_DEAD
+- EDIT: `code/datums/ai/monkey/monkey_controller.dm`
+
+FIXES_MONKEY_STOPPED_PICKPOCKET
+- ADD: `code/datums/ai/monkey/monkey_behaviors.dm`
+
+FIXES_ANTAG_NINJA
+- EDIT, ADD, REMOVE: `code/modules/ninja/suit/suit.dm`
+- EDIT, ADD: `code/modules/ninja/energy_katana.dm`
+- EDIT: `code/modules/ninja/suit/suit_attackby.dm`
+
+FIXES_MEDBOT_RUNTIME_PATH_NULL - Добавляем проверки на null путь
+- EDIT: `code/modules/mob/living/simple_animal/bot/medbot.dm`
+
+FIXES_HOODED_ICONS
+- 'code/modules/clothing/suits/toggles.dm'
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -218,6 +317,11 @@ FIXES_JUKEBOX
 ### Оверрайды
 
 - `mod_celadon/fixes/code/research_mission.dm` - вроде перезаписывает
+
+dock_empty_space_fix.dm:
+- `Dock(datum/overmap/to_dock, datum/docking_ticket/ticket, force = FALSE)`
+- `dock_in_empty_space()`
+- `post_undocked(datum/overmap/dock_requester)`
 
 <!-- fax_name -->
 <!-- 
@@ -262,6 +366,32 @@ RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFa
 
 - Автор фикса дисков дизайнов: Турон/Mirag1993
 - Автор фикса бесконечного спавна мобов: Турон/Mirag1993
+- Автор фиксов производительности консолей: AI Assistant
+
+### Исправления производительности консолей
+
+**Проблема**: При открытии консоли карго или консоли заданий аванпоста FPS падал до 2 битов/сек, что делало игру практически неиграбельной.
+
+**Причина**: 
+- Консоль заданий аванпоста сканировала все предметы на площадке **каждый тик** (10 раз в секунду)
+- Консоль карго генерировала данные поставок **каждый тик** в `ui_static_data()`
+
+**Решение**:
+- ADD: `code/modules/cargo/outpost_bounty_console.dm` - Добавлен кулдаун в 1 секунду для кэширования экспортов
+- ADD: `code/modules/cargo/console.dm` - Добавлен кулдаун в 5 секунд для генерации данных поставок
+- EDIT: `code/modules/cargo/outpost_bounty_console.dm` - Кнопка "Refresh" принудительно обновляет кэш
+
+**Результат**: Значительное улучшение производительности при работе с консолями.
+
+**Теги изменений**:
+- `[CELADON-ADD]` - новые функции
+- `[CELADON-EDIT]` - изменения существующего кода  
+- `[CELADON-FIXES]` - исправления багов
+
+---
+
+FIXES_TWO_HANDED_CRASH
+- ADD: `code/_onclick/item_attack.dm` - добавлена обработка звуков если приходи не один файл, а лист ( обычно )
 
 <!--
   Здесь находится твой никнейм
