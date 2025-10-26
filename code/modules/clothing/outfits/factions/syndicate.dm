@@ -51,9 +51,9 @@
 	alt_uniform = /obj/item/clothing/under/syndicate/hardliners/jumpsuit
 
 /datum/outfit/job/syndicate/assistant/ngr
-	name = "Syndicate - Initiate (New Gorlex Republic)"
+	name = "Syndicate - Crewman (New Gorlex Republic)"
 	faction = FACTION_NGR
-	id_assignment = "Initiate"
+	id_assignment = "Crewman"
 
 	head = /obj/item/clothing/head/ngr
 	uniform = /obj/item/clothing/under/syndicate/ngr
@@ -510,8 +510,8 @@
 	id = /obj/item/card/id/syndicate_command/crew_id
 	r_pocket = /obj/item/melee/knife/survival
 	glasses = /obj/item/clothing/glasses/hud/health
-	backpack_contents = list(/obj/item/storage/box/ids=1,
-	/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
+	backpack_contents = list(/obj/item/storage/box/ids=1,\
+		/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
 
 /datum/outfit/job/syndicate/head_of_personnel/ngr
 	name = "Syndicate - Ensign (NGR)"
@@ -946,6 +946,12 @@
 
 	uniform = /obj/item/clothing/under/syndicate/ngr/fatigues
 	head = /obj/item/clothing/head/helmet/ngr/swat
+
+/datum/outfit/job/syndicate/security/ngr/pilot/skivvies
+	name = "Syndicate - Pilot Jumpsuit (New Gorlex Republic)"
+	head = null
+	l_pocket = null
+	r_pocket = null
 
 /datum/outfit/job/syndicate/security/twink
 	name = "Syndicate - Operative (Twinkleshine)"
