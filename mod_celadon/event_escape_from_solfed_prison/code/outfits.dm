@@ -23,7 +23,7 @@
 	uniform = /obj/item/clothing/under/solgov/formal
 	shoes = /obj/item/clothing/shoes/jackboots/knife
 	suit =  /obj/item/clothing/suit/armor/solfed/formal
-	id = /obj/item/card/id/solfed
+	id = /obj/item/card/id/cel/solfed
 	back = /obj/item/storage/backpack/satchel/solfed
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic = 1)
 	box = /obj/item/storage/box/survival/security
@@ -52,7 +52,7 @@
 	uniform = /obj/item/clothing/under/solfed/medical
 	shoes = /obj/item/clothing/shoes/jackboots/knife
 	suit =  /obj/item/clothing/suit/armor/vest/marine
-	id = /obj/item/card/id/solfed
+	id = /obj/item/card/id/cel/solfed
 	back = /obj/item/storage/backpack/solfed
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic = 1)
 	box = /obj/item/storage/box/survival/medical
@@ -88,7 +88,7 @@
 	uniform = /obj/item/clothing/under/solfed/camo
 	shoes = /obj/item/clothing/shoes/jackboots/knife
 	suit =  /obj/item/clothing/suit/armor/vest/marine/medium
-	id = /obj/item/card/id/solfed
+	id = /obj/item/card/id/cel/solfed
 	back = /obj/item/storage/backpack/solfed
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic = 1)
 	box = /obj/item/storage/box/survival/security
