@@ -2,6 +2,7 @@
 #define MOB_LAYER_MULTIPLIER 100
 #define MOB_LAYER_SHIFT_MIN 3.95
 #define MOB_LAYER_SHIFT_MAX 4.05
+#define MOB_LAYER_BASE 4.0
 
 /**
  * Shift the visual layer of the mob upwards
@@ -16,7 +17,7 @@
 		return FALSE
 
 	layer = min(((layer * MOB_LAYER_MULTIPLIER) + MOB_LAYER_SHIFT_INCREMENT) / MOB_LAYER_MULTIPLIER, MOB_LAYER_SHIFT_MAX)
-	var/layer_priority = round(layer * MOB_LAYER_MULTIPLIER - MOB_LAYER * MOB_LAYER_MULTIPLIER, MOB_LAYER_SHIFT_INCREMENT)
+	var/layer_priority = round(layer * MOB_LAYER_MULTIPLIER - MOB_LAYER_BASE * MOB_LAYER_MULTIPLIER, MOB_LAYER_SHIFT_INCREMENT)
 	to_chat(src, span_notice("Your layer priority is now [layer_priority]."))
 	return TRUE
 
@@ -33,7 +34,7 @@
 		return FALSE
 
 	layer = max(((layer * MOB_LAYER_MULTIPLIER) - MOB_LAYER_SHIFT_INCREMENT) / MOB_LAYER_MULTIPLIER, MOB_LAYER_SHIFT_MIN)
-	var/layer_priority = round(layer * MOB_LAYER_MULTIPLIER - MOB_LAYER * MOB_LAYER_MULTIPLIER, MOB_LAYER_SHIFT_INCREMENT)
+	var/layer_priority = round(layer * MOB_LAYER_MULTIPLIER - MOB_LAYER_BASE * MOB_LAYER_MULTIPLIER, MOB_LAYER_SHIFT_INCREMENT)
 	to_chat(src, span_notice("Your layer priority is now [layer_priority]."))
 	return TRUE
 
@@ -120,3 +121,4 @@
 #undef MOB_LAYER_MULTIPLIER
 #undef MOB_LAYER_SHIFT_MIN
 #undef MOB_LAYER_SHIFT_MAX
+#undef MOB_LAYER_BASE
