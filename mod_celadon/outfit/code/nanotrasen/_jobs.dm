@@ -553,6 +553,53 @@
 	uniform = /obj/item/clothing/under/nanotrasen/janitor
 	head = /obj/item/clothing/head/nanotrasen/cap/janitor
 
+// Bartender
+/datum/outfit/job/cel/nanotrasen/bartender
+	job_icon = "bartender"
+	jobtype = /datum/job/bartender
+	name = "Nanotrasen - Bartender"
+
+	glasses = /obj/item/clothing/glasses/sunglasses/reagent
+	ears = /obj/item/radio/headset/headset_srv
+	uniform = /obj/item/clothing/under/rank/civilian/bartender
+	alt_uniform = /obj/item/clothing/under/rank/civilian/bartender/purple
+	alt_suit = /obj/item/clothing/suit/apron/purple_bartender
+	suit = /obj/item/clothing/suit/armor/vest
+	backpack_contents = list(/obj/item/storage/box/beanbag=1)
+	shoes = /obj/item/clothing/shoes/laceup
+	accessory = /obj/item/clothing/accessory/waistcoat
+
+// Cook
+/datum/outfit/job/cel/nanotrasen/cook
+	name = "Cook"
+	job_icon = "cook"
+	jobtype = /datum/job/cook
+
+	belt = /obj/item/pda/cook
+	ears = /obj/item/radio/headset/headset_srv
+	uniform = /obj/item/clothing/under/rank/civilian/chef
+	alt_uniform = /obj/item/clothing/under/shorts/cookjorts
+	suit = /obj/item/clothing/suit/toggle/chef
+	alt_suit = /obj/item/clothing/suit/apron/chef
+	head = /obj/item/clothing/head/chefhat
+	mask = /obj/item/clothing/mask/fakemoustache/italian
+	backpack_contents = list(/obj/item/sharpener = 1)
+
+// Prisoner
+
+/datum/outfit/job/cel/nanotrasen/prisoner
+	name = "Prisoner"
+	job_icon = "assistant"
+	jobtype = /datum/job/prisoner
+
+	uniform = /obj/item/clothing/under/rank/prisoner
+	alt_uniform = /obj/item/clothing/under/rank/prisoner
+	alt_suit = /obj/item/clothing/suit/jacket/leather
+	shoes = /obj/item/clothing/shoes/sneakers/orange
+	id = /obj/item/card/id/prisoner
+	ears = null
+	belt = null
+
 // Lawyer
 /datum/outfit/job/cel/nanotrasen/lawyer
 	name = "Nanotrasen - Lawyer"

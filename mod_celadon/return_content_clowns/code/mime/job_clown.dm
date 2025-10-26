@@ -2,7 +2,7 @@
 	name = "Clown"
 	wiki_page = "Clown" //WS Edit - Wikilinks/Warning
 
-	outfit = /datum/outfit/job/clown
+	outfit = /datum/outfit/job/cel/independent/clown
 
 	access = list(ACCESS_THEATRE)
 	minimal_access = list(ACCESS_THEATRE)
@@ -15,7 +15,7 @@
 	H.apply_pref_name("clown", M.client)
 
 
-/datum/outfit/job/clown/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/cel/independent/clown/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return

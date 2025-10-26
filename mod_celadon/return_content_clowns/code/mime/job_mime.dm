@@ -2,7 +2,7 @@
 	name = "Mime"
 	wiki_page = "Mime" //WS Edit - Wikilinks/Warning
 
-	outfit = /datum/outfit/job/mime
+	outfit = /datum/outfit/job/cel/independent/mime
 
 	access = list(ACCESS_THEATRE)
 	minimal_access = list(ACCESS_THEATRE)
@@ -13,7 +13,7 @@
 	. = ..()
 	H.apply_pref_name("mime", M.client)
 
-/datum/outfit/job/mime
+/datum/outfit/job/cel/independent/mime
 	name = "Mime"
 	job_icon = "mime"
 	jobtype = /datum/job/mime
@@ -33,7 +33,7 @@
 	backpack = /obj/item/storage/backpack/mime
 	satchel = /obj/item/storage/backpack/mime
 
-/datum/outfit/job/mime/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/cel/independent/mime/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 
 	if(visualsOnly)

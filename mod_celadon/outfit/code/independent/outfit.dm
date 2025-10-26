@@ -217,9 +217,18 @@
 
 // Janitor - У оффов не был прописан jobtype и это вызывало рантайм. Прописываем его здесь. Увы.
 
-/datum/outfit/job/prisoner
+/datum/outfit/job/cel/independent/prisoner
+	name = "Prisoner"
 	job_icon = "assistant"
 	jobtype = /datum/job/prisoner
+
+	uniform = /obj/item/clothing/under/rank/prisoner
+	alt_uniform = /obj/item/clothing/under/rank/prisoner //WS Edit - Alt Uniforms
+	alt_suit = /obj/item/clothing/suit/jacket/leather
+	shoes = /obj/item/clothing/shoes/sneakers/orange
+	id = /obj/item/card/id/prisoner
+	ears = null
+	belt = null
 
 /datum/outfit/job/assistant
 	r_pocket = null

@@ -6,13 +6,13 @@
 // /datum/outfit/job/assistant
 // 	job_icon = "assistant"
 
-// /datum/outfit/job/mime/captain
+// /datum/outfit/job/cel/independent/mime/captain
 // 	job_icon = "mime"
 
-// /datum/outfit/job/mime
+// /datum/outfit/job/cel/independent/mime
 // 	job_icon = "mime"
 
-// /datum/outfit/job/clown/maintenanceclown
+// /datum/outfit/job/cel/independent/clown/maintenanceclown
 // 	job_icon = "chiefengineer"
 
 // /datum/outfit/job/cmo
@@ -42,7 +42,7 @@
 // /datum/outfit/job/cook
 // 	job_icon = "cook"
 
-// /datum/outfit/job/prisoner
+// /datum/outfit/job/cel/independent/prisoner
 // 	job_icon = "assistant"
 
 // /datum/outfit/job/bartender
@@ -52,7 +52,7 @@
 // 	head = /obj/item/clothing/head/hopcap
 
 // MARK: MIME
-/datum/outfit/job/mime
+/datum/outfit/job/cel/independent/mime
 	name = "Mime"
 	job_icon = "mime"
 	jobtype = /datum/job/mime
@@ -77,7 +77,7 @@
 	chameleon_extras = /obj/item/stamp/mime
 
 //	Mime for Mimos
-/datum/outfit/job/mime/captain
+/datum/outfit/job/cel/independent/mime/captain
 	name = "Master Mime"
 	job_icon = "mime"
 	jobtype = /datum/job/mime
@@ -101,7 +101,7 @@
 	satchel = /obj/item/storage/backpack/mime
 
 // MARK: CLOWN
-/datum/outfit/job/clown
+/datum/outfit/job/cel/independent/clown
 	name = "Clown"
 	job_icon = "clown"
 	jobtype = /datum/job/clown
@@ -129,7 +129,7 @@
 	chameleon_extras = /obj/item/stamp/clown
 
 //	Clown for Mimos
-/datum/outfit/job/clown/maintenanceclown
+/datum/outfit/job/cel/independent/clown/maintenanceclown
 	name = "Maintenance Clown"
 	job_icon = "clown"
 	jobtype = /datum/job/clown
