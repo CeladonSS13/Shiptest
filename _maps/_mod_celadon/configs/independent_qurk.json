@@ -21,6 +21,7 @@
 	"job_slots": {
 		"Chief Medical Director": {
 			"outfit": "/datum/outfit/job/cel/independent/cmo",
+			"officer": true,
 			"slots": 1
 		},
 		"Research Director": {
@@ -48,13 +49,13 @@
 			"outfit": "/datum/outfit/job/cel/independent/chemist",
 			"slots": 2
 		},
-		"Intern": {
-			"outfit": "/datum/outfit/job/cel/independent/doctor",
-			"slots": 5
-		},
 		"Medical Doctor": {
 			"outfit": "/datum/outfit/job/cel/independent/doctor",
 			"slots": 3
+		},
+		"Intern": {
+			"outfit": "/datum/outfit/job/cel/independent/doctor",
+			"slots": 5
 		}
 	}
 }

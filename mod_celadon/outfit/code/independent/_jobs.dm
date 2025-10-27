@@ -520,7 +520,6 @@
 	job_icon = "virologist"
 	jobtype = /datum/job/virologist
 
-	belt = /obj/item/pda/viro
 	ears = /obj/item/radio/headset/headset_med
 	uniform = /obj/item/clothing/under/rank/medical/virologist
 	alt_uniform = /obj/item/clothing/under/rank/medical/doctor/green
