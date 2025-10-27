@@ -59,6 +59,7 @@
 	job_icon = "captain"
 	jobtype = /datum/job/captain
 
+	id = /obj/item/card/id/cel/pirate/captain
 	ears = /obj/item/radio/headset/pirate/alt/captain
 	uniform = /obj/item/clothing/under/frontiersmen/officer
 	head = /obj/item/clothing/head/frontier/peaked
@@ -100,6 +101,7 @@
 	job_icon = "stationengineer"
 	jobtype = /datum/job/engineer
 
+	id = /obj/item/card/id/cel/pirate/engineer
 	accessory = /obj/item/clothing/accessory/armband/engine
 	shoes = /obj/item/clothing/shoes/workboots
 	head = /obj/item/clothing/head/hardhat/frontier
@@ -126,6 +128,7 @@
 	job_icon = "headofpersonnel"
 	jobtype = /datum/job/head_of_personnel
 
+	id = /obj/item/card/id/cel/pirate/security
 	ears = /obj/item/radio/headset/pirate/alt
 	uniform = /obj/item/clothing/under/frontiersmen/officer
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -140,6 +143,7 @@
 	job_icon = "headofsecurity"
 	jobtype = /datum/job/hos
 
+	id = /obj/item/card/id/cel/pirate/security
 	accessory = /obj/item/clothing/accessory/armband
 	uniform = /obj/item/clothing/under/frontiersmen/officer
 	head = /obj/item/clothing/head/beret/sec/frontier/officer
@@ -157,6 +161,7 @@
 	job_icon = "securityofficer"
 	jobtype = /datum/job/officer
 
+	id = /obj/item/card/id/cel/pirate/security
 	accessory = /obj/item/clothing/accessory/armband
 	suit = null
 	uniform = /obj/item/clothing/under/frontiersmen
@@ -179,6 +184,7 @@
 	job_icon = "medicaldoctor"
 	jobtype = /datum/job/doctor
 
+	id = /obj/item/card/id/cel/pirate/medic
 	accessory = /obj/item/clothing/accessory/armband/med
 	uniform = /obj/item/clothing/under/frontiersmen
 	glasses = /obj/item/clothing/glasses/hud/health
