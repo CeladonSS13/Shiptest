@@ -559,6 +559,7 @@
 	jobtype = /datum/job/bartender
 	name = "Nanotrasen - Bartender"
 
+	belt = /obj/item/pda/bar
 	glasses = /obj/item/clothing/glasses/sunglasses/reagent
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/civilian/bartender
