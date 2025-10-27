@@ -229,24 +229,6 @@
 
 	chameleon_extras = list(/obj/item/gun/syringe, /obj/item/stamp/cmo)
 
-/datum/outfit/debug/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	H.faction |= list(FACTION_PLAYER_SYNDICATE,
-					FACTION_PLAYER_NANOTRASEN,
-					FACTION_PLAYER_SOLFED,
-					FACTION_PLAYER_NANOTRASEN,
-					FACTION_PLAYER_INTEQ,
-					FACTION_ELYSIUM,
-					FACTION_PIRATES,
-					FACTION_PLAYER_FRONTIERSMEN,
-					FACTION_PLAYER_MINUTEMAN,
-					FACTION_PLAYER_SOLCON,
-					FACTION_PLAYER_ROUMAIN,
-					FACTION_PLAYER_GEZENA,
-					FACTION_ANTAG_SYNDICATE,
-					FACTION_ANTAG_FRONTIERSMEN
-					)
-	ADD_TRAIT(H, TRAIT_MINDSHIELD, "status_effect")
-
 /datum/job/outpost/cmo
 	name = "Chief Medical Officer"
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
