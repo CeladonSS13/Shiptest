@@ -171,6 +171,12 @@
 	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
 	//The helmet is necessary because /obj/item/clothing/head/helmet/sec is overwritten in the chameleon list by the standard helmet, which has the same name and icon state
 
+/datum/outfit/job/cel/nanotrasen/security/mimir
+	id = /obj/item/card/id/cel/nanotrasen/vigilitas_security
+
+	implants = list(/obj/item/implant/mindshield)
+
+
 /datum/outfit/job/cel/nanotrasen/security/disarmed
 	name = "Nanotrasen - Security Officer (Disarmed)"
 	jobtype = /datum/job/officer
@@ -205,8 +211,10 @@
 
 	chameleon_extras = /obj/item/gun/ballistic/shotgun/automatic/m11
 
-/datum/outfit/job/cel/nanotrasen/warden/captain
+/datum/outfit/job/cel/nanotrasen/warden/mimir
 	job_icon = "wardencaptain"
+
+	id = /obj/item/card/id/cel/nanotrasen/vigilitas_leutenant
 
 	implants = list(/obj/item/implant/mindshield)
 
@@ -316,6 +324,9 @@
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
 	head = /obj/item/clothing/head/soft/sec/brig_phys
 	implants = list(/obj/item/implant/mindshield)
+
+/datum/outfit/job/cel/nanotrasen/brig_phys/mimir
+	id = /obj/item/card/id/cel/nanotrasen/vigilitas_medic
 
 // MARK: Supply
 
