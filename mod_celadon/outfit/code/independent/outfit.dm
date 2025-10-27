@@ -347,6 +347,7 @@
 	job_icon = "mime"
 	jobtype = /datum/job/mime
 
+	id = /obj/item/card/id/silver
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/civilian/mime
 	alt_uniform = /obj/item/clothing/under/rank/civilian/mime/sexy //WS Edit - Alt Uniforms
@@ -385,6 +386,7 @@
 	job_icon = "mime"
 	jobtype = /datum/job/mime
 
+	id = /obj/item/card/id/gold
 	ears = /obj/item/radio/headset/alt
 	uniform = /obj/item/clothing/under/rank/civilian/mime
 	alt_uniform = /obj/item/clothing/under/rank/civilian/mime/sexy //WS Edit - Alt Uniforms
