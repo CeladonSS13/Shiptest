@@ -12,7 +12,7 @@
 	box = /obj/item/storage/box/survival/nanotrasen
 	id = /obj/item/card/id
 
-// Command //
+// MARK: Command
 
 // Captain
 /datum/outfit/job/cel/nanotrasen/captain
@@ -205,7 +205,12 @@
 
 	chameleon_extras = /obj/item/gun/ballistic/shotgun/automatic/m11
 
-// Engineering //
+/datum/outfit/job/cel/nanotrasen/warden/captain
+	job_icon = "wardencaptain"
+
+	implants = list(/obj/item/implant/mindshield)
+
+// MARK: Engineering
 
 // Engineer
 /datum/outfit/job/cel/nanotrasen/engineer
@@ -312,7 +317,7 @@
 	head = /obj/item/clothing/head/soft/sec/brig_phys
 	implants = list(/obj/item/implant/mindshield)
 
-// Supply //
+// MARK: Supply
 
 // Quartermaster
 /datum/outfit/job/cel/nanotrasen/quartermaster
@@ -454,7 +459,7 @@
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/cargo
 	backpack_contents = null
 
-// Medical //
+// MARK: Medical
 
 // Medical Doctor
 /datum/outfit/job/cel/nanotrasen/doctor
@@ -523,7 +528,7 @@
 
 	chameleon_extras = /obj/item/gun/syringe
 
-// Civilian //
+// MARK: Civilian
 
 // Assistant
 /datum/outfit/job/cel/nanotrasen/assistant
@@ -593,11 +598,12 @@
 	job_icon = "assistant"
 	jobtype = /datum/job/prisoner
 
+	id = /obj/item/card/id/prisoner
 	uniform = /obj/item/clothing/under/rank/prisoner
 	alt_uniform = /obj/item/clothing/under/rank/prisoner
 	alt_suit = /obj/item/clothing/suit/jacket/leather
 	shoes = /obj/item/clothing/shoes/sneakers/orange
-	id = /obj/item/card/id/prisoner
+	box = null
 	ears = null
 	belt = null
 
@@ -625,7 +631,7 @@
 	l_hand = /obj/item/clipboard
 	r_pocket = /obj/item/pen/fountain
 
-// Science //
+// MARK: Science
 
 // Scientist
 /datum/outfit/job/cel/nanotrasen/scientist
@@ -680,7 +686,7 @@
 	suit = /obj/item/clothing/suit/armor/vest/bulletproof
 	backpack_contents = list(/obj/item/radio, /obj/item/flashlight/seclite)
 
-// LP - for Ranger ship //
+// MARK: LP - for Ranger ship
 
 /datum/outfit/job/cel/nanotrasen/captain/lp
 	name = "Nanotrasen - Loss Prevention Lieutenant"
@@ -756,7 +762,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	courierbag = /obj/item/storage/backpack/messenger/med
 
-// ERT //
+// MARK: ERT
 
 /datum/outfit/job/cel/nanotrasen/security/ert
 	name = "Nanotrasen - ERT Officer"
