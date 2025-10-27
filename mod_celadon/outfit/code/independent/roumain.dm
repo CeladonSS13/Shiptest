@@ -1,3 +1,11 @@
+// MARK: Saint-Roumain
+
+/datum/outfit/job/cel/independent/roumain
+	name = "Saint-Roumain Militia - Base Outfit"
+	faction = FACTION_PLAYER_ROUMAIN
+	uniform = /obj/item/clothing/under/suit/roumain
+	faction_icon = "bg_srm"
+
 // Используется офами
 /datum/outfit/job/cel/independent/roumain/captain
 	job_icon = "captain"

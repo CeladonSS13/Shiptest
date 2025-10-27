@@ -38,8 +38,8 @@ GLOBAL_LIST_INIT(faction_info_data, list(
 		"description" = "Разношёрстные экипажи, живущие налётами, выкупом и охотой на одиночные цели. Они полагаются на скорость, хитрость и знание маршрутов, но иногда готовы торговаться, если риск не оправдывает трофей.",
 		"wiki_url" = "https://wiki.celadon.pro/index.php/Pirates",
 		"outfits" = list(
-			/datum/outfit/job/cel/independent/captain/pirate,
-			/datum/outfit/job/cel/independent/security/pirate
+			/datum/outfit/job/cel/pirate/captain,
+			/datum/outfit/job/cel/pirate/security
 		)
 	),
 	"solfed" = list(
