@@ -7,13 +7,14 @@
 #include "code/card_id.dm"
 #include "code/event.dm"
 
-#include "code/nanotrasen/structure/decals.dm"
-#include "code/nanotrasen/structure/other_stuff.dm"
-
-#include "code/_outpost/outfits.dm"
+#include "code/_outpost/_outfit.dm"
 
 #include "code/elysium/_jobs.dm"
 #include "code/elysium/_card_id.dm"
+#include "code/elysium/_outfit.dm"
+#include "code/elysium/assets/merch.dm"
+#include "code/elysium/assets/items.dm"
+#include "code/elysium/assets/skimitar.dm"
 #include "code/elysium/clothing/armor.dm"
 #include "code/elysium/clothing/belt.dm"
 #include "code/elysium/clothing/clothing.dm"
@@ -21,26 +22,21 @@
 #include "code/elysium/clothing/shoes.dm"
 #include "code/elysium/clothing/suits.dm"
 #include "code/elysium/clothing/under.dm"
-#include "code/elysium/outfit.dm"
-#include "code/elysium/merch.dm"
-#include "code/elysium/items.dm"
-#include "code/elysium/skimitar.dm"
 
 #include "code/gamma/gamma.dm"
 
 #include "code/independent/_jobs.dm"
 #include "code/independent/_card_id.dm"
-#include "code/independent/outfit.dm"
+#include "code/independent/_outfit.dm"
 #include "code/independent/roumain.dm"
 
 #include "code/inteq/_jobs.dm"
 #include "code/inteq/_card_id.dm"
-#include "code/inteq/outfit.dm"
-#include "code/inteq/armor.dm"
+#include "code/inteq/_outfit.dm"
 
 #include "code/nanotrasen/_jobs.dm"
 #include "code/nanotrasen/_card_id.dm"
-#include "code/nanotrasen/_nanotrasen_outfit.dm"
+#include "code/nanotrasen/_outfit.dm"
 #include "code/nanotrasen/deforest_outfit.dm"
 #include "code/nanotrasen/intelligence_outfit.dm"
 #include "code/nanotrasen/lp_outfit.dm"
@@ -48,16 +44,18 @@
 #include "code/nanotrasen/nslogistic_outfit.dm"
 #include "code/nanotrasen/ntas_outfit.dm"
 #include "code/nanotrasen/vigilitas_outfit.dm"
+#include "code/nanotrasen/assets/decals.dm"
+#include "code/nanotrasen/assets/other_stuff.dm"
 
 #include "code/solfed/_jobs.dm"
 #include "code/solfed/_card_id.dm"
-#include "code/solfed/outfit.dm"
-#include "code/solfed/decal.dm"
-#include "code/solfed/other_stuff.dm"
+#include "code/solfed/_outfit.dm"
+#include "code/solfed/assets/decal.dm"
+#include "code/solfed/assets/other_stuff.dm"
 
 #include "code/syndicate/_jobs.dm"
 #include "code/syndicate/_card_id.dm"
-#include "code/syndicate/_syndicate_outfit.dm"
+#include "code/syndicate/_outfit.dm"
 #include "code/syndicate/cybersun_outfit.dm"
 #include "code/syndicate/donkco_outfit.dm"
 #include "code/syndicate/gec_outfit.dm"
@@ -72,9 +70,9 @@
 #include "code/pirate/ramzi.dm"
 
 #include "code/tmi/_card_id.dm"
-#include "code/tmi/outfit.dm"
+#include "code/tmi/_outfit.dm"
 
-#include "code/generic/outfit.dm"
+#include "code/generic/_outfit.dm"
 
 
 #endif
