@@ -162,11 +162,6 @@
 	l_pocket = /obj/item/lighter
 	r_pocket = /obj/item/reagent_containers/glass/rag
 
-/datum/outfit/job/cel/independent/assistant/cheap //for Miskilamo ships	// UNUSED
-	name = "IND - Assistant (Low Budget)"
-
-	uniform = /obj/item/clothing/under/utility
-
 /datum/outfit/job/cel/independent/assistant/waiter/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -233,51 +228,6 @@
 	accessory = /obj/item/clothing/accessory/medal/gold/captain
 
 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/captain)
-
-/datum/outfit/job/cel/independent/captain/empty	// UNUSED
-	name = "IND - Captain (Naked)"
-	job_icon = "captain"
-	jobtype = /datum/job/captain
-
-	id = /obj/item/card/id/gold
-	gloves = null
-	ears = /obj/item/radio/headset/headset_com
-	uniform = /obj/item/clothing/under/rank/command/captain
-	suit = null
-	dcoat = /obj/item/clothing/suit/hooded/wintercoat/captain //WS Edit - Alt Uniforms
-	shoes = /obj/item/clothing/shoes/laceup
-	head = null
-	backpack_contents = null
-
-	backpack = /obj/item/storage/backpack/captain
-	satchel = /obj/item/storage/backpack/satchel/cap
-	duffelbag = /obj/item/storage/backpack/duffelbag/captain
-	courierbag = /obj/item/storage/backpack/messenger/com
-
-	accessory = /obj/item/clothing/accessory/medal/gold/captain
-
-	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/captain)
-
-/datum/outfit/job/cel/independent/captain/cheap //for Miskilamo ships	// UNUSED
-	name = "IND - Captain (Low Budget)"
-	gloves = /obj/item/clothing/gloves/color/white //poverty gloves
-	shoes = /obj/item/clothing/shoes/sneakers/brown
-
-/datum/outfit/job/cel/independent/captain/merc	// UNUSED
-	name = "IND - Captain (Mercenary)"
-
-	uniform = /obj/item/clothing/under/syndicate
-	head = /obj/item/clothing/head/beret
-	gloves = /obj/item/clothing/gloves/combat
-	shoes = /obj/item/clothing/shoes/combat
-	suit = /obj/item/clothing/suit/armor/vest
-
-	accessory = null
-
-	backpack = /obj/item/storage/backpack/security
-	satchel = /obj/item/storage/backpack/satchel/sec
-	duffelbag = /obj/item/storage/backpack/duffelbag/sec
-	courierbag = /obj/item/storage/backpack/messenger/sec
 
 /datum/outfit/job/cel/independent/captain/western
 	name = "IND - Captain (Western)"
@@ -357,23 +307,6 @@
 
 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/officer)
 
-/datum/outfit/job/cel/independent/hop/hunter	// UNUSED
-	name = "IND - Head of Personnel (Hunter)"
-
-	uniform = /obj/item/clothing/under/syndicate/camo
-	shoes = /obj/item/clothing/shoes/workboots/mining
-	gloves = /obj/item/clothing/gloves/explorer
-	glasses = /obj/item/clothing/glasses/sunglasses
-	suit = /obj/item/clothing/suit/armor/vest/duster
-	alt_suit = /obj/item/clothing/suit/armor/vest/alt
-
-	backpack_contents = null
-
-	backpack = /obj/item/storage/backpack/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
-	duffelbag = /obj/item/storage/backpack/duffelbag
-	courierbag = /obj/item/storage/backpack/messenger
-
 /datum/outfit/job/cel/independent/hop/western
 	name = "IND - Head of Personnel (Western)"
 
@@ -421,49 +354,6 @@
 	courierbag = /obj/item/storage/backpack/messenger/com
 
 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/officer)
-
-// MARK:Head of Security
-
-/datum/outfit/job/cel/independent/hos	// UNUSED
-	name = "IND - Head of Security"
-	job_icon = "headofsecurity"
-	jobtype = /datum/job/hos
-
-	id = /obj/item/card/id/silver
-	ears = /obj/item/radio/headset/headset_com
-	uniform = /obj/item/clothing/under/rank/security/head_of_security
-	alt_uniform = null
-	shoes = /obj/item/clothing/shoes/jackboots
-	suit = /obj/item/clothing/suit/armor/hos/trenchcoat
-	alt_suit = /obj/item/clothing/suit/armor/vest/security/hos
-	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
-	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/beret/sec/hos
-	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
-	suit_store = null
-	l_pocket = /obj/item/restraints/handcuffs
-	backpack_contents = list(/obj/item/melee/classic_baton=1)
-
-	backpack = /obj/item/storage/backpack/security
-	satchel = /obj/item/storage/backpack/satchel/sec
-	duffelbag = /obj/item/storage/backpack/duffelbag/sec
-	courierbag = /obj/item/storage/backpack/messenger/sec
-
-	chameleon_extras = list(/obj/item/gun/energy/e_gun/hos, /obj/item/stamp/hos)
-
-/datum/outfit/job/cel/independent/hos/merc	// UNUSED
-	name = "IND - Mercenary XO"
-	id_assignment = "Lieutenant"
-
-	ears = /obj/item/radio/headset/headset_com
-	uniform = /obj/item/clothing/under/syndicate
-	shoes = /obj/item/clothing/shoes/combat
-	suit = /obj/item/clothing/suit/armor/vest
-	alt_suit = null
-	gloves = /obj/item/clothing/gloves/combat
-	head = /obj/item/clothing/head/beret
-	glasses = null
-	l_pocket = null
 
 // MARK:Roboticist
 
@@ -583,32 +473,6 @@
 
 	belt = null
 	l_pocket = null
-
-// MARK:Warden
-
-/datum/outfit/job/cel/independent/warden	// UNUSED
-	name = "IND - Warden"
-	job_icon = "warden"
-	jobtype = /datum/job/warden
-
-	ears = /obj/item/radio/headset/headset_sec/alt
-	uniform = /obj/item/clothing/under/rank/security/warden
-	shoes = /obj/item/clothing/shoes/jackboots
-	suit = /obj/item/clothing/suit/armor/vest/security/warden
-	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
-	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/warden
-	glasses = /obj/item/clothing/glasses/hud/security
-	l_pocket = /obj/item/restraints/handcuffs
-	suit_store = null
-	backpack_contents = list(/obj/item/melee/classic_baton)
-
-	backpack = /obj/item/storage/backpack/security
-	satchel = /obj/item/storage/backpack/satchel/sec
-	duffelbag = /obj/item/storage/backpack/duffelbag/sec
-	courierbag = /obj/item/storage/backpack/messenger/sec
-
-	chameleon_extras = /obj/item/gun/ballistic/shotgun/automatic/m11
 
 // MARK:Chief Engineer
 
@@ -761,21 +625,6 @@
 	satchel = /obj/item/storage/backpack/satchel/tox
 	courierbag = /obj/item/storage/backpack/messenger/tox
 
-// MARK:Brig Physician
-
-/datum/outfit/job/cel/independent/brig_phys	// UNUSED
-	name = "IND - Brig Physician"
-	jobtype = /datum/job/brig_phys
-	job_icon = "brigphysician"
-
-	ears = /obj/item/radio/headset/headset_medsec/alt
-	uniform = /obj/item/clothing/under/rank/security/brig_phys
-	shoes = /obj/item/clothing/shoes/sneakers/white
-	glasses = /obj/item/clothing/glasses/hud/health
-	suit = /obj/item/clothing/suit/toggle/labcoat/brig_phys
-	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
-	head = /obj/item/clothing/head/soft/sec/brig_phys
-
 // MARK:Paramedic
 
 /datum/outfit/job/cel/independent/paramedic
@@ -872,24 +721,6 @@
 	backpack = /obj/item/storage/backpack/science
 	satchel = /obj/item/storage/backpack/satchel/tox
 	courierbag = /obj/item/storage/backpack/messenger/tox
-
-// MARK:Hunter
-
-/datum/outfit/job/cel/independent/hunter	// UNUSED
-	name = "IND - Hunter"
-	jobtype = /datum/job/mining
-	job_icon = "securityofficer"
-
-	ears = /obj/item/radio/headset/headset_cargo/mining
-	shoes = /obj/item/clothing/shoes/workboots/mining
-	gloves = /obj/item/clothing/gloves/explorer
-	uniform = /obj/item/clothing/under/syndicate/camo
-	backpack_contents = list(
-		/obj/item/melee/knife/survival=1,\
-		/obj/item/radio/weather_monitor=1)
-
-	backpack = /obj/item/storage/backpack/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
 
 // MARK:Cook
 

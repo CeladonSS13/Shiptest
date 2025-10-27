@@ -16,8 +16,6 @@
 /datum/outfit/job/cel/independent/roumain/security
 	job_icon = "curator"
 
-// /datum/outfit/job/cel/independent/roumain/assistant
-
 /datum/outfit/job/cel/independent/roumain/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	if(visualsOnly)
