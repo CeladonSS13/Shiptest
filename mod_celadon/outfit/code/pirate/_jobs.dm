@@ -6,11 +6,11 @@
 	// faction_icon = "bg_frontiersmen"
 
 	uniform = /obj/item/clothing/under/frontiersmen
-	r_pocket = /obj/item/radio
+	r_pocket = null
 	shoes = /obj/item/clothing/shoes/jackboots
 	ears = /obj/item/radio/headset/pirate
-	box = /obj/item/storage/box/survival
-	id = /obj/item/card/id
+	box = /obj/item/storage/box/survival/pirate
+	id = /obj/item/card/id/cel/pirate
 
 	backpack = /obj/item/storage/backpack
 	satchel = /obj/item/storage/backpack/satchel
@@ -36,6 +36,7 @@
 	job_icon = "atmospherictechnician"
 	jobtype = /datum/job/atmos
 
+	id = /obj/item/card/id/cel/pirate/engineer
 	accessory = /obj/item/clothing/accessory/armband/engine
 	head = /obj/item/clothing/head/hardhat/frontier
 
@@ -83,6 +84,7 @@
 	job_icon = "chiefengineer"
 	jobtype = /datum/job/chief_engineer
 
+	id = /obj/item/card/id/cel/pirate/engineer
 	accessory = /obj/item/clothing/accessory/armband/engine
 	ears = /obj/item/radio/headset/pirate/captain
 	uniform = /obj/item/clothing/under/frontiersmen/officer
