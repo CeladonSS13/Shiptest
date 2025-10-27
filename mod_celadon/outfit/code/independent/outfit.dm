@@ -340,3 +340,146 @@
 
 // /datum/outfit/job/cel/independent/quartermaster
 // 	head = /obj/item/clothing/head/supply_chief
+
+// MARK: MIME
+/datum/outfit/job/cel/independent/mime
+	name = "Mime"
+	job_icon = "mime"
+	jobtype = /datum/job/mime
+
+	ears = /obj/item/radio/headset/headset_srv
+	uniform = /obj/item/clothing/under/rank/civilian/mime
+	alt_uniform = /obj/item/clothing/under/rank/civilian/mime/sexy //WS Edit - Alt Uniforms
+	mask = /obj/item/clothing/mask/gas/mime
+	gloves = /obj/item/clothing/gloves/color/white
+	head = /obj/item/clothing/head/frenchberet
+	belt = /obj/item/pda/mime
+	suit = /obj/item/clothing/suit/toggle/suspenders
+	backpack_contents = list(
+		/obj/item/stamp/mime = 1,
+		/obj/item/book/mimery = 1,
+		/obj/item/reagent_containers/food/drinks/bottle/bottleofnothing = 1
+		)
+
+	backpack = /obj/item/storage/backpack/mime
+	satchel = /obj/item/storage/backpack/mime
+
+	chameleon_extras = /obj/item/stamp/mime
+
+/datum/outfit/job/cel/independent/mime/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	if(H.mind)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/mime/speak(null))
+		H.mind.miming = TRUE
+
+	var/datum/atom_hud/fan = GLOB.huds[DATA_HUD_FAN]
+	fan.add_hud_to(H)
+
+//	Mime for Mimos
+/datum/outfit/job/cel/independent/mime/captain
+	name = "Master Mime"
+	job_icon = "mime"
+	jobtype = /datum/job/mime
+
+	ears = /obj/item/radio/headset/alt
+	uniform = /obj/item/clothing/under/rank/civilian/mime
+	alt_uniform = /obj/item/clothing/under/rank/civilian/mime/sexy //WS Edit - Alt Uniforms
+	mask = /obj/item/clothing/mask/gas/mime
+	gloves = /obj/item/clothing/gloves/color/captain
+	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/beret/command
+	suit = /obj/item/clothing/suit/toggle/suspenders
+
+	backpack_contents = list(
+		/obj/item/stamp/mime = 1,
+		/obj/item/book/mimery = 1,
+		/obj/item/reagent_containers/food/drinks/bottle/bottleofnothing = 1
+		)
+
+	backpack = /obj/item/storage/backpack/mime
+	satchel = /obj/item/storage/backpack/mime
+
+// MARK: CLOWN
+/datum/outfit/job/cel/independent/clown
+	name = "Clown"
+	job_icon = "clown"
+	jobtype = /datum/job/clown
+
+	ears = /obj/item/radio/headset/headset_srv
+	uniform = /obj/item/clothing/under/rank/civilian/clown
+	alt_uniform = /obj/item/clothing/under/rank/civilian/clown/green
+	mask = /obj/item/clothing/mask/gas/clown_hat
+	belt = /obj/item/pda/clown
+	shoes = /obj/item/clothing/shoes/clown_shoes
+	l_pocket = /obj/item/bikehorn
+	backpack_contents = list(
+		/obj/item/stamp/clown = 1,
+		/obj/item/reagent_containers/spray/waterflower = 1,
+		/obj/item/food/grown/banana = 1,
+		/obj/item/instrument/bikehorn = 1,
+		)
+
+	implants = list(/obj/item/implant/sad_trombone)
+
+	duffelbag = /obj/item/storage/backpack/duffelbag/clown //strangely has a duffel
+
+	box = /obj/item/storage/box/hug/survival
+
+	chameleon_extras = /obj/item/stamp/clown
+
+//	Clown for Mimos
+/datum/outfit/job/cel/independent/clown/maintenanceclown
+	name = "Maintenance Clown"
+	job_icon = "clown"
+	jobtype = /datum/job/clown
+
+	belt = /obj/item/storage/belt/utility/full/engi
+	ears = /obj/item/radio/headset/headset_srv
+	uniform = /obj/item/clothing/under/rank/civilian/clown
+	alt_uniform = /obj/item/clothing/under/rank/civilian/clown/green //WS Edit - Alt Uniforms
+	shoes = /obj/item/clothing/shoes/clown_shoes
+	mask = /obj/item/clothing/mask/gas/clown_hat
+	head = /obj/item/clothing/head/hardhat/dblue
+	gloves = /obj/item/clothing/gloves/color/yellow
+	suit = /obj/item/clothing/suit/hooded/wintercoat/engineering
+	backpack_contents = list(
+		/obj/item/reagent_containers/spray/waterflower = 1,
+		/obj/item/food/grown/banana = 1,
+		)
+
+	implants = list(/obj/item/implant/sad_trombone)
+
+	backpack = /obj/item/storage/backpack/clown
+	satchel = /obj/item/storage/backpack/clown
+	duffelbag = /obj/item/storage/backpack/duffelbag/clown //strangely has a duffel
+
+	box = /obj/item/storage/box/hug/survival
+
+/datum/outfit/tunnel_clown
+	name = "Tunnel Clown"
+
+	uniform = /obj/item/clothing/under/rank/civilian/clown
+	shoes = /obj/item/clothing/shoes/clown_shoes
+	gloves = /obj/item/clothing/gloves/color/black
+	mask = /obj/item/clothing/mask/gas/clown_hat
+	ears = /obj/item/radio/headset
+	glasses = /obj/item/clothing/glasses/thermal/monocle
+	suit = /obj/item/clothing/suit/hooded/chaplainsuit
+	l_pocket = /obj/item/food/grown/banana
+	r_pocket = /obj/item/bikehorn
+	id = /obj/item/card/id
+	r_hand = /obj/item/melee/axe
+
+/datum/outfit/tunnel_clown/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	if(visualsOnly)
+		return
+
+	var/obj/item/card/id/W = H.wear_id
+	W.access = get_all_accesses()
+	W.assignment = "Tunnel Clown!"
+	W.registered_name = H.real_name
+	W.update_label()
