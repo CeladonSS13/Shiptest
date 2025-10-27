@@ -3,7 +3,7 @@
 	faction_icon = "bg_pirate"
 
 //Ramzi_Clique celadon - аутфиты которые используются на рондо
-/datum/outfit/job/cel/ramzi_clique
+/datum/outfit/job/cel/pirate/ramzi_clique
 	name = "Ramzi Clique Rondo - Base Outfit"
 
 	uniform = /obj/item/clothing/under/syndicate/ramzi
