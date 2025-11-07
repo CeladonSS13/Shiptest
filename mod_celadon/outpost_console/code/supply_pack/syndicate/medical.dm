@@ -73,7 +73,7 @@
 					/obj/item/storage/firstaid/fire,
 					/obj/item/defibrillator/loaded,
 					/obj/item/reagent_containers/blood/OMinus,
-					/obj/item/storage/pill_bottle/mining,
+					// /obj/item/storage/pill_bottle/mining,
 					/obj/item/reagent_containers/pill/neurine,
 					/obj/item/vending_refill/medical)
 	crate_name = "medical surplus crate"
@@ -105,32 +105,32 @@
 	)
 	crate_name = "empty vial crate"
 
-/datum/supply_pack/faction/syndicate/medical/vials/bica_vial
-	name = "Bicardine Vial Crate"
-	desc = "Contains a spare bicardine vial, for usage in a Hypospray."
-	cost = 400
-	contains = list(
-		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/bicaridine,
-	)
-	crate_name = "bicardine vial crate"
+// /datum/supply_pack/faction/syndicate/medical/vials/bica_vial
+// 	name = "Bicardine Vial Crate"
+// 	desc = "Contains a spare bicardine vial, for usage in a Hypospray."
+// 	cost = 400
+// 	contains = list(
+// 		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/bicaridine,
+// 	)
+// 	crate_name = "bicardine vial crate"
 
-/datum/supply_pack/faction/syndicate/medical/vials/kelo_vial
-	name = "Kelotane Vial Crate"
-	desc = "Contains a spare kelotane vial, for usage in a Hypospray."
-	cost = 400
-	contains = list(
-		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/kelotane,
-	)
-	crate_name = "kelotane vial crate"
+// /datum/supply_pack/faction/syndicate/medical/vials/kelo_vial
+// 	name = "Kelotane Vial Crate"
+// 	desc = "Contains a spare kelotane vial, for usage in a Hypospray."
+// 	cost = 400
+// 	contains = list(
+// 		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/kelotane,
+// 	)
+// 	crate_name = "kelotane vial crate"
 
-/datum/supply_pack/faction/syndicate/medical/vials/dylo_vial
-	name = "Dylovene Vial Crate"
-	desc = "Contains a spare dylovene vial, for usage in a Hypospray."
-	cost = 400
-	contains = list(
-		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/antitoxin,
-	)
-	crate_name = "dylovene vial crate"
+// /datum/supply_pack/faction/syndicate/medical/vials/dylo_vial
+// 	name = "Dylovene Vial Crate"
+// 	desc = "Contains a spare dylovene vial, for usage in a Hypospray."
+// 	cost = 400
+// 	contains = list(
+// 		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/antitoxin,
+// 	)
+// 	crate_name = "dylovene vial crate"
 
 /datum/supply_pack/faction/syndicate/medical/vials/dexa_vial
 	name = "Dexalin Vial Crate"
@@ -141,14 +141,14 @@
 	)
 	crate_name = "dexalin vial crate"
 
-/datum/supply_pack/faction/syndicate/medical/vials/tric_vial
-	name = "Tricordrazine Vial Crate"
-	desc = "Contains a spare tricordrazine vial, for usage in a Hypospray."
-	cost = 300
-	contains = list(
-		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/tricord,
-	)
-	crate_name = "tricordrazine vial crate"
+// /datum/supply_pack/faction/syndicate/medical/vials/tric_vial
+// 	name = "Tricordrazine Vial Crate"
+// 	desc = "Contains a spare tricordrazine vial, for usage in a Hypospray."
+// 	cost = 300
+// 	contains = list(
+// 		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/tricord,
+// 	)
+// 	crate_name = "tricordrazine vial crate"
 
 /datum/supply_pack/faction/syndicate/medical/vials/morb_vial
 	name = "Morphine Vial Crate"
