@@ -1668,16 +1668,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	illegal_tech = FALSE
 // [/CELADON-ADD]
 
-/datum/uplink_item/role_restricted/spider_injector
-	name = "Australicus Slime Mutator"
-	desc = "Crikey mate, it's been a wild travel from the Australicus sector but we've managed to get \
-			some special spider extract from the giant spiders down there. Use this injector on a gold slime core \
-			to create a few of the same type of spiders we found on the planets over there. They're a bit tame until you \
-			also give them a bit of sentience though."
-	item = /obj/item/reagent_containers/syringe/spider_extract
-	cost = 10
-	restricted_roles = list("Research Director", "Scientist", "Roboticist")
-
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /datum/uplink_item/role_restricted/clowncar
 	name = "Clown Car"
@@ -1716,15 +1706,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	restricted_roles = list("Botanist")
 	cost = 14
 	item = /obj/vehicle/ridden/lawnmower/emagged
-
-/datum/uplink_item/role_restricted/explosive_hot_potato
-	name = "Exploding Hot Potato"
-	desc = "A potato rigged with explosives. On activation, a special mechanism is activated that prevents it from being dropped. \
-			The only way to get rid of it if you are holding it is to attack someone else with it, causing it to latch to that person instead."
-	item = /obj/item/hot_potato/syndicate
-	cost = 4
-	surplus = 0
-	restricted_roles = list("Cook", "Botanist", "Clown", "Mime")	//restricted_roles = list("Cook", "Botanist")	// [CELADON-EDIT] - CELADON_RETURN_CONTENT_CLOWNS
 
 /datum/uplink_item/role_restricted/ez_clean_bundle
 	name = "EZ Clean Grenade Bundle"
