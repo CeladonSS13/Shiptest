@@ -102,6 +102,8 @@
 	desc = "A service pistol produced as Vigilitas Interstellar's standard sidearm. Has a reputation for being easy to use, due to its light recoil and high magazine capacity. Chambered in 9x18mm."
 	manufacturer = MANUFACTURER_VIGILITAS
 
+NO_MAG_GUN_HELPER(automatic/pistol/commander)
+
 /obj/item/gun/ballistic/automatic/pistol/commander/inteq
 	desc = "A modified version of the VI Commander, issued as standard to Inteq Risk Management Group personnel. Features the same excellent handling and high magazine capacity as the original. Chambered in 9x18mm."
 
