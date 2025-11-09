@@ -1,0 +1,573 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/structure/window/reinforced/fulltile/shuttle,
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 4;
+	id = "Seer_window"
+	},
+/obj/structure/cable,
+/turf/open/floor/engine,
+/area/ship/bridge)
+"b" = (
+/obj/structure/sign/solfed,
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
+"d" = (
+/obj/machinery/turretid{
+	id = "seer_turrets";
+	pixel_y = 3;
+	pixel_x = 2
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
+"e" = (
+/obj/effect/turf_decal/corner/opaque/solgovblue{
+	dir = 6
+	},
+/obj/machinery/computer/helm{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/blue{
+	color = "#2d2a4e";
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/marble,
+/area/ship/bridge)
+"f" = (
+/obj/structure/fans/tiny,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "seer_door1"
+	},
+/turf/open/floor/engine,
+/area/ship/bridge)
+"k" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/siding/blue/corner{
+	color = "#2d2a4e";
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/yellow/corner{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/marble,
+/area/ship/bridge)
+"m" = (
+/obj/machinery/door/window/survival_pod{
+	dir = 4;
+	color = "#2d2a4e";
+	req_one_access = list(1,10)
+	},
+/obj/machinery/flasher{
+	pixel_x = -24;
+	id = "prison_seer"
+	},
+/turf/open/floor/engine,
+/area/ship/bridge)
+"o" = (
+/obj/structure/fans/tiny,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "seer_door2"
+	},
+/obj/docking_port/mobile{
+	dir = 2
+	},
+/turf/open/floor/engine,
+/area/ship/bridge)
+"p" = (
+/obj/machinery/stasis{
+	dir = 1
+	},
+/obj/structure/window/plasma/reinforced{
+	dir = 4;
+	rad_insulation = -1;
+	color = "#2d2a4e"
+	},
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/engine,
+/area/ship/bridge)
+"q" = (
+/obj/effect/turf_decal/corner/opaque/solgovblue/three_quarters{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/siding/blue{
+	color = "#2d2a4e";
+	dir = 10
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/turf/open/floor/marble,
+/area/ship/bridge)
+"r" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
+/obj/structure/sign/solfed,
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
+"s" = (
+/obj/effect/turf_decal/corner/opaque/solgovgold/full,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/holopad/emergency/command,
+/turf/open/floor/marble,
+/area/ship/bridge)
+"t" = (
+/obj/effect/turf_decal/corner/opaque/solgovblue/three_quarters,
+/obj/machinery/computer/secure_data{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/blue{
+	color = "#2d2a4e";
+	dir = 6
+	},
+/turf/open/floor/marble,
+/area/ship/bridge)
+"u" = (
+/obj/structure/fans/tiny,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "seer_door2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/engine,
+/area/ship/bridge)
+"v" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
+"x" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4;
+	name = "helm shuttle chair"
+	},
+/obj/effect/turf_decal/corner/opaque/solgovgold/half{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/marble,
+/area/ship/bridge)
+"y" = (
+/obj/effect/turf_decal/corner/opaque/solgovgold/half,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/marble,
+/area/ship/bridge)
+"z" = (
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
+"A" = (
+/obj/machinery/porta_turret/ship/solfed/heavy{
+	id = "seer_turrets"
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
+"B" = (
+/obj/structure/window/reinforced/fulltile/shuttle,
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 4;
+	id = "Seer_window"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/engine,
+/area/ship/bridge)
+"C" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4;
+	name = "helm shuttle chair"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/effect/turf_decal/siding/blue/corner{
+	color = "#2d2a4e";
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/yellow/corner{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/button{
+	pixel_x = 33;
+	id = "Seer_window";
+	pixel_y = 24;
+	name = "Window lockdown"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/marble,
+/area/ship/bridge)
+"D" = (
+/obj/machinery/power/shuttle/engine/electric,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/engine,
+/area/ship/external)
+"E" = (
+/obj/structure/window/reinforced/fulltile/shuttle,
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 4;
+	id = "Seer_window"
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/engine,
+/area/ship/bridge)
+"F" = (
+/obj/structure/window/plasma/reinforced{
+	dir = 4;
+	rad_insulation = -1;
+	color = "#2d2a4e"
+	},
+/obj/machinery/stasis{
+	dir = 1
+	},
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/engine,
+/area/ship/bridge)
+"G" = (
+/obj/machinery/power/smes/shuttle/precharged,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/engine,
+/area/ship/external)
+"H" = (
+/obj/effect/turf_decal/corner/opaque/solgovblue{
+	dir = 5
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/siding/blue{
+	color = "#2d2a4e";
+	dir = 1
+	},
+/turf/open/floor/marble,
+/area/ship/bridge)
+"I" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/siding/blue/corner{
+	color = "#2d2a4e";
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/yellow/corner,
+/turf/open/floor/marble,
+/area/ship/bridge)
+"J" = (
+/obj/effect/turf_decal/corner/opaque/solgovblue{
+	dir = 9
+	},
+/obj/effect/turf_decal/siding/blue{
+	color = "#2d2a4e";
+	dir = 8
+	},
+/turf/open/floor/marble,
+/area/ship/bridge)
+"K" = (
+/obj/effect/turf_decal/corner/opaque/solgovgold/half{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/marble,
+/area/ship/bridge)
+"L" = (
+/obj/effect/turf_decal/corner/opaque/solgovgold/half{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/marble,
+/area/ship/bridge)
+"M" = (
+/obj/structure/fans/tiny,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "seer_door1"
+	},
+/turf/open/floor/engine,
+/area/ship/bridge)
+"N" = (
+/obj/effect/turf_decal/corner/opaque/solgovblue/three_quarters{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/siding/blue{
+	color = "#2d2a4e";
+	dir = 9
+	},
+/obj/structure/chair/comfy/shuttle,
+/obj/machinery/button/flasher{
+	pixel_x = -10;
+	pixel_y = 24;
+	id = "prison_seer"
+	},
+/turf/open/floor/marble,
+/area/ship/bridge)
+"Q" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 4;
+	name = "helm shuttle chair"
+	},
+/obj/effect/turf_decal/siding/blue/corner{
+	color = "#2d2a4e"
+	},
+/obj/effect/turf_decal/siding/yellow/corner{
+	dir = 1
+	},
+/turf/open/floor/marble,
+/area/ship/bridge)
+"S" = (
+/obj/effect/turf_decal/corner/opaque/solgovblue/three_quarters{
+	dir = 8
+	},
+/obj/structure/table/reinforced/titaniumglass,
+/obj/effect/turf_decal/siding/blue{
+	color = "#2d2a4e";
+	dir = 5
+	},
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/machinery/light/directional/east,
+/obj/machinery/recharger{
+	pixel_y = 3;
+	pixel_x = -6
+	},
+/turf/open/floor/marble,
+/area/ship/bridge)
+"T" = (
+/obj/effect/turf_decal/corner/opaque/solgovblue/three_quarters{
+	dir = 8
+	},
+/obj/machinery/computer/crew{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/blue{
+	color = "#2d2a4e";
+	dir = 5
+	},
+/turf/open/floor/marble,
+/area/ship/bridge)
+"U" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/structure/sign/solfed,
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
+"V" = (
+/obj/effect/turf_decal/corner/opaque/solgovblue{
+	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/terminal{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/siding/blue{
+	color = "#2d2a4e"
+	},
+/turf/open/floor/marble,
+/area/ship/bridge)
+"W" = (
+/turf/template_noop,
+/area/template_noop)
+"X" = (
+/obj/effect/turf_decal/corner/opaque/solgovblue/three_quarters{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/siding/blue{
+	color = "#2d2a4e";
+	dir = 9
+	},
+/obj/machinery/button/door{
+	id = "seer_door1";
+	dir = 4;
+	pixel_x = -25;
+	pixel_y = 3
+	},
+/turf/open/floor/marble,
+/area/ship/bridge)
+"Y" = (
+/obj/effect/turf_decal/corner/opaque/solgovblue/three_quarters,
+/obj/machinery/power/smes/engineering{
+	charge = 4e+006
+	},
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
+/obj/effect/turf_decal/siding/blue{
+	color = "#2d2a4e";
+	dir = 6
+	},
+/obj/machinery/light/directional/east,
+/turf/open/floor/marble,
+/area/ship/bridge)
+"Z" = (
+/obj/effect/turf_decal/corner/opaque/solgovblue/three_quarters{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/effect/turf_decal/siding/blue{
+	color = "#2d2a4e";
+	dir = 10
+	},
+/obj/machinery/button/door{
+	id = "seer_door2";
+	dir = 4;
+	pixel_x = -25;
+	pixel_y = 3
+	},
+/turf/open/floor/marble,
+/area/ship/bridge)
+
+(1,1,1) = {"
+D
+z
+z
+z
+z
+z
+D
+"}
+(2,1,1) = {"
+G
+z
+p
+m
+F
+z
+G
+"}
+(3,1,1) = {"
+U
+v
+N
+J
+q
+v
+r
+"}
+(4,1,1) = {"
+M
+X
+I
+K
+k
+Z
+o
+"}
+(5,1,1) = {"
+f
+H
+y
+s
+L
+V
+u
+"}
+(6,1,1) = {"
+z
+S
+C
+x
+Q
+Y
+z
+"}
+(7,1,1) = {"
+A
+d
+T
+e
+t
+z
+A
+"}
+(8,1,1) = {"
+W
+b
+E
+B
+a
+b
+W
+"}

@@ -151,6 +151,7 @@
 	description = "InteQ"
 	prefix = "sIQSV"
 
+
 //Субшатлы для руинок
 /datum/map_template/shuttle/ruin/ruin_jox
 	file_name = "syndicate_Jox"
@@ -161,6 +162,12 @@
 /datum/map_template/shuttle/subshuttles/vespa
 	file_name = "solfed_vespa"
 	name = "Vespa Expeditionary Dropship"
+	description = "Solar Federation"
+	prefix = "sSFSV"
+
+/datum/map_template/shuttle/subshuttles/seer
+	file_name = "solfed_seer"
+	name = "Feer Patrol Dropship"
 	description = "Solar Federation"
 	prefix = "sSFSV"
 
