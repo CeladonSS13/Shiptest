@@ -14,7 +14,7 @@
 	//burns_in_oven = TRUE
 	///Type is spawned 6 at a time and replaces this pizza when processed by cutting tool
 	var/obj/item/food/pizzaslice/slice_type
-
+/obj/item/food/meat/slab/human/mutant/skeleton
 /obj/item/food/pizza/make_processable()
 	if(slice_type)
 		AddElement(/datum/element/processable, TOOL_KNIFE, slice_type, 6, 3 SECONDS, table_required = TRUE)
