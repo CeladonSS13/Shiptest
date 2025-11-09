@@ -235,13 +235,6 @@
 /obj/item/ammo_box/magazine/wt550m9,
 /obj/item/ammo_box/magazine/wt550m9,
 /obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
 /obj/item/stock_parts/cell/gun,
 /obj/item/stock_parts/cell/gun,
 /obj/item/stock_parts/cell/gun,
@@ -300,8 +293,8 @@
 /area/ruin/jungle/syndifort)
 "dX" = (
 /obj/structure/flora/rock/pile/largejungle,
-/turf/template_noop,
-/area/template_noop)
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/overmap_encounter/planetoid/jungle/explored)
 "ed" = (
 /obj/structure/destructible/tribal_torch/lit,
 /obj/effect/decal/cleanable/blood,
@@ -542,9 +535,9 @@
 	name = "Squad Leader's closet";
 	populate = 0
 	},
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
-/obj/item/gun/ballistic/revolver/mateba,
+/obj/item/gun/ballistic/automatic/smg/cobra/no_mag,
+/obj/item/ammo_box/magazine/m45_cobra/empty,
+/obj/item/ammo_box/magazine/m45_cobra/empty,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/jungle/syndifort3)
 "gK" = (
@@ -812,7 +805,6 @@
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/overmap_encounter/planetoid/jungle/explored)
 "kp" = (
-/obj/item/gun/ballistic/automatic/smg/cobra/no_mag,
 /obj/item/ammo_casing/spent{
 	dir = 9;
 	pixel_x = 10;
@@ -1105,7 +1097,6 @@
 /area/overmap_encounter/planetoid/jungle/explored)
 "nj" = (
 /obj/structure/flora/rock/jungle,
-/obj/item/ammo_box/magazine/m45_cobra/empty,
 /obj/effect/decal/cleanable/blood/squirt,
 /obj/effect/decal/cleanable/blood/hitsplatter,
 /turf/open/floor/plating/asteroid/dirt/beach,
@@ -1192,7 +1183,7 @@
 /obj/item/reagent_containers/pill/insulin,
 /obj/item/paper{
 	pixel_x = -9;
-	default_raw_text = "Сраные новобранцы. И до этого чертового налета ныли, как дети малые, а теперь и вовсе расклеились. Пять бедолаг хнычут, словно девчонки.Скорее бы закончилось всё. Благо я припрятал пару таблеточек. На них денёк-другой и протяну, но если всё затянется... Даже думать об этом не хочу.А ведь мне обещали после этой практики продвижение дальше. Хоть бы не сгинуть здесь."
+	default_raw_text = "Сраные новобранцы. И до этого чертового налета ныли, как дети малые, а теперь и вовсе расклеились. Пять бедолаг хнычут, словно девчонки. Скорее бы закончилось всё. Благо я припрятал пару таблеточек. На них денёк-другой и протяну, но если всё затянется... Даже думать об этом не хочу. А ведь мне обещали после этой практики продвижение дальше. Хоть бы не сгинуть здесь."
 	},
 /turf/open/floor/plasteel/strongdark,
 /area/ruin/jungle/syndifort2)
@@ -2232,7 +2223,6 @@
 "AB" = (
 /obj/item/ammo_box/magazine/m45_cobra/empty,
 /obj/item/ammo_box/magazine/m45_cobra/empty,
-/obj/item/ammo_box/magazine/m45_cobra/empty,
 /obj/structure/closet/syndicate/personal{
 	populate = 0
 	},
@@ -3090,7 +3080,10 @@
 /area/overmap_encounter/planetoid/jungle/explored)
 "Ld" = (
 /obj/structure/table/wood,
-/obj/item/documents/nanotrasen,
+/obj/item/storage/firstaid{
+	pixel_x = 0;
+	pixel_y = 5
+	},
 /turf/open/floor/plating/asteroid/dirt/grass/jungle/yellow,
 /area/ruin/jungle/syndifortshuttle)
 "Ln" = (
@@ -3633,7 +3626,6 @@
 /area/ruin/jungle/syndifortshuttle)
 "Qu" = (
 /obj/item/ammo_casing/spent/slug,
-/obj/item/ammo_box/magazine/m45_cobra/empty,
 /turf/open/floor/plating/ship/water/beach/deep,
 /area/overmap_encounter/planetoid/jungle/explored)
 "Qx" = (
@@ -3928,11 +3920,6 @@
 /obj/item/grenade/barrier,
 /obj/item/grenade/barrier,
 /obj/item/grenade/barrier,
-/obj/item/grenade/barrier,
-/obj/item/grenade/barrier,
-/obj/item/grenade/barrier,
-/obj/item/grenade/frag,
-/obj/item/grenade/frag,
 /obj/item/grenade/frag,
 /obj/item/grenade/frag,
 /turf/open/floor/plating/asteroid/dirt/grass/jungle/yellow,
@@ -4342,7 +4329,7 @@
 "XZ" = (
 /obj/structure/table/wood,
 /obj/item/paper{
-	default_raw_text = "Полевой командир - Лейтенант Хёдм<br>Командир первого отряда - Старшина Шнырь<br>Командир второго отряда - Старшина Штык<br><br>Состав первого отряда<br><br>Сержант - Холоп<br>Младший Сержант - Камнерез<br>Младший Сержант - Змей<br>Ефрейтор - Ворон<br>Ефрейтор - Орёл<br>Ефрейтор - Клякса<br><br>Состав второго отряда<br><br>Сержант - Таран<br>Младший сержант - Куст<br>Младший сержант - Герой<br>Ефрейтор - Кислый<br>Ефрейтор - Дворняга<br>Ефрейтор - Плед<br><br>Проведение операции<br><br>Высадились на планету в районе часа ночи, Второй отряд под командование Штыка отправились на осмотр местности.Нашли два прохода на базу противника, к сожалению, на первом наши ребята подорвались на мине, потеряли Кислого и Пледа, оттащили их трупы на судно.<br>Так же потеряли связь с Кустом, судя по звукам, подорвался на мине.<br>Так же сержант Таран с Дворнягой погибли, зашли слишком близко к базе противника, тот проход перекрыли барьерными гранатами. Пока не рискуем оттаскивать их трупы, вдруг противник заметит и начнём контратаку.<br>Возвели Фоб, планируем длительную осаду, с провизией пока всё хорошо, надеемся на скорое подкрепление."
+	default_raw_text = "Полевой командир - Лейтенант Хёдм<br>Командир первого отряда - Старшина Шнырь<br>Командир второго отряда - Старшина Штык<br><br>Состав первого отряда<br><br>Сержант - Холоп<br>Младший Сержант - Камнерез<br>Младший Сержант - Змей<br>Ефрейтор - Ворон<br>Ефрейтор - Орёл<br>Ефрейтор - Клякса<br><br>Состав второго отряда<br><br>Сержант - Таран<br>Младший сержант - Куст<br>Младший сержант - Герой<br>Ефрейтор - Кислый<br>Ефрейтор - Дворняга<br>Ефрейтор - Плед<br><br>Проведение операции<br><br>Высадились на планету в районе часа ночи, Второй отряд под командование Штыка отправились на осмотр местности. Нашли два прохода на базу противника, к сожалению, на первом наши ребята подорвались на мине, потеряли Кислого и Пледа, оттащили их трупы на судно.<br>Так же потеряли связь с Кустом, судя по звукам, подорвался на мине.<br>Так же сержант Таран с Дворнягой погибли, зашли слишком близко к базе противника, тот проход перекрыли барьерными гранатами. Пока не рискуем оттаскивать их трупы, вдруг противник заметит и начнём контратаку.<br>Возвели Фоб, планируем длительную осаду, с провизией пока всё хорошо, надеемся на скорое подкрепление."
 	},
 /turf/open/floor/plating/asteroid/dirt/grass/jungle/yellow,
 /area/ruin/jungle/syndifortshuttle)
@@ -8986,7 +8973,7 @@ qx
 uR
 gP
 KY
-KY
+dX
 KY
 KY
 KY
@@ -9052,7 +9039,7 @@ EF
 (64,1,1) = {"
 EF
 EF
-dX
+EF
 EF
 EF
 EF
