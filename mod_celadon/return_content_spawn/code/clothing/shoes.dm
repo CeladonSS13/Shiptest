@@ -95,17 +95,6 @@
 	permeability_coefficient = 0.9
 	can_be_tied = FALSE
 
-/obj/item/clothing/shoes/griffin
-	name = "griffon boots"
-	desc = "A pair of costume boots fashioned after bird talons."
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/shoes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/shoes.dmi'
-	icon_state = "griffinboots"
-	item_state = "griffinboots"
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes
-	lace_time = 8 SECONDS
-	greyscale_icon_state = "boots"
-
 /obj/item/clothing/shoes/bronze
 	name = "bronze boots"
 	desc = "A giant, clunky pair of shoes crudely made out of bronze. Why would anyone wear these?"
