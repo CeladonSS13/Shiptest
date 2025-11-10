@@ -63,4 +63,5 @@
 	name = "emergency response team clown backpack"
 	desc = "A spacious backpack with lots of pockets, worn by Clowns of an Emergency Response Team."
 	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/backpacks.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/backpack_onmob.dmi'
 	icon_state = "ert_clown"
