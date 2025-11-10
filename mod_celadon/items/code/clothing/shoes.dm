@@ -1,10 +1,10 @@
 /obj/item/clothing/shoes/footwraps
 	name = "cloth footwraps"
 	desc = "A roll of treated cloth used for wrapping clawed feet."
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/miscellaneous.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/miscellaneous.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/left_miscellaneous.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/right_miscellaneous.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/shoes.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/shoes_left.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/shoes_right.dmi'
 	icon_state = "clothwrap"
 	item_state = "clothwrap"
 
@@ -30,10 +30,10 @@
 /obj/item/clothing/shoes/heels
 	name = "high heels"
 	desc = "A pair of high-heeled shoes. Fancy!"
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/miscellaneous.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/miscellaneous.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/left_miscellaneous.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/right_miscellaneous.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/shoes.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/shoes_left.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/shoes_right.dmi'
 	icon_state = "heels"
 	item_state = "heels"
 	slowdown = 0
@@ -52,32 +52,31 @@
 	item_state = "heels_black"
 
 /obj/item/clothing/shoes/galoshes/tajara_galoshes
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/miscellaneous.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/miscellaneous.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/left_miscellaneous.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/right_miscellaneous.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/shoes.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/shoes_left.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/shoes_right.dmi'
 	icon_state = "galoshes"
 	item_state = "galoshes"
 
 /obj/item/clothing/shoes/swimmingfins
 	desc = "Help you swim good."
 	name = "swimming fins"
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/miscellaneous.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/miscellaneous.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/left_miscellaneous.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/right_miscellaneous.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/shoes.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/shoes_left.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/shoes_right.dmi'
 	icon_state = "flippers"
 	item_state = "flippers"
 	slowdown = 1
 
-
 /obj/item/clothing/shoes/slippers
 	name = "bunny slippers"
 	desc = "Fluffy!"
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/slippers.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/slippers.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/left_slippers.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/right_slippers.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/shoes.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/shoes_left.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/shoes_right.dmi'
 	icon_state = "slippers"
 	item_state = "slippers"
 	force = 0
@@ -95,14 +94,13 @@
 	item_state = "carpslippers"
 	icon_state = "carpslippers"
 
-
 /obj/item/clothing/shoes/sandals
 	desc = "A pair of rather plain wooden sandals."
 	name = "sandals"
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/sandals.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/sandals.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/left_sandals.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/right_sandals.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/shoes.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/shoes_left.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/shoes_right.dmi'
 	icon_state = "sandals"
 	item_state = "sandals"
 	body_parts_covered = FALSE
@@ -138,7 +136,7 @@
 	name = "clown shoes"
 	desc = "The prankster's standard-issue clowning shoes. Damn they're huge! There's a red light on the side."
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/shoes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/feet.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/shoes.dmi'
 	icon_state = "clown_prototype0"
 	magboot_state = "clown_prototype"
 	slowdown_active = SHOES_SLOWDOWN + 1
@@ -146,10 +144,9 @@
 /obj/item/clothing/shoes/jackboots/padded
 	name = "serenity jackboots"
 	desc = "Thick boots that are lined with feathers and down. Good footwear anticipating harsh weather."
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/feet.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/shoes.dmi'
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/shoes.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/padded_left.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/padded_right.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/shoes_left.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/shoes_right.dmi'
 	item_state = "paddedboots"
 	icon_state = "paddedboots"
-	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON

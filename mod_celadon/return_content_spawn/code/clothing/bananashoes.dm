@@ -4,7 +4,7 @@
 	name = "mk-honk prototype shoes"
 	desc = "Lost prototype of advanced clown tech. Powered by bananium, these shoes leave a trail of chaos in their wake."
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/shoes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/feet.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/shoes.dmi'
 	icon_state = "clown_prototype_off"
 	actions_types = list(/datum/action/item_action/toggle)
 	var/on = FALSE

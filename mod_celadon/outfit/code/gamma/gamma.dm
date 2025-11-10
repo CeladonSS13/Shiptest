@@ -113,8 +113,8 @@
 /obj/item/clothing/shoes/gamma
 	name = "Gamma boots"
 	desc = "no data."
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/gammashoes.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/gammashoes.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/shoes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/shoes.dmi'
 	icon_state = "white_squadron_boots"
 	item_state = "white_squadron_boots"
 	strip_delay = 100
