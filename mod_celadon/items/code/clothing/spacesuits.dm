@@ -133,8 +133,8 @@
 	desc = "A special helmet designed for work in a hazardous, low-pressure environment. Has thermal and freeze shielding."
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/medshield.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/overlay/medshield.dmi'
-	icon_state = "medshield_helmet2"
-	item_state = "medshield_helmet2"
+	icon_state = "hardsuit0-medshield1"
+	item_state = "hardsuit1-medshield1"
 	hardsuit_type = "atmospherics"
 	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 95, "wound" = 50)
 	heat_protection = HEAD
@@ -155,8 +155,8 @@
 /obj/item/clothing/head/helmet/space/hardsuit/medicalshield_voidsuit/cmo
 	name = "medicalshield voidsuit helmet"
 	desc = "A special helmet designed for work in a hazardous, low-pressure environment. Has thermal and freeze shielding."
-	icon_state = "medshield_helmet1"
-	item_state = "medshield_helmet1"
+	icon_state = "hardsuit0-medshield2"
+	item_state = "hardsuit1-medshield2"
 	hardsuit_type = "atmospherics"
 	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 95, "wound" = 50)
 	heat_protection = HEAD
