@@ -153,3 +153,11 @@
 	item_state = "paddedboots"
 	icon_state = "paddedboots"
 	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON
+
+/obj/item/clothing/shoes/medicalshield_boots
+	name = "green medicalshield boots"
+	desc = "Comfortable-looking green boots."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/medshield.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/medshield.dmi'
+	item_state = "medshield_boots"
+	icon_state = "medshield_boots"

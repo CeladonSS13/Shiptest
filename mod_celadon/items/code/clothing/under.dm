@@ -263,3 +263,13 @@
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/under.dmi'
 	icon_state = "purplebartender"
 	item_state = "purplebartender"
+
+/obj/item/clothing/under/rank/outpost
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/medshield.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/medshield.dmi'
+
+/obj/item/clothing/under/rank/outpost/medicalshield
+	name = "close medicalshield uniform"
+	desc = "A green uniform MedicalShield."
+	icon_state = "medshield_uniform"
+	item_state = "medshield_uniform"

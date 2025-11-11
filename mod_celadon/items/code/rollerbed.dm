@@ -113,3 +113,12 @@
 		loaded = null
 	else
 		to_chat(user, span_warning("The dock is empty!"))
+
+/obj/structure/bed/roller/medicalshield
+	name = "roller medicalshield bed"
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/medicalshield_rollerbed.dmi'
+	foldabletype = /obj/item/roller/medicalshield
+
+/obj/item/roller/medicalshield
+	name = "roller medicalshield bed"
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/medicalshield_rollerbed.dmi'
