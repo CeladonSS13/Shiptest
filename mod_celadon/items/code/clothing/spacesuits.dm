@@ -147,7 +147,7 @@
 	desc = "A special suit that protects against hazardous, low pressure environments. Has thermal and freeze shielding."
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/space_suit/medshield.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/space_suit/overlay/medshield.dmi'
-	icon_state = "voidsuit_medicalshield"
+	icon_state = "voidsuit_medical"
 	item_state = "voidsuit_medical"
 	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 95, "wound" = 50)
 	heat_protection = CHEST | GROIN | LEGS | FEET | ARMS | HANDS
@@ -167,7 +167,7 @@
 /obj/item/clothing/suit/space/hardsuit/medicalshield_medical/marine
 	name = "medicalshield voidsuit"
 	desc = "A special suit that protects against hazardous, low pressure environments. Has thermal and freeze shielding."
-	icon_state = "voidsuit_medicalshield"
+	icon_state = "voidsuit_marine"
 	item_state = "voidsuit_marine"
 	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 95, "wound" = 50)
 	heat_protection = CHEST | GROIN | LEGS | FEET | ARMS | HANDS
