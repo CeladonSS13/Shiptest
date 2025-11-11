@@ -46,6 +46,9 @@ OMNI_TOOLS	-	Обновлены инструменты
 - `code/modules/research/designs/tool_designs.dm`		:	Добавлена технология в ноды
 - `code/modules/research/techweb/all_nodes.dm`			:	В сами ноды добавлены технологии
 - `code/modules/vending/medical.dm` 					:	В вендоры добавлен бюджетный дистанционный анализатор
+
+ITEMS_ROLLEDBED
+- `code/game/objects/structures/beds_chairs/bed.dm`		:	Добавлено переключение между звуками для катафалок различных
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

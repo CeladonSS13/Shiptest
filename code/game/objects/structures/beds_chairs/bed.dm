@@ -139,8 +139,16 @@
 /obj/structure/bed/roller/Moved()
 	. = ..()
 	if(has_gravity())
-		playsound(src, 'sound/effects/roll.ogg', 100, TRUE)
-
+		// [CELADON-EDIT] - ITEMS_ROLLEDBED - Делаем выбор звуков для катафалки
+		// playsound(src, 'sound/effects/roll.ogg', 100, TRUE)	// ORIGINAL
+		switch(type)
+			if(/obj/structure/bed/roller/medicalshield)
+				playsound(src, 'sound/effects/ping.ogg', 100, TRUE)
+			if(/obj/structure/bed/roller/future)
+				playsound(src, 'sound/effects/zzzt.ogg', 50, TRUE)
+			else
+				playsound(src, 'sound/effects/roll.ogg', 100, TRUE)
+		// [/CELADON-ADD]
 
 /obj/structure/bed/roller/post_unbuckle_mob(mob/living/M)
 	density = FALSE
