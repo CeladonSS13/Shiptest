@@ -143,11 +143,11 @@
 		// playsound(src, 'sound/effects/roll.ogg', 100, TRUE)	// ORIGINAL
 		switch(type)
 			if(/obj/structure/bed/roller/medicalshield)
-				playsound(src, 'sound/effects/ping.ogg', 100, TRUE)
+				playsound(src, 'sound/effects/ping.ogg', 60, TRUE, 0, 6)
 			if(/obj/structure/bed/roller/future)
-				playsound(src, 'sound/effects/zzzt.ogg', 50, TRUE)
+				playsound(src, 'sound/effects/roll.ogg', 70, TRUE)
 			else
-				playsound(src, 'sound/effects/roll.ogg', 100, TRUE)
+				playsound(src, 'sound/effects/roll.ogg', 80, TRUE)
 		// [/CELADON-ADD]
 
 /obj/structure/bed/roller/post_unbuckle_mob(mob/living/M)
