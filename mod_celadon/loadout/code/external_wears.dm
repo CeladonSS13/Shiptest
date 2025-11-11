@@ -27,6 +27,6 @@
 	path = /obj/item/clothing/suit/hooded/oldblue
 
 /datum/gear/suit/oldgray
-	display_name = "gray hoodie"
+	display_name = "gray old hoodie"
 	description = "An old hoodie that is gray. It has a comfy pocket for keeping your hands warm."
 	path = /obj/item/clothing/suit/hooded/oldgray

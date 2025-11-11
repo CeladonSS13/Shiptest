@@ -10,8 +10,7 @@
 /obj/item/clothing/head/hooded/hood/oldblack
 	name = "black hood"
 	desc = "An old black hood for your black hoodie."
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/hooded.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/hooded.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/winterhood.dmi'
 	icon_state = "oldhoodie_black"
 	item_state = "oldhoodie_black"
 
@@ -27,8 +26,7 @@
 /obj/item/clothing/head/hooded/hood/oldred
 	name = "red hood"
 	desc = "An old red hood for your red hoodie."
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/hooded.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/hooded.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/winterhood.dmi'
 	icon_state = "oldhoodie_red"
 	item_state = "oldhoodie_red"
 
@@ -44,8 +42,7 @@
 /obj/item/clothing/head/hooded/hood/oldblue
 	name = "blue old hood"
 	desc = "An old blue hood for your blue hoodie."
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/hooded.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/hooded.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/winterhood.dmi'
 	icon_state = "oldhoodie_blue"
 	item_state = "oldhoodie_blue"
 
@@ -61,7 +58,6 @@
 /obj/item/clothing/head/hooded/hood/oldgray
 	name = "gray hood"
 	desc = "An old gray hood for your gray hoodie."
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/hooded.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/hooded.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/winterhood.dmi'
 	icon_state = "oldhoodie_gray"
 	item_state = "oldhoodie_gray"
