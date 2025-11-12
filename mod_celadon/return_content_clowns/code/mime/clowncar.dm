@@ -1,7 +1,7 @@
 /obj/vehicle/sealed/car/clowncar
 	name = "clown car"
 	desc = "How someone could even fit in there is byond me."
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/vehicles.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/vehicles.dmi'
 	icon_state = "clowncar"
 	max_integrity = 150
 	armor = list("melee" = 70, "bullet" = 40, "laser" = 40, "energy" = 0, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 80)
@@ -62,7 +62,7 @@
 	. = ..()
 	if(istype(I, /obj/item/food/grown/banana))
 		var/obj/item/food/grown/banana/banana = I
-		obj_integrity += min(banana.seed.potency, max_integrity-obj_integrity)
+		atom_integrity += min(banana.seed.potency, max_integrity-atom_integrity)
 		to_chat(user, span_danger("You use the [banana] to repair the [src]!"))
 		qdel(banana)
 

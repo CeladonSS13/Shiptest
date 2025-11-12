@@ -45,7 +45,7 @@
 "ar" = (
 /obj/effect/turf_decal/corner/opaque/ntblue/border,
 /obj/machinery/light/directional/south,
-/obj/item/banner/command/mundane,
+/obj/item/banner/nanotrasen/mundane,
 /obj/effect/turf_decal/road/line/opaque/white{
 	dir = 1
 	},
@@ -56,7 +56,7 @@
 	dir = 1
 	},
 /obj/machinery/light/directional/north,
-/obj/item/banner/command/mundane,
+/obj/item/banner/nanotrasen/mundane,
 /obj/effect/turf_decal/road/line/opaque/white,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -744,7 +744,7 @@
 	dir = 4;
 	layer = 4.1
 	},
-/obj/item/clothing/suit/space/hardsuit/rd,
+/obj/item/clothing/suit/space/hardsuit/bomb,
 /obj/machinery/suit_storage_unit/inherit,
 /obj/structure/window/reinforced/spawner{
 	dir = 1
@@ -1101,7 +1101,7 @@
 	pixel_x = 2;
 	pixel_y = 6
 	},
-/obj/item/survey_handheld{
+/obj/item/survey_handheld_rnd{
 	pixel_x = -6
 	},
 /obj/item/research_notes/loot/small{

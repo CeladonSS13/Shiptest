@@ -507,7 +507,7 @@
 
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/toy/crayon/mime
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/crayons.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/crayons.dmi'
 	icon_state = "crayonmime"
 	desc = "A very sad-looking crayon."
 	paint_color = "#FFFFFF"
@@ -662,7 +662,8 @@
 			C.blur_eyes(3)
 			C.blind_eyes(1)
 		if(C.get_eye_protection() <= 0) // no eye protection? ARGH IT BURNS. Warning: don't add a stun here. It's a roundstart item with some quirks.
-			C.apply_effects(eyeblur = 5, jitter = 10)
+			C.apply_effects(eyeblur = 5)
+			C.set_timed_status_effect(20 SECONDS, /datum/status_effect/jitter, only_if_higher = TRUE)
 			flash_color(C, flash_color=paint_color, flash_time=40)
 		if(ishuman(C) && actually_paints)
 			var/mob/living/carbon/human/H = C
@@ -753,7 +754,7 @@
 /obj/item/toy/crayon/spraycan/lubecan
 	name = "slippery spraycan"
 	desc = "You can barely keep hold of this thing."
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/crayons.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/crayons.dmi'
 	icon_state = "clowncan2_cap"
 	icon_capped = "clowncan2_cap"
 	icon_uncapped = "clowncan2"
@@ -768,7 +769,7 @@
 /obj/item/toy/crayon/spraycan/mimecan
 	name = "silent spraycan"
 	desc = "Art is best seen, not heard."
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/crayons.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/crayons.dmi'
 	icon_state = "mimecan_cap"
 	icon_capped = "mimecan_cap"
 	icon_uncapped = "mimecan"

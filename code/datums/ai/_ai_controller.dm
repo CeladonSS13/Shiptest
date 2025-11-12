@@ -145,13 +145,60 @@ multiple modular subtrees with behaviors
 /datum/ai_controller/proc/able_to_run()
 	if(world.time < paused_until)
 		return FALSE
+	// [CELADON-ADD] - FIXES_RUNTIMES - Проверяем, что pawn еще существует и не мертв
+	if(QDELETED(pawn))
+		return FALSE
+	if(isliving(pawn))
+		var/mob/living/living_pawn = pawn
+		if(living_pawn.stat == DEAD)
+			return FALSE
+	// [/CELADON-ADD]
 	return TRUE
 
+///Can this pawn interact with objects?
+/datum/ai_controller/proc/ai_can_interact()
+	SHOULD_CALL_PARENT(TRUE)
+	return !QDELETED(pawn)
+
+///Interact with objects
+/datum/ai_controller/proc/ai_interact(target, desired_intent, list/modifiers)
+	if(!ai_can_interact())
+		return FALSE
+
+	var/atom/final_target = isdatum(target) ? target : blackboard[target] //incase we got a blackboard key instead
+
+	if(QDELETED(final_target))
+		return FALSE
+	var/params = list2params(modifiers)
+	var/mob/living/living_pawn = pawn
+	if(isnull(desired_intent))
+		living_pawn.ClickOn(final_target, params)
+		return TRUE
+
+	var/old_intent = living_pawn.a_intent
+	living_pawn.a_intent = desired_intent
+	living_pawn.ClickOn(final_target, params)
+	living_pawn.a_intent = old_intent
+	return TRUE
 
 ///Runs any actions that are currently running
 /datum/ai_controller/process(seconds_per_tick)
 	if(!able_to_run())
-		walk(pawn, 0) //stop moving
+		// walk(pawn, 0) //stop moving	// [CELADON-REMOVE] - FIXES_RUNTIMES - Смещено вниз
+		if(isliving(pawn))
+			var/mob/living/living_pawn = pawn
+			if(living_pawn.stat == DEAD && ai_status == AI_STATUS_ON)
+				// [CELADON-ADD] - FIXES_RUNTIMES - Полностью останавливаем движение при смерти
+				// Полностью останавливаем все движение
+				walk(living_pawn, 0)
+				living_pawn.stop_pulling()
+				ai_movement.stop_moving_towards(src)
+				CancelActions()
+				// [/CELADON-ADD]
+				set_ai_status(AI_STATUS_OFF)
+				return	// [CELADON-ADD] - FIXES_RUNTIMES
+		walk(pawn, 0) // [CELADON-ADD] - FIXES_RUNTIMES - stop moving
+		// [/CELADON-EDIT]
 		return //this should remove them from processing in the future through event-based stuff.
 	if(!LAZYLEN(current_behaviors) && idle_behavior)
 		idle_behavior.perform_idle_behavior(seconds_per_tick, src) //Do some stupid shit while we have nothing to do
@@ -161,13 +208,12 @@ multiple modular subtrees with behaviors
 		CancelActions()
 		return
 
-	for(var/i in current_behaviors)
-		var/datum/ai_behavior/current_behavior = i
+	for(var/datum/ai_behavior/current_behavior as anything in current_behaviors)
 
 		// Convert the current behaviour action cooldown to realtime seconds from deciseconds.current_behavior
 		// Then pick the max of this and the seconds_per_tick passed to ai_controller.process()
 		// Action cooldowns cannot happen faster than seconds_per_tick, so seconds_per_tick should be the value used in this scenario.
-		var/action_seconds_per_tick = max(current_behavior.action_cooldown * 0.1, seconds_per_tick)
+		var/action_seconds_per_tick = max(current_behavior.get_cooldown(src) * 0.1, seconds_per_tick)
 
 		if(current_behavior.behavior_flags & AI_BEHAVIOR_REQUIRE_MOVEMENT) //Might need to move closer
 			if(!current_movement_target)
@@ -222,6 +268,14 @@ multiple modular subtrees with behaviors
 		if(AI_STATUS_OFF)
 			STOP_PROCESSING(SSai_behaviors, src)
 			SSai_controllers.active_ai_controllers -= src
+			// [CELADON-ADD] - FIXES_RUNTIMES - Полностью очищаем состояние при отключении
+			if(pawn)
+				walk(pawn, 0)
+				if(isliving(pawn))
+					var/mob/living/living_pawn = pawn
+					living_pawn.stop_pulling()
+			ai_movement.stop_moving_towards(src)
+			// [/CELADON-ADD]
 			CancelActions()
 
 /datum/ai_controller/proc/PauseAi(time)
@@ -248,7 +302,18 @@ multiple modular subtrees with behaviors
 	var/list/stored_arguments = behavior_args[behavior.type]
 	if(stored_arguments)
 		arguments += stored_arguments
-	behavior.perform(arglist(arguments))
+
+	var/process_flags = behavior.perform(arglist(arguments))
+	if(process_flags & AI_BEHAVIOR_DELAY)
+		behavior_cooldowns[behavior] = world.time + behavior.get_cooldown(src)
+	if(process_flags & AI_BEHAVIOR_FAILED)
+		arguments[1] = src
+		arguments[2] = FALSE
+		behavior.finish_action(arglist(arguments))
+	else if (process_flags & AI_BEHAVIOR_SUCCEEDED)
+		arguments[1] = src
+		arguments[2] = TRUE
+		behavior.finish_action(arglist(arguments))
 
 /datum/ai_controller/proc/CancelActions()
 	if(!LAZYLEN(current_behaviors))
@@ -288,6 +353,15 @@ multiple modular subtrees with behaviors
 		if(iter_behavior.required_distance < minimum_distance)
 			minimum_distance = iter_behavior.required_distance
 	return minimum_distance
+
+/// Returns true if we have a blackboard key with the provided key and it is not qdeleting
+/datum/ai_controller/proc/blackboard_key_exists(key)
+	var/datum/key_value = blackboard[key]
+	if (isdatum(key_value))
+		return !QDELETED(key_value)
+	if (islist(key_value))
+		return length(key_value) > 0
+	return !!key_value
 
 /**
  * Used to manage references to datum by AI controllers
@@ -552,15 +626,6 @@ multiple modular subtrees with behaviors
 				next_to_clear -= inner_value
 
 		index += 1
-
-/// Returns true if we have a blackboard key with the provided key and it is not qdeleting
-/datum/ai_controller/proc/blackboard_key_exists(key)
-	var/datum/key_value = blackboard[key]
-	if (isdatum(key_value))
-		return !QDELETED(key_value)
-	if (islist(key_value))
-		return length(key_value) > 0
-	return !!key_value
 
 #undef TRACK_AI_DATUM_TARGET
 #undef CLEAR_AI_DATUM_TARGET

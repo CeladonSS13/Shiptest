@@ -8,7 +8,8 @@
 	movement_type = FLYING
 	generic_canpass = FALSE
 	plane = GAME_PLANE_FOV_HIDDEN
-	//The sound this plays on impact.
+	wound_bonus = CANT_WOUND // can't wound by default
+	///The sound this plays on impact.
 	var/hitsound = 'sound/weapons/pierce.ogg'
 	var/hitsound_non_living = ""
 	var/hitsound_glass
@@ -172,9 +173,16 @@
 
 	///If defined, on hit we create an item of this type then call hitby() on the hit target with this, mainly used for embedding items (bullets) in targets
 	var/shrapnel_type
-
+	///If we have a shrapnel_type defined, these embedding stats will be passed to the spawned shrapnel type, which will roll for embedding on the target
+	var/list/embedding
 	///If TRUE, hit mobs even if they're on the floor and not our target
 	var/hit_stunned_targets = FALSE
+	//For what kind of brute wounds we're rolling for, if we're doing such a thing. Lasers obviously don't care since they do burn instead.
+	var/sharpness = SHARP_NONE
+	///How much we want to drop both wound_bonus and bare_wound_bonus (to a minimum of 0 for the latter) per tile, for falloff purposes
+	var/wound_falloff_tile
+	///How much we want to drop the embed_chance value, if we can embed, per tile, for falloff purposes
+	var/embed_falloff_tile
 	/// If true directly targeted turfs can be hit
 	var/can_hit_turfs = FALSE
 
@@ -186,12 +194,21 @@
 	. = ..()
 	decayedRange = range
 	speed = speed + speed_mod
+
+	if(embedding)
+		updateEmbedding()
+
 	if(!bullet_identifier)
 		bullet_identifier = name
 	AddElement(/datum/element/connect_loc, projectile_connections)
 
 /obj/projectile/proc/Range()
 	range--
+	if(wound_bonus != CANT_WOUND)
+		wound_bonus += wound_falloff_tile
+		bare_wound_bonus = max(0, bare_wound_bonus + wound_falloff_tile)
+	if(embedding)
+		embedding["embed_chance"] += embed_falloff_tile
 	if(range <= 0 && loc)
 		on_range()
 
@@ -228,6 +245,10 @@
 		var/mob/living/L = target
 		hit_limb = L.check_limb_hit(def_zone)
 	SEND_SIGNAL(src, COMSIG_PROJECTILE_SELF_ON_HIT, firer, target, Angle, hit_limb)
+
+	if(QDELETED(src)) // in case one of the above signals deleted the projectile for whatever reason
+		return
+
 	var/turf/target_loca = get_turf(target)
 
 	var/hitx
@@ -509,23 +530,27 @@
 			return FALSE
 	else
 		var/mob/living/L = target
-		// [CELADON-EDIT] - CELADON_BALANCE - Делаем шансы на попадания
+		// [CELADON-EDIT] - BALANCE_CAN_HIT_TARGET - Делаем шансы на попадания
 		if(iscarbon(L))
-			if(direct_target && !L.density && firer.density && prob(85)) // 85% что пуля попадет в лежащую цель от стоящего стрелка
+			if(direct_target && !L.density && firer.density && prob(80)) // 80% что пуля попадет в лежащую цель от стоящего стрелка
 				return TRUE
 			if(direct_target && !L.density && !firer.density && prob(70)) // 70% что пуля попадет в лежащую цель от лежащего стрелка
 				return TRUE
-			if(direct_target && L.density && !firer.density && prob(90)) // 90% пуля попадет в стоящую цель от лежачего стрелка
+			if(direct_target && L.density && !firer.density && prob(75)) // 75% пуля попадет в стоящую цель от лежачего стрелка
 				return TRUE
+			if(!L.density && ismob(firer)) // Проверяем HARM интент для лежачих целей
+				var/mob/M = firer
+				if(M.a_intent == INTENT_HARM && prob(75)) // 75% что пуля попадет в лежащую цель в HARM интенте
+					return TRUE
 		else if(direct_target)
 			return TRUE
 		// [/CELADON-EDIT]
 		// If target not able to use items, move and stand - or if they're just dead, pass over.
 		if(L.stat || (!hit_stunned_targets && HAS_TRAIT(L, TRAIT_IMMOBILIZED) && HAS_TRAIT(L, TRAIT_FLOORED) && HAS_TRAIT(L, TRAIT_HANDS_BLOCKED)))
 			return FALSE
-	// [CELADON-EDIT] - CELADON_BALANCE - Делаем шансы на попадания
+	// [CELADON-EDIT] - BALANCE_CAN_HIT_TARGET - Делаем шансы на попадания
 	// return TRUE 	// CELADON-EDIT - ORIGINAL
-	if(prob(25))	// С вероятность 20% шальная пуля зацепит лежащего
+	if(prob(75))	// С вероятность 75% шальная пуля зацепит лежащего
 		return TRUE
 	return FALSE
 	// [/CELADON-EDIT]
@@ -624,7 +649,7 @@
 	return PROJECTILE_PIERCE_NONE
 
 /obj/projectile/proc/check_ricochet(atom/A)
-	var/chance = ricochet_chance * A.ricochet_chance_mod
+	var/chance = ricochet_chance * A.receive_ricochet_chance_mod
 	if(firer && HAS_TRAIT(firer, TRAIT_NICE_SHOT))
 		chance += NICE_SHOT_RICOCHET_BONUS
 	if(prob(chance))
@@ -918,7 +943,7 @@
 	var/p_y = LAZYACCESS(modifiers, ICON_Y) ? text2num(LAZYACCESS(modifiers, ICON_Y)) : world.icon_size / 2 // This centers the target if modifiers aren't passed.
 
 
-	var/static/list/snowflake_matrix_list = list(/turf/open/floor/grass/ship, /turf/open/floor/plating/asteroid, /turf/open/floor/plating/asteroid/dry_seafloor, /turf/open/floor/plating/asteroid/snow, /turf/open/floor/plating/asteroid/icerock, /turf/open/floor/plating/grass, /turf/open/floor/plating/asteroid/sand) //List of turfs that get translated by -19/-19 for smoothing (this breaks projectiles)
+	var/static/list/snowflake_matrix_list = list(/turf/open/floor/grass/ship, /turf/open/floor/plating/asteroid, /turf/open/floor/plating/asteroid/dry_seafloor, /turf/open/floor/plating/asteroid/snow, /turf/open/floor/plating/asteroid/icerock, /turf/open/floor/plating/asteroid/sand) //List of turfs that get translated by -19/-19 for smoothing (this breaks projectiles)
 	if(target)
 		if(is_type_in_list(target, snowflake_matrix_list)) //yes, this is stupid
 			if(target.smoothing_flags)
@@ -1013,3 +1038,27 @@
 
 /obj/projectile/experience_pressure_difference()
 	return
+
+///Like [/obj/item/proc/updateEmbedding] but for projectiles instead, call this when you want to add embedding or update the stats on the embedding element
+/obj/projectile/proc/updateEmbedding()
+	if(!shrapnel_type || !LAZYLEN(embedding))
+		return
+
+	AddElement(/datum/element/embed,\
+		embed_chance = (!isnull(embedding["embed_chance"]) ? embedding["embed_chance"] : EMBED_CHANCE),\
+		fall_chance = (!isnull(embedding["fall_chance"]) ? embedding["fall_chance"] : EMBEDDED_ITEM_FALLOUT),\
+		pain_chance = (!isnull(embedding["pain_chance"]) ? embedding["pain_chance"] : EMBEDDED_PAIN_CHANCE),\
+		pain_mult = (!isnull(embedding["pain_mult"]) ? embedding["pain_mult"] : EMBEDDED_PAIN_MULTIPLIER),\
+		remove_pain_mult = (!isnull(embedding["remove_pain_mult"]) ? embedding["remove_pain_mult"] : EMBEDDED_UNSAFE_REMOVAL_PAIN_MULTIPLIER),\
+		rip_time = (!isnull(embedding["rip_time"]) ? embedding["rip_time"] : EMBEDDED_UNSAFE_REMOVAL_TIME),\
+		ignore_throwspeed_threshold = (!isnull(embedding["ignore_throwspeed_threshold"]) ? embedding["ignore_throwspeed_threshold"] : FALSE),\
+		impact_pain_mult = (!isnull(embedding["impact_pain_mult"]) ? embedding["impact_pain_mult"] : EMBEDDED_IMPACT_PAIN_MULTIPLIER),\
+		jostle_chance = (!isnull(embedding["jostle_chance"]) ? embedding["jostle_chance"] : EMBEDDED_JOSTLE_CHANCE),\
+		jostle_pain_mult = (!isnull(embedding["jostle_pain_mult"]) ? embedding["jostle_pain_mult"] : EMBEDDED_JOSTLE_PAIN_MULTIPLIER),\
+		pain_stam_pct = (!isnull(embedding["pain_stam_pct"]) ? embedding["pain_stam_pct"] : EMBEDDED_PAIN_STAM_PCT),\
+		projectile_payload = shrapnel_type)
+	return TRUE
+
+///Checks if the projectile can embed into someone
+/obj/projectile/proc/can_embed_into(atom/hit)
+	return embedding && shrapnel_type && iscarbon(hit) && !HAS_TRAIT(hit, TRAIT_PIERCEIMMUNE)

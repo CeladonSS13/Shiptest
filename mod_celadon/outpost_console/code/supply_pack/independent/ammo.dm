@@ -18,7 +18,6 @@
 > 4.6x30
 > 5.7x39
 > 5.56 caseless
-> [*] .410
 > 12 Gauge
 > 5.56x42 (Hydra)
 > [-] 5.56x45 (G36)
@@ -33,6 +32,7 @@
 > ferro pellets
 > ferroslugs
 > ferro lances
+> .410
 
 Некоторые хорошие патроны были закомментированы и перенесены в отдельные фракционные карго.
 
@@ -312,6 +312,28 @@ MARK: 12 Gauge
 	desc = "Contains a box of 7 versatile tech shells, capable of producing a variety of deadly effects for any situation. Some assembly required."
 	cost = 210
 	contains = list(/obj/item/storage/box/techshot)
+
+/*
+MARK: .410
+*/
+
+/datum/supply_pack/faction/independent/ammo/a410_buckshot
+	name = ".410 Buckshot Box"
+	desc = "Contains a box with 60 buckshot cartridges of .410 caliber."
+	contains = list(/obj/item/storage/box/ammo/a410_ammo_box)
+	cost = 1000
+
+/datum/supply_pack/faction/independent/ammo/a410_flechette
+	name = ".410 Flechette Box"
+	desc = "Contains a box with 60 flechette rounds of .410 caliber."
+	contains = list(/obj/item/storage/box/ammo/a410_ammo_box/flechette)
+	cost = 1500
+
+/datum/supply_pack/faction/independent/ammo/a410_slug
+	name = ".410 Slug Box"
+	desc = "Contains a box with 60 slug cartridges of .410 caliber."
+	contains = list(/obj/item/storage/box/ammo/a410_ammo_box/slug)
+	cost = 2000
 
 /*
 MARK: 5.56x42

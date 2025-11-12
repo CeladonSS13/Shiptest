@@ -4,6 +4,7 @@
 	name = "brown cloak"
 	desc = "It's a cape that can be worn around your neck."
 	icon = 'icons/obj/clothing/cloaks.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/neck.dmi'
 	icon_state = "qmcloak"
 	w_class = WEIGHT_CLASS_SMALL
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
@@ -67,7 +68,7 @@
 	icon_state = "goliath_cloak"
 	desc = "A staunch, practical cape made out of numerous monster materials, it is coveted amongst exiles & hermits."
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals, /obj/item/pickaxe, /obj/item/melee/spear, /obj/item/organ/regenerative_core/legion, /obj/item/melee/knife/bone, /obj/item/melee/knife/survival)
-	armor = list("melee" = 35, "bullet" = 10, "laser" = 25, "energy" = 35, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60) //a fair alternative to bone armor, requiring alternative materials and gaining a suit slot
+	armor = list("melee" = 35, "bullet" = 10, "laser" = 25, "energy" = 35, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60, "wound" = 10) //a fair alternative to bone armor, requiring alternative materials and gaining a suit slot
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/goliath
 	body_parts_covered = CHEST|GROIN|ARMS
 
@@ -75,7 +76,7 @@
 	name = "goliath cloak hood"
 	icon_state = "golhood"
 	desc = "A protective & concealing hood."
-	armor = list("melee" = 35, "bullet" = 10, "laser" = 25, "energy" = 35, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60)
+	armor = list("melee" = 35, "bullet" = 10, "laser" = 25, "energy" = 35, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60, "wound" = 10)
 	clothing_flags = SNUG_FIT
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
 	transparent_protection = HIDEMASK

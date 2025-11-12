@@ -599,9 +599,6 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 6
 	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
-	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
@@ -1008,12 +1005,6 @@
 	pixel_y = 6
 	},
 /obj/item/toy/beach_ball,
-/obj/effect/turf_decal/weather/sand{
-	dir = 5
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 9
-	},
 /obj/item/toy/seashell{
 	pixel_y = -10;
 	pixel_x = 11
@@ -5045,7 +5036,7 @@
 	},
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/effect/decal/cleanable/blood/gibs,
-/mob/living/simple_animal/cow{
+/mob/living/basic/cow{
 	desc = "Allegedly a bull.";
 	name = "Otis";
 	real_name = "Betsy"
@@ -9744,9 +9735,6 @@
 "TW" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/item/reagent_containers/glass/bucket,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
-	},
 /turf/open/floor/plating{
 	icon_state = "platingdmg2"
 	},

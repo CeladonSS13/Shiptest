@@ -1,20 +1,20 @@
 //	Syndicate
-/datum/outfit/job/syndicate/post_equip(mob/living/carbon/human/H, visualsOnly)
+/datum/outfit/job/cel/syndicate/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	H.faction |= list(FACTION_PLAYER_SYNDICATE)
 
 //	Nanotrasen
-/datum/outfit/job/nanotrasen/post_equip(mob/living/carbon/human/H, visualsOnly)
+/datum/outfit/job/cel/nanotrasen/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	H.faction |= list(FACTION_PLAYER_NANOTRASEN, FACTION_PLAYER_SOLFED)
 
 //	SolFed
-/datum/outfit/job/solfed/post_equip(mob/living/carbon/human/H, visualsOnly)
+/datum/outfit/job/cel/solfed/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	H.faction |= list(FACTION_PLAYER_SOLFED, FACTION_PLAYER_NANOTRASEN)
 
 //	InteQ
-/datum/outfit/job/inteq/post_equip(mob/living/carbon/human/H, visualsOnly)
+/datum/outfit/job/cel/inteq/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	H.faction |= list(FACTION_PLAYER_INTEQ)
 

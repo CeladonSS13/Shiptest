@@ -180,7 +180,7 @@
 	mob_spawn_list = list(
 		/mob/living/basic/hivebot/strong/anima = 30,
 		/mob/living/basic/hivebot/ranged/anima = 15,
-		/mob/living/basic/hivebot/ranged/rapid/anima = 15,
+		/mob/living/basic/hivebot/rapid/anima = 15,
 		/mob/living/simple_animal/hostile/mimic/anima = 40,
 		/mob/living/simple_animal/bot/firebot/rockplanet/anima = 15,
 		/mob/living/simple_animal/bot/secbot/ed209/rockplanet/anima = 3,
@@ -209,7 +209,7 @@
 //Биом джунглей
 /datum/biome/anima/jungle
 	open_turf_types = list(
-	/turf/open/floor/plating/grass/jungle/lit/anima = 1
+	/turf/open/floor/plating/asteroid/dirt/grass/jungle/lit/anima = 1
 	)
 	flora_spawn_chance = 70
 	flora_spawn_list = list(

@@ -322,6 +322,10 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod/retro, 17)
 		open_machine()
 		qdel(mob_occupant)
 		occupant = null
+		// Check if this is an outpost cryopod that should replenish the role
+		if(istype(src, /obj/machinery/cryopod/outpost))
+			var/obj/machinery/cryopod/outpost/outpost_pod = src
+			outpost_pod.try_replenish_role()
 		return
 	// [/CELADON-ADD]
 

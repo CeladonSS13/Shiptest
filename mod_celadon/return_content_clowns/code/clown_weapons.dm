@@ -106,7 +106,7 @@
 			M.Stun(200)
 			M.Unconscious(80)
 		else
-			M.set_jitter(500)
+			M.set_timed_status_effect(500 SECONDS, /datum/status_effect/jitter, only_if_higher = TRUE)
 
 	log_message("Honked from [src.name]. HONK!", LOG_MECHA)
 	var/turf/T = get_turf(src)

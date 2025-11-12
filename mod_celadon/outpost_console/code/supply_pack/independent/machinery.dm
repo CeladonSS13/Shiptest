@@ -131,13 +131,9 @@ MARK:	Запчасти
 
 /datum/supply_pack/faction/independent/machinery/power
 	name = "Power Cell Crate"
-	desc = "Looking for power overwhelming? Look no further. Contains five high-voltage power cells."
-	cost = 1500
-	contains = list(/obj/item/stock_parts/cell/high,
-					/obj/item/stock_parts/cell/high,
-					/obj/item/stock_parts/cell/high,
-					/obj/item/stock_parts/cell/high,
-					/obj/item/stock_parts/cell/high)
+	desc = "Looking for power overwhelming? Look no further."
+	cost = 300
+	contains = list(/obj/item/stock_parts/cell/high)
 	crate_name = "power cell crate"
 	crate_type = /obj/structure/closet/crate/engineering/electrical
 
@@ -232,24 +228,6 @@ MARK:	Разная машинерия
 	crate_name = "holofield generator crate"
 	crate_type = /obj/structure/closet/crate/engineering
 
-/datum/supply_pack/faction/independent/machinery/ion_thruster
-	name = "Ion Thruster Crate"
-	desc = "A crate containing an ion thruster and its precharger's electronics. For when you need a little extra thrust."
-	cost = 1500
-	contains = list(/obj/item/circuitboard/machine/shuttle/smes,
-					/obj/item/circuitboard/machine/shuttle/engine/electric)
-	crate_name = "ion thruster crate"
-	crate_type = /obj/structure/closet/crate/engineering
-
-/datum/supply_pack/faction/independent/machinery/combustion_thruster
-	name = "Combustion Thruster Crate"
-	desc = "A crate containing a combustion thruster and its heater's electronics. For when you need complicated thrust."
-	cost = 2000
-	contains = list(/obj/item/circuitboard/machine/shuttle/fire_heater,
-					/obj/item/circuitboard/machine/shuttle/engine/fire)
-	crate_name = "combustion thruster crate"
-	crate_type = /obj/structure/closet/crate/engineering
-
 /datum/supply_pack/faction/independent/machinery/drill_crate
 	name = "Heavy duty laser mining drill"
 	desc = "An experimental laser-based mining drill that Nanotrasen is kindly allowing YOU, the customer, to opt into testing of."
@@ -275,6 +253,14 @@ MARK:	Разная машинерия
 /*
 MARK:	Генерация энергии
 */
+
+/datum/supply_pack/faction/independent/machinery/smes
+	name = "SMES Circuit Board"
+	desc = "Electronics (circuit board) for a superconducting magnetic energy storage (SMES) unit."
+	cost = 500
+	contains = list(/obj/item/circuitboard/machine/smes)
+	crate_name = "smes circuit board crate"
+	crate_type = /obj/structure/closet/crate/engineering/electrical
 
 /datum/supply_pack/faction/independent/machinery/pacman
 	name = "P.A.C.M.A.N Generator Crate"
@@ -401,6 +387,24 @@ MARK:	Ядра двигателей
 	MARK:	Двигатели
 */
 
+/datum/supply_pack/faction/independent/machinery/ion_thruster
+	name = "Ion Thruster Crate"
+	desc = "A crate containing an ion thruster and its precharger's electronics. For when you need a little extra thrust."
+	cost = 1500
+	contains = list(/obj/item/circuitboard/machine/shuttle/smes,
+					/obj/item/circuitboard/machine/shuttle/engine/electric)
+	crate_name = "ion thruster crate"
+	crate_type = /obj/structure/closet/crate/engineering
+
+/datum/supply_pack/faction/independent/machinery/combustion_thruster
+	name = "Combustion Thruster Crate"
+	desc = "A crate containing a combustion thruster and its heater's electronics. For when you need complicated thrust."
+	cost = 2000
+	contains = list(/obj/item/circuitboard/machine/shuttle/fire_heater,
+					/obj/item/circuitboard/machine/shuttle/engine/fire)
+	crate_name = "combustion thruster crate"
+	crate_type = /obj/structure/closet/crate/engineering
+
 /datum/supply_pack/faction/independent/machinery/plasma_thruster
 	name = "Plasma Thruster Crate"
 	desc = "A crate containing a plasma thruster and its heater's electronics. For when you need a lot of extra thrust."
@@ -443,3 +447,23 @@ MARK:	Ядра двигателей
 					/obj/item/circuitboard/computer/rdconsole)
 	crate_name = "hacked r&d kit"
 	crate_type = /obj/structure/closet/crate/science
+
+/**
+	MARK: Сервис
+ */
+
+/datum/supply_pack/faction/independent/machinery/booze_dispenser
+	name = "Booze Dispenser (Machine Board)"
+	desc = "The circuit board for a portable booze dispenser."
+	cost = 2500
+	contains = list(/obj/item/circuitboard/machine/chem_dispenser/drinks/beer)
+	crate_name = "service crate"
+	crate_type = /obj/structure/closet/crate/hydroponics
+
+/datum/supply_pack/faction/independent/machinery/soda_dispenser
+	name = "Soda Dispenser (Machine Board)"
+	desc = "The circuit board for a portable soda dispenser."
+	cost = 2500
+	contains = list(/obj/item/circuitboard/machine/chem_dispenser/drinks)
+	crate_name = "service crate"
+	crate_type = /obj/structure/closet/crate/hydroponics

@@ -51,9 +51,9 @@
 	alt_uniform = /obj/item/clothing/under/syndicate/hardliners/jumpsuit
 
 /datum/outfit/job/syndicate/assistant/ngr
-	name = "Syndicate - Initiate (New Gorlex Republic)"
+	name = "Syndicate - Crewman (New Gorlex Republic)"
 	faction = FACTION_NGR
-	id_assignment = "Initiate"
+	id_assignment = "Crewman"
 
 	head = /obj/item/clothing/head/ngr
 	uniform = /obj/item/clothing/under/syndicate/ngr
@@ -280,9 +280,7 @@
 	head = /obj/item/clothing/head/HoS/syndicate
 	gloves = /obj/item/clothing/gloves/combat
 	suit = /obj/item/clothing/suit/armor/vest/capcarapace/syndicate
-	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
-	// [/CELADON-REMOVE]
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 
 	backpack = /obj/item/storage/backpack/security
 	satchel = /obj/item/storage/backpack/satchel/sec
@@ -417,10 +415,7 @@
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	head = /obj/item/clothing/head/hardhat/white
 	gloves = /obj/item/clothing/gloves/color/black
-	// [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)	// CELADON-EDIT - ORIGINAL
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
-	// [/CELADON-EDIT]
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)
 
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
@@ -472,10 +467,8 @@
 	head = /obj/item/clothing/head/beret/cmo/cybersun
 	suit = /obj/item/clothing/suit/toggle/labcoat/raincoat
 	l_hand = /obj/item/storage/firstaid/medical
-	suit_store = /obj/item/flashlight/pen
-	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
-	// [/CELADON-REMOVE]
+	suit_store = /obj/item/flashlight/pen/paramedic
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 	box = /obj/item/storage/box/survival/medical
 
 /datum/outfit/job/syndicate/cmo/suns
@@ -490,10 +483,8 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat/suns/cmo
 	l_hand = /obj/item/storage/firstaid/medical
 	r_hand = /obj/item/storage/belt/sabre/suns/cmo
-	suit_store = /obj/item/flashlight/pen
-	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
-	// [/CELADON-REMOVE]
+	suit_store = /obj/item/flashlight/pen/paramedic
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile/suns
 	glasses = /obj/item/clothing/glasses/hud/health/suns
 	head = /obj/item/clothing/head/suns/cmo
@@ -519,11 +510,8 @@
 	id = /obj/item/card/id/syndicate_command/crew_id
 	r_pocket = /obj/item/melee/knife/survival
 	glasses = /obj/item/clothing/glasses/hud/health
-	// [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/storage/box/ids=1,
-	// /obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced = 1)	// CELADON-EDIT - ORIGINAL
-	backpack_contents = list(/obj/item/storage/box/ids=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
-	// [/CELADON-EDIT]
+	backpack_contents = list(/obj/item/storage/box/ids=1,\
+		/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
 
 /datum/outfit/job/syndicate/head_of_personnel/ngr
 	name = "Syndicate - Ensign (NGR)"
@@ -761,7 +749,7 @@
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile/evil
 	belt = /obj/item/storage/belt/medical/paramedic
 	id = /obj/item/card/id
-	suit_store = /obj/item/flashlight/pen
+	suit_store = /obj/item/flashlight/pen/paramedic
 	backpack_contents = list(/obj/item/roller=1)
 	pda_slot = ITEM_SLOT_LPOCKET
 	box = /obj/item/storage/box/survival/medical
@@ -958,6 +946,12 @@
 
 	uniform = /obj/item/clothing/under/syndicate/ngr/fatigues
 	head = /obj/item/clothing/head/helmet/ngr/swat
+
+/datum/outfit/job/syndicate/security/ngr/pilot/skivvies
+	name = "Syndicate - Pilot Jumpsuit (New Gorlex Republic)"
+	head = null
+	l_pocket = null
+	r_pocket = null
 
 /datum/outfit/job/syndicate/security/twink
 	name = "Syndicate - Operative (Twinkleshine)"

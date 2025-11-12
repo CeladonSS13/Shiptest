@@ -3,20 +3,7 @@
 	crate_type = /obj/structure/closet/crate/engineering
 
 /*
-		Vehicles
-*/
-
-/datum/supply_pack/faction/independent/tools/all_terrain_vehicle
-	name = "All Terrain Vehicle"
-	desc = "Contains one ATV and a key, for when you want to explore the frontier in style."
-	cost = 2000
-	contains = list(/obj/vehicle/ridden/atv,
-					/obj/item/key)
-	crate_name = "ATV crate"
-	crate_type = /obj/structure/closet/crate/large
-
-/*
-		Actual tools
+	MARK: Actual tools
 */
 
 /datum/supply_pack/faction/independent/tools/toolbox
@@ -141,8 +128,15 @@
 	contains = list(/obj/item/gun/energy/plasmacutter)
 	crate_name = "plasmacutter crate"
 
+/datum/supply_pack/faction/independent/tools/rcl
+	name = "Rapid cable layer Crate"
+	desc = "Contains a rapid cable layer."
+	cost = 600
+	contains = list(/obj/item/rcl)
+	crate_name = "rapid cable layer crate"
+
 /*
-		Liquid tanks
+	MARK: Liquid tanks
 */
 
 /datum/supply_pack/faction/independent/tools/fueltank
@@ -233,6 +227,19 @@
 	crate_type = /obj/structure/closet/crate/wooden
 	crate_name = "basic mining crate"
 
-/*
-	MARK: Цистерны для жидкостей
-*/
+/obj/structure/closet/crate/privatecrate
+	desc = "A private steel crate."
+	icon_state = "privatecrate"
+
+/datum/supply_pack/faction/independent/tools/wall_painter
+	name = "Набор юного художника"
+	desc = "Содержит 1х покрасчик стен, 1х покрасчик труб, 1х покрасчик декалей, 1х покрасчик шлюзов, 1х долото."
+	cost = 1500
+	contains = list(
+		/obj/item/wall_painter,
+		/obj/item/pipe_painter,
+		/obj/item/decal_painter,
+		/obj/item/airlock_painter,
+		/obj/item/chisel)
+	crate_type = /obj/structure/closet/crate/privatecrate
+	crate_name = "private art crate"

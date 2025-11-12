@@ -54,7 +54,7 @@
 			officers += crew[job]
 		output += crew[job]
 
-	return "[length(crew)] ([officers] officer[length(officers) != 1 ? "s" : ""])"
+	return "[output] ([officers] officer[officers != 1 ? "s" : ""])"
 
 /datum/autowiki/ship/proc/format_crew_list(list/crew)
 	var/output = ""
@@ -113,11 +113,11 @@
 	hudicon.Blend(icon('icons/mob/hud.dmi', "hud[initial(to_equip.outfit.job_icon)]"), ICON_OVERLAY)
 */
 
-	if(!icon_exists('mod_celadon/_storge_icons/icons/resprite/hud/hud.dmi', "hud[initial(to_equip.outfit.faction_icon)]"))
+	if(!icon_exists('mod_celadon/_storage_icons/icons/resprite/hud/hud.dmi', "hud[initial(to_equip.outfit.faction_icon)]"))
 		return FALSE
 
-	var/icon/hudicon = icon('mod_celadon/_storge_icons/icons/resprite/hud/hud.dmi', "hud[initial(to_equip.outfit.faction_icon)]")
-	hudicon.Blend(icon('mod_celadon/_storge_icons/icons/resprite/hud/hud.dmi', "hud[initial(to_equip.outfit.job_icon)]"), ICON_OVERLAY)
+	var/icon/hudicon = icon('mod_celadon/_storage_icons/icons/resprite/hud/hud.dmi', "hud[initial(to_equip.outfit.faction_icon)]")
+	hudicon.Blend(icon('mod_celadon/_storage_icons/icons/resprite/hud/hud.dmi', "hud[initial(to_equip.outfit.job_icon)]"), ICON_OVERLAY)
 // [/CELADON-EDIT]
 	hudicon.Crop(1, 17, 8, 24)
 

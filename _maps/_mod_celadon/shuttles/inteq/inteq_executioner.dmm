@@ -348,6 +348,9 @@
 /obj/machinery/computer/security{
 	dir = 1
 	},
+/obj/machinery/camera/autoname{
+	dir = 10
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "di" = (
@@ -1243,7 +1246,6 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "ny" = (
-/obj/machinery/camera/autoname,
 /obj/structure/closet/secure_closet/wall{
 	dir = 1;
 	icon_door = "solgov_wall";
@@ -1317,6 +1319,10 @@
 	pixel_y = 1
 	},
 /obj/machinery/light/small/directional/west,
+/obj/machinery/light_switch{
+	pixel_y = 23;
+	pixel_x = -12
+	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/toilet)
 "oa" = (
@@ -1491,10 +1497,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "pj" = (
-/obj/machinery/door/airlock/public/glass{
-	dir = 4;
-	name = "medical"
-	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
@@ -1504,8 +1506,12 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plasteel/stairs/rockplanet{
-	dir = 4
+/obj/machinery/door/airlock/public/glass{
+	dir = 4;
+	name = "medical"
+	},
+/turf/open/floor/plasteel/stairs{
+	dir = 8
 	},
 /area/ship/medical)
 "pw" = (
@@ -2153,7 +2159,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plasteel/stairs/rockplanet,
+/turf/open/floor/plasteel/stairs,
 /area/ship/cargo)
 "yK" = (
 /obj/effect/turf_decal/siding/thinplating,
@@ -4131,9 +4137,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plasteel/stairs/rockplanet{
-	dir = 1
-	},
+/turf/open/floor/plasteel/stairs,
 /area/ship/cargo)
 "ZQ" = (
 /obj/structure/railing,

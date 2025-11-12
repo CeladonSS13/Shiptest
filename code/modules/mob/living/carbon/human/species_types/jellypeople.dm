@@ -3,7 +3,7 @@
 	name = "\improper Jellyperson"
 	id = SPECIES_JELLYPERSON
 	default_color = "00FF90"
-	species_traits = list(MUTCOLORS,EYECOLOR,NOBLOOD,NO_BONES,HAIR,FACEHAIR)
+	species_traits = list(MUTCOLORS,EYECOLOR,NOBLOOD,HAIR,FACEHAIR,HAS_FLESH)
 	inherent_traits = list(TRAIT_TOXINLOVER)
 	hair_color = "mutcolor"
 	hair_alpha = 150
@@ -51,10 +51,15 @@
 /datum/species/jelly/spec_life(mob/living/carbon/human/H)
 	if(H.stat == DEAD) //can't farm slime jelly from a dead slime/jelly person indefinitely
 		return
+	// [CELADON-EDIT] - FIXES_JELLY_BLOOD
+	if(H.blood_volume <= 0)
+		H.blood_volume = 0
 	if(!H.blood_volume)
 		H.blood_volume += 5
+	// [/CELADON-ADD]
 		H.adjustBruteLoss(5)
 		to_chat(H, span_danger("You feel empty!"))
+		H.updatehealth() // Force health update to prevent negative health // [CELADON-ADD] - FIXES_JELLY_BLOOD
 
 	if(H.blood_volume < BLOOD_VOLUME_NORMAL)
 		if(H.nutrition >= NUTRITION_LEVEL_STARVING)

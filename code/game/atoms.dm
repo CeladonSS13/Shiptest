@@ -22,9 +22,9 @@
 	var/flags_ricochet = NONE
 
 	///When a projectile tries to ricochet off this atom, the projectile ricochet chance is multiplied by this
-	var/ricochet_chance_mod = 1
+	var/receive_ricochet_chance_mod = 1
 	///When a projectile ricochets off this atom, it deals the normal damage * this modifier to this atom
-	var/ricochet_damage_mod = 0.33
+	var/receive_ricochet_damage_coeff = 0.33
 
 	///Reagents holder
 	var/datum/reagents/reagents = null
@@ -271,6 +271,16 @@
 
 	custom_materials = null //Null the list to prepare for applying the materials properly
 	set_custom_materials(temp_list)
+
+	if(uses_integrity)
+		if (islist(armor))
+			armor = getArmor(arglist(armor))
+		else if (!armor)
+			armor = getArmor()
+		else if (!istype(armor, /datum/armor))
+			stack_trace("Invalid type [armor.type] found in .armor during /obj Initialize()")
+		if(atom_integrity == null)
+			atom_integrity = max_integrity
 
 	ComponentInitialize()
 	InitializeAIController()
@@ -580,13 +590,18 @@
  * [COMSIG_ATOM_GET_EXAMINE_NAME] signal
  */
 /atom/proc/get_examine_name(mob/user)
-	. = "\a <b>[src]</b>"
-	var/list/override = list(gender == PLURAL ? "some" : "a", " ", "[name]")
-	if(article)
-		. = "[article] <b>[src]</b>"
-		override[EXAMINE_POSITION_ARTICLE] = article
-	if(SEND_SIGNAL(src, COMSIG_ATOM_GET_EXAMINE_NAME, user, override) & COMPONENT_EXNAME_CHANGED)
-		. = override.Join("")
+// [CELADON-EDIT] - Обновлен legacy код... // Не принимать обновы по нему с оффов код с TG
+	var/list/override = list(article, null, "<b>[name]</b>")
+	SEND_SIGNAL(src, COMSIG_ATOM_GET_EXAMINE_NAME, user, override)
+
+	if(!isnull(override[EXAMINE_POSITION_ARTICLE]))
+		override -= null // IF there is no "before", don't try to join it
+		return jointext(override, " ")
+	if(!isnull(override[EXAMINE_POSITION_BEFORE]))
+		override -= null // There is no article, don't try to join it
+		return "\a [jointext(override, " ")]"
+	return "\a <b>[src]</b>"
+// [/CELADON-EDIT]
 
 ///Generate the full examine string of this atom (including icon for goonchat)
 /atom/proc/get_examine_string(mob/user, thats = FALSE)
@@ -1445,6 +1460,21 @@
  * * addition - is any additional text, which will be appended to the rest of the log line
  */
 /proc/log_combat(atom/user, atom/target, what_done, atom/object=null, addition=null)
+	// [CELADON-ADD] - FIXES_RUNTIMES - Исправляет рантайм с нуль логами атак
+	if(!user || !target)
+		return
+	// Resolve weakrefs to actual atoms
+	if(istype(user, /datum/weakref))
+		var/datum/weakref/user_ref = user
+		user = user_ref.resolve()
+		if(!user)
+			return
+	if(istype(target, /datum/weakref))
+		var/datum/weakref/target_ref = target
+		target = target_ref.resolve()
+		if(!target)
+			return
+	// [/CELADON-ADD]
 	var/ssource = key_name(user)
 	var/starget = key_name(target)
 
@@ -1632,6 +1662,10 @@
 					max_grav = max(SG.active,max_grav)
 		return max_grav
 
+///Called after the atom is 'tamed' for type-specific operations, Usually called by the tameable component but also other things.
+/atom/proc/tamed(mob/living/tamer, obj/item/food)
+	return
+
 /**
  * Called when a mob examines (shift click or verb) this atom twice (or more) within EXAMINE_MORE_TIME (default 1.5 seconds)
  *
@@ -1758,3 +1792,36 @@
 /atom/proc/InitializeAIController()
 	if(ai_controller)
 		ai_controller = new ai_controller(src)
+
+/**
+ * log_wound() is for when someone is *attacked* and suffers a wound. Note that this only captures wounds from damage, so smites/forced wounds aren't logged, as well as demotions like cuts scabbing over
+ *
+ * Note that this has no info on the attack that dealt the wound: information about where damage came from isn't passed to the bodypart's damaged proc. When in doubt, check the attack log for attacks at that same time
+ * TODO later: Add logging for healed wounds, though that will require some rewriting of healing code to prevent admin heals from spamming the logs. Not high priority
+ *
+ * Arguments:
+ * * victim- The guy who got wounded
+ * * suffered_wound- The wound, already applied, that we're logging. It has to already be attached so we can get the limb from it
+ * * dealt_damage- How much damage is associated with the attack that dealt with this wound.
+ * * dealt_wound_bonus- The wound_bonus, if one was specified, of the wounding attack
+ * * dealt_bare_wound_bonus- The bare_wound_bonus, if one was specified *and applied*, of the wounding attack. Not shown if armor was present
+ * * base_roll- Base wounding ability of an attack is a random number from 1 to (dealt_damage ** WOUND_DAMAGE_EXPONENT). This is the number that was rolled in there, before mods
+ */
+/proc/log_wound(atom/victim, datum/wound/suffered_wound, dealt_damage, dealt_wound_bonus, dealt_bare_wound_bonus, base_roll)
+	if(QDELETED(victim) || !suffered_wound)
+		return
+	var/message = "has suffered: [suffered_wound][suffered_wound.limb ? " to [suffered_wound.limb.name]" : null]"// maybe indicate if it's a promote/demote?
+
+	if(dealt_damage)
+		message += " | Damage: [dealt_damage]"
+		// The base roll is useful since it can show how lucky someone got with the given attack. For example, dealing a cut
+		if(base_roll)
+			message += " (rolled [base_roll]/[dealt_damage ** WOUND_DAMAGE_EXPONENT])"
+
+	if(dealt_wound_bonus)
+		message += " | WB: [dealt_wound_bonus]"
+
+	if(dealt_bare_wound_bonus)
+		message += " | BWB: [dealt_bare_wound_bonus]"
+
+	victim.log_message(message, LOG_ATTACK, color="blue")

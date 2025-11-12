@@ -1,6 +1,6 @@
 /datum/map_generator/planet_generator/waste
 
-	mountain_height = 0.35
+	mountain_height = 0.5
 	perlin_zoom = 40
 
 	initial_closed_chance = 45
@@ -78,11 +78,11 @@
 			BIOME_HIGHEST_HUMIDITY = /datum/biome/cave/waste/tar_bed
 		),
 		BIOME_HOT_CAVE = list( //metal wreck for salvaging
-			BIOME_LOWEST_HUMIDITY = /datum/biome/cave/waste/metal/hivebot,
-			BIOME_LOW_HUMIDITY = /datum/biome/cave/waste/metal/hivebot,
-			BIOME_MEDIUM_HUMIDITY = /datum/biome/cave/waste/metal/hivebot,
-			BIOME_HIGH_HUMIDITY = /datum/biome/cave/waste/metal/,
-			BIOME_HIGHEST_HUMIDITY = /datum/biome/cave/waste/metal/
+			BIOME_LOWEST_HUMIDITY = /datum/biome/cave/waste,
+			BIOME_LOW_HUMIDITY = /datum/biome/cave/waste,
+			BIOME_MEDIUM_HUMIDITY = /datum/biome/cave/waste/metal,
+			BIOME_HIGH_HUMIDITY = /datum/biome/cave/waste/metal,
+			BIOME_HIGHEST_HUMIDITY = /datum/biome/cave/waste/metal
 		)
 	)
 
@@ -280,7 +280,7 @@
 		/mob/living/simple_animal/bot/secbot/ed209/rockplanet = 3,
 		/mob/living/simple_animal/hostile/abandoned_minebot = 15,
 		/mob/living/simple_animal/bot/floorbot/rockplanet = 15,
-		/obj/structure/spawner/hivebot = 10
+		/obj/structure/spawner/hivebot = 15
 	)
 	mob_spawn_chance = 2
 
@@ -301,11 +301,11 @@
 	)
 
 	closed_turf_types =  list(
-		/turf/closed/mineral/random/wasteplanet = 40,
+		/turf/closed/mineral/random/wasteplanet = 60,
 		/turf/closed/wall/r_wall/wasteplanet = 1,
-		/turf/closed/wall/r_wall/rust/wasteplanet = 3,
-		/turf/closed/wall/wasteplanet = 2,
-		/turf/closed/wall/rust/wasteplanet = 6
+		/turf/closed/wall/r_wall/rust/wasteplanet = 2,
+		/turf/closed/wall/wasteplanet = 1,
+		/turf/closed/wall/rust/wasteplanet = 2
 	)
 
 	flora_spawn_list = list(
@@ -358,7 +358,7 @@
 
 	flora_spawn_chance = 30
 	feature_spawn_chance = 4
-	mob_spawn_chance = 5
+	mob_spawn_chance = 2
 
 /datum/biome/cave/waste/tar_bed //tar colorings here
 	open_turf_types = list(
@@ -414,6 +414,7 @@
 		/turf/open/floor/plating/wasteplanet = 4
 	)
 	closed_turf_types = list(
+		/turf/closed/mineral/random/wasteplanet = 45,
 		/turf/closed/wall/r_wall/wasteplanet = 1,
 		/turf/closed/wall/r_wall/rust/wasteplanet = 1,
 		/turf/closed/wall/wasteplanet = 5,
@@ -451,9 +452,11 @@
 		/mob/living/simple_animal/bot/secbot/ed209/rockplanet = 3,
 		/mob/living/simple_animal/hostile/abandoned_minebot = 15,
 		/mob/living/simple_animal/bot/floorbot/rockplanet = 15,
-		/obj/structure/spawner/hivebot = 20
+		/obj/structure/spawner/hivebot = 15
 	)
 
+// [CELADON-ADD] - Для теста отключено
+/*
 /datum/biome/cave/waste/metal/hivebot
 	flora_spawn_list = list(
 		/obj/effect/spawner/random/trash/decal = 90,
@@ -486,7 +489,8 @@
 		)
 
 	feature_spawn_chance = 2 //hivebot biomes should have their dongles
-
+*/
+// [/CELADON-ADD]
 /datum/biome/cave/waste/conc //da concrete jungle baybee
 	open_turf_types = list(
 		/turf/open/floor/concrete/wasteplanet = 10,
@@ -494,6 +498,7 @@
 		/turf/open/floor/concrete/pavement/wasteplanet = 4
 	)
 	closed_turf_types = list(
+		/turf/closed/mineral/random/wasteplanet = 50,
 		/turf/closed/wall/concrete/wasteplanet = 15,
 		/turf/closed/wall/concrete/reinforced/wasteplanet = 3
 	)
@@ -525,9 +530,9 @@
 		/mob/living/simple_animal/bot/secbot/ed209/rockplanet = 3,
 		/mob/living/simple_animal/hostile/abandoned_minebot = 15,
 		/mob/living/simple_animal/bot/floorbot/rockplanet = 15,
-		/obj/structure/spawner/hivebot = 25
+		/obj/structure/spawner/hivebot = 15
 	)
 
 	flora_spawn_chance = 30
 	feature_spawn_chance = 8
-	mob_spawn_chance = 5
+	mob_spawn_chance = 2

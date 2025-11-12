@@ -26,7 +26,7 @@
 	attack_sound = 'sound/weapons/slash.ogg'
 	miss_sound = 'sound/weapons/slashmiss.ogg'
 
-	species_traits = list(EYECOLOR, LIPS, HAIR, FACEHAIR, EMOTE_OVERLAY, MUTCOLORS, MUTCOLORS_SECONDARY, SKINNOSECOLORS, SKINRIOLCOLORS, EARSRIOLCOLORS, HEADRIOLCOLORS, NOSERIOLCOLORS, CHESTRIOLCOLORS, BODYRIOLCOLORS )
+	species_traits = list(EYECOLOR, LIPS, HAIR, FACEHAIR, EMOTE_OVERLAY, MUTCOLORS, MUTCOLORS_SECONDARY, SKINNOSECOLORS, SKINRIOLCOLORS, EARSRIOLCOLORS, HEADRIOLCOLORS, NOSERIOLCOLORS, CHESTRIOLCOLORS, BODYRIOLCOLORS, HAS_FLESH, HAS_BONE)
 	mutant_bodyparts = list(
 		"riol_ears",
 		"riol_hairs",
@@ -133,7 +133,7 @@
 	C.dna.add_mutation(OLFACTION_RIOL)
 
 /obj/effect/proc_holder/spell/targeted/olfaction/riol //Риольсик снифф + меняет иконку расовой способности у риолов на красивую
-	action_icon = 'mod_celadon/_storge_icons/icons/species/riol/riol_skills.dmi'
+	action_icon = 'mod_celadon/_storage_icons/icons/species/riol/riol_skills.dmi'
 	action_icon_state = "sniff"
 
 /datum/mutation/human/olfaction/riol //Создает ген риольсокго сниффа

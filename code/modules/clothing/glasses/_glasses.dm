@@ -34,7 +34,7 @@
 /obj/item/clothing/glasses/examine(mob/user)
 	. = ..()
 	if(glass_colour_type && ishuman(user))
-		. += span_notice("Alt-click to toggle its colors.")
+		. += span_notice("Alt-click to toggle [p_their()] colors.")
 
 /obj/item/clothing/glasses/visor_toggling()
 	..()
@@ -316,7 +316,7 @@
 		var/mob/living/carbon/human/H = loc
 		// [CELADON-EDIT] - CELADON_RETURN_CONTENT_SPAWN
 		// var/mutable_appearance/M = mutable_appearance('icons/mob/clothing/eyes/eyes.dmi', "blindfoldwhite")	// CELADON-EDIT - ORIGINAL
-		var/mutable_appearance/M = mutable_appearance('mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/eyes.dmi', "blindfoldwhite")
+		var/mutable_appearance/M = mutable_appearance('mod_celadon/_storage_icons/icons/items/clothing/eyes/overlay/eyes.dmi', "blindfoldwhite")
 		// [/CELADON-EDIT]
 		M.appearance_flags |= RESET_COLOR
 		M.color = "#[H.eye_color]"

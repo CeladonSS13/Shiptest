@@ -1180,11 +1180,11 @@
 /area/ship/security/prison)
 "gU" = (
 /obj/structure/table,
-/obj/item/stack/medical/splint/ghetto{
+/obj/item/stack/medical/splint/hunter{
 	pixel_y = -2;
 	pixel_x = -3
 	},
-/obj/item/stack/medical/splint/ghetto{
+/obj/item/stack/medical/splint/hunter{
 	pixel_y = -2;
 	pixel_x = -3
 	},
@@ -4918,7 +4918,7 @@
 "Dd" = (
 /obj/structure/closet,
 /obj/item/clothing/suit/space/hardsuit/carp/old,
-/obj/item/clothing/mask/gas/explorer/old,
+/obj/item/clothing/mask/gas/explorer,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/machinery/light/directional/south,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -5139,7 +5139,7 @@
 /turf/open/floor/plating/rust,
 /area/ship/crew/canteen)
 "Er" = (
-/mob/living/simple_animal/cow,
+/mob/living/basic/cow,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
 	},
@@ -7636,7 +7636,7 @@
 /obj/structure/closet,
 /obj/item/clothing/suit/space/orange,
 /obj/item/clothing/head/helmet/space/orange,
-/obj/item/clothing/mask/gas/explorer/old,
+/obj/item/clothing/mask/gas/explorer,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/effect/turf_decal/siding/brown/end{
 	dir = 4

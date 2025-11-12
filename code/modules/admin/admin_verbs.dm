@@ -39,7 +39,7 @@ GLOBAL_PROTECT(admin_verbs_admin)
 //	/datum/admins/proc/show_traitor_panel,	/*interface which shows a mob's mind*/ -Removed due to rare practical use. Moved to debug verbs ~Errorage
 	/datum/admins/proc/show_player_panel,	/*shows an interface for individual players, with various links (links require additional flags)*/
 	/datum/admins/proc/show_lag_switch_panel,
-	/datum/verbs/menu/Admin/verb/playerpanel,
+	/datum/verbs/Admin/verb/playerpanel,	// [CELADON-EDIT] - ADMIN-PANEL - НЕ МЕНЯТЬ ЭТО: /menu/
 	/client/proc/game_panel,			/*game panel, allows to change game-mode etc*/
 	/client/proc/check_ai_laws,			/*shows AI and borg laws*/
 	/datum/admins/proc/toggleooc,		/*toggles ooc on/off for everyone*/
@@ -414,14 +414,24 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	set category = "Admin.Game"
 	set desc = "Toggles ghost-like invisibility (Don't abuse this)"
 	if(holder && mob)
-		if(mob.invisibility == INVISIBILITY_INVINISMIN)
-			mob.invisibility = initial(mob.invisibility)
-			mob.remove_from_all_data_huds()
-			to_chat(mob, span_boldannounce("Invisimin off. Invisibility reset."), confidential = TRUE)
+		// [CELADON-EDIT] - Оффовский извиз видно на худах. Вводим экстренное решение.
+		// if(mob.invisibility == INVISIBILITY_INVINISMIN)
+		// 	mob.invisibility = initial(mob.invisibility)
+		// 	mob.remove_from_all_data_huds()
+		// 	to_chat(mob, span_boldannounce("Invisimin off. Invisibility reset."), confidential = TRUE)
+		// else
+		// 	mob.invisibility = INVISIBILITY_INVINISMIN
+		// 	mob.add_to_all_human_data_huds()
+		// 	to_chat(mob, span_adminnotice("<b>Invisimin on. You are now as invisible as a ghost.</b>"), confidential = TRUE)
+		if(mob.alpha != 0)
+			mob.alpha = 0
+			mob.mouse_opacity = 0
+			to_chat(mob, span_adminnotice("<b>\[Invisibility_ON] Ваше тело растворяется в пустоту. Ваша активность видна лишь в Orbit.</b>"), confidential = TRUE)
 		else
-			mob.invisibility = INVISIBILITY_INVINISMIN
-			mob.add_to_all_human_data_huds()
-			to_chat(mob, span_adminnotice("<b>Invisimin on. You are now as invisible as a ghost.</b>"), confidential = TRUE)
+			mob.alpha = 255
+			mob.mouse_opacity = 1
+			to_chat(mob, span_adminnotice("<b>\[Invisibility_OFF] Ваше тело снова видно органическим формам жизни.</b>"), confidential = TRUE)
+		// [/CELADON-EDIT]
 
 /client/proc/check_antagonists()
 	set name = "Check Antagonists"

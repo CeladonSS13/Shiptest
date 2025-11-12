@@ -36,7 +36,7 @@
 			if(!spawnee.client.prefs.randomise[RANDOM_NAME])
 				var/name = spawnee.client.prefs.real_name
 				if(GLOB.real_names_joined.Find(name))
-					to_chat(spawnee, span_warning("Someone has spawned with this name already."))
+					to_chat(spawnee, span_warning("Кто-то уже использует это имя для своего корабля."))
 					spawnee.new_player_panel()
 					return
 			// [/CELADON-ADD]
@@ -69,19 +69,19 @@
 			var/datum/job/selected_job = locate(params["job"]) in target.job_slots
 			//boots you out if you're banned from officer roles
 			if(selected_job.officer && is_banned_from(spawnee.ckey, "Ship Command"))
-				to_chat(spawnee, span_danger("You are banned from Officer roles!"))
+				to_chat(spawnee, span_danger("Вам запрещено занимать офицерские должности!"))
 				spawnee.new_player_panel()
 				ui.close()
 				return
 
 			// Attempts the spawn itself. This checks for playtime requirements.
 			if(!spawnee.AttemptLateSpawn(selected_job, target))
-				to_chat(spawnee, span_danger("Unable to spawn on ship!"))
+				to_chat(spawnee, span_danger("Невозможно появиться на корабле!"))
 				spawnee.new_player_panel()
 
 		if("buy")
 			if(is_banned_from(spawnee.ckey, "Ship Purchasing"))
-				to_chat(spawnee, span_danger("You are banned from purchasing ships!"))
+				to_chat(spawnee, span_danger("Вам запрещено покупать корабли!"))
 				spawnee.new_player_panel()
 				ui.close()
 				return
@@ -91,20 +91,20 @@
 			// Проверяем дублирование имен в самом начале
 			var/name = spawnee.client.prefs.real_name
 			if(GLOB.real_names_joined.Find(name))
-				to_chat(spawnee, span_warning("Someone has spawned with this name already."))
+				to_chat(spawnee, span_warning("Кто-то уже создал корабль с этим именем."))
 				return
 			// [/CELADON-ADD]
 			if(SSovermap.ship_spawning)
-				to_chat(spawnee, span_danger("A ship is currently spawning. Try again in a little while."))
+				to_chat(spawnee, span_danger("Корабль сейчас создаётся. Попробуйте снова через некоторое время."))
 				return
 			if(!SSovermap.player_ship_spawn_allowed())
-				to_chat(spawnee, span_danger("No more ships may be spawned at this time!"))
+				to_chat(spawnee, span_danger("Лимит кораблей в раунде исчерпан. На данный момент нельзя создавать больше кораблей!"))
 				return
 			if(!template.enabled)
-				to_chat(spawnee, span_danger("This ship is not currently available for purchase!"))
+				to_chat(spawnee, span_danger("Этот корабль сейчас недоступен для покупки!"))
 				return
 			if(!template.has_ship_spawn_playtime(spawnee.client))
-				to_chat(spawnee, span_danger("You do not have enough playtime to spawn this ship!"))
+				to_chat(spawnee, span_danger("У вас недостаточно времени в игре, чтобы создать этот корабль!"))
 				return
 
 			var/num_ships_with_template = 0

@@ -55,7 +55,10 @@ Contents:
 /obj/item/clothing/suit/space/space_ninja/get_cell()
 	return cell
 
-/obj/item/clothing/suit/space/space_ninja/Initialize()
+// [CELADON-EDIT] - FIXES_ANTAG_NINJA
+// /obj/item/clothing/suit/space/space_ninja/Initialize()	// ORIGINAL
+/obj/item/clothing/suit/space/space_ninja/Initialize(mapload)
+// [/CELADON-EDIT]
 	. = ..()
 
 	//Spark Init
@@ -72,13 +75,18 @@ Contents:
 	cell.name = "black power cell"
 	cell.icon_state = "bscell"
 
+	START_PROCESSING(SSobj, src)	// [CELADON-ADD] - FIXES_ANTAG_NINJA
 /obj/item/clothing/suit/space/space_ninja/Destroy()
 	QDEL_NULL(spark_system)
 	QDEL_NULL(cell)
+	STOP_PROCESSING(SSobj, src)	// [CELADON-ADD] - FIXES_ANTAG_NINJA
 	return ..()
 
 // Space Suit temperature regulation and power usage
-/obj/item/clothing/suit/space/space_ninja/process(seconds_per_tick)
+// [CELADON-EDIT] - FIXES_ANTAG_NINJA
+// /obj/item/clothing/suit/space/space_ninja/process(seconds_per_tick)	// ORIGINAL
+/obj/item/clothing/suit/space/space_ninja/process(delta_time)
+// [/CELADON-EDIT]
 	var/mob/living/carbon/human/user = src.loc
 	if(!user || !ishuman(user) || !(user.wear_suit == src))
 		return
@@ -89,69 +97,81 @@ Contents:
 			terminate() // Kills the suit and attached objects.
 		else if(cell.charge > 0)
 			if(s_coold > 0)
-				s_coold -= seconds_per_tick // Checks for ability s_cooldown first.
-			cell.charge -= s_cost * seconds_per_tick // s_cost is the default energy cost each ntick, usually 5.
+			// [CELADON-EDIT] - FIXES_ANTAG_NINJA
+			// 	s_coold -= seconds_per_tick // Checks for ability s_cooldown first.
+			// cell.charge -= s_cost * seconds_per_tick // s_cost is the default energy cost each ntick, usually 5.
+			// if(stealth) // If stealth is active.
+			// 	cell.charge -= s_acost * seconds_per_tick	// ORIGINAL
+				s_coold = max(s_coold - delta_time, 0) // Checks for ability s_cooldown first.
+			cell.charge -= s_cost * delta_time // s_cost is the default energy cost each ntick, usually 5.
+			// [/CELADON-EDIT]
 			if(stealth) // If stealth is active.
-				cell.charge -= s_acost * seconds_per_tick
+				// [CELADON-EDIT] - FIXES_ANTAG_NINJA
+				// cell.charge -= s_acost * seconds_per_tick	// ORIGINAL
+				cell.charge -= s_acost * delta_time
+				// [/CELADON-EDIT]
 		else
 			cell.charge = 0
 			cancel_stealth()
 
 	user.adjust_bodytemperature(HUMAN_BODYTEMP_NORMAL - user.bodytemperature)
 
-//Simply deletes all the attachments and self, killing all related procs.
-/obj/item/clothing/suit/space/space_ninja/proc/terminate()
-	qdel(n_hood)
-	qdel(n_gloves)
-	qdel(n_shoes)
-	qdel(src)
+// [CELADON-REMOVE] - FIXES_ANTAG_NINJA - Вынесено в модуль
+
+// //Simply deletes all the attachments and self, killing all related procs.
+// /obj/item/clothing/suit/space/space_ninja/proc/terminate()
+// 	qdel(n_hood)
+// 	qdel(n_gloves)
+// 	qdel(n_shoes)
+// 	qdel(src)
 
 
-//Randomizes suit parameters.
-/obj/item/clothing/suit/space/space_ninja/proc/randomize_param()
-	s_cost = rand(1,10)
-	s_acost = rand(10,50)
-	s_delay = rand(10,100)
-	s_bombs = rand(5,20)
-	a_boost = rand(1,7)
+// //Randomizes suit parameters.
+// /obj/item/clothing/suit/space/space_ninja/proc/randomize_param()
+// 	s_cost = rand(1,10)
+// 	s_acost = rand(10,50)
+// 	s_delay = rand(10,100)
+// 	s_bombs = rand(5,20)
+// 	a_boost = rand(1,7)
 
 
-//This proc prevents the suit from being taken off.
-/obj/item/clothing/suit/space/space_ninja/proc/lock_suit(mob/living/carbon/human/H)
-	if(!istype(H))
-		return FALSE
-	if(!is_ninja(H))
-		to_chat(H, span_danger("<B>fÄTaL ÈÈRRoR</B>: 382200-*#00CÖDE <B>RED</B>\nUNAUHORIZED USÈ DETÈCeD\nCoMMÈNCING SUB-R0UIN3 13...\nTÈRMInATING U-U-USÈR..."))
-		H.gib()
-		return FALSE
-	if(!istype(H.head, /obj/item/clothing/head/helmet/space/space_ninja))
-		to_chat(H, "[span_userdanger("ERROR")]: 100113 UNABLE TO LOCATE HEAD GEAR\nABORTING...")
-		return FALSE
-	if(!istype(H.shoes, /obj/item/clothing/shoes/space_ninja))
-		to_chat(H, "[span_userdanger("ERROR")]: 122011 UNABLE TO LOCATE FOOT GEAR\nABORTING...")
-		return FALSE
-	if(!istype(H.gloves, /obj/item/clothing/gloves/space_ninja))
-		to_chat(H, "[span_userdanger("ERROR")]: 110223 UNABLE TO LOCATE HAND GEAR\nABORTING...")
-		return FALSE
-	affecting = H
-	ADD_TRAIT(src, TRAIT_NODROP, NINJA_SUIT_TRAIT)
-	slowdown = 0
-	n_hood = H.head
-	ADD_TRAIT(n_hood, TRAIT_NODROP, NINJA_SUIT_TRAIT)
-	n_shoes = H.shoes
-	ADD_TRAIT(n_shoes, TRAIT_NODROP, NINJA_SUIT_TRAIT)
-	n_shoes.slowdown--
-	n_gloves = H.gloves
-	ADD_TRAIT(n_gloves, TRAIT_NODROP, NINJA_SUIT_TRAIT)
-	return TRUE
+// //This proc prevents the suit from being taken off.
+// /obj/item/clothing/suit/space/space_ninja/proc/lock_suit(mob/living/carbon/human/H)
+// 	if(!istype(H))
+// 		return FALSE
+// 	if(!is_ninja(H))
+// 		to_chat(H, span_danger("<B>fÄTaL ÈÈRRoR</B>: 382200-*#00CÖDE <B>RED</B>\nUNAUHORIZED USÈ DETÈCeD\nCoMMÈNCING SUB-R0UIN3 13...\nTÈRMInATING U-U-USÈR..."))
+// 		H.gib()
+// 		return FALSE
+// 	if(!istype(H.head, /obj/item/clothing/head/helmet/space/space_ninja))
+// 		to_chat(H, "[span_userdanger("ERROR")]: 100113 UNABLE TO LOCATE HEAD GEAR\nABORTING...")
+// 		return FALSE
+// 	if(!istype(H.shoes, /obj/item/clothing/shoes/space_ninja))
+// 		to_chat(H, "[span_userdanger("ERROR")]: 122011 UNABLE TO LOCATE FOOT GEAR\nABORTING...")
+// 		return FALSE
+// 	if(!istype(H.gloves, /obj/item/clothing/gloves/space_ninja))
+// 		to_chat(H, "[span_userdanger("ERROR")]: 110223 UNABLE TO LOCATE HAND GEAR\nABORTING...")
+// 		return FALSE
+// 	affecting = H
+// 	ADD_TRAIT(src, TRAIT_NODROP, NINJA_SUIT_TRAIT)
+// 	slowdown = 0
+// 	n_hood = H.head
+// 	ADD_TRAIT(n_hood, TRAIT_NODROP, NINJA_SUIT_TRAIT)
+// 	n_shoes = H.shoes
+// 	ADD_TRAIT(n_shoes, TRAIT_NODROP, NINJA_SUIT_TRAIT)
+// 	n_shoes.slowdown--
+// 	n_gloves = H.gloves
+// 	ADD_TRAIT(n_gloves, TRAIT_NODROP, NINJA_SUIT_TRAIT)
+// 	return TRUE
+// [/CELADON-REMOVE]
 
 /obj/item/clothing/suit/space/space_ninja/proc/lockIcons(mob/living/carbon/human/H)
 	icon_state = H.gender==FEMALE ? "s-ninjanf" : "s-ninjan"
 	H.gloves.icon_state = "s-ninjan"
 	H.gloves.item_state = "s-ninjan"
 
-
-//This proc allows the suit to be taken off.
+// [CELADON-REMOVE] - FIXES_ANTAG_NINJA - Вынесено в модуль
+/* //This proc allows the suit to be taken off.
 /obj/item/clothing/suit/space/space_ninja/proc/unlock_suit()
 	affecting = null
 	REMOVE_TRAIT(src, TRAIT_NODROP, NINJA_SUIT_TRAIT)
@@ -178,6 +198,8 @@ Contents:
 			"The CLOAK-tech device is <B>[stealth?"active":"inactive"]</B>.\n"+\
 			"There are <B>[s_bombs]</B> smoke bomb\s remaining.\n"+\
 			"There are <B>[a_boost]</B> adrenaline booster\s remaining."
+*/
+// [/CELADON-REMOVE]
 
 /obj/item/clothing/suit/space/space_ninja/ui_action_click(mob/user, action)
 	if(istype(action, /datum/action/item_action/initialize_ninja_suit))
@@ -186,6 +208,11 @@ Contents:
 	if(!s_initialized)
 		to_chat(user, span_warning("<b>ERROR</b>: suit offline. Please activate suit."))
 		return FALSE
+	// [CELADON-ADD] - FIXES_ANTAG_NINJA
+	if(s_coold > 0)
+		to_chat(user, span_warning("<b>ERROR</b>: suit is on cooldown."))
+		return FALSE
+	// [/CELADON-ADD]
 	if(istype(action, /datum/action/item_action/ninjasmoke))
 		ninjasmoke()
 		return TRUE
@@ -205,7 +232,7 @@ Contents:
 		ninja_sword_recall()
 		return TRUE
 	if(istype(action, /datum/action/item_action/ninja_stealth))
-		stealth()
+		toggle_stealth()	// [CELADON-ADD] - FIXES_ANTAG_NINJA
 		return TRUE
 	if(istype(action, /datum/action/item_action/toggle_glove))
 		n_gloves.toggledrain()

@@ -702,8 +702,7 @@
 	dir = 6
 	},
 /obj/structure/chair/comfy/blue/old/directional/north{
-	dir = 4;
-	pixel_y = 7
+	dir = 4
 	},
 /obj/effect/turf_decal/spline/fancy/transparent/solgovgold{
 	dir = 8
@@ -955,12 +954,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
-"nf" = (
-/obj/machinery/vending/wallmed{
-	pixel_y = 5
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/medical)
 "nh" = (
 /obj/structure/table/wood,
 /obj/item/toy/cards/deck{
@@ -2166,9 +2159,10 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 1
 	},
-/obj/machinery/button{
+/obj/machinery/button/door{
 	pixel_y = 23;
-	id = "tomahawk_sleeper"
+	id = "tomahawk_sleeper";
+	name = "Windows"
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew)
@@ -2289,6 +2283,12 @@
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
+	},
+/obj/docking_port/mobile{
+	dir = 4;
+	launch_status = 0;
+	preferred_direction = 4;
+	port_direction = 2
 	},
 /turf/open/floor/engine/hull,
 /area/ship/storage)
@@ -2994,7 +2994,7 @@
 	width = 30
 	},
 /turf/template_noop,
-/area/ship/external)
+/area/template_noop)
 "Hh" = (
 /obj/structure/sign/solfed,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -3503,6 +3503,9 @@
 /obj/machinery/atmospherics/pipe/simple/green/hidden/layer1{
 	dir = 6
 	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "MT" = (
@@ -3609,6 +3612,9 @@
 /obj/machinery/atmospherics/pipe/simple/green/hidden/layer1{
 	dir = 10
 	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Os" = (
@@ -3689,6 +3695,9 @@
 /obj/effect/turf_decal/corner/opaque/cybersunteal/border,
 /obj/structure/table/glass,
 /obj/item/storage/case/surgery,
+/obj/machinery/vending/wallmed{
+	pixel_y = -27
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "PS" = (
@@ -4469,15 +4478,6 @@
 	},
 /turf/open/floor/wood,
 /area/ship/crew)
-"WT" = (
-/obj/docking_port/mobile{
-	dir = 4;
-	launch_status = 0;
-	preferred_direction = 4;
-	port_direction = 2
-	},
-/turf/template_noop,
-/area/ship/external)
 "WY" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -5230,7 +5230,7 @@ En
 Zf
 Zg
 Py
-nf
+En
 PX
 "}
 (22,1,1) = {"
@@ -5509,7 +5509,7 @@ dS
 UY
 nE
 PX
-WT
+PX
 PX
 xp
 Jp

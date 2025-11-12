@@ -163,14 +163,10 @@
 
 	var/base_link = githuburl + "/issues/new?template=bug_report_form.yml"
 	var/list/concatable = list(base_link)
-	var/servername = CONFIG_GET(string/servername)
-	var/client_version = "Версия клиента: [byond_version].[byond_build]"
-
-	// the way it works is that we use the ID's that are baked into the template YML and replace them with values that we can collect in game.
-	if(GLOB.round_id)
-		concatable += ("&additional-info=" + "[client_version]\nRound ID: [GLOB.round_id][servername ? " ([servername])" : ""]")
-	else
-		concatable += ("&additional-info=" + client_version)
+	var/client_version = "Версия клиента: [byond_version].[byond_build]\n"
+	var/round_ID = GLOB.round_id ? "Round ID: [GLOB.round_id]\n" : ""
+	var/servername = CONFIG_GET(string/servername) ? " ([CONFIG_GET(string/servername)])\n" : ""
+	var/testmerge
 
 	// Insert testmerges
 	if(has_testmerge_data)
@@ -179,9 +175,9 @@
 			var/datum/tgs_revision_information/test_merge/tm = entry
 			all_tms += "- \[[tm.title]\]([githuburl]/pull/[tm.number])"
 		var/all_tms_joined = jointext(all_tms, "\n")
+		testmerge = "Тестовые изменения:\n[url_encode(all_tms_joined)]"
 
-		concatable += ("&additional-info=" + "[client_version]\nТестовые изменения:\n[url_encode(all_tms_joined)]")
-
+	concatable += "&additional-info=[client_version][round_ID][servername][testmerge]"
 	DIRECT_OUTPUT(src, link(jointext(concatable, "")))
 
 /client/verb/joindiscord()

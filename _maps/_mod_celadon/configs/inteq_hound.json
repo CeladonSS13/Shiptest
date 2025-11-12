@@ -9,7 +9,7 @@
 	"sensor_range": 4,
 	"prefix": "LIQSV",
 	"faction": "/datum/faction/inteq",
-	"tags": ["Combat"],
+	"tags": ["Боевой"],
 	"namelists": [
 		"MYTHOLOGICAL",
 		"BEASTS",
@@ -18,12 +18,12 @@
 	],
 	"job_slots": {
 		"Vanguard": {
-			"outfit": "/datum/outfit/job/inteq/captain/celadon",
+			"outfit": "/datum/outfit/job/cel/inteq/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"Enforcer": {
-			"outfit": "/datum/outfit/job/inteq/security/celadon",
+			"outfit": "/datum/outfit/job/cel/inteq/security",
 			"slots": 3
 		}
 	}
