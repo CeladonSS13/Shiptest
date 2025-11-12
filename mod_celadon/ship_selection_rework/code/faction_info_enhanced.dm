@@ -11,8 +11,8 @@ GLOBAL_LIST_INIT(faction_info_data, list(
 		"description" = "Радикальное движение за независимость Элизиума и «очищение» родной земли. Дисциплина, вера и готовность к жертве делают их опасными противниками; в ход идёт трофейное и самодельное вооружение.",
 		"wiki_url" = "https://wiki.celadon.pro/index.php/Elysim_Separatists",
 		"outfits" = list(
-			/datum/outfit/job/elysium/captain,
-			/datum/outfit/job/elysium/assistant
+			/datum/outfit/job/cel/elysium/captain,
+			/datum/outfit/job/cel/elysium/assistant
 		)
 	),
 	"nanotrasen" = list(
@@ -20,8 +20,8 @@ GLOBAL_LIST_INIT(faction_info_data, list(
 		"description" = "Мегакорпорация-освоитель рубежей: добыча, исследования, станции и флот — всё ради прибыли и прогресса. Внутри царят протоколы и отчётность, но взамен — доступ к лучшим технологиям, стабильные контракты и карьерный рост.",
 		"wiki_url" = "https://wiki.celadon.pro/index.php/Nanotrasen",
 		"outfits" = list(
-			/datum/outfit/job/nanotrasen/captain,
-			/datum/outfit/job/nanotrasen/assistant
+			/datum/outfit/job/cel/nanotrasen/captain,
+			/datum/outfit/job/cel/nanotrasen/assistant
 		)
 	),
 	"syndicate" = list(
@@ -29,8 +29,8 @@ GLOBAL_LIST_INIT(faction_info_data, list(
 		"description" = "Союз подпольных корпораций и наёмных ячеек, ведущих тихую войну против НТ. Их стиль — диверсии, шпионаж и удар в нужный момент; идеалы свободы смешаны с чёрным рынком и высокой ценой ошибки.",
 		"wiki_url" = "https://wiki.celadon.pro/index.php/Syndicate",
 		"outfits" = list(
-			/datum/outfit/job/syndicate/captain,
-			/datum/outfit/job/syndicate/assistant
+			/datum/outfit/job/cel/syndicate/captain,
+			/datum/outfit/job/cel/syndicate/assistant
 		)
 	),
 	"pirates" = list(
@@ -38,8 +38,8 @@ GLOBAL_LIST_INIT(faction_info_data, list(
 		"description" = "Разношёрстные экипажи, живущие налётами, выкупом и охотой на одиночные цели. Они полагаются на скорость, хитрость и знание маршрутов, но иногда готовы торговаться, если риск не оправдывает трофей.",
 		"wiki_url" = "https://wiki.celadon.pro/index.php/Pirates",
 		"outfits" = list(
-			/datum/outfit/job/independent/captain/pirate,
-			/datum/outfit/job/independent/security/pirate
+			/datum/outfit/job/cel/pirate/captain,
+			/datum/outfit/job/cel/pirate/security
 		)
 	),
 	"solfed" = list(
@@ -47,8 +47,8 @@ GLOBAL_LIST_INIT(faction_info_data, list(
 		"description" = "Закон и порядок больших дорог: патрули, лицензии, таможня и спасательные маяки. Они защищают торговлю и граждан, но требуют соблюдения правил — бюрократия здесь такая же мощная, как и флот.",
 		"wiki_url" = "https://wiki.celadon.pro/index.php/Solar_Federation",
 		"outfits" = list(
-			/datum/outfit/job/solgov/captain,
-			/datum/outfit/job/solgov/assistant
+			/datum/outfit/job/cel/solfed/captain,
+			/datum/outfit/job/cel/solfed/assistant
 		)
 	),
 	"inteq" = list(
@@ -56,8 +56,8 @@ GLOBAL_LIST_INIT(faction_info_data, list(
 		"description" = "Крупнейшая частная военная компания сектора: профессиональные группы, чёткие правила и оплата по контракту. Эскорты, зачистки и охрана — они не выбирают стороны, они выбирают заказы.",
 		"wiki_url" = "https://wiki.celadon.pro/index.php/Inteq",
 		"outfits" = list(
-			/datum/outfit/job/inteq/captain,
-			/datum/outfit/job/inteq/assistant
+			/datum/outfit/job/cel/inteq/captain,
+			/datum/outfit/job/cel/inteq/assistant
 		)
 	),
 	"independent" = list(
@@ -65,8 +65,8 @@ GLOBAL_LIST_INIT(faction_info_data, list(
 		"description" = "Свободные капитаны, торговцы и исследователи, для которых главное — репутация и гибкие союзы. Берутся за перевозки и редкие поручения, лавируя между крупными силами ради своей выгоды.",
 		"wiki_url" = "https://wiki.celadon.pro/index.php/Other_Fractions",
 		"outfits" = list(
-			/datum/outfit/job/independent/captain,
-			/datum/outfit/job/independent/assistant
+			/datum/outfit/job/cel/independent/captain,
+			/datum/outfit/job/cel/independent/assistant
 		)
 	)
 ))

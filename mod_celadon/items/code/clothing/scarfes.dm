@@ -52,5 +52,6 @@
 /obj/item/clothing/neck/scarf/syndie
 	name = "Grey-Red scarf"
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/neck/sarfneck.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/neck/overlay/neck.dmi'
 	icon_state = "stripedsyndiescarf"
 	item_state = "stripedsyndiescarf"

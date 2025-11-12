@@ -431,7 +431,7 @@
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/effect/mob_spawn/human/clown
 	name = "Clown"
-	outfit = /datum/outfit/job/clown
+	outfit = /datum/outfit/job/cel/independent/clown
 // [/CELADON-ADD]
 
 /obj/effect/mob_spawn/human/scientist
