@@ -1,5 +1,11 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ac" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 5
+	},
 /obj/structure/fluff/beach_umbrella/engine,
 /turf/open/floor/carpet/cyan,
 /area/centcom)
@@ -579,11 +585,10 @@
 /area/centcom/control)
 "bG" = (
 /obj/effect/landmark/error,
-/turf/open/floor/plating/asteroid/waterplanet{
+/turf/open/floor/plating/ashplanet/wateryrock{
 	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
 	planetary_atmos = 0
-	},
-/area/errorroom)
+	})
 "bH" = (
 /obj/structure/closet/crate/critter{
 	name = "DANGER: DO NOT OPEN"
@@ -1043,8 +1048,7 @@
 	icon_state = "computer-middle"
 	},
 /obj/machinery/light/directional/south,
-/obj/effect/turf_decal/corner/transparent/bar/full,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel,
 /area/outpost/cargo/faction)
 "cV" = (
 /obj/machinery/door/poddoor{
@@ -1252,10 +1256,10 @@
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "dE" = (
+/obj/structure/table/reinforced,
 /obj/machinery/light/directional/south,
-/obj/effect/turf_decal/corner/transparent/bar/full,
-/obj/machinery/vending/clothing/admin,
-/turf/open/floor/plasteel/dark,
+/obj/item/paper/pamphlet/centcom/visitor_info,
+/turf/open/floor/plasteel,
 /area/centcom/supplypod)
 "dF" = (
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -1341,8 +1345,7 @@
 	dir = 1;
 	icon_state = "computer-left"
 	},
-/obj/effect/turf_decal/corner/transparent/bar/full,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel,
 /area/outpost/cargo/faction)
 "dR" = (
 /obj/structure/table/reinforced,
@@ -1717,6 +1720,15 @@
 "fa" = (
 /turf/open/floor/plasteel/dark/wasteplanet,
 /area/outpost/exterior)
+"fb" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 5
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 6
+	},
+/turf/open/floor/carpet/royalblack,
+/area/centcom)
 "fc" = (
 /turf/closed/indestructible/riveted/command,
 /area/tdome/tdomeadmin)
@@ -2110,15 +2122,14 @@
 /area/abductor_ship)
 "gg" = (
 /obj/structure/signpost/salvation{
-	invisibility = 100;
 	icon = 'icons/obj/structures.dmi';
-	icon_state = "ladder10"
+	icon_state = "ladder10";
+	invisibility = 100
 	},
-/turf/open/floor/plating/asteroid/waterplanet{
+/turf/open/floor/plating/ashplanet/wateryrock{
 	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
 	planetary_atmos = 0
-	},
-/area/errorroom)
+	})
 "gh" = (
 /turf/closed/indestructible/abductor,
 /area/abductor_ship)
@@ -2183,6 +2194,12 @@
 /turf/open/floor/plasteel/white,
 /area/centcom/holding)
 "gp" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 6
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 10
+	},
 /turf/open/floor/carpet/blue{
 	baseturfs = /turf/open/floor/plating/asteroid/whitesands
 	},
@@ -2201,6 +2218,12 @@
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "gt" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 9
+	},
 /obj/structure/fluff/beach_umbrella,
 /turf/open/floor/carpet/royalblack,
 /area/centcom)
@@ -2356,9 +2379,8 @@
 /obj/structure/sign/solfed{
 	pixel_y = 32
 	},
-/obj/effect/turf_decal/corner/opaque/green/three_quarters{
-	dir = 4
-	},
+/obj/machinery/gacha_machine,
+/obj/effect/turf_decal/corner/opaque/green/full,
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "gQ" = (
@@ -2587,7 +2609,6 @@
 /obj/effect/turf_decal/corner/transparent/brown{
 	dir = 10
 	},
-/obj/machinery/newscaster/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "hs" = (
@@ -2652,13 +2673,6 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
-"hC" = (
-/obj/structure/flora/tree/dead_pine,
-/turf/open/floor/plating/asteroid/waterplanet{
-	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
-	planetary_atmos = 0
-	},
-/area/errorroom)
 "hD" = (
 /obj/effect/turf_decal/corner/transparent/neutral/full,
 /obj/structure/railing/modern/corner{
@@ -3121,8 +3135,7 @@
 	dir = 1;
 	icon_state = "computer-middle"
 	},
-/obj/effect/turf_decal/corner/transparent/bar/full,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel,
 /area/outpost/cargo/faction)
 "iQ" = (
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -3145,6 +3158,12 @@
 /turf/open/floor/glass/red,
 /area/outpost/exterior)
 "iU" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 9
+	},
 /obj/structure/fluff/beach_umbrella/cap,
 /turf/open/floor/carpet/stellar,
 /area/centcom)
@@ -3292,6 +3311,12 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "jt" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 5
+	},
 /obj/structure/fluff/beach_umbrella/science,
 /turf/open/floor/carpet/blue{
 	baseturfs = /turf/open/floor/plating/asteroid/whitesands
@@ -3433,6 +3458,12 @@
 /turf/open/floor/plasteel/dark,
 /area/tdome/tdomeadmin)
 "jM" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 9
+	},
 /obj/structure/fluff/beach_umbrella,
 /turf/open/floor/carpet/royalblue,
 /area/centcom)
@@ -3475,7 +3506,9 @@
 /area/outpost/exterior)
 "jR" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/gun/energy/laser/wasp,
+/obj/item/gun/ballistic/automatic/assault/swiss_cheese{
+	pixel_y = 12
+	},
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "jS" = (
@@ -3777,8 +3810,11 @@
 	pixel_y = 3;
 	network = list("outpostelysium")
 	},
-/obj/machinery/chem_heater,
-/obj/effect/turf_decal/corner/transparent/bar/full,
+/obj/machinery/outpost_selling_pad,
+/obj/effect/turf_decal/industrial/defective/full,
+/obj/effect/turf_decal/corner/transparent/brown{
+	dir = 9
+	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "kL" = (
@@ -4404,8 +4440,7 @@
 	icon_state = "computer-middle"
 	},
 /obj/machinery/light/directional/south,
-/obj/effect/turf_decal/corner/transparent/bar/full,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel,
 /area/outpost/cargo/faction)
 "mC" = (
 /obj/effect/turf_decal/industrial/hatch/yellow,
@@ -4860,13 +4895,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
-"nQ" = (
-/obj/structure/flora/rock/asteroid,
-/turf/open/floor/plating/asteroid/waterplanet{
-	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
-	planetary_atmos = 0
-	},
-/area/errorroom)
 "nR" = (
 /obj/structure/closet/abductor,
 /turf/open/floor/plating/abductor,
@@ -4918,8 +4946,8 @@
 /area/centcom/control)
 "nZ" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/gun/ballistic/shotgun/automatic/combat/compact{
-	pixel_x = 0
+/obj/item/gun/ballistic/automatic/assault/morita1/forest{
+	pixel_y = 10
 	},
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
@@ -5743,6 +5771,12 @@
 /turf/open/floor/pod/light,
 /area/outpost/exterior)
 "qy" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 9
+	},
 /obj/structure/fluff/beach_umbrella/cap,
 /turf/open/floor/carpet/executive,
 /area/centcom)
@@ -6163,6 +6197,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/tdome/tdomeobserve)
+"rL" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 6
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 10
+	},
+/turf/open/floor/carpet/cyan,
+/area/centcom)
 "rM" = (
 /obj/effect/turf_decal/corner/transparent/vired/three_quarters,
 /turf/open/floor/plasteel/dark,
@@ -6630,7 +6673,7 @@
 /turf/open/floor/plating/asteroid/smoothed,
 /area/tdome/tdomeobserve)
 "tj" = (
-/mob/living/basic/cow,
+/mob/living/simple_animal/cow,
 /turf/open/floor/grass,
 /area/centcom/holding)
 "tk" = (
@@ -6699,6 +6742,10 @@
 /obj/item/gun/ballistic{
 	pixel_x = 0;
 	pixel_y = 8
+	},
+/obj/item/gun/ballistic/shotgun/automatic/combat{
+	pixel_x = 0;
+	pixel_y = 1
 	},
 /turf/open/floor/plasteel/darkredfull,
 /area/centcom/ferry)
@@ -7001,15 +7048,6 @@
 /obj/item/soap/deluxe,
 /turf/open/floor/plasteel/showroomfloor,
 /area/centcom)
-"ub" = (
-/obj/effect/turf_decal/corner/transparent/brown{
-	dir = 1
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 6
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/supplypod)
 "uc" = (
 /obj/structure/dresser,
 /turf/open/floor/plasteel/dark/wasteplanet,
@@ -7113,8 +7151,7 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "uo" = (
-/turf/closed/mineral/random/waterplanet,
-/area/errorroom)
+/turf/closed/mineral/ash_rock)
 "up" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/gun/energy/taser,
@@ -7711,6 +7748,12 @@
 /turf/open/floor/plasteel,
 /area/centcom/evac)
 "vU" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 6
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 10
+	},
 /turf/open/floor/carpet/red,
 /area/centcom)
 "vV" = (
@@ -7835,6 +7878,12 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "wq" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 6
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 10
+	},
 /obj/structure/fluff/beach_umbrella/syndi,
 /turf/open/floor/carpet/donk,
 /area/centcom)
@@ -8300,13 +8349,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
-"xM" = (
-/obj/effect/turf_decal/corner/transparent/brown{
-	dir = 10
-	},
-/obj/structure/extinguisher_cabinet/directional/north,
-/turf/open/floor/plasteel/dark,
-/area/centcom/supplypod)
 "xN" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Thunderdome Backstage";
@@ -8833,14 +8875,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/centcom/control)
-"zs" = (
-/obj/structure/flora/rock/asteroid,
-/obj/item/rupee,
-/turf/open/floor/plating/asteroid/waterplanet{
-	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
-	planetary_atmos = 0
-	},
-/area/errorroom)
 "zt" = (
 /obj/structure/table/wood,
 /obj/structure/plaque/static_plaque/golden{
@@ -9081,6 +9115,12 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "Ac" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 6
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 10
+	},
 /obj/structure/fluff/beach_umbrella,
 /turf/open/floor/carpet/orange,
 /area/centcom)
@@ -9120,6 +9160,12 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "Ai" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 5
+	},
 /obj/structure/fluff/beach_umbrella/security,
 /turf/open/floor/carpet/red,
 /area/centcom)
@@ -9280,8 +9326,7 @@
 /area/centcom)
 "AD" = (
 /obj/structure/speaking_tile,
-/turf/closed/mineral/random/waterplanet,
-/area/errorroom)
+/turf/closed/mineral/ash_rock)
 "AE" = (
 /obj/machinery/computer/crew{
 	dir = 4
@@ -9615,8 +9660,7 @@
 	dir = 1;
 	icon_state = "computer-middle"
 	},
-/obj/effect/turf_decal/corner/transparent/bar/full,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel,
 /area/outpost/cargo/faction)
 "BH" = (
 /obj/structure/chair/bench/olive/directional/west,
@@ -9937,9 +9981,6 @@
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 4
 	},
-/obj/item/gun/ballistic/automatic/assault/swiss_cheese{
-	pixel_y = 12
-	},
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "CF" = (
@@ -10193,11 +10234,16 @@
 	},
 /area/centcom/control)
 "Dm" = (
-/obj/machinery/computer/mission{
-	icon_state = "computer-left";
-	dir = 8
+/obj/machinery/newscaster/directional/north{
+	dir = 4;
+	pixel_y = 0;
+	pixel_x = 32
 	},
-/obj/effect/turf_decal/corner/transparent/bar/full,
+/obj/machinery/mission_pad,
+/obj/effect/turf_decal/industrial/traffic/full,
+/obj/effect/turf_decal/corner/transparent/brown{
+	dir = 9
+	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "Dn" = (
@@ -10597,16 +10643,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/centcom/control)
-"Ev" = (
-/obj/effect/turf_decal/corner/transparent/brown{
-	dir = 5
-	},
-/obj/effect/turf_decal/industrial/warning/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/industrial/warning/corner,
-/turf/open/floor/plasteel/dark,
-/area/centcom/supplypod)
 "Ew" = (
 /obj/effect/turf_decal/corner/transparent/bar/full,
 /obj/effect/turf_decal/industrial/fire{
@@ -10885,11 +10921,13 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "Fp" = (
-/obj/machinery/computer/outpost_export_console{
-	icon_state = "computer-right";
+/obj/machinery/computer/mission{
+	icon_state = "computer-left";
 	dir = 8
 	},
-/obj/effect/turf_decal/corner/transparent/bar/full,
+/obj/effect/turf_decal/corner/transparent/brown{
+	dir = 9
+	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "Fq" = (
@@ -11647,8 +11685,7 @@
 	dir = 1;
 	icon_state = "computer-right"
 	},
-/obj/effect/turf_decal/corner/transparent/bar/full,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel,
 /area/outpost/cargo/faction)
 "Hp" = (
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/breaching,
@@ -11973,6 +12010,10 @@
 "Ip" = (
 /turf/closed/indestructible/riveted/command,
 /area/centcom)
+"Iq" = (
+/obj/machinery/gacha_machine,
+/turf/open/floor/plasteel,
+/area/centcom/ferry)
 "Ir" = (
 /obj/structure/curtain/cloth/purpl,
 /turf/open/floor/plasteel,
@@ -12039,6 +12080,15 @@
 /obj/structure/frame,
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/exterior)
+"IE" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 5
+	},
+/turf/open/floor/carpet/donk,
+/area/centcom)
 "IF" = (
 /turf/open/floor/plasteel,
 /area/centcom/ferry)
@@ -12586,8 +12636,13 @@
 	},
 /area/outpost/exterior)
 "Kk" = (
-/obj/machinery/outpost_selling_pad,
-/obj/effect/turf_decal/corner/transparent/bar/full,
+/obj/machinery/computer/outpost_export_console{
+	icon_state = "computer-right";
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/transparent/brown{
+	dir = 9
+	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "Kl" = (
@@ -13251,11 +13306,6 @@
 /obj/item/multitool,
 /turf/open/floor/wood,
 /area/centcom/holding)
-"LP" = (
-/obj/machinery/mission_pad,
-/obj/effect/turf_decal/corner/transparent/bar/full,
-/turf/open/floor/plasteel/dark,
-/area/centcom/supplypod)
 "LQ" = (
 /obj/effect/turf_decal/corner/transparent/bar/three_quarters,
 /obj/effect/turf_decal/industrial/fire{
@@ -13679,8 +13729,7 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "MW" = (
-/turf/closed/indestructible/riveted,
-/area/errorroom)
+/turf/closed/indestructible/riveted)
 "MX" = (
 /obj/effect/turf_decal/corner/transparent/neutral{
 	dir = 8
@@ -14493,12 +14542,10 @@
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "Pn" = (
-/obj/machinery/reagentgrinder/constructed{
-	pixel_y = 4;
-	pixel_x = 8
+/obj/structure/extinguisher_cabinet/directional/east,
+/obj/effect/turf_decal/corner/transparent/brown{
+	dir = 1
 	},
-/obj/structure/table/reinforced,
-/obj/effect/turf_decal/corner/transparent/bar/full,
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "Po" = (
@@ -14983,6 +15030,12 @@
 /turf/open/floor/wood,
 /area/centcom/holding)
 "QH" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 5
+	},
 /obj/structure/fluff/beach_umbrella/science,
 /turf/open/floor/carpet/purple,
 /area/centcom)
@@ -15014,6 +15067,15 @@
 /obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
+"QO" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 6
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 10
+	},
+/turf/open/floor/carpet/purple,
+/area/centcom)
 "QP" = (
 /obj/structure/bookcase/random/nonfiction,
 /obj/structure/window{
@@ -15082,12 +15144,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
-"QY" = (
-/obj/item/rupee,
-/turf/open/water/stormy_planet_lit{
-	planetary_atmos = 0
-	},
-/area/errorroom)
 "QZ" = (
 /obj/machinery/button/door/indestructible{
 	id = "thunderdomegen";
@@ -15280,11 +15336,6 @@
 	dir = 9
 	},
 /area/centcom)
-"Rt" = (
-/obj/effect/turf_decal/corner/transparent/bar/full,
-/obj/machinery/chem_master,
-/turf/open/floor/plasteel/dark_2,
-/area/centcom/supplypod)
 "Ru" = (
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 8
@@ -15468,10 +15519,11 @@
 /turf/open/floor/wood,
 /area/centcom/control)
 "RW" = (
-/turf/open/water/stormy_planet_lit{
+/obj/item/rupee,
+/turf/open/floor/plating/ashplanet/wateryrock{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
 	planetary_atmos = 0
-	},
-/area/errorroom)
+	})
 "RY" = (
 /turf/closed/indestructible/abductor{
 	icon_state = "alien18"
@@ -15595,11 +15647,10 @@
 /turf/open/floor/grass,
 /area/centcom/control)
 "Sr" = (
+/obj/structure/table/reinforced,
 /obj/item/storage/fancy/donut_box,
 /obj/item/camera,
-/obj/effect/turf_decal/corner/transparent/bar/full,
-/obj/structure/table/reinforced,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel,
 /area/centcom/supplypod)
 "Ss" = (
 /obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
@@ -16115,10 +16166,25 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/tdome/tdomeobserve)
+"TF" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 5
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 6
+	},
+/turf/open/floor/carpet/stellar,
+/area/centcom)
 "TG" = (
 /turf/open/floor/grass,
 /area/centcom/control)
 "TH" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 5
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 6
+	},
 /obj/item/clothing/shoes/sandal{
 	pixel_x = 19
 	},
@@ -16490,6 +16556,7 @@
 /turf/open/floor/plasteel/dark,
 /area/tdome/tdomeobserve)
 "UN" = (
+/obj/item/gun/ballistic/automatic/assault/morita1/desert,
 /obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
@@ -16653,15 +16720,6 @@
 	icon_state = "panelscorched"
 	},
 /area/centcom)
-"Vm" = (
-/obj/effect/turf_decal/corner/transparent/brown{
-	dir = 9
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/supplypod)
 "Vn" = (
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/door/airlock/centcom{
@@ -16778,6 +16836,15 @@
 /obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/centcom/control)
+"VG" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 5
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 6
+	},
+/turf/open/floor/carpet/executive,
+/area/centcom)
 "VH" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/gun/energy/laser/iot/lethal,
@@ -16988,11 +17055,6 @@
 /obj/machinery/fax/admin/roumain,
 /turf/open/floor/wood/mahogany,
 /area/centcom)
-"Wn" = (
-/obj/machinery/chem_dispenser/chem_synthesizer,
-/obj/effect/turf_decal/corner/transparent/bar/full,
-/turf/open/floor/plasteel/dark_2,
-/area/centcom/supplypod)
 "Wo" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
 /obj/item/food/grown/banana,
@@ -17017,15 +17079,6 @@
 /obj/effect/turf_decal/corner/transparent/neutral/full,
 /turf/open/floor/plasteel/dark,
 /area/tdome/tdomeobserve)
-"Wp" = (
-/obj/effect/turf_decal/corner/transparent/brown{
-	dir = 8
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/supplypod)
 "Wq" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -17073,6 +17126,10 @@
 /obj/item/gun/ballistic/automatic/laser/ctf{
 	pixel_x = 0;
 	pixel_y = -6
+	},
+/obj/item/gun/ballistic/shotgun/automatic/combat/compact{
+	pixel_x = 0;
+	pixel_y = 15
 	},
 /turf/open/floor/plasteel/darkredfull,
 /area/centcom/ferry)
@@ -17682,11 +17739,10 @@
 /turf/open/floor/plasteel/dark/wasteplanet,
 /area/outpost/exterior)
 "Yl" = (
-/turf/open/floor/plating/asteroid/waterplanet{
+/turf/open/floor/plating/ashplanet/wateryrock{
 	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
 	planetary_atmos = 0
-	},
-/area/errorroom)
+	})
 "Ym" = (
 /obj/effect/turf_decal/corner/opaque/red/three_quarters{
 	dir = 2
@@ -18186,6 +18242,15 @@
 /obj/item/bedsheet/wiz,
 /turf/open/floor/carpet,
 /area/centcom/evac)
+"Zs" = (
+/obj/effect/turf_decal/weather/sand{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/sand{
+	dir = 5
+	},
+/turf/open/floor/carpet/orange,
+/area/centcom)
 "Zt" = (
 /obj/effect/turf_decal/trimline/opaque/vired/corner{
 	dir = 4
@@ -18229,10 +18294,7 @@
 /area/centcom/control)
 "ZA" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/gun/ballistic/shotgun/automatic/combat{
-	pixel_x = 0;
-	pixel_y = 1
-	},
+/obj/item/gun/ballistic/automatic/assault/morita1/swamp,
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "ZB" = (
@@ -18362,13 +18424,6 @@
 /obj/effect/turf_decal/corner/transparent/neutral/full,
 /turf/open/floor/plasteel/dark,
 /area/tdome/tdomeobserve)
-"ZV" = (
-/obj/item/rupee,
-/turf/open/floor/plating/asteroid/waterplanet{
-	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
-	planetary_atmos = 0
-	},
-/area/errorroom)
 "ZW" = (
 /obj/machinery/power/smes/shuttle/precharged{
 	dir = 1
@@ -19164,13 +19219,13 @@ gd
 gd
 MW
 uo
-zs
-ZV
-Yl
-ZV
 RW
-QY
-zs
+RW
+RW
+Yl
+RW
+RW
+RW
 uo
 MW
 gd
@@ -19357,11 +19412,11 @@ gd
 gd
 MW
 uo
+RW
+RW
+RW
 Yl
-hC
-Yl
-Yl
-Yl
+RW
 RW
 RW
 uo
@@ -19550,13 +19605,13 @@ gd
 gd
 MW
 uo
-ZV
-Yl
-ZV
-Yl
-hC
 RW
-QY
+RW
+RW
+Yl
+RW
+RW
+RW
 uo
 MW
 gd
@@ -19743,13 +19798,13 @@ gd
 gd
 MW
 uo
-hC
 Yl
 Yl
 Yl
-nQ
 Yl
-RW
+Yl
+Yl
+Yl
 uo
 MW
 gd
@@ -19936,10 +19991,10 @@ gd
 gd
 MW
 uo
-ZV
+RW
+RW
+RW
 Yl
-Yl
-ZV
 Yl
 Yl
 Yl
@@ -20129,9 +20184,9 @@ gd
 gd
 MW
 AD
-Yl
-Yl
-Yl
+RW
+RW
+RW
 Yl
 Yl
 bG
@@ -20322,10 +20377,10 @@ gd
 gd
 MW
 uo
+RW
+RW
+RW
 Yl
-ZV
-Yl
-ZV
 Yl
 Yl
 Yl
@@ -20515,12 +20570,12 @@ gd
 gd
 MW
 uo
-hC
 Yl
 Yl
-ZV
 Yl
-ZV
+Yl
+Yl
+Yl
 Yl
 uo
 MW
@@ -20708,13 +20763,13 @@ gd
 gd
 MW
 uo
-nQ
+RW
+RW
+RW
 Yl
-hC
-Yl
-ZV
-hC
-ZV
+RW
+RW
+RW
 uo
 MW
 gd
@@ -20901,13 +20956,13 @@ gd
 gd
 MW
 uo
+RW
+RW
+RW
 Yl
-ZV
-Yl
-Yl
-Yl
-Yl
-Yl
+RW
+RW
+RW
 uo
 MW
 gd
@@ -21094,13 +21149,13 @@ gd
 gd
 MW
 uo
-ZV
-hC
+RW
+RW
+RW
 Yl
-Yl
-zs
-ZV
-hC
+RW
+RW
+RW
 uo
 MW
 gd
@@ -46178,7 +46233,7 @@ Je
 Nz
 jF
 FW
-UN
+Nu
 tG
 qG
 gs
@@ -48095,8 +48150,8 @@ Yu
 yy
 CG
 Ln
-pj
 nZ
+UN
 Ln
 jl
 lQ
@@ -48288,7 +48343,7 @@ zn
 Qb
 dL
 qG
-UN
+pj
 ZA
 qG
 ra
@@ -48389,7 +48444,7 @@ ZM
 ZM
 ZM
 QH
-PN
+QO
 TQ
 Kr
 Kr
@@ -48665,7 +48720,7 @@ vR
 vR
 zf
 Qb
-IF
+Iq
 IF
 TP
 Qt
@@ -48763,19 +48818,19 @@ Ey
 Kr
 TQ
 ac
-WV
+rL
 ZM
 ZM
-xE
+TF
 mV
-ij
+VG
 ZM
 TH
 Nv
-kE
+fb
 ZM
 ZM
-ci
+Zs
 Ac
 TQ
 Kr
@@ -49161,7 +49216,7 @@ hd
 hd
 hd
 ZM
-sA
+IE
 wq
 TQ
 Kr
@@ -51177,7 +51232,7 @@ Ru
 Ru
 hR
 Cd
-xM
+hx
 Od
 VP
 zQ
@@ -52920,7 +52975,7 @@ sp
 sp
 sp
 fF
-Ev
+eM
 Cd
 Cd
 Qb
@@ -53108,13 +53163,13 @@ gd
 gd
 cH
 Cd
-Wp
-Vm
-Vm
-Vm
-Vm
-ub
-Wn
+hx
+Od
+Od
+Od
+Od
+eM
+Cd
 Cd
 gd
 gd
@@ -53301,13 +53356,13 @@ gd
 gd
 gd
 Cd
-LP
+JF
 Dm
 Fp
 Kk
 kK
 Pn
-Rt
+Cd
 Cd
 gd
 gd

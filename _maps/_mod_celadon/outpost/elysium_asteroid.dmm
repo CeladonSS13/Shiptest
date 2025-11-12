@@ -82,9 +82,6 @@
 /obj/machinery/microwave{
 	pixel_y = 5
 	},
-/obj/machinery/light/colored/directional/south{
-	pixel_y = -7
-	},
 /turf/open/floor/carpet/royalblack,
 /area/outpost/fraction/syndi)
 "acO" = (
@@ -380,8 +377,7 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4
 	},
-/turf/open/floor/plating,
-/area/outpost/exterior/ocean)
+/turf/open/floor/plating)
 "aok" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 1
@@ -886,9 +882,6 @@
 	pixel_y = 23;
 	pixel_x = 5
 	},
-/obj/machinery/light/colored/orange/directional/south{
-	pixel_y = -7
-	},
 /turf/open/floor/marble,
 /area/outpost/fraction/inteq)
 "aHI" = (
@@ -921,7 +914,6 @@
 	},
 /obj/effect/spawner/random/vending/cola,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "aIq" = (
 /obj/effect/turf_decal/trimline/opaque/nsorange/line{
@@ -1160,7 +1152,6 @@
 /area/outpost/hallway/central)
 "aQH" = (
 /obj/structure/table/wood/fancy/blue,
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/solfed)
 "aQI" = (
@@ -1889,7 +1880,6 @@
 "bnM" = (
 /obj/structure/rack,
 /obj/effect/spawner/random/clothing/mafia_outfit,
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "bog" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -2351,13 +2341,6 @@
 "bEz" = (
 /turf/open/floor/plasteel/dark,
 /area/outpost/vacant_rooms/shop)
-"bEP" = (
-/obj/effect/turf_decal/techfloor{
-	dir = 8
-	},
-/obj/machinery/light/colored/blue/directional/east,
-/turf/open/floor/plasteel/tech,
-/area/outpost/crew/cryo)
 "bFO" = (
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
@@ -2399,7 +2382,6 @@
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/hallway/central)
 "bHL" = (
-/obj/machinery/light/colored/red/directional/east,
 /obj/effect/spawner/random/trash/graffiti,
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
@@ -2487,7 +2469,6 @@
 	layer = 3.09;
 	dir = 1
 	},
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_3)
 "bNk" = (
@@ -2527,10 +2508,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/fore)
-"bNU" = (
-/obj/structure/flora/herb/g,
-/turf/open/floor/grass,
-/area/outpost/hallway/aft)
 "bOi" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -2663,7 +2640,6 @@
 /obj/structure/railing/wood{
 	dir = 10
 	},
-/obj/structure/flora/herb/a,
 /obj/structure/platform/wood{
 	dir = 1;
 	pixel_y = 4;
@@ -2839,7 +2815,6 @@
 /area/outpost/hallway/central)
 "bZk" = (
 /obj/structure/chair/sofa/blue/corpo/right/directional,
-/obj/machinery/light/colored/white/directional/north,
 /turf/open/floor/marble/black,
 /area/outpost/fraction/nanotrasen)
 "bZC" = (
@@ -2979,10 +2954,6 @@
 	},
 /turf/open/space/basic,
 /area/space)
-"cdH" = (
-/obj/machinery/light/colored/white/directional/north,
-/turf/open/floor/grass/snow/safe,
-/area/outpost/fraction/inteq)
 "cdO" = (
 /obj/machinery/button/door{
 	pixel_y = 25;
@@ -3249,22 +3220,11 @@
 /obj/structure/fluff/hedge{
 	icon_state = "hedge-12"
 	},
-/obj/machinery/light/colored/orange/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/outpost/hallway/fore)
 "ckZ" = (
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/outpost/medical/morgue)
-"clj" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 10
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/colored/directional/west{
-	pixel_x = -10
-	},
-/turf/open/floor/wood,
-/area/outpost/hallway/central)
 "clB" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -3575,9 +3535,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/obj/machinery/light/colored/green/directional/south{
-	pixel_y = -5
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood,
 /area/outpost/crew/library)
@@ -3702,10 +3659,6 @@
 	},
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/plating,
-/area/outpost/fraction/syndi)
-"czu" = (
-/obj/machinery/light/colored/red/directional/north,
-/turf/open/floor/plasteel/dark,
 /area/outpost/fraction/syndi)
 "czQ" = (
 /obj/effect/turf_decal/trimline/opaque/solgovgold/warning{
@@ -3872,11 +3825,6 @@
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/central)
 "cEZ" = (
-/obj/structure/sign/directions/outpost/administration{
-	dir = 4;
-	pixel_x = 0;
-	pixel_y = 25
-	},
 /obj/structure/sign/directions/medical{
 	pixel_y = 31;
 	dir = 1
@@ -3941,18 +3889,6 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/outpost/cargo)
-"cGn" = (
-/obj/effect/portal/permanent/random{
-	alpha = 0;
-	name = "r4";
-	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	id = "r4";
-	mouse_opacity = 0
-	},
-/turf/open/floor/fakepit,
-/area/ruin/beach/complex{
-	name = "Elysium Town"
-	})
 "cGD" = (
 /turf/closed/indestructible/rock/schist,
 /area/outpost/external)
@@ -4154,11 +4090,6 @@
 /area/ruin/beach/complex{
 	name = "Elysium Town"
 	})
-"cOc" = (
-/obj/structure/flora/herb/b,
-/obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/grass,
-/area/outpost/hallway/central)
 "cOe" = (
 /obj/structure/rack,
 /obj/structure/window/reinforced/spawner{
@@ -4187,18 +4118,6 @@
 /obj/machinery/disposal/bin,
 /turf/open/floor/plasteel/patterned/grid,
 /area/outpost/hallway/fore)
-"cOy" = (
-/obj/effect/portal/permanent/random{
-	alpha = 0;
-	name = "r2";
-	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	id = "r2";
-	mouse_opacity = 0
-	},
-/turf/open/floor/fakepit,
-/area/ruin/beach/complex{
-	name = "Elysium Town"
-	})
 "cOS" = (
 /obj/effect/turf_decal/corner/opaque/yellow/full,
 /obj/effect/turf_decal/industrial/hatch/yellow,
@@ -4253,7 +4172,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "cQr" = (
 /obj/effect/turf_decal/trimline/opaque/beige/filled/warning{
@@ -4311,8 +4229,7 @@
 /area/outpost/hallway/central)
 "cSK" = (
 /obj/effect/turf_decal/industrial/warning,
-/turf/open/floor/plating,
-/area/outpost/exterior/ocean)
+/turf/open/floor/plating)
 "cTc" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -4388,7 +4305,6 @@
 	},
 /area/outpost/fraction/nanotrasen)
 "cUP" = (
-/obj/structure/flora/herb/e,
 /obj/machinery/light/colored/pink{
 	pixel_y = -4
 	},
@@ -4411,7 +4327,6 @@
 /turf/open/floor/concrete/slab_4,
 /area/outpost/hallway/starboard)
 "cVs" = (
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/red_gold,
 /area/outpost/hallway/central)
 "cVD" = (
@@ -4432,12 +4347,6 @@
 "cVO" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
-	},
-/obj/structure/sign/directions/outpost/sell{
-	pixel_y = -20
-	},
-/obj/structure/sign/directions/outpost/bar{
-	pixel_y = -26
 	},
 /turf/open/floor/carpet/green,
 /area/outpost/hallway/aft)
@@ -4487,9 +4396,6 @@
 	icon_state = "plant-21";
 	pixel_x = -6;
 	pixel_y = 17
-	},
-/obj/machinery/light/colored/directional/west{
-	pixel_x = -10
 	},
 /turf/open/floor/carpet/nanoweave,
 /area/outpost/vacant_rooms)
@@ -4665,7 +4571,6 @@
 /obj/structure/railing/wood{
 	dir = 6
 	},
-/obj/structure/chair/sofa/green/left/directional/west,
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_3)
 "ddP" = (
@@ -4706,10 +4611,6 @@
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/outpost/fraction/inteq)
-"dfm" = (
-/obj/structure/flora/herb/a,
-/turf/open/floor/grass,
-/area/outpost/hallway/aft)
 "dfw" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/portable_atmospherics/canister/tritium,
@@ -4950,7 +4851,6 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "dmp" = (
-/obj/machinery/light/colored/directional/north,
 /obj/structure/bookcase/random,
 /turf/open/floor/carpet/royalblack,
 /area/outpost/fraction/nanotrasen)
@@ -5001,7 +4901,6 @@
 /obj/machinery/airalarm/directional/south{
 	req_access_txt = "8100, 8111"
 	},
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_2)
 "dow" = (
@@ -5409,10 +5308,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/palata_1)
-"dEP" = (
-/obj/structure/flora/herb/f,
-/turf/open/floor/grass,
-/area/outpost/hallway/aft)
 "dFf" = (
 /obj/effect/turf_decal/sand/plating,
 /obj/machinery/conveyor/auto{
@@ -5471,7 +5366,6 @@
 	},
 /area/outpost/hallway/central)
 "dGK" = (
-/obj/machinery/light/colored/red/directional/north,
 /obj/effect/spawner/random/trash/moisture,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/trash/garbage,
@@ -5659,7 +5553,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/black,
 /area/outpost/fraction/syndi)
 "dNG" = (
@@ -5708,7 +5601,7 @@
 /obj/effect/turf_decal/industrial/fire,
 /obj/structure/table/syndi,
 /obj/machinery/fax/ruin,
-/turf/open/floor/mineral/plastitanium,
+/turf/open/floor/mineral/plastitanium/red,
 /area/outpost/fraction/syndi)
 "dOR" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -5972,12 +5865,11 @@
 /area/outpost/hallway/central)
 "dYj" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "dYo" = (
-/obj/structure/flora/herb/b,
-/turf/open/floor/grass,
-/area/outpost/hallway/aft)
+/obj/machinery/gacha_machine,
+/turf/open/floor/plasteel/patterned/cargo_one,
+/area/outpost/fraction/solfed)
 "dYr" = (
 /obj/structure/bed/pod,
 /obj/effect/turf_decal/corner/transparent/blue/half{
@@ -6163,8 +6055,7 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/outpost/fraction/inteq)
 "ebP" = (
-/turf/closed/indestructible/reinforced,
-/area/outpost/exterior/ocean)
+/turf/closed/indestructible/reinforced)
 "ecd" = (
 /obj/item/reagent_containers/condiment/milk{
 	pixel_x = 8;
@@ -6246,7 +6137,6 @@
 /turf/open/floor/plasteel,
 /area/outpost/crew/bar/bar_zone)
 "ecz" = (
-/obj/machinery/light/colored/directional/west,
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
 	},
@@ -6269,8 +6159,7 @@
 "ecW" = (
 /obj/effect/turf_decal/industrial/warning,
 /obj/machinery/light/floor/hangar,
-/turf/open/floor/plating,
-/area/outpost/exterior/ocean)
+/turf/open/floor/plating)
 "edl" = (
 /obj/structure/window/reinforced{
 	dir = 1;
@@ -6386,12 +6275,6 @@
 /obj/structure/chair/sofa/grey/old/left/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/inteq)
-"eip" = (
-/obj/structure/table/wood/fancy/blue,
-/obj/machinery/newscaster/directional/south,
-/obj/effect/spawner/random/celadon_drink,
-/turf/open/floor/carpet/blue,
-/area/outpost/fraction/nanotrasen)
 "eis" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 1
@@ -6629,10 +6512,6 @@
 	name = "Syndicate Assault Borg Valera";
 	desc = "A gutted chassis of the Cybersun Bloodhound, a model infamous across space as the first truly successful example of a weaponized machine lifeform. An attached plaque extolls the design as a harbinger of Cybersun's rise to industry dominance in the field of combat cybernetics. Но данная модель известна в узких кругах, как Валера, неизвестный деятель, чьё имя вызывает восхищение и уважение. Слава великим, слава Синдикату!But this model is known in narrow circles as Valera, an unknown figure whose name evokes admiration and respect. Glory to the great, glory to the Syndicate!"
 	},
-/obj/machinery/light/colored/red/directional/north{
-	pixel_y = -27;
-	layer = 2.89
-	},
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/fraction/syndi/donkco_shop)
 "eqQ" = (
@@ -6674,7 +6553,6 @@
 	layer = 3.1;
 	dir = 8
 	},
-/obj/structure/chair/sofa/green/left/directional/east,
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_3)
 "erC" = (
@@ -6704,21 +6582,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/cargo)
-"ete" = (
-/obj/effect/portal/permanent/random{
-	alpha = 10;
-	name = "r8";
-	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	icon_state = "plasmasoul";
-	icon = 'icons/effects/anomalies.dmi';
-	id = "r8";
-	density = 0;
-	mouse_opacity = 0
-	},
-/turf/open/floor/plating/asteroid/sand/ship,
-/area/ruin/beach/complex{
-	name = "Elysium Town"
-	})
 "etV" = (
 /obj/effect/turf_decal/corner/transparent/nsorange/three_quarters{
 	dir = 8
@@ -6764,15 +6627,6 @@
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/concrete/slab_4,
 /area/outpost/hallway/aft)
-"evq" = (
-/obj/structure/table/wood/reinforced/bar,
-/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
-	pixel_x = 10;
-	pixel_y = 13
-	},
-/obj/effect/spawner/random/celadon_drink,
-/turf/open/floor/wood/ebony,
-/area/outpost/fraction/solfed)
 "evr" = (
 /obj/structure/window/reinforced{
 	dir = 1;
@@ -7298,11 +7152,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
-"eJW" = (
-/obj/structure/table/wood/reinforced/bar,
-/obj/effect/spawner/random/celadon_drink,
-/turf/open/floor/wood/ebony,
-/area/outpost/fraction/solfed)
 "eKa" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/stairs/mid{
@@ -7358,7 +7207,6 @@
 	pixel_x = -3;
 	mouse_opacity = 0
 	},
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "eLQ" = (
 /obj/effect/turf_decal/elysium_logo/one_one,
@@ -7402,7 +7250,6 @@
 /obj/structure/sign/poster/contraband/smoke{
 	pixel_y = -32
 	},
-/obj/structure/flora/herb/f,
 /turf/open/floor/grass,
 /area/outpost/hallway/central)
 "eNP" = (
@@ -7740,16 +7587,6 @@
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/starboard)
-"fbB" = (
-/obj/structure/flora/ausbushes/fullgrass{
-	pixel_x = 12;
-	pixel_y = 2
-	},
-/obj/machinery/light/colored/directional/south{
-	pixel_y = -6
-	},
-/turf/open/floor/grass,
-/area/outpost/hallway/aft)
 "fbW" = (
 /obj/machinery/door/window/eastright{
 	dir = 8
@@ -7761,7 +7598,6 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/machinery/light/colored/directional/north,
 /obj/structure/platform/wood{
 	dir = 8
 	},
@@ -8109,12 +7945,6 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/directions/outpost/shop{
-	pixel_y = -19
-	},
-/obj/structure/sign/directions/outpost/toys{
-	pixel_y = -25
-	},
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/central)
 "fnP" = (
@@ -8186,7 +8016,6 @@
 	pixel_y = 3;
 	pixel_x = 8
 	},
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood/mahogany,
 /area/outpost/crew/bar/bar_zone)
 "fpT" = (
@@ -8561,11 +8390,6 @@
 	dir = 8
 	},
 /area/outpost/engineering/atmospherics)
-"fAc" = (
-/obj/structure/railing/wood,
-/obj/structure/flora/herb/f,
-/turf/open/floor/grass,
-/area/outpost/hallway/aft)
 "fAg" = (
 /obj/structure/railing/celebrate/corner{
 	dir = 4;
@@ -8633,12 +8457,6 @@
 /obj/structure/sign/poster/elysium/random,
 /turf/closed/indestructible/reinforced,
 /area/outpost/fraction/solfed)
-"fEl" = (
-/obj/machinery/light/colored/blue/directional/west{
-	pixel_x = -10
-	},
-/turf/open/floor/plasteel/heavymetal/var4,
-/area/outpost/medical/morgue)
 "fEF" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -9023,7 +8841,6 @@
 /area/outpost/crew/cryo)
 "fSF" = (
 /mob/living/simple_animal/hostile/netherworld/migo,
-/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/outpost/hallway/central)
 "fSR" = (
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
@@ -9232,18 +9049,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel/grimy,
 /area/outpost/cargo)
-"gaj" = (
-/obj/effect/portal/permanent/random{
-	alpha = 0;
-	name = "r9";
-	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	id = "r9";
-	mouse_opacity = 0
-	},
-/turf/open/floor/plating/asteroid/icerock/temperate,
-/area/ruin/beach/complex{
-	name = "Elysium Town"
-	})
 "gaC" = (
 /obj/structure/table/wood/fancy/blue,
 /obj/machinery/newscaster/directional/south,
@@ -9409,7 +9214,6 @@
 /area/outpost/fraction/nanotrasen)
 "giH" = (
 /obj/machinery/vending/clothing,
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "giR" = (
 /turf/open/floor/grass/fairy,
@@ -10172,7 +9976,6 @@
 /area/outpost/crew/library)
 "gIQ" = (
 /obj/structure/flora/driftlog,
-/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/outpost/hallway/central)
 "gJg" = (
 /obj/effect/turf_decal/corner/transparent/blue/full,
@@ -10196,15 +9999,6 @@
 	use_static_power = 1;
 	alpha = 0;
 	dir = 1
-	},
-/obj/effect/portal/permanent/random{
-	alpha = 10;
-	name = "r10";
-	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	icon_state = "plasmasoul";
-	icon = 'icons/effects/anomalies.dmi';
-	id = "r10";
-	mouse_opacity = 0
 	},
 /turf/open/floor/plating/asteroid/sand/ship,
 /area/ruin/beach/complex{
@@ -10295,7 +10089,6 @@
 	dir = 1
 	},
 /obj/structure/table/glass,
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/relax_room)
 "gMy" = (
@@ -10452,15 +10245,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/concrete/slab_1,
 /area/outpost/hallway/aft)
-"gQi" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/obj/machinery/light/colored/directional/east{
-	pixel_x = 10
-	},
-/turf/open/floor/concrete/slab_1,
-/area/outpost/hallway/central)
 "gQn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/industrial/warning{
@@ -10515,7 +10299,6 @@
 /area/outpost/fraction/nanotrasen)
 "gSq" = (
 /obj/machinery/door/airlock/multi_tile/public/glass,
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "gSz" = (
 /turf/open/floor/engine/air,
@@ -10716,7 +10499,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood/mahogany,
 /area/outpost/crew/bar/bar_zone)
 "hbc" = (
@@ -10746,7 +10528,6 @@
 /obj/machinery/airalarm/directional/west{
 	req_access_txt = "8100, 8111"
 	},
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "hbV" = (
 /obj/effect/turf_decal/siding/wood,
@@ -10774,14 +10555,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
-"hew" = (
-/obj/structure/railing/wood{
-	dir = 10
-	},
-/obj/structure/flora/herb/b,
-/obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/grass,
-/area/outpost/hallway/central)
 "hfa" = (
 /obj/structure/filingcabinet/employment{
 	pixel_x = -8;
@@ -10831,15 +10604,14 @@
 /turf/open/floor/carpet/royalblack,
 /area/outpost/hallway/central)
 "hgp" = (
-/obj/structure/flora/herb/d,
-/turf/open/floor/grass,
-/area/outpost/hallway/central)
+/obj/machinery/gacha_machine,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/outpost/fraction/inteq)
 "hgt" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 1
 	},
 /obj/structure/table/glass,
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/glass/red,
 /area/outpost/fraction/syndi)
 "hgx" = (
@@ -10915,9 +10687,6 @@
 /turf/open/floor/plating,
 /area/outpost/crew/dop_zone_1)
 "hhU" = (
-/obj/machinery/light/colored/red/directional/south{
-	pixel_y = -6
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/trash/grille_or_waste,
 /turf/open/floor/plating/rust,
@@ -11082,7 +10851,6 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/obj/machinery/light/colored/white/directional/north,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/relax_room)
 "hnl" = (
@@ -11330,18 +11098,6 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/outpost/fraction/syndi)
-"hsA" = (
-/obj/effect/portal/permanent/random{
-	alpha = 0;
-	name = "r9";
-	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	id = "r9";
-	mouse_opacity = 0
-	},
-/turf/open/floor/fakepit,
-/area/ruin/beach/complex{
-	name = "Elysium Town"
-	})
 "hsB" = (
 /obj/effect/turf_decal/techfloor/orange/corner{
 	dir = 1
@@ -11434,14 +11190,12 @@
 /area/outpost/hallway/central)
 "huN" = (
 /obj/effect/spawner/random/food_or_drink/ration,
-/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/outpost/hallway/central)
 "hvo" = (
 /turf/open/floor/plating/asteroid/rockplanet/lit,
 /area/outpost/hallway/central)
 "hwj" = (
 /obj/structure/table/glass/plasma_glass,
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_1)
 "hwy" = (
@@ -11785,15 +11539,6 @@
 	use_static_power = 1;
 	alpha = 0
 	},
-/obj/effect/portal/permanent/random{
-	alpha = 10;
-	name = "r12";
-	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	icon = 'icons/effects/anomalies.dmi';
-	icon_state = "plasmasoul";
-	id = "r12";
-	mouse_opacity = 0
-	},
 /turf/open/floor/plating/asteroid/sand/ship,
 /area/ruin/beach/complex{
 	name = "Elysium Town"
@@ -11879,24 +11624,8 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/structure/sign/directions/outpost/inteq{
-	pixel_y = -5;
-	dir = 4
-	},
-/obj/structure/sign/directions/outpost/independent{
-	pixel_y = 1;
-	dir = 4
-	},
-/obj/structure/sign/directions/outpost/sell{
-	pixel_y = 7;
-	dir = 4
-	},
 /obj/structure/sign/directions/medical{
 	pixel_y = 13;
-	dir = 4
-	},
-/obj/structure/sign/directions/outpost/bar{
-	pixel_y = -11;
 	dir = 4
 	},
 /turf/closed/indestructible/reinforced,
@@ -11971,18 +11700,6 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plasteel/rockvault,
-/area/outpost/operations)
-"hOK" = (
-/obj/machinery/light/directional/west,
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/operations)
 "hOO" = (
@@ -12098,14 +11815,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/engineering)
-"hTV" = (
-/obj/machinery/light/colored/red/directional/south{
-	pixel_y = -6
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/random/trash/food_packaging,
-/turf/open/floor/plating,
-/area/outpost/fraction/syndi)
 "hUa" = (
 /obj/structure/window/reinforced/spawner/east,
 /obj/machinery/computer/med_data,
@@ -12139,14 +11848,6 @@
 	},
 /turf/open/floor/carpet/donk,
 /area/outpost/fraction/syndi/donkco_shop)
-"hWC" = (
-/obj/structure/railing/wood{
-	dir = 6
-	},
-/obj/structure/flora/herb/c,
-/obj/machinery/light/colored/directional/north,
-/turf/open/floor/grass,
-/area/outpost/hallway/central)
 "hWM" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -12569,15 +12270,6 @@
 /area/ruin/beach/complex{
 	name = "Elysium Town"
 	})
-"ilF" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/obj/machinery/light/colored/directional/south{
-	pixel_y = -6
-	},
-/turf/open/floor/concrete/tiles,
-/area/outpost/crew/garden)
 "ilY" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -12622,28 +12314,6 @@
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood,
 /area/outpost/fraction/nanotrasen)
-"inO" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/structure/railing/wood{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wood{
-	color = "#792f27";
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/light/colored/green/directional/north{
-	pixel_y = 14
-	},
-/turf/open/floor/carpet,
-/area/outpost/crew/library)
 "ioq" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
@@ -13486,9 +13156,6 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/machinery/light/colored/directional/east{
-	pixel_y = -9
-	},
 /turf/open/floor/concrete/slab_1,
 /area/outpost/hallway/aft)
 "iPL" = (
@@ -13525,7 +13192,6 @@
 /turf/open/floor/plating,
 /area/outpost/maintenance/fore)
 "iQN" = (
-/obj/machinery/light/colored/orange/directional/west,
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30";
 	dir = 9
@@ -13695,10 +13361,6 @@
 /obj/structure/stone_tile/slab,
 /turf/closed/indestructible/riveted/boss,
 /area/outpost/hallway/central)
-"iUz" = (
-/obj/structure/flora/flytrap,
-/turf/open/floor/grass,
-/area/outpost/hallway/aft)
 "iUF" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -13753,7 +13415,6 @@
 /area/outpost/fraction/solfed)
 "iVr" = (
 /obj/structure/railing/wood,
-/obj/structure/flora/herb/b,
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/platform/wood{
 	dir = 1;
@@ -13852,8 +13513,7 @@
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 8
 	},
-/turf/open/floor/plating,
-/area/outpost/exterior/ocean)
+/turf/open/floor/plating)
 "jbL" = (
 /obj/effect/turf_decal/steeldecal/steel_decals10{
 	dir = 1
@@ -13907,7 +13567,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
 	},
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "jdw" = (
 /obj/effect/turf_decal/siding/wood/corner{
@@ -13931,9 +13590,6 @@
 /area/outpost/crew/dop_zone_1)
 "jel" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/directions/outpost/crio{
-	pixel_y = 1
-	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/hallway/central)
 "jeY" = (
@@ -14188,14 +13844,6 @@
 	dir = 1
 	},
 /area/outpost/crew/cryo)
-"jmx" = (
-/obj/structure/flora/ausbushes/fullgrass,
-/obj/structure/sign/directions/outpost/nanotrasen{
-	pixel_y = 29;
-	dir = 1
-	},
-/turf/open/floor/grass,
-/area/outpost/hallway/central)
 "jmN" = (
 /obj/effect/turf_decal/corner/transparent/blue{
 	dir = 10
@@ -14420,27 +14068,10 @@
 /obj/item/key/janitor,
 /obj/item/reagent_containers/spray/mister/janitor,
 /obj/item/watertank/janitor,
-/obj/machinery/light/colored/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/outpost/vacant_rooms/shop)
 "jtb" = (
 /obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/obj/structure/sign/directions/outpost/nanotrasen{
-	pixel_y = 7;
-	dir = 8
-	},
-/obj/structure/sign/directions/outpost/solfed{
-	pixel_y = 1;
-	dir = 8
-	},
-/obj/structure/sign/directions/outpost/toys{
-	pixel_y = -11;
-	dir = 8
-	},
-/obj/structure/sign/directions/outpost/shop{
-	pixel_y = -5;
 	dir = 8
 	},
 /obj/structure/sign/directions/science{
@@ -14619,7 +14250,6 @@
 /obj/effect/turf_decal/corner/transparent/blue/half{
 	dir = 8
 	},
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/reseption)
 "jBf" = (
@@ -14915,9 +14545,6 @@
 /obj/structure/bookcase/random/nonfiction{
 	opacity = 1
 	},
-/obj/machinery/light/colored/pink/directional/west{
-	pixel_x = -9
-	},
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
 "jOA" = (
@@ -15024,14 +14651,6 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/structure/sign/directions/outpost/elevator/one{
-	pixel_y = 29;
-	dir = 1
-	},
-/obj/structure/sign/directions/outpost/elevator/two{
-	pixel_y = 23;
-	dir = 1
-	},
 /turf/open/floor/concrete/slab_4,
 /area/outpost/hallway/fore)
 "jSq" = (
@@ -15088,21 +14707,11 @@
 /turf/open/floor/plasteel,
 /area/outpost/vacant_rooms)
 "jTy" = (
-/obj/structure/sign/directions/outpost/elevator{
-	pixel_y = -19
-	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
 /turf/open/floor/concrete/slab_1,
 /area/outpost/hallway/aft)
-"jTM" = (
-/obj/machinery/light/colored/orange/directional/east,
-/obj/effect/turf_decal/siding/wood{
-	dir = 6
-	},
-/turf/open/floor/carpet/donk,
-/area/outpost/fraction/syndi/donkco_shop)
 "jTV" = (
 /obj/structure/stone_tile/surrounding/cracked{
 	dir = 8
@@ -15962,7 +15571,6 @@
 	color = "#543c30"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/solfed)
 "kud" = (
@@ -15993,25 +15601,6 @@
 	planetary_atmos = 1
 	},
 /area/outpost/crew/lounge)
-"kwl" = (
-/obj/effect/portal/permanent/random{
-	alpha = 0;
-	name = "r1";
-	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	id = "r1";
-	mouse_opacity = 0
-	},
-/turf/open/floor/fakepit,
-/area/ruin/beach/complex{
-	name = "Elysium Town"
-	})
-"kwz" = (
-/obj/structure/chair/comfy/blue/corpo/directional/west,
-/obj/machinery/light/colored/white/directional/south{
-	pixel_y = -7
-	},
-/turf/open/floor/carpet/blue,
-/area/outpost/fraction/nanotrasen)
 "kwQ" = (
 /obj/effect/turf_decal/corner/opaque/yellow/full,
 /obj/effect/turf_decal/industrial/hatch/yellow,
@@ -16195,7 +15784,6 @@
 /obj/item/storage/fancy/cigarettes/cigars/cohiba,
 /obj/item/storage/fancy/cigarettes/cigars/havana,
 /obj/item/lighter/clockwork,
-/obj/effect/spawner/random/celadon_drink,
 /obj/machinery/button/door{
 	id = "outpost_bridge_lockdown_inners";
 	pixel_x = -8;
@@ -16227,7 +15815,6 @@
 /obj/structure/fluff/hedge{
 	icon_state = "hedge-12"
 	},
-/obj/machinery/light/colored/orange/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/outpost/hallway/fore)
 "kDo" = (
@@ -16255,16 +15842,6 @@
 	},
 /turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
 /area/outpost/crew/bar/bar_zone)
-"kDB" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/obj/machinery/light/colored/white/directional/west{
-	pixel_y = 10
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet/nanoweave,
-/area/outpost/crew/canteen)
 "kDE" = (
 /obj/structure/railing{
 	dir = 1
@@ -16333,7 +15910,6 @@
 	icon_state = "syndicate-bomb";
 	name = "self destruct device"
 	},
-/obj/machinery/light/colored/red/directional/east,
 /turf/open/floor/circuit/red,
 /area/outpost/fraction/syndi)
 "kEz" = (
@@ -16363,11 +15939,6 @@
 /area/ruin/beach/complex{
 	name = "Elysium Town"
 	})
-"kEO" = (
-/obj/structure/lattice,
-/obj/effect/spawner/random/celadon_drink,
-/turf/open/space/basic,
-/area/outpost/external)
 "kET" = (
 /obj/structure/flora/junglebush/c,
 /turf/open/floor/plating/asteroid/dirt/grass/jungle,
@@ -16387,8 +15958,7 @@
 "kFd" = (
 /obj/machinery/light/floor/hangar,
 /obj/effect/turf_decal/industrial/warning/corner,
-/turf/open/floor/plating,
-/area/outpost/exterior/ocean)
+/turf/open/floor/plating)
 "kFi" = (
 /obj/structure/grille/broken,
 /obj/effect/decal/cleanable/dirt,
@@ -16469,9 +16039,6 @@
 	dir = 1
 	},
 /obj/item/trash/lifosa,
-/obj/machinery/light/colored/white/directional/south{
-	pixel_y = -7
-	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
 "kHK" = (
@@ -16666,7 +16233,6 @@
 	pixel_y = 13
 	},
 /obj/machinery/newscaster/directional/north,
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/solfed)
 "kNI" = (
@@ -16731,9 +16297,6 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/outpost/fraction/inteq)
 "kPb" = (
-/obj/machinery/light/colored/orange/directional/south{
-	pixel_y = -7
-	},
 /obj/structure/chair/bench/orange/directional/west{
 	dir = 1
 	},
@@ -16745,7 +16308,6 @@
 	pixel_x = -8;
 	pixel_y = 7
 	},
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood/mahogany,
 /area/outpost/fraction/nanotrasen)
 "kPC" = (
@@ -17217,10 +16779,6 @@
 /obj/effect/turf_decal/nanotrasen/ns/center_left,
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/cargo/faction/nanotrasen)
-"lhy" = (
-/obj/structure/flora/explosive_shrooms,
-/turf/open/floor/grass/fairy,
-/area/outpost/maintenance/fore)
 "lhz" = (
 /obj/effect/spawner/random/stockparts,
 /turf/open/floor/plating/asteroid/snow/temperatre{
@@ -17300,8 +16858,6 @@
 /area/outpost/security/armory)
 "lkC" = (
 /obj/structure/railing/wood,
-/obj/structure/flora/herb/f,
-/obj/machinery/light/colored/directional/north,
 /turf/open/floor/grass,
 /area/outpost/hallway/central)
 "lkN" = (
@@ -17353,17 +16909,6 @@
 /obj/machinery/vending/cigarette,
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/aft)
-"lmg" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/colored/directional/north,
-/obj/structure/platform/wood{
-	dir = 4
-	},
-/turf/open/floor/concrete/slab_3,
-/area/outpost/hallway/fore)
 "lmG" = (
 /obj/structure/railing{
 	dir = 1
@@ -17913,7 +17458,6 @@
 /obj/item/reagent_containers/food/drinks/mug/coco{
 	pixel_x = 7
 	},
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood/mahogany,
 /area/outpost/crew/bar/bar_zone)
 "lIS" = (
@@ -17999,7 +17543,6 @@
 /turf/open/floor/grass/snow/safe,
 /area/outpost/fraction/inteq)
 "lKr" = (
-/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/outpost/hallway/central)
 "lLa" = (
 /obj/effect/decal/cleanable/dirt,
@@ -18014,7 +17557,6 @@
 	pixel_y = 13
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/flora/herb/b,
 /turf/open/floor/grass,
 /area/outpost/hallway/aft)
 "lLD" = (
@@ -18071,7 +17613,9 @@
 	})
 "lNk" = (
 /obj/structure/sign/flag/syndie/directional/south,
-/turf/open/floor/plasteel/dark_2,
+/obj/machinery/gacha_machine,
+/obj/effect/turf_decal/industrial/fire,
+/turf/open/floor/mineral/plastitanium/red,
 /area/outpost/fraction/syndi)
 "lNl" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -18112,13 +17656,6 @@
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/nanotrasen)
 "lOk" = (
-/obj/effect/portal/permanent/random{
-	alpha = 0;
-	name = "r7";
-	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	id = "r7";
-	mouse_opacity = 0
-	},
 /turf/open/floor/fakepit,
 /area/ruin/beach/complex{
 	name = "Elysium Town"
@@ -18232,13 +17769,6 @@
 /obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
-"lSl" = (
-/obj/structure/sign/directions/outpost/bar{
-	pixel_y = -20
-	},
-/obj/structure/flora/ausbushes/palebush,
-/turf/open/floor/grass,
-/area/outpost/hallway/aft)
 "lTe" = (
 /obj/structure/platform/ship_four{
 	dir = 5
@@ -18314,9 +17844,6 @@
 	},
 /obj/structure/disposalpipe/junction/flip{
 	dir = 4
-	},
-/obj/machinery/light/colored/green/directional/south{
-	pixel_y = -5
 	},
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -18441,13 +17968,6 @@
 	},
 /turf/open/floor/concrete/tiles,
 /area/outpost/hallway/aft)
-"lYf" = (
-/obj/structure/railing/wood{
-	dir = 4
-	},
-/obj/machinery/light/colored/directional/north,
-/turf/open/floor/grass,
-/area/outpost/crew/garden)
 "lYk" = (
 /obj/effect/turf_decal/trimline/opaque/solgovgold/corner{
 	dir = 1
@@ -18478,7 +17998,6 @@
 	color = "#792f27";
 	dir = 4
 	},
-/obj/machinery/light/colored/directional/east,
 /turf/open/floor/wood/mahogany,
 /area/outpost/crew/bar/bar_zone)
 "lZq" = (
@@ -18731,11 +18250,6 @@
 	},
 /turf/open/floor/concrete/slab_2,
 /area/outpost/hallway/aft)
-"mhB" = (
-/obj/structure/fluff/hedge,
-/obj/machinery/light/colored/directional/north,
-/turf/open/floor/plating,
-/area/outpost/hallway/fore)
 "mhI" = (
 /obj/effect/turf_decal/corner/transparent/blue/full,
 /obj/machinery/door/airlock/medical/glass,
@@ -18850,24 +18364,6 @@
 	},
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/operations)
-"mjz" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 8
-	},
-/obj/machinery/light/colored/orange/directional/south{
-	pixel_y = -6
-	},
-/turf/open/floor/wood/jungleplanet,
-/area/outpost/fraction/syndi/donkco_shop)
 "mjL" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 5
@@ -19432,9 +18928,6 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/security)
 "mIy" = (
-/obj/machinery/light/colored/red/directional/south{
-	pixel_y = -6
-	},
 /obj/effect/spawner/random/trash/decal,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/rust,
@@ -19509,20 +19002,6 @@
 	planetary_atmos = 1
 	},
 /area/outpost/crew/lounge)
-"mLs" = (
-/obj/effect/portal/permanent/random{
-	alpha = 10;
-	name = "r15";
-	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	icon_state = "plasmasoul";
-	icon = 'icons/effects/anomalies.dmi';
-	id = "r15";
-	mouse_opacity = 0
-	},
-/turf/open/floor/plating/asteroid/sand/ship,
-/area/ruin/beach/complex{
-	name = "Elysium Town"
-	})
 "mLP" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -19727,12 +19206,6 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/crew/cryo)
-"mUl" = (
-/obj/structure/bodycontainer/morgue/with_corpse{
-	dir = 8
-	},
-/turf/open/floor/plasteel/heavymetal/var4,
-/area/outpost/medical/morgue)
 "mUm" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 9
@@ -20017,7 +19490,6 @@
 /area/outpost/maintenance/aft)
 "niL" = (
 /obj/structure/flora/grass/jungle,
-/obj/machinery/light/colored/directional/north,
 /turf/open/floor/grass,
 /area/outpost/crew/garden)
 "niN" = (
@@ -20109,13 +19581,6 @@
 	light_range = 2
 	},
 /area/outpost/hallway/central)
-"nkS" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/obj/machinery/light/colored/directional/north,
-/turf/open/floor/concrete/slab_3,
-/area/outpost/hallway/starboard)
 "nlI" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
@@ -20225,10 +19690,6 @@
 "nnp" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
-	},
-/obj/structure/sign/directions/outpost/inteq{
-	pixel_y = 23;
-	dir = 4
 	},
 /obj/structure/sign/directions/service{
 	pixel_y = 29;
@@ -20412,15 +19873,13 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/lounge/cab_1)
 "nsT" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
+/obj/machinery/door/window/brigdoor/westright{
+	dir = 4
 	},
-/obj/machinery/light/colored/directional/west{
-	pixel_x = -10
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/concrete/slab_3,
-/area/outpost/hallway/central)
+/obj/machinery/door/window/brigdoor/westright,
+/obj/structure/fans/tiny,
+/turf/open/floor/plasteel/tech/grid,
+/area/outpost/operations)
 "ntp" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
@@ -20446,10 +19905,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo)
-"ntK" = (
-/obj/machinery/light/colored/blue/directional/west,
-/turf/open/floor/plating/ice/smooth,
-/area/outpost/fraction/nanotrasen)
 "ntP" = (
 /obj/structure/girder/displaced,
 /turf/open/floor/plasteel/rockvault,
@@ -20664,8 +20119,7 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
-/turf/open/floor/plating,
-/area/outpost/exterior/ocean)
+/turf/open/floor/plating)
 "nEb" = (
 /obj/effect/turf_decal/techfloor/orange,
 /obj/machinery/computer/monitor{
@@ -21193,9 +20647,9 @@
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/crew/cryo)
 "obx" = (
-/obj/machinery/light/colored/white/directional/east,
-/turf/open/floor/plating/ice/smooth,
-/area/outpost/hallway/starboard)
+/obj/machinery/gacha_machine,
+/turf/open/floor/plasteel/grimy,
+/area/outpost/cargo)
 "oby" = (
 /obj/machinery/aug_manipulator,
 /turf/open/floor/plasteel,
@@ -21264,7 +20718,6 @@
 /obj/structure/sign/warning/electricshock{
 	pixel_y = 32
 	},
-/obj/machinery/light/colored/blue/directional/north,
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/cryo)
 "oei" = (
@@ -21351,7 +20804,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
 	},
-/obj/machinery/light/colored/directional/north,
 /obj/structure/holosign/barrier/infinite,
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/starboard)
@@ -21390,11 +20842,6 @@
 /obj/effect/spawner/random/entertainment/plushie,
 /turf/open/floor/concrete,
 /area/outpost/hallway/central)
-"ohS" = (
-/obj/structure/table/wood/fancy/orange,
-/obj/effect/spawner/random/celadon_drink,
-/turf/open/floor/wood/ebony,
-/area/outpost/fraction/solfed)
 "ohY" = (
 /obj/machinery/airalarm/directional/south{
 	req_access_txt = "8100, 8111"
@@ -21660,11 +21107,6 @@
 	},
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/central)
-"oqf" = (
-/obj/machinery/washing_machine,
-/obj/machinery/light/colored/white/directional/west,
-/turf/open/floor/plasteel/patterned/cargo_one,
-/area/outpost/crew/canteen)
 "oqu" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
@@ -21750,9 +21192,6 @@
 /area/outpost/operations)
 "our" = (
 /obj/structure/window/reinforced/spawner/west,
-/obj/machinery/light/colored/directional/south{
-	pixel_y = -6
-	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
 "ouw" = (
@@ -22021,10 +21460,6 @@
 /area/outpost/hallway/central)
 "oEJ" = (
 /obj/machinery/vending/autodrobe,
-/obj/machinery/light/colored/orange/directional/south{
-	pixel_y = -6
-	},
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "oEM" = (
 /obj/effect/spawner/structure/window/reinforced/indestructible,
@@ -22383,13 +21818,6 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/grass,
 /area/outpost/hallway/fore)
-"oNp" = (
-/obj/effect/turf_decal/techfloor{
-	dir = 4
-	},
-/obj/machinery/light/colored/blue/directional/west,
-/turf/open/floor/plasteel/tech,
-/area/outpost/crew/cryo)
 "oNU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/white{
@@ -22424,7 +21852,6 @@
 	dir = 4;
 	pixel_x = 9
 	},
-/obj/machinery/vending/clothing/nt,
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/nanotrasen)
 "oPc" = (
@@ -22498,7 +21925,6 @@
 /obj/structure/railing/wood{
 	dir = 10
 	},
-/obj/structure/chair/sofa/green/right/directional/east,
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_3)
 "oRR" = (
@@ -22539,16 +21965,6 @@
 /obj/effect/turf_decal/nanotrasen/ns/bottom,
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/cargo/faction/nanotrasen)
-"oSY" = (
-/obj/effect/turf_decal/techfloor{
-	dir = 1
-	},
-/obj/machinery/light/colored/blue/directional/south{
-	pixel_y = -6
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/tech,
-/area/outpost/crew/cryo)
 "oTk" = (
 /obj/structure/railing/wood{
 	layer = 3.1
@@ -22574,18 +21990,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete/slab_4,
 /area/outpost/hallway/aft)
-"oTO" = (
-/obj/effect/portal/permanent/random{
-	alpha = 0;
-	name = "r3";
-	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	id = "r3";
-	mouse_opacity = 0
-	},
-/turf/open/floor/fakepit,
-/area/ruin/beach/complex{
-	name = "Elysium Town"
-	})
 "oTR" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	color = "#792f27";
@@ -22648,7 +22052,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
 	},
-/obj/machinery/light/colored/orange/directional/north,
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
 	},
@@ -22708,21 +22111,6 @@
 "oZT" = (
 /turf/closed/indestructible/rock/schist,
 /area/outpost/fraction/inteq)
-"oZX" = (
-/obj/effect/portal/permanent/random{
-	alpha = 10;
-	name = "r11";
-	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	icon_state = "plasmasoul";
-	icon = 'icons/effects/anomalies.dmi';
-	id = "r11";
-	density = 0;
-	mouse_opacity = 0
-	},
-/turf/open/floor/plating/asteroid/sand/ship,
-/area/ruin/beach/complex{
-	name = "Elysium Town"
-	})
 "pak" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/structure/barricade,
@@ -22820,7 +22208,6 @@
 /area/outpost/hallway/fore)
 "peG" = (
 /obj/machinery/vending/plushesmat,
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "peH" = (
 /obj/effect/turf_decal/siding/wood,
@@ -23263,10 +22650,6 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/grass,
 /area/outpost/hallway/aft)
-"prj" = (
-/obj/structure/flora/herb,
-/turf/open/floor/grass,
-/area/outpost/hallway/aft)
 "prV" = (
 /obj/structure/urinal{
 	dir = 1;
@@ -23449,10 +22832,6 @@
 /turf/open/floor/grass,
 /area/outpost/crew/garden)
 "pvL" = (
-/obj/structure/flora/herb/f,
-/obj/machinery/light/colored/directional/east{
-	pixel_x = 10
-	},
 /turf/open/floor/grass,
 /area/outpost/hallway/fore)
 "pvY" = (
@@ -23572,15 +22951,6 @@
 /turf/closed/indestructible/reinforced,
 /area/outpost/medical/surgery_1)
 "pzu" = (
-/obj/effect/portal/permanent/random{
-	alpha = 10;
-	name = "r14";
-	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	icon_state = "plasmasoul";
-	icon = 'icons/effects/anomalies.dmi';
-	id = "r14";
-	mouse_opacity = 0
-	},
 /obj/machinery/conveyor/auto{
 	id = "outpost3";
 	use_static_power = 1;
@@ -23806,7 +23176,6 @@
 	dir = 1;
 	mouse_opacity = 0
 	},
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/red_gold,
 /area/outpost/fraction/syndi/donkco_shop)
 "pFk" = (
@@ -23816,8 +23185,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plating,
-/area/outpost/exterior/ocean)
+/turf/open/floor/plating)
 "pFu" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/firealarm/directional/north,
@@ -23881,8 +23249,7 @@
 	icon_state = "2-4";
 	tag = null
 	},
-/turf/open/floor/plating,
-/area/outpost/exterior/ocean)
+/turf/open/floor/plating)
 "pIp" = (
 /obj/effect/turf_decal/trimline/opaque/beige/filled/line{
 	dir = 1
@@ -24207,7 +23574,6 @@
 /obj/machinery/computer/mission{
 	dir = 4
 	},
-/obj/machinery/light/colored/directional/west,
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/fraction/syndi)
 "pVx" = (
@@ -24324,7 +23690,6 @@
 /obj/structure/rack,
 /obj/machinery/light/small/directional/north,
 /obj/effect/spawner/random/clothing/costume,
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "qaB" = (
 /obj/effect/decal/cleanable/dirt,
@@ -24464,13 +23829,6 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/structure/sign/directions/outpost/sell{
-	pixel_y = 29
-	},
-/obj/structure/sign/directions/outpost/inteq{
-	pixel_y = 23;
-	dir = 4
-	},
 /obj/structure/sign/directions/medical{
 	pixel_y = 41;
 	dir = 1
@@ -24512,7 +23870,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "qgl" = (
 /obj/structure/table/wood,
@@ -24620,7 +23977,6 @@
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/solfed)
 "qhS" = (
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "qif" = (
 /obj/effect/turf_decal/elysium_logo/three_two,
@@ -24654,12 +24010,6 @@
 /area/ruin/beach/complex{
 	name = "Elysium Town"
 	})
-"qiU" = (
-/obj/structure/railing/wood,
-/obj/machinery/light/colored/directional/north,
-/obj/structure/flora/ausbushes/grassybush,
-/turf/open/floor/grass,
-/area/outpost/hallway/aft)
 "qjp" = (
 /obj/item/stack/sheet/bone,
 /turf/open/floor/plating/moss,
@@ -24876,7 +24226,6 @@
 /obj/machinery/computer/outpost_export_console{
 	dir = 4
 	},
-/obj/machinery/light/colored/directional/west,
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/fraction/syndi)
 "qsP" = (
@@ -24933,12 +24282,13 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plating,
-/area/outpost/exterior/ocean)
+/turf/open/floor/plating)
 "qvD" = (
-/obj/structure/flora/herb/f,
-/turf/open/floor/grass,
-/area/outpost/hallway/central)
+/obj/machinery/newscaster/directional/west{
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/grimy,
+/area/outpost/cargo)
 "qvK" = (
 /obj/structure/table,
 /obj/effect/turf_decal/industrial/warning{
@@ -25188,7 +24538,6 @@
 	pixel_x = -8;
 	pixel_y = 2
 	},
-/obj/machinery/light/colored/directional/east,
 /obj/machinery/reagentgrinder/constructed{
 	pixel_y = 10;
 	pixel_x = 5;
@@ -25213,11 +24562,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/outpost/vacant_rooms)
-"qFS" = (
-/obj/machinery/light/colored/directional/east,
-/obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/grass,
-/area/outpost/hallway/aft)
 "qGk" = (
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
 	layer = 2.030
@@ -25493,21 +24837,12 @@
 "qLB" = (
 /obj/structure/rack,
 /obj/effect/spawner/random/clothing/gloves,
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "qLV" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/directions/outpost/elevator/three{
-	pixel_y = 29;
-	dir = 1
-	},
-/obj/structure/sign/directions/outpost/elevator/four{
-	pixel_y = 23;
-	dir = 1
-	},
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/fore)
 "qMq" = (
@@ -25942,10 +25277,6 @@
 "qYr" = (
 /turf/closed/indestructible/reinforced,
 /area/outpost/crew/dop_zone_1)
-"qYY" = (
-/obj/effect/spawner/random/celadon_drink,
-/turf/open/space/basic,
-/area/space)
 "qZK" = (
 /obj/machinery/power/supermatter_crystal/shard/hugbox/fakecrystal{
 	color = "#0000FF";
@@ -26018,7 +25349,6 @@
 	pixel_x = -3;
 	mouse_opacity = 0
 	},
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "rbh" = (
 /turf/open/floor/plasteel/patterned/grid,
@@ -26039,13 +25369,6 @@
 /obj/structure/table/wood,
 /turf/open/floor/plasteel,
 /area/outpost/vacant_rooms)
-"rdh" = (
-/obj/effect/turf_decal/siding/wood,
-/obj/machinery/light/colored/directional/south{
-	pixel_y = -6
-	},
-/turf/open/floor/concrete/slab_4,
-/area/outpost/hallway/central)
 "rdm" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -26068,15 +25391,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/concrete/slab_1,
 /area/outpost/hallway/central)
-"rey" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/obj/machinery/light/colored/white/directional/west{
-	pixel_y = -4
-	},
-/turf/open/floor/carpet/nanoweave,
-/area/outpost/crew/canteen)
 "reH" = (
 /obj/effect/decal/cleanable/sprayweb,
 /turf/open/floor/plating/asteroid/icerock/temperate,
@@ -26174,7 +25488,6 @@
 /obj/effect/turf_decal/industrial/fire/corner{
 	dir = 8
 	},
-/obj/machinery/light/colored/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/fraction/syndi)
 "rib" = (
@@ -26479,11 +25792,6 @@
 "ruZ" = (
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/central)
-"rva" = (
-/obj/machinery/light/colored/red/directional/east,
-/obj/structure/girder,
-/turf/open/floor/plasteel/dark,
-/area/outpost/fraction/syndi)
 "rvk" = (
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/plating/foam,
@@ -26563,8 +25871,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plating,
-/area/outpost/exterior/ocean)
+/turf/open/floor/plating)
 "rwj" = (
 /obj/effect/turf_decal/steeldecal/steel_decals10,
 /obj/effect/turf_decal/steeldecal/steel_decals10{
@@ -26659,7 +25966,6 @@
 /obj/structure/railing/wood{
 	dir = 8
 	},
-/obj/structure/flora/herb/f,
 /turf/open/floor/grass,
 /area/outpost/hallway/central)
 "rzP" = (
@@ -26734,7 +26040,6 @@
 	extra_price = 900;
 	default_price = 700
 	},
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "rBs" = (
 /obj/machinery/camera/autoname{
@@ -26748,15 +26053,6 @@
 "rBH" = (
 /obj/structure/railing/wood{
 	dir = 6
-	},
-/obj/structure/flora/herb/a,
-/obj/structure/sign/directions/outpost/inteq{
-	pixel_y = 29;
-	dir = 4
-	},
-/obj/structure/sign/directions/outpost/bar{
-	pixel_y = 23;
-	dir = 4
 	},
 /obj/structure/platform/wood/corner{
 	dir = 4;
@@ -26907,7 +26203,6 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/solfed)
 "rII" = (
@@ -26927,18 +26222,7 @@
 /area/outpost/cargo)
 "rJj" = (
 /obj/machinery/vending/classicbeats,
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
-"rJu" = (
-/obj/effect/turf_decal/siding/wood{
-	color = "#792f27";
-	dir = 8
-	},
-/obj/machinery/light/colored/pink/directional/west{
-	pixel_x = -9
-	},
-/turf/open/floor/carpet,
-/area/outpost/crew/library)
 "rKt" = (
 /obj/structure/rack,
 /obj/effect/spawner/random/maintenance,
@@ -27154,7 +26438,6 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "rPF" = (
 /obj/structure/window/reinforced{
@@ -27227,8 +26510,7 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/turf/open/floor/plating,
-/area/outpost/exterior/ocean)
+/turf/open/floor/plating)
 "rSv" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -27529,7 +26811,6 @@
 /obj/structure/sign/warning/electricshock{
 	pixel_y = 32
 	},
-/obj/machinery/light/colored/blue/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/cryo)
@@ -27592,14 +26873,6 @@
 	planetary_atmos = 1
 	},
 /area/outpost/crew/lounge)
-"sgE" = (
-/obj/structure/sign/directions/outpost/elevator{
-	pixel_y = -19;
-	dir = 8
-	},
-/obj/structure/flora/ausbushes/grassybush,
-/turf/open/floor/grass,
-/area/outpost/hallway/aft)
 "sgQ" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -27960,9 +27233,6 @@
 /area/outpost/cargo/faction/nanotrasen)
 "svp" = (
 /obj/effect/turf_decal/siding/wood,
-/obj/machinery/light/colored/directional/south{
-	pixel_y = -6
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
@@ -28053,7 +27323,6 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /obj/structure/table/wood/fancy/blue,
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/blue,
 /area/outpost/fraction/nanotrasen)
 "szi" = (
@@ -28207,7 +27476,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "sEJ" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4,
@@ -28833,9 +28101,6 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/obj/machinery/light/colored/directional/west{
-	pixel_x = -10
-	},
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/central)
 "tcP" = (
@@ -28900,7 +28165,6 @@
 /obj/effect/turf_decal/trimline/opaque/blue/filled/line{
 	dir = 4
 	},
-/obj/item/pen/elysium,
 /obj/item/stamp/elysium/avanpost{
 	pixel_x = -7;
 	pixel_y = 12
@@ -28946,11 +28210,9 @@
 /turf/open/floor/marble,
 /area/outpost/fraction/nanotrasen)
 "tfI" = (
-/obj/machinery/vending/clothing/sakura,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "tfJ" = (
 /obj/structure/window/reinforced{
@@ -29057,7 +28319,6 @@
 	layer = 3.1;
 	dir = 4
 	},
-/obj/structure/chair/sofa/green/right/directional/west,
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_3)
 "tkg" = (
@@ -29120,7 +28381,6 @@
 /area/outpost/hallway/aft)
 "tlR" = (
 /obj/structure/table/glass,
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/royalblack,
 /area/outpost/fraction/nanotrasen)
 "tlS" = (
@@ -29256,25 +28516,6 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/maintenance/aft)
-"tqY" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wood,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/light/colored/green/directional/south{
-	pixel_y = -5
-	},
-/turf/open/floor/wood,
-/area/outpost/crew/library)
 "tre" = (
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
 	layer = 2.030
@@ -29350,8 +28591,7 @@
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 1
 	},
-/turf/open/floor/plating,
-/area/outpost/exterior/ocean)
+/turf/open/floor/plating)
 "tuK" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/effect/decal/cleanable/dirt,
@@ -29359,7 +28599,6 @@
 /area/outpost/hallway/starboard)
 "tvb" = (
 /obj/machinery/vending/cigarette,
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "tvR" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
@@ -29403,7 +28642,6 @@
 /obj/machinery/shower{
 	pixel_y = 23
 	},
-/obj/machinery/light/colored/red/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/fraction/syndi)
@@ -29478,8 +28716,7 @@
 /obj/effect/turf_decal/industrial/traffic/corner{
 	dir = 8
 	},
-/turf/open/floor/plating,
-/area/outpost/exterior/ocean)
+/turf/open/floor/plating)
 "tzg" = (
 /obj/machinery/recycler{
 	mouse_opacity = 0
@@ -30164,12 +29401,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security)
-"tZb" = (
-/obj/structure/sign/directions/outpost/independent{
-	pixel_y = 3
-	},
-/turf/closed/indestructible/reinforced,
-/area/outpost/hallway/aft)
 "tZg" = (
 /obj/item/kirbyplants/random,
 /obj/structure/railing{
@@ -30272,9 +29503,6 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/machinery/light/colored/directional/south{
-	pixel_y = -6
-	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
 "uav" = (
@@ -30310,10 +29538,6 @@
 	},
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/aft)
-"ubL" = (
-/obj/structure/flora/herb/a,
-/turf/open/floor/grass,
-/area/outpost/hallway/central)
 "ubZ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -30558,7 +29782,6 @@
 /obj/effect/turf_decal/trimline/opaque/nsorange/corner{
 	dir = 8
 	},
-/obj/machinery/light/colored/white/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
 "ujg" = (
@@ -30616,15 +29839,6 @@
 /obj/item/clothing/accessory/lawyers_badge,
 /turf/open/floor/marble/black,
 /area/outpost/fraction/nanotrasen)
-"ulL" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/obj/machinery/light/colored/directional/south{
-	pixel_y = -6
-	},
-/turf/open/floor/concrete/tiles,
-/area/outpost/crew/garden)
 "ulP" = (
 /obj/structure/railing/corner/wood{
 	dir = 8
@@ -30967,13 +30181,6 @@
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/carpet/nanoweave,
 /area/outpost/crew/canteen)
-"uxZ" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/obj/machinery/light/colored/directional/west,
-/turf/open/floor/concrete/slab_1,
-/area/outpost/hallway/aft)
 "uyb" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -31076,7 +30283,6 @@
 	pixel_y = 6;
 	pixel_x = 10
 	},
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/relax_room)
 "uAT" = (
@@ -31174,13 +30380,6 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/maintenance/aft)
-"uEm" = (
-/obj/effect/turf_decal/siding/wood,
-/obj/machinery/light/colored/directional/south{
-	pixel_y = -6
-	},
-/turf/open/floor/concrete/slab_3,
-/area/outpost/hallway/starboard)
 "uEu" = (
 /obj/structure/chair/sofa/brown/corner/directional/east,
 /obj/effect/turf_decal/siding/wood{
@@ -31226,7 +30425,6 @@
 /area/outpost/fraction/nanotrasen)
 "uEP" = (
 /obj/structure/barricade/sandbags,
-/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/outpost/hallway/central)
 "uFm" = (
 /obj/structure/disposalpipe/segment{
@@ -31279,13 +30477,6 @@
 	},
 /turf/open/floor/plating/rust,
 /area/outpost/maintenance/aft)
-"uGW" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/newscaster/directional/west{
-	pixel_y = 5
-	},
-/turf/open/floor/plasteel/grimy,
-/area/outpost/cargo)
 "uHx" = (
 /obj/structure/railing/wood{
 	dir = 8
@@ -31441,13 +30632,6 @@
 /area/ruin/beach/complex{
 	name = "Elysium Town"
 	})
-"uPA" = (
-/obj/effect/turf_decal/siding/wood,
-/obj/machinery/light/colored/directional/south{
-	pixel_y = -6
-	},
-/turf/open/floor/concrete/slab_3,
-/area/outpost/hallway/central)
 "uPT" = (
 /obj/effect/spawner/random/decoration/glowstick,
 /turf/open/floor/plating/asteroid/dirt/jungle,
@@ -31600,7 +30784,6 @@
 	dir = 8
 	},
 /obj/structure/flora/rock/icy,
-/obj/machinery/light/colored/white/directional/west,
 /turf/open/floor/grass/snow/safe,
 /area/outpost/hallway/starboard)
 "uVt" = (
@@ -31830,14 +31013,6 @@
 	},
 /turf/open/floor/grass,
 /area/outpost/hallway/fore)
-"vbA" = (
-/obj/machinery/light/colored/red/directional/south{
-	pixel_y = -6
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/random/trash/grille_or_waste,
-/turf/open/floor/plating,
-/area/outpost/fraction/syndi)
 "vcE" = (
 /obj/structure/table/glass,
 /obj/item/food/bread/meat{
@@ -31984,11 +31159,6 @@
 /obj/structure/catwalk/over/plated_catwalk,
 /turf/open/floor/plating,
 /area/outpost/vacant_rooms/trash_factory)
-"vfo" = (
-/obj/structure/railing/wood,
-/obj/structure/flora/herb,
-/turf/open/floor/grass,
-/area/outpost/hallway/aft)
 "vfK" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -32070,7 +31240,6 @@
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 1
 	},
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/carpet/royalblack,
 /area/outpost/fraction/syndi)
 "vgQ" = (
@@ -32439,8 +31608,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plating,
-/area/outpost/exterior/ocean)
+/turf/open/floor/plating)
 "vqp" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -32473,26 +31641,6 @@
 	},
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/operations)
-"vqA" = (
-/obj/machinery/conveyor/auto{
-	id = "outpost3";
-	use_static_power = 1;
-	alpha = 0;
-	dir = 1
-	},
-/obj/effect/portal/permanent/random{
-	alpha = 10;
-	name = "r13";
-	portal_ids = list("r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14","r15","r16");
-	icon_state = "plasmasoul";
-	icon = 'icons/effects/anomalies.dmi';
-	id = "r13";
-	mouse_opacity = 0
-	},
-/turf/open/floor/plating/asteroid/sand/ship,
-/area/ruin/beach/complex{
-	name = "Elysium Town"
-	})
 "vqB" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/siding/wood/corner{
@@ -33012,6 +32160,7 @@
 /area/outpost/hallway/central)
 "vJv" = (
 /obj/machinery/newscaster/directional/west,
+/obj/machinery/gacha_machine,
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
 "vJC" = (
@@ -33036,7 +32185,6 @@
 /obj/structure/flora/rock{
 	icon_state = "basalt2"
 	},
-/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/outpost/hallway/central)
 "vLh" = (
 /obj/machinery/firealarm/directional/east,
@@ -33337,10 +32485,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/lounge/cab_1)
-"vSg" = (
-/obj/structure/flora/herb/g,
-/turf/open/floor/grass/fairy,
-/area/outpost/maintenance/fore)
 "vSk" = (
 /obj/structure/railing/celebrate/corner{
 	dir = 8;
@@ -33691,8 +32835,7 @@
 	id = "outpost_med_hangar";
 	dir = 8
 	},
-/turf/open/floor/plating,
-/area/outpost/exterior/ocean)
+/turf/open/floor/plating)
 "whu" = (
 /obj/structure/sink/kitchen{
 	dir = 4;
@@ -33791,13 +32934,6 @@
 /obj/item/stack/packageWrap,
 /turf/open/floor/plating/rust,
 /area/outpost/maintenance/aft)
-"wlw" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/obj/machinery/light/colored/directional/east,
-/turf/open/floor/concrete/slab_1,
-/area/outpost/hallway/aft)
 "wlC" = (
 /turf/closed/indestructible/reinforced,
 /area/outpost/fraction/syndi/donkco_shop)
@@ -34074,7 +33210,6 @@
 /area/outpost/hallway/aft)
 "wvF" = (
 /obj/structure/railing/wood,
-/obj/structure/flora/herb/f,
 /obj/structure/platform/wood{
 	dir = 1;
 	pixel_y = 4;
@@ -34153,7 +33288,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "wxY" = (
 /obj/effect/turf_decal/industrial/warning/cee,
@@ -34477,10 +33611,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
 	},
-/obj/structure/sign/directions/outpost/elevator{
-	pixel_y = -19;
-	dir = 4
-	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/hallway/central)
 "wIy" = (
@@ -34596,8 +33726,7 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/turf/open/floor/plating,
-/area/outpost/exterior/ocean)
+/turf/open/floor/plating)
 "wNq" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	icon_state = "pipe11-4";
@@ -34679,7 +33808,6 @@
 /obj/effect/turf_decal/siding/wood{
 	color = "#792f27"
 	},
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood/mahogany,
 /area/outpost/crew/bar/bar_zone)
 "wRa" = (
@@ -34765,7 +33893,6 @@
 /area/outpost/hallway/central)
 "wUf" = (
 /obj/structure/table/wood/reinforced/bar,
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood/mahogany,
 /area/outpost/fraction/nanotrasen)
 "wUS" = (
@@ -34776,9 +33903,6 @@
 	dir = 4
 	},
 /obj/item/trash/popcorn,
-/obj/machinery/light/colored/white/directional/south{
-	pixel_y = -7
-	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
 "wVg" = (
@@ -34815,7 +33939,6 @@
 /obj/structure/railing/wood{
 	dir = 6
 	},
-/obj/structure/flora/herb/f,
 /turf/open/floor/grass,
 /area/outpost/hallway/central)
 "wWo" = (
@@ -34836,7 +33959,6 @@
 /area/outpost/crew/dorm)
 "wXj" = (
 /obj/structure/chair/sofa/purple/right/directional/west,
-/obj/machinery/light/colored/purple/directional/north,
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_1)
 "wXD" = (
@@ -35031,9 +34153,6 @@
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/cryo)
 "xey" = (
-/obj/machinery/light/colored/directional/south{
-	pixel_y = -6
-	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
@@ -35102,7 +34221,6 @@
 "xid" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/glass/plasma_glass,
-/obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_1)
 "xig" = (
@@ -35271,9 +34389,6 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
 	},
-/obj/structure/sign/departments/sell{
-	pixel_x = -32
-	},
 /turf/open/floor/concrete/tiles,
 /area/outpost/hallway/aft)
 "xrL" = (
@@ -35305,6 +34420,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 8
 	},
+/obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/operations)
 "xte" = (
@@ -35441,8 +34557,7 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
 	},
-/turf/open/floor/plating,
-/area/outpost/exterior/ocean)
+/turf/open/floor/plating)
 "xzx" = (
 /obj/effect/turf_decal/corner/opaque/yellow{
 	dir = 1
@@ -35548,14 +34663,6 @@
 /obj/effect/turf_decal/syndicateemblem/middle/middle,
 /turf/open/floor/mineral/plastitanium/red,
 /area/outpost/cargo/faction/syndicate)
-"xCS" = (
-/obj/effect/turf_decal/siding/wood,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/colored/directional/south{
-	pixel_y = -6
-	},
-/turf/open/floor/concrete/slab_3,
-/area/outpost/hallway/aft)
 "xCV" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
@@ -35584,8 +34691,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 4
 	},
-/turf/open/floor/plating,
-/area/outpost/exterior/ocean)
+/turf/open/floor/plating)
 "xDQ" = (
 /obj/effect/turf_decal/corner/transparent/blue{
 	dir = 10
@@ -35701,13 +34807,6 @@
 	},
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/central)
-"xIH" = (
-/obj/machinery/light/colored/red/directional/north,
-/obj/effect/spawner/random/trash/garbage,
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
-/area/outpost/fraction/syndi)
 "xJo" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
@@ -35774,7 +34873,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "xLc" = (
 /turf/open/floor/plating/asteroid/wasteplanet,
@@ -35819,12 +34917,9 @@
 	},
 /area/outpost/operations)
 "xMP" = (
-/obj/structure/flora/herb{
-	pixel_y = 8
-	},
-/obj/structure/flora/ausbushes/grassybush,
-/turf/open/floor/grass,
-/area/outpost/hallway/central)
+/obj/machinery/gacha_machine,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/outpost/operations)
 "xNa" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
@@ -36329,9 +35424,6 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/machinery/light/colored/directional/west{
-	pixel_x = -10
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/concrete/slab_1,
 /area/outpost/hallway/central)
@@ -36418,9 +35510,6 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/machinery/light/colored/directional/east{
-	pixel_x = 10
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood,
 /area/outpost/hallway/central)
@@ -36446,7 +35535,6 @@
 	pixel_x = -3;
 	mouse_opacity = 0
 	},
-/turf/open/floor/wood/jungleplanet,
 /area/outpost/fraction/syndi/donkco_shop)
 "ygD" = (
 /obj/effect/landmark/outpost/elevator{
@@ -36489,19 +35577,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/cargo)
-"yjx" = (
-/obj/effect/portal/permanent/random{
-	alpha = 10;
-	name = "r16";
-	icon_state = "plasmasoul";
-	icon = 'icons/effects/anomalies.dmi';
-	id = "r16";
-	mouse_opacity = 0
-	},
-/turf/open/floor/plating/asteroid/sand/ship,
-/area/ruin/beach/complex{
-	name = "Elysium Town"
-	})
 "yjK" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -37160,7 +36235,7 @@ cnT
 cnT
 cnT
 xWQ
-vqA
+gJE
 ruS
 fSb
 fSb
@@ -39026,7 +38101,7 @@ fSb
 fSb
 fSb
 ruS
-ete
+vyT
 ruS
 cnT
 ruS
@@ -39400,7 +38475,7 @@ taj
 ruS
 fSb
 ruS
-oZX
+vyT
 ruS
 cnT
 ruS
@@ -39589,10 +38664,10 @@ fSb
 ruS
 ruS
 ruS
-mLs
+vyT
 ruS
 ruS
-yjx
+vyT
 ruS
 pzu
 ruS
@@ -44192,10 +43267,10 @@ cVD
 sOP
 jff
 jff
-czu
 eZO
 eZO
-rva
+eZO
+tJP
 eZO
 eZO
 jff
@@ -44571,7 +43646,7 @@ piK
 oAA
 sZP
 jff
-xIH
+mdg
 eZO
 eZO
 eZO
@@ -47719,7 +46794,7 @@ ciM
 hiG
 nSi
 sSt
-eJW
+bpf
 ope
 uVb
 nEU
@@ -47752,7 +46827,7 @@ jff
 jff
 jff
 ucD
-hTV
+cCl
 jff
 jff
 eeQ
@@ -47909,7 +46984,7 @@ uVb
 ciM
 kfK
 art
-ohS
+khQ
 kVq
 pdc
 pdc
@@ -48089,7 +47164,7 @@ nSi
 mWp
 uVb
 afn
-evq
+ciM
 uVb
 kVH
 uVb
@@ -48644,7 +47719,7 @@ nSi
 nSi
 eyQ
 wOT
-qQf
+dYo
 qKj
 nSi
 qKP
@@ -48654,7 +47729,7 @@ kml
 uVt
 lHC
 uVb
-evq
+ciM
 ope
 uVb
 cBJ
@@ -48875,7 +47950,7 @@ jff
 seF
 jff
 cWu
-vbA
+qLi
 jff
 cGD
 cGD
@@ -49794,7 +48869,7 @@ utH
 pdc
 utH
 aNr
-rdh
+oeI
 wlC
 bdA
 cOe
@@ -50147,7 +49222,7 @@ aen
 ruZ
 qvi
 fEF
-nsT
+tVC
 kdv
 fEF
 eHX
@@ -50527,7 +49602,7 @@ bCf
 gzj
 ocv
 fuU
-uPA
+hmf
 utH
 mnf
 wum
@@ -50897,7 +49972,7 @@ pns
 pns
 pns
 utH
-jmx
+tHM
 fWy
 qKX
 szj
@@ -50923,7 +49998,7 @@ ctN
 pLZ
 pFa
 ioq
-mjz
+xKT
 wlC
 qLB
 xKT
@@ -51062,7 +50137,7 @@ bjD
 ijX
 gEb
 nNc
-ntK
+nNc
 ayV
 gEb
 ulu
@@ -51113,7 +50188,7 @@ ccq
 xKT
 wlC
 bnM
-mjz
+xKT
 wlC
 cGD
 cGD
@@ -51271,7 +50346,7 @@ cGD
 cGD
 cGD
 utH
-qvD
+utJ
 hpF
 aFL
 nvP
@@ -51481,7 +50556,7 @@ iCh
 wlC
 dVD
 gMf
-jTM
+vqS
 vxG
 lnl
 jdu
@@ -51620,7 +50695,7 @@ weA
 xig
 nYp
 kjS
-kwz
+wmK
 gEb
 ydd
 tlR
@@ -51658,7 +50733,7 @@ oeO
 oeO
 fnQ
 fnQ
-gQi
+dZV
 gzj
 gzj
 bhe
@@ -51841,7 +50916,7 @@ gWO
 tHM
 jwU
 tHM
-qvD
+utJ
 tHM
 tch
 sFg
@@ -51857,7 +50932,7 @@ wlC
 wlC
 tok
 wVN
-oNp
+nHd
 kJV
 qbT
 wlC
@@ -51994,7 +51069,7 @@ weA
 xig
 nYp
 aLf
-eip
+gaC
 gEb
 dmp
 biP
@@ -52211,7 +51286,7 @@ ozo
 qKX
 dYX
 xbk
-qvD
+utJ
 tch
 tch
 tch
@@ -52421,7 +51496,7 @@ gXW
 oeR
 qsx
 kNA
-oSY
+ouw
 bbj
 bbj
 bbj
@@ -52585,7 +51660,7 @@ tKC
 uTZ
 kQN
 wZs
-qvD
+utJ
 rns
 iSk
 utH
@@ -52751,8 +51826,8 @@ fqV
 daI
 kpp
 mjL
-lhy
-vSg
+giR
+giR
 wVg
 qLu
 cmb
@@ -52775,19 +51850,19 @@ wfd
 gsm
 fFh
 dyF
-clj
+pZN
 cXp
 dyF
 pZN
 sFg
-lYf
+gws
 cKB
 wQk
 gws
 gws
 jWL
 uet
-ilF
+kne
 bbj
 lJF
 bDR
@@ -52939,7 +52014,7 @@ wVg
 wVg
 fZE
 fAN
-lhy
+giR
 wVg
 hrA
 sIE
@@ -52952,7 +52027,7 @@ uDM
 oRp
 eHP
 hrA
-lmg
+fpH
 fpH
 uqa
 yfg
@@ -53125,10 +52200,10 @@ lwX
 sxX
 wVg
 fZE
-lhy
+giR
 fAN
 wVg
-mhB
+lgy
 kfr
 lgy
 hrA
@@ -53499,10 +52574,10 @@ vEa
 kRV
 wVg
 iQM
-lhy
+giR
 fAN
 wVg
-mhB
+lgy
 aqA
 lgy
 hrA
@@ -53873,8 +52948,8 @@ fAN
 fAN
 okE
 giR
-lhy
-vSg
+giR
+giR
 wVg
 pPh
 eis
@@ -53909,7 +52984,7 @@ pvu
 dbd
 nws
 hkd
-ulL
+cFz
 bbj
 mYW
 hNl
@@ -54291,7 +53366,7 @@ gXW
 oeR
 xpK
 pLI
-oSY
+ouw
 bbj
 bbj
 bbj
@@ -54455,7 +53530,7 @@ wvF
 hpE
 tcR
 tGO
-hgp
+utJ
 qmC
 bnC
 fas
@@ -54804,7 +53879,7 @@ cGD
 cGD
 cGD
 cGD
-oTO
+lOk
 cGD
 hrA
 hrA
@@ -54849,13 +53924,13 @@ bbj
 bbj
 lJF
 kak
-bEP
+wKr
 wKr
 xej
 bbj
 bbj
 iTs
-iTs
+bCs
 vXY
 bFW
 bFW
@@ -54988,7 +54063,7 @@ qWM
 gYm
 cGD
 cGD
-cGn
+lOk
 cGD
 oxm
 hFo
@@ -55016,7 +54091,7 @@ mmq
 jMW
 kRq
 vTL
-xMP
+uwh
 qmC
 goV
 cFQ
@@ -55041,7 +54116,7 @@ bbj
 bbj
 bbj
 cev
-bCs
+iTs
 iTs
 bCs
 bFW
@@ -55182,7 +54257,7 @@ cGD
 cGD
 cGD
 cGD
-hsA
+lOk
 cGD
 cGD
 hrA
@@ -55228,9 +54303,9 @@ iTs
 iTs
 iTs
 iTs
-iTs
-iTs
-bCs
+bFW
+bFW
+bFW
 bFW
 xbQ
 bFW
@@ -55378,7 +54453,7 @@ ycl
 ycl
 hrA
 cGD
-kwl
+lOk
 cGD
 ndE
 hhw
@@ -55416,7 +54491,7 @@ bFW
 bFW
 bFW
 bFW
-bFW
+obx
 bFW
 bFW
 qKL
@@ -55573,11 +54648,11 @@ oby
 hmr
 hmr
 ndE
-hew
+xfZ
 dkh
 tZC
 kZm
-ubL
+utJ
 kqE
 vjC
 izy
@@ -55602,8 +54677,8 @@ iTs
 bFW
 eZH
 yhW
-mny
-uGW
+qvD
+kkN
 fZV
 fhk
 jrD
@@ -55744,7 +54819,7 @@ oxm
 hFo
 cGD
 hFo
-cOy
+lOk
 cGD
 hrA
 hrA
@@ -55760,7 +54835,7 @@ ndE
 nTS
 ndE
 ndE
-hWC
+wWb
 dkh
 nSW
 vTL
@@ -55951,7 +55026,7 @@ hQt
 lpV
 lJB
 kZm
-cOc
+tHM
 qmC
 qmC
 koz
@@ -56114,7 +55189,7 @@ cGD
 cGD
 lOk
 cGD
-cGn
+lOk
 hFo
 cGD
 oxm
@@ -56122,7 +55197,7 @@ oxm
 oxm
 cGD
 cGD
-cGn
+lOk
 cGD
 reH
 reH
@@ -56497,7 +55572,7 @@ vXY
 cGD
 cGD
 cGD
-gaj
+hOO
 cGD
 vXY
 kjM
@@ -57069,7 +56144,7 @@ pfU
 cXV
 gbX
 sFp
-tZb
+vXY
 qfn
 dOR
 dsV
@@ -57260,7 +56335,7 @@ uck
 xRQ
 pmN
 yjK
-sgE
+ugh
 vXY
 hWM
 exm
@@ -57442,7 +56517,7 @@ jCO
 ddU
 tmh
 tdO
-bNU
+gbX
 fXb
 gLe
 smg
@@ -57638,7 +56713,7 @@ qSH
 vMC
 vWT
 cvJ
-rJu
+avH
 tae
 tpa
 avH
@@ -58008,7 +57083,7 @@ kMv
 hrM
 vMu
 qrW
-lSl
+oLq
 qTE
 svS
 mRg
@@ -58195,7 +57270,7 @@ nCR
 hrM
 vMu
 iup
-fbB
+ijv
 qTE
 uEu
 tJA
@@ -58364,7 +57439,7 @@ iiP
 wyA
 fFI
 tmh
-tJa
+hgp
 ewN
 mfx
 xHh
@@ -58378,7 +57453,7 @@ ftr
 eCN
 nXX
 tmh
-fAc
+oYS
 hrM
 vMu
 iup
@@ -58756,13 +57831,13 @@ fCj
 xRQ
 dOR
 iup
-dYo
+gbX
 gZk
 wtK
 wtK
 wtK
 wtK
-inO
+lBo
 mVC
 svS
 aoQ
@@ -58943,7 +58018,7 @@ oYS
 xRQ
 vMu
 iup
-dEP
+gbX
 wtK
 mLp
 wsD
@@ -59126,7 +58201,7 @@ tRq
 dXC
 pCA
 tmh
-qiU
+xfT
 xRQ
 vMu
 qrW
@@ -59297,7 +58372,7 @@ trX
 msC
 bgg
 kiS
-xCS
+gMy
 tmh
 cVF
 cVF
@@ -59332,7 +58407,7 @@ wbs
 haL
 oWX
 wPF
-tqY
+boW
 fvL
 fvL
 fvL
@@ -59500,7 +58575,7 @@ tmh
 tmh
 tmh
 tmh
-vfo
+oYS
 jYA
 vMu
 oTk
@@ -59673,7 +58748,7 @@ gLe
 eow
 gMy
 tmh
-cdH
+ulb
 hxy
 oZT
 tmh
@@ -59687,11 +58762,11 @@ eIR
 iWV
 det
 tmh
-fAc
+oYS
 xRQ
 vMu
 iup
-dYo
+gbX
 wtK
 wtK
 wtK
@@ -59952,7 +59027,7 @@ hOg
 ngt
 hOg
 pdc
-qYY
+pdc
 pdc
 pdc
 pdc
@@ -60252,7 +59327,7 @@ tmh
 euM
 pmN
 jLv
-dEP
+gbX
 fCj
 xRQ
 foA
@@ -60608,8 +59683,8 @@ qdS
 bxT
 ass
 kem
-prj
-dfm
+gbX
+gbX
 evY
 jsW
 idg
@@ -60626,7 +59701,7 @@ nlP
 wvD
 eBG
 mNo
-prj
+gbX
 xfT
 xRQ
 ggO
@@ -60795,7 +59870,7 @@ hrM
 uDk
 jir
 fRt
-iUz
+gbX
 cXV
 evY
 uyL
@@ -61001,7 +60076,7 @@ xfD
 hZe
 ass
 cXV
-vfo
+oYS
 xua
 dDJ
 qTE
@@ -61173,7 +60248,7 @@ gCH
 uti
 dNN
 lyp
-uxZ
+kZt
 vma
 lyp
 lyp
@@ -61545,7 +60620,7 @@ aEM
 iMh
 iAf
 iAf
-wlw
+iPK
 iAf
 flU
 cCD
@@ -61561,7 +60636,7 @@ vlT
 eAz
 hzZ
 iAf
-wlw
+iPK
 iAf
 vOB
 whE
@@ -61743,8 +60818,8 @@ mMa
 tYQ
 mMa
 mMa
-qFS
-dEP
+cXV
+gbX
 uVN
 uVN
 uVN
@@ -61758,7 +60833,7 @@ ndE
 ndE
 aIl
 eVe
-oqf
+eVe
 eVe
 aIl
 aIl
@@ -61918,7 +60993,7 @@ igq
 jEM
 uaw
 uaw
-fEl
+ckZ
 dty
 uaw
 dHk
@@ -62480,7 +61555,7 @@ qHi
 uaw
 sTl
 gxt
-mUl
+ckZ
 uaw
 ofJ
 rTz
@@ -62504,11 +61579,11 @@ fMF
 dwF
 sKV
 eun
-kDB
+rSm
 kjh
 rSm
 fcl
-rey
+dwF
 maA
 iNo
 oel
@@ -63339,7 +62414,7 @@ pfV
 fzx
 srI
 hnA
-kEO
+hOg
 pdc
 pdc
 fHm
@@ -63604,9 +62679,9 @@ jJe
 enb
 enb
 enb
-nkS
+xnR
 tJk
-uEm
+fbr
 mMa
 mMa
 mMa
@@ -63968,8 +63043,8 @@ cGD
 jOH
 sMV
 jOH
-cGD
-cGD
+xMP
+jOH
 cGD
 cGD
 cGD
@@ -64155,7 +63230,7 @@ jOH
 jOH
 wzr
 jOH
-jOH
+nsT
 jOH
 jOH
 jOH
@@ -64342,7 +63417,7 @@ xMO
 shk
 bXC
 xsF
-hOK
+wwe
 wwe
 hkZ
 jOH
@@ -64351,7 +63426,7 @@ jOH
 sIs
 xnR
 ybe
-uEm
+fbr
 tDj
 enU
 mUB
@@ -64375,7 +63450,7 @@ lWl
 iXC
 vLT
 uUm
-obx
+kex
 tSq
 tSq
 vuq
@@ -68553,7 +67628,7 @@ ydm
 ono
 utH
 cGD
-qYY
+pdc
 pdc
 pdc
 pdc
