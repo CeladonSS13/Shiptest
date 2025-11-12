@@ -1,7 +1,10 @@
 /obj/item/clothing/glasses/hud/toggle/medicalshield
 	name = "advanced HUD scanner"
 	desc = "Health and security imaging HUD in the shape of glasses."
-	icon_state = "thermalgoggles"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/eyes/eyes.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/eyes/overlay/eyes.dmi'
+	icon_state = "medicalshield"
+	item_state = "medicalshield"
 	glass_colour_type = /datum/client_colour/glass_colour/red
 	var/list/hudlist = list(DATA_HUD_MEDICAL_ADVANCED, DATA_HUD_SECURITY_ADVANCED)
 

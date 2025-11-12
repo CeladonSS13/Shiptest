@@ -152,6 +152,8 @@
 	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 95, "wound" = 50)
 	heat_protection = CHEST | GROIN | LEGS | FEET | ARMS | HANDS
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	strip_delay = 90
+	slowdown = 2
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/medicalshield_medical
 
 /obj/item/clothing/head/helmet/space/hardsuit/medicalshield_medical/marine
