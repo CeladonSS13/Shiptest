@@ -4607,7 +4607,13 @@
 /turf/open/floor/plasteel/dark,
 /area/tdome/tdomeadmin)
 "nf" = (
-/turf/open/floor/grass/fairy/beach,
+/obj/effect/turf_decal/corner/transparent/vired/border{
+	dir = 4
+	},
+/obj/effect/turf_decal/corner/transparent/vired/border{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "ng" = (
 /obj/structure/window/reinforced{
@@ -5461,6 +5467,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/tdome/tdomeadmin)
+"pB" = (
+/obj/effect/turf_decal/corner/transparent/vired/border{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/transparent/vired/border{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/centcom/control)
 "pD" = (
 /obj/machinery/shower{
 	dir = 8
@@ -6702,6 +6717,11 @@
 	},
 /turf/open/floor/plasteel/darkredfull,
 /area/centcom/ferry)
+"tr" = (
+/obj/effect/turf_decal/corner/transparent/nakamurayellow/borderfull,
+/obj/structure/flora/tree/pine/xmas/presents/unlimited,
+/turf/open/floor/plasteel/dark,
+/area/centcom/control)
 "tt" = (
 /obj/structure/bed/roller,
 /obj/machinery/iv_drip,
@@ -7362,6 +7382,15 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom)
+"uZ" = (
+/obj/effect/turf_decal/corner/transparent/vired/border{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/transparent/vired/border{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/centcom/control)
 "va" = (
 /obj/machinery/vending/security/marine/nanotrasen{
 	all_items_free = 1
@@ -9023,6 +9052,10 @@
 	},
 /turf/open/floor/glass/red,
 /area/outpost/exterior)
+"zT" = (
+/obj/structure/flora/tree/pine/xmas/presents/unlimited,
+/turf/open/floor/plasteel/dark_2,
+/area/centcom/ferry)
 "zU" = (
 /obj/effect/turf_decal/corner/transparent/brown{
 	dir = 9
@@ -13745,8 +13778,8 @@
 	},
 /area/outpost/exterior)
 "Nf" = (
-/obj/structure/flora/tree/chapel,
-/turf/open/floor/grass,
+/obj/structure/flora/tree/pine/xmas/presents/unlimited,
+/turf/open/floor/grass/snow/safe,
 /area/centcom/control)
 "Ng" = (
 /obj/structure/table/wood/fancy,
@@ -16116,7 +16149,7 @@
 /turf/open/floor/plasteel/white,
 /area/tdome/tdomeobserve)
 "TG" = (
-/turf/open/floor/grass,
+/turf/open/floor/grass/snow/safe,
 /area/centcom/control)
 "TH" = (
 /obj/item/clothing/shoes/sandal{
@@ -17446,6 +17479,11 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/exterior)
+"XC" = (
+/obj/effect/turf_decal/corner/transparent/vired/border,
+/obj/effect/turf_decal/corner/transparent/vired/border,
+/turf/open/floor/plasteel/dark,
+/area/centcom/control)
 "XD" = (
 /obj/structure/chair/wood/wings{
 	dir = 1
@@ -33424,7 +33462,7 @@ YZ
 Qf
 Zb
 Dq
-YZ
+tr
 ig
 Zb
 Qf
@@ -42898,7 +42936,7 @@ xn
 bv
 fq
 RB
-RB
+nf
 RB
 oz
 fq
@@ -43091,7 +43129,7 @@ xn
 bv
 Qy
 TG
-nf
+TG
 TG
 lT
 Qy
@@ -43282,11 +43320,11 @@ qk
 xS
 xn
 bv
-Qy
+XC
 TG
 Nf
-nf
-lT
+TG
+pB
 Qy
 Wh
 Wh
@@ -43476,7 +43514,7 @@ JG
 xn
 bv
 Qy
-nf
+TG
 TG
 TG
 lT
@@ -43670,7 +43708,7 @@ xn
 bv
 Wg
 gn
-gn
+uZ
 gn
 gH
 Wg
@@ -48282,7 +48320,7 @@ Qb
 OB
 IF
 Ao
-Nu
+zT
 Nu
 zn
 Qb

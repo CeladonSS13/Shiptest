@@ -397,10 +397,29 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
 "aoQ" = (
-/obj/structure/bookcase/random/adult{
-	opacity = 1
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
 	},
-/turf/open/floor/wood,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/railing/wood{
+	dir = 1;
+	layer = 2.99
+	},
+/obj/effect/turf_decal/siding/wood{
+	color = "#792f27";
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/chair/sofa/brown/corner/directional/east,
+/obj/structure/railing/wood{
+	layer = 3.1;
+	dir = 8
+	},
+/turf/open/floor/carpet,
 /area/outpost/crew/library)
 "apF" = (
 /obj/structure/window/reinforced{
@@ -1816,21 +1835,16 @@
 /turf/closed/indestructible/reinforced,
 /area/outpost/crew/lounge/cab_1)
 "bln" = (
-/obj/structure/table/wood/poker,
-/obj/item/flashlight/lamp/green{
-	pixel_y = 13;
-	pixel_x = -6;
-	layer = 4
+/obj/effect/turf_decal/siding/wood{
+	color = "#792f27";
+	dir = 2
 	},
-/obj/item/paper_bin{
-	pixel_x = 6;
-	pixel_y = 4
+/obj/structure/chair/sofa/brown/corner/directional/north,
+/obj/structure/railing/wood{
+	layer = 3.1;
+	dir = 8
 	},
-/obj/item/pen{
-	pixel_y = 4;
-	pixel_x = 8
-	},
-/turf/open/floor/wood,
+/turf/open/floor/carpet,
 /area/outpost/crew/library)
 "blB" = (
 /obj/structure/sign/poster/syndicate/random{
@@ -3830,18 +3844,11 @@
 /turf/open/floor/plating/moss,
 /area/outpost/hallway/central)
 "cDU" = (
-/obj/structure/railing/corner/wood,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/effect/turf_decal/siding/wood/corner{
-	color = "#792f27"
+	color = "#792f27";
+	dir = 8
 	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
+/obj/structure/chair/sofa/brown/internal_corner/directional/north,
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
 "cEl" = (
@@ -3902,6 +3909,7 @@
 	dir = 4;
 	pixel_x = -32
 	},
+/obj/structure/chair/sofa/brown/corner/directional/north,
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
 "cFz" = (
@@ -5753,15 +5761,10 @@
 /turf/open/floor/engine,
 /area/outpost/crew/cryo)
 "dPK" = (
+/obj/structure/chair/sofa/brown/directional/east,
 /obj/structure/railing/wood{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wood{
-	color = "#792f27";
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wood/corner{
-	color = "#792f27"
+	layer = 3.1;
+	dir = 8
 	},
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
@@ -6636,18 +6639,11 @@
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/fraction/syndi/donkco_shop)
 "eqQ" = (
-/obj/structure/railing/corner/wood{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 8
-	},
-/obj/effect/turf_decal/siding/wood/corner{
-	color = "#792f27";
-	dir = 1
 	},
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -6946,15 +6942,8 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/security/armory)
 "eAQ" = (
-/obj/structure/railing/wood{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wood{
-	color = "#792f27";
 	dir = 8
 	},
 /obj/structure/cable{
@@ -8190,15 +8179,8 @@
 /turf/open/floor/wood/mahogany,
 /area/outpost/crew/bar/bar_zone)
 "fpT" = (
-/obj/structure/railing/wood{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wood{
-	color = "#792f27";
 	dir = 8
 	},
 /obj/structure/cable{
@@ -9086,12 +9068,8 @@
 /turf/open/floor/wood,
 /area/outpost/crew/dop_zone_1)
 "fUL" = (
-/obj/structure/railing/wood,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
-	},
-/obj/effect/turf_decal/siding/wood{
-	color = "#792f27"
 	},
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
@@ -9390,8 +9368,8 @@
 /turf/open/chasm,
 /area/outpost/fraction/syndi)
 "ghO" = (
-/obj/structure/chair/sofa/brown/corner/directional/north,
-/turf/open/floor/wood,
+/obj/structure/flora/tree/pine/xmas/presents,
+/turf/open/floor/carpet,
 /area/outpost/crew/library)
 "giq" = (
 /obj/effect/turf_decal/siding/wood{
@@ -11521,10 +11499,9 @@
 /turf/open/floor/carpet/cyan,
 /area/outpost/operations)
 "hyW" = (
-/obj/structure/chair/sofa/brown/left/directional/east,
-/turf/open/floor/wood{
-	icon_state = "wood-broken4"
-	},
+/obj/structure/table/glass,
+/obj/structure/neon_spline/lightblue/three_quarters,
+/turf/open/floor/carpet,
 /area/outpost/crew/library)
 "hzb" = (
 /obj/machinery/power/terminal{
@@ -11657,8 +11634,16 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/security)
 "hCX" = (
-/obj/structure/chair/sofa/brown/right/directional/north,
-/turf/open/floor/wood,
+/obj/effect/turf_decal/siding/wood{
+	color = "#792f27";
+	dir = 2
+	},
+/obj/structure/chair/sofa/brown/corner/directional/west,
+/obj/structure/railing/wood{
+	layer = 3.1;
+	dir = 4
+	},
+/turf/open/floor/carpet,
 /area/outpost/crew/library)
 "hDa" = (
 /obj/structure/table/wood,
@@ -12946,15 +12931,8 @@
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/operations)
 "izk" = (
-/obj/structure/railing/wood{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/effect/turf_decal/siding/wood{
-	color = "#792f27";
-	dir = 8
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -13048,6 +13026,7 @@
 	dir = 4;
 	pixel_x = -32
 	},
+/obj/structure/chair/sofa/brown/directional/east,
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
 "iBx" = (
@@ -15386,20 +15365,10 @@
 /turf/open/floor/wood,
 /area/outpost/hallway/central)
 "kdT" = (
+/obj/structure/chair/sofa/brown/right/directional/west,
 /obj/structure/railing/wood{
+	layer = 3.1;
 	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/effect/turf_decal/siding/wood{
-	color = "#792f27";
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
 	},
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
@@ -15807,17 +15776,11 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
 "kpb" = (
-/obj/structure/railing/wood{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wood{
-	color = "#792f27";
-	dir = 1
-	},
 /obj/effect/turf_decal/siding/wood{
 	color = "#792f27";
 	dir = 2
 	},
+/obj/structure/chair/sofa/brown/directional/north,
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
 "kpp" = (
@@ -17728,7 +17691,8 @@
 	dir = 4
 	},
 /obj/structure/railing/wood{
-	dir = 1
+	dir = 1;
+	layer = 2.99
 	},
 /obj/effect/turf_decal/siding/wood{
 	color = "#792f27";
@@ -17737,6 +17701,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/structure/chair/sofa/brown/directional/south,
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
 "lBw" = (
@@ -18549,8 +18514,14 @@
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/central)
 "mbw" = (
-/obj/structure/bookcase/random/reference{
-	opacity = 1
+/obj/structure/chair/sofa/brown/left/directional/east,
+/obj/structure/railing/wood{
+	dir = 1;
+	layer = 2.01
+	},
+/obj/effect/turf_decal/siding/wood{
+	color = "#792f27";
+	dir = 9
 	},
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
@@ -19758,10 +19729,8 @@
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/crew/cryo)
 "mVC" = (
-/obj/structure/railing/wood,
-/obj/effect/turf_decal/siding/wood{
-	color = "#792f27"
-	},
+/obj/structure/table/glass,
+/obj/structure/neon_spline/green/three_quarters,
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
 "mVQ" = (
@@ -21008,6 +20977,14 @@
 	},
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/central)
+"nSX" = (
+/obj/structure/chair/sofa/brown/left/directional/east,
+/obj/structure/railing/wood{
+	layer = 3.1;
+	dir = 8
+	},
+/turf/open/floor/carpet,
+/area/outpost/crew/library)
 "nTq" = (
 /obj/machinery/light/colored/white{
 	dir = 4;
@@ -21415,17 +21392,7 @@
 /turf/open/floor/carpet/blue,
 /area/outpost/operations)
 "oiN" = (
-/obj/structure/curtain/cloth/elysium,
-/obj/structure/railing/wood{
-	dir = 8
-	},
-/obj/structure/railing/wood{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/turf/open/floor/wood,
+/turf/open/floor/carpet,
 /area/outpost/crew/library)
 "ojm" = (
 /obj/structure/cable{
@@ -22939,15 +22906,8 @@
 /turf/open/floor/carpet/black,
 /area/outpost/fraction/syndi)
 "pin" = (
-/obj/structure/railing/wood{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wood{
-	color = "#792f27";
 	dir = 4
 	},
 /obj/structure/cable{
@@ -23317,15 +23277,8 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
 "psY" = (
-/obj/structure/railing/corner/wood{
-	dir = 8
-	},
-/obj/structure/railing/corner/wood,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
-	},
-/obj/effect/turf_decal/siding/wood{
-	color = "#792f27"
 	},
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
@@ -23788,6 +23741,10 @@
 "pEX" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#792f27";
+	dir = 10
+	},
+/obj/structure/chair/sofa/brown/right/directional/east,
+/obj/structure/railing/wood{
 	dir = 10
 	},
 /turf/open/floor/carpet,
@@ -24748,15 +24705,8 @@
 /turf/open/floor/plasteel/tech,
 /area/outpost/hallway/fore)
 "qmR" = (
-/obj/structure/railing/corner/wood{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/effect/turf_decal/siding/wood/corner{
-	color = "#792f27";
-	dir = 4
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -24866,6 +24816,8 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
 	},
+/obj/structure/table/glass,
+/obj/structure/neon_spline/purple/cee,
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
 "qsx" = (
@@ -25920,15 +25872,8 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/relax_room)
 "qYl" = (
-/obj/structure/railing/wood{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wood{
-	color = "#792f27";
 	dir = 4
 	},
 /obj/structure/cable{
@@ -30490,7 +30435,8 @@
 	dir = 1
 	},
 /obj/structure/railing/wood{
-	dir = 1
+	dir = 1;
+	layer = 2.99
 	},
 /obj/effect/turf_decal/siding/wood{
 	color = "#792f27";
@@ -30499,6 +30445,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/structure/chair/sofa/brown/left/directional/south,
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
 "ugB" = (
@@ -30626,17 +30573,9 @@
 /turf/open/floor/concrete/tiles,
 /area/outpost/crew/garden)
 "ulP" = (
-/obj/structure/railing/corner/wood{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/effect/turf_decal/siding/wood/corner{
 	color = "#792f27";
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
+	dir = 1
 	},
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
@@ -31106,13 +31045,14 @@
 /turf/open/floor/plating,
 /area/outpost/fraction/syndi)
 "uCY" = (
-/obj/effect/turf_decal/siding/wood{
-	color = "#792f27";
-	dir = 9
-	},
 /obj/structure/curtain/cloth/purpl{
 	dir = 4;
 	pixel_x = -32
+	},
+/obj/structure/chair/sofa/brown/directional/east,
+/obj/effect/turf_decal/siding/wood{
+	color = "#792f27";
+	dir = 8
 	},
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
@@ -31950,8 +31890,8 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/wood/corner{
-	color = "#792f27";
+/obj/structure/table/glass,
+/obj/structure/neon_spline/purple/cee{
 	dir = 1
 	},
 /turf/open/floor/carpet,
@@ -32857,16 +32797,9 @@
 /turf/open/floor/plating,
 /area/outpost/fraction/nanotrasen)
 "vBN" = (
+/obj/structure/chair/sofa/brown/right/directional/east,
 /obj/structure/railing/wood{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wood{
-	color = "#792f27";
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wood/corner{
-	color = "#792f27";
-	dir = 8
+	dir = 10
 	},
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
@@ -57643,10 +57576,10 @@ tae
 tpa
 avH
 avH
-avH
+ulP
 veF
 qrZ
-htH
+cDU
 pEX
 wPF
 bXe
@@ -57828,9 +57761,9 @@ rPr
 pxz
 pxz
 gIN
-cDU
-kdT
-kdT
+qmR
+qmR
+qmR
 qYl
 pin
 qmR
@@ -58014,13 +57947,13 @@ svS
 mRg
 svS
 svS
-lBo
-mVC
-svS
-svS
 aoQ
-svS
 dPK
+vBN
+oiN
+oiN
+oiN
+vsw
 mqZ
 qJA
 uXv
@@ -58203,11 +58136,11 @@ hnl
 svS
 lBo
 mVC
-svS
-hyW
-ghO
-svS
-kpb
+oiN
+oiN
+oiN
+nSX
+bln
 dOA
 beL
 sWA
@@ -58391,9 +58324,9 @@ svS
 ugu
 psY
 oiN
-daY
-hCX
-svS
+oiN
+oiN
+hyW
 kpb
 dOA
 wPF
@@ -58577,11 +58510,11 @@ daY
 ePS
 kxE
 fUL
-svS
-daY
-bln
-svS
-kpb
+oiN
+ghO
+oiN
+kdT
+hCX
 dOA
 wPF
 wmY
@@ -58763,12 +58696,12 @@ wtK
 wtK
 wtK
 inO
-mVC
-svS
-aoQ
-svS
-svS
-vBN
+oiN
+oiN
+oiN
+oiN
+oiN
+htH
 kmS
 wPF
 uXD
@@ -58950,7 +58883,7 @@ wsD
 oBv
 wtK
 mlc
-ulP
+izk
 izk
 eAQ
 fpT
