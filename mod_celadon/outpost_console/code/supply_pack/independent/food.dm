@@ -212,6 +212,216 @@
 	crate_name = "sugar crate"
 	crate_type = /obj/structure/closet/crate
 
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/corn
+	name = "Corn Crate"
+	desc = "Crate containing five ears of corn."
+	cost = 150
+	contains = list(/obj/item/food/grown/corn,
+					/obj/item/food/grown/corn,
+					/obj/item/food/grown/corn,
+					/obj/item/food/grown/corn,
+					/obj/item/food/grown/corn,
+	)
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/chili
+	name = "Chili Pepper Crate"
+	desc = "Crate containing five chili peppers."
+	cost = 150
+	contains = list(/obj/item/food/grown/chili,
+					/obj/item/food/grown/chili,
+					/obj/item/food/grown/chili,
+					/obj/item/food/grown/chili,
+					/obj/item/food/grown/chili,
+	)
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/tomato
+	name = "Tomato Crate"
+	desc = "Crate containing five tomatoes."
+	cost = 150
+	contains = list(/obj/item/food/grown/tomato,
+					/obj/item/food/grown/tomato,
+					/obj/item/food/grown/tomato,
+					/obj/item/food/grown/tomato,
+					/obj/item/food/grown/tomato,
+	)
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/potato
+	name = "Potato Crate"
+	desc = "Crate containing five potatoes."
+	cost = 150
+	contains = list(/obj/item/food/grown/potato,
+					/obj/item/food/grown/potato,
+					/obj/item/food/grown/potato,
+					/obj/item/food/grown/potato,
+					/obj/item/food/grown/potato,
+	)
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/carrot
+	name = "Carrot Crate"
+	desc = "Crate containing five carrots."
+	cost = 150
+	contains = list(/obj/item/food/grown/carrot,
+					/obj/item/food/grown/carrot,
+					/obj/item/food/grown/carrot,
+					/obj/item/food/grown/carrot,
+					/obj/item/food/grown/carrot,
+	)
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/cabbage
+	name = "Cabbage Crate"
+	desc = "Crate containing five cabbages."
+	cost = 150
+	contains = list(/obj/item/food/grown/cabbage,
+					/obj/item/food/grown/cabbage,
+					/obj/item/food/grown/cabbage,
+					/obj/item/food/grown/cabbage,
+					/obj/item/food/grown/cabbage,
+	)
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/chanterelle
+	name = "Chanterelle Crate"
+	desc = "Crate containing five chanterelle mushrooms."
+	cost = 150
+	contains = list(/obj/item/food/grown/mushroom/chanterelle,
+					/obj/item/food/grown/mushroom/chanterelle,
+					/obj/item/food/grown/mushroom/chanterelle,
+					/obj/item/food/grown/mushroom/chanterelle,
+					/obj/item/food/grown/mushroom/chanterelle,
+	)
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/onion
+	name = "Onion Crate"
+	desc = "Crate containing five onions."
+	cost = 150
+	contains = list(/obj/item/food/grown/onion,
+					/obj/item/food/grown/onion,
+					/obj/item/food/grown/onion,
+					/obj/item/food/grown/onion,
+					/obj/item/food/grown/onion,
+	)
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/pumpkin
+	name = "Pumpkin Crate"
+	desc = "Crate containing five pumpkins."
+	cost = 150
+	contains = list(/obj/item/food/grown/pumpkin,
+					/obj/item/food/grown/pumpkin,
+					/obj/item/food/grown/pumpkin,
+					/obj/item/food/grown/pumpkin,
+					/obj/item/food/grown/pumpkin,
+	)
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/peas
+	name = "Peas Crate"
+	desc = "Crate containing five peapods."
+	cost = 150
+	contains = list(/obj/item/food/grown/peas,
+					/obj/item/food/grown/peas,
+					/obj/item/food/grown/peas,
+					/obj/item/food/grown/peas,
+					/obj/item/food/grown/peas,
+	)
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/sweet_potato
+	name = "Sweet Potato Crate"
+	desc = "Crate containing five sweet potatoes."
+	cost = 150
+	contains = list(/obj/item/food/grown/sweet_potato,
+					/obj/item/food/grown/sweet_potato,
+					/obj/item/food/grown/sweet_potato,
+					/obj/item/food/grown/sweet_potato,
+					/obj/item/food/grown/sweet_potato,
+	)
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/apple
+	name = "Apple Crate"
+	desc = "Crate containing five apples."
+	cost = 150
+	contains = list(/obj/item/food/grown/apple,
+					/obj/item/food/grown/apple,
+					/obj/item/food/grown/apple,
+					/obj/item/food/grown/apple,
+					/obj/item/food/grown/apple,
+	)
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/lime
+	name = "Lime Crate"
+	desc = "Crate containing five limes."
+	cost = 150
+	contains = list(/obj/item/food/grown/citrus/lime,
+					/obj/item/food/grown/citrus/lime,
+					/obj/item/food/grown/citrus/lime,
+					/obj/item/food/grown/citrus/lime,
+					/obj/item/food/grown/citrus/lime,
+	)
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/orange
+	name = "Orange Crate"
+	desc = "Crate containing five oranges."
+	cost = 150
+	contains = list(/obj/item/food/grown/citrus/orange,
+					/obj/item/food/grown/citrus/orange,
+					/obj/item/food/grown/citrus/orange,
+					/obj/item/food/grown/citrus/orange,
+					/obj/item/food/grown/citrus/orange,
+	)
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/lemon
+	name = "Lemon Crate"
+	desc = "Crate containing five lemons."
+	cost = 150
+	contains = list(/obj/item/food/grown/citrus/lemon,
+					/obj/item/food/grown/citrus/lemon,
+					/obj/item/food/grown/citrus/lemon,
+					/obj/item/food/grown/citrus/lemon,
+					/obj/item/food/grown/citrus/lemon,
+	)
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/watermelon
+	name = "Watermelon Crate"
+	desc = "Crate containing five watermelons."
+	cost = 150
+	contains = list(/obj/item/food/grown/watermelon,
+					/obj/item/food/grown/watermelon,
+					/obj/item/food/grown/watermelon,
+					/obj/item/food/grown/watermelon,
+					/obj/item/food/grown/watermelon,
+	)
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/berries
+	name = "Berries Crate"
+	desc = "Crate containing five bunches of berries."
+	cost = 150
+	contains = list(/obj/item/food/grown/berries,
+					/obj/item/food/grown/berries,
+					/obj/item/food/grown/berries,
+					/obj/item/food/grown/berries,
+					/obj/item/food/grown/berries,
+	)
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/banana
+	name = "Banana Crate"
+	desc = "Crate containing five bananas."
+	cost = 150
+	contains = list(/obj/item/food/grown/banana,
+					/obj/item/food/grown/banana,
+					/obj/item/food/grown/banana,
+					/obj/item/food/grown/banana,
+					/obj/item/food/grown/banana,
+	)
+
+/datum/supply_pack/faction/independent/food/ingredients_basic/grapes
+	name = "Grapes Crate"
+	desc = "Crate containing five bunches of grapes."
+	cost = 150
+	contains = list(/obj/item/food/grown/grapes,
+					/obj/item/food/grown/grapes,
+					/obj/item/food/grown/grapes,
+					/obj/item/food/grown/grapes,
+					/obj/item/food/grown/grapes,
+	)
+
 /*
 	MARK:	Готовка
 */
@@ -223,6 +433,24 @@
 	contains = list(/obj/item/melee/knife/kitchen)
 	crate_name = "kitchen knife crate"
 	crate_type = /obj/structure/closet/crate/wooden
+
+/datum/supply_pack/faction/independent/food/grill
+	name = "Griddle Construction Kit"
+	desc = "DIY cooking has never been easier!"
+	cost = 1000
+	contains = list(/obj/item/circuitboard/machine/griddle)
+	crate_name = "griddle circuit board crate"
+	crate_type = /obj/structure/closet/crate
+	no_bundle = TRUE
+
+/datum/supply_pack/faction/independent/food/oven
+	name = "Oven Construction Kit"
+	desc = "DIY cooking has never been easier!"
+	cost = 1500
+	contains = list(/obj/item/circuitboard/machine/oven)
+	crate_name = "griddle circuit board crate"
+	crate_type = /obj/structure/closet/crate
+	no_bundle = TRUE
 
 /*
 	MARK:	Ботаника
