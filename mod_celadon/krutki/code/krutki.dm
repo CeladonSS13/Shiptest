@@ -1,7 +1,7 @@
 /obj/machinery/gacha_machine
 	name = "гачи автомат"
 	desc = "Загадочная машина, которая поглощает секретные документы и может выдать что-то ценное взамен."
-	icon = 'mod_celadon/_storge_icons/icons/machinery/krutki.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/machinery/krutki.dmi'
 	icon_state = "krutki"
 	density = FALSE
 	anchored = TRUE
@@ -86,6 +86,7 @@
 		/obj/item/mod/control/pre_equipped/inteq/elite,
 		/obj/item/mod/control/pre_equipped/elite,
 		/obj/item/mod/control/pre_equipped/ninja,
+		/obj/item/mjollnir_kiker,
 	)
 
 /obj/machinery/gacha_machine/attack_hand(mob/user)
