@@ -65,7 +65,7 @@
 		kick_uses++
 		if(kick_uses >= max_kicks)
 			visible_message(span_boldwarning("[src] начинает светиться и вибрировать!"))
-			addtimer(CALLBACK(src, PROC_REF(explode)), 2 SECONDS)
+			addtimer(CALLBACK(src, PROC_REF(explode), user), 2 SECONDS)
 			return
 		to_chat(user, span_warning("[src] использован [kick_uses]/[max_kicks] раз."))
 
@@ -78,10 +78,16 @@
 	if(HAS_TRAIT(src, TRAIT_WIELDED))
 		shock(target_mob, user)
 
-/obj/item/mjollnir_kiker/proc/explode()
+/obj/item/mjollnir_kiker/proc/explode(mob/owner)
 	var/turf/T = get_turf(src)
 	visible_message(span_boldannounce("[src] взрывается с оглушительным грохотом!"))
 	playsound(T, 'sound/effects/explosion2.ogg', 100, TRUE)
+	if(owner && isliving(owner))
+		var/datum/effect_system/lightning_spread/lightning = new /datum/effect_system/lightning_spread
+		lightning.set_up(5, 1, owner.loc)
+		lightning.start()
+		owner.adjustFireLoss(50)
+		owner.Knockdown(8 SECONDS)
 	for(var/mob/living/L in range(3, T))
 		L.Knockdown(5 SECONDS)
 		L.adjustBruteLoss(30)
