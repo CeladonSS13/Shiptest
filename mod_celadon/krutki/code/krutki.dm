@@ -1,5 +1,5 @@
 /obj/machinery/gacha_machine
-	name = "гачи автомат"
+	name = "Лотерейный автомат"
 	desc = "Загадочная машина, которая поглощает секретные документы и может выдать что-то ценное взамен."
 	icon = 'mod_celadon/_storage_icons/icons/machinery/krutki.dmi'
 	icon_state = "krutki"
@@ -76,7 +76,6 @@
 		/obj/item/mod/control/pre_equipped/standard,
 	)
 	rare_prizes = list(
-		/obj/item/assembly/signaler/anomaly,
 		/obj/mecha/combat/durand,
 		/obj/vehicle/sealed/car/clowncar,
 		/obj/vehicle/ridden/space/speedwagon,
