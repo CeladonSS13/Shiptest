@@ -13,7 +13,7 @@
 	/// Особые призы (артефакты)
 	var/list/rare_prizes = list()
 	/// Шанс выпадения особого приза (в процентах)
-	var/rare_prize_chance = 0.1
+	var/rare_prize_chance = 0.001
 	/// Минимальное время до выдачи приза (в секундах)
 	var/min_prize_delay = 10
 	/// Максимальное время до выдачи приза (в секундах)
@@ -46,14 +46,46 @@
 /obj/machinery/gacha_machine/Initialize()
 	. = ..()
 	common_prizes = list(
-		/obj/item/spacecash/bundle/c1000,
-		/obj/item/spacecash/bundle/c500,
-		/obj/item/reagent_containers/food/drinks/beer,
+		/obj/item/spacecash/bundle/c10000,
 		/obj/item/storage/box/donkpockets,
-		/obj/effect/spawner/random/entertainment/plushie_celadon_all
+		/obj/effect/spawner/random/entertainment/plushie_celadon_all,
+		/obj/machinery/nuclearbomb/beer,
+		/obj/structure/reagent_dispensers/beerkeg,
+		/obj/item/fakeartefact,
+		/obj/item/storage/part_replacer/bluespace/tier4,
+		/obj/item/kinetic_crusher/syndie_crusher,
+		/obj/item/restraints/handcuffs/pinkcuffs,
+		/obj/structure/painting/narsie,
+		/obj/item/mod/module/jetpack/advanced,
+		/obj/item/gun/energy/e_gun/nuclear,
+		/obj/item/circuitboard/computer/rdconsole,
+		/obj/item/implanter/adrenalin,
+		/obj/item/melee/skimitar,
+		/obj/item/melee/skimitar/golden,
+		/obj/item/melee/sword/sabre/suns,
+		/obj/item/clothing/glasses/thermal,
+		/obj/item/storage/box/syndie_kit/chameleon,
+		/obj/item/card/emag/disposable,
+		/obj/item/grenade/c4/x4,
+		/obj/item/grenade/c4,
+		/obj/item/melee/synthetic_arm_blade,
+		/obj/item/mod/control/pre_equipped/inteq,
+		/obj/item/mod/control/pre_equipped/syndicate,
+		/obj/item/mod/control/pre_equipped/engineering,
+		/obj/item/mod/control/pre_equipped/atmospheric,
+		/obj/item/mod/control/pre_equipped/standard,
 	)
 	rare_prizes = list(
-		/obj/item/assembly/signaler/anomaly
+		/obj/item/assembly/signaler/anomaly,
+		/obj/mecha/combat/durand,
+		/obj/vehicle/sealed/car/clowncar,
+		/obj/vehicle/ridden/space/speedwagon,
+		/obj/mecha/combat/combat_tank/tank1984,
+		/obj/item/implanter/emp,
+		/obj/item/book/granter/spell/random,
+		/obj/item/mod/control/pre_equipped/inteq/elite,
+		/obj/item/mod/control/pre_equipped/elite,
+		/obj/item/mod/control/pre_equipped/ninja,
 	)
 
 /obj/machinery/gacha_machine/attack_hand(mob/user)
@@ -125,7 +157,7 @@
 		visible_message(span_boldannounce("[src] выдает ОСОБЫЙ приз!"))
 		message_admins("Гачи автомат в [ADMIN_VERBOSEJMP(src)] выдал редкий приз! Шанс был [total_rare_chance]%.")
 		playsound(src, 'sound/misc/Yeehaw.ogg', 80, TRUE)
-		playsound(src, 'sound/misc/highlander.ogg', 80, TRUE)
+		playsound(src, 'sound/misc/highlander.ogg', 80, TRUE, 0, 18)
 		say(pick(rare_phrases))
 	else if(common_prizes.len)
 		prize_type = pick(common_prizes)
