@@ -306,6 +306,9 @@ FIXES_MEDBOT_RUNTIME_PATH_NULL - Добавляем проверки на null �
 
 FIXES_HOODED_ICONS
 - 'code/modules/clothing/suits/toggles.dm'
+
+FIX_TOGGLE_DEAD_OOC
+- 'code/modules/client/verbs/ooc.dm' : добавляем вывод в чат о том что кнопка среагировала
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
