@@ -309,6 +309,9 @@ FIXES_HOODED_ICONS
 
 FIX_TOGGLE_DEAD_OOC
 - 'code/modules/client/verbs/ooc.dm' : добавляем вывод в чат о том что кнопка среагировала
+
+FIXES_CRAFT_MENU
+- `code/datums/components/crafting/crafting.dm` : Обновляем меню крафта автоматически, не в ручную же это делать
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
