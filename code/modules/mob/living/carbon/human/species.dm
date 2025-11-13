@@ -714,7 +714,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 						sclera_overlay = mutable_appearance('icons/mob/species/kepori/kepori_eyes.dmi', eyes.sclera_icon_state, -BODYPARTS_LAYER)
 					// [CELADON-ADD] - CELADON_LANIUS
 					else if(islanius(H))
-						eye_overlay = mutable_appearance('mod_celadon/_storge_icons/icons/species/lanius/lanius_organs.dmi', eyes.eye_icon_state, -BODYPARTS_LAYER)
+						eye_overlay = mutable_appearance('mod_celadon/_storage_icons/icons/species/lanius/lanius_organs.dmi', eyes.eye_icon_state, -BODYPARTS_LAYER)
 					// [/CELADON-ADD]
 					else
 						eye_overlay = mutable_appearance(species_eye_path || 'icons/mob/human_face.dmi', eyes.eye_icon_state, -BODYPARTS_LAYER)
@@ -1749,13 +1749,12 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 		var/atk_verb = user.dna.species.attack_verb
 		// [CELADON-ADD] CELADON_BITE_FERAL
-		var/attack_verb_bonus = 0 //Ну а хуле
-		var/sanity_level_mood = 2
-		SEND_SIGNAL(user, COMSIG_REQUEST_SANITY_LEVEL, &sanity_level_mood)
-		//Копирывание логики укусов
+		var/attack_verb_bonus = 0
+		var/datum/component/mood/temp = user.GetComponent(/datum/component/mood)
+		var/sanity_level_mood = temp.sanity_level
 		var/starving_cat_bonus = user.nutrition <= NUTRITION_LEVEL_HUNGRY ? 10 : 1
 		var/crazy_feral_cat = clamp((starving_cat_bonus * sanity_level_mood), 0, 100)
-		if(prob(crazy_feral_cat))
+		if((istajara(user) || isriol(user)) && prob(crazy_feral_cat))
 			atk_verb = ATTACK_EFFECT_BITE
 		// [/CELADON-ADD] CELADON_BITE_FERAL
 		if(target.body_position == LYING_DOWN)

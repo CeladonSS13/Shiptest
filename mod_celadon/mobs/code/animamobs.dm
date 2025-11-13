@@ -23,7 +23,7 @@
 /mob/living/basic/hivebot/ranged/anima
 	faction = list("anima")
 
-/mob/living/basic/hivebot/ranged/rapid/anima
+/mob/living/basic/hivebot/rapid/anima
 	faction = list("anima")
 
 /mob/living/simple_animal/hostile/mimic/anima

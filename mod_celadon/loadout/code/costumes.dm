@@ -30,3 +30,38 @@
 	display_name = "marisa suit"
 	description = "wizard? No, it's Marisa"
 	path = /obj/item/clothing/suit/wizrobe/marisa/fake
+
+/datum/gear/costume/costumes/waiter
+	display_name = "waiter's suit"
+	description = "It's a very smart uniform with a special pocket for tip"
+	path = /obj/item/clothing/under/suit/waiter
+
+/datum/gear/costume/costumes/waiter_s
+	display_name = "waiter's suit"
+	description = "It's a very smart uniform with a special pocket for tip"
+	path = /obj/item/clothing/under/suit/waiter/syndicate
+
+/datum/gear/costume/costumes/waiter_o
+	display_name = "waiter's suit"
+	description = "It's a very smart uniform with a special pocket for tip"
+	path = /obj/item/clothing/under/suit/waiter/occult
+
+/datum/gear/costume/costumes/cel_black
+	display_name = "lawyer black suit"
+	description = "Slick threads."
+	path = /obj/item/clothing/under/rank/civilian/lawyer/cel_black
+
+/datum/gear/costume/costumes/cel_black_skirt
+	display_name = "lawyer black suitskirt"
+	description = "Slick threads."
+	path = /obj/item/clothing/under/rank/civilian/lawyer/cel_black/skirt
+
+/datum/gear/costume/costumes/cel_black
+	display_name = "lawyer purple suit"
+	description = "Slick threads."
+	path = /obj/item/clothing/under/rank/civilian/lawyer/cel_purpl
+
+/datum/gear/costume/costumes/cel_black_skirt
+	display_name = "lawyer purple suitskirt"
+	description = "Slick threads."
+	path = /obj/item/clothing/under/rank/civilian/lawyer/cel_purpl/skirt

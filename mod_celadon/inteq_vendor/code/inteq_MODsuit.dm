@@ -76,13 +76,16 @@
 
 
 /obj/item/mod/module/shield/on_activation()
-	RegisterSignal(device, COMSIG_MOD_SHIELD_DESTROYED, PROC_REF(on_deactivation))
-	playsound(loc, 'sound/weapons/saberon.ogg', 35, TRUE)
-	device.atom_integrity = change_integrity(device)
-	var/power_to_drain = (device.max_integrity - change_integrity(device)) * 5 //So that we drain 5 power per RESTORED integrity
-	drain_power(power_to_drain)
+	RegisterSignal(device, COMSIG_MOD_SHIELD_DESTROYED, PROC_REF(deactivation_handler))
+	var/power_to_drain = (change_integrity(device)-device.atom_integrity) * 5 //So that we drain 5 power per RESTORED integrity
+	if(drain_power(power_to_drain))
+		playsound(loc, 'sound/weapons/saberon.ogg', 35, TRUE)
+		device.atom_integrity = change_integrity(device)
 	. = ..()
 
+/obj/item/mod/module/shield/proc/deactivation_handler()
+	SIGNAL_HANDLER
+	on_deactivation()
 
 /obj/item/mod/module/shield/on_deactivation(display_message = TRUE, deleting = FALSE)
 	. = ..()
@@ -92,7 +95,7 @@
 
 
 /obj/item/mod/module/shield/proc/change_integrity(obj/item/shield/riot/mod/shield)
-	var/restored_integrity = ((world.time - start_time) * 10) / 10 //So we regenerate 10 integrity per second
+	var/restored_integrity = (world.time - start_time) //So we regenerate 10 integrity per second
 	if(shield.atom_integrity + restored_integrity >= shield.max_integrity) //So we don't return an object with 200 integrity with a 100 max
 		return shield.max_integrity
 	return shield.atom_integrity + restored_integrity
@@ -108,11 +111,13 @@
 
 /obj/item/shield/riot/mod
 	name = "MOD telescopic shield"
-	desc = "An advanced riot shield made of lightweight materials that collapses for easy storage."
-	icon = 'mod_celadon/_storge_icons/icons/items/weapons/eshield.dmi'
+	desc = "A module installed into the forearm of the suit, extending into a sturdy shield as needed. \
+		This high-end piece of technology repairs damage done to shield, while it's retracted \
+		using a tremendous amount of power supplied from MOD's core."
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/eshield.dmi'
 	icon_state = "teleriot1"
-	lefthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/eshield_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storge_icons/icons/items/weapons/eshield_righthand.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/eshield_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/eshield_righthand.dmi'
 	custom_materials = null
 	slot_flags = null
 	force = 3
@@ -120,11 +125,11 @@
 	slowdown = 0.3
 	var/shield_break_sound = 'sound/effects/sparks1.ogg'
 	var/shield_break_leftover = /obj/effect/particle_effect/sparks
-	max_integrity = 350
+	max_integrity = 250
 	broken_shield = FALSE
 	braking_sound = 'sound/effects/sparks1.ogg'
 	braking_alert = "Shield's down!"
-	integrity_failure = -10000 // So it doesn't become broken
+	integrity_failure = -10000 // So it doesn't brake
 
 /obj/item/shield/riot/mod/emp_act(severity)
 	atom_integrity = 1

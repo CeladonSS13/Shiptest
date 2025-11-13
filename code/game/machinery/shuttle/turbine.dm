@@ -257,7 +257,7 @@
 	lastgen = ((compressor.rpm / TURBGENQ)**TURBGENG) * TURBGENQ * productivity
 	// [CELADON-EDIT] - Турбины стали буквально в 10 раз слабее из-за смены delta_time на seconds_per_tick
 	//thrust = lastgen * POWER_TO_THRUST // second law
-	thrust = lastgen * POWER_TO_THRUST * 8 // second law
+	thrust = lastgen * POWER_TO_THRUST * 2 // second law
 	// [/CELADON-EDIT]
 
 	var/turf/outturf = get_step(src, dir)

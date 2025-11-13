@@ -97,9 +97,7 @@
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/captain //WS Edit - Alt Uniforms
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/caphat
-	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
-	// [/CELADON-REMOVE]
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 
 	backpack = /obj/item/storage/backpack/captain
 	satchel = /obj/item/storage/backpack/satchel/cap
@@ -222,11 +220,9 @@
 	uniform = /obj/item/clothing/under/rank/command/head_of_personnel
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/captain
 	shoes = /obj/item/clothing/shoes/sneakers/brown
-	// [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/storage/box/ids=1,
-	// /obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced = 1)	// CELADON-EDIT - ORIGINAL
-	backpack_contents = list(/obj/item/storage/box/ids=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
-	// [/CELADON-EDIT]
+
+	backpack_contents = list(/obj/item/storage/box/ids=1,\
+		/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
 
 	backpack = /obj/item/storage/backpack/captain
 	satchel = /obj/item/storage/backpack/satchel/cap
@@ -355,7 +351,7 @@
 	box = /obj/item/storage/box/survival/security
 
 	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
-	//The helmet is necessary because /obj/item/clothing/head/helmet/sec is overwritten in the chameleon list by the standard helmet, which has the same name and icon state
+	//The helmet is necessary because /obj/item/clothing/head/helmet/m10 is overwritten in the chameleon list by the standard helmet, which has the same name and icon state
 
 /datum/outfit/job/independent/security/disarmed //No armor, no pocket handcuffs.
 	name = "Independent - Security Officer (Disarmed)"
@@ -375,7 +371,7 @@
 	name = "Independent - Security Officer (Mercenary)"
 	id_assignment = "Trooper"
 
-	uniform = /obj/item/clothing/under/syndicate/camo
+	uniform = /obj/item/clothing/under/rank/security/officer/camo
 	gloves = /obj/item/clothing/gloves/fingerless
 	head = null
 	suit = null
@@ -494,10 +490,7 @@
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	head = /obj/item/clothing/head/hardhat/white
 	gloves = /obj/item/clothing/gloves/color/black
-	// [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)	// CELADON-EDIT - ORIGINAL
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
-	// [/CELADON-EDIT]
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)
 
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
@@ -910,10 +903,7 @@
 	alt_suit = /obj/item/clothing/suit/toggle/suspenders
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/science //WS Edit - Alt Uniforms
 	l_hand = /obj/item/clipboard
-	// [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)	// CELADON-EDIT - ORIGINAL
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
-	// [/CELADON-EDIT]
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)
 
 	backpack = /obj/item/storage/backpack/science
 	satchel = /obj/item/storage/backpack/satchel/tox
@@ -935,9 +925,7 @@
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	suit = /obj/item/clothing/suit/toggle/labcoat/cmo
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
-	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
-	// [/CELADON-REMOVE]
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 
 	backpack = /obj/item/storage/backpack/medic
 	satchel = /obj/item/storage/backpack/satchel/med
@@ -963,10 +951,7 @@
 	backpack = /obj/item/storage/backpack/chemistry
 	satchel = /obj/item/storage/backpack/satchel/chem
 	courierbag = /obj/item/storage/backpack/messenger/chem
-	// [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/storage/bag/chemistry=1)	// CELADON-EDIT - ORIGINAL
-	backpack_contents = list(/obj/item/storage/bag/chemistry=1)
-	// [/CELADON-EDIT]
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/storage/bag/chemistry=1)
 
 // Detective
 

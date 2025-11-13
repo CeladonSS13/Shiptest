@@ -231,6 +231,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/list/equipped_gear = list()
 	///Gear tab currently being viewed
 	var/gear_tab = "General"
+	// [CELADON-ADD] - CELADON_QOL_LOADOUT
+	///Scroll position in gear menu
+	var/gear_scroll_pos = 0
+	// [/CELADON-ADD]
 
 	var/action_buttons_screen_locs = list()
 	///If we want to broadcast deadchat connect/disconnect messages
@@ -1227,52 +1231,112 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						equipped_gear.Cut(i,i+1)
 
 			dat += "<table align='center' width='100%'>"
-			// [CELADON-EDIT] - CELADON_DONATE
+			// [CELADON-EDIT] - CELADON_DONATE, CELADON_QOL_LOADOUT
 			// dat += "<tr><td colspan=4><center><b>Current loadout usage: [length(equipped_gear)]/[CONFIG_GET(number/max_loadout_items)]</b> \[<a href='byond://?_src_=prefs;preference=gear;clear_loadout=1'>Clear Loadout</a>\] | \[<a href='byond://?_src_=prefs;preference=gear;toggle_loadout=1'>Toggle Loadout</a>\]</center></td></tr>"
-			dat += "<tr><td colspan=4><center><b>Current loadout usage: [length(equipped_gear)]/[max_loadout_items]</b> \[<a href='byond://?_src_=prefs;preference=gear;clear_loadout=1'>Clear Loadout</a>\] | \[<a href='byond://?_src_=prefs;preference=gear;toggle_loadout=1'>Toggle Loadout</a>\]</center></td></tr>"
+			dat += "<tr><td colspan=4 style='padding: 5px;'><div style='text-align: center; background: #2a2a2a; padding: 8px; border-radius: 5px; margin: 5px 0;'><b style='color: #87CEEB;'>Использовано слотов: [length(equipped_gear)]/[max_loadout_items]</b> | <a href='byond://?_src_=prefs;preference=gear;clear_loadout=1' style='color: #FF6B6B; text-decoration: none;'>Очистить</a> | <a href='byond://?_src_=prefs;preference=gear;toggle_loadout=1' style='color: #4ECDC4; text-decoration: none;'>Переключить</a></div></td></tr>"
 			// [/CELADON-EDIT]
-			dat += "<tr><td colspan=4><center><b>"
 
-			var/firstcat = 1
-			for(var/category in GLOB.loadout_categories)
-				if(firstcat)
-					firstcat = 0
-				else
-					dat += " |"
-				if(category == gear_tab)
-					dat += " [span_linkoff("[category]")] "
-				else
-					dat += " <a href='byond://?_src_=prefs;preference=gear;select_category=[category]'>[category]</a> "
-			dat += "</b></center></td></tr>"
+
+
+			// Навигация
+			dat += "<tr><td colspan=4>"
+			dat += generate_loadout_tree_navigation(gear_tab)
+			dat += "</td></tr>"
 
 			var/datum/loadout_category/LC = GLOB.loadout_categories[gear_tab]
-			dat += "<tr><td colspan=3><hr></td></tr>"
-			dat += "<tr><td colspan=3><b><center>[LC.category]</center></b></td></tr>"
-			dat += "<tr><td colspan=3><hr></td></tr>"
+			if(!LC)
+				// Если категория не найдена, выбираем первую доступную
+				for(var/cat_name in GLOB.loadout_categories)
+					gear_tab = cat_name
+					LC = GLOB.loadout_categories[gear_tab]
+					break
 
-			dat += "<tr><td colspan=3><hr></td></tr>"
-			// [CELADON-EDIT] - CELADON_QOL
-			// dat += "<tr><td><b>Name</b></td>" // CELADON-EDIT - ORIGINAL
-			dat += "<tr><td align='middle'><b>Name</b></td>"
-			// [/CELADON-EDIT]
-			dat += "<td><b>Restricted Jobs</b></td>"
-			dat += "<td><b>Description</b></td>"
-			dat += "<tr><td colspan=3><hr></td></tr>"
+			// [CELADON-EDIT] - CELADON_QOL_LOADOUT
+			// dat += "<tr><td colspan=3><hr></td></tr>"
+			// dat += "<tr><td colspan=3><b><center>[LC.category]</center></b></td></tr>"
+			// dat += "<tr><td colspan=3><hr></td></tr>"
+
+			// dat += "<tr><td colspan=3><hr></td></tr>"
+			// dat += "<tr><td><b>Name</b></td>"
+			// dat += "<td><b>Restricted Jobs</b></td>"
+			// dat += "<td><b>Description</b></td></tr>"
+			// dat += "<tr><td colspan=3><hr></td></tr>"	// ORIGINAL
+			dat += "<tr><td colspan=4 style='padding: 5px 0;'><div style='text-align: center; font-weight: bold; font-size: 14px; color: #87CEEB; border-bottom: 1px solid #555; padding-bottom: 3px;'>[LC.category]</div></td></tr>"
+
+			// Сетка предметов
+			dat += "<tr><td colspan=4 style='padding: 0;'>"
+			dat += "<div id='gear-container' style='text-align: left; padding: 10px; max-height: 500px; overflow-y: auto; background: #1a1a1a; border: 1px solid #333; border-radius: 5px;' onscroll='localStorage.setItem(\"gearScrollPos\", this.scrollTop);'>"
+			// [/CELADON-ADD]
 			for(var/gear_name in LC.gear)
 				var/datum/gear/G = LC.gear[gear_name]
-				// [CELADON-EDIT] - CELADON_QOL
-				// dat += "<tr style='vertical-align:top;'><td width=20%><a style='white-space:normal;' [(G.display_name in equipped_gear) ? "class='linkOn' " : ""]href='?_src_=prefs;preference=gear;toggle_gear=[G.display_name]'>[G.display_name]</a></td><td>" // CELADON-EDIT - ORIGINAL
-				dat += "<tr style='vertical-align:top;'><td align='middle' width=20%><a style='white-space:normal;' [(G.display_name in equipped_gear) ? "class='linkOn' " : ""]href='byond://?_src_=prefs;preference=gear;toggle_gear=[G.display_name]'>[G.display_name]</a><br/><img src=data:image/jpeg;base64,[G.base64icon] class='loadoutPreview'><hr></td><td>"
-				// [/CELADON-EDIT]
-				if(G.allowed_roles)
-					dat += "<font size=2>"
-					var/list/allowedroles = list()
-					for(var/role in G.allowed_roles)
-						allowedroles += role
-					dat += english_list(allowedroles, null, ", ")
-					dat += "</font>"
-				dat += "</td><td><font size=2><i>[G.description]</i></font></td></tr>"
+				var/is_equipped = (G.display_name in equipped_gear)
+				// [CELADON-EDIT] - CELADON_QOL_LOADOUT
+				// dat += "<tr style='vertical-align:top; [is_equipped ? "background: #2a4a2a;" : ""]'>"
+
+				// // Колонка с предметом
+				// dat += "<td align='middle' width='20%'>"
+				// dat += "<a style='white-space:normal;' [(G.display_name in equipped_gear) ? "class='linkOn' " : ""]href='byond://?_src_=prefs;preference=gear;toggle_gear=[G.display_name]'>[G.display_name]</a><br/>"
+				// dat += "<img src='data:image/jpeg;base64,[G.base64icon]' class='loadoutPreview'><hr>"
+				// dat += "</td>"
+
+				// // Колонка с профессиями
+				// dat += "<td>"
+				// if(G.allowed_roles)
+				// 	dat += "<font size=2>"
+				// 	var/list/allowedroles = list()
+				// 	for(var/role in G.allowed_roles)
+				// 		allowedroles += role
+				// 	dat += english_list(allowedroles, null, ", ")
+				// 	dat += "</font>"
+				// dat += "</td>"
+
+				// // Колонка с описанием
+				// dat += "<td><font size=2><i>[G.description]</i></font></td>"
+
+				// dat += "</tr>"	// ORIGINAL
+				// Карточка предмета
+				dat += "<div style='width: 200px; height: 150px; border: 2px solid [is_equipped ? "#90EE90" : "#555"]; border-radius: 8px; padding: 8px; background: [is_equipped ? "#2a4a2a" : "#1a1a1a"]; text-align: center; position: relative; display: inline-block; vertical-align: top; margin: 5px; cursor: pointer;' onclick=\"window.location.href='byond://?_src_=prefs;preference=gear;toggle_gear=[G.display_name]'\">"
+
+				// Фракция над картинкой
+				if(G.allowed_factions && G.allowed_factions.len)
+					var/list/faction_color_map = list(
+						"NanoTrasen" = "#283674",
+						"Syndicate" = "#9c0808",
+						"Independent" = "#7e6641",
+						"InteQ" = "#4d291F",
+						"SolFed" = "#191970",
+						"Pirates" = "#000000",
+						"Elysium" = "#006400"
+					)
+					var/list/colored_roles = list()
+					for(var/role in G.allowed_factions)
+						var/color = faction_color_map[role] || "#FFD700"
+						colored_roles += "<span style='color: [color];'>[role]</span>"
+					dat += "<div style='margin: 2px 0 5px 0; font-size: 12px; font-weight: bold;'>[english_list(colored_roles, null, ", ")]</div>"
+
+				// Иконка предмета
+				dat += "<div style='margin: 5px 0;'>"
+				dat += "<img src='data:image/jpeg;base64,[G.base64icon]' style='width: 64px; height: 64px; border: 1px solid #333;'>"
+				dat += "</div>"
+
+				// Название предмета
+				dat += "<div style='margin: 3px 0; color: [is_equipped ? "#90EE90" : "#87CEEB"]; font-weight: bold; font-size: 12px;'>"
+				dat += "[is_equipped ? "✓ " : ""][G.display_name]"
+				dat += "</div>"
+
+				// Описание
+				dat += "<div style='margin: 2px 0; font-size: 12px; color: #CCC; text-align: left; height: 40px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;' title='[G.description]'>"
+				dat += "[G.description]"
+				dat += "</div>"
+
+				dat += "</div>"
+
+			dat += "</div>"
+			dat += "<script>setTimeout(function(){var container = document.getElementById('gear-container'); if(container) {var pos = localStorage.getItem('gearScrollPos'); if(pos) container.scrollTop = parseInt(pos);}}, 10);</script>"
+			dat += "</td></tr>"
+
 			dat += "</table>"
+			// [/CELADON-EDIT]
 
 		if (3) // Game Preferences
 			dat += "<table><tr><td width='340px' height='300px' valign='top'>"
@@ -1893,13 +1957,16 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				else
 					alert(user, "Can't equip [TG.display_name]. It conflicts with an already-equipped item.")
 			save_preferences()
+			update_preview_icon(show_gear, show_loadout)	// [CELADON-ADD] - CELADON_QOL_LOADOUT
 
 		else if(href_list["select_category"])
 			gear_tab = href_list["select_category"]
 		else if(href_list["clear_loadout"])
 			equipped_gear.Cut()
+			update_preview_icon(show_gear, show_loadout)	// [CELADON-ADD] - CELADON_QOL_LOADOUT
 		else if(href_list["toggle_loadout"])
 			show_loadout = !show_loadout
+			update_preview_icon(show_gear, show_loadout)	// [CELADON-ADD] - CELADON_QOL_LOADOUT
 
 		ShowChoices(user)
 		return

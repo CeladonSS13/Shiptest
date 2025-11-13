@@ -21,25 +21,26 @@
 	],
 	"job_slots": {
 		"Kommandant": {
-			"outfit": "/datum/outfit/job/solfed/captain",
+			"outfit": "/datum/outfit/job/cel/solfed/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"Marine Guard": {
-			"outfit": "/datum/outfit/job/solfed/sergeant",
+			"outfit": "/datum/outfit/job/cel/solfed/sergeant",
 			"officer": true,
 			"slots": 1
 		},
 		"Medical Scientist": {
-			"outfit": "/datum/outfit/job/solfed/doctor",
-			"slots":1
+			"outfit": "/datum/outfit/job/cel/solfed/doctor/medical_scientist",
+			"officer": true,
+			"slots": 1
 		},
 		"Meeresarzt": {
-			"outfit": "/datum/outfit/job/solfed/doctor",
+			"outfit": "/datum/outfit/job/cel/solfed/doctor",
 			"slots": 2
 		},
 		"Field Marinemechaniker": {
-			"outfit": "/datum/outfit/job/solfed/engineer",
+			"outfit": "/datum/outfit/job/cel/solfed/engineer",
 			"slots": 2
 		}
 	}

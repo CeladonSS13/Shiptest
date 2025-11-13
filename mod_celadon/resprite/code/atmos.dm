@@ -1,7 +1,7 @@
 // Canisters
 
 /obj/machinery/portable_atmospherics/canister
-	icon = 'mod_celadon/_storge_icons/icons/resprite/canisters.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/canisters.dmi'
 
 /obj/machinery/portable_atmospherics/canister/chlorine
 	icon_state = "darkyellow"

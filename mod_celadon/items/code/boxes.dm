@@ -2,7 +2,7 @@
 			// nanotrasen survival box
 /obj/item/storage/box/survival/nanotrasen
 	name = "nanotrasen survival box"
-	icon = 'mod_celadon/_storge_icons/icons/resprite/survival_boxes.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/survival_boxes.dmi'
 	icon_state = "box_survival_nt_alt"
 /obj/item/storage/box/survival/nanotrasen/PopulateContents()
 	var/static/items_inside = list(
@@ -20,7 +20,7 @@
 			// syndicate survival box
 /obj/item/storage/box/survival/syndicate
 	name = "syndicate survival box"
-	icon = 'mod_celadon/_storge_icons/icons/resprite/survival_boxes.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/survival_boxes.dmi'
 	icon_state = "box_survival_syn"
 /obj/item/storage/box/survival/syndicate/PopulateContents()
 	var/static/items_inside = list(
@@ -36,7 +36,7 @@
 
 /obj/item/storage/box/survival/ramzi
 	name = "ramzi survival box"
-	icon = 'mod_celadon/_storge_icons/icons/resprite/survival_boxes.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/survival_boxes.dmi'
 	icon_state = "box_survival_pir"
 /obj/item/storage/box/survival/ramzi/PopulateContents()
 	var/static/items_inside = list(
@@ -52,7 +52,7 @@
 
 /obj/item/storage/box/survival/pirate
 	name = "contraband survival box"
-	icon = 'mod_celadon/_storge_icons/icons/resprite/survival_boxes.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/survival_boxes.dmi'
 	icon_state = "box_survival_pir"
 /obj/item/storage/box/survival/pirate/PopulateContents()
 	var/static/items_inside = list(
@@ -69,7 +69,7 @@
 			// inteq survival box
 /obj/item/storage/box/survival/inteq
 	name = "inteq survival box"
-	icon = 'mod_celadon/_storge_icons/icons/resprite/survival_boxes.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/survival_boxes.dmi'
 	icon_state = "box_survival_iq"
 /obj/item/storage/box/survival/inteq/PopulateContents()
 	var/static/items_inside = list(
@@ -87,7 +87,7 @@
 			// solfed survival box
 /obj/item/storage/box/survival/solfed
 	name = "solfed survival box"
-	icon = 'mod_celadon/_storge_icons/icons/resprite/survival_boxes.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/survival_boxes.dmi'
 	icon_state = "box_survival_sol"
 /obj/item/storage/box/survival/solfed/PopulateContents()
 	var/static/items_inside = list(
@@ -105,7 +105,7 @@
 			// independent & elisium survival box
 /obj/item/storage/box/survival/independent
 	name = "mass-produced survival box"
-	icon = 'mod_celadon/_storge_icons/icons/resprite/survival_boxes.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/survival_boxes.dmi'
 	icon_state = "box_survival_ind"
 /obj/item/storage/box/survival/independent/PopulateContents()
 	var/static/items_inside = list(

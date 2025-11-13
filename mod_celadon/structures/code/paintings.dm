@@ -45,7 +45,7 @@ var/list/available_paintings = list(
 /obj/structure/painting
 	name = "painting"
 	desc = "A blank painting."
-	icon = 'mod_celadon/_storge_icons/icons/structures/paintings.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/paintings.dmi'
 	icon_state = "item"
 	anchored = 1
 	var/paint = ""
@@ -203,6 +203,6 @@ var/list/available_paintings = list(
 /obj/structure/painting_custom
 	name = "painting"
 	desc = "A beautiful painting."
-	icon = 'mod_celadon/_storge_icons/icons/structures/mnhtn_paintings.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/mnhtn_paintings.dmi'
 	icon_state = "0,0"
 	anchored = 1

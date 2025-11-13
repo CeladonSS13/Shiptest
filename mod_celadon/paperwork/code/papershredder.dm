@@ -16,7 +16,7 @@ var/list/alldirs = list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAS
 /obj/machinery/papershredder
 	name = "paper shredder"
 	desc = "For those documents you don't want seen."
-	icon = 'mod_celadon/_storge_icons/icons/machinery/papershredder.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/machinery/papershredder.dmi'
 	icon_state = "shredder-off"
 	var/shred_anim = "shredder-shredding"
 	density = 1
@@ -77,7 +77,7 @@ var/list/alldirs = list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAS
 			paperamount += paper_result
 			user.canUnEquip(W)
 			qdel(W)
-			playsound(src.loc, 'mod_celadon/_storge_sounds/sound/effects/pshred.ogg', 75, 1)
+			playsound(src.loc, 'mod_celadon/_storage_sounds/sound/effects/pshred.ogg', 75, 1)
 			flick(shred_anim, src)
 			if(paperamount > max_paper)
 				to_chat(user, span_danger("\The [src] was too full, and shredded paper goes everywhere!"))
@@ -160,7 +160,7 @@ var/list/alldirs = list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAS
 
 /obj/item/shreddedp
 	name = "shredded paper"
-	icon = 'mod_celadon/_storge_icons/icons/machinery/papershredder.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/machinery/papershredder.dmi'
 	icon_state = "shredp"
 	throwforce = 0
 	w_class = WEIGHT_CLASS_TINY

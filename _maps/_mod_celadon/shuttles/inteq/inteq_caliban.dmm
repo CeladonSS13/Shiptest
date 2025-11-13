@@ -448,6 +448,7 @@
 	},
 /obj/item/reagent_containers/food/drinks/bottle/triplesec,
 /obj/item/pen/fountain/captain,
+/obj/item/megaphone/command,
 /turf/open/floor/plasteel/mono,
 /area/ship/crew/dorm/dormtwo)
 "dl" = (
@@ -506,7 +507,7 @@
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 6;
 	id = "Caliban_turret_control";
-	scan_range = 10
+	scan_range = 12
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/crew/cryo)
@@ -552,8 +553,19 @@
 	},
 /area/ship/bridge)
 "ey" = (
+/obj/machinery/porta_turret/ship/inteq/light{
+	name = "Point Defence Turret";
+	shot_delay = 0.5;
+	lethal_projectile = /obj/projectile/bullet/pellet/bof;
+	stun_projectile = /obj/projectile/bullet/pellet/rubbershot;
+	lethal_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
+	dir = 10;
+	id = "Caliban_turret_control";
+	scan_range = 10
+	},
 /turf/closed/wall/r_wall/syndicate,
-/area/ship/external/dark)
+/area/ship/crew/canteen)
 "eC" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -1765,7 +1777,7 @@
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 5;
 	id = "Caliban_turret_control";
-	scan_range = 10
+	scan_range = 12
 	},
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/crew/toilet)
@@ -1962,7 +1974,8 @@
 	height = 15;
 	dwidth = 7;
 	name = "Caliban Starboard Bay";
-	dir = 2
+	dir = 2;
+	disable_on_owner_ship_dock = 1
 	},
 /turf/template_noop,
 /area/template_noop)
@@ -2310,13 +2323,13 @@
 /turf/open/floor/engine/air,
 /area/ship/engineering/engine)
 "pA" = (
-/obj/machinery/atmospherics/pipe/layer_manifold,
 /obj/machinery/button/door{
 	dir = 1;
 	id = "Caliban_window_engine_shutters";
 	name = "External Window Shutters";
 	pixel_y = -21
 	},
+/obj/machinery/atmospherics/pipe/layer_manifold/visible,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/engine)
 "pB" = (
@@ -2765,7 +2778,8 @@
 	icon = 'icons/obj/power.dmi';
 	icon_state = "cablerelay-off";
 	name = "Multi-deck power adapter";
-	pixel_x = -10
+	pixel_x = -10;
+	anchored = 1
 	},
 /turf/open/floor/plasteel/elevatorshaft{
 	color = "#808080"
@@ -4610,16 +4624,6 @@
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/port_fore)
-"FL" = (
-/obj/docking_port/mobile{
-	can_move_docking_ports = 1;
-	launch_status = 0;
-	port_direction = 4;
-	preferred_direction = 4;
-	name = "Subshuttle dock"
-	},
-/turf/closed/wall/r_wall/syndicate,
-/area/ship/medical)
 "FV" = (
 /obj/structure/railing{
 	layer = 4.1
@@ -4802,17 +4806,6 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/security/weapons_control)
 "GY" = (
-/obj/machinery/porta_turret/ship/inteq/light{
-	name = "Point Defence Turret";
-	shot_delay = 0.5;
-	lethal_projectile = /obj/projectile/bullet/pellet/bof;
-	stun_projectile = /obj/projectile/bullet/pellet/rubbershot;
-	lethal_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
-	dir = 6;
-	id = "Caliban_turret_control";
-	scan_range = 10
-	},
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/crew/cryo)
 "Hc" = (
@@ -5033,7 +5026,7 @@
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 6;
 	id = "Caliban_turret_control";
-	scan_range = 10
+	scan_range = 12
 	},
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/security/armory)
@@ -5303,14 +5296,13 @@
 /area/ship/security/armory)
 "LJ" = (
 /obj/machinery/atmospherics/components/binary/pump{
-	name = "burn chamber exhaust pump"
+	name = "burn chamber exhaust pump";
+	layer = 2.491
 	},
 /obj/machinery/atmospherics/components/binary/valve/layer4,
-/obj/machinery/atmospherics/components/binary/pump{
-	name = "burn chamber return to exhaust pump";
-	piping_layer = 1;
+/obj/machinery/atmospherics/components/binary/pump/layer2{
 	dir = 1;
-	pixel_x = -10
+	name = "burn chamber return to exhaust pump"
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
@@ -5594,6 +5586,7 @@
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
 /obj/item/clothing/accessory/holster,
+/obj/item/megaphone/command,
 /turf/open/floor/carpet/orange,
 /area/ship/crew/dorm/captain)
 "NY" = (
@@ -5668,14 +5661,14 @@
 	id = "Caliban_exhaustion_vent_enter";
 	name = "Access Door Control (DANGER) (EXTREMELY DANGEROUS) (DO NOT PRESS)";
 	pixel_x = -21;
-	pixel_y = 1;
+	pixel_y = 5;
 	req_access_txt = "24"
 	},
 /obj/machinery/button/shieldwallgen{
 	dir = 4;
 	id = "Caliban_exhaustion_vent_holo";
 	pixel_x = -19;
-	pixel_y = -10;
+	pixel_y = -8;
 	req_access_txt = "56"
 	},
 /obj/item/paper/fluff{
@@ -6100,13 +6093,13 @@
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/structure/catwalk/over,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/dark/hidden/layer1{
+/obj/machinery/atmospherics/pipe/simple/dark/hidden/layer2{
 	dir = 10
 	},
+/obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "SI" = (
@@ -6205,6 +6198,12 @@
 "TA" = (
 /obj/structure/sign/poster/contraband/inteq_gec{
 	pixel_y = 32
+	},
+/obj/docking_port/mobile{
+	can_move_docking_ports = 1;
+	launch_status = 0;
+	port_direction = 4;
+	preferred_direction = 4
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external/dark)
@@ -6557,16 +6556,13 @@
 /obj/machinery/atmospherics/pipe/manifold/dark/visible{
 	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/simple/dark/hidden/layer2{
-	dir = 10
-	},
-/obj/structure/catwalk/over,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/dark/hidden/layer1{
-	dir = 4
+/obj/machinery/atmospherics/pipe/manifold/dark/visible/layer2{
+	dir = 1
 	},
+/obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "VO" = (
@@ -6805,7 +6801,7 @@
 	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg';
 	dir = 5;
 	id = "Caliban_turret_control";
-	scan_range = 10
+	scan_range = 12
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/security/armory)
@@ -6999,7 +6995,8 @@
 	icon = 'icons/obj/power.dmi';
 	icon_state = "cablerelay-on";
 	name = "Multi-deck power adapter";
-	pixel_x = 10
+	pixel_x = 10;
+	anchored = 1
 	},
 /turf/open/floor/plasteel/elevatorshaft{
 	color = "#808080"
@@ -7998,7 +7995,7 @@ sw
 sw
 sw
 MV
-wU
+Bz
 AL
 Cu
 dk
@@ -8018,7 +8015,7 @@ hz
 Jq
 MK
 vP
-wq
+Rf
 sw
 sw
 sw
@@ -8028,7 +8025,7 @@ sw
 sw
 sw
 Pi
-Bz
+wU
 Zn
 AZ
 gT
@@ -8082,7 +8079,7 @@ TN
 Wf
 Dd
 vP
-FL
+wq
 sw
 sw
 "}

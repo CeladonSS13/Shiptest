@@ -3,6 +3,18 @@
 
 #include "_outfit.dm"
 
+#include "code/jobs.dm"
+#include "code/card_id.dm"
+#include "code/outfit.dm"
+#include "code/event.dm"
+
+#include "code/_outpost/_outfit.dm"
+
+#include "code/elysium/_card_id.dm"
+#include "code/elysium/_outfit.dm"
+#include "code/elysium/assets/merch.dm"
+#include "code/elysium/assets/items.dm"
+#include "code/elysium/assets/skimitar.dm"
 #include "code/elysium/clothing/armor.dm"
 #include "code/elysium/clothing/belt.dm"
 #include "code/elysium/clothing/clothing.dm"
@@ -11,37 +23,49 @@
 #include "code/elysium/clothing/suits.dm"
 #include "code/elysium/clothing/under.dm"
 
-#include "code/elysium/outfit_ship/elysium.dm"
-#include "code/elysium/elysium_merch.dm"
-#include "code/elysium/items.dm"
-#include "code/elysium/outfits.dm"
-#include "code/elysium/skimitar.dm"
+#include "code/independent/_card_id.dm"
+#include "code/independent/_outfit.dm"
+#include "code/independent/roumain.dm"
+
+#include "code/inteq/_card_id.dm"
+#include "code/inteq/_outfit.dm"
+
+#include "code/nanotrasen/_card_id.dm"
+#include "code/nanotrasen/_outfit.dm"
+#include "code/nanotrasen/deforest_outfit.dm"
+#include "code/nanotrasen/intelligence_outfit.dm"
+#include "code/nanotrasen/lp_outfit.dm"
+#include "code/nanotrasen/nakamura_outfit.dm"
+#include "code/nanotrasen/nslogistic_outfit.dm"
+#include "code/nanotrasen/ntas_outfit.dm"
+#include "code/nanotrasen/vigilitas_outfit.dm"
+#include "code/nanotrasen/assets/decals.dm"
+#include "code/nanotrasen/assets/other_stuff.dm"
+
+#include "code/solfed/_card_id.dm"
+#include "code/solfed/_outfit.dm"
+#include "code/solfed/assets/decal.dm"
+#include "code/solfed/assets/other_stuff.dm"
+
+#include "code/syndicate/_card_id.dm"
+#include "code/syndicate/_outfit.dm"
+#include "code/syndicate/cybersun_outfit.dm"
+#include "code/syndicate/donkco_outfit.dm"
+#include "code/syndicate/gec_outfit.dm"
+#include "code/syndicate/gorlex_outfit.dm"
+#include "code/syndicate/suns_outfit.dm"
+#include "code/syndicate/twinkle_outfit.dm"
+
+#include "code/pirate/_card_id.dm"
+#include "code/pirate/_outfit.dm"
+#include "code/pirate/frontiersmen.dm"
+#include "code/pirate/ramzi.dm"
+
+#include "code/tmi/_card_id.dm"
+#include "code/tmi/_outfit.dm"
+
+#include "code/generic/_outfit.dm"
 
 #include "code/gamma/gamma.dm"
-
-#include "code/independent/outfit_ship/independent.dm"
-
-#include "code/inteq/armor.dm"
-#include "code/inteq/cards_ids.dm"
-#include "code/inteq/inteq_outfit.dm"
-
-#include "code/nanotrasen/nt_card_id.dm"
-#include "code/nanotrasen/nt_outfit.dm"
-#include "code/nanotrasen/nt_decals.dm"
-#include "code/nanotrasen/nt_other_stuff.dm"
-
-#include "code/solfed/solfed_card_id.dm"
-#include "code/solfed/solfed_decal.dm"
-#include "code/solfed/solfed_other_stuff.dm"
-#include "code/solfed/solfed_outfit.dm"
-
-#include "code/syndicate/syndi_outfit.dm"
-
-#include "code/event.dm"
-#include "code/standard.dm"
-
-#include "code/pirate/ramzi.dm"
-#include "code/pirate/pirate.dm"
-
 
 #endif

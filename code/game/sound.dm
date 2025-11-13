@@ -212,6 +212,14 @@ distance_multiplier - Can be used to multiply the distance at which the sound is
 
 	if(prefs && (prefs.toggles & SOUND_LOBBY))
 		SEND_SOUND(src, sound(SSticker.login_music, repeat = 0, wait = 0, volume = vol, channel = CHANNEL_LOBBYMUSIC)) // MAD JAMS
+// [CELADON-ADD] - MUSIC_CELADON
+		if(SSticker.login_music_name)
+			var/music_name = SSticker.login_music_name
+			var/dot_position = findlasttext(music_name, ".")
+			if(dot_position)
+				music_name = copytext(music_name, 1, dot_position)
+			to_chat(src, span_redteamradio("<B>Музыка в лобби: [music_name]</B>"))
+// [/CELADON-ADD]
 
 /proc/get_rand_frequency()
 	return rand(32000, 55000) //Frequency stuff only works with 45kbps oggs.
@@ -352,6 +360,6 @@ distance_multiplier - Can be used to multiply the distance at which the sound is
 				soundin = pick('sound/machines/switch1.ogg','sound/machines/switch2.ogg','sound/machines/switch3.ogg')
 			//[CELADON-ADD] - CELADON_WEAPONS - добавляем рандомизацию звуков при выстреле
 			if("svd_fire")
-				soundin = pick('mod_celadon/_storge_sounds/sound/gun/svd/svd1.ogg', 'mod_celadon/_storge_sounds/sound/gun/svd/svd2.ogg', 'mod_celadon/_storge_sounds/sound/gun/svd/svd3.ogg')
+				soundin = pick('mod_celadon/_storage_sounds/sound/gun/svd/svd1.ogg', 'mod_celadon/_storage_sounds/sound/gun/svd/svd2.ogg', 'mod_celadon/_storage_sounds/sound/gun/svd/svd3.ogg')
 			//[/CELADON-ADD] - CELADON_WEAPONS
 	return soundin

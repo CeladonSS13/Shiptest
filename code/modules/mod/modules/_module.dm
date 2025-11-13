@@ -119,7 +119,7 @@
 		if(device)
 			// [CELADON-EDIT] - FIX_MODSUIT - Putting a MODsuit's device in active hand, instead of any hand
 			//if(mod.wearer.put_in_hands(device))
-			if(mod.wearer.put_in_active_hand(device))
+			if(mod.wearer.put_in_hands(device))
 			// [/CELADON-EDIT]
 				to_chat(mod.wearer,span_notice("You extend \the [device]."))
 				RegisterSignal(mod.wearer, COMSIG_ATOM_EXITED, PROC_REF(on_exit))

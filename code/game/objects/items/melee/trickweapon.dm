@@ -48,7 +48,7 @@
 		balloon_alert(user, "[active ? "opened" : "closed"] [src]")
 // [CELADON-EDIT] - FIXES_SOUND - Изменены звуки раскрытия/закрытия
 //	playsound(user, 'sound/magic/clockwork/fellowship_armory.ogg', 35, TRUE, frequency = 90000 - (active * 30000))
-	playsound(user, active ? 'mod_celadon/_storge_sounds/sound/weapons/cleaving_saw_open.ogg' : 'mod_celadon/_storge_sounds/sound/weapons/cleaving_saw_close.ogg', 35, TRUE, frequency = 90000 - (active * 30000))
+	playsound(user, active ? 'mod_celadon/_storage_sounds/sound/weapons/cleaving_saw_open.ogg' : 'mod_celadon/_storage_sounds/sound/weapons/cleaving_saw_close.ogg', 35, TRUE, frequency = 90000 - (active * 30000))
 // [/CELADON-EDIT]
 	return COMPONENT_NO_DEFAULT_MESSAGE
 

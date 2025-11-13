@@ -103,7 +103,7 @@
 	gloves = /obj/item/clothing/gloves/combat/insul
 	belt = /obj/item/storage/belt/utility/chief/debug/full	// [CELADON-EDIT] - OMNI_TOOLS
 	shoes = /obj/item/clothing/shoes/magboots/advance
-	id = /obj/item/card/id/debug
+	id = /obj/item/card/id/debug{icon_state = "admin"}	// [CELADON-EDIT] - CELADON_OUTFIT // id = /obj/item/card/id/debug // ORIGINAL
 	suit_store = /obj/item/tank/internals/oxygen
 	back = /obj/item/storage/backpack/holding/debug
 	box = /obj/item/storage/box/debugtools

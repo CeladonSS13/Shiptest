@@ -1,5 +1,5 @@
 /datum/sprite_accessory/undershirt
-	icon = 'mod_celadon/_storge_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
 
 // MARK: Female Tops
 
@@ -157,6 +157,21 @@
 /datum/sprite_accessory/undershirt/peace
 	name = "T-Shirt (Peace)"
 	icon_state = "peace"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/worn_clean
+	name = "worn shirt (well)"
+	icon_state = "worn_clean"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/worn_out
+	name = "worn shirt (out)"
+	icon_state = "worn_out"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/worn_messy
+	name = "worn shirt (messy)"
+	icon_state = "worn_messy"
 	use_static = TRUE
 
 /* CELADON-REPLACED

@@ -22,6 +22,7 @@ ID мода:
 	CELADON_BALANCE_VENDING
 	BALLISTIC_SHIELD
 	YOU_NOT_SEPARATIST
+	SLOW_SPEED_CRAWLING
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов. Добавлены
@@ -96,7 +97,8 @@ EDIT: `code/__DEFINES/turfs.dm`	- Меняем минимальный урон �
 EDIT: `code/game/turfs/closed/walls.dm` - Меняем хп стены в 2 раза = 800, увеличиваем минимальный порог урона с 8 до 25
 EDIT: `code/game/turfs/closed/minerals.dm` - Убираем флаг на минимальный дамаг стене, назначаем числовой параметр. И даем сопротивление стене из камня в 70% и хп в 1200
 
-EDIT: `code/modules/projectiles/projectile.dm` : Меняем систему лежания и попадания по лежачим и стоячи
+BALANCE_CAN_HIT_TARGET
+- EDIT: `code/modules/projectiles/projectile.dm` : Меняем систему лежания и попадания по лежачим и стоячи
 
 EDIT: `code/modules/modular_computers/file_system/programs/radar.dm` : ставим заглушку, чтобы не пользовались планшетиком с радарчиком, пока кодеры не придумают иной вариант. Главное не забыть
 
@@ -135,6 +137,8 @@ ADD: `code/modules/mob/dead/new_player/ship_select.dm` : Добавляем со
 CELADON_BALANCE_VENDING
 EDIT: `code/modules/vending/_vending.dm` : Убираем автоматическое сбрасывание к платным покупкам у всех торрговых автоматах что НЕ относятся к руинкам
 
+SLOW_SPEED_CRAWLING
+- EDIT: `code/__DEFINES/combat.dm`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -166,7 +170,7 @@ EDIT: `code/modules/vending/_vending.dm` : Убираем автоматичес
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- `mod_celadon/_storge_icons/icons`
+- `mod_celadon/_storage_icons/icons`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.

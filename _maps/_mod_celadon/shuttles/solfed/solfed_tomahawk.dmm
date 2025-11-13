@@ -2284,6 +2284,12 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+/obj/docking_port/mobile{
+	dir = 4;
+	launch_status = 0;
+	preferred_direction = 4;
+	port_direction = 2
+	},
 /turf/open/floor/engine/hull,
 /area/ship/storage)
 "zN" = (
@@ -4472,15 +4478,6 @@
 	},
 /turf/open/floor/wood,
 /area/ship/crew)
-"WT" = (
-/obj/docking_port/mobile{
-	dir = 4;
-	launch_status = 0;
-	preferred_direction = 4;
-	port_direction = 2
-	},
-/turf/template_noop,
-/area/template_noop)
 "WY" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -5512,7 +5509,7 @@ dS
 UY
 nE
 PX
-WT
+PX
 PX
 xp
 Jp

@@ -53,6 +53,7 @@
 	},
 /obj/machinery/syndicatebomb/training,
 /mob/living/simple_animal/bot/secbot/beepsky/jr,
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "bc" = (
@@ -515,6 +516,13 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/dorm/dormtwo)
+"gB" = (
+/obj/machinery/porta_turret/ship/nt/heavy{
+	id = "teardrop_turrets";
+	dir = 5
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
 "gD" = (
 /obj/effect/turf_decal/corner/opaque/black/mono,
 /obj/structure/window/reinforced{
@@ -1013,7 +1021,9 @@
 /obj/effect/turf_decal/trimline/opaque/bottlegreen/line{
 	dir = 5
 	},
-/obj/structure/chair/sofa/grey/right/directional/east,
+/obj/structure/chair/sofa/grey/right/directional/east{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "ma" = (
@@ -1388,7 +1398,8 @@
 /area/ship/crew/dorm)
 "oI" = (
 /obj/machinery/porta_turret/ship/nt/light{
-	id = "teardrop_turrets"
+	id = "teardrop_turrets";
+	dir = 9
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/bridge)
@@ -1540,6 +1551,7 @@
 "pX" = (
 /obj/machinery/computer/med_data,
 /obj/effect/turf_decal/trimline/opaque/bottlegreen,
+/obj/machinery/firealarm/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "qe" = (
@@ -1567,6 +1579,13 @@
 	},
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering)
+"qr" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "teardrop_turrets";
+	dir = 1
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
 "qv" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -1687,6 +1706,7 @@
 	name = "Best medic in the sector";
 	desc = "The adorable little mascot of the Solarian Maritime Society. Popular with the cuties."
 	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "sH" = (
@@ -1777,6 +1797,13 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
+"tK" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "teardrop_turrets";
+	dir = 10
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
 "tM" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/effect/decal/cleanable/glass,
@@ -1871,7 +1898,8 @@
 /area/ship/hallway/central)
 "ve" = (
 /obj/machinery/porta_turret/ship/nt/light{
-	id = "teardrop_turrets"
+	id = "teardrop_turrets";
+	dir = 6
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -2087,6 +2115,13 @@
 	},
 /turf/open/floor/wood,
 /area/ship/hallway/central)
+"xy" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "teardrop_turrets";
+	dir = 8
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
 "xz" = (
 /obj/effect/turf_decal/spline/fancy/transparent/solgovgold/corner{
 	dir = 1
@@ -2305,6 +2340,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/hallway/central)
+"yW" = (
+/obj/machinery/porta_turret/ship/nt/heavy{
+	id = "teardrop_turrets";
+	dir = 6
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
 "yZ" = (
 /obj/structure/table,
 /obj/effect/turf_decal/techfloor{
@@ -3206,7 +3248,8 @@
 /area/ship/cargo)
 "JZ" = (
 /obj/machinery/porta_turret/ship/nt/heavy{
-	id = "teardrop_turrets"
+	id = "teardrop_turrets";
+	dir = 4
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -3253,6 +3296,13 @@
 	},
 /obj/effect/turf_decal/corner/opaque/ntblue/half,
 /turf/open/floor/plasteel/heavymetal/var4,
+/area/ship/bridge)
+"Kp" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "teardrop_turrets";
+	dir = 5
+	},
+/turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
 "KE" = (
 /obj/effect/turf_decal/techfloor/orange/corner{
@@ -3506,7 +3556,9 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/hallway/central)
 "Nt" = (
-/obj/machinery/porta_turret/ship/ballistic,
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "teardrop_turrets"
+	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
 "NB" = (
@@ -4653,13 +4705,13 @@ fa
 yz
 jn
 jn
-oI
+xy
 sB
 sB
 yz
 sB
 sB
-oI
+xy
 jn
 jn
 yz
@@ -4711,7 +4763,7 @@ Eh
 Va
 it
 yz
-oI
+tK
 fa
 fa
 fa
@@ -4864,7 +4916,7 @@ fa
 fa
 fa
 fa
-ve
+qr
 lI
 Ik
 du
@@ -5273,7 +5325,7 @@ fa
 fa
 fa
 fa
-ve
+Kp
 WN
 WN
 RS
@@ -5420,7 +5472,7 @@ fa
 fa
 fa
 fa
-JZ
+gB
 cv
 cv
 hw
@@ -5428,7 +5480,7 @@ cv
 vZ
 cv
 cv
-JZ
+yW
 fa
 fa
 fa
