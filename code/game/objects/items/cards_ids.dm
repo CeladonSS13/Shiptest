@@ -317,10 +317,19 @@ update_label()
 	if(!proximity)
 		return
 	if(istype(O, /obj/item/card/id))
-		var/obj/item/card/id/I = O
-		src.access |= I.access
+		// [CELADON-REMOVE] - FIXES_AGENT_CARD - Переместил вниз, ибо проверка внизу не имеет смсла вообще
+		// var/obj/item/card/id/I = O
+		// src.access |= I.access
+		// [/CELADON-REMOVE]
 		if(isliving(user) && user.mind)
 			if(user.mind.special_role || anyone)
+				// [CELADON-ADD] - FIXES_AGENT_CARD
+				var/obj/item/card/id/I = O
+				src.access |= I.access
+				for(var/datum/overmap/ship/controlled/ship in I.ship_access)
+					if(!has_ship_access(ship))
+						add_ship_access(ship)
+				// [/CELADON-ADD]
 				to_chat(usr, span_notice("The card's microscanners activate as you pass it over the ID, copying its access."))
 
 /obj/item/card/id/syndicate/attack_self(mob/user)

@@ -310,6 +310,9 @@ FIXES_HOODED_ICONS
 FIXES_LOCKER_RECHARGE_ENERGYGUN
 - `code/modules/projectiles/guns/energy.dm` : перед падением проверяется, может ли оружие в принципе выстрельнуть без батареи
 
+FIXES_AGENT_CARD
+- `code/game/objects/items/cards_ids.dm` : Тут переместил копирование и дополнил копирование доступов после проверки всех условий
+
 FIX_TOGGLE_DEAD_OOC
 - 'code/modules/client/verbs/ooc.dm' : добавляем вывод в чат о том что кнопка среагировала
 
