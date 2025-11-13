@@ -306,6 +306,9 @@ FIXES_MEDBOT_RUNTIME_PATH_NULL - Добавляем проверки на null �
 
 FIXES_HOODED_ICONS
 - 'code/modules/clothing/suits/toggles.dm'
+
+FIXES_AGENT_CARD
+- `code/game/objects/items/cards_ids.dm` : Тут переместил копирование и дополнил копирование доступов после проверки всех условий
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
