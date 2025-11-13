@@ -1,8 +1,8 @@
 /datum/outfit/job/cel/pirate
 	name = "Pirate - Base Outfit"
-	job_icon = "hudpirate"
 	faction = FACTION_PLAYER_PIRATE
 	faction_icon = "bg_pirate"
+	job_icon = "pirate"
 
 	box = /obj/item/storage/box/survival/pirate
 	id = /obj/item/card/id
@@ -36,6 +36,7 @@
 
 /datum/outfit/job/cel/pirate/captain/jupiter
 	name = "Pirate - Captain (Nodesman)"
+
 
 	uniform = /obj/item/clothing/under/utility
 	gloves = /obj/item/clothing/gloves/combat

@@ -4,6 +4,8 @@
 	name = "Frontiersmen - Base Outfit"
 	faction = FACTION_PLAYER_FRONTIERSMEN
 	// faction_icon = "bg_frontiersmen"
+	faction_icon = "bg_pirate"
+	job_icon = "pirate"
 
 	uniform = /obj/item/clothing/under/frontiersmen
 	r_pocket = null
@@ -22,7 +24,6 @@
 /datum/outfit/job/cel/pirate/frontiersmen/assistant
 	name = "Frontiersmen - Deckhand"
 	id_assignment = "Deckhand"
-	job_icon = "assistant"
 	jobtype = /datum/job/assistant
 
 	uniform = /obj/item/clothing/under/frontiersmen/deckhand
@@ -33,7 +34,6 @@
 
 /datum/outfit/job/cel/pirate/frontiersmen/atmos
 	name = "Frontiersmen - Atmospheric Specialist"
-	job_icon = "atmospherictechnician"
 	jobtype = /datum/job/atmos
 
 	id = /obj/item/card/id/cel/pirate/engineer
@@ -44,7 +44,6 @@
 
 /datum/outfit/job/cel/pirate/frontiersmen/cargo_tech
 	name = "Frontiersmen - Cargo Tech"
-	job_icon = "cargotechnician"
 	jobtype = /datum/job/cargo_tech
 
 	accessory = /obj/item/clothing/accessory/armband/cargo
@@ -56,7 +55,6 @@
 
 /datum/outfit/job/cel/pirate/frontiersmen/captain
 	name = "Frontiersmen - Captain"
-	job_icon = "captain"
 	jobtype = /datum/job/captain
 
 	id = /obj/item/card/id/cel/pirate/captain
@@ -82,7 +80,6 @@
 /datum/outfit/job/cel/pirate/frontiersmen/ce
 	name = "Frontiersmen - Senior Mechanic"
 	id_assignment = "Senior Mechanic"
-	job_icon = "chiefengineer"
 	jobtype = /datum/job/chief_engineer
 
 	id = /obj/item/card/id/cel/pirate/chiefengineer
@@ -98,7 +95,6 @@
 /datum/outfit/job/cel/pirate/frontiersmen/engineer
 	name = "Frontiersmen - Mechanic"
 	id_assignment = "Mechanic"
-	job_icon = "stationengineer"
 	jobtype = /datum/job/engineer
 
 	id = /obj/item/card/id/cel/pirate/engineer
@@ -113,7 +109,6 @@
 /datum/outfit/job/cel/pirate/frontiersmen/cook
 	name = "Frontiersmen - Steward"
 	id_assignment = "Steward"
-	job_icon = "cook"
 	jobtype = /datum/job/cook
 
 	id = /obj/item/card/id/cel/pirate/cook
@@ -126,7 +121,6 @@
 /datum/outfit/job/cel/pirate/frontiersmen/hop
 	name = "Frontiersmen - Helmsman"
 	id_assignment = "Helmsman"
-	job_icon = "headofpersonnel"
 	jobtype = /datum/job/head_of_personnel
 
 	id = /obj/item/card/id/cel/pirate/headofpersonnel
@@ -141,7 +135,6 @@
 /datum/outfit/job/cel/pirate/frontiersmen/hos
 	name = "Frontiersmen - Deck Boss"
 	id_assignment = "Deck Boss"
-	job_icon = "headofsecurity"
 	jobtype = /datum/job/hos
 
 	id = /obj/item/card/id/cel/pirate/headofsecurity
@@ -159,7 +152,6 @@
 /datum/outfit/job/cel/pirate/frontiersmen/security
 	name = "Frontiersmen - Boarder"
 	id_assignment = "Boarder"
-	job_icon = "securityofficer"
 	jobtype = /datum/job/officer
 
 	id = /obj/item/card/id/cel/pirate/security
@@ -182,7 +174,6 @@
 /datum/outfit/job/cel/pirate/frontiersmen/doctor
 	name = "Frontiersmen - Surgeon"
 	id_assignment = "Surgeon"
-	job_icon = "medicaldoctor"
 	jobtype = /datum/job/doctor
 
 	id = /obj/item/card/id/cel/pirate/medic
