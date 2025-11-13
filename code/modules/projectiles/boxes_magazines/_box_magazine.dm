@@ -102,6 +102,11 @@
 		return FALSE
 
 	if(stored_ammo.len < max_ammo)
+		// [CELADON-ADD] - FIXES_PHYSICS_AMMO_CASING - Останавливаем физику гильз
+		var/datum/component/movable_physics/physics = R.GetComponent(/datum/component/movable_physics)
+		if(physics)
+			qdel(physics)
+		// [/CELADON-ADD]
 		stored_ammo += R
 		R.forceMove(src)
 		return TRUE
@@ -113,6 +118,11 @@
 				stored_ammo -= AC
 				AC.forceMove(get_turf(src.loc))
 
+				// [CELADON-ADD] - FIXES_PHYSICS_AMMO_CASING - Останавливаем физику гильз
+				var/datum/component/movable_physics/physics = R.GetComponent(/datum/component/movable_physics)
+				if(physics)
+					qdel(physics)
+				// [/CELADON-ADD]
 				stored_ammo += R
 				R.forceMove(src)
 				return TRUE

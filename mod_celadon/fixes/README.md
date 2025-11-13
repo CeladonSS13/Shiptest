@@ -318,6 +318,11 @@ FIXES_PARROT_DROP_ITEM
 
 FIXES_CRAFT_MENU
 - `code/datums/components/crafting/crafting.dm` : Обновляем меню крафта автоматически, не в ручную же это делать
+
+FIXES_PHYSICS_AMMO_CASING
+- `mod_celadon/fixes/code/ammo.dm`								: тут прок на то чтобы останавливать физику патрона\гильзы если ты поймал её в руку 
+- `code/modules/projectiles/guns/ballistic.dm`					: тут прок на то чтобы останавливать физику патрона\гильзы если ты вставил её в оружие
+- `code/modules/projectiles/boxes_magazines/_box_magazine.dm`	: тут прок на то чтобы останавливать физику Патрона\гильзы если ты вставил её в обойму
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
