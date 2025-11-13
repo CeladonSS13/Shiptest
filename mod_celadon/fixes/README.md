@@ -310,6 +310,9 @@ FIXES_HOODED_ICONS
 FIXES_CHASM_AND_JAUNTER
 - `code/datums/components/chasm.dm` 					: Делаем как везде нормальную проверку на предмет на поясе
 - `code/modules/mining/equipment/wormhole_jaunter.dm` 	: Внедряем механику бс кристалла. Это лчшее что есть
+
+FIXES_CRAFT_MENU
+- `code/datums/components/crafting/crafting.dm` : Обновляем меню крафта автоматически, не в ручную же это делать
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
