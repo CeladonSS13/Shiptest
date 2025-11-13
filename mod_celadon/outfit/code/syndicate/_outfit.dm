@@ -337,7 +337,7 @@
 						/obj/item/radio/weather_monitor=1,
 						)
 
-/datum/outfit/job/cel/syndicate/engineer	// Не юзается
+/datum/outfit/job/cel/syndicate/engineer
 	name = "Syndi - Ship Technician"
 	id_assignment = "Ship Technician"
 	jobtype = /datum/job/engineer
