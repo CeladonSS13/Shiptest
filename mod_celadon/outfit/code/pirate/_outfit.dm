@@ -1,6 +1,6 @@
 /datum/outfit/job/cel/pirate
 	name = "Pirate - Base Outfit"
-	job_icon = "assistant"
+	job_icon = "hudpirate"
 	faction = FACTION_PLAYER_PIRATE
 	faction_icon = "bg_pirate"
 
@@ -12,7 +12,6 @@
 // MARK: Captain
 /datum/outfit/job/cel/pirate/captain
 	name = "Pirate - Captain"
-	job_icon = "captain"
 
 	jobtype = /datum/job/captain
 
@@ -38,8 +37,6 @@
 /datum/outfit/job/cel/pirate/captain/jupiter
 	name = "Pirate - Captain (Nodesman)"
 
-	job_icon = "assistant"
-
 	uniform = /obj/item/clothing/under/utility
 	gloves = /obj/item/clothing/gloves/combat
 	suit = /obj/item/clothing/suit/armor/vest/marine/medium
@@ -52,11 +49,10 @@
 /datum/outfit/job/cel/pirate/hop
 	name = "Pirate - Bridge Officer"
 	id_assignment = "Helmsman"
-	job_icon = "headofpersonnel"
 
 	jobtype = /datum/job/head_of_personnel
 
-	id = /obj/item/card/id/cel/pirate/security
+	id = /obj/item/card/id/cel/pirate/headofpersonnel
 	ears = /obj/item/radio/headset/pirate/alt
 	uniform = /obj/item/clothing/under/costume/pirate
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -67,10 +63,9 @@
 /datum/outfit/job/cel/pirate/hos
 	name = "Frontiersmen - Deck Boss"
 	id_assignment = "Deck Boss"
-	job_icon = "headofsecurity"
 	jobtype = /datum/job/hos
 
-	id = /obj/item/card/id/cel/pirate/security
+	id = /obj/item/card/id/cel/pirate/headofsecurity
 	accessory = /obj/item/clothing/accessory/armband
 	uniform = /obj/item/clothing/under/frontiersmen/officer
 	head = /obj/item/clothing/head/beret/sec/frontier/officer
@@ -83,7 +78,6 @@
 // MARK: Engineer
 /datum/outfit/job/cel/pirate/engineer
 	name = "Pirate - Engineer"
-	job_icon = "assistant"
 
 	jobtype = /datum/job/engineer
 
@@ -116,7 +110,6 @@
 // MARK: Security
 /datum/outfit/job/cel/pirate/security
 	name = "Pirate - Security Officer"
-	job_icon = "assistant"
 
 	jobtype = /datum/job/officer
 
@@ -153,7 +146,6 @@
 // MARK: Medic
 /datum/outfit/job/cel/pirate/medic
 	name = "Pirate - Medical Doctor"
-	job_icon = "paramedic"
 
 	jobtype = /datum/job/doctor
 
@@ -173,11 +165,10 @@
 
 /datum/outfit/job/cel/pirate/cook
 	name = "Pirate - Cook"
-	job_icon = "cook"
 
 	jobtype = /datum/job/cook
 
-	id = /obj/item/card/id/cel/pirate/security
+	id = /obj/item/card/id/cel/pirate/cook
 	ears = /obj/item/radio/headset/headset_srv
 	shoes = /obj/item/clothing/shoes/laceup
 	uniform = /obj/item/clothing/under/rank/civilian/chef
@@ -199,7 +190,6 @@
 // MARK: Assistant
 /datum/outfit/job/cel/pirate/assistant
 	name = "Pirate - Assistant"
-	job_icon = "assistant"
 
 	jobtype = /datum/job/assistant
 

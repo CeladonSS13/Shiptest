@@ -85,7 +85,7 @@
 	job_icon = "chiefengineer"
 	jobtype = /datum/job/chief_engineer
 
-	id = /obj/item/card/id/cel/pirate/engineer
+	id = /obj/item/card/id/cel/pirate/chiefengineer
 	accessory = /obj/item/clothing/accessory/armband/engine
 	ears = /obj/item/radio/headset/pirate/captain
 	uniform = /obj/item/clothing/under/frontiersmen/officer
@@ -116,6 +116,7 @@
 	job_icon = "cook"
 	jobtype = /datum/job/cook
 
+	id = /obj/item/card/id/cel/pirate/cook
 	uniform = /obj/item/clothing/under/frontiersmen
 	head  = /obj/item/clothing/head/chefhat
 	suit = /obj/item/clothing/suit/apron/chef
@@ -128,7 +129,7 @@
 	job_icon = "headofpersonnel"
 	jobtype = /datum/job/head_of_personnel
 
-	id = /obj/item/card/id/cel/pirate/security
+	id = /obj/item/card/id/cel/pirate/headofpersonnel
 	ears = /obj/item/radio/headset/pirate/alt
 	uniform = /obj/item/clothing/under/frontiersmen/officer
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -143,7 +144,7 @@
 	job_icon = "headofsecurity"
 	jobtype = /datum/job/hos
 
-	id = /obj/item/card/id/cel/pirate/security
+	id = /obj/item/card/id/cel/pirate/headofsecurity
 	accessory = /obj/item/clothing/accessory/armband
 	uniform = /obj/item/clothing/under/frontiersmen/officer
 	head = /obj/item/clothing/head/beret/sec/frontier/officer
