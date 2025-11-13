@@ -311,6 +311,9 @@ FIXES_CHASM_AND_JAUNTER
 - `code/datums/components/chasm.dm` 					: Делаем как везде нормальную проверку на предмет на поясе
 - `code/modules/mining/equipment/wormhole_jaunter.dm` 	: Внедряем механику бс кристалла. Это лчшее что есть
 
+FIXES_AGENT_CARD
+- `code/game/objects/items/cards_ids.dm` : Тут переместил копирование и дополнил копирование доступов после проверки всех условий
+
 FIX_TOGGLE_DEAD_OOC
 - 'code/modules/client/verbs/ooc.dm' : добавляем вывод в чат о том что кнопка среагировала
 
