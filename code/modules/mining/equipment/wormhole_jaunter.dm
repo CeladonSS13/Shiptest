@@ -77,7 +77,7 @@
 		SSblackbox.record_feedback("tally", "jaunter", 1, "Chasm") // chasm automatic activation
 		// [CELADON-EDIT] - FIXES_CHASM_AND_JAUNTER - А вот тут, внедряем механику бс кристалла. Это лчшее что есть
 		// activate(user, FALSE, TRUE)	// ORIGINAL
-		do_teleport(user, get_turf(user), 20, asoundin = 'sound/effects/phasein.ogg', channel = TELEPORT_CHANNEL_BLUESPACE)
+		do_teleport(user, get_turf(user), 15, asoundin = 'sound/effects/phasein.ogg', channel = TELEPORT_CHANNEL_BLUESPACE)
 		if(iscarbon(user))
 			var/mob/living/carbon/L = user
 			L.Paralyze(60)
