@@ -309,6 +309,9 @@ FIXES_HOODED_ICONS
 
 FIXES_LOCKER_RECHARGE_ENERGYGUN
 - `code/modules/projectiles/guns/energy.dm` : перед падением проверяется, может ли оружие в принципе выстрельнуть без батареи
+
+FIXES_CRAFT_MENU
+- `code/datums/components/crafting/crafting.dm` : Обновляем меню крафта автоматически, не в ручную же это делать
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
