@@ -310,6 +310,12 @@ FIXES_HOODED_ICONS
 FIX_BEAM_EMMITER_IGNITE
 - 'code/modules/projectiles/projectile/beams.dm' : Добавляем проверку ан генератор поля. Если он есть, то пол не поджигается
 
+FIX_TOGGLE_DEAD_OOC
+- 'code/modules/client/verbs/ooc.dm' : добавляем вывод в чат о том что кнопка среагировала
+
+FIXES_PARROT_DROP_ITEM
+- `code/modules/mob/living/simple_animal/parrot.dm` : Теперь предметы с поли будут выпадать с его смертью, ане удаляться навеки веков
+
 FIXES_CRAFT_MENU
 - `code/datums/components/crafting/crafting.dm` : Обновляем меню крафта автоматически, не в ручную же это делать
 <!--
