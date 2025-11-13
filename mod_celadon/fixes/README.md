@@ -310,6 +310,12 @@ FIXES_HOODED_ICONS
 FIXES_LOCKER_RECHARGE_ENERGYGUN
 - `code/modules/projectiles/guns/energy.dm` : перед падением проверяется, может ли оружие в принципе выстрельнуть без батареи
 
+FIX_TOGGLE_DEAD_OOC
+- 'code/modules/client/verbs/ooc.dm' : добавляем вывод в чат о том что кнопка среагировала
+
+FIXES_PARROT_DROP_ITEM
+- `code/modules/mob/living/simple_animal/parrot.dm` : Теперь предметы с поли будут выпадать с его смертью, ане удаляться навеки веков
+
 FIXES_CRAFT_MENU
 - `code/datums/components/crafting/crafting.dm` : Обновляем меню крафта автоматически, не в ручную же это делать
 <!--
