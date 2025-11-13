@@ -310,6 +310,9 @@ FIXES_HOODED_ICONS
 FIX_BEAM_EMMITER_IGNITE
 - 'code/modules/projectiles/projectile/beams.dm' : Добавляем проверку ан генератор поля. Если он есть, то пол не поджигается
 
+FIXES_AGENT_CARD
+- `code/game/objects/items/cards_ids.dm` : Тут переместил копирование и дополнил копирование доступов после проверки всех условий
+
 FIX_TOGGLE_DEAD_OOC
 - 'code/modules/client/verbs/ooc.dm' : добавляем вывод в чат о том что кнопка среагировала
 
