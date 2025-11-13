@@ -313,6 +313,12 @@ FIXES_AGENT_CARD
 FIXES_AGENT_CARD_NAME
 - `code/game/objects/items/cards_ids.dm` : Фиксим отображение меты инфы по карте агента. Теперь можно не бояться что вас 
 
+FIX_TOGGLE_DEAD_OOC
+- 'code/modules/client/verbs/ooc.dm' : добавляем вывод в чат о том что кнопка среагировала
+
+FIXES_PARROT_DROP_ITEM
+- `code/modules/mob/living/simple_animal/parrot.dm` : Теперь предметы с поли будут выпадать с его смертью, ане удаляться навеки веков
+
 FIXES_CRAFT_MENU
 - `code/datums/components/crafting/crafting.dm` : Обновляем меню крафта автоматически, не в ручную же это делать
 <!--
