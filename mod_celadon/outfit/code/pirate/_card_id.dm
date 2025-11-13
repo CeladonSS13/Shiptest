@@ -8,11 +8,11 @@
 	icon_state = "idpirate_captain"
 	assignment = "Captain"
 
-/obj/outfit/job/cel/pirate/headofpersonnel
+/obj/item/card/id/cel/pirate/headofpersonnel
 	icon_state = "idpirate_headofpersonnel"
 	assignment = "Head of Personal"
 
-/obj/outfit/job/cel/pirate/headofsecurity
+/obj/item/card/id/cel/pirate/headofsecurity
 	icon_state = "idpirate_headofsecurity"
 	assignment = "Head of Security"
 

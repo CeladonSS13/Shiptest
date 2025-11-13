@@ -46,6 +46,7 @@
 	implants = list(/obj/item/implant/radio)
 	accessory = null
 
+// MARK: Head of Personal
 /datum/outfit/job/cel/pirate/hop
 	name = "Pirate - Bridge Officer"
 	id_assignment = "Helmsman"
@@ -60,6 +61,7 @@
 	gloves = /obj/item/clothing/gloves/combat
 	r_pocket = /obj/item/melee/knife/survival
 
+// MARK: Head of Security
 /datum/outfit/job/cel/pirate/hos
 	name = "Frontiersmen - Deck Boss"
 	id_assignment = "Deck Boss"
