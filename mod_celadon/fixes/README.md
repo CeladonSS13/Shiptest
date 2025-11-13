@@ -312,6 +312,9 @@ FIXES_AGENT_CARD
 
 FIXES_AGENT_CARD_NAME
 - `code/game/objects/items/cards_ids.dm` : Фиксим отображение меты инфы по карте агента. Теперь можно не бояться что вас 
+
+FIXES_CRAFT_MENU
+- `code/datums/components/crafting/crafting.dm` : Обновляем меню крафта автоматически, не в ручную же это делать
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
