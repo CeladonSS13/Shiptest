@@ -306,6 +306,9 @@ FIXES_MEDBOT_RUNTIME_PATH_NULL - Добавляем проверки на null �
 
 FIXES_HOODED_ICONS
 - 'code/modules/clothing/suits/toggles.dm'
+
+FIXES_LOCKER_RECHARGE_ENERGYGUN
+- `code/modules/projectiles/guns/energy.dm` : перед падением проверяется, может ли оружие в принципе выстрельнуть без батареи
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
