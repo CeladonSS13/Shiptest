@@ -8,15 +8,15 @@
 	icon_state = "idpirate_captain"
 	assignment = "Captain"
 
-/obj/outfit/job/cel/pirate/hop
+/obj/outfit/job/cel/pirate/headofpersonnel
 	icon_state = "idpirate_headofpersonnel"
 	assignment = "Head of Personal"
 
-/obj/outfit/job/cel/pirate/hos
+/obj/outfit/job/cel/pirate/headofsecurity
 	icon_state = "idpirate_headofsecurity"
 	assignment = "Head of Security"
 
-/obj/item/card/id/cel/pirate/engineer
+/obj/item/card/id/cel/pirate/chiefengineer
 	icon_state = "idpirate_chiefengineer"
 	assignment = "Chief Engineer"
 
@@ -32,7 +32,7 @@
 	icon_state = "idpirate_medic"
 	assignment = "Medic"
 
-/obj/item/card/id/cel/pirate/medic
+/obj/item/card/id/cel/pirate/cook
 	icon_state = "idpirate_cook"
 	assignment = "Cook"
 
