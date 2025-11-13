@@ -311,6 +311,12 @@ FIXES_CHASM_AND_JAUNTER
 - `code/datums/components/chasm.dm` 					: Делаем как везде нормальную проверку на предмет на поясе
 - `code/modules/mining/equipment/wormhole_jaunter.dm` 	: Внедряем механику бс кристалла. Это лчшее что есть
 
+FIX_TOGGLE_DEAD_OOC
+- 'code/modules/client/verbs/ooc.dm' : добавляем вывод в чат о том что кнопка среагировала
+
+FIXES_PARROT_DROP_ITEM
+- `code/modules/mob/living/simple_animal/parrot.dm` : Теперь предметы с поли будут выпадать с его смертью, ане удаляться навеки веков
+
 FIXES_CRAFT_MENU
 - `code/datums/components/crafting/crafting.dm` : Обновляем меню крафта автоматически, не в ручную же это делать
 <!--

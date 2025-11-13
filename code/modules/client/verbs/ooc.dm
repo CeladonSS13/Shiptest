@@ -116,6 +116,7 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 			return
 	else
 		GLOB.dooc_allowed = !GLOB.dooc_allowed
+	to_chat(world, "<B>The Dead OOC channel has been globally [GLOB.dooc_allowed ? "enabled" : "disabled"].</B>")	// [CELADON-ADD] - FIX_TOGGLE_DEAD_OOC
 
 /client/proc/set_ooc(newColor as color)
 	set name = "Set Player OOC Color"
