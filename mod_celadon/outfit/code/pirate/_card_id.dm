@@ -8,6 +8,18 @@
 	icon_state = "idpirate_captain"
 	assignment = "Captain"
 
+/datum/outfit/job/cel/pirate/hop
+	icon_state = "idpirate_headofpersonnel"
+	assignment = "Head of Personal"
+
+/datum/outfit/job/cel/pirate/hos
+	icon_state = "idpirate_headofsecurity"
+	assignment = "Head of Security"
+
+/obj/item/card/id/cel/pirate/engineer
+	icon_state = "idpirate_chiefengineer"
+	assignment = "Chief Engineer"
+
 /obj/item/card/id/cel/pirate/engineer
 	icon_state = "idpirate_engineer"
 	assignment = "Engineer"
