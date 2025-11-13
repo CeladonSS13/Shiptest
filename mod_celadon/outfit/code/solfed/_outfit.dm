@@ -10,7 +10,7 @@
 	backpack = /obj/item/storage/backpack/solfed
 	satchel = /obj/item/storage/backpack/satchel/solfed
 	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
-	courierbag = /obj/item/storage/backpack/messenger/com
+	courierbag = /obj/item/storage/backpack/messenger
 
 /datum/outfit/job/cel/solfed/proc/get_solfed_captain_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
