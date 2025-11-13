@@ -306,6 +306,9 @@ FIXES_MEDBOT_RUNTIME_PATH_NULL - Добавляем проверки на null �
 
 FIXES_HOODED_ICONS
 - 'code/modules/clothing/suits/toggles.dm'
+
+FIXES_PARROT_DROP_ITEM
+- `code/modules/mob/living/simple_animal/parrot.dm` : Теперь предметы с поли будут выпадать с его смертью, ане удаляться навеки веков
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
