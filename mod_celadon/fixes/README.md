@@ -310,6 +310,9 @@ FIXES_HOODED_ICONS
 FIXES_LOCKER_RECHARGE_ENERGYGUN
 - `code/modules/projectiles/guns/energy.dm` : перед падением проверяется, может ли оружие в принципе выстрельнуть без батареи
 
+FIX_BEAM_EMMITER_IGNITE
+- 'code/modules/projectiles/projectile/beams.dm' : Добавляем проверку ан генератор поля. Если он есть, то пол не поджигается
+
 FIXES_AGENT_CARD
 - `code/game/objects/items/cards_ids.dm` : Тут переместил копирование и дополнил копирование доступов после проверки всех условий
 
@@ -321,6 +324,9 @@ FIXES_PARROT_DROP_ITEM
 
 FIXES_CRAFT_MENU
 - `code/datums/components/crafting/crafting.dm` : Обновляем меню крафта автоматически, не в ручную же это делать
+
+FIXES_LONG_RELOAD_AMMO
+- `code/modules/projectiles/boxes_magazines/_box_magazine.dm` : Прерывает зарядку патронами, если игрок отойдет на растояние. Явно указываю параметр target для do_after чтобы проверка расстояния работала корректно
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
