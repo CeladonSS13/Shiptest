@@ -333,6 +333,9 @@ FIXES_LONG_RELOAD_AMMO
 
 FIXES_DRESSER
 - `code/game/objects/structures/dresser.dm` : Изменил на возвращение TRUE по завершению операций вместо вызова родителя . = ..()
+
+FIXES_CARDS_DRAW_RANDOM
+- `code/game/objects/items/toys.dm`	: Меняем взятие с первой позиции на рандомную
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
