@@ -30,6 +30,7 @@
 
 	id_assignment = "Battle Master"
 	jobtype = /datum/job/captain
+	job_icon = "piratecaptain"
 
 	id = /obj/item/card/id/cel/ramzi/battlemaster
 	uniform = /obj/item/clothing/under/syndicate/ramzi/officer
@@ -89,6 +90,7 @@
 
 /datum/outfit/job/cel/pirate/ramzi/captain
 	name = "Ramzi Clique - Captain"
+	job_icon = "piratecaptain"
 
 	jobtype = /datum/job/captain
 	uniform = /obj/item/clothing/under/syndicate/ramzi/officer

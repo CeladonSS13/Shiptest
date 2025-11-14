@@ -56,6 +56,7 @@
 /datum/outfit/job/cel/pirate/frontiersmen/captain
 	name = "Frontiersmen - Captain"
 	jobtype = /datum/job/captain
+	job_icon = "piratecaptain"
 
 	id = /obj/item/card/id/cel/pirate/captain
 	ears = /obj/item/radio/headset/pirate/alt/captain
@@ -68,6 +69,7 @@
 /datum/outfit/job/cel/pirate/frontiersmen/captain/admiral
 	name = "Frontiersmen - Admiral"
 	id_assignment = "Admiral"
+	job_icon = "piratecaptain"
 
 	uniform = /obj/item/clothing/under/frontiersmen/admiral
 	head = /obj/item/clothing/head/frontier/peaked/admiral

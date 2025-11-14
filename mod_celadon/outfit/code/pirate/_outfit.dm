@@ -14,6 +14,7 @@
 	name = "Pirate - Captain"
 
 	jobtype = /datum/job/captain
+	job_icon = "piratecaptain"
 
 	id = /obj/item/card/id/cel/pirate/captain
 	ears = /obj/item/radio/headset/pirate/captain
@@ -36,7 +37,7 @@
 
 /datum/outfit/job/cel/pirate/captain/jupiter
 	name = "Pirate - Captain (Nodesman)"
-
+	job_icon = "piratecaptain"
 
 	uniform = /obj/item/clothing/under/utility
 	gloves = /obj/item/clothing/gloves/combat
