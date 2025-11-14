@@ -847,18 +847,32 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/power/apc/auto_name, 25)
 				to_chat(H, span_warning("The APC's syphon safeties prevent you from draining power!"))
 				return
 			var/obj/item/organ/stomach/ethereal/stomach = H.getorganslot(ORGAN_SLOT_STOMACH)
-			if(stomach.crystal_charge > charge_limit)
+			// [CELADON-EDIT] - FIXES_ELZUOSE_CHARGE_SYNTH
+			// if(stomach.crystal_charge > charge_limit) // ORIGINAL
+			if((istype(stomach) && stomach.crystal_charge > charge_limit) || (E.full_prosthetic && E.crystal_charge > charge_limit))
+			// [/CELADON-EDIT]
 				to_chat(H, span_warning("Your charge is full!"))
 				return
 			E.drain_time = world.time + APC_DRAIN_TIME
 			to_chat(H, span_notice("You start channeling some power through the APC into your body."))
 			while(do_after(user, APC_DRAIN_TIME, target = src))
 				E.drain_time = world.time + APC_DRAIN_TIME
-				if(cell.charge <= (cell.maxcharge / 20) || (stomach.crystal_charge > charge_limit))
+				// [CELADON-EDIT] - FIXES_ELZUOSE_CHARGE_SYNTH
+				// if(cell.charge <= (cell.maxcharge / 20) || (stomach.crystal_charge > charge_limit))
+				// 	return
+				// if(istype(stomach))	// ORIGINAL
+				if(cell.charge <= (cell.maxcharge / 20) || ((istype(stomach) && stomach.crystal_charge > charge_limit) || (E.full_prosthetic && E.crystal_charge > charge_limit)))
 					return
-				if(istype(stomach))
+				if(istype(stomach) || E.full_prosthetic)
+				// [/CELADON-EDIT]
 					to_chat(H, span_notice("You receive some charge from the APC."))
-					stomach.adjust_charge(APC_POWER_GAIN)
+					// [CELADON-EDIT] - FIXES_ELZUOSE_CHARGE_SYNTH
+					// stomach.adjust_charge(APC_POWER_GAIN)	// ORIGINAL
+					if(istype(stomach))
+						stomach.adjust_charge(APC_POWER_GAIN)
+					else
+						E.adjust_charge(APC_POWER_GAIN)
+					// [/CELADON-EDIT]
 					cell.charge -= APC_POWER_GAIN
 				else
 					to_chat(H, span_warning("You can't receive charge from the APC!"))
@@ -868,18 +882,32 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/power/apc/auto_name, 25)
 				to_chat(H, span_warning("The APC is full!"))
 				return
 			var/obj/item/organ/stomach/ethereal/stomach = H.getorganslot(ORGAN_SLOT_STOMACH)
-			if(stomach.crystal_charge < APC_POWER_GAIN)
+			// [CELADON-EDIT] - FIXES_ELZUOSE_CHARGE_SYNTH
+			// if(stomach.crystal_charge < APC_POWER_GAIN)	// ORIGINAL
+			if((istype(stomach) && stomach.crystal_charge < APC_POWER_GAIN) || (E.full_prosthetic && E.crystal_charge < APC_POWER_GAIN))
+			// [/CELADON-EDIT]
 				to_chat(H, span_warning("Your charge is too low!"))
 				return
 			E.drain_time = world.time + APC_DRAIN_TIME
 			to_chat(H, span_notice("You start channeling power through your body into the APC."))
 			while(do_after(user, APC_DRAIN_TIME, target = src)) //WS edit
 				E.drain_time = world.time + APC_DRAIN_TIME //WS edit
-				if(cell.charge >= (cell.maxcharge - APC_POWER_GAIN) || (stomach.crystal_charge < APC_POWER_GAIN))
+				// [CELADON-EDIT] - FIXES_ELZUOSE_CHARGE_SYNTH
+				// if(cell.charge <= (cell.maxcharge / 20) || (stomach.crystal_charge > charge_limit))
+				// 	return
+				// if(istype(stomach))	// ORIGINAL
+				if(cell.charge >= (cell.maxcharge - APC_POWER_GAIN) || ((istype(stomach) && stomach.crystal_charge < APC_POWER_GAIN) || (E.full_prosthetic && E.crystal_charge < APC_POWER_GAIN)))
 					return
-				if(istype(stomach))
+				if(istype(stomach) || E.full_prosthetic)
+				// [/CELADON-EDIT]
 					to_chat(H, span_notice("You transfer some power to the APC."))
-					stomach.adjust_charge(-APC_POWER_GAIN)
+					// [CELADON-EDIT] - FIXES_ELZUOSE_CHARGE_SYNTH
+					// stomach.adjust_charge(-APC_POWER_GAIN)	// ORIGINAL
+					if(istype(stomach))
+						stomach.adjust_charge(-APC_POWER_GAIN)
+					else
+						E.adjust_charge(-APC_POWER_GAIN)
+					// [/CELADON-EDIT]
 					cell.charge += APC_POWER_GAIN
 				else
 					to_chat(H, span_warning("You can't transfer power to the APC!"))

@@ -333,6 +333,12 @@ FIXES_LONG_RELOAD_AMMO
 
 FIXES_DRESSER
 - `code/game/objects/structures/dresser.dm` : Изменил на возвращение TRUE по завершению операций вместо вызова родителя . = ..()
+
+FIXES_ELZUOSE_CHARGE_SYNTH
+- `code/modules/mob/living/carbon/human/species_types/ethereal.dm`	:	Вводим флаг для full body протезированных и логику делаем
+- `code/modules/power/apc.dm`										:	Переделываем проверки с использованием нового флага для протезированных эльзуосов
+- `code/modules/power/cell.dm`										:	Добавлен блок для режима Граб, чтобы можно было отдавать энергию в батарейку корректно
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

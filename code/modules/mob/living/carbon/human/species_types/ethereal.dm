@@ -246,6 +246,7 @@
 
 /datum/species/elzuose/spec_life(mob/living/carbon/human/_human)
 	.=..()
+	check_prosthetic_status(_human)	// [CELADON-ADD] - FIXES_ELZUOSE_CHARGE_SYNTH
 	handle_charge(_human)
 
 /datum/species/elzuose/proc/stop_emp(mob/living/carbon/human/_human)
@@ -302,4 +303,8 @@
 	var/obj/item/organ/stomach/ethereal/stomach = _human.getorganslot(ORGAN_SLOT_STOMACH)
 	if(istype(stomach))
 		return stomach.crystal_charge
+	// [CELADON-ADD] - FIXES_ELZUOSE_CHARGE_SYNTH
+	if(full_prosthetic)
+		return crystal_charge
+	// [/CELADON-ADD]
 	return ELZUOSE_CHARGE_NONE

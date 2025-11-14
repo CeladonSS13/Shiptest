@@ -161,21 +161,61 @@
 		var/charge_limit = ELZUOSE_CHARGE_DANGEROUS - CELL_POWER_GAIN
 		if(E.drain_time > world.time)
 			return
+		// [CELADON-ADD] - FIXES_ELZUOSE_CHARGE_SYNTH - INTENT_GRAB для отдачи энергии в батарейку
+		var/obj/item/organ/stomach/ethereal/stomach = H.getorganslot(ORGAN_SLOT_STOMACH)
+		if(H.a_intent == INTENT_GRAB)
+			if(charge >= maxcharge)
+				to_chat(H, span_warning("[src] is already fully charged!"))
+				return
+			if((istype(stomach) && stomach.crystal_charge < CELL_POWER_DRAIN) || (E.full_prosthetic && E.crystal_charge < CELL_POWER_DRAIN))
+				to_chat(H, span_warning("Your charge is too low!"))
+				return
+			to_chat(H, span_notice("You begin channeling power from your body into [src]."))
+			E.drain_time = world.time + CELL_DRAIN_TIME
+			if(do_after(user, CELL_DRAIN_TIME, target = src))
+				if((charge >= maxcharge) || ((istype(stomach) && stomach.crystal_charge < CELL_POWER_DRAIN) || (E.full_prosthetic && E.crystal_charge < CELL_POWER_DRAIN)))
+					return
+				if(istype(stomach) || E.full_prosthetic)
+					to_chat(H, span_notice("You transfer some power to [src]."))
+					if(istype(stomach))
+						stomach.adjust_charge(-CELL_POWER_DRAIN)
+					else
+						E.adjust_charge(-CELL_POWER_DRAIN)
+					charge += CELL_POWER_GAIN //you give more than battery receives
+				else
+					to_chat(H, span_warning("You can't transfer power to [src]!"))
+			return
+		// [/CELADON-ADD]
+
 		if(charge < CELL_POWER_DRAIN)
 			to_chat(H, span_warning("[src] doesn't have enough power!"))
 			return
-		var/obj/item/organ/stomach/ethereal/stomach = H.getorganslot(ORGAN_SLOT_STOMACH)
-		if(stomach.crystal_charge > charge_limit)
+		// var/obj/item/organ/stomach/ethereal/stomach = H.getorganslot(ORGAN_SLOT_STOMACH)	// [CELADON-REMOVE] - FIXES_ELZUOSE_CHARGE_SYNTH - Вынесено выше
+		// [CELADON-EDIT] - FIXES_ELZUOSE_CHARGE_SYNTH
+		// if(stomach.crystal_charge > charge_limit)	// ORIGINAL
+		if((istype(stomach) && stomach.crystal_charge > charge_limit) || (E.full_prosthetic && E.crystal_charge > charge_limit))
+		// [/CELADON-EDIT]
 			to_chat(H, span_warning("Your charge is full!"))
 			return
 		to_chat(H, span_notice("You begin clumsily channeling power from [src] into your body."))
 		E.drain_time = world.time + CELL_DRAIN_TIME
 		if(do_after(user, CELL_DRAIN_TIME, target = src))
-			if((charge < CELL_POWER_DRAIN) || (stomach.crystal_charge > charge_limit))
+			// [CELADON-EDIT] - FIXES_ELZUOSE_CHARGE_SYNTH
+			// if((charge < CELL_POWER_DRAIN) || (stomach.crystal_charge > charge_limit))
+			// 	return
+			// if(istype(stomach))	// ORIGINAL
+			if((charge < CELL_POWER_DRAIN) || ((istype(stomach) && stomach.crystal_charge > charge_limit) || (E.full_prosthetic && E.crystal_charge > charge_limit)))
 				return
-			if(istype(stomach))
+			if(istype(stomach) || E.full_prosthetic)
+			// [/CELADON-EDIT]
 				to_chat(H, span_notice("You receive some charge from [src], wasting some in the process."))
-				stomach.adjust_charge(CELL_POWER_GAIN)
+				// [CELADON-EDIT] - FIXES_ELZUOSE_CHARGE_SYNTH
+				// stomach.adjust_charge(CELL_POWER_GAIN)	// ORIGINAL
+				if(istype(stomach))
+					stomach.adjust_charge(CELL_POWER_GAIN)
+				else
+					E.adjust_charge(CELL_POWER_GAIN)
+				// [/CELADON-EDIT]
 				charge -= CELL_POWER_DRAIN //you waste way more than you receive, so that ethereals cant just steal one cell and forget about hunger
 			else
 				to_chat(H, span_warning("You can't receive charge from [src]!"))
