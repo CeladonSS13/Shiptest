@@ -339,6 +339,9 @@ FIXES_ELZUOSE_CHARGE_SYNTH
 - `code/modules/power/apc.dm`										:	Переделываем проверки с использованием нового флага для протезированных эльзуосов
 - `code/modules/power/cell.dm`										:	Добавлен блок для режима Граб, чтобы можно было отдавать энергию в батарейку корректно
 
+FIXES_CARDS_DRAW_RANDOM
+- `code/game/objects/items/toys.dm`	: Меняем взятие с первой позиции на рандомную
+
 FIXES_CQC_GRAB
 - `code/modules/mob/living/carbon/carbon_defense.dm` : Останавливаем захват по самому себе, проверяем что кровотечение уже есть на конечностях. Ну блиид там. Короче странный сикуси момент
 <!--
