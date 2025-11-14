@@ -1006,6 +1006,14 @@
 	suffix = "whitesands_brazillianlab.dmm"
 	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_INHOSPITABLE)
 
+/datum/map_template/ruin/whitesands/trainyard	// NEW
+	id = "train-yard"
+	name = "Train Yard"
+	description = "Attacked train station. What the hell are train doing on a sand planet?"
+	suffix = "whitesands_surface_trainyard.dmm"
+	cost = 3
+	ruin_tags = list(RUIN_TAG_HARD_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER)
+
 //							///
 //		MARK: Plasma
 //							///
@@ -1206,7 +1214,12 @@
 //							///
 //		MARK: Moon
 //							///
-
+/datum/map_template/ruin/moon/lunar_dispersal
+	id = "lunar_dispersal"
+	name = "Lunar Dispersal"
+	description = "Concrete buildings falling into oblivion."
+	suffix = "lunar_dispersal.dmm"
+	cost = 2
 
 
 

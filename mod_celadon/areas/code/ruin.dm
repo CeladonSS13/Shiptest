@@ -219,3 +219,146 @@
 /area/ruin/jungle/syndifortshuttle
 	name = "Syndi Fort Shuttle"
 	icon_state = "green"
+
+/// MARK: Whitesands
+
+/area/ruin/whitesands/trainyard/shuttle
+	name = "shuttle"
+	icon_state = "shuttle"
+/area/ruin/whitesands/trainyard/engineering
+	name = "engineering"
+	icon_state = "yellow"
+/area/ruin/whitesands/trainyard/train
+	name = "train"
+	icon_state = "bridge"
+/area/ruin/whitesands/trainyard/cargo
+	name = "cargo"
+	icon_state = "mining"
+/area/ruin/whitesands/trainyard/dorm
+	name = "dorm"
+	icon_state = "crew_quarters"
+/area/ruin/whitesands/trainyard/hangar
+	name = "hangar"
+	icon_state = "storage"
+/area/ruin/whitesands/trainyard/carriage
+	name = "carriage"
+	icon_state = "green"
+/area/ruin/whitesands/trainyard/checkpoint
+	name = "checkpoint"
+	icon_state = "red"
+/area/ruin/whitesands/trainyard/checkpoint/second
+	name = "checkpoint 2"
+	icon_state = "blue"
+/area/ruin/whitesands/trainyard/checkpoint/storage
+	name = "storage"
+	icon_state = "quartstorage"
+/area/ruin/whitesands/trainyard/checkpoint/control
+	name = "control room"
+	icon_state = "captain"
+
+// MARK: Moon
+/area/ruin/moon/yotastation/dorm
+	name = "control room"
+	icon_state = "captain"
+
+/area/ruin/moon/yotastation/rnd
+	name = "reserch"
+	icon_state = "toxlab"
+
+/area/ruin/moon/yotastation/robotics
+	name = "robotics"
+	icon_state = "medresearch"
+
+/area/ruin/moon/yotastation/dorm
+	name = "dorm"
+	icon_state = "crew_quarters"
+
+
+/area/ruin/moon/yotastation/atmos
+	name = "Atmos"
+	icon_state = "atmos"
+
+/area/ruin/moon/yotastation/atmos2
+	name = "Atmos2"
+	icon_state = "atmos"
+
+/area/ruin/moon/yotastation/engineering
+	name = "engineering"
+	icon_state = "eng"
+
+/area/ruin/moon/yotastation/bridge
+	name = "bridge"
+	icon_state = "bridge"
+
+/area/ruin/moon/yotastation/brig
+	name = "security"
+	icon_state = "security"
+
+/area/ruin/moon/yotastation/cargo
+	name = "cargo"
+	icon_state = "cargo_1"
+
+/area/ruin/moon/yotastation/armory
+	name = "Armory"
+	icon_state = "armory"
+
+/area/ruin/moon/yotastation/biochamberice
+	name = "biochamber-ice"
+	icon_state = "general"
+
+/area/ruin/moon/yotastation/biochamberforest
+	name = "biochamber-forest"
+	icon_state = "general"
+
+/area/ruin/moon/yotastation/biochamberjungle
+	name = "biochamber-jungle"
+	icon_state = "general"
+
+/area/ruin/moon/yotastation/biochamberforest2
+	name = "biochamber-forest2"
+	icon_state = "general"
+
+/area/ruin/moon/yotastation/dorm2
+	name = "dorm2"
+	icon_state = "crew_quarters"
+
+/area/ruin/moon/yotastation/medbayholl
+	name = "medbay-holl"
+	icon_state = "med_1"
+
+/area/ruin/moon/yotastation/medbay
+	name = "medbay"
+	icon_state = "med_1"
+
+/area/ruin/moon/yotastation/eva
+	name = "eva"
+	icon_state = "Sleep"
+
+/area/ruin/moon/yotastation/circleholl1
+	name = "circle-holl1"
+	icon_state = "crew_quarters"
+
+/area/ruin/moon/yotastation/cencomm
+	name = "centralcomm"
+	icon_state = "crew_quarters"
+
+/area/ruin/moon/lunar_dispersal/manufactory
+	name = "manufactory"
+	icon_state = "cargo_1"
+
+/area/ruin/moon/lunar_dispersal/ambry
+	name = "ambry"
+	icon_state = "general"
+
+/area/ruin/moon/lunar_dispersal/surveillancecenter
+	name = "surveillance center"
+	icon_state = "bridge"
+
+/area/ruin/moon/lunar_dispersal/reservoir
+	name = "reservoir"
+	icon_state = "atmos"
+
+/area/ruin/moon/lunar_dispersal/mutiny
+	name = "mutiny"
+	icon_state = "security"
+
