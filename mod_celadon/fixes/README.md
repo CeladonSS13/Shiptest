@@ -307,8 +307,17 @@ FIXES_MEDBOT_RUNTIME_PATH_NULL - Добавляем проверки на null �
 FIXES_HOODED_ICONS
 - 'code/modules/clothing/suits/toggles.dm'
 
+FIXES_LOCKER_RECHARGE_ENERGYGUN
+- `code/modules/projectiles/guns/energy.dm` : перед падением проверяется, может ли оружие в принципе выстрельнуть без батареи
+
+FIX_BEAM_EMMITER_IGNITE
+- 'code/modules/projectiles/projectile/beams.dm' : Добавляем проверку ан генератор поля. Если он есть, то пол не поджигается
+
 FIXES_AGENT_CARD
 - `code/game/objects/items/cards_ids.dm` : Тут переместил копирование и дополнил копирование доступов после проверки всех условий
+
+FIXES_AGENT_CARD_NAME
+- `code/game/objects/items/cards_ids.dm` : Фиксим отображение меты инфы по карте агента. Теперь можно не бояться что вас 
 
 FIX_TOGGLE_DEAD_OOC
 - 'code/modules/client/verbs/ooc.dm' : добавляем вывод в чат о том что кнопка среагировала
@@ -323,6 +332,9 @@ FIXES_PHYSICS_AMMO_CASING
 - `mod_celadon/fixes/code/ammo.dm`								: тут прок на то чтобы останавливать физику патрона\гильзы если ты поймал её в руку 
 - `code/modules/projectiles/guns/ballistic.dm`					: тут прок на то чтобы останавливать физику патрона\гильзы если ты вставил её в оружие
 - `code/modules/projectiles/boxes_magazines/_box_magazine.dm`	: тут прок на то чтобы останавливать физику Патрона\гильзы если ты вставил её в обойму
+
+FIXES_LONG_RELOAD_AMMO
+- `code/modules/projectiles/boxes_magazines/_box_magazine.dm` : Прерывает зарядку патронами, если игрок отойдет на растояние. Явно указываю параметр target для do_after чтобы проверка расстояния работала корректно
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
