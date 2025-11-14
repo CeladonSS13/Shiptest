@@ -330,6 +330,9 @@ FIXES_CRAFT_MENU
 
 FIXES_LONG_RELOAD_AMMO
 - `code/modules/projectiles/boxes_magazines/_box_magazine.dm` : Прерывает зарядку патронами, если игрок отойдет на растояние. Явно указываю параметр target для do_after чтобы проверка расстояния работала корректно
+
+FIXES_DRESSER
+- `code/game/objects/structures/dresser.dm` : Изменил на возвращение TRUE по завершению операций вместо вызова родителя . = ..()
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
