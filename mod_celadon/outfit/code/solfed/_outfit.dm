@@ -218,6 +218,28 @@
 	. = ..()
 	get_solfed_captain_access(H)
 
+/datum/outfit/job/cel/solfed/intelof
+	name = "SF - Intellegence Officer"
+	job_icon = "sf_komandant"
+
+	jobtype = /datum/job/captain
+
+	id = /obj/item/card/id
+	gloves = /obj/item/clothing/gloves/color/white
+	uniform = /obj/item/clothing/under/rank/security/detective/grey
+	suit = /obj/item/clothing/suit/toggle/lawyer/charcoal
+	neck = /obj/item/clothing/neck/tie/black
+	dcoat = null
+	glasses = /obj/item/clothing/glasses/sunglasses
+	head = null
+	accessory = null
+
+	satchel = /obj/item/storage/backpack/satchel/leather
+
+/datum/outfit/job/cel/solfed/captain/post_equip(mob/living/carbon/human/H)
+	. = ..()
+	get_solfed_captain_access(H)
+
 /datum/outfit/job/cel/solfed/captain/admiral
 	name = "SF - Flottenadmiral"
 	job_icon = "sf_admiral"

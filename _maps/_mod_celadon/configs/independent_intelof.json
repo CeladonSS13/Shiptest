@@ -1,0 +1,25 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Clandestine-class Observing Corvette",
+	"map_short_name": "Clandestine",
+	"description": "ОТСУТСТВУЮТ ДАННЫЕ, ОБРАТИТЕСЬ В СООТВЕТСТВУЮЩИЕ СЛУЖБЫ.",
+	"map_path": "_maps/_mod_celadon/shuttles/independent/independent_intelof.dmm",
+	"enabled": false,
+	"limit": 1,
+	"sensor_range": 6,
+	"prefix": "ISV",
+	"faction": "/datum/faction/independent",
+	"tags": [
+		"Особый"
+	],
+	"namelists": [
+		"SOLFED"
+	],
+	"job_slots": {
+	"Intellegence Officer": {
+        "outfit": "/datum/outfit/job/cel/solfed/intelof",
+        "officer": true,
+        "slots": 1
+    }
+}
+}
