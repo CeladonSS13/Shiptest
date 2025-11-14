@@ -722,6 +722,10 @@
 		to_chat(src, span_danger("You fail to grasp your [grasped_part.name]."))
 		return
 
+	// [CELADON-ADD] - FIXES_CQC_GRAB
+	if(!grasped_part.get_part_bleed_rate())
+		return
+	// [/CELADON-ADD]
 	var/obj/item/self_grasp/grasp = new
 	if(starting_hand_index != active_hand_index || !put_in_active_hand(grasp))
 		to_chat(src, span_danger("You fail to grasp your [grasped_part.name]."))
