@@ -24,7 +24,6 @@
 /obj/item/ammo_box/magazine/co9mm,
 /obj/item/ammo_box/magazine/co9mm,
 /obj/item/gun/ballistic/automatic/pistol/commander/no_mag,
-/obj/item/gun/energy/e_gun/mini,
 /obj/item/stock_parts/cell/gun,
 /obj/item/clothing/head/nanotrasen/beret/security,
 /obj/item/gun/energy/e_gun,
@@ -5122,11 +5121,6 @@
 	pixel_x = 8;
 	pixel_y = 8
 	},
-/obj/item/reagent_containers/glass/bottle{
-	list_reagents = list(/datum/reagent/medicine/thializid=30);
-	name = "thializid bottle";
-	pixel_x = 5
-	},
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 4
 	},
@@ -7769,7 +7763,7 @@
 "YH" = (
 /obj/structure/table,
 /obj/effect/turf_decal/siding/wood,
-/obj/item/trash/plate,
+/obj/item/trash/chips,
 /turf/open/floor/wood,
 /area/ship/crew/canteen)
 "YI" = (

@@ -14,6 +14,7 @@
 #define FACTION_ELYSIUM "Elysium"
 #define FACTION_EVENT "Event"
 #define FACTION_PIRATES "Pirates"
+#define FACTION_UNKNOWN "Unknown"
 
 #define FACTION_RAMZI "Ramzi Clique"
 #define FACTION_SRM "Saint-Roumain Militia"

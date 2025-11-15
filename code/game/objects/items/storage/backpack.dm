@@ -556,7 +556,7 @@
 /obj/item/storage/backpack/duffelbag/syndie/hitman/PopulateContents()
 	new /obj/item/clothing/under/suit/black(src)
 	new /obj/item/clothing/accessory/waistcoat(src)
-	new /obj/item/clothing/suit/toggle/lawyer/black(src)
+	new /obj/item/clothing/suit/lawyer/charcoal(src)
 	new /obj/item/clothing/shoes/laceup(src)
 	new /obj/item/clothing/gloves/color/black(src)
 	new /obj/item/clothing/glasses/sunglasses(src)
@@ -690,7 +690,7 @@
 	new /obj/item/ammo_box/magazine/m9mm_rattlesnake(src)
 	new /obj/item/ammo_box/magazine/m9mm_rattlesnake(src)
 	new /obj/item/reagent_containers/food/drinks/bottle/vodka/badminka(src)
-	new /obj/item/reagent_containers/hypospray/medipen/stimulants(src)
+	new /obj/item/reagent_containers/hypospray/medipen/combat_drug(src)
 	new /obj/item/grenade/syndieminibomb(src)
 
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN

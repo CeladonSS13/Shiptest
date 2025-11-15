@@ -535,7 +535,7 @@
 		if(9)//Now's your chance to be a [[BIG SHOT]]
 			visible_message(span_userdanger("You hear the sound of big money and bigger avarice."))
 			playsound(loc,'sound/lavaland/cursed_slot_machine_jackpot.ogg', 150, FALSE, 50, TRUE, TRUE)
-			new /obj/structure/cursed_slot_machine(loc)
+			// new /obj/structure/cursed_slot_machine(loc)	[RIP]
 			if(prob(35))
 				new /obj/item/spacecash/bundle/mediumrand(loc)
 				new /obj/item/spacecash/bundle/mediumrand(loc)

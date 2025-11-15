@@ -1672,10 +1672,6 @@
 /obj/item/storage/pill_bottle/charcoal/less{
 	pixel_x = -9
 	},
-/obj/item/reagent_containers/glass/bottle{
-	list_reagents = list(/datum/reagent/medicine/thializid=30);
-	name = "thializid bottle"
-	},
 /obj/item/reagent_containers/glass/bottle/formaldehyde{
 	pixel_x = 6;
 	pixel_y = 8
@@ -1736,7 +1732,6 @@
 /obj/effect/turf_decal/siding/wood,
 /obj/item/clothing/under/nanotrasen/officer,
 /obj/item/clothing/under/nanotrasen/officer/skirt,
-/obj/item/gun/energy/e_gun/mini,
 /obj/item/clothing/head/nanotrasen/officer/fedora,
 /obj/item/clothing/head/nanotrasen/officer,
 /obj/item/radio/headset/nanotrasen,
@@ -3451,7 +3446,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/opaque/green/mono,
-/obj/machinery/grill,
+/obj/machinery/griddle,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen/kitchen)
 "wZ" = (
@@ -5963,7 +5958,6 @@
 /obj/item/clothing/head/nanotrasen/beret/security/command,
 /obj/item/clothing/suit/armor/nanotrasen/sec_director,
 /obj/item/radio/headset/nanotrasen/alt,
-/obj/item/gun/energy/e_gun/hos,
 /turf/open/floor/carpet/red_gold,
 /area/ship/general/command_crew/hos)
 "QU" = (
@@ -5976,7 +5970,7 @@
 /area/ship/hallway/central)
 "QY" = (
 /obj/structure/closet/crate/bin,
-/obj/item/trash/plate,
+/obj/item/trash/chips,
 /obj/machinery/firealarm/directional/west,
 /obj/effect/turf_decal/corner/opaque/ntblue/border{
 	dir = 10

@@ -12,7 +12,7 @@
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
 	suit = /obj/item/clothing/suit/armor/nanotrasen/captain/parade
-	suit_store = /obj/item/gun/ballistic/revolver/mateba
+	suit_store = /obj/item/gun/ballistic/revolver/rhino
 	head = /obj/item/clothing/head/nanotrasen/captain/peaked
 	glasses = /obj/item/clothing/glasses/sunglasses
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain

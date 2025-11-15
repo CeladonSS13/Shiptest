@@ -465,7 +465,7 @@
 	if (M.stat != DEAD)
 		// Heal them up - gets them out of crit/soft crit. If omnizine is removed in the future, this needs to be replaced with a
 		// method of healing them, consequence free, to a reasonable amount of health.
-		M.reagents.add_reagent(/datum/reagent/medicine/omnizine, 20)
+		// M.reagents.add_reagent(/datum/reagent/consumable/omnizine, 20) [RIP] 30.10.2025
 
 		M.flash_act()
 		M.confused += 10
