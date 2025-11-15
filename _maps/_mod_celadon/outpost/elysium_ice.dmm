@@ -3142,10 +3142,10 @@
 /obj/structure/guncloset{
 	anchored = 1
 	},
-/obj/item/gun/energy/e_gun/smg{
+/obj/item/gun/energy/e_gun{
 	pixel_y = 10
 	},
-/obj/item/gun/energy/e_gun/smg{
+/obj/item/gun/energy/e_gun{
 	pixel_y = 4
 	},
 /obj/item/gun/energy/e_gun/iot{
@@ -5009,7 +5009,7 @@
 /obj/item/soap/syndie,
 /obj/structure/closet/crate/wooden,
 /obj/item/reagent_containers/food/drinks/breakawayflask/vintage/icewine,
-/obj/item/reagent_containers/glass/bottle/antitoxin,
+/obj/item/reagent_containers/glass/bottle/charcoal,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "daN" = (
@@ -11329,7 +11329,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 4
 	},
-/obj/item/trash/plate{
+/obj/item/trash/chips{
 	pixel_x = 5;
 	pixel_y = -5
 	},
@@ -19154,7 +19154,6 @@
 /area/outpost/exterior)
 "loH" = (
 /obj/structure/closet/secure_closet/freezer/meat,
-/obj/item/food/meat/slab/human/mutant/lizard,
 /obj/item/food/meat/slab/human/mutant/ethereal,
 /obj/item/food/meat/slab/human/mutant/fly,
 /obj/item/food/meat/slab/human/mutant/moth,
@@ -19162,7 +19161,7 @@
 /obj/item/food/meat/slab/human/mutant/riol,
 /obj/item/food/meat/slab/human/mutant/shadow,
 /obj/item/food/meat/slab/human/mutant/skeleton,
-/obj/item/food/meat/slab/human/mutant/slime,
+/obj/item/food/meat/slab,
 /obj/item/food/meat/slab/human/mutant/spider,
 /obj/item/food/meat/slab/human/mutant/tajara,
 /obj/item/food/meat/slab/human/mutant/zombie,
@@ -22799,7 +22798,7 @@
 /obj/item/storage/fancy/cigarettes/cigpack_midori,
 /obj/item/storage/fancy/cigarettes/cigpack_mindbreaker,
 /obj/item/storage/fancy/cigarettes/cigpack_syndicate,
-/obj/item/storage/fancy/cigarettes/cigpack_xeno,
+/obj/item/storage/fancy/cigarettes/cigpack_cannabis,
 /obj/item/storage/fancy/cigarettes/derringer/gold,
 /obj/structure/closet/crate/trashcart,
 /obj/effect/spawner/random/food_or_drink,
@@ -25349,10 +25348,7 @@
 	pixel_x = -10
 	},
 /obj/structure/fluff,
-/obj/item/reagent_containers/glass/bottle/antitoxin{
-	pixel_y = 7;
-	pixel_x = -6
-	},
+/obj/item/reagent_containers/glass/bottle/charcoal,
 /obj/effect/spawner/random/maintenance/two,
 /turf/open/floor/wood/walnut{
 	planetary_atmos = 1
@@ -26215,7 +26211,7 @@
 "prL" = (
 /obj/item/pickaxe/rusted,
 /obj/structure/closet/crate/wooden,
-/obj/item/reagent_containers/glass/bottle/antitoxin,
+/obj/item/reagent_containers/glass/bottle/charcoal,
 /obj/item/storage/ration/pepper_jack_beef_patty,
 /obj/item/storage/ration/pepper_jack_beef_patty,
 /turf/open/floor/plating/asteroid/icerock/temperate,
@@ -27358,7 +27354,6 @@
 	},
 /area/outpost/crew/cryo)
 "qcB" = (
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/kelotane,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "qcV" = (
@@ -31299,10 +31294,10 @@
 /obj/structure/spider/stickyweb{
 	color = "#808080"
 	},
-/obj/item/reagent_containers/glass/bottle/antitoxin,
+/obj/item/reagent_containers/glass/bottle/charcoal,
 /obj/structure/closet/crate/wooden,
-/obj/item/reagent_containers/glass/bottle/antitoxin,
-/obj/item/reagent_containers/glass/bottle/antitoxin,
+/obj/item/reagent_containers/glass/bottle/charcoal,
+/obj/item/reagent_containers/glass/bottle/charcoal,
 /obj/effect/spawner/random/salvage,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
@@ -34323,7 +34318,6 @@
 	},
 /area/outpost/vacant_rooms/trash_factory)
 "ugo" = (
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/antitoxin,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "ugJ" = (

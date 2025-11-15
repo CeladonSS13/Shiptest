@@ -306,6 +306,39 @@ FIXES_MEDBOT_RUNTIME_PATH_NULL - Добавляем проверки на null �
 
 FIXES_HOODED_ICONS
 - 'code/modules/clothing/suits/toggles.dm'
+
+FIXES_LOCKER_RECHARGE_ENERGYGUN
+- `code/modules/projectiles/guns/energy.dm` : перед падением проверяется, может ли оружие в принципе выстрельнуть без батареи
+
+FIX_BEAM_EMMITER_IGNITE
+- 'code/modules/projectiles/projectile/beams.dm' : Добавляем проверку ан генератор поля. Если он есть, то пол не поджигается
+
+FIXES_AGENT_CARD
+- `code/game/objects/items/cards_ids.dm` : Тут переместил копирование и дополнил копирование доступов после проверки всех условий
+
+FIXES_AGENT_CARD_NAME
+- `code/game/objects/items/cards_ids.dm` : Фиксим отображение меты инфы по карте агента. Теперь можно не бояться что вас 
+
+FIX_TOGGLE_DEAD_OOC
+- 'code/modules/client/verbs/ooc.dm' : добавляем вывод в чат о том что кнопка среагировала
+
+FIXES_PARROT_DROP_ITEM
+- `code/modules/mob/living/simple_animal/parrot.dm` : Теперь предметы с поли будут выпадать с его смертью, ане удаляться навеки веков
+
+FIXES_CRAFT_MENU
+- `code/datums/components/crafting/crafting.dm` : Обновляем меню крафта автоматически, не в ручную же это делать
+
+FIXES_LONG_RELOAD_AMMO
+- `code/modules/projectiles/boxes_magazines/_box_magazine.dm` : Прерывает зарядку патронами, если игрок отойдет на растояние. Явно указываю параметр target для do_after чтобы проверка расстояния работала корректно
+
+FIXES_DRESSER
+- `code/game/objects/structures/dresser.dm` : Изменил на возвращение TRUE по завершению операций вместо вызова родителя . = ..()
+
+FIXES_CARDS_DRAW_RANDOM
+- `code/game/objects/items/toys.dm`	: Меняем взятие с первой позиции на рандомную
+
+FIXES_CQC_GRAB
+- `code/modules/mob/living/carbon/carbon_defense.dm` : Останавливаем захват по самому себе, проверяем что кровотечение уже есть на конечностях. Ну блиид там. Короче странный сикуси момент
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

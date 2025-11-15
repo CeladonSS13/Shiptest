@@ -131,7 +131,7 @@
 			M.force_scream()
 		M.adjust_bodytemperature(333)
 		M.adjust_fire_stacks(5)
-		M.IgniteMob()
+		M.ignite_mob()
 	if(!isopenturf(targets_turf))
 		return
 	targets_turf.ignite_turf(rand(4,11), "red")

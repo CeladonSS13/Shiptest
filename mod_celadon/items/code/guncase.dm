@@ -87,12 +87,6 @@ MARK: InteQ guncases
 /obj/item/ammo_box/magazine/smgm10mm/empty
 	start_empty = TRUE
 
-/obj/item/storage/guncase/commander/inteq
-/obj/item/storage/guncase/commander/inteq/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/pistol/commander/inteq/no_mag(src)
-	new /obj/item/ammo_box/magazine/co9mm/empty(src)
-	new /obj/item/ammo_box/magazine/co9mm/empty(src)
-
 /obj/item/storage/guncase/horizonx/inteq
 /obj/item/storage/guncase/horizonx/inteq/PopulateContents()
 	new /obj/item/gun/ballistic/revolver/horizonx/no_mag(src)
@@ -172,11 +166,6 @@ MARK: Syndicate guncases
 MARK: Nanotrasen guncases
 */
 
-/obj/item/storage/guncase/etar_smg
-/obj/item/storage/guncase/etar_smg/PopulateContents()
-	new /obj/item/gun/energy/e_gun/smg(src)
-	new /obj/item/stock_parts/cell/gun/empty(src)
-
 /obj/item/gun/energy/e_gun/hades/empty_cell
 	spawn_no_ammo = TRUE
 
@@ -191,11 +180,6 @@ MARK: Nanotrasen guncases
 	new /obj/item/gun/energy/e_gun(src)
 	new /obj/item/stock_parts/cell/gun/empty(src)
 	new /obj/item/stock_parts/cell/gun/empty(src)
-
-/obj/item/storage/guncase/miniegun
-/obj/item/storage/guncase/miniegun/PopulateContents()
-	new /obj/item/gun/energy/e_gun/mini(src)
-	new /obj/item/stock_parts/cell/gun/mini/empty(src)
 
 /obj/item/storage/guncase/iot
 /obj/item/storage/guncase/iot/PopulateContents()

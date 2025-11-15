@@ -8,7 +8,7 @@
 	products = list(
 		/obj/item/food/pizza/meat/rinmeat = 3,
 		/obj/item/food/pizza/margherita = 3,
-		/obj/item/food/pizza/sassysage = 3,
+		/obj/item/food/pizza/sausage,
 		/obj/item/food/pizza/pineapple/rinapple = 3)
 
 	refill_canister = /obj/item/vending_refill/pizzamat

@@ -53,7 +53,6 @@
 			var/layer_4_path = selected_type ? text2path("/atom/movable/screen/parallax_layer/random/[selected_type]") : /atom/movable/screen/parallax_layer/random
 			var/atom/movable/screen/parallax_layer/layer_4 = new layer_4_path(null, current_client.view)
 			layer_4.alpha = 255
-			layer_4.blend_mode = BLEND_DEFAULT
 			current_client.parallax_layers_cached += layer_4
 		// Обязательные слои
 		// [/CELADON-EDIT]
