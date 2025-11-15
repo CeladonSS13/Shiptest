@@ -1055,9 +1055,6 @@
 "cN" = (
 /turf/open/space/basic,
 /area/ruin/powered/hydroponicslab)
-"cP" = (
-/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
-/area/space)
 "cQ" = (
 /turf/open/floor/plating/asteroid/dirt,
 /area/space)
@@ -2868,9 +2865,9 @@
 /obj/item/reagent_containers/glass/bottle/thermite,
 /obj/item/reagent_containers/glass/bottle/nitroglycerin,
 /obj/item/reagent_containers/glass/bottle/epinephrine,
-/obj/item/reagent_containers/glass/bottle/bicaridine,
+/obj/item/reagent_containers/glass/bottle/indomide,
 /obj/item/reagent_containers/glass/bottle/kelotane,
-/obj/item/reagent_containers/glass/bottle/antitoxin,
+/obj/item/reagent_containers/glass/bottle/charcoal,
 /obj/item/reagent_containers/glass/bottle/dexalin,
 /obj/item/reagent_containers/glass/bottle/epinephrine/sleeper,
 /obj/item/reagent_containers/glass/bottle/bicaridine/sleeper,
@@ -2910,7 +2907,7 @@
 /obj/item/reagent_containers/hypospray/medipen/stimpack,
 /obj/item/reagent_containers/hypospray/medipen/stimpack/traitor,
 /obj/item/reagent_containers/hypospray/medipen/stimpack/crisis,
-/obj/item/reagent_containers/hypospray/medipen/stimulants,
+/obj/item/reagent_containers/hypospray/medipen/stimpack/crisis,
 /obj/item/reagent_containers/hypospray/medipen/morphine,
 /obj/item/reagent_containers/hypospray/medipen/oxandrolone,
 /obj/item/reagent_containers/hypospray/medipen/penacid,
@@ -2933,7 +2930,7 @@
 /obj/item/reagent_containers/glass/bottle/vial/small/preloaded/antitoxin,
 /obj/item/reagent_containers/glass/bottle/vial/small/preloaded/kelotane,
 /obj/item/reagent_containers/glass/bottle/vial/small/preloaded/dexalin,
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/tricord,
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/cureall,
 /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/CMO,
 /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/bicaridine,
 /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/antitoxin,
@@ -2974,7 +2971,7 @@
 /obj/item/reagent_containers/glass/mortar/mushroom,
 /obj/item/reagent_containers/pill/patch,
 /obj/item/reagent_containers/pill/patch/indomide,
-/obj/item/reagent_containers/pill/patch/silver_sulf,
+/obj/item/reagent_containers/pill/patch/alvitane,
 /obj/item/reagent_containers/pill/patch/synthflesh,
 /obj/item/reagent_containers/pill,
 /obj/item/reagent_containers/pill/tox,
@@ -3004,7 +3001,7 @@
 /obj/item/reagent_containers/pill/potassiodide,
 /obj/item/reagent_containers/pill/three_eye,
 /obj/item/reagent_containers/pill/iron,
-/obj/item/reagent_containers/pill/trophazole,
+/obj/item/reagent_containers/pill/indomide,
 /obj/item/reagent_containers/spray/rhigoxane,
 /obj/item/reagent_containers/spray,
 /obj/item/reagent_containers/spray/cleaner,
@@ -3035,14 +3032,14 @@
 /obj/item/reagent_containers/syringe/bluespace,
 /obj/item/reagent_containers/syringe/piercing,
 /obj/item/reagent_containers/syringe/spider_extract,
-/obj/item/reagent_containers/syringe/oxandrolone,
+/obj/item/reagent_containers/syringe/ysiltane,
 /obj/item/reagent_containers/syringe/salacid,
 /obj/item/reagent_containers/syringe/penacid,
 /obj/item/reagent_containers/syringe/contraband,
 /obj/item/reagent_containers/syringe/contraband/space_drugs,
 /obj/item/reagent_containers/syringe/contraband/crank,
 /obj/item/reagent_containers/syringe/contraband/methamphetamine,
-/obj/item/reagent_containers/syringe/contraband/fentanyl,
+/obj/item/reagent_containers/syringe/contraband/morphine,
 /obj/item/reagent_containers/syringe/contraband/morphine,
 /obj/item/reagent_containers/syringe/thializid,
 /obj/item/reagent_containers/syringe/charcoal,
@@ -15073,7 +15070,7 @@ xJ
 cx
 TO
 oK
-cP
+cM
 vD
 GW
 rh
@@ -15125,7 +15122,7 @@ TL
 Vt
 hs
 WA
-cP
+cM
 aw
 DW
 rh
@@ -15177,7 +15174,7 @@ YG
 Ev
 Ab
 LK
-cP
+cM
 RP
 mV
 rh
@@ -15281,7 +15278,7 @@ hD
 ds
 pt
 UB
-cP
+cM
 NW
 rN
 rh
