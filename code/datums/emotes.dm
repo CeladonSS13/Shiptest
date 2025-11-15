@@ -136,7 +136,6 @@
 	// [CELADON-ADD] - CELADON_EMOTES
 	var/sound_volume = get_volume(user)
 	// [/CELADON-ADD]
-	var/tmp_sound = get_sound(user)
 	if(tmp_sound && (!only_forced_audio || !intentional))
 		// [CELADON-EDIT] - CELADON_EMOTES
 		// playsound(user, tmp_sound, 50, vary)	// CELADON-EDIT - ORIGINAL
