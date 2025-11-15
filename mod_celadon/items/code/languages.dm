@@ -102,9 +102,9 @@
 
 /datum/language_holder/lizard
 	understood_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
-								/datum/language/kalixcian_common = list(LANGUAGE_ATOM))
+								/datum/language/gezena_kalixcian = list(LANGUAGE_ATOM))
 	spoken_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
-							/datum/language/kalixcian_common = list(LANGUAGE_ATOM))
+							/datum/language/gezena_kalixcian = list(LANGUAGE_ATOM))
 
 /datum/language_holder/ipc
 	understood_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
@@ -120,9 +120,9 @@
 
 /datum/language_holder/ethereal
 	understood_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
-								/datum/language/kalixcian_common = list(LANGUAGE_ATOM))
+								/datum/language/gezena_kalixcian = list(LANGUAGE_ATOM))
 	spoken_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
-							/datum/language/kalixcian_common = list(LANGUAGE_ATOM))
+							/datum/language/gezena_kalixcian = list(LANGUAGE_ATOM))
 
 /datum/language_holder/kepori
 	understood_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),

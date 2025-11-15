@@ -1653,7 +1653,7 @@
 /area/ruin/asteroid/limafacility/dorm)
 "fQ" = (
 /obj/structure/table/reinforced/glass,
-/obj/item/food/pizza/donkpocket{
+/obj/item/food/donkpocket/pizza{
 	pixel_x = -1;
 	pixel_y = 4
 	},
@@ -2523,7 +2523,7 @@
 /turf/open/floor/plasteel/dark_2,
 /area/ruin/asteroid/limafacility/heavyzone)
 "iR" = (
-/obj/machinery/grill,
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/darkgreenfull/darkgreen,
 /area/ruin/asteroid/limafacility/dorm)
 "iU" = (
@@ -5044,7 +5044,7 @@
 	},
 /obj/machinery/vending/medical/syndicate_access{
 	all_items_free = 1;
-	products = list(/obj/item/stack/medical/gauze = 3, /obj/item/stack/medical/splint = 1, /obj/item/reagent_containers/syringe = 5, /obj/item/reagent_containers/dropper = 2, /obj/item/healthanalyzer = 2, /obj/item/reagent_containers/pill/patch/styptic = 1, /obj/item/reagent_containers/pill/patch/silver_sulf = 4, /obj/item/reagent_containers/hypospray/medipen = 0, /obj/item/reagent_containers/syringe/perfluorodecalin = 0, /obj/item/reagent_containers/syringe/antiviral = 1, /obj/item/reagent_containers/glass/bottle/charcoal = 2, /obj/item/reagent_containers/glass/bottle/epinephrine = 3, /obj/item/reagent_containers/glass/bottle/morphine = 1, /obj/item/reagent_containers/glass/bottle/potass_iodide = 1, /obj/item/reagent_containers/glass/bottle/salglu_solution = 3, /obj/item/reagent_containers/medigel/styptic = 0, /obj/item/reagent_containers/medigel/silver_sulf = 1, /obj/item/reagent_containers/medigel/synthflesh = 0, /obj/item/reagent_containers/medigel/sterilizine = 1, /obj/item/sensor_device = 0, /obj/item/pinpointer/crew = 1);
+	products = list(/obj/item/stack/medical/gauze = 3, /obj/item/stack/medical/splint = 1, /obj/item/reagent_containers/syringe = 5, /obj/item/reagent_containers/dropper = 2, /obj/item/healthanalyzer = 2, /obj/item/reagent_containers/pill/patch/indomide = 1, /obj/item/reagent_containers/pill/patch/alvitane = 4, /obj/item/reagent_containers/hypospray/medipen = 0, /obj/item/reagent_containers/syringe/charcoal = 0, /obj/item/reagent_containers/syringe/antiviral = 1, /obj/item/reagent_containers/glass/bottle/charcoal = 2, /obj/item/reagent_containers/glass/bottle/epinephrine = 3, /obj/item/reagent_containers/glass/bottle/morphine = 1, /obj/item/reagent_containers/glass/bottle/potass_iodide = 1, /obj/item/reagent_containers/glass/bottle/salglu_solution = 3, /obj/item/reagent_containers/medigel/synthflesh = 0, /obj/item/reagent_containers/medigel/sterilizine = 1, /obj/item/sensor_device = 0, /obj/item/pinpointer/crew = 1);
 	premium = list(/obj/item/clothing/glasses/hud/health = 0, /obj/item/clothing/glasses/hud/health/prescription = 1, /obj/item/shears = 1, /obj/item/storage/box/hug/medical = 1)
 	},
 /turf/open/floor/plasteel/darkbluefull/darkblue{
@@ -14018,7 +14018,7 @@
 /obj/machinery/vending/medical/syndicate_access{
 	all_items_free = 1;
 	premium = list(/obj/item/clothing/glasses/hud/health = 0, /obj/item/clothing/glasses/hud/health/prescription = 0, /obj/item/shears = 1, /obj/item/storage/box/hug/medical = 1);
-	products = list(/obj/item/stack/medical/gauze = 0, /obj/item/stack/medical/splint = 0, /obj/item/reagent_containers/syringe = 5, /obj/item/reagent_containers/dropper = 2, /obj/item/healthanalyzer = 2, /obj/item/reagent_containers/pill/patch/styptic = 2, /obj/item/reagent_containers/pill/patch/silver_sulf = 0, /obj/item/reagent_containers/hypospray/medipen = 0, /obj/item/reagent_containers/syringe/perfluorodecalin = 0, /obj/item/reagent_containers/syringe/antiviral = 1, /obj/item/reagent_containers/glass/bottle/charcoal = 3, /obj/item/reagent_containers/glass/bottle/epinephrine = 1, /obj/item/reagent_containers/glass/bottle/morphine = 0, /obj/item/reagent_containers/glass/bottle/potass_iodide = 1, /obj/item/reagent_containers/glass/bottle/salglu_solution = 3, /obj/item/reagent_containers/medigel/styptic = 1, /obj/item/reagent_containers/medigel/silver_sulf = 0, /obj/item/reagent_containers/medigel/synthflesh = 0, /obj/item/reagent_containers/medigel/sterilizine = 1, /obj/item/sensor_device = 0, /obj/item/pinpointer/crew = 1)
+	products = list(/obj/item/stack/medical/gauze = 0, /obj/item/stack/medical/splint = 0, /obj/item/reagent_containers/syringe = 5, /obj/item/reagent_containers/dropper = 2, /obj/item/healthanalyzer = 2, /obj/item/reagent_containers/pill/patch/indomide = 2, /obj/item/reagent_containers/pill/patch/alvitane = 0, /obj/item/reagent_containers/hypospray/medipen = 0, /obj/item/reagent_containers/syringe/charcoal = 0, /obj/item/reagent_containers/syringe/antiviral = 1, /obj/item/reagent_containers/glass/bottle/charcoal = 3, /obj/item/reagent_containers/glass/bottle/epinephrine = 1, /obj/item/reagent_containers/glass/bottle/morphine = 0, /obj/item/reagent_containers/glass/bottle/potass_iodide = 1, /obj/item/reagent_containers/glass/bottle/salglu_solution = 3, /obj/item/reagent_containers/medigel/synthflesh = 0, /obj/item/reagent_containers/medigel/sterilizine = 1, /obj/item/sensor_device = 0, /obj/item/pinpointer/crew = 1)
 	},
 /turf/open/floor/plasteel/darkbluefull/darkblue{
 	dir = 8
@@ -14623,7 +14623,7 @@
 /area/ruin/asteroid/limafacility/heavyzone)
 "Yj" = (
 /obj/structure/table/wood/fancy/red_gold,
-/obj/item/food/toastedsandwich{
+/obj/item/food/grilled_cheese_sandwich{
 	pixel_y = 11;
 	pixel_x = 4
 	},

@@ -96,7 +96,7 @@
 	modifies_speech = TRUE
 	var/static/list/languages_possible_riol = typecacheof(list(
 		/datum/language/galactic_common,
-		/datum/language/kalixcian_common,
+		/datum/language/gezena_kalixcian,
 		/datum/language/codespeak,
 		/datum/language/monkey,
 		// /datum/language/narsie,

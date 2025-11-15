@@ -150,7 +150,7 @@
 		say("RRRAAAAWWWWRRRR!")
 		return ..()
 
-	if(M.a_intent == INTENT_HELP && M.real_name in tolerated)
+	if((M.a_intent == INTENT_HELP) && M.real_name in tolerated)
 		if(prob(20))
 			say("PRRRR")
 			manual_emote("purrs contentedly as [M] pets her")

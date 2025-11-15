@@ -165,7 +165,8 @@
 /datum/status_effect/hippocraticOath/proc/consume_owner()
 	owner.visible_message(span_notice("[owner]'s soul is absorbed into the rod, relieving the previous snake of its duty."))
 	var/mob/living/simple_animal/hostile/retaliate/poison/snake/healSnake = new(owner.loc)
-	var/list/chems = list(/datum/reagent/medicine/sal_acid, /datum/reagent/medicine/c2/convermol, /datum/reagent/medicine/oxandrolone)
+	// /datum/reagent/medicine/sal_acid, /datum/reagent/medicine/c2/convermol,  // [RIP] - выпилено
+	var/list/chems = list(/datum/reagent/medicine/ysiltane)
 	healSnake.poison_type = pick(chems)
 	healSnake.name = "Asclepius's Snake"
 	healSnake.real_name = "Asclepius's Snake"

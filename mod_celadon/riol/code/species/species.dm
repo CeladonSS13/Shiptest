@@ -19,8 +19,6 @@
 
 	disliked_food = VEGETABLES | FRUIT | GRAIN | GROSS
 	liked_food = MEAT | RAW | DAIRY
-	digitigrade_customization = DIGITIGRADE_OPTIONAL
-
 
 	attack_verb = "slash"
 	attack_sound = 'sound/weapons/slash.ogg'
@@ -85,21 +83,23 @@
 
 	bodytype = BODYTYPE_RIOL | BODYTYPE_ORGANIC
 
-	species_chest = /obj/item/bodypart/chest/riol
-	species_head = /obj/item/bodypart/head/riol
-	species_l_arm = /obj/item/bodypart/l_arm/riol
-	species_r_arm = /obj/item/bodypart/r_arm/riol
-	species_l_leg = /obj/item/bodypart/leg/left/riol
-	species_r_leg = /obj/item/bodypart/leg/right/riol
-	species_digi_l_leg = /obj/item/bodypart/leg/left/riol/digitigrade
-	species_digi_r_leg = /obj/item/bodypart/leg/right/riol/digitigrade
+	species_limbs = list(
+			BODY_ZONE_CHEST = /obj/item/bodypart/chest/riol,
+			BODY_ZONE_HEAD = /obj/item/bodypart/head/riol,
+			BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/riol,
+			BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/riol,
+			BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/riol/digitigrade,
+			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/riol/digitigrade,
+		)
 
-	species_robotic_chest = /obj/item/bodypart/chest/robot
-	species_robotic_head = /obj/item/bodypart/head/robot
-	species_robotic_l_arm = /obj/item/bodypart/l_arm/robot/surplus
-	species_robotic_r_arm = /obj/item/bodypart/r_arm/robot/surplus
-	species_robotic_l_leg = /obj/item/bodypart/leg/left/robot/surplus
-	species_robotic_r_leg = /obj/item/bodypart/leg/right/robot/surplus
+	species_robotic_limbs = list(
+			BODY_ZONE_CHEST =  /obj/item/bodypart/chest/robot,
+			BODY_ZONE_HEAD = /obj/item/bodypart/head/robot,
+			BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/robot/surplus,
+			BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/robot/surplus,
+			BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/robot/surplus/lizard/digitigrade,
+			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/robot/surplus/lizard/digitigrade,
+		)
 
 /datum/species/riol/random_name(gender = NEUTER, unique, lastname)
 	if(gender != MALE)

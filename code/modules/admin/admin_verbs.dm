@@ -402,7 +402,8 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 		log_admin("[key_name(usr)] admin ghosted.")
 		log_celadon_admin("ADMIN: [key_name(usr)] admin ghosted.") // [CELADON-ADD] - logging admin actions.
 		message_admins("[key_name_admin(usr)] admin ghosted.")
-		var/mob/body = mob
+		var/mob/living/body = mob
+		body.ignore_SSD = TRUE
 		body.ghostize(1)
 		init_verbs()
 		if(body && !body.key)

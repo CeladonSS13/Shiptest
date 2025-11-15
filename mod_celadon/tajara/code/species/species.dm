@@ -90,19 +90,23 @@
 
 	bodytype = BODYTYPE_TAJARA | BODYTYPE_ORGANIC
 
-	species_chest = /obj/item/bodypart/chest/tajara
-	species_head = /obj/item/bodypart/head/tajara
-	species_l_arm = /obj/item/bodypart/l_arm/tajara
-	species_r_arm = /obj/item/bodypart/r_arm/tajara
-	species_l_leg = /obj/item/bodypart/leg/left/tajara
-	species_r_leg = /obj/item/bodypart/leg/right/tajara
+	species_limbs = list(
+			BODY_ZONE_CHEST = /obj/item/bodypart/chest/tajara,
+			BODY_ZONE_HEAD = /obj/item/bodypart/head/tajara,
+			BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/tajara,
+			BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/tajara,
+			BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/tajara,
+			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/tajara,
+		)
 
-	species_robotic_chest = /obj/item/bodypart/chest/robot
-	species_robotic_head = /obj/item/bodypart/head/robot
-	species_robotic_l_arm = /obj/item/bodypart/l_arm/robot/surplus
-	species_robotic_r_arm = /obj/item/bodypart/r_arm/robot/surplus
-	species_robotic_l_leg = /obj/item/bodypart/leg/left/robot/surplus
-	species_robotic_r_leg = /obj/item/bodypart/leg/right/robot/surplus
+	species_robotic_limbs = list(
+			BODY_ZONE_CHEST =  /obj/item/bodypart/chest/robot,
+			BODY_ZONE_HEAD = /obj/item/bodypart/head/robot,
+			BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/robot/surplus,
+			BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/robot/surplus,
+			BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/robot/surplus,
+			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/robot/surplus,
+		)
 
 /datum/species/tajara/random_name(gender,unique,lastname)
 	//code by @valtor0

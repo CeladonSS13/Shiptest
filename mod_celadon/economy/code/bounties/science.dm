@@ -63,4 +63,4 @@
 	name = "Advanced Energy Gun"
 	description = "With the price of rechargers on the rise, upper management is interested in purchasing guns that are self-powered. If you ship one, they'll pay."
 	reward = 10000
-	wanted_types = list(/obj/item/gun/energy/e_gun/nuclear)
+	wanted_types = list(/obj/item/gun/energy/e_gun)

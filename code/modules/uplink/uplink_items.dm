@@ -1406,14 +1406,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/healthanalyzer/rad_laser
 	cost = 3
 
-/datum/uplink_item/device_tools/stimpack
-	name = "Stimpack"
-	desc = "Stimpacks, the tool of many great heroes, make you nearly immune to stuns and knockdowns for about \
-			5 minutes after injection."
-	item = /obj/item/reagent_containers/hypospray/medipen/stimulants
-	cost = 5
-	surplus = 90
-
 /datum/uplink_item/device_tools/medkit
 	name = "Syndicate Combat Medic Kit"
 	desc = "This first aid kit is a suspicious brown and red. Included is a combat stimulant injector \
@@ -1676,16 +1668,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	illegal_tech = FALSE
 // [/CELADON-ADD]
 
-/datum/uplink_item/role_restricted/spider_injector
-	name = "Australicus Slime Mutator"
-	desc = "Crikey mate, it's been a wild travel from the Australicus sector but we've managed to get \
-			some special spider extract from the giant spiders down there. Use this injector on a gold slime core \
-			to create a few of the same type of spiders we found on the planets over there. They're a bit tame until you \
-			also give them a bit of sentience though."
-	item = /obj/item/reagent_containers/syringe/spider_extract
-	cost = 10
-	restricted_roles = list("Research Director", "Scientist", "Roboticist")
-
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /datum/uplink_item/role_restricted/clowncar
 	name = "Clown Car"
@@ -1724,15 +1706,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	restricted_roles = list("Botanist")
 	cost = 14
 	item = /obj/vehicle/ridden/lawnmower/emagged
-
-/datum/uplink_item/role_restricted/explosive_hot_potato
-	name = "Exploding Hot Potato"
-	desc = "A potato rigged with explosives. On activation, a special mechanism is activated that prevents it from being dropped. \
-			The only way to get rid of it if you are holding it is to attack someone else with it, causing it to latch to that person instead."
-	item = /obj/item/hot_potato/syndicate
-	cost = 4
-	surplus = 0
-	restricted_roles = list("Cook", "Botanist", "Clown", "Mime")	//restricted_roles = list("Cook", "Botanist")	// [CELADON-EDIT] - CELADON_RETURN_CONTENT_CLOWNS
 
 /datum/uplink_item/role_restricted/ez_clean_bundle
 	name = "EZ Clean Grenade Bundle"
@@ -1851,7 +1824,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/badass/syndiecigs
 	name = "Syndicate Smokes"
-	desc = "Strong flavor, dense smoke, infused with omnizine."
+	desc = "Strong flavor, dense smoke, infused with panacea."
 	item = /obj/item/storage/fancy/cigarettes/cigpack_syndicate
 	cost = 2
 	illegal_tech = FALSE

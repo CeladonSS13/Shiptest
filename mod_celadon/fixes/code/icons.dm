@@ -17,3 +17,11 @@
 
 /obj/item/gun/energy/pulse/carbine
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob.dmi'
+
+/obj/item/clothing/suit/space/hardsuit/cult
+	icon_state = "cult_armor"
+	item_state = "cult_armor"
+
+/obj/item/clothing/head/helmet/space/hardsuit/cult
+	icon_state = "cult_helmet"
+	item_state = "cult_helmet"

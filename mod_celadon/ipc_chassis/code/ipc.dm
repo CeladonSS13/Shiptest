@@ -21,7 +21,6 @@
 /datum/sprite_accessory/ipc_chassis/cpu4mu
 	name = "CPU 4 MU"
 	limbs_id = "cpu4mu"
-	has_screen = FALSE
 
 /datum/sprite_accessory/ipc_chassis/hephaestus_main
 	name = "Hephaestus AC"

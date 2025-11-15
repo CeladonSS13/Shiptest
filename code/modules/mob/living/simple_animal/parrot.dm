@@ -63,7 +63,7 @@
 	friendly_verb_continuous = "grooms"
 	friendly_verb_simple = "groom"
 	mob_size = MOB_SIZE_SMALL
-	movement_type = FLYING
+	is_flying_animal = TRUE
 
 	var/parrot_damage_upper = 10
 	var/parrot_state = PARROT_WANDER //Hunt for a perch when created
@@ -126,7 +126,11 @@
 	if(ears)
 		QDEL_NULL(ears)
 	if(held_item)
-		QDEL_NULL(held_item)
+		// [CELADON-EDIT] - FIXES_PARROT_DROP_ITEM
+		// QDEL_NULL(held_item)	// ORIGINAL
+		held_item.forceMove(drop_location())
+		held_item = null
+		// [/CELADON-EDIT]
 
 	set_perch(null)
 	set_interest(null)

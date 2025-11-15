@@ -32,7 +32,7 @@
 	l_pocket = /obj/item/restraints/handcuffs
 	r_pocket = /obj/item/melee/baseball_bat/homerun/central_command
 	box = /obj/item/storage/box/survival/security
-	suit_store = /obj/item/gun/ballistic/revolver/mateba
+	suit_store = /obj/item/gun/ballistic/revolver/rhino
 	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
 
 	back = /obj/item/storage/backpack/security
@@ -64,7 +64,7 @@
 	l_pocket = /obj/item/restraints/handcuffs
 	r_pocket = /obj/item/melee/baseball_bat/homerun/central_command
 	box = /obj/item/storage/box/survival/security
-	suit_store = /obj/item/gun/ballistic/revolver/mateba
+	suit_store = /obj/item/gun/ballistic/revolver/rhino
 	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
 	id = /obj/item/card/id/cel/elysium_com
 
@@ -172,7 +172,7 @@
 	glasses = /obj/item/clothing/glasses/thermal/syndi/admin
 	mask = /obj/item/clothing/mask/cigarette/cigar/cohiba
 	head = /obj/item/clothing/head/turban_elysium/admin
-	belt = /obj/item/gun/ballistic/revolver/mateba
+	belt = /obj/item/gun/ballistic/revolver/rhino
 	r_pocket = /obj/item/lighter
 	l_pocket = /obj/item/melee/baseball_bat/homerun/central_command
 	back = /obj/item/storage/backpack/satchel/leather
