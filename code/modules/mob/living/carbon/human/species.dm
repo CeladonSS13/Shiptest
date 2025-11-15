@@ -392,12 +392,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			QDEL_NULL(old)
 		I.Insert(C)
 
-/datum/species/proc/is_digitigrade(mob/living/carbon/leg_haver)
-	// [CELADON-EDIT] - CELADON_RIOL
-	// return (digitigrade_customization == DIGITIGRADE_OPTIONAL && (leg_haver.dna.features["legs"] == "Digitigrade Legs") || digitigrade_customization == DIGITIGRADE_FORCED		// CELADON-EDIT - ORIGINAL
-	return (digitigrade_customization == DIGITIGRADE_OPTIONAL && (leg_haver.dna.features["legs"] == "Digitigrade Legs" || leg_haver.dna.features["riol_legs"] == "Digitigrade Legs")) || digitigrade_customization == DIGITIGRADE_FORCED
-	// [/CELADON-EDIT]
-
 /datum/species/proc/replace_body(mob/living/carbon/C, datum/species/old_species, datum/species/new_species, robotic = FALSE)
 	new_species ||= C.dna.species //If no new species is provided, assume its src.
 	//Note for future: Potentionally add a new C.dna.species() to build a template species for more accurate limb replacement
