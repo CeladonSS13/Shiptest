@@ -109,8 +109,7 @@
 	name = "Exotic Meat Crate"
 	desc = "The best cuts in the whole sector. Probably."
 	cost = 500
-	contains = list(/obj/item/food/meat/slab/human/mutant/slime,
-					/obj/item/food/meat/slab/killertomato,
+	contains = list(/obj/item/food/meat/slab/killertomato,
 					/obj/item/food/meat/slab/bear,
 					/obj/item/food/meat/slab/xeno,
 					/obj/item/food/meat/slab/spider,
