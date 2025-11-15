@@ -105,6 +105,7 @@
 	premium = list()
 	voucher_items = list(
 		"Tactical Energy Gun" = /obj/item/gun/energy/sharplite/al655,
+		"Tactical Old Energy Gun" = /obj/item/gun/energy/e_gun/e_old/hades,	// [CELADON-ADD] - CELADON_RETURN_EGUN
 		"Combat Shotgun" = /obj/item/gun/ballistic/shotgun/automatic/m11)
 
 /obj/machinery/vending/security/marine/syndicate
@@ -154,6 +155,10 @@
 		)
 
 	voucher_items = list(
+		"SL AL-655 Energy Rifle" = /obj/item/gun/energy/e_gun/e_old/hades,	// [CELADON-ADD] - CELADON_RETURN_EGUN
+		"NT-E-Rifle" = /obj/item/gun/energy/e_gun/e_old,	// [CELADON-ADD] - CELADON_RETURN_EGUN
+		"E-TAR SMG" = /obj/item/gun/energy/e_gun/e_old/smg,	// [CELADON-ADD] - CELADON_RETURN_EGUN
+		"E-SG 500" = /obj/item/gun/energy/e_gun/e_old/iot,	// [CELADON-ADD] - CELADON_RETURN_EGUN
 		"SL AL-655 Energy Rifle" = /obj/item/gun/energy/sharplite/al655,
 		"NT-E-Rifle" = /obj/item/gun/energy/sharplite/x12,
 		"E-TAR SMG" = /obj/item/gun/energy/sharplite/l305,

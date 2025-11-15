@@ -38,6 +38,7 @@
 	// [/CELADON-ADD]
 	new /obj/item/storage/belt/sabre(src)
 	new /obj/item/gun/energy/sharplite/x12(src)
+	new /obj/item/gun/energy/e_gun/e_old(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
 	new /obj/item/door_remote/captain(src)
 	new /obj/item/card/id/captains_spare(src)
 	new /obj/item/storage/photo_album/Captain(src)
@@ -67,6 +68,7 @@
 	new /obj/item/assembly/flash/handheld(src)
 	new /obj/item/clothing/glasses/sunglasses(src)
 	new /obj/item/gun/energy/sharplite/x26(src) //WS Edit - Gives HoP a mini egun
+	new /obj/item/gun/energy/e_gun/e_old/mini(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
 	new /obj/item/clothing/neck/petcollar(src)
 	new /obj/item/pet_carrier(src)
 	new /obj/item/door_remote/civilian(src)
@@ -110,6 +112,7 @@
 	new /obj/item/shield/riot/tele(src)
 	new /obj/item/storage/belt/security/full(src)
 	new /obj/item/gun/energy/sharplite/x01(src)
+	new /obj/item/gun/energy/e_gun/e_old/hos(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
 	new /obj/item/gun/ballistic/automatic/pistol/commissar(src) //WS edit - free lethals
 	new /obj/item/pinpointer/nuke(src)
 	new /obj/item/circuitboard/machine/techfab/department/security(src)
@@ -147,6 +150,7 @@
 	new /obj/item/door_remote/head_of_security(src)
 	new /obj/item/gun/ballistic/shotgun/automatic/m11(src)
 	new /obj/item/gun/ballistic/automatic/pistol/challenger(src)
+	new /obj/item/gun/ballistic/automatic/pistol/commander_old(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
 	new /obj/item/gun_voucher
 
 /obj/structure/closet/secure_closet/security
@@ -173,6 +177,7 @@
 /obj/structure/closet/secure_closet/security/sec/PopulateContents()
 	..()
 	new /obj/item/storage/belt/security/full(src)
+	new /obj/item/gun/ballistic/automatic/pistol/commander_old/no_mag(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
 	new /obj/item/gun/ballistic/automatic/pistol/challenger/no_mag(src) //WS edit - free lethals //shiptest: these comments are very funny, please dont remove them
 
 /obj/structure/closet/secure_closet/security/cargo
@@ -322,6 +327,7 @@
 	..()
 	new /obj/item/gun/energy/ionrifle(src)
 	for(var/i in 1 to 3)
+		new /obj/item/gun/energy/e_gun/e_old(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
 		new /obj/item/gun/energy/sharplite/x12(src)
 	for(var/i in 1 to 3)
 		new /obj/item/gun/energy/laser(src)
@@ -334,6 +340,7 @@
 /obj/structure/closet/secure_closet/tac/PopulateContents()
 	..()
 	new /obj/item/gun/ballistic/automatic/smg/resolution(src)
+	new /obj/item/gun/ballistic/automatic/smg/wt550(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
 	new /obj/item/clothing/head/helmet/bulletproof(src)
 	new /obj/item/clothing/mask/gas/vigilitas(src)
 	new /obj/item/clothing/suit/armor/vest/bulletproof(src)
