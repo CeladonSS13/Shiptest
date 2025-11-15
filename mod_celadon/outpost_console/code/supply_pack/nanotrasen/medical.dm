@@ -68,7 +68,7 @@
 // 	desc = "Contains a spare tricordrazine vial, for usage in a Hypospray."
 // 	cost = 300
 // 	contains = list(
-// 		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/tricord,
+// 		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/cureall,
 // 	)
 // 	crate_name = "tricordrazine vial crate"
 
