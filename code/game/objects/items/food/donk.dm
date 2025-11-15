@@ -157,7 +157,7 @@
 	icon_state = "donkpocketbanana"
 	food_reagents = list(
 		/datum/reagent/consumable/nutriment = 4,
-		/datum/reagent/medicine/omnizine = 2,
+		/datum/reagent/consumable/omnizine = 2,
 		/datum/reagent/consumable/banana = 4,
 		/datum/reagent/consumable/laughter = 6
 	)
