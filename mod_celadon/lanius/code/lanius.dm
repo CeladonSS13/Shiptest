@@ -41,23 +41,23 @@
 	mutantappendix = null
 	mutantbrain = /obj/item/organ/brain/lanius
 
-species_limbs = list(
-		BODY_ZONE_CHEST = /obj/item/bodypart/chest/lanius,
-		BODY_ZONE_HEAD = /obj/item/bodypart/head/lanius,
-		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/lanius,
-		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/lanius,
-		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/lanius,
-		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/lanius,
-	)
+	species_limbs = list(
+			BODY_ZONE_CHEST = /obj/item/bodypart/chest/lanius,
+			BODY_ZONE_HEAD = /obj/item/bodypart/head/lanius,
+			BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/lanius,
+			BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/lanius,
+			BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/lanius,
+			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/lanius,
+		)
 
-species_robotic_limbs = list(
-		BODY_ZONE_CHEST =  /obj/item/bodypart/chest/lanius,
-		BODY_ZONE_HEAD = /obj/item/bodypart/head/lanius,
-		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/lanius,
-		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/lanius,
-		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/lanius,
-		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/lanius,
-	)
+	species_robotic_limbs = list(
+			BODY_ZONE_CHEST =  /obj/item/bodypart/chest/lanius,
+			BODY_ZONE_HEAD = /obj/item/bodypart/head/lanius,
+			BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/lanius,
+			BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/lanius,
+			BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/lanius,
+			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/lanius,
+		)
 
 /datum/species/lanius/spec_life(mob/living/carbon/human/H)
 	. = ..()
