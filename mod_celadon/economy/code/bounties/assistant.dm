@@ -198,7 +198,7 @@
 // 	name = "Raw Corgi Meat"
 // 	description = "The Syndicate recently stole all of CentCom's Corgi meat. Ship out a replacement immediately."
 // 	reward = 3000
-// 	wanted_types = list(/obj/item/food/meat/slab/corgi)
+// 	wanted_types = list(/obj/item/food/meat/slab)
 
 // /datum/bounty/item/assistant/corgifarming
 // 	name = "Corgi Hides"
