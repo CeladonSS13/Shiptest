@@ -15,7 +15,7 @@
 /obj/item/storage/wallet/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage/concrete)	// [CELADON-EDIT] - DONT_ALTCLICK_WALLET
-	STR.max_items = 4
+	STR.max_items = 5	// [CELADON-EDIT] - CELADON_QOL // STR.max_items = 4 // ORIGINAL
 	STR.set_holdable(list(
 		/obj/item/spacecash/bundle,
 		/obj/item/holochip,
