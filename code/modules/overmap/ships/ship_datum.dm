@@ -201,6 +201,8 @@
 		position_to_move["y"] = docked_to.docked_to.y
 	// [/CELADON-ADD] - subshuttles fix
 /datum/overmap/ship/proc/on_docked_to_moved()
+	x = docked_to.x
+	y = docked_to.y
 	token.update_screen()
 
 /**

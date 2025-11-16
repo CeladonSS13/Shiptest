@@ -1,14 +1,17 @@
 /datum/quirk/dwarfism
 	name = "Dwarfism"
-	desc = "Makes you wiry and shallow."
+	desc = "A mutation believed to be the cause of dwarfism."
 	value = 0
-	mob_traits = list(TRAIT_DWARF, TRAIT_SCOOPABLE)
+	mob_traits = list(TRAIT_DWARF)
 	gain_text = span_notice("Everything around you seems to grow..")
 	lose_text = span_danger("Everything around you seems to shrink..")
 	medical_record_text = "Patient is a dwarf."
 
-/datum/quirk/dwarfism/New(mob/living/quirk_mob, spawn_effects)
-	quirk_mob.transform = quirk_mob.transform.Scale(0.8, 1.25)
-	quirk_mob.pixel_y = -3
-	quirk_mob.base_pixel_y = -3
-	..()
+/datum/quirk/dwarfism/add()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(istype(H))
+		H.transform = H.transform.Scale(0.8, 1)
+	ADD_TRAIT(quirk_holder, TRAIT_DWARF, GENETIC_MUTATION)
+	ADD_TRAIT(quirk_holder, TRAIT_SCOOPABLE, GENETIC_MUTATION)
+	passtable_on(quirk_holder, GENETIC_MUTATION)
+	quirk_holder.visible_message(span_danger("[quirk_holder] suddenly shrinks!"), span_notice("Everything around you seems to grow.."))

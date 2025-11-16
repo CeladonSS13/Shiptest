@@ -4,7 +4,7 @@
 
 	burst_size = 2
 	actions_types = list()
-	fire_delay = 0.13 SECONDS
+	fire_delay = 0.1 SECONDS
 
 	spread = 6
 	spread_unwielded = 10
@@ -176,6 +176,7 @@
 
 NO_MAG_GUN_HELPER(automatic/smg/skm_carbine/inteq)
 
+//TODO: REMOVE
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/saber
 	name = "\improper Nanotrasen Saber SMG"
 	desc = "A prototype full-auto 9x18mm submachine gun, designated 'SABR'. Has a threaded barrel for suppressors and a folding stock."
@@ -183,9 +184,9 @@ NO_MAG_GUN_HELPER(automatic/smg/skm_carbine/inteq)
 	icon_state = "saber"
 	item_state = "gun"
 
-	default_ammo_type = /obj/item/ammo_box/magazine/smgm9mm
+	default_ammo_type = /obj/item/ammo_box/magazine/m9mm_expedition
 	allowed_ammo_types = list(
-		/obj/item/ammo_box/magazine/smgm9mm,
+		/obj/item/ammo_box/magazine/m9mm_expedition,
 	)
 
 	fire_sound = 'sound/weapons/gun/smg/vector_fire.ogg'

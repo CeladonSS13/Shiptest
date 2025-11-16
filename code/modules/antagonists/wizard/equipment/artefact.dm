@@ -355,7 +355,7 @@
 /obj/item/voodoo/fire_act(exposed_temperature, exposed_volume)
 	if(target)
 		target.adjust_fire_stacks(20)
-		target.IgniteMob()
+		target.ignite_mob()
 		GiveHint(target,1)
 	return ..()
 
