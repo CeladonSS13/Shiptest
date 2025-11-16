@@ -100,13 +100,22 @@
 /obj/item/gun/ballistic/automatic/pistol/commander
 	name = "VI Commander"
 	desc = "A service pistol produced as Vigilitas Interstellar's standard sidearm. Has a reputation for being easy to use, due to its light recoil and high magazine capacity. Chambered in 9x18mm."
+	icon_state = "challenger"
+	icon = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/48x32.dmi'
+	lefthand_file = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/lefthand.dmi'
+	righthand_file = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/righthand.dmi'
+	mob_overlay_icon = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/onmob.dmi'
 	manufacturer = MANUFACTURER_VIGILITAS
 
 NO_MAG_GUN_HELPER(automatic/pistol/commander)
 
 /obj/item/gun/ballistic/automatic/pistol/commander/inteq
 	desc = "A modified version of the VI Commander, issued as standard to Inteq Risk Management Group personnel. Features the same excellent handling and high magazine capacity as the original. Chambered in 9x18mm."
-
+	icon_state = "commander_inteq"
+	icon = 'icons/obj/guns/manufacturer/inteq/48x32.dmi'
+	lefthand_file = 'icons/obj/guns/manufacturer/inteq/lefthand.dmi'
+	righthand_file = 'icons/obj/guns/manufacturer/inteq/righthand.dmi'
+	mob_overlay_icon = 'icons/obj/guns/manufacturer/inteq/onmob.dmi'
 NO_MAG_GUN_HELPER(automatic/pistol/commander/inteq)
 
 /obj/item/gun/ballistic/automatic/smg/wt550
