@@ -623,7 +623,7 @@
 		to_chat(user, span_warning("There are no more cards to draw!"))
 		return
 	var/obj/item/toy/cards/singlecard/H = new/obj/item/toy/cards/singlecard(user.loc)
-	choice = cards[1]
+	choice = pick(cards)	// [CELADON-EDIT] - FIXES_CARDS_DRAW_RANDOM
 	H.cardname = choice
 	H.parentdeck = src
 	var/O = src

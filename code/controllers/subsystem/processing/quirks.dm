@@ -24,18 +24,16 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 		SetupQuirks()
 
 	quirk_blacklist = list(
-		list("Blind","Nearsighted"), \
-		list("Jolly","Depression","Apathetic","Hypersensitive"), \
-		list("Ageusia","Vegetarian","Deviant Tastes"), \
-		list("Ananas Affinity","Ananas Aversion"), \
-		list("Alcohol Tolerance","Light Drinker"), \
+		list("Blind","Nearsighted"),
+		list("Ageusia","Vegetarian","Deviant Tastes"),
+		list("Alcohol Tolerance","Light Drinker"),
 		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 		list("Clown Fan", "Mime Fan", "RILENA Super Fan"), \
 		// [/CELADON-ADD]
-		list("Bad Touch", "Friendly"), \
-		list("Self-Aware", "Congenital Analgesia"), \
-		list("(Language) Moth Pidgin", "(Language) Solarian International", "(Language) Teceti Unified Standard", "(Language) Kalixcian Common"), \
-		)
+		list("Bad Touch", "Friendly"),
+		list("Self-Aware", "Congenital Analgesia"),
+		list("Trilingual", "Monolingual"),
+	)
 
 	species_blacklist = list("Blood Deficiency" = list(SPECIES_IPC, SPECIES_JELLYPERSON, SPECIES_PLASMAMAN, SPECIES_VAMPIRE))
 

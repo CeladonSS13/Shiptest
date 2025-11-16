@@ -2,6 +2,7 @@
 /obj/item/bodypart/head/snail
 	limb_id = "snail"
 	is_dimorphic = FALSE
+	greyscale_eyes = FALSE
 
 /obj/item/bodypart/chest/snail
 	limb_id = "snail"
@@ -24,6 +25,7 @@
 	limb_id = "abductor"
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
+	draw_eyes = FALSE
 
 /obj/item/bodypart/chest/abductor
 	limb_id = "abductor"
@@ -95,6 +97,7 @@
 	limb_id = "zombie"
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
+	greyscale_eyes = FALSE
 
 /obj/item/bodypart/chest/zombie
 	limb_id = "zombie"
@@ -143,6 +146,7 @@
 	limb_id = "fly"
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
+	draw_eyes = FALSE
 
 /obj/item/bodypart/chest/fly
 	limb_id = "fly"
@@ -170,6 +174,7 @@
 	limb_id = "shadow"
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
+	draw_eyes = FALSE
 
 /obj/item/bodypart/chest/shadow
 	limb_id = "shadow"
@@ -197,6 +202,7 @@
 	limb_id = "skeleton"
 	is_dimorphic = FALSE
 	should_draw_greyscale = FALSE
+	greyscale_eyes = FALSE
 
 /obj/item/bodypart/chest/skeleton
 	limb_id = "skeleton"

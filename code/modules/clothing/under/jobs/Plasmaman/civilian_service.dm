@@ -82,7 +82,7 @@
 			next_extinguish = world.time + extinguish_cooldown
 			extinguishes_left--
 			H.visible_message(span_warning("[H]'s suit spews out a tonne of space lube!"),span_warning("Your suit spews out a tonne of space lube!"))
-			H.ExtinguishMob()
+			H.extinguish_mob()
 			new /obj/effect/particle_effect/foam(loc) //Truely terrifying.
 	return 0
 // [/CELADON-ADD]

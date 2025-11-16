@@ -13,6 +13,29 @@
 	box = /obj/item/storage/box/survival/inteq
 	courierbag = /obj/item/storage/backpack/messenger/inteq
 
+/datum/outfit/job/cel/inteq/proc/get_inteq_general_access(mob/living/carbon/human/H)
+	var/obj/item/storage/wallet/W = null
+	for (var/obj/item/O in H.contents)
+		if (istype(O, /obj/item/storage/wallet))
+			W = O
+			break
+	if (W)
+		var/obj/item/card/id/I = null
+		for (var/obj/item/O in W.contents)
+			if (istype(O, /obj/item/card/id))
+				I = O
+				break
+		if (I)
+			I.access += list(ACCESS_OUTPOST_FACTION_INTEQ)
+			I.update_label()
+		W.combined_access = list()
+		for (var/obj/item/card/id/card in W.contents)
+			W.combined_access |= card.access
+
+/datum/outfit/job/cel/inteq/post_equip(mob/living/carbon/human/H)
+	. = ..()
+	get_inteq_general_access(H)
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //MARK: Рекрут

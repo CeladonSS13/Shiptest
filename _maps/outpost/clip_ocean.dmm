@@ -541,11 +541,11 @@
 	pixel_x = -7;
 	pixel_y = 4
 	},
-/obj/item/clothing/head/helmet/swat/inteq{
+/obj/item/clothing/head/helmet/bulletproof/x11/inteq{
 	pixel_x = -9;
 	pixel_y = -6
 	},
-/obj/item/clothing/head/helmet/swat/inteq{
+/obj/item/clothing/head/helmet/bulletproof/x11/inteq{
 	pixel_x = 8;
 	pixel_y = -6
 	},
@@ -841,7 +841,8 @@
 /obj/item/gun/ballistic/automatic/hmg/skm_lmg/extended{
 	pixel_x = -4;
 	pixel_y = 2;
-	name = "Decommissioned SKM-24u"
+	name = "Decommissioned SKM-24u";
+	spawn_no_ammo = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/library)
@@ -1047,8 +1048,9 @@
 /turf/open/floor/hangar/clipoutpost,
 /area/outpost/exterior/ocean)
 "cR" = (
-/obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/machinery/outpost_selling_pad,
+/obj/machinery/computer/outpost_export_console{
+	dir = 4
+	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/storage)
 "cS" = (
@@ -1580,6 +1582,7 @@
 	name = "morphine syringe"
 	},
 /obj/machinery/light/directional/east,
+/obj/item/defibrillator/compact/loaded,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/armory)
 "eX" = (
@@ -1704,6 +1707,11 @@
 	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/siding/thinplating/dark,
+/obj/item/folder/blue,
+/obj/item/folder/blue,
+/obj/item/folder/blue,
+/obj/item/clipboard,
+/obj/item/clipboard,
 /turf/open/floor/plasteel,
 /area/outpost/operations)
 "fq" = (
@@ -1726,18 +1734,6 @@
 /obj/machinery/newscaster/directional/south,
 /turf/open/floor/carpet/green,
 /area/outpost/crew/library)
-"ft" = (
-/obj/structure/railing/thin{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/transparent/blue/line{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/outpost/storage)
 "fv" = (
 /obj/structure/table/reinforced,
 /obj/machinery/fax/admin/outpost,
@@ -2294,8 +2290,9 @@
 /turf/open/water/beach/deep/outpost,
 /area/outpost/crew/bathroom)
 "hv" = (
-/obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/machinery/mission_pad,
+/obj/machinery/computer/mission{
+	dir = 8
+	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/storage)
 "hw" = (
@@ -2513,7 +2510,7 @@
 	pixel_x = -8;
 	pixel_y = 5
 	},
-/obj/item/clothing/head/helmet/bulletproof/m10/clip_vc{
+/obj/item/clothing/head/helmet/m10/clip_vc{
 	pixel_x = 6;
 	pixel_y = 4
 	},
@@ -2788,10 +2785,7 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/vacant_rooms)
 "jc" = (
-/obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/machinery/computer/outpost_export_console{
-	dir = 4
-	},
+/obj/machinery/outpost_selling_pad,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/storage)
 "je" = (
@@ -3115,15 +3109,15 @@
 	req_access_txt = "1"
 	},
 /obj/item/clothing/suit/armor/vest/alt,
-/obj/item/clothing/head/helmet/inteq,
+/obj/item/clothing/head/helmet/m10/inteq,
 /obj/item/clothing/gloves/combat,
-/obj/item/clothing/head/helmet/inteq,
+/obj/item/clothing/head/helmet/m10/inteq,
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/suit/armor/vest/alt,
 /obj/item/clothing/suit/armor/vest/alt,
 /obj/item/clothing/suit/armor/vest/alt,
-/obj/item/clothing/head/helmet/inteq,
-/obj/item/clothing/head/helmet/inteq,
+/obj/item/clothing/head/helmet/m10/inteq,
+/obj/item/clothing/head/helmet/m10/inteq,
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/gloves/combat,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -3132,6 +3126,12 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
 	},
+/obj/item/clothing/mask/breath/facemask,
+/obj/item/clothing/mask/breath/facemask,
+/obj/item/clothing/mask/breath/facemask,
+/obj/item/clothing/mask/breath/facemask,
+/obj/item/clothing/mask/breath/facemask,
+/obj/item/clothing/mask/breath/facemask,
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/hallway/starboard)
 "kn" = (
@@ -4224,11 +4224,13 @@
 /obj/structure/rack,
 /obj/item/gun/ballistic/automatic/assault/skm/cm24{
 	pixel_x = -7;
-	pixel_y = 4
+	pixel_y = 4;
+	spawn_no_ammo = 1
 	},
 /obj/item/gun/ballistic/automatic/assault/skm{
 	pixel_x = -6;
-	pixel_y = -2
+	pixel_y = -2;
+	spawn_no_ammo = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/library)
@@ -5374,27 +5376,27 @@
 	pixel_x = 0;
 	pixel_y = -9
 	},
-/obj/item/clothing/head/helmet/inteq{
+/obj/item/clothing/head/helmet/m10/inteq{
 	pixel_x = -1;
 	pixel_y = 11
 	},
-/obj/item/clothing/head/helmet/inteq{
+/obj/item/clothing/head/helmet/m10/inteq{
 	pixel_x = -1;
 	pixel_y = 11
 	},
-/obj/item/clothing/head/helmet/inteq{
+/obj/item/clothing/head/helmet/m10/inteq{
 	pixel_x = -1;
 	pixel_y = 11
 	},
-/obj/item/clothing/head/helmet/inteq{
+/obj/item/clothing/head/helmet/m10/inteq{
 	pixel_x = -1;
 	pixel_y = 11
 	},
-/obj/item/clothing/head/helmet/inteq{
+/obj/item/clothing/head/helmet/m10/inteq{
 	pixel_x = -1;
 	pixel_y = 11
 	},
-/obj/item/clothing/head/helmet/inteq{
+/obj/item/clothing/head/helmet/m10/inteq{
 	pixel_x = -1;
 	pixel_y = 11
 	},
@@ -6179,22 +6181,17 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/vacant_rooms/shop)
-"uG" = (
-/obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/machinery/computer/mission{
-	dir = 8
-	},
-/turf/open/floor/plasteel/telecomms_floor,
-/area/outpost/storage)
 "uH" = (
 /obj/structure/rack,
 /obj/item/gun/ballistic/automatic/smg/cm5{
 	pixel_x = -1;
-	pixel_y = 8
+	pixel_y = 8;
+	spawn_no_ammo = 1
 	},
 /obj/item/gun/ballistic/automatic/smg/cm5/compact{
 	pixel_x = 2;
-	pixel_y = 0
+	pixel_y = 0;
+	spawn_no_ammo = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/library)
@@ -6298,10 +6295,14 @@
 	pixel_y = 1
 	},
 /obj/item/storage/toolbox/ammo/c10mm{
-	pixel_x = 0;
+	pixel_x = 9;
 	pixel_y = -9
 	},
 /obj/effect/turf_decal/trimline/opaque/yellow/line,
+/obj/item/storage/toolbox/ammo/c65{
+	pixel_x = -9;
+	pixel_y = -9
+	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/armory)
 "va" = (
@@ -6669,7 +6670,8 @@
 /obj/item/gun/ballistic/automatic/hmg/shredder{
 	pixel_x = -2;
 	pixel_y = 1;
-	name = "Decommissioned Shredder"
+	name = "Decommissioned Shredder";
+	spawn_no_ammo = 1
 	},
 /obj/machinery/light/directional/east,
 /turf/open/floor/plasteel/dark,
@@ -7074,8 +7076,6 @@
 	},
 /obj/item/ammo_box/magazine/skm_762_40/extended,
 /obj/item/ammo_box/magazine/skm_762_40/extended,
-/obj/item/ammo_box/magazine/skm_762_40/extended,
-/obj/item/ammo_box/magazine/skm_762_40/extended,
 /obj/item/ammo_box/magazine/rottweiler_308_box,
 /obj/item/ammo_box/magazine/f4_308,
 /obj/item/ammo_box/magazine/f4_308,
@@ -7097,6 +7097,8 @@
 /obj/item/ammo_box/magazine/m12g_bulldog/empty,
 /obj/effect/turf_decal/trimline/opaque/yellow/line,
 /obj/machinery/light/directional/south,
+/obj/item/ammo_box/magazine/f90,
+/obj/item/ammo_box/magazine/f90,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/armory)
 "xq" = (
@@ -7202,15 +7204,6 @@
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/outpost/vacant_rooms/shop)
-"xy" = (
-/obj/structure/railing/thin,
-/obj/effect/turf_decal/siding/thinplating/dark,
-/obj/effect/turf_decal/trimline/transparent/blue/line,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/outpost/storage)
 "xz" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/effect/decal/cleanable/dirt,
@@ -9007,8 +9000,8 @@
 /obj/item/gun/ballistic/automatic/hmg/rottweiler,
 /obj/item/gun/ballistic/automatic/marksman/f4/inteq,
 /obj/item/gun/ballistic/automatic/assault/skm/inteq,
-/obj/item/gun/ballistic/automatic/assault/skm/inteq,
 /obj/effect/turf_decal/trimline/opaque/yellow/line,
+/obj/item/gun/ballistic/automatic/marksman/f90/inteq,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/armory)
 "DC" = (
@@ -9063,7 +9056,6 @@
 	},
 /area/outpost/crew/library)
 "DI" = (
-/obj/structure/railing/thin,
 /obj/effect/turf_decal/siding/thinplating/dark,
 /obj/effect/turf_decal/trimline/transparent/blue/line,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -11744,10 +11736,7 @@
 /turf/open/floor/plasteel/mono/white,
 /area/outpost/medical)
 "LF" = (
-/obj/machinery/computer/mission{
-	dir = 8
-	},
-/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/mission_pad,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/storage)
 "LH" = (
@@ -12407,6 +12396,12 @@
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/head/helmet/bulletproof/x11/clip,
 /obj/item/clothing/suit/armor/vest/bulletproof,
+/obj/item/clothing/mask/breath/facemask,
+/obj/item/clothing/mask/breath/facemask,
+/obj/item/clothing/mask/breath/facemask,
+/obj/item/clothing/mask/breath/facemask,
+/obj/item/clothing/mask/breath/facemask,
+/obj/item/clothing/mask/breath/facemask,
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/hallway/starboard)
 "NK" = (
@@ -12714,7 +12709,6 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/cargo/smeltery)
 "OP" = (
-/obj/structure/table/reinforced,
 /obj/machinery/button/door{
 	pixel_x = 0;
 	pixel_y = 21;
@@ -12724,6 +12718,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 9
 	},
+/obj/machinery/telecomms/allinone/indestructible,
 /turf/open/floor/plasteel/tech,
 /area/outpost/operations)
 "OQ" = (
@@ -13423,11 +13418,13 @@
 /obj/structure/rack,
 /obj/item/gun/ballistic/automatic/marksman/f4{
 	pixel_x = -4;
-	pixel_y = 7
+	pixel_y = 7;
+	spawn_no_ammo = 1
 	},
 /obj/item/gun/ballistic/automatic/marksman/f4/indie{
 	pixel_x = -4;
-	pixel_y = 2
+	pixel_y = 2;
+	spawn_no_ammo = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/library)
@@ -13621,10 +13618,6 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/engineering)
 "RQ" = (
-/obj/structure/sign/poster/contraband/pgf{
-	pixel_x = 31;
-	pixel_y = 0
-	},
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 4
 	},
@@ -13635,6 +13628,10 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/cable{
 	icon_state = "1-2"
+	},
+/obj/structure/sign/poster/pgf/random{
+	pixel_y = 0;
+	pixel_x = 28
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/outpost/hallway/starboard)
@@ -14372,6 +14369,11 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 5
 	},
+/obj/item/folder/yellow,
+/obj/item/folder/yellow,
+/obj/item/folder/yellow,
+/obj/item/clipboard,
+/obj/item/clipboard,
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
 "Ui" = (
@@ -15663,9 +15665,6 @@
 	},
 /area/outpost/external)
 "XY" = (
-/obj/structure/railing/thin{
-	dir = 1
-	},
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
@@ -15693,10 +15692,6 @@
 "Ya" = (
 /obj/structure/table/reinforced,
 /obj/item/cutting_board,
-/obj/item/melee/knife{
-	pixel_x = 7;
-	pixel_y = 3
-	},
 /obj/item/kitchen/rollingpin{
 	pixel_x = -5;
 	pixel_y = 3
@@ -15707,6 +15702,10 @@
 /obj/machinery/firealarm/directional/west{
 	pixel_y = 8;
 	pixel_x = -32
+	},
+/obj/item/melee/knife/kitchen{
+	pixel_x = 8;
+	pixel_y = 2
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/outpost/crew/canteen)
@@ -15837,12 +15836,14 @@
 /obj/item/gun/ballistic/automatic/smg/pounder{
 	name = "Decommissioned Pounder";
 	pixel_x = -1;
-	pixel_y = 6
+	pixel_y = 6;
+	spawn_no_ammo = 1
 	},
 /obj/item/gun/ballistic/automatic/pistol/spitter{
 	pixel_x = 1;
 	pixel_y = -11;
-	name = "Decommissioned Spitter"
+	name = "Decommissioned Spitter";
+	spawn_no_ammo = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/library)
@@ -24595,8 +24596,8 @@ hv
 LF
 XY
 hJ
-xy
-uG
+gY
+LF
 hv
 Ol
 SX
@@ -24716,7 +24717,7 @@ SX
 Ol
 cR
 jc
-ft
+Qk
 lj
 DI
 jc

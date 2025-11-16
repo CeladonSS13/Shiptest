@@ -82,7 +82,7 @@
 		icon_state = "[base_icon_state]_t"
 	else
 		icon_state = base_icon_state
-	// [CELADON-REMOVE] - FIXES_HOODED_ICONS
+	// [CELADON-REMOVE] - FIXES_HOODED_ICONS - [WARNING] - Расскомментить и посмотреть изменение!
 	// if(isobj(hood))
 	// 	hood.icon_state = base_icon_state
 	// [/CELADON-REMOVE]
@@ -156,9 +156,13 @@
 	strip_delay = EQUIP_DELAY_COAT * 1.5
 
 /obj/item/clothing/suit/toggle/AltClick(mob/user)
-	. = ..()
 	if(!user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
 		return FALSE
+
+	. = SEND_SIGNAL(src, COMSIG_CLICK_ALT, user)
+	if(. & COMPONENT_CANCEL_CLICK_ALT)
+		return
+
 	if(unique_reskin && !current_skin)
 		reskin_obj(user)
 	else

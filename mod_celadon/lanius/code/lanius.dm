@@ -11,7 +11,6 @@
 	// Animated beings of stone. They have increased defenses, and do not need to breathe. They're also slow as fuuuck.
 	name = "\improper Lanius"
 	id = SPECIES_LANIUS
-	sexes = FALSE
 	special_step_sounds = 'sound/effects/footstep/heavy1.ogg'
 	species_gibs = "lanius"
 	loreblurb = "The Lanius are a metallic scavenger race, \
@@ -42,19 +41,23 @@
 	mutantappendix = null
 	mutantbrain = /obj/item/organ/brain/lanius
 
-	species_chest = /obj/item/bodypart/chest/lanius
-	species_head = /obj/item/bodypart/head/lanius
-	species_l_arm = /obj/item/bodypart/l_arm/lanius
-	species_r_arm = /obj/item/bodypart/r_arm/lanius
-	species_l_leg = /obj/item/bodypart/leg/left/lanius
-	species_r_leg = /obj/item/bodypart/leg/right/lanius
+	species_limbs = list(
+			BODY_ZONE_CHEST = /obj/item/bodypart/chest/lanius,
+			BODY_ZONE_HEAD = /obj/item/bodypart/head/lanius,
+			BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/lanius,
+			BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/lanius,
+			BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/lanius,
+			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/lanius,
+		)
 
-	species_robotic_chest = /obj/item/bodypart/chest/lanius
-	species_robotic_head = /obj/item/bodypart/head/lanius
-	species_robotic_l_arm = /obj/item/bodypart/l_arm/lanius
-	species_robotic_r_arm = /obj/item/bodypart/r_arm/lanius
-	species_robotic_l_leg = /obj/item/bodypart/leg/left/lanius
-	species_robotic_r_leg = /obj/item/bodypart/leg/right/lanius
+	species_robotic_limbs = list(
+			BODY_ZONE_CHEST =  /obj/item/bodypart/chest/lanius,
+			BODY_ZONE_HEAD = /obj/item/bodypart/head/lanius,
+			BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/lanius,
+			BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/lanius,
+			BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/lanius,
+			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/lanius,
+		)
 
 /datum/species/lanius/spec_life(mob/living/carbon/human/H)
 	. = ..()
