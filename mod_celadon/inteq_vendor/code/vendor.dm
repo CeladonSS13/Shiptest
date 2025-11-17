@@ -46,6 +46,8 @@
 /obj/item/storage/box/inteq
 	name = "inteq equipment box"
 	desc = "A box containing Inteq equipment."
+	icon = 'mod_celadon/_storage_icons/icons/resprite/survival_boxes.dmi'
+	icon_state = "box_survival_iq"
 
 /obj/item/storage/box/inteq/tactical
 	name = "tactical bundle"
