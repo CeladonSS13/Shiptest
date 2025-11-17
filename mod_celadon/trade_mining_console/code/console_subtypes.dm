@@ -23,8 +23,7 @@
 		/obj/item/clothing/suit/space/hardsuit/syndi/elite/oldcontractor	= list("price" = 15000, "unlock_cost" = 7000, "stock" = 0),
 		/obj/item/melee/powerfist 											= list("price" = 3000, "unlock_cost" = 3000, "stock" = 0),
 		/obj/item/research_notes/loot/medium 								= list("price" = 6000, "unlock_cost" = 4000, "stock" = 4),
-		/obj/item/storage/firstaid/advanced 						= list("price" = 900, "unlock_cost" = 1500, "stock" = 0),
-		/obj/item/gun/ballistic/automatic/powered/gauss/claris 				= list("price" = 3000, "unlock_cost" = 6000, "stock" = 0),
+		/obj/item/storage/firstaid/advanced 								= list("price" = 900, "unlock_cost" = 1500, "stock" = 0),
 		/obj/item/disk/design_disk/a556_42									= list("price" = 10000, "unlock_cost" = 15000, "stock" = 0)
 	)
 	. = ..()
