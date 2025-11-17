@@ -160,7 +160,7 @@
 	pixel_y = -1
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/cargo/starboard)
+/area/ship/cargo)
 "ax" = (
 /obj/machinery/power/shuttle/engine/electric{
 	dir = 4
@@ -1131,7 +1131,7 @@
 	name = "Vigilitas Interstellar supplies crate"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/cargo/starboard)
+/area/ship/cargo)
 "dg" = (
 /obj/machinery/light/small/directional/west,
 /obj/structure/bed{
@@ -1491,15 +1491,7 @@
 /area/ship/cargo)
 "eA" = (
 /obj/effect/turf_decal/box/white/corners,
-/obj/structure/table,
-/obj/item/paper_bin{
-	pixel_x = 0;
-	pixel_y = 4
-	},
-/obj/item/pen{
-	pixel_x = 0;
-	pixel_y = 5
-	},
+/obj/machinery/outpost_selling_pad/delivery,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "eF" = (
@@ -1965,11 +1957,9 @@
 /area/ship/cargo)
 "jL" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/computer/mining_console{
-	dir = 8
-	},
+/obj/machinery/computer/trade_mining_console/nanotrasen,
 /turf/open/floor/plasteel/dark,
-/area/ship/cargo/starboard)
+/area/ship/cargo)
 "jS" = (
 /obj/structure/dresser{
 	dir = 8;
@@ -2153,7 +2143,7 @@
 /obj/item/stack/sheet/mineral/uranium/ten,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
-/area/ship/cargo/starboard)
+/area/ship/cargo)
 "li" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4055,13 +4045,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
-"FC" = (
-/obj/effect/turf_decal/box/white/corners{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/dark,
-/area/ship/cargo/starboard)
 "FR" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
@@ -4711,13 +4694,6 @@
 /obj/machinery/holopad,
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
-"Mh" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/office/light{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/cargo)
 "Mj" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/crew/toilet)
@@ -5880,10 +5856,6 @@
 /obj/item/banner/nanotrasen/mundane,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hallway/central)
-"Xs" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/dark,
-/area/ship/cargo/starboard)
 "Xt" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6;
@@ -5950,9 +5922,6 @@
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/hallway/central)
-"XV" = (
-/turf/open/floor/plasteel/dark,
-/area/ship/cargo/starboard)
 "Yk" = (
 /obj/item/radio/intercom/directional/north,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -6597,7 +6566,7 @@ as
 bh
 nK
 at
-FC
+aI
 pF
 aB
 xm
@@ -6623,11 +6592,11 @@ uu
 qs
 MU
 jJ
-XV
-Xs
+ap
+hq
 Fb
 nl
-Mh
+hq
 AU
 im
 hq

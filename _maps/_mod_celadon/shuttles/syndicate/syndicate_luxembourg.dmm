@@ -1579,8 +1579,9 @@
 "Dk" = (
 /obj/effect/turf_decal/box,
 /obj/item/radio/intercom/directional/south,
+/obj/machinery/outpost_selling_pad/delivery,
 /turf/open/floor/plasteel/mono/dark,
-/area/ship/cargo/starboard)
+/area/ship/hallway/central)
 "Dp" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1764,11 +1765,9 @@
 	pixel_y = -14
 	},
 /obj/machinery/newscaster/directional/east,
-/obj/machinery/computer/mining_console{
-	dir = 1
-	},
+/obj/machinery/computer/trade_mining_console/syndicate,
 /turf/open/floor/plasteel/mono/dark,
-/area/ship/cargo/starboard)
+/area/ship/hallway/central)
 "Gz" = (
 /obj/structure/closet/crate/science,
 /obj/item/circuitboard/machine/chem_dispenser/drinks,
