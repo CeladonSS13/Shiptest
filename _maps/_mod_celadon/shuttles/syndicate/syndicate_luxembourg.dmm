@@ -1580,7 +1580,7 @@
 /obj/effect/turf_decal/box,
 /obj/item/radio/intercom/directional/south,
 /turf/open/floor/plasteel/mono/dark,
-/area/ship/hallway/central)
+/area/ship/cargo/starboard)
 "Dp" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1760,11 +1760,15 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "Gx" = (
-/obj/structure/table,
-/obj/item/radio/intercom/wideband/table,
+/obj/item/radio/intercom/wideband/table{
+	pixel_y = -14
+	},
 /obj/machinery/newscaster/directional/east,
+/obj/machinery/computer/mining_console{
+	dir = 1
+	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ship/hallway/central)
+/area/ship/cargo/starboard)
 "Gz" = (
 /obj/structure/closet/crate/science,
 /obj/item/circuitboard/machine/chem_dispenser/drinks,
