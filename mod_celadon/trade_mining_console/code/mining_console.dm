@@ -8,6 +8,7 @@
 
 	var/password = ""
 	var/logged_in = FALSE
+	var/obj/machinery/outpost_selling_pad/linked_pad
 	var/list/unlocked_items = list()
 	var/list/available_items = list(
 		/obj/item/gun/energy/kinetic_accelerator = list("price" = 500, "unlock_cost" = 100),
@@ -23,6 +24,11 @@
 	password = generate_password()
 	var/obj/item/paper/console_password/P = new(loc, password)
 	P.forceMove(loc)
+
+/obj/machinery/computer/mining_console/LateInitialize()
+	. = ..()
+	var/obj/machinery/outpost_selling_pad/pad = locate() in range(2,src)
+	linked_pad = pad
 
 /obj/machinery/computer/mining_console/proc/generate_password()
 	var/list/chars = list("A","B","C","D","E","F","G","H","J","K","L","M","N","P","Q","R","S","T","U","V","W","X","Y","Z","2","3","4","5","6","7","8","9")
@@ -108,29 +114,14 @@
 			var/list/item_data = available_items[item_path]
 			var/price = item_data["price"]
 			if(card.registered_account.has_money(price))
-				var/area/A = get_area(src)
-				var/list/turfs = list()
-				for(var/turf/T in A)
-					if(T.density)
-						continue
-					var/blocked = FALSE
-					for(var/obj/machinery/M in T)
-						blocked = TRUE
-						break
-					if(!blocked)
-						turfs += T
-				if(!turfs.len)
-					say("Drop zone blocked. Clear the area.")
+				if(!linked_pad)
+					say("No delivery pad linked.")
 					playsound(src, 'sound/machines/terminal_prompt_deny.ogg', 50, FALSE)
 					return
 				card.registered_account.adjust_money(-price, "console_purchase")
-				var/turf/drop_turf = pick(turfs)
-				var/obj/structure/closet/supplypod/pod = new()
-				pod.bluespace = TRUE
-				pod.explosionSize = list(0,0,0,0)
-				pod.delays = list(POD_TRANSIT = 10, POD_FALLING = 4, POD_OPENING = 10, POD_LEAVING = 10)
-				new item_path(pod)
-				new /obj/effect/pod_landingzone(drop_turf, pod)
+				do_sparks(5, 0, linked_pad.loc)
+				new item_path(linked_pad.loc)
+				playsound(src, 'sound/machines/machine_vend.ogg', 50, FALSE)
 				return TRUE
 
 /obj/item/circuitboard/computer/mining_console
