@@ -1,3 +1,13 @@
+/datum/design/a556_42
+	name = "Обычные патроны 5.56x42mm"
+	desc = "Коробка обычных патронов 5.56x42mm."
+	id = "a556_42"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 20000)
+	build_path = /obj/item/storage/box/ammo/a556_42
+	category = list("Ammo")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
 /datum/design/a556/surplus
 	name = "Некачественные патроны 5.56x45mm"
 	desc = "Коробка некачественных патронов 5.56x45mm."

@@ -68,3 +68,8 @@
 		/datum/material/plasma = 2000,
 		/datum/material/gold = 2000,
 	)
+
+/obj/item/disk/design_disk/a556_42
+	design_name = "5.56x42mm Ammo"
+	desc = "A design disk containing the pattern for a refill box of standard 5.56x42mm ammo, used in Hydra."
+	starting_blueprints = (/datum/design/a556_42)

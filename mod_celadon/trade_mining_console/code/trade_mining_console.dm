@@ -13,10 +13,16 @@
 	var/obj/machinery/outpost_selling_pad/linked_pad
 	var/list/unlocked_items = list()
 	var/list/available_items = list()
+	var/list/item_stock = list()
 
 /obj/machinery/computer/trade_mining_console/Initialize(mapload)
 	. = ..()
 	password = generate_password()
+	for(var/item_path in available_items)
+		var/list/item_data = available_items[item_path]
+		var/stock = item_data["stock"] || 0
+		if(stock > 0)
+			item_stock[item_path] = stock
 
 /obj/machinery/computer/trade_mining_console/LateInitialize()
 	. = ..()
@@ -28,6 +34,12 @@
 	. = ..()
 	logged_in = FALSE
 	unlocked_items = list()
+	item_stock = list()
+	for(var/item_path in available_items)
+		var/list/item_data = available_items[item_path]
+		var/stock = item_data["stock"] || 0
+		if(stock > 0)
+			item_stock[item_path] = stock
 
 /obj/machinery/computer/trade_mining_console/proc/send_password_to_captain()
 	if(QDELETED(src))
@@ -71,12 +83,16 @@
 	for(var/item_path in available_items)
 		var/atom/A = item_path
 		var/list/item_data = available_items[item_path]
+		var/stock = item_stock[item_path] || 0
+		var/unlimited = (item_data["stock"] || 0) == 0
 		data["items"] += list(list(
 			"name" = initial(A.name),
 			"path" = "[item_path]",
 			"price" = item_data["price"],
 			"unlock_cost" = item_data["unlock_cost"],
-			"unlocked" = (item_path in unlocked_items)
+			"unlocked" = (item_path in unlocked_items),
+			"stock" = stock,
+			"unlimited" = unlimited
 		))
 
 	return data
@@ -120,11 +136,18 @@
 			var/item_path = text2path(params["path"])
 			if(!item_path || !(item_path in unlocked_items))
 				return
+			var/list/item_data = available_items[item_path]
+			var/stock_limit = item_data["stock"] || 0
+			if(stock_limit > 0)
+				var/current_stock = item_stock[item_path] || 0
+				if(current_stock <= 0)
+					say("Item out of stock.")
+					playsound(src, 'sound/machines/terminal_prompt_deny.ogg', 50, FALSE)
+					return
 			var/mob/living/carbon/human/H = usr
 			var/obj/item/card/bank/card = H?.get_bankcard()
 			if(!card?.registered_account)
 				return
-			var/list/item_data = available_items[item_path]
 			var/price = item_data["price"]
 			if(card.registered_account.has_money(price))
 				if(!linked_pad)
@@ -132,6 +155,8 @@
 					playsound(src, 'sound/machines/terminal_prompt_deny.ogg', 50, FALSE)
 					return
 				card.registered_account.adjust_money(-price, "console_purchase")
+				if(stock_limit > 0)
+					item_stock[item_path]--
 				if(istype(linked_pad, /obj/machinery/outpost_selling_pad/delivery))
 					var/obj/machinery/outpost_selling_pad/delivery/del_pad = linked_pad
 					del_pad.animate_delivery()
