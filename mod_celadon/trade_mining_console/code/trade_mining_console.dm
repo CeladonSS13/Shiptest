@@ -14,64 +14,95 @@
 	var/list/unlocked_items = list()
 	var/list/available_items = list()
 	var/list/item_stock = list()
+	var/list/categories = list()
+	var/selected_category = null
+	var/selected_item = null
+	var/theme = "default"
 
 /obj/machinery/computer/trade_mining_console/Initialize(mapload)
 	. = ..()
 	password = generate_password()
-	for(var/item_path in available_items)
-		var/list/item_data = available_items[item_path]
-		var/stock = item_data["stock"] || 0
-		if(stock > 0)
-			item_stock[item_path] = stock
+	if(available_items && length(available_items))
+		for(var/item_path in available_items)
+			var/list/item_data = available_items[item_path]
+			var/stock = item_data["stock"] || 0
+			if(stock > 0)
+				item_stock[item_path] = stock
 
 /obj/machinery/computer/trade_mining_console/LateInitialize()
 	. = ..()
 	var/obj/machinery/outpost_selling_pad/pad = locate() in range(2,src)
 	linked_pad = pad
-	addtimer(CALLBACK(src, PROC_REF(send_password_to_captain)), 1 MINUTES)
+	addtimer(CALLBACK(src, PROC_REF(send_password_to_captain)), 30 SECONDS)
 
 /obj/machinery/computer/trade_mining_console/RefreshParts()
 	. = ..()
 	logged_in = FALSE
 	unlocked_items = list()
 	item_stock = list()
-	for(var/item_path in available_items)
-		var/list/item_data = available_items[item_path]
-		var/stock = item_data["stock"] || 0
-		if(stock > 0)
-			item_stock[item_path] = stock
+	if(available_items && length(available_items))
+		for(var/item_path in available_items)
+			var/list/item_data = available_items[item_path]
+			var/stock = item_data["stock"] || 0
+			if(stock > 0)
+				item_stock[item_path] = stock
 
 /obj/machinery/computer/trade_mining_console/proc/send_password_to_captain()
 	if(QDELETED(src))
 		return
-	var/area/ship_area = get_area(src)
+	var/area/console_area = get_area(src)
+	var/console_ship_name = ""
+	// Извлекаем название корабля из названия области
+	var/list/console_name_parts = splittext(console_area.name, " ")
+	if(length(console_name_parts) >= 2)
+		console_ship_name = "[console_name_parts[1]] [console_name_parts[2]]"
+	
 	for(var/mob/living/carbon/human/H in GLOB.player_list)
 		if(!H.mind || !H.client)
 			continue
 		var/area/player_area = get_area(H)
-		if(player_area.type != ship_area.type)
+		var/player_ship_name = ""
+		// Извлекаем название корабля из названия области игрока
+		var/list/player_name_parts = splittext(player_area.name, " ")
+		if(length(player_name_parts) >= 2)
+			player_ship_name = "[player_name_parts[1]] [player_name_parts[2]]"
+		
+		// Проверяем, находятся ли консоль и игрок на одном корабле
+		if(console_ship_name != player_ship_name || !console_ship_name)
 			continue
+			
 		if(H.mind.assigned_role == "Captain" || H.mind.assigned_role == "Manager")
-			to_chat(H, span_boldnotice("Код доступа к торговой консоли: [password]"))
-			to_chat(H, span_notice("Запомните этот код!"))
+			to_chat(H, "<font size='4' color='red'><b>КОД ДОСТУПА К ТОРГОВОЙ КОНСОЛИ: [password]</b></font>")
+			to_chat(H, "<font size='4' color='red'><b>Запомните этот код!</b></font>")
 
 /obj/machinery/computer/trade_mining_console/proc/generate_password()
 	var/list/chars = list("A","B","C","D","E","F","G","H","J","K","L","M","N","P","Q","R","S","T","U","V","W","X","Y","Z","2","3","4","5","6","7","8","9")
 	var/result = ""
 	for(var/i in 1 to 6)
 		result += pick(chars)
+
+	// Логирование генерации пароля
+	var/area/console_area = get_area(src)
+	var/log_message = "Trade console password generated: [result] at [console_area] ([x],[y],[z])"
+	log_admin(log_message)
+	message_admins("[span_adminnotice("Trade Console:")][span_admin(" Password [result] generated at [console_area] ([x],[y],[z]).")]", R_ADMIN)
+
 	return result
 
 /obj/machinery/computer/trade_mining_console/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
-		ui = new(user, src, "MiningConsole")
+		ui = new(user, src, "TradeConsole")
 		ui.open()
 
 /obj/machinery/computer/trade_mining_console/ui_data(mob/user)
 	var/list/data = list()
 	data["logged_in"] = logged_in
 	data["items"] = list()
+	data["categories"] = list()
+	data["selected_category"] = selected_category
+	data["selected_item"] = selected_item
+	data["theme"] = theme
 
 	var/mob/living/carbon/human/H = user
 	var/obj/item/card/bank/card = H?.get_bankcard()
@@ -80,20 +111,51 @@
 		data["user_points"] = card.mining_points
 		data["user_credits"] = card.registered_account?.account_balance || 0
 
-	for(var/item_path in available_items)
-		var/atom/A = item_path
-		var/list/item_data = available_items[item_path]
-		var/stock = item_stock[item_path] || 0
-		var/unlimited = (item_data["stock"] || 0) == 0
-		data["items"] += list(list(
-			"name" = initial(A.name),
-			"path" = "[item_path]",
-			"price" = item_data["price"],
-			"unlock_cost" = item_data["unlock_cost"],
-			"unlocked" = (item_path in unlocked_items),
-			"stock" = stock,
-			"unlimited" = unlimited
-		))
+	// Собираем категории
+	var/list/category_list = list("All")
+	if(available_items && length(available_items))
+		for(var/item_path in available_items)
+			var/list/item_data = available_items[item_path]
+			var/category = item_data["category"] || "General"
+			if(!(category in category_list))
+				category_list += category
+	data["categories"] = category_list
+
+	// Собираем предметы
+	if(available_items && length(available_items))
+		for(var/item_path in available_items)
+			var/atom/A = item_path
+			var/list/item_data = available_items[item_path]
+			var/stock = item_stock[item_path] || 0
+			var/unlimited = (item_data["stock"] || 0) == 0
+			var/category = item_data["category"] || "General"
+			var/description = item_data["description"] || initial(A.desc)
+			var/icon_state = initial(A.icon_state)
+			var/icon_file = initial(A.icon)
+			var/icon_base64 = ""
+			if(icon_file && icon_state)
+				try
+					var/icon/I = new /icon(icon_file, icon_state)
+					icon_base64 = icon2base64(I)
+				catch
+					icon_base64 = ""
+
+			var/list/item_info = list(
+				"name" = initial(A.name),
+				"path" = "[item_path]",
+				"unlock_cost" = item_data["unlock_cost"],
+				"price" = item_data["price"],
+				"unlocked" = (item_path in unlocked_items),
+				"unlimited" = unlimited,
+				"category" = category,
+				"description" = description,
+				"icon_state" = icon_state,
+				"icon_file" = "[icon_file]",
+				"icon_base64" = icon_base64
+			)
+			if(!unlimited)
+				item_info["stock"] = stock
+			data["items"] += list(item_info)
 
 	return data
 
@@ -113,6 +175,15 @@
 				playsound(src, 'sound/machines/triple_beep.ogg', 50, FALSE)
 		if("logout")
 			logged_in = FALSE
+			selected_category = null
+			selected_item = null
+			return TRUE
+		if("select_category")
+			selected_category = params["category"]
+			selected_item = null
+			return TRUE
+		if("select_item")
+			selected_item = params["path"]
 			return TRUE
 		if("unlock")
 			if(!logged_in)

@@ -34,6 +34,9 @@ import './styles/themes/elysium.scss';
 import './styles/themes/pirates.scss';
 // [/CELADON-ADD]
 
+// Interface styles
+import './styles/interfaces/TradeConsole.scss';
+
 import { StoreProvider, configureStore } from './store';
 
 import { captureExternalLinks } from './links';

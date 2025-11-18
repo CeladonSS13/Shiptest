@@ -1,0 +1,123 @@
+.TradeConsole {
+  .technode {
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      background-color: rgba(64, 98, 138, 0.3) !important;
+      border-color: #40628a !important;
+    }
+    
+    &.researched {
+      background-color: rgba(26, 74, 26, 0.8) !important;
+      border-color: #2a5a2a;
+      
+      &:hover {
+        background-color: rgba(26, 74, 26, 1) !important;
+      }
+    }
+    
+    &.available {
+      background-color: rgba(74, 74, 26, 0.8) !important;
+      border-color: #5a5a2a;
+      
+      &:hover {
+        background-color: rgba(74, 74, 26, 1) !important;
+      }
+    }
+  }
+
+  // Nanotrasen theme
+  &.theme-nanotrasen {
+    .technode {
+      &:hover {
+        background-color: rgba(64, 138, 200, 0.3) !important;
+        border-color: #4080c8 !important;
+      }
+      
+      &.researched {
+        background-color: rgba(26, 74, 138, 0.8) !important;
+        border-color: #2a5a8a;
+        
+        &:hover {
+          background-color: rgba(26, 74, 138, 1) !important;
+        }
+      }
+      
+      &.available {
+        background-color: rgba(74, 100, 138, 0.8) !important;
+        border-color: #5a708a;
+        
+        &:hover {
+          background-color: rgba(74, 100, 138, 1) !important;
+        }
+      }
+    }
+  }
+
+  // Syndicate theme
+  &.theme-syndicate {
+    .technode {
+      &:hover {
+        background-color: rgba(138, 64, 64, 0.3) !important;
+        border-color: #8a4040 !important;
+      }
+      
+      &.researched {
+        background-color: rgba(138, 26, 26, 0.8) !important;
+        border-color: #8a2a2a;
+        
+        &:hover {
+          background-color: rgba(138, 26, 26, 1) !important;
+        }
+      }
+      
+      &.available {
+        background-color: rgba(138, 74, 74, 0.8) !important;
+        border-color: #8a5a5a;
+        
+        &:hover {
+          background-color: rgba(138, 74, 74, 1) !important;
+        }
+      }
+    }
+  }
+  
+  .Section__title {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  .category-button {
+    margin-bottom: 4px;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      background-color: rgba(64, 98, 138, 0.5);
+    }
+    
+    &.selected {
+      background-color: #40628a;
+      color: white;
+    }
+  }
+  
+  .item-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+  .status-researched {
+    color: #90EE90;
+  }
+  
+  .status-locked {
+    color: #FFD700;
+  }
+  
+  .status-unavailable {
+    color: #FF6B6B;
+  }
+}
