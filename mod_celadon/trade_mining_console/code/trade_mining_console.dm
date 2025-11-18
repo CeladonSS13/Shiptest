@@ -25,9 +25,8 @@
 	if(available_items && length(available_items))
 		for(var/item_path in available_items)
 			var/list/item_data = available_items[item_path]
-			var/stock = item_data["stock"] || 0
-			if(stock > 0)
-				item_stock[item_path] = stock
+			if(!item_data["unlimited"] && item_data["stock"])
+				item_stock[item_path] = item_data["stock"]
 
 /obj/machinery/computer/trade_mining_console/LateInitialize()
 	. = ..()
@@ -43,9 +42,8 @@
 	if(available_items && length(available_items))
 		for(var/item_path in available_items)
 			var/list/item_data = available_items[item_path]
-			var/stock = item_data["stock"] || 0
-			if(stock > 0)
-				item_stock[item_path] = stock
+			if(!item_data["unlimited"] && item_data["stock"])
+				item_stock[item_path] = item_data["stock"]
 
 /obj/machinery/computer/trade_mining_console/proc/send_password_to_captain()
 	if(QDELETED(src))
@@ -126,8 +124,8 @@
 		for(var/item_path in available_items)
 			var/atom/A = item_path
 			var/list/item_data = available_items[item_path]
+			var/unlimited = item_data["unlimited"] || FALSE
 			var/stock = item_stock[item_path] || 0
-			var/unlimited = (item_data["stock"] || 0) == 0
 			var/category = item_data["category"] || "General"
 			var/description = item_data["description"] || initial(A.desc)
 			var/icon_state = initial(A.icon_state)
@@ -208,8 +206,7 @@
 			if(!item_path || !(item_path in unlocked_items))
 				return
 			var/list/item_data = available_items[item_path]
-			var/stock_limit = item_data["stock"] || 0
-			if(stock_limit > 0)
+			if(!item_data["unlimited"])
 				var/current_stock = item_stock[item_path] || 0
 				if(current_stock <= 0)
 					say("Item out of stock.")
@@ -226,7 +223,7 @@
 					playsound(src, 'sound/machines/terminal_prompt_deny.ogg', 50, FALSE)
 					return
 				card.registered_account.adjust_money(-price, "console_purchase")
-				if(stock_limit > 0)
+				if(!item_data["unlimited"])
 					item_stock[item_path]--
 				if(istype(linked_pad, /obj/machinery/outpost_selling_pad/delivery))
 					var/obj/machinery/outpost_selling_pad/delivery/del_pad = linked_pad

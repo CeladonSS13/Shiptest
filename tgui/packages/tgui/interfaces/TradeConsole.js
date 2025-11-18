@@ -123,9 +123,10 @@ const ItemsPanel = (props, context) => {
   const { act, data } = useBackend(context);
   const { items, selected_category, selected_item, user_points } = data;
 
-  const filteredItems = selected_category && selected_category !== 'All'
-    ? items.filter((item) => item.category === selected_category)
-    : items;
+  const filteredItems =
+    selected_category && selected_category !== 'All'
+      ? items.filter((item) => item.category === selected_category)
+      : items;
 
   return (
     <Section
@@ -166,11 +167,7 @@ const ItemsPanel = (props, context) => {
                   {item.unlocked ? (
                     <span style={{ color: '#90EE90' }}>
                       <Icon name="check" /> Researched
-                      {!item.unlimited && item.stock > 0 && (
-                        <span style={{ color: '#FFD700', marginLeft: '8px' }}>
-                          <Icon name="boxes" /> {item.stock} available
-                        </span>
-                      )}
+
                     </span>
                   ) : (
                     <span
@@ -187,8 +184,14 @@ const ItemsPanel = (props, context) => {
                 </Box>
               </Grid.Column>
               <Grid.Column size={0.2} textAlign="right">
-                {item.unlocked && (
-                  <Icon name="shopping-cart" size={1.5} color="#90EE90" />
+                {item.unlocked ? (
+                  !item.unlimited && item.stock === 0 ? (
+                    <Icon name="times-circle" size={1.5} color="#FF6B6B" />
+                  ) : (
+                    <Icon name="shopping-cart" size={1.5} color="#90EE90" />
+                  )
+                ) : (
+                  <Icon name="lock" size={1.2} color="#FF6B6B" />
                 )}
               </Grid.Column>
             </Grid>
@@ -232,8 +235,8 @@ const ItemDetailsPanel = (props, context) => {
           <Grid.Column size={0.2} textAlign="right">
             <Box
               style={{
-                width: '32px',
-                height: '32px',
+                width: '64px',
+                height: '64px',
                 backgroundColor: '#2a2a2a',
                 border: '1px solid #4e4e4e',
                 borderRadius: '4px',
@@ -246,8 +249,8 @@ const ItemDetailsPanel = (props, context) => {
                 <img
                   src={`data:image/png;base64,${selectedItemData.icon_base64}`}
                   style={{
-                    width: '32px',
-                    height: '32px',
+                    width: '64px',
+                    height: '64px',
                     imageRendering: 'pixelated',
                   }}
                   alt={selectedItemData.name}
@@ -298,16 +301,13 @@ const ItemDetailsPanel = (props, context) => {
           </Box>
         </Box>
 
-        {!selectedItemData.unlimited && selectedItemData.stock > 0 && (
-          <Box mt={2}>
-            <Icon name="boxes" /> Available: <b>{selectedItemData.stock}</b>{' '}
-            units
-          </Box>
-        )}
-
-        {selectedItemData.unlimited && (
+        {selectedItemData.unlimited ? (
           <Box mt={2} color="#90EE90">
             <Icon name="infinity" /> Unlimited supply
+          </Box>
+        ) : (
+          <Box mt={2}>
+            <Icon name="boxes" /> Available: <b>{selectedItemData.stock || 0}</b> units
           </Box>
         )}
 
