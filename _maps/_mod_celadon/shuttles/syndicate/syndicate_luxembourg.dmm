@@ -1765,7 +1765,9 @@
 	pixel_y = -14
 	},
 /obj/machinery/newscaster/directional/east,
-/obj/machinery/computer/trade_mining_console/syndicate,
+/obj/machinery/computer/trade_mining_console/syndicate{
+	dir = 1
+	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "Gz" = (

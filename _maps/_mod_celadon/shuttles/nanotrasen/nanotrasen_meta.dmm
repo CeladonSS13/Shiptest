@@ -1957,7 +1957,9 @@
 /area/ship/cargo)
 "jL" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/computer/trade_mining_console/nanotrasen,
+/obj/machinery/computer/trade_mining_console/nanotrasen{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "jS" = (
