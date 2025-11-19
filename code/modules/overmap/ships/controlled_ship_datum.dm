@@ -195,11 +195,15 @@
 	//SHOULD be called first
 	. = ..()
 	SSovermap.controlled_ships -= src
-	current_overmap.controlled_ships -= src
+	// [CELADON-ADD] - FIXES_CORRECT_DEL_SHIP_HELM
+	current_overmap?.controlled_ships -= src
+	for(var/obj/machinery/computer/helm/helm as anything in helms)
+		helm.current_ship = null
+	// [/CELADON-ADD]
 	helms.Cut()
 	QDEL_LIST(missions)
 	LAZYCLEARLIST(owner_candidates)
-	if(!QDELETED(shuttle_port))
+	if(shuttle_port && !QDELETED(shuttle_port))	// [CELADON-ADD] - FIXES_CORRECT_DEL_SHIP_HELM
 		shuttle_port.current_ship = null
 		qdel(shuttle_port, TRUE)
 		shuttle_port = null
@@ -377,6 +381,10 @@
 		shuttle_area.rename_area("[name] [initial(shuttle_area.name)]")
 
 /datum/overmap/ship/controlled/proc/is_join_option()
+	// [CELADON-ADD] - FIXES_CORRECT_DEL_SHIP_HELM
+	if(!shuttle_port)
+		return FALSE
+	// [/CELADON-ADD]
 	return (length(shuttle_port.spawn_points) >= 1) && (length(job_slots) >= 1) && join_mode != SHIP_JOIN_MODE_CLOSED
 
 /datum/overmap/ship/controlled/proc/get_application(mob/applicant)

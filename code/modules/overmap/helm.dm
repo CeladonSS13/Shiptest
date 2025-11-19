@@ -89,7 +89,14 @@
 /obj/machinery/computer/helm/Destroy()
 	. = ..()
 	SStgui.close_uis(src)
-	ASSERT(length(concurrent_users) == 0)
+	// [CELADON-EDIT] - FIXES_CORRECT_DEL_SHIP_HELM - Проверка на current_ship и shuttle_port, существуют ли они
+	// ASSERT(length(concurrent_users) == 0)	// ORIGINAL
+	for(var/user_ref in concurrent_users)
+		var/mob/user = locate(user_ref)
+		if(user?.client && current_ship?.token)
+			user.client.clear_map(current_ship.token.map_name)
+	concurrent_users.Cut()
+	// [/CELADON-EDIT]
 	QDEL_NULL(ntnet_relay)
 	SSpoints_of_interest.remove_point_of_interest(src)
 	if(current_ship)
@@ -128,6 +135,8 @@
 	else
 		priority_announce("Bluespace Jump Initiated.", sender_override = "[current_ship.name] Bluespace Pylon", sound = 'sound/magic/lightningbolt.ogg', zlevel = virtual_z())
 	if(!jump_destination)
+		for(var/obj/machinery/computer/helm/helm as anything in current_ship.helms)
+			SStgui.close_uis(helm)
 		qdel(current_ship)
 		return
 	if(jump_coords)
@@ -162,6 +171,10 @@
 	// Update UI
 	if(!current_ship && !reload_ship())
 		return
+	// [CELADON-ADD] - FIXES_CORRECT_DEL_SHIP_HELM - Проверяем существование порта у шипа
+	if(!current_ship?.shuttle_port)
+		return
+	// [/CELADON-ADD]
 
 	if(isliving(user) && !viewer && check_keylock())
 		return
@@ -197,7 +210,10 @@
 
 /obj/machinery/computer/helm/ui_data(mob/user)
 	. = list()
-	if(!current_ship)
+	// [CELADON-ADD] - FIXES_CORRECT_DEL_SHIP_HELM
+	// if(!current_ship)	// ORIGINAL
+	if(!current_ship || !current_ship.shuttle_port)
+	// [/CELADON-ADD]
 		return
 
 	.["calibrating"] = calibrating
@@ -306,6 +322,8 @@
 	// [/CELADON-ADD] - subshuttles fix
 /obj/machinery/computer/helm/ui_static_data(mob/user)
 	. = list()
+	if(!current_ship || !current_ship.shuttle_port)
+		return
 	.["isViewer"] = viewer || (!allow_ai_control && issilicon(user))
 	.["mapRef"] = current_ship.token.map_name
 	.["shipInfo"] = list(
@@ -504,8 +522,9 @@
 	// Living creature or not, we remove you anyway.
 	concurrent_users -= user_ref
 	// Unregister map objects
-	if(current_ship)
+	if(current_ship?.token)	// [CELADON-EDIT] - FIXES_CORRECT_DEL_SHIP_HELM // if(current_ship) // ORIGINAL
 		user.client?.clear_map(current_ship.token.map_name)
+	if(current_ship)	// [CELADON-ADD] - FIXES_CORRECT_DEL_SHIP_HELM
 		if(current_ship.burn_direction > BURN_NONE && !length(concurrent_users) && !viewer && is_living) // If accelerating with nobody else to stop it
 			say("Pilot absence detected, engaging acceleration safeties.")
 			current_ship.change_heading(BURN_NONE)
