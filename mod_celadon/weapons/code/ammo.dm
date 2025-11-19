@@ -70,6 +70,13 @@
 	)
 
 /obj/item/disk/design_disk/a556_42
+	name = "Design Disk 5.56x42mm Ammo"
 	design_name = "5.56x42mm Ammo"
-	desc = "A design disk containing the pattern for a refill box of standard 5.56x42mm ammo, used in Hydra."
+	desc = "A design disk containing the pattern for a refill box of standard 5.56x42mm ammo."
 	starting_blueprints = (/datum/design/a556_42)
+
+/obj/item/disk/design_disk/a762_40
+	name = "Design Disk 7.62x40mm Ammo"
+	design_name = "7.62x40mm Ammo"
+	desc = "A design disk containing the pattern for a refill box of standard 7.62x40mm ammo."
+	starting_blueprints = (/datum/design/a762_40)

@@ -27,3 +27,13 @@
 	build_path = /obj/item/storage/box/ammo/a308/surplus
 	category = list("Ammo")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+/datum/design/a762_40
+	name = "Обычные патроны 5.56x42mm"
+	desc = "Коробка обычных патронов 5.56x42mm."
+	id = "a762_40"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 20000)
+	build_path = /obj/item/storage/box/ammo/a762_40
+	category = list("Ammo")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
