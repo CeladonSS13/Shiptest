@@ -54,7 +54,7 @@
 	desc = "A box containing light tactical equipment."
 
 /obj/item/storage/box/inteq/tactical/PopulateContents()
-	new /obj/item/clothing/suit/armor/vest/alt(src)
+	new /obj/item/clothing/suit/armor/vest/marine/frontier(src)
 	new /obj/item/storage/guncase/rottweiler(src)
 
 /obj/item/storage/box/inteq/vanguard
@@ -62,13 +62,14 @@
 	desc = "A box containing vanguard equipment."
 
 /obj/item/storage/box/inteq/vanguard/PopulateContents()
+	new /obj/item/clothing/head/beret/sec/hos/inteq/honorable(src)
 	new /obj/item/clothing/suit/armor/hos/inteq/honorable(src)
 	new /obj/item/gun/ballistic/revolver/horizonx(src)
+	new /obj/item/storage/box/ammo/a357_hp(src)
+	new /obj/item/storage/box/ammo/a357_hp(src)
 	new /obj/item/ammo_box/a357(src)
 	new /obj/item/ammo_box/a357(src)
 	new /obj/item/ammo_box/a357(src)
-	new /obj/item/ammo_box/a357/hp(src)
-	new /obj/item/ammo_box/a357/hp(src)
 	new /obj/item/grenade/stingbang(src)
 	new /obj/item/grenade/stingbang(src)
 	new /obj/item/clothing/glasses/hud/security/night(src)
@@ -80,4 +81,4 @@
 /obj/item/storage/box/inteq/specialist/PopulateContents()
 	new /obj/item/melee/duelenergy/saber/yellow(src)
 	new /obj/item/reagent_containers/hypospray/combat(src)
-	new /obj/item/reagent_containers/hypospray/medipen/stimpack(src)
+	new /obj/item/reagent_containers/hypospray/medipen/combat_drug(src)
