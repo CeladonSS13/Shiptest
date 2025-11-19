@@ -4975,11 +4975,13 @@
 /turf/closed/mineral/random/rockplanet,
 /area/outpost/hallway/central)
 "dkc" = (
-/obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/obj/structure/disposalpipe/segment{
 	dir = 10
 	},
 /turf/open/floor/plasteel/tech/techmaint,
@@ -10936,7 +10938,10 @@
 	pixel_y = 11;
 	pixel_x = -29
 	},
-/turf/open/floor/plasteel/tech/techmaint,
+/obj/effect/turf_decal/spline/fancy/transparent/orange{
+	dir = 6
+	},
+/turf/open/floor/plasteel/mono,
 /area/outpost/fraction/inteq)
 "hfF" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -12841,6 +12846,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/fraction/inteq)
 "iqz" = (
@@ -12915,7 +12923,8 @@
 /area/outpost/operations)
 "isZ" = (
 /obj/machinery/computer/cargo/faction/inteq,
-/turf/open/floor/plasteel/tech/techmaint,
+/obj/effect/turf_decal/spline/fancy/transparent/orange,
+/turf/open/floor/plasteel/mono,
 /area/outpost/cargo/faction/inteq)
 "itc" = (
 /obj/structure/weightmachine/stacklifter,
@@ -17317,8 +17326,7 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/relax_room)
 "lct" = (
-/obj/structure/disposalpipe/trunk,
-/obj/machinery/disposal/bin,
+/obj/structure/sign/flag/inteq/directional/south,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/fraction/inteq)
 "lcL" = (
@@ -19811,6 +19819,10 @@
 	dir = 10;
 	network = list("outpostelysium");
 	pixel_y = -5
+	},
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk{
+	dir = 4
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/fraction/inteq)
@@ -25666,7 +25678,8 @@
 	pixel_x = -7
 	},
 /obj/structure/table,
-/turf/open/floor/plasteel/tech/techmaint,
+/obj/effect/turf_decal/spline/fancy/transparent/orange,
+/turf/open/floor/plasteel/mono,
 /area/outpost/fraction/inteq)
 "qIA" = (
 /obj/structure/fluff/hedge,
@@ -27347,7 +27360,10 @@
 "rKt" = (
 /obj/structure/rack,
 /obj/effect/spawner/random/maintenance,
-/turf/open/floor/plasteel/tech/techmaint,
+/obj/effect/turf_decal/spline/fancy/transparent/orange{
+	dir = 4
+	},
+/turf/open/floor/plasteel/mono,
 /area/outpost/fraction/inteq)
 "rKW" = (
 /obj/structure/disposalpipe/segment,
@@ -30135,7 +30151,10 @@
 /area/outpost/crew/bar/bar_zone)
 "tJa" = (
 /obj/structure/table,
-/turf/open/floor/plasteel/tech/techmaint,
+/obj/effect/turf_decal/spline/fancy/transparent/orange{
+	dir = 10
+	},
+/turf/open/floor/plasteel/mono,
 /area/outpost/fraction/inteq)
 "tJj" = (
 /obj/effect/turf_decal/siding/wood{
@@ -32426,6 +32445,16 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/concrete/slab_2,
 /area/outpost/hallway/central)
+"vdH" = (
+/obj/machinery/vending/security/marine/inteq{
+	density = 0;
+	pixel_y = 32
+	},
+/obj/effect/turf_decal/industrial/loading{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/outpost/fraction/inteq)
 "vdN" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -34445,6 +34474,14 @@
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/outpost/hallway/fore)
+"wnU" = (
+/obj/structure/sign/flag/inteq/directional/south{
+	dir = 4;
+	pixel_y = 0;
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/fraction/inteq)
 "woz" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -34832,6 +34869,11 @@
 	},
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/operations)
+"wzU" = (
+/obj/structure/chair/bench/orange/directional/west,
+/obj/structure/sign/flag/inteq/directional/west,
+/turf/open/floor/plasteel/dark,
+/area/outpost/fraction/inteq)
 "wAD" = (
 /obj/vehicle/ridden/lavaboat{
 	dir = 8;
@@ -36268,6 +36310,14 @@
 /obj/structure/sign/nanotrasen/ns,
 /turf/closed/indestructible/reinforced,
 /area/outpost/fraction/nanotrasen)
+"xFY" = (
+/obj/structure/rack,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/turf_decal/spline/fancy/transparent/orange{
+	dir = 6
+	},
+/turf/open/floor/plasteel/mono,
+/area/outpost/fraction/inteq)
 "xGD" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 8
@@ -58617,12 +58667,12 @@ ubZ
 taJ
 tmh
 rKt
-rKt
+xFY
 uiC
 ycY
 fIp
 rZe
-iWV
+wnU
 iWV
 foJ
 ejj
@@ -58803,7 +58853,7 @@ jkY
 iJr
 fFI
 tmh
-ewN
+lct
 ewN
 uuh
 kjN
@@ -59177,8 +59227,8 @@ qTX
 xhC
 fFI
 tmh
-tJa
-ewN
+tmh
+vdH
 jpq
 xKE
 phI
@@ -59741,7 +59791,7 @@ tmh
 hfa
 ewN
 ewN
-lct
+ewN
 dkc
 lyr
 kfv
@@ -59934,7 +59984,7 @@ tmh
 avg
 wIO
 ovf
-ovf
+wzU
 fXF
 eAl
 cTW
