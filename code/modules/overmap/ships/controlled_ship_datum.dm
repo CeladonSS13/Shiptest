@@ -195,7 +195,11 @@
 	//SHOULD be called first
 	. = ..()
 	SSovermap.controlled_ships -= src
-	current_overmap?.controlled_ships -= src	// [CELADON-ADD] - FIXES_CORRECT_DEL_SHIP_HELM
+	// [CELADON-ADD] - FIXES_CORRECT_DEL_SHIP_HELM
+	current_overmap?.controlled_ships -= src
+	for(var/obj/machinery/computer/helm/helm as anything in helms)
+		helm.current_ship = null
+	// [/CELADON-ADD]
 	helms.Cut()
 	QDEL_LIST(missions)
 	LAZYCLEARLIST(owner_candidates)

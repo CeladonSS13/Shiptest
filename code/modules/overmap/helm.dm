@@ -127,11 +127,8 @@
 	else
 		priority_announce("Bluespace Jump Initiated.", sender_override = "[current_ship.name] Bluespace Pylon", sound = 'sound/magic/lightningbolt.ogg', zlevel = virtual_z())
 	if(!jump_destination)
-		// [CELADON-ADD] - FIXES_CORRECT_DEL_SHIP_HELM - Принудительно очищаем current_ship
 		for(var/obj/machinery/computer/helm/helm as anything in current_ship.helms)
 			SStgui.close_uis(helm)
-			helm.current_ship = null
-		// [/CELADON-ADD]
 		qdel(current_ship)
 		return
 	if(jump_coords)
@@ -522,8 +519,9 @@
 	// Living creature or not, we remove you anyway.
 	concurrent_users -= user_ref
 	// Unregister map objects
-	if(current_ship)
+	if(current_ship?.token)	// [CELADON-EDIT] - FIXES_CORRECT_DEL_SHIP_HELM // if(current_ship) // ORIGINAL
 		user.client?.clear_map(current_ship.token.map_name)
+	if(current_ship)	// [CELADON-ADD] - FIXES_CORRECT_DEL_SHIP_HELM
 		if(current_ship.burn_direction > BURN_NONE && !length(concurrent_users) && !viewer && is_living) // If accelerating with nobody else to stop it
 			say("Pilot absence detected, engaging acceleration safeties.")
 			current_ship.change_heading(BURN_NONE)
