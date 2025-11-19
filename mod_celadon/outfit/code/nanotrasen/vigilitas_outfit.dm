@@ -4,7 +4,7 @@
 	name = "NT Vigilitas - Leutenant"
 	job_icon = "clip_cmm6"
 
-	jobtype = /datum/job/hos
+	jobtype = /datum/job/captain
 
 	id = /obj/item/card/id/cel/nanotrasen/vigilitas_leutenant
 
@@ -36,7 +36,7 @@
 	name = "NT Vigilitas - Sergeant"
 	job_icon = "clip_cmm5"
 
-	jobtype = /datum/job/warden
+	jobtype = /datum/job/hos
 
 	id = /obj/item/card/id/cel/nanotrasen/vigilitas_sergeant
 	belt = /obj/item/pda/heads/hos
