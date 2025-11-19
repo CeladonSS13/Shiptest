@@ -339,6 +339,10 @@ FIXES_CARDS_DRAW_RANDOM
 
 FIXES_CQC_GRAB
 - `code/modules/mob/living/carbon/carbon_defense.dm` : Останавливаем захват по самому себе, проверяем что кровотечение уже есть на конечностях. Ну блиид там. Короче странный сикуси момент
+
+FIXES_CORRECT_DEL_SHIP_HELM
+- `code/modules/overmap/helm.dm`							:	проверки на очищение шипа
+- `code/modules/overmap/ships/controlled_ship_datum.dm`		:	еще тут проверки
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
