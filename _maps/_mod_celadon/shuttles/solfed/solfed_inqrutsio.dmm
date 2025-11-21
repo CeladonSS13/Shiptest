@@ -68,6 +68,7 @@
 /area/ship/hallway/central)
 "bp" = (
 /obj/structure/reagent_dispensers/watertank,
+/obj/machinery/light/colored/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "br" = (
@@ -219,7 +220,7 @@
 /obj/machinery/iv_drip,
 /obj/effect/turf_decal/corner/opaque/lightgrey/mono,
 /turf/open/floor/plasteel/white,
-/area/ship/medical)
+/area/ship/hallway/central)
 "eW" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/effect/turf_decal/corner/opaque/lightgrey/mono,
@@ -228,7 +229,7 @@
 	},
 /obj/machinery/light/colored/directional/east,
 /turf/open/floor/plasteel/white,
-/area/ship/medical)
+/area/ship/hallway/central)
 "fs" = (
 /obj/structure/cable{
 	icon_state = "2-4";
@@ -358,7 +359,7 @@
 /obj/effect/turf_decal/corner/opaque/lightgrey/mono,
 /obj/item/food/baguette,
 /turf/open/floor/plasteel/white,
-/area/ship/crew/canteen/kitchen)
+/area/ship/hallway/central)
 "iv" = (
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
@@ -381,7 +382,7 @@
 	pixel_y = 21
 	},
 /turf/open/floor/plasteel/white,
-/area/ship/medical)
+/area/ship/hallway/central)
 "jb" = (
 /obj/machinery/atmospherics/components/unary/portables_connector{
 	dir = 1
@@ -571,7 +572,7 @@
 /obj/structure/curtain/cloth/blacknormal,
 /obj/effect/turf_decal/corner/opaque/lightgrey/mono,
 /turf/open/floor/plasteel/white,
-/area/ship/medical)
+/area/ship/hallway/central)
 "nw" = (
 /obj/machinery/atmospherics/pipe/simple/orange/hidden,
 /obj/structure/cable{
@@ -586,9 +587,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
-"nO" = (
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/crew/canteen/kitchen)
 "nS" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/folder/documents/solfed{
@@ -634,7 +632,7 @@
 	},
 /obj/effect/turf_decal/corner/opaque/lightgrey/mono,
 /turf/open/floor/plasteel/white,
-/area/ship/medical)
+/area/ship/hallway/central)
 "oL" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 1
@@ -671,9 +669,6 @@
 /obj/item/tank/jetpack/oxygen,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
-"pG" = (
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/medical)
 "pX" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -721,7 +716,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue/mono,
 /obj/effect/turf_decal/corner/opaque/lightgrey/mono,
 /turf/open/floor/plasteel/dark,
-/area/ship/crew/canteen/kitchen)
+/area/ship/hallway/central)
 "rn" = (
 /obj/structure/window/reinforced/tinted{
 	color = "#2d2a4e"
@@ -739,7 +734,7 @@
 	pixel_y = 3
 	},
 /turf/open/floor/plasteel/white,
-/area/ship/medical)
+/area/ship/hallway/central)
 "rq" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
@@ -910,7 +905,7 @@
 /obj/item/food/grown/citrus/lemon,
 /obj/machinery/light/colored/directional/east,
 /turf/open/floor/plasteel/dark,
-/area/ship/crew/canteen/kitchen)
+/area/ship/hallway/central)
 "tj" = (
 /obj/effect/turf_decal/corner/opaque/black/diagonal,
 /obj/structure/extinguisher_cabinet/directional/east{
@@ -980,7 +975,7 @@
 	pixel_x = 1
 	},
 /turf/open/floor/plasteel/white,
-/area/ship/crew/canteen/kitchen)
+/area/ship/hallway/central)
 "tX" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/mono,
 /obj/structure/neon_spline/yellow{
@@ -1004,6 +999,10 @@
 /obj/structure/sign/flag/solfed/directional/north,
 /obj/item/kirbyplants/photosynthetic{
 	pixel_x = -7
+	},
+/obj/machinery/turretid/ship{
+	id = "Inqrutsio_turrets";
+	pixel_x = -27
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
@@ -1087,7 +1086,7 @@
 	density = 0
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/crew/canteen/kitchen)
+/area/ship/hallway/central)
 "vS" = (
 /obj/effect/turf_decal/corner/opaque/solgovgold/diagonal{
 	dir = 4
@@ -1255,7 +1254,7 @@
 "BK" = (
 /obj/item/clothing/suit/space/hardsuit/solfed,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/crew/canteen/kitchen)
+/area/ship/hallway/central)
 "BT" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1658,17 +1657,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
-"HS" = (
-/obj/structure/window/reinforced/fulltile/shuttle{
-	color = "#2d2a4e"
-	},
-/obj/structure/grille,
-/obj/machinery/door/poddoor/shutters/preopen{
-	dir = 4;
-	id = "Inqrutsio_bridge"
-	},
-/turf/open/floor/plating,
-/area/ship/engineering)
 "Id" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2139,7 +2127,7 @@
 	pixel_y = 20
 	},
 /turf/open/floor/plasteel/white,
-/area/ship/crew/canteen/kitchen)
+/area/ship/hallway/central)
 "Uo" = (
 /obj/effect/turf_decal/corner/opaque/black/diagonal{
 	dir = 8
@@ -2171,7 +2159,7 @@
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/crew/canteen/kitchen)
+/area/ship/hallway/central)
 "UY" = (
 /obj/structure/bed/roller/future,
 /obj/machinery/defibrillator_mount/loaded{
@@ -2180,7 +2168,7 @@
 /obj/effect/turf_decal/corner/opaque/lightgrey/mono,
 /obj/item/clothing/head/solfed/surgical,
 /turf/open/floor/plasteel/white,
-/area/ship/medical)
+/area/ship/hallway/central)
 "VF" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2301,6 +2289,7 @@
 "YK" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/colored/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "Ze" = (
@@ -2692,9 +2681,9 @@ Le
 Le
 Le
 Le
-HS
+Le
 uD
-HS
+Le
 Le
 Le
 Le
@@ -2791,7 +2780,7 @@ qK
 GA
 xo
 xo
-Fp
+xo
 Ez
 xe
 aG
@@ -2809,7 +2798,7 @@ qK
 qK
 qK
 Wu
-pG
+Fp
 eM
 nb
 jR
@@ -2817,7 +2806,7 @@ La
 ln
 qP
 UL
-nO
+Fp
 Wu
 qK
 qK
@@ -2829,7 +2818,7 @@ qK
 qK
 qK
 qK
-pG
+Fp
 iT
 oA
 nE
@@ -2837,7 +2826,7 @@ sO
 TC
 tO
 vO
-nO
+Fp
 qK
 qK
 qK
@@ -2849,7 +2838,7 @@ qK
 qK
 qK
 Gc
-pG
+Fp
 UY
 oA
 Fa
@@ -2869,7 +2858,7 @@ qK
 qK
 qK
 qK
-pG
+Fp
 eW
 rn
 HM
@@ -2877,7 +2866,7 @@ Id
 YH
 Uk
 sS
-nO
+Fp
 qK
 qK
 qK
@@ -2889,15 +2878,15 @@ qK
 qK
 qK
 qK
-pG
-pG
-pG
+Fp
+Fp
+Fp
 Fp
 sC
 Fp
-nO
-nO
-nO
+Fp
+Fp
+Fp
 qK
 qK
 qK
