@@ -2,6 +2,7 @@
 ////////////////////////////////////////////SALAD////////////////////////////////////////////
 /obj/item/food/salad
 	icon = 'icons/obj/food/soupsalad.dmi'
+	icon_state = "ambrosiavulgariscrushed"
 	trash_type = /obj/item/reagent_containers/glass/bowl
 	bite_consumption = 3
 	w_class = WEIGHT_CLASS_NORMAL

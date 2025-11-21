@@ -66,3 +66,9 @@
 
 /obj/item/clothing/under/syndicate/cybersun/officer
 	roll_sleeves = FALSE
+
+//Путь до файла - code/modules/clothing/under/jobs/engineering.dm
+//Путь до атласа - icons/obj/clothing/under/engineering.dmi
+
+/obj/item/clothing/under/rank/engineering/engineer/hazard
+	roll_sleeves = FALSE

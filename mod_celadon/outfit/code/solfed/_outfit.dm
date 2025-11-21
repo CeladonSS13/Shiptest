@@ -7,6 +7,11 @@
 	box = /obj/item/storage/box/survival/solfed
 	id = /obj/item/card/id/cel/solfed
 
+	backpack = /obj/item/storage/backpack/solfed
+	satchel = /obj/item/storage/backpack/satchel/solfed
+	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
+	courierbag = /obj/item/storage/backpack/messenger
+
 /datum/outfit/job/cel/solfed/proc/get_solfed_captain_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
 	for (var/obj/item/O in H.contents)
@@ -128,8 +133,6 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat/science
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/science
 
-	backpack = /obj/item/storage/backpack/solfed
-	satchel = /obj/item/storage/backpack/satchel/solfed
 	courierbag = /obj/item/storage/backpack/messenger/tox
 
 /datum/outfit/job/cel/solfed/scientist/roboticist
@@ -156,12 +159,10 @@
 	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solfed/camo
 	shoes = /obj/item/clothing/shoes/jackboots
-	backpack = /obj/item/storage/backpack/solfed
 	suit = /obj/item/clothing/suit/armor/vest
 	mask = /obj/item/clothing/mask/gas/sechailer
 	r_pocket = null
 	l_pocket = null
-	back = /obj/item/storage/backpack/solfed
 	ears = /obj/item/radio/headset/alt
 	gloves = /obj/item/clothing/gloves/combat/solfed
 	head = /obj/item/clothing/head/solfed/beret
@@ -170,10 +171,6 @@
 	l_pocket = /obj/item/restraints/handcuffs
 	r_pocket = /obj/item/assembly/flash/handheld
 	backpack_contents = null
-	backpack = /obj/item/storage/backpack/security
-	satchel = /obj/item/storage/backpack/satchel/sec
-	duffelbag = /obj/item/storage/backpack/duffelbag/sec
-	courierbag = /obj/item/storage/backpack/messenger/sec
 
 	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
 
@@ -297,11 +294,6 @@
 	id = /obj/item/card/id/cel/solfed/command/hop
 	uniform = /obj/item/clothing/under/solfed
 	shoes = /obj/item/clothing/shoes/laceup
-
-	backpack = /obj/item/storage/backpack/solfed
-	satchel = /obj/item/storage/backpack/satchel/solfed
-	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
-	courierbag = /obj/item/storage/backpack/messenger/com
 	ears = /obj/item/radio/headset/solgov/captain
 	head = /obj/item/clothing/head/solgov
 	neck = /obj/item/clothing/neck/cloak/overseer
@@ -330,11 +322,6 @@
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
 	suit = /obj/item/clothing/suit/toggle/labcoat/paramedic
-	backpack = /obj/item/storage/backpack/solfed
-
-	satchel = /obj/item/storage/backpack/satchel/solfed
-	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
-	courierbag = /obj/item/storage/backpack/messenger/med
 
 /datum/outfit/job/cel/solfed/doctor/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -369,9 +356,6 @@
 	belt = /obj/item/storage/belt/utility/full/engi
 	suit = /obj/item/clothing/suit/hazardvest/solgov
 
-	backpack = /obj/item/storage/backpack/solfed
-	satchel = /obj/item/storage/backpack/satchel/solfed
-	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
 
 /datum/outfit/job/cel/solfed/engineer/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -388,9 +372,6 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/solfed/cap
 
-	backpack = /obj/item/storage/backpack/solfed
-	satchel = /obj/item/storage/backpack/satchel/solfed
-	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
 
 /datum/outfit/job/cel/solfed/miner
 	name = "SF - Vertrags-Miner"
@@ -403,10 +384,6 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	head = /obj/item/clothing/head/hardhat/solfed
 	belt = /obj/item/storage/belt/mining
-
-	backpack = /obj/item/storage/backpack/solfed
-	satchel = /obj/item/storage/backpack/satchel/solfed
-	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
 
 	backpack_contents = list(
 		/obj/item/flashlight/seclite = 1,\
@@ -433,11 +410,6 @@
 	neck = /obj/item/clothing/neck/tie/black
 	suit = /obj/item/clothing/suit/solgov/overcoat
 
-	backpack = /obj/item/storage/backpack/solfed
-	satchel = /obj/item/storage/backpack/satchel/solfed
-	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
-	courierbag = /obj/item/storage/backpack/messenger/com
-
 /datum/outfit/job/cel/solfed/miner/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_general_access(H)
@@ -453,6 +425,7 @@
 	uniform = /obj/item/clothing/under/rank/medical/gown
 	alt_suit = null
 	shoes = /obj/item/clothing/shoes/sandal/slippers
+
 //							///
 //MARK:	Elysium Brigade
 //							///
@@ -468,7 +441,6 @@
 	suit = /obj/item/clothing/suit/armor/solfed/formal/elysium
 	shoes = /obj/item/clothing/shoes/combat
 	ears = /obj/item/radio/headset/solgov/alt/captain
-	backpack = /obj/item/storage/backpack/solfed
 	gloves = /obj/item/clothing/gloves/combat
 	neck = null
 
@@ -553,10 +525,6 @@
 	suit = /obj/item/clothing/suit/armor/solfed/formal
 	mask = /obj/item/clothing/mask/gas/solfed
 
-	backpack = /obj/item/storage/backpack/solfed
-	satchel = /obj/item/storage/backpack/satchel/solfed
-	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
-
 	accessory = null
 
 /datum/outfit/job/cel/solfed/sergeant/combat
@@ -570,10 +538,6 @@
 	belt = /obj/item/storage/belt/military/solfed
 	suit = /obj/item/clothing/suit/armor/vest/marine
 
-	backpack = /obj/item/storage/backpack/solfed
-	satchel = /obj/item/storage/backpack/satchel/solfed
-	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
-
 /datum/outfit/job/cel/solfed/marine/combat
 	gloves = /obj/item/clothing/gloves/combat/solfed
 	mask = /obj/item/clothing/mask/gas/solfed
@@ -583,10 +547,6 @@
 	head = /obj/item/clothing/head/helmet/solfed/m11
 	belt = /obj/item/storage/belt/military/solfed
 	suit = /obj/item/clothing/suit/armor/vest/marine/medium
-
-	backpack = /obj/item/storage/backpack/solfed
-	satchel = /obj/item/storage/backpack/satchel/solfed
-	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
 
 /datum/outfit/job/cel/solfed/doctor/combat
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
@@ -598,10 +558,6 @@
 	belt = /obj/item/storage/belt/military/solfed/medical
 	suit = /obj/item/clothing/suit/armor/vest/marine
 
-	backpack = /obj/item/storage/backpack/solfed
-	satchel = /obj/item/storage/backpack/satchel/solfed
-	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
-
 /datum/outfit/job/cel/solfed/engineer/combat
 	gloves = /obj/item/clothing/gloves/combat/solfed
 	mask = /obj/item/clothing/mask/gas/solfed
@@ -611,7 +567,3 @@
 	head = /obj/item/clothing/head/helmet/solfed/m11
 	belt = /obj/item/storage/belt/utility/full/engi
 	suit = /obj/item/clothing/suit/armor/vest/marine
-
-	backpack = /obj/item/storage/backpack/solfed
-	satchel = /obj/item/storage/backpack/satchel/solfed
-	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
