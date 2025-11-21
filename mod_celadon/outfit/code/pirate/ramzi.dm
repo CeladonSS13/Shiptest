@@ -6,7 +6,7 @@
 	uniform = /obj/item/clothing/under/syndicate/ramzi
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
-	ears = /obj/item/radio/headset/pirate/alt
+	ears = /obj/item/radio/headset/pirate
 	neck = /obj/item/clothing/neck/dogtag/ramzi
 	id = /obj/item/card/id/cel/ramzi
 	box = /obj/item/storage/box/survival/ramzi
@@ -30,6 +30,7 @@
 
 	id_assignment = "Battle Master"
 	jobtype = /datum/job/captain
+	faction_icon = "bg_pirate"
 	job_icon = "piratecaptain"
 
 	id = /obj/item/card/id/cel/ramzi/battlemaster
@@ -37,16 +38,16 @@
 	ears = /obj/item/radio/headset/pirate/alt/captain
 	head = /obj/item/clothing/head/ramzi/beret
 	suit = /obj/item/clothing/suit/armor/ramzi/officer
+	belt = /obj/item/storage/belt/security/webbing/ramzi
 
 /datum/outfit/job/cel/pirate/ramzi/trooper
-	job_icon = "assistant"
+	job_icon = "pirate"
 	name = "Ramzi Clique Rondo - Commando"
 
 	id_assignment = "Commando"
 	jobtype = /datum/job/officer
 
 	id = /obj/item/card/id/cel/ramzi/commando
-	belt = /obj/item/storage/belt/security/webbing/ramzi
 
 	l_pocket = /obj/item/flashlight/seclite
 
@@ -58,8 +59,8 @@
 	uniform = /obj/item/clothing/under/syndicate/ramzi
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
-	ears = /obj/item/radio/headset/pirate/alt
-	box = /obj/item/storage/box/survival
+	ears = /obj/item/radio/headset/pirate
+	box = /obj/item/storage/box/survival/ramzi
 	id = /obj/item/card/id
 
 	faction_icon = "bg_pirate"
@@ -90,6 +91,8 @@
 
 /datum/outfit/job/cel/pirate/ramzi/captain
 	name = "Ramzi Clique - Captain"
+
+	faction_icon = "bg_pirate"
 	job_icon = "piratecaptain"
 
 	jobtype = /datum/job/captain

@@ -6,6 +6,8 @@
 
 	id = /obj/item/card/id/cel/nanotrasen/nakamura_ce
 
+	l_pocket = /obj/item/pda/heads/ce
+
 // MARK: Command
 
 /datum/outfit/job/cel/nanotrasen/quartermaster/nakamura
@@ -14,6 +16,8 @@
 
 	id = /obj/item/card/id/cel/nanotrasen/nakamura_command
 
+	belt = /obj/item/pda/quartermaster
+
 // MARK: Crew
 
 /datum/outfit/job/cel/nanotrasen/atmos/nakamura
@@ -21,6 +25,9 @@
 	job_icon = "atmospherictechnician"
 
 	id = /obj/item/card/id/cel/nanotrasen/nakamura_atmostechnic
+
+	belt = /obj/item/storage/belt/utility/atmostech
+	l_pocket = /obj/item/pda/atmos
 
 /datum/outfit/job/cel/nanotrasen/engineer/nakamura
 	name = "NT Nakamura - Engineer"
