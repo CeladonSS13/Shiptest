@@ -13,6 +13,7 @@
 /obj/effect/turf_decal/trimline/opaque/solgovblue/line{
 	dir = 1
 	},
+/obj/machinery/newscaster/directional/south,
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
 "az" = (
@@ -689,23 +690,25 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
 "nS" = (
-/obj/item/folder/documents/solfed{
-	pixel_y = 3
-	},
 /obj/machinery/airalarm/directional/north,
 /obj/item/pen/solfed{
 	pixel_y = 4;
-	pixel_x = -6
+	pixel_x = -6;
+	layer = 4
 	},
 /obj/item/lighter/zippo/sol{
-	pixel_y = 5;
-	pixel_x = 7
+	pixel_y = 4;
+	pixel_x = 7;
+	layer = 4
 	},
 /obj/structure/window/reinforced/spawner/east,
 /obj/structure/curtain/bounty/half{
 	dir = 8
 	},
 /obj/structure/table/wood/fancy/blue,
+/obj/item/paper_bin{
+	pixel_y = 5
+	},
 /turf/open/floor/wood,
 /area/ship/bridge)
 "od" = (
@@ -725,6 +728,11 @@
 /obj/machinery/fax/solgov,
 /obj/structure/table/wood/fancy/blue,
 /obj/machinery/light/directional/west,
+/obj/item/stamp/solfed/captain{
+	pixel_y = 14;
+	pixel_x = 9
+	},
+/obj/machinery/newscaster/directional/north,
 /turf/open/floor/wood,
 /area/ship/bridge)
 "ow" = (
@@ -800,22 +808,14 @@
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/engineering)
 "qe" = (
-/obj/item/paper_bin{
-	pixel_y = 5
-	},
-/obj/item/stamp/solfed/captain{
-	pixel_y = 8;
-	pixel_x = 1
-	},
-/obj/item/desk_flag/solfed{
-	pixel_y = 22;
-	pixel_x = -6
-	},
 /obj/structure/window/reinforced/spawner/east,
 /obj/structure/curtain/bounty/half{
 	dir = 8
 	},
 /obj/structure/table/wood/fancy/blue,
+/obj/item/radio/intercom/wideband/table{
+	dir = 4
+	},
 /turf/open/floor/wood,
 /area/ship/bridge)
 "qC" = (
@@ -1649,6 +1649,7 @@
 	dir = 8
 	},
 /obj/item/clothing/head/beret/sec/hos,
+/obj/item/folder/documents/solfed,
 /turf/open/floor/wood,
 /area/ship/bridge)
 "DR" = (
@@ -1657,6 +1658,7 @@
 	layer = 5
 	},
 /obj/item/bedsheet/solgov,
+/obj/machinery/newscaster/directional/north,
 /turf/open/floor/wood,
 /area/ship/crew/cryo)
 "DW" = (
@@ -1946,16 +1948,13 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "Ja" = (
-/obj/machinery/computer/secure_data/laptop{
-	dir = 8;
-	pixel_x = 2;
-	pixel_y = 7
-	},
 /obj/structure/window/reinforced/spawner/east,
 /obj/structure/curtain/bounty/half{
 	dir = 8
 	},
-/obj/structure/table/wood/fancy/blue,
+/obj/machinery/computer/helm/solgov{
+	dir = 8
+	},
 /turf/open/floor/wood,
 /area/ship/bridge)
 "Jb" = (
@@ -2074,15 +2073,15 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "Oh" = (
-/obj/machinery/computer/helm{
-	dir = 8;
-	icon_state = "computer-left"
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 9
 	},
 /obj/effect/turf_decal/corner/transparent/solgovblue/mono,
 /obj/effect/turf_decal/corner/transparent/solgovblue/mono,
+/obj/machinery/computer/secure_data{
+	dir = 8;
+	icon_state = "computer-left"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Op" = (
@@ -2272,22 +2271,13 @@
 	pixel_x = 13;
 	pixel_y = 22
 	},
-/obj/machinery/button/door{
-	id = "Inqrutsio_cryo";
-	name = "Cryo Shutters";
-	pixel_y = -8;
-	pixel_x = -23;
-	dir = 4
-	},
-/obj/machinery/button/door{
-	id = "Inqrutsio_cryo";
-	name = "Cryo Shutters";
-	pixel_y = 23;
-	pixel_x = -13;
-	layer = 2.8
-	},
 /obj/structure/window/spawner/north{
 	dir = 2
+	},
+/obj/structure/painting{
+	icon_state = "neznakomka";
+	paint = "prophecy";
+	pixel_x = -32
 	},
 /turf/open/floor/wood,
 /area/ship/crew/cryo)
