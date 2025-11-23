@@ -112,7 +112,7 @@
 	can_be_unanchored = 1;
 	icon_state = "warden";
 	name = "master at arms' locker";
-	req_access_txt = "8485"
+	req_access_txt = "3"
 	},
 /obj/item/clothing/shoes/combat,
 /obj/item/megaphone/sec,
@@ -872,7 +872,7 @@
 	pixel_x = -19;
 	pixel_y = 9;
 	dir = 4;
-	req_access_txt = "8485"
+	req_access_txt = list(19,3)
 	},
 /obj/effect/turf_decal/industrial/traffic/fulltile,
 /obj/effect/turf_decal/industrial/traffic/corner{
@@ -1123,7 +1123,7 @@
 	pixel_x = 18;
 	pixel_y = 9;
 	dir = 8;
-	req_access_txt = "8485"
+	req_access_txt = list(19,3)
 	},
 /obj/effect/turf_decal/industrial/traffic/corner{
 	dir = 4
@@ -1385,7 +1385,7 @@
 	can_be_unanchored = 1;
 	icon_state = "brig_phys";
 	name = "equipment locker";
-	req_access_txt = "8484"
+	req_access_txt = "5"
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/medical)
@@ -3218,7 +3218,7 @@
 "Ob" = (
 /obj/machinery/door/window/northleft{
 	dir = 4;
-	req_access_txt = "8485"
+	req_access_txt = "3"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -4046,7 +4046,7 @@
 	name = "Armory shuters";
 	pixel_x = 6;
 	pixel_y = 25;
-	req_access_txt = "8485"
+	req_access_txt = list(19,3)
 	},
 /obj/machinery/turretid/ship{
 	pixel_y = 34;
