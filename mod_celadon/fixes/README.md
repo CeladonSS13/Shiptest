@@ -307,6 +307,10 @@ FIXES_MEDBOT_RUNTIME_PATH_NULL - Добавляем проверки на null �
 FIXES_HOODED_ICONS
 - 'code/modules/clothing/suits/toggles.dm'
 
+FIXES_CHASM_AND_JAUNTER
+- `code/datums/components/chasm.dm` 					: Делаем как везде нормальную проверку на предмет на поясе
+- `code/modules/mining/equipment/wormhole_jaunter.dm` 	: Внедряем механику бс кристалла. Это лчшее что есть
+
 FIXES_LOCKER_RECHARGE_ENERGYGUN
 - `code/modules/projectiles/guns/energy.dm` : перед падением проверяется, может ли оружие в принципе выстрельнуть без батареи
 
@@ -328,6 +332,11 @@ FIXES_PARROT_DROP_ITEM
 FIXES_CRAFT_MENU
 - `code/datums/components/crafting/crafting.dm` : Обновляем меню крафта автоматически, не в ручную же это делать
 
+FIXES_PHYSICS_AMMO_CASING
+- `mod_celadon/fixes/code/ammo.dm`								: тут прок на то чтобы останавливать физику патрона\гильзы если ты поймал её в руку 
+- `code/modules/projectiles/guns/ballistic.dm`					: тут прок на то чтобы останавливать физику патрона\гильзы если ты вставил её в оружие
+- `code/modules/projectiles/boxes_magazines/_box_magazine.dm`	: тут прок на то чтобы останавливать физику Патрона\гильзы если ты вставил её в обойму
+
 FIXES_LONG_RELOAD_AMMO
 - `code/modules/projectiles/boxes_magazines/_box_magazine.dm` : Прерывает зарядку патронами, если игрок отойдет на растояние. Явно указываю параметр target для do_after чтобы проверка расстояния работала корректно
 
@@ -339,6 +348,10 @@ FIXES_CARDS_DRAW_RANDOM
 
 FIXES_CQC_GRAB
 - `code/modules/mob/living/carbon/carbon_defense.dm` : Останавливаем захват по самому себе, проверяем что кровотечение уже есть на конечностях. Ну блиид там. Короче странный сикуси момент
+
+FIXES_DEL_FISH
+- `code/modules/fishing/fish/_fish.dm` : Фиксим удаление рыбы после повторной разделки
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

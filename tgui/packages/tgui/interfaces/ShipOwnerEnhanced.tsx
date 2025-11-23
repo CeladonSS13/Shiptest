@@ -302,7 +302,7 @@ const ApplicationCard = ({ app, act }) => {
       case 'female':
         return 'Женский';
       default:
-        return 'Фембой';
+        return 'Неопределённый';
     }
   };
 
