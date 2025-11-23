@@ -17,7 +17,10 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
 "az" = (
-/obj/item/bedsheet/double/solgov,
+/obj/item/bedsheet/double/solgov{
+	pixel_x = 0;
+	pixel_y = 1
+	},
 /obj/structure/bed/double,
 /obj/machinery/light/directional/west,
 /turf/open/floor/wood,
@@ -72,10 +75,6 @@
 /obj/structure/chair/sofa/blue/old/left/directional/west{
 	dir = 2;
 	pixel_y = 5
-	},
-/obj/item/toy/talking/neznakomka{
-	pixel_y = 3;
-	pixel_x = -4
 	},
 /obj/effect/turf_decal/road/line/transparent/solgovgold{
 	dir = 1
@@ -265,6 +264,10 @@
 	},
 /obj/effect/turf_decal/trimline/opaque/bottlegreen/corner{
 	dir = 8
+	},
+/obj/item/autosurgeon{
+	uses = 1;
+	pixel_y = 11
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
@@ -692,13 +695,13 @@
 "nS" = (
 /obj/machinery/airalarm/directional/north,
 /obj/item/pen/solfed{
-	pixel_y = 4;
-	pixel_x = -6;
+	pixel_y = 7;
+	pixel_x = -1;
 	layer = 4
 	},
 /obj/item/lighter/zippo/sol{
-	pixel_y = 4;
-	pixel_x = 7;
+	pixel_y = 8;
+	pixel_x = 1;
 	layer = 4
 	},
 /obj/structure/window/reinforced/spawner/east,
@@ -729,8 +732,8 @@
 /obj/structure/table/wood/fancy/blue,
 /obj/machinery/light/directional/west,
 /obj/item/stamp/solfed/captain{
-	pixel_y = 14;
-	pixel_x = 9
+	pixel_y = 13;
+	pixel_x = 1
 	},
 /obj/machinery/newscaster/directional/north,
 /turf/open/floor/wood,
@@ -814,7 +817,9 @@
 	},
 /obj/structure/table/wood/fancy/blue,
 /obj/item/radio/intercom/wideband/table{
-	dir = 4
+	dir = 4;
+	pixel_y = 3;
+	pixel_x = 1
 	},
 /turf/open/floor/wood,
 /area/ship/bridge)
@@ -1851,7 +1856,9 @@
 	pixel_x = -23;
 	dir = 4
 	},
-/obj/structure/chair/comfy/blue/corpo/directional/east,
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
 /turf/open/floor/carpet/royalblue,
 /area/ship/bridge)
 "Hr" = (
@@ -1952,7 +1959,7 @@
 /obj/structure/curtain/bounty/half{
 	dir = 8
 	},
-/obj/machinery/computer/helm/solgov{
+/obj/machinery/computer/helm{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -2359,9 +2366,18 @@
 /obj/item/storage/box/ammo/c556mm_ap,
 /obj/item/storage/box/ammo/c556mm_ap,
 /obj/item/storage/box/ammo/c556mm_ap,
-/obj/item/ammo_box/magazine/p16,
-/obj/item/ammo_box/magazine/p16,
-/obj/item/ammo_box/magazine/p16,
+/obj/item/ammo_box/magazine/p16{
+	pixel_x = -1;
+	pixel_y = 0
+	},
+/obj/item/ammo_box/magazine/p16{
+	pixel_x = -8;
+	pixel_y = -1
+	},
+/obj/item/ammo_box/magazine/p16{
+	pixel_x = 3;
+	pixel_y = -1
+	},
 /obj/effect/turf_decal/techfloor{
 	dir = 6
 	},
