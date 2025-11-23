@@ -12,24 +12,14 @@ GLOBAL_VAR_INIT(inteq_document_password, "")
 	name = "\improper Inteq equipment vendor"
 	desc = "An Inteq Risk Management Group equipment vendor."
 	product_ads = "Protect corporate interests!;Professional security solutions!;Insert your Inteq voucher below."
-	// icon_state = "inteq-marine"
-	// icon_deny = "inteq-marine-deny"
-	// light_mask = "inteq-marine-mask"
-	// icon_vend = "inteq-marine-vend"
 	req_access = list(ACCESS_OUTPOST_FACTION_INTEQ)
-	products = list(
-		/obj/item/restraints/handcuffs = 5,
-		/obj/item/assembly/flash/handheld = 5,
-		/obj/item/flashlight/seclite = 5,
-		/obj/item/stock_parts/cell/gun = 5,
-		/obj/item/grenade/stingbang = 3
-	)
+	products = null
 	voucher_items = list(
 		"Tactical Bundle" = /obj/item/storage/box/inteq/tactical,
 		"Vanguard Bundle" = /obj/item/storage/box/inteq/vanguard,
 		"Specialist Bundle" = /obj/item/storage/box/inteq/specialist
 	)
-	var/document_value_min = 6000
+	var/document_value_min = 8500
 	var/document_value_max = 12000
 	var/document_value = 0
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
@@ -58,6 +48,9 @@ GLOBAL_VAR_INIT(inteq_document_password, "")
 	return
 
 /obj/machinery/vending/security/marine/inteq/attackby(obj/item/I, mob/user, params)
+	if(istype(I, /obj/item/holochip) || istype(I, /obj/item/stack/spacecash))
+		to_chat(user, span_warning("[src] does not accept money. Only documents and vouchers."))
+		return
 	if(istype(I, /obj/item/documents))
 		if(!(user.real_name in GLOB.inteq_authorized_officers))
 			to_chat(user, span_warning("Access denied. Only authorized Inteq officers can submit documents."))
@@ -94,6 +87,8 @@ GLOBAL_VAR_INIT(inteq_document_password, "")
 /obj/item/storage/box/inteq/tactical/PopulateContents()
 	new /obj/item/clothing/suit/armor/vest/marine/frontier(src)
 	new /obj/item/storage/guncase/rottweiler(src)
+	new /obj/item/ammo_box/magazine/rottweiler_308_box(src)
+	new /obj/item/ammo_box/magazine/rottweiler_308_box(src)
 
 /obj/item/storage/box/inteq/vanguard
 	name = "vanguard bundle"
