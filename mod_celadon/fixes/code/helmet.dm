@@ -36,6 +36,9 @@
 /obj/item/clothing/head/helmet/inteq
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 
+/obj/item/clothing/head/helmet/m10/inteq
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
+
 /obj/item/clothing/head/helmet/ngr
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 
