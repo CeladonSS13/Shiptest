@@ -167,6 +167,14 @@
 /obj/machinery/autolathe/hacked,
 /obj/machinery/light/directional/south,
 /obj/effect/turf_decal/industrial/traffic/fulltile,
+/obj/machinery/button/door{
+	id = "exec_armorysh2";
+	name = "Armory shuters";
+	pixel_x = 18;
+	pixel_y = 9;
+	dir = 8;
+	req_access_txt = "8485"
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "bE" = (
@@ -1432,6 +1440,17 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/fore)
+"oy" = (
+/obj/machinery/button/door{
+	id = "exec_armorysh2";
+	name = "Armory shuters";
+	pixel_x = 18;
+	pixel_y = 9;
+	dir = 8;
+	req_access_txt = "8485"
+	},
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/security/armory)
 "oF" = (
 /obj/structure/catwalk,
 /turf/open/floor/engine/hull/reinforced,
@@ -3386,6 +3405,14 @@
 	pixel_x = -10;
 	pixel_y = -20
 	},
+/obj/machinery/button/door{
+	id = "exec_armorysh2";
+	name = "Armory shuters";
+	pixel_x = 18;
+	pixel_y = 9;
+	dir = 8;
+	req_access_txt = "8485"
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "Qt" = (
@@ -4807,7 +4834,7 @@ gR
 tX
 cL
 bC
-CV
+oy
 SP
 Ey
 SP
