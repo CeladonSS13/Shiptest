@@ -48,7 +48,7 @@ GLOBAL_VAR_INIT(inteq_document_password, "")
 	return
 
 /obj/machinery/vending/security/marine/inteq/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/holochip) || istype(I, /obj/item/stack/spacecash))
+	if(istype(I, /obj/item/holochip) || istype(I, /obj/item/spacecash))
 		to_chat(user, span_warning("[src] does not accept money. Only documents and vouchers."))
 		return
 	if(istype(I, /obj/item/documents))
