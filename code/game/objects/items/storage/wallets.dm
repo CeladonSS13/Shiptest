@@ -1,6 +1,7 @@
 /obj/item/storage/wallet
 	name = "wallet"
 	desc = "It can hold a few small and personal things."
+	icon = 'mod_celadon/_storage_icons/icons/resprite/wallet.dmi'
 	icon_state = "wallet"
 	w_class = WEIGHT_CLASS_SMALL
 	resistance_flags = FLAMMABLE
@@ -14,7 +15,7 @@
 /obj/item/storage/wallet/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage/concrete)	// [CELADON-EDIT] - DONT_ALTCLICK_WALLET
-	STR.max_items = 4
+	STR.max_items = 5	// [CELADON-EDIT] - CELADON_QOL // STR.max_items = 4 // ORIGINAL
 	STR.set_holdable(list(
 		/obj/item/spacecash/bundle,
 		/obj/item/holochip,
@@ -35,14 +36,15 @@
 		/obj/item/photo,
 		/obj/item/reagent_containers/dropper,
 		/obj/item/reagent_containers/syringe,
-		/obj/item/screwdriver,
+		// /obj/item/screwdriver,	// [CELADON-REMOVE] - CELADON_QOL
 		/obj/item/stamp,
-		// [CELADON-ADD] - CELADON_QOL - Добавляем ключи и нож для писем
+		// [CELADON-ADD] - CELADON_QOL - Добавляем ключи и нож для писем, сигареты
 		/obj/item/melee/knife/letter_opener,
 		/obj/item/key,
 		/obj/item/clothing/gloves/ring,
 		/obj/item/clothing/gloves/ring/silver,
 		/obj/item/clothing/gloves/ring/diamond,
+		/obj/item/clothing/mask/cigarette,
 		/obj/item/stamp),
 		// [/CELADON-ADD]
 		list(/obj/item/screwdriver/power))
@@ -75,11 +77,45 @@
 /obj/item/storage/wallet/update_overlays()
 	. = ..()
 	cached_flat_icon = null
+	// [CELADON-ADD] - CELADON_RESPRITE_WALLET
+	var/has_cash = FALSE
+	var/has_card = FALSE
+	var/has_key = FALSE
+	var/has_chip = FALSE
+
+	for(var/obj/item/I in contents)
+		if(istype(I, /obj/item/spacecash))
+			has_cash = TRUE
+		if(istype(I, /obj/item/card/bank))
+			has_card = TRUE
+		if(istype(I, /obj/item/key/ship))
+			has_key = TRUE
+		if(istype(I, /obj/item/holochip))
+			has_chip = TRUE
+	// [/CELADON-ADD]
+
 	if(!front_id)
-		return
-	. += mutable_appearance(front_id.icon, front_id.icon_state)
-	. += front_id.overlays
-	. += mutable_appearance(icon, "wallet_overlay")
+	// [CELADON-EDIT] - CELADON_RESPRITE_WALLET
+	// 	return
+	// . += mutable_appearance(front_id.icon, front_id.icon_state)
+	// . += front_id.overlays
+	// . += mutable_appearance(icon, "wallet_overlay")	// ORIGINAL
+		if(has_cash || has_card || has_key || has_chip)
+			. += mutable_appearance(icon, get_wallet_overlay_state())
+	else
+		. += mutable_appearance(front_id.icon, front_id.icon_state)
+		. += front_id.overlays
+		. += mutable_appearance(icon, get_wallet_overlay_state())
+
+	if(has_cash)
+		. += mutable_appearance(icon, "cash_overlay")
+	if(has_card)
+		. += mutable_appearance(icon, "cashcard_overlay")
+	if(has_key)
+		. += mutable_appearance(icon, "keys_overlay")
+	if(has_chip)
+		. += mutable_appearance(icon, "cashchip_overlay")
+	// [/CELADON-EDIT]
 
 /obj/item/storage/wallet/proc/get_cached_flat_icon()
 	if(!cached_flat_icon)
