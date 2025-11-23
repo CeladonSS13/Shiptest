@@ -6,7 +6,7 @@
 	uniform = /obj/item/clothing/under/syndicate/ramzi
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
-	ears = /obj/item/radio/headset/pirate
+	ears = /obj/item/radio/headset/pirate/alt
 	neck = /obj/item/clothing/neck/dogtag/ramzi
 	id = /obj/item/card/id/cel/ramzi
 	box = /obj/item/storage/box/survival/ramzi
@@ -38,7 +38,6 @@
 	ears = /obj/item/radio/headset/pirate/alt/captain
 	head = /obj/item/clothing/head/ramzi/beret
 	suit = /obj/item/clothing/suit/armor/ramzi/officer
-	belt = /obj/item/storage/belt/security/webbing/ramzi
 
 /datum/outfit/job/cel/pirate/ramzi/trooper
 	job_icon = "pirate"
@@ -49,6 +48,7 @@
 
 	id = /obj/item/card/id/cel/ramzi/commando
 
+	belt = /obj/item/storage/belt/security/webbing/ramzi
 	l_pocket = /obj/item/flashlight/seclite
 
 //MARK: RAMZI PIRATE
@@ -59,7 +59,7 @@
 	uniform = /obj/item/clothing/under/syndicate/ramzi
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
-	ears = /obj/item/radio/headset/pirate
+	ears = /obj/item/radio/headset/pirate/alt
 	box = /obj/item/storage/box/survival/ramzi
 	id = /obj/item/card/id
 
