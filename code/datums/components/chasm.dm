@@ -83,8 +83,12 @@
 				return FALSE
 		if(ishuman(AM))
 			var/mob/living/carbon/human/H = AM
-			if(istype(H.belt, /obj/item/wormhole_jaunter))
-				var/obj/item/wormhole_jaunter/J = H.belt
+			// [CELADON-EDIT] - FIXES_CHASM_AND_JAUNTER - Делаем как везде нормальную проверку на предмет на поясе
+			// if(istype(H.belt, /obj/item/wormhole_jaunter))
+			// 	var/obj/item/wormhole_jaunter/J = H.belt	// ORIGINAL
+			var/obj/item/wormhole_jaunter/J = H.get_item_by_slot(ITEM_SLOT_BELT)
+			if(istype(J))
+			// [/CELADON-EDIT]
 				//To freak out any bystanders
 				H.visible_message(span_boldwarning("[H] falls into [parent]!"))
 				J.chasm_react(H)
