@@ -12,7 +12,7 @@
 /obj/machinery/computer/trade_mining_console/nanotrasen/Initialize(mapload)
 	available_items = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpack = list(
-			"unlock_cost" = 56000,
+			"unlock_cost" = 5000,
 			"price" = 300,
 			"unlimited" = TRUE,
 			"category" = "Medical",
