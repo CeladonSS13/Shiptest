@@ -314,4 +314,4 @@
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/medshield.dmi'
 	icon_state = "medshield_armor"
 	item_state = "medshield_armor"
-	armor = list("melee" = 38, "bullet" = 33, "laser" = 33, "energy" = 43, "bomb" = 28, "bio" = 3, "rad" = 3, "fire" = 53, "acid" = 53, "wound" = 10)
+	armor = list("melee" = 4, "bullet" = 4, "laser" = 4, "energy" = 4, "bomb" = 4, "bio" = 3, "rad" = 3, "fire" = 53, "acid" = 53, "wound" = 10)
