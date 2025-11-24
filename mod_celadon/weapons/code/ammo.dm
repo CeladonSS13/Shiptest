@@ -80,6 +80,7 @@
 	design_name = "7.62x40mm Ammo"
 	desc = "A design disk containing the pattern for a refill box of standard 7.62x40mm ammo."
 	starting_blueprints = (/datum/design/a762_40)
+
 /obj/item/ammo_box/magazine/m57_39_sidewinder
 	icon_state = "sidewinder_mag-30"
 
