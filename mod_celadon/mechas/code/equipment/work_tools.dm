@@ -105,6 +105,14 @@
 	source_mech = list(/obj/mecha/working/ripley, /obj/mecha/working/ripley/mining)
 	result_mech = /obj/mecha/working/ripley/nanotrasen
 
+/obj/item/mecha_parts/mecha_equipment/conversion_kit/ripley/solfed
+	name = "SolFed Ripley MK-IV Conversion Kit"
+	desc = "A SolFed-issued lightweight canopy kit for an Autonomous Power Loader Unit \"Ripley\" MK-I mecha, to convert it to the mobile and spaceworthy Mk-IV design. This kit cannot be removed, once applied."
+	icon = 'mod_celadon/_storage_icons/icons/other/mecha/mecha_equipment.dmi'
+	icon_state = "solfedupgrade"
+	source_mech = list(/obj/mecha/working/ripley, /obj/mecha/working/ripley/mining)
+	result_mech = /obj/mecha/working/ripley/solfed
+
 //гиги за шаги
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/gygaxwhite
