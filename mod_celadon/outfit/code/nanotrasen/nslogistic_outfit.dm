@@ -14,15 +14,11 @@
 
 	id = /obj/item/card/id/cel/nanotrasen/nslogistic_rd
 
-	belt = /obj/item/pda/heads/rd
-
 /datum/outfit/job/cel/nanotrasen/quartermaster/nslogistic
 	name = "NT N+S Logistic - Quartermaster"
 	job_icon = "quartermaster"
 
 	id = /obj/item/card/id/cel/nanotrasen/nslogistic_quartermaster
-
-	belt = /obj/item/pda/quartermaster
 
 // MARK: Crew
 
@@ -31,8 +27,6 @@
 	job_icon = "shaftminer"
 
 	id = /obj/item/card/id/cel/nanotrasen/nslogistic_miner
-
-	belt = /obj/item/pda/shaftminer
 
 /datum/outfit/job/cel/nanotrasen/cargo_tech/nslogistic
 	name = "NT N+S Logistic - Cargo Tech"

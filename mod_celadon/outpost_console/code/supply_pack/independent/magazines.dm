@@ -206,21 +206,21 @@
 
 /datum/supply_pack/faction/independent/magazine/morita_ammo_small
 	name = "Morita MK1 Short Magazine Double Pack Crate"
-	desc = "Contains two .308 caliber magazines for the Morita family rifles, with a capacity of 10 rounds."
+	desc = "Contains two .310 caliber magazines for the Morita family rifles, with a capacity of 10 rounds."
 	contains = list(/obj/item/ammo_box/magazine/morita1/small/empty,
 					/obj/item/ammo_box/magazine/morita1/small/empty)
 	cost = 1000
 
 /datum/supply_pack/faction/independent/magazine/morita_ammo
 	name = "Morita MK1 Standard Magazine Double Pack Crate"
-	desc = "Contains two .308 caliber magazines for the Morita family rifles, with a capacity of 25 rounds."
+	desc = "Contains two .310 caliber magazines for the Morita family rifles, with a capacity of 25 rounds."
 	contains = list(/obj/item/ammo_box/magazine/morita1/empty,
 					/obj/item/ammo_box/magazine/morita1/empty)
 	cost = 2000
 
 /datum/supply_pack/faction/independent/magazine/morita_ammo_drum
 	name = "Morita MK1 Drum Magazine Crate"
-	desc = "Contains .308 caliber drum magazine for the Morita family rifles, with a capacity of 50 rounds."
+	desc = "Contains .310 caliber drum magazine for the Morita family rifles, with a capacity of 50 rounds."
 	contains = list(/obj/item/ammo_box/magazine/morita1/drum/empty)
 	cost = 5000
 

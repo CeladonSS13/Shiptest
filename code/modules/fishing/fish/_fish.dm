@@ -127,13 +127,9 @@
 		playsound(loc, 'sound/weapons/slice.ogg', 50, TRUE, -1)
 		user.visible_message(span_notice("[user] starts filleting \the [src]."), span_notice("You start filleting \the [src]..."), span_hear("You hear the sound of a sharp object slicing meat."))
 		if(do_after(user, 30, target = src))
-			// [CELADON-ADD] - FIXES_DEL_FISH - Проверяем на существование рыбы
-			if(QDELETED(src))
-				return
-			// [/CELADON-ADD]
 			to_chat(user, span_notice("You fillet the [src]."))
 			new fillet_type(loc, 1)
-			qdel(src)
+		qdel(src)
 
 /obj/item/fish/examine(mob/user)
 	. = ..()

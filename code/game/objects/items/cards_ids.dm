@@ -279,14 +279,7 @@ update_label()
 */
 
 /obj/item/card/id/proc/update_label()
-	// [CELADON-EDIT] - FIXES_AGENT_CARD_NAME - Скрываем истинное название карты агента
-	// name = "[(istype(src, /obj/item/card/id/syndicate)) ? "[initial(name)]" : "access card"][(!assignment) ? "" : " ([assignment])"]"	// ORIGINAL
-	if(istype(src, /obj/item/card/id/syndicate))
-		var/obj/item/card/id/syndicate/agent_card = src
-		name = "[agent_card.forged ? "access card" : initial(name)][(!assignment) ? "" : " ([assignment])"]"
-	else
-		name = "access card[(!assignment) ? "" : " ([assignment])"]"
-	// [/CELADON-EDIT]
+	name = "[(istype(src, /obj/item/card/id/syndicate)) ? "[initial(name)]" : "access card"][(!assignment) ? "" : " ([assignment])"]"
 
 /obj/item/card/id/silver
 	desc = "A silver-colored card, usually given to higher-ranking officials in ships and stations."
@@ -324,19 +317,10 @@ update_label()
 	if(!proximity)
 		return
 	if(istype(O, /obj/item/card/id))
-		// [CELADON-REMOVE] - FIXES_AGENT_CARD - Переместил вниз, ибо проверка внизу не имеет смсла вообще
-		// var/obj/item/card/id/I = O
-		// src.access |= I.access
-		// [/CELADON-REMOVE]
+		var/obj/item/card/id/I = O
+		src.access |= I.access
 		if(isliving(user) && user.mind)
 			if(user.mind.special_role || anyone)
-				// [CELADON-ADD] - FIXES_AGENT_CARD
-				var/obj/item/card/id/I = O
-				src.access |= I.access
-				for(var/datum/overmap/ship/controlled/ship in I.ship_access)
-					if(!has_ship_access(ship))
-						add_ship_access(ship)
-				// [/CELADON-ADD]
 				to_chat(usr, span_notice("The card's microscanners activate as you pass it over the ID, copying its access."))
 
 /obj/item/card/id/syndicate/attack_self(mob/user)
@@ -373,9 +357,8 @@ update_label()
 
 			registered_name = input_name
 			assignment = target_occupation
-			forged = TRUE // [CELADON-ADD] - FIXES_AGENT_CARD_NAME
 			update_label()
-			// forged = TRUE // [CELADON-REMOVE] - FIXES_AGENT_CARD_NAME - Поднял выше ДО применения изменений
+			forged = TRUE
 			to_chat(user, span_notice("You successfully forge the ID card."))
 			log_game("[key_name(user)] has forged \the [initial(name)] with name \"[registered_name]\" and occupation \"[assignment]\".")
 
@@ -385,10 +368,9 @@ update_label()
 			assignment = initial(assignment)
 			faction_icon = initial(faction_icon)
 			job_icon = initial(job_icon)
-			forged = FALSE // [CELADON-ADD] - FIXES_AGENT_CARD_NAME
 			log_game("[key_name(user)] has reset \the [initial(name)] named \"[src]\" to default.")
 			update_label()
-			// forged = FALSE // [CELADON-REMOVE] - FIXES_AGENT_CARD_NAME - Поднял выше ДО применения изменений
+			forged = FALSE
 			to_chat(user, span_notice("You successfully reset the ID card."))
 			return
 	return ..()

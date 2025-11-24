@@ -247,10 +247,3 @@
 	name = "SUNS PDA"
 	default_cartridge = /obj/item/cartridge/medical
 	icon_state = "pda-suns"
-
-// [CELADON-ADD] - scientist-PDA
-/obj/item/pda/scientist
-	name = "scientist PDA"
-	default_cartridge = /obj/item/cartridge/chemistry
-	icon_state = "pda-science"
-// [/CELADON-ADD]

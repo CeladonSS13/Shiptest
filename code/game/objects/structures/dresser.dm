@@ -23,20 +23,14 @@
 		return ..()
 
 /obj/structure/dresser/wrench_act(mob/living/user, obj/item/I)
-	// [CELADON-EDIT] - FIXES_DRESSER - Гаечный клю не выпадает
-	// . = ..()	// ORIGINAL
-	. = TRUE
-	// [/CELADON-EDIT]
+	. = ..()
 	to_chat(user, span_notice("You begin to [anchored ? "unwrench" : "wrench"] [src]."))
 	if(I.use_tool(src, user, 20, volume=50))
 		to_chat(user, span_notice("You successfully [anchored ? "unwrench" : "wrench"] [src]."))
 		set_anchored(!anchored)
 
 /obj/structure/dresser/crowbar_act(mob/living/user, obj/item/I)
-	// [CELADON-EDIT] - FIXES_DRESSER - Лом не пожирается вселенной
-	// . = ..()	// ORIGINAL
-	. = TRUE
-	// [/CELADON-EDIT]
+	. = ..()
 	if(!anchored)
 		to_chat(user, span_notice("You begin to pull apart [src]."))
 		if(I.use_tool(src, user, 30, volume=50))

@@ -175,11 +175,6 @@
 		else
 			chambered = magazine.get_round(keep_bullet || bolt_type == BOLT_TYPE_NO_BOLT)
 		if (bolt_type != BOLT_TYPE_OPEN)
-			// [CELADON-ADD] - FIXES_PHYSICS_AMMO_CASING - Останавливаем физику гильз
-			var/datum/component/movable_physics/physics = chambered.GetComponent(/datum/component/movable_physics)
-			if(physics)
-				qdel(physics)
-			// [/CELADON-ADD]
 			chambered.forceMove(src)
 
 ///updates a bunch of racking related stuff and also handles the sound effects and the like

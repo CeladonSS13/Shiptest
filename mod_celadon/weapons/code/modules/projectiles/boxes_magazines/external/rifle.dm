@@ -1,6 +1,6 @@
 /obj/item/ammo_box/magazine/morita1
-	name = "\improper assault rifle magazine (.308)"
-	desc = "A simple assault rifle magazine designed to chamber .308."
+	name = "\improper assault rifle magazine (7.62x51mm)"
+	desc = "A simple assault rifle magazine designed to chamber 7.62x51mm."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo.dmi'
 	icon_state = "morita1_mag"
 	base_icon_state = "morita1_mag"
@@ -16,8 +16,8 @@
 	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/morita1/small
-	name = "\improper small assault rifle magazine (.308)"
-	desc = "A simple assault rifle magazine designed to chamber .308."
+	name = "\improper small assault rifle magazine (7.62x51mm)"
+	desc = "A simple assault rifle magazine designed to chamber 7.62x51mm."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo.dmi'
 	icon_state = "morita1_small_mag"
 	base_icon_state = "morita1_small_mag"
@@ -32,8 +32,8 @@
 	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/morita1/drum
-	name = "\improper drum assault rifle magazine (.308)"
-	desc = "A simple assault rifle magazine designed to chamber .308."
+	name = "\improper drum assault rifle magazine (7.62x51mm)"
+	desc = "A simple assault rifle magazine designed to chamber 7.62x51mm."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo.dmi'
 	icon_state = "morita1_drum_mag"
 	base_icon_state = "morita1_drum_mag"

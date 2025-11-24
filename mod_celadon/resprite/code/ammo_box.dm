@@ -45,6 +45,3 @@
 
 /obj/item/storage/box/ammo/a762_40/hp/rubber
 	icon_state = "a762_40box_big-rubbershot_inteq"
-
-/obj/item/ammo_box/magazine/m57_39_sidewinder
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo.dmi'

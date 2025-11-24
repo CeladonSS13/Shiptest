@@ -437,9 +437,5 @@
 		. += span_notice("\The [name] doesn't seem to have a cell!")
 
 /obj/item/gun/energy/unsafe_shot(target)
-	// [CELADON-ADD] - FIXES_LOCKER_RECHARGE_ENERGYGUN
-	if(!can_shoot())
-		return
-	// [/CELADON-ADD]
 	. = ..()
 	process_chamber()

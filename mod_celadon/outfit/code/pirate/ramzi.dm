@@ -30,7 +30,6 @@
 
 	id_assignment = "Battle Master"
 	jobtype = /datum/job/captain
-	faction_icon = "bg_pirate"
 	job_icon = "piratecaptain"
 
 	id = /obj/item/card/id/cel/ramzi/battlemaster
@@ -40,15 +39,15 @@
 	suit = /obj/item/clothing/suit/armor/ramzi/officer
 
 /datum/outfit/job/cel/pirate/ramzi/trooper
-	job_icon = "pirate"
+	job_icon = "assistant"
 	name = "Ramzi Clique Rondo - Commando"
 
 	id_assignment = "Commando"
 	jobtype = /datum/job/officer
 
 	id = /obj/item/card/id/cel/ramzi/commando
-
 	belt = /obj/item/storage/belt/security/webbing/ramzi
+
 	l_pocket = /obj/item/flashlight/seclite
 
 //MARK: RAMZI PIRATE
@@ -60,7 +59,7 @@
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
 	ears = /obj/item/radio/headset/pirate/alt
-	box = /obj/item/storage/box/survival/ramzi
+	box = /obj/item/storage/box/survival
 	id = /obj/item/card/id
 
 	faction_icon = "bg_pirate"
@@ -93,10 +92,6 @@
 	name = "Ramzi Clique - Captain"
 	job_icon = "piratecaptain"
 
-	faction_icon = "bg_pirate"
-	job_icon = "piratecaptain"
-
-	job_icon = "captain"
 	jobtype = /datum/job/captain
 	uniform = /obj/item/clothing/under/syndicate/ramzi/officer
 

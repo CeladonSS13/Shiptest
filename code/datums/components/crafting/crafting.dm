@@ -336,7 +336,6 @@
 		else
 			cur_subcategory = CAT_NONE
 		ui = new(user, src, "PersonalCrafting")
-		ui.set_autoupdate(TRUE)	// [CELADON-ADD] - FIXES_CRAFT_MENU - Обновляем меню автоматически
 		ui.open()
 
 /datum/component/personal_crafting/ui_data(mob/user)

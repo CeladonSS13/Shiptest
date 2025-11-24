@@ -68,28 +68,3 @@
 		/datum/material/plasma = 2000,
 		/datum/material/gold = 2000,
 	)
-
-/obj/item/ammo_box/magazine/m57_39_sidewinder
-	icon_state = "sidewinder_mag-30"
-
-/obj/item/ammo_box/magazine/m57_39_sidewinder/update_icon_state()
-	. = ..()
-	switch(ammo_count())
-		if(30)
-			icon_state = "[base_icon_state]-30"
-		if(24 to 29)
-			icon_state = "[base_icon_state]-26"
-		if(20 to 23)
-			icon_state = "[base_icon_state]-22"
-		if(16 to 19)
-			icon_state = "[base_icon_state]-18"
-		if(12 to 15)
-			icon_state = "[base_icon_state]-14"
-		if(8 to 11)
-			icon_state = "[base_icon_state]-10"
-		if(6 to 7)
-			icon_state = "[base_icon_state]-6"
-		if(1 to 5)
-			icon_state = "[base_icon_state]-2"
-		if(0)
-			icon_state = "[base_icon_state]-0"

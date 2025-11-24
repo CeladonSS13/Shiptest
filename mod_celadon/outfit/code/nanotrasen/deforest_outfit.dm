@@ -6,20 +6,14 @@
 
 	id = /obj/item/card/id/cel/nanotrasen/deforest_cmo
 
-	belt = /obj/item/pda/heads/cmo
-
 /datum/outfit/job/cel/nanotrasen/scientist/deforest_researcher
 	name = "NT DeForest - Scientist"
 	job_icon = "scientist"
-
-	belt = /obj/item/pda/scientist
 
 	id = /obj/item/card/id/cel/nanotrasen/deforest_researcher
 
 /datum/outfit/job/cel/nanotrasen/scientist/deforest_researcher/genetic
 	name = "NT DeForest - Scientist Genetic"
-
-	belt = /obj/item/pda/geneticist
 
 /datum/outfit/job/cel/nanotrasen/scientist/deforest_researcher/roboticist
 	name = "NT DeForest - Scientist Roboticist"
@@ -31,8 +25,6 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat/nanotrasen
 	ears = /obj/item/radio/headset/nanotrasen
 	glasses = /obj/item/clothing/glasses/welding
-	belt = /obj/item/storage/belt/utility/full
-	l_pocket = /obj/item/pda/roboticist
 
 	backpack_contents = list(/obj/item/weldingtool/hugetank)
 

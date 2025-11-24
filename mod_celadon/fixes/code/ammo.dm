@@ -17,10 +17,3 @@
 
 /obj/item/ammo_box/magazine/rottweiler_308_box
 	caliber = ".308"
-
-// FIXES_PHYSICS_AMMO_CASING
-/obj/item/ammo_casing/pickup(mob/user)
-	. = ..()
-	var/datum/component/movable_physics/physics = GetComponent(/datum/component/movable_physics)
-	if(physics)
-		qdel(physics)
