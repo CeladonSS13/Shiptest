@@ -9,7 +9,7 @@
 /obj/item/poster
 	name = "poorly coded poster"
 	desc = "You probably shouldn't be holding this."
-	icon = 'icons/obj/contraband.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/contraband.dmi'
 	force = 0
 	resistance_flags = FLAMMABLE
 	var/poster_type
@@ -76,7 +76,7 @@
 	name = "poster"
 	var/original_name
 	desc = "A large piece of space-resistant printed paper."
-	icon = 'icons/obj/contraband.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/contraband.dmi'
 	icon_state = "poster_ripped"
 	anchored = TRUE
 	var/ruined = FALSE
