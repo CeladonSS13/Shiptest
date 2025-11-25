@@ -24,3 +24,8 @@
 	var/datum/component/movable_physics/physics = GetComponent(/datum/component/movable_physics)
 	if(physics)
 		qdel(physics)
+
+// FIXES_ARROW_FIRE - Стрелы не должны взрываться в огне как пули
+/obj/item/ammo_casing/caseless/arrow/fire_act(exposed_temperature, exposed_volume)
+	qdel(src)
+	return TRUE
