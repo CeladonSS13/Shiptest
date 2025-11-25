@@ -46,7 +46,7 @@
 		else
 			C.key = brainmob.key
 
-		QDEL_NULL(brainmob)
+		// QDEL_NULL(brainmob) // [CELADON-REMOVE] - FIXES_BRAIN_MIND_TRANSFER
 
 	for(var/X in traumas)
 		var/datum/brain_trauma/BT = X
@@ -72,7 +72,13 @@
 		BT.owner = null
 
 	if((!gc_destroyed || (owner && !owner.gc_destroyed)) && !no_id_transfer)
-		transfer_identity(C)
+		// [CELADON-EDIT] - FIXES_BRAIN_MIND_TRANSFER - Переносим mind из тела в brainmob при извлечении
+		// transfer_identity(C)	// ORIGINAL
+		if(!brainmob)
+			transfer_identity(C)
+		else if(C.mind)
+			C.mind.transfer_to(brainmob)
+		// [/CELADON-EDIT]
 	C.update_hair()
 
 /obj/item/organ/brain/proc/transfer_identity(mob/living/L)

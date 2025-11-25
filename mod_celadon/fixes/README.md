@@ -352,6 +352,9 @@ FIXES_CQC_GRAB
 FIXES_DEL_FISH
 - `code/modules/fishing/fish/_fish.dm` : Фиксим удаление рыбы после повторной разделки
 
+FIXES_BRAIN_MIND_TRANSFER
+- `code/modules/mob/living/brain/brain_item.dm` :  Не удаляем brainmob, чтобы сохранить привязку души к мозгу
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
