@@ -352,6 +352,9 @@ FIXES_CQC_GRAB
 FIXES_DEL_FISH
 - `code/modules/fishing/fish/_fish.dm` : Фиксим удаление рыбы после повторной разделки
 
+FIXES_HOLO_ESWORD
+- `code/modules/holodeck/items.dm` : Кто-то забыл убрать 0
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
