@@ -255,7 +255,7 @@
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_items = 10
-	STR.max_combined_w_class = 14	// [CELADON-ADD] - FIXES_ADVANCED_FIRSTAID
+	STR.max_combined_w_class = 15	// [CELADON-ADD] - FIXES_ADVANCED_FIRSTAID
 
 /obj/item/storage/firstaid/advanced/PopulateContents()
 	if(empty)
