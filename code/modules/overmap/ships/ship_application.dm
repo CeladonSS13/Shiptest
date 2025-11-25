@@ -27,7 +27,10 @@
 	//app_name = app_mob.client?.prefs.real_name
 	app_name = clean_html_entities(app_mob.client?.prefs.real_name)
 	// [/CELADON-EDIT]
-	app_key = app_mob.client?.holder?.fakekey ? app_mob.client.holder.fakekey : applicant.key
+	// [CELADON-EDIT] - FIXES_ADMIN_STEALTH
+	// app_key = app_mob.client?.holder?.fakekey ? app_mob.client.holder.fakekey : applicant.key	// ORIGINAL
+	app_key = applicant.key
+	// [/CELADON-EDIT]
 	parent_ship = parent
 
 	// these are registered so we can cancel the application fill-out if the ship
@@ -35,6 +38,11 @@
 	// your currently-open tgui windows don't get removed if you spawn into a body
 	RegisterSignal(app_mob, COMSIG_PARENT_QDELETING, PROC_REF(applicant_deleting))
 	RegisterSignal(parent_ship, COMSIG_PARENT_QDELETING, PROC_REF(important_deleting_during_apply))
+
+
+	// [CELADON-EDIT] - Используем реальный ключ для индексации, чтобы избежать проблем при смене fakekey
+
+	// [/CELADON-EDIT]
 
 /datum/ship_application/Destroy()
 	SStgui.close_uis(src)
