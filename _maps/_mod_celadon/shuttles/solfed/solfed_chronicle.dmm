@@ -32,19 +32,17 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/aft)
 "av" = (
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/power/solar,
 /obj/effect/turf_decal/solarpanel{
 	color = "#4273c2"
 	},
+/obj/structure/cable/yellow,
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/power/solar,
 /turf/open/floor/plating/airless,
 /area/ship/external)
 "az" = (
@@ -350,19 +348,19 @@
 /turf/open/floor/wood,
 /area/ship/crew/canteen)
 "do" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/obj/machinery/power/solar,
 /obj/effect/turf_decal/solarpanel{
 	color = "#4273c2"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/machinery/power/solar,
 /turf/open/floor/plating/airless,
 /area/ship/external)
 "du" = (
@@ -632,16 +630,16 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "ge" = (
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/machinery/power/solar,
 /obj/effect/turf_decal/solarpanel{
 	color = "#4273c2"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/obj/machinery/power/solar,
 /turf/open/floor/plating/airless,
 /area/ship/external)
 "gi" = (
@@ -697,9 +695,6 @@
 	},
 /obj/effect/temp_visual/light_ash,
 /obj/effect/decal/cleanable/ash,
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
 /turf/open/floor/plasteel/white,
 /area/ship/engineering)
 "gs" = (
@@ -1383,13 +1378,13 @@
 /turf/open/floor/carpet/green,
 /area/ship/crew/dorm)
 "nD" = (
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/machinery/power/solar,
 /obj/effect/turf_decal/solarpanel{
 	color = "#4273c2"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/solar,
 /turf/open/floor/plating/airless,
 /area/ship/external)
 "nF" = (
@@ -1614,24 +1609,11 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-5"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
-"pe" = (
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/obj/machinery/power/solar,
-/obj/effect/turf_decal/solarpanel{
-	color = "#4273c2"
-	},
-/turf/open/floor/plating/airless,
-/area/ship/external)
 "pi" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile/shuttle,
@@ -1729,16 +1711,16 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "pS" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/machinery/power/solar,
 /obj/effect/turf_decal/solarpanel{
 	color = "#4273c2"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/machinery/power/solar,
 /turf/open/floor/plating/airless,
 /area/ship/external)
 "qb" = (
@@ -1879,16 +1861,16 @@
 /turf/template_noop,
 /area/space)
 "rH" = (
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/solar,
 /obj/effect/turf_decal/solarpanel{
 	color = "#4273c2"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/machinery/power/solar,
 /turf/open/floor/plating/airless,
 /area/ship/external)
 "rO" = (
@@ -2062,9 +2044,6 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 4
 	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
 /obj/effect/turf_decal/corner/opaque/solgovblue/half{
 	dir = 8
 	},
@@ -2075,6 +2054,9 @@
 	},
 /obj/structure/extinguisher_cabinet/directional/east{
 	pixel_y = -5
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
@@ -2128,16 +2110,16 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "ta" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/solar,
 /obj/effect/turf_decal/solarpanel{
 	color = "#4273c2"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/machinery/power/solar,
 /turf/open/floor/plating/airless,
 /area/ship/external)
 "td" = (
@@ -2262,22 +2244,19 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew/crewtwo)
 "ub" = (
-/obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
-	},
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
-	},
-/obj/machinery/power/solar,
 /obj/effect/turf_decal/solarpanel{
 	color = "#4273c2"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/obj/machinery/power/solar,
 /turf/open/floor/plating/airless,
 /area/ship/external)
 "um" = (
@@ -2340,11 +2319,11 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering)
 "vj" = (
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
 /obj/effect/turf_decal/solarpanel{
 	color = "#4273c2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
 	},
 /turf/open/floor/plating/airless,
 /area/ship/external)
@@ -2909,19 +2888,16 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/engineering)
 "As" = (
-/obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
-	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
-	},
-/obj/machinery/power/tracker,
 /obj/effect/turf_decal/solarpanel{
 	color = "#4273c2"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/machinery/power/tracker,
 /turf/open/floor/plating/airless,
 /area/ship/external)
 "At" = (
@@ -3120,9 +3096,6 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 4
 	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
@@ -3131,6 +3104,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 5
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
@@ -3441,16 +3417,14 @@
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/dorm/captain)
 "Gs" = (
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/obj/machinery/power/solar,
 /obj/effect/turf_decal/solarpanel{
 	color = "#4273c2"
 	},
+/obj/structure/cable/yellow,
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/machinery/power/solar,
 /turf/open/floor/plating/airless,
 /area/ship/external)
 "Gt" = (
@@ -4331,15 +4305,13 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew/crewtwo)
 "Pa" = (
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
-	},
-/obj/machinery/power/solar,
 /obj/effect/turf_decal/solarpanel{
 	color = "#4273c2"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/solar,
 /turf/open/floor/plating/airless,
 /area/ship/external)
 "Pb" = (
@@ -4561,18 +4533,16 @@
 /turf/open/floor/wood/ebony,
 /area/ship/crew/crewtwo)
 "Rs" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
-	},
-/obj/machinery/power/solar,
 /obj/effect/turf_decal/solarpanel{
 	color = "#4273c2"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/power/solar,
 /turf/open/floor/plating/airless,
 /area/ship/external)
 "RB" = (
@@ -4783,13 +4753,11 @@
 /turf/open/floor/plasteel/stairs/stairs_pack/dark,
 /area/ship/bridge)
 "Tn" = (
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
-/obj/machinery/power/solar,
 /obj/effect/turf_decal/solarpanel{
 	color = "#4273c2"
 	},
+/obj/structure/cable/yellow,
+/obj/machinery/power/solar,
 /turf/open/floor/plating/airless,
 /area/ship/external)
 "TA" = (
@@ -4899,16 +4867,6 @@
 /obj/machinery/light/dim/directional/north,
 /turf/open/floor/plasteel/white,
 /area/ship/general/science/rnd)
-"Uy" = (
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/machinery/power/solar,
-/obj/effect/turf_decal/solarpanel{
-	color = "#4273c2"
-	},
-/turf/open/floor/plating/airless,
-/area/ship/external)
 "UB" = (
 /obj/structure/sign/poster/solgov/random{
 	pixel_x = -29
@@ -5084,17 +5042,17 @@
 /turf/open/floor/wood/ebony,
 /area/ship/crew/canteen)
 "VF" = (
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
 /obj/effect/turf_decal/solarpanel{
 	color = "#4273c2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
 	},
 /obj/machinery/power/solar,
 /turf/open/floor/plating/airless,
@@ -5147,8 +5105,8 @@
 /obj/machinery/computer/solar_control{
 	dir = 8
 	},
-/obj/structure/cable{
-	icon_state = "0-8"
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
@@ -5346,19 +5304,6 @@
 /obj/structure/table/wood/fancy/blue,
 /turf/open/floor/wood/cold,
 /area/ship/crew/dorm/captain)
-"Yh" = (
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/power/solar,
-/obj/effect/turf_decal/solarpanel{
-	color = "#4273c2"
-	},
-/turf/open/floor/plating/airless,
-/area/ship/external)
 "YC" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -5672,7 +5617,7 @@ Xe
 xC
 rD
 rD
-Yh
+pS
 rD
 AN
 rD
@@ -5729,8 +5674,8 @@ Cf
 nP
 hB
 xC
-Uy
-pe
+Pa
+do
 rD
 AN
 rD
@@ -5759,7 +5704,7 @@ ah
 ya
 xC
 rD
-Yh
+pS
 rD
 rD
 rD
@@ -5802,7 +5747,7 @@ rD
 rD
 rD
 AN
-Uy
+Pa
 rH
 We
 vR
