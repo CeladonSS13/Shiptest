@@ -1771,17 +1771,14 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/hangar)
 "ib" = (
-/obj/machinery/light/directional/north,
-/obj/effect/turf_decal/trimline/opaque/yellow/line{
-	dir = 1
+/obj/docking_port/stationary{
+	dir = 2;
+	dwidth = 4;
+	height = 15;
+	width = 15
 	},
-/obj/effect/turf_decal/siding/thinplating{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/handrail,
-/turf/open/floor/plasteel/patterned/grid,
-/area/ship/hallway/central)
+/turf/template_noop,
+/area/template_noop)
 "il" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/structure/cable{
@@ -2909,6 +2906,11 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/siding/thinplating,
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_x = 10;
+	pixel_y = -16
+	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/hallway/central)
 "ok" = (
@@ -3332,14 +3334,14 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/hangar)
 "qd" = (
-/obj/docking_port/mobile{
-	dir = 2;
-	launch_status = 0;
-	port_direction = 8;
-	preferred_direction = 4
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
 	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/engineering/communications)
+/obj/effect/turf_decal/siding/black{
+	dir = 8
+	},
+/turf/open/floor/plasteel/patterned/brushed,
+/area/ship/crew/canteen/kitchen)
 "qe" = (
 /obj/machinery/light/directional/west,
 /obj/machinery/computer/rdconsole/core{
@@ -5144,6 +5146,11 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
 	dir = 6
+	},
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_x = -11;
+	pixel_y = -16
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/hallway/central)
@@ -7970,7 +7977,14 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
 	},
-/obj/structure/closet/emcloset/wall/directional/north,
+/obj/structure/closet/emcloset/wall/directional/north{
+	pixel_x = 6;
+	pixel_y = 28
+	},
+/obj/machinery/light_switch{
+	pixel_x = -12;
+	pixel_y = 23
+	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/hallway/central)
 "MP" = (
@@ -8092,14 +8106,17 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/engineering/engine)
 "Ni" = (
-/obj/docking_port/stationary{
-	dir = 2;
-	dwidth = 4;
-	height = 15;
-	width = 15
+/obj/machinery/light/directional/north,
+/obj/effect/turf_decal/trimline/opaque/yellow/line{
+	dir = 1
 	},
-/turf/template_noop,
-/area/template_noop)
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/handrail,
+/turf/open/floor/plasteel/patterned/grid,
+/area/ship/hallway/central)
 "Nk" = (
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -10057,14 +10074,14 @@
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "VX" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 4
+/obj/docking_port/mobile{
+	dir = 2;
+	launch_status = 0;
+	port_direction = 8;
+	preferred_direction = 4
 	},
-/obj/effect/turf_decal/siding/black{
-	dir = 8
-	},
-/turf/open/floor/plasteel/patterned/brushed,
-/area/ship/crew/canteen/kitchen)
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/engineering/communications)
 "VY" = (
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/corner/opaque/yellow{
@@ -11169,7 +11186,7 @@ iB
 Ne
 Hn
 UA
-qd
+VX
 "}
 (9,1,1) = {"
 aJ
@@ -11296,7 +11313,7 @@ Cc
 Nd
 Uj
 zT
-VX
+qd
 uT
 aP
 LT
@@ -11506,7 +11523,7 @@ Iv
 mK
 vw
 uo
-Ni
+ib
 ey
 tk
 tk
@@ -11838,7 +11855,7 @@ cx
 VJ
 Gq
 gs
-ib
+Ni
 pe
 ny
 ny
