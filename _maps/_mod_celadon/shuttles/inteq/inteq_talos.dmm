@@ -1771,14 +1771,17 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/hangar)
 "ib" = (
-/obj/docking_port/mobile{
-	dir = 2;
-	launch_status = 0;
-	port_direction = 8;
-	preferred_direction = 4
+/obj/machinery/light/directional/north,
+/obj/effect/turf_decal/trimline/opaque/yellow/line{
+	dir = 1
 	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/engineering/communications)
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/handrail,
+/turf/open/floor/plasteel/patterned/grid,
+/area/ship/hallway/central)
 "il" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/structure/cable{
@@ -3329,14 +3332,14 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/hangar)
 "qd" = (
-/obj/docking_port/stationary{
+/obj/docking_port/mobile{
 	dir = 2;
-	dwidth = 4;
-	height = 15;
-	width = 15
+	launch_status = 0;
+	port_direction = 8;
+	preferred_direction = 4
 	},
-/turf/template_noop,
-/area/template_noop)
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/engineering/communications)
 "qe" = (
 /obj/machinery/light/directional/west,
 /obj/machinery/computer/rdconsole/core{
@@ -4307,11 +4310,9 @@
 /turf/open/floor/carpet/black,
 /area/ship/crew/dorm)
 "uT" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/black{
-	dir = 8
+/obj/effect/turf_decal/siding/black,
+/obj/effect/turf_decal/siding/black/corner{
+	dir = 1
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/canteen/kitchen)
@@ -4543,6 +4544,8 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
+/obj/item/coffee_cartridge/bootleg,
+/obj/item/coffee_cartridge/bootleg,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "wd" = (
@@ -4601,6 +4604,14 @@
 /obj/item/reagent_containers/glass/coffeepot{
 	pixel_x = -8;
 	pixel_y = 8
+	},
+/obj/item/coffee_cartridge/decaf{
+	pixel_x = 9;
+	pixel_y = 10
+	},
+/obj/item/coffee_cartridge/fancy{
+	pixel_x = 9;
+	pixel_y = 7
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen)
@@ -8081,12 +8092,14 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/engineering/engine)
 "Ni" = (
-/obj/effect/turf_decal/siding/black,
-/obj/effect/turf_decal/siding/black/corner{
-	dir = 1
+/obj/docking_port/stationary{
+	dir = 2;
+	dwidth = 4;
+	height = 15;
+	width = 15
 	},
-/turf/open/floor/plasteel/patterned/brushed,
-/area/ship/crew/canteen/kitchen)
+/turf/template_noop,
+/area/template_noop)
 "Nk" = (
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -9521,6 +9534,30 @@
 	},
 /obj/item/reagent_containers/glass/bowl,
 /obj/item/reagent_containers/glass/bowl,
+/obj/item/reagent_containers/glass/coffee_cup{
+	pixel_y = 8;
+	pixel_x = -12
+	},
+/obj/item/reagent_containers/glass/coffee_cup{
+	pixel_y = 8;
+	pixel_x = -12
+	},
+/obj/item/reagent_containers/glass/coffee_cup{
+	pixel_y = 8;
+	pixel_x = -12
+	},
+/obj/item/reagent_containers/glass/coffee_cup{
+	pixel_y = 8;
+	pixel_x = -12
+	},
+/obj/item/reagent_containers/glass/coffee_cup{
+	pixel_y = 8;
+	pixel_x = -12
+	},
+/obj/item/reagent_containers/glass/coffee_cup{
+	pixel_y = 8;
+	pixel_x = -12
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen)
 "Tl" = (
@@ -10020,17 +10057,14 @@
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "VX" = (
-/obj/machinery/light/directional/north,
-/obj/effect/turf_decal/trimline/opaque/yellow/line{
-	dir = 1
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
 	},
-/obj/effect/turf_decal/siding/thinplating{
-	dir = 1
+/obj/effect/turf_decal/siding/black{
+	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/handrail,
-/turf/open/floor/plasteel/patterned/grid,
-/area/ship/hallway/central)
+/turf/open/floor/plasteel/patterned/brushed,
+/area/ship/crew/canteen/kitchen)
 "VY" = (
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/corner/opaque/yellow{
@@ -11135,7 +11169,7 @@ iB
 Ne
 Hn
 UA
-ib
+qd
 "}
 (9,1,1) = {"
 aJ
@@ -11262,8 +11296,8 @@ Cc
 Nd
 Uj
 zT
+VX
 uT
-Ni
 aP
 LT
 LT
@@ -11472,7 +11506,7 @@ Iv
 mK
 vw
 uo
-qd
+Ni
 ey
 tk
 tk
@@ -11804,7 +11838,7 @@ cx
 VJ
 Gq
 gs
-VX
+ib
 pe
 ny
 ny
