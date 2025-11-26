@@ -146,7 +146,7 @@
 
 	id = /obj/item/card/id/cel/inteq/enforcer
 	ears = /obj/item/radio/headset/alt
-	head = /obj/item/clothing/head/helmet/inteq
+	head = /obj/item/clothing/head/helmet/m10/inteq
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	belt = /obj/item/storage/belt/security/webbing/inteq
 	mask = /obj/item/clothing/mask/balaclava/inteq
