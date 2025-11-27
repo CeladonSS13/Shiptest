@@ -220,15 +220,13 @@
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/engineering)
 "en" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+/obj/machinery/power/shuttle/engine/electric/premium,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering)
 "eM" = (
@@ -421,9 +419,6 @@
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "iv" = (
-/obj/structure/curtain/bounty/half{
-	dir = 8
-	},
 /turf/open/floor/wood,
 /area/ship/bridge)
 "iM" = (
@@ -660,8 +655,9 @@
 "nb" = (
 /obj/machinery/door/window/brigdoor/northleft{
 	dir = 2;
-	req_one_access = list(61,11);
-	color = "#2d2a4e"
+	color = "#2d2a4e";
+	req_access_txt = "8132";
+	req_ship_access = 1
 	},
 /obj/structure/curtain/cloth/half{
 	dir = 1;
@@ -705,9 +701,6 @@
 	layer = 4
 	},
 /obj/structure/window/reinforced/spawner/east,
-/obj/structure/curtain/bounty/half{
-	dir = 8
-	},
 /obj/structure/table/wood/fancy/blue,
 /obj/item/paper_bin{
 	pixel_y = 5
@@ -812,9 +805,6 @@
 /area/ship/engineering)
 "qe" = (
 /obj/structure/window/reinforced/spawner/east,
-/obj/structure/curtain/bounty/half{
-	dir = 8
-	},
 /obj/structure/table/wood/fancy/blue,
 /obj/item/radio/intercom/wideband/table{
 	dir = 4;
@@ -922,16 +912,16 @@
 /obj/item/radio/headset/solgov/alt{
 	name = "\improper SolFed bowman headset"
 	},
-/obj/item/clothing/suit/armor/solgov_trenchcoat{
-	armor = list("melee" = 35, "bullet" = 50, "laser" = 45, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30);
-	desc = "A SolFed official's trenchcoat. Has a lot of pockets.";
-	name = "\improper SolFed trenchcoat"
-	},
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/effect/turf_decal/techfloor{
 	dir = 6
 	},
 /obj/effect/turf_decal/corner/opaque/solgovblue/mono,
+/obj/item/clothing/suit/armor/solgov_trenchcoat{
+	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30);
+	desc = "A SolFed official's trenchcoat. Has a lot of pockets.";
+	name = "\improper SolFed trenchcoat"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "sA" = (
@@ -990,6 +980,14 @@
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/engineering)
+"sI" = (
+/obj/item/clothing/suit/armor/solgov_trenchcoat{
+	armor = list("melee" = 35, "bullet" = 50, "laser" = 45, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30);
+	desc = "A SolFed official's trenchcoat. Has a lot of pockets.";
+	name = "\improper SolFed trenchcoat"
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/hallway/central)
 "sL" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1405,7 +1403,8 @@
 	dir = 1
 	},
 /obj/structure/sign/poster/solgov/solgov_enlist{
-	pixel_y = 32
+	pixel_y = 32;
+	desc = "Enlist to be a part of the SolFed Exploration Forces!"
 	},
 /obj/effect/turf_decal/road/line/transparent/solgovgold{
 	dir = 1
@@ -1593,11 +1592,6 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "DD" = (
-/obj/item/clothing/suit/armor/solgov_trenchcoat{
-	armor = list("melee" = 35, "bullet" = 50, "laser" = 45, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30);
-	name = "\improper SolFed trenchcoat";
-	desc = "A SolFed official's trenchcoat. Has a lot of pockets."
-	},
 /obj/item/gun/ballistic/revolver/shadow,
 /obj/item/storage/belt/sabre/solgov,
 /obj/structure/closet/secure_closet{
@@ -1611,7 +1605,9 @@
 	name = "\improper SolFed Captain coat";
 	desc = "An armored coat typically used by SolFed captains."
 	},
-/obj/item/clothing/neck/tie/black,
+/obj/item/clothing/neck/tie/black{
+	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30)
+	},
 /obj/item/storage/box/ammo/a44roum_hp{
 	layer = 1
 	},
@@ -1620,7 +1616,9 @@
 	},
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/shoes/laceup,
-/obj/item/clothing/suit/armor/vest/duster,
+/obj/item/clothing/suit/armor/vest/duster{
+	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30)
+	},
 /obj/item/clothing/head/solfed/beret{
 	pixel_y = 7
 	},
@@ -1655,6 +1653,11 @@
 	},
 /obj/item/clothing/head/beret/sec/hos,
 /obj/item/folder/documents/solfed,
+/obj/item/clothing/suit/armor/solgov_trenchcoat{
+	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30);
+	desc = "A SolFed official's trenchcoat. Has a lot of pockets.";
+	name = "\improper SolFed trenchcoat"
+	},
 /turf/open/floor/wood,
 /area/ship/bridge)
 "DR" = (
@@ -1956,9 +1959,6 @@
 /area/ship/engineering)
 "Ja" = (
 /obj/structure/window/reinforced/spawner/east,
-/obj/structure/curtain/bounty/half{
-	dir = 8
-	},
 /obj/machinery/computer/helm{
 	dir = 8
 	},
@@ -2250,16 +2250,16 @@
 	},
 /obj/item/ammo_box/magazine/pistol556mm,
 /obj/item/ammo_box/magazine/pistol556mm,
-/obj/item/clothing/suit/armor/solgov_trenchcoat{
-	armor = list("melee" = 35, "bullet" = 50, "laser" = 45, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30);
-	desc = "A SolFed official's trenchcoat. Has a lot of pockets.";
-	name = "\improper SolFed trenchcoat"
-	},
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/effect/turf_decal/techfloor{
 	dir = 10
 	},
 /obj/effect/turf_decal/corner/opaque/solgovblue/mono,
+/obj/item/clothing/suit/armor/solgov_trenchcoat{
+	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30);
+	desc = "A SolFed official's trenchcoat. Has a lot of pockets.";
+	name = "\improper SolFed trenchcoat"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "QC" = (
@@ -3321,7 +3321,7 @@ Fp
 sC
 Fp
 Fp
-Fp
+sI
 Fp
 qK
 qK
