@@ -38,7 +38,7 @@
 	ammo_type = /obj/item/ammo_casing/a44roum
 	caliber = ".44 Roumain"
 	max_ammo = 6
-	instant_load = FALSE
+	instant_load = TRUE
 
 /obj/item/ammo_box/magazine/internal/cylinder/rev44/montagne
 	name = "montagne revolver cylinder"
