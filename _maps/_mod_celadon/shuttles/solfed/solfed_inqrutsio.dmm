@@ -978,14 +978,6 @@
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/engineering)
-"sI" = (
-/obj/item/clothing/suit/armor/solgov_trenchcoat{
-	armor = list("melee" = 35, "bullet" = 50, "laser" = 45, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30);
-	desc = "A SolFed official's trenchcoat. Has a lot of pockets.";
-	name = "\improper SolFed trenchcoat"
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/hallway/central)
 "sL" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1603,9 +1595,7 @@
 	name = "\improper SolFed Captain coat";
 	desc = "An armored coat typically used by SolFed captains."
 	},
-/obj/item/clothing/neck/tie/black{
-	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30)
-	},
+/obj/item/clothing/neck/tie/black,
 /obj/item/storage/box/ammo/a44roum_hp{
 	layer = 1
 	},
@@ -3321,7 +3311,7 @@ Fp
 sC
 Fp
 Fp
-sI
+Fp
 Fp
 qK
 qK
