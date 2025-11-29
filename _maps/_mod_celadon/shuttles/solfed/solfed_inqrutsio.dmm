@@ -223,11 +223,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-<<<<<<< Updated upstream
-/obj/machinery/power/shuttle/engine/electric/premium,
-=======
 /obj/machinery/power/shuttle/engine/electric,
->>>>>>> Stashed changes
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering)
 "eM" = (
@@ -496,18 +492,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
-"jS" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/turf/open/floor/engine/hull/reinforced{
-	icon = 'mod_celadon/_storage_icons/icons/structures/floors/metal_2.dmi';
-	icon_state = "metal_1"
-	},
-/area/ship/engineering)
 "jU" = (
 /obj/machinery/holopad/emergency/command{
 	pixel_x = 1
@@ -838,7 +822,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/open/floor/engine/hull,
+/turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering)
 "qK" = (
 /turf/template_noop,
@@ -2889,7 +2873,7 @@ qK
 vH
 tN
 en
-jS
+qE
 Le
 qK
 qK
