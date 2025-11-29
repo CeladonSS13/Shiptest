@@ -338,9 +338,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
 /obj/effect/turf_decal/corner/opaque/solgovblue/border{
 	dir = 1
 	},
@@ -418,6 +415,9 @@
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "iv" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
 /turf/open/floor/wood,
 /area/ship/bridge)
 "iM" = (
@@ -476,9 +476,6 @@
 /obj/effect/turf_decal/corner/opaque/solgovgold{
 	dir = 10
 	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/bridge)
 "jR" = (
@@ -495,9 +492,6 @@
 "jU" = (
 /obj/machinery/holopad/emergency/command{
 	pixel_x = 1
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/solgovgold,
 /obj/effect/turf_decal/corner/opaque/solgovblue{
@@ -692,6 +686,9 @@
 /obj/item/paper_bin{
 	pixel_y = 5
 	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
 /turf/open/floor/wood,
 /area/ship/bridge)
 "od" = (
@@ -797,6 +794,9 @@
 	dir = 4;
 	pixel_y = 3;
 	pixel_x = 1
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
 	},
 /turf/open/floor/wood,
 /area/ship/bridge)
@@ -1635,6 +1635,9 @@
 	desc = "A SolFed official's trenchcoat. Has a lot of pockets.";
 	name = "\improper SolFed trenchcoat"
 	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
 /turf/open/floor/wood,
 /area/ship/bridge)
 "DR" = (
@@ -1756,9 +1759,6 @@
 "Fb" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/solgovblue/border,
 /turf/open/floor/plasteel/patterned/brushed,
@@ -1938,6 +1938,9 @@
 /obj/structure/window/reinforced/spawner/east,
 /obj/machinery/computer/helm{
 	dir = 8
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
 	},
 /turf/open/floor/wood,
 /area/ship/bridge)
