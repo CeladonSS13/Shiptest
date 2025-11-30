@@ -143,6 +143,10 @@
 	//Blocks all items that are equippable to other slots. (block anything with a flag that ISN'T item_slot_mask)
 	if(I.slot_flags && !ITEM_SLOT_KEPORI_BEAK)	// [CELADON-EDIT] - CELADON_FIXES - Было if(I.slot_flags & ~ITEM_SLOT_KEPORI_BEAK)
 		return FALSE
+	// [CELADON-ADD] - FIXES_MASK_ON_KEPORI
+	if(HAS_TRAIT(H.wear_mask, TRAIT_NODROP))
+		return FALSE
+	// [/CELADON-ADD]
 	if(H.wear_mask && !swap)
 		return FALSE
 	if(I.w_class > WEIGHT_CLASS_SMALL)
