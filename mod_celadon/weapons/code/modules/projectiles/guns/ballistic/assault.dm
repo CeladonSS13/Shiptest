@@ -195,4 +195,6 @@ NO_MAG_GUN_HELPER(automatic/marksman/svd)
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/back.dmi'
 	icon_state = "cm82_solfed"
 	item_state = "cm82_solfed"
+	unique_reskin = null
+	unique_reskin_changes_inhand = FALSE // убирает возможность их рескинить по альт-клику
 NO_MAG_GUN_HELPER(automatic/assault/cm82/solfed)

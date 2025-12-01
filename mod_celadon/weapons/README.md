@@ -3,6 +3,7 @@
 #### Список PRов:
 
 - https://github.com/MysticalFaceLesS/Shiptest/pulls/#####
+- https://github.com/CeladonSS13/Shiptest/pull/2507
 <!--
   Ссылки на PRы, связанные с модом:
   - Создание
@@ -20,7 +21,7 @@ ID мода: CELADON_WEAPONS
 
 ### Описание мода
 
-Этот мод добавляет новые пушки и патроны.
+Этот мод добавляет новые пушки и патроны. Рефлаворит пушки клипов. Делает ещё что-то, что было сделано до рефлавора пушек.
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
   А также любая полезная информация.
@@ -40,7 +41,9 @@ ID мода: CELADON_WEAPONS
 
 ### Оверрайды
 
-- Отсутствуют
+- `mod_celadon\weapons\code\modules\projectiles\guns\ballistic\gun_reflavour.dm` -> `/obj/item/gun/ballistic/automatic/hmg/update_icon_state()`, `/obj/item/gun/ballistic/automatic/hmg/update_overlays()`
+- `mod_celadon\weapons\code\modules\projectiles\guns\ballistic\gun_reflavour.dm` -> `/obj/item/gun/ballistic/automatic/marksman/f4/inteq`,`/obj/item/gun/ballistic/automatic/marksman/f4/indie`, `/obj/item/gun/ballistic/automatic/marksman/f90/inteq`
+- `mod_celadon\weapons\code\modules\projectiles\guns\ballistic\gun_reflavour.dm` -> Все пушки клипов
 <!--
   Если ты добавлял новый модульный оверрайд, его нужно указать здесь.
   Здесь указываются оверрайды в твоём моде и папке `_master_files`
