@@ -10,3 +10,11 @@
 	response_disarm_simple = "rubs"
 	response_harm_simple = "makes terrible mistake by kicking"
 	mob_size = MOB_SIZE_HUGE
+
+/mob/living/simple_animal/pet/cat/Move()
+	return FALSE
+
+/mob/living/simple_animal/pet/cat/forceMove(atom/destination)
+	if(ismecha(usr))
+		return ..(destination)
+	return FALSE
