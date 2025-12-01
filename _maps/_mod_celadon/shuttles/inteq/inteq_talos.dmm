@@ -81,14 +81,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
-"aA" = (
-/obj/effect/turf_decal/trimline/opaque/yellow/warning,
-/obj/effect/turf_decal/trimline/opaque/yellow/warning{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/opaque/yellow/corner,
-/turf/open/floor/engine/hull/reinforced,
-/area/ship/external/dark)
 "aE" = (
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
 	dir = 8;
@@ -863,6 +855,16 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen)
+"ei" = (
+/obj/structure/catwalk,
+/obj/structure/marker_beacon{
+	picked_color = "Burgundy"
+	},
+/obj/effect/decal/fakelattice{
+	icon_state = "lattice-4"
+	},
+/turf/open/floor/plating/airless,
+/area/ship/external/dark)
 "em" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 1
@@ -1685,6 +1687,16 @@
 	},
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
+"hL" = (
+/obj/effect/turf_decal/trimline/opaque/yellow/warning,
+/obj/effect/turf_decal/trimline/opaque/yellow/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/opaque/yellow/corner{
+	dir = 8
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external/dark)
 "hQ" = (
 /obj/effect/turf_decal/trimline/opaque/yellow/corner{
 	dir = 1
@@ -3259,6 +3271,13 @@
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/hallway/central)
+"pz" = (
+/obj/effect/decal/fakelattice{
+	icon_state = "lattice-12"
+	},
+/obj/structure/catwalk,
+/turf/open/floor/plating/airless,
+/area/ship/external/dark)
 "pB" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3513,6 +3532,7 @@
 	id = "talos_turrets";
 	dir = 6
 	},
+/obj/structure/catwalk,
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/engineering/communications)
 "qL" = (
@@ -3944,6 +3964,14 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
+"sQ" = (
+/obj/structure/catwalk,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/fakelattice{
+	icon_state = "lattice-110"
+	},
+/turf/open/floor/plating/airless,
+/area/ship/external/dark)
 "td" = (
 /obj/machinery/atmospherics/pipe/simple/dark/visible/layer1{
 	dir = 4
@@ -4309,13 +4337,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/storage)
-"uN" = (
-/obj/effect/decal/fakelattice{
-	icon_state = "lattice-12"
-	},
-/obj/structure/catwalk,
-/turf/open/floor/plating/airless,
-/area/ship/external/dark)
 "uO" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 8
@@ -4378,16 +4399,6 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/crewtwo)
-"vf" = (
-/obj/structure/catwalk,
-/obj/structure/marker_beacon{
-	picked_color = "Burgundy"
-	},
-/obj/effect/decal/fakelattice{
-	icon_state = "lattice-4"
-	},
-/turf/open/floor/plating/airless,
-/area/ship/external/dark)
 "vl" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
@@ -5582,9 +5593,7 @@
 /obj/effect/turf_decal/trimline/opaque/yellow/warning{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/yellow/corner{
-	dir = 8
-	},
+/obj/effect/turf_decal/trimline/opaque/yellow/corner,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external/dark)
 "Aq" = (
@@ -6328,6 +6337,18 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hangar)
+"Ds" = (
+/obj/structure/catwalk,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/trimline/opaque/yellow/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/opaque/yellow,
+/obj/structure/marker_beacon{
+	picked_color = "Yellow"
+	},
+/turf/open/floor/plating/airless,
+/area/ship/external/dark)
 "Du" = (
 /obj/effect/turf_decal/siding/thinplating,
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
@@ -6554,6 +6575,14 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/engine)
+"EI" = (
+/obj/structure/catwalk,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/fakelattice{
+	icon_state = "lattice-12"
+	},
+/turf/open/floor/plating/airless,
+/area/ship/external/dark)
 "EM" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -7670,14 +7699,6 @@
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/hallway/central)
-"Kw" = (
-/obj/structure/catwalk,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/fakelattice{
-	icon_state = "lattice-38"
-	},
-/turf/open/floor/plating/airless,
-/area/ship/external/dark)
 "Ky" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -7881,6 +7902,7 @@
 	dir = 5;
 	id = "talos_turrets"
 	},
+/obj/structure/catwalk,
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/maintenance/fore)
 "LT" = (
@@ -8422,6 +8444,7 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/cargo)
 "Op" = (
+/obj/structure/catwalk,
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/maintenance/port)
 "Oq" = (
@@ -8435,11 +8458,11 @@
 	},
 /turf/open/floor/plating/airless,
 /area/ship/external/dark)
-"Ow" = (
+"Oy" = (
 /obj/structure/catwalk,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/fakelattice{
-	icon_state = "lattice-110"
+	icon_state = "lattice-38"
 	},
 /turf/open/floor/plating/airless,
 /area/ship/external/dark)
@@ -8645,18 +8668,6 @@
 	},
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
-"PG" = (
-/obj/structure/catwalk,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/trimline/opaque/yellow/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/opaque/yellow,
-/obj/structure/marker_beacon{
-	picked_color = "Yellow"
-	},
-/turf/open/floor/plating/airless,
-/area/ship/external/dark)
 "PK" = (
 /obj/effect/turf_decal/corner/opaque/yellow{
 	dir = 1
@@ -8719,6 +8730,10 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
+"Qe" = (
+/obj/structure/catwalk,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/engineering/communications)
 "Qf" = (
 /obj/effect/spawner/bunk_bed,
 /obj/structure/curtain/bounty{
@@ -10468,14 +10483,6 @@
 /obj/effect/turf_decal/techfloor,
 /turf/open/floor/plating,
 /area/ship/maintenance/fore)
-"Xh" = (
-/obj/structure/catwalk,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/fakelattice{
-	icon_state = "lattice-12"
-	},
-/turf/open/floor/plating/airless,
-/area/ship/external/dark)
 "Xj" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 1
@@ -11084,7 +11091,7 @@ OU
 tk
 tk
 tk
-vf
+ei
 tk
 tk
 "}
@@ -11220,7 +11227,7 @@ LT
 LT
 LT
 LT
-LT
+Qe
 ZH
 tk
 "}
@@ -11424,7 +11431,7 @@ LT
 Kt
 ft
 LT
-LT
+Qe
 oD
 ls
 "}
@@ -11458,7 +11465,7 @@ LT
 LT
 LT
 oD
-uN
+pz
 tk
 ls
 "}
@@ -12316,7 +12323,7 @@ tk
 tk
 tk
 tk
-Kw
+Oy
 tj
 nH
 Yd
@@ -12350,7 +12357,7 @@ tk
 tk
 tk
 tk
-Xh
+EI
 Op
 rr
 qk
@@ -12467,7 +12474,7 @@ tk
 tk
 tk
 tk
-Ap
+hL
 pW
 Qp
 lL
@@ -12535,7 +12542,7 @@ tk
 tk
 tk
 tk
-aA
+Ap
 QQ
 OP
 XE
@@ -12569,7 +12576,7 @@ tk
 tk
 tk
 tk
-PG
+Ds
 MI
 SP
 OT
@@ -12589,7 +12596,7 @@ tk
 tk
 tk
 tk
-Kw
+Oy
 hE
 ZU
 dA
@@ -12623,7 +12630,7 @@ tk
 tk
 tk
 tk
-Ow
+sQ
 LB
 hE
 tT
@@ -12657,7 +12664,7 @@ tk
 tk
 tk
 tk
-Xh
+EI
 tk
 hE
 RX
@@ -12691,7 +12698,7 @@ tk
 tk
 tk
 tk
-Xh
+EI
 tk
 hE
 RX
