@@ -1505,7 +1505,7 @@
 	},
 /obj/structure/displaycase/captain{
 	req_access = list(68);
-	start_showpiece_type = /obj/item/gun/ballistic/automatic/powered/gauss/modelh
+	start_showpiece_type = /obj/item/gun/energy/e_gun/e_old/hos/brazil/true
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm/dormtwo)
@@ -2489,14 +2489,15 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/highsecurity{
-	name = "Engineering"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
+	},
+/obj/machinery/door/airlock/engineering{
+	name = "Engineering";
+	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
@@ -3193,10 +3194,10 @@
 	dir = 8;
 	layer = 2
 	},
-/obj/machinery/computer/apc_control{
+/obj/effect/turf_decal/corner/opaque/black/diagonal,
+/obj/machinery/computer/atmos_control/ship{
 	dir = 4
 	},
-/obj/effect/turf_decal/corner/opaque/black/diagonal,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/engineering)
 "KW" = (
