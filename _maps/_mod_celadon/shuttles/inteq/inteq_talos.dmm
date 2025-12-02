@@ -1909,6 +1909,7 @@
 	default_raw_text = "Artificer team: The AAC is finicky and has a habit of malfunctioning over time. If this happens, remember how to reset it. Swipe your ID card on the control unit and make sure all settings are correct. One airlock should be set to internal, one to external. Once this is done, cycle the airlock to re-enable automatic mode and lift any stuck bolts. If you aren't an artificer, don't mess with it. You shouldn't have access anyway."
 	},
 /obj/machinery/light/small/directional/south,
+/obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "iM" = (
@@ -5278,6 +5279,13 @@
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/hallway/central)
+"yy" = (
+/obj/structure/sign/warning/vacuum/external{
+	pixel_y = 12;
+	pixel_x = 0
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/hallway/fore)
 "yL" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
@@ -7826,13 +7834,6 @@
 	},
 /turf/open/floor/plasteel/lightdark,
 /area/ship/medical)
-"Lh" = (
-/obj/structure/sign/warning/vacuum/external{
-	pixel_y = 12;
-	pixel_x = 0
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/hallway/fore)
 "Lk" = (
 /obj/effect/turf_decal/box/corners{
 	dir = 1
@@ -8133,6 +8134,7 @@
 /obj/machinery/advanced_airlock_controller/internal{
 	pixel_y = -24
 	},
+/obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "MR" = (
@@ -12863,7 +12865,7 @@ tk
 tk
 tk
 tk
-Lh
+yy
 Iw
 Sv
 DK
