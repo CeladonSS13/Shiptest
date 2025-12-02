@@ -946,6 +946,11 @@
 /obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
 	dir = 4
 	},
+/obj/machinery/door/airlock/hatch{
+	dir = 8;
+	name = "Cargo Bay";
+	req_access_txt = "8132"
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hallway/central)
 "sE" = (
@@ -1145,6 +1150,9 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
+	dir = 8
+	},
+/obj/machinery/door/airlock/solgov{
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
