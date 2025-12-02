@@ -271,11 +271,6 @@
 	icon_state = "2-4";
 	tag = null
 	},
-/obj/effect/turf_decal/industrial/traffic{
-	dir = 4;
-	color = "#9e712e";
-	layer = 3
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 1;
 	layer = 2
@@ -283,6 +278,11 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue,
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 8
+	},
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 4;
+	color = "#9e712e";
+	layer = 4
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
@@ -402,7 +402,6 @@
 	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/techfloor,
-/obj/effect/turf_decal/techfloor/hole,
 /obj/effect/turf_decal/trimline/opaque/nsorange/warning{
 	dir = 1
 	},
@@ -1139,16 +1138,16 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only{
 	dir = 4
-	},
-/obj/machinery/door/airlock/solgov{
-	dir = 8
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
 	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
+	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
@@ -2157,7 +2156,7 @@
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 4;
 	color = "#9e712e";
-	layer = 3
+	layer = 4
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
@@ -2481,7 +2480,7 @@
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 4;
 	color = "#9e712e";
-	layer = 3
+	layer = 4
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
