@@ -11,13 +11,13 @@
 	response_harm_simple = "makes terrible mistake by kicking"
 	mob_size = MOB_SIZE_HUGE
 
-/mob/living/simple_animal/pet/cat/Move()
+/mob/living/simple_animal/pet/cat/iriska/Move()
 	return
 
-/mob/living/simple_animal/pet/cat/forceMove(atom/destination)
+/mob/living/simple_animal/pet/cat/iriska/forceMove(atom/destination)
 	if(ismecha(usr))
 		return ..(destination)
 	return
 
-/mob/living/simple_animal/pet/cat/update_resting()
+/mob/living/simple_animal/pet/cat/iriska/update_resting()
 	return
