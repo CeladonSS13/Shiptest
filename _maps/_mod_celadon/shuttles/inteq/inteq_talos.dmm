@@ -628,24 +628,19 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "dh" = (
-/obj/structure/sink{
-	dir = 1;
-	pixel_y = -12
-	},
 /obj/structure/mirror{
-	pixel_y = -32
-	},
-/obj/machinery/firealarm/directional/east{
-	pixel_y = -4
-	},
-/obj/machinery/light_switch{
-	dir = 8;
-	pixel_x = 20;
-	pixel_y = 8
+	pixel_y = 6;
+	pixel_x = 25
 	},
 /obj/structure/window/reinforced/tinted/frosted{
 	dir = 8
 	},
+/obj/structure/sink{
+	dir = 8;
+	pixel_y = 1;
+	pixel_x = 14
+	},
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/plasteel/showroomfloor,
 /area/ship/crew/toilet)
 "dl" = (
@@ -1528,7 +1523,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen)
 "gW" = (
-/obj/effect/turf_decal/borderfloor,
 /obj/machinery/door/airlock/engineering{
 	name = "Storage Bay";
 	req_access_txt = "10"
@@ -1542,6 +1536,7 @@
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/turf_decal/borderfloorblack,
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "hb" = (
@@ -1884,9 +1879,12 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/storage)
 "iE" = (
-/obj/structure/sign/warning/vacuum,
+/obj/structure/sign/warning/vacuum/external{
+	pixel_y = -9;
+	pixel_x = 0
+	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/crew/dorm)
+/area/ship/maintenance/fore)
 "iF" = (
 /obj/effect/turf_decal/corner/opaque/yellow,
 /obj/effect/turf_decal/corner/opaque/brown{
@@ -1954,7 +1952,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/turf/open/floor/plasteel/tech,
+/turf/open/floor/plasteel/showroomfloor,
 /area/ship/crew/toilet)
 "iY" = (
 /obj/structure/table,
@@ -3330,6 +3328,7 @@
 	name = "Communications";
 	req_access_txt = "61"
 	},
+/obj/effect/turf_decal/borderfloorblack,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/communications)
 "pR" = (
@@ -4153,6 +4152,7 @@
 /obj/machinery/door/airlock{
 	name = "Kitchen"
 	},
+/obj/effect/turf_decal/borderfloorblack,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/canteen/kitchen)
 "tY" = (
@@ -7826,6 +7826,13 @@
 	},
 /turf/open/floor/plasteel/lightdark,
 /area/ship/medical)
+"Lh" = (
+/obj/structure/sign/warning/vacuum/external{
+	pixel_y = 12;
+	pixel_x = 0
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/hallway/fore)
 "Lk" = (
 /obj/effect/turf_decal/box/corners{
 	dir = 1
@@ -10362,7 +10369,12 @@
 /obj/structure/window/reinforced/tinted/frosted{
 	dir = 8
 	},
-/obj/machinery/airalarm/directional/east,
+/obj/machinery/firealarm/directional/north,
+/obj/machinery/light_switch{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = -12
+	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/ship/crew/toilet)
 "WK" = (
@@ -12261,7 +12273,7 @@ hI
 hI
 hI
 fa
-iE
+fa
 nu
 fa
 fa
@@ -12840,7 +12852,7 @@ tk
 kr
 hE
 kU
-hE
+iE
 tk
 tk
 tk
@@ -12851,7 +12863,7 @@ tk
 tk
 tk
 tk
-Sv
+Lh
 Iw
 Sv
 DK
