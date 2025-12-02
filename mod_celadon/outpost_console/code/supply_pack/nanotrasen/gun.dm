@@ -52,7 +52,7 @@ MARK: NT-SL
 	name = "NT-SL 'E-SG 500 Second Edition' energy shotgun"
 	desc = "Contains an energy-based shotgun equipped with dual kill/disable modes, ideal for short range. The on-board computer is notoriously unreliable. For NT employee use only."
 	cost = 3000
-	contains = list(/obj/item/storage/guncase/energy/ultima_old)
+	contains = list(/obj/item/gun/energy/laser/l_old/iot)
 	crate_name = "shotgun crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/heavylaser

@@ -33,7 +33,7 @@
 /obj/item/clothing/head/helmet/hardliners
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 
-/obj/item/clothing/head/helmet/inteq
+/obj/item/clothing/head/helmet/x11
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 
 /obj/item/clothing/head/helmet/ngr
@@ -45,10 +45,7 @@
 /obj/item/clothing/head/helmet/medical
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 
-/obj/item/clothing/head/helmet/sec
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
-
-/obj/item/clothing/head/helmet/ramzi
+/obj/item/clothing/head/helmet/m10
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 
 /obj/item/clothing/head/helmet/gezena

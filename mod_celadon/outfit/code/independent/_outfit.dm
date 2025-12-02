@@ -396,7 +396,7 @@
 	ears = /obj/item/radio/headset/alt
 	uniform = /obj/item/clothing/under/rank/security/officer
 	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/helmet/sec
+	head = /obj/item/clothing/head/helmet/m10
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -443,7 +443,7 @@
 	ears = /obj/item/radio/headset/alt
 	uniform = /obj/item/clothing/under/rank/security/officer
 	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/helmet/sec
+	head = /obj/item/clothing/head/helmet/m10
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
 	shoes = /obj/item/clothing/shoes/jackboots

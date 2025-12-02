@@ -31,7 +31,7 @@
 	variance = 35
 	e_cost = 1428
 
-/obj/item/gun/energy/e_gun/iot
+/obj/item/gun/energy/e_gun/e_old/iot
 	desc = "An advanced semi-automatic dual-mode energy shotgun. This weapon is a big improvement since the last model. It provides excellent fire support for all Nanotrasen's security forces." //убираем упоминание несуществующего компутера, переписываем
 
 ////////////
@@ -91,7 +91,7 @@
 /obj/item/ammo_casing/energy/laser/assault
 	e_cost = 500 //gives hades 5 more shots to balance out the standart power cell
 
-/obj/item/gun/energy/e_gun/hades
+/obj/item/gun/energy/e_gun/e_old/hades
 	desc = "Nanotrasen-Sharplite's premium assault energy rifle. This elite energy weapon is focused on heavy fire support. A powerful, but expensive and rare assault rifle." //новое описание без лора оффов
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler/assault, /obj/item/ammo_casing/energy/laser/assault)
 	default_ammo_type = /obj/item/stock_parts/cell/gun //nerfs the power cell to a standart one

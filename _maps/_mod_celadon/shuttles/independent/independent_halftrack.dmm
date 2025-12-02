@@ -165,9 +165,9 @@
 	pixel_x = 28;
 	req_access_txt = "5"
 	},
-/obj/item/clothing/head/helmet/sec,
-/obj/item/clothing/head/helmet/sec,
-/obj/item/clothing/head/helmet/sec,
+/obj/item/clothing/head/helmet/m10,
+/obj/item/clothing/head/helmet/m10,
+/obj/item/clothing/head/helmet/m10,
 /obj/item/flashlight/seclite,
 /obj/item/flashlight/seclite,
 /obj/item/flashlight/seclite,
@@ -363,10 +363,10 @@
 	dir = 6
 	},
 /obj/item/gun/ballistic/automatic/smg/vector{
-	default_ammo_type = /obj/item/ammo_box/magazine/smgm9mm/empty
+	default_ammo_type = /obj/item/ammo_box/magazine/m9mm_expedition/empty
 	},
-/obj/item/ammo_box/magazine/smgm9mm,
-/obj/item/ammo_box/magazine/smgm9mm,
+/obj/item/ammo_box/magazine/m9mm_expedition,
+/obj/item/ammo_box/magazine/m9mm_expedition,
 /obj/item/gun/ballistic/automatic/pistol/commander/no_mag,
 /obj/item/gun/ballistic/automatic/pistol/commander/no_mag,
 /obj/item/ammo_box/magazine/co9mm{
@@ -719,9 +719,9 @@
 /obj/item/flashlight/seclite,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/machinery/airalarm/directional/north,
-/obj/item/clothing/head/helmet/sec,
-/obj/item/clothing/head/helmet/sec,
-/obj/item/clothing/head/helmet/sec,
+/obj/item/clothing/head/helmet/m10,
+/obj/item/clothing/head/helmet/m10,
+/obj/item/clothing/head/helmet/m10,
 /obj/structure/closet/secure_closet/wall{
 	dir = 4;
 	icon_state = "sec_wall";
@@ -808,8 +808,8 @@
 /obj/item/clothing/suit/hooded/wintercoat/security/inteq,
 /obj/item/clothing/head/soft/inteq,
 /obj/item/clothing/head/soft/inteq,
-/obj/item/clothing/head/helmet/inteq,
-/obj/item/clothing/head/helmet/inteq,
+/obj/item/clothing/head/helmet/m10/inteq,
+/obj/item/clothing/head/helmet/m10/inteq,
 /obj/item/storage/belt/security/webbing/inteq,
 /obj/item/storage/belt/security/webbing/inteq,
 /obj/item/storage/backpack/messenger/inteq,
@@ -1014,10 +1014,10 @@
 /area/ship/security)
 "zR" = (
 /obj/item/gun/ballistic/automatic/smg/vector{
-	default_ammo_type = /obj/item/ammo_box/magazine/smgm9mm/empty
+	default_ammo_type = /obj/item/ammo_box/magazine/m9mm_expedition/empty
 	},
-/obj/item/ammo_box/magazine/smgm9mm,
-/obj/item/ammo_box/magazine/smgm9mm,
+/obj/item/ammo_box/magazine/m9mm_expedition,
+/obj/item/ammo_box/magazine/m9mm_expedition,
 /obj/item/ammo_box/magazine/co9mm{
 	ammo_type = /obj/item/ammo_casing/c9mm/rubber;
 	name = "Commander magazine (Rubbershot 9mm)"

@@ -14,7 +14,7 @@ MARK: VI
 /datum/supply_pack/faction/nanotrasen/magazine/smgm9mm_mag
 	name = "9x18mm SMG Magazine Crate"
 	desc = "Contains a 9x18mm magazine for the Vector and Saber SMGs, with a capacity of 30 rounds."
-	contains = list(/obj/item/ammo_box/magazine/smgm9mm/empty)
+	contains = list(/obj/item/ammo_box/magazine/m9mm_expedition/empty)
 	cost = 250
 
 /datum/supply_pack/faction/nanotrasen/magazine/wt550_mag

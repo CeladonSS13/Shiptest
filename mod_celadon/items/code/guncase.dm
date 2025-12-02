@@ -35,42 +35,22 @@ MARK: Independent guncases
 MARK: Solfed guncases
  */
 
-/obj/item/ammo_box/magazine/gar/empty
-	start_empty = TRUE
-
-/obj/item/storage/guncase/automatic/powered/gauss
-/obj/item/storage/guncase/automatic/powered/gauss/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/powered/gauss/no_mag(src)
-	new /obj/item/ammo_box/magazine/gauss/empty(src)
-	new /obj/item/ammo_box/magazine/gauss/empty(src)
-
-/obj/item/ammo_box/magazine/gauss/empty
-	start_empty = TRUE
+/obj/item/storage/guncase/gauss
+	gun_type = /obj/item/gun/ballistic/automatic/powered/gauss
+	mag_type = /obj/item/ammo_box/magazine/gauss
 
 /obj/item/storage/guncase/pistole_c
-/obj/item/storage/guncase/pistole_c/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/pistol/solgov/no_mag(src)
-	new /obj/item/ammo_box/magazine/pistol556mm/empty(src)
-	new /obj/item/ammo_box/magazine/pistol556mm/empty(src)
+	gun_type = /obj/item/gun/ballistic/automatic/pistol/solgov
+	mag_type = /obj/item/ammo_box/magazine/pistol556mm
 
-/obj/item/ammo_box/magazine/pistol556mm/empty
-	start_empty = TRUE
+/obj/item/storage/guncase/cm82/solfed
+	gun_type = /obj/item/gun/ballistic/automatic/assault/cm82/solfed
+	mag_type = /obj/item/ammo_box/magazine/p16
 
-/obj/item/storage/guncase/vector
-/obj/item/storage/guncase/vector/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/smg/vector/no_mag(src)
-	new /obj/item/ammo_box/magazine/smgm9mm/empty(src)
-	new /obj/item/ammo_box/magazine/smgm9mm/empty(src)
 
 /*
 MARK: InteQ guncases
 */
-
-/obj/item/storage/guncase/cm82/solfed
-/obj/item/storage/guncase/cm82/solfed/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/assault/cm82/solfed/no_mag(src)
-	new /obj/item/ammo_box/magazine/p16/empty(src)
-	new /obj/item/ammo_box/magazine/p16/empty(src)
 
 /obj/item/storage/guncase/bulldog/inteq
 /obj/item/storage/guncase/bulldog/inteq/PopulateContents()
@@ -166,12 +146,12 @@ MARK: Syndicate guncases
 MARK: Nanotrasen guncases
 */
 
-/obj/item/gun/energy/e_gun/hades/empty_cell
+/obj/item/gun/energy/e_gun/e_old/hades/empty_cell
 	spawn_no_ammo = TRUE
 
 /obj/item/storage/guncase/hades
 /obj/item/storage/guncase/hades/PopulateContents()
-	new /obj/item/gun/energy/e_gun/hades/empty_cell(src)
+	new /obj/item/gun/energy/e_gun/e_old/hades/empty_cell(src)
 	new /obj/item/stock_parts/cell/gun/empty(src)
 	new /obj/item/stock_parts/cell/gun/empty(src)
 
@@ -183,7 +163,7 @@ MARK: Nanotrasen guncases
 
 /obj/item/storage/guncase/iot
 /obj/item/storage/guncase/iot/PopulateContents()
-	new /obj/item/gun/energy/e_gun/iot(src)
+	new /obj/item/gun/energy/e_gun/e_old/iot(src)
 	new /obj/item/stock_parts/cell/gun/empty(src)
 
 /obj/item/gun/energy/ionrifle/carbine/empty_cell
@@ -207,11 +187,8 @@ MARK: Nanotrasen guncases
 /obj/item/storage/guncase/sabersmg
 /obj/item/storage/guncase/sabersmg/PopulateContents()
 	new /obj/item/gun/ballistic/automatic/smg/skm_carbine/saber/no_mag(src)
-	new /obj/item/ammo_box/magazine/smgm9mm/empty(src)
-	new /obj/item/ammo_box/magazine/smgm9mm/empty(src)
-
-/obj/item/ammo_box/magazine/smgm9mm/empty
-	start_empty = TRUE
+	new /obj/item/ammo_box/magazine/m9mm_expedition/empty(src)
+	new /obj/item/ammo_box/magazine/m9mm_expedition/empty(src)
 
 /obj/item/gun/energy/e_gun/plasmapistol_cryo/empty_cell
 	spawn_no_ammo = TRUE

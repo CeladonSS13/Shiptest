@@ -43,7 +43,7 @@
 /datum/supply_pack/faction/solfed/gun/gauss/prototype
 	name = "Prototype Gauss Rifle"
 	desc = "A high capacity experimental rifle developed by Nanotrasen. Sold to solar federation as a weapon for effective crowd control. Chambered in ferromagnetic pellets."
-	contains = list(/obj/item/storage/guncase/automatic/powered/gauss)
+	contains = list(/obj/item/storage/guncase/gauss)
 	cost = 3500
 
 /datum/supply_pack/faction/solfed/gun/cm82_solfed
