@@ -42,4 +42,4 @@
 
 /obj/item/ammo_box/magazine/internal/cylinder/rev44/montagne
 	name = "montagne revolver cylinder"
-	instant_load = TRUE
+	instant_load = TRUE //[CELADON-EDIT] - instant_load = FALSE
