@@ -97,7 +97,7 @@ EMPTY_GUN_HELPER(revolver/firebrand)
 	)
 	manufacturer = MANUFACTURER_HUNTERSPRIDE
 	obj_flags = UNIQUE_RENAME
-	gate_loaded = TRUE
+	gate_loaded = FALSE // [CELADON-EDIT]- gate_loaded = TRUE
 
 	unique_reskin = list(\
 		"Shadow" = "shadow",
