@@ -10,13 +10,10 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/lasergun/sharplite)
 	manufacturer = MANUFACTURER_SHARPLITE_NEW
 
-/obj/item/gun/energy/laser/l_old/retro
-	name ="SL L-104 retro laser gun"
-	icon_state = "retro"
-
 /obj/item/gun/energy/laser/l_old/iot
 	name = "\improper SL E-255 Ultimate"
-	desc = "An energy shotgun with an integrated computer system for surveillance and statistics tracking."
+	desc = "An advanced semi-automatic dual-mode energy shotgun. This weapon is a big improvement since the last model. It provides excellent fire support for all Nanotrasen's security forces." //убираем упоминание несуществующего компутера, переписываем (с) хомяки
+	//desc = "An energy shotgun with an integrated computer system for surveillance and statistics tracking."
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob_old.dmi'
 
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/64x_guns_left_old.dmi'
@@ -43,7 +40,7 @@
 		return
 	integratedNTOS.interact(user)
 
-/obj/item/gun/energy/laser/iot/lethal
+/obj/item/gun/energy/laser/l_old/iot/lethal
 	desc = "An energy shotgun with an integrated computer system for surveillance and statistics tracking. This one appears to be modified to fire lethal beams."
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/ultima)
 

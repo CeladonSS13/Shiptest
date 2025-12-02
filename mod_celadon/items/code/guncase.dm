@@ -8,7 +8,6 @@ NO_MAG_GUN_HELPER(automatic/pistol/solgov)
 NO_MAG_GUN_HELPER(automatic/smg/vector)
 NO_MAG_GUN_HELPER(automatic/assault/skm/inteq)
 NO_MAG_GUN_HELPER(automatic/marksman/f4/inteq)
-NO_MAG_GUN_HELPER(energy/laser/retro)
 
 /obj/item/gun/energy/laser/retro/empty_cell
 	spawn_no_ammo = TRUE
@@ -20,10 +19,8 @@ MARK: Independent guncases
 */
 
 /obj/item/storage/guncase/retro
-/obj/item/storage/guncase/retro/PopulateContents()
-	new /obj/item/gun/energy/laser/retro/empty_cell(src)
-	new /obj/item/stock_parts/cell/gun/empty(src)
-	new /obj/item/stock_parts/cell/gun/empty(src)
+	gun_type = /obj/item/gun/energy/laser/retro
+	mag_type = /obj/item/stock_parts/cell/gun
 
 /obj/item/storage/guncase/skm_carbine
 /obj/item/storage/guncase/skm_carbine/PopulateContents()
