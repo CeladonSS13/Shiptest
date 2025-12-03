@@ -21131,6 +21131,7 @@
 /area/outpost/external)
 "lFv" = (
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/pet/cat/iriska,
 /turf/open/floor/plasteel/tech,
 /area/outpost/operations/outpost_command)
 "lGu" = (
@@ -36654,9 +36655,6 @@
 	light_range = 2
 	},
 /area/outpost/vacant_rooms/trash_factory)
-"ugo" = (
-/turf/open/floor/plating/asteroid/icerock/temperate,
-/area/outpost/exterior)
 "ugJ" = (
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -43475,11 +43473,6 @@
 	layer = 2.030
 	},
 /obj/effect/turf_decal/trimline/opaque/orange/line,
-/mob/living/basic/iriska{
-	dir = 1;
-	layer = 3;
-	pixel_x = -3
-	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "xVp" = (
@@ -50212,7 +50205,7 @@ aKm
 aKm
 rgY
 uNE
-ugo
+hQU
 rgY
 rgY
 rgY
