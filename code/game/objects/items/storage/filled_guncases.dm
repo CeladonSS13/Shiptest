@@ -22,7 +22,7 @@
 
 /obj/item/storage/guncase/pistol/shadow
 	gun_type = /obj/item/gun/ballistic/revolver/shadow
-	mag_type = /obj/item/ammo_box/a44roum_speedloader // [CELADON-ADD] Добавляем отсутствующий спидлоадер в ганкейсе при покупке
+
 /obj/item/storage/guncase/pistol/ashhand
 	gun_type = /obj/item/gun/ballistic/revolver/ashhand
 
