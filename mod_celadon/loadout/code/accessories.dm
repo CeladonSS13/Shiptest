@@ -38,3 +38,17 @@
 /datum/gear/accessory/gloves/diamondring
 	display_name = "Diamond Ring"
 	path = /obj/item/clothing/gloves/ring/diamond
+
+// MARK: Wallets
+
+/datum/gear/accessory/wallet
+	display_name = "Wallet"
+	path = /obj/item/storage/wallet
+
+/datum/gear/accessory/wallet/black
+	display_name = "Wallet black"
+	path = /obj/item/storage/wallet/black
+
+/datum/gear/accessory/wallet/white
+	display_name = "Wallet white"
+	path = /obj/item/storage/wallet/white

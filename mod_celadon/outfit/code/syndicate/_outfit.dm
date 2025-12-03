@@ -62,11 +62,6 @@
 	gloves = /obj/item/clothing/gloves/combat
 	suit = /obj/item/clothing/suit/armor/vest/capcarapace/syndicate
 
-	backpack = /obj/item/storage/backpack/security
-	satchel = /obj/item/storage/backpack/satchel/sec
-	duffelbag = /obj/item/storage/backpack/duffelbag/sec
-	courierbag = /obj/item/storage/backpack/messenger/sec
-
 //MARK: Command
 
 /datum/outfit/job/cel/syndicate/ce	// Не юзается
@@ -85,10 +80,6 @@
 	head = /obj/item/clothing/head/hardhat/white
 	gloves = /obj/item/clothing/gloves/color/black
 
-	backpack = /obj/item/storage/backpack/industrial
-	satchel = /obj/item/storage/backpack/satchel/eng
-	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
-	courierbag = /obj/item/storage/backpack/messenger/engi
 	pda_slot = ITEM_SLOT_LPOCKET
 	chameleon_extras = /obj/item/stamp/ce
 
@@ -310,8 +301,6 @@
 
 	id = /obj/item/card/id/cel/syndicate/crew/security
 	uniform = /obj/item/clothing/under/syndicate
-	back = /obj/item/storage/backpack
-
 	ears = /obj/item/radio/headset/alt
 	gloves = /obj/item/clothing/gloves/color/black
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -337,7 +326,7 @@
 						/obj/item/radio/weather_monitor=1,
 						)
 
-/datum/outfit/job/cel/syndicate/engineer	// Не юзается
+/datum/outfit/job/cel/syndicate/engineer
 	name = "Syndi - Ship Technician"
 	id_assignment = "Ship Technician"
 	jobtype = /datum/job/engineer
