@@ -354,6 +354,12 @@ FIXES_DEL_FISH
 
 FIXES_BRAIN_MIND_TRANSFER
 - `code/modules/mob/living/brain/brain_item.dm` :  Не удаляем brainmob, чтобы сохранить привязку души к мозгу
+FIXES_ADVANCED_FIRSTAID
+- `code/game/objects/items/storage/firstaid.dm` : Увеличиваем max_combined_w_class чтобы предметы помещались обратно
+FIXES_HOLO_ESWORD
+- `code/modules/holodeck/items.dm` : Кто-то забыл убрать 0
+FIXES_MASK_ON_KEPORI
+- `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Добавляем проверку на проклятость маски для кепори
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
