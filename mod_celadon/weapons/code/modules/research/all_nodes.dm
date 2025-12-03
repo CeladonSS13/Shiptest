@@ -17,3 +17,23 @@
 	build_path = /obj/item/storage/box/ammo/a308/surplus
 	category = list("Ammo")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+// Возвращаем эту штуку
+/datum/design/nuclear_gun
+	name = "Advanced Energy Gun"
+	desc = "An energy gun with an experimental miniaturized reactor."
+	id = "nuclear_gun"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 10000, /datum/material/glass = 2000, /datum/material/uranium = 3000, /datum/material/titanium = 1000)
+	build_path = /obj/item/gun/energy/e_gun/e_old/nuclear
+	category = list("Weapons")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+/datum/techweb_node/radioactive_weapons
+	id = "radioactive_weapons"
+	display_name = "Radioactive Weaponry"
+	description = "Weapons using radioactive technology."
+	prereq_ids = list("adv_engi", "adv_weaponry")
+	design_ids = list("nuclear_gun")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	export_price = 5000

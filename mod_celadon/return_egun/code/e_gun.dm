@@ -4,6 +4,8 @@
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/lefthand_old.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/righthand_old.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob_old.dmi'
+	ammo_type = list(/obj/item/ammo_casing/energy/disabler, /obj/item/ammo_casing/energy/laser)
+
 
 /obj/item/gun/energy/e_gun/e_old/empty_cell
 	spawn_no_ammo = TRUE
@@ -17,6 +19,7 @@
 	default_ammo_type = /obj/item/stock_parts/cell/gun/mini
 	allowed_ammo_types = list(
 		/obj/item/stock_parts/cell/gun/mini,
+		/obj/item/stock_parts/cell/gun/sharplite/mini,
 	)
 	throwforce = 11 //This is funny, trust me.
 	ammo_x_offset = 2
@@ -30,14 +33,17 @@
 /obj/item/gun/energy/e_gun/e_old/mini/empty_cell
 	spawn_no_ammo = TRUE
 
-/obj/item/gun/energy/e_gun/e_old/hades
+/obj/item/gun/energy/e_gun/e_old/hades // Перенёс изменения хомячков
 	name = "SL AL-655 'Hades' energy rifle"
-	desc = "The standard issue rifle of Nanotrasen's Security Forces. Most have been put in long term storage following the ICW, and usually aren't issued to low ranking security divisions."
+	desc = "Nanotrasen-Sharplite's premium assault energy rifle. This elite energy weapon is focused on heavy fire support. A powerful, but expensive and rare assault rifle." //новое описание без лора оффов
+	// desc = "The standard issue rifle of Nanotrasen's Security Forces. Most have been put in long term storage following the ICW, and usually aren't issued to low ranking security divisions."
 	icon_state = "energytac"
 	ammo_x_offset = 2
 	charge_sections = 5
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/assault/sharplite, /obj/item/ammo_casing/energy/disabler/sharplite)
-	default_ammo_type = /obj/item/stock_parts/cell/gun/upgraded
+
+	ammo_type = list(/obj/item/ammo_casing/energy/disabler/assault, /obj/item/ammo_casing/energy/laser/assault)
+	//default_ammo_type = /obj/item/stock_parts/cell/gun/upgraded
+	default_ammo_type = /obj/item/stock_parts/cell/gun //nerfs the power cell to a standart one
 
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
@@ -57,7 +63,7 @@
 	desc = "NT-P:01 Prototype Energy Gun. Early stage development of a unique laser rifle that has a multifaceted energy lens, allowing the gun to alter the form of projectile it fires on command. The project was a dud, and Nanotrasen later acquired Sharplite to suit its laser weapon needs."
 	icon_state = "protolaser"
 	ammo_x_offset = 2
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/sharplite, /obj/item/ammo_casing/energy/electrode/old)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser, /obj/item/ammo_casing/energy/electrode/old)
 	manufacturer = MANUFACTURER_NANOTRASEN_OLD
 
 /obj/item/gun/energy/e_gun/e_old/hos
@@ -66,10 +72,13 @@
 	default_ammo_type = /obj/item/stock_parts/cell/gun/upgraded
 	icon_state = "hoslaser"
 	force = 10
-	ammo_type = list(/obj/item/ammo_casing/energy/disabler/sharplite/hos, /obj/item/ammo_casing/energy/laser/sharplite/hos, /obj/item/ammo_casing/energy/ion/hos, /obj/item/ammo_casing/energy/electrode/hos)
+	ammo_type = list(/obj/item/ammo_casing/energy/disabler, /obj/item/ammo_casing/energy/laser/hos, /obj/item/ammo_casing/energy/ion/hos, /obj/item/ammo_casing/energy/electrode/hos)
 	shaded_charge = TRUE
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	manufacturer = MANUFACTURER_SHARPLITE_NEW
+
+/obj/item/ammo_casing/energy/laser/hos
+	e_cost = 500
 
 /obj/item/gun/energy/e_gun/e_old/hos/brazil
 	name = "modified antique laser gun"
@@ -169,7 +178,7 @@
 	icon_state = "bsgun"
 	item_state = "gun"
 	force = 7
-	ammo_type = list(/obj/item/ammo_casing/energy/disabler/sharplite/hos, /obj/item/ammo_casing/energy/laser/sharplite/hos, /obj/item/ammo_casing/energy/trap)
+	ammo_type = list(/obj/item/ammo_casing/energy/disabler, /obj/item/ammo_casing/energy/laser/hos, /obj/item/ammo_casing/energy/trap)
 	ammo_x_offset = 1
 	shaded_charge = TRUE
 
@@ -177,7 +186,7 @@
 	name = "\improper E-TAR SMG"
 	desc = "A dual-mode energy gun capable of discharging weaker shots at a much faster rate than the standard energy gun."
 	icon_state = "esmg"
-	ammo_type = list(/obj/item/ammo_casing/energy/disabler/sharplite/smg, /obj/item/ammo_casing/energy/laser/sharplite/smg)
+	ammo_type = list(/obj/item/ammo_casing/energy/disabler/smg, /obj/item/ammo_casing/energy/laser/smg)
 	ammo_x_offset = 2
 	charge_sections = 3
 	weapon_weight = WEAPON_LIGHT

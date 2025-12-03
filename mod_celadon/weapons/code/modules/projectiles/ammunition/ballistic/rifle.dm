@@ -2,21 +2,12 @@
 [*] - отсутствуют.
 [-] - отключены.
 
-> 5.56x39mm
+
 > 5.56x45mm
 > .308
 > 7.62x54mmR
 
-MARK: 5.56x39mm (M-90gl Carbine & P-16)
 */
-
-/obj/item/ammo_casing/a556_39
-	name = "5.56x39mm CLIP bullet casing"
-	desc = "A 5.56x39mm CLIP bullet casing."
-	icon_state = "rifle-brass"
-	caliber = "5.56x39mm"
-	projectile_type = /obj/projectile/bullet/a556_39
-	// bullet_per_box = 80
 
 //
 // MARK: 5.56x45mm

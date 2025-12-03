@@ -1,9 +1,5 @@
 /* VI */
 
-/obj/item/storage/guncase/pistol/commander_old
-	gun_type = /obj/item/gun/ballistic/automatic/pistol/commander
-	mag_type = /obj/item/ammo_box/magazine/co9mm
-
 /obj/item/storage/guncase/vector_old
 	gun_type = /obj/item/gun/ballistic/automatic/smg/vector
 	mag_type = /obj/item/ammo_box/magazine/m9mm_expedition
@@ -16,9 +12,6 @@
 /obj/item/storage/guncase/pistol/miniegun_old
 	gun_type = /obj/item/gun/energy/e_gun/e_old/mini
 	mag_type = /obj/item/stock_parts/cell/gun/mini
-
-/obj/item/storage/guncase/energy/laser_old
-	gun_type = /obj/item/gun/energy/laser
 
 /obj/item/storage/guncase/energy/egun_old
 	gun_type = /obj/item/gun/energy/e_gun/e_old

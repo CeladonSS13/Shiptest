@@ -142,3 +142,6 @@
 	select_name = "immolate"
 	delay = 12
 	e_cost = 3333 //6 per upgraded cell
+
+/obj/item/ammo_casing/energy/laser/hos
+	e_cost = 500

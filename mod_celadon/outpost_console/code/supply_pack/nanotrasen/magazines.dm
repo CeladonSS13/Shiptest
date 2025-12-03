@@ -6,8 +6,8 @@ MARK: VI
 */
 
 /datum/supply_pack/faction/nanotrasen/magazine/co9mm_mag
-	name = "9x18mm Commander Magazine Crate"
-	desc = "Contains a 9x18mm magazine for the standard-issue Commander pistol, with a capacity of 12 rounds."
+	name = "9x18mm \"Challenger\" Magazine Crate"
+	desc = "Contains a 9x18mm magazine for the standard-issue \"Challenger\" pistol, with a capacity of 12 rounds."
 	contains = list(/obj/item/ammo_box/magazine/co9mm/empty)
 	cost = 150
 

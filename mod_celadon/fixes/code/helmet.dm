@@ -33,9 +33,6 @@
 /obj/item/clothing/head/helmet/hardliners
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 
-/obj/item/clothing/head/helmet/x11
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
-
 /obj/item/clothing/head/helmet/ngr
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 

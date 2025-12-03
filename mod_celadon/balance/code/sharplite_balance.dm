@@ -34,7 +34,7 @@
 ////////////
 //etar SMG egun
 ////////////
-
+// Здесь были изменения етара. Я их перенёс в
 //etar-smg projectiles
 
 /obj/projectile/beam/disabler/weak/smg
@@ -52,9 +52,10 @@
 	projectile_type = /obj/projectile/beam/disabler/weak/smg
 	e_cost = 300
 
+// Тепер етар использует данный снаряд
 /obj/item/ammo_casing/energy/laser/smg
 	projectile_type = /obj/projectile/beam/laser/light/smg
-	e_cost = 400 //cheaper to fire but worse projectiles as stated above
+	e_cost = 396 //cheaper to fire but worse projectiles as stated above
 
 /obj/item/ammo_casing/energy/laser/sharplite/smg
 	projectile_type = /obj/projectile/beam/weak/sharplite
@@ -64,18 +65,22 @@
 //NT-SL HADES egun
 ////////////
 
+// Меняет баланс Хейдеса
+// Это трогает ещё эохому e40_laser_secondary
+
 //HADES projectiles
 
 /obj/projectile/beam/disabler/assault
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
 	icon_state = "heavylaser_blue"
-	speed = 0.7
+	speed = 0.7 // 0.8 изначально у оффов
 	damage = 25
 	armour_penetration = 20
 
 /obj/projectile/beam/laser/assault
 	speed = 0.7 //makes the ASSAULT lasers go faster to make them not shit
-	armour_penetration = 20
+	// 0.8 изначально у оффов.
+	// armour_penetration = 20 // У оффов уже изменено до 20
 
 //Ammo casings
 
@@ -88,10 +93,7 @@
 /obj/item/ammo_casing/energy/laser/assault
 	e_cost = 500 //gives hades 5 more shots to balance out the standart power cell
 
-/obj/item/gun/energy/e_gun/e_old/hades
-	desc = "Nanotrasen-Sharplite's premium assault energy rifle. This elite energy weapon is focused on heavy fire support. A powerful, but expensive and rare assault rifle." //новое описание без лора оффов
-	ammo_type = list(/obj/item/ammo_casing/energy/disabler/assault, /obj/item/ammo_casing/energy/laser/assault)
-	default_ammo_type = /obj/item/stock_parts/cell/gun //nerfs the power cell to a standart one
+// Здесь были изменения Хейдеса. Искать его в mod_celadon\return_egun\code\e_gun.dm
 
 //NT ballistics relore - MORE Vigilitas Interstellar!
 /*

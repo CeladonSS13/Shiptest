@@ -1074,17 +1074,17 @@
 /obj/structure/guncloset{
 	name = "medium alert locker"
 	},
-/obj/item/gun/energy/e_gun/e_old{
+/obj/item/gun/energy/e_gun/e_old/nuclear{
 	pixel_x = 0;
-	pixel_y = -8
+	pixel_y = 9
 	},
-/obj/item/gun/energy/e_gun/e_old{
+/obj/item/gun/energy/e_gun/e_old/nuclear{
 	pixel_x = 0;
 	pixel_y = -1
 	},
-/obj/item/gun/energy/e_gun/e_old{
+/obj/item/gun/energy/e_gun/e_old/nuclear{
 	pixel_x = 0;
-	pixel_y = 6
+	pixel_y = -9
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
@@ -2121,6 +2121,7 @@
 /obj/item/clothing/head/nanotrasen/beret/security/command,
 /obj/item/storage/lockbox/medal/sec,
 /obj/item/radio/headset/nanotrasen/alt,
+/obj/item/gun/energy/e_gun/e_old/hos,
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
 "if" = (
@@ -6363,6 +6364,10 @@
 	pixel_x = 7;
 	pixel_y = -21
 	},
+/obj/structure/displaycase{
+	req_access_txt = "20";
+	start_showpiece_type = /obj/item/gun/energy/e_gun/e_old/hos/brazil/true
+	},
 /turf/open/floor/wood,
 /area/ship/crew/law_office)
 "wK" = (
@@ -6967,7 +6972,7 @@
 	},
 /obj/item/radio/intercom/directional/east,
 /obj/structure/guncloset,
-/obj/item/gun/ballistic/automatic/pistol/commander,
+/obj/item/gun/ballistic/automatic/pistol/challenger,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo/office)
 "yW" = (

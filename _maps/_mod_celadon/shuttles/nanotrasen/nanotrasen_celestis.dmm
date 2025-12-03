@@ -323,7 +323,6 @@
 	},
 /obj/item/radio/headset/nanotrasen/alt/captain,
 /obj/item/gun/energy/e_gun/e_old,
-/obj/item/stock_parts/cell/gun/upgraded,
 /obj/item/clothing/shoes/laceup,
 /obj/machinery/light/directional/west,
 /obj/item/clothing/head/nanotrasen/beret,
@@ -331,6 +330,7 @@
 /obj/item/clothing/neck/cloak/cap,
 /obj/item/clothing/gloves/color/captain/nt,
 /obj/item/modular_computer/tablet,
+/obj/item/stock_parts/cell/gun/sharplite/plus,
 /turf/open/floor/carpet/royalblue,
 /area/ship/general/command_crew)
 "cA" = (
@@ -935,14 +935,8 @@
 /obj/item/clothing/shoes/laceup,
 /obj/machinery/light/directional/west,
 /obj/item/clothing/neck/cloak/head_of_personnel,
-/obj/item/gun/energy/e_gun/e_old{
-	pixel_x = -6;
-	pixel_y = 6
-	},
-/obj/item/gun/energy/e_gun/e_old{
-	pixel_x = 6;
-	pixel_y = -7
-	},
+/obj/item/gun/energy/e_gun/e_old/mini,
+/obj/item/gun/energy/e_gun/e_old/mini,
 /turf/open/floor/carpet/blue,
 /area/ship/general/command_crew/hop)
 "gr" = (
@@ -1166,7 +1160,7 @@
 /obj/item/clothing/head/nanotrasen,
 /obj/item/clothing/neck/tie/black,
 /obj/item/clothing/suit/nanotrasen/suitjacket,
-/obj/item/gun/ballistic/automatic/pistol/commander{
+/obj/item/gun/ballistic/automatic/pistol/challenger{
 	default_ammo_type = /obj/item/ammo_box/magazine/co9mm/ap
 	},
 /obj/item/clothing/shoes/laceup,
@@ -7364,8 +7358,8 @@
 	},
 /obj/item/ammo_box/magazine/co9mm,
 /obj/item/ammo_box/magazine/co9mm,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
 /obj/item/clothing/mask/gas/vigilitas,
 /obj/item/clothing/suit/armor/hos/trenchcoat,
 /obj/item/clothing/head/beret/sec/officer,
