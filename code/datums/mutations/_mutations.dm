@@ -173,7 +173,7 @@
 
 	power = new power()
 	power.action_background_icon_state = "bg_tech_blue_on"
-	power.panel = null // [CELADON-CHANGE] - Эти панелки более не нужны
+	power.panel = null // [CELADON-EDIT] "power.panel = "Genetic""- Эти панелки более не нужны
 	owner.AddSpell(power)
 	return TRUE
 // Runs through all the coefficients and uses this to determine which chromosomes the

@@ -467,7 +467,7 @@
 	job_icon = "stationengineer"
 	jobtype = /datum/job/engineer
 
-	belt = null
+	belt = /obj/item/storage/belt/utility/full/engi
 	gloves = null
 	ears = /obj/item/radio/headset/headset_eng
 	uniform = /obj/item/clothing/under/overalls/olive
@@ -484,7 +484,7 @@
 /datum/outfit/job/cel/independent/engineer/salvage
 	name = "IND - Engineer (Salvager)"
 
-	belt = null
+	belt = /obj/item/storage/belt/utility/full/engi
 	l_pocket = null
 
 // MARK:Chief Engineer

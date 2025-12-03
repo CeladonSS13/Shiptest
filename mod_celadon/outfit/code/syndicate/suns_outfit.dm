@@ -3,6 +3,7 @@
 /datum/outfit/job/cel/syndicate/captain/suns
 	name = "Syndi SUNS - Captain"
 	faction_icon = "bg_suns"
+	job_icon = "suns_cap"
 
 	id = /obj/item/card/id/cel/syndicate/captain/suns
 	uniform = /obj/item/clothing/under/syndicate/suns/captain
