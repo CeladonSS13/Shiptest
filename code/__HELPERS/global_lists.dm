@@ -110,6 +110,12 @@
 		GLOB.name_occupations[new_job.name] = new_job
 		GLOB.type_occupations[path] = new_job
 
+	// [CELADON-ADD] - CELADON_THE_VOICES
+	// The Voices
+	for(var/path in subtypesof(/datum/bark))
+		var/datum/bark/B = new path()
+		GLOB.bark_list[B.id] = path
+	// [/CELADON-ADD]
 	// Keybindings
 	init_keybindings()
 

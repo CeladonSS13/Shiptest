@@ -121,6 +121,12 @@
 		L[DNA_FACIAL_HAIR_COLOR_BLOCK] = sanitize_hexcolor(H.facial_hair_color)
 		L[DNA_SKIN_TONE_BLOCK] = construct_block(GLOB.skin_tones.Find(H.skin_tone), GLOB.skin_tones.len)
 		L[DNA_EYE_COLOR_BLOCK] = sanitize_hexcolor(H.eye_color)
+		// [CELADON-ADD] - CELADON_THE_VOICES
+		L[DNA_BARK_SOUND_BLOCK] = construct_block(GLOB.bark_list.Find(H.vocal_bark_id), GLOB.bark_list.len)
+		L[DNA_BARK_SPEED_BLOCK] = construct_block(H.vocal_speed * 4, 16)
+		L[DNA_BARK_PITCH_BLOCK] = construct_block(H.vocal_pitch * 30, 48)
+		L[DNA_BARK_VARIANCE_BLOCK] = construct_block(H.vocal_pitch_range * 48, 48)
+		// [/CELADON-ADD]
 
 	for(var/i=1, i<=DNA_UNI_IDENTITY_BLOCKS, i++)
 		if(L[i])
@@ -210,6 +216,16 @@
 			setblock(uni_identity, blocknumber, construct_block(GLOB.facial_hairstyles_list.Find(H.facial_hairstyle), GLOB.facial_hairstyles_list.len))
 		if(DNA_HAIRSTYLE_BLOCK)
 			setblock(uni_identity, blocknumber, construct_block(GLOB.hairstyles_list.Find(H.hairstyle), GLOB.hairstyles_list.len))
+		// [CELADON-ADD] - CELADON_THE_VOICES
+		if(DNA_BARK_SOUND_BLOCK)
+			setblock(uni_identity, blocknumber, construct_block(GLOB.bark_list.Find(H.vocal_bark_id), GLOB.bark_list.len))
+		if(DNA_BARK_SPEED_BLOCK)
+			setblock(uni_identity, blocknumber, construct_block(H.vocal_speed * 4, 16))
+		if(DNA_BARK_PITCH_BLOCK)
+			setblock(uni_identity, blocknumber, construct_block(H.vocal_pitch * 30, 48))
+		if(DNA_BARK_VARIANCE_BLOCK)
+			setblock(uni_identity, blocknumber, construct_block(H.vocal_pitch_range * 48, 48))
+		// [/CELADON-ADD]
 
 //Please use add_mutation or activate_mutation instead
 /datum/dna/proc/force_give(datum/mutation/human/HM)
@@ -432,6 +448,12 @@
 			update_body_parts()
 		if(mutations_overlay_update)
 			update_mutations_overlay()
+		// [CELADON-ADD] - CELADON_THE_VOICES
+		set_bark(GLOB.bark_list[deconstruct_block(getblock(structure, DNA_BARK_SOUND_BLOCK), GLOB.bark_list.len)])
+		vocal_speed = (deconstruct_block(getblock(structure, DNA_BARK_PITCH_BLOCK), 16) / 16)
+		vocal_pitch = (deconstruct_block(getblock(structure, DNA_BARK_PITCH_BLOCK), 48) / 30)
+		vocal_pitch_range = (deconstruct_block(getblock(structure, DNA_BARK_VARIANCE_BLOCK), 48) / 48)
+		// [/CELADON-ADD]
 
 
 /mob/proc/domutcheck()

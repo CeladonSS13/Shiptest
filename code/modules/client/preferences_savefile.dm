@@ -5,7 +5,7 @@
 //	You do not need to raise this if you are adding new values that have sane defaults.
 //	Only raise this value when changing the meaning/format/name/layout of an existing value
 //	where you would want the updater procs below to run
-#define SAVEFILE_VERSION_MAX 42
+#define SAVEFILE_VERSION_MAX 43
 
 /*
 SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Carn
@@ -93,6 +93,9 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 			toggles &= ~FAST_MC_REFRESH
 
 		toggles |= SOUND_RADIO
+
+	if(current_version < 43) //Bitflag toggles don't set their defaults when they're added, always defaulting to off instead.
+		toggles |= SOUND_BARK
 
 /datum/preferences/proc/update_character(current_version, savefile/S)
 	if(current_version < 39)
@@ -521,6 +524,12 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	READ_FILE(S["riol_body_markings_color"], 		features["riol_body_markings_color"])
 	READ_FILE(S["riol_tail_markings_color"], 		features["riol_tail_markings_color"])
 	// [/CELADON-ADD]
+	// [CELADON-ADD] - CELADON_THE_VOICES
+	// READ_FILE(S["bark_id"], 						features["bark_id"])
+	// READ_FILE(S["bark_speed"], 						features["bark_speed"])
+	// READ_FILE(S["bark_pitch"], 						features["bark_pitch"])
+	// READ_FILE(S["bark_variance"], 					features["bark_variance"])
+	// [/CELADON-ADD]
 
 	READ_FILE(S["equipped_gear"], equipped_gear)
 	if(config) //This should *probably* always be there, but just in case.
@@ -566,6 +575,12 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	//Flavor Text
 	S["feature_flavor_text"]		>> features["flavor_text"]
+
+	// Barks
+	S["bark_id"] >> bark_id
+	S["bark_speed"] >> bark_speed
+	S["bark_pitch"] >> bark_pitch
+	S["bark_variance"] >> bark_variance
 
 	//try to fix any outdated data if necessary
 	//preference updating will handle saving the updated data for us.
@@ -710,6 +725,14 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	features["riol_tail_markings_color"]		= sanitize_hexcolor(features["riol_tail_markings_color"])
 	// [/CELADON-ADD]
 
+	// [CELADON-ADD] - CELADON_THE_VOICES
+	bark_id = sanitize_inlist(bark_id, GLOB.bark_list, initial(bark_id))
+	var/datum/bark/bark_path = GLOB.bark_list[bark_id]
+	bark_speed = sanitize_num_clamp(bark_speed, initial(bark_path.minspeed), initial(bark_path.maxspeed), initial(bark_speed))
+	bark_pitch = sanitize_num_clamp(bark_pitch, initial(bark_path.minpitch), initial(bark_path.maxpitch), initial(bark_pitch))
+	bark_variance = sanitize_num_clamp(bark_variance, initial(bark_path.minvariance), initial(bark_path.maxvariance), initial(bark_variance))
+	// [/CELADON-ADD]
+
 	all_quirks = SANITIZE_LIST(all_quirks)
 
 //Make sure all quirks are compatible
@@ -826,6 +849,17 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["riol_body_markings_color"], 		features["riol_body_markings_color"])
 	WRITE_FILE(S["riol_tail_markings_color"], 		features["riol_tail_markings_color"])
 	// [/CELADON-ADD]
+	// [CELADON-ADD] - CELADON_THE_VOICES
+	// WRITE_FILE(S["bark_id"], 						features["bark_id"])
+	// WRITE_FILE(S["bark_speed"], 					features["bark_speed"])
+	// WRITE_FILE(S["bark_pitch"], 					features["bark_pitch"])
+	// WRITE_FILE(S["bark_variance"], 					features["bark_variance"])
+	// [/CELADON-ADD]
+
+	WRITE_FILE(S["bark_id"], 						bark_id)
+	WRITE_FILE(S["bark_speed"], 					bark_speed)
+	WRITE_FILE(S["bark_pitch"], 					bark_pitch)
+	WRITE_FILE(S["bark_variance"], 					bark_variance)
 
 	//Flavor text
 	WRITE_FILE(S["feature_flavor_text"]			, features["flavor_text"])

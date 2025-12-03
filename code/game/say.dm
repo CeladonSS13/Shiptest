@@ -79,14 +79,42 @@ GLOBAL_LIST_INIT(freqcolor, list())
 * If FALSE, this check will always fail if the movable has a mind and is miming.
 * if TRUE, we will check if the movable can speak irregardless
 */
+// [CELADON-ADD] - CELADON_THE_VOICES
+/atom/movable/proc/bark(list/hearers, distance, volume, pitch)
+	if(!vocal_bark)
+		if(!vocal_bark_id || !set_bark(vocal_bark_id)) //just-in-time bark generation
+			return
+	volume = min(volume, 100)
+	var/turf/T = get_turf(src)
+	for(var/mob/M in hearers)
+		M.playsound_local(T, vol = volume, vary = TRUE, frequency = pitch, max_distance = distance, falloff_distance = distance * 0.75, S = vocal_bark, distance_multiplier = 1)
+// [/CELADON-ADD]
+
 /atom/movable/proc/can_speak(allow_mimes = FALSE)	// /atom/movable/proc/can_speak()	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 	//SHOULD_BE_PURE(TRUE)
 	return !HAS_TRAIT(src, TRAIT_MUTE)
 
 /atom/movable/proc/send_speech(message, range = 7, obj/source = src, bubble_type, list/spans, datum/language/message_language = null, list/message_mods = list())
 	var/rendered = compose_message(src, message_language, message, , spans, message_mods)
-	for(var/atom/movable/AM as anything in get_hearers_in_view(range, source))
+	// [CELADON-EDIT] - CELADON_THE_VOICES
+	// for(var/atom/movable/AM as anything in get_hearers_in_view(range, source))	// ORIGINAL
+	var/list/hearers = get_hearers_in_view(range, source)
+	for(var/_AM in hearers)
+	// [/CELADON-EDIT]
 		AM.Hear(rendered, src, message_language, message, , spans, message_mods.Copy())
+	// [CELADON-ADD] - CELADON_THE_VOICES
+	if(vocal_bark || vocal_bark_id)
+		for(var/mob/M in hearers)
+			if(!M.client)
+				continue
+			if(!(M.client.prefs.toggles & SOUND_BARK))
+				hearers -= M
+		var/barks = round((LAZYLEN(message) / vocal_speed)) + 1
+		var/total_delay
+		for(var/i in 1 to barks)
+			addtimer(CALLBACK(src, .proc/bark, hearers, range, vocal_volume, rand((vocal_pitch * 100), (vocal_pitch*100) + (vocal_pitch_range*100)) / 100), total_delay)
+			total_delay += rand(DS2TICKS(vocal_speed/4), DS2TICKS(vocal_speed/4) + DS2TICKS(vocal_speed/4)) TICKS
+	// [/CELADON-ADD]
 
 /atom/movable/proc/compose_message(atom/movable/speaker, datum/language/message_language, raw_message, radio_freq, list/spans, list/message_mods = list(), face_name = FALSE)
 	//This proc uses text() because it is faster than appending strings. Thanks BYOND.

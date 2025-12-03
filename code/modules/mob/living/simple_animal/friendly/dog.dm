@@ -21,6 +21,9 @@
 
 	footstep_type = FOOTSTEP_MOB_CLAW
 
+	vocal_bark_id = "bullet"
+	vocal_speed = 6
+
 //Corgis and pugs are now under one dog subtype
 
 /mob/living/simple_animal/pet/dog/corgi
@@ -499,6 +502,8 @@
 	mob_size = MOB_SIZE_SMALL
 	collar_type = "puppy"
 
+	vocal_pitch = 1.6
+
 //puppies cannot wear anything.
 /mob/living/simple_animal/pet/dog/corgi/puppy/Topic(href, href_list)
 	if(href_list["remove_inv"] || href_list["add_inv"])
@@ -519,6 +524,8 @@
 	minbodytemp = TCMB
 	maxbodytemp = T0C + 40
 	held_state = "void_puppy"
+
+	vocal_pitch = 0.6
 
 /mob/living/simple_animal/pet/dog/corgi/puppy/void/Process_Spacemove(movement_dir = 0)
 	return 1	//Void puppies can navigate space.

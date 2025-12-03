@@ -22,6 +22,11 @@
 	response_harm_simple = "kick"
 	held_state = "fox"
 
+	vocal_bark_id = "bullet"
+	vocal_speed = 2
+	vocal_pitch = 1.6
+	vocal_pitch_range = 0.4
+
 	footstep_type = FOOTSTEP_MOB_CLAW
 
 /mob/living/simple_animal/pet/fox/Initialize()

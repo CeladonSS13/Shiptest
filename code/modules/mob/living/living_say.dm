@@ -359,6 +359,10 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 			listening_movable.Hear(rendered, src, message_language, message, , spans, message_mods.Copy())
 	SEND_GLOBAL_SIGNAL(COMSIG_GLOB_LIVING_SAY_SPECIAL, src, message)
 
+	var/is_yell = (say_test(message) == "2")
+	if(client && !eavesdrop_range && is_yell)	// Yell hook
+		listening |= process_yelling(listening, rendered, src, message_language, message, spans, message_mode, source)
+
 	//speech bubble
 	var/list/speech_bubble_recipients = list()
 	for(var/mob/M in listening)
@@ -370,6 +374,19 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	// [/CELADON-EDIT]
 	I.appearance_flags = APPEARANCE_UI_IGNORE_ALPHA
 	INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(flick_overlay_global), I, speech_bubble_recipients, 3 SECONDS)
+
+	//Listening gets trimmed here if a vocal bark's present. If anyone ever makes this proc return listening, make sure to instead initialize a copy of listening in here to avoid wonkiness
+	if(vocal_bark || vocal_bark_id)
+		for(var/mob/M in listening)
+			if(!M.client)
+				continue
+			if(!(M.client.prefs.toggles & SOUND_BARK))
+				listening -= M
+		var/barks = round((LAZYLEN(message) / vocal_speed)) + 1
+		var/total_delay
+		for(var/i in 1 to barks)
+			addtimer(CALLBACK(src, /atom/movable/proc/bark, listening, (message_range * (is_yell ? 4 : 1)), (vocal_volume * (is_yell ? 1.5 : 1)), rand(vocal_pitch * 100, ((vocal_pitch*100) + (vocal_pitch_range*100))) / 100), total_delay)
+			total_delay += rand(DS2TICKS((vocal_speed/4) * (is_yell ? 0.5 : 1)), DS2TICKS(vocal_speed/4) + DS2TICKS((vocal_speed/4) * (is_yell ? 0.5 : 1))) TICKS
 
 /mob/proc/binarycheck()
 	return FALSE
