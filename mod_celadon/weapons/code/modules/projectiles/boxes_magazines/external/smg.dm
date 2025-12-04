@@ -30,17 +30,13 @@
 	name = "toploaded magazine (4.6x30mm)"
 	desc = "A compact, 30-round top-loading magazine for old WT-550 Automatic Rifle and new Resolution personal defense weapon. These rounds do okay damage with average performance against armor."
 
-/obj/item/ammo_box/magazine/wt550m9/update_icon_state()
-	. = ..()
-	icon_state = "[base_icon_state]-[round(ammo_count(), 6)]"
-
 /obj/item/ammo_box/magazine/wt550m9/ap
 	name = "toploaded magazine (4.6x30mm AP)"
 	desc = "A compact, 30-round top-loading magazine for old WT-550 Automatic Rifle and new Resolution personal defense weapon.  These armor-piercing rounds are great at piercing protective equipment, but lose some stopping power."
 
 /obj/item/ammo_box/magazine/m9mm_expedition
 	name = "SMG magazine (9x18mm)"
-	desc = "A 30-round magazine for 9x18mm submachine guns. These rounds do okay damage, but struggle against armor."
+	desc = "A 30-round magazine for 9x18mm submachine guns such as Expedition, Vector, Saber. These rounds do okay damage, but struggle against armor."
 
 /obj/item/ammo_box/magazine/skm_46_30/empty
 	start_empty = TRUE
