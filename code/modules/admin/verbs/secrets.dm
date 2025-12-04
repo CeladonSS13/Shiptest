@@ -55,15 +55,14 @@
 	switch(action)
 		//Generic Buttons anyone can use.
 		if("admin_log")
-			var/dat = "<B>Admin Log<HR></B>"
+			var/dat
 			for(var/l in GLOB.admin_log)
 				dat += "<li>[l]</li>"
 			if(!GLOB.admin_log.len)
 				dat += "No-one has done anything this round!"
-			//holder << browse(dat, "window=admin_log") WS edit
-			var/datum/browser/popup = new(holder, "admin_log", null, 300, 430)
-			popup.set_content(dat)
-			popup.open()
+			var/datum/browser/browser = new(holder, "admin_log", "Admin Logs", 600, 500)
+			browser.set_content(dat)
+			browser.open()
 
 		//WS Begin - Mentors
 		if("mentor_log")
@@ -78,15 +77,15 @@
 		//WS end
 
 		if("show_admins")
-			var/dat = "<B>Current admins:</B><HR>"
+			var/dat
 			if(GLOB.admin_datums)
 				for(var/ckey in GLOB.admin_datums)
 					var/datum/admins/D = GLOB.admin_datums[ckey]
 					dat += "[ckey] - [D.rank.name]<br>"
 				//holder << browse(dat, "window=showadmins;size=600x500") WS edit
-				var/datum/browser/popup = new(holder, "showadmins", null, 600, 500)
-				popup.set_content(dat)
-				popup.open()
+				var/datum/browser/browser = new(holder, "showadmins", "Current admins", 600, 500)
+				browser.set_content(dat)
+				browser.open()
 
 		//Buttons for debug.
 		if("maint_access_engiebrig")
