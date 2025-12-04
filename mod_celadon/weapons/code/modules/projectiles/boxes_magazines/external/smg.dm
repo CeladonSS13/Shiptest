@@ -1,6 +1,10 @@
 // https://github.com/CeladonSS13/Shiptest/pull/2461
+
+// MARK: 5.7x39
 /obj/item/ammo_box/magazine/m57_39_sidewinder
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo.dmi'
 	icon_state = "sidewinder_mag-30"
+
 
 /obj/item/ammo_box/magazine/m57_39_sidewinder/update_icon_state()
 	. = ..()
@@ -29,6 +33,13 @@
 /obj/item/ammo_box/magazine/wt550m9
 	name = "toploaded magazine (4.6x30mm)"
 	desc = "A compact, 30-round top-loading magazine for old WT-550 Automatic Rifle and new Resolution personal defense weapon. These rounds do okay damage with average performance against armor."
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo.dmi'
+	icon_state = "46x30mmt-30"
+	base_icon_state = "46x30mmt"
+
+/obj/item/ammo_box/magazine/wt550m9/update_icon_state()
+	. = ..()
+	icon_state = "[base_icon_state]-[round(ammo_count(), 6)]"
 
 /obj/item/ammo_box/magazine/wt550m9/ap
 	name = "toploaded magazine (4.6x30mm AP)"

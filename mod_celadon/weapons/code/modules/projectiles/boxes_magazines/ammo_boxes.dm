@@ -6,7 +6,10 @@
 > .308
 > 8x58
 > 410x76mm
-
+Resprite
+> .308
+> 5.56x42
+> 7.62x40
 MARK: 5.56x45
 */
 
@@ -72,26 +75,6 @@ MARK: 5.56x45
 
 //коробки патроны 308 калибра - на данный момент эндгейм патроны , огромный урон , огромное пробитие , высокая цена
 
-/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308
-	ammo_type = /obj/item/ammo_casing/a308
-	max_ammo = 10
-
-/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/hp
-	ammo_type = /obj/item/ammo_casing/a308/hp
-	max_ammo = 10
-
-/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/surplus
-	ammo_type = /obj/item/ammo_casing/a308/surplus
-	max_ammo = 10
-
-/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/ap
-	ammo_type = /obj/item/ammo_casing/a308/ap
-	max_ammo = 10
-
-/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/rubber
-	ammo_type = /obj/item/ammo_casing/a308/rubber
-	max_ammo = 10
-
 /*
 /obj/item/storage/box/ammo/a308
 	name = "Коробка патронов .308"
@@ -155,7 +138,7 @@ MARK: 5.56x45
 
 //Стандартные безгильзовые патроны калибра 8x58
 
-/obj/item/ammo_box/magazine/ammo_stack/prefilled/caseless/a858
+/obj/item/ammo_box/magazine/ammo_stack/prefilled/a858
 	ammo_type = /obj/item/ammo_casing/caseless/a858
 	max_ammo = 10
 
@@ -167,7 +150,7 @@ MARK: 5.56x45
 
 /obj/item/storage/box/ammo/a858_ammo_box/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/caseless/a858 = 4)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a858 = 4)
 	generate_items_inside(items_inside,src)
 
 //
@@ -218,6 +201,8 @@ MARK: 5.56x45
 	var/static/items_inside = list(
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a410/flechette = 4)
 	generate_items_inside(items_inside,src)
+
+// MARK: 7.62X54mm R
 //
 //     7.62x54mmR
 //
@@ -237,3 +222,56 @@ MARK: 5.56x45
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/x762_54 = 4)
 	generate_items_inside(items_inside,src)
 
+// MARK: RESPRITE
+
+
+
+
+
+
+// MARK: .308
+
+/obj/item/storage/box/ammo/a308
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
+	icon_state = "a308box-HP"
+
+/obj/item/storage/box/ammo/a308/hunterspride
+	icon_state = "a308box"
+
+/obj/item/storage/box/ammo/a308/hp
+	icon_state = "a308box-hp"
+
+/obj/item/storage/box/ammo/a308/ap
+	icon_state = "a308box-ap"
+
+/obj/item/storage/box/ammo/a308/rubber
+	icon_state = "a308box-rubbershot"
+
+// MARK: 5.56x42
+
+/obj/item/storage/box/ammo/a556_42
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
+	icon_state = "a556_42box_big"
+
+/obj/item/storage/box/ammo/a556_box/a856
+	icon_state = "a556_45box_big-up"
+
+/obj/item/storage/box/ammo/a556_box/m903
+	icon_state = "a556_45box_big-ap"
+
+// MARK: 7.62x40
+
+/obj/item/storage/box/ammo/a762_40
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
+
+/obj/item/storage/box/ammo/a762_40/inteq
+	icon_state = "a762_40box_big_inteq"
+
+/obj/item/storage/box/ammo/a762_40/ap/inteq
+	icon_state = "a762_40box_big-ap_inteq"
+
+/obj/item/storage/box/ammo/a762_40/hp/inteq
+	icon_state = "a762_40box_big-hp_inteq"
+
+/obj/item/storage/box/ammo/a762_40/hp/rubber
+	icon_state = "a762_40box_big-rubbershot_inteq"
