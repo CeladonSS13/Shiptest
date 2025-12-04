@@ -1229,27 +1229,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</table><br>"
 					//[/CELADON - EDIT]
 
-			// dat += "<h2>Speech preferences</h2>"
-			// dat += "<b>Custom Speech Verb:</b><BR>"
-			// dat += "<a style='display:block;width:100px' href='?_src_=prefs;preference=speech_verb;task=input'>[custom_speech_verb]</a><BR>"
-			// dat += "<b>Custom Tongue:</b><BR>"
-			// dat += "<a style='display:block;width:100px' href='?_src_=prefs;preference=tongue;task=input'>[custom_tongue]</a><BR>"
-			// dat += "<b>Additional Language</b><BR>"
-			// dat += "<a style='display:block;width:100px' href='?_src_=prefs;preference=language;task=input'>[additional_language]</a><BR>"
-			// dat += "</td>"
-			// dat += "<table>"
-			// // dat += "<td width='340px' height='300px' valign='top'>"
-			// dat += "<h2>Vocal Bark preferences</h2>"
-			// var/datum/bark/B = GLOB.bark_list[bark_id]
-			// dat += "<b>Vocal Bark Sound:</b><BR>"
-			// dat += "<a style='display:block;width:200px' href='byond://?_src_=prefs;preference=barksound;task=input'>[B ? initial(B.name) : "INVALID"]</a><BR>"
-			// dat += "<b>Vocal Bark Speed:</b> <a href='byond://?_src_=prefs;preference=barkspeed;task=input'>[bark_speed]</a><BR>"
-			// dat += "<b>Vocal Bark Pitch:</b> <a href='byond://?_src_=prefs;preference=barkpitch;task=input'>[bark_pitch]</a><BR>"
-			// dat += "<b>Vocal Bark Variance:</b> <a href='byond://?_src_=prefs;preference=barkvary;task=input'>[bark_variance]</a><BR>"
-			// dat += "<BR><a href='byond://?_src_=prefs;preference=barkpreview'>Preview Bark</a><BR>"
-			// // dat += "</td>"
-			// dat += "</table><br>"
-
 		if(CHAR_LOADOUT_TAB) //Loadout
 			if(path)
 				var/savefile/S = new /savefile(path)
@@ -2681,6 +2660,41 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if (!isnull(desiredlength))
 						max_chat_length = clamp(desiredlength, 1, CHAT_MESSAGE_MAX_LENGTH)
 
+				if("barksound")
+					var/list/woof_woof = list()
+					for(var/path in GLOB.bark_list)
+						var/datum/bark/B = GLOB.bark_list[path]
+						if(initial(B.ignore))
+							continue
+						if(initial(B.ckeys_allowed))
+							var/list/allowed = initial(B.ckeys_allowed)
+							if(!allowed.Find(user.client.ckey))
+								continue
+						woof_woof[initial(B.name)] = initial(B.id)
+					var/new_bork = input(user, "Choose your desired vocal bark:", "Character Preference") as null|anything in woof_woof
+					if(new_bork)
+						bark_id = woof_woof[new_bork]
+						var/datum/bark/B = GLOB.bark_list[bark_id] //Now we need sanitization to take into account bark-specific min/max values
+						bark_speed = round(clamp(bark_speed, initial(B.minspeed), initial(B.maxspeed)), 1)
+						bark_pitch = clamp(bark_pitch, initial(B.minpitch), initial(B.maxpitch))
+						bark_variance = clamp(bark_variance, initial(B.minvariance), initial(B.maxvariance))
+				if("barkspeed")
+					var/datum/bark/B = GLOB.bark_list[bark_id]
+					var/borkset = input(user, "Choose your desired bark speed (Higher is slower, lower is faster). Min: [initial(B.minspeed)]. Max: [initial(B.maxspeed)]", "Character Preference") as num|null
+					if(borkset)
+						bark_speed = round(clamp(borkset, initial(B.minspeed), initial(B.maxspeed)), 1)
+
+				if("barkpitch")
+					var/datum/bark/B = GLOB.bark_list[bark_id]
+					var/borkset = input(user, "Choose your desired baseline bark pitch. Min: [initial(B.minpitch)]. Max: [initial(B.maxpitch)]", "Character Preference") as num|null
+					if(borkset)
+						bark_pitch = clamp(borkset, initial(B.minpitch), initial(B.maxpitch))
+
+				if("barkvary")
+					var/datum/bark/B = GLOB.bark_list[bark_id]
+					var/borkset = input(user, "Choose your desired baseline bark pitch. Min: [initial(B.minvariance)]. Max: [initial(B.maxvariance)]", "Character Preference") as num|null
+					if(borkset)
+						bark_variance = clamp(borkset, initial(B.minvariance), initial(B.maxvariance))
 		else
 			switch(href_list["preference"])
 				if("showgear")
@@ -2975,57 +2989,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						if(SCALING_METHOD_BLUR)
 							scaling_method = SCALING_METHOD_NORMAL
 					user.client.view_size.setZoomMode()
-
-				// if("tongue")
-				// 	var/selected_custom_tongue = input(user, "Choose your desired tongue (none means your species tongue)", "Character Preference") as null|anything in GLOB.roundstart_tongues
-				// 	if(selected_custom_tongue)
-				// 		custom_tongue = selected_custom_tongue
-
-				// if("speech_verb")
-				// 	var/selected_custom_speech_verb = input(user, "Choose your desired speech verb (none means your species speech verb)", "Character Preference") as null|anything in GLOB.speech_verbs
-				// 	if(selected_custom_speech_verb)
-				// 		custom_speech_verb = selected_custom_speech_verb
-
-				// if("language")
-				// 	var/selected_language = input(user, "Choose your desired additional language", "Character Preference") as null|anything in GLOB.roundstart_languages
-				// 	if(selected_language)
-				// 		additional_language = selected_language
-
-				if("barksound")
-					var/list/woof_woof = list()
-					for(var/path in GLOB.bark_list)
-						var/datum/bark/B = GLOB.bark_list[path]
-						if(initial(B.ignore))
-							continue
-						if(initial(B.ckeys_allowed))
-							var/list/allowed = initial(B.ckeys_allowed)
-							if(!allowed.Find(user.client.ckey))
-								continue
-						woof_woof[initial(B.name)] = initial(B.id)
-					var/new_bork = input(user, "Choose your desired vocal bark:", "Character Preference") as null|anything in woof_woof
-					if(new_bork)
-						bark_id = woof_woof[new_bork]
-						var/datum/bark/B = GLOB.bark_list[bark_id] //Now we need sanitization to take into account bark-specific min/max values
-						bark_speed = round(clamp(bark_speed, initial(B.minspeed), initial(B.maxspeed)), 1)
-						bark_pitch = clamp(bark_pitch, initial(B.minpitch), initial(B.maxpitch))
-						bark_variance = clamp(bark_variance, initial(B.minvariance), initial(B.maxvariance))
-				if("barkspeed")
-					var/datum/bark/B = GLOB.bark_list[bark_id]
-					var/borkset = input(user, "Choose your desired bark speed (Higher is slower, lower is faster). Min: [initial(B.minspeed)]. Max: [initial(B.maxspeed)]", "Character Preference") as num|null
-					if(borkset)
-						bark_speed = round(clamp(borkset, initial(B.minspeed), initial(B.maxspeed)), 1)
-
-				if("barkpitch")
-					var/datum/bark/B = GLOB.bark_list[bark_id]
-					var/borkset = input(user, "Choose your desired baseline bark pitch. Min: [initial(B.minpitch)]. Max: [initial(B.maxpitch)]", "Character Preference") as num|null
-					if(borkset)
-						bark_pitch = clamp(borkset, initial(B.minpitch), initial(B.maxpitch))
-
-				if("barkvary")
-					var/datum/bark/B = GLOB.bark_list[bark_id]
-					var/borkset = input(user, "Choose your desired baseline bark pitch. Min: [initial(B.minvariance)]. Max: [initial(B.maxvariance)]", "Character Preference") as num|null
-					if(borkset)
-						bark_variance = clamp(borkset, initial(B.minvariance), initial(B.maxvariance))
 
 				if("barkpreview")
 					if(SSticker.current_state == GAME_STATE_STARTUP) //Timers don't tick at all during game startup, so let's just give an error message

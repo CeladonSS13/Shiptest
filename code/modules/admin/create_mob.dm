@@ -85,3 +85,7 @@
 
 	H.update_body()
 	H.update_hair()
+
+	H.set_bark(pick(GLOB.bark_random_list))
+	H.vocal_pitch = ((H.gender == MALE ? rand(60, 120) : (H.gender == FEMALE ? rand(80, 140) : rand(60,140))) / 100)
+	H.vocal_pitch_range = rand(10, 40) / 100

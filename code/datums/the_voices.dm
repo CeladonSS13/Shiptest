@@ -154,6 +154,14 @@
 	minspeed = 5
 	maxspeed = 11
 
+/datum/bark/mrowss
+	name = "Mrowss"
+	id = "mrowss"
+	allow_random = TRUE
+	soundpath = 'mod_celadon/_storage_sounds/sound/the_voices/misc/mrowss.ogg'
+	minspeed = 5
+	maxspeed = 11
+
 /datum/bark/gaster
 	name = "Gaster"
 	id = "gaster"

@@ -84,14 +84,17 @@ GLOBAL_LIST_INIT(freqcolor, list())
 	if(queue_time && vocal_current_bark != queue_time)
 		return
 	if(SEND_SIGNAL(src, COMSIG_MOVABLE_BARK, hearers, distance, volume, pitch))
-		return //bark interception. this probably counts as some flavor of BDSM
+		return
 	if(!vocal_bark)
-		if(!vocal_bark_id || !set_bark(vocal_bark_id)) //just-in-time bark generation
+		if(!vocal_bark_id || !set_bark(vocal_bark_id))
 			return
 	volume = min(volume, 100)
 	var/turf/T = get_turf(src)
+	// to_chat(world, "DEBUG: Before playsound_local, T=[T], vocal_bark=[vocal_bark]")
 	for(var/mob/M in hearers)
+		// to_chat(world, "DEBUG: M=[M.name], M.client=[M.client], vocal_bark.file=[vocal_bark.file]")
 		M.playsound_local(T, vol = volume, vary = TRUE, frequency = pitch, max_distance = distance, falloff_distance = 0, falloff_exponent = BARK_SOUND_FALLOFF_EXPONENT(distance), S = vocal_bark, distance_multiplier = 1)
+		// to_chat(world, "DEBUG: Called for [M.name]")
 // [/CELADON-ADD]
 
 /atom/movable/proc/can_speak(allow_mimes = FALSE)	// /atom/movable/proc/can_speak()	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
@@ -354,3 +357,8 @@ INITIALIZE_IMMEDIATE(/atom/movable/virtualspeaker)
 
 /atom/movable/virtualspeaker/GetRadio()
 	return radio
+
+/client/verb/open_sound_settings()
+	set name = "Open Sound Settings"
+	set category = "Debug"
+	new /datum/sound_panel(usr)
