@@ -167,9 +167,6 @@
 	icon_state = "0-2";
 	pixel_y = 1
 	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
 /obj/effect/turf_decal/techfloor/orange,
 /obj/structure/sign/departments/engineering{
 	pixel_y = 32
@@ -220,15 +217,13 @@
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/engineering)
 "en" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+/obj/machinery/power/shuttle/engine/electric,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering)
 "eM" = (
@@ -276,10 +271,6 @@
 	icon_state = "2-4";
 	tag = null
 	},
-/obj/effect/turf_decal/industrial/traffic{
-	dir = 4;
-	color = "#9e712e"
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 1;
 	layer = 2
@@ -287,6 +278,11 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue,
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 8
+	},
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 4;
+	color = "#9e712e";
+	layer = 3
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
@@ -307,7 +303,8 @@
 	},
 /obj/structure/extinguisher_cabinet/directional/north,
 /obj/effect/turf_decal/industrial/traffic/corner{
-	color = "#9e712e"
+	color = "#9e712e";
+	layer = 3
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 1
@@ -335,14 +332,13 @@
 	pixel_x = 34
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line,
+/obj/structure/closet/wall/orange/directional/north,
+/obj/item/stack/sheet/mineral/plasma/twenty,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/engineering)
 "hf" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/solgovblue/border{
 	dir = 1
@@ -406,7 +402,6 @@
 	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/techfloor,
-/obj/effect/turf_decal/techfloor/hole,
 /obj/effect/turf_decal/trimline/opaque/nsorange/warning{
 	dir = 1
 	},
@@ -421,8 +416,8 @@
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "iv" = (
-/obj/structure/curtain/bounty/half{
-	dir = 8
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
 	},
 /turf/open/floor/wood,
 /area/ship/bridge)
@@ -482,10 +477,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovgold{
 	dir = 10
 	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/turf/open/floor/hangar/plasteel/white,
+/turf/open/floor/plasteel/patterned/brushed,
 /area/ship/bridge)
 "jR" = (
 /obj/effect/turf_decal/techfloor{
@@ -498,24 +490,9 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
-"jS" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/turf/open/floor/engine/hull/reinforced{
-	icon = 'mod_celadon/_storage_icons/icons/structures/floors/metal_2.dmi';
-	icon_state = "metal_1"
-	},
-/area/ship/engineering)
 "jU" = (
 /obj/machinery/holopad/emergency/command{
 	pixel_x = 1
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/solgovgold,
 /obj/effect/turf_decal/corner/opaque/solgovblue{
@@ -658,11 +635,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "nb" = (
-/obj/machinery/door/window/brigdoor/northleft{
-	dir = 2;
-	req_one_access = list(61,11);
-	color = "#2d2a4e"
-	},
 /obj/structure/curtain/cloth/half{
 	dir = 1;
 	color = "#3e786b"
@@ -705,12 +677,12 @@
 	layer = 4
 	},
 /obj/structure/window/reinforced/spawner/east,
-/obj/structure/curtain/bounty/half{
-	dir = 8
-	},
 /obj/structure/table/wood/fancy/blue,
 /obj/item/paper_bin{
 	pixel_y = 5
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
 	},
 /turf/open/floor/wood,
 /area/ship/bridge)
@@ -735,7 +707,6 @@
 	pixel_y = 13;
 	pixel_x = 1
 	},
-/obj/machinery/newscaster/directional/north,
 /turf/open/floor/wood,
 /area/ship/bridge)
 "ow" = (
@@ -801,7 +772,8 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/south,
-/turf/open/floor/hangar/plasteel/white,
+/obj/item/clothing/mask/gas/solfed,
+/turf/open/floor/plasteel/patterned/brushed,
 /area/ship/bridge)
 "pX" = (
 /obj/structure/cable{
@@ -812,14 +784,14 @@
 /area/ship/engineering)
 "qe" = (
 /obj/structure/window/reinforced/spawner/east,
-/obj/structure/curtain/bounty/half{
-	dir = 8
-	},
 /obj/structure/table/wood/fancy/blue,
 /obj/item/radio/intercom/wideband/table{
 	dir = 4;
 	pixel_y = 3;
 	pixel_x = 1
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
 	},
 /turf/open/floor/wood,
 /area/ship/bridge)
@@ -845,7 +817,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/open/floor/engine/hull,
+/turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering)
 "qK" = (
 /turf/template_noop,
@@ -922,16 +894,16 @@
 /obj/item/radio/headset/solgov/alt{
 	name = "\improper SolFed bowman headset"
 	},
-/obj/item/clothing/suit/armor/solgov_trenchcoat{
-	armor = list("melee" = 35, "bullet" = 50, "laser" = 45, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30);
-	desc = "A SolFed official's trenchcoat. Has a lot of pockets.";
-	name = "\improper SolFed trenchcoat"
-	},
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/effect/turf_decal/techfloor{
 	dir = 6
 	},
 /obj/effect/turf_decal/corner/opaque/solgovblue/mono,
+/obj/item/clothing/suit/armor/solgov_trenchcoat{
+	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30);
+	desc = "A SolFed official's trenchcoat. Has a lot of pockets.";
+	name = "\improper SolFed trenchcoat"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "sA" = (
@@ -962,11 +934,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/door/airlock/hatch{
-	dir = 8;
-	name = "Cargo Bay";
-	req_access_txt = "8132"
-	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
@@ -975,6 +942,14 @@
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
 	dir = 8
+	},
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
+	dir = 4
+	},
+/obj/machinery/door/airlock/hatch{
+	dir = 8;
+	name = "Cargo Bay";
+	req_access_txt = "8132"
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hallway/central)
@@ -1166,16 +1141,19 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only{
 	dir = 4
-	},
-/obj/machinery/door/airlock/solgov{
-	dir = 8
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
 	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
+	dir = 8
+	},
+/obj/machinery/door/airlock/solgov{
+	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
@@ -1388,14 +1366,14 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
 "Aa" = (
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
 /obj/effect/turf_decal/corner/opaque/solgovgold{
 	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
@@ -1405,7 +1383,8 @@
 	dir = 1
 	},
 /obj/structure/sign/poster/solgov/solgov_enlist{
-	pixel_y = 32
+	pixel_y = 32;
+	desc = "Enlist to be a part of the SolFed Exploration Forces!"
 	},
 /obj/effect/turf_decal/road/line/transparent/solgovgold{
 	dir = 1
@@ -1593,11 +1572,6 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "DD" = (
-/obj/item/clothing/suit/armor/solgov_trenchcoat{
-	armor = list("melee" = 35, "bullet" = 50, "laser" = 45, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30);
-	name = "\improper SolFed trenchcoat";
-	desc = "A SolFed official's trenchcoat. Has a lot of pockets."
-	},
 /obj/item/gun/ballistic/revolver/shadow,
 /obj/item/storage/belt/sabre/solgov,
 /obj/structure/closet/secure_closet{
@@ -1620,7 +1594,9 @@
 	},
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/shoes/laceup,
-/obj/item/clothing/suit/armor/vest/duster,
+/obj/item/clothing/suit/armor/vest/duster{
+	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30)
+	},
 /obj/item/clothing/head/solfed/beret{
 	pixel_y = 7
 	},
@@ -1655,6 +1631,14 @@
 	},
 /obj/item/clothing/head/beret/sec/hos,
 /obj/item/folder/documents/solfed,
+/obj/item/clothing/suit/armor/solgov_trenchcoat{
+	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30);
+	desc = "A SolFed official's trenchcoat. Has a lot of pockets.";
+	name = "\improper SolFed trenchcoat"
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
 /turf/open/floor/wood,
 /area/ship/bridge)
 "DR" = (
@@ -1721,7 +1705,8 @@
 /obj/structure/extinguisher_cabinet/directional/south,
 /obj/effect/turf_decal/industrial/traffic/corner{
 	dir = 4;
-	color = "#9e712e"
+	color = "#9e712e";
+	layer = 3
 	},
 /obj/machinery/firealarm/directional/east,
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line,
@@ -1776,9 +1761,6 @@
 "Fb" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/solgovblue/border,
 /turf/open/floor/plasteel/patterned/brushed,
@@ -1956,11 +1938,11 @@
 /area/ship/engineering)
 "Ja" = (
 /obj/structure/window/reinforced/spawner/east,
-/obj/structure/curtain/bounty/half{
-	dir = 8
-	},
 /obj/machinery/computer/helm{
 	dir = 8
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
 	},
 /turf/open/floor/wood,
 /area/ship/bridge)
@@ -2144,12 +2126,6 @@
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/bridge)
 "OR" = (
-/obj/structure/closet/wall/orange{
-	dir = 4;
-	name = "fuel locker";
-	pixel_x = 28
-	},
-/obj/item/stack/sheet/mineral/plasma/twenty,
 /obj/structure/sign/poster/solgov/mars{
 	pixel_y = 32
 	},
@@ -2162,15 +2138,17 @@
 /obj/effect/turf_decal/corner/opaque/nsorange{
 	dir = 4
 	},
+/obj/machinery/power/port_gen/pacman{
+	anchored = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/engineering)
 "PJ" = (
 /obj/structure/cable{
 	icon_state = "1-4"
-	},
-/obj/effect/turf_decal/industrial/traffic{
-	dir = 4;
-	color = "#9e712e"
 	},
 /obj/effect/turf_decal/techfloor{
 	layer = 2
@@ -2181,7 +2159,11 @@
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 4;
+	color = "#9e712e";
+	layer = 3
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
 "PN" = (
@@ -2250,16 +2232,16 @@
 	},
 /obj/item/ammo_box/magazine/pistol556mm,
 /obj/item/ammo_box/magazine/pistol556mm,
-/obj/item/clothing/suit/armor/solgov_trenchcoat{
-	armor = list("melee" = 35, "bullet" = 50, "laser" = 45, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30);
-	desc = "A SolFed official's trenchcoat. Has a lot of pockets.";
-	name = "\improper SolFed trenchcoat"
-	},
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/effect/turf_decal/techfloor{
 	dir = 10
 	},
 /obj/effect/turf_decal/corner/opaque/solgovblue/mono,
+/obj/item/clothing/suit/armor/solgov_trenchcoat{
+	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30);
+	desc = "A SolFed official's trenchcoat. Has a lot of pockets.";
+	name = "\improper SolFed trenchcoat"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "QC" = (
@@ -2327,6 +2309,9 @@
 	},
 /obj/effect/turf_decal/corner/opaque/nsorange{
 	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/engineering)
@@ -2424,16 +2409,15 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
 "TI" = (
-/obj/machinery/power/port_gen/pacman,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
 /obj/machinery/power/terminal{
 	dir = 8
 	},
 /obj/effect/turf_decal/techfloor/orange,
 /obj/effect/turf_decal/techfloor/orange,
 /obj/machinery/light/directional/north,
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "TO" = (
@@ -2457,6 +2441,7 @@
 	dir = 4;
 	layer = 2
 	},
+/obj/machinery/light/dim/directional/east,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/engineering)
 "Uk" = (
@@ -2484,6 +2469,7 @@
 	dir = 4;
 	layer = 2
 	},
+/obj/machinery/light/dim/directional/east,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/engineering)
 "UH" = (
@@ -2493,14 +2479,15 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/effect/turf_decal/industrial/traffic{
-	dir = 4;
-	color = "#9e712e"
-	},
 /obj/effect/turf_decal/trimline/opaque/solgovblue/line{
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovblue/line,
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 4;
+	color = "#9e712e";
+	layer = 3
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
 "UL" = (
@@ -2658,7 +2645,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovgold{
 	dir = 5
 	},
-/turf/open/floor/hangar/plasteel/white,
+/turf/open/floor/plasteel/patterned/brushed,
 /area/ship/bridge)
 "Yi" = (
 /obj/structure/sign/flag/solfed/directional/south,
@@ -2894,7 +2881,7 @@ qK
 vH
 tN
 en
-jS
+qE
 Le
 qK
 qK
