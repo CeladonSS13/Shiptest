@@ -22,7 +22,7 @@ MARK: Independent guncases
 
 /obj/item/storage/guncase/retro
 	gun_type = /obj/item/gun/energy/laser/retro
-	mag_type = /obj/item/stock_parts/cell/gun
+	mag_type = /obj/item/stock_parts/cell/gun/sharplite
 
 /obj/item/storage/guncase/skm_carbine
 	gun_type = /obj/item/gun/ballistic/automatic/smg/skm_carbine
@@ -58,7 +58,7 @@ MARK: InteQ guncases
 */
 
 /obj/item/storage/guncase/bulldog/inteq
-	gun_type =/obj/item/gun/ballistic/shotgun/automatic/bulldog/inteq
+	gun_type = /obj/item/gun/ballistic/shotgun/automatic/bulldog/inteq
 	mag_type = /obj/item/ammo_box/magazine/m12g_bulldog
 
 
@@ -173,9 +173,11 @@ MARK: Nanotrasen guncases
 
 /obj/item/storage/guncase/energy/egun_old
 	gun_type = /obj/item/gun/energy/e_gun/e_old
+	mag_type = /obj/item/stock_parts/cell/gun
 
 /obj/item/storage/guncase/energy/etar_old
 	gun_type = /obj/item/gun/energy/e_gun/e_old/smg
+	mag_type = /obj/item/stock_parts/cell/gun
 
 /obj/item/storage/guncase/hades_old
 	gun_type = /obj/item/gun/energy/e_gun/e_old/hades
