@@ -1,3 +1,25 @@
+// Баланс ионок. Снаряд находится в mod_celadon\weapons\code\modules\projectiles\projectile\energy\beams.dm
+/obj/item/gun/energy/ionrifle
+	w_class = WEIGHT_CLASS_BULKY
+	// mag_size = MAG_SIZE_MEDIUM // CELADON_ТРЕБУЕТСЯ_АДАПТАЦИЯ - размер просто выпилили
+
+// Мьелниз наделал эти изменения.
+// https://github.com/CeladonSS13/Shiptest/pull/845
+/obj/item/gun/energy/laser/captain
+	internal_cell = TRUE
+
+/obj/item/gun/energy/laser/bluetag
+	internal_cell = TRUE
+
+/obj/item/gun/energy/laser/redtag
+	internal_cell = TRUE
+
+/obj/item/gun/energy/spur
+	internal_cell = TRUE
+
+
+// MARK: RETURN OLD
+
 /obj/item/gun/energy/e_gun/e_old
 	icon_state = "energy"
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32_old.dmi'
@@ -5,7 +27,18 @@
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/righthand_old.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob_old.dmi'
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler, /obj/item/ammo_casing/energy/laser)
-
+	// таким образом НТ пушки будут принимать и НТшные магазины, и Эохомы
+	allowed_ammo_types = list(
+		/obj/item/stock_parts/cell/gun,
+		/obj/item/stock_parts/cell/gun/upgraded,
+		/obj/item/stock_parts/cell/gun/empty,
+		/obj/item/stock_parts/cell/gun/upgraded/empty,
+		/obj/item/stock_parts/cell/gun/sharplite,
+		/obj/item/stock_parts/cell/gun/sharplite/plus,
+		/obj/item/stock_parts/cell/gun/sharplite/empty,
+		/obj/item/stock_parts/cell/gun/sharplite/plus/empty,
+	)
+	manufacturer = MANUFACTURER_SHARPLITE_NEW
 
 /obj/item/gun/energy/e_gun/e_old/empty_cell
 	spawn_no_ammo = TRUE
@@ -181,6 +214,7 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler, /obj/item/ammo_casing/energy/laser/hos, /obj/item/ammo_casing/energy/trap)
 	ammo_x_offset = 1
 	shaded_charge = TRUE
+	manufacturer = MANUFACTURER_NONE
 
 /obj/item/gun/energy/e_gun/e_old/smg
 	name = "\improper E-TAR SMG"
@@ -212,3 +246,31 @@
 	w_class = WEIGHT_CLASS_BULKY
 	var/obj/item/modular_computer/integratedNTOS
 	var/NTOS_type = /obj/item/modular_computer/internal
+
+/obj/item/gun/energy/e_gun/e_old/iot/examine(mob/user)
+	. = ..()
+	. += "You can use integrated computer by pressing the <b>secondary action</b> key. By default, this is <b>Shift + Space</b>"
+
+/obj/item/gun/energy/e_gun/e_old/iot/Initialize()
+	. = ..()
+	if(NTOS_type)
+		integratedNTOS = new NTOS_type(src)
+		integratedNTOS.physical = src
+
+/obj/item/gun/energy/e_gun/e_old/iot/secondary_action(user)
+	if(!integratedNTOS)
+		return
+	integratedNTOS.interact(user)
+	. = ..()
+
+/obj/item/gun/energy/e_gun/e_old/hades/empty_cell
+	spawn_no_ammo = TRUE
+
+/obj/item/gun/energy/ionrifle/carbine/empty_cell
+	spawn_no_ammo = TRUE
+
+/obj/item/gun/energy/disabler/empty_cell
+	spawn_no_ammo = TRUE
+
+/obj/item/gun/energy/e_gun/advtaser/empty_cell
+	spawn_no_ammo = TRUE

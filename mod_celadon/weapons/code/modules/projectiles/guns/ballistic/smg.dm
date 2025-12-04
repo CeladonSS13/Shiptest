@@ -1,3 +1,4 @@
+// MARK: RETURN OLD GUNS
 /obj/item/gun/ballistic/automatic/smg/wt550
 	name = "\improper WT-550 Automatic Rifle"
 	desc = "An outdated PDW, used centuries ago by Nanotrasen security elements. Compared to the newer version, this one is less compact, yet its fire rate is higher, which is why it continues to be used today. Uses 4.6x30mm rounds."
@@ -23,7 +24,8 @@
 
 /obj/item/gun/ballistic/automatic/smg/vector
 	name = "\improper Vector carbine"
-	desc = "A police carbine based on a pre-Night of Fire SMG design. Most of the complex workings have been removed for reliability. Chambered in 9x18mm."
+	desc = "A police carbine based on an olddesign originating from earth, Solar Federation. Modified by Vigilitas Interstellar and used as a common security SMG. Chambered in 9x18mm."
+	//desc = "A police carbine based on a pre-Night of Fire SMG design. Most of the complex workings have been removed for reliability. Chambered in 9x18mm."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32_old.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/lefthand_old.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/righthand_old.dmi'
@@ -38,21 +40,18 @@
 	show_magazine_on_sprite = TRUE
 	weapon_weight = WEAPON_LIGHT
 	fire_sound = 'sound/weapons/gun/smg/vector_fire.ogg'
+	manufacturer = MANUFACTURER_VIGILITAS
+NO_MAG_GUN_HELPER(automatic/smg/vector)
 
-// MARK: AMMO
+// Дефайн отвечающий за создание датума с балистическим оружием без магазина
+NO_MAG_GUN_HELPER(automatic/smg/skm_carbine/saber)
+NO_MAG_GUN_HELPER(automatic/smg/skm_carbine)
 
-/obj/item/ammo_box/magazine/wt550m9
-	name = "toploaded magazine (4.6x30mm)"
-	desc = "A compact, 30-round top-loading magazine for old WT-550 Automatic Rifle and new Resolution personal defense weapon. These rounds do okay damage with average performance against armor."
 
-/obj/item/ammo_box/magazine/wt550m9/update_icon_state()
-	. = ..()
-	icon_state = "[base_icon_state]-[round(ammo_count(), 6)]"
+// MARK: Reflavour
 
-/obj/item/ammo_box/magazine/wt550m9/ap
-	name = "toploaded magazine (4.6x30mm AP)"
-	desc = "A compact, 30-round top-loading magazine for old WT-550 Automatic Rifle and new Resolution personal defense weapon.  These armor-piercing rounds are great at piercing protective equipment, but lose some stopping power."
-
-/obj/item/ammo_box/magazine/m9mm_expedition
-	name = "SMG magazine (9x18mm)"
-	desc = "A 30-round magazine for 9x18mm submachine guns. These rounds do okay damage, but struggle against armor."
+//NT ballistics relore - MORE Vigilitas Interstellar!
+/obj/item/gun/ballistic/automatic/smg/skm_carbine/saber
+	name = "\improper VI Saber SMG"
+	desc = "A full-auto 9x18mm submachine gun, designated 'VI SABR'. Has a threaded barrel for suppressors and a folding stock."
+	manufacturer = MANUFACTURER_VIGILITAS

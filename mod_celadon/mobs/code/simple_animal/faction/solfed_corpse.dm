@@ -57,7 +57,7 @@
 /datum/outfit/solfed/marine/elysium
 	name = "Elysium Brigade Haris Corpse"
 	uniform = /obj/item/clothing/under/solfed/camo/elysium
-	head = /obj/item/clothing/head/helmet/bulletproof/bulletproof/x11/solfed/elysium
+	head = /obj/item/clothing/head/helmet/bulletproof/x11/solfed/elysium
 	suit = /obj/item/clothing/suit/armor/vest/bulletproof
 	belt = /obj/item/storage/belt/military/solfed/elysium
 	shoes = /obj/item/clothing/shoes/combat

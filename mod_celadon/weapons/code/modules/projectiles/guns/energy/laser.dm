@@ -1,15 +1,20 @@
-/obj/item/gun/energy/laser/l_old
-	name = "SL L-204 laser gun"
-	desc = "A basic energy-based laser gun that fires concentrated beams of light which pass through glass and thin metal."
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32_old.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/lefthand_old.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/righthand_old.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob_old.dmi'
-	item_state = "protolaser"
-	w_class = WEIGHT_CLASS_NORMAL
-	ammo_type = list(/obj/item/ammo_casing/energy/lasergun/sharplite)
-	manufacturer = MANUFACTURER_SHARPLITE_NEW
 
+// де факто это вот этот объект/obj/item/gun/energy/laser/retro
+/obj/item/gun/energy/laser
+	name = "SL L-104 laser gun"
+	desc = "A basic energy-based laser gun that fires concentrated beams of light which pass through glass and thin metal."
+	w_class = WEIGHT_CLASS_NORMAL
+	manufacturer = MANUFACTURER_SHARPLITE
+
+
+/obj/item/gun/energy/laser/retro/empty_cell
+	spawn_no_ammo = TRUE
+
+/obj/item/gun/energy/lasercannon/empty_cell
+	spawn_no_ammo = TRUE
+
+/*
+// Копия копии копий копии копии копии копии... В общем говно.
 /obj/item/gun/energy/laser/l_old/iot
 	name = "\improper SL E-255 Ultimate"
 	desc = "An advanced semi-automatic dual-mode energy shotgun. This weapon is a big improvement since the last model. It provides excellent fire support for all Nanotrasen's security forces." //убираем упоминание несуществующего компутера, переписываем (с) хомяки
@@ -44,3 +49,4 @@
 	desc = "An energy shotgun with an integrated computer system for surveillance and statistics tracking. This one appears to be modified to fire lethal beams."
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/ultima)
 
+*/

@@ -37,3 +37,23 @@
 	design_ids = list("nuclear_gun")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000
+
+/obj/item/disk/design_disk/bof_disk/bof_buckshot
+	name = "Fauna hunting bullet design disk"
+	var/design = /datum/design/bane_of_fauna/bof_buckshot
+
+/obj/item/disk/design_disk/bof_disk/bof_buckshot/Initialize()
+	. = ..()
+	blueprints[1] = new design
+
+/datum/design/bane_of_fauna/bof_buckshot
+	name = "Fauna hunting bullet"
+	id = "bof-bullet"
+	desc = "A rather odd bullet design that works well against most fauna."
+	build_type = AUTOLATHE
+	build_path = /obj/item/ammo_casing/shotgun/bof
+	materials = list(
+		/datum/material/titanium = 4000,
+		/datum/material/plasma = 2000,
+		/datum/material/gold = 2000,
+	)

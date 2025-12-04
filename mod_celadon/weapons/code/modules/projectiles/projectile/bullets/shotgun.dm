@@ -45,3 +45,42 @@
 		stamina -= tile_dropoff_stamina
 	if(damage < 0 && stamina < 0)
 		qdel(src)
+
+// пры под номером 861 + 1562
+/obj/projectile/bullet/pellet
+	armour_penetration = -15
+
+/obj/projectile/bullet/pellet/buckshot
+	damage = 14
+	tile_dropoff = 0.5
+
+/obj/projectile/bullet/pellet/rubbershot
+	damage = 2
+	stamina = 10
+	tile_dropoff_stamina = 1
+	armour_penetration = 25
+
+/obj/projectile/bullet/pellet/rubbershot/incapacitate
+	armour_penetration = 45
+
+/obj/projectile/bullet/slug
+	armour_penetration = 10 // Усиление слагов, ввиду их бесполезности против брони
+
+// SHOTGUN BUCKSHOT
+/obj/projectile/bullet/pellet/bof
+	name = "bof pellet"
+	damage = 8
+	var/bof = 17
+	armour_penetration = -10
+	tile_dropoff = 0.2
+
+/obj/projectile/bullet/pellet/bof/on_hit(atom/target, blocked)
+	var/mob/living/T = target
+	if((isminingfauna(T)) && (blocked != 100))
+		T.apply_damage(bof, BRUTE, null, FALSE)
+	return ..()
+
+/obj/projectile/bullet/pellet/bof/Range() //10% loss per tile = max range of 10, generally
+	..()
+	if(bof > 0)
+		bof -= tile_dropoff * 2

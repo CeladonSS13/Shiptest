@@ -27,30 +27,6 @@
 	icon_state = "clothwrap_brown"
 	item_state = "clothwrap_brown"
 
-/obj/item/clothing/shoes/heels
-	name = "high heels"
-	desc = "A pair of high-heeled shoes. Fancy!"
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/miscellaneous.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/miscellaneous.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/left_miscellaneous.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/clothing/feet/in_hands/right_miscellaneous.dmi'
-	icon_state = "heels"
-	item_state = "heels"
-	slowdown = 0
-	force = 2
-
-/obj/item/clothing/shoes/heels/red
-	name = "high red heels"
-	desc = "A pair red of high-heeled shoes. Fancy!"
-	icon_state = "heels_red"
-	item_state = "heels_red"
-
-/obj/item/clothing/shoes/heels/black
-	name = "high black heels"
-	desc = "A pair black of high-heeled shoes. Fancy!"
-	icon_state = "heels_black"
-	item_state = "heels_black"
-
 /obj/item/clothing/shoes/galoshes/tajara_galoshes
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/miscellaneous.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/feet/overlay/miscellaneous.dmi'
