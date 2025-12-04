@@ -100,6 +100,7 @@
 	data["announcements"] 	= C.prefs.toggles & SOUND_ANNOUNCEMENTS
 	data["endofround"] 		= C.prefs.toggles & SOUND_ENDOFROUND
 	data["jukebox"] 		= C.prefs.toggles & SOUND_JUKEBOX
+	data["the_voices"] 		= C.prefs.toggles & SOUND_BARK
 
 	return data
 
@@ -143,6 +144,8 @@
 		if("jukebox")
 			C.prefs.toggles ^= SOUND_JUKEBOX
 			usr.stop_sound_channel(CHANNEL_JUKEBOX)
+		if("the_voices")
+			C.prefs.toggles ^= SOUND_BARK
 
 	C.prefs.save_preferences()
 	. = TRUE

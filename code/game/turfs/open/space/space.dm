@@ -231,3 +231,6 @@
 
 #undef STARLIGHT_RANGE_NOT_EMITTING
 #undef STARLIGHT_RANGE_EMITTING
+
+/turf/open/space/get_yelling_resistance(power)
+	return INFINITY				// no sound through space for crying out loud

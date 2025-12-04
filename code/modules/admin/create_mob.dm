@@ -32,6 +32,11 @@
 	H.dna.blood_type = random_blood_type()
 	H.generic_adjective = pick_species_adjective(H)
 
+	// if((GLOB.bark_random_list != NULL) ? H.set_bark(pick(GLOB.bark_random_list)) : "null")
+	H.set_bark("mutedc3")
+	H.vocal_pitch = BARK_PITCH_RAND(H.gender)
+	H.vocal_pitch_range = BARK_VARIANCE_RAND
+
 	// Mutant randomizing, doesn't affect the mob appearance unless it's the specific mutant.
 	H.dna.features["mcolor"] = random_short_color()
 	H.dna.features["mcolor2"] = random_short_color()

@@ -82,6 +82,11 @@
 	var/face_mouse = FALSE
 
 	// [CELADON-ADD] - CELADON_THE_VOICES
+	/// How loudly we yell
+	var/yell_power = 50
+	/// last time we yelled
+	var/last_yell = 0
+
 	// Text-to-bark sounds
 	var/sound/vocal_bark
 	var/vocal_bark_id
@@ -89,6 +94,9 @@
 	var/vocal_pitch_range = 0.2 //Actual pitch is (pitch - (vocal_pitch_range*0.5)) to (pitch + (vocal_pitch_range*0.5))
 	var/vocal_volume = 70 //Baseline. This gets modified by yelling and other factors
 	var/vocal_speed = 4 //Lower values are faster, higher values are slower
+
+	var/vocal_current_bark //When barks are queued, this gets passed to the bark proc. If vocal_current_bark doesn't match the args passed to the bark proc (if passed at all), then the bark simply doesn't play. Basic curtailing of spam~
+
 	// [/CELADON-ADD]
 
 /atom/movable/Initialize(mapload)

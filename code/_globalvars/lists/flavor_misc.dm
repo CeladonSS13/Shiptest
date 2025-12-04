@@ -28,6 +28,7 @@ GLOBAL_LIST_EMPTY(animated_spines_list)
 // [CELADON-ADD] - CELADON_THE_VOICES
 	//Bark bits
 GLOBAL_LIST_EMPTY(bark_list)
+GLOBAL_LIST_EMPTY(bark_random_list)
 // [/CELADON-ADD]
 
 	//Mutant Human bits

@@ -139,7 +139,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							"vox_neck_quills" = "Plain",
 							"elzu_horns" = "None",
 							"elzu_tail" = "None",
-							"flavor_text" = ""
+							"flavor_text" = "",
+							"barksound" = "mutedc3",
+							"barkspeed" = "4",
+							"barkpitch" = "2",
+							"barkvary" = "0",
 						)
 	var/height_filter = "Normal"
 	var/list/randomise = list(
@@ -1224,28 +1228,26 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</table><br>"
 					//[/CELADON - EDIT]
 
-			dat += APPEARANCE_CATEGORY_COLUMN
-
-			dat += "<table><tr><td width='340px' height='300px' valign='top'>"
-			dat += "<h2>Speech preferences</h2>"
-			dat += "<b>Custom Speech Verb:</b><BR>"
+			// dat += "<h2>Speech preferences</h2>"
+			// dat += "<b>Custom Speech Verb:</b><BR>"
 			// dat += "<a style='display:block;width:100px' href='?_src_=prefs;preference=speech_verb;task=input'>[custom_speech_verb]</a><BR>"
-			dat += "<b>Custom Tongue:</b><BR>"
+			// dat += "<b>Custom Tongue:</b><BR>"
 			// dat += "<a style='display:block;width:100px' href='?_src_=prefs;preference=tongue;task=input'>[custom_tongue]</a><BR>"
-			dat += "<b>Additional Language</b><BR>"
+			// dat += "<b>Additional Language</b><BR>"
 			// dat += "<a style='display:block;width:100px' href='?_src_=prefs;preference=language;task=input'>[additional_language]</a><BR>"
-			dat += "</td>"
-			dat += "<td width='340px' height='300px' valign='top'>"
+			// dat += "</td>"
+			dat += "<table>"
+			// dat += "<td width='340px' height='300px' valign='top'>"
 			dat += "<h2>Vocal Bark preferences</h2>"
 			var/datum/bark/B = GLOB.bark_list[bark_id]
 			dat += "<b>Vocal Bark Sound:</b><BR>"
-			dat += "<a style='display:block;width:200px' href='?_src_=prefs;preference=barksound;task=input'>[B ? initial(B.name) : "INVALID"]</a><BR>"
-			dat += "<b>Vocal Bark Speed:</b> <a href='?_src_=prefs;preference=barkspeed;task=input'>[bark_speed]</a><BR>"
-			dat += "<b>Vocal Bark Pitch:</b> <a href='?_src_=prefs;preference=barkpitch;task=input'>[bark_pitch]</a><BR>"
-			dat += "<b>Vocal Bark Variance:</b> <a href='?_src_=prefs;preference=barkvary;task=input'>[bark_variance]</a><BR>"
-			dat += "<BR><a href='?_src_=prefs;preference=barkpreview'>Preview Bark</a><BR>"
-			dat += "</td>"
-			dat += "</tr></table>"
+			dat += "<a style='display:block;width:200px' href='byond://?_src_=prefs;preference=barksound;task=input'>[B ? initial(B.name) : "INVALID"]</a><BR>"
+			dat += "<b>Vocal Bark Speed:</b> <a href='byond://?_src_=prefs;preference=barkspeed;task=input'>[bark_speed]</a><BR>"
+			dat += "<b>Vocal Bark Pitch:</b> <a href='byond://?_src_=prefs;preference=barkpitch;task=input'>[bark_pitch]</a><BR>"
+			dat += "<b>Vocal Bark Variance:</b> <a href='byond://?_src_=prefs;preference=barkvary;task=input'>[bark_variance]</a><BR>"
+			dat += "<BR><a href='byond://?_src_=prefs;preference=barkpreview'>Preview Bark</a><BR>"
+			// dat += "</td>"
+			dat += "</table><br>"
 
 		if(2) //Loadout
 			if(path)
@@ -1443,6 +1445,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<br>"
 
 			dat += "<b>Income Updates:</b> <a href='byond://?_src_=prefs;preference=income_pings'>[(chat_toggles & CHAT_BANKCARD) ? "Allowed" : "Muted"]</a><br>"
+			dat += "<br>"
+
+			dat += "<b>Sound Bark:</b> <a href='byond://?_src_=prefs;preference=sound_bark'>[(toggles & SOUND_BARK) ? "ON THE VOICES" : "OFF THE VOICES"]</a><br>"
 			dat += "<br>"
 
 			dat += "<b>FPS:</b> <a href='byond://?_src_=prefs;preference=clientfps;task=input'>[clientfps]</a><br>"
@@ -2856,8 +2861,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if("ghost_radio")
 					chat_toggles ^= CHAT_GHOSTRADIO
 
-				if("ghost_radio")
-					chat_toggles ^= SOUND_BARK
+				if("sound_bark")
+					toggles ^= SOUND_BARK
 
 				if("ghost_pda")
 					chat_toggles ^= CHAT_GHOSTPDA
@@ -2972,29 +2977,28 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							if(!allowed.Find(user.client.ckey))
 								continue
 						woof_woof[initial(B.name)] = initial(B.id)
-					var/new_bork = input(user, "Choose your desired vocal bark", "Character Preference") as null|anything in woof_woof
+					var/new_bork = input(user, "Choose your desired vocal bark:", "Character Preference") as null|anything in woof_woof
 					if(new_bork)
 						bark_id = woof_woof[new_bork]
 						var/datum/bark/B = GLOB.bark_list[bark_id] //Now we need sanitization to take into account bark-specific min/max values
 						bark_speed = round(clamp(bark_speed, initial(B.minspeed), initial(B.maxspeed)), 1)
 						bark_pitch = clamp(bark_pitch, initial(B.minpitch), initial(B.maxpitch))
 						bark_variance = clamp(bark_variance, initial(B.minvariance), initial(B.maxvariance))
-
 				if("barkspeed")
 					var/datum/bark/B = GLOB.bark_list[bark_id]
-					var/borkset = input(user, "Choose your desired bark speed (Higher is slower, lower is faster). Min: [initial(B.minspeed)]. Max: [initial(B.maxspeed)]", "Character Preference") as null|num
+					var/borkset = input(user, "Choose your desired bark speed (Higher is slower, lower is faster). Min: [initial(B.minspeed)]. Max: [initial(B.maxspeed)]", "Character Preference") as num|null
 					if(borkset)
 						bark_speed = round(clamp(borkset, initial(B.minspeed), initial(B.maxspeed)), 1)
 
 				if("barkpitch")
 					var/datum/bark/B = GLOB.bark_list[bark_id]
-					var/borkset = input(user, "Choose your desired baseline bark pitch. Min: [initial(B.minpitch)]. Max: [initial(B.maxpitch)]", "Character Preference") as null|num
+					var/borkset = input(user, "Choose your desired baseline bark pitch. Min: [initial(B.minpitch)]. Max: [initial(B.maxpitch)]", "Character Preference") as num|null
 					if(borkset)
 						bark_pitch = clamp(borkset, initial(B.minpitch), initial(B.maxpitch))
 
 				if("barkvary")
 					var/datum/bark/B = GLOB.bark_list[bark_id]
-					var/borkset = input(user, "Choose your desired baseline bark pitch. Min: [initial(B.minvariance)]. Max: [initial(B.maxvariance)]", "Character Preference") as null|num
+					var/borkset = input(user, "Choose your desired baseline bark pitch. Min: [initial(B.minvariance)]. Max: [initial(B.maxvariance)]", "Character Preference") as num|null
 					if(borkset)
 						bark_variance = clamp(borkset, initial(B.minvariance), initial(B.maxvariance))
 

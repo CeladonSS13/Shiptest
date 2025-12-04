@@ -361,7 +361,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 
 	var/is_yell = (say_test(message) == "2")
 	if(client && !eavesdrop_range && is_yell)	// Yell hook
-		listening |= process_yelling(listening, rendered, src, message_language, message, spans, message_mode, source)
+		listening |= process_yelling(listening, rendered, src, message_language, message, spans, message_mods, source)
 
 	//speech bubble
 	var/list/speech_bubble_recipients = list()
@@ -376,17 +376,47 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(flick_overlay_global), I, speech_bubble_recipients, 3 SECONDS)
 
 	//Listening gets trimmed here if a vocal bark's present. If anyone ever makes this proc return listening, make sure to instead initialize a copy of listening in here to avoid wonkiness
-	if(vocal_bark || vocal_bark_id)
+	if(SEND_SIGNAL(src, COMSIG_MOVABLE_QUEUE_BARK, listening, args) || vocal_bark || vocal_bark_id)
 		for(var/mob/M in listening)
 			if(!M.client)
 				continue
 			if(!(M.client.prefs.toggles & SOUND_BARK))
 				listening -= M
-		var/barks = round((LAZYLEN(message) / vocal_speed)) + 1
+		var/barks = min(round((LAZYLEN(message) / vocal_speed)) + 1, BARK_MAX_BARKS)
 		var/total_delay
+		vocal_current_bark = world.time
 		for(var/i in 1 to barks)
-			addtimer(CALLBACK(src, /atom/movable/proc/bark, listening, (message_range * (is_yell ? 4 : 1)), (vocal_volume * (is_yell ? 1.5 : 1)), rand(vocal_pitch * 100, ((vocal_pitch*100) + (vocal_pitch_range*100))) / 100), total_delay)
-			total_delay += rand(DS2TICKS((vocal_speed/4) * (is_yell ? 0.5 : 1)), DS2TICKS(vocal_speed/4) + DS2TICKS((vocal_speed/4) * (is_yell ? 0.5 : 1))) TICKS
+			if(total_delay > BARK_MAX_TIME)
+				break
+			addtimer(CALLBACK(src, TYPE_PROC_REF(/atom/movable, bark), listening, (message_range * (is_yell ? 4 : 1)), (vocal_volume * (is_yell ? 1.5 : 1)), BARK_DO_VARY(vocal_pitch, vocal_pitch_range), vocal_current_bark), total_delay)
+			total_delay += rand(DS2TICKS(vocal_speed / BARK_SPEED_BASELINE), DS2TICKS(vocal_speed / BARK_SPEED_BASELINE) + DS2TICKS((vocal_speed / BARK_SPEED_BASELINE) * (is_yell ? 0.5 : 1))) TICKS
+
+
+/atom/movable/proc/process_yelling(list/already_heard, rendered, atom/movable/speaker, datum/language/message_language, message, list/spans, message_mods, obj/source)
+	if(last_yell > (world.time - 10))
+		to_chat(src, "<span class='warning'>Your voice doesn't project as far as you try to yell in such quick succession.")		// yeah no, no spamming an expensive floodfill.
+		return
+	last_yell = world.time
+	var/list/overhearing = list()
+	var/list/overhearing_text = list()
+	overhearing = yelling_wavefill(src, yell_power)
+	if(!overhearing.len)
+		overhearing_text = "none"
+	else
+		for(var/mob/M as anything in overhearing)
+			overhearing_text += key_name(M)
+		overhearing_text = english_list(overhearing_text)
+	//log_say("YELL: [ismob(src)? key_name(src) : src] yelled [message] with overhearing mobs [overhearing_text]")
+	// overhearing = get_hearers_in_view(35, src) | get_hearers_in_range(5, src)
+	overhearing -= already_heard
+	if(!overhearing.len)
+		return
+	// to_chat(world, "DEBUG: overhearing [english_list(overhearing)]")
+	for(var/_AM in overhearing)
+		var/atom/movable/AM = _AM
+		AM.Hear(rendered, speaker, message_language, message, null, spans, message_mods, source)
+
+	return overhearing
 
 /mob/proc/binarycheck()
 	return FALSE

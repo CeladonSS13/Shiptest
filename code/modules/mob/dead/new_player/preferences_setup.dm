@@ -47,6 +47,9 @@
 		var/rando_race = pick(GLOB.roundstart_races)
 		pref_species = new rando_race()
 	features = random_features()
+	bark_id = pick(GLOB.bark_random_list)
+	bark_pitch = BARK_PITCH_RAND(gender)
+	bark_variance = BARK_VARIANCE_RAND
 
 /datum/preferences/proc/random_species()
 	var/random_species_type = GLOB.species_list[pick(GLOB.roundstart_races)]

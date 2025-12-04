@@ -13,6 +13,7 @@ interface SoundSetting {
   announcements: boolean;
   endofround: boolean;
   jukebox: boolean;
+  the_voices: boolean;
 }
 
 type SoundPanelSettingsProps = {};
@@ -29,20 +30,30 @@ export function SoundPanelSettings(props: SoundPanelSettingsProps, context) {
     announcements,
     endofround,
     jukebox,
+    the_voices,
   } = data;
   return (
     <Window width={250} height={400} title="Настройки звука">
       <Window.Content>
         <Section title="Основное">
           {[
-            { k: 'midi', v: midi,  t: 'Админские мидис' },
+            { k: 'midi', v: midi, t: 'Админские мидис' },
             { k: 'lobby', v: lobby, t: 'Музыка в лобби' },
             { k: 'instruments', v: instruments, t: 'Музыкальные инструменты' },
             { k: 'endofround', v: endofround, t: 'Звук конца раунда' },
             { k: 'jukebox', v: jukebox, t: 'Музыкальный автомат' },
-            { k: 'announcements', v: announcements, t: 'Оповещения (Announcements)' },
+            { k: 'the_voices', v: the_voices, t: 'ГОЛОСА' },
+            {
+              k: 'announcements',
+              v: announcements,
+              t: 'Оповещения (Announcements)',
+            },
             { k: 'ambience', v: ambience, t: 'Окружение (Ambience)' },
-            { k: 'ship_ambience', v: ship_ambience, t: 'Шум корабля (Ambience)' },
+            {
+              k: 'ship_ambience',
+              v: ship_ambience,
+              t: 'Шум корабля (Ambience)',
+            },
           ].map(({ k, v, t }) => (
             <Button
               key={k}
