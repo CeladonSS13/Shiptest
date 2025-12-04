@@ -485,7 +485,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<h3>Height</h3>"
 
-				dat += "<a href='?_src_=prefs;preference=height_filter;task=input'>[height_filter]</a><BR>"
+				dat += "<a href='byond://?_src_=prefs;preference=height_filter;task=input'>[height_filter]</a><BR>"
 
 			// Everyone gets mutant colors now.
 			dat += "<h3>Mutant Colors</h3>"
@@ -711,7 +711,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<a href='byond://?_src_=prefs;preference=ipc_hair;task=input'>[features["ipc_hair"]]</a><BR>"
 
-				dat += "<span style='border: 1px solid #161616; background-color: #[hair_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=hair;task=input'>Change</a><BR>"
+				dat += "<span style='border: 1px solid #161616; background-color: #[hair_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=hair;task=input'>Change</a><BR>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
@@ -939,7 +939,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<h3>Ears markings</h3>"
 				dat += "<a href='byond://?_src_=prefs;preference=tajara_ears_markings;task=input'>[features["tajara_ears_markings"]]</a><BR>"
-				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_ears_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajara_ears_markings_color;task=input'>Change</a>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_ears_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=tajara_ears_markings_color;task=input'>Change</a>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
@@ -952,7 +952,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<h3>Head markings</h3>"
 				dat += "<a href='byond://?_src_=prefs;preference=tajara_head_markings;task=input'>[features["tajara_head_markings"]]</a><BR>"
-				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_head_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajara_head_markings_color;task=input'>Change</a>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_head_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=tajara_head_markings_color;task=input'>Change</a>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
@@ -965,7 +965,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<h3>Nose markings</h3>"
 				dat += "<a href='byond://?_src_=prefs;preference=tajara_nose_markings;task=input'>[features["tajara_nose_markings"]]</a><BR>"
-				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_nose_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajara_nose_markings_color;task=input'>Change</a>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_nose_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=tajara_nose_markings_color;task=input'>Change</a>"
 
 				//dat += "<h3>Skin Tone nose</h3>"
 				//dat += "<a href='byond://?_src_=prefs;preference=s_tone_nose;task=input'>[skin_tone_nose]</a>"
@@ -982,7 +982,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<h3>Chest markings</h3>"
 				dat += "<a href='byond://?_src_=prefs;preference=tajara_chest_markings;task=input'>[features["tajara_chest_markings"]]</a><BR>"
-				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_chest_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajara_chest_markings_color;task=input'>Change</a>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_chest_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=tajara_chest_markings_color;task=input'>Change</a>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
@@ -995,7 +995,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<h3>Body markings</h3>"
 				dat += "<a href='byond://?_src_=prefs;preference=tajara_body_markings;task=input'>[features["tajara_body_markings"]]</a><BR>"
-				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_body_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajara_body_markings_color;task=input'>Change</a>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_body_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=tajara_body_markings_color;task=input'>Change</a>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
@@ -1033,7 +1033,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<h3>Ears markings</h3>"
 				dat += "<a href='byond://?_src_=prefs;preference=riol_ears_markings;task=input'>[features["riol_ears_markings"]]</a><BR>"
-				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_ears_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=riol_ears_markings_color;task=input'>Change</a>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_ears_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=riol_ears_markings_color;task=input'>Change</a>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
@@ -1046,7 +1046,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<h3>Head markings</h3>"
 				dat += "<a href='byond://?_src_=prefs;preference=riol_head_markings;task=input'>[features["riol_head_markings"]]</a><BR>"
-				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_head_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=riol_head_markings_color;task=input'>Change</a>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_head_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=riol_head_markings_color;task=input'>Change</a>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
@@ -1059,7 +1059,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<h3>Nose markings</h3>"
 				dat += "<a href='byond://?_src_=prefs;preference=riol_nose_markings;task=input'>[features["riol_nose_markings"]]</a><BR>"
-				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_nose_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=riol_nose_markings_color;task=input'>Change</a>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_nose_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=riol_nose_markings_color;task=input'>Change</a>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
@@ -1072,7 +1072,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<h3>Chest markings</h3>"
 				dat += "<a href='byond://?_src_=prefs;preference=riol_chest_markings;task=input'>[features["riol_chest_markings"]]</a><BR>"
-				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_chest_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=riol_chest_markings_color;task=input'>Change</a>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_chest_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=riol_chest_markings_color;task=input'>Change</a>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
@@ -1085,7 +1085,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<h3>Body markings</h3>"
 				dat += "<a href='byond://?_src_=prefs;preference=riol_body_markings;task=input'>[features["riol_body_markings"]]</a><BR>"
-				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_body_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=riol_body_markings_color;task=input'>Change</a>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_body_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=riol_body_markings_color;task=input'>Change</a>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
@@ -1098,7 +1098,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			// 	dat += "<h3>Tail markings</h3>"
 			// 	dat += "<a href='byond://?_src_=prefs;preference=riol_tail_markings;task=input'>[features["riol_tail_markings"]]</a><BR>"
-			// 	dat += "<span style='border:1px solid #161616; background-color: #[features["riol_tail_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=riol_tail_markings_color;task=input'>Change</a>"
+			// 	dat += "<span style='border:1px solid #161616; background-color: #[features["riol_tail_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=riol_tail_markings_color;task=input'>Change</a>"
 
 			// 	mutant_category++
 			// 	if(mutant_category >= MAX_MUTANT_ROWS)
@@ -1123,7 +1123,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<h3>Tail</h3>"
 				dat += "<a href='byond://?_src_=prefs;preference=riol_tail;task=input'>[features["riol_tail"]]</a><BR>"
-				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_tail_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=riol_tail_markings_color;task=input'>Change</a>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_tail_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=riol_tail_markings_color;task=input'>Change</a>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
@@ -1204,7 +1204,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				//for(var/index in prosthetic_limbs)
 					//var/bodypart_name = parse_zone(index)
 					//dat += "<tr><td><b>[bodypart_name]:</b></td>"
-					//dat += "<td><a href='?_src_=prefs;preference=limbs;customize_limb=[index]'>[prosthetic_limbs[index]]</a></td></tr>"
+					//dat += "<td><a href='byond://?_src_=prefs;preference=limbs;customize_limb=[index]'>[prosthetic_limbs[index]]</a></td></tr>"
 				//dat += "</table><br>" [/CELADON-EDIT] - ORIGINAL END
 			if(!istype(pref_species, /datum/species/lanius))
 				dat += "<h3>Prosthetic Limbs</h3>"
@@ -1216,7 +1216,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					for(var/index in prosthetic_limbs)
 						var/bodypart_name = parse_zone(index)
 						dat += "<tr><td><b>[bodypart_name]:</b></td>"
-						dat += "<td><a href='?_src_=prefs;preference=limbs;customize_limb=[index]'>[prosthetic_limbs[index]]</a></td></tr>"
+						dat += "<td><a href='byond://?_src_=prefs;preference=limbs;customize_limb=[index]'>[prosthetic_limbs[index]]</a></td></tr>"
 					dat += "</table><br>"
 					//[/CELADON - EDIT]
 		if(2) //Loadout
