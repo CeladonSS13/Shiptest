@@ -199,7 +199,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/static/list/language_level_costs = list(LANGUAGE_UNKNOWN = 0, LANGUAGE_RECOGNIZED = 1, LANGUAGE_FAMILIAR = 2, LANGUAGE_FLUENT = 3)
 
 	// 0 = character settings, 1 = game preferences
-	var/current_tab = 0
+	var/current_tab = CHAR_SETUP_TAB
 
 	var/show_gear = TRUE
 	var/show_loadout = TRUE
@@ -314,12 +314,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	update_preview_icon(show_gear, show_loadout)
 	var/list/dat = list("<center>")
 
-	dat += "<a href='byond://?_src_=prefs;preference=tab;tab=0' [current_tab == 0 ? "class='linkOn'" : ""]>Character Setup</a>"
-	dat += "<a href='byond://?_src_=prefs;preference=tab;tab=1' [current_tab == 1 ? "class='linkOn'" : ""]>Character Appearance</a>"
-	dat += "<a href='byond://?_src_=prefs;preference=tab;tab=2' [current_tab == 2 ? "class='linkOn'" : ""]>Gear</a>"
-	dat += "<a href='byond://?_src_=prefs;preference=tab;tab=3' [current_tab == 3 ? "class='linkOn'" : ""]>Game Preferences</a>"
-	dat += "<a href='byond://?_src_=prefs;preference=tab;tab=4' [current_tab == 4 ? "class='linkOn'" : ""]>OOC Preferences</a>"
-	dat += "<a href='byond://?_src_=prefs;preference=tab;tab=5' [current_tab == 5 ? "class='linkOn'" : ""]>Custom Keybindings</a>"
+	dat += "<a href='byond://?_src_=prefs;preference=character_tab;tab=[CHAR_SETUP_TAB]' [current_tab == CHAR_SETUP_TAB ? "class='linkOn'" : ""]>Character Setup</a>"
+	dat += "<a href='byond://?_src_=prefs;preference=character_tab;tab=[CHAR_APPEARANCE_TAB]' [current_tab == CHAR_APPEARANCE_TAB ? "class='linkOn'" : ""]>Character Appearance</a>"
+	dat += "<a href='byond://?_src_=prefs;preference=character_tab;tab=[CHAR_LOADOUT_TAB]' [current_tab == CHAR_LOADOUT_TAB ? "class='linkOn'" : ""]>Gear</a>"
+	dat += "<a href='byond://?_src_=prefs;preference=character_tab;tab=[CHAR_GAMEPREFERENCES_TAB]' [current_tab == CHAR_GAMEPREFERENCES_TAB ? "class='linkOn'" : ""]>Game Preferences</a>"
+	dat += "<a href='byond://?_src_=prefs;preference=character_tab;tab=[CHAR_OOC_TAB]' [current_tab == CHAR_OOC_TAB ? "class='linkOn'" : ""]>OOC Preferences</a>"
+	dat += "<a href='byond://?_src_=prefs;preference=character_tab;tab=[CHAR_KEYBINDINGS_TAB]' [current_tab == CHAR_KEYBINDINGS_TAB ? "class='linkOn'" : ""]>Custom Keybindings</a>"
+	dat += "<a href='byond://?_src_=prefs;preference=character_tab;tab=[CHAR_SPEECH_TAB]' [current_tab == CHAR_SPEECH_TAB ? "class='linkOn'" : ""]>Speech</a>"
 
 	if(!path)
 		dat += "<div class='notice'>Please create an account to save your preferences</div>"
@@ -328,7 +329,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	dat += "<HR>"
 
 	switch(current_tab)
-		if (0) // Character Setup
+		if(CHAR_SETUP_TAB) // Character Setup
 			if(path)
 				var/savefile/S = new /savefile(path)
 				if(S)
@@ -429,7 +430,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			dat += "<br><b>Outerwear Style:</b><BR><a href ='?_src_=prefs;preference=exo;task=input'>[exowear]</a>"
 
-		if(1) //Character Appearance
+		if(CHAR_APPEARANCE_TAB) //Character Appearance
 			if(path)
 				var/savefile/S = new /savefile(path)
 				if(S)
@@ -1236,20 +1237,20 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			// dat += "<b>Additional Language</b><BR>"
 			// dat += "<a style='display:block;width:100px' href='?_src_=prefs;preference=language;task=input'>[additional_language]</a><BR>"
 			// dat += "</td>"
-			dat += "<table>"
-			// dat += "<td width='340px' height='300px' valign='top'>"
-			dat += "<h2>Vocal Bark preferences</h2>"
-			var/datum/bark/B = GLOB.bark_list[bark_id]
-			dat += "<b>Vocal Bark Sound:</b><BR>"
-			dat += "<a style='display:block;width:200px' href='byond://?_src_=prefs;preference=barksound;task=input'>[B ? initial(B.name) : "INVALID"]</a><BR>"
-			dat += "<b>Vocal Bark Speed:</b> <a href='byond://?_src_=prefs;preference=barkspeed;task=input'>[bark_speed]</a><BR>"
-			dat += "<b>Vocal Bark Pitch:</b> <a href='byond://?_src_=prefs;preference=barkpitch;task=input'>[bark_pitch]</a><BR>"
-			dat += "<b>Vocal Bark Variance:</b> <a href='byond://?_src_=prefs;preference=barkvary;task=input'>[bark_variance]</a><BR>"
-			dat += "<BR><a href='byond://?_src_=prefs;preference=barkpreview'>Preview Bark</a><BR>"
-			// dat += "</td>"
-			dat += "</table><br>"
+			// dat += "<table>"
+			// // dat += "<td width='340px' height='300px' valign='top'>"
+			// dat += "<h2>Vocal Bark preferences</h2>"
+			// var/datum/bark/B = GLOB.bark_list[bark_id]
+			// dat += "<b>Vocal Bark Sound:</b><BR>"
+			// dat += "<a style='display:block;width:200px' href='byond://?_src_=prefs;preference=barksound;task=input'>[B ? initial(B.name) : "INVALID"]</a><BR>"
+			// dat += "<b>Vocal Bark Speed:</b> <a href='byond://?_src_=prefs;preference=barkspeed;task=input'>[bark_speed]</a><BR>"
+			// dat += "<b>Vocal Bark Pitch:</b> <a href='byond://?_src_=prefs;preference=barkpitch;task=input'>[bark_pitch]</a><BR>"
+			// dat += "<b>Vocal Bark Variance:</b> <a href='byond://?_src_=prefs;preference=barkvary;task=input'>[bark_variance]</a><BR>"
+			// dat += "<BR><a href='byond://?_src_=prefs;preference=barkpreview'>Preview Bark</a><BR>"
+			// // dat += "</td>"
+			// dat += "</table><br>"
 
-		if(2) //Loadout
+		if(CHAR_LOADOUT_TAB) //Loadout
 			if(path)
 				var/savefile/S = new /savefile(path)
 				if(S)
@@ -1387,7 +1388,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "</table>"
 			// [/CELADON-EDIT]
 
-		if (3) // Game Preferences
+		if(CHAR_GAMEPREFERENCES_TAB) // Game Preferences
 			dat += "<table><tr><td width='340px' height='300px' valign='top'>"
 			dat += "<h2>General Settings</h2>"
 			dat += "<b>UI Style:</b> <a href='byond://?_src_=prefs;task=input;preference=ui'>[UI_style]</a><br>"
@@ -1514,7 +1515,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<br>"
 			dat += "<b>Midround Antagonist:</b> <a href='byond://?_src_=prefs;preference=allow_midround_antag'>[(toggles & MIDROUND_ANTAG) ? "Enabled" : "Disabled"]</a><br>"
 			dat += "</td></tr></table>"
-		if(4) //OOC Preferences
+		if(CHAR_OOC_TAB) //OOC Preferences
 			dat += "<table><tr><td width='340px' height='300px' valign='top'>"
 			dat += "<h2>OOC Settings</h2>"
 			dat += "<b>Window Flashing:</b> <a href='byond://?_src_=prefs;preference=winflash'>[(windowflashing) ? "Enabled":"Disabled"]</a><br>"
@@ -1596,7 +1597,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "</td>"
 			dat += "</tr></table>"
-		if(5) // Custom keybindings
+		if(CHAR_KEYBINDINGS_TAB) // Custom keybindings
 			// Create an inverted list of keybindings -> key
 			var/list/user_binds = list()
 			for (var/key in key_bindings)
@@ -1637,6 +1638,30 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<br><br>"
 			dat += "<a href ='?_src_=prefs;preference=keybindings_reset'>\[Reset to default\]</a>"
 			dat += "</body>"
+		if(CHAR_SPEECH_TAB)	// The voices
+			// dat += "<table><tr><td width='340px' height='300px' valign='top'>"
+			// dat += "<h2>Speech preferences</h2>"
+			// dat += "<b>Custom Speech Verb:</b><BR>"
+			// dat += "<a style='display:block;width:100px' href='?_src_=prefs;preference=speech_verb;task=input'>[custom_speech_verb]</a><BR>"
+			// dat += "<b>Custom Tongue:</b><BR>"
+			// dat += "<a style='display:block;width:100px' href='?_src_=prefs;preference=tongue;task=input'>[custom_tongue]</a><BR>"
+			// //SANDSTORM EDIT - additional language + runechat color
+			// dat += "<b>Additional Language</b><br>"
+			// dat += "<a href='?_src_=prefs;preference=language;task=menu'>[english_list(language, "None")]</a></center><br>"
+			// dat += "<b>Custom runechat color:</b> <a href='?_src_=prefs;preference=enable_personal_chat_color'>[enable_personal_chat_color ? "Enabled" : "Disabled"]</a><br> [enable_personal_chat_color ? "<span style='border: 1px solid #161616; background-color: [personal_chat_color];'><font color='[color_hex2num(personal_chat_color) < 200 ? "FFFFFF" : "000000"]'>[personal_chat_color]</font></span> <a href='?_src_=prefs;preference=personal_chat_color;task=input'>Change</a>" : ""]<br>"
+			// dat += "</td>"
+			// //END OF SANDSTORM EDIT
+			dat += "<td width='340px' height='300px' valign='top'>"
+			dat += "<h2>Vocal Bark preferences</h2>"
+			var/datum/bark/B = GLOB.bark_list[bark_id]
+			dat += "<b>Vocal Bark Sound:</b><BR>"
+			dat += "<a style='display:block;width:200px' href='?_src_=prefs;preference=barksound;task=input'>[B ? initial(B.name) : "INVALID"]</a><BR>"
+			dat += "<b>Vocal Bark Speed:</b> <a href='byond://?_src_=prefs;preference=barkspeed;task=input'>[bark_speed]</a><BR>"
+			dat += "<b>Vocal Bark Pitch:</b> <a href='byond://?_src_=prefs;preference=barkpitch;task=input'>[bark_pitch]</a><BR>"
+			dat += "<b>Vocal Bark Variance:</b> <a href='byond://?_src_=prefs;preference=barkvary;task=input'>[bark_variance]</a><BR>"
+			dat += "<BR><a href='byond://?_src_=prefs;preference=barkpreview'>Preview Bark</a><BR>"
+			dat += "</td>"
+			dat += "</tr></table>"
 	dat += "<hr><center>"
 
 	if(!IsGuestKey(user.key))
@@ -3033,10 +3058,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						real_name = random_unique_name(gender)
 						save_character()
 
-				if("tab")
+				if("character_tab")
 					if (href_list["tab"])
 						current_tab = text2num(href_list["tab"])
-						if(current_tab == 2)
+						if(current_tab == CHAR_LOADOUT_TAB)
 							show_loadout = TRUE
 
 				if("clear_heart")

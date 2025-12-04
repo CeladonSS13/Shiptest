@@ -1237,6 +1237,7 @@
 	return our_holder.get_selected_language() // verifies its validity, returns it if successful.
 
 // [CELADON-ADD] - CELADON_THE_VOICES
+
 /// Sets the vocal bark for the atom, using the bark's ID
 /atom/movable/proc/set_bark(id)
 	if(!id)

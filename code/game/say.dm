@@ -99,29 +99,51 @@ GLOBAL_LIST_INIT(freqcolor, list())
 	return !HAS_TRAIT(src, TRAIT_MUTE)
 
 /atom/movable/proc/send_speech(message, range = 7, obj/source = src, bubble_type, list/spans, datum/language/message_language = null, list/message_mods = list())
-	var/rendered = compose_message(src, message_language, message, , spans, message_mods)
-	// [CELADON-EDIT] - CELADON_THE_VOICES
-	// for(var/atom/movable/AM as anything in get_hearers_in_view(range, source))	// ORIGINAL
+	// var/rendered = compose_message(src, message_language, message, , spans, message_mods)
+	// // [CELADON-EDIT] - CELADON_THE_VOICES
+	// // for(var/atom/movable/AM as anything in get_hearers_in_view(range, source))	// ORIGINAL
+	// var/list/hearers = get_hearers_in_view(range, source)
+	// for(var/_AM in hearers)
+	// // [/CELADON-EDIT]
+	// 	var/atom/movable/AM = _AM
+	// 	AM.Hear(rendered, src, message_language, message, , spans, message_mods.Copy())
+	// // [CELADON-ADD] - CELADON_THE_VOICES
+	// if(vocal_bark || vocal_bark_id)
+	// 	for(var/mob/M in hearers)
+	// 		if(!M.client)
+	// 			continue
+	// 		if(!(M.client.prefs.toggles & SOUND_BARK))
+	// 			hearers -= M
+	// 	var/barks = round((LAZYLEN(message) / vocal_speed)) + 1
+	// 	var/total_delay
+	// 	for(var/i in 1 to barks)
+	// 		addtimer(CALLBACK(src, .proc/bark, hearers, range, vocal_volume, rand((vocal_pitch * 100), (vocal_pitch*100) + (vocal_pitch_range*100)) / 100), total_delay)
+	// 		total_delay += rand(DS2TICKS(vocal_speed/4), DS2TICKS(vocal_speed/4) + DS2TICKS(vocal_speed/4)) TICKS
+	// // [/CELADON-ADD]
+	var/rendered = compose_message(src, message_language, message, , spans, message_mods, source)
 	var/list/hearers = get_hearers_in_view(range, source)
 	for(var/_AM in hearers)
-	// [/CELADON-EDIT]
 		var/atom/movable/AM = _AM
-		AM.Hear(rendered, src, message_language, message, , spans, message_mods.Copy())
-	// [CELADON-ADD] - CELADON_THE_VOICES
-	if(vocal_bark || vocal_bark_id)
+		AM.Hear(rendered, src, message_language, message, , spans, message_mods, source)
+	if(SEND_SIGNAL(src, COMSIG_MOVABLE_QUEUE_BARK, hearers, args) || vocal_bark || vocal_bark_id)
 		for(var/mob/M in hearers)
 			if(!M.client)
 				continue
 			if(!(M.client.prefs.toggles & SOUND_BARK))
 				hearers -= M
-		var/barks = round((LAZYLEN(message) / vocal_speed)) + 1
+		var/barks = min(round((LAZYLEN(message) / vocal_speed)) + 1, BARK_MAX_BARKS)
 		var/total_delay
+		vocal_current_bark = world.time //this is juuuuust random enough to reliably be unique every time send_speech() is called, in most scenarios
 		for(var/i in 1 to barks)
-			addtimer(CALLBACK(src, .proc/bark, hearers, range, vocal_volume, rand((vocal_pitch * 100), (vocal_pitch*100) + (vocal_pitch_range*100)) / 100), total_delay)
-			total_delay += rand(DS2TICKS(vocal_speed/4), DS2TICKS(vocal_speed/4) + DS2TICKS(vocal_speed/4)) TICKS
-	// [/CELADON-ADD]
+			if(total_delay > BARK_MAX_TIME)
+				break
+			addtimer(CALLBACK(src, PROC_REF(bark), hearers, range, vocal_volume, BARK_DO_VARY(vocal_pitch, vocal_pitch_range), vocal_current_bark), total_delay)
+			total_delay += rand(DS2TICKS(vocal_speed / BARK_SPEED_BASELINE), DS2TICKS(vocal_speed / BARK_SPEED_BASELINE) + DS2TICKS(vocal_speed / BARK_SPEED_BASELINE)) TICKS
 
-/atom/movable/proc/compose_message(atom/movable/speaker, datum/language/message_language, raw_message, radio_freq, list/spans, list/message_mods = list(), face_name = FALSE)
+// /atom/movable/proc/compose_message(atom/movable/speaker, datum/language/message_language, raw_message, radio_freq, list/spans, list/message_mods = list(), face_name = FALSE)
+/atom/movable/proc/compose_message(atom/movable/speaker, datum/language/message_language, raw_message, radio_freq, list/spans, list/message_mods = list(), face_name = FALSE, atom/movable/source)
+	if(!source)
+		source = speaker
 	//This proc uses text() because it is faster than appending strings. Thanks BYOND.
 	//Basic span
 	var/spanpart1 = "<span [get_radio_span(radio_freq)]>"

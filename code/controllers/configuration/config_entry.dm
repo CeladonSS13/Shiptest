@@ -212,3 +212,5 @@
 
 /datum/config_entry/keyed_list/vv_edit_var(var_name, var_value)
 	return var_name != NAMEOF(src, splitter) && ..()
+
+/datum/config_entry/flag/enable_global_barks

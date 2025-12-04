@@ -1,1 +1,1 @@
-#define SOUND_BARK	(1<<24)
+// #define SOUND_BARK	(1<<24)
