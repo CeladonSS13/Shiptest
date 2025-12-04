@@ -76,14 +76,6 @@
 	icon_state = "rifle-brass-rubber"
 	projectile_type = /obj/projectile/bullet/a308/rubber
 
-/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/surplus
-	ammo_type = /obj/item/ammo_casing/a308/surplus
-	max_ammo = 10
-
-/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/rubber
-	ammo_type = /obj/item/ammo_casing/a308/rubber
-	max_ammo = 10
-
 //
 // MARK: 7.62x54mmR
 //

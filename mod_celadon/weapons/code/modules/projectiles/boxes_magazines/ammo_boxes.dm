@@ -120,6 +120,17 @@ MARK: 5.56x45
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/rubber = 4)
 	generate_items_inside(items_inside,src)
 */
+/obj/item/storage/box/ammo/a308/rubber
+	icon_state = "a308box-rubbershot"
+
+/obj/item/storage/box/ammo/a308/rubber/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/rubber = 4)
+	generate_items_inside(items_inside,src)
+
+/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/rubber
+	ammo_type = /obj/item/ammo_casing/a308/rubber
+	max_ammo = 10
 
 //Тупое название сурплус , будет брак или некачественное исполнение. Снижен урон , минимум пробития - не для продажи
 /obj/item/storage/box/ammo/a308/surplus
@@ -132,6 +143,9 @@ MARK: 5.56x45
 		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/surplus = 4)
 	generate_items_inside(items_inside,src)
 
+/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/surplus
+	ammo_type = /obj/item/ammo_casing/a308/surplus
+	max_ammo = 10
 //
 // MARK: 8x58
 //
@@ -147,11 +161,6 @@ MARK: 5.56x45
 	desc = "A box of standard 8x58mm ammo."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo.dmi'
 	icon_state = "a858box"
-
-/obj/item/storage/box/ammo/a858_ammo_box/PopulateContents()
-	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a858 = 4)
-	generate_items_inside(items_inside,src)
 
 //
 // MARK: 410x76
@@ -243,9 +252,6 @@ MARK: 5.56x45
 
 /obj/item/storage/box/ammo/a308/ap
 	icon_state = "a308box-ap"
-
-/obj/item/storage/box/ammo/a308/rubber
-	icon_state = "a308box-rubbershot"
 
 // MARK: 5.56x42
 
