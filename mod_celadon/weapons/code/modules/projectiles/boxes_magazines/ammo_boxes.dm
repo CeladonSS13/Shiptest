@@ -75,52 +75,9 @@ MARK: 5.56x45
 
 //коробки патроны 308 калибра - на данный момент эндгейм патроны , огромный урон , огромное пробитие , высокая цена
 
-/*
-/obj/item/storage/box/ammo/a308
-	name = "Коробка патронов .308"
-	desc = "Коробка стандартных патронов .308. Заводского качества, ещё в смазке."
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo.dmi'
-	icon_state = "308_fmj"
-
-/obj/item/storage/box/ammo/a308/PopulateContents()
-	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308 = 4)
-	generate_items_inside(items_inside,src)
-
-//Пули против мяса , минусовое пробитие , не должно пробивать даже минимальную броню , но огромный урон здоровью
-/obj/item/storage/box/ammo/a308/hp
-	name = "Коробка патронов .308(Охотничий)"
-	desc = "Пуля с мягкой оболочкой, эффективна против крупной дичи, но практически бесполезна даже против базовой брони"
-	icon_state = "308_sp"
-
-/obj/item/storage/box/ammo/a308/hp/PopulateContents()
-	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/hp = 4)
-	generate_items_inside(items_inside,src)
-
-//Бронебойки , должны пробивать любую броню , но урон снижен
-/obj/item/storage/box/ammo/a308/ap
-	name = "Коробка патронов .308(Бронебойный)"
-	desc = "Бронебойные патроны с вольфрамовым наконечником, хороши против брони но наносят не так много повреждений."
-	icon_state = "308_ap"
-
-/obj/item/storage/box/ammo/a308/ap/PopulateContents()
-	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/ap = 4)
-	generate_items_inside(items_inside,src)
-
 //Резина , минимум урона здоровью , средне стамине
 /obj/item/storage/box/ammo/a308/rubber
-	name = "Коробка патронов .308(Резина)"
-	desc = "Патроны с резиновой пулей, не смертельны но все еще наносят травмы."
-	icon_state = "308_rub"
-
-/obj/item/storage/box/ammo/a308/a308_rub/PopulateContents()
-	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/rubber = 4)
-	generate_items_inside(items_inside,src)
-*/
-/obj/item/storage/box/ammo/a308/rubber
+	name = "box of rubber .308 ammo"
 	icon_state = "a308box-rubbershot"
 
 /obj/item/storage/box/ammo/a308/rubber/PopulateContents()
@@ -135,7 +92,7 @@ MARK: 5.56x45
 //Тупое название сурплус , будет брак или некачественное исполнение. Снижен урон , минимум пробития - не для продажи
 /obj/item/storage/box/ammo/a308/surplus
 	name = "Коробка бракованных патронов .308"
-	desc = "Не слишком качественные патроны калибра .308, хуже заводских но все еще годны."
+	desc = "Не очень качественные патроны калибра .308, хуже заводских но все еще годны."
 	icon_state = "a308_brak"
 
 /obj/item/storage/box/ammo/a308/surplus/PopulateContents()
@@ -146,6 +103,7 @@ MARK: 5.56x45
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/a308/surplus
 	ammo_type = /obj/item/ammo_casing/a308/surplus
 	max_ammo = 10
+
 //
 // MARK: 8x58
 //
@@ -279,5 +237,5 @@ MARK: 5.56x45
 /obj/item/storage/box/ammo/a762_40/hp/inteq
 	icon_state = "a762_40box_big-hp_inteq"
 
-/obj/item/storage/box/ammo/a762_40/hp/rubber
+/obj/item/storage/box/ammo/a762_40/rubber/inteq
 	icon_state = "a762_40box_big-rubbershot_inteq"
