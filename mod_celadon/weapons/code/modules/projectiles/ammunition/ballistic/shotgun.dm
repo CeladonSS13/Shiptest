@@ -57,18 +57,3 @@
 	if(icon_state == "[initial(icon_state)]-empty")
 		custom_materials = list(/datum/material/titanium=500)
 
-
-// Баланы шотганов... Их по-хорошему удалить
-
-/obj/item/ammo_casing/shotgun/buckshot
-	pellets = 6
-	custom_materials = list(/datum/material/iron=6000)
-
-/obj/item/ammo_casing/shotgun/beanbag
-	custom_materials = list(/datum/material/iron=2000)
-
-/obj/item/ammo_casing/shotgun/improvised
-	custom_materials = list(/datum/material/iron=2000)
-
-/obj/item/ammo_casing/shotgun/stunslug
-	custom_materials = list(/datum/material/iron=2000)
