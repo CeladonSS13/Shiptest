@@ -65,7 +65,6 @@
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
 	suit = /obj/item/clothing/suit/armor/vest/inteq
 	uniform = /obj/item/clothing/under/syndicate/inteq/honorable
-	suit_store = /obj/item/gun/ballistic/revolver/horizonx
 	gloves = /obj/item/clothing/gloves/combat
 
 //MARK: Командир
