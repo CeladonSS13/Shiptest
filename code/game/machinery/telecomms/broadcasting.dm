@@ -135,7 +135,7 @@
 	return copy
 
 // This is the meat function for making radios hear vocal transmissions.
-/datum/signal/subspace/vocal/broadcast()		// MOD_CELADON-CHANGE -> mod_celadon\radio_syndicate\code\broadcasting.dm
+/datum/signal/subspace/vocal/broadcast()
 	set waitfor = FALSE
 
 	// Perform final composition steps on the message.
@@ -221,10 +221,12 @@
 		if(M.client.prefs.chat_toggles & CHAT_GHOSTRADIO)
 			receive |= M
 
-	// Add observers who have ghost bark enabled.
+	// [CELADON-ADD] - CELADON_THE_VOICES
+	// Add observers who have ghost voice enabled.
 	for(var/mob/dead/observer/V in GLOB.player_list)
-		if(V.client.prefs.chat_toggles & SOUND_BARK)
+		if(V.client.prefs.chat_toggles & SOUND_THE_VOICE)
 			receive |= V
+	// [/CELADON-ADD]
 
 	// Render the message and have everybody hear it.
 	// Always call this on the virtualspeaker to avoid issues.

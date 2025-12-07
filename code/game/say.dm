@@ -80,20 +80,18 @@ GLOBAL_LIST_INIT(freqcolor, list())
 * if TRUE, we will check if the movable can speak irregardless
 */
 // [CELADON-ADD] - CELADON_THE_VOICES
-/atom/movable/proc/bark(list/hearers, distance, volume, pitch, queue_time)
-	if(queue_time && vocal_current_bark != queue_time)
+/atom/movable/proc/the_voices(list/hearers, distance, volume, pitch, queue_time)
+	if(queue_time && vocal_current_the_voices != queue_time)
 		return
-	if(SEND_SIGNAL(src, COMSIG_MOVABLE_BARK, hearers, distance, volume, pitch))
+	if(SEND_SIGNAL(src, COMSIG_MOVABLE_THE_VOICES, hearers, distance, volume, pitch))
 		return
-	if(!vocal_bark)
-		if(!vocal_bark_id || !set_bark(vocal_bark_id))
+	if(!vocal_the_voices)
+		if(!vocal_the_voices_id || !set_the_voices(vocal_the_voices_id))
 			return
 	volume = min(volume, 100)
 	var/turf/T = get_turf(src)
-	// to_chat(world, "DEBUG: Before playsound_local, T=[T], vocal_bark=[vocal_bark]")
 	for(var/mob/M in hearers)
-		// to_chat(world, "DEBUG: M=[M.name], M.client=[M.client], vocal_bark.file=[vocal_bark.file]")
-		M.playsound_local(T, vol = volume, vary = TRUE, frequency = pitch, max_distance = distance, falloff_distance = 0, falloff_exponent = BARK_SOUND_FALLOFF_EXPONENT(distance), S = vocal_bark, distance_multiplier = 1)
+		M.playsound_local(T, vol = volume, vary = TRUE, frequency = pitch, max_distance = distance, falloff_distance = 0, falloff_exponent = THE_VOICES_SOUND_FALLOFF_EXPONENT(distance), S = vocal_the_voices, distance_multiplier = 1)
 		// to_chat(world, "DEBUG: Called for [M.name]")
 // [/CELADON-ADD]
 
@@ -102,51 +100,37 @@ GLOBAL_LIST_INIT(freqcolor, list())
 	return !HAS_TRAIT(src, TRAIT_MUTE)
 
 /atom/movable/proc/send_speech(message, range = 7, obj/source = src, bubble_type, list/spans, datum/language/message_language = null, list/message_mods = list())
+	// [CELADON-EDIT] - CELADON_THE_VOICES
 	// var/rendered = compose_message(src, message_language, message, , spans, message_mods)
-	// // [CELADON-EDIT] - CELADON_THE_VOICES
-	// // for(var/atom/movable/AM as anything in get_hearers_in_view(range, source))	// ORIGINAL
-	// var/list/hearers = get_hearers_in_view(range, source)
-	// for(var/_AM in hearers)
-	// // [/CELADON-EDIT]
-	// 	var/atom/movable/AM = _AM
-	// 	AM.Hear(rendered, src, message_language, message, , spans, message_mods.Copy())
-	// // [CELADON-ADD] - CELADON_THE_VOICES
-	// if(vocal_bark || vocal_bark_id)
-	// 	for(var/mob/M in hearers)
-	// 		if(!M.client)
-	// 			continue
-	// 		if(!(M.client.prefs.toggles & SOUND_BARK))
-	// 			hearers -= M
-	// 	var/barks = round((LAZYLEN(message) / vocal_speed)) + 1
-	// 	var/total_delay
-	// 	for(var/i in 1 to barks)
-	// 		addtimer(CALLBACK(src, .proc/bark, hearers, range, vocal_volume, rand((vocal_pitch * 100), (vocal_pitch*100) + (vocal_pitch_range*100)) / 100), total_delay)
-	// 		total_delay += rand(DS2TICKS(vocal_speed/4), DS2TICKS(vocal_speed/4) + DS2TICKS(vocal_speed/4)) TICKS
-	// // [/CELADON-ADD]
+	// for(var/atom/movable/AM as anything in get_hearers_in_view(range, source))
+	// 	AM.Hear(rendered, src, message_language, message, , spans, message_mods.Copy())	// ORIGINAL
 	var/rendered = compose_message(src, message_language, message, , spans, message_mods, source)
 	var/list/hearers = get_hearers_in_view(range, source)
 	for(var/_AM in hearers)
 		var/atom/movable/AM = _AM
 		AM.Hear(rendered, src, message_language, message, , spans, message_mods, source)
-	if(SEND_SIGNAL(src, COMSIG_MOVABLE_QUEUE_BARK, hearers, args) || vocal_bark || vocal_bark_id)
+	if(SEND_SIGNAL(src, COMSIG_MOVABLE_QUEUE_THE_VOICES, hearers, args) || vocal_the_voices || vocal_the_voices_id)
 		for(var/mob/M in hearers)
 			if(!M.client)
 				continue
-			if(!(M.client.prefs.toggles & SOUND_BARK))
+			if(!(M.client.prefs.toggles & SOUND_THE_VOICE))
 				hearers -= M
-		var/barks = min(round((LAZYLEN(message) / vocal_speed)) + 1, BARK_MAX_BARKS)
+		var/voices = min(round((LAZYLEN(message) / vocal_speed)) + 1, THE_VOICES_MAX_VOICES)
 		var/total_delay
-		vocal_current_bark = world.time //this is juuuuust random enough to reliably be unique every time send_speech() is called, in most scenarios
-		for(var/i in 1 to barks)
-			if(total_delay > BARK_MAX_TIME)
+		vocal_current_the_voices = world.time //this is juuuuust random enough to reliably be unique every time send_speech() is called, in most scenarios
+		for(var/i in 1 to voices)
+			if(total_delay > THE_VOICES_MAX_TIME)
 				break
-			addtimer(CALLBACK(src, PROC_REF(bark), hearers, range, vocal_volume, BARK_DO_VARY(vocal_pitch, vocal_pitch_range), vocal_current_bark), total_delay)
-			total_delay += rand(DS2TICKS(vocal_speed / BARK_SPEED_BASELINE), DS2TICKS(vocal_speed / BARK_SPEED_BASELINE) + DS2TICKS(vocal_speed / BARK_SPEED_BASELINE)) TICKS
+			addtimer(CALLBACK(src, PROC_REF(the_voices), hearers, range, vocal_volume, THE_VOICES_DO_VARY(vocal_pitch, vocal_pitch_range), vocal_current_the_voices), total_delay)
+			total_delay += rand(DS2TICKS(vocal_speed / THE_VOICES_SPEED_BASELINE), DS2TICKS(vocal_speed / THE_VOICES_SPEED_BASELINE) + DS2TICKS(vocal_speed / THE_VOICES_SPEED_BASELINE)) TICKS
+	// [/CELADON-EDIT]
 
-// /atom/movable/proc/compose_message(atom/movable/speaker, datum/language/message_language, raw_message, radio_freq, list/spans, list/message_mods = list(), face_name = FALSE)
+// [CELADON-EDIT] - CELADON_THE_VOICES
+// /atom/movable/proc/compose_message(atom/movable/speaker, datum/language/message_language, raw_message, radio_freq, list/spans, list/message_mods = list(), face_name = FALSE)	// ORIGINAL
 /atom/movable/proc/compose_message(atom/movable/speaker, datum/language/message_language, raw_message, radio_freq, list/spans, list/message_mods = list(), face_name = FALSE, atom/movable/source)
 	if(!source)
 		source = speaker
+// [/CELADON-EDIT]
 	//This proc uses text() because it is faster than appending strings. Thanks BYOND.
 	//Basic span
 	var/spanpart1 = "<span [get_radio_span(radio_freq)]>"
@@ -357,8 +341,3 @@ INITIALIZE_IMMEDIATE(/atom/movable/virtualspeaker)
 
 /atom/movable/virtualspeaker/GetRadio()
 	return radio
-
-/client/verb/open_sound_settings()
-	set name = "Open Sound Settings"
-	set category = "Debug"
-	new /datum/sound_panel(usr)

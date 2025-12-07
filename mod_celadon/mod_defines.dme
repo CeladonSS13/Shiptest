@@ -4,6 +4,12 @@
 // Все дефайны файлы помещаем по пути code\__DEFINES\~mod_celadon
 // Тут указываем путь до нашего файла с дефайном!
 
+/// MARK: DEFINES
+#include "..\code\__DEFINES\~mod_celadon\loadout.dm"
+#include "..\code\__DEFINES\~mod_celadon\DNA.dm"
+#include "..\code\__DEFINES\~mod_celadon\preferences.dm"
+#include "..\code\__DEFINES\~mod_celadon\say.dm"
+
 #include "..\code\__DEFINES\~mod_celadon\access.dm"
 #include "..\code\__DEFINES\~mod_celadon\map.dm"
 #include "..\code\__DEFINES\~mod_celadon\achievements.dm"
@@ -28,3 +34,16 @@
 #include "..\code\__DEFINES\~mod_celadon\flags.dm"
 
 #include "..\code\__DEFINES\~mod_celadon\mood.dm"
+
+/// MARK: SIGNALS
+#include "..\code\__DEFINES\~mod_celadon\dcs\signals.dm"
+
+/// MARK: HELPERS
+#include "..\code\__DEFINES\~mod_celadon\_HELPERS\sanitize_values.dm"
+#include "..\code\__DEFINES\~mod_celadon\_HELPERS\yelling.dm"
+
+/// MARK: GLOBALVARS
+#include "..\code\__DEFINES\~mod_celadon\_globalvars\flavor_misc.dm"
+
+/// MARK: CONTROLLERS
+#include "..\code\__DEFINES\~mod_celadon\controllers\config_entry.dm"

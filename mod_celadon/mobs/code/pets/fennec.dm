@@ -9,8 +9,6 @@
 	icon_dead = "fennec_dead"
 	held_state = "fennec"
 	see_in_dark = 10
-	// vocal_bark_id = "weh"
-	// vocal_speed = 1.5
 	speak_chance = 15
 	maxHealth = 50
 	health = 50

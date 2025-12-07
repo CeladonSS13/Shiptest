@@ -87,16 +87,15 @@
 	/// last time we yelled
 	var/last_yell = 0
 
-	// Text-to-bark sounds
-	var/sound/vocal_bark
-	var/vocal_bark_id
+	// Text-to-voice sounds
+	var/sound/vocal_the_voices
+	var/vocal_the_voices_id
 	var/vocal_pitch = 1
 	var/vocal_pitch_range = 0.2 //Actual pitch is (pitch - (vocal_pitch_range*0.5)) to (pitch + (vocal_pitch_range*0.5))
 	var/vocal_volume = 70 //Baseline. This gets modified by yelling and other factors
 	var/vocal_speed = 4 //Lower values are faster, higher values are slower
 
-	var/vocal_current_bark //When barks are queued, this gets passed to the bark proc. If vocal_current_bark doesn't match the args passed to the bark proc (if passed at all), then the bark simply doesn't play. Basic curtailing of spam~
-
+	var/vocal_current_the_voices //When voices are queued, this gets passed to the voice proc. If vocal_current the voices doesn't match the args passed to the voice proc (if passed at all), then the voice simply doesn't play. Basic curtailing of spam~
 	// [/CELADON-ADD]
 
 /atom/movable/Initialize(mapload)
@@ -1235,20 +1234,6 @@
 	var/datum/language_holder/our_holder = get_language_holder()
 	our_holder.selected_language = language_path
 	return our_holder.get_selected_language() // verifies its validity, returns it if successful.
-
-// [CELADON-ADD] - CELADON_THE_VOICES
-
-/// Sets the vocal bark for the atom, using the bark's ID
-/atom/movable/proc/set_bark(id)
-	if(!id)
-		return FALSE
-	var/datum/bark/B = GLOB.bark_list[id]
-	if(!B)
-		return FALSE
-	vocal_bark = sound(initial(B.soundpath))
-	vocal_bark_id = id
-	return vocal_bark
-// [/CELADON-ADD]
 
 /* End language procs */
 /**

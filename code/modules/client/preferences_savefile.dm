@@ -5,7 +5,7 @@
 //	You do not need to raise this if you are adding new values that have sane defaults.
 //	Only raise this value when changing the meaning/format/name/layout of an existing value
 //	where you would want the updater procs below to run
-#define SAVEFILE_VERSION_MAX 43
+#define SAVEFILE_VERSION_MAX 43	// [CELADON-EDIT] - CELADON_THE_VOICES // ORIGINAL // #define SAVEFILE_VERSION_MAX 42
 
 /*
 SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Carn
@@ -94,8 +94,10 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 		toggles |= SOUND_RADIO
 
+	// [CELADON-ADD] - CELADON_THE_VOICES
 	if(current_version < 43) //Bitflag toggles don't set their defaults when they're added, always defaulting to off instead.
-		toggles |= SOUND_BARK
+		toggles |= SOUND_THE_VOICE
+	// [/CELADON-ADD]
 
 /datum/preferences/proc/update_character(current_version, savefile/S)
 	if(current_version < 39)
@@ -524,12 +526,6 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	READ_FILE(S["riol_body_markings_color"], 		features["riol_body_markings_color"])
 	READ_FILE(S["riol_tail_markings_color"], 		features["riol_tail_markings_color"])
 	// [/CELADON-ADD]
-	// [CELADON-ADD] - CELADON_THE_VOICES
-	READ_FILE(S["bark_id"], 						features["bark_id"])
-	READ_FILE(S["bark_speed"], 						features["bark_speed"])
-	READ_FILE(S["bark_pitch"], 						features["bark_pitch"])
-	READ_FILE(S["bark_variance"], 					features["bark_variance"])
-	// [/CELADON-ADD]
 
 	READ_FILE(S["equipped_gear"], equipped_gear)
 	if(config) //This should *probably* always be there, but just in case.
@@ -576,11 +572,13 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	//Flavor Text
 	S["feature_flavor_text"]		>> features["flavor_text"]
 
-	// Barks
-	// S["bark_id"] >> bark_id
-	// S["bark_speed"] >> bark_speed
-	// S["bark_pitch"] >> bark_pitch
-	// S["bark_variance"] >> bark_variance
+	// [CELADON-ADD] - CELADON_THE_VOICES
+	// Voices
+	S["the_voices_id"] >> the_voices_id
+	S["the_voices_speed"] >> the_voices_speed
+	S["the_voices_pitch"] >> the_voices_pitch
+	S["the_voices_variance"] >> the_voices_variance
+	// [/CELADON-ADD]
 
 	//try to fix any outdated data if necessary
 	//preference updating will handle saving the updated data for us.
@@ -726,11 +724,11 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	// [/CELADON-ADD]
 
 	// [CELADON-ADD] - CELADON_THE_VOICES
-	bark_id = sanitize_inlist(bark_id, GLOB.bark_list, pick(GLOB.bark_random_list))
-	var/datum/bark/bark_path = GLOB.bark_list[bark_id]
-	bark_speed = sanitize_num_clamp(bark_speed, initial(bark_path.minspeed), initial(bark_path.maxspeed), initial(bark_speed))
-	bark_pitch = sanitize_num_clamp(bark_pitch, initial(bark_path.minpitch), initial(bark_path.maxpitch), BARK_PITCH_RAND(gender))
-	bark_variance = sanitize_num_clamp(bark_variance, initial(bark_path.minvariance), initial(bark_path.maxvariance), BARK_VARIANCE_RAND)
+	the_voices_id = sanitize_inlist(the_voices_id, GLOB.the_voices_list, pick(GLOB.the_voices_random_list))
+	var/datum/the_voices/the_voices_path = GLOB.the_voices_list[the_voices_id]
+	the_voices_speed = sanitize_num_clamp(the_voices_speed, initial(the_voices_path.minspeed), initial(the_voices_path.maxspeed), initial(the_voices_speed))
+	the_voices_pitch = sanitize_num_clamp(the_voices_pitch, initial(the_voices_path.minpitch), initial(the_voices_path.maxpitch), THE_VOICES_PITCH_RAND(gender))
+	the_voices_variance = sanitize_num_clamp(the_voices_variance, initial(the_voices_path.minvariance), initial(the_voices_path.maxvariance), THE_VOICES_VARIANCE_RAND)
 	// [/CELADON-ADD]
 
 	all_quirks = SANITIZE_LIST(all_quirks)
@@ -849,17 +847,13 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["riol_body_markings_color"], 		features["riol_body_markings_color"])
 	WRITE_FILE(S["riol_tail_markings_color"], 		features["riol_tail_markings_color"])
 	// [/CELADON-ADD]
-	// [CELADON-ADD] - CELADON_THE_VOICES
-	WRITE_FILE(S["bark_id"], 						features["bark_id"])
-	WRITE_FILE(S["bark_speed"], 					features["bark_speed"])
-	WRITE_FILE(S["bark_pitch"], 					features["bark_pitch"])
-	WRITE_FILE(S["bark_variance"], 					features["bark_variance"])
-	// [/CELADON-ADD]
 
-	// WRITE_FILE(S["bark_id"], 						bark_id)
-	// WRITE_FILE(S["bark_speed"], 					bark_speed)
-	// WRITE_FILE(S["bark_pitch"], 					bark_pitch)
-	// WRITE_FILE(S["bark_variance"], 					bark_variance)
+	// [CELADON-ADD] - CELADON_THE_VOICES
+	WRITE_FILE(S["the_voices_id"], 						the_voices_id)
+	WRITE_FILE(S["the_voices_speed"], 					the_voices_speed)
+	WRITE_FILE(S["the_voices_pitch"], 					the_voices_pitch)
+	WRITE_FILE(S["the_voices_variance"], 					the_voices_variance)
+	// [/CELADON-ADD]
 
 	//Flavor text
 	WRITE_FILE(S["feature_flavor_text"]			, features["flavor_text"])

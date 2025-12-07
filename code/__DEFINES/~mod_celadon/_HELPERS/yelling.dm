@@ -1,3 +1,5 @@
+// А надо ли оно?
+// [CELADON-TEMP] - выяснить нужено ли оно
 /datum/yelling_wavefill
 	var/stop = FALSE
 	var/list/atom/collected

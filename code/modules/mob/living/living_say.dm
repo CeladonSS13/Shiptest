@@ -359,9 +359,11 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 			listening_movable.Hear(rendered, src, message_language, message, , spans, message_mods.Copy())
 	SEND_GLOBAL_SIGNAL(COMSIG_GLOB_LIVING_SAY_SPECIAL, src, message)
 
+	// [CELADON-ADD] - CELADON_THE_VOICES
 	var/is_yell = (say_test(message) == "2")
 	if(client && !eavesdrop_range && is_yell)	// Yell hook
 		listening |= process_yelling(listening, rendered, src, message_language, message, spans, message_mods, source)
+	// [/CELADON-ADD]
 
 	//speech bubble
 	var/list/speech_bubble_recipients = list()
@@ -375,49 +377,24 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	I.appearance_flags = APPEARANCE_UI_IGNORE_ALPHA
 	INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(flick_overlay_global), I, speech_bubble_recipients, 3 SECONDS)
 
-	//Listening gets trimmed here if a vocal bark's present. If anyone ever makes this proc return listening, make sure to instead initialize a copy of listening in here to avoid wonkiness
-	// if(SEND_SIGNAL(src, COMSIG_MOVABLE_QUEUE_BARK, listening, args) || vocal_bark || vocal_bark_id)
+	// [CELADON-ADD] - CELADON_THE_VOICES
+	//Listening gets trimmed here if a vocal the_voices's present. If anyone ever makes this proc return listening, make sure to instead initialize a copy of listening in here to avoid wonkiness
+	// if(SEND_SIGNAL(src, COMSIG_MOVABLE_QUEUE_THE_VOICES, listening, args) || vocal_the_voices || vocal_the_voices_id)
 	// 	for(var/mob/M in listening)
 	// 		if(!M.client)
 	// 			continue
-	// 		if(!(M.client.prefs.toggles & (1<<24)))  // Вместо SOUND_BARK ссучара
+	// 		if(!(M.client.prefs.toggles & (1<<24)))  // Вместо SOUND_THE_VOICE ссучара ЭТО МЕСТО ТРЕБУЕТ ВНИМАНИЕ
 	// 			listening -= M // ууу сука
-	if(SEND_SIGNAL(src, COMSIG_MOVABLE_QUEUE_BARK, listening, args) || vocal_bark || vocal_bark_id)    // Bark воспроизводится для всех слушателей
-		var/barks = min(round((LAZYLEN(message) / vocal_speed)) + 1, BARK_MAX_BARKS)
+	if(SEND_SIGNAL(src, COMSIG_MOVABLE_QUEUE_THE_VOICES, listening, args) || vocal_the_voices || vocal_the_voices_id) // Voice воспроизводится для всех слушателей
+		var/voices = min(round((LAZYLEN(message) / vocal_speed)) + 1, THE_VOICES_MAX_VOICES)
 		var/total_delay
-		vocal_current_bark = world.time
-		for(var/i in 1 to barks)
-			if(total_delay > BARK_MAX_TIME)
+		vocal_current_the_voices = world.time
+		for(var/i in 1 to voices)
+			if(total_delay > THE_VOICES_MAX_TIME)
 				break
-			addtimer(CALLBACK(src, TYPE_PROC_REF(/atom/movable, bark), listening, (message_range * (is_yell ? 4 : 1)), (vocal_volume * (is_yell ? 1.5 : 1)), BARK_DO_VARY(vocal_pitch, vocal_pitch_range), vocal_current_bark), total_delay)
-			total_delay += rand(DS2TICKS(vocal_speed / BARK_SPEED_BASELINE), DS2TICKS(vocal_speed / BARK_SPEED_BASELINE) + DS2TICKS((vocal_speed / BARK_SPEED_BASELINE) * (is_yell ? 0.5 : 1))) TICKS
-		to_chat(world, "DEBUG: Trying to bark! vocal_bark=[vocal_bark], vocal_bark_id=[vocal_bark_id], barks=[barks]")
-
-/atom/movable/proc/process_yelling(list/already_heard, rendered, atom/movable/speaker, datum/language/message_language, message, list/spans, message_mods, obj/source)
-	if(last_yell > (world.time - 10))
-		to_chat(src, "<span class='warning'>Your voice doesn't project as far as you try to yell in such quick succession.")		// yeah no, no spamming an expensive floodfill.
-		return
-	last_yell = world.time
-	var/list/overhearing = list()
-	var/list/overhearing_text = list()
-	overhearing = yelling_wavefill(src, yell_power)
-	if(!overhearing.len)
-		overhearing_text = "none"
-	else
-		for(var/mob/M as anything in overhearing)
-			overhearing_text += key_name(M)
-		overhearing_text = english_list(overhearing_text)
-	//log_say("YELL: [ismob(src)? key_name(src) : src] yelled [message] with overhearing mobs [overhearing_text]")
-	// overhearing = get_hearers_in_view(35, src) | get_hearers_in_range(5, src)
-	overhearing -= already_heard
-	if(!overhearing.len)
-		return
-	// to_chat(world, "DEBUG: overhearing [english_list(overhearing)]")
-	for(var/_AM in overhearing)
-		var/atom/movable/AM = _AM
-		AM.Hear(rendered, speaker, message_language, message, null, spans, message_mods, source)
-
-	return overhearing
+			addtimer(CALLBACK(src, TYPE_PROC_REF(/atom/movable, the_voices), listening, (message_range * (is_yell ? 4 : 1)), (vocal_volume * (is_yell ? 1.5 : 1)), THE_VOICES_DO_VARY(vocal_pitch, vocal_pitch_range), vocal_current_the_voices), total_delay)
+			total_delay += rand(DS2TICKS(vocal_speed / THE_VOICES_SPEED_BASELINE), DS2TICKS(vocal_speed / THE_VOICES_SPEED_BASELINE) + DS2TICKS((vocal_speed / THE_VOICES_SPEED_BASELINE) * (is_yell ? 0.5 : 1))) TICKS
+	// [/CELADON-ADD]
 
 /mob/proc/binarycheck()
 	return FALSE

@@ -100,8 +100,8 @@
 	data["announcements"] 	= C.prefs.toggles & SOUND_ANNOUNCEMENTS
 	data["endofround"] 		= C.prefs.toggles & SOUND_ENDOFROUND
 	data["jukebox"] 		= C.prefs.toggles & SOUND_JUKEBOX
-	// data["the_voices"] 		= C.prefs.toggles & SOUND_BARK
-	data["the_voices"] 		= C.prefs.toggles & (1<<24)  // Вместо SOUND_BARK
+	// data["the_voices"] 		= C.prefs.toggles & SOUND_THE_VOICE	// CELADON_THE_VOICES - тут нужно починить, возможность отрубить его в натсройках
+	data["the_voices"] 		= C.prefs.toggles & (1<<24)  // Вместо SOUND_THE_VOICE
 
 	return data
 
@@ -145,18 +145,8 @@
 		if("jukebox")
 			C.prefs.toggles ^= SOUND_JUKEBOX
 			usr.stop_sound_channel(CHANNEL_JUKEBOX)
-		if("the_voices")
-			to_chat(usr, "DEBUG: Before toggle - toggles=[C.prefs.toggles], SOUND_BARK=[SOUND_BARK]")
-			C.prefs.toggles ^= SOUND_BARK
-			to_chat(usr, "DEBUG: After toggle - toggles=[C.prefs.toggles]")
+		if("the_voices")		// CELADON_THE_VOICES - тут нужно починить, возможность отрубить его в натсройках. Идти через канал что ли? Как джукбокс сделан
+			C.prefs.toggles ^= SOUND_THE_VOICE
 
 	C.prefs.save_preferences()
 	. = TRUE
-
-/client/verb/test_enable_bark()
-    set name = "Enable Bark Sound"
-    set category = "Debug"
-
-    prefs.toggles |= SOUND_BARK
-    prefs.save_preferences()
-    to_chat(src, "Bark sound enabled! toggles=[prefs.toggles], SOUND_BARK=[SOUND_BARK], check=[prefs.toggles & SOUND_BARK]")

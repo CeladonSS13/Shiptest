@@ -699,16 +699,3 @@ GLOBAL_LIST_EMPTY(created_baseturf_lists)
 		if(turf_to_check.density || LinkBlockedWithAccess(turf_to_check, requester, ID))
 			continue
 		. += turf_to_check
-
-/turf/proc/get_yelling_resistance(power)
-	. = 0
-	// don't bother checking fulltile, we don't need accuracy
-	var/obj/window = locate(/obj/structure/window) in src
-	if(!window)
-		window = locate(/obj/machinery/door/window) in src
-	if(window)
-		. += 4		// windows are minimally resistant
-	// if there's more than one someone fucked up as that shouldn't happen
-	var/obj/machinery/door/D = locate() in src
-	if(D?.density)
-		. += D.opacity? 29 : 19			// glass doors are slightly more resistant to screaming

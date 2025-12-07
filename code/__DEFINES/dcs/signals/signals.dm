@@ -831,6 +831,3 @@
 #define COMSIG_MOVETYPE_FLAG_ENABLED "movetype_flag_enabled"
 /// From base of datum/element/movetype_handler/on_movement_type_trait_loss: (flag)
 #define COMSIG_MOVETYPE_FLAG_DISABLED "movetype_flag_disabled"
-
-#define COMSIG_MOVABLE_BARK "movable_bark"						//from base of atom/movable/proc/bark(): (list/hearers, distance, volume, pitch)
-#define COMSIG_MOVABLE_QUEUE_BARK "movable_queue_bark"			//from base of atom/movable/proc/send_speech(): (list/hearers, message, range, atom/movable/source, bubble_type, list/spans, datum/language/message_language, message_mode)

@@ -140,10 +140,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							"elzu_horns" = "None",
 							"elzu_tail" = "None",
 							"flavor_text" = "",
-							"barksound" = "mutedc3",
-							"barkspeed" = "4",
-							"barkpitch" = "2",
-							"barkvary" = "0",
+							"thevoicessound" = "mutedc3",	// [CELADON-ADD] - CELADON_THE_VOICES
+							"thevoicesspeed" = "4",
+							"thevoicespitch" = "2",
+							"thevoicesvary" = "0",	// [/CELADON-ADD]
 						)
 	var/height_filter = "Normal"
 	var/list/randomise = list(
@@ -199,7 +199,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/static/list/language_level_costs = list(LANGUAGE_UNKNOWN = 0, LANGUAGE_RECOGNIZED = 1, LANGUAGE_FAMILIAR = 2, LANGUAGE_FLUENT = 3)
 
 	// 0 = character settings, 1 = game preferences
-	var/current_tab = CHAR_SETUP_TAB
+	var/current_tab = CHAR_SETUP_TAB	// [CELADON-EDIT] - CELADON_THE_VOICES - Упрощаем понимание кода // ORIGINAL // var/current_tab = 0
 
 	var/show_gear = TRUE
 	var/show_loadout = TRUE
@@ -261,13 +261,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/hearted
 	///
 	var/hearted_until
+
 	// [CELADON-ADD] - CELADON_THE_VOICES
-	// Vocal bark prefs
-	var/bark_id = "mutedc3"
-	var/bark_speed = 4
-	var/bark_pitch = 1
-	var/bark_variance = 0.2
-	COOLDOWN_DECLARE(bark_previewing)
+	// Vocal voice prefs
+	var/the_voices_id = "mutedc3"
+	var/the_voices_speed = 4
+	var/the_voices_pitch = 1
+	var/the_voices_variance = 0.2
+	COOLDOWN_DECLARE(the_voices_previewing)
 	// [/CELADON-ADD]
 
 
@@ -314,6 +315,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	update_preview_icon(show_gear, show_loadout)
 	var/list/dat = list("<center>")
 
+	// [CELADON-EDIT] - CELADON_THE_VOICES - Упрощаем понимание кода
+	// dat += "<a href='byond://?_src_=prefs;preference=tab;tab=0' [current_tab == 0 ? "class='linkOn'" : ""]>Character Setup</a>"
+	// dat += "<a href='byond://?_src_=prefs;preference=tab;tab=1' [current_tab == 1 ? "class='linkOn'" : ""]>Character Appearance</a>"
+	// dat += "<a href='byond://?_src_=prefs;preference=tab;tab=2' [current_tab == 2 ? "class='linkOn'" : ""]>Gear</a>"
+	// dat += "<a href='byond://?_src_=prefs;preference=tab;tab=3' [current_tab == 3 ? "class='linkOn'" : ""]>Game Preferences</a>"
+	// dat += "<a href='byond://?_src_=prefs;preference=tab;tab=4' [current_tab == 4 ? "class='linkOn'" : ""]>OOC Preferences</a>"
+	// dat += "<a href='byond://?_src_=prefs;preference=tab;tab=5' [current_tab == 5 ? "class='linkOn'" : ""]>Custom Keybindings</a>"	// ORIGINAL
 	dat += "<a href='byond://?_src_=prefs;preference=character_tab;tab=[CHAR_SETUP_TAB]' [current_tab == CHAR_SETUP_TAB ? "class='linkOn'" : ""]>Character Setup</a>"
 	dat += "<a href='byond://?_src_=prefs;preference=character_tab;tab=[CHAR_APPEARANCE_TAB]' [current_tab == CHAR_APPEARANCE_TAB ? "class='linkOn'" : ""]>Character Appearance</a>"
 	dat += "<a href='byond://?_src_=prefs;preference=character_tab;tab=[CHAR_LOADOUT_TAB]' [current_tab == CHAR_LOADOUT_TAB ? "class='linkOn'" : ""]>Gear</a>"
@@ -321,6 +329,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	dat += "<a href='byond://?_src_=prefs;preference=character_tab;tab=[CHAR_OOC_TAB]' [current_tab == CHAR_OOC_TAB ? "class='linkOn'" : ""]>OOC Preferences</a>"
 	dat += "<a href='byond://?_src_=prefs;preference=character_tab;tab=[CHAR_KEYBINDINGS_TAB]' [current_tab == CHAR_KEYBINDINGS_TAB ? "class='linkOn'" : ""]>Custom Keybindings</a>"
 	dat += "<a href='byond://?_src_=prefs;preference=character_tab;tab=[CHAR_SPEECH_TAB]' [current_tab == CHAR_SPEECH_TAB ? "class='linkOn'" : ""]>Speech</a>"
+	// [/CELADON-EDIT]
 
 	if(!path)
 		dat += "<div class='notice'>Please create an account to save your preferences</div>"
@@ -329,7 +338,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	dat += "<HR>"
 
 	switch(current_tab)
-		if(CHAR_SETUP_TAB) // Character Setup
+		if(CHAR_SETUP_TAB) // Character Setup // [CELADON-EDIT] - CELADON_THE_VOICES - Упрощаем понимание кода // ORIGINAL // if (0)
 			if(path)
 				var/savefile/S = new /savefile(path)
 				if(S)
@@ -430,7 +439,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			dat += "<br><b>Outerwear Style:</b><BR><a href ='?_src_=prefs;preference=exo;task=input'>[exowear]</a>"
 
-		if(CHAR_APPEARANCE_TAB) //Character Appearance
+		if(CHAR_APPEARANCE_TAB) //Character Appearance // [CELADON-EDIT] - CELADON_THE_VOICES - Упрощаем понимание кода // ORIGINAL // if(1)
 			if(path)
 				var/savefile/S = new /savefile(path)
 				if(S)
@@ -1229,7 +1238,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</table><br>"
 					//[/CELADON - EDIT]
 
-		if(CHAR_LOADOUT_TAB) //Loadout
+		if(CHAR_LOADOUT_TAB) //Loadout // [CELADON-EDIT] - CELADON_THE_VOICES - Упрощаем понимание кода // ORIGINAL // if(2)
 			if(path)
 				var/savefile/S = new /savefile(path)
 				if(S)
@@ -1367,7 +1376,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "</table>"
 			// [/CELADON-EDIT]
 
-		if(CHAR_GAMEPREFERENCES_TAB) // Game Preferences
+		if(CHAR_GAMEPREFERENCES_TAB) // Game Preferences // [CELADON-EDIT] - CELADON_THE_VOICES - Упрощаем понимание кода // ORIGINAL // if (3)
 			dat += "<table><tr><td width='340px' height='300px' valign='top'>"
 			dat += "<h2>General Settings</h2>"
 			dat += "<b>UI Style:</b> <a href='byond://?_src_=prefs;task=input;preference=ui'>[UI_style]</a><br>"
@@ -1427,8 +1436,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Income Updates:</b> <a href='byond://?_src_=prefs;preference=income_pings'>[(chat_toggles & CHAT_BANKCARD) ? "Allowed" : "Muted"]</a><br>"
 			dat += "<br>"
 
-			dat += "<b>Sound Bark:</b> <a href='byond://?_src_=prefs;preference=sound_bark'>[(toggles & SOUND_BARK) ? "ON THE VOICES" : "OFF THE VOICES"]</a><br>"
+			// [CELADON-ADD] - CELADON_THE_VOICES - Тут есть проблема, не срабатывают настройки
+			dat += "<b>Sound Voice:</b> <a href='byond://?_src_=prefs;preference=sound_the_voices'>[(toggles & SOUND_THE_VOICE) ? "ON THE VOICES" : "OFF THE VOICES"]</a><br>"
 			dat += "<br>"
+			// [/CELADON-ADD]
 
 			dat += "<b>FPS:</b> <a href='byond://?_src_=prefs;preference=clientfps;task=input'>[clientfps]</a><br>"
 
@@ -1494,7 +1505,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<br>"
 			dat += "<b>Midround Antagonist:</b> <a href='byond://?_src_=prefs;preference=allow_midround_antag'>[(toggles & MIDROUND_ANTAG) ? "Enabled" : "Disabled"]</a><br>"
 			dat += "</td></tr></table>"
-		if(CHAR_OOC_TAB) //OOC Preferences
+		if(CHAR_OOC_TAB) //OOC Preferences // [CELADON-EDIT] - CELADON_THE_VOICES - Упрощаем понимание кода // ORIGINAL // if(4)
 			dat += "<table><tr><td width='340px' height='300px' valign='top'>"
 			dat += "<h2>OOC Settings</h2>"
 			dat += "<b>Window Flashing:</b> <a href='byond://?_src_=prefs;preference=winflash'>[(windowflashing) ? "Enabled":"Disabled"]</a><br>"
@@ -1576,7 +1587,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "</td>"
 			dat += "</tr></table>"
-		if(CHAR_KEYBINDINGS_TAB) // Custom keybindings
+		if(CHAR_KEYBINDINGS_TAB) // Custom keybindings // [CELADON-EDIT] - CELADON_THE_VOICES - Упрощаем понимание кода // ORIGINAL // if(5)
 			// Create an inverted list of keybindings -> key
 			var/list/user_binds = list()
 			for (var/key in key_bindings)
@@ -1617,30 +1628,20 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<br><br>"
 			dat += "<a href ='?_src_=prefs;preference=keybindings_reset'>\[Reset to default\]</a>"
 			dat += "</body>"
+		// [CELADON-ADD] - CELADON_THE_VOICES - Упрощаем понимание кода
 		if(CHAR_SPEECH_TAB)	// The voices
-			// dat += "<table><tr><td width='340px' height='300px' valign='top'>"
-			// dat += "<h2>Speech preferences</h2>"
-			// dat += "<b>Custom Speech Verb:</b><BR>"
-			// dat += "<a style='display:block;width:100px' href='?_src_=prefs;preference=speech_verb;task=input'>[custom_speech_verb]</a><BR>"
-			// dat += "<b>Custom Tongue:</b><BR>"
-			// dat += "<a style='display:block;width:100px' href='?_src_=prefs;preference=tongue;task=input'>[custom_tongue]</a><BR>"
-			// //SANDSTORM EDIT - additional language + runechat color
-			// dat += "<b>Additional Language</b><br>"
-			// dat += "<a href='?_src_=prefs;preference=language;task=menu'>[english_list(language, "None")]</a></center><br>"
-			// dat += "<b>Custom runechat color:</b> <a href='?_src_=prefs;preference=enable_personal_chat_color'>[enable_personal_chat_color ? "Enabled" : "Disabled"]</a><br> [enable_personal_chat_color ? "<span style='border: 1px solid #161616; background-color: [personal_chat_color];'><font color='[color_hex2num(personal_chat_color) < 200 ? "FFFFFF" : "000000"]'>[personal_chat_color]</font></span> <a href='?_src_=prefs;preference=personal_chat_color;task=input'>Change</a>" : ""]<br>"
-			// dat += "</td>"
-			// //END OF SANDSTORM EDIT
 			dat += "<td width='340px' height='300px' valign='top'>"
-			dat += "<h2>Vocal Bark preferences</h2>"
-			var/datum/bark/B = GLOB.bark_list[bark_id]
-			dat += "<b>Vocal Bark Sound:</b><BR>"
-			dat += "<a style='display:block;width:200px' href='?_src_=prefs;preference=barksound;task=input'>[B ? initial(B.name) : "INVALID"]</a><BR>"
-			dat += "<b>Vocal Bark Speed:</b> <a href='byond://?_src_=prefs;preference=barkspeed;task=input'>[bark_speed]</a><BR>"
-			dat += "<b>Vocal Bark Pitch:</b> <a href='byond://?_src_=prefs;preference=barkpitch;task=input'>[bark_pitch]</a><BR>"
-			dat += "<b>Vocal Bark Variance:</b> <a href='byond://?_src_=prefs;preference=barkvary;task=input'>[bark_variance]</a><BR>"
-			dat += "<BR><a href='byond://?_src_=prefs;preference=barkpreview'>Preview Bark</a><BR>"
+			dat += "<h2>Vocal Voice preferences</h2>"
+			var/datum/the_voices/B = GLOB.the_voices_list[the_voices_id]
+			dat += "<b>Vocal Voice Sound:</b><BR>"
+			dat += "<a style='display:block;width:200px' href='?_src_=prefs;preference=thevoicessound;task=input'>[B ? initial(B.name) : "INVALID"]</a><BR>"
+			dat += "<b>Vocal Voice Speed:</b> <a href='byond://?_src_=prefs;preference=thevoicesspeed;task=input'>[the_voices_speed]</a><BR>"
+			dat += "<b>Vocal Voice Pitch:</b> <a href='byond://?_src_=prefs;preference=thevoicespitch;task=input'>[the_voices_pitch]</a><BR>"
+			dat += "<b>Vocal Voice Variance:</b> <a href='byond://?_src_=prefs;preference=thevoicesvary;task=input'>[the_voices_variance]</a><BR>"
+			dat += "<BR><a href='byond://?_src_=prefs;preference=thevoicespreview'>Preview Voice</a><BR>"
 			dat += "</td>"
 			dat += "</tr></table>"
+		// [/CELADON-ADD]
 	dat += "<hr><center>"
 
 	if(!IsGuestKey(user.key))
@@ -2659,42 +2660,43 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					var/desiredlength = input(user, "Choose the max character length of shown Runechat messages. Valid range is 1 to [CHAT_MESSAGE_MAX_LENGTH] (default: [initial(max_chat_length)]))", "Character Preference", max_chat_length)  as null|num
 					if (!isnull(desiredlength))
 						max_chat_length = clamp(desiredlength, 1, CHAT_MESSAGE_MAX_LENGTH)
-
-				if("barksound")
-					var/list/woof_woof = list()
-					for(var/path in GLOB.bark_list)
-						var/datum/bark/B = GLOB.bark_list[path]
+				// [CELADON-ADD] - CELADON_THE_VOICES
+				if("thevoicessound")
+					var/list/list_voices = list()
+					for(var/path in GLOB.the_voices_list)
+						var/datum/the_voices/B = GLOB.the_voices_list[path]
 						if(initial(B.ignore))
 							continue
 						if(initial(B.ckeys_allowed))
 							var/list/allowed = initial(B.ckeys_allowed)
 							if(!allowed.Find(user.client.ckey))
 								continue
-						woof_woof[initial(B.name)] = initial(B.id)
-					var/new_bork = input(user, "Choose your desired vocal bark:", "Character Preference") as null|anything in woof_woof
-					if(new_bork)
-						bark_id = woof_woof[new_bork]
-						var/datum/bark/B = GLOB.bark_list[bark_id] //Now we need sanitization to take into account bark-specific min/max values
-						bark_speed = round(clamp(bark_speed, initial(B.minspeed), initial(B.maxspeed)), 1)
-						bark_pitch = clamp(bark_pitch, initial(B.minpitch), initial(B.maxpitch))
-						bark_variance = clamp(bark_variance, initial(B.minvariance), initial(B.maxvariance))
-				if("barkspeed")
-					var/datum/bark/B = GLOB.bark_list[bark_id]
-					var/borkset = input(user, "Choose your desired bark speed (Higher is slower, lower is faster). Min: [initial(B.minspeed)]. Max: [initial(B.maxspeed)]", "Character Preference") as num|null
-					if(borkset)
-						bark_speed = round(clamp(borkset, initial(B.minspeed), initial(B.maxspeed)), 1)
+						list_voices[initial(B.name)] = initial(B.id)
+					var/new_voice = input(user, "Choose your desired vocal the voices:", "Character Preference") as null|anything in list_voices
+					if(new_voice)
+						the_voices_id = list_voices[new_voice]
+						var/datum/the_voices/B = GLOB.the_voices_list[the_voices_id] //Now we need sanitization to take into account the_voices-specific min/max values
+						the_voices_speed = round(clamp(the_voices_speed, initial(B.minspeed), initial(B.maxspeed)), 1)
+						the_voices_pitch = clamp(the_voices_pitch, initial(B.minpitch), initial(B.maxpitch))
+						the_voices_variance = clamp(the_voices_variance, initial(B.minvariance), initial(B.maxvariance))
+				if("thevoicesspeed")
+					var/datum/the_voices/B = GLOB.the_voices_list[the_voices_id]
+					var/voiceset = input(user, "Choose your desired the voices speed (Higher is slower, lower is faster). Min: [initial(B.minspeed)]. Max: [initial(B.maxspeed)]", "Character Preference") as num|null
+					if(voiceset)
+						the_voices_speed = round(clamp(voiceset, initial(B.minspeed), initial(B.maxspeed)), 1)
 
-				if("barkpitch")
-					var/datum/bark/B = GLOB.bark_list[bark_id]
-					var/borkset = input(user, "Choose your desired baseline bark pitch. Min: [initial(B.minpitch)]. Max: [initial(B.maxpitch)]", "Character Preference") as num|null
-					if(borkset)
-						bark_pitch = clamp(borkset, initial(B.minpitch), initial(B.maxpitch))
+				if("thevoicespitch")
+					var/datum/the_voices/B = GLOB.the_voices_list[the_voices_id]
+					var/voiceset = input(user, "Choose your desired baseline the voices pitch. Min: [initial(B.minpitch)]. Max: [initial(B.maxpitch)]", "Character Preference") as num|null
+					if(voiceset)
+						the_voices_pitch = clamp(voiceset, initial(B.minpitch), initial(B.maxpitch))
 
-				if("barkvary")
-					var/datum/bark/B = GLOB.bark_list[bark_id]
-					var/borkset = input(user, "Choose your desired baseline bark pitch. Min: [initial(B.minvariance)]. Max: [initial(B.maxvariance)]", "Character Preference") as num|null
-					if(borkset)
-						bark_variance = clamp(borkset, initial(B.minvariance), initial(B.maxvariance))
+				if("thevoicesvary")
+					var/datum/the_voices/B = GLOB.the_voices_list[the_voices_id]
+					var/voiceset = input(user, "Choose your desired baseline the voices pitch. Min: [initial(B.minvariance)]. Max: [initial(B.maxvariance)]", "Character Preference") as num|null
+					if(voiceset)
+						the_voices_variance = clamp(voiceset, initial(B.minvariance), initial(B.maxvariance))
+				// [/CELADON-ADD]
 		else
 			switch(href_list["preference"])
 				if("showgear")
@@ -2888,6 +2890,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if("endofround_sounds")
 					toggles ^= SOUND_ENDOFROUND
 
+				// [CELADON-ADD] - CELADON_THE_VOICES - От порядка зависит в каком месте покажется настройка
+				if("sound_the_voices")
+					toggles ^= SOUND_THE_VOICE
+				// [/CELADON-ADD]
+
 				if("ghost_ears")
 					chat_toggles ^= CHAT_GHOSTEARS
 
@@ -2899,9 +2906,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				if("ghost_radio")
 					chat_toggles ^= CHAT_GHOSTRADIO
-
-				if("sound_bark")
-					toggles ^= SOUND_BARK
 
 				if("ghost_pda")
 					chat_toggles ^= CHAT_GHOSTPDA
@@ -2990,22 +2994,24 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							scaling_method = SCALING_METHOD_NORMAL
 					user.client.view_size.setZoomMode()
 
-				if("barkpreview")
+				// [CELADON-ADD] - CELADON_THE_VOICES
+				if("thevoicespreview")
 					if(SSticker.current_state == GAME_STATE_STARTUP) //Timers don't tick at all during game startup, so let's just give an error message
-						to_chat(user, "<span class='warning'>Bark previews can't play during initialization!</span>")
+						to_chat(user, "<span class='warning'>Voice previews can't play during initialization!</span>")
 						return
-					if(!COOLDOWN_FINISHED(src, bark_previewing))
+					if(!COOLDOWN_FINISHED(src, the_voices_previewing))
 						return
 					if(!parent || !parent.mob)
 						return
-					COOLDOWN_START(src, bark_previewing, (5 SECONDS))
-					var/atom/movable/barkbox = new(get_turf(parent.mob))
-					barkbox.set_bark(bark_id)
+					COOLDOWN_START(src, the_voices_previewing, (5 SECONDS))
+					var/atom/movable/voicebox = new(get_turf(parent.mob))
+					voicebox.set_the_voices(the_voices_id)
 					var/total_delay
-					for(var/i in 1 to (round((32 / bark_speed)) + 1))
-						addtimer(CALLBACK(barkbox, /atom/movable/proc/bark, list(parent.mob), 7, 70, rand((bark_pitch * 100), (bark_pitch*100) + (bark_variance*100)) / 100), total_delay)
-						total_delay += rand(DS2TICKS(bark_speed/4), DS2TICKS(bark_speed/4) + DS2TICKS(bark_speed/4)) TICKS
-					QDEL_IN(barkbox, total_delay)
+					for(var/i in 1 to (round((32 / the_voices_speed)) + 1))
+						addtimer(CALLBACK(voicebox, /atom/movable/proc/the_voices, list(parent.mob), 7, 70, rand((the_voices_pitch * 100), (the_voices_pitch*100) + (the_voices_variance*100)) / 100), total_delay)
+						total_delay += rand(DS2TICKS(the_voices_speed/4), DS2TICKS(the_voices_speed/4) + DS2TICKS(the_voices_speed/4)) TICKS
+					QDEL_IN(voicebox, total_delay)
+				// [/CELADON-ADD]
 
 				if("save")
 					save_preferences()
@@ -3021,10 +3027,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						real_name = random_unique_name(gender)
 						save_character()
 
-				if("character_tab")
+				if("character_tab") // [CELADON-EDIT] - CELADON_THE_VOICES - Улучшаем понимание кода // ORIGINAL // if("tab")
 					if (href_list["tab"])
 						current_tab = text2num(href_list["tab"])
-						if(current_tab == CHAR_LOADOUT_TAB)
+						if(current_tab == CHAR_LOADOUT_TAB) // [CELADON-EDIT] - CELADON_THE_VOICES - Улучшаем понимание кода // ORIGINAL // if(current_tab == 2)
 							show_loadout = TRUE
 
 				if("clear_heart")
@@ -3079,12 +3085,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.skin_tone_tajara = skin_tone_tajara
 	// [CELADON-ADD] - CELADON_RIOL
 	character.skin_tone_riol = skin_tone_riol
-	// [/CELADON-ADD]
 	// [CELADON-ADD] - CELADON_THE_VOICES
-	character.set_bark(bark_id)
-	character.vocal_speed = bark_speed
-	character.vocal_pitch = bark_pitch
-	character.vocal_pitch_range = bark_variance
+	character.set_the_voices(the_voices_id)
+	character.vocal_speed = the_voices_speed
+	character.vocal_pitch = the_voices_pitch
+	character.vocal_pitch_range = the_voices_variance
 	// [/CELADON-ADD]
 	character.underwear = underwear
 	character.underwear_color = underwear_color
