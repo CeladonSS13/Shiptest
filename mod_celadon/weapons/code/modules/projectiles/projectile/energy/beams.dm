@@ -200,19 +200,9 @@
 	speed = 0.5 //actual smg speed
 	armour_penetration = -15
 
+// MARK: Ion balance
 
-/*
-/obj/projectile/beam/laser/assault/sharplite
-	speed = 0.25
-
-/obj/projectile/beam/weak/sharplite
-	speed = 0.25
-
-/obj/projectile/beam/disabler/sharplite
-	speed = 0.25
-
-/obj/projectile/beam/disabler/weak/negative_ap/sharplite
-	speed = 0.25
-*/
-// Зачем и почему, а главное зачем НАМ ШАРПЛАЙТОВ МЕНЯТЬ??
-// Для невнятливых, строки сверху баффают скорость новым пушкам шарплайтов
+/obj/projectile/ion
+	damage = 10
+	damage_type = BURN
+	nodamage = FALSE

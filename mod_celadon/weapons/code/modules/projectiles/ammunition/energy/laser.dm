@@ -53,3 +53,7 @@
 
 /obj/item/ammo_casing/energy/laser/hos
 	e_cost = 500
+
+// Баланс Ионочек
+/obj/item/ammo_casing/energy/ion
+	delay = 10
