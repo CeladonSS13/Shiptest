@@ -2783,6 +2783,12 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/plating,
 /area/ship/engineering/engines/starboard)
+"qP" = (
+/obj/structure/sign/number/random{
+	pixel_y = -8
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/storage/equip)
 "qW" = (
 /obj/structure/catwalk,
 /obj/effect/decal/fakelattice{
@@ -4747,7 +4753,7 @@
 	},
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plasteel/tech/grid,
-/area/ship/security/armory)
+/area/ship/storage/equip)
 "BK" = (
 /obj/effect/turf_decal/siding/thinplating/corner{
 	dir = 8
@@ -5429,7 +5435,7 @@
 	pixel_x = 7
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ship/security/armory)
+/area/ship/storage/equip)
 "FX" = (
 /turf/open/floor/plasteel/mono,
 /area/ship/hangar)
@@ -6247,7 +6253,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/radio/intercom/directional/south,
 /turf/open/floor/plasteel/tech/grid,
-/area/ship/security/armory)
+/area/ship/storage/equip)
 "Kk" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 5
@@ -8679,8 +8685,8 @@
 	faction = list("plants","turret");
 	speak_chance = 2;
 	speak = list("Морзе очень любил с мужиками в баню ходить. Бывало, сидит и наблюдает, как люди моются. Он и азбуку свою создал так: 'Один длинный, два коротких, три коротких, один длинный...'","Надпись на женской бане: Вход с яйцами запрещен!","Моется неорганик в бане. Вдруг у него падает мыло. Он нагибается за ним... Сообщение системы: Обнаружено подключение нового устройства.","Если вы не можете решить, где отдохнуть с друзьями — снимите сауну и не парьтесь.");
-	emote_see = list("asserts its cleance", "evaporates all the dirt from you");
-	butcher_results = list(/obj/item/food/grown/nettle/death = 1);
+	emote_see = list("asserts its cleance","evaporates all the dirt from you");
+	butcher_results = list(/obj/item/food/grown/nettle/death=1);
 	icon_living = "nettle";
 	icon_dead = "nettle";
 	melee_damage_lower = 0;
@@ -10536,11 +10542,11 @@ vC
 rx
 jY
 hD
-GN
+nZ
 BJ
 FO
 Kh
-Sz
+qP
 re
 re
 "}
