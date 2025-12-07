@@ -245,3 +245,36 @@
 	r_pocket = /obj/item/t_scanner
 
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/cheap=1)
+
+
+// MARK: Пилот
+
+/datum/outfit/job/cel/inteq/pilot
+	name = "IQ - Shuttle Pilot"
+	jobtype = /datum/job/mining
+	job_icon = "securityofficer"
+	id_assignment = "Shuttle Pilot"
+
+	id = /obj/item/card/id/cel/inteq/master_at_arms // Офицер
+	head = /obj/item/clothing/head/soft/inteq
+	glasses = /obj/item/clothing/glasses/sunglasses/big
+	mask = /obj/item/clothing/mask/balaclava/inteq
+	belt = /obj/item/storage/belt/security/webbing/inteq/alt
+	suit = /obj/item/clothing/suit/hooded/wintercoat/security/inteq/alt
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security/inteq
+	gloves = /obj/item/clothing/gloves/combat
+	ears = /obj/item/radio/headset/inteq/alt
+	shoes = /obj/item/clothing/shoes/combat
+
+/datum/outfit/job/cel/inteq/pilot/empty
+	name = "IRMG - Shuttle Pilot (Naked)"
+	jobtype = /datum/job/mining
+	job_icon = "securityofficer"
+	id_assignment = "Shuttle Pilot"
+
+	head = null
+	glasses = null
+	mask = null
+	belt = null
+	suit = null
+	gloves = null
