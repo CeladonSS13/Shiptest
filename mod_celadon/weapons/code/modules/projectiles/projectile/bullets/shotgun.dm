@@ -4,8 +4,8 @@
 	name = "buckshot"
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
 	icon_state = "pellet"
-	damage = 15
-	armour_penetration = -35
+	damage = 17
+	armour_penetration = -15
 
 /obj/projectile/bullet/slug/a410
 	name = "slug"
