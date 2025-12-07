@@ -1,5 +1,4 @@
-
-// де факто это вот этот объект/obj/item/gun/energy/laser/retro
+// де факто это вот этот объект /obj/item/gun/energy/laser/retro
 /obj/item/gun/energy/laser
 	name = "SL L-104 laser gun"
 	desc = "A basic energy-based laser gun that fires concentrated beams of light which pass through glass and thin metal."

@@ -63,8 +63,6 @@ NO_MAG_GUN_HELPER(automatic/assault/saiga)
 	righthand_file = 'icons/mob/inhands/weapons/64x_guns_right.dmi'
 	inhand_x_dimension = 64
 	inhand_y_dimension = 64
-	// Изменил скорострельность из-за ПРа https://github.com/CeladonSS13/Shiptest/pull/861
-	//fire_delay = 0.5 SECONDS
 	fire_delay = 5
 	default_ammo_type = /obj/item/ammo_box/magazine/internal/shot/com
 	allowed_ammo_types = list(

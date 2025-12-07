@@ -21,7 +21,7 @@ ID мода: CELADON_WEAPONS, MODPACK_CELADON_RETURN_EGUN, CELADON_RETURN_COMBAT
 
 ### Описание мода
 
-Этот мод меняет баланс пушекю
+Этот мод меняет баланс пушек
 Этот мод добавляет новые пушки и патроны.
 Этот мод возвращает старые еганы и лазеры.
 Этот мод возвращает вырезанный контент, а именно комбат дробовик обратно в билд, и чутка меняет глушитель.
@@ -87,7 +87,7 @@ ID мода: CELADON_WEAPONS, MODPACK_CELADON_RETURN_EGUN, CELADON_RETURN_COMBAT
 
 ### Авторы:
 
-Mirag1993, Faduty, Overteh, KOCMOHABT, MrCat15352
+Mirag1993, Faduty, Overteh, KOCMOHABT
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.

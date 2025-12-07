@@ -1,7 +1,6 @@
 // Баланс ионок. Снаряд находится в mod_celadon\weapons\code\modules\projectiles\projectile\energy\beams.dm
 /obj/item/gun/energy/ionrifle
 	w_class = WEIGHT_CLASS_BULKY
-	// mag_size = MAG_SIZE_MEDIUM // CELADON_ТРЕБУЕТСЯ_АДАПТАЦИЯ - размер просто выпилили
 
 // Мьелниз наделал эти изменения.
 // https://github.com/CeladonSS13/Shiptest/pull/845
