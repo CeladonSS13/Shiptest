@@ -76,7 +76,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/backpack = DBACKPACK			//Type of backpack
 	var/jumpsuit_style = PREF_SUIT		//suit/skirt
 	var/exowear = PREF_EXOWEAR			//exowear
-	var/wallet = PREF_WALLET			//wallet
 	var/hairstyle = "Bald"				//Hair type
 	var/hair_color = "000"				//Hair color
 	var/facial_hairstyle = "Shaved"		//Face hair type
