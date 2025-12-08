@@ -11,6 +11,8 @@
 
 /datum/export/material/uranium
 	cost = 20
+	sell_floor = 5
+	elasticity_coeff = 0.01
 	material_id = /datum/material/uranium
 	unit_name = "cm3 of uranium"
 

@@ -16,7 +16,7 @@ MARK: NT-SL
 	name = "NT-SL L-204 laser gun"
 	desc = "Basic energy-based laser gun that fires concentrated beams of light which pass through glass and thin metal. Produced by Nanotrasen-Sharplite."
 	cost = 1000
-	contains = list(/obj/item/storage/guncase/energy/laser_old)
+	contains = list(/obj/item/storage/guncase/energy/laser)
 	crate_name = "laser crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/energy/disabler
@@ -52,7 +52,7 @@ MARK: NT-SL
 	name = "NT-SL 'E-SG 500 Second Edition' energy shotgun"
 	desc = "Contains an energy-based shotgun equipped with dual kill/disable modes, ideal for short range. The on-board computer is notoriously unreliable. For NT employee use only."
 	cost = 3000
-	contains = list(/obj/item/storage/guncase/energy/ultima_old)
+	contains = list(/obj/item/gun/energy/e_gun/e_old/iot)
 	crate_name = "shotgun crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/heavylaser
@@ -97,11 +97,11 @@ MARK: NT-SL
 /*
 MARK: VI
 */
-/datum/supply_pack/faction/nanotrasen/gun/commander
-	name = "VI 'Commander' handgun"
-	desc = "Contains a double stacked Commander pistol, produced by Nanotrasen along with Vigilitas Interstellar and is chambered in 9x18mm."
+/datum/supply_pack/faction/nanotrasen/gun/challenger
+	name = "VI 'Challenger' handgun"
+	desc = "Contains a Challenger pistol, produced by Nanotrasen along with Vigilitas Interstellar and is chambered in 9x18mm."
 	cost = 750
-	contains = list(/obj/item/storage/guncase/pistol/commander_old)
+	contains = list(/obj/item/storage/guncase/pistol/commander)
 
 /datum/supply_pack/faction/nanotrasen/gun/saber
 	name = "VI Saber SMG"

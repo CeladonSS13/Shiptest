@@ -120,7 +120,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "cF" = (
-/obj/structure/transit_tube/station/reverse/flipped{
+/obj/structure/transit_tube/station/dispenser/reverse{
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -631,7 +631,9 @@
 /turf/open/floor/engine,
 /area/ship/bridge)
 "tn" = (
-/obj/structure/transit_tube/station/reverse/flipped,
+/obj/structure/transit_tube/station/dispenser{
+	dir = 1
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "to" = (
@@ -1029,6 +1031,9 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
+"IX" = (
+/turf/open/floor/plasteel/grimy,
+/area/ship/external/dark)
 "Jg" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
@@ -1990,7 +1995,7 @@ BD
 dU
 dU
 dU
-dU
+IX
 dU
 ih
 Vs
@@ -2032,7 +2037,7 @@ BD
 BD
 dU
 dU
-dU
+IX
 dU
 ih
 Vs
@@ -2074,7 +2079,7 @@ BD
 BD
 dU
 dU
-dU
+IX
 dU
 ih
 Vs
@@ -2116,7 +2121,7 @@ BD
 BD
 BD
 dU
-dU
+IX
 dU
 ih
 Vs
@@ -2158,7 +2163,7 @@ BD
 BD
 BD
 dU
-dU
+IX
 dU
 ih
 aS

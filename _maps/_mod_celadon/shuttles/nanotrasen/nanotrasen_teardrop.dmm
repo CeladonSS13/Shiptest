@@ -111,7 +111,6 @@
 /obj/item/radio/headset/heads/captain/alt,
 /obj/item/tank/jetpack/suit,
 /obj/item/clothing/gloves/combat,
-/obj/item/stock_parts/cell/gun/upgraded,
 /obj/item/clothing/glasses/hud/security/sunglasses,
 /obj/item/megaphone/command,
 /obj/item/binoculars,
@@ -120,6 +119,8 @@
 	name = "\proper captain's locker";
 	req_access_txt = "20"
 	},
+/obj/item/gun/energy/e_gun/e_old/hos/brazil/true,
+/obj/item/stock_parts/cell/gun/sharplite/plus,
 /turf/open/floor/carpet/royalblack,
 /area/ship/crew/dorm/dormtwo)
 "bx" = (
@@ -3335,12 +3336,12 @@
 /obj/item/toy/plush/nukeplushie{
 	name = "Spy Syndicate plush"
 	},
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
 /obj/item/screwdriver/nuke,
 /obj/item/screwdriver,
 /obj/item/screwdriver,
@@ -4169,16 +4170,16 @@
 /obj/item/gun/energy/ionrifle/carbine{
 	pixel_y = -7
 	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_y = 4
 	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_y = 6
 	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_y = 8
 	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_y = 10
 	},
 /obj/item/melee/sword/mass,

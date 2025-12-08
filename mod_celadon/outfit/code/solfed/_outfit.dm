@@ -172,7 +172,7 @@
 	r_pocket = /obj/item/assembly/flash/handheld
 	backpack_contents = null
 
-	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
+	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet/m10)
 
 /datum/outfit/job/cel/solfed/marine/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -544,7 +544,7 @@
 	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solfed/camo
 	shoes = /obj/item/clothing/shoes/jackboots/knife
-	head = /obj/item/clothing/head/helmet/solfed/m11
+	head = /obj/item/clothing/head/helmet/bulletproof/x11/solfed
 	belt = /obj/item/storage/belt/military/solfed
 	suit = /obj/item/clothing/suit/armor/vest/marine/medium
 
@@ -554,7 +554,7 @@
 	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solfed/medical
 	shoes = /obj/item/clothing/shoes/jackboots/knife
-	head = /obj/item/clothing/head/helmet/solfed/m11
+	head = /obj/item/clothing/head/helmet/bulletproof/x11/solfed
 	belt = /obj/item/storage/belt/military/solfed/medical
 	suit = /obj/item/clothing/suit/armor/vest/marine
 
@@ -564,6 +564,6 @@
 	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solfed/industrial
 	shoes = /obj/item/clothing/shoes/jackboots/knife
-	head = /obj/item/clothing/head/helmet/solfed/m11
+	head = /obj/item/clothing/head/helmet/bulletproof/x11/solfed
 	belt = /obj/item/storage/belt/utility/full/engi
 	suit = /obj/item/clothing/suit/armor/vest/marine
