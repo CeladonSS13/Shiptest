@@ -10,25 +10,9 @@
 // Также цены указаны не на отдельные категории. В будущем будет по
 // категории
 
-// ФРАКЦИОННЫЕ ЦЕНЫ НА ТОВАРЫ SUPPLY PACK
-#define PRICES_FACTION_NT_MIN 			0.8
-#define PRICES_FACTION_NT_MAX 			1
-
-#define PRICES_FACTION_SOLFED_MIN		0.8
-#define PRICES_FACTION_SOLFED_MAX		1
-
-#define PRICES_FACTION_INTEQ_MIN		0.8
-#define PRICES_FACTION_INTEQ_MAX		1
-
-#define PRICES_FACTION_SYNDICATE_MIN	0.8
-#define PRICES_FACTION_SYNDICATE_MAX	1
-
-#define PRICES_FACTION_INDEPENDENT_MIN	0.9
-#define PRICES_FACTION_INDEPENDENT_MAX	1.1
-
 // ОБЩАЯ ЦЕНА НА ТОВАРЫ SUPPLY PACK
-#define PRICES_GENERAL_MIN				0.9
-#define PRICES_GENERAL_MAX				1.1
+#define PRICES_GENERAL_MIN				0.8
+#define PRICES_GENERAL_MAX				1.2
 
 // Пока общие на все категории
 #define PRICES_EXPORT_GENERAL_MIN		0.6

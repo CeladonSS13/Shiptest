@@ -390,7 +390,7 @@ MARK:	Ядра двигателей
 /datum/supply_pack/faction/independent/machinery/ion_thruster
 	name = "Ion Thruster Crate"
 	desc = "A crate containing an ion thruster and its precharger's electronics. For when you need a little extra thrust."
-	cost = 1500
+	cost = 1000
 	contains = list(/obj/item/circuitboard/machine/shuttle/smes,
 					/obj/item/circuitboard/machine/shuttle/engine/electric)
 	crate_name = "ion thruster crate"
@@ -399,7 +399,7 @@ MARK:	Ядра двигателей
 /datum/supply_pack/faction/independent/machinery/combustion_thruster
 	name = "Combustion Thruster Crate"
 	desc = "A crate containing a combustion thruster and its heater's electronics. For when you need complicated thrust."
-	cost = 2000
+	cost = 1250
 	contains = list(/obj/item/circuitboard/machine/shuttle/fire_heater,
 					/obj/item/circuitboard/machine/shuttle/engine/fire)
 	crate_name = "combustion thruster crate"
@@ -408,7 +408,7 @@ MARK:	Ядра двигателей
 /datum/supply_pack/faction/independent/machinery/plasma_thruster
 	name = "Plasma Thruster Crate"
 	desc = "A crate containing a plasma thruster and its heater's electronics. For when you need a lot of extra thrust."
-	cost = 5000
+	cost = 1500
 	contains = list(/obj/item/circuitboard/machine/shuttle/engine/plasma,
 					/obj/item/circuitboard/machine/shuttle/heater,
 					/obj/item/circuitboard/machine/pipedispenser,
