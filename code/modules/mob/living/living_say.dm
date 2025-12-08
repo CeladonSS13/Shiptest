@@ -378,13 +378,13 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(flick_overlay_global), I, speech_bubble_recipients, 3 SECONDS)
 
 	// [CELADON-ADD] - CELADON_THE_VOICES
-	//Listening gets trimmed here if a vocal the_voices's present. If anyone ever makes this proc return listening, make sure to instead initialize a copy of listening in here to avoid wonkiness
-	// if(SEND_SIGNAL(src, COMSIG_MOVABLE_QUEUE_THE_VOICES, listening, args) || vocal_the_voices || vocal_the_voices_id)
-	// 	for(var/mob/M in listening)
-	// 		if(!M.client)
-	// 			continue
-	// 		if(!(M.client.prefs.toggles & (1<<24)))  // Вместо SOUND_THE_VOICE ссучара ЭТО МЕСТО ТРЕБУЕТ ВНИМАНИЕ
-	// 			listening -= M // ууу сука
+	// Listening gets trimmed here if a vocal the_voices's present. If anyone ever makes this proc return listening, make sure to instead initialize a copy of listening in here to avoid wonkiness
+	if(SEND_SIGNAL(src, COMSIG_MOVABLE_QUEUE_THE_VOICES, listening, args) || vocal_the_voices || vocal_the_voices_id)
+		for(var/mob/M in listening)
+			if(!M.client)
+				continue
+			if(!(M.client.prefs.toggles & SOUND_THE_VOICE))
+				listening -= M
 	if(SEND_SIGNAL(src, COMSIG_MOVABLE_QUEUE_THE_VOICES, listening, args) || vocal_the_voices || vocal_the_voices_id) // Voice воспроизводится для всех слушателей
 		var/voices = min(round((LAZYLEN(message) / vocal_speed)) + 1, THE_VOICES_MAX_VOICES)
 		var/total_delay

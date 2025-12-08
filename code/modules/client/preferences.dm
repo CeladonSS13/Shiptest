@@ -1436,11 +1436,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Income Updates:</b> <a href='byond://?_src_=prefs;preference=income_pings'>[(chat_toggles & CHAT_BANKCARD) ? "Allowed" : "Muted"]</a><br>"
 			dat += "<br>"
 
-			// [CELADON-ADD] - CELADON_THE_VOICES - Тут есть проблема, не срабатывают настройки
-			dat += "<b>Sound Voice:</b> <a href='byond://?_src_=prefs;preference=sound_the_voices'>[(toggles & SOUND_THE_VOICE) ? "ON THE VOICES" : "OFF THE VOICES"]</a><br>"
-			dat += "<br>"
-			// [/CELADON-ADD]
-
 			dat += "<b>FPS:</b> <a href='byond://?_src_=prefs;preference=clientfps;task=input'>[clientfps]</a><br>"
 
 			dat += "<b>Parallax (Fancy Space):</b> <a href='byond://?_src_=prefs;preference=parallaxdown' oncontextmenu='window.location.href=\"?_src_=prefs;preference=parallaxup\";return false;'>"

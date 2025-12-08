@@ -100,8 +100,7 @@
 	data["announcements"] 	= C.prefs.toggles & SOUND_ANNOUNCEMENTS
 	data["endofround"] 		= C.prefs.toggles & SOUND_ENDOFROUND
 	data["jukebox"] 		= C.prefs.toggles & SOUND_JUKEBOX
-	// data["the_voices"] 		= C.prefs.toggles & SOUND_THE_VOICE	// CELADON_THE_VOICES - тут нужно починить, возможность отрубить его в натсройках
-	data["the_voices"] 		= C.prefs.toggles & SOUND_THE_VOICE  // Вместо SOUND_THE_VOICE
+	data["the_voices"] 		= C.prefs.toggles & SOUND_THE_VOICE // CELADON_THE_VOICES
 
 	return data
 
@@ -145,7 +144,7 @@
 		if("jukebox")
 			C.prefs.toggles ^= SOUND_JUKEBOX
 			usr.stop_sound_channel(CHANNEL_JUKEBOX)
-		if("the_voices")		// CELADON_THE_VOICES - тут нужно починить, возможность отрубить его в натсройках. Идти через канал что ли? Как джукбокс сделан
+		if("the_voices")		// CELADON_THE_VOICES
 			C.prefs.toggles ^= SOUND_THE_VOICE
 
 	C.prefs.save_preferences()
