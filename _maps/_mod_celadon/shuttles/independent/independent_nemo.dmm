@@ -197,10 +197,10 @@
 /turf/open/floor/wood,
 /area/ship/crew/dorm/commad)
 "cc" = (
-/obj/structure/chair/sofa/brown/right/directional,
 /obj/structure/window{
 	dir = 1
 	},
+/obj/item/kirbyplants/random,
 /turf/open/floor/wood,
 /area/ship/crew/dorm/commad)
 "cf" = (
@@ -316,11 +316,6 @@
 	},
 /obj/structure/window/reinforced/tinted/frosted,
 /obj/structure/curtain,
-/obj/structure/closet/secure_closet/medical3{
-	req_one_access = list(5,30);
-	req_ship_access = 1;
-	req_access = null
-	},
 /obj/item/healthanalyzer,
 /obj/item/healthanalyzer,
 /obj/item/storage/firstaid/brute{
@@ -331,6 +326,11 @@
 /obj/item/clothing/gloves/color/latex/nitrile,
 /obj/item/storage/firstaid/regular,
 /obj/item/reagent_containers/spray/cleaner,
+/obj/structure/closet/secure_closet/medical3{
+	req_one_access = list(5,30);
+	req_ship_access = 1;
+	req_access = null
+	},
 /obj/item/storage/firstaid/fire{
 	pixel_y = 6
 	},
@@ -432,6 +432,22 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
+"eh" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/sign/poster/bay/bay_17{
+	pixel_y = -32
+	},
+/turf/open/floor/plasteel/strongdark,
+/area/ship/hallway/central)
 "ei" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -445,12 +461,14 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/airalarm/directional/south,
 /obj/effect/turf_decal/siding/thinplating/dark,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /obj/structure/cable{
 	icon_state = "1-8"
+	},
+/obj/structure/sign/departments/medbay/alt{
+	pixel_y = -32
 	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/hallway/central)
@@ -595,6 +613,7 @@
 /area/ship/hallway/port)
 "fN" = (
 /obj/effect/turf_decal/industrial/stand_clear,
+/obj/effect/decal/cleanable/oil,
 /turf/open/floor/plasteel/dark,
 /area/ship/general/science{
 	name = "R&D"
@@ -657,6 +676,9 @@
 /area/ship/security/armory)
 "gI" = (
 /obj/effect/turf_decal/industrial/outline,
+/obj/structure/sign/poster/retro/smile{
+	pixel_y = 32
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "gO" = (
@@ -744,8 +766,14 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering/electrical)
 "ie" = (
-/obj/machinery/jukebox/boombox,
 /obj/structure/table/glass/light_glass,
+/obj/effect/spawner/random/trash/food_packaging{
+	pixel_y = 8;
+	pixel_x = 9
+	},
+/obj/effect/spawner/random/trash/food_packaging{
+	pixel_x = -5
+	},
 /turf/open/floor/wood,
 /area/ship/crew/dorm/commad)
 "ih" = (
@@ -793,6 +821,9 @@
 	},
 /obj/structure/chair/sofa/brown/left{
 	dir = 8
+	},
+/obj/structure/sign/poster/official/no_erp{
+	pixel_x = 32
 	},
 /turf/open/floor/wood,
 /area/ship/crew/dorm/commad)
@@ -1174,6 +1205,7 @@
 /obj/structure/table/optable{
 	pixel_y = -1
 	},
+/obj/effect/decal/cleanable/xenoblood,
 /turf/open/floor/plasteel/white,
 /area/ship/general/science{
 	name = "R&D"
@@ -1650,6 +1682,11 @@
 /area/ship/general/science{
 	name = "R&D"
 	})
+"sN" = (
+/obj/effect/spawner/random/trash/caution_sign,
+/obj/effect/spawner/random/trash/decal,
+/turf/open/floor/wood,
+/area/ship/crew/dorm/commad)
 "tb" = (
 /turf/template_noop,
 /area/template_noop)
@@ -2059,6 +2096,7 @@
 	dir = 1
 	},
 /obj/structure/reagent_dispensers/fueltank,
+/obj/effect/decal/cleanable/oil,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/electrical)
 "zV" = (
@@ -2074,7 +2112,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "Ad" = (
-/obj/structure/table/glass/light_glass,
+/obj/effect/spawner/random/trash/decal,
 /turf/open/floor/wood,
 /area/ship/crew/dorm/commad)
 "An" = (
@@ -2114,6 +2152,9 @@
 	dir = 8
 	},
 /obj/structure/curtain,
+/obj/item/kirbyplants/random{
+	pixel_y = 6
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/general/science{
 	name = "R&D"
@@ -2175,15 +2216,15 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/structure/bookcase/manuals,
+/obj/structure/bookcase/manuals/chemistry,
 /turf/open/floor/wood,
 /area/ship/crew/dorm/commad)
 "Bl" = (
+/obj/machinery/computer/cryopod/directional/north,
 /obj/machinery/cryopod,
-/obj/structure/window/reinforced/tinted/frosted{
+/obj/structure/window{
 	dir = 4
 	},
-/obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/darkbrownfull/darkbrowncorners{
 	dir = 8
 	},
@@ -2293,10 +2334,8 @@
 /turf/open/floor/engine/n2,
 /area/ship/engineering/atmospherics)
 "Cu" = (
-/obj/item/clothing/suit/hooded/cloak/goliath/polar{
-	pixel_y = 5
-	},
 /obj/structure/table/glass/light_glass,
+/obj/machinery/jukebox/boombox,
 /turf/open/floor/wood,
 /area/ship/crew/dorm/commad)
 "Cv" = (
@@ -2543,6 +2582,10 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
+/obj/machinery/airalarm/directional/south{
+	dir = 1;
+	pixel_y = 25
+	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/hallway/central)
 "Gb" = (
@@ -2627,6 +2670,9 @@
 /obj/structure/frame/machine,
 /obj/item/circuitboard/machine/rdserver,
 /obj/machinery/light/directional/west,
+/obj/structure/sign/poster/official/science{
+	pixel_y = 32
+	},
 /turf/open/floor/hangar/plasteel/white,
 /area/ship/general/science{
 	name = "R&D"
@@ -2742,6 +2788,9 @@
 	dir = 6
 	},
 /obj/structure/table/reinforced,
+/obj/structure/sign/poster/radio/soft{
+	pixel_y = -32
+	},
 /turf/open/floor/wood,
 /area/ship/crew/dorm/commad)
 "JL" = (
@@ -2932,15 +2981,15 @@
 /area/ship/engineering/electrical)
 "MQ" = (
 /obj/machinery/airalarm/directional/south,
-/obj/structure/sign/poster/official/moth/boh{
-	pixel_x = 32
-	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/chem_dispenser/drinks/beer{
 	dir = 1
+	},
+/obj/structure/sign/poster/official/moth/boh{
+	pixel_x = 32
 	},
 /turf/open/floor/wood,
 /area/ship/crew/dorm/commad)
@@ -2972,14 +3021,14 @@
 	dir = 8;
 	sensors = list("nemo_o2_sensor"="Oxygen Tank")
 	},
-/obj/structure/cabinet/fireaxe{
-	dir = 8;
-	pixel_x = 32
-	},
 /obj/machinery/light_switch{
 	dir = 8;
 	pixel_x = 20;
 	pixel_y = 13
+	},
+/obj/structure/cabinet/fireaxe{
+	dir = 8;
+	pixel_x = 32
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering/atmospherics)
@@ -3072,16 +3121,14 @@
 	name = "Engine Left"
 	})
 "NB" = (
-/obj/machinery/cryopod,
-/obj/machinery/computer/cryopod/directional/north{
-	pixel_x = 4
-	},
-/obj/structure/window/reinforced/tinted/frosted{
-	dir = 8
-	},
 /obj/machinery/light_switch{
 	pixel_x = -12;
 	pixel_y = 20
+	},
+/obj/machinery/light/directional/north,
+/obj/machinery/cryopod,
+/obj/structure/window{
+	dir = 8
 	},
 /turf/open/floor/plasteel/darkbrownfull/darkbrowncorners,
 /area/ship/crew/dorm/commad)
@@ -3095,6 +3142,14 @@
 	pixel_x = -7
 	},
 /obj/effect/turf_decal/siding/thinplating/dark,
+/obj/item/reagent_containers/food/drinks/bottle/rum{
+	pixel_y = 3;
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass{
+	pixel_y = 13;
+	pixel_x = 10
+	},
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
 "NE" = (
@@ -3209,6 +3264,13 @@
 /area/ship/general/science{
 	name = "R&D"
 	})
+"Oh" = (
+/obj/structure/window{
+	dir = 1
+	},
+/obj/structure/chair/sofa/brown/right/directional,
+/turf/open/floor/wood,
+/area/ship/crew/dorm/commad)
 "Ol" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
@@ -3408,6 +3470,7 @@
 	})
 "Rh" = (
 /obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/effect/decal/cleanable/robot_debris,
 /turf/open/floor/plasteel/dark,
 /area/ship/general/science{
 	name = "R&D"
@@ -3680,6 +3743,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
+/obj/structure/sign/departments/science{
+	pixel_y = -32
+	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/hallway/central)
 "Vi" = (
@@ -3723,6 +3789,9 @@
 	dir = 1
 	},
 /obj/structure/dresser,
+/obj/item/clothing/suit/hooded/cloak/goliath/polar{
+	pixel_y = 5
+	},
 /turf/open/floor/wood,
 /area/ship/crew/dorm/commad)
 "VK" = (
@@ -3953,6 +4022,8 @@
 	dir = 4
 	},
 /obj/machinery/firealarm/directional/east,
+/obj/effect/decal/cleanable/vomit/old,
+/obj/item/broken_bottle,
 /turf/open/floor/wood,
 /area/ship/crew/dorm/commad)
 "XT" = (
@@ -4650,7 +4721,7 @@ xY
 UK
 mg
 vB
-bI
+eh
 dN
 ma
 Kb
@@ -4883,7 +4954,7 @@ gz
 iJ
 xs
 Gb
-Be
+sN
 Be
 lF
 JG
@@ -4904,8 +4975,8 @@ Oa
 gz
 px
 cc
-Ad
 Be
+Ad
 aN
 Bz
 dG
@@ -4924,7 +4995,7 @@ tb
 tb
 dp
 PL
-ch
+Oh
 ie
 Be
 My
