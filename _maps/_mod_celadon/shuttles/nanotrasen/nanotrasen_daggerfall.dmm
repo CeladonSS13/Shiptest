@@ -775,10 +775,10 @@
 /obj/item/ammo_box/magazine/wt550m9,
 /obj/item/ammo_box/magazine/wt550m9,
 /obj/item/ammo_box/magazine/wt550m9,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
 /obj/item/stock_parts/cell/gun/kalix,
 /obj/item/stock_parts/cell/gun/kalix,
 /obj/item/stock_parts/cell/gun/kalix,
@@ -1572,7 +1572,7 @@
 	pixel_x = 0;
 	pixel_y = 0
 	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_x = 0;
 	pixel_y = -6
 	},
@@ -3150,8 +3150,8 @@
 /obj/item/clothing/head/nanotrasen/beret/security/command,
 /obj/item/clothing/suit/armor/nanotrasen/sec_director,
 /obj/item/melee/knife/switchblade,
-/obj/item/stock_parts/cell/gun/upgraded,
-/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/sharplite/plus,
+/obj/item/stock_parts/cell/gun/sharplite/plus,
 /obj/item/radio/headset/nanotrasen/alt/captain,
 /obj/item/gps{
 	gpstag = "SEC0"
@@ -3169,6 +3169,7 @@
 	pixel_x = -1;
 	pixel_y = 5
 	},
+/obj/item/gun/energy/e_gun/e_old/hos,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "NP" = (

@@ -2708,12 +2708,12 @@
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
-/obj/item/gun/energy/e_gun{
-	desc = "A small energy gun commonly used by syndicate officers, produced by Cybersun. It has two settings: disable and kill.";
-	name = "cybersun officer pistol"
-	},
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
 	dir = 4
+	},
+/obj/item/gun/energy/e_gun/e_old/mini{
+	name = "cybersun officer pistol";
+	desc = "A small energy gun commonly used by syndicate officers, produced by Cybersun. It has two settings: disable and kill."
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)

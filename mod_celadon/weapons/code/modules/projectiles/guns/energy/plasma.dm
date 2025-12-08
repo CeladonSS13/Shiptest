@@ -23,6 +23,9 @@
 	wield_slowdown = 0.1
 	spread_unwielded = 5
 
+/obj/item/gun/energy/e_gun/plasmapistol_cryo/empty_cell
+	spawn_no_ammo = TRUE
+
 	//Нигредо и Альбедо
 
 /obj/item/gun/energy/e_gun/plasmapistol_fire
@@ -49,3 +52,6 @@
 	wield_delay = 0.2 SECONDS
 	wield_slowdown = LASER_PISTOL_SLOWDOWN
 	spread_unwielded = 5
+
+/obj/item/gun/energy/e_gun/plasmapistol_fire/empty_cell
+	spawn_no_ammo = TRUE

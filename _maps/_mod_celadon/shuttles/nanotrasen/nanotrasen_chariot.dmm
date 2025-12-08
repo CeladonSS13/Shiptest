@@ -2240,12 +2240,7 @@
 /obj/item/melee/knife/combat,
 /obj/item/clothing/suit/armor/vest/security,
 /obj/item/clothing/glasses/hud/security/night,
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = -3;
-	name = "special weapon power cell";
-	pixel_x = 0
-	},
+/obj/item/stock_parts/cell/gun/upgraded,
 /turf/open/floor/wood,
 /area/ship/bridge)
 "tq" = (
@@ -2480,18 +2475,8 @@
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/gloves/combat,
 /obj/item/gun/energy/e_gun/plasmapistol_cryo,
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = -5;
-	name = "special weapon power cell";
-	pixel_x = 1
-	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = -5;
-	name = "special weapon power cell";
-	pixel_x = 1
-	},
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
 /obj/item/clothing/suit/armor/vest/security,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/clothing/glasses/welding,
@@ -2758,7 +2743,7 @@
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/glasses/welding,
 /obj/item/clothing/glasses/meson,
-/obj/item/gun/ballistic/automatic/pistol/commander/no_mag,
+/obj/item/gun/ballistic/automatic/pistol/challenger/no_mag,
 /obj/item/ammo_box/magazine/co9mm{
 	pixel_y = -1;
 	pixel_x = -2
@@ -3875,7 +3860,6 @@
 /obj/structure/guncloset{
 	anchored = 1
 	},
-/obj/item/gun/energy/e_gun,
 /obj/effect/turf_decal/box/red,
 /obj/effect/turf_decal/siding/red{
 	dir = 6;
@@ -3884,9 +3868,10 @@
 /obj/machinery/camera/autoname{
 	dir = 10
 	},
-/obj/item/gun/energy/e_gun,
 /obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/gun/ballistic/automatic/smg/wt550,
+/obj/item/gun/energy/e_gun/e_old/smg,
+/obj/item/gun/energy/e_gun/e_old/smg,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "Id" = (
@@ -4717,7 +4702,7 @@
 	pixel_y = -1;
 	pixel_x = -2
 	},
-/obj/item/gun/ballistic/automatic/pistol/commander/no_mag,
+/obj/item/gun/ballistic/automatic/pistol/challenger/no_mag,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/storage/backpack/ert/medical,
 /obj/item/clothing/under/rank/medical/paramedic/lp,
@@ -5047,42 +5032,12 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 8
 	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = -1;
-	name = "special weapon power cell";
-	pixel_x = -2
-	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = 0;
-	name = "special weapon power cell";
-	pixel_x = -2
-	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = -5;
-	name = "special weapon power cell";
-	pixel_x = 1
-	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = -3;
-	name = "special weapon power cell";
-	pixel_x = 0
-	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = 0;
-	name = "special weapon power cell";
-	pixel_x = -3
-	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = 4;
-	name = "special weapon power cell";
-	pixel_x = -4
-	},
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
 /obj/item/ammo_box/magazine/wt550m9,
 /obj/item/ammo_box/magazine/wt550m9,
 /obj/item/ammo_box/magazine/wt550m9,
@@ -5091,7 +5046,7 @@
 /obj/item/storage/box/ammo/c46x30mm,
 /obj/item/storage/box/ammo/c9mm,
 /obj/item/storage/box/ammo/c9mm,
-/obj/item/gun/ballistic/automatic/pistol/commander/no_mag,
+/obj/item/gun/ballistic/automatic/pistol/challenger/no_mag,
 /obj/structure/window/reinforced/spawner{
 	dir = 4;
 	layer = 4.1

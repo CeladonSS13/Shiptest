@@ -31,3 +31,29 @@
 	variance = 1
 	projectile_type = /obj/projectile/bullet/flechette/a410
 	// bullet_per_box = 55
+
+/obj/item/ammo_box/magazine/internal/shot/com
+	name = "combat shotgun internal magazine"
+	ammo_type = /obj/item/ammo_casing/shotgun/buckshot
+	max_ammo = 6
+
+/obj/item/ammo_box/magazine/internal/shot/com/compact
+	name = "compact combat shotgun internal magazine"
+	ammo_type = /obj/item/ammo_casing/shotgun/buckshot
+	max_ammo = 4
+
+/obj/item/ammo_casing/shotgun/bof
+	name = "fauna-hunting buckshot shell"
+	desc = "An anti-fauna buckshot shell for exotic hunting."
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/bof_bullets.dmi'
+	icon_state = "bof"
+	pellets = 5
+	variance = 20
+	custom_materials = list(/datum/material/titanium=4000, /datum/material/plasma=2000, /datum/material/gold=2000)
+	projectile_type = /obj/projectile/bullet/pellet/bof
+
+/obj/item/ammo_casing/shotgun/bof/update_icon_state()
+	. = ..()
+	if(icon_state == "[initial(icon_state)]-empty")
+		custom_materials = list(/datum/material/titanium=500)
+

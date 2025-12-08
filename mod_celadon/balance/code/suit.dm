@@ -10,3 +10,8 @@
 
 /obj/item/clothing/suit/hazardvest
 	armor = list("melee" = 10, "bullet" = 0, "laser" = 5, "energy" = 5, "bomb" = 20, "bio" = 10, "rad" = 20, "fire" = 20, "acid" = 50)
+
+// Возвращаем старые статы лазерпруфу после пра с шарплайтами
+/obj/item/clothing/suit/armor/laserproof
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 60, "energy" = 60, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100, "wound" = 10)
+	hit_reflect_chance = 50

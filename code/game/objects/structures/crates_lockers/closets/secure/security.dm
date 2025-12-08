@@ -150,7 +150,6 @@
 	new /obj/item/door_remote/head_of_security(src)
 	new /obj/item/gun/ballistic/shotgun/automatic/m11(src)
 	new /obj/item/gun/ballistic/automatic/pistol/challenger(src)
-	new /obj/item/gun/ballistic/automatic/pistol/commander_old(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
 	new /obj/item/gun_voucher
 
 /obj/structure/closet/secure_closet/security
@@ -177,7 +176,6 @@
 /obj/structure/closet/secure_closet/security/sec/PopulateContents()
 	..()
 	new /obj/item/storage/belt/security/full(src)
-	new /obj/item/gun/ballistic/automatic/pistol/commander_old/no_mag(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
 	new /obj/item/gun/ballistic/automatic/pistol/challenger/no_mag(src) //WS edit - free lethals //shiptest: these comments are very funny, please dont remove them
 
 /obj/structure/closet/secure_closet/security/cargo

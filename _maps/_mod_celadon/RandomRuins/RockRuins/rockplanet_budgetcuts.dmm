@@ -105,6 +105,7 @@
 /obj/item/clothing/under/rank/security/head_of_security/alt/skirt,
 /obj/item/clothing/under/rank/security/head_of_security/nt,
 /obj/item/clothing/under/rank/security/head_of_security/nt/skirt,
+/obj/item/gun/energy/e_gun/e_old/hos,
 /turf/open/floor/wood,
 /area/ruin/rockplanet/nanotrasen)
 "by" = (
@@ -1280,13 +1281,13 @@
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
 	},
+/obj/machinery/light/directional/north,
+/obj/item/plate,
 /obj/item/candle{
 	pixel_x = 10;
 	pixel_y = 5
 	},
-/obj/item/trash/chips,
 /obj/item/trash/popcorn,
-/obj/machinery/light/directional/north,
 /turf/open/floor/plastic,
 /area/ruin/rockplanet/nanotrasen)
 "vb" = (
@@ -2822,7 +2823,7 @@
 /area/ruin/rockplanet/nanotrasen)
 "ZP" = (
 /obj/effect/mob_spawn/human/scientist,
-/obj/item/gun/ballistic/automatic/pistol/commander,
+/obj/item/gun/ballistic/automatic/pistol/challenger,
 /obj/item/ammo_casing/spent,
 /obj/effect/decal/cleanable/blood{
 	icon_state = "splatter1";
