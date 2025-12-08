@@ -101,7 +101,7 @@
 	data["endofround"] 		= C.prefs.toggles & SOUND_ENDOFROUND
 	data["jukebox"] 		= C.prefs.toggles & SOUND_JUKEBOX
 	// data["the_voices"] 		= C.prefs.toggles & SOUND_THE_VOICE	// CELADON_THE_VOICES - тут нужно починить, возможность отрубить его в натсройках
-	data["the_voices"] 		= C.prefs.toggles & (1<<24)  // Вместо SOUND_THE_VOICE
+	data["the_voices"] 		= C.prefs.toggles & SOUND_THE_VOICE  // Вместо SOUND_THE_VOICE
 
 	return data
 
