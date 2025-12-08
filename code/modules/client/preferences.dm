@@ -140,10 +140,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							"elzu_horns" = "None",
 							"elzu_tail" = "None",
 							"flavor_text" = "",
-							"thevoicessound" = "mutedc3",	// [CELADON-ADD] - CELADON_THE_VOICES
-							"thevoicesspeed" = "4",
-							"thevoicespitch" = "2",
-							"thevoicesvary" = "0",	// [/CELADON-ADD]
+							"wttsvoicessound" = "mutedc3",	// [CELADON-ADD] - CELADON_W_TTS_VOICES
+							"wttsvoicesspeed" = "4",
+							"wttsvoicespitch" = "2",
+							"wttsvoicesvary" = "0",	// [/CELADON-ADD]
 						)
 	var/height_filter = "Normal"
 	var/list/randomise = list(
@@ -199,7 +199,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/static/list/language_level_costs = list(LANGUAGE_UNKNOWN = 0, LANGUAGE_RECOGNIZED = 1, LANGUAGE_FAMILIAR = 2, LANGUAGE_FLUENT = 3)
 
 	// 0 = character settings, 1 = game preferences
-	var/current_tab = CHAR_SETUP_TAB	// [CELADON-EDIT] - CELADON_THE_VOICES - Упрощаем понимание кода // ORIGINAL // var/current_tab = 0
+	var/current_tab = CHAR_SETUP_TAB	// [CELADON-EDIT] - CELADON_W_TTS_VOICES - Упрощаем понимание кода // ORIGINAL // var/current_tab = 0
 
 	var/show_gear = TRUE
 	var/show_loadout = TRUE
@@ -262,13 +262,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	///
 	var/hearted_until
 
-	// [CELADON-ADD] - CELADON_THE_VOICES
+	// [CELADON-ADD] - CELADON_W_TTS_VOICES
 	// Vocal voice prefs
-	var/the_voices_id = "mutedc3"
-	var/the_voices_speed = 4
-	var/the_voices_pitch = 1
-	var/the_voices_variance = 0.2
-	COOLDOWN_DECLARE(the_voices_previewing)
+	var/w_tts_voices_id = "mutedc3"
+	var/w_tts_voices_speed = 4
+	var/w_tts_voices_pitch = 1
+	var/w_tts_voices_variance = 0.2
+	COOLDOWN_DECLARE(w_tts_voices_previewing)
 	// [/CELADON-ADD]
 
 
@@ -315,7 +315,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	update_preview_icon(show_gear, show_loadout)
 	var/list/dat = list("<center>")
 
-	// [CELADON-EDIT] - CELADON_THE_VOICES - Упрощаем понимание кода
+	// [CELADON-EDIT] - CELADON_W_TTS_VOICES - Упрощаем понимание кода
 	// dat += "<a href='byond://?_src_=prefs;preference=tab;tab=0' [current_tab == 0 ? "class='linkOn'" : ""]>Character Setup</a>"
 	// dat += "<a href='byond://?_src_=prefs;preference=tab;tab=1' [current_tab == 1 ? "class='linkOn'" : ""]>Character Appearance</a>"
 	// dat += "<a href='byond://?_src_=prefs;preference=tab;tab=2' [current_tab == 2 ? "class='linkOn'" : ""]>Gear</a>"
@@ -338,7 +338,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	dat += "<HR>"
 
 	switch(current_tab)
-		if(CHAR_SETUP_TAB) // Character Setup // [CELADON-EDIT] - CELADON_THE_VOICES - Упрощаем понимание кода // ORIGINAL // if (0)
+		if(CHAR_SETUP_TAB) // Character Setup // [CELADON-EDIT] - CELADON_W_TTS_VOICES - Упрощаем понимание кода // ORIGINAL // if (0)
 			if(path)
 				var/savefile/S = new /savefile(path)
 				if(S)
@@ -439,7 +439,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			dat += "<br><b>Outerwear Style:</b><BR><a href ='?_src_=prefs;preference=exo;task=input'>[exowear]</a>"
 
-		if(CHAR_APPEARANCE_TAB) //Character Appearance // [CELADON-EDIT] - CELADON_THE_VOICES - Упрощаем понимание кода // ORIGINAL // if(1)
+		if(CHAR_APPEARANCE_TAB) //Character Appearance // [CELADON-EDIT] - CELADON_W_TTS_VOICES - Упрощаем понимание кода // ORIGINAL // if(1)
 			if(path)
 				var/savefile/S = new /savefile(path)
 				if(S)
@@ -1238,7 +1238,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</table><br>"
 					//[/CELADON - EDIT]
 
-		if(CHAR_LOADOUT_TAB) //Loadout // [CELADON-EDIT] - CELADON_THE_VOICES - Упрощаем понимание кода // ORIGINAL // if(2)
+		if(CHAR_LOADOUT_TAB) //Loadout // [CELADON-EDIT] - CELADON_W_TTS_VOICES - Упрощаем понимание кода // ORIGINAL // if(2)
 			if(path)
 				var/savefile/S = new /savefile(path)
 				if(S)
@@ -1376,7 +1376,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "</table>"
 			// [/CELADON-EDIT]
 
-		if(CHAR_GAMEPREFERENCES_TAB) // Game Preferences // [CELADON-EDIT] - CELADON_THE_VOICES - Упрощаем понимание кода // ORIGINAL // if (3)
+		if(CHAR_GAMEPREFERENCES_TAB) // Game Preferences // [CELADON-EDIT] - CELADON_W_TTS_VOICES - Упрощаем понимание кода // ORIGINAL // if (3)
 			dat += "<table><tr><td width='340px' height='300px' valign='top'>"
 			dat += "<h2>General Settings</h2>"
 			dat += "<b>UI Style:</b> <a href='byond://?_src_=prefs;task=input;preference=ui'>[UI_style]</a><br>"
@@ -1500,7 +1500,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<br>"
 			dat += "<b>Midround Antagonist:</b> <a href='byond://?_src_=prefs;preference=allow_midround_antag'>[(toggles & MIDROUND_ANTAG) ? "Enabled" : "Disabled"]</a><br>"
 			dat += "</td></tr></table>"
-		if(CHAR_OOC_TAB) //OOC Preferences // [CELADON-EDIT] - CELADON_THE_VOICES - Упрощаем понимание кода // ORIGINAL // if(4)
+		if(CHAR_OOC_TAB) //OOC Preferences // [CELADON-EDIT] - CELADON_W_TTS_VOICES - Упрощаем понимание кода // ORIGINAL // if(4)
 			dat += "<table><tr><td width='340px' height='300px' valign='top'>"
 			dat += "<h2>OOC Settings</h2>"
 			dat += "<b>Window Flashing:</b> <a href='byond://?_src_=prefs;preference=winflash'>[(windowflashing) ? "Enabled":"Disabled"]</a><br>"
@@ -1582,7 +1582,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "</td>"
 			dat += "</tr></table>"
-		if(CHAR_KEYBINDINGS_TAB) // Custom keybindings // [CELADON-EDIT] - CELADON_THE_VOICES - Упрощаем понимание кода // ORIGINAL // if(5)
+		if(CHAR_KEYBINDINGS_TAB) // Custom keybindings // [CELADON-EDIT] - CELADON_W_TTS_VOICES - Упрощаем понимание кода // ORIGINAL // if(5)
 			// Create an inverted list of keybindings -> key
 			var/list/user_binds = list()
 			for (var/key in key_bindings)
@@ -1623,17 +1623,17 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<br><br>"
 			dat += "<a href ='?_src_=prefs;preference=keybindings_reset'>\[Reset to default\]</a>"
 			dat += "</body>"
-		// [CELADON-ADD] - CELADON_THE_VOICES - Упрощаем понимание кода
+		// [CELADON-ADD] - CELADON_W_TTS_VOICES - Упрощаем понимание кода
 		if(CHAR_SPEECH_TAB)	// The voices
 			dat += "<td width='340px' height='300px' valign='top'>"
 			dat += "<h2>Vocal Voice preferences</h2>"
-			var/datum/the_voices/B = GLOB.the_voices_list[the_voices_id]
+			var/datum/w_tts_voices/B = GLOB.w_tts_voices_list[w_tts_voices_id]
 			dat += "<b>Vocal Voice Sound:</b><BR>"
-			dat += "<a style='display:block;width:200px' href='?_src_=prefs;preference=thevoicessound;task=input'>[B ? initial(B.name) : "INVALID"]</a><BR>"
-			dat += "<b>Vocal Voice Speed:</b> <a href='byond://?_src_=prefs;preference=thevoicesspeed;task=input'>[the_voices_speed]</a><BR>"
-			dat += "<b>Vocal Voice Pitch:</b> <a href='byond://?_src_=prefs;preference=thevoicespitch;task=input'>[the_voices_pitch]</a><BR>"
-			dat += "<b>Vocal Voice Variance:</b> <a href='byond://?_src_=prefs;preference=thevoicesvary;task=input'>[the_voices_variance]</a><BR>"
-			dat += "<BR><a href='byond://?_src_=prefs;preference=thevoicespreview'>Preview Voice</a><BR>"
+			dat += "<a style='display:block;width:200px' href='?_src_=prefs;preference=wttsvoicessound;task=input'>[B ? initial(B.name) : "INVALID"]</a><BR>"
+			dat += "<b>Vocal Voice Speed:</b> <a href='byond://?_src_=prefs;preference=wttsvoicesspeed;task=input'>[w_tts_voices_speed]</a><BR>"
+			dat += "<b>Vocal Voice Pitch:</b> <a href='byond://?_src_=prefs;preference=wttsvoicespitch;task=input'>[w_tts_voices_pitch]</a><BR>"
+			dat += "<b>Vocal Voice Variance:</b> <a href='byond://?_src_=prefs;preference=wttsvoicesvary;task=input'>[w_tts_voices_variance]</a><BR>"
+			dat += "<BR><a href='byond://?_src_=prefs;preference=wttsvoicespreview'>Preview Voice</a><BR>"
 			dat += "</td>"
 			dat += "</tr></table>"
 		// [/CELADON-ADD]
@@ -2655,11 +2655,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					var/desiredlength = input(user, "Choose the max character length of shown Runechat messages. Valid range is 1 to [CHAT_MESSAGE_MAX_LENGTH] (default: [initial(max_chat_length)]))", "Character Preference", max_chat_length)  as null|num
 					if (!isnull(desiredlength))
 						max_chat_length = clamp(desiredlength, 1, CHAT_MESSAGE_MAX_LENGTH)
-				// [CELADON-ADD] - CELADON_THE_VOICES
-				if("thevoicessound")
+				// [CELADON-ADD] - CELADON_W_TTS_VOICES
+				if("wttsvoicessound")
 					var/list/list_voices = list()
-					for(var/path in GLOB.the_voices_list)
-						var/datum/the_voices/B = GLOB.the_voices_list[path]
+					for(var/path in GLOB.w_tts_voices_list)
+						var/datum/w_tts_voices/B = GLOB.w_tts_voices_list[path]
 						if(initial(B.ignore))
 							continue
 						if(initial(B.ckeys_allowed))
@@ -2667,30 +2667,30 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							if(!allowed.Find(user.client.ckey))
 								continue
 						list_voices[initial(B.name)] = initial(B.id)
-					var/new_voice = input(user, "Choose your desired vocal the voices:", "Character Preference") as null|anything in list_voices
+					var/new_voice = input(user, "Choose your desired vocal voices:", "Character Preference") as null|anything in list_voices
 					if(new_voice)
-						the_voices_id = list_voices[new_voice]
-						var/datum/the_voices/B = GLOB.the_voices_list[the_voices_id] //Now we need sanitization to take into account the_voices-specific min/max values
-						the_voices_speed = round(clamp(the_voices_speed, initial(B.minspeed), initial(B.maxspeed)), 1)
-						the_voices_pitch = clamp(the_voices_pitch, initial(B.minpitch), initial(B.maxpitch))
-						the_voices_variance = clamp(the_voices_variance, initial(B.minvariance), initial(B.maxvariance))
-				if("thevoicesspeed")
-					var/datum/the_voices/B = GLOB.the_voices_list[the_voices_id]
-					var/voiceset = input(user, "Choose your desired the voices speed (Higher is slower, lower is faster). Min: [initial(B.minspeed)]. Max: [initial(B.maxspeed)]", "Character Preference") as num|null
+						w_tts_voices_id = list_voices[new_voice]
+						var/datum/w_tts_voices/B = GLOB.w_tts_voices_list[w_tts_voices_id] //Now we need sanitization to take into account w_tts_voices-specific min/max values
+						w_tts_voices_speed = round(clamp(w_tts_voices_speed, initial(B.minspeed), initial(B.maxspeed)), 1)
+						w_tts_voices_pitch = clamp(w_tts_voices_pitch, initial(B.minpitch), initial(B.maxpitch))
+						w_tts_voices_variance = clamp(w_tts_voices_variance, initial(B.minvariance), initial(B.maxvariance))
+				if("wttsvoicesspeed")
+					var/datum/w_tts_voices/B = GLOB.w_tts_voices_list[w_tts_voices_id]
+					var/voiceset = input(user, "Choose your desired voices speed (Higher is slower, lower is faster). Min: [initial(B.minspeed)]. Max: [initial(B.maxspeed)]", "Character Preference") as num|null
 					if(voiceset)
-						the_voices_speed = round(clamp(voiceset, initial(B.minspeed), initial(B.maxspeed)), 1)
+						w_tts_voices_speed = round(clamp(voiceset, initial(B.minspeed), initial(B.maxspeed)), 1)
 
-				if("thevoicespitch")
-					var/datum/the_voices/B = GLOB.the_voices_list[the_voices_id]
-					var/voiceset = input(user, "Choose your desired baseline the voices pitch. Min: [initial(B.minpitch)]. Max: [initial(B.maxpitch)]", "Character Preference") as num|null
+				if("wttsvoicespitch")
+					var/datum/w_tts_voices/B = GLOB.w_tts_voices_list[w_tts_voices_id]
+					var/voiceset = input(user, "Choose your desired baseline voices pitch. Min: [initial(B.minpitch)]. Max: [initial(B.maxpitch)]", "Character Preference") as num|null
 					if(voiceset)
-						the_voices_pitch = clamp(voiceset, initial(B.minpitch), initial(B.maxpitch))
+						w_tts_voices_pitch = clamp(voiceset, initial(B.minpitch), initial(B.maxpitch))
 
-				if("thevoicesvary")
-					var/datum/the_voices/B = GLOB.the_voices_list[the_voices_id]
-					var/voiceset = input(user, "Choose your desired baseline the voices pitch. Min: [initial(B.minvariance)]. Max: [initial(B.maxvariance)]", "Character Preference") as num|null
+				if("wttsvoicesvary")
+					var/datum/w_tts_voices/B = GLOB.w_tts_voices_list[w_tts_voices_id]
+					var/voiceset = input(user, "Choose your desired baseline voices pitch. Min: [initial(B.minvariance)]. Max: [initial(B.maxvariance)]", "Character Preference") as num|null
 					if(voiceset)
-						the_voices_variance = clamp(voiceset, initial(B.minvariance), initial(B.maxvariance))
+						w_tts_voices_variance = clamp(voiceset, initial(B.minvariance), initial(B.maxvariance))
 				// [/CELADON-ADD]
 		else
 			switch(href_list["preference"])
@@ -2885,8 +2885,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if("endofround_sounds")
 					toggles ^= SOUND_ENDOFROUND
 
-				// [CELADON-ADD] - CELADON_THE_VOICES - От порядка зависит в каком месте покажется настройка
-				if("sound_the_voices")
+				// [CELADON-ADD] - CELADON_W_TTS_VOICES - От порядка зависит в каком месте покажется настройка
+				if("sound_w_tts_voices")
 					toggles ^= SOUND_THE_VOICE
 				// [/CELADON-ADD]
 
@@ -2989,22 +2989,22 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							scaling_method = SCALING_METHOD_NORMAL
 					user.client.view_size.setZoomMode()
 
-				// [CELADON-ADD] - CELADON_THE_VOICES
-				if("thevoicespreview")
+				// [CELADON-ADD] - CELADON_W_TTS_VOICES
+				if("wttsvoicespreview")
 					if(SSticker.current_state == GAME_STATE_STARTUP) //Timers don't tick at all during game startup, so let's just give an error message
 						to_chat(user, "<span class='warning'>Voice previews can't play during initialization!</span>")
 						return
-					if(!COOLDOWN_FINISHED(src, the_voices_previewing))
+					if(!COOLDOWN_FINISHED(src, w_tts_voices_previewing))
 						return
 					if(!parent || !parent.mob)
 						return
-					COOLDOWN_START(src, the_voices_previewing, (5 SECONDS))
+					COOLDOWN_START(src, w_tts_voices_previewing, (5 SECONDS))
 					var/atom/movable/voicebox = new(get_turf(parent.mob))
-					voicebox.set_the_voices(the_voices_id)
+					voicebox.set_w_tts_voices(w_tts_voices_id)
 					var/total_delay
-					for(var/i in 1 to (round((32 / the_voices_speed)) + 1))
-						addtimer(CALLBACK(voicebox, /atom/movable/proc/the_voices, list(parent.mob), 7, 70, rand((the_voices_pitch * 100), (the_voices_pitch*100) + (the_voices_variance*100)) / 100), total_delay)
-						total_delay += rand(DS2TICKS(the_voices_speed/4), DS2TICKS(the_voices_speed/4) + DS2TICKS(the_voices_speed/4)) TICKS
+					for(var/i in 1 to (round((32 / w_tts_voices_speed)) + 1))
+						addtimer(CALLBACK(voicebox, /atom/movable/proc/w_tts_voices, list(parent.mob), 7, 70, rand((w_tts_voices_pitch * 100), (w_tts_voices_pitch*100) + (w_tts_voices_variance*100)) / 100), total_delay)
+						total_delay += rand(DS2TICKS(w_tts_voices_speed/4), DS2TICKS(w_tts_voices_speed/4) + DS2TICKS(w_tts_voices_speed/4)) TICKS
 					QDEL_IN(voicebox, total_delay)
 				// [/CELADON-ADD]
 
@@ -3022,10 +3022,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						real_name = random_unique_name(gender)
 						save_character()
 
-				if("character_tab") // [CELADON-EDIT] - CELADON_THE_VOICES - Улучшаем понимание кода // ORIGINAL // if("tab")
+				if("character_tab") // [CELADON-EDIT] - CELADON_W_TTS_VOICES - Улучшаем понимание кода // ORIGINAL // if("tab")
 					if (href_list["tab"])
 						current_tab = text2num(href_list["tab"])
-						if(current_tab == CHAR_LOADOUT_TAB) // [CELADON-EDIT] - CELADON_THE_VOICES - Улучшаем понимание кода // ORIGINAL // if(current_tab == 2)
+						if(current_tab == CHAR_LOADOUT_TAB) // [CELADON-EDIT] - CELADON_W_TTS_VOICES - Улучшаем понимание кода // ORIGINAL // if(current_tab == 2)
 							show_loadout = TRUE
 
 				if("clear_heart")
@@ -3080,11 +3080,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.skin_tone_tajara = skin_tone_tajara
 	// [CELADON-ADD] - CELADON_RIOL
 	character.skin_tone_riol = skin_tone_riol
-	// [CELADON-ADD] - CELADON_THE_VOICES
-	character.set_the_voices(the_voices_id)
-	character.vocal_speed = the_voices_speed
-	character.vocal_pitch = the_voices_pitch
-	character.vocal_pitch_range = the_voices_variance
+	// [CELADON-ADD] - CELADON_W_TTS_VOICES
+	character.set_w_tts_voices(w_tts_voices_id)
+	character.vocal_speed = w_tts_voices_speed
+	character.vocal_pitch = w_tts_voices_pitch
+	character.vocal_pitch_range = w_tts_voices_variance
 	// [/CELADON-ADD]
 	character.underwear = underwear
 	character.underwear_color = underwear_color

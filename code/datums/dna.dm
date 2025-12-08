@@ -121,11 +121,11 @@
 		L[DNA_FACIAL_HAIR_COLOR_BLOCK] = sanitize_hexcolor(H.facial_hair_color)
 		L[DNA_SKIN_TONE_BLOCK] = construct_block(GLOB.skin_tones.Find(H.skin_tone), GLOB.skin_tones.len)
 		L[DNA_EYE_COLOR_BLOCK] = sanitize_hexcolor(H.eye_color)
-		// [CELADON-ADD] - CELADON_THE_VOICES
-		L[DNA_THE_VOICES_SOUND_BLOCK] = construct_block(GLOB.the_voices_list.Find(H.vocal_the_voices_id), GLOB.the_voices_list.len)
-		L[DNA_THE_VOICES_SPEED_BLOCK] = construct_block(H.vocal_speed * 4, 16)
-		L[DNA_THE_VOICES_PITCH_BLOCK] = construct_block(H.vocal_pitch * 30, 48)
-		L[DNA_THE_VOICES_VARIANCE_BLOCK] = construct_block(H.vocal_pitch_range * 48, 48)
+		// [CELADON-ADD] - CELADON_W_TTS_VOICES
+		L[DNA_W_TTS_VOICES_SOUND_BLOCK] = construct_block(GLOB.w_tts_voices_list.Find(H.vocal_w_tts_voices_id), GLOB.w_tts_voices_list.len)
+		L[DNA_W_TTS_VOICES_SPEED_BLOCK] = construct_block(H.vocal_speed * 4, 16)
+		L[DNA_W_TTS_VOICES_PITCH_BLOCK] = construct_block(H.vocal_pitch * 30, 48)
+		L[DNA_W_TTS_VOICES_VARIANCE_BLOCK] = construct_block(H.vocal_pitch_range * 48, 48)
 		// [/CELADON-ADD]
 
 	for(var/i=1, i<=DNA_UNI_IDENTITY_BLOCKS, i++)
@@ -216,14 +216,14 @@
 			setblock(uni_identity, blocknumber, construct_block(GLOB.facial_hairstyles_list.Find(H.facial_hairstyle), GLOB.facial_hairstyles_list.len))
 		if(DNA_HAIRSTYLE_BLOCK)
 			setblock(uni_identity, blocknumber, construct_block(GLOB.hairstyles_list.Find(H.hairstyle), GLOB.hairstyles_list.len))
-		// [CELADON-ADD] - CELADON_THE_VOICES
-		if(DNA_THE_VOICES_SOUND_BLOCK)
-			setblock(uni_identity, blocknumber, construct_block(GLOB.the_voices_list.Find(H.vocal_the_voices_id), GLOB.the_voices_list.len))
-		if(DNA_THE_VOICES_SPEED_BLOCK)
+		// [CELADON-ADD] - CELADON_W_TTS_VOICES
+		if(DNA_W_TTS_VOICES_SOUND_BLOCK)
+			setblock(uni_identity, blocknumber, construct_block(GLOB.w_tts_voices_list.Find(H.vocal_w_tts_voices_id), GLOB.w_tts_voices_list.len))
+		if(DNA_W_TTS_VOICES_SPEED_BLOCK)
 			setblock(uni_identity, blocknumber, construct_block(H.vocal_speed * 4, 16))
-		if(DNA_THE_VOICES_PITCH_BLOCK)
+		if(DNA_W_TTS_VOICES_PITCH_BLOCK)
 			setblock(uni_identity, blocknumber, construct_block(H.vocal_pitch * 30, 48))
-		if(DNA_THE_VOICES_VARIANCE_BLOCK)
+		if(DNA_W_TTS_VOICES_VARIANCE_BLOCK)
 			setblock(uni_identity, blocknumber, construct_block(H.vocal_pitch_range * 48, 48))
 		// [/CELADON-ADD]
 
@@ -448,11 +448,11 @@
 			update_body_parts()
 		if(mutations_overlay_update)
 			update_mutations_overlay()
-		// [CELADON-ADD] - CELADON_THE_VOICES
-		set_the_voices(GLOB.the_voices_list[deconstruct_block(getblock(structure, DNA_THE_VOICES_SOUND_BLOCK), GLOB.the_voices_list.len)])
-		vocal_speed = (deconstruct_block(getblock(structure, DNA_THE_VOICES_PITCH_BLOCK), 16) / 16)
-		vocal_pitch = (deconstruct_block(getblock(structure, DNA_THE_VOICES_PITCH_BLOCK), 48) / 30)
-		vocal_pitch_range = (deconstruct_block(getblock(structure, DNA_THE_VOICES_VARIANCE_BLOCK), 48) / 48)
+		// [CELADON-ADD] - CELADON_W_TTS_VOICES
+		set_w_tts_voices(GLOB.w_tts_voices_list[deconstruct_block(getblock(structure, DNA_W_TTS_VOICES_SOUND_BLOCK), GLOB.w_tts_voices_list.len)])
+		vocal_speed = (deconstruct_block(getblock(structure, DNA_W_TTS_VOICES_PITCH_BLOCK), 16) / 16)
+		vocal_pitch = (deconstruct_block(getblock(structure, DNA_W_TTS_VOICES_PITCH_BLOCK), 48) / 30)
+		vocal_pitch_range = (deconstruct_block(getblock(structure, DNA_W_TTS_VOICES_VARIANCE_BLOCK), 48) / 48)
 		// [/CELADON-ADD]
 
 

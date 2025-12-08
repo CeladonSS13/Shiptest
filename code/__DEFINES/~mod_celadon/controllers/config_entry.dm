@@ -1,1 +1,1 @@
-/datum/config_entry/flag/enable_global_the_voices
+/datum/config_entry/flag/enable_global_w_tts_voices

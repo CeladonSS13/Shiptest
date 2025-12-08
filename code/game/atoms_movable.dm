@@ -81,21 +81,21 @@
 	/// Whether a user will face atoms on entering them with a mouse. Despite being a mob variable, it is here for performance
 	var/face_mouse = FALSE
 
-	// [CELADON-ADD] - CELADON_THE_VOICES
+	// [CELADON-ADD] - CELADON_W_TTS_VOICES
 	/// How loudly we yell
 	var/yell_power = 50
 	/// last time we yelled
 	var/last_yell = 0
 
 	// Text-to-voice sounds
-	var/sound/vocal_the_voices
-	var/vocal_the_voices_id
+	var/sound/vocal_w_tts_voices
+	var/vocal_w_tts_voices_id
 	var/vocal_pitch = 1
 	var/vocal_pitch_range = 0.2 //Actual pitch is (pitch - (vocal_pitch_range*0.5)) to (pitch + (vocal_pitch_range*0.5))
 	var/vocal_volume = 70 //Baseline. This gets modified by yelling and other factors
 	var/vocal_speed = 4 //Lower values are faster, higher values are slower
 
-	var/vocal_current_the_voices //When voices are queued, this gets passed to the voice proc. If vocal_current the voices doesn't match the args passed to the voice proc (if passed at all), then the voice simply doesn't play. Basic curtailing of spam~
+	var/vocal_current_w_tts_voices //When voices are queued, this gets passed to the voice proc. If vocal_current the voices doesn't match the args passed to the voice proc (if passed at all), then the voice simply doesn't play. Basic curtailing of spam~
 	// [/CELADON-ADD]
 
 /atom/movable/Initialize(mapload)

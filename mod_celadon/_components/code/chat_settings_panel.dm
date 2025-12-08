@@ -100,7 +100,7 @@
 	data["announcements"] 	= C.prefs.toggles & SOUND_ANNOUNCEMENTS
 	data["endofround"] 		= C.prefs.toggles & SOUND_ENDOFROUND
 	data["jukebox"] 		= C.prefs.toggles & SOUND_JUKEBOX
-	data["the_voices"] 		= C.prefs.toggles & SOUND_THE_VOICE // CELADON_THE_VOICES
+	data["w_tts_voices"] 		= C.prefs.toggles & SOUND_THE_VOICE // CELADON_W_TTS_VOICES
 
 	return data
 
@@ -144,7 +144,7 @@
 		if("jukebox")
 			C.prefs.toggles ^= SOUND_JUKEBOX
 			usr.stop_sound_channel(CHANNEL_JUKEBOX)
-		if("the_voices")		// CELADON_THE_VOICES
+		if("w_tts_voices")		// CELADON_W_TTS_VOICES
 			C.prefs.toggles ^= SOUND_THE_VOICE
 
 	C.prefs.save_preferences()

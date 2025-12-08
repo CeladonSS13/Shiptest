@@ -2,7 +2,7 @@
 /// desc - описание для модпака. Может использоваться для списка глаголов модпака в качестве описания.
 /// author - автор(ы) этого модпака.
 
-/datum/modpack/the_voices
+/datum/modpack/w_tts_voices
 	name = "THE VOICES"
 	desc = "Этот мод добавляет блупер, он же БАРК, он же THE VOICES. Возможность наполнить игру звуками."
 	author = "MrCat15352"
@@ -15,13 +15,13 @@
 /// (можешь использовать все три, но запуск билда увеличится на 0.1 сек, за каждый датум в модпаке)
 
 // Инициализация ДО
-/datum/modpack/the_voices/pre_initialize()
+/datum/modpack/w_tts_voices/pre_initialize()
 	. = ..()
 
 // Инициализация ВОВРЕМЯ
-/datum/modpack/the_voices/initialize()
+/datum/modpack/w_tts_voices/initialize()
 	. = ..()
 
 // Инициализация ПОСЛЕ
-/datum/modpack/the_voices/post_initialize()
+/datum/modpack/w_tts_voices/post_initialize()
 	. = ..()

@@ -3,7 +3,7 @@
 	set category = "Debug"
 	new /datum/sound_panel(usr)
 
-/client/verb/check_the_voices_define()
+/client/verb/check_w_tts_voices_define()
 	set name = "Check SOUND THE VOICE"
 	set category = "Debug"
 
@@ -11,7 +11,7 @@
 	to_chat(src, "prefs.toggles: [prefs.toggles]")
 	to_chat(src, "Has SOUND_THE_VOICE: [prefs.toggles & SOUND_THE_VOICE]")
 
-/client/verb/test_enable_the_voices()
+/client/verb/test_enable_w_tts_voices()
     set name = "Enable THE VOICES Sound"
     set category = "Debug"
 

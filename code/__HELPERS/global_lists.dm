@@ -110,12 +110,12 @@
 		GLOB.name_occupations[new_job.name] = new_job
 		GLOB.type_occupations[path] = new_job
 
-	// [CELADON-ADD] - CELADON_THE_VOICES
-	for(var/path in subtypesof(/datum/the_voices))
-		var/datum/the_voices/B = new path()
-		GLOB.the_voices_list[B.id] = B
+	// [CELADON-ADD] - CELADON_W_TTS_VOICES
+	for(var/path in subtypesof(/datum/w_tts_voices))
+		var/datum/w_tts_voices/B = new path()
+		GLOB.w_tts_voices_list[B.id] = B
 		if(B.allow_random)
-			GLOB.the_voices_random_list[B.id] = B
+			GLOB.w_tts_voices_random_list[B.id] = B
 	// [/CELADON-ADD]
 	// Keybindings
 	init_keybindings()

@@ -5,7 +5,7 @@
 //	You do not need to raise this if you are adding new values that have sane defaults.
 //	Only raise this value when changing the meaning/format/name/layout of an existing value
 //	where you would want the updater procs below to run
-#define SAVEFILE_VERSION_MAX 43	// [CELADON-EDIT] - CELADON_THE_VOICES // ORIGINAL // #define SAVEFILE_VERSION_MAX 42
+#define SAVEFILE_VERSION_MAX 43	// [CELADON-EDIT] - CELADON_W_TTS_VOICES // ORIGINAL // #define SAVEFILE_VERSION_MAX 42
 
 /*
 SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Carn
@@ -94,7 +94,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 		toggles |= SOUND_RADIO
 
-	// [CELADON-ADD] - CELADON_THE_VOICES
+	// [CELADON-ADD] - CELADON_W_TTS_VOICES
 	if(current_version < 43) //Bitflag toggles don't set their defaults when they're added, always defaulting to off instead.
 		toggles |= SOUND_THE_VOICE
 	// [/CELADON-ADD]
@@ -572,12 +572,12 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	//Flavor Text
 	S["feature_flavor_text"]		>> features["flavor_text"]
 
-	// [CELADON-ADD] - CELADON_THE_VOICES
+	// [CELADON-ADD] - CELADON_W_TTS_VOICES
 	// Voices
-	S["the_voices_id"] >> the_voices_id
-	S["the_voices_speed"] >> the_voices_speed
-	S["the_voices_pitch"] >> the_voices_pitch
-	S["the_voices_variance"] >> the_voices_variance
+	S["w_tts_voices_id"] >> w_tts_voices_id
+	S["w_tts_voices_speed"] >> w_tts_voices_speed
+	S["w_tts_voices_pitch"] >> w_tts_voices_pitch
+	S["w_tts_voices_variance"] >> w_tts_voices_variance
 	// [/CELADON-ADD]
 
 	//try to fix any outdated data if necessary
@@ -723,12 +723,12 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	features["riol_tail_markings_color"]		= sanitize_hexcolor(features["riol_tail_markings_color"])
 	// [/CELADON-ADD]
 
-	// [CELADON-ADD] - CELADON_THE_VOICES
-	the_voices_id = sanitize_inlist(the_voices_id, GLOB.the_voices_list, pick(GLOB.the_voices_random_list))
-	var/datum/the_voices/the_voices_path = GLOB.the_voices_list[the_voices_id]
-	the_voices_speed = sanitize_num_clamp(the_voices_speed, initial(the_voices_path.minspeed), initial(the_voices_path.maxspeed), initial(the_voices_speed))
-	the_voices_pitch = sanitize_num_clamp(the_voices_pitch, initial(the_voices_path.minpitch), initial(the_voices_path.maxpitch), THE_VOICES_PITCH_RAND(gender))
-	the_voices_variance = sanitize_num_clamp(the_voices_variance, initial(the_voices_path.minvariance), initial(the_voices_path.maxvariance), THE_VOICES_VARIANCE_RAND)
+	// [CELADON-ADD] - CELADON_W_TTS_VOICES
+	w_tts_voices_id = sanitize_inlist(w_tts_voices_id, GLOB.w_tts_voices_list, pick(GLOB.w_tts_voices_random_list))
+	var/datum/w_tts_voices/w_tts_voices_path = GLOB.w_tts_voices_list[w_tts_voices_id]
+	w_tts_voices_speed = sanitize_num_clamp(w_tts_voices_speed, initial(w_tts_voices_path.minspeed), initial(w_tts_voices_path.maxspeed), initial(w_tts_voices_speed))
+	w_tts_voices_pitch = sanitize_num_clamp(w_tts_voices_pitch, initial(w_tts_voices_path.minpitch), initial(w_tts_voices_path.maxpitch), W_TTS_VOICES_PITCH_RAND(gender))
+	w_tts_voices_variance = sanitize_num_clamp(w_tts_voices_variance, initial(w_tts_voices_path.minvariance), initial(w_tts_voices_path.maxvariance), W_TTS_VOICES_VARIANCE_RAND)
 	// [/CELADON-ADD]
 
 	all_quirks = SANITIZE_LIST(all_quirks)
@@ -848,11 +848,11 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["riol_tail_markings_color"], 		features["riol_tail_markings_color"])
 	// [/CELADON-ADD]
 
-	// [CELADON-ADD] - CELADON_THE_VOICES
-	WRITE_FILE(S["the_voices_id"], 						the_voices_id)
-	WRITE_FILE(S["the_voices_speed"], 					the_voices_speed)
-	WRITE_FILE(S["the_voices_pitch"], 					the_voices_pitch)
-	WRITE_FILE(S["the_voices_variance"], 					the_voices_variance)
+	// [CELADON-ADD] - CELADON_W_TTS_VOICES
+	WRITE_FILE(S["w_tts_voices_id"], 						w_tts_voices_id)
+	WRITE_FILE(S["w_tts_voices_speed"], 					w_tts_voices_speed)
+	WRITE_FILE(S["w_tts_voices_pitch"], 					w_tts_voices_pitch)
+	WRITE_FILE(S["w_tts_voices_variance"], 					w_tts_voices_variance)
 	// [/CELADON-ADD]
 
 	//Flavor text

@@ -11,7 +11,7 @@
 <!-- Название мода. Не важно на русском или на английском. -->
 ## НАЗВАНИЕ_МОДА
 
-ID мода: CELADON_THE_VOICES
+ID мода: CELADON_W_TTS_VOICES
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -41,7 +41,7 @@ ID мода: CELADON_THE_VOICES
 
 ### Изменения *кор кода*
 
-CELADON_THE_VOICES
+CELADON_W_TTS_VOICES
 - `code/__DEFINES/DNA.dm`								: Блоки днк дефайнов
 - `code/__DEFINES/preferences.dm`						: Задаем стандртные значения для дефайна
 - `code/__HELPERS/global_lists.dm`						: Определяем сабтип
@@ -87,7 +87,7 @@ CELADON_THE_VOICES
   И то же самое, если ты используешь дефайны, определённые другим модом.
 
   Не используешь - напиши "Отсутствуют"
-  Примеры: `code/__defines/~mod_celadon/the_voices.dm`: `THE_VOICES_SPEED_MULTIPLIER`, `THE_VOICES_SPEED_BASE`
+  Примеры: `code/__defines/~mod_celadon/w_tts_voices.dm`: `W_TTS_VOICES_SPEED_MULTIPLIER`, `W_TTS_VOICES_SPEED_BASE`
 -->
 
 ### Используемые файлы, не содержащиеся в модпаке

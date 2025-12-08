@@ -32,11 +32,11 @@
 	H.dna.blood_type = random_blood_type()
 	H.generic_adjective = pick_species_adjective(H)
 
-	// [CELADON-ADD] - CELADON_THE_VOICES
-	// if((GLOB.the_voices_random_list != NULL) ? H.set_the_voices(pick(GLOB.the_voices_random_list)) : "null")
-	H.set_the_voices("mutedc3")
-	H.vocal_pitch = THE_VOICES_PITCH_RAND(H.gender)
-	H.vocal_pitch_range = THE_VOICES_VARIANCE_RAND
+	// [CELADON-ADD] - CELADON_W_TTS_VOICES
+	// if((GLOB.w_tts_voices_random_list != NULL) ? H.set_w_tts_voices(pick(GLOB.w_tts_voices_random_list)) : "null")
+	H.set_w_tts_voices("mutedc3")
+	H.vocal_pitch = W_TTS_VOICES_PITCH_RAND(H.gender)
+	H.vocal_pitch_range = W_TTS_VOICES_VARIANCE_RAND
 	// [/CELADON-ADD]
 
 	// Mutant randomizing, doesn't affect the mob appearance unless it's the specific mutant.
@@ -88,8 +88,8 @@
 	H.update_body()
 	H.update_hair()
 
-	// [CELADON-ADD] - CELADON_THE_VOICES
-	H.set_the_voices(pick(GLOB.the_voices_random_list))
+	// [CELADON-ADD] - CELADON_W_TTS_VOICES
+	H.set_w_tts_voices(pick(GLOB.w_tts_voices_random_list))
 	H.vocal_pitch = ((H.gender == MALE ? rand(60, 120) : (H.gender == FEMALE ? rand(80, 140) : rand(60,140))) / 100)
 	H.vocal_pitch_range = rand(10, 40) / 100
 	// [/CELADON-ADD]

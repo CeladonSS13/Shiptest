@@ -13,7 +13,7 @@ interface SoundSetting {
   announcements: boolean;
   endofround: boolean;
   jukebox: boolean;
-  the_voices: boolean;
+  w_tts_voices: boolean;
 }
 
 type SoundPanelSettingsProps = {};
@@ -30,7 +30,7 @@ export function SoundPanelSettings(props: SoundPanelSettingsProps, context) {
     announcements,
     endofround,
     jukebox,
-    the_voices,
+    w_tts_voices,
   } = data;
   return (
     <Window width={250} height={400} title="Настройки звука">
@@ -42,10 +42,18 @@ export function SoundPanelSettings(props: SoundPanelSettingsProps, context) {
             { k: 'instruments', v: instruments, t: 'Музыкальные инструменты' },
             { k: 'endofround', v: endofround, t: 'Звук конца раунда' },
             { k: 'jukebox', v: jukebox, t: 'Музыкальный автомат' },
-            { k: 'the_voices', v: the_voices, t: 'Голоса TTS (Voice)' },
-            { k: 'announcements', v: announcements, t: 'Оповещения (Announcements)', },
+            { k: 'w_tts_voices', v: w_tts_voices, t: 'Голоса TTS (Voice)' },
+            {
+              k: 'announcements',
+              v: announcements,
+              t: 'Оповещения (Announcements)',
+            },
             { k: 'ambience', v: ambience, t: 'Окружение (Ambience)' },
-            { k: 'ship_ambience', v: ship_ambience, t: 'Шум корабля (Ambience)', },
+            {
+              k: 'ship_ambience',
+              v: ship_ambience,
+              t: 'Шум корабля (Ambience)',
+            },
           ].map(({ k, v, t }) => (
             <Button
               key={k}

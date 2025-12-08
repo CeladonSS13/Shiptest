@@ -79,19 +79,19 @@ GLOBAL_LIST_INIT(freqcolor, list())
 * If FALSE, this check will always fail if the movable has a mind and is miming.
 * if TRUE, we will check if the movable can speak irregardless
 */
-// [CELADON-ADD] - CELADON_THE_VOICES
-/atom/movable/proc/the_voices(list/hearers, distance, volume, pitch, queue_time)
-	if(queue_time && vocal_current_the_voices != queue_time)
+// [CELADON-ADD] - CELADON_W_TTS_VOICES
+/atom/movable/proc/w_tts_voices(list/hearers, distance, volume, pitch, queue_time)
+	if(queue_time && vocal_current_w_tts_voices != queue_time)
 		return
-	if(SEND_SIGNAL(src, COMSIG_MOVABLE_THE_VOICES, hearers, distance, volume, pitch))
+	if(SEND_SIGNAL(src, COMSIG_MOVABLE_W_TTS_VOICES, hearers, distance, volume, pitch))
 		return
-	if(!vocal_the_voices)
-		if(!vocal_the_voices_id || !set_the_voices(vocal_the_voices_id))
+	if(!vocal_w_tts_voices)
+		if(!vocal_w_tts_voices_id || !set_w_tts_voices(vocal_w_tts_voices_id))
 			return
 	volume = min(volume, 100)
 	var/turf/T = get_turf(src)
 	for(var/mob/M in hearers)
-		M.playsound_local(T, vol = volume, vary = TRUE, frequency = pitch, max_distance = distance, falloff_distance = 0, falloff_exponent = THE_VOICES_SOUND_FALLOFF_EXPONENT(distance), S = vocal_the_voices, distance_multiplier = 1)
+		M.playsound_local(T, vol = volume, vary = TRUE, frequency = pitch, max_distance = distance, falloff_distance = 0, falloff_exponent = W_TTS_VOICES_SOUND_FALLOFF_EXPONENT(distance), S = vocal_w_tts_voices, distance_multiplier = 1)
 		// to_chat(world, "DEBUG: Called for [M.name]")
 // [/CELADON-ADD]
 
@@ -100,7 +100,7 @@ GLOBAL_LIST_INIT(freqcolor, list())
 	return !HAS_TRAIT(src, TRAIT_MUTE)
 
 /atom/movable/proc/send_speech(message, range = 7, obj/source = src, bubble_type, list/spans, datum/language/message_language = null, list/message_mods = list())
-	// [CELADON-EDIT] - CELADON_THE_VOICES
+	// [CELADON-EDIT] - CELADON_W_TTS_VOICES
 	// var/rendered = compose_message(src, message_language, message, , spans, message_mods)
 	// for(var/atom/movable/AM as anything in get_hearers_in_view(range, source))
 	// 	AM.Hear(rendered, src, message_language, message, , spans, message_mods.Copy())	// ORIGINAL
@@ -109,23 +109,23 @@ GLOBAL_LIST_INIT(freqcolor, list())
 	for(var/_AM in hearers)
 		var/atom/movable/AM = _AM
 		AM.Hear(rendered, src, message_language, message, , spans, message_mods, source)
-	if(SEND_SIGNAL(src, COMSIG_MOVABLE_QUEUE_THE_VOICES, hearers, args) || vocal_the_voices || vocal_the_voices_id)
+	if(SEND_SIGNAL(src, COMSIG_MOVABLE_QUEUE_W_TTS_VOICES, hearers, args) || vocal_w_tts_voices || vocal_w_tts_voices_id)
 		for(var/mob/M in hearers)
 			if(!M.client)
 				continue
 			if(!(M.client.prefs.toggles & SOUND_THE_VOICE))
 				hearers -= M
-		var/voices = min(round((LAZYLEN(message) / vocal_speed)) + 1, THE_VOICES_MAX_VOICES)
+		var/voices = min(round((LAZYLEN(message) / vocal_speed)) + 1, W_TTS_VOICES_MAX_VOICES)
 		var/total_delay
-		vocal_current_the_voices = world.time //this is juuuuust random enough to reliably be unique every time send_speech() is called, in most scenarios
+		vocal_current_w_tts_voices = world.time //this is juuuuust random enough to reliably be unique every time send_speech() is called, in most scenarios
 		for(var/i in 1 to voices)
-			if(total_delay > THE_VOICES_MAX_TIME)
+			if(total_delay > W_TTS_VOICES_MAX_TIME)
 				break
-			addtimer(CALLBACK(src, PROC_REF(the_voices), hearers, range, vocal_volume, THE_VOICES_DO_VARY(vocal_pitch, vocal_pitch_range), vocal_current_the_voices), total_delay)
-			total_delay += rand(DS2TICKS(vocal_speed / THE_VOICES_SPEED_BASELINE), DS2TICKS(vocal_speed / THE_VOICES_SPEED_BASELINE) + DS2TICKS(vocal_speed / THE_VOICES_SPEED_BASELINE)) TICKS
+			addtimer(CALLBACK(src, PROC_REF(w_tts_voices), hearers, range, vocal_volume, W_TTS_VOICES_DO_VARY(vocal_pitch, vocal_pitch_range), vocal_current_w_tts_voices), total_delay)
+			total_delay += rand(DS2TICKS(vocal_speed / W_TTS_VOICES_SPEED_BASELINE), DS2TICKS(vocal_speed / W_TTS_VOICES_SPEED_BASELINE) + DS2TICKS(vocal_speed / W_TTS_VOICES_SPEED_BASELINE)) TICKS
 	// [/CELADON-EDIT]
 
-// [CELADON-EDIT] - CELADON_THE_VOICES
+// [CELADON-EDIT] - CELADON_W_TTS_VOICES
 // /atom/movable/proc/compose_message(atom/movable/speaker, datum/language/message_language, raw_message, radio_freq, list/spans, list/message_mods = list(), face_name = FALSE)	// ORIGINAL
 /atom/movable/proc/compose_message(atom/movable/speaker, datum/language/message_language, raw_message, radio_freq, list/spans, list/message_mods = list(), face_name = FALSE, atom/movable/source)
 	if(!source)

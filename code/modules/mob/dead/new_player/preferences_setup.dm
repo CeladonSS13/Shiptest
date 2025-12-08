@@ -47,10 +47,10 @@
 		var/rando_race = pick(GLOB.roundstart_races)
 		pref_species = new rando_race()
 	features = random_features()
-	// [CELADON-ADD] - CELADON_THE_VOICES - Дает спавнящимся мобам рандомный голос и параметры
-	the_voices_id = pick(GLOB.the_voices_random_list)
-	the_voices_pitch = ((gender == MALE ? rand(60, 120) : (gender == FEMALE ? rand(80, 140) : rand(60,140))) / 100)
-	the_voices_variance = rand(10, 40) / 100
+	// [CELADON-ADD] - CELADON_W_TTS_VOICES - Дает спавнящимся мобам рандомный голос и параметры
+	w_tts_voices_id = pick(GLOB.w_tts_voices_random_list)
+	w_tts_voices_pitch = ((gender == MALE ? rand(60, 120) : (gender == FEMALE ? rand(80, 140) : rand(60,140))) / 100)
+	w_tts_voices_variance = rand(10, 40) / 100
 	// [/CELADON-ADD]
 
 /datum/preferences/proc/random_species()

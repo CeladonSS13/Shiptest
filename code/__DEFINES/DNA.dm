@@ -73,7 +73,7 @@
 //DNA - Because fuck you and your magic numbers being all over the codebase.
 #define DNA_BLOCK_SIZE 3
 
-// #define DNA_UNI_IDENTITY_BLOCKS 7	// [CELADON-REMOVE] - CELADON_THE_VOICES - Поднят до 11. См. тут code/__DEFINES/~mod_celadon/DNA.dm
+// #define DNA_UNI_IDENTITY_BLOCKS 7	// [CELADON-REMOVE] - CELADON_W_TTS_VOICES - Поднят до 11. См. тут code/__DEFINES/~mod_celadon/DNA.dm
 #define DNA_HAIR_COLOR_BLOCK 1
 #define DNA_FACIAL_HAIR_COLOR_BLOCK 2
 #define DNA_SKIN_TONE_BLOCK 3

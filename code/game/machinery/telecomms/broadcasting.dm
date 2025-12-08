@@ -221,7 +221,7 @@
 		if(M.client.prefs.chat_toggles & CHAT_GHOSTRADIO)
 			receive |= M
 
-	// [CELADON-ADD] - CELADON_THE_VOICES
+	// [CELADON-ADD] - CELADON_W_TTS_VOICES
 	// Add observers who have ghost voice enabled.
 	for(var/mob/dead/observer/V in GLOB.player_list)
 		if(V.client.prefs.chat_toggles & SOUND_THE_VOICE)
