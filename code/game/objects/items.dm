@@ -1181,10 +1181,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	if((item_flags & ABSTRACT) || HAS_TRAIT(src, TRAIT_NODROP))
 		return
 	user.dropItemToGround(src, silent = TRUE)
-	// [CELADON-EDIT] - TWEAK_PACIFIST_TRAIT - Пацифисты не хотят вредить живым существам, но могут бросать предметы в неживые объекты
-	// if(throwforce && HAS_TRAIT(user, TRAIT_PACIFISM))	// ORIGINAL
-	if(throwforce && HAS_TRAIT(user, TRAIT_PACIFISM) && isliving(target))
-	// [/CELADON-EDIT]
+	if(throwforce && HAS_TRAIT(user, TRAIT_PACIFISM))
 		to_chat(user, span_notice("You set [src] down gently on the ground."))
 		return
 	return src
