@@ -115,14 +115,14 @@
 		. += front_id.overlays
 		. += mutable_appearance(icon, get_wallet_overlay_state())
 
-	if(has_cash)
-		. += mutable_appearance(icon, get_cash_overlay_state(max_cash_value))
 	if(has_card)
 		. += mutable_appearance(icon, "cashcard_overlay")
-	if(has_key)
-		. += mutable_appearance(icon, "keys_overlay")
+	if(has_cash)
+		. += mutable_appearance(icon, get_cash_overlay_state(max_cash_value))
 	if(has_chip)
 		. += mutable_appearance(icon, get_cashchip_overlay_state(max_chip_value))
+	if(has_key)
+		. += mutable_appearance(icon, "keys_overlay")
 	// [/CELADON-EDIT]
 
 /obj/item/storage/wallet/proc/get_cash_overlay_state(value)
