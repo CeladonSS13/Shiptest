@@ -4,6 +4,8 @@
 	..()
 	H.verbs |= /mob/living/carbon/human/proc/emote_wag
 	H.verbs |= /mob/living/carbon/human/proc/emote_fpurr
+	H.verbs |= /mob/living/carbon/human/proc/emote_howl
+	H.verbs |= /mob/living/carbon/human/proc/emote_growl
 	H.verbs |= /mob/living/carbon/human/proc/emote_fwhine
 	H.verbs |= /mob/living/carbon/human/proc/emote_yip
 	H.verbs |= /mob/living/carbon/human/proc/bite_feral_switch
@@ -12,6 +14,8 @@
 	..()
 	H.verbs -= /mob/living/carbon/human/proc/emote_wag
 	H.verbs -= /mob/living/carbon/human/proc/emote_fpurr
+	H.verbs -= /mob/living/carbon/human/proc/emote_howl
+	H.verbs -= /mob/living/carbon/human/proc/emote_growl
 	H.verbs -= /mob/living/carbon/human/proc/emote_fwhine
 	H.verbs -= /mob/living/carbon/human/proc/emote_yip
 	H.verbs -= /mob/living/carbon/human/proc/bite_feral_switch

@@ -54,3 +54,30 @@
 				'mod_celadon/_storage_sounds/sound/fox11.ogg',
 				'mod_celadon/_storage_sounds/sound/fox12.ogg',
 				'mod_celadon/_storage_sounds/sound/fox13.ogg')
+
+/datum/emote/living/carbon/human/riol/howl
+	key = "howl"
+	key_third_person = "howls"
+	message = "воет."
+	message_mime = "делает вид, что воет."
+	message_param = "воет на %t."
+	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+	cooldown = 10 SECONDS
+
+/datum/emote/living/carbon/human/riol/howl/get_sound(mob/living/user)
+	return 'mod_celadon/_storage_sounds/sound/riol/howl.ogg'
+
+/datum/emote/living/carbon/human/riol/growl
+	key = "growl"
+	key_third_person = "growls"
+	message = "рычит."
+	message_mime = "бусшумно рычит."
+	message_param = "рычит на %t."
+	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+
+/datum/emote/living/carbon/human/riol/growl/get_sound(mob/living/user)
+	return pick(
+		'mod_celadon/_storage_sounds/sound/riol/growl1.ogg',
+		'mod_celadon/_storage_sounds/sound/riol/growl2.ogg',
+		'mod_celadon/_storage_sounds/sound/riol/growl3.ogg',
+	)
