@@ -215,18 +215,19 @@
 	. = ..()
 	update_appearance()
 
-/turf/open/floor/carpet/update_icon()
-	. = ..()
-	if(!..())
-		return 0
-	if(!broken && !burnt)
-		if(smoothing_flags & (SMOOTH_CORNERS|SMOOTH_BITMASK))
-			QUEUE_SMOOTH(src)
-	else
-		make_plating()
-		if(smoothing_flags & (SMOOTH_CORNERS|SMOOTH_BITMASK))
-			QUEUE_SMOOTH_NEIGHBORS(src)
-
+// [CELADON-REMOVE] - FIXES_INFINITI_LOOP_CARPET_DEL - Убираем, ибо старый метод, берет от родителя который не чуть не хуже работает. Таже трава от него берет
+// /turf/open/floor/carpet/update_icon()
+// 	. = ..()
+// 	if(!..())
+// 		return 0
+// 	if(!broken && !burnt)
+// 		if(smoothing_flags & (SMOOTH_CORNERS|SMOOTH_BITMASK))
+// 			QUEUE_SMOOTH(src)
+// 	else
+// 		make_plating()
+// 		if(smoothing_flags & (SMOOTH_CORNERS|SMOOTH_BITMASK))
+// 			QUEUE_SMOOTH_NEIGHBORS(src)
+// [/CELADON-REMOVE]
 ///Carpet variant for mapping aid, functionally the same as parent after smoothing.
 /turf/open/floor/carpet/lone
 	icon_state = "carpet-0"

@@ -33,6 +33,7 @@ FIXES_MONKEY_STOPPED_DEAD
 FIXES_MONKEY_STOPPED_PICKPOCKET
 FIXES_ANTAG_NINJA
 FIXES_MEDBOT_RUNTIME_PATH_NULL
+FIXES_INFINITI_LOOP_CARPET_DEL
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -359,6 +360,9 @@ FIXES_HOLO_ESWORD
 FIXES_MASK_ON_KEPORI
 - `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Добавляем проверку на проклятость маски для кепори
 
+FIXES_INFINITI_LOOP_CARPET_DEL
+- `code/game/turfs/open/floor/fancy_floor.dm` 	: Убираем, ибо старый метод, берет от родителя который не чуть не хуже работает. Таже трава от него берет
+- `code/datums/components/_component.dm` 		: Обмазываем проверками на bad index который вызывается у всего что горит и не горит
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

@@ -326,9 +326,20 @@
  */
 /datum/proc/_SendSignal(sigtype, list/arguments)
 	var/target = comp_lookup[sigtype]
-	if(!length(target))
+	// [CELADON-EDIT] - FIXES_INFINITI_LOOP_CARPET_DEL - Водим проверки на несуществующие списки
+	// if(!length(target))
+	// 	var/datum/listening_datum = target
+	// 	return NONE | call(listening_datum, listening_datum.signal_procs[src][sigtype])(arglist(arguments))	// ORIGINAL
+	if(!target)
+		return NONE
+	if(!islist(target))
 		var/datum/listening_datum = target
-		return NONE | call(listening_datum, listening_datum.signal_procs[src][sigtype])(arglist(arguments))
+		if(listening_datum && listening_datum.signal_procs && listening_datum.signal_procs[src])
+			var/proc_ref = listening_datum.signal_procs[src][sigtype]
+			if(proc_ref)
+				return NONE | call(listening_datum, proc_ref)(arglist(arguments))
+		return NONE
+	// [/CELADON-EDIT]
 	. = NONE
 	// This exists so that even if one of the signal receivers unregisters the signal,
 	// all the objects that are receiving the signal get the signal this final time.
@@ -337,9 +348,19 @@
 	// This should be faster than doing `var/datum/listening_datum as anything in target` as it does not implicitly copy the list
 	for(var/i in 1 to length(target))
 		var/datum/listening_datum = target[i]
-		queued_calls.Add(listening_datum, listening_datum.signal_procs[src][sigtype])
+		// [CELADON-EDIT] - FIXES_INFINITI_LOOP_CARPET_DEL - Проверяем на остаточный сигнал, если там не список пришел
+		// queued_calls.Add(listening_datum, listening_datum.signal_procs[src][sigtype])	// ORIGINAL
+		if(listening_datum && listening_datum.signal_procs && listening_datum.signal_procs[src])
+			var/proc_ref = listening_datum.signal_procs[src][sigtype]
+			if(proc_ref)
+				queued_calls.Add(listening_datum, proc_ref)
+		// [/CELADON-EDIT]
 	for(var/i in 1 to length(queued_calls) step 2)
-		. |= call(queued_calls[i], queued_calls[i + 1])(arglist(arguments))
+		// [CELADON-EDIT] - FIXES_INFINITI_LOOP_CARPET_DEL
+		// . |= call(queued_calls[i], queued_calls[i + 1])(arglist(arguments))	// ORIGINAL
+		if(i + 1 <= length(queued_calls))
+			. |= call(queued_calls[i], queued_calls[i + 1])(arglist(arguments))
+		// [/CELADON-EDIT]
 
 // The type arg is casted so initial works, you shouldn't be passing a real instance into this
 /**
