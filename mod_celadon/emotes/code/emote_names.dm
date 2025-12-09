@@ -552,6 +552,12 @@
 /datum/emote/living/carbon/human/fpurrl
 	name = EMOTE_SPECIES_FPURR
 
+/datum/emote/living/carbon/human/yip
+	name = EMOTE_SPECIES_YIP
+
+/datum/emote/living/carbon/human/fwhine
+	name = EMOTE_SPECIES_FWHINE
+
 /datum/emote/living/carbon/human/waves_k
 	name = EMOTE_SPECIES_WAVES_K
 
