@@ -127,7 +127,7 @@
 
 /obj/item/storage/wallet/proc/get_cash_overlay_state(value)
 	switch(value)
-		if(0 to 999)
+		if(1 to 999)
 			return "cash_overlay_1"
 		if(1000 to 2499)
 			return "cash_overlay_1000"
@@ -138,7 +138,7 @@
 
 /obj/item/storage/wallet/proc/get_cashchip_overlay_state(value)
 	switch(value)
-		if(0 to 999)
+		if(1 to 999)
 			return "cashchip_overlay_1"
 		if(1000 to 2499)
 			return "cashchip_overlay_1000"
