@@ -4314,7 +4314,7 @@
 /obj/structure/guncloset{
 	anchored = 1
 	},
-/obj/item/gun/ballistic/automatic/pistol/rattlesnake/no_mag,
+/obj/item/gun/ballistic/automatic/pistol/rattlesnake/cottonmouth,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/whitesands/trainyard/hangar)
 "wG" = (
@@ -5124,13 +5124,13 @@
 	pixel_y = -8;
 	pixel_x = -6
 	},
-/obj/item/clothing/head/helmet/bulletproof{
-	pixel_y = 6;
-	pixel_x = -6
+/obj/item/clothing/head/helmet/bulletproof/x11/ramzi{
+	pixel_x = -8;
+	pixel_y = 5
 	},
-/obj/item/clothing/head/helmet/bulletproof{
-	pixel_y = 6;
-	pixel_x = -6
+/obj/item/clothing/head/helmet/bulletproof/x11/ramzi{
+	pixel_x = -8;
+	pixel_y = 5
 	},
 /obj/item/storage/belt/security/webbing/ramzi{
 	pixel_x = 7
@@ -10354,17 +10354,13 @@
 	icon_state = "syndicate";
 	anchored = 1
 	},
-/obj/item/ammo_box/magazine/m9mm_rattlesnake/empty,
-/obj/item/ammo_box/magazine/m9mm_rattlesnake/empty{
-	pixel_x = 6
+/obj/item/ammo_box/magazine/m10mm_cottonmouth,
+/obj/item/ammo_box/magazine/m10mm_cottonmouth{
+	pixel_x = 7;
+	pixel_y = 0
 	},
-/obj/item/storage/box/ammo/c9mm{
-	pixel_x = -2
-	},
-/obj/item/storage/box/ammo/c9mm_ap{
-	pixel_x = -3;
-	pixel_y = -7
-	},
+/obj/item/storage/box/ammo/c10mm_ap,
+/obj/item/storage/box/ammo/c10mm_ap,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/whitesands/trainyard/hangar)
 "ZY" = (
