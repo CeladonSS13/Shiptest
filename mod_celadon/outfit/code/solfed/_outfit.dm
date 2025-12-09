@@ -425,6 +425,32 @@
 	uniform = /obj/item/clothing/under/rank/medical/gown
 	alt_suit = null
 	shoes = /obj/item/clothing/shoes/sandal/slippers
+	// MARK: SolFed N+S Miner
+
+/datum/outfit/job/cel/solfed/nsminer
+    name = "SolFed - N+S Miner"
+    jobtype = /datum/job/mining
+    job_icon = "shaftminer"
+    faction_icon = "bg_solfed"
+
+    id = /obj/item/card/id/cel/nanotrasen/nslogistic_miner
+    ears = /obj/item/radio/headset/solgov
+    head = /obj/item/clothing/head/hardhat/nanotrasen/blue
+    shoes = /obj/item/clothing/shoes/workboots/mining
+    gloves = /obj/item/clothing/gloves/explorer
+    uniform = /obj/item/clothing/under/nanotrasen/supply/miner
+    suit = /obj/item/clothing/suit/nanotrasen/vest/blue
+    l_pocket = /obj/item/storage/bag/ore
+    r_pocket = /obj/item/pda/shaftminer
+    backpack_contents = list(
+        /obj/item/flashlight/seclite=1,\
+        /obj/item/melee/knife/survival=1,\
+        /obj/item/stack/marker_beacon/ten=1,\
+        /obj/item/radio/weather_monitor=1)
+
+    backpack = /obj/item/storage/backpack/explorer
+    satchel = /obj/item/storage/backpack/satchel/explorer
+    duffelbag = /obj/item/storage/backpack/duffelbag
 
 //							///
 //MARK:	Elysium Brigade
