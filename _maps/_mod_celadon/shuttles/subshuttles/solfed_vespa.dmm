@@ -192,6 +192,9 @@
 /obj/effect/turf_decal/trimline/opaque/solgovgold/filled/corner{
 	dir = 4
 	},
+/obj/structure/window/reinforced/survival_pod{
+	dir = 9
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "vO" = (
@@ -238,7 +241,6 @@
 /turf/open/floor/plating,
 /area/ship/bridge)
 "Am" = (
-/obj/structure/window/reinforced/spawner,
 /obj/machinery/power/smes/engineering{
 	charge = 4e+006
 	},
@@ -251,6 +253,7 @@
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/end{
 	dir = 8
 	},
+/obj/structure/window/reinforced/survival_pod,
 /turf/open/floor/plasteel/lightdark,
 /area/ship/bridge)
 "AH" = (
@@ -266,7 +269,6 @@
 /obj/machinery/power/terminal{
 	dir = 8
 	},
-/obj/machinery/door/window/brigdoor/security/cell/westright,
 /obj/structure/cable{
 	icon_state = "2-9"
 	},
@@ -278,6 +280,9 @@
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovgold/filled/line{
 	dir = 4
+	},
+/obj/machinery/door/window/survival_pod{
+	dir = 8
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
@@ -398,7 +403,6 @@
 /obj/machinery/power/terminal{
 	dir = 8
 	},
-/obj/machinery/door/window/brigdoor/security/cell/westleft,
 /obj/structure/cable,
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -408,6 +412,9 @@
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovgold/filled/line{
 	dir = 4
+	},
+/obj/machinery/door/window/survival_pod{
+	dir = 8
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
@@ -578,6 +585,9 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovgold/filled/corner,
+/obj/structure/window/reinforced/survival_pod{
+	dir = 10
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "XL" = (
@@ -594,7 +604,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "Yr" = (
-/obj/structure/window/reinforced/spawner/north,
 /obj/structure/closet/emcloset/wall/directional/west,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/tank/internals/emergency_oxygen/double,
@@ -607,6 +616,9 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/window/reinforced/survival_pod{
+	dir = 1
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "ZR" = (
