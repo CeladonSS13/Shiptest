@@ -308,3 +308,29 @@
 /area/outpost/rock_deep/rock_near/secret
 	name = "Rock Near Secret"
 	icon_state = "rock_near_s"
+
+/area/template_noop/elevator
+	name = "Area Passthrough Elevator"
+	icon_state = "elevator_pass"
+	ambience_index = AMBIENCE_ELEVATOR
+	ambientsounds = list(
+		'sound/ambience/elevator/elevator1.ogg',
+		'sound/ambience/elevator/elevator2.ogg',
+		'sound/ambience/elevator/elevator3.ogg',
+	)
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	min_ambience_cooldown = 1 SECONDS
+	max_ambience_cooldown = 20 SECONDS
+
+/area/outpost/elevator
+	name = "Zone Elevator"
+	icon_state = "elevator"
+	ambience_index = AMBIENCE_ELEVATOR
+	ambientsounds = list(
+		'sound/ambience/elevator/elevator1.ogg',
+		'sound/ambience/elevator/elevator2.ogg',
+		'sound/ambience/elevator/elevator3.ogg',
+	)
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	min_ambience_cooldown = 10 SECONDS
+	max_ambience_cooldown = 30 SECONDS
