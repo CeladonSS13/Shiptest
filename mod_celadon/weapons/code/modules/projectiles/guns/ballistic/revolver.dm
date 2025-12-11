@@ -9,6 +9,4 @@
 	safety_wording = "safety"
 	spread = 0
 	spread_unwielded = 5
-
-/obj/item/gun/ballistic/revolver/horizonx/no_mag
-	spawn_no_ammo = TRUE
+NO_MAG_GUN_HELPER(revolver/horizonx)

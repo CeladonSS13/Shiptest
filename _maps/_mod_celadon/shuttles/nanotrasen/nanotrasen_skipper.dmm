@@ -554,10 +554,10 @@
 /area/ship/engineering/atmospherics)
 "ed" = (
 /obj/structure/closet/wall/red/directional/north,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
 /obj/item/storage/box/ammo/c9mm_rubber,
 /obj/item/storage/box/ammo/c9mm,
 /obj/item/ammo_box/magazine/co9mm,
@@ -1738,6 +1738,7 @@
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 4
 	},
+/obj/item/gun/energy/e_gun/e_old/mini,
 /turf/open/floor/wood,
 /area/ship/general/command_crew/hop)
 "lg" = (
@@ -3530,8 +3531,8 @@
 /obj/item/clothing/suit/armor/nanotrasen/slim,
 /obj/item/clothing/suit/armor/vest/blueshirt,
 /obj/item/clothing/head/helmet/blueshirt,
-/obj/item/clothing/head/helmet/sec,
-/obj/item/clothing/head/helmet/sec,
+/obj/item/clothing/head/helmet/m10/nanotrasen,
+/obj/item/clothing/head/helmet/m10/nanotrasen,
 /obj/effect/turf_decal/corner/opaque/vired/border{
 	dir = 1
 	},
@@ -5523,15 +5524,15 @@
 	req_access_txt = "3";
 	name = "LETHAL weapons"
 	},
-/obj/item/gun/ballistic/automatic/pistol/commander{
+/obj/item/gun/ballistic/automatic/pistol/challenger{
 	pixel_x = 0;
 	pixel_y = 8
 	},
-/obj/item/gun/energy/e_gun{
+/obj/item/gun/energy/e_gun/e_old{
 	pixel_x = 5;
 	pixel_y = 1
 	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_y = -4;
 	pixel_x = 3
 	},

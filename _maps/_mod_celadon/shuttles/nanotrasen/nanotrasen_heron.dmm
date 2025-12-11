@@ -1074,17 +1074,17 @@
 /obj/structure/guncloset{
 	name = "medium alert locker"
 	},
-/obj/item/gun/energy/e_gun{
+/obj/item/gun/energy/e_gun/e_old/nuclear{
 	pixel_x = 0;
-	pixel_y = -8
+	pixel_y = 9
 	},
-/obj/item/gun/energy/e_gun{
+/obj/item/gun/energy/e_gun/e_old/nuclear{
 	pixel_x = 0;
 	pixel_y = -1
 	},
-/obj/item/gun/energy/e_gun{
+/obj/item/gun/energy/e_gun/e_old/nuclear{
 	pixel_x = 0;
-	pixel_y = 6
+	pixel_y = -9
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
@@ -2121,6 +2121,7 @@
 /obj/item/clothing/head/nanotrasen/beret/security/command,
 /obj/item/storage/lockbox/medal/sec,
 /obj/item/radio/headset/nanotrasen/alt,
+/obj/item/gun/energy/e_gun/e_old/hos,
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
 "if" = (
@@ -6363,6 +6364,10 @@
 	pixel_x = 7;
 	pixel_y = -21
 	},
+/obj/structure/displaycase{
+	req_access_txt = "20";
+	start_showpiece_type = /obj/item/gun/energy/e_gun/e_old/hos/brazil/true
+	},
 /turf/open/floor/wood,
 /area/ship/crew/law_office)
 "wK" = (
@@ -6767,7 +6772,7 @@
 	icon_state = "0-8"
 	},
 /obj/item/clothing/head/centhat,
-/obj/item/gun/energy/e_gun,
+/obj/item/gun/energy/e_gun/e_old,
 /obj/item/clothing/shoes/combat/swat,
 /obj/item/clothing/glasses/sunglasses,
 /obj/item/radio/headset/nanotrasen/alt/captain,
@@ -6967,7 +6972,7 @@
 	},
 /obj/item/radio/intercom/directional/east,
 /obj/structure/guncloset,
-/obj/item/gun/ballistic/automatic/pistol/commander,
+/obj/item/gun/ballistic/automatic/pistol/challenger,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo/office)
 "yW" = (
@@ -7087,7 +7092,7 @@
 /area/ship/hallway/aft)
 "zv" = (
 /obj/structure/rack,
-/obj/item/gun/energy/e_gun,
+/obj/item/gun/energy/e_gun/e_old,
 /obj/item/grenade/barrier{
 	pixel_x = -3;
 	pixel_y = 3
@@ -10433,7 +10438,7 @@
 /obj/structure/guncloset{
 	name = "high alert locker"
 	},
-/obj/item/gun/energy/e_gun{
+/obj/item/gun/energy/e_gun/e_old{
 	pixel_x = 0;
 	pixel_y = -4
 	},
@@ -10441,7 +10446,7 @@
 	pixel_x = -1;
 	pixel_y = 3
 	},
-/obj/item/gun/energy/e_gun{
+/obj/item/gun/energy/e_gun/e_old{
 	pixel_x = 0;
 	pixel_y = 11
 	},
@@ -12528,7 +12533,7 @@
 	},
 /obj/item/radio/headset/nanotrasen/alt,
 /obj/item/clothing/suit/armor/nanotrasen/slim,
-/obj/item/clothing/head/helmet/sec,
+/obj/item/clothing/head/helmet/m10/nanotrasen,
 /obj/item/clothing/glasses/hud/security/sunglasses,
 /obj/item/storage/belt/security/full,
 /obj/item/flashlight/seclite,
@@ -13104,13 +13109,11 @@
 /obj/item/clothing/suit/armor/vest/marine/heavy,
 /obj/item/clothing/suit/armor/vest/marine/medium,
 /obj/item/clothing/suit/armor/vest/marine/medium,
-/obj/item/clothing/head/helmet/gezena,
-/obj/item/clothing/head/helmet/gezena,
-/obj/item/clothing/head/helmet/gezena,
+/obj/item/clothing/head/helmet/m10/nanotrasen,
+/obj/item/clothing/head/helmet/m10/nanotrasen,
+/obj/item/clothing/head/helmet/m10/nanotrasen,
 /obj/item/clothing/suit/armor/vest/bulletproof,
 /obj/item/clothing/suit/armor/vest/bulletproof,
-/obj/item/clothing/head/helmet/plate,
-/obj/item/clothing/head/helmet/plate,
 /obj/item/clothing/suit/armor/vest/security/officer,
 /obj/item/clothing/suit/armor/vest/security/officer,
 /obj/item/clothing/head/helmet/riot,
@@ -13123,6 +13126,8 @@
 /obj/effect/turf_decal/trimline/opaque/vired/warning{
 	dir = 1
 	},
+/obj/item/clothing/head/helmet/riot,
+/obj/item/clothing/head/helmet/riot,
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "VH" = (
@@ -13177,7 +13182,7 @@
 	},
 /obj/item/radio/headset/nanotrasen/alt,
 /obj/item/clothing/suit/armor/nanotrasen/slim,
-/obj/item/clothing/head/helmet/sec,
+/obj/item/clothing/head/helmet/m10/nanotrasen,
 /obj/item/clothing/glasses/hud/security/sunglasses,
 /obj/item/storage/belt/security/full,
 /obj/item/flashlight/seclite,

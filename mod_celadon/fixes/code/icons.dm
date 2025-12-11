@@ -9,7 +9,7 @@
 	icon = 'mod_celadon/_storage_icons/icons/items/misc/overlay/modglass_garnishes_items.dmi'
 
 
-/obj/item/gun/energy/e_gun/hades
+/obj/item/gun/energy/e_gun/e_old/hades
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob.dmi'
 
 /obj/item/gun/energy/pulse
