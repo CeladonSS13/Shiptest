@@ -278,3 +278,9 @@
 	icon_state = "cargo_bay_nt"
 	lighting_colour_tube = "#384e68"
 	lighting_colour_bulb = "#384e68"
+
+/area/outpost/external_silence
+	name = "External Silence"
+	icon_state = "purple"
+	always_unpowered = TRUE
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
