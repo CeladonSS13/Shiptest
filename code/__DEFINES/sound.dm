@@ -47,6 +47,9 @@
 #define AMBIENCE_DESERT "desert"
 #define AMBIENCE_TUNDRA "tundra"
 
+#define AMBIENCE_ELEVATOR "elevator"
+#define ELEVATOR GLOB.elevator_ambience
+
 #define INTERACTION_SOUND_RANGE_MODIFIER -3
 #define EQUIP_SOUND_VOLUME 30
 #define PICKUP_SOUND_VOLUME 15
