@@ -150,7 +150,7 @@
 
 	implants = list(/obj/item/implant/mindshield)
 
-	chameleon_extras = list(/obj/item/gun/energy/e_gun/hos, /obj/item/stamp/hos)
+	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/hos)
 
 // Директор СБ - ХОС капитан
 /datum/outfit/job/cel/nanotrasen/hos/captain
@@ -416,7 +416,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
 	courierbag = /obj/item/storage/backpack/messenger/sec
 
-	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
+	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet/m10)
 
 /datum/outfit/job/cel/nanotrasen/security/mimir
 	id = /obj/item/card/id/cel/nanotrasen/vigilitas_security

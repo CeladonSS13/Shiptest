@@ -213,7 +213,7 @@
 	icon_state = "hardhat_solfed"
 	item_state = "hardhat_solfed"
 
-/obj/item/clothing/head/helmet/solfed/m11
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed
 	name = "Solar Federation M11 helmet"
 	desc = "It's an M11 helmet in Solar Federation coloring. On its left side you can see the flag of the Solar Federation. It is usually worn by Solar Federation soldiers."
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/headsf.dmi'
@@ -223,14 +223,15 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 	content_overlays = TRUE
 	can_flashlight = TRUE
+	unique_reskin = null
 
-/obj/item/clothing/head/helmet/solfed/m11/elysium
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed/elysium
 	name = "Elysium Brigade M11 helmet"
 	desc = "It's an m11 helmet in Solar Federation in desert coloring. On its left side you can see the flag of the Solar Federation. It is usually worn by Solar Federation soldiers."
 	icon_state = "elysium_brigade_m11"
 	item_state = "elysium_brigade_m11"
 
-/obj/item/clothing/head/helmet/solfed/m11/elysium/wraps
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed/elysium/wraps
 	name = "Elysium brigade m11 wraps helmet"
 	desc = "This is a Solar Federation M11 helmet in desert coloring. It has the Solar Federation flag on the left side of the helmet. This particular helmet is wrapped in green cloth to have better facial protection. It is usually worn by the Solar Federation Elysium Brigade."
 	icon_state = "elysium_brigade_m10_wraps"

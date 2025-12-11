@@ -200,6 +200,7 @@
 	dir = 4
 	},
 /obj/structure/sign/flag/solfed/directional/west,
+/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "cE" = (
@@ -839,17 +840,13 @@
 /turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen)
 "jM" = (
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/machinery/power/shuttle/engine/electric/premium,
 /obj/docking_port/mobile{
 	dir = 4;
 	port_direction = 2;
 	preferred_direction = 4
 	},
-/turf/open/floor/plating,
-/area/ship/engineering)
+/turf/template_noop,
+/area/ship/external)
 "jQ" = (
 /obj/machinery/chem_heater{
 	pixel_y = 3
@@ -1876,6 +1873,7 @@
 /obj/effect/turf_decal/trimline/opaque/orange/line{
 	dir = 6
 	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "tx" = (
@@ -1998,23 +1996,8 @@
 	dir = 10
 	},
 /obj/structure/table/wood,
-/obj/item/storage/fancy/coffee_cart_rack{
-	pixel_x = -6;
+/obj/machinery/microwave{
 	pixel_y = 6
-	},
-/obj/item/blank_coffee_cartridge{
-	pixel_x = 2
-	},
-/obj/item/blank_coffee_cartridge{
-	pixel_x = 2;
-	pixel_y = 8
-	},
-/obj/item/blank_coffee_cartridge{
-	pixel_x = 2;
-	pixel_y = 4
-	},
-/obj/item/storage/fancy/coffee_cart_rack{
-	pixel_x = -8
 	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/crew/canteen)
@@ -2312,6 +2295,20 @@
 /obj/item/reagent_containers/glass/coffee_cup,
 /obj/item/reagent_containers/glass/coffee_cup,
 /obj/item/reagent_containers/condiment/sugar,
+/obj/item/blank_coffee_cartridge{
+	pixel_x = 2;
+	pixel_y = 4
+	},
+/obj/item/blank_coffee_cartridge{
+	pixel_x = 2;
+	pixel_y = 4
+	},
+/obj/item/storage/fancy/coffee_cart_rack{
+	pixel_x = -8
+	},
+/obj/item/storage/fancy/coffee_cart_rack{
+	pixel_x = -8
+	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/crew/canteen)
 "xT" = (
@@ -2704,9 +2701,9 @@
 	pixel_x = -5;
 	pixel_y = 1
 	},
-/obj/item/stamp/solfed/commander{
+/obj/item/stamp/solfed/captain{
 	pixel_y = 3;
-	pixel_x = 8
+	pixel_x = 9
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
@@ -3429,7 +3426,6 @@
 	pixel_x = 0;
 	pixel_y = 2
 	},
-/obj/item/gun/energy/floragun,
 /obj/item/seeds/coffee,
 /obj/item/seeds/coffee,
 /turf/open/floor/suns/hatch{
@@ -3666,6 +3662,7 @@
 /area/ship/crew/canteen)
 "My" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/border,
+/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "MC" = (
@@ -3921,15 +3918,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
-"Py" = (
-/obj/docking_port/stationary{
-	width = 30;
-	height = 15;
-	dwidth = 15;
-	dir = 8
-	},
-/turf/template_noop,
-/area/template_noop)
 "PD" = (
 /obj/effect/turf_decal/trimline/opaque/cybersunteal/line{
 	dir = 6
@@ -4117,6 +4105,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue/border{
 	dir = 8
 	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "Sw" = (
@@ -4393,7 +4382,6 @@
 /area/ship/general/cargo)
 "Vy" = (
 /obj/structure/closet/wall/red/directional/west,
-/obj/item/gun/ballistic/revolver/viper/indie,
 /obj/item/gun/ballistic/revolver/viper/indie,
 /obj/item/gun/ballistic/revolver/viper/indie,
 /obj/item/storage/box/ammo/a357,
@@ -4936,7 +4924,7 @@ yQ
 yQ
 yQ
 yQ
-yQ
+jM
 yQ
 yQ
 yQ
@@ -4962,7 +4950,6 @@ yQ
 yQ
 yQ
 yQ
-Py
 yQ
 yQ
 yQ
@@ -4978,7 +4965,8 @@ yQ
 yQ
 yQ
 yQ
-jM
+yQ
+bw
 yQ
 yQ
 yQ

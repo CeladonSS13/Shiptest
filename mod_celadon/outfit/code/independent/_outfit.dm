@@ -269,7 +269,7 @@
 	id = /obj/item/card/id
 	gloves = /obj/item/clothing/gloves/color/white
 	uniform = /obj/item/clothing/under/rank/security/detective/grey
-	suit = /obj/item/clothing/suit/toggle/lawyer/charcoal
+	suit = /obj/item/clothing/suit/toggle/lawyer/purple
 	neck = /obj/item/clothing/neck/tie/black
 	dcoat = null
 	glasses = /obj/item/clothing/glasses/sunglasses
@@ -396,7 +396,7 @@
 	ears = /obj/item/radio/headset/alt
 	uniform = /obj/item/clothing/under/rank/security/officer
 	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/helmet/sec
+	head = /obj/item/clothing/head/helmet/m10
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -408,7 +408,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
 	courierbag = /obj/item/storage/backpack/messenger/sec
 
-	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
+	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet/m10)
 	//The helmet is necessary because /obj/item/clothing/head/helmet/sec is overwritten in the chameleon list by the standard helmet, which has the same name and icon state
 
 /datum/outfit/job/cel/independent/security/disarmed //No armor, no pocket handcuffs.
@@ -443,7 +443,7 @@
 	ears = /obj/item/radio/headset/alt
 	uniform = /obj/item/clothing/under/rank/security/officer
 	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/helmet/sec
+	head = /obj/item/clothing/head/helmet/m10
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -457,7 +457,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
 	courierbag = /obj/item/storage/backpack/messenger/sec
 
-	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
+	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet/m10)
 	//The helmet is necessary because /obj/item/clothing/head/helmet/sec is overwritten in the chameleon list by the standard helmet, which has the same name and icon state
 
 // MARK:Engineer
@@ -467,7 +467,7 @@
 	job_icon = "stationengineer"
 	jobtype = /datum/job/engineer
 
-	belt = null
+	belt = /obj/item/storage/belt/utility/full/engi
 	gloves = null
 	ears = /obj/item/radio/headset/headset_eng
 	uniform = /obj/item/clothing/under/overalls/olive
@@ -484,7 +484,7 @@
 /datum/outfit/job/cel/independent/engineer/salvage
 	name = "IND - Engineer (Salvager)"
 
-	belt = null
+	belt = /obj/item/storage/belt/utility/full/engi
 	l_pocket = null
 
 // MARK:Chief Engineer

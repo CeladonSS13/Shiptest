@@ -164,6 +164,7 @@ BLOOD_EXAMINE
 DONT_ALTCLICK_WALLET - Убирает вытаскивание карты на Альт-клик
 - DEL `code/datums/components/storage/concrete/wallet.dm`
 - EDIT `code/game/objects/items/storage/wallets.dm`
+- `code/game/objects/items/storage/wallets.dm` : Убрана отвертка и добавлена сигарета в разрешенные предметы в кошельке
 
 DEBUG_QUALITY
 - DEL `code/game/objects/items/storage/boxes.dm` -> `mod_celadon/qol/code/BluespaceTechnician.dm`

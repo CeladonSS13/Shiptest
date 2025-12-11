@@ -121,7 +121,7 @@
 			new /obj/item/ammo_box/magazine/m10mm_ringneck(src)
 			new /obj/item/clothing/under/chameleon(src)
 			new /obj/item/card/id/syndicate(src)
-			new /obj/item/reagent_containers/hypospray/medipen/stimulants(src)
+			new /obj/item/reagent_containers/hypospray/medipen/combat_drug(src)
 			new /obj/item/reagent_containers/glass/rag(src)
 
 		if("ninja")
@@ -371,7 +371,6 @@
 /obj/item/storage/box/syndie_kit/chemical/PopulateContents()
 	new /obj/item/reagent_containers/glass/bottle/polonium(src)
 	new /obj/item/reagent_containers/glass/bottle/venom(src)
-	new /obj/item/reagent_containers/glass/bottle/fentanyl(src)
 	new /obj/item/reagent_containers/glass/bottle/formaldehyde(src)
 	new /obj/item/reagent_containers/glass/bottle/spewium(src)
 	new /obj/item/reagent_containers/glass/bottle/cyanide(src)
