@@ -79,6 +79,7 @@
 	token_icon_state = "station_asteroid_0"
 	main_template = /datum/map_template/outpost/elysium_ice
 	elevator_template = /datum/map_template/outpost/elevator_ice
+	weather_controller_type = /datum/weather_controller/chill
 	hangar_templates = list(
 		/datum/map_template/outpost/hangar/elysium_ice_20x20,
 		/datum/map_template/outpost/hangar/elysium_ice_40x20,
