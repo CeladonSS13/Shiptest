@@ -279,8 +279,32 @@
 	lighting_colour_tube = "#384e68"
 	lighting_colour_bulb = "#384e68"
 
-/area/outpost/external_silence
-	name = "External Silence"
-	icon_state = "purple"
+/area/outpost/exterior_silence
+	name = "Exterior Silence"
+	icon_state = "marine"
+	always_unpowered = TRUE
+	allow_weather = TRUE
+
+/area/outpost/exterior_silence/no_weather
+	name = "Exterior Silence No Weather"
+	icon_state = "marine_dark"
+	allow_weather = FALSE
+
+/area/outpost/rock_deep
+	name = "Rock Deep"
+	icon_state = "rock_deep"
 	always_unpowered = TRUE
 	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+
+/area/outpost/rock_deep/secret
+	name = "Rock Deep Secret"
+	icon_state = "rock_deep_s"
+
+/area/outpost/rock_deep/rock_near
+	name = "Rock Near"
+	icon_state = "rock_near"
+	allow_weather = TRUE
+
+/area/outpost/rock_deep/rock_near/secret
+	name = "Rock Near Secret"
+	icon_state = "rock_near_s"
