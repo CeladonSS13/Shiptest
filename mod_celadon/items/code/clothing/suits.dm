@@ -306,3 +306,24 @@
 	icon_state = "armor_inteq"
 	item_state = "armor_inteq"
 	armor = list("melee" = 38, "bullet" = 33, "laser" = 33, "energy" = 43, "bomb" = 28, "bio" = 3, "rad" = 3, "fire" = 53, "acid" = 53, "wound" = 10)
+
+/obj/item/clothing/suit/ny_sweater
+	name = "New Year sweater"
+	desc = "Новогодний свитер, который многие получают в подарок от родственников."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/holiday.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/holiday.dmi'
+	icon_state = "sweater"
+	item_state = "sweater"
+
+/obj/item/clothing/suit/garland
+	name = "garland"
+	desc = "Новогодняя гирлянда. Только наденьте, и вы сами превратитесь в ёлку."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/holiday.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/holiday.dmi'
+	icon_state = "garland"
+	item_state = "garland"
+	w_class = WEIGHT_CLASS_SMALL
+	light_range = 2
+	light_power = 0.3
+	light_system = MOVABLE_LIGHT
+	color = LIGHT_COLOR_YELLOW
