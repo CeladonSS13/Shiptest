@@ -3,7 +3,17 @@
 	max_integrity = 40
 	anchored = TRUE
 
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = -100, "acid" = 0) // 2x damage from fire
 	hitsound_type = PROJECTILE_HITSOUND_NON_LIVING
+
+	/// How much fuel this provides to fires on its turf
+	var/fuel_power = 4
+
+/obj/structure/flora/fire_act(exposed_temperature, exposed_volume)
+	. = ..()
+	var/turf/open/plant_turf = get_turf(src)
+	if(isopenturf(plant_turf) && prob(plant_turf.flammability >= 1))
+		plant_turf.ignite_turf(fuel_power + plant_turf.flammability)
 
 /obj/structure/flora/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
 	switch(damage_type)
@@ -23,7 +33,10 @@
 	pixel_x = -16
 	layer = FLY_LAYER
 	var/log_amount = 10
+	max_integrity = 200
 
+	fuel_power = 1 // trees are more resistant to fire and take much longer to burn
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 0)
 	hitsound_type = PROJECTILE_HITSOUND_WOOD
 
 /obj/structure/flora/tree/ComponentInitialize()
@@ -36,9 +49,9 @@
 			if(W.hitsound)
 				// [CELADON-EDIT] - CELADON_QOL
 				// playsound(get_turf(src), 'sound/weapons/bladeslice.ogg', 100, FALSE, FALSE)		// CELADON-EDIT - ORIGINAL
-				playsound(get_turf(src), pick('mod_celadon/_storge_sounds/sound/trees/treechop1.ogg',
-											'mod_celadon/_storge_sounds/sound/trees/treechop2.ogg',
-											'mod_celadon/_storge_sounds/sound/trees/treechop3.ogg'), 100, FALSE, FALSE)
+				playsound(get_turf(src), pick('mod_celadon/_storage_sounds/sound/trees/treechop1.ogg',
+											'mod_celadon/_storage_sounds/sound/trees/treechop2.ogg',
+											'mod_celadon/_storage_sounds/sound/trees/treechop3.ogg'), 100, FALSE, FALSE)
 				// [/CELADON-EDIT]
 				user.visible_message(span_notice("[user] begins to cut down [src] with [W]."),span_notice("You begin to cut down [src] with [W]."), span_hear("You hear the sound of sawing."))
 			// [CELADON-EDIT] - CELADON_QOL
@@ -48,7 +61,7 @@
 				user.visible_message(span_notice("[user] fells [src] with the [W]."),span_notice("You fell [src] with the [W]."), span_hear("You hear the sound of a tree falling."))
 				// [CELADON-EDIT] - CELADON_QOL
 				// playsound(get_turf(src), 'sound/effects/meteorimpact.ogg', 100 , FALSE, FALSE) // CELADON-EDIT - ORIGINAL
-				playsound(get_turf(src), 'mod_celadon/_storge_sounds/sound/trees/zvuk-padayuschego-dereva.ogg', 100 , FALSE, FALSE)
+				playsound(get_turf(src), 'mod_celadon/_storage_sounds/sound/trees/zvuk-padayuschego-dereva.ogg', 100 , FALSE, FALSE)
 				// [/CELADON-EDIT]
 				user.log_message("cut down [src] at [AREACOORD(src)]", LOG_ATTACK)
 				for(var/i=1 to log_amount)
@@ -66,6 +79,8 @@
 	icon_state = "tree_stump"
 	density = FALSE
 	pixel_x = -16
+	fuel_power = 2 // it's dead
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0)
 
 	hitsound_type = PROJECTILE_HITSOUND_WOOD
 
@@ -141,6 +156,8 @@
 	icon = 'icons/obj/flora/deadtrees.dmi'
 	desc = "A dead tree. How it died, you know not."
 	icon_state = "tree_1"
+	fuel_power = 2 // it's dead
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0)
 
 /obj/structure/flora/tree/dead/Initialize()
 	icon_state = "tree_[rand(1, 6)]"
@@ -393,7 +410,7 @@
 	. = ..()
 	// [CELADON-EDIT] - CELADON_FLORA
 	// icon = 'icons/obj/flora/plants.dmi' // CELADON-EDIT - ORIGINAL
-	icon = 'mod_celadon/_storge_icons/icons/plants.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/flora/plants.dmi'
 	// [/CELADON-EDIT]
 	if(!states)
 		generate_states()
@@ -810,7 +827,6 @@
 	icon_state = "churchtree"
 	desc = "A true earthen oak tree imported directly from the holy soil of earth. It's radiates a spiritual warmth that calms the soul."
 	pixel_x = -16
-	max_integrity = 200
 	bound_height = 64
 	var/karma = 0
 	var/mojorange = 4
@@ -837,7 +853,6 @@
 		/datum/reagent/toxin/acid/fluacid = -0.4,
 		/datum/reagent/toxin/plantbgone = -0.5,
 		/datum/reagent/napalm = -0.6,
-		/datum/reagent/hellwater = -1,
 		/datum/reagent/liquidgibs = -0.2,
 		/datum/reagent/consumable/ethanol/demonsblood = -0.8,
 		/datum/reagent/medicine/soulus = -0.2
@@ -900,7 +915,7 @@
 			else if (isliving(user))
 				var/mob/living/L = user
 				L.Immobilize(100, TRUE)
-				L.adjust_jitter(50)
+				L.set_timed_status_effect(100 SECONDS, /datum/status_effect/jitter, only_if_higher = TRUE)
 				L.adjustToxLoss(66)
 		return 1
 	else ..()
@@ -961,7 +976,7 @@
 		var/luck = rand(1, 100)
 		if(karma > 100)
 			if(luck > 90)
-				L.reagents.add_reagent(/datum/reagent/medicine/omnizine, 5)
+				L.reagents.add_reagent(/datum/reagent/medicine/panacea, 5)
 			else if (luck > 50)
 				SEND_SIGNAL(L, COMSIG_ADD_MOOD_EVENT, "treekarma", /datum/mood_event/better_tree, name)
 			else if (luck > 25)
@@ -1005,7 +1020,6 @@
 	icon_state = "churchtree"
 	desc = "A sturdy oak tree imported directly from Illestren the homeworld of the Saint-Roumain Militia. It contains a bacteria native to the planet. The soil was carfuly transfered from the same place it was planted. A apple tree branch has been grafted onto it. You could try watering it"
 	pixel_x = -16
-	max_integrity = 200
 	bound_height = 64
 	var/health = 0
 	var/lastcycle = 0
@@ -1034,7 +1048,6 @@
 		/datum/reagent/toxin/acid/fluacid = -0.4,
 		/datum/reagent/toxin/plantbgone = -0.5,
 		/datum/reagent/napalm = -0.6,
-		/datum/reagent/hellwater = -1,
 		/datum/reagent/liquidgibs = -0.2,
 		/datum/reagent/consumable/ethanol/demonsblood = -0.8,
 		/datum/reagent/medicine/soulus = -0.2
@@ -1057,7 +1070,7 @@
 			reagents.clear_reagents()
 		if(health > 25)
 			if(prob(50))
-				var/obj/item/reagent_containers/food/snacks/grown/apple/apple = new(get_step(get_turf(src), apple_direction))
+				var/obj/item/food/grown/apple/apple = new(get_step(get_turf(src), apple_direction))
 				apple.name = "illestren Apple"
 				apple.desc = "You can grind this for bacteria."
 				apple.reagents.add_reagent(/datum/reagent/srm_bacteria, 10)
@@ -1109,3 +1122,19 @@
 
 /obj/effect/particle_emitter/Initialize(mapload, time)
 	. = ..()
+
+/obj/structure/flora/rock/crystal
+	icon_state = "crystal"
+	base_icon_state = "crystal"
+	desc = "A towering, obaque crystal. You could probably shave something off this."
+	icon = 'icons/effects/32x64.dmi'
+	resistance_flags = FIRE_PROOF
+	density = TRUE
+	max_integrity = 100
+	mineResult = /obj/item/crystal_shard
+
+	hitsound_type = PROJECTILE_HITSOUND_STONE
+
+/obj/structure/flora/rock/crystal/Initialize()
+	. = ..()
+	icon_state = "[base_icon_state]"

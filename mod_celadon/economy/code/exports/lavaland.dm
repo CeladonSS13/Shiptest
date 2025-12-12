@@ -61,7 +61,6 @@
 
 /datum/export/lavaland/trophyrare
 	cost = 1000
-	elasticity_coeff = 0.1
 	unit_name = "rare hunting trophy"
 	export_types = list(/obj/item/crusher_trophy/dwarf_skull,
 						/obj/item/crusher_trophy/fang,
@@ -75,7 +74,7 @@
 
 /datum/export/lavaland/trophymega
 	cost = 3000
-	elasticity_coeff = 0.2
+	elasticity_coeff = 0
 	unit_name = "big game hunting trophy"
 	export_types = list(/obj/item/crusher_trophy/legionnaire_spine,
 						/obj/item/crusher_trophy/ash_spike,

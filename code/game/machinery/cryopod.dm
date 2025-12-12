@@ -218,8 +218,15 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod/retro, 17)
 		playsound(src, close_sound, 40)
 
 /obj/machinery/cryopod/proc/apply_effects_to_mob(mob/living/carbon/sleepyhead)
-	sleepyhead.set_sleeping(50)
+	sleepyhead.set_sleeping(60)
+	sleepyhead.set_nutrition(200)
 	to_chat(sleepyhead, span_boldnotice("You begin to wake from cryosleep..."))
+	var/ship_name = "<span class='maptext' style=font-size:24pt;text-align:center valign='top'><u>[linked_ship.current_ship.name]</u></span>"
+	var/sector_name = "[linked_ship.current_ship.current_overmap.name]"
+	var/time = "[station_time_timestamp("hh:mm")]"
+	var/character_name = "[sleepyhead.real_name]"
+
+	sleepyhead.play_screen_text("[ship_name]<br>[sector_name]<br>[time]<br>[character_name]")
 
 /obj/machinery/cryopod/open_machine()
 	..()
@@ -302,6 +309,26 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod/retro, 17)
 /obj/machinery/cryopod/proc/despawn_occupant()
 	var/mob/living/mob_occupant = occupant
 
+	// [CELADON-ADD] - CELADON_GHOST_ROLES
+	// Check if this is a ghost role
+	if(!mob_occupant.mind?.original_ship)
+		// Ghost role - simple deletion without crew processing
+		if(mob_occupant.client)
+			mob_occupant.ghostize(TRUE)
+
+		for(var/obj/item/W in mob_occupant.GetAllContents())
+			qdel(W)
+
+		open_machine()
+		qdel(mob_occupant)
+		occupant = null
+		// Check if this is an outpost cryopod that should replenish the role
+		if(istype(src, /obj/machinery/cryopod/outpost))
+			var/obj/machinery/cryopod/outpost/outpost_pod = src
+			outpost_pod.try_replenish_role()
+		return
+	// [/CELADON-ADD]
+
 	if(!isnull(mob_occupant.mind.original_ship))
 		var/datum/overmap/ship/controlled/original_ship_instance = mob_occupant.mind.original_ship.resolve()
 
@@ -339,7 +366,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod/retro, 17)
 			qdel(G)
 
 	var/datum/overmap/ship/controlled/original_ship = mob_occupant.mind.original_ship.resolve()
-	original_ship.manifest -= mob_occupant.real_name
+	original_ship.manifest_remove(mob_occupant)
 
 	var/obj/machinery/computer/cryopod/control_computer_obj = control_computer?.resolve()
 
@@ -439,18 +466,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod/retro, 17)
 	. = ..()
 	linked_ship = port
 	linked_ship.spawn_points += src
-
-/obj/machinery/cryopod/apply_effects_to_mob(mob/living/carbon/sleepyhead)
-	//it always sucks a little to get up
-	sleepyhead.set_nutrition(200)
-	sleepyhead.set_sleeping(60)
-
-	var/wakeupmessage = "The cryopod shudders as the pneumatic seals separating you and the waking world let out a hiss."
-	if(prob(60))
-		wakeupmessage += " A sickly feeling along with the pangs of hunger greet you upon your awakening."
-		sleepyhead.set_nutrition(100)
-		sleepyhead.apply_effect(rand(3,10), EFFECT_DROWSY)
-	to_chat(sleepyhead, span_danger(boxed_message(wakeupmessage)))
 
 /obj/machinery/cryopod/syndicate
 	icon_state = "sleeper_s-open"

@@ -241,6 +241,8 @@
 /proc/Gibberish(text, replace_characters = FALSE, chance = 50)
 	text = html_decode(text)
 	. = ""
+	if(!chance)
+		return sanitize(.)
 	var/rawchar = ""
 	var/letter = ""
 	var/lentext = length(text)
@@ -426,7 +428,7 @@
 			continue
 		var/orbit_link
 		if (source && action == NOTIFY_ORBIT)
-			orbit_link = " <a href='?src=[REF(O)];follow=[REF(source)]'>(Orbit)</a>"
+			orbit_link = " <a href='byond://?src=[REF(O)];follow=[REF(source)]'>(Orbit)</a>"
 		to_chat(O, span_ghostalert("[message][(enter_link) ? " [enter_link]" : ""][orbit_link]"))
 		if(ghost_sound)
 			SEND_SOUND(O, sound(ghost_sound, volume = notify_volume))
@@ -451,10 +453,7 @@
 /**
  * Heal a robotic body part on a mob
  */
-// [CELADON-EDIT] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
-// /proc/item_heal_robotic(mob/living/carbon/human/H, mob/user, brute_heal, burn_heal, integrity_loss=0)	// CELADON-EDIT = ORIGINAL
 /proc/item_heal_robotic(mob/living/carbon/human/H, mob/user, brute_heal, burn_heal)
-// [/CELADON-EDIT]
 	var/obj/item/bodypart/affecting = H.get_bodypart(check_zone(user.zone_selected))
 	if(affecting && (!IS_ORGANIC_LIMB(affecting)))
 		var/dam //changes repair text based on how much brute/burn was supplied
@@ -463,20 +462,6 @@
 		else
 			dam = 0
 		if((brute_heal > 0 && affecting.brute_dam > 0) || (burn_heal > 0 && affecting.burn_dam > 0))
-			// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
-			// if(affecting.uses_integrity)
-			// 	var/integrity_damage_incurred = (affecting.get_curable_damage() >= affecting.integrity_threshold) || (affecting.max_damage - affecting.integrity_loss >= affecting.integrity_threshold)
-			// 	if(affecting.get_curable_damage(integrity_damage_incurred ? integrity_loss : 0) <= 0)
-			// 		var/limb_hp_loss = affecting.integrity_loss-affecting.integrity_ignored
-			// 		if(limb_hp_loss+integrity_loss >= affecting.max_damage)
-			// 			to_chat(user, span_warning("[affecting] is destroyed! It needs structural repairs to be repaired any further."))
-			// 		else
-			// 			to_chat(user, span_warning("[affecting] has taken too much structural damage, and needs surgery to improve any further."))
-			// 		return
-			// 	if (integrity_damage_incurred)
-			// 		affecting.take_integrity_damage(integrity_loss)
-			// [/CELADON-REMOVE]
-
 			if(affecting.heal_damage(brute_heal, burn_heal, 0, BODYTYPE_ROBOTIC))
 				H.update_damage_overlays()
 			user.visible_message("[user] has fixed some of the [dam ? "dents on" : "burnt wires in"] [H]'s [parse_zone(affecting.body_zone)].", \
@@ -537,15 +522,6 @@
 		to_chat(M, "There were no ghosts willing to take control.")
 		message_admins("No ghosts were willing to take control of [ADMIN_LOOKUPFLW(M)])")
 		return FALSE
-
-///Is the mob a flying mob
-/mob/proc/is_flying()
-	return (movement_type & FLYING)
-
-///Is the mob a floating mob
-/mob/proc/is_floating()
-	return (movement_type & FLOATING)
-
 
 ///Clicks a random nearby mob with the source from this mob
 /mob/proc/click_random_mob()

@@ -3,7 +3,10 @@ SUBSYSTEM_DEF(mobs)
 	priority = FIRE_PRIORITY_MOBS
 	flags = SS_KEEP_TIMING | SS_NO_INIT
 	runlevels = RUNLEVEL_GAME | RUNLEVEL_POSTGAME
-	wait = 2 SECONDS
+	// [CELADON-EDIT] - CELADON_BALANCE_MOBS
+	// wait = 2 SECONDS	// ORIGINAL
+	wait = 1.5 SECONDS
+	// [/CELADON-EDIT]
 
 	var/list/currentrun = list()
 

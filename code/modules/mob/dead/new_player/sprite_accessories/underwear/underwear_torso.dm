@@ -7,6 +7,8 @@
 	name = "Nude"
 	icon_state = null
 
+// [CELADON-REMOVE] - CELADON_UNDERWEAR - Новая одежда (Перенос в модуль) => mod_celadon/underwear
+/* CELADON-REMOVE - ORIGINAL
 //Start normal shirts
 
 //Female undergarment tops
@@ -43,9 +45,29 @@
 	name = "Halter Bra"
 	icon_state = "bra_halter"
 
+/datum/sprite_accessory/undershirt/tubetop
+	name = "Tube Top"
+	icon_state = "tubetop"
+
+/datum/sprite_accessory/undershirt/tubetopalt
+	name = "Long Tube Top"
+	icon_state = "tubetop_long"
+
 /datum/sprite_accessory/undershirt/catgirl
 	name = "Catgirl Bra" //The balance must be preserved
 	icon_state = "bra_cat"
+
+/datum/sprite_accessory/undershirt/camisole
+	name = "Camisole"
+	icon_state = "camisole"
+
+/datum/sprite_accessory/undershirt/onepiece
+	name = "One Piece Swimsuit"
+	icon_state = "onepiece"
+
+/datum/sprite_accessory/undershirt/onepiece_turtleneck
+	name = "One Piece Turtleneck"
+	icon_state = "onepiece_turtleneck"
 
 /datum/sprite_accessory/undershirt/beekini
 	name = "Bee-Kini Top"
@@ -84,6 +106,14 @@
 	name = "Sleeveless Turtleneck (Greyscale)"
 	icon_state = "turtle_sleeveless"
 
+/datum/sprite_accessory/undershirt/turtle_sleevecrop
+	name = "Sleeveless Cropped Turtleneck (Greyscale)"
+	icon_state = "turtle_sleevecrop"
+
+/datum/sprite_accessory/undershirt/turtle_smooth
+	name = "Smooth Turtleneck (Greyscale)"
+	icon_state = "turtle_smooth"
+
 /datum/sprite_accessory/undershirt/buttondown
 	name = "Button-down Shirt (Greyscale)"
 	icon_state = "button"
@@ -91,6 +121,18 @@
 /datum/sprite_accessory/undershirt/buttondown_short
 	name = "Short Sleeve Button-Down (Greyscale)"
 	icon_state = "button_short"
+
+/datum/sprite_accessory/undershirt/croptank
+	name = "Cropped Tank Top (Greyscale)"
+	icon_state = "croptank"
+
+/datum/sprite_accessory/undershirt/cropshort
+	name = "Cropped Short Sleeve (Greyscale)"
+	icon_state = "cropshortsleeve"
+
+/datum/sprite_accessory/undershirt/croptshirt
+	name = "Cropped T-shirt (Greyscale)"
+	icon_state = "croptshirt"
 
 /datum/sprite_accessory/undershirt/band
 	name = "T-Shirt (Band)"
@@ -148,3 +190,5 @@
 	name = "Tank Top (Asexual)"
 	icon_state = "ace"
 	use_static = TRUE
+*/
+// [/CELADON-REMOVE]

@@ -5,7 +5,7 @@
 	icon_living = "panzer_move"
 	icon_aggro = "panzer_move"
 	icon_dead = "panzer_dead"
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat/panzer = 6)
+	butcher_results = list(/obj/item/food/meat/roachmeat/panzer = 6)
 	turns_per_move = 2
 	maxHealth = 45
 	health = 45

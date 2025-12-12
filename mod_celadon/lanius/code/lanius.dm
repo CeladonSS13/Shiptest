@@ -11,13 +11,12 @@
 	// Animated beings of stone. They have increased defenses, and do not need to breathe. They're also slow as fuuuck.
 	name = "\improper Lanius"
 	id = SPECIES_LANIUS
-	sexes = FALSE
 	special_step_sounds = 'sound/effects/footstep/heavy1.ogg'
 	species_gibs = "lanius"
 	loreblurb = "The Lanius are a metallic scavenger race, \
 	 whose biological composition somehow drains oxygen from atmosphere."
-	species_eye_path = 'mod_celadon/_storge_icons/icons/lanius/lanius_organs.dmi'
-	species_traits = list(EYECOLOR, EMOTE_OVERLAY, NOBLOOD, MUTCOLORS, NO_UNDERWEAR, NOHUSK, NO_BONES)
+	species_eye_path = 'mod_celadon/_storage_icons/icons/species/lanius/lanius_organs.dmi'
+	species_traits = list(EYECOLOR, EMOTE_OVERLAY, NOBLOOD, MUTCOLORS, NO_UNDERWEAR, NOHUSK)
 	inherent_traits = list(TRAIT_NOBREATH, TRAIT_RESISTHEAT,TRAIT_RESISTCOLD,TRAIT_RESISTHIGHPRESSURE,TRAIT_RESISTLOWPRESSURE,TRAIT_NOFIRE,TRAIT_CHUNKYFINGERS,TRAIT_VIRUSIMMUNE,TRAIT_PIERCEIMMUNE,TRAIT_NODISMEMBER,TRAIT_SHOCKIMMUNE,TRAIT_GENELESS)
 	inherent_biotypes = MOB_HUMANOID | MOB_ORGANIC | MOB_MINERAL
 	toxic_food = VEGETABLES | DAIRY | CLOTH | GROSS | MEAT | RAW
@@ -42,19 +41,23 @@
 	mutantappendix = null
 	mutantbrain = /obj/item/organ/brain/lanius
 
-	species_chest = /obj/item/bodypart/chest/lanius
-	species_head = /obj/item/bodypart/head/lanius
-	species_l_arm = /obj/item/bodypart/l_arm/lanius
-	species_r_arm = /obj/item/bodypart/r_arm/lanius
-	species_l_leg = /obj/item/bodypart/leg/left/lanius
-	species_r_leg = /obj/item/bodypart/leg/right/lanius
+	species_limbs = list(
+			BODY_ZONE_CHEST = /obj/item/bodypart/chest/lanius,
+			BODY_ZONE_HEAD = /obj/item/bodypart/head/lanius,
+			BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/lanius,
+			BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/lanius,
+			BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/lanius,
+			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/lanius,
+		)
 
-	species_robotic_chest = /obj/item/bodypart/chest/lanius
-	species_robotic_head = /obj/item/bodypart/head/lanius
-	species_robotic_l_arm = /obj/item/bodypart/l_arm/lanius
-	species_robotic_r_arm = /obj/item/bodypart/r_arm/lanius
-	species_robotic_l_leg = /obj/item/bodypart/leg/left/lanius
-	species_robotic_r_leg = /obj/item/bodypart/leg/right/lanius
+	species_robotic_limbs = list(
+			BODY_ZONE_CHEST =  /obj/item/bodypart/chest/lanius,
+			BODY_ZONE_HEAD = /obj/item/bodypart/head/lanius,
+			BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/lanius,
+			BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/lanius,
+			BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/lanius,
+			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/lanius,
+		)
 
 /datum/species/lanius/spec_life(mob/living/carbon/human/H)
 	. = ..()

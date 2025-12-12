@@ -3,10 +3,7 @@
 // You do not need to define _s or _l sub-states, game automatically does this for you //what is this
 
 /datum/sprite_accessory/hair
-	// [CELADON-EDIT] - CELADON_QOL
-	// icon = 'icons/mob/human_face.dmi'	  // default icon for all hairs // CELADON-EDIT -> ORIGINAL
-	icon = 'mod_celadon/_storge_icons/icons/qol/human_face.dmi'	  // default icon for all hairs
-	// [/CELADON-EDIT]
+	icon = 'icons/mob/human_face.dmi'	  // default icon for all hairs
 	body_zone = BODY_ZONE_HEAD
 
 /datum/sprite_accessory/hair/afro
@@ -88,10 +85,6 @@
 /datum/sprite_accessory/hair/bowlcut
 	name = "Bowlcut"
 	icon_state = "hair_bowlcut"
-
-/datum/sprite_accessory/hair/bowlcut2
-	name = "Bowlcut 2"
-	icon_state = "hair_bowlcut2"
 
 /datum/sprite_accessory/hair/ponytail_braided
 	name = "Ponytail (Braided)"
@@ -233,10 +226,6 @@
 	name = "Egg"
 	icon_state = "hair_egg"
 
-/datum/sprite_accessory/hair/eight
-	name = "Eight"
-	icon_state = "hair_eight"
-
 /datum/sprite_accessory/hair/emo
 	name = "Emo"
 	icon_state = "hair_emo"
@@ -268,6 +257,10 @@
 /datum/sprite_accessory/hair/feather
 	name = "Feather"
 	icon_state = "hair_feather"
+
+/datum/sprite_accessory/hair/featherbang
+	name = "Feather (Bang)"
+	icon_state = "hair_featherbang"
 
 /datum/sprite_accessory/hair/father
 	name = "Father"
@@ -304,6 +297,14 @@
 /datum/sprite_accessory/hair/gloomy_long
 	name = "Gloomy (Long)"
 	icon_state = "hair_gloomylong"
+
+/datum/sprite_accessory/hair/longergloomy
+	name = "Gloomy (Longer)"
+	icon_state = "hair_longergloomy"
+
+/datum/sprite_accessory/hair/messychop
+	name = "Messy Chop"
+	icon_state = "hair_messychop"
 
 /datum/sprite_accessory/hair/halfbang
 	name = "Half-banged Hair"
@@ -376,6 +377,14 @@
 /datum/sprite_accessory/hair/long_over_eye
 	name = "Long Over Eye"
 	icon_state = "hair_longovereye"
+
+/datum/sprite_accessory/hair/longbun
+	name = "Long Bun"
+	icon_state = "hair_longbun"
+
+/datum/sprite_accessory/hair/halfbun
+	name = "Long Bun (Half)"
+	icon_state = "hair_longerbun"
 
 /datum/sprite_accessory/hair/longbangs
 	name = "Long Bangs"
@@ -485,10 +494,6 @@
 	name = "Pixie Cut"
 	icon_state = "hair_pixie"
 
-/datum/sprite_accessory/hair/pompadour
-	name = "Pompadour"
-	icon_state = "hair_pompadour"
-
 /datum/sprite_accessory/hair/bigpompadour
 	name = "Pompadour (Big)"
 	icon_state = "hair_bigpompadour"
@@ -500,6 +505,14 @@
 /datum/sprite_accessory/hair/ponytail2
 	name = "Ponytail (Grace)"
 	icon_state = "hair_ponytailgrace"
+
+/datum/sprite_accessory/hair/ponytaileye
+	name = "Ponytail (over eye)"
+	icon_state = "hair_ponytaileye"
+
+/datum/sprite_accessory/hair/ponytailbotheyes
+	name = "Ponytail (both eyes)"
+	icon_state = "hair_ponytailbotheyes"
 
 /datum/sprite_accessory/hair/ponytail4
 	name = "Ponytail 4"
@@ -525,6 +538,10 @@
 /datum/sprite_accessory/hair/countryponytail
 	name = "Ponytail (Country)"
 	icon_state = "hair_ponytailcountry"
+
+/datum/sprite_accessory/hair/ponytailshort
+	name = "Ponytail (simple)"
+	icon_state = "hair_ponytailshort"
 
 /datum/sprite_accessory/hair/fringetail
 	name = "Ponytail (Fringe)"
@@ -702,6 +719,10 @@
 	name = "Twintails"
 	icon_state = "hair_twintail"
 
+/datum/sprite_accessory/hair/twintailslong
+	name = "Twintails (Long)"
+	icon_state = "hair_twintaillong"
+
 /datum/sprite_accessory/hair/ruby
 	name = "Ruby"
 	icon_state = "hair_ruby"
@@ -733,6 +754,10 @@
 /datum/sprite_accessory/hair/longer
 	name = "Very Long Hair"
 	icon_state = "hair_vlong"
+
+/datum/sprite_accessory/hair/longerbangs
+	name = "Very Long Hair (Bangs)"
+	icon_state = "hair_vlongbangs"
 
 /datum/sprite_accessory/hair/longest
 	name = "Very Long Hair 2"

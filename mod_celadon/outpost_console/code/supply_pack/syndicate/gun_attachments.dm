@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/syndicate/gun_attachments
-	group = "Gun Attachments"
+	category = "Gun Attachments"
 
 /datum/supply_pack/faction/syndicate/gun_attachments/underbarrel_hognose
 	name = "Underbarrel Hognose Crate"

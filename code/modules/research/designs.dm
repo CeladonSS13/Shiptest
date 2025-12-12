@@ -109,26 +109,23 @@ other types of metals and chemistry for reagents).
 	pixel_y = base_pixel_y + rand(-5, 5)
 	if(design_name)
 		name = jointext(list(disk_name, design_name), " - ")
-	//[CELADON-EDIT] -- CELADON_FIXES -- Превращаем обычный список в ассоциативный. Люммох пидарас. Вагабонд боженька. Чиним диски пупупу
+	// [CELADON-EDIT] - CELADON_FIXES - Инициализируем строго индексный массив слотов 1..max_blueprints без ассоциативных ключей
+	// ORIGINAL (commented):
 	// if(length(starting_blueprints))
-		// for(var/design in starting_blueprints)
-			// blueprints += new design()
-	var/list/new_designs = list()
-	var/list/previous_designs = starting_blueprints
-	var/maxim_shelby = length(previous_designs)
-	for(var/i in 1 to max_blueprints)
-		if(maxim_shelby >= i)
-			var/a = pick(previous_designs)
-			var/datum/design/b = new a()
-			new_designs += b
-			new_designs[b] = i
-			previous_designs -= a
-		else
-			var/c = null
-			new_designs += c
-			new_designs[c] = i
-	blueprints = new_designs
-	//[/CELADON-EDIT]
+	// 	for(var/design in starting_blueprints)
+	// 		blueprints += new design()
+	// CELADON: фиксированная длина + раскладка стартовых чертежей по индексам
+	var/list/fixed_blueprints = list()
+	fixed_blueprints.len = max_blueprints
+	var/idx = 1
+	if(length(starting_blueprints))
+		for(var/path in starting_blueprints)
+			if(idx > max_blueprints)
+				break
+			fixed_blueprints[idx] = new path()
+			idx++
+	blueprints = fixed_blueprints
+	// [/CELADON-EDIT]
 
 /obj/item/disk/design_disk/adv
 	name = "Advanced Component Design Disk"
@@ -156,8 +153,8 @@ other types of metals and chemistry for reagents).
 
 //Disks with content
 /obj/item/disk/design_disk/ammo_c10mm
-	design_name = "10mm Ammo"
-	desc = "A design disk containing the pattern for a refill box of standard 10mm ammo, used in Stechkin pistols."
+	design_name = "10x22mm Ammo"
+	desc = "A design disk containing the pattern for a refill box of standard 10x22mm ammo, used in several pistols."
 	starting_blueprints = (/datum/design/c10mm)
 
 /obj/item/disk/design_disk/disposable_gun
@@ -175,8 +172,8 @@ other types of metals and chemistry for reagents).
 	starting_blueprints = list(/datum/design/clip_ripley_upgrade, /datum/design/clip_durand_upgrade)
 
 /obj/item/disk/design_disk/ammo_c9mm
-	design_name = "9mm Ammo"
-	desc = "A design disk containing the pattern for a refill box of standard 9mm ammo, used in Commander pistols."
+	design_name = "9x18mm Ammo"
+	desc = "A design disk containing the pattern for a refill box of standard 9x18mm ammo, used in Commander pistols."
 	starting_blueprints = list(/datum/design/c9mmautolathe)
 
 /obj/item/disk/design_disk/ammo_c9mm/Initialize()

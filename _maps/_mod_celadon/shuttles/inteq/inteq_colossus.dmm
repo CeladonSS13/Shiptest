@@ -146,9 +146,9 @@
 /obj/item/clothing/suit/armor/vest/alt,
 /obj/item/clothing/suit/armor/vest/alt,
 /obj/item/clothing/suit/armor/vest/alt,
-/obj/item/clothing/head/helmet/inteq,
-/obj/item/clothing/head/helmet/inteq,
-/obj/item/clothing/head/helmet/inteq,
+/obj/item/clothing/head/helmet/m10/inteq,
+/obj/item/clothing/head/helmet/m10/inteq,
+/obj/item/clothing/head/helmet/m10/inteq,
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/gloves/combat,
@@ -161,12 +161,12 @@
 /obj/item/clothing/suit/armor/vest/bulletproof,
 /obj/item/clothing/suit/armor/vest/bulletproof,
 /obj/item/clothing/suit/armor/vest/bulletproof,
-/obj/item/clothing/head/helmet/swat/inteq,
-/obj/item/clothing/head/helmet/swat/inteq,
-/obj/item/clothing/head/helmet/swat/inteq,
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
 	dir = 8
 	},
+/obj/item/clothing/head/helmet/bulletproof/x11/inteq,
+/obj/item/clothing/head/helmet/bulletproof/x11/inteq,
+/obj/item/clothing/head/helmet/bulletproof/x11/inteq,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "bS" = (
@@ -258,7 +258,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/reagent_containers/food/snacks/icecreamsandwich,
+/obj/item/food/icecreamsandwich,
 /obj/machinery/newscaster/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/office)
@@ -1007,7 +1007,7 @@
 	pixel_x = 32
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/newscaster/security_unit/directional/north,
+/obj/machinery/newscaster/directional/north,
 /obj/machinery/rnd/server,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/office)
@@ -2663,6 +2663,7 @@
 /obj/item/storage/belt/security/webbing/inteq,
 /obj/item/storage/belt/military/assault,
 /obj/item/clothing/head/inteq_peaked,
+/obj/item/gun/ballistic/revolver/horizonx,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
@@ -2751,10 +2752,10 @@
 /obj/item/ammo_box/magazine/co9mm{
 	pixel_x = -5
 	},
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq{
+/obj/item/gun/ballistic/automatic/pistol/challenger/inteq{
 	pixel_y = 5
 	},
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq,
+/obj/item/gun/ballistic/automatic/pistol/challenger/inteq,
 /obj/effect/turf_decal/siding/thinplating/dark,
 /obj/effect/turf_decal/trimline/opaque/yellow/line,
 /turf/open/floor/plasteel/tech/grid,

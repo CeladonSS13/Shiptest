@@ -1,32 +1,26 @@
 /datum/supply_pack/faction
 	name = "Crate"
-	group = "Faction products"
-	hidden = TRUE
+	category = "Faction products"
 
 // Делаем красиво? Наверное? По крайней мере экономим буквы, чтобы не писать в каждом датуме эти вещи!
 
 /datum/supply_pack/faction/independent
-	hidden = FALSE
 	faction = /datum/faction/independent
 	crate_type = /obj/structure/closet/crate
 
 /datum/supply_pack/faction/syndicate
-	hidden = FALSE
 	faction = /datum/faction/syndicate
 	crate_type = /obj/structure/closet/crate/secure/gear/syndicate
 
 /datum/supply_pack/faction/solfed
-	hidden = FALSE
 	faction = /datum/faction/solgov
 	crate_type = /obj/structure/closet/crate/secure/gear/solfed
 
 /datum/supply_pack/faction/inteq
-	hidden = FALSE
 	faction = /datum/faction/inteq
 	crate_type = /obj/structure/closet/crate/secure/gear/inteq
 
 /datum/supply_pack/faction/nanotrasen
-	hidden = FALSE
 	faction = /datum/faction/nt
 	crate_type = /obj/structure/closet/crate/secure/gear/nanotrasen
 

@@ -16,7 +16,7 @@
 	mob_size = MOB_SIZE_HUMAN
 	blattedin_revives_left = 0 //He only lives once, cuz he's huge
 
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat/fuhrer = 6)
+	butcher_results = list(/obj/item/food/meat/roachmeat/fuhrer = 6)
 
 	var/distress_level = 0
 	var/distress_calls = 1 //Each fuhrer can only call for help once in its life
@@ -64,9 +64,9 @@ reinforcements left it will attempt to evacuate*/
 
 		if (distress_calls)
 			distress_calls--
-			playsound(src.loc, 'mod_celadon/_storge_sounds/sound/shriek1.ogg', 100, 1, 8, 8)
+			playsound(src.loc, 'mod_celadon/_storage_sounds/sound/shriek1.ogg', 100, 1, 8, 8)
 			spawn(2)
-				playsound(src.loc, 'mod_celadon/_storge_sounds/sound/shriek1.ogg', 100, 1, 8, 8)
+				playsound(src.loc, 'mod_celadon/_storage_sounds/sound/shriek1.ogg', 100, 1, 8, 8)
 				//Playing the sound twice will make it sound really horrible
 
 			visible_message(span_danger("[src] emits a horrifying wail as nearby burrows stir to life!"))

@@ -34,9 +34,7 @@
 	},
 /area/overmap_encounter/planetoid/cave/explored)
 "dX" = (
-/obj/item/gun/ballistic/automatic/pistol/ringneck{
-	spawnwithmagazine = 0
-	},
+/obj/item/gun/ballistic/automatic/pistol/ringneck/no_mag,
 /turf/open/floor/plating/asteroid/whitesands,
 /area/overmap_encounter/planetoid/cave/explored)
 "eg" = (
@@ -137,7 +135,7 @@
 	},
 /area/overmap_encounter/planetoid/cave/explored)
 "hQ" = (
-/obj/structure/chair/comfy,
+/obj/structure/chair/comfy/red/directional/east,
 /turf/open/floor/plating{
 	icon_state = "panelscorched";
 	initial_gas_mix = "ws_atmos"

@@ -7,8 +7,6 @@
 /datum/species
 	/// Does the species use skintones or not?
 	var/use_skintoneriol = FALSE
-	var/obj/item/bodypart/riol_digi_l_leg = /obj/item/bodypart/leg/left/riol/digitigrade
-	var/obj/item/bodypart/riol_digi_r_leg = /obj/item/bodypart/leg/right/riol/digitigrade
 
 /datum/species/riol
 	name = "\improper Riol"
@@ -21,13 +19,12 @@
 
 	disliked_food = VEGETABLES | FRUIT | GRAIN | GROSS
 	liked_food = MEAT | RAW | DAIRY
-	digitigrade_customization = DIGITIGRADE_OPTIONAL
 
 	attack_verb = "slash"
 	attack_sound = 'sound/weapons/slash.ogg'
 	miss_sound = 'sound/weapons/slashmiss.ogg'
 
-	species_traits = list(EYECOLOR, LIPS, HAIR, FACEHAIR, EMOTE_OVERLAY, MUTCOLORS, MUTCOLORS_SECONDARY, SKINNOSECOLORS, SKINRIOLCOLORS, EARSRIOLCOLORS, HEADRIOLCOLORS, NOSERIOLCOLORS, CHESTRIOLCOLORS, BODYRIOLCOLORS )
+	species_traits = list(EYECOLOR, LIPS, HAIR, FACEHAIR, EMOTE_OVERLAY, MUTCOLORS, MUTCOLORS_SECONDARY, SKINNOSECOLORS, SKINRIOLCOLORS, EARSRIOLCOLORS, HEADRIOLCOLORS, NOSERIOLCOLORS, CHESTRIOLCOLORS, BODYRIOLCOLORS, HAS_FLESH, HAS_BONE)
 	mutant_bodyparts = list(
 		"riol_ears",
 		"riol_hairs",
@@ -59,9 +56,9 @@
 
 	default_color = "424242"
 
-	burnmod = 1.1
-	heatmod = 1.3
-	coldmod = 0.7
+	burnmod = 1.3
+	heatmod = 1.2
+	coldmod = 0.85
 	speedmod = -0.05
 
 	bodytemp_heat_damage_limit = RIOL_BODYTEMP_NORMAL + 20		//60
@@ -70,16 +67,14 @@
 
 	bodytemp_normal = RIOL_BODYTEMP_NORMAL						//40
 
-	min_temp_comfortable = RIOL_BODYTEMP_NORMAL - 50				//-10
+	min_temp_comfortable = RIOL_BODYTEMP_NORMAL - 35				//-10
 
-	bodytemp_cold_damage_limit = RIOL_BODYTEMP_NORMAL - 70		//-30
+	bodytemp_cold_damage_limit = RIOL_BODYTEMP_NORMAL - 45		//-30
 
-	meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/riol 	//нарисовать/спиздить спрайт к нему
+	meat = /obj/item/food/meat/slab/human/mutant/riol 	//нарисовать/спиздить спрайт к нему
 	//skinned_type = /obj/item/stack/sheet/animalhide/riol						//нужно сделать кожу из таяран и нарисовать/спиздить спрайт к нему
 
 	species_language_holder = /datum/language_holder/riol
-
-	ass_image = 'mod_celadon/_storge_icons/icons/ass/assfox.png'
 
 	mutantears = /obj/item/organ/ears/riol		//нужно отделить уши от головы. и можно кинуть их в тот же файл. потом в органе прописать путь к файлу + имя файла
 	mutanteyes = /obj/item/organ/eyes/riol
@@ -88,21 +83,23 @@
 
 	bodytype = BODYTYPE_RIOL | BODYTYPE_ORGANIC
 
-	species_chest = /obj/item/bodypart/chest/riol
-	species_head = /obj/item/bodypart/head/riol
-	species_l_arm = /obj/item/bodypart/l_arm/riol
-	species_r_arm = /obj/item/bodypart/r_arm/riol
-	species_l_leg = /obj/item/bodypart/leg/left/riol
-	species_r_leg = /obj/item/bodypart/leg/right/riol
-	riol_digi_l_leg = /obj/item/bodypart/leg/left/riol/digitigrade
-	riol_digi_r_leg = /obj/item/bodypart/leg/right/riol/digitigrade
+	species_limbs = list(
+			BODY_ZONE_CHEST = /obj/item/bodypart/chest/riol,
+			BODY_ZONE_HEAD = /obj/item/bodypart/head/riol,
+			BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/riol,
+			BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/riol,
+			BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/riol/digitigrade,
+			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/riol/digitigrade,
+		)
 
-	species_robotic_chest = /obj/item/bodypart/chest/robot
-	species_robotic_head = /obj/item/bodypart/head/robot
-	species_robotic_l_arm = /obj/item/bodypart/l_arm/robot/surplus
-	species_robotic_r_arm = /obj/item/bodypart/r_arm/robot/surplus
-	species_robotic_l_leg = /obj/item/bodypart/leg/left/robot/surplus
-	species_robotic_r_leg = /obj/item/bodypart/leg/right/robot/surplus
+	species_robotic_limbs = list(
+			BODY_ZONE_CHEST =  /obj/item/bodypart/chest/robot,
+			BODY_ZONE_HEAD = /obj/item/bodypart/head/robot,
+			BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/robot/surplus,
+			BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/robot/surplus,
+			BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/robot/surplus/lizard/digitigrade,
+			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/robot/surplus/lizard/digitigrade,
+		)
 
 /datum/species/riol/random_name(gender = NEUTER, unique, lastname)
 	if(gender != MALE)
@@ -136,7 +133,7 @@
 	C.dna.add_mutation(OLFACTION_RIOL)
 
 /obj/effect/proc_holder/spell/targeted/olfaction/riol //Риольсик снифф + меняет иконку расовой способности у риолов на красивую
-	action_icon = 'mod_celadon/_storge_icons/icons/riol/riol_skills.dmi'
+	action_icon = 'mod_celadon/_storage_icons/icons/species/riol/riol_skills.dmi'
 	action_icon_state = "sniff"
 
 /datum/mutation/human/olfaction/riol //Создает ген риольсокго сниффа

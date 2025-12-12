@@ -13,6 +13,7 @@
 	jobtype = /datum/job/assistant
 	job_icon = "assistant"
 
+	uniform = /obj/item/clothing/under/color/black
 	shoes = /obj/item/clothing/shoes/sneakers/black
 
 /datum/outfit/job/independent/assistant/waiter
@@ -26,6 +27,11 @@
 	l_pocket = /obj/item/lighter
 	r_pocket = /obj/item/reagent_containers/glass/rag
 
+/datum/outfit/job/independent/assistant/cheap //for Miskilamo ships
+	name = "Independent - Assistant (Low Budget)"
+
+	uniform = /obj/item/clothing/under/utility
+
 /datum/outfit/job/independent/assistant/waiter/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -33,12 +39,11 @@
 	var/obj/item/card/id/W = H.get_idcard()
 	W.access += list(ACCESS_KITCHEN)
 
-/datum/outfit/job/independent/assistant/fancy
+/datum/outfit/job/independent/assistant/fancy //for ISF ships
 	name = "Independent - Assistant (Fancy)"
 
 	shoes = /obj/item/clothing/shoes/laceup
-	uniform = /obj/item/clothing/under/suit/charcoal
-	accessory = /obj/item/clothing/accessory/waistcoat
+	uniform = /obj/item/clothing/under/suit/black_really
 
 /datum/outfit/job/independent/assistant/pirate
 	name = "Independent - Assistant (Pirate)"
@@ -77,6 +82,13 @@
 	belt = /obj/item/reagent_scanner
 	backpack_contents = list(/obj/item/book/manual/wiki/chemistry=1)
 
+/datum/outfit/job/independent/assistant/gown
+	name = "Independent - Assistant (Gown)"
+
+	uniform = /obj/item/clothing/under/rank/medical/gown
+	dcoat = null
+	shoes = /obj/item/clothing/shoes/sandal/slippers
+
 // Captain
 
 /datum/outfit/job/independent/captain
@@ -88,12 +100,11 @@
 	gloves = /obj/item/clothing/gloves/color/captain
 	ears = /obj/item/radio/headset/headset_com
 	uniform = /obj/item/clothing/under/rank/command/captain
+	suit = /obj/item/clothing/suit/armor/captaincoat
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/captain //WS Edit - Alt Uniforms
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/caphat
-	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
-	// [/CELADON-REMOVE]
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 
 	backpack = /obj/item/storage/backpack/captain
 	satchel = /obj/item/storage/backpack/satchel/cap
@@ -102,7 +113,31 @@
 
 	accessory = /obj/item/clothing/accessory/medal/gold/captain
 
-	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/captain)
+	chameleon_extras = list(/obj/item/gun/energy/sharplite/x12, /obj/item/stamp/captain)
+
+/datum/outfit/job/independent/captain/empty
+	name = "Independent - Captain (Naked)"
+	job_icon = "captain"
+	jobtype = /datum/job/captain
+
+	id = /obj/item/card/id/gold
+	gloves = null
+	ears = /obj/item/radio/headset/headset_com
+	uniform = /obj/item/clothing/under/rank/command/captain
+	suit = null
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/captain //WS Edit - Alt Uniforms
+	shoes = /obj/item/clothing/shoes/laceup
+	head = null
+	backpack_contents = null
+
+	backpack = /obj/item/storage/backpack/captain
+	satchel = /obj/item/storage/backpack/satchel/cap
+	duffelbag = /obj/item/storage/backpack/duffelbag/captain
+	courierbag = /obj/item/storage/backpack/messenger/com
+
+	accessory = /obj/item/clothing/accessory/medal/gold/captain
+
+	chameleon_extras = list(/obj/item/gun/energy/sharplite/x12, /obj/item/stamp/captain)
 
 /datum/outfit/job/independent/captain/cheap //for Miskilamo ships
 	name = "Independent - Captain (Low Budget)"
@@ -173,12 +208,31 @@
 	id = /obj/item/card/id
 	gloves = /obj/item/clothing/gloves/color/white
 	uniform = /obj/item/clothing/under/rank/security/detective/grey
-	suit = /obj/item/clothing/suit/toggle/lawyer/charcoal
+	suit = /obj/item/clothing/suit/lawyer/charcoal
 	neck = /obj/item/clothing/neck/tie/black
 	dcoat = null
 	glasses = /obj/item/clothing/glasses/sunglasses
 	head = null
 	accessory = null
+
+/datum/outfit/job/independent/captain/gown
+	name = "Independent - Captain (Gown)"
+
+	gloves = null
+	ears = null
+	uniform = /obj/item/clothing/under/rank/medical/gown
+	suit = null
+	dcoat = null
+	shoes = /obj/item/clothing/shoes/sandal/slippers
+	head = null
+	backpack_contents = null
+
+	accessory = null
+
+	backpack = /obj/item/storage/backpack/captain
+	satchel = /obj/item/storage/backpack/satchel/cap
+	duffelbag = /obj/item/storage/backpack/duffelbag/captain
+	courierbag = /obj/item/storage/backpack/messenger/com
 
 // Head of Personnel
 
@@ -192,18 +246,33 @@
 	uniform = /obj/item/clothing/under/rank/command/head_of_personnel
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/captain
 	shoes = /obj/item/clothing/shoes/sneakers/brown
-	// [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/storage/box/ids=1,
-	// /obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced = 1)	// CELADON-EDIT - ORIGINAL
-	backpack_contents = list(/obj/item/storage/box/ids=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
-	// [/CELADON-EDIT]
+
+	backpack_contents = list(/obj/item/storage/box/ids=1,\
+		/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
 
 	backpack = /obj/item/storage/backpack/captain
 	satchel = /obj/item/storage/backpack/satchel/cap
 	duffelbag = /obj/item/storage/backpack/duffelbag/captain
 	courierbag = /obj/item/storage/backpack/messenger/com
 
-	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/officer)
+	chameleon_extras = list(/obj/item/gun/energy/sharplite/x12, /obj/item/stamp/officer)
+
+/datum/outfit/job/independent/hop/hunter
+	name = "Independent - Head of Personnel (Hunter)"
+
+	uniform = /obj/item/clothing/under/syndicate/camo
+	shoes = /obj/item/clothing/shoes/workboots/mining
+	gloves = /obj/item/clothing/gloves/explorer
+	glasses = /obj/item/clothing/glasses/sunglasses
+	suit = /obj/item/clothing/suit/armor/vest/duster
+	alt_suit = /obj/item/clothing/suit/armor/vest/alt
+
+	backpack_contents = null
+
+	backpack = /obj/item/storage/backpack/explorer
+	satchel = /obj/item/storage/backpack/satchel/explorer
+	duffelbag = /obj/item/storage/backpack/duffelbag
+	courierbag = /obj/item/storage/backpack/messenger
 
 /datum/outfit/job/independent/hop/western
 	name = "Independent - Head of Personnel (Western)"
@@ -250,7 +319,7 @@
 	courierbag = /obj/item/storage/backpack/messenger/sec
 	box = /obj/item/storage/box/survival/security
 
-	chameleon_extras = list(/obj/item/gun/energy/e_gun/hos, /obj/item/stamp/hos)
+	chameleon_extras = list(/obj/item/gun/energy/sharplite/x01, /obj/item/stamp/hos)
 
 /datum/outfit/job/independent/hos/merc
 	name = "Independent - Mercenary XO"
@@ -294,7 +363,7 @@
 	ears = /obj/item/radio/headset/alt
 	uniform = /obj/item/clothing/under/rank/security/officer
 	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/helmet/sec
+	head = /obj/item/clothing/head/helmet/m10
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -308,7 +377,7 @@
 	box = /obj/item/storage/box/survival/security
 
 	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
-	//The helmet is necessary because /obj/item/clothing/head/helmet/sec is overwritten in the chameleon list by the standard helmet, which has the same name and icon state
+	//The helmet is necessary because /obj/item/clothing/head/helmet/m10 is overwritten in the chameleon list by the standard helmet, which has the same name and icon state
 
 /datum/outfit/job/independent/security/disarmed //No armor, no pocket handcuffs.
 	name = "Independent - Security Officer (Disarmed)"
@@ -328,7 +397,7 @@
 	name = "Independent - Security Officer (Mercenary)"
 	id_assignment = "Trooper"
 
-	uniform = /obj/item/clothing/under/syndicate/camo
+	uniform = /obj/item/clothing/under/rank/security/officer/camo
 	gloves = /obj/item/clothing/gloves/fingerless
 	head = null
 	suit = null
@@ -363,15 +432,14 @@
 	job_icon = "stationengineer"
 	jobtype = /datum/job/engineer
 
-	belt = /obj/item/storage/belt/utility/full/engi
-	gloves = /obj/item/clothing/gloves/color/yellow
+	belt = null
+	gloves = null
 	ears = /obj/item/radio/headset/headset_eng
-	uniform = /obj/item/clothing/under/rank/engineering/engineer
+	uniform = /obj/item/clothing/under/overalls/olive
 	alt_uniform = /obj/item/clothing/under/rank/engineering/engineer/hazard
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/engineering
 	shoes = /obj/item/clothing/shoes/workboots
-	head = /obj/item/clothing/head/hardhat/dblue
-	l_pocket = /obj/item/t_scanner
+	head = null
 
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
@@ -405,6 +473,19 @@
 	gloves = /obj/item/clothing/gloves/color/red/insulated
 
 	implants = list(/obj/item/implant/radio)
+
+/datum/outfit/job/independent/engineer/gown
+	name = "Independent - Engineer (Gown)"
+
+	gloves = null
+	ears = null
+	uniform = /obj/item/clothing/under/rank/medical/gown
+	alt_uniform = null
+	suit = null
+	dcoat = null
+	shoes = /obj/item/clothing/shoes/sandal/slippers
+	head = null
+	backpack_contents = null
 
 // Warden
 
@@ -448,10 +529,7 @@
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	head = /obj/item/clothing/head/hardhat/white
 	gloves = /obj/item/clothing/gloves/color/black
-	// [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)	// CELADON-EDIT - ORIGINAL
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
-	// [/CELADON-EDIT]
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)
 
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
@@ -655,6 +733,24 @@
 	satchel = /obj/item/storage/backpack/satchel/tox
 	courierbag = /obj/item/storage/backpack/messenger/tox
 
+// Hunter
+
+/datum/outfit/job/independent/hunter
+	name = "Independent - Hunter"
+	jobtype = /datum/job/mining
+	job_icon = "securityofficer"
+
+	ears = /obj/item/radio/headset/headset_cargo/mining
+	shoes = /obj/item/clothing/shoes/workboots/mining
+	gloves = /obj/item/clothing/gloves/explorer
+	uniform = /obj/item/clothing/under/syndicate/camo
+	backpack_contents = list(
+		/obj/item/melee/knife/survival=1,\
+		/obj/item/radio/weather_monitor=1)
+
+	backpack = /obj/item/storage/backpack/explorer
+	satchel = /obj/item/storage/backpack/satchel/explorer
+
 // Cook
 
 /datum/outfit/job/independent/cook
@@ -846,10 +942,7 @@
 	alt_suit = /obj/item/clothing/suit/toggle/suspenders
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/science //WS Edit - Alt Uniforms
 	l_hand = /obj/item/clipboard
-	// [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)	// CELADON-EDIT - ORIGINAL
-	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
-	// [/CELADON-EDIT]
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)
 
 	backpack = /obj/item/storage/backpack/science
 	satchel = /obj/item/storage/backpack/satchel/tox
@@ -871,9 +964,7 @@
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	suit = /obj/item/clothing/suit/toggle/labcoat/cmo
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
-	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
-	// [/CELADON-REMOVE]
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 
 	backpack = /obj/item/storage/backpack/medic
 	satchel = /obj/item/storage/backpack/satchel/med
@@ -899,10 +990,7 @@
 	backpack = /obj/item/storage/backpack/chemistry
 	satchel = /obj/item/storage/backpack/satchel/chem
 	courierbag = /obj/item/storage/backpack/messenger/chem
-	// [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички
-	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/storage/bag/chemistry=1)	// CELADON-EDIT - ORIGINAL
-	backpack_contents = list(/obj/item/storage/bag/chemistry=1)
-	// [/CELADON-EDIT]
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/storage/bag/chemistry=1)
 
 // Detective
 
@@ -945,11 +1033,10 @@
 	jobtype = /datum/job/hydro
 
 	ears = /obj/item/radio/headset/headset_srv
-	uniform = /obj/item/clothing/under/color/green
+	uniform = /obj/item/clothing/under/overalls
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/hydro
-	suit = /obj/item/clothing/suit/apron/overalls
 	gloves  =/obj/item/clothing/gloves/botanic_leather
-	suit_store = /obj/item/plant_analyzer
+	belt = /obj/item/plant_analyzer
 
 	backpack = /obj/item/storage/backpack/botany
 	satchel = /obj/item/storage/backpack/satchel/hyd
@@ -960,5 +1047,4 @@
 
 	ears = /obj/item/radio/headset/headset_med
 	belt = /obj/item/storage/bag/plants
-	suit = /obj/item/clothing/suit/apron/overalls
 	uniform = /obj/item/clothing/under/utility

@@ -23,6 +23,9 @@
 	dir = 1;
 	anchored = 1
 	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/wasteplanet/tradepost/warehouse)
 "as" = (
@@ -50,7 +53,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/wasteplanet/tradepost/barracks)
 "aM" = (
-/mob/living/simple_animal/hostile/hivebot/ranged,
+/mob/living/basic/hivebot/ranged,
 /turf/open/floor/plating/asteroid/wasteplanet,
 /area/overmap_encounter/planetoid/cave/explored)
 "aQ" = (
@@ -90,7 +93,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/hivebot/strong,
+/mob/living/basic/hivebot/strong,
 /obj/structure/foamedmetal/iron,
 /turf/open/floor/pod,
 /area/ruin/wasteplanet/tradepost/center)
@@ -116,7 +119,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
 	dir = 1
 	},
-/mob/living/simple_animal/hostile/hivebot/ranged,
+/mob/living/basic/hivebot/ranged,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
 	dir = 1
 	},
@@ -139,6 +142,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /turf/open/floor/pod,
 /area/ruin/wasteplanet/tradepost/warehouse)
@@ -198,10 +204,7 @@
 "cH" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
+	icon_state = "2-4"
 	},
 /turf/open/floor/concrete/pavement/wasteplanet,
 /area/overmap_encounter/planetoid/cave/explored)
@@ -336,12 +339,14 @@
 /area/overmap_encounter/planetoid/cave/explored)
 "ed" = (
 /obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /obj/structure/grille,
 /turf/open/floor/plating/asteroid/wasteplanet,
 /area/overmap_encounter/planetoid/cave/explored)
@@ -382,9 +387,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 6
 	},
-/mob/living/simple_animal/hostile/hivebot/ranged,
+/mob/living/basic/hivebot/ranged,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/item/trash/plate,
+/obj/item/trash/chips,
 /obj/effect/turf_decal/spline/fancy/opaque/black/corner{
 	dir = 4
 	},
@@ -394,7 +399,7 @@
 /turf/open/floor/pod,
 /area/ruin/wasteplanet/tradepost/center)
 "ew" = (
-/mob/living/simple_animal/hostile/hivebot/strong,
+/mob/living/basic/hivebot/strong,
 /turf/open/floor/plating/asteroid/wasteplanet,
 /area/overmap_encounter/planetoid/cave/explored)
 "ez" = (
@@ -445,6 +450,9 @@
 	},
 /obj/effect/turf_decal/industrial/stand_clear{
 	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
 /turf/open/floor/pod,
 /area/ruin/wasteplanet/tradepost/warehouse)
@@ -501,15 +509,14 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/structure/cable,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
 /turf/open/floor/concrete/pavement/wasteplanet,
 /area/overmap_encounter/planetoid/cave/explored)
@@ -554,7 +561,7 @@
 	},
 /obj/item/kirbyplants/random,
 /obj/item/paper/crumpled,
-/obj/item/trash/plate,
+/obj/item/trash/chips,
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 1
 	},
@@ -608,8 +615,8 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/item/paper_bin,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/mob/living/simple_animal/hostile/hivebot/strong,
-/obj/item/trash/plate,
+/mob/living/basic/hivebot/strong,
+/obj/item/trash/chips,
 /obj/item/ammo_casing/spent,
 /turf/open/floor/pod,
 /area/ruin/wasteplanet/tradepost/center)
@@ -851,7 +858,7 @@
 /obj/effect/decal/cleanable/oil/streak{
 	icon_state = "streak2"
 	},
-/mob/living/simple_animal/hostile/hivebot/strong,
+/mob/living/basic/hivebot/strong,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
 	dir = 4
 	},
@@ -897,7 +904,7 @@
 /area/overmap_encounter/planetoid/cave/explored)
 "kr" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/hivebot/ranged,
+/mob/living/basic/hivebot/ranged,
 /turf/open/floor/concrete/pavement/wasteplanet,
 /area/overmap_encounter/planetoid/cave/explored)
 "ks" = (
@@ -997,9 +1004,11 @@
 /turf/open/floor/plating/wasteplanet/rust,
 /area/overmap_encounter/planetoid/cave/explored)
 "lw" = (
-/obj/structure/cable,
 /obj/structure/cable{
 	icon_state = "0-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plating/wasteplanet,
 /area/overmap_encounter/planetoid/cave/explored)
@@ -1244,6 +1253,7 @@
 "nO" = (
 /obj/machinery/light/small/directional/north,
 /obj/machinery/computer/operating,
+/obj/item/disk/surgery/t2,
 /turf/open/floor/pod/light,
 /area/ruin/wasteplanet/tradepost/barracks)
 "nU" = (
@@ -1281,13 +1291,14 @@
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor2-old"
 	},
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq/no_mag,
+/obj/item/gun/ballistic/automatic/pistol/challenger/inteq/no_mag,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 8
 	},
+/obj/item/ammo_box/magazine/co9mm/empty,
 /turf/open/floor/plasteel/dark,
 /area/ruin/wasteplanet/tradepost/center)
 "oC" = (
@@ -1345,13 +1356,16 @@
 /turf/closed/wall,
 /area/ruin/wasteplanet/tradepost/warehouse)
 "pm" = (
-/obj/machinery/door/poddoor/shutters{
-	dir = 8;
-	id = "wtpw2"
-	},
 /obj/machinery/power/shieldwallgen/atmos{
 	id = "tradehouse2";
 	anchored = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/door/poddoor/shutters{
+	dir = 8;
+	id = "wtpw2"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/wasteplanet/tradepost/warehouse)
@@ -1376,6 +1390,9 @@
 	},
 /obj/effect/turf_decal/industrial/caution{
 	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
 	},
 /turf/open/floor/pod,
 /area/ruin/wasteplanet/tradepost/warehouse)
@@ -1575,7 +1592,7 @@
 "rN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/holopad/secure,
-/mob/living/simple_animal/hostile/hivebot/strong,
+/mob/living/basic/hivebot/strong,
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/corner/opaque/yellow/full,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
@@ -2200,7 +2217,9 @@
 /turf/open/floor/pod,
 /area/ruin/wasteplanet/tradepost/center)
 "xV" = (
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
@@ -2353,7 +2372,7 @@
 /obj/effect/decal/cleanable/oil/streak{
 	icon_state = "streak2"
 	},
-/mob/living/simple_animal/hostile/hivebot/ranged,
+/mob/living/basic/hivebot/ranged,
 /turf/open/floor/pod,
 /area/ruin/wasteplanet/tradepost/center)
 "zO" = (
@@ -2479,12 +2498,12 @@
 /area/overmap_encounter/planetoid/wasteplanet/explored)
 "Bk" = (
 /obj/structure/cable{
-	icon_state = "0-4"
+	icon_state = "0-2"
 	},
 /obj/structure/cable{
-	icon_state = "0-8"
+	icon_state = "1-2"
 	},
-/turf/open/floor/concrete/pavement/wasteplanet,
+/turf/open/floor/plating/asteroid/wasteplanet,
 /area/overmap_encounter/planetoid/cave/explored)
 "Bu" = (
 /obj/structure/foamedmetal/iron,
@@ -2501,7 +2520,7 @@
 /turf/open/floor/pod/dark,
 /area/ruin/wasteplanet/tradepost/center)
 "BN" = (
-/mob/living/simple_animal/hostile/hivebot/strong,
+/mob/living/basic/hivebot/strong,
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
 "Cb" = (
@@ -2741,6 +2760,9 @@
 	id = "tradehouse";
 	anchored = 1
 	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/wasteplanet/tradepost/warehouse)
 "DI" = (
@@ -2806,6 +2828,9 @@
 /area/ruin/wasteplanet/tradepost/barracks)
 "ED" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/pod,
 /area/ruin/wasteplanet/tradepost/warehouse)
 "EF" = (
@@ -2868,7 +2893,7 @@
 	icon_state = "0-8"
 	},
 /obj/structure/cable{
-	icon_state = "0-4"
+	icon_state = "4-8"
 	},
 /obj/structure/grille,
 /turf/open/floor/plating/wasteplanet,
@@ -2951,7 +2976,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/wasteplanet/tradepost/barracks)
 "FK" = (
-/mob/living/simple_animal/hostile/hivebot/strong,
+/mob/living/basic/hivebot/strong,
 /obj/item/ammo_casing/spent,
 /turf/open/floor/concrete/pavement/wasteplanet,
 /area/overmap_encounter/planetoid/cave/explored)
@@ -3027,6 +3052,12 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/pod,
 /area/ruin/wasteplanet/tradepost/warehouse)
 "Gt" = (
@@ -3178,7 +3209,7 @@
 "Ij" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
 /obj/item/pet_carrier,
-/obj/item/clothing/suit/toggle/lawyer/navy,
+/obj/item/clothing/suit/lawyer/navy,
 /obj/item/clothing/under/misc/pj/red,
 /obj/item/clothing/under/rank/civilian/lawyer/black,
 /obj/item/clothing/mask/gas/atmos,
@@ -3231,7 +3262,7 @@
 /turf/open/floor/wood/walnut,
 /area/ruin/wasteplanet/tradepost/center)
 "IM" = (
-/mob/living/simple_animal/hostile/hivebot/ranged,
+/mob/living/basic/hivebot/ranged,
 /turf/open/floor/concrete/pavement/wasteplanet,
 /area/overmap_encounter/planetoid/cave/explored)
 "IN" = (
@@ -3241,7 +3272,7 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 1
 	},
-/obj/item/gun/ballistic/automatic/pistol/commander/no_mag{
+/obj/item/gun/ballistic/automatic/pistol/challenger/no_mag{
 	pixel_y = 8;
 	pixel_x = 10
 	},
@@ -3384,9 +3415,11 @@
 /turf/open/floor/pod/light,
 /area/ruin/wasteplanet/tradepost/center)
 "JR" = (
-/obj/structure/cable,
 /obj/structure/cable{
 	icon_state = "0-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
 	},
 /turf/open/floor/plating/wasteplanet,
 /area/overmap_encounter/planetoid/cave/explored)
@@ -3411,10 +3444,10 @@
 /area/ruin/wasteplanet/tradepost/center)
 "Kl" = (
 /obj/structure/cable{
-	icon_state = "0-4"
+	icon_state = "0-8"
 	},
 /obj/structure/cable{
-	icon_state = "0-8"
+	icon_state = "4-8"
 	},
 /obj/structure/grille,
 /turf/open/floor/plating/wasteplanet/rust,
@@ -3492,10 +3525,6 @@
 /turf/open/floor/pod,
 /area/ruin/wasteplanet/tradepost)
 "KG" = (
-/obj/machinery/door/poddoor/shutters{
-	dir = 8;
-	id = "wtpw2"
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -3509,6 +3538,16 @@
 	id = "tradehouse2";
 	dir = 1;
 	anchored = 1
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/door/poddoor/shutters{
+	dir = 8;
+	id = "wtpw2"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/wasteplanet/tradepost/warehouse)
@@ -3581,7 +3620,7 @@
 /area/overmap_encounter/planetoid/cave/explored)
 "LW" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/hivebot/ranged,
+/mob/living/basic/hivebot/ranged,
 /obj/item/ammo_casing/spent,
 /turf/open/floor/concrete/pavement/wasteplanet,
 /area/overmap_encounter/planetoid/cave/explored)
@@ -3743,6 +3782,9 @@
 	pixel_y = -2;
 	pixel_x = -22
 	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
 /turf/open/floor/pod,
 /area/ruin/wasteplanet/tradepost/warehouse)
 "Nq" = (
@@ -3828,14 +3870,16 @@
 /area/ruin/wasteplanet/tradepost/barracks)
 "Of" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/trash/plate,
+/obj/item/trash/chips,
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
 /turf/open/floor/pod,
 /area/ruin/wasteplanet/tradepost/center)
 "Oi" = (
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
@@ -3990,7 +4034,7 @@
 /turf/open/floor/pod,
 /area/ruin/wasteplanet/tradepost/center)
 "Qn" = (
-/mob/living/simple_animal/hostile/hivebot/strong,
+/mob/living/basic/hivebot/strong,
 /turf/open/floor/plating/wasteplanet/rust,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
 "QB" = (
@@ -4026,7 +4070,7 @@
 /turf/open/floor/wood/walnut,
 /area/ruin/wasteplanet/tradepost/center)
 "QR" = (
-/obj/item/clothing/head/helmet/inteq{
+/obj/item/clothing/head/helmet/m10/inteq{
 	pixel_y = 4;
 	pixel_x = 3
 	},
@@ -4249,9 +4293,10 @@
 /obj/item/ammo_casing/spent,
 /obj/item/ammo_casing/spent,
 /obj/item/ammo_casing/spent,
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq/no_mag{
+/obj/item/gun/ballistic/automatic/pistol/challenger/inteq/no_mag{
 	pixel_y = 4
 	},
+/obj/item/ammo_box/magazine/co9mm/empty,
 /turf/open/floor/concrete/pavement/wasteplanet,
 /area/overmap_encounter/planetoid/cave/explored)
 "Si" = (
@@ -4427,7 +4472,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/item/trash/plate,
+/obj/item/trash/chips,
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 9
 	},
@@ -4456,11 +4501,10 @@
 /area/ruin/wasteplanet/tradepost/warehouse)
 "UE" = (
 /obj/structure/cable{
-	icon_state = "0-8"
+	icon_state = "4-8"
 	},
-/obj/structure/cable,
 /obj/structure/cable{
-	icon_state = "0-4"
+	icon_state = "1-8"
 	},
 /turf/open/floor/plating/asteroid/wasteplanet,
 /area/overmap_encounter/planetoid/cave/explored)
@@ -4696,7 +4740,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/hivebot/ranged,
+/mob/living/basic/hivebot/ranged,
 /obj/structure/door_assembly/door_assembly_com,
 /turf/open/floor/pod,
 /area/ruin/wasteplanet/tradepost/center)
@@ -4753,10 +4797,10 @@
 /area/ruin/wasteplanet/tradepost)
 "Xh" = (
 /obj/structure/cable{
-	icon_state = "0-4"
+	icon_state = "0-2"
 	},
 /obj/structure/cable{
-	icon_state = "0-2"
+	icon_state = "2-4"
 	},
 /turf/open/floor/plating/wasteplanet,
 /area/overmap_encounter/planetoid/cave/explored)
@@ -7069,7 +7113,7 @@ QB
 QB
 Nh
 QB
-Bk
+vL
 Yt
 vz
 ua
@@ -7385,7 +7429,7 @@ QB
 sL
 Xh
 lw
-vG
+Bk
 JR
 ho
 dE

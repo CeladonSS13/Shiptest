@@ -116,6 +116,18 @@
 			log_combat(M, src, "disarmed", "[I ? " removing \the [I]" : ""]")
 			updatehealth()
 
+//TG turned monkeys into carbons so im copy pasting attack_animal cause I dont care about this interaction that much.
+/mob/living/carbon/monkey/attack_basic_mob(mob/living/basic/user, list/modifiers)
+	. = ..()
+	if(.)
+		var/damage = rand(user.melee_damage_lower, user.melee_damage_upper)
+		var/dam_zone = dismembering_strike(user, pick(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_L_HAND, BODY_ZONE_PRECISE_R_HAND, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG))
+		if(!dam_zone) //Dismemberment successful
+			return TRUE
+		var/obj/item/bodypart/affecting = get_bodypart(ran_zone(dam_zone))
+		if(!affecting)
+			affecting = get_bodypart(BODY_ZONE_CHEST)
+		apply_damage(damage, user.melee_damage_type, affecting)
 
 /mob/living/carbon/monkey/attack_animal(mob/living/simple_animal/M)
 	. = ..()
@@ -189,10 +201,14 @@
 	//attempt to dismember bodyparts
 	if(severity <= 2)
 		var/max_limb_loss = round(4/severity) //so you don't lose four limbs at severity 3.
-		for(var/obj/item/bodypart/BP as anything in bodyparts)
-			if(prob(50/severity) && BP.body_zone != BODY_ZONE_CHEST)
-				BP.brute_dam = BP.max_damage
-				BP.dismember()
+		var/obj/item/bodypart/body_part
+		for(var/zone in bodyparts)
+			body_part = bodyparts[zone]
+			if(!body_part)
+				continue
+			if(prob(50/severity) && zone != BODY_ZONE_CHEST)
+				body_part.brute_dam = body_part.max_damage
+				body_part.dismember()
 				max_limb_loss--
 				if(!max_limb_loss)
 					break

@@ -41,6 +41,9 @@
 	var/deac_sound = 'sound/items/welderdeactivate.ogg'
 	var/start_full = TRUE
 	wall_decon_damage = 50
+	wound_bonus = 10
+	bare_wound_bonus = 15
+
 
 /obj/item/weldingtool/empty
 	start_full = FALSE
@@ -119,16 +122,15 @@
 	var/obj/item/bodypart/attackedLimb = target.get_bodypart(check_zone(user.zone_selected))
 	if(!attackedLimb || IS_ORGANIC_LIMB(attackedLimb) || (user.a_intent == INTENT_HARM))
 		return ..()
+	if(!target.is_exposed(user, TRUE, user.zone_selected))
+		return TRUE
 	if(!tool_start_check(user, amount = 1))
 		return TRUE
 	user.visible_message(span_notice("[user] starts to fix some of the dents on [target]'s [parse_zone(attackedLimb.body_zone)]."),
 			span_notice("You start fixing some of the dents on [target == user ? "your" : "[target]'s"] [parse_zone(attackedLimb.body_zone)]."))
 	if(!use_tool(target, user, delay = (target == user ? 5 SECONDS : 0.5 SECONDS), amount = 1, volume = 25))
 		return TRUE
-	// [CELADON-EDIT] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
-	// item_heal_robotic(target, user, brute_heal = 15, burn_heal = 0, integrity_loss = 5)	// CELADON-EDIT = ORIGINAL
 	item_heal_robotic(target, user, brute_heal = 15, burn_heal = 0)
-	// [/CELADON-EDIT]
 	return TRUE
 
 /obj/item/weldingtool/afterattack(atom/O, mob/user, proximity)
@@ -141,7 +143,7 @@
 
 		if(!QDELETED(O) && isliving(O)) // can't ignite something that doesn't exist
 			var/mob/living/L = O
-			if(L.IgniteMob())
+			if(L.ignite_mob())
 				message_admins("[ADMIN_LOOKUPFLW(user)] set [key_name_admin(L)] on fire with [src] at [AREACOORD(user)]")
 				log_game("[key_name(user)] set [key_name(L)] on fire with [src] at [AREACOORD(user)]")
 
@@ -160,7 +162,7 @@
 
 		if(!QDELETED(O) && isliving(O)) // can't ignite something that doesn't exist
 			var/mob/living/L = O
-			if(L.IgniteMob())
+			if(L.ignite_mob())
 				message_admins("[ADMIN_LOOKUPFLW(user)] set [key_name_admin(L)] on fire with [src] at [AREACOORD(user)]")
 				log_game("[key_name(user)] set [key_name(L)] on fire with [src] at [AREACOORD(user)]")
 
@@ -264,7 +266,7 @@
 	return welding
 
 // If welding tool ran out of fuel during a construction task, construction fails.
-/obj/item/weldingtool/tool_use_check(mob/living/user, amount)
+/obj/item/weldingtool/tool_use_check(mob/living/user, atom/target, amount)
 	if(!isOn() || !check_fuel())
 		to_chat(user, span_warning("[src] has to be on to complete this task!"))
 		return FALSE

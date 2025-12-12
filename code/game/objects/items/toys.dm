@@ -30,6 +30,7 @@
 	throw_speed = 3
 	throw_range = 7
 	force = 0
+	initial_language_holder = /datum/language_holder/universal
 
 
 /*
@@ -622,7 +623,7 @@
 		to_chat(user, span_warning("There are no more cards to draw!"))
 		return
 	var/obj/item/toy/cards/singlecard/H = new/obj/item/toy/cards/singlecard(user.loc)
-	choice = cards[1]
+	choice = pick(cards)	// [CELADON-EDIT] - FIXES_CARDS_DRAW_RANDOM
 	H.cardname = choice
 	H.parentdeck = src
 	var/O = src
@@ -720,7 +721,7 @@
 	. = ..()
 	var/dat = "You have:<BR>"
 	for(var/t in currenthand)
-		dat += "<A href='?src=[REF(src)];pick=[t]'>A [t].</A><BR>"
+		dat += "<A href='byond://?src=[REF(src)];pick=[t]'>A [t].</A><BR>"
 	dat += "Which card will you remove next?"
 	var/datum/browser/popup = new(user, "cardhand", "Hand of Cards", 400, 240)
 	popup.set_content(dat)
@@ -1206,11 +1207,14 @@
 	icon_state = "chemist"
 	toysay = "Get your pills!"
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/toy/figure/clown
 	name = "Clown action figure"
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/toy.dmi'
 	icon_state = "clown"
 	toysay = "Honk!"
 	toysound = 'sound/items/bikehorn.ogg'
+// [/CELADON-ADD]
 
 /obj/item/toy/figure/ian
 	name = "Ian action figure"
@@ -1276,11 +1280,14 @@
 	icon_state = "paramedic"
 	toysay = "And the best part? I'm not even a real doctor!"
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/toy/figure/mime
 	name = "Mime action figure"
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/toy.dmi'
 	icon_state = "mime"
 	toysay = "..."
 	toysound = null
+// [/CELADON-ADD]
 
 /obj/item/toy/figure/miner
 	name = "Shaft Miner action figure"

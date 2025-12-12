@@ -2,8 +2,8 @@
 	name = "Used Utility Storage"
 	desc = "The previous owner will not grieve over his loss."
 
-	price_min = 100
-	price_max = 700
+	cost_min = 100
+	cost_max = 700
 	stock_min = 3
 	stock_max = 7
 	availability_prob = 40
@@ -32,8 +32,8 @@
 	name = "Night Vision System"
 	desc = "Any matches with the devices used by any faction are coincidential."
 
-	price_min = 900
-	price_max = 1750
+	cost_min = 900
+	cost_max = 1750
 	stock_min = 1
 	stock_max = 2
 	availability_prob = 10

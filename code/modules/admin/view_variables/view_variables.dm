@@ -15,6 +15,8 @@
 	if(!islist && !istype(D))
 		return
 
+	log_celadon_admin("ADMIN: [key_name(usr)] checked the View Variables for [D].") // [CELADON_ADD] - logging admin actions.
+
 	var/title = ""
 	var/refid = REF(D)
 	var/icon/sprite
@@ -215,7 +217,7 @@
 					</td>
 					<td width='50%'>
 						<div align='center'>
-							<a id='refresh_link' href='?_src_=vars;
+							<a id='refresh_link' href='byond://?_src_=vars;
 datumrefresh=[refid];[HrefToken()]'>Refresh</a>
 							<form>
 								<select name="file" size="1"

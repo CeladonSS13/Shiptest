@@ -591,16 +591,13 @@
 /area/ship/engineering/electrical)
 "cF" = (
 /obj/structure/closet/secure_closet/hydroponics,
-/obj/item/reagent_containers/food/snacks/grown/wheat{
+/obj/item/food/grown/wheat{
 	pixel_x = 4;
 	pixel_y = -4
 	},
-/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/food/grown/wheat,
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 6
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -1008,12 +1005,6 @@
 	pixel_y = 6
 	},
 /obj/item/toy/beach_ball,
-/obj/effect/turf_decal/weather/sand{
-	dir = 5
-	},
-/obj/effect/turf_decal/weather/sand{
-	dir = 9
-	},
 /obj/item/toy/seashell{
 	pixel_y = -10;
 	pixel_x = 11
@@ -1105,10 +1096,7 @@
 	pixel_x = 2;
 	pixel_y = 8
 	},
-/obj/item/reagent_containers/glass/bottle/antitoxin{
-	pixel_x = -1;
-	pixel_y = 4
-	},
+/obj/item/reagent_containers/glass/bottle/charcoal,
 /obj/item/reagent_containers/glass/bottle/formaldehyde{
 	pixel_x = -2
 	},
@@ -3393,12 +3381,12 @@
 /area/ship/maintenance/port)
 "qK" = (
 /obj/structure/closet/secure_closet/freezer/meat/open,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
 /obj/effect/turf_decal/box/corners{
 	dir = 8
 	},
@@ -3581,7 +3569,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/east,
 /obj/structure/closet/wall/directional/south,
-/obj/item/reagent_containers/syringe/contraband/fentanyl{
+/obj/item/reagent_containers/syringe/contraband/morphine{
 	pixel_x = -3;
 	pixel_y = 4
 	},
@@ -4044,9 +4032,7 @@
 /obj/item/gun/ballistic/shotgun/doublebarrel{
 	pixel_y = -4
 	},
-/obj/item/gun/ballistic/shotgun/automatic/dual_tube{
-	pixel_y = 2
-	},
+/obj/item/gun/ballistic/shotgun/automatic/negotiator/old,
 /obj/item/ammo_casing/shotgun/laserscatter{
 	pixel_x = -4;
 	pixel_y = -6
@@ -4524,10 +4510,6 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/wood/reinforced,
-/obj/item/food/breadslice/moldy{
-	pixel_x = -6;
-	pixel_y = 10
-	},
 /obj/item/food/breadslice/creamcheese{
 	pixel_x = -1;
 	pixel_y = 0
@@ -5049,7 +5031,7 @@
 	},
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/effect/decal/cleanable/blood/gibs,
-/mob/living/simple_animal/cow{
+/mob/living/basic/cow{
 	desc = "Allegedly a bull.";
 	name = "Otis";
 	real_name = "Betsy"
@@ -6242,7 +6224,7 @@
 	pixel_x = 13;
 	pixel_y = 10
 	},
-/obj/item/reagent_containers/food/snacks/honeybar{
+/obj/item/food/honeybar{
 	pixel_x = -3
 	},
 /obj/item/reagent_containers/glass/beaker/large{
@@ -6578,7 +6560,7 @@
 /obj/item/clothing/glasses/meson{
 	pixel_y = -6
 	},
-/obj/item/reagent_containers/syringe/salacid,
+/obj/item/reagent_containers/syringe/ysiltane,
 /obj/item/reagent_containers/hypospray/medipen/penacid,
 /obj/item/reagent_containers/hypospray/medipen/penacid,
 /obj/structure/cable{
@@ -6907,9 +6889,9 @@
 	pixel_y = 6;
 	pixel_x = -4
 	},
-/obj/item/reagent_containers/food/snacks/meat/slab/human,
-/obj/item/reagent_containers/food/snacks/meat/slab/human,
-/obj/item/reagent_containers/food/snacks/meat/slab/human,
+/obj/item/food/meat/slab/human,
+/obj/item/food/meat/slab/human,
+/obj/item/food/meat/slab/human,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "GY" = (
@@ -8392,7 +8374,7 @@
 "Mz" = (
 /obj/structure/closet/crate/bin,
 /obj/item/trash/syndi_cakes,
-/obj/item/trash/plate,
+/obj/item/trash/chips,
 /obj/item/trash/candy,
 /obj/item/trash/waffles,
 /obj/item/flashlight,
@@ -9748,9 +9730,6 @@
 "TW" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/item/reagent_containers/glass/bucket,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
-	},
 /turf/open/floor/plating{
 	icon_state = "platingdmg2"
 	},
@@ -10073,7 +10052,7 @@
 	pixel_y = 13;
 	pixel_x = -7
 	},
-/obj/item/reagent_containers/food/snacks/dough{
+/obj/item/food/dough{
 	pixel_x = 3
 	},
 /obj/item/book/manual/chef_recipes{
@@ -10344,14 +10323,14 @@
 /area/ship/crew)
 "WK" = (
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/food/snacks/grown/corn{
+/obj/item/food/grown/corn{
 	pixel_y = 6
 	},
-/obj/item/reagent_containers/food/snacks/grown/pumpkin{
+/obj/item/food/grown/pumpkin{
 	pixel_y = 6
 	},
-/obj/item/reagent_containers/food/snacks/grown/carrot,
-/obj/item/reagent_containers/food/snacks/grown/tomato,
+/obj/item/food/grown/carrot,
+/obj/item/food/grown/tomato,
 /obj/item/radio/intercom/directional/south,
 /obj/machinery/light/small/directional/west,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -10991,8 +10970,8 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/reagent_containers/food/snacks/grown/tobacco/space,
-/obj/item/reagent_containers/food/snacks/grown/tobacco/space{
+/obj/item/food/grown/tobacco/space,
+/obj/item/food/grown/tobacco/space{
 	pixel_y = 3;
 	pixel_x = 3
 	},

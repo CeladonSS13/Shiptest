@@ -9,14 +9,16 @@
 	"sensor_range": 3,
 	"prefix": "ISV",
 	"faction": "/datum/faction/independent",
-	"tags": ["Survival"],
+	"tags": [
+	"Выживание"
+	],
 	"namelists": [
 		"SPACE",
 		"MYTHOLOGICAL"
 	],
 	"job_slots": {
 		"Loner": {
-			"outfit": "/datum/outfit/job/independent/assistant",
+			"outfit": "/datum/outfit/job/cel/independent/assistant",
 			"officer": true,
 			"slots": 1
 		}

@@ -2,11 +2,11 @@
 	name = "shuttle component"
 	desc = "Something for shuttles."
 	density = TRUE
-	obj_integrity = 250
+	atom_integrity = 250
 	max_integrity = 250
 	// [CELADON-EDIT] - CELADON_BALANCE
 	// icon = 'icons/obj/shuttle.dmi' // CELADON-EDIT - ORIGINAL
-	icon = 'mod_celadon/_storge_icons/icons/shuttle.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/shuttle.dmi'
 	// [/CELADON-EDIT]
 	icon_state = "burst_plasma"
 	circuit = /obj/item/circuitboard/machine/shuttle/engine

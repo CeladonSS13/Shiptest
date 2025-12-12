@@ -39,10 +39,10 @@
 	var/pre_attack = 0
 	var/pre_attack_icon = "ancient_goliath_preattack"
 	var/tentacle_type = /obj/effect/temp_visual/goliath_tentacle
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/goliath = 2, /obj/item/stack/sheet/bone = 2, /obj/item/stack/sheet/sinew = 2, /obj/item/stack/ore/silver = 10)
+	butcher_results = list(/obj/item/food/meat/slab/goliath = 2, /obj/item/stack/sheet/bone = 2, /obj/item/stack/sheet/sinew = 2, /obj/item/stack/ore/silver = 10)
 	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/goliath_hide = 2)
 	loot = list()
-	food_type = list(/obj/item/reagent_containers/food/snacks/meat, /obj/item/reagent_containers/food/snacks/grown/ash_flora/cactus_fruit, /obj/item/reagent_containers/food/snacks/grown/ash_flora/mushroom_leaf)		// Omnivorous
+	food_type = list(/obj/item/food/meat, /obj/item/food/grown/ash_flora/cactus_fruit, /obj/item/food/grown/ash_flora/mushroom_leaf)
 	tame_chance = 0
 	bonus_tame_chance = 10
 	search_objects = 1
@@ -68,6 +68,12 @@
 
 /mob/living/simple_animal/hostile/asteroid/goliath/death(gibbed)
 	move_resist = MOVE_RESIST_DEFAULT
+	// [CELADON-ADD] - FIXES_GOLIATH_TENTACLES
+	// Удаляем все тентакли при смерти голиафа
+	for(var/obj/effect/temp_visual/goliath_tentacle/T in world)
+		if(T.spawner == src)
+			qdel(T)
+	// [/CELADON-ADD]
 	..()
 
 /mob/living/simple_animal/hostile/asteroid/goliath/gib()
@@ -135,6 +141,9 @@
 	tame_chance = 5
 	bonus_tame_chance = 15
 
+/mob/living/simple_animal/hostile/asteroid/goliath/pup/Initialize(mapload)
+	. = ..()
+	ADD_TRAIT(src, TRAIT_HOLDABLE, INNATE_TRAIT)
 
 //Lavaland Goliath
 /mob/living/simple_animal/hostile/asteroid/goliath/beast
@@ -148,7 +157,7 @@
 	throw_message = "does nothing to the thick hide of the"
 	pre_attack_icon = "goliath_preattack"
 	mob_trophy = /obj/item/mob_trophy/goliath_tentacle
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/goliath = 2, /obj/item/stack/sheet/bone = 2, /obj/item/stack/sheet/sinew = 2, /obj/item/stack/ore/silver = 10)
+	butcher_results = list(/obj/item/food/meat/slab/goliath = 2, /obj/item/stack/sheet/bone = 2, /obj/item/stack/sheet/sinew = 2, /obj/item/stack/ore/silver = 10)
 	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/goliath_hide = 2)
 	loot = list()
 	stat_attack = UNCONSCIOUS
@@ -263,6 +272,12 @@
 /mob/living/simple_animal/hostile/asteroid/goliath/beast/ancient/Life()
 	. = ..()
 	if(!.) // dead
+		// [CELADON-ADD] - FIXES_GOLIATH_TENTACLES
+		// Удаляем все тентакли при смерти древнего голиафа
+		for(var/obj/effect/temp_visual/goliath_tentacle/T in world)
+			if(T.spawner == src)
+				qdel(T)
+		// [/CELADON-ADD]
 		return
 	if(AIStatus != AI_ON)
 		return
@@ -281,7 +296,7 @@
 				cached_tentacle_turfs -= t
 
 /mob/living/simple_animal/hostile/asteroid/goliath/beast/nest
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/goliath = 2, /obj/item/stack/sheet/bone = 2, /obj/item/stack/sheet/sinew = 2)
+	butcher_results = list(/obj/item/food/meat/slab/goliath = 2, /obj/item/stack/sheet/bone = 2, /obj/item/stack/sheet/sinew = 2)
 	from_nest = TRUE
 
 //tentacles
@@ -324,10 +339,22 @@
 	// [/CELADON-EDIT]
 
 /obj/effect/temp_visual/goliath_tentacle/proc/tripanim()
+	// [CELADON-ADD] - FIXES_GOLIATH_TENTACLES
+	// Проверяем, жив ли еще создатель
+	if(QDELETED(spawner) || (spawner && spawner.stat == DEAD))
+		qdel(src)
+		return
+	// [/CELADON-ADD]
 	deltimer(timerid)
 	timerid = addtimer(CALLBACK(src, PROC_REF(trip)), 3, TIMER_STOPPABLE)
 
 /obj/effect/temp_visual/goliath_tentacle/proc/trip()
+	// [CELADON-ADD] - FIXES_GOLIATH_TENTACLES
+	// Проверяем, жив ли еще создатель
+	if(QDELETED(spawner) || (spawner && spawner.stat == DEAD))
+		qdel(src)
+		return
+	// [/CELADON-ADD]
 	var/latched = FALSE
 	for(var/mob/living/L in loc)
 		if((!QDELETED(spawner) && spawner.faction_check_mob(L)) || L.stat == DEAD)
@@ -342,7 +369,8 @@
 		timerid = addtimer(CALLBACK(src, PROC_REF(retract)), 10, TIMER_STOPPABLE)
 
 /obj/effect/temp_visual/goliath_tentacle/proc/on_hit(mob/living/target)
-	target.apply_damage(rand(20,30), BRUTE, pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG))
+	target.apply_damage(rand(10,20), BRUTE, pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG), wound_bonus = CANT_WOUND) //already dangerous, don't break legs too
+
 	if(iscarbon(target))
 		var/obj/item/restraints/legcuffs/beartrap/goliath/B = new /obj/item/restraints/legcuffs/beartrap/goliath(get_turf(target))
 		B.on_entered(src, target)
@@ -385,7 +413,7 @@
 	base_pixel_x = 0
 	throw_message = "does nothing to the calcified hide of the"
 	pre_attack_icon = "crystal_goliath2"
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/goliath = 2, /obj/item/stack/sheet/bone = 2, /obj/item/stack/sheet/sinew = 2, /obj/item/stack/ore/silver = 10, /obj/item/strange_crystal = 2)
+	butcher_results = list(/obj/item/food/meat/slab/goliath = 2, /obj/item/stack/sheet/bone = 2, /obj/item/stack/sheet/sinew = 2, /obj/item/stack/ore/silver = 10, /obj/item/strange_crystal = 2)
 	tentacle_type = /obj/effect/temp_visual/goliath_tentacle/crystal
 	tentacle_recheck_cooldown = 50
 	speed = 2
@@ -459,3 +487,59 @@
 	icon_state = "gruboid_tentacle_wiggle"
 	wiggle = "gruboid_tentacle_spawn"
 	retract = "gruboid_tentacle_retract"
+
+//Whitesands Goliath
+/mob/living/simple_animal/hostile/asteroid/goliath/beast/whitesands
+	name = "goliath"
+	desc = "A species of goliath native to sand planets. While its shell can take more punishment, its also has much weaker skin to compensate"
+	icon = 'icons/mob/lavaland/lavaland_monsters_wide.dmi'
+	icon_state = "ws_goliath"
+	icon_living = "ws_goliath"
+	icon_aggro = "ws_goliath"
+	icon_dead = "ws_goliath_dead"
+	throw_message = "does nothing to the tough hide of the"
+	pre_attack_icon = "ws_goliath_preattack"
+
+	move_to_delay = 2.5 SECONDS
+	speed = 2
+
+	maxHealth = 30
+	health = 30
+	armor = list("melee" = 25, "bullet" = 45, "laser" = 35, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 30, "fire" = 30, "acid" = 30)
+
+	butcher_results = list(/obj/item/food/meat/slab/goliath = 2, /obj/item/stack/sheet/bone = 2, /obj/item/stack/sheet/sinew = 2, /obj/item/stack/ore/silver = 10)
+	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/goliath_hide = 2)
+	loot = list()
+	stat_attack = UNCONSCIOUS
+	robust_searching = 1
+
+/mob/living/simple_animal/hostile/asteroid/goliath/beast/whitesands/random/Initialize()
+	. = ..()
+	if(prob(10))
+		new /mob/living/simple_animal/hostile/asteroid/goliath/beast/ancient/whitesands(loc)
+		return INITIALIZE_HINT_QDEL
+
+/mob/living/simple_animal/hostile/asteroid/goliath/beast/whitesands/nest
+	butcher_results = list(/obj/item/food/meat/slab/goliath = 2, /obj/item/stack/sheet/bone = 2, /obj/item/stack/sheet/sinew = 2)
+	from_nest = TRUE
+
+/mob/living/simple_animal/hostile/asteroid/goliath/beast/ancient/whitesands
+	name = "ancient goliath"
+	desc = "Goliaths are biologically immortal, and rare specimens have survived for centuries. This one is clearly ancient, and its shell is dangerously durable."
+	icon_state = "ws_ancient_goliath"
+	icon_living = "ws_ancient_goliath"
+	icon_aggro = "ws_ancient_goliath_alert"
+	icon_dead = "ws_ancient_goliath_dead"
+	maxHealth = 70
+	health = 70
+	armor = list("melee" = 30, "bullet" = 65, "laser" = 55, "energy" = 30, "bomb" = 60, "bio" = 30, "rad" = 50, "fire" = 30, "acid" = 50)
+	move_to_delay = 3 SECONDS
+	speed = 3
+	//mob_trophy = /obj/item/mob_trophy/elder_tentacle
+	pre_attack_icon = "ws_ancient_goliath_preattack"
+	throw_message = "does nothing to the rocky hide of the"
+	guaranteed_butcher_results = list()
+	trophy_drop_mod = 75
+	wander = FALSE
+	bonus_tame_chance = 10
+

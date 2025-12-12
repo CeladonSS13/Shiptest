@@ -16,8 +16,11 @@
 ///Subtype for any kind of ballistic gun
 ///This has a shitload of vars on it, and I'm sorry for that, but it does make making new subtypes really easy
 /obj/item/gun/ballistic
-	desc = "Now comes in flavors like GUN. Uses 10mm ammo, for some reason."
+	desc = "Now comes in flavors like GUN. Uses 10x22mm ammo, for some reason."
 	name = "projectile gun"
+
+	bad_type = /obj/item/gun/ballistic
+
 	w_class = WEIGHT_CLASS_NORMAL
 	has_safety = TRUE
 	safety = TRUE
@@ -37,6 +40,9 @@
 	var/wear_major_threshold = 180
 	/// Highest wear value so the gun doesn't end up completely irreperable
 	var/wear_maximum = 300
+	var/ignores_wear = FALSE
+	/// Doesn't ever keep ammo when loading a new round into the chamber. Mainly for BOLT_TYPE_NO_BOLT guns.
+	var/doesnt_keep_bullet = FALSE
 
 	///If you can examine a gun to see its current ammo count
 	var/ammo_counter = FALSE
@@ -49,7 +55,6 @@
 		/obj/item/attachment/rail_light,
 		/obj/item/attachment/bayonet,
 		/obj/item/attachment/gun,
-		/obj/item/attachment/sling,
 		/obj/item/attachment/ammo_counter
 	)
 	slot_available = list(
@@ -165,8 +170,16 @@
 	if (chambered || !magazine)
 		return
 	if (magazine.ammo_count())
-		chambered = magazine.get_round(keep_bullet || bolt_type == BOLT_TYPE_NO_BOLT)
+		if(doesnt_keep_bullet)
+			chambered = magazine.get_round(FALSE)
+		else
+			chambered = magazine.get_round(keep_bullet || bolt_type == BOLT_TYPE_NO_BOLT)
 		if (bolt_type != BOLT_TYPE_OPEN)
+			// [CELADON-ADD] - FIXES_PHYSICS_AMMO_CASING - Останавливаем физику гильз
+			var/datum/component/movable_physics/physics = chambered.GetComponent(/datum/component/movable_physics)
+			if(physics)
+				qdel(physics)
+			// [/CELADON-ADD]
 			chambered.forceMove(src)
 
 ///updates a bunch of racking related stuff and also handles the sound effects and the like

@@ -101,6 +101,12 @@
 		M.satiety += 30
 	. = ..()
 
+/datum/reagent/consumable/nutriment/protein //this is from a beestation pr from a tg pr that actually makes use of this reagent. At the moment that I am porting newfood, we are just using it as filler to have something other than vitamins and nutriments.
+	name = "Protein"
+	description = "A natural polyamide made up of amino acids. An essential constituent of mosts known forms of life."
+	brute_heal = 0.8 //Rewards the player for eating a balanced diet.
+	nutriment_factor = 9 * REAGENTS_METABOLISM //45% as calorie dense as corn oil.
+
 /datum/reagent/consumable/cooking_oil
 	name = "Cooking Oil"
 	description = "A variety of cooking oil derived from fat or plants. Used in food preparation and frying."
@@ -167,6 +173,13 @@
 /datum/reagent/consumable/sugar/overdose_start(mob/living/M)
 	to_chat(M, span_userdanger("You go into hyperglycaemic shock! Lay off the twinkies!"))
 	M.AdjustSleeping(600)
+	// [CELADON-ADD] - CELADON_DIABETES - Повышенный шанс получить диабет
+	if(!M.HasDiseaseType(/datum/disease/diabetes))
+		if(prob(15)) // 15% chance on overdose
+			to_chat(M, span_userdanger("The excessive sugar has damaged your pancreas! You have developed diabetes!"))
+			var/datum/disease/diabetes/D = new()
+			M.ForceContractDisease(D)
+	// [/CELADON-ADD]
 	. = 1
 
 /datum/reagent/consumable/sugar/overdose_process(mob/living/M)
@@ -200,7 +213,6 @@
 	nutriment_factor = 5 * REAGENTS_METABOLISM
 	color = "#731008" // rgb: 115, 16, 8
 	taste_description = "ketchup"
-
 
 /datum/reagent/consumable/capsaicin
 	name = "Capsaicin Oil"
@@ -280,18 +292,18 @@
 			addtimer(CALLBACK(victim, TYPE_PROC_REF(/mob, remove_movespeed_modifier), /datum/movespeed_modifier/reagent/pepperspray), 10 SECONDS)
 		victim.update_damage_hud()
 	if(method == INGEST)
-		if(!holder.has_reagent(/datum/reagent/consumable/milk))
+		if(!M.has_reagent(/datum/reagent/consumable/milk))
 			if(prob(15))
 				to_chat(M, span_danger("[pick("Your head pounds.", "Your mouth feels like it's on fire.", "You feel dizzy.")]"))
 			if(prob(10))
 				victim.blur_eyes(1)
 			if(prob(10))
-				victim.Dizzy(1)
+				victim.set_timed_status_effect(2 SECONDS, /datum/status_effect/dizziness, only_if_higher = TRUE)
 			if(prob(5))
 				victim.vomit()
 
 /datum/reagent/consumable/condensedcapsaicin/on_mob_life(mob/living/carbon/M)
-	if(!holder.has_reagent(/datum/reagent/consumable/milk))
+	if(!M.has_reagent(/datum/reagent/consumable/milk))
 		if(prob(10))
 			M.visible_message(span_warning("[M] [pick("dry heaves!","coughs!","splutters!")]"))
 	..()
@@ -337,15 +349,15 @@
 		M.slurring = 1
 	switch(current_cycle)
 		if(1 to 5)
-			M.Dizzy(5)
+			M.set_timed_status_effect(10 SECONDS * REM, /datum/status_effect/dizziness, only_if_higher = TRUE)
 			M.set_drugginess(30)
 		if(5 to 10)
-			M.adjust_jitter(10)
-			M.Dizzy(10)
+			M.set_timed_status_effect(20 SECONDS * REM, /datum/status_effect/jitter, only_if_higher = TRUE)
+			M.set_timed_status_effect(20 SECONDS * REM, /datum/status_effect/dizziness, only_if_higher = TRUE)
 			M.set_drugginess(35)
 		if (10 to INFINITY)
-			M.adjust_jitter(20)
-			M.Dizzy(20)
+			M.set_timed_status_effect(40 SECONDS * REM, /datum/status_effect/jitter, only_if_higher = TRUE)
+			M.set_timed_status_effect(40 SECONDS * REM, /datum/status_effect/dizziness, only_if_higher = TRUE)
 			M.set_drugginess(40)
 	..()
 
@@ -361,7 +373,7 @@
 		if(prob(min(25,current_cycle)))
 			to_chat(M, span_danger("You can't get the scent of garlic out of your nose! You can barely think..."))
 			M.Paralyze(10)
-			M.adjust_jitter(10)
+			M.set_timed_status_effect(20 SECONDS * REM, /datum/status_effect/jitter, only_if_higher = TRUE)
 	else if(ishuman(M))
 		var/mob/living/carbon/human/H = M
 		if(H.job == "Cook")
@@ -393,12 +405,7 @@
 	if (!istype(T))
 		return
 	T.MakeSlippery(TURF_WET_LUBE, min_wet_time = 10 SECONDS, wet_time_to_add = reac_volume*2 SECONDS)
-	var/obj/effect/hotspot/hotspot = (locate(/obj/effect/hotspot) in T)
-	if(hotspot)
-		var/datum/gas_mixture/lowertemp = T.return_air()
-		lowertemp.set_temperature(max(min(lowertemp.return_temperature()-2000,lowertemp.return_temperature() / 2) ,TCMB))
-		lowertemp.react(src)
-		qdel(hotspot)
+	T.extinguish_turf()
 
 /datum/reagent/consumable/enzyme
 	name = "Universal Enzyme"
@@ -487,9 +494,16 @@
 /datum/reagent/consumable/eggyolk
 	name = "Egg Yolk"
 	description = "It's full of protein."
-	nutriment_factor = 3 * REAGENTS_METABOLISM
+	nutriment_factor = 4 * REAGENTS_METABOLISM
 	color = "#FFB500"
 	taste_description = "egg"
+
+/datum/reagent/consumable/eggwhite
+	name = "Egg White"
+	description = "It's full of even more protein."
+	nutriment_factor = 1.5 * REAGENTS_METABOLISM
+	color = "#fffdf7"
+	taste_description = "bland egg"
 
 /datum/reagent/consumable/corn_starch
 	name = "Corn Starch"
@@ -517,7 +531,7 @@
 	taste_description = "sweetness"
 
 /datum/reagent/consumable/honey/on_mob_life(mob/living/carbon/M)
-	M.reagents.add_reagent(/datum/reagent/consumable/sugar,3)
+	holder.add_reagent(/datum/reagent/consumable/sugar,3)
 	if(prob(55))
 		M.adjustBruteLoss(-1*REM, 0)
 		M.adjustFireLoss(-1*REM, 0)
@@ -596,7 +610,6 @@
 
 ////Lavaland Flora Reagents////
 
-
 /datum/reagent/consumable/entpoly
 	name = "Entropic Polypnium"
 	description = "An ichor, derived from a certain mushroom, makes for a bad time."
@@ -615,7 +628,6 @@
 		M.blur_eyes(5)
 		. = TRUE
 	..()
-
 
 /datum/reagent/consumable/tinlux
 	name = "Tinea Luxor"
@@ -647,7 +659,6 @@
 	if(mob_light_obj)
 		qdel(mob_light_obj)
 
-
 /datum/reagent/consumable/vitfro
 	name = "Vitrium Froth"
 	description = "A bubbly paste that heals wounds of the skin."
@@ -662,12 +673,14 @@
 		. = TRUE
 	..()
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNSS
 /datum/reagent/consumable/clownstears
 	name = "Clown's Tears"
 	description = "The sorrow and melancholy of a thousand bereaved clowns, forever denied their Honkmechs."
 	nutriment_factor = 5 * REAGENTS_METABOLISM
 	color = "#eef442" // rgb: 238, 244, 66
 	taste_description = "mournful honking"
+// [/CELADON-ADD]
 
 /datum/reagent/consumable/liquidelectricity
 	name = "Liquid Electricity"
@@ -812,3 +825,31 @@
 	nutriment_factor = 1 * REAGENTS_METABOLISM
 	taste_description = "peanut"
 	reagent_state = SOLID
+
+/datum/reagent/consumable/tiris_blood
+	name = "Tiris blood"
+	nutriment_factor = 1 * REAGENTS_METABOLISM
+	taste_description = "bloody and earthy"
+
+/datum/reagent/consumable/tiris_sele
+	name = "Tiris-Sele"
+	nutriment_factor = 1 * REAGENTS_METABOLISM
+	taste_description = "gently blossoming umami"
+
+/datum/reagent/consumable/tiris_sale
+	name = "Tiris-Sale"
+	nutriment_factor = 1 * REAGENTS_METABOLISM
+	taste_description = "bloody piercing umami"
+
+/datum/reagent/consumable/pancakebatter
+	name = "pancake batter"
+	description = "A very milky batter. 5 units of this on the griddle makes a mean pancake."
+	taste_description = "milky batter"
+	color = "#fccc98"
+
+/datum/reagent/consumable/whipped_cream
+	name = "Whipped Cream"
+	description = "A white fluffy cream made from whipping cream at intense speed."
+	color = "#efeff0"
+	nutriment_factor = 4
+	taste_description = "fluffy sweet cream"

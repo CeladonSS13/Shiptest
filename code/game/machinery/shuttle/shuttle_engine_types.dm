@@ -29,12 +29,7 @@
 	if(heat_creation)
 		heat_engine()
 	var/to_use = fuel_use * (percentage / 100) * seconds_per_tick
-	// [CELADON-EDIT] - CELADON_FIXES
-	//return resolved_heater.consume_fuel(to_use, fuel_type) / to_use * thrust //This proc returns how much was actually burned, so let's use that and multiply it by the thrust to get all the thrust we CAN give. // CELADON-EDIT - ORIGINAL
-	// return resolved_heater.consume_fuel(to_use, fuel_type) // Это наше, поставил офовское, мб починили чето уже?
 	return resolved_heater.consume_fuel(to_use, fuel_type) / to_use * percentage / 100 * thrust //This proc returns how much was actually burned, so let's use that and multiply it by the thrust to get all the thrust we CAN give.
-	// [/CELADON-EDIT]
-	// ID: ALARM_CONFLICTS_OFFOS
 
 /obj/machinery/power/shuttle/engine/fueled/return_fuel()
 	. = ..()
@@ -103,7 +98,7 @@
 	circuit = /obj/item/circuitboard/machine/shuttle/engine/plasma
 	fuel_type = GAS_PLASMA
 	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем движки
-	// fuel_use = 20 // CELADON-EDIT - ORIGINAL
+	// fuel_use = 20
 	// thrust = 25 // CELADON-EDIT - ORIGINAL
 	fuel_use = 20
 	thrust = 9
@@ -123,7 +118,7 @@
 	desc = "A thruster that expels gas inefficiently to create thrust."
 	circuit = /obj/item/circuitboard/machine/shuttle/engine/expulsion
 	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем движки
-	// fuel_use = 80 // CELADON-EDIT - ORIGINAL
+	// fuel_use = 80
 	// thrust = 15 // CELADON-EDIT - ORIGINAL
 	fuel_use = 80
 	thrust = 5
@@ -146,7 +141,7 @@
 	///what portion of the mols in the attached heater to "burn"
 	var/fuel_consumption = 0.0125
 	//multiplier for thrust
-	thrust = 3
+	thrust = 8
 	//used by stockparts, efficiency_multiplier
 	var/consumption_multiplier = 1
 	//If this engine should create heat when burned.
@@ -230,14 +225,18 @@
 	// thrust = 10 // CELADON-EDIT - ORIGINAL
 	///Amount, in kilojoules, needed for a full burn.
 	thrust = 4
-	var/power_per_burn = 50000
 	// [/CELADON-EDIT]
+	//used by stockparts, efficiency_multiplier
+	var/efficiency_multiplier = 1
+	//used by stockparts, thrust multiplier
+	var/thrust_multiplier = 1
+	var/power_per_burn = 50000
 
 /obj/machinery/power/shuttle/engine/electric/bad
 	name = "Outdated Ion Thruster"
 	circuit = /obj/item/circuitboard/machine/shuttle/engine/electric/bad
 	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем движки
-	// thrust = 2 // CELADON-EDIT - ORIGINAL
+	// thrust = 2
 	// power_per_burn = 70000 // CELADON-EDIT - ORIGINAL
 	thrust = 1
 	power_per_burn = 70000
@@ -247,7 +246,7 @@
 	name = "high performance ion thruster"
 	desc = "An expensive variant of a standard ion thruster, using highest quality components in order to achieve much better performance."
 	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем движки
-	// thrust = 30 // CELADON-EDIT - ORIGINAL
+	// thrust = 30
 	// power_per_burn = 65000 // CELADON-EDIT - ORIGINAL
 	thrust = 11
 	power_per_burn = 100000
@@ -277,6 +276,16 @@
 	charge = 1e6
 
 
+/obj/machinery/power/shuttle/engine/electric/RefreshParts()
+	var/installed_capacitors = 0
+	var/installed_lasers = 0
+	for(var/obj/item/stock_parts/capacitor/C in component_parts)
+		installed_capacitors += C.rating
+	for(var/obj/item/stock_parts/micro_laser/L in component_parts)
+		installed_lasers += L.rating
+	efficiency_multiplier = installed_capacitors
+	thrust_multiplier = installed_lasers
+
 /obj/machinery/power/shuttle/engine/electric/update_engine()
 	. = ..()
 	if(!.)
@@ -291,9 +300,16 @@
 
 /obj/machinery/power/shuttle/engine/electric/burn_engine(percentage = 100, seconds_per_tick)
 	. = ..()
-	var/true_percentage = min(newavail() / power_per_burn, percentage / 100)
-	add_delayedload(power_per_burn * true_percentage)
-	return thrust * true_percentage
+
+	//calculates the power efficiency of the engine based on the parts installed in it
+	var/updated_power_per_burn = (power_per_burn * (1 - (0.08 * (efficiency_multiplier - 3))))
+
+	//calculates the updated thrust of the engine based on the parts installed in it
+	var/updated_thrust = (thrust * (thrust_multiplier / 3))
+
+	var/true_percentage = min(newavail() / updated_power_per_burn, percentage / 100)
+	add_delayedload(updated_power_per_burn * true_percentage)
+	return updated_thrust * true_percentage
 
 /obj/machinery/power/shuttle/engine/electric/return_fuel()
 	if(length(powernet?.nodes) == 2)

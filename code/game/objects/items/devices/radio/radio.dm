@@ -115,12 +115,13 @@
 	. = ..()
 	AddComponent(/datum/component/empprotection, EMP_PROTECT_WIRES)
 
+// [CELADON-EDIT] - QOL - Разрешаем использование UI раций в лежачем положении
 /obj/item/radio/AltClick(mob/user)
 	if(headset)
 		. = ..()
 	else if(sectorwide == TRUE) // prevents incompatibility with broadcast cameras
 		return
-	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE))
+	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE, TRUE)) // floor_okay = TRUE
 		broadcasting = !broadcasting
 		to_chat(user, span_notice("You toggle broadcasting [broadcasting ? "on" : "off"]."))
 
@@ -129,9 +130,10 @@
 		. = ..()
 	else if(sectorwide == TRUE) // prevents incompatibility with broadcast cameras
 		return
-	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE))
+	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE, TRUE)) // floor_okay = TRUE
 		listening = !listening
 		to_chat(user, span_notice("You toggle speaker [listening ? "on" : "off"]."))
+// [/CELADON-EDIT]
 
 /obj/item/radio/interact(mob/user)
 	if(unscrewed && !isAI(user))
@@ -140,8 +142,10 @@
 	else
 		..()
 
+// [CELADON-EDIT] - QOL - Разрешаем использование UI раций в лежачем положении
 /obj/item/radio/ui_state(mob/user)
-	return GLOB.inventory_state
+	return GLOB.portable_device_state
+// [/CELADON-EDIT]
 
 /obj/item/radio/ui_interact(mob/user, datum/tgui/ui, datum/ui_state/state)
 	ui = SStgui.try_update_ui(user, src, ui)
@@ -221,10 +225,16 @@
 				. = TRUE
 
 /obj/item/radio/talk_into(atom/movable/M, message, channel, list/spans, datum/language/language, list/message_mods)
+	if(SEND_SIGNAL(M, COMSIG_MOVABLE_USING_RADIO, src) & COMPONENT_CANNOT_USE_RADIO)
+		return
+	if(SEND_SIGNAL(src, COMSIG_RADIO_NEW_MESSAGE, M, message, channel) & COMPONENT_CANNOT_USE_RADIO)
+		return
 	if(!spans)
 		spans = list(M.speech_span)
 	if(!language)
 		language = M.get_selected_language()
+	if((initial(language?.flags) & SIGNED_LANGUAGE) && !HAS_TRAIT(M, TRAIT_CAN_SIGN_ON_COMMS))
+		return
 	INVOKE_ASYNC(src, PROC_REF(talk_into_impl), M, message, channel, spans.Copy(), language, message_mods)
 	return ITALICS | REDUCE_RANGE
 
@@ -273,14 +283,20 @@
 	// Determine the identity information which will be attached to the signal.
 	var/atom/movable/virtualspeaker/speaker = new(null, M, src)
 
+	// Check for the overmap's interference level
+	var/interference_level = SSovermap.get_overmap_interference(src)
+
 	// Construct the signal
 	var/datum/signal/subspace/vocal/signal = new(src, freq, speaker, language, message, spans, message_mods)
+	signal.data["interference"] = interference_level
+	signal.data["sfx"] = 'sound/effects/radio_chatter.ogg'
 
 	// Independent radios, on the CentCom frequency, reach all independent radios
 	if (independent && (freq == FREQ_CENTCOM || freq == FREQ_WIDEBAND))
 		signal.data["compression"] = 0
 		signal.transmission_method = TRANSMISSION_SUPERSPACE
 		signal.map_zones = list(0)  // reaches all Z-levels
+		signal.data["sfx"] = 'sound/effects/overmap/wideband.ogg'
 		signal.broadcast()
 		return
 

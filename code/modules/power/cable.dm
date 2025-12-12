@@ -538,14 +538,15 @@ GLOBAL_LIST_INIT(cable_coil_recipes, list(new/datum/stack_recipe("cable restrain
 	if(!istype(H))
 		return ..()
 
+	if(!H.is_exposed(user, TRUE, user.zone_selected))
+		return TRUE
+
 	var/obj/item/bodypart/affecting = H.get_bodypart(check_zone(user.zone_selected))
 	if(affecting && (!IS_ORGANIC_LIMB(affecting)))
 		if(user == H)
 			user.visible_message(span_notice("[user] starts to fix some of the wires in [H]'s [parse_zone(affecting.body_zone)]."), span_notice("You start fixing some of the wires in [H == user ? "your" : "[H]'s"] [parse_zone(affecting.body_zone)]."))
 			if(!do_after(user, 0.5 SECONDS, H))
 				return
-		// [CELADON-REMOVE] - CELADON_RETURN_CONTENT_IPC - Откат по ИПС
-		// if(item_heal_robotic(H, user, 0, 15, integrity_loss = 5))	// CELADON-EDIT = ORIGINAL
 		if(item_heal_robotic(H, user, 0, 15))
 			use(1)
 		return

@@ -52,12 +52,13 @@
 	icon = null
 	ttone = "data"
 
-
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/pda/ai/attack_self(mob/user)
 	if ((honkamt > 0) && (prob(60)))//For clown virus.
 		honkamt--
 		playsound(loc, 'sound/items/bikehorn.ogg', 30, TRUE)
 	return
+// [/CELADON-ADD]
 
 /obj/item/pda/ai/pai
 	ttone = "assist"
@@ -107,7 +108,6 @@
 	default_cartridge = /obj/item/cartridge/signal/toxins
 	icon_state = "pda-science"
 	ttone = "boom"
-
 
 /obj/item/pda/heads
 	default_cartridge = /obj/item/cartridge/head
@@ -247,3 +247,10 @@
 	name = "SUNS PDA"
 	default_cartridge = /obj/item/cartridge/medical
 	icon_state = "pda-suns"
+
+// [CELADON-ADD] - scientist-PDA
+/obj/item/pda/scientist
+	name = "scientist PDA"
+	default_cartridge = /obj/item/cartridge/chemistry
+	icon_state = "pda-science"
+// [/CELADON-ADD]

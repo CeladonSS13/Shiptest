@@ -17,7 +17,7 @@
 
 	speak_emote = list("slashed", "rended", "diced")
 
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat/jager = 3)
+	butcher_results = list(/obj/item/food/meat/roachmeat/jager = 3)
 
 	// Armor related variables - jager jacket
 	armor = list("melee" = 5, "bullet" = 2, "laser" = 2, "energy" = 2, "bomb" = 0, "bio" = 25, "rad" = 50, "fire" = 0, "acid" = 0)

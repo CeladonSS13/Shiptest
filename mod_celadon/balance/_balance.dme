@@ -9,18 +9,19 @@
 #include "code/engine/enginebalance.dm"
 #include "code/engine/rnd.dm"
 
+#include "code/hostile/frontiersman.dm"
+
 #include "code/backpack.dm"
+#include "code/bscrystal.dm"
 #include "code/cargo.dm"	// Механизм временный, по выводу субшатлов из ремонта, вернуть инфляцию назад.
 #include "code/cc_clothes.dm"
+#include "code/chair_bullet_redirect.dm"
 #include "code/chemestry.dm"	// От ганзы не включенный файл
-#include "code/sharplite_balance.dm"
+#include "code/overmap_event_speed_safe.dm"
 #include "code/elite.dm"
-#include "code/energy.dm"
 #include "code/gloves.dm"
-#include "code/gun.dm"
 #include "code/guncloset.dm"
 #include "code/hostile_mobs.dm"
-#include "code/ionrifle.dm"
 #include "code/items.dm"
 #include "code/mutagensalpetredispenser.dm"
 #include "code/structures.dm"

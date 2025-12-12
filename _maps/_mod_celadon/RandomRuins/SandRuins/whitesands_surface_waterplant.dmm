@@ -1482,7 +1482,9 @@
 /turf/open/floor/plating,
 /area/ruin/powered)
 "LM" = (
-/obj/machinery/power/shuttle/engine/turbine,
+/obj/machinery/power/shuttle/engine/turbine{
+	dir = 2
+	},
 /turf/open/floor/plating/asteroid/whitesands,
 /area/overmap_encounter/planetoid/sand/explored)
 "LN" = (

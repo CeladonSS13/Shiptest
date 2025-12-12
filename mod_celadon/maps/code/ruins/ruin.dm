@@ -1006,6 +1006,14 @@
 	suffix = "whitesands_brazillianlab.dmm"
 	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_INHOSPITABLE)
 
+/datum/map_template/ruin/whitesands/trainyard	// NEW
+	id = "train-yard"
+	name = "Train Yard"
+	description = "Attacked train station. What the hell are train doing on a sand planet?"
+	suffix = "whitesands_surface_trainyard.dmm"
+	cost = 3
+	ruin_tags = list(RUIN_TAG_HARD_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER)
+
 //							///
 //		MARK: Plasma
 //							///
@@ -1166,6 +1174,14 @@
 	suffix = "asteroid_wrecker_outpost.dmm"
 	cost = 3
 
+/datum/map_template/ruin/asteroid/lima_facility
+	id = "lima_facility"
+	name = "Lima Facility"
+	description = "The secret facility from which the S.O.S. signal was sent."
+	suffix = "lima_facility.dmm"
+	cost = 4
+	allow_duplicates = FALSE
+
 //							///
 //		MARK: Reebe
 //							///
@@ -1195,3 +1211,36 @@
 	description = "It seems whoever left here was so nice they left very vauluable items behind. How thoughtful."
 	suffix = "reebe_decayed_sm.dmm"
 	ruin_tags = list(RUIN_TAG_NO_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE, RUIN_TAG_HAZARDOUS)
+//							///
+//		MARK: Moon
+//							///
+
+
+
+
+
+
+//							///
+//		MARK: Desert
+//							///
+
+
+
+
+
+
+//							///
+//		MARK: Water
+//							///
+
+
+
+
+
+
+
+
+
+//							///
+//		MARK: Shrouded
+//							///

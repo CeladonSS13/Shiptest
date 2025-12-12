@@ -9,15 +9,13 @@ SUBSYSTEM_DEF(jukeboxes)
 	var/song_name = "generic"
 	var/song_path = null
 	var/song_length = 0
-	var/song_beat = 0
-	var/song_associated_id = null
+	var/song_beat_deciseconds = 120
 
-/datum/track/New(name, path, length, beat, assocID)
+/datum/track/New(name, path, length, beat)
 	song_name = name
 	song_path = path
 	song_length = length
-	song_beat = beat
-	song_associated_id = assocID
+	song_beat_deciseconds = beat
 
 /datum/controller/subsystem/jukeboxes/proc/addjukebox(obj/jukebox, datum/track/T, jukefalloff = 1)
 	if(!istype(T))
@@ -35,7 +33,7 @@ SUBSYSTEM_DEF(jukeboxes)
 	var/sound/song_to_init = sound(T.song_path)
 	song_to_init.status = SOUND_MUTE
 	for(var/mob/M in GLOB.player_list)
-		if(!(M?.client.prefs.toggles & SOUND_INSTRUMENTS))
+		if(!(M?.client?.prefs.toggles & SOUND_JUKEBOX))
 			continue
 
 		M.playsound_local(M, null, 100, channel = youvegotafreejukebox[2], S = song_to_init)
@@ -68,18 +66,20 @@ SUBSYSTEM_DEF(jukeboxes)
 
 /datum/controller/subsystem/jukeboxes/Initialize()
 	var/list/tracks = flist("[global.config.directory]/jukebox_music/sounds/")
+	//Cache all the sounds ahead of time so we minimize rust calls
+	SSsound_cache.cache_sounds(tracks)
 
 	for(var/S in tracks)
 		var/datum/track/T = new()
 		T.song_path = file("[global.config.directory]/jukebox_music/sounds/[S]")
+		T.song_length = SSsound_cache.get_sound_length(T.song_path)
 		var/list/L = splittext(S,"+")
-		if(L.len < 4)
-			log_config("Jukebox song [S] has invalid ID.")
-			continue
 		T.song_name = L[1]
-		T.song_length = text2num(L[2])
-		T.song_beat = text2num(L[3])
-		T.song_associated_id = L[4]
+		var/bpm
+		if(L.len > 1)
+			bpm = text2num(L[2])
+		if(isnum(bpm))
+			T.song_beat_deciseconds = 600 / bpm
 		songs |= T
 	for(var/i in CHANNEL_JUKEBOX_START to CHANNEL_JUKEBOX)
 		freejukeboxchannels |= i
@@ -94,8 +94,12 @@ SUBSYSTEM_DEF(jukeboxes)
 		if(!istype(juketrack))
 			stack_trace("Invalid jukebox track datum.")
 			continue
-		var/obj/machinery/jukebox/jukebox = jukeinfo[3]
-		if(!istype(jukebox))
+		// [CELADON-EDIT] - FIXES_JUKEBOX - Убираем строгость, чтобы можно было обращаться и к другим подобным жукбоксам объектам
+		// var/obj/machinery/jukebox/jukebox = jukeinfo[3]
+		// if(!istype(jukebox))	// ORIGINAL
+		var/obj/jukebox = jukeinfo[3]
+		if(!jukebox)
+		// [/CELADON-EDIT]
 			stack_trace("Nonexistant or invalid object associated with jukebox.")
 			continue
 		var/sound/song_played = sound(juketrack.song_path)
@@ -109,28 +113,37 @@ SUBSYSTEM_DEF(jukeboxes)
 		var/list/virtual_ids = list(zone.id)
 		var/list/areas = list(get_area(jukebox))
 		if(above_turf && istransparentturf(above_turf))
-			virtual_ids += above_turf.virtual_z
+			// virtual_ids += above_turf.virtual_z	// [CELADON-REMOVE] - FIXES_JUKEBOX - Попытка починить баг со слышимостью на соседних вирт. уровнях
 			areas += get_area(above_turf)
 		if(below_turf && istransparentturf(below_turf))
-			virtual_ids += below_turf.virtual_z
+			// virtual_ids += below_turf.virtual_z	// [CELADON-REMOVE] - FIXES_JUKEBOX - Попытка починить баг со слышимостью на соседних вирт. уровнях
 			areas += get_area(below_turf)
 
 		song_played.falloff = jukeinfo[4]
 
 		for(var/mob/M as anything in GLOB.player_list)
-			if(!(M.client?.prefs.toggles & SOUND_INSTRUMENTS) || !M.can_hear())
+			if(!(M.client?.prefs.toggles & SOUND_JUKEBOX) || !M.can_hear())
 				M.stop_sound_channel(jukeinfo[2])
 				continue
 
 			var/inrange = FALSE
-			if(jukebox.volume <= 0 || !(M.virtual_z() in virtual_ids))
+			// [CELADON-EDIT] - FIXES_JUKEBOX - Для работоспособности звука, выносим громкость в общий параметр объекта
+			// if(jukebox.volume <= 0 || !(M.virtual_z() in virtual_ids)) // ORIGINAL
+			var/juke_volume = 70
+			if(jukebox.vars.Find("volume"))
+				juke_volume = jukebox.vars["volume"]
+			if(juke_volume <= 0 || !(M.virtual_z() in virtual_ids))
+			// [/CELADON-EDIT]
 				song_played.status = SOUND_MUTE | SOUND_UPDATE
 			else
 				song_played.status = SOUND_UPDATE
 				if((get_area(M) in areas) || (M in hearerscache))
 					inrange = TRUE
 
-			M.playsound_local(currentturf, null, jukebox.volume, channel = jukeinfo[2], S = song_played, envwet = (inrange ? -250 : 0), envdry = (inrange ? 0 : -10000))
+			// [CELADON-EDIT] - FIXES_JUKEBOX - Для работоспособности звука, выносим громкость в общий параметр объекта
+			// M.playsound_local(currentturf, null, jukebox.volume, channel = jukeinfo[2], S = song_played, envwet = (inrange ? -250 : 0), envdry = (inrange ? 0 : -10000))
+			M.playsound_local(currentturf, null, juke_volume, channel = jukeinfo[2], S = song_played, envwet = (inrange ? -250 : 0), envdry = (inrange ? 0 : -10000))
+			// [/CELADON-EDIT]
 
 			if(MC_TICK_CHECK)
 				return

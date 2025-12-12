@@ -31,6 +31,15 @@
 				spawnee.new_player_panel()
 				return
 
+			// [CELADON-ADD] - CELADON_FIXES
+			// Проверяем дублирование имен при входе на корабль
+			if(!spawnee.client.prefs.randomise[RANDOM_NAME])
+				var/name = spawnee.client.prefs.real_name
+				if(GLOB.real_names_joined.Find(name))
+					to_chat(spawnee, span_warning("Кто-то уже использует это имя для своего корабля."))
+					spawnee.new_player_panel()
+					return
+			// [/CELADON-ADD]
 			var/did_application = FALSE
 			if(target.join_mode == SHIP_JOIN_MODE_APPLY)
 				var/datum/ship_application/current_application = target.get_application(spawnee)
@@ -56,32 +65,52 @@
 				to_chat(spawnee, span_warning("You cannot join this ship anymore, as its join mode has changed!"))
 				return
 
+			var/datum/faction/registered_faction = target.shuttle_port.registered_faction
+			var/datum/language/official_lang = initial(registered_faction.official_language)
+			if(official_lang != spawnee.client.prefs.native_language && spawnee.client.prefs.learned_languages[official_lang] != LANGUAGE_FLUENT && \
+				tgui_alert(spawnee, "Your character does not fully understand this faction's official language ([initial(official_lang.name)]), are you sure?", "Official language", list("Yes", "No")) != "Yes")
+				return // pop-up warning for new players that forgot to set their
+
 			ui.close()
 			var/datum/job/selected_job = locate(params["job"]) in target.job_slots
+			//boots you out if you're banned from officer roles
+			if(selected_job.officer && is_banned_from(spawnee.ckey, "Ship Command"))
+				to_chat(spawnee, span_danger("Вам запрещено занимать офицерские должности!"))
+				spawnee.new_player_panel()
+				ui.close()
+				return
+
 			// Attempts the spawn itself. This checks for playtime requirements.
 			if(!spawnee.AttemptLateSpawn(selected_job, target))
-				to_chat(spawnee, span_danger("Unable to spawn on ship!"))
+				to_chat(spawnee, span_danger("Невозможно появиться на корабле!"))
 				spawnee.new_player_panel()
 
 		if("buy")
 			if(is_banned_from(spawnee.ckey, "Ship Purchasing"))
-				to_chat(spawnee, span_danger("You are banned from purchasing ships!"))
+				to_chat(spawnee, span_danger("Вам запрещено покупать корабли!"))
 				spawnee.new_player_panel()
 				ui.close()
 				return
 
 			var/datum/map_template/shuttle/template = SSmapping.ship_purchase_list[params["name"]]
+			// [CELADON-ADD] - CELADON_FIXES - фикс спавна пустых шаттлов (вагинобонд)
+			// Проверяем дублирование имен в самом начале
+			var/name = spawnee.client.prefs.real_name
+			if(GLOB.real_names_joined.Find(name))
+				to_chat(spawnee, span_warning("Кто-то уже создал корабль с этим именем."))
+				return
+			// [/CELADON-ADD]
 			if(SSovermap.ship_spawning)
-				to_chat(spawnee, span_danger("A ship is currently spawning. Try again in a little while."))
+				to_chat(spawnee, span_danger("Корабль сейчас создаётся. Попробуйте снова через некоторое время."))
 				return
 			if(!SSovermap.player_ship_spawn_allowed())
-				to_chat(spawnee, span_danger("No more ships may be spawned at this time!"))
+				to_chat(spawnee, span_danger("Лимит кораблей в раунде исчерпан. На данный момент нельзя создавать больше кораблей!"))
 				return
 			if(!template.enabled)
-				to_chat(spawnee, span_danger("This ship is not currently available for purchase!"))
+				to_chat(spawnee, span_danger("Этот корабль сейчас недоступен для покупки!"))
 				return
 			if(!template.has_ship_spawn_playtime(spawnee.client))
-				to_chat(spawnee, span_danger("You do not have enough playtime to spawn this ship!"))
+				to_chat(spawnee, span_danger("У вас недостаточно времени в игре, чтобы создать этот корабль!"))
 				return
 
 			var/num_ships_with_template = 0
@@ -91,17 +120,28 @@
 			if(num_ships_with_template >= template.limit)
 				to_chat(spawnee, span_danger("There are already [num_ships_with_template] ships of this type; you cannot spawn more!"))
 				return
-			//[CELADON-ADD] -- CELADON_FIXES -- фикс спавна пустых шаттлов (вагинобонд)
-			var/name = spawnee.client.prefs.real_name
-			if(GLOB.real_names_joined.Find(name))
-				to_chat(usr, "<span class='warning'>Someone has spawned with this name already.")
-				return
-			//[/CELADON-ADD]
 
 			ui.close()
 
-			to_chat(spawnee, span_danger("Your [template.name] is being prepared. Please be patient!"))
-			var/datum/overmap/ship/controlled/target = SSovermap.spawn_ship_at_start(template)
+			var/ship_loc
+			var/datum/overmap_star_system/selected_system //the star system we want to spawn in
+
+			if(length(SSovermap.outposts) > 1)
+				var/datum/overmap/outpost/temp_loc = input(spawnee, "Select outpost to spawn at") as null|anything in SSovermap.outposts
+				if(!temp_loc)
+					return
+				selected_system = temp_loc.current_overmap
+				ship_loc = temp_loc
+			else
+				ship_loc = SSovermap.outposts[1]
+				selected_system = SSovermap.tracked_star_systems[1]
+
+			if(!selected_system)
+				CRASH("Ship attemped to be bought at spawn menu, but spawning outpost was not selected! This is bad!") //if selected_system didnt get selected, we nope out, this is very bad
+
+			to_chat(spawnee, "<span class='danger'>Your [template.name] is being prepared. Please be patient!</span>")
+			var/datum/overmap/ship/controlled/target = SSovermap.spawn_ship_at_start(template, ship_loc, selected_system)
+
 			if(!target?.shuttle_port)
 				to_chat(spawnee, span_danger("There was an error loading the ship. Please contact admins!"))
 				spawnee.new_player_panel()
@@ -126,6 +166,7 @@
 	.["ships"] = list()
 	.["shipSpawnAllowed"] = SSovermap.player_ship_spawn_allowed()
 	.["purchaseBanned"] = is_banned_from(user.ckey, "Ship Purchasing")
+	.["officerBanned"] = is_banned_from(user.ckey, "Ship Command")
 	// if the player has a client which is not eligible for playtime restriction (for admin + player DB flag playtime exemption), they "auto meet" playtime requirements
 	.["autoMeet"] = user.client && !user.client.is_playtime_restriction_eligible()
 	.["playMin"] = user.client ? user.client.get_exp_living(TRUE) : 0
@@ -139,6 +180,14 @@
 		if(!S.is_join_option())
 			continue
 
+		// [CELADON-ADD] - YOU_NOT_SEPARATIST
+		// Проверка ограничений по видам для кораблей фракции Elysium
+		if(S.source_template.faction.name == FACTION_ELYSIUM)
+			var/species_id = user.client?.prefs?.pref_species?.id
+			if(species_id != "human" && species_id != "ipc" && species_id != "lanius")
+				continue
+		// [/CELADON-ADD]
+
 		var/list/ship_jobs = list()
 		for(var/datum/job/job as anything in S.job_slots)
 			var/slots = S.job_slots[job]
@@ -148,6 +197,7 @@
 				"name" = job,
 				"slots" = slots,
 				"minTime" = job.officer ? S.source_template.get_req_officer_minutes() : 0,
+				"officer" = job.officer,
 				"ref" = REF(job),
 			))
 
@@ -171,6 +221,12 @@
 		var/datum/map_template/shuttle/T = SSmapping.ship_purchase_list[template_name]
 		if(!T.enabled)
 			continue
+
+		// Проверка ограничений по видам для шаблонов кораблей фракции Elysium
+		if(T.faction.name == FACTION_ELYSIUM)
+			var/species_id = user.client?.prefs?.pref_species?.id
+			if(species_id != "human" && species_id != "ipc" && species_id != "lanius")
+				continue
 		var/list/ship_data = list(
 			"name" = T.name,
 			"faction" = T.faction.name,

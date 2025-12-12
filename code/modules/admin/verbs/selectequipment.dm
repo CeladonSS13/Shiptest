@@ -33,8 +33,13 @@
 	//serializable string for the UI to keep track of which outfit is selected
 	var/selected_identifier = "/datum/outfit"
 
-/datum/select_equipment/New(_user, mob/target)
+	// Добавляем callback для кастомного применения
+	var/custom_apply_callback	// [CELADON-ADD] - Quick Spawn
+
+/datum/select_equipment/New(_user, mob/target, apply_callback)	// [CELADON-EDIT] - Quick Spawn // + apply_callback
 	user = CLIENT_FROM_VAR(_user)
+
+	custom_apply_callback = apply_callback	// [CELADON-ADD] - Quick Spawn
 
 	if(!ishuman(target) && !isobserver(target))
 		alert("Invalid mob")
@@ -182,6 +187,12 @@
 				new_outfit = new new_outfit
 			if(!istype(new_outfit))
 				return
+
+			// [CELADON-ADD] - Quick Spawn
+			if(custom_apply_callback)
+				return custom_apply_callback = new_outfit
+			// [/CELADON-ADD]
+
 			user.admin_apply_outfit(target_mob, new_outfit)
 
 		if("customoutfit")
@@ -216,7 +227,7 @@
 			if(alert("Drop Items in Pockets? No will delete them.", "Robust quick dress shop", "Yes", "No") == "No")
 				delete_pocket = TRUE
 
-	SSblackbox.record_feedback("tally", "admin_verb", 1, "Select Equipment") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+	BLACKBOX_LOG_ADMIN_VERB("Select Equipment")
 	for(var/obj/item/item in human_target.get_equipped_items(delete_pocket))
 		qdel(item)
 	if(dresscode != "Naked")

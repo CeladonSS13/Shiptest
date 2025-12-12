@@ -53,6 +53,7 @@
 	},
 /obj/machinery/syndicatebomb/training,
 /mob/living/simple_animal/bot/secbot/beepsky/jr,
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "bc" = (
@@ -110,16 +111,16 @@
 /obj/item/radio/headset/heads/captain/alt,
 /obj/item/tank/jetpack/suit,
 /obj/item/clothing/gloves/combat,
-/obj/item/stock_parts/cell/gun/upgraded,
 /obj/item/clothing/glasses/hud/security/sunglasses,
 /obj/item/megaphone/command,
 /obj/item/binoculars,
-/obj/item/gun/energy/e_gun/hos/brazil/true,
 /obj/structure/closet/secure_closet{
 	icon_state = "cap";
 	name = "\proper captain's locker";
 	req_access_txt = "20"
 	},
+/obj/item/gun/energy/e_gun/e_old/hos/brazil/true,
+/obj/item/stock_parts/cell/gun/sharplite/plus,
 /turf/open/floor/carpet/royalblack,
 /area/ship/crew/dorm/dormtwo)
 "bx" = (
@@ -515,6 +516,13 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/dorm/dormtwo)
+"gB" = (
+/obj/machinery/porta_turret/ship/nt/heavy{
+	id = "teardrop_turrets";
+	dir = 5
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
 "gD" = (
 /obj/effect/turf_decal/corner/opaque/black/mono,
 /obj/structure/window/reinforced{
@@ -1013,7 +1021,9 @@
 /obj/effect/turf_decal/trimline/opaque/bottlegreen/line{
 	dir = 5
 	},
-/obj/structure/chair/sofa/grey/right/directional/east,
+/obj/structure/chair/sofa/grey/right/directional/east{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "ma" = (
@@ -1388,7 +1398,8 @@
 /area/ship/crew/dorm)
 "oI" = (
 /obj/machinery/porta_turret/ship/nt/light{
-	id = "teardrop_turrets"
+	id = "teardrop_turrets";
+	dir = 9
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/bridge)
@@ -1540,6 +1551,7 @@
 "pX" = (
 /obj/machinery/computer/med_data,
 /obj/effect/turf_decal/trimline/opaque/bottlegreen,
+/obj/machinery/firealarm/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "qe" = (
@@ -1567,6 +1579,13 @@
 	},
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering)
+"qr" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "teardrop_turrets";
+	dir = 1
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
 "qv" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -1687,6 +1706,7 @@
 	name = "Best medic in the sector";
 	desc = "The adorable little mascot of the Solarian Maritime Society. Popular with the cuties."
 	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "sH" = (
@@ -1777,6 +1797,13 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
+"tK" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "teardrop_turrets";
+	dir = 10
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
 "tM" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/effect/decal/cleanable/glass,
@@ -1871,7 +1898,8 @@
 /area/ship/hallway/central)
 "ve" = (
 /obj/machinery/porta_turret/ship/nt/light{
-	id = "teardrop_turrets"
+	id = "teardrop_turrets";
+	dir = 6
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -2087,6 +2115,13 @@
 	},
 /turf/open/floor/wood,
 /area/ship/hallway/central)
+"xy" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "teardrop_turrets";
+	dir = 8
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
 "xz" = (
 /obj/effect/turf_decal/spline/fancy/transparent/solgovgold/corner{
 	dir = 1
@@ -2179,7 +2214,7 @@
 	pixel_y = 17;
 	pixel_x = -1
 	},
-/obj/item/food/cakeslice/brain{
+/obj/item/food/cakeslice/trumpet{
 	pixel_y = 9
 	},
 /turf/open/floor/carpet/royalblack,
@@ -2305,6 +2340,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/hallway/central)
+"yW" = (
+/obj/machinery/porta_turret/ship/nt/heavy{
+	id = "teardrop_turrets";
+	dir = 6
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
 "yZ" = (
 /obj/structure/table,
 /obj/effect/turf_decal/techfloor{
@@ -3170,29 +3212,29 @@
 	dir = 8
 	},
 /obj/structure/closet/crate/trashcart,
-/obj/item/reagent_containers/food/snacks/grown/cabbage,
-/obj/item/reagent_containers/food/snacks/grown/cabbage{
+/obj/item/food/grown/cabbage,
+/obj/item/food/grown/cabbage{
 	pixel_x = 1;
 	pixel_y = -3
 	},
-/obj/item/reagent_containers/food/snacks/grown/cabbage{
+/obj/item/food/grown/cabbage{
 	pixel_y = 4
 	},
-/obj/item/reagent_containers/food/snacks/grown/cabbage{
+/obj/item/food/grown/cabbage{
 	pixel_y = 6;
 	pixel_x = 9
 	},
 /obj/item/rack_parts/shelf,
 /obj/item/rack_parts/shelf,
 /obj/item/rack_parts/shelf,
-/obj/item/reagent_containers/food/snacks/grown/cabbage{
+/obj/item/food/grown/cabbage{
 	pixel_y = 4
 	},
-/obj/item/reagent_containers/food/snacks/grown/cabbage{
+/obj/item/food/grown/cabbage{
 	pixel_x = 1;
 	pixel_y = -3
 	},
-/obj/item/reagent_containers/food/snacks/grown/cabbage,
+/obj/item/food/grown/cabbage,
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 10
 	},
@@ -3206,7 +3248,8 @@
 /area/ship/cargo)
 "JZ" = (
 /obj/machinery/porta_turret/ship/nt/heavy{
-	id = "teardrop_turrets"
+	id = "teardrop_turrets";
+	dir = 4
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -3254,6 +3297,13 @@
 /obj/effect/turf_decal/corner/opaque/ntblue/half,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/bridge)
+"Kp" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "teardrop_turrets";
+	dir = 5
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
 "KE" = (
 /obj/effect/turf_decal/techfloor/orange/corner{
 	dir = 1
@@ -3286,12 +3336,12 @@
 /obj/item/toy/plush/nukeplushie{
 	name = "Spy Syndicate plush"
 	},
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
 /obj/item/screwdriver/nuke,
 /obj/item/screwdriver,
 /obj/item/screwdriver,
@@ -3506,7 +3556,9 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/hallway/central)
 "Nt" = (
-/obj/machinery/porta_turret/ship/ballistic,
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "teardrop_turrets"
+	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
 "NB" = (
@@ -3815,7 +3867,7 @@
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/mask/gas/sechailer/swat,
 /obj/item/clothing/suit/space/hardsuit/ert/classic{
-	armor = list("melee" = 50, "bullet" = 55, "laser" = 40, "energy" = 50, "bomb" = 35, "bio" = 100, "rad" = 65, "fire" = 95, "acid" = 95)d)
+	armor = list("melee" = 50, "bullet" = 55, "laser" = 40, "energy" = 50, "bomb" = 35, "bio" = 100, "rad" = 65, "fire" = 95, "acid" = 95)
 	},
 /turf/open/floor/carpet/royalblack,
 /area/ship/crew/dorm/dormtwo)
@@ -4118,16 +4170,16 @@
 /obj/item/gun/energy/ionrifle/carbine{
 	pixel_y = -7
 	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_y = 4
 	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_y = 6
 	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_y = 8
 	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_y = 10
 	},
 /obj/item/melee/sword/mass,
@@ -4653,13 +4705,13 @@ fa
 yz
 jn
 jn
-oI
+xy
 sB
 sB
 yz
 sB
 sB
-oI
+xy
 jn
 jn
 yz
@@ -4711,7 +4763,7 @@ Eh
 Va
 it
 yz
-oI
+tK
 fa
 fa
 fa
@@ -4864,7 +4916,7 @@ fa
 fa
 fa
 fa
-ve
+qr
 lI
 Ik
 du
@@ -5273,7 +5325,7 @@ fa
 fa
 fa
 fa
-ve
+Kp
 WN
 WN
 RS
@@ -5420,7 +5472,7 @@ fa
 fa
 fa
 fa
-JZ
+gB
 cv
 cv
 hw
@@ -5428,7 +5480,7 @@ cv
 vZ
 cv
 cv
-JZ
+yW
 fa
 fa
 fa

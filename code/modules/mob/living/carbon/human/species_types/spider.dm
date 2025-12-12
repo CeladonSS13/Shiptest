@@ -4,28 +4,17 @@
 	see_in_dark = 4
 	flash_protect = FLASH_PROTECTION_SENSITIVE
 
-
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/spider
-	icon_state = "spidermeat"
-	desc = "The stringy meat jokes have been done to death, just like this Arachnid."
-	list_reagents = list(/datum/reagent/consumable/nutriment = 3)
-	filling_color = "#00FFFF"
-	tastes = list("meat" = 3, "stringy" = 1)
-	foodtype = MEAT | RAW | TOXIC
-
 /datum/species/spider
 	name = "Rachnid"
 	id = SPECIES_RACHNID
-	sexes = 0
 	default_color = "00FF00"
-	species_traits = list(LIPS, NOEYESPRITES, MUTCOLORS_PARTSONLY)
+	species_traits = list(LIPS, MUTCOLORS_PARTSONLY)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID|MOB_BUG
 	mutant_bodyparts = list("spider_legs", "spider_spinneret")
-	default_features = list("spider_legs" = "Carapaced", "spider_spinneret" = "Plain", "body_size" = "Normal")
+	default_features = list("spider_legs" = "Carapaced", "spider_spinneret" = "Plain")
 	attack_verb = "slash"
 	attack_sound = 'sound/weapons/slash.ogg'
 	miss_sound = 'sound/weapons/slashmiss.ogg'
-	meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/spider
 	liked_food = MEAT | RAW | GORE // Regular spiders literally liquify the insides of their prey and drink em like a smoothie. I think this fits
 	disliked_food = FRUIT | GROSS
 	toxic_food = VEGETABLES | DAIRY | CLOTH
@@ -38,12 +27,15 @@
 	var/web_ready = TRUE
 	var/spinner_rate = 75
 
-	species_chest = /obj/item/bodypart/chest/rachnid
-	species_head = /obj/item/bodypart/head/rachnid
-	species_l_arm = /obj/item/bodypart/l_arm/rachnid
-	species_r_arm = /obj/item/bodypart/r_arm/rachnid
-	species_l_leg = /obj/item/bodypart/leg/left/rachnid
-	species_r_leg = /obj/item/bodypart/leg/right/rachnid
+	// TODO - add more arms
+	species_limbs = list(
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/rachnid,
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/rachnid,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/rachnid,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/rachnid,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/rachnid,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/rachnid,
+	)
 
 /datum/species/spider/random_name(gender,unique,lastname)
 	if(unique)
@@ -140,7 +132,7 @@
 		to_chat(H, "<span class='warning'>You pull out a strand from your spinneret, ready to wrap a target. <BR> \
 		(Press ALT+CLICK or MMB on the target to start wrapping.)</span>")
 		addtimer(VARSET_CALLBACK(E, web_ready, TRUE), E.web_cooldown)
-		RegisterSignal(H, list(COMSIG_MOB_MIDDLECLICKON, COMSIG_MOB_ALTCLICKON), PROC_REF(cocoonAtom))
+		RegisterSignals(H, list(COMSIG_MOB_MIDDLECLICKON, COMSIG_MOB_ALTCLICKON), PROC_REF(cocoonAtom))
 		return
 	else
 		to_chat(H, span_warning("You're too hungry to spin web right now, eat something first!"))

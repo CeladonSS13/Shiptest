@@ -4,10 +4,10 @@
 	id = SPECIES_VOX
 	default_color = "6060FF"
 	species_age_max = 280
-	species_traits = list(EYECOLOR)
+	species_traits = list(HAS_BONE, HAS_FLESH)
 	mutant_bodyparts = list("vox_head_quills", "vox_neck_quills")
-	default_features = list("mcolor" = "0F0", "wings" = "None", "vox_head_quills" = "None", "vox_neck_quills" = "None", "body_size" = "Normal")
-	meat = /obj/item/reagent_containers/food/snacks/meat/slab/chicken
+	default_features = list("mcolor" = "0F0", "wings" = "None", "vox_head_quills" = "None", "vox_neck_quills" = "None")
+	meat = /obj/item/food/meat/slab/chicken
 	disliked_food = GRAIN
 	liked_food = MEAT
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP
@@ -19,6 +19,7 @@
 	species_eye_path = 'icons/mob/species/vox/vox_parts.dmi'
 	punchdamagelow = 6
 	punchdamagehigh = 12
+	coldmod = 0.8	// [CELADON-ADD] - CELADON_BALANCE_SPECIES - Даем воксам резист к холоду на 20%
 	mutanttongue = /obj/item/organ/tongue/vox
 	species_language_holder = /datum/language_holder/vox
 
@@ -36,20 +37,25 @@
 
 	custom_overlay_icon = 'icons/mob/species/vox/vox_overlays.dmi'
 	damage_overlay_type = "vox"
+	fire_overlay = "generic"
 
-	species_chest = /obj/item/bodypart/chest/vox
-	species_head = /obj/item/bodypart/head/vox
-	species_l_arm = /obj/item/bodypart/l_arm/vox
-	species_r_arm = /obj/item/bodypart/r_arm/vox
-	species_l_leg = /obj/item/bodypart/leg/left/vox
-	species_r_leg = /obj/item/bodypart/leg/right/vox
+	species_limbs = list(
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/vox,
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/vox,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/vox,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/vox,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/vox,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/vox,
+	)
 
-	species_robotic_chest = /obj/item/bodypart/chest/robot/vox
-	species_robotic_head = /obj/item/bodypart/head/robot/vox
-	species_robotic_l_arm = /obj/item/bodypart/l_arm/robot/surplus/vox
-	species_robotic_r_arm = /obj/item/bodypart/r_arm/robot/surplus/vox
-	species_robotic_l_leg = /obj/item/bodypart/leg/left/robot/surplus/vox
-	species_robotic_r_leg = /obj/item/bodypart/leg/right/robot/surplus/vox
+	species_robotic_limbs = list(
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/robot/vox,
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/robot/vox,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/robot/surplus/vox,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/robot/surplus/vox,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/robot/surplus/vox,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/robot/surplus/vox,
+	)
 
 	var/datum/action/innate/tail_hold/tail_action
 

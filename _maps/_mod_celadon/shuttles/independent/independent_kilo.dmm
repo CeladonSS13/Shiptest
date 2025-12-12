@@ -1336,7 +1336,7 @@
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/storage/bag/tray,
-/obj/item/reagent_containers/food/snacks/burger/bearger,
+/obj/item/food/burger,
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
@@ -1665,6 +1665,7 @@
 /obj/machinery/recharger,
 /obj/item/radio/intercom/wideband/directional/north,
 /obj/machinery/light/small/directional/west,
+/obj/item/gun/energy/e_gun/e_old/mini,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "HP" = (
@@ -1808,7 +1809,6 @@
 /obj/effect/turf_decal/trimline/opaque/white/filled/line{
 	dir = 1
 	},
-/obj/item/gun/energy/e_gun/mini,
 /obj/item/stock_parts/cell/gun/mini,
 /obj/item/clothing/shoes/workboots,
 /obj/item/clothing/shoes/workboots,
@@ -2042,8 +2042,8 @@
 	locked = 0;
 	name = "fridge"
 	},
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sandwich,
+/obj/item/food/sausage,
+/obj/item/food/sandwich,
 /obj/effect/turf_decal/trimline/opaque/white/filled/line{
 	dir = 1
 	},

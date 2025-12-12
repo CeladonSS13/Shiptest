@@ -2,7 +2,7 @@
 // на случай если они какой honk добавят в будущем
 
 /datum/emote/living/carbon/human/robot_tongue/mod_celadon_honk
-	key = "honk"
+	key = "honk2"
 	key_third_person = "honks"
 	message = "lets out a honk!"
 

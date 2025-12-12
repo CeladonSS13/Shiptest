@@ -31,6 +31,9 @@
 					CAT_ICE,
 					CAT_MEAT,
 					CAT_MISCFOOD,
+					CAT_TORTILLA,
+					CAT_CANDIED,
+					CAT_DONUT,
 					CAT_PASTRY,
 					CAT_PIE,
 					CAT_PIZZA,
@@ -333,6 +336,7 @@
 		else
 			cur_subcategory = CAT_NONE
 		ui = new(user, src, "PersonalCrafting")
+		ui.set_autoupdate(TRUE)	// [CELADON-ADD] - FIXES_CRAFT_MENU - Обновляем меню автоматически
 		ui.open()
 
 /datum/component/personal_crafting/ui_data(mob/user)

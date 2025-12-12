@@ -15,10 +15,11 @@
 #define BLOCK_Z_IN_DOWN (1<<11) //! Should this object block z falling from above?
 #define BLOCK_Z_IN_UP (1<<12) //! Should this object block z uprise from below?
 #define INFINITE_RESKIN (1<<13) // We can reskin this item infinitely
+#define ELEVATED_SURFACE (1<<14) // Should this object prevent open flames left on it from igniting the ground?
 // [CELADON-ADD] - CELADON_STRUCTURES - Барикады
-#define IGNORE_DENSITY (1<<14) 				//! Can we ignore density when building on this object? (for example, directional windows and grilles)
-#define BLOCKS_CONSTRUCTION (1<<15) 				//! Does this object prevent things from being built on it?
-#define BLOCKS_CONSTRUCTION_DIR (1<<16)					//! Does this object prevent same-direction things from being built on it?
+#define IGNORE_DENSITY (1<<15) 				//! Can we ignore density when building on this object? (for example, directional windows and grilles)
+#define BLOCKS_CONSTRUCTION (1<<16) 				//! Does this object prevent things from being built on it?
+#define BLOCKS_CONSTRUCTION_DIR (1<<17)					//! Does this object prevent same-direction things from being built on it?
 // [/CELADON-ADD]
 
 
@@ -40,6 +41,7 @@
 #define SURGICAL_TOOL (1<<12)	//Tool commonly used for surgery: won't attack targets in an active surgical operation on help intent (in case of mistakes)
 #define EYE_STAB (1<<13) /// Item can be used to eyestab
 #define NO_PIXEL_RANDOM_DROP (1<<14) //if dropped, it wont have a randomized pixel_x/pixel_y
+#define HAND_ITEM (1<<15) /// If an item is just your hand (circled hand, slapper) and shouldn't block things like riding
 
 // [CELADON-ADD] - CELADON_STRUCTURES - Барикады
 /// Является ли данный предмет семейной ценностью (family heirloom)
@@ -73,6 +75,11 @@
 #define ORGAN_VITAL (1<<4)	//Currently only the brain
 #define ORGAN_EDIBLE (1<<5)	//is a snack? :D
 #define ORGAN_SYNTHETIC_EMP (1<<6)	//Synthetic organ affected by an EMP. Deteriorates over time.
+
+/// Integrity defines for clothing (not flags but close enough)
+#define CLOTHING_PRISTINE 0 // We have no damage on the clothing
+#define CLOTHING_DAMAGED 1 // There's some damage on the clothing but it still has at least one functioning bodypart and can be equipped
+#define CLOTHING_SHREDDED 2 // The clothing is useless and cannot be equipped unless repaired first
 
 /// Flags for the pod_flags var on /obj/structure/closet/supplypod
 

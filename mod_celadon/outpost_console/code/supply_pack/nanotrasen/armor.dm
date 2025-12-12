@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/nanotrasen/armor
-	group = "Armor"
+	category = "Armor"
 
 /datum/supply_pack/faction/nanotrasen/armor/armorsec
 	name = "Nanotrasen Security Kit"
@@ -7,7 +7,7 @@
 	contains = list(/obj/item/clothing/suit/armor/nanotrasen,
 					/obj/item/clothing/suit/armor/nanotrasen,
 					/obj/item/clothing/suit/armor/nanotrasen,
-					/obj/item/clothing/head/helmet/sec,
-					/obj/item/clothing/head/helmet/sec,
-					/obj/item/clothing/head/helmet/sec)
+					/obj/item/clothing/head/helmet/m10/nanotrasen,
+					/obj/item/clothing/head/helmet/m10/nanotrasen,
+					/obj/item/clothing/head/helmet/m10/nanotrasen)
 	cost = 3000

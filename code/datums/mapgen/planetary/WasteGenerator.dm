@@ -1,6 +1,6 @@
 /datum/map_generator/planet_generator/waste
 
-	mountain_height = 0.35
+	mountain_height = 0.5
 	perlin_zoom = 40
 
 	initial_closed_chance = 45
@@ -78,11 +78,11 @@
 			BIOME_HIGHEST_HUMIDITY = /datum/biome/cave/waste/tar_bed
 		),
 		BIOME_HOT_CAVE = list( //metal wreck for salvaging
-			BIOME_LOWEST_HUMIDITY = /datum/biome/cave/waste/metal/hivebot,
-			BIOME_LOW_HUMIDITY = /datum/biome/cave/waste/metal/hivebot,
-			BIOME_MEDIUM_HUMIDITY = /datum/biome/cave/waste/metal/hivebot,
-			BIOME_HIGH_HUMIDITY = /datum/biome/cave/waste/metal/,
-			BIOME_HIGHEST_HUMIDITY = /datum/biome/cave/waste/metal/
+			BIOME_LOWEST_HUMIDITY = /datum/biome/cave/waste,
+			BIOME_LOW_HUMIDITY = /datum/biome/cave/waste,
+			BIOME_MEDIUM_HUMIDITY = /datum/biome/cave/waste/metal,
+			BIOME_HIGH_HUMIDITY = /datum/biome/cave/waste/metal,
+			BIOME_HIGHEST_HUMIDITY = /datum/biome/cave/waste/metal
 		)
 	)
 
@@ -106,6 +106,9 @@
 
 		//stuff you can actually use
 		/obj/effect/spawner/random/waste/girder = 600,
+		// [CELADON-ADD] - RETURN_CONTENT
+		/obj/structure/reagent_dispensers/fueltank = 100,
+		// [/CELADON-ADD]
 		/obj/structure/reagent_dispensers/watertank = 200,
 		/obj/item/stack/cable_coil/cut = 500,
 		/obj/structure/closet/crate/secure/loot = 30,
@@ -126,21 +129,20 @@
 		//the illusive shrapnel plant
 		/obj/item/mine/pressure/explosive/shrapnel/live = 30,
 		/obj/effect/spawner/random/mine = 8,
-		/obj/effect/spawner/minefield = 2
 	)
 
 	feature_spawn_list = list(
 		/obj/effect/radiation/waste = 30,
 		/obj/effect/radiation/waste/intense = 10,
 		/obj/structure/geyser/random = 1,
-		/obj/effect/spawner/random/anomaly/waste = 1
+		/obj/effect/spawner/random/anomaly/waste = 1,
 	)
 
 	mob_spawn_list = list(
-		//hivebots, not too difficult
-		/mob/living/simple_animal/hostile/hivebot/strong = 20,
-		/mob/living/simple_animal/hostile/hivebot/ranged = 40,
-		/mob/living/simple_animal/hostile/hivebot/ranged/rapid = 30,
+		//hivebots, they're finally difficult.
+		/mob/living/basic/hivebot/strong = 20,
+		/mob/living/basic/hivebot/ranged = 40,
+		/mob/living/basic/hivebot/rapid = 30,
 		//bots, are hostile
 		/mob/living/simple_animal/bot/firebot/rockplanet = 15,
 		/mob/living/simple_animal/bot/secbot/ed209/rockplanet = 3,
@@ -149,8 +151,8 @@
 	)
 
 	flora_spawn_chance = 25
-	feature_spawn_chance = 0.5
-	mob_spawn_chance = 2
+	feature_spawn_chance = 0.75
+	mob_spawn_chance = 1.5
 
 /datum/biome/waste/crater
 	open_turf_types = list(
@@ -189,6 +191,9 @@
 		/obj/effect/spawner/random/waste/radiation = 300,
 		/obj/effect/spawner/random/waste/radiation/more_rads = 120,
 		/obj/effect/spawner/random/waste/girder = 600,
+		// [CELADON-ADD] - RETURN_CONTENT
+		/obj/structure/reagent_dispensers/fueltank = 100,
+		// [/CELADON-ADD]
 		/obj/structure/reagent_dispensers/watertank = 200,
 		/obj/item/stack/cable_coil/cut = 500,
 		/obj/structure/closet/crate/secure/loot = 30,
@@ -207,7 +212,6 @@
 		/obj/item/mine/pressure/explosive/shrapnel/live = 30,
 		// [/CELADON - ADD]
 		/obj/effect/spawner/random/mine = 8,
-		/obj/effect/spawner/minefield = 2
 	)
 
 /datum/biome/waste/tar_bed //tar colorings
@@ -221,6 +225,13 @@
 		/turf/open/water/tar/waste/lit = 1
 	)
 	flora_spawn_chance = 0
+
+	feature_spawn_list = list(
+		/obj/effect/radiation/waste = 30,
+		/obj/effect/radiation/waste/intense = 10,
+		/obj/structure/geyser/random = 1,
+		/obj/effect/spawner/random/anomaly/waste = 1,
+	)
 
 /datum/biome/waste/metal
 	open_turf_types = list(
@@ -236,6 +247,9 @@
 		/obj/effect/spawner/random/waste/radiation = 80,
 		/obj/effect/spawner/random/waste/radiation/more_rads = 20,
 		/obj/effect/spawner/random/waste/girder = 600,
+		// [CELADON-ADD] - RETURN_CONTENT
+		/obj/structure/reagent_dispensers/fueltank = 100,
+		// [/CELADON-ADD]
 		/obj/structure/reagent_dispensers/watertank = 200,
 		/obj/item/stack/cable_coil/cut = 500,
 		/obj/structure/closet/crate/secure/loot = 30,
@@ -256,18 +270,19 @@
 		/obj/item/mine/pressure/explosive/rad/live = 30,
 		// [/CELADON - ADD]
 		/obj/effect/spawner/random/mine = 8,
-		/obj/effect/spawner/minefield = 2
 	)
 	mob_spawn_list = list( //nor organics, more biased towards hivebots though
-		/mob/living/simple_animal/hostile/hivebot/strong = 20,
-		/mob/living/simple_animal/hostile/hivebot/ranged = 50,
-		/mob/living/simple_animal/hostile/hivebot/ranged/rapid = 50,
+		/mob/living/basic/hivebot = 40,
+		/mob/living/basic/hivebot/strong = 10,
+		/mob/living/basic/hivebot/ranged = 20,
+		/mob/living/basic/hivebot/rapid = 20,
 		/mob/living/simple_animal/bot/firebot/rockplanet = 15,
 		/mob/living/simple_animal/bot/secbot/ed209/rockplanet = 3,
 		/mob/living/simple_animal/hostile/abandoned_minebot = 15,
 		/mob/living/simple_animal/bot/floorbot/rockplanet = 15,
-		/obj/structure/spawner/hivebot = 35
+		/obj/structure/spawner/hivebot = 15
 	)
+	mob_spawn_chance = 2
 
 /datum/biome/waste/metal/rust
 	open_turf_types = list(
@@ -286,11 +301,11 @@
 	)
 
 	closed_turf_types =  list(
-		/turf/closed/mineral/random/wasteplanet = 40,
+		/turf/closed/mineral/random/wasteplanet = 60,
 		/turf/closed/wall/r_wall/wasteplanet = 1,
-		/turf/closed/wall/r_wall/rust/wasteplanet = 3,
-		/turf/closed/wall/wasteplanet = 2,
-		/turf/closed/wall/rust/wasteplanet = 6
+		/turf/closed/wall/r_wall/rust/wasteplanet = 2,
+		/turf/closed/wall/wasteplanet = 1,
+		/turf/closed/wall/rust/wasteplanet = 2
 	)
 
 	flora_spawn_list = list(
@@ -300,6 +315,9 @@
 		/obj/effect/spawner/random/waste/radiation = 80,
 		/obj/effect/spawner/random/waste/radiation/more_rads = 10,
 		/obj/effect/spawner/random/waste/girder = 600,
+		// [CELADON-ADD] - RETURN_CONTENT
+		/obj/structure/reagent_dispensers/fueltank = 100,
+		// [/CELADON-ADD]
 		/obj/structure/reagent_dispensers/watertank = 200,
 		/obj/item/stack/cable_coil/cut = 500,
 		/obj/structure/closet/crate/secure/loot = 30,
@@ -319,19 +337,19 @@
 		/obj/item/mine/pressure/explosive/rad/live = 30,
 		// [/CELADON - ADD]
 		/obj/effect/spawner/random/mine = 8,
-		/obj/effect/spawner/minefield = 2
 	)
 
 	feature_spawn_list = list(
 		/obj/effect/radiation/waste = 30,
 		/obj/effect/radiation/waste/intense = 10,
 		/obj/structure/geyser/random = 1,
-		/obj/effect/spawner/random/anomaly/waste/cave = 1
+		/obj/effect/spawner/random/anomaly/waste/cave = 1,
 	)
 	mob_spawn_list = list(
-		/mob/living/simple_animal/hostile/hivebot/strong = 20,
-		/mob/living/simple_animal/hostile/hivebot/ranged = 40,
-		/mob/living/simple_animal/hostile/hivebot/ranged/rapid = 30,
+		/mob/living/basic/hivebot = 50,
+		/mob/living/basic/hivebot/strong = 20,
+		/mob/living/basic/hivebot/ranged = 40,
+		/mob/living/basic/hivebot/rapid = 30,
 		/mob/living/simple_animal/bot/firebot/rockplanet = 15,
 		/mob/living/simple_animal/bot/secbot/ed209/rockplanet = 3,
 		/mob/living/simple_animal/hostile/abandoned_minebot = 15,
@@ -340,7 +358,7 @@
 
 	flora_spawn_chance = 30
 	feature_spawn_chance = 4
-	mob_spawn_chance = 5
+	mob_spawn_chance = 2
 
 /datum/biome/cave/waste/tar_bed //tar colorings here
 	open_turf_types = list(
@@ -354,6 +372,12 @@
 		/turf/open/water/tar/waste = 1
 	)
 	flora_spawn_chance = 0
+	feature_spawn_list = list(
+		/obj/effect/radiation/waste = 30,
+		/obj/effect/radiation/waste/intense = 10,
+		/obj/structure/geyser/random = 1,
+		/obj/effect/spawner/random/anomaly/waste/cave = 1
+	)
 
 /datum/biome/cave/waste/rad
 	flora_spawn_list = list(
@@ -364,6 +388,9 @@
 		/obj/effect/spawner/random/waste/atmos_can/rare = 5,
 		/obj/effect/spawner/random/waste/salvageable = 150,
 		/obj/effect/spawner/random/waste/girder = 200,
+		// [CELADON-ADD] - RETURN_CONTENT
+		/obj/structure/reagent_dispensers/fueltank = 10,
+		// [/CELADON-ADD]
 		/obj/structure/reagent_dispensers/watertank = 10,
 		/obj/item/stack/cable_coil/cut = 500,
 		/obj/structure/closet/crate/secure/loot = 30,
@@ -378,7 +405,6 @@
 		/obj/item/mine/pressure/explosive/rad/live = 30,
 		// [/CELADON - ADD]
 		/obj/effect/spawner/random/mine = 8,
-		/obj/effect/spawner/minefield = 2
 	)
 	feature_spawn_chance = 12
 
@@ -388,6 +414,7 @@
 		/turf/open/floor/plating/wasteplanet = 4
 	)
 	closed_turf_types = list(
+		/turf/closed/mineral/random/wasteplanet = 45,
 		/turf/closed/wall/r_wall/wasteplanet = 1,
 		/turf/closed/wall/r_wall/rust/wasteplanet = 1,
 		/turf/closed/wall/wasteplanet = 5,
@@ -400,6 +427,9 @@
 		/obj/effect/spawner/random/waste/radiation = 32,
 		/obj/effect/spawner/random/waste/radiation/more_rads = 4,
 		/obj/effect/spawner/random/waste/girder = 120,
+		// [CELADON-ADD] - RETURN_CONTENT
+		/obj/structure/reagent_dispensers/fueltank = 20,
+		// [/CELADON-ADD]
 		/obj/structure/reagent_dispensers/watertank = 40,
 		/obj/item/stack/cable_coil/cut = 100,
 		/obj/structure/closet/crate/secure/loot = 6,
@@ -414,23 +444,28 @@
 		/obj/effect/spawner/random/waste/salvageable = 80,
 		/obj/effect/spawner/random/mine = 8,
 	)
-	mob_spawn_list = list( //nor organics, more biased towards hivebots though
-		/mob/living/simple_animal/hostile/hivebot/strong = 20,
-		/mob/living/simple_animal/hostile/hivebot/ranged = 50,
-		/mob/living/simple_animal/hostile/hivebot/ranged/rapid = 50,
+	mob_spawn_list = list(
+		/mob/living/basic/hivebot/strong = 20,
+		/mob/living/basic/hivebot/ranged = 50,
+		/mob/living/basic/hivebot/rapid = 50,
 		/mob/living/simple_animal/bot/firebot/rockplanet = 15,
 		/mob/living/simple_animal/bot/secbot/ed209/rockplanet = 3,
 		/mob/living/simple_animal/hostile/abandoned_minebot = 15,
 		/mob/living/simple_animal/bot/floorbot/rockplanet = 15,
-		/obj/structure/spawner/hivebot = 20
+		/obj/structure/spawner/hivebot = 15
 	)
 
+// [CELADON-ADD] - Для теста отключено
+/*
 /datum/biome/cave/waste/metal/hivebot
 	flora_spawn_list = list(
 		/obj/effect/spawner/random/trash/decal = 90,
 		/obj/effect/spawner/random/waste/radiation = 16,
 		/obj/effect/spawner/random/waste/radiation/more_rads = 2,
 		/obj/effect/spawner/random/waste/girder = 60,
+		// [CELADON-ADD] - RETURN_CONTENT
+		/obj/structure/reagent_dispensers/fueltank = 10,
+		// [/CELADON-ADD]
 		/obj/structure/reagent_dispensers/watertank = 20,
 		/obj/item/stack/cable_coil/cut = 50,
 		/obj/structure/closet/crate/secure/loot = 3,
@@ -442,18 +477,20 @@
 		/obj/structure/foamedmetal = 100,
 	)
 	mob_spawn_list = list( //Whoops! All hivebots!
-		/mob/living/simple_animal/hostile/hivebot/strong = 20,
-		/mob/living/simple_animal/hostile/hivebot/ranged = 40,
-		/mob/living/simple_animal/hostile/hivebot/ranged/rapid = 20,
-		/mob/living/simple_animal/hostile/hivebot = 20,
-		/mob/living/simple_animal/hostile/hivebot/defender = 10
+		/mob/living/basic/hivebot/strong = 20,
+		/mob/living/basic/hivebot/ranged = 40,
+		/mob/living/basic/hivebot/rapid = 20,
+		/mob/living/basic/hivebot = 40,
+		/mob/living/basic/hivebot/core = 10
 	)
-	mob_spawn_chance = 30
+	mob_spawn_chance = 15
 	feature_spawn_list = list(
-		/obj/structure/spawner/hivebot = 1,
+		/obj/structure/spawner/hivebot = 10,
 		)
-	feature_spawn_chance = 2 //hivebot biomes should have their dongles
 
+	feature_spawn_chance = 2 //hivebot biomes should have their dongles
+*/
+// [/CELADON-ADD]
 /datum/biome/cave/waste/conc //da concrete jungle baybee
 	open_turf_types = list(
 		/turf/open/floor/concrete/wasteplanet = 10,
@@ -461,6 +498,7 @@
 		/turf/open/floor/concrete/pavement/wasteplanet = 4
 	)
 	closed_turf_types = list(
+		/turf/closed/mineral/random/wasteplanet = 50,
 		/turf/closed/wall/concrete/wasteplanet = 15,
 		/turf/closed/wall/concrete/reinforced/wasteplanet = 3
 	)
@@ -469,6 +507,9 @@
 		/obj/effect/spawner/random/waste/mechwreck = 20,
 		/obj/effect/spawner/random/trash/decal = 90,
 		/obj/effect/spawner/random/waste/radiation = 16,
+		// [CELADON-ADD] - RETURN_CONTENT
+		/obj/structure/reagent_dispensers/fueltank = 10,
+		// [/CELADON-ADD]
 		/obj/structure/reagent_dispensers/watertank = 20,
 		/obj/item/stack/cable_coil/cut = 50,
 		/obj/structure/closet/crate/secure/loot = 3,
@@ -481,16 +522,17 @@
 		/obj/effect/spawner/random/waste/salvageable = 40,
 	)
 	mob_spawn_list = list(
-		/mob/living/simple_animal/hostile/hivebot/strong = 80,
-		/mob/living/simple_animal/hostile/hivebot/ranged = 50,
-		/mob/living/simple_animal/hostile/hivebot/ranged/rapid = 50,
+		/mob/living/basic/hivebot = 80,
+		/mob/living/basic/hivebot/strong = 80,
+		/mob/living/basic/hivebot/ranged = 50,
+		/mob/living/basic/hivebot/rapid = 50,
 		/mob/living/simple_animal/bot/firebot/rockplanet = 15,
 		/mob/living/simple_animal/bot/secbot/ed209/rockplanet = 3,
 		/mob/living/simple_animal/hostile/abandoned_minebot = 15,
 		/mob/living/simple_animal/bot/floorbot/rockplanet = 15,
-		/obj/structure/spawner/hivebot = 35
+		/obj/structure/spawner/hivebot = 15
 	)
 
 	flora_spawn_chance = 30
 	feature_spawn_chance = 8
-	mob_spawn_chance = 5
+	mob_spawn_chance = 2

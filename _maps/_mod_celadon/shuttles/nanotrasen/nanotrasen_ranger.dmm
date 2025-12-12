@@ -610,7 +610,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/techfloor/hole/right,
-/obj/item/banner/command/mundane{
+/obj/item/banner/nanotrasen/mundane{
 	layer = 3.09
 	},
 /turf/open/floor/plasteel/dark,
@@ -784,7 +784,7 @@
 	pixel_x = -1;
 	pixel_y = -31
 	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_y = 12
 	},
 /obj/item/gun/ballistic/automatic/smg/vector,
@@ -1457,13 +1457,13 @@
 /obj/item/clothing/suit/armor/vest/bulletproof,
 /obj/item/clothing/suit/armor/vest/bulletproof,
 /obj/item/clothing/suit/armor/vest/bulletproof,
-/obj/item/clothing/head/helmet/bulletproof,
-/obj/item/clothing/head/helmet/bulletproof,
-/obj/item/clothing/head/helmet/bulletproof,
 /obj/effect/turf_decal/trimline/opaque/vired/warning,
 /obj/item/clothing/glasses/sunglasses/ballistic,
 /obj/item/clothing/glasses/sunglasses/ballistic,
 /obj/item/clothing/glasses/sunglasses/ballistic,
+/obj/item/clothing/head/helmet/bulletproof,
+/obj/item/clothing/head/helmet/bulletproof,
+/obj/item/clothing/head/helmet/bulletproof,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "lW" = (
@@ -2463,19 +2463,19 @@
 	icon_state = "tac";
 	name = "ammunition locker"
 	},
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/ammo_box/magazine/smgm9mm,
-/obj/item/ammo_box/magazine/smgm9mm,
-/obj/item/ammo_box/magazine/smgm9mm,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/ammo_box/magazine/m9mm_expedition,
+/obj/item/ammo_box/magazine/m9mm_expedition,
+/obj/item/ammo_box/magazine/m9mm_expedition,
 /obj/item/storage/box/ammo/c9mm_ap,
 /obj/item/storage/box/ammo/c9mm,
 /obj/structure/sign/nanotrasen/vigilitas{
 	pixel_y = -33
 	},
-/obj/item/ammo_box/magazine/smgm9mm,
+/obj/item/ammo_box/magazine/m9mm_expedition,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "vB" = (
@@ -3410,9 +3410,9 @@
 "EP" = (
 /obj/structure/table/wood,
 /obj/structure/closet/secure_closet/freezer/wall/directional/east,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
 /obj/effect/decal/cleanable/food/flour,
 /obj/item/reagent_containers/condiment/flour,
 /obj/item/reagent_containers/condiment/flour,
@@ -4751,7 +4751,7 @@
 /area/ship/security/armory)
 "SC" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/burger/bigbite,
+/obj/item/food/burger/bigbite,
 /turf/open/floor/plasteel/lightgrey,
 /area/ship/hallway/central)
 "SN" = (

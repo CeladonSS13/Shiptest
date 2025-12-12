@@ -33,6 +33,10 @@
 /obj/structure/plasticflaps/screwdriver_act(mob/living/user, obj/item/W)
 	if(..())
 		return TRUE
+//	[CELADON-ADD] - Да-да, очень смешно делать некликабельные структуры вместо того чтоб просто сделать из бессмертными и вырубить им разборку
+	if(istype(src, /obj/structure/plasticflaps/outpost))
+		return FALSE
+//	[/CELADON-ADD]
 	add_fingerprint(user)
 	var/action = anchored ? "unscrews [src] from" : "screws [src] to"
 	var/uraction = anchored ? "unscrew [src] from " : "screw [src] to"
@@ -62,15 +66,15 @@
 		return FALSE
 	return TRUE
 
-/obj/structure/plasticflaps/CanAStarPass(ID, to_dir, caller)
-	if(isliving(caller))
-		if(isbot(caller))
+/obj/structure/plasticflaps/CanAStarPass(ID, to_dir, requester)
+	if(isliving(requester))
+		if(isbot(requester))
 			return TRUE
 
-		var/mob/living/M = caller
+		var/mob/living/M = requester
 		if(!M.ventcrawler && M.mob_size != MOB_SIZE_TINY)
 			return FALSE
-	var/atom/movable/M = caller
+	var/atom/movable/M = requester
 	if(M && M.pulling)
 		return CanAStarPass(ID, to_dir, M.pulling)
 	return TRUE //diseases, stings, etc can pass

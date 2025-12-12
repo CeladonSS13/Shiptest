@@ -2,6 +2,10 @@
 	var/static/mob_category = rand(1, 3)
 
 /obj/effect/spawner/random/randomthreat/Initialize(mapload)
+	// [CELADON-ADD] - FIXES_SPAWNERS_ON_SPACE - Проверка на космотурф
+	if(isspaceturf(get_turf(src)))
+		return INITIALIZE_HINT_QDEL
+	// [/CELADON-ADD]
 	switch(mob_category)
 		if(1)
 			loot = list(
@@ -20,24 +24,24 @@
 /obj/effect/spawner/random/xenospawner
 	name = "Xenomorph spawner"
 	loot = list(
-		/mob/living/simple_animal/hostile/alien = 0.3,
-		/mob/living/simple_animal/hostile/alien/drone = 0.2,
-		/mob/living/simple_animal/hostile/alien/sentinel = 0.3,
-		/obj/effect/spawner/random/xenoqueenspawner = 0.1
+		/mob/living/simple_animal/hostile/alien = 3,
+		/mob/living/simple_animal/hostile/alien/drone = 2,
+		/mob/living/simple_animal/hostile/alien/sentinel = 3,
+		/obj/effect/spawner/random/xenoqueenspawner = 1
 	)
 
 /obj/effect/spawner/random/xenoqueenspawner
 	name = "xenomorph queen spawner"
 	loot = list(
-		/mob/living/simple_animal/hostile/alien/queen = 0.2, //regular queen mob isn't actually that strong
-		/mob/living/simple_animal/hostile/alien/queen/large = 0.8
+		/mob/living/simple_animal/hostile/alien/queen = 2, //regular queen mob isn't actually that strong
+		/mob/living/simple_animal/hostile/alien/queen/large = 8
 	)
 
 /obj/effect/spawner/random/hivebotspawner
 	name = "Hivebot spawner"
 	loot = list(
-		/mob/living/simple_animal/hostile/hivebot/strong,
-		/mob/living/simple_animal/hostile/hivebot,
+		/mob/living/basic/hivebot/strong,
+		/mob/living/basic/hivebot,
 	)
 
 /obj/effect/spawner/random/spiderspawner
@@ -51,8 +55,11 @@
 /obj/effect/spawner/random/hermit
 	name = "hermit spawner"
 	loot = list(
-		/mob/living/simple_animal/hostile/human/hermit/survivor = 50,
-		/mob/living/simple_animal/hostile/human/hermit/ranged/hunter = 35,
+		/mob/living/simple_animal/hostile/human/hermit/survivor = 35,
+		/mob/living/simple_animal/hostile/human/hermit/ranged/hunter = 25,
+		/mob/living/simple_animal/hostile/human/hermit/survivor/brawler = 10,
+		/mob/living/simple_animal/hostile/human/hermit/ranged/shotgun = 10,
+		/mob/living/simple_animal/hostile/human/hermit/survivor/lunatic = 5,
 		/mob/living/simple_animal/hostile/human/hermit/ranged/gunslinger = 10,
 		/mob/living/simple_animal/hostile/human/hermit/ranged/e11 = 5
 	)
@@ -82,3 +89,22 @@
 	)
 	spawn_loot_count = 7
 	spawn_loot_double = TRUE
+
+/obj/effect/spawner/random/polar_bear
+	name = "bear spawner"
+	loot = list(
+		/mob/living/basic/bear/polar = 85,
+		/mob/living/basic/bear/polar/warrior = 15
+	)
+
+/obj/effect/spawner/random/snow_monkey_pack
+	loot = list(
+		/mob/living/basic/snow_monkey
+	)
+	spawn_loot_count = null
+	spawn_loot_double = TRUE
+
+/obj/effect/spawner/random/snow_monkey_pack/spawn_loot(lootcount_override)
+	if(!spawn_loot_count)
+		spawn_loot_count = rand(2,5)
+	. = ..()

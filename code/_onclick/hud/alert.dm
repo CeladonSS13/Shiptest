@@ -263,11 +263,6 @@ or something covering your eyes."
 		return
 	to_chat(L, span_mind_control("[command]"))
 
-/atom/movable/screen/alert/drunk //Not implemented
-	name = "Drunk"
-	desc = "All that alcohol you've been drinking is impairing your speech, motor skills, and mental cognition. Make sure to act like it."
-	icon_state = "drunk"
-
 /atom/movable/screen/alert/embeddedobject
 	name = "Embedded Object"
 	desc = "Something got lodged into your flesh and is causing major bleeding. It might fall out with time, but surgery is the safest way. \
@@ -296,6 +291,9 @@ or shoot a gun to move around via Newton's 3rd Law of Motion."
 	name = "Crushing Gravity"
 	desc = "You're getting crushed by high gravity, picking up items and movement will be slowed. You'll also accumulate brute damage!"
 	icon_state = "paralysis"
+
+//rest of these should be alerts eventually today tho. lazy.
+#define ALERT_FIRE "fire"
 
 /atom/movable/screen/alert/fire
 	name = "On Fire"
@@ -705,7 +703,7 @@ so as to remain in compliance with the most up-to-date laws."
 /atom/movable/screen/alert/direction_lock
 	name = "Direction Lock"
 	desc = "You are facing only one direction, slowing your movement down. Click here to stop the direction lock."
-	icon = 'mod_celadon/_storge_icons/icons/screen_alert.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/assets/screen_alert.dmi'
 	icon_state = "direction_lock"
 
 /atom/movable/screen/alert/direction_lock/Click()

@@ -33,7 +33,7 @@
 	miss_sound = 'sound/weapons/slashmiss.ogg'
 	//species_clothing_path = 'icons/mob/clothing/species/kepori.dmi'
 
-	species_traits = list(EYECOLOR, LIPS, HAIR, FACEHAIR, EMOTE_OVERLAY, MUTCOLORS, MUTCOLORS_SECONDARY, SKINNOSECOLORS, SKINTAJARACOLORS, EARSTAJARACOLORS, HEADTAJARACOLORS, NOSETAJARACOLORS, CHESTTAJARACOLORS, BODYTAJARACOLORS )
+	species_traits = list(EYECOLOR, LIPS, HAIR, FACEHAIR, EMOTE_OVERLAY, MUTCOLORS, MUTCOLORS_SECONDARY, SKINNOSECOLORS, SKINTAJARACOLORS, EARSTAJARACOLORS, HEADTAJARACOLORS, NOSETAJARACOLORS, CHESTTAJARACOLORS, BODYTAJARACOLORS, HAS_FLESH, HAS_BONE)
 	mutant_bodyparts = list(
 		"tajara_ears",
 		"tajara_hairs",
@@ -61,22 +61,22 @@
 
 	default_color = "424242"
 
-	burnmod = 1.1
-	heatmod = 1.3
-	coldmod = 0.7
+	burnmod = 1.3
+	heatmod = 1.2
+	coldmod = 0.9
 	staminamod = 0.85
 
-	bodytemp_heat_damage_limit = TAJARAN_BODYTEMP_NORMAL + 20		//60
+	bodytemp_heat_damage_limit = TAJARAN_BODYTEMP_NORMAL + 30		//70
 
-	max_temp_comfortable = TAJARAN_BODYTEMP_NORMAL + 10				//50
+	max_temp_comfortable = TAJARAN_BODYTEMP_NORMAL + 20				//60
 
-	bodytemp_normal = TAJARAN_BODYTEMP_NORMAL						//40
+	bodytemp_normal = TAJARAN_BODYTEMP_NORMAL						//38
 
-	min_temp_comfortable = TAJARAN_BODYTEMP_NORMAL - 50				//-10
+	min_temp_comfortable = TAJARAN_BODYTEMP_NORMAL - 30				//-10
 
-	bodytemp_cold_damage_limit = TAJARAN_BODYTEMP_NORMAL - 70		//-30
+	bodytemp_cold_damage_limit = TAJARAN_BODYTEMP_NORMAL - 40		//-20
 
-	meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/tajara 	//нарисовать/спиздить спрайт к нему
+	meat = /obj/item/food/meat/slab/human/mutant/tajara 	//нарисовать/спиздить спрайт к нему
 	//skinned_type = /obj/item/stack/sheet/animalhide/tajara						//нужно сделать кожу из таяран и нарисовать/спиздить спрайт к нему
 
 	species_language_holder = /datum/language_holder/tajara
@@ -90,19 +90,23 @@
 
 	bodytype = BODYTYPE_TAJARA | BODYTYPE_ORGANIC
 
-	species_chest = /obj/item/bodypart/chest/tajara
-	species_head = /obj/item/bodypart/head/tajara
-	species_l_arm = /obj/item/bodypart/l_arm/tajara
-	species_r_arm = /obj/item/bodypart/r_arm/tajara
-	species_l_leg = /obj/item/bodypart/leg/left/tajara
-	species_r_leg = /obj/item/bodypart/leg/right/tajara
+	species_limbs = list(
+			BODY_ZONE_CHEST = /obj/item/bodypart/chest/tajara,
+			BODY_ZONE_HEAD = /obj/item/bodypart/head/tajara,
+			BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/tajara,
+			BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/tajara,
+			BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/tajara,
+			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/tajara,
+		)
 
-	species_robotic_chest = /obj/item/bodypart/chest/robot
-	species_robotic_head = /obj/item/bodypart/head/robot
-	species_robotic_l_arm = /obj/item/bodypart/l_arm/robot/surplus
-	species_robotic_r_arm = /obj/item/bodypart/r_arm/robot/surplus
-	species_robotic_l_leg = /obj/item/bodypart/leg/left/robot/surplus
-	species_robotic_r_leg = /obj/item/bodypart/leg/right/robot/surplus
+	species_robotic_limbs = list(
+			BODY_ZONE_CHEST =  /obj/item/bodypart/chest/robot,
+			BODY_ZONE_HEAD = /obj/item/bodypart/head/robot,
+			BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/robot/surplus,
+			BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/robot/surplus,
+			BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/robot/surplus,
+			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/robot/surplus,
+		)
 
 /datum/species/tajara/random_name(gender,unique,lastname)
 	//code by @valtor0

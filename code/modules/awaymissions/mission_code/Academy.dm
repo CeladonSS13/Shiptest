@@ -148,7 +148,6 @@
 		if(1)
 			//Dust
 			T.visible_message(span_userdanger("[user] turns to dust!"))
-			user.hellbound = TRUE
 			user.dust()
 		if(2)
 			//Death
@@ -197,7 +196,7 @@
 		if(11)
 			//Cookie
 			T.visible_message(span_userdanger("A cookie appears out of thin air!"))
-			var/obj/item/reagent_containers/food/snacks/cookie/C = new(drop_location())
+			var/obj/item/food/cookie/C = new(drop_location())
 			do_smoke(0, drop_location())
 			C.name = "Cookie of Fate"
 		if(12)
@@ -220,7 +219,7 @@
 			//Free Gun
 			T.visible_message(span_userdanger("An impressive gun appears!"))
 			do_smoke(0, drop_location())
-			new /obj/item/gun/ballistic/revolver/mateba(drop_location())
+			new /obj/item/gun/ballistic/revolver/grenadelauncher(drop_location())
 		if(15)
 			//Random One-use spellbook
 			T.visible_message(span_userdanger("A magical looking book drops to the floor!"))

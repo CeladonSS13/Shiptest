@@ -1,7 +1,7 @@
 /mob/living/simple_animal/hostile/asteroid/roach
 	name = "Kampfer Roach"
 	desc = "A monstrous, dog-sized cockroach. These huge mutants can be everywhere where humans are, on ships, planets and stations."
-	icon = 'mod_celadon/_storge_icons/icons/mobs/animal.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/mobs/roaches.dmi'
 	icon_state = "roach"
 	icon_living = "roach_move"
 	icon_aggro = "roach_move"
@@ -10,11 +10,11 @@
 	health = 10
 	mob_size = MOB_SIZE_SMALL
 	density = FALSE //Swarming roaches! They also more robust that way.
-	attack_sound = 'mod_celadon/_storge_sounds/sound/insect_battle_bite.ogg'
+	attack_sound = 'mod_celadon/_storage_sounds/sound/insect_battle_bite.ogg'
 	emote_see = list("chirps loudly.", "cleans its whiskers with forelegs.")
 	turns_per_move = 4
 	turns_since_move = 0
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat = 2)
+	butcher_results = list(/obj/item/food/meat/roachmeat = 2)
 
 	var/blattedin_revives_left = 1 // how many times blattedin can get us back to life (as num for adminbus fun).
 	melee_damage_lower = 4

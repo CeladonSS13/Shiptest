@@ -7,11 +7,11 @@
 	"enabled": true,
 	"limit": 1,
 	"sensor_range": 5,
-	"prefix": "EUSM",
+	"prefix": "ESV",
 	"faction": "/datum/faction/elysium",
 	"tags": [
-		"Универсальный",
-		"Боевой"
+		"Боевой",
+		"РП Фокус"
 	],
 	"namelists": [
 		"WEAPONS",
@@ -19,16 +19,16 @@
 	],
 	"job_slots": {
 		"Caid": {
-			"outfit": "/datum/outfit/job/elysium/captain",
+			"outfit": "/datum/outfit/job/cel/elysium/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"Mukatell": {
-			"outfit": "/datum/outfit/job/elysium/security",
+			"outfit": "/datum/outfit/job/cel/elysium/security",
 			"slots" : 2
 		},
 		"Ahisa`i": {
-			"outfit": "/datum/outfit/job/elysium/assistant",
+			"outfit": "/datum/outfit/job/cel/elysium/assistant",
 			"slots": 1
 		}
 	}

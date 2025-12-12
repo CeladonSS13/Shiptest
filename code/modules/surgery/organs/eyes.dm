@@ -49,6 +49,11 @@
 		else
 			sclera_color = human_owner.sclera_color
 
+	// [CELADON-ADD] - CELADON_RETURN_CONTENT_QUIRKS
+		if(HAS_TRAIT(human_owner, TRAIT_NIGHT_VISION) && !lighting_alpha)
+			lighting_alpha = LIGHTING_PLANE_ALPHA_NV_TRAIT
+	// [/CELADON-ADD]
+
 	M.update_tint()
 	owner.update_sight()
 	if(M.has_dna() && ishuman(M))

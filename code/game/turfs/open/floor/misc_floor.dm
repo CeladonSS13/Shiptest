@@ -173,6 +173,9 @@
 /turf/open/floor/plating/rust/plasma
 	initial_gas_mix = "plasma=104;TEMP=293.15"
 
+/turf/open/floor/plating/rust/airless
+	initial_gas_mix = AIRLESS_ATMOS
+
 /turf/open/floor/plasteel/telecomms_floor
 	icon_state = "tcomms"
 	base_icon_state = "tcomms"
@@ -194,7 +197,7 @@
 	gender = PLURAL
 	name = "dirt"
 	desc = "Upon closer examination, it's still dirt."
-	icon = 'icons/turf/floors.dmi'
+	icon = 'icons/turf/planetary/jungle.dmi'
 	icon_state = "dirt"
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
@@ -223,9 +226,12 @@
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = list(SMOOTH_GROUP_TURF_OPEN, SMOOTH_GROUP_FLOOR_GRASS)
 	canSmoothWith = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_FLOOR_GRASS)
+	MAP_SWITCH(pixel_x = 0, pixel_x = -19)
+	MAP_SWITCH(pixel_y = 0, pixel_y = -19)
 	layer = HIGH_TURF_LAYER
-	icon_state = "grass0"
+	icon_state = "grass-255"
 	base_icon_state = "grass"
+	icon = 'icons/turf/floors/grass.dmi'
 	var/smooth_icon = 'icons/turf/floors/grass.dmi'
 	baseturfs = /turf/open/floor/ship/dirt
 
@@ -233,17 +239,22 @@
 	. = ..()
 	if(smoothing_flags)
 		var/matrix/translation = new
-		translation.Translate(-9, -9)
+		translation.Translate(-19, -19)
 		transform = translation
 		icon = smooth_icon
 
 /turf/open/floor/grass/ship/jungle
 	name = "jungle grass"
 	desc = "Greener on the other side."
-	icon_state = "junglegrass"
-	base_icon_state = "junglegrass"
+	icon_state = "grass-255"
+	base_icon_state = "grass"
 	baseturfs = /turf/open/floor/ship/dirt/dark
+	icon = 'icons/turf/floors/junglegrass.dmi'
 	smooth_icon = 'icons/turf/floors/junglegrass.dmi'
+
+/turf/open/floor/grass/ship/smoothplasteel
+	smoothing_groups = list(SMOOTH_GROUP_TURF_OPEN, SMOOTH_GROUP_FLOOR_GRASS)
+	canSmoothWith = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_FLOOR_GRASS, SMOOTH_GROUP_FLOOR_PLASTEEL)
 
 /turf/open/floor/plating/ship/water
 	name = "water"

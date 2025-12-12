@@ -53,7 +53,7 @@
 	. = ..()
 	if(isliving(target))
 		var/mob/living/living_target = target
-		living_target.adjust_jitter(5)
+		living_target.set_timed_status_effect(10 SECONDS, /datum/status_effect/jitter)
 
 /obj/projectile/temp/basilisk/heated
 	name = "energy blast"
@@ -115,7 +115,7 @@
 	lava_drinker = FALSE
 	maxHealth = 40
 	health = 40
-	var/shell_health = 80 //Tough to crack, easy to kill.
+	var/shell_health = 60 //Tough to crack, easy to kill.
 	var/has_shell = TRUE
 	var/list/shell_loot = list(/obj/item/stack/ore/diamond, /obj/item/stack/ore/diamond)
 	var/shell_snap_message = FALSE
@@ -158,7 +158,7 @@
 	if(I.force)
 		if(shell_damage(I.force))			// Damage was absorbed by the shell, no need to go further
 			send_item_attack_message(I, user)
-			return TRUE
+			visible_message("<span class='notice'>[src]'s shell absorbs the damage, dealing minimal the [src] itself!</span>")
 	return ..()
 
 /mob/living/simple_animal/hostile/asteroid/basilisk/whitesands/bullet_act(obj/projectile/P)
@@ -226,7 +226,7 @@
 	speak_emote = list("telepathically cries")
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	stat_attack = UNCONSCIOUS
-	movement_type = FLYING
+	is_flying_animal = TRUE
 	robust_searching = 1
 	attack_same = TRUE		// So we'll fight basilisks
 	mob_trophy = /obj/item/mob_trophy/watcher_wing
@@ -328,7 +328,7 @@
 		var/mob/living/L = target
 		if (istype(L))
 			L.adjust_fire_stacks(0.1)
-			L.IgniteMob()
+			L.ignite_mob()
 
 /obj/projectile/temp/basilisk/icewing
 	damage = 15

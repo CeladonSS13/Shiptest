@@ -3,22 +3,24 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-9"
 	},
-/obj/structure/catwalk/over/plated_catwalk/white,
-/turf/open/floor/plating/rust,
+/turf/open/floor/plasteel/patterned/ridged,
 /area/ship/bridge)
 "c" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "brawler_starboard"
+	},
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
 	dir = 8;
 	id = "brawler_starboard_holo"
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/mineral_door/wood,
-/turf/open/floor/plating/rust,
+/obj/structure/cable/yellow,
+/turf/open/floor/engine/hull/interior,
 /area/ship/bridge)
 "e" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+/obj/machinery/telecomms/relay/preset/frontiersmen,
 /obj/machinery/light_switch{
 	pixel_y = -22;
 	dir = 1
@@ -48,6 +50,12 @@
 	pixel_y = -2;
 	icon_state = "streak3"
 	},
+/obj/machinery/button/shieldwallgen{
+	pixel_y = 9;
+	pixel_x = 23;
+	id = "brawler_aft_holo";
+	dir = 8
+	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
@@ -57,30 +65,62 @@
 /obj/machinery/power/terminal{
 	dir = 1
 	},
-/obj/effect/turf_decal/techfloor/hole/right,
 /turf/open/floor/plasteel/patterned/ridged,
-/area/ship/bridge)
-"j" = (
-/turf/closed/wall/mineral/wood,
 /area/ship/bridge)
 "k" = (
 /turf/template_noop,
 /area/template_noop)
 "l" = (
-/obj/effect/turf_decal/techfloor/hole,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/mineral_door/uranium,
-/turf/open/floor/plating/rust,
+/obj/machinery/door/poddoor/shutters{
+	id = "brawler_starboard"
+	},
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	dir = 4;
+	id = "brawler_starboard_holo"
+	},
+/obj/structure/cable/yellow,
+/obj/machinery/button/door{
+	dir = 4;
+	pixel_y = 7;
+	pixel_x = -23;
+	id = "brawler_starboard"
+	},
+/obj/machinery/button/shieldwallgen{
+	pixel_y = -7;
+	pixel_x = -23;
+	id = "brawler_starboard_holo";
+	dir = 4
+	},
+/turf/open/floor/engine/hull/interior,
 /area/ship/bridge)
 "m" = (
+/obj/machinery/button/door{
+	pixel_x = -23;
+	pixel_y = -7;
+	id = "brawler_port";
+	dir = 4
+	},
+/obj/machinery/button/shieldwallgen{
+	pixel_y = 7;
+	pixel_x = -23;
+	id = "brawler_port_holo";
+	dir = 4
+	},
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
 	dir = 4;
 	id = "brawler_port_holo"
 	},
-/obj/structure/mineral_door/gold,
-/turf/open/floor/plating/rust,
+/obj/machinery/door/poddoor/shutters{
+	dir = 1;
+	id = "brawler_port"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/turf/open/floor/engine/hull/interior,
 /area/ship/bridge)
 "o" = (
+/obj/structure/grille,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
@@ -141,6 +181,7 @@
 /turf/open/floor/engine/hull/interior,
 /area/ship/bridge)
 "s" = (
+/obj/structure/grille,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
@@ -156,21 +197,21 @@
 	pixel_x = -5
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/techfloor/hole,
 /turf/open/floor/plasteel/patterned/ridged,
 /area/ship/bridge)
 "u" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-10"
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plasteel/patterned/ridged,
 /area/ship/bridge)
 "v" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/obj/effect/turf_decal/floordetail/pryhole,
-/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
 /turf/open/floor/plasteel/patterned/ridged,
 /area/ship/bridge)
 "x" = (
@@ -216,11 +257,18 @@
 	port_direction = 2;
 	preferred_direction = 4
 	},
+/obj/machinery/door/poddoor/shutters{
+	dir = 8;
+	id = "brawler_aft"
+	},
 /turf/open/floor/engine/hull/interior,
 /area/ship/bridge)
 "A" = (
-/obj/structure/mineral_door/gold,
-/turf/open/floor/plating/rust,
+/obj/machinery/door/poddoor/shutters{
+	dir = 1;
+	id = "brawler_port"
+	},
+/turf/open/floor/engine/hull/interior,
 /area/ship/bridge)
 "B" = (
 /obj/effect/decal/cleanable/dirt,
@@ -236,7 +284,6 @@
 	pixel_x = -6;
 	pixel_y = 5
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/patterned/ridged,
 /area/ship/bridge)
 "C" = (
@@ -248,8 +295,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/structure/catwalk/over/plated_catwalk/white,
-/turf/open/floor/plating/rust,
+/turf/open/floor/plasteel/patterned/ridged,
 /area/ship/bridge)
 "D" = (
 /obj/machinery/light/directional/south,
@@ -289,6 +335,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+/obj/structure/table,
 /obj/item/radio/intercom/wideband/table{
 	dir = 4;
 	pixel_x = 6
@@ -302,7 +349,6 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
 	},
-/obj/structure/table/bronze,
 /turf/open/floor/plasteel/mono,
 /area/ship/bridge)
 "G" = (
@@ -316,10 +362,18 @@
 /area/ship/bridge)
 "I" = (
 /obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
 	dir = 4
 	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 2
+	},
 /obj/structure/cable,
-/obj/structure/frame/machine,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "J" = (
@@ -356,16 +410,21 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/power/port_gen/pacman,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/structure/frame/machine,
+/obj/item/stack/sheet/mineral/plasma/twenty{
+	pixel_y = 9;
+	pixel_x = -5
+	},
 /turf/open/floor/plasteel,
 /area/ship/bridge)
 "M" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/mineral_door/wood,
-/turf/open/floor/plating/rust,
+/obj/machinery/door/poddoor/shutters{
+	id = "brawler_starboard"
+	},
+/turf/open/floor/engine/hull/interior,
 /area/ship/bridge)
 "N" = (
 /obj/structure/chair/comfy/shuttle{
@@ -375,6 +434,7 @@
 /area/ship/bridge)
 "O" = (
 /obj/machinery/light/directional/north,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 4
 	},
@@ -387,8 +447,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/obj/item/holosign_creator/atmos,
-/turf/open/floor/plating/rust,
+/turf/open/floor/plasteel,
 /area/ship/bridge)
 "P" = (
 /obj/structure/cable/yellow{
@@ -397,13 +456,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "5-9"
 	},
-/obj/effect/decal/cleanable/oil{
-	pixel_y = 15;
-	pixel_x = -7
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
+/turf/open/floor/plasteel/patterned/ridged,
 /area/ship/bridge)
 "R" = (
 /obj/structure/cable/yellow{
@@ -412,10 +465,12 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
 	},
-/obj/structure/catwalk/over/plated_catwalk/white,
-/turf/open/floor/plating/rust,
+/turf/open/floor/plasteel/patterned/ridged,
 /area/ship/bridge)
 "T" = (
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 1
@@ -423,14 +478,7 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/structure/frame/machine,
 /turf/open/floor/engine/hull/reinforced,
-/area/ship/bridge)
-"U" = (
-/turf/closed/wall/rust,
-/area/ship/bridge)
-"V" = (
-/turf/closed/wall/mineral/sandstone,
 /area/ship/bridge)
 "W" = (
 /turf/closed/wall/r_wall,
@@ -442,8 +490,12 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+/obj/structure/window/reinforced,
 /obj/structure/cable{
 	icon_state = "0-2"
+	},
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 1
 	},
 /obj/effect/decal/cleanable/oil{
 	pixel_y = 11;
@@ -453,18 +505,7 @@
 	pixel_y = 15;
 	pixel_x = -7
 	},
-/obj/structure/frame/machine,
 /turf/open/floor/plasteel/tech/grid,
-/area/ship/bridge)
-"Y" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/structure/frame/machine,
-/turf/open/floor/engine/hull/reinforced,
 /area/ship/bridge)
 "Z" = (
 /obj/machinery/computer/helm{
@@ -483,7 +524,7 @@
 
 (1,1,1) = {"
 k
-j
+W
 E
 z
 r
@@ -492,11 +533,11 @@ k
 "}
 (2,1,1) = {"
 k
-j
+W
 B
 t
 P
-U
+W
 k
 "}
 (3,1,1) = {"
@@ -527,12 +568,12 @@ c
 k
 "}
 (6,1,1) = {"
-Y
-U
+T
+W
 O
 x
 D
-j
+W
 T
 "}
 (7,1,1) = {"
@@ -546,19 +587,19 @@ s
 "}
 (8,1,1) = {"
 k
-V
+W
 F
 Z
 e
-j
+W
 k
 "}
 (9,1,1) = {"
 k
-V
+W
 g
 g
 g
-V
+W
 k
 "}

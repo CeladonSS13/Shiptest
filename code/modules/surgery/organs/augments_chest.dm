@@ -180,7 +180,7 @@
 		return
 	if(!isturf(owner.loc))//You can't use jet in nowhere or in mecha/closet
 		return
-	if(!(owner.is_flying() || owner.is_floating()) || owner.buckled)//You don't want use jet in gravity or while buckled.
+	if(!(owner.movement_type & FLOATING) || owner.buckled)//You don't want use jet in gravity or while buckled.
 		return
 	if(owner.pulledby)//You don't must use jet if someone pull you
 		return
@@ -214,8 +214,22 @@
 		return TRUE
 
 	// Priority 3: use internals tank.
+// [CELADON-EDIT] - FIX_IMPLANT_THRUSTERS
+/* CELADON-EDIT - ORIGINAL
 	if(owner.internal?.air_contents?.total_moles() >= num)
 		T.assume_air_moles(owner.internal.air_contents, num)
+*/
+	var/datum/gas_mixture/internal_mix = owner.internal?.return_air()
+	if(internal_mix && internal_mix.total_moles() > num)
+		var/datum/gas_mixture/removed = internal_mix.remove(num)
+		if(removed.total_moles() > 0.005)
+			T.assume_air(removed)
+			ion_trail.generate_effect()
+			return TRUE
+		else
+			T.assume_air(removed)
+			ion_trail.generate_effect()
+// [/CELADON-EDIT]
 
 	toggle(silent = TRUE)
 	return FALSE

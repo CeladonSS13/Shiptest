@@ -326,7 +326,6 @@
 /obj/item/holochip,
 /obj/item/holosign_creator,
 /obj/item/honey_frame,
-/obj/item/hot_potato,
 /obj/item/hourglass,
 /obj/item/hypospray,
 /obj/item/immortality_talisman,
@@ -766,7 +765,6 @@
 /obj/item/twenty_pounds_of_ice,
 /obj/item/udder,
 /obj/item/udder/gutlunch,
-/obj/item/upgradescroll/unlimited,
 /obj/item/uplink,
 /obj/item/uplink/clownop,
 /obj/item/uplink/debug,
@@ -882,7 +880,6 @@
 /obj/item/ammo_box/magazine/internal/shot/sex,
 /obj/item/ammo_box/magazine/internal/shot/tube,
 /obj/item/ammo_box/magazine/m45/hp,
-/obj/item/ammo_box/magazine/m75,
 /obj/item/ammo_box/magazine/m9mm_cm70,
 /obj/item/ammo_box/magazine/m9mm_mauler,
 /obj/item/ammo_box/magazine/recharge/ctf/blue,
@@ -891,8 +888,6 @@
 /obj/item/ammo_box/magazine/toy/pistol/riot,
 /obj/item/ammo_box/magazine/usp45_standart,
 /obj/item/ammo_box/magazine/wt550m9/ap,
-/obj/item/ammo_casing/a308/a308_brak,
-/obj/item/ammo_casing/a308/a308_rubber,
 /obj/item/ammo_casing/a357/hp,
 /obj/item/ammo_casing/a357/match,
 /obj/item/ammo_casing/a4570/explosive,
@@ -908,7 +903,6 @@
 /obj/item/ammo_casing/caseless/c299,
 /obj/item/ammo_casing/caseless/gauss/lance,
 /obj/item/ammo_casing/caseless/gauss/slug,
-/obj/item/ammo_casing/caseless/gumball,
 /obj/item/ammo_casing/caseless/laser,
 /obj/item/ammo_casing/energy/bolt/halloween,
 /obj/item/ammo_casing/energy/chrono_beam,
@@ -917,7 +911,6 @@
 /obj/item/ammo_casing/energy/kinetic,
 /obj/item/ammo_casing/energy/lasergun,
 /obj/item/ammo_casing/energy/laser/practice,
-/obj/item/ammo_casing/energy/laser/ultima/alt,
 /obj/item/ammo_casing/energy/temp/hot,
 /obj/item/ammo_casing/mm712x82/ap,
 /obj/item/ammo_casing/mm712x82/match,
@@ -936,7 +929,6 @@
 /obj/item/banner/science,
 /obj/item/bedsheet/ce,
 /obj/item/borg/charger,
-/obj/item/borg/lollipop/clown,
 /obj/item/borg/upgrade/circuit_app,
 /obj/item/borg/upgrade/ddrill,
 /obj/item/borg/upgrade/disablercooler,
@@ -1056,16 +1048,13 @@
 /turf/open/space/basic,
 /area/outpost/vacant_rooms/office)
 "cM" = (
-/turf/open/floor/plating/grass/lava/purple/plasma_gaint,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/space)
 "cN" = (
 /turf/open/space/basic,
 /area/ruin/powered/hydroponicslab)
-"cP" = (
-/turf/open/floor/plating/grass/lava,
-/area/space)
 "cQ" = (
-/turf/open/floor/plating/dirt/icemoon,
+/turf/open/floor/plating/asteroid/dirt,
 /area/space)
 "cU" = (
 /turf/open/floor/plasteel/stairs/wood/birch,
@@ -1407,7 +1396,7 @@
 /turf/closed/wall/mineral/gold/yesdiag,
 /area/space)
 "in" = (
-/turf/open/floor/plating/grass/beach,
+/turf/open/floor/plating/asteroid/dirt/grass/beach,
 /area/space)
 "iq" = (
 /turf/open/space/basic,
@@ -1749,7 +1738,6 @@
 /obj/item/ammo_box/magazine/m556_42_hydra/small,
 /obj/item/ammo_box/magazine/m57_39_asp,
 /obj/item/ammo_box/magazine/m57_39_sidewinder,
-/obj/item/ammo_box/magazine/m75,
 /obj/item/ammo_box/magazine/m9mm_cm70,
 /obj/item/ammo_box/magazine/m9mm_mauler,
 /obj/item/ammo_box/magazine/m9mm_rattlesnake,
@@ -1776,10 +1764,7 @@
 /obj/item/ammo_box/magazine/skm_762_40/extended,
 /obj/item/ammo_box/magazine/smgm10mm,
 /obj/item/ammo_box/magazine/smgm10mm/rubber,
-/obj/item/ammo_box/magazine/smgm9mm,
-/obj/item/ammo_box/magazine/smgm9mm/ap,
-/obj/item/ammo_box/magazine/smgm9mm/rubber,
-/obj/item/ammo_box/magazine/smgm9mm/rubber,
+/obj/item/ammo_box/magazine/m9mm_expedition,
 /obj/item/ammo_box/magazine/sniper_rounds,
 /obj/item/ammo_box/magazine/sniper_rounds/penetrator,
 /obj/item/ammo_box/magazine/sniper_rounds/soporific,
@@ -1799,10 +1784,10 @@
 /obj/item/ammo_casing,
 /obj/item/ammo_casing/a300,
 /obj/item/ammo_casing/a308,
-/obj/item/ammo_casing/a308/a308_ap,
-/obj/item/ammo_casing/a308/a308_brak,
-/obj/item/ammo_casing/a308/a308_rubber,
-/obj/item/ammo_casing/a308/a308_sp,
+/obj/item/ammo_casing/a308/ap,
+/obj/item/ammo_casing/a308/surplus,
+/obj/item/ammo_casing/a308/rubber,
+/obj/item/ammo_casing/a308/hp,
 /obj/item/ammo_casing/a357,
 /obj/item/ammo_casing/a357/hp,
 /obj/item/ammo_casing/a357/match,
@@ -1852,7 +1837,6 @@
 /obj/item/storage/box/ammo/c9mm_rubber,
 /obj/item/storage/box/ammo/c9mm_surplus,
 /obj/item/ammo_casing/caseless,
-/obj/item/ammo_casing/caseless/a75,
 /obj/item/ammo_casing/caseless/a858,
 /obj/item/ammo_casing/caseless/arrow,
 /obj/item/ammo_casing/caseless/arrow/ash,
@@ -1872,12 +1856,10 @@
 /obj/item/ammo_casing/caseless/gauss,
 /obj/item/ammo_casing/caseless/gauss/lance,
 /obj/item/ammo_casing/caseless/gauss/slug,
-/obj/item/ammo_casing/caseless/gumball,
 /obj/item/ammo_casing/caseless/laser,
 /obj/item/ammo_casing/caseless/laser/ctf,
 /obj/item/ammo_casing/caseless/laser/ctf/blue,
 /obj/item/ammo_casing/caseless/laser/ctf/red,
-/obj/item/ammo_casing/caseless/lollipop,
 /obj/item/ammo_casing/caseless/rocket,
 /obj/item/ammo_casing/caseless/rocket/a70mm,
 /obj/item/ammo_casing/caseless/rocket/hedp,
@@ -1940,7 +1922,6 @@
 /obj/item/ammo_casing/energy/laser/scatter,
 /obj/item/ammo_casing/energy/laser/smg,
 /obj/item/ammo_casing/energy/laser/ultima,
-/obj/item/ammo_casing/energy/laser/ultima/alt,
 /obj/item/ammo_casing/energy/lasergun/eoehoma,
 /obj/item/ammo_casing/energy/lasergun/hitscan,
 /obj/item/ammo_casing/energy/lasergun/old,
@@ -2122,8 +2103,6 @@
 /obj/item/borg/cyborghug,
 /obj/item/borg/cyborghug/medical,
 /obj/item/borg/cyborghug/peacekeeper,
-/obj/item/borg/lollipop,
-/obj/item/borg/lollipop/clown,
 /obj/item/borg/projectile_dampen,
 /obj/item/borg/projectile_dampen,
 /obj/item/borg/sight,
@@ -2270,7 +2249,6 @@
 /obj/item/crusher_trophy/ice_wing,
 /obj/item/shield/changeling,
 /obj/item/spy_bug,
-/obj/item/upgradescroll/unlimited,
 /obj/item/weldingtool/hugetank/empty,
 /obj/item/weldingtool/mini,
 /obj/item/disk/data,
@@ -2515,7 +2493,6 @@
 /obj/item/food/breadslice,
 /obj/item/food/bread/plain,
 /obj/item/food/breadslice/plain,
-/obj/item/food/breadslice/moldy,
 /obj/item/food/bread/meat,
 /obj/item/food/breadslice/meat,
 /obj/item/food/bread/xenomeat,
@@ -2528,17 +2505,12 @@
 /obj/item/food/breadslice/tofu,
 /obj/item/food/bread/creamcheese,
 /obj/item/food/breadslice/creamcheese,
-/obj/item/food/bread/mimana,
-/obj/item/food/breadslice/mimana,
-/obj/item/food/breadslice/custom,
 /obj/item/food/cake,
 /obj/item/food/cakeslice,
 /obj/item/food/cake/plain,
 /obj/item/food/cakeslice/plain,
 /obj/item/food/cake/carrot,
 /obj/item/food/cakeslice/carrot,
-/obj/item/food/cake/brain,
-/obj/item/food/cakeslice/brain,
 /obj/item/food/cake/cheese,
 /obj/item/food/cakeslice/cheese,
 /obj/item/food/cake/orange,
@@ -2552,7 +2524,6 @@
 /obj/item/food/cake/birthday,
 /obj/item/food/cakeslice/birthday,
 /obj/item/food/cake/birthday/energy,
-/obj/item/food/cakeslice/birthday/energy,
 /obj/item/food/cake/apple,
 /obj/item/food/cakeslice/apple,
 /obj/item/food/cake/slimecake,
@@ -2571,8 +2542,6 @@
 /obj/item/food/cakeslice/hardware_cake_slice,
 /obj/item/food/cake/vanilla_cake,
 /obj/item/food/cakeslice/vanilla_slice,
-/obj/item/food/cake/clown_cake,
-/obj/item/food/cakeslice/clown_slice,
 /obj/item/food/cake/trumpet,
 /obj/item/food/cakeslice/trumpet,
 /obj/item/food/cake/brioche,
@@ -2581,9 +2550,7 @@
 /obj/item/food/spaghetti/raw,
 /obj/item/food/spaghetti/boiledspaghetti,
 /obj/item/food/spaghetti/pastatomato,
-/obj/item/food/spaghetti/copypasta,
 /obj/item/food/spaghetti/meatballspaghetti,
-/obj/item/food/spaghetti/spesslaw,
 /obj/item/food/spaghetti/chowmein,
 /obj/item/food/spaghetti/beefnoodle,
 /obj/item/food/spaghetti/butternoodles,
@@ -2834,7 +2801,6 @@
 /obj/item/reagent_containers/glass/bottle/polonium,
 /obj/item/reagent_containers/glass/bottle/magillitis,
 /obj/item/reagent_containers/glass/bottle/venom,
-/obj/item/reagent_containers/glass/bottle/fentanyl,
 /obj/item/reagent_containers/glass/bottle/formaldehyde,
 /obj/item/reagent_containers/glass/bottle/initropidril,
 /obj/item/reagent_containers/glass/bottle/pancuronium,
@@ -2891,14 +2857,12 @@
 /obj/item/reagent_containers/glass/bottle/thermite,
 /obj/item/reagent_containers/glass/bottle/nitroglycerin,
 /obj/item/reagent_containers/glass/bottle/epinephrine,
-/obj/item/reagent_containers/glass/bottle/bicaridine,
-/obj/item/reagent_containers/glass/bottle/kelotane,
-/obj/item/reagent_containers/glass/bottle/antitoxin,
+/obj/item/reagent_containers/glass/bottle/indomide,
+/obj/item/reagent_containers/glass/bottle/charcoal,
 /obj/item/reagent_containers/glass/bottle/dexalin,
 /obj/item/reagent_containers/glass/bottle/epinephrine/sleeper,
-/obj/item/reagent_containers/glass/bottle/bicaridine/sleeper,
-/obj/item/reagent_containers/glass/bottle/kelotane/sleeper,
-/obj/item/reagent_containers/glass/bottle/antitoxin/sleeper,
+/obj/item/reagent_containers/glass/bottle/indomide/sleeper,
+/obj/item/reagent_containers/glass/bottle/charcoal,
 /obj/item/reagent_containers/glass/bottle/dexalin/sleeper,
 /obj/item/reagent_containers/glass/bottle/morphine/sleeper,
 /obj/item/reagent_containers/chem_pack,
@@ -2914,8 +2878,6 @@
 /obj/item/reagent_containers/glass/beaker/cryoxadone,
 /obj/item/reagent_containers/glass/beaker/sulphuric,
 /obj/item/reagent_containers/glass/beaker/slime,
-/obj/item/reagent_containers/glass/beaker/large/styptic,
-/obj/item/reagent_containers/glass/beaker/large/silver_sulfadiazine,
 /obj/item/reagent_containers/glass/beaker/large/charcoal,
 /obj/item/reagent_containers/glass/beaker/large/epinephrine,
 /obj/item/reagent_containers/glass/beaker/large/fuel,
@@ -2928,16 +2890,12 @@
 /obj/item/reagent_containers/hypospray,
 /obj/item/reagent_containers/hypospray/CMO,
 /obj/item/reagent_containers/hypospray/combat,
-/obj/item/reagent_containers/hypospray/combat/nanites,
 /obj/item/reagent_containers/hypospray/medipen,
 /obj/item/reagent_containers/hypospray/medipen/stimpack,
-/obj/item/reagent_containers/hypospray/medipen/stimpack/traitor,
 /obj/item/reagent_containers/hypospray/medipen/stimpack/crisis,
-/obj/item/reagent_containers/hypospray/medipen/stimulants,
 /obj/item/reagent_containers/hypospray/medipen/morphine,
-/obj/item/reagent_containers/hypospray/medipen/oxandrolone,
+/obj/item/reagent_containers/hypospray/medipen/ysiltane,
 /obj/item/reagent_containers/hypospray/medipen/penacid,
-/obj/item/reagent_containers/hypospray/medipen/salacid,
 /obj/item/reagent_containers/hypospray/medipen/salbutamol,
 /obj/item/reagent_containers/hypospray/medipen/tuberculosiscure,
 /obj/item/reagent_containers/hypospray/medipen/survival,
@@ -2952,21 +2910,6 @@
 /obj/item/reagent_containers/glass/bottle/vial/small/bluespace,
 /obj/item/reagent_containers/glass/bottle/vial/large,
 /obj/item/reagent_containers/glass/bottle/vial/large/bluespace,
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/bicaridine,
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/antitoxin,
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/kelotane,
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/dexalin,
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/tricord,
-/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/CMO,
-/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/bicaridine,
-/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/antitoxin,
-/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/kelotane,
-/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/dexalin,
-/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/charcoal,
-/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/tricord,
-/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/salglu,
-/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/synthflesh,
-/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/combat,
 /obj/item/reagent_containers/glass/chem_jug,
 /obj/item/reagent_containers/glass/chem_jug/open,
 /obj/item/reagent_containers/glass/chem_jug/carbon,
@@ -2985,8 +2928,6 @@
 /obj/item/reagent_containers/glass/chem_jug/hexacrete,
 /obj/item/reagent_containers/glass/maunamug,
 /obj/item/reagent_containers/medigel,
-/obj/item/reagent_containers/medigel/styptic,
-/obj/item/reagent_containers/medigel/silver_sulf,
 /obj/item/reagent_containers/medigel/synthflesh,
 /obj/item/reagent_containers/medigel/sterilizine,
 /obj/item/reagent_containers/glass/mortar,
@@ -2996,8 +2937,8 @@
 /obj/item/reagent_containers/glass/mortar/bone,
 /obj/item/reagent_containers/glass/mortar/mushroom,
 /obj/item/reagent_containers/pill/patch,
-/obj/item/reagent_containers/pill/patch/styptic,
-/obj/item/reagent_containers/pill/patch/silver_sulf,
+/obj/item/reagent_containers/pill/patch/indomide,
+/obj/item/reagent_containers/pill/patch/alvitane,
 /obj/item/reagent_containers/pill/patch/synthflesh,
 /obj/item/reagent_containers/pill,
 /obj/item/reagent_containers/pill/tox,
@@ -3010,8 +2951,7 @@
 /obj/item/reagent_containers/pill/epinephrine,
 /obj/item/reagent_containers/pill/mannitol,
 /obj/item/reagent_containers/pill/mutadone,
-/obj/item/reagent_containers/pill/salicylic,
-/obj/item/reagent_containers/pill/oxandrolone,
+/obj/item/reagent_containers/pill/ysiltane,
 /obj/item/reagent_containers/pill/insulin,
 /obj/item/reagent_containers/pill/psicodine,
 /obj/item/reagent_containers/pill/penacid,
@@ -3027,8 +2967,7 @@
 /obj/item/reagent_containers/pill/potassiodide,
 /obj/item/reagent_containers/pill/three_eye,
 /obj/item/reagent_containers/pill/iron,
-/obj/item/reagent_containers/pill/trophazole,
-/obj/item/reagent_containers/spray/rhigoxane,
+/obj/item/reagent_containers/pill/indomide,
 /obj/item/reagent_containers/spray,
 /obj/item/reagent_containers/spray/cleaner,
 /obj/item/reagent_containers/spray/spraytan,
@@ -3045,7 +2984,6 @@
 /obj/item/reagent_containers/syringe,
 /obj/item/reagent_containers/syringe/epinephrine,
 /obj/item/reagent_containers/syringe/charcoal,
-/obj/item/reagent_containers/syringe/perfluorodecalin,
 /obj/item/reagent_containers/syringe/antiviral,
 /obj/item/reagent_containers/syringe/bioterror,
 /obj/item/reagent_containers/syringe/calomel,
@@ -3054,20 +2992,16 @@
 /obj/item/reagent_containers/syringe/lethal/choral,
 /obj/item/reagent_containers/syringe/lethal/execution,
 /obj/item/reagent_containers/syringe/mulligan,
-/obj/item/reagent_containers/syringe/gluttony,
 /obj/item/reagent_containers/syringe/bluespace,
 /obj/item/reagent_containers/syringe/piercing,
-/obj/item/reagent_containers/syringe/spider_extract,
-/obj/item/reagent_containers/syringe/oxandrolone,
-/obj/item/reagent_containers/syringe/salacid,
+/obj/item/reagent_containers/syringe/ysiltane,
 /obj/item/reagent_containers/syringe/penacid,
 /obj/item/reagent_containers/syringe/contraband,
 /obj/item/reagent_containers/syringe/contraband/space_drugs,
 /obj/item/reagent_containers/syringe/contraband/crank,
 /obj/item/reagent_containers/syringe/contraband/methamphetamine,
-/obj/item/reagent_containers/syringe/contraband/fentanyl,
 /obj/item/reagent_containers/syringe/contraband/morphine,
-/obj/item/reagent_containers/syringe/thializid,
+/obj/item/reagent_containers/syringe/contraband/morphine,
 /obj/item/reagent_containers/syringe/charcoal,
 /obj/item/robot_module,
 /obj/item/robot_module/standard,
@@ -3103,12 +3037,11 @@
 /obj/item/stack/medical/gauze/cyborg,
 /obj/item/stack/medical/ointment,
 /obj/item/stack/medical/suture,
-/obj/item/stack/medical/suture/medicated,
 /obj/item/stack/medical/mesh,
 /obj/item/stack/medical/mesh/advanced,
 /obj/item/stack/medical/aloe,
 /obj/item/stack/medical/splint,
-/obj/item/stack/medical/splint/ghetto,
+/obj/item/stack/medical/splint/hunter,
 /obj/item/stack/medical/bruise_pack/herb,
 /obj/item/stack/medical/ointment/herb,
 /obj/item/stack/rods,
@@ -3116,8 +3049,7 @@
 /obj/item/stack/rods/ten,
 /obj/item/stack/rods/twentyfive,
 /obj/item/stack/rods/fifty,
-/obj/item/stack/rods/lava,
-/obj/item/stack/rods/lava/thirty,
+/obj/item/stack/rods/fifty,
 /obj/item/stack,
 /obj/item/stack/sticky_tape,
 /obj/item/stack/sticky_tape/super,
@@ -3208,9 +3140,6 @@
 /obj/item/stack/sheet/mineral/plastitanium/five,
 /obj/item/stack/sheet/mineral/snow,
 /obj/item/stack/sheet/mineral/abductor,
-/obj/item/stack/sheet/mineral/coal,
-/obj/item/stack/sheet/mineral/coal/five,
-/obj/item/stack/sheet/mineral/coal/ten,
 /obj/item/stack/sheet/mineral/hidden,
 /obj/item/stack/sheet/mineral/hidden/hellstone,
 /obj/item/stack/sheet/mineral/hidden/hellstone/fifty,
@@ -3539,7 +3468,6 @@
 /obj/item/storage/box/survival/security,
 /obj/item/storage/box/survival/medical,
 /obj/item/storage/box/survival/clip,
-/obj/item/storage/box/survival/clip/balaclava,
 /obj/item/storage/box/survival/frontier,
 /obj/item/storage/box/gloves,
 /obj/item/storage/box/masks,
@@ -3570,7 +3498,6 @@
 /obj/item/storage/box/donkpockets/donkpocketspicy,
 /obj/item/storage/box/donkpockets/donkpocketteriyaki,
 /obj/item/storage/box/donkpockets/donkpocketpizza,
-/obj/item/storage/box/donkpockets/donkpocketgondola,
 /obj/item/storage/box/donkpockets/donkpocketberry,
 /obj/item/storage/box/donkpockets/donkpockethonk,
 /obj/item/storage/box/monkeycubes,
@@ -3584,7 +3511,6 @@
 /obj/item/storage/box/handcuffs,
 /obj/item/storage/box/zipties,
 /obj/item/storage/box/alienhandcuffs,
-/obj/item/storage/box/fakesyndiesuit,
 /obj/item/storage/box/mousetraps,
 /obj/item/storage/box/pillbottles,
 /obj/item/storage/box/snappops,
@@ -3627,7 +3553,7 @@
 /obj/item/storage/box/rndciv,
 /obj/item/storage/box/rndbasic,
 /obj/item/storage/box/rndsci,
-/obj/item/storage/box/silver_sulf,
+/obj/item/storage/box/alvitane,
 /obj/item/storage/box/fountainpens,
 /obj/item/storage/box/holy_grenades,
 /obj/item/storage/box/stockparts/basic,
@@ -3667,7 +3593,7 @@
 /obj/item/storage/fancy/cigarettes/cigpack_syndicate,
 /obj/item/storage/fancy/cigarettes/cigpack_midori,
 /obj/item/storage/fancy/cigarettes/cigpack_candy,
-/obj/item/storage/fancy/cigarettes/cigpack_xeno,
+/obj/item/storage/fancy/cigarettes/cigpack_cannabis,
 /obj/item/storage/fancy/cigarettes/cigpack_cannabis,
 /obj/item/storage/fancy/cigarettes/cigpack_mindbreaker,
 /obj/item/storage/fancy/rollingpapers,
@@ -3685,8 +3611,6 @@
 /obj/item/storage/pill_bottle,
 /obj/item/storage/bag/chemistry,
 /obj/item/storage/bag/bio,
-/obj/item/storage/firstaid/ancient,
-/obj/item/storage/firstaid/ancient/heirloom,
 /obj/item/storage/firstaid/fire,
 /obj/item/storage/firstaid/toxin,
 /obj/item/storage/pill_bottle/charcoal/less,
@@ -3695,7 +3619,6 @@
 /obj/item/storage/firstaid/o2,
 /obj/item/storage/pill_bottle/iron,
 /obj/item/storage/firstaid/brute,
-/obj/item/storage/pill_bottle/trophazole,
 /obj/item/storage/firstaid/advanced,
 /obj/item/storage/pill_bottle/penacid,
 /obj/item/storage/firstaid/tactical,
@@ -3708,7 +3631,6 @@
 /obj/item/storage/pill_bottle/iron,
 /obj/item/storage/pill_bottle/mannitol,
 /obj/item/storage/pill_bottle/stimulant,
-/obj/item/storage/pill_bottle/mining,
 /obj/item/storage/pill_bottle/zoom,
 /obj/item/storage/pill_bottle/happy,
 /obj/item/storage/pill_bottle/lsd,
@@ -3717,7 +3639,6 @@
 /obj/item/storage/pill_bottle/penacid,
 /obj/item/storage/pill_bottle/neurine,
 /obj/item/storage/pill_bottle/floorpill,
-/obj/item/storage/pill_bottle/trophazole,
 /obj/item/storage/guncase,
 /obj/item/storage/guncase/winchester,
 /obj/item/storage/guncase/conflagration,
@@ -3951,7 +3872,7 @@
 /obj/item/trash/syndi_cakes,
 /obj/item/trash/energybar,
 /obj/item/trash/waffles,
-/obj/item/trash/plate,
+/obj/item/trash/chips,
 /obj/item/trash/pistachios,
 /obj/item/trash/semki,
 /obj/item/trash/tray,
@@ -4022,7 +3943,6 @@
 /obj/item/gps/mining/internal,
 /obj/item/gps/visible_debug,
 /obj/item/grenade,
-/obj/item/grenade/antigravity,
 /obj/item/grenade/chem_grenade,
 /obj/item/grenade/chem_grenade/large,
 /obj/item/grenade/chem_grenade/cryo,
@@ -4176,7 +4096,6 @@
 /obj/item/gun/ballistic/automatic/hmg/skm_lmg/drum_mag,
 /obj/item/gun/ballistic/revolver/grenadelauncher,
 /obj/item/gun/ballistic/revolver/grenadelauncher/cyborg,
-/obj/item/gun/ballistic/automatic/gyropistol,
 /obj/item/gun/ballistic/rocketlauncher,
 /obj/item/gun/ballistic/rocketlauncher/solgov,
 /obj/item/gun/ballistic/automatic/marksman,
@@ -4184,8 +4103,8 @@
 /obj/item/gun/ballistic/automatic/pistol/candor,
 /obj/item/gun/ballistic/automatic/pistol/candor/factory,
 /obj/item/gun/ballistic/automatic/pistol/candor/phenex,
-/obj/item/gun/ballistic/automatic/pistol/commander,
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq,
+/obj/item/gun/ballistic/automatic/pistol/challenger,
+/obj/item/gun/ballistic/automatic/pistol/challenger/inteq,
 /obj/item/gun/ballistic/automatic/pistol/commissar,
 /obj/item/gun/ballistic/automatic/pistol/solgov,
 /obj/item/gun/ballistic/automatic/pistol/solgov/old,
@@ -4196,7 +4115,7 @@
 /obj/item/gun/ballistic/revolver,
 /obj/item/gun/ballistic/revolver/detective,
 /obj/item/gun/ballistic/revolver/viper/no_mag,
-/obj/item/gun/ballistic/revolver/mateba,
+/obj/item/gun/ballistic/revolver/rhino,
 /obj/item/gun/ballistic/revolver/golden,
 /obj/item/gun/ballistic/revolver/montagne,
 /obj/item/gun/ballistic/revolver/ashhand,
@@ -4217,7 +4136,7 @@
 /obj/item/gun/ballistic/shotgun/automatic,
 /obj/item/gun/ballistic/shotgun/automatic/combat,
 /obj/item/gun/ballistic/shotgun/automatic/combat/compact,
-/obj/item/gun/ballistic/shotgun/automatic/dual_tube,
+/obj/item/gun/ballistic/shotgun/automatic,
 /obj/item/gun/ballistic/shotgun/automatic/bulldog/inteq,
 /obj/item/gun/ballistic/shotgun/doublebarrel,
 /obj/item/gun/ballistic/shotgun/doublebarrel/presawn,
@@ -4243,30 +4162,23 @@
 /obj/item/gun/ballistic/automatic/smg/firestorm/pan,
 /obj/item/gun/ballistic/automatic/smg/skm_carbine,
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq,
-/obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq,
 /obj/item/gun/ballistic/automatic/toy,
 /obj/item/gun/ballistic/automatic/toy/pistol,
 /obj/item/gun/ballistic/automatic/toy/pistol/riot,
 /obj/item/gun/ballistic/shotgun/toy,
 /obj/item/gun/ballistic/shotgun/toy/crossbow,
 /obj/item/gun/energy/dueling,
-/obj/item/gun/energy/e_gun,
+/obj/item/gun/energy/e_gun/e_old,
 /obj/item/gun/energy/e_gun/empty_cell,
-/obj/item/gun/energy/e_gun/mini,
-/obj/item/gun/energy/e_gun/mini/empty_cell,
-/obj/item/gun/energy/e_gun/hades,
-/obj/item/gun/energy/e_gun/old,
-/obj/item/gun/energy/e_gun/hos,
-/obj/item/gun/energy/e_gun/hos/brazil,
-/obj/item/gun/energy/e_gun/hos/brazil/true,
-/obj/item/gun/energy/e_gun/dragnet,
-/obj/item/gun/energy/e_gun/dragnet/snare,
+/obj/item/gun/energy/e_gun/empty_cell,
+/obj/item/gun/energy/e_gun/e_old/hades,
+/obj/item/gun/energy/e_gun/e_old,
+/obj/item/gun/energy/sharplite/x11,
 /obj/item/gun/energy/e_gun/turret,
-/obj/item/gun/energy/e_gun/nuclear,
+/obj/item/gun/energy/e_gun/e_old,
 /obj/item/gun/energy/e_gun/rdgun,
-/obj/item/gun/energy/e_gun/adv_stopping,
-/obj/item/gun/energy/e_gun/smg,
-/obj/item/gun/energy/e_gun/iot,
+/obj/item/gun/energy/e_gun/e_old,
+/obj/item/gun/energy/e_gun/e_old/iot,
 /obj/item/gun/energy/e_gun/e11,
 /obj/item/gun/energy/kinetic_accelerator,
 /obj/item/gun/energy/kinetic_accelerator/cyborg,
@@ -4289,8 +4201,6 @@
 /obj/item/gun/energy/laser/bluetag/hitscan,
 /obj/item/gun/energy/laser/redtag,
 /obj/item/gun/energy/laser/redtag/hitscan,
-/obj/item/gun/energy/laser/iot,
-/obj/item/gun/energy/laser/iot/lethal,
 /obj/item/gun/energy/laser/hitscanpistol,
 /obj/item/gun/energy/laser/e10,
 /obj/item/gun/energy/laser/e50,
@@ -4694,7 +4604,6 @@
 /obj/item/mecha_parts/mecha_equipment/thrusters,
 /obj/item/mecha_parts/mecha_equipment/thrusters/gas,
 /obj/item/mecha_parts/mecha_equipment/thrusters/ion,
-/obj/item/mecha_parts/concealed_weapon_bay,
 /obj/item/mecha_parts/mecha_equipment/hydraulic_clamp,
 /obj/item/mecha_parts/mecha_equipment/hydraulic_clamp/kill,
 /obj/item/mecha_parts/mecha_equipment/hydraulic_clamp/kill/real,
@@ -4801,7 +4710,7 @@
 /obj/item/melee/knife/bone,
 /obj/item/melee/knife/combat/cyborg,
 /obj/item/melee/knife/shiv,
-/obj/item/melee/knife/shiv/carrot,
+/obj/item/melee/knife/shiv,
 /obj/item/melee/knife/switchblade,
 /obj/item/melee/knife/letter_opener,
 /obj/item/melee,
@@ -5171,7 +5080,7 @@
 /turf/open/floor/carpet/nanoweave/blue,
 /area/space)
 "lr" = (
-/turf/open/floor/plating/asteroid,
+/turf/open/floor/plating/asteroid/smoothed,
 /area/space)
 "ls" = (
 /turf/open/space/basic,
@@ -5303,9 +5212,6 @@
 "nq" = (
 /turf/open/floor/holofloor/plating,
 /area/space)
-"nu" = (
-/turf/open/floor/grass/snow/basalt,
-/area/space)
 "nv" = (
 /turf/open/space/basic,
 /area/outpost/crew/bar/vip_zone)
@@ -5354,9 +5260,6 @@
 "nZ" = (
 /turf/open/space/basic,
 /area/ruin/rockplanet/nomad)
-"ob" = (
-/turf/open/floor/holofloor/basalt,
-/area/space)
 "od" = (
 /turf/closed/wall/yesdiag,
 /area/space)
@@ -5371,9 +5274,6 @@
 /area/space)
 "oo" = (
 /turf/open/floor/goonplaque,
-/area/space)
-"or" = (
-/turf/open/floor/plating/dirt/dry,
 /area/space)
 "os" = (
 /turf/open/space/basic,
@@ -5418,7 +5318,7 @@
 /turf/open/space/basic,
 /area/ruin/jungle/cavecrew/security)
 "pa" = (
-/turf/open/floor/plating/dirt/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/rockplanet,
 /area/space)
 "pc" = (
 /turf/open/space/basic,
@@ -5490,7 +5390,6 @@
 /obj/item/clothing/mask/cigarette/robust,
 /obj/item/clothing/mask/cigarette/robustgold,
 /obj/item/clothing/mask/cigarette/carp,
-/obj/item/clothing/mask/cigarette/xeno,
 /obj/item/clothing/mask/cigarette/syndicate,
 /obj/item/clothing/mask/cigarette/rollie,
 /obj/item/clothing/mask/cigarette/rollie/nicotine,
@@ -5542,13 +5441,13 @@
 /obj/item/clothing/glasses/thermal/syndi,
 /obj/item/clothing/mask/gas/clown_hat,
 /obj/item/clothing/under/suit/black_really,
-/obj/item/clothing/suit/space/syndicate/black/red,
-/obj/item/clothing/head/helmet/space/syndicate/black/red,
+/obj/item/clothing/head/helmet/space/syndicate/white_red,
+/obj/item/clothing/head/helmet/space/syndicate/white_red,
 /obj/item/clothing/glasses/thermal/syndi,
 /obj/item/clothing/shoes/chameleon/noslip,
 /obj/item/clothing/glasses/thermal/syndi,
-/obj/item/clothing/suit/space/syndicate/black/red,
-/obj/item/clothing/head/helmet/space/syndicate/black/red,
+/obj/item/clothing/head/helmet/space/syndicate/white_red,
+/obj/item/clothing/head/helmet/space/syndicate/white_red,
 /obj/item/clothing/glasses/thermal/syndi,
 /obj/item/clothing/gloves/color/latex/nitrile,
 /obj/item/clothing/mask/gas/clown_hat,
@@ -5566,8 +5465,6 @@
 /obj/item/clothing/suit/hooded/wintercoat,
 /obj/item/clothing/shoes/winterboots,
 /obj/item/clothing/suit/det_suit/noir,
-/obj/item/clothing/head/helmet/space/syndicate/contract,
-/obj/item/clothing/suit/space/syndicate/contract,
 /obj/item/clothing/gloves/krav_maga/combatglovesplus,
 /obj/item/clothing/head/helmet/space/syndicate,
 /obj/item/clothing/suit/space/syndicate,
@@ -5724,7 +5621,6 @@
 /obj/item/clothing/mask/bandana/durathread,
 /obj/item/clothing/mask/mummy,
 /obj/item/clothing/mask/scarecrow,
-/obj/item/clothing/mask/gondola,
 /obj/item/clothing/mask/gas,
 /obj/item/clothing/mask/gas/atmos,
 /obj/item/clothing/mask/gas/atmos/captain,
@@ -5905,15 +5801,12 @@
 /obj/item/clothing/suit/armor/gezena/engi,
 /obj/item/clothing/suit/armor/gezena/captain,
 /obj/item/clothing/suit/armor/gezena/marine,
-/obj/item/clothing/suit/armor/gezena/marinecoat,
 /obj/item/clothing/suit/space/gezena,
 /obj/item/clothing/head/helmet/space/gezena,
 /obj/item/clothing/head/gezena,
 /obj/item/clothing/head/gezena/flap,
 /obj/item/clothing/head/gezena/marine,
 /obj/item/clothing/head/gezena/flap/marine,
-/obj/item/clothing/head/gezena/marine/lead,
-/obj/item/clothing/head/gezena/flap/marine/lead,
 /obj/item/clothing/head/gezena/medic,
 /obj/item/clothing/head/gezena/flap/medic,
 /obj/item/clothing/head/gezena/captain,
@@ -5926,7 +5819,6 @@
 /obj/item/storage/belt/military/gezena,
 /obj/item/storage/belt/medical/gezena,
 /obj/item/clothing/neck/cloak/gezena,
-/obj/item/clothing/neck/cloak/gezena/lead,
 /obj/item/clothing/neck/cloak/gezena/engi,
 /obj/item/clothing/neck/cloak/gezena/med,
 /obj/item/clothing/neck/cloak/gezena/command,
@@ -6039,10 +5931,10 @@
 /obj/item/clothing/suit/toggle/industrial,
 /obj/item/clothing/suit/toggle/lawyer,
 /obj/item/clothing/suit/toggle/lawyer/purple,
-/obj/item/clothing/suit/toggle/lawyer/black,
-/obj/item/clothing/suit/toggle/lawyer/burgundy,
-/obj/item/clothing/suit/toggle/lawyer/navy,
-/obj/item/clothing/suit/toggle/lawyer/charcoal,
+/obj/item/clothing/under/rank/civilian/lawyer/black,
+/obj/item/clothing/suit/lawyer/burgundy,
+/obj/item/clothing/suit/lawyer/navy,
+/obj/item/clothing/under/rank/civilian/lawyer/black,
 /obj/item/clothing/suit/toggle/lawyer/cmo,
 /obj/item/clothing/suit/toggle/lawyer/medical,
 /obj/item/clothing/suit/toggle/lawyer/science,
@@ -6155,7 +6047,6 @@
 /obj/item/clothing/under/clip/officer,
 /obj/item/clothing/under/clip/officer/alt,
 /obj/item/clothing/suit/toggle/lawyer/clip,
-/obj/item/clothing/suit/toggle/lawyer/clip/fo,
 /obj/item/clothing/suit/armor/vest/capcarapace/clip,
 /obj/item/clothing/suit/armor/vest/capcarapace/clip/admiral,
 /obj/item/clothing/suit/armor/riot/clip,
@@ -6173,7 +6064,6 @@
 /obj/item/clothing/head/clip/boonie,
 /obj/item/clothing/head/clip/bicorne,
 /obj/item/clothing/head/helmet/bulletproof/x11/clip,
-/obj/item/clothing/head/helmet/bulletproof/m10/clip_vc,
 /obj/item/clothing/head/helmet/bulletproof/m10/clip_correspondent,
 /obj/item/clothing/head/helmet/riot/clip,
 /obj/item/clothing/head/fedora/det_hat/clip,
@@ -6257,8 +6147,6 @@
 /obj/item/clothing/suit/beekeeper_suit,
 /obj/item/clothing/head/bio_hood,
 /obj/item/clothing/suit/bio_suit,
-/obj/item/clothing/head/bio_hood/general,
-/obj/item/clothing/suit/bio_suit/general,
 /obj/item/clothing/head/bio_hood/virology,
 /obj/item/clothing/suit/bio_suit/virology,
 /obj/item/clothing/head/bio_hood/security,
@@ -6275,9 +6163,8 @@
 /obj/item/clothing/suit/pirate,
 /obj/item/clothing/suit/pirate/captain,
 /obj/item/clothing/suit/judgerobe,
-/obj/item/clothing/suit/apron/overalls,
+/obj/item/clothing/under/overalls,
 /obj/item/clothing/suit/apron/purple_bartender,
-/obj/item/clothing/suit/syndicatefake,
 /obj/item/clothing/suit/toggle/owlwings,
 /obj/item/clothing/suit/toggle/owlwings/griffinwings,
 /obj/item/clothing/suit/cardborg,
@@ -6294,8 +6181,6 @@
 /obj/item/clothing/suit/jacket/leather,
 /obj/item/clothing/suit/jacket/leather/duster,
 /obj/item/clothing/suit/jacket/leather/duster/command,
-/obj/item/clothing/suit/jacket/puffer,
-/obj/item/clothing/suit/jacket/puffer/vest,
 /obj/item/clothing/suit/jacket/miljacket,
 /obj/item/clothing/suit/jacket/letterman,
 /obj/item/clothing/suit/jacket/letterman_red,
@@ -6753,8 +6638,8 @@
 /obj/item/clothing/gloves/ring/silver,
 /obj/item/toy/beach_ball,
 /obj/item/toy/beach_ball/holoball,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/vulgaris,
+/obj/item/food/grown/ambrosia/deus,
+/obj/item/food/grown/ambrosia/vulgaris,
 /obj/item/paicard,
 /obj/item/instrument/violin,
 /obj/item/clothing/suit/armor/plate/crusader,
@@ -6775,9 +6660,9 @@
 /obj/item/clothing/suit/poncho,
 /obj/item/poster/random_contraband,
 /obj/item/poster/random_contraband,
-/obj/item/reagent_containers/food/snacks/grown/cannabis,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/rainbow,
-/obj/item/reagent_containers/food/snacks/grown/cannabis/white,
+/obj/item/food/grown/cannabis,
+/obj/item/food/grown/cannabis/rainbow,
+/obj/item/food/grown/cannabis/white,
 /obj/item/storage/box/fireworks/dangerous,
 /obj/item/storage/pill_bottle/zoom,
 /obj/item/storage/pill_bottle/happy,
@@ -6881,7 +6766,6 @@
 /obj/item/storage/box/survival/security,
 /obj/item/storage/box/survival/medical,
 /obj/item/storage/box/survival/clip,
-/obj/item/storage/box/survival/clip/balaclava,
 /obj/item/storage/box/survival/frontier,
 /obj/item/storage/box/gloves,
 /obj/item/storage/box/masks,
@@ -6911,7 +6795,6 @@
 /obj/item/storage/box/donkpockets/donkpocketspicy,
 /obj/item/storage/box/donkpockets/donkpocketteriyaki,
 /obj/item/storage/box/donkpockets/donkpocketpizza,
-/obj/item/storage/box/donkpockets/donkpocketgondola,
 /obj/item/storage/box/donkpockets/donkpocketberry,
 /obj/item/storage/box/donkpockets/donkpockethonk,
 /obj/item/storage/box/monkeycubes,
@@ -6925,7 +6808,6 @@
 /obj/item/storage/box/handcuffs,
 /obj/item/storage/box/zipties,
 /obj/item/storage/box/alienhandcuffs,
-/obj/item/storage/box/fakesyndiesuit,
 /obj/item/storage/box/mousetraps,
 /obj/item/storage/box/pillbottles,
 /obj/item/storage/box/snappops,
@@ -6967,7 +6849,7 @@
 /obj/item/storage/box/rndciv,
 /obj/item/storage/box/rndbasic,
 /obj/item/storage/box/rndsci,
-/obj/item/storage/box/silver_sulf,
+/obj/item/storage/box/alvitane,
 /obj/item/storage/box/fountainpens,
 /obj/item/storage/box/holy_grenades,
 /obj/item/storage/box/stockparts/basic,
@@ -7051,7 +6933,7 @@
 /obj/item/restraints/handcuffs,
 /obj/item/assembly/flash/handheld,
 /obj/item/clothing/glasses,
-/obj/item/reagent_containers/food/snacks/donut,
+/obj/item/food/donut,
 /obj/item/melee/knife/combat,
 /obj/item/flashlight/seclite,
 /obj/item/melee/classic_baton/telescopic,
@@ -7108,22 +6990,22 @@
 /obj/item/storage/belt/champion,
 /obj/item/storage/belt/military,
 /obj/item/storage/belt/military/snack,
-/obj/item/reagent_containers/food/snacks,
+/obj/item/food,
 /obj/item/reagent_containers/food/drinks,
-/obj/item/reagent_containers/food/snacks/candy,
+/obj/item/food/candy,
 /obj/item/reagent_containers/food/drinks/dry_ramen,
-/obj/item/reagent_containers/food/snacks/chips,
-/obj/item/reagent_containers/food/snacks/sosjerky,
-/obj/item/reagent_containers/food/snacks/syndicake,
-/obj/item/reagent_containers/food/snacks/spacetwinkie,
-/obj/item/reagent_containers/food/snacks/cheesiehonkers,
-/obj/item/reagent_containers/food/snacks/nachos,
-/obj/item/reagent_containers/food/snacks/cheesynachos,
-/obj/item/reagent_containers/food/snacks/cubannachos,
-/obj/item/reagent_containers/food/snacks/nugget,
+/obj/item/food/chips,
+/obj/item/food/sosjerky,
+/obj/item/food/syndicake,
+/obj/item/food/spacetwinkie,
+/obj/item/food/cheesiehonkers,
+/obj/item/food/nachos,
+/obj/item/food/cheesynachos,
+/obj/item/food/cubannachos,
+/obj/item/food/nugget,
 /obj/item/food/spaghetti/pastatomato,
-/obj/item/reagent_containers/food/snacks/rofflewaffles,
-/obj/item/reagent_containers/food/snacks/donkpocket,
+/obj/item/food/rofflewaffles,
+/obj/item/food/donkpocket,
 /obj/item/reagent_containers/food/drinks/soda_cans/cola,
 /obj/item/reagent_containers/food/drinks/soda_cans/comet_trail,
 /obj/item/reagent_containers/food/drinks/soda_cans/tadrixx,
@@ -7300,7 +7182,7 @@
 /obj/item/clothing/head/hardhat,
 /obj/item/clothing/head/hardliners,
 /obj/item/clothing/head/hasturhood,
-/obj/item/clothing/head/helmet,
+/obj/item/clothing/head/helmet/m10,
 /obj/item/clothing/head/hooded,
 /obj/item/clothing/head/hunter,
 /obj/item/clothing/head/inteq_peaked,
@@ -7350,7 +7232,6 @@
 /obj/item/clothing/head/solgov_surgery,
 /obj/item/clothing/head/sombrero,
 /obj/item/clothing/head/space,
-/obj/item/clothing/head/syndicatefake,
 /obj/item/clothing/head/taqiyahred,
 /obj/item/clothing/head/taqiyahwhite,
 /obj/item/clothing/head/that,
@@ -7386,8 +7267,7 @@
 /obj/item/clothing/mask/cigarette,
 /obj/item/clothing/mask/cowmask,
 /obj/item/clothing/head/hardhat/atmos,
-/obj/item/clothing/head/helmet,
-/obj/item/clothing/head/helmet/sec,
+/obj/item/clothing/head/helmet/m10,
 /obj/item/clothing/head/helmet/bulletproof,
 /obj/item/clothing/head/helmet/gezena,
 /obj/item/clothing/head/helmet/old,
@@ -7398,7 +7278,6 @@
 /obj/item/clothing/head/helmet/swat,
 /obj/item/clothing/head/helmet/police,
 /obj/item/clothing/head/helmet/constable,
-/obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/clothing/head/helmet/thunderdome,
 /obj/item/clothing/head/helmet/roman,
 /obj/item/clothing/head/helmet/roman/fake,
@@ -7415,8 +7294,8 @@
 /obj/item/clothing/head/helmet/skull,
 /obj/item/clothing/head/helmet/durathread,
 /obj/item/clothing/head/helmet/infiltrator,
-/obj/item/clothing/head/helmet/swat/inteq,
-/obj/item/clothing/head/helmet/inteq,
+/obj/item/clothing/head/helmet/swat,
+/obj/item/clothing/head/helmet/m10/inteq,
 /obj/item/clothing/head/helmet/space/plasmaman/solgov,
 /obj/item/clothing/head/helmet/medical,
 /obj/item/clothing/head/helmet/bulletproof/m10,
@@ -7931,7 +7810,7 @@
 /obj/machinery/computer/telecomms/monitor/retro,
 /obj/machinery/computer/telecomms/monitor/solgov,
 /obj/machinery/telecomms/allinone,
-/obj/machinery/telecomms/allinone/indestructable,
+/obj/machinery/telecomms/allinone/indestructible,
 /obj/machinery/telecomms/broadcaster,
 /obj/machinery/telecomms/broadcaster/preset_left,
 /obj/machinery/telecomms/broadcaster/preset_right,
@@ -8295,7 +8174,6 @@
 /obj/machinery/computer/cargo/solgov,
 /obj/machinery/ltsrbt,
 /obj/machinery/anomalous_crystal,
-/obj/machinery/grill/unwrenched,
 /obj/machinery/shieldgen,
 /obj/machinery/power/shieldwallgen,
 /obj/machinery/drill,
@@ -8316,9 +8194,7 @@
 /obj/machinery/food_cart,
 /obj/machinery/gibber,
 /obj/machinery/gibber/autogibber,
-/obj/machinery/grill,
-/obj/machinery/grill/unwrenched,
-/obj/machinery/grill/cat,
+/obj/machinery/griddle,
 /obj/machinery/icecream_vat,
 /obj/machinery/microwave,
 /obj/machinery/smartfridge,
@@ -8382,7 +8258,6 @@
 /obj/machinery/holopad/emergency/janitor,
 /obj/machinery/holopad/emergency/security,
 /obj/machinery/holopad/emergency/cargo,
-/obj/machinery/holopad/emergency/clown,
 /obj/machinery/holopad/emergency/detective,
 /obj/machinery/holopad/emergency/curator,
 /obj/machinery/holopad/emergency/buddy,
@@ -8405,7 +8280,6 @@
 /obj/machinery/bot_core/secbot,
 /obj/machinery/smartfridge/black_box,
 /obj/machinery/anomalous_crystal,
-/obj/machinery/anomalous_crystal/honk,
 /obj/machinery/anomalous_crystal/emitter,
 /obj/machinery/anomalous_crystal/dark_reprise,
 /obj/machinery/anomalous_crystal/helpers,
@@ -9577,7 +9451,6 @@
 /obj/structure/bed/abductor,
 /obj/structure/table_frame/abductor,
 /obj/structure/table/abductor,
-/obj/structure/table/optable/abductor,
 /obj/structure/closet/abductor,
 /obj/structure/door_assembly/door_assembly_abductor,
 /obj/structure/pitgrate,
@@ -9596,8 +9469,8 @@
 /obj/structure/academy_wizard_spawner,
 /obj/structure/ladder/unbreakable/rune,
 /obj/structure/firepit,
-/obj/structure/window/reinforced/fulltile/indestructable,
-/obj/structure/grille/indestructable,
+/obj/structure/window/reinforced/fulltile/indestructible,
+/obj/structure/grille/indestructible,
 /obj/structure/barricade/security/murderdome,
 /obj/structure/barricade/wooden/snowed,
 /obj/structure/flora/rock/icy,
@@ -9653,8 +9526,8 @@
 /obj/structure/vein/ice/classtwo,
 /obj/structure/vein/ice/classthree,
 /obj/structure/vein/asteroid,
-/obj/structure/vein/classtwo/asteroid,
-/obj/structure/vein/classthree/asteroid,
+/obj/structure/vein/asteroid/classtwo,
+/obj/structure/vein/asteroid/classthree,
 /obj/structure/ore_box,
 /obj/structure/marker_beacon,
 /obj/structure/window/reinforced/fulltile/shuttle/survival_pod,
@@ -9839,8 +9712,6 @@
 /obj/structure/stone_tile/center/burnt,
 /obj/structure/stone_tile/surrounding/burnt,
 /obj/structure/stone_tile/surrounding_tile/burnt,
-/obj/structure/cursed_slot_machine,
-/obj/structure/cursed_money,
 /obj/structure/mirror/magic/pride,
 /obj/structure/fluff/oldturret,
 /obj/structure/spider/spiderling,
@@ -9853,7 +9724,7 @@
 /obj/structure/filler,
 /obj/structure/carp_rift,
 /obj/vehicle,
-/obj/vehicle/ridden/atv,
+/obj/effect/decal/cleanable/oil/slippery,
 /obj/vehicle/ridden/bicycle,
 /obj/vehicle/ridden/lavaboat,
 /obj/vehicle/ridden/lavaboat/dragon,
@@ -9888,7 +9759,6 @@
 /mob/living/simple_animal/revenant,
 /mob/living/simple_animal/slaughter,
 /mob/living/simple_animal/slaughter/laughter,
-/mob/living/simple_animal/chicken/rabbit/normal,
 /mob/living/simple_animal/pet/gondola/gondolapod,
 /mob/living/simple_animal/hostile/retaliate/poison/snake,
 /mob/living/simple_animal/hostile/retaliate/poison/snake,
@@ -9898,7 +9768,7 @@
 /mob/living/simple_animal/sloth,
 /mob/living/simple_animal/hostile/retaliate/goat,
 /mob/living/simple_animal/chicken,
-/mob/living/simple_animal/cow,
+/mob/living/basic/cow,
 /mob/living/simple_animal/hostile/carp/cayenne,
 /mob/living/simple_animal/butterfly,
 /mob/living/simple_animal/hostile/retaliate/poison/snake,
@@ -9906,7 +9776,6 @@
 /mob/living/simple_animal/bot/mulebot,
 /mob/living/simple_animal/bot/secbot/beepsky,
 /mob/living/simple_animal/chicken/rabbit,
-/mob/living/simple_animal/chicken/rabbit/space,
 /mob/living/simple_animal/hostile/mining_drone,
 /mob/living/simple_animal/hostile/mining_drone/rockplanet,
 /mob/living,
@@ -9942,7 +9811,6 @@
 /mob/living/simple_animal/hologram/atmos,
 /mob/living/simple_animal/hologram/janitor,
 /mob/living/simple_animal/hologram/cargo,
-/mob/living/simple_animal/hologram/clown,
 /mob/living/simple_animal/hologram/detective,
 /mob/living/simple_animal/hologram/curator,
 /mob/living/simple_animal/hologram/assistant,
@@ -10060,8 +9928,8 @@
 /mob/living/simple_animal/pet/dog/corgi/puppy/void,
 /mob/living/simple_animal/pet/dog/corgi/Lisa,
 /mob/living/simple_animal/hostile/retaliate/goat,
-/mob/living/simple_animal/cow,
-/mob/living/simple_animal/cow/wisdom,
+/mob/living/basic/cow,
+/mob/living/basic/cow,
 /mob/living/simple_animal/chick,
 /mob/living/simple_animal/chicken,
 /mob/living/simple_animal/hostile/retaliate/chicken,
@@ -10102,12 +9970,11 @@
 /mob/living/simple_animal/hostile/alien/queen,
 /mob/living/simple_animal/hostile/alien/queen/large,
 /mob/living/simple_animal/hostile/alien/maid,
-/mob/living/simple_animal/hostile/bear,
-/mob/living/simple_animal/hostile/bear/Hudson,
-/mob/living/simple_animal/hostile/bear/snow,
-/mob/living/simple_animal/hostile/bear/frontier,
-/mob/living/simple_animal/hostile/bear/cave,
-/mob/living/simple_animal/hostile/bear/butter,
+/mob/living/basic/bear,
+/mob/living/basic/bear/hudson,
+/mob/living/basic/bear/polar,
+/mob/living/basic/bear/frontier,
+/mob/living/basic/bear/cave,
 /mob/living/simple_animal/hostile/poison/bees,
 /mob/living/simple_animal/hostile/poison/bees/queen,
 /mob/living/simple_animal/hostile/poison/bees/short,
@@ -10136,18 +10003,14 @@
 /mob/living/simple_animal/hostile/retaliate/goose,
 /mob/living/simple_animal/hostile/retaliate/goose/vomit,
 /mob/living/simple_animal/hostile/headcrab,
-/mob/living/simple_animal/hostile/hivebot,
-/mob/living/simple_animal/hostile/hivebot/range,
-/mob/living/simple_animal/hostile/hivebot/range/rockplanet,
-/mob/living/simple_animal/hostile/hivebot/rapid,
-/mob/living/simple_animal/hostile/hivebot/rapid/rockplanet,
-/mob/living/simple_animal/hostile/hivebot/strong,
-/mob/living/simple_animal/hostile/hivebot/strong,
-/mob/living/simple_animal/hostile/hivebot/mechanic,
-/mob/living/simple_animal/hostile/hivebot/wasteplanet,
-/mob/living/simple_animal/hostile/hivebot/wasteplanet/ranged,
-/mob/living/simple_animal/hostile/hivebot/wasteplanet/ranged/rapid,
-/mob/living/simple_animal/hostile/hivebot/wasteplanet/strong,
+/mob/living/basic/hivebot,
+/mob/living/basic/hivebot/ranged,
+/mob/living/basic/hivebot/ranged/rockplanet,
+/mob/living/basic/hivebot/rapid,
+/mob/living/basic/hivebot/rapid/rockplanet,
+/mob/living/basic/hivebot/strong,
+/mob/living/basic/hivebot/strong,
+/mob/living/basic/hivebot/mechanic,
 /mob/living/simple_animal/hostile,
 /mob/living/simple_animal/hostile/illusion,
 /mob/living/simple_animal/hostile/illusion/escape,
@@ -10322,9 +10185,6 @@
 /mob/living/simple_animal/hostile/asteroid/lobstrosity,
 /mob/living/simple_animal/hostile/asteroid/lobstrosity/beach,
 /mob/living/simple_animal/hostile/asteroid,
-/mob/living/simple_animal/hostile/asteroid/polarbear,
-/mob/living/simple_animal/hostile/asteroid/polarbear/lesser,
-/mob/living/simple_animal/hostile/asteroid/polarbear/warrior,
 /mob/living/simple_animal/hostile/asteroid/wolf,
 /mob/living/simple_animal/hostile/asteroid/wolf/alpha,
 /mob/living/simple_animal/hostile/asteroid/elite,
@@ -10353,7 +10213,7 @@
 /mob/living/simple_animal/slime,
 /mob/living/simple_animal/slime/pet,
 /mob/living/simple_animal/hostile/asteroid/wolf,
-/mob/living/simple_animal/hostile/asteroid/polarbear,
+/mob/living/basic/bear/polar,
 /mob/living/simple_animal/hostile/asteroid/wolf/random,
 /mob/living/simple_animal/hostile/retaliate/bat,
 /mob/living/simple_animal/hostile/retaliate/poison/snake,
@@ -10413,9 +10273,6 @@
 /area/ruin/jungle/cavecrew/cargo)
 "qM" = (
 /turf/open/floor/plasteel/kitchen_coldroom/freezerfloor/freezer_grey,
-/area/space)
-"qO" = (
-/turf/open/floor/plating/dirt,
 /area/space)
 "qR" = (
 /turf/open/space/basic,
@@ -10532,7 +10389,7 @@
 /turf/open/floor/marble,
 /area/space)
 "st" = (
-/turf/open/floor/plating/grass/rockplanet,
+/turf/open/floor/plating/asteroid/dirt/grass/rockplanet,
 /area/space)
 "sw" = (
 /turf/open/space/basic,
@@ -10654,9 +10511,6 @@
 "ul" = (
 /turf/open/space/basic,
 /area/outpost/medical/morgue)
-"un" = (
-/turf/open/floor/plating/dirt/old,
-/area/space)
 "up" = (
 /turf/open/floor/plasteel/patterned/ridged/rockplanet/lit,
 /area/space)
@@ -10728,9 +10582,6 @@
 /area/space)
 "vc" = (
 /turf/open/floor/circuit/red/telecomms,
-/area/space)
-"vi" = (
-/turf/open/floor/plating/grass/lava/purple,
 /area/space)
 "vm" = (
 /turf/open/space/basic,
@@ -10966,7 +10817,7 @@
 /turf/open/space/basic,
 /area/ship/maintenance)
 "yR" = (
-/turf/open/floor/plating/grass/wasteplanet,
+/turf/open/floor/plating/asteroid/wasteplanet/lit,
 /area/space)
 "yS" = (
 /turf/open/space/basic,
@@ -11297,7 +11148,7 @@
 /turf/open/space/basic,
 /area/ship/science)
 "Ey" = (
-/turf/open/floor/plating/dirt/jungle,
+/turf/open/floor/plating/asteroid/dirt/jungle,
 /area/space)
 "Ez" = (
 /turf/open/space/basic,
@@ -11408,9 +11259,6 @@
 "Gc" = (
 /turf/open/space/basic,
 /area/ruin/wasteplanet/wasteplanet_radiation/main)
-"Ge" = (
-/turf/open/floor/plating/dirt/dark,
-/area/space)
 "Gl" = (
 /turf/closed/indestructible/fakedoor,
 /area/space)
@@ -11441,9 +11289,6 @@
 "GK" = (
 /turf/open/space/basic,
 /area/ruin/space/has_grav/onehalf)
-"GR" = (
-/turf/open/floor/plating/grass/lavaland,
-/area/space)
 "GW" = (
 /turf/open/floor/plasteel/stairs/stairs_pack/left_green,
 /area/space)
@@ -11499,7 +11344,7 @@
 /turf/open/floor/mineral/plastitanium/airless,
 /area/space)
 "HT" = (
-/turf/open/floor/plating/dirt/jungle/wasteland,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
 /area/space)
 "HX" = (
 /turf/open/space/basic,
@@ -11650,7 +11495,7 @@
 /turf/open/space/basic,
 /area/ruin/space/has_grav/singularitylab)
 "JP" = (
-/turf/open/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/smoothed/airless,
 /area/space)
 "JQ" = (
 /turf/open/space/basic,
@@ -11665,7 +11510,7 @@
 /turf/open/space/basic,
 /area/ship/maintenance/aft)
 "Kb" = (
-/turf/open/floor/plating/grass/jungle,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/space)
 "Kc" = (
 /turf/closed/wall/r_wall/rust/wasteplanet,
@@ -12193,7 +12038,7 @@
 /turf/open/floor/plasteel/stairs/old,
 /area/space)
 "RG" = (
-/turf/open/floor/plating/dirt/jungle/dark,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
 /area/space)
 "RK" = (
 /turf/open/floor/concrete/wasteplanet/lit,
@@ -12217,7 +12062,7 @@
 /turf/open/space/basic,
 /area/ship/cargo/office)
 "RY" = (
-/turf/open/floor/plating/grass,
+/turf/open/floor/plating/asteroid/dirt/grass,
 /area/space)
 "Sb" = (
 /turf/open/floor/mineral/plastitanium/red,
@@ -12838,7 +12683,6 @@
 /obj/effect/hierophant,
 /obj/effect/hotspot,
 /obj/effect/immortality_talisman,
-/obj/effect/immovablerod,
 /obj/effect/landmark,
 /obj/effect/landmark/abductor,
 /obj/effect/landmark/ai_multicam_room,
@@ -12974,9 +12818,9 @@
 /obj/effect/mob_spawn/human/corpse/damaged/legioninfested,
 /obj/effect/mob_spawn/human/corpse/damaged/whitesands,
 /obj/effect/mob_spawn/human/corpse/damaged/legioninfested/dwarf,
-/obj/effect/mob_spawn/human/corpse/damaged/whitesands/gunslinger,
-/obj/effect/mob_spawn/human/corpse/damaged/whitesands/hunter,
-/obj/effect/mob_spawn/human/corpse/damaged/whitesands/survivor,
+/obj/effect/mob_spawn/human/corpse/damaged/whitesands,
+/obj/effect/mob_spawn/human/corpse/damaged/whitesands,
+/obj/effect/mob_spawn/human/corpse/damaged/whitesands,
 /obj/effect/mob_spawn/human/corpse/assistant/beesease_infection,
 /obj/effect/mob_spawn/human/corpse/assistant/brainrot_infection,
 /obj/effect/mob_spawn/human/corpse/assistant/husked,
@@ -13148,7 +12992,7 @@
 /obj/effect/spawner/structure/window/shuttle,
 /obj/effect/spawner/structure/window/survival_pod,
 /obj/effect/spawner/structure/window/shuttle/gold,
-/obj/effect/spawner/structure/window/reinforced/indestructable,
+/obj/effect/spawner/structure/window/reinforced/indestructible,
 /obj/effect/spawner/structure/window/reinforced/shutters,
 /obj/effect/spawner/structure/window/reinforced/tinted,
 /obj/effect/spawner/structure/window/plasma/reinforced,
@@ -13216,7 +13060,7 @@
 /obj/effect/turf_decal/syndicateemblem,
 /obj/effect/turf_decal/techfloor,
 /obj/effect/turf_decal/trimline,
-/obj/effect/turf_decal/weather,
+/obj/effect/turf_decal/sand,
 /obj/effect/turf_decal/zoo,
 /obj/effect/warp_cube,
 /obj/effect/wind,
@@ -13231,7 +13075,6 @@
 /obj/structure/chrono_field,
 /obj/structure/etherealball,
 /obj/structure/holobox,
-/obj/structure/anomaly,
 /obj/structure/projected_forcefield,
 /obj/structure/closet/cardboard/agent,
 /obj/structure/AIcore,
@@ -13486,7 +13329,6 @@
 /obj/structure/lattice,
 /obj/structure/lattice/catwalk,
 /obj/structure/lattice/lava,
-/obj/structure/life_candle,
 /obj/structure/loom,
 /obj/structure/fluff/arc,
 /obj/structure/mineral_door,
@@ -13651,15 +13493,9 @@
 "XQ" = (
 /turf/closed/mineral/gibtonite/rockplanet,
 /area/space)
-"XR" = (
-/turf/closed/mineral/gibtonite/rockplanet,
-/area/space)
 "XS" = (
 /turf/open/space/basic,
 /area/ruin/space/has_grav/astraeus/custodial)
-"XU" = (
-/turf/open/floor/plating/grass/lava/orange,
-/area/space)
 "XY" = (
 /turf/open/space/basic,
 /area/overmap_encounter)
@@ -14498,7 +14334,7 @@ df
 KG
 WK
 nq
-Ge
+cQ
 gG
 wN
 mM
@@ -14550,7 +14386,7 @@ nR
 kX
 cX
 ZW
-qO
+cQ
 yz
 pk
 Xx
@@ -14602,7 +14438,7 @@ HC
 gO
 cC
 ri
-or
+cQ
 Jd
 Sr
 SQ
@@ -14862,12 +14698,12 @@ fO
 NC
 Uw
 kD
-un
+cQ
 rv
 Iy
 Ya
 Cs
-nu
+sh
 eQ
 PE
 qM
@@ -15174,7 +15010,7 @@ xJ
 cx
 TO
 oK
-cP
+cM
 vD
 GW
 rh
@@ -15226,7 +15062,7 @@ TL
 Vt
 hs
 WA
-XU
+cM
 aw
 DW
 rh
@@ -15278,12 +15114,12 @@ YG
 Ev
 Ab
 LK
-vi
+cM
 RP
 mV
 rh
 ZH
-ob
+Rn
 NT
 og
 vb
@@ -15382,7 +15218,7 @@ hD
 ds
 pt
 UB
-GR
+cM
 NW
 rN
 rh
@@ -15426,7 +15262,7 @@ rh
 rh
 rh
 rh
-XR
+XQ
 KN
 ib
 Om

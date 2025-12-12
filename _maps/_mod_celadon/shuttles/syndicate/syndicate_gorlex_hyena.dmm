@@ -200,15 +200,15 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "dA" = (
-/obj/item/reagent_containers/food/snacks/canned/beans{
+/obj/item/food/canned/beans{
 	pixel_x = -5;
 	pixel_y = 3
 	},
-/obj/item/reagent_containers/food/snacks/canned/beans{
+/obj/item/food/canned/beans{
 	pixel_x = 2;
 	pixel_y = 3
 	},
-/obj/item/reagent_containers/food/snacks/canned/beans{
+/obj/item/food/canned/beans{
 	pixel_x = -2
 	},
 /obj/item/reagent_containers/food/drinks/waterbottle/large{
@@ -459,9 +459,9 @@
 "iL" = (
 /obj/effect/turf_decal/industrial/outline,
 /obj/machinery/light/small/directional/west,
-/obj/item/clothing/suit/space/syndicate/black/orange,
+/obj/item/clothing/suit/space/syndicate/engie,
 /obj/item/clothing/mask/gas/syndicate,
-/obj/item/clothing/head/helmet/space/syndicate/black/orange,
+/obj/item/clothing/head/helmet/space/syndicate/engie,
 /obj/item/tank/jetpack/carbondioxide,
 /obj/machinery/suit_storage_unit/inherit/industrial{
 	req_one_access = list(48,56)
@@ -608,8 +608,8 @@
 /obj/structure/closet/crate/freezer,
 /obj/machinery/airalarm/directional/west,
 /obj/machinery/light/directional/north,
-/obj/item/reagent_containers/blood/universal,
-/obj/item/reagent_containers/blood/universal,
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OMinus,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "lt" = (
@@ -1352,7 +1352,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/corner/transparent/bar,
-/obj/item/reagent_containers/food/snacks/syndicake,
+/obj/item/food/syndicake,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/plasteel,
@@ -1941,12 +1941,10 @@
 /obj/item/paper_bin/carbon,
 /obj/item/folder/documents/syndicate/red,
 /obj/item/pen/fountain/captain,
-/obj/item/stamp/hos{
-	name = "captain's rubber stamp"
-	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
 	},
+/obj/item/stamp/syndicate/captain,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "Ge" = (
@@ -2640,8 +2638,8 @@
 /obj/machinery/suit_storage_unit/inherit/industrial{
 	req_access = list(11)
 	},
-/obj/item/clothing/suit/space/syndicate/black/engie,
-/obj/item/clothing/head/helmet/space/syndicate/black/engie,
+/obj/item/clothing/suit/space/syndicate/engie,
+/obj/item/clothing/head/helmet/space/syndicate/engie,
 /obj/item/clothing/mask/breath,
 /obj/item/tank/jetpack/carbondioxide,
 /turf/open/floor/plasteel/tech/grid,
@@ -2980,12 +2978,12 @@
 /obj/effect/turf_decal/industrial/outline,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/clothing/suit/space/syndicate/black/orange,
+/obj/item/clothing/suit/space/syndicate/engie,
 /obj/machinery/suit_storage_unit/inherit/industrial{
 	req_one_access = list(48,56)
 	},
 /obj/item/clothing/mask/gas/syndicate,
-/obj/item/clothing/head/helmet/space/syndicate/black/orange,
+/obj/item/clothing/head/helmet/space/syndicate/engie,
 /obj/item/tank/jetpack/carbondioxide,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/storage)

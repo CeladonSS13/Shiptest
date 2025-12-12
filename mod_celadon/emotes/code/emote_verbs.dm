@@ -29,7 +29,7 @@ var/timer = 20
 /mob/living/carbon/human/proc/emote_mothchitter()
 	set name = "> " + EMOTE_SPECIES_CHITTER + " ►"
 	set category = "Эмоции"
-	emote_with_delay("mothchitter", timer)
+	emote_with_delay("chitter", timer)
 
 /mob/living/carbon/human/proc/emote_flap()
 	set name = "> " + EMOTE_SPECIES_FLAP + " ►"
@@ -219,7 +219,22 @@ var/timer = 20
 /mob/living/carbon/human/proc/emote_clack_spider() // Spider
 	set name = "> " + EMOTE_SPECIES_CLACK_SPIDER + " ►"
 	set category = "Эмоции"
-	emote_with_delay("clackspider", timer)
+	emote_with_delay("clack", timer)
+
+/mob/living/carbon/human/proc/emote_tailthump()
+	set name = "> " + EMOTE_SPECIES_TAILTHUMP + " ►"
+	set category = "Эмоции"
+	emote_with_delay("thump", timer)
+
+/mob/living/carbon/human/proc/emote_kepiclick()
+	set name = "> " + EMOTE_SPECIES_KEPICLICK + " ►"
+	set category = "Эмоции"
+	emote_with_delay("click", timer)
+
+/mob/living/carbon/human/proc/emote_kepiwhistle()
+	set name = "> " + EMOTE_SPECIES_KEPIWHISTLE + " ►"
+	set category = "Эмоции"
+	emote_with_delay("whistle", timer)
 
 /////////////////////////// ЗВУКОВЫЕ ЭМОУТЫ ///////////////////////////
 

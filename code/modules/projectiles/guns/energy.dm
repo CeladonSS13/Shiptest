@@ -5,6 +5,8 @@
 	icon_state = "laser"
 	item_state = "spur"
 
+	bad_type = /obj/item/gun/energy
+
 	muzzleflash_iconstate = "muzzle_flash_laser"
 	light_color = COLOR_SOFT_RED
 
@@ -19,6 +21,9 @@
 
 	fire_select_icon_state_prefix = "laser_"
 
+	///Ammotype index -- this is the currently selected ammo type
+	var/ammotype_index
+
 	default_ammo_type = /obj/item/stock_parts/cell/gun
 	allowed_ammo_types = list(
 		/obj/item/stock_parts/cell/gun,
@@ -30,13 +35,13 @@
 	tac_reloads = FALSE
 	tactical_reload_delay = 1.2 SECONDS
 	var/latch_closed = TRUE
-	var/latch_toggle_delay = 1.0 SECONDS
+	var/latch_toggle_delay = 0.6 SECONDS
+
 	valid_attachments = list(
 		/obj/item/attachment/laser_sight,
 		/obj/item/attachment/rail_light,
 		/obj/item/attachment/bayonet,
 		/obj/item/attachment/gun,
-		/obj/item/attachment/sling,
 	)
 	slot_available = list(
 		ATTACHMENT_SLOT_RAIL = 1,
@@ -80,6 +85,7 @@
 
 	if(default_ammo_type)
 		cell = new default_ammo_type(src, spawn_no_ammo)
+	build_ammotypes()
 	update_ammo_types()
 	recharge_newshot(TRUE)
 	if(selfcharge)
@@ -130,11 +136,6 @@
 		eject_cell(user)
 		return
 	return ..()
-
-/obj/item/gun/energy/unique_action(mob/living/user)
-	if(ammo_type.len > 1)
-		select_fire(user)
-		update_appearance()
 
 /obj/item/gun/energy/attackby(obj/item/A, mob/user, params)
 	if(..())
@@ -216,6 +217,29 @@
 // 			return TRUE
 // 	return FALSE
 
+// /obj/item/gun/energy/unique_action(mob/living/user)
+// 	if(..())
+// 		return
+// 	if(!internal_magazine && latch_closed)
+// 		to_chat(user, span_notice("You start to unlatch the [src]'s power cell retainment clip..."))
+// 		if(do_after(user, latch_toggle_delay, src, IGNORE_USER_LOC_CHANGE))
+// 			to_chat(user, span_notice("You unlatch the [src]'s power cell retainment clip " + span_red("OPEN") + "."))
+// 			playsound(src, 'sound/items/taperecorder/taperecorder_play.ogg', 50, FALSE)
+// 			tac_reloads = TRUE
+// 			latch_closed = FALSE
+// 			update_appearance()
+// 	else if(!internal_magazine && !latch_closed)
+// 		// if(!cell && is_attachment_in_contents_list())
+// 		// 	return ..() //should bring up the attachment menu if attachments are added. If none are added, it just does leaves the latch open
+// 		to_chat(user, span_warning("You start to latch the [src]'s power cell retainment clip..."))
+// 		if (do_after(user, latch_toggle_delay, src, IGNORE_USER_LOC_CHANGE))
+// 			to_chat(user, span_notice("You latch the [src]'s power cell retainment clip " + span_green("CLOSED") + "."))
+// 			playsound(src, 'sound/items/taperecorder/taperecorder_close.ogg', 50, FALSE)
+// 			tac_reloads = FALSE
+// 			latch_closed = TRUE
+// 			update_appearance()
+// 	return
+
 // /obj/item/gun/energy/AltClick(mob/living/user)
 // 	if(..())
 // 		return
@@ -289,6 +313,54 @@
 	return ..()
 // [/CELADON-EDIT]
 
+/obj/item/gun/energy/proc/build_ammotypes()
+	for(var/datum/action/item_action/toggle_ammotype/old_ammotype in actions)
+		old_ammotype.Destroy()
+	var/datum/action/item_action/our_action
+
+	if(ammo_type.len > 1)
+		our_action = new /datum/action/item_action/toggle_ammotype(src)
+
+		for(var/i=1, i <= ammo_type.len, i++)
+			if(default_ammo_type == ammo_type[i])
+				ammotype_index = i
+				if(our_action)
+					our_action.UpdateButtonIcon()
+				return
+		ammotype_index = 1
+
+/obj/item/gun/energy/ui_action_click(mob/user, actiontype)
+	if (istype(actiontype, /datum/action/item_action/toggle_ammotype))
+		select_fire(user)
+		update_appearance()
+	else
+		..()
+
+/datum/action/item_action/toggle_ammotype/UpdateButtonIcon(status_only = FALSE, force = FALSE)
+	var/obj/item/gun/energy/our_gun = target
+	var/obj/item/ammo_casing/energy/shot = our_gun.ammo_type[our_gun.select]
+	var/current_ammotype = shot.select_name
+
+	var/manufacturer_prefix = "fallback"
+	if (our_gun.manufacturer == MANUFACTURER_EOEHOMA)
+		manufacturer_prefix = "eoehoma"
+	else if (our_gun.manufacturer == MANUFACTURER_SHARPLITE_NEW)
+		manufacturer_prefix = "sharplite"
+	else if (our_gun.manufacturer == MANUFACTURER_PGF)
+		manufacturer_prefix = "etherbor"
+	else
+		current_ammotype = "fallback"
+
+	current_ammotype = lowertext(current_ammotype)
+
+	// A list of all ammotypes that have icons for them
+	if (!(current_ammotype in list("kill", "disable", "overcharge", "stun", "ion", "energy", "ar", "dmr")))
+		current_ammotype = "fallback"
+
+	button_icon_state = "[manufacturer_prefix]["_laser_"][current_ammotype]"
+
+	return ..()
+
 /obj/item/gun/energy/proc/select_fire(mob/living/user)
 	select++
 	if (select > ammo_type.len)
@@ -305,6 +377,10 @@
 	return
 
 /obj/item/gun/energy/update_icon_state()
+// [CELADON-ADD] - FIX_HADES_MOB_OVERLAY_STATE
+	var/skip_inhand = initial(item_state) //only build if we aren't using a preset inhand icon
+	var/skip_worn_icon = initial(mob_overlay_state) //only build if we aren't using a preset worn icon
+// [/CELADON-ADD]
 	if(initial(item_state))
 		return ..()
 	var/ratio = get_charge_ratio()
@@ -314,7 +390,13 @@
 		var/obj/item/ammo_casing/energy/shot = ammo_type[select]
 		new_item_state += "[shot.select_name]"
 	new_item_state += "[ratio]"
-	item_state = new_item_state
+// [CELADON-EDIT] - FIX_HADES_MOB_OVERLAY_STATE
+//	item_state = new_item_state // CELADON-EDIT - ORIGINAL
+	if(!skip_inhand)
+		item_state = new_item_state
+	if(!skip_worn_icon)
+		mob_overlay_state = new_item_state
+// [/CELADON-EDIT]
 	return ..()
 
 /obj/item/gun/energy/update_overlays()
@@ -414,11 +496,11 @@
 	. = ..()
 // [CELADON-REMOVE] - CELADON BALANCE - часть плохой системы оффов
 // 	if(!internal_magazine)
-// 		. += "The cell retainment latch is [latch_closed ? span_green("CLOSED") : span_red("OPEN")]. Alt-Click to toggle the latch."
+// 		. += "The cell retainment latch is [latch_closed ? span_green("CLOSED") : span_red("OPEN")]. Press the Unique Action Key to toggle the latch. By default, this is <b>space</b>."
 // [CELADON-REMOVE]
 	var/obj/item/ammo_casing/energy/shot = ammo_type[select]
 	if(ammo_type.len > 1)
-		. += "You can switch firemodes by pressing the <b>unique action</b> key. By default, this is <b>space</b>"
+		. += "You can switch ammo modes by pressing the <b>Ammo Toggle</b> button."
 	if(cell)
 		. += "\The [name]'s cell has [cell.percent()]% charge remaining."
 		. += "\The [name] has [round(cell.charge/shot.e_cost)] shots remaining on <b>[shot.select_name]</b> mode."
@@ -426,5 +508,9 @@
 		. += span_notice("\The [name] doesn't seem to have a cell!")
 
 /obj/item/gun/energy/unsafe_shot(target)
+	// [CELADON-ADD] - FIXES_LOCKER_RECHARGE_ENERGYGUN
+	if(!can_shoot())
+		return
+	// [/CELADON-ADD]
 	. = ..()
 	process_chamber()

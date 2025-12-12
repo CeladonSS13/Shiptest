@@ -4,9 +4,12 @@
 	see_in_dark = 2
 	hud_possible = list(HEALTH_HUD,STATUS_HUD,ANTAG_HUD,NANITE_HUD,DIAG_NANITE_FULL_HUD)
 	pressure_resistance = 10
+	plane = GAME_PLANE_FOV_HIDDEN
 	flags_1 = SHOW_BEHIND_LARGE_ICONS_1
 
 	hud_type = /datum/hud/living
+
+	bad_type = /mob/living
 
 	var/resize = 1 ///Badminnery resize
 	var/lastattacker = null
@@ -80,8 +83,9 @@
 
 	var/tod = null /// Time of death
 
-	var/on_fire = 0 ///The "Are we on fire?" var
-	var/fire_stacks = 0 ///Tracks how many stacks of fire we have on, max is usually 20
+	/// Helper vars for quick access to firestacks, these should be updated every time firestacks are adjusted
+	var/on_fire = FALSE
+	var/fire_stacks = 0
 
 	var/holder = null //The holder for blood crawling
 	var/ventcrawler = 0 //0 No vent crawling, 1 vent crawling in the nude, 2 vent crawling always
@@ -123,8 +127,6 @@
 	var/list/butcher_results = null ///these will be yielded from butchering with a probability chance equal to the butcher item's effectiveness
 	var/list/guaranteed_butcher_results = null ///these will always be yielded from butchering
 	var/butcher_difficulty = 0 ///effectiveness prob. is modified negatively by this amount; positive numbers make it more difficult, negative ones make it easier
-
-	var/hellbound = 0 ///People who've signed infernal contracts are unrevivable.
 
 	var/list/weather_immunities = list()
 
@@ -185,6 +187,18 @@
 	var/body_pixel_x_offset = 0
 	///Default Y offset
 	var/body_pixel_y_offset = 0
+
+	/// FOV view that is applied from either nativeness or traits
+	var/fov_view
+	/// Native FOV that will be applied if a config is enabled
+	var/native_fov = FOV_90_DEGREES
+	/// Lazy list of FOV traits that will apply a FOV view when handled.
+	var/list/fov_traits
+
+	///how much recoil do we experience when shooting. Ideally some.
+	var/recoil_effect = 1 //i hate guncode
+	///how much recoil do we experience from being shot. Ideally some.
+	var/impact_effect = 1
 
 	/// World time of the last time this mob heard a radio crackle, to reduce spamminess.
 	COOLDOWN_DECLARE(radio_crackle_cooldown)

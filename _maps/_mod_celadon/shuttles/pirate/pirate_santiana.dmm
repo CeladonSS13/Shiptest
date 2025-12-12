@@ -74,6 +74,7 @@
 /obj/item/chameleon,
 /obj/item/storage/box/syndie_kit/chameleon,
 /obj/item/desynchronizer/tvstatic,
+/obj/item/clothing/head/helmet/bulletproof/x11/nanotrasen,
 /turf/open/floor/plasteel/mono,
 /area/ship/security/armory)
 "ak" = (
@@ -352,12 +353,12 @@
 	pixel_x = -23;
 	pixel_y = -8
 	},
-/obj/item/reagent_containers/food/snacks/meat/slab/human,
-/obj/item/reagent_containers/food/snacks/meat/slab/human{
+/obj/item/food/meat/slab/human,
+/obj/item/food/meat/slab/human{
 	pixel_x = -5;
 	pixel_y = -2
 	},
-/obj/item/reagent_containers/food/snacks/meat/slab/human{
+/obj/item/food/meat/slab/human{
 	pixel_x = 1;
 	pixel_y = -7
 	},
@@ -422,7 +423,7 @@
 	desc = "Produced personally be CHUVAK TM. Ultra-spicy";
 	name = "CHUVAK TM Donk-pockets"
 	},
-/obj/item/reagent_containers/food/snacks/grown/tobacco,
+/obj/item/food/grown/tobacco,
 /obj/item/stack/telecrystal,
 /obj/item/clothing/head/beret/durathread,
 /obj/item/clothing/head/frontier/admiral,
@@ -457,10 +458,9 @@
 /obj/item/clothing/suit/armor/vest/alt,
 /obj/item/clothing/head/beret/mining,
 /obj/item/clothing/head/beret/black,
-/obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/clothing/head/helmet/infiltrator,
 /obj/item/clothing/gloves/tackler/rocket,
-/obj/item/gun/ballistic/automatic/pistol/commander,
+/obj/item/gun/ballistic/automatic/pistol/challenger,
 /obj/item/melee/knife/hunting,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/item/spacecash/bundle/c20,
@@ -472,6 +472,7 @@
 /obj/item/robot_module/meka,
 /obj/item/gun/ballistic/shotgun/doublebarrel,
 /obj/item/gun/ballistic/shotgun/doublebarrel,
+/obj/item/gun/energy/e_gun/e_old/adv_stopping,
 /turf/open/floor/plasteel/mono,
 /area/ship/security/armory)
 "aV" = (
@@ -1299,7 +1300,6 @@
 /obj/item/clothing/suit/armor/vest/elysium,
 /obj/item/clothing/suit/armor/vest/elysium,
 /obj/item/melee/baton/loaded,
-/obj/item/gun/energy/e_gun/adv_stopping,
 /turf/open/floor/plasteel/mono,
 /area/ship/security/armory)
 "cv" = (
@@ -2041,7 +2041,7 @@
 	icon_state = "0-2"
 	},
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/grown/tobacco{
+/obj/item/food/grown/tobacco{
 	pixel_x = 6;
 	pixel_y = 11
 	},
@@ -2452,7 +2452,7 @@
 	pixel_y = 8
 	},
 /obj/item/lighter,
-/obj/item/reagent_containers/food/snacks/grown/tobacco,
+/obj/item/food/grown/tobacco,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/spacecash/bundle/c50,
 /obj/structure/table/wood,

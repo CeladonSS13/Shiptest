@@ -1,4 +1,5 @@
 /obj/item/gun/ballistic/automatic/powered
+	bad_type = /obj/item/gun/ballistic/automatic/powered
 	default_ammo_type = /obj/item/ammo_box/magazine/gauss
 	allowed_ammo_types = list(
 		/obj/item/ammo_box/magazine/gauss,
@@ -21,7 +22,7 @@
 /obj/item/gun/ballistic/automatic/powered/examine(mob/user)
 	. = ..()
 	if(cell)
-		. += span_notice("[src]'s cell is [round(cell.charge / cell.maxcharge, 0.1) * 100]% full.")
+		. += "\The [name]'s cell has [cell.percent()]% charge remaining."
 	else
 		. += span_notice("[src] doesn't seem to have a cell!")
 
@@ -36,9 +37,9 @@
 		return FALSE
 	return ..()
 
-/obj/item/gun/ballistic/automatic/powered/shoot_live_shot(mob/living/user, pointblank = FALSE, mob/pbtarget, message = 1, stam_cost = 0)
+/obj/item/gun/ballistic/automatic/powered/before_firing(atom/target, mob/user)
 	var/obj/item/ammo_casing/caseless/gauss/shot = chambered
-	if(shot?.energy_cost)
+	if(shot.energy_cost)
 		cell.use(shot.energy_cost)
 	return ..()
 
@@ -53,6 +54,12 @@
 		var/obj/item/stock_parts/cell/gun/C = A
 		if (!cell)
 			insert_cell(user, C)
+		// [CELADON-ADD] - CELADON_QOL - Позволяет удобно заменить батарею другой батареей.
+		else
+			if (tac_reloads)
+				if(do_after(user, 3.5 SECONDS, src, hidden = TRUE))
+					eject_cell(user, C)
+		// [/CELADON-ADD]
 
 /obj/item/gun/ballistic/automatic/powered/proc/insert_cell(mob/user, obj/item/stock_parts/cell/gun/C)
 	if(user.transferItemToLoc(C, src))
@@ -74,11 +81,22 @@
 	old_cell.update_appearance()
 	to_chat(user, span_notice("You pull the cell out of \the [src]."))
 	update_appearance()
+	// [CELADON-ADD] - CELADON_QOL - Замена батереи рукой занимает 3.5 секунды, отвёрткой 1.5 секунды и чем лучше отвёртка - тем быстрее достанется батарея.
+	if(user)
+		if(tac_load && tac_reloads)
+			if(insert_cell(user, tac_load))
+				to_chat(user, span_notice("You perform a tactical reload on \the [src]."))
+			else
+				to_chat(user, span_warning("You dropped the old cell, but the new one doesn't fit. How embarassing."))
+		else
+			to_chat(user, span_warning("Your reload was interupted!"))
+			return
+	// [/CELADON-ADD]
 
 /obj/item/gun/ballistic/automatic/powered/screwdriver_act(mob/living/user, obj/item/I)
 	if(cell && !internal_cell)
 		to_chat(user, span_notice("You begin unscrewing and pulling out the cell..."))
-		if(I.use_tool(src, user, unscrewing_time, volume=100))
+		if(I.use_tool(src, user, 1.5 SECONDS, volume=100)) // [CELADON-EDIT] "unscrewing_time" заменено на "1.5 SECONDS".
 			to_chat(user, span_notice("You remove the power cell."))
 			eject_cell(user)
 	return ..()

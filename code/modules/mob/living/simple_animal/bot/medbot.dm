@@ -86,7 +86,7 @@
 	emagged = 2
 	remote_disabled = 1
 	locked = TRUE
-	faction = list("mining", "silicon" , "turret")
+	faction = list("mining", "silicon" , FACTION_TURRET)
 
 /mob/living/simple_animal/bot/medbot/derelict
 	name = "\improper Old Medibot"
@@ -172,22 +172,22 @@
 	dat += hack(user)
 	dat += showpai(user)
 	dat += "<TT><B>Medical Unit Controls v1.1</B></TT><BR><BR>"
-	dat += "Status: <A href='?src=[REF(src)];power=1'>[on ? "On" : "Off"]</A><BR>"
+	dat += "Status: <A href='byond://?src=[REF(src)];power=1'>[on ? "On" : "Off"]</A><BR>"
 	dat += "Maintenance panel panel is [open ? "opened" : "closed"]<BR>"
 	dat += "<br>Behaviour controls are [locked ? "locked" : "unlocked"]<hr>"
 	if(!locked || issilicon(user) || isAdminGhostAI(user))
 		dat += "<TT>Healing Threshold: "
-		dat += "<a href='?src=[REF(src)];adj_threshold=-10'>--</a> "
-		dat += "<a href='?src=[REF(src)];adj_threshold=-5'>-</a> "
+		dat += "<a href='byond://?src=[REF(src)];adj_threshold=-10'>--</a> "
+		dat += "<a href='byond://?src=[REF(src)];adj_threshold=-5'>-</a> "
 		dat += "[heal_threshold] "
-		dat += "<a href='?src=[REF(src)];adj_threshold=5'>+</a> "
-		dat += "<a href='?src=[REF(src)];adj_threshold=10'>++</a>"
+		dat += "<a href='byond://?src=[REF(src)];adj_threshold=5'>+</a> "
+		dat += "<a href='byond://?src=[REF(src)];adj_threshold=10'>++</a>"
 		dat += "</TT><br>"
-		dat += "The speaker switch is [shut_up ? "off" : "on"]. <a href='?src=[REF(src)];togglevoice=[1]'>Toggle</a><br>"
-		dat += "Critical Patient Alerts: <a href='?src=[REF(src)];critalerts=1'>[declare_crit ? "Yes" : "No"]</a><br>"
-		dat += "Patrol Station: <a href='?src=[REF(src)];operation=patrol'>[auto_patrol ? "Yes" : "No"]</a><br>"
-		dat += "Stationary Mode: <a href='?src=[REF(src)];stationary=1'>[stationary_mode ? "Yes" : "No"]</a><br>"
-		dat += "<a href='?src=[REF(src)];hptech=1'>Search for Technological Advancements</a><br>"
+		dat += "The speaker switch is [shut_up ? "off" : "on"]. <a href='byond://?src=[REF(src)];togglevoice=[1]'>Toggle</a><br>"
+		dat += "Critical Patient Alerts: <a href='byond://?src=[REF(src)];critalerts=1'>[declare_crit ? "Yes" : "No"]</a><br>"
+		dat += "Patrol Station: <a href='byond://?src=[REF(src)];operation=patrol'>[auto_patrol ? "Yes" : "No"]</a><br>"
+		dat += "Stationary Mode: <a href='byond://?src=[REF(src)];stationary=1'>[stationary_mode ? "Yes" : "No"]</a><br>"
+		dat += "<a href='byond://?src=[REF(src)];hptech=1'>Search for Technological Advancements</a><br>"
 
 	return dat
 
@@ -403,7 +403,7 @@
 		return
 
 	//Patient has moved away from us!
-	else if(patient && path.len && (get_dist(patient,path[path.len]) > 2))
+	else if(patient && path && path.len && (get_dist(patient,path[path.len]) > 2))	// [CELADON-EDIT] - FIXES_MEDBOT_RUNTIME_PATH_NULL \\ else if(patient && path.len && (get_dist(patient,path[path.len]) > 2))
 		path = list()
 		mode = BOT_IDLE
 		last_found = world.time
@@ -412,7 +412,7 @@
 		soft_reset()
 		return
 
-	if(patient && path.len == 0 && (get_dist(src,patient) > 1))
+	if(patient && (!path || path.len == 0) && (get_dist(src,patient) > 1))	// [CELADON-EDIT] - FIXES_MEDBOT_RUNTIME_PATH_NULL \\ if(patient && path.len == 0 && (get_dist(src,patient) > 1))
 		path = get_path_to(src, patient, 30,id=access_card)
 		mode = BOT_MOVING
 		if(!path.len) //try to get closer if you can't reach the patient directly
@@ -420,13 +420,12 @@
 			if(!path.len) //Do not chase a patient we cannot reach.
 				soft_reset()
 
-	if(path.len > 0 && patient)
+	if(path && path.len > 0 && patient)	// [CELADON-EDIT] - FIXES_MEDBOT_RUNTIME_PATH_NULL \\ if(path.len > 0 && patient)
 		if(!bot_move(path[path.len]))
 			oldpatient = patient
 			soft_reset()
 		return
-
-	if(path.len > 8 && patient)
+	if(path && path.len > 8 && patient)	// [CELADON-EDIT] - FIXES_MEDBOT_RUNTIME_PATH_NULL \\ if(path.len > 8 && patient)
 		frustration++
 
 	if(auto_patrol && !stationary_mode && !patient)
@@ -447,9 +446,12 @@
 		return FALSE	//welp too late for them!
 
 	var/can_inject = FALSE
-	for(var/X in C.bodyparts)
-		var/obj/item/bodypart/part = X
-		if(IS_ORGANIC_LIMB(part))
+	var/obj/item/bodypart/body_part
+	for(var/zone in C.bodyparts)
+		body_part = C.bodyparts[zone]
+		if(!body_part)
+			continue
+		if(IS_ORGANIC_LIMB(body_part))
 			can_inject = TRUE
 	if(!can_inject)
 		return 0
@@ -564,7 +566,7 @@
 			treatment_method = TOX
 
 		if(!treatment_method && emagged != 2) //If they don't need any of that they're probably cured!
-			if(C.maxHealth - C.health < heal_threshold)
+			if(C.maxHealth - C.get_organic_health() < heal_threshold)
 				to_chat(src, span_notice("[C] is healthy! Your programming prevents you from injecting anyone without at least [heal_threshold] damage of any one type ([heal_threshold + 5] for oxygen damage.)"))
 			var/list/messagevoice = list("All patched up!" = 'sound/voice/medbot/patchedup.ogg',"An apple a day keeps me away." = 'sound/voice/medbot/apple.ogg',"Feel better soon!" = 'sound/voice/medbot/feelbetter.ogg')
 			var/message = pick(messagevoice)

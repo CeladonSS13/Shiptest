@@ -1,5 +1,5 @@
 /datum/mission/outpost/acquire
-	desc = "Get me some things."
+	desc = "БЛЯТЬ, ОПИСАНИЕ СЛОМАЛОСЬ - СООБЩИТЕ ОБ ЭТОМ СИСТЕМНОМУ АДМИНИСТРАТОРУ!"	//desc = "Get me some things."	// [CELADON-EDIT] - CELADON_ECONOMY - Оповещение об ЯВНОЙ ошибке
 
 	/// The type of container to be spawned when the mission is accepted.
 	var/atom/movable/container_type
@@ -73,7 +73,7 @@
 	name = ""
 	desc = ""
 	value = 1500
-	duration = 60 MINUTES
+	duration = 90 MINUTES
 	weight = 6
 	container_type = /obj/structure/closet/mob_capture
 	objective_type = /mob/living/simple_animal/hostile/asteroid/goliath

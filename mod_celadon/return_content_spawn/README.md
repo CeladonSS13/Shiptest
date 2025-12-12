@@ -11,7 +11,7 @@
 <!-- Название мода. Не важно на русском или на английском. -->
 ## Возвращение спавнов и тендрилов
 
-ID мода: CELADON_RETURN_CONTENT_SPAWN, CELADON_RETURN_LANDMINE
+ID мода: CELADON_RETURN_CONTENT_SPAWN, CELADON_RETURN_LANDMINE, RETURN_CHASM
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -97,6 +97,7 @@ ID мода: CELADON_RETURN_CONTENT_SPAWN, CELADON_RETURN_LANDMINE
 - `code/modules/vending/clothesmate.dm`
 - `code/modules/vending/wardrobes.dm`
 
+- `code/game/turfs/open/chasm.dm`
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,

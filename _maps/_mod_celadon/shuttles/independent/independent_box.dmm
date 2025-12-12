@@ -1149,12 +1149,6 @@
 	pixel_y = -1
 	},
 /obj/item/reagent_containers/glass/bottle{
-	list_reagents = list(/datum/reagent/medicine/thializid=30);
-	name = "thializid bottle";
-	pixel_x = 10;
-	pixel_y = 12
-	},
-/obj/item/reagent_containers/glass/bottle{
 	list_reagents = list(/datum/reagent/medicine/rezadone=30);
 	name = "rezadone bottle";
 	pixel_x = 10;
@@ -1245,7 +1239,7 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/item/reagent_containers/food/snacks/egg{
+/obj/item/food/egg{
 	name = "egnine";
 	layer = 2.89
 	},
@@ -2075,7 +2069,7 @@
 	pixel_x = 10
 	},
 /obj/machinery/recharger,
-/obj/item/gun/energy/e_gun/mini{
+/obj/item/gun/energy/e_gun/e_old{
 	pixel_x = -6;
 	pixel_y = 6
 	},
@@ -2384,7 +2378,7 @@
 "Dm" = (
 /obj/structure/catwalk/over,
 /obj/item/cigbutt/roach,
-/obj/item/reagent_containers/food/snacks/burrito,
+/obj/item/food/burrito,
 /turf/open/floor/plating/airless,
 /area/ship/external)
 "Dr" = (

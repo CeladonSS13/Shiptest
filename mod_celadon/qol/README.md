@@ -13,6 +13,15 @@
 ## QoL - Улучшения всего и вся
 
 ID мода: CELADON_QOL
+
+FIX_LATHE
+AUTOLATE_MAXSTACK
+ADMIN-PANEL
+UNFUCK_SPRAYCAN
+BLOOD_EXAMINE
+DONT_ALTCLICK_WALLET
+DEBUG_QUALITY
+CELADON_QOL_LOADOUT
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -37,6 +46,9 @@ ID мода: CELADON_QOL
 - /slur теперь заменяет символы кириллицы на "пьяный вариант" и пропускает пробел
 - /check_for_custom_say_emote теперь нормально работает с кириллицей
 - добавлен вариант "bloodbank" в список для выбора при настройке платы умного холодильника
+- разрешено использование UI раций (переключение режимов) в лежачем положении
+
+**Документация по состояниям UI**: `mod_celadon/states_documentation/` - подробная документация по использованию `portable_device_state` для портативных устройств
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
   А также любая полезная информация.
@@ -45,7 +57,7 @@ ID мода: CELADON_QOL
 ### Изменения *кор кода*
 
 - ADD `code/game/objects/items/storage/wallets.dm`: `/obj/item/storage/wallet/ComponentInitialize()`: `STR.set_holdable`: `/obj/item/melee/knife/letter_opener,`, `/obj/item/key`
-- EDIT `code/modules/mob/dead/new_player/sprite_accessories/hair.dm`: `/datum/sprite_accessory/hair`: `icon` = `mod_celadon/_storge_icons/icons/qol/human_face.dmi`
+- EDIT `code/modules/mob/dead/new_player/sprite_accessories/hair.dm`: `/datum/sprite_accessory/hair`: `icon` = `mod_celadon/_storage_icons/icons/species/human/human_face.dmi`
 - EDIT `code/game/objects/items/binoculars.dm`: `/obj/item/binoculars`: `slot_flags` = `ITEM_SLOT_NECK`
 - EDIT `code/modules/mob/living/silicon/silicon.dm`: `/mob/living/silicon/proc/checklaws()`
 - EDIT `code/game/objects/items/AI_modules.dm`: `/obj/item/aiModule/core/full/asimov/attack_self(mob/user as mob)`
@@ -99,6 +111,12 @@ ID мода: CELADON_QOL
 - EDIT `code\modules\mob\mob_helpers.dm`: `/proc/slur`
 - EDIT `code\modules\mob\mob_helpers.dm`: `/proc/stutter`
 
+Радио для лежачих персонажей
+- EDIT `code/game/objects/items/devices/radio/radio.dm`: `/obj/item/radio/AltClick(mob/user)` - добавлен параметр `floor_okay = TRUE` в `canUseTopic`
+- EDIT `code/game/objects/items/devices/radio/radio.dm`: `/obj/item/radio/CtrlShiftClick(mob/user)` - добавлен параметр `floor_okay = TRUE` в `canUseTopic`
+- ADD `code/modules/tgui/states/portable_device.dm`: `/datum/ui_state/portable_device_state` - создано универсальное состояние для портативных устройств с активным UI в лежачем положении
+- EDIT `code/game/objects/items/devices/radio/radio.dm`: `/obj/item/radio/ui_state(mob/user)` - изменен с `GLOB.inventory_state` на `GLOB.portable_device_state`
+
 ООС вкладка	
 - EDIT `code/modules/client/verbs/ooc.dm` -> Убраны неиспользуемые кнопки "Message Of The Day" "Show Policy" со вкладки ООС.Перемещена кнопка "Fit Viewport" со вкладки "ООС" во вкладку "Special Verbs"
 - EDIT `code/datums/keybinding/client.dm` -> Перемещена кнопка "Toggle Fullscreen" со вкладки "ООС" во вкладку "Special Verbs"
@@ -129,6 +147,33 @@ ID мода: CELADON_QOL
 - ADD: `code/game/objects/items/stacks/sheets/sheet_types.dm` - добавляем в рецепты ткани обмотки для ног, всех цветов и стоимостью в 2 единицы ткани
 
 - ADD: `code/modules/power/singularity/singularity.dm` - добавляем сингулярность которая не излучает радиацию.
+
+AUTOLATE_MAXSTACK, FIX_LATHE
+- EDIT `code/game/machinery/autolathe.dm` - Добавление/изменения макс стопок в автолате
+- EDIT `code/game/machinery/autolathe.dm` - Удаляет абуз с дюпом
+- EDIT `tgui/packages/tgui/interfaces/Autolathe.js` - Интерфейсы под них
+
+ADMIN-PANEL
+- ADD `code/modules/admin/admin_verbs.dm`			- Добавляет Админ панель в игру
+- ADD `code/modules/client/client_defines.dm` 		-
+- ADD `tgui/packages/tgui/interfaces/AdminVerbs.js` -
+
+BLOOD_EXAMINE
+- EDIT `code/datums/elements/decals/blood.dm` - Подсветка красным цветом кровавых предметов
+
+DONT_ALTCLICK_WALLET - Убирает вытаскивание карты на Альт-клик
+- DEL `code/datums/components/storage/concrete/wallet.dm`
+- EDIT `code/game/objects/items/storage/wallets.dm`
+- `code/game/objects/items/storage/wallets.dm` : Убрана отвертка и добавлена сигарета в разрешенные предметы в кошельке
+
+DEBUG_QUALITY
+- DEL `code/game/objects/items/storage/boxes.dm` -> `mod_celadon/qol/code/BluespaceTechnician.dm`
+
+CELADON_QOL_LOADOUT
+- ADD, EDIT: `code/modules/client/preferences.dm`
+- ADD, EDIT, REMOVE: `code/modules/client/loadout/_loadout.dm`
+- REMOVE: `code/modules/client/loadout/loadout_accessories.dm`
+- REMOVE: `code/modules/client/loadout/loadout_hat.dm`
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
@@ -167,7 +212,7 @@ ID мода: CELADON_QOL
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- `mod_celadon/_storge_icons/icons/qol`
+- `mod_celadon/_storage_icons/icons/assets/qol`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.
@@ -177,7 +222,7 @@ ID мода: CELADON_QOL
 
 ### Авторы:
 
-RalseiDreemuurr, MysticalFaceLesS, MrCat15352, Yata9arasu, MrRomainzZ
+RalseiDreemuurr, MysticalFaceLesS, MrCat15352, Yata9arasu, MrRomainzZ, Cuildipie, Mirag1993
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.

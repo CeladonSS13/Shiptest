@@ -2240,12 +2240,7 @@
 /obj/item/melee/knife/combat,
 /obj/item/clothing/suit/armor/vest/security,
 /obj/item/clothing/glasses/hud/security/night,
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = -3;
-	name = "special weapon power cell";
-	pixel_x = 0
-	},
+/obj/item/stock_parts/cell/gun/upgraded,
 /turf/open/floor/wood,
 /area/ship/bridge)
 "tq" = (
@@ -2480,18 +2475,8 @@
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/gloves/combat,
 /obj/item/gun/energy/e_gun/plasmapistol_cryo,
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = -5;
-	name = "special weapon power cell";
-	pixel_x = 1
-	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = -5;
-	name = "special weapon power cell";
-	pixel_x = 1
-	},
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
 /obj/item/clothing/suit/armor/vest/security,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/clothing/glasses/welding,
@@ -2758,7 +2743,7 @@
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/glasses/welding,
 /obj/item/clothing/glasses/meson,
-/obj/item/gun/ballistic/automatic/pistol/commander/no_mag,
+/obj/item/gun/ballistic/automatic/pistol/challenger/no_mag,
 /obj/item/ammo_box/magazine/co9mm{
 	pixel_y = -1;
 	pixel_x = -2
@@ -3246,11 +3231,11 @@
 /area/ship/general/engineering/engineering_1)
 "Cl" = (
 /obj/structure/closet/secure_closet/freezer/kitchen/wall/directional/west,
-/obj/item/reagent_containers/food/snacks/canned,
-/obj/item/reagent_containers/food/snacks/canned,
-/obj/item/reagent_containers/food/snacks/canned,
-/obj/item/reagent_containers/food/snacks/canned,
-/obj/item/reagent_containers/food/snacks/canned,
+/obj/item/food/canned,
+/obj/item/food/canned,
+/obj/item/food/canned,
+/obj/item/food/canned,
+/obj/item/food/canned,
 /obj/item/reagent_containers/condiment/sugar,
 /obj/item/reagent_containers/condiment/sugar,
 /obj/item/reagent_containers/condiment/sugar,
@@ -3285,7 +3270,7 @@
 	pixel_x = -3;
 	pixel_y = 1
 	},
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken{
+/obj/item/food/meat/slab/chicken{
 	pixel_x = -4
 	},
 /obj/effect/turf_decal/siding/wood,
@@ -3875,7 +3860,6 @@
 /obj/structure/guncloset{
 	anchored = 1
 	},
-/obj/item/gun/energy/e_gun,
 /obj/effect/turf_decal/box/red,
 /obj/effect/turf_decal/siding/red{
 	dir = 6;
@@ -3884,9 +3868,10 @@
 /obj/machinery/camera/autoname{
 	dir = 10
 	},
-/obj/item/gun/energy/e_gun/smg,
 /obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/gun/ballistic/automatic/smg/wt550,
+/obj/item/gun/energy/e_gun/e_old/smg,
+/obj/item/gun/energy/e_gun/e_old/smg,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "Id" = (
@@ -4438,18 +4423,18 @@
 /obj/item/reagent_containers/condiment/soymilk,
 /obj/item/reagent_containers/condiment/soymilk,
 /obj/item/reagent_containers/condiment/soymilk,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken{
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab/chicken{
 	pixel_x = -4
 	},
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken{
+/obj/item/food/meat/slab/chicken{
 	pixel_x = -4
 	},
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken{
+/obj/item/food/meat/slab/chicken{
 	pixel_x = -4
 	},
 /obj/machinery/camera/autoname{
@@ -4717,7 +4702,7 @@
 	pixel_y = -1;
 	pixel_x = -2
 	},
-/obj/item/gun/ballistic/automatic/pistol/commander/no_mag,
+/obj/item/gun/ballistic/automatic/pistol/challenger/no_mag,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/storage/backpack/ert/medical,
 /obj/item/clothing/under/rank/medical/paramedic/lp,
@@ -5047,42 +5032,12 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 8
 	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = -1;
-	name = "special weapon power cell";
-	pixel_x = -2
-	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = 0;
-	name = "special weapon power cell";
-	pixel_x = -2
-	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = -5;
-	name = "special weapon power cell";
-	pixel_x = 1
-	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = -3;
-	name = "special weapon power cell";
-	pixel_x = 0
-	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = 0;
-	name = "special weapon power cell";
-	pixel_x = -3
-	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = 4;
-	name = "special weapon power cell";
-	pixel_x = -4
-	},
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
 /obj/item/ammo_box/magazine/wt550m9,
 /obj/item/ammo_box/magazine/wt550m9,
 /obj/item/ammo_box/magazine/wt550m9,
@@ -5091,7 +5046,7 @@
 /obj/item/storage/box/ammo/c46x30mm,
 /obj/item/storage/box/ammo/c9mm,
 /obj/item/storage/box/ammo/c9mm,
-/obj/item/gun/ballistic/automatic/pistol/commander/no_mag,
+/obj/item/gun/ballistic/automatic/pistol/challenger/no_mag,
 /obj/structure/window/reinforced/spawner{
 	dir = 4;
 	layer = 4.1
@@ -5586,7 +5541,7 @@
 /area/ship/bridge)
 "TZ" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/pizza/meat,
+/obj/item/food/pizza/meat,
 /turf/open/floor/carpet/green,
 /area/ship/crew)
 "Uc" = (
@@ -5723,7 +5678,7 @@
 	},
 /obj/machinery/light/directional/east,
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/suit/space/hardsuit/rd,
+/obj/item/clothing/suit/space/hardsuit/bomb,
 /obj/item/tank/internals/oxygen,
 /obj/item/clothing/mask/gas,
 /turf/open/floor/carpet/purple,

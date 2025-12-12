@@ -113,7 +113,7 @@ distance_multiplier - Can be used to multiply the distance at which the sound is
 
 */
 
-/mob/proc/playsound_local(turf/turf_source, soundin, vol as num, vary, frequency, falloff_exponent = SOUND_FALLOFF_EXPONENT, channel = 0, pressure_affected = TRUE, sound/S, max_distance, falloff_distance = SOUND_DEFAULT_FALLOFF_DISTANCE, distance_multiplier = 1, use_reverb = TRUE, envwet = -10000, envdry = 0, ignore_direction) //WS Edit Cit #7367 - Env Wet / Dry is Reverb
+/mob/proc/playsound_local(turf/turf_source, soundin, vol as num, vary, frequency, falloff_exponent = SOUND_FALLOFF_EXPONENT, channel = 0, pressure_affected = TRUE, sound/S, max_distance, falloff_distance = SOUND_DEFAULT_FALLOFF_DISTANCE, distance_multiplier = 1, use_reverb = TRUE, envwet = -10000, envdry = 0, ignore_direction) // Env Wet / Dry is Reverb
 	if(!client || !can_hear())
 		return
 
@@ -155,7 +155,7 @@ distance_multiplier - Can be used to multiply the distance at which the sound is
 			else //space
 				pressure_factor = 0
 
-			S.echo = list(envdry, null, envwet, null, null, null, null, null, null, null, null, null, null, 1, 1, 1, null, null) //WS Edit Cit #7367
+			S.echo = list(envdry, null, envwet, null, null, null, null, null, null, null, null, null, null, 1, 1, 1, null, null)
 
 			if(distance <= 1)
 				pressure_factor = max(pressure_factor, 0.15) //touching the source of the sound
@@ -212,6 +212,14 @@ distance_multiplier - Can be used to multiply the distance at which the sound is
 
 	if(prefs && (prefs.toggles & SOUND_LOBBY))
 		SEND_SOUND(src, sound(SSticker.login_music, repeat = 0, wait = 0, volume = vol, channel = CHANNEL_LOBBYMUSIC)) // MAD JAMS
+// [CELADON-ADD] - MUSIC_CELADON
+		if(SSticker.login_music_name)
+			var/music_name = SSticker.login_music_name
+			var/dot_position = findlasttext(music_name, ".")
+			if(dot_position)
+				music_name = copytext(music_name, 1, dot_position)
+			to_chat(src, span_redteamradio("<B>Музыка в лобби: [music_name]</B>"))
+// [/CELADON-ADD]
 
 /proc/get_rand_frequency()
 	return rand(32000, 55000) //Frequency stuff only works with 45kbps oggs.
@@ -330,8 +338,10 @@ distance_multiplier - Can be used to multiply the distance at which the sound is
 				soundin = pick('sound/weapons/gun/revolver/spin1.ogg', 'sound/weapons/gun/revolver/spin2.ogg', 'sound/weapons/gun/revolver/spin3.ogg')
 			if("law")
 				soundin = pick('sound/voice/beepsky/god.ogg', 'sound/voice/beepsky/iamthelaw.ogg', 'sound/voice/beepsky/secureday.ogg', 'sound/voice/beepsky/radio.ogg', 'sound/voice/beepsky/insult.ogg', 'sound/voice/beepsky/creep.ogg')
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 			if("honkbot_e")
 				soundin = pick('sound/items/bikehorn.ogg', 'sound/items/AirHorn2.ogg', 'sound/misc/sadtrombone.ogg', 'sound/items/AirHorn.ogg', 'sound/effects/reee.ogg',  'sound/items/WEEOO1.ogg', 'sound/voice/beepsky/iamthelaw.ogg', 'sound/voice/beepsky/creep.ogg','sound/magic/Fireball.ogg' ,'sound/effects/pray.ogg', 'sound/voice/hiss1.ogg','sound/machines/buzz-sigh.ogg', 'sound/machines/ping.ogg', 'sound/weapons/flashbang.ogg', 'sound/weapons/bladeslice.ogg')
+// [/CELADON-ADD]
 			if("goose")
 				soundin = pick('sound/creatures/goose1.ogg', 'sound/creatures/goose2.ogg', 'sound/creatures/goose3.ogg', 'sound/creatures/goose4.ogg')
 			if("warpspeed")
@@ -350,6 +360,6 @@ distance_multiplier - Can be used to multiply the distance at which the sound is
 				soundin = pick('sound/machines/switch1.ogg','sound/machines/switch2.ogg','sound/machines/switch3.ogg')
 			//[CELADON-ADD] - CELADON_WEAPONS - добавляем рандомизацию звуков при выстреле
 			if("svd_fire")
-				soundin = pick('mod_celadon/_storge_sounds/sound/gun/svd/svd1.ogg', 'mod_celadon/_storge_sounds/sound/gun/svd/svd2.ogg', 'mod_celadon/_storge_sounds/sound/gun/svd/svd3.ogg')
+				soundin = pick('mod_celadon/_storage_sounds/sound/gun/svd/svd1.ogg', 'mod_celadon/_storage_sounds/sound/gun/svd/svd2.ogg', 'mod_celadon/_storage_sounds/sound/gun/svd/svd3.ogg')
 			//[/CELADON-ADD] - CELADON_WEAPONS
 	return soundin

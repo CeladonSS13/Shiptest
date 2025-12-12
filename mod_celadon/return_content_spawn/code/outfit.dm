@@ -16,12 +16,6 @@
 	head = /obj/item/clothing/head/bowler
 	glasses = /obj/item/clothing/glasses/monocle
 
-/datum/outfit/job/independent/hop
-	head = /obj/item/clothing/head/hopcap
-
-/datum/outfit/job/independent/quartermaster
-	head = /obj/item/clothing/head/supply_chief
-
 /datum/outfit/wizard/apprentice
 	name = "Wizard Apprentice"
 	r_hand = null
@@ -38,9 +32,3 @@
 	suit = /obj/item/clothing/suit/wizrobe/marisa
 	shoes = /obj/item/clothing/shoes/sandal/marisa
 	head = /obj/item/clothing/head/wizard/marisa
-
-/datum/outfit/job/clown
-	shoes = /obj/item/clothing/shoes/clown_shoes
-
-/datum/outfit/job/head_of_personnel
-	head = /obj/item/clothing/head/hopcap

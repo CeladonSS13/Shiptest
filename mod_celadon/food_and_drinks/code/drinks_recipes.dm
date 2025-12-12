@@ -3,7 +3,7 @@
 	required_reagents = list(/datum/reagent/toxin/plasma = 1,
 							 /datum/reagent/fuel = 1) //"lube" = 1,
 	mix_message = "The chemicals mix to create shiny, blue substance."
-	mix_sound = 'mod_celadon/_storge_sounds/sound/drinkfizz.ogg'
+	mix_sound = 'mod_celadon/_storage_sounds/sound/drinkfizz.ogg'
 
 /datum/chemical_reaction/synthanol/robottears
 	results = list(/datum/reagent/consumable/ethanol/synthanol/robottears = 3)
@@ -59,7 +59,7 @@
 	results = list(/datum/reagent/consumable/ethanol/amnesia = 2)
 	required_reagents = list(/datum/reagent/consumable/ethanol/hooch = 1,
 							/datum/reagent/consumable/ethanol/vodka = 1)
-	mix_sound = 'mod_celadon/_storge_sounds/sound/effects/drinkfizz.ogg'
+	mix_sound = 'mod_celadon/_storage_sounds/sound/effects/drinkfizz.ogg'
 
 /datum/chemical_reaction/suicider
 	results = list(/datum/reagent/consumable/ethanol/suicider = 4)
@@ -68,4 +68,4 @@
 							/datum/reagent/fuel = 1,
 							/datum/reagent/medicine/epinephrine = 1)
 	mix_message = "The drinks and chemicals mix together, emitting a potent smell."
-	mix_sound = 'mod_celadon/_storge_sounds/sound/effects/drinkfizz.ogg'
+	mix_sound = 'mod_celadon/_storage_sounds/sound/effects/drinkfizz.ogg'

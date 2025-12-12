@@ -60,10 +60,7 @@
 	qdel(src)
 
 /obj/structure/chair/attackby(obj/item/W, mob/user, params)
-	if((W.tool_behaviour == TOOL_WRENCH || W.tool_behaviour == TOOL_DECONSTRUCT) && !(flags_1&NODECONSTRUCT_1))
-		W.play_tool_sound(src)
-		deconstruct()
-	else if(istype(W, /obj/item/assembly/shock_kit))
+	if(istype(W, /obj/item/assembly/shock_kit))
 		if(!user.temporarilyRemoveItemFromInventory(W))
 			return
 		var/obj/item/assembly/shock_kit/SK = W
@@ -76,6 +73,20 @@
 		qdel(src)
 	else
 		return ..()
+
+/obj/structure/chair/deconstruct_act(mob/living/user, obj/item/tool)
+	if(..())
+		return TRUE
+	tool.play_tool_sound(src)
+	deconstruct()
+	return TRUE
+
+/obj/structure/chair/wrench_act(mob/living/user, obj/item/tool)
+	if(..() || (flags_1 & NODECONSTRUCT_1))
+		return TRUE
+	tool.play_tool_sound(src)
+	deconstruct()
+	return TRUE
 
 /obj/structure/chair/attack_tk(mob/user)
 	if(!anchored || has_buckled_mobs() || !isturf(user.loc))
@@ -306,6 +317,7 @@
 	icon_state = "wooden_chair_wings_toppled"
 	origin_type = /obj/structure/chair/wood/wings
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/structure/chair/mime
 	name = "invisible chair"
 	desc = "The mime needs to sit down and shut up."
@@ -321,7 +333,7 @@
 
 /obj/structure/chair/mime/post_unbuckle_mob(mob/living/M)
 	M.pixel_y -= 5
-
+// [/CELADON-ADD]
 
 /obj/structure/chair/plastic
 	icon_state = "plastic_chair"

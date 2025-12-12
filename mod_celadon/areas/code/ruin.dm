@@ -146,6 +146,34 @@
 	name = "Cargo Mining"
 	icon_state = "mining"
 
+/area/ruin/asteroid/limafacility/office
+	name = "Office"
+	icon_state = "bridge"
+
+/area/ruin/asteroid/limafacility/lightzone
+	name = "Light Zone"
+	icon_state = "yellow"
+
+/area/ruin/asteroid/limafacility/heavyzone
+	name = "Heavy Zone"
+	icon_state = "green"
+
+/area/ruin/asteroid/limafacility/security
+	name = "Security"
+	icon_state = "security"
+
+/area/ruin/asteroid/limafacility/dorm
+	name = "Dorm"
+	icon_state = "crew_quarters"
+
+/area/ruin/asteroid/limafacility/hangar
+	name = "Cargo"
+	icon_state = "storage"
+
+/area/ruin/asteroid/limafacility/shuttle
+	name = "shuttle"
+	icon_state = "shuttle"
+
 /// MARK: Ocean Town
 
 /area/ruin/beach/oceantown
@@ -177,3 +205,84 @@
 /area/ruin/beach/float_resort/villa
 	name = "float resort villa"
 	icon_state = "float_resort_villa"
+
+/// MARK: jungleplanet
+/area/ruin/jungle/syndifortmed
+	name = "Syndi Fort Medbay"
+	icon_state = "blue"
+/area/ruin/jungle/syndifort2
+	name = "Syndi Fort 2"
+	icon_state = "red"
+/area/ruin/jungle/syndifort3
+	name = "Syndi Fort 3"
+	icon_state = "yellow"
+/area/ruin/jungle/syndifortshuttle
+	name = "Syndi Fort Shuttle"
+	icon_state = "green"
+
+/// MARK: Whitesands
+
+/area/ruin/whitesands/trainyard/shuttle
+	name = "shuttle"
+	icon_state = "shuttle"
+/area/ruin/whitesands/trainyard/engineering
+	name = "engineering"
+	icon_state = "yellow"
+/area/ruin/whitesands/trainyard/train
+	name = "train"
+	icon_state = "bridge"
+/area/ruin/whitesands/trainyard/cargo
+	name = "cargo"
+	icon_state = "mining"
+/area/ruin/whitesands/trainyard/dorm
+	name = "dorm"
+	icon_state = "crew_quarters"
+/area/ruin/whitesands/trainyard/hangar
+	name = "hangar"
+	icon_state = "storage"
+/area/ruin/whitesands/trainyard/carriage
+	name = "carriage"
+	icon_state = "green"
+/area/ruin/whitesands/trainyard/checkpoint
+	name = "checkpoint"
+	icon_state = "red"
+/area/ruin/whitesands/trainyard/checkpoint/second
+	name = "checkpoint 2"
+	icon_state = "blue"
+/area/ruin/whitesands/trainyard/checkpoint/storage
+	name = "storage"
+	icon_state = "quartstorage"
+/area/ruin/whitesands/trainyard/checkpoint/control
+	name = "control room"
+	icon_state = "captain"
+
+// MARK: ВЫРЕЗАНО
+//Corporate Rejects
+
+/area/ruin/unpowered/corprejectrooms
+	name = "NT Security Solutions Site Gamma Rooms"
+	icon_state = "dk_yellow"
+
+/area/ruin/unpowered/corprejectengineering
+	name = "NT Security Solutions Site Gamma Engineering"
+	icon_state = "dk_yellow"
+
+/area/ruin/unpowered/corprejectvault
+	name = "NT Security Solutions Site Gamma Vault"
+	icon_state = "dk_yellow"
+
+//Hydroponics lab
+
+/area/ruin/powered/hydroponicslab
+	name = "Hydroponics Lab"
+	icon_state = "dk_yellow"
+
+// Crashed Holemaker
+/area/ruin/unpowered/crashed_holemaker
+	name = "NTSV Holemaker II" // In honor of the kugelblitz shenanigan of all time
+	icon_state = "green"
+
+//budgetcuts
+/area/ruin/rockplanet/nanotrasen
+	name = "Abandoned Research Facility"
+	always_unpowered = FALSE

@@ -4,14 +4,14 @@
 	"map_short_name": "Savior",
 	"description": "Многофункциональное медицинское судно класса 'Savior' является одной из новейших разработок компании Nanotrasen. Оно спроектировано для оказания всесторонней медицинской помощи в условиях космоса. Судно оснащено современным медицинским оборудованием и системами жизнеобеспечения, что позволяет оперативно и эффективно реагировать на различные медицинские чрезвычайные ситуации. Благодаря своей универсальности, судно 'Savior' может использоваться как для спасательных операций, так и для проведения длительных медицинских экспедиций. В ЩИТСПАВНЕ ПО ПРИЧИНЕ: Наличие ТЭГа убивает сервер!",
 	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_savior.dmm",
-	"enabled": false,
+	"enabled": true,
 	"limit": 1,
 	"sensor_range": 5,
 	"prefix": "NTMSV",
 	"faction": "/datum/faction/nt",
 	"tags": [
-		"Science",
-		"Medical"
+		"Исследовательский",
+		"Медицинское"
 	],
 	"namelists": [
 		"GENERAL",
@@ -20,28 +20,28 @@
 	],
 	"job_slots": {
 		"Medical Director": {
-			"outfit": "/datum/outfit/job/nanotrasen/cmo/captain",
+			"outfit": "/datum/outfit/job/cel/nanotrasen/cmo/deforest_cmo",
 			"officer": true,
 			"slots": 1
 		},
 		"Engineer": {
-			"outfit": "/datum/outfit/job/nanotrasen/engineer",
+			"outfit": "/datum/outfit/job/cel/nanotrasen/engineer/nakamura",
 			"slots": 1
 		},
 		"Medical Doctor": {
-			"outfit": "/datum/outfit/job/nanotrasen/doctor",
+			"outfit": "/datum/outfit/job/cel/nanotrasen/doctor/deforest_medic",
 			"slots": 2
 		},
 		"Chemist": {
-			"outfit": "/datum/outfit/job/nanotrasen/chemist",
+			"outfit": "/datum/outfit/job/cel/nanotrasen/chemist/deforest_chemist",
 			"slots": 1
 		},
 		"Genetical Researcher": {
-			"outfit": "/datum/outfit/job/nanotrasen/geneticist",
+			"outfit": "/datum/outfit/job/cel/nanotrasen/scientist/deforest_researcher/genetic",
 			"slots": 1
 		},
 		"Paramedic": {
-			"outfit": "/datum/outfit/job/nanotrasen/paramedic",
+			"outfit": "/datum/outfit/job/cel/nanotrasen/paramedic/deforest_medic",
 			"slots": 1
 		}
 	}

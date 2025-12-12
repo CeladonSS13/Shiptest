@@ -62,10 +62,7 @@
 
 /client/verb/toggle_fullscreen()
 	set name = "Toggle Fullscreen"
-	// [CELADON-EDIT] - CELADON_QOL - Очистка вкладки ООС, перенос части в Special Verbs
-	// set category = "OOC" // CELADON-EDIT - ORIGINAL
-	set category = "Special Verbs"
-	// [/CELADON-EDIT]
+	set category = "Special Verbs" // [CELADON-EDIT] - CELADON_QOL - Очистка вкладки ООС, перенос части в Special Verbs
 
 	fullscreen = !fullscreen
 

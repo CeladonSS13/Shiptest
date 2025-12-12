@@ -83,7 +83,8 @@
 		/obj/item/clothing/mask/gas/welding,
 		/obj/item/clothing/head/welding, //WS end
 		/obj/item/gun/energy/plasmacutter,
-		/obj/item/bodycamera
+		/obj/item/bodycamera,
+		/obj/item/stack/tape/industrial
 		))
 
 /obj/item/storage/belt/utility/chief
@@ -92,6 +93,8 @@
 	icon_state = "utility_ce"
 	item_state = "utility_ce"
 
+// [CELADON-EDIT] - OMNI_TOOLS
+/*
 /obj/item/storage/belt/utility/chief/full/PopulateContents()
 	new /obj/item/screwdriver/power(src)
 	new /obj/item/crowbar/power(src)
@@ -100,6 +103,26 @@
 	new /obj/item/stack/cable_coil(src,MAXCOIL,pick("red","yellow","orange"))
 	new /obj/item/extinguisher/mini(src)
 	new /obj/item/analyzer(src)
+*/
+
+/obj/item/storage/belt/utility/chief/full/PopulateContents()
+	new /obj/item/screwdriver/power(src)
+	new /obj/item/crowbar/power(src)
+	new /obj/item/weldingtool/electric(src)
+	new /obj/item/multitool/tricorder(src)
+	new /obj/item/pipe_dispenser(src)
+	new /obj/item/inducer(src)
+	new /obj/item/stack/cable_coil(src,MAXCOIL,pick("red","yellow","orange"))
+
+/obj/item/storage/belt/utility/chief/debug/full/PopulateContents()
+	new /obj/item/screwdriver/power(src)
+	new /obj/item/crowbar/power(src)
+	new /obj/item/weldingtool/electric(src)
+	new /obj/item/multitool/tricorder/ranged(src)
+	new /obj/item/pipe_dispenser/bluespace(src)
+	new /obj/item/inducer/adv(src)
+	new /obj/item/stack/cable_coil(src,MAXCOIL,"cyan")
+// [/CELADON-EDIT]
 
 /obj/item/storage/belt/utility/full/PopulateContents()
 	new /obj/item/screwdriver(src)
@@ -203,6 +226,7 @@
 		/obj/item/clothing/mask/breath/medical,
 		/obj/item/scalpel,
 		/obj/item/circular_saw,
+		/obj/item/blood_filter,	// [CELADON-ADD] - CELADON_BALANCE
 		/obj/item/surgicaldrill,
 		/obj/item/retractor,
 		/obj/item/cautery,
@@ -227,7 +251,9 @@
 		/obj/item/plunger,
 		/obj/item/reagent_containers/spray,
 		/obj/item/shears,
-		/obj/item/bodycamera
+		/obj/item/bodycamera,
+		/obj/item/bonesetter,
+		/obj/item/stack/sticky_tape/surgical
 		))
 
 /obj/item/storage/belt/medical/paramedic/PopulateContents()
@@ -251,6 +277,7 @@
 /obj/item/storage/belt/medical/surgery/PopulateContents()
 	new /obj/item/scalpel(src)
 	new /obj/item/circular_saw(src)
+	new /obj/item/blood_filter(src)	// [CELADON-ADD] - CELADON_BALANCE
 	new /obj/item/surgicaldrill(src)
 	new /obj/item/retractor(src)
 	new /obj/item/cautery(src)
@@ -261,6 +288,7 @@
 /obj/item/storage/belt/medical/webbing/surgery/PopulateContents()
 	new /obj/item/scalpel(src)
 	new /obj/item/circular_saw(src)
+	new /obj/item/blood_filter(src)	// [CELADON-ADD] - CELADON_BALANCE
 	new /obj/item/surgicaldrill(src)
 	new /obj/item/retractor(src)
 	new /obj/item/cautery(src)
@@ -270,10 +298,10 @@
 
 /obj/item/storage/belt/medical/webbing/combat/PopulateContents()
 	. = ..()
-	new /obj/item/reagent_containers/hypospray/medipen/stimpack/traitor(src)
-	new /obj/item/reagent_containers/hypospray/medipen/stimpack/traitor(src)
-	new /obj/item/reagent_containers/medigel/silver_sulf(src)
-	new /obj/item/reagent_containers/medigel/styptic(src)
+	new /obj/item/reagent_containers/hypospray/medipen/stimpack(src)
+	new /obj/item/reagent_containers/hypospray/medipen/stimpack(src)
+	new /obj/item/reagent_containers/medigel/hadrakine(src)
+	new /obj/item/reagent_containers/medigel/quardexane(src)
 	new /obj/item/stack/medical/gauze/twelve(src)
 	new /obj/item/stack/medical/splint(src)
 
@@ -309,7 +337,7 @@
 		/obj/item/ammo_box/a300,
 		/obj/item/ammo_box/a762_stripper,
 		/obj/item/ammo_box/amagpellet_claris, //that's the last of the clips
-		/obj/item/reagent_containers/food/snacks/donut,
+		/obj/item/food/donut,
 		/obj/item/melee/knife/combat,
 		/obj/item/flashlight/seclite,
 		// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
@@ -324,7 +352,16 @@
 		/obj/item/stock_parts/cell/gun,
 		/obj/item/ammo_box/magazine/ammo_stack, //handfuls of bullets
 		/obj/item/bodycamera,
+		/obj/item/gun/ballistic/automatic/pistol,
+		/obj/item/gun/ballistic/revolver,
+		/obj/item/gun/energy/laser,
+		/obj/item/gun/energy/sharplite/x26,
+		/obj/item/gun/energy/disabler,
+		/obj/item/gun/energy/kalix/pistol,
 		))
+	STR.can_hold_max_of_items = typecacheof(list(
+		/obj/item/gun = 1,
+	))
 
 /obj/item/storage/belt/security/full/PopulateContents()
 	new /obj/item/reagent_containers/spray/pepper(src)
@@ -469,7 +506,19 @@
 /obj/item/storage/belt/military/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	var/static/list/exception_cache = typecacheof(list(
+		/obj/item/gun/ballistic/automatic/pistol,
+		/obj/item/gun/ballistic/revolver,
+		/obj/item/gun/energy/laser,
+		/obj/item/gun/energy/sharplite/x26,
+		/obj/item/gun/energy/disabler,
+		/obj/item/gun/energy/kalix/pistol,
+		))
+	STR.exception_hold = exception_cache
 	STR.max_w_class = WEIGHT_CLASS_SMALL
+	STR.can_hold_max_of_items = typecacheof(list(
+		/obj/item/gun = 1,
+	))
 
 /obj/item/storage/belt/military/cobra/PopulateContents()
 	. = ..()
@@ -488,8 +537,8 @@
 
 /obj/item/storage/belt/military/mako/PopulateContents()
 	. = ..()
-	new /obj/item/ammo_casing/caseless/rocket/a70mm/hedp(src)
-	new /obj/item/ammo_casing/caseless/rocket/a70mm/hedp(src)
+	new /obj/item/ammo_casing/caseless/rocket/a70mm(src)
+	new /obj/item/ammo_casing/caseless/rocket/a70mm(src)
 	new /obj/item/ammo_casing/caseless/rocket/a70mm(src)
 	new /obj/item/ammo_casing/caseless/rocket/a70mm(src)
 	new /obj/item/ammo_casing/caseless/rocket/a70mm(src)
@@ -509,7 +558,7 @@
 	STR.max_items = 6
 	STR.max_w_class = WEIGHT_CLASS_SMALL
 	STR.set_holdable(list(
-		/obj/item/reagent_containers/food/snacks,
+		/obj/item/food,
 		/obj/item/reagent_containers/food/drinks
 		))
 
@@ -517,20 +566,20 @@
 	var/rig_snacks
 	while(contents.len <= amount)
 		rig_snacks = pick(list(
-		/obj/item/reagent_containers/food/snacks/candy,
+		/obj/item/food/candy,
 		/obj/item/reagent_containers/food/drinks/dry_ramen,
-		/obj/item/reagent_containers/food/snacks/chips,
-		/obj/item/reagent_containers/food/snacks/sosjerky,
-		/obj/item/reagent_containers/food/snacks/syndicake,
-		/obj/item/reagent_containers/food/snacks/spacetwinkie,
-		/obj/item/reagent_containers/food/snacks/cheesiehonkers,
-		/obj/item/reagent_containers/food/snacks/nachos,
-		/obj/item/reagent_containers/food/snacks/cheesynachos,
-		/obj/item/reagent_containers/food/snacks/cubannachos,
-		/obj/item/reagent_containers/food/snacks/nugget,
+		/obj/item/food/chips,
+		/obj/item/food/sosjerky,
+		/obj/item/food/syndicake,
+		/obj/item/food/spacetwinkie,
+		/obj/item/food/cheesiehonkers,
+		/obj/item/food/nachos,
+		/obj/item/food/cheesynachos,
+		/obj/item/food/cubannachos,
+		/obj/item/food/nugget,
 		/obj/item/food/spaghetti/pastatomato,
-		/obj/item/reagent_containers/food/snacks/rofflewaffles,
-		/obj/item/reagent_containers/food/snacks/donkpocket,
+		/obj/item/food/rofflewaffles,
+		/obj/item/food/donkpocket,
 		/obj/item/reagent_containers/food/drinks/soda_cans/cola,
 		/obj/item/reagent_containers/food/drinks/soda_cans/comet_trail,
 		/obj/item/reagent_containers/food/drinks/soda_cans/tadrixx,
@@ -614,8 +663,7 @@
 		/obj/item/multitool,
 		/obj/item/reagent_containers/food/drinks/molotov,
 		/obj/item/grenade/c4,
-		/obj/item/reagent_containers/food/snacks/grown/cherry_bomb,
-		/obj/item/reagent_containers/food/snacks/grown/firelemon
+		/obj/item/food/grown/firelemon,
 		))
 
 /obj/item/storage/belt/grenade/full/PopulateContents()
@@ -891,37 +939,19 @@
 	sabre_type = /obj/item/melee/sword/sabre/suns/cmo
 
 /obj/item/storage/belt/sabre/pgf
-	name = "cutlass sheath"
-	desc = "A mass produced thermoplastic-leather sheath made to hold a boarding cutlass."
-	base_icon_state = "sheath-pgf"
-	icon_state = "sheath-pgf"
-	item_state = "sheath-pgf"
+	name = "cutlass scabbard"
+	desc = "A mass produced thermoplastic-leather scabbard made to hold a boarding cutlass."
+	icon = 'icons/obj/clothing/faction/gezena/belt.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/faction/gezena/belt.dmi'
+	base_icon_state = "pgf-scabbard"
+	icon_state = "pgf-scabbard"
+	item_state = "pgf-scabbard"
 	sabre_type = /obj/item/melee/sword/sabre/pgf
 
-/obj/item/storage/belt/security/webbing/inteq
-	name = "inteq webbing"
-	desc = "A set of tactical webbing for operators of the IRMG, can hold security gear."
-	icon_state = "inteq_webbing"
-	item_state = "inteq_webbing"
-	supports_variations = VOX_VARIATION | KEPORI_VARIATION
-
-/obj/item/storage/belt/security/webbing/inteq/skm/PopulateContents()
-	. = ..()
-	for(var/i in 1 to 4)
-		new /obj/item/ammo_box/magazine/skm_762_40(src)
-
-/obj/item/storage/belt/security/webbing/inteq/skm_carabine/PopulateContents()
-	. = ..()
-	for(var/i in 1 to 4)
-		new /obj/item/ammo_box/magazine/smgm10mm(src)
-
-/obj/item/storage/belt/security/webbing/inteq/alt
-	name = "inteq drop pouch harness"
-	desc = "A harness with a bunch of pouches attached to them emblazoned in the colors of the IRMG, can hold security gear."
-	icon_state = "inteq_droppouch"
-	item_state = "inteq_droppouch"
-
-/obj/item/storage/belt/security/webbing/inteq/alt/bulldog/PopulateContents()
-	. = ..()
-	for(var/i in 1 to 4)
-		new /obj/item/ammo_box/magazine/m12g_bulldog(src)
+/obj/item/storage/belt/sabre/kukri
+	name = "kukri sheath"
+	desc = "A piece of solid, treated leather. Don't pull the kukri out unless you're itching for a fight."
+	base_icon_state = "sheath_kukri"
+	icon_state = "sheath_kukri"
+	item_state = "sheath_kukri"
+	sabre_type = /obj/item/melee/sword/kukri

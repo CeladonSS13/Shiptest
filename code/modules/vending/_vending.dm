@@ -170,6 +170,9 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 	// [CELADON-ADD] - VENDING_CASH - Добавляем вендингам аккаунт для денег
 	var/datum/bank_account/vending/bank_account
 	// [/CELADON-ADD]
+	/// restocks venders every hour if this is true
+	var/restock_hourly = FALSE
+
 /**
 	* Initialize the vending machine
 	*
@@ -187,6 +190,9 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 		build_inventory(contraband, hidden_records)
 		build_inventory(premium, coin_records)
 
+	if(restock_hourly)
+		addtimer(CALLBACK(src, PROC_REF(refill_inventory_full)), 60 MINUTES, TIMER_STOPPABLE|TIMER_LOOP|TIMER_DELETE_ME)
+
 	slogan_list = splittext(product_slogans, ";")
 	// So not all machines speak at the exact same time.
 	// The first time this machine says something will be at slogantime + this random value,
@@ -196,7 +202,11 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 
 	Radio = new /obj/item/radio(src)
 	Radio.listening = 0
-	if(istype(get_area(src.loc), /area/outpost) || istype(get_area(src.loc), /area/ruin))
+	// Машины на аванпостах сохранят значение all_items_free = TRUE если оно было установлено на карте.
+	// [CELADON-EDIT] - CELADON_BALANCE_VENDING - Машины на аванпостах сохранят значение all_items_free = TRUE если оно было установлено на карте
+	// if(istype(get_area(src.loc), /area/outpost) || istype(get_area(src.loc), /area/ruin))	// ORIGINAL
+	if(all_items_free && istype(get_area(src.loc), /area/ruin))
+	// [/CELADON-EDIT]
 		all_items_free = FALSE
 
 /obj/machinery/vending/Destroy()
@@ -253,7 +263,7 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 	if(!(machine_stat & BROKEN) && powered())
 		SSvis_overlays.add_vis_overlay(src, icon, light_mask, EMISSIVE_LAYER, EMISSIVE_PLANE)
 
-/obj/machinery/vending/obj_break(damage_flag)
+/obj/machinery/vending/atom_break(damage_flag)
 	. = ..()
 	if(!.)
 		return
@@ -350,6 +360,12 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 			productlist[record.product_path] -= diff
 			record.amount += diff
 			. += diff
+
+/obj/machinery/vending/proc/refill_inventory_full()
+	refill_inventory(products, product_records)
+	refill_inventory(contraband, hidden_records)
+	refill_inventory(premium, coin_records)
+
 /**
 	* Set up a refill canister that matches this machines products
 	*
@@ -496,7 +512,7 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 
 	var/crit_case
 	if(crit)
-		crit_case = rand(1,5)
+		crit_case = rand(1,6)
 
 	if(forcecrit)
 		crit_case = forcecrit
@@ -511,7 +527,7 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 			if(istype(C))
 				var/crit_rebate = 0 // lessen the normal damage we deal for some of the crits
 
-				if(crit_case != 5) // the head asplode case has its own description
+				if(crit_case < 5) // the head asplode case has its own description
 					C.visible_message(span_danger("[C] is crushed by [src]!"), \
 						span_userdanger("You are crushed by [src]!"))
 
@@ -521,10 +537,10 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 						C.bleed(150)
 						var/obj/item/bodypart/leg/left/l = C.get_bodypart(BODY_ZONE_L_LEG)
 						if(l)
-							l.receive_damage(brute=200, updating_health=TRUE)
+							l.receive_damage(brute=200)
 						var/obj/item/bodypart/leg/right/r = C.get_bodypart(BODY_ZONE_R_LEG)
 						if(r)
-							r.receive_damage(brute=200, updating_health=TRUE)
+							r.receive_damage(brute=200)
 						if(l || r)
 							C.visible_message(span_danger("[C]'s legs shatter with a sickening crunch!"), \
 								span_userdanger("Your legs shatter with a sickening crunch!"))
@@ -546,18 +562,29 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 						// the new paraplegic gets like 4 lines of losing their legs so skip them
 						visible_message(span_danger("[C]'s spinal cord is obliterated with a sickening crunch!"), ignored_mobs = list(C))
 						C.gain_trauma(/datum/brain_trauma/severe/paralysis/paraplegic)
-					if(5) // skull squish!
-						var/obj/item/bodypart/head/O = C.get_bodypart(BODY_ZONE_HEAD)
-						if(O)
-							C.visible_message(span_danger("[O] explodes in a shower of gore beneath [src]!"), \
-								span_userdanger("Oh f-"))
-							O.dismember()
-							O.drop_organs()
-							qdel(O)
-							new /obj/effect/gibspawner/human/bodypartless(get_turf(C))
+					if(5) // limb squish!
+						var/obj/item/bodypart/squish_part
+						for(var/zone in C.bodyparts)
+							squish_part = C.bodyparts[zone]
+							if(!squish_part)
+								continue
+							if(IS_ORGANIC_LIMB(squish_part))
+								var/type_wound = pick(list(/datum/wound/blunt/severe, /datum/wound/blunt/moderate))
+								squish_part.force_wound_upwards(type_wound)
+							else
+								squish_part.receive_damage(brute=30)
+						C.visible_message(
+							span_userdanger("[C]'s body is maimed underneath the mass of [src]!"),
+							span_userdanger("Your body is maimed underneath the mass of [src]!"),
+							span_userdanger("You hear a sickening crunch."),
+						)
 
-				C.apply_damage(max(0, squish_damage - crit_rebate), forced=TRUE, spread_damage=TRUE)
-				C.AddElement(/datum/element/squish, 80 SECONDS)
+				if(prob(30))
+					C.apply_damage(max(0, squish_damage - crit_rebate), forced=TRUE, spread_damage=TRUE) // the 30% chance to spread the damage means you escape breaking any bones
+				else
+					C.take_bodypart_damage((squish_damage - crit_rebate)*0.5, wound_bonus = 5) // otherwise, deal it to 2 random limbs (or the same one) which will likely shatter something
+					C.take_bodypart_damage((squish_damage - crit_rebate)*0.5, wound_bonus = 5)
+				C.AddElement(/datum/element/squish, 20 SECONDS)
 			else
 				L.visible_message(span_danger("[L] is crushed by [src]!"), \
 				span_userdanger("You are crushed by [src]!"))
@@ -932,7 +959,7 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 	if(!message)
 		return
 
-	say(message)
+	say(message, language=/datum/language/galactic_common)
 
 /obj/machinery/vending/power_change()
 	. = ..()
@@ -1088,19 +1115,21 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 			var/base64
 			var/price = 0
 			for(var/obj/T in contents)
-				if(T.name == O)
+				if(format_text(T.name) == O)
 					price = T.custom_price
 					if(!base64)
 						if(base64_cache[T.type])
 							base64 = base64_cache[T.type]
 						else
-							base64 = icon2base64(icon(T.icon, T.icon_state))
+							base64 = icon2base64(getFlatIcon(T, no_anim=TRUE))
 							base64_cache[T.type] = base64
 					break
 			var/list/data = list(
 				name = O,
 				price = price,
-				img = base64
+				img = base64,
+				amount = vending_machine_input[O],
+				colorable = FALSE
 			)
 			.["vending_machine_input"] += list(data)
 
@@ -1132,7 +1161,7 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 					return
 				var/datum/bank_account/account = C.registered_account
 				for(var/obj/O in contents)
-					if(O.name == N)
+					if(format_text(O.name) == N)
 						S = O
 						break
 				if(S)
@@ -1148,6 +1177,7 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 						var/datum/bank_account/owner = private_a
 						if(owner)
 							owner.transfer_money(account, S.custom_price)
+							owner.bank_card_talk("\The [S] was purchased from your vendor. [S.custom_price] credits deposited to account, balance is now [owner.account_balance].")
 						else
 							account.adjust_money(-S.custom_price, CREDIT_LOG_VENDOR_PURCHASE)
 						SSblackbox.record_feedback("amount", "vending_spent", S.custom_price)

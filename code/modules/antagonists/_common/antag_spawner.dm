@@ -147,6 +147,7 @@
 		M.mind.add_antag_datum(new_op,creator_op.nuke_team)
 		M.mind.special_role = "Nuclear Operative"
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 //////CLOWN OP
 /obj/item/antag_spawner/nuke_ops/clown
 	name = "clown operative teleporter"
@@ -165,7 +166,7 @@
 	if(creator_op)
 		M.mind.add_antag_datum(new_op, creator_op.nuke_team)
 		M.mind.special_role = "Clown Operative"
-
+// [/CELADON-ADD]
 
 //////SYNDICATE BORG
 /obj/item/antag_spawner/nuke_ops/borg_tele
@@ -278,6 +279,7 @@
 	to_chat(S, "<B>You are currently not currently in the same plane of existence as the station. \
 	Ctrl+Click a blood pool to manifest.</B>")
 
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/antag_spawner/slaughter_demon/laughter
 	name = "vial of tickles"
 	desc = "A magically infused bottle of clown love, distilled from countless hugging attacks. Used in funny rituals to attract adorable creatures."
@@ -288,6 +290,7 @@
 	veil_msg = span_warning("You sense an adorable presence lurking just beyond the veil...")
 	demon_type = /mob/living/simple_animal/slaughter/laughter
 	antag_type = /datum/antagonist/slaughter/laughter
+// [/CELADON-ADD]
 
 /obj/item/antag_spawner/syndi_borer
 	name = "syndicate brain-slug container"

@@ -203,7 +203,7 @@
 
 /obj/item/scooter_frame/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/stack/sheet/metal))
-		if(!I.tool_start_check(user, amount=5))
+		if(!I.tool_start_check(user, src, amount=5))
 			return
 		to_chat(user, span_notice("You begin to add wheels to [src]."))
 		if(I.use_tool(src, user, 80, volume=50, amount=5))
@@ -223,7 +223,7 @@
 
 /obj/vehicle/ridden/scooter/skateboard/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/stack/rods))
-		if(!I.tool_start_check(user, amount=2))
+		if(!I.tool_start_check(user, src, amount=2))
 			return
 		to_chat(user, span_notice("You begin making handlebars for [src]."))
 		if(I.use_tool(src, user, 25, volume=50, amount=2))
@@ -264,7 +264,7 @@
 /obj/vehicle/ridden/scooter/wheelys/Initialize()
 	. = ..()
 	var/datum/component/riding/D = LoadComponent(/datum/component/riding)
-	D.vehicle_move_delay = 0
+	D.vehicle_move_delay = 0.65	// [CELADON-EDIT] - CELADON_BALANCE - Ускорение роликов теперь не равно 100 а всего на 35%. Чем выше - тем медленнее	// D.vehicle_move_delay = 0	// ORIGINAL
 	D.set_vehicle_dir_layer(SOUTH, ABOVE_MOB_LAYER)
 	D.set_vehicle_dir_layer(NORTH, OBJ_LAYER)
 	D.set_vehicle_dir_layer(EAST, OBJ_LAYER)

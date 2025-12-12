@@ -17,7 +17,7 @@
 #define RADIO_KEY_CENTCOM "e"
 #define RADIO_TOKEN_CENTCOM ":e"
 
-#define RADIO_CHANNEL_SOLGOV "SolGov"
+#define RADIO_CHANNEL_SOLGOV "SolFed" //#define RADIO_CHANNEL_SOLGOV "SolGov"	// [CELADON-EDIT] - CELADON_FIXES
 #define RADIO_KEY_SOLGOV "s"
 #define RADIO_TOKEN_SOLGOV ":s"
 
@@ -112,6 +112,11 @@
 #define REQ_DEP_TYPE_ASSISTANCE (1<<0)
 #define REQ_DEP_TYPE_SUPPLIES (1<<1)
 #define REQ_DEP_TYPE_INFORMATION (1<<2)
+
+//Interference levels
+#define INTERFERENCE_LEVEL_BREAKUP_HOLOPADS 30
+#define INTERFERENCE_LEVEL_RADIO_PREVENT_ID 50
+#define INTERFERENCE_LEVEL_RADIO_STATIC_SOUND 70
 
 ///give this to can_receive to specify that there is no restriction on what virtual z level this signal is sent to
 #define RADIO_NO_Z_LEVEL_RESTRICTION 0

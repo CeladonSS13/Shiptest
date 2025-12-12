@@ -112,6 +112,3 @@
 
 /datum/supply_pack/machinery/shuttle_in_a_box
 	cost = 20000
-
-/datum/supply_pack/machinery/grounding_rods
-	cost = 3500

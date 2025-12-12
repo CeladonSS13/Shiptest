@@ -58,7 +58,7 @@
 	if(!allow_thrust(0.01, user))
 		return
 	on = TRUE
-	icon_state = "[initial(icon_state)]-on"
+	update_appearance(UPDATE_ICON)	//icon_state = "[initial(icon_state)]-on" // [CELADON-EDIT] - JETPACK_RESPRITE
 	ion_trail.start()
 	RegisterSignal(user, COMSIG_MOVABLE_MOVED, PROC_REF(move_react))
 	RegisterSignal(user, COMSIG_MOVABLE_PRE_MOVE, PROC_REF(pre_move_react))
@@ -68,7 +68,7 @@
 /obj/item/tank/jetpack/proc/turn_off(mob/living/user)
 	on = FALSE
 	stabilizers = FALSE
-	icon_state = initial(icon_state)
+	update_appearance(UPDATE_ICON)	//icon_state = initial(icon_state) // [CELADON-EDIT] - JETPACK_RESPRITE
 	ion_trail.stop()
 	UnregisterSignal(user, COMSIG_MOVABLE_MOVED)
 	UnregisterSignal(user, COMSIG_MOVABLE_PRE_MOVE)
@@ -81,7 +81,7 @@
 		return
 	if(!isturf(user.loc))//You can't use jet in nowhere or from mecha/closet
 		return
-	if(!(user.is_flying() || user.is_floating()) || user.buckled)//You don't want use jet in gravity or while buckled.
+	if(!(user.movement_type & FLOATING) || user.buckled)//You don't want use jet in gravity or while buckled.
 		return
 	if(user.pulledby)//You don't must use jet if someone pull you
 		return
@@ -172,7 +172,7 @@
 
 /obj/item/tank/jetpack/suit
 	name = "hardsuit jetpack upgrade"
-	desc = "A modular, compact set of thrusters designed to integrate with a hardsuit. It is fueled by a tank inserted into the suit's storage compartment."
+	desc = "A modular, compact set of thrusters designed to integrate with a hardsuit. It draws propellant from an external air tank."
 	icon = 'icons/obj/items.dmi'
 	icon_state = "jetpack_upgrade"
 	item_state = "jetpack-black"
@@ -200,8 +200,8 @@
 		return
 
 	var/mob/living/carbon/human/H = user
-	if(!istype(H.s_store, /obj/item/tank/internals))
-		to_chat(user, span_warning("You need a tank in your suit storage!"))
+	if((!istype(H.s_store, /obj/item/tank/internals)) && (!istype(H.back, /obj/item/tank/internals)) && (!istype(H.belt, /obj/item/tank/internals)) && (!istype(H.l_store, /obj/item/tank/internals)) && (!istype(H.r_store, /obj/item/tank/internals)))
+		to_chat(user, span_warning("You need to equip a tank!"))
 		return
 	..()
 
@@ -209,7 +209,22 @@
 	if(!istype(loc, /obj/item/clothing/suit/space/hardsuit) || !ishuman(loc.loc) || loc.loc != user)
 		return
 	var/mob/living/carbon/human/H = user
-	tank = H.s_store
+
+	//Cascades down a priority list, taking air from first the suit storage slot, then the back, the belt, the left pocket and the right pocket
+	if(istype(H.back, /obj/item/tank))
+		tank = H.back
+	else if(istype(H.s_store, /obj/item/tank))
+		tank = H.s_store
+	else if(istype(H.belt, /obj/item/tank))
+		tank = H.belt
+	else if(istype(H.l_store, /obj/item/tank))
+		tank = H.l_store
+	else if (istype(H.r_store, /obj/item/tank))
+		tank = H.r_store
+	else
+		tank = null
+		return
+
 	air_contents = tank.air_contents
 	START_PROCESSING(SSobj, src)
 	cur_user = user
@@ -226,8 +241,9 @@
 	if(!istype(loc, /obj/item/clothing/suit/space/hardsuit) || !ishuman(loc.loc))
 		turn_off(cur_user)
 		return
-	var/mob/living/carbon/human/H = loc.loc
-	if(!tank || tank != H.s_store)
+
+	if(!tank)
+		to_chat(usr, span_warning("\The [src] shuts down!"))
 		turn_off(cur_user)
 		return
 	..()

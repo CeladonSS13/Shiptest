@@ -2,11 +2,11 @@
 	name = "\improper Kepori"
 	id = SPECIES_KEPORI
 	default_color = "6060FF"
-	species_traits = list(SCLERA, MUTCOLORS, EYECOLOR, MUTCOLORS_SECONDARY)
+	species_traits = list(SCLERA, MUTCOLORS, MUTCOLORS_SECONDARY, HAS_FLESH, HAS_BONE)
 	inherent_traits = list(TRAIT_SCOOPABLE)
 	mutant_bodyparts = list("kepori_body_feathers", "kepori_head_feathers", "kepori_tail_feathers", "kepori_feathers")
 	default_features = list("mcolor" = "0F0", "wings" = "None", "kepori_feathers" = "None", "kepori_head_feathers" = "None",  "kepori_body_feathers" = "None", "kepori_tail_feathers" = "None")
-	meat = /obj/item/reagent_containers/food/snacks/meat/slab/chicken
+	meat = /obj/item/food/meat/slab/chicken
 	disliked_food = FRIED | GROSS | CLOTH
 	liked_food = MEAT | GORE
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP
@@ -20,7 +20,7 @@
 	coldmod = 1.5
 	// brutemod = 1.5
 	// burnmod = 1.5
-	speedmod = -0.10
+	speedmod = -0.30	// [CELADON-EDIT] - CELADON_BALANCE_SPECIES - Было -0.10
 
 	bodytemp_heat_damage_limit = HUMAN_BODYTEMP_HEAT_DAMAGE_LIMIT + 35
 	bodytemp_cold_damage_limit = HUMAN_BODYTEMP_COLD_DAMAGE_LIMIT + 3
@@ -30,6 +30,7 @@
 
 	bodytemp_autorecovery_divisor = HUMAN_BODYTEMP_AUTORECOVERY_DIVISOR - 4
 
+	fire_overlay = "generic"
 
 	mutanttongue = /obj/item/organ/tongue/kepori
 	species_language_holder = /datum/language_holder/kepori
@@ -50,19 +51,23 @@
 
 	bodytype = BODYTYPE_KEPORI
 
-	species_chest = /obj/item/bodypart/chest/kepori
-	species_head = /obj/item/bodypart/head/kepori
-	species_l_arm = /obj/item/bodypart/l_arm/kepori
-	species_r_arm = /obj/item/bodypart/r_arm/kepori
-	species_l_leg = /obj/item/bodypart/leg/left/kepori
-	species_r_leg = /obj/item/bodypart/leg/right/kepori
+	species_limbs = list(
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/kepori,
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/kepori,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/kepori,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/kepori,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/kepori,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/kepori,
+	)
 
-	species_robotic_chest = /obj/item/bodypart/chest/robot/kepori
-	species_robotic_head = /obj/item/bodypart/head/robot/kepori
-	species_robotic_l_arm = /obj/item/bodypart/l_arm/robot/surplus/kepori
-	species_robotic_r_arm = /obj/item/bodypart/r_arm/robot/surplus/kepori
-	species_robotic_l_leg = /obj/item/bodypart/leg/left/robot/surplus/kepori
-	species_robotic_r_leg = /obj/item/bodypart/leg/right/robot/surplus/kepori
+	species_robotic_limbs = list(
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/robot/kepori,
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/robot/kepori,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/robot/surplus/kepori,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/robot/surplus/kepori,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/robot/surplus/kepori,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/robot/surplus/kepori,
+	)
 
 	robotic_eyes = /obj/item/organ/eyes/robotic/kepori
 
@@ -136,8 +141,12 @@
 	if(slot != ITEM_SLOT_MASK)
 		return FALSE
 	//Blocks all items that are equippable to other slots. (block anything with a flag that ISN'T item_slot_mask)
-	if(I.slot_flags & ~ITEM_SLOT_KEPORI_BEAK)
+	if(I.slot_flags && !ITEM_SLOT_KEPORI_BEAK)	// [CELADON-EDIT] - CELADON_FIXES - Было if(I.slot_flags & ~ITEM_SLOT_KEPORI_BEAK)
 		return FALSE
+	// [CELADON-ADD] - FIXES_MASK_ON_KEPORI
+	if(HAS_TRAIT(H.wear_mask, TRAIT_NODROP))
+		return FALSE
+	// [/CELADON-ADD]
 	if(H.wear_mask && !swap)
 		return FALSE
 	if(I.w_class > WEIGHT_CLASS_SMALL)

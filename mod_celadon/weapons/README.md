@@ -3,6 +3,7 @@
 #### Список PRов:
 
 - https://github.com/MysticalFaceLesS/Shiptest/pulls/#####
+- https://github.com/CeladonSS13/Shiptest/pull/2507
 <!--
   Ссылки на PRы, связанные с модом:
   - Создание
@@ -12,7 +13,7 @@
 <!-- Название мода. Не важно на русском или на английском. -->
 ## Оружие
 
-ID мода: CELADON_WEAPONS
+ID мода: CELADON_WEAPONS, MODPACK_CELADON_RETURN_EGUN, CELADON_RETURN_COMBAT_SHOTGUN
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -20,7 +21,13 @@ ID мода: CELADON_WEAPONS
 
 ### Описание мода
 
+Этот мод меняет баланс пушек
 Этот мод добавляет новые пушки и патроны.
+Этот мод возвращает старые еганы и лазеры.
+Этот мод возвращает вырезанный контент, а именно комбат дробовик обратно в билд, и чутка меняет глушитель.
+Этот мод рефлаворит пушки клипов. Делает ещё что-то, что было сделано до рефлавора пушек.
+Этот мод респрайтит иконки для коробок 5.56, 7.62x40, .308ю
+Этот мод изменяет спрайты магазиновю
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
   А также любая полезная информация.
@@ -30,6 +37,13 @@ ID мода: CELADON_WEAPONS
 
 - EDIT: `code\modules\research\techweb\all_nodes.dm`: `/datum/techweb_node/adv_ballistics` -> `design_ids = list`, `research_costs = list`
 - EDIT: `code\modules\projectiles\projectile\bullets\rifle.dm`: `/obj/projectile/bullet/a858` -> `damage`, `armour_penetration`
+
+Как	MODPACK_CELADON_RETURN_EGUN
+- ADD: `code/datums/components/storage/concrete/pockets.dm`
+- ADD: `code/modules/vending/security.dm`
+- ADD: `code/game/objects/structures/crates_lockers/closets/secure/security.dm`
+Как CELADON_RETURN_COMBAT_SHOTGUN
+Отсутствуют
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -40,7 +54,9 @@ ID мода: CELADON_WEAPONS
 
 ### Оверрайды
 
-- Отсутствуют
+- `mod_celadon\weapons\code\modules\projectiles\guns\ballistic\gun_reflavour.dm` -> `/obj/item/gun/ballistic/automatic/hmg/update_icon_state()`, `/obj/item/gun/ballistic/automatic/hmg/update_overlays()`
+- `mod_celadon\weapons\code\modules\projectiles\guns\ballistic\gun_reflavour.dm` -> `/obj/item/gun/ballistic/automatic/marksman/f4/inteq`,`/obj/item/gun/ballistic/automatic/marksman/f4/indie`, `/obj/item/gun/ballistic/automatic/marksman/f90/inteq`
+- `mod_celadon\weapons\code\modules\projectiles\guns\ballistic\gun_reflavour.dm` -> Все пушки клипов
 <!--
   Если ты добавлял новый модульный оверрайд, его нужно указать здесь.
   Здесь указываются оверрайды в твоём моде и папке `_master_files`
@@ -61,7 +77,7 @@ ID мода: CELADON_WEAPONS
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- Библиотека звуков и спрайтов `_storge_sounds`, `_storge_icons`
+- Библиотека звуков и спрайтов `_storage_sounds`, `_storage_icons`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.
@@ -71,7 +87,7 @@ ID мода: CELADON_WEAPONS
 
 ### Авторы:
 
-Mirag1993, Faduty, Overteh
+Mirag1993, Faduty, Overteh, KOCMOHABT
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.
