@@ -66,40 +66,40 @@
 	name = "Underbarrel Shotgun Crate"
 	desc = "Contains a two shot underbarrel pump shotgun to be mounted on a firearm."
 	cost = 1200
-	contains = list(/obj/item/storage/guncase/underbarrel_shotgun)
+	// contains = list(/obj/item/storage/guncase/underbarrel_shotgun)	// [CELADON-ALERT] - Офы вырубили code/game/objects/items/storage/filled_guncases.dm
 	crate_name = "underbarrel shotgun crate"
 
 /datum/supply_pack/faction/independent/attachment/hognose
 	name = "Underbarrel Hognose Crate"
 	desc = "Contains an eight shot underbarrel 22lr pistol to be mounted on a firearm."
 	cost = 500
-	contains = list(/obj/item/storage/guncase/underbarrel_hognose)
+	// contains = list(/obj/item/storage/guncase/underbarrel_hognose)	// [CELADON-ALERT] - Офы вырубили code/game/objects/items/storage/filled_guncases.dm
 	crate_name = "underbarrel hognose crate"
 
 /datum/supply_pack/faction/independent/attachment/flamethrower
 	name = "Underbarrel Flamethrower Crate"
 	desc = "Contains a compact underbarrel flamethrower to be mounted on a firearm."
 	cost = 750
-	contains = list(/obj/item/storage/guncase/underbarrel_flamethrower)
+	// contains = list(/obj/item/storage/guncase/underbarrel_flamethrower)	// [CELADON-ALERT] - Офы вырубили code/game/objects/items/storage/filled_guncases.dm
 	crate_name = "underbarrel flamethrower crate"
 
 /datum/supply_pack/faction/independent/attachment/e_gun
 	name = "Underbarrel Energy Gun Crate"
 	desc = "Contains an underbarrel energy gun to be mounted on a firearm."
 	cost = 750
-	contains = list(/obj/item/storage/guncase/energy/underbarrel_e_gun)
+	// contains = list(/obj/item/storage/guncase/energy/underbarrel_e_gun)	// [CELADON-ALERT] - Офы вырубили code/game/objects/items/storage/filled_guncases.dm
 	crate_name = "underbarrel energy gun crate"
 
 /datum/supply_pack/faction/independent/attachment/riot_launcher
 	name = "Underbarrel Riot Grenade Launcher Crate"
 	desc = "Contains a single shot underbarrel riot grenade launcher to be mounted on a firearm."
 	cost = 750
-	contains = list(/obj/item/storage/guncase/underbarrel_riot_grenade)
+	// contains = list(/obj/item/storage/guncase/underbarrel_riot_grenade)	// [CELADON-ALERT] - Офы вырубили code/game/objects/items/storage/filled_guncases.dm
 	crate_name = "underbarrel riot grenade launcher crate"
 
 /datum/supply_pack/faction/independent/attachment/flare
 	name = "Underbarrel Flare Gun Crate"
 	desc = "Contains a single shot underbarrel flare gun to be mounted on a firearm. One box of flares included."
 	cost = 200
-	contains = list(/obj/item/attachment/gun/flare)
+	// contains = list(/obj/item/attachment/gun/flare)	// [CELADON-ALERT] - Офы вырубили code/game/objects/items/attachments/gun_attachments/flaregun.dm
 	crate_name = "underbarrel flare gun crate"
