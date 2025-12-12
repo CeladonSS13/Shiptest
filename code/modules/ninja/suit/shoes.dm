@@ -14,6 +14,7 @@
 	heat_protection = FEET
 	max_heat_protection_temperature = SHOES_MAX_TEMP_PROTECT
 
+// [CELADON-ADD] - Logic Ninja
 /obj/item/clothing/shoes/space_ninja/equipped(mob/living/carbon/human/user, slot)
 	. = ..()
 	if(slot == ITEM_SLOT_FEET)
@@ -22,3 +23,4 @@
 /obj/item/clothing/shoes/space_ninja/dropped(mob/living/carbon/human/user)
 	REMOVE_TRAIT(user, TRAIT_SILENT_FOOTSTEPS, SHOES_TRAIT)
 	return ..()
+// [/CELADON-ADD]
