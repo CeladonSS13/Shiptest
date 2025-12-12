@@ -286,3 +286,8 @@
 /area/ruin/rockplanet/nanotrasen
 	name = "Abandoned Research Facility"
 	always_unpowered = FALSE
+
+//Lava Canyon
+/area/ruin/unpowered/scorched_hut
+	name = "Scorched Hut"
+	icon_state = "red"
