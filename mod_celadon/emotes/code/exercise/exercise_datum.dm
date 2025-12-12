@@ -71,7 +71,7 @@
 		return
 	prepare_for_exercise_animation()
 	execute()
-	clear_exercise_animation()
+	// clear_exercise_animation()	// [CELADON-ALERT] - Убрал не используется, пересмотреть
 
 /datum/exercise/proc/execute()
 	if(isobserver(user)) // Госты тоже хотят упражняться!

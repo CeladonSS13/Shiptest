@@ -715,8 +715,8 @@ so as to remain in compliance with the most up-to-date laws."
 	icon = 'mod_celadon/_storage_icons/icons/assets/screen_alert.dmi'
 	icon_state = "direction_lock"
 
-/atom/movable/screen/alert/direction_lock/Click()
-	if(isliving(usr) && ..())
-		var/mob/living/L = usr
-		return L.clear_forced_look()
+// /atom/movable/screen/alert/direction_lock/Click()	// [CELADON-ALERT] - Убрал не используется, пересмотреть
+// 	if(isliving(usr) && ..())
+// 		var/mob/living/L = usr
+// 		return L.clear_forced_look()
 // [/CELADON-ADD]

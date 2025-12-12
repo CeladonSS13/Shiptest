@@ -13,10 +13,10 @@
 		return FALSE
 	return TRUE
 
-/datum/exercise/proc/clear_exercise_animation()
-	if(isliving(user))
-		var/mob/living/L = user
-		L.clear_forced_look(quiet = TRUE)
+// /datum/exercise/proc/clear_exercise_animation()	// [CELADON-ALERT] - Убрал не используется, пересмотреть
+// 	if(isliving(user))
+// 		var/mob/living/L = user
+// 		L.clear_forced_look(quiet = TRUE)
 
 /datum/exercise/proc/prepare_for_exercise_animation()
 	if(isliving(user))

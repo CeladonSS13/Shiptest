@@ -32,7 +32,7 @@
 	RefreshParts()
 
 	// [CELADON-ADD] - Анимации при вставке материалов в техфаб и протолат.
-	RegisterSignal(src, COMSIG_PARENT_ATTACKBY, PROC_REF(OnMatInsertAnimationHook))
+	RegisterSignal(src, COMSIG_ATOM_ATTACKBY, PROC_REF(OnMatInsertAnimationHook))
 	if(materials && materials.mat_container && !materials.silo)
 		materials.mat_container.after_insert = CALLBACK(src, PROC_REF(AfterMaterialInsert))
 	// [/CELADON-ADD]
