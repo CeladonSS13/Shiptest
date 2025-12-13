@@ -140,8 +140,8 @@
 	},
 /obj/machinery/airalarm/directional/east,
 /obj/machinery/light_switch{
-	pixel_y = 23;
-	pixel_x = -3
+	pixel_y = 22;
+	pixel_x = -11
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/maintenance)
@@ -231,7 +231,8 @@
 /area/ship/crew)
 "dT" = (
 /obj/machinery/firealarm/directional/west{
-	pixel_y = -13
+	pixel_y = -6;
+	pixel_x = -32
 	},
 /obj/effect/turf_decal/techfloor{
 	dir = 1
@@ -239,17 +240,18 @@
 /obj/machinery/computer/cargo/retro{
 	dir = 4
 	},
+/obj/structure/extinguisher_cabinet/directional/west{
+	pixel_y = 8;
+	pixel_x = -28
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "dZ" = (
 /obj/effect/decal/cleanable/glass,
-/obj/structure/extinguisher_cabinet/directional/west{
-	pixel_y = 5
-	},
 /obj/machinery/button/door{
 	dir = 4;
-	pixel_x = -33;
-	pixel_y = -7;
+	pixel_x = -22;
+	pixel_y = 2;
 	id = "mudskipper_door";
 	name = "Cargo Door"
 	},
@@ -259,6 +261,10 @@
 	pixel_y = -7;
 	id = "mudskipper_shield";
 	name = "Cargo Holofield"
+	},
+/obj/structure/sign/warning{
+	pixel_x = -23;
+	pixel_y = 15
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
@@ -452,7 +458,8 @@
 	},
 /obj/machinery/light_switch{
 	dir = 4;
-	pixel_x = -22
+	pixel_x = -19;
+	pixel_y = -3
 	},
 /obj/item/paper_bin{
 	pixel_x = 5;
@@ -901,8 +908,8 @@
 	},
 /obj/machinery/light_switch{
 	dir = 8;
-	pixel_x = 22;
-	pixel_y = 5
+	pixel_x = 19;
+	pixel_y = 11
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/hallway/aft)
@@ -1335,6 +1342,11 @@
 /obj/structure/cable{
 	icon_state = "0-1"
 	},
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -19;
+	pixel_y = -13
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/aft)
 "yY" = (
@@ -1405,7 +1417,7 @@
 	},
 /obj/machinery/light_switch{
 	dir = 8;
-	pixel_x = 22;
+	pixel_x = 19;
 	pixel_y = -14
 	},
 /obj/machinery/light/small/directional/east{
@@ -1632,9 +1644,6 @@
 /turf/open/floor/wood/walnut,
 /area/ship/crew)
 "FN" = (
-/obj/structure/sign/warning{
-	pixel_x = -28
-	},
 /obj/machinery/autolathe/hacked,
 /obj/item/stack/sheet/metal/twenty{
 	pixel_x = 0;
@@ -1644,6 +1653,7 @@
 	pixel_x = 0;
 	pixel_y = -3
 	},
+/obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "Gk" = (
@@ -1826,7 +1836,6 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance)
 "KU" = (
-/obj/structure/extinguisher_cabinet/directional/west,
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
@@ -1835,12 +1844,16 @@
 	pixel_x = 0;
 	pixel_y = 28
 	},
+/obj/structure/extinguisher_cabinet/directional/west{
+	pixel_y = -5
+	},
+/obj/machinery/firealarm/directional/west{
+	pixel_x = -32;
+	pixel_y = 6
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/cryo)
 "Lw" = (
-/obj/machinery/firealarm/directional/west{
-	pixel_y = 4
-	},
 /obj/machinery/light_switch{
 	dir = 4;
 	pixel_x = -22;
@@ -2020,7 +2033,6 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "OD" = (
-/obj/machinery/airalarm/directional/east,
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
 	},
@@ -2535,7 +2547,7 @@
 	},
 /obj/machinery/light_switch{
 	dir = 1;
-	pixel_y = -21;
+	pixel_y = -17;
 	pixel_x = 10
 	},
 /turf/open/floor/plasteel/dark,
