@@ -1225,7 +1225,7 @@
 /obj/item/storage/backpack/security,
 /obj/item/reagent_containers/spray/pepper,
 /obj/item/storage/box/handcuffs,
-/obj/item/clothing/head/helmet/sec,
+/obj/item/clothing/head/helmet/m10/nanotrasen,
 /obj/item/clothing/suit/armor/nanotrasen/slim,
 /obj/item/clothing/suit/armor/nanotrasen,
 /obj/item/clothing/suit/hooded/wintercoat/security,
@@ -2503,15 +2503,11 @@
 /obj/item/storage/backpack/satchel/tox,
 /obj/item/storage/backpack/messenger/tox,
 /obj/item/storage/belt/utility/full/engi,
-/obj/item/gun/energy/e_gun{
-	pixel_x = 1;
-	pixel_y = 0;
-	default_ammo_type = /obj/item/stock_parts/cell/gun/upgraded
-	},
 /obj/item/anomaly_neutralizer,
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/shoes/laceup,
 /obj/item/clothing/shoes/jackboots,
+/obj/item/gun/energy/e_gun/e_old/nuclear,
 /turf/open/floor/carpet/purple,
 /area/ship/general/command_crew/rd)
 "yu" = (
@@ -3440,10 +3436,11 @@
 /obj/item/clothing/head/supply_chief,
 /obj/item/radio/headset/nanotrasen,
 /obj/item/storage/belt/utility/full/engi,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/shoes/laceup,
+/obj/item/gun/energy/e_gun/e_old/adv_stopping,
 /turf/open/floor/carpet/orange,
 /area/ship/general/command_crew)
 "KT" = (
@@ -4036,8 +4033,8 @@
 /obj/effect/turf_decal/trimline/opaque/vired/filled/warning{
 	dir = 1
 	},
-/obj/item/ammo_box/magazine/smgm9mm,
-/obj/item/ammo_box/magazine/smgm9mm,
+/obj/item/ammo_box/magazine/m9mm_expedition,
+/obj/item/ammo_box/magazine/m9mm_expedition,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
@@ -4053,8 +4050,8 @@
 	req_ship_access = 1;
 	name = "ammunition closet"
 	},
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
 /obj/item/storage/box/ammo/c9mm_rubber,
 /obj/item/storage/box/ammo/c9mm,
 /turf/open/floor/plasteel/dark,

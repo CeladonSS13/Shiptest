@@ -396,7 +396,7 @@
 	ears = /obj/item/radio/headset/alt
 	uniform = /obj/item/clothing/under/rank/security/officer
 	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/helmet/sec
+	head = /obj/item/clothing/head/helmet/m10
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -408,7 +408,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
 	courierbag = /obj/item/storage/backpack/messenger/sec
 
-	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
+	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet/m10)
 	//The helmet is necessary because /obj/item/clothing/head/helmet/sec is overwritten in the chameleon list by the standard helmet, which has the same name and icon state
 
 /datum/outfit/job/cel/independent/security/disarmed //No armor, no pocket handcuffs.
@@ -443,7 +443,7 @@
 	ears = /obj/item/radio/headset/alt
 	uniform = /obj/item/clothing/under/rank/security/officer
 	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/helmet/sec
+	head = /obj/item/clothing/head/helmet/m10
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -457,7 +457,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
 	courierbag = /obj/item/storage/backpack/messenger/sec
 
-	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
+	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet/m10)
 	//The helmet is necessary because /obj/item/clothing/head/helmet/sec is overwritten in the chameleon list by the standard helmet, which has the same name and icon state
 
 // MARK:Engineer
