@@ -1,14 +1,9 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
 /obj/structure/elevator_platform,
-/obj/structure/chair/bench/blue{
-	dir = 1
+/obj/machinery/status_display/elevator{
+	pixel_y = 32
 	},
-/turf/template_noop,
-/area/template_noop/elevator)
-"c" = (
-/obj/structure/elevator_platform,
-/obj/structure/chair/bench/blue,
 /turf/template_noop,
 /area/template_noop/elevator)
 "e" = (
@@ -18,18 +13,8 @@
 /area/template_noop/elevator)
 "g" = (
 /obj/structure/elevator_platform,
-/obj/structure/table/reinforced,
-/obj/item/radio/intercom/table{
-	dir = 1;
-	pixel_x = 7;
-	pixel_y = 7
-	},
-/obj/item/newspaper{
-	pixel_x = -11;
-	pixel_y = 9
-	},
-/obj/machinery/status_display/elevator{
-	pixel_y = 32
+/obj/structure/chair/bench/blue{
+	dir = 8
 	},
 /turf/template_noop,
 /area/template_noop/elevator)
@@ -47,39 +32,38 @@
 "S" = (
 /obj/structure/elevator_platform,
 /obj/machinery/light/dim/directional/east,
-/turf/template_noop,
-/area/template_noop/elevator)
-"X" = (
-/obj/structure/elevator_platform,
-/obj/machinery/light/dim/directional/west,
+/obj/structure/table/reinforced,
+/obj/item/radio/intercom/table{
+	dir = 4;
+	pixel_y = 5;
+	pixel_x = 9;
+	req_one_access_txt = "8102"
+	},
+/obj/item/newspaper{
+	pixel_x = -11;
+	pixel_y = 9
+	},
 /turf/template_noop,
 /area/template_noop/elevator)
 
 (1,1,1) = {"
-c
-A
-X
-A
-a
-"}
-(2,1,1) = {"
 s
 A
 A
 A
 e
 "}
+(2,1,1) = {"
+a
+A
+A
+A
+A
+"}
 (3,1,1) = {"
 g
-A
-A
-A
-e
-"}
-(4,1,1) = {"
-c
-A
+g
 S
-A
-a
+g
+g
 "}

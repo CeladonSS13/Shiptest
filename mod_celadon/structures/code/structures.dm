@@ -306,3 +306,7 @@
 	density = FALSE
 	climbable = FALSE
 	buildstackamount = 1
+
+/obj/structure/fluff/hedge/snow
+	name = "hedge snow"
+	icon = 'mod_celadon/_storage_icons/icons/structures/hedge_snow.dmi'

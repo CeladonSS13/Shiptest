@@ -391,9 +391,6 @@
 	},
 /area/hangar)
 "gE" = (
-/obj/structure/chair{
-	dir = 1
-	},
 /obj/effect/turf_decal/borderfloor{
 	dir = 4
 	},
@@ -401,25 +398,26 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
-/obj/effect/landmark/outpost/elevator_machine{
-	shaft = "1"
-	},
 /obj/machinery/light/small/directional/east{
 	light_color = "#FF0000";
 	pixel_y = -10
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/elevator_call_button{
 	dir = 8;
 	pixel_x = 25;
-	pixel_y = 6
+	pixel_y = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/landmark/outpost/elevator_machine{
+	shaft = "1";
+	pixel_x = 9
+	},
 /turf/open/floor/plasteel/patterned/brushed{
 	light_color = "#1B1D2E";
 	light_range = 2;
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "gR" = (
 /obj/effect/turf_decal/industrial/fire{
 	dir = 4
@@ -505,7 +503,7 @@
 /turf/open/floor/plasteel/patterned{
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "iw" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 9
@@ -569,7 +567,7 @@
 /turf/open/floor/plasteel/elevatorshaft{
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "ky" = (
 /turf/open/chasm,
 /area/hangar)
@@ -618,7 +616,7 @@
 /turf/open/floor/plasteel/patterned{
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "lJ" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 1
@@ -665,7 +663,7 @@
 /turf/open/floor/plasteel/elevatorshaft{
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "na" = (
 /obj/effect/turf_decal/borderfloor/full,
 /obj/effect/turf_decal/industrial/warning{
@@ -857,7 +855,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/newscaster/directional/east,
 /turf/open/floor/plasteel/dark,
-/area/hangar)
+/area/hangar/elevator)
 "ti" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 4
@@ -1031,6 +1029,9 @@
 /obj/effect/turf_decal/industrial/fire/fulltile,
 /turf/open/floor/plasteel/tech,
 /area/hangar)
+"zt" = (
+/turf/closed/indestructible/reinforced,
+/area/hangar/elevator)
 "zM" = (
 /obj/machinery/telecomms/relay,
 /obj/effect/decal/cleanable/dirt,
@@ -1117,7 +1118,7 @@
 /turf/open/floor/plasteel/patterned{
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "CL" = (
 /obj/structure/sign/warning{
 	pixel_y = 5;
@@ -1317,7 +1318,7 @@
 /turf/open/floor/plasteel/patterned/brushed{
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "HF" = (
 /obj/effect/turf_decal/borderfloor,
 /obj/structure/railing/corner{
@@ -1431,7 +1432,7 @@
 /obj/effect/decal/cleanable/wrapping,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
-/area/hangar)
+/area/hangar/elevator)
 "LJ" = (
 /obj/effect/decal/fakelattice,
 /obj/effect/decal/cleanable/greenglow{
@@ -1582,7 +1583,7 @@
 	light_range = 2;
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "Ow" = (
 /obj/machinery/door/airlock{
 	dir = 4
@@ -1994,7 +1995,7 @@
 /turf/open/floor/plasteel/patterned{
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "WR" = (
 /obj/effect/decal/fakelattice,
 /obj/effect/decal/cleanable/dirt{
@@ -2053,7 +2054,7 @@
 /turf/open/floor/plasteel/patterned{
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "XR" = (
 /obj/effect/decal/fakelattice,
 /obj/effect/decal/cleanable/oil,
@@ -2147,7 +2148,7 @@
 /turf/open/floor/plasteel/patterned{
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 
 (1,1,1) = {"
 aT
@@ -6147,11 +6148,11 @@ aa
 aa
 aa
 aa
-aa
+zt
 HD
-aa
 HD
-aa
+HD
+zt
 aa
 aa
 aa
@@ -6310,68 +6311,6 @@ Go
 Go
 fJ
 Go
-ap
-ap
-BK
-yG
-Ia
-Go
-ap
-ap
-ap
-ap
-JN
-JN
-Go
-iB
-JN
-Go
-XR
-ap
-JN
-JN
-Go
-fJ
-aa
-mQ
-mQ
-mQ
-mQ
-mQ
-aa
-fJ
-ap
-BK
-yG
-Ia
-Go
-ap
-ap
-ap
-ap
-JN
-JN
-Go
-iB
-JN
-Go
-XR
-ap
-JN
-iB
-fJ
-Go
-Go
-ap
-aa
-"}
-(69,1,1) = {"
-aa
-Go
-Go
-Go
-fJ
-Go
 uS
 Sg
 Wd
@@ -6427,67 +6366,129 @@ JN
 ap
 aa
 "}
+(69,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aT
+aT
+aa
+aT
+aT
+aT
+aT
+aT
+aa
+aT
+aT
+aT
+aT
+aT
+aa
+aT
+aT
+aT
+aT
+aT
+aa
+aT
+aT
+aa
+zt
+zt
+zt
+zt
+zt
+aa
+aT
+aT
+aT
+aT
+aa
+aT
+aT
+aT
+aT
+aT
+aa
+aT
+aT
+aT
+aT
+aT
+aa
+aT
+aT
+aT
+aa
+aa
+aa
+aa
+aa
+"}
 (70,1,1) = {"
-aa
-aa
-aa
-aa
-aa
-aT
-aT
-aa
 aT
 aT
 aT
 aT
 aT
-aa
 aT
 aT
 aT
 aT
 aT
-aa
 aT
 aT
 aT
 aT
 aT
-aa
-aT
-aT
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aT
-aT
-aT
-aT
-aa
 aT
 aT
 aT
 aT
 aT
-aa
 aT
 aT
 aT
 aT
 aT
-aa
 aT
 aT
 aT
-aa
-aa
-aa
-aa
-aa
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
+aT
 "}
 (71,1,1) = {"
 aT

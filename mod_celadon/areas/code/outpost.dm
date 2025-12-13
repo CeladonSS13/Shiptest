@@ -319,8 +319,8 @@
 		'sound/ambience/elevator/elevator3.ogg',
 	)
 	sound_environment = SOUND_AREA_SMALL_ENCLOSED
-	min_ambience_cooldown = 1 SECONDS
-	max_ambience_cooldown = 20 SECONDS
+	min_ambience_cooldown = 0 SECONDS
+	max_ambience_cooldown = 0 SECONDS
 
 /area/outpost/elevator
 	name = "Zone Elevator"
@@ -334,3 +334,17 @@
 	sound_environment = SOUND_AREA_SMALL_ENCLOSED
 	min_ambience_cooldown = 10 SECONDS
 	max_ambience_cooldown = 30 SECONDS
+
+/area/hangar/elevator
+	name = "Hangar Elevator"
+	icon_state = "hangar_elevator"
+	ambience_index = AMBIENCE_ELEVATOR
+	ambientsounds = list(
+		'sound/ambience/elevator/elevator1.ogg',
+		'sound/ambience/elevator/elevator2.ogg',
+		'sound/ambience/elevator/elevator3.ogg',
+	)
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	min_ambience_cooldown = 0 SECONDS
+	max_ambience_cooldown = 0 SECONDS
+

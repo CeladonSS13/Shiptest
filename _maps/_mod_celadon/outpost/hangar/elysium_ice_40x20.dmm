@@ -213,7 +213,7 @@
 /turf/open/floor/plasteel/patterned{
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "bz" = (
 /obj/effect/decal/fakelattice,
 /obj/effect/decal/cleanable/oil,
@@ -235,7 +235,7 @@
 /turf/open/floor/plasteel/patterned/brushed{
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "bU" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/effect/decal/cleanable/dirt,
@@ -396,7 +396,7 @@
 /turf/open/floor/plasteel/patterned{
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "eW" = (
 /obj/effect/turf_decal/borderfloor/full,
 /obj/machinery/light/floor{
@@ -481,7 +481,10 @@
 	light_range = 2;
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
+"ip" = (
+/turf/closed/indestructible/reinforced,
+/area/hangar/elevator)
 "iB" = (
 /obj/effect/turf_decal/borderfloor/full,
 /obj/effect/turf_decal/industrial/warning{
@@ -563,7 +566,7 @@
 /turf/open/floor/plasteel/patterned{
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "lO" = (
 /obj/effect/turf_decal/borderfloor,
 /obj/effect/turf_decal/siding/white{
@@ -677,7 +680,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
-/area/hangar)
+/area/hangar/elevator)
 "oL" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 1
@@ -762,6 +765,16 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
+"qz" = (
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/traffic,
+/obj/machinery/door/poddoor/ert,
+/turf/open/floor/plasteel/patterned/brushed{
+	planetary_atmos = 1
+	},
+/area/hangar/elevator)
 "qN" = (
 /obj/effect/turf_decal/borderfloor/corner{
 	dir = 8
@@ -871,6 +884,9 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
+"rP" = (
+/turf/closed/indestructible/rock/schist,
+/area/hangar/elevator)
 "rU" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 5
@@ -879,7 +895,7 @@
 /turf/open/floor/plasteel/patterned{
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "sx" = (
 /obj/effect/decal/fakelattice{
 	layer = 2.010
@@ -887,7 +903,7 @@
 /turf/open/floor/plasteel/elevatorshaft{
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "te" = (
 /obj/machinery/conveyor/auto/outpost{
 	dir = 8
@@ -917,9 +933,6 @@
 /turf/open/floor/plasteel/tech,
 /area/hangar)
 "tB" = (
-/obj/structure/chair{
-	dir = 1
-	},
 /obj/effect/turf_decal/borderfloor{
 	dir = 4
 	},
@@ -927,25 +940,26 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
-/obj/effect/landmark/outpost/elevator_machine{
-	shaft = "1"
-	},
-/obj/machinery/elevator_call_button{
-	dir = 8;
-	pixel_x = 25;
-	pixel_y = 6
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/small/directional/east{
 	light_color = "#FF0000";
 	pixel_y = -10
+	},
+/obj/machinery/elevator_call_button{
+	dir = 8;
+	pixel_x = 25;
+	pixel_y = 4
+	},
+/obj/effect/landmark/outpost/elevator_machine{
+	shaft = "1";
+	pixel_x = 9
 	},
 /turf/open/floor/plasteel/patterned/brushed{
 	light_color = "#1B1D2E";
 	light_range = 2;
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "tT" = (
 /obj/machinery/conveyor/auto{
 	dir = 1;
@@ -1223,7 +1237,7 @@
 /obj/effect/decal/cleanable/wrapping,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
-/area/hangar)
+/area/hangar/elevator)
 "EJ" = (
 /obj/effect/turf_decal/borderfloor/full,
 /obj/effect/turf_decal/industrial/warning{
@@ -1283,7 +1297,7 @@
 /turf/open/floor/plasteel/patterned{
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "FX" = (
 /obj/effect/decal/fakelattice,
 /obj/effect/decal/cleanable/dirt{
@@ -1458,7 +1472,7 @@
 	},
 /obj/machinery/newscaster/directional/east,
 /turf/open/floor/plasteel/dark,
-/area/hangar)
+/area/hangar/elevator)
 "Md" = (
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel/tech,
@@ -1809,7 +1823,7 @@
 /turf/open/floor/plasteel/elevatorshaft{
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 "YG" = (
 /obj/structure/sign/poster/contraband/borg_fancy_2,
 /turf/closed/indestructible/reinforced,
@@ -1880,7 +1894,7 @@
 /turf/open/floor/plasteel/patterned{
 	planetary_atmos = 1
 	},
-/area/hangar)
+/area/hangar/elevator)
 
 (1,1,1) = {"
 aY
@@ -4461,14 +4475,14 @@ aO
 aO
 aO
 aO
-aY
-ab
-ab
-ab
+rP
+ip
+ip
+ip
 oC
-ab
-ab
-ab
+ip
+ip
+ip
 wR
 aO
 pv
@@ -4503,14 +4517,14 @@ pv
 aO
 aY
 aw
-aY
-ab
+rP
+ip
 Ep
 lG
 eK
 Fx
 io
-ab
+ip
 aY
 aO
 aO
@@ -4545,14 +4559,14 @@ aO
 aY
 aY
 aY
-aY
-ab
+rP
+ip
 LS
 rU
 ZK
 bk
 tB
-ab
+ip
 aY
 aY
 aO
@@ -4587,14 +4601,14 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
+ip
+ip
+ip
 bL
-ab
 bL
-ab
-ab
+bL
+ip
+ip
 ab
 ab
 ab
@@ -4629,14 +4643,14 @@ bj
 FX
 ai
 TX
-aG
-ab
+qz
+ip
 sx
 sx
 sx
 sx
 XP
-ab
+ip
 aG
 bj
 ai
@@ -4671,14 +4685,14 @@ bj
 ai
 ai
 TX
-aG
-ab
+qz
+ip
 sx
 sx
 sx
 sx
 sx
-ab
+ip
 aG
 bj
 ai
@@ -4703,48 +4717,6 @@ TX
 TX
 aG
 TX
-bj
-bj
-bj
-ai
-TX
-bz
-bj
-ai
-ai
-TX
-aG
-ab
-sx
-sx
-sx
-sx
-sx
-ab
-aG
-bj
-ai
-TX
-lb
-ai
-TX
-bz
-bj
-ai
-lb
-aG
-TX
-TX
-bj
-ab
-"}
-(69,1,1) = {"
-ab
-TX
-TX
-TX
-aG
-TX
 Xz
 TX
 es
@@ -4755,14 +4727,14 @@ bj
 bj
 Vs
 TX
-aG
-ab
+qz
+ip
 sx
 sx
 sx
 sx
 sx
-ab
+ip
 aG
 bj
 TX
@@ -4780,31 +4752,49 @@ ai
 bj
 ab
 "}
+(69,1,1) = {"
+ab
+ab
+ab
+ab
+ab
+aY
+aY
+aY
+ab
+aY
+aY
+aY
+aY
+aY
+ab
+aY
+aY
+ab
+ip
+ip
+ip
+ip
+ip
+ab
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+ab
+aY
+aY
+aY
+ab
+ab
+ab
+ab
+ab
+"}
 (70,1,1) = {"
-ab
-ab
-ab
-ab
-ab
-aY
-aY
-aY
-ab
-aY
-aY
-aY
-aY
-aY
-ab
-aY
-aY
-ab
-ab
-ab
-ab
-ab
-ab
-ab
 aY
 aY
 aY
@@ -4812,15 +4802,39 @@ aY
 aY
 aY
 aY
-ab
 aY
 aY
 aY
-ab
-ab
-ab
-ab
-ab
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
 "}
 (71,1,1) = {"
 aY
