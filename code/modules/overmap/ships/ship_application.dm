@@ -23,12 +23,10 @@
 /datum/ship_application/New(mob/dead/new_player/applicant, datum/overmap/ship/controlled/parent)
 	// If the admin is in stealth mode, we use their fakekey.
 	app_mob = applicant
-	// [CELADON-EDIT] - SHIP_SELECTION_REWORK
+	// [CELADON-EDIT] - SHIP_SELECTION_REWORK & FIXES_ADMIN_STEALTH
 	//app_name = app_mob.client?.prefs.real_name
-	app_name = clean_html_entities(app_mob.client?.prefs.real_name)
-	// [/CELADON-EDIT]
-	// [CELADON-EDIT] - FIXES_ADMIN_STEALTH
 	// app_key = app_mob.client?.holder?.fakekey ? app_mob.client.holder.fakekey : applicant.key	// ORIGINAL
+	app_name = clean_html_entities(app_mob.client?.prefs.real_name)
 	app_key = applicant.key
 	// [/CELADON-EDIT]
 	parent_ship = parent
@@ -38,11 +36,6 @@
 	// your currently-open tgui windows don't get removed if you spawn into a body
 	RegisterSignal(app_mob, COMSIG_PARENT_QDELETING, PROC_REF(applicant_deleting))
 	RegisterSignal(parent_ship, COMSIG_PARENT_QDELETING, PROC_REF(important_deleting_during_apply))
-
-
-	// [CELADON-EDIT] - Используем реальный ключ для индексации, чтобы избежать проблем при смене fakekey
-
-	// [/CELADON-EDIT]
 
 /datum/ship_application/Destroy()
 	SStgui.close_uis(src)

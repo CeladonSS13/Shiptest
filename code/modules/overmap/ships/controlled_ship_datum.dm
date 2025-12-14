@@ -384,10 +384,8 @@
 	// [CELADON-EDIT] - FIXES_ADMIN_STEALTH
 	// return LAZYACCESS(applications, ckey(index_key))	// ORIGINAL
 	var/result = LAZYACCESS(applications, ckey(index_key))
-
 	if(!result && applicant.client?.holder?.fakekey)
 		result = LAZYACCESS(applications, ckey(applicant.key))
-
 	return result
 	// [/CELADON-EDIT]
 

@@ -352,9 +352,6 @@ FIXES_CQC_GRAB
 FIXES_DEL_FISH
 - `code/modules/fishing/fish/_fish.dm` : Фиксим удаление рыбы после повторной разделки
 
-FIXES_ADMIN_STEALTH
-- `code/modules/overmap/ships/ship_application.dm`		: Если не нашли по текущему ключу, ищем по реальному ключу (для случая смены fakekey)
-- `code/modules/overmap/ships/controlled_ship_datum.dm`
 FIXES_ADVANCED_FIRSTAID
 - `code/game/objects/items/storage/firstaid.dm` : Увеличиваем max_combined_w_class чтобы предметы помещались обратно
 FIXES_HOLO_ESWORD
@@ -449,8 +446,10 @@ RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFa
 FIXES_TWO_HANDED_CRASH
 - ADD: `code/_onclick/item_attack.dm` - добавлена обработка звуков если приходи не один файл, а лист ( обычно )
 
-FIXES_STEALTH_SHIP_APPLICATION
+FIXES_ADMIN_STEALTH
 - ADD: `mod_celadon/fixes/code/ship_application_stealth_fix.dm` - Фикс заявок на корабль для админов в стелс-моде. Теперь используется реальный ключ игрока для индексации заявок, что позволяет админам менять fakekey без потери доступа к заявкам
+- `code/modules/overmap/ships/ship_application.dm`		: Если не нашли по текущему ключу, ищем по реальному ключу (для случая смены fakekey)
+- `code/modules/overmap/ships/controlled_ship_datum.dm`
 
 <!--
   Здесь находится твой никнейм
