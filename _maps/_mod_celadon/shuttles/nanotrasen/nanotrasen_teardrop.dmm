@@ -437,6 +437,9 @@
 /obj/effect/turf_decal/spline/plain/opaque/ntbluelight{
 	dir = 8
 	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "eF" = (
@@ -1224,6 +1227,12 @@
 	dir = 1;
 	layer = 2
 	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "nd" = (
@@ -1367,6 +1376,9 @@
 	dir = 9
 	},
 /obj/machinery/light/floor,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "os" = (
@@ -1584,18 +1596,11 @@
 	pixel_x = 9;
 	pixel_y = 12
 	},
-/obj/structure/sign/poster/contraband/starkist{
-	pixel_x = 32
-	},
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "qc" = (
 /obj/machinery/power/smes/shuttle/precharged{
 	dir = 4
-	},
-/obj/machinery/door/poddoor{
-	dir = 4;
-	id = "gecko_starboard_thrusters"
 	},
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -1604,6 +1609,10 @@
 	dir = 8
 	},
 /obj/machinery/door/window/eastleft,
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "teardrop_eng"
+	},
 /turf/open/floor/engine,
 /area/ship/engineering)
 "qe" = (
@@ -1922,6 +1931,9 @@
 	icon_state = "2-4";
 	tag = null
 	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "ul" = (
@@ -2177,10 +2189,6 @@
 /obj/machinery/power/smes/shuttle/precharged{
 	dir = 4
 	},
-/obj/machinery/door/poddoor{
-	dir = 4;
-	id = "gecko_starboard_thrusters"
-	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -2188,6 +2196,10 @@
 	dir = 8
 	},
 /obj/machinery/door/window/eastright,
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "teardrop_eng"
+	},
 /turf/open/floor/engine,
 /area/ship/engineering)
 "xN" = (
@@ -2410,6 +2422,9 @@
 	dir = 1;
 	layer = 4
 	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "yz" = (
@@ -2423,14 +2438,14 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "yW" = (
-/obj/effect/spawner/structure/window/shuttle,
-/obj/machinery/door/poddoor{
-	id = "teardrop_windows"
+/obj/effect/turf_decal/corner/opaque/black/three_quarters{
+	dir = 8
 	},
-/obj/item/clothing/mask/gas/sechailer,
-/obj/item/tank/jetpack/oxygen/security,
-/turf/open/floor/plating,
-/area/ship/security)
+/obj/structure/sign/poster/contraband/starkist{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel/heavymetal/var4,
+/area/ship/hallway/central)
 "yZ" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 8
@@ -2542,6 +2557,23 @@
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm/dormtwo)
+"Ar" = (
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "teardrop_eng"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/window/plasma/reinforced/spawner{
+	dir = 8
+	},
+/obj/machinery/door/window/eastright,
+/turf/open/floor/engine,
+/area/ship/engineering)
 "As" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2713,9 +2745,6 @@
 	id = "teardrop_cargo";
 	name = "Cargo Bay"
 	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
@@ -2723,6 +2752,9 @@
 /obj/effect/turf_decal/industrial/warning,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
@@ -3520,6 +3552,21 @@
 	},
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering)
+"Mf" = (
+/obj/effect/turf_decal/borderfloorblack,
+/obj/effect/turf_decal/techfloor{
+	dir = 1;
+	layer = 2
+	},
+/obj/effect/turf_decal/trimline/opaque/solgovgold/warning{
+	dir = 1;
+	layer = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/cargo)
 "Ml" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
@@ -4764,7 +4811,7 @@ IB
 yz
 xL
 xL
-xL
+Ar
 yz
 yz
 fa
@@ -5049,7 +5096,7 @@ lo
 ja
 Oj
 sG
-su
+yW
 ho
 sH
 xj
@@ -5231,7 +5278,7 @@ aO
 (22,1,1) = {"
 fa
 Cj
-yx
+Mf
 QY
 cs
 yd
@@ -5508,7 +5555,7 @@ Kn
 jd
 lg
 fI
-yW
+NW
 fa
 fa
 fa
