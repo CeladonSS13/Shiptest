@@ -687,6 +687,10 @@
 	},
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/hallway/central)
+"hV" = (
+/obj/item/kirbyplants,
+/turf/open/floor/plasteel/heavymetal/var4,
+/area/ship/hallway/central)
 "ib" = (
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 8
@@ -1258,6 +1262,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
+/obj/structure/chair/wood,
 /turf/open/floor/carpet/nanoweave,
 /area/ship/crew/canteen/kitchen)
 "nq" = (
@@ -1882,10 +1887,6 @@
 	},
 /turf/open/floor/engine/airless,
 /area/ship/engineering)
-"tN" = (
-/obj/item/kirbyplants,
-/turf/open/floor/plasteel/heavymetal/var4,
-/area/ship/hallway/central)
 "tR" = (
 /obj/machinery/door/window/northright{
 	dir = 4
@@ -3780,6 +3781,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/portable_atmospherics/scrubber,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "Pa" = (
@@ -4407,6 +4409,9 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/siding/wood/end{
+	dir = 4
+	},
+/obj/structure/chair/wood{
 	dir = 4
 	},
 /turf/open/floor/wood/walnut,
@@ -5334,7 +5339,7 @@ SU
 Sr
 Bw
 Qb
-tN
+hV
 wD
 bq
 QP
