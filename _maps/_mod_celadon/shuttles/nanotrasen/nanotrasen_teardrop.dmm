@@ -1882,6 +1882,10 @@
 	},
 /turf/open/floor/engine/airless,
 /area/ship/engineering)
+"tN" = (
+/obj/item/kirbyplants,
+/turf/open/floor/plasteel/heavymetal/var4,
+/area/ship/hallway/central)
 "tR" = (
 /obj/machinery/door/window/northright{
 	dir = 4
@@ -2216,6 +2220,7 @@
 /obj/effect/turf_decal/spline/fancy/opaque/ntbluelight/corner{
 	dir = 4
 	},
+/obj/machinery/light/floor,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/hallway/central)
 "xT" = (
@@ -4056,6 +4061,7 @@
 	color = "#B38274";
 	dir = 1
 	},
+/obj/machinery/light/floor,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
 "Sf" = (
@@ -4145,17 +4151,16 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "SU" = (
-/obj/machinery/light/floor,
 /obj/effect/turf_decal/siding/wood{
 	color = "#B38274";
 	dir = 9
 	},
+/obj/item/kirbyplants/photosynthetic{
+	pixel_y = 6;
+	pixel_x = -3
+	},
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
-"Ta" = (
-/obj/machinery/light/floor,
-/turf/open/floor/plasteel/heavymetal/var4,
-/area/ship/hallway/central)
 "Tv" = (
 /obj/machinery/computer/crew{
 	dir = 8
@@ -5329,7 +5334,7 @@ SU
 Sr
 Bw
 Qb
-Ta
+tN
 wD
 bq
 QP
@@ -5424,7 +5429,7 @@ KW
 Ww
 yr
 Bw
-Ta
+mc
 oU
 wD
 QC
