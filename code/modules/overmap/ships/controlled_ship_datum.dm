@@ -381,7 +381,13 @@
 
 /datum/overmap/ship/controlled/proc/get_application(mob/applicant)
 	var/index_key = applicant.client?.holder?.fakekey ? applicant.client.holder.fakekey : applicant.key
-	return LAZYACCESS(applications, ckey(index_key))
+	// [CELADON-EDIT] - FIXES_ADMIN_STEALTH
+	// return LAZYACCESS(applications, ckey(index_key))	// ORIGINAL
+	var/result = LAZYACCESS(applications, ckey(index_key))
+	if(!result && applicant.client?.holder?.fakekey)
+		result = LAZYACCESS(applications, ckey(applicant.key))
+	return result
+	// [/CELADON-EDIT]
 
 /**
  * Bastardized version of GLOB.manifest.manifest_inject, but used per ship.

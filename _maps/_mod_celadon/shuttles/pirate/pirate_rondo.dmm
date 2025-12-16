@@ -416,9 +416,6 @@
 /area/ship/hallway/central)
 "fQ" = (
 /obj/structure/safe,
-/obj/item/storage/toolbox/infiltrator{
-	pixel_y = 5
-	},
 /obj/item/tank/jetpack/suit,
 /obj/effect/turf_decal/corner/opaque/syndiered/three_quarters{
 	dir = 8
@@ -628,10 +625,6 @@
 	pixel_y = 5;
 	pixel_x = -8
 	},
-/obj/item/storage/box/teargas{
-	pixel_x = 9;
-	pixel_y = -3
-	},
 /turf/open/floor/engine,
 /area/ship/security/armory)
 "iJ" = (
@@ -772,7 +765,6 @@
 /obj/item/storage/box/ammo/c45,
 /obj/item/storage/box/ammo/a308/hunterspride,
 /obj/item/storage/box/ammo/a308/hunterspride,
-/obj/item/storage/box/ammo/a12g_slug,
 /obj/item/storage/box/ammo/a12g_slug,
 /obj/structure/closet/secure_closet{
 	anchored = 1;
@@ -1207,10 +1199,6 @@
 /area/ship/security/armory)
 "pH" = (
 /obj/machinery/light/directional/west,
-/obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
-/obj/item/tank/jetpack/oxygen/harness,
-/obj/item/clothing/mask/gas/ramzi,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "pY" = (
@@ -1997,10 +1985,10 @@
 	},
 /area/ship/external)
 "zE" = (
-/obj/machinery/power/shuttle/engine/electric/premium,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
+/obj/machinery/power/shuttle/engine/electric,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "zL" = (
@@ -2413,10 +2401,6 @@
 /obj/item/clothing/glasses/hud/security/sunglasses/hardliners{
 	pixel_y = 13;
 	pixel_x = 9
-	},
-/obj/item/chainsaw{
-	pixel_y = 4;
-	pixel_x = 3
 	},
 /obj/item/clothing/gloves/color/latex/nitrile/evil{
 	pixel_x = -11;
@@ -3901,7 +3885,7 @@ RQ
 FX
 HB
 lY
-mf
+zE
 He
 Cv
 kO
