@@ -17,7 +17,7 @@
 	cooldown = 2 SECONDS
 
 /datum/emote/living/carbon/human/riol/purr/get_sound(mob/living/user)
-	return 'mod_celadon/_storage_sounds/sound/fox_purr.ogg'
+	return 'mod_celadon/_storage_sounds/sound/voice/riol/riol_purr.ogg'
 
 /datum/emote/living/carbon/human/riol/yip
 	key = "yip"
@@ -28,7 +28,7 @@
 	vary = TRUE
 
 /datum/emote/living/carbon/human/riol/yip/get_sound(mob/living/user)
-	return 'mod_celadon/_storage_sounds/sound/fox_squeak.ogg'
+	return 'mod_celadon/_storage_sounds/sound/voice/riol/riol_squeak.ogg'
 
 /datum/emote/living/carbon/human/riol/fwhine
 	key = "fwhine"
@@ -41,19 +41,19 @@
 	cooldown = 5 SECONDS
 
 /datum/emote/living/carbon/human/riol/fwhine/get_sound(mob/living/user)
-	return pick('mod_celadon/_storage_sounds/sound/fox1.ogg',
-				'mod_celadon/_storage_sounds/sound/fox2.ogg',
-				'mod_celadon/_storage_sounds/sound/fox3.ogg',
-				'mod_celadon/_storage_sounds/sound/fox4.ogg',
-				'mod_celadon/_storage_sounds/sound/fox5.ogg',
-				'mod_celadon/_storage_sounds/sound/fox6.ogg',
-				'mod_celadon/_storage_sounds/sound/fox7.ogg',
-				'mod_celadon/_storage_sounds/sound/fox8.ogg',
-				'mod_celadon/_storage_sounds/sound/fox9.ogg',
-				'mod_celadon/_storage_sounds/sound/fox10.ogg',
-				'mod_celadon/_storage_sounds/sound/fox11.ogg',
-				'mod_celadon/_storage_sounds/sound/fox12.ogg',
-				'mod_celadon/_storage_sounds/sound/fox13.ogg')
+	return pick('mod_celadon/_storage_sounds/sound/voice/riol/riol1.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol2.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol3.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol4.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol5.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol6.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol7.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol8.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol9.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol10.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol11.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol12.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol13.ogg')
 
 /datum/emote/living/carbon/human/riol/howl
 	key = "howl"
