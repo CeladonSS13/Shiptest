@@ -156,6 +156,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							RANDOM_BACKPACK = TRUE,
 							RANDOM_JUMPSUIT_STYLE = TRUE,
 							RANDOM_EXOWEAR_STYLE = TRUE,
+							RANDOM_WALLET_STYLE = TRUE,	// [CELADON-ADD] - CELADON_WALLETS
 							RANDOM_HAIRSTYLE = TRUE,
 							RANDOM_HAIR_COLOR = TRUE,
 							RANDOM_FACIAL_HAIRSTYLE = TRUE,
@@ -438,6 +439,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<br><b>Jumpsuit Style:</b><BR><a href ='?_src_=prefs;preference=suit;task=input'>[jumpsuit_style]</a>"
 
 			dat += "<br><b>Outerwear Style:</b><BR><a href ='?_src_=prefs;preference=exo;task=input'>[exowear]</a>"
+
+			dat += "<br><b>Wallet Style:</b><BR><a href ='?_src_=prefs;preference=wallet;task=input'>[wallet]</a>"	// [CELADON-ADD] - CELADON_WALLETS
 
 		if(CHAR_APPEARANCE_TAB) //Character Appearance // [CELADON-EDIT] - CELADON_W_TTS_VOICES - Упрощаем понимание кода // ORIGINAL // if(1)
 			if(path)
@@ -2079,6 +2082,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					jumpsuit_style = pick(GLOB.jumpsuitlist)
 				if("exo")
 					exowear = pick(GLOB.exowearlist)
+				// [CELADON-ADD] - CELADON_WALLETS
+				if("wallet")
+					wallet = pick(GLOB.walletlist)
+				// [/CELADON-ADD]
 				if("all")
 					random_character(gender)
 
@@ -2584,6 +2591,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(new_exo)
 						exowear = new_exo
 
+				// [CELADON-ADD] - CELADON_WALLETS
+				if("wallet")
+					var/new_wallet = input(user, "Choose your character's style of wallet:", "Character Preference")  as null|anything in GLOB.walletlist
+					if(new_wallet)
+						wallet = new_wallet
+				// [/CELADON-ADD]
 				if("ai_core_icon")
 					var/ai_core_icon = input(user, "Choose your preferred AI core display screen:", "AI Core Display Screen Selection") as null|anything in GLOB.ai_core_display_screens
 					if(ai_core_icon)
@@ -3098,6 +3111,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.jumpsuit_style = jumpsuit_style
 
 	character.exowear = exowear
+	character.wallet = wallet	// [CELADON-ADD] - CELADON_WALLETS
 
 	character.fbp = fbp
 

@@ -322,8 +322,7 @@
 	name = "captain's locker"
 	},
 /obj/item/radio/headset/nanotrasen/alt/captain,
-/obj/item/gun/energy/e_gun,
-/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/gun/energy/e_gun/e_old,
 /obj/item/clothing/shoes/laceup,
 /obj/machinery/light/directional/west,
 /obj/item/clothing/head/nanotrasen/beret,
@@ -331,6 +330,7 @@
 /obj/item/clothing/neck/cloak/cap,
 /obj/item/clothing/gloves/color/captain/nt,
 /obj/item/modular_computer/tablet,
+/obj/item/stock_parts/cell/gun/sharplite/plus,
 /turf/open/floor/carpet/royalblue,
 /area/ship/general/command_crew)
 "cA" = (
@@ -935,14 +935,8 @@
 /obj/item/clothing/shoes/laceup,
 /obj/machinery/light/directional/west,
 /obj/item/clothing/neck/cloak/head_of_personnel,
-/obj/item/gun/energy/e_gun{
-	pixel_x = -6;
-	pixel_y = 6
-	},
-/obj/item/gun/energy/e_gun{
-	pixel_x = 6;
-	pixel_y = -7
-	},
+/obj/item/gun/energy/e_gun/e_old/mini,
+/obj/item/gun/energy/e_gun/e_old/mini,
 /turf/open/floor/carpet/blue,
 /area/ship/general/command_crew/hop)
 "gr" = (
@@ -1143,15 +1137,15 @@
 	},
 /obj/machinery/light/directional/west,
 /obj/structure/closet/wall/red/directional/north,
-/obj/item/ammo_box/magazine/smgm9mm,
-/obj/item/ammo_box/magazine/smgm9mm,
-/obj/item/ammo_box/magazine/smgm9mm,
+/obj/item/ammo_box/magazine/m9mm_expedition,
+/obj/item/ammo_box/magazine/m9mm_expedition,
+/obj/item/ammo_box/magazine/m9mm_expedition,
 /obj/item/storage/box/ammo/c9mm_ap,
 /obj/item/storage/box/ammo/c9mm_ap,
 /obj/item/storage/box/ammo/c9mm_ap,
-/obj/item/ammo_box/magazine/smgm9mm,
-/obj/item/ammo_box/magazine/smgm9mm,
-/obj/item/ammo_box/magazine/smgm9mm,
+/obj/item/ammo_box/magazine/m9mm_expedition,
+/obj/item/ammo_box/magazine/m9mm_expedition,
+/obj/item/ammo_box/magazine/m9mm_expedition,
 /obj/item/storage/box/ammo/c9mm_ap,
 /obj/item/storage/box/ammo/c9mm_ap,
 /turf/open/floor/plasteel/dark,
@@ -1166,7 +1160,7 @@
 /obj/item/clothing/head/nanotrasen,
 /obj/item/clothing/neck/tie/black,
 /obj/item/clothing/suit/nanotrasen/suitjacket,
-/obj/item/gun/ballistic/automatic/pistol/commander{
+/obj/item/gun/ballistic/automatic/pistol/challenger{
 	default_ammo_type = /obj/item/ammo_box/magazine/co9mm/ap
 	},
 /obj/item/clothing/shoes/laceup,
@@ -7354,7 +7348,7 @@
 /obj/item/storage/backpack/security,
 /obj/item/reagent_containers/spray/pepper,
 /obj/item/storage/box/handcuffs,
-/obj/item/clothing/head/helmet/sec,
+/obj/item/clothing/head/helmet/m10/nanotrasen,
 /obj/item/clothing/suit/armor/nanotrasen/slim,
 /obj/item/clothing/suit/armor/nanotrasen,
 /obj/structure/closet/secure_closet{
@@ -7364,8 +7358,8 @@
 	},
 /obj/item/ammo_box/magazine/co9mm,
 /obj/item/ammo_box/magazine/co9mm,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
 /obj/item/clothing/mask/gas/vigilitas,
 /obj/item/clothing/suit/armor/hos/trenchcoat,
 /obj/item/clothing/head/beret/sec/officer,
@@ -7847,7 +7841,7 @@
 /obj/structure/guncloset{
 	req_access_txt = "2"
 	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_x = 0;
 	pixel_y = -6
 	},

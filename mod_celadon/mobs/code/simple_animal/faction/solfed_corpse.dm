@@ -38,7 +38,7 @@
 /datum/outfit/solfed/marine
 	name = "SolFed Marine Corpse"
 	uniform = /obj/item/clothing/under/solfed
-	head = /obj/item/clothing/head/helmet/solfed/m11
+	head = /obj/item/clothing/head/helmet/bulletproof/x11/solfed
 	suit = /obj/item/clothing/suit/armor/vest/marine
 	belt = /obj/item/storage/belt/military/solfed
 	shoes = /obj/item/clothing/shoes/combat
@@ -57,7 +57,7 @@
 /datum/outfit/solfed/marine/elysium
 	name = "Elysium Brigade Haris Corpse"
 	uniform = /obj/item/clothing/under/solfed/camo/elysium
-	head = /obj/item/clothing/head/helmet/solfed/m11/elysium
+	head = /obj/item/clothing/head/helmet/bulletproof/x11/solfed/elysium
 	suit = /obj/item/clothing/suit/armor/vest/bulletproof
 	belt = /obj/item/storage/belt/military/solfed/elysium
 	shoes = /obj/item/clothing/shoes/combat
@@ -76,7 +76,7 @@
 /datum/outfit/solfed/marine/melee
 	name = "SolFed Nahkampfkrieger Corpse"
 	uniform = /obj/item/clothing/under/solfed
-	head = /obj/item/clothing/head/helmet/sec
+	head = /obj/item/clothing/head/helmet/bulletproof/x11/solfed
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	belt = /obj/item/storage/belt/bandolier
 	shoes = /obj/item/clothing/shoes/combat
@@ -94,7 +94,7 @@
 
 /datum/outfit/solfed/marine/melee/heavy
 	name = "SolFed Energy Nahkampfkrieger Corpse"
-	head = /obj/item/clothing/head/helmet/solfed/m11
+	head = /obj/item/clothing/head/helmet/bulletproof/x11/solfed
 	glasses = /obj/item/clothing/glasses/night
 	id = /obj/item/card/id/cel/solfed/admiral
 
@@ -119,7 +119,7 @@
 /datum/outfit/solfed/marine/shotgun
 	name = "SolFed Wachter Corpse"
 	uniform = /obj/item/clothing/under/solfed/camo
-	head = /obj/item/clothing/head/helmet/solfed/m11
+	head = /obj/item/clothing/head/helmet/bulletproof/x11/solfed
 	suit = /obj/item/clothing/suit/armor/vest/marine/medium
 	belt = /obj/item/storage/belt/military/solfed
 	mask = /obj/item/clothing/mask/gas/welding
@@ -148,7 +148,7 @@
 /datum/outfit/solfed/marine/gauss/heavy
 	name = "SolFed Heavy Gaussmarine Corpse"
 	uniform = /obj/item/clothing/under/solfed/camo
-	head = /obj/item/clothing/head/helmet/solfed/m11
+	head = /obj/item/clothing/head/helmet/bulletproof/x11/solfed
 	suit = /obj/item/clothing/suit/armor/vest/marine/heavy
 	shoes = /obj/item/clothing/shoes/combat
 	mask = /obj/item/clothing/mask/gas/sechailer

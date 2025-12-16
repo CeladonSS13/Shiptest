@@ -45,6 +45,10 @@
 	},
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
+"ai" = (
+/obj/effect/landmark/centcom_orbit_token,
+/turf/open/floor/plasteel/dark_2,
+/area/centcom/ferry)
 "aj" = (
 /obj/structure/reagent_dispensers,
 /obj/machinery/camera/autoname{
@@ -527,11 +531,11 @@
 /area/outpost/cargo/faction)
 "by" = (
 /obj/structure/rack,
-/obj/item/gun/energy/e_gun{
+/obj/item/gun/energy/e_gun/e_old{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/gun/energy/e_gun,
+/obj/item/gun/energy/e_gun/e_old,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 10
 	},
@@ -704,7 +708,7 @@
 /area/centcom/control)
 "bY" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/gun/energy/e_gun,
+/obj/item/gun/energy/e_gun/e_old,
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "bZ" = (
@@ -3531,7 +3535,7 @@
 /area/tdome/arena)
 "ka" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/gun/ballistic/automatic/pistol/commander,
+/obj/item/gun/ballistic/automatic/pistol/challenger,
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "kb" = (
@@ -3695,7 +3699,7 @@
 /area/centcom/holding)
 "kw" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq,
+/obj/item/gun/ballistic/automatic/pistol/challenger/inteq,
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "ky" = (
@@ -7023,7 +7027,7 @@
 "ui" = (
 /obj/machinery/light/directional/west,
 /obj/structure/table/reinforced/titaniumglass,
-/obj/item/gun/energy/e_gun/hades{
+/obj/item/gun/energy/e_gun/e_old/hades{
 	pixel_x = 0;
 	pixel_y = -5
 	},
@@ -10438,7 +10442,7 @@
 /area/centcom/ferry)
 "Eg" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/gun/energy/e_gun/hades,
+/obj/item/gun/energy/e_gun/e_old/hades,
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "Eh" = (
@@ -11400,7 +11404,7 @@
 	dir = 1
 	},
 /obj/structure/table,
-/obj/item/clothing/head/helmet/inteq{
+/obj/item/clothing/head/helmet/m10/inteq{
 	pixel_x = -12;
 	pixel_y = 7
 	},
@@ -15478,7 +15482,7 @@
 /area/outpost/exterior)
 "Sj" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/gun/energy/e_gun/iot,
+/obj/item/gun/energy/e_gun/e_old/iot,
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "Sk" = (
@@ -15611,7 +15615,7 @@
 "SE" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/lockbox/loyalty,
-/obj/item/gun/energy/e_gun/hades,
+/obj/item/gun/energy/e_gun/e_old/hades,
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/industrial/warning,
 /turf/open/floor/plasteel,
@@ -48394,7 +48398,7 @@ bs
 IF
 Ao
 Nu
-Nu
+ai
 AV
 Oo
 FB

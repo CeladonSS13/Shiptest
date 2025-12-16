@@ -21,7 +21,7 @@
 		"SPACE"
 	],
 	"job_slots": {
-		"Research Director": {
+		"Naturalist": {
 			"outfit": "/datum/outfit/job/cel/independent/rd",
 			"slots": 1
 		},
@@ -29,13 +29,13 @@
 			"outfit": "/datum/outfit/job/cel/independent/scientist",
 			"slots": 1
 		},
-		"Fauna Retrieval Specialist": {
-			"outfit": "/datum/outfit/job/cel/independent/miner/scientist",
+		"Veterinary": {
+			"outfit": "/datum/outfit/job/cel/independent/doctor",
 			"slots": 1
 		},
-		"Excavator": {
-			"outfit": "/datum/outfit/job/cel/independent/miner",
-			"slots": 1
+		"Fauna Hunter": {
+			"outfit": "/datum/outfit/job/cel/independent/miner/scientist",
+			"slots": 2
 		},
 		"Mech Pilot": {
 			"outfit": "/datum/outfit/job/cel/independent/roboticist",
@@ -45,17 +45,9 @@
 			"outfit": "/datum/outfit/job/cel/independent/engineer",
 			"slots": 1
 		},
-		"Atmospheric Technician": {
-			"outfit": "/datum/outfit/job/cel/independent/atmos",
-			"slots": 1
-		},
-		"Curator": {
-			"outfit": "/datum/outfit/job/cel/independent/curator",
-			"slots": 1
-		},
 		"Assistant": {
 			"outfit": "/datum/outfit/job/cel/independent/assistant",
-			"slots": 1
+			"slots": 0
 		}
 	}
 }

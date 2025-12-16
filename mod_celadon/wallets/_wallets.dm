@@ -2,10 +2,10 @@
 /// desc - описание для модпака. Может использоваться для списка глаголов модпака в качестве описания.
 /// author - автор(ы) этого модпака.
 
-/datum/modpack/return_combat_shotgun
-	name = "Return combat shotgun"
-	desc = "Этот мод возвращает вырезанный контент, а именно комбат дробовик обратно в билд, и чутка меняет глушитель."
-	author = "KOCMOHABT"
+/datum/modpack/wallets
+	name = "Choose Wallet Style"
+	desc = "Выносит кошельки из лодаута в меню создания персонажа, позволяя выбирать стиль кошельку подобно сумкам и джамсьютам. Находится сразу под Exowear."
+	author = "Cuild, MrCat15352"
 
 /// Эти проки нужны, для того чтобы инициализировать датумы в определенный момент времени
 /// сборки билда. Инициализация обновляет данные в билде повторно, перезаписывая новыми значениями
@@ -15,13 +15,13 @@
 /// (можешь использовать все три, но запуск билда увеличится на 0.1 сек, за каждый датум в модпаке)
 
 // Инициализация ДО
-/datum/modpack/return_combat_shotgun/pre_initialize()
+/datum/modpack/wallets/pre_initialize()
 	. = ..()
 
 // Инициализация ВОВРЕМЯ
-/datum/modpack/return_combat_shotgun/initialize()
+/datum/modpack/wallets/initialize()
 	. = ..()
 
 // Инициализация ПОСЛЕ
-/datum/modpack/return_combat_shotgun/post_initialize()
+/datum/modpack/wallets/post_initialize()
 	. = ..()

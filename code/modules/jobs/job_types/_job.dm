@@ -274,6 +274,19 @@
 	if(text2path(holder) || !holder)
 		suit = text2path(holder)
 
+	// [CELADON-ADD] - CELADON_WALLETS
+	switch(H.wallet)
+		if(PREF_NOWALLET)
+			wallet = null
+		if(PREF_WALLET)
+			wallet = /obj/item/storage/wallet
+		if(PREF_BLACKWALLET)
+			wallet = /obj/item/storage/wallet/black
+		if(PREF_WHITEWALLET)
+			wallet = /obj/item/storage/wallet/white
+		else
+			wallet = null
+	// [/CELADON-ADD]
 /datum/outfit/job/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source = null)
 	if(visualsOnly)
 		return

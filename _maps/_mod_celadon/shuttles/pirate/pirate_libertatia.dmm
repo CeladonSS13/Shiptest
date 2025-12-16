@@ -33,7 +33,7 @@
 	pixel_y = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/gun/energy/e_gun{
+/obj/item/gun/energy/e_gun/e_old{
 	pixel_x = -2;
 	pixel_y = 9
 	},
@@ -433,14 +433,6 @@
 	pixel_x = 15;
 	pixel_y = 9
 	},
-/obj/item/gun/energy/sharplite/x11{
-	pixel_x = -7;
-	pixel_y = 9
-	},
-/obj/item/gun/energy/e_gun{
-	pixel_x = -2;
-	pixel_y = 2
-	},
 /obj/item/stock_parts/cell/gun{
 	pixel_x = 12;
 	pixel_y = 4
@@ -452,6 +444,15 @@
 /obj/item/gun/energy/disabler{
 	pixel_x = -3;
 	pixel_y = -5
+	},
+/obj/item/gun/energy/e_gun/e_old/adv_stopping,
+/obj/item/gun/energy/e_gun/e_old/adv_stopping{
+	pixel_x = 0;
+	pixel_y = 8
+	},
+/obj/item/gun/energy/e_gun/e_old/dragnet/snare{
+	pixel_x = 5;
+	pixel_y = -6
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
@@ -531,22 +532,6 @@
 	name = "armory locker";
 	req_one_access_txt = "1"
 	},
-/obj/item/ammo_box/magazine/smgm9mm{
-	pixel_x = 1;
-	pixel_y = 0
-	},
-/obj/item/ammo_box/magazine/smgm9mm{
-	pixel_x = -2;
-	pixel_y = -1
-	},
-/obj/item/ammo_box/magazine/smgm9mm{
-	pixel_x = -5;
-	pixel_y = -2
-	},
-/obj/item/ammo_box/magazine/smgm9mm{
-	pixel_x = -8;
-	pixel_y = -3
-	},
 /obj/item/storage/box/ammo/c9mm_rubber{
 	pixel_x = 8;
 	pixel_y = 10
@@ -568,6 +553,10 @@
 	pixel_x = -12;
 	pixel_y = 7
 	},
+/obj/item/ammo_box/magazine/m9mm_expedition/rubber,
+/obj/item/ammo_box/magazine/m9mm_expedition/rubber,
+/obj/item/ammo_box/magazine/m9mm_expedition/rubber,
+/obj/item/ammo_box/magazine/m9mm_expedition/rubber,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "rL" = (
