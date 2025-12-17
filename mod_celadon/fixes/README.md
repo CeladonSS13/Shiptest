@@ -307,6 +307,10 @@ FIXES_MEDBOT_RUNTIME_PATH_NULL - Добавляем проверки на null �
 FIXES_HOODED_ICONS
 - 'code/modules/clothing/suits/toggles.dm'
 
+FIXES_CHASM_AND_JAUNTER
+- `code/datums/components/chasm.dm` 					: Делаем как везде нормальную проверку на предмет на поясе
+- `code/modules/mining/equipment/wormhole_jaunter.dm` 	: Внедряем механику бс кристалла. Это лчшее что есть
+
 FIXES_LOCKER_RECHARGE_ENERGYGUN
 - `code/modules/projectiles/guns/energy.dm` : перед падением проверяется, может ли оружие в принципе выстрельнуть без батареи
 
@@ -328,6 +332,11 @@ FIXES_PARROT_DROP_ITEM
 FIXES_CRAFT_MENU
 - `code/datums/components/crafting/crafting.dm` : Обновляем меню крафта автоматически, не в ручную же это делать
 
+FIXES_PHYSICS_AMMO_CASING
+- `mod_celadon/fixes/code/ammo.dm`								: тут прок на то чтобы останавливать физику патрона\гильзы если ты поймал её в руку 
+- `code/modules/projectiles/guns/ballistic.dm`					: тут прок на то чтобы останавливать физику патрона\гильзы если ты вставил её в оружие
+- `code/modules/projectiles/boxes_magazines/_box_magazine.dm`	: тут прок на то чтобы останавливать физику Патрона\гильзы если ты вставил её в обойму
+
 FIXES_LONG_RELOAD_AMMO
 - `code/modules/projectiles/boxes_magazines/_box_magazine.dm` : Прерывает зарядку патронами, если игрок отойдет на растояние. Явно указываю параметр target для do_after чтобы проверка расстояния работала корректно
 
@@ -339,6 +348,17 @@ FIXES_CARDS_DRAW_RANDOM
 
 FIXES_CQC_GRAB
 - `code/modules/mob/living/carbon/carbon_defense.dm` : Останавливаем захват по самому себе, проверяем что кровотечение уже есть на конечностях. Ну блиид там. Короче странный сикуси момент
+
+FIXES_DEL_FISH
+- `code/modules/fishing/fish/_fish.dm` : Фиксим удаление рыбы после повторной разделки
+
+FIXES_ADVANCED_FIRSTAID
+- `code/game/objects/items/storage/firstaid.dm` : Увеличиваем max_combined_w_class чтобы предметы помещались обратно
+FIXES_HOLO_ESWORD
+- `code/modules/holodeck/items.dm` : Кто-то забыл убрать 0
+FIXES_MASK_ON_KEPORI
+- `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Добавляем проверку на проклятость маски для кепори
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -425,6 +445,11 @@ RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFa
 
 FIXES_TWO_HANDED_CRASH
 - ADD: `code/_onclick/item_attack.dm` - добавлена обработка звуков если приходи не один файл, а лист ( обычно )
+
+FIXES_ADMIN_STEALTH
+- ADD: `mod_celadon/fixes/code/ship_application_stealth_fix.dm` - Фикс заявок на корабль для админов в стелс-моде. Теперь используется реальный ключ игрока для индексации заявок, что позволяет админам менять fakekey без потери доступа к заявкам
+- `code/modules/overmap/ships/ship_application.dm`		: Если не нашли по текущему ключу, ищем по реальному ключу (для случая смены fakekey)
+- `code/modules/overmap/ships/controlled_ship_datum.dm`
 
 <!--
   Здесь находится твой никнейм

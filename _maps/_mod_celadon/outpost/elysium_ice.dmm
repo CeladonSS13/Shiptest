@@ -3321,16 +3321,16 @@
 /obj/structure/guncloset{
 	anchored = 1
 	},
-/obj/item/gun/energy/e_gun{
+/obj/item/gun/energy/e_gun/e_old{
 	pixel_y = 10
 	},
-/obj/item/gun/energy/e_gun{
+/obj/item/gun/energy/e_gun/e_old{
 	pixel_y = 4
 	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_y = -1
 	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_y = -7
 	},
 /obj/item/gun/energy/ionrifle,
@@ -21133,6 +21133,7 @@
 /area/outpost/external)
 "lFv" = (
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/pet/cat/iriska,
 /turf/open/floor/plasteel/tech,
 /area/outpost/operations/outpost_command)
 "lGu" = (
@@ -29193,9 +29194,6 @@
 	dir = 1
 	},
 /area/outpost/crew/cryo)
-"qcB" = (
-/turf/open/floor/plating/asteroid/icerock/temperate,
-/area/outpost/exterior)
 "qcV" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/sink/kitchen{
@@ -36659,9 +36657,6 @@
 	light_range = 2
 	},
 /area/outpost/vacant_rooms/trash_factory)
-"ugo" = (
-/turf/open/floor/plating/asteroid/icerock/temperate,
-/area/outpost/exterior)
 "ugJ" = (
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -42750,6 +42745,13 @@
 	},
 /turf/open/floor/plasteel/mono,
 /area/outpost/fraction/solfed)
+"xCq" = (
+/obj/effect/landmark/outpost_orbit_token,
+/turf/open/floor/plasteel/patterned/brushed{
+	light_color = "#1B1D2E";
+	light_range = 2
+	},
+/area/outpost/exterior)
 "xCO" = (
 /obj/machinery/roulette{
 	anchored = 1
@@ -43480,11 +43482,6 @@
 	layer = 2.030
 	},
 /obj/effect/turf_decal/trimline/opaque/orange/line,
-/mob/living/basic/iriska{
-	dir = 1;
-	layer = 3;
-	pixel_x = -3
-	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "xVp" = (
@@ -50217,7 +50214,7 @@ aKm
 aKm
 rgY
 uNE
-ugo
+hQU
 rgY
 rgY
 rgY
@@ -50962,7 +50959,7 @@ rgY
 rgY
 kqB
 sjx
-qcB
+hQU
 rgY
 rgY
 rgY
@@ -64175,7 +64172,7 @@ qAG
 mpA
 hYV
 lJc
-sRE
+xCq
 gqX
 rNw
 djW

@@ -4114,7 +4114,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered/corprejectrooms)
 "agX" = (
-/obj/item/gun/energy/e_gun{
+/obj/item/gun/energy/e_gun/e_old{
 	dir = 4;
 	pixel_x = 4;
 	pixel_y = 4
@@ -7785,7 +7785,7 @@
 	pixel_x = -4;
 	pixel_y = 1
 	},
-/obj/item/gun/energy/e_gun{
+/obj/item/gun/energy/e_gun/e_old{
 	pixel_y = 2
 	},
 /turf/open/floor/plating{
@@ -7942,7 +7942,7 @@
 /area/ruin/unpowered/corprejectrooms)
 "anc" = (
 /obj/structure/rack,
-/obj/item/gun/energy/e_gun,
+/obj/item/gun/energy/e_gun/e_old,
 /obj/item/grenade/barrier{
 	pixel_x = -3;
 	pixel_y = 3
@@ -8042,24 +8042,24 @@
 	pixel_x = 5;
 	pixel_y = -7
 	},
-/obj/item/ammo_box/magazine/smgm9mm,
-/obj/item/ammo_box/magazine/smgm9mm{
+/obj/item/ammo_box/magazine/m9mm_expedition,
+/obj/item/ammo_box/magazine/m9mm_expedition{
 	pixel_x = 2;
 	pixel_y = 1
 	},
-/obj/item/ammo_box/magazine/smgm9mm{
+/obj/item/ammo_box/magazine/m9mm_expedition{
 	pixel_x = 4;
 	pixel_y = 2
 	},
-/obj/item/ammo_box/magazine/smgm9mm{
+/obj/item/ammo_box/magazine/m9mm_expedition{
 	pixel_x = 5;
 	pixel_y = 4
 	},
-/obj/item/ammo_box/magazine/smgm9mm{
+/obj/item/ammo_box/magazine/m9mm_expedition{
 	pixel_x = 5;
 	pixel_y = 4
 	},
-/obj/item/ammo_box/magazine/smgm9mm{
+/obj/item/ammo_box/magazine/m9mm_expedition{
 	pixel_x = 5;
 	pixel_y = 4
 	},
@@ -8140,7 +8140,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/overmap_encounter/planetoid/lava/explored)
 "anl" = (
-/obj/item/gun/energy/e_gun{
+/obj/item/gun/energy/e_gun/e_old{
 	pixel_y = 9
 	},
 /obj/structure/rack,
@@ -8151,14 +8151,14 @@
 /area/ruin/unpowered/corprejectrooms)
 "anm" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/pistol/commander{
+/obj/item/gun/ballistic/automatic/pistol/challenger{
 	pixel_x = -2;
 	pixel_y = -3
 	},
-/obj/item/gun/ballistic/automatic/pistol/commander{
+/obj/item/gun/ballistic/automatic/pistol/challenger{
 	pixel_x = -2
 	},
-/obj/item/gun/ballistic/automatic/pistol/commander{
+/obj/item/gun/ballistic/automatic/pistol/challenger{
 	pixel_x = -2;
 	pixel_y = 3
 	},
@@ -14384,18 +14384,18 @@
 /obj/item/clothing/suit/armor/vest/marine/heavy,
 /obj/item/clothing/suit/armor/vest/marine/medium,
 /obj/item/clothing/suit/armor/vest/marine/medium,
-/obj/item/clothing/head/helmet/gezena,
-/obj/item/clothing/head/helmet/gezena,
-/obj/item/clothing/head/helmet/gezena,
+/obj/item/clothing/head/helmet/m10/nanotrasen,
+/obj/item/clothing/head/helmet/m10/nanotrasen,
+/obj/item/clothing/head/helmet/m10/nanotrasen,
 /obj/item/clothing/suit/armor/vest/bulletproof,
 /obj/item/clothing/suit/armor/vest/bulletproof,
-/obj/item/clothing/head/helmet/plate,
-/obj/item/clothing/head/helmet/plate,
 /obj/item/clothing/suit/armor/vest/security/officer,
 /obj/item/clothing/suit/armor/vest/security/officer,
 /obj/item/clothing/head/helmet/riot,
 /obj/item/clothing/head/helmet/riot,
 /obj/structure/lattice,
+/obj/item/clothing/head/helmet/riot,
+/obj/item/clothing/head/helmet/riot,
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},

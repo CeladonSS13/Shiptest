@@ -67,9 +67,9 @@
 	mob_overlay_icon = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/onmob.dmi'
 	icon_state = "vector"
 	item_state = "vector"
-	default_ammo_type = /obj/item/ammo_box/magazine/smgm9mm
+	default_ammo_type = /obj/item/ammo_box/magazine/m9mm_expedition
 	allowed_ammo_types = list(
-		/obj/item/ammo_box/magazine/smgm9mm,
+		/obj/item/ammo_box/magazine/m9mm_expedition,
 	) //you guys remember when the autorifle was chambered in 9mm
 	bolt_type = BOLT_TYPE_LOCKING
 	show_magazine_on_sprite = TRUE

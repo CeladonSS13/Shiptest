@@ -184,6 +184,6 @@ MARK: 8x58mm Caseless
 /datum/supply_pack/faction/solfed/ammo/a858_box
 	name = "8x58mm Caseless Ammo box"
 	desc = "Contains a 8x58mm Caseless Ammo box for the standard-issue SSG-669C, containing 40-rounds."
-	contains = list(/obj/item/storage/box/ammo/a858_ammo_box)
+	contains = list(/obj/item/storage/box/ammo/a858)
 	cost = 400
 

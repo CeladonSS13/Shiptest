@@ -101,7 +101,10 @@
 	if(item_flags & NOBLUDGEON)
 		return
 
-	if(force && HAS_TRAIT(user, TRAIT_PACIFISM))
+	// [CELADON-EDIT] - TWEAK_PACIFIST_TRAIT - Пацифисты не хотят вредить живым существам, но могут бить неживые объекты
+	// if(force && HAS_TRAIT(user, TRAIT_PACIFISM))	// ORIGINAL
+	if(force && HAS_TRAIT(user, TRAIT_PACIFISM) && isliving(target_mob) && iscarbon(target_mob))
+	// [/CELADON-EDIT]
 		to_chat(user, span_warning("You don't want to harm other living beings!"))
 		return
 
