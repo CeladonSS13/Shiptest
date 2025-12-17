@@ -95,6 +95,7 @@
 	unit_name = "sheet of metal"
 	cost = 2
 	sell_floor = 1
+	elasticity_coeff = 0
 	material_id = /datum/material/iron
 	export_types = list(
 		/obj/item/stack/sheet/metal,
@@ -106,6 +107,8 @@
 /datum/export/material/glass
 	unit_name = "sheet of glass"
 	cost = 2	//cost = 1
+	sell_floor = 1
+	elasticity_coeff = 0
 	material_id = /datum/material/glass
 	export_types = list(
 		/obj/item/stack/sheet/glass,
@@ -113,18 +116,28 @@
 		/obj/item/shard
 	)
 
+// [CELADON-ADD]
+/datum/export/material/wood
+	unit_name = "cm3 of wood"
+	cost = 1
+	sell_floor = 1
+	elasticity_coeff = 0
+	material_id = /datum/material/wood
+	export_types = list(/obj/item/stack/sheet/mineral/wood)
+
 /datum/export/material/hellstone
+	unit_name = "cm3 of hellstone"
 	cost = 100
 	material_id = /datum/material/hellstone
-	unit_name = "cm3 of hellstone"
 
 /datum/export/material/hot_ice
-	cost = 100
 	unit_name = "cm3 of Hot Ice"
+	cost = 100
 	material_id = /datum/material/hot_ice
 	export_types = /obj/item/stack/sheet/hot_ice
 
 /datum/export/material/abductor
-	unit_name = "of alien alloy"
+	unit_name = "cm3 of alien alloy"
 	cost = 500
 	export_types = list(/obj/item/stack/sheet/mineral/abductor)
+// [/CELADON-ADD]

@@ -4,6 +4,7 @@
 	desc = "Rare gems and crystals draw many eyes, and just as many buyers."
 	elasticity_coeff = 0.3
 
+// [CELADON-EDIT]
 // 1% Drop - /asteroid/goliath - (/obj/item/gem/rupee, /obj/item/gem/fdiamond, /obj/item/gem/void, /obj/item/gem/phoron)
 /datum/export/gems/rupee
 	unit_name = "Ruperium"
@@ -46,3 +47,4 @@
 	unit_name = "Strange crystal"
 	cost = 6000		//cost = 4000
 	export_types = list(/obj/item/strange_crystal)
+// [/CELADON-EDIT]

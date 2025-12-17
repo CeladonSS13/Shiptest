@@ -8,13 +8,13 @@
 /datum/export/claymore
 	unit_name = "defused claymores"
 	desc = "The Confederated League maintains an active bounty program for the disposal of UXO. Make the frontier a safer place today!"
-	cost = 500	//cost = 1250
+	cost = 500	//cost = 1250 // [CELADON-EDIT]
 	elasticity_coeff = 0.1
 	export_types = list(/obj/item/mine/directional/claymore)
 
 /datum/export/anomaly
 	unit_name = "stabilized anomaly core"
-	cost = 1000	//cost = 3000
+	cost = 1000	//cost = 3000 // [CELADON-EDIT]
 	elasticity_coeff = 0
 	export_types = list(/obj/item/assembly/signaler/anomaly)
 
@@ -25,6 +25,7 @@
 
 // Circuit boards, spare parts, etc.
 
+// [CELADON-EDIT]
 /datum/export/solar
 	elasticity_coeff = 0.05
 
@@ -52,6 +53,7 @@
 	unit_name = "ion thruster board"
 	elasticity_coeff = 0.05
 	export_types = list(/obj/item/circuitboard/machine/shuttle/engine/electric)
+// [/CELADON-EDIT]
 
 /*
 //Computer Tablets and Parts

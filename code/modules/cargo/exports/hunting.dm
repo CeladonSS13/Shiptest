@@ -43,7 +43,7 @@
 // [CELADON-ADD]
 // Hides
 /datum/export/stack/skin
-	desc = "Сырье из кожи различного происхождения. Чем экзотичнее вид — тем выше цена."
+	desc = "Rawhide of various origins. The more exotic the species, the higher the price."
 	include_subtypes = FALSE
 
 /datum/export/stack/skin/monkey

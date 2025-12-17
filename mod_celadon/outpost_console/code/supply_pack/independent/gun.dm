@@ -58,7 +58,7 @@ MARK:		Pistols
 
 /datum/supply_pack/faction/independent/gun/ringneck
 	name = "Ringneck Pistol Crate"
-	desc = "Contains a civillian variant of the Ringneck pistol, produced by Scarborough Arms and chambered in 10x22mm."
+	desc = "Contains a civilian variant of the Ringneck pistol, produced by Scarborough Arms and chambered in 10x22mm."
 	cost = 1000
 	contains = list(/obj/item/storage/guncase/pistol/ringneck)
 
@@ -97,7 +97,7 @@ MARK:		Pistols
 
 /datum/supply_pack/faction/independent/gun/viperrevolver
 	name = "Viper-23 Revolver Crate"
-	desc = "Contains a civillian variant of the Viper revolver, chambered in .357 magnum."
+	desc = "Contains a civilian variant of the Viper revolver, chambered in .357 magnum."
 	cost = 2500
 	contains = list(/obj/item/storage/guncase/pistol/viper)
 
@@ -114,7 +114,7 @@ MARK: SMGs
 
 /datum/supply_pack/faction/independent/gun/cobra20
 	name = "Cobra-20 SMG Crate"
-	desc = "Contains a civillian variant of the Cobra SMG, manufactured by Scaraborough Arms and chambered in .45"
+	desc = "Contains a civilian variant of the Cobra SMG, manufactured by Scaraborough Arms and chambered in .45"
 	cost = 3000
 	contains = list(/obj/item/storage/guncase/cobra)
 	crate_name = "SMG crate"
@@ -130,7 +130,7 @@ MARK:	Energy
 */
 
 /datum/supply_pack/faction/independent/gun/retro
-	name ="SL L-104 Retro Laser Gun Crate"
+	name = "SL L-104 Retro Laser Gun Crate"
 	desc = "An antiquated model of the basic lasergun, no longer used or sold by Sharplite. Nevertheless, the sheer popularity of this model makes it a somewhat common sight to this day."
 	cost = 1000
 	contains = list(/obj/item/storage/guncase/retro)
@@ -287,7 +287,7 @@ MARK:		Rifles
 
 /datum/supply_pack/faction/independent/gun/boomslang90
 	name = "Boomslang-90 Rifle Crate"
-	desc = "Contains a civillian variant of the Boomslang Sniper rifle- modified with a 2x scope, rather than a sniper scope. Chambered in the powerful 6.5x57mm CLIP."
+	desc = "Contains a civilian variant of the Boomslang Sniper rifle- modified with a 2x scope, rather than a sniper scope. Chambered in the powerful 6.5x57mm CLIP."
 	cost = 5000
 	contains = list(/obj/item/storage/guncase/boomslang)
 	crate_name = "rifle crate"
