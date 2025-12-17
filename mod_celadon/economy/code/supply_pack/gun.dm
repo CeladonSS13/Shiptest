@@ -39,20 +39,6 @@
 	contains = list(/obj/item/storage/guncase/morita1)
 	crate_name = "auto rifle crate"
 
-/datum/supply_pack/gun/glock
-	name = "Оружейный ящик Glock"
-	desc = "Содержит пистолет Glock калибра 9x18mm и одну дополнительную обойму к нему."
-	cost = 1300
-	contains = list(/obj/item/storage/guncase/glock)
-	crate_name = "auto rifle crate"
-
-/datum/supply_pack/gun/usp
-	name = "Оружейный ящик USP"
-	desc = "Содержит пистолет USP калибра .45 и одну дополнительную обойму к нему."
-	cost = 1350
-	contains = list(/obj/item/storage/guncase/usp)
-	crate_name = "auto rifle crate"
-
 // ПР от Ганзы. Добавляет дробь для дробовиков
 // /datum/supply_pack/gun/riot_shotgun // Вроде есть уже ящик с таким оружием, и ценник там 5000
 // 	name = "Riot Shotguns Crate"
@@ -61,14 +47,6 @@
 // 	contains = list(/obj/item/gun/ballistic/shotgun/lethal,
 // 					/obj/item/gun/ballistic/shotgun/lethal)
 // 	crate_name = "shotguns crate"
-
-/datum/supply_pack/gun/ballistic
-	name = "Combat Shotguns Crate"
-	desc = "For when the enemy absolutely needs to be replaced with lead. Contains two Aussec-designed combat shotguns."
-	cost = 5500
-	contains = list(/obj/item/gun/ballistic/shotgun/automatic/combat,
-					/obj/item/gun/ballistic/shotgun/automatic/combat)
-	crate_name = "combat shotguns crate"
 
 /// Сайга-410
 /datum/supply_pack/gun/saiga

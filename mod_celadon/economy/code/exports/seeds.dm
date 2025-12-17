@@ -22,8 +22,9 @@
 
 
 /datum/export/seed/potency
-	cost = 2.5 // Gets multiplied by potency and rarity.
+	cost = 1 // Gets multiplied by potency and rarity.
 	unit_name = "improved plant sample"
+	elasticity_coeff = 0.02
 	export_types = list(/obj/item/seeds)
 	needs_discovery = TRUE // Only for already discovered species
 

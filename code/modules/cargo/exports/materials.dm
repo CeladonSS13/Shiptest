@@ -50,7 +50,7 @@
 	material_id = /datum/material/diamond
 
 /datum/export/material/plasma
-	cost = 20
+	cost = 30	//cost = 20
 	unit_name = "cm3 of plasma"
 	sell_floor = 15
 	material_id = /datum/material/plasma
@@ -98,17 +98,33 @@
 	material_id = /datum/material/iron
 	export_types = list(
 		/obj/item/stack/sheet/metal,
+		/obj/item/stack/tile/plasteel,
 		/obj/item/stack/rods,
 		/obj/item/stack/ore,
-		/obj/item/coin
-	)
+		/obj/item/coin)
 
 /datum/export/material/glass
 	unit_name = "sheet of glass"
-	cost = 1
+	cost = 2	//cost = 1
 	material_id = /datum/material/glass
 	export_types = list(
 		/obj/item/stack/sheet/glass,
 		/obj/item/stack/ore,
 		/obj/item/shard
 	)
+
+/datum/export/material/hellstone
+	cost = 100
+	material_id = /datum/material/hellstone
+	unit_name = "cm3 of hellstone"
+
+/datum/export/material/hot_ice
+	cost = 100
+	unit_name = "cm3 of Hot Ice"
+	material_id = /datum/material/hot_ice
+	export_types = /obj/item/stack/sheet/hot_ice
+
+/datum/export/material/abductor
+	unit_name = "of alien alloy"
+	cost = 500
+	export_types = list(/obj/item/stack/sheet/mineral/abductor)

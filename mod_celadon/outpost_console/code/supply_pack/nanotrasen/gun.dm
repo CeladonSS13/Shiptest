@@ -130,3 +130,10 @@ MARK: VI
 	cost = 3500
 	contains = list(/obj/item/storage/guncase/gauss)
 	crate_name = "dmr crate"
+
+/datum/supply_pack/faction/nanotrasen/gun/combatshotgun
+	name = "Combat Shotguns Crate"
+	desc = "For when the enemy absolutely needs to be replaced with lead. Contains two Aussec-designed combat shotguns."
+	cost = 3500
+	contains = list(/obj/item/gun/ballistic/shotgun/automatic/combat)
+	crate_name = "combat shotguns crate"

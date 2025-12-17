@@ -26,7 +26,7 @@
 	unit_name = "rare animal hide"
 	desc = "Rare animal hide export. Paid per hide."
 	cost = 250
-	export_types = list(/obj/item/stack/sheet/animalhide/ashdrake, /obj/item/stack/sheet/animalhide/xeno)
+	export_types = list(/obj/item/stack/sheet/animalhide/ashdrake)	// [CELADON-EDIT]
 
 /datum/export/hunting/stack/leather
 	unit_name = "leather"
@@ -39,6 +39,53 @@
 	desc = "Animal sinew export. Not as desirable. Paid per sinew."
 	cost = 5
 	export_types = list(/obj/item/stack/sheet/sinew)
+
+// [CELADON-ADD]
+// Hides
+/datum/export/stack/skin
+	desc = "Сырье из кожи различного происхождения. Чем экзотичнее вид — тем выше цена."
+	include_subtypes = FALSE
+
+/datum/export/stack/skin/monkey
+	cost = 50
+	unit_name = "monkey hide"
+	export_types = list(/obj/item/stack/sheet/animalhide/monkey)
+
+/datum/export/stack/skin/human
+	unit_name = "piece of human skin"
+	cost = 100
+	export_types = list(/obj/item/stack/sheet/animalhide/human)
+
+/datum/export/stack/skin/goliath_hide
+	unit_name = "goliath hide"
+	cost = 200
+	export_types = list(/obj/item/stack/sheet/animalhide/goliath_hide)
+
+/datum/export/stack/skin/cat
+	unit_name = "cat hide"
+	cost = 150
+	export_types = list(/obj/item/stack/sheet/animalhide/cat)
+
+/datum/export/stack/skin/corgi
+	unit_name = "corgi hide"
+	cost = 200
+	export_types = list(/obj/item/stack/sheet/animalhide/corgi)
+
+/datum/export/stack/skin/lizard
+	unit_name = "lizard hide"
+	cost = 150
+	export_types = list(/obj/item/stack/sheet/animalhide/lizard)
+
+/datum/export/stack/skin/gondola
+	unit_name = "gondola hide"
+	cost = 250
+	export_types = list(/obj/item/stack/sheet/animalhide/gondola)
+
+/datum/export/stack/skin/xeno
+	unit_name = "alien hide"
+	cost = 100
+	export_types = list(/obj/item/stack/sheet/animalhide/xeno)
+// [/CELADON-ADD]
 
 /datum/export/hunting/trophy
 	desc = "Off-sector collectors can pay quite a price for animal trophies in good condition."

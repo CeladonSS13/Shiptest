@@ -63,6 +63,7 @@
 /datum/export/large/grounding_rod
 	cost = 350
 	unit_name = "grounding rod"
+	elasticity_coeff = 0.1
 	export_types = list(/obj/machinery/power/grounding_rod)
 
 /datum/export/large/tesla_gen
@@ -75,48 +76,3 @@
 	unit_name = "gravitational singularity generator"
 	export_types = list(/obj/machinery/the_singularitygen)
 	include_subtypes = FALSE
-
-/datum/export/large/iv
-	cost = 50
-	unit_name = "iv drip"
-	export_types = list(/obj/machinery/iv_drip)
-
-/datum/export/large/barrier
-	cost = 25
-	unit_name = "security barrier"
-	export_types = list(/obj/item/grenade/barrier, /obj/structure/barricade/security)
-
-/datum/export/large/gas_canister
-	cost = 10 //Base cost of canister. You get more for nice gases inside.
-	unit_name = "Gas Canister"
-	export_types = list(/obj/machinery/portable_atmospherics/canister)
-
-/datum/export/large/gas_canister/get_cost(obj/O)
-	var/obj/machinery/portable_atmospherics/canister/C = O
-	var/worth = 10
-
-	worth += C.air_contents.get_moles(GAS_BZ)*0.02
-	worth += C.air_contents.get_moles(GAS_TRITIUM)*0.04
-	return worth
-
-/* Было от офов
-	worth += C.air_contents.get_moles(GAS_BZ)*2
-	worth += C.air_contents.get_moles(GAS_STIMULUM)*100
-	worth += C.air_contents.get_moles(GAS_HYPERNOB)*1000
-	worth += C.air_contents.get_moles(GAS_TRITIUM)*4
-	worth += C.air_contents.get_moles(GAS_PLUOXIUM)*5
-
-1 вариант
-	worth += C.air_contents.get_moles(GAS_BZ)*0.02
-	worth += C.air_contents.get_moles(GAS_STIMULUM)*100
-	worth += C.air_contents.get_moles(GAS_HYPERNOB)*1000
-	worth += C.air_contents.get_moles(GAS_TRITIUM)*4
-	worth += C.air_contents.get_moles(GAS_PLUOXIUM)*5
-
-2 вариант (текущий)
-	worth += C.air_contents.get_moles(GAS_BZ)*0.02
-	worth += C.air_contents.get_moles(GAS_STIMULUM)*1
-	worth += C.air_contents.get_moles(GAS_HYPERNOB)*10
-	worth += C.air_contents.get_moles(GAS_TRITIUM)*0.04
-	worth += C.air_contents.get_moles(GAS_PLUOXIUM)*0.05
-*/
