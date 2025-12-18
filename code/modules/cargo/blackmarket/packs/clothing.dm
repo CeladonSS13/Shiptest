@@ -118,6 +118,7 @@
 	stock_max = 3
 	availability_prob = 50
 
+/* // [CELADON-REMOVE] - Никто в жизни это не купит намеренно
 /datum/blackmarket_item/clothing/degraded_armor_set
 	name = "Clearance Bin Armor Set"
 	desc = "Looking to protect yourself, but on a tight budget? These previously used vest and helmets served their former owners well! (May they rest in peace.)"
@@ -136,6 +137,7 @@
 	new /obj/item/clothing/head/helmet/old(B)
 	new /obj/item/clothing/suit/armor/vest/old(B)
 	return B
+*/ // [/CELADON-REMOVE]
 
 /datum/blackmarket_item/clothing/camo_set
 	name = "Camo Set"

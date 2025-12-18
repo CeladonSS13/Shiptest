@@ -1,3 +1,6 @@
+// Я не навижу эту хрень...
+// Надеюсь её так и так будут абузить.
+
 /datum/export/seed
 	cost = 50 // Gets multiplied by potency
 	// k_elasticity = 1	//price inelastic/quantity elastic, only need to export a few samples
@@ -19,7 +22,6 @@
 	if(. && !dry_run)
 		var/obj/item/seeds/S = O
 		discoveredPlants[S.type] = S.potency
-
 
 /datum/export/seed/potency
 	cost = 1 // Gets multiplied by potency and rarity.

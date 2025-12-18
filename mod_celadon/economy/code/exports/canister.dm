@@ -1,3 +1,7 @@
+// Логика расчета прожажи:
+// Надо поошрять людей таскать канистры с токсичных планет
+// И атмос-техов но не сильно
+
 /datum/export/large/gas_canister
 	cost = 10 //Base cost of canister. You get more for nice gases inside.
 	unit_name = "Gas Canister"

@@ -93,14 +93,14 @@
 
 /datum/mission/outpost/drill/classtwo
 	name = "Class 2 core sample mission"
-	value = 4500
+	value = 4000	//value = 4500	// [CELADON-EDIT] - CARGO-REWORK-BALANCE
 	weight = 9
 	class_wanted = 2
 	num_wanted = 6
 
 /datum/mission/outpost/drill/classthree
 	name = "Class 3 core sample mission"
-	value = 8000
+	value = 6000	//value = 8000	// [CELADON-EDIT] - CARGO-REWORK-BALANCE
 	weight = 5
 	duration = 180 MINUTES
 	class_wanted = 3

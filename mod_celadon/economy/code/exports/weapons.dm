@@ -1,5 +1,8 @@
-// Weapon exports. Stun batons, disablers, etc.
-// Логика для уникального оружия такая: cargo_cost / 10 = export_cost
+// Логика расчета прожажи:
+// Оружие:		Цена карго / 10
+// Патроны не продаются
+// Магазины не продаются
+
 // MARK: Weapon
 
 /datum/export/weapon
