@@ -13,6 +13,7 @@ export type OrbitData = {
   ships: Observable[];
   misc: Observable[];
   npcs: Observable[];
+  maps: Observable[];
   orbiting: Observable | null;
   autoObserve: boolean;
 };

@@ -153,6 +153,11 @@
 					to_chat(src, span_notice("You gently let go of [throwable_mob]."))
 					return
 	else
+		// [CELADON-ADD] - TWEAK_PACIFIST_TRAIT - Запрещаем вообще бросаться предметами для пацифистов
+		if(HAS_TRAIT(src, TRAIT_PACIFISM))
+			to_chat(src, span_notice("You don't want to throw things at others!"))
+			return
+		// [/CELADON-ADD]
 		thrown_thing = I.on_thrown(src, target)
 
 	if(thrown_thing)
@@ -637,7 +642,7 @@
 	if(HAS_TRAIT(src, TRAIT_NIGHT_VISION))
 		lighting_alpha = min(lighting_alpha, LIGHTING_PLANE_ALPHA_NV_TRAIT)
 	// [/CELADON-ADD]
-	
+
 	if(HAS_TRAIT(src, TRAIT_CHEMICAL_NIGHTVISION))
 		lighting_alpha = min(lighting_alpha, LIGHTING_PLANE_ALPHA_NV_DRUG)
 		see_in_dark = max(see_in_dark, 4)
