@@ -13,7 +13,7 @@
 	crate_type = /obj/structure/closet/crate/wooden
 
 /datum/supply_pack/faction/independent/fish/fishstasis
-	name = "Fish Stasis Kit Supply Crate"
+	name = "Fish Stasis Kit Supply"
 	desc = "Contains four stasis cases meant to keep fish alive during transportation."
 	cost = 1000
 	contains = list(/obj/item/storage/fish_case,

@@ -69,13 +69,13 @@ MARK: ferro pellets
 */
 
 /datum/supply_pack/faction/nanotrasen/ammo/ferropelletboxcrate
-	name = "Ferromagnetic Pellet Box Crate"
+	name = "Ferromagnetic Pellet Box"
 	desc = "Contains a 48-round ferromagnetic pellet ammo box for gauss guns."
 	contains = list(/obj/item/storage/box/ammo/ferropellet)
 	cost = 200
 
 /datum/supply_pack/faction/nanotrasen/ammo/hcpellets
-	name = "High Conductivity Pellet Box Crate"
+	name = "High Conductivity Pellet Box"
 	desc = "Contains a 48-round high conductivity pellet ammo box for gauss guns."
 	contains = list(/obj/item/storage/box/ammo/ferropellet/hc)
 	cost = 250

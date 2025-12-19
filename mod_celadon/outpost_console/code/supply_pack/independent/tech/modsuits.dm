@@ -3,7 +3,7 @@
 	crate_type = /obj/structure/closet/crate/secure/gear
 
 /datum/supply_pack/faction/independent/modsuits/science/mod_core
-	name = "MOD Core Crate"
+	name = "MOD Core"
 	desc = "One MODsuit core used in MOD construction."
 	cost = 5000
 	contains = list(/obj/item/mod/core/standard)
@@ -11,7 +11,7 @@
 	crate_type = /obj/structure/closet/crate/secure/science
 
 /datum/supply_pack/faction/independent/modsuits/science/mod_core_plasma
-	name = "MOD Plasma Core Crate"
+	name = "MOD Plasma Core"
 	desc = "One MODsuit core used in MOD construction. This core is designed to be charged from solid plasma."
 	cost = 5000
 	contains = list(/obj/item/mod/core/plasma)
@@ -19,7 +19,7 @@
 	crate_type = /obj/structure/closet/crate/secure/science
 
 // /datum/supply_pack/science/mod_core_ethereal		// NEEDS_TO_FIX_ALARM!
-// 	name = "MOD Elzous Core Crate"
+// 	name = "MOD Elzous Core"
 // 	desc = "One MODsuit core specialized for elzous, used when creating mods."
 // 	cost = 6000
 // 	contains = list(/obj/item/mod/core/ethereal)

@@ -120,7 +120,7 @@ MARK:	Запчасти
 	crate_type = /obj/structure/closet/crate/secure/science
 
 /datum/supply_pack/faction/independent/machinery/power
-	name = "Power Cell Crate"
+	name = "Power Cell"
 	desc = "Looking for power overwhelming? Look no further."
 	cost = 300
 	contains = list(/obj/item/stock_parts/cell/high)
@@ -132,35 +132,35 @@ MARK: Атмос
 */
 
 /datum/supply_pack/faction/independent/machinery/space_heater
-	name = "Space Heater Crate"
+	name = "Space Heater"
 	desc = "Contains a single space heater-cooler, for when things get too cold / hot to handle."
 	cost = 500
 	contains = list(/obj/machinery/space_heater)
 	crate_name = "space heater crate"
 
 /datum/supply_pack/faction/independent/machinery/thermomachine
-	name = "Thermomachine Crate"
+	name = "Thermomachine"
 	desc = "Freeze or heat your air."
 	cost = 1000
 	contains = list(/obj/item/circuitboard/machine/thermomachine)
 	crate_name = "thermomachine crate"
 
 /datum/supply_pack/faction/independent/machinery/portapump
-	name = "Portable Air Pump Crate"
+	name = "Portable Air Pump"
 	desc = "Want to drain a room of air without losing a drop? We've got you covered. Contains a portable air pump."
 	cost = 750
 	contains = list(/obj/machinery/portable_atmospherics/pump)
 	crate_name = "portable air pump crate"
 
 /datum/supply_pack/faction/independent/machinery/portascrubber
-	name = "Portable Scrubber Crate"
+	name = "Portable Scrubber"
 	desc = "Clean up that pesky plasma leak with your very own portable scrubber."
 	cost = 750
 	contains = list(/obj/machinery/portable_atmospherics/scrubber)
 	crate_name = "portable scrubber crate"
 
 /datum/supply_pack/faction/independent/machinery/hugescrubber
-	name = "Huge Portable Scrubber Crate"
+	name = "Huge Portable Scrubber"
 	desc = "A huge portable scrubber for huge atmospherics mistakes."
 	cost = 2000
 	contains = list(/obj/machinery/portable_atmospherics/scrubber/huge/movable/cargo)
@@ -172,7 +172,7 @@ MARK:	Разная машинерия
 */
 
 /datum/supply_pack/faction/independent/machinery/gravgen
-	name = "Ship-Portable Gravity Generator Crate"
+	name = "Ship-Portable Gravity Generator"
 	desc = "For those tired of their tools floating away from them. Contains a single gravity generator."
 	cost = 2000
 	contains = list(/obj/machinery/power/ship_gravity/unanchored)
@@ -180,7 +180,7 @@ MARK:	Разная машинерия
 	crate_type = /obj/structure/closet/crate/engineering/electrical
 
 /datum/supply_pack/faction/independent/machinery/breach_shield_gen
-	name = "Anti-breach Shield Projector Crate"
+	name = "Anti-breach Shield Projector"
 	desc = "Hull breaches again? Say no more with the Nanotrasen Anti-Breach Shield Projector! Uses forcefield technology to keep the air in, and the space out. Contains two shield projectors."
 	cost = 2500
 	contains = list(/obj/machinery/shieldgen,
@@ -189,7 +189,7 @@ MARK:	Разная машинерия
 	crate_type = /obj/structure/closet/crate/secure/plasma
 
 /datum/supply_pack/faction/independent/machinery/wall_shield_gen
-	name = "Shield Generator Crate"
+	name = "Shield Generator"
 	desc = "These two shield wall generators are guaranteed to keep any unwanted lifeforms on the outside, where they belong! Not rated for containing singularities or tesla balls."
 	cost = 1000
 	contains = list(/obj/machinery/power/shieldwallgen,
@@ -198,7 +198,7 @@ MARK:	Разная машинерия
 	crate_type = /obj/structure/closet/crate/secure/plasma
 
 /datum/supply_pack/faction/independent/machinery/holofield_generator
-	name = "Holofield Generator Crate"
+	name = "Holofield Generator"
 	desc = "Contains the electronics you need to set up a new (or replacement) holofield! Buttons not included."
 	cost = 1000
 	contains = list(/obj/item/circuitboard/machine/shieldwallgen/atmos,
@@ -241,7 +241,7 @@ MARK:	Генерация энергии
 	crate_type = /obj/structure/closet/crate/engineering/electrical
 
 /datum/supply_pack/faction/independent/machinery/pacman
-	name = "P.A.C.M.A.N Generator Crate"
+	name = "P.A.C.M.A.N Generator"
 	desc = "Engineers can't set up the engine? Not an issue for you, once you get your hands on this P.A.C.M.A.N. Generator! Takes in plasma and spits out sweet sweet energy."
 	cost = 2500
 	contains = list(/obj/machinery/power/port_gen/pacman)
@@ -249,7 +249,7 @@ MARK:	Генерация энергии
 	crate_type = /obj/structure/closet/crate/engineering/electrical
 
 /datum/supply_pack/faction/independent/machinery/solar
-	name = "Solar Panel Crate"
+	name = "Solar Panel"
 	desc = "Go green with this DIY advanced solar array. Contains twenty one solar assemblies, a solar-control circuit board, and tracker. If you have any questions, please check out the enclosed instruction book."
 	cost = 2500
 	contains  = list(/obj/item/solar_assembly,
@@ -280,7 +280,7 @@ MARK:	Генерация энергии
 	crate_type = /obj/structure/closet/crate/engineering/electrical
 
 /datum/supply_pack/faction/independent/machinery/teg
-	name = "Thermoelectric Generator Crate"
+	name = "Thermoelectric Generator"
 	desc = "Turn heat into electricity! Warranty void if sneezed upon."
 	cost = 5000
 	contains = list(/obj/item/circuitboard/machine/generator,
@@ -290,7 +290,7 @@ MARK:	Генерация энергии
 	crate_type = /obj/structure/closet/crate/engineering/electrical
 
 /datum/supply_pack/faction/independent/machinery/turbine
-	name = "Turbine Crate"
+	name = "Turbine"
 	desc = "Contains the electronics needed for a turbine generator! Plasma gas not included."
 	cost = 4000
 	contains = list(/obj/item/circuitboard/machine/power_turbine,
@@ -300,7 +300,7 @@ MARK:	Генерация энергии
 	crate_type = /obj/structure/closet/crate/engineering/electrical
 
 /datum/supply_pack/faction/independent/machinery/collector
-	name = "Radiation Collector Crate"
+	name = "Radiation Collector"
 	desc = "Contains three radiation collectors. Put that radiation to work on something other than your DNA!"
 	cost = 3000
 	contains = list(/obj/machinery/power/rad_collector,
@@ -310,7 +310,7 @@ MARK:	Генерация энергии
 	crate_type = /obj/structure/closet/crate/engineering/electrical
 
 /datum/supply_pack/faction/independent/machinery/tesla_coils
-	name = "Tesla Coil Crate"
+	name = "Tesla Coil"
 	desc = "Whether it's high-voltage executions, creating research points, or just plain old power generation, this pack of four Tesla coils can do it all!"
 	cost = 2500
 	contains = list(/obj/machinery/power/tesla_coil,
@@ -325,7 +325,7 @@ MARK:	Дополнения к двигателям
 */
 
 /datum/supply_pack/faction/independent/machinery/emitter
-	name = "Emitter Crate"
+	name = "Emitter"
 	desc = "Useful for powering forcefield generators while destroying locked crates and intruders alike. Contains two high-powered energy emitters."
 	cost = 3000
 	contains = list(/obj/machinery/power/emitter,
@@ -334,7 +334,7 @@ MARK:	Дополнения к двигателям
 	crate_type = /obj/structure/closet/crate/engineering/electrical
 
 /datum/supply_pack/faction/independent/machinery/field_gen
-	name = "Field Generator Crate"
+	name = "Field Generator"
 	desc = "Contains two high-powered field generators, crucial for containing singularities and tesla balls. Must be powered by emitters."
 	cost = 2000
 	contains = list(/obj/machinery/field/generator,
@@ -343,7 +343,7 @@ MARK:	Дополнения к двигателям
 	crate_type = /obj/structure/closet/crate/engineering/electrical
 
 /datum/supply_pack/faction/independent/machinery/grounding_rods
-	name = "Grounding Rod Crate"
+	name = "Grounding Rod"
 	desc = "Two grounding rods are guaranteed to keep the lightning of any rebellious tesla under control."
 	cost = 3500
 	contains = list(/obj/machinery/power/grounding_rod,
@@ -354,7 +354,7 @@ MARK:	Ядра двигателей
 */
 
 /datum/supply_pack/faction/independent/machinery/supermatter_shard
-	name = "Supermatter Shard Crate"
+	name = "Supermatter Shard"
 	desc = "The power of the heavens condensed into a single crystal."
 	cost = 10000
 	contains = list(/obj/machinery/power/supermatter_crystal/shard)
@@ -366,7 +366,7 @@ MARK:	Ядра двигателей
 */
 
 /datum/supply_pack/faction/independent/machinery/ion_thruster
-	name = "Ion Thruster Crate"
+	name = "Ion Thruster"
 	desc = "A crate containing an ion thruster and its precharger's electronics. For when you need a little extra thrust."
 	cost = 1000
 	contains = list(/obj/item/circuitboard/machine/shuttle/smes,
@@ -375,7 +375,7 @@ MARK:	Ядра двигателей
 	crate_type = /obj/structure/closet/crate/engineering
 
 /datum/supply_pack/faction/independent/machinery/combustion_thruster
-	name = "Combustion Thruster Crate"
+	name = "Combustion Thruster"
 	desc = "A crate containing a combustion thruster and its heater's electronics. For when you need complicated thrust."
 	cost = 1250
 	contains = list(/obj/item/circuitboard/machine/shuttle/fire_heater,
@@ -384,7 +384,7 @@ MARK:	Ядра двигателей
 	crate_type = /obj/structure/closet/crate/engineering
 
 /datum/supply_pack/faction/independent/machinery/plasma_thruster
-	name = "Plasma Thruster Crate"
+	name = "Plasma Thruster"
 	desc = "A crate containing a plasma thruster and its heater's electronics. For when you need a lot of extra thrust."
 	cost = 1500
 	contains = list(/obj/item/circuitboard/machine/shuttle/engine/plasma,

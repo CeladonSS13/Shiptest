@@ -7,7 +7,7 @@
 */
 
 /datum/supply_pack/faction/independent/tools/toolbox
-	name = "Tool Crate"
+	name = "Tools"
 	desc = "Get some work done. Contains an electrical toolbox, a mechanical toolbox, and a welding helmet."
 	contains = list(/obj/item/storage/toolbox/electrical,
 					/obj/item/storage/toolbox/mechanical,
@@ -16,7 +16,7 @@
 	crate_name = "toolbox crate"
 
 /datum/supply_pack/faction/independent/tools/engigear
-	name = "Engineering Gear Crate"
+	name = "Engineering Gear"
 	desc = "Contains three toolbelts and 2 sets of meson goggles."
 	cost = 750
 	contains = list(/obj/item/storage/belt/utility,
@@ -27,7 +27,7 @@
 	crate_name = "engineering gear crate"
 
 /datum/supply_pack/faction/independent/tools/bodycamera
-	name = "Body Camera Crate"
+	name = "Body Camera"
 	desc = "Contains two portable cameras, designed to help keep track of a working category at all times."
 	cost = 250
 	contains = list(/obj/item/bodycamera,
@@ -50,7 +50,7 @@
 	crate_name = "chest rig crate"
 
 /datum/supply_pack/faction/independent/tools/cellcharger
-	name = "Cell Charger Crate"
+	name = "Cell Charger"
 	desc = "Contains a cell charger, able to charge all sorts of power cells."
 	cost = 1000
 	contains = list(/obj/machinery/cell_charger)
@@ -63,28 +63,28 @@
 	crate_name = "\improper RPED crate"
 
 /datum/supply_pack/faction/independent/tools/jackhammer
-	name = "Jackhammer Crate"
+	name = "Jackhammer"
 	desc = "Contains a jackhammer, ideal for breaking rocks."
 	cost = 1750
 	contains = list(/obj/item/pickaxe/drill/jackhammer)
 	crate_name = "jackhammer crate"
 
 /datum/supply_pack/faction/independent/tools/metalfoam
-	name = "Metal Foam Grenade Crate"
+	name = "Metal Foam Grenade"
 	desc = "Seal up those pesky hull breaches with 7 metal foam grenades."
 	cost = 1000
 	contains = list(/obj/item/storage/box/metalfoam)
 	crate_name = "metal foam grenade crate"
 
 /datum/supply_pack/faction/independent/tools/insulated_gloves
-	name = "Insulated Gloves Crate"
+	name = "Insulated Gloves"
 	desc = "The backbone of modern society. Contains a pair of insulated gloves."
 	cost = 750
 	contains = list(/obj/item/clothing/gloves/color/yellow)
 	crate_name = "insulated gloves crate"
 
 /datum/supply_pack/faction/independent/tools/jetpack
-	name = "Jetpack Crate"
+	name = "Jetpack"
 	desc = "For when you need to go fast in space."
 	cost = 750
 	contains = list(/obj/item/tank/jetpack/carbondioxide)
@@ -92,7 +92,7 @@
 	crate_type = /obj/structure/closet/crate/secure/plasma
 
 /datum/supply_pack/faction/independent/tools/jetpack/harness
-	name = "Jetpack Harness Crate"
+	name = "Jetpack Harness"
 	desc = "A compact jetpack harness for those who don't wish to be weighed down by larger traditional jetpacks."
 	cost = 1500
 	contains = list(/obj/item/tank/jetpack/oxygen/harness)
@@ -122,14 +122,14 @@
 	crate_name = "welding goggles crate"
 
 /datum/supply_pack/faction/independent/tools/plasmacutter
-	name = "Plasmacutter Crate"
+	name = "Plasmacutter"
 	desc = "Contains a plasmacutter, capable of rapidly breaking down hull."
 	cost = 2500
 	contains = list(/obj/item/gun/energy/plasmacutter)
 	crate_name = "plasmacutter crate"
 
 /datum/supply_pack/faction/independent/tools/rcl
-	name = "Rapid cable layer Crate"
+	name = "Rapid cable layer"
 	desc = "Contains a rapid cable layer."
 	cost = 600
 	contains = list(/obj/item/rcl)
@@ -140,7 +140,7 @@
 */
 
 /datum/supply_pack/faction/independent/tools/fueltank
-	name = "Fuel Tank Crate"
+	name = "Fuel Tank"
 	desc = "Contains a welding fuel tank, for when your lust for welding is insatiable. Highly flammable."
 	cost = 800
 	contains = list(/obj/structure/reagent_dispensers/fueltank)
@@ -148,7 +148,7 @@
 	crate_type = /obj/structure/closet/crate/large
 
 /datum/supply_pack/faction/independent/tools/watertank
-	name = "Fresh Water Supply Crate"
+	name = "Fresh Water Supply"
 	desc = "Contains a tank of dihydrogen monoxide. Sounds dangerous."
 	cost = 500
 	contains = list(/obj/structure/reagent_dispensers/watertank)
@@ -156,7 +156,7 @@
 	crate_type = /obj/structure/closet/crate/large
 
 /datum/supply_pack/faction/independent/tools/hightank
-	name = "Large Fresh Water Supply Crate"
+	name = "Large Fresh Water Supply"
 	desc = "Contains a high-capacity water tank. Useful for botany or other service jobs."
 	cost = 1500
 	contains = list(/obj/structure/reagent_dispensers/watertank/high)
@@ -164,7 +164,7 @@
 	crate_type = /obj/structure/closet/crate/large
 
 /datum/supply_pack/faction/independent/tools/foamtank
-	name = "Firefighting Foam Tank Crate"
+	name = "Firefighting Foam Tank"
 	desc = "Contains a tank of firefighting foam. Also known as \"Phorid's Bane\"."
 	cost = 1500
 	contains = list(/obj/structure/reagent_dispensers/foamtank)
@@ -172,7 +172,7 @@
 	crate_type = /obj/structure/closet/crate/large
 
 /datum/supply_pack/faction/independent/tools/radfoamtank
-	name = "Radiation Foam Tank Crate"
+	name = "Radiation Foam Tank"
 	desc = "Contains a tank of anti-radiation foam. Pressurized sprayer included!"
 	cost = 1500
 	contains = list(

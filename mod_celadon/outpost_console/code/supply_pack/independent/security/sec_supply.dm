@@ -7,14 +7,14 @@
 */
 
 /datum/supply_pack/faction/independent/sec_supply/holster
-	name = "Shoulder Holster Crate"
+	name = "Shoulder Holster"
 	desc = "Contains a shoulder holster, capable of holding a single pistol or revolver and your ammo."
 	cost = 600
 	contains = list(/obj/item/clothing/accessory/holster)
 	crate_name = "holster crate"
 
 /datum/supply_pack/faction/independent/sec_supply/seclite
-	name = "Seclite Crate"
+	name = "Seclite"
 	desc = "Contains a single high power flashlight, complete with the hardware for attachment to standard helmet mounting brackets"
 	contains = list(/obj/item/flashlight/seclite)
 	cost = 100
@@ -52,28 +52,28 @@
 	crate_name = "maintenance kit crate"
 
 /datum/supply_pack/faction/independent/sec_supply/flashbangs
-	name = "Flashbangs Crate"
+	name = "Flashbangs"
 	desc = "Contains seven flashbangs for use in door breaching and riot control."
 	cost = 750
 	contains = list(/obj/item/storage/box/flashbangs)
 	crate_name = "flashbangs crate"
 
 /datum/supply_pack/faction/independent/sec_supply/smokebombs
-	name = "Smoke Grenades Crate"
+	name = "Smoke Grenades"
 	desc = "Contains seven smoke grenades for screening unit movements and signalling."
 	cost = 500
 	contains = list(/obj/item/storage/box/smokebombs)
 	crate_name = "smoke grenades crate"
 
 /datum/supply_pack/faction/independent/sec_supply/teargas
-	name = "Teargas Grenades Crate"
+	name = "Teargas Grenades"
 	desc = "Contains seven teargas grenades for use in crowd dispersion and riot control."
 	cost = 750
 	contains = list(/obj/item/storage/box/teargas)
 	crate_name = "teargas grenades crate"
 
 /datum/supply_pack/faction/independent/sec_supply/camera_console
-	name = "Camera Console Crate"
+	name = "Camera Console"
 	desc = "Contains a camera console circuit board, for a comprehensive surveillance system and peace of mind."
 	cost = 500
 	contains = list(/obj/item/circuitboard/computer/security)
@@ -84,42 +84,42 @@
 */
 
 /datum/supply_pack/faction/independent/sec_supply/pouch
-	name = "Utility Pouch Crate"
+	name = "Utility Pouch"
 	desc = "Contains a small basic pouch for holding two small items of your choice."
 	cost = 150
 	contains = list(/obj/item/storage/pouch)
 	crate_name = "pouch crate"
 
 /datum/supply_pack/faction/independent/sec_supply/pouch_medical
-	name = "Medical Pouch Crate"
+	name = "Medical Pouch"
 	desc = "Contains a small IFAK for issuing to your crew for field triage. Comes pre-stocked with basic medical gear."
 	cost = 250
 	contains = list(/obj/item/storage/pouch/medical)
 	crate_name = "pouch crate"
 
 /datum/supply_pack/faction/independent/sec_supply/pouch_engi
-	name = "Engineering Pouch Crate"
+	name = "Engineering Pouch"
 	desc = "Contains a small engineering pouch for holding various tools of your choice. Comes pre-stocked with emergency tools."
 	cost = 250
 	contains = list(/obj/item/storage/pouch/engi)
 	crate_name = "pouch crate"
 
 /datum/supply_pack/faction/independent/sec_supply/pouch_ammo
-	name = "Ammo Pouch Crate"
+	name = "Ammo Pouch"
 	desc = "Contains a small pouch for holding either magazines or loose ammunition on the field. Remember, make them count!"
 	cost = 150
 	contains = list(/obj/item/storage/pouch/ammo)
 	crate_name = "pouch crate"
 
 /datum/supply_pack/faction/independent/sec_supply/pouch_grenade
-	name = "Explosives Pouch Crate"
+	name = "Explosives Pouch"
 	desc = "Contains a pouch designed to hold frag grenades and C4 for use by demolitions experts across armed services."
 	cost = 150
 	contains = list(/obj/item/storage/pouch/grenade)
 	crate_name = "pouch crate"
 
 /datum/supply_pack/faction/independent/sec_supply/pouch_squad
-	name = "Communications & Command Pouch Crate"
+	name = "Communications & Command Pouch"
 	desc = "Contains a medium command pouch for holding various items often used by commanders everywhere."
 	cost = 150
 	contains = list(/obj/item/storage/pouch/squad)
@@ -130,21 +130,21 @@
 */
 
 /datum/supply_pack/faction/independent/sec_supply/riotshields
-	name = "Ballistic Shield Crate"
+	name = "Ballistic Shield"
 	desc = "Contains a ballistic shield, effective at holding back hostile fauna, xenofauna, or large crowds."
 	cost = 2000
 	contains = list(/obj/item/shield/riot)
 	crate_name = "ballistic shield crate"
 
 /datum/supply_pack/faction/independent/sec_supply/teleriotshields
-	name = "Telescopic Shield Crate"
+	name = "Telescopic Shield"
 	desc = "Contains a telescopic shield, effective at holding back hostile fauna, xenofauna, or large crowds in tight spaces."
 	cost = 3000
 	contains = list(/obj/item/shield/riot/tele)
 	crate_name = "telescopic shield crate"
 
 /datum/supply_pack/faction/independent/sec_supply/survknives
-	name = "Survival Knives Crate"
+	name = "Survival Knives"
 	desc = "Contains three sharpened survival knives. Each knife guaranteed to fit snugly inside any galactic-standard boot."
 	cost = 350
 	contains = list(/obj/item/melee/knife/survival,
@@ -153,7 +153,7 @@
 	crate_name = "survival knife crate"
 
 /datum/supply_pack/faction/independent/sec_supply/machete
-	name = "Stamped Steel Machete Crate"
+	name = "Stamped Steel Machete"
 	desc = "Contains two mass produced machetes. A perfect choice for crews on a budget."
 	cost = 500
 	contains = list(/obj/item/melee/sword/mass,
@@ -161,7 +161,7 @@
 	crate_name = "machete crate"
 
 /datum/supply_pack/faction/independent/sec_supply/combatknives
-	name = "Combat Knives Crate"
+	name = "Combat Knives"
 	desc = "Contains three high quality combat knives. For the sharper, and meaner, crew."
 	cost = 1000
 	contains = list(/obj/item/melee/knife/combat,
@@ -170,7 +170,7 @@
 	crate_name = "combat knife crate"
 
 /datum/supply_pack/faction/independent/sec_supply/frag_grenade
-	name = "Frag Grenade Crate"
+	name = "Frag Grenade"
 	desc = "Contains two fragmentation grenades. Better not let it go off in your hands."
 	cost = 500
 	contains = list(/obj/item/grenade/frag,
@@ -179,7 +179,7 @@
 	crate_type = /obj/structure/closet/crate/secure/weapon
 
 /datum/supply_pack/faction/independent/sec_supply/pepper_spray
-	name = "Pepper Spray Crate"
+	name = "Pepper Spray"
 	desc = "Contains four pepper spray cans, for self defense on a budget."
 	cost = 250
 	contains = list(/obj/item/reagent_containers/spray/pepper,
@@ -200,14 +200,14 @@
 	crate_name = "stingbang grenade pack crate"
 
 /datum/supply_pack/faction/independent/sec_supply/baton
-	name = "Stun Baton Crate"
+	name = "Stun Baton"
 	desc = "Arm your vessel security with a stun baton. Batteries included."
 	cost = 2500
 	contains = list(/obj/item/melee/baton/loaded)
 	crate_name = "stun baton crate"
 
 /datum/supply_pack/faction/independent/sec_supply/claymore
-	name = "C-10 Claymore Crate"
+	name = "C-10 Claymore"
 	desc = "Four motion-activated directional mines, perfect for ambushing enemy infantry. Still debatably legal to sell!"
 	cost = 3000
 	contains = list(/obj/item/paper/fluff/claymore,

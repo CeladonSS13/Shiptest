@@ -8,7 +8,7 @@
 	cost = 1100
 
 /datum/supply_pack/faction/solfed/gun/modelh
-	name = "Model 'H' Gauss Pistol Crate"
+	name = "Model 'H' Gauss Pistol"
 	desc = "Contains a compact solarian-produced gauss pistol, chambered in ferromagnetic slugs. Remember to sign your necessary forms upon arrival."
 	cost = 2000
 	contains = list(/obj/item/storage/guncase/pistol/modelh)
@@ -28,7 +28,7 @@
 	crate_name = "dmr crate"
 
 /datum/supply_pack/faction/solfed/gun/ssg669
-	name = "SSG-669C Sniper Rifle Crate"
+	name = "SSG-669C Sniper Rifle"
 	desc = "Contains a traditional solarian marksman rifle chambered in 8x58mm Caseless."
 	cost = 4000
 	contains = list(/obj/item/storage/guncase/ssg669)

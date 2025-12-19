@@ -52,14 +52,14 @@
 		new /obj/item/reagent_containers/glass/bottle/painkiller_booze(cargo_crate)
 
 /datum/supply_pack/faction/independent/medical/iv_drip
-	name = "IV Drip Crate"
+	name = "IV Drip"
 	desc = "Contains a single IV drip for administering blood to patients."
 	cost = 1000
 	contains = list(/obj/machinery/iv_drip)
 	crate_name = "iv drip crate"
 
 /datum/supply_pack/faction/independent/medical/bloodpacks
-	name = "Blood Pack Variety Crate"
+	name = "Blood Pack Variety"
 	desc = "Contains several different blood packs for reintroducing blood to patients."
 	cost = 700
 	contains = list(/obj/item/reagent_containers/blood/APlus,
@@ -75,7 +75,7 @@
 	crate_type = /obj/structure/closet/crate/freezer
 
 /datum/supply_pack/faction/independent/medical/defibs
-	name = "Defibrillator Crate"
+	name = "Defibrillator"
 	desc = "Contains a defibrillator for bringing the recently deceased back to life."
 	cost = 750
 	contains = list(/obj/item/defibrillator/loaded)
@@ -89,7 +89,7 @@
 	crate_name = "surgical supplies crate"
 
 /datum/supply_pack/faction/independent/medical/console
-	name = "Operating Console Crate"
+	name = "Operating Console"
 	desc = "Contains a console board to construct an Operating Console. Required to install surgical disks and gives basic diagnostics on the patients vitals."
 	cost = 500
 	contains = list(/obj/item/circuitboard/computer/operating)
@@ -104,14 +104,14 @@
 	crate_type = /obj/structure/closet/crate/large
 
 /datum/supply_pack/faction/independent/medical/epipen_crate
-	name = "Bulk Epipen Crate"
+	name = "Bulk Epipen"
 	desc = "Contains a spare box of epinephrine medipens, for when the going gets tough."
 	cost = 600
 	contains = list(/obj/item/storage/box/medipens)
 	crate_name = "epinephrine medipen crate"
 
 /datum/supply_pack/faction/independent/medical/surplus
-	name = "Medical Surplus Crate"
+	name = "Medical Surplus"
 	desc = "Contains an assortment of medical supplies haphazardly pulled from storage. German doctor not included."
 	cost = 2000
 	contains = list(/obj/item/reagent_containers/glass/bottle/charcoal,
@@ -143,7 +143,7 @@
 		new item(C)
 
 // /datum/supply_pack/faction/independent/medical/virus	// Перенести в Блэкмаркет
-// 	name = "Virus Crate"
+// 	name = "Virus"
 // 	desc = "Contains twelve different bottles, containing several viral samples for virology research. Also includes seven beakers and syringes. Balled-up jeans not included."
 // 	cost = 3500
 // 	contains = list(/obj/item/reagent_containers/glass/bottle/flu_virion,
@@ -165,7 +165,7 @@
 // 	crate_type = /obj/structure/closet/crate/medical
 
 /datum/supply_pack/faction/independent/medical/surgery
-	name = "Surgical Supplies Crate"
+	name = "Surgical Supplies"
 	desc = "Do you want to perform surgery, but don't have one of those fancy shmancy degrees? Just get started with this crate containing a medical case, Sterilizine spray and collapsible roller bed."
 	cost = 3000
 	contains = list(/obj/item/storage/case/surgery,

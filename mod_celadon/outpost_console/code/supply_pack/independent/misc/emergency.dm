@@ -11,7 +11,7 @@ MARK: 	Life support
 */
 
 /datum/supply_pack/faction/independent/emergency/internals
-	name = "Internals Crate"
+	name = "Internals"
 	desc = "Contains four breathing masks, three advanced emergency oxygen tanks and one large oxygen tank. Oxygen canister sold separately."
 	cost = 100
 	contains = list(/obj/item/clothing/mask/breath,
@@ -25,7 +25,7 @@ MARK: 	Life support
 	crate_name = "internals crate"
 
 /datum/supply_pack/faction/independent/emergency/plasmaman_tank
-	name = "Phorid Internals Crate"
+	name = "Phorid Internals"
 	desc = "Contains two Phorid belt tanks, for when you just can't bear to refill a normal tank with plasma. Plasma canisters sold separately."
 	cost = 100
 	contains = list(/obj/item/tank/internals/plasmaman/belt/full,
@@ -54,7 +54,7 @@ MARK: 	Niche protection
 	crate_type = /obj/structure/closet/crate/secure
 
 /datum/supply_pack/faction/independent/emergency/firefighting
-	name = "Firefighting Crate"
+	name = "Firefighting"
 	desc = "Only you can prevent plasma fires. Contains a single set of firefighter's equipment."
 	cost = 500
 	contains = list(/obj/item/clothing/suit/fire/firefighter,
@@ -65,7 +65,7 @@ MARK: 	Niche protection
 	crate_type = /obj/structure/closet/crate/secure
 
 /datum/supply_pack/faction/independent/emergency/radiation
-	name = "Radiation Protection Crate"
+	name = "Radiation Protection"
 	desc = "Survive nuclear wars and overclocked engines alike with two sets of radiation suits. Each set contains a helmet, suit, and Geiger counter. Comes with a glass of vodka and two Night of Fire commemorative shot glasses."
 	cost = 2500
 	contains = list(/obj/item/clothing/head/radiation,
@@ -81,7 +81,7 @@ MARK: 	Niche protection
 	crate_type = /obj/structure/closet/crate/radiation
 
 /datum/supply_pack/faction/independent/emergency/bio
-	name = "Biological Emergency Crate"
+	name = "Biological Emergency"
 	desc = "This crate holds 2 full bio suits, 2 pairs of latex gloves, and a pair of spaceacillin syringes. Offers excellent protection from diseases and acid attacks alike."
 	cost = 2500
 	contains = list(/obj/item/clothing/head/bio_hood,
@@ -97,7 +97,7 @@ MARK: 	Niche protection
 	crate_type = /obj/structure/closet/crate/science
 
 /datum/supply_pack/faction/independent/emergency/bomb
-	name = "Explosive Emergency Crate"
+	name = "Explosive Emergency"
 	desc = "Contains a bomb suit, gas mask, and set of basic bomb defusal tools. Good luck."
 	cost = 3000
 	contains = list(/obj/item/clothing/head/bomb_hood,

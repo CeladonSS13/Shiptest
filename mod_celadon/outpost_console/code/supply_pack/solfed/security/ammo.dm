@@ -18,25 +18,25 @@ MARK: 9x18mm
 */
 
 /datum/supply_pack/faction/solfed/ammo/c9mm_ammo_box
-	name = "9x18mm Ammo Box Crate"
+	name = "9x18mm Ammo Box"
 	desc = "9x18mm ammo box for guns like the Vector. Contains 45 shells"
 	contains = list(/obj/item/storage/box/ammo/c9mm)
 	cost = 200
 
 /datum/supply_pack/faction/solfed/ammo/c9mmap_ammo_box
-	name = "9x18mm AP Ammo Box Crate"
+	name = "9x18mm AP Ammo Box"
 	desc = "Contains a 45-round 9x18mm box loaded with armor piercing ammo."
 	contains = list(/obj/item/storage/box/ammo/c9mm_ap)
 	cost = 250
 
 /datum/supply_pack/faction/solfed/ammo/c9mmhp_ammo_box
-	name = "9x18mm HP Ammo Box Crate"
+	name = "9x18mm HP Ammo Box"
 	desc = "Contains a 45-round 9x18mm box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c9mm_hp)
 	cost = 250
 
 /datum/supply_pack/faction/solfed/ammo/c9mmrubber_ammo_box
-	name = "9x18mm Rubber Ammo Box Crate"
+	name = "9x18mm Rubber Ammo Box"
 	desc = "Contains a 45-round 9x18mm box loaded with less-than-lethal rubber rounds."
 	contains = list(/obj/item/storage/box/ammo/c9mm_rubber)
 	cost = 200
@@ -46,19 +46,19 @@ MARK: 5.56x45mm
 */
 
 /datum/supply_pack/faction/solfed/ammo/box556_box
-	name = "5.56x45mm Ammo Box Crate"
+	name = "5.56x45mm Ammo Box"
 	desc = "Contains one 60-round 5.56x45mm ammo."
 	contains = list(/obj/item/storage/box/ammo/a556_box)
 	cost = 500
 
 /datum/supply_pack/faction/solfed/ammo/box556/a856_box
-	name = "5.56x45mm Enhanced Performance Ammo Box Crate"
+	name = "5.56x45mm Enhanced Performance Ammo Box"
 	desc = "Contains one 60-round 5.56x45mm Enhanced Performance ammo."
 	contains = list(/obj/item/storage/box/ammo/a556_box/a856)
 	cost = 650
 
 /datum/supply_pack/faction/solfed/ammo/box556/m903_box
-	name = "5.56x45mm Armour Piercing Ammo Box Crate"
+	name = "5.56x45mm Armour Piercing Ammo Box"
 	desc = "Contains one 60-round 5.56x45mm Armour Piercing ammo."
 	contains = list(/obj/item/storage/box/ammo/a556_box/m903)
 	cost = 1300
@@ -68,25 +68,25 @@ MARK: 5.56 Caseless
 */
 
 /datum/supply_pack/faction/solfed/ammo/c556mmHITP_ammo_box
-	name = "5.56 HITP Caseless Ammo Box Crate"
+	name = "5.56 HITP Caseless Ammo Box"
 	desc = "Contains a 48-round 5.56mm caseless box for SolFed sidearms like the Pistole C."
 	contains = list(/obj/item/storage/box/ammo/c556mm)
 	cost = 150
 
 /datum/supply_pack/faction/solfed/ammo/c556mmHITPap_ammo_box
-	name = "5.56 HITP Caseless AP Ammo Box Crate"
+	name = "5.56 HITP Caseless AP Ammo Box"
 	desc = "Contains a 48-round 5.56mm caseless boxloaded with armor piercing ammo."
 	contains = list(/obj/item/storage/box/ammo/c556mm_ap)
 	cost = 200
 
 /datum/supply_pack/faction/solfed/ammo/c556mmhitphp_ammo_box
-	name = "5.56 HITP Caseless HP Ammo Box Crate"
+	name = "5.56 HITP Caseless HP Ammo Box"
 	desc = "Contains a 48-round 5.56mm caseless box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c556mm_hp)
 	cost = 200
 
 /datum/supply_pack/faction/solfed/ammo/c556HITPrubber_ammo_box
-	name = "5.56 HITP Caseless Rubber Ammo Box Crate"
+	name = "5.56 HITP Caseless Rubber Ammo Box"
 	desc = "Contains a 48-round 5.56 caseless box loaded with less-than-lethal rubber rounds."
 	contains = list(/obj/item/storage/box/ammo/c556mm_rubber)
 	cost = 150
@@ -96,19 +96,19 @@ MARK: 5.56x42mm
 */
 
 /datum/supply_pack/faction/solfed/ammo/a556_ammo_box
-	name = "5.56x42mm Ammo Box Crate"
+	name = "5.56x42mm Ammo Box"
 	desc = "Contains one 60-round 5.56x42mm box."
 	contains = list(/obj/item/storage/box/ammo/a556_42)
 	cost = 300
 
 /datum/supply_pack/faction/solfed/ammo/a556_ap
-	name = "5.56x42mm Armour Piercing Ammo Box Crate"
+	name = "5.56x42mm Armour Piercing Ammo Box"
 	desc = "Contains one 60-round 5.56x42mm Armour Piercing box."
 	contains = list(/obj/item/storage/box/ammo/a556_42/ap)
 	cost = 375
 
 /datum/supply_pack/faction/solfed/ammo/a556_hp
-	name = "5.56x42mm Hollow Point Ammo Box Crate"
+	name = "5.56x42mm Hollow Point Ammo Box"
 	desc = "Contains one 60-round 5.56x42mm Hollow Point box."
 	contains = list(/obj/item/storage/box/ammo/a556_42/hp)
 	cost = 375
@@ -128,13 +128,13 @@ MARK: Ferroslugs
 */
 
 /datum/supply_pack/faction/solfed/ammo/ferroslugboxcrate
-	name = "Ferromagnetic Slug Box Crate"
+	name = "Ferromagnetic Slug Box"
 	desc = "Contains a 48-round ferromagnetic slug for gauss guns such as the Model-H."
 	contains = list(/obj/item/storage/box/ammo/ferroslug)
 	cost = 175
 
 /datum/supply_pack/faction/solfed/ammo/hcslugs
-	name = "High Conductivity Slug Box Crate"
+	name = "High Conductivity Slug Box"
 	desc = "Contains a 48-round high conductivity slug for gauss guns such as the Model-H."
 	contains = list(/obj/item/storage/box/ammo/ferroslug/hc)
 	cost = 225
@@ -144,13 +144,13 @@ MARK: Ferro Pellets
 */
 
 /datum/supply_pack/faction/solfed/ammo/ferropelletboxcrate
-	name = "Ferromagnetic Pellet Box Crate"
+	name = "Ferromagnetic Pellet Box"
 	desc = "Contains a 48-round ferromagnetic pellet ammo box for gauss guns such as the Claris."
 	contains = list(/obj/item/storage/box/ammo/ferropellet)
 	cost = 200 //5.7 ammo efficiency at 25 damage
 
 /datum/supply_pack/faction/solfed/ammo/hcpellets
-	name = "High Conductivity Pellet Box Crate"
+	name = "High Conductivity Pellet Box"
 	desc = "Contains a 48-round high conductivity pellet ammo box for gauss guns such as the Claris."
 	contains = list(/obj/item/storage/box/ammo/ferropellet/hc)
 	cost = 250
@@ -160,13 +160,13 @@ MARK: Ferro Lances
 */
 
 /datum/supply_pack/faction/solfed/ammo/ferrolanceboxcrate
-	name = "Ferromagnetic Lance Box Crate"
+	name = "Ferromagnetic Lance Box"
 	desc = "Contains a 48-round box for high-powered gauss guns such as the GAR assault rifle."
 	contains = list(/obj/item/storage/box/ammo/ferrolance)
 	cost = 300 //5 ammo efficiency at 30 damage
 
 /datum/supply_pack/faction/solfed/ammo/ferrolanceboxcrate_hc
-	name = "High Conductivity Lance Box Crate"
+	name = "High Conductivity Lance Box"
 	desc = "Contains a 48-round box for high-powered gauss guns such as the GAR assault rifle."
 	contains = list(/obj/item/storage/box/ammo/ferrolance/hc)
 	cost = 350
@@ -176,7 +176,7 @@ MARK: 8x58mm Caseless
 */
 
 /datum/supply_pack/faction/solfed/ammo/a858
-	name = "8x58mm Ammo Box Crate"
+	name = "8x58mm Ammo Box"
 	desc = "Contains a 20-round 8x58 ammo box for Solarian-manufactured sniper rifles, such as the SSG-69."
 	contains = list(/obj/item/storage/box/ammo/a858)
 	cost = 200

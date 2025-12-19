@@ -94,7 +94,7 @@
 	crate_name = "Cyborg assembly crate"
 
 /datum/supply_pack/faction/independent/idea/robotics
-	name = "Bots Assembly Crate"
+	name = "Bots Assembly"
 	desc = "Get your own affordable little helpers, cheaper than a gun! Floor-cleaning, tile-placing, wound-tending, fire-extinguishing botters only for 2100 credits!"
 	cost = 2500
 	contains = list(/obj/item/paper/idea{

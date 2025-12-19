@@ -13,7 +13,7 @@
 */
 
 /datum/supply_pack/faction/independent/food/pizza
-	name = "Pizza Crate"
+	name = "Pizza"
 	desc = "Best prices on this side of the galaxy. All deliveries are guaranteed to be 99.5% anomaly-free!"
 	cost = 2000 // Best prices this side of the galaxy.
 	contains = list(/obj/item/pizzabox/margherita,
@@ -25,7 +25,7 @@
 	crate_type = /obj/structure/closet/crate/freezer
 
 /datum/supply_pack/faction/independent/food/ration
-	name = "Ration Crate"
+	name = "Ration"
 	desc = "6 standard issue rations. For your inner jarhead."
 	cost = 500
 	contains = list(/obj/effect/spawner/random/food_or_drink/ration,
@@ -38,7 +38,7 @@
 	crate_type = /obj/structure/closet/crate
 
 /datum/supply_pack/faction/independent/food/donkpockets
-	name = "Donk Pocket Variety Crate"
+	name = "Donk Pocket Variety"
 	desc = "Featuring a line up of Donk Co.'s most popular pastry!"
 	cost = 500
 	contains = list(/obj/item/storage/box/donkpockets/donkpocketspicy,
@@ -68,7 +68,7 @@
 */
 
 /datum/supply_pack/faction/independent/food/ingredients_basic
-	name = "Basic Ingredients Crate"
+	name = "Basic Ingredients"
 	desc = "Get things cooking with this crate full of useful ingredients! Contains a dozen eggs, some enzyme, two slabs of meat, some flour, some rice, a few bottles of milk, a bottle of soymilk, and a bag of sugar."
 	cost = 350
 	contains = list(/obj/item/reagent_containers/condiment/flour,
@@ -86,12 +86,12 @@
 	crate_type = /obj/structure/closet/crate/freezer
 
 /datum/supply_pack/faction/independent/food/ingredients_specialized
-	name = "Advanced Cooking Crate"
+	name = "Advanced Cooking"
 	desc = "For the discerning chef. Contains a bottle of enzyme, a salt shaker, a pepper mill, a bottle of ketchup, a bottle of hot sauce, and a bottle of cream."
 	cost = 500
 
 /datum/supply_pack/faction/independent/food/ingredients_condiments
-	name = "Condiments Crate"
+	name = "Condiments"
 	desc = "A variety of garnishes for topping off your dish with a little extra pizzaz. Contains a bottle of enzyme, a salt shaker, a pepper mill, a bottle of ketchup, a bottle of hot sauce, a bottle of BBQ sauce, and a bottle of cream."
 	cost = 100
 	contains = list(/obj/item/reagent_containers/condiment/saltshaker,
@@ -106,7 +106,7 @@
 	crate_type = /obj/structure/closet/crate/freezer
 
 /datum/supply_pack/faction/independent/food/ingredients_randomized
-	name = "Exotic Meat Crate"
+	name = "Exotic Meat"
 	desc = "The best cuts in the whole sector. Probably."
 	cost = 500
 	contains = list(/obj/item/food/meat/slab/killertomato,
@@ -128,7 +128,7 @@
 		new item(C)
 
 /datum/supply_pack/faction/independent/food/ingredients_randomized/meat
-	name = "Standard Meat Crate"
+	name = "Standard Meat"
 	desc = "Less interesting, yet filling cuts of meat."
 	cost = 300
 	contains = list(/obj/item/food/meat/slab,
@@ -141,7 +141,7 @@
 	crate_type = /obj/structure/closet/crate/freezer
 
 /datum/supply_pack/faction/independent/food/ingredients_randomized/vegetables
-	name = "Vegetables Crate"
+	name = "Vegetables"
 	desc = "Grown in the finest hydroponic vats."
 	cost = 100
 	contains = list(/obj/item/food/grown/chili,
@@ -157,7 +157,7 @@
 	crate_type = /obj/structure/closet/crate/freezer
 
 /datum/supply_pack/faction/independent/food/ingredients_randomized/fruits
-	name = "Fruit Crate"
+	name = "Fruit"
 	desc = "Rich of vitamins, may contain oranges."
 	cost = 100
 	contains = list(/obj/item/food/grown/citrus/lime,
@@ -172,7 +172,7 @@
 	crate_type = /obj/structure/closet/crate/freezer
 
 /datum/supply_pack/faction/independent/food/ingredients_randomized/grains
-	name = "Grains Crate"
+	name = "Grains"
 	desc = "A crate full of various grains. How interesting."
 	cost = 100
 	contains = list(/obj/item/food/grown/wheat,
@@ -187,7 +187,7 @@
 	items = 10
 
 /datum/supply_pack/faction/independent/food/ingredients_randomized/bread
-	name = "Bread Crate"
+	name = "Bread"
 	desc = "A crate full of various breads. Bready to either be eaten or made into delicious meals."
 	cost = 250
 	contains = list(/obj/item/food/bread/plain,
@@ -202,7 +202,7 @@
 	crate_type = /obj/structure/closet/crate/freezer
 
 /datum/supply_pack/faction/independent/food/sugar
-	name = "Sugar Crate"
+	name = "Sugar"
 	desc = "A crate with a few bags of sugar. Good for cake shops and amateur chemists."
 	cost = 150
 	contains = list(/obj/item/reagent_containers/condiment/sugar,
@@ -214,7 +214,7 @@
 
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/corn
-	name = "Corn Crate"
+	name = "Corn"
 	desc = "Crate containing five ears of corn."
 	cost = 150
 	contains = list(/obj/item/food/grown/corn,
@@ -225,7 +225,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/chili
-	name = "Chili Pepper Crate"
+	name = "Chili Pepper"
 	desc = "Crate containing five chili peppers."
 	cost = 150
 	contains = list(/obj/item/food/grown/chili,
@@ -236,7 +236,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/tomato
-	name = "Tomato Crate"
+	name = "Tomato"
 	desc = "Crate containing five tomatoes."
 	cost = 150
 	contains = list(/obj/item/food/grown/tomato,
@@ -247,7 +247,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/potato
-	name = "Potato Crate"
+	name = "Potato"
 	desc = "Crate containing five potatoes."
 	cost = 150
 	contains = list(/obj/item/food/grown/potato,
@@ -258,7 +258,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/carrot
-	name = "Carrot Crate"
+	name = "Carrot"
 	desc = "Crate containing five carrots."
 	cost = 150
 	contains = list(/obj/item/food/grown/carrot,
@@ -269,7 +269,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/cabbage
-	name = "Cabbage Crate"
+	name = "Cabbage"
 	desc = "Crate containing five cabbages."
 	cost = 150
 	contains = list(/obj/item/food/grown/cabbage,
@@ -280,7 +280,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/chanterelle
-	name = "Chanterelle Crate"
+	name = "Chanterelle"
 	desc = "Crate containing five chanterelle mushrooms."
 	cost = 150
 	contains = list(/obj/item/food/grown/mushroom/chanterelle,
@@ -291,7 +291,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/onion
-	name = "Onion Crate"
+	name = "Onion"
 	desc = "Crate containing five onions."
 	cost = 150
 	contains = list(/obj/item/food/grown/onion,
@@ -302,7 +302,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/pumpkin
-	name = "Pumpkin Crate"
+	name = "Pumpkin"
 	desc = "Crate containing five pumpkins."
 	cost = 150
 	contains = list(/obj/item/food/grown/pumpkin,
@@ -313,7 +313,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/peas
-	name = "Peas Crate"
+	name = "Peas"
 	desc = "Crate containing five peapods."
 	cost = 150
 	contains = list(/obj/item/food/grown/peas,
@@ -324,7 +324,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/sweet_potato
-	name = "Sweet Potato Crate"
+	name = "Sweet Potato"
 	desc = "Crate containing five sweet potatoes."
 	cost = 150
 	contains = list(/obj/item/food/grown/sweet_potato,
@@ -335,7 +335,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/apple
-	name = "Apple Crate"
+	name = "Apple"
 	desc = "Crate containing five apples."
 	cost = 150
 	contains = list(/obj/item/food/grown/apple,
@@ -346,7 +346,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/lime
-	name = "Lime Crate"
+	name = "Lime"
 	desc = "Crate containing five limes."
 	cost = 150
 	contains = list(/obj/item/food/grown/citrus/lime,
@@ -357,7 +357,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/orange
-	name = "Orange Crate"
+	name = "Orange"
 	desc = "Crate containing five oranges."
 	cost = 150
 	contains = list(/obj/item/food/grown/citrus/orange,
@@ -368,7 +368,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/lemon
-	name = "Lemon Crate"
+	name = "Lemon"
 	desc = "Crate containing five lemons."
 	cost = 150
 	contains = list(/obj/item/food/grown/citrus/lemon,
@@ -379,7 +379,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/watermelon
-	name = "Watermelon Crate"
+	name = "Watermelon"
 	desc = "Crate containing five watermelons."
 	cost = 150
 	contains = list(/obj/item/food/grown/watermelon,
@@ -390,7 +390,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/berries
-	name = "Berries Crate"
+	name = "Berries"
 	desc = "Crate containing five bunches of berries."
 	cost = 150
 	contains = list(/obj/item/food/grown/berries,
@@ -401,7 +401,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/banana
-	name = "Banana Crate"
+	name = "Banana"
 	desc = "Crate containing five bananas."
 	cost = 150
 	contains = list(/obj/item/food/grown/banana,
@@ -412,7 +412,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/ingredients_basic/grapes
-	name = "Grapes Crate"
+	name = "Grapes"
 	desc = "Crate containing five bunches of grapes."
 	cost = 150
 	contains = list(/obj/item/food/grown/grapes,
@@ -427,7 +427,7 @@
 */
 
 /datum/supply_pack/faction/independent/food/kitchen_knife
-	name = "Kitchen Knife Crate"
+	name = "Kitchen Knife"
 	desc = "Need a new knife to cut something hard? Try out this stamped steel knife, straight from The New Gorlex Republic's factories."
 	cost = 100
 	contains = list(/obj/item/melee/knife/kitchen)
@@ -457,7 +457,7 @@
 */
 
 /datum/supply_pack/faction/independent/food/hydrotank
-	name = "Hydroponics Backpack Crate"
+	name = "Hydroponics Backpack"
 	desc = "Bring on the flood with this high-capacity backpack crate. Contains 500 units of life-giving H2O."
 	cost = 750
 	contains = list(/obj/item/watertank)
@@ -465,7 +465,7 @@
 	crate_type = /obj/structure/closet/crate/hydroponics
 
 /datum/supply_pack/faction/independent/food/gardening
-	name = "Gardening Crate"
+	name = "Gardening"
 	desc = "Supplies for growing a great garden! Contains two bottles of ammonia, two Plant-B-Gone spray bottles, a hatchet, cultivator, plant analyzer, as well as a pair of leather gloves and a botanist's apron."
 	cost = 500
 	contains = list(/obj/item/reagent_containers/spray/plantbgone,
@@ -482,7 +482,7 @@
 	crate_type = /obj/structure/closet/crate/hydroponics
 
 /datum/supply_pack/faction/independent/food/ethanol
-	name = "Ethanol Crate"
+	name = "Ethanol"
 	desc = "Five small bottles of ethanol for the aspiring botanist or amateur chemist."
 	cost = 500
 	contains = list(/obj/item/reagent_containers/glass/bottle/ethanol,
@@ -495,7 +495,7 @@
 	crate_type = /obj/structure/closet/crate/hydroponics
 
 /datum/supply_pack/faction/independent/food/weedcontrol
-	name = "Weed Control Crate"
+	name = "Weed Control"
 	desc = "Contains a scythe, gasmask, and two anti-weed defoliant grenades, for when your garden grows out of control."
 	cost = 200
 	contains = list(/obj/item/scythe,
@@ -506,7 +506,7 @@
 	crate_type = /obj/structure/closet/crate/secure/hydroponics
 
 /datum/supply_pack/faction/independent/food/seeds
-	name = "Seeds Crate"
+	name = "Seeds"
 	desc = "Big things have small beginnings. Contains fourteen different seeds."
 	cost = 150
 	contains = list(/obj/item/seeds/chili,
@@ -527,7 +527,7 @@
 	crate_type = /obj/structure/closet/crate/hydroponics
 
 /datum/supply_pack/faction/independent/food/exoticseeds
-	name = "Exotic Seeds Crate"
+	name = "Exotic Seeds"
 	desc = "Any entrepreneuring botanist's dream. Contains eleven different seeds, including two mystery seeds!"
 	cost = 1000
 	contains = list(/obj/item/seeds/nettle,
@@ -549,7 +549,7 @@
 */
 
 /datum/supply_pack/faction/independent/food/beekeeping_suits
-	name = "Beekeeper Suit Crate"
+	name = "Beekeeper Suit"
 	desc = "Bee business booming? Better be benevolent and boost botany by bestowing bi-Beekeeper-suits! Contains two beekeeper suits and matching headwear."
 	cost = 500
 	contains = list(/obj/item/clothing/head/beekeeper_head,
@@ -560,7 +560,7 @@
 	crate_type = /obj/structure/closet/crate/hydroponics
 
 /datum/supply_pack/faction/independent/food/beekeeping_fullkit
-	name = "Beekeeping Starter Crate"
+	name = "Beekeeping Starter"
 	desc = "BEES BEES BEES. Contains three honey frames, a beekeeper suit and helmet, flyswatter, bee house, and, of course, a pure-bred Nanotrasen-Standardized Queen Bee!"
 	cost = 1000
 	contains = list(/obj/structure/beebox/unwrenched,
@@ -579,7 +579,7 @@
 */
 
 /datum/supply_pack/faction/independent/food/dote
-	name = "Dote Berry Crate"
+	name = "Dote Berry"
 	desc = "A crate full of easily dried, flavorful tecetian berries. Given its hardiness these are probably not from Teceti itself."
 	cost = 100
 	contains = list(
@@ -591,7 +591,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/dotu
-	name = "Dotu-Fime Crate"
+	name = "Dotu-Fime"
 	desc = "Small plump fruit from Teceti."
 	cost = 100
 	contains = list(
@@ -603,7 +603,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/fara
-	name = "Fara-Li Crate"
+	name = "Fara-Li"
 	desc = "A small, mildly spicy fruit native to Teceti."
 	cost = 100
 	contains = list(
@@ -615,7 +615,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/refa
-	name = "Refa-Li Crate"
+	name = "Refa-Li"
 	desc = "A small spicy cave fruit native to Teceti."
 	cost = 100
 	contains = list(
@@ -627,7 +627,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/sososi
-	name = "Sososi Crate"
+	name = "Sososi"
 	desc = "A gel-filled leaf native to the Tecetian Arid."
 	cost = 100
 	contains = list(
@@ -639,7 +639,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/siti
-	name = "Siti Crate"
+	name = "Siti"
 	desc = "A small crunchy leaf native to Teceti."
 	cost = 100
 	contains = list(
@@ -651,7 +651,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/miras
-	name = "Miras Meat Crate"
+	name = "Miras Meat"
 	desc = "The meat of a small tecetian game animal."
 	cost = 100
 	contains = list(
@@ -663,7 +663,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/remes
-	name = "Remes Meat Crate"
+	name = "Remes Meat"
 	desc = "Meat from a tecetian mollusk. Safe to eat raw!"
 	cost = 100
 	contains = list(
@@ -675,7 +675,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/dofi
-	name = "Dofitis Meat Crate"
+	name = "Dofitis Meat"
 	desc = "The meat of a tecetian beast of burden."
 	cost = 100
 	contains = list(
@@ -691,7 +691,7 @@
 */
 
 /datum/supply_pack/faction/independent/food/tiris
-	name = "Tiris Meat Crate"
+	name = "Tiris Meat"
 	desc = "The meat of a tecetian herd animal."
 	cost = 100
 	contains = list(
@@ -703,7 +703,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/tiris_milk
-	name = "Tiris Milk Crate"
+	name = "Tiris Milk"
 	desc = "Milk from a Tiris. Made and packaged in unkown space."
 	cost = 100
 	contains = list(
@@ -714,7 +714,7 @@
 		/obj/item/reagent_containers/condiment/tiris_milk,
 	)
 /datum/supply_pack/faction/independent/food/tiris_sele
-	name = "Tiris Sele Crate"
+	name = "Tiris Sele"
 	desc = "A gentle blood sauce made from a Tiris."
 	cost = 20
 	contains = list(
@@ -722,7 +722,7 @@
 	)
 
 /datum/supply_pack/faction/independent/food/tiris_sale
-	name = "Tiris Sale Crate"
+	name = "Tiris Sale"
 	desc = "A strong blood sauce made from a Tiris."
 	cost = 20
 	contains = list(

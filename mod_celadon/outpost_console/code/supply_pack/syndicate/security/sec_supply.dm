@@ -3,7 +3,7 @@
 	crate_type = /obj/structure/closet/crate/secure/gear
 
 /datum/supply_pack/faction/syndicate/sec_supply/saber
-	name = "Double-Bladed Energy Sword Crate"
+	name = "Double-Bladed Energy Sword"
 	desc = "Contains one double-bladed energy sword, for when simply killing someone isn't enough."
 	cost = 10000
 	contains = list(/obj/item/melee/duelenergy/saber/red)
@@ -11,7 +11,7 @@
 	crate_type = /obj/structure/closet/crate/secure/weapon
 
 /datum/supply_pack/faction/syndicate/sec_supply/flamethrower
-	name = "Flamethrower Crate"
+	name = "Flamethrower"
 	desc = "Contains one flamethrower. Point the nozzle away from anything important."
 	cost = 1250
 	contains = list(/obj/item/flamethrower/full)
@@ -19,7 +19,7 @@
 	crate_type = /obj/structure/closet/crate/secure/weapon
 
 /datum/supply_pack/faction/syndicate/sec_supply/c4duffel
-	name = "C-4 Demolitions Charge Crate"
+	name = "C-4 Demolitions Charge"
 	desc = "Contains a duffel of C-4 demolitions charges, for use in scrapping and demolitions of large-scale structures."
 	cost = 1000
 	contains = list(/obj/item/storage/backpack/duffelbag/syndie/c4)
@@ -27,7 +27,7 @@
 	crate_type = /obj/structure/closet/crate/secure/weapon
 
 // /datum/supply_pack/faction/syndicate/sec_supply/fire - [Криво работают]
-// 	name = "Incendiary Weapons Crate"
+// 	name = "Incendiary Weapons"
 // 	desc = "Burn, baby burn. Contains three incendiary grenades and three prebuilt flamethrowers."
 // 	cost = 5000
 // 	contains = list(

@@ -3,7 +3,7 @@
 	crate_type = /obj/structure/closet/crate/secure/gear
 
 /datum/supply_pack/faction/solfed/sec_supply/halberd
-	name = "Energy Halberd Crate"
+	name = "Energy Halberd"
 	desc = "Contains one Solarian Energy Halberd, for issue to your local Sonnensoldner battalion."
 	cost = 10000
 	contains = list(/obj/item/melee/duelenergy/halberd)

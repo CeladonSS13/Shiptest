@@ -2,7 +2,7 @@
 	category = "Equipment - Spacesuits"
 
 /datum/supply_pack/faction/nanotrasen/spacesuit/med_hardsuit
-	name = "Medical Hardsuit Crate"
+	name = "Medical Hardsuit"
 	desc = "One medical hardsuit, resistant to diseases and useful for retrieving patients in space."
 	cost = 1500
 	contains = list(/obj/item/clothing/suit/space/hardsuit/medical)
@@ -10,7 +10,7 @@
 	crate_type = /obj/structure/closet/crate/medical
 
 /datum/supply_pack/faction/nanotrasen/spacesuit/engineering_hardsuit
-	name = "Engineering Hardsuit Crate"
+	name = "Engineering Hardsuit"
 	desc = "One engineering hardsuit, resistant to fire, radiation, and other engineering hazards. Nanotrasen reminds you that Resistant does not mean Immune."
 	cost = 1500
 	contains = list(/obj/item/clothing/suit/space/hardsuit/engine)
@@ -18,7 +18,7 @@
 	crate_type = /obj/structure/closet/crate/medical
 
 /datum/supply_pack/faction/nanotrasen/spacesuit/mining_hardsuit_heavy
-	name = "Heavy Mining Hardsuit Crate"
+	name = "Heavy Mining Hardsuit"
 	desc = "One heavy-duty mining hardsuit for dangerous frontier operations. Comes with a pair of EXOCOM jet boots."
 	cost = 2500
 	contains = list(/obj/item/clothing/suit/space/hardsuit/mining/heavy,
@@ -27,7 +27,7 @@
 	crate_type = /obj/structure/closet/crate/secure/plasma
 
 /datum/supply_pack/faction/nanotrasen/spacesuit/sci_hardsuit
-	name = "Scientific Hardsuit Crate"
+	name = "Scientific Hardsuit"
 	desc = "Contains one science hardsuit, designed to provide safety under advanced experimental conditions, or while handling explosives."
 	cost = 2000
 	contains = list(/obj/item/clothing/suit/space/hardsuit/bomb)
@@ -35,7 +35,7 @@
 	crate_type = /obj/structure/closet/crate/secure/science
 
 /datum/supply_pack/faction/nanotrasen/spacesuit/atmos_hardsuit
-	name = "Atmospherics Hardsuit Crate"
+	name = "Atmospherics Hardsuit"
 	desc = "The iconic hardsuit of Nanotrasen's Atmosphere Corps, this hardsuit is known across space as a symbol of defiance in the face of sudden decompression. Smells faintly of plasma."
 	cost = 2500
 	contains = list(/obj/item/clothing/suit/space/hardsuit/engine/atmos)
@@ -43,7 +43,7 @@
 	crate_type = /obj/structure/closet/crate/secure/engineering
 
 /datum/supply_pack/faction/nanotrasen/spacesuit/advanced_hardsuit
-	name = "Advanced Hardsuit Crate"
+	name = "Advanced Hardsuit"
 	desc = "The culimination of research into robust engineering equipment. This hardsuit makes the wearer near immune to the natural hazards the Frontier can throw."
 	cost = 4000
 	contains = list(/obj/item/clothing/suit/space/hardsuit/engine/elite)
@@ -51,7 +51,7 @@
 	crate_type = /obj/structure/closet/crate/secure/engineering
 
 /datum/supply_pack/faction/nanotrasen/spacesuit/heavy_sec_hardsuit
-	name = "Heavy Security Hardsuit Crate"
+	name = "Heavy Security Hardsuit"
 	desc = "Nanotrasen's premier solution to security hazards in low pressure environments, a well armored, highly mobile combat suit. The wearer is advised to have their zero-g training completed before utilizing the jetpack module."
 	cost = 5000
 	contains = list(/obj/item/clothing/suit/space/hardsuit/security/hos)

@@ -2,7 +2,7 @@
 	category = "Misc - Costumes & Toys"
 
 /datum/supply_pack/faction/independent/costumes_toys/training_toolbox
-	name = "Training Toolbox Crate"
+	name = "Training Toolbox"
 	desc = "Hone your combat abiltities with two AURUMILL-Brand Training Toolboxes! Guarenteed to count hits made against living beings!"
 	cost = 100
 	contains = list(/obj/item/training_toolbox,
@@ -11,7 +11,7 @@
 	crate_name = "training toolbox crate"
 
 /datum/supply_pack/faction/independent/costumes_toys/foamforce
-	name = "Foam Force Crate"
+	name = "Foam Force"
 	desc = "Break out the big guns with two Foam Force shotguns!"
 	cost = 200
 	contains = list(/obj/item/gun/ballistic/shotgun/toy,
@@ -19,7 +19,7 @@
 	crate_name = "foam force shotgun crate"
 
 /datum/supply_pack/faction/independent/costumes_toys/foamforce/bonus
-	name = "Foam Force Pistols Crate"
+	name = "Foam Force Pistols"
 	desc = "No longer discontinued! Enjoy the fun Gezenan Family Tradition no matter where you are! Includes two automatic Foam Force Pistols with magazines."
 	cost = 400
 	contains = list(/obj/item/gun/ballistic/automatic/toy/pistol,
@@ -29,7 +29,7 @@
 	crate_name = "foam force pistol crate"
 
 /datum/supply_pack/faction/independent/costumes_toys/lasertag
-	name = "Laser Tag Crate"
+	name = "Laser Tag"
 	desc = "Are you tired of Foam Force? Looking for a real thrill? The new NT-Lasertag System is sure to Rock Your Socks, no cleanup required, just plain fun. The NT Way: includes enough equipment for a 3v3 laser-tag shootout."
 	cost = 500
 	contains = list(/obj/item/gun/energy/laser/redtag,
@@ -53,7 +53,7 @@
 	crate_name = "laser tag crate"
 
 /datum/supply_pack/faction/independent/costumes_toys/arcade_toys
-	name = "Toy Crate"
+	name = "Toy"
 	desc = "A bulk assortment of five toys for filling up crane machines."
 	cost = 250 // or play the arcade machines ya lazy bum
 	contains = list()
@@ -73,7 +73,7 @@ MARK:	Costumes
 */
 
 /datum/supply_pack/faction/independent/costumes_toys/costume_original
-	name = "Original Costume Crate"
+	name = "Original Costume"
 	desc = "Reenact Solarian plays with this assortment of outfits. Contains eight different costumes!"
 	cost = 500
 	contains = list(/obj/item/clothing/head/snowman,
@@ -86,7 +86,7 @@ MARK:	Costumes
 	crate_type = /obj/structure/closet/crate/wooden
 
 /datum/supply_pack/faction/independent/costumes_toys/mech_suits
-	name = "Exosuit Pilot's Suit Crate"
+	name = "Exosuit Pilot's Suit"
 	desc = "Suits for piloting big robots. Contains all three colors!"
 	cost = 500 //state-of-the-art technology does come cheap
 	contains = list(/obj/item/clothing/under/costume/mech_suit,
@@ -97,7 +97,7 @@ MARK:	Costumes
 
 // this is technically armor but you aren't buying it for that. it's a joke pack so it goes here
 /datum/supply_pack/faction/independent/costumes_toys/justiceinbound
-	name = "Standard Justice Enforcer Crate"
+	name = "Standard Justice Enforcer"
 	desc = "This is it. The Bee's Knees. The Creme of the Crop. The Pick of the Litter. The best of the best of the best. The Crown Jewel of Nanotrasen. The Alpha and the Omega of security headwear. Guaranteed to strike fear into the hearts of each and every criminal unfortunate enough to hear its screeching wail bore into their soul. Also comes with a security gasmask."
 	cost = 2000 //justice comes at a price. An expensive, noisy price.
 	contains = list(/obj/item/clothing/head/helmet/justice,
@@ -105,7 +105,7 @@ MARK:	Costumes
 	crate_name = "security clothing crate"
 
 /datum/supply_pack/faction/independent/costumes_toys/collectable_hats
-	name = "Collectable Hats Crate"
+	name = "Collectable Hats"
 	desc = "Flaunt your status with three unique, highly-collectable hats!"
 	cost = 250
 	contains = list(/obj/item/clothing/head/collectable/chef,
@@ -131,7 +131,7 @@ MARK:	Costumes
 		new item(C)
 
 /datum/supply_pack/faction/independent/costumes_toys/rilena_merch
-	name = "RILENA Merchandise Crate"
+	name = "RILENA Merchandise"
 	desc = "A crate full of all the RILENA merch you could ever want. Except the offbrand stuff. That's not in here."
 	cost = 500 //lots of loot
 	contains = list(/obj/item/toy/figure/tali,
@@ -149,7 +149,7 @@ MARK:	Costumes
 	crate_name = "collectable merchandise crate"
 
 /datum/supply_pack/faction/independent/costumes_toys/wedding
-	name = "Wedding Crate"
+	name = "Wedding"
 	desc = "Tie the knot IN SPACE! Hold your own extravagant wedding with this crate of suits and bridal gowns. Complete with champagne, cake, and the luxurious cost you would expect for an event to remember."
 	cost = 3000 // weddings are absurdly expensive and so is this crate
 	contains = list(/obj/item/clothing/under/suit/black_really, //we don't actually need suits since you can vend them but the crate should feel "complete"
@@ -181,7 +181,7 @@ MARK:	Costumes
 	crate_name = "wedding crate"
 
 /datum/supply_pack/faction/independent/costumes_toys/formalwear
-	name = "Formalwear Crate"
+	name = "Formalwear"
 	desc = "You're gonna like the way you look, I guaranteed it. Contains an asston of fancy clothing."
 	cost = 1500 //Lots of very expensive items. You gotta pay up to look good!
 	contains = list(/obj/item/clothing/under/dress/blacktango,
@@ -212,7 +212,7 @@ MARK:	Costumes
 	crate_type = /obj/structure/closet/crate/wooden
 
 /datum/supply_pack/faction/independent/costumes_toys/costume
-	name = "Standard Costume Crate"
+	name = "Standard Costume"
 	desc = "Supply the sector's entertainers with the equipment of their trade with these hilarious costumes! Contains a full clown and mime outfit, along with a bike horn and a bottle of nothing."
 	cost = 1000
 	contains = list(/obj/item/storage/backpack/clown,

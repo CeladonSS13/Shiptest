@@ -2,7 +2,7 @@
 	category = "Misc - Food & Agricultural"
 
 /datum/supply_pack/faction/syndicate/food/donkpockets
-	name = "Donk Pocket Variety Crate"
+	name = "Donk Pocket Variety"
 	desc = "Featuring a line up of Donk Co.'s most popular pastry!"
 	cost = 500
 	contains = list(/obj/item/storage/box/donkpockets/donkpocketspicy,

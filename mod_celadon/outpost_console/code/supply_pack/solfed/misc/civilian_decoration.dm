@@ -2,7 +2,7 @@
 	category = "Misc - Civilian & Decoration"
 
 /datum/supply_pack/faction/solfed/civilian/fountainpens
-	name = "Calligraphy Crate"
+	name = "Calligraphy"
 	desc = "Sign death warrants in style with these seven executive fountain pens."
 	cost = 250
 	contains = list(/obj/item/storage/box/fountainpens)

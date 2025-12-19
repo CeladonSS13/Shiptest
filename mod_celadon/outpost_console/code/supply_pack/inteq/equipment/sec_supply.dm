@@ -3,7 +3,7 @@
 	crate_type = /obj/structure/closet/crate/secure/gear
 
 /datum/supply_pack/faction/inteq/sec_supply/saber
-	name = "Double-Bladed Energy Sword Crate"
+	name = "Double-Bladed Energy Sword"
 	desc = "Contains one double-bladed energy sword, for when simply killing someone isn't enough."
 	cost = 12000
 	contains = list(/obj/item/melee/duelenergy/saber/yellow)

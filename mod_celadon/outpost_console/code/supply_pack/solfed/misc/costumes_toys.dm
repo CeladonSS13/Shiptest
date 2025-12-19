@@ -2,7 +2,7 @@
 	category = "Misc - Costumes & Toys"
 
 /datum/supply_pack/faction/solfed/costumes_toys/formalwear
-	name = "Formalwear Crate"
+	name = "Formalwear"
 	desc = "You're gonna like the way you look, I guaranteed it. Contains an asston of fancy clothing."
 	cost = 1000 //Lots of very expensive items. You gotta pay up to look good!
 	contains = list(/obj/item/clothing/under/dress/blacktango,

@@ -2,7 +2,7 @@
 	category = "Tech - Experimental Tech"
 
 /datum/supply_pack/faction/unkown/exp/podium
-	name = "Advantage PH46 Podium Crate"
+	name = "Advantage PH46 Podium"
 	desc = "Contains a compact armor-piercing sidearm, chambered in 4.6mm. For NT employee use only."
 	cost = 20000
 	contains = list(/obj/item/storage/guncase/pistol/podium)
@@ -14,14 +14,14 @@
 	contains = list(/obj/item/storage/guncase/pistol/podium_inteq)
 
 /datum/supply_pack/faction/unkown/exp/rhino
-	name = "Rhino Revolver Crate"
+	name = "Rhino Revolver"
 	desc = "Contains a double-action Rhino Revolver, chambered in .357 magnum."
 	cost = 20000
 	contains = list(/obj/item/storage/guncase/pistol/rhino)
 	faction = /datum/faction/nt
 
 /datum/supply_pack/faction/unkown/exp/mini_energy
-	name = "X26 'Ohm' Variable Energy Pistol Crate"
+	name = "X26 'Ohm' Variable Energy Pistol"
 	desc = "Contains a small, versatile energy gun, capable of firing both nonlethal and lethal blasts."
 	cost = 20000
 	contains = list(/obj/item/storage/guncase/pistol/miniegun)
@@ -42,35 +42,35 @@
 	crate_name = "shotgun crate"
 
 /datum/supply_pack/faction/unkown/exp/expedition
-	name = "SGL9 Expedition SMG Crate"
+	name = "SGL9 Expedition SMG"
 	desc = "Contains a Expidition SMG produced by Nanotrasen Advantage. Chambered in 9x18mm."
 	cost = 20000
 	contains = list(/obj/item/storage/guncase/vector)
 	crate_name = "SMG crate"
 
 /datum/supply_pack/faction/unkown/exp/resolution
-	name = "PD46 Resolution PDW Crate"
+	name = "PD46 Resolution PDW"
 	desc = "Contains a compact automatic personal defense weapon chambered in 4.6x30mm."
 	cost = 20000
 	contains = list(/obj/item/storage/guncase/wt550)
 	crate_name = "PDW crate"
 
 /datum/supply_pack/faction/unkown/exp/bdm50
-	name = "BDM-50 'Akita' PDW Crate"
+	name = "BDM-50 'Akita' PDW"
 	desc = "Contains a compact Automatic personal defense weapon chambered in 4.6x30mm, in use by the IRMG."
 	cost = 20000
 	contains = list(/obj/item/storage/guncase/bdm50)
 	crate_name = "PDW crate"
 
 /datum/supply_pack/faction/unkown/exp/champion
-	name = "PHB Champion Machinepistol Crate"
+	name = "PHB Champion Machinepistol"
 	desc = "Contains a compact 9x18mm burst fire machine pistol produced by Nanotrasen advantage. For NT employee use only."
 	cost = 20000
 	contains = list(/obj/item/storage/guncase/saber)
 	crate_name = "Machinepistol crate"
 
 /datum/supply_pack/faction/unkown/exp/barghest
-	name = "PP20 'Barghest' APR Crate"
+	name = "PP20 'Barghest' APR"
 	desc = "Contains a high-energy, automatic laser rifle. Refitted for IRMG use."
 	cost = 20000
 	contains = list(/obj/item/storage/guncase/barghest)
@@ -91,14 +91,14 @@
 	crate_name = "dmr crate"
 
 /datum/supply_pack/faction/unkown/exp/l204
-	name = "L204 'Resistor' Plasma Rifle Crate"
+	name = "L204 'Resistor' Plasma Rifle"
 	desc = "Contains a lethal, high-energy laser gun."
 	cost = 20000
 	contains = list(/obj/item/storage/guncase/energy/laser)
 	crate_name = "laser crate"
 
 /datum/supply_pack/faction/unkown/exp/energy
-	name = "X12 'Volt' Variable Energy Carbine Crate"
+	name = "X12 'Volt' Variable Energy Carbine"
 	desc = "Contains a versatile energy gun, capable of firing both nonlethal and lethal blasts of light."
 	cost = 20000
 	contains = list(/obj/item/storage/guncase/energy/egun)
@@ -106,14 +106,14 @@
 	crate_type = /obj/structure/closet/crate/secure/plasma
 
 /datum/supply_pack/faction/unkown/exp/x46
-	name = "X46 'Amperage' Variable Energy Blaster Crate"
+	name = "X46 'Amperage' Variable Energy Blaster"
 	desc = "Contains an energy-based shotgun equipped with dual kill/disable modes, ideal for short range. For NT employee use only."
 	cost = 20000
 	contains = list(/obj/item/storage/guncase/energy/ultima)
 	crate_name = "shotgun crate"
 
 /datum/supply_pack/faction/unkown/exp/l305
-	name = "L305 'Rush' Tactical Plasma Gun Crate"
+	name = "L305 'Rush' Tactical Plasma Gun"
 	desc = "Contains a compact energy-based SMG. For NT employee use only."
 	cost = 20000
 	contains = list(/obj/item/storage/guncase/energy/etar)
@@ -137,19 +137,19 @@
 // MARK: Ammo
 
 /datum/supply_pack/faction/unkown/exp/podium_mag
-	name = "Podium Magazine Crate"
+	name = "Podium Magazine"
 	desc = "Contains a 4.6x30mm magazine for the Podium and Schnauzer pistols, with a capacity of 12 rounds."
 	contains = list(/obj/item/ammo_box/magazine/m46_30_podium)
 	cost = 1000
 
 /datum/supply_pack/faction/unkown/exp/wt550_mag
-	name = "Resolution Auto Rifle Magazine Crate"
+	name = "Resolution Auto Rifle Magazine"
 	desc = "Contains a 20-round magazine for the Resolution Auto Rifle. Each magazine is designed to facilitate rapid tactical reloads."
 	cost = 1000
 	contains = list(/obj/item/ammo_box/magazine/wt550m9/empty)
 
 /datum/supply_pack/faction/unkown/exp/expedition_mag
-	name = "SGL9 Expedition Submachinegun Magazine Crate"
+	name = "SGL9 Expedition Submachinegun Magazine"
 	desc = "Contains a 30-round magazine for the Expedition Submachinegun, chambered in 9mm."
 	cost = 1000
 	contains = list(/obj/item/ammo_box/magazine/m9mm_expedition)

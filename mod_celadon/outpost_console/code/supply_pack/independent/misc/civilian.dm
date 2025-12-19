@@ -13,7 +13,7 @@
 */
 
 /datum/supply_pack/faction/independent/civilian/janitor
-	name = "Janitorial Supplies Crate"
+	name = "Janitorial Supplies"
 	desc = "Fight back against dirt and grime with these janitorial essentials. Contains a mop, pushbroom, a few wet-floor signs, a trash bag, and a cloth and spray."
 	cost = 100
 	contains = list(/obj/item/reagent_containers/glass/bucket,
@@ -28,14 +28,14 @@
 	crate_name = "janitorial supplies crate"
 
 /datum/supply_pack/faction/independent/civilian/janitank
-	name = "Janitor Backpack Crate"
+	name = "Janitor Backpack"
 	desc = "Call forth divine judgement upon dirt and grime with this high capacity janitor backpack. Contains 500 units of filth-cleansing space cleaner."
 	cost = 750
 	contains = list(/obj/item/watertank/janitor)
 	crate_name = "janitor backpack crate"
 
 /datum/supply_pack/faction/independent/civilian/janicart
-	name = "Janitorial Cart and Galoshes Crate"
+	name = "Janitorial Cart and Galoshes"
 	desc = "The keystone to any successful janitor. As long as you have feet, this pair of galoshes will keep them firmly planted on the ground. Also contains a janitorial cart."
 	cost = 400
 	contains = list(/obj/structure/janitorialcart,
@@ -48,7 +48,7 @@ MARK: Bundles
 */
 
 /datum/supply_pack/faction/independent/civilian/sauna_starter
-	name = "DIY Sauna Crate"
+	name = "DIY Sauna"
 	desc = "A Kalixcian staple. Comes with a set of five freshly cleaned towels, and enough wood to make your very own Sauna. Water not included."
 	cost = 500
 	contains = list(/obj/item/stack/sheet/mineral/wood/twentyfive,
@@ -62,7 +62,7 @@ MARK: Bundles
 	crate_type = /obj/structure/closet/crate/wooden
 
 /datum/supply_pack/faction/independent/civilian/book_crate
-	name = "Book Crate"
+	name = "Book"
 	desc = "Surplus from the Nanotrasen Archives, these six books are sure to be good reads."
 	cost = 500
 	contains = list(/obj/item/book/manual/random,
@@ -74,7 +74,7 @@ MARK: Bundles
 	crate_type = /obj/structure/closet/crate/wooden
 
 /datum/supply_pack/faction/independent/civilian/wrapping_paper
-	name = "Festive Wrapping Paper Crate"
+	name = "Festive Wrapping Paper"
 	desc = "Want to mail your loved ones gift-wrapped chocolates, stuffed animals, flattened flowers? You can do all that, with this crate full of wrapping paper."
 	cost = 100
 	contains = list(/obj/item/stack/wrapping_paper)
@@ -82,7 +82,7 @@ MARK: Bundles
 	crate_type = /obj/structure/closet/crate/wooden
 
 /datum/supply_pack/faction/independent/civilian/paper
-	name = "Bureaucracy Crate"
+	name = "Bureaucracy"
 	desc = "High stacks of papers on your desk are a big problem - make it Pea-sized with these bureaucratic supplies! Contains six pens, some camera film, hand labeler supplies, a paper bin, a carbon paper bin, three folders, a laser pointer, two clipboards and two stamps."//that was too forced
 	cost = 250
 	contains = list(/obj/structure/filingcabinet/chestdrawer/wheeled,
@@ -109,7 +109,7 @@ MARK: Bundles
 	crate_name = "bureaucracy crate"
 
 /datum/supply_pack/faction/independent/civilian/forensics
-	name = "Forensics Crate"
+	name = "Forensics"
 	desc = "Stay hot on the criminal's heels with Nanotrasen's Detective Essentials(tm). Contains a forensics scanner, six evidence bags, camera, tape recorder, white crayon, and of course, a fedora."
 	cost = 500
 	contains = list(/obj/item/detective_scanner,
@@ -168,7 +168,7 @@ MARK: Decoration / flooring
 */
 
 /datum/supply_pack/faction/independent/civilian/potted_plants
-	name = "Potted Plants Crate"
+	name = "Potted Plants"
 	desc = "Spruce up the ship with these lovely plants! Contains a random assortment of five potted plants from Nanotrasen's potted plant research division. Warranty void if thrown."
 	cost = 350
 	contains = list(/obj/item/kirbyplants/random,
@@ -197,7 +197,7 @@ MARK: Decoration / flooring
 	crate_type = /obj/structure/closet/crate/wooden
 
 /datum/supply_pack/faction/independent/civilian/carpet
-	name = "Standard Carpet Crate"
+	name = "Standard Carpet"
 	desc = "Plasteel floor tiles getting on your nerves? These stacks of extra soft carpet will tie any room together."
 	cost = 350
 	contains = list(/obj/item/stack/tile/carpet/fifty,
@@ -205,7 +205,7 @@ MARK: Decoration / flooring
 	crate_name = "premium carpet crate"
 
 /datum/supply_pack/faction/independent/civilian/carpet_exotic
-	name = "Exotic Carpet Crate"
+	name = "Exotic Carpet"
 	desc = "Exotic carpets for all your decorating needs. Contains 50 tiles each of 8 different flooring patterns."
 	cost = 750
 	contains = list(/obj/item/stack/tile/carpet/blue/fifty,
@@ -247,7 +247,7 @@ MARK: Decoration / flooring
 	contains = list(/obj/item/storage/box/ids)
 
 /datum/supply_pack/faction/independent/civilian/spare_clothes
-	name = "Spare Jumpsuits Crate"
+	name = "Spare Jumpsuits"
 	desc = "Contains a spare set of utility jumpsuits and shoes for those unfortunate accidents."
 	cost = 150
 	contains = list(/obj/item/clothing/under/utility,
@@ -258,21 +258,21 @@ MARK: Decoration / flooring
 	crate_type = /obj/structure/closet/crate/wooden
 
 /datum/supply_pack/faction/independent/civilian/satchel
-	name = "Spare Satchel Crate"
+	name = "Spare Satchel"
 	desc = "Contains a spare backpack, for the intrepid traveller who managed to lose the last one."
 	cost = 75
 	contains = list(/obj/item/storage/backpack/satchel, /obj/item/storage/backpack)
 	crate_name = "spare backpack bag crate"
 
 /datum/supply_pack/faction/independent/civilian/duffels
-	name = "Spare Duffelbag Crate"
+	name = "Spare Duffelbag"
 	desc = "Contains a spare duffelbag. Ideal for carrying items across long distances."
 	cost = 75
 	contains = list(/obj/item/storage/backpack/duffelbag)
 	crate_name = "spare duffelbag crate"
 
 /datum/supply_pack/faction/independent/civilian/broadcast_camera
-	name = "Broadcast Camera Crate"
+	name = "Broadcast Camera"
 	desc = "Lights, Camera, Action! This consumer-grade broadcasting camera automatically streams to entertainment monitors across the sector. Not rated for use in actual combat."
 	cost = 500
 	contains = list(/obj/item/bodycamera/broadcast_camera)
@@ -280,7 +280,7 @@ MARK: Decoration / flooring
 	crate_type = /obj/structure/closet/crate
 
 /datum/supply_pack/faction/independent/civilian/fountainpens
-	name = "Calligraphy Crate"
+	name = "Calligraphy"
 	desc = "Sign death warrants in style with these seven executive fountain pens."
 	cost = 700
 	contains = list(/obj/item/storage/box/fountainpens)

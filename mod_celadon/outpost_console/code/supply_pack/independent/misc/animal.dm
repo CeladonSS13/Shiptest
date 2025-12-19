@@ -7,7 +7,7 @@
 */
 
 /datum/supply_pack/faction/independent/animal/monkey
-	name = "Monkey Cube Crate"
+	name = "Monkey Cube"
 	desc = "Stop monkeying around! Contains seven monkey cubes. Just add water!"
 	cost = 1500
 	contains = list (/obj/item/storage/box/monkeycubes)
@@ -15,21 +15,21 @@
 	crate_type = /obj/structure/closet/crate
 
 /datum/supply_pack/faction/independent/animal/chick
-	name = "Chicken Crate"
+	name = "Chicken"
 	desc = "A crate containing a chicken."
 	cost = 500
 	contains = list(/mob/living/simple_animal/chick)
 	crate_name = "chicken crate"
 
 /datum/supply_pack/faction/independent/animal/goat
-	name = "Goat Crate"
+	name = "Goat"
 	desc = "A crate containing a goat."
 	cost = 750
 	contains = list(/mob/living/simple_animal/hostile/retaliate/goat)
 	crate_name = "goat crate"
 
 /datum/supply_pack/faction/independent/animal/cow
-	name = "Cow Crate"
+	name = "Cow"
 	desc = "A crate containing a cow."
 	cost = 500
 	contains = list(/mob/living/basic/cow)
@@ -40,7 +40,7 @@
 */
 
 /datum/supply_pack/faction/independent/animal/cat
-	name = "Cat Crate"
+	name = "Cat"
 	desc = "The cat goes meow! Comes with a collar and a nice cat toy! Cheeseburger not included."//i can't believe im making this reference
 	cost = 1000 //Cats are worth as much as corgis.
 	contains = list(/mob/living/simple_animal/pet/cat,
@@ -56,7 +56,7 @@
 		new /mob/living/simple_animal/pet/cat/Proc(.)
 
 /datum/supply_pack/faction/independent/animal/pug
-	name = "Pug Crate"
+	name = "Pug"
 	desc = "Like a normal dog, but... squished. Comes with a nice collar!"
 	cost = 1000
 	contains = list(/mob/living/simple_animal/pet/dog/pug,
@@ -64,7 +64,7 @@
 	crate_name = "pug crate"
 
 /datum/supply_pack/faction/independent/animal/corgi
-	name = "Corgi Crate"
+	name = "Corgi"
 	desc = "Considered the optimal dog breed by thousands of research scientists, this Corgi is but one dog from the millions of Ian's noble bloodline. Comes with a cute collar!"
 	cost = 1000
 	contains = list(/mob/living/simple_animal/pet/dog/corgi,
@@ -80,7 +80,7 @@
 			new /mob/living/simple_animal/pet/dog/corgi/Lisa(.)
 
 /datum/supply_pack/faction/independent/animal/corgis/exotic
-	name = "Exotic Corgi Crate"
+	name = "Exotic Corgi"
 	desc = "Corgis fit for a king, these corgis come in a unique color to signify their superiority. Comes with a cute collar!"
 	cost = 1500
 	contains = list(/mob/living/simple_animal/pet/dog/corgi/exoticcorgi,
@@ -92,14 +92,14 @@
 */
 
 /datum/supply_pack/faction/independent/animal/parrot
-	name = "Bird Crate"
+	name = "Bird"
 	desc = "Contains an expert telecommunication bird."
 	cost = 2000
 	contains = list(/mob/living/simple_animal/parrot)
 	crate_name = "parrot crate"
 
 /datum/supply_pack/faction/independent/animal/fox
-	name = "Fox Crate"
+	name = "Fox"
 	desc = "The fox goes...? Comes with a collar!"//what does the fox say // awful //yip
 	cost = 1000
 	contains = list(/mob/living/simple_animal/pet/fox,
@@ -107,7 +107,7 @@
 	crate_name = "fox crate"
 
 /datum/supply_pack/faction/independent/animal/butterfly
-	name = "Butterflies Crate"
+	name = "Butterflies"
 	desc = "Not a very dangerous insect, but they do give off a better image than, say, flies or cockroaches."//is that a motherfucking worm reference
 	cost = 500
 	contains = list(/mob/living/simple_animal/butterfly)
@@ -119,7 +119,7 @@
 		new /mob/living/simple_animal/butterfly(.)
 
 /datum/supply_pack/faction/independent/animal/snake
-	name = "Snake Crate"
+	name = "Snake"
 	desc = "Contains a poisonous snake. N+S Logistics are not responsible for any venomous injuries you may sustain."
 	cost = 1000
 	contains = list(/mob/living/simple_animal/hostile/retaliate/poison/snake)
