@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/independent/canister
-	category = "Gas Canisters"
+	category = "Engineering - Gas Canisters"
 	crate_type = /obj/structure/closet/crate/large
 
 /*

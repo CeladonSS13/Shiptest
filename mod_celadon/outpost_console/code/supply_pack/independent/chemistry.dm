@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/independent/chemistry
-	category = "Chemistry"
+	category = "Medical - Chemistry"
 	crate_type = /obj/structure/closet/crate/chem
 
 /* MARK: = Химия =

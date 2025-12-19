@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/independent/medical
-	category = "Medical"
+	category = "Medical - Medical"
 	crate_type = /obj/structure/closet/crate/medical
 
 /*
@@ -187,7 +187,7 @@
 	crate_type = /obj/structure/closet/crate/medical
 
 // Diabetes Medical Kit
-/datum/supply_pack/medical/diabetes_kit
+/datum/supply_pack/medical/independent/diabetes_kit
 	name = "Diabetes Medical Kit"
 	desc = "A specialized medical kit for diabetics containing insulin supplies and monitoring equipment. Essential for managing diabetes."
 	cost = 800

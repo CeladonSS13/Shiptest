@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/independent/animal
-	category = "Animals"
+	category = "Misc - Animals"
 	crate_type = /obj/structure/closet/crate/critter
 
 /*

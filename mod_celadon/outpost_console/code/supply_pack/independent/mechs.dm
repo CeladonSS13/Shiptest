@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/independent/mech
-	category = "Exosuit Construction"
+	category = "Mech - Exosuit Construction"
 	crate_type = /obj/structure/closet/crate/large
 
 /*

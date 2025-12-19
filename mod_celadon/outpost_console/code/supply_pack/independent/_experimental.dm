@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/unkown/exp
-	category = "Experimental Technology"
+	category = "Tech - Experimental Technology"
 
 /datum/supply_pack/faction/unkown/exp/podium
 	name = "Advantage PH46 Podium Crate"
@@ -126,11 +126,13 @@
 	contains = list(/obj/item/storage/guncase/energy/al607)
 	crate_name = "sniper rifle crate"
 
+/* // Новый пистолет НТ
 /datum/supply_pack/faction/unkown/exp/challenger
 	name = "VI 'Challenger' handgun"
 	desc = "Contains a double stacked Challenger pistol, produced by Nanotrasen along with Vigilitas Interstellar and is chambered in 9x18mm."
 	cost = 1750
 	contains = list(/obj/item/storage/guncase/pistol/commander)
+*/
 
 // MARK: Ammo
 

@@ -6,4 +6,4 @@
 	desc = "Some security armor vests and helmets to protect you. Produced by Nanotrasen"
 	contains = list(/obj/item/clothing/suit/armor/nanotrasen,
 					/obj/item/clothing/head/helmet/m10/nanotrasen)
-	cost = 1000
+	cost = 500

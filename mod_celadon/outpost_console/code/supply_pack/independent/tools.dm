@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/independent/tools
-	category = "Tools & Tanks"
+	category = "Engineering - Tools & Tanks"
 	crate_type = /obj/structure/closet/crate/engineering
 
 /*
