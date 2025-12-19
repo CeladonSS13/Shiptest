@@ -118,7 +118,7 @@ MARK: 7.62x40mm
 */
 
 /datum/supply_pack/faction/solfed/ammo/a762_40_rubber
-	name = "box of 7.62x40mm rubber ammo"
+	name = "7.62x40mm Rubber Ammo Box"
 	desc = "A box of standard 7.62x40mm rubber ammo."
 	contains = list(/obj/item/storage/box/ammo/a762_40/rubber)
 	cost = 400
@@ -128,13 +128,13 @@ MARK: Ferroslugs
 */
 
 /datum/supply_pack/faction/solfed/ammo/ferroslugboxcrate
-	name = "Ferromagnetic Slug Box"
+	name = "Ferromagnetic Slug (FE slug) Box"
 	desc = "Contains a 48-round ferromagnetic slug for gauss guns such as the Model-H."
 	contains = list(/obj/item/storage/box/ammo/ferroslug)
 	cost = 175
 
 /datum/supply_pack/faction/solfed/ammo/hcslugs
-	name = "High Conductivity Slug Box"
+	name = "High Conductivity Slug (FE slug) Box"
 	desc = "Contains a 48-round high conductivity slug for gauss guns such as the Model-H."
 	contains = list(/obj/item/storage/box/ammo/ferroslug/hc)
 	cost = 225
@@ -144,13 +144,13 @@ MARK: Ferro Pellets
 */
 
 /datum/supply_pack/faction/solfed/ammo/ferropelletboxcrate
-	name = "Ferromagnetic Pellet Box"
+	name = "Ferromagnetic Pellet (FE pellet) Box"
 	desc = "Contains a 48-round ferromagnetic pellet ammo box for gauss guns such as the Claris."
 	contains = list(/obj/item/storage/box/ammo/ferropellet)
 	cost = 200 //5.7 ammo efficiency at 25 damage
 
 /datum/supply_pack/faction/solfed/ammo/hcpellets
-	name = "High Conductivity Pellet Box"
+	name = "High Conductivity Pellet (FE pellet) Box"
 	desc = "Contains a 48-round high conductivity pellet ammo box for gauss guns such as the Claris."
 	contains = list(/obj/item/storage/box/ammo/ferropellet/hc)
 	cost = 250
@@ -160,13 +160,13 @@ MARK: Ferro Lances
 */
 
 /datum/supply_pack/faction/solfed/ammo/ferrolanceboxcrate
-	name = "Ferromagnetic Lance Box"
+	name = "Ferromagnetic Lance (FE lacnce) Box"
 	desc = "Contains a 48-round box for high-powered gauss guns such as the GAR assault rifle."
 	contains = list(/obj/item/storage/box/ammo/ferrolance)
 	cost = 300 //5 ammo efficiency at 30 damage
 
 /datum/supply_pack/faction/solfed/ammo/ferrolanceboxcrate_hc
-	name = "High Conductivity Lance Box"
+	name = "High Conductivity Lance (FE lacnce) Box"
 	desc = "Contains a 48-round box for high-powered gauss guns such as the GAR assault rifle."
 	contains = list(/obj/item/storage/box/ammo/ferrolance/hc)
 	cost = 350

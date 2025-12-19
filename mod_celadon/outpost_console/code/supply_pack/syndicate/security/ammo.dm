@@ -22,6 +22,7 @@
 MARK: .22lr
 */
 
+/*
 /datum/supply_pack/faction/syndicate/ammo/c22lr
 	name = ".22 LR Ammo Box"
 	desc = "Contains a 75-round ammo box for refilling .22 LR weapons."
@@ -39,6 +40,7 @@ MARK: .22lr
 	desc = "Contains a 75-round armour piercing ammo box for refilling .22 LR weapons."
 	contains = list(/obj/item/storage/box/ammo/c22lr/ap)
 	cost = 300
+*/
 
 /*
 MARK: .357

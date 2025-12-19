@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/inteq/sec_supply
-	category = "Equipment - Security Supplies"
+	category = "Equipment - Supplies"
 	crate_type = /obj/structure/closet/crate/secure/gear
 
 /datum/supply_pack/faction/inteq/sec_supply/saber
