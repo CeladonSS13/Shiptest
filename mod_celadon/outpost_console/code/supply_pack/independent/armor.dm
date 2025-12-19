@@ -10,7 +10,7 @@
 /datum/supply_pack/faction/independent/armor/basic_armor
 	name = "Armor Crate"
 	desc = "One set of well-rounded body armor. The set includes a helmet and vest."
-	cost = 750
+	cost = 500
 	contains = list(/obj/item/clothing/suit/armor/vest,
 					/obj/item/clothing/head/helmet/m10)
 	crate_name = "armor crate"
@@ -19,7 +19,7 @@
 /datum/supply_pack/faction/independent/armor/riot_armor
 	name = "Riot Armor Crate"
 	desc = "Contains one full set of riot armor. Although heavily padded to deal with close-quarters threats, they perform poorly against most firearms."
-	cost = 1500
+	cost = 1250
 	contains = list(/obj/item/clothing/suit/armor/riot,
 					/obj/item/clothing/head/helmet/riot)
 	crate_name = "riot armor crate"
@@ -28,7 +28,7 @@
 /datum/supply_pack/faction/independent/armor/bullet_armor
 	name = "Bulletproof Armor Crate"
 	desc = "Contains one full set of bulletproof armor, guaranteed to reduce a bullet's stopping power by half but with limited protection against melee weaponry."
-	cost = 1750
+	cost = 1500
 	contains = list(/obj/item/clothing/suit/armor/vest/bulletproof,
 					/obj/item/clothing/head/helmet/bulletproof,
 					/obj/item/clothing/glasses/sunglasses/ballistic)
@@ -46,7 +46,7 @@
 /datum/supply_pack/faction/independent/armor/marine_armor
 	name = "Tactical Armor Crate"
 	desc = "One set of well-rounded tactical armor. While it does not protect the limbs, the vest is fairly durable. The set includes a helmet and vest."
-	cost = 1500
+	cost = 2000
 	contains = list(/obj/item/clothing/suit/armor/vest/marine,
 					/obj/item/clothing/head/helmet/bulletproof/x11)
 	crate_name = "armor crate"
@@ -64,7 +64,7 @@
 /datum/supply_pack/faction/independent/armor/heavy_marine_armor
 	name = "Heavy Tactical Armor Crate"
 	desc = "One set of well-rounded heavy tactical body armor. Plates are attached to the vest and cover the limbs. The set includes a helmet and chestpiece."
-	cost = 7000
+	cost = 5000
 	contains = list(/obj/item/clothing/suit/armor/vest/marine/heavy,
 					/obj/item/clothing/head/helmet/bulletproof/x11)
 	crate_name = "armor crate"

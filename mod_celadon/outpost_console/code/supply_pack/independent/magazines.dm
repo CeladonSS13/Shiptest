@@ -12,7 +12,6 @@
 	desc = "Contains a .38 speedloader for revolvers, containing 6 rounds."
 	contains = list(/obj/item/ammo_box/c38/empty)
 	cost = 100
-	faction_discount = 20
 
 /datum/supply_pack/faction/independent/magazine/a44roum_speedloader
 	name = ".44 Roumain Speedloader Crate"

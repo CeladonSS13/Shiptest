@@ -123,28 +123,3 @@
 	cost = 500
 	contains = list(/obj/item/reagent_containers/glass/concrete_bag)
 	crate_name = "Concrete Mix"
-
-/*
-MARK:		Basic construction materials
-*/
-
-/datum/supply_pack/faction/independent/material/glass50
-	name = "50 Glass Sheets"
-	desc = "Let some nice light in with fifty glass sheets!"
-	cost = 500
-	contains = list(/obj/item/stack/sheet/glass/fifty)
-	crate_name = "glass sheets crate"
-
-/datum/supply_pack/faction/independent/material/metal50
-	name = "50 Metal Sheets"
-	desc = "Any construction project begins with a good stack of fifty metal sheets!"
-	cost = 500
-	contains = list(/obj/item/stack/sheet/metal/fifty)
-	crate_name = "metal sheets crate"
-
-/datum/supply_pack/faction/independent/material/plasteel20
-	name = "20 Plasteel Sheets"
-	desc = "Reinforce and repair structural integrity with twenty plasteel sheets!"
-	cost = 2500
-	contains = list(/obj/item/stack/sheet/plasteel/twenty)
-	crate_name = "plasteel sheets crate"

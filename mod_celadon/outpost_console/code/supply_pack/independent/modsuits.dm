@@ -56,7 +56,6 @@
 	cost = 4000
 	contains = list(/obj/item/mod/control/pre_equipped/advanced)
 	faction = /datum/faction/nt
-	faction_discount = 0
 	faction_locked = TRUE
 
 /datum/supply_pack/modsuits/loader
@@ -83,7 +82,6 @@
 	cost = 3500
 	contains = list(/obj/item/mod/control/pre_equipped/rescue)
 	faction = /datum/faction/nt
-	faction_discount = 0
 	faction_locked = TRUE
 
 /datum/supply_pack/modsuits/research
@@ -104,7 +102,6 @@
 	cost = 5500
 	contains = list(/obj/item/mod/control/pre_equipped/safeguard)
 	faction = /datum/faction/nt
-	faction_discount = 0
 	faction_locked = TRUE
 
 /datum/supply_pack/modsuits/syndicate

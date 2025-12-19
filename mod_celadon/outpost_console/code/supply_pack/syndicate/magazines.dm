@@ -38,7 +38,6 @@
 	desc = "Contains a .357 speedloader for revolvers, with a capacity of 6 rounds."
 	contains = list(/obj/item/ammo_box/a357/empty)
 	cost = 250
-	faction_discount = 20
 
 /datum/supply_pack/faction/syndicate/magazine/sidewinder_mag
 	name = "Sidewinder Magazine Crate"

@@ -15,16 +15,6 @@
 MARK:	Запчасти
 */
 
-/datum/supply_pack/faction/independent/machinery/lightbulbs
-	name = "Replacement Lights"
-	desc = "May the light of Aether shine upon this sector! Or at least, the light of forty two light tubes and twenty one light bulbs."
-	cost = 500
-	contains = list(/obj/item/storage/box/lights/mixed,
-					/obj/item/storage/box/lights/mixed,
-					/obj/item/storage/box/lights/mixed)
-	crate_name = "replacement lights"
-	crate_type = /obj/structure/closet/crate
-
 /datum/supply_pack/faction/independent/machinery/t1
 	name = "T1 parts crate"
 	desc = "A bundle of basic machine parts, containing 3 of each common part type for when you're too lazy to print them yourself."
@@ -175,18 +165,6 @@ MARK: Атмос
 	cost = 2000
 	contains = list(/obj/machinery/portable_atmospherics/scrubber/huge/movable/cargo)
 	crate_name = "huge portable scrubber crate"
-	crate_type = /obj/structure/closet/crate/large
-
-/*
-MARK:	Боты
-*/
-
-/datum/supply_pack/faction/independent/machinery/mule
-	name = "MULEbot Crate"
-	desc = "A dilligent MULEbot from the N+S Factories, happy to carry everything you could possibly need, if it's a crate that is." //this description screamed TG. It has been changed.
-	cost = 2000
-	contains = list(/mob/living/simple_animal/bot/mulebot)
-	crate_name = "\improper MULEbot Crate"
 	crate_type = /obj/structure/closet/crate/large
 
 /*

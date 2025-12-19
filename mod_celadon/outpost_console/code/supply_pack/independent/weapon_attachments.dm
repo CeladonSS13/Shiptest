@@ -32,7 +32,6 @@
 // 	contains = list(/obj/item/attachment/alof)
 // 	crate_name = "alof crate"
 // 	faction = /datum/faction/srm
-// 	faction_discount = 10
 
 /datum/supply_pack/faction/independent/attachment/silencer
 	name = "Suppressor Crate"
