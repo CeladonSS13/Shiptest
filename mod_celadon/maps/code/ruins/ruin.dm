@@ -381,13 +381,6 @@
 	cost = 5
 	allow_duplicates = FALSE
 
-/datum/map_template/ruin/jungle/roommates
-	id = "roommates"
-	name = "Roommates"
-	description = "A shack once inhabited by a clown and a mime... and they were roommates."
-	suffix = "jungle_surface_roommates.dmm"
-	cost = 1
-
 /datum/map_template/ruin/jungle/ninjashrine
 	id = "ninjashrine"
 	name = "Ninja Shrine"
