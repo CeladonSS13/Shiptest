@@ -32,13 +32,13 @@ MARK: .22lr
 	name = ".22 LR HP Ammo Box Crate"
 	desc = "Contains a 75-round hollow point ammo box for refilling .22 LR weapons."
 	contains = list(/obj/item/storage/box/ammo/c22lr/hp)
-	cost = 310
+	cost = 300
 
 /datum/supply_pack/faction/syndicate/ammo/c22lr_ap
 	name = ".22 LR AP Ammo Box Crate"
 	desc = "Contains a 75-round armour piercing ammo box for refilling .22 LR weapons."
 	contains = list(/obj/item/storage/box/ammo/c22lr/ap)
-	cost = 310
+	cost = 300
 
 /*
 MARK: .357
@@ -48,19 +48,19 @@ MARK: .357
 	name = ".357 Ammo Box Crate"
 	desc = "Contains a 48-round .357 box for revolvers such as the R-23 'Viper' revolver and the HP Firebrand."
 	contains = list(/obj/item/storage/box/ammo/a357)
-	cost = 255
+	cost = 250
 
 /datum/supply_pack/faction/syndicate/ammo/a357hp_ammo_box
 	name = ".357 HP Ammo Box Crate"
 	desc = "Contains a 48-round .357 box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/a357_hp)
-	cost = 320
+	cost = 325
 
 /datum/supply_pack/faction/syndicate/ammo/a357match_ammo_box
 	name = ".357 Match Ammo Box Crate"
 	desc = "Contains a 48-round .357 match box for better performance against armor."
 	contains = list(/obj/item/storage/box/ammo/a357_match)
-	cost = 320
+	cost = 325
 
 /*
 MARK: 9x18mm
@@ -120,25 +120,25 @@ MARK: .45
 	name = ".45 Ammo Box Crate"
 	desc = "Contains a 48-round .45 box for SMGs like the C-20r 'Cobra'."
 	contains = list(/obj/item/storage/box/ammo/c45)
-	cost = 210
+	cost = 200
 
 /datum/supply_pack/faction/syndicate/ammo/c45ap_ammo_box
 	name = ".45 AP Ammo Box Crate"
 	desc = "Contains a 48-round .45 box loaded with armor piercing ammo."
 	contains = list(/obj/item/storage/box/ammo/c45_ap)
-	cost = 260
+	cost = 250
 
 /datum/supply_pack/faction/syndicate/ammo/c45hp_ammo_box
 	name = ".45 HP Ammo Box Crate"
 	desc = "Contains a 48-round .45 box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c45_hp)
-	cost = 260
+	cost = 250
 
 /datum/supply_pack/faction/syndicate/ammo/c45mmrubber_ammo_box
 	name = ".45 Rubber Ammo Box Crate"
 	desc = "Contains a 48-round .45 box loaded with less-than-lethal rubber rounds."
 	contains = list(/obj/item/storage/box/ammo/c45_rubber)
-	cost = 210
+	cost = 200
 
 /*
 MARK: 5.7x39mm
@@ -148,25 +148,25 @@ MARK: 5.7x39mm
 	name = "5.7x39mm Ammo Box Crate"
 	desc = "Contains one 80-round 5.7x39mm box for PDWs such as the Sidewinder."
 	contains = list(/obj/item/storage/box/ammo/c57x39)
-	cost = 295
+	cost = 300
 
 /datum/supply_pack/faction/syndicate/ammo/c57x39mm_ap
 	name = "5.7x39mm AP Ammo Box Crate"
 	desc = "Contains one 80-round 5.7x39mm box for PDWs such as the Sidewinder."
 	contains = list(/obj/item/storage/box/ammo/c57x39/ap)
-	cost = 370
+	cost = 375
 
 /datum/supply_pack/faction/syndicate/ammo/c57x39mm_hp
 	name = "5.7x39mm HP Ammo Box Crate"
 	desc = "Contains one 80-round 5.7x39mm Hollow Point box for PDWs such as the Sidewinder."
 	contains = list(/obj/item/storage/box/ammo/c57x39/hp)
-	cost = 370
+	cost = 375
 
 /datum/supply_pack/faction/syndicate/ammo/c57x39mm_rubber
 	name = "5.7x39mm Rubber Ammo Box Crate"
 	desc = "Contains one 80-round 5.7x39mm Rubber box for PDWs such as the Sidewinder."
 	contains = list(/obj/item/storage/box/ammo/c57x39/rubber)
-	cost = 295
+	cost = 300
 
 /*
 MARK: 12 Gauge
@@ -181,7 +181,7 @@ MARK: 12 Gauge
 /datum/supply_pack/faction/syndicate/ammo/slugs
 	name = "12g Shotgun Slug Crate"
 	desc = "Contains a box of 32 12 gauge slug shells for use in lethal persuasion."
-	cost = 205
+	cost = 200
 	contains = list(/obj/item/storage/box/ammo/a12g_slug)
 
 /datum/supply_pack/faction/syndicate/ammo/blank_shells
@@ -199,7 +199,7 @@ MARK: 12 Gauge
 /datum/supply_pack/faction/syndicate/ammo/techshells
 	name = "12g Unloaded Shotgun Technological Shells Crate"
 	desc = "Contains a box of 7 versatile tech shells, capable of producing a variety of deadly effects for any situation. Some assembly required."
-	cost = 210
+	cost = 200
 	contains = list(/obj/item/storage/box/techshot)
 
 /*

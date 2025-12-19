@@ -71,25 +71,25 @@ MARK: 5.56 Caseless
 	name = "5.56 HITP Caseless Ammo Box Crate"
 	desc = "Contains a 48-round 5.56mm caseless box for SolFed sidearms like the Pistole C."
 	contains = list(/obj/item/storage/box/ammo/c556mm)
-	cost = 165
+	cost = 150
 
 /datum/supply_pack/faction/solfed/ammo/c556mmHITPap_ammo_box
 	name = "5.56 HITP Caseless AP Ammo Box Crate"
 	desc = "Contains a 48-round 5.56mm caseless boxloaded with armor piercing ammo."
 	contains = list(/obj/item/storage/box/ammo/c556mm_ap)
-	cost = 205
+	cost = 200
 
 /datum/supply_pack/faction/solfed/ammo/c556mmhitphp_ammo_box
 	name = "5.56 HITP Caseless HP Ammo Box Crate"
 	desc = "Contains a 48-round 5.56mm caseless box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c556mm_hp)
-	cost = 205
+	cost = 200
 
 /datum/supply_pack/faction/solfed/ammo/c556HITPrubber_ammo_box
 	name = "5.56 HITP Caseless Rubber Ammo Box Crate"
 	desc = "Contains a 48-round 5.56 caseless box loaded with less-than-lethal rubber rounds."
 	contains = list(/obj/item/storage/box/ammo/c556mm_rubber)
-	cost = 165
+	cost = 150
 
 /*
 MARK: 5.56x42mm
@@ -121,7 +121,7 @@ MARK: 7.62x40mm
 	name = "box of 7.62x40mm rubber ammo"
 	desc = "A box of standard 7.62x40mm rubber ammo."
 	contains = list(/obj/item/storage/box/ammo/a762_40/rubber)
-	cost = 7777
+	cost = 400
 
 /*
 MARK: Ferroslugs
@@ -137,7 +137,7 @@ MARK: Ferroslugs
 	name = "High Conductivity Slug Box Crate"
 	desc = "Contains a 48-round high conductivity slug for gauss guns such as the Model-H."
 	contains = list(/obj/item/storage/box/ammo/ferroslug/hc)
-	cost = 215
+	cost = 225
 
 /*
 MARK: Ferro Pellets
@@ -147,13 +147,13 @@ MARK: Ferro Pellets
 	name = "Ferromagnetic Pellet Box Crate"
 	desc = "Contains a 48-round ferromagnetic pellet ammo box for gauss guns such as the Claris."
 	contains = list(/obj/item/storage/box/ammo/ferropellet)
-	cost = 210 //5.7 ammo efficiency at 25 damage
+	cost = 200 //5.7 ammo efficiency at 25 damage
 
 /datum/supply_pack/faction/solfed/ammo/hcpellets
 	name = "High Conductivity Pellet Box Crate"
 	desc = "Contains a 48-round high conductivity pellet ammo box for gauss guns such as the Claris."
 	contains = list(/obj/item/storage/box/ammo/ferropellet/hc)
-	cost = 260
+	cost = 250
 
 /*
 MARK: Ferro Lances
@@ -163,13 +163,13 @@ MARK: Ferro Lances
 	name = "Ferromagnetic Lance Box Crate"
 	desc = "Contains a 48-round box for high-powered gauss guns such as the GAR assault rifle."
 	contains = list(/obj/item/storage/box/ammo/ferrolance)
-	cost = 285 //5 ammo efficiency at 30 damage
+	cost = 300 //5 ammo efficiency at 30 damage
 
 /datum/supply_pack/faction/solfed/ammo/ferrolanceboxcrate_hc
 	name = "High Conductivity Lance Box Crate"
 	desc = "Contains a 48-round box for high-powered gauss guns such as the GAR assault rifle."
 	contains = list(/obj/item/storage/box/ammo/ferrolance/hc)
-	cost = 360
+	cost = 350
 
 /*
 MARK: 8x58mm Caseless

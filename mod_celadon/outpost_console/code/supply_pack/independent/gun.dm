@@ -17,26 +17,12 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 MARK:		Pistols
 */
 
-/datum/supply_pack/faction/independent/gun/disposable
-	name = "Disposable Gun Crate"
-	desc = "In some sectors, these disposable pistols are the only firearms that can be legally sold for less than 200cr. That price is still far too high."
-	cost = 300
-	contains = list(/obj/item/storage/guncase/pistol/disposable)
-	crate_name = "disposable gun crate"
-
 /datum/supply_pack/faction/independent/gun/m17
 	name = "M17 Micro Target Pistol Crate"
 	desc = "A cheap target shooting pistol manufactured by Serene Outdoors. Chambered in .22 LR."
 	cost = 400
 	contains = list(/obj/item/storage/guncase/pistol/m17)
 	crate_name = "pistol crate"
-
-/datum/supply_pack/faction/independent/gun/derringer
-	name = ".38 Derringer Crate"
-	desc = "A cheap, concealable pistol manufactured by the reputable Hunter's Pride. At least it's better than a disposable pistol. Chambered in .38 rounds."
-	cost = 450
-	contains = list(/obj/item/storage/guncase/pistol/derringer)
-	crate_name = "derringer crate"
 
 /datum/supply_pack/faction/independent/gun/detrevolver
 	name = "HP Detective Revolver Crate"

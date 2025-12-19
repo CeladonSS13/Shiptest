@@ -49,25 +49,25 @@ MARK: 10x22mm
 	name = "10x22mm Ammo Box Crate"
 	desc = "Contains a 36-round 10x22mm box for SMGs like the SKM-44v Mongrel."
 	contains = list(/obj/item/storage/box/ammo/c10mm)
-	cost = 210
+	cost = 200
 
 /datum/supply_pack/faction/inteq/ammo/c10mmap_ammo_box
 	name = "10x22mm AP Ammo Box Crate"
 	desc = "Contains a 36-round 10x22mm box loaded with armor piercing ammo."
 	contains = list(/obj/item/storage/box/ammo/c10mm_ap)
-	cost = 260
+	cost = 250
 
 /datum/supply_pack/faction/inteq/ammo/c10mmhp_ammo_box
 	name = "10x22mm HP Ammo Box Crate"
 	desc = "Contains a 36-round 10x22mm box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c10mm_hp)
-	cost = 260
+	cost = 250
 
 /datum/supply_pack/faction/inteq/ammo/c10mmrubber_ammo_box
 	name = "10x22mm Rubber Ammo Box Crate"
 	desc = "Contains a 36-round 10x22mm box loaded with less-than-lethal rubber rounds."
 	contains = list(/obj/item/storage/box/ammo/c10mm_rubber)
-	cost = 210
+	cost = 200
 
 /*
 MARK: .44
@@ -77,13 +77,13 @@ MARK: .44
 	name = ".44 Roumain Ammo Box Crate"
 	desc = "Contains a 48-round box of .44 roumain ammo."
 	contains = list(/obj/item/storage/box/ammo/a44roum)
-	cost = 210
+	cost = 200
 
 /datum/supply_pack/faction/inteq/ammo/a44roum_rubber
 	name = ".44 Roumain Rubber Ammo Box Crate"
 	desc = "Contains a 48-round box of .44 roumain ammo loaded with less-than-lethal rubber rounds."
 	contains = list(/obj/item/storage/box/ammo/a44roum_rubber)
-	cost = 210
+	cost = 200
 
 /datum/supply_pack/faction/inteq/ammo/a44roum_hp
 	name = ".44 Roumain Hollow Point Ammo Box Crate"
@@ -99,19 +99,19 @@ MARK: .357
 	name = ".357 Ammo Box Crate"
 	desc = "Contains a 36-round .357 box for Horizon-X revolver."
 	contains = list(/obj/item/storage/box/ammo/a357)
-	cost = 255
+	cost = 250
 
 /datum/supply_pack/faction/inteq/ammo/a357hp_ammo_box
 	name = ".357 HP Ammo Box Crate"
 	desc = "Contains a 36-round .357 box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/a357_hp)
-	cost = 320
+	cost = 325
 
 /datum/supply_pack/faction/inteq/ammo/a357match_ammo_box
 	name = ".357 Match Ammo Box Crate"
 	desc = "Contains a 36-round .357 match box for better performance against armor."
 	contains = list(/obj/item/storage/box/ammo/a357_match)
-	cost = 320
+	cost = 325
 
 /*
 MARK: 12 Gauge
@@ -126,7 +126,7 @@ MARK: 12 Gauge
 /datum/supply_pack/faction/inteq/ammo/slugs
 	name = "12g Shotgun Slug Crate"
 	desc = "Contains a box of 32 12 gauge slug shells for use in lethal persuasion."
-	cost = 205
+	cost = 200
 	contains = list(/obj/item/storage/box/ammo/a12g_slug)
 
 /datum/supply_pack/faction/inteq/ammo/blank_shells
@@ -144,7 +144,7 @@ MARK: 12 Gauge
 /datum/supply_pack/faction/inteq/ammo/techshells
 	name = "12g Unloaded Shotgun Technological Shells Crate"
 	desc = "Contains a box of 7 versatile tech shells, capable of producing a variety of deadly effects for any situation. Some assembly required."
-	cost = 210
+	cost = 200
 	contains = list(/obj/item/storage/box/techshot)
 
 /*
@@ -178,19 +178,19 @@ MARK: .308
 	name = "308 Ammo Box Crate"
 	desc = "Contains a thirty-round .308 ammo box for DMRs such as the SsG-04 and CM-GAL-S"
 	contains = list(/obj/item/storage/box/ammo/a308)
-	cost = 185
+	cost = 200
 
 /datum/supply_pack/faction/inteq/ammo/a308_ap
 	name = "308 Armour Piercing Ammo Box Crate"
 	desc = "Contains a thirty-round .308 armour piercing box for DMRs such as the SsG-04 and CM-GAL-S."
 	contains = list(/obj/item/storage/box/ammo/a308/ap)
-	cost = 230
+	cost = 250
 
 /datum/supply_pack/faction/inteq/ammo/a308_hp
 	name = "308 Hollow Point Ammo Box Crate"
 	desc = "Contains a thirty-round .308 hollow point box for DMRs such as the SsG-04 and CM-GAL-S."
 	contains = list(/obj/item/storage/box/ammo/a308/hp)
-	cost = 230
+	cost = 250
 
 /*
 MARK: 5.56x45mm

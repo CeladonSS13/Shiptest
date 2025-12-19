@@ -44,7 +44,7 @@ MARK: 4.63x30mm
 	name = "4.6x30mm ammo box"
 	desc = "4.6x30mm ammo box for guns like the WT550. Contains 50 shells"
 	contains = list(/obj/item/storage/box/ammo/c46x30mm)
-	cost = 295 // old - 500
+	cost = 300 // old - 500
 
 /datum/supply_pack/faction/nanotrasen/ammo/wt_ammo_box_ap
 	name = "4.6x30mm AP ammo box"
@@ -56,13 +56,13 @@ MARK: 4.63x30mm
 	name = "4.6x30mm HP ammo box"
 	desc = "4.6x30mm HP ammo box for guns like the WT550. Contains 50 shells"
 	contains = list(/obj/item/storage/box/ammo/c46x30mm/hp)
-	cost = 370 // old - 700
+	cost = 375 // old - 700
 
 /datum/supply_pack/faction/nanotrasen/ammo/wt_ammo_box_rubber
 	name = "4.6x30mm Rubber ammo box"
 	desc = "4.6x30mm Rubber ammo box for guns like the WT550. Contains 50 shells"
 	contains = list(/obj/item/storage/box/ammo/c46x30mm/rubber)
-	cost = 295 // old - 500
+	cost = 300 // old - 500
 
 /*
 MARK: ferro pellets
@@ -72,10 +72,10 @@ MARK: ferro pellets
 	name = "Ferromagnetic Pellet Box Crate"
 	desc = "Contains a 48-round ferromagnetic pellet ammo box for gauss guns."
 	contains = list(/obj/item/storage/box/ammo/ferropellet)
-	cost = 210
+	cost = 200
 
 /datum/supply_pack/faction/nanotrasen/ammo/hcpellets
 	name = "High Conductivity Pellet Box Crate"
 	desc = "Contains a 48-round high conductivity pellet ammo box for gauss guns."
 	contains = list(/obj/item/storage/box/ammo/ferropellet/hc)
-	cost = 260
+	cost = 250

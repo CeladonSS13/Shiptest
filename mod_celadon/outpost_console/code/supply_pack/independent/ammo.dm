@@ -36,16 +36,6 @@
 
 Некоторые хорошие патроны были закомментированы и перенесены в отдельные фракционные карго.
 
-MARK: Misc
-*/
-
-/datum/supply_pack/faction/independent/ammo/ammoblank_ammo_disk
-	name = "Blank Ammo Design Disk Crate"
-	desc = "Run your own training drills!"
-	cost = 1000
-	contains = list(/obj/item/disk/design_disk/blanks)
-
-/*
 MARK: .22lr
 */
 
@@ -59,13 +49,13 @@ MARK: .22lr
 	name = ".22 LR HP Ammo Box Crate"
 	desc = "Contains a 100-round hollow point ammo box for refilling .22 LR weapons."
 	contains = list(/obj/item/storage/box/ammo/c22lr/hp)
-	cost = 310
+	cost = 300
 
 /datum/supply_pack/faction/independent/ammo/ammoc22lr_ap
 	name = ".22 LR AP Ammo Box Crate"
 	desc = "Contains a 100-round armour piercing ammo box for refilling .22 LR weapons."
 	contains = list(/obj/item/storage/box/ammo/c22lr/ap)
-	cost = 310
+	cost = 300
 
 /*
 MARK: .38
@@ -115,7 +105,7 @@ MARK: 10x22
 	name = "10x22mm Ammo Box Crate"
 	desc = "Contains a 36-round 10x22mm box for pistols and SMGs like the Ringneck or the SkM-44(k)."
 	contains = list(/obj/item/storage/box/ammo/c10mm)
-	cost = 210
+	cost = 200
 
 // /datum/supply_pack/faction/independent/ammo/ammoc10mmap_ammo_box
 // 	name = "10x22mm AP Ammo Box Crate"
@@ -127,13 +117,13 @@ MARK: 10x22
 	name = "10x22mm HP Ammo Box Crate"
 	desc = "Contains a 36-round 10x22mm box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c10mm_hp)
-	cost = 260
+	cost = 250
 
 // /datum/supply_pack/faction/independent/ammo/ammoc10mmrubber_ammo_box
 // 	name = "10x22mm Rubber Ammo Box Crate"
 // 	desc = "Contains a 36-round 10x22mm box loaded with less-than-lethal rubber rounds."
 // 	contains = list(/obj/item/storage/box/ammo/c10mm_rubber)
-// 	cost = 210
+// 	cost = 200
 
 /*
 MARK: .44
@@ -143,19 +133,19 @@ MARK: .44
 	name = ".44 Roumain Ammo Box Crate"
 	desc = "Contains a 48-round box of .44 roumain ammo for revolvers such as the Shadow and Montagne."
 	contains = list(/obj/item/storage/box/ammo/a44roum)
-	cost = 210
+	cost = 200
 
 /datum/supply_pack/faction/independent/ammo/ammoa44roum_rubber
 	name = ".44 Roumain Rubber Ammo Box Crate"
 	desc = "Contains a 48-round box of .44 roumain ammo loaded with less-than-lethal rubber rounds."
 	contains = list(/obj/item/storage/box/ammo/a44roum_rubber)
-	cost = 210
+	cost = 200
 
 /datum/supply_pack/faction/independent/ammo/ammoa44roum_hp
 	name = ".44 Roumain HP Ammo Box Crate"
 	desc = "Contains a 48-round box of .44 roumain hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/a44roum_hp)
-	cost = 265
+	cost = 250
 
 /*
 MARK: .45
@@ -165,7 +155,7 @@ MARK: .45
 	name = ".45 Ammo Box Crate"
 	desc = "Contains a 36-round .45 box for pistols and SMGs like the Candor or the C-20r."
 	contains = list(/obj/item/storage/box/ammo/c45)
-	cost = 210
+	cost = 200
 
 // /datum/supply_pack/faction/independent/ammo/ammoc45ap_ammo_box
 // 	name = ".45 AP Ammo Box Crate"
@@ -177,13 +167,13 @@ MARK: .45
 	name = ".45 HP Ammo Box Crate"
 	desc = "Contains a 36-round .45 box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c45_hp)
-	cost = 260
+	cost = 250
 
 // /datum/supply_pack/faction/independent/ammo/ammoc45mmrubber_ammo_box
 // 	name = ".45 Rubber Ammo Box Crate"
 // 	desc = "Contains a 36-round .45 box loaded with less-than-lethal rubber rounds."
 // 	contains = list(/obj/item/storage/box/ammo/c45_rubber)
-// 	cost = 210
+// 	cost = 200
 
 /*
 MARK: .357
@@ -193,19 +183,19 @@ MARK: .357
 	name = ".357 Ammo Box Crate"
 	desc = "Contains a 36-round .357 box for revolvers such as the Scarborough Revolver and the HP Firebrand."
 	contains = list(/obj/item/storage/box/ammo/a357)
-	cost = 255
+	cost = 250
 
 /datum/supply_pack/faction/independent/ammo/ammoa357hp_ammo_box
 	name = ".357 HP Ammo Box Crate"
 	desc = "Contains a 36-round .357 box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/a357_hp)
-	cost = 320
+	cost = 325
 
 /datum/supply_pack/faction/independent/ammo/ammoa357match_ammo_box
 	name = ".357 Match Ammo Box Crate"
 	desc = "Contains a 36-round .357 match box for better performance against armor."
 	contains = list(/obj/item/storage/box/ammo/a357_match)
-	cost = 320
+	cost = 325
 
 /*
 MARK: 4.6x30
@@ -215,7 +205,7 @@ MARK: 4.6x30
 	name = "4.6x30mm Ammo Box Crate"
 	desc = "Contains an 80-round 4.6x30mm box for PDWs such as the WT-550."
 	contains = list(/obj/item/storage/box/ammo/c46x30mm)
-	cost = 295
+	cost = 300
 
 // /datum/supply_pack/faction/independent/ammo/ammoc46x30mm_ap
 // 	name = "4.6x30mm AP Ammo Box Crate"
@@ -227,7 +217,7 @@ MARK: 4.6x30
 	name = "4.6x30mm HP Ammo Box Crate"
 	desc = "Contains a 80-round 4.6x30mm hollow point box for PDWs such as the WT-550."
 	contains = list(/obj/item/storage/box/ammo/c46x30mm/hp)
-	cost = 370
+	cost = 375
 
 /*
 MARK: 5.7x39
@@ -237,7 +227,7 @@ MARK: 5.7x39
 	name = "5.7x39mm Ammo Box Crate"
 	desc = "Contains one 80-round 5.7x39mm box for PDWs such as the Sidewinder."
 	contains = list(/obj/item/storage/box/ammo/c57x39)
-	cost = 395
+	cost = 400
 
 // /datum/supply_pack/faction/independent/ammo/ammoc57x39mm_ap
 // 	name = "5.7x39mm AP Ammo Box Crate"
@@ -249,7 +239,7 @@ MARK: 5.7x39
 	name = "5.7x39mm HP Ammo Box Crate"
 	desc = "Contains one 80-round 5.7x39mm Hollow Point box for PDWs such as the Sidewinder."
 	contains = list(/obj/item/storage/box/ammo/c57x39/hp)
-	cost = 470
+	cost = 475
 
 /*
 MARK: 5.56 caseless
@@ -286,7 +276,7 @@ MARK: 12 Gauge
 /datum/supply_pack/faction/independent/ammo/ammobuckshot
 	name = "12g Buckshot Crate"
 	desc = "Contains a box of 32 buckshot shells for use in lethal persuasion."
-	cost = 520
+	cost = 525
 	contains = list(/obj/item/storage/box/ammo/a12g_buckshot)
 
 /datum/supply_pack/faction/independent/ammo/ammoslugs
@@ -304,13 +294,13 @@ MARK: 12 Gauge
 /datum/supply_pack/faction/independent/ammo/ammorubbershot
 	name = "12g Rubbershot Crate"
 	desc = "Contains a box of 32 12 gauge rubbershot shells. Perfect for crowd control and training."
-	cost = 520
+	cost = 525
 	contains = list(/obj/item/storage/box/ammo/a12g_rubbershot)
 
 /datum/supply_pack/faction/independent/ammo/ammotechshells
 	name = "12g Unloaded Shotgun Technological Shells Crate"
 	desc = "Contains a box of 7 versatile tech shells, capable of producing a variety of deadly effects for any situation. Some assembly required."
-	cost = 210
+	cost = 200
 	contains = list(/obj/item/storage/box/techshot)
 
 /*
@@ -381,7 +371,7 @@ MARK: 7.62x40
 	name = "7.62x40mm Ammo Box Crate"
 	desc = "Contains one 60-round 7.62x40mm box for the SKM rifles."
 	contains = list(/obj/item/storage/box/ammo/a762_40)
-	cost = 360
+	cost = 350
 
 // /datum/supply_pack/faction/independent/ammo/ammoa762_ap
 // 	name = "7.62x40mm AP Ammo Box Crate"
@@ -403,13 +393,13 @@ MARK: .45-70
 	name = ".45-70 Ammo Box Crate"
 	desc = "Contains a 24-round box containing devastatingly powerful .45-70 caliber ammunition."
 	contains = list(/obj/item/storage/box/ammo/a4570)
-	cost = 190
+	cost = 200
 
 /datum/supply_pack/faction/independent/ammo/ammoa4570_box/match
 	name = ".45-70 Match Crate"
 	desc = "Contains a 24-round box containing devastatingly powerful .45-70 caliber ammunition, that travels faster, pierces armour better, and ricochets off targets."
 	contains = list(/obj/item/storage/box/ammo/a4570_match)
-	cost = 235
+	cost = 250
 
 /*
 MARK: .300
@@ -475,19 +465,19 @@ MARK: 8x50
 	name = "8x50mm Ammo Box Crate"
 	desc = "Contains a 40-round 8x50mm ammo box for rifles such as the Illestren."
 	contains = list(/obj/item/storage/box/ammo/a8_50r)
-	cost = 290
+	cost = 300
 
 /datum/supply_pack/faction/independent/ammo/ammoc8x50mm_boxhp_boxcrate
 	name = "8x50mm Hollow Point Crate"
 	desc = "Contains a 40-round 8x50mm ammo box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/a8_50r/hp)
-	cost = 360
+	cost = 350
 
 /datum/supply_pack/faction/independent/ammo/ammoc8x50mm_tracbox
 	name = "8x50mm Tracker Crate"
 	desc = "Contains a 30-round 8x50mm ammo box loaded with tracker ammo, great for sustained hunts."
 	contains = list(/obj/item/storage/box/ammo/a8_50r/trac)
-	cost = 360
+	cost = 350
 
 /*
 MARK: 8x58
@@ -518,7 +508,7 @@ MARK: ferro pellets
 	name = "Ferromagnetic Pellet Box Crate"
 	desc = "Contains a 48-round ferromagnetic pellet ammo box for gauss guns such as the Claris."
 	contains = list(/obj/item/storage/box/ammo/ferropellet)
-	cost = 360
+	cost = 350
 
 /*
 MARK: ferroslugs
