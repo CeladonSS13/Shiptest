@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/nanotrasen/medical
-	category = "Medical"
+	category = "Medical - Medical"
 
 /* Hypospray supplies */
 

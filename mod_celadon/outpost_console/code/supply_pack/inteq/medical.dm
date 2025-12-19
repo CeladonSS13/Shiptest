@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/inteq/medical
-	category = "Medical"
+	category = "Medical - Medical"
 
 /datum/supply_pack/faction/inteq/medical/mkii_hypo
 	name = "mk.II Hypospray kit"

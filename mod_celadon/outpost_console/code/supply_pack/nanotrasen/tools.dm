@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/nanotrasen/tools
-	category = "Tools & Tanks"
+	category = "Engi - Tools & Tanks"
 	crate_type = /obj/structure/closet/crate/engineering
 
 /datum/supply_pack/faction/nanotrasen/tools/mining

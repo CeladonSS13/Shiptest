@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/syndicate/food
-	category = "Food & Agricultural"
+	category = "Misc - Food & Agricultural"
 
 /datum/supply_pack/faction/syndicate/food/donkpockets
 	name = "Donk Pocket Variety Crate"
