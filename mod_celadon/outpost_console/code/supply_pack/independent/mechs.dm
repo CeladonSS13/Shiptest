@@ -54,7 +54,6 @@ Build Your Own Suit
 // 	)
 // 	crate_name = "Durand Construction Kit"
 // 	faction = /datum/faction/clip
-// 	faction_discount = 20
 
 /*
 Mech Equipment
@@ -192,7 +191,6 @@ Mech Equipment
 // 		/obj/item/mecha_parts/mecha_equipment/conversion_kit/ripley/clip
 // 	)
 // 	faction = /datum/faction/clip
-// 	faction_discount = 0
 // 	faction_locked = TRUE
 
 // /datum/supply_pack/faction/independent/mech/equipment/paladin_upgrade
@@ -203,7 +201,6 @@ Mech Equipment
 // 		/obj/item/mecha_parts/mecha_equipment/conversion_kit/paladin
 // 	)
 // 	faction = /datum/faction/clip
-// 	faction_discount = 0
 // 	faction_locked = TRUE
 
 /datum/supply_pack/faction/independent/mech/equipment/charger_upgrade

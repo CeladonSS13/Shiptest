@@ -108,7 +108,6 @@
 // 	crate_name = "armor crate"
 // 	crate_type = /obj/structure/closet/crate/secure/gear
 // 	faction = /datum/faction/pgf
-// 	faction_discount = 0
 // 	faction_locked = TRUE
 
 // /datum/supply_pack/faction/independent/armor/pgf_armor
@@ -119,7 +118,6 @@
 // 	crate_name = "armor crate"
 // 	crate_type = /obj/structure/closet/crate/secure/gear
 // 	faction = /datum/faction/pgf
-// 	faction_discount = 0
 // 	faction_locked = TRUE
 
 // //srm
@@ -132,7 +130,6 @@
 // 	crate_name = "duster crate"
 // 	crate_type = /obj/structure/closet/crate/secure/gear
 // 	faction = /datum/faction/srm
-// 	faction_discount = 0
 // 	faction_locked = TRUE
 
 // /datum/supply_pack/faction/independent/armor/srm_trench
@@ -144,5 +141,4 @@
 // 	crate_name = "heavy duster crate"
 // 	crate_type = /obj/structure/closet/crate/secure/gear
 // 	faction = /datum/faction/srm
-// 	faction_discount = 0
 // 	faction_locked = TRUE

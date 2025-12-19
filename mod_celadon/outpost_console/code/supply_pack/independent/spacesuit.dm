@@ -42,7 +42,6 @@
 // 					/obj/item/clothing/head/helmet/space/gezena)
 // 	crate_name = "rakalla suit crate"
 // 	faction = /datum/faction/pgf
-// 	faction_discount = 0
 // 	faction_locked = TRUE
 
 
@@ -76,7 +75,6 @@
 // 	crate_name = "patroller hardsuit crate"
 // 	crate_type = /obj/structure/closet/crate/secure/gear
 // 	faction = /datum/faction/clip
-// 	faction_discount = 0
 // 	faction_locked = TRUE
 
 // /datum/supply_pack/faction/independent/spacesuit/spotter_hardsuit
@@ -87,7 +85,6 @@
 // 	crate_name = "patroller hardsuit crate"
 // 	crate_type = /obj/structure/closet/crate/secure/gear
 // 	faction = /datum/faction/clip
-// 	faction_discount = 0
 // 	faction_locked = TRUE
 
 //srm

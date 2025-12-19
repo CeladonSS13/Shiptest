@@ -92,9 +92,6 @@
 
 /*	Vial  */
 
-/datum/supply_pack/faction/syndicate/medical/vials
-	faction_discount = 50
-
 /datum/supply_pack/faction/syndicate/medical/vials/empty_vial
 	name = "Empty Vial Crate"
 	desc = "Contains 2 empty hypospray vials, for usage in a Hypospray."
