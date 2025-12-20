@@ -86,6 +86,8 @@
 	if(transparent && (hitby.pass_flags & PASSGLASS))
 		return FALSE
 // [CELADON-ADD] - BALLISTIC_SHIELD - Rebalance - Щиты не должны блокировать лежа
+	if(damage_type == STAMINA)
+		return FALSE
 	if(isprojectile(hitby))
 		var/obj/projectile/bullet = hitby
 		if(!defense_check(get_turf(owner), get_turf(bullet?.fired_from), owner?.dir))
