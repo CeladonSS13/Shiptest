@@ -74,3 +74,10 @@
 	icon = 'mod_celadon/_storage_icons/icons/structures/obj/new_year/bigtree.dmi'
 	icon_state = "bigtree"
 	max_integrity = 9999999
+
+/obj/structure/closet/crate/wooden/garland
+	name = "wooden garland crate"
+	icon = 'mod_celadon/_storage_icons/icons/obj/ny_crates.dmi'
+	icon_state = "wooden"
+	open_sound_volume = 10
+	close_sound_volume = 25
