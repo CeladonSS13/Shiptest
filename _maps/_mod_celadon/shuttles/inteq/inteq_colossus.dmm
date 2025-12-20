@@ -536,14 +536,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
-"dQ" = (
-/obj/docking_port/mobile{
-	dir = 8;
-	launch_status = 0;
-	preferred_direction = 4
-	},
-/turf/open/floor/engine/hull/reinforced,
-/area/ship/external/dark)
 "dT" = (
 /obj/machinery/porta_turret/ship/inteq/heavy{
 	dir = 4;
@@ -601,7 +593,8 @@
 	dwidth = 15;
 	height = 15;
 	width = 30;
-	name = "airlock dock"
+	name = "airlock dock";
+	disable_on_owner_ship_dock = 1
 	},
 /turf/template_noop,
 /area/template_noop)
@@ -947,7 +940,6 @@
 	height = 15;
 	width = 7;
 	dir = 4;
-	disable_on_owner_ship_dock = 1;
 	name = "hangar dock"
 	},
 /turf/template_noop,
@@ -2657,7 +2649,10 @@
 /obj/effect/turf_decal/industrial/warning/dust/corner{
 	dir = 8
 	},
-/obj/item/radio/intercom/directional/west,
+/obj/item/radio/intercom/directional/west{
+	pixel_x = -21;
+	pixel_y = 0
+	},
 /obj/machinery/atmospherics/components/binary/valve/layer4,
 /obj/structure/platform/industrial{
 	dir = 8;
@@ -5880,14 +5875,6 @@
 	pixel_x = 10;
 	pixel_y = 8
 	},
-/obj/item/spacecash/bundle/c1000{
-	pixel_x = 10;
-	pixel_y = 8
-	},
-/obj/item/spacecash/bundle/c1000{
-	pixel_x = 10;
-	pixel_y = 8
-	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "HM" = (
@@ -6412,6 +6399,13 @@
 "Kl" = (
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/door/airlock/external,
+/obj/docking_port/mobile{
+	dir = 2;
+	launch_status = 0;
+	name = "Colossus-class";
+	port_direction = 8;
+	preferred_direction = 4
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/external/dark)
 "Ko" = (
@@ -10783,7 +10777,7 @@ bm
 re
 rK
 va
-dQ
+va
 va
 yB
 re
