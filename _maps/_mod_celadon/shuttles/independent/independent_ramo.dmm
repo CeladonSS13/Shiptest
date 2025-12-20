@@ -2404,7 +2404,7 @@
 /obj/effect/decal/fakelattice{
 	icon_state = "lattice-23"
 	},
-/turf/open/floor/plating,
+/turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "dl" = (
 /obj/machinery/light/small/directional/west,
@@ -3131,7 +3131,7 @@
 /obj/effect/decal/fakelattice{
 	icon_state = "lattice-38"
 	},
-/turf/open/floor/plating,
+/turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "pi" = (
 /obj/machinery/atmospherics/pipe/simple{
@@ -3199,7 +3199,7 @@
 /obj/effect/turf_decal/steeldecal/steel_decals_central6,
 /obj/docking_port/mobile{
 	launch_status = 0;
-	port_direction = 8;
+	port_direction = 4;
 	preferred_direction = 4
 	},
 /turf/open/floor/plating,
@@ -3252,6 +3252,10 @@
 	layer = 4.1
 	},
 /turf/open/floor/plating,
+/area/ship/external)
+"xt" = (
+/obj/structure/grille,
+/turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "xU" = (
 /obj/docking_port/stationary{
@@ -3372,7 +3376,7 @@
 /obj/effect/decal/fakelattice{
 	icon_state = "lattice-5"
 	},
-/turf/open/floor/plating,
+/turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "Fe" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3540,6 +3544,12 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "XM" = (
+/obj/item/paper/crumpled/fluff{
+	default_raw_text = "Роисинант: Мне очень не нравится в Рамо что когда я спокойно отдыхаю на одном из лучших НЕЗАВИСИМЫХ посудин мне пишет какой-то ГЭРРИНГ и начинает спрашивать что мне в нём не нравится";
+	layer = 1;
+	color = "grey";
+	desc = "По какой-то причине она находилась внутри стены."
+	},
 /turf/closed/wall/yesdiag,
 /area/ship/medical/surgery)
 "Ys" = (
@@ -3754,7 +3764,7 @@ aa
 aa
 aa
 aa
-bX
+xt
 zO
 aa
 ax
@@ -3768,7 +3778,7 @@ dm
 aT
 aa
 OA
-bX
+xt
 aa
 aa
 "}
@@ -3776,7 +3786,7 @@ aa
 aa
 aa
 aa
-bX
+xt
 cb
 OC
 ax
@@ -3790,7 +3800,7 @@ cL
 aT
 cg
 cm
-bX
+xt
 aa
 aa
 "}
@@ -3798,7 +3808,7 @@ aa
 aa
 aa
 aa
-bX
+xt
 yq
 aa
 ax
@@ -3812,7 +3822,7 @@ dU
 aT
 aa
 jZ
-bX
+xt
 aa
 aa
 "}
@@ -3820,7 +3830,7 @@ aa
 aa
 aa
 aa
-bX
+xt
 cc
 aa
 ax
@@ -3834,7 +3844,7 @@ cp
 cp
 aa
 cc
-bX
+xt
 aa
 aa
 "}
@@ -3842,7 +3852,7 @@ aa
 aa
 aa
 aa
-bX
+xt
 cd
 wp
 aj
@@ -3856,7 +3866,7 @@ cV
 cp
 RT
 cd
-bX
+xt
 aa
 aa
 "}
@@ -3864,7 +3874,7 @@ aa
 aa
 aa
 aa
-bX
+xt
 EC
 aj
 al
@@ -3878,7 +3888,7 @@ cR
 ds
 cp
 Wb
-bX
+xt
 aa
 aa
 "}
@@ -3886,7 +3896,7 @@ aa
 aa
 aa
 aa
-bX
+xt
 gf
 aj
 at
@@ -3900,7 +3910,7 @@ dI
 cO
 dN
 dY
-bX
+xt
 aa
 aa
 "}
@@ -3908,7 +3918,7 @@ aa
 aa
 aa
 aa
-bX
+xt
 cc
 aj
 aJ
@@ -3922,7 +3932,7 @@ cU
 dc
 cp
 cc
-bX
+xt
 aa
 aa
 "}
@@ -3930,7 +3940,7 @@ aa
 aa
 aa
 aa
-bX
+xt
 Kz
 aj
 ay
@@ -3944,7 +3954,7 @@ da
 cp
 cp
 pi
-bX
+xt
 aa
 aa
 "}
@@ -3952,7 +3962,7 @@ aa
 aa
 aa
 aa
-bX
+xt
 cd
 aj
 ar
@@ -3966,7 +3976,7 @@ cM
 dS
 cA
 cd
-bX
+xt
 aa
 aa
 "}
@@ -3974,7 +3984,7 @@ aa
 aa
 au
 aa
-bX
+xt
 cc
 aj
 aj
@@ -3988,7 +3998,7 @@ dt
 cW
 Hl
 cc
-bX
+xt
 aa
 ck
 "}
@@ -4126,8 +4136,8 @@ lD
 "}
 (27,1,1) = {"
 aa
-bX
-bX
+xt
+xt
 aa
 cf
 ch
@@ -4143,14 +4153,14 @@ aa
 CA
 jC
 aa
-bX
-bX
+xt
+xt
 "}
 (28,1,1) = {"
 aa
 aa
 bX
-bX
+xt
 aa
 bW
 aa
@@ -4164,17 +4174,17 @@ aa
 aa
 bW
 aa
-bX
-bX
+xt
+xt
 aa
 "}
 (29,1,1) = {"
 aa
 aa
 aa
-bX
-bX
-bX
+xt
+xt
+xt
 vz
 aa
 aa
@@ -4184,9 +4194,9 @@ aa
 aa
 aa
 ck
-bX
-bX
-bX
+xt
+xt
+xt
 aa
 aa
 "}
