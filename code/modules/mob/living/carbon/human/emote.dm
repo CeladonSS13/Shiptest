@@ -135,7 +135,7 @@
 /datum/emote/living/carbon/human/weh/get_sound(mob/living/user)
 	if(!ishuman(user))
 		return
-	if(islizard(user))
+	if(islizard(user) || isipc(user))	// [CELADON-EDIT] - CELADON_EMOTES
 		return 'sound/voice/lizard/weh.ogg'
 
 /datum/emote/living/carbon/human/pale

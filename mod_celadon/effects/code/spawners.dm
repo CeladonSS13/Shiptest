@@ -264,8 +264,7 @@
 		/datum/reagent/consumable/ethanol/out_of_lime,
 		/datum/reagent/consumable/ethanol/shotinthedark,
 		/datum/reagent/consumable/ethanol/bullethell,
-		/datum/reagent/consumable/ethanol/homesick,
-		/datum/reagent/consumable/ethanol/eudamonia
+		/datum/reagent/consumable/ethanol/homesick
 	)
 
 	var/glass_type = /obj/item/reagent_containers/food/drinks/drinkingglass

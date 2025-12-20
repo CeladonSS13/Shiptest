@@ -220,6 +220,17 @@
 	strip_delay = 80
 	equip_delay_other = 60
 
+// [CELADON-ADD]
+/obj/item/clothing/suit/armor/riot/solfed
+	desc = "A charcoal-painted suit of bulky, heavy armor designed for close-quarters fighting and riot control. The armor of choice for Folar Federation members, but used universally by SolFed. Helps the wearer resist shoving in close quarters."
+	icon = 'icons/obj/clothing/faction/clip/suits.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/faction/clip/suits.dmi'
+	icon_state = "riot_clip"
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 75, "rad" = 0, "fire" = 40, "acid" = 80, "wound" = 30)
+	unique_reskin = null
+	unique_reskin_changes_base_icon_state = FALSE
+// [/CELADON-ADD]
+
 /obj/item/clothing/suit/armor/bone
 	name = "bone armor"
 	desc = "A tribal armor plate, crafted from animal bone."
