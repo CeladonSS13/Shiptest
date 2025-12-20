@@ -1,7 +1,7 @@
 
 /mob/living/carbon/human/proc/bite_feral_switch() // Lizard, Tajara
-	set name = "> Кусаться/Перестать кусаться ►"
-	set category = "Эмоции"
+	set name = "Кусаться/Перестать кусаться ►"
+	set category = "Эмоции.> Расовые"
 	if(dna.species.attack_verb == ATTACK_EFFECT_BITE)
 		balloon_alert(src, "вы перестаете кусаться")
 		dna.species.attack_verb = initial(dna.species.attack_verb)

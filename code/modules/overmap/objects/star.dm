@@ -51,7 +51,9 @@
 	SSpoints_of_interest.make_point_of_interest(token)
 	Rename(name)
 	alter_token_appearance()
+#ifndef NOOVERMAP
 	START_PROCESSING(SSprocessing, src)
+#endif
 
 /datum/overmap/star/Destroy(force, ...)
 	SSpoints_of_interest.remove_point_of_interest(token)

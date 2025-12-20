@@ -160,7 +160,7 @@
 	uniform = /obj/item/clothing/under/solfed/camo
 	shoes = /obj/item/clothing/shoes/jackboots
 	suit = /obj/item/clothing/suit/armor/vest
-	mask = /obj/item/clothing/mask/gas/sechailer
+	mask = /obj/item/clothing/mask/gas/sechailer/sec
 	r_pocket = null
 	l_pocket = null
 	ears = /obj/item/radio/headset/alt
@@ -257,7 +257,7 @@
 
 	id = /obj/item/card/id/cel/solfed/command/sergeant
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
-	mask = /obj/item/clothing/mask/gas/sechailer
+	mask = /obj/item/clothing/mask/gas/sechailer/sec
 	uniform = /obj/item/clothing/under/solfed/formal
 	shoes = /obj/item/clothing/shoes/combat
 	backpack = /obj/item/storage/backpack/solfed

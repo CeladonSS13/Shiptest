@@ -211,6 +211,10 @@
 	return (!QDELETED(cell) && cell.use(amount ? amount * charge_cut : charge_cut))
 
 /obj/item/gun/energy/plasmacutter/use_tool(atom/target, mob/living/user, delay, amount=1, volume=0, datum/callback/extra_checks)
+	// [CELADON-ADD] - Prevert cutting Rock
+	if(ismineralturf(target))
+		return
+	// [/CELADON-ADD]
 	if(amount)
 		if(adv)
 			target.add_overlay(GLOB.advanced_cutting_effect)
@@ -231,6 +235,7 @@
 	force = 15
 	wall_decon_damage = 300
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/adv)
+	adv = TRUE	// [CELADON-ADD] - Я ору они забыли про свою же переменную на другой стиль анимации...
 
 /obj/item/gun/energy/wormhole_projector
 	name = "bluespace wormhole projector"
@@ -291,7 +296,7 @@
 
 /obj/item/gun/energy/wormhole_projector/proc/create_portal(obj/projectile/beam/wormhole/W, turf/target)
 	var/obj/effect/portal/P = new /obj/effect/portal(target, 300, null, FALSE, null, atmos_link)
-	RegisterSignal(P, COMSIG_PARENT_QDELETING, PROC_REF(on_portal_destroy))
+	RegisterSignal(P, COMSIG_QDELETING, PROC_REF(on_portal_destroy))
 	if(istype(W, /obj/projectile/beam/wormhole/orange))
 		qdel(p_orange)
 		p_orange = P
