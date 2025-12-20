@@ -1,5 +1,6 @@
 /datum/supply_pack/faction/inteq/ammo
 	category = "Security - Ammunition"
+	stable_price = TRUE
 
 /* MARK: = Ammo List =
 [*] - отсутствуют.

@@ -49,7 +49,7 @@ MARK: NT-SL
 	crate_name = "SMG crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/ultima
-	name = "E-Shotgun - NT-SL 'E-SG 500 Second Edition' energy shotgun"
+	name = "E-Shotgun - NT-SL 'E-SG 500 Second Edition'"
 	desc = "Contains an energy-based shotgun equipped with dual kill/disable modes, ideal for short range. The on-board computer is notoriously unreliable. For NT employee use only."
 	cost = 3000
 	contains = list(/obj/item/gun/energy/e_gun/e_old/iot)

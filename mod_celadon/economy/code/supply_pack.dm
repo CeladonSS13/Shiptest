@@ -10,8 +10,13 @@
 #define PRICES_GENERAL_MIN	1
 #define PRICES_GENERAL_MAX	1.2
 
+// Стабильные цены задаются параметром stable 
+// Патроны, патроны должны быть дешевые изначально лмао
+// Атачменты тоже странно когда мелкие цены меняются
 /datum/supply_pack/faction/New()
 	..()
+	if(stable_price)
+		return cost = cost
 	setup_pricing()
 
 /datum/supply_pack/faction/proc/setup_pricing()
@@ -23,22 +28,6 @@
 	cost = rand(cost * PRICES_GENERAL_MIN,
 				cost * PRICES_GENERAL_MAX)
 	cost = round(cost, 25)
-
-// Стабильные цены на патроны, патроны должны быть дешевые изначально лмао
-/datum/supply_pack/faction/independent/ammo/setup_pricing()
-	cost = cost
-
-/datum/supply_pack/faction/syndicate/ammo/setup_pricing()
-	cost = cost
-
-/datum/supply_pack/faction/nanotrasen/ammo/setup_pricing()
-	cost = cost
-
-/datum/supply_pack/faction/solfed/ammo/setup_pricing()
-	cost = cost
-
-/datum/supply_pack/faction/inteq/ammo/setup_pricing()
-	cost = cost
 
 #undef PRICES_FACTION_MIN
 #undef PRICES_FACTION_MAX

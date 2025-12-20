@@ -2,6 +2,7 @@
 	category = "Security - Ammunition"
 	crate_type = /obj/structure/closet/crate/secure/gear
 	crate_name = "ammo crate"
+	stable_price = TRUE
 
 /* MARK: = Ammo List =
 [*] - отсутствуют.
