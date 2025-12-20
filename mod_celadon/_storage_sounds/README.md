@@ -552,3 +552,6 @@ shriek1.ogg
 zvuk-padayuschego-dereva.ogg
 
 commandreport.ogg
+
+NEW_YEAR_2026
+	- Добавлены звуки для элеватора

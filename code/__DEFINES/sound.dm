@@ -47,8 +47,10 @@
 #define AMBIENCE_DESERT "desert"
 #define AMBIENCE_TUNDRA "tundra"
 
+// [CELADON-ADD] - NEW_YEAR_2026
 #define AMBIENCE_ELEVATOR "elevator"
 #define ELEVATOR GLOB.elevator_ambience
+// [/CELADON-ADD]
 
 #define INTERACTION_SOUND_RANGE_MODIFIER -3
 #define EQUIP_SOUND_VOLUME 30
