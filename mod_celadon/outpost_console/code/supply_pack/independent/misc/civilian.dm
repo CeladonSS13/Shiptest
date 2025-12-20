@@ -2,6 +2,7 @@
 	category = "Misc - Civilian & Decoration"
 	crate_name = "civilian supply crate"
 	crate_type = /obj/structure/closet/crate/wooden
+	stable_price = TRUE
 
 /* MARK: = Decoration =
 

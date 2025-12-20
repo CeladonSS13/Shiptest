@@ -1,5 +1,6 @@
 /datum/supply_pack/faction/independent/fish
 	category = "Misc - Fishing Essentials"
+	stable_price = TRUE
 
 /datum/supply_pack/faction/independent/fish/fishingkit
 	name = "Fishing Starter Kit"

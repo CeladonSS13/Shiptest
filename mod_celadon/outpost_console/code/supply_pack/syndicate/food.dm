@@ -1,5 +1,6 @@
 /datum/supply_pack/faction/syndicate/food
 	category = "Misc - Food & Agricultural"
+	stable_price = TRUE
 
 /datum/supply_pack/faction/syndicate/food/donkpockets
 	name = "Donk Pocket Variety"

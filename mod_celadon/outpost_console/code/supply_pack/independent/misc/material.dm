@@ -1,5 +1,6 @@
 /datum/supply_pack/faction/independent/material
 	category = "Misc - Materials & Sheets"
+	stable_price = TRUE
 
 /*
 		Basic construction materials

@@ -1,6 +1,7 @@
 /datum/supply_pack/faction/independent/animal
 	category = "Misc - Animals"
 	crate_type = /obj/structure/closet/crate/critter
+	stable_price = TRUE
 
 /*
 		Vaguely useful animals

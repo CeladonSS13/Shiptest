@@ -1,6 +1,7 @@
 /datum/supply_pack/faction/independent/vendor_refill
 	category = "Misc - Vendor Refills"
 	crate_type = /obj/structure/closet/crate
+	stable_price = TRUE
 
 /datum/supply_pack/faction/independent/vendor_refill/bartending
 	name = "Booze-o-mat and Coffee Supply"

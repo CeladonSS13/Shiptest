@@ -1,5 +1,6 @@
 /datum/supply_pack/faction/solfed/civilian
 	category = "Misc - Civilian & Decoration"
+	stable_price = TRUE
 
 /datum/supply_pack/faction/solfed/civilian/fountainpens
 	name = "Calligraphy"

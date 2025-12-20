@@ -1,6 +1,7 @@
 /datum/supply_pack/faction/independent/emergency
 	category = "Misc - Emergency & Life Support"
 	crate_type = /obj/structure/closet/crate/internals
+	stable_price = TRUE
 
 /* MARK: = Emergency =
 

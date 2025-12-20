@@ -1,5 +1,6 @@
 /datum/supply_pack/faction/independent/costumes_toys
 	category = "Misc - Costumes & Toys"
+	stable_price = TRUE
 
 /datum/supply_pack/faction/independent/costumes_toys/training_toolbox
 	name = "Training Toolbox"

@@ -1,5 +1,6 @@
 /datum/supply_pack/faction/independent/food
 	category = "Misc - Food & Agricultural"
+	stable_price = TRUE
 
 /* MARK: = Food List =
 
