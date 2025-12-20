@@ -131,7 +131,6 @@
 	desc = "A really neat uniform used by Federation's high-ranking officials. Fancy."
 	icon_state = "solfed_formal"
 	item_state = "solfed_formal"
-	// can_adjust = FALSE - [CELADON-ALERT] - Параметр удалён оффами - https://github.com/shiptest-ss13/Shiptest/pull/4738
 
 /obj/item/clothing/under/solfed/formal/elysium
 	name = "Elysium Brigade formal uniform"

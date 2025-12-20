@@ -215,6 +215,9 @@ distance_multiplier - Can be used to multiply the distance at which the sound is
 // [CELADON-ADD] - MUSIC_CELADON
 		if(SSticker.login_music_name)
 			var/music_name = SSticker.login_music_name
+			var/slash_position = findlasttext(music_name, "/")
+			if(slash_position)
+				music_name = copytext(music_name, slash_position + 1)
 			var/dot_position = findlasttext(music_name, ".")
 			if(dot_position)
 				music_name = copytext(music_name, 1, dot_position)

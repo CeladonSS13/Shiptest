@@ -490,7 +490,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		C.setToxLoss(0, TRUE, TRUE)
 
 	if(TRAIT_NOMETABOLISM in inherent_traits)
-		C.end_metabolization(C, keep_liverless = TRUE)
+		C.reagents.end_metabolization(C, keep_liverless = TRUE)
 
 	if(TRAIT_GENELESS in inherent_traits)
 		C.dna.remove_all_mutations() // Radiation immune mobs can't get mutations normally
@@ -1472,9 +1472,9 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			if(HAS_TRAIT(I, TRAIT_FORCE_SUIT_STORAGE_ALWAYS))
 				return TRUE
 			if(HAS_TRAIT(I, TRAIT_FORCE_SUIT_STORAGE))
-				if(!H.w_uniform)
+				if(!H.w_uniform && !H.wear_suit)	// [CELADON-EDIT]
 					if(!disable_warning)
-						to_chat(H, span_warning("You need at least a uniform before you can attach this [I.name]!"))
+						to_chat(H, span_warning("You need at least a uniform or armor before you can attach this [I.name]!")) // [CELADON-EDIT]
 					return FALSE
 				return TRUE
 			if(!H.wear_suit)

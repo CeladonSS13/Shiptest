@@ -11,6 +11,13 @@
 		{
 			"type": "byond",
 			"request": "launch",
+			"name": "Launch DreamSeeker (simple mode overmap)",
+			"preLaunchTask": "Build All (simple mode overmap)",
+			"dmb": "${workspaceFolder}/${command:CurrentDMB}"
+		},
+		{
+			"type": "byond",
+			"request": "launch",
 			"name": "Launch DreamDaemon",
 			"preLaunchTask": "Build All",
 			"dmb": "${workspaceFolder}/${command:CurrentDMB}",

@@ -287,6 +287,7 @@
 
 // [CELADON-ADD]
 /obj/item/clothing/head/helmet/riot
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/overlay/helmet_celadon.dmi'
 
 /obj/item/clothing/head/helmet/riot/solfed
 	unique_reskin = null

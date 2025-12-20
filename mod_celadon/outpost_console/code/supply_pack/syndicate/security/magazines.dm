@@ -10,6 +10,7 @@
 	contains = list(/obj/item/ammo_box/magazine/m22lr_himehabu/empty)
 	cost = 100
 
+/* // [CELADON-ALERT-WEAPON] - Убрали офы, обещаю скоро  вернуть в будущем
 /datum/supply_pack/faction/syndicate/magazine/hognose_mag
 	name = "Hognose Magazine"
 	desc = "Contains a .22lr magazine for the Hognose underbarrel pistol, with a capacity of 8 rounds."

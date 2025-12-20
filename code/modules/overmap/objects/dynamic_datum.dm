@@ -69,6 +69,7 @@
 
 /datum/overmap/dynamic/Initialize(position, datum/overmap_star_system/system_spawned_in, load_now=TRUE, ...)
 	. = ..()
+#ifndef NOOVERMAP
 	SSovermap.dynamic_encounters += src
 	current_overmap.dynamic_encounters += src
 
@@ -76,6 +77,7 @@
 	vlevel_width = CONFIG_GET(number/overmap_encounter_size)
 	if(load_now)
 		choose_level_type(load_now)
+#endif
 
 /datum/overmap/dynamic/Destroy()
 	for(var/obj/docking_port/stationary/dock as anything in reserve_docks)
@@ -180,6 +182,7 @@
  * Chooses a type of level for the dynamic level to use.
  */
 /datum/overmap/dynamic/proc/choose_level_type(load_now = TRUE)
+#ifndef NOOVERMAP
 	if(isnull(probabilities))
 		probabilities = current_overmap.dynamic_probabilities
 	if(!isnull(force_encounter))
@@ -195,10 +198,11 @@
 	if(istype(used_ruin))
 		for(var/mission_type in used_ruin.ruin_mission_types)
 			dynamic_missions += new mission_type(src, 1 + length(dynamic_missions))
-
+#endif
 
 
 /datum/overmap/dynamic/proc/set_planet_type(datum/planet_type/planet)
+#ifndef NOOVERMAP
 	if(!is_type_in_list(planet, list(/datum/planet_type/asteroid, /datum/planet_type/spaceruin)))
 		planet_name = "[gen_planet_name()]"
 		name = "[planet_name] ([planet.name])"
@@ -243,6 +247,7 @@
 	if(current_overmap.override_object_colors)
 		token.color = current_overmap.primary_color
 	current_overmap.post_edit_token_state(src)
+#endif
 
 ///??? I dont think i ever finished this, and if i do, move to planet_types.dm
 /datum/overmap/dynamic/proc/choose_random_asteroid()

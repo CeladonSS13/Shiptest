@@ -1,3 +1,4 @@
+#ifndef MINIMAL
 SUBSYSTEM_DEF(overmap)
 	name = "Overmap"
 	wait = 10
@@ -56,10 +57,14 @@ SUBSYSTEM_DEF(overmap)
 	outposts = list()
 	dynamic_encounters = list()
 	events = list()
-
+/* // [CELADON-EDIT] - Спасибо, пожалуй откажемся от 2 сектора
 	var/list/sector_types = pick(subtypesof(/datum/overmap_star_system/safezone))
 	default_system = create_new_star_system(new sector_types)
 	wild_system = create_new_star_system (new /datum/overmap_star_system/shiptest)
+*/
+	var/list/sector_types = pick(subtypesof(/datum/overmap_star_system/shiptest/elysium))
+	default_system = create_new_star_system(new sector_types)
+// [/CELADON-EDIT]
 	return ..()
 
 /datum/controller/subsystem/overmap/proc/spawn_new_star_system(datum/overmap_star_system/system_to_spawn=/datum/overmap_star_system)
@@ -68,6 +73,7 @@ SUBSYSTEM_DEF(overmap)
 	return create_new_star_system(new system_to_spawn)
 
 /datum/controller/subsystem/overmap/fire()
+#ifndef NOOVERMAP
 	for(var/datum/overmap_star_system/current_system as anything in tracked_star_systems)
 		if(!current_system.encounters_refresh)
 			continue
@@ -79,6 +85,7 @@ SUBSYSTEM_DEF(overmap)
 				E.apply_effect()
 				if(MC_TICK_CHECK)
 					return
+#endif
 
 /**
  * Gets the parent overmap object (e.g. the planet the atom is on) for a given atom.
@@ -106,6 +113,16 @@ SUBSYSTEM_DEF(overmap)
 			continue
 		if(our_outpost.mapzone?.is_in_bounds(source))
 			return our_outpost
+
+/datum/controller/subsystem/overmap/proc/get_main_outpost()
+	if(!length(outposts))
+		return "No outpost exists in this area of space."
+	return outposts[1]
+
+/datum/controller/subsystem/overmap/proc/get_main_outpost_coords()
+	if(!length(outposts))
+		return "No outpost exists in this area of space."
+	return "[outposts[1]?:x]-[outposts[1]?:y]"
 
 /datum/controller/subsystem/overmap/proc/ship_crew_percentage()
 	var/ship_percentages = 0
@@ -375,10 +392,16 @@ SUBSYSTEM_DEF(overmap)
 	outposts = list()
 	events = list()
 
+#ifdef NOOVERMAP
+	size = 8
+#endif
+
+#ifndef NOOVERMAP
 	if(isnull(dynamic_probabilities))
 		dynamic_probabilities = list()
 		for(var/datum/planet_type/planet_type as anything in subtypesof(/datum/planet_type))
 			dynamic_probabilities[initial(planet_type.planet)] = initial(planet_type.weight)
+#endif
 
 	if(!generator_type)
 		generator_type = CONFIG_GET(string/overmap_generator_type)
@@ -451,6 +474,7 @@ SUBSYSTEM_DEF(overmap)
  * The proc that creates all the objects on the overmap, split into seperate procs for redundancy.
  */
 /datum/overmap_star_system/proc/create_map()
+#ifndef NOOVERMAP
 	switch(generator_type)
 		if(OVERMAP_GENERATOR_SOLAR)
 			spawn_events_in_orbits()
@@ -458,6 +482,7 @@ SUBSYSTEM_DEF(overmap)
 			spawn_events()
 
 	spawn_ruin_levels()
+#endif
 
 	if(has_outpost)
 		spawn_outpost()
@@ -1195,32 +1220,17 @@ SUBSYSTEM_DEF(overmap)
 // 	overmap_icon_state = "overmap_dark"
 // [/CELADON-REMOVE]
 
-/datum/overmap_star_system/safezone/elysium_ice
+// [CELADON-ADD] - NO_STATIC_SECTOR Опасные стартовые сектора
+/datum/overmap_star_system/shiptest/elysium
+	has_outpost = TRUE
+	override_object_colors = FALSE
+	overmap_icon_state = "overmap_dark"
+
+/datum/overmap_star_system/shiptest/elysium/ice
 	name = "Elysium Controlled - Value of Public Works"
 	starname = "Ecbatana"
 	startype = /datum/overmap/star/dwarf
 	default_outpost_type = /datum/overmap/outpost/elysium_ice
-
-	//main colors, used for dockable terrestrials, and background
-	primary_color = "#d9ad82"
-	secondary_color = "#c48c60"
-
-	//hazard colors, used for the overmap hazards and sun
-	hazard_primary_color = "#c13623"
-	hazard_secondary_color = "#943a43"
-
-	//structure colors, used for ships and outposts/colonies
-	primary_structure_color = "#83db2b"
-	secondary_structure_color = "#21a52e"
-
-	override_object_colors = TRUE
-	overmap_icon_state = "overmap_dark"
-
-/datum/overmap_star_system/safezone/elysium_asteroid
-	name = "Elysium Controlled - Persei-277"
-	starname = "Persei-277"
-	startype = /datum/overmap/star/medium
-	default_outpost_type = /datum/overmap/outpost/elysium_asteroid
 
 	//main colors, used for dockable terrestrials, and background
 	primary_color = "#7e8cd9"
@@ -1230,12 +1240,21 @@ SUBSYSTEM_DEF(overmap)
 	hazard_primary_color = "#ededed"
 	hazard_secondary_color = "#7f7db0"
 
-	//structure colors, used for ships and outposts/colonies
-	primary_structure_color = "#4272db"
-	secondary_structure_color = "#38a0eb"
+/datum/overmap_star_system/shiptest/elysium/asteroid
+	name = "Elysium Controlled - Persei-277"
+	starname = "Persei-277"
+	startype = /datum/overmap/star/medium
+	default_outpost_type = /datum/overmap/outpost/elysium_asteroid
 
-	override_object_colors = TRUE
-	overmap_icon_state = "overmap_dark"
+	//main colors, used for dockable terrestrials, and background
+	primary_color = "#d9ad82"
+	secondary_color = "#c48c60"
+
+	//hazard colors, used for the overmap hazards and sun
+	hazard_primary_color = "#c13623"
+	hazard_secondary_color = "#943a43"
+
+// [/CELADON-ADD]
 
 /datum/overmap_star_system/c64
 
@@ -1259,9 +1278,9 @@ SUBSYSTEM_DEF(overmap)
 	has_outpost = FALSE
 	can_be_selected_randomly = FALSE
 	encounters_refresh = TRUE
-	max_overmap_dynamic_events = 15
 
 /datum/overmap_star_system/shiptest/create_map()
+	max_overmap_dynamic_events = CONFIG_GET(number/max_overmap_dynamic_events)
 	. = ..()
 
 /datum/overmap_star_system/admin_sandbox
@@ -1292,3 +1311,4 @@ SUBSYSTEM_DEF(overmap)
 	The [span_notice("MODIF. OVERMAP")] tool is similar in usuage to BUILD ADV but to manipulate the overmap only.
 	"}
 	return ..()
+#endif

@@ -256,7 +256,7 @@
 
 /datum/status_effect/fire_handler/fire_stacks/on_apply()
 	. = ..()
-	RegisterSignal(owner, COMSIG_ATOM_UPDATE_OVERLAYS, PROC_REF(add_fire_overlay))
+	RegisterSignal(owner, COMSIG_ATOM_UPDATE_OVERLAYS, PROC_REF(add_fire_overlay), override = TRUE)	// [CELADON-ADD] - FIXES_FIRES_OVERLAYES - Добавил флаг оверайд ТРУ
 	owner.update_appearance(UPDATE_OVERLAYS)
 
 /datum/status_effect/fire_handler/fire_stacks/proc/add_fire_overlay(mob/living/source, list/overlays)
