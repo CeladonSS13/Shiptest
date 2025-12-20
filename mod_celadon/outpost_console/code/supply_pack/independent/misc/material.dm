@@ -82,11 +82,11 @@
 		Misc. materials
 */
 
-/datum/supply_pack/faction/independent/material/sandbags50
-	name = "50 Sandbags"
+/datum/supply_pack/faction/independent/material/sandbags20
+	name = "20 Sandbags"
 	desc = "It's so sand? Yes, it's sandbags."
-	cost = 1000
-	contains = list(/obj/item/stack/sheet/mineral/sandbags/fifty)
+	cost = 2000
+	contains = list(/obj/item/stack/sheet/mineral/sandbags/twenty)
 	crate_name = "sandbags crate"
 
 /datum/supply_pack/faction/independent/material/sandstone30

@@ -30,7 +30,7 @@
 /datum/supply_pack/faction/independent/civilian/janitank
 	name = "Janitor Backpack"
 	desc = "Call forth divine judgement upon dirt and grime with this high capacity janitor backpack. Contains 500 units of filth-cleansing space cleaner."
-	cost = 750
+	cost = 350
 	contains = list(/obj/item/watertank/janitor)
 	crate_name = "janitor backpack crate"
 
@@ -59,18 +59,6 @@ MARK: Bundles
 					/obj/item/towel,
 					/obj/item/towel,)
 	crate_name = "sauna starter crate"
-	crate_type = /obj/structure/closet/crate/wooden
-
-/datum/supply_pack/faction/independent/civilian/book_crate
-	name = "Book"
-	desc = "Surplus from the Nanotrasen Archives, these six books are sure to be good reads."
-	cost = 500
-	contains = list(/obj/item/book/manual/random,
-					/obj/item/book/manual/random,
-					/obj/item/book/manual/random,
-					/obj/item/book/random,
-					/obj/item/book/random,
-					/obj/item/book/random)
 	crate_type = /obj/structure/closet/crate/wooden
 
 /datum/supply_pack/faction/independent/civilian/wrapping_paper
@@ -108,18 +96,6 @@ MARK: Bundles
 					/obj/item/laser_pointer/purple)
 	crate_name = "bureaucracy crate"
 
-/datum/supply_pack/faction/independent/civilian/forensics
-	name = "Forensics"
-	desc = "Stay hot on the criminal's heels with Nanotrasen's Detective Essentials(tm). Contains a forensics scanner, six evidence bags, camera, tape recorder, white crayon, and of course, a fedora."
-	cost = 500
-	contains = list(/obj/item/detective_scanner,
-					/obj/item/storage/box/evidence,
-					/obj/item/camera,
-					/obj/item/taperecorder,
-					/obj/item/toy/crayon/white,
-					/obj/item/clothing/head/fedora/det_hat)
-	crate_name = "forensics crate"
-
 /datum/supply_pack/faction/independent/civilian/party
 	name = "Party Equipment"
 	desc = "Celebrate both life and death on the frontier with Nanotrasen's Party Essentials(tm)! Contains seven colored glowsticks, six beers, six sodas, two ales, and a bottle of patron, goldschlager, and shaker!"
@@ -144,7 +120,7 @@ MARK: Bundles
 /datum/supply_pack/faction/independent/civilian/bigband
 	name = "Big Band Instrument Collection"
 	desc = "Get your demoralized crew movin' and groovin' with this fine collection! Contains nine different instruments!"
-	cost = 2500
+	cost = 1250
 	contains = list(/obj/item/instrument/violin,
 					/obj/item/instrument/guitar,
 					/obj/item/instrument/glockenspiel,
@@ -229,14 +205,14 @@ MARK: Decoration / flooring
 /datum/supply_pack/faction/independent/civilian/jukebox
 	name = "Jukebox"
 	desc = "Things a bit dull in the workplace? How about jamming out to some music tunes!"
-	cost = 12500
+	cost = 3500
 	contains = list(/obj/machinery/jukebox)
 	crate_name = "Jukebox"
 
 /datum/supply_pack/faction/independent/civilian/roulette
 	name = "Roulette Table"
 	desc = "Go all in with this premium, computerized roulette table! Requires a valid cash card to play."
-	cost = 5000
+	cost = 2500
 	contains = list(/obj/machinery/roulette)
 	crate_name = "roulette table crate"
 
@@ -257,13 +233,6 @@ MARK: Decoration / flooring
 	crate_name = "spare jumpsuits crate"
 	crate_type = /obj/structure/closet/crate/wooden
 
-/datum/supply_pack/faction/independent/civilian/satchel
-	name = "Spare Satchel"
-	desc = "Contains a spare backpack, for the intrepid traveller who managed to lose the last one."
-	cost = 75
-	contains = list(/obj/item/storage/backpack/satchel, /obj/item/storage/backpack)
-	crate_name = "spare backpack bag crate"
-
 /datum/supply_pack/faction/independent/civilian/duffels
 	name = "Spare Duffelbag"
 	desc = "Contains a spare duffelbag. Ideal for carrying items across long distances."
@@ -278,11 +247,3 @@ MARK: Decoration / flooring
 	contains = list(/obj/item/bodycamera/broadcast_camera)
 	crate_name = "broadcast camera crate"
 	crate_type = /obj/structure/closet/crate
-
-/datum/supply_pack/faction/independent/civilian/fountainpens
-	name = "Calligraphy"
-	desc = "Sign death warrants in style with these seven executive fountain pens."
-	cost = 700
-	contains = list(/obj/item/storage/box/fountainpens)
-	crate_name = "calligraphy crate"
-	crate_type = /obj/structure/closet/crate/wooden

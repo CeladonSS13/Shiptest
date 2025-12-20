@@ -182,16 +182,15 @@ MARK:	Разная машинерия
 /datum/supply_pack/faction/independent/machinery/breach_shield_gen
 	name = "Anti-breach Shield Projector"
 	desc = "Hull breaches again? Say no more with the Nanotrasen Anti-Breach Shield Projector! Uses forcefield technology to keep the air in, and the space out. Contains two shield projectors."
-	cost = 2500
-	contains = list(/obj/machinery/shieldgen,
-					/obj/machinery/shieldgen)
+	cost = 1000
+	contains = list(/obj/machinery/shieldgen)
 	crate_name = "anti-breach shield projector crate"
 	crate_type = /obj/structure/closet/crate/secure/plasma
 
 /datum/supply_pack/faction/independent/machinery/wall_shield_gen
 	name = "Shield Generator"
 	desc = "These two shield wall generators are guaranteed to keep any unwanted lifeforms on the outside, where they belong! Not rated for containing singularities or tesla balls."
-	cost = 1000
+	cost = 1200
 	contains = list(/obj/machinery/power/shieldwallgen,
 					/obj/machinery/power/shieldwallgen)
 	crate_name = "shield generators crate"
@@ -200,7 +199,7 @@ MARK:	Разная машинерия
 /datum/supply_pack/faction/independent/machinery/holofield_generator
 	name = "Holofield Generator"
 	desc = "Contains the electronics you need to set up a new (or replacement) holofield! Buttons not included."
-	cost = 1000
+	cost = 750
 	contains = list(/obj/item/circuitboard/machine/shieldwallgen/atmos,
 					/obj/item/circuitboard/machine/shieldwallgen/atmos)
 	crate_name = "holofield generator crate"
@@ -243,7 +242,7 @@ MARK:	Генерация энергии
 /datum/supply_pack/faction/independent/machinery/pacman
 	name = "P.A.C.M.A.N Generator"
 	desc = "Engineers can't set up the engine? Not an issue for you, once you get your hands on this P.A.C.M.A.N. Generator! Takes in plasma and spits out sweet sweet energy."
-	cost = 2500
+	cost = 2000
 	contains = list(/obj/machinery/power/port_gen/pacman)
 	crate_name = "PACMAN generator crate"
 	crate_type = /obj/structure/closet/crate/engineering/electrical
@@ -251,7 +250,7 @@ MARK:	Генерация энергии
 /datum/supply_pack/faction/independent/machinery/solar
 	name = "Solar Panel"
 	desc = "Go green with this DIY advanced solar array. Contains twenty one solar assemblies, a solar-control circuit board, and tracker. If you have any questions, please check out the enclosed instruction book."
-	cost = 2500
+	cost = 2000
 	contains  = list(/obj/item/solar_assembly,
 					/obj/item/solar_assembly,
 					/obj/item/solar_assembly,
@@ -282,7 +281,7 @@ MARK:	Генерация энергии
 /datum/supply_pack/faction/independent/machinery/teg
 	name = "Thermoelectric Generator"
 	desc = "Turn heat into electricity! Warranty void if sneezed upon."
-	cost = 5000
+	cost = 4000
 	contains = list(/obj/item/circuitboard/machine/generator,
 					/obj/item/circuitboard/machine/circulator,
 					/obj/item/circuitboard/machine/circulator)
@@ -292,7 +291,7 @@ MARK:	Генерация энергии
 /datum/supply_pack/faction/independent/machinery/turbine
 	name = "Turbine"
 	desc = "Contains the electronics needed for a turbine generator! Plasma gas not included."
-	cost = 4000
+	cost = 3500
 	contains = list(/obj/item/circuitboard/machine/power_turbine,
 					/obj/item/circuitboard/machine/power_compressor,
 					/obj/item/circuitboard/computer/turbine_computer)
@@ -327,7 +326,7 @@ MARK:	Дополнения к двигателям
 /datum/supply_pack/faction/independent/machinery/emitter
 	name = "Emitter"
 	desc = "Useful for powering forcefield generators while destroying locked crates and intruders alike. Contains two high-powered energy emitters."
-	cost = 3000
+	cost = 2000
 	contains = list(/obj/machinery/power/emitter,
 					/obj/machinery/power/emitter)
 	crate_name = "emitter crate"
@@ -336,7 +335,7 @@ MARK:	Дополнения к двигателям
 /datum/supply_pack/faction/independent/machinery/field_gen
 	name = "Field Generator"
 	desc = "Contains two high-powered field generators, crucial for containing singularities and tesla balls. Must be powered by emitters."
-	cost = 2000
+	cost = 1500
 	contains = list(/obj/machinery/field/generator,
 					/obj/machinery/field/generator)
 	crate_name = "field generator crate"
@@ -345,7 +344,7 @@ MARK:	Дополнения к двигателям
 /datum/supply_pack/faction/independent/machinery/grounding_rods
 	name = "Grounding Rod"
 	desc = "Two grounding rods are guaranteed to keep the lightning of any rebellious tesla under control."
-	cost = 3500
+	cost = 3000
 	contains = list(/obj/machinery/power/grounding_rod,
 					/obj/machinery/power/grounding_rod)
 
@@ -401,7 +400,7 @@ MARK:	Ядра двигателей
 /datum/supply_pack/faction/independent/machinery/rnd_beac
 	name = "R&D Beacon"
 	desc = "A set of specialized platforms for research and production, limited by license. "
-	cost = 16000
+	cost = 15000
 	contains = list(/obj/item/choice_beacon/rnd)
 	crate_name = "r&d starter kit"
 	crate_type = /obj/structure/closet/crate/science
@@ -418,7 +417,7 @@ MARK:	Ядра двигателей
 /datum/supply_pack/faction/independent/machinery/rnd_full
 	name = "Suspicious circuits"
 	desc = "A set of specialized circuits for research and production. An unknown craftsman hacked them, now they are not limited by license. "
-	cost = 89371
+	cost = 65000
 	contains = list(/obj/item/circuitboard/machine/circuit_imprinter,
 					/obj/item/circuitboard/machine/protolathe,
 					/obj/item/circuitboard/machine/rdserver,
@@ -433,7 +432,7 @@ MARK:	Ядра двигателей
 /datum/supply_pack/faction/independent/machinery/booze_dispenser
 	name = "Booze Dispenser (Machine Board)"
 	desc = "The circuit board for a portable booze dispenser."
-	cost = 2500
+	cost = 1500
 	contains = list(/obj/item/circuitboard/machine/chem_dispenser/drinks/beer)
 	crate_name = "service crate"
 	crate_type = /obj/structure/closet/crate/hydroponics
@@ -441,7 +440,7 @@ MARK:	Ядра двигателей
 /datum/supply_pack/faction/independent/machinery/soda_dispenser
 	name = "Soda Dispenser (Machine Board)"
 	desc = "The circuit board for a portable soda dispenser."
-	cost = 2500
+	cost = 1500
 	contains = list(/obj/item/circuitboard/machine/chem_dispenser/drinks)
 	crate_name = "service crate"
 	crate_type = /obj/structure/closet/crate/hydroponics

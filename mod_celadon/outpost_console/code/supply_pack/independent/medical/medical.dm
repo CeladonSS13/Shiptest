@@ -142,32 +142,10 @@
 		var/item = pick(contains)
 		new item(C)
 
-// /datum/supply_pack/faction/independent/medical/virus	// Перенести в Блэкмаркет
-// 	name = "Virus"
-// 	desc = "Contains twelve different bottles, containing several viral samples for virology research. Also includes seven beakers and syringes. Balled-up jeans not included."
-// 	cost = 3500
-// 	contains = list(/obj/item/reagent_containers/glass/bottle/flu_virion,
-// 					/obj/item/reagent_containers/glass/bottle/cold,
-// 					/obj/item/reagent_containers/glass/bottle/random_virus,
-// 					/obj/item/reagent_containers/glass/bottle/random_virus,
-// 					/obj/item/reagent_containers/glass/bottle/random_virus,
-// 					/obj/item/reagent_containers/glass/bottle/random_virus,
-// 					/obj/item/reagent_containers/glass/bottle/fake_gbs,
-// 					/obj/item/reagent_containers/glass/bottle/magnitis,
-// 					/obj/item/reagent_containers/glass/bottle/pierrot_throat,
-// 					/obj/item/reagent_containers/glass/bottle/brainrot,
-// 					/obj/item/reagent_containers/glass/bottle/anxiety,
-// 					/obj/item/reagent_containers/glass/bottle/beesease,
-// 					/obj/item/storage/box/syringes,
-// 					/obj/item/storage/box/beakers,
-// 					/obj/item/reagent_containers/glass/bottle/mutagen)
-// 	crate_name = "virus crate"
-// 	crate_type = /obj/structure/closet/crate/medical
-
 /datum/supply_pack/faction/independent/medical/surgery
 	name = "Surgical Supplies"
 	desc = "Do you want to perform surgery, but don't have one of those fancy shmancy degrees? Just get started with this crate containing a medical case, Sterilizine spray and collapsible roller bed."
-	cost = 3000
+	cost = 1000
 	contains = list(/obj/item/storage/case/surgery,
 					/obj/item/reagent_containers/medigel/sterilizine,
 					/obj/item/roller)
@@ -176,13 +154,8 @@
 /datum/supply_pack/faction/independent/medical/herbs
 	name = "Medical herbs"
 	desc = "Specifically created for severely ill individuals and those struggling with addiction."
-	cost = 5000
-	contains = list(/obj/item/food/grown/cannabis,
-					/obj/item/food/grown/cannabis,
-					/obj/item/food/grown/cannabis,
-					/obj/item/food/grown/cannabis,
-					/obj/item/food/grown/cannabis,
-					/obj/item/food/grown/cannabis)
+	cost = 1000
+	contains = list(/obj/item/food/grown/cannabis)
 	crate_name = "marijuana crate"
 	crate_type = /obj/structure/closet/crate/medical
 

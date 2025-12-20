@@ -5,7 +5,7 @@
 /datum/supply_pack/faction/independent/modsuits/science/mod_core
 	name = "MOD Core"
 	desc = "One MODsuit core used in MOD construction."
-	cost = 5000
+	cost = 4000
 	contains = list(/obj/item/mod/core/standard)
 	crate_name = "MOD core crate"
 	crate_type = /obj/structure/closet/crate/secure/science
@@ -13,7 +13,7 @@
 /datum/supply_pack/faction/independent/modsuits/science/mod_core_plasma
 	name = "MOD Plasma Core"
 	desc = "One MODsuit core used in MOD construction. This core is designed to be charged from solid plasma."
-	cost = 5000
+	cost = 4000
 	contains = list(/obj/item/mod/core/plasma)
 	crate_name = "MOD core crate"
 	crate_type = /obj/structure/closet/crate/secure/science

@@ -19,7 +19,7 @@
 /datum/supply_pack/faction/independent/armor/riot_armor
 	name = "Riot Armor"
 	desc = "Contains one full set of riot armor. Although heavily padded to deal with close-quarters threats, they perform poorly against most firearms."
-	cost = 1250
+	cost = 1000
 	contains = list(/obj/item/clothing/suit/armor/riot,
 					/obj/item/clothing/head/helmet/riot)
 	crate_name = "riot armor crate"
@@ -28,7 +28,7 @@
 /datum/supply_pack/faction/independent/armor/bullet_armor
 	name = "Bulletproof Armor"
 	desc = "Contains one full set of bulletproof armor, guaranteed to reduce a bullet's stopping power by half but with limited protection against melee weaponry."
-	cost = 1500
+	cost = 1250
 	contains = list(/obj/item/clothing/suit/armor/vest/bulletproof,
 					/obj/item/clothing/head/helmet/bulletproof,
 					/obj/item/clothing/glasses/sunglasses/ballistic)
@@ -38,7 +38,7 @@
 /datum/supply_pack/faction/independent/armor/laser_armor
 	name = "Reflector Vest"
 	desc = "Contains one vest made of highly reflective material. The armor piece diffuses a laser's energy by over half, as well as offering a good chance to reflect the laser entirely."
-	cost = 1500
+	cost = 1250
 	contains = list(/obj/item/clothing/suit/armor/laserproof)
 	crate_name = "reflector vest crate"
 	crate_type = /obj/structure/closet/crate/secure/plasma
@@ -73,7 +73,7 @@
 /datum/supply_pack/faction/independent/armor/ablative
 	name = "Ablative Trenchcoat"
 	desc = "Experimental trenchcoat specially crafted to reflect and absorb laser and disabler shots. Don't expect it to do all that much against an axe or a shotgun, however."
-	cost = 6000
+	cost = 4000
 	contains = list(/obj/item/clothing/suit/hooded/ablative)
 
 //clip

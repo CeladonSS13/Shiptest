@@ -94,7 +94,7 @@
 /datum/supply_pack/faction/independent/animal/parrot
 	name = "Bird"
 	desc = "Contains an expert telecommunication bird."
-	cost = 2000
+	cost = 1000
 	contains = list(/mob/living/simple_animal/parrot)
 	crate_name = "parrot crate"
 

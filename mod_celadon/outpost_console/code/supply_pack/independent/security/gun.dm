@@ -27,58 +27,123 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	crate_name = "pistol crate"
 */
 
+//Orig (.38)
+//	damage = 20
+//	armour_penetration = -20
+//March
+//	armour_penetration = -10
+
 /datum/supply_pack/faction/independent/gun/detrevolver
 	name = "Revolver - HP Detective (.38)"
 	desc = "Contains a concealable revolver favored by police departments around the sector, chambered in .38."
 	cost = 600
 	contains = list(/obj/item/storage/guncase/pistol/detective)
 
+//Orig (.44)
+//	damage =  30
+//Rubber
+//	damage =  10
+//	stamina = 40
+//	armour_penetration = -10
+//HP
+//	damage =  45
+//	armour_penetration = -10
+
 /datum/supply_pack/faction/independent/gun/shadowrevolver
 	name = "Revolver - Shadow (.44)"
 	desc = "Contains a concealable Shadow revolver, chambered in .44 Roumain."
 	cost = 1000
 	contains = list(/obj/item/storage/guncase/pistol/shadow)
+	//	max_ammo = 6
+	// no_speedloader
 
 /datum/supply_pack/faction/independent/gun/montagne
 	name = "Revolver - HP Montagne (.44)"
 	desc = "Contains a revolver issued to high-ranking members of the Saint-Roumain Militia. Chambered in .44."
-	cost = 1100
+	cost = 1300 // [IND]
 	contains = list(/obj/item/storage/guncase/pistol/montagne)
+	//	max_ammo = 6
+
+//Orig (.357)
+//	damage = 35
+//March
+//	armour_penetration = 10
+//HP
+//	damage = 50
+//	armour_penetration = -20
 
 /datum/supply_pack/faction/independent/gun/pepperbox
 	name = "Revolver - HP Firebrand (.357)"
 	desc = "Contains a concealable pepperbox revolver manufactured by the Saint Roumain Militia, chambered in .357."
 	cost = 1250
 	contains = list(/obj/item/storage/guncase/pistol/firebrand)
+	//	max_ammo = 5
 
 /datum/supply_pack/faction/independent/gun/viperrevolver
 	name = "Revolver - Viper-23 (.357)"
 	desc = "Contains a civilian variant of the Viper revolver, chambered in .357 magnum."
-	cost = 2500
+	cost = 2000
 	contains = list(/obj/item/storage/guncase/pistol/viper)
+	//	max_ammo = 6
 
 /*
 	MARK:		Pistols
 */
 
+// 9x18mm (Commander, SABR)
+//	damage = 20
+//	armour_penetration = -20
+//ap
+//	damage = 18
+//	armour_penetration = 10
+//hp
+//	damage = 30
+//	armour_penetration = -30
+
 /datum/supply_pack/faction/independent/gun/challenger
 	name = "Pistol - VI 'Challenger' (9x18mm)"
 	desc = "Contains a double stacked Challenger pistol, produced by Nanotrasen along with Vigilitas Interstellar and is chambered in 9x18mm."
-	cost = 1750
+	cost = 1100
 	contains = list(/obj/item/storage/guncase/pistol/commander)
+	//spread = 3
+	//max_ammo = 12
 
 /datum/supply_pack/faction/independent/gun/glock
 	name = "Pistol - Glock (9x18mm)"
 	desc = "Contains a 9x18mm Glock pistol and two additional magazines for it."
-	cost = 1300
+	cost = 1650
 	contains = list(/obj/item/storage/guncase/glock)
 	crate_name = "auto rifle crate"
+	//spread = 5
+	//max_ammo = 17
+
+// 10x22mm (Ringneck)
+//	damage = 25
+//	armour_penetration = -20
+//ap
+//	damage = 23
+//	armour_penetration = 10
+//hp
+//	damage = 35
+//	armour_penetration = -30
 
 /datum/supply_pack/faction/independent/gun/ringneck
 	name = "Pistol - Ringneck (10x22mm)"
 	desc = "Contains a civilian variant of the Ringneck pistol, produced by Scarborough Arms and chambered in 10x22mm."
 	cost = 1000
 	contains = list(/obj/item/storage/guncase/pistol/ringneck)
+	//spread = 5
+	//max_ammo = 8
+
+//Orig (.44)
+//	damage =  30
+//Rubber
+//	damage =  10
+//	stamina = 40
+//	armour_penetration = -10
+//HP
+//	damage =  45
+//	armour_penetration = -10
 
 /datum/supply_pack/faction/independent/gun/m20_auto_elite
 	name = "Pistol - M20 Auto Elite (.44)"
@@ -86,12 +151,14 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	cost = 1250
 	contains = list(/obj/item/storage/guncase/pistol/m20_auto_elite)
 	crate_name = "pistol crate"
+	//max_ammo = 9
 
 /datum/supply_pack/faction/independent/gun/candors
 	name = "Pistol - Candor (.45)"
 	desc = "Contains a Candor pistol, the trusty sidearm of any spacer, produced by Hunter's Pride and chambered in .45 ACP."
 	cost = 1000
 	contains = list(/obj/item/storage/guncase/pistol/candor)
+	//max_ammo = 8
 
 /datum/supply_pack/faction/independent/gun/usp
 	name = "Pistol - USP (.45)"
@@ -99,6 +166,7 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	cost = 1350
 	contains = list(/obj/item/storage/guncase/usp)
 	crate_name = "auto rifle crate"
+	//max_ammo = 12
 
 /*
 	MARK: SMGs
@@ -110,6 +178,7 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	cost = 4000
 	contains = list(/obj/item/storage/guncase/firestorm)
 	crate_name = "SMG crate"
+	//max_ammo = 24
 
 /datum/supply_pack/faction/independent/gun/cobra20
 	name = "SMG - Cobra-20 (.45)"
@@ -117,12 +186,14 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	cost = 3000
 	contains = list(/obj/item/storage/guncase/cobra)
 	crate_name = "SMG crate"
+	//max_ammo = 24
 
 /datum/supply_pack/faction/independent/gun/skm_carbine
 	name = "SMG - SKM-24v (4.6x30mm)"
 	desc = "Contains a SKM-24v was a carbine modification of the SKM-24 during the Frontiersmen War. This, however, is just a shoddy imitation of that carbine, effectively an SKM-24 with a sawed down barrel and a folding wire stock. Can be fired with the stock folded, though accuracy suffers. Chambered in 4.6x30mm."
 	cost = 4000
 	contains = list(/obj/item/storage/guncase/skm_carbine)
+	//max_ammo = 30
 
 /*
 	MARK:	Energy

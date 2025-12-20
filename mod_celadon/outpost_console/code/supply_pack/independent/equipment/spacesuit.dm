@@ -100,7 +100,7 @@
 /datum/supply_pack/faction/independent/spacesuit/med_hardsuit
 	name = "Medical Hardsuit"
 	desc = "One medical hardsuit, resistant to diseases and useful for retrieving patients in space."
-	cost = 3000
+	cost = 1500
 	contains = list(/obj/item/clothing/suit/space/hardsuit/medical)
 	crate_name = "medical hardsuit crate"
 	crate_type = /obj/structure/closet/crate/medical
@@ -108,7 +108,7 @@
 /datum/supply_pack/faction/independent/spacesuit/mining_hardsuit_heavy
 	name = "Heavy Mining Hardsuit"
 	desc = "One deluxe heavy mining hardsuit for dangerous frontier operations. Comes with a pair of EXOCOM jet boots."
-	cost = 3500
+	cost = 3000
 	contains = list(/obj/item/clothing/suit/space/hardsuit/mining/heavy,
 					/obj/item/clothing/shoes/bhop)
 	crate_name = "heavy mining hardsuit crate"
@@ -117,7 +117,7 @@
 /datum/supply_pack/faction/independent/spacesuit/sci_hardsuit
 	name = "Science Hardsuit"
 	desc = "Contains one science hardsuit, designed to provide safety under advanced experimental conditions."
-	cost = 7000
+	cost = 4000
 	contains = list(/obj/item/clothing/suit/space/hardsuit/bomb)
 	crate_name = "science hardsuit crate"
 	crate_type = /obj/structure/closet/crate/secure/science
@@ -125,7 +125,7 @@
 /datum/supply_pack/faction/independent/spacesuit/atmos_hardsuit
 	name = "Atmospherics Hardsuit"
 	desc = "The iconic hardsuit of Nanotrasen's Atmosphere Corps, this hardsuit is known across space as a symbol of defiance in the face of sudden decompression. Smells faintly of plasma."
-	cost = 2500
+	cost = 2000
 	contains = list(/obj/item/clothing/suit/space/hardsuit/engine/atmos)
 	crate_name = "atmospherics hardsuit crate"
 	crate_type = /obj/structure/closet/crate/secure/engineering
