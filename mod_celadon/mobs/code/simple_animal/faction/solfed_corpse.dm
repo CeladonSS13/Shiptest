@@ -151,7 +151,7 @@
 	head = /obj/item/clothing/head/helmet/bulletproof/x11/solfed
 	suit = /obj/item/clothing/suit/armor/vest/marine/heavy
 	shoes = /obj/item/clothing/shoes/combat
-	mask = /obj/item/clothing/mask/gas/sechailer
+	mask = /obj/item/clothing/mask/gas/sechailer/sec
 
 /obj/effect/mob_spawn/human/corpse/solfed/marine/sniper
 	name = "SolFed Scharfschutze"

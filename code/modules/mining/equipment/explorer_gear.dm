@@ -48,6 +48,14 @@
 	resistance_flags = FIRE_PROOF
 	supports_variations = SNOUTED_VARIATION | KEPORI_VARIATION
 
+// [CELADON-ADD]
+/obj/item/clothing/mask/gas/explorer/legacy
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/mask/mask_explorer.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/mask/overlay/mask_explorer.dmi'
+	icon_state = "gas_explorer"
+	actions_types = list(/datum/action/item_action/adjust)
+// [/CELADON-ADD]
+
 /obj/item/clothing/mask/gas/explorer/attack_self(mob/user)
 	adjustmask(user)
 

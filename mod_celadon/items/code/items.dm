@@ -55,6 +55,13 @@
 	icon_state = "folded_Separ"
 	sign_path = /obj/structure/sign/flag/separatist
 
+/obj/item/sign/flag/pirate
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/flags.dmi'
+	name = "\improper folded Pirate flag"
+	desc = "Dark, almost black folded flag with a red skull on it.. Take what you can, give nothing back."
+	icon_state = "folded_Pirate"
+	sign_path = /obj/structure/sign/flag/pirate
+
 // Настенные флаги, то есть структуры, которые можно повесить/снять со стены
 
 /obj/structure/sign/flag/solfed
@@ -110,6 +117,15 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/separatist, (-32))
 	item_flag = /obj/item/sign/flag/elysium
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/elysium, (-32))
+
+/obj/structure/sign/flag/pirate
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/flags.dmi'
+	name = "\improper Pirate flag"
+	desc = "Dark, almost black flag with a red skull on it.. Take what you can, give nothing back."
+	icon_state = "flag_Pirate"
+	item_flag = /obj/item/sign/flag/pirate
+
+MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/pirate, (-32))
 
 // Баннеры
 

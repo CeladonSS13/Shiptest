@@ -15,7 +15,7 @@
 		return
 	activator = user
 	ADD_TRAIT(user, TRAIT_ELITE_CHALLENGER, REF(src))
-	RegisterSignal(user, COMSIG_PARENT_QDELETING, PROC_REF(clear_activator))
+	RegisterSignal(user, COMSIG_QDELETING, PROC_REF(clear_activator))
 	user.log_message("activated an Elite Tumor!", LOG_GAME, color="#960000")
 
 /obj/structure/elite_tumor/proc/clear_activator(mob/source)
@@ -24,7 +24,7 @@
 		return
 	activator = null
 	REMOVE_TRAIT(source, TRAIT_ELITE_CHALLENGER, REF(src))
-	UnregisterSignal(source, COMSIG_PARENT_QDELETING)
+	UnregisterSignal(source, COMSIG_QDELETING)
 
 /mob/living/simple_animal/hostile/asteroid/elite/broodmother
 	armor = list("melee" = 10, "bullet" = 20, "laser" = 20, "energy" = 30, "bomb" = 40, "bio" = 20, "rad" = 20, "fire" = 40, "acid" = 20)

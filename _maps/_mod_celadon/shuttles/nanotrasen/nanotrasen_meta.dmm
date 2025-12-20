@@ -32,7 +32,7 @@
 "ag" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/mask/gas/explorer,
+/obj/item/clothing/mask/gas/explorer/legacy,
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
@@ -620,7 +620,7 @@
 	dir = 8
 	},
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/mask/gas/explorer,
+/obj/item/clothing/mask/gas/explorer/legacy,
 /obj/item/clothing/suit/hooded/explorer,
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo/office)
@@ -2204,7 +2204,7 @@
 	},
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/item/tank/jetpack,
-/obj/item/clothing/mask/gas/explorer,
+/obj/item/clothing/mask/gas/explorer/legacy,
 /obj/item/clothing/suit/space/hardsuit/mining/heavy,
 /obj/structure/window/reinforced/tinted/frosted,
 /turf/open/floor/wood/ebony,
