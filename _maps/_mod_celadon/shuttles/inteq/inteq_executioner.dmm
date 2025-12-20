@@ -50,11 +50,14 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 6
 	},
+/obj/item/gun/energy/e_gun/e_old/adv_stopping,
+/obj/item/gun/energy/e_gun/e_old/mini,
+/obj/item/gun/energy/e_gun/e_old/mini,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "aG" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/industrial/traffic/fulltile,
 /obj/item/clothing/suit/space/hardsuit/security/inteq,
@@ -244,7 +247,7 @@
 /area/ship/security/armory)
 "cd" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /obj/machinery/airalarm/directional/north,
 /obj/effect/turf_decal/industrial/traffic/fulltile,
 /obj/item/clothing/suit/space/hardsuit/security/inteq,
@@ -1154,7 +1157,7 @@
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/item/clothing/suit/space/inteq,
 /obj/item/clothing/head/helmet/space/inteq,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/medical)
 "ms" = (
@@ -1261,6 +1264,7 @@
 /obj/item/clothing/suit/poncho,
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
 /obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/gun/ballistic/revolver/horizonx,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
@@ -1856,7 +1860,7 @@
 	},
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/item/clothing/suit/space/hardsuit/syndi/inteq,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "uY" = (
@@ -1997,6 +2001,9 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 10
 	},
+/obj/item/gun/energy/e_gun/e_old/mini,
+/obj/item/gun/energy/e_gun/e_old/mini,
+/obj/item/gun/energy/e_gun/e_old/mini,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "xm" = (
@@ -2048,18 +2055,18 @@
 /obj/item/clothing/suit/armor/vest/alt,
 /obj/item/clothing/suit/armor/vest/alt,
 /obj/item/clothing/suit/armor/vest/alt,
-/obj/item/clothing/head/helmet/inteq,
-/obj/item/clothing/head/helmet/inteq,
-/obj/item/clothing/head/helmet/inteq,
+/obj/item/clothing/head/helmet/m10/inteq,
+/obj/item/clothing/head/helmet/m10/inteq,
+/obj/item/clothing/head/helmet/m10/inteq,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/gloves/combat,
-/obj/item/clothing/head/helmet/swat,
-/obj/item/clothing/head/helmet/swat,
-/obj/item/clothing/head/helmet/swat,
+/obj/item/clothing/head/helmet/bulletproof/x11/inteq,
+/obj/item/clothing/head/helmet/bulletproof/x11/inteq,
+/obj/item/clothing/head/helmet/bulletproof/x11/inteq,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "xQ" = (
@@ -2508,7 +2515,7 @@
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/head/helmet/space/inteq,
 /obj/item/clothing/suit/space/inteq,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /turf/open/floor/plasteel/tech,
 /area/ship/maintenance/starboard)
 "El" = (
@@ -2835,7 +2842,7 @@
 /area/ship/engineering)
 "Jt" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /obj/item/clothing/suit/space/inteq,
 /obj/item/clothing/head/helmet/space/inteq,
 /turf/open/floor/plasteel/tech,
@@ -3293,7 +3300,7 @@
 /area/ship/medical)
 "Pa" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable{
 	d2 = 2;
@@ -3797,7 +3804,7 @@
 /obj/machinery/camera/autoname,
 /obj/item/clothing/suit/space/inteq,
 /obj/item/clothing/head/helmet/space/inteq,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /obj/structure/sign/poster/official/mini_energy_gun{
 	pixel_x = -32
 	},
@@ -3879,7 +3886,7 @@
 /area/ship/crew/office)
 "Wy" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/industrial/traffic/fulltile,
 /obj/item/clothing/suit/space/hardsuit/security/inteq,

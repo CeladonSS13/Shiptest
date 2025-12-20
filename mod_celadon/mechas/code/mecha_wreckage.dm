@@ -123,3 +123,8 @@
 	name = "\improper Executor wreckage"
 	icon = 'mod_celadon/_storage_icons/icons/other/mecha/mecha.dmi'
 	icon_state = "executor-broken"
+
+/obj/structure/mecha_wreckage/ripley/solfed
+	name = "\improper Conservationist wreckage"
+	icon = 'mod_celadon/_storage_icons/icons/other/mecha/mecha.dmi'
+	icon_state = "sfripley-broken"

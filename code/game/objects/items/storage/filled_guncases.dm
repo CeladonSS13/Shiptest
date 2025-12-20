@@ -22,7 +22,7 @@
 
 /obj/item/storage/guncase/pistol/shadow
 	gun_type = /obj/item/gun/ballistic/revolver/shadow
-	mag_type = /obj/item/ammo_box/a44roum_speedloader // [CELADON-ADD] Добавляем отсутствующий спидлоадер в ганкейсе при покупке
+
 /obj/item/storage/guncase/pistol/ashhand
 	gun_type = /obj/item/gun/ballistic/revolver/ashhand
 
@@ -140,6 +140,10 @@
 /obj/item/storage/guncase/saw80
 	gun_type = /obj/item/gun/ballistic/automatic/assault/hydra/lmg
 	mag_type = /obj/item/ammo_box/magazine/m556_42_hydra/extended
+
+/obj/item/storage/guncase/hydra80
+	gun_type = /obj/item/gun/ballistic/automatic/assault/hydra/indie
+	mag_type = /obj/item/ammo_box/magazine/m556_42_hydra/small
 
 /obj/item/storage/guncase/taipan
 	gun_type = /obj/item/gun/ballistic/automatic/marksman/taipan
@@ -429,6 +433,7 @@
 	mag_type = /obj/item/ammo_box/magazine/c22lr_pounder_pan
 
 /* underbarrel guns */
+/*
 /obj/item/storage/guncase/underbarrel_shotgun
 	gun_type = /obj/item/attachment/gun/ballistic/shotgun
 
@@ -447,3 +452,4 @@
 
 /obj/item/storage/guncase/energy/underbarrel_e_gun
 	gun_type = /obj/item/attachment/gun/energy/e_gun
+*/

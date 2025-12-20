@@ -58,8 +58,6 @@ NO_MAG_GUN_HELPER(automatic/pistol/usp45)
 	eject_sound = 'sound/weapons/gun/pistol/mag_release.ogg'//На будущее заменить
 	eject_empty_sound = 'sound/weapons/gun/pistol/mag_release.ogg'//На будущее заменить
 NO_MAG_GUN_HELPER(automatic/pistol/glock)
-// /obj/item/gun/ballistic/automatic/pistol/glock/no_mag
-// 	spawnwithmagazine = FALSE
 
 /obj/item/gun/ballistic/automatic/pistol/solgov // - Оффы не завезли отображение в руках для этого пистолета, потому фиксим проблему так.
 	icon_state = "pistole-c"
@@ -67,3 +65,6 @@ NO_MAG_GUN_HELPER(automatic/pistol/glock)
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_righthand.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/back.dmi'
+NO_MAG_GUN_HELPER(automatic/pistol/glock/solgov)
+
+NO_MAG_GUN_HELPER(automatic/pistol/solgov)

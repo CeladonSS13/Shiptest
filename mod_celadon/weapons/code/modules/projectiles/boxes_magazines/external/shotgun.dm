@@ -1,3 +1,4 @@
+//https://github.com/CeladonSS13/Shiptest/pull/1085
 /obj/item/ammo_box/magazine/saiga
 	name = "\improper saiga 6 bullet short magazine"
 	desc = "A simple saiga magazine designed to chamber 410x76mm."
@@ -106,5 +107,3 @@
 
 /obj/item/ammo_box/magazine/saiga/drum/empty
 	start_empty = TRUE
-
-// EMPTY_GUN_HELPER(shotgun/saiga)

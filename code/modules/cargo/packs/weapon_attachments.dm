@@ -69,6 +69,7 @@
 	contains = list(/obj/item/attachment/long_scope)
 	crate_name = "scope crate"
 
+/*
 /datum/supply_pack/attachment/shotgun
 	name = "Underbarrel Shotgun Crate"
 	desc = "Contains a two shot underbarrel pump shotgun to be mounted on a firearm."
@@ -106,3 +107,4 @@
 
 
 [/CELADON-DELETE] */
+*/

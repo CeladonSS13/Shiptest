@@ -186,6 +186,8 @@
 			var/species_id = user.client?.prefs?.pref_species?.id
 			if(species_id != "human" && species_id != "ipc" && species_id != "lanius")
 				continue
+			if(user.client?.prefs?.features["tail_human"] != "None" || user.client?.prefs?.features["ears"] != "None")
+				continue
 		// [/CELADON-ADD]
 
 		var/list/ship_jobs = list()
@@ -226,6 +228,8 @@
 		if(T.faction.name == FACTION_ELYSIUM)
 			var/species_id = user.client?.prefs?.pref_species?.id
 			if(species_id != "human" && species_id != "ipc" && species_id != "lanius")
+				continue
+			if(user.client?.prefs?.features["tail_human"] != "None" || user.client?.prefs?.features["ears"] != "None")
 				continue
 		var/list/ship_data = list(
 			"name" = T.name,

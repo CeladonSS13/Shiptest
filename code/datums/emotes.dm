@@ -82,8 +82,14 @@
 		user.flick_overlay_view(I, emote_length)
 
 	var/tmp_sound = get_sound(user)
+	// [CELADON-ADD] - CELADON_EMOTES
+	var/sound_volume = get_volume(user)
+	// [/CELADON-ADD]
 	if(tmp_sound && (!only_forced_audio || !intentional))
-		playsound(user, tmp_sound, 50, vary)
+		// [CELADON-EDIT] - CELADON_EMOTES
+		// playsound(user, tmp_sound, 50, vary)	// CELADON-EDIT - ORIGINAL
+		playsound(user, tmp_sound, sound_volume, vary)
+		// [/CELADON-EDIT]
 
 	var/msg = select_message_type(user, intentional)
 	if(params && message_param)
@@ -132,15 +138,6 @@
 	user.log_message(msg, LOG_EMOTE)
 	var/space = should_have_space_before_emote(html_encode(msg)[1]) ? " " : ""
 	var/dchatmsg = "<b>[user]</b>[space][msg]"
-
-	// [CELADON-ADD] - CELADON_EMOTES
-	var/sound_volume = get_volume(user)
-	// [/CELADON-ADD]
-	if(tmp_sound && (!only_forced_audio || !intentional))
-		// [CELADON-EDIT] - CELADON_EMOTES
-		// playsound(user, tmp_sound, 50, vary)	// CELADON-EDIT - ORIGINAL
-		playsound(user, tmp_sound, sound_volume, vary)
-		// [/CELADON-EDIT]
 
 	for(var/mob/M in GLOB.dead_mob_list)
 		if(!M.client || isnewplayer(M))

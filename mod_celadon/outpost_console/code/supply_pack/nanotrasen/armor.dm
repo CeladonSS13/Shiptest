@@ -7,7 +7,7 @@
 	contains = list(/obj/item/clothing/suit/armor/nanotrasen,
 					/obj/item/clothing/suit/armor/nanotrasen,
 					/obj/item/clothing/suit/armor/nanotrasen,
-					/obj/item/clothing/head/helmet/sec,
-					/obj/item/clothing/head/helmet/sec,
-					/obj/item/clothing/head/helmet/sec)
+					/obj/item/clothing/head/helmet/m10/nanotrasen,
+					/obj/item/clothing/head/helmet/m10/nanotrasen,
+					/obj/item/clothing/head/helmet/m10/nanotrasen)
 	cost = 3000

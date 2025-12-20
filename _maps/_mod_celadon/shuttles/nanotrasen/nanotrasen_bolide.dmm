@@ -1334,7 +1334,7 @@
 	},
 /obj/item/clothing/under/nanotrasen/security/director,
 /obj/item/clothing/suit/armor/nanotrasen/slim,
-/obj/item/clothing/head/helmet/sec,
+/obj/item/clothing/head/helmet/m10/nanotrasen,
 /obj/item/storage/belt/military,
 /obj/item/clothing/neck/cloak/hos,
 /obj/item/clothing/gloves/combat,
@@ -3305,42 +3305,15 @@
 "yq" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/corner/opaque/neutral/full,
-/obj/item/stock_parts/cell/gun/upgraded{
-	pixel_x = 2;
-	pixel_y = -1
-	},
-/obj/item/stock_parts/cell/gun/upgraded{
-	pixel_x = -3;
-	pixel_y = 6
-	},
-/obj/item/stock_parts/cell/gun/upgraded{
-	pixel_x = -8;
-	pixel_y = -3
-	},
-/obj/item/stock_parts/cell/gun{
-	pixel_x = -3;
-	pixel_y = -1
-	},
-/obj/item/stock_parts/cell/gun{
-	pixel_x = 7;
-	pixel_y = 9
-	},
-/obj/item/stock_parts/cell/gun{
-	pixel_x = 2;
-	pixel_y = 6
-	},
-/obj/item/stock_parts/cell/gun{
-	pixel_x = -7;
-	pixel_y = -4
-	},
-/obj/item/stock_parts/cell/gun{
-	pixel_x = 10;
-	pixel_y = -2
-	},
-/obj/item/stock_parts/cell/gun{
-	pixel_x = -6;
-	pixel_y = 5
-	},
+/obj/item/stock_parts/cell/gun/sharplite/plus,
+/obj/item/stock_parts/cell/gun/sharplite/plus,
+/obj/item/stock_parts/cell/gun/sharplite/plus,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
 /obj/structure/sign/poster/official/ion_carbine{
 	pixel_x = -32;
 	pixel_y = 0
@@ -5070,19 +5043,19 @@
 	pixel_x = 0;
 	pixel_y = 0
 	},
-/obj/item/clothing/head/helmet/sec{
+/obj/item/clothing/head/helmet/m10/nanotrasen{
 	pixel_x = -6;
 	pixel_y = 7
 	},
-/obj/item/clothing/head/helmet/sec{
+/obj/item/clothing/head/helmet/m10/nanotrasen{
 	pixel_x = -6;
 	pixel_y = 7
 	},
-/obj/item/clothing/head/helmet/sec{
+/obj/item/clothing/head/helmet/m10/nanotrasen{
 	pixel_x = -6;
 	pixel_y = 7
 	},
-/obj/item/clothing/head/helmet/sec{
+/obj/item/clothing/head/helmet/m10/nanotrasen{
 	pixel_x = -6;
 	pixel_y = 7
 	},
@@ -5320,19 +5293,19 @@
 	dir = 4
 	},
 /obj/machinery/light/directional/north,
-/obj/item/gun/ballistic/automatic/pistol/commander{
+/obj/item/gun/ballistic/automatic/pistol/challenger{
 	pixel_x = 1;
 	pixel_y = -2
 	},
-/obj/item/gun/ballistic/automatic/pistol/commander{
+/obj/item/gun/ballistic/automatic/pistol/challenger{
 	pixel_x = 3;
 	pixel_y = -4
 	},
-/obj/item/gun/ballistic/automatic/pistol/commander{
+/obj/item/gun/ballistic/automatic/pistol/challenger{
 	pixel_x = 6;
 	pixel_y = -6
 	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_x = 0;
 	pixel_y = 12
 	},
@@ -7473,14 +7446,8 @@
 /obj/effect/turf_decal/corner/opaque/neutral/full,
 /obj/machinery/light/directional/north,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/obj/item/gun/energy/e_gun{
-	pixel_x = 0;
-	pixel_y = -2
-	},
-/obj/item/gun/energy/e_gun{
-	pixel_x = 0;
-	pixel_y = 4
-	},
+/obj/item/gun/energy/e_gun/e_old/smg,
+/obj/item/gun/energy/e_gun/e_old/smg,
 /turf/open/floor/vault,
 /area/ship/security/armory)
 "Zu" = (

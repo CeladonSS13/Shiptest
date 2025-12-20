@@ -467,6 +467,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	READ_FILE(S["jumpsuit_style"], jumpsuit_style)
 	READ_FILE(S["exowear"], exowear)
+	READ_FILE(S["wallet"], wallet)	// [CELADON-ADD] - CELADON_WALLETS
 	READ_FILE(S["feature_moth_fluff"], features["moth_fluff"])
 	READ_FILE(S["feature_spider_legs"], features["spider_legs"])
 	READ_FILE(S["feature_spider_spinneret"], features["spider_spinneret"])
@@ -637,6 +638,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	backpack			= sanitize_inlist(backpack, GLOB.backpacklist, initial(backpack))
 	jumpsuit_style		= sanitize_inlist(jumpsuit_style, GLOB.jumpsuitlist, initial(jumpsuit_style))
 	exowear				= sanitize_inlist(exowear, GLOB.exowearlist, initial(exowear))
+	wallet				= sanitize_inlist(wallet, GLOB.walletlist, initial(wallet))	// [CELADON-ADD] - CELADON_WALLETS
 	fbp					= sanitize_integer(fbp, FALSE, TRUE, FALSE)
 	height_filter		= sanitize_inlist(height_filter, GLOB.height_filters, "Normal")
 	features["grad_style"]				= sanitize_inlist(features["grad_style"], GLOB.hair_gradients_list)
@@ -769,6 +771,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["feature_moth_markings"]		, features["moth_markings"])
 	WRITE_FILE(S["jumpsuit_style"]				, jumpsuit_style)
 	WRITE_FILE(S["exowear"]						, exowear)
+	WRITE_FILE(S["wallet"]						, wallet)	// [CELADON-ADD] - CELADON_WALLETS
 	WRITE_FILE(S["equipped_gear"]				, equipped_gear)
 	WRITE_FILE(S["feature_moth_fluff"]			, features["moth_fluff"])
 	WRITE_FILE(S["feature_spider_legs"]			, features["spider_legs"])

@@ -94,7 +94,6 @@ SUBSYSTEM_DEF(ticker)
 				if(L[1] == "exclude")
 					continue
 				music += S
-				login_music_name = S
 
 	var/old_login_music = trim(file2text("data/last_round_lobby_music.txt"))
 	if(music.len > 1)
@@ -111,9 +110,14 @@ SUBSYSTEM_DEF(ticker)
 	if(!length(music))
 		music = world.file2list(ROUND_START_MUSIC_LIST, "\n")
 		login_music = pick(music)
+		login_music_name = login_music	// [CELADON-ADD] - MUSIC_CELADON
 	else
-		login_music = "[global.config.directory]/title_music/sounds/[pick(music)]"
-
+		// [CELADON-EDIT] - MUSIC_CELADON
+		// login_music = "[global.config.directory]/title_music/sounds/[pick(music)]"	// ORIGINAL
+		var/selected_track = pick(music)
+		login_music = "[global.config.directory]/title_music/sounds/[selected_track]"
+		login_music_name = selected_track
+		// [/CELADON-EDIT]
 
 	if(!GLOB.syndicate_code_phrase)
 		GLOB.syndicate_code_phrase	= generate_code_phrase(return_list=TRUE)

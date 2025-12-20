@@ -63,3 +63,16 @@
 	exit_delay = 30
 	cargo_capacity = 25 //large cargo capacity
 	silicon_icon_state = null
+
+//Solar Federation (Solfed) ripley
+/obj/mecha/working/ripley/solfed
+	desc = "An APLU utility exosuit, refitted with a lightweight pressurized cockpit and more powerful servos usually for SolFed-issued operations. While it preserves the Mk. I's speed, the overdriven motors tend to strain its power supply."
+	name = "\improper SolFed APLU Mk-IV \"Conservationist\""
+	icon = 'mod_celadon/_storage_icons/icons/other/mecha/mecha.dmi'
+	icon_state = "sfripley"
+	base_icon_state = "sfripley"
+	base_step_energy_drain = 20 //overdriven servos are less efficient
+	wreckage = /obj/structure/mecha_wreckage/ripley/solfed
+	enclosed = TRUE
+	enter_delay = 20 //slower than a mk. I, faster than the armored Ripleys
+	silicon_icon_state = null

@@ -1,7 +1,5 @@
 /obj/projectile/plasma
-	//wall_damage_flags = PROJECTILE_BONUS_DAMAGE_MINERALS	// Это конечно круто, но не то
-	//wall_damage_override = MINERAL_WALL_INTEGRITY
-	var/mine_range = 1 //mines this many additional tiles of rock
+	var/mine_range = 3 //mines this many additional tiles of rock
 
 /obj/projectile/plasma/on_hit(atom/target)
 	. = ..()
@@ -15,4 +13,4 @@
 			return BULLET_ACT_FORCE_PIERCE
 
 /obj/projectile/plasma/adv
-	mine_range = 2
+	mine_range = 5

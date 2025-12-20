@@ -7,10 +7,53 @@
 
 	return TRUE
 
-// /datum/emote/living/carbon/human/riol/can_run_emote(mob/user, status_check = TRUE, intentional = FALSE)
-// 	var/organ = user.get_organ_slot(ORGAN_SLOT_TONGUE)
-// 	if(istype(organ, /obj/item/organ/internal/tongue/riol))
-// 		return TRUE && ..()
+/datum/emote/living/carbon/human/riol/purr
+	key = "fox_purr"
+	key_third_person = "fox_purr"
+	message = "урчит."
+	message_param = "урчит на %t."
+	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+	vary = TRUE
+	cooldown = 2 SECONDS
+
+/datum/emote/living/carbon/human/riol/purr/get_sound(mob/living/user)
+	return 'mod_celadon/_storage_sounds/sound/voice/riol/riol_purr.ogg'
+
+/datum/emote/living/carbon/human/riol/yip
+	key = "yip"
+	key_third_person = "yips"
+	message = "тявкает!"
+	message_param = "тявкает на %t."
+	emote_type = EMOTE_AUDIBLE
+	vary = TRUE
+
+/datum/emote/living/carbon/human/riol/yip/get_sound(mob/living/user)
+	return 'mod_celadon/_storage_sounds/sound/voice/riol/riol_squeak.ogg'
+
+/datum/emote/living/carbon/human/riol/fwhine
+	key = "fwhine"
+	key_third_person = "whines"
+	message = "скулит."
+	message_param = "скулит на %t."
+	emote_type = EMOTE_AUDIBLE
+	vary = TRUE
+	mob_type_allowed_typecache = list(/mob/living/carbon, /mob/living/silicon/pai)
+	cooldown = 5 SECONDS
+
+/datum/emote/living/carbon/human/riol/fwhine/get_sound(mob/living/user)
+	return pick('mod_celadon/_storage_sounds/sound/voice/riol/riol1.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol2.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol3.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol4.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol5.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol6.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol7.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol8.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol9.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol10.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol11.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol12.ogg',
+				'mod_celadon/_storage_sounds/sound/voice/riol/riol13.ogg')
 
 /datum/emote/living/carbon/human/riol/howl
 	key = "howl"
@@ -38,39 +81,3 @@
 		'mod_celadon/_storage_sounds/sound/riol/growl2.ogg',
 		'mod_celadon/_storage_sounds/sound/riol/growl3.ogg',
 	)
-
-/datum/emote/living/carbon/human/riol/purr
-	key = "fox_purr"
-	key_third_person = "fox_purr"
-	message = "урчит."
-	message_param = "урчит на %t."
-	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
-	vary = TRUE
-	cooldown = 2 SECONDS
-
-/datum/emote/living/carbon/human/riol/purr/get_sound(mob/living/user)
-	return 'mod_celadon/_storage_sounds/sound/fox_purr.ogg'
-
-/datum/emote/living/carbon/human/riol/bark
-	key = "bark"
-	key_third_person = "bark"
-	message = "гавкает."
-	message_param = "гавкает на %t."
-	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
-	vary = TRUE
-	cooldown = 2 SECONDS
-
-/datum/emote/living/carbon/human/riol/bark/get_sound(mob/living/user)
-	return 'mod_celadon/_storage_sounds/sound/fox_bark.ogg'
-
-/datum/emote/living/carbon/human/riol/wbark
-	key = "wbark"
-	key_third_person = "wbark"
-	message = "дважды гавкает."
-	message_param = "дважды гавкает на %t."
-	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
-	vary = TRUE
-	cooldown = 2 SECONDS
-
-/datum/emote/living/carbon/human/riol/wbark/get_sound(mob/living/user)
-	return 'mod_celadon/_storage_sounds/sound/fox_wbark.ogg'
