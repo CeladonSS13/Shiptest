@@ -107,6 +107,7 @@
 		/obj/item/clothing/under/rank/civilian/lawyer/cel_black/skirt = 5,
 		/obj/item/clothing/under/rank/civilian/lawyer/cel_purpl = 5,
 		/obj/item/clothing/under/rank/civilian/lawyer/cel_purpl/skirt = 5,
+		/obj/item/clothing/suit/ny_sweater = 20,
 		)
 	premium = list(
 		/obj/item/clothing/gloves/maid/white = 5,
@@ -141,6 +142,7 @@
 		/obj/item/clothing/suit/scraparmour = 2,
 		/obj/item/clothing/under/costume/maid_dragon = 1,
 		/obj/item/clothing/suit/renuar = 3,
+		/obj/item/clothing/suit/garland = 5,
 		)
 	refill_canister = /obj/item/vending_refill/clothing
 	light_mask = "sakura-light-mask"
