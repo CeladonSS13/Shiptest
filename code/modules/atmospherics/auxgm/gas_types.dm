@@ -40,7 +40,7 @@
 
 	flags = GAS_FLAG_DANGEROUS
 
-	// fire_temperature = FIRE_MINIMUM_TEMPERATURE_TO_EXIST
+	// fire_temperature = FIRE_MINIMUM_TEMPERATURE_TO_EXIST // [CELADON-REMOVE] - FIXES_FIRE_IN_THE_WORLD - Скоро (через месяц) пофиксят это, а пока так
 	fire_products = list(GAS_CO2 = 1)
 	fire_burn_rate = 2
 
