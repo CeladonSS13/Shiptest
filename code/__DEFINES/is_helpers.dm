@@ -232,3 +232,6 @@ GLOBAL_LIST_INIT(book_types, typecacheof(list(
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 #define isclown(A) (istype(A, /mob/living/simple_animal/hostile/retaliate/clown))
 // [/CELADON-ADD]
+
+/// Within given range and on the same z level (get dist is WEIRD bro)
+#define IN_GIVEN_RANGE(source, other, given_range) (get_dist(source, other) <= given_range && (get_step(source, 0)?:z) == (get_step(other, 0)?:z))

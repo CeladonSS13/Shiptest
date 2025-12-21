@@ -145,7 +145,7 @@
 	},
 /obj/machinery/power/terminal,
 /obj/structure/rack,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /obj/item/tank/internals/oxygen,
 /obj/structure/cable,
 /obj/item/clothing/suit/space/hardsuit/security/inteq,
@@ -602,7 +602,7 @@
 /obj/item/storage/belt/security/webbing/inteq/alt,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/suit/armor/vest/inteq,
-/obj/item/clothing/head/helmet/swat,
+/obj/item/clothing/head/helmet/bulletproof/x11/inteq,
 /obj/item/clothing/head/beret/sec/inteq,
 /obj/item/flashlight/seclite,
 /obj/structure/closet/secure_closet/wall{
@@ -615,7 +615,7 @@
 /area/ship/cargo)
 "xA" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /obj/effect/turf_decal/siding/brown,
 /obj/item/clothing/suit/space/hardsuit/security/inteq,
 /obj/item/tank/internals/oxygen,
@@ -664,7 +664,7 @@
 /obj/item/storage/belt/security/webbing/inteq/alt,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/suit/armor/vest/inteq,
-/obj/item/clothing/head/helmet/swat,
+/obj/item/clothing/head/helmet/bulletproof/x11/inteq,
 /obj/item/clothing/head/beret/sec/inteq,
 /obj/item/flashlight/seclite,
 /obj/structure/closet/secure_closet/wall{
@@ -706,7 +706,7 @@
 "zc" = (
 /obj/machinery/suit_storage_unit/inherit,
 /obj/machinery/light/directional/south,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /obj/effect/turf_decal/siding/brown,
 /obj/item/tank/internals/oxygen,
 /obj/item/clothing/suit/space/hardsuit/security/inteq,
@@ -719,7 +719,7 @@
 /obj/effect/turf_decal/siding/brown,
 /obj/item/flashlight/seclite,
 /obj/item/clothing/head/beret/sec/inteq,
-/obj/item/clothing/head/helmet/swat,
+/obj/item/clothing/head/helmet/bulletproof/x11/inteq,
 /obj/item/clothing/suit/armor/vest/inteq,
 /obj/item/clothing/shoes/combat,
 /obj/item/storage/belt/security/webbing/inteq/alt,
@@ -818,7 +818,7 @@
 /area/ship/cargo)
 "Gc" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /obj/effect/turf_decal/siding/brown,
 /obj/structure/sign/poster/contraband/inteq{
 	pixel_y = -32
@@ -1111,7 +1111,7 @@
 /obj/item/clothing/under/syndicate/inteq/artificer,
 /obj/item/clothing/suit/space/hardsuit/security/inteq,
 /obj/item/tank/internals/oxygen,
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq,
+/obj/item/gun/ballistic/automatic/pistol/challenger/inteq,
 /obj/item/ammo_box/magazine/co9mm{
 	pixel_x = -5
 	},
@@ -1123,7 +1123,7 @@
 	},
 /obj/item/flashlight/seclite,
 /obj/item/clothing/head/beret/sec/inteq,
-/obj/item/clothing/head/helmet/swat,
+/obj/item/clothing/head/helmet/bulletproof/x11/inteq,
 /obj/item/clothing/suit/armor/vest/inteq,
 /obj/item/storage/belt/security/webbing/inteq/alt,
 /obj/item/clothing/shoes/combat,
@@ -1193,7 +1193,7 @@
 "Qn" = (
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/suit/space/hardsuit/syndi/inteq,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 4
 	},
@@ -1213,7 +1213,7 @@
 /area/ship/bridge)
 "RH" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /obj/effect/turf_decal/siding/brown{
 	dir = 1
 	},
@@ -1248,6 +1248,7 @@
 	req_access_txt = "20"
 	},
 /obj/item/melee/knife/combat,
+/obj/item/gun/ballistic/revolver/horizonx,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
 /obj/item/melee/baton/loaded,
@@ -1319,7 +1320,7 @@
 /area/ship/crew/cryo)
 "Ua" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /obj/effect/turf_decal/siding/brown{
 	dir = 1
 	},
@@ -1384,7 +1385,7 @@
 	icon_state = "1-2"
 	},
 /obj/item/storage/case/surgery,
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq,
+/obj/item/gun/ballistic/automatic/pistol/challenger/inteq,
 /obj/item/ammo_box/magazine/co9mm{
 	pixel_x = -5
 	},
@@ -1403,7 +1404,7 @@
 /obj/item/storage/belt/security/webbing/inteq/alt,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/suit/armor/vest/inteq,
-/obj/item/clothing/head/helmet/swat,
+/obj/item/clothing/head/helmet/bulletproof/x11/inteq,
 /obj/item/clothing/head/beret/sec/inteq,
 /obj/item/flashlight/seclite,
 /obj/structure/closet/secure_closet/wall{
@@ -1423,7 +1424,7 @@
 /obj/item/storage/belt/security/webbing/inteq/alt,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/suit/armor/vest/inteq,
-/obj/item/clothing/head/helmet/swat,
+/obj/item/clothing/head/helmet/bulletproof/x11/inteq,
 /obj/item/clothing/head/beret/sec/inteq,
 /obj/item/flashlight/seclite,
 /obj/structure/closet/secure_closet/wall{
@@ -1501,7 +1502,7 @@
 /area/ship/cargo)
 "VO" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /obj/effect/turf_decal/siding/brown{
 	dir = 1
 	},

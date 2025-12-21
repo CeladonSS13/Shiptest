@@ -175,6 +175,12 @@ CELADON_QOL_LOADOUT
 - REMOVE: `code/modules/client/loadout/loadout_accessories.dm`
 - REMOVE: `code/modules/client/loadout/loadout_hat.dm`
 
+QOL_ORBIT_MENU
+- `code/modules/mob/dead/observer/orbit.dm` 				: Добавлена категория Maps в Orbit меню для быстрого перехода к ключевым локациям (Outpost, Overmap)
+- `tgui/packages/tgui/interfaces/Orbit/types.ts` 			: Добавлен тип maps в OrbitData
+- `tgui/packages/tgui/interfaces/Orbit/index.tsx` 			: Добавлен maps в список для поиска
+- `tgui/packages/tgui/interfaces/Orbit/OrbitContent.tsx` 	: Добавлена секция Maps в UI
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
