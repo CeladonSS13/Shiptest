@@ -330,8 +330,8 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	crate_name = "rifle crate"
 
 /datum/supply_pack/faction/independent/gun/m15
-	name = "Rifle - Super Sporter (5.56x42mm)"
-	desc = "Contains a recently manufactured Model 15 \"Super Sporter\", Serene Outdoors' premier hunting rifle. Chambered in 5.56x42mm"
+	name = "Rifle - Super Sporter (7.62x40mm)"
+	desc = "Contains a recently manufactured Model 15 \"Super Sporter\", Serene Outdoors' premier hunting rifle. Chambered in 7.62x40mm"
 	contains = list(/obj/item/storage/guncase/m15)
 	cost = 2500
 	crate_name = "rifle crate"
