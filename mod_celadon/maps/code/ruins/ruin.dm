@@ -34,13 +34,6 @@
 	cost = 3
 	ruin_tags = list(RUIN_TAG_HARD_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_HAZARDOUS)
 
-/datum/map_template/ruin/beachplanet/colony
-	id = "beach_colony"
-	name = "Abandoned Beachside Colony"
-	description = "A abandoned colony. It seems that this colony was abandoned, for a reason or another"
-	suffix = "beach_colony.dmm"
-	cost = 1
-
 /datum/map_template/ruin/beachplanet/ancient
 	id = "beach_ancient"
 	name = "Ancient Danger"
@@ -875,13 +868,6 @@
 	description = "The fauna of desert planets can be deadly even to equipped Syndicate Operatives."
 	suffix = "whitesands_surface_assaultpodcrash.dmm"
 	cost = 2
-
-/datum/map_template/ruin/whitesands/conveniencestore
-	id = "ws-conveniencestore"
-	name = "Conveniently Abandoned Convenience Store"
-	description = "Pretty convenient that they have a convenience store out here, huh?"
-	suffix = "whitesands_surface_conveniencestore.dmm"
-	cost = 1
 
 /datum/map_template/ruin/whitesands/onlyaspoonful
 	id = "ws-onlyaspoonful"
