@@ -21,7 +21,7 @@
 
 /datum/supply_pack/faction/solfed/magazine/claris_ammo
 	name = "Claris - Speedloader (FE pellet)"
-	desc = "Contains a ferromagnetic pellet speedloader for the Claris rifle, with a capacity of 32 rounds."
+	desc = "Contains a ferromagnetic pellet speedloader for the Claris rifle, with a capacity of 22 rounds."
 	contains = list(/obj/item/ammo_box/amagpellet_claris/empty)
 	cost = 400
 
