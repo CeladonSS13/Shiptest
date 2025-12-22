@@ -245,7 +245,6 @@
 
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/cheap=1)
 
-
 // MARK: Пилот
 
 /datum/outfit/job/cel/inteq/pilot

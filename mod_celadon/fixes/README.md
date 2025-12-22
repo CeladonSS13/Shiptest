@@ -361,6 +361,7 @@ FIXES_MASK_ON_KEPORI
 FIXES_FIRES_OVERLAYES
 - `code/datums/elements/perma_fire.dm`					: Добавлен флаг override = TRUE
 - `code/datums/status_effects/debuffs/fire_stacks.dm`	: Добавлен флаг override = TRUE
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
