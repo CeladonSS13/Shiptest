@@ -1247,6 +1247,9 @@
 	dir = 4
 	},
 /obj/machinery/firealarm/directional/east,
+/obj/structure/railing/thin/corner{
+	dir = 4
+	},
 /turf/open/floor/marble/white_black_border{
 	dir = 9
 	},
@@ -2623,7 +2626,7 @@
 /area/ship/general/cargo)
 "sa" = (
 /obj/structure/displaycase{
-	start_showpiece_type = /obj/item/storage/belt/sabre/solgov;
+	start_showpiece_type = "/obj/item/melee/duelenergy/halberd/blue";
 	req_access = list(20)
 	},
 /obj/machinery/newscaster/directional/east,
@@ -3253,7 +3256,8 @@
 /obj/machinery/telecomms/receiver/preset_left{
 	network = "SolNet";
 	id = "Receiver";
-	density = 0
+	density = 0;
+	pixel_y = 7
 	},
 /obj/effect/turf_decal/techfloor{
 	dir = 6
@@ -3261,11 +3265,9 @@
 /obj/effect/turf_decal/trimline/opaque/solgovblue/corner{
 	dir = 1
 	},
-/obj/structure/window/reinforced/survival_pod{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
+/obj/structure/railing/thin{
+	dir = 1;
+	pixel_y = -25
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/engineering/communications)
@@ -3313,11 +3315,8 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 10
 	},
-/obj/effect/turf_decal/trimline/opaque/solgovblue/warning{
-	dir = 1
-	},
-/obj/effect/turf_decal/spline/fancy/opaque/black,
-/turf/open/floor/plasteel/telecomms_floor,
+/obj/structure/catwalk/over,
+/turf/open/floor/plating,
 /area/ship/engineering/communications)
 "vA" = (
 /obj/structure/cable{
@@ -3988,6 +3987,9 @@
 	dir = 1
 	},
 /obj/machinery/firealarm/directional/south,
+/obj/structure/railing/thin/corner{
+	pixel_y = -2
+	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/engineering/communications)
 "AZ" = (
@@ -4672,17 +4674,13 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hangar)
 "Ed" = (
-/obj/machinery/recharge_station,
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 4
 	},
-/obj/structure/window/reinforced/survival_pod{
-	dir = 1
-	},
-/obj/machinery/door/window/survival_pod{
+/obj/effect/turf_decal/trimline/opaque/solgovblue/warning{
 	dir = 4
 	},
 /turf/open/floor/plasteel/telecomms_floor,
@@ -4736,6 +4734,8 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
+/obj/effect/turf_decal/trimline/opaque/solgovblue/warning,
+/obj/effect/turf_decal/spline/fancy/opaque/black,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/engineering/communications)
 "EO" = (
@@ -5138,11 +5138,9 @@
 /area/ship/hangar)
 "HQ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/effect/turf_decal/trimline/opaque/solgovblue/warning{
-	dir = 1
-	},
-/obj/effect/turf_decal/spline/fancy/opaque/black,
-/turf/open/floor/plasteel/telecomms_floor,
+/obj/structure/catwalk/over,
+/obj/structure/catwalk/over,
+/turf/open/floor/plating,
 /area/ship/engineering/communications)
 "HW" = (
 /obj/effect/turf_decal/industrial/stand_clear{
@@ -5711,7 +5709,8 @@
 	},
 /obj/machinery/telecomms/broadcaster/preset_left{
 	network = "SolNet";
-	density = 0
+	density = 0;
+	pixel_y = 4
 	},
 /obj/effect/turf_decal/techfloor{
 	dir = 4
@@ -5725,9 +5724,6 @@
 /obj/machinery/power/apc/auto_name/directional/north{
 	pixel_y = 27;
 	pixel_x = 3
-	},
-/obj/structure/window/reinforced/survival_pod{
-	dir = 4
 	},
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -5757,6 +5753,7 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 1
 	},
+/obj/machinery/recharge_station,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/engineering/communications)
 "LQ" = (
@@ -5961,6 +5958,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 9
 	},
+/obj/effect/turf_decal/trimline/opaque/solgovblue/corner,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/engineering/communications)
 "NQ" = (
@@ -6161,14 +6159,16 @@
 	pixel_y = 0
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
-/obj/machinery/telecomms/message_server{
-	autolinkers = list("solgovPDA");
-	network = "SolNet";
-	calibrating = 0
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
+/obj/machinery/telecomms/hub{
+	autolinkers = list("solgov","broadcasterA","receiverA","solgovPDA","SolHub");
+	network = "SolNet";
+	id = "Solgov Hub"
+	},
+/obj/effect/turf_decal/trimline/opaque/solgovblue/warning,
+/obj/effect/turf_decal/spline/fancy/opaque/black,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/engineering/communications)
 "Pr" = (
@@ -6304,15 +6304,25 @@
 /turf/open/floor/marble/white_black_border,
 /area/ship/security/armory)
 "Qj" = (
-/obj/machinery/telecomms/hub{
-	autolinkers = list("solgov","broadcasterA","receiverA","solgovPDA","SolHub");
-	network = "SolNet";
-	id = "Solgov Hub"
+/obj/structure/platform{
+	dir = 1
 	},
-/obj/structure/window/reinforced/survival_pod{
-	dir = 4
+/obj/item/trash/cheesie{
+	pixel_y = -2;
+	pixel_x = -6;
+	color = "#666666"
 	},
-/turf/open/floor/plasteel/tech/grid,
+/obj/item/trash/energybar{
+	color = "#666666";
+	pixel_y = 3;
+	pixel_x = 3
+	},
+/obj/effect/decal/fakelattice{
+	color = "#808080"
+	},
+/turf/open/floor/engine/hull/reinforced/interior{
+	color = "#666666"
+	},
 /area/ship/engineering/communications)
 "Qk" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
@@ -6360,9 +6370,11 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
 /obj/effect/turf_decal/trimline/opaque/solgovblue/warning{
-	dir = 1
+	dir = 4
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/black,
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 4
+	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/engineering/communications)
 "QV" = (
@@ -6794,24 +6806,27 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "UK" = (
-/obj/item/melee/duelenergy/halberd/blue{
-	pixel_x = 7;
-	pixel_y = 3
-	},
-/obj/item/melee/duelenergy/halberd/blue{
-	pixel_y = 5;
-	pixel_x = 1
-	},
 /obj/machinery/light/directional/north,
-/obj/effect/turf_decal/techfloor{
+/obj/effect/decal/fakelattice{
+	color = "#808080"
+	},
+/obj/structure/platform{
 	dir = 8
 	},
-/obj/structure/table/reinforced/plastitaniumglass,
-/obj/machinery/door/window/survival_pod{
-	dir = 8
+/mob/living/basic/mouse/rat{
+	color = "#666666";
+	name = "Andrey"
 	},
-/turf/open/floor/marble/white_black_border{
-	dir = 1
+/obj/item/food/cheese/wedge{
+	color = "#666666";
+	pixel_y = 9;
+	pixel_x = 6
+	},
+/obj/effect/decal/cleanable/vomit{
+	color = "#666666"
+	},
+/turf/open/floor/engine/hull/reinforced/interior{
+	color = "#666666"
 	},
 /area/ship/security/armory)
 "UU" = (
@@ -6926,6 +6941,9 @@
 	req_ship_access = 1
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovblue/line{
+	dir = 4
+	},
+/obj/structure/railing/thin{
 	dir = 4
 	},
 /turf/open/floor/marble/white_black_border{
