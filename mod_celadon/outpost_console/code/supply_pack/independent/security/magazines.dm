@@ -26,7 +26,7 @@
 	cost = 250
 
 /**
-	MARK:	Пистолетные магазины
+	MARK:	Пистолеты
  */
 
 /datum/supply_pack/faction/independent/magazine/m45_mag
@@ -94,8 +94,8 @@
 
 
 /datum/supply_pack/faction/independent/magazine/m15_mag
-	name = "Super Sporter - Magazine (5.56x42mm)"
-	desc = "Contains a 5.56x42mm magazine for the Super Sporter Rifle, with a capacity of 20 rounds."
+	name = "Super Sporter - Magazine (7.62x40mm)"
+	desc = "Contains a 7.62x40mm magazine for the Super Sporter Rifle, with a capacity of 20 rounds."
 	contains = list(/obj/item/ammo_box/magazine/m15/empty)
 	cost = 300
 

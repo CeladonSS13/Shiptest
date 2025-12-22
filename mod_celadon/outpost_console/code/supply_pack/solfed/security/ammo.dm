@@ -161,13 +161,13 @@ MARK: Ferro Lances
 */
 
 /datum/supply_pack/faction/solfed/ammo/ferrolanceboxcrate
-	name = "Ferromagnetic Lance (FE lacnce) Box"
+	name = "Ferromagnetic Lance (FE lance) Box"
 	desc = "Contains a 48-round box for high-powered gauss guns such as the GAR assault rifle."
 	contains = list(/obj/item/storage/box/ammo/ferrolance)
 	cost = 300 //5 ammo efficiency at 30 damage
 
 /datum/supply_pack/faction/solfed/ammo/ferrolanceboxcrate_hc
-	name = "High Conductivity Lance (FE lacnce) Box"
+	name = "High Conductivity Lance (FE lance) Box"
 	desc = "Contains a 48-round box for high-powered gauss guns such as the GAR assault rifle."
 	contains = list(/obj/item/storage/box/ammo/ferrolance/hc)
 	cost = 350

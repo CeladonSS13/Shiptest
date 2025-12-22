@@ -39,7 +39,7 @@
 	crate_name = "dmr crate"
 
 /datum/supply_pack/faction/solfed/gun/gar
-	name = "Auto-Rifle - Solarian 'GAR' (FE lance)"
+	name = "Assault-Rifle - Solarian 'GAR' (FE lance)"
 	desc = "A modern solarian military rifle, chambered in ferromagnetic lances. Not for export."
 	cost = 5000
 	contains = list(/obj/item/storage/guncase/gar)

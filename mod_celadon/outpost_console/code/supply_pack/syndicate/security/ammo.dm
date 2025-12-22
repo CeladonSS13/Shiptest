@@ -275,13 +275,13 @@ MARK: Ferro Pellets
 */
 
 /datum/supply_pack/faction/syndicate/ammo/ferropelletboxcrate
-	name = "Ferromagnetic Pellet Box"
+	name = "Ferromagnetic Pellet (FE pellet) Box"
 	desc = "Contains a 48-round ferromagnetic pellet ammo box for gauss guns such as the Claris."
 	contains = list(/obj/item/storage/box/ammo/ferropellet)
 	cost = 300 //5.7 ammo efficiency at 25 damage
 
 /datum/supply_pack/faction/syndicate/ammo/hcpellets
-	name = "High Conductivity Pellet Box"
+	name = "High Conductivity Pellet (FE pellet) Box"
 	desc = "Contains a 48-round high conductivity pellet ammo box for gauss guns such as the Claris."
 	contains = list(/obj/item/storage/box/ammo/ferropellet/hc)
 	cost = 400

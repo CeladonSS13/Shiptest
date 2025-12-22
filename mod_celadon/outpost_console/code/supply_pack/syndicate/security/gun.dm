@@ -75,7 +75,7 @@
 	crate_name = "SMG crate"
 
 /datum/supply_pack/faction/syndicate/gun/hydra
-	name = "Auto-rifle - SMR-80 'Hydra' (5.56x42mm)"
+	name = "Assault-Rifle - SMR-80 'Hydra' (5.56x42mm)"
 	desc = "Contains a high-powered automatic rifle produced by Scarborough Arms and chambered in 5.56x42mm. This one is a standard variant."
 	cost = 5000
 	contains = list(/obj/item/storage/guncase/hydra)

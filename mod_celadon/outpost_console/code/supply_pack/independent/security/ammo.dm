@@ -245,30 +245,30 @@ MARK: 5.7x39
 	cost = 475
 
 /*
-MARK: 5.56 caseless
+MARK: 5.56 HITP caseless
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoc556mmHITP_ammo_box
-	name = "5.56 Caseless Ammo Box"
-	desc = "Contains a 48-round 5.56mm caseless box for SolGov sidearms like the Pistole C."
+	name = "5.56mm HITP Caseless Ammo Box"
+	desc = "Contains a 48-round 5.56mm HITP caseless box for SolGov sidearms like the Pistole C."
 	contains = list(/obj/item/storage/box/ammo/c556mm)
 	cost = 250
 
 // /datum/supply_pack/faction/independent/ammo/ammoc556mmHITPap_ammo_box
-// 	name = "5.56 caseless AP Ammo Box"
-// 	desc = "Contains a 48-round 5.56mm caseless boxloaded with armor piercing ammo."
+// 	name = "5.56mm HITP caseless AP Ammo Box"
+// 	desc = "Contains a 48-round 5.56mm HITP caseless boxloaded with armor piercing ammo."
 // 	contains = list(/obj/item/storage/box/ammo/c556mm_ap)
 // 	cost = 205
 
 /datum/supply_pack/faction/independent/ammo/ammoc556mmhitphp_ammo_box
-	name = "5.56 Caseless HP Ammo Box"
-	desc = "Contains a 48-round 5.56mm caseless box loaded with hollow point ammo, great against unarmored targets."
+	name = "5.56mm HITP Caseless HP Ammo Box"
+	desc = "Contains a 48-round 5.56mm HITP caseless box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c556mm_hp)
 	cost = 300
 
 // /datum/supply_pack/faction/independent/ammo/ammoc556HITPrubber_ammo_box
-// 	name = "5.56 Caseless Rubber Ammo Box"
-// 	desc = "Contains a 48-round 5.56 caseless box loaded with less-than-lethal rubber rounds."
+// 	name = "5.56mm HITP Caseless Rubber Ammo Box"
+// 	desc = "Contains a 48-round 5.56 HITP caseless box loaded with less-than-lethal rubber rounds."
 // 	contains = list(/obj/item/storage/box/ammo/c556mm_rubber)
 // 	cost = 165
 
@@ -332,23 +332,25 @@ MARK: .410
 MARK: 5.56x42
 */
 
+/* Inclusive Syndicate
 /datum/supply_pack/faction/independent/ammo/ammoa556_ammo_box
 	name = "5.56x42mm Ammo Box"
 	desc = "Contains one 60-round 5.56x42mm box for most newer rifles."
 	contains = list(/obj/item/storage/box/ammo/a556_42)
-	cost = 500
+	cost = 700
 
 // /datum/supply_pack/faction/independent/ammo/ammoa556_ap
 // 	name = "5.56x42mm AP Ammo Box"
 // 	desc = "Contains one 60-round 5.56x42mm CLIP Armour Piercing box for most newer rifles."
 // 	contains = list(/obj/item/storage/box/ammo/a556_42/ap)
-// 	cost = 375
+// 	cost = 1000
 
 /datum/supply_pack/faction/independent/ammo/ammoa556_hp
 	name = "5.56x42mm HP Ammo Box"
 	desc = "Contains one 60-round 5.56x42mm Hollow Point box for most newer rifles."
 	contains = list(/obj/item/storage/box/ammo/a556_42/hp)
-	cost = 575
+	cost = 1000
+*/
 
 /*
 MARK: 5.56x45
@@ -508,7 +510,7 @@ MARK: ferro pellets
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoferropelletboxcrate
-	name = "Ferromagnetic Pellet Box"
+	name = "Ferromagnetic Pellet (FE pellet) Box"
 	desc = "Contains a 48-round ferromagnetic pellet ammo box for gauss guns such as the Claris."
 	contains = list(/obj/item/storage/box/ammo/ferropellet)
 	cost = 350
