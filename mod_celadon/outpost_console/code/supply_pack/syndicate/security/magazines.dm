@@ -30,11 +30,13 @@
 	contains = list(/obj/item/ammo_box/magazine/m10mm_ringneck/empty)
 	cost = 150
 
+/* 9x18mm - Do not like Syndicate
 /datum/supply_pack/faction/syndicate/magazine/m9mm_rattlesnake
 	name = "Rattlesnake -  Magazine (9x18mm)"
 	desc = "Contains a 9x18mm magazine for the Rattlesnake machine pistol, with a capacity of 18 rounds."
 	contains = list(/obj/item/ammo_box/magazine/m9mm_rattlesnake/empty)
 	cost = 300
+*/
 
 /datum/supply_pack/faction/syndicate/magazine/a357_mag
 	name = "Revolver - Speedloader (.357)"

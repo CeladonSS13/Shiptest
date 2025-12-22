@@ -46,12 +46,6 @@
 	cost = 1750
 	contains = list(/obj/item/storage/guncase/pistol/cm357)
 
-/datum/supply_pack/faction/solfed/gun/ballistic/cm23
-	name = "Pistol - CM-23 (10x22mm)"
-	desc = "Contains a 10x22mm CM-23 Pistol, standard issue of the Confederated Minutemen."
-	cost = 1000
-	contains = list(/obj/item/storage/guncase/pistol/cm23)
-
 /datum/supply_pack/faction/solfed/gun/ballistic/cm70
 	name = "Machinepistol - CM-70 (9x18mm)"
 	desc = "Contains a 9x18mm machinepistol produced proudly within Lanchester City. Confederated Minuteman issue only."
@@ -68,17 +62,11 @@
 /datum/supply_pack/faction/solfed/gun/ballistic/cm5
 	name = "SMG - CM-5 (9x18mm)"
 	desc = "Contains a CM-5 automatic SMG, produced proudly within Lanchester City. Confederated Minutemen issue only."
-	cost = 2500
+	cost = 3500
 	contains = list(/obj/item/storage/guncase/cm5)
 	crate_name = "SMG crate"
 
 ///obj/item/gun/ballistic/automatic/smg/cm5/compact
-
-/datum/supply_pack/faction/solfed/gun/ballistic/vector
-	name = "SMG - Vector Carbine (9x18mm)"
-	desc = "Contains a classic automatic carbine from earth, solar system. Chambered in 9x18mm."
-	contains = list(/obj/item/storage/guncase/vector)
-	cost = 3500
 
 /datum/supply_pack/faction/solfed/gun/ballistic/cm82
 	name = "Rifle - CM-82 (5.56х42mm)" // "Rifle - Model 82 Carbine (5.56х42mm)"

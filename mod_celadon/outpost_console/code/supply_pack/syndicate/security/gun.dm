@@ -27,12 +27,14 @@
 	cost = 1250
 	contains = list(/obj/item/storage/guncase/pistol/asp)
 
+/* 9x18mm - Do not like Syndicate
 /datum/supply_pack/faction/syndicate/gun/rattlesnake
 	name = "Machinepistol - Rattlesnake (9x18mm)"
 	desc = "Contains an automatic machinepistol produced by Scarborough Arms, chambered in 9x18mm."
 	cost = 2500
 	contains = list(/obj/item/storage/guncase/rattlesnake)
 	crate_name = "Machinepistol crate"
+*/
 
 /datum/supply_pack/faction/syndicate/gun/bulldog
 	name = "Auto-Shotgun Bulldog (12g)"
