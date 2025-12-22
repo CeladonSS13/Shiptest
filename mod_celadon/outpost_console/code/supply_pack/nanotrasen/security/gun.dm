@@ -2,7 +2,7 @@
 	category = "Security - E-Guns"
 
 /*
-MARK: NT-SL
+MARK: E-Guns - NT-SL
 */
 
 /datum/supply_pack/faction/nanotrasen/gun/mini_energy
@@ -95,7 +95,7 @@ MARK: NT-SL
 	cost = 11000
 
 /*
-MARK: VI
+MARK: Ballistic - VI
 */
 /datum/supply_pack/faction/nanotrasen/gun/vi
 	category = "Security - VI Guns"
@@ -164,7 +164,7 @@ MARK: VI
 // MARK: Plasma & Sharplite
 
 /datum/supply_pack/faction/nanotrasen/gun/exp
-	category = "Security - Plama Guns"
+	category = "Security - Plasma Guns"
 
 /datum/supply_pack/faction/nanotrasen/gun/exp/l305
 	name = "P-SMG - L305 'Rush'"
@@ -172,6 +172,34 @@ MARK: VI
 	cost = 6000
 	contains = list(/obj/item/storage/guncase/energy/etar)
 	crate_name = "SMG crate"
+
+/datum/supply_pack/faction/nanotrasen/gun/exp/l204
+	name = "P-Rifle - L204 'Resistor'"
+	desc = "Contains a lethal, high-energy laser gun."
+	cost = 5000
+	contains = list(/obj/item/storage/guncase/energy/laser)
+	crate_name = "laser crate"
+
+/datum/supply_pack/faction/nanotrasen/gun/exp/hades
+	name = "P-Assault-Rifle - AL655 'Hades II'"
+	desc = "Contains a high-energy, automatic laser rifle. For NT employee use only."
+	cost = 8000
+	contains = list(/obj/item/storage/guncase/hades)
+	crate_name = "laser crate"
+
+/datum/supply_pack/faction/nanotrasen/gun/exp/l201
+	name = "P-Marksman - L201 'Surge'"
+	desc = "Contains a high-powered marksman laser. For NT employee use only."
+	cost = 12000
+	contains = list(/obj/item/storage/guncase/energy/l201)
+	crate_name = "dmr crate"
+
+/datum/supply_pack/faction/nanotrasen/gun/exp/al607
+	name = "P-Marksman - AL607 'Sarissa'"
+	desc = "Contains a AL607 Laser Sniper. For NT employee use only."
+	cost = 15000
+	contains = list(/obj/item/storage/guncase/energy/al607)
+	crate_name = "sniper rifle crate"
 
 /*
 /datum/supply_pack/faction/nanotrasen/gun/exp/mini_energy
@@ -224,31 +252,7 @@ MARK: VI
 	cost = 25
 	contains = list(/obj/item/storage/guncase/saber)
 	crate_name = "Machinepistol crate"
-*/
 
-/datum/supply_pack/faction/nanotrasen/gun/exp/l204
-	name = "P-Rifle - L204 'Resistor'"
-	desc = "Contains a lethal, high-energy laser gun."
-	cost = 5000
-	contains = list(/obj/item/storage/guncase/energy/laser)
-	crate_name = "laser crate"
-
-// HADES II - Inteq
-/datum/supply_pack/faction/inteq/gun/exp/barghest
-	name = "P-Assault-Rifle - PP20 'Barghest' APR"
-	desc = "Contains a high-energy, automatic laser rifle. Refitted for IRMG use."
-	cost = 20000
-	contains = list(/obj/item/storage/guncase/barghest)
-	crate_name = "laser crate"
-
-/datum/supply_pack/faction/nanotrasen/gun/exp/hades
-	name = "P-Assault-Rifle - AL655 'Hades II'"
-	desc = "Contains a high-energy, automatic laser rifle. For NT employee use only."
-	cost = 8000
-	contains = list(/obj/item/storage/guncase/hades)
-	crate_name = "laser crate"
-
-/*
 /datum/supply_pack/faction/nanotrasen/gun/exp/energy
 	name = "Variable Energy Carbine - X12 'Volt'"
 	desc = "Contains a versatile energy gun, capable of firing both nonlethal and lethal blasts of light."
@@ -264,17 +268,3 @@ MARK: VI
 	contains = list(/obj/item/storage/guncase/energy/ultima)
 	crate_name = "shotgun crate"
 */
-
-/datum/supply_pack/faction/nanotrasen/gun/exp/l201
-	name = "P-Marksman - L201 'Surge'"
-	desc = "Contains a high-powered marksman laser. For NT employee use only."
-	cost = 12000
-	contains = list(/obj/item/storage/guncase/energy/l201)
-	crate_name = "dmr crate"
-
-/datum/supply_pack/faction/nanotrasen/gun/exp/al607
-	name = "P-Marksman - AL607 'Sarissa'"
-	desc = "Contains a AL607 Laser Sniper. For NT employee use only."
-	cost = 15000
-	contains = list(/obj/item/storage/guncase/energy/al607)
-	crate_name = "sniper rifle crate"

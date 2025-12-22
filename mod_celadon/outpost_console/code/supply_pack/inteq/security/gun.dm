@@ -67,3 +67,11 @@
 	cost = 3500
 	contains = list(/obj/item/storage/guncase/ssg04)
 	crate_name = "dmr crate"
+
+// HADES II - Inteq
+/datum/supply_pack/faction/inteq/gun/exp/barghest
+	name = "P-Assault-Rifle - PP20 'Barghest' APR"
+	desc = "Contains a high-energy, automatic laser rifle. Refitted for IRMG use."
+	cost = 20000
+	contains = list(/obj/item/storage/guncase/barghest)
+	crate_name = "laser crate"

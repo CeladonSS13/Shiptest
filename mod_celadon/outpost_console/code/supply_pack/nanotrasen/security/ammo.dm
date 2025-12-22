@@ -79,3 +79,10 @@ MARK: ferro pellets
 	desc = "Contains a 48-round high conductivity pellet ammo box for gauss guns."
 	contains = list(/obj/item/storage/box/ammo/ferropellet/hc)
 	cost = 250
+
+// Plasma Weapon Cells (Export NT)
+/datum/supply_pack/faction/inteq/magazine/cellinteq
+	name = "P-Cell - Sharplite Proprietary Weapon Cell"
+	desc = "Contains an weapon cell, compatible with most Nanotrasen models."
+	contains = list(/obj/item/stock_parts/cell/gun/sharplite/empty)
+	cost = 3000

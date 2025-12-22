@@ -115,9 +115,3 @@ MARK: Energy weapons
 	desc = "Contains an upgraded weapon cell, compatible with most Nanotrasen models. For NT use only."
 	contains = list(/obj/item/stock_parts/cell/gun/sharplite/plus/empty)
 	cost = 2000
-
-/datum/supply_pack/faction/inteq/magazine/upgradedguncellinteq
-	name = "P-Cell - Sharplite Plus Proprietary Weapon Cell"
-	desc = "Contains an upgraded weapon cell, compatible with most Nanotrasen models."
-	contains = list(/obj/item/stock_parts/cell/gun/sharplite/plus/empty)
-	cost = 3500
