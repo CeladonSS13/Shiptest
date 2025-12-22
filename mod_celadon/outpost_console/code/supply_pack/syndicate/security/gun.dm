@@ -9,23 +9,11 @@
 	cost = 800
 */
 
-/datum/supply_pack/faction/syndicate/gun/viperrevolver
-	name = "Revolver - Viper-23 (.357)"
-	desc = "Contains a civilian variant of the Viper revolver, chambered in .357 magnum."
-	cost = 1500
-	contains = list(/obj/item/storage/guncase/pistol/viper)
-
 /datum/supply_pack/faction/syndicate/gun/a357
 	name = "Revolver - R-23 'Viper' (.357)"
 	desc = "Contains a double-action military variant of the Viper revolver, chambered in .357 magnum."
 	cost = 1750
 	contains = list(/obj/item/storage/guncase/pistol/a357)
-
-/datum/supply_pack/faction/syndicate/gun/ringneck
-	name = "Pistol - Ringneck (10x22mm)"
-	desc = "Contains a civilian variant of the Ringneck pistol, produced by Scarborough Arms and chambered in 10x22mm."
-	cost = 1000
-	contains = list(/obj/item/storage/guncase/pistol/ringneck)
 
 /datum/supply_pack/faction/syndicate/gun/pc76
 	name = "Pistol - PC-76 'Ringneck' (10x22mm)"
@@ -53,13 +41,6 @@
 	cost = 4000
 	crate_name = "shotgun crate"
 
-/datum/supply_pack/faction/syndicate/gun/cobra20
-	name = "SMG - Cobra-20 (.45)"
-	desc = "Contains a civilian variant of the Cobra SMG, manufactured by Scaraborough Arms and chambered in .45"
-	cost = 3000
-	contains = list(/obj/item/storage/guncase/cobra)
-	crate_name = "SMG crate"
-
 /datum/supply_pack/faction/syndicate/gun/c20r
 	name = "SMG - C-20r 'Cobra' (.45)"
 	desc = "Contains a military variant of the Cobra SMG, chambered in .45"
@@ -82,7 +63,7 @@
 	crate_name = "rifle crate"
 
 /datum/supply_pack/faction/syndicate/gun/saw80
-	name = "SAW - SAW-80 (5.56x42mm)"
+	name = "SAW - SAW-80 'Hydra' (5.56x42mm)"
 	desc = "Contains one of the rarely-produced SAW-80 Squad Automatic Weapon platforms, exclusively for licensed buyers. Remember, short controlled bursts!"
 	cost = 7000
 	contains = list(/obj/item/storage/guncase/saw80)
