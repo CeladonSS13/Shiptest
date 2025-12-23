@@ -1,4 +1,12 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/obj/machinery/holopad/emergency/command,
+/turf/open/floor/carpet/royalblue,
+/area/centcom)
+"ab" = (
+/obj/machinery/holopad/emergency/command,
+/turf/open/floor/mineral/plastitanium/red,
+/area/centcom)
 "ac" = (
 /obj/structure/fluff/beach_umbrella/engine,
 /turf/open/floor/carpet/cyan,
@@ -3940,6 +3948,11 @@
 /obj/effect/turf_decal/corner/opaque/ntblue/full,
 /turf/open/floor/marble/black,
 /area/centcom)
+"ll" = (
+/obj/effect/turf_decal/corner/opaque/ntblue/full,
+/obj/machinery/holopad/emergency/command,
+/turf/open/floor/marble/black,
+/area/centcom)
 "lm" = (
 /obj/effect/turf_decal/corner/opaque/blue/half,
 /turf/open/floor/plasteel/white,
@@ -7276,6 +7289,7 @@
 /turf/open/floor/plasteel/elevatorshaft,
 /area/centcom/control)
 "uM" = (
+/obj/machinery/holopad/emergency/command,
 /turf/open/floor/plating{
 	icon_state = "platingdmg2"
 	},
@@ -9452,7 +9466,6 @@
 /area/outpost/exterior)
 "Be" = (
 /obj/effect/turf_decal/solgov/wood/center,
-/obj/machinery/light/floor,
 /turf/open/floor/wood/walnut,
 /area/centcom)
 "Bg" = (
@@ -13264,6 +13277,10 @@
 	},
 /turf/open/floor/plasteel/dark/wasteplanet,
 /area/outpost/exterior)
+"LV" = (
+/obj/machinery/holopad/emergency/command,
+/turf/open/floor/marble/black,
+/area/centcom)
 "LW" = (
 /obj/effect/turf_decal/corner/transparent/brown{
 	dir = 5
@@ -16181,6 +16198,11 @@
 /obj/machinery/photocopier,
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
+"TU" = (
+/obj/effect/turf_decal/corner/opaque/yellow/full,
+/obj/machinery/holopad/emergency/command,
+/turf/open/floor/plasteel,
+/area/centcom)
 "TW" = (
 /obj/effect/turf_decal/corner/transparent/neutral/full,
 /turf/open/floor/plasteel,
@@ -16763,6 +16785,11 @@
 /obj/effect/turf_decal/corner_steel_grid,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/centcom/control)
+"VL" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/machinery/holopad/emergency/command,
+/turf/open/floor/wood/mahogany,
+/area/centcom)
 "VM" = (
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plasteel/white,
@@ -16790,6 +16817,7 @@
 	pixel_y = 11;
 	dir = 8
 	},
+/obj/machinery/holopad/emergency/command,
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "VR" = (
@@ -40145,7 +40173,7 @@ Qf
 qk
 LX
 qk
-vv
+ab
 Bh
 Na
 eK
@@ -41121,7 +41149,7 @@ KO
 Ip
 Rs
 rf
-AT
+LV
 mn
 Vv
 qk
@@ -41303,7 +41331,7 @@ Qf
 Pf
 qk
 tD
-NC
+aa
 ik
 At
 FS
@@ -42092,7 +42120,7 @@ qk
 qk
 lR
 yL
-ey
+VL
 YM
 mU
 qk
@@ -42655,7 +42683,7 @@ qk
 qk
 Pj
 sV
-Mg
+TU
 Mg
 Ee
 OM
@@ -43812,7 +43840,7 @@ Zm
 Ni
 qk
 sE
-lk
+ll
 fT
 lk
 Lu
