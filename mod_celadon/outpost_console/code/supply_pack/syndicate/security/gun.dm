@@ -65,7 +65,7 @@
 	crate_name = "rifle crate"
 
 /datum/supply_pack/faction/syndicate/gun/saw80
-	name = "SAW - SAW-80 'Hydra' (5.56x42mm)"
+	name = "LMG - SAW-80 'Hydra' (5.56x42mm)"
 	desc = "Contains one of the rarely-produced SAW-80 Squad Automatic Weapon platforms, exclusively for licensed buyers. Remember, short controlled bursts!"
 	cost = 7000
 	contains = list(/obj/item/storage/guncase/saw80)

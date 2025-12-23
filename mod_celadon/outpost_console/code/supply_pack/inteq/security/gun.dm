@@ -55,7 +55,7 @@
 	cost = 8000
 
 /datum/supply_pack/faction/inteq/gun/rottweiler
-	name = "SAW - KM-05 Rottweiler (.308)"
+	name = "LMG - KM-05 Rottweiler (.308)"
 	desc = "Contains an extensively modified belt fed machine gun, built for special IRMG operations. Bulky and cumbersome, this weapon is chambered in the powerful .308 cartridge."
 	cost = 6000
 	contains = list(/obj/item/storage/guncase/rottweiler)

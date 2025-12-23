@@ -343,26 +343,12 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	contains = list(/obj/item/storage/guncase/woodsman)
 	crate_name = "hunting rifle crate"
 
-/datum/supply_pack/faction/independent/gun/scout
-	name = "Rifle - Scout Sniper (.300)"
-	desc = "Contains a traditional scoped rifle to hunt wildlife and big game from a respectful distance. Chambered in powerful .300 Magnum."
-	cost = 4000
-	contains = list(/obj/item/storage/guncase/scout)
-	crate_name = "rifle crate"
-
-/datum/supply_pack/faction/independent/gun/boomslang90
-	name = "Rifle - Boomslang-90 (6.5x57mm)"
-	desc = "Contains a civilian variant of the Boomslang Sniper rifle- modified with a 2x scope, rather than a sniper scope. Chambered in the powerful 6.5x57mm."
-	cost = 5000
-	contains = list(/obj/item/storage/guncase/boomslang)
-	crate_name = "rifle crate"
-
 /*
 	MARK:		Auto Rifles
 */
 
 /datum/supply_pack/faction/independent/gun/skm
-	name = "Auto Rifle - SKM-24 (7.62x40mm)"
+	name = "Assault-Rifle - SKM-24 (7.62x40mm)"
 	desc = "Contains a high-powered, automatic rifle chambered in 7.62x40mm."
 	cost = 5000
 	contains = list(/obj/item/storage/guncase/skm)
@@ -370,25 +356,39 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 
 // [Balance? No Lore.]
 // /datum/supply_pack/faction/independent/gun/g36
-// 	name = "Auto Rifle - G36"
+// 	name = "Assault-Rifle - G36"
 // 	desc = "Contains a G36 automatic rifle and two standard-sized magazines."
 // 	cost = 12000
 // 	contains = list(/obj/item/storage/guncase/g36)
 // 	crate_name = "auto rifle crate"
 
 // /datum/supply_pack/faction/independent/gun/g36sh
-// 	name = "Auto Rifle - G36-SH"
+// 	name = "Assault-Rifle - G36-SH"
 // 	desc = "Contains a G36-SH automatic rifle and two small-sized magazines."
 // 	cost = 12000
 // 	contains = list(/obj/item/storage/guncase/g36sh)
 // 	crate_name = "auto rifle crate"
 
 /datum/supply_pack/faction/independent/gun/morita1
-	name = "Auto Rifle - Morita Mk.I (.308)"
+	name = "Assault-Rifle - Morita Mk.I (.308)"
 	desc = "Contains a Morita Mk.I and two standard-sized magazines .308."
 	cost = 17000
 	contains = list(/obj/item/storage/guncase/morita1)
 	crate_name = "auto rifle crate"
+
+/datum/supply_pack/faction/independent/gun/scout
+	name = "Marksman - Scout Sniper (.300)"
+	desc = "Contains a traditional scoped rifle to hunt wildlife and big game from a respectful distance. Chambered in powerful .300 Magnum."
+	cost = 4000
+	contains = list(/obj/item/storage/guncase/scout)
+	crate_name = "rifle crate"
+
+/datum/supply_pack/faction/independent/gun/boomslang90
+	name = "Marksman - Boomslang-90 (6.5x57mm)"
+	desc = "Contains a civilian variant of the Boomslang Sniper rifle- modified with a 2x scope, rather than a sniper scope. Chambered in the powerful 6.5x57mm."
+	cost = 5000
+	contains = list(/obj/item/storage/guncase/boomslang)
+	crate_name = "rifle crate"
 
 /*
 ===== Товары SRM & CLIP & PGF от офов. =====
