@@ -22,7 +22,7 @@
 	contains = list(/obj/item/storage/guncase/pistol/pc76)
 
 /datum/supply_pack/faction/syndicate/gun/asp
-	name = "Auto-Pistol - BC-81 'Asp' (5.7x39mm)"
+	name = "Pistol - BC-81 'Asp' (5.7x39mm)"
 	desc = "Contains a compact armor-piercing sidearm, chambered in 5.7x39mm"
 	cost = 1250
 	contains = list(/obj/item/storage/guncase/pistol/asp)
