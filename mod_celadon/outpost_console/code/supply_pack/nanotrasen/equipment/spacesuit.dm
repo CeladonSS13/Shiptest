@@ -68,4 +68,4 @@
 	name = "Nanotrasen MK2 SWAT hardsuit"
 	desc = "Advanced MK2 SWAT hardsuit used by elite corporate assets. While it is bulky, slow and is missing a built in flashlight, it provides excellent protection against almost any weapon and is great for work in hazardous environments"
 	contains = list(/obj/item/clothing/suit/space/hardsuit/swat/captain)
-	cost = 11500
+	cost = 8000
