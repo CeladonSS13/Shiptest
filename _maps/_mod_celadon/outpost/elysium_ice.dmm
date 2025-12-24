@@ -22384,6 +22384,18 @@
 	light_range = 2
 	},
 /area/outpost/vacant_rooms/trash_factory)
+"mwq" = (
+/obj/effect/turf_decal/industrial/traffic/fulltile,
+/obj/effect/turf_decal/corner/transparent/syndiered/mono,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/poddoor/ert{
+	dir = 8;
+	id = "ice_up_gate_med_hangar"
+	},
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/hall_2)
 "mwJ" = (
 /mob/living/simple_animal/hostile/cavern_geist{
 	desc = "A near-mythical predator, known to haunt the caverns. Its eyes sparkle with a mixture of intelligence and malice.";
@@ -37037,6 +37049,10 @@
 /obj/effect/turf_decal/industrial/traffic/fulltile,
 /obj/effect/turf_decal/corner/transparent/syndiered/mono,
 /obj/machinery/door/airlock/multi_tile/medical/v,
+/obj/machinery/door/poddoor/ert{
+	dir = 8;
+	id = "ice_up_gate_med_hangar"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
 "uAb" = (
@@ -38343,6 +38359,18 @@
 /obj/item/food/grown/pumpkin,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior_silence/no_weather)
+"vsC" = (
+/obj/structure/table/reinforced,
+/obj/item/binoculars,
+/obj/machinery/button/door{
+	id = "ice_up_gate_med_hangar";
+	req_one_access_txt = "8100";
+	name = "BOLT UP MED HANGAR";
+	color = "#FF0000";
+	pixel_y = 13
+	},
+/turf/open/floor/plasteel/tech,
+/area/outpost/operations/outpost_command)
 "vsG" = (
 /obj/structure/chair/sofa/purple/right,
 /turf/open/floor/carpet/purple{
@@ -58278,7 +58306,7 @@ idX
 ifp
 jjg
 rto
-kCU
+vsC
 kCU
 eOO
 eOO
@@ -73602,7 +73630,7 @@ rgY
 rgY
 rgY
 eQc
-ukm
+mwq
 uzK
 eQc
 rgY

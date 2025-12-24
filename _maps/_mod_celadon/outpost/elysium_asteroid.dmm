@@ -690,6 +690,9 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/door/poddoor/ert{
+	id = "ice_up_gate_med_hangar"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
 "aBe" = (
@@ -13017,6 +13020,13 @@
 /obj/machinery/light/directional/north,
 /obj/structure/table/reinforced,
 /obj/item/binoculars,
+/obj/machinery/button/door{
+	id = "ice_up_gate_med_hangar";
+	req_one_access_txt = "8100";
+	name = "BOLT UP MED HANGAR";
+	color = "#FF0000";
+	pixel_y = 13
+	},
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/operations)
 "izk" = (
@@ -24993,6 +25003,9 @@
 "qvy" = (
 /obj/effect/turf_decal/industrial/traffic/fulltile,
 /obj/effect/turf_decal/corner/transparent/syndiered/mono,
+/obj/machinery/door/poddoor/ert{
+	id = "ice_up_gate_med_hangar"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
 "qvD" = (
@@ -34681,6 +34694,14 @@
 /obj/machinery/portable_atmospherics/canister/freon,
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/cargo)
+"wLj" = (
+/obj/effect/turf_decal/corner/transparent/syndiered/mono,
+/obj/effect/turf_decal/industrial/traffic/fulltile,
+/obj/machinery/door/poddoor/ert{
+	id = "ice_up_gate_med_hangar"
+	},
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/hall_2)
 "wLp" = (
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/hallway/central)
@@ -35569,6 +35590,9 @@
 	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/corner/transparent/syndiered/mono,
+/obj/machinery/door/poddoor/ert{
+	id = "ice_up_gate_med_hangar"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_2)
 "xzx" = (
@@ -62608,7 +62632,7 @@ plM
 pZh
 plM
 aoi
-mRY
+wLj
 mRY
 mQw
 lAb
