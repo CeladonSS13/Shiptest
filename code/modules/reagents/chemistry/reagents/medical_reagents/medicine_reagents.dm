@@ -341,14 +341,14 @@
 	if(current_cycle > 2 && current_cycle <= 6)
 		M.adjustFireLoss(-10*REM, 0)
 	M.adjustFireLoss(-2*REM, 0)
-	// M.adjustStaminaLoss(1*REM, 0)	// [CELADON-REMOVE] - CELADON_HIMKI - Убираем исталину мгновенный урон по стамине
+	M.adjustStaminaLoss(1*REM, 0)
 	..()
 	. = 1
 
 /datum/reagent/medicine/ysiltane/expose_mob(mob/living/carbon/M, method=VAPOR, reac_volume)
 	if(method in list(INJECT, INGEST))
 		M.adjustFireLoss(-reac_volume*2)
-		M.adjustStaminaLoss(min(reac_volume*6, 30))	// [CELADON-ADD] - CELADON_HIMKI - добавлено ограничение
+		M.adjustStaminaLoss(reac_volume*6)
 		if(!HAS_TRAIT(M, TRAIT_ANALGESIA))
 			to_chat(M, span_boldwarning("Your nerves ignite in pain as burns start to rapidly regenerate!"))
 			SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "painful_medicine", /datum/mood_event/painful_medicine)
