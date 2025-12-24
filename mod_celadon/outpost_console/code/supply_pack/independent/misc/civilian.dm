@@ -248,3 +248,16 @@ MARK: Decoration / flooring
 	contains = list(/obj/item/bodycamera/broadcast_camera)
 	crate_name = "broadcast camera crate"
 	crate_type = /obj/structure/closet/crate
+
+// [CELADON-ADD] - MARK: Удалить после НГ
+/datum/supply_pack/faction/independent/civilian/garland
+	name = "Упаковка с гирляндами"
+	desc = "Похоже, пришло время вешать это на стены. Содержит в себе 50 гирлянд"
+	cost = 50
+	contains = list(/obj/item/stack/garland_pack/fifty)
+	crate_name = "garland wooden create"
+	crate_type = /obj/structure/closet/crate/wooden/garland
+
+/obj/item/stack/garland_pack/fifty
+/obj/structure/closet/crate/wooden/garland
+// [/CELADON-ADD] - MARK: Удалить после НГ
