@@ -341,7 +341,7 @@
 	if(current_cycle > 2 && current_cycle <= 6)
 		M.adjustFireLoss(-10*REM, 0)
 	M.adjustFireLoss(-2*REM, 0)
-	M.adjustStaminaLoss(1*REM, 0)
+	// M.adjustStaminaLoss(1*REM, 0)	// [CELADON-REMOVE] - CELADON_HIMKI - Убираем исталину мгновенный урон по стамине
 	..()
 	. = 1
 
