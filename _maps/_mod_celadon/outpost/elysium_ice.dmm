@@ -6786,27 +6786,6 @@
 /obj/effect/spawner/random/celadon_drink,
 /turf/open/floor/plasteel/sepia,
 /area/outpost/crew/lounge)
-"dVX" = (
-/obj/machinery/power/smes/shuttle/precharged,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	icon_state = "rwindow";
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/machinery/door/poddoor/shutters{
-	id = "pebble_window";
-	dir = 1
-	},
-/turf/open/floor/plating,
-/area/outpost/exterior_silence/no_weather)
 "dWa" = (
 /obj/structure/closet/secure_closet{
 	icon_state = "brig_phys";
@@ -7185,12 +7164,6 @@
 	light_range = 2
 	},
 /area/outpost/exterior_silence)
-"egg" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/closed/wall,
-/area/outpost/exterior_silence/no_weather)
 "ego" = (
 /obj/effect/spawner/structure/window,
 /obj/structure/curtain/cloth/purpl,
@@ -7849,19 +7822,6 @@
 	},
 /turf/open/floor/carpet/black,
 /area/outpost/fraction/syndi)
-"ezN" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/corner/opaque/yellow/border{
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/structure/chair/comfy/shuttle,
-/turf/open/floor/plasteel/dark,
-/area/outpost/exterior_silence/no_weather)
 "eAg" = (
 /obj/structure/transit_tube/junction{
 	dir = 8
@@ -9592,25 +9552,6 @@
 /obj/structure/neon_spline/yellow/corner,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/outpost/exterior_silence)
-"ftM" = (
-/obj/machinery/power/terminal{
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/effect/turf_decal/corner/opaque/yellow/border{
-	dir = 1
-	},
-/obj/structure/chair/comfy/shuttle,
-/turf/open/floor/plasteel/dark,
-/area/outpost/exterior_silence/no_weather)
 "ftO" = (
 /obj/machinery/computer/cargo/faction/inteq{
 	dir = 1
@@ -15024,25 +14965,6 @@
 	},
 /turf/open/floor/plasteel/patterned,
 /area/outpost/cargo/smeltery)
-"ipZ" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 1
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/machinery/door/poddoor/shutters{
-	id = "pebble_window"
-	},
-/turf/open/floor/plating,
-/area/outpost/exterior_silence/no_weather)
 "iqa" = (
 /obj/effect/turf_decal/elysium_logo/three_two,
 /turf/open/floor/plasteel/patterned/brushed{
@@ -16906,14 +16828,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/maintenance/starboard)
-"jmq" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/door/poddoor/shutters{
-	dir = 4;
-	id = "pebble_window"
-	},
-/turf/open/floor/plating,
-/area/outpost/exterior_silence/no_weather)
 "jmv" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
@@ -17553,31 +17467,6 @@
 "jGy" = (
 /turf/open/floor/wood,
 /area/outpost/exterior_silence)
-"jGC" = (
-/obj/machinery/power/port_gen/pacman/super{
-	anchored = 1
-	},
-/obj/machinery/power/terminal{
-	dir = 4
-	},
-/obj/structure/cable,
-/obj/effect/turf_decal/corner/opaque/yellow/border{
-	dir = 8
-	},
-/obj/effect/turf_decal/corner/opaque/yellow/border{
-	dir = 1
-	},
-/obj/machinery/light/small/directional/north,
-/turf/open/floor/plasteel/dark,
-/area/outpost/exterior_silence/no_weather)
-"jGH" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 8
-	},
-/obj/effect/turf_decal/corner/opaque/yellow/border,
-/obj/item/radio/intercom/wideband/directional/south,
-/turf/open/floor/plasteel/dark,
-/area/outpost/exterior_silence/no_weather)
 "jGS" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -17708,20 +17597,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/operations/outpost_command)
-"jKo" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	dir = 8;
-	id = "pebble_door"
-	},
-/obj/machinery/power/shieldwallgen/atmos{
-	id = "pebble_holo";
-	anchored = 1
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/turf/open/floor/plating,
-/area/outpost/exterior_silence/no_weather)
 "jKN" = (
 /obj/structure/flora/rock/ice,
 /obj/structure/flora/rock/ice{
@@ -19942,9 +19817,6 @@
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior_silence)
-"laL" = (
-/turf/closed/wall/yesdiag,
-/area/outpost/exterior_silence/no_weather)
 "lbe" = (
 /obj/structure/closet/crate/wooden,
 /obj/item/melee/axe/fire{
@@ -24525,20 +24397,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo/office)
-"nvk" = (
-/obj/effect/turf_decal/corner/opaque/yellow/border,
-/obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
-/obj/machinery/light_switch{
-	pixel_y = -17;
-	pixel_x = 11;
-	dir = 1
-	},
-/obj/machinery/holopad,
-/turf/open/floor/plasteel/dark,
-/area/outpost/exterior_silence/no_weather)
 "nwd" = (
 /obj/structure/stone_tile/surrounding/cracked{
 	dir = 10
@@ -25275,26 +25133,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/checkpoint)
-"nTB" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	dir = 8;
-	id = "pebble_door"
-	},
-/obj/machinery/power/shieldwallgen/atmos{
-	id = "pebble_holo";
-	anchored = 1;
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/docking_port/mobile{
-	dir = 8;
-	preferred_direction = 8;
-	port_direction = 2
-	},
-/turf/open/floor/plating,
-/area/outpost/exterior_silence/no_weather)
 "nTE" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
@@ -25809,35 +25647,6 @@
 	},
 /turf/open/floor/wood,
 /area/outpost/fraction/solfed)
-"ohp" = (
-/obj/machinery/button/door{
-	pixel_x = -2;
-	pixel_y = -21;
-	id = "pebble_door";
-	dir = 1
-	},
-/obj/machinery/button/shieldwallgen{
-	pixel_y = -20;
-	pixel_x = 7;
-	id = "pebble_holo";
-	dir = 1
-	},
-/obj/machinery/button/door{
-	pixel_x = -7;
-	pixel_y = -30;
-	id = "pebble_window";
-	dir = 1;
-	name = "windows button"
-	},
-/obj/effect/turf_decal/corner/opaque/yellow/border{
-	dir = 8
-	},
-/obj/effect/turf_decal/corner/opaque/yellow/border,
-/obj/machinery/newscaster/directional/south{
-	pixel_x = 17
-	},
-/turf/open/floor/plasteel/dark,
-/area/outpost/exterior_silence/no_weather)
 "ohq" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 5
@@ -28543,15 +28352,6 @@
 /obj/effect/spawner/random/mine,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior_silence/no_weather)
-"pJp" = (
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/outpost/exterior_silence/no_weather)
 "pJq" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
@@ -29765,18 +29565,6 @@
 /obj/machinery/medical_kiosk,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
-"qtu" = (
-/obj/machinery/power/terminal,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/obj/effect/turf_decal/corner/opaque/yellow/border,
-/obj/machinery/light/floor,
-/turf/open/floor/plasteel/dark,
-/area/outpost/exterior_silence/no_weather)
 "qtK" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
@@ -30715,9 +30503,6 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/outpost/exterior_silence/no_weather)
-"qTw" = (
-/turf/closed/wall,
 /area/outpost/exterior_silence/no_weather)
 "qTD" = (
 /obj/structure/transit_tube/curved{
@@ -42001,29 +41786,6 @@
 	layer = 2.454
 	},
 /area/outpost/exterior_silence)
-"xhh" = (
-/obj/machinery/power/smes/engineering{
-	icon_state = "panel";
-	dir = 1;
-	density = 0;
-	pixel_y = 32
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/effect/turf_decal/corner/opaque/yellow/border{
-	dir = 1
-	},
-/obj/structure/closet{
-	anchored = 1
-	},
-/obj/item/clothing/head/helmet/space/pilot/random,
-/obj/item/clothing/suit/space/pilot,
-/obj/item/tank/internals/oxygen,
-/obj/item/storage/toolbox/mechanical,
-/obj/item/pickaxe,
-/turf/open/floor/plasteel/dark,
-/area/outpost/exterior_silence/no_weather)
 "xhn" = (
 /obj/effect/turf_decal/borderfloorwhite/corner{
 	dir = 8
@@ -74407,10 +74169,10 @@ rgY
 rgY
 rgY
 olQ
-laL
-jmq
-jmq
-laL
+onO
+onO
+onO
+onO
 gkY
 rgY
 rgY
@@ -74594,10 +74356,10 @@ rgY
 rgY
 rgY
 gBz
-egg
-jGC
-ohp
-qTw
+onO
+onO
+onO
+onO
 gkY
 rgY
 rgY
@@ -74781,10 +74543,10 @@ rgY
 rgY
 rgY
 xsd
-qTw
-xhh
-jGH
-qTw
+onO
+onO
+onO
+onO
 gkY
 rgY
 rgY
@@ -74968,10 +74730,10 @@ rgY
 rgY
 rgY
 xsd
-qTw
-ezN
-nvk
-qTw
+onO
+onO
+onO
+onO
 gkY
 rgY
 rgY
@@ -75155,10 +74917,10 @@ rgY
 rgY
 rgY
 xsd
-dVX
-ftM
-qtu
-ipZ
+onO
+onO
+onO
+onO
 gkY
 rgY
 rgY
@@ -75342,10 +75104,10 @@ rgY
 rgY
 rgY
 xsd
-pJp
-jKo
-nTB
-pJp
+onO
+onO
+onO
+onO
 gkY
 rgY
 rgY
