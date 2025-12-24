@@ -69,6 +69,7 @@
 	contains = list(/obj/item/attachment/long_scope)
 	crate_name = "scope crate"
 
+/*
 /datum/supply_pack/attachment/shotgun
 	name = "Underbarrel Shotgun Crate"
 	desc = "Contains a two shot underbarrel pump shotgun to be mounted on a firearm."
@@ -97,13 +98,6 @@
 	contains = list(/obj/item/storage/guncase/energy/underbarrel_e_gun)
 	crate_name = "underbarrel energy gun crate"
 
-/datum/supply_pack/attachment/riot_launcher
-	name = "Underbarrel Riot Grenade Launcher Crate"
-	desc = "Contains a single shot underbarrel riot grenade launcher to be mounted on a firearm."
-	cost = 750
-	contains = list(/obj/item/storage/guncase/underbarrel_riot_grenade)
-	crate_name = "underbarrel riot grenade launcher crate"
-
 /datum/supply_pack/attachment/flare
 	name = "Underbarrel Flare Gun Crate"
 	desc = "Contains a single shot underbarrel flare gun to be mounted on a firearm. One box of flares included."
@@ -113,3 +107,4 @@
 
 
 [/CELADON-DELETE] */
+*/

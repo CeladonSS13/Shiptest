@@ -28,11 +28,6 @@ SUBSYSTEM_DEF(ticker)
 	var/admin_delay_notice = ""				//a message to display to anyone who tries to restart the world after a delay
 	var/ready_for_reboot = FALSE			//all roundend preparation done with, all that's left is reboot
 
-	///If not set to ANON_DISABLED then people spawn with a themed anon name (see anonymousnames.dm)
-	var/anonymousnames = ANON_DISABLED
-	///Boolean to see if the game needs to set up a triumvirate ai (see tripAI.dm)
-	var/triai = FALSE
-
 	var/tipped = 0							//Did we broadcast the tip of the day yet?
 	var/selected_tip						// What will be the tip of the day?
 
@@ -99,7 +94,6 @@ SUBSYSTEM_DEF(ticker)
 				if(L[1] == "exclude")
 					continue
 				music += S
-				login_music_name = S
 
 	var/old_login_music = trim(file2text("data/last_round_lobby_music.txt"))
 	if(music.len > 1)
@@ -116,9 +110,14 @@ SUBSYSTEM_DEF(ticker)
 	if(!length(music))
 		music = world.file2list(ROUND_START_MUSIC_LIST, "\n")
 		login_music = pick(music)
+		login_music_name = login_music	// [CELADON-ADD] - MUSIC_CELADON
 	else
-		login_music = "[global.config.directory]/title_music/sounds/[pick(music)]"
-
+		// [CELADON-EDIT] - MUSIC_CELADON
+		// login_music = "[global.config.directory]/title_music/sounds/[pick(music)]"	// ORIGINAL
+		var/selected_track = pick(music)
+		login_music = "[global.config.directory]/title_music/sounds/[selected_track]"
+		login_music_name = selected_track
+		// [/CELADON-EDIT]
 
 	if(!GLOB.syndicate_code_phrase)
 		GLOB.syndicate_code_phrase	= generate_code_phrase(return_list=TRUE)
@@ -417,8 +416,6 @@ SUBSYSTEM_DEF(ticker)
 
 	delay_end = SSticker.delay_end
 
-	anonymousnames = SSticker.anonymousnames
-	triai = SSticker.triai
 	tipped = SSticker.tipped
 	selected_tip = SSticker.selected_tip
 

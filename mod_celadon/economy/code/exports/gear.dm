@@ -3,7 +3,7 @@
 /datum/export/gear/sec_helmet
 	cost = 100
 	unit_name = "helmet"
-	export_types = list(/obj/item/clothing/head/helmet/sec)
+	export_types = list(/obj/item/clothing/head/helmet)
 
 /datum/export/gear/sec_armor
 	cost = 100

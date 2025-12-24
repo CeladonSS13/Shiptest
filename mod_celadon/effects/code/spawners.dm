@@ -33,7 +33,6 @@
 		/obj/item/clothing/head/centcom_cap = 1,
 		/obj/item/clothing/head/that = 1,
 		/obj/item/clothing/head/nursehat = 1,
-		/obj/item/clothing/head/syndicatefake = 1,
 		/obj/item/clothing/head/snowman = 1,
 		/obj/item/clothing/head/pirate = 1,
 		/obj/item/clothing/head/pirate/captain = 1,
@@ -62,7 +61,6 @@
 		/obj/item/clothing/suit/pirate/captain = 1,
 		/obj/item/clothing/suit/judgerobe = 1,
 		/obj/item/clothing/suit/apron/purple_bartender = 1,
-		/obj/item/clothing/suit/syndicatefake = 1,
 		/obj/item/clothing/suit/toggle/owlwings = 1,
 		/obj/item/clothing/suit/toggle/owlwings/griffinwings = 1,
 		/obj/item/clothing/suit/cardborg = 1,
@@ -266,8 +264,7 @@
 		/datum/reagent/consumable/ethanol/out_of_lime,
 		/datum/reagent/consumable/ethanol/shotinthedark,
 		/datum/reagent/consumable/ethanol/bullethell,
-		/datum/reagent/consumable/ethanol/homesick,
-		/datum/reagent/consumable/ethanol/eudamonia
+		/datum/reagent/consumable/ethanol/homesick
 	)
 
 	var/glass_type = /obj/item/reagent_containers/food/drinks/drinkingglass

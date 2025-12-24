@@ -65,6 +65,12 @@
 				to_chat(spawnee, span_warning("You cannot join this ship anymore, as its join mode has changed!"))
 				return
 
+			var/datum/faction/registered_faction = target.shuttle_port.registered_faction
+			var/datum/language/official_lang = initial(registered_faction.official_language)
+			if(official_lang != spawnee.client.prefs.native_language && spawnee.client.prefs.learned_languages[official_lang] != LANGUAGE_FLUENT && \
+				tgui_alert(spawnee, "Your character does not fully understand this faction's official language ([initial(official_lang.name)]), are you sure?", "Official language", list("Yes", "No")) != "Yes")
+				return // pop-up warning for new players that forgot to set their
+
 			ui.close()
 			var/datum/job/selected_job = locate(params["job"]) in target.job_slots
 			//boots you out if you're banned from officer roles
@@ -180,6 +186,8 @@
 			var/species_id = user.client?.prefs?.pref_species?.id
 			if(species_id != "human" && species_id != "ipc" && species_id != "lanius")
 				continue
+			if(user.client?.prefs?.features["tail_human"] != "None" || user.client?.prefs?.features["ears"] != "None")
+				continue
 		// [/CELADON-ADD]
 
 		var/list/ship_jobs = list()
@@ -220,6 +228,8 @@
 		if(T.faction.name == FACTION_ELYSIUM)
 			var/species_id = user.client?.prefs?.pref_species?.id
 			if(species_id != "human" && species_id != "ipc" && species_id != "lanius")
+				continue
+			if(user.client?.prefs?.features["tail_human"] != "None" || user.client?.prefs?.features["ears"] != "None")
 				continue
 		var/list/ship_data = list(
 			"name" = T.name,

@@ -139,6 +139,10 @@ EDIT: `code/modules/vending/_vending.dm` : Убираем автоматичес
 
 SLOW_SPEED_CRAWLING
 - EDIT: `code/__DEFINES/combat.dm`
+
+TWEAK_PACIFIST_TRAIT
+- `code/_onclick/item_attack.dm`				: Пацифисты не хотят вредить живым существам, но могут бить неживые объекты
+- `code/modules/mob/living/carbon/carbon.dm` 	: Пацифисты не могут бросаться предметами
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

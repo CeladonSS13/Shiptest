@@ -164,6 +164,7 @@ BLOOD_EXAMINE
 DONT_ALTCLICK_WALLET - Убирает вытаскивание карты на Альт-клик
 - DEL `code/datums/components/storage/concrete/wallet.dm`
 - EDIT `code/game/objects/items/storage/wallets.dm`
+- `code/game/objects/items/storage/wallets.dm` : Убрана отвертка и добавлена сигарета в разрешенные предметы в кошельке
 
 DEBUG_QUALITY
 - DEL `code/game/objects/items/storage/boxes.dm` -> `mod_celadon/qol/code/BluespaceTechnician.dm`
@@ -173,6 +174,12 @@ CELADON_QOL_LOADOUT
 - ADD, EDIT, REMOVE: `code/modules/client/loadout/_loadout.dm`
 - REMOVE: `code/modules/client/loadout/loadout_accessories.dm`
 - REMOVE: `code/modules/client/loadout/loadout_hat.dm`
+
+QOL_ORBIT_MENU
+- `code/modules/mob/dead/observer/orbit.dm` 				: Добавлена категория Maps в Orbit меню для быстрого перехода к ключевым локациям (Outpost, Overmap)
+- `tgui/packages/tgui/interfaces/Orbit/types.ts` 			: Добавлен тип maps в OrbitData
+- `tgui/packages/tgui/interfaces/Orbit/index.tsx` 			: Добавлен maps в список для поиска
+- `tgui/packages/tgui/interfaces/Orbit/OrbitContent.tsx` 	: Добавлена секция Maps в UI
 
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,

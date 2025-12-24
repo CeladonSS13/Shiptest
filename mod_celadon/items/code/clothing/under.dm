@@ -4,7 +4,6 @@
 /obj/item/clothing/under/tajaran
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
-	// can_adjust = FALSE - [CELADON-ALERT] - Параметр удалён оффами - https://github.com/shiptest-ss13/Shiptest/pull/4738
 	name = "people's republic consular uniform"
 	desc = "An olive uniform used by the diplomatic service of the People's Republic."
 	icon_state = "pra_consular"
@@ -84,7 +83,6 @@
 /obj/item/clothing/under/suit/galaxy
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/galaxy.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/galaxy.dmi'
-	// can_adjust = FALSE - [CELADON-ALERT] - Параметр удалён оффами - https://github.com/shiptest-ss13/Shiptest/pull/4738
 	name = "blue galaxy suit"
 	icon_state = "lawyer_galaxy_blue"
 	item_state = "b_suit"
@@ -145,7 +143,6 @@
 	item_state = "inteqmaid"
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/under.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/under.dmi'
-	// can_adjust = FALSE - [CELADON-ALERT] - Параметр удалён оффами - https://github.com/shiptest-ss13/Shiptest/pull/4738
 	supports_variations = KEPORI_VARIATION | VOX_VARIATION | DIGITIGRADE_VARIATION_NO_NEW_ICON
 
 /obj/item/clothing/under/syndicate/inteq/skirt/maid/Initialize()

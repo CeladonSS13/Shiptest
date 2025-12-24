@@ -554,10 +554,10 @@
 /area/ship/engineering/atmospherics)
 "ed" = (
 /obj/structure/closet/wall/red/directional/north,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
 /obj/item/storage/box/ammo/c9mm_rubber,
 /obj/item/storage/box/ammo/c9mm,
 /obj/item/ammo_box/magazine/co9mm,
@@ -1672,10 +1672,6 @@
 /obj/item/storage/pill_bottle/charcoal/less{
 	pixel_x = -9
 	},
-/obj/item/reagent_containers/glass/bottle{
-	list_reagents = list(/datum/reagent/medicine/thializid=30);
-	name = "thializid bottle"
-	},
 /obj/item/reagent_containers/glass/bottle/formaldehyde{
 	pixel_x = 6;
 	pixel_y = 8
@@ -1736,13 +1732,13 @@
 /obj/effect/turf_decal/siding/wood,
 /obj/item/clothing/under/nanotrasen/officer,
 /obj/item/clothing/under/nanotrasen/officer/skirt,
-/obj/item/gun/energy/e_gun/mini,
 /obj/item/clothing/head/nanotrasen/officer/fedora,
 /obj/item/clothing/head/nanotrasen/officer,
 /obj/item/radio/headset/nanotrasen,
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 4
 	},
+/obj/item/gun/energy/e_gun/e_old/mini,
 /turf/open/floor/wood,
 /area/ship/general/command_crew/hop)
 "lg" = (
@@ -3451,7 +3447,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/opaque/green/mono,
-/obj/machinery/grill,
+/obj/machinery/griddle,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen/kitchen)
 "wZ" = (
@@ -3535,8 +3531,8 @@
 /obj/item/clothing/suit/armor/nanotrasen/slim,
 /obj/item/clothing/suit/armor/vest/blueshirt,
 /obj/item/clothing/head/helmet/blueshirt,
-/obj/item/clothing/head/helmet/sec,
-/obj/item/clothing/head/helmet/sec,
+/obj/item/clothing/head/helmet/m10/nanotrasen,
+/obj/item/clothing/head/helmet/m10/nanotrasen,
 /obj/effect/turf_decal/corner/opaque/vired/border{
 	dir = 1
 	},
@@ -4072,7 +4068,7 @@
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/tank/internals/oxygen,
 /obj/item/clothing/suit/space/hardsuit/mining,
-/obj/item/clothing/mask/gas/explorer,
+/obj/item/clothing/mask/gas/explorer/legacy,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "Cb" = (
@@ -4150,7 +4146,7 @@
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/item/tank/internals/oxygen,
 /obj/item/clothing/suit/space/hardsuit/security,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /obj/machinery/suit_storage_unit/inherit,
 /obj/effect/turf_decal/corner/opaque/vired/half,
 /obj/structure/sign/poster/official/nanotrasen_logo{
@@ -5528,15 +5524,15 @@
 	req_access_txt = "3";
 	name = "LETHAL weapons"
 	},
-/obj/item/gun/ballistic/automatic/pistol/commander{
+/obj/item/gun/ballistic/automatic/pistol/challenger{
 	pixel_x = 0;
 	pixel_y = 8
 	},
-/obj/item/gun/energy/e_gun{
+/obj/item/gun/energy/e_gun/e_old{
 	pixel_x = 5;
 	pixel_y = 1
 	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_y = -4;
 	pixel_x = 3
 	},
@@ -5681,7 +5677,7 @@
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/tank/internals/oxygen,
 /obj/item/clothing/suit/hooded/explorer,
-/obj/item/clothing/mask/gas/explorer,
+/obj/item/clothing/mask/gas/explorer/legacy,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "Oo" = (
@@ -5963,7 +5959,6 @@
 /obj/item/clothing/head/nanotrasen/beret/security/command,
 /obj/item/clothing/suit/armor/nanotrasen/sec_director,
 /obj/item/radio/headset/nanotrasen/alt,
-/obj/item/gun/energy/e_gun/hos,
 /turf/open/floor/carpet/red_gold,
 /area/ship/general/command_crew/hos)
 "QU" = (
@@ -5976,7 +5971,7 @@
 /area/ship/hallway/central)
 "QY" = (
 /obj/structure/closet/crate/bin,
-/obj/item/trash/plate,
+/obj/item/trash/chips,
 /obj/machinery/firealarm/directional/west,
 /obj/effect/turf_decal/corner/opaque/ntblue/border{
 	dir = 10

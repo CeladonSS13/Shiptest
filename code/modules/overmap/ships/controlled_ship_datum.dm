@@ -381,7 +381,13 @@
 
 /datum/overmap/ship/controlled/proc/get_application(mob/applicant)
 	var/index_key = applicant.client?.holder?.fakekey ? applicant.client.holder.fakekey : applicant.key
-	return LAZYACCESS(applications, ckey(index_key))
+	// [CELADON-EDIT] - FIXES_ADMIN_STEALTH
+	// return LAZYACCESS(applications, ckey(index_key))	// ORIGINAL
+	var/result = LAZYACCESS(applications, ckey(index_key))
+	if(!result && applicant.client?.holder?.fakekey)
+		result = LAZYACCESS(applications, ckey(applicant.key))
+	return result
+	// [/CELADON-EDIT]
 
 /**
  * Bastardized version of GLOB.manifest.manifest_inject, but used per ship.
@@ -403,7 +409,7 @@
 	)
 	LAZYSET(owner_candidates, H.mind, mind_info)
 	H.mind.original_ship = WEAKREF(src)
-	RegisterSignal(H.mind, COMSIG_PARENT_QDELETING, PROC_REF(crew_mind_deleting))
+	RegisterSignal(H.mind, COMSIG_QDELETING, PROC_REF(crew_mind_deleting))
 	if(!owner_mob)
 		set_owner_mob(H)
 
@@ -486,7 +492,7 @@
 /datum/overmap/ship/controlled/proc/crew_mind_deleting(datum/mind/del_mind)
 	SIGNAL_HANDLER
 
-	UnregisterSignal(del_mind, COMSIG_PARENT_QDELETING)
+	UnregisterSignal(del_mind, COMSIG_QDELETING)
 	LAZYREMOVE(owner_candidates, del_mind)
 	if(owner_mind == del_mind)
 		set_owner_mob(get_best_owner_mob())

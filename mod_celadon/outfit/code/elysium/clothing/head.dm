@@ -35,7 +35,7 @@
 	icon_state = "turban_white"
 	mob_overlay_state = "turban_white"
 
-/obj/item/clothing/head/helmet/m10_elysium
+/obj/item/clothing/head/helmet/m10/elysium
 	name = "M10 pattern helmet"
 	desc = "A widespread protective helmet initally designed for Republic of Elysium's law enforcement, but with time it has found use by its' civilans. There is a handband on it with an inscription that reads: \"Power in unity, wisdom in faith.\""
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/hats3.dmi'
@@ -45,6 +45,7 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 	content_overlays = TRUE
 	can_flashlight = TRUE
+	unique_reskin = null
 
 /obj/item/clothing/head/shemag
 	name = "void shemagh"

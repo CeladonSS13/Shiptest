@@ -96,7 +96,6 @@
 	faction_icon = "bg_pirate"
 	job_icon = "piratecaptain"
 
-	job_icon = "captain"
 	jobtype = /datum/job/captain
 	uniform = /obj/item/clothing/under/syndicate/ramzi/officer
 

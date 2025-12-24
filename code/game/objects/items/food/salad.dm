@@ -8,11 +8,11 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	food_reagents = list(
 		/datum/reagent/consumable/nutriment = 7,
-		/datum/reagent/consumable/nutriment/vitamin = 2
+		/datum/reagent/consumable/nutriment/vitamin = 2,
 	)
 	tastes = list("leaves" = 1)
 	foodtypes = VEGETABLES
-	eatverbs = list("devour","nibble","gnaw","gobble","chomp") //who the fuck gnaws and devours on a salad
+	eatverbs = list("devour","nibble","gnaw","gobble","chomp") //who the fuck gnaws and devours on a salad //me i do
 
 /obj/item/food/salad/aesirsalad
 	name = "\improper Aesir salad"
@@ -20,8 +20,8 @@
 	icon_state = "aesirsalad"
 	food_reagents = list(
 		/datum/reagent/consumable/nutriment = 8,
-		/datum/reagent/medicine/omnizine = 10,
-		/datum/reagent/consumable/nutriment/vitamin = 12
+		/datum/reagent/medicine/panacea = 10,
+		/datum/reagent/consumable/nutriment/vitamin = 12,
 	)
 	tastes = list("leaves" = 1)
 	foodtypes = VEGETABLES | FRUIT
@@ -32,7 +32,7 @@
 	icon_state = "herbsalad"
 	food_reagents = list(
 		/datum/reagent/consumable/nutriment = 8,
-		/datum/reagent/consumable/nutriment/vitamin = 6
+		/datum/reagent/consumable/nutriment/vitamin = 6,
 	)
 	tastes = list("leaves" = 1, "apple" = 1)
 	foodtypes = VEGETABLES | FRUIT
@@ -45,7 +45,7 @@
 		/datum/reagent/consumable/nutriment = 5,
 		/datum/reagent/consumable/nutriment/protein = 5,
 		/datum/reagent/consumable/doctor_delight = 8,
-		/datum/reagent/consumable/nutriment/vitamin = 6
+		/datum/reagent/consumable/nutriment/vitamin = 6,
 	)
 	tastes = list("leaves" = 1, "potato" = 1, "meat" = 1, "valids" = 1)
 	foodtypes = VEGETABLES | MEAT | FRIED | FRUIT
@@ -56,7 +56,7 @@
 	icon_state = "fruitsalad"
 	food_reagents = list(
 		/datum/reagent/consumable/nutriment = 9,
-		/datum/reagent/consumable/nutriment/vitamin = 5
+		/datum/reagent/consumable/nutriment/vitamin = 5,
 	)
 	tastes = list("fruit" = 1)
 	foodtypes = FRUIT
@@ -68,7 +68,7 @@
 	food_reagents = list(
 		/datum/reagent/consumable/nutriment = 11,
 		/datum/reagent/consumable/banana = 5,
-		/datum/reagent/consumable/nutriment/vitamin = 7
+		/datum/reagent/consumable/nutriment/vitamin = 7,
 	)
 	tastes = list("fruit" = 1, "the jungle" = 1)
 	foodtypes = FRUIT
@@ -79,32 +79,31 @@
 	icon_state = "citrusdelight"
 	food_reagents = list(
 		/datum/reagent/consumable/nutriment = 11,
-		/datum/reagent/consumable/nutriment/vitamin = 7
+		/datum/reagent/consumable/nutriment/vitamin = 7,
 	)
 	tastes = list("sourness" = 1, "leaves" = 1)
 	foodtypes = FRUIT
 
-/obj/item/food/salad/ricebowl
-	name = "ricebowl"
-	desc = "A bowl of loose, pearled rice grains."
+/obj/item/food/uncooked_rice
+	name = "uncooked rice"
+	desc = "A clump of raw rice."
+	icon = 'icons/obj/food/soupsalad.dmi'
 	icon_state = "ricebowl"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4)
 	tastes = list("rice" = 1)
 	foodtypes = GRAIN | RAW
-	microwaved_type = /obj/item/food/salad/boiledrice
 
-/*
-/obj/item/food/salad/ricebowl/make_microwaveable()
-	AddElement(/datum/element/microwavable, /obj/item/food/salad/boiledrice)
-*/
+/obj/item/food/uncooked_rice/make_bakeable()
+	AddComponent(/datum/component/bakeable, /obj/item/food/boiled_rice, rand(15 SECONDS, 20 SECONDS), TRUE, TRUE)
 
-/obj/item/food/salad/boiledrice
+/obj/item/food/boiled_rice
 	name = "boiled rice"
 	desc = "A warm bowl of steamed white rice."
+	icon = 'icons/obj/food/soupsalad.dmi'
 	icon_state = "boiledrice"
 	food_reagents = list(
 		/datum/reagent/consumable/nutriment = 6,
-		/datum/reagent/consumable/nutriment/vitamin = 2
+		/datum/reagent/consumable/nutriment/vitamin = 2,
 	)
 	tastes = list("rice" = 1)
 	foodtypes = GRAIN | BREAKFAST
@@ -116,7 +115,7 @@
 	food_reagents = list(
 		/datum/reagent/consumable/nutriment = 8,
 		/datum/reagent/consumable/sugar = 3,
-		/datum/reagent/consumable/nutriment/vitamin = 3
+		/datum/reagent/consumable/nutriment/vitamin = 3,
 	)
 	tastes = list("rice" = 1, "sweetness" = 1)
 	foodtypes = GRAIN | DAIRY | SUGAR
@@ -128,7 +127,7 @@
 	food_reagents = list(
 		/datum/reagent/consumable/nutriment = 6,
 		/datum/reagent/consumable/nutriment/protein = 6,
-		/datum/reagent/consumable/nutriment/vitamin = 3
+		/datum/reagent/consumable/nutriment/vitamin = 3,
 	)
 	tastes = list("rice" = 1, "meat" = 1)
 	foodtypes = GRAIN | MEAT
@@ -140,11 +139,10 @@
 	food_reagents = list(
 		/datum/reagent/consumable/nutriment = 8,
 		/datum/reagent/consumable/nutriment/protein = 2,
-		/datum/reagent/consumable/nutriment/vitamin = 4
+		/datum/reagent/consumable/nutriment/vitamin = 4,
 	)
 	tastes = list("rice" = 1, "egg" = 1)
-	foodtypes = GRAIN | MEAT //EGG = MEAT -NinjaNomNom 2017
-
+	foodtypes = GRAIN | MEAT
 
 /obj/item/reagent_containers/glass/bowl
 	name = "bowl"
@@ -155,7 +153,6 @@
 	custom_materials = list(/datum/material/glass = 500)
 	w_class = WEIGHT_CLASS_NORMAL
 
-/*
 /obj/item/reagent_containers/glass/bowl/Initialize()
 	. = ..()
 	AddComponent(/datum/component/customizable_reagent_holder, /obj/item/food/salad/empty, CUSTOM_INGREDIENT_ICON_FILL, max_ingredients = 6)
@@ -163,8 +160,7 @@
 // empty salad for custom salads
 /obj/item/food/salad/empty
 	name = "salad"
+	desc = "A delicious customized salad."
+	icon_state = "bowl"
 	foodtypes = NONE
 	tastes = list()
-	icon_state = "bowl"
-	desc = "A delicious customized salad."
-*/

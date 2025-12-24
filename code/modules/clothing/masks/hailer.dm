@@ -1,8 +1,8 @@
 // **** Security gas mask ****
 
 /obj/item/clothing/mask/gas/sechailer
-	name = "security gas mask"
-	desc = "A standard issue Security gas mask. It doesn't cover the eyes."
+	name = "half mask"
+	desc = "A standard half mask. It doesn't cover the eyes."
 	actions_types = list(/datum/action/item_action/adjust)
 	icon_state = "sechailer"
 	item_state = "sechailer"
@@ -13,7 +13,17 @@
 	visor_flags_inv = HIDEFACIALHAIR | HIDEFACE
 	flags_cover = MASKCOVERSMOUTH | MASKCOVERSEYES | PEPPERPROOF
 	visor_flags_cover = MASKCOVERSMOUTH | MASKCOVERSEYES | PEPPERPROOF
-	supports_variations = VOX_VARIATION
+	supports_variations = VOX_VARIATION | SNOUTED_VARIATION | KEPORI_VARIATION
+
+// [CELADON-ADD]
+/obj/item/clothing/mask/gas/sechailer/sec
+	name = "security gas mask"
+	desc = "A standard issue Security gas mask. It doesn't cover the eyes."
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/mask/hailer.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/mask/overlay/hailer.dmi'
+	icon_state = "hailer"
+	item_state = "hailer"
+// [/CELADON-ADD]
 
 /obj/item/clothing/mask/gas/sechailer/swat
 	name = "\improper SWAT mask"

@@ -132,7 +132,7 @@
 					/obj/item/storage/firstaid/fire,
 					/obj/item/defibrillator/loaded,
 					/obj/item/reagent_containers/blood/OMinus,
-					/obj/item/storage/pill_bottle/mining,
+					// /obj/item/storage/pill_bottle/mining,
 					/obj/item/reagent_containers/pill/neurine,
 					/obj/item/vending_refill/medical)
 	crate_name = "medical surplus crate"

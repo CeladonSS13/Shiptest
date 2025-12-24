@@ -172,5 +172,5 @@ GLOBAL_LIST_INIT(onecardinal, NORTH) // Патерн атаки для одно�
 	icon_state = "marker"
 	flick(retract,src)
 	deltimer(timerid)
-	timerid = QDEL_IN(src, 7)
+	timerid = QDEL_IN_STOPPABLE(src, 7)
 	new /turf/open/lava/smooth(loc)

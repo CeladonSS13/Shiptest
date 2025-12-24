@@ -277,7 +277,7 @@
 		var/mob/living/L = arrived
 // [/CELADON-EDIT]
 		L.adjust_fire_stacks(3)
-		L.IgniteMob()
+		L.ignite_mob()
 	. = ..()
 
 /obj/structure/legionnaire_bonfire/Destroy()

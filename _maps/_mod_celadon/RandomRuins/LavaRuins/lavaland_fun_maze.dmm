@@ -268,10 +268,10 @@
 /turf/open/floor/grass/ship/jungle,
 /area/ruin/lavaland)
 "eC" = (
-/obj/item/gun/energy/e_gun/hades{
+/obj/item/gun/energy/e_gun/e_old/hades{
 	pixel_y = 10
 	},
-/obj/item/gun/energy/e_gun/hades,
+/obj/item/gun/energy/e_gun/e_old/hades,
 /obj/machinery/light/colored/red{
 	dir = 8;
 	pixel_x = -8
@@ -1280,7 +1280,7 @@
 /area/ruin/lavaland)
 "wg" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/ballistic/automatic/pistol/commander,
+/obj/item/gun/ballistic/automatic/pistol/challenger,
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/lavaland)
 "wu" = (
@@ -1340,10 +1340,7 @@
 	pixel_x = 2;
 	pixel_y = 8
 	},
-/obj/item/reagent_containers/glass/bottle/antitoxin{
-	pixel_x = -1;
-	pixel_y = 4
-	},
+/obj/item/reagent_containers/glass/bottle/charcoal,
 /obj/item/reagent_containers/glass/bottle/formaldehyde{
 	pixel_x = -2
 	},
@@ -1650,10 +1647,6 @@
 /turf/open/floor/suns/diagonal,
 /area/ruin/lavaland)
 "Cz" = (
-/obj/structure/cursed_slot_machine{
-	climb_time = 2000;
-	max_integrity = 3000000
-	},
 /turf/open/floor/mineral/gold,
 /area/ruin/lavaland)
 "CA" = (
@@ -2823,7 +2816,7 @@
 /area/ruin/lavaland)
 "Wm" = (
 /obj/structure/table/wood/poker,
-/mob/living/basic/iriska{
+/mob/living/simple_animal/pet/cat/iriska{
 	dir = 4
 	},
 /turf/open/floor/wood/ebony,
@@ -2852,9 +2845,6 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/ruin/lavaland)
-"WY" = (
-/turf/open/floor/mineral/gold,
 /area/ruin/lavaland)
 "WZ" = (
 /obj/structure/mineral_door/wood,
@@ -3445,7 +3435,7 @@ kD
 hV
 jq
 as
-WY
+Cz
 tq
 np
 np
@@ -3522,7 +3512,7 @@ hV
 hV
 Na
 NP
-WY
+Cz
 tq
 np
 JG
@@ -3753,7 +3743,7 @@ Nu
 hV
 tr
 NP
-WY
+Cz
 tq
 np
 np
@@ -3830,7 +3820,7 @@ hV
 hV
 Cp
 NP
-WY
+Cz
 tq
 np
 JG
@@ -3907,7 +3897,7 @@ Nu
 hV
 uc
 vS
-WY
+Cz
 tq
 wV
 dY
@@ -9951,7 +9941,7 @@ hV
 gq
 zl
 Hs
-WY
+Cz
 gq
 Rr
 ll

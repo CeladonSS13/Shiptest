@@ -128,6 +128,7 @@
 /obj/item/clothing/suit/space/hardsuit/Initialize()
 	if(jetpack && ispath(jetpack))
 		jetpack = new jetpack(src)
+	allowed += GLOB.security_vest_allowed
 	. = ..()
 
 /obj/item/clothing/suit/space/hardsuit/attack_self(mob/user)
@@ -335,6 +336,7 @@
 	hardsuit_type = "nsmining"
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	armor = list("melee" = 65, "bullet" = 30, "laser" = 25, "energy" = 30, "bomb" = 70, "bio" = 100, "rad" = 85, "fire" = 100, "acid" = 100)
+	supports_variations = KEPORI_VARIATION
 
 /obj/item/clothing/head/helmet/space/hardsuit/mining/heavy/ns
 	name = "N+S mining hardsuit helmet"
@@ -344,6 +346,7 @@
 	hardsuit_type = "nsmining"
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	armor = list("melee" = 65, "bullet" = 30, "laser" = 25, "energy" = 30, "bomb" = 70, "bio" = 100, "rad" = 85, "fire" = 100, "acid" = 100)
+	supports_variations = KEPORI_VARIATION
 
 	//Syndicate hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/syndi
@@ -515,6 +518,29 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/ramzi/elite
 	armor = list("melee" = 50, "bullet" = 60, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 100, "acid" = 80)
 	slowdown = 1.25
+//Mayor's Suit
+
+/obj/item/clothing/suit/space/hardsuit/syndi/old
+	name = "worn blood-red hardsuit"
+	desc = "A dual-mode, once advanced hardsuit designed for special combat operations. So severely damaged, it is no longer spaceproof. It is in 'EVA' mode. Produced by the Gorlex Marauders."
+	alt_desc = "A dual-mode, once advanced hardsuit designed for special combat operations. So severely damaged, it is no longer spaceproof. It is in travel mode. Produced by the Gorlex Marauders."
+	icon_state = "hardsuit1-old"
+	item_state = "old_syndie_hardsuit"
+	hardsuit_type = "old"
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/old
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 20,"energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75, "wound" = 20)
+	slowdown = 1
+	jetpack = null
+	supports_variations = KEPORI_VARIATION
+
+/obj/item/clothing/head/helmet/space/hardsuit/syndi/old
+	name = "worn blood-red hardsuit helmet"
+	desc = "A dual-mode, once advanced hardsuit helmet designed for special combat operations. So severely damaged, it is no longer spaceproof. It is in 'EVA' mode. Produced by the Gorlex Marauders."
+	alt_desc = "A dual-mode, once advanced hardsuit helmet designed for special combat operations. So severely damaged, it is no longer spaceproof. It is in travel mode. Produced by the Gorlex Marauders."
+	icon_state = "hardsuit1-old"
+	item_state = "old_syndie_helm"
+	hardsuit_type = "old"
+	supports_variations = KEPORI_VARIATION
 
 //Elite Syndie suit
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite

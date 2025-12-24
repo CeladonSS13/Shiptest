@@ -70,6 +70,9 @@ CELADON_ADD_HUDS
 
 JETPACK_RESPRITE
 - EDIT: `code/game/objects/items/tanks/jetpack.dm` : Заменена функция по обновлению спрайтов на оверлеи
+
+CELADON_RESPRITE_WALLET
+- `code/game/objects/items/storage/wallets.dm` : Меняем вносим логику на обработку спрайтов под ключи, кэши и карточки кошелькам
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

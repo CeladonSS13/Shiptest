@@ -3,21 +3,21 @@
 /datum/species/riol/on_species_gain(mob/living/carbon/human/H)
 	..()
 	H.verbs |= /mob/living/carbon/human/proc/emote_wag
-	// H.verbs |= /mob/living/carbon/human/proc/emote_swag
+	H.verbs |= /mob/living/carbon/human/proc/emote_fpurr
 	H.verbs |= /mob/living/carbon/human/proc/emote_howl
 	H.verbs |= /mob/living/carbon/human/proc/emote_growl
-	// H.verbs |= /mob/living/carbon/human/proc/emote_ururu
-	H.verbs |= /mob/living/carbon/human/proc/emote_fpurr
+	H.verbs |= /mob/living/carbon/human/proc/emote_fwhine
+	H.verbs |= /mob/living/carbon/human/proc/emote_yip
 	H.verbs |= /mob/living/carbon/human/proc/bite_feral_switch
 
 /datum/species/riol/on_species_loss(mob/living/carbon/human/H)
 	..()
 	H.verbs -= /mob/living/carbon/human/proc/emote_wag
-	// H.verbs -= /mob/living/carbon/human/proc/emote_swag
+	H.verbs -= /mob/living/carbon/human/proc/emote_fpurr
 	H.verbs -= /mob/living/carbon/human/proc/emote_howl
 	H.verbs -= /mob/living/carbon/human/proc/emote_growl
-	// H.verbs -= /mob/living/carbon/human/proc/emote_ururu
-	H.verbs -= /mob/living/carbon/human/proc/emote_fpurr
+	H.verbs -= /mob/living/carbon/human/proc/emote_fwhine
+	H.verbs -= /mob/living/carbon/human/proc/emote_yip
 	H.verbs -= /mob/living/carbon/human/proc/bite_feral_switch
 
 // MARK: IPC

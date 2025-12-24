@@ -352,6 +352,16 @@ FIXES_CQC_GRAB
 FIXES_DEL_FISH
 - `code/modules/fishing/fish/_fish.dm` : Фиксим удаление рыбы после повторной разделки
 
+FIXES_HOLO_ESWORD
+- `code/modules/holodeck/items.dm` : Кто-то забыл убрать 0
+
+FIXES_MASK_ON_KEPORI
+- `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Добавляем проверку на проклятость маски для кепори
+
+FIXES_FIRES_OVERLAYES
+- `code/datums/elements/perma_fire.dm`					: Добавлен флаг override = TRUE
+- `code/datums/status_effects/debuffs/fire_stacks.dm`	: Добавлен флаг override = TRUE
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -438,6 +448,11 @@ RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFa
 
 FIXES_TWO_HANDED_CRASH
 - ADD: `code/_onclick/item_attack.dm` - добавлена обработка звуков если приходи не один файл, а лист ( обычно )
+
+FIXES_ADMIN_STEALTH
+- ADD: `mod_celadon/fixes/code/ship_application_stealth_fix.dm` - Фикс заявок на корабль для админов в стелс-моде. Теперь используется реальный ключ игрока для индексации заявок, что позволяет админам менять fakekey без потери доступа к заявкам
+- `code/modules/overmap/ships/ship_application.dm`		: Если не нашли по текущему ключу, ищем по реальному ключу (для случая смены fakekey)
+- `code/modules/overmap/ships/controlled_ship_datum.dm`
 
 <!--
   Здесь находится твой никнейм

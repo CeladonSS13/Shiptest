@@ -54,8 +54,6 @@ NO_MAG_GUN_HELPER(automatic/assault/g36sh)
 	empty_alarm = TRUE
 	zoomable = TRUE
 NO_MAG_GUN_HELPER(automatic/assault/g36sh/inteq)
-// /obj/item/gun/ballistic/automatic/assault/g36sh/no_mag
-// 	spawnwithmagazine = FALSE
 
 /obj/item/gun/ballistic/automatic/assault/g36
 	name = "\improper G36"
@@ -92,11 +90,7 @@ NO_MAG_GUN_HELPER(automatic/assault/g36sh/inteq)
 		ATTACHMENT_SLOT_RAIL   = list("x" = 33, "y" = 16),
 		ATTACHMENT_SLOT_SCOPE  = list("x" = 16, "y" = 26),
 	)
-
 NO_MAG_GUN_HELPER(automatic/assault/g36)
-
-// /obj/item/gun/ballistic/automatic/assault/g36/no_mag
-// 		spawnwithmagazine = FALSE
 
 /obj/item/gun/ballistic/automatic/assault/g36/inteq
 	name = "\improper G36m"
@@ -109,6 +103,7 @@ NO_MAG_GUN_HELPER(automatic/assault/g36)
 	empty_alarm = TRUE
 	zoomable = TRUE
 NO_MAG_GUN_HELPER(automatic/assault/g36/inteq)
+
 /obj/item/gun/ballistic/automatic/assault/morita1
 	name = "\improper Morita MK.I"
 	desc = "Стандартная пехотная автоматическая винтовка под калибр .308. Широко применяется армейскими корпусами в Союзе Человечества. Популярность в гражданских кругах заслужила после сьемок в фильме Starboat Troopes."
@@ -138,9 +133,6 @@ NO_MAG_GUN_HELPER(automatic/assault/g36/inteq)
 		)
 	unique_reskin_changes_inhand = TRUE
 NO_MAG_GUN_HELPER(automatic/assault/morita1)
-// /obj/item/gun/ballistic/automatic/assault/morita1/no_mag
-// 	spawnwithmagazine = FALSE
-
 
 // СВД 7.62x54mmR
 /obj/item/gun/ballistic/automatic/marksman/svd
@@ -180,12 +172,6 @@ NO_MAG_GUN_HELPER(automatic/assault/morita1)
 	wield_slowdown = 0.75
 NO_MAG_GUN_HELPER(automatic/marksman/svd)
 
-// /obj/item/gun/ballistic/automatic/marksman/f4/inteq/no_mag
-// 	spawnwithmagazine = FALSE
-
-// /obj/item/gun/ballistic/automatic/powered/gauss/no_mag
-// 	spawnwithmagazine = FALSE
-
 /obj/item/gun/ballistic/automatic/assault/cm82/solfed
 	name = "\improper Model 82 Carbine"
 	desc = "The standard Solarian assault rifle, somewhat outdated, but still accurate, reliable and easy to use. This version was manufactured in the Elysium Republic under license from the Solar Federation for the Elysium Brigade. Chambered in 5.56х42 mm."
@@ -195,4 +181,6 @@ NO_MAG_GUN_HELPER(automatic/marksman/svd)
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/back.dmi'
 	icon_state = "cm82_solfed"
 	item_state = "cm82_solfed"
+	unique_reskin = null
+	unique_reskin_changes_inhand = FALSE // убирает возможность их рескинить по альт-клику
 NO_MAG_GUN_HELPER(automatic/assault/cm82/solfed)

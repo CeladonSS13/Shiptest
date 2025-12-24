@@ -160,7 +160,7 @@
 	uniform = /obj/item/clothing/under/solfed/camo
 	shoes = /obj/item/clothing/shoes/jackboots
 	suit = /obj/item/clothing/suit/armor/vest
-	mask = /obj/item/clothing/mask/gas/sechailer
+	mask = /obj/item/clothing/mask/gas/sechailer/sec
 	r_pocket = null
 	l_pocket = null
 	ears = /obj/item/radio/headset/alt
@@ -172,7 +172,7 @@
 	r_pocket = /obj/item/assembly/flash/handheld
 	backpack_contents = null
 
-	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
+	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet/m10)
 
 /datum/outfit/job/cel/solfed/marine/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -215,6 +215,28 @@
 	. = ..()
 	get_solfed_captain_access(H)
 
+/datum/outfit/job/cel/solfed/intelof
+	name = "SF - Intellegence Officer"
+	job_icon = "sf_komandant"
+
+	jobtype = /datum/job/captain
+
+	id = /obj/item/card/id
+	gloves = /obj/item/clothing/gloves/color/white
+	uniform = /obj/item/clothing/under/rank/security/detective/grey
+	suit = /obj/item/clothing/suit/lawyer/charcoal
+	neck = /obj/item/clothing/neck/tie/black
+	dcoat = null
+	glasses = /obj/item/clothing/glasses/sunglasses
+	head = null
+	accessory = null
+
+	satchel = /obj/item/storage/backpack/satchel/leather
+
+/datum/outfit/job/cel/solfed/captain/post_equip(mob/living/carbon/human/H)
+	. = ..()
+	get_solfed_captain_access(H)
+
 /datum/outfit/job/cel/solfed/captain/admiral
 	name = "SF - Flottenadmiral"
 	job_icon = "sf_admiral"
@@ -235,7 +257,7 @@
 
 	id = /obj/item/card/id/cel/solfed/command/sergeant
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
-	mask = /obj/item/clothing/mask/gas/sechailer
+	mask = /obj/item/clothing/mask/gas/sechailer/sec
 	uniform = /obj/item/clothing/under/solfed/formal
 	shoes = /obj/item/clothing/shoes/combat
 	backpack = /obj/item/storage/backpack/solfed
@@ -403,6 +425,32 @@
 	uniform = /obj/item/clothing/under/rank/medical/gown
 	alt_suit = null
 	shoes = /obj/item/clothing/shoes/sandal/slippers
+	// MARK: SolFed N+S Miner
+
+/datum/outfit/job/cel/solfed/nsminer
+    name = "SolFed - N+S Miner"
+    jobtype = /datum/job/mining
+    job_icon = "shaftminer"
+    faction_icon = "bg_solfed"
+
+    id = /obj/item/card/id/cel/nanotrasen/nslogistic_miner
+    ears = /obj/item/radio/headset/solgov
+    head = /obj/item/clothing/head/hardhat/nanotrasen/blue
+    shoes = /obj/item/clothing/shoes/workboots/mining
+    gloves = /obj/item/clothing/gloves/explorer
+    uniform = /obj/item/clothing/under/nanotrasen/supply/miner
+    suit = /obj/item/clothing/suit/nanotrasen/vest/blue
+    l_pocket = /obj/item/storage/bag/ore
+    r_pocket = /obj/item/pda/shaftminer
+    backpack_contents = list(
+        /obj/item/flashlight/seclite=1,\
+        /obj/item/melee/knife/survival=1,\
+        /obj/item/stack/marker_beacon/ten=1,\
+        /obj/item/radio/weather_monitor=1)
+
+    backpack = /obj/item/storage/backpack/explorer
+    satchel = /obj/item/storage/backpack/satchel/explorer
+    duffelbag = /obj/item/storage/backpack/duffelbag
 
 //							///
 //MARK:	Elysium Brigade
@@ -522,7 +570,7 @@
 	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solfed/camo
 	shoes = /obj/item/clothing/shoes/jackboots/knife
-	head = /obj/item/clothing/head/helmet/solfed/m11
+	head = /obj/item/clothing/head/helmet/bulletproof/x11/solfed
 	belt = /obj/item/storage/belt/military/solfed
 	suit = /obj/item/clothing/suit/armor/vest/marine/medium
 
@@ -532,7 +580,7 @@
 	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solfed/medical
 	shoes = /obj/item/clothing/shoes/jackboots/knife
-	head = /obj/item/clothing/head/helmet/solfed/m11
+	head = /obj/item/clothing/head/helmet/bulletproof/x11/solfed
 	belt = /obj/item/storage/belt/military/solfed/medical
 	suit = /obj/item/clothing/suit/armor/vest/marine
 
@@ -542,6 +590,6 @@
 	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solfed/industrial
 	shoes = /obj/item/clothing/shoes/jackboots/knife
-	head = /obj/item/clothing/head/helmet/solfed/m11
+	head = /obj/item/clothing/head/helmet/bulletproof/x11/solfed
 	belt = /obj/item/storage/belt/utility/full/engi
 	suit = /obj/item/clothing/suit/armor/vest/marine
