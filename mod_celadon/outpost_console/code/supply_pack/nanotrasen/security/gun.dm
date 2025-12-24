@@ -62,7 +62,7 @@ MARK: E-Guns - NT-SL
 	cost = 3500
 
 /datum/supply_pack/faction/nanotrasen/gun/hades
-	name = "E-Rifle - NT-SL AL-655 'Hades'"
+	name = "E-Assault-Rifle - NT-SL AL-655 'Hades'"
 	desc = "Nanotrasen's pride in energy weapon development. This premium assault rifle is the most reliable Nanotrasen-Sharplite energy weapon. Good for burning armored targets!"
 	cost = 6000
 	contains = list(/obj/item/storage/guncase/hades_old)
