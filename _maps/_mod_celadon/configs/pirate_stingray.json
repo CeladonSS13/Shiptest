@@ -1,0 +1,37 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Stingray-class Scouting Ship",
+	"map_short_name": "Stingray",
+	"description": "Судно класса 'Stingray' представляет собой реконструированную модель Clandestine 2 поколения типа 'Покоритель космоса'. Изначальная модель зарекомендовала себя как один из лучших представителей своего класса и имела огромный спрос. Однако компания-производитель сменила вектор деятельности, из-за чего производство судов было прекращено. Большинство сохранившихся моделей до сих пор находятся в рабочем состоянии, хотя их эксплуатационный срок службы давно превысил предписанные лимиты. Некоторым пиратам удалось получить пару рабочих экземпляров в свое владение, а после переоборудовать их под личные нужды.",
+	"map_path": "_maps/_mod_celadon/shuttles/pirate/pirate_stingray.dmm",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 4,
+	"space_spawn": true,
+	"prefix": "RSV",
+	"faction": "/datum/faction/pirate",
+	"tags": [
+		"Выживание"
+	],
+	"namelists": [
+		"PIRATES",
+		"NATURAL_AGGRESSIVE"
+	],
+	"job_slots": {
+		"Deck Boss": {
+			"outfit": "/datum/outfit/job/cel/pirate/captain",
+ 			"officer": true,
+			"slots": 1
+		},
+			"Helmsman": {
+			"outfit": "/datum/outfit/job/cel/pirate/hop",
+			"officer": true,
+			"slots": 1
+		},
+			"Officer": {
+			"outfit": "/datum/outfit/job/cel/pirate/engineer",
+			"officer": true,
+			"slots": 1
+		}
+	}
+}

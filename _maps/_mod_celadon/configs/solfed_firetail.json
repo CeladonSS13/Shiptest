@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
 	"map_name": "Firetail-class Expeditionary Frigate",
 	"map_short_name": "Firetail",
-	"description": "Фрегат класса 'Firetail' с субшаттлом класса 'Vespa' на борту - новейший экспедиционный корабль флота Солнечной Федерации. Он отличается высокой для своей весовой категории тягой, наличием отделения телекоммуникаций и сбалансированным оборудованием, идеально подходящим для долгих миссий в далёком космосе.",
+	"description": "Фрегат класса 'Firetail' с субшаттлом класса 'Vespa' на борту – экспедиционно-патрульный корабль флота Солнечной Федерации, переоборудованный с поддержкой дочерней компании  'NanoTrasen™' - 'North Star™', что отвечала за оснащение корабля шахтёрским оборудованием и предоставлением дополнительных кадров, в лице шахтёров на контрактной основе. Сам корабль отличается наличием отделения телекоммуникаций и сбалансированным оборудованием, делая корабль полностью автономным и гибким, что идеально подходит для долгосрочных боевых миссий.",
 	"map_path": "_maps/_mod_celadon/shuttles/solfed/solfed_firetail.dmm",
 	"subshuttle": "Vespa",
 	"enabled": true,
@@ -41,13 +41,9 @@
 			"outfit": "/datum/outfit/job/cel/solfed/engineer",
 			"slots": 1
 		},
-		"Meeresarzt": {
-			"outfit": "/datum/outfit/job/cel/solfed/doctor/paramedic",
-			"slots": 1
-		},
-		"Marinemechaniker": {
-			"outfit": "/datum/outfit/job/cel/solfed/engineer",
-			"slots": 1
+		"N+S Contracted Miner": {
+			"outfit": "/datum/outfit/job/cel/solfed/nsminer",
+			"slots": 2
 		}
 	}
 }

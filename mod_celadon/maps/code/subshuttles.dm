@@ -151,6 +151,12 @@
 	description = "InteQ"
 	prefix = "sIQSV"
 
+/datum/map_template/shuttle/subshuttles/thunder
+	file_name = "inteq_thunder"
+	name = "Thunder"
+	description = "InteQ"
+	prefix = "sIQSV"
+
 //Субшатлы для руинок
 /datum/map_template/shuttle/ruin/ruin_jox
 	file_name = "syndicate_Jox"
