@@ -37,7 +37,7 @@ MARK: 9x18mm
 	cost = 250
 
 /*
-MARK: 4.63x30mm
+	MARK: 4.63x30mm
 */
 
 /datum/supply_pack/faction/nanotrasen/ammo/wt_ammo_box
@@ -65,7 +65,7 @@ MARK: 4.63x30mm
 	cost = 300 // old - 500
 
 /*
-MARK: ferro pellets
+	MARK: ferro pellets
 */
 
 /datum/supply_pack/faction/nanotrasen/ammo/ferropelletboxcrate

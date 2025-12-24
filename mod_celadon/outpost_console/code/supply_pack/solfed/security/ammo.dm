@@ -9,7 +9,7 @@
 > .357
 > 9x18mm
 > 5.56x42mm
-5.56 HITP Caseless
+> 5.56 HITP Caseless
 > 6.5x57mm
 > 7.62x40mm
 

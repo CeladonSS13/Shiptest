@@ -45,7 +45,7 @@ MARK: .22lr
 */
 
 /*
-MARK: .357
+	MARK: .357
 */
 
 /datum/supply_pack/faction/syndicate/ammo/a357_ammo_box
@@ -67,7 +67,7 @@ MARK: .357
 	cost = 325
 
 /*
-MARK: 9x18mm
+	MARK: 9x18mm
 */
 
 /* 9x18mm - Do not like Syndicate
@@ -97,7 +97,7 @@ MARK: 9x18mm
 */
 
 /*
-MARK: 10x22mm
+	MARK: 10x22mm
 */
 
 /datum/supply_pack/faction/syndicate/ammo/c10mm_ammo_box
@@ -119,7 +119,7 @@ MARK: 10x22mm
 	cost = 350
 
 /*
-MARK: .45
+	MARK: .45
 */
 
 /datum/supply_pack/faction/syndicate/ammo/c45_ammo_box
@@ -147,7 +147,7 @@ MARK: .45
 	cost = 200
 
 /*
-MARK: 5.7x39mm
+	MARK: 5.7x39mm
 */
 
 /datum/supply_pack/faction/syndicate/ammo/c57x39mm_boxcrate
@@ -175,7 +175,7 @@ MARK: 5.7x39mm
 	cost = 300
 
 /*
-MARK: 12 Gauge
+	MARK: 12 Gauge
 */
 
 /datum/supply_pack/faction/syndicate/ammo/buckshot
@@ -209,7 +209,7 @@ MARK: 12 Gauge
 	contains = list(/obj/item/storage/box/techshot)
 
 /*
-MARK: 5.56x42mm
+	MARK: 5.56x42mm
 */
 
 /datum/supply_pack/faction/syndicate/ammo/c556_ammo_box
@@ -232,7 +232,7 @@ MARK: 5.56x42mm
 
 
 /*
-MARK: 6.5mm
+	MARK: 6.5mm
 */
 
 /datum/supply_pack/faction/syndicate/ammo/a65clip_box
@@ -248,7 +248,7 @@ MARK: 6.5mm
 	cost = 250
 
 /*
-MARK: .50 BMG
+	MARK: .50 BMG
 */
 
 /datum/supply_pack/faction/syndicate/ammo/ammoa50
@@ -258,7 +258,7 @@ MARK: .50 BMG
 	cost = 1000
 
 /*
-MARK: FE - Ferromagnetic
+	MARK: FE - Ferromagnetic
 */
 /* // SUNS - NEED TECH DISK
 /datum/supply_pack/faction/syndicate/ammo/ferroslugboxcrate

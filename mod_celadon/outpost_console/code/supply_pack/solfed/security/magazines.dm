@@ -59,8 +59,8 @@
 	contains = list(/obj/item/ammo_box/magazine/f90/empty)
 
 /datum/supply_pack/faction/solfed/magazine/ssg669
-	name = "Marksman - SSG-669C (8x58mm)"
-	desc = "Contains a traditional solarian marksman rifle chambered in 8x58mm Caseless."
+	name = "SSG-669C - Stripper Clip (8x58mm)"
+	desc = "A 5-round stripper clip for the SSG-669C rifle. These rounds do good damage with significant armor penetration."
 	cost = 700
 	contains = list(/obj/item/ammo_box/a858/empty)
 
@@ -125,13 +125,13 @@
 	cost = 500
 
 /datum/supply_pack/faction/solfed/magazine/gauss
-	name = "Gauss Magazine (FE pellet)"
+	name = "Gauss - Magazine (FE pellet)"
 	desc = "Contains a Gauss magazine for the prototype gauss rifle, with a capacity of 24 rounds. Ferromagnetic pellets do okay damage with significant armor penetration."
 	contains = list(/obj/item/ammo_box/magazine/gauss/empty)
 	cost = 550
 
 /datum/supply_pack/faction/solfed/magazine/p16
-	name = "Model 82 Magazine (5.56x42mm)"
+	name = "Model 82 - Magazine (5.56x42mm)"
 	desc = "Contains a 5.56x42mm magazine for the assault rifles, with a capacity of 30 rounds. These rounds do moderate damage with good armor penetration."
 	contains = list(/obj/item/ammo_box/magazine/p16/empty)
 	cost = 550

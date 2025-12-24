@@ -43,7 +43,7 @@ MARK: 9x18mm
 	cost = 200
 
 /*
-MARK: 10x22mm
+	MARK: 10x22mm
 */
 
 /datum/supply_pack/faction/inteq/ammo/c10mm_ammo_box
@@ -71,7 +71,7 @@ MARK: 10x22mm
 	cost = 200
 
 /*
-MARK: .44
+	MARK: .44
 */
 
 /datum/supply_pack/faction/inteq/ammo/a44roum
@@ -93,7 +93,7 @@ MARK: .44
 	cost = 350
 
 /*
-MARK: .357
+	MARK: .357
 */
 
 /datum/supply_pack/faction/inteq/ammo/a357_ammo_box
@@ -115,7 +115,7 @@ MARK: .357
 	cost = 325
 
 /*
-MARK: 12 Gauge
+	MARK: 12 Gauge
 */
 
 /datum/supply_pack/faction/inteq/ammo/buckshot
@@ -149,7 +149,7 @@ MARK: 12 Gauge
 	contains = list(/obj/item/storage/box/techshot)
 
 /*
-MARK: 7.62
+	MARK: 7.62
 */
 
 /datum/supply_pack/faction/inteq/ammo/a762_ammo_box
@@ -172,7 +172,7 @@ MARK: 7.62
 	cost = 450
 
 /*
-MARK: .308
+	MARK: .308
 */
 
 /datum/supply_pack/faction/inteq/ammo/a308_ammo_box
@@ -194,7 +194,7 @@ MARK: .308
 	cost = 250
 
 /*
-MARK: 5.56x45mm
+	MARK: 5.56x45mm
 */
 
 /datum/supply_pack/faction/inteq/ammo/box556_box

@@ -61,7 +61,7 @@ MARK: .22lr
 */
 
 /*
-MARK: .38
+	MARK: .38
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoc38
@@ -73,7 +73,7 @@ MARK: .38
 	crate_name = "ammo crate"
 
 /*
-MARK: 9x18
+	MARK: 9x18
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoc9mm_ammo_box
@@ -101,7 +101,7 @@ MARK: 9x18
 	cost = 200
 
 /*
-MARK: 10x22
+	MARK: 10x22
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoc10mm_ammo_box
@@ -129,7 +129,7 @@ MARK: 10x22
 // 	cost = 200
 
 /*
-MARK: .44
+	MARK: .44
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoa44roum
@@ -151,7 +151,7 @@ MARK: .44
 	cost = 250
 
 /*
-MARK: .45
+	MARK: .45
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoc45_ammo_box
@@ -179,7 +179,7 @@ MARK: .45
 // 	cost = 200
 
 /*
-MARK: .357
+	MARK: .357
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoa357_ammo_box
@@ -201,7 +201,7 @@ MARK: .357
 	cost = 325
 
 /*
-MARK: 4.6x30
+	MARK: 4.6x30
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoc46x30mm_boxcrate
@@ -223,7 +223,7 @@ MARK: 4.6x30
 	cost = 375
 
 /*
-MARK: 5.7x39
+	MARK: 5.7x39
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoc57x39mm_boxcrate
@@ -245,7 +245,7 @@ MARK: 5.7x39
 	cost = 475
 
 /*
-MARK: 5.56 HITP caseless
+	MARK: 5.56 HITP caseless
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoc556mmHITP_ammo_box
@@ -273,7 +273,7 @@ MARK: 5.56 HITP caseless
 // 	cost = 165
 
 /*
-MARK: 12 Gauge
+	MARK: 12 Gauge
 */
 
 /datum/supply_pack/faction/independent/ammo/ammobuckshot
@@ -307,7 +307,7 @@ MARK: 12 Gauge
 	contains = list(/obj/item/storage/box/techshot)
 
 /*
-MARK: .410
+	MARK: .410
 */
 
 /datum/supply_pack/faction/independent/ammo/a410_buckshot
@@ -329,7 +329,7 @@ MARK: .410
 	cost = 2000
 
 /*
-MARK: 5.56x42
+	MARK: 5.56x42
 */
 
 /* Inclusive Syndicate
@@ -353,7 +353,7 @@ MARK: 5.56x42
 */
 
 /*
-MARK: 5.56x45
+	MARK: 5.56x45
 */
 
 // /datum/supply_pack/faction/independent/ammo/box556_box
@@ -369,7 +369,7 @@ MARK: 5.56x45
 // 	cost = 650
 
 /*
-MARK: 7.62x40
+	MARK: 7.62x40
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoa762_ammo_box
@@ -391,7 +391,7 @@ MARK: 7.62x40
 	cost = 600
 
 /*
-MARK: .45-70
+	MARK: .45-70
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoa4570_box
@@ -451,7 +451,7 @@ MARK: .45-70
 // 	cost = 1300
 
 /*
-MARK: 6.5x57mm
+	MARK: 6.5x57mm
 */
 
 /datum/supply_pack/faction/independent/ammo/a65clip_box
@@ -467,7 +467,7 @@ MARK: 6.5x57mm
 	cost = 600
 
 /*
-MARK: 8x50mm
+	MARK: 8x50mm
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoc8x50mm_boxcrate
@@ -489,7 +489,7 @@ MARK: 8x50mm
 	cost = 350
 
 /*
-MARK: 8x58mm
+	MARK: 8x58mm
 */
 /datum/supply_pack/faction/independent/ammo/ammoa858
 	name = "8x58mm Ammo Box"
@@ -498,7 +498,7 @@ MARK: 8x58mm
 	cost = 450
 
 /*
-MARK: .50 BMG
+	MARK: .50 BMG
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoa50
@@ -509,7 +509,7 @@ MARK: .50 BMG
 
 
 /*
-MARK: ferro pellets
+	MARK: ferro pellets
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoferropelletboxcrate
@@ -519,7 +519,7 @@ MARK: ferro pellets
 	cost = 350
 
 /*
-MARK: ferroslugs
+	MARK: ferroslugs
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoferroslugboxcrate
@@ -529,7 +529,7 @@ MARK: ferroslugs
 	cost = 300
 
 /*
-MARK: ferro lances
+	MARK: ferro lances
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoferrolanceboxcrate
