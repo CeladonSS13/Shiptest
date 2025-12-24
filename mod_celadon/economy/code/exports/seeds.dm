@@ -24,7 +24,7 @@
 		discoveredPlants[S.type] = S.potency
 
 /datum/export/seed/potency
-	cost = 1 // Gets multiplied by potency and rarity.
+	cost = 2.5 // Gets multiplied by potency and rarity.
 	unit_name = "improved plant sample"
 	elasticity_coeff = 0.02
 	export_types = list(/obj/item/seeds)
@@ -36,6 +36,6 @@
 	if(!cost)
 		return 0
 
-	var/potDiff = (S.potency - discoveredPlants[S.type])
+	var/potDiff = (S.potency - discoveredPlants[S.type]) / 3
 
 	return round(..() * potDiff)
