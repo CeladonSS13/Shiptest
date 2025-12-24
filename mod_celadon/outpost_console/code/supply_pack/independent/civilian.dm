@@ -286,11 +286,3 @@ MARK: Decoration / flooring
 	contains = list(/obj/item/storage/box/fountainpens)
 	crate_name = "calligraphy crate"
 	crate_type = /obj/structure/closet/crate/wooden
-
-/datum/supply_pack/faction/independent/civilian/garland
-	name = "Упаковка с гирляндами"
-	desc = "Похоже, пришло время вешать это на стены. Содержит в себе 50 гирлянд"
-	cost = 50
-	contains = list(/obj/item/stack/garland_pack/fifty)
-	crate_name = "garland wooden create"
-	crate_type = /obj/structure/closet/crate/wooden/garland
