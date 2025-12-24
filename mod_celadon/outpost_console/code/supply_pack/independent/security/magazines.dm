@@ -133,7 +133,7 @@
 	name = "SKM - Extended Magazine (7.62x40mm)"
 	desc = "Contains a 7.62x40mm magazine for the SKM rifles, containing 40 rounds."
 	contains = list(/obj/item/ammo_box/magazine/skm_762_40/extended/empty)
-	cost = 2800
+	cost = 1000
 
 /**
 	MARK:	Обоймы
@@ -208,13 +208,13 @@
 
 /datum/supply_pack/faction/independent/magazine/morita_ammo_small
 	name = "Morita MK1 - Short Magazine (.308)"
-	desc = "Contains two .308 caliber magazines for the Morita family rifles, with a capacity of 10 rounds."
+	desc = "Contains one .308 caliber magazines for the Morita family rifles, with a capacity of 10 rounds."
 	contains = list(/obj/item/ammo_box/magazine/morita1/small/empty)
 	cost = 500
 
 /datum/supply_pack/faction/independent/magazine/morita_ammo
 	name = "Morita MK1 - Standard Magazine (.308)"
-	desc = "Contains two .308 caliber magazines for the Morita family rifles, with a capacity of 25 rounds."
+	desc = "Contains one .308 caliber magazines for the Morita family rifles, with a capacity of 25 rounds."
 	contains = list(/obj/item/ammo_box/magazine/morita1/empty)
 	cost = 1000
 
@@ -222,7 +222,7 @@
 	name = "Morita - MK1 Drum Magazine (.308)"
 	desc = "Contains .308 caliber drum magazine for the Morita family rifles, with a capacity of 50 rounds."
 	contains = list(/obj/item/ammo_box/magazine/morita1/drum/empty)
-	cost = 5000
+	cost = 2000
 
 // //Магазины для оружия
 
@@ -237,13 +237,13 @@
 	name = "Saiga - Standard Magazine (.410)"
 	desc = "Contains .410 caliber magazine for the Saiga-410 shotgun, containing 9 rounds."
 	contains = list(/obj/item/ammo_box/magazine/saiga/medium/empty)
-	cost = 1500
+	cost = 1250
 
 /datum/supply_pack/faction/independent/magazine/a410_saiga_drum
 	name = "Saiga - Drum Magazine (.410)"
 	desc = "Contains .410 caliber drum magazine for the Saiga-410 shotgun, containing 14 rounds."
 	contains = list (/obj/item/ammo_box/magazine/saiga/drum/empty)
-	cost = 3000
+	cost = 2000
 
 // ===========================================================
 
