@@ -6,16 +6,43 @@
 [*] - отсутствуют.
 [-] - отключены.
 
+> .357
 > 9x18mm
-> 5.56 Caseless
 > 5.56x42mm
+5.56 HITP Caseless
+> 6.5x57mm
 > 7.62x40mm
+
 > Ferroslugs
 > Ferro Pellets
 > Ferro Lances
-> 8x58mm Caseless
+> 8x58mm
+*/
 
-MARK: 9x18mm
+/*
+	MARK: .357
+*/
+
+/datum/supply_pack/faction/solfed/ammo/a357_ammo_box
+	name = ".357 Ammo Box"
+	desc = "Contains a 48-round .357 box for revolvers such as the R-23 'Viper' revolver and the HP Firebrand."
+	contains = list(/obj/item/storage/box/ammo/a357)
+	cost = 300
+
+/datum/supply_pack/faction/solfed/ammo/a357hp_ammo_box
+	name = ".357 HP Ammo Box"
+	desc = "Contains a 48-round .357 box loaded with hollow point ammo, great against unarmored targets."
+	contains = list(/obj/item/storage/box/ammo/a357_hp)
+	cost = 400
+
+/datum/supply_pack/faction/solfed/ammo/a357match_ammo_box
+	name = ".357 Match Ammo Box"
+	desc = "Contains a 48-round .357 match box for better performance against armor."
+	contains = list(/obj/item/storage/box/ammo/a357_match)
+	cost = 400
+
+/*
+	MARK: 9x18mm
 */
 
 /datum/supply_pack/faction/solfed/ammo/c9mm_ammo_box
@@ -43,7 +70,7 @@ MARK: 9x18mm
 	cost = 200
 
 /*
-MARK: 5.56x45mm
+	MARK: 5.56x45mm
 */
 
 /datum/supply_pack/faction/solfed/ammo/box556_box
@@ -65,7 +92,7 @@ MARK: 5.56x45mm
 	cost = 1300
 
 /*
-MARK: 5.56 Caseless
+	MARK: 5.56 HITP Caseless
 */
 
 /datum/supply_pack/faction/solfed/ammo/c556mmHITP_ammo_box
@@ -93,39 +120,101 @@ MARK: 5.56 Caseless
 	cost = 150
 
 /*
-MARK: 5.56x42mm
+	MARK: 5.56x42mm
 */
 
 /datum/supply_pack/faction/solfed/ammo/a556_ammo_box
 	name = "5.56x42mm Ammo Box"
 	desc = "Contains one 60-round 5.56x42mm box."
 	contains = list(/obj/item/storage/box/ammo/a556_42)
-	cost = 300
+	cost = 700
 
 /datum/supply_pack/faction/solfed/ammo/a556_ap
 	name = "5.56x42mm Armour Piercing Ammo Box"
 	desc = "Contains one 60-round 5.56x42mm Armour Piercing box."
 	contains = list(/obj/item/storage/box/ammo/a556_42/ap)
-	cost = 375
+	cost = 1000
 
 /datum/supply_pack/faction/solfed/ammo/a556_hp
 	name = "5.56x42mm Hollow Point Ammo Box"
 	desc = "Contains one 60-round 5.56x42mm Hollow Point box."
 	contains = list(/obj/item/storage/box/ammo/a556_42/hp)
-	cost = 375
+	cost = 1000
 
 /*
-MARK: 7.62x40mm
+	MARK: 6.5x57mm
 */
+
+/datum/supply_pack/faction/solfed/ammo/a65clip_box
+	name = "6.5x57mm Ammo Box"
+	desc = "Contains a twenty-round 6.5x57mm ammo box for various sniper rifles such as the CM-F90 and the Boomslang series."
+	contains = list(/obj/item/storage/box/ammo/a65clip)
+	cost = 500
+
+/datum/supply_pack/faction/solfed/ammo/ammoa65clip_trackers
+	name = "6.5x57mm Tracker Shell"
+	desc = "Contains a 10-round 6.5x57mm tracker box for various sniper rifles such as the CM-F90 and the Boomslang series."
+	contains = list(/obj/item/storage/box/ammo/a65clip/trac)
+	cost = 600
+
+/*
+	MARK: 7.62x40mm
+*/
+
+/datum/supply_pack/faction/solfed/ammo/ammoa762_ammo_box
+	name = "7.62x40mm Ammo Box"
+	desc = "Contains one 60-round 7.62x40mm box for the SKM rifles."
+	contains = list(/obj/item/storage/box/ammo/a762_40)
+	cost = 350
+
+/datum/supply_pack/faction/solfed/ammo/ammoa762_ap
+	name = "7.62x40mm AP Ammo Box"
+	desc = "Contains one 60-round 7.62x40mm Armour Piercing box for the SKM rifles."
+	contains = list(/obj/item/storage/box/ammo/a762_40/ap)
+	cost = 600
+
+/datum/supply_pack/faction/solfed/ammo/ammoa762_hp
+	name = "7.62x40mm HP Ammo Box"
+	desc = "Contains one 60-round 7.62x40mm Hollow Point box for the SKM rifles."
+	contains = list(/obj/item/storage/box/ammo/a762_40/hp)
+	cost = 600
 
 /datum/supply_pack/faction/solfed/ammo/a762_40_rubber
 	name = "7.62x40mm Rubber Ammo Box"
 	desc = "A box of standard 7.62x40mm rubber ammo."
 	contains = list(/obj/item/storage/box/ammo/a762_40/rubber)
-	cost = 400
+	cost = 800
 
 /*
-MARK: Ferroslugs
+	MARK: .308
+*/
+
+/datum/supply_pack/faction/solfed/ammo/a308_box
+	name = ".308 Ammo Box"
+	desc = "Contains a 40-round .308 box."
+	contains = list(/obj/item/storage/box/ammo/a308)
+	cost = 650
+
+// /datum/supply_pack/faction/solfed/ammo/a308_rubber_box
+// 	name = ".308 Rubber Ammo Box"
+// 	desc = "Contains a 40-round .308 box loaded with less-than-lethal rubber rounds."
+// 	contains = list(/obj/item/storage/box/ammo/a308/a308_rub)
+// 	cost = 300
+
+/datum/supply_pack/faction/solfed/ammo/a308_sp_box
+	name = ".308 SP Ammo Box"
+	desc = "Contains a 40-round .308 box loaded with soft point ammo, great against unarmored targets."
+	contains = list(/obj/item/storage/box/ammo/a308/hp)
+	cost = 800
+
+// /datum/supply_pack/faction/solfed/ammo/a308_ap_box
+// 	name = ".308 AP Ammo Box"
+// 	desc = "Contains a 40-round .308 box loaded with armor piercing ammo."
+// 	contains = list(/obj/item/storage/box/ammo/a308/ap)
+// 	cost = 1300
+
+/*
+	MARK: Ferroslugs
 */
 
 /datum/supply_pack/faction/solfed/ammo/ferroslugboxcrate
@@ -141,7 +230,7 @@ MARK: Ferroslugs
 	cost = 225
 
 /*
-MARK: Ferro Pellets
+	MARK: Ferro Pellets
 */
 
 /datum/supply_pack/faction/solfed/ammo/ferropelletboxcrate
@@ -157,7 +246,7 @@ MARK: Ferro Pellets
 	cost = 250
 
 /*
-MARK: Ferro Lances
+	MARK: Ferro Lances
 */
 
 /datum/supply_pack/faction/solfed/ammo/ferrolanceboxcrate
@@ -173,7 +262,7 @@ MARK: Ferro Lances
 	cost = 350
 
 /*
-MARK: 8x58mm Caseless
+	MARK: 8x58mm
 */
 
 /datum/supply_pack/faction/solfed/ammo/a858

@@ -378,17 +378,17 @@ MARK: 7.62x40
 	contains = list(/obj/item/storage/box/ammo/a762_40)
 	cost = 350
 
-// /datum/supply_pack/faction/independent/ammo/ammoa762_ap
-// 	name = "7.62x40mm AP Ammo Box"
-// 	desc = "Contains one 60-round 7.62x40mm Armour Piercing box for the SKM rifles."
-// 	contains = list(/obj/item/storage/box/ammo/a762_40/ap)
-// 	cost = 450
+/datum/supply_pack/faction/independent/ammo/ammoa762_ap
+	name = "7.62x40mm AP Ammo Box"
+	desc = "Contains one 60-round 7.62x40mm Armour Piercing box for the SKM rifles."
+	contains = list(/obj/item/storage/box/ammo/a762_40/ap)
+	cost = 600
 
 /datum/supply_pack/faction/independent/ammo/ammoa762_hp
 	name = "7.62x40mm HP Ammo Box"
 	desc = "Contains one 60-round 7.62x40mm Hollow Point box for the SKM rifles."
 	contains = list(/obj/item/storage/box/ammo/a762_40/hp)
-	cost = 450
+	cost = 600
 
 /*
 MARK: .45-70
@@ -407,7 +407,7 @@ MARK: .45-70
 	cost = 250
 
 /*
-MARK: .300
+	MARK: .300
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoa300_box
@@ -421,6 +421,10 @@ MARK: .300
 	desc = "Contains a ten-round .300 TRAC ammo box for sniper rifles such as the HP Scout."
 	contains = list(/obj/item/storage/box/ammo/a300/trac)
 	cost = 250 //TTD 310
+
+/*
+	MARK: .308
+*/
 
 /datum/supply_pack/faction/independent/ammo/a308_box
 	name = ".308 Ammo Box"
@@ -447,23 +451,23 @@ MARK: .300
 // 	cost = 1300
 
 /*
-MARK: 7.5x64
+MARK: 6.5x57mm
 */
 
 /datum/supply_pack/faction/independent/ammo/a65clip_box
 	name = "6.5x57mm Ammo Box"
 	desc = "Contains a twenty-round 6.5x57mm ammo box for various sniper rifles such as the CM-F90 and the Boomslang series."
 	contains = list(/obj/item/storage/box/ammo/a65clip)
-	cost = 400
+	cost = 500
 
 /datum/supply_pack/faction/independent/ammo/ammoa65clip_trackers
 	name = "6.5x57mm Tracker Shell"
 	desc = "Contains a 10-round 6.5x57mm tracker box for various sniper rifles such as the CM-F90 and the Boomslang series."
 	contains = list(/obj/item/storage/box/ammo/a65clip/trac)
-	cost = 300
+	cost = 600
 
 /*
-MARK: 8x50
+MARK: 8x50mm
 */
 
 /datum/supply_pack/faction/independent/ammo/ammoc8x50mm_boxcrate
@@ -485,9 +489,8 @@ MARK: 8x50
 	cost = 350
 
 /*
-MARK: 8x58
+MARK: 8x58mm
 */
-
 /datum/supply_pack/faction/independent/ammo/ammoa858
 	name = "8x58mm Ammo Box"
 	desc = "Contains a 20-round 8x58 ammo box for Solarian-manufactured sniper rifles, such as the SSG-69."
