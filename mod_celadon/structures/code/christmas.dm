@@ -49,9 +49,11 @@
 	if(do_after(user, 50, target = src))
 		var/obj/item/stack/garland_pack/M = new(loc)
 		transfer_fingerprints_to(M)
-		if(user.put_in_hands(M, TRUE))
-			playsound(src, 'sound/items/deconstruct.ogg', 50, TRUE)
-			qdel(src)
+		if(!user.put_in_hands(M, TRUE))
+			qdel(M)
+			return
+		playsound(src, 'sound/items/deconstruct.ogg', 50, TRUE)
+		qdel(src)
 
 // MARK: SIGN
 
