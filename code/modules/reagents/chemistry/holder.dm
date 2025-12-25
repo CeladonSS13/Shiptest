@@ -259,6 +259,7 @@
 	var/transfer_log = list()
 	var/r_to_send = list()	// Validated list of reagents to be exposed
 	var/reagents_to_remove = list()
+	var/part = amount / src.total_volume	// [/CELADON-EDIT]
 	if(!round_robin)
 		var/part = amount / src.total_volume
 		for(var/datum/reagent/reagent as anything in cached_reagents)
@@ -301,9 +302,9 @@
 			to_transfer = max(to_transfer - transfer_amount , 0)
 			if(methods)
 				if(istype(target_atom, /obj/item/organ))
-					R.expose_single(reagent, target, methods, transfer_amount, show_message)
+					R.expose_single(reagent, target, methods, part, show_message)	//	[CELADON-EDIT]
 				else
-					R.expose_single(reagent, target_atom, methods, transfer_amount, show_message)
+					R.expose_single(reagent, target_atom, methods, part, show_message)	//	[CELADON-EDIT]
 				reagent.on_transfer(target_atom, methods, transfer_amount * multiplier)
 			remove_reagent(reagent.type, transfer_amount)
 			var/list/reagent_qualities = list(REAGENT_TRANSFER_AMOUNT = transfer_amount)
