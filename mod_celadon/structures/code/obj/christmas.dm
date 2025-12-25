@@ -57,7 +57,7 @@
 /obj/structure/streetdecor/lamp/wreathpole
 	name = "wreath pole"
 	desc = "A metal pole with a fancy wreath."
-	icon_state = "wreath_post"
+	icon_state = "lamp_post_wreath"
 	layer = 4
 	density = TRUE
 	anchored = TRUE
