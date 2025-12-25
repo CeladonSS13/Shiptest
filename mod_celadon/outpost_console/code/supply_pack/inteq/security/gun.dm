@@ -72,6 +72,6 @@
 /datum/supply_pack/faction/inteq/gun/exp/barghest
 	name = "P-Assault-Rifle - PP20 'Barghest' APR"
 	desc = "Contains a high-energy, automatic laser rifle. Refitted for IRMG use."
-	cost = 20000
+	cost = 10000
 	contains = list(/obj/item/storage/guncase/barghest)
 	crate_name = "laser crate"

@@ -2,7 +2,7 @@
 	category = "Security - Magazines"
 
 /*
-MARK: VI
+	MARK: VI
 */
 
 /datum/supply_pack/faction/nanotrasen/magazine/a357_mag
@@ -30,7 +30,7 @@ MARK: VI
 	contains = list(/obj/item/ammo_box/magazine/wt550m9/empty)
 
 /*
-MARK: Energy weapons
+	MARK: Energy weapons
 */
 
 /datum/supply_pack/faction/nanotrasen/magazine/guncell
