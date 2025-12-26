@@ -43,6 +43,34 @@ MARK: 9x18mm
 	cost = 200
 
 /*
+	MARK: 4.63x30mm
+*/
+
+/datum/supply_pack/faction/inteq/ammo/wt_ammo_box
+	name = "4.6x30mm ammo box"
+	desc = "4.6x30mm ammo box for guns like the P46 Schnauzer. Contains 50 shells"
+	contains = list(/obj/item/storage/box/ammo/c46x30mm)
+	cost = 300 // old - 500
+
+/datum/supply_pack/faction/inteq/ammo/wt_ammo_box_ap
+	name = "4.6x30mm AP ammo box"
+	desc = "4.6x30mm AP ammo box for guns like the P46 Schnauzer. Contains 50 shells"
+	contains = list(/obj/item/storage/box/ammo/c46x30mm/ap)
+	cost = 600 // old - 1000
+
+/datum/supply_pack/faction/inteq/ammo/wt_ammo_box_hp
+	name = "4.6x30mm HP ammo box"
+	desc = "4.6x30mm HP ammo box for guns like the P46 Schnauzer. Contains 50 shells"
+	contains = list(/obj/item/storage/box/ammo/c46x30mm/hp)
+	cost = 375 // old - 700
+
+/datum/supply_pack/faction/inteq/ammo/wt_ammo_box_rubber
+	name = "4.6x30mm Rubber ammo box"
+	desc = "4.6x30mm Rubber ammo box for guns like the P46 Schnauzer. Contains 50 shells"
+	contains = list(/obj/item/storage/box/ammo/c46x30mm/rubber)
+	cost = 300 // old - 500
+
+/*
 	MARK: 10x22mm
 */
 

@@ -76,13 +76,6 @@
 // MARK: Sharplite Ammo
 
 /*
-/datum/supply_pack/faction/nanotrasen/magazine/podium_mag
-	name = "Podium Magazine"
-	desc = "Contains a 4.6x30mm magazine for the Podium and Schnauzer pistols, with a capacity of 12 rounds."
-	contains = list(/obj/item/ammo_box/magazine/m46_30_podium)
-	cost = 25
-
-
 /datum/supply_pack/faction/nanotrasen/magazine/wt550_mag
 	name = "Resolution Auto Rifle Magazine"
 	desc = "Contains a 20-round magazine for the Resolution Auto Rifle. Each magazine is designed to facilitate rapid tactical reloads."

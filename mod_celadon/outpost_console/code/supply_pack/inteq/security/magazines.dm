@@ -31,6 +31,12 @@
 	contains = list(/obj/item/ammo_box/magazine/m9mm_rattlesnake/empty)
 	cost = 300
 
+/datum/supply_pack/faction/nanotrasen/magazine/podium_mag
+	name = "P46 Schnauzer - Magazine (4.6x30mm)"
+	desc = "Contains a 4.6x30mm magazine for the Podium and Schnauzer pistols, with a capacity of 12 rounds."
+	contains = list(/obj/item/ammo_box/magazine/m46_30_podium)
+	cost = 300
+
 /datum/supply_pack/faction/inteq/magazine/m20_auto_elite
 	name = "Pinscher - Magazine (.44)"
 	desc = "Contains a .44 Roumain magazine for the Auto Elite pistol, with a capacity of 9 rounds."
