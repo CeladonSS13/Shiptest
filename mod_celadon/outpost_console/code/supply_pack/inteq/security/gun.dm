@@ -6,12 +6,34 @@
 	desc = "A high-powered revolver modified and used by professional IRMG mercenaries. Uses .357 ammo."
 	contains = list(/obj/item/storage/guncase/horizonx/inteq)
 	cost = 1750
+/* MARK: .357
+bullet
+	damage = 45
+	armour_penetration = 10
+match
+	damage = 45
+	armour_penetration = 10
+hp
+	damage = 50
+	armour_penetration = -20
+*/
 
 /datum/supply_pack/faction/inteq/gun/commissioner
 	name = "Pistol - Commissioner (9x18mm)"
 	desc = "Contains a modified Commander pistol, adjusted to fit the IRMG's standards and painted in the brown and gold of all IRMG firearms."
 	cost = 750
 	contains = list(/obj/item/storage/guncase/commissioner)
+/* MARK: 9x18mm
+bullet
+	damage = 20
+	armour_penetration = -20
+ap
+	damage = 18
+	armour_penetration = 10
+hp
+	damage = 30
+	armour_penetration = -30
+*/
 
 /datum/supply_pack/faction/inteq/gun/pinscher
 	name = "Pistol - Pinscher Heavy Pistol (.44)"
@@ -19,6 +41,14 @@
 	cost = 1250
 	contains = list(/obj/item/storage/guncase/pistol/pinscher)
 	crate_name = "pistol crate"
+/* MARK: .44
+bullet
+	damage = 35
+	armour_penetration = 0
+hp
+	damage = 50
+	armour_penetration = 0
+*/
 
 /datum/supply_pack/faction/inteq/gun/kingsnake
 	name = "Machinepistol - Kingsnake (9x18mm)"
@@ -26,6 +56,17 @@
 	cost = 2500
 	contains = list(/obj/item/storage/guncase/kingsnake)
 	crate_name = "Machinepistol crate"
+/* MARK: 9x18mm
+bullet
+	damage = 20
+	armour_penetration = -20
+ap
+	damage = 18
+	armour_penetration = 10
+hp
+	damage = 30
+	armour_penetration = -30
+*/
 
 /datum/supply_pack/faction/inteq/gun/mastiff
 	name = "Auto-Shotgun - Mastiff (12g)"
@@ -40,6 +81,34 @@
 	cost = 3000
 	contains = list(/obj/item/storage/guncase/mongrel)
 	crate_name = "SMG crate"
+/* MARK: 10x22mm
+bullet
+	damage = 25
+	armour_penetration = -20
+ap
+	damage = 23
+	armour_penetration = 10
+hp
+	damage = 35
+	armour_penetration = -30
+*/
+
+/datum/supply_pack/faction/inteq/gun/vi/podium_inteq
+	name = "Pistol - P46 Schnauzer (4.6x30mm)"
+	desc = "Contains a compact armor-piercing sidearm, chambered in 4.6x30mm."
+	cost = 2250
+	contains = list(/obj/item/storage/guncase/pistol/podium_inteq)
+/* MARK: 4.6x30mm
+bullet
+	damage = 20
+	armour_penetration = 10
+ap
+	damage = 18
+	armour_penetration = 40
+hp
+	damage = 30
+	armour_penetration = -10
+*/
 
 /datum/supply_pack/faction/inteq/gun/inteq_skm
 	name = "Assault-Rifle - SKM-44 (7.62x40mm)"
@@ -47,12 +116,34 @@
 	cost = 5000
 	contains = list(/obj/item/storage/guncase/skm_inteq)
 	crate_name = "auto rifle crate"
+/* MARK: 7.62x40mm
+bullet
+	damage = 30
+	armour_penetration = 20
+ap
+	damage = 27
+	armour_penetration = 40
+hp
+	damage = 40
+	armour_penetration = 10
+*/
 
 /datum/supply_pack/faction/inteq/gun/g36
 	name = "Assault-Rifle - G36M (5.56x45mm)"
 	desc = "An extremely powerful modified G36 to satisfy every gun need a pro mercenary can have. Chambered in 5.56x45mm"
 	contains = list(/obj/item/storage/guncase/g36/inteq)
 	cost = 8000
+/* MARK: 5.56x45mm
+bullet
+	damage = 25
+	armour_penetration = 20
+a856
+	damage = 30
+	armour_penetration = 25
+m903
+	damage = 20
+	armour_penetration = 40
+*/
 
 /datum/supply_pack/faction/inteq/gun/rottweiler
 	name = "LMG - KM-05 Rottweiler (.308)"
@@ -67,6 +158,17 @@
 	cost = 3500
 	contains = list(/obj/item/storage/guncase/ssg04)
 	crate_name = "dmr crate"
+/* MARK: .308
+bullet
+	damage = 30
+	armour_penetration = 40
+ap
+	damage = 28
+	armour_penetration = 60
+hp
+	damage = 60
+	armour_penetration = -10
+*/
 
 // HADES II - Inteq
 /datum/supply_pack/faction/inteq/gun/exp/barghest

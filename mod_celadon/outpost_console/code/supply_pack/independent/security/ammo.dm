@@ -35,6 +35,321 @@
 > ferro lances
 > .410
 
+// Пистолеты
+
+/* MARK: 9x18mm
+bullet
+	damage = 20
+	armour_penetration = -20
+ap
+	damage = 18
+	armour_penetration = 10
+hp
+	damage = 30
+	armour_penetration = -30
+*/
+- Используют:
+- Пистолеты: Challenger / Challenger (NT) / Glock / Commissioner (IQ)
+- Авто-пистолеты: Kingsnake (IQ) / CM-70 (SF) / ~Rattlesnake (S)~
+- SMG: Saber (NT) / Vector (NT) / CM-5 (SF)
+
+
+/* MARK: 10x22mm
+bullet
+	damage = 25
+	armour_penetration = -20
+ap
+	damage = 23
+	armour_penetration = 10
+hp
+	damage = 35
+	armour_penetration = -30
+*/
+- Почти как .45 калибр
+- Используют:
+- Пистолеты: Ringneck / PC-76 'Ringneck' (S)
+- SMG: SKM-44v Mongrel (IQ)
+
+/* MARK: .45
+bullet
+	damage = 25
+	armour_penetration = -20
+ap
+	damage = 22
+	armour_penetration = 10
+hp
+	damage = 37
+	armour_penetration = -30
+*/
+- Почти как 10x22mm
+- Используют:
+- Пистолеты: Candor / USP
+- SMG: Cobra-20 / C-20r 'Cobra' (S)
+
+// Револьверы
+
+/* MARK: .38
+bullet
+	damage = 20
+	armour_penetration = 20
+match
+	damage = 20
+	armour_penetration = -10
+*/
+- Используют: 
+- Револьверы: HP Detective
+- Винтовки: Flaming Arrow Lever Action
+
+/* MARK: .357
+bullet
+	damage = 45
+	armour_penetration = 10
+match
+	damage = 45
+	armour_penetration = 10
+hp
+	damage = 50
+	armour_penetration = -20
+*/
+- Используют: 
+- Авто-пистолеты: CM-357 (SF)
+- Револьверы: Firebrand / Viper-23 /  Horizon-X (IQ) / Rhino (NT) / R-23 'Viper' (S)
+- Винтовки: Absolution Lever Action
+
+/* MARK: .44
+bullet
+	damage = 35
+	armour_penetration = 0
+hp
+	damage = 50
+	armour_penetration = 0
+*/
+- Используют: 
+- Револьверы: Shadow / Montagne 
+- Пистолеты: M20 Auto Elite / Pinscher Heavy Pistol (IQ)
+- SMG: Firestorm
+
+/* MARK: .45-70
+bullet
+	damage = 50
+	armour_penetration = 20
+match
+	damage = 45
+	armour_penetration = 30
+hp
+	damage = 70
+	armour_penetration = -10
+*/
+- Используют: 
+- Винтовки: Beacon Break Action
+
+
+// Ружейные
+/* MARK: 5.56x42mm
+bullet
+	damage = 20
+	armour_penetration = 20
+ap
+	damage = 22
+	armour_penetration = 40
+hp
+	damage = 35
+	armour_penetration = 10
+*/
+- Используют: 
+- Штурмовые: CM-82 / SMR-80 (S) / SAW-80 (S)
+- Снапер-DMR: SBR-80 (S)
+
+/* MARK: 8x50mmR
+bullet
+	damage = 37
+	armour_penetration = 30
+match
+	damage = 40
+	armour_penetration = 27
+hp
+	damage = 50
+	armour_penetration = 10
+*/
+- Используют: 
+- Винтовки: Illestren / Model 23 'Woodsman' / 
+
+
+/* MARK: 7.62x40mm
+bullet
+	damage = 30
+	armour_penetration = 20
+ap
+	damage = 27
+	armour_penetration = 40
+hp
+	damage = 40
+	armour_penetration = 10
+*/
+- Используют: 
+- Винтовки: Super Sporter
+- Штурмовые: SKM-24 / SKM-44 (IQ) / CM-24 (SF)
+- LMG: CM-40 (SF)
+
+/* MARK: .308
+bullet
+	damage = 30
+	armour_penetration = 40
+ap
+	damage = 28
+	armour_penetration = 60
+hp
+	damage = 60
+	armour_penetration = -10
+*/
+- Используют: 
+- Винтовки:
+- Штурмовые: Morita Mk.I
+- LMG: KM-05 Rottweiler (IQ)
+- Снайпер: SsG-04 (IQ) / CM-F4 (SF)
+
+/* MARK: 5.56x45mm
+bullet
+	damage = 25
+	armour_penetration = 20
+a856
+	damage = 30
+	armour_penetration = 25
+m903
+	damage = 20
+	armour_penetration = 40
+*/
+- Используют:
+- Штурмовые: G36M (IQ)
+
+// SMG
+
+/* MARK: 5.7x39mm
+bullet
+	damage = 20
+	armour_penetration = 10
+ap
+	damage = 19
+	armour_penetration = 30
+hp
+	damage = 30
+	armour_penetration = -10
+*/
+- Пистолет: BC-81 'Asp' (S)
+- SMG: Sidewinder (S)
+
+/* MARK: 4.6x30mm
+bullet
+	damage = 20
+	armour_penetration = 10
+ap
+	damage = 18
+	armour_penetration = 40
+hp
+	damage = 30
+	armour_penetration = -10
+*/
+- Используют:
+- Пистолеты: P46 Schnauzer (IQ)
+- SMG: SKM-24v / WT-550 (NT)
+
+/* MARK: 5.56mm HITP
+bullet
+	damage = 20
+	armour_penetration = 0
+ap
+	damage = 19
+	armour_penetration = 20
+hp
+	damage = 30
+	armour_penetration = -10
+*/
+- Используют:
+- Пистолеты: Solar C (SF)
+
+// Снайперские
+
+/* MARK: 8x58mm
+bullet
+	damage = 45
+	armour_penetration = 50
+*/
+- Используют:
+- Снайпер: SSG-669C (SF)
+
+/* MARK: 6.5mm / 6.5x57mm
+bullet
+	damage = 40
+	armour_penetration = 50
+*/
+- Используют: 
+- Снайпер: Boomslang-90 / CM-F90 (SF) / MSR-90 'Boomslang' (S)
+
+/* MARK: 7.62x54mm
+bullet
+	damage = 37
+	armour_penetration = 17
+*/
+
+/* MARK: .300
+bullet
+	damage = 50
+	armour_penetration = 40
+*/
+- Используют: 
+- Снайпер: Scout Sniper
+
+// Гаусс
+
+// MARK: ferromagnetic
+bullet
+	damage = 25
+	armour_penetration = 0
+ap
+	damage = 18
+	armour_penetration = 40
+hp
+	damage = 30
+	armour_penetration = -10
+
+
+// Дробовики (12g)
+
+bullet
+	damage = 40
+	armour_penetration = 0
+beanbag
+	damage = 10
+	armour_penetration = -45
+frag12
+	damage = 25
+	armour_penetration = 0
+buckshot
+	damage = 14
+	armour_penetration = 0
+rubbershot
+	damage = 2
+	armour_penetration = 25
+scattershot
+	damage = 24
+	armour_penetration = -20
+blank
+	damage = 	30
+	armour_penetration = -70
+
+
+.410
+	damage = 	17
+	armour_penetration = -15
+
+	damage = 	70
+	armour_penetration = 	-20
+
+	damage = 50
+	armour_penetration = 25
+
+
+
 Некоторые хорошие патроны были закомментированы и перенесены в отдельные фракционные карго.
 
 MARK: .22lr

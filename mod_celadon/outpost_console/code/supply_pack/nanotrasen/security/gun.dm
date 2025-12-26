@@ -105,25 +105,33 @@ MARK: Ballistic - VI
 	desc = "Contains a double-action Rhino Revolver, chambered in .357 magnum."
 	cost = 1750
 	contains = list(/obj/item/storage/guncase/pistol/rhino)
+/* MARK: .357
+bullet
+	damage = 45
+	armour_penetration = 10
+match
+	damage = 45
+	armour_penetration = 10
+hp
+	damage = 50
+	armour_penetration = -20
+*/
 
 /datum/supply_pack/faction/nanotrasen/gun/vi/challenger
 	name = "Pistol - VI 'Challenger' (9x18mm)"
 	desc = "Contains a Challenger pistol, produced by Nanotrasen along with Vigilitas Interstellar and is chambered in 9x18mm."
 	cost = 750
 	contains = list(/obj/item/storage/guncase/pistol/commander)
-
-/*
-/datum/supply_pack/faction/nanotrasen/gun/vi/podium
-	name = "Pistol - Advantage PH46 Podium (4.6x30mm)"
-	desc = "Contains a compact armor-piercing sidearm, chambered in 4.6x30mm. For NT employee use only."
-	cost = 1250
-	contains = list(/obj/item/storage/guncase/pistol/podium)
-
-/datum/supply_pack/faction/inteq/gun/vi/podium_inteq
-	name = "Pistol - P46 Schnauzer (4.6x30mm)"
-	desc = "Contains a compact armor-piercing sidearm, chambered in 4.6x30mm."
-	cost = 1250
-	contains = list(/obj/item/storage/guncase/pistol/podium_inteq)
+/* MARK: 9x18mm
+bullet
+	damage = 20
+	armour_penetration = -20
+ap
+	damage = 18
+	armour_penetration = 10
+hp
+	damage = 30
+	armour_penetration = -30
 */
 
 /datum/supply_pack/faction/nanotrasen/gun/vi/combatshotgun
@@ -146,6 +154,43 @@ MARK: Ballistic - VI
 	cost = 3000
 	contains = list(/obj/item/storage/guncase/vector)
 	crate_name = "SMG crate"
+/* MARK: 9x18mm
+bullet
+	damage = 20
+	armour_penetration = -20
+ap
+	damage = 18
+	armour_penetration = 10
+hp
+	damage = 30
+	armour_penetration = -30
+*/
+
+/*
+/datum/supply_pack/faction/nanotrasen/gun/vi/podium
+	name = "Pistol - Advantage PH46 Podium (4.6x30mm)"
+	desc = "Contains a compact armor-piercing sidearm, chambered in 4.6x30mm. For NT employee use only."
+	cost = 1250
+	contains = list(/obj/item/storage/guncase/pistol/podium)
+*/
+
+/datum/supply_pack/faction/nanotrasen/gun/vi/wt550
+	name = "SMG - VI WT-550 (4.6x30mm)"
+	desc = "A ballistic PDW produced by Vigilitas Interstellar. Quite old, but still is amazing at filling corporation's enemies with lead. Uses 4.6x30mm rounds"
+	cost = 3500
+	contains = list(/obj/item/storage/guncase/wt550_old)
+	crate_name = "PDW crate"
+/* MARK: 4.6x30mm
+bullet
+	damage = 20
+	armour_penetration = 10
+ap
+	damage = 18
+	armour_penetration = 40
+hp
+	damage = 30
+	armour_penetration = -10
+*/
 
 /datum/supply_pack/faction/nanotrasen/gun/vi/gauss
 	name = "Rifle - Prototype Gauss (FE pellet)"
@@ -153,13 +198,6 @@ MARK: Ballistic - VI
 	cost = 3500
 	contains = list(/obj/item/storage/guncase/gauss)
 	crate_name = "dmr crate"
-
-/datum/supply_pack/faction/nanotrasen/gun/vi/wt550
-	name = "Assault-Rifle - VI WT-550 (4.6x30mm)"
-	desc = "A ballistic PDW produced by Vigilitas Interstellar. Quite old, but still is amazing at filling corporation's enemies with lead. Uses 4.6x30mm rounds"
-	cost = 3500
-	contains = list(/obj/item/storage/guncase/wt550_old)
-	crate_name = "PDW crate"
 
 // MARK: Plasma & Sharplite
 

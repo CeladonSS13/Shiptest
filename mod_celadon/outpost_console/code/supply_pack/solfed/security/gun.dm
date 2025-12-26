@@ -8,6 +8,17 @@
 	desc = "A powerful solarian 5.56mm pistol, looks classic, is ballistic. Produced by Solar Federation."
 	contains = list(/obj/item/storage/guncase/pistole_c)
 	cost = 1100
+/* MARK: 5.56mm HITP
+bullet
+	damage = 20
+	armour_penetration = 0
+ap
+	damage = 19
+	armour_penetration = 20
+hp
+	damage = 30
+	armour_penetration = -10
+*/
 
 /datum/supply_pack/faction/solfed/gun/modelh
 	name = "Pistol - Model 'H' Gauss (FE slug)"
@@ -43,14 +54,36 @@
 /datum/supply_pack/faction/solfed/gun/ballistic/cm357
 	name = "Automag Pistol - CM-357 (.357)"
 	desc = "Contains a magazine-fed .357 handgun, produced for the CLIP-BARD division and available for requisition in small numbers to the Minutemen."
-	cost = 1750
+	cost = 2000
 	contains = list(/obj/item/storage/guncase/pistol/cm357)
+/* MARK: .357
+bullet
+	damage = 45
+	armour_penetration = 10
+match
+	damage = 45
+	armour_penetration = 10
+hp
+	damage = 50
+	armour_penetration = -20
+*/
 
 /datum/supply_pack/faction/solfed/gun/ballistic/cm70
 	name = "Machinepistol - CM-70 (9x18mm)"
 	desc = "Contains a 9x18mm machinepistol produced proudly within Lanchester City. Confederated Minuteman issue only."
 	cost = 2000
 	contains = list(/obj/item/storage/guncase/pistol/cm70)
+/* MARK: 9x18mm
+bullet
+	damage = 20
+	armour_penetration = -20
+ap
+	damage = 18
+	armour_penetration = 10
+hp
+	damage = 30
+	armour_penetration = -30
+*/
 
 /datum/supply_pack/faction/solfed/gun/ballistic/cm15
 	name = "Shotgun - CM-15 (12g)"
@@ -65,14 +98,36 @@
 	cost = 3500
 	contains = list(/obj/item/storage/guncase/cm5)
 	crate_name = "SMG crate"
+/* MARK: 9x18mm
+bullet
+	damage = 20
+	armour_penetration = -20
+ap
+	damage = 18
+	armour_penetration = 10
+hp
+	damage = 30
+	armour_penetration = -30
+*/
 
 ///obj/item/gun/ballistic/automatic/smg/cm5/compact
 
 /datum/supply_pack/faction/solfed/gun/ballistic/cm82
-	name = "Rifle - CM-82 (5.56х42mm)" // "Rifle - Model 82 Carbine (5.56х42mm)"
+	name = "Assault-Rifle - CM-82 (5.56x42mm)" // "Rifle - Model 82 Carbine (5.56x42mm)"
 	desc = "The standard Solarian assault rifle, somewhat outdated, but still accurate, reliable and easy to use. This version was manufactured in the Elysium Republic under license from the Solar Federation for the Elysium Brigade. Chambered in 5.56х42mm."
 	contains = list(/obj/item/storage/guncase/cm82)
 	cost = 5000
+/* MARK: 5.56x42mm
+bullet
+	damage = 20
+	armour_penetration = 20
+ap
+	damage = 22
+	armour_penetration = 40
+hp
+	damage = 35
+	armour_penetration = 10
+*/
 
 /datum/supply_pack/faction/solfed/gun/ballistic/cm24
 	name = "Assault-Rifle - CM-24 (7.62x40mm)"
@@ -87,6 +142,17 @@
 	cost = 6000
 	contains = list(/obj/item/storage/guncase/cm40)
 	crate_name = "LMG crate"
+/* MARK: 7.62x40mm
+bullet
+	damage = 30
+	armour_penetration = 20
+ap
+	damage = 27
+	armour_penetration = 40
+hp
+	damage = 40
+	armour_penetration = 10
+*/
 
 /datum/supply_pack/faction/solfed/gun/ballistic/mf4
 	name = "Marksman - CM-F4 (.308)"
@@ -94,6 +160,17 @@
 	cost = 3500
 	contains = list(/obj/item/storage/guncase/cmf4)
 	crate_name = "dmr crate"
+/* MARK: .308
+bullet
+	damage = 30
+	armour_penetration = 40
+ap
+	damage = 28
+	armour_penetration = 60
+hp
+	damage = 60
+	armour_penetration = -10
+*/
 
 /datum/supply_pack/faction/solfed/gun/ballistic/f90
 	name = "Marksman - CM-F90 (6.5x57mm)"
@@ -101,6 +178,11 @@
 	cost = 4000
 	contains = list(/obj/item/storage/guncase/cmf90)
 	crate_name = "marksman rifle crate"
+/* MARK: 6.5mm / 6.5x57mm
+bullet
+	damage = 40
+	armour_penetration = 50
+*/
 
 /datum/supply_pack/faction/solfed/gun/ballistic/ssg669
 	name = "Marksman - SSG-669C (8x58mm)"
@@ -108,3 +190,8 @@
 	cost = 4000
 	contains = list(/obj/item/storage/guncase/ssg669)
 	crate_name = "sniper rifle crate"
+/* MARK: 8x58mm
+bullet
+	damage = 45
+	armour_penetration = 50
+*/

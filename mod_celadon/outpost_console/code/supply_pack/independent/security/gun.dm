@@ -2,7 +2,7 @@
 	category = "Security - Guns"
 	crate_type = /obj/structure/closet/crate/secure/weapon
 
-/* MARK: = Gun List =
+/* mark: = Gun List =
 
 > Pistols
 > SMGs
@@ -27,11 +27,14 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	crate_name = "pistol crate"
 */
 
-//Orig (.38)
-//	damage = 20
-//	armour_penetration = -20
-//March
-//	armour_penetration = -10
+/* mark: .38
+bullet
+	damage = 20
+	armour_penetration = 20
+match
+	damage = 20
+	armour_penetration = -10
+*/
 
 /datum/supply_pack/faction/independent/gun/detrevolver
 	name = "Revolver - HP Detective (.38)"
@@ -39,15 +42,14 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	cost = 600
 	contains = list(/obj/item/storage/guncase/pistol/detective)
 
-//Orig (.44)
-//	damage =  30
-//Rubber
-//	damage =  10
-//	stamina = 40
-//	armour_penetration = -10
-//HP
-//	damage =  45
-//	armour_penetration = -10
+/* mark: .44
+bullet
+	damage = 35
+	armour_penetration = 0
+hp
+	damage = 50
+	armour_penetration = 0
+*/
 
 /datum/supply_pack/faction/independent/gun/shadowrevolver
 	name = "Revolver - Shadow (.44)"
@@ -64,13 +66,17 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	contains = list(/obj/item/storage/guncase/pistol/montagne)
 	//	max_ammo = 6
 
-//Orig (.357)
-//	damage = 35
-//March
-//	armour_penetration = 10
-//HP
-//	damage = 50
-//	armour_penetration = -20
+/* mark: .357
+bullet
+	damage = 45
+	armour_penetration = 10
+match
+	damage = 45
+	armour_penetration = 10
+hp
+	damage = 50
+	armour_penetration = -20
+*/
 
 /datum/supply_pack/faction/independent/gun/pepperbox
 	name = "Revolver - HP Firebrand (.357)"
@@ -90,15 +96,17 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	MARK:		Pistols
 */
 
-// 9x18mm (Commander, SABR)
-//	damage = 20
-//	armour_penetration = -20
-//ap
-//	damage = 18
-//	armour_penetration = 10
-//hp
-//	damage = 30
-//	armour_penetration = -30
+/* mark: 9x18mm
+bullet
+	damage = 20
+	armour_penetration = -20
+ap
+	damage = 18
+	armour_penetration = 10
+hp
+	damage = 30
+	armour_penetration = -30
+*/
 
 /datum/supply_pack/faction/independent/gun/challenger
 	name = "Pistol - VI 'Challenger' (9x18mm)"
@@ -117,15 +125,17 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	//spread = 5
 	//max_ammo = 17
 
-// 10x22mm (Ringneck)
-//	damage = 25
-//	armour_penetration = -20
-//ap
-//	damage = 23
-//	armour_penetration = 10
-//hp
-//	damage = 35
-//	armour_penetration = -30
+/* mark: 10x22mm
+bullet
+	damage = 25
+	armour_penetration = -20
+ap
+	damage = 23
+	armour_penetration = 10
+hp
+	damage = 35
+	armour_penetration = -30
+*/
 
 /datum/supply_pack/faction/independent/gun/ringneck
 	name = "Pistol - Ringneck (10x22mm)"
@@ -135,15 +145,14 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	//spread = 5
 	//max_ammo = 8
 
-//Orig (.44)
-//	damage =  30
-//Rubber
-//	damage =  10
-//	stamina = 40
-//	armour_penetration = -10
-//HP
-//	damage =  45
-//	armour_penetration = -10
+/* mark: .44
+bullet
+	damage = 35
+	armour_penetration = 0
+hp
+	damage = 50
+	armour_penetration = 0
+*/
 
 /datum/supply_pack/faction/independent/gun/m20_auto_elite
 	name = "Pistol - M20 Auto Elite (.44)"
@@ -152,6 +161,18 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	contains = list(/obj/item/storage/guncase/pistol/m20_auto_elite)
 	crate_name = "pistol crate"
 	//max_ammo = 9
+
+/* mark: .45
+bullet
+	damage = 25
+	armour_penetration = -20
+ap
+	damage = 22
+	armour_penetration = 10
+hp
+	damage = 37
+	armour_penetration = -30
+*/
 
 /datum/supply_pack/faction/independent/gun/candors
 	name = "Pistol - Candor (.45)"
@@ -172,6 +193,15 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	MARK: SMGs
 */
 
+/* mark: .44
+bullet
+	damage = 35
+	armour_penetration = 0
+hp
+	damage = 50
+	armour_penetration = 0
+*/
+
 /datum/supply_pack/faction/independent/gun/firestorm
 	name = "SMG - Firestorm (.44)"
 	desc = "Contains a Hunter's Pride SMG, intended for internal use by hunters and chambered in .44 Roumain."
@@ -180,6 +210,18 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	crate_name = "SMG crate"
 	//max_ammo = 24
 
+/* mark: .45
+bullet
+	damage = 25
+	armour_penetration = -20
+ap
+	damage = 22
+	armour_penetration = 10
+hp
+	damage = 37
+	armour_penetration = -30
+*/
+
 /datum/supply_pack/faction/independent/gun/cobra20
 	name = "SMG - Cobra-20 (.45)"
 	desc = "Contains a civilian variant of the Cobra SMG, manufactured by Scaraborough Arms and chambered in .45"
@@ -187,6 +229,18 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	contains = list(/obj/item/storage/guncase/cobra)
 	crate_name = "SMG crate"
 	//max_ammo = 24
+
+/* mark: 4.6x30mm
+bullet
+	damage = 20
+	armour_penetration = 10
+ap
+	damage = 18
+	armour_penetration = 40
+hp
+	damage = 30
+	armour_penetration = -10
+*/
 
 /datum/supply_pack/faction/independent/gun/skm_carbine
 	name = "SMG - SKM-24v (4.6x30mm)"
@@ -301,12 +355,33 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	crate_name = "rifle crate"
 */
 
+/* mark: .38
+bullet
+	damage = 20
+	armour_penetration = 20
+match
+	damage = 20
+	armour_penetration = -10
+*/
+
 /datum/supply_pack/faction/independent/gun/winchester
 	name = "Rifle - Flaming Arrow Lever Action (.38)"
 	desc = "Contains an antiquated lever action rifle intended for hunting wildlife. Chambered in .38 rounds."
 	cost = 750
 	contains = list(/obj/item/storage/guncase/winchester)
 	crate_name = "rifle crate"
+
+/* mark: 8x50mmR
+bullet
+	damage = 37
+	armour_penetration = 30
+match
+	damage = 40
+	armour_penetration = 27
+hp
+	damage = 50
+	armour_penetration = 10
+*/
 
 /datum/supply_pack/faction/independent/gun/illestren
 	name = "Rifle - Illestren (8x50mmR)"
@@ -315,6 +390,17 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	contains = list(/obj/item/storage/guncase/illestren)
 	crate_name = "rifle crate"
 
+/* mark: .357
+bullet
+	damage = 45
+	armour_penetration = 10
+match
+	damage = 45
+	armour_penetration = 10
+hp
+	damage = 50
+	armour_penetration = -20
+*/
 /datum/supply_pack/faction/independent/gun/absolution
 	name = "Rifle - Absolution Lever Action (.357)"
 	desc = "Contains a powerful lever-action rifle for hunting larger wildlife. Chambered in .357."
@@ -322,6 +408,17 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	contains = list(/obj/item/storage/guncase/absolution)
 	crate_name = "shotguns crate"
 
+/* mark: .45-70
+bullet
+	damage = 50
+	armour_penetration = 20
+match
+	damage = 45
+	armour_penetration = 30
+hp
+	damage = 70
+	armour_penetration = -10
+*/
 /datum/supply_pack/faction/independent/gun/beacon
 	name = "Rifle - Beacon Break Action (.45-70)"
 	desc = "Contains a single shot break action rifle to hunt wildlife that annoys you in particular. Chambered in devastating .45-70 rounds. Warranty voided if sawed off."
@@ -329,6 +426,17 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	contains = list(/obj/item/storage/guncase/beacon)
 	crate_name = "rifle crate"
 
+/* mark: 7.62x40mm
+bullet
+	damage = 30
+	armour_penetration = 20
+ap
+	damage = 27
+	armour_penetration = 40
+hp
+	damage = 40
+	armour_penetration = 10
+*/
 /datum/supply_pack/faction/independent/gun/m15
 	name = "Rifle - Super Sporter (7.62x40mm)"
 	desc = "Contains a recently manufactured Model 15 \"Super Sporter\", Serene Outdoors' premier hunting rifle. Chambered in 7.62x40mm"
@@ -336,6 +444,17 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	cost = 2500
 	crate_name = "rifle crate"
 
+/* mark: 8x50mmR
+bullet
+	damage = 37
+	armour_penetration = 30
+match
+	damage = 40
+	armour_penetration = 27
+hp
+	damage = 50
+	armour_penetration = 10
+*/
 /datum/supply_pack/faction/independent/gun/woodsman
 	name = "Rifle - Model 23 'Woodsman' Hunting (8x50mmR)"
 	desc = "Contains a semi-automatic hunting rifle chambered in 8x50mmR and produced by Serene Outdoors. Come with three magazines with a 5-round capacity."
@@ -347,6 +466,17 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	MARK:		Auto Rifles
 */
 
+/* mark: 7.62x40mm
+bullet
+	damage = 30
+	armour_penetration = 20
+ap
+	damage = 27
+	armour_penetration = 40
+hp
+	damage = 40
+	armour_penetration = 10
+*/
 /datum/supply_pack/faction/independent/gun/skm
 	name = "Assault-Rifle - SKM-24 (7.62x40mm)"
 	desc = "Contains a high-powered, automatic rifle chambered in 7.62x40mm."
@@ -369,6 +499,17 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 // 	contains = list(/obj/item/storage/guncase/g36sh)
 // 	crate_name = "auto rifle crate"
 
+/* mark: .308
+bullet
+	damage = 30
+	armour_penetration = 40
+ap
+	damage = 28
+	armour_penetration = 60
+hp
+	damage = 60
+	armour_penetration = -10
+*/
 /datum/supply_pack/faction/independent/gun/morita1
 	name = "Assault-Rifle - Morita Mk.I (.308)"
 	desc = "Contains a Morita Mk.I and two standard-sized magazines .308."
@@ -376,6 +517,11 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	contains = list(/obj/item/storage/guncase/morita1)
 	crate_name = "auto rifle crate"
 
+/* mark: .300
+bullet
+	damage = 50
+	armour_penetration = 40
+*/
 /datum/supply_pack/faction/independent/gun/scout
 	name = "Marksman - Scout Sniper (.300)"
 	desc = "Contains a traditional scoped rifle to hunt wildlife and big game from a respectful distance. Chambered in powerful .300 Magnum."
@@ -383,6 +529,11 @@ Morita & G36 & Saiga убраны. Почему подобное оружие в
 	contains = list(/obj/item/storage/guncase/scout)
 	crate_name = "rifle crate"
 
+/* mark: 6.5x57mm
+bullet
+	damage = 40
+	armour_penetration = 50
+*/
 /datum/supply_pack/faction/independent/gun/boomslang90
 	name = "Marksman - Boomslang-90 (6.5x57mm)"
 	desc = "Contains a civilian variant of the Boomslang Sniper rifle- modified with a 2x scope, rather than a sniper scope. Chambered in the powerful 6.5x57mm."
