@@ -92,6 +92,23 @@ hp
 	contains = list(/obj/item/storage/guncase/pistol/viper)
 	//	max_ammo = 6
 
+/datum/supply_pack/faction/independent/gun/ashhand
+	name = "Revolver - Ashhand Hunting (.45-70)"
+	desc = "Contains a single-action .45-70 hunting revolver manufactured by Hunter's Pride for use against the biggest game."
+	cost = 4000
+	contains = list(/obj/item/storage/guncase/pistol/ashhand)
+/* MARK: .45-70
+bullet
+	damage = 50
+	armour_penetration = 20
+match
+	damage = 45
+	armour_penetration = 30
+hp
+	damage = 70
+	armour_penetration = -10
+*/
+
 /*
 	MARK:		Pistols
 */

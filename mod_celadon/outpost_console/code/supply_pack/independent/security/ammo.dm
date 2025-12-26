@@ -141,6 +141,7 @@ hp
 	armour_penetration = -10
 */
 - Используют: 
+- Револьвер: Ashhand Hunting
 - Винтовки: Beacon Break Action
 
 
