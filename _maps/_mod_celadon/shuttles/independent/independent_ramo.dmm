@@ -236,7 +236,7 @@
 /area/ship/engineering)
 "au" = (
 /obj/structure/marker_beacon{
-	picked_color = "Lime"
+	picked_color = "Burgundy"
 	},
 /obj/effect/turf_decal/trimline/opaque/bar,
 /obj/effect/decal/cleanable/dirt,
@@ -1623,7 +1623,7 @@
 /area/ship/external/dark)
 "ck" = (
 /obj/structure/marker_beacon{
-	picked_color = "Burgundy"
+	picked_color = "Lime"
 	},
 /obj/effect/turf_decal/trimline/opaque/bar,
 /turf/open/floor/engine/hull/reinforced,
@@ -2783,7 +2783,7 @@
 	dir = 1
 	},
 /obj/structure/marker_beacon{
-	picked_color = "Burgundy"
+	picked_color = "Lime"
 	},
 /obj/effect/turf_decal/trimline/opaque/bar,
 /turf/open/floor/plating,
@@ -3157,7 +3157,7 @@
 /area/ship/external/dark)
 "lD" = (
 /obj/structure/marker_beacon{
-	picked_color = "Burgundy"
+	picked_color = "Lime"
 	},
 /obj/effect/turf_decal/corner_techfloor_grid{
 	dir = 9
@@ -3265,7 +3265,7 @@
 /area/ship/external/dark)
 "vz" = (
 /obj/structure/marker_beacon{
-	picked_color = "Lime"
+	picked_color = "Burgundy"
 	},
 /obj/effect/turf_decal/trimline/opaque/bar,
 /turf/open/floor/engine/hull/reinforced,
@@ -3425,7 +3425,7 @@
 	},
 /obj/effect/turf_decal/trimline/opaque/bar,
 /obj/structure/marker_beacon{
-	picked_color = "Lime"
+	picked_color = "Burgundy"
 	},
 /turf/open/floor/plating,
 /area/ship/external/dark)
@@ -3474,6 +3474,16 @@
 /obj/machinery/atmospherics/pipe/manifold,
 /turf/open/floor/plating,
 /area/ship/external/dark)
+"Ji" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/ship/engineering)
 "Kz" = (
 /obj/machinery/atmospherics/pipe/simple{
 	icon_state = "pipe11-3";
@@ -3511,16 +3521,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/external/dark)
-"Pm" = (
-/obj/structure/catwalk/over,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 1
-	},
-/turf/open/floor/plating,
-/area/ship/engineering)
 "Qc" = (
 /obj/machinery/atmospherics/components/unary/tank/air{
 	dir = 1
@@ -3946,7 +3946,7 @@ xt
 EC
 aj
 al
-Pm
+Ji
 bQ
 XG
 cB
