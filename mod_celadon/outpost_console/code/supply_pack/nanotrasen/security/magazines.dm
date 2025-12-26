@@ -105,13 +105,15 @@
 */
 
 /datum/supply_pack/faction/nanotrasen/magazine/nt_guncell
-	name = "E-Cell - Sharplite Power Cell"
+	name = "P-Cell - Sharplite Power Cell"
 	desc = "Contains a proprietary weapon cell, compatible with most Sharplite energy weapons."
 	contains = list(/obj/item/stock_parts/cell/gun/sharplite/empty)
-	cost = 1000
+	cost = 1750
+	stable_price = TRUE
 
 /datum/supply_pack/faction/nanotrasen/magazine/upgradedguncell
 	name = "P-Cell - Sharplite Plus Proprietary Weapon Cell"
 	desc = "Contains an upgraded weapon cell, compatible with most Nanotrasen models. For NT use only."
 	contains = list(/obj/item/stock_parts/cell/gun/sharplite/plus/empty)
-	cost = 2000
+	cost = 3500
+	stable_price = TRUE

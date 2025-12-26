@@ -170,6 +170,7 @@ hp
 	armour_penetration = -10
 */
 
+/* // Отключено до реворка плазмы
 // HADES II - Inteq
 /datum/supply_pack/faction/inteq/gun/exp/barghest
 	name = "P-Assault-Rifle - PP20 'Barghest' APR"
@@ -177,3 +178,4 @@ hp
 	cost = 10000
 	contains = list(/obj/item/storage/guncase/barghest)
 	crate_name = "laser crate"
+*/

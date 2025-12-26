@@ -204,6 +204,7 @@ hp
 /datum/supply_pack/faction/nanotrasen/gun/exp
 	category = "Security - Plasma Guns"
 
+/* // Отключено до реворка плазмы
 /datum/supply_pack/faction/nanotrasen/gun/exp/l305
 	name = "P-SMG - L305 'Rush'"
 	desc = "Contains a compact energy-based SMG. For NT employee use only."
@@ -231,11 +232,12 @@ hp
 	cost = 12000
 	contains = list(/obj/item/storage/guncase/energy/l201)
 	crate_name = "dmr crate"
+*/
 
 /datum/supply_pack/faction/nanotrasen/gun/exp/al607
 	name = "P-Marksman - AL607 'Sarissa'"
 	desc = "Contains a AL607 Laser Sniper. For NT employee use only."
-	cost = 15000
+	cost = 10000
 	contains = list(/obj/item/storage/guncase/energy/al607)
 	crate_name = "sniper rifle crate"
 

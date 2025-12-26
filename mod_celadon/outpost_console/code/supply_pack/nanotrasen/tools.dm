@@ -1,6 +1,7 @@
 /datum/supply_pack/faction/nanotrasen/tools
 	category = "Engi - Tools & Tanks"
 	crate_type = /obj/structure/closet/crate/engineering
+	stable_price = TRUE
 
 /datum/supply_pack/faction/nanotrasen/tools/mining
 	name = "Basic Mining"
