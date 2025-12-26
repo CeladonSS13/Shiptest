@@ -273,3 +273,67 @@
 
 /obj/item/gun/energy/e_gun/advtaser/empty_cell
 	spawn_no_ammo = TRUE
+
+// Батарейки (Респрайты / Рефлавор)
+/obj/item/stock_parts/cell/gun
+	name = "energy power cell"
+	desc = "A proprietary power cell primarily used by Sharplite Energy weaponry. Nanotrasen's large market share has forced some weapon developers to include adapters for these cells"
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/power.dmi'
+	icon_state = "energy-cell"
+	base_state = "energy"	// Оверлей - Цвет-заряда батареек
+	reskin = TRUE
+
+/obj/item/stock_parts/cell/gun/empty
+	start_empty = TRUE
+
+/obj/item/stock_parts/cell/gun/upgraded
+	name = "upgraded energy power cell"
+	desc = "An high-capacity weapon cell used exclusively by Sharplite Energy weaponry. They are a great improvement over the stock cell, and are frequently sought after by collectors, soldiers, and operators of heavy lasers alike."
+	icon_state = "energy_plus-cell"
+
+/obj/item/stock_parts/cell/gun/upgraded/empty
+	start_empty = TRUE
+
+/obj/item/stock_parts/cell/gun/sharplite
+	name = "plasma power cell"
+	desc = "A proprietary power cell primarily used by Sharplite Plasma weaponry. Nanotrasen's large market share has forced some weapon developers to include adapters for these cells"
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/power.dmi'
+	icon_state = "plasma-cell"
+	base_state = "plasma"	// Оверлей - Цвет-заряда батареек
+	maxcharge = 15000
+	chargerate = 1000
+	reskin = TRUE
+
+/obj/item/stock_parts/cell/gun/sharplite/plus
+	name = "upgraded plasma power cell"
+	desc = "An high-capacity weapon cell used exclusively by Sharplite Plasma weaponry. They are a great improvement over the stock cell, and are frequently sought after by collectors, soldiers, and operators of heavy lasers alike."
+	icon_state = "plasma_plus-cell"
+	maxcharge = 30000
+
+/obj/item/stock_parts/cell/gun/mini
+	icon = 'icons/obj/power.dmi'
+	reskin = FALSE
+
+/obj/item/stock_parts/cell/gun/solgov
+	icon = 'icons/obj/power.dmi'
+	reskin = FALSE
+
+/obj/item/stock_parts/cell/gun/large
+	icon = 'icons/obj/power.dmi'
+	reskin = FALSE
+
+/obj/item/stock_parts/cell/gun/kalix
+	icon = 'icons/obj/power.dmi'
+	reskin = FALSE
+
+/obj/item/stock_parts/cell/gun/pgf
+	icon = 'icons/obj/power.dmi'
+	reskin = FALSE
+
+/obj/item/stock_parts/cell/gun/sharplite/mini
+	icon = 'icons/obj/power.dmi'
+	reskin = FALSE
+
+// Выше вместимость увеличена была в 1.5 раза, и расход тоже соответственно
+/obj/item/ammo_casing/energy/lasergun/sharplite/sniper
+	e_cost = 3000 // 5 per regular cell 10 per upgraded cell
