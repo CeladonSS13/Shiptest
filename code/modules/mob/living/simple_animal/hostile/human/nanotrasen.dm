@@ -93,8 +93,8 @@
 	rapid = 5
 	rapid_fire_delay = 2
 	casingtype = null
-	projectiletype = /obj/projectile/beam/weak/sharplite
-	r_hand = /obj/item/gun/energy/sharplite/l305
+	projectiletype = /obj/item/ammo_casing/energy/laser/smg	//projectiletype = /obj/projectile/beam/weak/sharplite	// [CELADON-EDIT]
+	r_hand = /obj/item/gun/energy/e_gun/e_old/smg	//r_hand = /obj/item/gun/energy/sharplite/l305	// [CELADON-EDIT]
 	projectilesound = 'sound/weapons/gun/laser/nt-fire.ogg'
 
 /mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper/shotgun
@@ -102,8 +102,8 @@
 	desc = "A member of Vigilitas Interstellar, with their chin high up. They confidently aim around their shotgun, ready to burn away any trespassers."
 	icon_state = "nanotrasenrangedsmg"
 	icon_living = "nanotrasenrangedsmg"
-	casingtype = /obj/item/ammo_casing/energy/laser/shotgun/sharplite
-	r_hand = /obj/item/gun/energy/sharplite/x46
+	casingtype = /obj/item/ammo_casing/energy/laser/ultima	//casingtype = /obj/item/ammo_casing/energy/laser/shotgun/sharplite	// [CELADON-EDIT]
+	r_hand = /obj/item/gun/energy/e_gun/e_old/iot	//r_hand = /obj/item/gun/energy/sharplite/x46	// [CELADON-EDIT]
 	rapid = 2
 	rapid_fire_delay = 5
 	retreat_distance = 0
@@ -144,8 +144,8 @@
 	rapid = 4
 	rapid_fire_delay = 4
 	casingtype = null
-	projectiletype = /obj/projectile/beam/laser/assault/sharplite
-	r_hand = /obj/item/gun/energy/sharplite/al655
+	projectiletype = /obj/item/ammo_casing/energy/laser/assault	//projectiletype = /obj/projectile/beam/laser/assault/sharplite	// [CELADON-EDIT]
+	r_hand = /obj/item/gun/energy/e_gun/e_old/hades		//r_hand = /obj/item/gun/energy/sharplite/al655	// [CELADON-EDIT]
 	projectilesound = 'sound/weapons/gun/laser/e40_las.ogg'
 
 /mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper/rifle/space
@@ -176,12 +176,12 @@
 	minimum_distance = 1
 	atmos_requirements = IMMUNE_ATMOS_REQS
 	minbodytemp = 0
-	projectiletype = /obj/projectile/beam/laser/assault/sharplite
+	projectiletype = /obj/item/ammo_casing/energy/laser/assault	//projectiletype = /obj/projectile/beam/laser/assault/sharplite	// [CELADON-EDIT]
 	projectilesound = 'sound/weapons/gun/laser/e40_las.ogg'
 	faction = list(ROLE_DEATHSQUAD)
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/vigilitas_elite
 	armor_base = /obj/item/clothing/suit/space/hardsuit/ert/sec
-	r_hand = /obj/item/gun/energy/sharplite/al655
+	r_hand = /obj/item/gun/energy/e_gun/e_old/hades	//r_hand = /obj/item/gun/energy/sharplite/al655	// [CELADON-EDIT]
 
 /mob/living/simple_animal/hostile/human/nanotrasen/elite/shotgun
 	name = "Vigilitas Response Team"
@@ -194,7 +194,7 @@
 	minimum_distance = 1
 	atmos_requirements = IMMUNE_ATMOS_REQS
 	minbodytemp = 0
-	casingtype = /obj/item/ammo_casing/energy/laser/shotgun/sharplite
+	casingtype = /obj/item/ammo_casing/energy/laser/ultima	//casingtype = /obj/item/ammo_casing/energy/laser/shotgun/sharplite	// [CELADON-EDIT]
 	projectiletype = null
 	projectilesound = 'sound/weapons/gun/laser/nt-fire_light.ogg'
-	r_hand = /obj/item/gun/energy/sharplite/x46
+	r_hand = /obj/item/gun/energy/e_gun/e_old/iot //r_hand = /obj/item/gun/energy/sharplite/x46	// [CELADON-EDIT]
