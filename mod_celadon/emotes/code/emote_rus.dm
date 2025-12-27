@@ -76,7 +76,7 @@
 /datum/emote/living/carbon/blink
 	message = "моргает."
 
-/datum/emote/living/carbon/blink_r
+/datum/emote/living/carbon/blink/blink_r
 	message = "быстро моргает."
 
 /datum/emote/living/carbon/crack
