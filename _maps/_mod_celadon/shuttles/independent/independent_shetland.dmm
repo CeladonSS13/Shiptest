@@ -420,10 +420,9 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/fore)
 "dD" = (
-/obj/machinery/vending/coffee{
-	all_items_free = 1
-	},
 /obj/machinery/light/directional/west,
+/obj/machinery/microwave,
+/obj/structure/table,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "dK" = (
@@ -1890,14 +1889,21 @@
 /turf/open/floor/plasteel/sepia,
 /area/ship/engineering/engines/starboard)
 "td" = (
-/obj/structure/table,
-/obj/machinery/microwave,
+/obj/machinery/oven,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "th" = (
 /obj/structure/table,
 /obj/item/melee/knife/kitchen,
 /obj/item/cutting_board,
+/obj/item/reagent_containers/condiment/peppermill{
+	pixel_x = 3;
+	pixel_y = 11
+	},
+/obj/item/reagent_containers/condiment/saltshaker{
+	pixel_x = -5;
+	pixel_y = 10
+	},
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "ts" = (
@@ -2448,8 +2454,7 @@
 	},
 /obj/machinery/door/airlock/engineering{
 	dir = 4;
-	name = "Reactor";
-
+	name = "Reactor"
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
@@ -4160,15 +4165,7 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "Ql" = (
-/obj/structure/table,
-/obj/item/reagent_containers/condiment/peppermill{
-	pixel_x = 3;
-	pixel_y = 11
-	},
-/obj/item/reagent_containers/condiment/saltshaker{
-	pixel_x = -5;
-	pixel_y = 10
-	},
+/obj/machinery/griddle,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "Qm" = (
@@ -4549,9 +4546,7 @@
 /turf/open/floor/plasteel,
 /area/ship/crew/hydroponics)
 "Tc" = (
-/obj/effect/spawner/random/vending/cola{
-
-	},
+/obj/effect/spawner/random/vending/cola,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "Td" = (
@@ -4704,6 +4699,13 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/fore)
+"Ux" = (
+/obj/machinery/light/directional/south,
+/obj/machinery/vending/coffee{
+	all_items_free = 1
+	},
+/turf/open/floor/plasteel,
+/area/ship/crew/canteen)
 "Uy" = (
 /obj/docking_port/stationary{
 	dwidth = 15;
@@ -6101,7 +6103,7 @@ kL
 zV
 Cs
 Ty
-vt
+Ux
 OK
 OK
 OK

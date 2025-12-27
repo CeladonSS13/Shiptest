@@ -1108,6 +1108,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+/obj/item/circuitboard/machine/oven,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "bP" = (
@@ -1760,6 +1761,7 @@
 	pixel_x = -5;
 	pixel_y = 5
 	},
+/obj/item/plate/oven_tray,
 /turf/open/floor/carpet,
 /area/ship/crew/canteen)
 "cU" = (
@@ -1917,8 +1919,7 @@
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/canteen)
 "de" = (
-/obj/structure/table/reinforced,
-/obj/structure/showcase/machinery/microwave,
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/canteen)
 "df" = (
@@ -1933,6 +1934,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/structure/showcase/machinery/microwave,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/canteen)
 "dg" = (

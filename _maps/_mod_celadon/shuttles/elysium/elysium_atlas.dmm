@@ -1862,13 +1862,14 @@
 /obj/machinery/airalarm/directional/west,
 /obj/effect/decal/cleanable/plasma,
 /obj/structure/table,
-/obj/item/melee/knife/kitchen{
-	pixel_x = -2;
-	pixel_y = 3
-	},
+/obj/item/plate/oven_tray,
 /obj/item/kitchen/rollingpin{
 	pixel_x = 4;
 	pixel_y = -4
+	},
+/obj/item/melee/knife/kitchen{
+	pixel_x = -2;
+	pixel_y = 3
 	},
 /turf/open/floor/plating,
 /area/ship/crew)
@@ -2481,9 +2482,7 @@
 "An" = (
 /obj/machinery/light/directional/west,
 /obj/effect/decal/cleanable/plasma,
-/obj/structure/table,
-/obj/item/storage/box/donkpockets,
-/obj/item/storage/box/donkpockets,
+/obj/machinery/griddle,
 /turf/open/floor/plating,
 /area/ship/crew)
 "Av" = (
@@ -4636,6 +4635,8 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table,
 /obj/machinery/microwave,
+/obj/item/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
 /turf/open/floor/plating,
 /area/ship/crew)
 "WZ" = (

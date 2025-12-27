@@ -1563,8 +1563,7 @@
 	dir = 4
 	},
 /obj/machinery/firealarm/directional/east,
-/obj/structure/table/reinforced/titaniumglass,
-/obj/machinery/microwave,
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "uu" = (
@@ -2542,6 +2541,8 @@
 /obj/item/storage/box/drinkingglasses,
 /obj/item/storage/box/drinkingglasses,
 /obj/item/storage/box/drinkingglasses,
+/obj/item/cutting_board,
+/obj/item/melee/knife/kitchen,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "Iz" = (
@@ -3174,18 +3175,7 @@
 	pixel_x = -5;
 	pixel_y = 3
 	},
-/obj/item/food/burger{
-	pixel_x = 3;
-	pixel_y = 5
-	},
-/obj/item/food/burger/baconburger{
-	pixel_x = 2;
-	pixel_y = 1
-	},
-/obj/item/food/burger/baconburger{
-	pixel_x = -3;
-	pixel_y = -4
-	},
+/obj/machinery/microwave,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "Qv" = (
