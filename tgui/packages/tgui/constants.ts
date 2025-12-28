@@ -155,17 +155,17 @@ export const RADIO_CHANNELS = [
     color: '#7589af',
   },
   {
-    name: 'Raider',
+    name: 'Raider (Short)',
     freq: 1321,
     color: '#fcdf03',
   },
   {
-    name: 'Ramzi',
+    name: 'Ramzi (Short)',
     freq: 1423,
     color: '#796755',
   },
   {
-    name: 'Unidentified',
+    name: 'Unidentified (Short)',
     freq: 1425,
     color: '#4d4d4d',
   },
