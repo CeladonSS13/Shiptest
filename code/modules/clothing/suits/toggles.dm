@@ -23,6 +23,7 @@
 	if(!base_icon_state)
 		base_icon_state = icon_state
 	make_hood()
+	RegisterSignal(src, COMSIG_TRY_STORAGE_CAN_INSERT, PROC_REF(on_can_insert))	// [CELADON-ADD] - FIXES_HOODED_ICONS
 
 /obj/item/clothing/suit/hooded/Destroy()
 	. = ..()
@@ -45,11 +46,11 @@
 	toggle_hood()
 
 /obj/item/clothing/suit/hooded/item_action_slot_check(slot, mob/user)
-	if(slot == ITEM_SLOT_OCLOTHING)
+	if(slot == ITEM_SLOT_OCLOTHING || slot == ITEM_SLOT_NECK)// [CELADON-ADD] - FIXES_HOODED_ICONS
 		return 1
 
 /obj/item/clothing/suit/hooded/equipped(mob/user, slot)
-	if(slot != ITEM_SLOT_OCLOTHING)
+	if(slot != ITEM_SLOT_OCLOTHING && slot != ITEM_SLOT_NECK)// [CELADON-ADD] - FIXES_HOODED_ICONS
 		remove_hood()
 	..()
 
@@ -57,11 +58,19 @@
 	suittoggled = FALSE
 	if(hood)
 		if(ishuman(hood.loc))
-			var/mob/living/carbon/H = hood.loc
+			// [CELADON-EDIT] - FIXES_HOODED_ICONS
+			// var/mob/living/carbon/H = hood.loc	// ORIGINAL
+			var/mob/living/carbon/human/H = hood.loc
+			// [/CELADON-EDIT]
 			H.transferItemToLoc(hood, src, TRUE)
-			H.update_inv_wear_suit()
+			if(H.wear_suit == src)// [CELADON-ADD] - FIXES_HOODED_ICONS
+				H.update_inv_wear_suit()
+			// [CELADON-EDIT] - FIXES_HOODED_ICONS
 			//update_appearance() - FIXES_ICON - СУКА
-			//H.regenerate_icons()
+			//H.regenerate_icons()	// ORIGINAL
+			else if(H.wear_neck == src)
+				H.update_inv_neck()
+			// [/CELADON-EDIT]
 		else
 			hood.forceMove(src)
 		for(var/X in actions)
@@ -73,8 +82,10 @@
 		icon_state = "[base_icon_state]_t"
 	else
 		icon_state = base_icon_state
-	if(isobj(hood))
-		hood.icon_state = base_icon_state
+	// [CELADON-REMOVE] - FIXES_HOODED_ICONS - [WARNING] - Расскомментить и посмотреть изменение!
+	// if(isobj(hood))
+	// 	hood.icon_state = base_icon_state
+	// [/CELADON-REMOVE]
 	. = ..()
 
 /obj/item/clothing/suit/hooded/dropped()
@@ -85,7 +96,10 @@
 	if(!suittoggled)
 		if(ishuman(src.loc))
 			var/mob/living/carbon/human/H = src.loc
-			if(H.wear_suit != src)
+			// [CELADON-EDIT] - FIXES_HOODED_ICONS
+			// if(H.wear_suit != src)	// ORIGINAL
+			if(H.wear_suit != src && H.wear_neck != src)
+			// [/CELADON-EDIT]
 				to_chat(H, span_warning("You must be wearing [src] to put up the hood!"))
 				return
 			if(H.head)
@@ -93,9 +107,14 @@
 				return
 			else if(H.equip_to_slot_if_possible(hood,ITEM_SLOT_HEAD,0,0,1))
 				suittoggled = TRUE
-				H.update_inv_wear_suit()
+				if(H.wear_suit == src)	// [CELADON-ADD] - FIXES_HOODED_ICONS
+					H.update_inv_wear_suit()
+				// [CELADON-EDIT] - FIXES_HOODED_ICONS
 				//update_appearance() - FIXES_ICON - СУКА ИЗ-ЗА ЭТОГО СЛОМАЛИСЬ ВСЕ КАПЮШОНЫ
-				//H.regenerate_icons()
+				//H.regenerate_icons()	// ORIGINAL
+				else if(H.wear_neck == src)
+					H.update_inv_neck()
+				// [/CELADON-EDIT]
 				for(var/X in actions)
 					var/datum/action/A = X
 					A.UpdateButtonIcon()
@@ -136,14 +155,26 @@
 	equip_delay_other = EQUIP_DELAY_COAT * 1.5
 	strip_delay = EQUIP_DELAY_COAT * 1.5
 
-/obj/item/clothing/suit/toggle/AltClick(mob/user)
+/obj/item/clothing/suit/toggle/ComponentInitialize()
 	. = ..()
+	AddElement(/datum/element/update_icon_updates_onmob)
+
+/obj/item/clothing/suit/toggle/attack_hand_secondary(mob/user, list/modifiers)
+	suit_toggle(user)
+	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+
+/obj/item/clothing/suit/toggle/AltClick(mob/user)
 	if(!user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
 		return FALSE
+
+	. = SEND_SIGNAL(src, COMSIG_CLICK_ALT, user)
+	if(. & COMPONENT_CANCEL_CLICK_ALT)
+		return
+
 	if(unique_reskin && !current_skin)
 		reskin_obj(user)
-	else
-		suit_toggle(user)
+		return TRUE
+
 	return TRUE
 
 /obj/item/clothing/suit/toggle/ui_action_click()
@@ -162,6 +193,7 @@
 	else if(!src.suittoggled)
 		src.icon_state = "[initial(icon_state)]_t"
 		src.suittoggled = TRUE
+	update_appearance()
 	usr.update_inv_wear_suit()
 	for(var/X in actions)
 		var/datum/action/A = X

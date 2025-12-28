@@ -1,7 +1,7 @@
 /mob/living/simple_animal/hostile/asteroid/goliath/magma
 	name = "magma goliath"
 	desc = "Огромный, закованный в броню, магмовый зверь с длинными отростками, выходящие из его спины."
-	icon = 'mod_celadon/_storge_icons/icons/mobs/magma_mobs/goliaph_magma.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/mobs/magma_mobs/goliaph_magma.dmi'
 	icon_state = "goliath"
 	icon_living = "goliath"
 	icon_aggro = "goliath"
@@ -106,7 +106,7 @@ GLOBAL_LIST_INIT(onecardinal, NORTH) // Патерн атаки для одно�
 
 /obj/effect/temp_visual/goliath_tentacle/magma
 	name = "goliath tentacle"
-	icon = 'mod_celadon/_storge_icons/icons/mobs/magma_mobs/tentacle_magma.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/mobs/magma_mobs/tentacle_magma.dmi'
 	icon_state = "Goliath_tentacle_wiggle"
 	layer = BELOW_MOB_LAYER
 	wiggle = "Goliath_tentacle_spawn"
@@ -172,5 +172,5 @@ GLOBAL_LIST_INIT(onecardinal, NORTH) // Патерн атаки для одно�
 	icon_state = "marker"
 	flick(retract,src)
 	deltimer(timerid)
-	timerid = QDEL_IN(src, 7)
+	timerid = QDEL_IN_STOPPABLE(src, 7)
 	new /turf/open/lava/smooth(loc)

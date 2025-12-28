@@ -73,6 +73,9 @@ GLOBAL_VAR(restart_counter)
 	if(NO_INIT_PARAMETER in params)
 		return
 
+	// Init the debugger first so we can debug Master
+	Debugger = new
+
 	Master.Initialize(10, FALSE, TRUE)
 
 	#ifdef UNIT_TESTS
@@ -142,6 +145,7 @@ GLOBAL_VAR(restart_counter)
 	GLOB.world_paper_log = "[GLOB.log_directory]/paper.log"
 	GLOB.tgui_log = "[GLOB.log_directory]/tgui.log"
 	GLOB.world_shuttle_log = "[GLOB.log_directory]/shuttle.log"
+	GLOB.world_celadon_economic_log = "[GLOB.log_directory]/world_celadon_economic.log" // [CELADON-ADD] - CELADON_COMPONENTS_LOGS
 	GLOB.world_celadon_admin_log = "[GLOB.log_directory]/admin.log" // [CELADON-ADD] - Добавляем логирование админских действий.
 
 	GLOB.demo_log = "[GLOB.log_directory]/demo.log"
@@ -164,6 +168,7 @@ GLOBAL_VAR(restart_counter)
 	start_log(GLOB.world_job_debug_log)
 	start_log(GLOB.tgui_log)
 	start_log(GLOB.world_shuttle_log)
+	start_log(GLOB.world_celadon_economic_log) // [CELADON-ADD] - CELADON_COMPONENTS_LOGS
 	start_log(GLOB.world_celadon_admin_log) // [CELADON-ADD] - Добавляем логирование админских действий.
 
 	var/latest_changelog = file("[global.config.directory]/../html/changelogs/archive/" + time2text(world.timeofday, "YYYY-MM") + ".yml")
@@ -272,6 +277,7 @@ GLOBAL_VAR(restart_counter)
 		if(do_hard_reboot)
 			log_world("World hard rebooted at [time_stamp()]")
 			shutdown_logging() // See comment below.
+			QDEL_NULL(Debugger)
 			TgsEndProcess()
 
 	log_world("World rebooted at [time_stamp()]")
@@ -282,9 +288,7 @@ GLOBAL_VAR(restart_counter)
 
 /world/Del()
 	shutdown_logging() // makes sure the thread is closed before end, else we terminate
-	var/debug_server = world.GetConfig("env", "AUXTOOLS_DEBUG_DLL")
-	if (debug_server)
-		call_ext(debug_server, "auxtools_shutdown")()
+	QDEL_NULL(Debugger)
 	..()
 
 /world/proc/update_status()

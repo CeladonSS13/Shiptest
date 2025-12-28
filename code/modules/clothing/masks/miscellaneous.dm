@@ -28,6 +28,7 @@
 	desc = "A sterile mask designed to help prevent the spread of diseases."
 	icon_state = "sterile"
 	item_state = "sterile"
+	supports_variations = SNOUTED_VARIATION | KEPORI_VARIATION | VOX_VARIATION
 	w_class = WEIGHT_CLASS_TINY
 	flags_inv = HIDEFACE
 	flags_cover = MASKCOVERSMOUTH
@@ -66,9 +67,9 @@
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/clothing/mask/spamton
 	name = "Cursed Businessman's Mask"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/masks.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/masks.dmi'
 	icon_state = "big_shot"
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/mask.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/mask.dmi'
 	item_state = "big_shot"
 	clothing_flags = ALLOWINTERNALS
 	visor_flags = ALLOWINTERNALS

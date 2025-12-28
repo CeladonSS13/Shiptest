@@ -13,7 +13,7 @@
 		if("Подтвердить")
 			priority_announce("Наши локаторы получили сигнал бедствия S.O.S., который исходит от судна '" \
 			+ name + "' по координатам: X - " + x + " / Y - " + y + ". " + name + " запрашивает скорейшей помощи!", \
-			sound = 'mod_celadon/_storge_sounds/sound/announce/sos.ogg', sender_override = "Outpost Distress Beacon System", zlevel = 0)
+			sound = 'mod_celadon/_storage_sounds/sound/announce/sos.ogg', sender_override = "Outpost Distress Beacon System", zlevel = 0)
 
 			COOLDOWN_START(src, sendsos_cooldown, 45 MINUTES)
 			// Отправляем сигнал в Wideband.

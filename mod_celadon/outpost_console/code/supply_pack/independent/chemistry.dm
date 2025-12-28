@@ -61,7 +61,7 @@
 	crate_name = "pill press crate"
 
 /*
-		Материалы
+	MARK: Материалы
 */
 
 /datum/supply_pack/faction/independent/chemistry/aluminium
@@ -203,3 +203,10 @@
 	cost = 500
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/robustharvestnutriment)
 	crate_name = "bulk Robust Harvest crate"
+
+/datum/supply_pack/faction/independent/chemistry/holywater
+	name = "Flask of holy water"
+	desc = "Father Lootius' own brand of ready-made filled with 100u of holy water."
+	cost = 1000
+	contains = list(/obj/item/reagent_containers/food/drinks/bottle/holywater)
+	crate_name = "flask of holy water crate"

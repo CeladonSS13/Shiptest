@@ -10,6 +10,7 @@
 	permeability_coefficient = 0.01
 	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH | PEPPERPROOF | SEALS_EYES
 	resistance_flags = NONE
+	supports_variations = KEPORI_VARIATION | SNOUTED_VARIATION | VOX_VARIATION
 
 	equip_sound = 'sound/items/equip/armor_equip.ogg'
 	equipping_sound = EQUIP_SOUND_VFAST_GENERIC
@@ -86,6 +87,7 @@
 	desc = "A close-fitting tactical mask that can be connected to an air supply."
 	icon_state = "syndicate"
 	strip_delay = 60
+	supports_variations = SNOUTED_VARIATION | KEPORI_VARIATION | VOX_VARIATION
 
 /obj/item/clothing/mask/gas/syndicate/voicechanger
 	desc = "A close-fitting tactical mask that can be connected to an air supply. This one has an integrated voice changer."
@@ -94,8 +96,8 @@
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/clothing/mask/gas/clown_hat
 	name = "clown wig and mask"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/masks.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/mask.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/masks.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/mask.dmi'
 	desc = "A true prankster's facial attire. A clown is incomplete without his wig and mask."
 	clothing_flags = ALLOWINTERNALS
 	icon_state = "clown"
@@ -144,8 +146,8 @@
 
 /obj/item/clothing/mask/gas/sexyclown
 	name = "sexy-clown wig and mask"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/masks.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/mask.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/masks.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/mask.dmi'
 	desc = "A feminine clown mask for the dabbling crossdressers or female entertainers."
 	clothing_flags = ALLOWINTERNALS
 	icon_state = "sexyclown"
@@ -155,8 +157,8 @@
 
 /obj/item/clothing/mask/gas/mime
 	name = "mime mask"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/masks.dmi'
-	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/mask.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/masks.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/mask.dmi'
 	desc = "The traditional mime's mask. It has an eerie facial posture."
 	clothing_flags = ALLOWINTERNALS
 	icon_state = "mime"
@@ -212,7 +214,7 @@
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/item/clothing/mask/gas/sexymime
 	name = "sexy mime mask"
-	icon = 'mod_celadon/_storge_icons/icons/other/clown_mime/masks.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/other/clown_mime/masks.dmi'
 	desc = "A traditional female mime's mask."
 	clothing_flags = ALLOWINTERNALS
 	icon_state = "sexymime"

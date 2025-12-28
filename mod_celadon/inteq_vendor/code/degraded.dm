@@ -18,11 +18,11 @@
 	icon_state_open = "turbine"
 	icon_state_off = "turbine"
 
-/obj/machinery/power/shuttle/engine/turbine/degraded/process(delta_time)
+/obj/machinery/power/shuttle/engine/turbine/degraded/process(seconds_per_tick)
 	add_avail(lastgen) // add power in process() so it doesn't update power output separately from the rest of the powernet (bad)
 	update_overlays()
 
-/obj/machinery/power/shuttle/engine/turbine/process_atmos(delta_time)
+/obj/machinery/power/shuttle/engine/turbine/degraded/process_atmos(seconds_per_tick)
 	if(!compressor)
 		set_machine_stat(BROKEN)
 		locate_machinery() // try to find the missing piece
@@ -34,7 +34,7 @@
 	// the TURBGENQ and TURBGENG values
 
 	lastgen = ((compressor.rpm / TURBGENQ)**TURBGENG) * TURBGENQ * productivity
-	thrust = lastgen * POWER_TO_THRUST*0.2 // second law
+	thrust = lastgen * POWER_TO_THRUST // second law
 
 	var/turf/outturf = get_step(src, dir)
 	if(!LAZYLEN(outturf.atmos_adjacent_turfs))

@@ -114,7 +114,7 @@
 			else
 // [CELADON-EDIT] - CELADON_ADD_HUDS
 //				var/image/I = image('icons/mob/hud.dmi', src, "")
-				var/image/I = image('mod_celadon/_storge_icons/icons/resprite/hud/hud.dmi', src, "")
+				var/image/I = image('mod_celadon/_storage_icons/icons/resprite/hud/hud.dmi', src, "")
 // [/CELADON-EDIT]
 				I.appearance_flags = RESET_COLOR|RESET_TRANSFORM
 				hud_list[hud] = I
@@ -501,7 +501,7 @@
 		if(isnull(client.recent_examines[examinify]) || client.recent_examines[examinify] < world.time)
 			result = examinify.examine(src)
 			client.recent_examines[examinify] = world.time + EXAMINE_MORE_TIME // set the value to when the examine cooldown ends
-			RegisterSignal(examinify, COMSIG_PARENT_QDELETING, PROC_REF(clear_from_recent_examines), override=TRUE) // to flush the value if deleted early
+			RegisterSignal(examinify, COMSIG_QDELETING, PROC_REF(clear_from_recent_examines), override=TRUE) // to flush the value if deleted early
 			addtimer(CALLBACK(src, PROC_REF(clear_from_recent_examines), examinify), EXAMINE_MORE_TIME)
 			handle_eye_contact(examinify)
 		else
@@ -568,7 +568,7 @@
 
 	if(!client)
 		return
-	UnregisterSignal(A, COMSIG_PARENT_QDELETING)
+	UnregisterSignal(A, COMSIG_QDELETING)
 	LAZYREMOVE(client.recent_examines, A)
 
 /**
@@ -1473,14 +1473,6 @@
 /mob/proc/set_nutrition(change) //Seriously fuck you oldcoders.
 	nutrition = max(0, change)
 
-
-/mob/setMovetype(newval) //Set the movement type of the mob and update it's movespeed
-	. = ..()
-	if(isnull(.))
-		return
-	update_movespeed(FALSE)
-
-
 /mob/proc/update_equipment_speed_mods()
 	var/speedies = equipped_speed_mods()
 	if(!speedies)
@@ -1548,10 +1540,10 @@
 
 /mob/proc/set_active_storage(new_active_storage)
 	if(active_storage)
-		UnregisterSignal(active_storage, COMSIG_PARENT_QDELETING)
+		UnregisterSignal(active_storage, COMSIG_QDELETING)
 	active_storage = new_active_storage
 	if(active_storage)
-		RegisterSignal(active_storage, COMSIG_PARENT_QDELETING, PROC_REF(active_storage_deleted))
+		RegisterSignal(active_storage, COMSIG_QDELETING, PROC_REF(active_storage_deleted))
 
 /mob/proc/active_storage_deleted(datum/source)
 	SIGNAL_HANDLER

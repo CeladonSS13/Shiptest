@@ -162,7 +162,10 @@
 	var/bleed_status = "Patient is not currently bleeding."
 	var/blood_status = " Patient either has no blood, or does not require it to function."
 	var/blood_percent =  round((altPatient.blood_volume / BLOOD_VOLUME_NORMAL)*100)
-	var/blood_type = altPatient.dna.blood_type.name
+	// [CELADON-EDIT] - CELADON_BLOOD_DISPLAY
+	//var/blood_type = altPatient.dna.blood_type.name
+	var/blood_type = altPatient.get_blood_type_display()
+	// [/CELADON-EDIT]
 	var/blood_warning = " "
 
 	for(var/thing in altPatient.diseases) //Disease Information
@@ -212,8 +215,18 @@
 	if(altPatient.reagents.reagent_list.len)	//Chemical Analysis details.
 		for(var/datum/reagent/R in altPatient.reagents.reagent_list)
 			chemical_list += list(list("name" = R.name, "volume" = round(R.volume, 0.01)))
-			if(R.overdosed == 1)
+			if(R.overdosed)
 				overdose_list += list(list("name" = R.name))
+	var/obj/item/organ/stomach/belly = altPatient.getorganslot(ORGAN_SLOT_STOMACH)
+	if(belly?.reagents.reagent_list.len) //include the stomach contents if it exists
+		for(var/bile in belly.reagents.reagent_list)
+			var/datum/reagent/bit = bile
+			if(!belly.food_reagents[bit.type])
+				chemical_list += list(list("name" = bit.name, "volume" = round(bit.volume, 0.01)))
+			else
+				var/bit_vol = bit.volume - belly.food_reagents[bit.type]
+				if(bit_vol > 0)
+					chemical_list += list(list("name" = bit.name, "volume" = round(bit_vol, 0.01)))
 
 	if(altPatient.reagents.addiction_list.len)
 		for(var/datum/reagent/R in altPatient.reagents.addiction_list)

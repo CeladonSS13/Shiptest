@@ -63,7 +63,7 @@
 	friendly_verb_continuous = "grooms"
 	friendly_verb_simple = "groom"
 	mob_size = MOB_SIZE_SMALL
-	movement_type = FLYING
+	is_flying_animal = TRUE
 
 	var/parrot_damage_upper = 10
 	var/parrot_state = PARROT_WANDER //Hunt for a perch when created
@@ -126,7 +126,11 @@
 	if(ears)
 		QDEL_NULL(ears)
 	if(held_item)
-		QDEL_NULL(held_item)
+		// [CELADON-EDIT] - FIXES_PARROT_DROP_ITEM
+		// QDEL_NULL(held_item)	// ORIGINAL
+		held_item.forceMove(drop_location())
+		held_item = null
+		// [/CELADON-EDIT]
 
 	set_perch(null)
 	set_interest(null)
@@ -888,19 +892,19 @@
 
 /mob/living/simple_animal/parrot/proc/set_interest(atom/movable/new_interest)
 	if(parrot_interest)
-		UnregisterSignal(parrot_interest, COMSIG_PARENT_QDELETING)
+		UnregisterSignal(parrot_interest, COMSIG_QDELETING)
 		parrot_interest = null
 	if(new_interest)
 		parrot_interest = new_interest
-		RegisterSignal(parrot_interest, COMSIG_PARENT_QDELETING, PROC_REF(set_interest))
+		RegisterSignal(parrot_interest, COMSIG_QDELETING, PROC_REF(set_interest))
 
 /mob/living/simple_animal/parrot/proc/set_perch(obj/new_perch)
 	if(parrot_perch)
-		UnregisterSignal(parrot_perch, COMSIG_PARENT_QDELETING)
+		UnregisterSignal(parrot_perch, COMSIG_QDELETING)
 		parrot_perch = null
 	if(new_perch)
 		parrot_perch = new_perch
-		RegisterSignal(parrot_perch, COMSIG_PARENT_QDELETING, PROC_REF(set_perch))
+		RegisterSignal(parrot_perch, COMSIG_QDELETING, PROC_REF(set_perch))
 
 /*
  * Sub-types

@@ -26,6 +26,7 @@ export const Orbit = (props, context) => {
       data.ships,
       data.misc,
       data.npcs,
+      data.maps,
     ]
       .flat()
       .filter(searchFor(searchText))

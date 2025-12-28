@@ -6,7 +6,9 @@
 	"map_path": "_maps/_mod_celadon/shuttles/independent/independent_mudskipper.dmm",
 	"enabled": true,
 	"limit": 1,
-	"sensor_range": 3,
+	"tranist_x_offset": -15,
+	"tranist_y_offset": -10,
+	"sensor_range": 5,
 	"starting_funds": 1500,
 	"prefix": "ЕSV",
 	"faction": "/datum/faction/independent",
@@ -20,16 +22,16 @@
 	],
 	"job_slots": {
 		"Salvage Leader": {
-			"outfit": "/datum/outfit/job/independent/captain",
+			"outfit": "/datum/outfit/job/cel/independent/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"Salvager": {
-			"outfit": "/datum/outfit/job/independent/engineer/salvage",
+			"outfit": "/datum/outfit/job/cel/independent/engineer/salvage",
 			"slots": 2
 		},
 		"Salvage Technician": {
-			"outfit": "/datum/outfit/job/independent/engineer",
+			"outfit": "/datum/outfit/job/cel/independent/engineer",
 			"slots": 1
 		}
 	}

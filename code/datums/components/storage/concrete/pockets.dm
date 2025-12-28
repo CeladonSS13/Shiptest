@@ -8,7 +8,7 @@
 	. = ..()
 	if(. && silent && !prevent_warning)
 		if(quickdraw)
-			to_chat(user, span_notice("You discreetly slip [I] into [parent]. Alt-click [parent] to remove it."))
+			to_chat(user, span_notice("You discreetly slip [I] into [parent]. Right-click [parent] to remove it."))
 		else
 			to_chat(user, span_notice("You discreetly slip [I] into [parent]."))
 
@@ -87,6 +87,7 @@
 	set_holdable(list(
 		/obj/item/clothing/glasses/cold,
 		/obj/item/clothing/glasses/heat,
+		/obj/item/clothing/glasses/safety,
 		/obj/item/clothing/glasses/welding,
 		/obj/item/clothing/glasses/meson,
 		/obj/item/clothing/glasses/thermal,
@@ -95,8 +96,10 @@
 		/obj/item/clothing/glasses/hud/security/night,
 		/obj/item/clothing/glasses/hud/security/sunglasses/inteq,
 		/obj/item/clothing/glasses/sunglasses/ballistic,
+		/obj/item/clothing/glasses/sunglasses/pgf,
 		/obj/item/clothing/glasses/hud/security/sunglasses/ngr,
 		/obj/item/clothing/glasses/hud/security/sunglasses/hardliners,
+		/obj/item/clothing/glasses/hud/security/sunglasses/ramzi,
 		/obj/item/ammo_casing,
 		/obj/item/ammo_box/magazine/illestren_a850r,
 		/obj/item/bodycamera,
@@ -115,7 +118,8 @@
 		/obj/item/gun/ballistic/revolver,
 		/obj/item/gun/energy/laser,
 		/obj/item/gun/energy/disabler,
-		/obj/item/gun/energy/e_gun,
+		/obj/item/gun/energy/sharplite/x26,
+		/obj/item/gun/energy/e_gun/e_old, // [CELADON-ADD] - CELADON_RETURN_EGUN
 		/obj/item/gun/energy/kalix/pistol,
 		/obj/item/stock_parts/cell/gun,
 		/obj/item/ammo_box)) // this doesnt let you put hades into holsters trust me
@@ -144,7 +148,8 @@
 	can_hold = typecacheof(list(
 		/obj/item/gun/ballistic/automatic,
 		/obj/item/gun/ballistic/revolver,
-		/obj/item/gun/energy/e_gun/mini,
+		/obj/item/gun/energy/sharplite/x26,
+		/obj/item/gun/energy/e_gun/e_old/mini, // [CELADON-ADD] - CELADON_RETURN_EGUN
 		/obj/item/gun/energy/disabler,
 		/obj/item/gun/energy/pulse/carbine,
 		/obj/item/gun/energy/dueling,

@@ -140,7 +140,7 @@
 		part.siemens_coefficient = theme.siemens_coefficient
 	for(var/obj/item/part as anything in mod_parts)
 		RegisterSignal(part, COMSIG_ATOM_DESTRUCTION, PROC_REF(on_part_destruction))
-		RegisterSignal(part, COMSIG_PARENT_QDELETING, PROC_REF(on_part_deletion))
+		RegisterSignal(part, COMSIG_QDELETING, PROC_REF(on_part_deletion))
 	set_mod_skin(new_skin || theme.default_skin)
 	update_speed()
 	for(var/obj/item/mod/module/module as anything in initial_modules)
@@ -643,8 +643,8 @@
 		// [CELADON-EDIT] - inteq_vendor - REASSIGNING ICONS DIRECTORY
 		//part.icon = used_skin[MOD_ICON_OVERRIDE] || 'icons/obj/clothing/modsuit/mod_clothing.dmi' // [CELADON-EDIT] - ORIGINAL
 		//part.mob_overlay_icon = used_skin[MOD_WORN_ICON_OVERRIDE] || 'icons/mob/clothing/modsuit/mod_clothing.dmi' // [CELADON-EDIT] - ORIGINAL
-		part.icon = used_skin[MOD_ICON_OVERRIDE] || 'mod_celadon/_storge_icons/icons/items/clothing/mod_suit/mod_clothing.dmi'
-		part.mob_overlay_icon = used_skin[MOD_WORN_ICON_OVERRIDE] || 'mod_celadon/_storge_icons/icons/items/clothing/mod_suit/overlay/mod_clothing.dmi'
+		part.icon = used_skin[MOD_ICON_OVERRIDE] || 'mod_celadon/_storage_icons/icons/items/clothing/mod_suit/mod_clothing.dmi'
+		part.mob_overlay_icon = used_skin[MOD_WORN_ICON_OVERRIDE] || 'mod_celadon/_storage_icons/icons/items/clothing/mod_suit/overlay/mod_clothing.dmi'
 		// [CELADON-EDIT]
 
 		part.icon_state = "[skin]-[part.base_icon_state]"

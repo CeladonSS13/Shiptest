@@ -97,7 +97,7 @@
 		/obj/structure/flora/ash/chilly = 4,
 		/obj/structure/flora/ash/garden/frigid = 2,
 		// [CELADON - ADD] - CELADON_RETURN_LANDMINE
-		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/items/misc/landmine.dmi'} = 1,
+		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storage_icons/icons/items/misc/landmine.dmi'} = 1,
 		// [/CELADON - ADD]
 	)
 	flora_spawn_chance = 10
@@ -111,6 +111,7 @@
 		/mob/living/simple_animal/hostile/asteroid/ice_demon/random = 5,
 		/mob/living/simple_animal/hostile/asteroid/ice_whelp = 5,
 		/mob/living/simple_animal/hostile/asteroid/lobstrosity = 10,
+		/obj/effect/spawner/random/snow_monkey_pack = 5,
 	)
 	feature_spawn_chance = 0.1
 	feature_spawn_list = list(
@@ -160,7 +161,7 @@
 		/obj/structure/flora/tree/dead = 6,
 		/obj/structure/flora/grass/both = 8,
 		// [CELADON - ADD] - CELADON_RETURN_LANDMINE
-		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/items/misc/landmine.dmi'} = 1,
+		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storage_icons/icons/items/misc/landmine.dmi'} = 1,
 		// [/CELADON - ADD]
 	)
 
@@ -171,7 +172,7 @@
 		/obj/structure/flora/grass/both = 6,
 		/obj/structure/flora/tree/dead = 3,
 		// [CELADON - ADD] - CELADON_RETURN_LANDMINE
-		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storge_icons/icons/items/misc/landmine.dmi'} = 1,
+		/obj/item/mine/pressure/explosive/rusty/live{icon = 'mod_celadon/_storage_icons/icons/items/misc/landmine.dmi'} = 1,
 		// [/CELADON - ADD]
 	)
 

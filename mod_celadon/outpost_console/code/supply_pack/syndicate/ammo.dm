@@ -15,7 +15,9 @@
 > 5.56x42mm
 > 6.5mm
 > .50 BMG
-> .410
+> Ferroslugs
+> Ferro Pellets
+> Ferro Lances
 
 MARK: .22lr
 */
@@ -250,23 +252,49 @@ MARK: .50 BMG
 	cost = 1000
 
 /*
-MARK: .410
+MARK: Ferroslugs
 */
 
-/datum/supply_pack/faction/independent/ammo/a410_buckshot
-	name = ".410 Buckshot Box"
-	desc = "Contains a box with 60 buckshot cartridges of .410 caliber."
-	contains = list(/obj/item/storage/box/ammo/a410_ammo_box)
-	cost = 1000
+/datum/supply_pack/faction/syndicate/ammo/ferroslugboxcrate
+	name = "Ferromagnetic Slug Box Crate"
+	desc = "Contains a 48-round ferromagnetic slug for gauss guns such as the Model-H."
+	contains = list(/obj/item/storage/box/ammo/ferroslug)
+	cost = 200
 
-/datum/supply_pack/faction/independent/ammo/a410_slug
-	name = ".410 Slug Box"
-	desc = "Contains a box with 60 slug cartridges of .410 caliber."
-	contains = list(/obj/item/storage/box/ammo/a410_ammo_box/slug)
-	cost = 1500
+/datum/supply_pack/faction/syndicate/ammo/hcslugs
+	name = "High Conductivity Slug Box Crate"
+	desc = "Contains a 48-round high conductivity slug for gauss guns such as the Model-H."
+	contains = list(/obj/item/storage/box/ammo/ferroslug/hc)
+	cost = 250
 
-/datum/supply_pack/faction/independent/ammo/a410_flechette
-	name = ".410 Flechette Box"
-	desc = "Contains a box with 60 flechette rounds of .410 caliber."
-	contains = list(/obj/item/storage/box/ammo/a410_ammo_box/flechette)
-	cost = 1500
+/*
+MARK: Ferro Pellets
+*/
+
+/datum/supply_pack/faction/syndicate/ammo/ferropelletboxcrate
+	name = "Ferromagnetic Pellet Box Crate"
+	desc = "Contains a 48-round ferromagnetic pellet ammo box for gauss guns such as the Claris."
+	contains = list(/obj/item/storage/box/ammo/ferropellet)
+	cost = 300 //5.7 ammo efficiency at 25 damage
+
+/datum/supply_pack/faction/syndicate/ammo/hcpellets
+	name = "High Conductivity Pellet Box Crate"
+	desc = "Contains a 48-round high conductivity pellet ammo box for gauss guns such as the Claris."
+	contains = list(/obj/item/storage/box/ammo/ferropellet/hc)
+	cost = 400
+
+/*
+MARK: Ferro Lances
+*/
+
+/datum/supply_pack/faction/syndicate/ammo/ferrolanceboxcrate
+	name = "Ferromagnetic Lance Box Crate"
+	desc = "Contains a 48-round box for high-powered gauss guns such as the GAR assault rifle."
+	contains = list(/obj/item/storage/box/ammo/ferrolance)
+	cost = 300 //5 ammo efficiency at 30 damage
+
+/datum/supply_pack/faction/syndicate/ammo/ferrolanceboxcrate_hc
+	name = "High Conductivity Lance Box Crate"
+	desc = "Contains a 48-round box for high-powered gauss guns such as the GAR assault rifle."
+	contains = list(/obj/item/storage/box/ammo/ferrolance/hc)
+	cost = 400

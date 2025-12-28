@@ -170,6 +170,9 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 	// [CELADON-ADD] - VENDING_CASH - Добавляем вендингам аккаунт для денег
 	var/datum/bank_account/vending/bank_account
 	// [/CELADON-ADD]
+	/// restocks venders every hour if this is true
+	var/restock_hourly = FALSE
+
 /**
 	* Initialize the vending machine
 	*
@@ -187,6 +190,9 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 		build_inventory(contraband, hidden_records)
 		build_inventory(premium, coin_records)
 
+	if(restock_hourly)
+		addtimer(CALLBACK(src, PROC_REF(refill_inventory_full)), 60 MINUTES, TIMER_STOPPABLE|TIMER_LOOP|TIMER_DELETE_ME)
+
 	slogan_list = splittext(product_slogans, ";")
 	// So not all machines speak at the exact same time.
 	// The first time this machine says something will be at slogantime + this random value,
@@ -196,7 +202,11 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 
 	Radio = new /obj/item/radio(src)
 	Radio.listening = 0
-	if(istype(get_area(src.loc), /area/outpost) || istype(get_area(src.loc), /area/ruin))
+	// Машины на аванпостах сохранят значение all_items_free = TRUE если оно было установлено на карте.
+	// [CELADON-EDIT] - CELADON_BALANCE_VENDING - Машины на аванпостах сохранят значение all_items_free = TRUE если оно было установлено на карте
+	// if(istype(get_area(src.loc), /area/outpost) || istype(get_area(src.loc), /area/ruin))	// ORIGINAL
+	if(all_items_free && istype(get_area(src.loc), /area/ruin))
+	// [/CELADON-EDIT]
 		all_items_free = FALSE
 
 /obj/machinery/vending/Destroy()
@@ -350,6 +360,12 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 			productlist[record.product_path] -= diff
 			record.amount += diff
 			. += diff
+
+/obj/machinery/vending/proc/refill_inventory_full()
+	refill_inventory(products, product_records)
+	refill_inventory(contraband, hidden_records)
+	refill_inventory(premium, coin_records)
+
 /**
 	* Set up a refill canister that matches this machines products
 	*
@@ -547,8 +563,11 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 						visible_message(span_danger("[C]'s spinal cord is obliterated with a sickening crunch!"), ignored_mobs = list(C))
 						C.gain_trauma(/datum/brain_trauma/severe/paralysis/paraplegic)
 					if(5) // limb squish!
-						for(var/i in C.bodyparts)
-							var/obj/item/bodypart/squish_part = i
+						var/obj/item/bodypart/squish_part
+						for(var/zone in C.bodyparts)
+							squish_part = C.bodyparts[zone]
+							if(!squish_part)
+								continue
 							if(IS_ORGANIC_LIMB(squish_part))
 								var/type_wound = pick(list(/datum/wound/blunt/severe, /datum/wound/blunt/moderate))
 								squish_part.force_wound_upwards(type_wound)

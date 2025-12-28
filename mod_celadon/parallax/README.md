@@ -28,8 +28,7 @@ ID мода: CELADON_PARALLAX
 
 ### Изменения *кор кода*
 
-- `code/_onclick/hud/parallax.dm`
-- `code/controllers/subsystem/parallax.dm`
+- EDIT: `code/_onclick/hud/parallax.dm`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -66,7 +65,7 @@ ID мода: CELADON_PARALLAX
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- `mod_celadon/_storge_icons/icons`
+- `mod_celadon/_storage_icons/icons`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.

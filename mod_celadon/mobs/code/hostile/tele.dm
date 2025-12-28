@@ -1,7 +1,7 @@
 /mob/living/simple_animal/hostile/hivebot/tele//this still needs work
 	name = "Beacon"
 	desc = "Some odd beacon thing"
-	icon = 'mod_celadon/_storge_icons/icons/mobs/hivebot.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/mobs/hivebot.dmi'
 	icon_state = "def_radar-off"
 	icon_living = "def_radar-off"
 	health = 200
@@ -35,7 +35,7 @@
 				var/mob/living/basic/hivebot/H = new /mob/living/basic/hivebot(get_turf(src))
 				H.faction = faction
 			if("range")
-				var/mob/living/basic/hivebot/range/R = new /mob/living/basic/hivebot/range(get_turf(src))
+				var/mob/living/basic/hivebot/ranged/R = new /mob/living/basic/hivebot/ranged(get_turf(src))
 				R.faction = faction
 			if("rapid")
 				var/mob/living/basic/hivebot/rapid/F = new /mob/living/basic/hivebot/rapid(get_turf(src))

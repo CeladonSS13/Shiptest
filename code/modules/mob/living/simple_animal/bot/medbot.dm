@@ -403,7 +403,7 @@
 		return
 
 	//Patient has moved away from us!
-	else if(patient && path.len && (get_dist(patient,path[path.len]) > 2))
+	else if(patient && path && path.len && (get_dist(patient,path[path.len]) > 2))	// [CELADON-EDIT] - FIXES_MEDBOT_RUNTIME_PATH_NULL \\ else if(patient && path.len && (get_dist(patient,path[path.len]) > 2))
 		path = list()
 		mode = BOT_IDLE
 		last_found = world.time
@@ -412,7 +412,7 @@
 		soft_reset()
 		return
 
-	if(patient && path.len == 0 && (get_dist(src,patient) > 1))
+	if(patient && (!path || path.len == 0) && (get_dist(src,patient) > 1))	// [CELADON-EDIT] - FIXES_MEDBOT_RUNTIME_PATH_NULL \\ if(patient && path.len == 0 && (get_dist(src,patient) > 1))
 		path = get_path_to(src, patient, 30,id=access_card)
 		mode = BOT_MOVING
 		if(!path.len) //try to get closer if you can't reach the patient directly
@@ -420,13 +420,12 @@
 			if(!path.len) //Do not chase a patient we cannot reach.
 				soft_reset()
 
-	if(path.len > 0 && patient)
+	if(path && path.len > 0 && patient)	// [CELADON-EDIT] - FIXES_MEDBOT_RUNTIME_PATH_NULL \\ if(path.len > 0 && patient)
 		if(!bot_move(path[path.len]))
 			oldpatient = patient
 			soft_reset()
 		return
-
-	if(path.len > 8 && patient)
+	if(path && path.len > 8 && patient)	// [CELADON-EDIT] - FIXES_MEDBOT_RUNTIME_PATH_NULL \\ if(path.len > 8 && patient)
 		frustration++
 
 	if(auto_patrol && !stationary_mode && !patient)
@@ -447,9 +446,12 @@
 		return FALSE	//welp too late for them!
 
 	var/can_inject = FALSE
-	for(var/X in C.bodyparts)
-		var/obj/item/bodypart/part = X
-		if(IS_ORGANIC_LIMB(part))
+	var/obj/item/bodypart/body_part
+	for(var/zone in C.bodyparts)
+		body_part = C.bodyparts[zone]
+		if(!body_part)
+			continue
+		if(IS_ORGANIC_LIMB(body_part))
 			can_inject = TRUE
 	if(!can_inject)
 		return 0
@@ -487,12 +489,12 @@
 	if(C.getToxLoss() >= heal_threshold)
 		return TRUE
 
-/mob/living/simple_animal/bot/medbot/attack_hand(mob/living/carbon/human/H)
+/mob/living/simple_animal/bot/medbot/attack_hand(mob/living/carbon/human/H, list/modifiers)
 	if(DOING_INTERACTION_WITH_TARGET(H, src))
 		to_chat(H, span_warning("You're already interacting with [src]."))
 		return
 
-	if(H.a_intent == INTENT_DISARM && mode != BOT_TIPPED)
+	if(LAZYACCESS(modifiers, RIGHT_CLICK) && mode != BOT_TIPPED)
 		H.visible_message(span_danger("[H] begins tipping over [src]."), span_warning("You begin tipping over [src]..."))
 
 		if(world.time > last_tipping_action_voice + 15 SECONDS)

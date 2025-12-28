@@ -57,7 +57,7 @@
 /obj/machinery/suit_storage_unit/inherit{
 	req_access_txt = "8486"
 	},
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /obj/item/tank/jetpack/oxygen,
 /obj/item/clothing/suit/space/hardsuit/syndi/inteq,
 /turf/open/floor/carpet/red_gold,
@@ -68,6 +68,7 @@
 	anchored = 1;
 	req_access_txt = "8486"
 	},
+/obj/item/gun/ballistic/revolver/horizonx,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
@@ -4002,13 +4003,14 @@
 /obj/item/clothing/accessory/holster,
 /obj/item/clothing/suit/armor/vest/inteq,
 /obj/item/shield/riot/tele,
-/obj/item/clothing/head/helmet/swat/inteq,
+/obj/item/clothing/head/helmet/swat,
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
 /obj/item/ammo_box/magazine/usp45_standart,
 /obj/item/storage/backpack/ert{
 	name = "Enforcer backpack"
 	},
 /obj/item/clothing/mask/balaclava/inteq,
+/obj/item/clothing/head/helmet/bulletproof/x11/inteq,
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/crewtwo)
 "zM" = (
@@ -4138,9 +4140,9 @@
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
-/obj/item/clothing/head/helmet/inteq,
-/obj/item/clothing/head/helmet/inteq,
-/obj/item/clothing/head/helmet/inteq,
+/obj/item/clothing/head/helmet/m10/inteq,
+/obj/item/clothing/head/helmet/m10/inteq,
+/obj/item/clothing/head/helmet/m10/inteq,
 /obj/item/clothing/mask/balaclava/inteq,
 /obj/item/clothing/mask/balaclava/inteq,
 /turf/open/floor/plating,
@@ -6156,7 +6158,7 @@
 /obj/item/clothing/suit/armor/vest/security/warden/inteq,
 /obj/item/clothing/gloves/krav_maga/sec,
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq/no_mag,
+/obj/item/gun/ballistic/automatic/pistol/challenger/inteq/no_mag,
 /obj/item/storage/belt/security/webbing/inteq/alt,
 /obj/item/storage/backpack/messenger/inteq,
 /obj/item/storage/box/handcuffs,
@@ -7664,9 +7666,9 @@
 /obj/item/gun/energy/disabler,
 /obj/item/gun/energy/disabler,
 /obj/item/gun/energy/disabler,
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq,
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq,
-/obj/item/gun/ballistic/automatic/pistol/commander/inteq,
+/obj/item/gun/ballistic/automatic/pistol/challenger/inteq,
+/obj/item/gun/ballistic/automatic/pistol/challenger/inteq,
+/obj/item/gun/ballistic/automatic/pistol/challenger/inteq,
 /turf/open/floor/engine{
 	icon_state = "plastitanium";
 	explosion_block = 7
@@ -7684,7 +7686,7 @@
 /area/ship/engineering/engine)
 "Xx" = (
 /obj/structure/bed,
-/obj/item/melee/knife/shiv/carrot,
+/obj/item/melee/knife/shiv,
 /obj/effect/spawner/random/bedsheet,
 /turf/open/floor/plasteel/tech,
 /area/ship/security/prison)

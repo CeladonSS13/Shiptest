@@ -112,7 +112,10 @@
 
 /obj/structure/speaking_tile/proc/SpeakPeace(list/statements)
 	for(var/i in 1 to statements.len)
-		say(span_deadsay("[statements[i]]"))
+		// [CELADON-EDIT] - CELADON_FIXES_DEBUG_ROOM
+		// say(span_deadsay("[statements[i]]"))	// ORIGINAL
+		visible_message(span_deadsay("[src] [verb_say], \"[statements[i]]\""))
+		// [/CELADON-EDIT]
 		if(i != statements.len)
 			sleep(30)
 

@@ -58,8 +58,8 @@
 	message = "начинает махать хвостом."
 
 /datum/emote/living/carbon/human/dap
-	message = "грустно не находит, кому дать пять, и бьёт сам себя по руке. Печально."  
-	message_param = "даёт пять %t."  
+	message = "грустно не находит, кому дать пять, и бьёт сам себя по руке. Печально."
+	message_param = "даёт пять %t."
 
 /datum/emote/living/carbon/human/weh
 	message = "издаёт странное вээх!"
@@ -81,7 +81,7 @@
 
 /datum/emote/living/carbon/crack
 	message = "хрустит костяшками пальцев."
-	sound = 'mod_celadon/_storge_sounds/sound/voice/knuckles.ogg'
+	sound = 'mod_celadon/_storage_sounds/sound/voice/knuckles.ogg'
 
 /datum/emote/living/carbon/gnarl
 	message = "рычит и скалит зубы..."

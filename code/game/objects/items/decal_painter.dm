@@ -17,7 +17,7 @@
 
 	var/list/allowed_directions = list("south")
 
-	// [CELADON-EDIT] - CELADON_STRUCTURES
+	// [CELADON-EDIT] - CELADON_STRUCTURES, CRAFTING_RECIPE_SUNS
 	// var/static/list/allowed_states = list(
 	// 	"steel", "dark", "white", "freezer", "tile_full", "cargo_one_full",
 	// 	"kafel_full", "monotile", "grid", "ridged", "stairs",
@@ -33,7 +33,9 @@
 		"hexacrete_dark", "plaque", "tcomms", "titanium", "titanium_blue",
 		"titanium_yellow", "titanium_white", "plastitanium", "plastitanium_red",
 		"titanium_tiled", "titanium_tiled_blue", "titanium_tiled_yellow",
-		"titanium_tiled_white", "titanium_tiled_purple"
+		"titanium_tiled_white", "titanium_tiled_purple", "light", "lightplain",
+		"lightpattern", "lighthatched", "lightdiag", "darkchunky", "dark",
+		"darkplain", "darkpattern"
 	)
 	// [/CELADON-EDIT]
 
@@ -67,7 +69,7 @@
 	if(!floor_icon)
 		// [CELADON-EDIT] - CELADON_STRUCTURES
 		// floor_icon = icon('icons/turf/floors/tiles.dmi', floor_state, floor_dir) // CELADON-EDIT - ORIGINAL
-		floor_icon = icon('mod_celadon/_storge_icons/icons/structures/tiles.dmi', floor_state, floor_dir)
+		floor_icon = icon('mod_celadon/_storage_icons/icons/structures/tiles.dmi', floor_state, floor_dir)
 		// [/CELADON-EDIT]
 	user << browse_rsc(floor_icon, "floor.png")
 	var/dat = {"
@@ -134,7 +136,7 @@
 
 	// [CELADON-EDIT] - CELADON_STRUCTURES
 	// floor_icon = icon('icons/turf/floors/tiles.dmi', floor_state, floor_dir) // CELADON-EDIT - ORIGINAL
-	floor_icon = icon('mod_celadon/_storge_icons/icons/structures/tiles.dmi', floor_state, floor_dir)
+	floor_icon = icon('mod_celadon/_storage_icons/icons/structures/tiles.dmi', floor_state, floor_dir)
 	// [/CELADON-EDIT]
 	if(usr)
 		attack_self(usr)

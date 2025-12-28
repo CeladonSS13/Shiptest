@@ -181,15 +181,17 @@
 	category = list("Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
 
-/datum/design/medigel
-	name = "Medical Gel"
-	desc = "A medical gel applicator bottle, designed for precision application, with an unscrewable cap."
-	id = "medigel"
-	build_path = /obj/item/reagent_containers/medigel
+// [CELADON-ADD] - OMNI_TOOLS
+/datum/design/healthanalyzer_range
+	name = "Long-range Health Analyzer"
+	desc = "A handheld body scanner capable of accurately detecting the patient's vital signs from a distance."
+	id = "healthanalyzer_ranged"
+	build_path = /obj/item/healthanalyzer/ranged
 	build_type = PROTOLATHE
-	materials = list(/datum/material/iron = 2500)
+	materials = list(/datum/material/iron = 5000, /datum/material/glass = 2500, /datum/material/silver = 2000)
 	category = list("Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
+// [/CELADON-ADD]
 
 /datum/design/laserscalpel
 	name = "Laser Scalpel"

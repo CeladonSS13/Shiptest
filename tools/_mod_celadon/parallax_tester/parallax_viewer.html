@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parallax Texture Viewer</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #222; color: white; font-size: 13px; }
+        .controls { margin-bottom: 20px; }
+        .control-group { margin: 10px 0; }
+        label { display: inline-block; width: 100px; }
+        select, input { margin: 5px; }
+        #canvas { border: 1px solid #555; background: black; }
+        .layer-info { margin: 10px 0; font-size: 11px; }
+        .randomize-options { display: flex; gap: 15px; align-items: center; flex-wrap: wrap; }
+        .randomize-options label { width: auto; margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <h2>Parallax Texture Viewer</h2>
+    
+    <div class="controls">
+        <div class="control-group">
+            <label>PNG Folder:</label>
+            <input type="text" id="pngFolder" value="extracted_parallax/" placeholder="extracted_parallax/">
+            <button onclick="scanFolders()">Setup Layers</button>
+            <button onclick="testFiles()">Test Files</button>
+            <span id="scanStatus"></span>
+        </div>
+        
+        <div id="layerControls">
+            <!-- Динамически генерируемые слои -->
+        </div>
+        
+
+        
+
+        
+        <div class="control-group">
+            <button onclick="clearCanvas()">Clear</button>
+            <button onclick="generateParallax()">Apply Changes</button>
+        </div>
+        
+        <div class="control-group">
+            <label><strong>Randomize:</strong></label>
+            <div class="randomize-options">
+                <label><input type="checkbox" id="randomLayers" checked> Слои</label>
+                <label><input type="checkbox" id="randomBlend"> Режим</label>
+                <label><input type="checkbox" id="randomAlpha"> Альфа</label>
+                <label><input type="checkbox" id="randomSpeed"> Скорость</label>
+                <button onclick="randomizeParallax()">🎲 Random</button>
+                <button onclick="resetToDefaults()">🔧 Reset Defaults</button>
+            </div>
+        </div>
+    </div>
+    
+    <div style="display: flex; gap: 20px;">
+        <div>
+            <h3>Static Preview</h3>
+            <canvas id="canvas" width="480" height="480"></canvas>
+        </div>
+        
+        <div>
+            <h3>Animated Preview</h3>
+            <div id="animatedViewport" style="width: 480px; height: 480px; position: relative; overflow: hidden; background: #000; border: 1px solid #555;">
+                <!-- Анимированные слои -->
+            </div>
+            <div style="margin-top: 10px;">
+                <button id="playPause" onclick="toggleAnimation()" style="background: #4CAF50; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer;">⏸ Pause</button>
+                <button onclick="resetAnimation()" style="background: #2196F3; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer;">🔄 Reset</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="layer-info">
+        <p>Инструкция: Помести папку extracted_parallax в ту же папку что и HTML файл. Или запусти локальный сервер: python -m http.server</p>
+        <p>Текущие слои: <span id="layerList">нет</span></p>
+        <p><strong>Важно:</strong> Поместите папку extracted_parallax в ту же директорию что и этот HTML файл, или запустите локальный сервер: <code>python -m http.server</code></p>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const layers = [];
+        let layerFolders = {}; // Храним списки файлов по папкам
+        
+        // Анимация
+        let animationId = null;
+        let isPlaying = false;
+        let startTime = Date.now();
+        const layerSpeeds = { layer1: 0.6, layer2: 1.0, layer3: 1.4, layer4: 3.0 };
+        
+        function loadPreview(layerType) {
+            generateParallax();
+        }
+        
+        function generateParallax() {
+            layers.length = 0;
+            
+            const layerNames = ['layer1', 'layer2', 'layer3', 'layer4'];
+            
+            for (let i = 0; i < layerNames.length; i++) {
+                const layerName = layerNames[i];
+                const selectEl = document.getElementById(`${layerName}Select`);
+                const blendEl = document.getElementById(`blend${i+1}Select`);
+                const alphaEl = document.getElementById(`alpha${i+1}Slider`);
+                const alphaValueEl = document.getElementById(`alpha${i+1}Value`);
+                
+                if (!selectEl || !blendEl || !alphaEl || !alphaValueEl) continue;
+                
+                const selectedFile = selectEl.value;
+                const blend = blendEl.value;
+                const alpha = parseInt(alphaEl.value);
+                
+                alphaValueEl.textContent = alpha;
+                
+                if (selectedFile) {
+                    addLayerToStack(selectedFile, alpha / 255, blend, layerName);
+                }
+            }
+            
+            updateLayerList();
+            redraw();
+            updateAnimatedLayers();
+        }
+        
+        function addLayerToStack(layerName, alpha, blend, layerFolder) {
+            const img = new Image();
+            img.onload = function() {
+                redraw();
+            };
+            img.onerror = function() {
+                console.warn(`Could not load: ${img.src}`);
+            };
+            
+            const baseFolder = document.getElementById('pngFolder').value || 'extracted_parallax/';
+            
+            img.src = `${baseFolder}${layerFolder}/${layerName}.png`;
+            
+            layers.push({
+                name: layerName,
+                image: img,
+                alpha: alpha,
+                blend: blend
+            });
+        }
+        
+        function scanFolders() {
+            const statusEl = document.getElementById('scanStatus');
+            statusEl.textContent = 'Настройка слоев...';
+            
+            // По умолчанию создаем стандартные слои
+            layerFolders = {
+                'layer1': [
+                    'layer1_0', 'layer1_1', 'layer1_2', 'layer1_3', 'layer1_4', 'layer1_5',
+                    'layer1_6', 'layer1_7', 'layer1_8', 'layer1_9', 'layer1_10', 'layer1_11',
+                    'layer1_12', 'layer1_13', 'layer1_14', 'layer1_15', 'layer1_16', 'layer1_17',
+                    'layer1_18', 'layer1_19', 'layer1_20'
+                ],
+                'layer2': [
+                    'layer2_0', 'layer2_1', 'layer2_2', 'layer2_3', 'layer2_4', 'layer2_5',
+                    'layer2_6', 'layer2_7', 'layer2_8', 'layer2_9', 'layer2_10', 'layer2_11',
+                    'layer2_12', 'layer2_13', 'layer2_14', 'layer2_15', 'layer2_16', 'layer2_17',
+                    'layer2_18', 'layer2_19', 'layer2_20'
+                ],
+                'layer3': [
+                    'layer3_0', 'layer3_1', 'layer3_2', 'layer3_3', 'layer3_4', 'layer3_5',
+                    'layer3_6', 'layer3_7', 'layer3_8', 'layer3_9', 'layer3_10', 'layer3_11',
+                    'layer3_12', 'layer3_13', 'layer3_14', 'layer3_15', 'layer3_16', 'layer3_17',
+                    'layer3_18', 'layer3_19', 'layer3_20'
+                ],
+                'layer4': [
+                    'layer4_0', 'layer4_1', 'layer4_2', 'layer4_3', 'layer4_4', 'layer4_5',
+                    'layer4_6', 'layer4_7', 'layer4_8', 'layer4_9', 'layer4_10', 'layer4_11',
+                    'layer4_12', 'layer4_13', 'layer4_14', 'layer4_15', 'layer4_16', 'layer4_17',
+                    'layer4_18', 'layer4_19', 'layer4_20'
+                ]
+            };
+            
+            generateLayerControls();
+            statusEl.textContent = 'Готово! (стандартные слои)';
+        }
+        
+        function generateLayerControls() {
+            const container = document.getElementById('layerControls');
+            container.innerHTML = '';
+            
+            const layerNames = ['layer1', 'layer2', 'layer3', 'layer4'];
+            const layerTitles = ['Layer 1 (Stars)', 'Layer 2 (Nebulae)', 'Layer 3 (Foreground)', 'Layer 4 (Objects)'];
+            const defaultAlphas = [200, 150, 255, 255];
+            
+            for (let i = 0; i < layerNames.length; i++) {
+                const layerName = layerNames[i];
+                const files = layerFolders[layerName] || [];
+                
+                if (files.length === 0) continue;
+                
+                const controlGroup = document.createElement('div');
+                controlGroup.className = 'control-group';
+                
+                const defaultSpeed = layerSpeeds[layerName];
+                
+                controlGroup.innerHTML = `
+                    <label>${layerTitles[i]}:</label>
+                    <button onclick="prevLayer('${layerName}')">◀</button>
+                    <select id="${layerName}Select" onchange="generateParallax()">
+                        <option value="">None</option>
+                        ${files.map(file => `<option value="${file}">${file}</option>`).join('')}
+                    </select>
+                    <button onclick="nextLayer('${layerName}')">▶</button><br>
+                    <label>Blend:</label>
+                    <select id="blend${i+1}Select" onchange="generateParallax()">
+                        <option value="screen" selected>Add</option>
+                        <option value="overlay">Overlay</option>
+                        <option value="source-over">Normal</option>
+                    </select>
+                    <label>Alpha:</label>
+                    <input type="range" id="alpha${i+1}Slider" min="0" max="255" step="1" value="${defaultAlphas[i]}" oninput="generateParallax()">
+                    <span id="alpha${i+1}Value">${defaultAlphas[i]}</span><br>
+                    <label>Speed:</label>
+                    <input type="range" id="speed${i+1}Slider" min="0" max="5" step="0.1" value="${defaultSpeed}" oninput="updateSpeed('${layerName}')">
+                    <span id="speed${i+1}Value">${defaultSpeed}</span>
+                `;
+                
+                container.appendChild(controlGroup);
+            }
+        }
+        
+
+        
+
+        
+
+        
+        function clearCanvas() {
+            layers.length = 0;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            updateLayerList();
+        }
+        
+        function redraw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            layers.forEach(layer => {
+                ctx.globalAlpha = layer.alpha;
+                ctx.globalCompositeOperation = layer.blend === 'screen' ? 'lighter' : layer.blend;
+                
+                if (layer.image.complete) {
+                    ctx.drawImage(layer.image, 0, 0);
+                }
+            });
+            
+            ctx.globalAlpha = 1;
+            ctx.globalCompositeOperation = 'source-over';
+        }
+        
+
+        
+        function updateLayerList() {
+            const list = layers.map(l => `${l.name}(α:${l.alpha.toFixed(2)}, ${l.blend})`).join(', ');
+            document.getElementById('layerList').textContent = list || 'нет';
+        }
+        
+        function randomizeParallax() {
+            const randomLayers = document.getElementById('randomLayers').checked;
+            const randomBlend = document.getElementById('randomBlend').checked;
+            const randomAlpha = document.getElementById('randomAlpha').checked;
+            const randomSpeed = document.getElementById('randomSpeed').checked;
+            
+            const layerNames = ['layer1', 'layer2', 'layer3', 'layer4'];
+            const blendModes = ['screen', 'overlay', 'source-over'];
+            
+            for (let i = 0; i < layerNames.length; i++) {
+                const layerName = layerNames[i];
+                const selectEl = document.getElementById(`${layerName}Select`);
+                const blendEl = document.getElementById(`blend${i+1}Select`);
+                const alphaEl = document.getElementById(`alpha${i+1}Slider`);
+                const speedEl = document.getElementById(`speed${i+1}Slider`);
+                
+                if (!selectEl) continue;
+                
+                // Рандомизация слоев
+                if (randomLayers && selectEl.options.length > 1) {
+                    if (i === 0) {
+                        // Layer 1 - всегда есть
+                        const randomIndex = Math.floor(Math.random() * (selectEl.options.length - 1)) + 1;
+                        selectEl.selectedIndex = randomIndex;
+                    } else {
+                        // Остальные слои - 30% шанс
+                        if (Math.random() < 0.3) {
+                            const randomIndex = Math.floor(Math.random() * (selectEl.options.length - 1)) + 1;
+                            selectEl.selectedIndex = randomIndex;
+                        } else {
+                            selectEl.selectedIndex = 0; // None
+                        }
+                    }
+                }
+                
+                // Рандомизация режима наложения
+                if (randomBlend && blendEl) {
+                    const randomBlendIndex = Math.floor(Math.random() * blendModes.length);
+                    blendEl.value = blendModes[randomBlendIndex];
+                }
+                
+                // Рандомизация альфы
+                if (randomAlpha && alphaEl) {
+                    const randomAlpha = Math.floor(Math.random() * 256); // 0-255
+                    alphaEl.value = randomAlpha;
+                }
+                
+                // Рандомизация скорости
+                if (randomSpeed && speedEl) {
+                    const randomSpeed = (Math.random() * 5).toFixed(1); // 0.0-5.0
+                    speedEl.value = randomSpeed;
+                    updateSpeed(layerName);
+                }
+            }
+            
+            // Применяем изменения
+            generateParallax();
+        }
+        
+        function prevLayer(layerType) {
+            const select = document.getElementById(layerType + 'Select');
+            if (select && select.selectedIndex > 0) {
+                select.selectedIndex--;
+                generateParallax();
+            }
+        }
+        
+        function nextLayer(layerType) {
+            const select = document.getElementById(layerType + 'Select');
+            if (select && select.selectedIndex < select.options.length - 1) {
+                select.selectedIndex++;
+                generateParallax();
+            }
+        }
+        
+        async function testFiles() {
+            const statusEl = document.getElementById('scanStatus');
+            statusEl.textContent = 'Проверка файлов...';
+            
+            const baseFolder = document.getElementById('pngFolder').value || 'extracted_parallax/';
+            
+            let foundCount = 0;
+            let totalCount = 0;
+            
+            for (const [layerName, files] of Object.entries(layerFolders)) {
+                for (const fileName of files) {
+                    totalCount++;
+                    const img = new Image();
+                    const promise = new Promise((resolve) => {
+                        img.onload = () => resolve(true);
+                        img.onerror = () => resolve(false);
+                        setTimeout(() => resolve(false), 1000);
+                    });
+                    img.src = `${baseFolder}${layerName}/${fileName}.png`;
+                    
+                    if (await promise) {
+                        foundCount++;
+                    }
+                }
+            }
+            
+            statusEl.textContent = `Найдено: ${foundCount}/${totalCount} файлов`;
+        }
+        
+        function updateAnimatedLayers() {
+            const viewport = document.getElementById('animatedViewport');
+            viewport.innerHTML = '';
+            
+            const baseFolder = document.getElementById('pngFolder').value || 'extracted_parallax/';
+            const layerNames = ['layer1', 'layer2', 'layer3', 'layer4'];
+            
+            for (let i = 0; i < layerNames.length; i++) {
+                const layerName = layerNames[i];
+                const selectEl = document.getElementById(`${layerName}Select`);
+                const alphaEl = document.getElementById(`alpha${i+1}Slider`);
+                const blendEl = document.getElementById(`blend${i+1}Select`);
+                
+                if (!selectEl || !selectEl.value) continue;
+                
+                const layerDiv = document.createElement('div');
+                layerDiv.id = `animated${layerName}`;
+                layerDiv.style.cssText = `
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 200%;
+                    height: 100%;
+                    background-image: url('${baseFolder}${layerName}/${selectEl.value}.png');
+                    background-repeat: repeat-x;
+                    background-size: auto 100%;
+                    opacity: ${(alphaEl ? parseInt(alphaEl.value) / 255 : 1)};
+                    mix-blend-mode: ${blendEl ? blendEl.value : 'screen'};
+                    z-index: ${i + 1};
+                `;
+                
+                viewport.appendChild(layerDiv);
+            }
+        }
+        
+        function animate() {
+            if (!isPlaying) return;
+            
+            const currentTime = Date.now();
+            const elapsed = (currentTime - startTime) / 1000;
+            
+            const layerNames = ['layer1', 'layer2', 'layer3', 'layer4'];
+            
+            for (const layerName of layerNames) {
+                const layerDiv = document.getElementById(`animated${layerName}`);
+                if (!layerDiv) continue;
+                
+                const speed = layerSpeeds[layerName];
+                const offset = (elapsed * speed * 30) % 480;
+                layerDiv.style.transform = `translateX(-${offset}px)`;
+            }
+            
+            animationId = requestAnimationFrame(animate);
+        }
+        
+        function toggleAnimation() {
+            const button = document.getElementById('playPause');
+            
+            if (isPlaying) {
+                isPlaying = false;
+                if (animationId) {
+                    cancelAnimationFrame(animationId);
+                    animationId = null;
+                }
+                button.textContent = '▶ Play';
+                button.style.background = '#f44336';
+            } else {
+                isPlaying = true;
+                startTime = Date.now() - (startTime ? Date.now() - startTime : 0);
+                animate();
+                button.textContent = '⏸ Pause';
+                button.style.background = '#4CAF50';
+            }
+        }
+        
+        function updateSpeed(layerName) {
+            const layerIndex = ['layer1', 'layer2', 'layer3', 'layer4'].indexOf(layerName);
+            const speedSlider = document.getElementById(`speed${layerIndex + 1}Slider`);
+            const speedValue = document.getElementById(`speed${layerIndex + 1}Value`);
+            
+            if (speedSlider && speedValue) {
+                const newSpeed = parseFloat(speedSlider.value);
+                layerSpeeds[layerName] = newSpeed;
+                speedValue.textContent = newSpeed.toFixed(1);
+            }
+        }
+        
+        function resetAnimation() {
+            startTime = Date.now();
+            if (!isPlaying) {
+                const layerNames = ['layer1', 'layer2', 'layer3', 'layer4'];
+                for (const layerName of layerNames) {
+                    const layerDiv = document.getElementById(`animated${layerName}`);
+                    if (layerDiv) {
+                        layerDiv.style.transform = 'translateX(0px)';
+                    }
+                }
+            }
+        }
+        
+        function resetToDefaults() {
+            const layerNames = ['layer1', 'layer2', 'layer3', 'layer4'];
+            const defaultAlphas = [200, 150, 255, 255];
+            const defaultSpeeds = [0.6, 1.0, 1.4, 3.0];
+            
+            for (let i = 0; i < layerNames.length; i++) {
+                const layerName = layerNames[i];
+                
+                // Сброс выбора слоя
+                const selectEl = document.getElementById(`${layerName}Select`);
+                if (selectEl) selectEl.selectedIndex = 0; // None
+                
+                // Сброс режима наложения
+                const blendEl = document.getElementById(`blend${i+1}Select`);
+                if (blendEl) blendEl.value = 'screen'; // Add
+                
+                // Сброс альфы
+                const alphaEl = document.getElementById(`alpha${i+1}Slider`);
+                const alphaValueEl = document.getElementById(`alpha${i+1}Value`);
+                if (alphaEl && alphaValueEl) {
+                    alphaEl.value = defaultAlphas[i];
+                    alphaValueEl.textContent = defaultAlphas[i];
+                }
+                
+                // Сброс скорости
+                const speedEl = document.getElementById(`speed${i+1}Slider`);
+                const speedValueEl = document.getElementById(`speed${i+1}Value`);
+                if (speedEl && speedValueEl) {
+                    speedEl.value = defaultSpeeds[i];
+                    speedValueEl.textContent = defaultSpeeds[i];
+                    layerSpeeds[layerName] = defaultSpeeds[i];
+                }
+            }
+            
+            // Применяем сброс
+            generateParallax();
+        }
+        
+        // Автоматически настраиваем слои при загрузке
+        window.onload = function() {
+            scanFolders();
+        };
+    </script>
+</body>
+</html>

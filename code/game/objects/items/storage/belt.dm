@@ -84,7 +84,8 @@
 		/obj/item/clothing/head/welding, //WS end
 		/obj/item/gun/energy/plasmacutter,
 		/obj/item/bodycamera,
-		/obj/item/stack/tape/industrial
+		/obj/item/stack/tape/industrial,
+		/obj/item/trench_tool,
 		))
 
 /obj/item/storage/belt/utility/chief
@@ -93,6 +94,8 @@
 	icon_state = "utility_ce"
 	item_state = "utility_ce"
 
+// [CELADON-EDIT] - OMNI_TOOLS
+/*
 /obj/item/storage/belt/utility/chief/full/PopulateContents()
 	new /obj/item/screwdriver/power(src)
 	new /obj/item/crowbar/power(src)
@@ -101,6 +104,26 @@
 	new /obj/item/stack/cable_coil(src,MAXCOIL,pick("red","yellow","orange"))
 	new /obj/item/extinguisher/mini(src)
 	new /obj/item/analyzer(src)
+*/
+
+/obj/item/storage/belt/utility/chief/full/PopulateContents()
+	new /obj/item/screwdriver/power(src)
+	new /obj/item/crowbar/power(src)
+	new /obj/item/weldingtool/electric(src)
+	new /obj/item/multitool/tricorder(src)
+	new /obj/item/pipe_dispenser(src)
+	new /obj/item/inducer(src)
+	new /obj/item/stack/cable_coil(src,MAXCOIL,pick("red","yellow","orange"))
+
+/obj/item/storage/belt/utility/chief/debug/full/PopulateContents()
+	new /obj/item/screwdriver/power(src)
+	new /obj/item/crowbar/power(src)
+	new /obj/item/weldingtool/electric(src)
+	new /obj/item/multitool/tricorder/ranged(src)
+	new /obj/item/pipe_dispenser/bluespace(src)
+	new /obj/item/inducer/adv(src)
+	new /obj/item/stack/cable_coil(src,MAXCOIL,"cyan")
+// [/CELADON-EDIT]
 
 /obj/item/storage/belt/utility/full/PopulateContents()
 	new /obj/item/screwdriver(src)
@@ -229,7 +252,9 @@
 		/obj/item/plunger,
 		/obj/item/reagent_containers/spray,
 		/obj/item/shears,
-		/obj/item/bodycamera
+		/obj/item/bodycamera,
+		/obj/item/bonesetter,
+		/obj/item/stack/sticky_tape/surgical
 		))
 
 /obj/item/storage/belt/medical/paramedic/PopulateContents()
@@ -274,10 +299,10 @@
 
 /obj/item/storage/belt/medical/webbing/combat/PopulateContents()
 	. = ..()
-	new /obj/item/reagent_containers/hypospray/medipen/stimpack/traitor(src)
-	new /obj/item/reagent_containers/hypospray/medipen/stimpack/traitor(src)
-	new /obj/item/reagent_containers/medigel/silver_sulf(src)
-	new /obj/item/reagent_containers/medigel/styptic(src)
+	new /obj/item/reagent_containers/hypospray/medipen/stimpack(src)
+	new /obj/item/reagent_containers/hypospray/medipen/stimpack(src)
+	new /obj/item/reagent_containers/medigel/hadrakine(src)
+	new /obj/item/reagent_containers/medigel/quardexane(src)
 	new /obj/item/stack/medical/gauze/twelve(src)
 	new /obj/item/stack/medical/splint(src)
 
@@ -331,6 +356,7 @@
 		/obj/item/gun/ballistic/automatic/pistol,
 		/obj/item/gun/ballistic/revolver,
 		/obj/item/gun/energy/laser,
+		/obj/item/gun/energy/sharplite/x26,
 		/obj/item/gun/energy/disabler,
 		/obj/item/gun/energy/kalix/pistol,
 		))
@@ -425,6 +451,7 @@
 		/obj/item/bodycamera,
 		/obj/item/binoculars,
 		/obj/item/tank/internals/emergency_oxygen,
+		/obj/item/trench_tool,
 		))
 
 
@@ -485,6 +512,7 @@
 		/obj/item/gun/ballistic/automatic/pistol,
 		/obj/item/gun/ballistic/revolver,
 		/obj/item/gun/energy/laser,
+		/obj/item/gun/energy/sharplite/x26,
 		/obj/item/gun/energy/disabler,
 		/obj/item/gun/energy/kalix/pistol,
 		))
@@ -511,8 +539,8 @@
 
 /obj/item/storage/belt/military/mako/PopulateContents()
 	. = ..()
-	new /obj/item/ammo_casing/caseless/rocket/a70mm/hedp(src)
-	new /obj/item/ammo_casing/caseless/rocket/a70mm/hedp(src)
+	new /obj/item/ammo_casing/caseless/rocket/a70mm(src)
+	new /obj/item/ammo_casing/caseless/rocket/a70mm(src)
 	new /obj/item/ammo_casing/caseless/rocket/a70mm(src)
 	new /obj/item/ammo_casing/caseless/rocket/a70mm(src)
 	new /obj/item/ammo_casing/caseless/rocket/a70mm(src)
@@ -830,6 +858,7 @@
 	STR.max_items = 1
 	STR.use_sound = null //if youre wondering why this is null, its so you can look in your sheath to prepare to draw, without letting anyone know youre preparing to draw it
 	STR.max_w_class = WEIGHT_CLASS_BULKY
+	STR.quickdraw = TRUE
 	STR.set_holdable(list(
 		sabre_type
 		))
@@ -837,11 +866,9 @@
 /obj/item/storage/belt/sabre/examine(mob/user)
 	. = ..()
 	if(length(contents))
-		. += span_notice("Alt-click it to quickly draw the blade.")
+		. += span_notice("Right-click it to quickly draw the blade.")
 
-/obj/item/storage/belt/sabre/AltClick(mob/user)
-	if(!iscarbon(user) || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
-		return
+/obj/item/storage/belt/sabre/attack_hand_secondary(mob/user, list/modifiers)
 	if(length(contents))
 		var/obj/item/I = contents[1]
 		user.visible_message(span_notice("[user] takes [I] out of [src]."), span_notice("You take [I] out of [src]."))
@@ -849,6 +876,7 @@
 		update_appearance()
 	else
 		to_chat(user, span_warning("[src] is empty!"))
+	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
 /obj/item/storage/belt/sabre/update_icon_state()
 	icon_state = "[base_icon_state]"
@@ -913,9 +941,19 @@
 	sabre_type = /obj/item/melee/sword/sabre/suns/cmo
 
 /obj/item/storage/belt/sabre/pgf
-	name = "cutlass sheath"
-	desc = "A mass produced thermoplastic-leather sheath made to hold a boarding cutlass."
-	base_icon_state = "sheath-pgf"
-	icon_state = "sheath-pgf"
-	item_state = "sheath-pgf"
+	name = "cutlass scabbard"
+	desc = "A mass produced thermoplastic-leather scabbard made to hold a boarding cutlass."
+	icon = 'icons/obj/clothing/faction/gezena/belt.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/faction/gezena/belt.dmi'
+	base_icon_state = "pgf-scabbard"
+	icon_state = "pgf-scabbard"
+	item_state = "pgf-scabbard"
 	sabre_type = /obj/item/melee/sword/sabre/pgf
+
+/obj/item/storage/belt/sabre/kukri
+	name = "kukri sheath"
+	desc = "A piece of solid, treated leather. Don't pull the kukri out unless you're itching for a fight."
+	base_icon_state = "sheath_kukri"
+	icon_state = "sheath_kukri"
+	item_state = "sheath_kukri"
+	sabre_type = /obj/item/melee/sword/kukri

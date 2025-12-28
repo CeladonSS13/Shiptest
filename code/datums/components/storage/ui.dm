@@ -42,10 +42,18 @@
 		for(var/type in numbered_contents)
 			var/datum/numbered_display/ND = numbered_contents[type]
 			ND.sample_object.mouse_opacity = MOUSE_OPACITY_OPAQUE
-			ND.sample_object.screen_loc = "[cx]:[screen_pixel_x],[cy]:[screen_pixel_y]"
+			// [CELADON-ADD] - FIXES_ICON_OUT_OF_BORDER - Убеждаемся, что координаты находятся в допустимых пределах
+			var/safe_cx = clamp(cx, screen_start_x, screen_start_x + columns - 1)
+			var/safe_cy = clamp(cy, screen_start_y, screen_start_y + rows - 1)
+			ND.sample_object.screen_loc = "[safe_cx]:[screen_pixel_x],[safe_cy]:[screen_pixel_y]"
 			ND.sample_object.maptext = "<font color='white'>[(ND.number > 1)? "[ND.number]" : ""]</font>"
 			ND.sample_object.layer = ABOVE_HUD_LAYER
 			ND.sample_object.plane = ABOVE_HUD_PLANE
+			// [/CELADON-ADD]
+			// [CELADON-ADD] - FIXES_ICON_OUT_OF_BORDER - Сбрасываем позицию элемента для предотвращения смещения
+			ND.sample_object.pixel_x = 0
+			ND.sample_object.pixel_y = 0
+			// [/CELADON-ADD]
 			. += ND.sample_object
 			cx++
 			if(cx - screen_start_x >= columns)
@@ -59,10 +67,21 @@
 				continue
 			var/atom/movable/screen/storage/item_holder/D = new(null, src, O)
 			D.mouse_opacity = MOUSE_OPACITY_OPAQUE //This is here so storage items that spawn with contents correctly have the "click around item to equip"
-			D.screen_loc = "[cx]:[screen_pixel_x],[cy]:[screen_pixel_y]"
+			// [CELADON-ADD] - FIXES_ICON_OUT_OF_BORDER - Убеждаемся, что координаты находятся в допустимых пределах
+			var/safe_cx = clamp(cx, screen_start_x, screen_start_x + columns - 1)
+			var/safe_cy = clamp(cy, screen_start_y, screen_start_y + rows - 1)
+			// [/CELADON-ADD]
+			// [CELADON-EDIT] - FIXES_ICON_OUT_OF_BORDER
+			// D.screen_loc = "[cx]:[screen_pixel_x],[cy]:[screen_pixel_y]"	// ORIGINAL
+			D.screen_loc = "[safe_cx]:[screen_pixel_x],[safe_cy]:[screen_pixel_y]"
+			// [/CELADON-EDIT]
 			O.maptext = ""
 			O.layer = ABOVE_HUD_LAYER
 			O.plane = ABOVE_HUD_PLANE
+			// [CELADON-ADD] - FIXES_ICON_OUT_OF_BORDER - Сбрасываем позицию элемента для предотвращения смещения
+			O.pixel_x = 0
+			O.pixel_y = 0
+			// [/CELADON-ADD]
 			. += D
 			cx++
 			if(cx - screen_start_x >= columns)
@@ -184,7 +203,7 @@
 	// in tiles
 	var/maxallowedscreensize = cview[1]-8
 	// we got screen size, register signal
-	RegisterSignal(M, COMSIG_PARENT_QDELETING, PROC_REF(on_logout), override = TRUE)
+	RegisterSignal(M, COMSIG_QDELETING, PROC_REF(on_logout), override = TRUE)
 	if(M.active_storage != src)
 		if(M.active_storage)
 			M.active_storage.ui_hide(M)
@@ -222,7 +241,7 @@
 /datum/component/storage/proc/ui_hide(mob/M)
 	if(!M.client)
 		return TRUE
-	UnregisterSignal(M, list(COMSIG_PARENT_QDELETING))
+	UnregisterSignal(M, list(COMSIG_QDELETING))
 	M.client.screen -= ui_by_mob[M]
 	var/list/objects = ui_by_mob[M]
 	QDEL_LIST(objects)

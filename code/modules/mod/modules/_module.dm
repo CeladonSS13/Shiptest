@@ -61,7 +61,7 @@
 	if(ispath(device))
 		device = new device(src)
 		ADD_TRAIT(device, TRAIT_NODROP, MOD_TRAIT)
-		RegisterSignal(device, COMSIG_PARENT_QDELETING, PROC_REF(on_device_deletion))
+		RegisterSignal(device, COMSIG_QDELETING, PROC_REF(on_device_deletion))
 		RegisterSignal(src, COMSIG_ATOM_EXITED, PROC_REF(on_exit))
 	if(toolset)
 		for(var/typepath in tools_to_create)
@@ -71,7 +71,7 @@
 /obj/item/mod/module/Destroy()
 	mod?.uninstall(src)
 	if(device)
-		UnregisterSignal(device, COMSIG_PARENT_QDELETING)
+		UnregisterSignal(device, COMSIG_QDELETING)
 		QDEL_NULL(device)
 	return ..()
 
@@ -117,7 +117,10 @@
 		if(toolset)
 			return ui_action_click()
 		if(device)
+			// [CELADON-EDIT] - FIX_MODSUIT - Putting a MODsuit's device in active hand, instead of any hand
+			//if(mod.wearer.put_in_hands(device))
 			if(mod.wearer.put_in_hands(device))
+			// [/CELADON-EDIT]
 				to_chat(mod.wearer,span_notice("You extend \the [device]."))
 				RegisterSignal(mod.wearer, COMSIG_ATOM_EXITED, PROC_REF(on_exit))
 				RegisterSignal(mod.wearer, COMSIG_KB_MOB_DROPITEM_DOWN, PROC_REF(dropkey))
@@ -170,7 +173,10 @@
 	if(module_type == MODULE_ACTIVE)
 		mod.selected_module = null
 		if(display_message)
-			to_chat(mod.wearer,span_warning(device ? "You retract \the [device]." : "\The [src] deactivates."))
+		// [CELADON-EDIT] - FIX_MODSUIT - Fixes modsuits not retracting items - runtime was here
+			//to_chat(mod.wearer,span_warning(device ? "You retract \the [device]." : "\The [src] deactivates."))
+			to_chat(mod.wearer,span_warning("You retract \the [device]."))
+		// [/CELADON-EDIT]
 		if(device)
 			mod.wearer.transferItemToLoc(device, src, force = TRUE)
 			UnregisterSignal(mod.wearer, COMSIG_ATOM_EXITED)

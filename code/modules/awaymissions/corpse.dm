@@ -220,7 +220,9 @@
 
 	var/list/outfit_override
 
-/obj/effect/mob_spawn/human/Initialize()
+/obj/effect/mob_spawn/human/Initialize(mapload, species)
+	if(species)
+		mob_species = species
 	if(ispath(outfit))
 		outfit = new outfit()
 	if(!outfit)
@@ -431,7 +433,7 @@
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/effect/mob_spawn/human/clown
 	name = "Clown"
-	outfit = /datum/outfit/job/clown
+	outfit = /datum/outfit/job/cel/independent/clown
 // [/CELADON-ADD]
 
 /obj/effect/mob_spawn/human/scientist

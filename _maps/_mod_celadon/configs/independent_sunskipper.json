@@ -6,6 +6,8 @@
 	"map_path": "_maps/_mod_celadon/shuttles/independent/independent_sunskipper.dmm",
 	"enabled": true,
 	"limit": 1,
+	"tranist_x_offset": -35,
+	"tranist_y_offset": -25,
 	"sensor_range": 4,
 	"starting_funds": 3000,
 	"prefix": "SV",
@@ -17,20 +19,20 @@
 	"namelists": ["CRUISE", "NATURAL"],
 	"job_slots": {
 		"Manager": {
-			"outfit": "/datum/outfit/job/independent/captain/manager",
+			"outfit": "/datum/outfit/job/cel/independent/captain/manager",
 			"slots": 1,
 			"officer": true
 		},
 		"Bartender": {
-			"outfit": "/datum/outfit/job/independent/bartender/disarmed",
+			"outfit": "/datum/outfit/job/cel/independent/bartender/disarmed",
 			"slots": 1
 		},
 		"Cook": {
-			"outfit": "/datum/outfit/job/independent/cook",
+			"outfit": "/datum/outfit/job/cel/independent/cook",
 			"slots": 2
 		},
 		"Waiter": {
-			"outfit": "/datum/outfit/job/independent/assistant/waiter",
+			"outfit": "/datum/outfit/job/cel/independent/assistant/waiter",
 			"slots": 2
 		}
 	}

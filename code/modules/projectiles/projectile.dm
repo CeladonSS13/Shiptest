@@ -9,6 +9,8 @@
 	generic_canpass = FALSE
 	plane = GAME_PLANE_FOV_HIDDEN
 	wound_bonus = CANT_WOUND // can't wound by default
+	///armour percentage that the projectile ignores
+	armour_penetration = 0
 	///The sound this plays on impact.
 	var/hitsound = 'sound/weapons/pierce.ogg'
 	var/hitsound_non_living = ""
@@ -75,7 +77,7 @@
 	var/projectile_piercing = NONE
 	/// number of times we've pierced something. Incremented BEFORE bullet_act and on_hit proc!
 	var/pierces = 0
-
+	var/ignore_concealment = FALSE
 	///Amount of deciseconds it takes for projectile to travel
 	var/speed = 0.8
 	///plus/minus modifier to projectile speed
@@ -142,8 +144,6 @@
 	var/damage_type = BRUTE //BRUTE, BURN, TOX, OXY, CLONE, STAMINA are the only things that should be in here
 	var/nodamage = FALSE //Determines if the projectile will skip any damage inflictions
 	var/flag = "bullet" //Defines what armor to use when it hits things.  Must be set to bullet, laser, energy,or bomb
-	///How much armor this projectile pierces.
-	var/armour_penetration = 0
 	var/projectile_type = /obj/projectile
 	var/range = 50 //This will de-increment every step. When 0, it will deletze the projectile.
 	var/decayedRange			//stores original range
@@ -194,6 +194,9 @@
 	. = ..()
 	decayedRange = range
 	speed = speed + speed_mod
+	if(firer)
+		if(firer.vis_flags & SEE_MOBS)
+			ignore_concealment = TRUE
 
 	if(embedding)
 		updateEmbedding()
@@ -530,23 +533,29 @@
 			return FALSE
 	else
 		var/mob/living/L = target
-		// [CELADON-EDIT] - CELADON_BALANCE - Делаем шансы на попадания
-		if(iscarbon(L))
-			if(direct_target && !L.density && firer.density && prob(85)) // 85% что пуля попадет в лежащую цель от стоящего стрелка
+		// [CELADON-EDIT] - BALANCE_CAN_HIT_TARGET - Делаем шансы на попадания
+		if(iscarbon(L) && (L.stat != DEAD))
+			if(direct_target && !L.density && firer.density && prob(80)) // 80% что пуля попадет в лежащую цель от стоящего стрелка
 				return TRUE
 			if(direct_target && !L.density && !firer.density && prob(70)) // 70% что пуля попадет в лежащую цель от лежащего стрелка
 				return TRUE
-			if(direct_target && L.density && !firer.density && prob(90)) // 90% пуля попадет в стоящую цель от лежачего стрелка
+			if(direct_target && L.density && !firer.density && prob(75)) // 75% пуля попадет в стоящую цель от лежачего стрелка
 				return TRUE
+			if(!L.density && ismob(firer)) // Проверяем HARM интент для лежачих целей
+				var/mob/M = firer
+				if(M.a_intent == INTENT_HARM && prob(75)) // 75% что пуля попадет в лежащую цель в HARM интенте
+					return TRUE
 		else if(direct_target)
 			return TRUE
 		// [/CELADON-EDIT]
+		if(L.check_concealment(src))
+			return FALSE
 		// If target not able to use items, move and stand - or if they're just dead, pass over.
 		if(L.stat || (!hit_stunned_targets && HAS_TRAIT(L, TRAIT_IMMOBILIZED) && HAS_TRAIT(L, TRAIT_FLOORED) && HAS_TRAIT(L, TRAIT_HANDS_BLOCKED)))
 			return FALSE
-	// [CELADON-EDIT] - CELADON_BALANCE - Делаем шансы на попадания
+	// [CELADON-EDIT] - BALANCE_CAN_HIT_TARGET - Делаем шансы на попадания
 	// return TRUE 	// CELADON-EDIT - ORIGINAL
-	if(prob(25))	// С вероятность 20% шальная пуля зацепит лежащего
+	if(prob(75))	// С вероятность 75% шальная пуля зацепит лежащего
 		return TRUE
 	return FALSE
 	// [/CELADON-EDIT]

@@ -6,7 +6,7 @@
 	#define FACTION_SUNS "Student-Union of Naturalistic Sciences"
 #define FACTION_SOLFED "SolFed"
 #define FACTION_SOLCON "SolFed"
-#define FACTION_INTEQ "Inteq Risk Management Group"
+#define FACTION_INTEQ "InteQ"
 #define FACTION_NT "Nanotrasen"
 	#define FACTION_NS_LOGI "N+S Logistics"
 	#define FACTION_VIGILITAS "Vigilitas Interstellar"
@@ -14,6 +14,7 @@
 #define FACTION_ELYSIUM "Elysium"
 #define FACTION_EVENT "Event"
 #define FACTION_PIRATES "Pirates"
+#define FACTION_UNKNOWN "Unknown"
 
 #define FACTION_RAMZI "Ramzi Clique"
 #define FACTION_SRM "Saint-Roumain Militia"

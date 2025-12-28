@@ -12,10 +12,10 @@
 */
 
 /obj/item/proc/get_helmet_overlays()  // returns the icon for overlaying on a helmet
-	return mutable_appearance('mod_celadon/_storge_icons/icons/items/clothing/eyes/overlay/helmet_overlays.dmi', icon_state)
+	return mutable_appearance('mod_celadon/_storage_icons/icons/items/clothing/eyes/overlay/helmet_overlays.dmi', icon_state)
 
 /obj/item/proc/get_helmet_overlays_icon()
-	return mutable_appearance('mod_celadon/_storge_icons/icons/items/clothing/eyes/helmet_overlays.dmi', icon_state)
+	return mutable_appearance('mod_celadon/_storage_icons/icons/items/clothing/eyes/helmet_overlays.dmi', icon_state)
 
 // MARK: Null Pockets
 
@@ -33,9 +33,6 @@
 /obj/item/clothing/head/helmet/hardliners
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 
-/obj/item/clothing/head/helmet/inteq
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
-
 /obj/item/clothing/head/helmet/ngr
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 
@@ -45,10 +42,7 @@
 /obj/item/clothing/head/helmet/medical
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 
-/obj/item/clothing/head/helmet/sec
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
-
-/obj/item/clothing/head/helmet/ramzi
+/obj/item/clothing/head/helmet/m10
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 
 /obj/item/clothing/head/helmet/gezena

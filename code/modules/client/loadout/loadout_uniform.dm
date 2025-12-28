@@ -34,29 +34,9 @@
 
 //Shorts
 
-/datum/gear/uniform/athshortsred
-	display_name = "athletic shorts, red"
-	path = /obj/item/clothing/under/shorts/red
-
-/datum/gear/uniform/athshortsblack
-	display_name = "athletic shorts, black"
-	path = /obj/item/clothing/under/shorts/black
-
-/datum/gear/uniform/athshortsgrey
-	display_name = "athletic shorts, grey"
-	path = /obj/item/clothing/under/shorts/grey
-
-/datum/gear/uniform/athshortsblue
-	display_name = "athletic shorts, blue"
-	path = /obj/item/clothing/under/shorts/blue
-
-/datum/gear/uniform/athshortsgreen
-	display_name = "athletic shorts, green"
-	path = /obj/item/clothing/under/shorts/green
-
-/datum/gear/uniform/athshortspurple
-	display_name = "athletic shorts, purple"
-	path = /obj/item/clothing/under/shorts/purple
+/datum/gear/uniform/athshorts
+	display_name = "athletic shorts, recolorable"
+	path = /obj/item/clothing/under/shorts
 
 /datum/gear/uniform/dolphinshorts
 	display_name = "dolphin shorts"
@@ -81,6 +61,18 @@
 /datum/gear/uniform/pants/khaki
 	display_name = "khaki pants"
 	path = /obj/item/clothing/under/pants/khaki
+
+/datum/gear/uniform/pants/pajamared
+	display_name = "red pajama pants"
+	path = /obj/item/clothing/under/pants/pajamared
+
+/datum/gear/uniform/pants/pajamablue
+	display_name = "blue pajama pants"
+	path = /obj/item/clothing/under/pants/pajamablue
+
+/datum/gear/uniform/pants/pajamagreen
+	display_name = "green pajama pants"
+	path = /obj/item/clothing/under/pants/pajamagreen
 
 /datum/gear/uniform/pants/tan
 	display_name = "tan pants"
@@ -139,13 +131,25 @@
 	display_name = "suit, navy"
 	path = /obj/item/clothing/under/suit/navy
 
+/datum/gear/uniform/suit/navyskirt
+	display_name = "skirt, navy"
+	path = /obj/item/clothing/under/suit/navy/skirt
+
 /datum/gear/uniform/suit/burgundy
 	display_name = "suit, burgundy"
 	path = /obj/item/clothing/under/suit/burgundy
 
+/datum/gear/uniform/suit/burgundyskirt
+	display_name = "skirt, burgundy"
+	path = /obj/item/clothing/under/suit/burgundy/skirt
+
 /datum/gear/uniform/suit/charcoal
 	display_name = "suit, charcoal"
 	path = /obj/item/clothing/under/suit/charcoal
+
+/datum/gear/uniform/suit/charcoalskirt
+	display_name = "skirt, charcoal"
+	path = /obj/item/clothing/under/suit/charcoal/skirt
 
 /datum/gear/uniform/suit/white_skirt
 	display_name = "suitskirt, white shirt"

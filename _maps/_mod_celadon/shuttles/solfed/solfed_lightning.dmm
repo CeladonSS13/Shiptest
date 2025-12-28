@@ -200,6 +200,7 @@
 	dir = 4
 	},
 /obj/structure/sign/flag/solfed/directional/west,
+/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "cE" = (
@@ -359,12 +360,16 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "ea" = (
-/obj/structure/cable{
-	icon_state = "2-4"
+/obj/structure/closet/wall/orange{
+	dir = 4;
+	name = "fuel locker";
+	pixel_x = 28
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/glass,
-/turf/open/floor/plasteel/heavymetal/var4,
+/obj/item/stack/sheet/mineral/uranium/twenty,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plasteel/heavymetal/var1,
 /area/ship/engineering)
 "eg" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/border{
@@ -374,6 +379,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo/cargo_bay)
 "eu" = (
@@ -762,6 +768,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/airalarm/directional/east,
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
 "ja" = (
@@ -833,20 +840,13 @@
 /turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen)
 "jM" = (
-/obj/machinery/power/terminal{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
 /obj/docking_port/mobile{
-	dir = 2;
-	launch_status = 0;
-	port_direction = 8;
+	dir = 4;
+	port_direction = 2;
 	preferred_direction = 4
 	},
-/turf/open/floor/plasteel/heavymetal/var4,
-/area/ship/engineering)
+/turf/template_noop,
+/area/ship/external)
 "jQ" = (
 /obj/machinery/chem_heater{
 	pixel_y = 3
@@ -854,6 +854,7 @@
 /obj/effect/turf_decal/trimline/opaque/orange/line{
 	dir = 1
 	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "jZ" = (
@@ -943,6 +944,16 @@
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel/heavymetal/var1,
 /area/ship/crew/canteen)
+"kx" = (
+/obj/machinery/light/floor{
+	light_color = "#6496FA"
+	},
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 4;
+	piping_layer = 2
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external)
 "kI" = (
 /obj/effect/turf_decal/trimline/opaque/solgovgold/end{
 	dir = 4;
@@ -1209,19 +1220,13 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "nn" = (
-/obj/structure/cable{
-	icon_state = "1-2"
+/obj/machinery/power/terminal{
+	dir = 8
 	},
 /obj/structure/cable{
-	icon_state = "1-8"
+	icon_state = "0-2"
 	},
-/obj/structure/closet/wall/orange{
-	dir = 4;
-	name = "fuel locker";
-	pixel_x = 28
-	},
-/obj/item/stack/sheet/mineral/uranium/twenty,
-/turf/open/floor/plasteel/heavymetal/var1,
+/turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering)
 "np" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -1607,20 +1612,17 @@
 /area/ship/engineering)
 "rD" = (
 /obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/glass,
+/obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 4
-	},
-/turf/open/floor/plasteel/heavymetal/var2,
+/turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "rF" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
@@ -1871,6 +1873,7 @@
 /obj/effect/turf_decal/trimline/opaque/orange/line{
 	dir = 6
 	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "tx" = (
@@ -1892,7 +1895,6 @@
 /obj/item/clothing/suit/armor/vest/solgov/captain,
 /obj/item/clothing/under/solgov/formal/captain,
 /obj/item/clothing/gloves/combat,
-/obj/item/door_remote/captain,
 /obj/item/storage/belt/sabre/solgov,
 /obj/item/clothing/under/solgov,
 /obj/item/clothing/under/solgov/dress,
@@ -1994,23 +1996,8 @@
 	dir = 10
 	},
 /obj/structure/table/wood,
-/obj/item/storage/fancy/coffee_cart_rack{
-	pixel_x = -6;
+/obj/machinery/microwave{
 	pixel_y = 6
-	},
-/obj/item/blank_coffee_cartridge{
-	pixel_x = 2
-	},
-/obj/item/blank_coffee_cartridge{
-	pixel_x = 2;
-	pixel_y = 8
-	},
-/obj/item/blank_coffee_cartridge{
-	pixel_x = 2;
-	pixel_y = 4
-	},
-/obj/item/storage/fancy/coffee_cart_rack{
-	pixel_x = -8
 	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/crew/canteen)
@@ -2167,14 +2154,11 @@
 	},
 /area/ship/general/cargo)
 "wr" = (
-/obj/docking_port/stationary{
-	width = 30;
-	height = 15;
-	dwidth = 15;
-	dir = 8
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
-/turf/open/floor/engine/hull/reinforced,
-/area/ship/external)
+/turf/open/floor/plasteel/heavymetal/var4,
+/area/ship/engineering)
 "wy" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
@@ -2311,6 +2295,20 @@
 /obj/item/reagent_containers/glass/coffee_cup,
 /obj/item/reagent_containers/glass/coffee_cup,
 /obj/item/reagent_containers/condiment/sugar,
+/obj/item/blank_coffee_cartridge{
+	pixel_x = 2;
+	pixel_y = 4
+	},
+/obj/item/blank_coffee_cartridge{
+	pixel_x = 2;
+	pixel_y = 4
+	},
+/obj/item/storage/fancy/coffee_cart_rack{
+	pixel_x = -8
+	},
+/obj/item/storage/fancy/coffee_cart_rack{
+	pixel_x = -8
+	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/crew/canteen)
 "xT" = (
@@ -2647,7 +2645,8 @@
 /turf/open/floor/wood/walnut,
 /area/ship/crew/cryo)
 "Bb" = (
-/obj/machinery/portable_atmospherics/canister/oxygen,
+/obj/machinery/atmospherics/components/binary/pump/on/layer2,
+/obj/structure/closet/firecloset/wall/directional/east,
 /turf/open/floor/plasteel/heavymetal/var1,
 /area/ship/engineering)
 "Be" = (
@@ -2702,9 +2701,9 @@
 	pixel_x = -5;
 	pixel_y = 1
 	},
-/obj/item/stamp/solfed/commander{
+/obj/item/stamp/solfed/captain{
 	pixel_y = 3;
-	pixel_x = 8
+	pixel_x = 9
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
@@ -2803,16 +2802,11 @@
 /area/ship/medical)
 "CF" = (
 /obj/structure/cable{
-	icon_state = "1-2"
+	icon_state = "0-2"
 	},
-/obj/structure/closet/wall/orange{
-	dir = 4;
-	name = "fuel locker";
-	pixel_x = 28
+/obj/machinery/power/port_gen/pacman/super{
+	anchored = 1
 	},
-/obj/item/stack/sheet/mineral/uranium/twenty,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/glass,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "CP" = (
@@ -3035,9 +3029,11 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/ship/crew/cryo)
 "EK" = (
-/obj/machinery/power/smes/engineering,
 /obj/structure/cable{
 	icon_state = "0-1"
+	},
+/obj/machinery/power/terminal{
+	dir = 8
 	},
 /turf/open/floor/plasteel/heavymetal/var2,
 /area/ship/engineering)
@@ -3077,11 +3073,13 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "FP" = (
-/obj/structure/cable{
-	icon_state = "0-2"
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
 	},
-/obj/machinery/power/smes/engineering,
-/turf/open/floor/plasteel/heavymetal/var4,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plasteel/heavymetal/var2,
 /area/ship/engineering)
 "FR" = (
 /obj/machinery/power/terminal{
@@ -3286,18 +3284,10 @@
 /area/ship/engineering)
 "HI" = (
 /obj/structure/cable{
-	icon_state = "1-2"
+	icon_state = "0-1"
 	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
-	},
-/obj/machinery/power/terminal,
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/turf/open/floor/plasteel/heavymetal/var3,
+/obj/machinery/power/smes/engineering,
+/turf/open/floor/plasteel/heavymetal/var1,
 /area/ship/engineering)
 "HK" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -3436,7 +3426,6 @@
 	pixel_x = 0;
 	pixel_y = 2
 	},
-/obj/item/gun/energy/floragun,
 /obj/item/seeds/coffee,
 /obj/item/seeds/coffee,
 /turf/open/floor/suns/hatch{
@@ -3525,16 +3514,13 @@
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/command_crew)
 "KF" = (
-/obj/structure/sign/poster/contraband/space_cola{
-	pixel_y = 32
+/obj/structure/cable{
+	icon_state = "0-1"
 	},
 /obj/machinery/power/port_gen/pacman/super{
 	anchored = 1
 	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/plasteel/heavymetal/var4,
+/turf/open/floor/plasteel/heavymetal/var2,
 /area/ship/engineering)
 "KG" = (
 /obj/structure/cable{
@@ -3676,6 +3662,7 @@
 /area/ship/crew/canteen)
 "My" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/border,
+/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "MC" = (
@@ -3792,19 +3779,15 @@
 /turf/open/floor/plasteel/strongdark,
 /area/ship/bridge)
 "Oi" = (
-/obj/structure/cable{
-	icon_state = "1-2"
+/obj/structure/closet/wall/orange{
+	dir = 4;
+	name = "fuel locker";
+	pixel_x = 28
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/obj/machinery/power/terminal{
-	dir = 1
-	},
-/turf/open/floor/plasteel/heavymetal/var2,
+/obj/item/stack/sheet/mineral/uranium/twenty,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "Oj" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -3867,6 +3850,7 @@
 	pixel_x = -20;
 	pixel_y = 10
 	},
+/obj/machinery/holopad,
 /turf/open/floor/plasteel/strongdark,
 /area/ship/bridge)
 "Pb" = (
@@ -3934,9 +3918,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
-"Py" = (
-/turf/open/floor/plasteel/heavymetal/var4,
-/area/ship/engineering)
 "PD" = (
 /obj/effect/turf_decal/trimline/opaque/cybersunteal/line{
 	dir = 6
@@ -4045,7 +4026,10 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "QH" = (
-/obj/structure/punching_bag,
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 4;
+	piping_layer = 2
+	},
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering)
 "Rk" = (
@@ -4121,6 +4105,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue/border{
 	dir = 8
 	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "Sw" = (
@@ -4298,13 +4283,15 @@
 	},
 /area/ship/crew/hydroponics)
 "UD" = (
+/obj/structure/sign/poster/contraband/space_cola{
+	pixel_y = 32
+	},
+/obj/machinery/power/smes/engineering,
 /obj/structure/cable{
-	icon_state = "0-4"
+	d2 = 2;
+	icon_state = "0-2"
 	},
-/obj/machinery/power/port_gen/pacman/super{
-	anchored = 1
-	},
-/turf/open/floor/plasteel/heavymetal/var1,
+/turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "UH" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/bordercorner{
@@ -4325,6 +4312,9 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "UX" = (
@@ -4392,7 +4382,6 @@
 /area/ship/general/cargo)
 "Vy" = (
 /obj/structure/closet/wall/red/directional/west,
-/obj/item/gun/ballistic/revolver/viper/indie,
 /obj/item/gun/ballistic/revolver/viper/indie,
 /obj/item/gun/ballistic/revolver/viper/indie,
 /obj/item/storage/box/ammo/a357,
@@ -4809,7 +4798,7 @@ yQ
 yQ
 yQ
 yQ
-bw
+yQ
 yQ
 yQ
 yQ
@@ -4835,24 +4824,6 @@ yQ
 yQ
 yQ
 yQ
-MU
-yQ
-yQ
-yQ
-yQ
-yQ
-yQ
-yQ
-yQ
-yQ
-yQ
-yQ
-yQ
-yQ
-yQ
-bw
-mS
-bw
 yQ
 yQ
 yQ
@@ -4868,7 +4839,25 @@ yQ
 yQ
 yQ
 yQ
-MU
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
 yQ
 yQ
 yQ
@@ -4877,7 +4866,175 @@ yQ
 yQ
 yQ
 yQ
-wr
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+"}
+(5,1,1) = {"
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+jM
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+"}
+(6,1,1) = {"
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+bw
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+"}
+(7,1,1) = {"
+yQ
+yQ
+yQ
+MU
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+bw
+mS
+bw
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+MU
+yQ
+yQ
+yQ
+"}
+(8,1,1) = {"
+yQ
+yQ
+yQ
+MU
 yQ
 yQ
 yQ
@@ -4915,7 +5072,7 @@ yQ
 yQ
 yQ
 "}
-(5,1,1) = {"
+(9,1,1) = {"
 yQ
 yQ
 yQ
@@ -4957,7 +5114,7 @@ yQ
 yQ
 yQ
 "}
-(6,1,1) = {"
+(10,1,1) = {"
 ri
 yQ
 yQ
@@ -4977,7 +5134,7 @@ yQ
 yQ
 mS
 mS
-jM
+cV
 mS
 mS
 yQ
@@ -4999,7 +5156,7 @@ yQ
 yQ
 Zj
 "}
-(7,1,1) = {"
+(11,1,1) = {"
 ri
 ri
 yQ
@@ -5041,7 +5198,7 @@ Zj
 Zj
 Zj
 "}
-(8,1,1) = {"
+(12,1,1) = {"
 ri
 ri
 ri
@@ -5083,7 +5240,7 @@ Zj
 kJ
 Zj
 "}
-(9,1,1) = {"
+(13,1,1) = {"
 ri
 DK
 ri
@@ -5125,7 +5282,7 @@ qE
 UH
 Zj
 "}
-(10,1,1) = {"
+(14,1,1) = {"
 ri
 iQ
 ri
@@ -5167,7 +5324,7 @@ Sp
 Lw
 Zj
 "}
-(11,1,1) = {"
+(15,1,1) = {"
 ri
 ib
 Vt
@@ -5178,8 +5335,8 @@ yQ
 yQ
 dK
 dK
-KF
-ea
+UD
+rD
 nl
 VA
 GM
@@ -5195,8 +5352,8 @@ Aj
 aX
 FR
 UN
-Py
-UD
+wr
+HI
 dK
 dK
 yQ
@@ -5209,7 +5366,7 @@ hh
 Ga
 YZ
 "}
-(12,1,1) = {"
+(16,1,1) = {"
 LN
 he
 SB
@@ -5217,11 +5374,11 @@ Ww
 oj
 ri
 eB
-RM
+kx
 dK
-FP
-Oi
-nn
+CF
+EK
+ea
 cK
 UZ
 il
@@ -5236,10 +5393,10 @@ Wi
 xm
 Wi
 UZ
-rD
-CF
-HI
-EK
+FP
+Oi
+nn
+KF
 dK
 RM
 Wq
@@ -5251,7 +5408,7 @@ RN
 mR
 go
 "}
-(13,1,1) = {"
+(17,1,1) = {"
 zx
 wl
 Es
@@ -5293,7 +5450,7 @@ tS
 gW
 Tj
 "}
-(14,1,1) = {"
+(18,1,1) = {"
 Cu
 ZV
 kN
@@ -5335,7 +5492,7 @@ Lp
 BQ
 Zj
 "}
-(15,1,1) = {"
+(19,1,1) = {"
 ri
 Bw
 SR
@@ -5377,7 +5534,7 @@ lC
 Zj
 Zj
 "}
-(16,1,1) = {"
+(20,1,1) = {"
 ri
 ri
 JK
@@ -5419,7 +5576,7 @@ Zj
 Zj
 yQ
 "}
-(17,1,1) = {"
+(21,1,1) = {"
 yQ
 ri
 ri
@@ -5461,7 +5618,7 @@ Zj
 yQ
 yQ
 "}
-(18,1,1) = {"
+(22,1,1) = {"
 yQ
 yQ
 ri
@@ -5503,7 +5660,7 @@ yQ
 yQ
 yQ
 "}
-(19,1,1) = {"
+(23,1,1) = {"
 yQ
 yQ
 yQ
@@ -5545,7 +5702,7 @@ yQ
 yQ
 yQ
 "}
-(20,1,1) = {"
+(24,1,1) = {"
 yQ
 yQ
 yQ
@@ -5587,7 +5744,7 @@ yQ
 yQ
 yQ
 "}
-(21,1,1) = {"
+(25,1,1) = {"
 yQ
 yQ
 yQ
@@ -5629,7 +5786,7 @@ yQ
 yQ
 yQ
 "}
-(22,1,1) = {"
+(26,1,1) = {"
 yQ
 yQ
 yQ
@@ -5671,7 +5828,7 @@ yQ
 yQ
 yQ
 "}
-(23,1,1) = {"
+(27,1,1) = {"
 yQ
 yQ
 yQ
@@ -5713,7 +5870,7 @@ yQ
 yQ
 yQ
 "}
-(24,1,1) = {"
+(28,1,1) = {"
 yQ
 yQ
 yQ
@@ -5755,7 +5912,7 @@ yQ
 yQ
 yQ
 "}
-(25,1,1) = {"
+(29,1,1) = {"
 yQ
 yQ
 yQ
@@ -5797,7 +5954,7 @@ yQ
 yQ
 yQ
 "}
-(26,1,1) = {"
+(30,1,1) = {"
 yQ
 yQ
 yQ
@@ -5839,7 +5996,7 @@ yQ
 yQ
 yQ
 "}
-(27,1,1) = {"
+(31,1,1) = {"
 yQ
 yQ
 yQ
@@ -5881,7 +6038,7 @@ yQ
 yQ
 yQ
 "}
-(28,1,1) = {"
+(32,1,1) = {"
 yQ
 yQ
 yQ
@@ -5923,7 +6080,7 @@ yQ
 yQ
 yQ
 "}
-(29,1,1) = {"
+(33,1,1) = {"
 yQ
 yQ
 yQ
@@ -5965,7 +6122,7 @@ yQ
 yQ
 yQ
 "}
-(30,1,1) = {"
+(34,1,1) = {"
 yQ
 yQ
 yQ
@@ -6007,7 +6164,7 @@ yQ
 yQ
 yQ
 "}
-(31,1,1) = {"
+(35,1,1) = {"
 yQ
 yQ
 yQ
@@ -6049,7 +6206,7 @@ yQ
 yQ
 yQ
 "}
-(32,1,1) = {"
+(36,1,1) = {"
 yQ
 yQ
 yQ
@@ -6091,7 +6248,7 @@ yQ
 yQ
 yQ
 "}
-(33,1,1) = {"
+(37,1,1) = {"
 yQ
 yQ
 yQ
@@ -6133,7 +6290,7 @@ yQ
 yQ
 yQ
 "}
-(34,1,1) = {"
+(38,1,1) = {"
 yQ
 yQ
 yQ
@@ -6175,7 +6332,91 @@ yQ
 yQ
 yQ
 "}
-(35,1,1) = {"
+(39,1,1) = {"
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+"}
+(40,1,1) = {"
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+yQ
+"}
+(41,1,1) = {"
 yQ
 yQ
 yQ

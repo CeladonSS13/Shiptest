@@ -291,7 +291,7 @@
 /**
  * Docks to an empty dynamic encounter. Used for intership interaction, structural modifications, and such
  */
-/datum/overmap/ship/controlled/proc/dock_in_empty_space()
+/datum/overmap/ship/controlled/proc/dock_in_empty_space()	// [OVERWRITE] - FIXES_DOCKING -mod_celadon/fixes/code/dock_empty_space_fix.dm
 	var/datum/overmap/dynamic/empty/empty_space = locate() in current_overmap.overmap_container[x][y]
 	if(!empty_space)
 		empty_space = new(list("x" = x, "y" = y), current_overmap)
@@ -381,7 +381,13 @@
 
 /datum/overmap/ship/controlled/proc/get_application(mob/applicant)
 	var/index_key = applicant.client?.holder?.fakekey ? applicant.client.holder.fakekey : applicant.key
-	return LAZYACCESS(applications, ckey(index_key))
+	// [CELADON-EDIT] - FIXES_ADMIN_STEALTH
+	// return LAZYACCESS(applications, ckey(index_key))	// ORIGINAL
+	var/result = LAZYACCESS(applications, ckey(index_key))
+	if(!result && applicant.client?.holder?.fakekey)
+		result = LAZYACCESS(applications, ckey(applicant.key))
+	return result
+	// [/CELADON-EDIT]
 
 /**
  * Bastardized version of GLOB.manifest.manifest_inject, but used per ship.
@@ -403,7 +409,7 @@
 	)
 	LAZYSET(owner_candidates, H.mind, mind_info)
 	H.mind.original_ship = WEAKREF(src)
-	RegisterSignal(H.mind, COMSIG_PARENT_QDELETING, PROC_REF(crew_mind_deleting))
+	RegisterSignal(H.mind, COMSIG_QDELETING, PROC_REF(crew_mind_deleting))
 	if(!owner_mob)
 		set_owner_mob(H)
 
@@ -486,7 +492,7 @@
 /datum/overmap/ship/controlled/proc/crew_mind_deleting(datum/mind/del_mind)
 	SIGNAL_HANDLER
 
-	UnregisterSignal(del_mind, COMSIG_PARENT_QDELETING)
+	UnregisterSignal(del_mind, COMSIG_QDELETING)
 	LAZYREMOVE(owner_candidates, del_mind)
 	if(owner_mind == del_mind)
 		set_owner_mob(get_best_owner_mob())
@@ -538,13 +544,28 @@
 
 /datum/overmap/ship/controlled/proc/attempt_key_usage(mob/user, obj/item/key/ship/shipkey, obj/machinery/computer/helm/target_helm)
 	user.changeNext_move(CLICK_CD_MELEE)
+	// [CELADON-ADD] - Well Done!
+	if(shipkey == target_helm && shipkey.well_done)
+		playsound(user.loc, 'sound/machines/click.ogg', 20)
+		return
+	// [/CELADON-ADD]
 
 	if(shipkey.master_ship != src)
 		target_helm?.say("Invalid shipkey usage attempted, forcibly locking down.")
 		helm_locked = TRUE
 	else
 		helm_locked = !helm_locked
-		playsound(src, helm_locked ? 'sound/machines/button4.ogg' : 'sound/machines/button3.ogg')
+		// [CELADON-ADD] - Well Done - Дифферинцируем по звуку сигналку и ключи
+		if(shipkey == target_helm)
+			if(helm_locked)
+				playsound(user.loc, 'sound/machines/beep.ogg', 20, FALSE)
+				sleep(1)
+				playsound(user.loc, 'sound/machines/beep.ogg', 20, FALSE)
+			else
+				playsound(user.loc, 'sound/machines/beep.ogg', 20, FALSE)
+		else
+		// [/CELADON-ADD]
+			playsound(user.loc, helm_locked ? 'sound/machines/button4.ogg' : 'sound/machines/button3.ogg',20)
 
 	for(var/obj/machinery/computer/helm/helm as anything in helms)
 		SStgui.close_uis(helm)
@@ -613,6 +634,10 @@
 	)
 	var/random_color = TRUE //if the key uses random coloring (logic stolen from screwdriver.dm)
 	slot_flags = ITEM_SLOT_NECK
+	// [CELADON-ADD] - Well Done?
+	var/well_done = FALSE
+	// [/CELADON-ADD]
+
 
 /obj/item/key/ship/Initialize(mapload, datum/overmap/ship/controlled/master_ship)
 	. = ..()
@@ -639,9 +664,18 @@
 	return ..()
 
 /obj/item/key/ship/attack_self(mob/user)
+	// [CELADON-ADD] - Well Done cooldown
+	if(user.next_move > world.time)
+		return
+	// [/CELADON-ADD]
 	if(!master_ship || !Adjacent(user))
 		return ..()
 
 	master_ship.attempt_key_usage(user, src, src) // hello I am a helm console I promise
 	return TRUE
+
+// [CELADON-ADD] - Well Done act
+/obj/item/key/ship/microwave_act(obj/machinery/microwave/M)
+	well_done = TRUE
+// [/CELADON-ADD]
 

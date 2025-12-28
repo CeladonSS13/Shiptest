@@ -1,5 +1,6 @@
-#define EMOTE_VISIBLE 1
-#define EMOTE_AUDIBLE 2
+#define EMOTE_VISIBLE (1<<0)
+#define EMOTE_AUDIBLE (1<<1)
+#define EMOTE_ANIMATED (1<<2)
 
 /datum/emote
 	var/key = "" //What calls the emote
@@ -23,6 +24,7 @@
 	var/list/mob_type_ignore_stat_typecache
 	var/stat_allowed = CONSCIOUS
 	var/sound //Sound to play when emote is called
+	var/sound_volume = 50
 	var/vary = FALSE	//used for the honk borg emote
 	var/only_forced_audio = FALSE //can only code call this event instead of the player.
 	var/cooldown = 0.8 SECONDS
@@ -43,6 +45,19 @@
 	var/volume = 50
 	// [/CELADON-ADD]
 
+	// Animated emote stuff
+
+	/// Animated emotes - Time to flick the overlay for in ticks, use SECONDS defines please.
+	var/emote_length
+	/// Animated emotes - pixel_x offset
+	var/overlay_x_offset = 0
+	/// Animated emotes - pixel_y offset
+	var/overlay_y_offset = 0
+	/// Animated emotes - Icon file for the overlay
+	var/icon/overlay_icon = 'icons/effects/overlay_effects.dmi'
+	/// Animated emotes - Icon state for the overlay
+	var/overlay_icon_state
+
 /datum/emote/New()
 	if (ispath(mob_type_allowed_typecache))
 		switch (mob_type_allowed_typecache)
@@ -61,6 +76,21 @@
 	. = TRUE
 	if(!can_run_emote(user, TRUE, intentional))
 		return FALSE
+
+	if((emote_type & EMOTE_ANIMATED) && emote_length > 0)
+		var/image/I = image(overlay_icon, user, overlay_icon_state, ABOVE_MOB_LAYER, 0, overlay_x_offset, overlay_y_offset)
+		user.flick_overlay_view(I, emote_length)
+
+	var/tmp_sound = get_sound(user)
+	// [CELADON-ADD] - CELADON_EMOTES
+	var/sound_volume = get_volume(user)
+	// [/CELADON-ADD]
+	if(tmp_sound && (!only_forced_audio || !intentional))
+		// [CELADON-EDIT] - CELADON_EMOTES
+		// playsound(user, tmp_sound, 50, vary)	// CELADON-EDIT - ORIGINAL
+		playsound(user, tmp_sound, sound_volume, vary)
+		// [/CELADON-EDIT]
+
 	var/msg = select_message_type(user, intentional)
 	if(params && message_param)
 		// [CELADON-EDIT] - CELADON_EMOTES
@@ -109,16 +139,6 @@
 	var/space = should_have_space_before_emote(html_encode(msg)[1]) ? " " : ""
 	var/dchatmsg = "<b>[user]</b>[space][msg]"
 
-	// [CELADON-ADD] - CELADON_EMOTES
-	var/sound_volume = get_volume(user)
-	// [/CELADON-ADD]
-	var/tmp_sound = get_sound(user)
-	if(tmp_sound && (!only_forced_audio || !intentional))
-		// [CELADON-EDIT] - CELADON_EMOTES
-		// playsound(user, tmp_sound, 50, vary)	// CELADON-EDIT - ORIGINAL
-		playsound(user, tmp_sound, sound_volume, vary)
-		// [/CELADON-EDIT]
-
 	for(var/mob/M in GLOB.dead_mob_list)
 		if(!M.client || isnewplayer(M))
 			continue
@@ -126,13 +146,17 @@
 		if(M.stat == DEAD && M.client && (M.client.prefs.chat_toggles & CHAT_GHOSTSIGHT) && !(M in viewers(T, null)))
 			M.show_message("[FOLLOW_LINK(M, user)] [dchatmsg]")
 
-	// [CELADON-ADD] - CELADON_EMOTES
-	if(isliving(user))
-	// [/CELADON-EDIT]
+	if(isliving(user))	// [CELADON-ADD] - CELADON_EMOTES
+	// [CELADON-EDIT] - CELADON_EMOTES
+	// if(emote_type & EMOTE_AUDIBLE)
+	// 	user.audible_message(msg, deaf_message = span_emote("You see how <b>[user]</b> [msg]"), audible_message_flags = EMOTE_MESSAGE)
+	// else
+	// 	user.visible_message(msg, blind_message = span_emote("You hear how <b>[user]</b> [msg]"), visible_message_flags = EMOTE_MESSAGE)	// ORIGINAL
 		if(emote_type == EMOTE_AUDIBLE)	// Да, это определённо слегка забавно.
 			user.audible_message(msg, deaf_message = span_emote("Ты видишь как <b>[user]</b> [msg]"), audible_message_flags = EMOTE_MESSAGE)
 		else
 			user.visible_message(msg, blind_message = span_emote("Ты замечаешь как <b>[user]</b> [msg]"), visible_message_flags = EMOTE_MESSAGE)
+	// [/CELADON-EDIT]
 	// [CELADON-ADD] - CELADON_EMOTES
 	if(!((emote_type & EMOTE_FORCE_NO_RUNECHAT) || suppressed) && !isobserver(user))
 		to_chat(user, msg)
@@ -163,7 +187,7 @@
 
 /datum/emote/proc/select_message_type(mob/user, intentional)
 	. = message
-	if(!muzzle_ignore && user.is_muzzled() && emote_type == EMOTE_AUDIBLE)
+	if(!muzzle_ignore && user.is_muzzled() && emote_type & EMOTE_AUDIBLE)
 		return "makes a [pick("strong ", "weak ", "")]noise."
 	if(isalienadult(user) && message_alien)
 		. = message_alien

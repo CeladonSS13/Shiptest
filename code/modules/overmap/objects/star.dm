@@ -17,11 +17,11 @@
 		/datum/overmap/event/flare/minor = 40,
 		/datum/overmap/event/flare = 20,
 		/datum/overmap/event/flare/major = 5,
-
+/*
 		/datum/overmap/event/emp/minor = 20,
 		/datum/overmap/event/emp = 10,
 		/datum/overmap/event/emp/major = 5,
-
+*/
 		/datum/overmap/event/rad/minor = 40,
 		/datum/overmap/event/rad = 20,
 		/datum/overmap/event/rad/major = 5,
@@ -51,7 +51,9 @@
 	SSpoints_of_interest.make_point_of_interest(token)
 	Rename(name)
 	alter_token_appearance()
+#ifndef NOOVERMAP
 	START_PROCESSING(SSprocessing, src)
+#endif
 
 /datum/overmap/star/Destroy(force, ...)
 	SSpoints_of_interest.remove_point_of_interest(token)
@@ -151,10 +153,11 @@
 	spectral_type = STAR_T
 	color_vary = 1
 	events_to_spawn = list(\
+	/*
 		/datum/overmap/event/emp/minor = 40,
 		/datum/overmap/event/emp = 20,
 		/datum/overmap/event/emp/major = 5,
-
+*/
 		/datum/overmap/event/rad/minor = 40,
 		/datum/overmap/event/rad = 20,
 		/datum/overmap/event/rad/major = 5,
@@ -172,11 +175,11 @@
 		/datum/overmap/event/electric/minor = 50,
 		/datum/overmap/event/electric = 40,
 		/datum/overmap/event/electric/major = 3,
-
+/*
 		/datum/overmap/event/emp/minor = 80,
 		/datum/overmap/event/emp = 100,
 		/datum/overmap/event/emp/major = 120,
-
+*/
 		/datum/overmap/event/rad/minor = 20,
 		/datum/overmap/event/rad = 10,
 		/datum/overmap/event/rad/major = 5,
@@ -201,7 +204,7 @@
 	. = ..()
 	// [CELADON-EDIT] - CELADON_OVERMAP
 	// token.icon = 'icons/misc/overmap_large.dmi'	// CELADON-EDIT - ORIGINAL
-	token.icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap_large.dmi'
+	token.icon = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap_large.dmi'
 	// [/CELADON-EDIT]
 	token.bound_height = 64
 	token.bound_width = 64
@@ -254,7 +257,7 @@
 	. = ..()
 	// [CELADON-EDIT] - CELADON_OVERMAP
 	// token.icon = 'icons/misc/overmap_larger.dmi'	// CELADON-EDIT - ORIGINAL
-	token.icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap_larger.dmi'
+	token.icon = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap_larger.dmi'
 	// [/CELADON-EDIT]
 	token.bound_height = 96
 	token.bound_width = 96
@@ -315,7 +318,7 @@
 	token.cut_overlays()
 	// [CELADON-EDIT] - CELADON_OVERMAP
 	// token.icon = 'icons/misc/overmap_larger.dmi'	// CELADON-EDIT - ORIGINAL
-	token.icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap_larger.dmi'
+	token.icon = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap_larger.dmi'
 	// [/CELADON-EDIT]
 	token.bound_height = 96
 	token.bound_width = 96
@@ -356,11 +359,11 @@
 
 	events_to_spawn = list(\
 		/datum/overmap/event/nebula = 40,
-
+/*
 		/datum/overmap/event/emp/minor = 20,
 		/datum/overmap/event/emp = 30,
 		/datum/overmap/event/emp/major = 40,
-
+*/
 		/datum/overmap/event/rad/minor = 60,
 		/datum/overmap/event/rad = 70,
 		/datum/overmap/event/rad/major = 80,
@@ -375,7 +378,7 @@
 	. = ..()
 	// [CELADON-EDIT] - CELADON_OVERMAP
 	// token.icon = 'icons/misc/overmap_larger.dmi'	// CELADON-EDIT - ORIGINAL
-	token.icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap_larger.dmi'
+	token.icon = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap_larger.dmi'
 	// [/CELADON-EDIT]
 	token.bound_height = 96
 	token.bound_width = 96
@@ -396,11 +399,11 @@
 		/datum/overmap/event/electric/minor = 50,
 		/datum/overmap/event/electric = 40,
 		/datum/overmap/event/electric/major = 3,
-
+/*
 		/datum/overmap/event/emp/minor = 80,
 		/datum/overmap/event/emp = 100,
 		/datum/overmap/event/emp/major = 120,
-
+*/
 		/datum/overmap/event/rad/minor = 20,
 		/datum/overmap/event/rad = 10,
 		/datum/overmap/event/rad/major = 5,
@@ -415,7 +418,7 @@
 	. = ..()
 	// [CELADON-EDIT] - CELADON_OVERMAP
 	// token.icon = 'icons/misc/overmap_larger.dmi'	// CELADON-EDIT - ORIGINAL
-	token.icon = 'mod_celadon/_storge_icons/icons/assets/overmap/overmap_larger.dmi'
+	token.icon = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap_larger.dmi'
 	// [/CELADON-EDIT]
 	token.bound_height = 96
 	token.bound_width = 96

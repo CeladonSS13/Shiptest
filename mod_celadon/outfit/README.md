@@ -9,7 +9,7 @@
 -->
 
 <!-- Название мода. Не важно на русском или на английском. -->
-## НАЗВАНИЕ_МОДА
+## Вещи и оутфиты
 
 ID мода: CELADON_OUTFIT
 <!--
@@ -49,6 +49,8 @@ ID мода: CELADON_OUTFIT
 
 - `code/modules/mob/living.dm`: `proc/overriden_proc`, `var/overriden_var`
 - `icons/obj/clothing/belt_overlays.dmi`: `skimitar`, `skimitar_gold`, `skimitar-silenced`, `skimitar_gold-silenced`
+
+- EDIT: `code/modules/clothing/outfits/standard.dm` - Изменение иконки дебаг карты
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -86,7 +88,7 @@ ID мода: CELADON_OUTFIT
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- `mod_celadon/_storge_icons/icons`
+- `mod_celadon/_storage_icons/icons`
 - `mods/_master_files/icons/obj/alien.dmi`
 - `icons/obj/clothing/belt_overlays.dmi`
 <!--

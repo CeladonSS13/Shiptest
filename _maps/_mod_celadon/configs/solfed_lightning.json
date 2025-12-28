@@ -4,7 +4,7 @@
 	"map_short_name": "Lightning",
 	"description": " 'Lightning',  Модернизированная и переоборудованная версия одного из первых разведывательных космических кораблей регулярных сил Солнечной Федерации во времена космической экспансии о чем говорит его обшивка из сплава плазмы и титана черного цвета . Корабль оснащен современным медицинским оборудованием для поддержки союзных кораблей, а так же гумманитарных миссий на просторах Фронтира, а так же двигатели позволяющие развивать огромную скорость оправдывающие его название",
 	"map_path": "_maps/_mod_celadon/shuttles/solfed/solfed_lightning.dmm",
-	"enabled": true,
+	"enabled": false,
 	"limit": 1,
 	"sensor_range": 7,
 	"starting_funds": 2000,
@@ -21,25 +21,26 @@
 	],
 	"job_slots": {
 		"Kommandant": {
-			"outfit": "/datum/outfit/job/solfed/captain",
+			"outfit": "/datum/outfit/job/cel/solfed/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"Marine Guard": {
-			"outfit": "/datum/outfit/job/solfed/sergeant",
+			"outfit": "/datum/outfit/job/cel/solfed/sergeant",
 			"officer": true,
 			"slots": 1
 		},
 		"Medical Scientist": {
-			"outfit": "/datum/outfit/job/solfed/doctor",
-			"slots":1
+			"outfit": "/datum/outfit/job/cel/solfed/doctor/medical_scientist",
+			"officer": true,
+			"slots": 1
 		},
 		"Meeresarzt": {
-			"outfit": "/datum/outfit/job/solfed/doctor",
+			"outfit": "/datum/outfit/job/cel/solfed/doctor",
 			"slots": 2
 		},
 		"Field Marinemechaniker": {
-			"outfit": "/datum/outfit/job/solfed/engineer",
+			"outfit": "/datum/outfit/job/cel/solfed/engineer",
 			"slots": 2
 		}
 	}
