@@ -2768,6 +2768,10 @@
 "AU" = (
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
 /obj/machinery/oven,
+/obj/item/plate/oven_tray{
+	pixel_x = 0;
+	pixel_y = 10
+	},
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "Bi" = (
@@ -4843,8 +4847,24 @@
 	},
 /obj/structure/table/wood/reinforced,
 /obj/item/reagent_containers/food/drinks/mug{
-	pixel_x = 6;
-	pixel_y = -4
+	pixel_x = 12;
+	pixel_y = -15
+	},
+/obj/item/plate{
+	pixel_x = 0;
+	pixel_y = 1
+	},
+/obj/item/plate{
+	pixel_x = 0;
+	pixel_y = 3
+	},
+/obj/item/plate{
+	pixel_x = 0;
+	pixel_y = 5
+	},
+/obj/item/plate{
+	pixel_x = 0;
+	pixel_y = 8
 	},
 /turf/open/floor/plasteel/sepia,
 /area/ship/crew/canteen)

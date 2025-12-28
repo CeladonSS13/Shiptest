@@ -331,6 +331,7 @@
 	dir = 1;
 	pixel_y = -8
 	},
+/obj/item/circuitboard/machine/griddle,
 /turf/open/floor/plastic,
 /area/ship/crew/canteen/kitchen)
 "gR" = (
@@ -2175,6 +2176,9 @@
 	pixel_y = -18;
 	dir = 1
 	},
+/mob/living/basic/cockroach/glockroach,
+/obj/effect/gibspawner/human/bodypartless,
+/mob/living/basic/cockroach/glockroach,
 /turf/open/floor/pod/light,
 /area/ship/maintenance/aft)
 "Qd" = (
@@ -2356,6 +2360,10 @@
 /obj/machinery/atmospherics/pipe/simple/purple/hidden{
 	dir = 4
 	},
+/obj/item/circuitboard/machine/gibber,
+/mob/living/basic/cockroach/glockroach,
+/obj/effect/decal/remains/human,
+/obj/effect/gibspawner/human/bodypartless,
 /turf/open/floor/pod/light,
 /area/ship/maintenance/aft)
 "Vo" = (
@@ -2591,6 +2599,9 @@
 /obj/machinery/atmospherics/pipe/simple/purple/hidden{
 	dir = 10
 	},
+/mob/living/basic/cockroach/glockroach,
+/mob/living/basic/cockroach/glockroach,
+/obj/effect/gibspawner/human/bodypartless,
 /turf/open/floor/pod/light,
 /area/ship/maintenance/aft)
 "YT" = (
