@@ -146,12 +146,12 @@ export const RADIO_CHANNELS = [
   },
   {
     name: 'SolFed',
-    freq: 1345,
+    freq: 1355,
     color: '#5a6a88',
   },
   {
     name: 'SolFed (Short)',
-    freq: 1347,
+    freq: 1357,
     color: '#7589af',
   },
   {
