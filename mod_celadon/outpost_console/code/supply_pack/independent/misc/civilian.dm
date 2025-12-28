@@ -261,3 +261,10 @@ MARK: Decoration / flooring
 /obj/item/stack/garland_pack/fifty
 /obj/structure/closet/crate/wooden/garland
 // [/CELADON-ADD] - MARK: Удалить после НГ
+
+// [CELADON-ADD] - MARK: Удалить после РАЦИЙ
+/obj/item/radio/transceiver/syndicate
+/obj/item/radio/transceiver/solfed
+/obj/item/radio/transceiver/nanotrasen
+/obj/item/radio/transceiver/inteq
+// [/CELADON-ADD] - MARK: Удалить после РАЦИЙ
