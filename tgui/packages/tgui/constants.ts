@@ -90,9 +90,24 @@ export const RADIO_CHANNELS = [
     color: '#34fd34',
   },
   {
+    name: 'Syndicate (Short)',
+    freq: 1223,
+    color: '#ac5f61',
+  },
+  {
     name: 'Yellow Team',
     freq: 1221,
     color: '#fdfd34',
+  },
+  {
+    name: 'SUNS',
+    freq: 1325,
+    color: '#4e3399',
+  },
+  {
+    name: 'SUNS (Short)',
+    freq: 1327,
+    color: '#7153c6',
   },
   {
     name: 'NT-CC',
@@ -100,39 +115,64 @@ export const RADIO_CHANNELS = [
     color: '#2681a5',
   },
   {
-    name: 'SolFed',
-    freq: 1345,
-    color: '#7589af',
-  },
-  {
     name: 'IRMG',
-    freq: 1347,
+    freq: 1335,
     color: '#b88646',
   },
   {
-    name: 'Elysium', // [CELADON-EDIT] - FACTION_RADIO
+    name: 'IRMG (Short)',
+    freq: 1339,
+    color: '#c79f6a',
+  },
+  {
+    name: 'Elysium',
+    freq: 1347,
+    color: '#12692f',
+  },
+  {
+    name: 'Elysium (Short)',
     freq: 1349,
     color: '#199943',
   },
   {
     name: 'Nanotrasen',
     freq: 1351,
+    color: '#28a4ec',
+  },
+  {
+    name: 'Nanotrasen (Short)',
+    freq: 1353,
     color: '#57b8f0',
   },
   {
-    name: 'Emergency',
-    freq: 1353,
-    color: '#dd3535',
+    name: 'SolFed',
+    freq: 1345,
+    color: '#5a6a88',
+  },
+  {
+    name: 'SolFed (Short)',
+    freq: 1347,
+    color: '#7589af',
+  },
+  {
+    name: 'Raider',
+    freq: 1321,
+    color: '#fcdf03',
   },
   {
     name: 'Ramzi',
-    freq: 1355,
+    freq: 1423,
     color: '#796755',
   },
   {
     name: 'Unidentified',
-    freq: 1359,
+    freq: 1425,
     color: '#4d4d4d',
+  },
+  {
+    name: 'Emergency',
+    freq: 1429,
+    color: '#dd3535',
   },
   {
     name: 'Common',
@@ -143,16 +183,6 @@ export const RADIO_CHANNELS = [
     name: 'Wideband',
     freq: 1681,
     color: '#8de7b6',
-  },
-  {
-    name: 'Raider',
-    freq: 1341,
-    color: '#fcdf03',
-  },
-  {
-    name: 'SUNS',
-    freq: 1343,
-    color: '#4e3399',
   },
 ] as const;
 

@@ -491,10 +491,11 @@
 	icon_state = "radio"
 	desc = "An old handheld radio. You could use it, if you really wanted to."
 
+// [CELADON-ADD] - FACTION_RADIO
 /obj/item/radio/transceiver
 	name = "transceiver"
 	desc = "A tactical communications device for those times when you need it."
-	icon = 'mod_celadon/_storge_icons/icons/items/misc/radio.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/radio.dmi'
 	icon_state = "walkietalkiesec"
 	item_state = "walkietalkiesec"
 	freerange = TRUE
@@ -506,25 +507,25 @@
 /obj/item/radio/transceiver/nanotrasen
 	name = "nanotrasen transceiver"
 	icon_state = "walkietalkie_nt"
-	frequency = FREQ_NANOTRASEN
+	frequency = FREQ_NANOTRASEN_SHORT
 	keyslot = /obj/item/encryptionkey/nanotrasen
 
 /obj/item/radio/transceiver/syndicate
 	name = "syndicate transceiver"
 	icon_state = "walkietalkie_syndi"
-	frequency = FREQ_SYNDICATE
+	frequency = FREQ_SYNDICATE_SHORT
 	keyslot = /obj/item/encryptionkey/syndicate
 
 /obj/item/radio/transceiver/solfed
 	name = "solfed transceiver"
 	icon_state = "walkietalkie_sf"
-	frequency = FREQ_SOLFED
+	frequency = FREQ_SOLFED_SHORT
 	keyslot = /obj/item/encryptionkey/solgov
 
 /obj/item/radio/transceiver/inteq
 	name = "inteq transceiver"
 	icon_state = "walkietalkie_inteq"
-	frequency = FREQ_INTEQ
+	frequency = FREQ_INTEQ_SHORT
 	keyslot = /obj/item/encryptionkey/inteq
 
 // Не встречаются в игре, нельзя найти
@@ -537,7 +538,7 @@
 /obj/item/radio/transceiver/elysium
 	name = "elysium transceiver"
 	icon_state = "walkietalkie_eusm"
-	frequency = FREQ_ELYSIUM
+	frequency = FREQ_ELYSIUM_SHORT
 	keyslot = /obj/item/encryptionkey/pgf
 
 /obj/item/radio/transceiver/ramzi
@@ -555,5 +556,8 @@
 /obj/item/radio/transceiver/suns
 	name = "suns transceiver"
 	icon_state = "walkietalkie_suns"
-	frequency = FREQ_SUNS
+	frequency = FREQ_SUNS_SHORT
 	keyslot = /obj/item/encryptionkey/suns
+	//keyslot2 = /obj/item/encryptionkey/suns
+
+// [/CELADON-ADD]

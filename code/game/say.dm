@@ -3,20 +3,28 @@
 	This file has the basic atom/movable level speech procs.
 	And the base of the send_speech() proc, which is the core of saycode.
 */
+// [CELADON-EDIT] - FACTION-RADIO
 GLOBAL_LIST_INIT(freqtospan, list(
-	"[FREQ_NANOTRASEN]" = "ntradio",
-	"[FREQ_RAMZI]" = "ramziradio",
-	"[FREQ_INTEQ]" = "irmgradio",
-	"[FREQ_ELYSIUM]" = "elysiumradio",
-	"[FREQ_PIRATE]" = "pirradio",
 	"[FREQ_EMERGENCY]" = "emrgradio",
-	"[FREQ_SYNDICATE]" = "syndradio",
 	"[FREQ_CENTCOM]" = "centcomradio",
-	"[FREQ_SOLFED]" = "solfedradio",
 	"[FREQ_WIDEBAND]" = "widebandradio",
-	"[FREQ_VOX]" = "voxradio",
+	"[FREQ_NANOTRASEN]" = "ntradio",
+	"[FREQ_NANOTRASEN_SHORT]" = "ntradio_short",
+	"[FREQ_INTEQ]" = "irmgradio",
+	"[FREQ_INTEQ_SHORT]" = "irmgradio_short",
+	"[FREQ_ELYSIUM]" = "elysiumradio",
+	"[FREQ_ELYSIUM_SHORT]" = "elysiumradio_short",
+	"[FREQ_SYNDICATE]" = "syndradio",
+	"[FREQ_SYNDICATE_SHORT]" = "syndradio_short",
+	"[FREQ_SOLFED]" = "solfedradio",
+	"[FREQ_SOLFED_SHORT]" = "solfedradio_short",
 	"[FREQ_SUNS]" = "sunsradio",
+	"[FREQ_SUNS_SHORT]" = "sunsradio_short",
+	"[FREQ_VOX]" = "voxradio",
+	"[FREQ_RAMZI]" = "ramziradio",
+	"[FREQ_PIRATE]" = "pirradio",
 	))
+// [/CELADON-EDIT]
 
 GLOBAL_LIST_INIT(freqcolor, list())
 
