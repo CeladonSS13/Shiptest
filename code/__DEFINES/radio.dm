@@ -19,8 +19,8 @@
 #define RADIO_KEY_CENTCOM "e"
 #define RADIO_TOKEN_CENTCOM ":e"
 
-#define RADIO_CHANNEL_SOLFED "SolFed" //#define RADIO_CHANNEL_SOLGOV "SolGov"	// [CELADON-EDIT] - FACTION_RADIO
-#define RADIO_CHANNEL_SOLFED_SHORT "SolFed (Short)" //#define RADIO_CHANNEL_SOLGOV "SolGov"	// [CELADON-EDIT] - FACTION_RADIO
+#define RADIO_CHANNEL_SOLFED "SolFed"
+#define RADIO_CHANNEL_SOLFED_SHORT "SolFed (Short)"
 #define RADIO_KEY_SOLFED "s"
 #define RADIO_TOKEN_SOLFED ":s"
 
@@ -35,15 +35,11 @@
 
 #define RADIO_CHANNEL_SUNS "SUNS"
 #define RADIO_CHANNEL_SUNS_SHORT "SUNS (Short)"
-#define RADIO_KEY_SUNS "n"
-#define RADIO_TOKEN_SUNS ":n"
+#define RADIO_KEY_SUNS "d"
+#define RADIO_TOKEN_SUNS ":d"
 
-#define RADIO_CHANNEL_RAMZI "Ramzi" 					//#define RADIO_CHANNEL_MINUTEMEN "Minutemen"
-#define RADIO_KEY_RAMZI "r"
-#define RADIO_TOKEN_RAMZI ":r"
-
-#define RADIO_CHANNEL_ELYSIUM "Elysium" 				//#define RADIO_CHANNEL_PGF "PGF"
-#define RADIO_CHANNEL_ELYSIUM_SHORT "Elysium (Short)"	//#define RADIO_CHANNEL_PGF "PGF"
+#define RADIO_CHANNEL_ELYSIUM "Elysium"
+#define RADIO_CHANNEL_ELYSIUM_SHORT "Elysium (Short)"
 #define RADIO_KEY_ELYSIUM "e"
 #define RADIO_TOKEN_ELYSIUM ":e"
 
@@ -52,7 +48,11 @@
 #define RADIO_KEY_INTEQ "q"
 #define RADIO_TOKEN_INTEQ ":q"
 
-#define RADIO_CHANNEL_PIRATE "Unidentified"
+#define RADIO_CHANNEL_RAMZI "Ramzi (Short)"
+#define RADIO_KEY_RAMZI "r"
+#define RADIO_TOKEN_RAMZI ":r"
+
+#define RADIO_CHANNEL_PIRATE "Unidentified (Short)"
 #define RADIO_KEY_PIRATE "p"
 #define RADIO_TOKEN_PIRATE ":p"
 // [/CELADON-EDIT]
