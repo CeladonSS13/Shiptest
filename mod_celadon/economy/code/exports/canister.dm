@@ -5,7 +5,7 @@
 /datum/export/large/gas_canister
 	cost = 10 //Base cost of canister. You get more for nice gases inside.
 	unit_name = "Gas Canister"
-	desc = "Gas canister Оплата зависит от содержимого (Плазма / БЗ / Тритиум)."
+	desc = "Оплата зависит от содержимого (Плазма / БЗ / Тритиум)."
 	export_types = list(/obj/machinery/portable_atmospherics/canister)
 
 /datum/export/large/gas_canister/get_cost(obj/O)

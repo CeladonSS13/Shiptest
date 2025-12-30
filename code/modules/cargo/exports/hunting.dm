@@ -16,11 +16,13 @@
 	cost = 10
 	export_types = list(/obj/item/stack/sheet/bone)
 
+/*
 /datum/export/hunting/stack/hide
 	unit_name = "animal hide"
 	desc = "Animal hide export. Paid per hide."
 	cost = 50
 	export_types = list(/obj/item/stack/sheet/animalhide/goliath_hide) // Also includes polar bear hide.
+*/
 
 /datum/export/hunting/stack/rarehide
 	unit_name = "rare animal hide"
@@ -40,53 +42,6 @@
 	cost = 5
 	export_types = list(/obj/item/stack/sheet/sinew)
 
-// [CELADON-ADD]
-// Hides
-/datum/export/stack/skin
-	desc = "Rawhide of various origins. The more exotic the species, the higher the price."
-	include_subtypes = FALSE
-
-/datum/export/stack/skin/monkey
-	cost = 50
-	unit_name = "monkey hide"
-	export_types = list(/obj/item/stack/sheet/animalhide/monkey)
-
-/datum/export/stack/skin/human
-	unit_name = "piece of human skin"
-	cost = 100
-	export_types = list(/obj/item/stack/sheet/animalhide/human)
-
-/datum/export/stack/skin/goliath_hide
-	unit_name = "goliath hide"
-	cost = 200
-	export_types = list(/obj/item/stack/sheet/animalhide/goliath_hide)
-
-/datum/export/stack/skin/cat
-	unit_name = "cat hide"
-	cost = 150
-	export_types = list(/obj/item/stack/sheet/animalhide/cat)
-
-/datum/export/stack/skin/corgi
-	unit_name = "corgi hide"
-	cost = 200
-	export_types = list(/obj/item/stack/sheet/animalhide/corgi)
-
-/datum/export/stack/skin/lizard
-	unit_name = "lizard hide"
-	cost = 150
-	export_types = list(/obj/item/stack/sheet/animalhide/lizard)
-
-/datum/export/stack/skin/gondola
-	unit_name = "gondola hide"
-	cost = 250
-	export_types = list(/obj/item/stack/sheet/animalhide/gondola)
-
-/datum/export/stack/skin/xeno
-	unit_name = "alien hide"
-	cost = 100
-	export_types = list(/obj/item/stack/sheet/animalhide/xeno)
-// [/CELADON-ADD]
-
 /datum/export/hunting/trophy
 	desc = "Off-sector collectors can pay quite a price for animal trophies in good condition."
 
@@ -94,6 +49,7 @@
 	cost = 250
 	unit_name = "common hunting trophy"
 	export_types = list(
+		/obj/item/mob_trophy/shiny,	// [CELADON-ADD] - HERMIT
 		/obj/item/mob_trophy/legion_skull,
 		/obj/item/mob_trophy/wolf_ear,
 		/obj/item/mob_trophy/bear_paw,
@@ -107,6 +63,11 @@
 	cost = 1000
 	unit_name = "rare hunting trophy"
 	export_types = list(
+// [CELADON-ADD]
+		/obj/item/mob_trophy/watcher_wing_forgotten,
+		/obj/item/mob_trophy/legion_skull_crystal,
+		/obj/item/mob_trophy/goliath_crystal,
+// [/CELADON-ADD]
 		/obj/item/mob_trophy/dwarf_skull,
 		/obj/item/mob_trophy/fang,
 		/obj/item/mob_trophy/war_paw,
@@ -131,3 +92,52 @@
 		/obj/item/mob_trophy/vortex_talisman,
 		/obj/item/mob_trophy/blaster_tubes
 	)
+
+// [CELADON-ADD]
+// Hides
+/datum/export/hunting/stack
+	desc = "Rawhide of various origins. The more exotic the species, the higher the price."
+	include_subtypes = FALSE
+
+/datum/export/hunting/stack/monkey
+	cost = 50
+	unit_name = "monkey hide"
+	export_types = list(/obj/item/stack/sheet/animalhide/monkey)
+
+/datum/export/hunting/stack/human
+	unit_name = "piece of human skin"
+	cost = 100
+	export_types = list(/obj/item/stack/sheet/animalhide/human)
+
+/datum/export/hunting/stack/goliath_hide
+	unit_name = "goliath hide"
+	cost = 200
+	export_types = list(/obj/item/stack/sheet/animalhide/goliath_hide)
+
+/datum/export/hunting/stack/cat
+	unit_name = "cat hide"
+	cost = 150
+	export_types = list(/obj/item/stack/sheet/animalhide/cat)
+
+/datum/export/hunting/stack/corgi
+	unit_name = "corgi hide"
+	cost = 200
+	export_types = list(/obj/item/stack/sheet/animalhide/corgi)
+
+/datum/export/hunting/stack/lizard
+	unit_name = "lizard hide"
+	cost = 150
+	export_types = list(/obj/item/stack/sheet/animalhide/lizard)
+
+/datum/export/hunting/stack/gondola
+	unit_name = "gondola hide"
+	cost = 250
+	export_types = list(/obj/item/stack/sheet/animalhide/gondola)
+
+/datum/export/hunting/stack/xeno
+	unit_name = "alien hide"
+	cost = 100
+	export_types = list(/obj/item/stack/sheet/animalhide/xeno)
+
+
+// [/CELADON-ADD]

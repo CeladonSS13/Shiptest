@@ -53,28 +53,31 @@
 
 // MARK: Уникальное
 
-/datum/export/large/supermatter
+/datum/export/large/rare
+	elasticity_coeff = 0
+
+/datum/export/large/rare/supermatter
 	cost = 4000
 	unit_name = "supermatter shard"
 	export_types = list(/obj/machinery/power/supermatter_crystal/shard)
 
-/datum/export/large/tesla_gen
+/datum/export/large/rare/tesla_gen
 	cost = 2000
 	unit_name = "energy ball generator"
 	export_types = list(/obj/machinery/the_singularitygen/tesla)
 
-/datum/export/large/singulo_gen
+/datum/export/large/rare/singulo_gen
 	cost = 2000
 	unit_name = "gravitational singularity generator"
 	export_types = list(/obj/machinery/the_singularitygen)
 	include_subtypes = FALSE
 
-/datum/export/large/pa
+/datum/export/large/rare/pa
 	unit_name = "particle accelerator part"
 	export_types = list(/obj/structure/particle_accelerator)
 	cost = 350 // 350 * 6 = 2100
 
-/datum/export/large/pa/controls
+/datum/export/large/rare/pa/controls
 	unit_name = "particle accelerator control console"
 	export_types = list(/obj/machinery/particle_accelerator/control_box)
 	cost = 500
