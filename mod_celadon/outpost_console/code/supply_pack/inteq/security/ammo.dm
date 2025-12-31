@@ -242,3 +242,19 @@ MARK: 9x18mm
 	desc = "Contains one 60-round 5.56x45mm Armour Piercing ammo."
 	contains = list(/obj/item/storage/box/ammo/a556_box/m903)
 	cost = 1300
+
+/*
+	MARK: 6.5mm / 6.5x57mm
+*/
+
+/datum/supply_pack/faction/inteq/ammo/a65clip_box
+	name = "6.5mm Ammo Box Crate"
+	desc = "Contains a twenty-round 6.5mm ammo box for various sniper rifles such as the CM-F90 and the Boomslang series."
+	contains = list(/obj/item/storage/box/ammo/a65clip)
+	cost = 200 //4 ammo efficiency at 40 damage
+
+/datum/supply_pack/faction/inteq/ammo/a65clip_trackers
+	name = "6.5mm Tracker Shell Crate"
+	desc = "Contains a 10-round 6.5mm tracker box for various sniper rifles such as the CM-F90 and the Boomslang series."
+	contains = list(/obj/item/storage/box/ammo/a65clip/trac)
+	cost = 250

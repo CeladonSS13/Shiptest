@@ -252,7 +252,7 @@ hp
 */
 - Используют:
 - Пистолеты: P46 Schnauzer (IQ)
-- SMG: SKM-24v / WT-550 (NT)
+- SMG: SKM-24v / BDM-50 'Akita' (IQ) / WT-550 (NT)
 
 /* MARK: 5.56mm HITP
 bullet
@@ -284,7 +284,7 @@ bullet
 	armour_penetration = 50
 */
 - Используют: 
-- Снайпер: Boomslang-90 / CM-F90 (SF) / MSR-90 'Boomslang' (S)
+- Снайпер: Boomslang-90 / SSG-08 Saluki (IQ) / CM-F90 (SF) / MSR-90 'Boomslang' (S)
 
 /* MARK: 7.62x54mm
 bullet

@@ -35,10 +35,27 @@ hp
 	armour_penetration = -30
 */
 
-/datum/supply_pack/faction/inteq/gun/pinscher
-	name = "Pistol - Pinscher Heavy Pistol (.44)"
-	desc = "Contains a heavy pistol manufactured by Serene Outdoors and modified to fit IRMG's standards. Chambered in .44 Roumain."
+/datum/supply_pack/faction/inteq/gun/podium_inteq
+	name = "Pistol - P46 Schnauzer (4.6x30mm)"
+	desc = "Contains a compact armor-piercing sidearm, chambered in 4.6x30mm."
 	cost = 1250
+	contains = list(/obj/item/storage/guncase/pistol/podium_inteq)
+/* MARK: 4.6x30mm
+bullet
+	damage = 20
+	armour_penetration = 10
+ap
+	damage = 18
+	armour_penetration = 40
+hp
+	damage = 30
+	armour_penetration = -10
+*/
+
+/datum/supply_pack/faction/inteq/gun/pinscher
+	name = "Heavy-Pistol - Pinscher (.44)"
+	desc = "Contains a heavy pistol manufactured by Serene Outdoors and modified to fit IRMG's standards. Chambered in .44 Roumain."
+	cost = 1500
 	contains = list(/obj/item/storage/guncase/pistol/pinscher)
 	crate_name = "pistol crate"
 /* MARK: .44
@@ -53,7 +70,7 @@ hp
 /datum/supply_pack/faction/inteq/gun/kingsnake
 	name = "Machinepistol - Kingsnake (9x18mm)"
 	desc = "Contains an automatic machinepistol chambered in 9x18mm, painted in the brown-and-gold of Inteq."
-	cost = 2500
+	cost = 2000
 	contains = list(/obj/item/storage/guncase/kingsnake)
 	crate_name = "Machinepistol crate"
 /* MARK: 9x18mm
@@ -93,11 +110,12 @@ hp
 	armour_penetration = -30
 */
 
-/datum/supply_pack/faction/inteq/gun/vi/podium_inteq
-	name = "Pistol - P46 Schnauzer (4.6x30mm)"
-	desc = "Contains a compact armor-piercing sidearm, chambered in 4.6x30mm."
-	cost = 2250
-	contains = list(/obj/item/storage/guncase/pistol/podium_inteq)
+/datum/supply_pack/faction/inteq/gun/bdm50
+	name = "SMG - BDM-50 'Akita' (4.6x30mm)"
+	desc = "Contains a compact Automatic personal defense weapon chambered in 4.6x30mm, in use by the IRMG."
+	cost = 3500
+	contains = list(/obj/item/storage/guncase/bdm50)
+	crate_name = "SMG crate"
 /* MARK: 4.6x30mm
 bullet
 	damage = 20
@@ -170,12 +188,32 @@ hp
 	armour_penetration = -10
 */
 
+/datum/supply_pack/faction/inteq/gun/saluki
+	name = "Marksman - SSG-08 Saluki (6.5mm)"
+	desc = "Contains a military sniper rifle equipped with an 8x sniper scope, fitted by the Inteq Artificer Division. Chambered in the powerful 6.5mm cartridge."
+	cost = 4000
+	contains = list(/obj/item/storage/guncase/saluki)
+	crate_name = "marksman rifle crate"
+/* MARK: 6.5mm / 6.5x57mm
+bullet
+	damage = 40
+	armour_penetration = 50
+*/
+
 /* // Отключено до реворка плазмы
+// Plasma ETAR - Inteq
+/datum/supply_pack/faction/inteq/gun/energy/cadejo
+	name = "PP10 'Cadejo' Energy Carbine"
+	desc = "Contains one refitted Sharplite X12 carbine, for IRMG use. Uses sharplite cells."
+	cost = 1250
+	contains = list(/obj/item/storage/guncase/cadejo)
+	crate_name = "beam carbine crate"
+
 // HADES II - Inteq
 /datum/supply_pack/faction/inteq/gun/exp/barghest
 	name = "P-Assault-Rifle - PP20 'Barghest' APR"
 	desc = "Contains a high-energy, automatic laser rifle. Refitted for IRMG use."
-	cost = 10000
+	cost = 7000
 	contains = list(/obj/item/storage/guncase/barghest)
 	crate_name = "laser crate"
 */
