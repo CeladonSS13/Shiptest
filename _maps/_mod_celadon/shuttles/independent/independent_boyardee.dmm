@@ -228,12 +228,13 @@
 /area/ship/storage)
 "ej" = (
 /obj/structure/table/reinforced,
-/obj/effect/spawner/random/food_or_drink/ration,
 /obj/effect/turf_decal/corner/opaque/white/half,
 /obj/effect/turf_decal/corner/opaque/white{
 	dir = 4
 	},
 /obj/machinery/airalarm/directional/north,
+/obj/machinery/microwave,
+/obj/effect/turf_decal/box,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/canteen/kitchen)
 "ep" = (
@@ -703,10 +704,9 @@
 /turf/open/floor/plasteel/mono/white,
 /area/ship/crew/canteen/kitchen)
 "np" = (
-/obj/structure/table/reinforced,
-/obj/machinery/microwave,
 /obj/effect/turf_decal/box,
 /obj/effect/turf_decal/corner/opaque/white/half,
+/obj/machinery/oven,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/canteen/kitchen)
 "ny" = (
@@ -2272,6 +2272,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/effect/spawner/random/food_or_drink/ration,
 /turf/open/floor/plasteel/mono,
 /area/ship/crew/canteen/kitchen)
 "Qm" = (

@@ -1794,6 +1794,7 @@
 	pixel_x = 22;
 	pixel_y = 25
 	},
+/obj/machinery/griddle,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen/kitchen)
 "kF" = (
@@ -3352,8 +3353,8 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "tc" = (
-/obj/machinery/deepfryer,
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
+/obj/machinery/oven,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen/kitchen)
 "td" = (
@@ -4083,7 +4084,6 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "yh" = (
-/obj/structure/closet/secure_closet/freezer/meat,
 /obj/item/storage/fancy/egg_box,
 /obj/item/storage/fancy/egg_box,
 /obj/item/reagent_containers/condiment/flour,
@@ -4091,6 +4091,7 @@
 /obj/item/reagent_containers/condiment/milk,
 /obj/item/reagent_containers/condiment/milk,
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
+/obj/structure/closet/secure_closet/freezer/meat,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen/kitchen)
 "yj" = (
@@ -4158,7 +4159,6 @@
 "yD" = (
 /obj/structure/table/reinforced,
 /obj/machinery/microwave,
-/obj/item/melee/knife/butcher,
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable{
@@ -5931,6 +5931,8 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+/obj/item/cutting_board,
+/obj/item/melee/knife/butcher,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen/kitchen)
 "JI" = (

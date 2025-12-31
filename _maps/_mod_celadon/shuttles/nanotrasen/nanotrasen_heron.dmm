@@ -4917,13 +4917,13 @@
 /area/ship/security)
 "sb" = (
 /obj/structure/table,
-/obj/machinery/microwave{
-	pixel_y = 5
-	},
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 1
 	},
 /obj/machinery/light/small/directional/south,
+/obj/machinery/microwave{
+	pixel_y = 5
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen/kitchen)
 "sc" = (
@@ -5520,11 +5520,11 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/science/ai_chamber)
 "tG" = (
-/obj/machinery/deepfryer,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
 /obj/machinery/light/directional/east,
+/obj/machinery/processor,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen/kitchen)
 "tI" = (
@@ -8057,6 +8057,10 @@
 "Dh" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
+/obj/item/book/manual/chef_recipes{
+	pixel_x = -4;
+	pixel_y = 6
+	},
 /obj/item/food/pie/cream,
 /turf/open/floor/plating,
 /area/ship/crew/canteen)
@@ -9612,20 +9616,10 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/electrical)
 "Ip" = (
-/obj/structure/table,
-/obj/item/food/mint,
-/obj/item/reagent_containers/condiment/enzyme{
-	pixel_x = -2;
-	pixel_y = 6
-	},
-/obj/item/reagent_containers/condiment/sugar{
-	pixel_x = 5;
-	pixel_y = 5
-	},
-/obj/item/reagent_containers/glass/beaker,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
 	},
+/obj/machinery/oven,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen/kitchen)
 "Ix" = (
@@ -11582,12 +11576,26 @@
 /turf/open/floor/plasteel,
 /area/ship/hallway/aft)
 "Qg" = (
-/obj/machinery/processor,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/radio/intercom/directional/east,
+/obj/structure/table,
+/obj/item/reagent_containers/condiment/sugar{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/condiment/enzyme{
+	pixel_x = -2;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/glass/beaker,
+/obj/item/melee/knife/butcher{
+	pixel_x = 13
+	},
+/obj/item/melee/knife/kitchen,
+/obj/item/kitchen/rollingpin,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen/kitchen)
 "Qi" = (
@@ -12567,6 +12575,8 @@
 	dir = 1
 	},
 /obj/machinery/light/small/directional/south,
+/obj/item/food/dough,
+/obj/item/food/dough,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen/kitchen)
 "TI" = (
@@ -13443,21 +13453,10 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "WX" = (
-/obj/structure/table,
-/obj/item/book/manual/chef_recipes{
-	pixel_x = -4;
-	pixel_y = 6
-	},
-/obj/item/food/dough,
-/obj/item/food/dough,
-/obj/item/kitchen/rollingpin,
-/obj/item/melee/knife/butcher{
-	pixel_x = 13
-	},
-/obj/item/melee/knife/kitchen,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
 	},
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen/kitchen)
 "WY" = (

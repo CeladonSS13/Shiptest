@@ -836,6 +836,10 @@
 	pixel_y = 7
 	},
 /obj/structure/table/wood,
+/obj/item/storage/cans/sixbeer{
+	pixel_x = -1;
+	pixel_y = -7
+	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
 "gE" = (
@@ -1031,6 +1035,7 @@
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 1
 	},
+/obj/item/circuitboard/machine/griddle,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "ib" = (
@@ -1654,14 +1659,14 @@
 	},
 /obj/item/reagent_containers/condiment/saltshaker,
 /obj/item/food/onigiri{
-	pixel_y = 16;
-	pixel_x = -7
-	},
-/obj/item/food/onigiri{
 	pixel_y = 4;
 	pixel_x = -10
 	},
 /obj/structure/table/wood,
+/obj/item/food/onigiri{
+	pixel_y = 16;
+	pixel_x = -7
+	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
 "nq" = (
@@ -3160,6 +3165,18 @@
 	dir = 4
 	},
 /obj/machinery/light/small/directional/east,
+/obj/item/storage/fancy/cigarettes/cigpack_syndicate{
+	pixel_x = -3;
+	pixel_y = 10
+	},
+/obj/item/storage/fancy/cigarettes/cigpack_syndicate{
+	pixel_x = -5;
+	pixel_y = 4
+	},
+/obj/item/lighter/clockwork{
+	pixel_y = -6;
+	pixel_x = -4
+	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
 "Ak" = (
@@ -4572,18 +4589,10 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "NC" = (
-/obj/structure/table/reinforced,
-/obj/machinery/microwave{
-	pixel_y = 13;
-	pixel_x = -3
-	},
 /obj/machinery/camera/autoname{
 	dir = 5
 	},
-/obj/item/melee/knife/kitchen{
-	pixel_y = 4;
-	pixel_x = 12
-	},
+/obj/machinery/oven,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/canteen)
 "NE" = (
@@ -4949,7 +4958,22 @@
 /area/ship/cargo)
 "Su" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/cans/sixbeer,
+/obj/item/reagent_containers/condiment/peppermill{
+	pixel_x = -4;
+	pixel_y = 14
+	},
+/obj/item/reagent_containers/condiment/saltshaker{
+	pixel_x = -10;
+	pixel_y = 8
+	},
+/obj/item/cutting_board{
+	pixel_x = 4
+	},
+/obj/item/food/nigiri_sushi,
+/obj/item/food/nigiri_sushi{
+	pixel_x = 6
+	},
+/obj/item/melee/knife/kitchen,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
 "SA" = (
@@ -5502,28 +5526,8 @@
 "Xs" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/siding/wood,
-/obj/item/storage/fancy/cigarettes/cigpack_syndicate{
-	pixel_x = 10;
-	pixel_y = 17
-	},
-/obj/item/storage/fancy/cigarettes/cigpack_syndicate{
-	pixel_x = 6;
-	pixel_y = 14
-	},
-/obj/item/lighter/clockwork{
-	pixel_y = 15
-	},
-/obj/item/food/nigiri_sushi,
-/obj/item/food/nigiri_sushi{
-	pixel_x = 6
-	},
-/obj/item/reagent_containers/condiment/saltshaker{
-	pixel_x = -10;
-	pixel_y = 8
-	},
-/obj/item/reagent_containers/condiment/peppermill{
-	pixel_x = -4;
-	pixel_y = 9
+/obj/machinery/microwave{
+	pixel_y = 1
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
