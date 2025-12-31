@@ -2258,6 +2258,7 @@
 /obj/structure/curtain/cloth{
 	pixel_y = -32
 	},
+/obj/item/reagent_containers/glass/filter,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
 "HB" = (
@@ -2383,14 +2384,13 @@
 /turf/open/floor/carpet/blue,
 /area/ship/crew)
 "KO" = (
-/obj/item/reagent_containers/glass/filter,
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/structure/table,
 /obj/structure/curtain/cloth{
 	pixel_y = -32
 	},
+/obj/machinery/griddle,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
 "KS" = (
@@ -3159,7 +3159,6 @@
 /turf/open/floor/concrete/slab_3,
 /area/ship/crew/canteen)
 "WY" = (
-/obj/structure/table,
 /obj/structure/railing/wood{
 	color = "#543C30"
 	},
@@ -3170,6 +3169,7 @@
 	color = "#543C30";
 	dir = 8
 	},
+/obj/machinery/oven,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
 "Xc" = (

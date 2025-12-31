@@ -580,14 +580,12 @@
 /area/ship/crew/office)
 "en" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/obj/structure/table/reinforced{
-	color = "#c1b6a5"
-	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/railing/wood{
 	dir = 8
 	},
+/obj/machinery/griddle,
 /turf/open/floor/wood/walnut,
 /area/ship/hallway/central)
 "eo" = (
@@ -747,18 +745,11 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
 	},
-/obj/machinery/microwave{
-	pixel_y = 2
-	},
-/obj/effect/spawner/random/food_or_drink/ration,
-/obj/effect/spawner/random/food_or_drink/ration,
-/obj/structure/table/reinforced{
-	color = "#c1b6a5"
-	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/structure/railing/wood{
 	dir = 8
 	},
+/obj/machinery/oven,
 /turf/open/floor/wood/walnut,
 /area/ship/hallway/central)
 "fg" = (
@@ -1022,6 +1013,7 @@
 /obj/machinery/jukebox/boombox{
 	pixel_y = 5
 	},
+/obj/item/lighter/greyscale,
 /turf/open/floor/plasteel/grimy,
 /area/ship/hallway/central)
 "hE" = (
@@ -1732,6 +1724,10 @@
 /obj/item/toy/cards/deck,
 /obj/item/storage/box/cups{
 	pixel_x = -14
+	},
+/obj/item/storage/pill_bottle/dice{
+	pixel_x = 6;
+	pixel_y = 6
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/hallway/central)
@@ -4385,10 +4381,6 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "Hy" = (
-/obj/item/storage/pill_bottle/dice{
-	pixel_x = 6;
-	pixel_y = 6
-	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
@@ -4396,10 +4388,14 @@
 	color = "#c1b6a5"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/lighter/greyscale,
 /obj/structure/sign/solfed{
 	pixel_y = 32
 	},
+/obj/machinery/microwave{
+	pixel_y = 2
+	},
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /turf/open/floor/plasteel/grimy,
 /area/ship/hallway/central)
 "HF" = (

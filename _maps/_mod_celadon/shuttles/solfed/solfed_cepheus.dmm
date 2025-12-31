@@ -2051,14 +2051,14 @@
 /area/ship/engineering/electrical)
 "zc" = (
 /obj/structure/table/wood,
-/obj/machinery/reagentgrinder{
-	pixel_y = 5
-	},
 /obj/effect/turf_decal/siding/wood{
 	color = "#792f27";
 	dir = 6
 	},
 /obj/machinery/light/directional/south,
+/obj/machinery/microwave{
+	pixel_y = 5
+	},
 /turf/open/floor/wood/mahogany,
 /area/ship/hallway/central)
 "zn" = (
@@ -2550,6 +2550,9 @@
 /obj/effect/turf_decal/siding/wood{
 	color = "#792f27"
 	},
+/obj/item/cutting_board,
+/obj/item/melee/knife/kitchen,
+/obj/structure/table/wood,
 /turf/open/floor/wood/mahogany,
 /area/ship/hallway/central)
 "EB" = (
@@ -3628,6 +3631,15 @@
 	pixel_x = 8;
 	pixel_y = 22
 	},
+/obj/item/reagent_containers/condiment/saltshaker{
+	pixel_x = 4;
+	pixel_y = 10
+	},
+/obj/item/reagent_containers/condiment/peppermill{
+	desc = "Often used to flavor food or make people sneeze. Fashionably moved to the left side of the table.";
+	pixel_x = -8;
+	pixel_y = 2
+	},
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "Rt" = (
@@ -3900,9 +3912,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/atmospherics)
 "Vj" = (
-/obj/structure/table/wood,
-/obj/item/cutting_board,
-/obj/item/melee/knife/kitchen,
 /obj/structure/sink/kitchen{
 	dir = 1;
 	pixel_y = -12;
@@ -3911,6 +3920,7 @@
 /obj/effect/turf_decal/siding/wood{
 	color = "#792f27"
 	},
+/obj/machinery/griddle,
 /turf/open/floor/wood/mahogany,
 /area/ship/hallway/central)
 "Vl" = (
@@ -3984,30 +3994,21 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/crew/dorm)
 "WN" = (
-/obj/machinery/microwave{
-	pixel_y = 5
-	},
 /obj/structure/table/wood,
 /obj/effect/turf_decal/siding/wood{
 	color = "#792f27";
 	dir = 4
 	},
+/obj/machinery/reagentgrinder{
+	pixel_y = 5
+	},
 /turf/open/floor/wood/mahogany,
 /area/ship/hallway/central)
 "WQ" = (
-/obj/structure/table/wood,
-/obj/item/reagent_containers/condiment/peppermill{
-	desc = "Often used to flavor food or make people sneeze. Fashionably moved to the left side of the table.";
-	pixel_x = -8;
-	pixel_y = 2
-	},
-/obj/item/reagent_containers/condiment/saltshaker{
-	pixel_x = 4;
-	pixel_y = 10
-	},
 /obj/effect/turf_decal/siding/wood{
 	color = "#792f27"
 	},
+/obj/machinery/oven,
 /turf/open/floor/wood/mahogany,
 /area/ship/hallway/central)
 "WU" = (
