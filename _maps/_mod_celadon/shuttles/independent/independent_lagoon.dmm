@@ -1490,14 +1490,18 @@
 "iR" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/bag/tray,
-/obj/item/melee/knife/kitchen,
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
-/obj/item/kitchen/rollingpin,
 /obj/item/reagent_containers/condiment/enzyme,
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
 /obj/item/radio/intercom/directional/west,
+/obj/item/pizzabox,
+/obj/item/pizzabox,
+/obj/item/pizzabox,
+/obj/item/pizzabox,
+/obj/item/pizzabox,
+/obj/item/clothing/under/suit/waiter,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen/kitchen)
 "iS" = (
@@ -2878,9 +2882,8 @@
 /turf/open/floor/plasteel,
 /area/ship/hallway/port)
 "qM" = (
-/obj/structure/table/reinforced,
-/obj/machinery/reagentgrinder,
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
+/obj/machinery/oven,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen/kitchen)
 "qR" = (
@@ -7316,14 +7319,11 @@
 /area/ship/hallway/aft)
 "Sa" = (
 /obj/structure/table/reinforced,
-/obj/item/pizzabox,
-/obj/item/pizzabox,
-/obj/item/pizzabox,
-/obj/item/pizzabox,
-/obj/item/pizzabox,
-/obj/item/clothing/under/suit/waiter,
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
 /obj/machinery/light/directional/west,
+/obj/machinery/reagentgrinder,
+/obj/item/kitchen/rollingpin,
+/obj/item/melee/knife/kitchen,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen/kitchen)
 "Sg" = (
@@ -7665,6 +7665,11 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/carpet,
 /area/ship/crew/chapel)
+"Un" = (
+/obj/effect/turf_decal/corner/opaque/white/diagonal,
+/obj/machinery/griddle,
+/turf/open/floor/plasteel,
+/area/ship/crew/canteen/kitchen)
 "Uq" = (
 /obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -9648,7 +9653,7 @@ pl
 Vg
 DB
 rz
-UO
+Un
 An
 bI
 KG

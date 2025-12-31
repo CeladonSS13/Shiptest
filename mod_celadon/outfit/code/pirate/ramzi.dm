@@ -91,6 +91,7 @@
 
 /datum/outfit/job/cel/pirate/ramzi/captain
 	name = "Ramzi Clique - Captain"
+	job_icon = "piratecaptain"
 
 	faction_icon = "bg_pirate"
 	job_icon = "piratecaptain"

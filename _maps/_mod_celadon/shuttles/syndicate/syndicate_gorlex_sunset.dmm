@@ -440,10 +440,22 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 6
 	},
-/obj/machinery/airalarm/directional/west,
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/sugar,
+/obj/item/reagent_containers/condiment/sugar,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/storage/fancy/egg_box,
+/obj/item/storage/fancy/egg_box,
+/obj/structure/closet/secure_closet/freezer/wall/directional/west,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "gX" = (
@@ -2090,6 +2102,7 @@
 /area/ship/engineering)
 "Er" = (
 /obj/effect/decal/cleanable/food/egg_smudge,
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "Et" = (
@@ -2196,19 +2209,7 @@
 /turf/open/floor/marble/black,
 /area/ship/hallway/central)
 "GG" = (
-/obj/structure/closet/secure_closet/freezer/kitchen,
-/obj/item/food/meat/slab,
-/obj/item/food/meat/slab,
-/obj/item/food/meat/slab,
-/obj/item/food/meat/slab,
-/obj/item/reagent_containers/condiment/flour,
-/obj/item/reagent_containers/condiment/flour,
-/obj/item/reagent_containers/condiment/sugar,
-/obj/item/reagent_containers/condiment/sugar,
-/obj/item/reagent_containers/condiment/milk,
-/obj/item/reagent_containers/condiment/milk,
-/obj/item/storage/fancy/egg_box,
-/obj/item/storage/fancy/egg_box,
+/obj/machinery/griddle,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)
 "GJ" = (
@@ -2416,8 +2417,9 @@
 	},
 /obj/machinery/button/door{
 	dir = 4;
-	pixel_x = -24;
-	id = "okno_crew1"
+	pixel_x = -19;
+	id = "okno_crew1";
+	pixel_y = 3
 	},
 /obj/structure/table/wood,
 /turf/open/floor/wood/ebony,
@@ -2956,9 +2958,14 @@
 /obj/structure/chair/handrail{
 	dir = 1
 	},
-/obj/structure/extinguisher_cabinet/directional/south,
 /obj/effect/turf_decal/trimline/opaque/inteqbrown/filled/corner{
 	color = "#332521"
+	},
+/obj/machinery/firealarm/directional/south{
+	pixel_x = -7
+	},
+/obj/structure/extinguisher_cabinet/directional/south{
+	pixel_x = 6
 	},
 /turf/open/floor/wood/ebony,
 /area/ship/crew/canteen/kitchen)

@@ -239,3 +239,6 @@ MARK: 5.56x45
 
 /obj/item/storage/box/ammo/a762_40/rubber/inteq
 	icon_state = "a762_40box_big-rubbershot_inteq"
+
+/obj/item/ammo_box/magazine/m57_39_sidewinder
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo.dmi'

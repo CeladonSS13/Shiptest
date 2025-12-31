@@ -1660,11 +1660,8 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "kL" = (
-/obj/structure/table/reinforced,
 /obj/effect/turf_decal/corner/opaque/green/mono,
-/obj/machinery/reagentgrinder{
-	pixel_y = 11
-	},
+/obj/machinery/oven,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen/kitchen)
 "kM" = (
@@ -3058,6 +3055,9 @@
 /obj/item/seeds/potato{
 	pixel_x = -1;
 	pixel_y = 4
+	},
+/obj/machinery/reagentgrinder{
+	pixel_y = 11
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen/kitchen)
