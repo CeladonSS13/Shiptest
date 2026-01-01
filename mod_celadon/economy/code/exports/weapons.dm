@@ -6,7 +6,6 @@
 // MARK: Weapon
 
 /datum/export/weapon
-	include_subtypes = FALSE
 
 /datum/export/weapon/baton
 	unit_name = "Stun baton"
@@ -41,52 +40,16 @@
 
 // MARK: INTQ
 
-/datum/export/weapon/commissioner
-	unit_name = "Commissioner Pistol"
-	desc = "modified Commander pistol, adjusted to fit the IRMG's standards and painted in the brown and gold of all IRMG firearms."
-	export_types = list(/obj/item/gun/ballistic/automatic/pistol/challenger/inteq)
-	cost = 75
-
-/datum/export/weapon/pinscher
-	unit_name = "Pinscher Heavy Pistol"
-	desc = "heavy pistol manufactured by Serene Outdoors and modified to fit IRMG's standards. Chambered in .44 Roumain."
-	export_types = list(/obj/item/gun/ballistic/automatic/pistol/m20_auto_elite/inteq)
-	cost = 125
-
-/datum/export/weapon/mastiff
-	unit_name = "Mastiff Shotgun"
-	desc = "An automatic shotgun modified for exclusive use by the IRMG and chambered in 12ga. Comes with 8-round box magazines."
-	export_types = list(/obj/item/gun/ballistic/shotgun/automatic/bulldog/inteq)
-	cost = 400
-
-/datum/export/weapon/mongrel
-	unit_name = "SKM-44v Mongrel SMG"
-	desc = "shortened variant of the SKM rechambered to 10x22mm and painted in the brown-and-gold of Inteq."
-	export_types = list(/obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq)
-	cost = 300
-
-/datum/export/weapon/kingsnake
-	unit_name = "Kingsnake Machinepistol"
-	desc = "Contains an automatic machinepistol chambered in 9x18mm, painted in the brown-and-gold of Inteq."
-	export_types = list(/obj/item/gun/ballistic/automatic/pistol/rattlesnake/inteq)
-	cost = 250
-
-/datum/export/weapon/inteq_skm
-	unit_name = "SKM-44 Rifle"
-	desc = "SKM painted in the brown-and-gold of Inteq. "
-	export_types = list(/obj/item/gun/ballistic/automatic/assault/skm/inteq)
-	cost = 500
-
 /datum/export/weapon/rottweiler
 	unit_name = "KM-05 Rottweiler Squad Automatic Weapon"
-	desc = "Contains an extensively modified belt fed machine gun, built for special IRMG operations. Bulky and cumbersome, this weapon is chambered in the powerful .308 cartridge."
+	desc = "Contains an extensively modified belt fed machine gun, built for special IRMG operations."
 	export_types = list(/obj/item/gun/ballistic/automatic/hmg/rottweiler)
 	cost = 600
 
 /datum/export/weapon/ssg04
 	unit_name = "SsG-04 Designated Marksman Rifle"
 	desc = "high-powered marksman rifle chambered in .308. Painted in the brown-and-gold of Inteq."
-	export_types = list(/obj/item/gun/ballistic/automatic/marksman/f4/inteq)
+	export_types = list(/obj/item/gun/ballistic/automatic/marksman/f4)
 	cost = 350
 
 /datum/export/weapon/horizonx
@@ -169,12 +132,6 @@
 	export_types = list(/obj/item/gun/ballistic/automatic/pistol/challenger)
 	cost = 75
 
-/datum/export/weapon/saber
-	unit_name = "VI Saber SMG"
-	desc = "An experimental ballistic weapon produced by Vigilitas Interstellar."
-	export_types = list(/obj/item/gun/ballistic/automatic/smg/skm_carbine/saber)
-	cost = 250
-
 /datum/export/weapon/vector
 	unit_name = "VI Vector SMG"
 	desc = "Vector PDW produced by Sharplite Defense and chambered in 9x18mm."
@@ -199,31 +156,13 @@
 	unit_name = "Prototype Gauss Rifle"
 	desc = "high-powered prototype armor-piercing gauss rifle."
 	export_types = list(/obj/item/gun/ballistic/automatic/powered/gauss)
-	cost = 350
+	cost = 300
 
 /datum/export/weapon/pistole_c
 	unit_name = "Solar Pistole C"
 	desc = "A powerful solarian 5.56mm pistol, looks classic, is ballistic. Produced by Solar Federation."
 	export_types = list(/obj/item/gun/ballistic/automatic/pistol/solgov)
 	cost = 110
-
-/datum/export/weapon/modelh
-	unit_name = "Model 'H' Gauss Pistol"
-	desc = "compact solarian-produced gauss pistol, chambered in ferromagnetic slugs. Remember to sign your necessary forms upon arrival."
-	export_types = list(/obj/item/gun/ballistic/automatic/powered/gauss/modelh)
-	cost = 200
-
-/datum/export/weapon/gar
-	unit_name = "Solarian 'GAR' Automatic Rifle"
-	desc = "A modern solarian military rifle, chambered in ferromagnetic lances. Not for export."
-	export_types = list(/obj/item/gun/ballistic/automatic/powered/gauss/gar)
-	cost = 500
-
-/datum/export/weapon/claris
-	unit_name = "Claris Gauss Rifle"
-	desc = "high-powered armor-piercing gauss rifle, loaded directly via ferromagnetic pellet speedloaders."
-	export_types = list(/obj/item/gun/ballistic/automatic/powered/gauss/claris)
-	cost = 250
 
 /datum/export/weapon/ssg669
 	unit_name = "SSG-669C Sniper Rifle"
@@ -240,7 +179,7 @@
 /datum/export/weapon/cm82_solfed
 	unit_name = "Model 82 Carbine"
 	desc = "The standard Solarian assault rifle, somewhat outdated, but still accurate, reliable and easy to use. This version was manufactured in the Elysium Republic under license from the Solar Federation for the Elysium Brigade. Chambered in 5.56х42 mm."
-	export_types = list(/obj/item/gun/ballistic/automatic/assault/cm82/solfed)
+	export_types = list(/obj/item/gun/ballistic/automatic/assault/cm82)
 	cost = 500
 
 // MARK: Independent
@@ -281,12 +220,6 @@
 	export_types = list(/obj/item/gun/ballistic/revolver/montagne)
 	cost = 110
 
-/datum/export/weapon/ringneck
-	unit_name = "Ringneck Pistol"
-	desc = "civilian variant of the Ringneck pistol, produced by Scarborough Arms and chambered in 10x22mm."
-	export_types = list(/obj/item/gun/ballistic/automatic/pistol/ringneck/indie)
-	cost = 100
-
 /datum/export/weapon/candors
 	unit_name = "Candor Pistol"
 	desc = "Candor pistol, the trusty sidearm of any spacer, produced by Hunter's Pride and chambered in .45 ACP."
@@ -322,12 +255,6 @@
 	desc = "Hunter's Pride SMG, intended for internal use by hunters and chambered in .44 Roumain."
 	export_types = list(/obj/item/gun/ballistic/automatic/smg/firestorm)
 	cost = 400
-
-/datum/export/weapon/cobra20
-	unit_name = "Cobra-20 SMG"
-	desc = "Civilian variant of the Cobra SMG, manufactured by Scaraborough Arms and chambered in .45"
-	export_types = list(/obj/item/gun/ballistic/automatic/smg/cobra/indie)
-	cost = 300
 
 /datum/export/weapon/skm_carbine
 	unit_name = "SKM-24v Gun"
@@ -475,12 +402,6 @@
 	export_types = list(/obj/item/gun/ballistic/automatic/pistol/asp)
 	cost = 125
 
-/datum/export/weapon/viperrevolver
-	unit_name = "Viper-23 Revolver"
-	desc = "civilian variant of the Viper revolver, chambered in .357 magnum."
-	export_types = list(/obj/item/gun/ballistic/revolver/viper/indie)
-	cost = 150
-
 /datum/export/weapon/a357
 	unit_name = "R-23 'Viper' Revolver"
 	desc = "double-action military variant of the Viper revolver, chambered in .357 magnum."
@@ -516,24 +437,6 @@
 	desc = "high-powered automatic rifle produced by Scarborough Arms and chambered in 5.56 CLIP. This one is a standard variant."
 	export_types = list(/obj/item/gun/ballistic/automatic/assault/hydra)
 	cost = 500
-
-/datum/export/weapon/saw80
-	unit_name = "SAW-80 Squad Automatic Weapon"
-	desc = "Contains one of the rarely-produced SAW-80 Squad Automatic Weapon platforms, exclusively for licensed buyers. Remember, short controlled bursts!"
-	export_types = list(/obj/item/gun/ballistic/automatic/assault/hydra/lmg)
-	cost = 700
-
-/datum/export/weapon/sbr80
-	unit_name = "SBR-80 'Hydra' Designated Marksman Rifle"
-	desc = "high-powered marksman rifle chambered in 5.56 CLIP and produced by Scarborough Arms. A modification of the ever-popular SMR-80 platform."
-	export_types = list(/obj/item/gun/ballistic/automatic/assault/hydra/dmr)
-	cost = 350
-
-/datum/export/weapon/boomslang90
-	unit_name = "Boomslang-90 Designated Marksman Rifle"
-	desc = "civilian variant of the Boomslang Sniper rifle- modified with a 2x scope, rather than a sniper scope. Chambered in the powerful 6.5x57mm CLIP."
-	export_types = list(/obj/item/gun/ballistic/automatic/marksman/boomslang/indie)
-	cost = 350
 
 /datum/export/weapon/boomslang10
 	unit_name = "MSR-90 'Boomslang' Sniper Rifle"
