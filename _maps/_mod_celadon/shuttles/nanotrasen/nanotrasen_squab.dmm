@@ -257,9 +257,12 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo/port)
 "bk" = (
-/obj/structure/table/reinforced,
-/obj/machinery/reagentgrinder,
 /obj/effect/turf_decal/siding/thinplating/light,
+/obj/machinery/oven,
+/obj/item/plate/oven_tray{
+	pixel_x = 0;
+	pixel_y = 11
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "bo" = (
@@ -2272,14 +2275,8 @@
 /turf/open/floor/plasteel/white,
 /area/ship/science)
 "wh" = (
-/obj/structure/table/reinforced,
-/obj/item/cutting_board{
-	pixel_x = 0;
-	pixel_y = 0
-	},
-/obj/item/kitchen/rollingpin,
-/obj/item/melee/knife/butcher,
 /obj/effect/turf_decal/siding/thinplating/light,
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "wE" = (
@@ -2377,6 +2374,20 @@
 	pixel_y = 0;
 	id = "delta2_cafe";
 	name = "window shutters"
+	},
+/obj/item/plate/large,
+/obj/item/plate,
+/obj/item/plate{
+	pixel_x = 0;
+	pixel_y = 2
+	},
+/obj/item/plate{
+	pixel_x = 0;
+	pixel_y = 4
+	},
+/obj/item/plate{
+	pixel_x = 0;
+	pixel_y = 6
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
@@ -2951,6 +2962,7 @@
 /obj/effect/turf_decal/siding/thinplating/light/corner{
 	dir = 4
 	},
+/obj/machinery/dish_drive,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "Du" = (
@@ -3101,7 +3113,12 @@
 	icon_state = "1-4"
 	},
 /obj/structure/table/reinforced,
-/obj/machinery/dish_drive,
+/obj/item/melee/knife/butcher,
+/obj/item/cutting_board{
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/obj/item/kitchen/rollingpin,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "Gj" = (
@@ -3380,6 +3397,10 @@
 /obj/structure/sign/poster/official/focus{
 	pixel_x = -32;
 	pixel_y = 0
+	},
+/obj/machinery/reagentgrinder{
+	pixel_x = -11;
+	pixel_y = 11
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)

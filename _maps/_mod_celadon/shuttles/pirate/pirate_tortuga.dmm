@@ -2185,6 +2185,9 @@
 	pixel_y = 2;
 	pixel_x = -3
 	},
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/canteen)
 "CG" = (
@@ -2541,6 +2544,7 @@
 /obj/item/storage/toolbox/electrical{
 	pixel_x = 4
 	},
+/obj/item/circuitboard/machine/oven,
 /turf/open/floor/plasteel/tech,
 /area/ship/maintenance/port)
 "Hk" = (
@@ -2839,14 +2843,11 @@
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "Lb" = (
-/obj/structure/table,
-/obj/effect/spawner/random/food_or_drink/ration,
-/obj/effect/spawner/random/food_or_drink/ration,
-/obj/effect/spawner/random/food_or_drink/ration,
 /obj/effect/turf_decal/siding/wideplating{
 	dir = 5
 	},
 /obj/machinery/light/directional/north,
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/crew/canteen)
 "Ld" = (
@@ -3953,6 +3954,7 @@
 	},
 /area/ship/maintenance)
 "XM" = (
+/obj/item/plate/oven_tray,
 /obj/structure/table,
 /obj/item/food/nachos{
 	desc = "You're pretty sure these are stolen from an outpost."

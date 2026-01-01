@@ -2324,6 +2324,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/item/circuitboard/machine/oven,
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "nZ" = (
@@ -6012,6 +6013,8 @@
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/plate/oven_tray,
 /obj/item/toy/figure/inteq{
 	pixel_x = -8
 	},
@@ -6019,7 +6022,6 @@
 	pixel_x = 8;
 	pixel_y = 6
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen)
 "IC" = (
