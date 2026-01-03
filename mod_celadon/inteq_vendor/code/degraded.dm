@@ -1,4 +1,4 @@
-#define TURBGENQ 100000
+#define TURBGENQ 200000
 #define TURBGENG 0.5
 #define POWER_TO_THRUST 0.001 // power production to thrust ratio
 
@@ -64,7 +64,7 @@
 	build_path = /obj/machinery/power/shuttle/engine/turbine/degraded
 	req_components = list(
 		/obj/item/stack/cable_coil = 5,
-		/obj/item/stock_parts/capacitor = 4)
+		/obj/item/stock_parts/capacitor = 3)
 
 #undef TURBGENQ
 #undef TURBGENG
