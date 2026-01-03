@@ -207,9 +207,6 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
 	dir = 4
 	},
-/obj/effect/turf_decal/corner/opaque/solgovgold{
-	dir = 9
-	},
 /obj/effect/turf_decal/corner/opaque/solgovblue{
 	dir = 1
 	},
@@ -217,6 +214,9 @@
 	dir = 8;
 	pixel_y = -2;
 	pixel_x = 4
+	},
+/obj/effect/turf_decal/corner/opaque/solgovgold{
+	dir = 8
 	},
 /turf/open/floor/marble/black,
 /area/ship/security/armory)
@@ -376,7 +376,8 @@
 	},
 /obj/machinery/door/airlock/engineering{
 	dir = 4;
-	name = "Engineering"
+	name = "Engineering";
+	req_access_txt = "10"
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/electrical)
@@ -2053,7 +2054,7 @@
 /obj/machinery/door/airlock/solgov{
 	dir = 8;
 	name = "Communication";
-	req_access_txt = "61"
+	req_access_txt = "10"
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/communications)
@@ -2309,7 +2310,7 @@
 "pz" = (
 /obj/structure/catwalk/over,
 /obj/machinery/navbeacon/wayfinding/engineering,
-/turf/open/floor/plasteel/elevatorshaft,
+/turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "pI" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/half{
@@ -3997,7 +3998,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/effect/turf_decal/spline/fancy/transparent/ntblue,
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
 	},
@@ -5684,9 +5684,8 @@
 	dir = 1
 	},
 /obj/machinery/navbeacon/wayfinding/sec,
-/obj/effect/turf_decal/corner/opaque/solgovgold,
 /obj/effect/turf_decal/corner/opaque/solgovgold{
-	dir = 6
+	dir = 4
 	},
 /obj/effect/turf_decal/corner/opaque/solgovblue,
 /turf/open/floor/marble/black,
@@ -5913,9 +5912,6 @@
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 8
 	},
-/obj/structure/chair/handrail{
-	dir = 4
-	},
 /turf/open/floor/marble/white_black_border{
 	dir = 8
 	},
@@ -6117,7 +6113,7 @@
 /obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning,
 /obj/machinery/door/airlock/solgov{
 	name = "Communication";
-	req_access_txt = "61"
+	req_access_txt = "10"
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/communications)
@@ -6412,12 +6408,6 @@
 /obj/effect/decal/fakelattice{
 	color = "#808080"
 	},
-/mob/living/basic/mouse/rat{
-	color = "#666666";
-	name = "Andrey";
-	pixel_y = 2;
-	faction = list("neutral", "playerSolFed")
-	},
 /obj/effect/decal/cleanable/vomit{
 	color = "#666666"
 	},
@@ -6425,6 +6415,11 @@
 	color = "#666666";
 	pixel_y = -4;
 	pixel_x = -13
+	},
+/mob/living/basic/mouse/gray/pet{
+	faction = list("neutral", "playerSolFed");
+	name = "Andrey";
+	color = "#808080"
 	},
 /turf/open/floor/engine/hull/reinforced/interior{
 	color = "#666666"
@@ -7212,6 +7207,10 @@
 /obj/effect/turf_decal/techfloor/corner,
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 4
+	},
+/obj/structure/chair/handrail{
+	dir = 1;
+	pixel_y = -3
 	},
 /turf/open/floor/marble,
 /area/ship/medical)
