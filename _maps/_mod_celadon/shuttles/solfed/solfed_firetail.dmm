@@ -5436,7 +5436,9 @@
 /obj/structure/closet/crate/bin{
 	pixel_y = 15;
 	pixel_x = -11;
-	density = 0
+	density = 0;
+	allow_dense = 0;
+	allow_objects = 0
 	},
 /obj/effect/spawner/random/trash/crushed_can,
 /obj/effect/spawner/random/trash/food_packaging,
