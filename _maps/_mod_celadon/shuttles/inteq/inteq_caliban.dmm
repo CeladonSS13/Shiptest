@@ -1142,6 +1142,9 @@
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 6
 	},
+/obj/machinery/atmospherics/pipe/simple/green/hidden{
+	dir = 4
+	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/engineering/engine)
 "gN" = (
@@ -2571,15 +2574,6 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/hangar)
-"mR" = (
-/obj/effect/turf_decal/corner/opaque/black/mono{
-	icon = 'icons/turf/floors/carpet_black.dmi';
-	icon_state = "carpet_black-255";
-	color = null
-	},
-/obj/effect/turf_decal/siding/thinplating/dark,
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/security)
 "mU" = (
 /obj/effect/turf_decal/techfloor,
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
@@ -2938,6 +2932,12 @@
 /obj/effect/turf_decal/industrial/loading/white,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/medical)
+"oF" = (
+/obj/effect/turf_decal/trimline/opaque/yellow/warning{
+	dir = 4
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external/dark)
 "oG" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/security/weapons_control)
@@ -3660,6 +3660,10 @@
 	},
 /turf/open/floor/carpet/orange,
 /area/ship/crew/dorm/captain)
+"so" = (
+/obj/effect/turf_decal/trimline/opaque/yellow/warning,
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external/dark)
 "sq" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -4043,6 +4047,15 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
+"tJ" = (
+/obj/effect/turf_decal/corner/opaque/black/mono{
+	icon = 'icons/turf/floors/carpet_black.dmi';
+	icon_state = "carpet_black-255";
+	color = null
+	},
+/obj/effect/turf_decal/siding/thinplating/dark,
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/security)
 "tK" = (
 /obj/effect/turf_decal/trimline/opaque/yellow/warning{
 	dir = 5
@@ -4449,7 +4462,14 @@
 /obj/structure/catwalk/over,
 /obj/structure/rack,
 /obj/machinery/light/directional/north,
-/obj/item/storage/box/smart_metal_foam,
+/obj/item/gear_pack/anglegrinder/energy{
+	pixel_x = -9;
+	pixel_y = 0
+	},
+/obj/item/storage/box/smart_metal_foam{
+	pixel_x = 8;
+	pixel_y = 0
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "wp" = (
@@ -4557,7 +4577,6 @@
 	pixel_x = 0;
 	pixel_y = 11
 	},
-/obj/item/gear_pack/anglegrinder/energy,
 /obj/item/areaeditor/shuttle,
 /obj/item/pipe_dispenser{
 	pixel_x = -10;
@@ -4856,6 +4875,12 @@
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plating,
 /area/ship/hangar)
+"xZ" = (
+/obj/effect/turf_decal/trimline/opaque/yellow/warning{
+	dir = 6
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external/dark)
 "yb" = (
 /obj/structure/grille,
 /turf/open/floor/plating/airless,
@@ -5375,7 +5400,7 @@
 /obj/machinery/button/door{
 	dir = 4;
 	id = "Caliban_exhaustion_vent_shutters";
-	name = "Chamber Shutters Control";
+	name = "Chamber Window Shutters Control";
 	pixel_x = -21;
 	pixel_y = -9
 	},
@@ -6357,6 +6382,12 @@
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/crew/dorm/dormtwo)
+"GN" = (
+/obj/effect/turf_decal/trimline/opaque/yellow/warning{
+	dir = 1
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external/dark)
 "GQ" = (
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
 	dir = 5
@@ -7843,6 +7874,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/fore)
+"QL" = (
+/obj/effect/turf_decal/trimline/opaque/yellow/warning{
+	dir = 5
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external/dark)
 "QR" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/borderfloorblack{
@@ -8270,21 +8307,21 @@
 	pixel_y = 25
 	},
 /obj/item/paper/fluff{
-	default_raw_text = "Artificer team: BE CAREFUL. DO NOT RUN THE TURBINE AT THE OUTPOST. IT WILL CAUSE THE HANGAR TO BURN DOWN COMPLETELY. DON'T DO IT AT ALL. <br><br>Guide to turbine launch: <br><br>0. Prepare surplus welding tool (you will sacrifice it), turn it on and throw it into the incinerator chamber before launch. <br><br>1. Turn on 'ChamberMixer' (purple pipes) at 400 KPa at 33%/66% mix. <br><br>2. Turn on 'Exhaustventilationpump' on max KPa. <br><br>3.  Turn on 'burnchamberreturntoexhaustpump'. <br><br>4. Open all valves that you can find (yeah, it will open transfer from scrubber line pipes to exhaustion pipes) and valve from green pipes to red ones. <br><br>5. set up scrubbers to pump out CO2, H2O and N2.  <br><br>6. Launch turbine from console!";
+	default_raw_text = "Команде инженеров: БУДЬТЕ ОСТОРОЖНЫ. НЕ ЗАПУСКАЙТЕ ТУРБИНУ НА АВАНПОСТЕ. ЭТО ПОЛНОСТЬЮ СОЖЖЕТ АНГАР. НЕ ДЕЛАЙТЕ ЭТОГО ВООБЩЕ. <br><br>Руководство по запуску турбины: <br><br>0. Приготовьте сварочный аппарат из запасов (вы его принесёте в жертву), включите его и бросьте в камеру сжигателя перед запуском. <br><br>1. Включите 'ChamberMixer' (фиолетовые трубы) на 400 кПа при смеси 33%/66%. <br><br>2. Включите 'Exhaustventilationpump' на максимальное давление (кПа). <br><br>3. Включите 'burnchamberreturntoexhaustpump'. <br><br>4. Откройте все клапаны, которые сможете найти (да, это откроет переход от труб линии скруббера к выхлопным трубам), а также клапан от зелёных труб к красным. <br><br>5. На 3 минуты настройте скрубберы на откачку CO2, H2O и N2. <br><br>6. Запустите турбины с консолей. Не забудьте сначала переподключить их! <br><br>Теперь вы можете подключать турбины и компьютеры с помощью мультитула.";
 	name = "WARNING";
 	pixel_x = -6;
-	pixel_y = 0
-	},
-/obj/item/paper/fluff{
-	default_raw_text = "Artificer team: Ship is fueled by 3 powerful vents that siphon all air outside. Don't forget to turn on your atmos regeneration system on your ship after lunch!";
-	name = "About Atmos Regeneration System";
-	pixel_x = 9;
 	pixel_y = 0
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/computer/turbine_computer{
 	icon_state = "computer-middle";
 	id = "caliban_middle"
+	},
+/obj/item/paper/fluff{
+	default_raw_text = "Artificer team: Ship is fueled by 3 powerful vents that siphon all air outside. Don't forget to turn on your atmos regeneration system on your ship after lunch!";
+	name = "About Atmos Regeneration System";
+	pixel_x = 9;
+	pixel_y = 0
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/engineering/engine)
@@ -10127,7 +10164,7 @@ sw
 sw
 sw
 sw
-XJ
+GN
 TK
 mX
 CS
@@ -10141,7 +10178,7 @@ UP
 TC
 Rp
 TK
-XJ
+so
 sw
 sw
 sw
@@ -10158,7 +10195,7 @@ sw
 sw
 sw
 yb
-XJ
+GN
 TK
 Ga
 ca
@@ -10172,7 +10209,7 @@ Ic
 VG
 Fe
 TK
-XJ
+so
 yb
 sw
 sw
@@ -10344,7 +10381,7 @@ sw
 sw
 sw
 sw
-XJ
+GN
 TK
 mX
 oi
@@ -10358,7 +10395,7 @@ Tl
 TS
 mK
 TK
-XJ
+so
 sw
 sw
 sw
@@ -10375,7 +10412,7 @@ Pi
 sw
 sw
 sw
-XJ
+GN
 TK
 Gt
 oi
@@ -10389,7 +10426,7 @@ Ic
 TS
 oV
 TK
-XJ
+so
 sw
 sw
 sw
@@ -10839,7 +10876,7 @@ sw
 sw
 rZ
 xo
-mR
+tJ
 Yv
 Vs
 WH
@@ -11086,8 +11123,8 @@ sw
 sw
 sw
 sw
-XJ
-XJ
+QL
+oF
 zL
 zL
 sw
@@ -11103,8 +11140,8 @@ sw
 sw
 sy
 sy
-XJ
-XJ
+oF
+xZ
 sw
 vE
 sw

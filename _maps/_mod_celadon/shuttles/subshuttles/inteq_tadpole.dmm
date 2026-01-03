@@ -95,6 +95,7 @@
 	layer = 2.031;
 	dir = 1
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/bridge)
 "f" = (
@@ -324,6 +325,7 @@
 	layer = 2.031;
 	dir = 1
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/bridge)
 "z" = (
@@ -331,7 +333,6 @@
 /obj/structure/cable{
 	icon_state = "0-1"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
@@ -344,7 +345,6 @@
 /obj/machinery/door/poddoor/preopen{
 	id = "Caliban_subshuttle_starboard"
 	},
-/obj/structure/holosign/barrier/atmos,
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/structure/sign/plaques{
 	desc = "A holographic sign of STAND CLEAR.but doing so will destroy it.";
@@ -364,6 +364,8 @@
 	pixel_y = -35;
 	layer = 2.031
 	},
+/obj/machinery/atmospherics/components/binary/valve/layer2,
+/obj/machinery/door/firedoor,
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/bridge)
 "C" = (
@@ -388,7 +390,6 @@
 /area/ship/bridge)
 "F" = (
 /obj/effect/turf_decal/industrial/warning/fulltile,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -404,7 +405,6 @@
 /obj/machinery/door/poddoor/preopen{
 	id = "Caliban_subshuttle_starboard"
 	},
-/obj/structure/holosign/barrier/atmos,
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/structure/sign/plaques{
 	desc = "A holographic sign of STAND CLEAR.but doing so will destroy it.";
@@ -424,6 +424,8 @@
 	pixel_y = -35;
 	layer = 2.031
 	},
+/obj/machinery/atmospherics/components/binary/valve/layer4,
+/obj/machinery/door/firedoor,
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/bridge)
 "G" = (
