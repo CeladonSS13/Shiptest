@@ -4,6 +4,9 @@
 	icon_state = "pad-idle"
 	light_color = COLOR_BRIGHT_ORANGE
 
+	resistance_flags = INDESTRUCTIBLE
+	flags_1 = NODECONSTRUCT_1
+
 /obj/machinery/mission_pad/proc/get_other_atoms()
 	. = list()
 	for(var/atom/movable/AM in get_turf(src))
@@ -22,6 +25,9 @@
 	var/datum/weakref/pad_ref
 	var/obj/item/card/id/inserted_scan_id
 	COOLDOWN_DECLARE(dibs_cooldown)
+
+	resistance_flags = INDESTRUCTIBLE
+	flags_1 = NODECONSTRUCT_1
 
 /obj/machinery/computer/mission/LateInitialize()
 	. = ..()
