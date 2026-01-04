@@ -149,7 +149,9 @@
 	active_power_cost = MODULE_CHARGE_DRAIN_LOW
 	incompatible_modules = list(/obj/item/mod/module/flashlight)
 	cooldown_time = 0.5 SECONDS
-	overlay_state_inactive = "module_light"
+	// [CELADON-REMOVE] - CELADON_MODSUITS - я не люблю оверлеи фонариков. Они превращают все синдириги в очкариков
+	// overlay_state_inactive = "module_light"
+	// [/CELADON-REMOVE]
 	light_system = MOVABLE_LIGHT_DIRECTIONAL
 	light_color = COLOR_WHITE
 	light_range = 4

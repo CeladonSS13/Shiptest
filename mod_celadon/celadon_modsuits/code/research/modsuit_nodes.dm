@@ -80,6 +80,7 @@
 		"mod_t_ray",
 		"mod_magboot",
 		"mod_mister_atmos",
+		"mod_rad_protection",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 
@@ -116,7 +117,6 @@
 	design_ids = list(
 		"mod_plating_atmospheric",
 		"mod_jetpack",
-		"mod_emp_shield",
 		"mod_storage_expanded",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7500)
@@ -129,5 +129,36 @@
 	design_ids = list(
 		"mod_antigrav",
 		"mod_teleporter",
+		"mod_kinesis",
+	)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
+
+/datum/techweb_node/mod_armor_components
+	id = "mod_millitary"
+	display_name = "MOD millitary-grade power armor components"
+	description = "WARNING: it requires faction-locked unfinished plates to produce anything meaningful. Cutting-Edge millitary-grade biomimetic modular power armor components right into your protolathe! Core technologies integrated into this component include: Ultra-compact, liquid-cooled, reinforced serial elasticity actuators. Biomimetic Programmable metamaterial mechanics. Electroactive polymers."
+	prereq_ids = list("mod_science", "mod_engi_adv", "anomaly_research", "mod_security")
+	design_ids = list(
+		"mod_armor_components",
+	)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 20000)
+
+/datum/techweb_node/mod_emp_shield
+	id = "mod_emp_shield"
+	display_name = "MOD EMP shield"
+	description = "Finally, the main bane of MODsuits has been solved! Somewhat solved..."
+	prereq_ids = list("mod_science", "mod_engi_adv", "anomaly_research", "mod_security")
+	design_ids = list(
+		"mod_emp_shield",
+	)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
+
+/datum/techweb_node/mod_millitary_stealth
+	id = "mod_millitary_stealth"
+	display_name = "MOD millitary-grade stealth module"
+	description = "WARNING: This one requires special millitary capacitor to be completed. High tech, high trick."
+	prereq_ids = list("mod_science", "mod_engi_adv", "anomaly_research", "mod_security")
+	design_ids = list(
+		"mod_millitary_stealth",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)

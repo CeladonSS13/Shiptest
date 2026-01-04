@@ -416,6 +416,12 @@
 	if(!active || !wearer)
 		return
 	to_chat(wearer, span_notice("[severity > 1 ? "Light" : "Strong"] electromagnetic pulse detected!"))
+	// [CELADON-ADD] - CELADON_MODSUITS - Добавляем замедление при слабом ЕМП
+	if(!(. & EMP_PROTECT_CONTENTS) && !wearer.has_movespeed_modifier(/datum/movespeed_modifier/shove))
+		to_chat(wearer, span_danger("The [src] stiffens and its servos weaken, slowing you down!"))
+		wearer.add_movespeed_modifier(/datum/movespeed_modifier/shove) //  maybe define a slightly more severe/longer slowdown for this
+		addtimer(CALLBACK(wearer, TYPE_PROC_REF(/mob/living/carbon, clear_shove_slowdown)), SHOVE_SLOWDOWN_LENGTH * 2) // 6 секунд
+	// [/CELADON-ADD] - CELADON_MODSUITS
 	if(. & EMP_PROTECT_CONTENTS)
 		return
 	selected_module?.on_deactivation(display_message = TRUE)
@@ -448,6 +454,7 @@
 
 /obj/item/mod/control/update_icon_state()
 	item_state = "[skin]-control[active ? "-sealed" : ""]"
+	icon_state = "[skin]-control[active ? "-sealed" : ""]" // [CELADON-ADD] - CELADON_MODSUITS - Icon_state fix
 	return ..()
 
 /obj/item/mod/control/proc/set_wearer(mob/user)
@@ -640,12 +647,12 @@
 		alternate_worn_layer = used_skin[CONTROL_LAYER]
 	var/list/skin_updating = mod_parts + src
 	for(var/obj/item/part as anything in skin_updating)
-		// [CELADON-EDIT] - inteq_vendor - REASSIGNING ICONS DIRECTORY
+		// [CELADON-EDIT] - CELADON_MODSUITS - REASSIGNING ICONS DIRECTORY
 		//part.icon = used_skin[MOD_ICON_OVERRIDE] || 'icons/obj/clothing/modsuit/mod_clothing.dmi' // [CELADON-EDIT] - ORIGINAL
 		//part.mob_overlay_icon = used_skin[MOD_WORN_ICON_OVERRIDE] || 'icons/mob/clothing/modsuit/mod_clothing.dmi' // [CELADON-EDIT] - ORIGINAL
 		part.icon = used_skin[MOD_ICON_OVERRIDE] || 'mod_celadon/_storage_icons/icons/items/clothing/mod_suit/mod_clothing.dmi'
 		part.mob_overlay_icon = used_skin[MOD_WORN_ICON_OVERRIDE] || 'mod_celadon/_storage_icons/icons/items/clothing/mod_suit/overlay/mod_clothing.dmi'
-		// [CELADON-EDIT]
+		// [/CELADON-EDIT]
 
 		part.icon_state = "[skin]-[part.base_icon_state]"
 	for(var/obj/item/clothing/part as anything in mod_parts)

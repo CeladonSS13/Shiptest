@@ -188,6 +188,9 @@
 	to_chat(user,span_notice("You remove the cell"))
 	playsound(mod, 'sound/machines/click.ogg', 50, TRUE, SILENCED_SOUND_EXTRARANGE)
 	var/obj/item/cell_to_move = cell
+	// [CELADON-FIX] - CELADON_MODSUITS - Теперь батарейки обновляют свое состояние
+	cell_to_move.update_appearance()
+	// [/CELADON-FIX]
 	cell_to_move.forceMove(drop_location())
 	user.put_in_hands(cell_to_move)
 	mod.update_charge_alert()

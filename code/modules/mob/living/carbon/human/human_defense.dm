@@ -63,6 +63,11 @@
 			if(!(martial_art_result == BULLET_ACT_HIT))
 				return martial_art_result
 
+	//[CELADON-FIX] - CELADON_MODSUITS - Actually adding signals, officials ported with MODs
+	if(SEND_SIGNAL(src, COMSIG_HUMAN_CHECK_SHIELDS, src, P) & SHIELD_BLOCK)
+		return BULLET_ACT_FORCE_PIERCE
+	//[/CELADON-FIX]
+
 	if(!(P.original == src && P.firer == src)) //can't block or reflect when shooting yourself
 		if(P.reflectable & REFLECT_NORMAL)
 			if(check_reflect(def_zone)) // Checks if you've passed a reflection% check
@@ -174,7 +179,10 @@
 		throwpower = I.throwforce
 		if(I.thrownby == WEAKREF(src)) //No throwing stuff at yourself to trigger hit reactions
 			return ..()
-	if(check_shields(AM, throwpower, "\the [AM.name]", THROWN_PROJECTILE_ATTACK))
+	//[CELADON-EDIT] - CELADON_MODSUITS - Actually adding signals for energy shield
+	//if(check_shields(AM, throwpower, "\the [AM.name]", THROWN_PROJECTILE_ATTACK))
+	if(check_shields(AM, throwpower, "\the [AM.name]", THROWN_PROJECTILE_ATTACK) || (SEND_SIGNAL(src, COMSIG_HUMAN_CHECK_SHIELDS, src, AM) & SHIELD_BLOCK))
+	//[/CELADON-EDIT]
 		hitpush = FALSE
 		skipcatch = TRUE
 		blocked = TRUE

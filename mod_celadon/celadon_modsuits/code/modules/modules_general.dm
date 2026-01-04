@@ -1,3 +1,7 @@
+/obj/item/mod/module/jetpack/advanced
+	assist_drain_increase = 150
+
+// MARK: IQ FLASHLIGHT
 /obj/item/mod/module/flashlight_inteq
 	name = "InteQ MOD flashlight module"
 	desc = "A single, yet powerful flashlight installed on the right side of the helmet."
@@ -13,6 +17,7 @@
 	light_range = 5
 	light_power = 1
 	light_on = FALSE
+	allowed_inactive = TRUE
 	var/base_power = DEFAULT_CHARGE_DRAIN * 0.1
 
 /obj/item/mod/module/flashlight_inteq/on_activation()
