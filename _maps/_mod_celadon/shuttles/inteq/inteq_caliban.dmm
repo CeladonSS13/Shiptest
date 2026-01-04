@@ -883,7 +883,7 @@
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = 10;
-	pixel_y = -17
+	pixel_y = -15
 	},
 /obj/machinery/firealarm/directional/south{
 	pixel_x = -15;
@@ -943,12 +943,12 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
-/obj/machinery/computer/helm/viewscreen/directional/south,
 /obj/effect/turf_decal/corner/transparent/black/mono,
 /obj/effect/turf_decal/industrial/fire{
 	dir = 1
 	},
 /obj/effect/turf_decal/techfloor,
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/pod,
 /area/ship/security/weapons_control)
 "fK" = (
@@ -1491,18 +1491,19 @@
 /obj/structure/sign/warning/electricshock{
 	pixel_y = -20
 	},
-/obj/effect/decal/fakelattice{
-	name = "low platform";
-	desc = "A small platform that connects to the catwolk.";
-	icon = 'icons/turf/decals/decals.dmi';
-	icon_state = "techfloor_edges";
-	dir = 8;
-	layer = 2.460;
-	pixel_x = 16
-	},
 /obj/effect/turf_decal/trimline/opaque/vired/warning{
 	dir = 8;
 	pixel_x = -4
+	},
+/obj/structure/fluff{
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "techfloor_edges";
+	name = "low platform";
+	layer = 2.460;
+	desc = "A small platform that connects to the catwolk.";
+	dir = 8;
+	pixel_x = 16;
+	pixel_y = 0
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -1893,17 +1894,18 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
-/obj/effect/decal/fakelattice{
-	name = "low platform";
-	desc = "A small platform that connects to the catwolk.";
-	icon = 'icons/turf/decals/decals.dmi';
-	icon_state = "techfloor_edges";
-	dir = 8;
-	layer = 2.460;
-	pixel_x = 16
-	},
 /obj/effect/turf_decal/trimline/opaque/vired/warning{
 	dir = 8
+	},
+/obj/structure/fluff{
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "techfloor_edges";
+	name = "low platform";
+	layer = 2.460;
+	desc = "A small platform that connects to the catwolk.";
+	dir = 8;
+	pixel_x = 16;
+	pixel_y = 0
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -4130,7 +4132,7 @@
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = 10;
-	pixel_y = -17
+	pixel_y = -15
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/medical)
@@ -4633,12 +4635,14 @@
 	dir = 4;
 	layer = 2.9
 	},
-/obj/machinery/computer{
-	desc = "Some kind of machine. Used to be a railgun control console. Now it only shows infinite reload timer, gone negative long ago. Wonder why they left it here.";
+/obj/machinery/computer/helm/viewscreen/directional/north{
 	icon = 'icons/obj/machines/particle_accelerator.dmi';
 	icon_state = "control_boxp";
 	name = "TAC-COM IFF computer";
-	layer = 2.99
+	desc = "Some kind of machine. Used to be a railgun control console. Now it only shows infinite reload timer, gone negative long ago. Wonder why they left it here.";
+	pixel_x = 0;
+	pixel_y = -6;
+	icon_screen = "generic"
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/weapons_control)
@@ -5873,7 +5877,7 @@
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = 10;
-	pixel_y = -17
+	pixel_y = -15
 	},
 /turf/open/floor/plating,
 /area/ship/hangar)
@@ -6229,20 +6233,21 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor/border_only,
-/obj/effect/decal/fakelattice{
-	name = "low platform";
-	desc = "A small platform that connects to the catwolk.";
-	icon = 'icons/turf/decals/decals.dmi';
-	icon_state = "techfloor_edges";
-	dir = 8;
-	layer = 2.460;
-	pixel_x = 16
-	},
 /obj/effect/turf_decal/trimline/opaque/vired/warning{
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/opaque/vired/warning{
 	layer = 2.462
+	},
+/obj/structure/fluff{
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "techfloor_edges";
+	name = "low platform";
+	layer = 2.460;
+	desc = "A small platform that connects to the catwolk.";
+	dir = 8;
+	pixel_x = 16;
+	pixel_y = 0
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -8524,15 +8529,6 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/fakelattice{
-	name = "low platform";
-	desc = "A small platform that connects to the catwolk.";
-	icon = 'icons/turf/decals/decals.dmi';
-	icon_state = "techfloor_edges";
-	dir = 8;
-	layer = 2.460;
-	pixel_x = 16
-	},
 /obj/structure/railing{
 	dir = 1;
 	layer = 2.9
@@ -8548,6 +8544,16 @@
 	dir = 1;
 	pixel_x = -4;
 	layer = 2.061
+	},
+/obj/structure/fluff{
+	icon = 'icons/turf/decals/decals.dmi';
+	icon_state = "techfloor_edges";
+	name = "low platform";
+	layer = 2.460;
+	desc = "A small platform that connects to the catwolk.";
+	dir = 8;
+	pixel_x = 16;
+	pixel_y = 0
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
