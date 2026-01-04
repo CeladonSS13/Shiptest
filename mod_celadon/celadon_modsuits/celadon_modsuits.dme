@@ -3,9 +3,24 @@
 
 #include "celadon_modsuits.dm"
 
-#include "code/mechfabricator_designs.dm"
-#include "code/modsuit_nodes.dm"
-#include "code/modsuit.dm"
-#include "code/modsuit_modules.dm"
+#include "code/cargo/cargo_modsuit.dm"
+#include "code/cargo/independent_cargo_modsuits.dm"
+
+#include "code/modules/millocked_modules.dm"
+#include "code/modules/module_kinesis.dm"
+#include "code/modules/modules_antag.dm"
+#include "code/modules/modsuit_modules.dm"
+#include "code/modules/modules_engineering.dm"
+#include "code/modules/modules_general.dm"
+
+#include "code/research/mechfabricator_designs.dm"
+#include "code/research/mod_designs.dm"
+#include "code/research/modsuit_nodes.dm"
+#include "code/mod_clothes.dm"
+#include "code/mod_construction.dm"
+#include "code/mod_theme.dm"
+#include "code/mod_Types.dm"
+
+// #include "code/module_kinesisshit.dm"
 
 #endif

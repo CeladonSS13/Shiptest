@@ -25,7 +25,8 @@ ID мода: CELADON_MODSUITS
 
 Мод добавляет всё связанное с МОДсьютами в общий доступ:
 Чертежи модулей и самих костюмов в РнД
-Ядра в карго
+Изменение характеристик модсьютов
+Изменение модулей модсьютов
 
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
@@ -43,6 +44,32 @@ ID мода: CELADON_MODSUITS
 -->
 
 ### Изменения *кор кода*
+
+- `code\__DEFINES\mod.dm` : `DEFAULT_CHARGE_DRAIN`
+
+**Моды**
+- `code\modules\mod\mod_control.dm` : `/obj/item/mod/control/emp_act(severity)`, `/obj/item/mod/control/proc/set_mod_skin`, `/obj/item/mod/control/update_icon_state`
+Добавляем больше эффектов для ЭМИ и фиксим неработающие контроли модов. Изменяем иконки
+- `code\modules\mod\mod_core.dm` : `/obj/item/mod/core/standard/proc/mod_uninstall_cell`
+Добавляем обновление батареек при вытаскивании. 
+- `code\modules\mod\modules\mod_construction.dm` `/obj/item/mod/construction/shell/attackby`
+Добавляем проверку на plating/locked
+- `code\modules\mod\mod_theme.dm` : Все темы. Добавлена поддержка дыхания без маски.
+- `code\modules\mod\mod_types.dm` : Все темы. Удалена ЭМИ защита, мелкие правки баланса с батарейками у элитки.
+
+**Модули**
+- `code/modules/mob/living/carbon/human/species` : `/datum/species/proc/handle_mutant_bodyparts`
+- `code\modules\mod\modules\modules_engineering.dm` : `/obj/item/mod/module/tether/on_use()`
+- `code\modules\mod\modules\modules_science.dm` : `/obj/item/mod/module/anomaly_locked/antigrav`, `var/incompatible_modules`, `var/teleport_time`, `var/cooldown_time`, `var/use_power_cost`
+- `code/modules/mod/modules/modules_general.dm` : , `overlay_state_inactive`
+- `code\modules\mod\modules\modules_antag.dm`: `/obj/item/mod/module/armor_booster`, `/obj/item/mod/module/armor_booster/on_activation()`, `var/drain_slowdown_affected`, `drain_per_step`, `var/drain`,`/obj/item/mod/module/armor_assist/proc/drain_on_step`
+- `code\modules\mod\modules\modules_science.dm`: `/obj/item/mod/module/anomaly_locked/teleporter`, `/obj/item/mod/module/anomaly_locked/antigrav`
+**Сигналы и другие вещи**
+- `code\modules\mob\living\carbon\human\human_defense.dm` : `/mob/living/carbon/human/hitby`, `/mob/living/carbon/human/bullet_act`
+Добавляем отправку сигналов для работы энергощита и армор бустера. Всё ещё не работает
+- `code\game\objects\items.dm` : `/obj/item/proc/equipped`
+- `code\modules\mob\inventory.dm` : `/mob/proc/doUnEquip`
+Добавляем отправку сигналов для работы магнетик харнесса. Это работает.
 
 - `code\game\mecha\mech_fabricator.dm`: `var/list/part_sets`
 <!--
@@ -81,7 +108,14 @@ ID мода: CELADON_MODSUITS
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- Отсутствуют
+- `mod_celadon\_storage_icons\icons\items\clothing\mod_suit\overlay\mod_clothing.dmi`
+- `mod_celadon\_storage_icons\icons\items\clothing\mod_suit\overlay\mod_modules.dmi`
+
+- `mod_celadon\_storage_icons\icons\items\clothing\mod_suit\mod_clothing.dmi`
+- `mod_celadon\_storage_icons\icons\items\clothing\mod_suit\mod_modules.dmi`
+- `mod_celadon\_storage_icons\icons\items\clothing\mod_suit\mod_construction.dmi`
+- `mod_celadon\_storage_icons\icons\assets\effects.dmi`
+- `mod_celadon\_storage_icons\icons\items\weapons\grenade.dmi`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.

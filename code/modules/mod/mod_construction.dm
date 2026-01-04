@@ -225,6 +225,14 @@
 		if(SCREWED_ASSEMBLY_STEP)
 			if(istype(part, /obj/item/mod/construction/plating)) //Construct
 				var/obj/item/mod/construction/plating/external_plating = part
+				//[CELADON-ADD] - CELADON_MODSUITS
+				// I'm sorry. Я не умею кодить, увы
+				if(istype(part, /obj/item/mod/construction/plating/locked))
+					var/obj/item/mod/construction/plating/locked/locked_plating = part
+					if(!locked_plating.finished)
+						to_chat(user, span_notice("Нужно завершить сборку плит с помощью Modular power armor components."))
+						return
+				//[/CELADON-ADD] - CELADON_MODSUITS
 				if(!user.transferItemToLoc(part, src))
 					return
 				playsound(src, 'sound/machines/click.ogg', 30, TRUE)

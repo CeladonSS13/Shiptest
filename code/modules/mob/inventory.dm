@@ -333,6 +333,9 @@
 			else
 				I.forceMove(newloc)
 		I.dropped(src, silent)
+	//[CELADON-FIX] - CELADON_MODSUITS - fixing MOD magnetic harness.
+	SEND_SIGNAL(src, COMSIG_MOB_UNEQUIPPED_ITEM, I, force, newloc, no_move, invdrop, silent)
+	//[/CELADON-FIX]
 	return TRUE
 
 //Outdated but still in use apparently. This should at least be a human proc.

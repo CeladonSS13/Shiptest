@@ -11,7 +11,10 @@
 	module_type = MODULE_TOGGLE
 	active_power_cost = DEFAULT_CHARGE_DRAIN * 0.3
 	removable = TRUE
-	incompatible_modules = list(/obj/item/mod/module/armor_booster, /obj/item/mod/module/welding)
+	// [CELADON-EDIT] - CELADON_MODSUITS - Добавляем модуль стелса в список. По-хорошему стоит welding убрать, убрать полностью у армор бустера защиту от флеша...
+	//incompatible_modules = list(/obj/item/mod/module/armor_booster, /obj/item/mod/module/welding)
+	incompatible_modules = list(/obj/item/mod/module/armor_booster, /obj/item/mod/module/welding, /obj/item/mod/module/stealth/millitary)
+	// [/CELADON-EDIT] - CELADON_MODSUITS
 	cooldown_time = 0.5 SECONDS
 	overlay_state_inactive = "module_armorbooster_off"
 	overlay_state_active = "module_armorbooster_on"
@@ -26,9 +29,18 @@
 	var/list/armor_values = list("melee" = 25, "bullet" = 30, "laser" = 15, "energy" = 15)
 	/// List of parts of the suit that are spaceproofed, for giving them back the pressure protection.
 	var/list/spaceproofed = list()
+	// [CELADON-ADD] - CELADON_MODSUITS
+	var/anti_flash = FALSE
+	assist_drain_increase = 150
+	use_power_cost = DEFAULT_CHARGE_DRAIN*0.1 // Попытка позже сделать эту штуку потребляющую энергию при попадании.
+	// [/CELADON-ADD] - CELADON_MODSUITS
 
 /obj/item/mod/module/armor_booster/on_suit_activation()
-	mod.helmet.flash_protect = FLASH_PROTECTION_WELDER
+	// [CELADON-EDIT] - CELADON_MODSUITS
+	//mod.helmet.flash_protect = FLASH_PROTECTION_WELDER
+	if(anti_flash)
+		mod.helmet.flash_protect = FLASH_PROTECTION_WELDER
+	// [/CELADON-EDIT]
 
 /obj/item/mod/module/armor_booster/on_suit_deactivation(deleting = FALSE)
 	if(deleting)
@@ -40,7 +52,13 @@
 	if(!.)
 		return
 	playsound(src, 'sound/mecha/mechmove03.ogg', 25, TRUE, SHORT_RANGE_SOUND_EXTRARANGE)
-	actual_speed_added = max(0, min(mod.slowdown_active, speed_added))
+	// [CELADON-EDIT] - CELADON_MODSUITS
+	//actual_speed_added = max(0, min(mod.slowdown_active, speed_added))
+	if(speed_added < 0) // Добавлена поддержка замедления
+		actual_speed_added = speed_added
+	else
+		actual_speed_added = max(0, min(mod.slowdown_active, speed_added))
+	// [/CELADON-EDIT]
 	mod.slowdown -= actual_speed_added
 	mod.wearer.update_equipment_speed_mods()
 	var/list/parts = mod.mod_parts + mod
@@ -89,10 +107,19 @@
 	removable = TRUE
 	incompatible_modules = list(/obj/item/mod/module/armor_assist)
 	cooldown_time = 0.5 SECONDS
-	overlay_state_inactive = "module_armorbooster_off"
-	overlay_state_active = "module_armorbooster_on"
+	// [CELADON-EDIT] - CELADON_MODSUITS - добавлена поддержка отдельного спрайта для армор ассиста
+	// overlay_state_inactive = "module_armorbooster_off"
+	// overlay_state_active = "module_armorbooster_on"
+	overlay_state_inactive = "module_armorassist_off"
+	overlay_state_active = "module_armorassist_on"
+	// [/CELADON-EDIT] - CELADON_MODSUITS
 	use_mod_colors = TRUE
-	var/drain_per_step = 100
+	// var/drain_per_step = 100
+	var/drain_per_step = 50 // [CELADON-EDIT] - CELADON_MODSUITS
+	// [CELADON-ADD] - CELADON_MODSUITS
+	/// Зависит ли наше потребление от замедления
+	var/drain_slowdown_affected = TRUE
+	// [/CELADON-ADD] - CELADON_MODSUITS
 
 /obj/item/mod/module/armor_assist/on_activation()
 	. = ..()
@@ -113,7 +140,17 @@
 
 /obj/item/mod/module/armor_assist/proc/drain_on_step(mob/user)
 	SIGNAL_HANDLER
-	drain_power(drain_per_step, TRUE)
+	// [CELADON-EDIT] - CELADON_MODSUITS - добавлена поддержка вариативности потребления.
+	//drain_power(drain_per_step, TRUE)
+	var/true_drain_per_step = drain_per_step
+	if(drain_slowdown_affected)
+		true_drain_per_step = (mod.slowdown_active+mod.slowdown+1)*true_drain_per_step
+	for(var/obj/item/mod/module/module as anything in mod.modules)
+		if(module.active)
+			true_drain_per_step = module.assist_drain_increase + true_drain_per_step
+			break
+	drain_power(true_drain_per_step, TRUE)
+	// [/CELADON-EDIT] - CELADON_MODSUITS
 
 /obj/item/mod/module/armor_assist/generate_worn_overlay(mutable_appearance/standing)
 	overlay_state_inactive = "[initial(overlay_state_inactive)]-[mod.skin]"

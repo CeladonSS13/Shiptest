@@ -29,6 +29,7 @@
 		/obj/item/mod/module/flashlight,
 		/obj/item/mod/module/magboot,
 		/obj/item/mod/module/toolset,
+		/obj/item/mod/module/rad_protection, // [CELADON-ADD] - CELADON_MODSUITS
 		/obj/item/mod/module/visor/meson
 	)
 
@@ -51,6 +52,7 @@
 		/obj/item/mod/module/flashlight,
 		/obj/item/mod/module/jetpack,
 		/obj/item/mod/module/thermal_regulator,
+		/obj/item/mod/module/rad_protection, // [CELADON-ADD] - CELADON_MODSUITS
 		/obj/item/mod/module/toolset
 	)
 
@@ -147,21 +149,26 @@
 	applied_cell = /obj/item/stock_parts/cell/super
 	initial_modules = list(
 		/obj/item/mod/module/storage,
-		/obj/item/mod/module/emp_shield,
+		// /obj/item/mod/module/emp_shield, // [CELADON-REMOVE] - CELADON_MODSUITS // ЭМИ сложнее получить
 		/obj/item/mod/module/magnetic_harness,
 		/obj/item/mod/module/jetpack,
 		/obj/item/mod/module/flashlight,
+		/obj/item/mod/module/armor_assist,// [CELADON-ADD] - CELADON_MODSUITS
 	)
 
 /obj/item/mod/control/pre_equipped/elite
 	theme = /datum/mod_theme/elite
-	applied_cell = /obj/item/stock_parts/cell/bluespace
+	// [CELADON-EDIT] - CELADON_MODSUITS
+	//applied_cell = /obj/item/stock_parts/cell/bluespace
+	applied_cell = /obj/item/stock_parts/cell/super
+	// [/CELADON-EDIT]
 	initial_modules = list(
 		/obj/item/mod/module/storage/syndicate,
-		/obj/item/mod/module/emp_shield,
+		// /obj/item/mod/module/emp_shield, // [CELADON-REMOVE] - CELADON_MODSUITS // ЭМИ сложнее получить
 		/obj/item/mod/module/magnetic_harness,
 		/obj/item/mod/module/jetpack/advanced,
 		/obj/item/mod/module/flashlight,
+		/obj/item/mod/module/armor_assist,// [CELADON-ADD] - CELADON_MODSUITS
 	)
 
 /obj/item/mod/control/pre_equipped/ninja
@@ -194,7 +201,7 @@
 	initial_modules = list(
 		/obj/item/mod/module/storage/large_capacity,
 		/obj/item/mod/module/welding,
-		/obj/item/mod/module/emp_shield,
+		// /obj/item/mod/module/emp_shield, // [CELADON-REMOVE] - CELADON_MODSUITS // ЭМИ сложнее получить
 		/obj/item/mod/module/magnetic_harness,
 		/obj/item/mod/module/flashlight,
 	)
@@ -239,7 +246,7 @@
 	initial_modules = list(
 		/obj/item/mod/module/storage/bluespace,
 		/obj/item/mod/module/welding,
-		/obj/item/mod/module/emp_shield/advanced,
+		// /obj/item/mod/module/emp_shield/advanced, // [CELADON-REMOVE] - CELADON_MODSUITS // ЭМИ сложнее получить
 		/obj/item/mod/module/magnetic_harness,
 		/obj/item/mod/module/jetpack,
 	)
@@ -252,7 +259,7 @@
 		/obj/item/mod/module/storage/bluespace,
 		/obj/item/mod/module/hat_stabilizer,
 		/obj/item/mod/module/magnetic_harness,
-		/obj/item/mod/module/emp_shield/advanced,
+		// /obj/item/mod/module/emp_shield/advanced, // [CELADON-REMOVE] - CELADON_MODSUITS // ЭМИ сложнее получить
 	)
 
 /*obj/item/mod/control/pre_equipped/chrono

@@ -91,10 +91,12 @@
 	cooldown_time = 1.5 SECONDS
 
 /obj/item/mod/module/tether/on_use()
-	if(mod.wearer.has_gravity(get_turf(src)))
-		to_chat(mod.wearer,span_warning("The tether flops uselessly to the ground in the gravity!"))
-		playsound(src, 'sound/weapons/gun/general/dry_fire.ogg', 25, TRUE)
-		return FALSE
+	// [CELADON-REMOVE] - CELADON_MODSUITS - Крюк-кошка теперь полезна на планетах. Зачем? Потому что весело!
+	// if(mod.wearer.has_gravity(get_turf(src)))
+	// 	to_chat(mod.wearer,span_warning("The tether flops uselessly to the ground in the gravity!"))
+	// 	playsound(src, 'sound/weapons/gun/general/dry_fire.ogg', 25, TRUE)
+	// 	return FALSE
+	// [/CELADON-REMOVE]
 	return ..()
 
 /obj/item/mod/module/tether/on_select_use(atom/target)
