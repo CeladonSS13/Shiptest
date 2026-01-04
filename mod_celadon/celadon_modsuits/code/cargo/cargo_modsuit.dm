@@ -49,7 +49,7 @@
 /datum/supply_pack/faction/inteq/modsuits/modules/dash
 	name = "MOD D.A.S.H. Module"
 	desc = "Contains an advanced movement module that launches MOD operator forward. Is usually used by InteQ elite operatives."
-	cost = 4000
+	cost = 2500 // Такая же логика, что и у армор ассиста. Только в отличие от армор ассиста, у интеков изначально щит
 	contains = list(/obj/item/mod/module/dash)
 
 /datum/supply_pack/faction/inteq/modsuits/modules/mirage

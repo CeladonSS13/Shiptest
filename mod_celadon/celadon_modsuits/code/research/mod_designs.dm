@@ -35,17 +35,17 @@
 	name = "design disk - Responsory MOD plating"
 	desc = "A design disk containing secret data for Responsory MOD plating."
 	color = "#5ae8d9"
-	starting_blueprints = list(/datum/design/mod_plating/syndicate_elite)
+	starting_blueprints = list(/datum/design/mod_plating/responsory)
 
 // MARK: SOLFED
 /obj/item/disk/design_disk/mod/plating/storch
 	name = "design disk - Storch-einheiten MOD plating"
 	desc = "A design disk containing secret data for Storch-einheiten MOD plating."
 	color = "#0900c1"
-	starting_blueprints = list(/datum/design/mod_plating/syndicate_elite)
+	starting_blueprints = list(/datum/design/mod_plating/storch)
 
 /obj/item/disk/design_disk/mod/plating/falke
 	name = "design disk - Falke-einheiten MOD plating"
 	desc = "A design disk containing secret data for Falke-einheiten MOD plating."
 	color = "#0900c1"
-	starting_blueprints = list(/datum/design/mod_plating/syndicate_elite)
+	starting_blueprints = list(/datum/design/mod_plating/falke)
