@@ -172,7 +172,7 @@
 
 /datum/outfit/job/cel/inteq/security/honorguard
 	name = "IQ - Honor Guard"
-	id_assignment = "Guardsman"
+	id_assignment = "Honor Guard"
 
 	uniform = /obj/item/clothing/under/syndicate/inteq
 	belt = /obj/item/storage/belt/military/assault

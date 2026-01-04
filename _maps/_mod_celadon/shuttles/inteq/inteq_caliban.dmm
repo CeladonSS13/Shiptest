@@ -247,6 +247,17 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
+"bq" = (
+/obj/docking_port/stationary{
+	width = 30;
+	height = 15;
+	dwidth = 7;
+	name = "Caliban Starboard Bay";
+	dir = 2;
+	disable_on_owner_ship_dock = 1
+	},
+/turf/template_noop,
+/area/template_noop)
 "br" = (
 /obj/effect/turf_decal/siding/black{
 	dir = 8
@@ -524,6 +535,10 @@
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
 	layer = 2.040
 	},
+/obj/effect/turf_decal/corner/opaque/brown{
+	dir = 4;
+	layer = 2.042
+	},
 /obj/item/radio/intercom/directional/north{
 	freerange = 1;
 	freqlock = 1;
@@ -531,10 +546,6 @@
 	name = "IRMG shortwave intercom";
 	pixel_y = 30;
 	pixel_x = 8
-	},
-/obj/effect/turf_decal/corner/opaque/brown{
-	dir = 4;
-	layer = 2.042
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
@@ -613,9 +624,6 @@
 /obj/structure/catwalk,
 /obj/structure/marker_beacon{
 	picked_color = "Lime"
-	},
-/obj/machinery/atmospherics/pipe/layer_manifold{
-	dir = 4
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/engine)
@@ -900,11 +908,6 @@
 /obj/effect/turf_decal/steeldecal/steel_decals10{
 	dir = 9
 	},
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/incinerator_input{
-	dir = 4;
-	piping_layer = 1;
-	pixel_y = -10
-	},
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
 	},
@@ -914,6 +917,9 @@
 	},
 /obj/effect/turf_decal/steeldecal/steel_decals10{
 	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/purple/visible/layer1{
+	dir = 6
 	},
 /turf/open/floor/engine/airless,
 /area/ship/engineering/engine)
@@ -985,7 +991,7 @@
 /obj/item/radio/intercom/wideband/table{
 	dir = 1;
 	pixel_x = 1;
-	pixel_y = -2
+	pixel_y = 0
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
@@ -1765,7 +1771,8 @@
 	pixel_y = 6
 	},
 /obj/item/storage/backpack/medic{
-	pixel_y = 5
+	pixel_y = 4;
+	pixel_x = 0
 	},
 /obj/item/storage/backpack/satchel/med,
 /obj/item/storage/backpack/duffelbag/med{
@@ -1788,7 +1795,8 @@
 	pixel_x = -5
 	},
 /obj/item/clothing/head/soft/inteq/corpsman{
-	pixel_y = 5
+	pixel_y = 3;
+	pixel_x = 0
 	},
 /obj/item/clothing/gloves/color/latex/nitrile/inteq{
 	pixel_x = 14;
@@ -1797,7 +1805,7 @@
 /obj/item/storage/belt/medical/webbing,
 /obj/item/clothing/head/beret/med{
 	pixel_x = 0;
-	pixel_y = 10
+	pixel_y = 3
 	},
 /obj/item/clothing/glasses/hud/health/sunglasses{
 	pixel_x = -12;
@@ -1825,8 +1833,8 @@
 	pixel_y = -7
 	},
 /obj/item/pinpointer/crew/prox{
-	pixel_x = -1;
-	pixel_y = 7
+	pixel_x = -16;
+	pixel_y = -7
 	},
 /obj/item/storage/bag/chemistry{
 	pixel_x = 13;
@@ -1941,7 +1949,7 @@
 /obj/structure/closet/secure_closet/wall/directional/north{
 	name = "ammo locker";
 	icon_state = "sec_wall";
-	req_access_txt = "3";
+	req_access_txt = "1";
 	pixel_x = -3;
 	pixel_y = 28
 	},
@@ -2229,19 +2237,10 @@
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer2{
 	name = "Exhaust Injector";
-	dir = 8;
+	dir = 4;
 	volume_rate = 200;
-	piping_layer = 1;
-	pixel_y = -5
-	},
-/obj/machinery/atmospherics/pipe/simple/dark/hidden{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/dark/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/dark/hidden/layer4{
-	dir = 8
+	pixel_y = 0;
+	pixel_x = 0
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/engine)
@@ -3431,7 +3430,8 @@
 	anchored = 1
 	},
 /obj/item/storage/backpack/industrial{
-	pixel_y = 5
+	pixel_y = 2;
+	pixel_x = 0
 	},
 /obj/item/storage/backpack/satchel/eng,
 /obj/item/storage/backpack/duffelbag/engineering{
@@ -3454,14 +3454,7 @@
 	},
 /obj/item/clothing/head/soft/inteq{
 	pixel_x = 5;
-	pixel_y = 5
-	},
-/obj/item/storage/belt/utility/full/engi{
-	pixel_y = -5
-	},
-/obj/item/storage/pouch/engi,
-/obj/item/clothing/gloves/color/yellow{
-	pixel_y = -8
+	pixel_y = 3
 	},
 /obj/item/clothing/suit/hazardvest,
 /obj/item/clothing/suit/hooded/wintercoat/security/inteq{
@@ -3476,12 +3469,8 @@
 	dir = 8
 	},
 /obj/item/clothing/glasses/meson{
-	pixel_x = -7;
-	pixel_y = 10
-	},
-/obj/item/pipe_dispenser{
-	pixel_x = 1;
-	pixel_y = -10
+	pixel_x = -10;
+	pixel_y = 7
 	},
 /obj/machinery/firealarm/directional/north{
 	pixel_x = -7
@@ -3501,6 +3490,18 @@
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
 	layer = 2.040;
 	dir = 1
+	},
+/obj/item/storage/belt/utility/full/engi{
+	pixel_y = -5
+	},
+/obj/item/storage/pouch/engi,
+/obj/item/clothing/gloves/color/yellow{
+	pixel_y = -16;
+	pixel_x = 0
+	},
+/obj/item/pipe_dispenser{
+	pixel_x = -2;
+	pixel_y = -13
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
@@ -3527,7 +3528,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/door/airlock/command{
 	name = "Honorable Vanguard Quarters";
-	req_one_access = "20"
+	req_access_txt = "20"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3681,9 +3682,12 @@
 	dir = 9
 	},
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4{
-	dir = 8;
+	dir = 1;
 	name = "Exhaust Injector";
 	volume_rate = 200
+	},
+/obj/machinery/atmospherics/pipe/simple/dark/hidden{
+	dir = 9
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/engine)
@@ -3884,7 +3888,9 @@
 	can_be_unanchored = 1;
 	icon_state = "sec";
 	name = "honor guard locker";
-	req_access_txt = "1"
+	req_access_txt = "1";
+	pixel_x = 0;
+	pixel_y = 0
 	},
 /obj/item/clothing/under/syndicate/inteq/skirt{
 	pixel_x = 0;
@@ -3896,12 +3902,12 @@
 	},
 /obj/item/clothing/under/syndicate/inteq,
 /obj/item/clothing/head/soft/inteq{
-	pixel_x = 0;
-	pixel_y = 8
+	pixel_x = -8;
+	pixel_y = 4
 	},
 /obj/item/clothing/head/beret/sec/inteq{
-	pixel_x = 0;
-	pixel_y = 9
+	pixel_x = -6;
+	pixel_y = 7
 	},
 /obj/item/clothing/mask/balaclava/inteq{
 	pixel_x = -12;
@@ -4317,12 +4323,12 @@
 	},
 /obj/item/clothing/under/syndicate/inteq,
 /obj/item/clothing/head/soft/inteq{
-	pixel_x = 0;
-	pixel_y = 7
+	pixel_x = -6;
+	pixel_y = 4
 	},
 /obj/item/clothing/head/beret/sec/inteq{
-	pixel_x = 0;
-	pixel_y = 9
+	pixel_x = -5;
+	pixel_y = 7
 	},
 /obj/item/clothing/mask/balaclava/inteq{
 	pixel_x = -12;
@@ -4565,11 +4571,6 @@
 	pixel_x = 0;
 	pixel_y = 11
 	},
-/obj/item/areaeditor/shuttle,
-/obj/item/pipe_dispenser{
-	pixel_x = -10;
-	pixel_y = 0
-	},
 /obj/item/storage/belt/utility/chief{
 	name = "\improper Artificer Class II's toolbelt"
 	},
@@ -4590,6 +4591,11 @@
 	pixel_x = 12;
 	pixel_y = 10
 	},
+/obj/item/pipe_dispenser{
+	pixel_x = -10;
+	pixel_y = 0
+	},
+/obj/item/areaeditor/shuttle,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew/dorm/dormfive)
 "wy" = (
@@ -4687,7 +4693,8 @@
 	anchored = 1
 	},
 /obj/item/storage/backpack/industrial{
-	pixel_y = 5
+	pixel_y = 2;
+	pixel_x = 0
 	},
 /obj/item/storage/backpack/satchel/eng,
 /obj/item/storage/backpack/duffelbag/engineering{
@@ -4710,14 +4717,7 @@
 	},
 /obj/item/clothing/head/soft/inteq{
 	pixel_x = 5;
-	pixel_y = 5
-	},
-/obj/item/storage/belt/utility/full/engi{
-	pixel_y = -5
-	},
-/obj/item/storage/pouch/engi,
-/obj/item/clothing/gloves/color/yellow{
-	pixel_y = -8
+	pixel_y = 3
 	},
 /obj/item/clothing/suit/hazardvest,
 /obj/item/clothing/suit/hooded/wintercoat/security/inteq{
@@ -4729,12 +4729,8 @@
 	pixel_y = -4
 	},
 /obj/item/clothing/glasses/meson{
-	pixel_x = -7;
-	pixel_y = 10
-	},
-/obj/item/pipe_dispenser{
-	pixel_x = 1;
-	pixel_y = -10
+	pixel_x = -8;
+	pixel_y = 7
 	},
 /obj/item/clothing/mask/gas/atmos,
 /obj/item/holosign_creator/atmos{
@@ -4745,10 +4741,21 @@
 	pixel_x = -11;
 	pixel_y = -7
 	},
-/obj/machinery/computer/helm/viewscreen/directional/north,
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
 	layer = 2.040;
 	dir = 1
+	},
+/obj/item/storage/belt/utility/full/engi{
+	pixel_y = -5
+	},
+/obj/item/storage/pouch/engi,
+/obj/item/clothing/gloves/color/yellow{
+	pixel_y = -15;
+	pixel_x = 2
+	},
+/obj/item/pipe_dispenser{
+	pixel_x = 0;
+	pixel_y = -13
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
@@ -4845,6 +4852,7 @@
 	dir = 5
 	},
 /obj/machinery/blackbox_recorder,
+/obj/machinery/computer/helm/viewscreen/directional/north,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "xV" = (
@@ -5476,8 +5484,7 @@
 "BP" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/item/tank/internals/oxygen,
-/obj/item/clothing/suit/space/hardsuit/security/inteq,
-/obj/item/clothing/mask/breath/medical,
+/obj/item/clothing/mask/gas/inteq,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/security)
 "BS" = (
@@ -6131,14 +6138,14 @@
 /obj/effect/turf_decal/siding/black{
 	dir = 8
 	},
+/obj/effect/turf_decal/corner_steel_grid{
+	dir = 9;
+	layer = 2.030
+	},
 /obj/effect/turf_decal/trimline/opaque/vired/corner{
 	dir = 1;
 	pixel_x = -4;
 	layer = 2.041
-	},
-/obj/effect/turf_decal/corner_steel_grid{
-	dir = 9;
-	layer = 2.030
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
@@ -6210,6 +6217,14 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/port_fore)
+"FU" = (
+/obj/machinery/suit_storage_unit/inherit/industrial,
+/obj/machinery/light/directional/north,
+/obj/item/tank/internals/oxygen,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
+/obj/item/clothing/mask/breath/medical,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ship/security)
 "FV" = (
 /obj/structure/railing{
 	layer = 4.1
@@ -6543,7 +6558,7 @@
 /obj/structure/window/plasma/reinforced{
 	dir = 4
 	},
-/turf/open/floor/engine/o2,
+/turf/open/floor/engine/plasma,
 /area/ship/engineering/engine)
 "Ho" = (
 /obj/machinery/airalarm/directional/west,
@@ -7129,14 +7144,6 @@
 	pixel_x = 32;
 	pixel_y = 22
 	},
-/obj/docking_port/stationary{
-	width = 30;
-	height = 15;
-	dwidth = 7;
-	name = "Caliban Starboard Bay";
-	dir = 2;
-	disable_on_owner_ship_dock = 1
-	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external/dark)
 "LF" = (
@@ -7161,7 +7168,7 @@
 /obj/structure/closet/secure_closet/wall/directional/north{
 	name = "ammo locker";
 	icon_state = "sec_wall";
-	req_access_txt = "3";
+	req_access_txt = "1";
 	pixel_x = 5
 	},
 /obj/item/ammo_box/magazine/f90{
@@ -7527,35 +7534,35 @@
 	},
 /obj/item/clothing/suit/armor/hos/inteq/honorable{
 	pixel_x = 15;
-	pixel_y = -1
+	pixel_y = -6
 	},
 /obj/item/clothing/head/beret/sec/hos/inteq/honorable{
 	pixel_x = 15;
-	pixel_y = 10
+	pixel_y = 4
 	},
 /obj/item/radio/headset/inteq/alt/captain{
-	pixel_x = 7;
-	pixel_y = 10
+	pixel_x = 10;
+	pixel_y = 0
 	},
 /obj/item/storage/belt/security/webbing/inteq/alt{
 	pixel_x = -12;
 	pixel_y = -6
 	},
 /obj/item/clothing/head/inteq_peaked{
-	pixel_x = -12;
-	pixel_y = 12
+	pixel_x = -15;
+	pixel_y = 9
 	},
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq{
-	pixel_x = -7;
-	pixel_y = 9
+	pixel_x = -13;
+	pixel_y = 2
 	},
 /obj/item/storage/belt/military/assault{
 	pixel_x = -17;
 	pixel_y = -10
 	},
 /obj/item/storage/belt/security/webbing/inteq{
-	pixel_x = -12;
-	pixel_y = -3
+	pixel_x = -15;
+	pixel_y = -5
 	},
 /obj/item/clothing/accessory/holster{
 	pixel_x = 10;
@@ -7843,15 +7850,13 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/engine)
 "Qu" = (
-/obj/machinery/atmospherics/pipe/simple/dark/hidden/layer2{
-	dir = 6
-	},
 /obj/machinery/door/poddoor/shutters{
 	id = "Caliban_window_engine_shutters";
 	name = "Blast Shutters"
 	},
 /obj/structure/grille,
 /obj/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/atmospherics/pipe/layer_manifold,
 /turf/open/floor/plating/airless,
 /area/ship/engineering/engine)
 "Qx" = (
@@ -8371,7 +8376,6 @@
 	pixel_x = -6;
 	pixel_y = 21
 	},
-/turf/open/floor/carpet/orange,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm/captain)
 "TH" = (
@@ -8937,7 +8941,7 @@
 /obj/structure/window/plasma/reinforced{
 	dir = 8
 	},
-/turf/open/floor/engine/o2,
+/turf/open/floor/engine/plasma,
 /area/ship/engineering/engine)
 "WF" = (
 /obj/effect/turf_decal/techfloor{
@@ -9119,15 +9123,12 @@
 "Xp" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/components/unary/outlet_injector/on{
-	dir = 8;
+	dir = 4;
 	name = "Exhaust Injector";
 	volume_rate = 200
 	},
 /obj/machinery/atmospherics/pipe/simple/dark/hidden/layer2{
 	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/dark/hidden/layer4{
-	dir = 8
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/engine)
@@ -9176,6 +9177,9 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	filter_types = list()
+	},
+/obj/machinery/atmospherics/pipe/simple/purple/visible/layer1{
+	dir = 1
 	},
 /turf/open/floor/engine/airless,
 /area/ship/engineering/engine)
@@ -9357,7 +9361,8 @@
 	pixel_y = 6
 	},
 /obj/item/storage/backpack/medic{
-	pixel_y = 5
+	pixel_y = 4;
+	pixel_x = 0
 	},
 /obj/item/storage/backpack/satchel/med,
 /obj/item/storage/backpack/duffelbag/med{
@@ -9380,7 +9385,8 @@
 	pixel_x = -5
 	},
 /obj/item/clothing/head/soft/inteq/corpsman{
-	pixel_y = 5
+	pixel_y = 2;
+	pixel_x = 0
 	},
 /obj/item/clothing/gloves/color/latex/nitrile/inteq{
 	pixel_x = 14;
@@ -9389,7 +9395,7 @@
 /obj/item/storage/belt/medical/webbing,
 /obj/item/clothing/head/beret/med{
 	pixel_x = 0;
-	pixel_y = 10
+	pixel_y = 5
 	},
 /obj/item/clothing/glasses/hud/health/sunglasses{
 	pixel_x = -12;
@@ -9409,8 +9415,8 @@
 	pixel_y = -7
 	},
 /obj/item/pinpointer/crew{
-	pixel_x = 0;
-	pixel_y = 8
+	pixel_x = -16;
+	pixel_y = -7
 	},
 /obj/item/storage/bag/medical{
 	pixel_x = 13;
@@ -9443,7 +9449,10 @@
 /obj/effect/turf_decal/trimline/transparent/syndiered/filled/line{
 	dir = 8
 	},
-/obj/machinery/air_sensor/atmos/incinerator_tank,
+/obj/machinery/air_sensor/atmos/incinerator_tank{
+	pixel_x = 6;
+	pixel_y = 0
+	},
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
 	},
@@ -9453,6 +9462,12 @@
 /obj/effect/turf_decal/industrial/warning/dust{
 	dir = 4;
 	color = "grey"
+	},
+/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/incinerator_input{
+	dir = 1;
+	piping_layer = 1;
+	pixel_y = 1;
+	pixel_x = -10
 	},
 /turf/open/floor/engine/airless,
 /area/ship/engineering/engine)
@@ -10663,7 +10678,7 @@ ab
 aD
 WF
 Lu
-sw
+bq
 "}
 (38,1,1) = {"
 sw
@@ -10857,7 +10872,7 @@ yb
 sw
 Wd
 rZ
-yU
+FU
 Hc
 Ri
 IF
