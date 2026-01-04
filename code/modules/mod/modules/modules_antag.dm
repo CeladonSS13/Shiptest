@@ -13,7 +13,7 @@
 	removable = TRUE
 	// [CELADON-EDIT] - CELADON_MODSUITS - Добавляем модуль стелса в список. По-хорошему стоит welding убрать, убрать полностью у армор бустера защиту от флеша...
 	//incompatible_modules = list(/obj/item/mod/module/armor_booster, /obj/item/mod/module/welding)
-	incompatible_modules = list(/obj/item/mod/module/armor_booster, /obj/item/mod/module/welding, /obj/item/mod/module/stealth/millitary)
+	incompatible_modules = list(/obj/item/mod/module/armor_booster, /obj/item/mod/module/welding, /obj/item/mod/module/stealth/military)
 	// [/CELADON-EDIT] - CELADON_MODSUITS
 	cooldown_time = 0.5 SECONDS
 	overlay_state_inactive = "module_armorbooster_off"

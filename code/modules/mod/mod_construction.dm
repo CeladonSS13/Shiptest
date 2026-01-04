@@ -232,7 +232,7 @@
 					if(!locked_plating.finished)
 						to_chat(user, span_notice("Нужно завершить сборку плит с помощью Modular power armor components."))
 						return
-				//[/CELADON-ADD] - CELADON_MODSUITS
+				//[/CELADON-ADD]
 				if(!user.transferItemToLoc(part, src))
 					return
 				playsound(src, 'sound/machines/click.ogg', 30, TRUE)
@@ -244,7 +244,7 @@
 			else if(part.tool_behaviour == TOOL_SCREWDRIVER) //Construct
 				if(part.use_tool(src, user, 0, volume=30))
 					to_chat(user, span_notice("You unsecure the assembly."))
-					step = SCREWED_ASSEMBLY_STEP
+					step = WRENCHED_ASSEMBLY_STEP //[CELADON-FIX] - CELADON_MODSUITS // step = SCREWED_ASSEMBLY_STEP
 	update_icon_state()
 
 /obj/item/mod/construction/shell/update_icon_state()

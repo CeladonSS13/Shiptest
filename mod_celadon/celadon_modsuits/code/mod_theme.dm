@@ -142,7 +142,8 @@
 
 // MARK: SYNDICATE
 /datum/mod_theme/syndicate
-	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90)
+	//armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90)
+	armor = list("melee" = 45, "bullet" = 50, "laser" = 35, "energy" = 40, "bomb" = 40, "bio" = 100, "rad" = 50, "fire" = 60, "acid" = 90)
 	module_blacklist = list(/obj/item/mod/module/armor_booster/regular)
 	inbuilt_modules = list()
 	desc = "A suit designed by Gorlex Marauders, offering armor ruled illegal in most of the Solar Federation."
@@ -155,7 +156,7 @@
 		All rights reserved, tampering with suit will void warranty."
 
 /datum/mod_theme/elite
-	armor = list("melee" = 60, "bullet" = 50, "laser" = 45, "energy" = 50, "bomb" = 55, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 60, "bullet" = 55, "laser" = 50, "energy" = 60, "bomb" = 55, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 100)
 	module_blacklist = list(/obj/item/mod/module/armor_booster/regular)
 	inbuilt_modules = list()
 	desc = "An elite suit upgraded by Cybersun Industries, offering upgraded armor values."
@@ -199,6 +200,7 @@
 // MARK: NT
 /datum/mod_theme/responsory
 	module_blacklist = list(/obj/item/mod/module/armor_booster/regular)
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 50, "energy" = 50, "bomb" = 50, "bio" = 100, "fire" = 100, "acid" = 90)
 	// armor = list("melee" = 60, "bullet" = 50, "laser" = 60, "energy" = 50, "bomb" = 60, "bio" = 100, "fire" = 100, "acid" = 90)
 	desc = "A high-speed rescue suit by Nanotrasen, intended for its emergency response teams."
 	extended_desc = "A streamlined suit of Nanotrasen design, these sleek black suits are only worn by \

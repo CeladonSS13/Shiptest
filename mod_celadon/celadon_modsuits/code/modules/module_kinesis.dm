@@ -9,7 +9,7 @@
 	icon_state = "kinesis"
 	module_type = MODULE_ACTIVE
 	complexity = 3
-	use_power_cost = DEFAULT_CHARGE_DRAIN*3
+	use_power_cost = DEFAULT_CHARGE_DRAIN*20 // use_power_cost = DEFAULT_CHARGE_DRAIN*3
 	incompatible_modules = list(/obj/item/mod/module/anomaly_locked/kinesis)
 	cooldown_time = 0.5 SECONDS
 	overlay_state_inactive = "module_kinesis"
@@ -32,16 +32,16 @@
 	/// Our mouse movement catcher.
 	var/atom/movable/screen/fullscreen/kinesis/kinesis_catcher
 	/// The sounds playing while we grabbed an object.
-	var/datum/looping_sound/kinesis/soundloop
+	//var/datum/looping_sound/kinesis/soundloop
 	/// The cooldown between us hitting objects with kinesis.
 	COOLDOWN_DECLARE(hit_cooldown)
 
 /obj/item/mod/module/anomaly_locked/kinesis/Initialize(mapload)
 	. = ..()
-	soundloop = new(src)
+	//soundloop = new(src)
 
 /obj/item/mod/module/anomaly_locked/kinesis/Destroy()
-	QDEL_NULL(soundloop)
+	//QDEL_NULL(soundloop)
 	return ..()
 
 /obj/item/mod/module/anomaly_locked/kinesis/on_select_use(atom/target)
@@ -72,7 +72,7 @@
 	kinesis_catcher = mod.wearer.overlay_fullscreen("kinesis", /atom/movable/screen/fullscreen/kinesis, 0)
 	kinesis_catcher.kinesis_user = mod.wearer
 	kinesis_catcher.RegisterSignal(mod.wearer, COMSIG_MOVABLE_MOVED, /atom/movable/screen/fullscreen/kinesis.proc/on_move)
-	soundloop.start()
+	//soundloop.start()
 
 /obj/item/mod/module/anomaly_locked/kinesis/on_deactivation(display_message = TRUE, deleting = FALSE)
 	. = ..()
@@ -178,7 +178,7 @@
 	if(!isitem(grabbed_atom))
 		animate(grabbed_atom, 0.2 SECONDS, pixel_x = grabbed_atom.base_pixel_x, pixel_y = grabbed_atom.base_pixel_y)
 	grabbed_atom = null
-	soundloop.stop()
+	//soundloop.stop()
 
 /obj/item/mod/module/anomaly_locked/kinesis/proc/range_check(atom/target)
 	if(!isturf(mod.wearer.loc))
@@ -218,7 +218,7 @@
 /obj/item/mod/module/anomaly_locked/kinesis/prebuilt/prototype
 	name = "MOD прототип кинезис модуля"
 	complexity = 0
-	use_power_cost = DEFAULT_CHARGE_DRAIN * 5
+	use_power_cost = DEFAULT_CHARGE_DRAIN * 20
 	removable = FALSE
 
 /atom/movable/screen/fullscreen/kinesis
@@ -270,7 +270,8 @@
 		Продвинутый кинезис модуль - это мощный тактический инструмент, позволяющий пользователю воздействовать на физическую природу гравитации. \
 		В отличии от своего раннего прототипа эта модель так же способна воздействовать на живые объекты. \
 		Однако, они все еще могут бороться с гравитационным захватом."
-	complexity = 0
+	complexity = 4
+	use_power_cost = DEFAULT_CHARGE_DRAIN * 25
 	prebuilt = TRUE
 	stat_required = CONSCIOUS
 

@@ -9,17 +9,17 @@
 
 /obj/item/mod/construction/plating/locked/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/millitary_locked_module, list(/obj/item/millitary_tech/mod_armor_components), prebuilt, can_be_removed, PROC_REF(on_core_inserted),PROC_REF(core_remove_callback))
+	AddComponent(/datum/component/military_locked_module, list(/obj/item/military_tech/mod_armor_components), prebuilt, can_be_removed, insert_callback = PROC_REF(core_insert_callback),remove_callback = PROC_REF(core_remove_callback))
 
-/obj/item/mod/construction/plating/locked/proc/on_core_inserted()
+/obj/item/mod/construction/plating/locked/proc/core_insert_callback()
 	finished = TRUE
 
 /obj/item/mod/construction/plating/locked/proc/core_remove_callback()
 	finished = FALSE
 /*
-/obj/item/mod/construction/plating/locked/proc/get_milltech()
-	var/datum/component/millitary_locked_module/mill_tech = GetComponent(/datum/component/millitary_locked_module)
-	return mill_tech.milltech
+/obj/item/mod/construction/plating/locked/proc/get_miltech()
+	var/datum/component/military_locked_module/mil_tech = GetComponent(/datum/component/military_locked_module)
+	return mil_tech.miltech
 */
 /obj/item/mod/construction/plating/locked/syndicate
 	theme = /datum/mod_theme/syndicate

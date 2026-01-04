@@ -134,9 +134,9 @@
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 
 /datum/techweb_node/mod_armor_components
-	id = "mod_millitary"
-	display_name = "MOD millitary-grade power armor components"
-	description = "WARNING: it requires faction-locked unfinished plates to produce anything meaningful. Cutting-Edge millitary-grade biomimetic modular power armor components right into your protolathe! Core technologies integrated into this component include: Ultra-compact, liquid-cooled, reinforced serial elasticity actuators. Biomimetic Programmable metamaterial mechanics. Electroactive polymers."
+	id = "mod_military"
+	display_name = "MOD military-grade power armor components"
+	description = "WARNING: it requires faction-locked unfinished plates to produce anything meaningful. Cutting-Edge military-grade biomimetic modular power armor components right into your protolathe! Core technologies integrated into this component include: Ultra-compact, liquid-cooled, reinforced serial elasticity actuators. Biomimetic Programmable metamaterial mechanics. Electroactive polymers."
 	prereq_ids = list("mod_science", "mod_engi_adv", "anomaly_research", "mod_security")
 	design_ids = list(
 		"mod_armor_components",
@@ -153,12 +153,12 @@
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 
-/datum/techweb_node/mod_millitary_stealth
-	id = "mod_millitary_stealth"
-	display_name = "MOD millitary-grade stealth module"
-	description = "WARNING: This one requires special millitary capacitor to be completed. High tech, high trick."
+/datum/techweb_node/mod_military_stealth
+	id = "mod_military_stealth"
+	display_name = "MOD military-grade stealth module"
+	description = "WARNING: This one requires special military capacitor to be completed. High tech, high trick."
 	prereq_ids = list("mod_science", "mod_engi_adv", "anomaly_research", "mod_security")
 	design_ids = list(
-		"mod_millitary_stealth",
+		"mod_military_stealth",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)

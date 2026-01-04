@@ -66,8 +66,8 @@ MARK: ARMOR BOOSTER
 	complexity = 3
 
 //MARK: Переделывает модули ниндзи в боевые
-/obj/item/mod/module/stealth/millitary
-	name = "MOD millitary cloaking module"
+/obj/item/mod/module/stealth/military
+	name = "MOD military cloaking module"
 	desc = "The latest in stealth technology, this module is a definite upgrade over previous versions. \
 		The field has been tuned to be even more responsive and fast-acting. Unfortunately, the bumping problem hasn't been fixed. The main cause of their use is to come across sniper supression undetected."
 	icon_state = "cloak_ninja"
@@ -80,9 +80,9 @@ MARK: ARMOR BOOSTER
 	var/mil_prebuilt = FALSE
 	var/mil_removable = TRUE
 
-/obj/item/mod/module/stealth/millitary/Initialize(mapload)
+/obj/item/mod/module/stealth/military/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/millitary_locked_module, list(/obj/item/millitary_tech/capacitor), mil_prebuilt, mil_removable)
+	AddComponent(/datum/component/military_locked_module, list(/obj/item/military_tech/capacitor), mil_prebuilt, mil_removable)
 
 /obj/item/mod/module/dispenser/bola
 	name = "MOD bola dispenser module"

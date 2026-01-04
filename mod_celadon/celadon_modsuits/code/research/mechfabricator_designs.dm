@@ -705,7 +705,7 @@
 // MARK: MILTECH
 
 /datum/design/module/mod_armor_components
-	name = "MOD millitary-grade power armor components"
+	name = "MOD military-grade power armor components"
 	id = "mod_armor_components"
 	materials = list(
 		/datum/material/iron=10000,
@@ -720,15 +720,15 @@
 		"MOD Suits", "Chassis"
 	)
 
-/datum/design/module/mod_millitary_stealth
-	name = "Millitary-grade Cloak Module"
-	id = "mod_millitary_stealth"
+/datum/design/module/mod_military_stealth
+	name = "military-grade Cloak Module"
+	id = "mod_military_stealth"
 	materials = list(
 		/datum/material/iron=1000,
 		/datum/material/bluespace=1000,
 		/datum/material/titanium=1000,
 	)
-	build_path = /obj/item/mod/module/stealth/millitary
+	build_path = /obj/item/mod/module/stealth/military
 	category = list(
 		"MOD Modules", "Security Modules"
 	)

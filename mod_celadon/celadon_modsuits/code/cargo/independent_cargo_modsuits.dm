@@ -204,7 +204,7 @@
 // MARK: CARGO
 /datum/supply_pack/faction/independent/modsuits/modules/drill
 	name = "MOD drill Module"
-	desc = "Contains an integrated drill for drilling the heaven up to 1 million points sacrificed. Spiraling."
+	desc = "Contains an integrated drill for drilling the heaven up to 1 milion points sacrificed. Spiraling."
 	cost = 1200
 	contains = list(/obj/item/mod/module/drill)
 
@@ -331,9 +331,9 @@
 	contains = list(/obj/item/mod/module/balloon)
 
 // MARK: MILTECH
-/datum/supply_pack/faction/independent/modsuits/modules/millitary_capacitor
-	name = "Millitary Capacitor"
-	desc = "Contains a high tech capacitor that is required for millitary stealth generator and other millitary modules."
+/datum/supply_pack/faction/independent/modsuits/modules/military_capacitor
+	name = "Military Capacitor"
+	desc = "Contains a high tech capacitor that is required for military stealth generator and other military modules."
 	cost = 2000
-	contains = list(/obj/item/millitary_tech/capacitor)
+	contains = list(/obj/item/military_tech/capacitor)
 

@@ -220,13 +220,13 @@
 
 /datum/supply_pack/faction/solfed/modsuits/complete/storch
 	name = "STCR MODsuit"
-	desc = "Contains a millitary-grade MODsuit."
+	desc = "Contains a military-grade MODsuit."
 	cost = 8500
 	contains = list(/obj/item/mod/control/pre_equipped/storch)
 
 /datum/supply_pack/faction/solfed/modsuits/complete/falke
 	name = "FLKR MODsuit"
-	desc = "Contains a millitary-grade commander MODsuit."
+	desc = "Contains a military-grade commander MODsuit."
 	cost = 15000
 	contains = list(/obj/item/mod/control/pre_equipped/falke)
 
@@ -270,7 +270,7 @@
 	name = "MOD advanced armor assist Module"
 	desc = "Contains an way more advanced overdrive module that significantly increases the user's movement speed while active, at the cost of high energy consumption, which is not increased with the suit slowdown. Manufactured by Cybersun Biodynamics for PMCs. \n\
 			WARNING: using it with armor assist is extreme for the suit's power grid."
-	cost = 3000
+	cost = 2000
 	contains = list(/obj/item/mod/module/armor_assist/advanced)
 
 /datum/supply_pack/faction/syndicate/modsuits/modules/mirage

@@ -64,6 +64,7 @@ ID мода: CELADON_MODSUITS
 - `code/modules/mod/modules/modules_general.dm` : , `overlay_state_inactive`
 - `code\modules\mod\modules\modules_antag.dm`: `/obj/item/mod/module/armor_booster`, `/obj/item/mod/module/armor_booster/on_activation()`, `var/drain_slowdown_affected`, `drain_per_step`, `var/drain`,`/obj/item/mod/module/armor_assist/proc/drain_on_step`
 - `code\modules\mod\modules\modules_science.dm`: `/obj/item/mod/module/anomaly_locked/teleporter`, `/obj/item/mod/module/anomaly_locked/antigrav`
+- `code\modules\mod\modules\_module.dm` : `incompatible_modules`
 **Сигналы и другие вещи**
 - `code\modules\mob\living\carbon\human\human_defense.dm` : `/mob/living/carbon/human/hitby`, `/mob/living/carbon/human/bullet_act`
 Добавляем отправку сигналов для работы энергощита и армор бустера. Всё ещё не работает
