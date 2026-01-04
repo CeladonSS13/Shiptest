@@ -247,17 +247,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
-"bq" = (
-/obj/docking_port/stationary{
-	width = 30;
-	height = 15;
-	dwidth = 7;
-	name = "Caliban Starboard Bay";
-	dir = 2;
-	disable_on_owner_ship_dock = 1
-	},
-/turf/template_noop,
-/area/template_noop)
 "br" = (
 /obj/effect/turf_decal/siding/black{
 	dir = 8
@@ -775,6 +764,17 @@
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
+"eY" = (
+/obj/docking_port/stationary{
+	width = 30;
+	height = 15;
+	dwidth = 15;
+	name = "Caliban Starboard Bay";
+	dir = 2;
+	disable_on_owner_ship_dock = 1
+	},
+/turf/template_noop,
+/area/template_noop)
 "ff" = (
 /obj/structure/chair/office,
 /obj/effect/turf_decal/corner/opaque/brown/full,
@@ -6217,14 +6217,6 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/port_fore)
-"FU" = (
-/obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/machinery/light/directional/north,
-/obj/item/tank/internals/oxygen,
-/obj/item/clothing/suit/space/hardsuit/security/inteq,
-/obj/item/clothing/mask/breath/medical,
-/turf/open/floor/plasteel/telecomms_floor,
-/area/ship/security)
 "FV" = (
 /obj/structure/railing{
 	layer = 4.1
@@ -7377,6 +7369,16 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/office)
+"Nb" = (
+/obj/machinery/suit_storage_unit/inherit/industrial{
+	name = "corpsman's industrial suit storage unit"
+	},
+/obj/machinery/light/directional/north,
+/obj/item/tank/internals/oxygen,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
+/obj/item/clothing/mask/breath/medical,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ship/security)
 "Nd" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -7836,7 +7838,7 @@
 /obj/docking_port/stationary{
 	width = 30;
 	height = 15;
-	dwidth = 7;
+	dwidth = 15;
 	name = "Caliban Port Bay"
 	},
 /turf/open/floor/engine/hull/reinforced,
@@ -10678,7 +10680,7 @@ ab
 aD
 WF
 Lu
-bq
+eY
 "}
 (38,1,1) = {"
 sw
@@ -10872,7 +10874,7 @@ yb
 sw
 Wd
 rZ
-FU
+Nb
 Hc
 Ri
 IF
