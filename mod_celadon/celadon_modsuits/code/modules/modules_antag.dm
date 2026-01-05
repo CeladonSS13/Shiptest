@@ -106,16 +106,15 @@ MARK: ARMOR BOOSTER
 	name = "MOD blood replika module"
 	desc = "Набор инвазивно интегрируемых в пользователя кабелей, искусственных сосудов и псевдо-органов, поддерживающих боеспособность на максимальном уровне несмотря на все раны. Позволяет пользователю сражаться, пока тело не станет полностью бесполезным. \n\
 		Может быть включен ради поддержки человека в критическом состоянии. При деактивации оставляет следы на теле, повреждая ткани."
-	icon_state = "armor_booster"
+	icon_state = "plate_compression"
 	module_type = MODULE_USABLE
-	idle_power_cost = MODULE_CHARGE_DRAIN_MEDIUM * 2
+	idle_power_cost = DEFAULT_CHARGE_DRAIN * 2
 	removable = FALSE
 	incompatible_modules = list(/obj/item/mod/module/blood_replika, /obj/item/mod/module/armor_assist)
 	cooldown_time = 120 SECONDS
 	overlay_state_inactive = "module_bloodreplika_off"
 	overlay_state_active = "module_bloodreplika_on"
 	use_mod_colors = TRUE
-	var/drain_per_step = 100
 
 /obj/item/mod/module/blood_replika/on_suit_activation()
 	ADD_TRAIT(mod.wearer, TRAIT_IGNOREDAMAGESLOWDOWN, MOD_TRAIT)
@@ -131,8 +130,6 @@ MARK: ARMOR BOOSTER
 	playsound(src, 'sound/effects/wounds/crackandbleed.ogg', 100, TRUE, SHORT_RANGE_SOUND_EXTRARANGE, frequency = 0.25)
 	mod.wearer.apply_status_effect(/datum/status_effect/blood_replika)
 
-
-
 /atom/movable/screen/alert/status_effect/blood_replika
 	name = "Replika blood replacement"
 	desc = "You can move faster than your broken body could normally handle. You are on the timer."
@@ -140,7 +137,7 @@ MARK: ARMOR BOOSTER
 
 /datum/status_effect/blood_replika
 	id = "Blood Replika"
-	duration = 1 MINUTES
+	duration = 45 SECONDS
 	status_type = STATUS_EFFECT_REPLACE
 	alert_type = /atom/movable/screen/alert/status_effect/blood_replika
 
