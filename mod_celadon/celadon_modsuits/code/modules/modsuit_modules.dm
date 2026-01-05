@@ -26,7 +26,7 @@
 	overlay_state_inactive = "module_mirage_grenade"
 	dispense_type = /obj/item/grenade/mirage
 
-/obj/item/mod/module/dispenser/mirage/on_use(mob/activator)
+/obj/item/mod/module/dispenser/mirage/on_use()
 	var/obj/item/grenade/mirage/grenade = ..()
 	grenade.preprime(mod.wearer)
 

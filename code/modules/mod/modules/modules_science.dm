@@ -100,7 +100,7 @@
 	module_type = MODULE_ACTIVE
 	complexity = 3
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 250 // [CELADON-EDIT] - CELADON_MODSUITS //use_power_cost = DEFAULT_CHARGE_DRAIN * 5
-	cooldown_time = 5 SECONDS // [CELADON-EDIT] - CELADON_MODSUITS // cooldown_time = 5 SECONDS
+	cooldown_time = 4 SECONDS // [CELADON-EDIT] - CELADON_MODSUITS // cooldown_time = 5 SECONDS
 	accepted_anomalies = list(/obj/item/assembly/signaler/anomaly/bluespace)
 	/// Time it takes to teleport
 	var/teleport_time = 1 SECONDS // [CELADON-EDIT] - CELADON_MODSUITS - На тг баффают все анома-локед модули, т.к. изначально они были слишком сильно перенерфаны // var/teleport_time = 3 SECONDS

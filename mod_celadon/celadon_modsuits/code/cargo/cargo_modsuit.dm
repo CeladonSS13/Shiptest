@@ -194,7 +194,7 @@
 	contains = list(/obj/item/mod/module/anomaly_locked/kinesis/plus)
 
 /datum/supply_pack/faction/solfed/modsuits/modules/mirage_moving
-	name = "MOD mirage grenade dispenser module"
+	name = "MOD moving mirage grenade dispenser module"
 	desc = "This module can create mirage grenades at the user's liking. These grenades create moving holographic copies of the user."
 	cost = 7000 // he-he
 	contains = list(/obj/item/mod/module/dispenser/mirage/moving)

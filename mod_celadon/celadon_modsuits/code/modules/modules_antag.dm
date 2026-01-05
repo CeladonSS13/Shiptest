@@ -53,6 +53,7 @@ MARK: ARMOR BOOSTER
 		giving the user increased mobility and move without hinderance as if they were wearing coventional armor. Has a high rate of power consumption, \
 		that increases with the required load to be removed. \
 		Moreover, this module has increased energy consumption while armor booster is active."
+	complexity = 3
 
 /obj/item/mod/module/armor_assist/advanced
 	name = "MOD advanced armor assist module"
@@ -61,9 +62,6 @@ MARK: ARMOR BOOSTER
 		Compared to the regular one, this version doesn't have increased consumption from slowdown. \
 		However, it has increased energy consumption while armor booster is active."
 	drain_slowdown_affected = FALSE
-
-/obj/item/mod/module/armor_assist
-	complexity = 3
 
 //MARK: Переделывает модули ниндзи в боевые
 /obj/item/mod/module/stealth/military
@@ -103,3 +101,58 @@ MARK: ARMOR BOOSTER
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 0.4
 	incompatible_modules = list(/obj/item/mod/module/status_readout)
 	tgui_id = "status_readout"
+
+/obj/item/mod/module/blood_replika
+	name = "MOD blood replika module"
+	desc = "Набор инвазивно интегрируемых в пользователя кабелей, искусственных сосудов и псевдо-органов, поддерживающих боеспособность на максимальном уровне несмотря на все раны. Позволяет пользователю сражаться, пока тело не станет полностью бесполезным. \n\
+		Может быть включен ради поддержки человека в критическом состоянии. При деактивации оставляет следы на теле, повреждая ткани."
+	icon_state = "armor_booster"
+	module_type = MODULE_USABLE
+	idle_power_cost = MODULE_CHARGE_DRAIN_MEDIUM * 2
+	removable = FALSE
+	incompatible_modules = list(/obj/item/mod/module/blood_replika, /obj/item/mod/module/armor_assist)
+	cooldown_time = 120 SECONDS
+	overlay_state_inactive = "module_bloodreplika_off"
+	overlay_state_active = "module_bloodreplika_on"
+	use_mod_colors = TRUE
+	var/drain_per_step = 100
+
+/obj/item/mod/module/blood_replika/on_suit_activation()
+	ADD_TRAIT(mod.wearer, TRAIT_IGNOREDAMAGESLOWDOWN, MOD_TRAIT)
+
+/obj/item/mod/module/blood_replika/on_suit_deactivation(deleting = FALSE)
+	if(mod.wearer)
+		REMOVE_TRAIT(mod.wearer, TRAIT_IGNOREDAMAGESLOWDOWN, MOD_TRAIT)
+
+/obj/item/mod/module/blood_replika/on_use()
+	. = ..()
+	if(!.)
+		return
+	playsound(src, 'sound/effects/wounds/crackandbleed.ogg', 100, TRUE, SHORT_RANGE_SOUND_EXTRARANGE, frequency = 0.25)
+	mod.wearer.apply_status_effect(/datum/status_effect/blood_replika)
+
+
+
+/atom/movable/screen/alert/status_effect/blood_replika
+	name = "Replika blood replacement"
+	desc = "You can move faster than your broken body could normally handle. You are on the timer."
+	icon_state = "concealed"
+
+/datum/status_effect/blood_replika
+	id = "Blood Replika"
+	duration = 1 MINUTES
+	status_type = STATUS_EFFECT_REPLACE
+	alert_type = /atom/movable/screen/alert/status_effect/blood_replika
+
+/datum/status_effect/blood_replika/on_apply()
+	ADD_TRAIT(owner, TRAIT_NOSOFTCRIT, type)
+	ADD_TRAIT(owner, TRAIT_NOHARDCRIT, type)
+	owner.remove_CC()
+	owner.bodytemperature = owner.get_body_temp_normal()
+	return TRUE
+
+/datum/status_effect/blood_replika/on_remove()
+	REMOVE_TRAIT(owner, TRAIT_NOSOFTCRIT, type)
+	REMOVE_TRAIT(owner, TRAIT_NOHARDCRIT, type)
+	owner.adjustBruteLoss(25)
+	to_chat(owner, span_warning("Long cables and tubes loosen your body, seeming to disable your capability to overpower anything."))

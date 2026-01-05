@@ -14,6 +14,7 @@
 	theme = /datum/mod_theme/falke
 	applied_cell = /obj/item/stock_parts/cell/hyper
 	initial_modules = list(
+		/obj/item/mod/module/blood_replika,
 		/obj/item/mod/module/storage/large_capacity,
 		/obj/item/mod/module/welding,
 		/obj/item/mod/module/dna_lock,
@@ -28,6 +29,7 @@
 	theme = /datum/mod_theme/storch
 	applied_cell = /obj/item/stock_parts/cell/hyper
 	initial_modules = list(
+		/obj/item/mod/module/blood_replika,
 		/obj/item/mod/module/storage/large_capacity,
 		/obj/item/mod/module/welding,
 		/obj/item/mod/module/emp_shield,
