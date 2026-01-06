@@ -109,7 +109,6 @@
 
 /datum/mod_theme/safeguard
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 40, "bomb" = 25, "bio" = 100, "rad" = 50, "fire" = 95, "acid" = 95)
 	desc = "A Vigilitas Interstellar advanced security suit, offering greater speed and fire protection than the standard security model."
 	extended_desc = "A Vigilitas Interstellar advanced security suit, and their latest model. This variant has \
 		ditched the presence of a reinforced glass visor entirely, replacing it with a 'blast visor' utilizing a \
@@ -200,7 +199,7 @@
 // MARK: NT
 /datum/mod_theme/responsory
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 50, "energy" = 50, "bomb" = 50, "bio" = 100, "fire" = 100, "acid" = 90)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 50, "bomb" = 50, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 90)
 	// armor = list("melee" = 60, "bullet" = 50, "laser" = 60, "energy" = 50, "bomb" = 60, "bio" = 100, "fire" = 100, "acid" = 90)
 	desc = "A high-speed rescue suit by Nanotrasen, intended for its emergency response teams."
 	extended_desc = "A streamlined suit of Nanotrasen design, these sleek black suits are only worn by \
@@ -304,7 +303,7 @@
 /datum/mod_theme/storch
 	name = "Storch"
 	default_skin = "storch"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 50, "bio" = 100, "fire" = 100, "acid" = 90)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 50, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 90)
 	resistance_flags = FIRE_PROOF|ACID_PROOF
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
@@ -356,7 +355,7 @@
 /datum/mod_theme/falke
 	name = "Falke"
 	default_skin = "falke"
-	armor = list("melee" = 70, "bullet" = 60, "laser" = 60, "energy" = 60, "bomb" = 60, "bio" = 100, "fire" = 100, "acid" = 90)
+	armor = list("melee" = 70, "bullet" = 60, "laser" = 60, "energy" = 60, "bomb" = 60, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 90)
 	resistance_flags = FIRE_PROOF|ACID_PROOF
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT

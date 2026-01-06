@@ -124,12 +124,13 @@ MARK: ARMOR BOOSTER
 
 /obj/item/mod/module/blood_replika/on_suit_activation()
 	ADD_TRAIT(mod.wearer, TRAIT_IGNOREDAMAGESLOWDOWN, MOD_TRAIT)
+	to_chat(mod.wearer, span_warning("Long pulsating cables drill into your body, connecting to your blood stream, [!(HAS_TRAIT(mod.wearer, TRAIT_ANALGESIA) || HAS_TRAIT(mod.wearer, TRAIT_PAIN_RESIST)) ? "as you feel a throbbing pain in all your muscles" : ""]."))
 	mod.wearer.force_scream()
 
 /obj/item/mod/module/blood_replika/on_suit_deactivation(deleting = FALSE)
 	if(mod.wearer)
 		REMOVE_TRAIT(mod.wearer, TRAIT_IGNOREDAMAGESLOWDOWN, MOD_TRAIT)
-		to_chat(mod.wearer, span_warning("Long pulsating cables crawl out of your body [!(HAS_TRAIT(mod.wearer, TRAIT_ANALGESIA) || HAS_TRAIT(mod.wearer, TRAIT_PAIN_RESIST)) ? "while you feel a throbbing pain in all your muscles" : ""]."))
+		to_chat(mod.wearer, span_warning("Long pulsating cables crawl out of your body [!(HAS_TRAIT(mod.wearer, TRAIT_ANALGESIA) || HAS_TRAIT(mod.wearer, TRAIT_PAIN_RESIST)) ? "as you feel a throbbing pain in all your muscles" : ""]."))
 		playsound(mod.wearer, 'sound/effects/wounds/pierce1.ogg', 25, TRUE, SHORT_RANGE_SOUND_EXTRARANGE, frequency = 0.5)
 		mod.wearer.adjustBruteLoss(20)
 		mod.wearer.force_scream()

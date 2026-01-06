@@ -146,7 +146,10 @@
 
 /obj/item/mod/control/pre_equipped/syndicate
 	theme = /datum/mod_theme/syndicate
-	applied_cell = /obj/item/stock_parts/cell/super
+	// [CELADON-EDIT] - CELADON_MODSUITS
+	//applied_cell = /obj/item/stock_parts/cell/super
+	applied_cell = /obj/item/stock_parts/cell/hyper
+	// [/CELADON-EDIT]
 	initial_modules = list(
 		/obj/item/mod/module/storage,
 		// /obj/item/mod/module/emp_shield, // [CELADON-REMOVE] - CELADON_MODSUITS // ЭМИ сложнее получить
@@ -154,13 +157,14 @@
 		/obj/item/mod/module/jetpack,
 		/obj/item/mod/module/flashlight,
 		/obj/item/mod/module/armor_assist,// [CELADON-ADD] - CELADON_MODSUITS
+		/obj/item/mod/module/armor_booster/light,// [CELADON-ADD] - CELADON_MODSUITS
 	)
 
 /obj/item/mod/control/pre_equipped/elite
 	theme = /datum/mod_theme/elite
 	// [CELADON-EDIT] - CELADON_MODSUITS
 	//applied_cell = /obj/item/stock_parts/cell/bluespace
-	applied_cell = /obj/item/stock_parts/cell/super
+	applied_cell = /obj/item/stock_parts/cell/hyper
 	// [/CELADON-EDIT]
 	initial_modules = list(
 		/obj/item/mod/module/storage/syndicate,
@@ -169,6 +173,7 @@
 		/obj/item/mod/module/jetpack/advanced,
 		/obj/item/mod/module/flashlight,
 		/obj/item/mod/module/armor_assist,// [CELADON-ADD] - CELADON_MODSUITS
+		/obj/item/mod/module/armor_booster/light,// [CELADON-ADD] - CELADON_MODSUITS
 	)
 
 /obj/item/mod/control/pre_equipped/ninja
@@ -196,7 +201,7 @@
 
 /obj/item/mod/control/pre_equipped/responsory
 	theme = /datum/mod_theme/responsory
-	applied_cell = /obj/item/stock_parts/cell/hyper
+	applied_cell = /obj/item/stock_parts/cell/super // [CELADON-EDIT] - CELADON_MODSUITS // applied_cell = /obj/item/stock_parts/cell/hyper
 	req_access = list(ACCESS_CENT_GENERAL)
 	initial_modules = list(
 		/obj/item/mod/module/storage/large_capacity,
