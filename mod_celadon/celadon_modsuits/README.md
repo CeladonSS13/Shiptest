@@ -58,13 +58,14 @@ ID мода: CELADON_MODSUITS
 - `code\modules\mod\mod_types.dm` : Все темы. Удалена ЭМИ защита, мелкие правки баланса с батарейками у элитки.
 
 **Модули**
+- `code\modules\mod\modules\_module.dm` : `var/assist_drain_increase` 
 - `code/modules/mob/living/carbon/human/species` : `/datum/species/proc/handle_mutant_bodyparts`
 - `code\modules\mod\modules\modules_engineering.dm` : `/obj/item/mod/module/tether/on_use()`
-- `code\modules\mod\modules\modules_science.dm` : `/obj/item/mod/module/anomaly_locked/antigrav`, `var/incompatible_modules`, `var/teleport_time`, `var/cooldown_time`, `var/use_power_cost`
-- `code/modules/mod/modules/modules_general.dm` : , `overlay_state_inactive`
-- `code\modules\mod\modules\modules_antag.dm`: `/obj/item/mod/module/armor_booster`, `/obj/item/mod/module/armor_booster/on_activation()`, `var/drain_slowdown_affected`, `drain_per_step`, `var/drain`,`/obj/item/mod/module/armor_assist/proc/drain_on_step`
+- `code\modules\mod\modules\modules_science.dm` : `/obj/item/mod/module/anomaly_locked/antigrav`,`active_power_cost`, `var/incompatible_modules`, `var/teleport_time`, `var/cooldown_time`, `var/use_power_cost`
+- `code/modules/mod/modules/modules_general.dm` : , `overlay_state_inactive`, `var/assist_drain_increase`
+- `code\modules\mod\modules\modules_antag.dm`: `/obj/item/mod/module/armor_booster`, `/obj/item/mod/module/armor_booster/on_activation()`, `var/drain_slowdown_affected`, `drain_per_step`, `var/drain`,`/obj/item/mod/module/armor_assist/proc/drain_on_step`, `/obj/item/mod/module/chameleon/proc/return_look`
 - `code\modules\mod\modules\modules_science.dm`: `/obj/item/mod/module/anomaly_locked/teleporter`, `/obj/item/mod/module/anomaly_locked/antigrav`
-- `code\modules\mod\modules\_module.dm` : `incompatible_modules`
+- `code\modules\mod\modules\_module.dm` : `incompatible_modules`, `var/assist_drain_increase`
 **Сигналы и другие вещи**
 - `code\modules\mob\living\carbon\human\human_defense.dm` : `/mob/living/carbon/human/hitby`, `/mob/living/carbon/human/bullet_act`
 Добавляем отправку сигналов для работы энергощита и армор бустера. Всё ещё не работает

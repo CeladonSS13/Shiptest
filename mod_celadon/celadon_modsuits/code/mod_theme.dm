@@ -96,7 +96,7 @@
 		not alive. The user will also find narrow doorframes nigh-impossible to surmount."
 
 /datum/mod_theme/security
-	module_blacklist = list(/obj/item/mod/module/armor_booster/regular)
+	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 35, "energy" = 30, "bomb" = 35, "bio" = 100, "fire" = 75, "acid" = 75)
 	desc = "A Vigilitas Interstellar security suit, offering quicker speed at the cost of carrying capacity."
 	extended_desc = "A Vigilitas Interstellar classic, this model of MODsuit has been designed for quick response to \
@@ -108,8 +108,8 @@
 	charge_drain = DEFAULT_CHARGE_DRAIN * 2
 
 /datum/mod_theme/safeguard
-	module_blacklist = list(/obj/item/mod/module/armor_booster/regular)
-	// armor = list("melee" = 30, "bullet" = 35, "laser" = 40, "energy" = 30, "bomb" = 40, "bio" = 100, "fire" = 100, "acid" = 95)
+	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
+	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 40, "bomb" = 25, "bio" = 100, "rad" = 50, "fire" = 95, "acid" = 95)
 	desc = "A Vigilitas Interstellar advanced security suit, offering greater speed and fire protection than the standard security model."
 	extended_desc = "A Vigilitas Interstellar advanced security suit, and their latest model. This variant has \
 		ditched the presence of a reinforced glass visor entirely, replacing it with a 'blast visor' utilizing a \
@@ -119,7 +119,7 @@
 		both corrosive environments and sudden impacts to the user's joints."
 
 /datum/mod_theme/magnate
-	module_blacklist = list(/obj/item/mod/module/armor_booster/regular)
+	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
 	// armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 50, "bio" = 100, "fire" = 100, "acid" = 100)
 	desc = "A fancy, very protective suit for Nanotrasen's captains. Shock, fire and acid-proof while also having a large capacity and high speed."
 	extended_desc = "They say it costs four hundred thousand credits to run this MODsuit... for twelve seconds. \
@@ -144,7 +144,7 @@
 /datum/mod_theme/syndicate
 	//armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90)
 	armor = list("melee" = 45, "bullet" = 50, "laser" = 35, "energy" = 40, "bomb" = 40, "bio" = 100, "rad" = 50, "fire" = 60, "acid" = 90)
-	module_blacklist = list(/obj/item/mod/module/armor_booster/regular)
+	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
 	inbuilt_modules = list()
 	desc = "A suit designed by Gorlex Marauders, offering armor ruled illegal in most of the Solar Federation."
 	extended_desc = "An advanced combat suit adorned in a sinister crimson red color scheme, produced and manufactured \
@@ -157,7 +157,7 @@
 
 /datum/mod_theme/elite
 	armor = list("melee" = 60, "bullet" = 55, "laser" = 50, "energy" = 60, "bomb" = 55, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 100)
-	module_blacklist = list(/obj/item/mod/module/armor_booster/regular)
+	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
 	inbuilt_modules = list()
 	desc = "An elite suit upgraded by Cybersun Industries, offering upgraded armor values."
 	extended_desc = "An evolution of the syndicate suit, featuring a bulkier build and a matte black color scheme, \
@@ -199,7 +199,7 @@
 
 // MARK: NT
 /datum/mod_theme/responsory
-	module_blacklist = list(/obj/item/mod/module/armor_booster/regular)
+	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
 	armor = list("melee" = 50, "bullet" = 40, "laser" = 50, "energy" = 50, "bomb" = 50, "bio" = 100, "fire" = 100, "acid" = 90)
 	// armor = list("melee" = 60, "bullet" = 50, "laser" = 60, "energy" = 50, "bomb" = 60, "bio" = 100, "fire" = 100, "acid" = 90)
 	desc = "A high-speed rescue suit by Nanotrasen, intended for its emergency response teams."
@@ -210,7 +210,7 @@
 		While wearing it you feel an extreme deference to darkness. "
 
 /datum/mod_theme/apocryphal
-	module_blacklist = list(/obj/item/mod/module/armor_booster/regular)
+	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
 	desc = "A high-tech, only technically legal, armored suit created by a collaboration effort between Nanotrasen and Vigilitas Interstellar."
 	extended_desc = "A bulky and only legal by technicality suit, this ominous black and red MODsuit is only worn by \
 		Nanotrasen Black Ops teams. If you can see this suit, you fucked up. A collaborative joint effort between \
@@ -220,7 +220,7 @@
 		There seems to be a little inscription on the wrist that reads; \'squiddie', d'aww."
 
 /datum/mod_theme/corporate
-	module_blacklist = list(/obj/item/mod/module/armor_booster/regular)
+	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
 	desc = "A fancy, high-tech suit for Nanotrasen's high ranking officers."
 	extended_desc = "An even more costly version of the Magnate model, the corporate suit is a thermally insulated, \
 		anti-corrosion coated suit for high-ranking CentCom Officers, deploying pristine protective armor and \
@@ -255,7 +255,7 @@
 	siemens_coefficient = 0
 	slowdown_inactive = 1
 	slowdown_active = 1
-	module_blacklist = list(/obj/item/mod/module/armor_booster/regular)
+	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
 	allowed_suit_storage = list(
 		/obj/item/flashlight,
 		/obj/item/tank/internals,
@@ -312,7 +312,7 @@
 	siemens_coefficient = 0
 	slowdown_inactive = 1
 	slowdown_active = 0.5
-	module_blacklist = list(/obj/item/mod/module/armor_booster/regular)
+	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
 	allowed_suit_storage = list(
 		/obj/item/flashlight,
 		/obj/item/tank/internals,
@@ -363,7 +363,7 @@
 	siemens_coefficient = 0
 	slowdown_inactive = 1
 	slowdown_active = 0.5
-	module_blacklist = list(/obj/item/mod/module/armor_booster/regular)
+	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
 	allowed_suit_storage = list(
 		/obj/item/flashlight,
 		/obj/item/tank/internals,

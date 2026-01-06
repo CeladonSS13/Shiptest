@@ -1,14 +1,14 @@
 /*
 MARK: ARMOR BOOSTER
 */
-/obj/item/mod/module/armor_booster/regular
+/obj/item/mod/module/armor_booster/civilian
 	name = "MOD civilian armor booster module"
 	desc = "One of the newest technologies in the MOD sphere - armor booster - resembles special weave under main armor plates. \
 		Once under voltage, this \"power-weave\" gets less flexible, but hardens on hit, dampening it. \
 		While it's a high-end technology, it still has it's downsides: \
 		the required voltage is too extreme to run alongside EVA systems. \n\
-		This civilian model is more focused on comfort and uses excessive voltage to help operator with MOD's weight distribution. \n\
-		Beware, it can't be used with combat modsuits, as their protection is not compatible with them!"
+		This civilian model is more focused on comfort and uses excessive voltage to help operator with MOD's weight distribution."
+	armor_values = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5)
 	complexity = 3
 
 /obj/item/mod/module/armor_booster/heavy
@@ -89,7 +89,7 @@ MARK: ARMOR BOOSTER
 	dispense_type = /obj/item/restraints/legcuffs/bola/energy
 	cooldown_time = 5 SECONDS
 
-/obj/item/mod/module/status_readout/regular
+/obj/item/mod/module/status_readout/civilian
 	name = "MOD status readout module"
 	desc = "A once-common module, this technology unfortunately went out of fashion in the safer regions of space; \
 		and found new life in the research networks of the Periphery. This particular unit hooks into the suit's spine, \
@@ -99,16 +99,15 @@ MARK: ARMOR BOOSTER
 	icon_state = "status"
 	complexity = 1
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 0.4
-	incompatible_modules = list(/obj/item/mod/module/status_readout)
 	tgui_id = "status_readout"
 
 /obj/item/mod/module/blood_replika
 	name = "MOD blood replika module"
-	desc = "Набор инвазивно интегрируемых в пользователя кабелей, искусственных сосудов и псевдо-органов, поддерживающих боеспособность на максимальном уровне несмотря на все раны. Позволяет пользователю сражаться, пока тело не станет полностью бесполезным. \n\
-		Может быть включен ради поддержки человека в критическом состоянии. При деактивации оставляет следы на теле, повреждая ткани."
-	icon_state = "plate_compression"
+	desc = "Replika-einheiten blood replacement. Набор инвазивно интегрируемых в пользователя кабелей, искусственных сосудов и псевдо-органов, поддерживающих боеспособность на максимальном уровне несмотря на все раны. Позволяет пользователю сражаться, пока тело не станет полностью бесполезным. \n\
+		Может быть включен ради поддержки человека в критическом состоянии. При деактивации оставляет повреждает ткани человека."
 	module_type = MODULE_USABLE
 	idle_power_cost = DEFAULT_CHARGE_DRAIN * 2
+	use_power_cost = DEFAULT_CHARGE_DRAIN * 10
 	removable = FALSE
 	incompatible_modules = list(/obj/item/mod/module/blood_replika, /obj/item/mod/module/armor_assist)
 	cooldown_time = 120 SECONDS
@@ -122,16 +121,20 @@ MARK: ARMOR BOOSTER
 /obj/item/mod/module/blood_replika/on_suit_deactivation(deleting = FALSE)
 	if(mod.wearer)
 		REMOVE_TRAIT(mod.wearer, TRAIT_IGNOREDAMAGESLOWDOWN, MOD_TRAIT)
+		to_chat(mod.wearer, span_warning("Long cables and tubes loosen your body, as your blood returns to normal, seeming to disable your capability to overpower anything."))
+		playsound(mod.wearer, 'sound/effects/wounds/pierce1.ogg', 25, TRUE, SHORT_RANGE_SOUND_EXTRARANGE, frequency = 0.5)
+		mod.wearer.adjustBruteLoss(20)
 
 /obj/item/mod/module/blood_replika/on_use()
 	. = ..()
 	if(!.)
 		return
-	playsound(src, 'sound/effects/wounds/crackandbleed.ogg', 100, TRUE, SHORT_RANGE_SOUND_EXTRARANGE, frequency = 0.25)
+	playsound(src, 'sound/effects/wounds/crackandbleed.ogg', 100, TRUE, SHORT_RANGE_SOUND_EXTRARANGE, frequency = 0.5)
 	mod.wearer.apply_status_effect(/datum/status_effect/blood_replika)
+	drain_power(use_power_cost)
 
 /atom/movable/screen/alert/status_effect/blood_replika
-	name = "Replika blood replacement"
+	name = "Replika-einheiten blood replacement"
 	desc = "You can move faster than your broken body could normally handle. You are on the timer."
 	icon_state = "concealed"
 
@@ -151,5 +154,7 @@ MARK: ARMOR BOOSTER
 /datum/status_effect/blood_replika/on_remove()
 	REMOVE_TRAIT(owner, TRAIT_NOSOFTCRIT, type)
 	REMOVE_TRAIT(owner, TRAIT_NOHARDCRIT, type)
-	owner.adjustBruteLoss(25)
-	to_chat(owner, span_warning("Long cables and tubes loosen your body, seeming to disable your capability to overpower anything."))
+	to_chat(owner, span_warning("Long cables and tubes loosen your body, as your blood returns to normal, seeming to disable your capability to overpower anything."))
+	playsound(owner, 'sound/effects/wounds/pierce3.ogg', 120, TRUE, SHORT_RANGE_SOUND_EXTRARANGE, frequency = 0.4)
+	sleep(2 SECONDS)
+	owner.adjustBruteLoss(40)

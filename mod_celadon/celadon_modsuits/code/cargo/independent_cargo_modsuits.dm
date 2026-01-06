@@ -187,12 +187,12 @@
 	contains = list(/obj/item/mod/module/dispenser/bola)
 
 //MARK: Armor boosters
-/datum/supply_pack/faction/independent/modsuits/modules/armor_booster_regular
+/datum/supply_pack/faction/independent/modsuits/modules/armor_booster_civilian
 	name = "MOD civilian armor booster Module"
 	desc = "Contains an advanced armor booster module that significantly increases the user's movement speed and suit's protection while active. Manufactured by Cybersun Biodynamics. \n\
 			WARNING: It can't be used on non-cilivian version of MODsuits."
 	cost = 1500
-	contains = list(/obj/item/mod/module/armor_booster/regular)
+	contains = list(/obj/item/mod/module/armor_booster/civilian)
 
 /datum/supply_pack/faction/independent/modsuits/modules/armor_booster_light
 	name = "MOD light armor booster Module"

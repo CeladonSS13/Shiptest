@@ -644,7 +644,7 @@
 		/datum/material/glass=1000,
 		/datum/material/titanium=400,
 	)
-	build_path = /obj/item/mod/module/status_readout/regular
+	build_path = /obj/item/mod/module/status_readout/civilian
 	category = list(
 		"MOD Modules", "Medical Modules"
 	)

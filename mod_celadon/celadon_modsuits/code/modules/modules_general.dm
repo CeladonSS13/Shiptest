@@ -1,6 +1,3 @@
-/obj/item/mod/module/jetpack/advanced
-	assist_drain_increase = 150
-
 // MARK: IQ FLASHLIGHT
 /obj/item/mod/module/flashlight_inteq
 	name = "InteQ MOD flashlight module"

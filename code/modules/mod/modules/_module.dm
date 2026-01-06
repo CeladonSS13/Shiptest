@@ -51,6 +51,10 @@
 	var/allowed_in_phaseout = FALSE
 	/// If we're allowed to use this module while the suit is disabled.
 	var/allowed_inactive = FALSE
+	// [CELADON-ADD] - CELADON_MODSUITS
+	/// Насколько много мы увеличиваем потребление энергии за шаг у армор ассиста?
+	var/assist_drain_increase = 0
+	// [/CELADON-ADD]
 	/// Timer for the cooldown
 	COOLDOWN_DECLARE(cooldown_timer)
 
