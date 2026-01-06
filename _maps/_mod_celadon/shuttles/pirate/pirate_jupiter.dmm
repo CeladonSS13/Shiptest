@@ -11,11 +11,8 @@
 	dir = 8
 	},
 /obj/machinery/airalarm/directional/north,
-/obj/effect/turf_decal/spline/fancy/opaque/black,
-/obj/effect/turf_decal/spline/fancy/opaque/black{
-	dir = 1
-	},
-/turf/open/floor/plasteel/tech/grid,
+/obj/structure/catwalk/over,
+/turf/open/floor/plating,
 /area/ship/maintenance/central)
 "aq" = (
 /obj/machinery/door/airlock/hatch{
@@ -1635,11 +1632,8 @@
 /obj/machinery/light_switch{
 	pixel_y = 21
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/black{
-	dir = 1
-	},
-/obj/effect/turf_decal/spline/fancy/opaque/black,
-/turf/open/floor/plasteel/tech/grid,
+/obj/structure/catwalk/over,
+/turf/open/floor/plating,
 /area/ship/maintenance/central)
 "xW" = (
 /obj/structure/cable{
@@ -1709,11 +1703,8 @@
 	dir = 8
 	},
 /obj/machinery/airalarm/directional/south,
-/obj/effect/turf_decal/spline/fancy/opaque/black{
-	dir = 1
-	},
-/obj/effect/turf_decal/spline/fancy/opaque/black,
-/turf/open/floor/plasteel/tech/grid,
+/obj/structure/catwalk/over,
+/turf/open/floor/plating,
 /area/ship/maintenance/central)
 "yI" = (
 /obj/structure/cable{
@@ -3031,6 +3022,34 @@
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
+"Ru" = (
+/obj/machinery/door/airlock/hatch{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/maintenance/central)
 "Rz" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
@@ -3345,34 +3364,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
-"Zk" = (
-/obj/machinery/door/airlock/hatch{
-	dir = 4
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "4-8";
-	color = "#00aa00"
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/maintenance/central)
 "Zn" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -3459,11 +3450,8 @@
 	dir = 1;
 	pixel_y = -22
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/black,
-/obj/effect/turf_decal/spline/fancy/opaque/black{
-	dir = 1
-	},
-/turf/open/floor/plasteel/tech/grid,
+/obj/structure/catwalk/over,
+/turf/open/floor/plating,
 /area/ship/maintenance/central)
 
 (1,1,1) = {"
@@ -3767,13 +3755,13 @@ ef
 Wv
 up
 Wv
-Zk
+Ru
 OG
 MU
 lp
 MU
 OG
-Zk
+Ru
 Wv
 up
 Wv
