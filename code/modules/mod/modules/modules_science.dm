@@ -62,7 +62,7 @@
 	icon_state = "antigrav"
 	module_type = MODULE_TOGGLE
 	complexity = 3
-	active_power_cost = DEFAULT_CHARGE_DRAIN * 0.7
+	active_power_cost = DEFAULT_CHARGE_DRAIN * 4 // [CELADON-EDIT] - CELADON_MODSUITS // active_power_cost = DEFAULT_CHARGE_DRAIN * 0.7
 	// incompatible_modules = list(/obj/item/mod/module/anomaly_locked) // [CELADON-DELETE] - CELADON_MODSUITS - на тг убрали, у нас же вообще не имеет смысла так ограничивать.
 	cooldown_time = 0.5 SECONDS
 	accepted_anomalies = list(/obj/item/assembly/signaler/anomaly/grav)

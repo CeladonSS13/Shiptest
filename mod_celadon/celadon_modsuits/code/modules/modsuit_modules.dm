@@ -12,9 +12,6 @@
 			/obj/item/kinetic_crusher,
 		))
 
-/obj/item/mod/module/anomaly_locked/antigrav
-	active_power_cost = DEFAULT_CHARGE_DRAIN * 4
-
 // MARK: Mirage
 ///Mirage grenade dispenser - Dispenses grenades that copy the user's appearance.
 /obj/item/mod/module/dispenser/mirage

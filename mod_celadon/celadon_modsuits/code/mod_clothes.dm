@@ -8,8 +8,6 @@
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/mod_suit/mod_modules.dmi'
 	icon_state = "module"
 	overlay_icon_file = 'mod_celadon/_storage_icons/icons/items/clothing/mod_suit/overlay/mod_modules.dmi'
-	/// Насколько много мы увеличиваем потребление энергии за шаг у армор ассиста?
-	var/assist_drain_increase = 0
 
 /obj/item/mod/control
 	name = "MOD control unit"
@@ -48,6 +46,8 @@
 	heat_protection = CHEST|GROIN
 	cold_protection = CHEST|GROIN
 	obj_flags = IMMUTABLE_SLOW
+	// Убираем инвентарь в костюмах модов
+	pocket_storage_component_path = null
 
 /obj/item/clothing/gloves/mod
 	name = "MOD gauntlets"

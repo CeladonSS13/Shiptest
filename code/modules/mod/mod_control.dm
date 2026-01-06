@@ -421,7 +421,7 @@
 		to_chat(wearer, span_danger("The [src] stiffens and its servos weaken, slowing you down!"))
 		wearer.add_movespeed_modifier(/datum/movespeed_modifier/shove) //  maybe define a slightly more severe/longer slowdown for this
 		addtimer(CALLBACK(wearer, TYPE_PROC_REF(/mob/living/carbon, clear_shove_slowdown)), SHOVE_SLOWDOWN_LENGTH * 2) // 6 секунд
-	// [/CELADON-ADD] - CELADON_MODSUITS
+	// [/CELADON-ADD]
 	if(. & EMP_PROTECT_CONTENTS)
 		return
 	selected_module?.on_deactivation(display_message = TRUE)
