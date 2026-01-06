@@ -151,7 +151,8 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/advanced_airlock_controller{
-	pixel_x = -26
+	pixel_x = -26;
+	dir = 8
 	},
 /obj/effect/turf_decal/industrial/warning,
 /obj/effect/turf_decal/industrial/warning{
@@ -429,17 +430,10 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black,
 /obj/machinery/airalarm/directional/north,
 /obj/machinery/button/door{
-	pixel_x = 26;
+	pixel_x = 37;
 	pixel_y = -10;
 	name = "cargo bay door";
 	id = "noderidergogo"
-	},
-/obj/machinery/button/shieldwallgen{
-	dir = 8;
-	pixel_x = 21;
-	pixel_y = 4;
-	id = "noderiders";
-	name = "cargo airshield"
 	},
 /obj/machinery/computer/crew,
 /turf/open/floor/plasteel/telecomms_floor,
@@ -1588,11 +1582,18 @@
 /obj/item/megaphone,
 /obj/item/pinpointer/crew,
 /obj/item/clothing/mask/whistle,
-/obj/item/radio/intercom/directional/south,
+/obj/item/radio/intercom/directional/south{
+	pixel_x = 2
+	},
 /obj/item/blackmarket_uplink,
 /obj/item/stock_parts/cell/gun/upgraded,
 /obj/item/clothing/mask/gas/sechailer/swat,
 /obj/item/gun/energy/e_gun/e_old/hos,
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_x = -11;
+	pixel_y = -19
+	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "xy" = (
@@ -1677,14 +1678,11 @@
 	pixel_y = 25;
 	id = "jupiter_turrets"
 	},
-/obj/machinery/firealarm/directional/west,
+/obj/machinery/firealarm/directional/west{
+	pixel_y = 8
+	},
 /obj/machinery/light/small/built/directional/north{
 	pixel_x = 16
-	},
-/obj/machinery/light_switch{
-	dir = 4;
-	pixel_x = -20;
-	pixel_y = 10
 	},
 /obj/machinery/camera/xray{
 	dir = 4
@@ -2012,6 +2010,12 @@
 	},
 /obj/machinery/light/small/directional/east,
 /obj/machinery/newscaster/directional/south,
+/obj/machinery/button/shieldwallgen{
+	pixel_x = -5;
+	pixel_y = 20;
+	id = "noderiders";
+	name = "cargo airshield"
+	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "De" = (
@@ -2121,12 +2125,6 @@
 	icon_state = "2-8";
 	color = "#00aa00"
 	},
-/obj/machinery/button/door{
-	pixel_y = 22;
-	pixel_x = 38;
-	name = "bridge lockdown";
-	id = "noderiderbridge"
-	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "Eu" = (
@@ -2156,7 +2154,8 @@
 	},
 /obj/effect/turf_decal/industrial/warning,
 /obj/machinery/advanced_airlock_controller{
-	pixel_x = -26
+	pixel_x = -26;
+	dir = 8
 	},
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plasteel/mono/dark,
@@ -3348,6 +3347,13 @@
 /obj/structure/cable{
 	icon_state = "4-8";
 	color = "#00aa00"
+	},
+/obj/machinery/button/door{
+	pixel_y = 28;
+	pixel_x = -21;
+	name = "bridge lockdown";
+	id = "noderiderbridge";
+	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
