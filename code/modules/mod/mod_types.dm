@@ -208,7 +208,7 @@
 	/// The insignia type, insignias show what sort of member of the ERT you're dealing with.
 	var/insignia_type = /obj/item/mod/module/insignia
 	/// Additional module we add, as a treat.
-	var/additional_module = /obj/item/mod/module
+	var/additional_module = /obj/item/mod/module/power_kick // [CELADON-EDIT] -CELADON_MODSUITS //var/additional_module = /obj/item/mod/module
 
 /obj/item/mod/control/pre_equipped/responsory/Initialize(mapload, new_theme, new_skin, new_core)
 	initial_modules.Insert(1, insignia_type)

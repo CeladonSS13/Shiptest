@@ -158,6 +158,12 @@
 	cost = 6500
 	contains = list(/obj/item/mod/control/pre_equipped/safeguard)
 
+/datum/supply_pack/faction/nanotrasen/modsuits/complete/responsory
+	name = "Responsory MODsuit"
+	desc = "Contains an all-round Responsory modsuit, well regarded for its speed, protection and capabilties."
+	cost = 8500
+	contains = list(/obj/item/mod/control/pre_equipped/responsory)
+
 // MARK: SOLFED
 /datum/supply_pack/faction/solfed/modsuits
 	category = "Tech - MODsuits"

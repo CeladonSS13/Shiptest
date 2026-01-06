@@ -226,6 +226,37 @@
 	removable = FALSE
 	incompatible_modules = list(/obj/item/mod/module/insignia)
 	overlay_state_inactive = "module_insignia"
+	// [CELADON-ADD] - CELADON_MODSUITS - добавляем функционал смены цветов модсьютам
+	module_type = MODULE_USABLE
+	var/color_list = list(
+		"#4980a5" = /obj/item/mod/module/insignia/commander,
+		"#b30d1e" = /obj/item/mod/module/insignia/security,
+		"#e9c80e" = /obj/item/mod/module/insignia/engineer,
+		"#ebebf5" = /obj/item/mod/module/insignia/medic,
+		"#7925c7" = /obj/item/mod/module/insignia/janitor,
+		"#f0a00c" = /obj/item/mod/module/insignia/chaplain,
+		"custom color" = /obj/item/mod/module/insignia, // Для тех кто хочет выбрать свой цвет.
+		)
+	// [CELADON-ADD]
+
+// [CELADON-ADD] - CELADON_MODSUITS - добавляем функционал смены цветов модсьютам
+/obj/item/mod/module/insignia/on_use()
+	. = ..()
+	if(!.)
+		return
+	var/choice = show_radial_menu(mod.wearer, mod.wearer, color_list)
+	if(!choice)
+		return FALSE
+	switch(choice)
+		if("custom color")
+			var/chosen_colour = input(mod.wearer, "", "Choose Color", color) as color|null
+			if (!isnull(chosen_colour))
+				color = chosen_colour
+		else
+			color = choice
+
+	mod.wearer.update_inv_back(mod.slot_flags)
+// [/CELADON-ADD]
 
 /obj/item/mod/module/insignia/generate_worn_overlay(mutable_appearance/standing)
 	overlay_state_inactive = "[initial(overlay_state_inactive)]-[mod.skin]"
@@ -443,8 +474,12 @@
 	mod.desc = "[initial(mod.desc)] [mod.theme.desc]"
 	mod.icon_state = "[mod.skin]-[initial(mod.icon_state)]"
 	var/list/mod_skin = mod.theme.skins[mod.skin]
-	mod.icon = mod_skin[MOD_ICON_OVERRIDE] || 'icons/obj/clothing/modsuit/mod_clothing.dmi'
-	mod.mob_overlay_icon = mod_skin[MOD_WORN_ICON_OVERRIDE] || 'icons/mob/clothing/modsuit/mod_clothing.dmi'
+	// [CELADON-EDIT] - CELADON_MODSUITS
+	// mod.icon = mod_skin[MOD_ICON_OVERRIDE] || 'icons/obj/clothing/modsuit/mod_clothing.dmi'
+	// mod.mob_overlay_icon = mod_skin[MOD_WORN_ICON_OVERRIDE] || 'icons/mob/clothing/modsuit/mod_clothing.dmi'
+	mod.icon = mod_skin[MOD_ICON_OVERRIDE] || 'mod_celadon/_storage_icons/icons/items/clothing/mod_suit/mod_clothing.dmi'
+	mod.mob_overlay_icon = mod_skin[MOD_WORN_ICON_OVERRIDE] || 'mod_celadon/_storage_icons/icons/items/clothing/mod_suit/overlay/mod_clothing.dmi'
+	// [CELADON-EDIT]
 	mod.alternate_worn_layer = mod_skin[CONTROL_LAYER]
 	mod.lefthand_file = initial(mod.lefthand_file)
 	mod.righthand_file = initial(mod.righthand_file)
