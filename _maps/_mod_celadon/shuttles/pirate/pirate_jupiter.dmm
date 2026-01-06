@@ -359,6 +359,7 @@
 	icon_state = "0-6";
 	color = "#00aa00"
 	},
+/obj/machinery/light/dim/directional/west,
 /turf/open/floor/circuit/red,
 /area/ship/maintenance/central)
 "eF" = (
@@ -1973,15 +1974,13 @@
 	dir = 1
 	},
 /obj/item/radio/intercom/wideband/directional/south{
-	pixel_x = 10;
-	pixel_y = -28
+	pixel_y = -38
 	},
 /obj/item/radio/intercom/directional/south{
 	pixel_x = -10
 	},
 /obj/item/radio/intercom/directional/south{
-	pixel_x = -10;
-	pixel_y = -39;
+	pixel_x = 10;
 	frequency = 1425
 	},
 /turf/open/floor/circuit/green,
@@ -2297,6 +2296,20 @@
 /obj/structure/cable{
 	icon_state = "4-8";
 	color = "#00aa00"
+	},
+/obj/machinery/button/door{
+	pixel_y = 33;
+	pixel_x = 22;
+	dir = 8;
+	name = "emergency blast shutters";
+	id = "noderidercore_back"
+	},
+/obj/machinery/button/door{
+	pixel_y = -33;
+	pixel_x = 22;
+	dir = 8;
+	name = "emergency blast shutters";
+	id = "noderidercore"
 	},
 /turf/open/floor/circuit/green,
 /area/ship/maintenance/central)
@@ -2679,11 +2692,7 @@
 	icon_state = "0-5";
 	color = "#00aa00"
 	},
-/obj/machinery/light_switch{
-	dir = 4;
-	pixel_x = -19;
-	pixel_y = 8
-	},
+/obj/machinery/light/dim/directional/west,
 /turf/open/floor/circuit/red,
 /area/ship/maintenance/central)
 "LY" = (
@@ -2991,7 +3000,6 @@
 	icon_state = "0-10";
 	color = "#00aa00"
 	},
-/obj/machinery/light/dim/directional/east,
 /turf/open/floor/circuit/red,
 /area/ship/maintenance/central)
 "Rr" = (
@@ -3145,7 +3153,11 @@
 	icon_state = "0-9";
 	color = "#00aa00"
 	},
-/obj/machinery/light/dim/directional/east,
+/obj/machinery/light_switch{
+	dir = 8;
+	pixel_x = 21;
+	pixel_y = 8
+	},
 /turf/open/floor/circuit/red,
 /area/ship/maintenance/central)
 "UY" = (
@@ -3272,23 +3284,9 @@
 	icon_state = "4-8";
 	color = "#00aa00"
 	},
-/obj/machinery/button/door{
-	pixel_y = 33;
-	pixel_x = -22;
-	dir = 4;
-	name = "emergency blast shutters";
-	id = "noderidercore_back"
-	},
 /obj/structure/cable{
 	icon_state = "5-8";
 	color = "#00aa00"
-	},
-/obj/machinery/button/door{
-	pixel_y = -33;
-	pixel_x = -22;
-	dir = 4;
-	name = "emergency blast shutters";
-	id = "noderidercore"
 	},
 /turf/open/floor/circuit/green,
 /area/ship/maintenance/central)
