@@ -754,30 +754,32 @@
 
 /obj/item/gun/CtrlClick(mob/user)
 	. = ..()
-	check_safety(user)	// [CELADON-ADD] - E40FIX
 	if(isliving(user) && in_range(src, user))
 		toggle_safety(user)
 
 /obj/item/gun/attack_hand_secondary(mob/user, list/modifiers)
-	check_safety(user)	// [CELADON-ADD] - E40FIX
 	if(toggle_safety(user))
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	return ..()
 
 /obj/item/gun/attackby_secondary(obj/item/weapon, mob/user, params)
-	check_safety(user)	// [CELADON-ADD] - E40FIX
 	if(toggle_safety(user))
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	return ..()
 
 /obj/item/gun/attack_self_secondary(mob/user, modifiers)
-	check_safety(user)	// [CELADON-ADD] - E40FIX
 	if(toggle_safety(user))
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	return ..()
 
-// [CELADON-EDIT] - E40FIX
 /obj/item/gun/proc/toggle_safety(mob/user, silent=FALSE)
+	if(!has_safety)
+		return FALSE
+
+	// only checks for first level storage e.g pockets, hands, suit storage, belts, nothing in containers
+	if(!in_contents_of(user))
+		return FALSE
+
 	safety = !safety
 
 	if(!silent)
@@ -789,16 +791,6 @@
 
 	update_appearance()
 	return TRUE
-
-/obj/item/gun/proc/check_safety(mob/user)
-	if(!has_safety)
-		return FALSE
-
-	// only checks for first level storage e.g pockets, hands, suit storage, belts, nothing in containers
-	if(!in_contents_of(user))
-		return FALSE
-	return TRUE
-// [/CELADON-ADD]
 
 /obj/item/gun/attack_hand(mob/user, list/modifiers)
 	. = ..()
