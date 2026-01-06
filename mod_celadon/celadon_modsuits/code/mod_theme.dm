@@ -141,7 +141,6 @@
 
 // MARK: SYNDICATE
 /datum/mod_theme/syndicate
-	//armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90)
 	armor = list("melee" = 45, "bullet" = 50, "laser" = 35, "energy" = 40, "bomb" = 40, "bio" = 100, "rad" = 50, "fire" = 60, "acid" = 90)
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
 	inbuilt_modules = list()
@@ -199,8 +198,6 @@
 // MARK: NT
 /datum/mod_theme/responsory
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 50, "bomb" = 50, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 90)
-	// armor = list("melee" = 60, "bullet" = 50, "laser" = 60, "energy" = 50, "bomb" = 60, "bio" = 100, "fire" = 100, "acid" = 90)
 	desc = "A high-speed rescue suit by Nanotrasen, intended for its emergency response teams."
 	extended_desc = "A streamlined suit of Nanotrasen design, these sleek black suits are only worn by \
 		elite emergency response personnel to help save the day. While the slim and nimble design of the suit \
