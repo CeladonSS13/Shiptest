@@ -330,6 +330,8 @@
 	var/zap_flag = ZAP_STORM_FLAGS
 	var/max_damage = 3000
 	var/min_damage = 1000
+	var/max_zap_strike = 4	// [CELADON-ADD] - DANGER_STORM
+	var/min_zap_strike = 2	// [CELADON-ADD] - DANGER_STORM
 
 /datum/overmap/event/electric/alter_token_appearance()
 	icon_suffix = "[rand(1, 4)]"
@@ -341,7 +343,13 @@
 /datum/overmap/event/electric/affect_ship(datum/overmap/ship/controlled/S)
 	var/datum/virtual_level/ship_vlevel = S.shuttle_port.get_virtual_level()
 	var/turf/source = ship_vlevel.get_side_turf(pick(GLOB.cardinals))
-	tesla_zap(source, 32, rand(min_damage, max_damage), zap_flag)
+
+// [CELADON-EDIT]- DANGER_STORM
+	var/zap_strike = rand(min_zap_strike, max_zap_strike)
+	for(var/i = 1 to zap_strike)
+		tesla_zap(source, 32, rand(min_damage, max_damage) * 100, zap_flag)
+		sleep(1 SECONDS)
+// [/CELADON-EDIT]
 
 	for(var/mob/poor_crew as anything in GLOB.player_list)
 		if(S.shuttle_port.is_in_shuttle_bounds(poor_crew))
@@ -360,6 +368,8 @@
 	chain_rate = 2
 	max_damage = 1000
 	min_damage = 500
+	max_zap_strike = 2	// [CELADON-EDIT] - DANGER_STORM
+	min_zap_strike = 1	// [CELADON-EDIT] - DANGER_STORM
 
 /datum/overmap/event/electric/major
 	name = "electrical storm (major)"
@@ -369,7 +379,9 @@
 	chain_rate = 6
 	max_damage = 5000
 	min_damage = 3000
-	zap_flag = ZAP_DEFAULT_FLAGS
+	zap_flag = ZAP_TESLA_FLAGS
+	max_zap_strike = 6	// [CELADON-EDIT] - DANGER_STORM
+	min_zap_strike = 3	// [CELADON-EDIT] - DANGER_STORM
 
 /datum/overmap/event/nebula
 	name = "nebula"
