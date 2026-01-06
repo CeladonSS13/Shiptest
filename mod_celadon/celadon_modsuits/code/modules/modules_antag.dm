@@ -161,6 +161,7 @@ MARK: ARMOR BOOSTER
 	ADD_TRAIT(owner, TRAIT_NOHARDCRIT, type)
 	owner.remove_CC()
 	owner.bodytemperature = owner.get_body_temp_normal()
+	owner.playsound_local(owner, 'sound/health/fastbeat.ogg', 40, channel = CHANNEL_HEARTBEAT, use_reverb = FALSE, frequency = 0.67)
 	return TRUE
 
 /datum/status_effect/blood_replika/proc/suit_deactivation_handler()

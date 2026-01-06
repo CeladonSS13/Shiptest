@@ -20,7 +20,7 @@
 		/obj/item/mod/module/storage/large_capacity,
 		/obj/item/mod/module/welding,
 		/obj/item/mod/module/dna_lock,
-		/obj/item/mod/module/kinesis/prebuilt,
+		/obj/item/mod/module/anomaly_locked/kinesis/prebuilt,
 		/obj/item/mod/module/emp_shield,
 		/obj/item/mod/module/magnetic_harness,
 		/obj/item/mod/module/flashlight,
