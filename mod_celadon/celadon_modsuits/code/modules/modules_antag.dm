@@ -101,10 +101,17 @@ MARK: ARMOR BOOSTER
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 0.4
 	tgui_id = "status_readout"
 
+#define COMSIG_MOD_BLOOD_REPLIKA_DEACTIVATION "mod_blood_replika_deactivation"
+
 /obj/item/mod/module/blood_replika
 	name = "MOD blood replika module"
-	desc = "Replika-einheiten blood replacement. Набор инвазивно интегрируемых в пользователя кабелей, искусственных сосудов и псевдо-органов, поддерживающих боеспособность на максимальном уровне несмотря на все раны. Позволяет пользователю сражаться, пока тело не станет полностью бесполезным. \n\
-		Может быть включен ради поддержки человека в критическом состоянии. При деактивации оставляет повреждает ткани человека."
+	desc = "Replika-einheiten blood replacement. Originally intended for use in zero-gravity medical emergencies where blood clotting is impossible, \
+	this set of cables, artificial vessels and pseudo-organs can be invasively integrated into the user to maintain maximum combat effectiveness despite injuries. \n\
+	When the suit is activated, it connects the user's circulatory system to a life support, \
+	allowing them to remain in combat operational until their body sustains critical injuries. \n\
+	It can be temporarily activated to enable the user to continue fighting until their body becomes completely useless. \
+	However, deactivation causes serious damage to human tissue and is potentially lethal for injured wearer. \n\
+	They don't seem to suppress pain, though."
 	module_type = MODULE_USABLE
 	idle_power_cost = DEFAULT_CHARGE_DRAIN * 2
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 10
@@ -117,25 +124,28 @@ MARK: ARMOR BOOSTER
 
 /obj/item/mod/module/blood_replika/on_suit_activation()
 	ADD_TRAIT(mod.wearer, TRAIT_IGNOREDAMAGESLOWDOWN, MOD_TRAIT)
+	mod.wearer.force_scream()
 
 /obj/item/mod/module/blood_replika/on_suit_deactivation(deleting = FALSE)
 	if(mod.wearer)
 		REMOVE_TRAIT(mod.wearer, TRAIT_IGNOREDAMAGESLOWDOWN, MOD_TRAIT)
-		to_chat(mod.wearer, span_warning("Long cables and tubes loosen your body, as your blood returns to normal, seeming to disable your capability to overpower anything."))
+		to_chat(mod.wearer, span_warning("Long pulsating cables crawl out of your body [!(HAS_TRAIT(mod.wearer, TRAIT_ANALGESIA) || HAS_TRAIT(mod.wearer, TRAIT_PAIN_RESIST)) ? "while you feel a throbbing pain in all your muscles" : ""]."))
 		playsound(mod.wearer, 'sound/effects/wounds/pierce1.ogg', 25, TRUE, SHORT_RANGE_SOUND_EXTRARANGE, frequency = 0.5)
 		mod.wearer.adjustBruteLoss(20)
+		mod.wearer.force_scream()
+		SEND_SIGNAL(mod.wearer, COMSIG_MOD_BLOOD_REPLIKA_DEACTIVATION)
 
 /obj/item/mod/module/blood_replika/on_use()
 	. = ..()
 	if(!.)
 		return
-	playsound(src, 'sound/effects/wounds/crackandbleed.ogg', 100, TRUE, SHORT_RANGE_SOUND_EXTRARANGE, frequency = 0.5)
+	playsound(src, 'sound/effects/wounds/crackandbleed.ogg', 60, TRUE, SHORT_RANGE_SOUND_EXTRARANGE, frequency = 0.4)
 	mod.wearer.apply_status_effect(/datum/status_effect/blood_replika)
 	drain_power(use_power_cost)
 
 /atom/movable/screen/alert/status_effect/blood_replika
 	name = "Replika-einheiten blood replacement"
-	desc = "You can move faster than your broken body could normally handle. You are on the timer."
+	desc = "Your body has been pierced by your MODsuit, keeping you alive. You are on the timer."
 	icon_state = "concealed"
 
 /datum/status_effect/blood_replika
@@ -145,16 +155,22 @@ MARK: ARMOR BOOSTER
 	alert_type = /atom/movable/screen/alert/status_effect/blood_replika
 
 /datum/status_effect/blood_replika/on_apply()
+	RegisterSignal(owner, COMSIG_MOD_BLOOD_REPLIKA_DEACTIVATION, PROC_REF(suit_deactivation_handler))
 	ADD_TRAIT(owner, TRAIT_NOSOFTCRIT, type)
 	ADD_TRAIT(owner, TRAIT_NOHARDCRIT, type)
 	owner.remove_CC()
 	owner.bodytemperature = owner.get_body_temp_normal()
 	return TRUE
 
+/datum/status_effect/blood_replika/proc/suit_deactivation_handler()
+	SIGNAL_HANDLER
+	owner.remove_status_effect(/datum/status_effect/blood_replika)
+
 /datum/status_effect/blood_replika/on_remove()
 	REMOVE_TRAIT(owner, TRAIT_NOSOFTCRIT, type)
 	REMOVE_TRAIT(owner, TRAIT_NOHARDCRIT, type)
 	to_chat(owner, span_warning("Long cables and tubes loosen your body, as your blood returns to normal, seeming to disable your capability to overpower anything."))
-	playsound(owner, 'sound/effects/wounds/pierce3.ogg', 120, TRUE, SHORT_RANGE_SOUND_EXTRARANGE, frequency = 0.4)
-	sleep(2 SECONDS)
+	playsound(owner, 'sound/effects/wounds/pierce3.ogg', 120, TRUE, SHORT_RANGE_SOUND_EXTRARANGE, frequency = 0.3)
 	owner.adjustBruteLoss(40)
+	owner.force_scream()
+	UnregisterSignal(owner, COMSIG_MOD_BLOOD_REPLIKA_DEACTIVATION)
