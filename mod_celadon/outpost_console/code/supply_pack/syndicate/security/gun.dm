@@ -81,7 +81,7 @@ hp
 */
 
 /datum/supply_pack/faction/syndicate/gun/bulldog
-	name = "Auto-Shotgun Bulldog (12g)"
+	name = "Auto-Shotgun - Bulldog (12g)"
 	desc = "An automatic shotgun chambered in 12ga produced by Scarborough Arms for exclusive use by licensed buyers. Comes with 8-round box magazines."
 	contains = list(/obj/item/storage/guncase/bulldog)
 	cost = 4000
