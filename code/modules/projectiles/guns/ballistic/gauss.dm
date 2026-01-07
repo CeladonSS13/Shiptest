@@ -6,7 +6,6 @@
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/gauss_hands_right.dmi'	// [/CELADON-EDIT]
 	mob_overlay_icon = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/onmob.dmi'
 	icon_state = "gauss"
-	item_state = "arg"
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
 	default_ammo_type = /obj/item/ammo_box/magazine/gauss
 	allowed_ammo_types = list(
