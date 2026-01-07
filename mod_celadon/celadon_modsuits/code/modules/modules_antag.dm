@@ -63,6 +63,11 @@ MARK: ARMOR BOOSTER
 		However, it has increased energy consumption while armor booster is active."
 	drain_slowdown_affected = FALSE
 
+
+/obj/item/mod/module/power_kick
+	complexity = 2
+	removable = TRUE
+
 //MARK: Переделывает модули ниндзи в боевые
 /obj/item/mod/module/stealth/military
 	name = "MOD military cloaking module"

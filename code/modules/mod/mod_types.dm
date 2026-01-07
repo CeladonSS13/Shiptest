@@ -151,7 +151,7 @@
 	applied_cell = /obj/item/stock_parts/cell/hyper
 	// [/CELADON-EDIT]
 	initial_modules = list(
-		/obj/item/mod/module/storage,
+		/obj/item/mod/module/storage/syndicate, // [CELADON-EDIT] - CELADON_MODSUITS // /obj/item/mod/module/storage,
 		// /obj/item/mod/module/emp_shield, // [CELADON-REMOVE] - CELADON_MODSUITS // ЭМИ сложнее получить
 		/obj/item/mod/module/magnetic_harness,
 		/obj/item/mod/module/jetpack,

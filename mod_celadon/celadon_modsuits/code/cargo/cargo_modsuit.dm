@@ -302,11 +302,24 @@
 	cost = 5000 // he-he
 	contains = list(/obj/item/mod/module/dispenser/mirage)
 
-/datum/supply_pack/faction/syndicate/modsuits/modules/mirage
+/datum/supply_pack/faction/syndicate/modsuits/modules/storage
 	name = "MOD syndicate storage module"
 	desc = "Contains a very high-class storage module to put all of your most precious savings in!"
 	cost = 2000 // he-he
 	contains = list(/obj/item/mod/module/storage/syndicate)
+
+/datum/supply_pack/faction/syndicate/modsuits/modules/chameleon
+	name = "MOD chameleon Module"
+	desc = "Contains a module that can disguise your MOD control into something different while deactivated."
+	cost = 1000
+	contains = list(/obj/item/mod/module/chameleon)
+
+/datum/supply_pack/faction/syndicate/modsuits/modules/stealth_military
+	name = "MOD military cloak Module"
+	desc = "Contains a module that can cloak your body while active. Requires military capacitor later to be completed."
+	cost = 3000 // + 2000 from capacitor
+	contains = list(/obj/item/mod/module/stealth/military)
+
 
 // MARK: armor booster
 /datum/supply_pack/faction/syndicate/modsuits/modules/armor_booster_light
