@@ -232,9 +232,9 @@
 	icon_state = "privatecrate"
 
 /datum/supply_pack/faction/independent/tools/wall_painter
-	name = "Набор юного художника"
+	name = "Artist's kit"
 	desc = "Содержит 1х покрасчик стен, 1х покрасчик труб, 1х покрасчик декалей, 1х покрасчик шлюзов, 1х долото."
-	cost = 1500
+	cost = 1000
 	contains = list(
 		/obj/item/wall_painter,
 		/obj/item/pipe_painter,
@@ -243,3 +243,10 @@
 		/obj/item/chisel)
 	crate_type = /obj/structure/closet/crate/privatecrate
 	crate_name = "private art crate"
+
+/datum/supply_pack/faction/independent/tools/inducer
+	name = "Inducer"
+	desc = "An electromagnetic induction charging device, used for both field engineering/recharging and reactivation of Positronics. Not suitable for cooking."
+	cost = 1000
+	contains = list(/obj/item/inducer/sci)
+	crate_name = "inducer crate"

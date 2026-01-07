@@ -17,8 +17,8 @@
 	crate_name = "basic mining crate"
 
 /datum/supply_pack/faction/nanotrasen/tools/inducer
-	name = "Inducer"
+	name = "Inducer (Engineer)"
 	desc = "An electromagnetic induction charging device, used for both field engineering/recharging and reactivation of Positronics. Not suitable for cooking."
-	cost = 750
+	cost = 1000
 	contains = list(/obj/item/inducer)
 	crate_name = "inducer crate"

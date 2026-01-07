@@ -9,6 +9,13 @@
 	contains = list(/obj/item/melee/sledgehammer/gorlex)
 	crate_name = "sledgehammer crate"
 
+/datum/supply_pack/faction/syndicate/tools/inducer
+	name = "Inducer (Expanded)"
+	desc = "An electromagnetic induction charging device, used for both field engineering/recharging and reactivation of Positronics. Not suitable for cooking."
+	cost = 1250
+	contains = list(/obj/item/inducer/syndicate)
+	crate_name = "inducer crate"
+
 /datum/supply_pack/faction/syndicate/tools/borg_module_syndicate_random
 	name = "Syndicate unknown borg module"
 	desc = "Contains a unknown upgrade borg module of Syndicate."
