@@ -20,7 +20,7 @@
 /datum/supply_pack/faction/solfed/civilian/banner
 	name = "Solar Federation Banner"
 	desc = "Dark blue banner with Solar Federation logo on it.. Makes you love democracy."
-	contains = list(/obj/item/banner/solfed)
+	contains = list(/obj/item/banner/solfed/mundane)
 	cost = 300
 
 /datum/supply_pack/faction/solfed/civilian/bedsheet
