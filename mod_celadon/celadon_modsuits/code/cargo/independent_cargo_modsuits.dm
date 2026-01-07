@@ -24,7 +24,7 @@
 /datum/supply_pack/faction/independent/modsuits/complete/loader
 	name = "Loader MODsuit"
 	desc = "Contains a cargo loader modsuit. Features ample carrying space, though not atmospherically sealed."
-	cost = 4000 // ripley at home
+	cost = 3000 // ripley at home
 	contains = list(/obj/item/mod/control/pre_equipped/loader)
 
 /datum/supply_pack/faction/independent/modsuits/complete/mining
@@ -135,13 +135,13 @@
 */
 
 // MARK: STORAGE
-/datum/supply_pack/modsuits/modules/storage
+/datum/supply_pack/faction/independent/modsuits/storage
 	name = "MOD storage module"
 	desc = "Contains a low-class storage module to put all your valueless shit in."
 	contains = list(/obj/item/mod/module/storage)
 	cost = 200 // literally a danked version of backpack
 
-/datum/supply_pack/modsuits/modules/expanded_storage
+/datum/supply_pack/faction/independent/modsuits/expanded_storage
 	name = "MOD expanded storage module"
 	desc = "Contains a high-class storage module to put all of your most precious savings in!"
 	contains = list(/obj/item/mod/module/storage/large_capacity)

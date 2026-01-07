@@ -357,6 +357,7 @@
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	siemens_coefficient = 0
+	complexity_max = DEFAULT_MAX_COMPLEXITY + 5
 	slowdown_inactive = 1
 	slowdown_active = 0.6
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
