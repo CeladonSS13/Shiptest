@@ -2,8 +2,8 @@
 	name = "prototype gauss rifle"
 	desc = "An experimental Nanotrasen rifle with a high capacity. Useful for putting down crowds. Chambered in ferromagnetic pellets."
 	icon = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/48x32.dmi'
-	lefthand_file = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/lefthand.dmi'
-	righthand_file = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/righthand.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/gauss_hands_left.dmi'		// [CELADON-EDIT]
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/gauss_hands_right.dmi'	// [/CELADON-EDIT]
 	mob_overlay_icon = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/onmob.dmi'
 	icon_state = "gauss"
 	item_state = "arg"
