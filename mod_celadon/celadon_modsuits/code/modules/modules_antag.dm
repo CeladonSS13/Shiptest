@@ -113,9 +113,9 @@ MARK: ARMOR BOOSTER
 	However, deactivation causes serious damage to human tissue and is potentially lethal for injured wearer. \n\
 	They don't seem to suppress pain, though."
 	module_type = MODULE_USABLE
-	idle_power_cost = DEFAULT_CHARGE_DRAIN * 2
+	idle_power_cost = DEFAULT_CHARGE_DRAIN
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 10
-	removable = FALSE
+	removable = TRUE
 	incompatible_modules = list(/obj/item/mod/module/blood_replika, /obj/item/mod/module/armor_assist)
 	cooldown_time = 120 SECONDS
 	overlay_state_inactive = "module_bloodreplika_off"
