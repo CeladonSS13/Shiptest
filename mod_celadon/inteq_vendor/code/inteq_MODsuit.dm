@@ -249,3 +249,22 @@
 		/obj/item/mod/module/shield/inteq,
 	)
 
+/obj/item/mod/control/pre_equipped/inteq/empty
+	theme = /datum/mod_theme/inteq
+	applied_cell = /obj/item/stock_parts/cell/super
+	initial_modules = list(
+		/obj/item/mod/module/storage,
+		/obj/item/mod/module/flashlight_inteq,
+		/obj/item/mod/module/jetpack,
+	)
+
+/obj/item/mod/control/pre_equipped/inteq/elite/empty
+	theme = /datum/mod_theme/inteq/elite
+	applied_cell = /obj/item/stock_parts/cell/super
+	initial_modules = list(
+		/obj/item/mod/module/storage/large_capacity,
+		/obj/item/mod/module/flashlight_inteq,
+		/obj/item/mod/module/dna_lock,
+		/obj/item/mod/module/jetpack,
+	)
+

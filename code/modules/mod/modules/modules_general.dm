@@ -146,7 +146,7 @@
 	desc = "A simple pair of flashlights installed on the left and right sides of the helmet."
 	icon_state = "flashlight"
 	module_type = MODULE_TOGGLE
-	complexity = 1
+	// [CELADON-REMOVE] - CELADON_MODSUITS // complexity = 1
 	active_power_cost = MODULE_CHARGE_DRAIN_LOW
 	incompatible_modules = list(/obj/item/mod/module/flashlight)
 	cooldown_time = 0.5 SECONDS

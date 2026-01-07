@@ -1,11 +1,11 @@
 ///Kinesis - Gives you the ability to move and launch objects.
 /obj/item/mod/module/anomaly_locked/kinesis
-	name = "кинезис модуль"
-	desc = "Модуль, подключаемый к предплечью, технология изготовления которого считалась потерянной в течение многих лет, \
-		и крайне редко встречаемый за исключением немногочисленных сохранившихся образцов. \
-		Эта технология позволяет пользователю создавать точные антигравитационные поля, \
-		позволяя им перемещать объекты размером от от небольшого металлического стержня до больших промышленных машин. \
-		Как ни странно, это не работает на живых существах."
+	name = "MOD kinesis module"
+	desc = "A modular plug-in to the forearm, this module was presumed lost for many years, \
+		despite the suits it used to be mounted on still seeing some circulation. \
+		This piece of technology allows the user to generate precise anti-gravity fields, \
+		letting them move objects as small as a titanium rod to as large as industrial machinery. \
+		Oddly enough, it doesn't seem to work on living creatures."
 	icon_state = "kinesis"
 	module_type = MODULE_ACTIVE
 	complexity = 3
@@ -216,7 +216,7 @@
 	prebuilt = TRUE
 
 /obj/item/mod/module/anomaly_locked/kinesis/prebuilt/prototype
-	name = "MOD прототип кинезис модуля"
+	name = "MOD prototype kinesis module"
 	complexity = 0
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 20
 	removable = FALSE
@@ -265,7 +265,7 @@
 	given_y = round(icon_y - world.icon_size * our_y, 1)
 
 /obj/item/mod/module/anomaly_locked/kinesis/plus
-	name = "продвинутый кинезис модуль"
+	name = "MOD advanced kinesis module"
 	desc = "Секретная военная разработка безымянного правительственного оружейного концерна. \
 		Продвинутый кинезис модуль - это мощный тактический инструмент, позволяющий пользователю воздействовать на физическую природу гравитации. \
 		В отличии от своего раннего прототипа эта модель так же способна воздействовать на живые объекты. \

@@ -93,7 +93,7 @@
 /datum/supply_pack/faction/independent/modsuits/modules/welding
 	name = "MOD Welding Protection Module"
 	desc = "Contains a welding protection module to protect your eyes."
-	cost = 500
+	cost = 250
 	contains = list(/obj/item/mod/module/welding)
 
 /datum/supply_pack/faction/independent/modsuits/modules/rad_protection
@@ -165,7 +165,7 @@
 /datum/supply_pack/faction/independent/modsuits/modules/mag_harness
 	name = "MOD Magnetic Harness Module"
 	desc = "Drop your gun or crusher? This handy magnetic harness will pick it up for you."
-	cost = 1500
+	cost = 750
 	contains = list(/obj/item/mod/module/magnetic_harness)
 
 /datum/supply_pack/faction/independent/modsuits/modules/holster
@@ -185,6 +185,12 @@
 	desc = "Contains a module that create energy bolas. Amazing."
 	cost = 2000
 	contains = list(/obj/item/mod/module/dispenser/bola)
+
+/datum/supply_pack/faction/independent/modsuits/modules/emp_shield
+	name = "MOD EMP shield Module"
+	desc = "Contains a module that protects your MODsuit from its main bane!"
+	cost = 5000
+	contains = list(/obj/item/mod/module/emp_shield)
 
 //MARK: Armor boosters
 /datum/supply_pack/faction/independent/modsuits/modules/armor_booster_civilian

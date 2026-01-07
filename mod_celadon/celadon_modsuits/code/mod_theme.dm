@@ -358,7 +358,7 @@
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	siemens_coefficient = 0
 	slowdown_inactive = 1
-	slowdown_active = 0.5
+	slowdown_active = 0.6
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
 	allowed_suit_storage = list(
 		/obj/item/flashlight,

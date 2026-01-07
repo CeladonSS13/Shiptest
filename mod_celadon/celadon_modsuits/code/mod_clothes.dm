@@ -9,6 +9,10 @@
 	icon_state = "module"
 	overlay_icon_file = 'mod_celadon/_storage_icons/icons/items/clothing/mod_suit/overlay/mod_modules.dmi'
 
+/obj/item/mod/module/examine(mob/user)
+	. = ..()
+	. +=  span_notice("This module takes <b>[complexity]</b> complexity.")
+
 /obj/item/mod/control
 	name = "MOD control unit"
 	desc = "The control unit of a Modular Outerwear Device, a powered, back-mounted biomimetic suit that protects against various environments."

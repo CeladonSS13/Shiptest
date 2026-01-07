@@ -48,14 +48,69 @@
 /obj/item/mod/control/pre_equipped/safeguard
 	req_access = list(ACCESS_OUTPOST_FACTION_NT)
 
-/obj/item/mod/control/pre_equipped/traitor
-	req_access = list(ACCESS_OUTPOST_FACTION_SYNDICATE)
-
-/obj/item/mod/control/pre_equipped/traitor_elite
-	req_access = list(ACCESS_OUTPOST_FACTION_SYNDICATE)
-
-/obj/item/mod/control/pre_equipped/nuclear
+/obj/item/mod/control/pre_equipped/syndicate
 	req_access = list(ACCESS_OUTPOST_FACTION_SYNDICATE)
 
 /obj/item/mod/control/pre_equipped/elite
 	req_access = list(ACCESS_OUTPOST_FACTION_SYNDICATE)
+
+
+// MARK: Пустые для карго
+
+/obj/item/mod/control/pre_equipped/safeguard/empty
+	theme = /datum/mod_theme/safeguard
+	applied_cell = /obj/item/stock_parts/cell/super
+	initial_modules = list(
+		/obj/item/mod/module/storage,
+		/obj/item/mod/module/flashlight,
+		/obj/item/mod/module/jetpack,
+		/obj/item/mod/module/megaphone,
+		/obj/item/mod/module/holster,
+		/obj/item/mod/module/visor/sechud
+	)
+
+/obj/item/mod/control/pre_equipped/responsory/empty
+	applied_cell = /obj/item/stock_parts/cell/super
+	req_access = list(ACCESS_CENT_GENERAL)
+	initial_modules = list(
+		/obj/item/mod/module/storage/large_capacity,
+		/obj/item/mod/module/jetpack,
+		/obj/item/mod/module/welding,
+		/obj/item/mod/module/flashlight,
+	)
+	insignia_type = /obj/item/mod/module/insignia
+	additional_module = null
+
+/obj/item/mod/control/pre_equipped/syndicate/empty
+	applied_cell = /obj/item/stock_parts/cell/hyper
+	initial_modules = list(
+		/obj/item/mod/module/storage/large_capacity,
+		/obj/item/mod/module/jetpack,
+		/obj/item/mod/module/flashlight,
+	)
+
+/obj/item/mod/control/pre_equipped/elite/empty
+	applied_cell = /obj/item/stock_parts/cell/hyper
+	initial_modules = list(
+		/obj/item/mod/module/storage/syndicate,
+		/obj/item/mod/module/jetpack/advanced,
+		/obj/item/mod/module/flashlight,
+	)
+
+/obj/item/mod/control/pre_equipped/falke/empty
+	applied_cell = /obj/item/stock_parts/cell/super
+	initial_modules = list(
+		/obj/item/mod/module/storage/large_capacity,
+		/obj/item/mod/module/welding,
+		/obj/item/mod/module/dna_lock,
+		/obj/item/mod/module/flashlight,
+	)
+
+/obj/item/mod/control/pre_equipped/storch/empty
+	applied_cell = /obj/item/stock_parts/cell/super
+	initial_modules = list(
+		/obj/item/mod/module/storage/large_capacity,
+		/obj/item/mod/module/welding,
+		/obj/item/mod/module/magnetic_harness,
+		/obj/item/mod/module/flashlight,
+	)

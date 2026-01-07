@@ -4,7 +4,7 @@
 	desc = "A single, yet powerful flashlight installed on the right side of the helmet."
 	icon_state = "inteq_flashlight"
 	module_type = MODULE_TOGGLE
-	complexity = 1
+	complexity = 0
 	active_power_cost = DEFAULT_CHARGE_DRAIN * 0.3
 	incompatible_modules = list(/obj/item/mod/module/flashlight)
 	cooldown_time = 0.5 SECONDS
