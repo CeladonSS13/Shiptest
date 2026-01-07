@@ -8,7 +8,16 @@
 /datum/export/gear/sec_armor
 	cost = 100
 	unit_name = "armor vest"
-	export_types = list(/obj/item/clothing/suit/armor/vest)
+	export_types = list(/obj/item/clothing/suit/armor/vest,
+		/obj/item/clothing/suit/armor/riot,
+		/obj/item/clothing/suit/armor/ramzi,
+		/obj/item/clothing/suit/armor/hardliners,
+		/obj/item/clothing/suit/armor/nanotrasen,
+		/obj/item/clothing/suit/armor/ngr,
+		/obj/item/clothing/suit/armor/roumain,
+		/obj/item/clothing/suit/armor/captaincoat,
+		/obj/item/clothing/suit/armor/laserproof)
+	exclude_types = 
 
 /datum/export/gear/riot_shield
 	cost = 100
