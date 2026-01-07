@@ -31,7 +31,7 @@
 	var/list/spaceproofed = list()
 	// [CELADON-ADD] - CELADON_MODSUITS
 	var/anti_flash = FALSE
-	assist_drain_increase = 150
+	assist_drain_increase = 100
 	use_power_cost = DEFAULT_CHARGE_DRAIN*0.1 // Попытка позже сделать эту штуку потребляющую энергию при попадании.
 	// [/CELADON-ADD] - CELADON_MODSUITS
 
@@ -114,9 +114,10 @@
 	overlay_state_active = "module_armorassist_on"
 	// [/CELADON-EDIT] - CELADON_MODSUITS
 	use_mod_colors = TRUE
-	// var/drain_per_step = 100
-	var/drain_per_step = 50 // [CELADON-EDIT] - CELADON_MODSUITS
+	// var/drain_per_step = 100 // [CELADON-DELETE] - CELADON_MODSUITS // не используется больше, используется вместо него use_power_cost
 	// [CELADON-ADD] - CELADON_MODSUITS
+	/// Потребление за шаг
+	use_power_cost = 30
 	/// Зависит ли наше потребление от замедления
 	var/drain_slowdown_affected = TRUE
 	// [/CELADON-ADD] - CELADON_MODSUITS
@@ -142,7 +143,7 @@
 	SIGNAL_HANDLER
 	// [CELADON-EDIT] - CELADON_MODSUITS - добавлена поддержка вариативности потребления.
 	//drain_power(drain_per_step, TRUE)
-	var/true_drain_per_step = drain_per_step
+	var/true_drain_per_step = use_power_cost
 	if(drain_slowdown_affected)
 		true_drain_per_step = (mod.slowdown_active+mod.slowdown+1)*true_drain_per_step
 	for(var/obj/item/mod/module/module as anything in mod.modules)
