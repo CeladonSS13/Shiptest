@@ -1,10 +1,46 @@
 /datum/supply_pack/faction/inteq/magazine
 	category = "Security - Magazines"
 
+/datum/supply_pack/faction/inteq/magazine/co9mm_mag
+	name = "\"Commisioner\" - Magazine (9x18mm)"
+	desc = "Contains a 9x18mm magazine for \"Commisioner\" pistols, with a capacity of 12 rounds. These rounds do okay damage, but struggle against armor."
+	contains = list(/obj/item/ammo_box/magazine/co9mm/empty)
+	cost = 150
+
+/datum/supply_pack/faction/inteq/magazine/m20_auto_elite
+	name = "Pinscher - Magazine (.44)"
+	desc = "Contains a .44 Roumain magazine for the Auto Elite pistol, with a capacity of 9 rounds."
+	contains = list(/obj/item/ammo_box/magazine/m20_auto_elite/empty)
+	cost = 250
+
+/datum/supply_pack/faction/inteq/magazine/a357_speedloader
+	name = "Revolver - Speedloader (.357)"
+	desc = "Contains a .357 speedloader for revolvers, with a capacity of 6 rounds."
+	contains = list(/obj/item/ammo_box/a357/empty)
+	cost = 250
+
+/datum/supply_pack/faction/inteq/magazine/m9mm_rattlesnake
+	name = "Kingsnake - Magazine (9x18mm)"
+	desc = "Contains a 9x18mm magazine for the Kingsnake machine pistol, with a capacity of 18 rounds."
+	contains = list(/obj/item/ammo_box/magazine/m9mm_rattlesnake/empty)
+	cost = 300
+
 /datum/supply_pack/faction/inteq/magazine/mongrel_mag
 	name = "Mongrel - Magazine (10x22mm)"
 	desc = "Contains a 10x22mm magazine for the SKM-44v 'Mongrel' SMG, with a capacity of 24 rounds."
 	contains = list(/obj/item/ammo_box/magazine/smgm10mm/empty)
+	cost = 300
+
+/datum/supply_pack/faction/nanotrasen/magazine/wt550_mag
+	name = "BDM-50 'Akita' - Magazine (4.6x30mm)"
+	desc = "Contains a 4.6x30mm magazine for the BDM-50 'Akita', with a capacity of 30 rounds."
+	cost = 300
+	contains = list(/obj/item/ammo_box/magazine/wt550m9/empty)
+
+/datum/supply_pack/faction/inteq/magazine/podium_mag
+	name = "P46 Schnauzer - Magazine (4.6x30mm)"
+	desc = "Contains a 4.6x30mm magazine for the Podium and Schnauzer pistols, with a capacity of 12 rounds."
+	contains = list(/obj/item/ammo_box/magazine/m46_30_podium)
 	cost = 300
 
 /datum/supply_pack/faction/inteq/magazine/rottweiler_mag
@@ -18,36 +54,6 @@
 	desc = "Contains a 7.62x40mm magazine for the SKM rifles, with a capacity of 40 rounds."
 	contains = list(/obj/item/ammo_box/magazine/skm_762_40/extended/empty)
 	cost = 1250
-
-/datum/supply_pack/faction/inteq/magazine/co9mm_mag
-	name = "\"Commisioner\" - Magazine (9x18mm)"
-	desc = "Contains a 9x18mm magazine for \"Commisioner\" pistols, with a capacity of 12 rounds. These rounds do okay damage, but struggle against armor."
-	contains = list(/obj/item/ammo_box/magazine/co9mm/empty)
-	cost = 150
-
-/datum/supply_pack/faction/inteq/magazine/m9mm_rattlesnake
-	name = "Kingsnake - Magazine (9x18mm)"
-	desc = "Contains a 9x18mm magazine for the Kingsnake machine pistol, with a capacity of 18 rounds."
-	contains = list(/obj/item/ammo_box/magazine/m9mm_rattlesnake/empty)
-	cost = 300
-
-/datum/supply_pack/faction/inteq/magazine/podium_mag
-	name = "P46 Schnauzer - Magazine (4.6x30mm)"
-	desc = "Contains a 4.6x30mm magazine for the Podium and Schnauzer pistols, with a capacity of 12 rounds."
-	contains = list(/obj/item/ammo_box/magazine/m46_30_podium)
-	cost = 300
-
-/datum/supply_pack/faction/inteq/magazine/m20_auto_elite
-	name = "Pinscher - Magazine (.44)"
-	desc = "Contains a .44 Roumain magazine for the Auto Elite pistol, with a capacity of 9 rounds."
-	contains = list(/obj/item/ammo_box/magazine/m20_auto_elite/empty)
-	cost = 250
-
-/datum/supply_pack/faction/inteq/magazine/a357_speedloader
-	name = "Revolver - Speedloader (.357)"
-	desc = "Contains a .357 speedloader for revolvers, with a capacity of 6 rounds."
-	contains = list(/obj/item/ammo_box/a357/empty)
-	cost = 250
 
 /* 12ga */
 
