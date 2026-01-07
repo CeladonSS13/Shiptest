@@ -49,7 +49,17 @@
 	cost = 250
 	unit_name = "common hunting trophy"
 	export_types = list(
-		/obj/item/mob_trophy/shiny,	// [CELADON-ADD] - HERMIT
+// [CELADON-ADD]
+		/obj/item/crusher_trophy/shiny,
+		/obj/item/crusher_trophy/legion_skull,
+		/obj/item/crusher_trophy/wolf_ear,
+		/obj/item/crusher_trophy/bear_paw,
+		/obj/item/crusher_trophy/goliath_tentacle,
+		/obj/item/crusher_trophy/watcher_wing,
+		/obj/item/crusher_trophy/brimdemon_fang,
+		/obj/item/crusher_trophy/lobster_claw,
+		/obj/item/mob_trophy/shiny,
+// [/CELADON-ADD]
 		/obj/item/mob_trophy/legion_skull,
 		/obj/item/mob_trophy/wolf_ear,
 		/obj/item/mob_trophy/bear_paw,
@@ -64,6 +74,22 @@
 	unit_name = "rare hunting trophy"
 	export_types = list(
 // [CELADON-ADD]
+		/obj/item/crusher_trophy,
+		/obj/item/crusher_trophy/watcher_wing_forgotten,
+		/obj/item/crusher_trophy/legion_skull_crystal,
+		/obj/item/crusher_trophy/goliath_crystal,
+		/obj/item/crusher_trophy/dwarf_skull,
+		/obj/item/crusher_trophy/fang,
+		/obj/item/crusher_trophy/war_paw,
+		/obj/item/crusher_trophy/elder_tentacle,
+		/obj/item/crusher_trophy/ice_crystal,
+		/obj/item/crusher_trophy/magma_skull,
+		/obj/item/crusher_trophy/magma_skull/magma,
+		/obj/item/crusher_trophy/magma_wing,
+		/obj/item/crusher_trophy/tail_spike,
+		/obj/item/crusher_trophy/ice_wing,
+		/obj/item/crusher_trophy/dwarf_skull,
+		/obj/item/mob_trophy,
 		/obj/item/mob_trophy/watcher_wing_forgotten,
 		/obj/item/mob_trophy/legion_skull_crystal,
 		/obj/item/mob_trophy/goliath_crystal,
@@ -83,7 +109,17 @@
 	elasticity_coeff = 0
 	unit_name = "big game hunting trophy"
 	export_types = list(
-		/obj/item/crusher_trophy/legionnaire_spine,	// /obj/item/mob_trophy/legionnaire_spine,	// [CELADON-EDIT] - CRUSHER_TROPHEY
+// [CELADON-ADD]
+		/obj/item/crusher_trophy/legionnaire_spine,
+		/obj/item/crusher_trophy/ash_spike,
+		/obj/item/crusher_trophy/demon_claws,
+		/obj/item/crusher_trophy/broodmother_tongue,
+		/obj/item/crusher_trophy/ice_block_talisman,
+		/obj/item/crusher_trophy/king_goat,
+		/obj/item/crusher_trophy/miner_eye,
+		/obj/item/crusher_trophy/vortex_talisman,
+		/obj/item/crusher_trophy/blaster_tubes,
+// [/CELADON-ADD]
 		/obj/item/mob_trophy/ash_spike,
 		/obj/item/mob_trophy/demon_claws,
 		/obj/item/mob_trophy/broodmother_tongue,

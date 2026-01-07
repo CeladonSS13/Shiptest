@@ -54,7 +54,8 @@ Difficulty: Medium
 	ranged = TRUE
 	pixel_x = -32
 	base_pixel_x = -32
-	mob_trophy = /obj/item/mob_trophy/ash_spike
+	//mob_trophy = /obj/item/mob_trophy/ash_spike			// [CELADON-EDIT] - RETURN_CONTENT_CRUSHER_TROPHY
+	crusher_loot = /obj/item/crusher_trophy/ash_spike		// [/CELADON-EDIT]
 	loot = list(/obj/structure/closet/crate/necropolis/dragon)
 	butcher_results = list(/obj/item/gem/amber = 1, /obj/item/stack/ore/diamond = 5, /obj/item/stack/sheet/sinew = 5, /obj/item/stack/sheet/bone = 30)
 	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/ashdrake = 10)
