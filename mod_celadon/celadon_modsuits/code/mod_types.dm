@@ -71,7 +71,6 @@
 
 /obj/item/mod/control/pre_equipped/responsory/empty
 	applied_cell = /obj/item/stock_parts/cell/super
-	req_access = list(ACCESS_CENT_GENERAL)
 	initial_modules = list(
 		/obj/item/mod/module/storage/large_capacity,
 		/obj/item/mod/module/jetpack,
