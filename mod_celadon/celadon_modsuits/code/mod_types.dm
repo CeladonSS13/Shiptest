@@ -102,6 +102,7 @@
 	initial_modules = list(
 		/obj/item/mod/module/storage/large_capacity,
 		/obj/item/mod/module/welding,
+		/obj/item/mod/module/jetpack,
 		/obj/item/mod/module/dna_lock,
 		/obj/item/mod/module/flashlight,
 	)
@@ -111,6 +112,6 @@
 	initial_modules = list(
 		/obj/item/mod/module/storage/large_capacity,
 		/obj/item/mod/module/welding,
-		/obj/item/mod/module/magnetic_harness,
+		/obj/item/mod/module/jetpack,
 		/obj/item/mod/module/flashlight,
 	)

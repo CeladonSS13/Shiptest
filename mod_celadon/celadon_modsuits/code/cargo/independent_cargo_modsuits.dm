@@ -111,7 +111,7 @@
 /datum/supply_pack/faction/independent/modsuits/modules/tether
 	name = "MOD Tether Module"
 	desc = "Contains a grappling tether module for extra-spicy movement."
-	cost = 750
+	cost = 1500
 	contains = list(/obj/item/mod/module/tether)
 
 /datum/supply_pack/faction/independent/modsuits/modules/toolset
