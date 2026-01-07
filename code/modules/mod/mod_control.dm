@@ -389,7 +389,7 @@
 		return TRUE
 	else if(open && istype(attacking_item, /obj/item/stock_parts/cell) && istype(core, /obj/item/mod/core/standard))
 		var/obj/item/mod/core/standard/attacked_core = core
-		attacked_core.on_attackby(src, attacking_item, wearer)
+		attacked_core.on_attackby(src, attacking_item, user) //[CELADON-FIX] - CELADON_MODSUITS // attacked_core.on_attackby(src, attacking_item, wearer)
 		return TRUE
 	return ..()
 

@@ -10,7 +10,7 @@
 	module_type = MODULE_TOGGLE
 	complexity = 3
 	active_power_cost = MODULE_CHARGE_DRAIN_HIGH
-	use_power_cost = DEFAULT_CHARGE_DRAIN
+	use_power_cost = DEFAULT_CHARGE_DRAIN*0.1 // [CELADON-EDIT] - CELADON_MODSUITS // use_power_cost = DEFAULT_CHARGE_DRAIN
 	incompatible_modules = list(/obj/item/mod/module/jetpack)
 	cooldown_time = 0.5 SECONDS
 	overlay_state_inactive = "module_jetpack"
@@ -259,7 +259,7 @@
 		however, this incredibly sensitive module is shorted out by EMPs. Luckily, cloning has been outlawed."
 	icon_state = "dnalock"
 	module_type = MODULE_USABLE
-	complexity = 2
+	complexity = 1 // [CELADON-EDIT] - CELADON_MODSUITS // complexity = 2
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 3
 	incompatible_modules = list(/obj/item/mod/module/dna_lock/*, obj/item/mod/module/eradication_lock*/)
 	cooldown_time = 0.5 SECONDS

@@ -149,7 +149,6 @@
 	for(var/obj/item/mod/module/module as anything in mod.modules)
 		if(module.active)
 			true_drain_per_step = module.assist_drain_increase + true_drain_per_step
-			break
 	drain_power(true_drain_per_step, TRUE)
 	// [/CELADON-EDIT] - CELADON_MODSUITS
 

@@ -1,7 +1,7 @@
 
 #### Список PRов
 
-- https://github.com/CeladonSS13/Shiptest/pulls/#####
+- https://github.com/CeladonSS13/Shiptest/pulls/2597
 <!--
   Ссылки на PRы, связанные с модом:
   - Создание
@@ -48,7 +48,7 @@ ID мода: CELADON_MODSUITS
 - `code\__DEFINES\mod.dm` : `DEFAULT_CHARGE_DRAIN`
 
 **Моды**
-- `code\modules\mod\mod_control.dm` : `/obj/item/mod/control/emp_act(severity)`, `/obj/item/mod/control/proc/set_mod_skin`, `/obj/item/mod/control/update_icon_state`
+- `code\modules\mod\mod_control.dm` : `/obj/item/mod/control/emp_act(severity)`, `/obj/item/mod/control/proc/set_mod_skin`, `/obj/item/mod/control/update_icon_state`, `/obj/item/mod/control/attackby`
 Добавляем больше эффектов для ЭМИ и фиксим неработающие контроли модов. Изменяем иконки
 - `code\modules\mod\mod_core.dm` : `/obj/item/mod/core/standard/proc/mod_uninstall_cell`
 Добавляем обновление батареек при вытаскивании. 
@@ -56,13 +56,14 @@ ID мода: CELADON_MODSUITS
 Добавляем проверку на plating/locked
 - `code\modules\mod\mod_theme.dm` : Все темы. Добавлена поддержка дыхания без маски.
 - `code\modules\mod\mod_types.dm` : Все темы. Удалена ЭМИ защита, мелкие правки баланса с батарейками у элитки.
-
+- `code\modules\mod\mod_core.dm` : `/obj/item/mod/core/standard/proc/on_attackby`, `blacklisted_ammo_types`, `/obj/item/mod/core/Initialize`
 **Модули**
 - `code\modules\mod\modules\_module.dm` : `var/assist_drain_increase` 
 - `code/modules/mob/living/carbon/human/species` : `/datum/species/proc/handle_mutant_bodyparts`
 - `code\modules\mod\modules\modules_engineering.dm` : `/obj/item/mod/module/tether/on_use()`
 - `code\modules\mod\modules\modules_science.dm` : `/obj/item/mod/module/anomaly_locked/antigrav`,`active_power_cost`, `var/incompatible_modules`, `var/teleport_time`, `var/cooldown_time`, `var/use_power_cost`
-- `code/modules/mod/modules/modules_general.dm` : `complexity`, `overlay_state_inactive`, `var/assist_drain_increase`
+- `code/modules/mod/modules/modules_general.dm` : `complexity`, `overlay_state_inactive`, `var/assist_drain_increase`, `/obj/item/mod/module/jetpack var/use_power_cost`, `/obj/item/mod/module/dna_lock complexity`
+- `code\modules\mod\modules\modules_storage.dm` : `/obj/item/mod/module/storage/large_capacity max_vol`
 - `code\modules\mod\modules\modules_antag.dm`: `/obj/item/mod/module/armor_booster`, `/obj/item/mod/module/armor_booster/on_activation()`, `var/drain_slowdown_affected`, `drain_per_step`, `var/drain`,`/obj/item/mod/module/armor_assist/proc/drain_on_step`, `/obj/item/mod/module/chameleon/proc/return_look`, `var/module_type` `var/color_list`, `/obj/item/mod/module/insignia/on_use`
 - `code\modules\mod\modules\modules_science.dm`: `/obj/item/mod/module/anomaly_locked/teleporter`, `/obj/item/mod/module/anomaly_locked/antigrav`
 - `code\modules\mod\modules\_module.dm` : `incompatible_modules`, `var/assist_drain_increase`

@@ -8,6 +8,17 @@
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
 	/// MOD unit we are powering.
 	var/obj/item/mod/control/mod
+	// [CELADON-FIX] - CELADON_MODSUITS
+	var/blacklisted_cell_types = list(
+		/obj/item/stock_parts/cell/gun,
+		)
+	// [/CELADON-FIX]
+
+// [CELADON-FIX] - CELADON_MODSUITS
+/obj/item/mod/core/Initialize(mapload)
+	. = ..()
+	blacklisted_cell_types = typecacheof(blacklisted_cell_types)
+// [/CELADON-FIX]
 
 /obj/item/mod/core/Destroy()
 	if(mod)
@@ -207,6 +218,12 @@
 			to_chat(user,span_warning("There's a cell already installed!"))
 			playsound(mod, 'sound/machines/scanbuzz.ogg', 25, TRUE, SILENCED_SOUND_EXTRARANGE)
 			return COMPONENT_NO_AFTERATTACK
+		// [CELADON-FIX] - CELADON_MODSITS - запрет оружейных батареек в модах
+		if(is_type_in_list(attacking_item, blacklisted_cell_types))
+			to_chat(user,span_warning("This cell is incompatible!"))
+			playsound(mod, 'sound/machines/scanbuzz.ogg', 25, TRUE, SILENCED_SOUND_EXTRARANGE)
+			return COMPONENT_NO_AFTERATTACK
+		// [/CELADON-FIX]
 		install_cell(attacking_item)
 		to_chat(user,span_notice("Cell installed"))
 		playsound(mod, 'sound/machines/click.ogg', 50, TRUE, SILENCED_SOUND_EXTRARANGE)

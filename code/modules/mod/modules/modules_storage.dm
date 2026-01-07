@@ -37,7 +37,7 @@
 		is entirely within the suit, distributing items and weight evenly to ensure a comfortable experience for the user; \
 		whether smuggling, or simply hauling."
 	icon_state = "storage_large"
-	max_vol = STORAGE_VOLUME_BACKPACK
+	max_vol = STORAGE_VOLUME_BACKPACK + DEFAULT_VOLUME_NORMAL // [CELADON-EDIT] - CELADON_MODSUITS // max_vol = STORAGE_VOLUME_BACKPACK
 
 /obj/item/mod/module/storage/syndicate
 	name = "MOD syndicate storage module"
