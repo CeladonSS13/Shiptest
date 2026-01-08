@@ -17,7 +17,6 @@
 		/obj/item/clothing/suit/armor/roumain,
 		/obj/item/clothing/suit/armor/captaincoat,
 		/obj/item/clothing/suit/armor/laserproof)
-	exclude_types = 
 
 /datum/export/gear/riot_shield
 	cost = 100

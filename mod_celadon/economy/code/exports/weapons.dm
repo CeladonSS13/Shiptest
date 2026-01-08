@@ -114,6 +114,7 @@
 	export_types = list(/obj/item/gun/energy/e_gun/plasmapistol_fire)
 	cost = 900
 
+/*
 /datum/export/weapon/ion
 	unit_name = "Ion rifle"
 	desc = "Mk.I Ion Projector anti-armor weapon designed to disable mechanical threats at range."
@@ -125,6 +126,7 @@
 	desc = "An improved model on the ion projector, built to be more compact and ergonomic, while keeping the same max charge. Developed by Nanotrasen-Sharplite"
 	export_types = list(/obj/item/gun/energy/ionrifle/carbine)
 	cost = 1100
+*/
 
 /datum/export/weapon/challenger
 	unit_name = "VI 'Challenger' handgun"

@@ -52,7 +52,7 @@
 	desc = "One set of circuits and controllers for an electrical ion engine."
 	unit_name = "ion thruster board"
 	elasticity_coeff = 0.05
-	export_types = list(/obj/item/circuitboard/machine/shuttle/engine/electric)
+	export_types = list(/obj/item/circuitboard/machine/shuttle/engine/electric/tech3)
 // [/CELADON-EDIT]
 
 /*
