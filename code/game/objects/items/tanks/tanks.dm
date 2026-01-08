@@ -76,6 +76,7 @@
 
 	populate_gas()
 
+	update_appearance(UPDATE_OVERLAYS)
 	START_PROCESSING(SSobj, src)
 
 /obj/item/tank/proc/populate_gas()
@@ -242,19 +243,19 @@
 			status_overlay_icon_state = "status_warning"
 		if((0.75 * ONE_ATMOSPHERE) to (2 * ONE_ATMOSPHERE))
 			status_overlay_icon_state = "status_alert"
-		if((0 * ONE_ATMOSPHERE) to (0.75 * ONE_ATMOSPHERE))
+		if((0.1 * ONE_ATMOSPHERE) to (0.75 * ONE_ATMOSPHERE))
 			status_overlay_icon_state = "status_critical"
+		else
+			status_overlay_icon_state = null
 
 	// Actually sets the overlay. As of now, this has only been done for smaller emergency tanks
 	// The if statement is set as follows due to the coarse search type that the istype proc conducts, as subtypes count as valid types
 	var/mutable_appearance/status_overlay = mutable_appearance(icon, status_overlay_icon_state)
-	if(istype(src, /obj/item/tank/internals/emergency_oxygen/double) || /obj/item/tank/internals/plasmaman/belt)
-		status_overlay.pixel_x = 2
-		status_overlay.pixel_y = 3
-	else if(istype(src, /obj/item/tank/internals/oxygen) || istype(src, /obj/item/tank/internals/generic) || istype(src, /obj/item/tank/internals/plasmaman) || istype(src, /obj/item/tank/internals/anesthetic))
+	
+	if(istype(src, /obj/item/tank/internals/emergency_oxygen/double))
 		status_overlay.pixel_x = 1
 		status_overlay.pixel_y = 2
-	overlays += status_overlay
+	. += status_overlay
 
 /obj/item/tank/proc/check_status()
 	//Handle exploding, leaking, and rupturing of the tank
@@ -336,11 +337,11 @@
 				critical_warning_alert = TRUE
 				playsound(src, 'sound/machines/twobeep_high.ogg', 30, FALSE)
 				say("Tank is at [pressure] kPa! Pressure critically low!")
-		if((0 * ONE_ATMOSPHERE) to (0.75 * ONE_ATMOSPHERE))
+		if(0 to (0.75 * ONE_ATMOSPHERE))
 			if(!empty_alert)
 				empty_alert = TRUE
 				playsound(src, 'sound/machines/twobeep_high.ogg', 30, FALSE)
 				playsound(src, 'sound/machines/beep.ogg', 30, FALSE)
 				say("Tank is empty! Replacement recommended!")
 
-	update_overlays()
+	update_appearance(UPDATE_OVERLAYS)
