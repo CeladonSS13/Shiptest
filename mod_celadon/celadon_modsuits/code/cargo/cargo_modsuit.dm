@@ -317,7 +317,7 @@
 /datum/supply_pack/faction/syndicate/modsuits/modules/stealth_military
 	name = "MOD military cloak Module"
 	desc = "Contains a module that can cloak your body while active. Requires military capacitor later to be completed."
-	cost = 3000 // + 2000 from capacitor
+	cost = 5000 // + 2000 from capacitor
 	contains = list(/obj/item/mod/module/stealth/military)
 
 
