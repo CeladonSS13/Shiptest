@@ -355,7 +355,7 @@
 
 /datum/supply_pack/faction/syndicate/modsuits/complete/syndicate
 	name = "Syndicate MODsuit"
-	desc = "Contains an experimental Inteq modsuit."
+	desc = "Contains an experimental Syndicate modsuit."
 	cost = 8500
 	contains = list(/obj/item/mod/control/pre_equipped/syndicate/empty)
 

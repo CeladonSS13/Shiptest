@@ -715,7 +715,7 @@
 		/datum/material/plasma=6000,
 		/datum/material/titanium=6000,
 	)
-	build_path = /obj/item/mod/module/anomaly_locked/kinesis
+	build_path = /obj/item/military_tech/mod_armor_components
 	category = list(
 		"MOD Suits", "Chassis"
 	)
