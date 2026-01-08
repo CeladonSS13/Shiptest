@@ -38,7 +38,6 @@ MARK: ARMOR BOOSTER
 	active_power_cost = DEFAULT_CHARGE_DRAIN * 0.3
 	removable = TRUE
 	complexity = 2
-	incompatible_modules = list(/obj/item/mod/module/armor_booster, /obj/item/mod/module/welding)
 	cooldown_time = 0.5 SECONDS
 	overlay_state_inactive = "module_armorbooster_off"
 	overlay_state_active = "module_armorbooster_on"

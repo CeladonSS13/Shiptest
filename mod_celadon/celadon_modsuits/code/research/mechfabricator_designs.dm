@@ -717,7 +717,7 @@
 	)
 	build_path = /obj/item/military_tech/mod_armor_components
 	category = list(
-		"MOD Suits", "Chassis"
+		"MOD Suits", "Plating", "Chassis"
 	)
 
 /datum/design/module/mod_military_stealth

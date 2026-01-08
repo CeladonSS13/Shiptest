@@ -86,6 +86,7 @@
 	which allows for quick consequent charges, but the power drain increases with each one due to ever increasing heat."
 	module_type = MODULE_ACTIVE
 	complexity = 3
+	incompatible_modules = list(/obj/item/mod/module/armor_assist, /obj/item/mod/module/dash)
 	var/charge_distance = 8
 	var/charge_power = 400
 	var/charging = FALSE
