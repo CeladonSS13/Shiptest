@@ -5,7 +5,7 @@
 	desc = "This one is made by InteQ."
 	default_skin = "inteq"
 	//armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 35, "bomb" = 70, "bio" = 100, "rad" = 50, "fire" = 60, "acid" = 90)
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 35, "bomb" = 70, "bio" = 100, "rad" = 50, "fire" = 60, "acid" = 90)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 35, "bomb" = 70, "bio" = 100, "rad" = 50, "fire" = 60, "acid" = 90, "wound" = 35)
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
@@ -178,7 +178,7 @@
 	desc = "This is an elite version of InteQ MOD suit, featuring better overall protection."
 	default_skin = "inteqelite"
 	//armor = list("melee" = 60, "bullet" = 45, "laser" = 50, "energy" = 45, "bomb" = 90, "bio" = 100, "rad" = 50,"fire" = 100, "acid" = 90) //Пока оставляю резисты такими, ибо модули модсьютов нельзя сделать, тем самым их полный потенциал не реализуется.
-	armor = list("melee" = 55, "bullet" = 45, "laser" = 50, "energy" = 45, "bomb" = 90, "bio" = 100, "rad" = 50,"fire" = 100, "acid" = 90)
+	armor = list("melee" = 55, "bullet" = 45, "laser" = 50, "energy" = 45, "bomb" = 90, "bio" = 100, "rad" = 50,"fire" = 100, "acid" = 90, "wound" = 50)
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF

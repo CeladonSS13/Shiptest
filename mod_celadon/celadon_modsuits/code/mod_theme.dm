@@ -3,7 +3,6 @@
 	extended_desc = null
 //MARK: reflavour + balance
 /datum/mod_theme/engineering
-	complexity_max = DEFAULT_MAX_COMPLEXITY + 5
 	desc = "An engineer-fit suit with heat and shock resistance. Nakamura Engineering's classic."
 	extended_desc = "A classic by Nakamura Engineering, and surely their claim to fame. This model is an \
 		improvement upon the first-generation prototype models from before the Void War, boasting an array of features. \
@@ -12,7 +11,6 @@
 		However, the capacity for modification remains the same as civilian-grade suits."
 
 /datum/mod_theme/atmospheric
-	complexity_max = DEFAULT_MAX_COMPLEXITY + 5
 	desc = "An atmospheric-resistant suit by Nakamura Engineering, offering extreme heat resistance compared to the engineer suit."
 	extended_desc = "A modified version of the Nakamura Engineering industrial model. This one has been \
 		augmented with the latest in heat-resistant alloys, paired with a series of advanced heatsinks. \
@@ -21,7 +19,6 @@
 		However, the capacity for modification remains the same as civilian-grade suits."
 
 /datum/mod_theme/advanced
-	complexity_max = DEFAULT_MAX_COMPLEXITY + 5
 	desc = "An advanced version of Nakamura Engineering's classic suit, shining with a white, acid and fire resistant polish."
 	extended_desc = "The flagship version of the Nakamura Engineering industrial model, and their latest product. \
 		Combining all the features of their other industrial model suits inside, with blast resistance almost approaching \
@@ -30,7 +27,6 @@
 		These come pre-installed with magnetic boots, using an advanced system to toggle them on or off as the user walks."
 
 /datum/mod_theme/mining
-	complexity_max = DEFAULT_MAX_COMPLEXITY + 5
 	desc = "A N+S Logistics mining suit for on-site operations, fit with accreting ash armor and a sphere form."
 	extended_desc = "A high-powered N+S Logistics-designed suit, based off the work of Nakamura Engineering. \
 		While initial designs were built for the rigors of asteroid mining, given blast resistance through inbuilt ceramics, \
@@ -51,7 +47,6 @@
 		Additionally, the systems have been put to near their maximum load, allowing for far less customization than others."
 
 /datum/mod_theme/loader
-	complexity_max = DEFAULT_MAX_COMPLEXITY + 5
 	desc = "An unsealed experimental motorized harness manufactured by Scarborough Arms for quick and efficient munition supplies."
 	extended_desc = "This powered suit is an experimental spinoff of in-atmosphere Engineering suits. \
 		This fully articulated titanium exoskeleton is Scarborough Arms' suit of choice for their munition delivery men, \
@@ -64,7 +59,6 @@
 		A lot of people would say loading cargo is a dull job. You could not disagree more."
 
 /datum/mod_theme/medical
-	complexity_max = DEFAULT_MAX_COMPLEXITY + 5
 	desc = "A lightweight suit by DeForest Medical Corporation, allows for easier movement."
 	extended_desc = "A lightweight suit produced by the DeForest Medical Corporation, based off the work of \
 		Nakamura Engineering. The latest in technology has been employed in this suit to render it immunized against \
@@ -74,7 +68,6 @@
 		and weak against fingers tapping the glass."
 
 /datum/mod_theme/rescue
-	complexity_max = DEFAULT_MAX_COMPLEXITY + 5
 	desc = "An advanced version of DeForest Medical Corporation's medical suit, designed for quick rescue of bodies from the most dangerous environments."
 	extended_desc = "An upgraded, armor-plated version of DeForest Medical Corporation's medical suit, \
 		designed for quick rescue of bodies from the most dangerous environments. The same advanced leg servos \
@@ -84,8 +77,6 @@
 		It is slightly more demanding of power than civilian-grade models, and weak against fingers tapping the glass."
 
 /datum/mod_theme/research
-	name = "research"
-	complexity_max = DEFAULT_MAX_COMPLEXITY + 10
 	desc = "A private military EOD suit by Nanotrasen Research Division, intended for explosive research. Bulky, but expansive."
 	extended_desc = "A private military EOD suit by Nanotrasen Research Division, based off the work of Nakamura Engineering. \
 		This suit is intended for explosive research, built incredibly bulky and well-covering. \
@@ -97,7 +88,6 @@
 
 /datum/mod_theme/security
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 35, "energy" = 30, "bomb" = 35, "bio" = 100, "fire" = 75, "acid" = 75)
 	desc = "A Vigilitas Interstellar security suit, offering quicker speed at the cost of carrying capacity."
 	extended_desc = "A Vigilitas Interstellar classic, this model of MODsuit has been designed for quick response to \
 		hostile situations. These suits have been layered with plating worthy enough for fires or corrosive environments, \
@@ -119,7 +109,6 @@
 
 /datum/mod_theme/magnate
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
-	// armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 50, "bio" = 100, "fire" = 100, "acid" = 100)
 	desc = "A fancy, very protective suit for Nanotrasen's captains. Shock, fire and acid-proof while also having a large capacity and high speed."
 	extended_desc = "They say it costs four hundred thousand credits to run this MODsuit... for twelve seconds. \
 		The Magnate suit is designed for protection, comfort, and luxury for Nanotrasen Captains. \
@@ -141,9 +130,7 @@
 
 // MARK: SYNDICATE
 /datum/mod_theme/syndicate
-	armor = list("melee" = 45, "bullet" = 50, "laser" = 35, "energy" = 40, "bomb" = 40, "bio" = 100, "rad" = 50, "fire" = 60, "acid" = 90)
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
-	inbuilt_modules = list()
 	desc = "A suit designed by Gorlex Marauders, offering armor ruled illegal in most of the Solar Federation."
 	extended_desc = "An advanced combat suit adorned in a sinister crimson red color scheme, produced and manufactured \
 		for special mercenary operations. The build is a streamlined layering consisting of shaped Plasteel, \
@@ -154,9 +141,7 @@
 		All rights reserved, tampering with suit will void warranty."
 
 /datum/mod_theme/elite
-	armor = list("melee" = 60, "bullet" = 55, "laser" = 50, "energy" = 60, "bomb" = 55, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 100)
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
-	inbuilt_modules = list()
 	desc = "An elite suit upgraded by Cybersun Industries, offering upgraded armor values."
 	extended_desc = "An evolution of the syndicate suit, featuring a bulkier build and a matte black color scheme, \
 		this suit is only produced for high ranking Syndicate officers and elite strike teams. \
@@ -244,7 +229,7 @@
 /datum/mod_theme/revolutionizer
 	name = "Revolutionizer"
 	default_skin = "chrono"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 60, "energy" = 40, "bomb" = 60, "bio" = 100, "fire" = 100, "acid" = 90)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 60, "energy" = 40, "bomb" = 60, "bio" = 100, "fire" = 100, "acid" = 90, "wound" = 50)
 	resistance_flags = FIRE_PROOF|ACID_PROOF
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
@@ -300,7 +285,7 @@
 /datum/mod_theme/storch
 	name = "Storch"
 	default_skin = "storch"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 50, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 90)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 50, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 90, "wound" = 60)
 	resistance_flags = FIRE_PROOF|ACID_PROOF
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
@@ -352,7 +337,7 @@
 /datum/mod_theme/falke
 	name = "Falke"
 	default_skin = "falke"
-	armor = list("melee" = 70, "bullet" = 60, "laser" = 60, "energy" = 60, "bomb" = 60, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 90)
+	armor = list("melee" = 70, "bullet" = 60, "laser" = 60, "energy" = 60, "bomb" = 60, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 90, "wound" = 60)
 	resistance_flags = FIRE_PROOF|ACID_PROOF
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
