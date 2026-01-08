@@ -81,7 +81,7 @@
 	overlay_state_inactive = "module_jetpackadv"
 	overlay_state_active = "module_jetpackadv_on"
 	full_speed = TRUE
-	assist_drain_increase = 150 // [CELADON-ADD] - CELADON MODSUITS
+	// assist_drain_increase = 50 // [CELADON-ADD] - CELADON MODSUITS
 
 ///Eating Apparatus - Lets the user eat/drink with the suit on.
 /obj/item/mod/module/mouthhole

@@ -66,6 +66,7 @@
 	// incompatible_modules = list(/obj/item/mod/module/anomaly_locked) // [CELADON-DELETE] - CELADON_MODSUITS - на тг убрали, у нас же вообще не имеет смысла так ограничивать.
 	cooldown_time = 0.5 SECONDS
 	accepted_anomalies = list(/obj/item/assembly/signaler/anomaly/grav)
+	assist_drain_increase = 50 // [CELADON-ADD] - CELADON MODSUITS
 
 /obj/item/mod/module/anomaly_locked/antigrav/on_activation()
 	. = ..()
