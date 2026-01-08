@@ -243,6 +243,7 @@
 	shaded_charge = TRUE
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler/scatter/ultima, /obj/item/ammo_casing/energy/laser/ultima)
 	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
 	var/obj/item/modular_computer/integratedNTOS
 	var/NTOS_type = /obj/item/modular_computer/internal
 
