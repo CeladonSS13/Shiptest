@@ -78,8 +78,8 @@
 	name = "\improper CLIP officer suit jacket"
 	desc = "A fancy buttoned dress jacket issued to officers of CLIP."
 
-	icon = 'icons/obj/clothing/faction/clip/suits.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/suits.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/suits.dmi'
 
 	icon_state = "suitjacket_clip"
 	item_state = "suitjacket_navy"
@@ -102,8 +102,8 @@
 	name = "Minutemen general coat"
 	desc = "This flamboyant overwear is employed by the field generals of the CLIP Minutemen."
 
-	icon = 'icons/obj/clothing/faction/clip/suits.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/suits.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/suits.dmi'
 
 	icon_state = "clip_general"
 	item_state = "clip_general"
@@ -120,16 +120,16 @@
 /obj/item/clothing/suit/armor/riot/clip
 	name = "black riot suit"
 	desc = "A charcoal-painted suit of bulky, heavy armor designed for close-quarters fighting and riot control. The armor of choice for CLIP-BARD members, but used universally by CLIP. Helps the wearer resist shoving in close quarters."
-	icon = 'icons/obj/clothing/faction/clip/suits.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/suits.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/suits.dmi'
 	icon_state = "riot_clip"
 
 /obj/item/clothing/suit/armor/clip_trenchcoat
 	name = "\improper CLIP trenchcoat"
 	desc = "A trenchcoat in Confederated League colors. Despite its reputation as a military officer coat, it's used by all divisions within CLIP. Has a lot of pockets."
 
-	icon = 'icons/obj/clothing/faction/clip/suits.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/suits.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/suits.dmi'
 
 	icon_state = "clip_trenchcoat"
 	item_state = "trenchcoat_solgov"
@@ -144,8 +144,8 @@
 	name = "Minutemen captain's coat"
 	desc = "The coat issued to all CLIP Minutemen officers worthy of the rank of Captain. Features thick padding which, while protective, does not replace proper armor."
 
-	icon = 'icons/obj/clothing/faction/clip/suits.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/suits.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/suits.dmi'
 
 	icon_state = "clip_captaincoat"
 	item_state = "clip_captaincoat"
@@ -160,8 +160,8 @@
 	name = "\improper correspondent armor vest"
 	desc = "A slim Type I armored vest that provides decent protection against most types of damage. The white letters on the front read \"PRESS\" in CLIP Kalixcian."
 
-	icon = 'icons/obj/clothing/faction/clip/suits.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/suits.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/suits.dmi'
 	vox_override_icon = 'icons/mob/clothing/faction/clip/vox.dmi'
 
 	icon_state = "armor_correspondant"
@@ -178,8 +178,8 @@
 /obj/item/clothing/suit/bio_suit/bard
 	name = "BARD-440 bio suit"
 	desc = "The iconic biosuit of CLIP-BARD agents on the frontier and elsewhere."
-	icon = 'icons/obj/clothing/faction/clip/suits.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/suits.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/suits.dmi'
 	icon_state = "clip_bard_biosuit"
 
 /obj/item/clothing/suit/bio_suit/bard/Initialize()
@@ -192,8 +192,8 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 	flags_cover = null
 	clothing_flags = THICKMATERIAL | SNUG_FIT
-	icon = 'icons/obj/clothing/faction/clip/head.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/head.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
 	icon_state = "clip_bard_bio"
 
 /obj/item/clothing/head/bio_hood/bard/armored
@@ -221,8 +221,8 @@
 	name = "CLIP space suit"
 	icon_state = "space-clip"
 	item_state = "space-clip"
-	icon = 'icons/obj/clothing/faction/clip/suits.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/suits.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/suits.dmi'
 	desc = "A popular suit manufactured by the colonial league, rated for hazardous, low-pressure environments and high temperature alike. Often worn by various workers and civilians hired by the league."
 	armor = list("melee" = 15, "bullet" = 5, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 100, "rad" = 75, "fire" = 100, "acid" = 75, "wound" = 10)
 	resistance_flags = FIRE_PROOF
@@ -232,8 +232,8 @@
 	name = "CLIP space helmet"
 	icon_state = "space-clip"
 	item_state = "space-clip"
-	icon = 'icons/obj/clothing/faction/clip/head.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/head.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
 	desc = "A space helmet manufactured by the colonial league, rated for hazardous, low pressure environments and minor impacts. Often worn by various workers and civilians hired by the league."
 	armor = list("melee" = 15, "bullet" = 5, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 100, "rad" = 75, "fire" = 100, "acid" = 75, "wound" = 10)
 	resistance_flags = FIRE_PROOF
@@ -258,8 +258,8 @@
 /obj/item/clothing/suit/space/hardsuit/clip_patroller
 	name = "\improper CM-410 'Patroller' EVA Hardsuit"
 	desc = "An older-issue CLIP hardsuit, adapted from an even older design. Widely utilized in reconnaissance duty and skirmishing due to its lightweight construction."
-	icon = 'icons/obj/clothing/faction/clip/suits.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/suits.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/suits.dmi'
 	allowed = list(/obj/item/gun, /obj/item/ammo_box, /obj/item/ammo_casing, /obj/item/melee, /obj/item/restraints/handcuffs, /obj/item/tank/internals)
 
 	slowdown = 0.2
@@ -276,8 +276,8 @@
 	name = "\improper CM-410 'Patroller' EVA Hardsuit helmet"
 	desc = "The helmet for the Patroller hardsuit. The wide visor allows for higher visibility than afforded to standard combat hardsuits."
 
-	icon = 'icons/obj/clothing/faction/clip/head.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/head.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
 
 	icon_state = "hardsuit0-clip-patrol"
 	hardsuit_type = "clip-patrol"
@@ -290,8 +290,8 @@
 	name = "CM-490 'Spotter' Combat Hardsuit"
 	desc = "CLIP's newer, standard-issue extra-vehicular combat hardsuit. The heavy plating is uncomfortable, and slows the wearer down."
 
-	icon = 'icons/obj/clothing/faction/clip/suits.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/suits.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/suits.dmi'
 
 	icon_state = "clip_spotter"
 	hardsuit_type = "clip_spotter"
@@ -309,8 +309,8 @@
 	name = "CM-490 'Spotter' Combat Hardsuit Helmet"
 	desc = "The helmet for the Spotter hardsuit. Features a very distinctive 'Spider-Eyes' visor."
 
-	icon = 'icons/obj/clothing/faction/clip/head.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/head.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
 
 	icon_state = "hardsuit0-clip_spotter"
 	hardsuit_type = "clip_spotter"
@@ -322,16 +322,16 @@
 
 /obj/item/clothing/suit/space/hardsuit/bomb/clip
 	name = "CMM EOD hardsuit"
-	icon = 'icons/obj/clothing/faction/clip/suits.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/suits.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/suits.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/suits.dmi'
 	icon_state = "hardsuit-clipeod"
 	hardsuit_type = "clipeod"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/bomb/clip
 
 /obj/item/clothing/head/helmet/space/hardsuit/bomb/clip
 	name = "CMM EOD hardsuit helmet"
-	icon = 'icons/obj/clothing/faction/clip/head.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/head.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
 	icon_state = "hardsuit0-clipeod"
 	hardsuit_type = "clipeod"
 
@@ -339,8 +339,8 @@
 /obj/item/clothing/head/clip
 	name = "\improper Minutemen service cap"
 	desc = "A service cap commonly seen on Minutemen of all ranks while off-duty, but more daring soldiers may choose to wear it during combat. The design dates back to the uniform used by the deserting forces of the Zohil Republic, who were the first citizens of CLIP."
-	icon = 'icons/obj/clothing/faction/clip/head.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/head.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
 	vox_override_icon = 'icons/mob/clothing/faction/clip/vox.dmi'
 //	lefthand_file = 'icons/mob/inhands/faction/clip/gezena_lefthand.dmi'
 //	righthand_file = 'icons/mob/inhands/faction/clip/gezena_righthand.dmi'
@@ -389,8 +389,8 @@
 	name = "\improper Minutemen CM-11 Helmet"
 	desc = "A large, bulky bulletproof helmet in the distinctive blue coloring of the Minutemen. Features a little attachment rail on the side where you can mount a flashlight."
 
-	icon = 'icons/obj/clothing/faction/clip/head.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/head.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
 	vox_override_icon = 'icons/mob/clothing/faction/clip/vox.dmi'
 	kepori_override_icon = 'icons/mob/clothing/faction/clip/kepori.dmi'
 	lefthand_file = 'icons/mob/inhands/faction/clip/clip_lefthand.dmi'
@@ -410,8 +410,8 @@
 /obj/item/clothing/head/helmet/m10/clip
 	name = "\improper Minutemen CM-10 Helmet"
 	desc = "A cheap, but comfortable and light helmet painted in Minutemen colors, often seen in the hands of the reserves or Minutemen in the backline. Features a little attachment rail on the side where you can mount a flashlight."
-	icon = 'icons/obj/clothing/faction/clip/head.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/head.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
 	icon_state = "clip_m10"
 	can_flashlight = TRUE
 	unique_reskin = list(
@@ -423,8 +423,8 @@
 /obj/item/clothing/head/helmet/m10/clip_vc
 	name = "\improper Minutemen CM-12 Helmet"
 	desc = "A special, lightweight and padded helmet issued to Vehicle Crewmen of the Minutemen. Features noise-reducing technology and a microphone that automatically connects with worn headsets. Hopefully protects you from bumpy rides."
-	icon = 'icons/obj/clothing/faction/clip/head.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/head.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
 	vox_override_icon = 'icons/mob/clothing/faction/clip/vox.dmi'
 
 	icon_state = "clip_m10_vc"
@@ -445,8 +445,8 @@
 	name = "CLIP war correspondent M10 Helmet"
 	desc = "A lightweight bulletproof helmet given to war correspondents of CLIP. Features a little attachment rail on the side where you can mount a flashlight. Keep your head down!"
 
-	icon = 'icons/obj/clothing/faction/clip/head.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/head.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
 	vox_override_icon = 'icons/mob/clothing/faction/clip/vox.dmi'
 
 	icon_state = "clip_m10_correspondant"
@@ -458,8 +458,8 @@
 /obj/item/clothing/head/helmet/riot/clip
 	name = "\improper Minutemen CM-13 Riot Helmet"
 	desc = "A sturdy blue helmet, made with crowd control in mind. The foldable protective visor makes it CLIP-BARD's preferred helmet against hostile xenofauna."
-	icon = 'icons/obj/clothing/faction/clip/head.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/head.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
 	icon_state = "riot_clip"
 	base_icon_state = "riot_clip"
 	supports_variations = SNOUTED_VARIATION
@@ -470,8 +470,8 @@
 	name = "\improper CLIP-GOLD fedora"
 	desc = "A rare sight in the frontier, issued to members of the CLIP-GOLD division. Designed to look more casual, but still as fashionable as the average CLIP attire."
 
-	icon = 'icons/obj/clothing/faction/clip/head.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/head.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
 	vox_override_icon = 'icons/mob/clothing/faction/clip/vox.dmi'
 
 	icon_state = "clip_fedora"
@@ -483,8 +483,8 @@
 	name = "\improper CLIP-GOLD flatcap"
 	desc = "A flatcap issued to members of the CLIP-GOLD division. An office worker's hat."
 
-	icon = 'icons/obj/clothing/faction/clip/head.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/faction/clip/head.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
 	vox_override_icon = 'icons/mob/clothing/faction/clip/vox.dmi'
 
 	icon_state = "flatcap_clip"
