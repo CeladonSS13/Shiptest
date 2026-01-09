@@ -775,7 +775,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 /obj/structure/vein/shrouded
 	mining_charges = 8
 	mob_types = list(
-		/mob/living/simple_animal/hostile/asteroid/royalcrab = 50,
+		/mob/living/simple_animal/hostile/asteroid/royalcrab = 30, // [CELADON-EDIT] - CELADON_BALANCE // /mob/living/simple_animal/hostile/asteroid/royalcrab = 50,
 		/mob/living/simple_animal/hostile/alien = 5,
 		/mob/living/simple_animal/hostile/alien/drone = 5,
 		/mob/living/simple_animal/hostile/alien/sentinel = 1,
