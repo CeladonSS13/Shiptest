@@ -1,13 +1,15 @@
 // коммит Delyasha Ребаланс патронов 68f5c5ecca9d26a210e35e644884090912dafe1b
 /obj/projectile/bullet/a357
-	damage = 45
-	armour_penetration = 10 	//Ребаланс по предложке, для усиления револьверов
+	damage = 35
+	armour_penetration = 10 	// Изменения смотреть в code/modules/projectiles/projectile/bullets/revolver.dm, номер PRа #2617
 
 /obj/projectile/bullet/a44roum
 	damage = 35
+	armour_penetration = 10    // Изменения смотреть в code/modules/projectiles/projectile/bullets/revolver.dm, номер PRа #2617
 
 /obj/projectile/bullet/a44roum/hp
-	damage = 50 	//Изменения по предложке, общее увеличение урона у .44 и HP на 10
+	damage = 50
+	armour_penetration = -25 	// Изменения смотреть в code/modules/projectiles/projectile/bullets/revolver.dm, номер PRа #2617
 
 // Бафф .45-70.
 // До этого более крупный калибр имеет меньше ап и такой же урон чем в разы мелкий .357?
