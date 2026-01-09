@@ -20,6 +20,7 @@ ID мода:
 	CELADON_BALANCE_OVERMAP_EVENTS
 	CELADON_BALANCE_SPECIES
 	CELADON_BALANCE_VENDING
+	ALIEN_BALANCE
 	BALLISTIC_SHIELD
 	YOU_NOT_SEPARATIST
 	SLOW_SPEED_CRAWLING
@@ -63,11 +64,11 @@ EDIT: `code\modules\mob\living\simple_animal\hostile\mining_mobs\elites\elite.dm
 
 ADD: `code\modules\projectiles\ammunition\_ammunition.dm` : /obj/item/ammo_casing/attackby(obj/item/I, mob/user, params) -> добавлены звук подбора патрона в магазин с пола и задержка в 1 секунду зависящая от кликанья по патронам. Чем быстрее клики - тем быстрее загрузятся патроны. -> перемещено в `mod_celadon/items/code/ammunition.dm`
 Очки с зомби и ксеноморфов. Добавлен подтип для королевы и претора.
-REMOVE, EDIT, ADD: `D:\1ss\ShiptestYata\code\modules\surgery\experimental_dissection.dm`: `/datum/surgery_step/dissection/preop`
+REMOVE, EDIT, ADD: `D:\1ss\ShiptestYata\code\modules\surgery\experimental_dissection.dm`: `/datum/surgery_step/dissection/preop` - тэги ALIEN_BALANCE и CELADON_BALANCE
 Новые дефайны для диссекции:
-ADD: `code/__DEFINES/is_helpers.dm`
+ADD: `code/__DEFINES/is_helpers.dm` - тэг ALIEN_BALANCE
 
-EDIT, ADD: `code/modules/mining/ore_veins.dm` : `/obj/structure/vein/shrouded, /obj/structure/vein/shrouded/classthree` - изменены шансы спавна ксеноморфов для шрауда.
+EDIT, ADD: `code/modules/mining/ore_veins.dm` : `/obj/structure/vein/shrouded, /obj/structure/vein/shrouded/classthree` - изменены шансы спавна ксеноморфов для шрауда. - тэг ALIEN_BALANCE
 
 REMOVE: `code\modules\projectiles\guns\energy.dm`
 REMOVE: `code/_globalvars/lists/maintenance_loot.dm`
@@ -81,7 +82,7 @@ EDIT:
 `code/modules/mob/living/simple_animal/hostile/mining_mobs/elites/herald.dm`
 `code/modules/mob/living/simple_animal/hostile/mining_mobs/elites/legionnaire.dm`
 `code/modules/mob/living/simple_animal/hostile/mining_mobs/elites/pandora.dm`
-`code/modules/mob/living/simple_animal/hostile/alien.dm`
+`code/modules/mob/living/simple_animal/hostile/alien.dm` - тэг ALIEN_BALANCE
 
 `code/modules/projectiles/ammunition/_ammunition.dm`
 

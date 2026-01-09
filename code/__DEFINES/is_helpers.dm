@@ -93,7 +93,7 @@ GLOBAL_LIST_INIT(turfs_without_ground, typecacheof(list(
 #define islarva(A) (istype(A, /mob/living/carbon/alien/larva))
 
 #define isalienadult(A) (istype(A, /mob/living/carbon/alien/humanoid) || istype(A, /mob/living/simple_animal/hostile/alien))
-// [CELADON-ADD] - CELADON_BALANCE
+// [CELADON-ADD] - ALIEN_BALANCE
 #define isalien_simple_praetorian(A) (istype(A, /mob/living/simple_animal/hostile/alien/praetorian))
 
 #define isalien_simple_queen(A) (istype(A, /mob/living/simple_animal/hostile/alien/queen))

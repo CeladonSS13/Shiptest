@@ -10,7 +10,7 @@
 	speed = 0
 	butcher_results = list(/obj/item/food/meat/slab/xeno = 4,
 							/obj/item/stack/sheet/animalhide/xeno = 1)
-	// [CELADON-EDIT] - CELADON_BALANCE
+	// [CELADON-EDIT] - ALIEN_BALANCE
 	// maxHealth = 125
 	// health = 125
 	maxHealth = 250
@@ -18,7 +18,7 @@
 	// [/CELADON-EDIT]
 	harm_intent_damage = 5
 	obj_damage = 60
-	// [CELADON-EDIT] - CELADON_BALANCE
+	// [CELADON-EDIT] - ALIEN_BALANCE
 	// melee_damage_lower = 25
 	// melee_damage_upper = 25
 	melee_damage_lower = 8
@@ -41,7 +41,7 @@
 	unique_name = 1
 	deathsound = 'sound/voice/hiss6.ogg'
 	deathmessage = "lets out a waning guttural screech, green blood bubbling from its maw..."
-	// [CELADON-ADD] - CELADON_BALANCE
+	// [CELADON-ADD] - ALIEN_BALANCE
 	sharpness = SHARP_EDGED
 	check_friendly_fire = TRUE
 	dodging = TRUE
@@ -71,7 +71,7 @@
 	melee_damage_upper = 15
 	var/plant_cooldown = 30
 	var/plants_off = 0
-	charger = FALSE // [CELADON-ADD] - CELADON_BALANCE
+	charger = FALSE // [CELADON-ADD] - ALIEN_BALANCE
 
 /mob/living/simple_animal/hostile/alien/drone/handle_automated_action()
 	if(!..()) //AIStatus is off
@@ -96,7 +96,7 @@
 	minimum_distance = 5
 	projectiletype = /obj/projectile/neurotox
 	projectilesound = 'sound/weapons/pierce.ogg'
-	// [CELADON-ADD] - CELADON_BALANCE
+	// [CELADON-ADD] - ALIEN_BALANCE
 	charger = FALSE
 	alpha = 100
 	armour_penetration = 25
@@ -108,25 +108,25 @@
 	icon_state = "alienq"
 	icon_living = "alienq"
 	icon_dead = "alienq_dead"
-	// [CELADON-EDIT] - CELADON_BALANCE
+	// [CELADON-EDIT] - ALIEN_BALANCE
 	// health = 250
 	// maxHealth = 250
 	health = 600
 	maxHealth = 600
-	// [CELADON-ADD] - CELADON_BALANCE
+	// [CELADON-ADD] - ALIEN_BALANCE
 	armour_penetration = 30
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 100, "rad" = 100, "fire" = -100, "acid" = 80)
 	charger = FALSE
 	rapid_melee = 1
 	// [/CELADON-ADD]
-	// [CELADON-EDIT] - CELADON_BALANCE
+	// [CELADON-EDIT] - ALIEN_BALANCE
 	// melee_damage_lower = 15
 	// melee_damage_upper = 15
 	melee_damage_lower = 40
 	melee_damage_upper = 40
 	// [/CELADON-EDIT]
 	ranged = 1
-	// [CELADON-DELETE] - CELADON_BALANCE
+	// [CELADON-DELETE] - ALIEN_BALANCE
 	// retreat_distance = 5
 	// minimum_distance = 5
 	// [/CELADON-DELETE]
@@ -179,14 +179,14 @@
 	icon_dead = "alienq_dead"
 	health_doll_icon = "alienq"
 	bubble_icon = "alienroyal"
-	// [CELADON-EDIT] - CELADON_BALANCE
+	// [CELADON-EDIT] - ALIEN_BALANCE
 	// maxHealth = 400
 	// health = 400
 	health = 800
 	maxHealth = 800
 	// [/CELADON-EDIT]
 	move_to_delay = 4
-	// [CELADON-ADD] - CELADON_BALANCE
+	// [CELADON-ADD] - ALIEN_BALANCE
 	armour_penetration = 35
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 20, "energy" = 50, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = -100, "acid" = 80)
 	// [CELADON-ADD]
@@ -198,7 +198,7 @@
 	name = "neurotoxin"
 	damage = 30
 	icon_state = "toxin"
-	// [CELADON-ADD] - CELADON_BALANCE
+	// [CELADON-ADD] - ALIEN_BALANCE
 	slur = 10
 	eyeblur = 10
 	jitter = 5

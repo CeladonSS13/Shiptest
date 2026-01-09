@@ -64,7 +64,7 @@
 									)
 	if(isalienqueen(target) || isalienroyal(target))
 		cost = (MAX_DISSECTION_REWARD*38)
-	// [CELADON-ADD] - CELADON_BALANCE - Добавляем praetorian и queen
+	// [CELADON-ADD] - ALIEN_BALANCE - Добавляем praetorian и queen
 	else if(isalienpraetorian(target))
 		cost = (MAX_DISSECTION_REWARD*10)
 	else if(isalienqueen(target))
