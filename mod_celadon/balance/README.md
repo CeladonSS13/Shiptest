@@ -34,7 +34,7 @@ ID мода:
 Этот мод вносит различные изменения в балансе. 
 - Изменено количество получаемого лута с элиток.
 - Портированы изменения от Ганзы.
-
+- Добавлен претор ксеноморфов. Изменены характеристики ксеноморфов, а также очки РнД с них.
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
   А также любая полезная информация.
@@ -62,11 +62,15 @@ EDIT: `code\modules\cargo\packs\food.dm` : `/datum/supply_pack/food/`
 EDIT: `code\modules\mob\living\simple_animal\hostile\mining_mobs\elites\elite.dm`: `/obj/structure/elite_tumor/proc/onEliteLoss()` -> var/obj/structure/closet/crate/necropolis/tendril/lootbox = new /obj/structure/closet/crate/necropolis/tendril(loc)
 
 ADD: `code\modules\projectiles\ammunition\_ammunition.dm` : /obj/item/ammo_casing/attackby(obj/item/I, mob/user, params) -> добавлены звук подбора патрона в магазин с пола и задержка в 1 секунду зависящая от кликанья по патронам. Чем быстрее клики - тем быстрее загрузятся патроны. -> перемещено в `mod_celadon/items/code/ammunition.dm`
-Очки с зомби и ксеноморфов
-REMOVE: `D:\1ss\ShiptestYata\code\modules\surgery\experimental_dissection.dm`: `/datum/surgery_step/dissection/preop`
+Очки с зомби и ксеноморфов. Добавлен подтип для королевы и претора.
+REMOVE, EDIT, ADD: `D:\1ss\ShiptestYata\code\modules\surgery\experimental_dissection.dm`: `/datum/surgery_step/dissection/preop`
+Новые дефайны для диссекции:
+ADD: `code/__DEFINES/is_helpers.dm`
+
+EDIT, ADD: `code/modules/mining/ore_veins.dm` : `/obj/structure/vein/shrouded, /obj/structure/vein/shrouded/classthree` - изменены шансы спавна ксеноморфов для шрауда.
+
 REMOVE: `code\modules\projectiles\guns\energy.dm`
 REMOVE: `code/_globalvars/lists/maintenance_loot.dm`
-
 
 EDIT: `code/modules/mining/equipment/regenerative_core.dm` - теперь ИПС не смогут жрать ядра для полного отхила, их лечить будет на половину.
 EDIT:
@@ -77,6 +81,7 @@ EDIT:
 `code/modules/mob/living/simple_animal/hostile/mining_mobs/elites/herald.dm`
 `code/modules/mob/living/simple_animal/hostile/mining_mobs/elites/legionnaire.dm`
 `code/modules/mob/living/simple_animal/hostile/mining_mobs/elites/pandora.dm`
+`code/modules/mob/living/simple_animal/hostile/alien.dm`
 
 `code/modules/projectiles/ammunition/_ammunition.dm`
 
@@ -88,6 +93,8 @@ EDIT:
 
 ADD: 
 `code/modules/vending/_vending.dm` : Добавлена вероятность поломки автомата при уничтожение его с вероятностью в 30% что ничего не выпадет с него
+
+`code/modules/mob/living/simple_animal/hostile/alien.dm` - новые характеристики им.
 
 Хардсьюты:
 EDIT: `code/modules/clothing/spacesuits/hardsuit.dm`

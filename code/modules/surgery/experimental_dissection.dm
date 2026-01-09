@@ -64,10 +64,16 @@
 									)
 	if(isalienqueen(target) || isalienroyal(target))
 		cost = (MAX_DISSECTION_REWARD*38)
+	// [CELADON-ADD] - CELADON_BALANCE - Добавляем praetorian и queen
+	else if(isalienpraetorian(target))
+		cost = (MAX_DISSECTION_REWARD*10)
+	else if(isalienqueen(target))
+		cost = (MAX_DISSECTION_REWARD*15)
+	// [/CELADON-ADD]
 	else if(isalienadult(target))
 	// [CELADON-EDIT] - CELADON_BALANCE - Изменения диссекции
 		//		cost = (MAX_DISSECTION_REWARD*30) // CELADON-EDIT - ORIGINAL
-		cost = (MAX_DISSECTION_REWARD*10)
+		cost = (MAX_DISSECTION_REWARD*5) // cost = (MAX_DISSECTION_REWARD*10) - старый
 	else if(isalien(target))
 		// cost = (MAX_DISSECTION_REWARD*14) // CELADON-EDIT - ORIGINAL
 		cost = (MAX_DISSECTION_REWARD*4)
