@@ -13,9 +13,9 @@
 	crate_name = "IDEA"
 
 /datum/supply_pack/faction/independent/idea/silicon/ai
-	name = "AI Assembly Core crate"
+	name = "AI - Assembly Core crate"
 	desc = "Get an AI today! Contains everything for AI assembly, empty shell assembly, law changing circuits."
-	cost = 2500
+	cost = 2000
 	contains = list(
 					/obj/item/paper/idea{
 					default_raw_text = "<center><h1 style='background-color:red;'>Thank you for shopping in Space IDEA!</h1></center><h2 align='center'>Instructions for assembling AI shell</h2><p>1. Secure AI core bolts with the provided wrench</p><p>2. Insert 'AI core' circuit board inside the slot in core</p><p>3. Secure circuit board screws with the provided screwdriver</p><p>4. Add wires according to the instructions</p><p>5. (Optional) Upload any custom laws that you'd like to this AI core with an AI module. Laws vary.</p><p>6. Turn on positronic brain by clicking on a big button on it, while its loading, it will glow yellow</p><p>7. Wait for brain to activate, now, it should beep loudly and now glow with light blue actively moving lines. </p><p>8. Place active positronic brain inside</p><p>9. Add two (2) reinforced glass to the AI shell</p><p>10. Secure glass screws with screwdriver</p><i><p><center> Note: Warranty void if exposed to: High Humidity, High Temperatures, Grass, Mud, The Jungle, lonely Robotists.</center></p></i>"
@@ -62,19 +62,19 @@
 	crate_name = "AI core assembly crate"
 
 /datum/supply_pack/faction/independent/idea/silicon/ai
-	name = "Posi-Brain Cube for Cyborg"
+	name = "Posi-Brain Cube for Cyborg or AI"
 	desc = "Build your own silicon friend! Contains all parts of cyborg."
-	cost = 1250
+	cost = 1000
 	contains = list(/obj/item/mmi/posibrain/ipc)
 
 /datum/supply_pack/faction/independent/idea/silicon/ai_shell
-	name = "Cyborg assembly shell"
-	desc = "Cyborg shell for your AI! Contains and B.O.R.I.S module for an AI"
-	cost = 1250
+	name = "AI - Boris Module for Cyborg"
+	desc = "Boris Module for your AI! Contains and B.O.R.I.S module for an AI"
+	cost = 1000
 	contains = list(/obj/item/borg/upgrade/ai)
 
 /datum/supply_pack/faction/independent/idea/silicon/robot
-	name = "Cyborg assembly shell"
+	name = "Cyborg - assembly shell"
 	desc = "Build your own silicon friend! Contains all parts of cyborg."
 	cost = 1750
 	contains = list(

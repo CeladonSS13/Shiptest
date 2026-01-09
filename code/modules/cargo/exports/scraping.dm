@@ -15,7 +15,7 @@
 /datum/export/anomaly
 	unit_name = "stabilized anomaly core"
 	cost = 1000	//cost = 3000 // [CELADON-EDIT]
-	elasticity_coeff = 0
+	elasticity_coeff = 0.1
 	export_types = list(/obj/item/assembly/signaler/anomaly)
 
 /datum/export/anomaly/New(...)
@@ -49,7 +49,7 @@
 
 /datum/export/thruster_ion
 	cost = 500
-	desc = "One set of circuits and controllers for an electrical ion engine."
+	desc = "One set of t3 circuits and controllers for an electrical ion engine."
 	unit_name = "ion thruster board"
 	elasticity_coeff = 0.05
 	export_types = list(/obj/item/circuitboard/machine/shuttle/engine/electric/tech3)
