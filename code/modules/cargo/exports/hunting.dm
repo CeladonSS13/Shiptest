@@ -74,7 +74,6 @@
 	unit_name = "rare hunting trophy"
 	export_types = list(
 // [CELADON-ADD]
-		/obj/item/crusher_trophy,
 		/obj/item/crusher_trophy/watcher_wing_forgotten,
 		/obj/item/crusher_trophy/legion_skull_crystal,
 		/obj/item/crusher_trophy/goliath_crystal,
@@ -89,7 +88,6 @@
 		/obj/item/crusher_trophy/tail_spike,
 		/obj/item/crusher_trophy/ice_wing,
 		/obj/item/crusher_trophy/dwarf_skull,
-		/obj/item/mob_trophy,
 		/obj/item/mob_trophy/watcher_wing_forgotten,
 		/obj/item/mob_trophy/legion_skull_crystal,
 		/obj/item/mob_trophy/goliath_crystal,

@@ -1,5 +1,5 @@
 /datum/export/tools/electric
-	elasticity_coeff = 0.3
+	elasticity_coeff = 0.5
 
 //Advanced/Power Tools.
 /datum/export/tools/weldingtool/electric
@@ -30,7 +30,7 @@
 /datum/export/tools/rcd
 	unit_name = "rapid construction device"
 	export_types = list(/obj/item/construction/rcd)
-	cost = 1000
+	cost = 500
 
 /datum/export/tools/rcd_ammo
 	unit_name = "compressed matter cardridge"
