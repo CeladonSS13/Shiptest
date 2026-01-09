@@ -3,17 +3,17 @@
 /obj/projectile/bullet/a556_45
 	name = "5.56x45mm bullet"
 	damage = 23
-	armour_penetration = 15
+	armour_penetration = 15 // [CELADON-EDIT] Original: armour_penetration = 20, damage = 25
 
 /obj/projectile/bullet/a556_45/a856
 	name = "5.56x45mm A856 bullet"
-	damage = 33
-	armour_penetration = -20
+	damage = 40
+	armour_penetration = -30 // [CELADON-EDIT] Original: armour_penetration = 25, damage = 30
 
 /obj/projectile/bullet/a556_45/m903
 	name = "5.56x45mm M903 bullet"
 	damage = 20
-	armour_penetration = 45
+	armour_penetration = 45 // [CELADON-EDIT] Original: armour_penetration = 40
 
 /obj/projectile/bullet/a556_45/surplus
 	name = "5.56x45mm surplus bullet"
@@ -28,14 +28,13 @@
 	icon_state = "bullet"
 	speed = 0.3
 	damage = 30
-	armour_penetration = 25
+	armour_penetration = 25 // [CELADON-EDIT] Original: armour_penetration = 40
 	bullet_identifier = "large bullet"
-
 /obj/projectile/bullet/a308/hp
 	name = ".308 hollow point bullet"
 	speed = 0.3
 	damage = 40
-	armour_penetration = -5
+	armour_penetration = -5 // [CELADON-EDIT] Original: armour_penetration = -10, damage = 60
 
 /obj/projectile/bullet/a308/surplus
 	name = ".308 surplus bullet"
@@ -47,7 +46,7 @@
 	name = ".308 armor piercing bullet"
 	speed = 0.3
 	damage = 25
-	armour_penetration = 60
+	armour_penetration = 60 // [CELADON-EDIT] Original: damage = 28
 
 /obj/projectile/bullet/a308/rubber
 	name = ".308 rubber bullet"

@@ -2,16 +2,16 @@
 
 /obj/projectile/bullet/a556_42
 	name = "5.56x42mm CLIP bullet"
-	damage = 25
-	armour_penetration = 20
+	damage = 22
+	armour_penetration = 20 // [CELADON-EDIT] Original: damage = 25
 	wound_bonus = -40
 	speed = BULLET_SPEED_RIFLE
 	bullet_identifier = "medium bullet"
 
 /obj/projectile/bullet/a556_42/hp
 	name = "5.56x42mm CLIP hollow point bullet"
-	damage = 33
-	armour_penetration = -25 // [CELADON-EDIT] Original: armour_penetration = 10, damage = 35
+	damage = 38
+	armour_penetration = -30 // [CELADON-EDIT] Original: armour_penetration = 10, damage = 35
 	speed_mod = BULLET_SPEED_HP_MOD
 
 /obj/projectile/bullet/a556_42/ap
@@ -23,8 +23,8 @@
 /obj/projectile/bullet/a556_42/rubber
 	name = "5.56x42mm CLIP Rubber bullet"
 	damage = 5
-	stamina = 25
-	armour_penetration = -20 // [CELADON-EDIT] Original: armour_penetration = 0
+	stamina = 15
+	armour_penetration = -20 // [CELADON-EDIT] Original: armour_penetration = 0, stamina = 25
 	speed_mod = BULLET_SPEED_RUBBER_MOD
 	bullet_identifier = "medium bullet"
 
@@ -72,7 +72,7 @@
 
 /obj/projectile/bullet/a762_40/hp
 	name = "7.62x40mm CLIP hollow point bullet"
-	damage = 38
+	damage = 40
 	armour_penetration = -15 // [CELADON-EDIT] Original: armour_penetration = 10, damage = 10
 	speed_mod = BULLET_SPEED_HP_MOD
 
