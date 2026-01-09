@@ -78,7 +78,7 @@
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | LAVA_PROOF
 	slowdown = 0
-	armor = list("melee" = 70, "bullet" = 40, "laser" = 30, "energy" = 45, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 70, "bullet" = 40, "laser" = 30, "energy" = 45, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100, "wound" = 50)  // [CELADON-EDIT] - CELADON_BALANCE
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals, /obj/item/resonator, /obj/item/mining_scanner, /obj/item/t_scanner/adv_mining_scanner, /obj/item/pinpointer/mineral, /obj/item/gun/energy/kinetic_accelerator, /obj/item/pickaxe)
 
 /obj/item/clothing/suit/space/hostile_environment/Initialize()
@@ -106,7 +106,7 @@
 	item_state = "hostile_env"
 	w_class = WEIGHT_CLASS_NORMAL
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
-	armor = list("melee" = 75, "bullet" = 40, "laser" = 35, "energy" = 45, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 75, "bullet" = 40, "laser" = 35, "energy" = 45, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100, "wound" = 50)  // [CELADON-EDIT] - CELADON_BALANCE
 	resistance_flags = FIRE_PROOF | LAVA_PROOF
 
 /obj/item/clothing/head/helmet/space/hostile_environment/Initialize()

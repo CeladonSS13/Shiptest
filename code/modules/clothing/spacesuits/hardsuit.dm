@@ -335,7 +335,7 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/mining/heavy/ns
 	hardsuit_type = "nsmining"
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	armor = list("melee" = 65, "bullet" = 30, "laser" = 25, "energy" = 30, "bomb" = 70, "bio" = 100, "rad" = 85, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 65, "bullet" = 30, "laser" = 25, "energy" = 30, "bomb" = 70, "bio" = 100, "rad" = 85, "fire" = 100, "acid" = 100, "wound" = 30) // [CELADON-EDIT] - CELADON_BALANCE - добавил защиту от ваундов
 	supports_variations = KEPORI_VARIATION
 
 /obj/item/clothing/head/helmet/space/hardsuit/mining/heavy/ns
@@ -345,7 +345,7 @@
 	item_state = "hardsuit0-nsmining"
 	hardsuit_type = "nsmining"
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	armor = list("melee" = 65, "bullet" = 30, "laser" = 25, "energy" = 30, "bomb" = 70, "bio" = 100, "rad" = 85, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 65, "bullet" = 30, "laser" = 25, "energy" = 30, "bomb" = 70, "bio" = 100, "rad" = 85, "fire" = 100, "acid" = 100, "wound" = 30) // [CELADON-EDIT] - CELADON_BALANCE - добавил защиту от ваундов
 	supports_variations = KEPORI_VARIATION
 
 	//Syndicate hardsuit
@@ -506,7 +506,7 @@
 	hardsuit_type = "ramzielite"
 	icon_state = "hardsuit1-ramzielite"
 	item_state = "hardsuit1-ramzielite"
-	armor = list("melee" = 50, "bullet" = 60, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 100, "acid" = 80)
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 100, "acid" = 80, "wound" = 50) // [CELADON-EDIT] - CELADON_BALANCE
 
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi/elite
 	name = "elite rust-red hardsuit"
@@ -516,7 +516,7 @@
 	item_state = "hardsuit1-ramzielite"
 	hardsuit_type = "ramzielite"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/ramzi/elite
-	armor = list("melee" = 50, "bullet" = 60, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 100, "acid" = 80)
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 100, "acid" = 80, "wound" = 50) // [CELADON-EDIT] - CELADON_BALANCE
 	slowdown = 1.25
 //Mayor's Suit
 
@@ -781,7 +781,7 @@
 	icon_state = "swat2helm"
 	item_state = "swat2helm"
 	desc = "A tactical SWAT helmet MK.II."
-	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 60, "bomb" = 50, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 60, "bomb" = 50, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100, "wound" = 40)  // [CELADON-EDIT] - CELADON_BALANCE
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR //we want to see the mask //this makes the hardsuit not fireproof you genius
 	heat_protection = HEAD
@@ -795,7 +795,7 @@
 	desc = "A MK.II SWAT suit with streamlined joints and armor made out of superior materials, insulated against intense heat if worn with the complementary gas mask. The most advanced tactical armor available."
 	icon_state = "swat2"
 	item_state = "swat2"
-	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 60, "bomb" = 50, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 60, "bomb" = 50, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100, "wound" = 40)  // [CELADON-EDIT] - CELADON_BALANCE
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT //this needed to be added a long fucking time ago
@@ -1003,7 +1003,7 @@
 	icon_state = "hardsuit1-syndi"
 	item_state = "syndie_hardsuit"
 	hardsuit_type = "syndi"
-	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100, "wound" = 30) // [CELADON-EDIT] - CELADON_BALANCE
 	allowed = list(/obj/item/gun, /obj/item/ammo_box, /obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/melee/energy/sword/saber, /obj/item/restraints/handcuffs, /obj/item/tank/internals)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/shielded/syndi
 	slowdown = 0.5
@@ -1034,7 +1034,7 @@
 	icon_state = "hardsuit1-syndi"
 	item_state = "syndie_helm"
 	hardsuit_type = "syndi"
-	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100, "wound" = 30) // [CELADON-EDIT] - CELADON_BALANCE
 
 ///SWAT version
 /obj/item/clothing/suit/space/hardsuit/shielded/swat
@@ -1046,7 +1046,7 @@
 	max_charges = 4
 	current_charges = 4
 	recharge_delay = 15
-	armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 60, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 60, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100, "wound" = 60) // [CELADON-EDIT] - CELADON_BALANCE // armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 60, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
 	strip_delay = 130
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/shielded/swat
@@ -1058,7 +1058,7 @@
 	icon_state = "deathsquad"
 	item_state = "deathsquad"
 	hardsuit_type = "syndi"
-	armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 60, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 60, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100, "wound" = 60)  // [CELADON-EDIT] - CELADON_BALANCE // armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 60, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
 	strip_delay = 130
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	actions_types = list()
