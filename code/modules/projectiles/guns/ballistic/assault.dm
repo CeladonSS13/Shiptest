@@ -111,7 +111,8 @@
 /obj/item/gun/ballistic/automatic/assault/skm/inteq
 	name = "\improper SKM-44"
 	desc = "An obsolete model of assault rifle once used by CLIP. Most of these were seized from Frontiersmen armories or purchased in CLIP, then modified to IRMG standards. Chambered in 7.62x40mm CLIP."
-
+	wield_delay = 0.5 SECONDS //[CELADON-ADD]Ergonomics increase
+	wield_slowdown = 0.5 //[CELADON-ADD]Ergonomics increase
 	icon = 'icons/obj/guns/manufacturer/inteq/48x32.dmi'
 	lefthand_file = 'icons/obj/guns/manufacturer/inteq/lefthand.dmi'
 	righthand_file = 'icons/obj/guns/manufacturer/inteq/righthand.dmi'

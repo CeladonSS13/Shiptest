@@ -116,14 +116,16 @@
 
 /obj/projectile/bullet/a357
 	name = ".357 bullet"
-	damage = 35
+	damage = 30
+	armour_penetration = 10 // [CELADON-EDIT] Original: armour_penetration = 0, damage = 35
 
 	speed = BULLET_SPEED_REVOLVER
 	bullet_identifier = "medium bullet"
 
 /obj/projectile/bullet/a357/match
 	name = ".357 match bullet"
-	armour_penetration = 10
+	damage = 27
+	armour_penetration = 40 // [CELADON-EDIT] Original: armour_penetration = 10, damage = 35
 	speed_mod = BULLET_SPEED_AP_MOD
 	ricochets_max = 5
 	ricochet_chance = 140
@@ -134,8 +136,8 @@
 
 /obj/projectile/bullet/a357/hp
 	name = ".357 hollow point bullet"
-	damage = 50
-	armour_penetration = -20
+	damage = 40
+	armour_penetration = -25 // [CELADON-EDIT] Original: armour_penetration = -20, damage = 50
 	speed_mod = BULLET_SPEED_HP_MOD
 	ricochet_chance = 0
 
@@ -177,7 +179,8 @@
 
 /obj/projectile/bullet/a44roum
 	name = ".44 roumain bullet"
-	damage =  30
+	damage =  35
+	armour_penetration = 10 // [CELADON-EDIT] Original: armour_penetration = 0, damage = 30
 	speed = BULLET_SPEED_REVOLVER
 	bullet_identifier = "small bullet"
 
@@ -191,7 +194,7 @@
 
 /obj/projectile/bullet/a44roum/hp
 	name = ".44 roumain hollow point bullet"
-	damage =  45
-	armour_penetration = -10
+	damage = 50
+	armour_penetration = -25 // [CELADON-EDIT] Original: armour_penetration = -10, damage = 45
 	ricochet_chance = 0
 	speed_mod = BULLET_SPEED_HP_MOD

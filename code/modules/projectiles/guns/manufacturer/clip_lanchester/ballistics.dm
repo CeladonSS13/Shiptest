@@ -670,7 +670,7 @@ NO_MAG_GUN_HELPER(automatic/assault/skm/cm24)
 	gun_firemodes = list(FIREMODE_SEMIAUTO, FIREMODE_FULLAUTO)
 	default_firemode = FIREMODE_SEMIAUTO
 
-	fire_delay = 0.2 SECONDS //chunky machine gun
+	fire_delay = 0.15 SECONDS ////[CELADON-EDIT] Original: fire_delay= 0.2
 
 	unique_mag_sprites_for_variants = TRUE
 
@@ -686,7 +686,7 @@ NO_MAG_GUN_HELPER(automatic/assault/skm/cm24)
 		/obj/item/ammo_box/magazine/f4_308
 	)
 
-	spread = 12
+	spread = 8 //[CELADON-EDIT] Original: spread = 12
 	spread_unwielded = 35
 
 	recoil = 3 //it's firing .308
@@ -696,7 +696,7 @@ NO_MAG_GUN_HELPER(automatic/assault/skm/cm24)
 
 	deploy_recoil_bonus = -3
 	deploy_spread_bonus = -10 //2 degree spread when deployed, making it VERY accurate for an lmg
-
+	wear_rate = 3 //[CELADON-EDIT] Original: wear rate = 1
 	valid_attachments = CLIP_ATTACHMENTS
 	unique_attachments = list(/obj/item/attachment/scope)
 	slot_available = list(

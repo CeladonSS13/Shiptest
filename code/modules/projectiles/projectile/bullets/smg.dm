@@ -2,21 +2,21 @@
 
 /obj/projectile/bullet/c57x39mm
 	name = "5.7x39mm bullet"
-	damage = 20
+	damage = 23 // [CELADON-EDIT] Original: damage = 20
 	speed = BULLET_SPEED_PDW
 	armour_penetration = 10
 	bullet_identifier = "small bullet"
 
 /obj/projectile/bullet/c57x39mm/hp
 	name = "5.7x39mm hollow point bullet"
-	damage = 30
-	armour_penetration = -10
+	damage = 33
+	armour_penetration = -15 // [CELADON-EDIT] Original: armour_penetration = -10, damage = 30
 	speed_mod = BULLET_SPEED_HP_MOD
 
 /obj/projectile/bullet/c57x39mm/ap
 	name = "5.7x39mm armor piercing bullet"
-	damage = 19
-	armour_penetration = 30
+	damage = 20
+	armour_penetration = 50 // [CELADON-EDIT] Original: armour_penetration = 30, damage = 19
 	speed_mod = BULLET_SPEED_AP_MOD
 
 /obj/projectile/bullet/c57x39mm/rubber
@@ -44,21 +44,21 @@
 
 /obj/projectile/bullet/c46x30mm/ap
 	name = "4.6x30mm armor-piercing bullet"
-	damage = 18
-	armour_penetration = 40
+	damage = 19
+	armour_penetration = 15 // [CELADON-EDIT] Original: armour_penetration = -20, damage = 25
 	speed_mod = BULLET_SPEED_AP_MOD
 
 /obj/projectile/bullet/c46x30mm/hp
 	name = "4.6x30mm HP bullet"
-	damage = 30
-	armour_penetration = -10
+	damage = 31
+	armour_penetration = -35 // [CELADON-EDIT] Original: armour_penetration = -10, damage = 30
 	speed_mod = BULLET_SPEED_HP_MOD
 
 /obj/projectile/bullet/c46x30mm/rubber
 	name = "4.6x30mm bullet"
 	damage = 4
-	stamina = 20
-	armour_penetration = -10
+	stamina = 15
+	armour_penetration = -20 // [CELADON-EDIT] Original: armour_penetration = -10, stamina = 20
 	speed_mod = BULLET_SPEED_RUBBER_MOD
 	bullet_identifier = "small rubber bullet"
 
