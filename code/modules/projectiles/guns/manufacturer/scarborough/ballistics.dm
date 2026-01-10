@@ -558,8 +558,8 @@ NO_MAG_GUN_HELPER(automatic/smg/cobra/indie)
 		)
 	)
 
-	fire_delay = 0.12 SECONDS
-	spread = 8
+	fire_delay = 0.12 SECONDS //[CELADON-EDIT] - GUN_BALANCE <- Original: fire_delay = 0.09
+	spread = 8 //[CELADON-EDIT] - GUN_BALANCE <- Original: spread = 7
 	spread_unwielded = 10
 
 	recoil = 0
