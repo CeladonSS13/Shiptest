@@ -68,7 +68,7 @@
 	kinesis_icon = mutable_appearance(icon='mod_celadon/_storage_icons/icons/assets/effects.dmi', icon_state="kinesis", layer=grabbed_atom.layer-0.1)
 	kinesis_icon.appearance_flags = RESET_ALPHA|RESET_COLOR|RESET_TRANSFORM
 	grabbed_atom.add_overlay(kinesis_icon)
-	kinesis_beam = mod.wearer.Beam(grabbed_atom, "kinesis")
+	kinesis_beam = mod.wearer.Beam(grabbed_atom, "kinesis",'mod_celadon/_storage_icons/icons/assets/beam.dmi')
 	kinesis_catcher = mod.wearer.overlay_fullscreen("kinesis", /atom/movable/screen/fullscreen/kinesis, 0)
 	kinesis_catcher.kinesis_user = mod.wearer
 	kinesis_catcher.RegisterSignal(mod.wearer, COMSIG_MOVABLE_MOVED, /atom/movable/screen/fullscreen/kinesis.proc/on_move)
@@ -274,7 +274,9 @@
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 25
 	prebuilt = TRUE
 	stat_required = CONSCIOUS
-
+	mob_stun_time = 0.2 SECONDS // микростан
+	cooldown_time = 4 SECONDS
+	hit_cooldown_time = 1.5 SECONDS
 
 /datum/looping_sound/kinesis
     mid_sounds = list('sound/machines/gravgen/gravgen_mid1.ogg'=1,'sound/machines/gravgen/gravgen_mid2.ogg'=1,'sound/machines/gravgen/gravgen_mid3.ogg'=1,'sound/machines/gravgen/gravgen_mid4.ogg'=1,)
