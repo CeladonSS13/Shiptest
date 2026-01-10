@@ -264,7 +264,7 @@
 	theme = /datum/mod_theme/inteq/elite
 	applied_cell = /obj/item/stock_parts/cell/super
 	initial_modules = list(
-		/obj/item/mod/module/storage/large_capacity,
+		/obj/item/mod/module/storage,
 		/obj/item/mod/module/flashlight_inteq,
 		/obj/item/mod/module/dna_lock,
 		/obj/item/mod/module/jetpack,

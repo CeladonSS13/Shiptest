@@ -72,7 +72,7 @@
 /obj/item/mod/control/pre_equipped/responsory/empty
 	applied_cell = /obj/item/stock_parts/cell/super
 	initial_modules = list(
-		/obj/item/mod/module/storage/large_capacity,
+		/obj/item/mod/module/storage,
 		/obj/item/mod/module/jetpack,
 		/obj/item/mod/module/welding,
 		/obj/item/mod/module/flashlight,
@@ -83,7 +83,7 @@
 /obj/item/mod/control/pre_equipped/syndicate/empty
 	applied_cell = /obj/item/stock_parts/cell/hyper
 	initial_modules = list(
-		/obj/item/mod/module/storage/syndicate,
+		/obj/item/mod/module/storage,
 		/obj/item/mod/module/jetpack,
 		/obj/item/mod/module/flashlight,
 	)
@@ -91,7 +91,7 @@
 /obj/item/mod/control/pre_equipped/elite/empty
 	applied_cell = /obj/item/stock_parts/cell/hyper
 	initial_modules = list(
-		/obj/item/mod/module/storage/syndicate,
+		/obj/item/mod/module/storage,
 		/obj/item/mod/module/jetpack/advanced,
 		/obj/item/mod/module/flashlight,
 	)
@@ -99,7 +99,7 @@
 /obj/item/mod/control/pre_equipped/falke/empty
 	applied_cell = /obj/item/stock_parts/cell/super
 	initial_modules = list(
-		/obj/item/mod/module/storage/large_capacity,
+		/obj/item/mod/module/storage,
 		/obj/item/mod/module/welding,
 		/obj/item/mod/module/jetpack,
 		/obj/item/mod/module/dna_lock,
@@ -109,7 +109,7 @@
 /obj/item/mod/control/pre_equipped/storch/empty
 	applied_cell = /obj/item/stock_parts/cell/super
 	initial_modules = list(
-		/obj/item/mod/module/storage/large_capacity,
+		/obj/item/mod/module/storage,
 		/obj/item/mod/module/welding,
 		/obj/item/mod/module/jetpack,
 		/obj/item/mod/module/flashlight,

@@ -92,7 +92,7 @@
 // MARK: ENGINEERING
 /datum/supply_pack/faction/independent/modsuits/modules/welding
 	name = "MOD Welding Protection Module"
-	desc = "Contains a welding protection module to protect your eyes."
+	desc = "Contains a welding protection module to protect your eyes from flashes and sparks."
 	cost = 250
 	contains = list(/obj/item/mod/module/welding)
 
@@ -139,13 +139,13 @@
 	name = "MOD storage module"
 	desc = "Contains a low-class storage module to put all your valueless shit in."
 	contains = list(/obj/item/mod/module/storage)
-	cost = 200 // literally a danked version of backpack
+	cost = 200 // backpack
 
 /datum/supply_pack/faction/independent/modsuits/expanded_storage
 	name = "MOD expanded storage module"
 	desc = "Contains a high-class storage module to put all of your most precious savings in!"
 	contains = list(/obj/item/mod/module/storage/large_capacity)
-	cost = 1000 // backpack
+	cost = 700 // backpack+
 
 // MARK: MOVEMENT
 /datum/supply_pack/faction/independent/modsuits/modules/dash

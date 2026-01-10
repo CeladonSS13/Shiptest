@@ -305,7 +305,7 @@
 /datum/supply_pack/faction/syndicate/modsuits/modules/storage
 	name = "MOD syndicate storage module"
 	desc = "Contains a very high-class storage module to put all of your most precious savings in!"
-	cost = 2000 // he-he
+	cost = 1000 // duffelbag
 	contains = list(/obj/item/mod/module/storage/syndicate)
 
 /datum/supply_pack/faction/syndicate/modsuits/modules/chameleon
