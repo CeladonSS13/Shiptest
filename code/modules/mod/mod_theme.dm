@@ -34,7 +34,7 @@
 	/// How much modules can the MOD carry without malfunctioning.
 	var/complexity_max = DEFAULT_MAX_COMPLEXITY
 	/// How much battery power the MOD uses by just being on
-	var/charge_drain = DEFAULT_CHARGE_DRAIN
+	var/charge_drain = DEFAULT_CHARGE_DRAIN*0.5 // [CELADON-EDIT] - CELADON_MODSUITS
 	/// Slowdown of the MOD when not active.
 	var/slowdown_inactive = 0.75
 	/// Slowdown of the MOD when active.
@@ -64,7 +64,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -88,7 +88,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -111,7 +111,7 @@
 	// armor = list("melee" = 30, "bullet" = 5, "laser" = 10, "energy" = 20, "bomb" = 10, "bio" = 100, "rad" = 75, "fire" = 100, "acid" = 75)
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 30, "energy" = 20, "bomb" = 50, "bio" = 100, "rad" = 75, "fire" = 100, "acid" = 75, "wound" = 20)
 	complexity_max = DEFAULT_MAX_COMPLEXITY + 5
-	// [.CELADON-EDIT]
+	// [/CELADON-EDIT]
 	resistance_flags = FIRE_PROOF
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	siemens_coefficient = 0
@@ -137,7 +137,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -160,7 +160,7 @@
 	//armor = list("melee" = 30, "bullet" = 5, "laser" = 10, "energy" = 20, "bomb" = 10, "bio" = 100, "rad" = 25, "fire" = 100, "acid" = 75)
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 30, "energy" = 20, "bomb" = 50, "bio" = 100, "rad" = 75, "fire" = 100, "acid" = 75, "wound" = 20)
 	complexity_max = DEFAULT_MAX_COMPLEXITY + 5
-	// [.CELADON-EDIT]
+	// [/CELADON-EDIT]
 	resistance_flags = FIRE_PROOF
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	slowdown_inactive = 1.25
@@ -187,7 +187,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -241,7 +241,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -296,7 +296,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -322,7 +322,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -388,7 +388,8 @@
 	// armor = list("melee" = 30, "bullet" = 5, "laser" = 10, "energy" = 20, "bomb" = 10, "bio" = 100, "rad" = 60, "fire" = 60, "acid" = 75)
 	armor = list("melee" = 30, "bullet" = 5, "laser" = 10, "energy" = 20, "bomb" = 10, "bio" = 100, "rad" = 60, "fire" = 60, "acid" = 75, "wound" = 30)
 	// [/CELADON-EDIT]
-	charge_drain = DEFAULT_CHARGE_DRAIN * 1.5
+	// charge_drain = DEFAULT_CHARGE_DRAIN * 1.5
+	charge_drain = DEFAULT_CHARGE_DRAIN*0.5 // [CELADON-EDIT] - CELADON_MODSUITS
 	slowdown_inactive = 0.5
 	slowdown_active = 0.3
 	allowed_suit_storage = list(
@@ -421,7 +422,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -447,7 +448,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -473,7 +474,8 @@
 	// [/CELADON-EDIT]
 	resistance_flags = FIRE_PROOF|ACID_PROOF
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
-	charge_drain = DEFAULT_CHARGE_DRAIN * 1.5
+	// charge_drain = DEFAULT_CHARGE_DRAIN * 1.5
+	charge_drain = DEFAULT_CHARGE_DRAIN*0.5 // [CELADON-EDIT] - CELADON_MODSUITS
 	slowdown_inactive = 0.5
 	slowdown_active = 0.25
 	inbuilt_modules = list(/obj/item/mod/module/quick_carry/advanced)
@@ -508,7 +510,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -559,7 +561,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -582,7 +584,8 @@
 	// armor = list("melee" = 35, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 35, "energy" = 30, "bomb" = 35, "bio" = 100, "fire" = 75, "acid" = 75)
 	// [/CELADON-EDIT]
-	complexity_max = DEFAULT_MAX_COMPLEXITY - 5
+	complexity_max =  DEFAULT_MAX_COMPLEXITY - 3 // [CELADON-EDIT] - CELADON_MODSUITS // complexity_max = DEFAULT_MAX_COMPLEXITY - 5
+	charge_drain = DEFAULT_CHARGE_DRAIN // [CELADON-ADD] - CELADON_MODSUITS
 	slowdown_inactive = 0.75
 	slowdown_active = 0.5
 	allowed_suit_storage = list(
@@ -611,7 +614,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -636,6 +639,7 @@
 	// [/CELADON-EDIT]
 	resistance_flags = FIRE_PROOF
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	charge_drain = DEFAULT_CHARGE_DRAIN // [CELADON-ADD] - CELADON_MODSUITS
 	slowdown_inactive = 0.75
 	slowdown_active = 0.5
 	allowed_suit_storage = list(
@@ -661,7 +665,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -688,6 +692,7 @@
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	complexity_max = DEFAULT_MAX_COMPLEXITY + 5
+	charge_drain = DEFAULT_CHARGE_DRAIN // [CELADON-ADD] - CELADON_MODSUITS
 	slowdown_inactive = 0.75
 	slowdown_active = 0.5
 	allowed_suit_storage = list(
@@ -716,7 +721,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -741,6 +746,7 @@
 	// [/CELADON-EDIT]
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	charge_drain = DEFAULT_CHARGE_DRAIN // [CELADON-ADD] - CELADON_MODSUITS
 	slowdown_inactive = 0.75
 	slowdown_active = 0.5
 	ui_theme = "syndicate"
@@ -770,7 +776,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -796,6 +802,7 @@
 	resistance_flags = FIRE_PROOF|ACID_PROOF
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	charge_drain = DEFAULT_CHARGE_DRAIN // [CELADON-ADD] - CELADON_MODSUITS
 	slowdown_inactive = 0.25
 	slowdown_active = 0.5
 	ui_theme = "syndicate"
@@ -825,7 +832,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -877,7 +884,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -928,7 +935,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -954,6 +961,7 @@
 	resistance_flags = FIRE_PROOF
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	siemens_coefficient = 0
+	charge_drain = DEFAULT_CHARGE_DRAIN // [CELADON-ADD] - CELADON_MODSUITS
 	slowdown_inactive = 0.5
 	slowdown_active = 0
 	allowed_suit_storage = list(
@@ -979,7 +987,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -1004,7 +1012,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -1056,7 +1064,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -1081,6 +1089,7 @@
 	resistance_flags = FIRE_PROOF|ACID_PROOF
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	charge_drain = DEFAULT_CHARGE_DRAIN // [CELADON-ADD] - CELADON_MODSUITS
 	siemens_coefficient = 0
 	slowdown_inactive = 0.5
 	slowdown_active = 0
@@ -1107,7 +1116,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -1153,7 +1162,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -1199,7 +1208,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -1246,7 +1255,7 @@
 			),
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL|STOPSPRESSUREDAMAGE|BLOCKS_SHOVE_KNOCKDOWN,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL, // [CELADON-EDIT] - CELADON_MODSUITS - убираем хвосты риолам и таярам
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL|STOPSPRESSUREDAMAGE,

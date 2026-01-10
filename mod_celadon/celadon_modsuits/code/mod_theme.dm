@@ -234,6 +234,7 @@
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	siemens_coefficient = 0
+	charge_drain = DEFAULT_CHARGE_DRAIN
 	slowdown_inactive = 1
 	slowdown_active = 1
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
@@ -259,7 +260,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL,
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -291,6 +292,7 @@
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	complexity_max = DEFAULT_MAX_COMPLEXITY
 	siemens_coefficient = 0
+	charge_drain = DEFAULT_CHARGE_DRAIN
 	slowdown_inactive = 1
 	slowdown_active = 0.5
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
@@ -316,7 +318,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL,
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -342,7 +344,8 @@
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	siemens_coefficient = 0
-	complexity_max = DEFAULT_MAX_COMPLEXITY + 5
+	complexity_max = DEFAULT_MAX_COMPLEXITY + 3
+	charge_drain = DEFAULT_CHARGE_DRAIN // [CELADON-ADD] - CELADON_MODSUITS
 	slowdown_inactive = 1
 	slowdown_active = 0.6
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
@@ -368,7 +371,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL,
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,

@@ -10,6 +10,7 @@
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	siemens_coefficient = 0
+	charge_drain = DEFAULT_CHARGE_DRAIN
 	slowdown_inactive = 1
 	slowdown_active = 0.3
 	ui_theme = "inteq"
@@ -37,7 +38,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDETAIL,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL,
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -184,6 +185,7 @@
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	complexity_max = DEFAULT_MAX_COMPLEXITY + 5
 	siemens_coefficient = 0
+	charge_drain = DEFAULT_CHARGE_DRAIN
 	slowdown_inactive = 1
 	// slowdown_active = 0.2
 	slowdown_active = 0.3
