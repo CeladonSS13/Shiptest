@@ -455,6 +455,7 @@
 	if (I)
 		I.equip_to_best_slot(src)
 
+/* // [CELADON-REMOVE] - Equipment-swap - Abuse
 /mob/verb/equipment_swap()
 	set name = "equipment-swap"
 	set hidden = TRUE
@@ -469,6 +470,7 @@
 			dropItemToGround(I)
 			return
 		I.equip_to_best_slot(src, TRUE)
+*/ // [/CELADON-REMOVE]
 
 //used in code for items usable by both carbon and drones, this gives the proper back slot for each mob.(defibrillator, backpack watertank, ...)
 /mob/proc/getBackSlot()
