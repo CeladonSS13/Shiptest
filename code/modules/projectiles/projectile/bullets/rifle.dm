@@ -32,7 +32,7 @@
 
 /obj/projectile/bullet/a8_50r
 	name = "8x50mmR bullet"
-	damage = 35 // [CELADON-EDIT] - GUN_BALANCE <- Original: damage = 37
+	damage = 40 // [CELADON-EDIT] - GUN_BALANCE <- Original: damage = 37
 	armour_penetration = 30
 	speed = BULLET_SPEED_RIFLE
 	bullet_identifier = "large bullet"

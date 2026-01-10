@@ -558,12 +558,13 @@ NO_MAG_GUN_HELPER(automatic/smg/cobra/indie)
 		)
 	)
 
-	spread = 7
+	fire_delay = 0.12 SECONDS
+	spread = 8
 	spread_unwielded = 10
 
 	recoil = 0
 	recoil_unwielded = 4
-	wear_rate = 3 //[CELADON-EDIT] - GUN_BALANCE <- Original: wear rate = 1
+	wear_rate = 2 //[CELADON-EDIT] - GUN_BALANCE <- Original: wear rate = 1
 
 	default_attachments = list(/obj/item/attachment/foldable_stock/sidewinder)
 
