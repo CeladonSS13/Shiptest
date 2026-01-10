@@ -44,8 +44,8 @@
 /obj/projectile/bullet/a65clip
 	name = "6.5mm CLIP bullet"
 	stamina = 10
-	damage = 34
-	armour_penetration = 70 // [CELADON-EDIT] Original: armour_penetration = 40, damage = 50
+	damage = 40
+	armour_penetration = 60 // [CELADON-EDIT] Original: armour_penetration = 50, damage = 40
 	bullet_identifier = "huge bullet"
 
 	speed = BULLET_SPEED_SNIPER
@@ -74,14 +74,14 @@
 	name = "8x58mm caseless bullet"
 	damage = 45
 	stamina = 10
-	armour_penetration = 30 // [CELADON-EDIT] Original: armour_penetration = 30
+	armour_penetration = 30 // [CELADON-EDIT] - GUN_BALANCE <- Original: armour_penetration = 50
 	speed = BULLET_SPEED_SNIPER
 	bullet_identifier = "huge bullet"
 
 /obj/projectile/bullet/a858/trac
 	name = "8x58mm tracker"
 	damage = 15
-	armour_penetration = 20 // [CELADON-EDIT] Original: armour_penetration = 0, damage = 12
+	armour_penetration = 20 // [CELADON-EDIT] - GUN_BALANCE <- Original: armour_penetration = 0, damage = 12
 	shrapnel_type = /obj/item/shrapnel/bullet/tracker/a858
 
 // .300 Magnum
@@ -90,12 +90,12 @@
 	name = ".300 Magnum bullet"
 	damage = 55
 	stamina = 10
-	armour_penetration = 60 // [CELADON-EDIT] Original: armour_penetration = 40, damage = 50
+	armour_penetration = 60 // [CELADON-EDIT] - GUN_BALANCE <- Original: armour_penetration = 40, damage = 50
 	speed = BULLET_SPEED_RIFLE
 	bullet_identifier = "huge bullet"
 
 /obj/projectile/bullet/a300/trac
 	name = ".300 Tracker"
 	damage = 20
-	armour_penetration = 30 // [CELADON-EDIT] Original: armour_penetration = 0, damage = 10
+	armour_penetration = 30 // [CELADON-EDIT] - GUN_BALANCE <- Original: armour_penetration = 0, damage = 10
 	shrapnel_type = /obj/item/shrapnel/bullet/tracker/a308

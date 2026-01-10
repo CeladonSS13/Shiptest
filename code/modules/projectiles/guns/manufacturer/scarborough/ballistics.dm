@@ -563,7 +563,7 @@ NO_MAG_GUN_HELPER(automatic/smg/cobra/indie)
 
 	recoil = 0
 	recoil_unwielded = 4
-	wear_rate = 3 //[CELADON-EDIT] Original: wear rate = 1
+	wear_rate = 3 //[CELADON-EDIT] - GUN_BALANCE <- Original: wear rate = 1
 
 	default_attachments = list(/obj/item/attachment/foldable_stock/sidewinder)
 
@@ -604,7 +604,7 @@ NO_MAG_GUN_HELPER(automatic/smg/sidewinder)
 	)
 	w_class = WEIGHT_CLASS_BULKY
 
-	fire_delay = 1 SECONDS
+	fire_delay = 0.8 SECONDS // [CELADON-EDIT] - GUN_BALANCE // fire_delay = 1 SECONDS
 
 	show_magazine_on_sprite = TRUE
 	unique_mag_sprites_for_variants = TRUE
@@ -894,14 +894,6 @@ NO_MAG_GUN_HELPER(automatic/assault/hydra/indie)
 	)
 
 EMPTY_GUN_HELPER(automatic/assault/hydra/dmr)
-
-/obj/item/gun/ballistic/automatic/assault/hydra/dmr/Initialize()
-	. = ..()
-	// [CELADON-EDIT] -- CELADON_FIXES -- фиксим неподходящий магазин (вагабага дырдырдыр)
-	// magazine = new /obj/item/ammo_box/magazine/m556_42_hydra/small(src)
-	// magazine = new mag_type(src)
-	// [/CELADON-EDIT]
-	chamber_round()
 
 /*
 /obj/item/gun/ballistic/automatic/assault/hydra/underbarrel_gl
