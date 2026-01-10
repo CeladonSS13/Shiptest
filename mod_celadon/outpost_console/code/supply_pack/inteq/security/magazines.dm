@@ -49,6 +49,12 @@
 	contains = list(/obj/item/ammo_box/magazine/rottweiler_308_box/empty)
 	cost = 750
 
+/datum/supply_pack/faction/inteq/magazine/f90
+	name = "SSG-08 Saluki - Magazine (6.5x57mm)"
+	desc = "A large 5-round box magazine for the SSG-08 Saluki sniper rifles. Chambered in the powerful 6.5mm cartridge."
+	cost = 700
+	contains = list(/obj/item/ammo_box/magazine/f90/empty)
+
 /datum/supply_pack/faction/inteq/magazine/skm_ammo_extended
 	name = "SKM - Extended Magazine (7.62x40mm)"
 	desc = "Contains a 7.62x40mm magazine for the SKM rifles, with a capacity of 40 rounds."
