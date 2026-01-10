@@ -31,7 +31,7 @@
 	contains = list(/obj/item/ammo_box/magazine/smgm10mm/empty)
 	cost = 300
 
-/datum/supply_pack/faction/nanotrasen/magazine/wt550_mag
+/datum/supply_pack/faction/inteq/magazine/wt550_mag
 	name = "BDM-50 'Akita' - Magazine (4.6x30mm)"
 	desc = "Contains a 4.6x30mm magazine for the BDM-50 'Akita', with a capacity of 30 rounds."
 	cost = 300
