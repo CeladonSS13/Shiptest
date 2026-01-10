@@ -16,7 +16,7 @@
 	spread = 4
 	wield_delay = 0.2 SECONDS
 	fire_delay = 0.14 SECONDS
-	wield_slowdown = 0.4
+	wield_slowdown = 0.4 // SHOTGUN_SLOWDOWN
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_NORMAL
 	unique_mag_sprites_for_variants = TRUE
@@ -68,8 +68,8 @@ NO_MAG_GUN_HELPER(automatic/assault/g36sh/inteq)
 	item_state = "g36"
 	manufacturer = MANUFACTURER_SOLARARMORIES
 	spread = 2
-	wield_slowdown = 0.5 //[CELADON-EDIT] Original: wield_slowdown = 0.55 SECONDS
-	wield_delay = 0.45 SECONDS //[CELADON-EDIT] Original: wield_delay = 0.5 SECONDS
+	wield_slowdown = 0.5 // Старое: wield_slowdown = 0.55 SECONDS
+	wield_delay = 0.45 SECONDS // Старое: wield_delay = 0.5 SECONDS
 	fire_delay = 0.14 SECONDS
 	unique_mag_sprites_for_variants = TRUE
 	default_ammo_type = /obj/item/ammo_box/magazine/g36
@@ -166,12 +166,12 @@ NO_MAG_GUN_HELPER(automatic/assault/morita1)
 
 	rack_sound = 'mod_celadon/_storage_sounds/sound/gun/svd/svd_cocked.ogg'
 
-	fire_delay = 0.6 SECONDS // [CELADON-EDIT] Original: fire_delay = 0.8 SECONDS
+	fire_delay = 0.6 SECONDS // Старый: fire_delay = 0.8 SECONDS
 
 	spread_unwielded = 25
 	recoil = 0.01
 	recoil_unwielded = 4
-	wield_slowdown = 0.5 // [CELADON-EDIT] Original: wield_delay = 0.75 SECONDS
+	wield_slowdown = 0.5 // Старый: wield_delay = 0.75 SECONDS
 NO_MAG_GUN_HELPER(automatic/marksman/svd)
 
 /obj/item/gun/ballistic/automatic/assault/cm82/solfed

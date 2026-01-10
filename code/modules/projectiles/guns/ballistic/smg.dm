@@ -4,7 +4,7 @@
 
 	burst_size = 2
 	actions_types = list()
-	fire_delay = 0.09 SECONDS // [CELADON-EDIT] Original: fire_delay = 0.1
+	fire_delay = 0.09 SECONDS // [CELADON-EDIT] - GUN_BALANCE <- Original: fire_delay = 0.1
 
 	spread = 6
 	spread_unwielded = 10

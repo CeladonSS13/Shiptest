@@ -343,7 +343,7 @@ NO_MAG_GUN_HELPER(automatic/smg/expedition)
 	manufacturer = MANUFACTURER_NANOTRASEN_OLD
 	fire_sound = 'sound/weapons/gun/smg/resolution.ogg'
 
-	// fire_delay = 0.13 SECONDS // // [CELADON-REMOVE] - GUN_BALANCE Original
+	// fire_delay = 0.13 SECONDS // [CELADON-REMOVE] - GUN_BALANCE <- Original
 
 	spread = 8
 	spread_unwielded = 10

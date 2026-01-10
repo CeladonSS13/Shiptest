@@ -135,7 +135,7 @@
 	sharpness = SHARP_EDGED
 	embedding = list("embed_chance" = 75, "impact_pain_mult" = 10)
 	armour_penetration = 35
-	block_chance = 40 //[CELADON EDIT] Origin block_chance = 50
+	block_chance = 40 //[CELADON EDIT] - GUN_BALANCE <- Origin block_chance = 50
 
 /obj/item/melee/energy/sword/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
 	if(HAS_TRAIT(src, TRAIT_TRANSFORM_ACTIVE))

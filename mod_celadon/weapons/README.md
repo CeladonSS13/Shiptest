@@ -13,7 +13,7 @@
 <!-- Название мода. Не важно на русском или на английском. -->
 ## Оружие
 
-ID мода: CELADON_WEAPONS, MODPACK_CELADON_RETURN_EGUN, CELADON_RETURN_COMBAT_SHOTGUN
+ID мода: CELADON_WEAPONS, MODPACK_CELADON_RETURN_EGUN, CELADON_RETURN_COMBAT_SHOTGUN, GUN_BALANCE
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -21,7 +21,7 @@ ID мода: CELADON_WEAPONS, MODPACK_CELADON_RETURN_EGUN, CELADON_RETURN_COMBAT
 
 ### Описание мода
 
-Этот мод меняет баланс пушек
+Этот мод меняет баланс пушек и калибров
 Этот мод добавляет новые пушки и патроны.
 Этот мод возвращает старые еганы и лазеры.
 Этот мод возвращает вырезанный контент, а именно комбат дробовик обратно в билд, и чутка меняет глушитель.
@@ -34,7 +34,6 @@ ID мода: CELADON_WEAPONS, MODPACK_CELADON_RETURN_EGUN, CELADON_RETURN_COMBAT
 -->
 
 ### Изменения *кор кода*
-
 - EDIT: `code\modules\research\techweb\all_nodes.dm`: `/datum/techweb_node/adv_ballistics` -> `design_ids = list`, `research_costs = list`
 - EDIT: `code\modules\projectiles\projectile\bullets\rifle.dm`: `/obj/projectile/bullet/a858` -> `damage`, `armour_penetration`
 
@@ -44,6 +43,22 @@ ID мода: CELADON_WEAPONS, MODPACK_CELADON_RETURN_EGUN, CELADON_RETURN_COMBAT
 - ADD: `code/game/objects/structures/crates_lockers/closets/secure/security.dm`
 Как CELADON_RETURN_COMBAT_SHOTGUN
 Отсутствуют
+как GUN_BALANCE
+- ADD: `code/__DEFINES/guns.dm`: `F4_SLOWDOWN`
+- EDIT: `code\game\objects\items\melee\energy.dm`
+- EDIT: `code\modules\projectiles\guns\ballistic\assault.dm`
+- EDIT: `code\modules\projectiles\guns\ballistic\smg.dm`
+
+- EDIT: `code\modules\projectiles\guns\manufacturer\clip_lanchester\ballistics.dm`
+- EDIT: `code\modules\projectiles\guns\manufacturer\scarborough\ballistics.dm`
+- EDIT: `code\modules\projectiles\guns\manufacturer\nanotrasen_sharplite\ballistics.dm`
+- EDIT: `code\modules\projectiles\guns\manufacturer\etherbor\energy_gunsword.dm`
+
+- EDIT: `code\modules\projectiles\projectile\bullets\pistol.dm`
+- EDIT: `code\modules\projectiles\projectile\bullets\revolver.dm`
+- EDIT: `code\modules\projectiles\projectile\bullets\rifle.dm`
+- EDIT: `code\modules\projectiles\projectile\bullets\smg.dm`
+- EDIT: `code\modules\projectiles\projectile\bullets\sniper.dm`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
