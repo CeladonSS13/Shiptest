@@ -79,6 +79,8 @@
 	update_appearance(UPDATE_OVERLAYS)
 	START_PROCESSING(SSobj, src)
 
+	addtimer(CALLBACK(src, PROC_REF(pressure_alerts)), 5 SECONDS, TIMER_STOPPABLE|TIMER_LOOP|TIMER_DELETE_ME)
+
 /obj/item/tank/proc/populate_gas()
 	return
 
@@ -228,8 +230,6 @@
 	air_contents.react()
 	check_status()
 
-	pressure_alerts()
-
 /obj/item/tank/update_overlays()
 	. = ..()
 	var/status_overlay_icon_state
@@ -237,7 +237,7 @@
 
 	// Switches the pressure status overlay depending on which range the tank pressure lies in
 	switch(pressure)
-		if((5 * ONE_ATMOSPHERE) to (20 * ONE_ATMOSPHERE))
+		if((5 * ONE_ATMOSPHERE) to (29 * ONE_ATMOSPHERE))
 			status_overlay_icon_state = "status_nominal"
 		if((2 * ONE_ATMOSPHERE) to (5 * ONE_ATMOSPHERE))
 			status_overlay_icon_state = "status_warning"
@@ -336,12 +336,12 @@
 			if(!critical_warning_alert)
 				critical_warning_alert = TRUE
 				playsound(src, 'sound/machines/twobeep_high.ogg', 30, FALSE)
-				say("Tank is at [pressure] kPa! Pressure critically low!")
+				say("Tank is at [pressure] kPa! Pressure critically low! -- Estimated time until depletion: [src.volume * 2.5] minutes.")
 		if(0 to (0.75 * ONE_ATMOSPHERE))
 			if(!empty_alert)
 				empty_alert = TRUE
 				playsound(src, 'sound/machines/twobeep_high.ogg', 30, FALSE)
 				playsound(src, 'sound/machines/beep.ogg', 30, FALSE)
-				say("Tank is empty! Replacement recommended!")
+				say("Tank is nearly empty! Replacement recommended!")
 
 	update_appearance(UPDATE_OVERLAYS)
