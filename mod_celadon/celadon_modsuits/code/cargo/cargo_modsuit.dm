@@ -208,12 +208,23 @@
 	crate_type = /obj/structure/closet/crate/secure/gear
 	crate_name = "module crate"
 
+/datum/supply_pack/faction/solfed/modsuits/modules/kinesis
+	name = "MOD kinesis module"
+	desc = "A modular plug-in to the forearm, this module was presumed lost for many years, \
+		despite the suits it used to be mounted on still seeing some circulation. \
+		This piece of technology allows the user to generate precise anti-gravity fields, \
+		letting them move objects as small as a titanium rod to as large as industrial machinery. \
+		Oddly enough, it doesn't seem to work on living creatures."
+	cost = 4000 // he-he
+	contains = list(/obj/item/mod/module/anomaly_locked/kinesis)
+/*
+// Кулдаун не работает как надо. Пофикшу когда-нибудь.
 /datum/supply_pack/faction/solfed/modsuits/modules/kinesis_plus
 	name = "MOD advanced kinesis module"
 	desc = "Секретная военная разработка безымянного правительственного оружейного концерна. Продвинутый кинезис модуль - это мощный тактический инструмент, позволяющий пользователю воздействовать на физическую природу гравитации. В отличии от своего раннего прототипа эта модель так же способна воздействовать на живые объекты. Однако, они все еще могут бороться с гравитационным захватом."
 	cost = 7000 // he-he
 	contains = list(/obj/item/mod/module/anomaly_locked/kinesis/plus)
-
+*/
 /datum/supply_pack/faction/solfed/modsuits/modules/mirage_moving
 	name = "MOD moving mirage grenade dispenser module"
 	desc = "This module can create mirage grenades at the user's liking. These grenades create moving holographic copies of the user."

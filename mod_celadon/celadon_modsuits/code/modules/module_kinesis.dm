@@ -1,8 +1,7 @@
 ///Kinesis - Gives you the ability to move and launch objects.
 /obj/item/mod/module/anomaly_locked/kinesis
 	name = "MOD kinesis module"
-	desc = "A modular plug-in to the forearm, this module was presumed lost for many years, \
-		despite the suits it used to be mounted on still seeing some circulation. \
+	desc = "A modular plug-in to the forearm. \
 		This piece of technology allows the user to generate precise anti-gravity fields, \
 		letting them move objects as small as a titanium rod to as large as industrial machinery. \
 		Oddly enough, it doesn't seem to work on living creatures."
@@ -20,7 +19,7 @@
 	/// Time between us hitting objects with kinesis.
 	var/hit_cooldown_time = 1 SECONDS
 	/// Additional time between us hitting carbon with kinesis.
-	var/carbon_hit_cooldown_time = 1 SECONDS
+	var/carbon_hit_cooldown_time = 2.5 SECONDS // 3.5 seconds to run away
 	/// Stat required for us to grab a mob.
 	var/stat_required = DEAD
 	/// How long we stun a mob for.
@@ -62,9 +61,10 @@
 		return
 	drain_power(use_power_cost)
 	grabbed_atom = target
-	if(isliving(grabbed_atom))
+	if(isliving(grabbed_atom) && COOLDOWN_FINISHED(src, hit_cooldown))
 		var/mob/living/grabbed_mob = grabbed_atom
-		grabbed_mob.Stun(mob_stun_time)
+		if(mob_stun_time)
+			grabbed_mob.Stun(mob_stun_time)
 	playsound(grabbed_atom, 'sound/effects/contractorbatonhit.ogg', 75, TRUE)
 	START_PROCESSING(SSfastprocess, src)
 	kinesis_icon = mutable_appearance(icon='mod_celadon/_storage_icons/icons/assets/effects.dmi', icon_state="kinesis", layer=grabbed_atom.layer-0.1)
@@ -277,8 +277,9 @@
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 25
 	prebuilt = TRUE
 	stat_required = CONSCIOUS
-	mob_stun_time = 0.2 SECONDS // микростан
+	mob_stun_time = 0 SECONDS // микростан оказался слишком плохой идеей.
 	hit_cooldown_time = 1.5 SECONDS
+	grab_range = 6
 
 /datum/looping_sound/kinesis
     mid_sounds = list('sound/machines/gravgen/gravgen_mid1.ogg'=1,'sound/machines/gravgen/gravgen_mid2.ogg'=1,'sound/machines/gravgen/gravgen_mid3.ogg'=1,'sound/machines/gravgen/gravgen_mid4.ogg'=1,)
