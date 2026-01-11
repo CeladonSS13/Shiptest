@@ -94,8 +94,6 @@
 #define FREQ_ELYSIUM 1347 // PGF comms frequency, lime green
 #define FREQ_ELYSIUM_SHORT 1349 // PGF comms frequency, lime green
 
-#define FREQ_CENTCOM 1337 // NT-CentCom comms frequency, gray
-
 #define FREQ_NANOTRASEN 1351 // Nanotrasen comms frequency, plum
 #define FREQ_NANOTRASEN_SHORT 1353 // Nanotrasen comms frequency, plum
 
