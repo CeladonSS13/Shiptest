@@ -52,11 +52,16 @@
 /datum/mission/drill/accept(datum/overmap/ship/controlled/acceptor, turf/accept_loc, obj/hangar_crate_spawner/cargo_belt)
 	. = ..()
 	//you shouldn't be accepting this without an outpost but just in case
+// [CELADON-EDIT] - SIMPLED SPAWN DRILL
+	/*
 	if(isnull(cargo_belt))
 		sampler = spawn_bound(drill_type, accept_loc, VARSET_CALLBACK(src, sampler, null))
 		stack_trace("[src] issued by [source_outpost] could not find cargo chute to send items down. Fell back to cargo console.")
 	else
 		sampler = spawn_bound(drill_type, cargo_belt.loc, VARSET_CALLBACK(src, sampler, null))
+	*/
+	sampler = spawn_bound(drill_type, accept_loc, VARSET_CALLBACK(src, sampler, null))
+// [/CELADON-EDIT]
 	sampler.mission_class = class_wanted
 	sampler.num_wanted = num_wanted
 	sampler.orevein_wanted = available_planets[selected_planet]
