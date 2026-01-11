@@ -1073,7 +1073,7 @@
 	name = "Moon Base"
 	description = "A makeshift ramzi hideout in a cave, holding a smaller garrison."
 	suffix = "moon_frontiers_moonbase.dmm"
-	cost = 3
+	cost = 4
 
 //							///
 //		MARK: Desert
