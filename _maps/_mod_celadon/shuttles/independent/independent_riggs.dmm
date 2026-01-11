@@ -225,11 +225,16 @@
 /turf/open/floor/plasteel,
 /area/ship/construction)
 "dx" = (
-/obj/structure/table,
-/obj/effect/spawner/random/food_or_drink/ration,
-/obj/effect/spawner/random/food_or_drink/ration,
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
-/obj/structure/extinguisher_cabinet/directional/north,
+/obj/structure/closet/secure_closet/freezer/fridge{
+	populate = 0
+	},
+/obj/item/storage/cans/sixbeer,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/sugar,
+/obj/item/radio/intercom/directional/north,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "dH" = (
@@ -251,7 +256,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
-/obj/machinery/firealarm/directional/east,
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "ee" = (
@@ -959,6 +964,8 @@
 	dir = 1
 	},
 /obj/machinery/light/small/directional/west,
+/obj/item/circuitboard/machine/oven,
+/obj/item/plate/oven_tray,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "mz" = (
@@ -1093,10 +1100,9 @@
 /turf/open/floor/plating,
 /area/ship/crew/office)
 "nU" = (
-/obj/structure/table,
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
-/obj/item/storage/cans/sixbeer,
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "od" = (
@@ -1165,8 +1171,9 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "pv" = (
-/obj/structure/table,
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
+/obj/structure/table,
+/obj/item/plate/oven_tray,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "pD" = (
@@ -2518,14 +2525,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/atmospherics)
-"Ei" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=cargo";
-	location = "canteen"
-	},
-/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
-/turf/open/floor/plasteel/white,
-/area/ship/crew/canteen)
 "Em" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -2636,15 +2635,15 @@
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/office)
 "FJ" = (
-/obj/structure/chair{
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
+/obj/structure/chair/handrail{
 	dir = 8
 	},
-/obj/effect/landmark/start/assistant,
-/obj/machinery/navbeacon/wayfinding/kitchen{
-	location = "Canteen";
-	name = "navigation beacon"
-	},
-/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "FO" = (
@@ -3381,11 +3380,11 @@
 /turf/open/floor/plasteel/grimy,
 /area/ship/security)
 "OK" = (
-/obj/structure/sign/poster/contraband/random{
-	pixel_x = -32
-	},
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
-/obj/effect/spawner/random/vending/snack,
+/obj/structure/table,
+/obj/item/storage/box/cups,
+/obj/machinery/newscaster/directional/west,
+/obj/item/radio/intercom/directional/south,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "ON" = (
@@ -3473,10 +3472,11 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/crew/canteen)
 "PA" = (
-/obj/structure/table,
-/obj/machinery/newscaster/directional/west,
-/obj/item/storage/box/cups,
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
+/obj/structure/sign/poster/contraband/random{
+	pixel_x = -32
+	},
+/obj/structure/closet/crate/bin,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "PB" = (
@@ -3484,11 +3484,11 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/medical)
 "PF" = (
-/obj/structure/chair{
-	dir = 8
-	},
-/obj/effect/landmark/start/assistant,
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
+/obj/structure/table,
+/obj/item/cutting_board,
+/obj/item/kitchen/rollingpin,
+/obj/item/melee/knife/kitchen,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "PV" = (
@@ -3629,7 +3629,10 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
-/obj/item/radio/intercom/directional/east,
+/obj/machinery/firealarm/directional/east,
+/obj/structure/chair/handrail{
+	dir = 8
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "Ru" = (
@@ -3868,6 +3871,8 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
+/obj/structure/chair,
+/obj/effect/landmark/start/assistant,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "TR" = (
@@ -4169,11 +4174,9 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "WO" = (
-/obj/structure/chair{
-	dir = 1
-	},
-/obj/effect/landmark/start/assistant,
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
+/obj/structure/chair,
+/obj/effect/landmark/start/assistant,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "WS" = (
@@ -4292,6 +4295,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
+/obj/effect/turf_decal/industrial/warning,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "YC" = (
@@ -4400,9 +4404,14 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/item/kirbyplants/random,
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
-/obj/item/radio/intercom/directional/south,
+/obj/structure/table,
+/obj/item/reagent_containers/condiment/saltshaker{
+	pixel_x = -7
+	},
+/obj/item/reagent_containers/condiment/peppermill{
+	pixel_x = -14
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "ZE" = (
@@ -4529,12 +4538,12 @@ gc
 Fu
 Ce
 aD
-db
+PF
 pv
 nU
 PA
-WO
 db
+WO
 OK
 tT
 rZ
@@ -4564,10 +4573,10 @@ bZ
 Ce
 dx
 Cc
-PF
-PF
-FJ
-Ei
+db
+db
+db
+db
 TO
 ZB
 tT
@@ -4599,7 +4608,7 @@ xR
 ab
 Rt
 dU
-IV
+FJ
 IV
 oV
 ID

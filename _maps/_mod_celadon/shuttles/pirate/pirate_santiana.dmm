@@ -199,6 +199,7 @@
 /area/ship/cargo)
 "ax" = (
 /obj/effect/decal/cleanable/shreds,
+/obj/machinery/oven,
 /turf/open/floor/plasteel,
 /area/ship/crew/toilet)
 "ay" = (
@@ -227,35 +228,19 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/crew/toilet)
 "aB" = (
-/obj/structure/table,
-/obj/item/melee/knife/kitchen,
-/obj/item/reagent_containers/condiment/saltshaker{
-	pixel_x = -10;
-	pixel_y = 8
-	},
-/obj/item/reagent_containers/condiment/soysauce{
-	pixel_x = 9
-	},
-/obj/item/reagent_containers/condiment/peppermill{
-	pixel_x = -4;
-	pixel_y = 8
-	},
-/obj/item/reagent_containers/condiment/bbqsauce{
-	pixel_x = -8;
-	pixel_y = -5
-	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/machinery/griddle,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
 "aC" = (
 /obj/structure/table,
 /obj/machinery/newscaster/directional/north,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/machinery/chem_dispenser/drinks/beer{
 	pixel_x = 0;
 	pixel_y = 12
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
 "aD" = (
@@ -642,6 +627,14 @@
 	pixel_x = 1;
 	pixel_y = 15
 	},
+/obj/item/reagent_containers/condiment/bbqsauce{
+	pixel_x = -8;
+	pixel_y = -5
+	},
+/obj/item/melee/knife/kitchen,
+/obj/item/reagent_containers/condiment/soysauce{
+	pixel_x = 9
+	},
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/canteen)
 "bl" = (
@@ -790,6 +783,14 @@
 	pixel_y = 16
 	},
 /obj/item/spacecash/bundle/c100,
+/obj/item/reagent_containers/condiment/peppermill{
+	pixel_x = -4;
+	pixel_y = -1
+	},
+/obj/item/reagent_containers/condiment/saltshaker{
+	pixel_x = -10;
+	pixel_y = -1
+	},
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/canteen)
 "bu" = (

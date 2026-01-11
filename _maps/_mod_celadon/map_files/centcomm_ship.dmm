@@ -85,7 +85,6 @@
 "am" = (
 /obj/structure/noticeboard{
 	dir = 4;
-	pixel_y = 0;
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel/grimy,
@@ -148,12 +147,10 @@
 /area/centcom/control)
 "ax" = (
 /obj/item/mecha_parts/mecha_equipment/medical/mechmedbeam{
-	pixel_x = 0;
 	pixel_y = 11
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/mecha_parts/mecha_equipment/rcd{
-	pixel_x = 0;
 	pixel_y = -12
 	},
 /obj/effect/turf_decal/industrial/fire{
@@ -788,11 +785,9 @@
 "cn" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/proto{
-	pixel_x = 0;
 	pixel_y = -13
 	},
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/shire{
-	pixel_x = 0;
 	pixel_y = 3
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -847,7 +842,6 @@
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/mecha_ammo/incendiary,
 /obj/item/mecha_ammo/scattershot{
-	pixel_x = 0;
 	pixel_y = 16
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -1161,7 +1155,6 @@
 /obj/structure/bed,
 /obj/item/bedsheet/black,
 /obj/item/storage/secure/safe{
-	pixel_x = 0;
 	pixel_y = -32
 	},
 /turf/open/floor/plasteel/grimy,
@@ -1826,6 +1819,11 @@
 	},
 /turf/open/floor/pod/light,
 /area/outpost/exterior)
+"fo" = (
+/obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/fans/tiny,
+/turf/open/floor/plasteel/dark,
+/area/centcom/supplypod)
 "fp" = (
 /obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
 	dir = 8;
@@ -2007,7 +2005,6 @@
 /obj/item/reagent_containers/glass/beaker,
 /obj/item/reagent_containers/condiment/enzyme,
 /obj/effect/turf_decal/industrial/warning{
-	dir = 2;
 	color = "#808080"
 	},
 /turf/open/floor/wood/ebony,
@@ -2155,7 +2152,6 @@
 /obj/effect/turf_decal/corner/opaque/neutral/mono,
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/industrial/warning{
-	dir = 2;
 	color = "#808080"
 	},
 /turf/open/floor/wood/ebony,
@@ -2197,6 +2193,11 @@
 	baseturfs = /turf/open/floor/plating/asteroid/whitesands
 	},
 /area/centcom)
+"gq" = (
+/obj/effect/turf_decal/corner/transparent/bar/full,
+/obj/machinery/outpost_selling_pad,
+/turf/open/floor/plasteel/dark,
+/area/centcom/supplypod)
 "gr" = (
 /obj/effect/landmark/thunderdome/one,
 /obj/effect/turf_decal/industrial/warning{
@@ -3289,9 +3290,7 @@
 /turf/open/floor/pod/light,
 /area/outpost/exterior)
 "js" = (
-/obj/effect/turf_decal/elysium_logo/two_one{
-	alpha = 170
-	},
+/obj/effect/turf_decal/elysium_logo/two_one,
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "jt" = (
@@ -3904,19 +3903,15 @@
 "le" = (
 /obj/structure/table/syndi,
 /obj/item/gun/ballistic/automatic/assault{
-	pixel_x = 0;
 	pixel_y = 9
 	},
 /obj/item/gun/ballistic/automatic/powered{
-	pixel_x = 0;
 	pixel_y = -6
 	},
 /obj/item/gun/ballistic/automatic/hmg{
-	pixel_x = 0;
 	pixel_y = 17
 	},
 /obj/item/gun/ballistic/automatic/smg{
-	pixel_x = 0;
 	pixel_y = 2
 	},
 /turf/open/floor/plasteel/darkredfull,
@@ -4253,9 +4248,7 @@
 	},
 /area/tdome/tdomeobserve)
 "mc" = (
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 2
-	},
+/obj/effect/turf_decal/corner/opaque/white,
 /obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
 	dir = 4
 	},
@@ -4384,6 +4377,7 @@
 /obj/machinery/door/airlock/multi_tile/metal{
 	dir = 2
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "mz" = (
@@ -4475,11 +4469,9 @@
 "mN" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/gygaxnt{
-	pixel_x = 0;
 	pixel_y = -13
 	},
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/murdysseus{
-	pixel_x = 0;
 	pixel_y = 3
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -4591,7 +4583,6 @@
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/mecha_ammo/missiles_br,
 /obj/item/mecha_ammo/missiles_he{
-	pixel_x = 0;
 	pixel_y = 17
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -4912,9 +4903,7 @@
 /area/centcom/control)
 "nZ" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/gun/ballistic/shotgun/automatic/combat/compact{
-	pixel_x = 0
-	},
+/obj/item/gun/ballistic/shotgun/automatic/combat/compact,
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "oa" = (
@@ -5091,11 +5080,9 @@
 "ox" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/dollhouse{
-	pixel_x = 0;
 	pixel_y = -14
 	},
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/gygaxblack{
-	pixel_x = 0;
 	pixel_y = 3
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -5162,9 +5149,7 @@
 /turf/open/floor/plasteel,
 /area/tdome/arena)
 "oJ" = (
-/obj/effect/turf_decal/elysium_logo/two_two{
-	alpha = 170
-	},
+/obj/effect/turf_decal/elysium_logo/two_two,
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "oK" = (
@@ -5221,6 +5206,7 @@
 /area/centcom/control)
 "oS" = (
 /obj/effect/turf_decal/industrial/fire/fulltile,
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "oT" = (
@@ -5387,9 +5373,7 @@
 	},
 /area/centcom/control)
 "pr" = (
-/obj/effect/turf_decal/elysium_logo/three_one{
-	alpha = 170
-	},
+/obj/effect/turf_decal/elysium_logo/three_one,
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "ps" = (
@@ -5508,9 +5492,7 @@
 /turf/open/floor/wood/walnut,
 /area/centcom)
 "pM" = (
-/obj/effect/turf_decal/elysium_logo/three_three{
-	alpha = 170
-	},
+/obj/effect/turf_decal/elysium_logo/three_three,
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "pN" = (
@@ -6075,7 +6057,6 @@
 /obj/machinery/deepfryer,
 /obj/effect/turf_decal/corner/opaque/neutral/mono,
 /obj/effect/turf_decal/industrial/warning{
-	dir = 2;
 	color = "#808080"
 	},
 /turf/open/floor/wood/ebony,
@@ -6301,7 +6282,6 @@
 /obj/item/mecha_ammo/lmg,
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/mecha_ammo/lmg/tank{
-	pixel_x = 0;
 	pixel_y = 16
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -6695,7 +6675,6 @@
 "tq" = (
 /obj/structure/table/syndi,
 /obj/item/gun/ballistic{
-	pixel_x = 0;
 	pixel_y = 8
 	},
 /turf/open/floor/plasteel/darkredfull,
@@ -6955,11 +6934,9 @@
 "tV" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/titan{
-	pixel_x = 0;
 	pixel_y = -13
 	},
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/zeus{
-	pixel_x = 0;
 	pixel_y = 2
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -7059,11 +7036,9 @@
 /obj/machinery/light/directional/west,
 /obj/structure/table/reinforced/titaniumglass,
 /obj/item/gun/energy/e_gun/e_old/hades{
-	pixel_x = 0;
 	pixel_y = -5
 	},
 /obj/item/gun/energy/pulse/carbine{
-	pixel_x = 0;
 	pixel_y = 4
 	},
 /obj/effect/turf_decal/road/line/edge/opaque/white{
@@ -7077,11 +7052,9 @@
 "uj" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/old{
-	pixel_x = 0;
 	pixel_y = -11
 	},
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/sarathi{
-	pixel_x = 0;
 	pixel_y = 5
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -7125,15 +7098,12 @@
 /area/centcom/ferry)
 "uq" = (
 /obj/item/storage/toolbox/drone{
-	pixel_x = 0;
 	pixel_y = 16
 	},
 /obj/item/storage/toolbox/electrical{
-	pixel_x = 0;
 	pixel_y = 10
 	},
 /obj/item/storage/toolbox/emergency{
-	pixel_x = 0;
 	pixel_y = 4
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -7438,8 +7408,7 @@
 "vj" = (
 /obj/structure/filingcabinet/double{
 	dir = 4;
-	pixel_x = -11;
-	pixel_y = 0
+	pixel_x = -11
 	},
 /obj/effect/turf_decal/road/line/opaque/white{
 	dir = 4
@@ -7451,7 +7420,6 @@
 /area/centcom)
 "vk" = (
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/executor{
-	pixel_x = 0;
 	pixel_y = -14
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -8130,11 +8098,9 @@
 "xj" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/alt{
-	pixel_x = 0;
 	pixel_y = -14
 	},
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/aluminizer{
-	pixel_x = 0;
 	pixel_y = 2
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -8481,7 +8447,6 @@
 "yo" = (
 /obj/structure/filingcabinet/medical,
 /obj/machinery/light/directional/north{
-	pixel_x = 0;
 	pixel_y = 37
 	},
 /obj/effect/turf_decal/corner/transparent/neutral/full,
@@ -8500,7 +8465,6 @@
 	},
 /obj/effect/turf_decal/corner/opaque/neutral/mono,
 /obj/effect/turf_decal/industrial/warning{
-	dir = 2;
 	color = "#808080"
 	},
 /turf/open/floor/wood/ebony,
@@ -8596,11 +8560,9 @@
 "yH" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/pobeda{
-	pixel_x = 0;
 	pixel_y = -15
 	},
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/ripley_zairjah{
-	pixel_x = 0;
 	pixel_y = 3
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -8924,7 +8886,6 @@
 /obj/effect/turf_decal/corner/opaque/neutral/mono,
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/industrial/warning{
-	dir = 2;
 	color = "#808080"
 	},
 /turf/open/floor/wood/ebony,
@@ -9047,7 +9008,6 @@
 "zV" = (
 /obj/structure/table/syndi,
 /obj/item/gun/ballistic/automatic/toy/pistol/riot{
-	pixel_x = 0;
 	pixel_y = 9
 	},
 /obj/item/gun/ballistic/automatic/toy/pistol{
@@ -9188,7 +9148,6 @@
 /obj/structure/neon_spline/purple,
 /obj/effect/turf_decal/corner/opaque/neutral/mono,
 /obj/effect/turf_decal/industrial/warning{
-	dir = 2;
 	color = "#808080"
 	},
 /turf/open/floor/wood/ebony,
@@ -9246,20 +9205,14 @@
 /obj/structure/table,
 /obj/item/radio/intercom/wideband/table{
 	dir = 1;
-	pixel_x = 0;
 	pixel_y = 16
 	},
-/obj/item/stamp/inteq/vanguard{
-	pixel_x = 0;
-	pixel_y = 0
-	},
+/obj/item/stamp/inteq/vanguard,
 /obj/item/stamp/inteq/mothership{
-	pixel_x = -9;
-	pixel_y = 0
+	pixel_x = -9
 	},
 /obj/item/stamp/inteq{
-	pixel_x = 9;
-	pixel_y = 0
+	pixel_x = 9
 	},
 /turf/open/floor/plasteel,
 /area/centcom)
@@ -9684,8 +9637,7 @@
 "BQ" = (
 /obj/structure/filingcabinet/double{
 	dir = 8;
-	pixel_x = 11;
-	pixel_y = 0
+	pixel_x = 11
 	},
 /obj/effect/turf_decal/road/line/opaque/white{
 	dir = 8
@@ -10190,11 +10142,10 @@
 	},
 /area/centcom/control)
 "Dm" = (
-/obj/machinery/computer/mission{
-	icon_state = "computer-left";
+/obj/effect/turf_decal/corner/transparent/bar/full,
+/obj/machinery/computer/outpost_export_console{
 	dir = 8
 	},
-/obj/effect/turf_decal/corner/transparent/bar/full,
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "Dn" = (
@@ -10570,20 +10521,10 @@
 "Et" = (
 /obj/structure/table/syndi,
 /obj/item/gun{
-	pixel_x = 0;
 	pixel_y = 17
 	},
-/obj/item/gun/ballistic/automatic/laser/ctf/blue{
-	pixel_y = 25;
-	pixel_x = 0
-	},
 /obj/item/gun/ballistic/automatic/laser{
-	pixel_y = 9;
-	pixel_x = 0
-	},
-/obj/item/gun/ballistic/automatic/laser/ctf/red{
-	pixel_x = 0;
-	pixel_y = -9
+	pixel_y = 9
 	},
 /obj/item/gun/ballistic/automatic/marksman,
 /turf/open/floor/plasteel/darkredfull,
@@ -10778,7 +10719,6 @@
 /obj/effect/turf_decal/corner/opaque/neutral/mono,
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/industrial/warning{
-	dir = 2;
 	color = "#808080"
 	},
 /obj/item/reagent_containers/glass/bowl,
@@ -10877,11 +10817,9 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "Fp" = (
-/obj/machinery/computer/outpost_export_console{
-	icon_state = "computer-right";
-	dir = 8
-	},
 /obj/effect/turf_decal/corner/transparent/bar/full,
+/obj/structure/table/reinforced,
+/obj/machinery/recharger,
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "Fq" = (
@@ -10901,9 +10839,7 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "Fs" = (
-/obj/effect/turf_decal/elysium_logo/one_three{
-	alpha = 170
-	},
+/obj/effect/turf_decal/elysium_logo/one_three,
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "Fu" = (
@@ -10934,7 +10870,6 @@
 	pixel_y = 6
 	},
 /obj/effect/turf_decal/industrial/warning{
-	dir = 2;
 	color = "#808080"
 	},
 /turf/open/floor/wood/ebony,
@@ -11129,9 +11064,7 @@
 /obj/effect/turf_decal/industrial/fire/corner{
 	dir = 8
 	},
-/obj/effect/turf_decal/industrial/fire/corner{
-	dir = 2
-	},
+/obj/effect/turf_decal/industrial/fire/corner,
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "Ga" = (
@@ -11559,7 +11492,6 @@
 	dir = 1
 	},
 /obj/structure/sign/poster/official/enlist{
-	pixel_x = 0;
 	pixel_y = -31
 	},
 /obj/effect/turf_decal/road/line/opaque/white{
@@ -11909,7 +11841,6 @@
 "Ij" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/duranddark{
-	pixel_x = 0;
 	pixel_y = -14
 	},
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/dollhouse,
@@ -11955,9 +11886,7 @@
 /turf/open/floor/plasteel/dark,
 /area/tdome/tdomeobserve)
 "Io" = (
-/obj/effect/turf_decal/elysium_logo/two_three{
-	alpha = 170
-	},
+/obj/effect/turf_decal/elysium_logo/two_three,
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "Ip" = (
@@ -12514,9 +12443,7 @@
 /obj/effect/turf_decal/corner/opaque/white{
 	dir = 1
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
-	dir = 2
-	},
+/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters,
 /obj/structure/chair/office/dark{
 	dir = 4
 	},
@@ -12571,8 +12498,8 @@
 	},
 /area/outpost/exterior)
 "Kk" = (
-/obj/machinery/outpost_selling_pad,
 /obj/effect/turf_decal/corner/transparent/bar/full,
+/obj/machinery/autolathe/hacked,
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "Kl" = (
@@ -12606,7 +12533,6 @@
 "Kq" = (
 /obj/machinery/photocopier,
 /obj/machinery/light/directional/north{
-	pixel_x = 0;
 	pixel_y = 38
 	},
 /obj/machinery/button/door/indestructible{
@@ -13193,7 +13119,6 @@
 /obj/item/paper_bin,
 /obj/item/pen,
 /obj/item/radio/intercom/wideband/table{
-	pixel_x = 0;
 	pixel_y = -20
 	},
 /turf/open/floor/marble,
@@ -13238,11 +13163,6 @@
 /obj/item/multitool,
 /turf/open/floor/wood,
 /area/centcom/holding)
-"LP" = (
-/obj/machinery/mission_pad,
-/obj/effect/turf_decal/corner/transparent/bar/full,
-/turf/open/floor/plasteel/dark,
-/area/centcom/supplypod)
 "LQ" = (
 /obj/effect/turf_decal/corner/transparent/bar/three_quarters,
 /obj/effect/turf_decal/industrial/fire{
@@ -13857,12 +13777,10 @@
 /area/centcom)
 "Nw" = (
 /obj/item/gun/blastcannon/debug{
-	pixel_x = 0;
 	pixel_y = 8
 	},
 /obj/structure/table/syndi,
 /obj/item/gun/blastcannon{
-	pixel_x = 0;
 	pixel_y = 18
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -13870,7 +13788,6 @@
 "Nx" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/gun/ballistic/rocketlauncher/oneshot{
-	pixel_x = 0;
 	pixel_y = 8
 	},
 /obj/item/gun/ballistic/rocketlauncher/oneshot/hedp,
@@ -14031,6 +13948,7 @@
 /obj/machinery/door/airlock/multi_tile/metal{
 	dir = 2
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "NX" = (
@@ -14056,10 +13974,6 @@
 /turf/open/floor/plasteel/dark,
 /area/tdome/tdomeobserve)
 "NY" = (
-/obj/machinery/computer/mission{
-	dir = 4;
-	icon_state = "computer-right"
-	},
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/corner/opaque/green/full,
 /turf/open/floor/plasteel/dark,
@@ -14126,6 +14040,14 @@
 /obj/effect/turf_decal/industrial/stand_clear/red,
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/cargo/faction)
+"Om" = (
+/obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/machinery/door/airlock/multi_tile/metal{
+	dir = 4
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plasteel/dark,
+/area/centcom/supplypod)
 "On" = (
 /obj/effect/turf_decal/trimline/opaque/brown,
 /obj/structure/girder,
@@ -14351,9 +14273,7 @@
 /area/centcom/control)
 "OV" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/effect/turf_decal/industrial/fire/corner{
-	dir = 2
-	},
+/obj/effect/turf_decal/industrial/fire/corner,
 /obj/item/mecha_parts/mecha_equipment/cable_layer,
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
@@ -14704,9 +14624,7 @@
 "PS" = (
 /obj/machinery/light/directional/west,
 /obj/machinery/telecomms/relay/preset/nanotrasen,
-/obj/effect/turf_decal/road/line/edge/opaque/white{
-	dir = 2
-	},
+/obj/effect/turf_decal/road/line/edge/opaque/white,
 /obj/effect/turf_decal/trimline/opaque/white/line{
 	dir = 9
 	},
@@ -14926,9 +14844,7 @@
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "QA" = (
-/obj/effect/turf_decal/elysium_logo/one_two{
-	alpha = 170
-	},
+/obj/effect/turf_decal/elysium_logo/one_two,
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "QB" = (
@@ -14973,9 +14889,7 @@
 /turf/open/floor/carpet/purple,
 /area/centcom)
 "QI" = (
-/turf/open/floor/plasteel/darkbluefull/darkblue{
-	dir = 2
-	},
+/turf/open/floor/plasteel/darkbluefull/darkblue,
 /area/centcom)
 "QJ" = (
 /obj/effect/turf_decal/industrial/warning/fulltile,
@@ -15025,9 +14939,7 @@
 /area/centcom/control)
 "QT" = (
 /obj/effect/turf_decal/siding/red,
-/turf/open/floor/plasteel/darkredfull/darkred{
-	dir = 2
-	},
+/turf/open/floor/plasteel/darkredfull/darkred,
 /area/outpost/cargo/faction)
 "QV" = (
 /obj/item/kirbyplants{
@@ -15247,8 +15159,7 @@
 	pixel_y = 11
 	},
 /obj/item/stamp/syndicate{
-	pixel_x = 11;
-	pixel_y = 0
+	pixel_x = 11
 	},
 /obj/item/stamp/chameleon{
 	pixel_x = -11;
@@ -15612,7 +15523,6 @@
 /obj/item/gun/ballistic/shotgun/doublebarrel/improvised/sawn,
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/gun/ballistic/shotgun/doublebarrel/improvised{
-	pixel_x = 0;
 	pixel_y = 8
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -15676,9 +15586,7 @@
 /turf/closed/indestructible/riveted/command,
 /area/centcom/control)
 "SG" = (
-/obj/effect/turf_decal/elysium_logo/one_one{
-	alpha = 170
-	},
+/obj/effect/turf_decal/elysium_logo/one_one,
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "SI" = (
@@ -15723,8 +15631,7 @@
 "SO" = (
 /obj/structure/chair/office/purple{
 	dir = 4;
-	pixel_x = -2;
-	pixel_y = 0
+	pixel_x = -2
 	},
 /obj/effect/turf_decal/corner/transparent/blue{
 	dir = 6
@@ -15815,11 +15722,9 @@
 /area/centcom/control)
 "Tc" = (
 /obj/item/storage/toolbox/mechanical{
-	pixel_x = 0;
 	pixel_y = 22
 	},
 /obj/item/storage/toolbox/syndicate{
-	pixel_x = 0;
 	pixel_y = 16
 	},
 /obj/item/toy/plush/celadon/toolbox{
@@ -15828,8 +15733,7 @@
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/training_toolbox{
-	pixel_x = -1;
-	pixel_y = 0
+	pixel_x = -1
 	},
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
@@ -15854,7 +15758,6 @@
 	},
 /obj/effect/turf_decal/corner/opaque/neutral/mono,
 /obj/effect/turf_decal/industrial/warning{
-	dir = 2;
 	color = "#808080"
 	},
 /turf/open/floor/wood/ebony,
@@ -15889,9 +15792,7 @@
 /obj/effect/turf_decal/industrial/fire{
 	dir = 1
 	},
-/obj/effect/turf_decal/industrial/fire/corner{
-	dir = 2
-	},
+/obj/effect/turf_decal/industrial/fire/corner,
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "Tl" = (
@@ -16128,7 +16029,6 @@
 	dir = 1
 	},
 /obj/structure/sign/poster/official/mini_energy_gun{
-	pixel_x = 0;
 	pixel_y = -31
 	},
 /obj/effect/turf_decal/road/line/opaque/white{
@@ -16244,9 +16144,7 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "Ue" = (
-/obj/effect/turf_decal/industrial/fire/corner{
-	dir = 2
-	},
+/obj/effect/turf_decal/industrial/fire/corner,
 /obj/effect/turf_decal/corner/transparent/brown/full,
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
@@ -16277,9 +16175,7 @@
 /turf/open/floor/pod/light,
 /area/outpost/exterior)
 "Uj" = (
-/obj/effect/turf_decal/elysium_logo/three_two{
-	alpha = 170
-	},
+/obj/effect/turf_decal/elysium_logo/three_two,
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "Uk" = (
@@ -16750,7 +16646,6 @@
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/mecha_ammo/clusterbang,
 /obj/item/mecha_ammo/flashbang{
-	pixel_x = 0;
 	pixel_y = 16
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -17049,14 +16944,9 @@
 "Wu" = (
 /obj/structure/table/syndi,
 /obj/item/gun/ballistic/automatic{
-	pixel_x = 0;
 	pixel_y = 6
 	},
 /obj/item/gun/ballistic/automatic/pistol,
-/obj/item/gun/ballistic/automatic/laser/ctf{
-	pixel_x = 0;
-	pixel_y = -6
-	},
 /turf/open/floor/plasteel/darkredfull,
 /area/centcom/ferry)
 "Wv" = (
@@ -17188,6 +17078,14 @@
 	},
 /turf/open/floor/pod/light,
 /area/outpost/exterior)
+"WM" = (
+/obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/multi_tile/metal{
+	dir = 2
+	},
+/turf/open/floor/plasteel/dark,
+/area/centcom/supplypod)
 "WO" = (
 /turf/closed/indestructible/abductor{
 	icon_state = "alien12"
@@ -17508,7 +17406,6 @@
 	pixel_x = 9
 	},
 /obj/effect/turf_decal/industrial/warning{
-	dir = 2;
 	color = "#808080"
 	},
 /turf/open/floor/wood/ebony,
@@ -17676,9 +17573,7 @@
 	},
 /area/errorroom)
 "Ym" = (
-/obj/effect/turf_decal/corner/opaque/red/three_quarters{
-	dir = 2
-	},
+/obj/effect/turf_decal/corner/opaque/red/three_quarters,
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_x = 32
 	},
@@ -18217,7 +18112,6 @@
 "ZA" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/gun/ballistic/shotgun/automatic/combat{
-	pixel_x = 0;
 	pixel_y = 1
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -18277,11 +18171,9 @@
 "ZK" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/hermes{
-	pixel_x = 0;
 	pixel_y = -12
 	},
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/medgax{
-	pixel_x = 0;
 	pixel_y = 3
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -49802,17 +49694,17 @@ GY
 jK
 GY
 eY
-nI
+fo
 Di
 nX
-nI
+fo
 dc
 dc
 dc
 dc
 dc
 kO
-nI
+fo
 Di
 Od
 LW
@@ -50377,8 +50269,8 @@ sj
 Cd
 Cd
 Cd
-nI
-CS
+fo
+Om
 Cd
 Cd
 Cd
@@ -50387,8 +50279,8 @@ yT
 Cd
 Cd
 Cd
-nI
-CS
+fo
+Om
 Cd
 Cd
 Cd
@@ -50956,8 +50848,8 @@ sj
 Cd
 Cd
 Cd
-nI
-CS
+fo
+Om
 Cd
 Cd
 Cd
@@ -50966,8 +50858,8 @@ yT
 Cd
 Cd
 Cd
-nI
-CS
+fo
+Om
 Cd
 Cd
 Cd
@@ -51549,7 +51441,7 @@ gO
 iR
 gO
 fx
-my
+WM
 Di
 Ue
 xa
@@ -51732,17 +51624,17 @@ Ei
 eJ
 eJ
 OL
-nI
+fo
 Di
 nX
-nI
+fo
 gO
 iR
 gO
 iR
 gO
 fx
-nI
+fo
 Di
 qr
 mM
@@ -53288,7 +53180,7 @@ gd
 gd
 gd
 Cd
-LP
+gq
 Dm
 Fp
 Kk

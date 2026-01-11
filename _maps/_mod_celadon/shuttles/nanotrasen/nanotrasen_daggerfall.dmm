@@ -738,6 +738,10 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
+"kf" = (
+/obj/structure/fans/tiny,
+/turf/open/floor/engine/hull/interior,
+/area/ship/security/dock)
 "ki" = (
 /obj/effect/turf_decal/corner/opaque/ntblue/bordercorner{
 	dir = 4
@@ -3251,6 +3255,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
+"Pe" = (
+/obj/effect/turf_decal/corner/opaque/ntblue/half,
+/obj/structure/fans/tiny,
+/obj/structure/marker_beacon,
+/turf/open/floor/engine/hull/interior,
+/area/ship/security/dock)
 "Ph" = (
 /obj/effect/turf_decal/trimline/opaque/beige/line{
 	dir = 1
@@ -4191,6 +4201,14 @@
 /obj/effect/turf_decal/corner/opaque/ntblue/half,
 /turf/open/floor/engine/hull,
 /area/ship/external)
+"ZV" = (
+/obj/effect/turf_decal/corner/opaque/ntblue/half{
+	dir = 1
+	},
+/obj/structure/fans/tiny,
+/obj/structure/marker_beacon,
+/turf/open/floor/engine/hull/interior,
+/area/ship/security/dock)
 
 (1,1,1) = {"
 ck
@@ -4419,9 +4437,9 @@ bH
 DY
 DY
 Vk
-bu
-aU
-xO
+Pe
+kf
+ZV
 uy
 Rm
 Rm
