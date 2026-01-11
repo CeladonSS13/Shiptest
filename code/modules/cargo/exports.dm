@@ -92,15 +92,16 @@
 // Checks the cost. 0 cost items are skipped in export.
 /datum/export/proc/get_cost(obj/O, apply_elastic = TRUE)
 	var/amount = get_amount(O)
-	
-	if(!apply_elastic || elasticity_coeff == 0)
-		return max(round(cost * amount, 1), 0)
-	
-	// Просто: первая единица по true_cost, остальные по минимальной
-	if(amount == 1)
-		return max(round(true_cost, 1), sell_floor)
+	if(apply_elastic && elasticity_coeff != 0)
+		// definite integral from (old amount sold) to (new amount sold) of the cost function.
+		// this applies even when the amount being sold is one unit, decreasing it slightly,
+		// so that selling even half a unit twice is no more effective than selling the whole unit, ignoring rounding.
+		return max(sell_floor, round(
+			(true_cost/log(1 - elasticity_coeff)) * ((1 - elasticity_coeff)**(amount) - 1),
+			1
+		))
 	else
-		return max(round(true_cost + sell_floor * (amount - 1), 1), sell_floor * amount)
+		return round(cost * amount, 1)
 
 // Checks the amount of exportable in object. Credits in the bill, sheets in the stack, etc.
 // Usually acts as a multiplier for a cost, so item that has 0 amount will be skipped in export.
