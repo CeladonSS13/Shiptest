@@ -775,7 +775,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 /obj/structure/vein/shrouded
 	mining_charges = 8
 	mob_types = list(
-		/mob/living/simple_animal/hostile/asteroid/royalcrab = 50,
+		/mob/living/simple_animal/hostile/asteroid/royalcrab = 30, // [CELADON-EDIT] - ALIEN_BALANCE // /mob/living/simple_animal/hostile/asteroid/royalcrab = 50,
 		/mob/living/simple_animal/hostile/alien = 5,
 		/mob/living/simple_animal/hostile/alien/drone = 5,
 		/mob/living/simple_animal/hostile/alien/sentinel = 1,
@@ -806,7 +806,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	mining_charges = 10
 	vein_class = 2
 	mob_types = list(
-		/mob/living/simple_animal/hostile/asteroid/royalcrab = 30,
+		/mob/living/simple_animal/hostile/asteroid/royalcrab = 10, // [CELADON-EDIT] - ALIEN_BALANCE // /mob/living/simple_animal/hostile/asteroid/royalcrab = 30,
 		/mob/living/simple_animal/hostile/alien = 5,
 		/mob/living/simple_animal/hostile/alien/drone = 5,
 		/mob/living/simple_animal/hostile/alien/sentinel = 1,
@@ -831,10 +831,11 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	vein_class = 3
 
 	mob_types = list(
-		/mob/living/simple_animal/hostile/asteroid/royalcrab = 10,
+		/mob/living/simple_animal/hostile/asteroid/royalcrab = 5, 	// [CELADON-EDIT] - ALIEN_BALANCE - // /mob/living/simple_animal/hostile/asteroid/royalcrab = 10,
 		/mob/living/simple_animal/hostile/alien = 5,
 		/mob/living/simple_animal/hostile/alien/drone = 5,
-		/mob/living/simple_animal/hostile/alien/sentinel = 1,
+		/mob/living/simple_animal/hostile/alien/sentinel = 2, // [CELADON-EDIT] - ALIEN_BALANCE // /mob/living/simple_animal/hostile/alien/sentinel = 1,
+		/mob/living/simple_animal/hostile/alien/praetorian = 1, // [CELADON-ADD] - ALIEN_BALANCE
 		)
 
 	ore_list = list(
