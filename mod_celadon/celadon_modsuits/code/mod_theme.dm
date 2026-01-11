@@ -339,7 +339,7 @@
 /datum/mod_theme/falke
 	name = "Falke"
 	default_skin = "falke"
-	armor = list("melee" = 70, "bullet" = 60, "laser" = 60, "energy" = 60, "bomb" = 60, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 90, "wound" = 60)
+	armor = list("melee" = 70, "bullet" = 60, "laser" = 50, "energy" = 60, "bomb" = 60, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 90, "wound" = 60)
 	resistance_flags = FIRE_PROOF|ACID_PROOF
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
@@ -347,7 +347,7 @@
 	complexity_max = DEFAULT_MAX_COMPLEXITY + 3
 	charge_drain = DEFAULT_CHARGE_DRAIN // [CELADON-ADD] - CELADON_MODSUITS
 	slowdown_inactive = 1
-	slowdown_active = 0.6
+	slowdown_active = 0.65
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
 	allowed_suit_storage = list(
 		/obj/item/flashlight,
