@@ -281,7 +281,13 @@
 		/obj/item/stack/ore/plasma,
 		/obj/item/storage/bag/ore,
 	)
-	inbuilt_modules = list()
+	// [CELADON-EDIT] - CELADON_MODSUITS
+	// inbuilt_modules = list()
+	inbuilt_modules = list(
+		/obj/item/mod/module/ash_accretion,
+		/obj/item/mod/module/sphere_transform,
+		)
+	// [/CELADON-EDIT]
 	skins = list(
 		"mining" = list(
 			HELMET_FLAGS = list(

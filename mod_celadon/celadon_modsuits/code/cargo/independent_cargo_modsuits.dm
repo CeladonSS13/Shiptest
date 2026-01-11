@@ -30,7 +30,7 @@
 /datum/supply_pack/faction/independent/modsuits/complete/mining
 	name = "Mining MODsuit"
 	desc = "Contains an armored mining modsuit. Features integrated mining tools for convienent carrying in the field."
-	cost = 4000
+	cost = 4750
 	contains = list(/obj/item/mod/control/pre_equipped/mining)
 
 /datum/supply_pack/faction/independent/modsuits/complete/medical
