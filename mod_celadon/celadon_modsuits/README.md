@@ -58,7 +58,7 @@ ID мода: CELADON_MODSUITS
 - `code\modules\mod\mod_types.dm` : Все темы. Удалена ЭМИ защита, мелкие правки баланса с батарейками у элитки.
 - `code\modules\mod\mod_core.dm` : `/obj/item/mod/core/standard/proc/on_attackby`, `blacklisted_ammo_types`, `/obj/item/mod/core/Initialize`
 **Модули**
-- `code\modules\mod\modules\_module.dm` : `var/assist_drain_increase` 
+- `code\modules\mod\modules\_module.dm` : `var/assist_drain_increase`, `on_deactivation`
 - `code/modules/mob/living/carbon/human/species` : `/datum/species/proc/handle_mutant_bodyparts`
 - `code\modules\mod\modules\modules_engineering.dm` : `/obj/item/mod/module/tether/on_use()`
 - `code\modules\mod\modules\modules_science.dm` : `/obj/item/mod/module/anomaly_locked/antigrav`,`active_power_cost assist_drain_increase`, `var/incompatible_modules`, `var/teleport_time`, `var/cooldown_time`, `var/use_power_cost`
@@ -68,6 +68,7 @@ ID мода: CELADON_MODSUITS
 - `code\modules\mod\modules\modules_science.dm`: `/obj/item/mod/module/anomaly_locked/teleporter`, `/obj/item/mod/module/anomaly_locked/antigrav`
 - `code\modules\mod\modules\_module.dm` : `incompatible_modules`, `var/assist_drain_increase`
 - `code\modules\mod\modules\modules_ninja.dm` : `bulletoff`, `/obj/item/mod/module/stealth/on_activation, on_deactivation`
+- `code\modules\mod\modules\modules_supply.dm` : `/obj/item/mod/module/gps/Initialize`
 **Сигналы и другие вещи**
 - `code\modules\mob\living\carbon\human\human_defense.dm` : `/mob/living/carbon/human/hitby`, `/mob/living/carbon/human/bullet_act`
 Добавляем отправку сигналов для работы энергощита и армор бустера. Всё ещё не работает

@@ -177,9 +177,12 @@
 	if(module_type == MODULE_ACTIVE)
 		mod.selected_module = null
 		if(display_message)
-		// [CELADON-EDIT] - FIX_MODSUIT - Fixes modsuits not retracting items - runtime was here
+		// [CELADON-EDIT] - CELADON_MODSUIT - Fixes modsuits not retracting items - runtime was here
 			//to_chat(mod.wearer,span_warning(device ? "You retract \the [device]." : "\The [src] deactivates."))
-			to_chat(mod.wearer,span_warning("You retract \the [device]."))
+			if(device) // Иначе эта штука не работает, увы
+				to_chat(mod.wearer,span_warning("You retract \the [device]."))
+			else
+				to_chat(mod.wearer,span_warning("The [src] deactivates."))
 		// [/CELADON-EDIT]
 		if(device)
 			mod.wearer.transferItemToLoc(device, src, force = TRUE)
