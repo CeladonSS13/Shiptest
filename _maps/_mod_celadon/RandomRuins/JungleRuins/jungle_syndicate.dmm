@@ -126,9 +126,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table,
 /obj/item/storage/cans/sixbeer,
-/obj/effect/landmark/mission_poi/main{
-	blocks_emissive = 1
-	},
 /turf/open/floor/plating/jungleplanet,
 /area/ruin/jungle/syndifort{
 	light_on = 0
@@ -359,10 +356,6 @@
 	name = "Jerry";
 	unsuitable_atmos_damage = 0
 	},
-/obj/effect/landmark/mission_poi/main/kill{
-	already_spawned = 1;
-	mission_index = 2
-	},
 /turf/open/floor/plating/jungleplanet,
 /area/ruin/jungle/syndifort/jerry{
 	light_on = 0
@@ -419,9 +412,6 @@
 	})
 "eU" = (
 /obj/structure/chair/plastic,
-/obj/effect/landmark/mission_poi/guard{
-	type_to_spawn = /mob/living/simple_animal/hostile/human/ramzi/ranged
-	},
 /turf/open/floor/plating/jungleplanet,
 /area/ruin/jungle/syndifort{
 	light_on = 0
@@ -2131,9 +2121,6 @@
 /obj/structure/sign/poster/contraband/peacemaker{
 	pixel_x = 32
 	},
-/obj/effect/landmark/mission_poi/guard{
-	type_to_spawn = /mob/living/simple_animal/hostile/human/ramzi
-	},
 /turf/open/floor/plating/jungleplanet,
 /area/ruin/jungle/syndifort{
 	light_on = 0
@@ -2604,9 +2591,6 @@
 "BC" = (
 /obj/structure/chair/plastic,
 /obj/machinery/light/small/directional/north,
-/obj/effect/landmark/mission_poi/guard{
-	type_to_spawn = /mob/living/simple_animal/hostile/human/ramzi
-	},
 /turf/open/floor/plating/jungleplanet{
 	icon_state = "plating_rust"
 	},

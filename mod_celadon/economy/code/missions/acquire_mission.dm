@@ -33,6 +33,7 @@
 /datum/mission/outpost/acquire/creature/legion
 	value = 1700
 
+/*
 /datum/mission/outpost/acquire/creature/floorbot
 	name = "Detain a malfunctioning floorbot"
 	desc = "I require a functional abandoned floorbot for \"research\" purposes. Trap one within \
@@ -48,3 +49,4 @@
 	value = 2600
 	weight = 1
 	objective_type = /mob/living/simple_animal/bot/firebot/rockplanet
+*/

@@ -16,6 +16,8 @@ GLOBAL_LIST_INIT(freqtospan, list(
 	"[FREQ_ELYSIUM_SHORT]" = "elysiumradio_short",
 	"[FREQ_SYNDICATE]" = "syndradio",
 	"[FREQ_SYNDICATE_SHORT]" = "syndradio_short",
+	"[FREQ_CYBERSUN]" = "cyradio",
+	"[FREQ_NGR]" = "ngrradio",
 	"[FREQ_SOLFED]" = "solfedradio",
 	"[FREQ_SOLFED_SHORT]" = "solfedradio_short",
 	"[FREQ_SUNS]" = "sunsradio",

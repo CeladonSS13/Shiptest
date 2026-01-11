@@ -15,6 +15,19 @@
 #define RADIO_KEY_SYNDICATE "t"
 #define RADIO_TOKEN_SYNDICATE ":t"
 
+#define RADIO_CHANNEL_CYBERSUN "Cybersun"
+#define RADIO_KEY_CYBERSUN "c"
+#define RADIO_TOKEN_CYBERSUN ":c"
+
+#define RADIO_CHANNEL_NGR "New Gorlex"
+#define RADIO_KEY_NGR "f"
+#define RADIO_TOKEN_NGR ":f"
+
+#define RADIO_CHANNEL_SUNS "SUNS"
+#define RADIO_CHANNEL_SUNS_SHORT "SUNS (Short)"
+#define RADIO_KEY_SUNS "d"
+#define RADIO_TOKEN_SUNS ":d"
+
 #define RADIO_CHANNEL_CENTCOM "CentCom"
 #define RADIO_KEY_CENTCOM "e"
 #define RADIO_TOKEN_CENTCOM ":e"
@@ -32,11 +45,6 @@
 #define RADIO_CHANNEL_VOX "Raider"
 #define RADIO_KEY_VOX "v"
 #define RADIO_TOKEN_VOX ":v"
-
-#define RADIO_CHANNEL_SUNS "SUNS"
-#define RADIO_CHANNEL_SUNS_SHORT "SUNS (Short)"
-#define RADIO_KEY_SUNS "d"
-#define RADIO_TOKEN_SUNS ":d"
 
 #define RADIO_CHANNEL_ELYSIUM "Elysium"
 #define RADIO_CHANNEL_ELYSIUM_SHORT "Elysium (Short)"
@@ -69,10 +77,13 @@
 // Frequencies are always odd numbers and range from 1201 to 1599.
 
 // [CELADON-EDIT] - FACTION_RADIO
-#define FREQ_CENTCOM 1203 // NT-CentCom comms frequency, gray
+#define FREQ_CENTCOM 1237 // NT-CentCom comms frequency, gray
 
 #define FREQ_SYNDICATE 1213 // Syndicate Coalition comms frequency, dark brown
-#define FREQ_SYNDICATE_SHORT 1223 // Syndicate Coalition comms frequency, dark brown
+#define FREQ_SYNDICATE_SHORT 1215 // Syndicate Coalition comms frequency, dark brown
+
+#define FREQ_CYBERSUN 1217	// Cybersun Industries and Hardliners comms frequency, teal
+#define FREQ_NGR 1221		// New Gorlex Republic comms frequency, beige
 
 #define FREQ_SUNS 1325
 #define FREQ_SUNS_SHORT 1327
@@ -82,6 +93,8 @@
 
 #define FREQ_ELYSIUM 1347 // PGF comms frequency, lime green
 #define FREQ_ELYSIUM_SHORT 1349 // PGF comms frequency, lime green
+
+#define FREQ_CENTCOM 1337 // NT-CentCom comms frequency, gray
 
 #define FREQ_NANOTRASEN 1351 // Nanotrasen comms frequency, plum
 #define FREQ_NANOTRASEN_SHORT 1353 // Nanotrasen comms frequency, plum
