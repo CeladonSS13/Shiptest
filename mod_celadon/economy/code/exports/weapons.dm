@@ -77,6 +77,7 @@
 	desc = "One of the most basic energy weapons in the universe. Shoots lethal and disabler lasers. A simple, yet an efficient PDW. It is the egun. Produced by Nanotrasen-Sharplite"
 	export_types = list(/obj/item/gun/energy/e_gun/e_old)
 	cost = 125
+	include_subtypes = FALSE
 
 /datum/export/weapon/etar
 	unit_name = "NT-SL 'E-TAR' SMG energy rifle"
