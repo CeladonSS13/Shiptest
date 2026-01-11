@@ -107,7 +107,7 @@
 	file_name = "independent_pebble"
 	name = "Pebble-class Mining Vessel"
 	description = "Independent"
-	prefix = "sISV"
+	prefix = "sESV"
 	name_categories = list("GENERAL", "SPACE")
 
 /datum/map_template/shuttle/subshuttles/jet_lancer
@@ -174,4 +174,4 @@
 	file_name = "elysium_felon"
 	name = "Felon Drug Carrier"
 	description = "Elysium"
-	prefix = "sEUSV"
+	prefix = "sESV"

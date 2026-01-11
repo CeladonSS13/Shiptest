@@ -3,6 +3,7 @@
 /datum/export/gems
 	desc = "Rare gems and crystals draw many eyes, and just as many buyers."
 	elasticity_coeff = 0.3
+	valid_event_target = FALSE
 
 // [CELADON-EDIT]
 // 1% Drop - /asteroid/goliath - (/obj/item/gem/rupee, /obj/item/gem/fdiamond, /obj/item/gem/void, /obj/item/gem/phoron)

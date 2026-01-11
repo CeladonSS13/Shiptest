@@ -12,9 +12,10 @@
 	elasticity_coeff = 0.1
 	export_types = list(/obj/item/mine/directional/claymore)
 
+// [CELADON-ADD]
 /datum/export/anomaly
 	unit_name = "stabilized anomaly core"
-	cost = 1000	//cost = 3000 // [CELADON-EDIT]
+	cost = 1000
 	elasticity_coeff = 0.1
 	export_types = list(/obj/item/assembly/signaler/anomaly)
 
@@ -22,6 +23,7 @@
 	. = ..()
 	desc = "[SSmissions.get_researcher_name()] has requested that we [pick(list("procure", "grab", "acquire", "find", "locate"))] \
 	anomaly cores for [pick(list("research", "analysis", "technical development", "closer inspection", "some reason"))]."
+// [/CELADON-ADD]
 
 // Circuit boards, spare parts, etc.
 

@@ -72,6 +72,7 @@
 /datum/export/hunting/trophy/rare
 	cost = 1000
 	unit_name = "rare hunting trophy"
+	elasticity_coeff = 0
 	export_types = list(
 // [CELADON-ADD]
 		/obj/item/crusher_trophy/watcher_wing_forgotten,
