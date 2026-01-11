@@ -35,6 +35,7 @@ require only minor tweaks.
 #define ZTRAIT_AWAY "Away Mission"
 #define ZTRAIT_SPACE_RUINS "Space Ruins"
 #define ZTRAIT_SCAN_DISRUPT "Scanning Disruption" // [CELADON-EDIT] - CELADON_SURVEY_HANDHELD
+#define ZTRAIT_GAS_GIANT "Gas Giant"
 
 // enum - how SSsun should calculate sun exposure on this level
 // if left null, AZIMUTH is assumed
