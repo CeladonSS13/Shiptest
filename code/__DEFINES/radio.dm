@@ -79,11 +79,11 @@
 // [CELADON-EDIT] - FACTION_RADIO
 #define FREQ_CENTCOM 1237 // NT-CentCom comms frequency, gray
 
-#define FREQ_SYNDICATE 1213 // Syndicate Coalition comms frequency, dark brown
-#define FREQ_SYNDICATE_SHORT 1215 // Syndicate Coalition comms frequency, dark brown
+#define FREQ_CYBERSUN 1203	// Cybersun Industries and Hardliners comms frequency, teal
+#define FREQ_NGR 1205		// New Gorlex Republic comms frequency, beige
 
-#define FREQ_CYBERSUN 1217	// Cybersun Industries and Hardliners comms frequency, teal
-#define FREQ_NGR 1221		// New Gorlex Republic comms frequency, beige
+#define FREQ_SYNDICATE 1213 // Syndicate Coalition comms frequency, dark brown
+#define FREQ_SYNDICATE_SHORT 1223 // Syndicate Coalition comms frequency, dark brown
 
 #define FREQ_SUNS 1325
 #define FREQ_SUNS_SHORT 1327
