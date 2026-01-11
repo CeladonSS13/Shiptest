@@ -19,10 +19,12 @@
 	var/grab_range = 8
 	/// Time between us hitting objects with kinesis.
 	var/hit_cooldown_time = 1 SECONDS
+	/// Additional time between us hitting carbon with kinesis.
+	var/carbon_hit_cooldown_time = 1 SECONDS
 	/// Stat required for us to grab a mob.
 	var/stat_required = DEAD
 	/// How long we stun a mob for.
-	var/mob_stun_time = 5 SECONDS
+	var/mob_stun_time = 2 SECONDS
 	/// Atom we grabbed with kinesis.
 	var/atom/movable/grabbed_atom
 	/// Ref of the beam following the grabbed atom.
@@ -135,7 +137,8 @@
 			break
 	var/obj/item/grabbed_item = grabbed_atom
 	grabbed_item.melee_attack_chain(mod.wearer, hitting_atom)
-	COOLDOWN_START(src, hit_cooldown, hit_cooldown_time)
+	var/true_hit_cooldown_time = hit_cooldown_time + carbon_hit_cooldown_time
+	COOLDOWN_START(src, hit_cooldown, true_hit_cooldown_time)
 
 /obj/item/mod/module/anomaly_locked/kinesis/proc/can_grab(atom/target)
 	if(mod.wearer == target)
@@ -155,7 +158,7 @@
 		if(!isliving(movable_target))
 			return FALSE
 		var/mob/living/living_target = movable_target
-		if(living_target.stat < stat_required)
+		if(living_target.stat < stat_required && (iscarbon(living_target)/* || istype(living_target, /mob/living/simple_animal/hostile/human)*/)) // Нельзя кидать карбонов, но теперь можно кидать голиафов
 			return FALSE
 	else if(isitem(movable_target))
 		var/obj/item/item_target = movable_target
@@ -275,7 +278,6 @@
 	prebuilt = TRUE
 	stat_required = CONSCIOUS
 	mob_stun_time = 0.2 SECONDS // микростан
-	cooldown_time = 4 SECONDS
 	hit_cooldown_time = 1.5 SECONDS
 
 /datum/looping_sound/kinesis
