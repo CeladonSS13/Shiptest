@@ -31,8 +31,10 @@
 	var/list/spaceproofed = list()
 	// [CELADON-ADD] - CELADON_MODSUITS
 	var/anti_flash = FALSE
-	assist_drain_increase = 100
-	use_power_cost = DEFAULT_CHARGE_DRAIN*0.1 // Попытка позже сделать эту штуку потребляющую энергию при попадании.
+	var/EVA_boosted = FALSE
+	var/disable_chance = 10
+	assist_drain_increase = 85
+	use_power_cost = DEFAULT_CHARGE_DRAIN*0.1
 	// [/CELADON-ADD] - CELADON_MODSUITS
 
 /obj/item/mod/module/armor_booster/on_suit_activation()
@@ -52,6 +54,7 @@
 	if(!.)
 		return
 	playsound(src, 'sound/mecha/mechmove03.ogg', 25, TRUE, SHORT_RANGE_SOUND_EXTRARANGE)
+	to_chat(mod.wearer,span_notice("Power-weave wraps your body, empowering you.")) // [CELADON-ADD] - CELADON_MODSUITS
 	// [CELADON-EDIT] - CELADON_MODSUITS
 	//actual_speed_added = max(0, min(mod.slowdown_active, speed_added))
 	if(speed_added < 0) // Добавлена поддержка замедления
@@ -70,6 +73,47 @@
 		if(clothing_part.clothing_flags & STOPSPRESSUREDAMAGE)
 			clothing_part.clothing_flags &= ~STOPSPRESSUREDAMAGE
 			spaceproofed[clothing_part] = TRUE
+	RegisterSignal(mod.wearer, COMSIG_ATOM_BULLET_ACT, PROC_REF(on_bullet_act)) // [CELADON-ADD] - CELADON_MODSUITS
+
+ // [CELADON-ADD] - CELADON_MODSUITS
+ /// Попытка заставить эту штуку потреблять энергию при попадании.
+/obj/item/mod/module/armor_booster/proc/on_bullet_act(datum/source, obj/projectile/projectile, def_zone)
+	if(EVA_boosted)
+		if(prob(disable_chance) && !mod.malfunctioning)
+			mod.malfunctioning = TRUE
+			mod.selected_module?.on_deactivation(display_message = TRUE)
+			on_deactivation(display_message = TRUE)
+			do_sparks(5, TRUE, mod.wearer)
+			playsound(src, 'sound/weapons/ionrifle.ogg', 25, TRUE, SHORT_RANGE_SOUND_EXTRARANGE, frequency = 1.3)
+			to_chat(mod.wearer, span_warning("Power-weave safeties have been overrided and system short-circuits from the shot!"))
+			return
+	var/blocked = mod.wearer.run_armor_check(def_zone, projectile.flag, projectile.armour_penetration, silent = TRUE)
+	var/damage_coefficient = 1
+	if(blocked <= 0 || blocked > 100)
+		damage_coefficient = blocked/100
+	else
+		drain_power(damage_coefficient*projectile.damage*use_power_cost) // Энергия все равно тратится на то, что по тебе попадают. Даже если пробили насквозь.
+
+/obj/item/mod/module/armor_booster/examine(mob/user)
+	. = ..()
+	if((in_range(user, src) || isobserver(user)) && initial(remove_pressure_protection))
+		. += span_notice("You can override [src] EVA limiters using screwdriver.")
+		. += span_notice("Extravehicular activity limiters are [EVA_boosted ? "overrided" : "online"].")
+
+/obj/item/mod/module/armor_booster/screwdriver_act(mob/living/user, obj/item/screwdriver)
+	if(..())
+		return TRUE
+	if(!initial(remove_pressure_protection)) // перекодить, что-то вместо initial здесь
+		return FALSE
+	to_chat(user,span_notice("You start modifying [src] to [EVA_boosted ? "activate" : "deactivate"] EVA limiters..."))
+	screwdriver.play_tool_sound(src, 100)
+	if(screwdriver.use_tool(src, user, 1 SECONDS))
+		screwdriver.play_tool_sound(src, 100)
+		EVA_boosted = !EVA_boosted
+		remove_pressure_protection = !EVA_boosted
+		to_chat(user, span_notice("You [EVA_boosted ? "overrided" : "reverted"] [src] EVA limiters."))
+	return TRUE
+ // [/CELADON-ADD]
 
 /obj/item/mod/module/armor_booster/on_deactivation(display_message = TRUE, deleting = FALSE)
 	. = ..()
@@ -91,6 +135,7 @@
 		if(spaceproofed[clothing_part])
 			clothing_part.clothing_flags |= STOPSPRESSUREDAMAGE
 	spaceproofed = list()
+	UnregisterSignal(mod.wearer, COMSIG_ATOM_BULLET_ACT) // [CELADON-ADD] - CELADON_MODSUITS
 
 /obj/item/mod/module/armor_booster/generate_worn_overlay(mutable_appearance/standing)
 	overlay_state_inactive = "[initial(overlay_state_inactive)]-[mod.skin]"

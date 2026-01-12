@@ -9,7 +9,9 @@ MARK: ARMOR BOOSTER
 		the required voltage is too extreme to run alongside EVA systems. \n\
 		This civilian model is more focused on comfort and uses excessive voltage to help operator with MOD's weight distribution."
 	armor_values = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5)
-	complexity = 3
+	complexity = 4
+	active_power_cost = DEFAULT_CHARGE_DRAIN
+	use_power_cost = DEFAULT_CHARGE_DRAIN * 0.3
 
 /obj/item/mod/module/armor_booster/heavy
 	name = "MOD heavy armor booster module"
@@ -17,9 +19,10 @@ MARK: ARMOR BOOSTER
 		Once under voltage, this \"power-weave\" gets less flexible, but hardens on hit, dampening it. \
 		While it's a high-end technology, it still has it's downsides: the required voltage is too extreme to run alongside EVA systems. \n\
 		The heavy variant runs on enormous voltage, compared to other models, which makes the weave barely flexible, severely limiting operator's movement."
-	active_power_cost = DEFAULT_CHARGE_DRAIN
+	active_power_cost = DEFAULT_CHARGE_DRAIN * 3
+	use_power_cost = DEFAULT_CHARGE_DRAIN * 0.4
 	removable = TRUE
-	complexity = 3
+	complexity = 4
 	cooldown_time = 0.5 SECONDS
 	overlay_state_inactive = "module_armorbooster_off"
 	overlay_state_active = "module_armorbooster_on"
@@ -28,6 +31,7 @@ MARK: ARMOR BOOSTER
 	speed_added = -0.5
 	/// Armor values added to the suit parts.
 	armor_values = list("melee" = 15, "bullet" = 20, "laser" = 15, "energy" = 15)
+	disable_chance = 30
 
 /obj/item/mod/module/armor_booster/light
 	name = "MOD light armor booster module"
@@ -35,9 +39,10 @@ MARK: ARMOR BOOSTER
 		Once under voltage, this \"power-weave\" gets less flexible, but hardens on hit, dampening it. \
 		While it's a high-end technology, it still has it's downsides: the required voltage is too extreme to run alongside EVA systems. \n\
 		The light variant combines decent comfort and protection and runs on nominal voltages."
-	active_power_cost = DEFAULT_CHARGE_DRAIN * 0.3
+	active_power_cost = DEFAULT_CHARGE_DRAIN * 2
+	use_power_cost = DEFAULT_CHARGE_DRAIN * 0.1
 	removable = TRUE
-	complexity = 2
+	complexity = 3
 	cooldown_time = 0.5 SECONDS
 	overlay_state_inactive = "module_armorbooster_off"
 	overlay_state_active = "module_armorbooster_on"
@@ -46,6 +51,7 @@ MARK: ARMOR BOOSTER
 	speed_added = 0
 	/// Armor values added to the suit parts.
 	armor_values = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10)
+	disable_chance = 20
 
 /obj/item/mod/module/armor_assist
 	desc = "A retrofitted series of integrated servos and motors, allowing the suit to function as essentially power armor, \
