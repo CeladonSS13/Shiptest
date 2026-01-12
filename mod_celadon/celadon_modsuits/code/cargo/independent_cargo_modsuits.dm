@@ -337,9 +337,14 @@
 	contains = list(/obj/item/mod/module/balloon)
 
 // MARK: MILTECH
-/datum/supply_pack/faction/independent/modsuits/modules/military_capacitor
+/datum/supply_pack/faction/independent/modsuits/military_tech
+	category = "Tech - MOD military tech"
+	crate_type = /obj/structure/closet/crate/secure/gear
+	crate_name = "millitary tech crate"
+
+/datum/supply_pack/faction/independent/modsuits/military_tech/military_capacitor
 	name = "Military Capacitor"
-	desc = "Contains a high tech capacitor that is required for military stealth generator and other military modules."
+	desc = "Contains a high tech capacitor that is required for military stealth module and other military modules."
 	cost = 2000
 	contains = list(/obj/item/military_tech/capacitor)
 
