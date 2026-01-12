@@ -7,7 +7,7 @@
 
 /obj/projectile/bullet/a556_45/a856
 	name = "5.56x45mm A856 bullet"
-	damage = 40
+	damage = 38
 	armour_penetration = -30 // Original: armour_penetration = 25, damage = 30
 
 /obj/projectile/bullet/a556_45/m903
