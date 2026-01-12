@@ -831,8 +831,6 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	if(!(item_flags & NO_ROTATE_RANDOM_THROW))
 		var/matrix/M = matrix(transform)
 		M.Turn(pick(-90, 0, 90, 180))
-		if(prob(50))
-			M.Scale(-1, 1)
 		transform = M
 // [/CELADON-ADD]
 	if(!pixel_y && !pixel_x && !(item_flags & NO_PIXEL_RANDOM_DROP))
