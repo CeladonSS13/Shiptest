@@ -836,8 +836,8 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		transform = M
 // [/CELADON-ADD]
 	if(!pixel_y && !pixel_x && !(item_flags & NO_PIXEL_RANDOM_DROP))
-		pixel_x = initial(pixel_x) + rand(8, 8)
-		pixel_y = initial(pixel_y) + rand(8, 8)
+		pixel_x = rand(-8,8)
+		pixel_y = rand(-8,8)
 
 
 /obj/item/proc/remove_item_from_storage(atom/newLoc) //please use this if you're going to snowflake an item out of a obj/item/storage
