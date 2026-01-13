@@ -34,6 +34,10 @@
 	//queue this message because verbs are scheduled to process after SendMaps in the tick and speech is pretty expensive when it happens.
 	//by queuing this for next tick the mc can compensate for its cost instead of having speech delay the start of the next tick
 	if(message)
+		if(stat != DEAD)
+			if(GLOB.ic_autoemote[message])
+				message = "*[GLOB.ic_autoemote[message]]"
+			message = check_for_brainrot(message)
 		QUEUE_OR_CALL_VERB_FOR(VERB_CALLBACK(src, TYPE_PROC_REF(/atom/movable, say), message), SSspeech_controller)
 
 // Overrides proc to use _char variants of findtext and copytext
