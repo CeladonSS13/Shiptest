@@ -15,6 +15,9 @@ GLOBAL_LIST_INIT(outpost_exports, gen_outpost_exports())
 	icon = 'icons/obj/telescience.dmi'
 	icon_state = "lpad-idle"
 
+	resistance_flags = INDESTRUCTIBLE	// [CELADON-ADD]
+	flags_1 = NODECONSTRUCT_1			// [/CELADON-ADD]
+
 /obj/machinery/outpost_selling_pad/proc/get_other_atoms()
 	. = list()
 	for(var/atom/movable/AM in get_turf(src))
@@ -32,6 +35,9 @@ GLOBAL_LIST_INIT(outpost_exports, gen_outpost_exports())
 	var/obj/machinery/outpost_selling_pad/linked_pad
 	var/list/cached_valid_exports = list()
 	var/cache_cooldown = 0  // [CELADON-ADD] - CELADON_FIXES: Cooldown for caching exports to prevent FPS drops
+
+	resistance_flags = INDESTRUCTIBLE	// [CELADON-ADD]
+	flags_1 = NODECONSTRUCT_1			// [/CELADON-ADD]
 
 /obj/machinery/computer/outpost_export_console/LateInitialize()
 	. = ..()
