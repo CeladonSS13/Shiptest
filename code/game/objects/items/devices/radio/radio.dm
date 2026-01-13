@@ -542,7 +542,7 @@
 	name = "elysium transceiver"
 	icon_state = "walkietalkie_eusm"
 	frequency = FREQ_ELYSIUM_SHORT
-	keyslot = /obj/item/encryptionkey/pgf
+	keyslot = /obj/item/encryptionkey/elysium
 
 /obj/item/radio/transceiver/ramzi
 	name = "ramzi transceiver"

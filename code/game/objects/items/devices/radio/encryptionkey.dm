@@ -26,7 +26,7 @@
 /obj/item/encryptionkey/syndicate
 	name = "syndicate encryption key"
 	icon_state = "syn_cypherkey"
-	channels = list(RADIO_CHANNEL_SYNDICATE = 1)
+	channels = list(RADIO_CHANNEL_SYNDICATE = 1, RADIO_CHANNEL_SYNDICATE_SHORT = 1)
 
 /obj/item/encryptionkey/syndicate/cybersun
 	name = "cybersun encryption key"
@@ -51,22 +51,22 @@
 /obj/item/encryptionkey/nanotrasen
 	name = "nanotrasen encryption key"
 	icon_state = "hop_cypherkey"
-	channels = list(RADIO_CHANNEL_NANOTRASEN = 1)
+	channels = list(RADIO_CHANNEL_NANOTRASEN = 1, RADIO_CHANNEL_NANOTRASEN_SHORT = 1)
 
-/obj/item/encryptionkey/minutemen
+/obj/item/encryptionkey/ramzi
 	name = "ramzi encryption key"
 	icon_state = "cmm_cypherkey"
 	channels = list(RADIO_CHANNEL_RAMZI = 1)
 
-/obj/item/encryptionkey/pgf
+/obj/item/encryptionkey/elysium
 	name = "elysium encryption key"
 	icon_state = "bin_cypherkey"
-	channels = list(RADIO_CHANNEL_ELYSIUM = 1)
+	channels = list(RADIO_CHANNEL_ELYSIUM = 1, RADIO_CHANNEL_ELYSIUM_SHORT = 1)
 
 /obj/item/encryptionkey/inteq
 	name = "inteq encryption key"
 	icon_state = "irmg_cypherkey"
-	channels = list(RADIO_CHANNEL_INTEQ = 1)
+	channels = list(RADIO_CHANNEL_INTEQ = 1, RADIO_CHANNEL_INTEQ_SHORT = 1)
 
 /obj/item/encryptionkey/pirate
 	name = "unidentified encryption key"
@@ -95,7 +95,7 @@
 /obj/item/encryptionkey/solgov
 	name = "\improper SolFed encryption key"
 	icon_state = "solfed_cypherkey"
-	channels = list(RADIO_CHANNEL_SOLFED = 1)
+	channels = list(RADIO_CHANNEL_SOLFED = 1, RADIO_CHANNEL_SOLFED_SHORT = 1)
 
 /obj/item/encryptionkey/wideband
 	name = "wideband encryption key"
@@ -115,4 +115,4 @@
 /obj/item/encryptionkey/suns
 	name = "suns encryption key"
 	icon_state = "suns_cypherkey"
-	channels = list(RADIO_CHANNEL_SUNS = 1)
+	channels = list(RADIO_CHANNEL_SUNS = 1, RADIO_CHANNEL_SUNS_SHORT = 1)

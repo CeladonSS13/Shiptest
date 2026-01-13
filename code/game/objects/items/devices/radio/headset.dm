@@ -235,7 +235,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	name = "minutemen radio headset"
 	desc = "Used by militias flying the five stars of the CLIP Minutemen."
 	icon_state = "clip_headset"
-	keyslot = /obj/item/encryptionkey/minutemen
+	//keyslot = /obj/item/encryptionkey/minutemen
 
 /obj/item/radio/headset/clip/captain
 	name = "minuteman officer radio headset"
@@ -310,7 +310,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 /obj/item/radio/headset/pgf
 	name = "\improper PGF headset"
 	desc = "A headset often worn by members of the PGFN and PGFMC."
-	keyslot = /obj/item/encryptionkey/pgf
+	//keyslot = /obj/item/encryptionkey/pgf
 
 /obj/item/radio/headset/pgf/captain
 	name = "\improper PGF official radio headset"
