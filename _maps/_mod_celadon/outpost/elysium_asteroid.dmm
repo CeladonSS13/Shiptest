@@ -6257,10 +6257,6 @@
 	},
 /turf/open/floor/concrete/slab_4,
 /area/outpost/hallway/aft)
-"ecA" = (
-/turf/closed/indestructible/rock/schist,
-/area/space,
-/area/outpost/external)
 "ecQ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/siding/wood{
@@ -6984,7 +6980,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/structure/disposalpipe/segment{
+/obj/structure/disposalpipe/junction/flip{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -34276,6 +34272,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/concrete/slab_1,
 /area/outpost/hallway/aft)
 "wvF" = (
@@ -56967,7 +56964,7 @@ vXY
 vXY
 cGD
 pdc
-ecA
+cGD
 pdc
 ruV
 pdc
@@ -57154,7 +57151,7 @@ szY
 vXY
 cGD
 pdc
-ecA
+cGD
 pdc
 pdc
 pdc
@@ -57341,7 +57338,7 @@ oJb
 vXY
 cGD
 pdc
-ecA
+cGD
 pdc
 pdc
 pdc
