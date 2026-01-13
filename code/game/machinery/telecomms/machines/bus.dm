@@ -75,14 +75,14 @@
 /obj/machinery/telecomms/bus/preset_five
 	id = "Ramzi Communications Bus"
 	network = "tcommsat"
-	freq_listening = list(FREQ_RAMZI, FREQ_COMMON)
+	freq_listening = list(FREQ_RAMZI_SHORT, FREQ_COMMON)
 	autolinkers = list("processor5", "ramzi", "messaging")
 // [/CELADON-EDIT]
 
 /obj/machinery/telecomms/bus/preset_six
 	id = "Hacked Communications Bus"
 	network = "tcommsat"
-	freq_listening = list(FREQ_PIRATE, FREQ_COMMON)
+	freq_listening = list(FREQ_PIRATE_SHORT, FREQ_COMMON)
 	autolinkers = list("processor6", "pirate", "receiverB", "messaging")
 
 // [CELADON-EDIT] - FACTION_RADIO

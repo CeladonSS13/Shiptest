@@ -11,6 +11,7 @@
 
 // [CELADON-EDIT] - FACTION_RADIO
 #define RADIO_CHANNEL_SYNDICATE "Syndicate"
+#define RADIO_CHANNEL_SYNDICATE_LONG "Syndicate (Long-Range)"
 #define RADIO_CHANNEL_SYNDICATE_SHORT "Syndicate (Short)"
 #define RADIO_KEY_SYNDICATE "t"
 #define RADIO_TOKEN_SYNDICATE ":t"
@@ -24,6 +25,7 @@
 #define RADIO_TOKEN_NGR ":f"
 
 #define RADIO_CHANNEL_SUNS "SUNS"
+#define RADIO_CHANNEL_SUNS_LONG "SUNS (Long-Range)"
 #define RADIO_CHANNEL_SUNS_SHORT "SUNS (Short)"
 #define RADIO_KEY_SUNS "d"
 #define RADIO_TOKEN_SUNS ":d"
@@ -33,36 +35,43 @@
 #define RADIO_TOKEN_CENTCOM ":e"
 
 #define RADIO_CHANNEL_SOLFED "SolFed"
+#define RADIO_CHANNEL_SOLFED_LONG "SolFed (Long-Range)"
 #define RADIO_CHANNEL_SOLFED_SHORT "SolFed (Short)"
 #define RADIO_KEY_SOLFED "s"
 #define RADIO_TOKEN_SOLFED ":s"
 
 #define RADIO_CHANNEL_NANOTRASEN "Nanotrasen"
+#define RADIO_CHANNEL_NANOTRASEN_LONG "Nanotrasen (Long-Range)"
 #define RADIO_CHANNEL_NANOTRASEN_SHORT "Nanotrasen (Short)"
 #define RADIO_KEY_NANOTRASEN "n"
 #define RADIO_TOKEN_NANOTRASEN ":n"
 
-#define RADIO_CHANNEL_VOX "Raider"
-#define RADIO_KEY_VOX "v"
-#define RADIO_TOKEN_VOX ":v"
+#define RADIO_CHANNEL_VOX_LONG "Raider (Long-Range)"
+#define RADIO_CHANNEL_VOX_SHORT "Raider (Short)"
+#define RADIO_KEY_VOX_SHORT "v"
+#define RADIO_TOKEN_VOX_SHORT ":v"
 
 #define RADIO_CHANNEL_ELYSIUM "Elysium"
+#define RADIO_CHANNEL_ELYSIUM_LONG "Elysium (Long-Range)"
 #define RADIO_CHANNEL_ELYSIUM_SHORT "Elysium (Short)"
 #define RADIO_KEY_ELYSIUM "e"
 #define RADIO_TOKEN_ELYSIUM ":e"
 
 #define RADIO_CHANNEL_INTEQ "Inteq"
+#define RADIO_CHANNEL_INTEQ_LONG "Inteq (Long-Range)"
 #define RADIO_CHANNEL_INTEQ_SHORT "Inteq (Short)"
 #define RADIO_KEY_INTEQ "q"
 #define RADIO_TOKEN_INTEQ ":q"
 
-#define RADIO_CHANNEL_RAMZI "Ramzi (Short)"
-#define RADIO_KEY_RAMZI "r"
-#define RADIO_TOKEN_RAMZI ":r"
+#define RADIO_CHANNEL_RAMZI_LONG "Ramzi (Long-Range)"
+#define RADIO_CHANNEL_RAMZI_SHORT "Ramzi (Short)"
+#define RADIO_KEY_RAMZI_SHORT "r"
+#define RADIO_TOKEN_RAMZI_SHORT ":r"
 
-#define RADIO_CHANNEL_PIRATE "Unidentified (Short)"
-#define RADIO_KEY_PIRATE "p"
-#define RADIO_TOKEN_PIRATE ":p"
+#define RADIO_CHANNEL_PIRATE_LONG "Unidentified (Long-Range)"
+#define RADIO_CHANNEL_PIRATE_SHORT "Unidentified (Short)"
+#define RADIO_KEY_PIRATE_SHORT "p"
+#define RADIO_TOKEN_PIRATE_SHORT ":p"
 // [/CELADON-EDIT]
 
 #define RADIO_CHANNEL_WIDEBAND "Wideband"
@@ -82,27 +91,38 @@
 #define FREQ_CYBERSUN 1203	// Cybersun Industries and Hardliners comms frequency, teal
 #define FREQ_NGR 1205		// New Gorlex Republic comms frequency, beige
 
-#define FREQ_SYNDICATE 1213 // Syndicate Coalition comms frequency, dark brown
-#define FREQ_SYNDICATE_SHORT 1223 // Syndicate Coalition comms frequency, dark brown
+#define FREQ_SYNDICATE 1213
+#define FREQ_SYNDICATE_LONG 1215
+#define FREQ_SYNDICATE_SHORT 1223
 
 #define FREQ_SUNS 1325
-#define FREQ_SUNS_SHORT 1327
+#define FREQ_SUNS_LONG 1327
+#define FREQ_SUNS_SHORT 1329
 
-#define FREQ_INTEQ 1335 // Inteq comms frequency, light brown
-#define FREQ_INTEQ_SHORT 1339 // Inteq comms frequency, light brown
+#define FREQ_INTEQ 1333
+#define FREQ_INTEQ_LONG 1335
+#define FREQ_INTEQ_SHORT 1337
 
-#define FREQ_ELYSIUM 1347 // PGF comms frequency, lime green
-#define FREQ_ELYSIUM_SHORT 1349 // PGF comms frequency, lime green
+#define FREQ_ELYSIUM 1339
+#define FREQ_ELYSIUM_LONG 1341
+#define FREQ_ELYSIUM_SHORT 1343
 
-#define FREQ_NANOTRASEN 1351 // Nanotrasen comms frequency, plum
-#define FREQ_NANOTRASEN_SHORT 1353 // Nanotrasen comms frequency, plum
+#define FREQ_NANOTRASEN 1345
+#define FREQ_NANOTRASEN_LONG 1347
+#define FREQ_NANOTRASEN_SHORT 1349
 
-#define FREQ_SOLFED 1355 // SolGov comms frequency, dark blue WS ADDITION
-#define FREQ_SOLFED_SHORT 1357 // SolGov comms frequency, dark blue WS ADDITION
+#define FREQ_SOLFED 1353
+#define FREQ_SOLFED_LONG 1355
+#define FREQ_SOLFED_SHORT 1357
 
-#define FREQ_VOX 1321
-#define FREQ_RAMZI 1423
-#define FREQ_PIRATE 1425
+#define FREQ_VOX_LONG 1417
+#define FREQ_VOX_SHORT 1419
+
+#define FREQ_RAMZI_LONG 1421
+#define FREQ_RAMZI_SHORT 1423
+
+#define FREQ_PIRATE_LONG 1425
+#define FREQ_PIRATE_SHORT 1427
 
 #define FREQ_EMERGENCY 1429 // Emergency comms frequency, red
 // [/CELADON-EDIT]

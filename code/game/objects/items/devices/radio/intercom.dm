@@ -162,11 +162,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom, 31)
 	result_path = /obj/item/radio/intercom/table
 	pixel_shift = 0
 
-/obj/item/wallframe/intercom/faction
-	icon_state = "intercom-table"
-	result_path = /obj/item/radio/intercom/faction
-	pixel_shift = 0
-
 //wideband radio
 /obj/item/radio/intercom/wideband
 	name = "wideband relay"
@@ -196,19 +191,13 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/wideband, 26)
 /obj/item/radio/intercom/faction
 	name = "internal intercom"
 	desc = "A internal intercom. Faction radio included!"
-	icon = 'mod_celadon/_storage_icons/icons/items/misc/radio.dmi'
 	icon_state = "intercom"
 	keyslot = new /obj/item/encryptionkey/wideband
 	frequency = FREQ_EMERGENCY
 	freqlock = TRUE
-	log = TRUE
 	independent = TRUE
 	freerange = TRUE
-	wallframe = /obj/item/wallframe/intercom/faction
 	var/stripe_color = null		/// What color is this machine's stripe? Leave null to not have a stripe.
-
-/obj/item/radio/intercom/faction/unscrewed
-	unscrewed = TRUE
 
 /obj/item/radio/intercom/faction/Initialize(mapload, ndir, building)
 	. = ..()
@@ -225,49 +214,89 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/wideband, 26)
 	if(!stripe_color || !on)
 		return
 	
-	var/mutable_appearance/stripe = mutable_appearance(icon, "intercom-a")
+	var/mutable_appearance/stripe = mutable_appearance('mod_celadon/_storage_icons/icons/items/misc/radio.dmi', "intercom-a")
 	stripe.color = stripe_color
 	. += stripe
 
 /obj/item/radio/intercom/faction/syndicate
 	keyslot = new /obj/item/encryptionkey/syndicate
 	frequency = FREQ_SYNDICATE_SHORT
-	stripe_color = "#CB0101"
+	stripe_color = "#f53333"
+
+/obj/item/radio/intercom/faction/syndicate/command
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/radio.dmi'
+	log = TRUE
+	frequency = FREQ_SYNDICATE_LONG
 
 /obj/item/radio/intercom/faction/suns
 	keyslot = new /obj/item/encryptionkey/suns
 	frequency = FREQ_SUNS_SHORT
 	stripe_color = "#6B00D6"
 
+/obj/item/radio/intercom/faction/suns/command
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/radio.dmi'
+	log = TRUE
+	frequency = FREQ_SUNS_LONG
+
 /obj/item/radio/intercom/faction/inteq
 	keyslot = new /obj/item/encryptionkey/inteq
 	frequency = FREQ_INTEQ_SHORT
 	stripe_color = "#CB8801"
+
+/obj/item/radio/intercom/faction/inteq/command
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/radio.dmi'
+	log = TRUE
+	frequency = FREQ_INTEQ_LONG
 
 /obj/item/radio/intercom/faction/elysium
 	keyslot = new /obj/item/encryptionkey/elysium
 	frequency = FREQ_ELYSIUM_SHORT
 	stripe_color = "#01CB01"
 
+/obj/item/radio/intercom/faction/elysium/command
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/radio.dmi'
+	log = TRUE
+	frequency = FREQ_ELYSIUM_LONG
+
 /obj/item/radio/intercom/faction/nanotrasen
 	keyslot = new /obj/item/encryptionkey/nanotrasen
 	frequency = FREQ_NANOTRASEN_SHORT
 	stripe_color = "#0180FE"
+
+/obj/item/radio/intercom/faction/nanotrasen/command
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/radio.dmi'
+	log = TRUE
+	frequency = FREQ_NANOTRASEN_LONG
 
 /obj/item/radio/intercom/faction/solfed
 	keyslot = new /obj/item/encryptionkey/solgov
 	frequency = FREQ_SOLFED_SHORT
 	stripe_color = "#00b1d4"
 
+/obj/item/radio/intercom/faction/solfed/command
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/radio.dmi'
+	log = TRUE
+	frequency = FREQ_SOLFED_LONG
+
 /obj/item/radio/intercom/faction/ramzi
 	keyslot = new /obj/item/encryptionkey/ramzi
-	frequency = FREQ_RAMZI
+	frequency = FREQ_RAMZI_SHORT
 	stripe_color = "#A68059"
+
+/obj/item/radio/intercom/faction/ramzi/command
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/radio.dmi'
+	log = TRUE
+	frequency = FREQ_RAMZI_LONG
 
 /obj/item/radio/intercom/faction/pirate
 	keyslot = new /obj/item/encryptionkey/pirate
-	frequency = FREQ_PIRATE
+	frequency = FREQ_PIRATE_SHORT
 	stripe_color = "#666666"
+
+/obj/item/radio/intercom/faction/pirate/command
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/radio.dmi'
+	log = TRUE
+	frequency = FREQ_PIRATE_LONG
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/syndicate, 32)
 MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/suns, 32)
@@ -277,7 +306,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/nanotrasen, 32)
 MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/solfed, 32)
 MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/ramzi, 32)
 MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/pirate, 32)
-
 // [/CELADON-ADD]
 
 /obj/item/radio/intercom/wideband/table

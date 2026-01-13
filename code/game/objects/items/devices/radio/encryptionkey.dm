@@ -56,7 +56,7 @@
 /obj/item/encryptionkey/ramzi
 	name = "ramzi encryption key"
 	icon_state = "cmm_cypherkey"
-	channels = list(RADIO_CHANNEL_RAMZI = 1)
+	channels = list(RADIO_CHANNEL_RAMZI_SHORT = 1)
 
 /obj/item/encryptionkey/elysium
 	name = "elysium encryption key"
@@ -71,7 +71,7 @@
 /obj/item/encryptionkey/pirate
 	name = "unidentified encryption key"
 	icon_state = "pirate_cypherkey"
-	channels = list(RADIO_CHANNEL_PIRATE = 1)
+	channels = list(RADIO_CHANNEL_PIRATE_SHORT = 1)
 
 /obj/item/encryptionkey/headset_com
 	name = "command radio encryption key"
@@ -105,12 +105,12 @@
 /obj/item/encryptionkey/ramzi
 	name = "ramzi encryption key"
 	icon_state = "ramzi_cypherkey"
-	channels = list(RADIO_CHANNEL_RAMZI = 1)
+	channels = list(RADIO_CHANNEL_RAMZI_SHORT = 1)
 
 /obj/item/encryptionkey/vox
 	name = "vox encryption key"
 	icon_state = "vox_cypherkey"
-	channels = list(RADIO_CHANNEL_VOX = 1)
+	channels = list(RADIO_CHANNEL_VOX_SHORT = 1)
 
 /obj/item/encryptionkey/suns
 	name = "suns encryption key"

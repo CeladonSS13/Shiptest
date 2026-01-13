@@ -535,7 +535,7 @@
 /obj/item/radio/transceiver/pirate
 	name = "unidentified transceiver"
 	icon_state = "walkietalkie_pirate"
-	frequency = FREQ_PIRATE
+	frequency = FREQ_PIRATE_SHORT
 	keyslot = /obj/item/encryptionkey/pirate
 
 /obj/item/radio/transceiver/elysium
@@ -547,13 +547,13 @@
 /obj/item/radio/transceiver/ramzi
 	name = "ramzi transceiver"
 	icon_state = "walkietalkie_ramzi"
-	frequency = FREQ_RAMZI
+	frequency = FREQ_RAMZI_SHORT
 	keyslot = /obj/item/encryptionkey/ramzi
 
 /obj/item/radio/transceiver/vox
 	name = "raider transceiver"
 	icon_state = "walkietalkie_vox"
-	frequency = FREQ_VOX
+	frequency = FREQ_VOX_SHORT
 	keyslot = /obj/item/encryptionkey/vox
 
 /obj/item/radio/transceiver/suns
