@@ -93,7 +93,7 @@
 
 	spread = 1
 	wield_delay = 0.7 SECONDS
-
+	recoil = 0.75 // [CELADON-EDIT] - GUN_BALANCE <- Original: recoil = 0
 	fire_delay = 0.2 SECONDS
 
 /obj/item/gun/ballistic/automatic/assault/skm/no_mag
@@ -106,7 +106,10 @@
 	icon_state = "skm_pirate"
 	item_state = "skm_pirate"
 	manufacturer = MANUFACTURER_NONE
-	wear_rate = 2
+	wear_rate = 3 // [CELADON-EDIT] - GUN_BALANCE <- Original: wear_rate = 1
+	fire_delay = 0.14 // [CELADON-EDIT] - GUN_BALANCE <- Original: fire_delay = 2
+	recoil = 1.25 // [CELADON-EDIT] - GUN_BALANCE <- Original: recoil = 0
+
 
 /obj/item/gun/ballistic/automatic/assault/skm/inteq
 	name = "\improper SKM-44"

@@ -117,6 +117,7 @@ NO_MAG_GUN_HELPER(automatic/assault/g36/inteq)
 	icon_state = "morita1"
 	item_state = "morita1"
 	spread = 3
+	recoil = 1 // [CELADON-EDIT] - GUN_BALANCE <- Original: recoil = 0
 	wield_delay = 0.6 SECONDS
 	fire_delay = 0.20 SECONDS
 	weapon_weight = WEAPON_HEAVY
@@ -147,8 +148,8 @@ NO_MAG_GUN_HELPER(automatic/assault/morita1)
 	inhand_x_dimension = 64
 	inhand_y_dimension = 32
 	zoomable = TRUE
-	zoom_amt = 6
-	zoom_out_amt = 1
+	zoom_amt = 8 // [CELADON-EDIT] - GUN_BALANCE <- Original: zoom_amt = 6
+	zoom_out_amt = 2 // [CELADON-EDIT] - GUN_BALANCE <- Original: zoom_out_amt = 1
 	fire_sound = "svd_fire"
 	icon_state = "svd"
 	item_state = "svd"
@@ -166,10 +167,9 @@ NO_MAG_GUN_HELPER(automatic/assault/morita1)
 
 	rack_sound = 'mod_celadon/_storage_sounds/sound/gun/svd/svd_cocked.ogg'
 
-	fire_delay = 0.6 SECONDS // Старый: fire_delay = 0.8 SECONDS
-
+	fire_delay = 0.6 SECONDS // [CELADON-EDIT] - GUN_BALANCE <- Original: fire_delay = 0.8 SECONDS
 	spread_unwielded = 25
-	recoil = 0.01
+	recoil = 0.5 // [CELADON-EDIT] - GUN_BALANCE <- Original: recoil = 0.5
 	recoil_unwielded = 4
 	wield_slowdown = 0.5 // Старый: wield_delay = 0.75 SECONDS
 NO_MAG_GUN_HELPER(automatic/marksman/svd)
