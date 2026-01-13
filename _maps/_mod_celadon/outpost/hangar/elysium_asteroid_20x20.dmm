@@ -470,7 +470,6 @@
 	},
 /obj/structure/table/reinforced,
 /obj/item/toy/plush/moth/rainbow{
-	pixel_x = 0;
 	pixel_y = 4
 	},
 /obj/item/clothing/head/beret/vintage{
@@ -1204,6 +1203,13 @@
 /area/hangar)
 "AK" = (
 /turf/open/floor/plating/asteroid/icerock/smooth,
+/area/hangar)
+"Bg" = (
+/obj/machinery/conveyor/auto/outpost{
+	dir = 8
+	},
+/obj/structure/plasticflaps/outpost,
+/turf/open/floor/hangar/plasteel,
 /area/hangar)
 "Bh" = (
 /obj/effect/turf_decal/trimline/opaque/yellow/filled/arrow_cw{
@@ -3622,7 +3628,7 @@ iZ
 iZ
 iZ
 iZ
-sS
+Bg
 zx
 iZ
 iZ
