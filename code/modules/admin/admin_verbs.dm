@@ -29,7 +29,9 @@ GLOBAL_PROTECT(admin_verbs_default)
 	/client/proc/revokebunkerbypass,
 	/client/proc/requests,
 	/client/proc/fax_panel, /*send a paper to fax*/
-	/client/proc/show_all_verbs, // [CELADON-ADD] - ADMIN-PANEL - Black Reality
+	/client/proc/show_all_verbs,				// [CELADON-ADD] - ADMIN-PANEL - Black Reality
+	/client/proc/manage_chatfilter,				// [CELADON-ADD] - BRAINDEAD-SYSTEM
+	/client/proc/toggle_chatfilter_hardcore,	// [CELADON-ADD] - BRAINDEAD-SYSTEM
 	)
 GLOBAL_LIST_INIT(admin_verbs_admin, world.AVerbsAdmin())
 GLOBAL_PROTECT(admin_verbs_admin)
