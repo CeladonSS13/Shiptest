@@ -3744,9 +3744,6 @@
 /area/outpost/hallway/aft)
 "cAE" = (
 /obj/structure/table,
-/obj/machinery/microwave{
-	pixel_y = 5
-	},
 /obj/effect/turf_decal/industrial/warning/corner{
 	color = "#808080";
 	dir = 8
@@ -3754,6 +3751,9 @@
 /obj/effect/turf_decal/industrial/warning{
 	color = "#808080";
 	dir = 1
+	},
+/obj/machinery/microwave{
+	pixel_y = 5
 	},
 /turf/open/floor/plasteel,
 /area/outpost/crew/bar/bar_zone)
@@ -6118,10 +6118,10 @@
 /area/outpost/hallway/aft)
 "eaw" = (
 /obj/machinery/light/directional/north,
-/obj/machinery/chem_master/condimaster,
 /obj/effect/turf_decal/industrial/warning{
 	color = "#808080"
 	},
+/obj/machinery/griddle,
 /turf/open/floor/plasteel,
 /area/outpost/crew/bar/bar_zone)
 "eaV" = (
@@ -8429,13 +8429,13 @@
 /turf/open/floor/plating,
 /area/outpost/hallway/central)
 "fxa" = (
-/obj/machinery/door/airlock/freezer{
-	req_access_txt = "8124";
-	dir = 8
+/obj/effect/turf_decal/industrial/warning{
+	dir = 6;
+	color = "#808080"
 	},
-/obj/machinery/door/poddoor/ert{
-	id = "outpost_cook_kitchen";
-	dir = 4
+/obj/machinery/vending/hydroseeds{
+	can_be_unanchored = 1;
+	all_items_free = 1
 	},
 /turf/open/floor/plasteel,
 /area/outpost/crew/bar/bar_zone)
@@ -17103,13 +17103,10 @@
 /turf/open/space/basic,
 /area/outpost/external)
 "lbU" = (
-/obj/machinery/vending/hydronutrients{
-	can_be_unanchored = 1;
-	all_items_free = 1
-	},
 /obj/effect/turf_decal/industrial/warning{
 	color = "#808080"
 	},
+/obj/machinery/deepfryer,
 /turf/open/floor/plasteel,
 /area/outpost/crew/bar/bar_zone)
 "lck" = (
@@ -22312,13 +22309,12 @@
 /turf/open/floor/concrete/slab_4,
 /area/outpost/hallway/aft)
 "oJn" = (
-/obj/machinery/vending/hydroseeds{
+/obj/effect/turf_decal/industrial/warning{
+	color = "#808080"
+	},
+/obj/machinery/vending/hydronutrients{
 	can_be_unanchored = 1;
 	all_items_free = 1
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 6;
-	color = "#808080"
 	},
 /turf/open/floor/plasteel,
 /area/outpost/crew/bar/bar_zone)
@@ -22729,7 +22725,8 @@
 /obj/effect/turf_decal/industrial/warning{
 	color = "#808080"
 	},
-/obj/machinery/deepfryer,
+/obj/machinery/oven,
+/obj/structure/table,
 /turf/open/floor/plasteel,
 /area/outpost/crew/bar/bar_zone)
 "oZz" = (
@@ -23226,10 +23223,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/aft)
-"pmV" = (
-/obj/effect/turf_decal/corner/opaque/green/mono,
-/turf/open/floor/plasteel,
-/area/outpost/crew/bar/bar_zone)
 "pnl" = (
 /obj/structure/table/reinforced,
 /obj/item/phone{
@@ -24316,6 +24309,8 @@
 /obj/effect/turf_decal/industrial/warning{
 	color = "#808080"
 	},
+/obj/structure/table,
+/obj/machinery/chem_master/condimaster,
 /turf/open/floor/plasteel,
 /area/outpost/crew/bar/bar_zone)
 "pWF" = (
@@ -24968,15 +24963,15 @@
 /turf/open/floor/plating,
 /area/outpost/vacant_rooms/trash_factory)
 "qtg" = (
-/obj/structure/closet/secure_closet/freezer/wall/directional/north,
-/obj/item/clothing/head/chefhat,
-/obj/item/clothing/suit/hooded/wintercoat,
-/obj/item/clothing/under/rank/civilian/chef/skirt,
-/obj/item/clothing/under/rank/civilian/chef,
-/obj/item/clothing/suit/toggle/chef,
-/obj/item/clothing/shoes/cookflops,
-/obj/item/clothing/under/shorts/cookjorts,
-/obj/effect/turf_decal/corner/opaque/green/mono,
+/obj/machinery/door/poddoor/ert{
+	id = "outpost_cook_kitchen";
+	dir = 4
+	},
+/obj/machinery/door/airlock/freezer{
+	req_access_txt = "8124";
+	dir = 8
+	},
+/turf/open/floor/plasteel,
 /turf/open/floor/plasteel,
 /area/outpost/crew/bar/bar_zone)
 "qtk" = (
@@ -25023,13 +25018,13 @@
 /obj/effect/turf_decal/industrial/warning{
 	color = "#808080"
 	},
-/obj/machinery/processor{
-	pixel_y = 6
-	},
 /obj/effect/decal/cleanable/food/tomato_smudge,
 /obj/effect/turf_decal/industrial/warning{
 	color = "#808080";
 	dir = 1
+	},
+/obj/machinery/processor{
+	pixel_y = 6
 	},
 /turf/open/floor/plasteel,
 /area/outpost/crew/bar/bar_zone)
@@ -35256,6 +35251,14 @@
 	pixel_y = -21;
 	dir = 1
 	},
+/obj/structure/closet/secure_closet/freezer/wall/directional/east,
+/obj/item/clothing/under/rank/civilian/chef/skirt,
+/obj/item/clothing/suit/hooded/wintercoat,
+/obj/item/clothing/under/shorts/cookjorts,
+/obj/item/clothing/shoes/cookflops,
+/obj/item/clothing/suit/toggle/chef,
+/obj/item/clothing/under/rank/civilian/chef,
+/obj/item/clothing/head/chefhat,
 /turf/open/floor/plasteel,
 /area/outpost/crew/bar/bar_zone)
 "xeJ" = (
@@ -64216,7 +64219,7 @@ oIj
 jRN
 uOo
 mMa
-ptf
+fxa
 ptf
 uVN
 eGQ
@@ -64404,7 +64407,7 @@ lQs
 tDj
 tDj
 ptf
-krT
+ptf
 uVN
 uVN
 uVN
@@ -64590,8 +64593,8 @@ wDk
 big
 dhg
 tDj
-fxa
-uVN
+ptf
+krT
 uVN
 nCj
 bna
@@ -64778,7 +64781,7 @@ eAN
 lwE
 tDj
 qtg
-pmV
+uVN
 uVN
 vMB
 tro
