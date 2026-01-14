@@ -324,13 +324,21 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/wideband, 26)
 	icon_state = "intercom-pirate-c"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/syndicate, 32)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/syndicate/command, 32)
 MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/suns, 32)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/suns/command, 32)
 MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/inteq, 32)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/inteq/command, 32)
 MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/elysium, 32)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/elysium/command, 32)
 MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/nanotrasen, 32)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/nanotrasen/command, 32)
 MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/solfed, 32)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/solfed/command, 32)
 MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/ramzi, 32)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/ramzi/command, 32)
 MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/pirate, 32)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/pirate/command, 32)
 // [/CELADON-ADD]
 
 /obj/item/radio/intercom/wideband/table
