@@ -369,13 +369,6 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"ek" = (
-/obj/structure/plasticflaps/outpost,
-/obj/machinery/conveyor/auto/outpost{
-	dir = 8
-	},
-/turf/open/floor/plasteel/tech,
-/area/hangar)
 "fb" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 6
@@ -962,10 +955,7 @@
 	},
 /area/hangar)
 "ER" = (
-/obj/structure/plasticflaps/outpost,
-/obj/machinery/conveyor/auto/outpost{
-	verted = -1
-	},
+/obj/machinery/conveyor/auto/outpost,
 /turf/open/floor/plasteel/tech,
 /area/hangar)
 "ES" = (
@@ -1793,13 +1783,6 @@
 /turf/open/floor/plasteel/patterned/brushed{
 	planetary_atmos = 1
 	},
-/area/hangar/elevator)
-"Zt" = (
-/obj/machinery/conveyor/auto/outpost{
-	dir = 8;
-	verted = -1
-	},
-/turf/open/floor/plasteel/tech,
 /area/hangar)
 
 (1,1,1) = {"
@@ -3148,7 +3131,7 @@ ac
 "}
 (33,1,1) = {"
 am
-ek
+pU
 am
 am
 dL
@@ -3190,7 +3173,7 @@ ac
 "}
 (34,1,1) = {"
 am
-Zt
+pU
 HR
 am
 MI
