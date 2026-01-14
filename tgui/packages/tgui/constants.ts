@@ -216,7 +216,7 @@ export const RADIO_CHANNELS = [
   },
   {
     name: 'Wideband',
-    freq: 1681,
+    freq: 1691,
     color: '#8de7b6',
   },
 ] as const;
