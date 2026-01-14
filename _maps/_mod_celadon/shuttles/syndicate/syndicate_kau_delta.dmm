@@ -191,8 +191,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
@@ -331,8 +330,7 @@
 	dir = 9
 	},
 /obj/structure/bed/dogbed{
-	name = "Kirill bed";
-	anchored = 1
+	name = "Kirill bed"
 	},
 /mob/living/simple_animal/hostile/asteroid/hivelord{
 	name = "Kirill";
@@ -391,9 +389,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
-/obj/effect/turf_decal/corner/opaque/syndiered/half{
-	dir = 2
-	},
+/obj/effect/turf_decal/corner/opaque/syndiered/half,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
@@ -1341,7 +1337,6 @@
 	pixel_y = 2
 	},
 /obj/item/ammo_box/magazine/m57_39_sidewinder{
-	pixel_x = 0;
 	pixel_y = -5
 	},
 /obj/item/ammo_box/magazine/m57_39_sidewinder,
@@ -1395,9 +1390,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "CX" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -1732,6 +1725,7 @@
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
 /obj/machinery/light/directional/north,
 /obj/machinery/modular_computer/console/preset/command,
+/obj/item/radio/intercom/faction/syndicate/command/directional/north,
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
 "JY" = (
@@ -2237,9 +2231,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -2354,9 +2346,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/crew/dorm)
 "Ss" = (
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/circuit/red/off,
 /area/ship/engineering)
@@ -2404,7 +2394,6 @@
 	dir = 10
 	},
 /obj/structure/table/optable{
-	pixel_x = 0;
 	pixel_y = 9
 	},
 /turf/open/floor/plasteel/dark,
@@ -2655,7 +2644,6 @@
 	pixel_x = 32
 	},
 /obj/item/storage/firstaid/medical{
-	pixel_x = 0;
 	pixel_y = 2
 	},
 /turf/open/floor/plasteel/dark,

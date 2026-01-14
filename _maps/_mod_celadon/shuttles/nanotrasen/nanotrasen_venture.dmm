@@ -101,9 +101,7 @@
 	dir = 4;
 	id = "venture_eng"
 	},
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/machinery/door/window/northleft{
 	dir = 4
 	},
@@ -261,9 +259,7 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /turf/open/floor/plating,
 /area/ship/bridge)
 "qB" = (
@@ -411,7 +407,6 @@
 	pixel_y = -32
 	},
 /obj/machinery/turretid/ship{
-	pixel_x = 0;
 	pixel_y = 25;
 	id = "venture_turrets"
 	},
@@ -560,7 +555,6 @@
 /area/ship/bridge)
 "IP" = (
 /obj/machinery/door/poddoor{
-	dir = 2;
 	id = "venture_blast"
 	},
 /obj/effect/spawner/structure/window/shuttle,
@@ -719,9 +713,7 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/machinery/door/window/northleft{
 	dir = 4
 	},
@@ -774,9 +766,14 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
-/obj/machinery/newscaster/directional/north,
+/obj/machinery/newscaster/directional/north{
+	pixel_x = 10
+	},
 /obj/effect/turf_decal/nanotrasen/ns{
 	dir = 4
+	},
+/obj/item/radio/intercom/faction/nanotrasen/command/directional/north{
+	pixel_x = -6
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)

@@ -416,7 +416,7 @@
 	dir = 6
 	},
 /obj/machinery/recharger{
-	pixel_x = -5
+	pixel_x = -8
 	},
 /obj/item/reagent_containers/food/drinks/mug{
 	pixel_x = -10;
@@ -664,7 +664,6 @@
 /obj/structure/closet/wall{
 	name = "Leaves";
 	pixel_x = -28;
-	pixel_y = 0;
 	dir = 8
 	},
 /obj/item/food/grown/tobacco,
@@ -787,9 +786,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "fD" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -1114,9 +1111,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /turf/open/floor/wood/walnut,
 /area/ship/hallway/central)
 "ir" = (
@@ -1838,10 +1833,7 @@
 /turf/open/floor/wood/walnut,
 /area/ship/security/prison)
 "ov" = (
-/obj/structure/rack{
-	pixel_x = 0;
-	pixel_y = 0
-	},
+/obj/structure/rack,
 /obj/effect/turf_decal/box/red,
 /obj/structure/sign/poster/official/help_others{
 	pixel_y = 32
@@ -2213,8 +2205,7 @@
 	},
 /obj/effect/turf_decal/solgov/all/center_right,
 /obj/item/pen/solfed{
-	pixel_x = 8;
-	pixel_y = 0
+	pixel_x = 8
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/security/prison)
@@ -2262,7 +2253,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/wall/white/med{
 	dir = 1;
-	pixel_x = 0;
 	pixel_y = 29
 	},
 /turf/open/floor/plasteel/mono/white,
@@ -3036,7 +3026,6 @@
 "xT" = (
 /obj/machinery/door/airlock/external,
 /obj/docking_port/mobile{
-	can_move_docking_ports = 1;
 	launch_status = 0;
 	port_direction = 4;
 	preferred_direction = 4
@@ -3398,9 +3387,7 @@
 /turf/open/floor/wood/yew,
 /area/ship/hallway/central)
 "AU" = (
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/structure/window/plasma/reinforced/spawner/east,
 /obj/machinery/door/poddoor{
@@ -3661,9 +3648,7 @@
 /turf/open/floor/wood/walnut,
 /area/ship/bridge)
 "CC" = (
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/structure/window/plasma/reinforced/spawner/east,
 /obj/machinery/door/poddoor{
@@ -3802,9 +3787,7 @@
 /turf/open/floor/wood/yew,
 /area/ship/crew/office)
 "DA" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/fueled/plasma,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "DI" = (
@@ -3828,7 +3811,6 @@
 	pixel_y = -5
 	},
 /obj/item/clothing/mask/gas/solfed/elysium{
-	pixel_x = 0;
 	pixel_y = -5
 	},
 /obj/item/clothing/mask/gas/solfed/elysium{
@@ -3846,9 +3828,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 5
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/walnut,
 /area/ship/storage/eva)
@@ -4420,9 +4400,7 @@
 /turf/open/floor/wood/walnut,
 /area/ship/security)
 "HI" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -5763,9 +5741,7 @@
 /turf/open/floor/wood/yew,
 /area/ship/crew/office)
 "TW" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -6007,7 +5983,6 @@
 	id = "asclepius_armory_lockdown";
 	name = "Armory Lockdown";
 	pixel_x = -20;
-	pixel_y = 0;
 	dir = 4
 	},
 /obj/machinery/light_switch{
@@ -6464,11 +6439,15 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/radio/intercom/wideband/directional/west{
 	dir = 4;
-	pixel_x = 46;
+	pixel_x = 47;
 	pixel_y = 4
 	},
 /obj/effect/turf_decal/steeldecal/steel_decals_central6{
 	pixel_y = -4
+	},
+/obj/item/radio/intercom/faction/solfed/command/directional/east{
+	pixel_x = 45;
+	pixel_y = 4
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)

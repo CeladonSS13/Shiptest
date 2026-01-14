@@ -42,7 +42,6 @@
 /area/ship/engineering/engine)
 "az" = (
 /obj/docking_port/mobile{
-	can_move_docking_ports = 1;
 	dir = 2;
 	launch_status = 0;
 	name = "mining ship";
@@ -224,9 +223,7 @@
 /area/ship/crew/dorm/captain)
 "bU" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/turf_decal/spline/fancy/opaque/nakamuraayellow/corner{
 	dir = 1
 	},
@@ -267,9 +264,7 @@
 /turf/open/floor/engine/airless,
 /area/ship/engineering/engine)
 "cx" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -591,8 +586,7 @@
 /obj/machinery/airalarm/directional/south,
 /obj/structure/bodycontainer/morgue,
 /obj/structure/sign/nanotrasen/deforest{
-	pixel_x = -32;
-	pixel_y = 0
+	pixel_x = -32
 	},
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/medical/surgery)
@@ -926,9 +920,7 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/crew)
 "jn" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -1204,7 +1196,6 @@
 	},
 /obj/machinery/light/small/directional/east,
 /obj/machinery/advanced_airlock_controller{
-	pixel_x = 0;
 	pixel_y = 26
 	},
 /obj/structure/sign/warning/gasmask{
@@ -1522,14 +1513,12 @@
 /obj/machinery/button/door{
 	id = "gecko_starboard_thrusters";
 	name = "Thruster Blast Door Control";
-	pixel_x = 0;
 	pixel_y = -22;
 	sync_doors = 0;
 	dir = 1
 	},
 /obj/machinery/light/small/directional/south{
-	pixel_x = 11;
-	pixel_y = -28
+	pixel_x = 11
 	},
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
@@ -1870,9 +1859,7 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "wB" = (
@@ -1940,9 +1927,7 @@
 	icon_state = "0-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/power/shuttle/engine/electric/premium{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric/premium,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "xl" = (
@@ -2001,14 +1986,12 @@
 /area/ship/engineering/engine)
 "ys" = (
 /obj/structure/window/reinforced{
-	icon_state = "rwindow";
 	dir = 4
 	},
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos/nitrogen_input{
 	dir = 1;
 	piping_layer = 4;
-	pixel_x = 5;
-	pixel_y = 0
+	pixel_x = 5
 	},
 /obj/structure/window/reinforced{
 	dir = 1
@@ -2223,9 +2206,7 @@
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
 	dir = 10
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/computer/apc_control{
 	dir = 1
 	},
@@ -2676,8 +2657,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/nitrogen_output{
 	dir = 1;
 	piping_layer = 4;
-	pixel_x = 5;
-	pixel_y = 0
+	pixel_x = 5
 	},
 /obj/structure/window/reinforced{
 	dir = 1
@@ -2889,14 +2869,12 @@
 /area/ship/maintenance/starboard)
 "Is" = (
 /obj/structure/sign/nanotrasen/nakamura{
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "Iu" = (
 /obj/structure/window/reinforced{
-	icon_state = "rwindow";
 	dir = 4
 	},
 /obj/structure/window/reinforced,
@@ -2950,7 +2928,6 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced{
-	icon_state = "rwindow";
 	dir = 4
 	},
 /obj/structure/window/reinforced,
@@ -2975,9 +2952,7 @@
 /obj/effect/turf_decal/trimline/transparent/white/filled/warning{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/south{
-	pixel_y = -28
-	},
+/obj/machinery/light/small/directional/south,
 /obj/structure/cable{
 	icon_state = "8-10"
 	},
@@ -3343,9 +3318,7 @@
 	icon_state = "0-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "Pc" = (
@@ -3379,9 +3352,7 @@
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
 "Pk" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -3439,7 +3410,6 @@
 	pixel_y = 9
 	},
 /obj/item/stamp/nanotrasen/nakamura/captain{
-	pixel_x = 0;
 	pixel_y = 9
 	},
 /obj/item/stamp/nanotrasen/nakamura{
@@ -3737,6 +3707,7 @@
 	},
 /obj/machinery/fax/nanotrasen,
 /obj/structure/table/reinforced/titaniumglass,
+/obj/item/radio/intercom/faction/nanotrasen/command/directional/north,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "SQ" = (
@@ -4100,7 +4071,6 @@
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/nakamuraayellow,
 /obj/structure/sign/poster/nanotrasen/nakamura_advtools{
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel,
@@ -4200,7 +4170,6 @@
 /obj/item/storage/belt/utility/full/engi,
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/sign/warning/incident{
-	pixel_y = 0;
 	pixel_x = 32
 	},
 /obj/item/clothing/under/nanotrasen/engineering,
@@ -4263,9 +4232,7 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/medical/surgery)
 "YC" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/medical/surgery)
 "YG" = (
@@ -4318,7 +4285,6 @@
 /area/ship/bridge)
 "Zd" = (
 /obj/structure/sign/poster/official/moth/supermatter{
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /turf/open/floor/plating,
@@ -4349,9 +4315,7 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo/starboard)
 "Zn" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -4375,8 +4339,7 @@
 	dir = 8
 	},
 /obj/machinery/light/small/directional/north{
-	pixel_x = 11;
-	pixel_y = 28
+	pixel_x = 11
 	},
 /obj/structure/cable{
 	icon_state = "0-6"
@@ -4384,7 +4347,6 @@
 /obj/machinery/button/door{
 	id = "gecko_port_thrusters";
 	name = "Thruster Blast Door Control";
-	pixel_x = 0;
 	pixel_y = 23;
 	sync_doors = 0
 	},

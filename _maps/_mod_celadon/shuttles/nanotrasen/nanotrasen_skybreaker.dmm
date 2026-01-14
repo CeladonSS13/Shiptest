@@ -132,8 +132,7 @@
 	},
 /obj/structure/curtain/bounty,
 /obj/structure/sign/poster/official/mini_energy_gun{
-	pixel_x = -31;
-	pixel_y = 0
+	pixel_x = -31
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm/captain)
@@ -154,9 +153,7 @@
 /obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
 	dir = 4
 	},
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 2
-	},
+/obj/effect/turf_decal/corner/opaque/white,
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
@@ -278,7 +275,6 @@
 /obj/machinery/button/door{
 	id = "skybreaker_arm";
 	name = "armory shutters";
-	pixel_x = 0;
 	pixel_y = 30
 	},
 /turf/open/floor/plasteel/tech,
@@ -288,8 +284,7 @@
 	dir = 8
 	},
 /obj/structure/sign/poster/official/enlist{
-	pixel_x = -31;
-	pixel_y = 0
+	pixel_x = -31
 	},
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/tank/jetpack/oxygen,
@@ -537,10 +532,7 @@
 	desc = "A well-made beret in Nanotrasen Blue with a corporate logo on the side, often seen topping the heads of Nanotrasen, Inc. emergency response teams' managerial staff."
 	},
 /obj/item/tank/internals/emergency_oxygen/double,
-/obj/item/binoculars{
-	pixel_x = 0;
-	pixel_y = 0
-	},
+/obj/item/binoculars,
 /obj/item/storage/lockbox/medal,
 /obj/item/gps,
 /obj/item/megaphone/command,
@@ -778,7 +770,6 @@
 /obj/effect/turf_decal/corner/opaque/ntblue/border,
 /obj/machinery/light/directional/south,
 /obj/structure/sign/warning/vacuum/external{
-	pixel_x = 0;
 	pixel_y = -24
 	},
 /turf/open/floor/plasteel/tech,
@@ -938,7 +929,6 @@
 /obj/machinery/button/door{
 	id = "skybreaker_eng";
 	name = "engine shutters";
-	pixel_x = 0;
 	pixel_y = 30
 	},
 /turf/open/floor/plating,
@@ -1025,8 +1015,7 @@
 /obj/machinery/button/door{
 	dir = 1;
 	id = "skybreaker_bridge";
-	pixel_y = -27;
-	pixel_x = 0
+	pixel_y = -27
 	},
 /obj/item/radio/intercom/wideband/table,
 /obj/item/binoculars{
@@ -1089,7 +1078,6 @@
 	},
 /obj/machinery/button/door{
 	id = "skybreaker_cell";
-	pixel_x = 0;
 	pixel_y = 29
 	},
 /obj/machinery/cell_charger,
@@ -1183,7 +1171,6 @@
 /area/ship/cargo)
 "pi" = (
 /obj/machinery/button/shieldwallgen{
-	dir = 2;
 	pixel_x = 6;
 	pixel_y = 20;
 	id = "skybreaker_holofield1"
@@ -1591,7 +1578,6 @@
 	pixel_y = 11
 	},
 /obj/item/gun/energy/e_gun/e_old/iot{
-	pixel_x = 0;
 	pixel_y = -5
 	},
 /obj/item/gun/ballistic/automatic/smg/wt550,
@@ -1862,7 +1848,6 @@
 /area/ship/general/engineering)
 "yl" = (
 /obj/machinery/power/smes/shuttle/precharged{
-	dir = 4;
 	charge = 5e+006
 	},
 /obj/structure/cable/yellow{
@@ -1964,7 +1949,6 @@
 	},
 /obj/machinery/light/directional/north,
 /obj/structure/sign/warning/vacuum/external{
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/tech,
@@ -2037,7 +2021,6 @@
 /obj/structure/rack,
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg,
 /obj/structure/sign/poster/official/science{
-	pixel_x = 0;
 	pixel_y = 31
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
@@ -2067,6 +2050,9 @@
 /obj/item/stamp{
 	pixel_x = -10;
 	pixel_y = 1
+	},
+/obj/item/radio/intercom/faction/nanotrasen/command/directional/east{
+	pixel_y = 6
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
@@ -2413,9 +2399,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
-	dir = 2
-	},
+/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters,
 /obj/effect/turf_decal/corner/opaque/white{
 	dir = 1;
 	layer = 2.030
@@ -2469,8 +2453,7 @@
 /obj/machinery/button/door{
 	dir = 1;
 	id = "skybreaker_starboard_windows";
-	pixel_y = -21;
-	pixel_x = 0
+	pixel_y = -21
 	},
 /obj/structure/closet/secure_closet{
 	icon_state = "eng_secure";
@@ -2558,7 +2541,6 @@
 /obj/machinery/button/door{
 	id = "skybreaker_arm";
 	name = "armory shutters";
-	pixel_x = 0;
 	pixel_y = 30
 	},
 /turf/open/floor/plasteel/tech,
@@ -2692,8 +2674,7 @@
 	dir = 8
 	},
 /obj/structure/sign/poster/official/work_for_a_future{
-	pixel_x = -31;
-	pixel_y = 0
+	pixel_x = -31
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/science/robotics)
@@ -2711,8 +2692,7 @@
 /obj/item/roller,
 /obj/machinery/button/door{
 	id = "skybreaker_port_windows";
-	pixel_y = 24;
-	pixel_x = 0
+	pixel_y = 24
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
@@ -2753,8 +2733,7 @@
 	dir = 8
 	},
 /obj/structure/sign/poster/official/nanotrasen_logo{
-	pixel_x = -31;
-	pixel_y = 0
+	pixel_x = -31
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
@@ -2775,8 +2754,7 @@
 	dir = 8
 	},
 /obj/structure/sign/poster/official/miners{
-	pixel_x = -32;
-	pixel_y = 0
+	pixel_x = -32
 	},
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/mask/breath,
@@ -2865,7 +2843,6 @@
 	dir = 8
 	},
 /obj/structure/sign/poster/official/moth/epi{
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/white,
@@ -3419,8 +3396,7 @@
 	},
 /obj/machinery/light/directional/south,
 /obj/structure/sign/poster/official/obey{
-	pixel_x = -31;
-	pixel_y = 0
+	pixel_x = -31
 	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/security)
@@ -3587,8 +3563,7 @@
 	},
 /obj/structure/curtain,
 /obj/structure/sign/poster/official/help_others{
-	pixel_x = -31;
-	pixel_y = 0
+	pixel_x = -31
 	},
 /obj/item/bedsheet/cmo{
 	dir = 1;
@@ -3842,7 +3817,6 @@
 /obj/machinery/button/door{
 	dir = 8;
 	pixel_x = 28;
-	pixel_y = 0;
 	id = "skybreaker_celldoor"
 	},
 /obj/machinery/recharger{
@@ -3876,7 +3850,6 @@
 	icon_state = "4-8"
 	},
 /obj/structure/sign/poster/official/ion_carbine{
-	pixel_x = 0;
 	pixel_y = -30
 	},
 /turf/open/floor/plasteel/tech,

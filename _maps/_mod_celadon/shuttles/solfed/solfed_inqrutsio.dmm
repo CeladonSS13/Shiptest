@@ -18,7 +18,6 @@
 /area/ship/hallway/central)
 "az" = (
 /obj/item/bedsheet/double/solgov{
-	pixel_x = 0;
 	pixel_y = 1
 	},
 /obj/structure/bed/double,
@@ -117,9 +116,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "cx" = (
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -130,9 +127,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "cQ" = (
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -268,8 +263,7 @@
 /area/ship/hallway/central)
 "fs" = (
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /obj/effect/turf_decal/techfloor{
 	dir = 1;
@@ -519,9 +513,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
 "kJ" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -700,13 +692,14 @@
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/engineering)
 "oo" = (
-/obj/machinery/fax/solgov,
 /obj/structure/table/wood/fancy/blue,
 /obj/machinery/light/directional/west,
 /obj/item/stamp/solfed/captain{
 	pixel_y = 13;
 	pixel_x = 1
 	},
+/obj/item/radio/intercom/faction/solfed/command/directional/north,
+/obj/machinery/fax/solgov,
 /turf/open/floor/wood,
 /area/ship/bridge)
 "ow" = (
@@ -811,9 +804,7 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/ship/crew/cryo)
 "qE" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/fueled/plasma,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
@@ -1165,8 +1156,7 @@
 	dir = 10
 	},
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovblue/arrow_cw{
 	dir = 8
@@ -1680,7 +1670,6 @@
 /area/ship/engineering)
 "El" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	icon_state = "pipe11-4";
 	dir = 5
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -1948,7 +1937,6 @@
 /area/ship/bridge)
 "Jb" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	icon_state = "pipe11-4";
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -2199,7 +2187,6 @@
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	icon_state = "pipe11-4";
 	dir = 5
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
@@ -2352,8 +2339,7 @@
 /obj/item/storage/box/ammo/c556mm_ap,
 /obj/item/storage/box/ammo/c556mm_ap,
 /obj/item/ammo_box/magazine/p16{
-	pixel_x = -1;
-	pixel_y = 0
+	pixel_x = -1
 	},
 /obj/item/ammo_box/magazine/p16{
 	pixel_x = -8;
@@ -2589,9 +2575,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
 "XP" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},

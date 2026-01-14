@@ -176,7 +176,6 @@
 	dir = 6
 	},
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /obj/effect/turf_decal/techfloor/orange{
@@ -203,7 +202,6 @@
 "ej" = (
 /obj/effect/turf_decal/techfloor/orange,
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -428,9 +426,7 @@
 /turf/open/floor/plating,
 /area/ship/bridge)
 "hp" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -712,13 +708,9 @@
 /area/ship/engineering)
 "mz" = (
 /obj/machinery/newscaster/directional/north,
-/obj/structure/table/reinforced{
-	pixel_x = 0;
-	pixel_y = 0
-	},
+/obj/structure/table/reinforced,
 /obj/item/clothing/mask/cigarette/syndicate{
-	pixel_x = 2;
-	pixel_y = 0
+	pixel_x = 2
 	},
 /obj/item/clothing/mask/cigarette/syndicate{
 	pixel_x = 5;
@@ -763,7 +755,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/trimline/opaque/vired/line,
 /obj/structure/sign/poster/nanotrasen/vigilitas_nonlethal{
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel,
@@ -774,8 +765,7 @@
 /area/ship/cargo)
 "nI" = (
 /obj/effect/turf_decal/industrial/warning{
-	color = "#808080";
-	dir = 2
+	color = "#808080"
 	},
 /obj/item/radio/intercom/directional/west,
 /obj/structure/table/glass,
@@ -1118,9 +1108,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "minutemen_corvus_engines";
@@ -1197,7 +1185,6 @@
 /area/ship/hallway/central)
 "tQ" = (
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /obj/effect/turf_decal/techfloor{
@@ -1288,7 +1275,6 @@
 /obj/effect/spawner/random/food_or_drink/donut,
 /obj/effect/spawner/random/food_or_drink/donut,
 /obj/item/storage/fancy/donut_box{
-	pixel_x = 0;
 	pixel_y = -4
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -1416,12 +1402,10 @@
 	pixel_y = 4
 	},
 /obj/item/binoculars{
-	pixel_x = 7;
-	pixel_y = 0
+	pixel_x = 7
 	},
 /obj/structure/sign/poster/official/ion_carbine{
-	pixel_x = -32;
-	pixel_y = 0
+	pixel_x = -32
 	},
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 4
@@ -1437,7 +1421,6 @@
 	},
 /obj/machinery/vending/boozeomat{
 	all_items_free = 1;
-	pixel_x = 0;
 	pixel_y = -32;
 	density = 0
 	},
@@ -1537,7 +1520,6 @@
 "Bg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/docking_port/mobile{
-	can_move_docking_ports = 1;
 	dir = 2;
 	launch_status = 0;
 	port_direction = 8;
@@ -1558,9 +1540,7 @@
 	pixel_x = -12;
 	pixel_y = -16
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/effect/turf_decal/trimline/opaque/blue/warning{
 	dir = 8
 	},
@@ -1665,15 +1645,10 @@
 	anchored = 1
 	},
 /obj/item/gun/ballistic/automatic/smg/wt550{
-	pixel_x = 0;
 	pixel_y = -9
 	},
-/obj/item/gun/ballistic/automatic/smg/wt550{
-	pixel_x = 0;
-	pixel_y = 0
-	},
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/gun/ballistic/automatic/powered/gauss{
-	pixel_x = 0;
 	pixel_y = 9
 	},
 /obj/effect/turf_decal/corner/opaque/vired/half{
@@ -1768,7 +1743,6 @@
 /obj/item/radio/intercom/directional/south{
 	pixel_x = -4
 	},
-/obj/item/radio/intercom/wideband/directional/west,
 /obj/item/folder/blue{
 	pixel_x = 6;
 	pixel_y = 6
@@ -1803,9 +1777,12 @@
 	pixel_y = -6
 	},
 /obj/item/stamp/nanotrasen/vigilitas/security{
-	pixel_x = 0;
 	pixel_y = -6
 	},
+/obj/item/radio/intercom/faction/nanotrasen/command/directional/west{
+	pixel_x = -40
+	},
+/obj/item/radio/intercom/wideband/directional/west,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "EO" = (
@@ -1875,7 +1852,6 @@
 	dir = 4
 	},
 /obj/structure/sign/departments/security{
-	pixel_x = 0;
 	pixel_y = -32
 	},
 /obj/effect/turf_decal/trimline/opaque/vired/line{
@@ -2011,7 +1987,6 @@
 	pixel_y = 2
 	},
 /obj/item/clothing/glasses/hud/security/night{
-	pixel_x = 0;
 	pixel_y = 2
 	},
 /obj/item/clothing/glasses/hud/security/night{
@@ -2019,8 +1994,7 @@
 	pixel_y = 2
 	},
 /obj/structure/sign/poster/official/love_ian{
-	pixel_x = 32;
-	pixel_y = 0
+	pixel_x = 32
 	},
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 8
@@ -2204,9 +2178,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/structure/window/plasma/reinforced/spawner/east,
 /obj/machinery/door/poddoor{
 	dir = 4;
@@ -2290,7 +2262,6 @@
 /area/ship/hallway/central)
 "Nr" = (
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /obj/structure/chair/comfy/shuttle{
@@ -2376,7 +2347,6 @@
 /obj/item/stock_parts/cell/gun/sharplite/plus,
 /obj/item/radio/headset/nanotrasen/alt/captain,
 /obj/structure/sign/poster/official/ion_carbine{
-	pixel_x = 0;
 	pixel_y = 31
 	},
 /obj/item/gun/energy/e_gun/e_old/hos,
@@ -2447,9 +2417,7 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/medical)
 "Ri" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -2523,9 +2491,7 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
 "To" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -2688,9 +2654,7 @@
 /area/ship/cargo)
 "XM" = (
 /obj/machinery/power/apc/auto_name/directional/west,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/light_switch{
 	dir = 4;
 	pixel_x = -19;
@@ -2781,8 +2745,7 @@
 	icon_state = "1-6"
 	},
 /obj/structure/reagent_dispensers/peppertank{
-	pixel_x = -32;
-	pixel_y = 0
+	pixel_x = -32
 	},
 /obj/effect/turf_decal/trimline/opaque/vired/line{
 	dir = 8
@@ -2884,9 +2847,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "Zt" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/fueled/plasma,
 /turf/open/floor/plating,
 /area/ship/engineering)
 

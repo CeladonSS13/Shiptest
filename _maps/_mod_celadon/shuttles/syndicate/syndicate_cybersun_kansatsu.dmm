@@ -102,7 +102,6 @@
 	dir = 8
 	},
 /obj/machinery/door/window{
-	icon_state = "left";
 	dir = 8
 	},
 /turf/open/floor/plasteel/white,
@@ -116,9 +115,7 @@
 /turf/open/floor/plating,
 /area/ship/bridge)
 "es" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -184,8 +181,7 @@
 	icon_state = "1-8"
 	},
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -203,9 +199,7 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/shuttle/engine/electric/premium{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric/premium,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "fo" = (
@@ -291,8 +285,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -596,7 +589,6 @@
 "mT" = (
 /obj/structure/table/wood,
 /obj/machinery/recharger{
-	pixel_x = 0;
 	pixel_y = 9
 	},
 /turf/open/floor/carpet/red_gold,
@@ -932,9 +924,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "uA" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -1025,9 +1015,7 @@
 /area/ship/engineering)
 "xl" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
-/obj/structure/easel{
-	pixel_y = 0
-	},
+/obj/structure/easel,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "xo" = (
@@ -1957,8 +1945,7 @@
 	},
 /obj/machinery/computer/crew{
 	dir = 4;
-	pixel_x = -8;
-	pixel_y = 0
+	pixel_x = -8
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/office)
@@ -2009,8 +1996,7 @@
 	icon_state = "1-8"
 	},
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -2126,9 +2112,7 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
 "Za" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -2153,7 +2137,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/industrial/outline/red,
-/obj/item/radio/intercom/directional/north,
+/obj/item/radio/intercom/faction/syndicate/command/directional/north,
 /obj/machinery/modular_computer/console/preset/command,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)

@@ -134,9 +134,7 @@
 /area/ship/crew/canteen/kitchen)
 "bP" = (
 /obj/structure/table/wood,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/machinery/fax/solgov,
 /turf/open/floor/wood,
@@ -387,9 +385,7 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
 "eo" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/machinery/door/poddoor{
 	dir = 4;
@@ -571,8 +567,7 @@
 /area/ship/hallway/central)
 "hT" = (
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -1442,9 +1437,7 @@
 	icon_state = "plant-10"
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -1687,9 +1680,7 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew)
 "tr" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/fueled/plasma,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "tC" = (
@@ -1857,8 +1848,7 @@
 	dir = 6
 	},
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
@@ -2368,9 +2358,7 @@
 	dir = 10
 	},
 /obj/structure/rack,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/item/storage/box/ammo/ferrolance,
 /obj/item/storage/box/ammo/ferrolance,
@@ -2415,9 +2403,7 @@
 /turf/open/floor/wood,
 /area/ship/crew)
 "AY" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -2662,8 +2648,7 @@
 	dir = 4
 	},
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
@@ -2724,6 +2709,7 @@
 	pixel_y = 12;
 	pixel_x = -4
 	},
+/obj/item/radio/intercom/faction/solfed/command/directional/west,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "EH" = (
@@ -3147,9 +3133,7 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/shuttle/engine/electric/tech1{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric/tech1,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "IO" = (
@@ -3396,9 +3380,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "LX" = (
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/structure/window/plasma/reinforced/spawner/east,
 /obj/machinery/door/poddoor{
@@ -3741,7 +3723,6 @@
 	name = "Cargo Bay Blast Door"
 	},
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
-	dir = 2;
 	id = "tomahawk_cargo_halo"
 	},
 /obj/machinery/door/firedoor/border_only{
@@ -4001,9 +3982,7 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/law_office)
 "Tr" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/structure/cable{
 	icon_state = "0-8"
