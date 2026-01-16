@@ -8,7 +8,8 @@
 /datum/overmap/ship/controlled
 	token_type = /obj/overmap/rendered
 	dock_time = 10 SECONDS
-	interaction_options = list(INTERACTION_OVERMAP_DOCK, INTERACTION_OVERMAP_QUICKDOCK, INTERACTION_OVERMAP_HAIL, INTERACTION_OVERMAP_INTERDICTION)
+	interaction_options = list(INTERACTION_OVERMAP_DOCK, INTERACTION_OVERMAP_QUICKDOCK, INTERACTION_OVERMAP_INTERDICTION)
+	interaction_hail = list(INTERACTION_OVERMAP_HAIL)
 
 	// [CELADON-ADD] - OVERMAP SENSORS
 	var/default_sensor_range = 4

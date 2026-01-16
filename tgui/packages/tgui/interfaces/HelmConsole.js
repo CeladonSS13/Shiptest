@@ -54,6 +54,7 @@ const SharedContent = (_props, context) => {
         <Table>
           <Table.Row bold>
             <Table.Cell>Name</Table.Cell>
+            {!isViewer && <Table.Cell>Hail</Table.Cell>}
             {!isViewer && <Table.Cell>Act</Table.Cell>}
             {!isViewer && <Table.Cell>Dock</Table.Cell>}
           </Table.Row>
@@ -63,12 +64,33 @@ const SharedContent = (_props, context) => {
               {!isViewer && (
                 <Table.Cell>
                   <Button
-                    tooltip="Interact"
+                    tooltip="Hail"
                     tooltipPosition="left"
                     icon="circle"
                     disabled={
                       // I hate this so much
                       isViewer
+                    }
+                    onClick={() =>
+                      act('hail', {
+                        ship_to_act: ship.ref,
+                      })
+                    }
+                  />
+                </Table.Cell>
+              )}
+              {!isViewer && (
+                <Table.Cell>
+                  <Button
+                    tooltip="Interact Dock"
+                    tooltipPosition="left"
+                    icon="anchor"
+                    disabled={
+                      isViewer ||
+                      data.speed > 0 ||
+                      data.docked ||
+                      data.docking ||
+                      !ship.candock
                     }
                     onClick={() =>
                       act('act_overmap', {
