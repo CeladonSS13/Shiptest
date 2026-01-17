@@ -80,7 +80,7 @@
 /datum/supply_pack/faction/independent/modsuits/modules/jetpack
 	name = "MOD Ion Jetpack Module"
 	desc = "Contains an integrated ion jetpack for self propulsion in zero-g."
-	cost = 1250
+	cost = 1000
 	contains = list(/obj/item/mod/module/jetpack)
 
 /datum/supply_pack/faction/independent/modsuits/modules/gps
@@ -88,6 +88,12 @@
 	desc = "Contains a integrated GPS to help find your way."
 	cost = 250
 	contains = list(/obj/item/mod/module/gps)
+
+/datum/supply_pack/faction/independent/modsuits/modules/plasma_engine
+	name = "MOD plasma engine Module"
+	desc = "Contains a module for refining plasma into energy right inside of your MODsuit!"
+	cost = 500
+	contains = list(/obj/item/mod/module/plasma_engine)
 
 // MARK: ENGINEERING
 /datum/supply_pack/faction/independent/modsuits/modules/welding

@@ -81,7 +81,7 @@
 /// Новый модуль дэша. По умолчанию есть в вендоре интеков
 /obj/item/mod/module/dash
 	name = "MOD D.A.S.H. module"
-	desc = "Directional Acceleration Surge Hardware module utilizes magnetized self-recoiling hydraulics\
+	desc = "Directional Acceleration Surge Hardware module utilizes magnetized self-recoiling hydraulics \
 	to rapidly extend and launch MOD operator forward. Hydraulics quickly recoil back with the help of magnets,\
 	which allows for quick consequent charges, but the power drain increases with each one due to ever increasing heat."
 	module_type = MODULE_ACTIVE
