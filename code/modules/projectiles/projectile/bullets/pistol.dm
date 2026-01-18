@@ -93,7 +93,7 @@
 
 /obj/projectile/bullet/c10mm/hp
 	name = "10x22mm hollow point bullet"
-	damage = 31 // [CELADON-EDIT] - GUN_BALANCE <- Original: damage=35
+	damage = 33 // [CELADON-EDIT] - GUN_BALANCE <- Original: damage=35
 	armour_penetration = -30
 	speed_mod = BULLET_SPEED_HP_MOD
 
