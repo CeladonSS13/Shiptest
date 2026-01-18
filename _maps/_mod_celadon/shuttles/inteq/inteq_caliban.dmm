@@ -2760,13 +2760,13 @@
 	dir = 8
 	},
 /obj/item/storage/ashtray,
-/obj/effect/turf_decal/trimline/opaque/yellow/line{
-	layer = 2.040;
-	dir = 9
-	},
 /obj/item/binoculars{
 	pixel_x = -5;
 	pixel_y = 9
+	},
+/obj/effect/turf_decal/trimline/opaque/yellow/line{
+	layer = 2.039;
+	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
@@ -2890,10 +2890,6 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/medical)
 "ou" = (
-/obj/effect/turf_decal/trimline/opaque/yellow/line{
-	layer = 2.040;
-	dir = 10
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 10
 	},
@@ -2901,6 +2897,10 @@
 /obj/structure/reagent_dispensers/water_cooler{
 	name = "Coffee heater";
 	reagent_id = /datum/reagent/consumable/coffee
+	},
+/obj/effect/turf_decal/trimline/opaque/yellow/line{
+	layer = 2.040;
+	dir = 10
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
@@ -5297,14 +5297,14 @@
 "AB" = (
 /obj/structure/table/reinforced,
 /obj/machinery/fax/inteq,
-/obj/effect/turf_decal/trimline/opaque/yellow/line{
-	layer = 2.040;
-	dir = 10
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
 /obj/item/modular_computer/tablet/preset/advanced,
+/obj/effect/turf_decal/trimline/opaque/yellow/line{
+	layer = 2.039;
+	dir = 8
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "AC" = (
@@ -6309,16 +6309,16 @@
 /area/ship/security)
 "Gr" = (
 /obj/structure/table/reinforced,
-/obj/effect/turf_decal/trimline/opaque/yellow/line{
-	layer = 2.040;
-	dir = 10
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
 /obj/machinery/recharger{
 	pixel_x = -9;
 	pixel_y = 1
+	},
+/obj/effect/turf_decal/trimline/opaque/yellow/line{
+	layer = 2.039;
+	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
