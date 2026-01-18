@@ -89,8 +89,9 @@
 	id = /obj/item/card/id/cel/inteq/vanguard
 	ears = /obj/item/radio/headset/inteq/alt
 	head = /obj/item/clothing/head/beret/sec/hos/inteq
+	mask = null
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
-	suit = /obj/item/clothing/suit/armor/vest/inteq
+	suit = null
 	gloves = /obj/item/clothing/gloves/combat
 	uniform = /obj/item/clothing/under/syndicate/inteq/honorable
 

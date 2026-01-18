@@ -6402,9 +6402,6 @@
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
 	dir = 6
 	},
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 6
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
@@ -6414,6 +6411,10 @@
 /obj/machinery/airalarm/directional/south,
 /obj/structure/cable{
 	icon_state = "1-4"
+	},
+/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 4
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/crew/dorm/dormtwo)
