@@ -400,6 +400,7 @@
 			var/feedback_text = current_ship.show_interaction_menu(usr, to_act)
 			if(feedback_text)
 				say(feedback_text)
+			return
 
 	if(jump_state != JUMP_STATE_OFF)
 		say("Bluespace Jump in progress. Controls suspended.")
