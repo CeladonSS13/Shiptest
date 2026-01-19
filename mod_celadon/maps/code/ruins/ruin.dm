@@ -211,6 +211,27 @@
 	cost = 4
 	ruin_tags = list(RUIN_TAG_HARD_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
 
+/datum/map_template/ruin/icemoon/training_center
+	name = "Ramzi Training Center"
+	id = "training_center"
+	description = "An abandoned training facility located on this ice-world dating back to the early days of the ICW. Strangely, it still seems to be inhabited."
+	suffix = "icemoon_underground_training_center.dmm"
+	cost = 5
+
+/datum/map_template/ruin/icemoon/command_post
+	name = "Ramzi Command Post"
+	id = "command_post"
+	description = "A Ramzi Clique-controlled command post that directs raids and manages communications within its outfit within the sector."
+	suffix = "icemoon_underground_command_post.dmm"
+	cost = 4
+
+/datum/map_template/ruin/icemoon/downed_transport
+	name = "Geneza Downed Transport"
+	id = "downed_transport"
+	description = "There's been reports of a number of unmarked structures on a nearby ice world and what's more, a Gezenan transport just went missing in orbit."
+	suffix = "icemoon_surface_downed_transport.dmm"
+	cost = 3
+
 //							///
 //		MARK: Jungle
 //							///
