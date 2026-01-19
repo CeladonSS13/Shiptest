@@ -284,22 +284,6 @@
 			wallet = /obj/item/storage/wallet/black
 		if(PREF_WHITEWALLET)
 			wallet = /obj/item/storage/wallet/white
-		if(PREF_TMIWALLET)
-			wallet = /obj/item/storage/wallet/tmi_wallet
-		if(PREF_SYNDIWALLET)
-			wallet = /obj/item/storage/wallet/syndicate_wallet
-		if(PREF_NTWALLET)
-			wallet = /obj/item/storage/wallet/nt_wallet
-		if(PREF_SFWALLET)
-			wallet = /obj/item/storage/wallet/solfed_wallet
-		if(PREF_IQWALLET)
-			wallet = /obj/item/storage/wallet/inteq_wallet
-		if(PREF_ELYSIUMWALLET)
-			wallet = /obj/item/storage/wallet/elysium_wallet
-		if(PREF_SEPARWALLET)
-			wallet = /obj/item/storage/wallet/separatist_wallet
-		if(PREF_PIRATEWALLET)
-			wallet = /obj/item/storage/wallet/pirate_wallet
 		else
 			wallet = null
 	// [/CELADON-ADD]
