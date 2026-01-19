@@ -1,3 +1,7 @@
+/**
+ * @changes 2026 KOCMOHABT (https://github.com/CeladonSS13/Shiptest/pull/2647)
+ * @TDLR From anything changes, see History in GIT and PR.
+ */
 import { useBackend } from '../backend';
 import {
   Button,
@@ -10,6 +14,8 @@ import {
   LabeledControls,
   NumberInput,
   Divider,
+  Stack,
+  NoticeBox,
 } from '../components';
 import { Window } from '../layouts';
 import { Table } from '../components/Table';
@@ -19,38 +25,128 @@ export const HelmConsole = (_props, context) => {
   const { data } = useBackend(context);
   const { mapRef, isViewer } = data;
   return (
-    <Window width={870} height={708} resizable>
-      <div className="CameraConsole__left">
-        <Window.Content>
-          {!isViewer && <ShipControlContent />}
-          <ShipContent />
-          <SharedContent />
-        </Window.Content>
-      </div>
-      <div className="CameraConsole__right">
-        <div className="CameraConsole__toolbar">
-          {!!data.docked && (
-            <div className="NoticeBox">Ship docked to: {data.docked}</div>
-          )}
-        </div>
-        <ByondUi
-          className="CameraConsole__map"
-          params={{
-            id: mapRef,
-            type: 'map',
-          }}
-        />
-      </div>
+    <Window width={1130} height={700}>
+      <Window.Content>
+        <Stack fill>
+          <Stack.Item width="230px" overflowX="auto">
+            {!!data.docked && (
+              <NoticeBox>Ship docked to: {data.docked}</NoticeBox>
+            )}
+            {!isViewer && <ShipControlContent />}
+            <ShipContent />
+          </Stack.Item>
+          <Stack.Item grow>
+            <ByondUi
+              height="100%"
+              width="100%"
+              params={{
+                id: mapRef,
+                type: 'map',
+              }}
+            />
+          </Stack.Item>
+          <Stack.Item width="230px" overflowX="auto">
+            {!!data.docked && (
+              <NoticeBox>Ship docked to: {data.docked}</NoticeBox>
+            )}
+            <SharedContent />
+          </Stack.Item>
+        </Stack>
+      </Window.Content>
     </Window>
   );
 };
 
 const SharedContent = (_props, context) => {
   const { act, data } = useBackend(context);
-  const { isViewer, canRename, shipInfo = [], otherInfo = [] } = data;
+  const { isViewer, canRename, shipInfo = [], otherInfo = [], arpa_ships = [], calibrating } = data;
+  let flyable = !data.docking && !data.docked;
   return (
     <>
-      <Section title="Radar">
+      <Section
+        title={
+          <Button.Input
+            content={decodeHtmlEntities(shipInfo.prefixed)}
+            currentValue={shipInfo.name}
+            disabled={isViewer || !canRename}
+            onCommit={(_e, value) =>
+              act('rename_ship', {
+                newName: value,
+              })
+            }
+          />
+        }
+        buttons={
+          <>
+            <Button
+              tooltip="Refresh Ship Stats"
+              tooltipPosition="left"
+              icon="sync"
+              disabled={isViewer}
+              onClick={() => act('reload_ship')}
+            />
+          </>
+        }
+      >
+        <LabeledList>
+          <LabeledList.Item label="Class">{shipInfo.class}</LabeledList.Item>
+          <LabeledList.Item label="Sensor Range">
+            <ProgressBar
+              value={shipInfo.sensor_range}
+              minValue={1}
+              maxValue={8}
+            >
+              <AnimatedNumber value={shipInfo.sensor_range} />
+            </ProgressBar>
+            <Table.Cell>
+              <Button
+                tooltip="Decrease Signal Length"
+                tooltipPosition="right"
+                icon="arrow-left"
+                // [CELADON-ADD] - subshuttle fix
+                disabled={data.issubshuttle != null}
+                // [/CELADON-ADD] - subshuttle fix
+                onClick={() => act('sensor_decrease')}
+              />
+              <Button
+                tooltip="Increase Signal Length"
+                tooltipPosition="right"
+                icon="arrow-right"
+                // [CELADON-ADD] - subshuttle fix
+                disabled={data.issubshuttle != null}
+                // [/CELADON-ADD] - subshuttle fix
+                onClick={() => act('sensor_increase')}
+              />
+            </Table.Cell>
+          </LabeledList.Item>
+          {shipInfo.mass && (
+            <LabeledList.Item label="Mass">
+              {shipInfo.mass + 'tonnes'}
+            </LabeledList.Item>
+          )}
+        </LabeledList>
+      </Section>
+      <Section title="Radar" 
+        buttons={
+          <>
+            <Button // [CELADON-ADD] - Signal S.O.S - mod_celadon\wideband\code\signal.dm
+              tooltip="Send S.O.S."
+              tooltipPosition="left"
+              icon="globe"
+              disabled={isViewer}
+              onClick={() => act('send_sos')}
+            />
+            <Button
+              tooltip={calibrating ? 'Cancel Jump' : 'Bluespace Jump'}
+              tooltipPosition="left"
+              icon={calibrating ? 'times' : 'angle-double-right'}
+              color={calibrating ? 'bad' : 'average'}
+              disabled={!flyable}
+              onClick={() => act('bluespace_jump')}
+            />
+          </>
+        }
+		>
         <Table>
           <Table.Row bold>
             <Table.Cell>Name</Table.Cell>
@@ -67,10 +163,7 @@ const SharedContent = (_props, context) => {
                     tooltip="Hail"
                     tooltipPosition="left"
                     icon="circle"
-                    disabled={
-                      // I hate this so much
-                      isViewer
-                    }
+                    disabled={isViewer}
                     onClick={() =>
                       act('hail', {
                         ship_to_act: ship.ref,
@@ -127,75 +220,17 @@ const SharedContent = (_props, context) => {
           ))}
         </Table>
       </Section>
-      <Section
-        title={
-          <Button.Input
-            content={decodeHtmlEntities(shipInfo.prefixed)}
-            currentValue={shipInfo.name}
-            disabled={isViewer || !canRename}
-            onCommit={(_e, value) =>
-              act('rename_ship', {
-                newName: value,
-              })
-            }
-          />
-        }
-        buttons={
-          <>
-            <Button
-              tooltip="Refresh Ship Stats"
-              tooltipPosition="left"
-              icon="sync"
-              disabled={isViewer}
-              onClick={() => act('reload_ship')}
-            />
-            <Button // [CELADON-ADD] - Signal S.O.S - mod_celadon\wideband\code\signal.dm
-              tooltip="Send S.O.S."
-              tooltipPosition="left"
-              icon="globe"
-              disabled={isViewer}
-              onClick={() => act('send_sos')}
-            />
-          </>
-        }
-      >
-        <LabeledList>
-          <LabeledList.Item label="Class">{shipInfo.class}</LabeledList.Item>
-          <LabeledList.Item label="Sensor Range">
-            <ProgressBar
-              value={shipInfo.sensor_range}
-              minValue={1}
-              maxValue={8}
-            >
-              <AnimatedNumber value={shipInfo.sensor_range} />
-            </ProgressBar>
+      <Section title="ARPA">
+        {arpa_ships.map((ship) => (
+          <Table.Row key={ship.name}>
+            <Table.Cell>{ship.name}</Table.Cell>
+            <Divider vertical hidden />
+            <Table.Cell>BRG:{ship.brg}°</Table.Cell>
             <Table.Cell>
-              <Button
-                tooltip="Decrease Signal Length"
-                tooltipPosition="right"
-                icon="arrow-left"
-				// [CELADON-ADD] - subshuttle fix
-				disabled={data.issubshuttle != null}
-				// [/CELADON-ADD] - subshuttle fix
-                onClick={() => act('sensor_decrease')}
-              />
-              <Button
-                tooltip="Increase Signal Length"
-                tooltipPosition="right"
-                icon="arrow-right"
-				// [CELADON-ADD] - subshuttle fix
-				disabled={data.issubshuttle != null}
-				// [/CELADON-ADD] - subshuttle fix
-                onClick={() => act('sensor_increase')}
-              />
+              T/CPA:{ship.cpa}m {ship.tcpa}s
             </Table.Cell>
-          </LabeledList.Item>
-          {shipInfo.mass && (
-            <LabeledList.Item label="Mass">
-              {shipInfo.mass + 'tonnes'}
-            </LabeledList.Item>
-          )}
-        </LabeledList>
+          </Table.Row>
+        ))}
       </Section>
     </>
   );
@@ -216,7 +251,6 @@ const ShipContent = (_props, context) => {
     eta,
     x,
     y,
-    arpa_ships = [],
   } = data;
   return (
     <>
@@ -261,17 +295,6 @@ const ShipContent = (_props, context) => {
             <AnimatedNumber value={eta} />
           </LabeledList.Item>
         </LabeledList>
-      </Section>
-      <Section title="ARPA">
-        {arpa_ships.map((ship) => (
-          <Table.Row key={ship.name}>
-            <Table.Cell>{ship.name}</Table.Cell>
-            <Divider vertical hidden />
-            <Table.Cell>BRG:{ship.brg}°</Table.Cell>
-            <Table.Cell>T/CPA:{ship.cpa}m {ship.tcpa}s</Table.Cell>
-          </Table.Row>
-        ))}
-
       </Section>
       <Section
         title="Engines"
@@ -358,7 +381,6 @@ const ShipContent = (_props, context) => {
 const ShipControlContent = (_props, context) => {
   const { act, data } = useBackend(context);
   const {
-    calibrating,
     aiControls,
     aiUser,
     burnDirection,
@@ -390,9 +412,11 @@ const ShipControlContent = (_props, context) => {
             tooltip="Undock"
             tooltipPosition="left"
             icon="sign-out-alt"
-			// [CELADON-EDIT] - subshuttles fix
-            disabled={!data.docked || data.docking || data.motheroutpost != null}
-			// [/CELADON-EDIT] - subshuttles fix
+            // [CELADON-EDIT] - subshuttles fix
+            disabled={
+              !data.docked || data.docking || data.motheroutpost != null
+            }
+            // [/CELADON-EDIT] - subshuttles fix
             onClick={() => act('undock')}
           />
           <Button
@@ -401,14 +425,6 @@ const ShipControlContent = (_props, context) => {
             icon="sign-in-alt"
             disabled={!flyable || speed}
             onClick={() => act('dock_empty')}
-          />
-          <Button
-            tooltip={calibrating ? 'Cancel Jump' : 'Bluespace Jump'}
-            tooltipPosition="left"
-            icon={calibrating ? 'times' : 'angle-double-right'}
-            color={calibrating ? 'bad' : undefined}
-            disabled={!flyable}
-            onClick={() => act('bluespace_jump')}
           />
           <Button
             tooltip={aiControls ? 'Disable AI Control' : 'Enable AI Control'}
@@ -432,9 +448,7 @@ const ShipControlContent = (_props, context) => {
                   mb={1}
                   color={rotating === -1 && 'good'}
                   disabled={!flyable}
-                  onClick={() =>
-                    act('rotate_left')
-                  }
+                  onClick={() => act('rotate_left')}
                 />
               </Table.Cell>
               <Table.Cell width={1}>
@@ -457,9 +471,7 @@ const ShipControlContent = (_props, context) => {
                   mb={1}
                   color={rotating === 1 && 'good'}
                   disabled={!flyable}
-                  onClick={() =>
-                    act('rotate_right')
-                  }
+                  onClick={() => act('rotate_right')}
                 />
               </Table.Cell>
             </Table.Row>
