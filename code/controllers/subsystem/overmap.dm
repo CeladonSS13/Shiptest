@@ -794,16 +794,8 @@ SUBSYSTEM_DEF(overmap)
 	//			docking_ports += port
 	// [/CELADON-REMOVE]
 
-	var/list/datum/weakref/spawned_mission_pois = list()
-	for(var/obj/effect/landmark/mission_poi/mission_poi in SSmissions.unallocated_pois)
-		if(!vlevel.is_in_bounds(mission_poi))
-			continue
 
-		spawned_mission_pois += WEAKREF(mission_poi)
-		SSmissions.unallocated_pois -= mission_poi
-
-
-	return list(mapzone, docking_ports, ruin_turfs, ruin_templates, spawned_mission_pois)
+	return list(mapzone, docking_ports, ruin_turfs, ruin_templates)
 
 /**
  * Reserves a square dynamic encounter area then loads a map.
@@ -1134,90 +1126,110 @@ SUBSYSTEM_DEF(overmap)
 	else
 		datum_to_edit.token.add_filter("gloweffect", 5, list("type"="drop_shadow", "color"= "#808080", "size"=2, "offset"=1))
 
-// [CELADON-REMOVE] - CELADON_CONFIGS_MAPS - Отправляется в щитспавн по приказу Head of Maps
-// /datum/overmap_star_system/safezone/ngr
-// 	name = "Gorlex Controlled - Value of Public Works"
-// 	starname = "Ecbatana"
-// 	startype = /datum/overmap/star/dwarf
-// 	default_outpost_type = /datum/overmap/outpost/ngr_rock
+// [CELADON-REMOVE] - CELADON_CONFIGS_MAPS
+/*
+/datum/overmap_star_system/safezone/ngr
+	name = "Gorlex Controlled - Value of Public Works"
+	starname = "Ecbatana"
+	startype = /datum/overmap/star/dwarf
+	default_outpost_type = /datum/overmap/outpost/ngr_rock
 
-// 	//main colors, used for dockable terrestrials, and background
-// 	primary_color = "#d9ad82"
-// 	secondary_color = "#c48c60"
+	//main colors, used for dockable terrestrials, and background
+	primary_color = "#d9ad82"
+	secondary_color = "#c48c60"
 
-// 	//hazard colors, used for the overmap hazards and sun
-// 	hazard_primary_color = "#c13623"
-// 	hazard_secondary_color = "#943a43"
+	//hazard colors, used for the overmap hazards and sun
+	hazard_primary_color = "#c13623"
+	hazard_secondary_color = "#943a43"
 
-// 	//structure colors, used for ships and outposts/colonies
-// 	primary_structure_color = "#83db2b"
-// 	secondary_structure_color = "#21a52e"
+	//structure colors, used for ships and outposts/colonies
+	primary_structure_color = "#83db2b"
+	secondary_structure_color = "#21a52e"
 
-// 	override_object_colors = TRUE
-// 	overmap_icon_state = "overmap_dark"
+	override_object_colors = TRUE
+	overmap_icon_state = "overmap_dark"
 
-// /datum/overmap_star_system/safezone/clip
-// 	name = "CLIP Controlled - High-Pier"
-// 	starname = "Chana"
-// 	startype = /datum/overmap/star/dwarf/orange
-// 	default_outpost_type = /datum/overmap/outpost/clip_ocean
+/datum/overmap_star_system/safezone/clip
+	name = "CLIP Controlled - High-Pier"
+	starname = "Chana"
+	startype = /datum/overmap/star/dwarf/orange
+	default_outpost_type = /datum/overmap/outpost/clip_ocean
 
-// 	//main colors, used for dockable terrestrials, and background
-// 	primary_color = "#6fa8de"
-// 	secondary_color = "#96b6d4"
+	//main colors, used for dockable terrestrials, and background
+	primary_color = "#6fa8de"
+	secondary_color = "#96b6d4"
 
-// 	//hazard colors, used for the overmap hazards and sun
-// 	hazard_primary_color = "#d5e3f0"
-// 	hazard_secondary_color = "#96a6b5"
+	//hazard colors, used for the overmap hazards and sun
+	hazard_primary_color = "#d5e3f0"
+	hazard_secondary_color = "#96a6b5"
 
-// 	//structure colors, used for ships and outposts/colonies
-// 	primary_structure_color = "#97dfe8"
-// 	secondary_structure_color = "#6fa8de"
+	//structure colors, used for ships and outposts/colonies
+	primary_structure_color = "#97dfe8"
+	secondary_structure_color = "#6fa8de"
 
-// 	override_object_colors = TRUE
-// 	overmap_icon_state = "overmap_dark"
+	override_object_colors = TRUE
+	overmap_icon_state = "overmap_dark"
 
-// /datum/overmap_star_system/safezone/trifuge
-// 	name = "Independent - Minya"
-// 	starname = "Aubaine"
-// 	startype = /datum/overmap/star/medium
-// 	default_outpost_type = /datum/overmap/outpost/indie_space
+/datum/overmap_star_system/safezone/trifuge
+	name = "Independent - Minya"
+	starname = "Aubaine"
+	startype = /datum/overmap/star/medium
+	default_outpost_type = /datum/overmap/outpost/indie_space
 
-// 	//main colors, used for dockable terrestrials, and background
-// 	primary_color = "#5e5e5e"
-// 	secondary_color = "#242424"
+	//main colors, used for dockable terrestrials, and background
+	primary_color = "#5e5e5e"
+	secondary_color = "#242424"
 
-// 	//hazard colors, used for the overmap hazards and sun
-// 	hazard_primary_color = "#b56060"
-// 	hazard_secondary_color = "#824242"
+	//hazard colors, used for the overmap hazards and sun
+	hazard_primary_color = "#b56060"
+	hazard_secondary_color = "#824242"
 
-// 	//structure colors, used for ships and outposts/colonies
-// 	primary_structure_color = "#ffffff"
-// 	secondary_structure_color = "#ffffff"
+	//structure colors, used for ships and outposts/colonies
+	primary_structure_color = "#ffffff"
+	secondary_structure_color = "#ffffff"
 
-// 	override_object_colors = TRUE
-// 	overmap_icon_state = "overmap"
+	override_object_colors = TRUE
+	overmap_icon_state = "overmap"
 
-// /datum/overmap_star_system/safezone/nt
-// 	name = "Nanotrasen Controlled - Persei-277"
-// 	starname = "Persei-277"
-// 	startype = /datum/overmap/star/medium
-// 	default_outpost_type = /datum/overmap/outpost/nanotrasen_ice
+/datum/overmap_star_system/safezone/nt
+	name = "Nanotrasen Controlled - Persei-277"
+	starname = "Persei-277"
+	startype = /datum/overmap/star/medium
+	default_outpost_type = /datum/overmap/outpost/nanotrasen_ice
 
-// 	//main colors, used for dockable terrestrials, and background
-// 	primary_color = "#7e8cd9"
-// 	secondary_color = "#33324a"
+	//main colors, used for dockable terrestrials, and background
+	primary_color = "#7e8cd9"
+	secondary_color = "#33324a"
 
-// 	//hazard colors, used for the overmap hazards and sun
-// 	hazard_primary_color = "#ededed"
-// 	hazard_secondary_color = "#7f7db0"
+	//hazard colors, used for the overmap hazards and sun
+	hazard_primary_color = "#ededed"
+	hazard_secondary_color = "#7f7db0"
 
-// 	//structure colors, used for ships and outposts/colonies
-// 	primary_structure_color = "#4272db"
-// 	secondary_structure_color = "#38a0eb"
+	//structure colors, used for ships and outposts/colonies
+	primary_structure_color = "#4272db"
+	secondary_structure_color = "#38a0eb"
 
-// 	override_object_colors = TRUE
-// 	overmap_icon_state = "overmap_dark"
+	override_object_colors = TRUE
+	overmap_icon_state = "overmap_dark"
+
+/datum/overmap_star_system/safezone/thousand_eyes
+	name = "Cybersun - Kapche-Legnica"
+	starname = "Kapche-Legnica"
+	startype = /datum/overmap/star/binary
+	default_outpost_type = /datum/overmap/outpost/cybersun_gas_giant
+
+	primary_color = "#00eaff"
+	secondary_color = "#4d140f"
+
+	hazard_primary_color = "#972241"
+	hazard_secondary_color = "#71a1a9"
+
+	primary_structure_color = "#ffffff"
+	secondary_structure_color = "#ffffff"
+
+	override_object_colors = TRUE
+	overmap_icon_state = "overmap"
+*/
 // [/CELADON-REMOVE]
 
 // [CELADON-ADD] - NO_STATIC_SECTOR Опасные стартовые сектора
@@ -1253,7 +1265,6 @@ SUBSYSTEM_DEF(overmap)
 	//hazard colors, used for the overmap hazards and sun
 	hazard_primary_color = "#c13623"
 	hazard_secondary_color = "#943a43"
-
 // [/CELADON-ADD]
 
 /datum/overmap_star_system/c64

@@ -472,13 +472,6 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"mH" = (
-/obj/machinery/conveyor/auto/outpost{
-	dir = 8;
-	verted = -1
-	},
-/turf/open/floor/plasteel/tech,
-/area/hangar)
 "mV" = (
 /obj/effect/turf_decal/borderfloor,
 /obj/structure/railing/corner{
@@ -978,10 +971,7 @@
 /turf/open/floor/plasteel/tech,
 /area/hangar)
 "Bi" = (
-/obj/structure/plasticflaps/outpost,
-/obj/machinery/conveyor/auto/outpost{
-	verted = -1
-	},
+/obj/machinery/conveyor/auto/outpost,
 /turf/open/floor/plasteel/tech,
 /area/hangar)
 "BB" = (
@@ -1125,13 +1115,6 @@
 "FO" = (
 /obj/machinery/conveyor/auto/outpost,
 /obj/structure/plasticflaps/outpost,
-/turf/open/floor/plasteel/tech,
-/area/hangar)
-"FT" = (
-/obj/structure/plasticflaps/outpost,
-/obj/machinery/conveyor/auto/outpost{
-	dir = 8
-	},
 /turf/open/floor/plasteel/tech,
 /area/hangar)
 "Gg" = (
@@ -4856,7 +4839,7 @@ al
 "}
 (71,1,1) = {"
 ag
-FT
+cr
 ag
 ag
 tE
@@ -4898,7 +4881,7 @@ al
 "}
 (72,1,1) = {"
 ag
-mH
+cr
 Dr
 ag
 KH
