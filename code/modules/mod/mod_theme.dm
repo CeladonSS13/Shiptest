@@ -968,7 +968,7 @@
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	siemens_coefficient = 0
 	charge_drain = DEFAULT_CHARGE_DRAIN // [CELADON-ADD] - CELADON_MODSUITS
-	slowdown_inactive = 0.5
+	slowdown_inactive = 0.3 // [CELADON-EDIT] - CELADON_MODSUITS - // slowdown_inactive = 0.5
 	slowdown_active = 0
 	allowed_suit_storage = list(
 		/obj/item/flashlight,
