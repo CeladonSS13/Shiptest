@@ -189,7 +189,7 @@
 /datum/supply_pack/faction/independent/modsuits/modules/bola_dispenser
 	name = "MOD bola dispenser Module"
 	desc = "Contains a module that create energy bolas. Amazing."
-	cost = 2000
+	cost = 1500
 	contains = list(/obj/item/mod/module/dispenser/bola)
 
 /datum/supply_pack/faction/independent/modsuits/modules/emp_shield
@@ -201,15 +201,14 @@
 //MARK: Armor boosters
 /datum/supply_pack/faction/independent/modsuits/modules/armor_booster_civilian
 	name = "MOD civilian armor booster Module"
-	desc = "Contains an advanced armor booster module that significantly increases the user's movement speed and suit's protection while active. Manufactured by Cybersun Biodynamics. \n\
-			WARNING: It can't be used on non-cilivian version of MODsuits."
+	desc = "Contains an advanced armor booster module that significantly increases the user's movement speed and suit's protection while active. Manufactured by Cybersun Biodynamics."
 	cost = 1500
 	contains = list(/obj/item/mod/module/armor_booster/civilian)
 
 /datum/supply_pack/faction/independent/modsuits/modules/armor_booster_light
 	name = "MOD light armor booster Module"
 	desc = "Contains an advanced armor booster module that lightly increases suit's protection while active. Manufactured by Cybersun Biodynamics."
-	cost = 2500
+	cost = 1500
 	contains = list(/obj/item/mod/module/armor_booster/light)
 
 
@@ -341,6 +340,20 @@
 	desc = "Contains a strange module invented years ago by some ingenious mimes. It blows balloons."
 	cost = 2000 // lmao
 	contains = list(/obj/item/mod/module/balloon)
+
+// MARK: Paint
+
+/datum/supply_pack/faction/independent/modsuits/paint
+	name = "MOD Paint Kit"
+	desc = "Contains a MOD paint kit, especially designed for designing your own unique MODsuit paint (all rights reserved. Any attempt to violate the license agreement and copyright is punishable by law)." // design for designing, it's a feature
+	cost = 100
+	contains = list(/obj/item/mod/paint)
+
+/datum/supply_pack/faction/independent/modsuits/skin_applier
+	name = "MOD skin applier"
+	desc = "Contains a MOD skin applier, created to modify your MODsuit to (not) look like one of the any other! (All rights reserved. Any attempt to violate the license agreement and copyright is punishable by law)."
+	cost = 100
+	contains = list(/obj/item/mod/skin_applier)
 
 // MARK: MILTECH
 /datum/supply_pack/faction/independent/modsuits/military_tech
