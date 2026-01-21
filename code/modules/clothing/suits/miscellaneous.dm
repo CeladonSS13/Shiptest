@@ -294,7 +294,7 @@
 	desc = "A long, utilitarian leather coat. Ideal for protecting its wearer from rain, sun, and dust."
 	icon_state = "armor_duster"
 	item_state = "armor_duster"
-    supports_variations = VOX_VARIATION
+	supports_variations = VOX_VARIATION
 
 /obj/item/clothing/suit/jacket/leather/duster/command
 	name = "officer's duster"
