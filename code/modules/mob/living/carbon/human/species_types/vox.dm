@@ -95,7 +95,13 @@
 							"[NORTH]" = list("x" = 8, "y" = 0),
 							"[EAST]" = list("x" = 8, "y" = 0),
 							"[SOUTH]" = list("x" = 8, "y" = 0),
-							"[WEST]" = list("x" =  -8, "y" = 0)
+							"[WEST]" = list("x" =  -8, "y" = 0),
+							),
+		"[BACK_LAYER]" = list(
+							"[NORTH]" = list("x" = 8, "y" = 0),
+							"[EAST]" = list("x" = 16, "y" = 0),
+							"[SOUTH]" = list("x" = 8, "y" = 0),
+							"[WEST]" = list("x" =  0, "y" = 0)
 							),
 	)
 

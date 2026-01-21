@@ -368,10 +368,10 @@
 
 	var/icon/human_clothing_icon = icon(file2use, state2use)
 
-	if("[layer]" in mob_species.offset_clothing)
+	var/list/shifts = get_species_worn_offsets(layer, mob_species)	// [CELADON-EDIT] - Get species-specific offsets
+	if(shifts)														// [/CELADON-EDIT]
 		// This code taken from Baystation 12
 		var/icon/final_I = icon('icons/blanks/64x64.dmi', "nothing")
-		var/list/shifts = mob_species.offset_clothing["[layer]"]
 
 		// Apply all pixel shifts for each direction.
 		for(var/shift_facing in shifts)
