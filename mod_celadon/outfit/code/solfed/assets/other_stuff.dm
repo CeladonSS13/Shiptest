@@ -163,7 +163,7 @@
 	item_state = "elysium_brigade_webbing"
 	resistance_flags = FIRE_PROOF
 
-//helmets & hats lol
+//helmets & hats
 /obj/item/clothing/head/solfed/beret
 	name = "SolFed Formal beret"
 	desc = "This is beret is used by Solar Federation's officers. It's colored dark blue. It has the Solar Federation flag on the front."
