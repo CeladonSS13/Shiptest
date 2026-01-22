@@ -241,7 +241,7 @@
 	mob_overlay_icon = 'icons/mob/clothing/faction/solgov/suits.dmi'
 	icon_state = "armor_solgov_trenchcoat"
 	item_state = "trenchcoat_solgov"
-	armor = list("melee" = 25, "bullet" = 10, "laser" = 25, "energy" = 10, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 25, "bullet" = 10, "laser" = 25, "energy" = 10, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)  // [CELADON-EDIT] - CELADON_BALANCE
 	cold_protection = CHEST|LEGS|ARMS
 	heat_protection = CHEST|LEGS|ARMS
 	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON

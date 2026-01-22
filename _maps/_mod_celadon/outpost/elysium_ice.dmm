@@ -51,10 +51,7 @@
 	dir = 8;
 	color = "#808080"
 	},
-/obj/structure/table/reinforced,
-/obj/machinery/microwave{
-	pixel_y = 18
-	},
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/canteen)
 "acv" = (
@@ -5842,7 +5839,6 @@
 /obj/structure/closet/crate/trashcart,
 /obj/item/spacecash/bundle/c10,
 /turf/open/floor/plasteel/dark,
-/area/space,
 /area/outpost/cargo/faction/all/zone_2)
 "dpX" = (
 /obj/structure/closet/crate/large,
@@ -7792,7 +7788,6 @@
 /obj/structure/closet/crate/trashcart,
 /obj/item/spacecash/bundle/c10,
 /turf/open/floor/plasteel/dark,
-/area/space,
 /area/outpost/cargo/faction/all/zone_1)
 "eoa" = (
 /obj/structure/cable{
@@ -9409,16 +9404,14 @@
 	color = "#808080"
 	},
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/condiment/enzyme{
-	pixel_x = -2;
+/obj/item/book/manual/chef_recipes{
+	pixel_x = -4;
 	pixel_y = 6
 	},
-/obj/item/reagent_containers/condiment/enzyme{
-	pixel_x = 7;
-	pixel_y = 6
+/obj/item/kitchen/rollingpin,
+/obj/item/melee/knife/kitchen{
+	pixel_x = 7
 	},
-/obj/item/reagent_containers/glass/beaker,
-/obj/item/reagent_containers/condiment/enzyme,
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/canteen)
 "fiU" = (
@@ -20927,6 +20920,22 @@
 	color = "#808080"
 	},
 /obj/structure/table/reinforced,
+/obj/item/reagent_containers/condiment/enzyme{
+	pixel_x = -7;
+	pixel_y = 15
+	},
+/obj/item/reagent_containers/condiment/enzyme{
+	pixel_x = -2;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/condiment/enzyme{
+	pixel_x = -12;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = 10;
+	pixel_y = 3
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/canteen)
 "lxU" = (
@@ -24655,7 +24664,7 @@
 	},
 /obj/item/reagent_containers/glass/bottle,
 /obj/machinery/processor{
-	pixel_y = 21
+	pixel_y = 13
 	},
 /obj/effect/turf_decal/corner/opaque/neutral/mono,
 /turf/open/floor/plasteel/white,
@@ -31107,7 +31116,6 @@
 /obj/effect/turf_decal/corner/opaque/yellow/full,
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel/dark,
-/area/space,
 /area/outpost/cargo/faction/all/zone_1)
 "qYV" = (
 /obj/structure/chair/bench/grey/directional/west,
@@ -34484,12 +34492,6 @@
 /obj/machinery/newscaster/directional/south,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/checkpoint)
-"sSO" = (
-/obj/effect/turf_decal/corner/opaque/yellow/full,
-/obj/effect/turf_decal/industrial/hatch/yellow,
-/turf/open/floor/plasteel/dark,
-/area/space,
-/area/outpost/cargo/faction/all/zone_2)
 "sSP" = (
 /obj/structure/chair/sofa/blue/right,
 /turf/open/floor/carpet/royalblack,
@@ -36577,9 +36579,7 @@
 	color = "#808080"
 	},
 /obj/structure/table/reinforced,
-/obj/machinery/microwave{
-	pixel_y = 3
-	},
+/obj/machinery/oven,
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/canteen)
 "uap" = (
@@ -43229,14 +43229,8 @@
 	dir = 1;
 	color = "#808080"
 	},
-/obj/item/kitchen/rollingpin,
-/obj/item/book/manual/chef_recipes{
-	pixel_x = -4;
-	pixel_y = 6
-	},
-/obj/item/melee/knife/kitchen{
-	pixel_y = 6;
-	pixel_x = 9
+/obj/machinery/microwave{
+	pixel_y = 10
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/canteen)
@@ -75426,7 +75420,7 @@ rfa
 kyQ
 cIr
 teB
-sSO
+njJ
 rfa
 rfa
 rfa

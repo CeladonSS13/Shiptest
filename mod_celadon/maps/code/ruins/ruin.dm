@@ -1061,11 +1061,19 @@
 //							///
 //		MARK: Moon
 //							///
+/datum/map_template/ruin/moon/moon_hideout
+	id = "moon_hideout"
+	name = "Moon Hideout"
+	description = "An abandoned SolFed refining base lost to crystal infestation and the Frontiersmen. Home to a great vein of hydrogen ice."
+	suffix = "moon_ramzi_hideout.dmm"
+	cost = 3
 
-
-
-
-
+/datum/map_template/ruin/moon/moon_moonbase
+	id = "moon_base"
+	name = "Moon Base"
+	description = "A makeshift ramzi hideout in a cave, holding a smaller garrison."
+	suffix = "moon_frontiers_moonbase.dmm"
+	cost = 4
 
 //							///
 //		MARK: Desert

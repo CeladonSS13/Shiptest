@@ -246,7 +246,7 @@
 	desc = "A well-armored helmet utilized by the New Gorlex Republic's 2nd Battlegroup, far better at protecting one's head than the softer caps."
 	icon = 'icons/obj/clothing/faction/ngr/head.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/faction/ngr/head.dmi'
-	armor = list("melee" = 40, "bullet" = 60, "laser" = 35, "energy" = 35, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50) // The guys who specialize in ballistics would probably have better bullet armor. Maybe.
+	armor = list("melee" = 40, "bullet" = 60, "laser" = 35, "energy" = 35, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 20) // [CELADON-EDIT] - CELADON_BALANCE - комменты дальше от оффов // The guys who specialize in ballistics would probably have better bullet armor. Maybe.
 	icon_state = "ngr_x11"
 	item_state = "ngr_x11"
 	can_flashlight = TRUE

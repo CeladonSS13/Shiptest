@@ -171,6 +171,7 @@
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/overlay/headsf.dmi'
 	icon_state = "solfed_beret"
 	item_state = "solfed_beret"
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35,"energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 20)
 
 /obj/item/clothing/head/solfed/beret/elysium
 	name = "Elysium Brigade beret"

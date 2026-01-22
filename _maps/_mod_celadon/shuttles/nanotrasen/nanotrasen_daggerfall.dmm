@@ -2,6 +2,13 @@
 "ab" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/visible,
 /obj/machinery/door/airlock/external,
+/obj/docking_port/mobile{
+	dir = 2;
+	launch_status = 0;
+	name = "Daggerfall-class";
+	port_direction = 8;
+	preferred_direction = 4
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/storage)
 "af" = (
@@ -3574,15 +3581,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
-"Rv" = (
-/obj/docking_port/mobile{
-	dir = 4;
-	launch_status = 0;
-	preferred_direction = 4;
-	port_direction = 2
-	},
-/turf/open/floor/engine/hull,
-/area/ship/external)
 "RE" = (
 /obj/effect/turf_decal/trimline/opaque/orange/warning{
 	dir = 5
@@ -4414,7 +4412,7 @@ aU
 aU
 Lg
 hA
-Rv
+aU
 bP
 vO
 aU

@@ -280,6 +280,7 @@
 
 // Hats //
 
+// [CELADON-EDIT] - CELADON_BALANCE - броня /obj/item/clothing/head/nanotrasen переопределена в mod_celadon\balance\code\items.dm
 /obj/item/clothing/head/nanotrasen
 	name = "blue flatcap"
 	desc = "A simple blue flat cap with a Nanotrasen logo on the side. Not standard uniform, but occasionally worn by Nanotrasen office workers."
