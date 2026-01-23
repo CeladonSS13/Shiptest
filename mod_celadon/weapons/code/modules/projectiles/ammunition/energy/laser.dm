@@ -9,17 +9,17 @@
 /obj/item/ammo_casing/energy/laser/ultima
 	projectile_type = /obj/projectile/beam/laser/iot
 	fire_sound = 'sound/weapons/laser4.ogg'
-	pellets = 3 //now actually working like an eshotgun, and not a shitty bursting egun
-	variance = 30
-	e_cost = 1250
+	pellets = 6 //now actually working like an eshotgun, and not a shitty bursting egun
+	variance = 35
+	e_cost = 1428
 	select_name = "kill"
 
 /obj/item/ammo_casing/energy/disabler/scatter/ultima
 	projectile_type = /obj/projectile/beam/disabler/iot
 	select_name = "disable"
-	pellets = 4
-	variance = 25
-	e_cost = 1000
+	pellets = 6
+	variance = 35
+	e_cost = 1428
 
 ////////////
 //etar SMG egun
