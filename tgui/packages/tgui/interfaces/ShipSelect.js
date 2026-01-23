@@ -59,7 +59,7 @@ export const ShipSelect = (props, context) => {
   };
   const [shownTabs, setShownTabs] = useLocalState(context, 'tabs', [
     { name: 'Ship Select', tab: 1 },
-    { name: 'Ship Purchase', tab: 4 },
+    { name: 'Ship Purchase', tab: 3 },
   ]);
   const searchFor = (searchText) =>
     createSearch(searchText, (thing) => thing.name);
