@@ -340,12 +340,12 @@
 			give_madness(humanc, GLOB.curse_of_madness_triggered)
 		if(CONFIG_GET(flag/roundstart_traits))
 			SSquirks.AssignQuirks(humanc, humanc.client, TRUE)
-		
+
 		if(anomalyloadout)
 			if(istext(anomalyloadout))
 				anomalyloadout = text2path(anomalyloadout)
 			var/datum/anomalyloadout/AL = new anomalyloadout(humanc)
-			humanc.set_sleeping(6000) // give them 10 minutes to do loadout stuff, ended early once they click done 
+			humanc.set_sleeping(6000) // give them 10 minutes to do loadout stuff, ended early once they click done
 			AL.ui_interact(humanc)
 
 	GLOB.joined_player_list += character.ckey

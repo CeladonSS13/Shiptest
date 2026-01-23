@@ -59,12 +59,14 @@ export const ShipSelect = (props, context) => {
   };
   const [shownTabs, setShownTabs] = useLocalState(context, 'tabs', [
     { name: 'Ship Select', tab: 1 },
-    { name: 'Ship Purchase', tab: 3 },
+    { name: 'Ship Purchase', tab: 4 },
   ]);
   const searchFor = (searchText) =>
     createSearch(searchText, (thing) => thing.name);
 
   const [searchText, setSearchText] = useLocalState(context, 'searchText', '');
+
+  const [selectedRole, setSelectedRole] = useLocalState(context, 'selectedRole', null);
 
   return (
     <Window
