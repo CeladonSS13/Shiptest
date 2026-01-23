@@ -364,7 +364,6 @@
 			"faction" = FALSE,
 		)
 
-
 /datum/anomalyloadout/proc/initIndieDrip()
 		GLOB.anomaly_loadout_drip_indie[/obj/item/clothing/shoes/sneakers/black] = list(
 				"name" = "black shoes",
@@ -477,6 +476,7 @@
 			"faction" = FALSE,
 		)
 
+/datum/anomalyloadout/proc/initIndieHats()
 /datum/anomalyloadout/proc/initIndieUtility()
 
 		GLOB.anomaly_loadout_utility_indie[/obj/item/clothing/head/helmet/space/eva] = list(
@@ -729,12 +729,6 @@
 			"price" = 200,
 			"faction" = FALSE,
 	)
-	GLOB.anomaly_loadout_medical_indie[/obj/item/storage/pill_bottle/mining] = list(
-			"name" = "physical patches bottle",
-			"desc" = "contains a patch of silver sulf and 3 styptic acid",
-			"price" = 200,
-			"faction" = FALSE,
-	)
 	GLOB.anomaly_loadout_medical_indie[/obj/item/defibrillator/loaded] = list(
 			"name" = "defibrillator",
 			"desc" = "cracklepads!",
@@ -777,12 +771,6 @@
 	)
 
 /datum/anomalyloadout/syndicate/proc/initSyndieWeapons()
-	GLOB.anomaly_loadout_weaponoptions_syndie[/obj/item/storage/guncase/pistol/himehabu] = list(
-			"name" = "PC-81 \"Himehabu\"",
-			"desc" = "An astonishingly compact machine pistol firing ultra-light projectiles, designed to be as small and concealable as possible while remaining a credible threat at very close range. Armor penetration is practically non-existent. Chambered in .22.",
-			"price" = 250,
-			"faction" = TRUE,
-	)
 	GLOB.anomaly_loadout_weaponoptions_syndie[/obj/item/storage/guncase/pistol/pc76] = list(
 			"name" = "PC-76 \"Ringneck\"",
 			"desc" = "A compact handgun used by most Syndicate-affiliated groups. Small enough to conceal in most pockets, making it popular for covert elements and simply as a compact defensive weapon. Chambered in 10x22mm.",

@@ -81,7 +81,7 @@
 				return
 
 			// Attempts the spawn itself. This checks for playtime requirements.
-			if(!spawnee.AttemptLateSpawn(selected_job, target))
+			if(!spawnee.AttemptLateSpawn(selected_job, target, anomalyloadout = selected_job.anomalyLoadout))
 				to_chat(spawnee, span_danger("Невозможно появиться на корабле!"))
 				spawnee.new_player_panel()
 
@@ -150,7 +150,8 @@
 			SSblackbox.record_feedback("tally", "faction_ship_purchased", 1, template.faction.name)
 			// Try to spawn as the first listed job in the job slots (usually captain)
 			// Playtime checks are overridden, to ensure the player gets to join the ship they spawned.
-			if(!spawnee.AttemptLateSpawn(target.job_slots[1], target, FALSE))
+			var/datum/job/jobbie =target.job_slots[1]
+			if(!spawnee.AttemptLateSpawn(jobbie, target, FALSE, jobbie.anomalyLoadout)
 				to_chat(spawnee, span_danger("Ship spawned, but you were unable to be spawned. You can likely try to spawn in the ship through joining normally, but if not, please contact an admin."))
 				spawnee.new_player_panel()
 
