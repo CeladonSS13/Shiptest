@@ -150,8 +150,8 @@
 			SSblackbox.record_feedback("tally", "faction_ship_purchased", 1, template.faction.name)
 			// Try to spawn as the first listed job in the job slots (usually captain)
 			// Playtime checks are overridden, to ensure the player gets to join the ship they spawned.
-			var/datum/job/jobbie =target.job_slots[1]
-			if(!spawnee.AttemptLateSpawn(jobbie, target, FALSE, jobbie.anomalyLoadout)
+			var/datum/job/jobbie = target.job_slots[1]
+			if(!spawnee.AttemptLateSpawn(jobbie, target, FALSE, jobbie.anomalyLoadout))
 				to_chat(spawnee, span_danger("Ship spawned, but you were unable to be spawned. You can likely try to spawn in the ship through joining normally, but if not, please contact an admin."))
 				spawnee.new_player_panel()
 
