@@ -723,8 +723,8 @@
 	addtimer(VARSET_CALLBACK(src, cooldown, FALSE), 3 SECONDS)
 
 /obj/item/toy/plush/celadon/shardplushie/attack(mob/M as mob, mob/user as mob)
-    playsound(loc, pick('mod_celadon/_storage_sounds/sound/plushes/supermatter.ogg', 'mod_celadon/_storage_sounds/sound/plushes/glass_step_sm.ogg',), 10, 1)
-    return ..()
+	playsound(loc, pick('mod_celadon/_storage_sounds/sound/plushes/supermatter.ogg', 'mod_celadon/_storage_sounds/sound/plushes/glass_step_sm.ogg',), 10, 1)
+	return ..()
 
 /obj/item/toy/plush/celadon/hampter
 	name = "hampter"
