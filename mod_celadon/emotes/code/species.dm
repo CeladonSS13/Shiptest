@@ -249,8 +249,8 @@
 	autohiss_exempt = list("Vox-pidgin")
 
 	scream_verb = "скрипит"
-	male_scream_sound = 'mod_celadon/_storage_sounds/sound/plushes/emotes/voxscream.ogg')
-	female_scream_sound = 'mod_celadon/_storage_sounds/sound/plushes/emotes/voxscream.ogg')
+	male_scream_sound = 'mod_celadon/_storage_sounds/sound/plushes/emotes/voxscream.ogg'
+	female_scream_sound = 'mod_celadon/_storage_sounds/sound/plushes/emotes/voxscream.ogg'
 	suicide_messages = list(
 		"пытается откусить себе язык!",
 		"вонзает когти себе в глазницы!",
