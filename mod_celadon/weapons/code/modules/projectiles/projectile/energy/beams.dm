@@ -185,7 +185,7 @@
 
 /obj/projectile/beam/laser/iot
 	icon_state = "red_laser"
-	damage = 15
+	damage = 20
 	armour_penetration = -10
 	range = 15
 
