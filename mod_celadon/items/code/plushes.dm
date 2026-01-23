@@ -1002,7 +1002,7 @@
 
 /obj/item/toy/plush/celadon/brigadier_general
 	name = "Brigadier general Gold"
-	desc = "Эта игрушка была сделана в честь бригадного генерала ТМИ, погибшего в одном из самого ожесточенного планетарного боя Великой межсистемной войны \
+	desc = "Эта игрушка была сделана в честь бригадного генерала ТМИ, погибшего в одном из самого ожесточенного планетарного боя \
 	Великой межсистемной войны. На задней части игрушки имеется бирка с надписью: \"Важно дойти до конца!\"."
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/plushes_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/plushes_righthand.dmi'
