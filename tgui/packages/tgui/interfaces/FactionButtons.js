@@ -60,9 +60,9 @@ const CENTRAL_FACTION = {
 
 // Легенда типов отношений
 const RELATION_TYPES = {
-  union: { name: 'Союз', color: '#2ECC71' }, // Зеленый
-  neutral: { name: 'Нейтральные', color: '#ffd902' }, // Серый
-  war: { name: 'Война', color: '#FF0000' }, // Красный
+  union: { name: 'Союз', color: '#2ECC71' },
+  neutral: { name: 'Нейтральные', color: '#ffd902' },
+  war: { name: 'Война', color: '#FF0000' },
 };
 
 // Полная система отношений между всеми 7 фракциями (21 линия)
