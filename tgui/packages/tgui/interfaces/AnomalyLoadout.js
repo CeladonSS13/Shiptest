@@ -70,7 +70,7 @@ export const AnomalyLoadout = (props, context) => {
 
 
 
-  
+
   return(
     <Window title="Anomaly Loadout" width={800} height={600} resizable>
       <Window.Content scrollable>
@@ -103,7 +103,7 @@ export const AnomalyLoadout = (props, context) => {
             Buyable Items  <Input placeholder="Search..." autoFocus value={searchText} onInput={(_, value) => setSearchText(value.toLowerCase())} />
               {/*
                 JSON.stringify(weaponSlop, null, 2)
-              // WEAPONS 
+              // WEAPONS
               */}
               <Collapsible title="Weapons">
                 {weaponSlop.map(([key, item]) => (
@@ -130,7 +130,7 @@ export const AnomalyLoadout = (props, context) => {
                 }
               </Collapsible>
               {
-              // ARMOR 
+              // ARMOR
               }
               <Collapsible title="Armor">
                 {armorSlop.map(([key, item]) => (
@@ -157,7 +157,7 @@ export const AnomalyLoadout = (props, context) => {
                 }
               </Collapsible>
               {
-              // DRIP 
+              // DRIP
               }
               <Collapsible title="Shoes">
                 {dripSlop.map(([key, item]) => (
@@ -184,7 +184,7 @@ export const AnomalyLoadout = (props, context) => {
                 }
               </Collapsible>
               {
-              // HATS 
+              // HATS
               }
               <Collapsible title="hats">
                 {hatsSlop.map(([key, item]) => (
@@ -211,7 +211,7 @@ export const AnomalyLoadout = (props, context) => {
                 }
               </Collapsible>
               {
-              // UTILITY 
+              // UTILITY
               }
               <Collapsible title="utility">
                 {utilitySlop.map(([key, item]) => (
@@ -238,7 +238,7 @@ export const AnomalyLoadout = (props, context) => {
                 }
               </Collapsible>
               {
-              // ENGINEERING 
+              // ENGINEERING
               }
               <Collapsible title="engineering">
                 {engineeringSlop.map(([key, item]) => (
@@ -265,7 +265,7 @@ export const AnomalyLoadout = (props, context) => {
                 }
               </Collapsible>
               {
-              // MEDICAL 
+              // MEDICAL
               }
               <Collapsible title="medical">
                 {medicalSlop.map(([key, item]) => (
@@ -295,13 +295,14 @@ export const AnomalyLoadout = (props, context) => {
         </Flex>
       </Section>
       <Section>
-        <Button content="Done!" onClick={() => {
+        <Button.Confirm
+         content="Done!" onClick={() => {
                           act('done', {
                           });
                         }}
          />
       </Section>
-        
+
       </Window.Content>
     </Window>
   );
