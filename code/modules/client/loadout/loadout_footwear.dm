@@ -13,7 +13,7 @@
 	display_name = "wooden sandals"
 	path = /obj/item/clothing/shoes/sandal
 
-/*datum/gear/footwear/winterboots
+/datum/gear/footwear/winterboots
 	display_name = "winter boots"
 	path = /obj/item/clothing/shoes/winterboots
 
@@ -34,7 +34,7 @@
 	path = /obj/item/clothing/shoes/heels
 
 //Sneakers
-*/
+
 /datum/gear/footwear/color
 	subtype_path = /datum/gear/footwear/color
 
@@ -44,7 +44,7 @@
 
 //Cowboy boots
 
-/*/datum/gear/footwear/cowboy
+/datum/gear/footwear/cowboy
 	display_name = "cowboy boots, brown"
 	path = /obj/item/clothing/shoes/cowboy
 
@@ -55,4 +55,3 @@
 /datum/gear/footwear/cowboy/white
 	display_name = "cowboy boots, white"
 	path = /obj/item/clothing/shoes/cowboy/white
-*/
