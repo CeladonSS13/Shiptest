@@ -153,18 +153,24 @@
 	contains = list(/obj/item/mod/module/storage/large_capacity)
 	cost = 700 // backpack+
 
+/datum/supply_pack/faction/independent/modsuits/plate_compression
+	name = "MOD plate compression module"
+	desc = "A module that keeps the suit in a very tightly fit state, lowering the overall size as well as increasing its wearing speed. Typical storage modules do not fit with this module."
+	contains = list(/obj/item/mod/module/plate_compression)
+	cost = 500 // Не очень полезный модуль, но интересно будет если кто-то через него отыгрывать будет
+
 // MARK: MOVEMENT
 /datum/supply_pack/faction/independent/modsuits/modules/dash
 	name = "MOD D.A.S.H. Module"
 	desc = "Contains an advanced movement module that launches MOD operator forward. Is usually used by InteQ elite operatives."
-	cost = 4000
+	cost = 3000
 	contains = list(/obj/item/mod/module/dash)
 
 /datum/supply_pack/faction/independent/modsuits/modules/armor_assist
 	name = "MOD armor assist Module"
 	desc = "Contains an advanced overdrive module that significantly increases the user's movement speed while active, at the cost of massive energy consumption. Manufactured by Cybersun Biodynamics for PMCs. \n\
 			WARNING: using it with armor assist is extreme for the suit's power grid."
-	cost = 4000
+	cost = 3000
 	contains = list(/obj/item/mod/module/armor_assist)
 
 // MARK: SECURITY

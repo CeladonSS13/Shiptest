@@ -44,7 +44,7 @@
 	name = "MOD armor assist Module"
 	desc = "Contains an advanced overdrive module that significantly increases the user's movement speed while active, at the cost of massive energy consumption. Manufactured by Cybersun Biodynamics for PMCs. \n\
 			WARNING: using it with armor assist is extreme for the suit's power grid."
-	cost = 4000
+	cost = 3000
 	contains = list(/obj/item/mod/module/armor_assist)
 
 /datum/supply_pack/faction/inteq/modsuits/modules/shield_inteq
@@ -56,14 +56,20 @@
 /datum/supply_pack/faction/inteq/modsuits/modules/dash
 	name = "MOD D.A.S.H. Module"
 	desc = "Contains an advanced movement module that launches MOD operator forward. Is usually used by InteQ elite operatives."
-	cost = 2500 // Такая же логика, что и у армор ассиста. Только в отличие от армор ассиста, у интеков изначально щит
+	cost = 1500 // Такая же логика, что и у армор ассиста.
 	contains = list(/obj/item/mod/module/dash)
 
 /datum/supply_pack/faction/inteq/modsuits/modules/mirage
 	name = "MOD mirage grenade dispenser module"
 	desc = "This module can create mirage grenades at the user's liking. These grenades create holographic copies of the user."
-	cost = 5000 // he-he
+	cost = 2000 // he-he. Оказались не очень полезными.
 	contains = list(/obj/item/mod/module/dispenser/mirage)
+
+/datum/supply_pack/faction/inteq/modsuits/modules/mirage/moving
+	name = "MOD mirage grenade dispenser module"
+	desc = "This module can create mirage grenades at the user's liking. These grenades create moving holographic copies of the user."
+	cost = 4000 // he-he
+	contains = list(/obj/item/mod/module/dispenser/mirage/moving)
 
 // MARK: mod control
 /datum/supply_pack/faction/inteq/modsuits/complete
@@ -129,7 +135,7 @@
 	name = "MOD armor assist Module"
 	desc = "Contains an advanced overdrive module that significantly increases the user's movement speed while active, at the cost of massive energy consumption. Manufactured by Cybersun Biodynamics for PMCs. \n\
 			WARNING: using it with armor assist is extreme for the suit's power grid."
-	cost = 4000
+	cost = 3000
 	contains = list(/obj/item/mod/module/armor_assist)
 
 /datum/supply_pack/faction/nanotrasen/modsuits/modules/power_kick
@@ -141,8 +147,14 @@
 /datum/supply_pack/faction/nanotrasen/modsuits/modules/mirage
 	name = "MOD mirage grenade dispenser module"
 	desc = "This module can create mirage grenades at the user's liking. These grenades create holographic copies of the user."
-	cost = 5000 // he-he
+	cost = 2000 // he-he
 	contains = list(/obj/item/mod/module/dispenser/mirage)
+
+/datum/supply_pack/faction/nanotrasen/modsuits/modules/mirage/moving
+	name = "MOD mirage grenade dispenser module"
+	desc = "This module can create mirage grenades at the user's liking. These grenades create moving holographic copies of the user."
+	cost = 4000 // he-he
+	contains = list(/obj/item/mod/module/dispenser/mirage/moving)
 
 // MARK: mod control
 /datum/supply_pack/faction/nanotrasen/modsuits/complete
@@ -228,9 +240,9 @@
 /datum/supply_pack/faction/solfed/modsuits/modules/mirage_moving
 	name = "MOD moving mirage grenade dispenser module"
 	desc = "This module can create mirage grenades at the user's liking. These grenades create moving holographic copies of the user."
-	cost = 7000 // he-he
+	cost = 4000 // he-he
 	contains = list(/obj/item/mod/module/dispenser/mirage/moving)
-
+// TO-DO: сделать вариацию, которая спавнит сразу группу целую
 /datum/supply_pack/faction/solfed/modsuits/modules/blood_replika
 	name = "MOD blood replika module"
 	desc = "When the suit is activated, it connects the user's circulatory system to a life support, \
@@ -258,7 +270,7 @@
 	name = "MOD armor assist Module"
 	desc = "Contains an advanced overdrive module that significantly increases the user's movement speed while active, at the cost of massive energy consumption. Manufactured by Cybersun Biodynamics for PMCs. \n\
 			WARNING: using it with armor assist is extreme for the suit's power grid."
-	cost = 4000
+	cost = 3000
 	contains = list(/obj/item/mod/module/armor_assist)
 
 // MARK: mod control
@@ -310,7 +322,7 @@
 /datum/supply_pack/faction/syndicate/modsuits/modules/mirage
 	name = "MOD mirage grenade dispenser module"
 	desc = "This module can create mirage grenades at the user's liking. These grenades create holographic copies of the user."
-	cost = 5000 // he-he
+	cost = 2000 // he-he
 	contains = list(/obj/item/mod/module/dispenser/mirage)
 
 /datum/supply_pack/faction/syndicate/modsuits/modules/storage
@@ -357,7 +369,7 @@
 	name = "MOD advanced armor assist Module"
 	desc = "Contains an way more advanced overdrive module that significantly increases the user's movement speed while active, at the cost of high energy consumption, which is not increased with the suit slowdown. Manufactured by Cybersun Biodynamics for PMCs. \n\
 			WARNING: using it with armor assist is extreme for the suit's power grid."
-	cost = 3500
+	cost = 3000
 	contains = list(/obj/item/mod/module/armor_assist/advanced)
 
 // MARK: mod control
