@@ -56,6 +56,7 @@
 	do_sparks(rand(3, 6), FALSE, src)
 	if(thrower)
 		var/mob/living/simple_animal/hostile/illusion/mirage = new spawned_mob(get_turf(src))
+		// mirage.speed = thrower.cached_multiplicative_slowdown
 		mirage.Copy_Parent(thrower, spawn_time)
 	qdel(src)
 
@@ -64,6 +65,7 @@
 	density = FALSE
 
 /mob/living/simple_animal/hostile/illusion/escape/mirage
+	move_to_delay = 2
 	retreat_distance = 5
 	minimum_distance = 5
 	density = FALSE
