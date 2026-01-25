@@ -448,8 +448,6 @@
 				. += "[base_state]-o40"
 			if(0.145 to 0.395)
 				. += "[base_state]-o20"
-			else
-				return .
 	else
 		switch(charge/maxcharge)
 			if(0.995 to 1)
@@ -460,8 +458,7 @@
 				. += "[initial(icon_state)]-o2"
 			if(0.145 to 0.495)
 				. += "[initial(icon_state)]-o1"
-			else
-				return .
+	return .
 // [/CELADON-EDIT]
 
 /obj/item/stock_parts/cell/gun/upgraded
