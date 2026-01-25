@@ -448,6 +448,35 @@
 		"MOD Modules", "Security Modules"
 	)
 
+/datum/design/module/mod_civilian_armor_booster
+	name = "Cilivian Armor Booster Module"
+	id = "mod_civilian_armor_booster"
+	materials = list(
+		/datum/material/iron=1500,
+		/datum/material/titanium=1500,
+		/datum/material/uranium=500,
+		/datum/material/glass=2000,
+		/datum/material/gold=500,
+		/datum/material/plasma=1500,
+	)
+	build_path = /obj/item/mod/module/armor_booster/civilian
+	category = list(
+		"MOD Modules", "Security Modules"
+	)
+
+/datum/design/module/plate_compression
+	name = "Plate Compression Module"
+	id = "plate_compression"
+	materials = list(
+		/datum/material/iron=1500,
+		/datum/material/titanium=1500,
+		/datum/material/plasma=1500,
+	)
+	build_path = /obj/item/mod/module/armor_booster/civilian
+	category = list(
+		"MOD Modules", "Security Modules"
+	)
+
 /datum/design/module/mod_tether
 	name = "Emergency Tether Module"
 	id = "mod_tether"
