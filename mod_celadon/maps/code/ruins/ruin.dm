@@ -103,6 +103,21 @@
 	suffix = "beach_bunkers.dmm"
 	cost = 2
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
+
+/datum/map_template/ruin/beachplanet/frontie_moat
+	name = "Frontiersmen Moat"
+	id = "frontie_moat"
+	description = "A frontiersman-built moat village. Not the worst place to live."
+	suffix = "beach_surface_frontie_moat.dmm"
+	cost = 3
+
+/datum/map_template/ruin/beachplanet/gunsmith
+	name = "Ramzi Gunsmith"
+	id = "gunsmith"
+	description = "A decadent gunsmithing den jointly owned by an outfit of the Ramzi Clique and a corrupt NGR official. Hidden within a cave."
+	suffix = "beach_underground_gunsmith.dmm"
+	cost = 3
+
 //							///
 //		MARK: Icemoon
 //							///
