@@ -417,15 +417,15 @@
 		return
 	to_chat(wearer, span_notice("[severity > 1 ? "Light" : "Strong"] electromagnetic pulse detected!"))
 	// [CELADON-ADD] - CELADON_MODSUITS - Добавляем замедление при слабом ЕМП
-	if(!(. & EMP_PROTECT_CONTENTS) && !wearer.has_movespeed_modifier(/datum/movespeed_modifier/shove))
+	if(!wearer.has_movespeed_modifier(/datum/movespeed_modifier/shove))
 		to_chat(wearer, span_danger("The [src] stiffens and its servos weaken, slowing you down!"))
 		wearer.add_movespeed_modifier(/datum/movespeed_modifier/shove) //  maybe define a slightly more severe/longer slowdown for this
-		addtimer(CALLBACK(wearer, TYPE_PROC_REF(/mob/living/carbon, clear_shove_slowdown)), SHOVE_SLOWDOWN_LENGTH * 2) // 6 секунд
+		addtimer(CALLBACK(wearer, TYPE_PROC_REF(/mob/living/carbon, clear_shove_slowdown)), SHOVE_SLOWDOWN_LENGTH * 4) // 12 секунд
 	// [/CELADON-ADD]
 	if(. & EMP_PROTECT_CONTENTS)
 		return
 	selected_module?.on_deactivation(display_message = TRUE)
-	wearer.apply_damage(10 / severity, BURN, spread_damage=TRUE)
+	wearer.apply_damage(20 / severity, BURN, spread_damage=TRUE) //[CELADON-EDIT] - CELADON_MODSUITS // wearer.apply_damage(10 / severity, BURN, spread_damage=TRUE)
 	to_chat(wearer, span_danger("You feel [src] heat up from the EMP, burning you slightly."))
 	if(wearer.stat < UNCONSCIOUS && prob(10))
 		wearer.force_scream()
