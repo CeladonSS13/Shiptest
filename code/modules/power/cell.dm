@@ -406,7 +406,7 @@
 	blinky_light = FALSE
 	auto_scatter = FALSE
 	var/start_empty = FALSE //this really wasn't a var before?
-	// [CELADON-ADD] - Для специально заданных оверлеев-батареек (в аталасе должен быть оверлей)
+	// [CELADON-ADD] - RESPRITE-CELLS - Для специально заданных оверлеев-батареек (в аталасе должен быть оверлей)
 	var/reskin = FALSE
 	var/base_state
 	// [/CELADON-ADD]
