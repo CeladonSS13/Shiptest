@@ -313,15 +313,6 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"hv" = (
-/obj/machinery/conveyor/auto/outpost{
-	dir = 5;
-	verted = -1
-	},
-/turf/open/floor/plasteel{
-	planetary_atmos = 1
-	},
-/area/hangar)
 "hJ" = (
 /obj/structure/railing/wood{
 	dir = 8
@@ -865,15 +856,6 @@
 	pixel_y = 6
 	},
 /turf/open/floor/grass/snow/safe{
-	planetary_atmos = 1
-	},
-/area/hangar)
-"rb" = (
-/obj/machinery/conveyor/auto/outpost{
-	dir = 6;
-	verted = -1
-	},
-/turf/open/floor/plasteel{
 	planetary_atmos = 1
 	},
 /area/hangar)
@@ -1636,7 +1618,7 @@
 	},
 /area/hangar)
 "Hi" = (
-/obj/structure/plasticflaps,
+/obj/structure/plasticflaps/outpost,
 /obj/machinery/conveyor/auto{
 	dir = 1;
 	id = "outpost3";
@@ -3989,7 +3971,7 @@ gu
 (34,1,1) = {"
 gu
 ie
-hv
+eg
 eg
 dT
 Ed
@@ -4077,7 +4059,7 @@ gu
 (36,1,1) = {"
 gu
 ie
-rb
+rK
 Qs
 ie
 JR
