@@ -44,7 +44,7 @@
 	assignment = "Scientific Overseer"
 
 /obj/item/card/id/cel/solfed/crew
-	desc = "A SolFed ID with no proper access to speak of. This one indicates crew"
+	desc = "A SolFed ID with no proper access to speak of."
 	icon_state = "idsf_crew"
 	assignment = "Crew"
 
