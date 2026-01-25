@@ -12,6 +12,7 @@ MARK: ARMOR BOOSTER
 	complexity = 4
 	active_power_cost = DEFAULT_CHARGE_DRAIN
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 0.3
+	disable_chance = 10
 
 /obj/item/mod/module/armor_booster/heavy
 	name = "MOD heavy armor booster module"
@@ -19,10 +20,10 @@ MARK: ARMOR BOOSTER
 		Once under voltage, this \"power-weave\" gets less flexible, but hardens on hit, dampening it. \
 		While it's a high-end technology, it still has it's downsides: the required voltage is too extreme to run alongside EVA systems. \n\
 		The heavy variant runs on enormous voltage, compared to other models, which makes the weave barely flexible, severely limiting operator's movement."
-	active_power_cost = DEFAULT_CHARGE_DRAIN * 3
+	active_power_cost = DEFAULT_CHARGE_DRAIN * 2
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 0.4
 	removable = TRUE
-	complexity = 4
+	complexity = 3
 	cooldown_time = 0.5 SECONDS
 	overlay_state_inactive = "module_armorbooster_off"
 	overlay_state_active = "module_armorbooster_on"
@@ -39,10 +40,10 @@ MARK: ARMOR BOOSTER
 		Once under voltage, this \"power-weave\" gets less flexible, but hardens on hit, dampening it. \
 		While it's a high-end technology, it still has it's downsides: the required voltage is too extreme to run alongside EVA systems. \n\
 		The light variant combines decent comfort and protection and runs on nominal voltages."
-	active_power_cost = DEFAULT_CHARGE_DRAIN * 2
+	active_power_cost = DEFAULT_CHARGE_DRAIN * 1.5
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 0.1
 	removable = TRUE
-	complexity = 3
+	complexity = 2
 	cooldown_time = 0.5 SECONDS
 	overlay_state_inactive = "module_armorbooster_off"
 	overlay_state_active = "module_armorbooster_on"
@@ -186,3 +187,10 @@ MARK: ARMOR BOOSTER
 	owner.adjustBruteLoss(40)
 	owner.force_scream()
 	UnregisterSignal(owner, COMSIG_MOD_BLOOD_REPLIKA_DEACTIVATION)
+
+
+// MARK: PLATE COMPRESSION REFLAVOUR
+/obj/item/mod/module/plate_compression
+	desc = "A module that keeps the suit in a very tightly fit state, lowering the overall size. \
+		Due to the pressure on all the parts, typical storage modules do not fit. \n\
+		Moreover, the pressure and plate optimization from this state allows for much pushes out of the way when the user enters and it helps in booting up."
