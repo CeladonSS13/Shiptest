@@ -472,7 +472,7 @@
 		/datum/material/titanium=1500,
 		/datum/material/plasma=1500,
 	)
-	build_path = /obj/item/mod/module/armor_booster/civilian
+	build_path = /obj/item/mod/module/plate_compression
 	category = list(
 		"MOD Modules", "Security Modules"
 	)
