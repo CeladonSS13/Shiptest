@@ -14,7 +14,7 @@
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
 
 /datum/outfit/job/cel/nanotrasen/ntas/operative
-	name = "NT Assault Squad - Assault Operative"
+	name = "NT Assault Squad - Security Operative"
 	jobtype = /datum/job/hos
 	job_icon = "headofsecurity"
 
