@@ -64,7 +64,7 @@ ID мода: CELADON_MODSUITS
 - `code\modules\mod\modules\modules_science.dm` : `/obj/item/mod/module/anomaly_locked/antigrav`,`active_power_cost assist_drain_increase`, `var/incompatible_modules`, `var/teleport_time`, `var/cooldown_time`, `var/use_power_cost`
 - `code/modules/mod/modules/modules_general.dm` : `complexity`, `overlay_state_inactive`, `var/assist_drain_increase`, `/obj/item/mod/module/jetpack var/use_power_cost`, `/obj/item/mod/module/dna_lock complexity`
 - `code\modules\mod\modules\modules_storage.dm` : `/obj/item/mod/module/storage/large_capacity max_vol`
-- `code\modules\mod\modules\modules_antag.dm`: `/obj/item/mod/module/armor_booster`, `/obj/item/mod/module/armor_booster/on_activation()`, `var/drain_slowdown_affected`, `drain_per_step`, `var/drain`,`/obj/item/mod/module/armor_assist/proc/drain_on_step`, `/obj/item/mod/module/chameleon/proc/return_look`, `var/module_type` `var/color_list`, `/obj/item/mod/module/insignia/on_use`
+- `code\modules\mod\modules\modules_antag.dm`: `/obj/item/mod/module/armor_booster`, `/obj/item/mod/module/armor_booster/on_activation()`, `var/drain_slowdown_affected`, `drain_per_step`, `var/drain`,`/obj/item/mod/module/armor_assist/proc/drain_on_step`, `/obj/item/mod/module/chameleon/proc/return_look`, `var/module_type` `var/color_list`, `/obj/item/mod/module/insignia/on_use`, `powerkick, plate_compression`
 - `code\modules\mod\modules\modules_science.dm`: `/obj/item/mod/module/anomaly_locked/teleporter`, `/obj/item/mod/module/anomaly_locked/antigrav`
 - `code\modules\mod\modules\_module.dm` : `incompatible_modules`, `var/assist_drain_increase`
 - `code\modules\mod\modules\modules_ninja.dm` : `bulletoff`, `/obj/item/mod/module/stealth/on_activation, on_deactivation`

@@ -411,6 +411,7 @@
 	var/wounding_power = 35
 	/// How long we knockdown for on the kick.
 	var/knockdown_time = 2 SECONDS
+	var/prepare_time = 0.3 SECONDS // [CELADON-ADD] - CELADON_MODSUITS
 
 /obj/item/mod/module/power_kick/on_select_use(atom/target)
 	. = ..()
@@ -422,7 +423,7 @@
 	to_chat(mod.wearer,span_notice("You start charging..."))
 	animate(mod.wearer, 0.3 SECONDS, pixel_z = 16, flags = ANIMATION_RELATIVE, easing = SINE_EASING|EASE_OUT)
 	addtimer(CALLBACK(mod.wearer, TYPE_PROC_REF(/atom, SpinAnimation), 3, 2), 0.3 SECONDS)
-	if(!do_after(mod.wearer, 1 SECONDS, target = mod))
+	if(!do_after(mod.wearer, prepare_time, target = mod)) // [CELADON-EDIT] - CELADON_MODSUITS // if(!do_after(mod.wearer, 1 SECONDS, target = mod))
 		animate(mod.wearer, 0.2 SECONDS, pixel_z = -16, flags = ANIMATION_RELATIVE, easing = SINE_EASING|EASE_OUT)
 		return
 	animate(mod.wearer)
@@ -538,7 +539,7 @@
 /obj/item/mod/module/plate_compression
 	name = "MOD plate compression module"
 	desc = "A module that keeps the suit in a very tightly fit state, lowering the overall size. \
-		Due to the pressure on all the parts, typical storage modules do not fit."
+		Due to the pressure on all the parts, typical storage modules do not fit." // [CELADON-EDIT] - CELADON_MODSUITS // изменено в модуле
 	icon_state = "plate_compression"
 	complexity = 2
 	incompatible_modules = list(/obj/item/mod/module/plate_compression, /obj/item/mod/module/storage)
@@ -550,8 +551,10 @@
 /obj/item/mod/module/plate_compression/on_install()
 	old_size = mod.w_class
 	mod.w_class = new_size
+	mod.activation_step_time *= 0.1 // [CELADON-ADD] - CELADON_MODSUITS
 
 /obj/item/mod/module/plate_compression/on_uninstall(deleting = FALSE)
+	mod.activation_step_time *= 10 // [CELADON-ADD] - CELADON_MODSUITS
 	mod.w_class = old_size
 	old_size = null
 	if(!mod.loc)
