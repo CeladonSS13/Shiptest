@@ -253,6 +253,7 @@
 
 /obj/item/gun/ballistic/shotgun/automatic/negotiator
 	name = "VI AST12 Negotiator"
+	manufacturer = MANUFACTURER_VIGILITAS
 
 /obj/item/gun/ballistic/revolver/rhino
 	name = "VI Rhino"
