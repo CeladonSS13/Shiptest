@@ -424,7 +424,7 @@
 /obj/item/stock_parts/cell/gun/update_overlays()
 	. = ..()
 	cut_overlays()
-// [CELADON-EDIT] - Ору, для этого есть свичи
+// [CELADON-EDIT] - RESPRITE-CELLS - Ору, для этого есть свичи...
 //	if(charge < 0.1)
 //		return
 //	else if(charge/maxcharge >=0.995)
@@ -462,7 +462,7 @@
 				. += "[initial(icon_state)]-o1"
 			else
 				return .
-// [/CELADON-ADD]
+// [/CELADON-EDIT]
 
 /obj/item/stock_parts/cell/gun/upgraded
 	name = "high-capacity eoehoma power cell"
