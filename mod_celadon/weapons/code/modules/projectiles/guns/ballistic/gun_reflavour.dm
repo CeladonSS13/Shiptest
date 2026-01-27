@@ -59,6 +59,17 @@
 
 	manufacturer = MANUFACTURER_SOLARARMORIES
 
+// Nanotrasen Pistols
+
+/obj/item/gun/ballistic/automatic/pistol/challenger
+	name = "VI PS9 Challenger"
+
+/obj/item/gun/ballistic/automatic/pistol/champion
+	name = "VI PHB Champion"
+
+/obj/item/gun/ballistic/automatic/pistol/podium
+	name = "VI PH46 Podium"
+
 //########### SMGS ###########//
 /obj/item/gun/ballistic/automatic/smg/cm5
 	name = "\improper CM-5"
@@ -90,6 +101,24 @@
 		"Ceremonial" = "cm5c_c"
 		)
 	unique_reskin_changes_inhand = TRUE
+
+// Nanotrasen SMGs
+
+/obj/item/gun/ballistic/automatic/smg/skm_carbine/saber
+	name = "\improper Saber SMG"
+	desc = "A full-auto 9x18mm submachine gun, designated 'TPG SABR'. Has a threaded barrel for suppressors and a folding stock. This odd gun feels really outdated..."
+	manufacturer = MANUFACTURER_NANOTRASEN_OLD
+
+/obj/item/gun/ballistic/automatic/smg/expedition
+	name = "\improper VI SGL9 Expedition"
+	manufacturer = MANUFACTURER_VIGILITAS
+
+/obj/item/gun/ballistic/automatic/smg/resolution
+	name = "\improper VI PD46 Resolution"
+	manufacturer = MANUFACTURER_VIGILITAS
+
+/obj/item/gun/ballistic/automatic/smg/resolution/inteq
+	desc = "A seized VI PD46, modified to Inteq's requirements and standards. Awkward to reload, though has a powerful cartridge with good ergonomics and accuracy."
 
 //########### MARKSMAN ###########//
 /obj/item/gun/ballistic/automatic/marksman/f4
@@ -219,3 +248,13 @@
 	unique_reskin_changes_inhand = TRUE
 
 	manufacturer = MANUFACTURER_SOLARARMORIES
+
+// Nanotrasen Shotguns & Revolvers
+
+/obj/item/gun/ballistic/shotgun/automatic/negotiator
+	name = "VI AST12 Negotiator"
+	manufacturer = MANUFACTURER_VIGILITAS
+
+/obj/item/gun/ballistic/revolver/rhino
+	name = "VI Rhino"
+	desc = "A very famous high-powered semi-auto revolver, often used by high-ranking CentCom officials and Vigilitas Interstellar officers. Chambered in .357."

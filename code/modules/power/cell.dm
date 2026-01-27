@@ -406,7 +406,7 @@
 	blinky_light = FALSE
 	auto_scatter = FALSE
 	var/start_empty = FALSE //this really wasn't a var before?
-	// [CELADON-ADD] - Для специально заданных оверлеев-батареек (в аталасе должен быть оверлей)
+	// [CELADON-ADD] - RESPRITE-CELLS - Для специально заданных оверлеев-батареек (в аталасе должен быть оверлей)
 	var/reskin = FALSE
 	var/base_state
 	// [/CELADON-ADD]
@@ -424,7 +424,7 @@
 /obj/item/stock_parts/cell/gun/update_overlays()
 	. = ..()
 	cut_overlays()
-// [CELADON-EDIT] - Ору, для этого есть свичи
+// [CELADON-EDIT] - RESPRITE-CELLS - Ору, для этого есть свичи...
 //	if(charge < 0.1)
 //		return
 //	else if(charge/maxcharge >=0.995)
@@ -448,8 +448,6 @@
 				. += "[base_state]-o40"
 			if(0.145 to 0.395)
 				. += "[base_state]-o20"
-			else
-				return .
 	else
 		switch(charge/maxcharge)
 			if(0.995 to 1)
@@ -460,9 +458,8 @@
 				. += "[initial(icon_state)]-o2"
 			if(0.145 to 0.495)
 				. += "[initial(icon_state)]-o1"
-			else
-				return .
-// [/CELADON-ADD]
+	return .
+// [/CELADON-EDIT]
 
 /obj/item/stock_parts/cell/gun/upgraded
 	name = "high-capacity eoehoma power cell"

@@ -309,7 +309,6 @@
 	desc = "An high-capacity weapon cell used exclusively by Sharplite Plasma weaponry. They are a great improvement over the stock cell, and are frequently sought after by collectors, soldiers, and operators of heavy lasers alike."
 	icon_state = "plasma_plus-cell"
 	maxcharge = 30000
-	chargerate = 1000
 
 /obj/item/stock_parts/cell/gun/mini
 	icon = 'icons/obj/power.dmi'

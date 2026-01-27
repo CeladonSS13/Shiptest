@@ -1,7 +1,7 @@
-/// Nanotrasen Tactical Assault Team лидер
+/// Nanotrasen Tactical Assault Squad лидер
 
 /datum/outfit/job/cel/nanotrasen/ntas/commander
-	name = "NT Assault Team - Leader"
+	name = "NT Assault Squad - Leader"
 	jobtype = /datum/job/captain
 	job_icon = "captain"
 
@@ -14,7 +14,7 @@
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
 
 /datum/outfit/job/cel/nanotrasen/ntas/operative
-	name = "NT Assault Team - Security Operative"
+	name = "NT Assault Squad - Security Operative"
 	jobtype = /datum/job/hos
 	job_icon = "headofsecurity"
 
@@ -27,7 +27,7 @@
 	ears = /obj/item/radio/headset/nanotrasen/alt
 
 /datum/outfit/job/cel/nanotrasen/ntas/medic
-	name = "NT Assault Team - Medical Operative"
+	name = "NT Assault Squad - Medical Operative"
 	jobtype = /datum/job/cmo
 	job_icon = "chiefmedicalofficer"
 
@@ -41,7 +41,7 @@
 	backpack_contents = list(/obj/item/storage/firstaid/medical)
 
 /datum/outfit/job/cel/nanotrasen/ntas/engineer
-	name = "NT Assault Team - Engineering Operative"
+	name = "NT Assault Squad - Engineering Operative"
 	jobtype = /datum/job/chief_engineer
 	job_icon = "chiefengineer"
 
@@ -54,7 +54,7 @@
 	ears = /obj/item/radio/headset/nanotrasen/alt
 
 /datum/outfit/job/cel/nanotrasen/ntas/janitor
-	name = "NT Assault Team - Custodial Operative"
+	name = "NT Assault Squad - Custodial Operative"
 	jobtype = /datum/job/janitor
 	job_icon = "janitor"
 

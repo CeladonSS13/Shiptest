@@ -60,18 +60,16 @@ const CENTRAL_FACTION = {
 
 // Легенда типов отношений
 const RELATION_TYPES = {
-  union: { name: 'Союз', color: '#2ECC71' }, // Зеленый
-  positive: { name: 'Положительные', color: '#87CEEB' }, // Светло-синий
-  neutral: { name: 'Нейтральные', color: '#808080' }, // Серый
-  negative: { name: 'Отрицательные', color: '#FFA500' }, // Оранжевый
-  war: { name: 'Война', color: '#FF0000' }, // Красный
+  union: { name: 'Союз', color: '#2ECC71' },
+  neutral: { name: 'Нейтральные', color: '#ffd902' },
+  war: { name: 'Война', color: '#FF0000' },
 };
 
 // Полная система отношений между всеми 7 фракциями (21 линия)
 const FACTION_RELATIONS = [
   // Nanotrasen отношения
   { from: 'nanotrasen', to: 'solfed', type: 'union' },
-  { from: 'nanotrasen', to: 'elysium', type: 'negative' },
+  { from: 'nanotrasen', to: 'elysium', type: 'war' },
   { from: 'nanotrasen', to: 'inteq', type: 'neutral' },
   { from: 'nanotrasen', to: 'syndicate', type: 'war' },
   { from: 'nanotrasen', to: 'pirates', type: 'war' },
@@ -80,13 +78,13 @@ const FACTION_RELATIONS = [
   // SolFed отношения
   { from: 'solfed', to: 'elysium', type: 'war' },
   { from: 'solfed', to: 'inteq', type: 'neutral' },
-  { from: 'solfed', to: 'syndicate', type: 'negative' },
+  { from: 'solfed', to: 'syndicate', type: 'war' },
   { from: 'solfed', to: 'pirates', type: 'war' },
   { from: 'solfed', to: 'independent', type: 'neutral' },
 
   // Elysium отношения
   { from: 'elysium', to: 'inteq', type: 'neutral' },
-  { from: 'elysium', to: 'syndicate', type: 'positive' },
+  { from: 'elysium', to: 'syndicate', type: 'union' },
   { from: 'elysium', to: 'pirates', type: 'war' },
   { from: 'elysium', to: 'independent', type: 'neutral' },
 

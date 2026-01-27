@@ -288,6 +288,7 @@
 	item_state = "sonnensoldner_hat"
 	worn_y_offset = 4
 	dog_fashion = null
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35,"energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 20) //[CELADON-ADD] - CELADON_BALANCE
 
 /obj/item/clothing/head/solgov/captain
 	name = "\improper SolGov bicorne hat"
@@ -298,6 +299,7 @@
 	item_state = "solgov_bicorne"
 	worn_y_offset = 2
 	dog_fashion = null
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35,"energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 20) //[CELADON-ADD] - CELADON_BALANCE
 
 /obj/item/clothing/head/beret/solgov
 	name = "\improper SolGov beret"
