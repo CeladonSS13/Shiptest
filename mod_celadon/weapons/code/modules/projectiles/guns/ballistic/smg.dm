@@ -5,9 +5,9 @@
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32_old.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/lefthand_old.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/righthand_old.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob_old.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob.dmi'
 	icon_state = "wt550"
-	item_state = "arg"
+	item_state = "wt550"
 	default_ammo_type = /obj/item/ammo_box/magazine/wt550m9
 	allowed_ammo_types = list(
 		/obj/item/ammo_box/magazine/wt550m9,
