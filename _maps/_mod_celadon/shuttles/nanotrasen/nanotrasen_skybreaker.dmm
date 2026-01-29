@@ -635,6 +635,10 @@
 	dir = 4
 	},
 /obj/item/healthanalyzer,
+/obj/item/reagent_containers/medigel/hadrakine,
+/obj/item/reagent_containers/medigel/quardexane,
+/obj/item/reagent_containers/glass/bottle/tramal,
+/obj/item/storage/pill_bottle/tramal,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "gS" = (
@@ -2145,11 +2149,6 @@
 /obj/effect/turf_decal/trimline/transparent/blue/filled/line{
 	dir = 1;
 	layer = 2.040
-	},
-/obj/machinery/vending/wallmed{
-	name = "\improper NanoMed";
-	pixel_x = 0;
-	pixel_y = -30
 	},
 /obj/structure/chair/handrail{
 	dir = 1
