@@ -48,18 +48,18 @@
 	icon_state = "sec_wall";
 	name = "weapon power cell closet"
 	},
-/obj/item/stock_parts/cell/gun/sharplite,
-/obj/item/stock_parts/cell/gun/sharplite,
-/obj/item/stock_parts/cell/gun/sharplite,
-/obj/item/stock_parts/cell/gun/sharplite,
-/obj/item/stock_parts/cell/gun/sharplite,
-/obj/item/stock_parts/cell/gun/sharplite,
-/obj/item/stock_parts/cell/gun/sharplite,
-/obj/item/stock_parts/cell/gun/sharplite,
-/obj/item/stock_parts/cell/gun/sharplite,
-/obj/item/stock_parts/cell/gun/sharplite,
-/obj/item/stock_parts/cell/gun/sharplite,
-/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
 /obj/item/ammo_box/magazine/wt550m9,
 /obj/item/ammo_box/magazine/wt550m9,
 /obj/item/ammo_box/magazine/wt550m9,
@@ -1563,8 +1563,7 @@
 	dir = 4
 	},
 /obj/machinery/firealarm/directional/east,
-/obj/structure/table/reinforced/titaniumglass,
-/obj/machinery/microwave,
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "uu" = (
@@ -2542,6 +2541,8 @@
 /obj/item/storage/box/drinkingglasses,
 /obj/item/storage/box/drinkingglasses,
 /obj/item/storage/box/drinkingglasses,
+/obj/item/cutting_board,
+/obj/item/melee/knife/kitchen,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "Iz" = (
@@ -3174,18 +3175,7 @@
 	pixel_x = -5;
 	pixel_y = 3
 	},
-/obj/item/food/burger{
-	pixel_x = 3;
-	pixel_y = 5
-	},
-/obj/item/food/burger/baconburger{
-	pixel_x = 2;
-	pixel_y = 1
-	},
-/obj/item/food/burger/baconburger{
-	pixel_x = -3;
-	pixel_y = -4
-	},
+/obj/machinery/microwave,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "Qv" = (
@@ -3368,7 +3358,7 @@
 /obj/item/radio/headset/nanotrasen/alt,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/gps,
-/obj/item/storage/guncase/energy/egun,
+/obj/item/storage/guncase/energy/egun_old,
 /obj/effect/turf_decal/corner/opaque/ntblue/border,
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -3814,7 +3804,7 @@
 	name = "medical operative's locker";
 	anchored = 1
 	},
-/obj/item/storage/guncase/energy/egun,
+/obj/item/storage/guncase/energy/egun_old,
 /obj/item/melee/knife/combat,
 /obj/item/defibrillator/compact/combat/loaded/nanotrasen,
 /obj/item/storage/backpack/ert/medical,

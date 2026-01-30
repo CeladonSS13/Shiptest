@@ -232,6 +232,7 @@
 
 	podType = /obj/structure/closet/supplypod/centcompod
 
+	resistance_flags = INDESTRUCTIBLE
 	flags_1 = NODECONSTRUCT_1
 	tgui_shared_states = list(outpostTab = "\"cargo\"")
 

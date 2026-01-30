@@ -637,11 +637,17 @@
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 8
 	},
-/obj/item/reagent_containers/food/drinks/shaker{
-	pixel_x = -6;
-	pixel_y = 4
+/obj/item/cutting_board{
+	pixel_x = 3
 	},
-/obj/item/reagent_containers/glass/rag,
+/obj/item/kitchen/rollingpin{
+	pixel_y = -6;
+	pixel_x = 9
+	},
+/obj/item/melee/knife/butcher{
+	pixel_x = -10;
+	pixel_y = 13
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "fH" = (
@@ -1193,19 +1199,8 @@
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 8
 	},
-/obj/structure/table/reinforced,
-/obj/item/melee/knife/butcher{
-	pixel_x = -10;
-	pixel_y = 13
-	},
 /obj/machinery/light/directional/west,
-/obj/item/cutting_board{
-	pixel_x = 3
-	},
-/obj/item/kitchen/rollingpin{
-	pixel_y = -6;
-	pixel_x = 9
-	},
+/obj/machinery/deepfryer,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "lk" = (
@@ -1505,6 +1500,15 @@
 	},
 /turf/open/floor/wood,
 /area/ship/crew/dorm/dormfive)
+"nV" = (
+/obj/structure/table/wood/reinforced,
+/obj/item/reagent_containers/food/drinks/shaker{
+	pixel_x = -6;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/glass/rag,
+/turf/open/floor/wood,
+/area/ship/crew/canteen)
 "nX" = (
 /obj/structure/frame/machine,
 /obj/item/stack/cable_coil/random/five,
@@ -1978,24 +1982,15 @@
 /turf/open/floor/plasteel/white,
 /area/ship/crew/toilet)
 "rq" = (
-/obj/structure/table/reinforced,
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 8
 	},
-/obj/structure/sink/chem{
-	dir = 1;
-	pixel_y = 4;
-	pixel_x = 2
-	},
-/obj/structure/sink/chem{
-	dir = 1;
-	pixel_y = -4;
-	pixel_x = 2
-	},
 /obj/machinery/light/directional/west,
+/obj/machinery/microwave,
+/obj/structure/table/reinforced,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "rs" = (
@@ -2225,13 +2220,13 @@
 /turf/open/floor/wood,
 /area/ship/crew/dorm/dormfive)
 "tE" = (
-/obj/machinery/deepfryer,
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 8
 	},
+/obj/machinery/oven,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "tF" = (
@@ -3826,6 +3821,13 @@
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 8
 	},
+/obj/item/storage/bag/tray/cafeteria{
+	pixel_y = -3
+	},
+/obj/item/storage/bag/tray/cafeteria,
+/obj/item/storage/bag/tray/cafeteria{
+	pixel_y = 3
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "Fg" = (
@@ -4429,12 +4431,10 @@
 	dir = 8
 	},
 /obj/structure/table/reinforced,
-/obj/item/storage/bag/tray/cafeteria{
-	pixel_y = -3
-	},
-/obj/item/storage/bag/tray/cafeteria,
-/obj/item/storage/bag/tray/cafeteria{
-	pixel_y = 3
+/obj/structure/sink/chem{
+	dir = 1;
+	pixel_y = -4;
+	pixel_x = 2
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
@@ -4828,8 +4828,6 @@
 /turf/open/floor/wood,
 /area/ship/crew/canteen)
 "Mi" = (
-/obj/structure/table/reinforced,
-/obj/machinery/microwave,
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 4
 	},
@@ -4839,6 +4837,7 @@
 /obj/structure/sign/poster/official/moth{
 	pixel_x = -32
 	},
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "Mn" = (
@@ -7067,7 +7066,7 @@ Fq
 aA
 DV
 Cd
-Cd
+nV
 Cd
 Cd
 Cd

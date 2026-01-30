@@ -3094,7 +3094,7 @@
 	pixel_x = -20;
 	pixel_y = 7
 	},
-/obj/structure/table/wood,
+/obj/machinery/oven,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/canteen)
 "Eh" = (
@@ -3548,7 +3548,7 @@
 "IO" = (
 /obj/structure/table/wood,
 /obj/machinery/reagentgrinder{
-	pixel_y = 8;
+	pixel_y = 21;
 	pixel_x = -7
 	},
 /obj/item/reagent_containers/condiment/saltshaker{
@@ -3559,6 +3559,9 @@
 	pixel_x = 10;
 	pixel_y = 10
 	},
+/obj/item/cutting_board,
+/obj/item/kitchen/rollingpin,
+/obj/item/melee/knife/kitchen,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/canteen)
 "IP" = (
@@ -4733,11 +4736,8 @@
 /area/ship/hallway/starboard)
 "SP" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/table/wood,
-/obj/item/cutting_board,
-/obj/item/melee/knife/kitchen,
-/obj/item/kitchen/rollingpin,
 /obj/machinery/newscaster/directional/west,
+/obj/machinery/griddle,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/canteen)
 "Tc" = (

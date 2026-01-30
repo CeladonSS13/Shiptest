@@ -157,6 +157,28 @@
 	greyscale_colors = list("#33353a", "#d9ad82", "#8c1a34")
 	supports_variations = DIGITIGRADE_VARIATION | KEPORI_VARIATION
 
+/obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/ngr
+	name = "elite beige-red hardsuit helmet"
+	desc = "A customized version of the infamous elite blood-red, fitting the high standards of the 2nd Battlegroup, boasting its widely known improved armor and fireproofing. It is in EVA mode. Property of Gorlex 2nd Battlegroup."
+	alt_desc = "A customized version of the infamous elite blood-red, fitting the high standards of the 2nd Battlegroup, boasting its widely known improved armor and fireproofing. It is in combat mode. Property of Gorlex 2nd Battlegroup."
+	icon_state = "hardsuit0-ngrelite"
+	hardsuit_type = "ngrelite"
+	icon = 'icons/obj/clothing/faction/ngr/head.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/faction/ngr/head.dmi'
+
+/obj/item/clothing/suit/space/hardsuit/syndi/elite/ngr
+	name = "elite beige-red hardsuit"
+	desc = "A customized version of the infamous elite blood-red, fitting the high standards of the 2nd Battlegroup, boasting its widely known improved armor and fireproofing. It is in travel mode."
+	alt_desc = "A customized version of the infamous elite blood-red, fitting the high standards of the 2nd Battlegroup, boasting its widely known improved armor and fireproofing. It is in combat mode."
+	icon_state = "hardsuit0-ngrelite"
+	item_state = "hardsuit0-ngrelite"
+	hardsuit_type = "ngrelite"
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/ngr
+	icon = 'icons/obj/clothing/faction/ngr/suits.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/faction/ngr/suits.dmi'
+	jetpack = null
+	supports_variations = DIGITIGRADE_VARIATION
+
 /obj/item/clothing/head/helmet/space/plasmaman/ngr
 	name = "NGR phorid envirosuit helmet"
 	desc = "An envirohelmet designed for phorids of the New Gorlex Republic, with intimidating blood-red stripes."
@@ -224,7 +246,7 @@
 	desc = "A well-armored helmet utilized by the New Gorlex Republic's 2nd Battlegroup, far better at protecting one's head than the softer caps."
 	icon = 'icons/obj/clothing/faction/ngr/head.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/faction/ngr/head.dmi'
-	armor = list("melee" = 40, "bullet" = 60, "laser" = 35, "energy" = 35, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50) // The guys who specialize in ballistics would probably have better bullet armor. Maybe.
+	armor = list("melee" = 40, "bullet" = 60, "laser" = 35, "energy" = 35, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 20) // [CELADON-EDIT] - CELADON_BALANCE - комменты дальше от оффов // The guys who specialize in ballistics would probably have better bullet armor. Maybe.
 	icon_state = "ngr_x11"
 	item_state = "ngr_x11"
 	can_flashlight = TRUE

@@ -84,7 +84,6 @@
 /area/hangar)
 "dz" = (
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /obj/effect/turf_decal/industrial/fire/corner{
@@ -292,9 +291,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/floor/hangar,
-/obj/effect/turf_decal/industrial/fire/corner{
-	dir = 2
-	},
+/obj/effect/turf_decal/industrial/fire/corner,
 /turf/open/floor/plasteel/dark{
 	planetary_atmos = 1
 	},
@@ -1466,7 +1463,7 @@
 "PZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/plasticflaps,
+/obj/structure/plasticflaps/outpost,
 /obj/machinery/conveyor/auto{
 	dir = 4;
 	id = "outpost3"
@@ -1552,7 +1549,6 @@
 "RX" = (
 /obj/structure/girder,
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /obj/structure/railing{
@@ -1777,6 +1773,13 @@
 /turf/open/floor/plasteel/dark{
 	planetary_atmos = 1
 	},
+/area/hangar)
+"XA" = (
+/obj/machinery/conveyor/auto/outpost{
+	dir = 8
+	},
+/obj/structure/plasticflaps/outpost,
+/turf/open/floor/hangar/plasteel,
 /area/hangar)
 "YR" = (
 /obj/effect/turf_decal/siding/wood/corner{
@@ -5327,7 +5330,7 @@ eH
 eH
 eH
 eH
-Dj
+XA
 VN
 eH
 eH

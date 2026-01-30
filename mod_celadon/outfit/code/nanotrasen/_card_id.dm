@@ -5,116 +5,116 @@
 
 // MARK: Nakamura
 /obj/item/card/id/cel/nanotrasen/nakamura_ce
-	desc = "A NanoTrasen Nakamura ID with no proper access to speak of. This one indicates a Cheif of Engineer."
+	desc = "A Nakamura Engineering ID with no proper access to speak of. This one indicates an Engineering Director."
 	icon_state = "idnaka_chiefengineer"
-	assignment = "Cheif of Engineer"
+	assignment = "Engineering Director"
 
 /obj/item/card/id/cel/nanotrasen/nakamura_command
-	desc = "A NanoTrasen Nakamura ID with no proper access to speak of. This one indicates a Quartermaster."
+	desc = "A Nakamura Engineering ID with no proper access to speak of. This one indicates a Supply Director."
 	icon_state = "idnaka_command"
-	assignment = "Quartermaster"
+	assignment = "Supply Director"
 
-/obj/item/card/id/cel/nanotrasen/nakamura_atmostechnic
-	desc = "A NanoTrasen Nakamura ID with no proper access to speak of. This one indicates a Atmospheric Technician."
-	icon_state = "idnaka_atmostechnic"
+/obj/item/card/id/cel/nanotrasen/nakamura_atmostech
+	desc = "A Nakamura Engineering ID with no proper access to speak of. This one indicates an Atmospheric Technician."
+	icon_state = "idnaka_atmostech"
 	assignment = "Atmospheric Technician"
 
 /obj/item/card/id/cel/nanotrasen/nakamura_engineer
-	desc = "A NanoTrasen Nakamura ID with no proper access to speak of. This one indicates a Engineer."
+	desc = "A Nakamura Engineering ID with no proper access to speak of. This one indicates an Engineer."
 	icon_state = "idnaka_engineer"
 	assignment = "Engineer"
 
 /obj/item/card/id/cel/nanotrasen/nakamura_assistant
-	desc = "A NanoTrasen Nakamura ID with no proper access to speak of. This one indicates a Assistant."
+	desc = "A Nakamura Engineering ID with no proper access to speak of. This one indicates an Assistant."
 	icon_state = "idnaka_assistant"
 	assignment = "Assistant"
 
 // MARK: DeForest
 /obj/item/card/id/cel/nanotrasen/deforest_cmo
-	desc = "A NanoTrasen DeForest ID with no proper access to speak of. This one indicates a Cheif of Medical Officer."
+	desc = "A DeForest Medical ID with no proper access to speak of. This one indicates a Medical Director."
 	icon_state = "iddf_chiefmedicalofficer"
-	assignment = "Cheif of Medical Officer"
+	assignment = "Medical Director"
 
 /obj/item/card/id/cel/nanotrasen/deforest_researcher
-	desc = "A NanoTrasen DeForest ID with no proper access to speak of. This one indicates a Researcher."
+	desc = "A DeForest Medical ID with no proper access to speak of. This one indicates a Researcher."
 	icon_state = "iddf_researcher"
 	assignment = "Researcher"
 
 /obj/item/card/id/cel/nanotrasen/deforest_chemist
-	desc = "A NanoTrasen DeForest ID with no proper access to speak of. This one indicates a Chemist."
+	desc = "A DeForest Medical ID with no proper access to speak of. This one indicates a Chemist."
 	icon_state = "iddf_chemist"
 	assignment = "Chemist"
 
 /obj/item/card/id/cel/nanotrasen/deforest_medic
-	desc = "A NanoTrasen DeForest ID with no proper access to speak of. This one indicates a Medical Doctor."
+	desc = "A DeForest Medical ID with no proper access to speak of. This one indicates a Medical Doctor."
 	icon_state = "iddf_medic"
 	assignment = "Medical Doctor"
 
 /obj/item/card/id/cel/nanotrasen/deforest_medic/paramedic
-	desc = "A NanoTrasen DeForest ID with no proper access to speak of. This one indicates a Paramedic."
+	desc = "A DeForest Medical ID with no proper access to speak of. This one indicates a Paramedic."
 	assignment = "Paramedic"
 
 /obj/item/card/id/cel/nanotrasen/deforest_assistant
-	desc = "A NanoTrasen DeForest ID with no proper access to speak of. This one indicates a Assistant."
+	desc = "A DeForest Medical ID with no proper access to speak of. This one indicates an Assistant."
 	icon_state = "iddf_assistant"
 	assignment = "Assistant"
 
-// MARK: N+S Logistic
-/obj/item/card/id/cel/nanotrasen/nslogistic_captain
-	desc = "A NanoTrasen N+S Logistic ID with no proper access to speak of. This one Captain."
+// MARK: N+S Logistics
+/obj/item/card/id/cel/nanotrasen/nslogistics_captain
+	desc = "A N+S Logistics ID with no proper access to speak of. This one indicates a Captain."
 	icon_state = "idns_captain"
 	assignment = "Captain"
 
-/obj/item/card/id/cel/nanotrasen/nslogistic_rd
-	desc = "A NanoTrasen N+S Logistic ID with no proper access to speak of. This one indicates a Research Director."
+/obj/item/card/id/cel/nanotrasen/nslogistics_rd
+	desc = "A N+S Logistics ID with no proper access to speak of. This one indicates a Science Director."
 	icon_state = "idns_researchdirector"
-	assignment = "Research Director"
+	assignment = "Science Director"
 
-/obj/item/card/id/cel/nanotrasen/nslogistic_quartermaster
-	desc = "A NanoTrasen N+S Logistic ID with no proper access to speak of. This one indicates a Quartermaster."
+/obj/item/card/id/cel/nanotrasen/nslogistics_quartermaster
+	desc = "A N+S Logistics ID with no proper access to speak of. This one indicates a Supply Director."
 	icon_state = "idns_quartermaster"
-	assignment = "Quartermaster"
+	assignment = "Supply Director"
 
-/obj/item/card/id/cel/nanotrasen/nslogistic_miner
-	desc = "A NanoTrasen N+S Logistic ID with no proper access to speak of. This one indicates a Shaft Miner."
+/obj/item/card/id/cel/nanotrasen/nslogistics_miner
+	desc = "A N+S Logistics ID with no proper access to speak of. This one indicates a Shaft Miner."
 	icon_state = "idns_miner"
 	assignment = "Shaft Miner"
 
-/obj/item/card/id/cel/nanotrasen/nslogistic_cargo_tech
-	desc = "A NanoTrasen N+S Logistic ID with no proper access to speak of. This one indicates a Cargo Tech."
+/obj/item/card/id/cel/nanotrasen/nslogistics_cargo_tech
+	desc = "A N+S Logistics ID with no proper access to speak of. This one indicates a Supply Techician."
 	icon_state = "idns_miner"
-	assignment = "Cargo Tech"
+	assignment = "Supply Technician"
 
-/obj/item/card/id/cel/nanotrasen/nslogistic_assistant
-	desc = "A NanoTrasen N+S Logistic ID with no proper access to speak of. This one indicates a Assistant."
+/obj/item/card/id/cel/nanotrasen/nslogistics_assistant
+	desc = "A N+S Logistics ID with no proper access to speak of. This one indicates an Assistant."
 	icon_state = "idns_assistant"
 	assignment = "Assistant"
 
 // MARK: Vigilitas
-/obj/item/card/id/cel/nanotrasen/vigilitas_leutenant
-	desc = "A NanoTrasen Vigilitas ID with no proper access to speak of. This one Leutenant."
-	icon_state = "idvigi_leutenant"
-	assignment = "Leutenant"
+/obj/item/card/id/cel/nanotrasen/vigilitas_lieutenant
+	desc = "A Vigilitas Interstellar ID with no proper access to speak of. This one indicates a Lieutenant."
+	icon_state = "idvigi_lieutenant"
+	assignment = "Lieutenant"
 
 /obj/item/card/id/cel/nanotrasen/vigilitas_sergeant
-	desc = "A NanoTrasen Vigilitas ID with no proper access to speak of. This one indicates a Sergeant."
+	desc = "A Vigilitas Interstellar ID with no proper access to speak of. This one indicates a Sergeant."
 	icon_state = "idvigi_sergeant"
 	assignment = "Sergeant"
 
 /obj/item/card/id/cel/nanotrasen/vigilitas_engineer
-	desc = "A NanoTrasen Vigilitas ID with no proper access to speak of. This one indicates a Engineer."
+	desc = "A Vigilitas Interstellar ID with no proper access to speak of. This one indicates an Engineer."
 	icon_state = "idvigi_engineer"
 	assignment = "Engineer"
 
 /obj/item/card/id/cel/nanotrasen/vigilitas_medic
-	desc = "A NanoTrasen Vigilitas ID with no proper access to speak of. This one indicates a Medic."
+	desc = "A Vigilitas Interstellar ID with no proper access to speak of. This one indicates a Medic."
 	icon_state = "idvigi_medic"
 	assignment = "Medic"
 
 /obj/item/card/id/cel/nanotrasen/vigilitas_security
-	desc = "A NanoTrasen Vigilitas ID with no proper access to speak of. This one indicates a Security."
+	desc = "A Vigilitas Interstellar ID with no proper access to speak of. This one indicates a Security Officer."
 	icon_state = "idvigi_security"
-	assignment = "Security"
+	assignment = "Security Officer"
 
 // MARK: LP
 

@@ -749,7 +749,7 @@
 /area/ship/engineering/engines/port)
 "gg" = (
 /obj/machinery/light/directional/south,
-/obj/structure/table/reinforced,
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/crew/ccommons)
 "gj" = (
@@ -3305,15 +3305,15 @@
 "yq" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/corner/opaque/neutral/full,
-/obj/item/stock_parts/cell/gun/sharplite/plus,
-/obj/item/stock_parts/cell/gun/sharplite/plus,
-/obj/item/stock_parts/cell/gun/sharplite/plus,
-/obj/item/stock_parts/cell/gun/sharplite,
-/obj/item/stock_parts/cell/gun/sharplite,
-/obj/item/stock_parts/cell/gun/sharplite,
-/obj/item/stock_parts/cell/gun/sharplite,
-/obj/item/stock_parts/cell/gun/sharplite,
-/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
 /obj/structure/sign/poster/official/ion_carbine{
 	pixel_x = -32;
 	pixel_y = 0
@@ -4178,6 +4178,8 @@
 	pixel_x = -15
 	},
 /obj/structure/table/reinforced,
+/obj/item/cutting_board,
+/obj/item/melee/knife/kitchen,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/crew/ccommons)
 "Dd" = (
@@ -5237,7 +5239,7 @@
 /obj/item/clothing/suit/armor/nanotrasen/captain/parade,
 /obj/item/storage/belt/sabre,
 /obj/item/clothing/shoes/combat,
-/obj/item/storage/guncase/pistol/miniegun,
+/obj/item/storage/guncase/pistol/miniegun_old,
 /turf/open/floor/plasteel/sepia,
 /area/ship/crew/dorm/captain)
 "JY" = (
@@ -6805,8 +6807,8 @@
 /area/ship/crew/office)
 "Vd" = (
 /obj/structure/closet/wall/white/directional/south,
-/obj/item/storage/ration/crayons,
 /obj/structure/table/reinforced,
+/obj/item/storage/ration/crayons,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/crew/ccommons)
 "Ve" = (

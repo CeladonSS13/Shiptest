@@ -126,8 +126,13 @@
 /turf/open/floor/carpet/royalblue,
 /area/ship/bridge)
 "dD" = (
-/obj/machinery/vending/boozeomat/all_access,
+/obj/machinery/vending/boozeomat/all_access{
+	pixel_x = 25;
+	dir = 8
+	},
 /obj/machinery/light/directional/north,
+/obj/machinery/chem_dispenser/drinks,
+/obj/structure/table/wood,
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
 "dH" = (
@@ -1110,9 +1115,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "yl" = (
-/obj/structure/table/wood,
-/obj/item/melee/knife/kitchen,
-/obj/item/cutting_board,
+/obj/machinery/griddle,
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
 "yw" = (
@@ -1680,8 +1683,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "GT" = (
-/obj/machinery/chem_dispenser/drinks,
-/obj/structure/table/wood,
+/obj/machinery/oven,
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
 "GY" = (
@@ -1750,9 +1752,14 @@
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
 "HY" = (
-/obj/machinery/reagentgrinder,
+/obj/machinery/reagentgrinder{
+	pixel_x = -8;
+	pixel_y = 18
+	},
 /obj/structure/table/wood,
 /obj/machinery/airalarm/directional/north,
+/obj/item/cutting_board,
+/obj/item/melee/knife/kitchen,
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
 "Ip" = (

@@ -225,7 +225,15 @@
 /obj/machinery/porta_turret/ship/syndicate/weak
 	desc = "A low powered turret designed by the Gorlex Maurauders. Effectively weaponizes mining equipment." //no fucking icw
 
-//Nanotrasen turrets - даем хеви турелям хевилазеры дизейблера
+//Nanotrasen turrets - даем хеви турелям хевилазеры дизейблера и возвращаем лазеры
+
+/obj/machinery/porta_turret/ship/nt
+	stun_projectile = /obj/projectile/beam/disabler
+	lethal_projectile = /obj/projectile/beam/laser
+
+/obj/machinery/porta_turret/ship/nt/light
+	stun_projectile = /obj/projectile/beam/disabler/weak
+	lethal_projectile = /obj/projectile/beam/laser/light
 
 /obj/machinery/porta_turret/ship/nt/heavy
 	stun_projectile = /obj/projectile/beam/disabler/heavylaser/sharplite

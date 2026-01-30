@@ -462,7 +462,7 @@
 /datum/outfit/job/cel/nanotrasen/warden/mimir
 	job_icon = "wardencaptain"
 
-	id = /obj/item/card/id/cel/nanotrasen/vigilitas_leutenant
+	id = /obj/item/card/id/cel/nanotrasen/vigilitas_lieutenant
 
 	implants = list(/obj/item/implant/mindshield)
 

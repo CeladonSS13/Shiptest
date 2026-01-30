@@ -4,48 +4,48 @@
 	uses_overlays = FALSE
 
 /obj/item/card/id/cel/inteq/vanguard
-	desc = "A inteq ID with no proper access to speak of. This one indicates a Vanguard"
+	desc = "An Inteq ID with no proper access to speak of. This one indicates a Vanguard"
 	icon_state = "idiq_vanguard"
 	assignment = "Vanguard"
 
 /obj/item/card/id/cel/inteq/master_at_arms
-	desc = "A inteq ID with no proper access to speak of. This one indicates a Master At Arms"
+	desc = "An Inteq ID with no proper access to speak of. This one indicates a Master At Arms"
 	icon_state = "idiq_masteratarms"
 	assignment = "Master At Arms"
 
 /obj/item/card/id/cel/inteq/enforcer
-	desc = "A InteQ ID with no proper access to speak of. This one indicates a Enforcer."
+	desc = "An InteQ ID with no proper access to speak of. This one indicates an Enforcer."
 	icon_state = "idiq_enforcer"
 	assignment = "Enforcer"
 
 /obj/item/card/id/cel/inteq/artificer
-	desc = "A InteQ ID with no proper access to speak of. This one indicates a Artificer."
+	desc = "An InteQ ID with no proper access to speak of. This one indicates an Artificer."
 	icon_state = "idiq_artificer"
 	assignment = "Artificer"
 
 /obj/item/card/id/cel/inteq/medic
-	desc = "A InteQ ID with no proper access to speak of. This one indicates a Medic."
+	desc = "An InteQ ID with no proper access to speak of. This one indicates a Medic."
 	icon_state = "idiq_medic"
 	assignment = "Medic"
 
 /obj/item/card/id/cel/inteq/recruit
-	desc = "A InteQ ID with no proper access to speak of. This one indicates a Recruit."
+	desc = "An InteQ ID with no proper access to speak of. This one indicates a Recruit."
 	icon_state = "idiq_assistant"
 	assignment = "Recruit"
 
 // MARK: Калибан
 /obj/item/card/id/cel/inteq/honorable_rearguard
-	desc = "A InteQ ID with whith proper access to speak of. This one indicates a Rearguard from flagship vessels."
+	desc = "An InteQ ID with no proper access to speak of. This one indicates a Rearguard from flagship vessels."
 	icon_state = "idiqh_honorablevanguard"
 	assignment = "Rearguard"
 
 /obj/item/card/id/cel/inteq/honorable_artificer
-	desc = "A InteQ ID with whith proper access to speak of. This one indicates a Artificer Class One from flagship vessels."
+	desc = "An InteQ ID with no proper access to speak of. This one indicates a Artificer Class One from flagship vessels."
 	icon_state = "idiqh_artificer"
 	assignment = "Artificer Class One"
 
 /obj/item/card/id/cel/inteq/honorable_medic
-	desc = "A InteQ ID with whith proper access to speak of. This one indicates a Medic Class One from flagship vessels."
+	desc = "An InteQ ID with no proper access to speak of. This one indicates a Medic Class One from flagship vessels."
 	icon_state = "idiqh_medic"
 	assignment = "Medic Class One"
 

@@ -128,7 +128,13 @@ const MissionsList = (props, context) => {
     <Stack vertical>
       <Stack.Item>
         <Box inline mx={1}>
-          {`${mission.value} cr, completed: ${mission.progressStr}`}
+          {`${mission.value} cr`}
+        </Box>
+      </Stack.Item>
+
+      <Stack.Item>
+        <Box inline mx={1}>
+          {`Completed: ${mission.progressStr}`}
         </Box>
       </Stack.Item>
 
@@ -139,10 +145,8 @@ const MissionsList = (props, context) => {
             average: [0.25, 0.75],
             bad: [0, 0.25],
           }}
-          value={mission.remaining / mission.duration}
-        >
-          {mission.timeStr}
-        </ProgressBar>
+          value={mission.progressPer}
+        />
       </Stack.Item>
 
       <Stack.Item>

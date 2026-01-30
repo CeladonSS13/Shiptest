@@ -1126,6 +1126,10 @@
 	dir = 10
 	},
 /obj/machinery/light/directional/west,
+/obj/machinery/microwave{
+	pixel_y = 5
+	},
+/obj/item/radio/intercom/directional/west,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "lj" = (
@@ -1612,14 +1616,38 @@
 /area/ship/security)
 "pn" = (
 /obj/structure/table,
-/obj/machinery/microwave{
-	pixel_y = 5
-	},
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
 /obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
 /obj/machinery/light/directional/west,
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/machinery/light_switch{
+	pixel_y = 22;
+	pixel_x = -12
+	},
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/item/cutting_board{
+	pixel_x = -3;
+	pixel_y = 1
+	},
+/obj/item/food/meat/slab/chicken{
+	pixel_x = -4
+	},
+/obj/item/food/meat/rawcutlet/chicken{
+	pixel_x = 1;
+	pixel_y = 3
+	},
+/obj/item/melee/knife/kitchen{
+	pixel_x = -1;
+	pixel_y = 7
+	},
+/obj/item/kitchen/rollingpin{
+	pixel_x = 4;
+	pixel_y = -5
+	},
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "pq" = (
@@ -2171,13 +2199,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
-"uL" = (
-/obj/effect/turf_decal/corner/opaque/white/diagonal,
-/obj/structure/cable/yellow{
-	icon_state = "1-8"
-	},
-/turf/open/floor/plasteel,
-/area/ship/crew/canteen)
 "vb" = (
 /obj/effect/turf_decal/steeldecal/steel_decals10{
 	dir = 9
@@ -2555,6 +2576,10 @@
 	pixel_x = -2;
 	pixel_y = 3
 	},
+/obj/machinery/reagentgrinder{
+	pixel_y = 17;
+	pixel_x = -7
+	},
 /turf/open/floor/plasteel/sepia,
 /area/ship/crew/canteen)
 "yk" = (
@@ -2742,29 +2767,10 @@
 /area/ship/crew/canteen)
 "AU" = (
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
-/obj/machinery/power/apc/auto_name/directional/north,
-/obj/structure/cable/yellow{
-	icon_state = "0-2"
-	},
-/obj/item/cutting_board{
-	pixel_x = -3;
-	pixel_y = 1
-	},
-/obj/structure/table,
-/obj/item/melee/knife/kitchen{
-	pixel_x = 11;
-	pixel_y = 7
-	},
-/obj/item/food/meat/slab/chicken{
-	pixel_x = -4
-	},
-/obj/item/food/meat/rawcutlet/chicken{
-	pixel_x = 1;
-	pixel_y = 3
-	},
-/obj/machinery/light_switch{
-	pixel_y = 22;
-	pixel_x = -12
+/obj/machinery/oven,
+/obj/item/plate/oven_tray{
+	pixel_x = 0;
+	pixel_y = 10
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
@@ -3266,6 +3272,17 @@
 /obj/item/storage/fancy/egg_box{
 	pixel_y = -3;
 	pixel_x = -4
+	},
+/obj/item/sharpener{
+	pixel_x = 2
+	},
+/obj/item/reagent_containers/condiment/enzyme{
+	pixel_x = -6;
+	pixel_y = 10
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -7;
+	pixel_y = 2
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
@@ -4090,7 +4107,7 @@
 	dir = 8
 	},
 /obj/structure/cable/yellow{
-	icon_state = "4-8"
+	icon_state = "1-8"
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
@@ -4142,32 +4159,12 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "Nz" = (
-/obj/structure/table,
-/obj/machinery/reagentgrinder{
-	pixel_y = 17;
-	pixel_x = -7
-	},
-/obj/item/reagent_containers/condiment/enzyme{
-	pixel_x = -6;
-	pixel_y = 10
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -7;
-	pixel_y = 2
-	},
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
 /obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
-/obj/item/radio/intercom/directional/west,
 /obj/machinery/firealarm/directional/west,
-/obj/item/sharpener{
-	pixel_x = 2
-	},
-/obj/item/kitchen/rollingpin{
-	pixel_x = 4;
-	pixel_y = -5
-	},
+/obj/machinery/griddle,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "NB" = (
@@ -4850,8 +4847,24 @@
 	},
 /obj/structure/table/wood/reinforced,
 /obj/item/reagent_containers/food/drinks/mug{
-	pixel_x = 6;
-	pixel_y = -4
+	pixel_x = 12;
+	pixel_y = -15
+	},
+/obj/item/plate{
+	pixel_x = 0;
+	pixel_y = 1
+	},
+/obj/item/plate{
+	pixel_x = 0;
+	pixel_y = 3
+	},
+/obj/item/plate{
+	pixel_x = 0;
+	pixel_y = 5
+	},
+/obj/item/plate{
+	pixel_x = 0;
+	pixel_y = 8
 	},
 /turf/open/floor/plasteel/sepia,
 /area/ship/crew/canteen)
@@ -5784,7 +5797,7 @@ Sv
 Sv
 bD
 AU
-uL
+TQ
 TQ
 Pa
 jd
