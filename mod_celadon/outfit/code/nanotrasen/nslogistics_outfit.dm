@@ -4,6 +4,16 @@
 	name = "NT N+S Logistics - Captain"
 	job_icon = "captain"
 
+	head = /obj/item/clothing/head/nanotrasen/cap/supply
+	uniform = /obj/item/clothing/under/nanotrasen/supply/qm
+	suit = null
+	alt_suit = null
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/cargo
+	shoes = /obj/item/clothing/shoes/sneakers/brown
+	glasses = /obj/item/clothing/glasses/sunglasses
+	gloves = null
+	l_hand = /obj/item/clipboard
+
 	id = /obj/item/card/id/cel/nanotrasen/nslogistics_captain
 
 // MARK: Command
@@ -46,6 +56,14 @@
 	uniform = /obj/item/clothing/under/nanotrasen/supply
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/cargo
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/cargo=1)
+
+/datum/outfit/job/cel/nanotrasen/engineer/nslogistics
+	name = "NT N+S Logistics - Repair Technician"
+	job_icon = "engineer"
+
+	id = /obj/item/card/id/cel/nanotrasen/nslogistics_assistant
+
+	belt = /obj/item/pda/engineering
 
 // MARK: Assistant
 
