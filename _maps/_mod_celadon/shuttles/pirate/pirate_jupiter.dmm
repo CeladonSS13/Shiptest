@@ -137,12 +137,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
-"bC" = (
-/obj/machinery/power/grounding_rod{
-	anchored = 1
-	},
-/turf/open/floor/plating/airless,
-/area/ship/external)
 "bG" = (
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/on/layer2,
 /obj/structure/cable{
@@ -161,13 +155,11 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering)
 "bX" = (
+/obj/effect/turf_decal/industrial/outline/grey,
 /obj/machinery/power/grounding_rod{
 	anchored = 1
 	},
-/obj/machinery/camera/xray{
-	dir = 8
-	},
-/turf/open/floor/plating/airless,
+/turf/open/floor/plasteel/tech/grid,
 /area/ship/external)
 "cb" = (
 /obj/structure/catwalk/over,
@@ -288,28 +280,29 @@
 /area/ship/external)
 "dW" = (
 /obj/structure/closet/wall/red/directional/east,
-/obj/item/storage/box/ammo/c299{
-	pixel_x = 7;
-	pixel_y = 16
-	},
 /obj/item/stock_parts/cell/gun{
-	pixel_x = -7;
+	pixel_x = -9;
 	pixel_y = 7
 	},
 /obj/item/stock_parts/cell/gun{
-	pixel_x = -4;
-	pixel_y = 3
+	pixel_x = -9;
+	pixel_y = 1
 	},
 /obj/item/stock_parts/cell/gun{
-	pixel_x = -2;
-	pixel_y = -2
-	},
-/obj/item/storage/box/flashbangs{
-	pixel_x = 10
+	pixel_x = -9;
+	pixel_y = -5
 	},
 /obj/item/storage/box/handcuffs{
 	pixel_x = 8;
-	pixel_y = -5
+	pixel_y = -6
+	},
+/obj/item/storage/box/flashbangs{
+	pixel_x = 5;
+	pixel_y = 1
+	},
+/obj/item/storage/box/ammo/c299{
+	pixel_x = 8;
+	pixel_y = 14
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
@@ -419,11 +412,32 @@
 	},
 /obj/effect/turf_decal/industrial/caution,
 /obj/structure/rack,
-/obj/item/tank/internals/oxygen,
 /obj/item/storage/toolbox/mechanical{
-	pixel_y = 3
+	pixel_y = 10;
+	pixel_x = -4
 	},
-/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = -4;
+	pixel_y = 5
+	},
+/obj/item/stack/tape/industrial/pro{
+	pixel_x = 9;
+	pixel_y = -6
+	},
+/obj/item/weldingtool/electric{
+	pixel_y = -4;
+	pixel_x = -7;
+	cell_override = /obj/item/stock_parts/cell
+	},
+/obj/item/weldingtool/electric{
+	pixel_y = -4;
+	pixel_x = 1;
+	cell_override = /obj/item/stock_parts/cell
+	},
+/obj/item/stack/tape/industrial/electrical{
+	pixel_x = 9;
+	pixel_y = 1
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "fD" = (
@@ -963,6 +977,10 @@
 /obj/item/paper{
 	default_raw_text = "Install the capacitors into the SMESes. You will need them."
 	},
+/obj/item/screwdriver{
+	pixel_x = 1;
+	pixel_y = 2
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "oi" = (
@@ -983,6 +1001,15 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
+"ow" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1
+	},
+/obj/machinery/camera/xray{
+	dir = 1
+	},
+/turf/open/floor/plating/airless,
+/area/ship/external)
 "oy" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1072,12 +1099,14 @@
 	pixel_x = -4;
 	pixel_y = 13
 	},
-/obj/item/gun/energy/e_gun/advtaser{
-	pixel_x = 3;
-	pixel_y = -5
+/obj/item/gun/energy/e_gun/e_old/adv_stopping{
+	pixel_y = 5
 	},
 /obj/item/gun/energy/e_gun/e_old/adv_stopping,
-/obj/item/gun/energy/e_gun/e_old/adv_stopping,
+/obj/item/gun/energy/e_gun/advtaser{
+	pixel_x = 4;
+	pixel_y = -9
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "qj" = (
@@ -1285,13 +1314,11 @@
 "sC" = (
 /obj/item/radio/intercom/directional/north,
 /obj/structure/railing,
-/obj/effect/turf_decal/industrial/caution{
-	dir = 1
-	},
 /obj/machinery/atmospherics/components/unary/tank/air{
 	dir = 4;
 	piping_layer = 2
 	},
+/obj/effect/turf_decal/industrial/outline/yellow,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering)
 "sD" = (
@@ -1341,10 +1368,6 @@
 /obj/structure/closet/wall/red/directional/north{
 	name = "armor locker"
 	},
-/obj/item/clothing/suit/armor/riot,
-/obj/item/clothing/suit/armor/riot{
-	pixel_x = 4
-	},
 /obj/item/clothing/gloves/tackler,
 /obj/item/clothing/gloves/tackler{
 	pixel_y = -3
@@ -1362,11 +1385,18 @@
 	pixel_x = -4;
 	pixel_y = 3
 	},
-/obj/item/clothing/suit/armor/vest/marine/medium,
+/obj/item/clothing/suit/armor/riot/solfed{
+	desc = "A charcoal-painted suit of bulky, heavy armor designed for close-quarters fighting and riot control. Helps the wearer resist shoving in close quarters.";
+	pixel_x = 4
+	},
+/obj/item/clothing/suit/armor/riot/solfed{
+	desc = "A charcoal-painted suit of bulky, heavy armor designed for close-quarters fighting and riot control. Helps the wearer resist shoving in close quarters."
+	},
 /obj/item/clothing/suit/armor/vest/marine/medium{
 	pixel_x = 3;
 	pixel_y = -3
 	},
+/obj/item/clothing/suit/armor/vest/marine/medium,
 /obj/item/clothing/head/helmet/riot{
 	pixel_x = -7;
 	pixel_y = -6
@@ -1375,8 +1405,14 @@
 	pixel_x = -3;
 	pixel_y = -3
 	},
-/obj/item/clothing/head/helmet/bulletproof/x11,
-/obj/item/clothing/head/helmet/bulletproof/x11,
+/obj/item/clothing/head/helmet/bulletproof/x11{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/obj/item/clothing/head/helmet/bulletproof/x11{
+	pixel_x = 7;
+	pixel_y = 7
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "tJ" = (
@@ -2014,6 +2050,29 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
+"Dd" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/warning,
+/obj/machinery/button/door{
+	dir = 4;
+	pixel_y = -4;
+	pixel_x = -24;
+	id = "noderiderengine";
+	name = "Engine shutters"
+	},
+/obj/effect/turf_decal/corner_techfloor_gray{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-4";
+	color = "#00aa00"
+	},
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/ship_gravity,
+/turf/open/floor/plasteel/dark,
+/area/ship/engineering)
 "De" = (
 /obj/structure/cable{
 	icon_state = "1-2";
@@ -2249,28 +2308,10 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "FV" = (
-/obj/effect/turf_decal/spline/fancy/opaque/black/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/industrial/warning,
-/obj/machinery/button/door{
-	dir = 4;
-	pixel_y = -4;
-	pixel_x = -24;
-	id = "noderiderengine";
-	name = "Engine shutters"
-	},
-/obj/effect/turf_decal/corner_techfloor_gray{
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "0-4";
-	color = "#00aa00"
-	},
-/obj/machinery/power/apc/auto_name/directional/north,
-/obj/machinery/power/ship_gravity,
-/turf/open/floor/plasteel/dark,
-/area/ship/engineering)
+/obj/effect/turf_decal/spline/fancy/opaque/black,
+/obj/machinery/camera/xray,
+/turf/open/floor/plating/airless,
+/area/ship/external)
 "Ga" = (
 /obj/structure/cable{
 	icon_state = "4-8";
@@ -2477,11 +2518,11 @@
 /area/ship/external)
 "JI" = (
 /obj/item/radio/intercom/directional/south,
-/obj/effect/turf_decal/industrial/caution,
 /obj/machinery/atmospherics/components/unary/tank/air{
 	dir = 4;
 	piping_layer = 2
 	},
+/obj/effect/turf_decal/industrial/outline/yellow,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering)
 "JP" = (
@@ -2492,6 +2533,12 @@
 	color = "#00aa00"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/caution{
+	dir = 4
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -2517,6 +2564,12 @@
 	color = "#00aa00"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/caution{
+	dir = 4
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -2593,6 +2646,7 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 8
 	},
+/obj/item/stack/cable_coil/cut/yellow,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "Kz" = (
@@ -3288,6 +3342,11 @@
 	name = "CHUVAK TM Donk-pockets";
 	pixel_y = 5
 	},
+/obj/item/storage/box/donkpockets/donkpocketspicy{
+	desc = "Produced personally be CHUVAK TM. Ultra-spicy";
+	name = "CHUVAK TM Donk-pockets";
+	pixel_y = 9
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "Xw" = (
@@ -3475,13 +3534,13 @@ by
 by
 Ck
 by
-bX
 by
 by
 by
 by
 by
-bX
+by
+by
 by
 Ck
 by
@@ -3504,13 +3563,13 @@ by
 by
 dS
 by
-up
+Nv
 by
 by
 by
 by
 by
-up
+wD
 by
 dS
 by
@@ -3532,15 +3591,15 @@ by
 by
 by
 ef
-Uq
-Nv
-bC
+ow
+up
+bX
 by
 by
 by
-bC
-wD
-qp
+bX
+up
+FV
 oy
 by
 by
@@ -3621,7 +3680,7 @@ by
 pM
 Wv
 Wv
-FV
+Dd
 hQ
 hQ
 hQ
@@ -4345,13 +4404,13 @@ qc
 aD
 Kc
 by
-bC
+Qp
 by
 oJ
 nI
 oJ
 by
-bC
+Qp
 by
 pm
 aD
