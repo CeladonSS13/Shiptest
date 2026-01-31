@@ -197,3 +197,58 @@
 	sparks.set_up(number = 5, cardinals_only = TRUE, location = mod.wearer.loc)
 	sparks.start()
 */
+
+// MARK: WARP
+///Телепорт, то там роллится 3 д4 и на эту дистанцию тепает. Если три одинаковые цифры выпали, то происходит прикол, который игроки должны сами найти.
+/obj/item/mod/module/unstable_warp
+	name = "MOD Slipstream warp module"
+	desc = "The Slipstream program is a unique innovation. The module itself is a miniaturized near-lightspeed drive capable of transporting the user through bluespace with acceptable accuracy.\n\
+	The technology is temperamental, at best: nothing smaller than an armored human being can survive and the stress of exposed blink travel,\n\
+	and the experience can be traumatic to the user."
+	module_type = MODULE_ACTIVE
+	complexity = 4
+	active_power_cost = DEFAULT_CHARGE_DRAIN * 2
+	incompatible_modules = list(/obj/item/mod/module/unstable_warp)
+	cooldown_time = 3 SECONDS
+	overlay_state_inactive = "inteq_module_light"
+	var/turf/old_loc
+	use_power_cost = 1000
+
+/obj/item/mod/module/unstable_warp/proc/returnal()
+	if(old_loc)
+		mod.wearer.forceMove(old_loc)
+		to_chat(mod.wearer,span_alert("...What?"))
+		return TRUE
+	else
+		to_chat(mod.wearer,span_userdanger("WHY AM I NOT COMING BACK? WHERE AM I? I NEED GOD'S HELP, PLEASE!"))
+		log_admin("Something broke and [mod.wearer] got stuck after using unstable warp module.")
+	return FALSE
+
+/obj/item/mod/module/unstable_warp/on_use()
+	if (!..())
+		return
+	var/list/rolls = list(rand(0,4),rand(0,4),rand(0,4))
+	if(rolls[1] == rolls[2] && rolls[1] == rolls[3] && rolls[2] == rolls[3])
+		var/list/anomalies = list(locate(85,15,1),locate(32,136,1),locate(175,186,1),locate(170,175,1),locate(170,159,1),locate(9,7,1))
+		var/turf/T = pick(anomalies)
+		var/mob/living/user = mod.wearer
+		old_loc = get_turf(user)
+		if(T && prob(90))
+			var/atom/movable/AM = user.pulling
+			if(AM)
+				AM.forceMove(T)
+			user.forceMove(T)
+			if(AM)
+				user.start_pulling(AM)
+			to_chat(user, span_notice("I blink and find myself in... What is this place?"))
+			addtimer(CALLBACK(src,PROC_REF(returnal)),10 SECONDS)
+			return
+		else
+			to_chat(user,span_danger("I feel incredibly good, I didn't warp this time."))
+			return
+	var/sum = rolls[1]+rolls[2]+rolls[3]
+	if(mod.wearer)
+		do_teleport(mod.wearer,get_ranged_target_turf(mod.wearer, mod.wearer.dir, sum))
+		drain_power(use_power_cost)
+		mod.wearer.adjustOrganLoss(ORGAN_SLOT_BRAIN, 1, 150)
+	return

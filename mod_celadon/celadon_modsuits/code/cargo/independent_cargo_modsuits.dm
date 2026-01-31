@@ -173,6 +173,14 @@
 	cost = 3000
 	contains = list(/obj/item/mod/module/armor_assist)
 
+/datum/supply_pack/faction/independent/modsuits/modules/unstable_warp
+	name = "MOD Slipstream warp module"
+	desc = "The Slipstream program is a unique innovation. The module itself is a miniaturized near-lightspeed drive capable of transporting the user through bluespace with acceptable accuracy.\
+			The technology is temperamental, at best: nothing smaller than an armored human being can survive the stress of exposed blink travel,\n\
+			and the experience can be traumatic to the user."
+	cost = 6000
+	contains = list(/obj/item/mod/module/unstable_warp)
+
 // MARK: SECURITY
 /datum/supply_pack/faction/independent/modsuits/modules/mag_harness
 	name = "MOD Magnetic Harness Module"
