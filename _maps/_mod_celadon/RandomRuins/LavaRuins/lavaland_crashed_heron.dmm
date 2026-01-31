@@ -7386,7 +7386,7 @@
 /obj/item/circuitboard/machine/vendor{
 	name = "NanoMed Vendor (Machine Board)"
 	},
-/obj/item/vending_refill/wallmed{
+/obj/item/vending_refill/wallmed/ship{
 	name = "NanoMed restocking unit"
 	},
 /turf/open/floor/plating/asteroid/dirt/grass/lavaland,
@@ -13445,7 +13445,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/vending/wallmed{
+/obj/machinery/vending/wallmed/ship{
 	icon_state = "wallmed-off";
 	pixel_y = -28
 	},
