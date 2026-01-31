@@ -1837,7 +1837,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		if(user != target && (target.mob_biotypes & MOB_ORGANIC) && (atk_verb == ATTACK_EFFECT_BITE))
 			var/datum/reagents/tasty_meal = new()
 			tasty_meal.add_reagent(/datum/reagent/consumable/nutriment/protein, round(damage/3, 1))
-			tasty_meal.trans_to(user, tasty_meal.total_volume, transfered_by = user, method = INGEST)
+			tasty_meal.trans_to(user, tasty_meal.total_volume, transfered_by = user, methods = INGEST)
 		// [/CELADON-ADD]
 		if((target.stat != DEAD) && damage >= user.dna.species.punchstunthreshold)
 			target.visible_message(
