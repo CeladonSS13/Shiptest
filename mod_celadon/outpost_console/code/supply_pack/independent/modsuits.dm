@@ -30,6 +30,14 @@
 	MODsuits
 */
 
+/datum/supply_pack/faction/independent/modsuits/unstable_warp
+	name = "Slipstream warp MOD module"
+	desc = "The Slipstream program is a unique innovation. The module itself is a miniaturized near-lightspeed drive capable of transporting the user through bluespace with acceptable accuracy.\
+	The technology is temperamental, at best: nothing smaller than an armored human being can survive the stress of exposed blink travel,\n\
+	and the experience can be traumatic to the user."
+	cost = 6000
+	contains = list(/obj/item/mod/module/unstable_warp)
+	crate_name = "MOD module"
 
 /*
 /datum/supply_pack/modsuits/civilian
