@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
 	"map_name": "Squab-class Multipurpose Frigate",
 	"map_short_name": "Squab",
-	"description": "Многоцелевой фрегат класса 'Squab' во владении N+S Logistics - это ещё более компактная и современная замена классу 'Delta', сочетающая в себе достаточное для комфортного проживания пространство для экипажа, сравнимый лишь с классом 'Meta' огромный грузовой отсек и высокую удельную тягу. Корабль обычно комплектуется штатной охраной VI и малой научной командой с руководителем, от самой Компании.",
+	"description": "Многоцелевой фрегат класса 'Squab' во владении N+S Logistics - это ещё более компактная и современная замена классу 'Delta', сочетающая в себе достаточное для комфортного проживания пространство для экипажа, сравнимый лишь с классом 'Meta' грузовой отсек и высокую удельную тягу. Корабль обычно комплектуется штатной охраной VI и малой научной командой с руководителем, от самой Компании.",
 	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_squab.dmm",
 	"enabled": true,
 	"limit": 1,
@@ -36,23 +36,15 @@
 			"slots": 1
 		},
 		"Scientist": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/scientist",
-			"slots": 1
-		},
-		"Roboticist": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/scientist/roboticist",
-			"slots": 1
+			"outfit": "/datum/outfit/job/cel/nanotrasen/scientist/deforest_researcher",
+			"slots": 2
 		},
 		"Shaft Miner": {
 			"outfit": "/datum/outfit/job/cel/nanotrasen/miner/nslogistics",
 			"slots": 2
 		},
-		"Repair Technician": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/engineer/nslogistics",
-			"slots": 1
-		},
-		"Deckhand": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/assistant/nslogistics",
+		"Ship Engineer": {
+			"outfit": "/datum/outfit/job/cel/nanotrasen/engineer/nakamura",
 			"slots": 1
 		}
 
