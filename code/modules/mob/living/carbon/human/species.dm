@@ -1893,7 +1893,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	if(M.mind)
 		attacker_style = M.mind.martial_art
 	//[CELADON-EDIT] A little martial arts buff
-	if((M != H) && M.a_intent != INTENT_HELP && H.check_shields(M, 0, M.name, attack_type = attacker_style ? MARTIAL_ARTS : UNARMED_ATTACK))
+	if((M != H) && M.a_intent != INTENT_HELP && H.check_shields(M, 0, M.name, attack_type = attacker_style.name != "Martial Art" ? MARTIAL_ARTS : UNARMED_ATTACK))
 	//if((M != H) && M.a_intent != INTENT_HELP && H.check_shields(M, 0, M.name, attack_type = UNARMED_ATTACK : MELEE_ATTACK)
 	//[CELADON-EDIT] A little martial arts buff
 		log_combat(M, H, "attempted to touch")
