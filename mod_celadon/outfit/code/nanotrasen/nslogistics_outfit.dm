@@ -61,9 +61,10 @@
 	name = "NT N+S Logistics - Repair Technician"
 	job_icon = "engineer"
 
+	head = /obj/item/clothing/head/hardhat/nanotrasen/blue
+	suit = /obj/item/clothing/suit/nanotrasen/vest/blue
+	uniform = /obj/item/clothing/under/nanotrasen/supply
 	id = /obj/item/card/id/cel/nanotrasen/nslogistics_assistant
-
-	belt = /obj/item/pda/engineering
 
 // MARK: Assistant
 
