@@ -1,6 +1,9 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "am" = (
-/obj/structure/sign/nanotrasen,
+/obj/structure/sign/nanotrasen{
+	pixel_x = 0;
+	pixel_y = 4
+	},
 /turf/closed/wall/mineral/titanium/exterior,
 /area/ship/cargo)
 "ar" = (
@@ -712,7 +715,7 @@
 	dir = 4;
 	id = "skybreaker_celldoor"
 	},
-/turf/open/floor/plasteel/tech,
+/turf/open/floor/plasteel/patterned/ridged,
 /area/ship/security)
 "hS" = (
 /obj/structure/cable{
@@ -927,27 +930,27 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
+/obj/structure/railing{
+	dir = 9;
+	layer = 2
+	},
 /obj/effect/turf_decal/techfloor{
-	dir = 1
+	dir = 9
 	},
-/obj/item/toy/plush/celadon/hampter/ert_squad{
-	pixel_x = 1;
-	pixel_y = -10
-	},
-/obj/machinery/recharger{
-	pixel_x = 6;
-	pixel_y = 3
+/obj/structure/table/reinforced{
+	color = "#8A9397"
 	},
 /obj/machinery/recharger{
 	pixel_x = -6;
 	pixel_y = 3
 	},
-/obj/structure/table/reinforced{
-	color = "#8A9397"
+/obj/machinery/recharger{
+	pixel_x = 6;
+	pixel_y = 3
 	},
-/obj/structure/railing{
-	dir = 9;
-	layer = 2
+/obj/item/toy/plush/celadon/hampter/ert_squad{
+	pixel_x = 1;
+	pixel_y = -10
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
@@ -2449,7 +2452,7 @@
 	pixel_y = 0
 	},
 /obj/effect/turf_decal/techfloor{
-	dir = 1
+	dir = 5
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
@@ -3173,9 +3176,13 @@
 	dir = 5
 	},
 /obj/effect/turf_decal/siding/thinplating/dark,
-/obj/structure/closet/crate/bin,
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 1
+	},
+/obj/item/kirbyplants/fullysynthetic{
+	pixel_x = 10;
+	icon_state = "plant-29";
+	pixel_y = 8
 	},
 /turf/open/floor/plasteel/lightgrey,
 /area/ship/hallway/central)
@@ -3649,7 +3656,10 @@
 /turf/open/floor/noslip,
 /area/ship/crew/dorm)
 "Rx" = (
-/obj/structure/sign/nanotrasen,
+/obj/structure/sign/nanotrasen{
+	pixel_x = 0;
+	pixel_y = -5
+	},
 /turf/closed/wall/mineral/titanium/exterior,
 /area/ship/science/robotics)
 "Ry" = (
