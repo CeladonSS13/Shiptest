@@ -606,13 +606,6 @@
 	},
 /obj/machinery/button/door{
 	dir = 4;
-	id = "squab_vi_office";
-	name = "Security Office Bolt control";
-	pixel_x = -20;
-	pixel_y = 0
-	},
-/obj/machinery/button/door{
-	dir = 4;
 	pixel_x = -20;
 	pixel_y = -11;
 	id = "squab_windows";
@@ -829,7 +822,10 @@
 	layer = 2.029
 	},
 /obj/effect/turf_decal/trimline/opaque/white/corner,
-/obj/machinery/airalarm/directional/north,
+/obj/structure/sign/poster/nanotrasen/ns_logistics_ad{
+	pixel_x = -5;
+	pixel_y = 32
+	},
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/cargo)
 "fs" = (
@@ -878,6 +874,9 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "gd" = (
@@ -923,10 +922,7 @@
 	name = "Main Gate Shutters";
 	dir = 8
 	},
-/obj/structure/sign/poster/nanotrasen/ns_logistics_ad{
-	pixel_x = 0;
-	pixel_y = 32
-	},
+/obj/machinery/airalarm/directional/north,
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/cargo)
 "gQ" = (
@@ -1851,6 +1847,9 @@
 "qE" = (
 /obj/effect/turf_decal/trimline/opaque/white/warning,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "qM" = (
@@ -2351,10 +2350,6 @@
 	pixel_y = -4
 	},
 /obj/machinery/light/directional/south,
-/obj/machinery/door/airlock/command{
-	name = "Command Quarters";
-	req_access_txt = "19"
-	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "vZ" = (
@@ -2828,7 +2823,11 @@
 	dir = 8;
 	layer = 2.5
 	},
-/obj/machinery/airalarm/directional/south,
+/obj/machinery/computer/rdconsole{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = -5
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/science/robotics)
 "yR" = (
@@ -3221,7 +3220,6 @@
 "BE" = (
 /obj/machinery/door/airlock/security{
 	name = "Vigilitas Security Office";
-	id_tag = "squab_vi_office";
 	dir = 4
 	},
 /obj/machinery/door/firedoor/border_only{
@@ -3252,6 +3250,9 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "BH" = (
@@ -4131,11 +4132,11 @@
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/cargo)
 "Kh" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/door/airlock/maintenance_hatch{
 	dir = 4;
 	name = "Cargo Maintenance"
 	},
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ship/cargo/port)
 "Ko" = (
@@ -4555,11 +4556,6 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo/office)
 "Oo" = (
-/obj/machinery/computer/rdconsole/core{
-	dir = 4;
-	pixel_x = -9;
-	pixel_y = -1
-	},
 /obj/effect/turf_decal/corner/opaque/purple/half{
 	dir = 8
 	},
@@ -4570,6 +4566,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/steeldecal/steel_decals10,
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/plasteel/white,
 /area/ship/science/robotics)
 "Ov" = (
@@ -5163,7 +5160,8 @@
 /area/ship/external/dark)
 "Tq" = (
 /obj/machinery/mecha_part_fabricator{
-	dir = 1
+	dir = 1;
+	output_direction = 1
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/science/robotics)
@@ -5783,6 +5781,9 @@
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
