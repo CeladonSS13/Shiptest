@@ -78,14 +78,19 @@ MARK: ARMOR BOOSTER
 /obj/item/mod/module/stealth/military
 	name = "MOD military cloaking module"
 	desc = "The latest in stealth technology, this module is a definite upgrade over previous versions. \
-		The field has been tuned to be even more responsive and fast-acting. Unfortunately, the bumping problem hasn't been fixed. The main cause of their use is to come across sniper supression undetected."
+		The field has been tuned to be even more responsive and fast-acting, leaving you almost invisible, \
+		which is incredibly useful for snipers, running across fields undetected. \n\
+		Unfortunately, despite all advacements, due to the increased consumption \
+		and effort required, any hit slows user down while the module is on."
 	icon_state = "cloak_ninja"
 	bumpoff = TRUE
 	complexity = 5
 	stealth_alpha = 30
-	active_power_cost = DEFAULT_CHARGE_DRAIN * 2
-	use_power_cost = DEFAULT_CHARGE_DRAIN * 10
-	cooldown_time = 10 SECONDS
+	active_power_cost = DEFAULT_CHARGE_DRAIN * 6
+	use_power_cost = DEFAULT_CHARGE_DRAIN * 25
+	cooldown_time = 25 SECONDS
+	slowdown_after_disable = TRUE
+	disable_slowdown_time = 5 SECONDS
 	var/mil_prebuilt = FALSE
 	var/mil_removable = TRUE
 
@@ -143,7 +148,7 @@ MARK: ARMOR BOOSTER
 		REMOVE_TRAIT(mod.wearer, TRAIT_IGNOREDAMAGESLOWDOWN, MOD_TRAIT)
 		to_chat(mod.wearer, span_warning("Long pulsating cables crawl out of your body [!(HAS_TRAIT(mod.wearer, TRAIT_ANALGESIA) || HAS_TRAIT(mod.wearer, TRAIT_PAIN_RESIST)) ? "as you feel a throbbing pain in all your muscles" : ""]."))
 		playsound(mod.wearer, 'sound/effects/wounds/pierce1.ogg', 25, TRUE, SHORT_RANGE_SOUND_EXTRARANGE, frequency = 0.5)
-		mod.wearer.adjustBruteLoss(20)
+		mod.wearer.adjustBruteLoss(10)
 		mod.wearer.force_scream()
 		SEND_SIGNAL(mod.wearer, COMSIG_MOD_BLOOD_REPLIKA_DEACTIVATION)
 
@@ -184,7 +189,7 @@ MARK: ARMOR BOOSTER
 	REMOVE_TRAIT(owner, TRAIT_NOHARDCRIT, type)
 	to_chat(owner, span_warning("Long cables and tubes loosen your body, as your blood returns to normal, seeming to disable your capability to overpower anything."))
 	playsound(owner, 'sound/effects/wounds/pierce3.ogg', 120, TRUE, SHORT_RANGE_SOUND_EXTRARANGE, frequency = 0.3)
-	owner.adjustBruteLoss(40)
+	owner.adjustBruteLoss(20)
 	owner.force_scream()
 	UnregisterSignal(owner, COMSIG_MOD_BLOOD_REPLIKA_DEACTIVATION)
 

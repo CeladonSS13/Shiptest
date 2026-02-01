@@ -20,6 +20,8 @@
 	// [CELADON-ADD] - CELADON_MODSUITS
 	/// Whether or not the cloak turns off by getting hit by a bullet.
 	var/bulletoff = TRUE
+	var/slowdown_after_disable = FALSE
+	var/disable_slowdown_time = 0 SECONDS
 	// [/CELADON-ADD]
 /obj/item/mod/module/stealth/on_activation()
 	. = ..()
@@ -59,6 +61,12 @@
 	do_sparks(2, TRUE, src)
 	drain_power(use_power_cost)
 	on_deactivation(display_message = TRUE, deleting = FALSE)
+	// [CELADON-ADD] - CELADON_MODSUITS
+	if(slowdown_after_disable)
+		mod.wearer.add_movespeed_modifier(/datum/movespeed_modifier/shove)
+		to_chat(mod.wearer, span_danger("The [src] stiffens as a huge current passes through your suit, slowing you down!"))
+		addtimer(CALLBACK(mod.wearer, TYPE_PROC_REF(/mob/living/carbon, clear_shove_slowdown)), disable_slowdown_time)
+	// [/CELADON-ADD]
 
 /obj/item/mod/module/stealth/proc/on_unarmed_attack(datum/source, atom/target)
 	SIGNAL_HANDLER
