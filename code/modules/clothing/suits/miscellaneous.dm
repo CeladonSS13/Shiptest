@@ -289,6 +289,13 @@
 	cold_protection = CHEST|GROIN|ARMS|LEGS
 	supports_variations = VOX_VARIATION
 
+/obj/item/clothing/suit/jacket/leather/duster/black
+	name = "black leather duster"
+	desc = "A long, utilitarian leather coat. Ideal for protecting its wearer from rain, sun, and dust."
+	icon_state = "duster_black"
+	item_state = "duster_black"
+
+
 /obj/item/clothing/suit/jacket/leather/duster/command
 	name = "officer's duster"
 	desc = "A long, supple leather coat. Ideal for protecting its wearer from rain, sun, dust, and paperwork."
@@ -401,7 +408,7 @@
 	icon_state = "ablativecoat"
 	item_state = "ablativecoat"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list("melee" = 10, "bullet" = 10, "laser" = 60, "energy" = 60, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 60, "energy" = 60, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100, "wound" = 10)  // [CELADON-EDIT] - CELADON_BALANCE
 	hoodtype = /obj/item/clothing/head/hooded/ablative
 	strip_delay = 30
 	equip_delay_other = 40

@@ -218,7 +218,7 @@
 	min_cold_protection_temperature = FIRE_HELM_MIN_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF
 	can_flashlight = TRUE
-	armor = list("melee" = 15, "bullet" = 60, "laser" = 10, "energy" = 10, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 50)
+	armor = list("melee" = 15, "bullet" = 60, "laser" = 10, "energy" = 10, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 50, "wound" = 20)  // [CELADON-EDIT] - CELADON_BALANCE
 
 /obj/item/clothing/head/helmet/frontier
 	name = "frontiersmen reinforced helmet"

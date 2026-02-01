@@ -624,13 +624,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/hangar)
-"kn" = (
-/obj/machinery/conveyor/auto/outpost{
-	dir = 8;
-	verted = -1
-	},
-/turf/open/floor/plasteel/tech,
-/area/hangar)
 "kr" = (
 /obj/structure/railing{
 	dir = 9;
@@ -813,7 +806,7 @@
 /turf/open/floor/plasteel/tech,
 /area/hangar)
 "ot" = (
-/obj/structure/plasticflaps,
+/obj/structure/plasticflaps/outpost,
 /obj/machinery/conveyor/auto{
 	dir = 1;
 	id = "outpost3";
@@ -1768,13 +1761,6 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"Qz" = (
-/obj/structure/plasticflaps/outpost,
-/obj/machinery/conveyor/auto/outpost{
-	dir = 8
-	},
-/turf/open/floor/plasteel/tech,
-/area/hangar)
 "QG" = (
 /obj/effect/decal/fakelattice,
 /obj/effect/decal/cleanable/dirt{
@@ -1832,10 +1818,7 @@
 	},
 /area/hangar)
 "Rw" = (
-/obj/structure/plasticflaps/outpost,
-/obj/machinery/conveyor/auto/outpost{
-	verted = -1
-	},
+/obj/machinery/conveyor/auto/outpost,
 /turf/open/floor/plasteel/tech,
 /area/hangar)
 "Rz" = (
@@ -6495,7 +6478,7 @@ aI
 "}
 (71,1,1) = {"
 aH
-Qz
+fn
 aH
 aH
 gC
@@ -6557,7 +6540,7 @@ aI
 "}
 (72,1,1) = {"
 aH
-kn
+fn
 AI
 aH
 aZ

@@ -4,17 +4,17 @@
 	uses_overlays = FALSE
 
 /obj/item/card/id/cel/elysium/captain
-	desc = "A Elysium ID with no proper access to speak of. This one indicates a Captain"
+	desc = "An Elysium ID with no proper access to speak of. This one indicates a Captain"
 	icon_state = "ideusm_captain"
 	assignment = "Captain"
 
 /obj/item/card/id/cel/elysium/crew
-	desc = "A Elysium ID with no proper access to speak of."
+	desc = "An Elysium ID with no proper access to speak of."
 	icon_state = "ideusm_civilian"
 	assignment = "Crew"
 
 /obj/item/card/id/cel/elysium/crew/security
-	desc = "A Elysium ID with no proper access to speak of. This one indicates a Security"
+	desc = "An Elysium ID with no proper access to speak of. This one indicates a Security Officer"
 	assignment = "Security"
 
 // /obj/item/card/id/cel/elysium/captain	// Под вопросом

@@ -24,8 +24,8 @@
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32_old.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/lefthand_old.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/righthand_old.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob_old.dmi'
-	ammo_type = list(/obj/item/ammo_casing/energy/disabler, /obj/item/ammo_casing/energy/laser)
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob.dmi'
+	ammo_type = list(/obj/item/ammo_casing/energy/laser, /obj/item/ammo_casing/energy/disabler)
 	// таким образом НТ пушки будут принимать и НТшные магазины, и Эохомы
 	allowed_ammo_types = list(
 		/obj/item/stock_parts/cell/gun,
@@ -73,7 +73,7 @@
 	ammo_x_offset = 2
 	charge_sections = 5
 
-	ammo_type = list(/obj/item/ammo_casing/energy/disabler/assault, /obj/item/ammo_casing/energy/laser/assault)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/assault, /obj/item/ammo_casing/energy/disabler/assault)
 	//default_ammo_type = /obj/item/stock_parts/cell/gun/upgraded
 	default_ammo_type = /obj/item/stock_parts/cell/gun //nerfs the power cell to a standart one
 
@@ -104,7 +104,7 @@
 	default_ammo_type = /obj/item/stock_parts/cell/gun/upgraded
 	icon_state = "hoslaser"
 	force = 10
-	ammo_type = list(/obj/item/ammo_casing/energy/disabler, /obj/item/ammo_casing/energy/laser/hos, /obj/item/ammo_casing/energy/ion/hos, /obj/item/ammo_casing/energy/electrode/hos)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/hos, /obj/item/ammo_casing/energy/disabler, /obj/item/ammo_casing/energy/ion/hos, /obj/item/ammo_casing/energy/electrode/hos)
 	shaded_charge = TRUE
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	manufacturer = MANUFACTURER_SHARPLITE_NEW
@@ -213,13 +213,13 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler, /obj/item/ammo_casing/energy/laser/hos, /obj/item/ammo_casing/energy/trap)
 	ammo_x_offset = 1
 	shaded_charge = TRUE
-	manufacturer = MANUFACTURER_NONE
+	manufacturer = MANUFACTURER_SHARPLITE_NEW
 
 /obj/item/gun/energy/e_gun/e_old/smg
 	name = "\improper E-TAR SMG"
 	desc = "A dual-mode energy gun capable of discharging weaker shots at a much faster rate than the standard energy gun."
 	icon_state = "esmg"
-	ammo_type = list(/obj/item/ammo_casing/energy/disabler/smg, /obj/item/ammo_casing/energy/laser/smg)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/smg, /obj/item/ammo_casing/energy/disabler/smg)
 	ammo_x_offset = 2
 	charge_sections = 3
 	weapon_weight = WEAPON_LIGHT
@@ -229,19 +229,19 @@
 
 	gun_firemodes = list(FIREMODE_SEMIAUTO, FIREMODE_FULLAUTO)
 	default_firemode = FIREMODE_SEMIAUTO
+	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
 
 /obj/item/gun/energy/e_gun/e_old/iot
 	name = "\improper E-SG 500 Second Edition"
 	desc = "A improved version of the E-SG 255. It now includes two firing modes, disable and kill, while still keeping that sweet integrated computer. Please note that the screen is right next to the switch mode button."
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/64x_guns_left_old.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/64x_guns_right_old.dmi'
-	inhand_x_dimension = 64
-	inhand_y_dimension = 64
 	icon_state = "iotshotgun"
-	item_state = "shotgun_combat"
 	fire_delay = 0.6 SECONDS
 	shaded_charge = TRUE
-	ammo_type = list(/obj/item/ammo_casing/energy/disabler/scatter/ultima, /obj/item/ammo_casing/energy/laser/ultima)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/ultima, /obj/item/ammo_casing/energy/disabler/scatter/ultima)
+	charge_sections = 5
+	ammo_x_offset = 2
+	automatic_charge_overlays = TRUE
+
 	w_class = WEIGHT_CLASS_BULKY
 	var/obj/item/modular_computer/integratedNTOS
 	var/NTOS_type = /obj/item/modular_computer/internal
@@ -273,3 +273,67 @@
 
 /obj/item/gun/energy/e_gun/advtaser/empty_cell
 	spawn_no_ammo = TRUE
+
+// Батарейки (Респрайты / Рефлавор)
+/obj/item/stock_parts/cell/gun
+	name = "energy power cell"
+	desc = "A proprietary power cell primarily used by Sharplite Energy weaponry. Nanotrasen's large market share has forced some weapon developers to include adapters for these cells"
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/power.dmi'
+	icon_state = "energy-cell"
+	base_state = "energy"	// Оверлей - Цвет-заряда батареек
+	reskin = TRUE
+
+/obj/item/stock_parts/cell/gun/empty
+	start_empty = TRUE
+
+/obj/item/stock_parts/cell/gun/upgraded
+	name = "upgraded energy power cell"
+	desc = "An high-capacity weapon cell used exclusively by Sharplite Energy weaponry. They are a great improvement over the stock cell, and are frequently sought after by collectors, soldiers, and operators of heavy lasers alike."
+	icon_state = "energy_plus-cell"
+
+/obj/item/stock_parts/cell/gun/upgraded/empty
+	start_empty = TRUE
+
+/obj/item/stock_parts/cell/gun/sharplite
+	name = "plasma power cell"
+	desc = "A proprietary power cell primarily used by Sharplite Plasma weaponry. Nanotrasen's large market share has forced some weapon developers to include adapters for these cells"
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/power.dmi'
+	icon_state = "plasma-cell"
+	base_state = "plasma"	// Оверлей - Цвет-заряда батареек
+	maxcharge = 15000
+	chargerate = 1000
+	reskin = TRUE
+
+/obj/item/stock_parts/cell/gun/sharplite/plus
+	name = "upgraded plasma power cell"
+	desc = "An high-capacity weapon cell used exclusively by Sharplite Plasma weaponry. They are a great improvement over the stock cell, and are frequently sought after by collectors, soldiers, and operators of heavy lasers alike."
+	icon_state = "plasma_plus-cell"
+	maxcharge = 30000
+
+/obj/item/stock_parts/cell/gun/mini
+	icon = 'icons/obj/power.dmi'
+	reskin = FALSE
+
+/obj/item/stock_parts/cell/gun/solgov
+	icon = 'icons/obj/power.dmi'
+	reskin = FALSE
+
+/obj/item/stock_parts/cell/gun/large
+	icon = 'icons/obj/power.dmi'
+	reskin = FALSE
+
+/obj/item/stock_parts/cell/gun/kalix
+	icon = 'icons/obj/power.dmi'
+	reskin = FALSE
+
+/obj/item/stock_parts/cell/gun/pgf
+	icon = 'icons/obj/power.dmi'
+	reskin = FALSE
+
+/obj/item/stock_parts/cell/gun/sharplite/mini
+	icon = 'icons/obj/power.dmi'
+	reskin = FALSE
+
+// Выше вместимость увеличена была в 1.5 раза, и расход тоже соответственно
+/obj/item/ammo_casing/energy/lasergun/sharplite/sniper
+	e_cost = 3000 // 5 per regular cell 10 per upgraded cell

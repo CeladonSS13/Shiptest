@@ -406,6 +406,10 @@
 	blinky_light = FALSE
 	auto_scatter = FALSE
 	var/start_empty = FALSE //this really wasn't a var before?
+	// [CELADON-ADD] - RESPRITE-CELLS - Для специально заданных оверлеев-батареек (в аталасе должен быть оверлей)
+	var/reskin = FALSE
+	var/base_state
+	// [/CELADON-ADD]
 
 /obj/item/stock_parts/cell/gun/Initialize()
 	. = ..()
@@ -420,17 +424,42 @@
 /obj/item/stock_parts/cell/gun/update_overlays()
 	. = ..()
 	cut_overlays()
-	if(charge < 0.1)
-		return
-	else if(charge/maxcharge >=0.995)
-		. += "[initial(icon_state)]-o4"
-	else if(charge/maxcharge >=0.745)
-		. += "[initial(icon_state)]-o3"
-	else if(charge/maxcharge >=0.495)
-		. += "[initial(icon_state)]-o2"
-	else if(charge/maxcharge >=0.145)
-		. += "[initial(icon_state)]-o1"
+// [CELADON-EDIT] - RESPRITE-CELLS - Ору, для этого есть свичи...
+//	if(charge < 0.1)
+//		return
+//	else if(charge/maxcharge >=0.995)
+//		. += "[initial(icon_state)]-o4"
+//	else if(charge/maxcharge >=0.745)
+//		. += "[initial(icon_state)]-o3"
+//	else if(charge/maxcharge >=0.495)
+//		. += "[initial(icon_state)]-o2"
+//	else if(charge/maxcharge >=0.145)
+//		. += "[initial(icon_state)]-o1"
+//	return .
+	if(reskin)	// Специально заданный цвет заряда-батареек (благодоря этому меньше повторов в атласе)
+		switch(charge/maxcharge)
+			if(0.995 to 1)
+				. += "[base_state]-o100"
+			if(0.795 to 0.995)
+				. += "[base_state]-o80"
+			if(0.595 to 0.795)
+				. += "[base_state]-o60"
+			if(0.395 to 0.595)
+				. += "[base_state]-o40"
+			if(0.145 to 0.395)
+				. += "[base_state]-o20"
+	else
+		switch(charge/maxcharge)
+			if(0.995 to 1)
+				. += "[initial(icon_state)]-o4"
+			if(0.795 to 0.995)
+				. += "[initial(icon_state)]-o3"
+			if(0.495 to 0.745)
+				. += "[initial(icon_state)]-o2"
+			if(0.145 to 0.495)
+				. += "[initial(icon_state)]-o1"
 	return .
+// [/CELADON-EDIT]
 
 /obj/item/stock_parts/cell/gun/upgraded
 	name = "high-capacity eoehoma power cell"

@@ -97,21 +97,21 @@
 /obj/item/clothing/suit/space/hardsuit/ert/lp
 	name = "Loss Prevention Lieutenant Hardsuit"
 	desc = "The middlemanagement of the ERT world, the Lieutenant of the LP team is given this slightly downgraded version of the ERT Commander hardsuit."
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 50, "acid" = 80)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 50, "acid" = 80, "wound" = 30)  // [CELADON-EDIT] - CELADON_BALANCE
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/lp
 	resistance_flags = null
 	max_heat_protection_temperature = null
 	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION
 
 /obj/item/clothing/head/helmet/space/hardsuit/ert/lp
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 50, "acid" = 80)
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 50, "acid" = 80, "wound" = 30)  // [CELADON-EDIT] - CELADON_BALANCE
 	name = "Loss Prevention Lieutenant Hardsuit Helmet"
 	desc = "The helmet that comes attached to the LP Team Lieutenant Hardsuit."
 	resistance_flags = null
 	max_heat_protection_temperature = null
 
 /obj/item/clothing/suit/space/hardsuit/ert/lp/sec
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 20, "energy" = 20, "bomb" = 20, "bio" = 100, "rad" = 50, "fire" = 40, "acid" = 40)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 20, "energy" = 20, "bomb" = 20, "bio" = 100, "rad" = 50, "fire" = 40, "acid" = 40, "wound" = 30)  // [CELADON-EDIT] - CELADON_BALANCE
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/lp/sec
 	name = "Loss Prevention Security Hardsuit"
 	desc = "The best of the best security staff get assigned to the ERT. Second best are given this Hardsuit as a part of the LP Team."
@@ -119,7 +119,7 @@
 	item_state = "ert_security"
 
 /obj/item/clothing/head/helmet/space/hardsuit/ert/lp/sec
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 20,"energy" = 20, "bomb" = 20, "bio" = 100, "rad" = 50, "fire" = 40, "acid" = 40)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 20,"energy" = 20, "bomb" = 20, "bio" = 100, "rad" = 50, "fire" = 40, "acid" = 40, "wound" = 30)  // [CELADON-EDIT] - CELADON_BALANCE
 	hardsuit_type = "ert_security"
 	name = "Loss Prevention Security Hardsuit Helmet"
 	desc = "The helmet that comes attached to the LP Team Security Hardsuit."
@@ -127,7 +127,7 @@
 	item_state = "hardsuit0-ert_security"
 
 /obj/item/clothing/suit/space/hardsuit/ert/lp/engi
-	armor = list("melee" = 30, "bullet" = 20, "laser" = 30, "energy" = 30, "bomb" = 25, "bio" = 100, "rad" = 75, "fire" = 90, "acid" = 75)
+	armor = list("melee" = 30, "bullet" = 20, "laser" = 30, "energy" = 30, "bomb" = 25, "bio" = 100, "rad" = 75, "fire" = 90, "acid" = 75, "wound" = 20)  // [CELADON-EDIT] - CELADON_BALANCE
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/lp/engi
 	name = "Loss Prevention Engineering Hardsuit"
 	desc = "The best of the best engineering staff get assigned to the ERT. Second best are given this Hardsuit as a part of the LP Team."
@@ -135,7 +135,7 @@
 	item_state = "ert_engineer"
 
 /obj/item/clothing/head/helmet/space/hardsuit/ert/lp/engi
-	armor = list("melee" = 38, "bullet" = 20, "laser" = 30, "energy" = 30, "bomb" = 25, "bio" = 100, "rad" = 75, "fire" = 90, "acid" = 75)
+	armor = list("melee" = 38, "bullet" = 20, "laser" = 30, "energy" = 30, "bomb" = 25, "bio" = 100, "rad" = 75, "fire" = 90, "acid" = 75, "wound" = 20)  // [CELADON-EDIT] - CELADON_BALANCE
 	name = "Loss Prevention Engineering Hardsuit Helmet"
 	desc = "The helmet that comes attached to the LP Team Engineering Hardsuit."
 	icon_state = "hardsuit0-ert_engineer"
@@ -143,7 +143,7 @@
 	hardsuit_type = "ert_engineer"
 
 /obj/item/clothing/suit/space/hardsuit/ert/lp/med
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 25, "bomb" = 25, "bio" = 100, "rad" = 60, "fire" = 60, "acid" = 60)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 25, "bomb" = 25, "bio" = 100, "rad" = 60, "fire" = 60, "acid" = 60, "wound" = 20)  // [CELADON-EDIT] - CELADON_BALANCE
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/lp/med
 	name = "Loss Prevention Medical Hardsuit"
 	desc = "The best of the best medical staff get assigned to the ERT. Second best are given this Hardsuit as a part of the LP Team."
@@ -152,7 +152,7 @@
 	slowdown = 0.5
 
 /obj/item/clothing/head/helmet/space/hardsuit/ert/lp/med
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 25, "bomb" = 25, "bio" = 100, "rad" = 60, "fire" = 60, "acid" = 60)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 25, "bomb" = 25, "bio" = 100, "rad" = 60, "fire" = 60, "acid" = 60, "wound" = 20)  // [CELADON-EDIT] - CELADON_BALANCE
 	name = "Loss Prevention Medical Hardsuit Helmet"
 	desc = "The helmet that comes attached to the LP Team Medical Hardsuit."
 	icon_state = "hardsuit0-ert_medical"
@@ -163,7 +163,7 @@
 /obj/item/clothing/head/helmet/space/hardsuit/lp
 	name = "RIG heatsuit helmet"
 	desc = "The helmet to the RIG heat suit. It's packed with heat diverting materials, coolant pipes, and a two inch thick face screen."
-	armor = list("melee" = 5, "bullet" = 5, "laser" = 1, "energy" = 1, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 75)
+	armor = list("melee" = 5, "bullet" = 5, "laser" = 1, "energy" = 1, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 75, "wound" = 10)  // [CELADON-EDIT] - CELADON_BALANCE
 	heat_protection = HEAD
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = ACID_PROOF | FIRE_PROOF
@@ -171,7 +171,7 @@
 /obj/item/clothing/suit/space/hardsuit/ancient/lp
 	name = "RIG heat suit"
 	desc = "A fully heat-resistant suit based on an early RIG hardsuit prototype. It sacrifices armor of any kind for intricate heatsinks. It remains rather bulky as a result."
-	armor = list("melee" = 5, "bullet" = 5, "laser" = 1, "energy" = 1, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 75)
+	armor = list("melee" = 5, "bullet" = 5, "laser" = 1, "energy" = 1, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 75, "wound" = 10)  // [CELADON-EDIT] - CELADON_BALANCE
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/lp
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
