@@ -20,6 +20,7 @@
 		/obj/item/stack/medical/ointment = 2,
 		/obj/item/stack/medical/splint = 2,
 		/obj/item/storage/pill_bottle/charcoal/less = 1,
+		/obj/item/reagent_containers/syringe/antiviral = 2,
 		/obj/item/stack/medical/gauze = 4,
 		/obj/item/reagent_containers/hypospray/medipen/ekit = 2,
 		/obj/item/reagent_containers/hypospray/medipen/tramal = 2,
