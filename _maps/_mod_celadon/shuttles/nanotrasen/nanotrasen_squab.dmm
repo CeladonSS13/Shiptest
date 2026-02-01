@@ -496,17 +496,6 @@
 	},
 /turf/open/floor/plasteel/lightgrey,
 /area/ship/security)
-"cV" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4;
-	layer = 2.028
-	},
-/obj/effect/turf_decal/spline/fancy/opaque/black{
-	dir = 4;
-	layer = 2.05
-	},
-/turf/open/floor/engine/hull,
-/area/ship/external/dark)
 "cW" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/machinery/door/airlock/multi_tile/maintenance/v,
@@ -613,6 +602,16 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 5
+	},
+/obj/machinery/button/door{
+	pixel_y = 0;
+	pixel_x = -20;
+	id = "squab_vi_office";
+	normaldoorcontrol = 1;
+	specialfunctions = 4;
+	name = "Security Office Bolt Control";
+	dir = 4;
+	req_access_txt = "19"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
@@ -2419,9 +2418,6 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo/office)
 "wN" = (
-/obj/structure/chair/handrail{
-	dir = 4
-	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 6
 	},
@@ -2738,7 +2734,6 @@
 	dir = 1;
 	id = "squab_sdlock";
 	name = "Director's Shutters Control";
-	normaldoorcontrol = 1;
 	pixel_y = -22;
 	pixel_x = -8
 	},
@@ -3220,7 +3215,8 @@
 "BE" = (
 /obj/machinery/door/airlock/security{
 	name = "Vigilitas Security Office";
-	dir = 4
+	dir = 4;
+	id_tag = "squab_vi_office"
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
@@ -3872,13 +3868,12 @@
 	},
 /area/ship/crew/canteen)
 "Ir" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 4;
 	layer = 2.05
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4;
-	layer = 2.028
 	},
 /turf/open/floor/engine/hull,
 /area/ship/external/dark)
@@ -5658,6 +5653,9 @@
 	dir = 9
 	},
 /obj/machinery/portable_atmospherics/canister/oxygen,
+/obj/structure/chair/handrail{
+	dir = 4
+	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external/dark)
 "YZ" = (
@@ -6535,7 +6533,7 @@ Dg
 mU
 Fm
 Ir
-cV
+Ir
 Ra
 TR
 TJ
