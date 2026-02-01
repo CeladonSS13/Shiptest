@@ -220,9 +220,7 @@
 /area/ship/security/armory)
 "da" = (
 /obj/machinery/power/apc/auto_name/directional/west,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/effect/spawner/bunk_bed{
 	dir = 1
 	},
@@ -614,11 +612,11 @@
 	pixel_x = 9;
 	pixel_y = 5
 	},
-/obj/item/grenade/spawnergrenade/manhacks{
-	pixel_y = -5;
-	pixel_x = -8
+/obj/item/grenade/spawnergrenade/manhacks/ramzi{
+	pixel_x = -8;
+	pixel_y = -5
 	},
-/obj/item/grenade/spawnergrenade/manhacks{
+/obj/item/grenade/spawnergrenade/manhacks/ramzi{
 	pixel_x = -8
 	},
 /obj/item/grenade/spawnergrenade/spesscarp{
@@ -707,9 +705,7 @@
 /obj/machinery/power/terminal{
 	dir = 8
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "jl" = (
@@ -934,9 +930,7 @@
 	preferred_direction = 4;
 	port_direction = 2
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "lY" = (
@@ -974,7 +968,6 @@
 	dir = 8
 	},
 /obj/structure/window/reinforced{
-	icon_state = "rwindow";
 	dir = 1
 	},
 /obj/machinery/power/smes/shuttle/precharged,
@@ -1364,9 +1357,7 @@
 /area/ship/security/armory)
 "tP" = (
 /obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = 12;
@@ -2602,7 +2593,6 @@
 	dir = 8
 	},
 /obj/structure/window/reinforced{
-	icon_state = "rwindow";
 	dir = 1
 	},
 /obj/structure/cable{
@@ -2698,8 +2688,7 @@
 	dir = 6
 	},
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
 	dir = 8
@@ -2995,9 +2984,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "LL" = (
@@ -3740,9 +3727,7 @@
 /area/ship/engineering)
 "YU" = (
 /obj/machinery/power/apc/auto_name/directional/west,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/structure/closet/crate/bin,
 /obj/machinery/light_switch{
 	pixel_y = -12;
