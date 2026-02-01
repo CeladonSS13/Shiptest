@@ -229,7 +229,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/wideband, 26)
 
 /obj/item/radio/intercom/faction/syndicate
 	keyslot = new /obj/item/encryptionkey/syndicate
-	frequency = FREQ_SYNDICATE_SHORT
+	frequency = FREQ_SYNDICATE
 	stripe_color = "#fd5454"
 	icon_state = "intercom-syndicate"
 
@@ -240,8 +240,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/wideband, 26)
 	icon_state = "intercom-syndicate-c"
 
 /obj/item/radio/intercom/faction/suns
-	keyslot = new /obj/item/encryptionkey/suns
-	frequency = FREQ_SUNS_SHORT
+	keyslot = new /obj/item/encryptionkey/syndicate/suns
+	frequency = FREQ_SUNS
 	stripe_color = "#b162ff"
 	icon_state = "intercom-suns"
 
@@ -253,7 +253,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/wideband, 26)
 
 /obj/item/radio/intercom/faction/inteq
 	keyslot = new /obj/item/encryptionkey/inteq
-	frequency = FREQ_INTEQ_SHORT
+	frequency = FREQ_INTEQ
 	stripe_color = "#ffb92d"
 	icon_state = "intercom-inteq"
 
@@ -265,7 +265,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/wideband, 26)
 
 /obj/item/radio/intercom/faction/elysium
 	keyslot = new /obj/item/encryptionkey/elysium
-	frequency = FREQ_ELYSIUM_SHORT
+	frequency = FREQ_ELYSIUM
 	stripe_color = "#29ff29"
 	icon_state = "intercom-elysium"
 
@@ -277,7 +277,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/wideband, 26)
 
 /obj/item/radio/intercom/faction/nanotrasen
 	keyslot = new /obj/item/encryptionkey/nanotrasen
-	frequency = FREQ_NANOTRASEN_SHORT
+	frequency = FREQ_NANOTRASEN
 	stripe_color = "#5fafff"
 	icon_state = "intercom-nanotrasen"
 
@@ -289,7 +289,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/wideband, 26)
 
 /obj/item/radio/intercom/faction/solfed
 	keyslot = new /obj/item/encryptionkey/solgov
-	frequency = FREQ_SOLFED_SHORT
+	frequency = FREQ_SOLFED
 	stripe_color = "#4fe2ff"
 	icon_state = "intercom-solfed"
 
@@ -301,27 +301,15 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/wideband, 26)
 
 /obj/item/radio/intercom/faction/ramzi
 	keyslot = new /obj/item/encryptionkey/ramzi
-	frequency = FREQ_RAMZI_SHORT
+	frequency = FREQ_RAMZI
 	stripe_color = "#ca9d6f"
 	icon_state = "intercom-ramzi"
 
-/obj/item/radio/intercom/faction/ramzi/command
-	name = "command long-range intercom"
-	log = TRUE
-	frequency = FREQ_RAMZI_LONG
-	icon_state = "intercom-ramzi-c"
-
 /obj/item/radio/intercom/faction/pirate
 	keyslot = new /obj/item/encryptionkey/pirate
-	frequency = FREQ_PIRATE_SHORT
+	frequency = FREQ_PIRATE
 	stripe_color = "#777777"
 	icon_state = "intercom-pirate"
-
-/obj/item/radio/intercom/faction/pirate/command
-	name = "command long-range intercom"
-	log = TRUE
-	frequency = FREQ_PIRATE_LONG
-	icon_state = "intercom-pirate-c"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/syndicate, 31)
 MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/syndicate/command, 31)

@@ -105,7 +105,7 @@
 
 /obj/machinery/telecomms/server/presets/minutemen
 	id = "Ramzi Server"
-	freq_listening = list(FREQ_RAMZI_SHORT, FREQ_COMMON)
+	freq_listening = list(FREQ_RAMZI, FREQ_COMMON)
 	autolinkers = list("ramzi", "broadcasterA")
 
 /obj/machinery/telecomms/server/presets/inteq
@@ -115,12 +115,12 @@
 
 /obj/machinery/telecomms/server/presets/pirate
 	id = "Unidentified Server"
-	freq_listening = list(FREQ_PIRATE_SHORT, FREQ_COMMON)
+	freq_listening = list(FREQ_PIRATE, FREQ_COMMON)
 	autolinkers = list("unidentified", "broadcasterB")
 
 /obj/machinery/telecomms/server/presets/vox
 	id = "Raider Server"
-	freq_listening = list(FREQ_VOX_SHORT, FREQ_COMMON)
+	freq_listening = list(FREQ_VOX, FREQ_COMMON)
 	autolinkers = list("raider", "broadcasterB")
 
 /obj/machinery/telecomms/server/presets/suns

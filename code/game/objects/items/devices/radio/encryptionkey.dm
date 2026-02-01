@@ -26,7 +26,10 @@
 /obj/item/encryptionkey/syndicate
 	name = "syndicate encryption key"
 	icon_state = "syn_cypherkey"
-	channels = list(RADIO_CHANNEL_SYNDICATE = 1, RADIO_CHANNEL_SYNDICATE_SHORT = 1)
+	channels = list(RADIO_CHANNEL_SYNDICATE = 1)
+
+/obj/item/encryptionkey/syndicate/captain
+	channels = list(RADIO_CHANNEL_SYNDICATE = 1, RADIO_CHANNEL_SYNDICATE_LONG = 1)
 
 /obj/item/encryptionkey/syndicate/cybersun
 	name = "cybersun encryption key"
@@ -41,6 +44,9 @@
 	icon_state = "suns_cypherkey"
 	channels = list(RADIO_CHANNEL_SUNS = 1)
 
+/obj/item/encryptionkey/syndicate/suns/captain
+	channels = list(RADIO_CHANNEL_SUNS = 1, RADIO_CHANNEL_SYNDICATE_LONG = 1)
+
 /obj/item/encryptionkey/binary
 	name = "binary translator key"
 	icon_state = "bin_cypherkey"
@@ -51,27 +57,33 @@
 /obj/item/encryptionkey/nanotrasen
 	name = "nanotrasen encryption key"
 	icon_state = "hop_cypherkey"
-	channels = list(RADIO_CHANNEL_NANOTRASEN = 1, RADIO_CHANNEL_NANOTRASEN_SHORT = 1)
+	channels = list(RADIO_CHANNEL_NANOTRASEN = 1)
+
+/obj/item/encryptionkey/nanotrasen/captain
+	channels = list(RADIO_CHANNEL_NANOTRASEN = 1, RADIO_CHANNEL_NANOTRASEN_LONG = 1)
 
 /obj/item/encryptionkey/ramzi
 	name = "ramzi encryption key"
 	icon_state = "cmm_cypherkey"
-	channels = list(RADIO_CHANNEL_RAMZI_SHORT = 1)
+	channels = list(RADIO_CHANNEL_RAMZI = 1)
 
 /obj/item/encryptionkey/elysium
 	name = "elysium encryption key"
 	icon_state = "bin_cypherkey"
-	channels = list(RADIO_CHANNEL_ELYSIUM = 1, RADIO_CHANNEL_ELYSIUM_SHORT = 1)
+	channels = list(RADIO_CHANNEL_ELYSIUM = 1)
 
 /obj/item/encryptionkey/inteq
 	name = "inteq encryption key"
 	icon_state = "irmg_cypherkey"
-	channels = list(RADIO_CHANNEL_INTEQ = 1, RADIO_CHANNEL_INTEQ_SHORT = 1)
+	channels = list(RADIO_CHANNEL_INTEQ = 1)
+
+/obj/item/encryptionkey/inteq/captain
+	channels = list(RADIO_CHANNEL_INTEQ = 1, RADIO_CHANNEL_INTEQ_LONG = 1)
 
 /obj/item/encryptionkey/pirate
 	name = "unidentified encryption key"
 	icon_state = "pirate_cypherkey"
-	channels = list(RADIO_CHANNEL_PIRATE_SHORT = 1)
+	channels = list(RADIO_CHANNEL_PIRATE = 1)
 
 /obj/item/encryptionkey/headset_com
 	name = "command radio encryption key"
@@ -81,13 +93,13 @@
 /obj/item/encryptionkey/heads/captain
 	name = "\proper the captain's encryption key"
 	icon_state = "cap_cypherkey"
-	channels = list(RADIO_CHANNEL_EMERGENCY = 1, RADIO_CHANNEL_WIDEBAND = 0) //WS edit - Wideband radio
+	channels = list(RADIO_CHANNEL_EMERGENCY = 1) //WS edit - Wideband radio
 
 /obj/item/encryptionkey/headset_cent
 	name = "\improper CentCom radio encryption key"
 	icon_state = "cent_cypherkey"
 	independent = TRUE
-	channels = list(RADIO_CHANNEL_CENTCOM = 1, RADIO_CHANNEL_WIDEBAND = 0) //WS edit- Wideband Radio
+	channels = list(RADIO_CHANNEL_CENTCOM = 1, RADIO_CHANNEL_WIDEBAND = 1)
 
 /obj/item/encryptionkey/ai //ported from NT, this goes 'inside' the AI.
 	channels = list(RADIO_CHANNEL_EMERGENCY = 1)
@@ -95,24 +107,20 @@
 /obj/item/encryptionkey/solgov
 	name = "\improper SolFed encryption key"
 	icon_state = "solfed_cypherkey"
-	channels = list(RADIO_CHANNEL_SOLFED = 1, RADIO_CHANNEL_SOLFED_SHORT = 1)
+	channels = list(RADIO_CHANNEL_SOLFED = 1)
+
+/obj/item/encryptionkey/solgov/captain
+	name = "\improper SolFed encryption key"
+	icon_state = "solfed_cypherkey"
+	channels = list(RADIO_CHANNEL_SOLFED = 1, RADIO_CHANNEL_SOLFED_LONG = 1)
+
 
 /obj/item/encryptionkey/wideband
 	name = "wideband encryption key"
 	icon_state = "wideband_cypherkey"
 	channels = list(RADIO_CHANNEL_WIDEBAND = 1)
 
-/obj/item/encryptionkey/ramzi
-	name = "ramzi encryption key"
-	icon_state = "ramzi_cypherkey"
-	channels = list(RADIO_CHANNEL_RAMZI_SHORT = 1)
-
 /obj/item/encryptionkey/vox
 	name = "vox encryption key"
 	icon_state = "vox_cypherkey"
-	channels = list(RADIO_CHANNEL_VOX_SHORT = 1)
-
-/obj/item/encryptionkey/suns
-	name = "suns encryption key"
-	icon_state = "suns_cypherkey"
-	channels = list(RADIO_CHANNEL_SUNS = 1, RADIO_CHANNEL_SUNS_SHORT = 1)
+	channels = list(RADIO_CHANNEL_VOX = 1)

@@ -84,7 +84,7 @@
 	network = "irmg_commnet"
 
 /obj/machinery/telecomms/relay/preset/minutemen
-	freq_listening = list(FREQ_EMERGENCY, FREQ_RAMZI_SHORT)
+	freq_listening = list(FREQ_EMERGENCY, FREQ_RAMZI)
 	id = "Ramzi Relay"
 	network = "ramzi_commnet"
 
@@ -114,7 +114,7 @@
 	network = "suns_commnet"
 
 /obj/machinery/telecomms/relay/preset/frontiersmen
-	freq_listening = list(FREQ_EMERGENCY, FREQ_PIRATE_SHORT)
+	freq_listening = list(FREQ_EMERGENCY, FREQ_PIRATE)
 	id = "Unidentified Relay"
 	network = "unidentified_commnet"
 
@@ -124,7 +124,7 @@
 	network = "elysium_commnet"
 
 /obj/machinery/telecomms/relay/preset/vox
-	freq_listening = list(FREQ_EMERGENCY, FREQ_VOX_SHORT)
+	freq_listening = list(FREQ_EMERGENCY, FREQ_VOX)
 	id = "Raider Relay"
 	network = "raider_commnet"
 

@@ -503,57 +503,57 @@
 /obj/item/radio/transceiver/nanotrasen
 	name = "nanotrasen transceiver"
 	icon_state = "walkietalkie_nt"
-	frequency = FREQ_NANOTRASEN_SHORT
+	frequency = FREQ_NANOTRASEN
 	keyslot = /obj/item/encryptionkey/nanotrasen
 
 /obj/item/radio/transceiver/syndicate
 	name = "syndicate transceiver"
 	icon_state = "walkietalkie_syndi"
-	frequency = FREQ_SYNDICATE_SHORT
+	frequency = FREQ_SYNDICATE
 	keyslot = /obj/item/encryptionkey/syndicate
 
 /obj/item/radio/transceiver/solfed
 	name = "solfed transceiver"
 	icon_state = "walkietalkie_sf"
-	frequency = FREQ_SOLFED_SHORT
+	frequency = FREQ_SOLFED
 	keyslot = /obj/item/encryptionkey/solgov
 
 /obj/item/radio/transceiver/inteq
 	name = "inteq transceiver"
 	icon_state = "walkietalkie_inteq"
-	frequency = FREQ_INTEQ_SHORT
+	frequency = FREQ_INTEQ
 	keyslot = /obj/item/encryptionkey/inteq
 
 // Не встречаются в игре, нельзя найти
 /obj/item/radio/transceiver/pirate
 	name = "unidentified transceiver"
 	icon_state = "walkietalkie_pirate"
-	frequency = FREQ_PIRATE_SHORT
+	frequency = FREQ_PIRATE
 	keyslot = /obj/item/encryptionkey/pirate
 
 /obj/item/radio/transceiver/elysium
 	name = "elysium transceiver"
 	icon_state = "walkietalkie_eusm"
-	frequency = FREQ_ELYSIUM_SHORT
+	frequency = FREQ_ELYSIUM
 	keyslot = /obj/item/encryptionkey/elysium
 
 /obj/item/radio/transceiver/ramzi
 	name = "ramzi transceiver"
 	icon_state = "walkietalkie_ramzi"
-	frequency = FREQ_RAMZI_SHORT
+	frequency = FREQ_RAMZI
 	keyslot = /obj/item/encryptionkey/ramzi
 
 /obj/item/radio/transceiver/vox
 	name = "raider transceiver"
 	icon_state = "walkietalkie_vox"
-	frequency = FREQ_VOX_SHORT
+	frequency = FREQ_VOX
 	keyslot = /obj/item/encryptionkey/vox
 
 /obj/item/radio/transceiver/suns
 	name = "suns transceiver"
 	icon_state = "walkietalkie_suns"
-	frequency = FREQ_SUNS_SHORT
-	keyslot = /obj/item/encryptionkey/suns
+	frequency = FREQ_SUNS
+	keyslot = /obj/item/encryptionkey/syndicate/suns
 	//keyslot2 = /obj/item/encryptionkey/suns
 
 // [/CELADON-ADD]
