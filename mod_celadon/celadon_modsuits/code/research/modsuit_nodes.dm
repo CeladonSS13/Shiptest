@@ -143,7 +143,7 @@
 	design_ids = list(
 		"mod_armor_components",
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 20000)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 
 /datum/techweb_node/mod_emp_shield
 	id = "mod_emp_shield"

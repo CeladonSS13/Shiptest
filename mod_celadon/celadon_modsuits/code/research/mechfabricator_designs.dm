@@ -187,6 +187,8 @@
 		/datum/material/glass=1000,
 		/datum/material/plasma=10000,
 		/datum/material/diamond=4000,
+		/datum/material/gold=2000,
+		/datum/material/silver=2000,
 	)
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 
@@ -215,6 +217,7 @@
 		/datum/material/glass=1000,
 		/datum/material/plasma=10000,
 		/datum/material/diamond=4000,
+		/datum/material/silver=4000,
 	)
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 
@@ -239,11 +242,11 @@
 	build_path = /obj/item/mod/construction/plating/locked/responsory
 	materials = list(
 		/datum/material/iron=12000,
-		/datum/material/uranium=2000,
+		/datum/material/uranium=4000,
 		/datum/material/titanium=10000,
-		/datum/material/glass=1000,
-		/datum/material/plasma=10000,
-		/datum/material/diamond=4000,
+		/datum/material/glass=3000,
+		/datum/material/plasma=12000,
+		/datum/material/diamond=2000,
 	)
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 
@@ -255,9 +258,9 @@
 	materials = list(
 		/datum/material/iron=12000,
 		/datum/material/uranium=2000,
-		/datum/material/titanium=10000,
-		/datum/material/glass=1000,
-		/datum/material/plasma=1000,
+		/datum/material/titanium=12000,
+		/datum/material/glass=2000,
+		/datum/material/plasma=3000,
 	)
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 
@@ -268,9 +271,10 @@
 	materials = list(
 		/datum/material/iron=12000,
 		/datum/material/uranium=2000,
-		/datum/material/titanium=10000,
+		/datum/material/titanium=14000,
 		/datum/material/glass=1000,
 		/datum/material/plasma=10000,
+		/datum/material/gold=4000,
 		/datum/material/diamond=4000,
 	)
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY

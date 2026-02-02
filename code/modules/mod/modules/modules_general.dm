@@ -387,6 +387,10 @@
 			/obj/item/clothing/head/sombrero,
 			/obj/item/clothing/head/rabbitears,
 			/obj/item/clothing/head/powdered_wig,
+			// - CELADON_MODSUITS
+			/obj/item/clothing/head, // Это создаст нелепицу, но мне интересно.
+			/obj/item/clothing/head/nanotrasen/captain/peaked,
+			/obj/item/clothing/head/nanotrasen,
 			// [/CELADON-ADD]
 			/obj/item/clothing/head/papersack,
 			))
@@ -433,7 +437,7 @@
 /obj/item/mod/module/hat_stabilizer/generate_worn_overlay()
 	. = ..()
 	if(attached_hat)
-		. += attached_hat.build_worn_icon(default_layer = ABOVE_MOB_LAYER, default_icon_file = 'icons/mob/clothing/head.dmi')
+		. += attached_hat.build_worn_icon(default_layer = ABOVE_MOB_LAYER+0,01, default_icon_file = 'icons/mob/clothing/head.dmi') // [CELADON-EDIT] - CELADON_MODSUITS
 
 /obj/item/mod/module/hat_stabilizer/proc/remove_hat(datum/source, mob/user)
 	SIGNAL_HANDLER

@@ -85,7 +85,7 @@
 /datum/supply_pack/faction/inteq/modsuits/complete/inteq_elite
 	name = "Elite Inteq MODsuit"
 	desc = "Contains an experimental Elite Inteq modsuit."
-	cost = 11000
+	cost = 11000 // Фича в модулях у интеков, а не в броне. Ради этого нужно больше денег, из-за чего мод дешевле.
 	contains = list(/obj/item/mod/control/pre_equipped/inteq/elite/empty)
 
 
@@ -287,7 +287,7 @@
 /datum/supply_pack/faction/solfed/modsuits/complete/falke
 	name = "FLKR MODsuit"
 	desc = "Contains a military-grade commander MODsuit."
-	cost = 15000
+	cost = 16000
 	contains = list(/obj/item/mod/control/pre_equipped/falke/empty)
 
 // MARK: SYNDICATE
@@ -340,7 +340,7 @@
 /datum/supply_pack/faction/syndicate/modsuits/modules/stealth_military
 	name = "MOD military cloak Module"
 	desc = "Contains a module that can cloak your body while active. Requires military capacitor later to be completed."
-	cost = 7000 // 5000 + 2000 from capacitor
+	cost = 8000 // 6000 + 2000 from capacitor
 	contains = list(/obj/item/mod/module/stealth/military,
 					/obj/item/military_tech/capacitor)
 
@@ -386,5 +386,5 @@
 /datum/supply_pack/faction/syndicate/modsuits/complete/syndicate_elite
 	name = "Elite MODsuit"
 	desc = "Contains an experimental Elite modsuit."
-	cost = 11000
+	cost = 13000
 	contains = list(/obj/item/mod/control/pre_equipped/elite/empty)
