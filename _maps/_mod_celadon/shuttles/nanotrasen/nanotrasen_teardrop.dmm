@@ -2871,7 +2871,8 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/public/glass{
-	dir = 1
+	req_ship_access = 1;
+	name = "Cargo Bay"
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
@@ -4436,7 +4437,10 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 1
 	},
-/obj/machinery/door/airlock/public/glass,
+/obj/machinery/door/airlock/public/glass{
+	req_ship_access = 1;
+	name = "Cargo Bay"
+	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "ST" = (
@@ -4462,7 +4466,8 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/public/glass{
-	dir = 8
+	dir = 8;
+	req_ship_access = 1
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
