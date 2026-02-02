@@ -352,7 +352,7 @@
 /datum/supply_pack/faction/independent/modsuits/modules/balloon
 	name = "MOD balloon blower"
 	desc = "Contains a strange module invented years ago by some ingenious mimes. It blows balloons."
-	cost = 2000 // lmao
+	cost = 750
 	contains = list(/obj/item/mod/module/balloon)
 
 // MARK: Paint
@@ -381,3 +381,16 @@
 	cost = 2000
 	contains = list(/obj/item/military_tech/capacitor)
 
+
+// MARK: Power Cells
+/datum/supply_pack/faction/independent/machinery/power/super
+	name = "Super Power Cell"
+	desc = "Break on through! For when you are having a FLARE UP!"
+	cost = 1250
+	contains = list(/obj/item/stock_parts/cell/super)
+
+/datum/supply_pack/faction/independent/machinery/power/hyper
+	name = "Hyper Power Cell"
+	desc = "Merging Complete! Energy never dies."
+	cost = 3000
+	contains = list(/obj/item/stock_parts/cell/hyper)
