@@ -1,12 +1,6 @@
 // code/modules/mob/emote.dm
 //	  /emote/
 
-/datum/emote/flip
-	message = "делает кувырок."
-	emote_type = EMOTE_VISIBLE
-
-/datum/emote/spin
-	message = "кружится."
 
 // code/modules/mob/living/carbon/human/emote.dm
 // 	  /emote/living/carbon/human/
