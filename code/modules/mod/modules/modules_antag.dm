@@ -421,7 +421,7 @@
 		blind_message = span_hear("You hear a charging sound."))
 	playsound(src, 'sound/items/modsuit/loader_charge.ogg', 75, TRUE)
 	to_chat(mod.wearer,span_notice("You start charging..."))
-	animate(mod.wearer, 0.3 SECONDS, pixel_z = 16, flags = ANIMATION_RELATIVE, easing = SINE_EASING|EASE_OUT)
+	animate(mod.wearer, prepare_time, pixel_z = 16, flags = ANIMATION_RELATIVE, easing = SINE_EASING|EASE_OUT) // [CELADON-EDIT] - CELADON_MODSUITS // animate(mod.wearer, 0.3 SECONDS, pixel_z = 16, flags = ANIMATION_RELATIVE, easing = SINE_EASING|EASE_OUT)
 	addtimer(CALLBACK(mod.wearer, TYPE_PROC_REF(/atom, SpinAnimation), 3, 2), 0.3 SECONDS)
 	if(!do_after(mod.wearer, prepare_time, target = mod)) // [CELADON-EDIT] - CELADON_MODSUITS // if(!do_after(mod.wearer, 1 SECONDS, target = mod))
 		animate(mod.wearer, 0.2 SECONDS, pixel_z = -16, flags = ANIMATION_RELATIVE, easing = SINE_EASING|EASE_OUT)
@@ -432,7 +432,7 @@
 	var/angle = get_angle(mod.wearer, target) + 180
 	mod.wearer.transform = mod.wearer.transform.Turn(angle)
 	RegisterSignal(mod.wearer, COMSIG_MOVABLE_IMPACT, PROC_REF(on_throw_impact))
-	mod.wearer.throw_at(target, range = 7, speed = 2, thrower = mod.wearer, spin = FALSE, gentle = TRUE, callback = CALLBACK(src, PROC_REF(on_throw_end), mod.wearer, -angle))
+	mod.wearer.throw_at(target, range = 7, speed = 2.5, thrower = mod.wearer, spin = FALSE, gentle = TRUE, callback = CALLBACK(src, PROC_REF(on_throw_end), mod.wearer, -angle)) // [CELADON-EDIT] - CELADON_MODSUITS // mod.wearer.throw_at(target, range = 7, speed = 2, thrower = mod.wearer, spin = FALSE, gentle = TRUE, callback = CALLBACK(src, PROC_REF(on_throw_end), mod.wearer, -angle))
 
 /obj/item/mod/module/power_kick/proc/on_throw_end(mob/user, angle)
 	if(!user)
@@ -448,7 +448,7 @@
 		return
 	if(isliving(target))
 		var/mob/living/living_target = target
-		living_target.apply_damage(damage, BRUTE, mod.wearer.zone_selected)
+		living_target.apply_damage(damage, BRUTE, mod.wearer.zone_selected, wound_bonus = wounding_power) // [CELADON-EDIT] - CELADON_MODSUITS
 		living_target.Knockdown(knockdown_time)
 	else if(target.atom_integrity)
 		target.take_damage(damage, BRUTE)
