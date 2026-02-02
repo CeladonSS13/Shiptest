@@ -437,7 +437,8 @@
 /obj/item/mod/module/hat_stabilizer/generate_worn_overlay()
 	. = ..()
 	if(attached_hat)
-		. += attached_hat.build_worn_icon(default_layer = ABOVE_MOB_LAYER+0,01, default_icon_file = 'icons/mob/clothing/head.dmi') // [CELADON-EDIT] - CELADON_MODSUITS
+		var/hat_layer = ABOVE_MOB_LAYER+0.01 // [CELADON-ADD] - CELADON_MODSUITS - QUICK FIX UNTIL SOMETHING BETTER
+		. += attached_hat.build_worn_icon(default_layer = hat_layer, default_icon_file = 'icons/mob/clothing/head.dmi') // [CELADON-EDIT] - CELADON_MODSUITS
 
 /obj/item/mod/module/hat_stabilizer/proc/remove_hat(datum/source, mob/user)
 	SIGNAL_HANDLER
