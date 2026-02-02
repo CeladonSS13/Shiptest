@@ -423,14 +423,14 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "dP" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 9
-	},
 /obj/effect/turf_decal/techfloor,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/marker_beacon{
-	picked_color = "Teal"
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
 	},
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "dU" = (
@@ -610,6 +610,10 @@
 	},
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/warning,
+/obj/effect/turf_decal/industrial/warning{
 	dir = 1
 	},
 /turf/open/floor/plasteel/mono/dark,
@@ -1520,12 +1524,28 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "ox" = (
-/obj/machinery/door/airlock/hatch{
+/obj/machinery/light/floor,
+/obj/machinery/door/airlock/freezer{
+	name = "Toilet";
+	id_tag = "teardrop_bathroom";
 	dir = 4
 	},
-/obj/machinery/light/floor,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
+"oI" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "teardrop_turrets";
+	dir = 9
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 9
+	},
+/obj/effect/turf_decal/techfloor{
+	dir = 6
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external)
 "oO" = (
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 8
@@ -1573,14 +1593,19 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "oU" = (
-/obj/effect/turf_decal/techfloor,
 /obj/effect/turf_decal/industrial/warning{
+	dir = 10
+	},
+/obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
-/obj/effect/turf_decal/industrial/stand_clear{
-	dir = 1
+/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4{
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/marker_beacon{
+	picked_color = "Teal"
+	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "pd" = (
@@ -2259,6 +2284,15 @@
 	dir = 4;
 	pixel_x = -5
 	},
+/obj/machinery/button/door{
+	pixel_y = 22;
+	pixel_x = 10;
+	id = "teardrop_bathroom";
+	normaldoorcontrol = 1;
+	specialfunctions = 4;
+	name = "Bolt Control"
+	},
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plasteel/showroomfloor,
 /area/ship/crew/dorm)
 "xj" = (
@@ -2560,22 +2594,6 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
-"yW" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 10
-	},
-/obj/effect/turf_decal/techfloor{
-	dir = 1
-	},
-/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/marker_beacon{
-	picked_color = "Teal"
-	},
-/turf/open/floor/engine/hull/reinforced,
-/area/ship/external)
 "yZ" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 8
@@ -2811,7 +2829,7 @@
 	name = "Engineering";
 	dir = 8
 	},
-/turf/open/floor/plasteel/tech,
+/turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "Bq" = (
 /obj/machinery/computer/atmos_control/tank/nitrogen_tank{
@@ -2855,7 +2873,7 @@
 /obj/machinery/door/airlock/public/glass{
 	dir = 1
 	},
-/turf/open/floor/plasteel/heavymetal/var4,
+/turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "BR" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -2864,16 +2882,14 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/bridge)
 "BZ" = (
-/obj/machinery/porta_turret/ship/nt/light{
-	id = "teardrop_turrets";
-	dir = 1
-	},
-/obj/effect/turf_decal/box,
 /obj/effect/turf_decal/industrial/warning{
-	dir = 1
+	dir = 9
 	},
 /obj/effect/turf_decal/techfloor,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/marker_beacon{
+	picked_color = "Teal"
+	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "Cj" = (
@@ -3174,15 +3190,6 @@
 /obj/item/wrench,
 /turf/open/floor/engine,
 /area/ship/engineering)
-"Fs" = (
-/obj/effect/turf_decal/industrial/warning,
-/obj/effect/turf_decal/techfloor{
-	dir = 1
-	},
-/obj/effect/turf_decal/industrial/stand_clear,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/engine/hull/reinforced,
-/area/ship/external)
 "Fx" = (
 /obj/effect/turf_decal/spline/plain/opaque/purple,
 /turf/open/floor/plasteel/strongdark,
@@ -3524,6 +3531,15 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/bridge)
+"Ke" = (
+/obj/effect/turf_decal/industrial/warning,
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/stand_clear,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external)
 "Km" = (
 /obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/door/poddoor{
@@ -4074,7 +4090,19 @@
 	name = "Engineering";
 	dir = 8
 	},
-/turf/open/floor/plasteel/tech/grid,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering)
 "PS" = (
 /obj/machinery/door/firedoor/border_only{
@@ -4409,7 +4437,7 @@
 	dir = 1
 	},
 /obj/machinery/door/airlock/public/glass,
-/turf/open/floor/plasteel/heavymetal/var4,
+/turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "ST" = (
 /obj/machinery/door/firedoor/border_only{
@@ -4533,6 +4561,7 @@
 	dir = 4
 	},
 /obj/item/soap/nanotrasen,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plasteel/showroomfloor,
 /area/ship/crew/dorm)
 "UY" = (
@@ -4578,14 +4607,13 @@
 "Vo" = (
 /obj/machinery/porta_turret/ship/nt/light{
 	id = "teardrop_turrets";
-	dir = 9
+	dir = 1
 	},
+/obj/effect/turf_decal/box,
 /obj/effect/turf_decal/industrial/warning{
-	dir = 9
+	dir = 1
 	},
-/obj/effect/turf_decal/techfloor{
-	dir = 6
-	},
+/obj/effect/turf_decal/techfloor,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
@@ -4649,6 +4677,14 @@
 	},
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "Engineering"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/warning,
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
@@ -4733,7 +4769,7 @@
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = -12;
-	pixel_y = -20
+	pixel_y = -15
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
@@ -5193,7 +5229,7 @@ fa
 fa
 fa
 fa
-Vo
+oI
 yz
 DY
 IT
@@ -5360,7 +5396,7 @@ fa
 (15,1,1) = {"
 fa
 fa
-dP
+BZ
 It
 Ix
 bf
@@ -5378,13 +5414,13 @@ yz
 RJ
 Zm
 yz
-yW
+oU
 fa
 "}
 (16,1,1) = {"
 fa
 fa
-BZ
+Vo
 It
 cM
 Fx
@@ -5408,7 +5444,7 @@ fa
 (17,1,1) = {"
 fa
 fa
-oU
+dP
 It
 FL
 vG
@@ -5426,7 +5462,7 @@ aO
 aO
 aO
 aO
-Fs
+Ke
 fa
 "}
 (18,1,1) = {"
