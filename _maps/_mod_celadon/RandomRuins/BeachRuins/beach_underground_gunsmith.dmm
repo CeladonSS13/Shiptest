@@ -79,6 +79,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/ruin/beach/gunsmith/workshop)
+"aB" = (
+/mob/living/simple_animal/hostile/human/ramzi/ranged/smg/sidewinder,
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/gunsmith)
 "aC" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/door/poddoor/shutters{
@@ -382,6 +386,7 @@
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
 	dir = 8
 	},
+/mob/living/simple_animal/hostile/human/ramzi/ranged/hydra/gunsmith,
 /turf/open/floor/concrete/slab_1,
 /area/ruin/beach/gunsmith)
 "dD" = (
@@ -2530,6 +2535,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 1
 	},
+/mob/living/simple_animal/hostile/human/ramzi/ranged/shotgun,
 /turf/open/floor/plating,
 /area/ruin/beach/gunsmith/workshop)
 "yX" = (
@@ -3517,6 +3523,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete/tiles,
 /area/ruin/beach/gunsmith)
+"Jq" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/human/ramzi/civilian{
+	wander = 0
+	},
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/gunsmith)
 "Jr" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 4
@@ -4445,7 +4458,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/mob/living/simple_animal/hostile/human/ramzi/ranged/hydra/gunsmith,
+/mob/living/simple_animal/hostile/human/ramzi/ranged/smg/sidewinder,
 /turf/open/floor/wood/walnut,
 /area/ruin/beach/gunsmith)
 "Up" = (
@@ -6037,7 +6050,7 @@ zF
 tf
 ZC
 tf
-ZC
+Jq
 jb
 Bj
 IR
@@ -6185,7 +6198,7 @@ uW
 tf
 tf
 tf
-tf
+aB
 tf
 tf
 HZ
