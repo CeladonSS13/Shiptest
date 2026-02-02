@@ -424,14 +424,9 @@
 /area/ship/medical)
 "dP" = (
 /obj/effect/turf_decal/industrial/warning{
-	dir = 10
+	dir = 9
 	},
-/obj/effect/turf_decal/techfloor{
-	dir = 1
-	},
-/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4{
-	dir = 4
-	},
+/obj/effect/turf_decal/techfloor,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/marker_beacon{
 	picked_color = "Teal"
@@ -1451,7 +1446,7 @@
 /obj/item/radio/headset/nanotrasen/alt/captain,
 /obj/item/extinguisher/advanced,
 /obj/item/extinguisher/mini,
-/obj/item/inducer/adv,
+/obj/item/inducer,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/engineering)
 "oc" = (
@@ -1497,6 +1492,7 @@
 	icon_state = "1-8"
 	},
 /obj/machinery/firealarm/directional/south,
+/obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "ov" = (
@@ -1530,20 +1526,6 @@
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
-"oI" = (
-/obj/machinery/porta_turret/ship/nt/light{
-	id = "teardrop_turrets";
-	dir = 9
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 9
-	},
-/obj/effect/turf_decal/techfloor{
-	dir = 6
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/engine/hull/reinforced,
-/area/ship/external)
 "oO" = (
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 8
@@ -1590,6 +1572,17 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
+"oU" = (
+/obj/effect/turf_decal/techfloor,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external)
 "pd" = (
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer2,
@@ -1994,19 +1987,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
-"tK" = (
-/obj/machinery/porta_turret/ship/nt/light{
-	id = "teardrop_turrets";
-	dir = 1
-	},
-/obj/effect/turf_decal/box,
-/obj/effect/turf_decal/industrial/warning{
-	dir = 1
-	},
-/obj/effect/turf_decal/techfloor,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/engine/hull/reinforced,
-/area/ship/external)
 "tM" = (
 /obj/structure/sign/warning/fire{
 	pixel_y = 32
@@ -2582,9 +2562,14 @@
 /area/ship/engineering)
 "yW" = (
 /obj/effect/turf_decal/industrial/warning{
-	dir = 9
+	dir = 10
 	},
-/obj/effect/turf_decal/techfloor,
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4{
+	dir = 4
+	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/marker_beacon{
 	picked_color = "Teal"
@@ -2879,8 +2864,18 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/bridge)
 "BZ" = (
-/turf/template_noop,
-/area/space)
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "teardrop_turrets";
+	dir = 1
+	},
+/obj/effect/turf_decal/box,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/techfloor,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external)
 "Cj" = (
 /obj/machinery/power/shieldwallgen/atmos{
 	anchored = 1;
@@ -3083,7 +3078,7 @@
 /turf/open/floor/engine/n2,
 /area/ship/engineering)
 "DY" = (
-/obj/structure/reagent_dispensers/fueltank,
+/obj/machinery/rnd/server,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "Eb" = (
@@ -3179,6 +3174,15 @@
 /obj/item/wrench,
 /turf/open/floor/engine,
 /area/ship/engineering)
+"Fs" = (
+/obj/effect/turf_decal/industrial/warning,
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/stand_clear,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external)
 "Fx" = (
 /obj/effect/turf_decal/spline/plain/opaque/purple,
 /turf/open/floor/plasteel/strongdark,
@@ -3520,13 +3524,6 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/bridge)
-"Ke" = (
-/obj/effect/spawner/structure/window/shuttle,
-/obj/machinery/door/poddoor{
-	id = "teardrop_windows"
-	},
-/turf/open/floor/engine/hull/interior,
-/area/ship/security)
 "Km" = (
 /obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/door/poddoor{
@@ -3897,16 +3894,12 @@
 /turf/open/floor/carpet/royalblack,
 /area/ship/crew/dorm/dormtwo)
 "NW" = (
-/obj/effect/turf_decal/techfloor,
-/obj/effect/turf_decal/industrial/warning{
-	dir = 1
+/obj/effect/spawner/structure/window/shuttle,
+/obj/machinery/door/poddoor{
+	id = "teardrop_windows"
 	},
-/obj/effect/turf_decal/industrial/stand_clear{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/engine/hull/reinforced,
-/area/ship/external)
+/turf/open/floor/engine/hull/interior,
+/area/ship/security)
 "NX" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 4
@@ -4583,11 +4576,16 @@
 /turf/open/floor/engine/o2,
 /area/ship/engineering)
 "Vo" = (
-/obj/effect/turf_decal/industrial/warning,
-/obj/effect/turf_decal/techfloor{
-	dir = 1
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "teardrop_turrets";
+	dir = 9
 	},
-/obj/effect/turf_decal/industrial/stand_clear,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 9
+	},
+/obj/effect/turf_decal/techfloor{
+	dir = 6
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
@@ -4637,7 +4635,8 @@
 /obj/docking_port/stationary{
 	width = 27;
 	height = 15;
-	dwidth = 10
+	dwidth = 10;
+	disable_on_owner_ship_dock = 1
 	},
 /turf/template_noop,
 /area/template_noop)
@@ -5194,7 +5193,7 @@ fa
 fa
 fa
 fa
-oI
+Vo
 yz
 DY
 IT
@@ -5361,7 +5360,7 @@ fa
 (15,1,1) = {"
 fa
 fa
-yW
+dP
 It
 Ix
 bf
@@ -5379,13 +5378,13 @@ yz
 RJ
 Zm
 yz
-dP
+yW
 fa
 "}
 (16,1,1) = {"
 fa
 fa
-tK
+BZ
 It
 cM
 Fx
@@ -5409,7 +5408,7 @@ fa
 (17,1,1) = {"
 fa
 fa
-NW
+oU
 It
 FL
 vG
@@ -5427,7 +5426,7 @@ aO
 aO
 aO
 aO
-Vo
+Fs
 fa
 "}
 (18,1,1) = {"
@@ -5774,7 +5773,7 @@ fa
 fa
 fa
 fa
-Ke
+NW
 vY
 ma
 yZ
@@ -5782,7 +5781,7 @@ Rv
 ve
 CS
 vY
-Ke
+NW
 fa
 fa
 fa
@@ -5798,7 +5797,7 @@ fa
 fa
 fa
 fa
-Ke
+NW
 fI
 ZG
 gB
@@ -5806,7 +5805,7 @@ Kn
 jd
 lg
 fI
-Ke
+NW
 fa
 fa
 fa
@@ -5846,7 +5845,7 @@ fa
 fa
 fa
 fa
-Ke
+NW
 Lz
 ts
 ii
@@ -5854,7 +5853,7 @@ aC
 Lo
 TT
 it
-Ke
+NW
 fa
 fa
 fa
@@ -5870,7 +5869,7 @@ fa
 fa
 fa
 fa
-Ke
+NW
 yp
 QV
 jh
@@ -5878,7 +5877,7 @@ fq
 Vw
 QV
 NB
-Ke
+NW
 fa
 fa
 fa
@@ -6029,76 +6028,4 @@ fa
 fa
 fa
 fa
-"}
-(43,1,1) = {"
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-"}
-(44,1,1) = {"
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-"}
-(45,1,1) = {"
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
 "}
