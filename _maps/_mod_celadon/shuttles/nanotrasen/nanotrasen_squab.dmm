@@ -3906,6 +3906,11 @@
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 5
 	},
+/obj/machinery/camera{
+	dir = 4;
+	pixel_x = 0;
+	pixel_y = -12
+	},
 /turf/open/floor/engine/hull,
 /area/ship/external/dark)
 "HL" = (
@@ -4428,6 +4433,11 @@
 	dir = 1
 	},
 /obj/machinery/firealarm/directional/south,
+/obj/machinery/camera{
+	dir = 10;
+	pixel_x = -10;
+	pixel_y = 0
+	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/crew/cryo)
 "MW" = (
@@ -5189,6 +5199,7 @@
 	pixel_y = -4
 	},
 /obj/machinery/light/directional/east,
+/obj/machinery/camera,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo/office)
 "SA" = (
