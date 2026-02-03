@@ -1,3 +1,57 @@
+/obj/item/robot_module
+	var/hasrest = FALSE //For the new borgs
+
+/mob/living/silicon/robot
+	var/has_reststyle = TRUE // Borgs
+
+/mob/living/silicon/robot/verb/rest_style()
+	set name = "Switch Rest Style"
+	set category = "MMI"
+	set desc = "Select your resting pose."
+
+	if(!has_reststyle)
+		to_chat(src, span_warning("Your module does not support it!"))
+		return
+
+	var/choice = alert(src, "Select resting pose", "", "Resting")
+	switch(choice)
+		if("Resting")
+			update_icons()
+			return 0
+	update_icons()
+
+/mob/living/silicon/robot/update_resting()
+	if(resting)
+		ADD_TRAIT(src, TRAIT_IMMOBILIZED, RESTING_TRAIT)
+	else
+		REMOVE_TRAIT(src, TRAIT_IMMOBILIZED, RESTING_TRAIT)
+		set_lying_angle(0)
+		set_body_position(0)
+	return ..()
+
+/mob/living/silicon/robot/update_icons()
+	. = ..()
+	if(client && stat != DEAD && (module.hasrest == TRUE))
+		if(body_position == LYING_DOWN)
+			icon_state = "[module.cyborg_base_icon]-rest"
+			cut_overlays()
+		else
+			icon_state = "[module.cyborg_base_icon]"
+	if(stat == DEAD && module.hasrest == TRUE)
+		icon_state = "[module.cyborg_base_icon]-wreck"
+
+/mob/living/silicon/robot/set_resting()
+	. = ..()
+	update_icons()
+
+/mob/living/silicon/robot/get_up()
+	. = ..()
+	update_icons()
+
+/mob/living/silicon/robot/on_standing_up()
+	. = ..()
+	update_icons()
+
 /obj/item/robot_module/meka
 	name = "Default"
 	icon = 'icons/obj/module.dmi'
