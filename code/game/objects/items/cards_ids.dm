@@ -312,13 +312,36 @@ update_label()
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE)
 	var/anyone = FALSE //Can anyone forge the ID or just syndicate?
 	var/forged = FALSE //have we set a custom name and job assignment, or will we use what we're given when we chameleon change?
+	// [CELADON-ADD] - Adds agent card lock by fingerprint on AltClick
+	var/removed = FALSE
+	var/fingerprint
+	var/datum/action/item_action/chameleon/change/id/chameleon_action
+	// [CELADON-ADD] - Adds agent card lock by fingerprint on AltClick
 
 /obj/item/card/id/syndicate/Initialize()
 	. = ..()
-	var/datum/action/item_action/chameleon/change/id/chameleon_action = new(src)
+	chameleon_action = new(src) // [CELADON-EDIT] var/datum/action/item_action/chameleon/change/id/chameleon_action = new(src) -> chameleon_action = new(src)
 	chameleon_action.chameleon_type = /obj/item/card/id
 	chameleon_action.chameleon_name = "ID Card"
 	chameleon_action.initialize_disguises()
+
+// [CELADON-ADD] - Adds agent card lock by fingerprint on AltClick
+/obj/item/card/id/syndicate/AltClick(mob/living/carbon/user)
+	. = ..()
+	if(!fingerprint || fingerprint == user.dna.uni_identity)
+		if(!removed)
+			chameleon_action.Remove(user)
+			chameleon_action.chameleon_type = null
+			chameleon_action.chameleon_name = null
+			QDEL_NULL(chameleon_action)
+			removed = !removed
+		else
+			chameleon_action = new(src)
+			chameleon_action.chameleon_type = /obj/item/card/id
+			chameleon_action.chameleon_name = "ID Card"
+			chameleon_action.Grant(user)
+			removed = !removed
+// [/CELADON-ADD]
 
 /obj/item/card/id/syndicate/afterattack(obj/item/O, mob/user, proximity)
 	if(!proximity)
@@ -339,19 +362,25 @@ update_label()
 				// [/CELADON-ADD]
 				to_chat(usr, span_notice("The card's microscanners activate as you pass it over the ID, copying its access."))
 
-/obj/item/card/id/syndicate/attack_self(mob/user)
+/obj/item/card/id/syndicate/attack_self(mob/living/carbon/user) //[CELADON-EDIT] mob/user -> mob/living/carbon/user
 	if(isliving(user) && user.mind)
 		var/first_use = registered_name ? FALSE : TRUE
-		if(!(user.mind.special_role || anyone)) //Unless anyone is allowed, only syndies can use the card, to stop metagaming.
+		// [CELADON-FIX] Fixes agent card's mind check from special_role to faction + adds fingerprint check
+		var/list/user_faction_list = user.faction
+		if(!(user_faction_list.Find("[FACTION_PLAYER_SYNDICATE]")) && (!fingerprint || fingerprint != user.dna.uni_identity))
+		//if(!(user.mind.special_role || anyone)) //Unless anyone is allowed, only syndies can use the card, to stop metagaming.
+		// [/CELADON-FIX]
 			if(first_use) //If a non-syndie is the first to forge an unassigned agent ID, then anyone can forge it.
 				anyone = TRUE
 			else
 				return ..()
-
 		var/popup_input = alert(user, "Choose Action", "Agent ID", "Show", "Forge/Reset")
 		if(user.incapacitated())
 			return
 		if(popup_input == "Forge/Reset" && !forged)
+			// [CELADON-ADD] - Adds agent card lock with fingerprint
+			fingerprint = user.dna.uni_identity
+			// [/CELADON-ADD]
 			var/input_name = stripped_input(user, "What name would you like to put on this card? Leave blank to randomise.", "Agent card name", registered_name ? registered_name : (ishuman(user) ? user.real_name : user.name), MAX_NAME_LEN)
 			input_name = reject_bad_name(input_name)
 			if(!input_name)
@@ -381,6 +410,9 @@ update_label()
 
 			return
 		else if (popup_input == "Forge/Reset" && forged)
+			// [CELADON-ADD] - Adds agent card lock with fingerprint
+			fingerprint = null
+			// [/CELADON-ADD]
 			registered_name = initial(registered_name)
 			assignment = initial(assignment)
 			faction_icon = initial(faction_icon)
