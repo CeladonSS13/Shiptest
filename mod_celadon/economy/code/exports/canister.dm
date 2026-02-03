@@ -5,7 +5,7 @@
 /datum/export/large/gas_canister
 	cost = 10 //Base cost of canister. You get more for nice gases inside.
 	unit_name = "Gas Canister"
-	desc = "Оплата зависит от содержимого (Плазма / БЗ / Тритиум)."
+	desc = "Оплата зависит от содержимого (БЗ / Тритиум)."
 	export_types = list(/obj/machinery/portable_atmospherics/canister)
 
 /datum/export/large/gas_canister/get_cost(obj/O)
@@ -13,7 +13,7 @@
 	var/worth = 10
 
 	// Standart: 
-	worth += C.air_contents.get_moles(GAS_PLASMA)*0.35	//	~665
+	//worth += C.air_contents.get_moles(GAS_PLASMA)*0.35	//	~665	// Люди в тупую прожают своих же газы, пока нету времени думать наж этим
 	worth += C.air_contents.get_moles(GAS_BZ)*1			//	~1881
 	worth += C.air_contents.get_moles(GAS_TRITIUM)*2	//	~3743
 	return round(worth)
