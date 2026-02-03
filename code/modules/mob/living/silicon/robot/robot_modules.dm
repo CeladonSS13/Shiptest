@@ -371,6 +371,7 @@
 		"Noble" = image(icon = 'icons/mob/robots.dmi', icon_state = "Noble-MED"),
 		"R34 - MED6a 'Gibbs'" = image(icon = 'icons/mob/robots.dmi', icon_state = "gibbs"),
 		"Qualified Doctor" = image(icon = 'icons/mob/robots.dmi', icon_state = "qualified_doctor")
+		"Kerfus 'Nanotrasen'" = image(icon = 'mod_celadon/_storage_icons/icons/other/borgs/kerfus.dmi', icon_state = "kerfusNT")
 		)
 		med_icons = sortList(med_icons)
 	var/med_borg_icon = show_radial_menu(R, R , med_icons, custom_check = CALLBACK(src, PROC_REF(check_menu), R), radius = 42, require_near = TRUE)
@@ -421,6 +422,10 @@
 			cyborg_base_icon = "qualified-doctor"
 			cyborg_icon_override = 'icons/mob/robots.dmi'
 			special_light_key = "qualified-doctor"
+		if("Kerfus 'Nanotrasen'")
+			cyborg_base_icon = "kerfusNT"
+			cyborg_icon_override = 'mod_celadon/_storage_icons/icons/other/borgs/kerfus.dmi'
+			special_light_key = "kerfusNT"
 		else
 			return FALSE
 	return ..()
@@ -475,6 +480,7 @@
 		"Kodiak" = image(icon = 'icons/mob/robots.dmi', icon_state = "kodiak-eng"),
 		"Noble" = image(icon = 'icons/mob/robots.dmi', icon_state = "Noble-ENG"),
 		"R34 - ENG7a 'Conagher'" = image(icon = 'icons/mob/robots.dmi', icon_state = "conagher"),
+		"Kerfus 'Flushed'" = image(icon = 'mod_celadon/_storage_icons/icons/other/borgs/kerfus.dmi', icon_state = "kerfusFlushed"),
 		)
 		engi_icons = sortList(engi_icons)
 	var/engi_borg_icon = show_radial_menu(R, R , engi_icons, custom_check = CALLBACK(src, PROC_REF(check_menu), R), radius = 42, require_near = TRUE)
@@ -521,6 +527,10 @@
 			cyborg_base_icon = "conagher"
 			cyborg_icon_override = 'icons/mob/robots.dmi'
 			special_light_key = "conagher"
+		if("Kerfus 'Flushed'")
+			cyborg_base_icon = "kerfusFlushed"
+			cyborg_icon_override = 'mod_celadon/_storage_icons/icons/other/borgs/kerfus.dmi'
+			special_light_key = "kerfusFlushed"
 		else
 			return FALSE
 	return ..()
@@ -556,6 +566,7 @@
 		"Kodiak" = image(icon = 'icons/mob/robots.dmi', icon_state = "kodiak-sec"),
 		"Noble" = image(icon = 'icons/mob/robots.dmi', icon_state = "Noble-SEC"),
 		"R34 - SEC10a 'Woody'" = image(icon = 'icons/mob/robots.dmi', icon_state = "woody"),
+		"Kerfus 'NO ERP'" = image(icon = 'mod_celadon/_storage_icons/icons/other/borgs/kerfus.dmi', icon_state = "kerfusNoERP"),
 		)
 		sec_icons = sortList(sec_icons)
 	var/sec_borg_icon = show_radial_menu(R, R , sec_icons, custom_check = CALLBACK(src, PROC_REF(check_menu), R), radius = 42, require_near = TRUE)
@@ -598,6 +609,10 @@
 			cyborg_base_icon = "woody"
 			cyborg_icon_override = 'icons/mob/robots.dmi'
 			special_light_key = "woody"
+		if("Kerfus 'NO ERP'")
+			cyborg_base_icon = "kerfusNoERP"
+			cyborg_icon_override = 'mod_celadon/_storage_icons/icons/other/borgs/kerfus.dmi'
+			special_light_key = "kerfusNoERP"
 		else
 			return FALSE
 	return ..()
@@ -670,6 +685,7 @@
 		"#29" = image(icon = 'icons/mob/robots.dmi', icon_state = "servbot-jani"),
 		"Noble" = image(icon = 'icons/mob/robots.dmi', icon_state = "Noble-JAN"),
 		"R34 - CUS3a 'Flynn'" = image(icon = 'icons/mob/robots.dmi', icon_state = "flynn"),
+		"Kerfus 'Maid'" = image(icon = 'mod_celadon/_storage_icons/icons/other/borgs/kerfus.dmi', icon_state = "kerfusMaid"),
 		)
 		jan_icons = sortList(jan_icons)
 	var/jan_borg_icon = show_radial_menu(R, R , jan_icons, custom_check = CALLBACK(src, PROC_REF(check_menu), R), radius = 42, require_near = TRUE)
@@ -712,6 +728,10 @@
 			cyborg_base_icon = "flynn"
 			cyborg_icon_override = 'icons/mob/robots.dmi'
 			special_light_key = "flynn"
+		if("Kerfus 'Maid'")
+			cyborg_base_icon = "kerfusMaid"
+			cyborg_icon_override = 'mod_celadon/_storage_icons/icons/other/borgs/kerfus.dmi'
+			special_light_key = "kerfusMaid"
 		else
 			return FALSE
 	return ..()
