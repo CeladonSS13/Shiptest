@@ -899,6 +899,20 @@
 	cost = 3
 	ruin_tags = list(RUIN_TAG_HARD_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER)
 
+/datum/map_template/ruin/whitesands/nomads_stop
+	name = "Hermit Nomads Stop"
+	id = "nomads-stop"
+	description = "A set of structures born of ancient prefabs and quick-pour cement, turned into a place for trade on the planet's surface."
+	suffix = "whitesands_surface_nomads_stop.dmm"
+	cost = 3
+
+/datum/map_template/ruin/whitesands/settlements_raid
+	name = "Frontier Settlement Raid"
+	id = "settlements-raid"
+	description = "A settlement leading a solitary salvaging life under the direction of a former Gorlex Marauder, now being raided by the brutal Frontiersmen Fleet."
+	suffix = "whitesands_surface_settlement_raid.dmm"
+	cost = 4
+
 //							///
 //		MARK: Plasma
 //							///
