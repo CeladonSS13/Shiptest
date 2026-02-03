@@ -134,10 +134,10 @@
 	var/rotation_velocity = 0
 
 	var/skiptickfortrail = 0
-	// [CELADON-EDIT] - Убираем предупреждение валидатора
-	var/list/obj/shiptrail/trails = list(1 = null,
-							2 = null,
-							3 = null)
+	// [CELADON-EDIT] - Убираем предупреждение валидатора; [CELADON-EDIT] - Добавлены ковычки для запуска на 516
+	var/list/obj/shiptrail/trails = list("1" = null,
+							"2" = null,
+							"3" = null)
 	// [/CELADON-EDIT]
 
 /datum/overmap/ship/proc/check_proximity()
