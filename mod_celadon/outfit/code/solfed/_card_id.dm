@@ -19,13 +19,13 @@
 	assignment = "Captain"
 
 /obj/item/card/id/cel/solfed/command
-	desc = "A SolFed ID with no proper access to speak of. This one indicates a Command"
+	desc = "A SolFed ID with no proper access to speak of. This one indicates a Commanding Officer"
 	icon_state = "idsf_command"
 	assignment = "Command"
 
 /obj/item/card/id/cel/solfed/command/hop
-	desc = "A SolFed ID with no proper access to speak of. This one indicates a Head of Personal"
-	assignment = "Head of Personal"
+	desc = "A SolFed ID with no proper access to speak of. This one indicates a Head of Personnel"
+	assignment = "Head of Personnel"
 
 /obj/item/card/id/cel/solfed/command/quartermaster
 	desc = "A SolFed ID with no proper access to speak of. This one indicates a Quartermaster"
@@ -44,16 +44,16 @@
 	assignment = "Scientific Overseer"
 
 /obj/item/card/id/cel/solfed/crew
-	desc = "A SolFed ID with no proper access to speak of. This one indicates a Crew"
+	desc = "A SolFed ID with no proper access to speak of."
 	icon_state = "idsf_crew"
 	assignment = "Crew"
 
 /obj/item/card/id/cel/solfed/crew/miner
-	desc = "A SolFed ID with no proper access to speak of. This one indicates a Contract Miner"
-	assignment = "Contract Miner"
+	desc = "A SolFed ID with no proper access to speak of. This one indicates a Contracted Miner"
+	assignment = "Contracted Miner"
 
 /obj/item/card/id/cel/solfed/crew/engineer
-	desc = "A SolFed ID with no proper access to speak of. This one indicates a Engineer"
+	desc = "A SolFed ID with no proper access to speak of. This one indicates an Engineer"
 	assignment = "Engineer"
 
 /obj/item/card/id/cel/solfed/crew/doctor
@@ -77,7 +77,7 @@
 	assignment = "Marine Pilot"
 
 /obj/item/card/id/cel/solfed/assistant
-	desc = "A SolFed ID with no proper access to speak of. This one indicates a Assistant"
+	desc = "A SolFed ID with no proper access to speak of. This one indicates an Assistant"
 	icon_state = "idsf_assistant"
 	assignment = "Assistant"
 
@@ -104,10 +104,10 @@
 	icon_state = "idbrigade_crew"
 
 /obj/item/card/id/cel/solfed/crew/engineer/elysium
-	desc = "A SolFed Elysium Brigade ID with no proper access to speak of. This one indicates a Engineer"
+	desc = "A SolFed Elysium Brigade ID with no proper access to speak of. This one indicates an Engineer"
 	assignment = "Engineer"
 	icon_state = "idbrigade_crew"
 
 /obj/item/card/id/cel/solfed/assistant/elysium
-	desc = "A SolFed Elysium Brigade ID with no proper access to speak of. This one indicates a Assistant"
+	desc = "A SolFed Elysium Brigade ID with no proper access to speak of. This one indicates an Assistant"
 	icon_state = "idbrigade_assistant"

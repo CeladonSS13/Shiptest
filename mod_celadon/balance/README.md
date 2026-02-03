@@ -57,6 +57,8 @@ EDIT: `code\modules\research\techweb\all_nodes.dm`: `research_costs`, `export_pr
 ADD: `code\game\objects\items\circuitboards\machine_circuitboards.dm` : `/obj/item/circuitboard/machine/vendor`
 - Уменьшение цены еды в карго:
 EDIT: `code\modules\cargo\packs\food.dm` : `/datum/supply_pack/food/`
+- Броня была добавлена для Sonnensoldner hat и SolGov bicorne hat
+ADD: `code/modules/clothing/factions/solgov.dm`
 
 Ребаланс
 Лут с элиток (вместо гритер сундука, выпадает обычный сундук некрополиса)

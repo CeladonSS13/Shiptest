@@ -178,21 +178,14 @@
 	reagent_state = SOLID
 	color = "#FFFFFF" // rgb: 255, 255, 255
 	taste_mult = 1.5 // stop sugar drowning out other flavours
-	nutriment_factor = 10 * REAGENTS_METABOLISM
+	nutriment_factor = 5 * REAGENTS_METABOLISM			// [CELADON-EDIT] - NERF-SUGAR
 	metabolization_rate = 2 * REAGENTS_METABOLISM
-	overdose_threshold = 200 // Hyperglycaemic shock
+	overdose_threshold = 120 // Hyperglycaemic shock	// [CELADON-EDIT] - NERF-SUGAR
 	taste_description = "sweetness"
 
 /datum/reagent/consumable/sugar/overdose_start(mob/living/M)
 	to_chat(M, span_userdanger("You go into hyperglycaemic shock! Lay off the twinkies!"))
 	M.AdjustSleeping(600)
-	// [CELADON-ADD] - CELADON_DIABETES - Повышенный шанс получить диабет
-	if(!M.HasDiseaseType(/datum/disease/diabetes))
-		if(prob(15)) // 15% chance on overdose
-			to_chat(M, span_userdanger("The excessive sugar has damaged your pancreas! You have developed diabetes!"))
-			var/datum/disease/diabetes/D = new()
-			M.ForceContractDisease(D)
-	// [/CELADON-ADD]
 	. = 1
 
 /datum/reagent/consumable/sugar/overdose_process(mob/living/M)

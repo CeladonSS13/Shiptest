@@ -28,6 +28,13 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
+"bF" = (
+/obj/machinery/conveyor/auto/outpost{
+	dir = 8
+	},
+/obj/structure/plasticflaps/outpost,
+/turf/open/floor/hangar/plasteel,
+/area/hangar)
 "bH" = (
 /obj/effect/turf_decal/box/corners{
 	dir = 1
@@ -206,7 +213,6 @@
 /area/hangar)
 "hw" = (
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/black,
@@ -714,7 +720,6 @@
 	pixel_y = 4
 	},
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /turf/open/floor/plasteel/tech/techmaint{
@@ -744,7 +749,6 @@
 /obj/structure/rack,
 /obj/effect/turf_decal/industrial/warning,
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /obj/item/radio/intercom/directional/east,
@@ -778,7 +782,6 @@
 "wu" = (
 /obj/effect/turf_decal/industrial/warning,
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -884,7 +887,6 @@
 	layer = 4.1
 	},
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /turf/open/floor/plating{
@@ -905,7 +907,6 @@
 "AT" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /obj/item/stack/rods{
@@ -1233,7 +1234,6 @@
 "Jq" = (
 /obj/item/stack/cable_coil/cut/yellow,
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /turf/open/floor/plasteel/tech/techmaint{
@@ -1269,7 +1269,6 @@
 /obj/structure/girder,
 /obj/structure/grille/broken,
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /turf/open/floor/plating{
@@ -1443,7 +1442,7 @@
 /turf/open/floor/concrete/slab_2,
 /area/hangar)
 "OB" = (
-/obj/structure/plasticflaps,
+/obj/structure/plasticflaps/outpost,
 /obj/machinery/conveyor/auto{
 	dir = 1;
 	id = "outpost3";
@@ -1671,7 +1670,6 @@
 "UT" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /obj/structure/grille,
@@ -4689,7 +4687,7 @@ JN
 JN
 JN
 JN
-jP
+bF
 gZ
 JN
 JN

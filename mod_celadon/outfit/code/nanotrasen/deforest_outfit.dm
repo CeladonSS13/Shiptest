@@ -1,7 +1,7 @@
 // MARK: NT DeForest
 
 /datum/outfit/job/cel/nanotrasen/cmo/deforest_cmo
-	name = "NT DeForest - Cheif of Medical Officer"
+	name = "NT DeForest - Medical Director"
 	job_icon = "chiefmedicalofficer"
 
 	id = /obj/item/card/id/cel/nanotrasen/deforest_cmo
@@ -17,7 +17,7 @@
 	id = /obj/item/card/id/cel/nanotrasen/deforest_researcher
 
 /datum/outfit/job/cel/nanotrasen/scientist/deforest_researcher/genetic
-	name = "NT DeForest - Scientist Genetic"
+	name = "NT DeForest - Scientist Geneticist"
 
 	belt = /obj/item/pda/geneticist
 
