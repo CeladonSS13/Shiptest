@@ -43,10 +43,11 @@
 	spawn_no_ammo = TRUE
 
 /obj/item/gun/energy/e_gun/e_old/mini
-	name = "miniature energy gun"
+	name = "SL X-26 Miniature energy pistol"
 	desc = "A small, pistol-sized energy gun with a built-in flashlight. It has two settings: disable and kill."
 	icon_state = "mini"
 	item_state = "gun"
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/mini, /obj/item/ammo_casing/energy/disabler/mini)
 	w_class = WEIGHT_CLASS_SMALL
 	default_ammo_type = /obj/item/stock_parts/cell/gun/mini
 	allowed_ammo_types = list(
@@ -58,6 +59,8 @@
 	charge_sections = 3
 	wield_delay = 0.2 SECONDS
 	wield_slowdown = LASER_PISTOL_SLOWDOWN
+
+	fire_delay = 0.2 SECONDS
 
 	spread = 2
 	spread_unwielded = 5
@@ -99,7 +102,7 @@
 	manufacturer = MANUFACTURER_NANOTRASEN_OLD
 
 /obj/item/gun/energy/e_gun/e_old/hos
-	name = "\improper X-01 MultiPhase Energy Gun"
+	name = "\improper SL X-01 MultiPhase Energy Gun"
 	desc = "This is an expensive, modern recreation of an antique laser gun. This gun has several unique firemodes, but lacks the ability to recharge over time."
 	default_ammo_type = /obj/item/stock_parts/cell/gun/upgraded
 	icon_state = "hoslaser"
@@ -216,7 +219,7 @@
 	manufacturer = MANUFACTURER_SHARPLITE_NEW
 
 /obj/item/gun/energy/e_gun/e_old/smg
-	name = "\improper E-TAR SMG"
+	name = "\improper SL E-TAR SMG"
 	desc = "A dual-mode energy gun capable of discharging weaker shots at a much faster rate than the standard energy gun."
 	icon_state = "esmg"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/smg, /obj/item/ammo_casing/energy/disabler/smg)
@@ -232,7 +235,7 @@
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
 
 /obj/item/gun/energy/e_gun/e_old/iot
-	name = "\improper E-SG 500 Second Edition"
+	name = "\improper SL E-SG 500 Second Edition"
 	desc = "A improved version of the E-SG 255. It now includes two firing modes, disable and kill, while still keeping that sweet integrated computer. Please note that the screen is right next to the switch mode button."
 	icon_state = "iotshotgun"
 	fire_delay = 0.6 SECONDS
@@ -261,6 +264,44 @@
 		return
 	integratedNTOS.interact(user)
 	. = ..()
+
+//Laser cannon
+
+/obj/item/gun/energy/lasercannon
+	name = "SL AL-602 'Phoenix' energy cannon"
+	desc = "An advanced laser cannon that does more damage the farther away the target is. This thing is probably hard to carry around."
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32_old.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/lefthand_old.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/righthand_old.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob.dmi'
+	icon_state = "lasercannon"
+	item_state = "lasercannon"
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	default_ammo_type = /obj/item/stock_parts/cell/gun/large
+	allowed_ammo_types = list(
+		/obj/item/stock_parts/cell/gun/large,
+	)
+	force = 10
+	flags_1 =  CONDUCT_1
+	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/accelerator)
+	ammo_x_offset = 3
+	fire_sound_volume = 90
+	zoom_amt = 10
+	zoom_out_amt = 5
+	wield_slowdown = AMR_SLOWDOWN
+	manufacturer = MANUFACTURER_SHARPLITE_NEW
+
+	spread = -5
+	spread_unwielded = 40
+
+	wield_delay = 1.3 SECONDS
+
+	slot_available = list(
+		ATTACHMENT_SLOT_MUZZLE = 1,
+		ATTACHMENT_SLOT_RAIL = 1
+	)
 
 /obj/item/gun/energy/e_gun/e_old/hades/empty_cell
 	spawn_no_ammo = TRUE
