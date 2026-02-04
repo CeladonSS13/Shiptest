@@ -21,13 +21,13 @@
 /proc/sector_datestamp(realtime = world.realtime, shortened = FALSE)
 	//International Fixed Calendar format (https://en.wikipedia.org/wiki/International_Fixed_Calendar)
 	var/days_since = round(realtime / (24 HOURS))
-	var/year = round(days_since / 365) + 481
+	var/year = round(days_since / 365) + 2553 // [CELADON-EDIT] - FSC -> Normal Year
 	var/day_of_year = days_since % 365
 	var/month = round(day_of_year / 28)
 	var/day_of_month = day_of_year % 28 + 1
 
 	if(shortened)
-		return "[year]-[month]-[day_of_month]FSC"
+		return "[year]-[month]-[day_of_month]" // [CELADON-EDIT] - FSC -> Normal Year
 
 	var/monthname
 	switch(month)
@@ -60,7 +60,7 @@
 		if(13)
 			return "Year Day, [year] FSC"
 
-	return "[monthname] [day_of_month], [year] FSC"
+	return "[day_of_month] [monthname], [year] Year" // [CELADON-EDIT] - FSC -> Normal Year
 
 //returns timestamp in a sql and a not-quite-compliant ISO 8601 friendly format
 /proc/SQLtime(timevar)
