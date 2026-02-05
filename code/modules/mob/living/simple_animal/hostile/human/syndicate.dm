@@ -681,5 +681,5 @@
 
 // [CELADON-ADD] - RAMZI-RENEGATE
 /mob/living/simple_animal/hostile/viscerator/ramzi
-	faction = list(FACTION_RAMZI_FACTION, FACTION_RAMZI)
+	faction = list(FACTION_RAMZI_RENEGATE, FACTION_RAMZI)
 // [/CELADON-ADD]
