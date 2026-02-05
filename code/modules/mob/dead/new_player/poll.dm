@@ -114,7 +114,7 @@
 	else
 		output += "[reply_text]"
 	output += "</div></html>"
-	src << browse(jointext(output, ""),"window=playerpoll;size=500x500")
+	src << browse(HTML_SKELETON(jointext(output, "")),"window=playerpoll;size=500x500")
 
 /**
  * Shows voting window for a rating type poll, listing its options and relevant details.
@@ -300,7 +300,7 @@
 	output += "</ol><b><center>Least Preferred</center></b><br>"
 	if(!length(voted_for) || poll.allow_revoting)
 		output += "<p><input type='submit' value='Vote'></form>"
-	output += "</div>"
+	output += "</div></html>"
 	src << browse(HTML_SKELETON(jointext(output, "")),"window=playerpoll;size=500x500")
 
 /**

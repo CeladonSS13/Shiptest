@@ -52,6 +52,7 @@ const initialState = {
   config: {},
   data: {},
   shared: {},
+  outgoingPayloadQueues: {} as Record<string, string[]>,
   // Start as suspended
   suspended: Date.now(),
   suspending: false,
@@ -174,7 +175,9 @@ export const backendMiddleware = (store) => {
   let suspendInterval;
 
   return (next) => (action) => {
-    const { suspended } = selectBackend(store.getState());
+    const { suspended, outgoingPayloadQueues } = selectBackend(
+      store.getState()
+    );
     const { type, payload } = action;
 
     if (type === 'update') {
