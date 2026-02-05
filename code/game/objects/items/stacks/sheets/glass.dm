@@ -9,11 +9,11 @@
  * Glass sheets
  */
 GLOBAL_LIST_INIT(glass_recipes, list ( \
-	new/datum/stack_recipe("directional window", /obj/structure/window/unanchored, time = 0, on_floor = TRUE, window_checks = TRUE), \
-	new/datum/stack_recipe("fulltile window", /obj/structure/window/fulltile/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("directional window", /obj/structure/window/unanchored, time = 0.5 SECONDS, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("fulltile window", /obj/structure/window/fulltile/unanchored, 2, time = 1 SECONDS, on_floor = TRUE, window_checks = TRUE), \
 	new/datum/stack_recipe("glass floor tile", /obj/item/stack/tile/glass, 1, 4, 20), \
 	new/datum/stack_recipe("glass shard", /obj/item/shard, 1) \
-))
+)) // [CELADON-EDIT] - NO-MOMENTAL-CRAFT
 
 /obj/item/stack/sheet/glass
 	name = "glass"
@@ -138,14 +138,14 @@ GLOBAL_LIST_INIT(pglass_recipes, list ( \
  * Reinforced glass sheets
  */
 GLOBAL_LIST_INIT(reinforced_glass_recipes, list ( \
-	new/datum/stack_recipe("windoor frame", /obj/structure/windoor_assembly, 5, time = 0, on_floor = TRUE, window_checks = TRUE), \
-	new/datum/stack_recipe("window firelock frame", /obj/structure/firelock_frame/window, 3, time = 50, one_per_turf = TRUE, on_floor = TRUE),
+	new/datum/stack_recipe("windoor frame", /obj/structure/windoor_assembly, 5, time = 0.5 SECONDS, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("window firelock frame", /obj/structure/firelock_frame/window, 3, time = 0.5 SECONDS, one_per_turf = TRUE, on_floor = TRUE),
 	null, \
-	new/datum/stack_recipe("directional reinforced window", /obj/structure/window/reinforced/unanchored, time = 0, on_floor = TRUE, window_checks = TRUE), \
-	new/datum/stack_recipe("fulltile reinforced window", /obj/structure/window/reinforced/fulltile/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("directional reinforced window", /obj/structure/window/reinforced/unanchored, time = 0.5 SECONDS, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("fulltile reinforced window", /obj/structure/window/reinforced/fulltile/unanchored, 2, time = 2 SECONDS, on_floor = TRUE, window_checks = TRUE), \
 	new/datum/stack_recipe("reinforced glass tile", /obj/item/stack/tile/glass/reinforced, 1, 4, 20), \
 	new/datum/stack_recipe("glass shard", /obj/item/shard, 1) \
-))
+)) // [CELADON-EDIT] - NO-MOMENTAL-CRAFT
 
 
 /obj/item/stack/sheet/rglass
