@@ -1837,7 +1837,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		if(user != target && (target.mob_biotypes & MOB_ORGANIC) && (atk_verb == ATTACK_EFFECT_BITE))
 			var/datum/reagents/tasty_meal = new()
 			tasty_meal.add_reagent(/datum/reagent/consumable/nutriment/protein, round(damage/3, 1))
-			tasty_meal.trans_to(user, tasty_meal.total_volume, transfered_by = user, method = INGEST)
+			tasty_meal.trans_to(user, tasty_meal.total_volume, transfered_by = user, methods = INGEST)
 		// [/CELADON-ADD]
 		if((target.stat != DEAD) && damage >= user.dna.species.punchstunthreshold)
 			target.visible_message(
@@ -1892,9 +1892,12 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		return
 	if(M.mind)
 		attacker_style = M.mind.martial_art
-	if((M != H) && M.a_intent != INTENT_HELP && H.check_shields(M, 0, M.name, attack_type = UNARMED_ATTACK))
+	//[CELADON-EDIT] A little martial arts buff
+	if((M != H) && M.a_intent != INTENT_HELP && H.check_shields(M, 0, M.name, attack_type = attacker_style.name != "Martial Art" ? MARTIAL_ARTS : UNARMED_ATTACK))
+	//if((M != H) && M.a_intent != INTENT_HELP && H.check_shields(M, 0, M.name, attack_type = UNARMED_ATTACK : MELEE_ATTACK)
+	//[CELADON-EDIT] A little martial arts buff
 		log_combat(M, H, "attempted to touch")
-		H.visible_message(span_warning("[M] attempts to touch [H]!"), \
+		H.visible_message(span_warning("[M] attempts to touch [H]!"),
 						span_danger("[M] attempts to touch you!"), span_hear("You hear a swoosh!"), COMBAT_MESSAGE_RANGE, M)
 		to_chat(M, span_warning("You attempt to touch [H]!"))
 		M.changeNext_move(CLICK_CD_BLOCKED)

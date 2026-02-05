@@ -138,6 +138,13 @@
 		return
 	return ..()
 
+// [CELADON-ADD] - HOTKEY-RELOAD - Возвращает переключение режимов стрельбы на кнопку перезарядки
+/obj/item/gun/energy/unique_action(mob/living/user)
+	if(ammo_type.len > 1)
+		select_fire(user)
+		update_appearance()
+// [/CELADON-ADD]
+
 /obj/item/gun/energy/attackby(obj/item/A, mob/user, params)
 	if(..())
 		return FALSE
