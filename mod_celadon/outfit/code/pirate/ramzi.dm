@@ -75,7 +75,7 @@
 	. = ..()
 	if(visualsOnly)
 		return
-	H.faction |= list(FACTION_RAMZI_RENEGATE)
+	H.faction |= list(FACTION_RAMZI_RENEGADE)
 
 //Deckhand
 
