@@ -103,6 +103,21 @@
 	suffix = "beach_bunkers.dmm"
 	cost = 2
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
+
+/datum/map_template/ruin/beachplanet/frontie_moat
+	name = "Frontiersmen Moat"
+	id = "frontie_moat"
+	description = "A frontiersman-built moat village. Not the worst place to live."
+	suffix = "beach_surface_frontie_moat.dmm"
+	cost = 3
+
+/datum/map_template/ruin/beachplanet/gunsmith
+	name = "Ramzi Gunsmith"
+	id = "gunsmith"
+	description = "A decadent gunsmithing den jointly owned by an outfit of the Ramzi Clique and a corrupt NGR official. Hidden within a cave."
+	suffix = "beach_underground_gunsmith.dmm"
+	cost = 3
+
 //							///
 //		MARK: Icemoon
 //							///
@@ -210,6 +225,27 @@
 	suffix = "icemoon_ice_lodge.dmm"
 	cost = 4
 	ruin_tags = list(RUIN_TAG_HARD_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
+
+/datum/map_template/ruin/icemoon/training_center
+	name = "Ramzi Training Center"
+	id = "training_center"
+	description = "An abandoned training facility located on this ice-world dating back to the early days of the ICW. Strangely, it still seems to be inhabited."
+	suffix = "icemoon_underground_training_center.dmm"
+	cost = 5
+
+/datum/map_template/ruin/icemoon/command_post
+	name = "Ramzi Command Post"
+	id = "command_post"
+	description = "A Ramzi Clique-controlled command post that directs raids and manages communications within its outfit within the sector."
+	suffix = "icemoon_underground_command_post.dmm"
+	cost = 4
+
+/datum/map_template/ruin/icemoon/downed_transport
+	name = "Geneza Downed Transport"
+	id = "downed_transport"
+	description = "There's been reports of a number of unmarked structures on a nearby ice world and what's more, a Gezenan transport just went missing in orbit."
+	suffix = "icemoon_surface_downed_transport.dmm"
+	cost = 3
 
 //							///
 //		MARK: Jungle
@@ -863,6 +899,20 @@
 	cost = 3
 	ruin_tags = list(RUIN_TAG_HARD_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER)
 
+/datum/map_template/ruin/whitesands/nomads_stop
+	name = "Hermit Nomads Stop"
+	id = "nomads-stop"
+	description = "A set of structures born of ancient prefabs and quick-pour cement, turned into a place for trade on the planet's surface."
+	suffix = "whitesands_surface_nomads_stop.dmm"
+	cost = 3
+
+/datum/map_template/ruin/whitesands/settlements_raid
+	name = "Frontier Settlement Raid"
+	id = "settlements-raid"
+	description = "A settlement leading a solitary salvaging life under the direction of a former Gorlex Marauder, now being raided by the brutal Frontiersmen Fleet."
+	suffix = "whitesands_surface_settlement_raid.dmm"
+	cost = 4
+
 //							///
 //		MARK: Plasma
 //							///
@@ -1061,11 +1111,19 @@
 //							///
 //		MARK: Moon
 //							///
+/datum/map_template/ruin/moon/moon_hideout
+	id = "moon_hideout"
+	name = "Moon Hideout"
+	description = "An abandoned SolFed refining base lost to crystal infestation and the Frontiersmen. Home to a great vein of hydrogen ice."
+	suffix = "moon_ramzi_hideout.dmm"
+	cost = 3
 
-
-
-
-
+/datum/map_template/ruin/moon/moon_moonbase
+	id = "moon_base"
+	name = "Moon Base"
+	description = "A makeshift ramzi hideout in a cave, holding a smaller garrison."
+	suffix = "moon_frontiers_moonbase.dmm"
+	cost = 4
 
 //							///
 //		MARK: Desert

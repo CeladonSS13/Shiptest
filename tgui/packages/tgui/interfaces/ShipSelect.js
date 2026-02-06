@@ -312,15 +312,9 @@ export const ShipSelect = (props, context) => {
                     Цветные линии показывают отношения между фракциями:
                     <br />
                     <br />
-                    <div style={{ color: '#38A169' }}>Зелёный — Союз</div>
-                    <div style={{ color: '#60A5FA' }}>
-                      Синий — Положительные
-                    </div>
-                    <div style={{ color: '#9CA3AF' }}>Серый — Нейтральные</div>
-                    <div style={{ color: '#F59E0B' }}>
-                      Оранжевый — Отрицательные
-                    </div>
-                    <div style={{ color: '#EF4444' }}>Красный — Война</div>
+                    <div style={{ color: '#2ECC71' }}>Зелёный — Союз</div>
+                    <div style={{ color: '#ffd902' }}>Жёлтый — Нейтральные</div>
+                    <div style={{ color: '#FF0000' }}>Красный — Война</div>
                   </>
                 }
               />

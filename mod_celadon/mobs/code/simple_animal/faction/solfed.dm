@@ -103,13 +103,13 @@
 	r_hand = /obj/item/gun/ballistic/automatic/assault/g36
 	projectilesound = 'mod_celadon/_storage_sounds/sound/gun/g36.ogg'
 
-/mob/living/simple_animal/hostile/human/solfed/ranged/gunner/elysium //I HATE CLIP GUNS
+/mob/living/simple_animal/hostile/human/solfed/ranged/gunner/elysium //I STILL HATE CLIP GUNS
 	name = "\improper Elysium Brigade Haris"
 	desc = "A brave Haris serving the Elysium Brigade. Holds tight grip of his trusty P16, ready to defend his nation."
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/solfed/marine/elysium
 	armor_base = /obj/item/clothing/suit/armor/vest/bulletproof
 	casingtype = /obj/item/ammo_casing/a556_42
-	r_hand = /obj/item/gun/ballistic/automatic/assault/cm82
+	r_hand = /obj/item/gun/ballistic/automatic/assault/cm82/solfed
 	projectilesound = 'sound/weapons/gun/rifle/m16.ogg'
 
 /mob/living/simple_animal/hostile/human/solfed/ranged/shotgun

@@ -29,6 +29,7 @@
 	##Fulltype/hidden {					\
 		hide = TRUE;					\
 		FASTDMM_PROP(pipe_group = "atmos-[piping_layer]-"+Type+"-hidden");\
+		alpha = 128;					\
 	}									\
 	##Fulltype/hidden/layer2 {			\
 		piping_layer = 2;				\
