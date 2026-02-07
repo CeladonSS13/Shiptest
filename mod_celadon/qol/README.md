@@ -111,6 +111,8 @@ CELADON_QOL_LOADOUT
 - EDIT `code\modules\mob\mob_helpers.dm`: `/proc/slur`
 - EDIT `code\modules\mob\mob_helpers.dm`: `/proc/stutter`
 
+- EDIT `code\_onclick\ai.dm` -> Чиним для ИИ возможность узнавать экипаж
+
 Радио для лежачих персонажей
 - EDIT `code/game/objects/items/devices/radio/radio.dm`: `/obj/item/radio/AltClick(mob/user)` - добавлен параметр `floor_okay = TRUE` в `canUseTopic`
 - EDIT `code/game/objects/items/devices/radio/radio.dm`: `/obj/item/radio/CtrlShiftClick(mob/user)` - добавлен параметр `floor_okay = TRUE` в `canUseTopic`
