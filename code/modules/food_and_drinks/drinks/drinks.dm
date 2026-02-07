@@ -141,6 +141,12 @@
 	new_icon.SwapColor(rgb(255, 0, 220, 255), rgb(0, 0, 0, 0))
 	smashed_bottle.icon = new_icon
 	smashed_bottle.name = "broken [name]"
+	if(ranged)
+		var/matrix/M = matrix(smashed_bottle.transform)
+		M.Turn(rand(-170, 170))
+		smashed_bottle.transform = M
+		smashed_bottle.pixel_x = rand(-12, 12)
+		smashed_bottle.pixel_y = rand(-12, 12)
 	if(prob(33))
 		var/obj/item/shard/new_shard = new(drop_location())
 		if(target)
@@ -425,6 +431,12 @@
 	B.force = 0
 	B.throwforce = 0
 	B.desc = "A carton with the bottom half burst open. Might give you a papercut."
+	if(ranged)
+		var/matrix/M = matrix(B.transform)
+		M.Turn(rand(-170, 170))
+		B.transform = M
+		B.pixel_x = rand(-12, 12)
+		B.pixel_y = rand(-12, 12)
 	transfer_fingerprints_to(B)
 	qdel(src)
 	target.Bumped(B)

@@ -62,6 +62,10 @@
 					if(get_active_held_item() == I) //if our attack_hand() picks up the item...
 						visible_message(span_warning("[src] catches [I]!"), \
 										span_userdanger("You catch [I] in mid-air!"))
+						// [CELADON-ADD]
+						update_inv_hands()
+						I.transform = initial(I.transform)
+						// [/CELADON-ADD]
 						throw_mode_off(THROW_MODE_TOGGLE)
 						return 1
 	..()

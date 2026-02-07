@@ -286,6 +286,16 @@
 	new /obj/item/hypospray/mkii(src)
 	update_appearance()
 
+/obj/item/storage/belt/medical/nohypo/PopulateContents() // [CELADON-ADD] - CELADON_BALANCE
+	new /obj/item/scalpel(src)
+	new /obj/item/circular_saw(src)
+	new /obj/item/blood_filter(src)
+	new /obj/item/surgicaldrill(src)
+	new /obj/item/retractor(src)
+	new /obj/item/cautery(src)
+	new /obj/item/hemostat(src)
+	update_appearance()
+
 /obj/item/storage/belt/medical/webbing/surgery/PopulateContents()
 	new /obj/item/scalpel(src)
 	new /obj/item/circular_saw(src)

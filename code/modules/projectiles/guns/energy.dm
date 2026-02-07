@@ -466,8 +466,12 @@
 				overlay_icon_state += "_[shot.select_name]"
 			var/mutable_appearance/charge_overlay = mutable_appearance(icon, overlay_icon_state)
 			for(var/i = ratio, i >= 1, i--)
-				charge_overlay.pixel_x = ammo_x_offset * (i - 1)
-				charge_overlay.pixel_y = ammo_y_offset * (i - 1)
+				// [CELADON-EDIT]
+				charge_overlay.transform = matrix(transform).Translate(
+					ammo_x_offset * (i - 1),
+					ammo_y_offset * (i - 1)
+				)
+				// [/CELADON-EDIT]
 				. += new /mutable_appearance(charge_overlay)
 		else
 			if(modifystate)

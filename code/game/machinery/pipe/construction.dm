@@ -20,6 +20,7 @@ Buildable meters
 	w_class = WEIGHT_CLASS_NORMAL
 	var/piping_layer = PIPING_LAYER_DEFAULT
 	var/RPD_type
+	item_flags = NO_ROTATE_RANDOM_THROW		// [CELADON-ADD]
 
 /obj/item/pipe/directional
 	RPD_type = PIPE_UNARY

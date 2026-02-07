@@ -1,3 +1,6 @@
+// Я не навижу эту хрень...
+// Надеюсь её так и так будут абузить.
+
 /datum/export/seed
 	cost = 50 // Gets multiplied by potency
 	// k_elasticity = 1	//price inelastic/quantity elastic, only need to export a few samples
@@ -20,10 +23,10 @@
 		var/obj/item/seeds/S = O
 		discoveredPlants[S.type] = S.potency
 
-
 /datum/export/seed/potency
 	cost = 2.5 // Gets multiplied by potency and rarity.
 	unit_name = "improved plant sample"
+	elasticity_coeff = 0.02
 	export_types = list(/obj/item/seeds)
 	needs_discovery = TRUE // Only for already discovered species
 
@@ -33,6 +36,6 @@
 	if(!cost)
 		return 0
 
-	var/potDiff = (S.potency - discoveredPlants[S.type])
+	var/potDiff = (S.potency - discoveredPlants[S.type]) / 3
 
 	return round(..() * potDiff)

@@ -827,6 +827,12 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	if (callback) //call the original callback
 		. = callback.Invoke()
 	item_flags &= ~IN_INVENTORY
+// [CELADON-ADD]
+	if(!(item_flags & NO_ROTATE_RANDOM_THROW))
+		var/matrix/M = matrix(transform)
+		M.Turn(pick(-90, 0, 90, 180))
+		transform = M
+// [/CELADON-ADD]
 	if(!pixel_y && !pixel_x && !(item_flags & NO_PIXEL_RANDOM_DROP))
 		pixel_x = rand(-8,8)
 		pixel_y = rand(-8,8)

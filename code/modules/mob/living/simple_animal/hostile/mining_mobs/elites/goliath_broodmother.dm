@@ -46,7 +46,8 @@
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 	mouse_opacity = MOUSE_OPACITY_ICON
 	deathmessage = "explodes into gore!"
-	loot = list(/obj/item/mob_trophy/broodmother_tongue)
+	//loot = list(/obj/item/mob_trophy/broodmother_tongue)		// [CELADON-EDIT] - RETURN_CONTENT_CRUSHER_TROPHY
+	loot = list(/obj/item/crusher_trophy/broodmother_tongue)	// [/CELADON-EDIT]
 
 	attack_action_types = list(/datum/action/innate/elite_attack/tentacle_patch,
 								/datum/action/innate/elite_attack/spawn_children,
