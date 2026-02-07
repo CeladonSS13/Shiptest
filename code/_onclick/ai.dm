@@ -128,7 +128,7 @@
 	return
 /atom/proc/AIShiftClick()
 	return
-/atom/proc/AICtrlShiftClick(mob/living/silicon/ai/user) // CELADON-EDIT (QoL)
+/atom/proc/AICtrlShiftClick(mob/living/silicon/ai/user) // [CELADON-EDIT] (QoL)
 	CtrlShiftClick(user)
 
 /* Airlocks */
