@@ -180,6 +180,12 @@ Used to make the parent item bloody
 	if(QDELETED(wielder) || is_obscured())
 		return
 
+// [CELADON-ADD] - FROM-TG
+	/// The character is agile enough to not mess their clothing and hands just from one blood splatter at floor
+	if(HAS_TRAIT(wielder, TRAIT_LIGHT_STEP))
+		return
+// [/CELADON-ADD]
+
 	if(istype(pool, /obj/effect/decal/cleanable/blood/footprints) && pool.blood_state == last_blood_state)
 		// The pool we stepped in was actually footprints with the same type
 		var/obj/effect/decal/cleanable/blood/footprints/pool_FP = pool

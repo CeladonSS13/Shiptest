@@ -590,6 +590,20 @@
 	suffix = "rockplanet_rustbase.dmm"
 	cost = 1
 
+/datum/map_template/ruin/rockplanet/stash_river_valley
+	name = "Frontier River Valley Stash"
+	id = "river_valley_stash"
+	description = "A frontiersman drug stash in the midst of being buried."
+	suffix = "rockplanet_river_valley_stash.dmm"
+	cost = 3
+
+/datum/map_template/ruin/rockplanet/trench_complex_front	// somme (название dmm у оффов) = trench complex (та же руина, но уже в их конфиге)
+	name = "Frontier Trench Complex"
+	id = "trench_complex"
+	description = "Frontiersmen have dug in like ticks to the planet's surface."
+	suffix = "rockplanet_trench_complex.dmm"
+	cost = 4
+
 //							///
 //		MARK: Space
 //							///

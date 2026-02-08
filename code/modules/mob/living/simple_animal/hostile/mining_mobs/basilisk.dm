@@ -229,7 +229,8 @@
 	is_flying_animal = TRUE
 	robust_searching = 1
 	attack_same = TRUE		// So we'll fight basilisks
-	mob_trophy = /obj/item/mob_trophy/watcher_wing
+	//mob_trophy = /obj/item/mob_trophy/watcher_wing		// [CELADON-EDIT] - RETURN_CONTENT_CRUSHER_TROPHY
+	crusher_loot = /obj/item/crusher_trophy/watcher_wing	// [/CELADON-EDIT]
 	loot = list()
 	butcher_results = list(/obj/item/stack/ore/diamond = 2, /obj/item/stack/sheet/sinew = 2, /obj/item/stack/sheet/bone = 1)
 	lava_drinker = FALSE
