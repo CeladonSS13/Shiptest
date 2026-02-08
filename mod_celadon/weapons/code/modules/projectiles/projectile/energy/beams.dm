@@ -152,10 +152,10 @@
 /obj/projectile/beam/laser/nanotrasen //таким образом еоехома не словит бесплатный бафф + удобнее редачить древний код
 	speed = 0.3 //egun buff - просто мувспид с плазмапушек
 
-//Base NT-SL Disabler beam
-
 /obj/projectile/beam/laser/nanotrasen/weak
 	damage = 15
+
+//Base NT-SL Disabler beam
 
 /obj/projectile/beam/disabler/nanotrasen
 	speed = 0.3
