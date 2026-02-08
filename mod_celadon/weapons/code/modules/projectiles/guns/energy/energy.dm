@@ -20,12 +20,14 @@
 // MARK: RETURN OLD
 
 /obj/item/gun/energy/e_gun/e_old
+	name = "SL X-10 Energy Carbine"
+	desc = "A lightweight energy carbine capable of discharging decently powerful laser and disabler bolts. Commonly seen as a security self-defence weapon."
 	icon_state = "energy"
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32_old.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/lefthand_old.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/righthand_old.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob.dmi'
-	ammo_type = list(/obj/item/ammo_casing/energy/laser, /obj/item/ammo_casing/energy/disabler)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen, /obj/item/ammo_casing/energy/disabler/nanotrasen)
 	// таким образом НТ пушки будут принимать и НТшные магазины, и Эохомы
 	allowed_ammo_types = list(
 		/obj/item/stock_parts/cell/gun,
@@ -43,11 +45,10 @@
 	spawn_no_ammo = TRUE
 
 /obj/item/gun/energy/e_gun/e_old/mini
-	name = "SL X-26 Miniature energy pistol"
+	name = "SL X-26 Miniature Energy Pistol"
 	desc = "A small, pistol-sized energy gun with a built-in flashlight. It has two settings: disable and kill."
 	icon_state = "mini"
-	item_state = "gun"
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/mini, /obj/item/ammo_casing/energy/disabler/mini)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen/mini, /obj/item/ammo_casing/energy/disabler/nanotrasen/mini)
 	w_class = WEIGHT_CLASS_SMALL
 	default_ammo_type = /obj/item/stock_parts/cell/gun/mini
 	allowed_ammo_types = list(
@@ -69,14 +70,13 @@
 	spawn_no_ammo = TRUE
 
 /obj/item/gun/energy/e_gun/e_old/hades // Перенёс изменения хомячков
-	name = "SL AL-655 'Hades' energy rifle"
-	desc = "Nanotrasen-Sharplite's premium assault energy rifle. This elite energy weapon is focused on heavy fire support. A powerful, but expensive and rare assault rifle." //новое описание без лора оффов
-	// desc = "The standard issue rifle of Nanotrasen's Security Forces. Most have been put in long term storage following the ICW, and usually aren't issued to low ranking security divisions."
+	name = "SL AL-655 'Hades' Assault Energy Rifle"
+	desc = "A powerful energy rifle built on a fairly heavy frame, capable of rapidly producing high-power lethal laser bolts, as well as overcharged disabling projectiles."
 	icon_state = "energytac"
 	ammo_x_offset = 2
 	charge_sections = 5
 
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/assault, /obj/item/ammo_casing/energy/disabler/assault)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/assault/nanotrasen, /obj/item/ammo_casing/energy/disabler/assault/nanotrasen)
 	//default_ammo_type = /obj/item/stock_parts/cell/gun/upgraded
 	default_ammo_type = /obj/item/stock_parts/cell/gun //nerfs the power cell to a standart one
 
@@ -103,17 +103,21 @@
 
 /obj/item/gun/energy/e_gun/e_old/hos
 	name = "\improper SL X-01 MultiPhase Energy Gun"
-	desc = "This is an expensive, modern recreation of an antique laser gun. This gun has several unique firemodes, but lacks the ability to recharge over time."
+	desc = "An expensive, high-capacity, high-power energy pistol built on the X-00 chasis. Modified to have a wide array of energy settings, including a burst firemode. Favored by Vigilitas Security Directors."
 	default_ammo_type = /obj/item/stock_parts/cell/gun/upgraded
 	icon_state = "hoslaser"
 	force = 10
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/hos, /obj/item/ammo_casing/energy/disabler, /obj/item/ammo_casing/energy/ion/hos, /obj/item/ammo_casing/energy/electrode/hos)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen, /obj/item/ammo_casing/energy/disabler/nanotrasen, /obj/item/ammo_casing/energy/ion/hos, /obj/item/ammo_casing/energy/electrode/hos)
 	shaded_charge = TRUE
-	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
+	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF //я не думаю, что оно должно быть индестрактбл
 	manufacturer = MANUFACTURER_SHARPLITE_NEW
 
-/obj/item/ammo_casing/energy/laser/hos
-	e_cost = 500
+	gun_firemodes = list(FIREMODE_SEMIAUTO, FIREMODE_BURST)
+	default_firemode = FIREMODE_SEMIAUTO
+
+	fire_delay = 0.3 SECONDS
+	burst_size = 2
+	burst_delay = 0.10 SECONDS
 
 /obj/item/gun/energy/e_gun/e_old/hos/brazil
 	name = "modified antique laser gun"
@@ -157,12 +161,12 @@
 	can_charge = FALSE
 	internal_magazine = TRUE
 	ammo_x_offset = 2
-	ammo_type = list(/obj/item/ammo_casing/energy/laser, /obj/item/ammo_casing/energy/disabler)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen, /obj/item/ammo_casing/energy/disabler/nanotrasen)
 	selfcharge = 1
 	var/reactor_overloaded
 	var/fail_tick = 0
 	var/fail_chance = 0
-	manufacturer = MANUFACTURER_NONE
+	manufacturer = MANUFACTURER_SHARPLITE_NEW
 
 /obj/item/gun/energy/e_gun/e_old/nuclear/process(seconds_per_tick)
 	if(fail_tick > 0)
@@ -208,18 +212,18 @@
 			. += "[icon_state]_fail_2"
 
 /obj/item/gun/energy/e_gun/e_old/adv_stopping
-	name = "advanced stopping revolver"
+	name = "SL X-14 Advanced Stopping Revolver"
 	desc = "An advanced energy revolver with the capacity to shoot both disabler and lethal lasers, as well as futuristic safari nets."
 	icon_state = "bsgun"
 	item_state = "gun"
 	force = 7
-	ammo_type = list(/obj/item/ammo_casing/energy/disabler, /obj/item/ammo_casing/energy/laser/hos, /obj/item/ammo_casing/energy/trap)
+	ammo_type = list(/obj/item/ammo_casing/energy/disabler/nanotrasen, /obj/item/ammo_casing/energy/laser/nanotrasen, /obj/item/ammo_casing/energy/trap)
 	ammo_x_offset = 1
 	shaded_charge = TRUE
 	manufacturer = MANUFACTURER_SHARPLITE_NEW
 
 /obj/item/gun/energy/e_gun/e_old/smg
-	name = "\improper SL E-TAR SMG"
+	name = "\improper SL X-49 E-TAR SMG"
 	desc = "A dual-mode energy gun capable of discharging weaker shots at a much faster rate than the standard energy gun."
 	icon_state = "esmg"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/smg, /obj/item/ammo_casing/energy/disabler/smg)
@@ -236,11 +240,11 @@
 
 /obj/item/gun/energy/e_gun/e_old/iot
 	name = "\improper SL E-SG 500 Second Edition"
-	desc = "A improved version of the E-SG 255. It now includes two firing modes, disable and kill, while still keeping that sweet integrated computer. Please note that the screen is right next to the switch mode button."
+	desc = "A improved version of the E-SG 255. It now includes two firing modes, disable and kill."
 	icon_state = "iotshotgun"
 	fire_delay = 0.6 SECONDS
 	shaded_charge = TRUE
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/ultima, /obj/item/ammo_casing/energy/disabler/scatter/ultima)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/iot, /obj/item/ammo_casing/energy/disabler/scatter/iot)
 	charge_sections = 5
 	ammo_x_offset = 2
 	automatic_charge_overlays = TRUE
@@ -268,8 +272,8 @@
 //Laser cannon
 
 /obj/item/gun/energy/lasercannon
-	name = "SL AL-602 'Phoenix' energy cannon"
-	desc = "An advanced laser cannon that does more damage the farther away the target is. This thing is probably hard to carry around."
+	name = "SL AL-602 'Phoenix' Energy Cannon"
+	desc = "An advanced sniper-like laser cannon that does more damage the farther away the target is. You can attach a scope to it! Infact, it comes with one already inbuit."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32_old.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/lefthand_old.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/righthand_old.dmi'
@@ -302,6 +306,11 @@
 		ATTACHMENT_SLOT_MUZZLE = 1,
 		ATTACHMENT_SLOT_RAIL = 1
 	)
+
+//disabler
+
+/obj/item/gun/energy/disabler
+	ammo_type = list(/obj/item/ammo_casing/energy/disabler/nanotrasen)
 
 /obj/item/gun/energy/e_gun/e_old/hades/empty_cell
 	spawn_no_ammo = TRUE

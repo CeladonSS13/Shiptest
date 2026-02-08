@@ -30,7 +30,7 @@
 	spawn_no_ammo = TRUE
 
 /obj/item/gun/energy/laser/captain
-	name = "SL X-00 Antique Laser Gun"
+	name = "SL X-00 Laser Gun"
 	icon_state = "caplaser"
 	item_state = "caplaser"
 	desc = "This is the SL X-00, an antique laser gun, out of production for decades and well beyond anyone's capacity to recreate. All craftsmanship is of the highest quality. It is decorated with ashdrake leather and chrome. The gun menaces with spikes of energy. On the item is an image of a space ship. The ship is exploding."
