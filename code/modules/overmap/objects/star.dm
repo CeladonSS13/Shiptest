@@ -25,10 +25,13 @@
 		/datum/overmap/event/rad/minor = 40,
 		/datum/overmap/event/rad = 20,
 		/datum/overmap/event/rad/major = 5,
+		// [CELADON-ADD] - CELADON_ECONOMY
+		/datum/overmap/event/anomaly = 20,
+		// [/CELADON-ADD]
 	)
 
 	///The minimum lifespan of the random events
-	var/event_lifespan_min = (20 SECONDS)
+	var/event_lifespan_min = (60 SECONDS) // [CELADON-EDIT] - CELADON_ECONOMY // var/event_lifespan_min = (20 SECONDS)
 	///The maximum lifespan of the random events
 	var/event_lifespan_max = (80 SECONDS)
 
@@ -39,9 +42,9 @@
 
 
 	///The minimum lifespan of the random events
-	var/eventspawn_cooldown_min = (5 SECONDS)
+	var/eventspawn_cooldown_min = (1 SECONDS) // [CELADON-EDIT] - CELADON_ECONOMY // var/eventspawn_cooldown_min = (5 SECONDS)
 	///The maximum lifespan of the random events
-	var/eventspawn_cooldown_max = (15 SECONDS)
+	var/eventspawn_cooldown_max = (5 SECONDS) // [CELADON-EDIT] - CELADON_ECONOMY // var/eventspawn_cooldown_max = (15 SECONDS)
 	///cooldown declare to store this value
 	COOLDOWN_DECLARE(event_spawn_cd)
 

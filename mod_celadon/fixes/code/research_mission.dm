@@ -127,3 +127,31 @@
 	if(current_overmap.override_object_colors)
 		token.color = current_overmap.hazard_secondary_color
 	current_overmap.post_edit_token_state(src)
+
+// [CELADON-ADD] - CELADON_ECONOMY
+/obj/effect/spawner/random/anomaly/storm/short
+	loot = list(
+		/obj/effect/anomaly/flux/storm/short,
+		/obj/effect/anomaly/pyro/storm/short,
+		/obj/effect/anomaly/sparkler/short,
+		/obj/effect/anomaly/veins/short,
+		/obj/effect/anomaly/phantom/short,
+		/obj/effect/anomaly/melter/short,
+	)
+/obj/effect/anomaly/flux/storm/short
+	lifespan = 60 SECONDS
+
+/obj/effect/anomaly/pyro/storm/short
+	lifespan = 60 SECONDS
+
+/obj/effect/anomaly/sparkler/short
+	lifespan = 60 SECONDS
+
+/obj/effect/anomaly/veins/short
+	lifespan = 60 SECONDS
+
+/obj/effect/anomaly/phantom/short
+	lifespan = 60 SECONDS
+
+/obj/effect/anomaly/melter/short
+	lifespan = 60 SECONDS

@@ -391,7 +391,7 @@
 // [CELADON-EDIT] - DANGER_STORM
 	zap_flag = ZAP_MAJOR_STORM_FLAGS
 	max_zap_strike = 12
-	min_zap_strike = 6	
+	min_zap_strike = 6
 // [/CELADON-EDIT]
 
 /datum/overmap/event/nebula
@@ -606,7 +606,9 @@
 /datum/overmap/event/anomaly/affect_ship(datum/overmap/ship/controlled/S)
 	var/area/source_area = pick(S.shuttle_port.shuttle_areas)
 	var/source_object = pick(source_area.contents)
-	new /obj/effect/spawner/random/anomaly/storm(get_turf(source_object))
+	// [CELADON-EDIT] - CELADON_ECONOMY
+	new /obj/effect/spawner/random/anomaly/storm/short(get_turf(source_object)) // new /obj/effect/spawner/random/anomaly/storm(get_turf(source_object))
+	// [/CELADON-EDIT]
 	for(var/mob/M as anything in GLOB.player_list)
 		if(S.shuttle_port.is_in_shuttle_bounds(M))
 			M.playsound_local(M, 'sound/effects/bamf.ogg', 100)
@@ -638,7 +640,7 @@ GLOBAL_LIST_INIT(overmap_event_pick_list, list(
 	// /datum/overmap/event/rad = 20,
 	// /datum/overmap/event/rad/major = 20,
 	// [/CELADON-EDIT]
-	/datum/overmap/event/anomaly = 10
+	// /datum/overmap/event/anomaly = 10 // [CELADON-REMOVE] - CELADON_ECONOMY - хоть и странно, что Солнце спавнит аномалии... Но почему бы и нет. Может Солнце уже давно не Солнце, а лишь его имитация, посланная запертыми в иных мирах.
 ))
 
 ///RADIATION STORM - explodes your organics
