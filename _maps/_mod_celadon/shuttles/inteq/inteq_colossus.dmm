@@ -450,6 +450,7 @@
 	id = "sus_starboard";
 	dir = 4
 	},
+/obj/structure/window/plasma/reinforced/spawner/west,
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/engineering/engines/starboard)
 "dl" = (
@@ -815,8 +816,7 @@
 	},
 /obj/machinery/camera/autoname{
 	dir = 4;
-	pixel_x = -6;
-	pixel_y = 0
+	pixel_x = -6
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/external/dark)
@@ -920,7 +920,6 @@
 	},
 /obj/structure/platform/industrial/corner{
 	dir = 1;
-	pixel_x = 0;
 	pixel_y = -3
 	},
 /obj/effect/turf_decal/stairs{
@@ -1125,7 +1124,6 @@
 "hM" = (
 /obj/structure/platform/industrial/corner{
 	dir = 4;
-	pixel_x = 0;
 	pixel_y = 1;
 	layer = 2.91
 	},
@@ -1612,6 +1610,7 @@
 	id = "sus_starboard";
 	dir = 4
 	},
+/obj/structure/window/plasma/reinforced/spawner/west,
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/engineering/engines/starboard)
 "kN" = (
@@ -1804,6 +1803,7 @@
 "ly" = (
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/atmospherics/components/unary/shuttle/fire_heater,
+/obj/structure/window/plasma/reinforced/spawner/west,
 /obj/machinery/door/poddoor{
 	id = "sus_port";
 	dir = 4
@@ -2124,7 +2124,6 @@
 	icon_state = "computer-left"
 	},
 /obj/effect/turf_decal/techfloor,
-/obj/machinery/airalarm/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
@@ -2651,8 +2650,7 @@
 	dir = 8
 	},
 /obj/item/radio/intercom/directional/west{
-	pixel_x = -21;
-	pixel_y = 0
+	pixel_x = -21
 	},
 /obj/machinery/atmospherics/components/binary/valve/layer4,
 /obj/structure/platform/industrial{
@@ -3009,8 +3007,7 @@
 	pixel_y = 2
 	},
 /obj/item/pen/fountain{
-	pixel_x = 3;
-	pixel_y = 0
+	pixel_x = 3
 	},
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/plasteel/dark,
@@ -3299,7 +3296,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/platform/industrial/corner{
 	dir = 1;
-	pixel_x = 0;
 	layer = 2.91
 	},
 /turf/open/floor/plasteel/patterned/cargo_one,
@@ -3963,8 +3959,7 @@
 	},
 /obj/structure/noticeboard{
 	dir = 8;
-	pixel_x = 25;
-	pixel_y = 0
+	pixel_x = 25
 	},
 /obj/item/paper/fluff{
 	default_raw_text = "Artificer's Note: If the powergrid seems drawn suspiciously thin, check the SMES input settings. One is dedicated to the Thunder shuttle, which should be kept on a low input.";
@@ -4456,6 +4451,7 @@
 	},
 /obj/effect/turf_decal/techfloor,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "zX" = (
@@ -4479,7 +4475,6 @@
 /obj/effect/turf_decal/stairs_wood{
 	color = "#55391A";
 	dir = 1;
-	pixel_x = 0;
 	pixel_y = -8
 	},
 /obj/machinery/door/window/southleft,
@@ -4748,8 +4743,7 @@
 /obj/machinery/atmospherics/components/binary/valve/layer4,
 /obj/machinery/camera/autoname{
 	dir = 4;
-	pixel_x = -7;
-	pixel_y = 0
+	pixel_x = -7
 	},
 /obj/structure/platform/industrial{
 	dir = 8;
@@ -5423,7 +5417,6 @@
 	pixel_y = 28
 	},
 /obj/structure/closet/crate/bin{
-	pixel_x = 0;
 	pixel_y = 15;
 	density = 0
 	},
@@ -5491,7 +5484,6 @@
 /obj/structure/window{
 	dir = 4;
 	pixel_x = 3;
-	pixel_y = 0;
 	color = "grey"
 	},
 /turf/open/floor/plating/ship/water/beach/deep{
@@ -6198,6 +6190,7 @@
 	},
 /obj/machinery/power/smes/shuttle/precharged,
 /obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/window/plasma/reinforced/spawner/west,
 /obj/machinery/door/poddoor{
 	id = "sus_port";
 	dir = 4
@@ -6230,8 +6223,7 @@
 	},
 /obj/machinery/camera/autoname{
 	dir = 9;
-	pixel_x = 4;
-	pixel_y = 0
+	pixel_x = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen)
@@ -6695,7 +6687,6 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/camera/autoname{
-	pixel_x = 0;
 	pixel_y = 10
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -6772,7 +6763,6 @@
 	pixel_y = -2
 	},
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq/no_mag{
-	pixel_x = 0;
 	pixel_y = -7
 	},
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq/no_mag{
@@ -7306,7 +7296,6 @@
 	},
 /obj/structure/platform/industrial/corner{
 	dir = 4;
-	pixel_x = 0;
 	pixel_y = 5
 	},
 /obj/effect/turf_decal/stairs{
@@ -7459,7 +7448,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/autoname{
 	dir = 1;
-	pixel_x = 0;
 	pixel_y = -4
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -7830,8 +7818,7 @@
 /obj/item/clothing/mask/gas/inteq,
 /obj/machinery/camera/autoname{
 	dir = 4;
-	pixel_x = -7;
-	pixel_y = 0
+	pixel_x = -7
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/storage/equip)
@@ -7913,8 +7900,7 @@
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/structure/noticeboard{
 	dir = 8;
-	pixel_x = 25;
-	pixel_y = 0
+	pixel_x = 25
 	},
 /obj/item/paper/fluff{
 	default_raw_text = "Artificer's Note: The one insane fuck who decided to build here a fucking sauna with a pool.";
@@ -8050,7 +8036,6 @@
 	},
 /obj/machinery/camera/autoname{
 	dir = 10;
-	pixel_x = 0;
 	pixel_y = -4
 	},
 /turf/open/floor/plasteel/dark,
@@ -8362,12 +8347,10 @@
 	},
 /obj/item/folder/syndicate{
 	desc = "A slick black folder stamped 'Property of Inteq Risk Management Group.'";
-	name = "folder";
 	pixel_x = 8
 	},
 /obj/item/folder/syndicate{
 	desc = "A slick black folder stamped 'Property of Inteq Risk Management Group.'";
-	name = "folder";
 	pixel_x = 8;
 	pixel_y = -4
 	},
@@ -8513,7 +8496,6 @@
 	},
 /obj/structure/dresser,
 /obj/item/storage/guncase/pistol/pinscher{
-	pixel_x = 0;
 	pixel_y = 10
 	},
 /turf/open/floor/carpet/orange,
@@ -8602,7 +8584,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/autoname{
 	dir = 6;
-	pixel_x = 0;
 	pixel_y = 10
 	},
 /turf/open/floor/plasteel/patterned/grid,
@@ -9114,8 +9095,7 @@
 /obj/machinery/griddle,
 /obj/machinery/camera/autoname{
 	dir = 5;
-	pixel_x = -7;
-	pixel_y = 0
+	pixel_x = -7
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/canteen)
@@ -9161,7 +9141,6 @@
 /obj/structure/window{
 	dir = 4;
 	pixel_x = 3;
-	pixel_y = 0;
 	color = "grey"
 	},
 /turf/open/floor/plating/ship/water/beach/deep{

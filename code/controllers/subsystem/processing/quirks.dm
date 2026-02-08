@@ -27,8 +27,10 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 		list("Blind","Nearsighted"),
 		list("Ageusia","Vegetarian","Deviant Tastes"),
 		list("Alcohol Tolerance","Light Drinker"),
-		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
-		list("Clown Fan", "Mime Fan", "RILENA Super Fan"), \
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS, IDIOTS_REMOVE_BLACK_LIST
+		list("Jolly","Depression","Apathetic","Hypersensitive"),
+		list("Ananas Affinity","Ananas Aversion"),
+		list("Clown Fan", "Mime Fan", "RILENA Super Fan"),
 		// [/CELADON-ADD]
 		list("Bad Touch", "Friendly"),
 		list("Self-Aware", "Congenital Analgesia"),

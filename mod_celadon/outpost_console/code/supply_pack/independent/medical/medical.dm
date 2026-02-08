@@ -1,0 +1,160 @@
+/datum/supply_pack/faction/independent/medical
+	category = "Medical - Medical"
+	crate_type = /obj/structure/closet/crate/medical
+
+/*
+		First aid kits
+*/
+
+/datum/supply_pack/faction/independent/medical/firstaid_single
+	name = "First Aid Kit Single-Pack"
+	desc = "Contains one first aid kit for healing most types of wounds."
+	cost = 400
+	contains = list(/obj/item/storage/firstaid/regular)
+
+/datum/supply_pack/faction/independent/medical/firstaidbruises_single
+	name = "Bruise Treatment Kit Single-Pack"
+	desc = "Contains one first aid kit focused on healing bruises and broken bones."
+	cost = 700
+	contains = list(/obj/item/storage/firstaid/brute)
+
+/datum/supply_pack/faction/independent/medical/firstaidburns_single
+	name = "Burn Treatment Kit Single-Pack"
+	desc = "Contains one first aid kit focused on healing severe burns."
+	cost = 700
+	contains = list(/obj/item/storage/firstaid/fire)
+
+/datum/supply_pack/faction/independent/medical/firstaidoxygen_single
+	name = "Oxygen Deprivation Kit Single-Pack"
+	desc = "Contains one first aid kit focused on helping oxygen deprivation victims."
+	cost = 500
+	contains = list(/obj/item/storage/firstaid/o2)
+
+/datum/supply_pack/faction/independent/medical/firstaidtoxins_single
+	name = "Toxin Treatment Kit Single-Pack"
+	desc = "Contains one first aid kit focused on healing damage dealt by heavy toxins."
+	cost = 500
+	contains = list(/obj/item/storage/firstaid/toxin)
+
+/datum/supply_pack/faction/independent/medical/firstaid_rad_single
+	name = "Radiation Treatment Kit Single-Pack"
+	desc = "Contains one first aid kit focused on reducing the damage done by radiation."
+	cost = 500
+	contains = list(/obj/item/storage/firstaid/radiation)
+
+/*
+		Tools
+*/
+
+/datum/supply_pack/faction/independent/medical/painkillers/fill(obj/structure/closet/crate/cargo_crate)
+	. = ..()
+	if(prob(5))
+		new /obj/item/reagent_containers/glass/bottle/painkiller_booze(cargo_crate)
+
+/datum/supply_pack/faction/independent/medical/iv_drip
+	name = "IV Drip"
+	desc = "Contains a single IV drip for administering blood to patients."
+	cost = 1000
+	contains = list(/obj/machinery/iv_drip)
+	crate_name = "iv drip crate"
+
+/datum/supply_pack/faction/independent/medical/bloodpacks
+	name = "Blood Pack Variety"
+	desc = "Contains several different blood packs for reintroducing blood to patients."
+	cost = 700
+	contains = list(/obj/item/reagent_containers/blood/APlus,
+					/obj/item/reagent_containers/blood/AMinus,
+					/obj/item/reagent_containers/blood/BPlus,
+					/obj/item/reagent_containers/blood/BMinus,
+					/obj/item/reagent_containers/blood/OPlus,
+					/obj/item/reagent_containers/blood/OMinus,
+					/obj/item/reagent_containers/blood/lizard,
+					/obj/item/reagent_containers/blood/elzuose,
+					/obj/item/reagent_containers/blood/synthetic)
+	crate_name = "blood freezer"
+	crate_type = /obj/structure/closet/crate/freezer
+
+/datum/supply_pack/faction/independent/medical/defibs
+	name = "Defibrillator"
+	desc = "Contains a defibrillator for bringing the recently deceased back to life."
+	cost = 750
+	contains = list(/obj/item/defibrillator/loaded)
+	crate_name = "defibrillator crate"
+
+/datum/supply_pack/faction/independent/medical/disk
+	name = "Advanced Surgical Procedure Disk"
+	desc = "A disk containing Advanced T2 surgical procedures for wound tending. Requires an Operating Console."
+	cost = 2000
+	contains = list(/obj/item/disk/surgery/t2)
+	crate_name = "surgical supplies crate"
+
+/datum/supply_pack/faction/independent/medical/console
+	name = "Operating Console"
+	desc = "Contains a console board to construct an Operating Console. Required to install surgical disks and gives basic diagnostics on the patients vitals."
+	cost = 500
+	contains = list(/obj/item/circuitboard/computer/operating)
+	crate_name = "surgical supplies crate"
+
+/datum/supply_pack/faction/independent/medical/salglucanister
+	name = "Heavy-Duty Saline Canister"
+	desc = "Contains a bulk supply of saline-glucose condensed into a single canister that should last a long time, with a large pump to fill containers with. Direct injection of saline should be left to medical professionals as the pump is capable of overdosing patients."
+	cost = 5000
+	contains = list(/obj/machinery/iv_drip/saline)
+	crate_name = "saline glucose crate"
+	crate_type = /obj/structure/closet/crate/large
+
+/datum/supply_pack/faction/independent/medical/epipen_crate
+	name = "Bulk Epipen"
+	desc = "Contains a spare box of epinephrine medipens, for when the going gets tough."
+	cost = 600
+	contains = list(/obj/item/storage/box/medipens)
+	crate_name = "epinephrine medipen crate"
+
+/datum/supply_pack/faction/independent/medical/surplus
+	name = "Medical Surplus"
+	desc = "Contains an assortment of medical supplies haphazardly pulled from storage. German doctor not included."
+	cost = 2000
+	contains = list(/obj/item/reagent_containers/glass/bottle/charcoal,
+					/obj/item/reagent_containers/glass/bottle/epinephrine,
+					/obj/item/reagent_containers/glass/bottle/morphine,
+					/obj/item/reagent_containers/glass/bottle/toxin,
+					/obj/item/reagent_containers/glass/beaker/large,
+					/obj/item/reagent_containers/pill/insulin,
+					/obj/item/stack/medical/gauze,
+					/obj/item/storage/box/beakers,
+					/obj/item/storage/box/medigels,
+					/obj/item/storage/box/syringes,
+					/obj/item/storage/box/bodybags,
+					/obj/item/storage/firstaid/regular,
+					/obj/item/storage/firstaid/o2,
+					/obj/item/storage/firstaid/toxin,
+					/obj/item/storage/firstaid/brute,
+					/obj/item/storage/firstaid/fire,
+					/obj/item/defibrillator/loaded,
+					/obj/item/reagent_containers/blood/OMinus,
+					// /obj/item/storage/pill_bottle/mining,
+					/obj/item/reagent_containers/pill/neurine,
+					/obj/item/vending_refill/medical)
+	crate_name = "medical surplus crate"
+
+/datum/supply_pack/faction/independent/medical/surplus/fill(obj/structure/closet/crate/C)
+	for(var/i in 1 to 7)
+		var/item = pick(contains)
+		new item(C)
+
+/datum/supply_pack/faction/independent/medical/surgery
+	name = "Surgical Supplies"
+	desc = "Do you want to perform surgery, but don't have one of those fancy shmancy degrees? Just get started with this crate containing a medical case, Sterilizine spray and collapsible roller bed."
+	cost = 1000
+	contains = list(/obj/item/storage/case/surgery,
+					/obj/item/reagent_containers/medigel/sterilizine,
+					/obj/item/roller)
+	crate_name = "surgical supplies crate"
+
+/datum/supply_pack/faction/independent/medical/herbs
+	name = "Medical herbs"
+	desc = "Specifically created for severely ill individuals and those struggling with addiction."
+	cost = 1000
+	contains = list(/obj/item/food/grown/cannabis)
+	crate_name = "marijuana crate"
+	crate_type = /obj/structure/closet/crate/medical

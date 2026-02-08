@@ -133,15 +133,23 @@
 
 //ATTACK HAND IGNORING PARENT RETURN VALUE
 /obj/item/gun/energy/attack_hand(mob/user)
-	if(!internal_magazine && loc == user && user.is_holding(src) && cell && tac_reloads && !(gun_firemodes[firemode_index] == FIREMODE_UNDERBARREL))
+	if(!internal_magazine && !internal_cell && loc == user && user.is_holding(src) && cell && tac_reloads && !(gun_firemodes[firemode_index] == FIREMODE_UNDERBARREL))	// [CELADON-ADD]
 		eject_cell(user)
 		return
 	return ..()
 
+// [CELADON-ADD] - HOTKEY-RELOAD - Возвращает переключение режимов стрельбы на кнопку перезарядки
+/obj/item/gun/energy/unique_action(mob/living/user)
+	if(ammo_type.len > 1)
+		select_fire(user)
+		update_appearance()
+// [/CELADON-ADD]
+
 /obj/item/gun/energy/attackby(obj/item/A, mob/user, params)
 	if(..())
 		return FALSE
-
+	if(internal_cell)	// [CELADON-ADD]
+		return			// [/CELADON-ADD]
 	if (!internal_magazine && (A.type in (allowed_ammo_types - blacklisted_ammo_types)))
 		var/obj/item/stock_parts/cell/gun/C = A
 		if (!cell)
@@ -458,8 +466,12 @@
 				overlay_icon_state += "_[shot.select_name]"
 			var/mutable_appearance/charge_overlay = mutable_appearance(icon, overlay_icon_state)
 			for(var/i = ratio, i >= 1, i--)
-				charge_overlay.pixel_x = ammo_x_offset * (i - 1)
-				charge_overlay.pixel_y = ammo_y_offset * (i - 1)
+				// [CELADON-EDIT]
+				charge_overlay.transform = matrix(transform).Translate(
+					ammo_x_offset * (i - 1),
+					ammo_y_offset * (i - 1)
+				)
+				// [/CELADON-EDIT]
 				. += new /mutable_appearance(charge_overlay)
 		else
 			if(modifystate)

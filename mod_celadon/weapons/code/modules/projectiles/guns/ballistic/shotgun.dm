@@ -11,7 +11,7 @@
 	icon_state = "saiga"
 	item_state = "saiga"
 
-	weapon_weight = WEAPON_HEAVY
+	weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_BACK
 
 	default_ammo_type = /obj/item/ammo_box/magazine/saiga

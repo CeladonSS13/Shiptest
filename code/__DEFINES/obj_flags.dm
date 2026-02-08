@@ -43,9 +43,10 @@
 #define NO_PIXEL_RANDOM_DROP (1<<14) //if dropped, it wont have a randomized pixel_x/pixel_y
 #define HAND_ITEM (1<<15) /// If an item is just your hand (circled hand, slapper) and shouldn't block things like riding
 
-// [CELADON-ADD] - CELADON_STRUCTURES - Барикады
+// [CELADON-ADD]
 /// Является ли данный предмет семейной ценностью (family heirloom)
-#define FAMILY_HEIRLOOM	(1<<15) //выбор вещей из лодаута как family heirloom
+#define FAMILY_HEIRLOOM	(1<<16) //выбор вещей из лодаута как family heirloom
+#define NO_ROTATE_RANDOM_THROW (1<<17) //if throwed, it wont have a randomized transform
 // [/CELADON-ADD]
 
 // Flags for the clothing_flags var on /obj/item/clothing

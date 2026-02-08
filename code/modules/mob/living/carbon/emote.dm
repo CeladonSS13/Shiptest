@@ -6,14 +6,24 @@
 	message = "is strumming the air and headbanging like a safari chimp."
 	hands_use_check = TRUE
 
+// [CELADON-EDIT]
 /// The time it takes for the blink to be removed
 #define BLINK_DURATION 0.5 SECONDS
+#define BLINK_R_DURATION 0.2 SECONDS
+
 /datum/emote/living/carbon/blink
 	key = "blink"
 	key_third_person = "blinks"
 	message = "blinks."
 	/// Timer for the blink to wear off
 	var/blink_timer = TIMER_ID_NULL
+	/// Duration of the blink in deciseconds
+	var/blink_duration = BLINK_DURATION
+
+/datum/emote/living/carbon/blink/blink_r
+	key = "blink_r"
+	message = "blinks rapidly."
+	blink_duration = BLINK_R_DURATION
 
 /datum/emote/living/carbon/blink/run_emote(mob/user, params, type_override, intentional)
 	. = ..()
@@ -22,11 +32,9 @@
 		ADD_TRAIT(living_user, TRAIT_EYESCLOSED, "[type]")
 		living_user.update_body()
 
-		// Use a timer to remove the closed eyes after the BLINK_DURATION has passed
-		var/list/key_emotes = GLOB.emote_list["blink"]
+		var/list/key_emotes = GLOB.emote_list[key]
 		for(var/datum/emote/living/carbon/blink/living_emote in key_emotes)
-			// The existing timer restarts if it's already running
-			blink_timer = addtimer(CALLBACK(living_emote, PROC_REF(end_blink), living_user), BLINK_DURATION, TIMER_UNIQUE | TIMER_OVERRIDE)
+			living_emote.blink_timer = addtimer(CALLBACK(living_emote, TYPE_PROC_REF(/datum/emote/living/carbon/blink, end_blink), living_user), living_emote.blink_duration, TIMER_UNIQUE | TIMER_OVERRIDE)
 
 /datum/emote/living/carbon/blink/proc/end_blink(mob/living/living_user)
 	if(!QDELETED(living_user))
@@ -34,10 +42,8 @@
 		living_user.update_body()
 
 #undef BLINK_DURATION
-
-/datum/emote/living/carbon/blink_r
-	key = "blink_r"
-	message = "blinks rapidly."
+#undef BLINK_R_DURATION
+// [/CELADON-EDIT]
 
 /datum/emote/living/carbon/crack
 	key = "crack"

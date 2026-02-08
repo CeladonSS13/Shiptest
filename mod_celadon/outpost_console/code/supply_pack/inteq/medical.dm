@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/inteq/medical
-	category = "Medical"
+	category = "Medical - Medical"
 
 /datum/supply_pack/faction/inteq/medical/mkii_hypo
 	name = "mk.II Hypospray kit"
@@ -11,7 +11,7 @@
 /*	Vial  */
 
 /datum/supply_pack/faction/inteq/medical/vials/empty_vial
-	name = "Empty Vial Crate"
+	name = "Empty Vial"
 	desc = "Contains 2 empty hypospray vials, for usage in a Hypospray."
 	cost = 200
 	contains = list(
@@ -21,7 +21,7 @@
 	crate_name = "empty vial crate"
 
 // /datum/supply_pack/faction/inteq/medical/vials/bica_vial
-// 	name = "Bicardine Vial Crate"
+// 	name = "Bicardine Vial"
 // 	desc = "Contains a spare bicardine vial, for usage in a Hypospray."
 // 	cost = 400
 // 	contains = list(
@@ -30,7 +30,7 @@
 // 	crate_name = "bicardine vial crate"
 
 // /datum/supply_pack/faction/inteq/medical/vials/kelo_vial
-// 	name = "Kelotane Vial Crate"
+// 	name = "Kelotane Vial"
 // 	desc = "Contains a spare kelotane vial, for usage in a Hypospray."
 // 	cost = 400
 // 	contains = list(
@@ -39,7 +39,7 @@
 // 	crate_name = "kelotane vial crate"
 
 // /datum/supply_pack/faction/inteq/medical/vials/dylo_vial
-// 	name = "Dylovene Vial Crate"
+// 	name = "Dylovene Vial"
 // 	desc = "Contains a spare dylovene vial, for usage in a Hypospray."
 // 	cost = 400
 // 	contains = list(
@@ -48,7 +48,7 @@
 // 	crate_name = "dylovene vial crate"
 
 // /datum/supply_pack/faction/inteq/medical/vials/tric_vial
-// 	name = "Tricordrazine Vial Crate"
+// 	name = "Tricordrazine Vial"
 // 	desc = "Contains a spare tricordrazine vial, for usage in a Hypospray."
 // 	cost = 300
 // 	contains = list(
@@ -57,7 +57,7 @@
 // 	crate_name = "tricordrazine vial crate"
 
 /datum/supply_pack/faction/inteq/medical/vials/morb_vial
-	name = "Morphine Vial Crate"
+	name = "Morphine Vial"
 	desc = "Contains a spare morphine vial, for usage in a Hypospray."
 	cost = 500
 	contains = list(
@@ -66,7 +66,7 @@
 	crate_name = "morphine vial crate"
 
 /datum/supply_pack/faction/inteq/medical/vials/atro_vial
-	name = "Atropine Vial Crate"
+	name = "Atropine Vial"
 	desc = "Contains a spare atropine vial, for usage in a Hypospray."
 	cost = 500
 	contains = list(
@@ -75,7 +75,7 @@
 	crate_name = "atropine vial crate"
 
 /datum/supply_pack/faction/inteq/medical/vials/sal_vial
-	name = "SalGlu Vial Crate"
+	name = "SalGlu Vial"
 	desc = "Contains 2 spare SalGlu Solution vials, for usage in a Hypospray."
 	cost = 600
 	contains = list(
@@ -85,7 +85,7 @@
 	crate_name = "SalGlu vial crate"
 
 /datum/supply_pack/faction/inteq/medical/vials/chit_vial
-	name = "Chitosan Vial Crate"
+	name = "Chitosan Vial"
 	desc = "Contains 2 spare Chitosan vials, for usage in a Hypospray."
 	cost = 600
 	contains = list(

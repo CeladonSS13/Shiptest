@@ -4301,7 +4301,7 @@
 /obj/item/reagent_containers/syringe/charcoal{
 	pixel_x = -3
 	},
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = -4
 	},
 /obj/machinery/light/small/directional/south,
@@ -5266,7 +5266,7 @@
 /obj/effect/turf_decal/techfloor/corner,
 /obj/structure/bed/dogbed/cayenne,
 /mob/living/simple_animal/hostile/poison/giant_spider/hunter/viper{
-	resize = 0.8;
+	current_size = 0.8;
 	name = "James";
 	desc = "The captains , and guardian of the bridge. None shall tresspass within his domain.";
 	faction = list("neutral")
@@ -6008,7 +6008,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/vending/wallmed{
+/obj/machinery/vending/wallmed/ship{
 	pixel_y = -28
 	},
 /obj/machinery/button/door{
@@ -8573,7 +8573,7 @@
 /area/ship/bridge)
 "EK" = (
 /obj/machinery/medical_kiosk,
-/obj/machinery/vending/wallmed{
+/obj/machinery/vending/wallmed/ship{
 	pixel_x = -27
 	},
 /obj/effect/turf_decal/siding/white{

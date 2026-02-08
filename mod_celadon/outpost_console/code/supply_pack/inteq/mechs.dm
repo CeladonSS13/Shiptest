@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/inteq/mech
-	category = "Exosuit Construction"
+	category = "Tech - Mech Exosuit"
 
 /datum/supply_pack/faction/inteq/mech/equipment/basenji_upgrade
 	name = "IRMG Basenji upgrade kit"

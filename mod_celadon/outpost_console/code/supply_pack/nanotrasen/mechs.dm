@@ -1,5 +1,5 @@
 /datum/supply_pack/faction/nanotrasen/mech
-	category = "Exosuit Construction"
+	category = "Tech - Mech Exosuit"
 
 /datum/supply_pack/faction/nanotrasen/mech/mpgygax_parts
 	name = "NT-501p-MP construction kit"

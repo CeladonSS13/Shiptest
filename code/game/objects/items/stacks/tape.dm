@@ -76,7 +76,7 @@
 	desc = "Made for patching broken bones back together alongside bone gel."
 	prefix = "surgical"
 	conferred_embed = list("embed_chance" = 30, "pain_mult" = 0, "jostle_pain_mult" = 0, "ignore_throwspeed_threshold" = TRUE)
-	custom_price = 500
+	custom_price = 50 // [CELADON-EDIT] - OUTPOST_MED_BALANCE // custom_price = 500
 
 /obj/item/stack/tape
 	name = "packaging tape"

@@ -1,6 +1,7 @@
 /datum/supply_pack/faction
 	name = "Crate"
 	category = "Faction products"
+	var/stable_price = FALSE
 
 // Делаем красиво? Наверное? По крайней мере экономим буквы, чтобы не писать в каждом датуме эти вещи!
 

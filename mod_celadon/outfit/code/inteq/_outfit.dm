@@ -72,7 +72,7 @@
 	name = "IQ - Honorable Vanguard"
 	id_assignment = "Honorable Vanguard"
 
-	id = /obj/item/card/id/cel/inteq/honorable_rearguard
+	id = /obj/item/card/id/cel/inteq/honorable_vanguard
 	ears = /obj/item/radio/headset/inteq/alt/captain
 	head = /obj/item/clothing/head/beret/sec/hos/inteq/honorable
 	uniform = /obj/item/clothing/under/syndicate/inteq/honorable
@@ -89,8 +89,9 @@
 	id = /obj/item/card/id/cel/inteq/vanguard
 	ears = /obj/item/radio/headset/inteq/alt
 	head = /obj/item/clothing/head/beret/sec/hos/inteq
+	mask = null
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
-	suit = /obj/item/clothing/suit/armor/vest/inteq
+	suit = null
 	gloves = /obj/item/clothing/gloves/combat
 	uniform = /obj/item/clothing/under/syndicate/inteq/honorable
 
@@ -169,6 +170,19 @@
 	backpack = /obj/item/storage/backpack/messenger/inteq
 	satchel = /obj/item/storage/backpack/messenger/inteq
 	courierbag = /obj/item/storage/backpack/messenger/inteq
+
+/datum/outfit/job/cel/inteq/security/honorguard
+	name = "IQ - Honor Guard"
+	id_assignment = "Honor Guard"
+
+	uniform = /obj/item/clothing/under/syndicate/inteq
+	belt = /obj/item/storage/belt/military/assault
+	gloves = /obj/item/clothing/gloves/color/white
+	head = /obj/item/clothing/head/beret/sec/hos/inteq/honorable
+	mask = /obj/item/clothing/mask/balaclava/inteq
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/inteq
+	r_pocket = /obj/item/restraints/handcuffs
+	l_pocket = /obj/item/clothing/accessory/armband/med
 
 /datum/outfit/job/cel/inteq/security/beluga
 	name = "IRMG - Enforcer (Beluga)"
