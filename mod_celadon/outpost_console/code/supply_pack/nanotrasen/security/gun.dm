@@ -122,6 +122,14 @@ hp
 	desc = "Contains a Challenger pistol, produced by Nanotrasen along with Vigilitas Interstellar and is chambered in 9x18mm."
 	cost = 750
 	contains = list(/obj/item/storage/guncase/pistol/commander)
+
+/datum/supply_pack/faction/nanotrasen/gun/vi/champion
+	name = "PHB Champion Machinepistol (9x18mm)"
+	desc = "Contains a compact 9x18mm burst fire machine pistol produced by Nanotrasen advantage. For NT employee use only."
+	cost = 1500
+	contains = list(/obj/item/storage/guncase/saber) // LMAO
+	crate_name = "Machinepistol crate"
+
 /* MARK: 9x18mm
 bullet
 	damage = 20
@@ -133,17 +141,23 @@ hp
 	damage = 30
 	armour_penetration = -30
 */
+/datum/supply_pack/faction/nanotrasen/gun/vi/Negotiator
+	name = "Advantage AST12 Negotiator"
+	desc = "Contains an advanced shotgun with five round dual magazine tubes. For NT employee use only."
+	cost = 3350 // Бульдог 4к
+	contains = list(/obj/item/storage/guncase/cycler)
+	crate_name = "shotgun crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/vi/combatshotgun
 	name = "Shotgun - Combat Shotgun (12g)"
 	desc = "For when the enemy absolutely needs to be replaced with lead. Contains two Aussec-designed combat shotguns."
-	cost = 3500
+	cost = 3000 // Его никто не покупает
 	contains = list(/obj/item/gun/ballistic/shotgun/automatic/combat)
 	crate_name = "combat shotguns crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/vi/saber
 	name = "SMG - VI Saber (9x18mm)"
-	desc = "An experimental ballistic weapon produced by Vigilitas Interstellar. Uses 9x18mm rounds"
+	desc = "Contains an outdated ballistic weapon produced by Vigilitas Interstellar. Uses 9x18mm rounds"
 	cost = 2500
 	contains = list(/obj/item/storage/guncase/saber_old)
 	crate_name = "SMG crate"
@@ -151,9 +165,17 @@ hp
 /datum/supply_pack/faction/nanotrasen/gun/vi/vector
 	name = "SMG - VI Vector (9x18mm)"
 	desc = "Contains a Vector PDW produced by Sharplite Defense and chambered in 9x18mm."
-	cost = 3000
+	cost = 2300 // Вы видели его разброс?
+	contains = list(/obj/item/storage/guncase/vector_old)
+	crate_name = "SMG crate"
+
+/datum/supply_pack/faction/nanotrasen/gun/vi/expedition
+	name = "SMG - SGL9 Expedition (9x18mm)"
+	desc = "Contains a Expedition SMG produced by Nanotrasen Advantage. Chambered in 9x18mm."
+	cost = 2700 // Кобра но чуть хуже.
 	contains = list(/obj/item/storage/guncase/vector)
 	crate_name = "SMG crate"
+
 /* MARK: 9x18mm
 bullet
 	damage = 20
@@ -166,13 +188,13 @@ hp
 	armour_penetration = -30
 */
 
-/*
+
+
 /datum/supply_pack/faction/nanotrasen/gun/vi/podium
 	name = "Pistol - Advantage PH46 Podium (4.6x30mm)"
 	desc = "Contains a compact armor-piercing sidearm, chambered in 4.6x30mm. For NT employee use only."
 	cost = 1250
 	contains = list(/obj/item/storage/guncase/pistol/podium)
-*/
 
 /datum/supply_pack/faction/nanotrasen/gun/vi/wt550
 	name = "SMG - VI WT-550 (4.6x30mm)"
@@ -180,6 +202,14 @@ hp
 	cost = 4000
 	contains = list(/obj/item/storage/guncase/wt550_old)
 	crate_name = "PDW crate"
+
+/datum/supply_pack/faction/nanotrasen/gun/vi/resolution
+	name = "PDW - PD46 Resolution (4.6x30mm)"
+	desc = "Contains a incredibly compact automatic personal defense weapon chambered in 4.6x30mm."
+	cost = 3500
+	contains = list(/obj/item/storage/guncase/wt550)
+	crate_name = "PDW crate"
+
 /* MARK: 4.6x30mm
 bullet
 	damage = 20
@@ -237,7 +267,7 @@ hp
 /datum/supply_pack/faction/nanotrasen/gun/exp/al607
 	name = "P-Marksman - AL607 'Sarissa'"
 	desc = "Contains a AL607 Laser Sniper. For NT employee use only."
-	cost = 10000
+	cost = 6500 // Хуже Хейдеса де факто и де юре. У оффов стоит дешевле чем Хейдес. Но там плазма батарейки.
 	contains = list(/obj/item/storage/guncase/energy/al607)
 	crate_name = "sniper rifle crate"
 
@@ -255,43 +285,6 @@ hp
 	cost = 20000
 	contains = list(/obj/item/storage/guncase/cadejo)
 	crate_name = "beam carbine crate"
-
-
-/datum/supply_pack/faction/nanotrasen/gun/exp/cycler
-	name = "Advantage AST12 Negotiator"
-	desc = "Contains an advanced shotgun with five round dual magazine tubes. For NT employee use only."
-	cost = 20000
-	contains = list(/obj/item/storage/guncase/cycler)
-	crate_name = "shotgun crate"
-
-
-/datum/supply_pack/faction/nanotrasen/gun/exp/expedition
-	name = "SMG - SGL9 Expedition (9x18mm)"
-	desc = "Contains a Expidition SMG produced by Nanotrasen Advantage. Chambered in 9x18mm."
-	cost = 25
-	contains = list(/obj/item/storage/guncase/vector)
-	crate_name = "SMG crate"
-
-/datum/supply_pack/faction/nanotrasen/gun/exp/resolution
-	name = "PDW - PD46 Resolution (4.6x30mm)"
-	desc = "Contains a compact automatic personal defense weapon chambered in 4.6x30mm."
-	cost = 25
-	contains = list(/obj/item/storage/guncase/wt550)
-	crate_name = "PDW crate"
-
-/datum/supply_pack/faction/nanotrasen/gun/exp/bdm50
-	name = "PDW - BDM-50 'Akita' (4.6x30mm)"
-	desc = "Contains a compact Automatic personal defense weapon chambered in 4.6x30mm, in use by the IRMG."
-	cost = 25
-	contains = list(/obj/item/storage/guncase/bdm50)
-	crate_name = "PDW crate"
-
-/datum/supply_pack/faction/nanotrasen/gun/exp/champion
-	name = "PHB Champion Machinepistol (9x18mm)"
-	desc = "Contains a compact 9x18mm burst fire machine pistol produced by Nanotrasen advantage. For NT employee use only."
-	cost = 25
-	contains = list(/obj/item/storage/guncase/saber)
-	crate_name = "Machinepistol crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/exp/energy
 	name = "Variable Energy Carbine - X12 'Volt'"

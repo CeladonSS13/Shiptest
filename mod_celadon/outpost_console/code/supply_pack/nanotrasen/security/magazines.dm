@@ -18,8 +18,8 @@
 	cost = 150
 
 /datum/supply_pack/faction/nanotrasen/magazine/smgm9mm_mag
-	name = "Vector/Saber - Magazine (9x18mm)"
-	desc = "Contains a 9x18mm magazine for the Vector and Saber SMGs, with a capacity of 30 rounds."
+	name = "Vector/Saber/Expedition - Magazine (9x18mm)"
+	desc = "Contains a 9x18mm magazine for the Vector, Saber and Expedition SMGs, with a capacity of 30 rounds."
 	contains = list(/obj/item/ammo_box/magazine/m9mm_expedition/empty)
 	cost = 250
 
