@@ -108,7 +108,7 @@ hp
 /datum/supply_pack/faction/syndicate/gun/sidewinder
 	name = "SMG - Sidewinder (5.7x39mm)"
 	desc = "Contains a Sidewinder PDW produced by Scarborough Arms and chambered in 5.7x39mm for armor-piercing capabilities."
-	cost = 3000
+	cost = 3750
 	contains = list(/obj/item/storage/guncase/sidewinder)
 	crate_name = "SMG crate"
 /* MARK: 5.7x39mm

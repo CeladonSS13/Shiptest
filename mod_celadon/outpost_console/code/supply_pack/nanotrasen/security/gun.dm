@@ -177,7 +177,7 @@ hp
 /datum/supply_pack/faction/nanotrasen/gun/vi/wt550
 	name = "SMG - VI WT-550 (4.6x30mm)"
 	desc = "A ballistic PDW produced by Vigilitas Interstellar. Quite old, but still is amazing at filling corporation's enemies with lead. Uses 4.6x30mm rounds"
-	cost = 3500
+	cost = 4000
 	contains = list(/obj/item/storage/guncase/wt550_old)
 	crate_name = "PDW crate"
 /* MARK: 4.6x30mm

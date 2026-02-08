@@ -177,7 +177,6 @@ hp
 	cost = 1250
 	contains = list(/obj/item/storage/guncase/pistol/m20_auto_elite)
 	crate_name = "pistol crate"
-	//max_ammo = 9
 
 /* mark: .45
 bullet
@@ -305,6 +304,13 @@ hp
 	contains = list(/obj/item/storage/guncase/energy/kalixrifle)
 	crate_name = "beam rifle crate"
 
+/datum/supply_pack/faction/independent/gun/laser/kalix/nock
+	name = "Energy - Etherbor VG-F3 Beam Volleygun"
+	desc = "Contains a single VG-F3 Beam Volleygun, a civilian-grade volleygun developed in the PGF, manufactured by Etherbor Industries."
+	cost = 3000
+	contains = list(/obj/item/storage/guncase/energy/kalixnock)
+	crate_name = "beam volleygun crate"
+
 /datum/supply_pack/faction/independent/gun/ion
 	name = "Energy - SL Ion"
 	desc = "Contains a single Mk.I Ion Projector, a special anti-tank rifle designed to disable electronic threats at range."
@@ -350,6 +356,13 @@ hp
 	desc = "For when you need to deal with 7 hooligans and can't be arsed to pump. Contains a semi-auto shotgun with a 7-round capacity."
 	contains = list(/obj/item/storage/guncase/buckmaster)
 	cost = 3000
+	crate_name = "shotgun crate"
+
+/datum/supply_pack/faction/independent/gun/slammer
+	name = "Slammer Shotgun Crate"
+	desc = "For when you need to deal with a 6-hooligan riot. Contains a mag-fed pump shotgun, with a 6-round capacity."
+	cost = 3000
+	contains = list(/obj/item/storage/guncase/slammer)
 	crate_name = "shotgun crate"
 
 /datum/supply_pack/faction/independent/gun/saiga
@@ -439,9 +452,36 @@ hp
 /datum/supply_pack/faction/independent/gun/beacon
 	name = "Rifle - Beacon Break Action (.45-70)"
 	desc = "Contains a single shot break action rifle to hunt wildlife that annoys you in particular. Chambered in devastating .45-70 rounds. Warranty voided if sawed off."
-	cost = 2250
+	cost = 1500
 	contains = list(/obj/item/storage/guncase/beacon)
 	crate_name = "rifle crate"
+
+/datum/supply_pack/faction/independent/gun/pyre
+	name = "Rifle - Pyre Lever Action Rifle (.45-70)"
+	desc = "Contains a devastating but unwieldy lever-action rifle for annihilating larger wildlife. Chambered in .45-70."
+	cost = 4000
+	contains = list(/obj/item/storage/guncase/pyre)
+	crate_name = "rifle crate"
+
+
+/* mark: 5.56x42mm
+bullet
+	damage = 25
+	armour_penetration = 20
+ap
+	damage = 20
+	armour_penetration = 40
+hp
+	damage = 35
+	armour_penetration = 10
+*/
+/datum/supply_pack/faction/independent/gun/hydra80
+	name = "Rifle - Hydra-80 Rifle (5.56x42mm CLIP)"
+	desc = "Contains a dated variant of the Hydra assault rifle, with a quick trigger and semi-auto. Accepts only small magazines. Chambered in 5.56 CLIP"
+	contains = list(/obj/item/storage/guncase/hydra80)
+	cost = 2500
+	crate_name = "rifle crate"
+
 
 /* mark: 7.62x40mm
 bullet
@@ -478,6 +518,25 @@ hp
 	cost = 3500
 	contains = list(/obj/item/storage/guncase/woodsman)
 	crate_name = "hunting rifle crate"
+
+/* mark: .308
+bullet
+	damage = 30
+	armour_penetration = 40
+ap
+	damage = 28
+	armour_penetration = 60
+hp
+	damage = 60
+	armour_penetration = -10
+*/
+/datum/supply_pack/faction/independent/gun/f3
+	name = "DMR - F3 marksman rifle (.308)"
+	desc = "Contains an old semi-automatic marksman rifle chambered in .308 and is usually produced by Solar Federation. Come with 2 empty 10-round magazines."
+	cost = 4000
+	contains = list(/obj/item/storage/guncase/f3)
+	crate_name = "rifle crate"
+
 
 /*
 	MARK:		Auto Rifles
@@ -553,8 +612,8 @@ bullet
 */
 /datum/supply_pack/faction/independent/gun/boomslang90
 	name = "Marksman - Boomslang-90 (6.5x57mm)"
-	desc = "Contains a civilian variant of the Boomslang Sniper rifle- modified with a 2x scope, rather than a sniper scope. Chambered in the powerful 6.5x57mm."
-	cost = 5000
+	desc = "Contains a civilian variant of the Boomslang Sniper rifle - modified with a 2x scope, rather than a sniper scope. Chambered in the powerful 6.5x57mm."
+	cost = 4000
 	contains = list(/obj/item/storage/guncase/boomslang)
 	crate_name = "rifle crate"
 
