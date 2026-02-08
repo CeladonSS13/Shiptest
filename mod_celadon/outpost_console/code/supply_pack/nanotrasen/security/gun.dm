@@ -124,7 +124,7 @@ hp
 	contains = list(/obj/item/storage/guncase/pistol/commander)
 
 /datum/supply_pack/faction/nanotrasen/gun/vi/champion
-	name = "PHB Champion Machinepistol (9x18mm)"
+	name = "Machinepistol - PHB Champion (9x18mm)"
 	desc = "Contains a compact 9x18mm burst fire machine pistol produced by Nanotrasen advantage. For NT employee use only."
 	cost = 1500
 	contains = list(/obj/item/storage/guncase/saber) // LMAO
@@ -142,7 +142,7 @@ hp
 	armour_penetration = -30
 */
 /datum/supply_pack/faction/nanotrasen/gun/vi/Negotiator
-	name = "Advantage AST12 Negotiator"
+	name = "Shotgun - AST12 Negotiator (12g)"
 	desc = "Contains an advanced shotgun with five round dual magazine tubes. For NT employee use only."
 	cost = 3350 // Бульдог 4к
 	contains = list(/obj/item/storage/guncase/cycler)
@@ -266,7 +266,7 @@ hp
 
 /datum/supply_pack/faction/nanotrasen/gun/exp/al607
 	name = "P-Marksman - AL607 'Sarissa'"
-	desc = "Contains a AL607 Laser Sniper. For NT employee use only."
+	desc = "Contains a AL607 Laser Sniper. Comes with 1 upgraded plasma-cell. For NT employee use only."
 	cost = 6500 // Хуже Хейдеса де факто и де юре. У оффов стоит дешевле чем Хейдес. Но там плазма батарейки.
 	contains = list(/obj/item/storage/guncase/energy/al607)
 	crate_name = "sniper rifle crate"
