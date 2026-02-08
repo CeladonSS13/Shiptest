@@ -5,8 +5,8 @@
 	mag_type = /obj/item/ammo_box/magazine/svd_rounds
 	pair_item = list(/datum/blackmarket_item/ammo/svd_rounds)
 
-	cost_min = 7000
-	cost_max = 12000
+	cost_min = 3800
+	cost_max = 4000
 	stock_min = 1
 	stock_max = 1
 	availability_prob = 20
