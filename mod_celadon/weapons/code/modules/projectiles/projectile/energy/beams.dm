@@ -154,6 +154,7 @@
 
 /obj/projectile/beam/laser/nanotrasen/weak
 	damage = 15
+	armour_penetration = -15
 
 //Base NT-SL Disabler beam
 
@@ -162,6 +163,7 @@
 
 /obj/projectile/beam/disabler/nanotrasen/weak
 	damage = 15
+	armour_penetration = -15
 
 //HADES projectiles
 // Меняет баланс Хейдеса
@@ -179,6 +181,12 @@
 	armour_penetration = 20
 
 // Здесь были изменения Хейдеса. Искать его в mod_celadon\return_egun\code\e_gun.dm
+
+//x01 projectiles
+
+/obj/projectile/energy/electrode/nanotrasen
+	damage = 80 //по сути даже за берст ты навешаешь лишь слоудаун человеку в броне
+	range = 8
 
 //Honorable mentions
 
@@ -208,15 +216,6 @@
 	armour_penetration = -10
 	range = 15
 	speed = 0.5
-
-//etar-smg projectiles
-
-/obj/projectile/beam/disabler/nanotrasen/weak/smg
-	armour_penetration = -15
-	range = 40
-
-/obj/projectile/beam/laser/nanotrasen/weak/smg //makes the gun not too op like it was, but at the same time quite useful
-	armour_penetration = -15
 
 //lascannon projectiles
 
@@ -252,6 +251,13 @@
 	icon_state = "heavylaser"
 	damage = 30
 	armour_penetration = 40
+
+/obj/projectile/beam/laser/nanotrasen/hellfire/on_hit(atom/target, blocked = FALSE)
+	. = ..()
+	if(iscarbon(target))
+		var/mob/living/carbon/M = target
+		M.adjust_fire_stacks(2)
+		M.ignite_mob()
 
 // MARK: Ion balance
 

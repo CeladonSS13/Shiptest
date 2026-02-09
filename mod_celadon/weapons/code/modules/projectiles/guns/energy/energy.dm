@@ -104,10 +104,9 @@
 /obj/item/gun/energy/e_gun/e_old/hos
 	name = "\improper SL X-01 MultiPhase Energy Gun"
 	desc = "An expensive, high-capacity, high-power energy pistol built on the X-00 chasis. Modified to have a wide array of energy settings, including a burst firemode. Favored by Vigilitas Security Directors."
-	default_ammo_type = /obj/item/stock_parts/cell/gun/upgraded
 	icon_state = "hoslaser"
 	force = 10
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen, /obj/item/ammo_casing/energy/disabler/nanotrasen, /obj/item/ammo_casing/energy/ion/hos, /obj/item/ammo_casing/energy/electrode/hos)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen, /obj/item/ammo_casing/energy/disabler/nanotrasen, /obj/item/ammo_casing/energy/ion/hos, /obj/item/ammo_casing/energy/electrode/nanotrasen)
 	shaded_charge = TRUE
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF //я не думаю, что оно должно быть индестрактбл
 	manufacturer = MANUFACTURER_SHARPLITE_NEW
