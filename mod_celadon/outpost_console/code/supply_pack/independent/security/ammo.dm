@@ -648,12 +648,12 @@ MARK: .22lr
 	MARK: 5.56x42
 */
 
-/* Inclusive Syndicate
+
 /datum/supply_pack/faction/independent/ammo/ammoa556_ammo_box
 	name = "5.56x42mm Ammo Box"
 	desc = "Contains one 60-round 5.56x42mm box for most newer rifles."
 	contains = list(/obj/item/storage/box/ammo/a556_42)
-	cost = 700
+	cost = 300
 
 // /datum/supply_pack/faction/independent/ammo/ammoa556_ap
 // 	name = "5.56x42mm AP Ammo Box"
@@ -665,8 +665,8 @@ MARK: .22lr
 	name = "5.56x42mm HP Ammo Box"
 	desc = "Contains one 60-round 5.56x42mm Hollow Point box for most newer rifles."
 	contains = list(/obj/item/storage/box/ammo/a556_42/hp)
-	cost = 1000
-*/
+	cost = 375 // Взято с оффов. Я вообще не вижу, чтобы индепенденты бегали с ХП или АП патронами. Слишком дорого сейчас ХП и АП патроны взяты.
+
 
 /*
 	MARK: 5.56x45
