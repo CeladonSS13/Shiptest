@@ -125,7 +125,7 @@ MARK: 5.56x45
 //
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/shotgun/twobore
 	ammo_type = /obj/item/ammo_casing/shotgun/buckshot/twobore
-	max_ammo = 4
+	max_ammo = 8
 
 /obj/item/storage/box/ammo/twobore
 	name = "box of two-bore shells"
