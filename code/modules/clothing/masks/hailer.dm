@@ -28,15 +28,15 @@
 	icon_state = "hailer"
 	item_state = "hailer"
 	unique_death = list(
-		'mod_celadon/_storage_icons/icons/items/clothing/mask/sec_die.ogg'
+		'mod_celadon/_storage_sounds/sound/items/gasmask/sec_die.ogg'
 		)
 
 /obj/item/clothing/mask/gas/inteq
 	unique_death = list(
-		'mod_celadon/_storage_icons/icons/items/clothing/mask/die1.ogg',
-		'mod_celadon/_storage_icons/icons/items/clothing/mask/die2.ogg',
-		'mod_celadon/_storage_icons/icons/items/clothing/mask/die3.ogg',
-		'mod_celadon/_storage_icons/icons/items/clothing/mask/die4.ogg',
+		'mod_celadon/_storage_sounds/sound/items/gasmask/die1.ogg',
+		'mod_celadon/_storage_sounds/sound/items/gasmask/die2.ogg',
+		'mod_celadon/_storage_sounds/sound/items/gasmask/die3.ogg',
+		'mod_celadon/_storage_sounds/sound/items/gasmask/die4.ogg',
 		)
 // [/CELADON-ADD]
 
