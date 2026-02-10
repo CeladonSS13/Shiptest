@@ -170,7 +170,6 @@ DONT_ALTCLICK_WALLET - Убирает вытаскивание карты на �
 
 DEBUG_QUALITY
 - DEL `code/game/objects/items/storage/boxes.dm` -> `mod_celadon/qol/code/BluespaceTechnician.dm`
-- EDIT `code/modules/overmap/ships/ship_datum.dm` - Добавлены ковычки для запуска на 516
 
 CELADON_QOL_LOADOUT
 - ADD, EDIT: `code/modules/client/preferences.dm`
