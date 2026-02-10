@@ -1,7 +1,7 @@
 //********************
 // 		Hand Watch
 //********************
-/obj/item/clothing/wrists/watch/tajaran
+/obj/item/clothing/wrists/watch_tajaran
 	name = "adhomian male watch"
 	desc = "An adhomian wrist watch made for male Tajara. Due to its use in the past wars, wrist watches are becoming more popular in Adhomai."
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
@@ -9,7 +9,7 @@
 	item_state = "watch_taj-male"
 	slot_flags = ITEM_SLOT_LPOCKET | ITEM_SLOT_RPOCKET
 
-/obj/item/clothing/wrists/watch/tajaran/female
+/obj/item/clothing/wrists/watch_tajaran/female
 	name = "adhomian watch"
 	desc = "An adhomian wrist watch made for female Tajara. Due to its use in the past wars, wrist watches are becoming more popular in Adhomai."
 	icon_state = "watch_taj-female"

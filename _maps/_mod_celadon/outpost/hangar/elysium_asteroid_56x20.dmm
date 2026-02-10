@@ -651,11 +651,7 @@
 	},
 /area/hangar)
 "qz" = (
-/obj/structure/plasticflaps/outpost,
-/obj/machinery/conveyor/auto/outpost{
-	dir = 5;
-	verted = -1
-	},
+/obj/machinery/conveyor/auto/outpost,
 /turf/open/floor/plasteel{
 	planetary_atmos = 1
 	},
@@ -993,7 +989,6 @@
 /area/hangar)
 "Aa" = (
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /obj/effect/turf_decal/industrial/fire/corner{
@@ -1015,9 +1010,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/floor/hangar,
-/obj/effect/turf_decal/industrial/fire/corner{
-	dir = 2
-	},
+/obj/effect/turf_decal/industrial/fire/corner,
 /turf/open/floor/plasteel/dark{
 	planetary_atmos = 1
 	},
@@ -1145,7 +1138,7 @@
 "FC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/plasticflaps,
+/obj/structure/plasticflaps/outpost,
 /obj/machinery/conveyor/auto{
 	dir = 4;
 	id = "outpost3"
@@ -1250,15 +1243,6 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark{
-	planetary_atmos = 1
-	},
-/area/hangar)
-"IL" = (
-/obj/machinery/conveyor/auto/outpost{
-	dir = 6;
-	verted = -1
-	},
-/turf/open/floor/plasteel{
 	planetary_atmos = 1
 	},
 /area/hangar)
@@ -1575,7 +1559,6 @@
 "Tg" = (
 /obj/structure/girder,
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /obj/structure/railing{
@@ -1782,15 +1765,6 @@
 	dir = 5
 	},
 /turf/open/floor/concrete/slab_1{
-	planetary_atmos = 1
-	},
-/area/hangar)
-"Zr" = (
-/obj/structure/plasticflaps/outpost,
-/obj/machinery/conveyor/auto/outpost{
-	dir = 8
-	},
-/turf/open/floor/plasteel{
 	planetary_atmos = 1
 	},
 /area/hangar)
@@ -3992,7 +3966,7 @@ Sx
 (69,1,1) = {"
 MP
 qz
-oi
+qz
 oi
 iz
 wd
@@ -4023,7 +3997,7 @@ Sx
 "}
 (70,1,1) = {"
 MP
-Zr
+bk
 MP
 og
 gm
@@ -4055,7 +4029,7 @@ Sx
 "}
 (71,1,1) = {"
 MP
-IL
+bk
 es
 MP
 nz

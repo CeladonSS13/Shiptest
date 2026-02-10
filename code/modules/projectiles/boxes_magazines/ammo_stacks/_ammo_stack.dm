@@ -12,7 +12,7 @@
 	var/base_icon = null
 // [/CELADON-ADD]
 	base_icon_state = "pistol-brass"
-	item_flags = NO_PIXEL_RANDOM_DROP
+	item_flags = NO_PIXEL_RANDOM_DROP | NO_ROTATE_RANDOM_THROW	// [CELADON-EDIT]
 	multiple_sprites = AMMO_BOX_ONE_SPRITE
 	multiload = FALSE
 	start_empty = TRUE

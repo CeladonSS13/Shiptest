@@ -22,7 +22,7 @@ MARK: Independent guncases
 
 /obj/item/storage/guncase/retro
 	gun_type = /obj/item/gun/energy/laser/retro
-	mag_type = /obj/item/stock_parts/cell/gun/sharplite
+	mag_type = /obj/item/stock_parts/cell/gun
 
 /obj/item/storage/guncase/skm_carbine
 	gun_type = /obj/item/gun/ballistic/automatic/smg/skm_carbine
@@ -107,9 +107,6 @@ MARK: Syndicate guncases
 /*
 MARK: Nanotrasen guncases
 */
-/obj/item/storage/guncase/hades
-	gun_type = /obj/item/gun/energy/e_gun/e_old/hades
-	mag_type = /obj/item/stock_parts/cell/gun
 
 /obj/item/storage/guncase/egun
 	gun_type = /obj/item/gun/energy/e_gun

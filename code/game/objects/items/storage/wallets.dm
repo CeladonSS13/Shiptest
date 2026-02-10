@@ -82,16 +82,24 @@
 	var/has_card = FALSE
 	var/has_key = FALSE
 	var/has_chip = FALSE
+	var/max_cash_value = 0
+	var/max_chip_value = 0
 
 	for(var/obj/item/I in contents)
-		if(istype(I, /obj/item/spacecash))
-			has_cash = TRUE
 		if(istype(I, /obj/item/card/bank))
 			has_card = TRUE
-		if(istype(I, /obj/item/key/ship))
-			has_key = TRUE
+		if(istype(I, /obj/item/spacecash))
+			has_cash = TRUE
+			var/obj/item/spacecash/cash = I
+			if(cash.value > max_cash_value)
+				max_cash_value = cash.value
 		if(istype(I, /obj/item/holochip))
 			has_chip = TRUE
+			var/obj/item/holochip/chip = I
+			if(chip.credits > max_chip_value)
+				max_chip_value = chip.credits
+		if(istype(I, /obj/item/key/ship))
+			has_key = TRUE
 	// [/CELADON-ADD]
 
 	if(!front_id)
@@ -108,14 +116,36 @@
 		. += mutable_appearance(icon, get_wallet_overlay_state())
 
 	if(has_cash)
-		. += mutable_appearance(icon, "cash_overlay")
-	if(has_card)
-		. += mutable_appearance(icon, "cashcard_overlay")
+		. += mutable_appearance(icon, get_cash_overlay_state(max_cash_value))
+	if(has_chip)
+		. += mutable_appearance(icon, get_cashchip_overlay_state(max_chip_value))
 	if(has_key)
 		. += mutable_appearance(icon, "keys_overlay")
-	if(has_chip)
-		. += mutable_appearance(icon, "cashchip_overlay")
+	if(has_card)
+		. += mutable_appearance(icon, "cashcard_overlay")
 	// [/CELADON-EDIT]
+
+/obj/item/storage/wallet/proc/get_cash_overlay_state(value)
+	switch(value)
+		if(0 to 999)
+			return "cash_overlay_1"
+		if(1000 to 2499)
+			return "cash_overlay_1000"
+		if(2500 to 4999)
+			return "cash_overlay_2500"
+		if(5000 to INFINITY)
+			return "cash_overlay_5000"
+
+/obj/item/storage/wallet/proc/get_cashchip_overlay_state(value)
+	switch(value)
+		if(0 to 999)
+			return "cashchip_overlay_1"
+		if(1000 to 2499)
+			return "cashchip_overlay_1000"
+		if(2500 to 4999)
+			return "cashchip_overlay_2500"
+		if(5000 to INFINITY)
+			return "cashchip_overlay_5000"
 
 /obj/item/storage/wallet/proc/get_cached_flat_icon()
 	if(!cached_flat_icon)

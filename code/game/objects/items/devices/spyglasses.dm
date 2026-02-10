@@ -21,6 +21,10 @@
 	. = ..()
 	if(slot != ITEM_SLOT_EYES)
 		user.client.close_popup("spypopup")
+	// [CELADON-FIX] Some QoL fixes. This one is extra funny
+		return
+	activate_remote_view()
+	// [/CELADON-FIX]
 
 /obj/item/clothing/glasses/regular/spy/dropped(mob/user)
 	. = ..()

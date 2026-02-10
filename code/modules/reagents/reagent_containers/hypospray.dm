@@ -64,7 +64,7 @@
 		if(M.reagents)
 			var/trans = 0
 			if(!infinite)
-				trans = reagents.trans_to(M, amount_per_transfer_from_this, transfered_by = user, method = INJECT)
+				trans = reagents.trans_to(M, amount_per_transfer_from_this, transfered_by = user, methods = INJECT)
 			else
 				reagents.expose(M, INJECT, fraction)
 				trans = reagents.copy_to(M, amount_per_transfer_from_this)
@@ -221,13 +221,13 @@
 	name = "oculine autoinjector"
 	desc = "An autoinjector designed to promote the repair of the cornea and the retina after damage."
 	list_reagents = list(/datum/reagent/medicine/inacusiate = 10)
-	custom_price = 100
+	custom_price = 70 // [CELADON-EDIT] - OUTPOST_MED_BALANCE // custom_price = 100
 
 /obj/item/reagent_containers/hypospray/medipen/inacusiate
 	name = "inacusiate autoinjector"
 	desc = "An autoinjector designed to rapidly restore hearing after acute hearing loss."
 	list_reagents = list(/datum/reagent/medicine/inacusiate = 10)
-	custom_price = 100
+	custom_price = 70 // [CELADON-EDIT] - OUTPOST_MED_BALANCE // custom_price = 100
 
 /obj/item/reagent_containers/hypospray/medipen/atropine
 	name = "atropine autoinjector"
@@ -236,7 +236,7 @@
 	item_state = "atropen"
 	base_icon_state = "atropen"
 	list_reagents = list(/datum/reagent/medicine/atropine = 10)
-	custom_price = 100
+	custom_price = 75 // [CELADON-EDIT] - OUTPOST_MED_BALANCE // custom_price = 100
 
 /obj/item/reagent_containers/hypospray/medipen/pumpup
 	name = "maintenance pump-up"
@@ -270,6 +270,7 @@
 	list_reagents = list(/datum/reagent/medicine/diphenhydramine = 10)
 	volume = 10
 	amount_per_transfer_from_this = 10
+	custom_price = 50 // [CELADON-ADD] - OUTPOST_MED_BALANCE
 
 /obj/item/reagent_containers/hypospray/medipen/psicodine
 	name = "psicodine injector"
@@ -306,6 +307,7 @@
 	icon_state = "morphen"
 	base_icon_state = "morphen"
 	item_state = "morphen"
+	custom_price = 50 // [CELADON-ADD] - OUTPOST_MED_BALANCE
 
 /obj/item/reagent_containers/hypospray/medipen/mannitol
 	name = "mannitol injector"
@@ -313,9 +315,21 @@
 	list_reagents = list(/datum/reagent/medicine/mannitol = 15)
 	volume = 15
 	amount_per_transfer_from_this = 15
-	icon_state = "morphen"
-	base_icon_state = "morphen"
-	item_state = "morphen"
+	icon_state = "brainpen"
+	base_icon_state = "brainpen"
+	item_state = "brainpen"
+	custom_price = 70 // [CELADON-ADD] - OUTPOST_MED_BALANCE
+
+/obj/item/reagent_containers/hypospray/medipen/neurine
+	name = "neurine injector"
+	desc = "An injector filled with neurine, a restorative compound that targets brain trauma."
+	list_reagents = list(/datum/reagent/medicine/neurine = 15)
+	volume = 15
+	amount_per_transfer_from_this = 15
+	icon_state = "brainpen"
+	base_icon_state = "brainpen"
+	item_state = "brainpen"
+	custom_price = 70 // [CELADON-ADD] - OUTPOST_MED_BALANCE
 
 /obj/item/reagent_containers/hypospray/medipen/badstop
 	name = "Stabilizer injector"
@@ -599,7 +613,7 @@
 
 				var/fraction = min(vial.amount_per_transfer_from_this/vial.reagents.total_volume, 1)
 				vial.reagents.expose(L, INJECT, fraction)
-				vial.reagents.trans_to(target, vial.amount_per_transfer_from_this, method = INJECT)
+				vial.reagents.trans_to(target, vial.amount_per_transfer_from_this, methods = INJECT)
 				if(vial.amount_per_transfer_from_this >= 15)
 					playsound(loc,'sound/items/hypospray_long.ogg',50, 1, -1)
 				if(vial.amount_per_transfer_from_this < 15)
@@ -630,7 +644,7 @@
 						L.log_message("<font color='orange'>applied [src] to  themselves ([contained]).</font>", INDIVIDUAL_ATTACK_LOG)
 				var/fraction = min(vial.amount_per_transfer_from_this/vial.reagents.total_volume, 1)
 				vial.reagents.expose(L, PATCH, fraction)
-				vial.reagents.trans_to(target, vial.amount_per_transfer_from_this, method = PATCH)
+				vial.reagents.trans_to(target, vial.amount_per_transfer_from_this, methods = PATCH)
 				if(vial.amount_per_transfer_from_this >= 15)
 					playsound(loc,'sound/items/hypospray_long.ogg',50, 1, -1)
 				if(vial.amount_per_transfer_from_this < 15)

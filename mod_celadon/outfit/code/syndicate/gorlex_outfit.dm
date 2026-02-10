@@ -32,8 +32,19 @@
 	suit = /obj/item/clothing/suit/armor/hardliners/sergeant
 	shoes = /obj/item/clothing/shoes/combat
 
-/datum/outfit/job/cel/syndicate/hos/gorlex/lieutenant
+/datum/outfit/job/cel/syndicate/hos/gorlex/lieutenant	// Pangolier
 	name = "Syndi Gorlex - Lieutenant"
+	id_assignment = null
+
+	ears = /obj/item/radio/headset/syndicate/alt
+	uniform = /obj/item/clothing/under/syndicate/hardliners/officer
+	suit = null
+	mask = /obj/item/clothing/mask/breath/facemask
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
+	gloves = /obj/item/clothing/gloves/combat
+	head = /obj/item/clothing/head/beret/sec/officer
+
+	l_pocket = /obj/item/flashlight/seclite
 
 //MARK: Crew
 /datum/outfit/job/cel/syndicate/doctor/gorlex
@@ -61,9 +72,19 @@
 	gloves = /obj/item/clothing/gloves/color/black
 	shoes = /obj/item/clothing/shoes/combat
 
-/datum/outfit/job/cel/syndicate/security/gorlex/commando
+/datum/outfit/job/cel/syndicate/security/gorlex/commando	// Pangolier
 	name = "Syndi Gorlex - Commando"
-	id_assignment = "Commando"
+	id_assignment = null
+
+	ears = /obj/item/radio/headset/syndicate/alt
+	uniform = /obj/item/clothing/under/syndicate/hardliners
+	shoes = /obj/item/clothing/shoes/combat
+	gloves = /obj/item/clothing/gloves/color/black
+	mask = /obj/item/clothing/mask/breath/facemask
+	head = /obj/item/clothing/head/beret/black
+
+	r_pocket = /obj/item/restraints/handcuffs
+	l_pocket = /obj/item/flashlight/seclite
 
 /datum/outfit/job/cel/syndicate/security/gorlex/pilot	// Не юзается
 	name = "Syndi Gorlex - Pilot"
@@ -105,5 +126,14 @@
 	uniform = /obj/item/clothing/under/syndicate/hardliners
 	alt_uniform = /obj/item/clothing/under/syndicate/hardliners/jumpsuit
 
-/datum/outfit/job/cel/syndicate/assistant/gorlex/operative
+/datum/outfit/job/cel/syndicate/assistant/gorlex/operative	//Pangolier
 	name = "Syndi Gorlex - Operative"
+	id_assignment = null
+
+	uniform = /obj/item/clothing/under/syndicate/hardliners
+	shoes = /obj/item/clothing/shoes/combat
+	ears = /obj/item/radio/headset/syndicate
+	gloves = /obj/item/clothing/gloves/color/black
+
+	r_pocket = /obj/item/assembly/flash/handheld
+	l_pocket = /obj/item/flashlight/seclite
