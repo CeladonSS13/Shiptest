@@ -16,6 +16,10 @@
 	supports_variations = VOX_VARIATION | SNOUTED_VARIATION | KEPORI_VARIATION
 
 // [CELADON-ADD]
+/obj/item/clothing/mask
+	/// The unique sound effect of dying while wearing this
+	var/unique_death
+
 /obj/item/clothing/mask/gas/sechailer/sec
 	name = "security gas mask"
 	desc = "A standard issue Security gas mask. It doesn't cover the eyes."
@@ -23,6 +27,17 @@
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/mask/overlay/hailer.dmi'
 	icon_state = "hailer"
 	item_state = "hailer"
+	unique_death = list(
+		'mod_celadon/_storage_icons/icons/items/clothing/mask/sec_die.ogg'
+		)
+
+/obj/item/clothing/mask/gas/inteq
+	unique_death = list(
+		'mod_celadon/_storage_icons/icons/items/clothing/mask/die1.ogg',
+		'mod_celadon/_storage_icons/icons/items/clothing/mask/die2.ogg',
+		'mod_celadon/_storage_icons/icons/items/clothing/mask/die3.ogg',
+		'mod_celadon/_storage_icons/icons/items/clothing/mask/die4.ogg',
+		)
 // [/CELADON-ADD]
 
 /obj/item/clothing/mask/gas/sechailer/swat
