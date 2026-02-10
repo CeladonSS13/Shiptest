@@ -31,6 +31,11 @@
 		'mod_celadon/_storage_sounds/sound/items/gasmask/sec_die.ogg'
 		)
 
+/obj/item/clothing/mask/gas/vigilitas
+	unique_death = list(
+		'mod_celadon/_storage_sounds/sound/items/gasmask/sec_die.ogg'
+		)
+
 /obj/item/clothing/mask/gas/inteq
 	unique_death = list(
 		'mod_celadon/_storage_sounds/sound/items/gasmask/die1.ogg',
