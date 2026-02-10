@@ -236,12 +236,12 @@
 
 /obj/projectile/beam/laser/nanotrasen/weak/mini
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
-	icon_state = "weaklaser"
+	icon_state = "minilaser"
 	armour_penetration = 5
 
 /obj/projectile/beam/disabler/nanotrasen/weak/mini
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
-	icon_state = "weaklaser_blue"
+	icon_state = "minilaser_blue"
 	armour_penetration = 10
 
 //antique lasgun projectiles
