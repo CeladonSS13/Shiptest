@@ -34,6 +34,11 @@
 	assignment = "Recruit"
 
 // MARK: Калибан
+/obj/item/card/id/cel/inteq/honorable_vanguard
+	desc = "A InteQ ID with whith proper access to speak of. This one indicates a honorable Vanguard from flagship vessels."
+	icon_state = "idiqh_honorablevanguard"
+	assignment = "Honorable Vanguard"
+
 /obj/item/card/id/cel/inteq/honorable_rearguard
 	desc = "An InteQ ID with no proper access to speak of. This one indicates a Rearguard from flagship vessels."
 	icon_state = "idiqh_honorablevanguard"

@@ -11,8 +11,8 @@
 	id = /obj/item/card/id/cel/ramzi
 	box = /obj/item/storage/box/survival/ramzi
 
-	faction_icon = "bg_pirate"
-	job_icon = "pirate"
+	faction_icon = "bg_ramzi"
+	job_icon = "ramzi"
 
 	backpack = /obj/item/storage/backpack/security
 	satchel = /obj/item/storage/backpack/satchel/sec
@@ -30,8 +30,8 @@
 
 	id_assignment = "Battle Master"
 	jobtype = /datum/job/captain
-	faction_icon = "bg_pirate"
-	job_icon = "piratecaptain"
+	faction_icon = "bg_ramzi"
+	job_icon = "ramzicaptain"
 
 	id = /obj/item/card/id/cel/ramzi/battlemaster
 	uniform = /obj/item/clothing/under/syndicate/ramzi/officer
@@ -40,7 +40,7 @@
 	suit = /obj/item/clothing/suit/armor/ramzi/officer
 
 /datum/outfit/job/cel/pirate/ramzi/trooper
-	job_icon = "pirate"
+	job_icon = "ramzi"
 	name = "Ramzi Clique Rondo - Commando"
 
 	id_assignment = "Commando"
@@ -63,8 +63,8 @@
 	box = /obj/item/storage/box/survival/ramzi
 	id = /obj/item/card/id
 
-	faction_icon = "bg_pirate"
-	job_icon = "pirate"
+	faction_icon = "bg_ramzi"
+	job_icon = "ramzi"
 
 	backpack = /obj/item/storage/backpack
 	satchel = /obj/item/storage/backpack/satchel
@@ -75,7 +75,7 @@
 	. = ..()
 	if(visualsOnly)
 		return
-	H.faction |= list(FACTION_RAMZI)
+	H.faction |= list(FACTION_RAMZI_RENEGADE)
 
 //Deckhand
 
@@ -91,10 +91,9 @@
 
 /datum/outfit/job/cel/pirate/ramzi/captain
 	name = "Ramzi Clique - Captain"
-	job_icon = "piratecaptain"
 
-	faction_icon = "bg_pirate"
-	job_icon = "piratecaptain"
+	faction_icon = "bg_ramzi"
+	job_icon = "ramzicaptain"
 
 	jobtype = /datum/job/captain
 	uniform = /obj/item/clothing/under/syndicate/ramzi/officer

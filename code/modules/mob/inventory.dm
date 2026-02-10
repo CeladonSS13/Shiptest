@@ -175,6 +175,7 @@
 	update_inv_hands()
 	I.pixel_x = I.base_pixel_x //pixel shifting
 	I.pixel_y = I.base_pixel_y
+	I.transform = initial(I.transform)	// [CELADON-ADD]
 	return hand_index
 
 //Puts the item into the first available left hand if possible and calls all necessary triggers/updates. returns 1 on success.

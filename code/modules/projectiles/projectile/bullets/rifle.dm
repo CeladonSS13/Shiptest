@@ -124,14 +124,6 @@
 */
 //[/СELADON-REMOVE]
 
-// 8x58mm caseless (SG-669)
-
-/obj/projectile/bullet/a858
-	name = "8x58mm caseless bullet"
-	speed = 0.3
-	damage = 35
-	armour_penetration = 40
-
 // .299 Eoehoma Caseless (E-40)
 
 /obj/projectile/bullet/c299

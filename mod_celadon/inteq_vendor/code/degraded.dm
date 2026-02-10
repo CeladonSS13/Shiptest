@@ -1,27 +1,19 @@
-#define TURBGENQ 100000
+#define TURBGENQ 200000
 #define TURBGENG 0.5
 #define POWER_TO_THRUST 0.001 // power production to thrust ratio
 
 /obj/machinery/power/shuttle/engine/turbine/degraded
 	name = "degraded gas turbine generator"
-	desc = "A gas turbine used for backup power generation."
-	icon = 'icons/obj/atmospherics/components/turbine.dmi'
-	icon_state = "turbine"
-	density = TRUE
-	resistance_flags = FIRE_PROOF
-	CanAtmosPass = ATMOS_PASS_DENSITY
-	use_power = NO_POWER_USE // powered by gas flow
-	interacts_with_air = TRUE
+	desc = "A heavily used gas turbine used for backup power generation. This one has seen better days."
 	circuit = /obj/item/circuitboard/machine/power_turbine/degraded
-	thrust = 0 // no thrust by default
-	icon_state_closed = "turbine"
-	icon_state_open = "turbine"
-	icon_state_off = "turbine"
 
+/*
 /obj/machinery/power/shuttle/engine/turbine/degraded/process(seconds_per_tick)
 	add_avail(lastgen) // add power in process() so it doesn't update power output separately from the rest of the powernet (bad)
 	update_overlays()
-
+*/
+// Не имеет смысла без измененного TURBGENQ. Он отвечает за то, насколько сложно разогнаться до высоких значений.
+/*
 /obj/machinery/power/shuttle/engine/turbine/degraded/process_atmos(seconds_per_tick)
 	if(!compressor)
 		set_machine_stat(BROKEN)
@@ -57,14 +49,14 @@
 			return
 		outturf.assume_air(removed)
 		outturf.air_update_turf()
-
+*/
 /obj/item/circuitboard/machine/power_turbine/degraded
 	name = "Degraded Power Turbine (Machine Board)"
 	icon_state = "engineering"
 	build_path = /obj/machinery/power/shuttle/engine/turbine/degraded
 	req_components = list(
 		/obj/item/stack/cable_coil = 5,
-		/obj/item/stock_parts/capacitor = 4)
+		/obj/item/stock_parts/capacitor = 2)
 
 #undef TURBGENQ
 #undef TURBGENG

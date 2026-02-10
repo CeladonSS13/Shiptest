@@ -17,6 +17,7 @@
 #define FACTION_UNKNOWN "Unknown"
 
 #define FACTION_RAMZI "Ramzi Clique"
+#define FACTION_RAMZI_RENEGADE "Ramzi Renegade"	// [CELADON-ADD]
 #define FACTION_SRM "Saint-Roumain Militia"
 #define FACTION_CLIP "CLIP Minutemen"
 #define FACTION_FRONTIER "Frontiersmen Fleet"
