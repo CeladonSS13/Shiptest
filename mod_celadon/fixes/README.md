@@ -115,6 +115,8 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code\modules\hydroponics\grown\replicapod.dm` - Исправление отобрежения ДНК на сканере
 
+- EDIT `code\game\objects\items\storage\wallets.dm` -> Чиним работу random кошельков
+
 MECH_WEAPON
 ### Исправление бага перезарядки мех-оружия (SOB-3, BRM-6, SGL-6)
 **Проблема:** Оружие с `disabledreload = TRUE` (SOB-3 Clusterbang, BRM-6 Missile Rack, SGL-6 Flashbang) не могло быть перезаряжено из-за отсутствия переменной `projectiles`, что приводило к `projectiles_max = 0` и неправильной работе логики `ammo_resupply()`.
