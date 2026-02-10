@@ -359,6 +359,10 @@
 	name = "\improper Solar Federation CM-13 Riot Helmet"
 	desc = "A sturdy blue helmet, made with crowd control in mind. The foldable protective visor makes it SolFed-BARD's preferred helmet against hostile xenofauna."
 
+	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
+	vox_override_icon = 'icons/mob/clothing/faction/clip/vox.dmi'
+
 // SolFed-GOLD
 
 /obj/item/clothing/head/fedora/det_hat/clip
