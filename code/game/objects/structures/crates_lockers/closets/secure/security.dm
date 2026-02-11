@@ -109,7 +109,7 @@
 	new /obj/item/storage/lockbox/loyalty(src)
 	new /obj/item/clothing/mask/gas/sechailer/swat(src)
 	new /obj/item/storage/box/flashbangs(src)
-	new /obj/item/shield/riot/tele(src)
+	new /obj/item/shield/tele(src)
 	new /obj/item/storage/belt/security/full(src)
 	new /obj/item/gun/energy/sharplite/x01(src)
 	new /obj/item/gun/energy/e_gun/e_old/hos(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
@@ -302,7 +302,7 @@
 	for(var/i in 1 to 3)
 		new /obj/item/clothing/head/helmet/riot(src)
 	for(var/i in 1 to 3)
-		new /obj/item/shield/riot(src)
+		new /obj/item/shield/tele(src)
 
 /obj/structure/closet/secure_closet/armory2
 	name = "armory ballistics locker"
