@@ -204,7 +204,7 @@ hp
 	crate_name = "PDW crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/vi/resolution
-	name = "PDW - PD46 Resolution (4.6x30mm)"
+	name = "SMG - PD46 Resolution (4.6x30mm)"
 	desc = "Contains a incredibly compact automatic personal defense weapon chambered in 4.6x30mm."
 	cost = 3500
 	contains = list(/obj/item/storage/guncase/wt550)
