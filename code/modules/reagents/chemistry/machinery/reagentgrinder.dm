@@ -248,7 +248,8 @@
 	pixel_x = old_px
 
 /obj/machinery/reagentgrinder/proc/operate_for(time, silent = FALSE, juicing = FALSE)
-	shake_for(time / speed)
+	var/duration = time / speed										// [CELADON-EDIT] - TG-ANIMATION
+	Shake(pixelshiftx = 1, pixelshifty = 0, duration = duration)	// [CELADON-EDIT]
 	operating = TRUE
 	if(!silent)
 		if(!juicing)
