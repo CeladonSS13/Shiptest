@@ -164,7 +164,7 @@
 		return
 
 	if(!current_ship.shipkey && istype(user) && Adjacent(user) && !viewer)
-		say("Generated new shipkey, do not lose it!")
+		say("Новые ключи от корабля созданы, не потеряйте их!")
 		var/key = new /obj/item/key/ship(get_turf(src), current_ship)
 		user.put_in_hands(key)
 		return

@@ -92,14 +92,15 @@
 	objective_type = /mob/living/simple_animal/hostile/asteroid/goliath
 	num_wanted = 1
 	count_stacks = FALSE
-	var/creature_name = "goliath"
+	var/creature_name = "голиафа"
 
 /datum/mission/acquire/creature/New(...)
 	if(!name)
-		name = "Capture a [creature_name]"
+		name = "Захватите [creature_name]"
 	if(!desc)
-		desc = "[SSmissions.get_researcher_name()] has requested a live [creature_name] for research purposes. Trap one within the given \
-				Lifeform Containment Unit and return it to the outpost for a handsome payday."
+		desc = "[SSmissions.get_researcher_name()] запрашивают живого [creature_name] для исследовательских целей. Захватите одного в \
+				контейнер содержания живых организмов и вернитесь на аванпост для получения солидного вознаграждения. \
+				Внимание: после принятия задания, мы отправим вам контейнер через конвейер в ангаре"
 	. = ..()
 
 /datum/mission/acquire/creature/atom_effective_count(atom/movable/target)
@@ -113,44 +114,45 @@
 /datum/mission/acquire/creature/legion
 	value = 1300
 	objective_type = /mob/living/simple_animal/hostile/asteroid/hivelord/legion
-	creature_name = "legion"
+	creature_name = "легиона"
 
 /datum/mission/acquire/creature/ice_whelp
 	value = 1700
 	weight = 2
 	objective_type = /mob/living/simple_animal/hostile/asteroid/ice_whelp
-	creature_name = "ice whelp"
+	creature_name = "ледяного дракона"
 
 /datum/mission/acquire/creature/migo
 	value = 1050
 	weight = 2
 	objective_type = /mob/living/simple_animal/hostile/netherworld/migo/asteroid
-	creature_name = "mi-go"
+	creature_name = "ми-го"
 
 /datum/mission/acquire/creature/basilisk
 	value = 1050
 	weight = 2
 	objective_type = /mob/living/simple_animal/hostile/asteroid/basilisk/whitesands
-	creature_name = "sandworld basilisk"
+	creature_name = "песчаного базилиска"
 
 /datum/mission/acquire/creature/lobster_activity
 	value = 1050
 	weight = 2
 	objective_type = /mob/living/simple_animal/hostile/asteroid/lobstrosity
-	creature_name = "lobstrocity"
+	creature_name = "крабстера"
 
 /datum/mission/acquire/creature/watcher
 	value = 1050
 	weight = 2
 	objective_type = /mob/living/simple_animal/hostile/asteroid/basilisk/watcher
-	creature_name = "watcher"
+	creature_name = "наблюдателя"
 
 /*
 		Acquiry mission containers
 */
 /obj/structure/closet/mob_capture
-	name = "\improper Lifeform Containment Unit"
-	desc = "A large closet-like container, used to capture hostile lifeforms for retrieval and analysis. The interior is heavily armored, preventing animals from breaking out while inside."
+	name = "Контейнер содержания живых организмов"
+	desc = "Большой контейнер, похожий на шкаф, используемый для захвата враждебных форм жизни с целью их извлечения и анализа. Внутренняя часть контейнера имеет прочную броню, предотвращающую побег живых организмов из него."
+	cases = list("контейнер содержания живых организмов", "контейнера содержания живых организмов", "контейнеру содержания живых организмов", "контейнер содержания живых организмов","контейнером содержания живых организмов", "контейнере содержания живых организмов")
 	icon_state = "abductor"
 	icon_door = "abductor"
 	color = "#FF88FF"

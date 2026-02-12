@@ -20,20 +20,20 @@ SUBSYSTEM_DEF(missions)
 
 /datum/controller/subsystem/missions/proc/get_researcher_name()
 	var/group = pick(list(
-		"Cybersun Biodynamics",
-		"Cybersun Virtual Solutions",
-		"CLIP-GOLD Frontier Investigations Office",
-		"CLIP-LAND Frontier Development Office",
-		"Nanotrasen Frontier Studies Division",
-		"The N+S Survey Corps",
-		"The Naturalienwissenschaftlicher Studentenverbindungs-Verband",
-		"The Central Solarian Frontier Research Agency",
-		"NGR Bureau of Expansion",
-		"NGR Bureau of Industry",
-		"A Gezenan newscaster",
-		"PGFN representatives",
-		"Tecetian researchers",
-		"The representative of a Rachnid guild",
-		"A strange sarathi on the outpost"
+		"Киберсан: Биодайнемикс",
+		"Киберсан: Виртуальные Решения",
+		"Управление расследований фронтира CLIP-GOLD",
+		"Управление освоения фронтира CLIP-LAND",
+		"Исследовательское подразделение Нанотрейзен на Фронтире",
+		"Разведовательный корпус N+S",
+		"Союз студенческих объединений NS-V естественных наук Солнечной Федерации",
+		"Центральное исследовательское агенство Солнечной Федерации",
+		"Бюро экспансии NGR",
+		"Промышленное бюро NGR",
+		"Гезенанский ведущий новостей",
+		"Представители PGFN",
+		"Тецетианские исследователи",
+		"Представитель гильдии рахнидов",
+		"Таинственный запрос с аванпоста от Сарати"
 	))
 	return group

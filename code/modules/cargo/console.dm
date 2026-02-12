@@ -5,9 +5,9 @@
 #define SP_UNREADY 5
 
 /obj/machinery/computer/cargo
-	name = "outpost communications console"
-	desc = "This console allows the user to communicate with a nearby outpost to \
-			purchase supplies and manage missions. Purchases will be delivered to your hangar's delivery zone."
+	name = "коммуникационная консоль аванпоста"
+	desc = "Эта консоль позволяет пользователю взаимодейстовать с ближайшим аванпостом для \
+			просмотра и управлениями заданиями выставленными различными организациями."
 	icon_screen = "supply_express"
 	circuit = /obj/item/circuitboard/computer/cargo
 	light_color = COLOR_BRIGHT_ORANGE
@@ -19,13 +19,13 @@
 
 	var/contraband = FALSE
 	var/self_paid = FALSE
-	var/safety_warning = "For safety reasons, the automated supply shuttle \
-		cannot transport live organisms, human remains, classified nuclear weaponry, \
-		homing beacons or machinery housing any form of artificial intelligence."
+	var/safety_warning = "По соображениям безопасности автоматизированный шаттл снабжения \
+		не может перевозить живые организмы, человеческие останки, секретное ядерное оружие, \
+		самонаводящиеся маяки или оборудование, оснащенное каким-либо искусственным интеллектом"
 	/// var that tracks message cooldown
 	var/message_cooldown
 
-	var/blockade_warning = "Bluespace instability detected. Delivery impossible."
+	var/blockade_warning = "Обнаружена Блюспейс нестабильность. Доставка невозможна."
 	var/message
 	var/list/supply_pack_data
 	/// The currently linked supplypod beacon

@@ -10,10 +10,11 @@
 
 /datum/mission/acquire/crystal_critter/New(...)
 	if(!name)
-		name = "Crystal Infection Study"
+		name = "Исследование кристаллической инфекции"
 	if(!desc)
-		desc = "[SSmissions.get_researcher_name()] have requested the capture of an anomalous crystal lifeform for the sake of research into the phenomena. \
-				Take care in capturing it, as entities infected by crystals tend to have enhanced protections for themselves. A lifeform capture unit will be provided for safety's sake."
+		desc = "[SSmissions.get_researcher_name()] запрашивают захватить аномальную кристаллическую форму жизни для исследования этого явления. \
+				Будьте осторожны при поимке, так как существа, зараженные кристаллами, как правило, обладают усиленной защитой. \
+				В целях безопасности вам будет отправлен контейнер содержания живых организмов через конвейер в ангаре."
 	. = ..()
 
 

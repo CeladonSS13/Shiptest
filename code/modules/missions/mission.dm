@@ -254,11 +254,11 @@
 	LAZYREMOVE(bound_atoms, bound)
 
 /datum/mission/proc/get_tgui_info()
-	var/act_str = "Give up"
+	var/act_str = "Сдаться"
 	if(!accepted)
-		act_str = "Accept"
+		act_str = "Принять"
 	else if(can_complete())
-		act_str = "Turn in"
+		act_str = "Получить награду"
 
 	. += list(
 		"ref" = REF(src),
