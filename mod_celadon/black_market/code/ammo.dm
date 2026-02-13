@@ -39,6 +39,16 @@
 	stock_max = 8
 	availability_prob = 50
 
+/datum/blackmarket_item/ammo/c299_box
+	name = ".299 Eoehoma Caseless Ammo Box"
+	desc = "Contains one 60-round box of .299 Caseless ammo from the defunct Eoehoma. Used for the E-40 Hybrid Rifle."
+	item = /obj/item/storage/box/ammo/c299
+	cost_min = 200
+	cost_max = 300
+	stock_min = 3
+	stock_max = 8
+	availability_prob = 50
+
 /datum/blackmarket_item/ammo/a762x54_box
 	name = "7.62x54mm Ammo Box"
 	desc = "Contains a 40-round 7.62x54mm box loaded with SVD ammo, great against lightly armored targets."
