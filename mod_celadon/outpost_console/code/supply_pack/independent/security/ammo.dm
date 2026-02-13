@@ -546,7 +546,7 @@ MARK: .22lr
 	name = "5.7x39mm Ammo Box"
 	desc = "Contains one 80-round 5.7x39mm box for PDWs such as the Sidewinder."
 	contains = list(/obj/item/storage/box/ammo/c57x39)
-	cost = 400
+	cost = 300
 
 // /datum/supply_pack/faction/independent/ammo/ammoc57x39mm_ap
 // 	name = "5.7x39mm AP Ammo Box"
@@ -558,7 +558,7 @@ MARK: .22lr
 	name = "5.7x39mm HP Ammo Box"
 	desc = "Contains one 80-round 5.7x39mm Hollow Point box for PDWs such as the Sidewinder."
 	contains = list(/obj/item/storage/box/ammo/c57x39/hp)
-	cost = 475
+	cost = 375
 
 /*
 	MARK: 5.56 HITP caseless
@@ -566,7 +566,7 @@ MARK: .22lr
 
 /datum/supply_pack/faction/independent/ammo/ammoc556mmHITP_ammo_box
 	name = "5.56mm HITP Caseless Ammo Box"
-	desc = "Contains a 48-round 5.56mm HITP caseless box for SolGov sidearms like the Pistole C."
+	desc = "Contains a 60-round 5.56mm HITP caseless box for SolGov sidearms like the Pistole C."
 	contains = list(/obj/item/storage/box/ammo/c556mm)
 	cost = 250
 
@@ -578,7 +578,7 @@ MARK: .22lr
 
 /datum/supply_pack/faction/independent/ammo/ammoc556mmhitphp_ammo_box
 	name = "5.56mm HITP Caseless HP Ammo Box"
-	desc = "Contains a 48-round 5.56mm HITP caseless box loaded with hollow point ammo, great against unarmored targets."
+	desc = "Contains a 60-round 5.56mm HITP caseless box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c556mm_hp)
 	cost = 300
 
@@ -698,13 +698,13 @@ MARK: .22lr
 	name = "7.62x40mm AP Ammo Box"
 	desc = "Contains one 60-round 7.62x40mm Armour Piercing box for the SKM rifles."
 	contains = list(/obj/item/storage/box/ammo/a762_40/ap)
-	cost = 600
+	cost = 500
 
 /datum/supply_pack/faction/independent/ammo/ammoa762_hp
 	name = "7.62x40mm HP Ammo Box"
 	desc = "Contains one 60-round 7.62x40mm Hollow Point box for the SKM rifles."
 	contains = list(/obj/item/storage/box/ammo/a762_40/hp)
-	cost = 600
+	cost = 500
 
 /*
 	MARK: .45-70
@@ -712,7 +712,7 @@ MARK: .22lr
 
 /datum/supply_pack/faction/independent/ammo/ammoa4570_box
 	name = ".45-70 Ammo Box"
-	desc = "Contains a 24-round box containing devastatingly powerful .45-70 caliber ammunition."
+	desc = "Contains a 24-round box containing devastatingly powerful .45-70 caliber ammunition." // на деле 18, это скам.
 	contains = list(/obj/item/storage/box/ammo/a4570)
 	cost = 200
 
@@ -746,7 +746,7 @@ MARK: .22lr
 	name = ".308 Ammo Box"
 	desc = "Contains a 40-round .308 box."
 	contains = list(/obj/item/storage/box/ammo/a308)
-	cost = 650
+	cost = 300
 
 // /datum/supply_pack/faction/independent/ammo/a308_rubber_box
 // 	name = ".308 Rubber Ammo Box"
@@ -758,7 +758,7 @@ MARK: .22lr
 	name = ".308 hp Ammo Box"
 	desc = "Contains a 40-round .308 box loaded with soft point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/a308/hp)
-	cost = 800
+	cost = 400
 
 // /datum/supply_pack/faction/independent/ammo/a308_ap_box
 // 	name = ".308 AP Ammo Box"
@@ -773,7 +773,7 @@ MARK: .22lr
 	name = "7.62x54mm Ammo Box"
 	desc = "Contains a 40-round 7.62x54mm box loaded with SVD ammo, great against lightly armored targets."
 	contains = list(/obj/item/storage/box/ammo/x762_54)
-	cost = 500
+	cost = 300
 
 /*
 	MARK: 6.5x57mm
@@ -783,13 +783,13 @@ MARK: .22lr
 	name = "6.5x57mm Ammo Box"
 	desc = "Contains a twenty-round 6.5x57mm ammo box for various sniper rifles such as the CM-F90 and the Boomslang series."
 	contains = list(/obj/item/storage/box/ammo/a65clip)
-	cost = 500
+	cost = 200
 
 /datum/supply_pack/faction/independent/ammo/ammoa65clip_trackers
 	name = "6.5x57mm Tracker Shell"
 	desc = "Contains a 10-round 6.5x57mm tracker box for various sniper rifles such as the CM-F90 and the Boomslang series."
 	contains = list(/obj/item/storage/box/ammo/a65clip/trac)
-	cost = 600
+	cost = 250
 
 /*
 	MARK: 8x50mm
@@ -839,9 +839,9 @@ MARK: .22lr
 
 /datum/supply_pack/faction/independent/ammo/ammoferropelletboxcrate
 	name = "Ferromagnetic Pellet (FE pellet) Box"
-	desc = "Contains a 48-round ferromagnetic pellet ammo box for gauss guns such as the Claris."
+	desc = "Contains a 88-round ferromagnetic pellet ammo box for gauss guns such as the Claris."
 	contains = list(/obj/item/storage/box/ammo/ferropellet)
-	cost = 350
+	cost = 300
 
 /*
 	MARK: ferroslugs
@@ -849,7 +849,7 @@ MARK: .22lr
 
 /datum/supply_pack/faction/independent/ammo/ammoferroslugboxcrate
 	name = "Ferromagnetic Slug Box"
-	desc = "Contains a twenty-round ferromagnetic slug for gauss guns such as the Model-H."
+	desc = "Contains a 40-round ferromagnetic slug for gauss guns such as the Model-H."
 	contains = list(/obj/item/storage/box/ammo/ferroslug)
 	cost = 300
 
@@ -859,6 +859,6 @@ MARK: .22lr
 
 /datum/supply_pack/faction/independent/ammo/ammoferrolanceboxcrate
 	name = "Ferromagnetic Lance Box"
-	desc = "Contains a 48-round box for high-powered gauss guns such as the GAR assault rifle."
+	desc = "Contains a 64-round box for high-powered gauss guns such as the GAR assault rifle."
 	contains = list(/obj/item/storage/box/ammo/ferrolance)
 	cost = 400

@@ -35,19 +35,19 @@
 
 /datum/supply_pack/faction/nanotrasen/magazine/guncell
 	name = "E-Cell - Weapon Cell"
-	desc = "Contains a weapon cell, compatible with laser guns."
+	desc = "Contains a weapon cell, compatible with laser guns. It has a rating of 10 MJs."
 	contains = list(/obj/item/stock_parts/cell/gun)
 	cost = 500
 
 /datum/supply_pack/faction/nanotrasen/magazine/upgradedguncell
 	name = "E-Cell - Upgraded Weapon Cell"
-	desc = "Contains an upgraded weapon cell, compatible with laser guns. For NT use only."
+	desc = "Contains an upgraded weapon cell, compatible with laser guns.  It has a rating of 20 MJs. For NT use only."
 	contains = list(/obj/item/stock_parts/cell/gun/upgraded)
 	cost = 1000
 
 /datum/supply_pack/faction/nanotrasen/magazine/powercells_mini
 	name = "E-Mini - NT Energy Weapon Miniature Cell"
-	desc = "The crate contains a three miniature batteries for energy weapons."
+	desc = "The crate contains a three miniature batteries for energy weapons. Every battery has a rating of 5 MJs."
 	contains = list(/obj/item/stock_parts/cell/gun/mini/empty,
 					/obj/item/stock_parts/cell/gun/mini/empty,
 					/obj/item/stock_parts/cell/gun/mini/empty)
@@ -55,7 +55,7 @@
 
 /datum/supply_pack/faction/nanotrasen/magazine/powercells_basic
 	name = "E-Cell - NT Energy Weapon Basic Cell Supply Pack"
-	desc = "The crate contains a three basic batteries for energy weapons."
+	desc = "The crate contains a three basic batteries for energy weapons. Every battery has a rating of 10 MJs."
 	contains = list(/obj/item/stock_parts/cell/gun/empty,
 					/obj/item/stock_parts/cell/gun/empty,
 					/obj/item/stock_parts/cell/gun/empty)
@@ -99,21 +99,21 @@
 
 /datum/supply_pack/faction/nanotrasen/magazine/nt_guncell_mini
 	name = "P-cell Sharplite Mini Power Cell"
-	desc = "Contains a proprietary weapon cell, compatible with the Ohm self-defence pistol."
+	desc = "Contains a proprietary weapon cell, compatible with the Ohm self-defence pistol. It has a rating of 7 MJs."
 	contains = list(/obj/item/stock_parts/cell/gun/sharplite/mini)
 	cost = 300
 	stable_price = TRUE
 
 /datum/supply_pack/faction/nanotrasen/magazine/nt_guncell
 	name = "P-Cell - Sharplite Weapon Cell"
-	desc = "Contains a proprietary weapon cell, compatible with most Sharplite energy weapons."
+	desc = "Contains a proprietary weapon cell, compatible with most Sharplite energy weapons. It has a rating of 15 MJs."
 	contains = list(/obj/item/stock_parts/cell/gun/sharplite/empty)
 	cost = 1750
 	stable_price = TRUE
 
 /datum/supply_pack/faction/nanotrasen/magazine/nt_gun_plus
 	name = "P-Cell - Sharplite Upgraded Weapon Cell"
-	desc = "Contains an upgraded weapon cell, compatible with most Nanotrasen models. For NT use only."
+	desc = "Contains an upgraded weapon cell, compatible with most Nanotrasen models. It has a rating of 30 MJs. For NT use only."
 	contains = list(/obj/item/stock_parts/cell/gun/sharplite/plus/empty)
 	cost = 3500
 	stable_price = TRUE
