@@ -195,12 +195,6 @@
 	contains = list(/obj/item/storage/box/ammo/a308)
 	cost = 300
 
-/datum/supply_pack/faction/solfed/ammo/a308_rubber_box
-	name = ".308 Rubber Ammo Box"
-	desc = "Contains a 40-round .308 box loaded with less-than-lethal rubber rounds."
-	contains = list(/obj/item/storage/box/ammo/a308/a308_rub)
-	cost = 300
-
 /datum/supply_pack/faction/solfed/ammo/a308_hp_box
 	name = ".308 HP Ammo Box"
 	desc = "Contains a 40-round .308 box loaded with hollow-point ammo, great against unarmored targets."
