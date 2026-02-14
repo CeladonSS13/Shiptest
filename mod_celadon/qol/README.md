@@ -62,6 +62,7 @@ CELADON_QOL_LOADOUT
 - EDIT `code/modules/mob/living/silicon/silicon.dm`: `/mob/living/silicon/proc/checklaws()`
 - EDIT `code/game/objects/items/AI_modules.dm`: `/obj/item/aiModule/core/full/asimov/attack_self(mob/user as mob)`
 - EDIT `code/modules/ruins/spaceruin_code/forgottenship.dm`: `/datum/ai_laws/cybersun`
+- ADD `code/datums/datum.dm` - добавлены переменные для работы падежей
 Законы ИИ
 - EDIT `code/datums/ai_laws.dm`: `/datum/ai_laws/default/asimov`
 - EDIT `code/datums/ai_laws.dm`: `/datum/ai_laws/default/paladin`

@@ -46,6 +46,12 @@
 	/// List for handling persistent filters.
 	var/list/filter_data
 
+	/// [CELADONE-ADD]
+	/// russian case forms of atom name in format
+	/// list(NOMINATIVE_CASE, GENITIVE_CASE, DATIVE_CASE, ACCUSATIVE_CASE, ABLATIVE_CASE, PREPOSITIONAL_CASE)
+	/// for usage with CASE macros (code/__DEFINES/~mod_celadon/_translation.dm)
+	var/list/cases = null
+
 #ifdef REFERENCE_TRACKING
 	/// When was this datum last touched by a reftracker?
 	/// If this value doesn't match with the start of the search

@@ -590,6 +590,20 @@
 	suffix = "rockplanet_rustbase.dmm"
 	cost = 1
 
+/datum/map_template/ruin/rockplanet/stash_river_valley
+	name = "Frontier River Valley Stash"
+	id = "river_valley_stash"
+	description = "A frontiersman drug stash in the midst of being buried."
+	suffix = "rockplanet_river_valley_stash.dmm"
+	cost = 3
+
+/datum/map_template/ruin/rockplanet/trench_complex_front	// somme (название dmm у оффов) = trench complex (та же руина, но уже в их конфиге)
+	name = "Frontier Trench Complex"
+	id = "trench_complex"
+	description = "Frontiersmen have dug in like ticks to the planet's surface."
+	suffix = "rockplanet_trench_complex.dmm"
+	cost = 4
+
 //							///
 //		MARK: Space
 //							///
@@ -710,6 +724,20 @@
 	suffix = "scrapstation.dmm"
 	name = "Ramzi Scrapping Station"
 	description = "A Syndicate FOB dating back to the ICW, now home to the Ramzi Clique and their latest haul."
+
+/datum/map_template/ruin/space/onehalftwo
+	name = "Nanotrasen Refueling Station"
+	id = "onehald_two"
+	description = "An abandoned Nanotrasen refueling post evacuated after an attempted ACLF plasmaflood. Since then, hivebots and a small Ramzi Clique salvage team have attempted to claim the station."
+	suffix = "onehalftwo.dmm"
+	cost = 3
+
+/datum/map_template/ruin/space/videepstorage
+	name = "Vigilitas Deepstorage"
+	id = "vi_deepstorage"
+	description = "A Vigilitas blacksite for holding important and suspicious cargo."
+	suffix = "vi_deepstorage.dmm"
+	cost = 3
 
 //							///
 //		MARK: WastePlanet

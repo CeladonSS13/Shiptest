@@ -25,6 +25,7 @@ ID мода:
 	BALLISTIC_SHIELD
 	YOU_NOT_SEPARATIST
 	SLOW_SPEED_CRAWLING
+	OUTPOST_MED_BALANCE
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов. Добавлены
@@ -37,6 +38,7 @@ ID мода:
 - Изменено количество получаемого лута с элиток.
 - Портированы изменения от Ганзы.
 - Добавлен претор ксеноморфов. Изменены характеристики ксеноморфов, а также очки РнД с них.
+-  Изменяем цены в оутпост меде.
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
   А также любая полезная информация.
@@ -160,9 +162,12 @@ ANOMALY_BALANCE
 EDIT:
 - `code\modules\overmap\objects\star.dm` : изменение шансов спавна, спавна звезды и т.д.
 - `code\modules\overmap\objects\event_datum.dm` : изменение видов аномалии
-
 Связное с этим:
 - `mod_celadon\fixes\code\research_mission.dm`
+
+OUTPOST_MED_BALANCE
+- `code\modules\vending\medical_wall.dm` : изменены цены на товары
+- `code\modules\reagents\reagent_containers\hypospray.dm`, `code\game\objects\items\stacks\tape.dm`, `code\game\objects\items\storage\firstaid.dm`, `code\game\objects\items\stacks\medical.dm` : изменены цены на атропин и т.д. в оутпост меде
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

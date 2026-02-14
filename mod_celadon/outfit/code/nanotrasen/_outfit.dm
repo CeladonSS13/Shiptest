@@ -587,6 +587,20 @@
 	satchel = /obj/item/storage/backpack/satchel/tox
 	courierbag = /obj/item/storage/backpack/messenger/tox
 
+/datum/outfit/job/cel/nanotrasen/scientist/roboticist
+	name = "NT - Roboticist"
+	jobtype = /datum/job/roboticist
+	job_icon = "roboticist"
+
+	ears = /obj/item/radio/headset/headset_sci
+	uniform = /obj/item/clothing/under/nanotrasen/science/robotics
+	shoes = /obj/item/clothing/shoes/sneakers/black
+	suit = /obj/item/clothing/suit/jacket
+	glasses = /obj/item/clothing/glasses/welding
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/science
+
+	backpack_contents = list(/obj/item/weldingtool/hugetank)
+
 // MARK: CIVILIAN
 
 // Janitor

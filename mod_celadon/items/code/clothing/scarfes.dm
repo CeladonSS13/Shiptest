@@ -8,6 +8,16 @@
 	desc = "A furred scarf, a common item, this one is brown."
 	icon_state = "furscarf_brown"
 	item_state = "furscarf_brown"
+	unique_reskin = list("brown scarf" = "furscarf_lbrown",
+						"cinnamon scarf" = "furscarf_cinnamon",
+						"blue scarf" = "furscarf_blue",
+						"ruddy scarf" = "furscarf_ruddy",
+						"black scarf" = "furscarf_black",
+						"lasaga scarf" = "furscarf_lasaga",
+						"cream scarf" = "furscarf_cream",
+						"red scarf" = "stripedsyndiescarf"
+						)
+	unique_reskin_changes_base_icon_state = TRUE
 
 /obj/item/clothing/neck/scarf/tajaran/lbrown
 	desc = "A furred scarf, a common item, this one is light brown."

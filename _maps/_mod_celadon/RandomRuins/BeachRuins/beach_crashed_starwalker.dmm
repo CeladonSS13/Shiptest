@@ -35,9 +35,7 @@
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 2
-	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /obj/structure/cable/orange{
 	icon_state = "5-8"
@@ -917,7 +915,7 @@
 /area/overmap_encounter/planetoid/cave/explored)
 "nw" = (
 /mob/living/simple_animal/hostile/carp{
-	resize = 0.5;
+	current_size = 0.5;
 	melee_damage_lower = 0;
 	melee_damage_upper = 0;
 	name = "Baby carp";

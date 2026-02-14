@@ -124,6 +124,10 @@
 	. = ..()
 	if(in_range(user, src) || isobserver(user))
 		. += span_notice("The status display reads: Efficiency at <b>[efficiency*100]%</b>.")
+	// [CELADON-ADD] - CELADON_INTEQ_VENDOR  - добавляем поддержку к мультитулу
+		. += span_notice("The compressor ID is '<b>[comp_id]</b>'.")
+		. += span_notice("It looks like you can modify the id settings by using a <b>multitool</b> on it.")
+	// [/CELADON-ADD]
 
 /obj/machinery/power/compressor/attackby(obj/item/I, mob/user, params)
 	if(default_deconstruction_screwdriver(user, initial(icon_state), initial(icon_state), I))
@@ -255,10 +259,7 @@
 	// the TURBGENQ and TURBGENG values
 
 	lastgen = ((compressor.rpm / TURBGENQ)**TURBGENG) * TURBGENQ * productivity
-	// [CELADON-EDIT] - Турбины стали буквально в 10 раз слабее из-за смены delta_time на seconds_per_tick
-	//thrust = lastgen * POWER_TO_THRUST // second law
-	thrust = lastgen * POWER_TO_THRUST * 2 // second law
-	// [/CELADON-EDIT]
+	thrust = lastgen * POWER_TO_THRUST // second law
 
 	var/turf/outturf = get_step(src, dir)
 	if(!LAZYLEN(outturf.atmos_adjacent_turfs))
@@ -370,6 +371,26 @@
 			locate_machinery()
 			. = TRUE
 
+// [CELADON-ADD] - CELADON_INTEQ_VENDOR - добавляем поддержку мультитула
+//MARK: Multitool actions
+
+/obj/machinery/power/compressor/multitool_act(mob/living/user, obj/item/I)
+	. = ..()
+	var/obj/item/multitool/M = I
+	var/list/choice_list = list("Modify the compressor ID", "Save the Compressor connection to the multitool buffer")
+	var/choice = tgui_input_list(user, "Select an option", "Advanced Configuration", choice_list)
+
+	switch(choice)
+		if("Modify the compressor ID")
+			comp_id = stripped_input(user, "Set a compressor ID for this compressor. Ensure that it is no bigger than 32 characters long.", "Componcompressorent ID Setup", max_length = 32)
+			to_chat(user, span_notice("You set [src] compressor ID to '[comp_id]'."))
+
+		if("Save the Compressor connection to the multitool buffer")
+			M.buffer = src
+			to_chat(user, span_notice("You add [src] connection to the multitool's buffer."))
+
+	return TRUE
+// [/CELADON-ADD]
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -438,6 +459,34 @@
 			locate_machinery()
 			. = TRUE
 
+// [CELADON-ADD] - CELADON_INTEQ_VENDOR - добавляем поддержку мультитула
+//MARK: Multitool actions
+/obj/machinery/computer/turbine_computer/examine(mob/user)
+	. = ..()
+	if(in_range(user, src) || isobserver(user))
+		. += span_notice("The computer's compressor ID is '<b>[id]</b>'.")
+		. += span_notice("It looks like you can modify the id settings by using a <b>multitool</b> on it.")
+
+/obj/machinery/computer/turbine_computer/multitool_act(mob/living/user, obj/item/I)
+	. = ..()
+	var/obj/item/multitool/M = I
+	var/list/choice_list = list("Modify the compressor ID of a computer", "Load the Compressor connection to the console")
+	var/choice = tgui_input_list(user, "Select an option", "Advanced Configuration", choice_list)
+
+	switch(choice)
+		if("Modify the compressor ID of a computer")
+			id = stripped_input(user, "Set a ID for this computer. Ensure that it is no bigger than 32 characters long.", "Computer ID Setup", max_length = 32)
+			to_chat(user, span_notice("You set [src] ID to '[id]'."))
+
+		if("Load the Compressor connection to the console")
+			if(istype(M.buffer,/obj/machinery/power/compressor))
+				compressor = M.buffer
+				id = compressor.comp_id
+				to_chat(user, span_notice("You connect [compressor] to [src]."))
+			else
+				to_chat(user, span_notice("The ID from he [M] is not from the compressor."))
+	return TRUE
+// [/CELADON-ADD]
 #undef POWER_TO_THRUST
 #undef COMPFRICTION
 #undef TURBGENQ
