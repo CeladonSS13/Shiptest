@@ -6,34 +6,33 @@
 // MARK: MELEE
 
 /datum/supply_pack/faction/syndicate/sec_supply/sledgehammer
-	name = "Sledgehammer Crate"
+	name = "Sledgehammer"
 	desc = "Contains a freshly fabricated Breaching Sledgehammer, capable of wrecking hull and flesh with ease."
 	cost = 1500
 	crate_name = "sledgehammer crate"
 
 /datum/supply_pack/faction/syndicate/sec_supply/hardliner_flyssa
-	name = "Energy Flyssa Crate"
+	name = "Energy Flyssa"
 	desc = "Contains a lathed, verified, and readied Energy Flyssa. This is one of the assets you need to be careful to not lose."
 	cost = 1500
 	contains = list(/obj/item/melee/energy/flyssa)
 	crate_name = "energy flyssa crate"
 
 /datum/supply_pack/faction/syndicate/sec_supply/suns_sabre
-	name = "SUNS Dueling Sabre Crate"
+	name = "SUNS Dueling Sabre"
 	desc = "Contains a single dueling sabre, intended for resolving conflicts among students."
 	cost = 750
 	contains = list(/obj/item/storage/belt/sabre/suns)
 	crate_name = "student's sabre crate"
 
-
 /datum/supply_pack/faction/syndicate/sec_supply/suns_cmo_sabre
-	name = "SUNS Cane Sabre Crate"
+	name = "SUNS Cane Sabre"
 	desc = "Contains a blade sheathed in a cane. "
 	cost = 800
 	crate_name = "student's sabre crate"
 
 /datum/supply_pack/faction/syndicate/sec_supply/suns_telescopic_sabre
-	name = "SUNS Telescopic Sabre Crate"
+	name = "SUNS Telescopic Sabre"
 	desc = "Contains a finely crafted telescopic sabre, ideal for those with discerning tastes"
 	cost = 600
 	crate_name = "telescopic sabre crate"

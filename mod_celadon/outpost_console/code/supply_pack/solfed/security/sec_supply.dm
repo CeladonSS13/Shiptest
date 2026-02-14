@@ -3,7 +3,7 @@
 	crate_type = /obj/structure/closet/crate/secure/gear
 
 /datum/supply_pack/faction/solfed/solarian_sabre
-	name = "Solarian Ceremonial Sabre Crate"
+	name = "Solarian Ceremonial Sabre"
 	desc = "Contains one ceremonial Solarian sabre. To keep tradition alive. Still quite sharp."
 	cost = 750
 	contains = list(/obj/item/storage/belt/sabre/solgov)
