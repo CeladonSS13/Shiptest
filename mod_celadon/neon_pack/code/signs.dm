@@ -9,7 +9,7 @@
 /obj/structure/sign/neon/Initialize()
 	. = ..()
 	if(emissive_state)
-		add_overlay(emissive_appearance(icon, emissive_state))
+		add_overlay(emissive_appearance(icon, emissive_state, src))
 
 /obj/structure/sign/neon/item
 	name = "item store"
@@ -225,7 +225,7 @@
 /obj/structure/sign/neon/trafficsign/Initialize()
 	. = ..()
 	add_overlay(overlay_state)
-	add_overlay(emissive_appearance(icon, overlay_state))
+	add_overlay(emissive_appearance(icon, overlay_state, src))
 
 /obj/structure/sign/neon/trafficsign/emergency_stop
 	name = "secondary road traffic sign"

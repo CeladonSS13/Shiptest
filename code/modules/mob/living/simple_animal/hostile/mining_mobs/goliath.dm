@@ -38,7 +38,7 @@
 	var/can_charge = TRUE
 	var/pre_attack = 0
 	var/pre_attack_icon = "ancient_goliath_preattack"
-	var/tentacle_type = /obj/effect/temp_visual/goliath_tentacle
+	var/tentacle_type = /obj/effect/goliath_tentacle
 	butcher_results = list(/obj/item/food/meat/slab/goliath = 2, /obj/item/stack/sheet/bone = 2, /obj/item/stack/sheet/sinew = 2, /obj/item/stack/ore/silver = 10)
 	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/goliath_hide = 2)
 	loot = list()
@@ -114,6 +114,11 @@
 	handle_preattack()
 	if(icon_state != icon_aggro)
 		icon_state = icon_aggro
+
+/mob/living/simple_animal/hostile/asteroid/goliath/update_overlays()
+	. = ..()
+	if (stat != DEAD)
+		. += emissive_appearance(icon, "[icon_living]_e", src, effect_type = EMISSIVE_NO_BLOOM)
 
 /mob/living/simple_animal/hostile/asteroid/goliath/pup
 	name = "goliath pup"
@@ -299,27 +304,76 @@
 	var/retract = "Goliath_tentacle_retract"
 	var/difficulty = 3
 
-/obj/effect/temp_visual/goliath_tentacle/Initialize(mapload, mob/living/new_spawner,recursive = FALSE)
+/// A tentacle which grabs you if you don't get away from it
+/obj/effect/goliath_tentacle
+	name = "goliath tentacle"
+	icon = 'icons/mob/lavaland/lavaland_monsters2.dmi'
+	icon_state = "goliath_tentacle_spawn"
+	layer = BELOW_MOB_LAYER
+	plane = GAME_PLANE
+	anchored = TRUE
+	/// Timer for our current action stage
+	var/action_timer
+	/// Time in which to grab people
+	var/grapple_time = 10 SECONDS
+
+/obj/effect/goliath_tentacle/Initialize(mapload, mob/living/new_spawner,recursive = FALSE)
 	. = ..()
-	flick(wiggle,src)
-	for(var/obj/effect/temp_visual/goliath_tentacle/T in loc)
-		if(T != src)
+	if (ismineralturf(loc))
+		var/turf/closed/mineral/floor = loc
+		floor.gets_drilled()
+	if (!isopenturf(loc) || isspaceturf(loc))
+		return INITIALIZE_HINT_QDEL
+	for (var/obj/effect/temp_visual/goliath_tentacle/tentacle in loc)
+		if (tentacle != src)
 			return INITIALIZE_HINT_QDEL
-	if(!QDELETED(new_spawner))
-		spawner = new_spawner
-	if(ismineralturf(loc))
-		var/turf/closed/mineral/M = loc
-		M.gets_drilled()
-	deltimer(timerid)
-	timerid = addtimer(CALLBACK(src, PROC_REF(tripanim)), 7, TIMER_STOPPABLE)
-	if(!recursive)
+	deltimer(action_timer)
+	action_timer = addtimer(CALLBACK(src, PROC_REF(animate_grab)), 0.7 SECONDS, TIMER_STOPPABLE)
+	update_appearance(UPDATE_OVERLAYS)
+
+/obj/effect/goliath_tentacle/Destroy()
+	deltimer(action_timer)
+	return ..()
+
+/// Change to next icon state and set up grapple
+/obj/effect/goliath_tentacle/proc/animate_grab()
+	icon_state = "goliath_tentacle_wiggle"
+	update_appearance(UPDATE_OVERLAYS)
+	deltimer(action_timer)
+	addtimer(CALLBACK(src, PROC_REF(grab)), 0.3 SECONDS, TIMER_STOPPABLE)
+
+/// Grab everyone we share space with. If it's nobody, go home.
+/obj/effect/goliath_tentacle/proc/grab()
+	for (var/mob/living/victim in loc)
+		if (victim.stat == DEAD)	//if (victim.stat == DEAD || HAS_TRAIT(victim, TRAIT_TENTACLE_IMMUNE))
+			continue
+		balloon_alert(victim, "grabbed")
+		visible_message(span_danger("[src] grabs hold of [victim]!"))
+		victim.apply_damage(rand(10,20), BRUTE, pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG), wound_bonus = CANT_WOUND) //already dangerous, don't break legs too
+		if(iscarbon(victim))
+			var/obj/item/restraints/legcuffs/beartrap/goliath/B = new /obj/item/restraints/legcuffs/beartrap/goliath(get_turf(victim))
+			B.on_entered(src, victim)
+	if (!has_buckled_mobs())
+		retract()
 		return
-	var/list/directions = get_directions()
-	for(var/i in 1 to difficulty)
-		var/spawndir = pick_n_take(directions)
-		var/turf/T = get_step(src, spawndir)
-		if(T)
-			new type(T, spawner)
+	deltimer(action_timer)
+	action_timer = addtimer(CALLBACK(src, PROC_REF(retract)), grapple_time, TIMER_STOPPABLE)
+
+/// Play exit animation.
+/obj/effect/goliath_tentacle/proc/retract()
+	if (icon_state == "goliath_tentacle_retract")
+		return // Already retracting
+	//SEND_SIGNAL(src, COMSIG_GOLIATH_TENTACLE_RETRACTING)
+	unbuckle_all_mobs(force = TRUE)
+	icon_state = "goliath_tentacle_retract"
+	update_appearance(UPDATE_OVERLAYS)
+	deltimer(action_timer)
+	action_timer = QDEL_IN_STOPPABLE(src, 0.7 SECONDS)
+
+/obj/effect/goliath_tentacle/update_overlays()
+	. = ..()
+	. += emissive_appearance(icon, "[icon_state]_e", src, effect_type = EMISSIVE_NO_BLOOM)
+	. += emissive_appearance(icon, "[icon_state]_e_bloom", src)
 
 /obj/effect/temp_visual/goliath_tentacle/proc/get_directions()
 	return GLOB.cardinals.Copy()

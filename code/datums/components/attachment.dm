@@ -145,7 +145,7 @@
 			overlay_layer = parent.render_layer
 		if(parent.render_plane)
 			overlay_layer = parent.render_plane
-		overlays += mutable_appearance(parent.icon, "[parent.icon_state]-attached",overlay_layer,overlay_plane)
+		overlays += mutable_appearance(parent.icon, "[parent.icon_state]-attached", plane = overlay_layer, alpha = overlay_plane)
 
 /datum/component/attachment/proc/try_attach(obj/item/parent, obj/item/holder, mob/user, bypass_checks)
 	SIGNAL_HANDLER

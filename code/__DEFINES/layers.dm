@@ -40,6 +40,20 @@
 /// The range unique planes can be in
 #define PLANE_RANGE (HIGHEST_EVER_PLANE - LOWEST_EVER_PLANE)
 
+// FLOOR_PLANE layer(s)
+// We need to force this plane to render as if we were not using sidemap
+// this allows larger then bound floors to layer as we'd expect
+// ANYTHING on the floor plane needs TOPDOWN_LAYER, and nothing that isn't on the floor plane can have it
+
+// NOTICE: we break from the pattern of increasing in steps of like 0.01 here
+// Because TOPDOWN_LAYER is 10000 and that's enough to floating point our modifications away
+
+/// Used to shift all topdown layer emissives to a the game plane equivalent layers, as otherwise they render above everything else due to being KEEP_APART
+#define TOPDOWN_TO_EMISSIVE_LAYER(layer) LERP(FLOOR_EMISSIVE_START_LAYER, FLOOR_EMISSIVE_END_LAYER, (layer - (TOPDOWN_LAYER + 1)) / TOPDOWN_LAYER_COUNT)
+
+// Must be equal to the offset of the highest topdown layer
+#define TOPDOWN_LAYER_COUNT 18
+
 #define SPACE_LAYER 1.8
 //#define TURF_LAYER 2 //For easy recordkeeping; this is a byond define
 #define MID_TURF_LAYER 2.02
@@ -58,6 +72,8 @@
 #define CLOSED_TURF_LAYER 2.05
 #define BULLET_HOLE_LAYER 2.06
 #define ABOVE_NORMAL_TURF_LAYER 2.08
+#define FLOOR_EMISSIVE_START_LAYER 2.09
+#define FLOOR_EMISSIVE_END_LAYER 2.26
 #define LATTICE_LAYER 2.2
 #define DISPOSAL_PIPE_LAYER 2.3
 #define GAS_PIPE_HIDDEN_LAYER 2.35
