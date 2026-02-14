@@ -87,6 +87,7 @@
 	desc = "Contains an experimental Elite Inteq modsuit."
 	cost = 11000 // Фича в модулях у интеков, а не в броне. Ради этого нужно больше денег, из-за чего мод дешевле.
 	contains = list(/obj/item/mod/control/pre_equipped/inteq/elite/empty)
+	stable_price = TRUE
 
 
 // MARK: NANOTRASEN
@@ -190,6 +191,7 @@
 	desc = "Contains an all-round Responsory modsuit, well regarded for its speed, protection and capabilties."
 	cost = 10000
 	contains = list(/obj/item/mod/control/pre_equipped/responsory/empty)
+	stable_price = TRUE
 
 // MARK: SOLFED
 /datum/supply_pack/faction/solfed/modsuits
@@ -287,8 +289,9 @@
 /datum/supply_pack/faction/solfed/modsuits/complete/falke
 	name = "FLKR MODsuit"
 	desc = "Contains a military-grade commander MODsuit."
-	cost = 16000
+	cost = 14500
 	contains = list(/obj/item/mod/control/pre_equipped/falke/empty)
+	stable_price = TRUE
 
 // MARK: SYNDICATE
 /datum/supply_pack/faction/syndicate/modsuits
@@ -343,7 +346,7 @@
 	cost = 8000 // 6000 + 2000 from capacitor
 	contains = list(/obj/item/mod/module/stealth/military,
 					/obj/item/military_tech/capacitor)
-
+	stable_price = TRUE
 
 // MARK: armor booster
 /datum/supply_pack/faction/syndicate/modsuits/modules/armor_booster_light
@@ -386,5 +389,6 @@
 /datum/supply_pack/faction/syndicate/modsuits/complete/syndicate_elite
 	name = "Elite MODsuit"
 	desc = "Contains an experimental Elite modsuit."
-	cost = 13000
+	cost = 12000
 	contains = list(/obj/item/mod/control/pre_equipped/elite/empty)
+	stable_price = TRUE
