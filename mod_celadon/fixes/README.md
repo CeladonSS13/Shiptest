@@ -22,7 +22,6 @@ FIXES_ICON
 FIXES_SOUND
 MECH_WEAPON
 FIXES_CHAMELEON
-FIXES_GOLIATH_TENTACLES
 FIXES_SHIP_LOGIN_DOUBLE_NAME
 FIXES_WETHIDE
 FIXES_DRILLCLASS
@@ -187,8 +186,6 @@ FIXES_SOUND
 FIXES_CHAMELEON
 - EDIT: `code/datums/mutations/chameleon.dm` - Чиним крит баг с вечной невидимостью
 
-FIXES_GOLIATH_TENTACLES
-- ADD: `code/modules/mob/living/simple_animal/hostile/mining_mobs/goliath.dm` : Добавляем прок и прверки на жизненный цикл тентакли и её создателя
 FIXES_SHIP_LOGIN_DOUBLE_NAME
 - ADD: `code/modules/mob/dead/new_player/ship_select.dm` : Поднимаем проверку на одинаковые имена ДО создания корабля, чтобы избежать спавна изолированного корабля
 
