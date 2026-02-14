@@ -128,7 +128,7 @@
 		token.color = current_overmap.hazard_secondary_color
 	current_overmap.post_edit_token_state(src)
 
-// [CELADON-ADD] - CELADON_ECONOMY
+// [CELADON-ADD] - ANOMALY_BALANCE
 /obj/effect/spawner/random/anomaly/storm/short
 	loot = list(
 		/obj/effect/anomaly/flux/storm/short,

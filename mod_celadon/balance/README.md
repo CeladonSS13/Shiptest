@@ -21,6 +21,7 @@ ID мода:
 	CELADON_BALANCE_SPECIES
 	CELADON_BALANCE_VENDING
 	ALIEN_BALANCE
+	ANOMALY_BALANCE
 	BALLISTIC_SHIELD
 	YOU_NOT_SEPARATIST
 	SLOW_SPEED_CRAWLING
@@ -154,6 +155,14 @@ SLOW_SPEED_CRAWLING
 TWEAK_PACIFIST_TRAIT
 - `code/_onclick/item_attack.dm`				: Пацифисты не хотят вредить живым существам, но могут бить неживые объекты
 - `code/modules/mob/living/carbon/carbon.dm` 	: Пацифисты не могут бросаться предметами
+
+ANOMALY_BALANCE
+EDIT:
+- `code\modules\overmap\objects\star.dm` : изменение шансов спавна, спавна звезды и т.д.
+- `code\modules\overmap\objects\event_datum.dm` : изменение видов аномалии
+
+Связное с этим:
+- `mod_celadon\fixes\code\research_mission.dm`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
