@@ -177,13 +177,13 @@
 	name = "Enegry - Etherbor Cell"
 	desc = "Contains an Etherbor weapon cell, compatible with Etherbor armaments with a slightly higher capacity."
 	contains = list(/obj/item/stock_parts/cell/gun/kalix)
-	cost = 600
+	cost = 450
 
 /datum/supply_pack/faction/independent/magazine/guncell
 	name = "Enegry - Weapon Cell"
 	desc = "Contains a weapon cell, compatible with laser guns."
 	contains = list(/obj/item/stock_parts/cell/gun)
-	cost = 650
+	cost = 450
 
 // ===========================================================
 
