@@ -56,7 +56,7 @@
 /obj/machinery/power/floodlight
 	name = "floodlight"
 	desc = "A pole with powerful mounted lights on it. Due to its high power draw, it must be powered by a direct connection to a wire node."
-	icon = 'icons/obj/lighting.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/obj/lighting.dmi'	//icon = 'icons/obj/lighting.dmi'	// [CELADON-EDIT]
 	icon_state = "floodlight"
 	density = TRUE
 	max_integrity = 100

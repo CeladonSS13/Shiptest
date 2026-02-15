@@ -208,7 +208,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/light_construct/small, 28)
 /obj/machinery/light
 	name = "light fixture"
 	icon = 'icons/obj/lighting.dmi'
-	var/base_state = "tube"		// base description and icon_state
 	icon_state = "tube-on"
 	desc = "A lighting fixture."
 	layer = BELOW_OBJ_LAYER
@@ -217,6 +216,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/light_construct/small, 28)
 	idle_power_usage = 0
 	active_power_usage = 0
 	power_channel = AREA_USAGE_LIGHT //Lights are calc'd via area so they dont need to be in the machine list
+	// base description and icon_state
+	var/base_state = "tube"
 	var/on = FALSE					// 1 if on, 0 if off
 	var/on_gs = FALSE
 	var/static_power_used = 0
@@ -256,6 +257,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/light_construct/small, 28)
 
 	///wallmount trait
 	var/is_wallmounted = TRUE
+
+	var/mod_light = FALSE	// [CELADON-ADD]
 
 /obj/machinery/light/Initialize(mapload)
 	. = ..()
@@ -333,8 +336,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light/small/built, 28)
 	//Setup area colours -pb
 	var/area/A = get_area(src)
 	if(bulb_colour == initial(bulb_colour))
-		if(istype(src, /obj/machinery/light/small))
-			bulb_colour = A.lighting_colour_bulb
+		if(istype(src, /obj/machinery/light/colored))	// [CELADON-EDIT]
 			brightness = A.lighting_brightness_bulb
 		else
 			bulb_colour = A.lighting_colour_tube
@@ -378,6 +380,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light/small/built, 28)
 	return ..()
 
 /obj/machinery/light/update_icon_state()
+	if(mod_light == TRUE)		// [CELADON-ADD]
+		return ..()		// [/CELADON-ADD]
 	switch(status)		// set icon_states
 		if(LIGHT_OK)
 			var/area/A = get_area(src)

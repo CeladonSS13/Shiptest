@@ -249,7 +249,7 @@
 				. += lips_overlay
 
 			// eyes
-			var/mutable_appearance/sclera_overlay = mutable_appearance('icons/mob/human_face.dmi', "", -BODY_LAYER, SOUTH)
+			var/mutable_appearance/sclera_overlay = mutable_appearance('icons/mob/human_face.dmi', "", -BODY_LAYER, src, SOUTH)
 			var/image/eyes_overlay = image('icons/mob/human_face.dmi', "eyes_missing", -BODY_LAYER, SOUTH)
 
 			. += eyes_overlay

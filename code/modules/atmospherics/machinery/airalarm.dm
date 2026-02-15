@@ -718,11 +718,11 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/airalarm, 27)
 				emissive_state = "alarm2"
 
 		. += mutable_appearance(icon, emissive_state)
-		. += mutable_appearance(icon, "light_emissive", layer, EMISSIVE_PLANE)
+		. += mutable_appearance(icon, "light_emissive", layer, src, plane = EMISSIVE_PLANE)
 
 	if(perc_danger_level) //When there's any danger level, light up the "AIR" sign too
 		. += mutable_appearance(icon, "alarm_sign")
-		. += mutable_appearance(icon, "alarm_sign", layer, EMISSIVE_PLANE)
+		. += mutable_appearance(icon, "alarm_sign", layer, src, plane = EMISSIVE_PLANE)
 
 /obj/machinery/airalarm/process(seconds_per_tick)
 	if((machine_stat & (NOPOWER|BROKEN)) || shorted)

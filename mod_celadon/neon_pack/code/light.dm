@@ -1,35 +1,33 @@
 // Coloured lighting because fabulous
 /obj/machinery/light/colored
 	name = "light fixture"
-	icon = 'mod_celadon/_storage_icons/icons/structures/obj/coloredlights.dmi'
-	base_state = "yellow"		// base description and icon_state
-	icon_state = "yellow1"
-	// emissive_state = "emissive"
 	desc = "A lighting fixture."
+	icon = MAP_SWITCH('mod_celadon/_storage_icons/icons/structures/obj/lighting.dmi', 'mod_celadon/_storage_icons/icons/structures/obj/lighting_editor.dmi')
+	icon_state = "tube_editor"
+	base_state = "tube"
 	brightness = 8
 	bulb_power = 6
-	light_color = LIGHT_COLOR_HALOGEN
-	var/emissive_state = "tube-emissive"
-	// var/on_wall = 1
+	///What overlay the light should use
+	var/overlay_icon = 'mod_celadon/_storage_icons/icons/structures/obj/lighting_overlay.dmi'
+	mod_light = TRUE
 
 /obj/machinery/light/colored/update_icon_state()
 	. = ..()
-	cut_overlays()
 	switch(status)
 		if(LIGHT_OK)
-			icon_state = (on ? "[base_state]1" : "off")
-			if(on && emissive_state)
-				add_overlay(emissive_appearance(icon, "emissive", src))	// ЕБЛАН HD
+			var/area/local_area = get_area(src)
+			if(emergency_mode || (local_area?.fire))
+				icon_state = "[base_state]-emergency"
+			else if(local_area?.vacuum)
+				icon_state = "[base_state]-vacuum"
+			else
+				icon_state = "[base_state]"
 		if(LIGHT_EMPTY)
-			icon_state = "empty"
-			on = 0
+			icon_state = "[base_state]-empty"
 		if(LIGHT_BURNED)
-			icon_state = "tube-burned"
-			on = 0
+			icon_state = "[base_state]-burned"
 		if(LIGHT_BROKEN)
-			icon_state = "tube-broken"
-			on = 0
-
+			icon_state = "[base_state]-broken"
 
 /obj/machinery/light/colored/update_overlays()
 	. = ..()
@@ -38,72 +36,101 @@
 
 	. += emissive_appearance(overlay_icon, "[base_state]", src, alpha = src.alpha)
 
-	var/area/local_area = get_room_area()
-
 	if(flickering)
 		. += mutable_appearance(overlay_icon, "[base_state]_flickering")
 		return
-	if(low_power_mode || major_emergency || (local_area?.fire))
-		. += mutable_appearance(overlay_icon, "[base_state]_emergency")
+	var/area/local_area = get_area(src)
+	if(emergency_mode || (local_area?.fire) || (local_area?.vacuum))
+		. += emissive_appearance(overlay_icon, "[base_state]_emergency")
 		return
-	if(nightshift_enabled)
+	var/mutable_appearance/light = mutable_appearance(overlay_icon, base_state)
+	if(local_area?.vacuum)
+		light.color = COLOR_BLUE
+	else if(nightshift_enabled)
 		. += mutable_appearance(overlay_icon, "[base_state]_nightshift")
 		return
-	. += mutable_appearance(overlay_icon, base_state)
-
+	else
+		light.color = bulb_colour
+	. += light
 
 /obj/machinery/light/colored/orange
-	base_state = "orange"		// base description and icon_state	// СУКА КАКОЙ ТЫ ЕБЛАН МОЖНО БЫЛО ЖЕ ЧЕРЕЗ COLOR
-	icon_state = "orange1"
-	color = LIGHT_COLOR_ORANGE
-	light_color = LIGHT_COLOR_ORANGE
+	bulb_colour = LIGHT_COLOR_ORANGE
+	nightshift_light_color = LIGHT_COLOR_ORANGE
+	icon_state = "tube_editor_orange"
 
 /obj/machinery/light/colored/purple
-	base_state = "purple"		// base description and icon_state
-	icon_state = "purple1"
-	color = LIGHT_COLOR_PURPLE
-	light_color = LIGHT_COLOR_PURPLE
-
-/obj/machinery/light/colored/purple
-	bulb_colour = "#A700FF"
-	fire_colour = "#d400ff"
+	bulb_colour = LIGHT_COLOR_PURPLE
+	nightshift_light_color = LIGHT_COLOR_PURPLE
+	icon_state = "tube_editor_purple"
 
 /obj/machinery/light/colored/red
-	base_state = "red"		// base description and icon_state
-	icon_state = "red1"
-	color = LIGHT_COLOR_RED
-	light_color = LIGHT_COLOR_RED
+	bulb_colour = LIGHT_COLOR_RED
+	nightshift_light_color = LIGHT_COLOR_RED
+	icon_state = "tube_editor_red"
 
 /obj/machinery/light/colored/pink
-	base_state = "pink"		// base description and icon_state
-	icon_state = "pink1"
-	color = LIGHT_COLOR_PINK
-	light_color = LIGHT_COLOR_PINK
+	bulb_colour = LIGHT_COLOR_PINK
+	nightshift_light_color = LIGHT_COLOR_PINK
+	icon_state = "tube_editor_pink"
 
 /obj/machinery/light/colored/blue
-	base_state = "blue"		// base description and icon_state
-	icon_state = "blue1"
-	color = LIGHT_COLOR_BLUE
 	light_color = LIGHT_COLOR_BLUE
+	nightshift_light_color = LIGHT_COLOR_BLUE
+	icon_state = "tube_editor_blue"
 
 /obj/machinery/light/colored/green
-	base_state = "green"		// base description and icon_state
-	icon_state = "green1"
-	color = LIGHT_COLOR_GREEN
-	light_color = LIGHT_COLOR_GREEN
+	bulb_colour = LIGHT_COLOR_GREEN
+	nightshift_light_color = LIGHT_COLOR_GREEN
+	icon_state = "tube_editor_green"
 
 /obj/machinery/light/colored/white
-	base_state = "white"		// base description and icon_state
-	icon_state = "white1"
-	color = "#f0ffff"
-	light_color = "#f0ffff"
+	icon_state = "tube_editor"
+/*
+/obj/machinery/light/colored/built
+	icon_state = "tube-empty"
+	start_with_cell = FALSE
 
+/obj/machinery/light/small/mod
+	icon_state = "tube_editor_green"
 
-MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light/colored, 13)
-MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light/colored/orange, 13)
-MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light/colored/purple, 13)
-MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light/colored/red, 13)
-MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light/colored/pink, 13)
-MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light/colored/blue, 13)
-MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light/colored/green, 13)
-MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light/colored/white, 13)
+/obj/machinery/light/small/mod/broken
+	status = LIGHT_BROKEN
+	icon_state = "bulb-broken"
+
+/obj/machinery/light/small/mod/built
+	icon_state = "bulb-empty"
+	start_with_cell = FALSE
+*/
+
+// [HORIZON-ADD]
+/// Create directional subtypes for a path to simplify mapping.
+#define MAPPING_INVERSE_DIRECTIONAL_HELPERS(path, offset) ##path/directional/north {\
+	dir = NORTH; \
+	pixel_y = offset + 12; \
+} \
+##path/directional/south {\
+	dir = SOUTH; \
+	pixel_y = -offset - 6; \
+} \
+##path/directional/east {\
+	dir = EAST; \
+	pixel_x = offset + 8; \
+} \
+##path/directional/west {\
+	dir = WEST; \
+	pixel_x = -offset - 8; \
+}
+// [/HORIZON-ADD]
+
+MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light/small/broken, 28)
+MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light/built, 32)
+
+MAPPING_INVERSE_DIRECTIONAL_HELPERS(/obj/machinery/light/colored, 0)
+MAPPING_INVERSE_DIRECTIONAL_HELPERS(/obj/machinery/light/colored/default, 0)
+MAPPING_INVERSE_DIRECTIONAL_HELPERS(/obj/machinery/light/colored/orange, 0)
+MAPPING_INVERSE_DIRECTIONAL_HELPERS(/obj/machinery/light/colored/purple, 0)
+MAPPING_INVERSE_DIRECTIONAL_HELPERS(/obj/machinery/light/colored/red, 0)
+MAPPING_INVERSE_DIRECTIONAL_HELPERS(/obj/machinery/light/colored/pink, 0)
+MAPPING_INVERSE_DIRECTIONAL_HELPERS(/obj/machinery/light/colored/blue, 0)
+MAPPING_INVERSE_DIRECTIONAL_HELPERS(/obj/machinery/light/colored/green, 0)
+MAPPING_INVERSE_DIRECTIONAL_HELPERS(/obj/machinery/light/colored/white, 0)
