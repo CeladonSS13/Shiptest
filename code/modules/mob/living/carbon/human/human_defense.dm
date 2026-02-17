@@ -63,10 +63,6 @@
 			if(!(martial_art_result == BULLET_ACT_HIT))
 				return martial_art_result
 
-	//[CELADON-FIX] - CELADON_MODSUITS - Actually adding signals, officials ported with MODs
-	if(SEND_SIGNAL(src, COMSIG_HUMAN_CHECK_SHIELDS, src, P) & SHIELD_BLOCK)
-		return BULLET_ACT_FORCE_PIERCE
-	//[/CELADON-FIX]
 
 	if(!(P.original == src && P.firer == src)) //can't block or reflect when shooting yourself
 		if(P.reflectable & REFLECT_NORMAL)
@@ -130,6 +126,11 @@
 			return TRUE
 		if(shield_result == -1)
 			return -1
+
+	// [CELADON-ADD] - CELADON_MODSUITS - ports https://github.com/PentestSS13/Pentest/pull/559
+	if(SEND_SIGNAL(src, COMSIG_HUMAN_CHECK_SHIELDS, src, AM, attack_text, damage, attack_type))
+		return TRUE
+	// [/CELADON-ADD]
 
 	if(wear_suit)
 		var/final_block_chance = wear_suit.block_chance - (clamp((armour_penetration - wear_suit.armour_penetration)/2,0,100)) + block_chance_modifier
