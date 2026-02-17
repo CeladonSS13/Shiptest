@@ -85,12 +85,12 @@ MARK: ARMOR BOOSTER
 	icon_state = "cloak_ninja"
 	bumpoff = TRUE
 	complexity = 5
-	stealth_alpha = 45
+	stealth_alpha = 40
 	active_power_cost = DEFAULT_CHARGE_DRAIN * 4
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 25
 	cooldown_time = 25 SECONDS
 	slowdown_after_disable = TRUE
-	disable_slowdown_time = 1.5 SECONDS
+	disable_slowdown_time = 1 SECONDS
 	var/mil_prebuilt = FALSE
 	var/mil_removable = TRUE
 
