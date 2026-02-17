@@ -38,7 +38,7 @@
 	var/can_charge = TRUE
 	var/pre_attack = 0
 	var/pre_attack_icon = "ancient_goliath_preattack"
-	var/tentacle_type = /obj/effect/goliath_tentacle
+	var/tentacle_type = /obj/effect/temp_visual/goliath_tentacle
 	butcher_results = list(/obj/item/food/meat/slab/goliath = 2, /obj/item/stack/sheet/bone = 2, /obj/item/stack/sheet/sinew = 2, /obj/item/stack/ore/silver = 10)
 	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/goliath_hide = 2)
 	loot = list()
@@ -304,6 +304,12 @@
 	var/retract = "Goliath_tentacle_retract"
 	var/difficulty = 3
 
+/obj/effect/temp_visual/goliath_tentacle/update_overlays()
+	. = ..()
+	. += emissive_appearance('icons/mob/lavaland/lavaland_monsters2.dmi', "[icon_state]_e", src, effect_type = EMISSIVE_NO_BLOOM)
+	. += emissive_appearance('icons/mob/lavaland/lavaland_monsters2.dmi', "[icon_state]_e_bloom", src)
+
+// Позже удалить, пока для примера останется тут.
 /// A tentacle which grabs you if you don't get away from it
 /obj/effect/goliath_tentacle
 	name = "goliath tentacle"
