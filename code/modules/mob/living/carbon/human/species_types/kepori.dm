@@ -111,10 +111,10 @@
 							"[WEST]" = list("x" =  -3, "y" = -3)
 							),
 		"[SUIT_STORE_LAYER]" = list(
-							"[NORTH]" = list("x" = 8, "y" = -1),
-							"[EAST]" = list("x" = 8, "y" = -1),
-							"[SOUTH]" = list("x" = 8, "y" = -1),
-							"[WEST]" = list("x" =  -8, "y" = -1),
+							"[NORTH]" = list("x" = 9, "y" = -3),
+							"[EAST]" = list("x" = 16, "y" = -3),
+							"[SOUTH]" = list("x" = 9, "y" = -3),
+							"[WEST]" = list("x" =  0, "y" = -3)
 							),
 		"[BACK_LAYER]" = list(
 							"[NORTH]" = list("x" = 9, "y" = -3),

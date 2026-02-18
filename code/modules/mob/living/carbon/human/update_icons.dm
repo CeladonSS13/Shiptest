@@ -478,7 +478,7 @@ There are several things that need to be remembered:
 				handled_by_bodytype = TRUE
 
 			var/use_autogen = handled_by_bodytype ? dna.species : null
-			suit_store_overlay = I.build_worn_icon(default_layer = -SUIT_STORE_LAYER, default_icon_file = icon_file, override_file = icon_file, isinhands = FALSE, override_file = icon_file, mob_species = use_autogen)
+			suit_store_overlay = I.build_worn_icon(default_layer = SUIT_STORE_LAYER, default_icon_file = icon_file, override_file = icon_file, isinhands = FALSE, override_file = icon_file, mob_species = use_autogen)
 
 			if(!suit_store_overlay)
 				return
@@ -890,11 +890,11 @@ There are several things that need to be remembered:
 /obj/item/proc/wear_species_version(file2use, state2use, layer, datum/species/mob_species)
 	if(!slot_flags) // If it's not wearable, don't try
 		return FALSE
-	var/icon/species_clothing_icon = GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]"]
+	var/icon/species_clothing_icon = GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]-[layer]"]
 	if(!species_clothing_icon) 	//Create standing/laying icons if they don't exist
 		if(!generate_species_clothing(file2use, state2use, layer, mob_species))
 			return FALSE
-	return mutable_appearance(GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]"], layer = -layer)
+	return mutable_appearance(GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]-[layer]"], layer = -layer)
 
 /mob/living/carbon/human/proc/get_overlays_copy(list/unwantedLayers)
 	var/list/out = new

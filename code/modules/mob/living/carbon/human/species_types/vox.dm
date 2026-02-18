@@ -86,16 +86,16 @@
 	// BYOND will try to make it an ordered list. So, we have to use a string. This is annoying, but it's the only way to do it smoothly.
 	offset_clothing = list(
 		"[SUIT_STORE_LAYER]" = list(
-							"[NORTH]" = list("x" = 8, "y" = 0),
-							"[EAST]" = list("x" = 8, "y" = 0),
-							"[SOUTH]" = list("x" = 8, "y" = 0),
-							"[WEST]" = list("x" =  -8, "y" = 0)
+							"[NORTH]" = list("x" = 9, "y" = -3),
+							"[EAST]" = list("x" = 16, "y" = -3),
+							"[SOUTH]" = list("x" = 9, "y" = -3),
+							"[WEST]" = list("x" =  0, "y" = -3)
 							),
 		"[EARS_LAYER]" = list(
 							"[NORTH]" = list("x" = 8, "y" = 0),
 							"[EAST]" = list("x" = 8, "y" = 0),
 							"[SOUTH]" = list("x" = 8, "y" = 0),
-							"[WEST]" = list("x" =  -8, "y" = 0),
+							"[WEST]" = list("x" =  -8, "y" = 0)
 							),
 		"[BACK_LAYER]" = list(
 							"[NORTH]" = list("x" = 8, "y" = 0),
