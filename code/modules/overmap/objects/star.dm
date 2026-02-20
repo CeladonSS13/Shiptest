@@ -79,25 +79,14 @@
 		return
 	spawndir = pick(directions_to_spawn_event)
 	// [CELADON-EDIT] - ANOMALY_BALANCE
-	// var/list/new_cords = get_overmap_step(spawndir, rand(eventspawn_min_range, eventspawn_max_range)) // [CELADON-ORIGINAL]
-	var/eventspawn_temp_range = rand(eventspawn_min_range, eventspawn_max_range)
-	var/list/new_cords = get_overmap_step(spawndir, eventspawn_temp_range)
-	var/counter = 0
-	var/max_counter = 2 // So it wouldn't be possible to have more than 2 overmap events in one turf.
-	if(eventspawn_temp_range != 1)
-		counter += 1 // lazy way to not let them having something doubled
-	// [/CELADON-EDIT]
-	// [CELADON-EDIT] - ANOMALY_BALANCE
+	var/list/new_cords = get_overmap_step(spawndir, rand(eventspawn_min_range, eventspawn_max_range))
 	for(var/datum/overmap/current_event as anything in current_overmap.overmap_container[new_cords["x"]][new_cords["y"]])
-		if(istype(current_event, picked_event_to_spawn.type))
+		if(!istype(current_event, /datum/overmap/event))
+			continue
+		if(!istype(current_event, /datum/overmap/event/anomaly))
 			return
-		if(istype(current_event, /datum/overmap/event))
-			counter += 1
-		if(counter >= max_counter)
-			counter = 0
-			return
+		continue
 	// [/CELADON-EDIT]
-
 	var/datum/overmap/event/newvent = new picked_event_to_spawn(list("x" = x, "y" = y), current_overmap, rand(event_lifespan_min, event_lifespan_max))
 	newvent.overmap_move(new_cords["x"],new_cords["y"])
 	COOLDOWN_START(src, event_spawn_cd, rand(eventspawn_cooldown_min, eventspawn_cooldown_max))
