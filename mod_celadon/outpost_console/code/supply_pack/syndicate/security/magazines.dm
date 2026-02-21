@@ -21,7 +21,7 @@
 	name = "Asp - Magazine (5.7x39mm)"
 	desc = "Contains a 5.7x39mm magazine for the Asp pistol, with a capacity of 12 rounds."
 	contains = list(/obj/item/ammo_box/magazine/m57_39_asp/empty)
-	cost = 250
+	cost = 200
 
 /datum/supply_pack/faction/syndicate/magazine/m10mm_mag
 	name = "Ringneck - Magazine (10x22mm)"
