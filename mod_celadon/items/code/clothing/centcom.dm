@@ -1,62 +1,54 @@
-
-/obj/item/clothing/suit/armor/vest/capcarapace/syndievest
+///obj/item/clothing/suit/armor/vest/capcarapace
+/obj/item/clothing/suit/toggle/armor/parade
+	name = "captain's carapace coat"
+	desc = "Worn by a captain to show their class."
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/paradeformal.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/paradeformal.dmi'
-	name = "captain's parade coat"
-	desc = "For when an armoured vest isn't fashionable enough."
+	body_parts_covered = CHEST | GROIN | ARMS
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 50, "energy" = 50, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 90, "wound" = 20)
+	resistance_flags = FIRE_PROOF
+
+/obj/item/clothing/suit/toggle/armor/parade/syndicate
+	name = "Syndicate captain's parade vest"
+	desc = "A sinister looking vest of advanced armor worn over a black and red fireproof jacket. The gold collar and shoulders denote that this belongs to a high ranking Syndicate officer."
 	icon_state = "syndievest"
 	item_state = "syndievest"
-	body_parts_covered = CHEST | GROIN | ARMS
-	supports_variations = DIGITIGRADE_VARIATION
+	togglename = "syndievest"
 
-/obj/item/clothing/suit/toggle/armor/centcom_formal
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/paradeformal.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/paradeformal.dmi'
+/obj/item/clothing/suit/toggle/armor/parade/centcom_formal
 	name = "\improper CentCom formal coat"
 	desc = "A stylish coat given to CentCom Commanders. Perfect for sending ERTs to suicide missions with style!"
 	icon_state = "centcom_formal"
 	item_state = "centcom_formal"
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/exo/large
-	body_parts_covered = CHEST | GROIN | ARMS
-	supports_variations = DIGITIGRADE_VARIATION
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 40, "energy" = 50, "bomb" = 35, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 60, "wound" = 10)
 	togglename = "centcom"
 
-/obj/item/clothing/suit/toggle/armor/hos_formal
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/paradeformal.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/paradeformal.dmi'
+/obj/item/clothing/head/HoS/syndicate
+
+/obj/item/clothing/suit/toggle/armor/parade/red
 	name = "\improper Head of Security's parade jacket"
 	desc = "For when an armoured vest isn't fashionable enough."
 	icon_state = "hosformal"
 	item_state = "hosformal"
-	body_parts_covered = CHEST | GROIN | ARMS
-	supports_variations = DIGITIGRADE_VARIATION
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 90, "wound" = 10)
 	togglename = "hosformal"
 
-/obj/item/clothing/suit/toggle/armor/captains_formal
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/paradeformal.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/paradeformal.dmi'
-	name = "\improper Head of Security's parade jacket"
+/obj/item/clothing/suit/toggle/armor/parade/nanotrasen
 	desc = "captain's parade coat"
 	desc = "For when an armoured vest isn't fashionable enough."
 	icon_state = "capformal"
 	item_state = "capformal"
-	body_parts_covered = CHEST | GROIN | ARMS
-	supports_variations = DIGITIGRADE_VARIATION
-	armor = list("melee" = 35, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 10)
 	togglename = "capformal"
 
+// /obj/item/clothing/suit/armor/vest/capcarapace
+/obj/item/clothing/suit/toggle/armor/parade/white
+	name = "captain's parade coat"
+	desc = "Worn by a captain to show their class."
+	icon_state = "capformal_white"
+	item_state = "capformal_white"
+	togglename = "capformal_white"
 
-/obj/item/clothing/suit/toggle/armor/captains_formal
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/paradeformal.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/paradeformal.dmi'
-	name = "\improper Head of Security's parade jacket"
-	desc = "captain's parade coat"
-	desc = "For when an armoured vest isn't fashionable enough."
-	icon_state = "capformal"
-	item_state = "capformal"
-	body_parts_covered = CHEST | GROIN | ARMS
-	supports_variations = DIGITIGRADE_VARIATION
-	armor = list("melee" = 35, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 10)
-	togglename = "capformal"
+/obj/item/clothing/suit/toggle/armor/parade/black
+	name = "captain's parade coat"
+	desc = "Worn by a captain to show their class."
+	icon_state = "capformal_black"
+	item_state = "capformal_black"
+	togglename = "capformal_black"
