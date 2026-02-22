@@ -83,8 +83,13 @@
 	for(var/datum/overmap/current_event as anything in current_overmap.overmap_container[new_cords["x"]][new_cords["y"]])
 		if(!istype(current_event, /datum/overmap/event))
 			continue
-		if(!istype(current_event, /datum/overmap/event/anomaly))
+
+		// Может немного тупо, но продумывать чет иное просто лень
+		if(istype(current_event, /datum/overmap/event/anomaly) && istype(picked_event_to_spawn, /datum/overmap/event/anomaly))
 			return
+		if(!istype(current_event, /datum/overmap/event/anomaly) && !istype(picked_event_to_spawn, /datum/overmap/event/anomaly))
+			return
+
 		continue
 	// [/CELADON-EDIT]
 	var/datum/overmap/event/newvent = new picked_event_to_spawn(list("x" = x, "y" = y), current_overmap, rand(event_lifespan_min, event_lifespan_max))
