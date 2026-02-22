@@ -22,8 +22,6 @@
 	item_state = "centcom_formal"
 	togglename = "centcom"
 
-/obj/item/clothing/head/HoS/syndicate
-
 /obj/item/clothing/suit/toggle/armor/parade/red
 	name = "\improper Head of Security's parade jacket"
 	desc = "For when an armoured vest isn't fashionable enough."
