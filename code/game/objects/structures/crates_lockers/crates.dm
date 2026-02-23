@@ -116,7 +116,6 @@
 	desc = "A heavy, metal trashcart with wheels."
 	name = "trash cart"
 	icon_state = "trashcart"
-	drag_slowdown = 0 // [CELADON-ADD] - Тележка на колесиках
 
 /obj/structure/closet/crate/trashcart/Moved()
 	. = ..()
