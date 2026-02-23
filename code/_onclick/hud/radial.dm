@@ -212,6 +212,7 @@ GLOBAL_LIST_EMPTY(radial_menus)
 	if(choice_id == NEXT_PAGE_ID)
 		E.name = "Next Page"
 		E.next_page = TRUE
+		E.icon_state = "radial_slice" // Resets the bg icon state to the default for next page buttons.
 		E.add_overlay("radial_next")
 	else
 		if(istext(choices_values[choice_id]))
@@ -267,6 +268,7 @@ GLOBAL_LIST_EMPTY(radial_menus)
 
 	var/mutable_appearance/MA = new /mutable_appearance(to_extract_from)
 	if(MA)
+		SET_PLANE_EXPLICIT(MA, ABOVE_HUD_PLANE, anchor)
 		MA.layer = ABOVE_HUD_LAYER
 		MA.appearance_flags |= RESET_TRANSFORM
 	return MA
@@ -285,9 +287,12 @@ GLOBAL_LIST_EMPTY(radial_menus)
 	current_user = M.client
 	//Blank
 	menu_holder = image(icon='icons/effects/effects.dmi',loc=anchor,icon_state="nothing",layer = ABOVE_HUD_LAYER)
-	menu_holder.plane = ABOVE_HUD_PLANE
+
+	SET_PLANE_EXPLICIT(menu_holder, ABOVE_HUD_PLANE, M)
 	menu_holder.appearance_flags |= KEEP_APART
 	menu_holder.vis_contents += elements + close_button
+	if(!isnull(close_button))
+		menu_holder.vis_contents += close_button
 	current_user.images += menu_holder
 
 /datum/radial_menu/proc/hide()
