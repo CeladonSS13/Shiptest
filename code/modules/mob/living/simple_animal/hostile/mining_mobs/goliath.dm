@@ -296,12 +296,12 @@
 //tentacles
 /obj/effect/temp_visual/goliath_tentacle
 	name = "goliath tentacle"
-	icon = 'icons/mob/lavaland/lavaland_monsters.dmi'
-	icon_state = "Goliath_tentacle_wiggle"
+	icon = 'icons/mob/lavaland/lavaland_monsters2.dmi'
+	icon_state = "goliath_tentacle_wiggle"
 	layer = BELOW_MOB_LAYER
 	var/mob/living/spawner
-	var/wiggle = "Goliath_tentacle_spawn"
-	var/retract = "Goliath_tentacle_retract"
+	var/wiggle = "goliath_tentacle_spawn"
+	var/retract = "goliath_tentacle_retract"
 	var/difficulty = 3
 
 /obj/effect/temp_visual/goliath_tentacle/update_overlays()
