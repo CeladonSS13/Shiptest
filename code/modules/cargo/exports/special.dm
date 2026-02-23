@@ -21,5 +21,5 @@
 	unit_name = "stabilized anomaly core"
 	desc = "Stabilized anomaly cores are in high demand for research in the Core Worlds, with many believing that the next big technological revolution will be driven by them. A thriving trade has grown around spacers who dedicate themselves to finding and stabilizing anomalies."
 	cost = 3000
-	elasticity_coeff = 0.5 // [CELADON-EDIT] - CELADON_ECONOMY
+	elasticity_coeff = 0.05 // [CELADON-EDIT] - CELADON_ECONOMY
 	export_types = list(/obj/item/assembly/signaler/anomaly)
