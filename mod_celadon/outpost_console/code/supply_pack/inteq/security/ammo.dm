@@ -204,21 +204,21 @@ MARK: 9x18mm
 
 /datum/supply_pack/faction/inteq/ammo/a308_ammo_box
 	name = "308 Ammo Box"
-	desc = "Contains a thirty-round .308 ammo box for DMRs such as the SsG-04 and CM-GAL-S"
+	desc = "Contains a 40-round .308 ammo box for DMRs such as the SsG-04 and CM-GAL-S"
 	contains = list(/obj/item/storage/box/ammo/a308)
-	cost = 200
+	cost = 240 // until it gets 35 damage or smth like that like in https://github.com/shiptest-ss13/Shiptest/pull/4380
 
 /datum/supply_pack/faction/inteq/ammo/a308_ap
 	name = "308 Armour Piercing Ammo Box"
-	desc = "Contains a thirty-round .308 armour piercing box for DMRs such as the SsG-04 and CM-GAL-S."
+	desc = "Contains a 40-round .308 armour piercing box for DMRs such as the SsG-04 and CM-GAL-S."
 	contains = list(/obj/item/storage/box/ammo/a308/ap)
-	cost = 250
+	cost = 350
 
 /datum/supply_pack/faction/inteq/ammo/a308_hp
 	name = "308 Hollow Point Ammo Box"
-	desc = "Contains a thirty-round .308 hollow point box for DMRs such as the SsG-04 and CM-GAL-S."
+	desc = "Contains a 40-round .308 hollow point box for DMRs such as the SsG-04 and CM-GAL-S."
 	contains = list(/obj/item/storage/box/ammo/a308/hp)
-	cost = 250
+	cost = 350
 
 /*
 	MARK: 5.56x45mm
