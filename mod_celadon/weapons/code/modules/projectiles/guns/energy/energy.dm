@@ -333,7 +333,3 @@
 /obj/item/stock_parts/cell/gun/sharplite/mini
 	icon = 'icons/obj/power.dmi'
 	reskin = FALSE
-
-// Выше вместимость увеличена была в 1.5 раза, и расход тоже соответственно
-/obj/item/ammo_casing/energy/lasergun/sharplite/sniper
-	e_cost = 3000 // 5 per regular cell 10 per upgraded cell
