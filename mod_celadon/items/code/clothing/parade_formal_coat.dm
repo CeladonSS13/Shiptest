@@ -50,3 +50,31 @@
 	icon_state = "capformal_black"
 	item_state = "capformal_black"
 	togglename = "capformal_black"
+
+
+/obj/item/clothing/neck/cloak/cap
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/cloaks.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/cloaks.dmi'
+
+/obj/item/clothing/neck/cloak/head_of_personnel
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/cloaks.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/cloaks.dmi'
+
+/obj/item/clothing/neck/cloak/hos
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/cloaks.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/cloaks.dmi'
+/obj/item/clothing/neck/cloak/cmo
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/cloaks.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/cloaks.dmi'
+
+/obj/item/clothing/neck/cloak/qm
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/cloaks.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/cloaks.dmi'
+
+/obj/item/clothing/neck/cloak/ce
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/cloaks.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/cloaks.dmi'
+
+/obj/item/clothing/neck/cloak/rd
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/cloaks.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/cloaks.dmi'
