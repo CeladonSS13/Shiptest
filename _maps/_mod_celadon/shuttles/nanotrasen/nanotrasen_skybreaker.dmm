@@ -1936,8 +1936,8 @@
 /area/ship/crew/dorm)
 "wx" = (
 /obj/machinery/porta_turret/ship/nt/pulse{
-	dir = 1;
-	id = "skybreaker_turrets"
+	id = "skybreaker_turrets";
+	dir = 6
 	},
 /turf/closed/wall/mineral/titanium/exterior,
 /area/ship/bridge)
@@ -3792,7 +3792,8 @@
 /area/ship/security)
 "SZ" = (
 /obj/machinery/porta_turret/ship/nt/pulse{
-	id = "skybreaker_turrets"
+	id = "skybreaker_turrets";
+	dir = 5
 	},
 /turf/closed/wall/mineral/titanium/exterior,
 /area/ship/bridge)
@@ -5052,7 +5053,7 @@ pk
 pk
 pk
 pk
-wx
+up
 AY
 mO
 kc
@@ -5060,7 +5061,7 @@ gY
 Wf
 en
 Yh
-SZ
+up
 pk
 pk
 pk
@@ -5071,7 +5072,7 @@ pk
 pk
 pk
 pk
-up
+SZ
 cM
 yz
 Ng
@@ -5079,7 +5080,7 @@ Tw
 jj
 mW
 cM
-up
+wx
 pk
 pk
 pk
