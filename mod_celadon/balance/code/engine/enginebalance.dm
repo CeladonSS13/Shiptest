@@ -8,7 +8,8 @@
 */
 /obj/machinery/power/shuttle/engine/electric/tech1
 	name = "1st gen ion thruster"
-	desc = "A thruster that expels charged particles to generate thrust."
+	desc = "An overclocked thruster that generates 1.5 times more thrust than regular with increased energy consumption. Like other thrusters, it can be upgraded with stock parts to improve efficiency. \n\
+		Don't forget to increase the power output of the precharger to get all its power."
 	circuit = /obj/item/circuitboard/machine/shuttle/engine/electric/tech1
 	icon_state = "tech1"
 	icon_state_off = "tech1_off"
@@ -19,7 +20,8 @@
 
 /obj/machinery/power/shuttle/engine/electric/tech2
 	name = "2nd gen ion thruster"
-	desc = "A thruster that expels charged particles to generate thrust."
+	desc = "An advanced thruster that generates 1.75 times more thrust than regular with increased energy consumption. Like other thrusters, it can be upgraded with stock parts to improve efficiency. \n\
+		Don't forget to increase the power output of the precharger to get all its power."
 	circuit = /obj/item/circuitboard/machine/shuttle/engine/electric/tech2
 	icon_state = "tech2"
 	icon_state_off = "tech2_off"
@@ -31,7 +33,8 @@
 
 /obj/machinery/power/shuttle/engine/electric/tech3
 	name = "3rd gen ion thruster"
-	desc = "A thruster that expels charged particles to generate thrust."
+	desc = "A highly-advanced thruster that expels charged particles to generate 2 times more thrust. Like other thrusters, it can be upgraded with stock parts to improve efficiency. \n\
+		Don't forget to increase the power output of the precharger to get all its power."
 	circuit = /obj/item/circuitboard/machine/shuttle/engine/electric/tech3
 	icon_state = "tech3"
 	icon_state_off = "tech3_off"
