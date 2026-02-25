@@ -42,7 +42,7 @@
 	if (!impact_area)
 		return INITIALIZE_HINT_QDEL
 
-	research_value = rand(500,4000)
+	research_value = rand(3000,8000) // [CELADON-EDIT] - ANOMALY_BALANCE
 	pulse_delay = rand(pulse_delay*0.5, pulse_delay*1.5)
 
 	src.drops_core = drops_core
