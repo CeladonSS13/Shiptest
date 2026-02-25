@@ -200,6 +200,15 @@ bullet
 	armour_penetration = 50
 */
 
+/* MARK: Energy
+*/
+datum/supply_pack/faction/inteq/gun/gleam
+	name = "E-SMG - VEC-04 'Gleam'"
+	desc = "A seized Sharplite X-39 energy SMG reworked in IRMG colors. Uses energy weapon cells."
+	cost = 2000
+	contains = list(/obj/item/storage/guncase/energy/gleam)
+	crate_name = "SMG crate"
+
 /* // Отключено до реворка плазмы
 // Plasma ETAR - Inteq
 /datum/supply_pack/faction/inteq/gun/energy/cadejo

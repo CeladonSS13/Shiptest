@@ -165,6 +165,24 @@
 	damage = 15
 	armour_penetration = -15
 
+//L-211 Parallax projectiles
+
+/obj/projectile/beam/laser/nanotrasen/dmr
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
+	icon_state = "hellfire"
+	damage = 35
+	armour_penetration = 45
+
+//X-39 Sunbeam projectiles
+
+/obj/projectile/beam/laser/nanotrasen/weak/ap //more armorpen, less damage
+	damage = 10
+	armour_penetration = 20
+
+/obj/projectile/beam/disabler/nanotrasen/weak/ap
+	damage = 10
+	armour_penetration = 20
+
 //HADES projectiles
 // Меняет баланс Хейдеса
 
@@ -204,13 +222,14 @@
 
 //Iot Projectiles
 
-/obj/projectile/beam/disabler/nanotrasen/iot
+/obj/projectile/beam/disabler/nanotrasen/shotgun
 	icon_state = "blue_laser"
 	damage = 15
 	range = 15
+	armour_penetration = -20
 	speed = 0.5 //just to make it a bit more fair
 
-/obj/projectile/beam/laser/nanotrasen/iot
+/obj/projectile/beam/laser/nanotrasen/shotgun
 	icon_state = "red_laser"
 	damage = 15
 	armour_penetration = -10
@@ -222,15 +241,18 @@
 /obj/projectile/beam/laser/nanotrasen/sniper
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
 	name = "accelerator laser"
-	icon_state = "weaklaser"
+	icon_state = "minilaser"
 	range = 255
-	damage = 20
-	armour_penetration = 50
+	damage = 15
+	armour_penetration = 40
+	var/damage_cap = 60
 
 /obj/projectile/beam/laser/nanotrasen/sniper/Range()
 	..()
 	damage += 4
 	transform *= 1 + ((damage/4) * 0.2)
+	if(damage_cap < damage)
+		damage = damage_cap
 
 //mini egun projectiles
 
@@ -248,7 +270,7 @@
 
 /obj/projectile/beam/laser/nanotrasen/hellfire
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
-	icon_state = "heavylaser"
+	icon_state = "hellfire"
 	damage = 30
 	armour_penetration = 40
 
