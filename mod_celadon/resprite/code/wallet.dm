@@ -1,4 +1,5 @@
 /obj/item/storage/wallet
+	icon_state = "wallet_closed"
 	icon = 'mod_celadon/_storage_icons/icons/resprite/wallet.dmi'
 
 /obj/item/storage/wallet/proc/get_wallet_overlay_state()

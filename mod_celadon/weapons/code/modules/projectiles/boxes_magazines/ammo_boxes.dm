@@ -104,21 +104,6 @@ MARK: 5.56x45
 	ammo_type = /obj/item/ammo_casing/a308/surplus
 	max_ammo = 10
 
-//
-// MARK: 8x58
-//
-
-//Стандартные безгильзовые патроны калибра 8x58
-
-/obj/item/ammo_box/magazine/ammo_stack/prefilled/a858
-	ammo_type = /obj/item/ammo_casing/caseless/a858
-	max_ammo = 10
-
-/obj/item/storage/box/ammo/a858_ammo_box
-	name = "Ammo box (8x58mm Caseless)"
-	desc = "A box of standard 8x58mm ammo."
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo.dmi'
-	icon_state = "a858box"
 
 //
 // MARK: 410x76

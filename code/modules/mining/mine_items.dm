@@ -70,3 +70,4 @@
 	desc = "A mining car. This one doesn't work on rails, but has to be dragged."
 	name = "Mining car (not for rails)"
 	icon_state = "miningcar"
+	drag_slowdown = 0 // [CELADON-ADD] - Тележка на колесиках
