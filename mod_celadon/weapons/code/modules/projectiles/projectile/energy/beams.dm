@@ -165,7 +165,7 @@
 	damage = 15
 	armour_penetration = -15
 
-//L-211 Parallax projectiles
+// /obj/item/gun/energy/e_gun/e_old/dmr
 
 /obj/projectile/beam/laser/nanotrasen/dmr
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
@@ -173,18 +173,18 @@
 	damage = 35
 	armour_penetration = 45
 
-//X-39 Sunbeam projectiles
+// /obj/item/gun/energy/e_gun/e_old/smg/sunbeam
 
 /obj/projectile/beam/laser/nanotrasen/weak/ap //more armorpen, less damage
-	damage = 10
+	damage = 12
 	armour_penetration = 20
 
 /obj/projectile/beam/disabler/nanotrasen/weak/ap
-	damage = 10
+	damage = 12
 	armour_penetration = 20
 
-//HADES projectiles
-// Меняет баланс Хейдеса
+// /obj/item/gun/energy/e_gun/e_old/hades
+// /obj/item/gun/energy/e_gun/e_old/emg
 
 /obj/projectile/beam/laser/nanotrasen/assault
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
@@ -198,9 +198,7 @@
 	damage = 25
 	armour_penetration = 20
 
-// Здесь были изменения Хейдеса. Искать его в mod_celadon\return_egun\code\e_gun.dm
-
-//x01 projectiles
+// /obj/item/gun/energy/e_gun/e_old/hos
 
 /obj/projectile/energy/electrode/nanotrasen
 	damage = 80 //по сути даже за берст ты навешаешь лишь слоудаун человеку в броне
@@ -220,7 +218,8 @@
 	damage = 40
 	speed = 0.4
 
-//Iot Projectiles
+// /obj/item/gun/energy/e_gun/e_old/iot
+// /obj/item/gun/energy/e_gun/e_old/iot/blaze
 
 /obj/projectile/beam/disabler/nanotrasen/shotgun
 	icon_state = "blue_laser"
@@ -236,7 +235,7 @@
 	range = 15
 	speed = 0.5
 
-//lascannon projectiles
+// /obj/item/gun/energy/lasercannon
 
 /obj/projectile/beam/laser/nanotrasen/sniper
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
@@ -254,7 +253,7 @@
 	if(damage_cap < damage)
 		damage = damage_cap
 
-//mini egun projectiles
+// /obj/item/gun/energy/e_gun/e_old/mini
 
 /obj/projectile/beam/laser/nanotrasen/weak/mini
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
@@ -266,7 +265,7 @@
 	icon_state = "minilaser_blue"
 	armour_penetration = 10
 
-//antique lasgun projectiles
+// /obj/item/gun/energy/laser/captain
 
 /obj/projectile/beam/laser/nanotrasen/hellfire
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'

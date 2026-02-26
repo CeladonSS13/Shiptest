@@ -202,7 +202,7 @@ bullet
 
 /* MARK: Energy
 */
-datum/supply_pack/faction/inteq/gun/gleam
+/datum/supply_pack/faction/inteq/gun/gleam
 	name = "E-SMG - VEC-04 'Gleam'"
 	desc = "A seized Sharplite X-39 energy SMG reworked in IRMG colors. Uses energy weapon cells."
 	cost = 2000
