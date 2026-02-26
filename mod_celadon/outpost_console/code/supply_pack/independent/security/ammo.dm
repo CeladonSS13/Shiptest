@@ -383,10 +383,9 @@ MARK: .22lr
 
 /datum/supply_pack/faction/independent/ammo/ammoc38
 	name = ".38 Ammo Boxes"
-	desc = "Contains two 45-round ammo boxes for refilling .38 weapons."
-	cost = 250
-	contains = list(/obj/item/storage/box/ammo/c38,
-					/obj/item/storage/box/ammo/c38)
+	desc = "Contains a 60-round ammo box for refilling .38 weapons."
+	cost = 125
+	contains = list(/obj/item/storage/box/ammo/c38)
 	crate_name = "ammo crate"
 
 /*
@@ -395,25 +394,25 @@ MARK: .22lr
 
 /datum/supply_pack/faction/independent/ammo/ammoc9mm_ammo_box
 	name = "9x18mm Ammo Box"
-	desc = "Contains a 45-round 9x18mm box for pistols and SMGs such as the Commander or Saber."
+	desc = "Contains a 60-round 9x18mm box for pistols and SMGs such as the Commander or Saber."
 	contains = list(/obj/item/storage/box/ammo/c9mm)
 	cost = 200
 
 /datum/supply_pack/faction/independent/ammo/ammoc9mmap_ammo_box
 	name = "9x18mm AP Ammo Box"
-	desc = "Contains a 45-round 9x18mm box loaded with armor piercing ammo."
+	desc = "Contains a 60-round 9x18mm box loaded with armor piercing ammo."
 	contains = list(/obj/item/storage/box/ammo/c9mm_ap)
 	cost = 250
 
 /datum/supply_pack/faction/independent/ammo/ammoc9mmhp_ammo_box
 	name = "9x18mm HP Ammo Box"
-	desc = "Contains a 45-round 9x18mm box loaded with hollow point ammo, great against unarmored targets."
+	desc = "Contains a 60-round 9x18mm box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c9mm_hp)
 	cost = 250
 
 /datum/supply_pack/faction/independent/ammo/ammoc9mmrubber_ammo_box
 	name = "9x18mm Rubber Ammo Box"
-	desc = "Contains a 45-round 9x18mm box loaded with less-than-lethal rubber rounds."
+	desc = "Contains a 60-round 9x18mm box loaded with less-than-lethal rubber rounds."
 	contains = list(/obj/item/storage/box/ammo/c9mm_rubber)
 	cost = 200
 
@@ -423,27 +422,27 @@ MARK: .22lr
 
 /datum/supply_pack/faction/independent/ammo/ammoc10mm_ammo_box
 	name = "10x22mm Ammo Box"
-	desc = "Contains a 36-round 10x22mm box for pistols and SMGs like the Ringneck or the SkM-44(k)."
+	desc = "Contains a 60-round 10x22mm box for pistols and SMGs like the Ringneck or the SkM-44(k)."
 	contains = list(/obj/item/storage/box/ammo/c10mm)
-	cost = 200
+	cost = 210
 
-// /datum/supply_pack/faction/independent/ammo/ammoc10mmap_ammo_box
-// 	name = "10x22mm AP Ammo Box"
-// 	desc = "Contains a 36-round 10x22mm box loaded with armor piercing ammo."
-// 	contains = list(/obj/item/storage/box/ammo/c10mm_ap)
-// 	cost = 260
+/datum/supply_pack/faction/independent/ammo/ammoc10mmap_ammo_box
+	name = "10x22mm AP Ammo Box"
+	desc = "Contains a 60-round 10x22mm box loaded with armor piercing ammo."
+	contains = list(/obj/item/storage/box/ammo/c10mm_ap)
+	cost = 260
 
 /datum/supply_pack/faction/independent/ammo/ammoc10mmhp_ammo_box
 	name = "10x22mm HP Ammo Box"
-	desc = "Contains a 36-round 10x22mm box loaded with hollow point ammo, great against unarmored targets."
+	desc = "Contains a 60-round 10x22mm box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c10mm_hp)
-	cost = 250
+	cost = 260
 
-// /datum/supply_pack/faction/independent/ammo/ammoc10mmrubber_ammo_box
-// 	name = "10x22mm Rubber Ammo Box"
-// 	desc = "Contains a 36-round 10x22mm box loaded with less-than-lethal rubber rounds."
-// 	contains = list(/obj/item/storage/box/ammo/c10mm_rubber)
-// 	cost = 200
+/datum/supply_pack/faction/independent/ammo/ammoc10mmrubber_ammo_box
+	name = "10x22mm Rubber Ammo Box"
+	desc = "Contains a 36-round 10x22mm box loaded with less-than-lethal rubber rounds."
+	contains = list(/obj/item/storage/box/ammo/c10mm_rubber)
+	cost = 210
 
 /*
 	MARK: .44
@@ -473,27 +472,27 @@ MARK: .22lr
 
 /datum/supply_pack/faction/independent/ammo/ammoc45_ammo_box
 	name = ".45 Ammo Box"
-	desc = "Contains a 36-round .45 box for pistols and SMGs like the Candor or the C-20r."
+	desc = "Contains a 48-round .45 box for pistols and SMGs like the Candor or the C-20r."
 	contains = list(/obj/item/storage/box/ammo/c45)
 	cost = 200
 
-// /datum/supply_pack/faction/independent/ammo/ammoc45ap_ammo_box
-// 	name = ".45 AP Ammo Box"
-// 	desc = "Contains a 36-round .45 box loaded with armor piercing ammo."
-// 	contains = list(/obj/item/storage/box/ammo/c45_ap)
-// 	cost = 260
+/datum/supply_pack/faction/independent/ammo/ammoc45ap_ammo_box
+	name = ".45 AP Ammo Box"
+	desc = "Contains a 48-round .45 box loaded with armor piercing ammo."
+	contains = list(/obj/item/storage/box/ammo/c45_ap)
+	cost = 260
 
 /datum/supply_pack/faction/independent/ammo/ammoc45hp_ammo_box
 	name = ".45 HP Ammo Box"
-	desc = "Contains a 36-round .45 box loaded with hollow point ammo, great against unarmored targets."
+	desc = "Contains a 48-round .45 box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/c45_hp)
 	cost = 250
 
-// /datum/supply_pack/faction/independent/ammo/ammoc45mmrubber_ammo_box
-// 	name = ".45 Rubber Ammo Box"
-// 	desc = "Contains a 36-round .45 box loaded with less-than-lethal rubber rounds."
-// 	contains = list(/obj/item/storage/box/ammo/c45_rubber)
-// 	cost = 200
+/datum/supply_pack/faction/independent/ammo/ammoc45mmrubber_ammo_box
+	name = ".45 Rubber Ammo Box"
+	desc = "Contains a 48-round .45 box loaded with less-than-lethal rubber rounds."
+	contains = list(/obj/item/storage/box/ammo/c45_rubber)
+	cost = 200
 
 /*
 	MARK: .357
@@ -501,19 +500,19 @@ MARK: .22lr
 
 /datum/supply_pack/faction/independent/ammo/ammoa357_ammo_box
 	name = ".357 Ammo Box"
-	desc = "Contains a 36-round .357 box for revolvers such as the Scarborough Revolver and the HP Firebrand."
+	desc = "Contains a 48-round .357 box for revolvers such as the Scarborough Revolver and the HP Firebrand."
 	contains = list(/obj/item/storage/box/ammo/a357)
 	cost = 250
 
 /datum/supply_pack/faction/independent/ammo/ammoa357hp_ammo_box
 	name = ".357 HP Ammo Box"
-	desc = "Contains a 36-round .357 box loaded with hollow point ammo, great against unarmored targets."
+	desc = "Contains a 48-round .357 box loaded with hollow point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/a357_hp)
 	cost = 325
 
 /datum/supply_pack/faction/independent/ammo/ammoa357match_ammo_box
 	name = ".357 Match Ammo Box"
-	desc = "Contains a 36-round .357 match box for better performance against armor."
+	desc = "Contains a 48-round .357 match box for better performance against armor."
 	contains = list(/obj/item/storage/box/ammo/a357_match)
 	cost = 325
 
@@ -535,7 +534,7 @@ MARK: .22lr
 
 /datum/supply_pack/faction/independent/ammo/ammoc46x30mm_hp
 	name = "4.6x30mm HP Ammo Box"
-	desc = "Contains a 80-round 4.6x30mm hollow point box for PDWs such as the WT-550."
+	desc = "Contains an 80-round 4.6x30mm hollow point box for PDWs such as the WT-550."
 	contains = list(/obj/item/storage/box/ammo/c46x30mm/hp)
 	cost = 375
 
@@ -545,7 +544,7 @@ MARK: .22lr
 
 /datum/supply_pack/faction/independent/ammo/ammoc57x39mm_boxcrate
 	name = "5.7x39mm Ammo Box"
-	desc = "Contains one 80-round 5.7x39mm box for PDWs such as the Sidewinder."
+	desc = "Contains an 80-round 5.7x39mm box for PDWs such as the Sidewinder."
 	contains = list(/obj/item/storage/box/ammo/c57x39)
 	cost = 300
 
@@ -557,7 +556,7 @@ MARK: .22lr
 
 /datum/supply_pack/faction/independent/ammo/ammoc57x39mm_hp
 	name = "5.7x39mm HP Ammo Box"
-	desc = "Contains one 80-round 5.7x39mm Hollow Point box for PDWs such as the Sidewinder."
+	desc = "Contains an 80-round 5.7x39mm Hollow Point box for PDWs such as the Sidewinder."
 	contains = list(/obj/item/storage/box/ammo/c57x39/hp)
 	cost = 375
 
@@ -571,11 +570,11 @@ MARK: .22lr
 	contains = list(/obj/item/storage/box/ammo/c556mm)
 	cost = 250
 
-// /datum/supply_pack/faction/independent/ammo/ammoc556mmHITPap_ammo_box
-// 	name = "5.56mm HITP caseless AP Ammo Box"
-// 	desc = "Contains a 48-round 5.56mm HITP caseless boxloaded with armor piercing ammo."
-// 	contains = list(/obj/item/storage/box/ammo/c556mm_ap)
-// 	cost = 205
+/datum/supply_pack/faction/independent/ammo/ammoc556mmHITPap_ammo_box
+	name = "5.56mm HITP caseless AP Ammo Box"
+	desc = "Contains a 60-round 5.56mm HITP caseless boxloaded with armor piercing ammo."
+	contains = list(/obj/item/storage/box/ammo/c556mm_ap)
+	cost = 300
 
 /datum/supply_pack/faction/independent/ammo/ammoc556mmhitphp_ammo_box
 	name = "5.56mm HITP Caseless HP Ammo Box"
@@ -583,11 +582,11 @@ MARK: .22lr
 	contains = list(/obj/item/storage/box/ammo/c556mm_hp)
 	cost = 300
 
-// /datum/supply_pack/faction/independent/ammo/ammoc556HITPrubber_ammo_box
-// 	name = "5.56mm HITP Caseless Rubber Ammo Box"
-// 	desc = "Contains a 48-round 5.56 HITP caseless box loaded with less-than-lethal rubber rounds."
-// 	contains = list(/obj/item/storage/box/ammo/c556mm_rubber)
-// 	cost = 165
+/datum/supply_pack/faction/independent/ammo/ammoc556HITPrubber_ammo_box
+	name = "5.56mm HITP Caseless Rubber Ammo Box"
+	desc = "Contains a 60-round 5.56 HITP caseless box loaded with less-than-lethal rubber rounds."
+	contains = list(/obj/item/storage/box/ammo/c556mm_rubber)
+	cost = 200
 
 /*
 	MARK: 12 Gauge
@@ -724,7 +723,7 @@ MARK: .22lr
 
 /datum/supply_pack/faction/independent/ammo/ammoa4570_box
 	name = ".45-70 Ammo Box"
-	desc = "Contains a 24-round box containing devastatingly powerful .45-70 caliber ammunition." // на деле 18, это скам.
+	desc = "Contains a 24-round box containing devastatingly powerful .45-70 caliber ammunition."
 	contains = list(/obj/item/storage/box/ammo/a4570)
 	cost = 200
 
