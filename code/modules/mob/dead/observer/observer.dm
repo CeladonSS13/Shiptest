@@ -34,11 +34,9 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 	var/ghostvision = 1 //is the ghost able to see things humans can't?
 	var/mob/observetarget = null	//The target mob that the ghost is observing. Used as a reference in logout()
 	var/ghost_hud_enabled = 1 //did this ghost disable the on-screen HUD?
-	var/data_huds_on = 0 //Are data HUDs currently enabled?
-	var/health_scan = FALSE //Are health scans currently enabled?
-	var/chem_scan = FALSE //Are chem scans currently enabled?
-	var/gas_scan = FALSE //Are gas scans currently enabled?
 	var/list/datahuds = list(DATA_HUD_SECURITY_ADVANCED, DATA_HUD_MEDICAL_ADVANCED, DATA_HUD_DIAGNOSTIC_ADVANCED) //list of data HUDs shown to ghosts.
+	///Selection: GHOST_DATA_HUDS | GHOST_VISION | GHOST_HEALTH | GHOST_CHEM | GHOST_GAS
+	var/ghost_hud_flags = NONE
 	var/ghost_orbit = GHOST_ORBIT_CIRCLE
 
 	//These variables store hair data if the ghost originates from a species with head and/or facial hair.
@@ -149,9 +147,7 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 	SSpoints_of_interest.make_point_of_interest(src)
 
 	grant_all_languages()
-	show_data_huds()
-	data_huds_on = 1
-
+	toggle_ghost_hud_flag(GHOST_VISION | GHOST_DATA_HUDS)
 
 /mob/dead/observer/get_photo_description(obj/item/camera/camera)
 	if(!invisibility || camera.see_ghosts)
@@ -164,6 +160,9 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 	addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_atom_colour)), 10)
 
 /mob/dead/observer/Destroy()
+	if(ghost_hud_flags & GHOST_DATA_HUDS)
+		remove_data_huds()
+
 	// Update our old body's medhud since we're abandoning it
 	if(mind && mind.current)
 		mind.current.med_hud_set_status()
@@ -388,7 +387,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		to_chat(usr, span_warning("You're already stuck out of your body!"))
 		return FALSE
 
-	var/response = alert(src, "Are you sure you want to prevent (almost) all means of resuscitation? This cannot be undone. ","Are you sure you want to stay dead?","DNR","Save Me")
+	var/response = tgui_alert(src, "Are you sure you want to prevent (almost) all means of resuscitation? This cannot be undone. ","Are you sure you want to stay dead?", list("DNR","Save Me"))
 	if(response != "DNR")
 		return
 
@@ -458,6 +457,18 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		orbit_menu = new(src)
 
 	orbit_menu.ui_interact(src)
+
+/// Toggles a flag from ghost hud and updates the mob accordingly
+/mob/dead/observer/proc/toggle_ghost_hud_flag(toggled)
+	ghost_hud_flags ^= toggled
+	if(ghost_hud_flags & GHOST_DATA_HUDS)
+		show_data_huds()
+	else
+		remove_data_huds()
+	update_sight()
+	for(var/atom/movable/screen/ghost/hudbox/hud in hud_used?.static_inventory)
+		if(hud.relevant_flag & toggled)
+			hud.update_appearance(UPDATE_ICON_STATE)
 
 // This is the ghost's follow verb with an argument
 /mob/dead/observer/proc/ManualFollow(atom/movable/target)
@@ -594,11 +605,10 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 
 /mob/dead/observer/verb/toggle_ghostsee()
 	set name = "Toggle Ghost Vision"
-	set desc = "Toggles your ability to see things only ghosts can see, like other ghosts"
-	set category = "Ghost"
-	ghostvision = !(ghostvision)
+
+	toggle_ghost_hud_flag(GHOST_VISION)
 	update_sight()
-	to_chat(usr, span_boldnotice("You [(ghostvision?"now":"no longer")] have ghost vision."))
+	to_chat(usr, span_boldnotice("You [(ghost_hud_flags & GHOST_VISION) ? "now" : "no longer"] have ghost vision."))
 
 /mob/dead/observer/verb/toggle_darkness()
 	set name = "Toggle Darkness"
@@ -619,7 +629,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	if(client)
 		ghost_others = client.prefs.ghost_others //A quick update just in case this setting was changed right before calling the proc
 
-	if (!ghostvision)
+	if(!(ghost_hud_flags & GHOST_VISION))
 		see_invisible = SEE_INVISIBLE_LIVING
 	else
 		see_invisible = SEE_INVISIBLE_OBSERVER
@@ -646,7 +656,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 			if(GHOST_OTHERS_SIMPLE)
 				client.images -= GLOB.ghost_images_simple
 	lastsetting = client.prefs.ghost_others
-	if(!ghostvision)
+	if(!(ghost_hud_flags & GHOST_VISION))
 		return
 	if(client.prefs.ghost_others != GHOST_OTHERS_THEIR_SETTING)
 		switch(client.prefs.ghost_others)
@@ -744,64 +754,57 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	return
 
 /mob/dead/observer/proc/show_data_huds()
+	ghost_hud_flags |= GHOST_DATA_HUDS // only for safety, it should be set already.
 	for(var/hudtype in datahuds)
 		var/datum/atom_hud/H = GLOB.huds[hudtype]
 		H.add_hud_to(src)
 
 /mob/dead/observer/proc/remove_data_huds()
+	ghost_hud_flags &= ~GHOST_DATA_HUDS // only for safety, it should be unset already.
 	for(var/hudtype in datahuds)
 		var/datum/atom_hud/H = GLOB.huds[hudtype]
 		H.remove_hud_from(src)
 
 /mob/dead/observer/verb/toggle_data_huds()
 	set name = "Toggle Sec/Med/Diag HUD"
-	set desc = "Toggles whether you see medical/security/diagnostic HUDs"
-	set category = "Ghost"
 
-	if(data_huds_on) //remove old huds
+	toggle_ghost_hud_flag(GHOST_DATA_HUDS)
+	if(ghost_hud_flags & GHOST_DATA_HUDS)
 		remove_data_huds()
 		to_chat(src, span_notice("Data HUDs disabled."))
-		data_huds_on = 0
 	else
 		show_data_huds()
 		to_chat(src, span_notice("Data HUDs enabled."))
-		data_huds_on = 1
 
 /mob/dead/observer/verb/toggle_health_scan()
 	set name = "Toggle Health Scan"
-	set desc = "Toggles whether you health-scan living beings on click"
-	set category = "Ghost"
 
-	if(health_scan) //remove old huds
-		to_chat(src, span_notice("Health scan disabled."))
-		health_scan = FALSE
-	else
+	toggle_ghost_hud_flag(GHOST_HEALTH)
+	if(ghost_hud_flags & GHOST_HEALTH)
 		to_chat(src, span_notice("Health scan enabled."))
-		health_scan = TRUE
+	else
+		to_chat(src, span_notice("Health scan disabled."))
 
 /mob/dead/observer/verb/toggle_chem_scan()
 	set name = "Toggle Chem Scan"
-	set desc = "Toggles whether you scan living beings for chemicals and addictions on click"
-	set category = "Ghost"
 
-	if(chem_scan) //remove old huds
-		to_chat(src, span_notice("Chem scan disabled."))
-		chem_scan = FALSE
-	else
+	toggle_ghost_hud_flag(GHOST_CHEM)
+	if(ghost_hud_flags & GHOST_CHEM)
 		to_chat(src, span_notice("Chem scan enabled."))
-		chem_scan = TRUE
+	else
+		to_chat(src, span_notice("Chem scan disabled."))
 
 /mob/dead/observer/verb/toggle_gas_scan()
 	set name = "Toggle Gas Scan"
-	set desc = "Toggles whether you analyze gas contents on click"
-	set category = "Ghost"
 
-	if(gas_scan)
-		to_chat(src, span_notice("Gas scan disabled."))
-		gas_scan = FALSE
-	else
+	toggle_ghost_hud_flag(GHOST_GAS)
+	if(ghost_hud_flags & GHOST_GAS)
 		to_chat(src, span_notice("Gas scan enabled."))
-		gas_scan = TRUE
+	else
+		to_chat(src, span_notice("Gas scan disabled."))
+
+/mob/dead/observer/proc/toggle_hud_type(mob/dead/observer/user, hud_type)
+	user.toggle_ghost_hud_flag(hud_type)
 
 /mob/dead/observer/verb/restore_ghost_appearance()
 	set name = "Restore Ghost Character"
