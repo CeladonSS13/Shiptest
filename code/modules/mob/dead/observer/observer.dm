@@ -771,37 +771,27 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	toggle_ghost_hud_flag(GHOST_DATA_HUDS)
 	if(ghost_hud_flags & GHOST_DATA_HUDS)
 		remove_data_huds()
-		to_chat(src, span_notice("Data HUDs disabled."))
 	else
 		show_data_huds()
-		to_chat(src, span_notice("Data HUDs enabled."))
+	to_chat(src, span_notice("Data HUDs [(ghost_hud_flags & GHOST_DATA_HUDS) ? "enabled": "disabled" ]."))
 
 /mob/dead/observer/verb/toggle_health_scan()
 	set name = "Toggle Health Scan"
 
 	toggle_ghost_hud_flag(GHOST_HEALTH)
-	if(ghost_hud_flags & GHOST_HEALTH)
-		to_chat(src, span_notice("Health scan enabled."))
-	else
-		to_chat(src, span_notice("Health scan disabled."))
+	to_chat(src, span_notice("Health scan [(ghost_hud_flags & GHOST_HEALTH) ? "enabled": "disabled" ]."))
 
 /mob/dead/observer/verb/toggle_chem_scan()
 	set name = "Toggle Chem Scan"
 
 	toggle_ghost_hud_flag(GHOST_CHEM)
-	if(ghost_hud_flags & GHOST_CHEM)
-		to_chat(src, span_notice("Chem scan enabled."))
-	else
-		to_chat(src, span_notice("Chem scan disabled."))
+	to_chat(src, span_notice("Chem scan [(ghost_hud_flags & GHOST_CHEM) ? "enabled": "disabled" ]."))
 
 /mob/dead/observer/verb/toggle_gas_scan()
 	set name = "Toggle Gas Scan"
 
 	toggle_ghost_hud_flag(GHOST_GAS)
-	if(ghost_hud_flags & GHOST_GAS)
-		to_chat(src, span_notice("Gas scan enabled."))
-	else
-		to_chat(src, span_notice("Gas scan disabled."))
+	to_chat(src, span_notice("Gas scan [(ghost_hud_flags & GHOST_GAS) ? "enabled": "disabled" ]."))
 
 /mob/dead/observer/proc/toggle_hud_type(mob/dead/observer/user, hud_type)
 	user.toggle_ghost_hud_flag(hud_type)
