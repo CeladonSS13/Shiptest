@@ -181,7 +181,7 @@
 		dat += "</td></tr>"
 
 	var/obj/item/bodypart/O = get_bodypart(BODY_ZONE_CHEST)
-	if((w_uniform == null && !(dna && dna.species.nojumpsuit) && !IS_ORGANIC_LIMB(O)) || (ITEM_SLOT_ICLOTHING in obscured))
+	if((w_uniform == null && !(dna && dna.species.nojumpsuit) && IS_ORGANIC_LIMB(O)) || (ITEM_SLOT_ICLOTHING in obscured)) // [CELADON-EDIT] - CELADON_FIXES - Позволяем просматривать и стриппить инвентарь аугментированного тела без джампсьюта
 		dat += "<tr><td><font color=grey>&nbsp;&#8627;<B>Pockets:</B></font></td></tr>"
 		dat += "<tr><td><font color=grey>&nbsp;&#8627;<B>ID:</B></font></td></tr>"
 		dat += "<tr><td><font color=grey>&nbsp;&#8627;<B>Belt:</B></font></td></tr>"
@@ -504,7 +504,6 @@
 /mob/living/carbon/human/proc/canUseHUD()
 	return (mobility_flags & MOBILITY_USE)
 
-/* // [CELADON-REMOVE] - NO-HARDER-REPAIR-IPC - Это используется только под IPC - Они и так через фичу обходят этот момент, так что зачем усложнять все?
 //ohh god this'll need to be reworked into a zone-by-zone selection, rather than just "are yuor jorts thick"
 
 /mob/living/carbon/human/proc/is_exposed(mob/user, error_msg, target_zone)
@@ -528,7 +527,7 @@
 	if(!. && error_msg && user)
 		// Might need re-wording.
 		to_chat(user, span_alert("There is no exposed flesh or thin material [above_neck(target_zone) ? "on [p_their()] head" : "on [p_their()] body"]."))
-*/ // [/CELADON-REMOVE]
+
 
 /mob/living/carbon/human/can_inject(mob/user, target_zone, injection_flags)
 	. = TRUE // Default to returning true.
