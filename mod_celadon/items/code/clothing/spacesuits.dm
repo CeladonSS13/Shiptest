@@ -270,31 +270,3 @@
 	hardsuit_type = "syndiesst"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/shabbysst
 	armor = list("melee" = 45, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 70, "wound" = 20)
-
-/datum/outfit/job/nanotrasen/ert/commander/eva
-	name = "test outfit blue (EVA)"
-
-	head = null
-	suit = /obj/item/clothing/suit/space/hardsuit/ert/classic
-	back = null
-
-/datum/outfit/job/nanotrasen/ert/sec/eva
-	name = "test outfit red (EVA)"
-
-	head = null
-	suit = /obj/item/clothing/suit/space/hardsuit/ert/classic/sec
-	back = null
-
-/datum/outfit/job/nanotrasen/ert/med/eva
-	name = "test outfit white (EVA)"
-
-	head = null
-	suit = /obj/item/clothing/suit/space/hardsuit/ert/classic/med
-	back = null
-
-/datum/outfit/job/nanotrasen/ert/engi/eva
-	name = "test outfit yellow (EVA)"
-
-	head = null
-	suit = /obj/item/clothing/suit/space/hardsuit/ert/classic/engi
-	back = null
