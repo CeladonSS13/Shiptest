@@ -360,18 +360,18 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	if(!client)
 		return
 	if(!mind || QDELETED(mind.current) || mind.current.loc == null)
-		to_chat(src, span_warning("You have no body."))
+		to_chat(src, span_warning("А тела то и нет."))
 		return
 	if(!can_reenter_corpse)
-		to_chat(src, span_warning("You cannot re-enter your body."))
+		to_chat(src, span_warning("Не могу вернуться в тело."))
 		return
 	if(mind.current.key && mind.current.key[1] != "@")	//makes sure we don't accidentally kick any clients
-		to_chat(usr, span_warning("Another consciousness is in your body...It is resisting you."))
+		to_chat(usr, span_warning("Кто-то уже копается в моём теле... Оно отвергает меня."))
 		return
 	client.view_size.setDefault(getScreenSize(client.prefs.widescreenpref))//Let's reset so people can't become allseeing gods
 	SStgui.on_transfer(src, mind.current) // Transfer NanoUIs.
 	if(mind.current.stat == DEAD && SSlag_switch.measures[DISABLE_DEAD_KEYLOOP])
-		to_chat(src, span_warning("To leave your body again use the Ghost verb."))
+		to_chat(src, span_warning("Чтобы покинуть тело используй кнопку Призрак."))
 	mind.current.key = key
 	mind.current.client.init_verbs()
 	mind.current.ignore_SSD = FALSE
@@ -383,10 +383,10 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	if(!client)
 		return
 	if(!can_reenter_corpse)
-		to_chat(usr, span_warning("You're already stuck out of your body!"))
+		to_chat(usr, span_warning("Да я как бы уже!"))
 		return FALSE
 
-	var/response = tgui_alert(src, "Are you sure you want to prevent (almost) all means of resuscitation? This cannot be undone. ","Are you sure you want to stay dead?", list("DNR","Save Me"))
+	var/response = tgui_alert(src, "Отменяем возможность возродиться?\nОБРАТНОГО ПУТИ НЕ БУДЕТ!", "Умираем?", list("DNR", "Я передумал"))
 	if(response != "DNR")
 		return
 
@@ -397,7 +397,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	// Disassociates observer mind from the body mind
 	mind = null
 
-	to_chat(src, span_boldnotice("You can no longer be brought back into your body."))
+	to_chat(src, span_boldnotice("Связь с телом потеряна. Приятного времяпрепровождения."))
 	return TRUE
 
 /mob/dead/observer/proc/notify_cloning(message, sound, atom/source, flashwindow = TRUE)
@@ -541,8 +541,8 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 
 /mob/dead/observer/verb/respawn()
 	if(can_reenter_corpse && client?.holder)
-		var/poll_client = tgui_alert(usr, "Returning to the title screen will forfeit any possible revival. Are you sure?", "Confirmation", list("Yes", "No"))
-		if(poll_client == "No")
+		var/poll_client = tgui_alert(usr, "Возврат в лобби-меню, это отменит возможность возрождение этим персонажем.\nВы ТОЧНО уверены?", "Респавн", list("Верни меня в лобби", "Я передумал"))
+		if(poll_client == "Я передумал")
 			return
 	abandon_mob()
 
