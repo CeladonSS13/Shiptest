@@ -15,11 +15,7 @@
 	visor_flags_cover = MASKCOVERSMOUTH | MASKCOVERSEYES | PEPPERPROOF
 	supports_variations = VOX_VARIATION | SNOUTED_VARIATION | KEPORI_VARIATION
 
-// [CELADON-ADD]
-/obj/item/clothing/mask
-	/// The unique sound effect of dying while wearing this
-	var/unique_death
-
+// [CELADON-ADD] - add: SFX-Die
 /obj/item/clothing/mask/gas/sechailer/sec
 	name = "security gas mask"
 	desc = "A standard issue Security gas mask. It doesn't cover the eyes."
@@ -29,19 +25,6 @@
 	item_state = "hailer"
 	unique_death = list(
 		'mod_celadon/_storage_sounds/sound/items/gasmask/sec_die.ogg'
-		)
-
-/obj/item/clothing/mask/gas/vigilitas
-	unique_death = list(
-		'mod_celadon/_storage_sounds/sound/items/gasmask/sec_die.ogg'
-		)
-
-/obj/item/clothing/mask/gas/inteq
-	unique_death = list(
-		'mod_celadon/_storage_sounds/sound/items/gasmask/die1.ogg',
-		'mod_celadon/_storage_sounds/sound/items/gasmask/die2.ogg',
-		'mod_celadon/_storage_sounds/sound/items/gasmask/die3.ogg',
-		'mod_celadon/_storage_sounds/sound/items/gasmask/die4.ogg',
 		)
 // [/CELADON-ADD]
 
