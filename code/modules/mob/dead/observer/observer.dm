@@ -540,10 +540,12 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 				to_chat(A, span_danger("This mob is not located in the game world."))
 
 /mob/dead/observer/verb/respawn()
-	if(can_reenter_corpse && client?.holder)
-		var/poll_client = tgui_alert(usr, "Возврат в лобби-меню, это отменит возможность возрождение этим персонажем.\nВы ТОЧНО уверены?", "Респавн", list("Верни меня в лобби", "Я передумал"))
-		if(poll_client == "Я передумал")
-			return
+	if(!client)
+		return
+	var/poll_client = tgui_alert(usr, "Возврат в лобби-меню, это отменит возможность возрождение этим персонажем.\nВы ТОЧНО уверены?", "Респавн", list("Верни меня в лобби", "Я передумал"))
+	if(poll_client != "Верни меня в лобби")
+		return
+
 	abandon_mob()
 
 /mob/dead/observer/verb/change_view_range()
