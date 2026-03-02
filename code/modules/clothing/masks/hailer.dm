@@ -23,9 +23,7 @@
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/mask/overlay/hailer.dmi'
 	icon_state = "hailer"
 	item_state = "hailer"
-	unique_death = list(
-		'mod_celadon/_storage_sounds/sound/items/gasmask/sec_die.ogg'
-		)
+	unique_death = list('mod_celadon/_storage_sounds/sound/items/gasmask/sec_die.ogg')
 // [/CELADON-ADD]
 
 /obj/item/clothing/mask/gas/sechailer/swat
