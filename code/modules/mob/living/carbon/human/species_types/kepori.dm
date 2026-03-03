@@ -18,8 +18,10 @@
 	species_eye_path = 'icons/mob/species/kepori/kepori_eyes.dmi'
 	heatmod = 0.67
 	coldmod = 1.5
-	// brutemod = 1.5
-	// burnmod = 1.5
+	//[CELADON-EDIT] - No more PTITZA combat
+	brutemod = 1.5
+	burnmod = 1.5
+	//[/CELADON-EDIT]
 	speedmod = -0.30	// [CELADON-EDIT] - CELADON_BALANCE_SPECIES - Было -0.10
 
 	bodytemp_heat_damage_limit = HUMAN_BODYTEMP_HEAT_DAMAGE_LIMIT + 35
