@@ -85,6 +85,10 @@
 					span_userdanger("Your neck is punched by [A]!"), span_hear("You hear a sickening sound of flesh hitting flesh!"), COMBAT_MESSAGE_RANGE, A)
 	to_chat(A, span_danger("You punch [D]'s neck!"))
 	D.adjustStaminaLoss(60)
+	//[CELADON-ADD] Adds a 100% disarm change to Pressure
+	if(I && D.temporarilyRemoveItemFromInventory(I))
+		A.put_in_inactive_hand(I)
+	//[/CELADON-ADD]
 	playsound(get_turf(A), 'sound/weapons/cqchit1.ogg', 50, TRUE, -1)
 	return TRUE
 
@@ -114,10 +118,33 @@
 		to_chat(A, span_danger("You strike [D]'s abdomen, neck and back consecutively!"))
 		playsound(get_turf(D), 'sound/weapons/cqchit2.ogg', 50, TRUE, -1)
 		var/obj/item/I = D.get_active_held_item()
-		if(I && D.temporarilyRemoveItemFromInventory(I))
-			A.put_in_hands(I)
+		//[CELADON-REMOVE] - Moves 100% disarm chance from consecutive to presusre
+		// if(I && D.temporarilyRemoveItemFromInventory(I))
+		// 	A.put_in_hands(I)
+		//[/CELADON-REMOVE]
 		D.adjustStaminaLoss(50)
 		D.apply_damage(25, A.dna.species.attack_type)
+		mini_slam(A,D)
+	return TRUE
+
+/datum/martial_art/cqc/proc/mini_slam(mob/living/carbon/human/A, mob/living/carbon/human/D, list/attacked_mobs = list())
+	if(!can_use(A))
+		return FALSE
+	D.visible_message(span_danger("[A] dashes to [D] and slams them into the ground!"), \
+					span_userdanger("You're slammed into the ground by [A]!"), span_hear("You hear a sickening sound of flesh hitting flesh!"), null, A)
+	to_chat(A, span_danger("You dash and slam [D] into the ground!"))
+	playsound(get_turf(A), 'sound/weapons/cqchit1.ogg', 50, TRUE, -1)
+	D.apply_damage(10, BRUTE)
+	D.Paralyze(40)
+	log_combat(A, D, "mini slammed (CQC)")
+	var/slowdown_mod = A.equipped_speed_mods()*3
+	for(var/mob/living/carbon/M in oviewers(5,A))
+		if(istype(M,/mob/living/carbon/human) && (M != D) && (!attacked_mobs.Find(M)) && (get_dist(A,M) <= 5) && (!M.stat) && (!M.IsParalyzed()))
+			walk_to(A,M,1,slowdown_mod)
+			sleep(5*slowdown_mod)
+			mini_slam(A,M,attacked_mobs)
+			attacked_mobs.Add(M)
+			break
 	return TRUE
 
 /datum/martial_art/cqc/grab_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
@@ -185,7 +212,7 @@
 			to_chat(A, span_danger("You strike [D]'s jaw, leaving [D.p_them()] disoriented!"))
 			playsound(get_turf(D), 'sound/weapons/cqchit1.ogg', 50, TRUE, -1)
 			if(I && D.temporarilyRemoveItemFromInventory(I))
-				A.put_in_hands(I)
+				A.put_in_inactive_hand(I) //[CELADON-EDIT] - A.put_in_hands(I) -> A.put_in_inactive_hand(I)
 			D.set_timed_status_effect(4 SECONDS, /datum/status_effect/jitter, only_if_higher = TRUE)
 			D.apply_damage(5, A.dna.species.attack_type)
 	else
