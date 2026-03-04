@@ -29,7 +29,7 @@ MARK: E-Guns - NT-SL
 /datum/supply_pack/faction/nanotrasen/gun/energy
 	name = "E-Rifle - SL X-10 'Patriot'"
 	desc = "A semi-automatic security-grade energy weapon. Fires lethal and disabler bolts. It is the egun. Produced by Nanotrasen-Sharplite"
-	cost = 1250
+	cost = 1750
 	contains = list(/obj/item/storage/guncase/energy/egun_old)
 	crate_name = "energy gun crate"
 	crate_type = /obj/structure/closet/crate/secure/plasma
@@ -64,7 +64,7 @@ MARK: E-Guns - NT-SL
 /datum/supply_pack/faction/nanotrasen/gun/blaze
 	name = "E-Shotgun - SL AL-370 'Blaze'"
 	desc = "A continuation of the E-SG prototypes featuring a different firemode compared to the classic energy shotgun. Produced by Nanotrasen-Sharplite."
-	cost = 3500
+	cost = 5500
 	contains = list(/obj/item/storage/guncase/energy/blaze)
 	crate_name = "shotgun crate"
 
@@ -72,12 +72,12 @@ MARK: E-Guns - NT-SL
 	name = "E-Sniper-Rifle - SL AL-602 'Phoenix'"
 	desc = "A sniper-like Sharplite energy weapon that deals more damage if the target is far away. Scope included."
 	contains = list(/obj/item/storage/guncase/heavylaser)
-	cost = 8000
+	cost = 9000
 
 /datum/supply_pack/faction/nanotrasen/gun/parallax
 	name = "E-Marksman - SL L-211 'Parallax'"
 	desc = "An energy marksman rifle featuring experimental hellfire bolts and a decent scope. Produced by Nanotrasen-Sharplite."
-	cost = 4000
+	cost = 5000
 	contains = list(/obj/item/storage/guncase/energy/parallax)
 	crate_name = "marksman crate"
 
@@ -91,7 +91,7 @@ MARK: E-Guns - NT-SL
 /datum/supply_pack/faction/nanotrasen/gun/daybreak
 	name = "EMG - SL AL-690 'Daybreak'"
 	desc = "A monstrous refitting of the AL-655. Decimates anything in your way. Uses large weapon cells. Produced by Nanotrasen-Sharplite."
-	cost = 12000
+	cost = 9000
 	contains = list(/obj/item/storage/guncase/energy/daybreak)
 	crate_name = "EMG crate"
 

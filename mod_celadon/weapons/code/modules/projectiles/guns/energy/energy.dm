@@ -28,16 +28,11 @@
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/righthand_old.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob.dmi'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen, /obj/item/ammo_casing/energy/disabler/nanotrasen)
-	// таким образом НТ пушки будут принимать и НТшные магазины, и Эохомы
 	allowed_ammo_types = list(
 		/obj/item/stock_parts/cell/gun,
 		/obj/item/stock_parts/cell/gun/upgraded,
 		/obj/item/stock_parts/cell/gun/empty,
-		/obj/item/stock_parts/cell/gun/upgraded/empty,
-		/obj/item/stock_parts/cell/gun/sharplite,
-		/obj/item/stock_parts/cell/gun/sharplite/plus,
-		/obj/item/stock_parts/cell/gun/sharplite/empty,
-		/obj/item/stock_parts/cell/gun/sharplite/plus/empty,
+		/obj/item/stock_parts/cell/gun/upgraded/empty
 	)
 	valid_attachments = SHARPLITE_ATTACHMENTS
 	manufacturer = MANUFACTURER_SHARPLITE_NEW
@@ -318,6 +313,7 @@
 	icon_state = "daybreak"
 	w_class = WEAPON_VERY_HEAVY
 	weapon_weight = WEAPON_VERY_HEAVY
+	wield_slowdown = HMG_SLOWDOWN
 	default_ammo_type = /obj/item/stock_parts/cell/gun/large
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/assault/nanotrasen/emg)
 	allowed_ammo_types = list(
@@ -327,6 +323,8 @@
 	gun_firemodes = list(FIREMODE_FULLAUTO)
 	default_firemode = FIREMODE_FULLAUTO
 	shaded_charge = TRUE
+
+	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
 
 	fire_delay = 0.15 SECONDS
 	wield_delay = 2 SECONDS
@@ -354,10 +352,10 @@
 	manufacturer = MANUFACTURER_SHARPLITE_NEW
 
 	zoomable = TRUE
-	wield_slowdown = LIGHT_RIFLE_SLOWDOWN
+	wield_slowdown = RIFLE_SLOWDOWN
 	aimed_wield_slowdown = LONG_RIFLE_AIM_SLOWDOWN
 	wield_delay = 1 SECONDS
-	fire_delay = 0.6 SECONDS
+	fire_delay = 0.7 SECONDS
 
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
 
@@ -398,7 +396,7 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/accelerator)
 	ammo_x_offset = 3
 	fire_sound_volume = 90
-	zoom_amt = 10
+	zoom_amt = 8
 	zoom_out_amt = 5
 	wield_slowdown = LASER_SNIPER_SLOWDOWN
 	manufacturer = MANUFACTURER_SHARPLITE_NEW
@@ -468,6 +466,7 @@
 /obj/item/stock_parts/cell/gun/mini
 	name = "miniature energy power cell"
 	desc = "A compact weapon cell primarily used by Sharplite Energy weaponry. Nanotrasen's large market share has forced some weapon developers to include adapters for these cells. It holds less charge and is intended for usage in energy handguns."
+	w_class = WEIGHT_CLASS_TINY
 	icon = 'icons/obj/power.dmi'
 	icon_state = "mg-cell"
 	reskin = FALSE
