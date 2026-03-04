@@ -66,11 +66,8 @@
 		RegisterSignal(user, COMSIG_MOVABLE_MOVED, PROC_REF(on_moved), override = TRUE)
 // [/CELADON-EDIT]
 		var/obj/mecha/mech = user.loc
-		if(ismecha(user.loc) && user == mech.occupant)
-// [CELADON-EDIT] - FIX_MECH
-//			RegisterSignal(mech, COMSIG_MOVABLE_MOVED, PROC_REF(on_moved)) // CELADON-EDIT - ORIGINAL
-			RegisterSignal(mech, COMSIG_MOVABLE_MOVED, PROC_REF(on_moved), override = TRUE)
-// [/CELADON-EDIT]
+		if(ismecha(user.loc) && user == mech.occupant && mech != target)
+			RegisterSignal(mech, COMSIG_MOVABLE_MOVED, PROC_REF(on_moved))
 	if(!(timed_action_flags & IGNORE_TARGET_LOC_CHANGE))
 		if(user != target)
 // [CELADON-EDIT] - FIX_MECH
