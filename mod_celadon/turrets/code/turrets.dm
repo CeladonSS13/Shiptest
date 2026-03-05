@@ -228,23 +228,44 @@
 /obj/machinery/porta_turret/ship/syndicate/weak
 	desc = "A low powered turret designed by the Gorlex Maurauders. Effectively weaponizes mining equipment." //no fucking icw
 
-//Nanotrasen turrets - даем хеви турелям хевилазеры дизейблера и возвращаем лазеры
+// MARK: NANOTRASEN
+//Nanotrasen ship turrets
 
 /obj/machinery/porta_turret/ship/nt
-	stun_projectile = /obj/projectile/beam/disabler
-	lethal_projectile = /obj/projectile/beam/laser
+	stun_projectile = /obj/projectile/beam/disabler/nanotrasen
+	lethal_projectile = /obj/projectile/beam/laser/nanotrasen
 
 /obj/machinery/porta_turret/ship/nt/light
-	stun_projectile = /obj/projectile/beam/disabler/weak
-	lethal_projectile = /obj/projectile/beam/laser/light
+	stun_projectile = /obj/projectile/beam/disabler/nanotrasen/weak
+	lethal_projectile = /obj/projectile/beam/laser/nanotrasen/weak
 
 /obj/machinery/porta_turret/ship/nt/heavy
 	stun_projectile = /obj/projectile/beam/disabler/nanotrasen/heavylaser
+	lethal_projectile = /obj/projectile/beam/laser/nanotrasen/heavylaser
 	stun_projectile_sound = 'sound/weapons/wave.ogg'
 
 /obj/machinery/porta_turret/ship/nt/pulse
 	stun_projectile = /obj/projectile/beam/disabler/nanotrasen/heavylaser
 	stun_projectile_sound = 'sound/weapons/wave.ogg'
+
+//Nanotrasen derelict turrets
+// removes plasma projectiles
+
+/obj/machinery/porta_turret/ruin/nt
+	stun_projectile = /obj/projectile/beam/disabler/nanotrasen
+	lethal_projectile = /obj/projectile/beam/laser/nanotrasen
+
+/obj/machinery/porta_turret/ruin/nt/light
+	stun_projectile = /obj/projectile/beam/disabler/nanotrasen/weak
+	lethal_projectile = /obj/projectile/beam/laser/nanotrasen/weak
+
+/obj/machinery/porta_turret/ruin/nt/light/sniper
+	stun_projectile = /obj/projectile/beam/disabler/nanotrasen/weak
+	lethal_projectile = /obj/projectile/beam/laser/nanotrasen/weak
+
+/obj/machinery/porta_turret/ruin/nt/heavy
+	stun_projectile = /obj/projectile/beam/disabler/nanotrasen/heavylaser
+	lethal_projectile = /obj/projectile/beam/laser/nanotrasen/heavylaser
 
 //Pirate turrets - даем фракцию пиратов вместо фронтиров
 
