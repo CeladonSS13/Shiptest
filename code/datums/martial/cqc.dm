@@ -86,6 +86,7 @@
 	to_chat(A, span_danger("You punch [D]'s neck!"))
 	D.adjustStaminaLoss(60)
 	//[CELADON-ADD] Adds a 100% disarm change to Pressure
+	var/obj/item/I = D.get_active_held_item()
 	if(I && D.temporarilyRemoveItemFromInventory(I))
 		A.put_in_inactive_hand(I)
 	//[/CELADON-ADD]
@@ -117,16 +118,20 @@
 						span_userdanger("Your abdomen, neck and back are struck consecutively by [A]!"), span_hear("You hear a sickening sound of flesh hitting flesh!"), COMBAT_MESSAGE_RANGE, A)
 		to_chat(A, span_danger("You strike [D]'s abdomen, neck and back consecutively!"))
 		playsound(get_turf(D), 'sound/weapons/cqchit2.ogg', 50, TRUE, -1)
-		var/obj/item/I = D.get_active_held_item()
 		//[CELADON-REMOVE] - Moves 100% disarm chance from consecutive to presusre
+		//var/obj/item/I = D.get_active_held_item()
 		// if(I && D.temporarilyRemoveItemFromInventory(I))
 		// 	A.put_in_hands(I)
 		//[/CELADON-REMOVE]
 		D.adjustStaminaLoss(50)
 		D.apply_damage(25, A.dna.species.attack_type)
-		mini_slam(A,D)
+		//[CELADON-ADD] - reworks consecutive combo
+		if(A != D)
+			mini_slam(A,D)
+		//[/CELADON-ADD]
 	return TRUE
 
+//[CELADON-ADD] - reworks consecutive combo
 /datum/martial_art/cqc/proc/mini_slam(mob/living/carbon/human/A, mob/living/carbon/human/D, list/attacked_mobs = list())
 	if(!can_use(A))
 		return FALSE
@@ -146,6 +151,7 @@
 			attacked_mobs.Add(M)
 			break
 	return TRUE
+//[/CELADON-ADD]
 
 /datum/martial_art/cqc/grab_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
 	if(A.a_intent == INTENT_GRAB && A!=D && can_use(A)) // A!=D prevents grabbing yourself
