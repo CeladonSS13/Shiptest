@@ -103,7 +103,6 @@
 							"[SOUTH]" = list("x" = 8, "y" = 0),
 							"[WEST]" = list("x" =  0, "y" = 0)
 							), // [CELADON-ADD] - SPECIES OFFSETS
-							),
 	)
 
 /datum/species/vox/random_name(gender,unique,lastname)
