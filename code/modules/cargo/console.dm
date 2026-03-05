@@ -6,6 +6,7 @@
 
 /obj/machinery/computer/cargo
 	name = "коммуникационная консоль аванпоста"
+	cases = list("коммуникационная консоль аванпоста", "коммуникационной консоли аванпоста", "коммуникационной консоли аванпоста", "коммуникационную консоль аванпоста", "коммуникационной консолью аванпоста", "коммуникационной консоли аванпоста")
 	desc = "Эта консоль позволяет пользователю взаимодейстовать с ближайшим аванпостом для \
 			просмотра и управлениями заданиями выставленными различными организациями."
 	icon_screen = "supply_express"
@@ -55,8 +56,8 @@
 	if(obj_flags & EMAGGED)
 		return
 	if(user)
-		user.visible_message(span_warning("[user] swipes a suspicious card through [src]!"),
-		span_notice("You adjust [src]'s routing and receiver spectrum, unlocking special supplies and contraband."))
+		user.visible_message(span_warning("[user] проводит подозрительной карточкой по [CASE(src, GENITIVE_CASE)]!"),
+		span_notice("Вы настраиваете [CASE(src, ACCUSATIVE_CASE)]'s routing and receiver spectrum, unlocking special supplies and contraband."))
 
 	obj_flags |= EMAGGED
 	contraband = TRUE
@@ -81,7 +82,7 @@
 /obj/machinery/computer/cargo/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
-		ui = new(user, src, "OutpostCommunicationsCeladon", name) // [CELADON-EDIT] - CELADON_OUTPOST_CONSOLE - instead of "OutpostCommunications"
+		ui = new(user, src, "Коммуникационная консоль аванпоста", name) // [CELADON-EDIT] - CELADON_OUTPOST_CONSOLE - instead of "OutpostCommunications", [CELADON-EDIT] - Due to the translation of the text, the name "OutpostCommunicationsCeladon" was changed to Russian.
 		ui.open()
 		if(!charge_account)
 			reconnect()
@@ -108,7 +109,7 @@
 	data["outpostDocked"] = istype(outpost_docked)
 	data["points"] = charge_account ? charge_account.account_balance : 0
 	data["siliconUser"] = user.has_unlimited_silicon_privilege && check_ship_ai_access(user)
-	message = "Purchases will be delivered to your hangar's delivery zone."
+	message = "Покупки будут доставлены в зону доставки вашего ангара."
 	data["blockade"] = FALSE
 	if(istype(outpost_docked) && outpost_docked.market.supply_blocked)
 		message = blockade_warning
@@ -165,15 +166,15 @@
 				return
 
 			if(istype(outpost_docked) && outpost_docked.market.supply_blocked)
-				say("Outpost cargo unavailable!")
+				say("Связь с отделом снабжения аванпоста недоступна. Попробуйте позже.")
 				return
 
 			if(!charge_account.adjust_money(-total_cost, CREDIT_LOG_CARGO))
-				say("Insufficent funds!")
+				say("Недостаточно средств!")
 				return
 
 			playsound(src, 'sound/machines/twobeep_high.ogg', 50, TRUE)
-			say("Order incoming!")
+			say("Заказ в пути!")
 
 			var/list/unprocessed_packs = list()
 			for(var/list/current_item as anything in purchasing)
@@ -213,10 +214,10 @@
 							if(ship.given_up_missions >= 3)
 								ship.giveup_timer = world.time+15 MINUTES
 								ship.giveup_timeout = TRUE
-								to_chat(usr, "<span class='alert'>Maximum limit of aborted missions reached. Please wait 15 minutes, while we are checking your ship history for any possible frauds. Future attempts to give up a mission might result in a bad reputation.</span>")
+								to_chat(usr, "<span class='alert'>Достигнуто максимальное количество прерванных миссий. Пожалуйста, подождите 15 минут, пока мы проверяем вашу историю выполнения заданий на предмет возможных махинаций. Дальнейшие попытки отказа от выполнения заданий могут привести к ухудшению вашей репутации.</span>")
 							return TRUE
 					else
-						to_chat(usr, "<span class='alert'>Please wait [ceil((ship.giveup_timer-world.time)/600)] minutes before giving up again.</span>")
+						to_chat(usr, "<span class='alert'>Пожалуйста подождите [ceil((ship.giveup_timer-world.time)/600)] [PLUR_MINUTES_LEFT(ship.giveup_timer)] перед тем как прервать миссию вновь.</span>")
 						return TRUE
 				//[/CELADON-EDIT]
 				return TRUE
@@ -225,7 +226,7 @@
 	var/value = W.get_item_credit_value()
 	if(value && charge_account)
 		charge_account.adjust_money(value, CREDIT_LOG_DEPOSIT)
-		to_chat(user, span_notice("You deposit [W]. The Vessel Budget is now [charge_account.account_balance] cr."))
+		to_chat(user, span_notice("Ваш депозит [W]. Бюджет вашего корабля составляет: [charge_account.account_balance] кр."))
 		qdel(W)
 		return TRUE
 	..()
