@@ -1,10 +1,4 @@
-// MARK: REBALANCE
-
-////////////
-//IOT egun
-////////////
-
-//Ammo Casings
+// MARK: AMMO CASINGS
 
 /obj/item/ammo_casing/energy/laser/shotgun/nanotrasen
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/shotgun
@@ -20,12 +14,6 @@
 	pellets = 6
 	variance = 35
 	e_cost = 1428
-
-////////////
-//etar SMG egun
-////////////
-
-//Ammo casings
 
 /obj/item/ammo_casing/energy/disabler/smg
 	projectile_type = /obj/projectile/beam/disabler/nanotrasen/weak
@@ -106,7 +94,7 @@
 /obj/item/ammo_casing/energy/laser/shotgun/nanotrasen/burst
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/shotgun
 	pellets = 3
-	variance = 35
+	variance = 30
 	e_cost = 1000
 
 /obj/item/ammo_casing/energy/laser/nanotrasen/mini
@@ -121,6 +109,13 @@
 /obj/item/ammo_casing/energy/laser/antique
 	fire_sound = 'sound/weapons/laser.ogg'
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/hellfire
+
+/obj/item/ammo_casing/energy/laser/antique/immolate
+	fire_sound = 'sound/weapons/lasercannonfire.ogg'
+	projectile_type = /obj/projectile/beam/laser/nanotrasen/hellfire/immolate
+	e_cost = 2500 //4 shots per cell
+	delay = 0.7 SECONDS
+	select_name = "overcharge"
 
 // Баланс Ионочек
 /obj/item/ammo_casing/energy/ion
