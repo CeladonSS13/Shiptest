@@ -40,6 +40,13 @@
 /obj/item/gun/energy/e_gun/e_old/empty_cell
 	spawn_no_ammo = TRUE
 
+/obj/item/gun/energy/e_gun/e_old/laser
+	name = "SL L-204 'Fuse' Laser Carbine"
+	desc = "A basic energy-based laser carbine and somewhat of a predecessor to the X-10. Famed for its low price and reliability."
+	icon_state = "laser"
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen/less)
+	w_class = WEIGHT_CLASS_BULKY
+
 /obj/item/gun/energy/e_gun/e_old/mini
 	name = "SL X-26 'Ember' Miniature Energy Pistol"
 	desc = "A lightweight, civilian marketed Sharplite pistol, popular among Vigilitas security personnel as a reliable dual-mode sidearm. Built-in flashlight included."
@@ -313,7 +320,7 @@
 	icon_state = "daybreak"
 	w_class = WEAPON_VERY_HEAVY
 	weapon_weight = WEAPON_VERY_HEAVY
-	wield_slowdown = HMG_SLOWDOWN
+	wield_slowdown = 1.2
 	default_ammo_type = /obj/item/stock_parts/cell/gun/large
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/assault/nanotrasen/emg)
 	allowed_ammo_types = list(
@@ -360,7 +367,7 @@
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
 
 	spread = 0
-	spread_unwielded = 12
+	spread_unwielded = 40
 
 	zoom_amt = DMR_ZOOM
 	zoom_out_amt = 5

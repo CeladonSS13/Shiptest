@@ -52,6 +52,9 @@
 	e_cost = 500
 	delay = 0.3 SECONDS
 
+/obj/item/ammo_casing/energy/laser/nanotrasen/less
+	e_cost = 666
+
 /obj/item/ammo_casing/energy/laser/nanotrasen/hos
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/hos
 
@@ -82,7 +85,7 @@
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/assault
 	fire_sound = 'sound/weapons/gun/laser/e40_las.ogg'
 	delay = 0.15 SECONDS
-	e_cost = 500
+	e_cost = 714
 
 /obj/item/ammo_casing/energy/laser/accelerator
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/sniper
@@ -109,13 +112,6 @@
 /obj/item/ammo_casing/energy/laser/antique
 	fire_sound = 'sound/weapons/laser.ogg'
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/hellfire
-
-/obj/item/ammo_casing/energy/laser/antique/immolate
-	fire_sound = 'sound/weapons/lasercannonfire.ogg'
-	projectile_type = /obj/projectile/beam/laser/nanotrasen/hellfire/immolate
-	e_cost = 2500 //4 shots per cell
-	delay = 0.7 SECONDS
-	select_name = "overcharge"
 
 // Баланс Ионочек
 /obj/item/ammo_casing/energy/ion

@@ -278,10 +278,10 @@ hp
 	crate_name = "laser crate"
 
 /datum/supply_pack/faction/independent/gun/laser
-	name = "Energy - SL L-204 Laser Gun"
+	name = "Energy - SL L-204 'Fuse'"
 	desc = "Contains a NT-SL mass-produced lethal, high-energy laser gun."
 	cost = 1000
-	contains = list(/obj/item/storage/guncase/energy/laser)
+	contains = list(/obj/item/storage/guncase/energy/laser_old)
 	crate_name = "laser crate"
 
 /datum/supply_pack/faction/independent/gun/scatterlaser

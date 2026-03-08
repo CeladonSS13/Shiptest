@@ -13,10 +13,10 @@ MARK: E-Guns - NT-SL
 	crate_name = "laser crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/laser
-	name = "E-Rifle - SL L-204 laser gun"
-	desc = "Basic energy-based laser gun that fires concentrated beams of light which pass through glass and thin metal. Produced by Nanotrasen-Sharplite."
+	name = "E-Rifle - SL L-204 'Fuse'"
+	desc = "A basic energy-based laser gun that fires concentrated beams of light which pass through glass and thin metal. Produced by Nanotrasen-Sharplite."
 	cost = 1000
-	contains = list(/obj/item/storage/guncase/energy/laser)
+	contains = list(/obj/item/storage/guncase/energy/laser_old)
 	crate_name = "laser crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/energy/disabler
