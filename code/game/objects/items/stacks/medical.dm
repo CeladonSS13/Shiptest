@@ -153,7 +153,7 @@
 	max_amount = 12
 	amount = 6
 	grind_results = list(/datum/reagent/cellulose = 2)
-	custom_price = 50
+	custom_price = 35 // [CELADON-EDIT] - OUTPOST_MED_BALANCE // custom_price = 50
 	burn_cleanliness_bonus = 0.35
 	merge_type = /obj/item/stack/medical/gauze
 	var/gauze_type = /datum/bodypart_aid/gauze

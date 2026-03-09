@@ -202,7 +202,7 @@
 		. += "[registered_name]"
 	if(registered_age)
 		. += "<B>AGE:</B>"
-		. += "[registered_age] years old [(registered_age < AGE_MINOR) ? "There's a holographic stripe that reads <b>[span_danger("'MINOR: DO NOT SERVE ALCOHOL OR TOBACCO'")]</b> along the bottom of the card." : ""]"
+		. += "[registered_age] years old [(registered_age < AGE_DRINKING) ? "There's a holographic stripe that reads <b>[span_danger("'DO NOT SERVE ALCOHOL OR TOBACCO'")]</b> along the bottom of the card." : ""]"
 	if(length(ship_access))
 		var/list/ship_factions = list()
 		var/list/ship_names = list()
@@ -365,11 +365,11 @@ update_label()
 /obj/item/card/id/syndicate/attack_self(mob/living/carbon/user) //[CELADON-EDIT] mob/user -> mob/living/carbon/user
 	if(isliving(user) && user.mind)
 		var/first_use = registered_name ? FALSE : TRUE
-		// [CELADON-FIX] Fixes agent card's mind check from special_role to faction + adds fingerprint check
+		// [CELADON-FIXES] Fixes agent card's mind check from special_role to faction + adds fingerprint check
 		var/list/user_faction_list = user.faction
 		if(!(user_faction_list.Find("[FACTION_PLAYER_SYNDICATE]")) && (!fingerprint || fingerprint != user.dna.uni_identity))
 		//if(!(user.mind.special_role || anyone)) //Unless anyone is allowed, only syndies can use the card, to stop metagaming.
-		// [/CELADON-FIX]
+		// [CELADON-FIXES]
 			if(first_use) //If a non-syndie is the first to forge an unassigned agent ID, then anyone can forge it.
 				anyone = TRUE
 			else

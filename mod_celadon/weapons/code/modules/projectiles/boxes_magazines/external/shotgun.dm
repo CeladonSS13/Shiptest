@@ -1,7 +1,7 @@
 //https://github.com/CeladonSS13/Shiptest/pull/1085
 /obj/item/ammo_box/magazine/saiga
 	name = "\improper saiga 6 bullet short magazine"
-	desc = "A simple saiga magazine designed to chamber 410x76mm."
+	desc = "A simple saiga magazine designed to chamber .410."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/saiga_ammo.dmi'
 	icon_state = "6_bullet-1"
 	base_icon_state = "6_bullet"

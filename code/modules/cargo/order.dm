@@ -56,38 +56,24 @@
 	return requisition_paper
 
 /datum/supply_order/proc/generateManifest(obj/structure/closet/crate/container, owner) //generates-the-manifests.
-	var/obj/item/paper/manifest/manifest_paper = new(container, id, 0)
-
-	manifest_paper.name = "shipping manifest - #[id]"
-// [CELADON-EDIT] - REVERT: Better cargo pack managment (#4419)
-//	var/manifest_text = "<h2>[market.name] Shipping Manifest</h2>" // CELADON-EDIT - ORIGINAL
-	var/manifest_text = "<h2>[command_name()] Shipping Manifest</h2>"
-// [/CELADON-EDIT]
+	var/manifest_text = "<h2>[command_name()] Shipping Manifest</h2>"	//var/manifest_text = "<h2>[market.name] Shipping Manifest</h2>" // [CELADON-EDIT] - ORIGINAL
 	manifest_text += "<hr/>"
 	if(owner && !(owner == "Unknown"))
 		manifest_text += "Direct purchase from [owner]<br/>"
-		manifest_paper.name += " - Purchased by [owner]"
-// [CELADON-EDIT] - REVERT: Better cargo pack managment (#4419)
-//	manifest_text += "Destination: [market.name]<br/>" // CELADON-EDIT - ORIGINAL
-	manifest_text += "Destination: [station_name()]<br/>"
-// [/CELADON-EDIT]
+	manifest_text += "Destination: [station_name()]<br/>"	//	manifest_text += "Destination: [market.name]<br/>" // [CELADON-EDIT] - REVERT: Better cargo pack managment (#4419)
 	manifest_text += "Contents: <br/>"
 	manifest_text += "<ul>"
 	var/container_contents = list() // Associative list with the format (item_name = nº of occurrences, ...)
-	for(var/atom/movable/AM in container.contents - manifest_paper)
+	for(var/atom/movable/AM in container.contents)
 		container_contents[AM.name]++
 	for(var/item in container_contents)
 		manifest_text += "<li> [container_contents[item]] [item][container_contents[item] == 1 ? "" : "s"]</li>"
 	manifest_text += "</ul>"
 	manifest_text += "<h4>Stamp below to confirm receipt of goods:</h4>"
 
-	manifest_paper.add_raw_text(manifest_text)
-	manifest_paper.update_appearance()
-	manifest_paper.forceMove(container)
-	container.manifest = manifest_paper
+	container.manifest_id = id
+	container.AddComponent(/datum/component/writing, raw_text = manifest_text)
 	container.update_appearance()
-
-	return manifest_paper
 
 /datum/supply_order/proc/generate(atom/location)
 	var/account_holder

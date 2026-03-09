@@ -91,7 +91,7 @@
 		return
 	to_chat(hit_mob, span_notice("You finish taking a hit from the [src]."))
 	if(reagents.total_volume)
-		reagents.trans_to( hit_mob, reagent_transfer_per_use, transfered_by = user, method = VAPOR)
+		reagents.trans_to( hit_mob, reagent_transfer_per_use, transfered_by = user, methods = VAPOR)
 		bong_hits--
 	var/turf/open/pos = get_turf(src)
 	if(istype(pos))

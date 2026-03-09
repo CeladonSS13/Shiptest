@@ -123,6 +123,7 @@
 	can_be_undeployed = TRUE
 	spawned_on_undeploy = /obj/item/deployable_turret_folded
 
+// MARK: ELYSIUM SEPAR
 // Elysium separatists turrets - не знаю зачем вообще сепарам турели, но пусть будут
 
 /obj/machinery/porta_turret/ship/elysium
@@ -158,6 +159,7 @@
 	scan_range = 15
 	shot_delay = 20
 
+// MARK: SOLFED
 //Solar Federation turrets
 
 /obj/machinery/porta_turret/ship/solfed
@@ -192,6 +194,7 @@
 	shot_delay = 20
 	max_integrity = 300
 
+// MARK: SYNDICATE
 //Syndicate turrets - баллистические синди турели ибо оффы сделали их НГР
 
 /obj/machinery/porta_turret/ship/syndicate/ballistic
@@ -249,3 +252,16 @@
 	faction = list(FACTION_PIRATES, "Turret")
 	icon_state = "syndie_off"
 	base_icon_state = "syndie"
+
+// MARK: INTEQ
+/obj/machinery/porta_turret/ship/inteq/point_defence
+	name = "IRMG Point Defence Turret"
+	desc = "A light turret modified by IRMG engineers. Originally meant to defend ships against missile barrages, it now serves as a formidable anti-fauna powerhouse, equipped with powerful long-range sensors."
+	stun_projectile = /obj/projectile/bullet/pellet/rubbershot
+	stun_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg'
+	lethal_projectile = /obj/projectile/bullet/pellet/bof
+	lethal_projectile_sound = 'sound/weapons/gun/smg/uzi.ogg'
+	scan_range = 12
+	burst_size = 4
+	burst_delay = 5
+	shot_delay = 0.5

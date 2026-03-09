@@ -118,6 +118,7 @@
 	stock_max = 3
 	availability_prob = 50
 
+/* // [CELADON-REMOVE] - Никто в жизни это не купит намеренно
 /datum/blackmarket_item/clothing/degraded_armor_set
 	name = "Clearance Bin Armor Set"
 	desc = "Looking to protect yourself, but on a tight budget? These previously used vest and helmets served their former owners well! (May they rest in peace.)"
@@ -136,6 +137,7 @@
 	new /obj/item/clothing/head/helmet/old(B)
 	new /obj/item/clothing/suit/armor/vest/old(B)
 	return B
+*/ // [/CELADON-REMOVE]
 
 /datum/blackmarket_item/clothing/camo_set
 	name = "Camo Set"
@@ -357,6 +359,16 @@
 	cost_max = 1500
 	stock_max = 1
 	availability_prob = 40
+
+/datum/blackmarket_item/clothing/stealth_hardsuit
+	name = "INF-95 Tactical Hardsuit"
+	desc = "My friend recently died, bummer right? Well not actually, because I went through his garage and looted tons'a shit! Turns out, he's had this ANTIQUE ICW HARDSUIT sitting about! I dont even know jack about it, but it weighs like nothing and has night vision to boot."
+	item = /obj/item/clothing/suit/space/hardsuit/stealth
+
+	cost_min = 4000
+	cost_max = 5500
+	stock_max = 1
+	availability_prob = 20
 
 /datum/blackmarket_item/clothing/thermal_eyepatch
 	name = "Thermal Eyepatch"

@@ -135,13 +135,13 @@
 		message = riol_ru_rr.Replace_char(message, pick("р", "рр", "ррр"))
 		message = riol_ru_RR.Replace_char(message, pick("Р", "Рр", "Ррр"))
 
-		if(prob(20))
+		if(prob(5))
 			message = riol_ur.Replace(message, pick("u", "ur", "uru"))
 			message = riol_UR.Replace(message, pick("U", "Ur", "Uru"))
 			message = riol_ru_ur.Replace_char(message, pick("у", "ур", "уру"))
 			message = riol_ru_UR.Replace_char(message, pick("У", "Ур", "Уру"))
 
-		if(prob(20))
+		if(prob(5))
 			message = riol_if.Replace(message, pick("i", "if", "iyf"))
 			message = riol_IF.Replace(message, pick("I", "If", "Iyf"))
 			message = riol_ru_if.Replace_char(message, pick("и", "иф", "ийф"))

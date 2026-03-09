@@ -50,7 +50,8 @@ Difficulty: Very Hard
 	achievement_type = /datum/award/achievement/boss/colossus_kill
 	crusher_achievement_type = /datum/award/achievement/boss/colossus_crusher
 	score_achievement_type = /datum/award/score/colussus_score
-	mob_trophy = /obj/item/mob_trophy/blaster_tubes
+	//mob_trophy = /obj/item/mob_trophy/blaster_tubes		// [CELADON-EDIT] - RETURN_CONTENT_CRUSHER_TROPHY
+	crusher_loot = /obj/item/crusher_trophy/blaster_tubes	// [/CELADON-EDIT]
 	loot = list(/obj/structure/closet/crate/necropolis/colossus)
 	deathmessage = "disintegrates, leaving a glowing core in its wake."
 	deathsound = 'sound/magic/demon_dies.ogg'

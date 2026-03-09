@@ -177,7 +177,7 @@
 /datum/emote/living/carbon/blink
 	name = EMOTE_CARBON_BLINK
 
-/datum/emote/living/carbon/blink_r
+/datum/emote/living/carbon/blink/blink_r
 	name = EMOTE_CARBON_BLINKR
 
 /datum/emote/living/carbon/cough

@@ -13,6 +13,7 @@
 	desc = "Wall-mounted Medical Equipment dispenser."
 	product_ads = ""
 	armor = list("melee" = 20, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 70)
+	circuit = /obj/item/circuitboard/machine/vending/wallmed/ship
 	restock_hourly = FALSE
 
 	products = list(
@@ -37,6 +38,16 @@
 		/obj/item/reagent_containers/medigel/hadrakine = 2,
 		/obj/item/reagent_containers/medigel/quardexane = 2,
 	)
+
+/obj/item/circuitboard/machine/vending/wallmed/ship
+	name = "wall-mounted NanoMed (Machine Board)"
+	build_path = /obj/machinery/vending/wallmed/ship
+	req_components = list(
+		/obj/item/vending_refill/wallmed/ship = 1)
+
+/obj/item/vending_refill/wallmed/ship
+	machine_name = "NanoMed"
+	icon_state = "refill_medical"
 
 /obj/machinery/vending/medical/outpost_access
 	name = "\improper Elysium Plus"

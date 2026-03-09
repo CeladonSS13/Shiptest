@@ -165,7 +165,7 @@
 	if(auto_scatter)
 		pixel_x = base_pixel_x + rand(-10, 10)
 		pixel_y = base_pixel_y + rand(-10, 10)
-	item_flags |= NO_PIXEL_RANDOM_DROP
+	item_flags |= NO_PIXEL_RANDOM_DROP | NO_ROTATE_RANDOM_THROW	// [CELADON-EDIT]
 	if(auto_rotate)
 		transform = transform.Turn(round(45 * rand(0, 32) / 2))
 	update_appearance()

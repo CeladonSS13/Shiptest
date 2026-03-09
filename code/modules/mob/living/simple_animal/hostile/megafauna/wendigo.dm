@@ -32,7 +32,8 @@ Difficulty: Hard
 	loot = list()
 	butcher_results = list()
 	guaranteed_butcher_results = list(/obj/item/wendigo_blood = 1)
-	mob_trophy = /obj/item/mob_trophy/demon_claws
+	//mob_trophy = /obj/item/mob_trophy/demon_claws		// [CELADON-EDIT] - RETURN_CONTENT_CRUSHER_TROPHY
+	crusher_loot = /obj/item/crusher_trophy/demon_claws	// [/CELADON-EDIT]
 	wander = FALSE
 	del_on_death = FALSE
 	blood_volume = BLOOD_VOLUME_NORMAL

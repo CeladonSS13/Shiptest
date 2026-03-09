@@ -386,6 +386,20 @@
 	suffix = "jungle_surface_ninjashrine.dmm"
 	cost = 2
 
+/datum/map_template/ruin/jungle/serene_hunt
+	name = "Serene Hunt"
+	id = "senere_hunt"
+	description = "Serene Outdoor's premier hunting resort and outlet. Well, it was until all the animals got out anyways."
+	suffix = "jungle_serene_hunts.dmm"
+	cost = 4
+
+	/datum/map_template/ruin/jungle/ramzi_base	//Оффовская ремапнутая Syndicate
+	name = "Ramzi Base"
+	id = "razmi_base"
+	description = "An ICW-era nuclear bunker formerly operated by Ramzi Clique."
+	suffix = "jungle_surface_ramzi.dmm"
+	cost = 3
+
 //							///
 //		MARK: Lavaland
 //							///
@@ -590,6 +604,20 @@
 	suffix = "rockplanet_rustbase.dmm"
 	cost = 1
 
+/datum/map_template/ruin/rockplanet/stash_river_valley
+	name = "Frontier River Valley Stash"
+	id = "river_valley_stash"
+	description = "A frontiersman drug stash in the midst of being buried."
+	suffix = "rockplanet_river_valley_stash.dmm"
+	cost = 3
+
+/datum/map_template/ruin/rockplanet/trench_complex_front	// somme (название dmm у оффов) = trench complex (та же руина, но уже в их конфиге)
+	name = "Frontier Trench Complex"
+	id = "trench_complex"
+	description = "Frontiersmen have dug in like ticks to the planet's surface."
+	suffix = "rockplanet_trench_complex.dmm"
+	cost = 4
+
 //							///
 //		MARK: Space
 //							///
@@ -710,6 +738,20 @@
 	suffix = "scrapstation.dmm"
 	name = "Ramzi Scrapping Station"
 	description = "A Syndicate FOB dating back to the ICW, now home to the Ramzi Clique and their latest haul."
+
+/datum/map_template/ruin/space/onehalftwo
+	name = "Nanotrasen Refueling Station"
+	id = "onehald_two"
+	description = "An abandoned Nanotrasen refueling post evacuated after an attempted ACLF plasmaflood. Since then, hivebots and a small Ramzi Clique salvage team have attempted to claim the station."
+	suffix = "onehalftwo.dmm"
+	cost = 3
+
+/datum/map_template/ruin/space/videepstorage
+	name = "Vigilitas Deepstorage"
+	id = "vi_deepstorage"
+	description = "A Vigilitas blacksite for holding important and suspicious cargo."
+	suffix = "vi_deepstorage.dmm"
+	cost = 3
 
 //							///
 //		MARK: WastePlanet
