@@ -70,13 +70,23 @@
 	return B
 
 // [CELADON-ADD]
-/datum/blackmarket_item/weapon/spikeshield
+/datum/blackmarket_item/weapon/heavyshield
 	name = "Heavy Ballistic Shield"
-	desc = "Be the ancient warrior you always wanted to be. Block bullets and impale your enemies."
+	desc = "Protecting everything behind it safe the user from light arms fire. Can struggle against stronger firepower."
 	item = /obj/item/shield/heavy
 
-	cost_min = 2000
+	cost_min = 1750
 	cost_max = 2500
+	stock_max = 2
+	availability_prob = 25
+
+/datum/blackmarket_item/weapon/spikeshield
+	name = "Spiked Ballistic Shield"
+	desc = "Be the ancient warrior you always wanted to be. Block bullets and impale your enemies."
+	item = /obj/item/shield/riot/spike
+
+	cost_min = 1500
+	cost_max = 2000
 	stock_max = 2
 	availability_prob = 50
 // [/CELADON-ADD]
