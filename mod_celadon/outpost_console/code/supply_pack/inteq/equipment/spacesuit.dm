@@ -24,3 +24,11 @@
 	contains = list(/obj/item/clothing/suit/space/inteq,
 					/obj/item/clothing/head/helmet/space/inteq)
 	crate_name = "space suit crate"
+
+/datum/supply_pack/faction/inteq/spacesuit/bombsuit
+	name = "Inteq EOD Hardsuit"
+	desc = "Contains one EOD hardsuit, to provide safety with explosives."
+	cost = 2000
+	contains = list(/obj/item/clothing/suit/space/hardsuit/bomb/inteq)
+	crate_name = "EOD hardsuit crate"
+	crate_type = /obj/structure/closet/crate/secure/science
