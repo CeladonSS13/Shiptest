@@ -21,6 +21,9 @@ SUBSYSTEM_DEF(overmap)
 	///List of all events
 	var/list/events = list()
 
+	/// The primary star system that holds the outpost
+	var/datum/overmap_star_system/safe_system
+
 	/// The mandatory and default star system
 	var/datum/overmap_star_system/default_system
 
@@ -57,14 +60,42 @@ SUBSYSTEM_DEF(overmap)
 	outposts = list()
 	dynamic_encounters = list()
 	events = list()
-/* // [CELADON-EDIT] - Спасибо, пожалуй откажемся от 2 сектора
-	var/list/sector_types = pick(subtypesof(/datum/overmap_star_system/safezone))
-	default_system = create_new_star_system(new sector_types)
-	wild_system = create_new_star_system (new /datum/overmap_star_system/shiptest)
-*/
+
+	// [CELADON-EDIT]
+	// OLD_CODE: var/list/sector_types = pick(subtypesof(/datum/overmap_star_system/safezone))
 	var/list/sector_types = pick(subtypesof(/datum/overmap_star_system/shiptest/elysium))
-	default_system = create_new_star_system(new sector_types)
-// [/CELADON-EDIT]
+	// [/CELADON-EDIT]
+
+	if(fexists(SAFEZONE_OVERRIDE_FILEPATH))
+		var/file_text = trim_right(file2text(SAFEZONE_OVERRIDE_FILEPATH)) // trim_right because there's often a trailing newline
+		var/datum/overmap_star_system/safezone/potential_type = text2path(file_text)
+		if(!potential_type || !ispath(potential_type, /datum/overmap_star_system/safezone))
+			stack_trace("SSovermap found an safezone override file at [SAFEZONE_OVERRIDE_FILEPATH], but was unable to find the system type [potential_type]!")
+		else
+			sector_types = potential_type
+		fdel(SAFEZONE_OVERRIDE_FILEPATH) // don't want it to affect 2 rounds in a row.
+
+	safe_system = create_new_star_system(new sector_types)
+	// [CELADON-REMOVE] - Отказываемся от создания второй системы, так как она не используется и не нужна.
+	// wild_system = create_new_star_system (new /datum/overmap_star_system/shiptest)
+	// [/CELADON-REMOVE]
+
+	//if jump locations arent setup, revert to the old system
+	if(!safe_system.jump_spawnlocs)
+		return ..()
+	var/list/total_spawn_locations = list()
+	var/list/location_to_use
+	var/datum/overmap/jump_point/point_used
+
+	for(var/list/jumppoint_spawnloc as anything in safe_system.jump_spawnlocs)
+		total_spawn_locations += list(jumppoint_spawnloc)
+
+	location_to_use = pick(total_spawn_locations)
+	point_used = safe_system.create_jump_point_link(wild_system, location_to_use["dir"])
+	point_used.overmap_move(location_to_use["x"], location_to_use["y"])
+
+	safe_system.can_jump_to = FALSE
+	wild_system.can_jump_to = FALSE
 	return ..()
 
 /datum/controller/subsystem/overmap/proc/spawn_new_star_system(datum/overmap_star_system/system_to_spawn=/datum/overmap_star_system)
@@ -328,6 +359,8 @@ SUBSYSTEM_DEF(overmap)
 
 	///Map of tiles at each radius (represented by index) around the sun
 	var/list/list/radius_positions
+	///Map of tiles that can have jump points spawned there (represented by index)
+	var/list/list/jump_spawnlocs
 	///Width/height of the overmap "zlevel"
 	var/size
 	///The maximum amount of dynamic events that can spawn in this sector.
@@ -338,6 +371,8 @@ SUBSYSTEM_DEF(overmap)
 	var/encounters_refresh = FALSE
 	/// Our faction of the outpost
 	var/faction
+	/// If generator_type is set to OVERMAP_GENERATOR_JSON, we load all overmap objects from this
+	var/json
 
 	///the list of dynamic planets that can spawn in this sector
 	var/list/dynamic_probabilities
@@ -383,6 +418,10 @@ SUBSYSTEM_DEF(overmap)
 		setup_system()
 
 /datum/overmap_star_system/proc/setup_system()
+	//if this is a json, copy the invo before we do anything more
+	if(generator_type == OVERMAP_GENERATOR_JSON)
+		copy_system_info_from_json(json)
+
 	if(!starname)
 		starname = gen_star_name() //we reuse this for the name of the star if name isnt defined, like a uncharted sector or something
 	if(!name)
@@ -447,6 +486,13 @@ SUBSYSTEM_DEF(overmap)
 			center.custom_color = FALSE
 			center.spectral_type = hazard_primary_color
 			center.alter_token_appearance()
+	//meant for editing outpost maps on locals
+	#ifndef FULL_INIT
+	new /datum/overmap/mapping_helper/ez_export_button(list("x" = 1, "y" = 1), src)
+	if(size > 1)
+		new /datum/overmap/mapping_helper/ez_varedit_system(list("x" = 2, "y" = 1), src)
+	#endif
+
 
 	create_map()
 
@@ -480,6 +526,8 @@ SUBSYSTEM_DEF(overmap)
 			spawn_events_in_orbits()
 		if(OVERMAP_GENERATOR_RANDOM)
 			spawn_events()
+		if(OVERMAP_GENERATOR_JSON)
+			import_from_json(json)
 
 	spawn_ruin_levels()
 #endif
@@ -1002,6 +1050,266 @@ SUBSYSTEM_DEF(overmap)
 
 	return list("x" = edge_x, "y" = edge_y)
 
+//exports current star system to json, meant to load with
+/datum/overmap_star_system/proc/export_to_json(user)
+	if(user)
+		usr = user
+	//Step 1: Get the data
+	var/list/file_data = list()
+	file_data["system_info"] =  list()
+	file_data["objects"] =  list()
+
+	var/list/system_data = file_data["system_info"]
+	var/list/objects_data = file_data["objects"]
+
+	system_data["name"] = name
+	system_data["starname"] = starname
+	system_data["startype"] = startype
+	system_data["size"] = size
+	system_data["max_overmap_dynamic_events"] = max_overmap_dynamic_events
+	system_data["faction"] = faction
+	system_data["dynamic_probabilities"] = dynamic_probabilities
+	system_data["can_jump_to"] = can_jump_to
+
+	//overmap color stuff
+	system_data["override_object_colors"] = override_object_colors
+
+	system_data["primary_color"] = primary_color
+	system_data["secondary_color"] = secondary_color
+	system_data["hazard_primary_color"] = hazard_primary_color
+	system_data["hazard_secondary_color"] = hazard_secondary_color
+	system_data["primary_structure_color"] = primary_structure_color
+	system_data["secondary_structure_color"] = secondary_structure_color
+
+	system_data["overmap_icon_state"] = overmap_icon_state
+
+
+	for(var/datum/overmap/current_object as anything in overmap_objects)
+		var/count = (objects_data.len + 1)
+		//dont save limited lifetime events
+		if(current_object.death_time)
+			continue
+		//if X or Y = null, dont save
+		if(!current_object.x || !current_object.y)
+			continue
+		//ignore ships, unless they are non-player ships
+		if(istype(current_object, /datum/overmap/ship/controlled))
+			continue
+		//prooobably dont save this either...
+		if(istype(current_object, /datum/overmap/jump_point))
+			continue
+		//especially not this
+		if(istype(current_object, /datum/overmap/mapping_helper/ez_export_button))
+			continue
+		//and this
+		if(istype(current_object, /datum/overmap/mapping_helper/ez_varedit_system))
+			continue
+		objects_data["[current_object.type]_[count]"] = list()
+		var/list/current_data = objects_data["[current_object.type]_[count]"]
+		current_data["type"] = current_object.type
+
+		//if we arent an hazard and worth saving the name of, save the name and desc
+		if(istype(current_object, /datum/overmap/dynamic) \
+		|| istype(current_object, /datum/overmap/outpost) \
+		|| istype(current_object, /datum/overmap/static_object)\
+		|| istype(current_object, /datum/overmap/fluff)\
+		|| istype(current_object, /datum/overmap/star)\
+		)
+			if(current_object.name != current_object::name)
+				current_data["name"] = current_object.name
+			if(current_object.desc != current_object::desc)
+				current_data["desc"] = current_object.desc
+			if(current_object.interference_power != current_object::interference_power)
+				current_data["interference_power"] = current_object.interference_power
+
+		//custom handling for star
+		if(istype(current_object, /datum/overmap/star))
+			var/datum/overmap/star/current_star = current_object
+			current_data["custom_color"] = current_star.custom_color
+
+		//custom handling for the jump point helper
+		if(istype(current_object, /datum/overmap/mapping_helper/wild_sector_jumppoint_helper))
+			var/datum/overmap/mapping_helper/wild_sector_jumppoint_helper/current_helper = current_object
+			current_data["dir"] = current_helper.dir
+
+		//custom handling for customizable/fluff objects
+		if(istype(current_object, /datum/overmap/fluff))
+			var/datum/overmap/fluff/current_fluff = current_object
+			//if edited, absolutely save these vars
+			if(current_fluff.token_icon_state != current_fluff::token_icon_state)
+				current_data["token_icon_state"] = current_fluff.token_icon_state
+			if(current_fluff.overmap_color_type != current_fluff::overmap_color_type)
+				current_data["overmap_color_type"] = current_fluff.overmap_color_type
+			if(current_fluff.default_color != current_fluff::default_color)
+				current_data["default_color"] = current_fluff.default_color
+			if(current_fluff.docking_message != current_fluff::docking_message)
+				current_data["docking_message"] = current_fluff.docking_message
+			if(current_fluff.dir)
+				current_data["dir"] = current_fluff.dir
+
+		//custom handling for dynamic events
+		if(istype(current_object, /datum/overmap/dynamic))
+			var/datum/overmap/dynamic/current_dynamic = current_object
+			current_data["force_encounter"] = current_dynamic.force_encounter ? current_dynamic.force_encounter : current_dynamic.planet.type
+			current_data["preserve_level"] = current_dynamic.preserve_level
+			current_data["planet_name"] = current_dynamic.planet_name
+			current_data["selected_ruin"] = current_dynamic.selected_ruin
+
+		//custom handling for static events
+		if(istype(current_object, /datum/overmap/static_object))
+			var/datum/overmap/static_object/current_static = current_object
+			current_data["mapgen"] = current_static.mapgen
+			current_data["preserve_level"] = current_static.preserve_level
+			current_data["planet_name"] = current_static.planet_name
+			current_data["token_icon_state"] = current_static.token_icon_state
+			current_data["gravity"] = current_static.gravity
+			current_data["weather_controller_type"] = current_static.weather_controller_type
+			current_data["default_baseturf "] = current_static.default_baseturf
+			current_data["border_size"] = current_static.border_size
+			current_data["landing_sound"] = current_static.landing_sound
+
+		current_data["x"] = current_object.x
+		current_data["y"] = current_object.y
+
+	//Step 2: Write the data to a file
+	var/json_file = file("data/exported-starsystem.json")
+	if(fexists(json_file))
+		fdel(json_file)
+	WRITE_FILE(json_file, json_encode(file_data, JSON_PRETTY_PRINT))
+	message_admins("Wrote star system data to [json_file]")
+
+	//Step 3: Give the file to client for download
+	usr << ftp(json_file)
+
+	//Step 4: Remove the file from the server (hopefully we can find a way to avoid step)
+	fdel(json_file)
+	alert("Star system saved successfully.", "Action Successful!", "Ok")
+
+/datum/overmap_star_system/proc/copy_system_info_from_json(json_file)
+	if(!json_file && !islist(json_file))
+		if(!fexists(json_file))
+			log_game("The json map path \"[json_file]\" attempted to load, but no such file exists!")
+			stack_trace("The json map path \"[json_file]\" attempted to load, but no such file exists!")
+			return
+
+	if(!json_file)
+		return
+
+	var/list/file_data = json_decode(file2text(json_file))
+	var/list/system_data = file_data["system_info"]
+
+
+	// apply the sector parameters data
+	name = system_data["name"]
+	starname = system_data["starname"]
+	startype = system_data["startype"]
+	size = system_data["size"]
+	max_overmap_dynamic_events = system_data["max_overmap_dynamic_events"]
+	faction = system_data["faction"]
+	dynamic_probabilities = system_data["dynamic_probabilities"]
+	can_jump_to = system_data["can_jump_to"]
+
+	//overmap color stuff
+	override_object_colors = system_data["override_object_colors"]
+
+	primary_color = system_data["primary_color"]
+	secondary_color = system_data["secondary_color"]
+	hazard_primary_color = system_data["hazard_primary_color"]
+	hazard_secondary_color = system_data["hazard_secondary_color"]
+	primary_structure_color = system_data["primary_structure_color"]
+	secondary_structure_color = system_data["secondary_structure_color"]
+
+	overmap_icon_state = system_data["overmap_icon_state"]
+
+/datum/overmap_star_system/proc/import_from_json(json_file)
+
+	if(!json_file && !islist(json_file))
+		if(!fexists(json_file))
+			log_game("The json map path \"[json_file]\" attempted to load, but no such file exists!")
+			return
+
+	if(!json_file)
+		return
+
+	var/list/file_data = json_decode(file2text(json_file))
+	var/list/objects_data = file_data["objects"]
+
+	for(var/current_object as anything in objects_data)
+
+		var/datum/overmap/obj_typepath
+
+		var/list/current_data = objects_data["[current_object]"]
+		var/list/coords = list("x" = current_data["x"], "y" = current_data["y"])
+		if(!current_data["x"] || !current_data["y"])
+			continue
+
+		obj_typepath = current_data["type"]
+
+		var/datum/overmap/new_obj = new obj_typepath(coords, src)
+
+		//custom handling for star
+		if(istype(new_obj, /datum/overmap/star))
+			var/datum/overmap/star/current_star = new_obj
+			current_star.custom_color = current_data["custom_color"]
+
+		//custom handling for the jump point helper
+		if(istype(new_obj, /datum/overmap/mapping_helper/wild_sector_jumppoint_helper))
+			var/datum/overmap/mapping_helper/wild_sector_jumppoint_helper/current_helper = new_obj
+			current_helper.dir = current_data["dir"]
+			current_helper.token.setDir(current_data["dir"])
+
+		//custom handling for customizable/fluff objects
+		if(istype(new_obj, /datum/overmap/fluff))
+			var/datum/overmap/fluff/current_fluff = new_obj
+			if(current_data["token_icon_state"])
+				current_fluff.token_icon_state = current_data["token_icon_state"]
+			if(current_data["overmap_color_type"])
+				current_fluff.overmap_color_type = current_data["overmap_color_type"]
+			if(current_data["default_color"])
+				current_fluff.default_color = current_data["default_color"]
+			if(current_data["docking_message"])
+				current_fluff.docking_message = current_data["docking_message"]
+			if(current_data["dir"])
+				current_fluff.dir = current_data["dir"]
+				current_fluff.token.setDir(current_data["dir"])
+
+		//custom handling for dynamic events
+		if(istype(new_obj, /datum/overmap/dynamic))
+			var/datum/overmap/dynamic/current_dynamic = new_obj
+			if(current_data["force_encounter"])
+				current_dynamic.force_encounter = text2path(current_data["force_encounter"])
+			current_dynamic.preserve_level = current_data["preserve_level"]
+			current_dynamic.planet_name = current_data["planet_name"]
+			current_dynamic.selected_ruin = current_data["selected_ruin"]
+			current_dynamic.choose_level_type()
+
+		//custom handling for static events
+		if(istype(new_obj, /datum/overmap/static_object))
+			var/datum/overmap/static_object/current_static = new_obj
+			current_static.mapgen = current_data["mapgen"]
+			current_static.preserve_level = current_data["preserve_level"]
+			current_static.planet_name = current_data["planet_name"]
+			current_static.token_icon_state = current_data["token_icon_state"]
+			current_static.gravity = current_data["gravity"]
+			current_static.weather_controller_type = current_data["weather_controller_type"]
+			current_static.default_baseturf = current_data["default_baseturf "]
+			current_static.border_size = current_data["border_size"]
+			current_static.landing_sound = current_data["landing_sound"]
+
+		//load names and desc, if any
+		if(current_data["name"])
+			new_obj.name = current_data["name"]
+		if(current_data["desc"])
+			new_obj.desc = current_data["desc"]
+		if(current_data["interference_power"])
+			new_obj.interference_power = current_data["interference_power"]
+
+		new_obj.alter_token_appearance()
+
+	//https://github.com/BeeStation/NSV13/blob/5f66318e4560efa01ac839b48e9e9929f52d7275/nsv13/code/controllers/subsystem/starsystem.dm#L140
+	//https://github.com/tgstation/tgstation/blob/d7eada0ebcf4ad37dca2283b201823e47a154fb5/code/modules/mob/living/basic/pets/parrot/poly.dm#L130
+
+
 //meant to be a duplicate of default to be selectable in the spawn menu
 /datum/overmap_star_system/wilderness
 	can_be_selected_randomly = FALSE
@@ -1323,3 +1631,12 @@ SUBSYSTEM_DEF(overmap)
 	"}
 	return ..()
 #endif
+
+//not meant to be seen normally: this shows the eventing/storytelling potential of json overmaps
+//while unable to add sectors to punchards yet, this could be a good sample punchcard map, not in the main overmap but in its own enviroment
+/datum/overmap_star_system/sunset_example
+	name = "Abandoned - New Dawn"
+	can_be_selected_randomly = FALSE
+	can_jump_to = FALSE
+	json = '_maps/sectors/sunset_starsystem.json'
+	generator_type = OVERMAP_GENERATOR_JSON
