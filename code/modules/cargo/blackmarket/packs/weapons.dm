@@ -75,8 +75,8 @@
 	desc = "Protecting everything behind it safe the user from light arms fire. Can struggle against stronger firepower."
 	item = /obj/item/shield/heavy
 
-	cost_min = 1750
-	cost_max = 2500
+	cost_min = 3500
+	cost_max = 4000
 	stock_max = 2
 	availability_prob = 25
 
