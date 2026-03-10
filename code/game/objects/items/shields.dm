@@ -482,11 +482,11 @@
 	throw_range = 2
 	ap_threshold = 30
 
-	max_integrity = 600
+	max_integrity = 500
 	block_chance = 60
 	recoil_bonus = -4
 	spread_bonus = 8
-	slowdown = 1
+	slowdown = 1.5
 
 	armor = list("melee" = 70, "bullet" = 70, "laser" = 70, "energy" = 0, "bomb" = 50, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 80)
 	var/wielded = FALSE
@@ -511,7 +511,7 @@
 	if(!broken)
 		if(do_after(user, 1.5 SECONDS, user, IGNORE_USER_LOC_CHANGE | IGNORE_TARGET_LOC_CHANGE, TRUE,
 		CALLBACK(src, PROC_REF(is_wielded))))
-			block_chance = 85
+			block_chance = 80
 
 /// triggered on unwield of two handed item
 /obj/item/shield/heavy/proc/on_unwield(obj/item/source, mob/user)
