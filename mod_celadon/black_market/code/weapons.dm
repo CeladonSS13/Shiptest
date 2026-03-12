@@ -45,7 +45,7 @@
 	name = "Energy Sword"
 	desc = "The energy sword is an edged weapon with a blade of pure energy. The sword is small enough to be \
 			pocketed when inactive. Activating it produces a loud, distinctive noise."
-	item = /obj/item/holo/esword
+	item = /obj/item/melee/energy/sword/saber
 
 	cost_min = 3500
 	cost_max = 4000
