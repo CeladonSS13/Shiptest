@@ -963,7 +963,9 @@
 			"desc" = "External armor is wrenched."
 		),
 		list(
-			"key" = /obj/item/assembly/signaler/anomaly, //WS Edit - Any anomaly core for Phazons
+			//[CELADON-ADD] Phason requires a bluespace anomaly core
+			"key" = /obj/item/assembly/signaler/anomaly/bluespace, //WS Edit - Any anomaly core for Phazons
+			//[/CELADON-ADD]
 			"action" = ITEM_DELETE,
 			"back_key" = TOOL_WELDER,
 			"desc" = "Anomaly core socket is open.",
