@@ -83,46 +83,6 @@
 	msg += "<b>Total Players: [length(Lines)]</b>"
 	to_chat(src, fieldset_block(span_bold("Current Players"), span_infoplain(msg), "boxed_message"), type = MESSAGE_TYPE_OOC)
 
-/*
-	var/msg = "<b>Current Admins:</b>\n"
-	if(holder)
-		for(var/client/C in GLOB.admins)
-			var/display_rank = LOWER_TEXT(C.holder.rank)
-			if(display_rank == "!localhost!")
-				display_rank = "localhost"
-			var/css_class = replacetext(display_rank, " ", "_")
-			msg += "• <b>\t[C]</b> is a <span class='[css_class]'>[C.holder.rank]</span>"
-
-			if(C.holder.fakekey)
-				msg += " <i>(as [C.holder.fakekey])</i>"
-
-			if(isobserver(C.mob))
-				msg += " - Observing"
-			else if(isnewplayer(C.mob))
-				msg += " - Lobby"
-			else
-				msg += " - Playing"
-
-			if(C.is_afk())
-				msg += " (AFK)"
-			msg += "\n"
-	else
-		for(var/client/C in GLOB.admins)
-			if(C.is_afk())
-				continue //Don't show afk admins to adminwho
-			if(!C.holder.fakekey)
-				msg += "<b>\t[C]</b> is a [C.holder.rank]\n"
-	if(length(GLOB.mentors) > 0)
-		msg += "<b>Mentors:</b> \n"
-		for(var/client/C in sortList(GLOB.clients))
-			if(C in GLOB.admins)
-				continue
-			var/mentor = GLOB.mentor_datums[C.ckey]
-			if(mentor)
-				msg += "<b>\t[C.key]</b> is a Mentor \n"
-		msg += span_info("Adminhelps are also sent to Discord. If no admins are available in game adminhelp anyways and an admin on Discord will see it and respond.")
-	to_chat(src, msg)
-*/
 #undef DEFAULT_WHO_CELLS_PER_ROW
 
 /client/proc/staff_who(via)
@@ -148,9 +108,9 @@
 	lines += span_bold(admin_data ? span_bold(staff_info["admin"]["header"]) : staff_info["admin"]["empty_header"])
 	lines += admin_data || NO_ADMINS_ONLINE_MESSAGE
 
-	// Add disclaimer if other staff exists
-	if(!admin_data && (staff_info["developer"]["data"]))
-		lines += "<b>Non-admin staff are unable to handle adminhelp tickets.</b>"
+	//// Add disclaimer if other staff exists
+	//if(!admin_data && (staff_info["developer"]["data"]))
+	//	lines += "<b>Non-admin staff are unable to handle adminhelp tickets.</b>"
 
 	for(var/staff_type in list("developer"))
 		var/list/staff_data = staff_info[staff_type]
