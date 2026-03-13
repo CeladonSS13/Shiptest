@@ -1,5 +1,3 @@
-#define NO_ADMINS_ONLINE_MESSAGE "Adminhelps are also sent to Discord. If no admins are available in game adminhelp anyways and an admin on Discord will see it and respond."
-
 /// BYOND's string procs don't support being used on datum references (as in it doesn't look for a name for stringification)
 /// We just use this macro to ensure that we will only pass strings to this BYOND-level function without developers needing to really worry about it.
 #define LOWER_TEXT(thing) lowertext(UNLINT("[thing]"))
@@ -15,7 +13,7 @@
 	set name = "Who"
 	set category = "OOC"
 
-	var/msg = "<b>Current Players:</b>\n"
+	var/msg = ""
 
 	var/list/Lines = list()
 	var/columns_per_row = DEFAULT_WHO_CELLS_PER_ROW
@@ -27,7 +25,7 @@
 			if(!G.started_as_observer)//If you aghost to do this, KorPhaeron will deadmin you in your sleep.
 				log_admin("[key_name(usr)] checked advanced who in-round")
 			for(var/client/C in GLOB.clients)
-				var/entry = "\t[C.key]"
+				var/entry = "• [C.key]"
 				if(!C.prefs?.whois_visible)
 					entry += "\[<b>WhoIs-Invisible</b>\]"
 				if(C.holder && C.holder.fakekey)
@@ -106,7 +104,7 @@
 
 	var/admin_data = staff_info["admin"]["data"]
 	lines += span_bold(admin_data ? span_bold(staff_info["admin"]["header"]) : staff_info["admin"]["empty_header"])
-	lines += admin_data || NO_ADMINS_ONLINE_MESSAGE
+	lines += admin_data || span_info("Все запросы к администрации передаются в Discord. Если в данный момент администраторов нет в игре, сообщение автоматически уходит в Discord, где его увидят и отреагируют.")
 
 	//// Add disclaimer if other staff exists
 	//if(!admin_data && (staff_info["developer"]["data"]))
@@ -183,5 +181,3 @@
 
 		formatted += jointext(info, " ")
 	return jointext(formatted, "\n")
-
-#undef NO_ADMINS_ONLINE_MESSAGE
