@@ -985,40 +985,40 @@ em {
 
 //These must match the rank strings exactly to work
 
-.host {
+.host, .project_lead {
   color: hsl(27, 87.7%, 60%);
 }
 
-.headdev {
-  color: hsl(219, 100%, 65%);
+.head_admin {
+  color: hsl(351, 86.6%, 52%);
 }
 
-.headmin {
-  color: hsl(358, 65.9%, 62%);
-}
-
-.s_codermin {
-  color: hsl(220, 44.5%, 60%);
-}
-
-.seniormin {
-  color: hsl(351, 86.6%, 62%);
-}
-
-.codermin {
-  color: hsl(227, 96.1%, 72%);
-}
-
-.admin {
-  color: hsl(338, 94.8%, 68%);
+.trial_admin {
+  color: hsl(15, 85%, 52%);
 }
 
 .moderator {
   color: hsl(0, 78.9%, 75%);
 }
 
-.maintainer {
+.development_head {
+  color: hsl(219, 100%, 65%);
+}
+
+.coder {
+  color: hsl(220, 44.5%, 60%);
+}
+
+.tester {
   color: hsl(227, 57.4%, 80%);
+}
+
+.head_of_maps {
+  color: hsl(140, 60%, 50%);
+}
+
+.head_of_sprites {
+  color: hsl(290, 81%, 58%);
 }
 
 .mentor {
