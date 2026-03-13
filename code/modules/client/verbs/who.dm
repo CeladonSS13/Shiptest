@@ -168,9 +168,9 @@
 	var/list/staff_list
 	switch(staff_type)
 		if("admin")
-			staff_list = get_staff_list(GLOB.admins, R_ADMIN, TRUE)
-		else if("developer")
-			staff_list = get_staff_list(GLOB.admins, R_DEBUG, TRUE)
+			staff_list = get_staff_list(GLOB.admins, R_BAN, TRUE)
+		if("developer")
+			staff_list = get_staff_list(GLOB.admins, R_BAN, FALSE)
 		//("mentor")
 		//	staff_list = get_staff_list(GLOB.mentors)
 
