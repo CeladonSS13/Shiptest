@@ -32,6 +32,7 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	neck = /obj/item/clothing/neck/cloak/nanotrasen
 	head = /obj/item/clothing/head/nanotrasen/captain/peaked
+	box = /obj/item/storage/box/survival/command
 	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
 	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 	// [/CELADON-REMOVE]
@@ -112,7 +113,7 @@
 	satchel = /obj/item/storage/backpack/satchel/cap
 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
 	courierbag = /obj/item/storage/backpack/messenger/sec
-	box = /obj/item/storage/box/survival/vi
+	box = /obj/item/storage/box/survival/vi/command
 
 	chameleon_extras = /obj/item/stamp/nanotrasen/vigilitas/captain
 
