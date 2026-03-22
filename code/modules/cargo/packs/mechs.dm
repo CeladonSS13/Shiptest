@@ -330,7 +330,7 @@ weapons
 	contains = list(
 		/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/railgun
 	)
-	faction = /datum/faction/nt
+	faction = /datum/faction/warra
 	faction_discount = 20
 
 /*
@@ -365,7 +365,7 @@ ammo
 	contains = list(
 		/obj/item/mecha_ammo/railgun_ammo
 	)
-	faction = /datum/faction/nt
+	faction = /datum/faction/warra
 	faction_discount = 20
 
 [/CELADON-DELETE] */

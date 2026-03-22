@@ -219,7 +219,7 @@ const STYLES = [
   // [CELADON-ADD] - CELADON_ELYSIUMPOD
   { title: 'Elysium' },
   // [/CELADON-ADD]
-  { title: 'Nanotrasen' },
+  { title: 'Makosso-Warra' },
   { title: 'Syndicate' },
   { title: 'Deathsquad' },
   { title: 'Cultist' },
