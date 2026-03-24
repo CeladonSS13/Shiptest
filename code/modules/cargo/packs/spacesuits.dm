@@ -311,6 +311,7 @@
 	crate_name = "pointman hardsuit crate"
 	crate_type = /obj/structure/closet/crate/secure/gear
 	faction = /datum/faction/inteq
+	faction_discount = 0
 	faction_locked = TRUE
 
 /datum/supply_pack/spacesuits/ranger_hardsuit
