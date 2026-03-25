@@ -456,6 +456,13 @@
 /obj/effect/turf_decal/corner/opaque/bottlegreen/half,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
+"hp" = (
+/obj/machinery/suit_storage_unit/inherit/industrial,
+/obj/item/clothing/suit/space/pilot,
+/obj/machinery/firealarm/directional/south,
+/obj/item/clothing/head/helmet/space/pilot,
+/turf/open/floor/plasteel/tech,
+/area/ship/cargo)
 "hu" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3501,13 +3508,6 @@
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/hallway/central)
-"OY" = (
-/obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/suit/space/pilot,
-/obj/item/clothing/head/helmet/space/pilot/random,
-/obj/machinery/firealarm/directional/south,
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
 "Pd" = (
 /obj/effect/turf_decal/corner/opaque/blue/border,
 /obj/machinery/holopad/emergency/command,
@@ -3686,25 +3686,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
-"QQ" = (
-/obj/item/storage/backpack/captain,
-/obj/item/clothing/shoes/cowboy/black,
-/obj/item/clothing/under/rank/security/detective/grey,
-/obj/item/clothing/accessory/waistcoat,
-/obj/item/clothing/suit/jacket/leather/duster/command,
-/obj/item/clothing/glasses/sunglasses,
-/obj/item/gun/ballistic/revolver/detective,
-/obj/item/clothing/head/HoS/cowboy,
-/obj/item/storage/box/ammo/c38,
-/obj/item/storage/box/ammo/c38,
-/obj/structure/closet/secure_closet/wall/directional/west{
-	icon_state = "solgov_wall";
-	name = "first mate's closet";
-	req_access_txt = "57"
-	},
-/obj/item/storage/box/ammo/c38,
-/turf/open/floor/carpet/blue,
-/area/ship/bridge)
 "QT" = (
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
@@ -4062,6 +4043,25 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel,
 /area/ship/engineering)
+"UO" = (
+/obj/item/storage/backpack/captain,
+/obj/item/clothing/shoes/cowboy/black,
+/obj/item/clothing/under/rank/security/detective/grey,
+/obj/item/clothing/accessory/waistcoat,
+/obj/item/clothing/suit/jacket/leather/duster/command,
+/obj/item/clothing/glasses/sunglasses,
+/obj/item/gun/ballistic/revolver/detective,
+/obj/item/clothing/head/HoS/cowboy,
+/obj/item/storage/box/ammo/c38,
+/obj/item/storage/box/ammo/c38,
+/obj/structure/closet/secure_closet/wall/directional/west{
+	icon_state = "solgov_wall";
+	name = "first mate's closet";
+	req_access_txt = "57"
+	},
+/obj/item/storage/box/ammo/c38,
+/turf/open/floor/carpet/blue,
+/area/ship/bridge)
 "US" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -4868,7 +4868,7 @@ ax
 dH
 EC
 Vt
-QQ
+UO
 Te
 Im
 Jt
@@ -5206,7 +5206,7 @@ Rs
 NU
 pO
 Wm
-OY
+hp
 WE
 JG
 mW
