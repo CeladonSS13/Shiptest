@@ -804,18 +804,6 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/canteen)
-"gW" = (
-/obj/structure/rack,
-/obj/item/gun/energy/plasmacutter{
-	pixel_y = 15
-	},
-/obj/machinery/airalarm/directional/south,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/gear_pack/anglegrinder{
-	pixel_y = 3
-	},
-/turf/open/floor/pod,
-/area/ship/storage/equip)
 "hf" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/syndicate{
@@ -3422,6 +3410,18 @@
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/aft)
+"CU" = (
+/obj/structure/rack,
+/obj/item/gun/energy/plasmacutter{
+	pixel_y = 15
+	},
+/obj/machinery/airalarm/directional/south,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/gear_pack/anglegrinder{
+	pixel_y = 3
+	},
+/turf/open/floor/pod,
+/area/ship/storage/equip)
 "CX" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 1
@@ -4564,10 +4564,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew/cryo)
-"Oe" = (
-/obj/machinery/telecomms/relay/preset/ngr,
-/turf/template_noop,
-/area/template_noop)
 "Oh" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 1
@@ -6041,7 +6037,7 @@
 (1,1,1) = {"
 ZQ
 ZQ
-Oe
+ZQ
 ZQ
 ZQ
 ZQ
@@ -6471,7 +6467,7 @@ bM
 AZ
 AZ
 JS
-gW
+CU
 rL
 MB
 cE
