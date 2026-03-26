@@ -5,7 +5,7 @@
 //	You do not need to raise this if you are adding new values that have sane defaults.
 //	Only raise this value when changing the meaning/format/name/layout of an existing value
 //	where you would want the updater procs below to run
-#define SAVEFILE_VERSION_MAX 42
+#define SAVEFILE_VERSION_MAX 44
 
 /*
 SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Carn
@@ -113,7 +113,28 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 		var/body_size
 		READ_FILE(S["body_size"], body_size)
 		height_filter = body_size
-
+	if(current_version < 43)
+		var/gender
+		READ_FILE(S["gender"], gender)
+		if(gender == MALE)
+			pronouns = "He"
+		else if(gender == FEMALE)
+			pronouns = "She"
+		else if(gender == NEUTER)
+			pronouns = "It"
+		else
+			pronouns = "They"
+	if(current_version < 44)
+		for(var/datum/language/lang_type as anything in learned_languages)
+			switch(learned_languages[lang_type])
+				if("Unknown (0)")
+					learned_languages[lang_type] = LANGUAGE_UNKNOWN
+				if("Recognized (1)")
+					learned_languages[lang_type] = LANGUAGE_FAMILIAR
+				if("Familiar (2)")
+					learned_languages[lang_type] = LANGUAGE_CONVERSATIONAL
+				if("Fluent (3)")
+					learned_languages[lang_type] = LANGUAGE_FLUENT
 
 /// checks through keybindings for outdated unbound keys and updates them
 /datum/preferences/proc/check_keybindings()
