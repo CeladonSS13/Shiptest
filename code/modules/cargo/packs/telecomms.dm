@@ -43,7 +43,7 @@
 
 /datum/supply_pack/tcomms/broadcaster
 	name = "Broadcaster Crate"
-	desc = "An Makosso-Warra manufactured subspace broadcaster. Broadcasts recieved and processed radio signals as dense packets of information through subspace."
+	desc = "A Makosso-Warra manufactured subspace broadcaster. Broadcasts received and processed radio signals as dense packets of information through subspace."
 	cost = 1500
 	contains = list(
 		/obj/item/circuitboard/machine/telecomms/broadcaster,
@@ -54,7 +54,7 @@
 
 /datum/supply_pack/tcomms/bus
 	name = "Bus Mainframe Crate"
-	desc = "An Makosso-Warra manufactured bus mainframe. Moves signals to the requisite telecommunications machine once linked."
+	desc = "A Makosso-Warra manufactured bus mainframe. Moves signals to the requisite telecommunications machine once linked."
 	cost = 1500
 	contains = list(
 		/obj/item/circuitboard/machine/telecomms/bus,
@@ -64,7 +64,7 @@
 
 /datum/supply_pack/tcomms/processor
 	name = "Signal Processor Crate"
-	desc = "An Makosso-Warra manufactured Signal Processor. Decompresses and decodes subspace radio signals."
+	desc = "A Makosso-Warra manufactured signal processor. Decompresses and decodes subspace radio signals."
 	cost = 1500
 	contains = list(
 		/obj/item/circuitboard/machine/telecomms/processor,
@@ -78,7 +78,7 @@
 
 /datum/supply_pack/tcomms/receiver
 	name = "Receiver Crate"
-	desc = "An Makosso-Warra manufactured subspace receiver. Catches radio signals being broadcast through subspace."
+	desc = "A Makosso-Warra manufactured subspace receiver. Catches radio signals being broadcast through subspace."
 	cost = 1500
 	contains = list(
 		/obj/item/circuitboard/machine/telecomms/receiver,
@@ -91,7 +91,7 @@
 
 /datum/supply_pack/tcomms/server
 	name = "Telecommunication Server Crate"
-	desc = "An Makosso-Warra manufactured telecommunications server. Logs radio signals passed through it for future reference."
+	desc = "A Makosso-Warra manufactured telecommunications server. Logs radio signals passed through it for future reference."
 	cost = 1500
 	contains = list(
 		/obj/item/circuitboard/machine/telecomms/server,
@@ -100,7 +100,7 @@
 
 /datum/supply_pack/tcomms/pda_server
 	name = "Messaging Server Crate"
-	desc = "An Makosso-Warra manufactured PDA Server. Translates radio bursts from PDA messaging into a subspace-friendly packet."
+	desc = "A Makosso-Warra manufactured PDA Server. Translates radio bursts from PDA messaging into a subspace-friendly packet."
 	cost = 1500
 	contains = list(
 		/obj/item/circuitboard/machine/telecomms/message_server,
@@ -111,7 +111,7 @@
 
 /datum/supply_pack/tcomms/relay
 	name = "Subspace Relay Crate"
-	desc = "An Makosso-Warra manufactured Subspace Relay. Creates paths through exotic subspace geometry to broadcast signals to other known relays. "
+	desc = "A Makosso-Warra manufactured subspace relay. Creates paths through exotic subspace geometry to broadcast signals to other known relays. "
 	cost = 1500
 	contains = list(
 		/obj/item/circuitboard/machine/telecomms/relay,
@@ -126,7 +126,7 @@
 
 /datum/supply_pack/tcomms/hub
 	name = "Telecommunications Hub Crate"
-	desc = "An Makosso-Warra manufactured Telecommunications Hub. The centerpiece of any functional telecommunications set up. Routes all data fed to it. "
+	desc = "A Makosso-Warra manufactured telecommunications hub. The centerpiece of any functional telecommunications set up. Routes all data fed to it. "
 	cost = 1500
 	contains = list(
 		/obj/item/circuitboard/machine/telecomms/hub,
@@ -141,7 +141,7 @@
 
 /datum/supply_pack/tcomms/server_monitor
 	name = "Telecommunications Monitor Crate"
-	desc = "A server monitoring toolkit, based on old Solarian tools known as the \"Parcel Tracer\", \"Wired Fish\" and \"En Mappe\". Fits in any computer."
+	desc = "A server-monitoring toolkit based on old Solarian tools known as the \"Parcel Tracer\", \"Wired Fish\", and \"En Mappe\". Fits in any computer."
 	cost = 1000
 	contains = list(
 		/obj/item/circuitboard/computer/comm_monitor
@@ -149,7 +149,7 @@
 
 /datum/supply_pack/tcomms/pda_monitor
 	name = "PDA Server Monitor Crate"
-	desc = "A PDA packet inspection system. Great for verifying suspicions that your Second In Command is scheming. Or that the deckhands are kissing."
+	desc = "A PDA packet inspection system. Great for verifying suspicions that your second in command is scheming. Or that the deckhands are kissing."
 	cost = 1000
 	contains = list(
 		/obj/item/circuitboard/computer/message_monitor,
