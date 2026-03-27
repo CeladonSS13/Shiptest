@@ -407,11 +407,12 @@
 
 /obj/item/clothing/head/helmet/space/hardsuit/stealth/cybersun
 	name = "\improper Magnetar hardsuit helmet"
-	desc = "Thin, slick plates part into a visor of light reflective material. Sensors aboard function as a nightvision unit"
+	desc = "Thin, slick plates let off a light reflection. Sensors aboard function as a nightvision unit."
 	icon = 'icons/obj/clothing/faction/cybersun/head.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/faction/cybersun/head.dmi'
 	icon_state = "hardsuit0-cyberstealth"
 	hardsuit_type = "cyberstealth"
+	supports_variations = SNOUTED_VARIATION
 
 /* BELTS */
 
