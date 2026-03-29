@@ -121,6 +121,7 @@
 		/obj/item/gun/energy/disabler,
 		/obj/item/gun/energy/sharplite/x26,
 		/obj/item/gun/energy/e_gun/e_old, // [CELADON-ADD] - CELADON_RETURN_EGUN
+		/obj/item/gun/energy/sharplite/x01,
 		/obj/item/gun/energy/kalix/pistol,
 		/obj/item/stock_parts/cell/gun,
 		/obj/item/ammo_box)) // this doesnt let you put hades into holsters trust me
