@@ -325,7 +325,7 @@
 	name = "Space Ikea AI Shipment"
 	description = "A Space Ikea Brand AI Core and Necessities Crate, it seems to have missed its intended target."
 	suffix = "jungle_surface_ikea_ai.dmm"
-	cost = 2
+	cost = 3
 
 /datum/map_template/ruin/jungle/coffinpirate
 	id = "coffinpirate"

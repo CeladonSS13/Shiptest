@@ -316,7 +316,7 @@ update_label()
 	var/removed = FALSE
 	var/fingerprint
 	var/datum/action/item_action/chameleon/change/id/chameleon_action
-	// [CELADON-ADD] - Adds agent card lock by fingerprint on AltClick
+	// [/CELADON-ADD]
 
 /obj/item/card/id/syndicate/Initialize()
 	. = ..()
@@ -343,33 +343,31 @@ update_label()
 			removed = !removed
 // [/CELADON-ADD]
 
-/obj/item/card/id/syndicate/afterattack(obj/item/O, mob/user, proximity)
+//[CELADON-EDIT] - FIXES_AGENT_CARD
+/obj/item/card/id/syndicate/afterattack(obj/item/O, mob/living/carbon/user, proximity) // mob/user -> mob/living/carbon/user
 	if(!proximity)
 		return
 	if(istype(O, /obj/item/card/id))
-		// [CELADON-REMOVE] - FIXES_AGENT_CARD - Переместил вниз, ибо проверка внизу не имеет смсла вообще
-		// var/obj/item/card/id/I = O
+		// var/obj/item/card/id/I = O // Переместил вниз, ибо проверка внизу не имеет смсла вообще
 		// src.access |= I.access
-		// [/CELADON-REMOVE]
 		if(isliving(user) && user.mind)
-			if(user.mind.special_role || anyone)
-				// [CELADON-ADD] - FIXES_AGENT_CARD
+			if(!fingerprint || fingerprint == user.dna.uni_identity || anyone) //if(user.mind.special_role || anyone)
 				var/obj/item/card/id/I = O
 				src.access |= I.access
 				for(var/datum/overmap/ship/controlled/ship in I.ship_access)
 					if(!has_ship_access(ship))
 						add_ship_access(ship)
-				// [/CELADON-ADD]
 				to_chat(usr, span_notice("The card's microscanners activate as you pass it over the ID, copying its access."))
+// [/CELADON-EDIT]
 
 /obj/item/card/id/syndicate/attack_self(mob/living/carbon/user) //[CELADON-EDIT] mob/user -> mob/living/carbon/user
 	if(isliving(user) && user.mind)
 		var/first_use = registered_name ? FALSE : TRUE
-		// [CELADON-FIXES] Fixes agent card's mind check from special_role to faction + adds fingerprint check
+		// [CELADON-EDIT] Fixes agent card's mind check from special_role to faction + adds fingerprint check
 		var/list/user_faction_list = user.faction
 		if(!(user_faction_list.Find("[FACTION_PLAYER_SYNDICATE]")) && (!fingerprint || fingerprint != user.dna.uni_identity))
 		//if(!(user.mind.special_role || anyone)) //Unless anyone is allowed, only syndies can use the card, to stop metagaming.
-		// [CELADON-FIXES]
+		// [CELADON-EDIT]
 			if(first_use) //If a non-syndie is the first to forge an unassigned agent ID, then anyone can forge it.
 				anyone = TRUE
 			else
@@ -378,9 +376,7 @@ update_label()
 		if(user.incapacitated())
 			return
 		if(popup_input == "Forge/Reset" && !forged)
-			// [CELADON-ADD] - Adds agent card lock with fingerprint
-			fingerprint = user.dna.uni_identity
-			// [/CELADON-ADD]
+			fingerprint = user.dna.uni_identity // [CELADON-ADD] - Adds agent card lock with fingerprint
 			var/input_name = stripped_input(user, "What name would you like to put on this card? Leave blank to randomise.", "Agent card name", registered_name ? registered_name : (ishuman(user) ? user.real_name : user.name), MAX_NAME_LEN)
 			input_name = reject_bad_name(input_name)
 			if(!input_name)
@@ -410,9 +406,7 @@ update_label()
 
 			return
 		else if (popup_input == "Forge/Reset" && forged)
-			// [CELADON-ADD] - Adds agent card lock with fingerprint
-			fingerprint = null
-			// [/CELADON-ADD]
+			fingerprint = null // [CELADON-ADD] - Adds agent card lock with fingerprint
 			registered_name = initial(registered_name)
 			assignment = initial(assignment)
 			faction_icon = initial(faction_icon)

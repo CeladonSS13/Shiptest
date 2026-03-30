@@ -1,271 +1,7881 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"b" = (
-/obj/structure/table/wood,
-/obj/item/borg/upgrade/ai,
-/turf/open/floor/wood,
-/area/ruin/powered)
-"e" = (
-/obj/structure/table/wood,
-/obj/item/mmi/posibrain,
-/obj/item/mmi/posibrain,
-/turf/open/floor/wood,
-/area/ruin/powered)
-"f" = (
-/obj/structure/table/wood,
-/obj/item/circuitboard/computer/borgupload,
-/obj/item/circuitboard/computer/aiupload,
-/turf/open/floor/wood,
-/area/ruin/powered)
-"g" = (
-/obj/structure/table/wood,
-/obj/item/borg/upgrade/transform/clown{
-	desc = "Allows you to to turn a cyborg into a... something.";
-	name = "borg module picker (Unknown)"
+"ae" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
 	},
-/turf/open/floor/wood,
-/area/ruin/powered)
-"h" = (
-/obj/machinery/door/airlock/wood{
+/obj/effect/turf_decal/industrial/caution{
 	dir = 4
 	},
-/turf/open/floor/wood,
-/area/ruin/powered)
-"k" = (
-/turf/open/floor/wood,
-/area/ruin/powered)
-"n" = (
-/obj/effect/decal/remains/robot,
-/turf/open/floor/wood,
-/area/ruin/powered)
-"p" = (
-/obj/machinery/recharge_station,
-/turf/open/floor/wood,
-/area/ruin/powered)
-"q" = (
-/obj/item/bodypart/head/robot,
-/turf/open/floor/wood,
-/area/ruin/powered)
-"r" = (
-/obj/structure/table/wood,
-/obj/item/aiModule/core/full/damaged{
-	name = "Unknown AI Core Module"
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
 	},
-/obj/item/aiModule/core/full/hulkamania{
-	name = "Unknown AI Core Module"
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
 	},
-/obj/item/aiModule/reset/purge,
-/obj/item/aiModule/core/full/paladin_devotion{
-	name = "Unknown AI Core Module"
+/obj/item/bodypart/leg/right/robot{
+	pixel_x = 15;
+	pixel_y = -2
 	},
-/obj/item/aiModule/reset,
-/obj/item/aiModule/core/full/tyrant{
-	name = "Unknown AI Core Module"
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"af" = (
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
 	},
-/obj/item/aiModule/core/full/maintain{
-	name = "Unknown AI Core Module"
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	dir = 4;
+	id = "AI_IDEA_stHL"
 	},
-/obj/item/aiModule/core/full/reporter{
-	name = "Unknown AI Core Module"
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
 	},
-/obj/item/aiModule/core/full/corp{
-	name = "Unknown AI Core Module"
+/obj/effect/turf_decal/industrial/warning,
+/obj/machinery/door/poddoor/preopen{
+	id = "AI_IDEA_stBL"
 	},
-/obj/item/aiModule/core/full/asimov{
-	name = "Unknown AI Core Module"
-	},
-/turf/open/floor/wood,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/bridge)
+"ah" = (
+/obj/structure/flora/driftwood,
+/turf/open/water/jungle/lit,
 /area/ruin/powered)
-"u" = (
-/obj/item/stock_parts/cell/hyper,
-/turf/open/floor/wood,
+"ap" = (
+/obj/structure/flora/junglebush/large,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ruin/powered)
-"w" = (
-/obj/item/wallframe/camera,
-/turf/open/floor/wood,
-/area/ruin/powered)
-"x" = (
-/obj/item/stack/cable_coil,
-/turf/open/floor/wood,
-/area/ruin/powered)
-"y" = (
-/obj/structure/table/wood,
-/obj/item/circuitboard/machine/cyborgrecharger{
+"au" = (
+/obj/effect/turf_decal/corner_techfloor_gray{
+	dir = 6
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8;
+	layer = 2.038
+	},
+/obj/structure/table,
+/obj/item/megaphone{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/machinery/camera/xray{
+	dir = 1
+	},
+/obj/item/assembly/flash/handheld{
+	pixel_x = -11;
 	pixel_y = 2
 	},
-/turf/open/floor/wood,
-/area/ruin/powered)
-"z" = (
-/turf/closed/wall/mineral/wood/nonmetal,
-/area/ruin/powered)
-"D" = (
-/obj/item/assembly/flash/handheld,
-/turf/open/floor/wood,
-/area/ruin/powered)
-"F" = (
-/obj/item/robot_suit/prebuilt,
-/turf/open/floor/wood,
-/area/ruin/powered)
-"G" = (
-/obj/item/assembly/flash/handheld,
-/obj/item/stock_parts/cell/hyper,
-/turf/open/floor/wood,
-/area/ruin/powered)
-"H" = (
-/obj/item/wallframe/camera,
-/obj/item/wallframe/camera,
-/obj/item/wallframe/camera,
-/obj/item/wallframe/camera,
-/obj/item/wallframe/camera,
-/turf/open/floor/wood,
-/area/ruin/powered)
-"J" = (
-/obj/structure/AIcore/latejoin_inactive,
-/turf/open/floor/wood,
-/area/ruin/powered)
-"L" = (
-/obj/item/bodypart/leg/right/robot,
-/turf/open/floor/wood,
-/area/ruin/powered)
-"M" = (
-/obj/item/bodypart/chest/robot,
-/obj/item/wallframe/camera,
-/turf/open/floor/wood,
-/area/ruin/powered)
-"N" = (
-/obj/item/robot_suit,
-/obj/item/wallframe/camera,
-/obj/item/wallframe/camera,
-/turf/open/floor/wood,
-/area/ruin/powered)
-"Q" = (
-/obj/item/paper{
-	default_raw_text = "Welcome to your Space IDEA Brand Deluxe AI Kit! There are all the amenities needed to create a functional AI for your installation in this easy to use kit! Note: Warranty void if exposed to: High Humidity, High Temperatures, Grass, Mud, The Jungle, lonely Robotists. Thank you for shopping Space IDEA!"
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"aB" = (
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
-/turf/open/floor/wood,
+/obj/structure/spacevine,
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
 /area/ruin/powered)
-"R" = (
-/obj/item/bodypart/l_arm/robot,
-/turf/open/floor/wood,
+"aF" = (
+/obj/structure/flora/ausbushes/sunnybush{
+	pixel_x = 0;
+	pixel_y = 6
+	},
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ruin/powered)
-"S" = (
-/obj/item/wallframe/camera,
-/obj/item/wallframe/camera,
-/obj/item/wallframe/camera,
-/turf/open/floor/wood,
+"aI" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/effect/turf_decal/rechargefloor,
+/obj/structure/mecha_wreckage/gygax,
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	layer = 2.038
+	},
+/obj/structure/closet/wall/red/directional/north{
+	name = "mech equipment"
+	},
+/obj/item/mecha_parts/mecha_tracking/ai_control{
+	pixel_x = 10;
+	pixel_y = 3
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/middle)
+"bb" = (
+/obj/structure/closet/wall/red/directional/south{
+	name = "captain's locker"
+	},
+/obj/item/storage/backpack/satchel{
+	pixel_y = -5
+	},
+/obj/item/clothing/shoes/combat{
+	pixel_x = 7;
+	pixel_y = -6
+	},
+/obj/item/clothing/gloves/combat{
+	pixel_x = -7;
+	pixel_y = -6
+	},
+/obj/item/clothing/under/utility{
+	pixel_y = 3;
+	pixel_x = 7
+	},
+/obj/item/clothing/mask/gas/sechailer/swat{
+	pixel_x = -7;
+	pixel_y = 6
+	},
+/obj/item/clothing/neck/mantle/black{
+	pixel_y = -3;
+	pixel_x = -7
+	},
+/obj/item/clothing/head/beret/sec/officer{
+	pixel_x = 7;
+	pixel_y = 13
+	},
+/obj/item/clothing/glasses/meson{
+	pixel_x = -5;
+	pixel_y = 11
+	},
+/turf/open/floor/circuit/green/off,
+/area/ruin/jungle/aiidea/bridge)
+"bi" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/door/airlock/hatch{
+	name = "Emergency Access";
+	dir = 4;
+	id_tag = "AI_IDEA_Ac_EmSt"
+	},
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"bl" = (
+/obj/structure/cable{
+	icon_state = "1-2";
+	color = "#00aa00"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/turf_decal/industrial/warning,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/bridge)
+"bt" = (
+/obj/structure/catwalk/over,
+/obj/machinery/camera/xray{
+	dir = 8
+	},
+/obj/structure/spacevine,
+/turf/open/floor/plating,
 /area/ruin/powered)
-"U" = (
+"bF" = (
+/obj/machinery/porta_turret/ruin/ramzi/light{
+	spread = 45;
+	burst_delay = 1;
+	shot_delay = 15;
+	faction = list("Frontiersmen","turret", "hivebot");
+	desc = "A low caliber SMG with an atrociously high cycle rate, frankensteined together with a targetting assembly.";
+	reqpower = 0;
+	dir = 6
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/powered)
+"bM" = (
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "AI_IDEA_dormwindst"
+	},
+/obj/machinery/door/firedoor/window,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/engineering)
+"bO" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/bridge)
+"bT" = (
+/obj/structure/flora/ash/garden,
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/powered)
+"bW" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
+	},
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/item/flashlight/flare/burnt{
+	pixel_x = 13;
+	pixel_y = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/bridge)
+"bZ" = (
+/obj/structure/railing{
+	dir = 6;
+	layer = 3.1
+	},
+/obj/effect/turf_decal/techfloor{
+	dir = 6
+	},
+/obj/structure/salvageable/circuit_imprinter,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"cc" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/bridge)
+"cg" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/door/airlock/grunge{
+	dir = 8;
+	name = "Engineering"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"cr" = (
+/obj/machinery/ai_slipper,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/box/white,
+/obj/effect/turf_decal/siding/wideplating/dark/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating/dark/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/bridge)
+"cC" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	dir = 4;
+	id = "AI_IDEA_ntHL"
+	},
+/obj/effect/turf_decal/industrial/warning,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/machinery/door/poddoor{
+	id = "AI_IDEA_ntBL"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/bridge)
+"cE" = (
+/obj/structure/flora/junglebush/c,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"cM" = (
+/obj/structure/cable{
+	icon_state = "1-8";
+	color = "#00aa00"
+	},
+/obj/structure/cable{
+	icon_state = "1-2";
+	color = "#00aa00"
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 5
+	},
+/obj/item/stock_parts/capacitor/super{
+	pixel_x = -1;
+	pixel_y = 14
+	},
+/obj/item/flashlight/flare/burnt{
+	pixel_x = 15;
+	pixel_y = 0
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"cN" = (
+/obj/structure/railing{
+	dir = 4;
+	pixel_x = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/machinery/modular_computer/console/preset/command{
+	icon_state = "computer-right"
+	},
+/obj/machinery/light/broken/directional/north,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ruin/jungle/aiidea/bridge)
+"cW" = (
+/obj/machinery/porta_turret/ruin/ramzi/light{
+	spread = 45;
+	burst_delay = 1;
+	shot_delay = 15;
+	faction = list("Frontiersmen","turret", "hivebot");
+	desc = "A low caliber SMG with an atrociously high cycle rate, frankensteined together with a targetting assembly.";
+	reqpower = 0;
+	dir = 10
+	},
+/obj/structure/spacevine,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/powered)
+"cY" = (
+/obj/effect/spawner/bunk_bed,
+/obj/structure/curtain/cloth/grey,
+/obj/item/bedsheet/blue{
+	layer = 3.3
+	},
+/obj/item/bedsheet/blue{
+	layer = 3.3;
+	pixel_y = 12
+	},
+/obj/machinery/light/broken/directional/north,
+/obj/machinery/button/door{
+	dir = 8;
+	pixel_x = 23;
+	name = "emergency shutters";
+	id = "AI_IDEA_dormex"
+	},
+/turf/open/floor/pod,
+/area/ruin/jungle/aiidea/engineering)
+"do" = (
+/obj/effect/spawner/bunk_bed{
+	dir = 4
+	},
+/obj/structure/curtain/cloth/grey,
+/obj/item/bedsheet/brown{
+	dir = 4;
+	layer = 3.3
+	},
+/obj/item/bedsheet/brown{
+	dir = 4;
+	layer = 3.3;
+	pixel_y = 12
+	},
+/obj/machinery/light/broken/directional/south,
+/obj/machinery/button/door{
+	id = "AI_IDEA_dormwindnt";
+	name = "window control";
+	dir = 4;
+	pixel_x = -23;
+	pixel_y = -8
+	},
+/obj/machinery/button/door{
+	id = "AI_IDEA_dormshtnt";
+	name = "shutters control";
+	dir = 4;
+	pixel_x = -23;
+	pixel_y = 5
+	},
+/turf/open/floor/pod,
+/area/ruin/jungle/aiidea/engineering)
+"dx" = (
+/obj/machinery/computer/monitor{
+	icon_state = "computer-left"
+	},
+/obj/structure/cable{
+	icon_state = "0-2";
+	color = "#00aa00"
+	},
+/obj/machinery/turretid{
+	pixel_y = 25
+	},
+/obj/machinery/power/apc/auto_name/directional/west{
+	start_charge = 0
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ruin/jungle/aiidea/bridge)
+"dC" = (
+/obj/structure/girder,
+/turf/open/floor/plating{
+	broken = 1;
+	icon_state = "platingdmg1"
+	},
+/area/ruin/jungle/aiidea/engineering)
+"dM" = (
+/obj/machinery/door/window/survival_pod{
+	dir = 8
+	},
+/obj/structure/AIcore/latejoin_inactive,
+/obj/machinery/light/broken/directional/east,
+/obj/item/radio/intercom/directional/south,
+/turf/open/floor/circuit/off,
+/area/ruin/jungle/aiidea/bridge)
+"dT" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 5
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"ei" = (
+/obj/item/stack/ore/salvage/scrapmetal{
+	pixel_x = 0;
+	pixel_y = -9
+	},
+/turf/open/floor/plating{
+	broken = 1;
+	icon_state = "platingdmg1"
+	},
+/area/ruin/powered)
+"eq" = (
+/obj/structure/catwalk/over,
+/obj/machinery/light/broken/directional/west,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"es" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"eJ" = (
+/obj/structure/cable{
+	icon_state = "2-4";
+	tag = null
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/arrows{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/item/bodypart/r_arm/robot{
+	pixel_x = 4;
+	pixel_y = 9
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"eK" = (
+/obj/structure/flora/junglebush,
+/obj/structure/spacevine,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"eR" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/light/broken/directional/east,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"eX" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/camera/xray,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"fr" = (
+/obj/machinery/power/smes/shuttle/precharged,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/window/plasma/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "AI_IDEA_mdlBLeng"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/engineering)
+"fA" = (
+/obj/structure/railing{
+	layer = 3.3
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/suit_storage_unit/inherit/industrial,
+/obj/item/clothing/mask/gas/vigilitas,
+/turf/open/floor/pod,
+/area/ruin/jungle/aiidea/bridge)
+"fB" = (
+/obj/effect/turf_decal/box,
+/obj/machinery/power/tesla_coil/tesla_ground,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/spacevine,
+/turf/open/floor/engine/hull/reinforced/interior,
+/area/ruin/powered)
+"fC" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 9
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/machinery/mech_bay_recharge_port,
+/obj/machinery/light/small/broken/directional/west,
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	layer = 2.038
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/middle)
+"fF" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/warning,
+/obj/structure/cable{
+	icon_state = "0-8";
+	color = "#00aa00"
+	},
+/obj/machinery/button/door{
+	dir = 8;
+	pixel_x = 23;
+	name = "engine shutters";
+	id = "AI_IDEA_mdlBLeng"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"fO" = (
+/obj/structure/cable{
+	icon_state = "1-8";
+	color = "#00aa00"
+	},
+/obj/structure/cable{
+	icon_state = "2-8";
+	color = "#00aa00"
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 8
+	},
+/obj/structure/salvageable/computer{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"fQ" = (
+/obj/structure/flora/rock/pile/largejungle,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
+/area/ruin/powered)
+"fV" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/camera/xray{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"fZ" = (
+/obj/machinery/ai_slipper,
+/obj/effect/turf_decal/box/white,
+/mob/living/simple_animal/bot/honkbot{
+	emagged = 2;
+	faction = list("neutral","silicon","turret", "hivebot")
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"gd" = (
+/obj/structure/flora/ausbushes/sunnybush{
+	pixel_x = 12;
+	pixel_y = 2
+	},
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
+/area/ruin/powered)
+"ge" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
+	},
+/obj/effect/turf_decal/industrial/fire,
+/obj/effect/turf_decal/industrial/stand_clear/red,
+/obj/effect/turf_decal/industrial/fire{
+	dir = 1
+	},
+/obj/machinery/light/small/broken/directional/north{
+	pixel_x = 5
+	},
+/obj/machinery/button/door{
+	id = "AI_IDEA_Ac_EmNt";
+	pixel_y = 23;
+	name = "emergency access";
+	pixel_x = -8;
+	normaldoorcontrol = 1;
+	specialfunctions = 4
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"gr" = (
+/obj/structure/flora/junglebush/c,
+/obj/structure/spacevine,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"gu" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/airlock/grunge{
+	dir = 8;
+	name = "Power Storage"
+	},
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "AI_IDEA_MidShutt"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"gy" = (
+/obj/structure/grille/broken,
+/obj/machinery/door/firedoor/window,
+/obj/machinery/door/poddoor/shutters{
+	id = "AI_IDEA_dormwindnt"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/engineering)
+"gC" = (
+/obj/structure/flora/driftwood,
+/obj/structure/spacevine,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"gH" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"gN" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/box/white,
+/obj/machinery/ai_slipper,
+/obj/structure/cable{
+	icon_state = "1-8";
+	color = "#00aa00"
+	},
+/obj/item/aicard{
+	pixel_x = 0;
+	pixel_y = -4
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/bridge)
+"gS" = (
+/obj/structure/flora/ausbushes/leafybush,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"gU" = (
+/obj/structure/cable{
+	icon_state = "4-10";
+	color = "#00aa00"
+	},
+/obj/structure/cable{
+	icon_state = "4-9";
+	color = "#00aa00"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/airlock/vault/derelict{
+	id_tag = "AI_IDEA_EnLock"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/middle)
+"gZ" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"hd" = (
+/obj/effect/decal/cleanable/shreds{
+	pixel_x = 3;
+	pixel_y = 10
+	},
+/turf/open/floor/plating{
+	broken = 1;
+	icon_state = "platingdmg1"
+	},
+/area/ruin/powered)
+"hk" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ruin/jungle/aiidea/bridge)
+"ho" = (
+/obj/effect/turf_decal/box,
+/obj/machinery/power/tesla_coil/tesla_ground,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/engine/hull/reinforced/interior,
+/area/ruin/powered)
+"hy" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/machinery/door/airlock/highsecurity,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	id = "AI_IDEA_MidShutt"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/bridge)
+"hB" = (
+/obj/structure/flora/ash/garden,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
+/area/ruin/powered)
+"hE" = (
+/obj/machinery/porta_turret/ruin/ramzi/light{
+	spread = 45;
+	burst_delay = 1;
+	shot_delay = 15;
+	faction = list("Frontiersmen","turret", "hivebot");
+	desc = "A low caliber SMG with an atrociously high cycle rate, frankensteined together with a targetting assembly.";
+	reqpower = 0;
+	dir = 9
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/powered)
+"hF" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/caution{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/railing{
+	dir = 4;
+	pixel_x = 1
+	},
+/obj/item/clothing/gloves/color/yellow{
+	pixel_x = -15;
+	pixel_y = -8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"ib" = (
+/obj/structure/girder,
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/ruin/powered)
+"ic" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 1;
+	layer = 2.038
+	},
+/obj/machinery/camera/xray{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"ii" = (
+/obj/machinery/power/grounding_rod{
+	anchored = 1;
+	pixel_x = 1
+	},
+/obj/effect/turf_decal/box/red,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"ik" = (
+/obj/structure/flora/tree/jungle/small,
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/powered)
+"im" = (
+/obj/effect/decal/cleanable/shreds{
+	pixel_x = -4;
+	pixel_y = 10
+	},
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/ruin/powered)
+"is" = (
+/obj/structure/spawner/hivebot,
+/obj/machinery/light/small/broken/directional/south,
+/turf/open/floor/plasteel/telecomms_floor/airless,
+/area/ruin/jungle/aiidea/middle)
+"iw" = (
+/obj/machinery/atmospherics/components/unary/passive_vent/layer4{
+	dir = 1
+	},
+/turf/open/floor/engine/hull/interior,
+/area/ruin/powered)
+"iC" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/obj/effect/decal/remains/human{
+	pixel_x = -6;
+	pixel_y = 17
+	},
+/obj/effect/radiation,
+/obj/effect/decal/cleanable/greenglow,
+/obj/item/radio/intercom/directional/south,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ruin/jungle/aiidea/middle)
+"iJ" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 5
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/machinery/computer/mech_bay_power_console/retro,
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	layer = 2.038
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/middle)
+"iM" = (
+/obj/structure/cable{
+	icon_state = "1-2";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/bridge)
+"iW" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/broken/directional/south,
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"jd" = (
+/obj/structure/spacevine,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"jj" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/camera/xray{
+	dir = 8
+	},
+/turf/open/floor/engine/hull/interior,
+/area/ruin/powered)
+"jm" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/broken/directional/south,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"jw" = (
+/obj/structure/flora/junglebush/large,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"jx" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1
+	},
+/obj/item/restraints/handcuffs/cable/zipties/used{
+	pixel_x = 5;
+	pixel_y = 2
+	},
+/obj/machinery/firealarm/directional/south,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/bridge)
+"jy" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4";
+	tag = null
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"jB" = (
+/obj/item/stack/sheet/cotton/cloth{
+	pixel_y = 7
+	},
+/obj/item/flashlight/flare/burnt{
+	pixel_x = -16;
+	pixel_y = -5
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/engineering)
+"jC" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"jF" = (
+/obj/machinery/porta_turret/ruin/ramzi/light{
+	spread = 45;
+	burst_delay = 1;
+	shot_delay = 15;
+	faction = list("Frontiersmen","turret", "hivebot");
+	desc = "A low caliber SMG with an atrociously high cycle rate, frankensteined together with a targetting assembly.";
+	reqpower = 0;
+	dir = 1
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/jungle/aiidea/middle)
+"jI" = (
+/obj/item/paper{
+	default_raw_text = "Welcome to your Space IDEA Brand Deluxe AI Kit! There are all the amenities needed to create a functional AI for your installation in this easy to use kit! Note: Warranty void if exposed to: High Humidity, High Temperatures, Grass, Mud, The Jungle, lonely Robotists. Thank you for shopping Space IDEA!";
+	pixel_x = -8;
+	pixel_y = -4
+	},
+/obj/effect/decal/cleanable/blood/splatter/over_window{
+	icon_state = "floor1";
+	pixel_x = 35
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	icon_state = "floor4";
+	pixel_x = -7
+	},
+/obj/effect/turf_decal/arrows{
+	dir = 4
+	},
+/obj/item/ammo_box/magazine/e40{
+	pixel_x = 8;
+	pixel_y = -5;
+	start_empty = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/bridge)
+"jM" = (
+/obj/machinery/porta_turret/ruin/ramzi/light{
+	spread = 45;
+	burst_delay = 1;
+	shot_delay = 15;
+	faction = list("Frontiersmen","turret", "hivebot");
+	desc = "A low caliber SMG with an atrociously high cycle rate, frankensteined together with a targetting assembly.";
+	reqpower = 0;
+	dir = 10
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/powered)
+"jN" = (
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_y = 17;
+	pixel_x = 3
+	},
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_y = 4;
+	pixel_x = -12
+	},
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"jV" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning/corner{
+	dir = 4
+	},
+/obj/item/robot_suit{
+	pixel_x = 8;
+	pixel_y = -4
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"jY" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/closet/wall/directional/south{
+	name = "node uniforms"
+	},
+/obj/effect/turf_decal/siding/black{
+	dir = 1
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black,
+/obj/item/storage/backpack/satchel{
+	pixel_y = 6
+	},
+/obj/item/storage/backpack/satchel{
+	pixel_y = -5
+	},
+/obj/item/clothing/shoes/combat{
+	pixel_x = -4;
+	pixel_y = -6
+	},
+/obj/item/clothing/shoes/combat{
+	pixel_x = 7;
+	pixel_y = -6
+	},
+/obj/item/clothing/under/utility{
+	pixel_y = 3
+	},
+/obj/item/clothing/under/utility{
+	pixel_y = 3;
+	pixel_x = 7
+	},
+/obj/item/clothing/gloves/color/black{
+	pixel_y = -8;
+	pixel_x = -5
+	},
+/obj/item/clothing/gloves/color/black{
+	pixel_y = -8;
+	pixel_x = 4
+	},
+/obj/item/clothing/mask/balaclava/combat{
+	pixel_y = 8;
+	pixel_x = -9
+	},
+/obj/item/clothing/mask/balaclava/combat{
+	pixel_y = 8;
+	pixel_x = -2
+	},
+/obj/item/clothing/neck/mantle/black{
+	pixel_y = -3;
+	pixel_x = -7
+	},
+/obj/item/clothing/neck/mantle/black{
+	pixel_y = -3
+	},
+/obj/item/clothing/head/beret/black{
+	pixel_y = 15
+	},
+/obj/item/clothing/head/beret/black{
+	pixel_y = 15;
+	pixel_x = 7
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"kc" = (
+/obj/structure/flora/stump,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"kh" = (
+/obj/structure/frame/machine{
+	anchored = 1;
+	can_be_unanchored = 1
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/ruin/powered)
+"kj" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/caution{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/item/research_notes/loot/small{
+	pixel_x = -4;
+	pixel_y = -9
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"kk" = (
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 4;
+	piping_layer = 2
+	},
+/obj/effect/turf_decal/industrial/outline/orange,
+/obj/machinery/light/broken/directional/south,
+/turf/open/floor/plasteel/mono/dark,
+/area/ruin/jungle/aiidea/engineering)
+"kv" = (
+/obj/machinery/power/grounding_rod{
+	anchored = 1;
+	pixel_x = 1
+	},
+/obj/effect/turf_decal/box/red,
+/obj/machinery/light/broken/directional/south,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"kw" = (
+/obj/structure/cable{
+	icon_state = "0-6";
+	color = "#00aa00"
+	},
+/obj/machinery/light/small/broken/directional/north,
+/obj/machinery/power/smes/engineering,
+/obj/machinery/button/door{
+	dir = 8;
+	pixel_x = 23;
+	pixel_y = 2;
+	name = "lockdown buttom";
+	id = "AI_IDEA_EnLock";
+	specialfunctions = 4;
+	normaldoorcontrol = 1
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ruin/jungle/aiidea/middle)
+"kJ" = (
+/obj/structure/railing{
+	dir = 1;
+	layer = 2.89
+	},
+/obj/effect/turf_decal/techfloor{
+	dir = 9
+	},
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/salvageable/autolathe,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"kY" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"lo" = (
+/obj/structure/spawner/hivebot,
+/obj/item/radio/intercom/directional/north,
+/turf/open/floor/plasteel/telecomms_floor/airless,
+/area/ruin/jungle/aiidea/engineering)
+"lq" = (
+/obj/structure/flora/ausbushes/stalkybush{
+	pixel_x = -10;
+	pixel_y = -10
+	},
+/obj/structure/spacevine,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"lB" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/structure/crate_shelf,
+/obj/structure/closet/crate,
+/obj/item/stack/sheet/glass/fifty{
+	pixel_x = -2;
+	pixel_y = 0
+	},
+/obj/item/stack/sheet/metal/fifty{
+	pixel_x = 5;
+	pixel_y = 6
+	},
+/obj/machinery/button/door{
+	id = "AI_IDEA_MidShutt";
+	name = "shutters control";
+	dir = 4;
+	pixel_x = -23
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"lN" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/spacevine,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"lO" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/airlock/hatch{
+	dir = 8;
+	name = "Hatch"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/bridge)
+"lX" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/closet/wall/directional/north{
+	name = "node uniforms"
+	},
+/obj/effect/turf_decal/siding/black,
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1
+	},
+/obj/item/storage/backpack/satchel{
+	pixel_y = 6
+	},
+/obj/item/storage/backpack/satchel{
+	pixel_y = -5
+	},
+/obj/item/clothing/shoes/combat{
+	pixel_x = -4;
+	pixel_y = -6
+	},
+/obj/item/clothing/shoes/combat{
+	pixel_x = 7;
+	pixel_y = -6
+	},
+/obj/item/clothing/under/utility{
+	pixel_y = 3
+	},
+/obj/item/clothing/under/utility{
+	pixel_y = 3;
+	pixel_x = 7
+	},
+/obj/item/clothing/gloves/color/black{
+	pixel_y = -8;
+	pixel_x = -5
+	},
+/obj/item/clothing/gloves/color/black{
+	pixel_y = -8;
+	pixel_x = 4
+	},
+/obj/item/clothing/mask/balaclava/combat{
+	pixel_y = 8;
+	pixel_x = -9
+	},
+/obj/item/clothing/mask/balaclava/combat{
+	pixel_y = 8;
+	pixel_x = -2
+	},
+/obj/item/clothing/neck/mantle/black{
+	pixel_y = -3;
+	pixel_x = -7
+	},
+/obj/item/clothing/neck/mantle/black{
+	pixel_y = -3
+	},
+/obj/item/clothing/head/beret/black{
+	pixel_y = 15
+	},
+/obj/item/clothing/head/beret/black{
+	pixel_y = 15;
+	pixel_x = 7
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"mg" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner_techfloor_gray{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"mi" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	dir = 8;
+	id = "AI_IDEA_ntHL"
+	},
+/obj/effect/turf_decal/industrial/warning,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/machinery/door/poddoor{
+	id = "AI_IDEA_ntBL"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/bridge)
+"mm" = (
+/obj/effect/decal/cleanable/shreds{
+	pixel_x = -4;
+	pixel_y = -5
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/ruin/powered)
+"mq" = (
+/obj/structure/flora/rock/pile/largejungle,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"mv" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/camera/xray,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"mz" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner_techfloor_gray{
+	dir = 1;
+	layer = 2.038
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner,
+/obj/machinery/firealarm/directional/east,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"mB" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/camera/xray{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"mE" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	layer = 2.5;
+	dir = 1
+	},
+/obj/item/bodypart/leg/left/robot{
+	pixel_x = -5;
+	pixel_y = -5
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/middle)
+"mH" = (
+/obj/structure/catwalk/over,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"mS" = (
+/obj/structure/spacevine,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/jungle/aiidea/engineering)
+"mW" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"mX" = (
+/obj/structure/flora/junglebush,
+/obj/structure/spacevine,
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/powered)
+"ng" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	layer = 2.5
+	},
+/obj/item/radio/intercom/directional/south,
+/obj/item/flashlight/flare/burnt{
+	pixel_x = -1;
+	pixel_y = 10
+	},
+/mob/living/basic/hivebot/ranged,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/middle)
+"nr" = (
+/obj/structure/cable{
+	icon_state = "1-8";
+	color = "#00aa00"
+	},
+/obj/structure/cable{
+	icon_state = "2-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/bridge)
+"ns" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/broken/directional/north,
+/turf/open/floor/engine/hull/interior,
+/area/ruin/powered)
+"nB" = (
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 1;
+	name = "hazard stripes"
+	},
+/obj/effect/turf_decal/corner_techfloor_gray,
+/obj/machinery/button/door{
+	pixel_x = -23;
+	pixel_y = 4;
+	name = "cargo bay door";
+	id = "AI_IDEA_ntBL";
+	dir = 4
+	},
+/obj/machinery/button/shieldwallgen{
+	pixel_x = -22;
+	pixel_y = -5;
+	id = "AI_IDEA_ntHL";
+	name = "cargo airshield";
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"nE" = (
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_x = -1;
+	pixel_y = -1
+	},
+/obj/structure/spacevine,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"nL" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black/corner{
+	dir = 1
+	},
+/obj/item/radio/intercom/directional/south{
+	pixel_x = 2
+	},
+/obj/item/flashlight/flare{
+	pixel_x = 0;
+	pixel_y = 7
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/basic/hivebot/rapid,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/bridge)
+"nQ" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/broken/directional/north,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"nS" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 10;
+	layer = 2.04
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 4;
+	pixel_x = 1
+	},
+/obj/machinery/recharge_station,
+/obj/item/radio/intercom/directional/south,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"nW" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"nY" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 5
+	},
+/obj/effect/turf_decal/industrial/traffic,
+/obj/machinery/button/door{
+	pixel_x = -23;
+	pixel_y = -5;
+	name = "cargo bay door";
+	id = "AI_IDEA_stBL";
+	dir = 4
+	},
+/obj/machinery/button/shieldwallgen{
+	pixel_x = -22;
+	pixel_y = 5;
+	id = "AI_IDEA_stHL";
+	name = "cargo airshield";
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"oa" = (
+/obj/item/stack/ore/salvage/scrapmetal{
+	pixel_x = -5;
+	pixel_y = 1
+	},
+/obj/machinery/light/broken/directional/south,
+/obj/machinery/button/door{
+	dir = 8;
+	pixel_x = 23;
+	name = "emergency shutters";
+	id = "AI_IDEA_noway"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/engineering)
+"oh" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/camera/xray{
+	dir = 8
+	},
+/turf/open/floor/engine/hull/interior,
+/area/ruin/powered)
+"ok" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 10
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 1
+	},
+/obj/structure/frame/machine{
+	anchored = 1;
+	can_be_unanchored = 1
+	},
+/obj/machinery/light/small/broken/directional/west,
+/obj/item/circuitboard/machine/mechfab{
+	pixel_y = -4;
+	pixel_x = -3
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1;
+	layer = 2.038
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/middle)
+"os" = (
+/obj/structure/catwalk/over,
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"ox" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/item/stack/cable_coil/cut/red{
+	pixel_y = -7;
+	pixel_x = -5
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"oB" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-5";
+	color = "#00aa00"
+	},
+/obj/structure/cable{
+	icon_state = "4-6";
+	color = "#00aa00"
+	},
+/obj/structure/cable{
+	icon_state = "8-10";
+	color = "#00aa00"
+	},
+/obj/structure/cable{
+	icon_state = "8-9";
+	color = "#00aa00"
+	},
+/obj/structure/cable{
+	icon_state = "1-8";
+	color = "#00aa00"
+	},
+/mob/living/simple_animal/bot/medbot{
+	emagged = 2;
+	faction = list("neutral","silicon","turret", "hivebot")
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ruin/jungle/aiidea/middle)
+"oO" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-4";
+	color = "#00aa00"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/engineering)
+"pb" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"pd" = (
+/obj/structure/railing{
+	dir = 5;
+	layer = 2.79
+	},
+/obj/effect/turf_decal/techfloor{
+	dir = 5
+	},
+/obj/structure/table,
+/obj/item/storage/part_replacer{
+	pixel_y = 6
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"pi" = (
+/obj/structure/closet/wall/red/directional/east{
+	name = "closet"
+	},
+/obj/item/circuitboard/computer/aifixer{
+	pixel_y = -8
+	},
+/obj/item/circuitboard/computer/borgupload{
+	pixel_y = -3
+	},
+/obj/item/circuitboard/computer/aiupload{
+	pixel_y = 1
+	},
+/obj/item/borg/upgrade/transform/clown{
+	desc = "Allows you to to turn a cyborg into a... something.";
+	name = "borg module picker (Unknown)";
+	pixel_y = 7;
+	pixel_x = -1
+	},
+/turf/open/floor/circuit/green/off,
+/area/ruin/jungle/aiidea/bridge)
+"pl" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/airlock/hatch{
+	dir = 8;
+	name = "Hatch"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/bridge)
+"pm" = (
+/obj/machinery/computer/crew{
+	dir = 1;
+	icon_state = "computer-right"
+	},
+/obj/item/radio/intercom/directional/west,
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ruin/jungle/aiidea/bridge)
+"ps" = (
+/obj/machinery/porta_turret/ruin/ramzi/light{
+	spread = 45;
+	burst_delay = 1;
+	shot_delay = 15;
+	faction = list("Frontiersmen","turret", "hivebot");
+	desc = "A low caliber SMG with an atrociously high cycle rate, frankensteined together with a targetting assembly.";
+	reqpower = 0
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/jungle/aiidea/middle)
+"pt" = (
+/obj/structure/table,
+/obj/machinery/microwave{
+	pixel_y = 6
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 9
+	},
+/obj/machinery/light/broken/directional/north,
+/turf/open/floor/plasteel/mono/dark,
+/area/ruin/jungle/aiidea/bridge)
+"pB" = (
+/obj/structure/flora/stump,
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/powered)
+"pD" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 4
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/robot_debris/gib{
+	pixel_x = -14;
+	pixel_y = 8
+	},
+/obj/item/stock_parts/manipulator{
+	pixel_x = -9;
+	pixel_y = 2
+	},
+/mob/living/basic/hivebot/core,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"pQ" = (
+/obj/structure/cable,
+/obj/item/stack/cable_coil/cut/red{
+	pixel_y = -12
+	},
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"pR" = (
+/obj/structure/table,
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/obj/item/kirbyplants/photosynthetic{
+	pixel_y = 17;
+	name = "emotional support plant";
+	desc = "there's a nametag on it that reads 'Dave'";
+	pixel_x = 8
+	},
+/obj/item/toy/cards/deck/kotahi{
+	pixel_x = -7;
+	pixel_y = -3
+	},
+/obj/machinery/light/broken/directional/east,
+/turf/open/floor/pod,
+/area/ruin/jungle/aiidea/bridge)
+"pV" = (
+/turf/closed/indestructible/plastitanium/nodiagnonal,
+/area/ruin/jungle/aiidea/bridge)
+"pX" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/camera/xray,
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"qd" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"ql" = (
+/obj/structure/salvageable/server,
+/obj/effect/turf_decal/industrial/outline/red,
+/turf/open/floor/plasteel/mono/dark,
+/area/ruin/jungle/aiidea/engineering)
+"qm" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 6
+	},
+/obj/item/bodypart/chest/robot{
+	pixel_x = -5;
+	pixel_y = -4
+	},
+/obj/effect/decal/cleanable/oil{
+	pixel_x = 3;
+	pixel_y = 18
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"qn" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/item/shard/plastitanium{
+	pixel_y = 4;
+	pixel_x = -11
+	},
+/obj/effect/decal/cleanable/glass/plastitanium{
+	pixel_y = 3;
+	pixel_x = 2
+	},
+/obj/item/stack/rods{
+	pixel_x = 16;
+	pixel_y = -2
+	},
+/obj/machinery/light/small/broken/directional/south,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/middle)
+"qu" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/airlock/grunge{
+	name = "Hatch"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/warning,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"qz" = (
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_y = -14;
+	pixel_x = -5
+	},
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"qD" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/powered)
+"qP" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 6
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/obj/structure/closet/crate/engineering{
+	anchored = 1
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1;
+	layer = 2.038
+	},
+/obj/item/storage/toolbox/mechanical{
+	pixel_y = 5;
+	pixel_x = -2
+	},
+/obj/item/storage/toolbox/electrical{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/weldingtool/electric{
+	pixel_y = -2;
+	pixel_x = -9;
+	cell_override = /obj/item/stock_parts/cell
+	},
+/obj/item/stack/tape/industrial/electrical{
+	pixel_x = 9;
+	pixel_y = 5
+	},
+/obj/item/stack/tape/industrial/pro{
+	pixel_x = 0;
+	pixel_y = -3
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/middle)
+"qS" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "2-4";
+	color = "#00aa00"
+	},
+/obj/structure/cable{
+	icon_state = "1-4";
+	color = "#00aa00"
+	},
+/obj/item/assembly/flash/handheld{
+	pixel_x = 8;
+	pixel_y = -5
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"ra" = (
+/obj/structure/flora/ausbushes/stalkybush{
+	pixel_x = 5;
+	pixel_y = 11
+	},
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"rc" = (
+/obj/structure/closet/wall/red/directional/east{
+	name = "closet"
+	},
+/obj/item/borg/upgrade/ai{
+	pixel_y = -7;
+	pixel_x = 3
+	},
+/obj/item/borg/upgrade/ai{
+	pixel_y = -1;
+	pixel_x = 3
+	},
+/obj/item/mmi/posibrain{
+	pixel_y = -7;
+	pixel_x = -7
+	},
+/obj/item/mmi/posibrain{
+	pixel_y = 1;
+	pixel_x = -7
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/circuit/green/off,
+/area/ruin/jungle/aiidea/bridge)
+"rk" = (
+/obj/structure/flora/tree/jungle/small,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
+/area/ruin/powered)
+"ro" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/spacevine,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"rv" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4";
+	tag = null
+	},
+/obj/machinery/camera/xray,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"rC" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/light/broken/directional/east,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/stairs/stairs_pack/dark,
+/area/ruin/jungle/aiidea/engineering)
+"rF" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/effect/decal/remains/robot{
+	pixel_x = 2;
+	pixel_y = -6
+	},
+/obj/machinery/light/broken/directional/north,
+/turf/open/floor/engine/hull/interior,
+/area/ruin/powered)
+"rZ" = (
+/obj/structure/railing{
+	layer = 3.1
+	},
+/obj/effect/turf_decal/techfloor{
+	dir = 10
+	},
+/obj/structure/salvageable/protolathe,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"si" = (
+/obj/item/stack/ore/salvage/scrapgold{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"sm" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/warning/corner,
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/effect/decal/cleanable/robot_debris/down{
+	pixel_x = 10;
+	pixel_y = 14
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"ss" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/effect/turf_decal/corner_techfloor_gray{
+	dir = 6
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8;
+	layer = 2.038
+	},
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 8;
+	pixel_x = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"sD" = (
+/obj/structure/cable{
+	icon_state = "0-9";
+	color = "#00aa00"
+	},
+/obj/machinery/power/rtg,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/circuit/red/off,
+/area/ruin/jungle/aiidea/middle)
+"sF" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable{
+	color = "#00aa00"
+	},
+/obj/machinery/button/door{
+	id = "AI_IDEA_stBLeng";
+	pixel_y = -23;
+	name = "engine armor";
+	dir = 1;
+	pixel_x = -8
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/engineering)
+"sI" = (
+/obj/structure/salvageable/computer{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 8
+	},
+/obj/machinery/camera/xray{
+	dir = 8
+	},
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plasteel/telecomms_floor/airless,
+/area/ruin/jungle/aiidea/engineering)
+"sR" = (
+/obj/structure/flora/junglebush/b,
+/obj/structure/spacevine,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"sW" = (
+/obj/effect/turf_decal/box,
+/obj/machinery/power/tesla_coil/tesla_ground,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/engine/hull/reinforced/interior,
+/area/ruin/powered)
+"sX" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"sY" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/remains/robot,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"ta" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 4
+	},
+/obj/machinery/camera/xray,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/bridge)
+"to" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/airlock/grunge{
+	name = "Hatch"
+	},
+/obj/effect/turf_decal/industrial/warning,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"tp" = (
+/obj/machinery/door/window/survival_pod,
+/obj/structure/rack,
+/obj/item/aiModule/reset/purge{
+	pixel_x = 5
+	},
+/obj/item/aiModule/core/freeformcore{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/obj/item/aiModule/core/full/antimov{
+	name = "'Aimov' Core AI Module";
+	pixel_x = 3;
+	pixel_y = 8
+	},
+/obj/machinery/camera/xray,
+/obj/item/aiModule/toyAI{
+	pixel_x = -7;
+	pixel_y = 4
+	},
+/turf/open/floor/circuit/green/off,
+/area/ruin/jungle/aiidea/bridge)
+"tq" = (
+/obj/machinery/ai_slipper,
+/obj/effect/turf_decal/box/white,
+/obj/effect/decal/cleanable/blood/splatter{
+	icon_state = "gib4";
+	dir = 4;
+	pixel_y = -8;
+	pixel_x = -11
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	icon_state = "floor6";
+	pixel_y = 18;
+	pixel_x = -17
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 4
+	},
+/obj/item/chair/greyscale{
+	pixel_y = 1;
+	pixel_x = -15
+	},
+/obj/item/melee/baton/loaded{
+	pixel_x = -19;
+	pixel_y = -3
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/bridge)
+"tr" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"tt" = (
+/obj/structure/flora/ausbushes/stalkybush,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"tz" = (
+/obj/machinery/light/broken/directional/south,
+/turf/open/floor/engine/hull/interior,
+/area/ruin/powered)
+"tD" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"tJ" = (
+/obj/structure/flora/junglebush/large,
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/powered)
+"tM" = (
+/obj/structure/flora/driftlog,
+/obj/structure/spacevine,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"tZ" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/light/broken/directional/east,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"uk" = (
+/obj/structure/cable{
+	icon_state = "0-5";
+	color = "#00aa00"
+	},
+/obj/machinery/light/small/broken/directional/south,
+/obj/machinery/power/smes/engineering,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ruin/jungle/aiidea/middle)
+"up" = (
+/obj/machinery/power/smes/shuttle/precharged,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "AI_IDEA_ntBLeng"
+	},
+/obj/structure/window/plasma/reinforced{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/engineering)
+"us" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/structure/closet/secure_closet/armorycage{
+	anchored = 1;
+	req_access = null
+	},
+/obj/item/clothing/gloves/tackler/combat/insulated{
+	pixel_x = 3;
+	pixel_y = -9
+	},
+/obj/item/clothing/suit/armor/riot/solfed{
+	desc = "A charcoal-painted suit of bulky, heavy armor designed for close-quarters fighting and riot control. Helps the wearer resist shoving in close quarters.";
+	pixel_x = 8;
+	pixel_y = -4
+	},
+/obj/item/clothing/head/helmet/riot{
+	pixel_x = 8;
+	pixel_y = 7
+	},
+/obj/item/shield/riot/flash{
+	pixel_x = -6;
+	pixel_y = -5
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/ruin/jungle/aiidea/bridge)
+"uu" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner,
+/obj/machinery/light/broken/directional/south,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/bridge)
+"uC" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/effect/decal/remains/human{
+	pixel_x = -8;
+	pixel_y = -10
+	},
+/obj/effect/radiation,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable{
+	icon_state = "0-2";
+	color = "#00aa00"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ruin/jungle/aiidea/middle)
+"vb" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"vg" = (
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_y = 0;
+	pixel_x = 16
+	},
+/obj/structure/spacevine,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"vj" = (
+/obj/structure/spawner/hivebot,
+/obj/item/radio/intercom/directional/south,
+/turf/open/floor/plasteel/telecomms_floor/airless,
+/area/ruin/jungle/aiidea/engineering)
+"vm" = (
+/obj/machinery/power/grounding_rod{
+	anchored = 1;
+	pixel_x = 1
+	},
+/obj/effect/turf_decal/box/red,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/powered)
+"vB" = (
+/obj/structure/spawner/hivebot,
+/turf/open/floor/plasteel/telecomms_floor/airless,
+/area/ruin/jungle/aiidea/bridge)
+"vQ" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/door/poddoor/shutters{
+	dir = 8;
+	id = "AI_IDEA_dormshtst"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"wk" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	welded = 1
+	},
+/obj/structure/table,
+/obj/structure/closet/wall/red/directional/north{
+	name = "weapons locker"
+	},
+/obj/machinery/recharger{
+	pixel_y = 6;
+	pixel_x = -6
+	},
+/obj/item/screwdriver{
+	pixel_y = 1
+	},
+/obj/item/storage/box/ammo/c299{
+	pixel_x = 5;
+	pixel_y = 7
+	},
+/obj/item/ammo_box/magazine/e40{
+	pixel_x = -8;
+	pixel_y = 6
+	},
+/obj/item/stock_parts/cell/gun/empty{
+	pixel_x = 8;
+	pixel_y = 0
+	},
+/obj/item/stock_parts/cell/gun/empty{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/ruin/jungle/aiidea/bridge)
+"wn" = (
+/obj/structure/flora/junglebush,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"wo" = (
+/obj/machinery/computer/operating{
+	dir = 4
+	},
+/obj/machinery/light/broken/directional/west,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/bridge)
+"wq" = (
+/obj/effect/turf_decal/industrial/outline/red,
+/obj/structure/salvageable/machine,
+/turf/open/floor/plasteel/mono/dark,
+/area/ruin/jungle/aiidea/engineering)
+"wz" = (
+/obj/structure/cable{
+	icon_state = "1-2";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/bridge)
+"wJ" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4";
+	tag = null
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/structure/spacevine,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"wM" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 1;
+	layer = 2.5
+	},
+/obj/machinery/firealarm/directional/north,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/middle)
+"wN" = (
+/obj/structure/flora/ausbushes/stalkybush{
+	pixel_x = 2;
+	pixel_y = -5
+	},
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"wZ" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/mob/living/basic/hivebot/strong,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/bridge)
+"xe" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/spacevine,
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"xg" = (
+/obj/machinery/ai_slipper,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/effect/turf_decal/box/white,
+/obj/effect/turf_decal/spline/fancy/opaque/black/corner{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"xp" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/structure/fans/tiny,
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 4;
+	id = "AI_IDEA_dormshtnt"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"xy" = (
+/obj/structure/flora/junglebush,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
+/area/ruin/powered)
+"xF" = (
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_x = -13;
+	pixel_y = -2
+	},
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"xG" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/spacevine,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"xM" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"xN" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/camera/xray{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"xY" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
+	},
+/obj/structure/table,
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 10;
+	layer = 2.030
+	},
+/obj/item/food/burger/roburger{
+	pixel_y = 16;
+	pixel_x = 7
+	},
+/obj/item/food/burger/roburger{
+	pixel_y = 8;
+	pixel_x = -2
+	},
+/obj/item/reagent_containers/glass/rag{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/bodypart/head/robot{
+	pixel_x = 8;
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/ruin/jungle/aiidea/bridge)
+"yc" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/jungle/aiidea/bridge)
+"yr" = (
+/obj/structure/girder,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"yz" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/camera/xray{
+	dir = 4
+	},
+/obj/structure/spacevine,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"yE" = (
+/obj/structure/catwalk/over,
+/obj/structure/spacevine,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"yF" = (
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_x = -10;
+	pixel_y = -7
+	},
+/obj/structure/spacevine,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"yK" = (
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/techfloor{
+	dir = 5
+	},
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/reagent_dispensers/fueltank,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable{
+	icon_state = "0-4";
+	color = "#00aa00"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"yO" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 9;
+	layer = 2.04
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 4;
+	pixel_x = 1
+	},
+/obj/machinery/recharge_station,
+/obj/item/radio/intercom/directional/north,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"yW" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/airlock/hatch{
+	dir = 8;
+	name = "Hatch"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/bridge)
+"ze" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner_techfloor_gray{
+	dir = 8
+	},
+/obj/item/flashlight/flare/burnt{
+	pixel_x = 21;
+	pixel_y = 1
+	},
+/obj/effect/decal/cleanable/ash,
+/obj/effect/decal/cleanable/robot_debris/gib{
+	pixel_x = 3;
+	pixel_y = -7
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/stock_parts/manipulator{
+	pixel_x = 9;
+	pixel_y = -5
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"zs" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/traffic,
+/obj/effect/turf_decal/corner_techfloor_gray{
+	layer = 2.037
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"zy" = (
+/obj/machinery/porta_turret/ruin/ramzi/light{
+	spread = 45;
+	burst_delay = 1;
+	shot_delay = 15;
+	faction = list("Frontiersmen","turret", "hivebot");
+	desc = "A low caliber SMG with an atrociously high cycle rate, frankensteined together with a targetting assembly.";
+	reqpower = 0;
+	dir = 4
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/powered)
+"zz" = (
+/obj/structure/flora/ausbushes/sunnybush{
+	pixel_x = 0;
+	pixel_y = 6
+	},
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/powered)
+"zJ" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-4";
+	tag = null
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"zL" = (
+/obj/item/stack/cable_coil/cut/red{
+	pixel_x = 7;
+	pixel_y = 12
+	},
+/obj/structure/spacevine/dense,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"zN" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"zZ" = (
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 1;
+	name = "hazard stripes"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"Ae" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/camera/xray{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"Al" = (
+/turf/open/floor/plating{
+	broken = 1;
+	icon_state = "platingdmg1"
+	},
+/area/ruin/powered)
+"Au" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/light/small/broken/directional/north,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/middle)
+"AA" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/turf_decal/industrial/warning,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/bridge)
+"AE" = (
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_y = 2;
+	pixel_x = 12
+	},
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"AL" = (
+/obj/structure/frame/machine{
+	anchored = 1;
+	can_be_unanchored = 1
+	},
+/obj/item/stack/ore/salvage/scraptitanium/five{
+	pixel_x = 9;
+	pixel_y = -20
+	},
+/obj/machinery/firealarm/directional/north,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/engineering)
+"AT" = (
+/obj/structure/railing{
+	dir = 4;
+	pixel_x = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/obj/machinery/computer/helm{
+	dir = 1;
+	icon_state = "computer-left"
+	},
+/obj/machinery/light/broken/directional/south,
+/obj/effect/decal/cleanable/blood/splatter{
+	icon_state = "gib5";
+	dir = 4;
+	pixel_y = 20
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ruin/jungle/aiidea/bridge)
+"AZ" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"Bb" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 4;
+	layer = 2.5
+	},
+/obj/item/radio/intercom/directional/north,
+/obj/item/assembly/flash/handheld{
+	pixel_x = -7;
+	pixel_y = 4
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/middle)
+"Bc" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/decal/cleanable/blood/splatter{
+	icon_state = "floor4"
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 8
+	},
+/obj/item/mmi{
+	pixel_x = -4;
+	pixel_y = -5
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/bridge)
+"Bj" = (
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"Bt" = (
+/obj/structure/flora/junglebush,
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/powered)
+"BH" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/hatch{
+	name = "Emergency Access";
+	dir = 4;
+	id_tag = "AI_IDEA_Ac_EmNt"
+	},
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"BK" = (
+/obj/structure/poddoor_assembly/shutters{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only/closed{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only/closed{
+	dir = 8
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/ruin/jungle/aiidea/engineering)
+"BP" = (
+/obj/structure/railing{
+	layer = 3.3
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/suit_storage_unit/inherit/industrial,
+/obj/item/tank/jetpack/carbondioxide,
+/turf/open/floor/pod,
+/area/ruin/jungle/aiidea/bridge)
+"Cc" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/middle)
+"Ch" = (
+/obj/structure/spacevine,
+/turf/open/floor/engine/hull/interior,
+/area/ruin/powered)
+"Cr" = (
+/obj/structure/flora/junglebush/b,
+/obj/structure/spacevine,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
+/area/ruin/powered)
+"CA" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "2-4";
+	tag = null
+	},
+/obj/structure/spacevine,
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"CE" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/turf/open/floor/plasteel/stairs/stairs_pack/dark{
+	dir = 4
+	},
+/area/ruin/powered)
+"CH" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"CL" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black,
+/obj/effect/turf_decal/corner_techfloor_gray{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/obj/item/flashlight/flare/burnt{
+	pixel_x = 8;
+	pixel_y = 14
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"CN" = (
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	dir = 8;
+	id = "AI_IDEA_stHL"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/warning,
+/obj/machinery/door/poddoor/preopen{
+	id = "AI_IDEA_stBL"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/bridge)
+"CW" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"Dk" = (
+/obj/structure/railing/corner,
+/obj/effect/turf_decal/techfloor{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/reagent_dispensers/watertank,
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"Dq" = (
+/turf/open/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/ruin/powered)
+"Dr" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/airlock/vault/derelict{
+	id_tag = "AI_IDEA_EnLock"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/middle)
+"Dx" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/spacevine,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"DC" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/item/wirecutters{
+	pixel_x = 8;
+	pixel_y = 0
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/bridge)
+"DX" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/spacevine,
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"DZ" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"Ed" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"Ee" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/bridge)
+"Eh" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/spacevine,
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"Ei" = (
+/obj/structure/flora/rock/jungle,
+/obj/structure/spacevine,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"EB" = (
+/obj/item/stack/ore/salvage/scrapmetal{
+	pixel_x = 1;
+	pixel_y = 4
+	},
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/ruin/jungle/aiidea/engineering)
+"EC" = (
+/obj/machinery/porta_turret/ruin/ramzi/light{
+	spread = 45;
+	burst_delay = 1;
+	shot_delay = 15;
+	faction = list("Frontiersmen","turret", "hivebot");
+	desc = "A low caliber SMG with an atrociously high cycle rate, frankensteined together with a targetting assembly.";
+	reqpower = 0;
+	dir = 5
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/powered)
+"EF" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"ER" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	icon_state = "gib5";
+	dir = 4;
+	pixel_y = -4;
+	pixel_x = -3
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 8
+	},
+/obj/structure/closet/wall/white/directional/north{
+	name = "First Aid"
+	},
+/obj/item/storage/firstaid/regular{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/storage/firstaid/regular{
+	pixel_x = 5;
+	pixel_y = -6
+	},
+/obj/item/pinpointer/crew{
+	pixel_x = -7;
+	pixel_y = -6
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/bridge)
+"EU" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/camera/xray{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/robot_debris/gib{
+	pixel_x = -3;
+	pixel_y = 7
+	},
+/obj/item/stock_parts/micro_laser{
+	pixel_x = 7;
+	pixel_y = 3
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/middle)
+"EX" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
+	},
+/obj/item/chair/greyscale{
+	pixel_x = -8;
+	pixel_y = 3
+	},
+/obj/item/melee/knife/combat{
+	pixel_x = 4;
+	pixel_y = -3
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/bridge)
+"EZ" = (
+/obj/structure/railing{
+	layer = 3.3
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/suit_storage_unit/inherit/industrial,
+/obj/item/clothing/suit/space/hardsuit/security,
+/turf/open/floor/pod,
+/area/ruin/jungle/aiidea/bridge)
+"Fd" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/effect/turf_decal/siding/black{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/splatter/over_window{
+	icon_state = "gibdown1";
+	pixel_x = 0;
+	pixel_y = 34
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	icon_state = "gib5";
+	dir = 4;
+	pixel_y = 0;
+	pixel_x = 10
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	icon_state = "gib4";
+	dir = 4;
+	pixel_y = -14;
+	pixel_x = 3
+	},
+/obj/effect/mob_spawn/human/skeleton,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"Fe" = (
+/obj/structure/flora/rock,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"Fl" = (
+/obj/structure/flora/rock/pile,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"Ft" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"FA" = (
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_y = 18;
+	pixel_x = -9
+	},
+/obj/structure/spacevine,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"FC" = (
+/obj/machinery/porta_turret/ruin/ramzi/light{
+	spread = 45;
+	burst_delay = 1;
+	shot_delay = 15;
+	faction = list("Frontiersmen","turret", "hivebot");
+	desc = "A low caliber SMG with an atrociously high cycle rate, frankensteined together with a targetting assembly.";
+	reqpower = 0;
+	dir = 10
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/jungle/aiidea/engineering)
+"FH" = (
+/obj/structure/cable{
+	icon_state = "0-10";
+	color = "#00aa00"
+	},
+/obj/machinery/power/rtg,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/circuit/red/off,
+/area/ruin/jungle/aiidea/middle)
+"FJ" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/black{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"FX" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
+	},
+/obj/item/stack/ore/salvage/scrapgold{
+	pixel_x = -14;
+	pixel_y = 7
+	},
+/obj/item/research_notes/loot/small{
+	pixel_x = 1;
+	pixel_y = -4
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/engineering)
+"Gb" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/light/broken/directional/west,
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"Gd" = (
+/obj/structure/railing{
+	layer = 3.3
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/suit_storage_unit/inherit/industrial,
+/obj/item/clothing/suit/space/hardsuit/security,
+/obj/item/clothing/mask/gas/vigilitas,
+/turf/open/floor/pod,
+/area/ruin/jungle/aiidea/bridge)
+"Gm" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/effect/turf_decal/techfloor/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/caution{
+	dir = 4;
+	pixel_x = 12
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"Gn" = (
+/obj/effect/turf_decal/box,
+/obj/machinery/power/tesla_coil/tesla_ground,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/engine/hull/reinforced/interior,
+/area/ruin/powered)
+"Gw" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/stairs/stairs_pack/dark{
+	dir = 4
+	},
+/area/ruin/powered)
+"Gx" = (
+/obj/machinery/power/terminal,
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/middle)
+"GA" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "2-4";
+	tag = null
+	},
+/obj/structure/spacevine,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"GB" = (
+/obj/machinery/power/ship_gravity,
+/obj/effect/turf_decal/industrial/outline/orange,
+/obj/structure/cable{
+	icon_state = "0-4";
+	color = "#00aa00"
+	},
+/obj/machinery/light/broken/directional/north,
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/plasteel/mono/dark,
+/area/ruin/jungle/aiidea/engineering)
+"Hh" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/effect/turf_decal/techfloor/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/caution{
+	dir = 4;
+	pixel_x = 12
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"Hl" = (
+/obj/structure/spacevine,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"Hq" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/broken/directional/north,
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"Hr" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/airlock/grunge{
+	dir = 8;
+	name = "Engineering"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"Hs" = (
+/obj/machinery/light/broken/directional/west,
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"Hu" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"HD" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "2-4";
+	tag = null
+	},
+/obj/machinery/camera/xray{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"HF" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/camera/xray,
+/obj/structure/spacevine,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"HR" = (
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/powered)
+"HT" = (
+/obj/structure/cable{
+	icon_state = "2-8";
+	color = "#00aa00"
+	},
+/obj/structure/cable{
+	icon_state = "1-2";
+	color = "#00aa00"
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "2-4";
+	color = "#00aa00"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"HZ" = (
+/obj/machinery/porta_turret/ruin/ramzi/light{
+	spread = 45;
+	burst_delay = 1;
+	shot_delay = 15;
+	faction = list("Frontiersmen","turret", "hivebot");
+	desc = "A low caliber SMG with an atrociously high cycle rate, frankensteined together with a targetting assembly.";
+	reqpower = 0;
+	dir = 9
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/jungle/aiidea/engineering)
+"Id" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/engine/hull/interior,
+/area/ruin/powered)
+"Iv" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/item/stack/ore/salvage/scrapgold{
+	pixel_x = 6;
+	pixel_y = -6
+	},
+/obj/structure/spacevine,
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"Iy" = (
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/broken/directional/east,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/bridge)
+"IB" = (
+/obj/structure/flora/driftlog,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"IC" = (
+/obj/structure/spacevine,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
+/area/ruin/powered)
+"IH" = (
+/obj/structure/spacevine/dense,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"IR" = (
 /turf/template_noop,
 /area/template_noop)
-"V" = (
-/obj/item/aiModule/core/freeformcore,
-/obj/item/stack/cable_coil,
-/turf/open/floor/wood,
+"IW" = (
+/obj/machinery/atmospherics/components/unary/passive_vent/layer4{
+	dir = 8
+	},
+/turf/open/floor/engine/hull/interior,
 /area/ruin/powered)
-"Y" = (
-/obj/item/bodypart/r_arm/robot,
-/turf/open/floor/wood,
+"Ji" = (
+/obj/structure/cable,
+/obj/item/stack/cable_coil/cut/red{
+	pixel_y = -12
+	},
+/obj/structure/spacevine,
+/turf/open/water/jungle/lit,
 /area/ruin/powered)
-"Z" = (
-/obj/item/bodypart/leg/left/robot,
-/turf/open/floor/wood,
+"Ju" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
+/obj/effect/turf_decal/siding/black/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/obj/item/assembly/flash/handheld{
+	pixel_x = 3;
+	pixel_y = -8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"JD" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/airalarm/directional/north,
+/obj/item/flashlight/flare/burnt{
+	pixel_x = -5;
+	pixel_y = 3
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/middle)
+"JG" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/ai_slipper,
+/obj/effect/turf_decal/box/white,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/middle)
+"JM" = (
+/obj/machinery/power/grounding_rod{
+	anchored = 1;
+	pixel_x = 1
+	},
+/obj/effect/turf_decal/box/red,
+/obj/machinery/light/broken/directional/north,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"JP" = (
+/obj/structure/cable{
+	icon_state = "0-6";
+	color = "#00aa00"
+	},
+/obj/machinery/power/rtg,
+/obj/machinery/light/broken/directional/west,
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/circuit/red/off,
+/area/ruin/jungle/aiidea/middle)
+"JU" = (
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
 /area/ruin/powered)
+"Ki" = (
+/obj/machinery/ai_slipper,
+/obj/effect/turf_decal/box/white,
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 10
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"Kr" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"Ks" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/spacevine,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"Kt" = (
+/obj/structure/flora/junglebush/c,
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/powered)
+"Ku" = (
+/obj/structure/closet/wall/directional/south{
+	name = "node uniforms"
+	},
+/obj/effect/turf_decal/siding/black{
+	dir = 1
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black,
+/obj/item/storage/backpack/satchel{
+	pixel_y = 6
+	},
+/obj/item/storage/backpack/satchel{
+	pixel_y = -5
+	},
+/obj/item/clothing/shoes/combat{
+	pixel_x = -4;
+	pixel_y = -6
+	},
+/obj/item/clothing/shoes/combat{
+	pixel_x = 7;
+	pixel_y = -6
+	},
+/obj/item/clothing/under/utility{
+	pixel_y = 3
+	},
+/obj/item/clothing/under/utility{
+	pixel_y = 3;
+	pixel_x = 7
+	},
+/obj/item/clothing/gloves/color/black{
+	pixel_y = -8;
+	pixel_x = -5
+	},
+/obj/item/clothing/gloves/color/black{
+	pixel_y = -8;
+	pixel_x = 4
+	},
+/obj/item/clothing/mask/balaclava/combat{
+	pixel_y = 8;
+	pixel_x = -9
+	},
+/obj/item/clothing/mask/balaclava/combat{
+	pixel_y = 8;
+	pixel_x = -2
+	},
+/obj/item/clothing/neck/mantle/black{
+	pixel_y = -3;
+	pixel_x = -7
+	},
+/obj/item/clothing/neck/mantle/black{
+	pixel_y = -3
+	},
+/obj/item/clothing/head/beret/black{
+	pixel_y = 15
+	},
+/obj/item/clothing/head/beret/black{
+	pixel_y = 15;
+	pixel_x = 7
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/basic/hivebot/ranged,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"Kv" = (
+/obj/structure/flora/rock/pile,
+/obj/structure/spacevine,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"KB" = (
+/obj/structure/frame/machine{
+	anchored = 1;
+	can_be_unanchored = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/window/plasma/reinforced{
+	dir = 4
+	},
+/obj/item/stack/ore/salvage/scrapgold{
+	pixel_x = -5;
+	pixel_y = -3
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/jungle/aiidea/engineering)
+"KE" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/spacevine,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"KF" = (
+/obj/effect/turf_decal/box/red,
+/obj/structure/frame/machine{
+	anchored = 1;
+	can_be_unanchored = 1
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/powered)
+"KG" = (
+/obj/effect/turf_decal/box/red,
+/obj/machinery/power/grounding_rod{
+	anchored = 1;
+	pixel_x = 1
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/powered)
+"KL" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/light/broken/directional/east,
+/turf/open/floor/plasteel/stairs/stairs_pack/dark{
+	dir = 1
+	},
+/area/ruin/jungle/aiidea/engineering)
+"KQ" = (
+/obj/structure/cable,
+/obj/machinery/light/broken/directional/west,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"Lc" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/structure/crate_shelf,
+/obj/structure/closet/crate,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration{
+	pixel_y = 7
+	},
+/mob/living/basic/cockroach,
+/mob/living/basic/cockroach,
+/mob/living/basic/cockroach,
+/mob/living/basic/cockroach,
+/mob/living/basic/cockroach,
+/obj/item/trash/candy{
+	pixel_x = 7;
+	pixel_y = -3
+	},
+/obj/item/trash/can/food/beans{
+	pixel_x = 5;
+	pixel_y = 8
+	},
+/obj/item/trash/boritos{
+	pixel_x = -7;
+	pixel_y = -4
+	},
+/obj/item/trash/cheesie{
+	pixel_x = -7;
+	pixel_y = -2
+	},
+/obj/item/trash/energybar{
+	pixel_x = 4;
+	pixel_y = -4
+	},
+/obj/structure/sign/poster/contraband/borg_fancy_2{
+	pixel_y = -32
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"Lg" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/broken/directional/south,
+/turf/open/floor/engine/hull/interior,
+/area/ruin/powered)
+"Lo" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/spacevine/dense,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"Lq" = (
+/obj/machinery/power/smes/shuttle/precharged,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "AI_IDEA_stBLeng"
+	},
+/obj/structure/window/plasma/reinforced{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/engineering)
+"Lr" = (
+/obj/item/stack/ore/salvage/scrapgold{
+	pixel_x = -5;
+	pixel_y = 15
+	},
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"LD" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"LH" = (
+/obj/structure/flora/rock/jungle,
+/obj/structure/spacevine,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
+/area/ruin/powered)
+"LJ" = (
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"LN" = (
+/obj/structure/flora/stump,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
+/area/ruin/powered)
+"LS" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/ai_slipper,
+/obj/effect/turf_decal/box/white,
+/obj/structure/sign/poster/contraband/borg_fancy_1{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/middle)
+"Ma" = (
+/obj/effect/turf_decal/box,
+/obj/machinery/power/tesla_coil/tesla_ground,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/engine/hull/reinforced/interior,
+/area/ruin/powered)
+"Mv" = (
+/obj/structure/cable{
+	icon_state = "0-5";
+	color = "#00aa00"
+	},
+/obj/machinery/power/rtg,
+/obj/machinery/light/broken/directional/west,
+/turf/open/floor/circuit/red/off,
+/area/ruin/jungle/aiidea/middle)
+"MG" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/spacevine,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"MR" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 9
+	},
+/obj/structure/cable{
+	icon_state = "2-4";
+	color = "#00aa00"
+	},
+/obj/structure/cable{
+	icon_state = "1-4";
+	color = "#00aa00"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"MS" = (
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_y = -10;
+	pixel_x = -9
+	},
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"MX" = (
+/obj/structure/flora/ash/garden,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"Na" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/jungle/aiidea/engineering)
+"Nc" = (
+/obj/structure/spacevine/dense,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"Nu" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/engine/hull/interior,
+/area/ruin/powered)
+"Nv" = (
+/obj/structure/girder,
+/turf/open/floor/plating{
+	broken = 1;
+	icon_state = "platingdmg1"
+	},
+/area/ruin/powered)
+"NC" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1
+	},
+/obj/structure/rack,
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 5
+	},
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/item/chair/plastic{
+	pixel_x = -2;
+	pixel_y = 3
+	},
+/obj/item/chair/plastic{
+	pixel_x = 0;
+	pixel_y = 11
+	},
+/obj/machinery/light/broken/directional/south,
+/obj/machinery/firealarm/directional/west,
+/turf/open/floor/plasteel/mono/dark,
+/area/ruin/jungle/aiidea/bridge)
+"NF" = (
+/obj/structure/railing{
+	dir = 1;
+	layer = 2.79
+	},
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "1-2";
+	color = "#00aa00"
+	},
+/obj/structure/cable{
+	icon_state = "1-8";
+	color = "#00aa00"
+	},
+/obj/structure/table,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/item/paper{
+	default_raw_text = "Install the capacitors into the SMESes. You will need them."
+	},
+/obj/item/screwdriver{
+	pixel_x = -6;
+	pixel_y = 2
+	},
+/obj/item/stock_parts/capacitor/super{
+	pixel_x = 12;
+	pixel_y = 1
+	},
+/obj/item/stock_parts/capacitor/super{
+	pixel_x = -10;
+	pixel_y = 7
+	},
+/obj/item/stock_parts/capacitor/super{
+	pixel_x = 11;
+	pixel_y = 7
+	},
+/obj/item/stock_parts/cell/hyper{
+	pixel_x = -2;
+	pixel_y = 11
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"NH" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel/stairs/stairs_pack/dark{
+	dir = 4
+	},
+/area/ruin/jungle/aiidea/bridge)
+"NN" = (
+/obj/machinery/power/grounding_rod{
+	anchored = 1;
+	pixel_x = 1
+	},
+/obj/effect/turf_decal/box/red,
+/obj/machinery/light/broken/directional/north,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/bridge)
+"NR" = (
+/obj/effect/decal/cleanable/shreds{
+	pixel_x = 0;
+	pixel_y = -4
+	},
+/obj/item/stack/ore/salvage/scrapmetal{
+	pixel_x = 7;
+	pixel_y = 9
+	},
+/obj/structure/spacevine,
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/ruin/powered)
+"NV" = (
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_y = 5;
+	pixel_x = 10
+	},
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_x = -11;
+	pixel_y = 13
+	},
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"Of" = (
+/obj/structure/table,
+/obj/item/storage/backpack/duffelbag/med/surgery{
+	pixel_x = 2;
+	pixel_y = 6
+	},
+/obj/structure/sign/poster/contraband/cybersun_borg{
+	pixel_x = 32
+	},
+/turf/open/floor/pod,
+/area/ruin/jungle/aiidea/bridge)
+"Oi" = (
+/obj/structure/chair/office/dark,
+/obj/effect/decal/cleanable/blood/splatter/over_window{
+	icon_state = "floor4";
+	pixel_y = 32
+	},
+/obj/effect/mob_spawn/human/skeleton,
+/obj/effect/mapping_helpers/chair/tim_buckley,
+/obj/machinery/button/door{
+	pixel_y = 23;
+	id = "AI_IDEA_HUH";
+	name = "shutters control"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/circuit/green/off,
+/area/ruin/jungle/aiidea/bridge)
+"Oq" = (
+/obj/effect/decal/remains/robot{
+	pixel_x = -6;
+	pixel_y = 3
+	},
+/obj/item/bedsheet/purple{
+	pixel_y = 11;
+	pixel_x = -3
+	},
+/obj/effect/turf_decal/siding/black{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/basic/hivebot/ranged,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"OD" = (
+/turf/closed/indestructible/plastitanium/nodiagnonal,
+/area/ruin/jungle/aiidea/engineering)
+"OF" = (
+/obj/structure/frame/machine{
+	anchored = 1;
+	can_be_unanchored = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"OI" = (
+/obj/structure/flora/rock/jungle,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"OJ" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/obj/item/gun/ballistic/automatic/assault/e40{
+	pixel_y = 6;
+	spawn_no_ammo = 1
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	icon_state = "floor2";
+	pixel_y = 7
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/stairs/stairs_pack/dark{
+	dir = 4
+	},
+/area/ruin/jungle/aiidea/bridge)
+"OK" = (
+/obj/structure/railing{
+	layer = 3.1
+	},
+/obj/effect/turf_decal/techfloor,
+/obj/structure/cable{
+	icon_state = "1-2";
+	color = "#00aa00"
+	},
+/obj/structure/salvageable/destructive_analyzer,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"OW" = (
+/obj/item/stack/ore/salvage/scrapmetal{
+	pixel_x = -12;
+	pixel_y = 9
+	},
+/turf/open/floor/engine/hull/interior,
+/area/ruin/powered)
+"OX" = (
+/obj/structure/flora/ausbushes/leafybush,
+/obj/structure/spacevine,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"OY" = (
+/obj/structure/frame/machine{
+	anchored = 1;
+	can_be_unanchored = 1
+	},
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "AI_IDEA_mdlBLeng"
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/ruin/jungle/aiidea/engineering)
+"Ph" = (
+/obj/machinery/door/firedoor/window,
+/obj/machinery/door/poddoor/shutters{
+	id = "AI_IDEA_dormwindnt"
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/engineering)
+"Pi" = (
+/obj/structure/flora/junglebush/c,
+/obj/structure/flora/rock/jungle,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
+/area/ruin/powered)
+"Pj" = (
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/ruin/powered)
+"Pm" = (
+/obj/machinery/power/shuttle/engine/electric/tech1,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/window/plasma/reinforced{
+	dir = 4
+	},
+/turf/open/floor/engine/hull/interior,
+/area/ruin/jungle/aiidea/engineering)
+"Pp" = (
+/obj/structure/girder,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/engineering)
+"Pz" = (
+/obj/structure/cable{
+	icon_state = "2-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/mob/living/basic/hivebot/ranged,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/bridge)
+"PT" = (
+/obj/effect/spawner/bunk_bed{
+	dir = 4
+	},
+/obj/structure/curtain/cloth/grey,
+/obj/item/bedsheet/black{
+	dir = 4;
+	layer = 3.3
+	},
+/obj/item/bedsheet/black{
+	dir = 4;
+	layer = 3.3;
+	pixel_y = 12
+	},
+/obj/machinery/light/broken/directional/north,
+/obj/machinery/button/door{
+	id = "AI_IDEA_dormshtst";
+	name = "shutters control";
+	dir = 4;
+	pixel_x = -23;
+	pixel_y = -8
+	},
+/obj/machinery/button/door{
+	id = "AI_IDEA_dormwindst";
+	name = "window control";
+	dir = 4;
+	pixel_x = -23;
+	pixel_y = 5
+	},
+/turf/open/floor/pod,
+/area/ruin/jungle/aiidea/engineering)
+"PU" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 5
+	},
+/obj/effect/turf_decal/industrial/fire{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/stand_clear/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/fire,
+/obj/machinery/light/small/broken/directional/south{
+	pixel_x = 5
+	},
+/obj/machinery/button/door{
+	id = "AI_IDEA_Ac_EmSt";
+	pixel_y = -23;
+	name = "emergency access";
+	dir = 1;
+	pixel_x = -8;
+	normaldoorcontrol = 1;
+	specialfunctions = 4
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"Qb" = (
+/obj/machinery/door/poddoor/shutters{
+	dir = 8;
+	id = "AI_IDEA_dormex"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/engineering)
+"Qr" = (
+/obj/structure/flora/rock/jungle,
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/powered)
+"Qs" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 8;
+	layer = 2.5
+	},
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/middle)
+"Qx" = (
+/obj/structure/flora/junglebush/b,
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/powered)
+"QB" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/item/stack/cable_coil/cut/red{
+	pixel_x = -16
+	},
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"QC" = (
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/item/stack/cable_coil/cut/red{
+	pixel_x = -5;
+	pixel_y = 7
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"QH" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/engine/hull/interior,
+/area/ruin/powered)
+"QK" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-2";
+	color = "#00aa00"
+	},
+/obj/machinery/button/door{
+	id = "AI_IDEA_ntBLeng";
+	pixel_y = 23;
+	name = "engine armor";
+	pixel_x = -8
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/engineering)
+"QL" = (
+/obj/item/stack/ore/salvage/scrapmetal{
+	pixel_x = 2;
+	pixel_y = -10
+	},
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/powered)
+"Rk" = (
+/obj/structure/cable{
+	icon_state = "1-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/bridge)
+"Rz" = (
+/obj/structure/rack,
+/obj/machinery/door/window/survival_pod{
+	dir = 1
+	},
+/obj/item/aiModule/core/full/corp{
+	name = "Unknown AI Core Module";
+	pixel_x = -4;
+	pixel_y = 3
+	},
+/obj/item/aiModule/core/full/asimov{
+	name = "Unknown AI Core Module";
+	pixel_x = -6;
+	pixel_y = -2
+	},
+/obj/item/aiModule/core/full/damaged{
+	name = "Unknown AI Core Module";
+	pixel_x = 5;
+	pixel_y = 7
+	},
+/obj/item/aiModule/core/full/hulkamania{
+	name = "Unknown AI Core Module";
+	pixel_x = 4;
+	pixel_y = -4
+	},
+/obj/item/aiModule/core/full/tyrant{
+	name = "Unknown AI Core Module";
+	pixel_x = -1;
+	pixel_y = 0
+	},
+/obj/item/aiModule/core/full/maintain{
+	name = "Unknown AI Core Module";
+	pixel_x = -4;
+	pixel_y = -5
+	},
+/obj/item/aiModule/core/full/reporter{
+	name = "Unknown AI Core Module";
+	pixel_x = 5;
+	pixel_y = -3
+	},
+/obj/item/aiModule/core/full/corp{
+	name = "Unknown AI Core Module";
+	pixel_x = 4;
+	pixel_y = -4
+	},
+/obj/machinery/camera/xray{
+	dir = 1
+	},
+/turf/open/floor/circuit/green/off,
+/area/ruin/jungle/aiidea/bridge)
+"RA" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/spacevine/dense,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"RD" = (
+/obj/structure/flora/junglebush/b,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
+/area/ruin/powered)
+"RM" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/airlock/hatch{
+	dir = 8;
+	name = "Hatch"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/bridge)
+"Sa" = (
+/obj/machinery/power/tesla_coil/tesla_ground,
+/obj/effect/turf_decal/box,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/engine/hull/reinforced/interior,
+/area/ruin/powered)
+"Sb" = (
+/obj/structure/flora/junglebush/c,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
+/area/ruin/powered)
+"Sd" = (
+/obj/structure/spacevine,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/powered)
+"Sf" = (
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 4
+	},
+/obj/machinery/camera/xray,
+/mob/living/simple_animal/bot/secbot/ed209{
+	emagged = 2;
+	shot_delay = 5;
+	armor = list("melee" = 50, "bullet" = 30, "laser" = 30, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
+	armour_penetration = 20;
+	maxHealth = 200;
+	health = 200;
+	environment_smash = 0;
+	obj_damage = 0;
+	faction = list("neutral","silicon","turret", "hivebot")
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/bridge)
+"Sj" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"Sk" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/black/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black,
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	icon_state = "floor6";
+	pixel_y = 3;
+	pixel_x = -9
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"Sl" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/glass/plastitanium,
+/obj/item/shard/plastitanium{
+	pixel_x = 11;
+	pixel_y = 5
+	},
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/middle)
+"Su" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	layer = 2.5
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/middle)
+"Sv" = (
+/turf/open/floor/engine/hull/interior,
+/area/ruin/powered)
+"Sx" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/effect/decal/remains/human{
+	pixel_x = -2;
+	pixel_y = -4
+	},
+/obj/item/research_notes/loot/small{
+	pixel_x = -4;
+	pixel_y = 7
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ruin/jungle/aiidea/middle)
+"SA" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/camera/xray{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"SD" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"SF" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"SG" = (
+/obj/item/stack/ore/salvage/scrapmetal{
+	pixel_x = 4;
+	pixel_y = -2
+	},
+/turf/open/floor/plating{
+	broken = 1;
+	icon_state = "platingdmg1"
+	},
+/area/ruin/powered)
+"SI" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
+/area/ruin/powered)
+"SJ" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"SL" = (
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 4
+	},
+/obj/machinery/door/poddoor/shutters/indestructible{
+	dir = 4;
+	id = "AI_IDEA_HUH"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/bridge)
+"SM" = (
+/obj/structure/spawner/hivebot,
+/obj/machinery/light/broken/directional/east,
+/turf/open/floor/plasteel/telecomms_floor/airless,
+/area/ruin/jungle/aiidea/bridge)
+"SX" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/effect/decal/cleanable/greenglow,
+/obj/item/keycard{
+	puzzle_id = "AI_IDEA_IDK";
+	pixel_x = 7;
+	pixel_y = -8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ruin/jungle/aiidea/middle)
+"Ti" = (
+/obj/structure/closet/secure_closet/armorycage{
+	anchored = 1;
+	req_access = null
+	},
+/obj/item/gun/energy/e_gun/e_old/adv_stopping{
+	pixel_x = 3;
+	pixel_y = 4;
+	spawn_no_ammo = 1
+	},
+/obj/item/gun/energy/e_gun/advtaser{
+	pixel_x = -2;
+	pixel_y = -8;
+	spawn_no_ammo = 1
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/ruin/jungle/aiidea/bridge)
+"Tk" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/effect/turf_decal/radiation{
+	dir = 4;
+	pixel_x = -5
+	},
+/obj/effect/turf_decal/industrial/caution{
+	dir = 4;
+	pixel_x = 17
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/light/small/broken/directional/north,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/middle)
+"Tz" = (
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_y = 4;
+	pixel_x = -12
+	},
+/obj/structure/spacevine,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"TF" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/camera/xray,
+/mob/living/basic/hivebot/ranged,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/middle)
+"TR" = (
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_y = 5;
+	pixel_x = 10
+	},
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"TS" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 4
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/traffic{
+	layer = 2.038
+	},
+/obj/machinery/camera/xray{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"Ug" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/powered)
+"Ui" = (
+/obj/effect/turf_decal/siding/black{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/splatter/over_window{
+	icon_state = "splatter2";
+	pixel_x = -1;
+	pixel_y = 26
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	pixel_x = 1;
+	pixel_y = -9
+	},
+/obj/item/stock_parts/cell/gun/upgraded/empty{
+	pixel_x = -3;
+	pixel_y = -11
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"Uk" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 5
+	},
+/obj/effect/turf_decal/corner_techfloor_gray{
+	dir = 8
+	},
+/obj/item/radio/intercom/directional/west,
+/obj/item/robot_suit{
+	pixel_x = 9;
+	pixel_y = -4
+	},
+/obj/item/bodypart/l_arm/robot{
+	pixel_x = -4;
+	pixel_y = 12
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"UC" = (
+/obj/effect/turf_decal/box,
+/obj/machinery/power/tesla_coil/tesla_ground,
+/obj/structure/cable,
+/turf/open/floor/engine/hull/reinforced/interior,
+/area/ruin/powered)
+"UI" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 4
+	},
+/obj/item/melee/axe/fire{
+	pixel_x = -12;
+	pixel_y = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"UM" = (
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
+/area/ruin/powered)
+"UO" = (
+/obj/machinery/power/smes/shuttle/precharged,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "AI_IDEA_mdlBLeng"
+	},
+/obj/structure/window/plasma/reinforced{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/engineering)
+"UV" = (
+/obj/structure/flora/ausbushes/stalkybush{
+	pixel_x = 14;
+	pixel_y = 1
+	},
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"Va" = (
+/obj/machinery/power/grounding_rod{
+	anchored = 1;
+	pixel_x = 1
+	},
+/obj/effect/turf_decal/box/red,
+/obj/machinery/light/broken/directional/south,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/bridge)
+"Vn" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/camera/xray,
+/mob/living/basic/hivebot/ranged,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/bridge)
+"Vw" = (
+/obj/effect/turf_decal/techfloor,
+/obj/effect/decal/remains/robot{
+	pixel_x = 0;
+	pixel_y = -2
+	},
+/obj/item/stack/cable_coil/random/five{
+	pixel_y = 6;
+	pixel_x = -1
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1
+	},
+/obj/item/stock_parts/cell/hyper{
+	pixel_x = 9;
+	pixel_y = -6
+	},
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/middle)
+"Vx" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/spacevine,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"VH" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "2-4";
+	tag = null
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"VR" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
+/area/ruin/powered)
+"VT" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/spacevine,
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"VX" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/black/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	layer = 2.5
+	},
+/obj/item/gun/energy/e_gun/e_old/hos{
+	pixel_x = 5;
+	pixel_y = 0;
+	spawn_no_ammo = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech{
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/area/ruin/jungle/aiidea/engineering)
+"Wb" = (
+/obj/structure/spacevine/dense,
+/turf/open/floor/engine/hull/interior,
+/area/ruin/powered)
+"Wd" = (
+/obj/structure/cable{
+	icon_state = "1-2";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/decal/remains/robot{
+	pixel_x = -6;
+	pixel_y = 2
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/bridge)
+"Wf" = (
+/obj/structure/spawner/hivebot,
+/obj/machinery/light/small/broken/directional/north,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/turf/open/floor/plasteel/telecomms_floor/airless,
+/area/ruin/jungle/aiidea/middle)
+"Wi" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/item/stack/cable_coil/cut/green{
+	pixel_x = -2;
+	pixel_y = -5
+	},
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/bridge)
+"Wk" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/broken/directional/south,
+/obj/item/flashlight/flare/burnt{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/structure/spacevine,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"Wl" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 5
+	},
+/obj/effect/turf_decal/corner_techfloor_gray{
+	dir = 1;
+	layer = 2.038
+	},
+/obj/machinery/light/broken/directional/south,
+/obj/item/stack/rods{
+	pixel_x = 19;
+	pixel_y = 3
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"Wx" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"WA" = (
+/obj/structure/flora/rock/jungle,
+/turf/open/floor/plating/asteroid/dirt/grass/jungle,
+/area/ruin/powered)
+"WD" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"WM" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"WN" = (
+/mob/living/simple_animal/bot/secbot/pingsky{
+	emagged = 2;
+	faction = list("neutral","silicon","turret", "hivebot")
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/circuit/off,
+/area/ruin/jungle/aiidea/bridge)
+"WV" = (
+/obj/effect/decal/cleanable/shreds{
+	pixel_x = 0;
+	pixel_y = -10
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/ruin/powered)
+"Xc" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"Xp" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/jungleplanet{
+	icon_state = "plating_rust"
+	},
+/area/ruin/powered)
+"Xs" = (
+/obj/structure/spacevine,
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/powered)
+"XA" = (
+/obj/effect/turf_decal/corner_techfloor_gray{
+	dir = 6
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8;
+	layer = 2.038
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 1
+	},
+/obj/machinery/airalarm/directional/east,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/mob/living/basic/hivebot/mechanic,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"XD" = (
+/obj/structure/table,
+/obj/structure/closet/wall/red/directional/north{
+	name = "weapons locker"
+	},
+/obj/item/radio/intercom/directional/west,
+/obj/item/storage/box/flashbangs{
+	pixel_x = -3;
+	pixel_y = 2
+	},
+/obj/item/storage/box/handcuffs{
+	pixel_x = -2;
+	pixel_y = 14
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/ruin/jungle/aiidea/bridge)
+"XN" = (
+/obj/structure/flora/junglebush/b,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/powered)
+"Yk" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black,
+/obj/structure/tank_dispenser/oxygen{
+	pixel_y = 6
+	},
+/obj/effect/turf_decal/industrial/outline,
+/obj/machinery/light/broken/directional/west,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"Yl" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner_techfloor_gray{
+	dir = 8
+	},
+/obj/structure/table,
+/obj/item/blackmarket_uplink{
+	pixel_x = 4;
+	pixel_y = 6
+	},
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"Yr" = (
+/obj/structure/flora/rock/pile/largejungle,
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/powered)
+"YB" = (
+/obj/structure/table/optable,
+/obj/effect/mob_spawn/human/skeleton,
+/obj/effect/decal/cleanable/blood/splatter/over_window{
+	icon_state = "splatter2";
+	pixel_x = 2;
+	pixel_y = 31
+	},
+/obj/effect/decal/cleanable/blood/splatter/over_window{
+	pixel_x = -32;
+	pixel_y = 4
+	},
+/obj/effect/decal/cleanable/cobweb,
+/obj/item/research_notes/loot/medium{
+	pixel_x = 7;
+	pixel_y = 6
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/bridge)
+"YC" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 9
+	},
+/obj/effect/decal/cleanable/robot_debris/gib{
+	pixel_x = 0;
+	pixel_y = 7
+	},
+/obj/item/stock_parts/cell/crap{
+	pixel_x = -5;
+	pixel_y = 3
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"YG" = (
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"YI" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/jungle/aiidea/middle)
+"YJ" = (
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/water/jungle/lit,
+/area/ruin/powered)
+"YQ" = (
+/obj/machinery/porta_turret/ruin/ramzi/light{
+	spread = 45;
+	burst_delay = 1;
+	shot_delay = 15;
+	faction = list("Frontiersmen","turret", "hivebot");
+	desc = "A low caliber SMG with an atrociously high cycle rate, frankensteined together with a targetting assembly.";
+	reqpower = 0;
+	dir = 6
+	},
+/obj/structure/spacevine,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/powered)
+"YU" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/machinery/firealarm/directional/east,
+/obj/effect/decal/cleanable/oil{
+	pixel_x = -13;
+	pixel_y = -14
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/jungle/aiidea/engineering)
+"Ze" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/powered)
+"Zs" = (
+/obj/structure/catwalk/over,
+/obj/machinery/camera/xray{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"Zv" = (
+/obj/structure/catwalk/over,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating,
+/area/ruin/powered)
+"Zw" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black/corner{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/robot_debris/up{
+	pixel_x = -7;
+	pixel_y = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark,
+/area/ruin/jungle/aiidea/bridge)
+"ZB" = (
+/turf/closed/indestructible/plastitanium/nodiagnonal,
+/area/ruin/jungle/aiidea/middle)
+"ZW" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/machinery/door/keycard{
+	puzzle_id = "AI_IDEA_IDK"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 8;
+	id = "AI_IDEA_HUH"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/jungle/aiidea/bridge)
+"ZX" = (
+/obj/structure/cable{
+	icon_state = "4-8";
+	color = "#00aa00"
+	},
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/firealarm/directional/north,
+/turf/open/floor/plating,
+/area/ruin/jungle/aiidea/middle)
 
 (1,1,1) = {"
-U
-z
-h
-h
-h
-z
-U
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
 "}
 (2,1,1) = {"
-U
-z
-k
-w
-Q
-z
-U
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+ap
+UM
+rk
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
 "}
 (3,1,1) = {"
-U
-z
-n
-G
-R
-z
-U
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+UM
+xy
+UM
+UM
+fQ
+UM
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
 "}
 (4,1,1) = {"
-z
-z
-p
-H
-D
-z
-z
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+fQ
+UM
+UM
+gd
+UM
+UM
+UM
+xy
+UM
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
 "}
 (5,1,1) = {"
-z
-e
-q
-w
-S
-r
-z
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+HR
+SI
+UM
+UM
+pB
+HR
+Qr
+UM
+UM
+Sb
+UM
+UM
+IR
+IR
+UM
+WA
+IR
+IR
+IR
+UM
+rk
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
 "}
 (6,1,1) = {"
-z
-f
-u
-J
-V
-y
-z
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+Bt
+HR
+tJ
+HR
+Bt
+HR
+Ze
+Kt
+Bj
+wn
+ap
+UM
+fQ
+UM
+SI
+Ze
+bT
+UM
+SI
+UM
+fQ
+UM
+WA
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
 "}
 (7,1,1) = {"
-z
-g
-w
-L
-n
-b
-z
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+HR
+Kt
+HR
+sW
+HR
+bT
+Bj
+Bj
+DZ
+UM
+UM
+UM
+UM
+UM
+Kt
+kc
+HR
+sW
+UM
+ap
+UM
+UM
+UM
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
 "}
 (8,1,1) = {"
-z
-z
-x
-M
-D
-z
-z
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+HR
+HR
+HR
+Qr
+SD
+UM
+xy
+OI
+Sa
+wn
+ah
+Cr
+WA
+VR
+Sa
+Qr
+Bj
+cE
+SD
+HR
+UM
+RD
+UM
+fQ
+UM
+IR
+IR
+IR
+IR
+IR
+IR
+IR
 "}
 (9,1,1) = {"
-U
-z
-D
-N
-Y
-z
-U
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+rk
+Ze
+HR
+Yr
+HR
+xy
+SD
+RD
+hE
+Bj
+SD
+jd
+jd
+Kv
+IC
+Bt
+SD
+Bj
+cW
+Bj
+SD
+HR
+fQ
+UM
+Pi
+UM
+UM
+IR
+IR
+IR
+IR
+IR
+IR
+IR
 "}
 (10,1,1) = {"
-U
-z
-F
-x
-Z
-z
-U
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+xy
+Qx
+HR
+UM
+UM
+SI
+Ks
+UM
+qD
+VH
+eR
+YG
+jN
+jd
+jd
+Kt
+tZ
+Zv
+Sd
+wn
+SD
+Qr
+HR
+UM
+UM
+LN
+SI
+IR
+IR
+IR
+IR
+IR
+IR
+IR
 "}
 (11,1,1) = {"
-U
-z
-z
-z
-z
-z
-U
+IR
+IR
+IR
+IR
+IR
+IR
+UM
+UM
+tJ
+Bt
+QL
+UM
+qD
+Ks
+KG
+qD
+SD
+Na
+YG
+jd
+tM
+gS
+HR
+Na
+SD
+qD
+KG
+Ks
+qD
+Qx
+Ze
+fQ
+UM
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+"}
+(12,1,1) = {"
+IR
+IR
+IR
+IR
+IR
+Ug
+UM
+fQ
+UM
+Ug
+Bj
+yr
+Sd
+Ks
+qD
+qD
+SD
+Na
+ii
+YG
+YG
+Bt
+ii
+Na
+SD
+qD
+qD
+Ks
+qD
+jM
+HR
+UM
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+"}
+(13,1,1) = {"
+IR
+IR
+IR
+IR
+IR
+Kt
+LN
+UM
+UM
+Bj
+wn
+qD
+HD
+Lo
+Sd
+CA
+xN
+Na
+Na
+Pm
+EB
+Pm
+Na
+Na
+mv
+Xc
+qD
+xG
+yz
+qD
+OI
+UM
+UM
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+"}
+(14,1,1) = {"
+IR
+IR
+xy
+Gn
+HR
+Ze
+UM
+xy
+Qr
+XN
+wN
+YG
+Ks
+IH
+IH
+aB
+YG
+Na
+GB
+fr
+OY
+UO
+kk
+Na
+YG
+Sj
+zL
+IH
+Ks
+Bj
+kc
+LH
+xy
+IR
+xy
+IR
+IR
+sW
+xy
+IR
+IR
+"}
+(15,1,1) = {"
+IR
+IR
+UM
+Kr
+Zv
+UM
+aF
+si
+HR
+YG
+YG
+yr
+ro
+jd
+CA
+EF
+Pm
+Na
+yK
+oO
+oO
+oO
+Dk
+Na
+KB
+YG
+VT
+FA
+Ks
+qD
+qd
+gr
+UM
+sW
+UM
+WA
+VH
+mW
+UM
+IR
+IR
+"}
+(16,1,1) = {"
+IR
+VR
+xy
+Qr
+SD
+xy
+mH
+Al
+Pj
+Sv
+KF
+hd
+WD
+SJ
+gZ
+HZ
+up
+wq
+kJ
+kj
+hF
+ae
+rZ
+ql
+Lq
+FC
+wJ
+WM
+dT
+qD
+KG
+Ch
+Sv
+Kr
+Zv
+VR
+SD
+UM
+ap
+UM
+IR
+"}
+(17,1,1) = {"
+IR
+sW
+fQ
+tJ
+SD
+RD
+mH
+yr
+Bt
+HR
+yr
+qD
+QB
+YG
+Gw
+Na
+QK
+MR
+NF
+cM
+fO
+HT
+OK
+qS
+sF
+Na
+CE
+YG
+Ft
+qD
+Sd
+Nc
+sR
+cW
+SD
+xy
+SD
+Sb
+RD
+sW
+IR
+"}
+(18,1,1) = {"
+IR
+SD
+UM
+UM
+SD
+UM
+mH
+qD
+HR
+Ei
+qD
+GA
+xN
+Na
+BH
+Na
+yO
+Hh
+pd
+jV
+fZ
+sm
+bZ
+Gm
+nS
+Na
+bi
+Na
+pX
+MG
+Sd
+IH
+Vx
+qD
+SD
+hB
+SD
+WA
+xy
+SD
+IR
+"}
+(19,1,1) = {"
+Ma
+tr
+zJ
+gH
+tr
+gH
+Zv
+yr
+MX
+gr
+Sd
+Ks
+tz
+Na
+ge
+to
+ic
+jC
+rC
+YU
+eJ
+fF
+KL
+pD
+TS
+qu
+PU
+Na
+rF
+Ks
+Sd
+IH
+gC
+qD
+rv
+gH
+pb
+gH
+Hu
+pb
+UC
+"}
+(20,1,1) = {"
+IR
+IR
+SD
+WA
+VR
+UM
+SD
+mm
+Sd
+Nc
+eK
+Ks
+iw
+Na
+xp
+Na
+Na
+cg
+OD
+OD
+gu
+OD
+OD
+Hr
+Na
+Na
+vQ
+Na
+IW
+Ks
+jd
+OX
+qD
+qD
+SD
+WA
+UM
+UM
+SD
+UM
+IR
+"}
+(21,1,1) = {"
+IR
+IR
+ho
+UM
+UM
+fQ
+Kr
+Zv
+qD
+Nc
+GA
+mW
+Na
+Na
+lX
+do
+Na
+Cc
+ZB
+kw
+Gx
+uk
+ZB
+ZX
+Na
+PT
+jY
+Na
+Na
+Kr
+MG
+YG
+qD
+VH
+mW
+HR
+fQ
+UM
+ho
+rk
+IR
+"}
+(22,1,1) = {"
+IR
+IR
+Ze
+Qx
+xy
+UM
+UM
+kY
+gH
+gH
+lN
+mS
+Na
+lo
+Ju
+FJ
+Ph
+qn
+ZB
+ZB
+gU
+ZB
+ZB
+Au
+bM
+Fd
+VX
+vj
+Na
+Na
+kY
+pQ
+JU
+zN
+YG
+cE
+HR
+UM
+UM
+xy
+IR
+"}
+(23,1,1) = {"
+IR
+ik
+HR
+Qr
+UM
+LN
+UM
+SD
+RD
+UM
+Ks
+kv
+Na
+AL
+FX
+Oq
+gy
+Sl
+ZB
+JP
+SX
+Mv
+ZB
+JD
+bM
+Ui
+Sk
+sI
+Na
+JM
+es
+YG
+YG
+SD
+YG
+Bj
+wn
+aF
+VR
+Sb
+IR
+"}
+(24,1,1) = {"
+HR
+Yr
+HR
+sW
+HR
+fQ
+UM
+jy
+gH
+gH
+zN
+Na
+Na
+Pp
+jB
+oa
+YI
+EU
+ZB
+uC
+oB
+iC
+ZB
+TF
+YI
+cY
+Ku
+Na
+Na
+Na
+vb
+SJ
+gH
+KE
+ra
+Fl
+OI
+sW
+IR
+IR
+IR
+"}
+(25,1,1) = {"
+Bt
+HR
+HR
+SD
+Kt
+xy
+UM
+SD
+hE
+qD
+Kr
+mB
+KQ
+dC
+BK
+YI
+YI
+JG
+ZB
+FH
+Sx
+sD
+ZB
+LS
+YI
+YI
+Qb
+Na
+Gb
+Ji
+Sj
+qD
+jM
+Ks
+YG
+jd
+Bj
+SD
+IR
+IR
+IR
+"}
+(26,1,1) = {"
+IR
+HR
+Ma
+tr
+zJ
+gH
+gH
+mW
+qD
+YG
+jd
+YG
+vg
+QC
+Nu
+YI
+fC
+ng
+ZB
+ZB
+Dr
+ZB
+ZB
+Bb
+ok
+YI
+QH
+gH
+EF
+nE
+YG
+YG
+qD
+xG
+Dx
+Dx
+Hu
+pb
+UC
+IR
+IR
+"}
+(27,1,1) = {"
+IR
+bT
+Bt
+Ze
+SD
+UM
+WA
+mH
+Zs
+IC
+jd
+OX
+jd
+YG
+Lg
+YI
+aI
+Su
+is
+ZB
+Tk
+ZB
+Wf
+mE
+Vw
+YI
+ns
+YG
+jd
+jd
+Tz
+YG
+Zs
+yE
+IH
+IH
+SD
+mX
+VR
+IR
+xy
+"}
+(28,1,1) = {"
+IR
+IR
+Qx
+HR
+SD
+tJ
+UM
+UM
+mH
+xy
+IH
+IH
+yF
+jd
+Id
+jF
+iJ
+Qs
+pV
+pV
+hy
+pV
+pV
+wM
+qP
+ps
+Id
+jd
+jd
+jd
+YG
+YG
+mH
+YG
+jd
+IH
+Ks
+Xs
+fQ
+UM
+UM
+"}
+(29,1,1) = {"
+IR
+IR
+IR
+Qr
+ho
+HR
+fQ
+UM
+yE
+Ch
+Ch
+Wb
+Sd
+DX
+jj
+yc
+yc
+RM
+hk
+lB
+DC
+Lc
+hk
+yW
+yc
+yc
+oh
+Zv
+Sd
+Ch
+Ch
+Sv
+mH
+jd
+jd
+IH
+fB
+Kt
+UM
+xy
+UM
+"}
+(30,1,1) = {"
+IR
+IR
+IR
+IR
+UM
+Bt
+UM
+UM
+xy
+WA
+UM
+qD
+qD
+Wk
+yc
+yc
+Yk
+bO
+Uk
+qm
+Wi
+Wl
+hk
+Vn
+NC
+yc
+yc
+nQ
+qD
+qD
+ah
+YG
+YG
+jd
+gS
+jd
+Hl
+mq
+UM
+hB
+Sb
+"}
+(31,1,1) = {"
+IR
+IR
+IR
+IR
+Sb
+RD
+UM
+mH
+Sv
+Sv
+Sv
+vm
+qD
+SD
+cC
+nB
+tD
+Pz
+iM
+Wd
+nr
+wz
+bl
+Rk
+ze
+nY
+af
+SD
+qD
+vm
+Sv
+Sv
+Sv
+mH
+YG
+YG
+YG
+Bj
+Qr
+VR
+UM
+"}
+(32,1,1) = {"
+IR
+IR
+IR
+UM
+sW
+UM
+IC
+mH
+yr
+UM
+ap
+qD
+qD
+SD
+mi
+zZ
+Zw
+mz
+UI
+Ki
+wZ
+YC
+AA
+mg
+xg
+zs
+CN
+SD
+qD
+qD
+YG
+YG
+yr
+os
+YG
+jd
+sW
+jw
+Qx
+UM
+IR
+"}
+(33,1,1) = {"
+IR
+IR
+IR
+VR
+SD
+UM
+VR
+yE
+NR
+qD
+WA
+HR
+EC
+jm
+yc
+yc
+pl
+yc
+SM
+CL
+cc
+Yl
+hk
+pt
+xY
+NH
+yc
+nQ
+bF
+YG
+YG
+ei
+WV
+LJ
+YG
+jd
+SD
+Bj
+wn
+Yr
+IR
+"}
+(34,1,1) = {"
+IR
+IR
+UM
+Ma
+tr
+zJ
+gH
+gH
+MG
+Sd
+Ze
+XN
+xM
+mW
+yc
+XD
+uu
+hk
+yc
+XA
+ss
+au
+yc
+yc
+yc
+lO
+yc
+Kr
+Zv
+lq
+YG
+yr
+Wx
+YJ
+Ed
+xe
+sX
+UC
+Bj
+HR
+HR
+"}
+(35,1,1) = {"
+IR
+IR
+ik
+HR
+HR
+SD
+Qx
+HR
+Ks
+yr
+wn
+Bj
+fV
+yc
+yc
+wk
+bW
+BP
+pV
+pV
+ZW
+pV
+pV
+YB
+wo
+jx
+yc
+yc
+eX
+jd
+jd
+qD
+ox
+YG
+jd
+Ks
+jd
+YG
+qd
+cE
+ik
+"}
+(36,1,1) = {"
+IR
+IR
+HR
+Yr
+HR
+ho
+Bt
+Bj
+xG
+zJ
+sY
+gH
+zN
+Va
+yc
+Sf
+cr
+Gd
+pV
+dx
+gN
+pm
+pV
+ER
+Bc
+nL
+yc
+NN
+AZ
+gH
+Dx
+Hu
+mW
+YG
+YG
+ho
+jd
+jd
+YG
+Bj
+Bt
+"}
+(37,1,1) = {"
+IR
+IR
+tJ
+HR
+HR
+HR
+Ze
+kc
+Bj
+SD
+wn
+YG
+SD
+yc
+yc
+us
+Ee
+EZ
+pV
+cN
+OJ
+AT
+pV
+ta
+tq
+EX
+yc
+yc
+CW
+YG
+jd
+SD
+YG
+NV
+YG
+YG
+IB
+YG
+YG
+Qr
+IR
+"}
+(38,1,1) = {"
+IR
+IR
+HR
+Kt
+HR
+Yr
+Xs
+Bj
+OI
+SF
+gH
+SJ
+LD
+Xc
+yc
+Ti
+Iy
+fA
+pV
+Oi
+jI
+bb
+pV
+vB
+pR
+Of
+yc
+nW
+Xp
+gH
+Dx
+KE
+jd
+jd
+YG
+YG
+YG
+UV
+YG
+YG
+IR
+"}
+(39,1,1) = {"
+IR
+IR
+Qr
+Bt
+HR
+HR
+Hl
+cE
+GA
+mW
+Fl
+YG
+YG
+iW
+yc
+yc
+yc
+pV
+pV
+SL
+SL
+SL
+pV
+pV
+yc
+yc
+yc
+Hq
+jd
+jd
+jd
+xG
+Zv
+jd
+jd
+jd
+YG
+YG
+YG
+YG
+IR
+"}
+(40,1,1) = {"
+IR
+IR
+IR
+Ze
+bT
+sW
+eK
+Hl
+Ks
+qD
+YG
+tt
+qD
+Kr
+gH
+SA
+YG
+pV
+tp
+pi
+WN
+rc
+Rz
+pV
+qd
+Ae
+gH
+mW
+qD
+IH
+IH
+qD
+SD
+jd
+YG
+sW
+YG
+YG
+YG
+YG
+IR
+"}
+(41,1,1) = {"
+IR
+IR
+IR
+IR
+VH
+tr
+gH
+Dx
+lN
+yr
+Dq
+YG
+qD
+qD
+zy
+SD
+YG
+pV
+pV
+pV
+dM
+pV
+pV
+pV
+XN
+SD
+zy
+yr
+im
+IH
+qD
+YQ
+HF
+Eh
+Ed
+CH
+Xc
+YG
+YG
+YG
+IR
+"}
+(42,1,1) = {"
+IR
+IR
+IR
+UM
+Ks
+LH
+jd
+IH
+RA
+yE
+OW
+Sv
+vm
+qD
+xM
+mW
+mH
+Hs
+YG
+pV
+pV
+pV
+mH
+eq
+mH
+Kr
+Zv
+Nv
+kh
+Ch
+Ch
+mH
+Ks
+YG
+YG
+YG
+es
+YG
+gS
+YG
+IR
+"}
+(43,1,1) = {"
+IR
+IR
+IR
+xy
+ho
+Fe
+YG
+jd
+ho
+YG
+YG
+YG
+YG
+jd
+es
+Sd
+qD
+YG
+ra
+os
+YG
+os
+mH
+Bj
+qD
+qD
+SD
+wn
+Bj
+Lr
+gr
+qd
+ho
+YG
+YG
+YG
+ho
+YG
+YG
+YG
+IR
+"}
+(44,1,1) = {"
+IR
+IR
+IR
+YG
+YG
+YG
+OX
+jd
+YG
+YG
+YG
+YG
+jd
+jd
+aB
+jd
+Sd
+qD
+LJ
+qD
+wn
+qD
+mH
+qD
+qD
+HR
+SD
+HR
+Yr
+Bj
+OI
+aF
+YG
+YG
+YG
+YG
+YG
+YG
+YG
+IR
+IR
+"}
+(45,1,1) = {"
+IR
+IR
+IR
+YG
+YG
+IB
+jd
+YG
+YG
+YG
+xF
+YG
+YG
+YG
+Iv
+IH
+IH
+jd
+bt
+qD
+vm
+yr
+mH
+Bt
+tJ
+HR
+SD
+HR
+HR
+UM
+Yr
+UM
+UM
+YG
+YG
+YG
+YG
+Fe
+IR
+IR
+IR
+"}
+(46,1,1) = {"
+IR
+IR
+IR
+YG
+YG
+YG
+YG
+YG
+YG
+YG
+YG
+YG
+ah
+YG
+OF
+jd
+YG
+Sd
+qD
+qD
+ib
+SG
+yr
+qD
+Qr
+Kt
+ho
+bT
+Qx
+xy
+UM
+ap
+UM
+fQ
+xy
+WA
+UM
+IR
+IR
+IR
+IR
+"}
+(47,1,1) = {"
+IR
+IR
+IR
+YG
+YG
+YG
+MS
+AE
+YG
+YG
+YG
+YG
+YG
+TR
+YG
+Fe
+RD
+WA
+EC
+HR
+HR
+HR
+yr
+Ze
+HR
+zz
+Bt
+Qr
+UM
+VR
+UM
+IR
+UM
+RD
+UM
+IR
+IR
+IR
+IR
+IR
+IR
+"}
+(48,1,1) = {"
+IR
+IR
+IR
+IR
+YG
+YG
+YG
+YG
+YG
+YG
+YG
+YG
+qz
+YG
+YG
+IR
+IR
+ap
+Sb
+HR
+Yr
+Bt
+HR
+Qr
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+xy
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+"}
+(49,1,1) = {"
+IR
+IR
+IR
+IR
+YG
+YG
+YG
+YG
+YG
+YG
+YG
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+xy
+UM
+Ze
+HR
+Qx
+ik
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+"}
+(50,1,1) = {"
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+YG
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
+IR
 "}
