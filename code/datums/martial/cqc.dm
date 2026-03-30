@@ -144,7 +144,7 @@
 	log_combat(A, D, "mini slammed (CQC)")
 	var/slowdown_mod = A.equipped_speed_mods()*3
 	for(var/mob/living/carbon/M in oviewers(5,A))
-		if(istype(M,/mob/living/carbon/human) && (M != D) && (!attacked_mobs.Find(M)) && (get_dist(A,M) <= 5) && (!M.stat) && (!M.IsParalyzed()))
+		if(istype(M,/mob/living/carbon/human) && (M != D) && (!attacked_mobs.Find(M)) && (get_dist(A,M) <= 5) && (!M.stat) && (!M.IsParalyzed()) && (M.mind))
 			walk_to(A,M,1,slowdown_mod)
 			sleep(5*slowdown_mod)
 			mini_slam(A,M,attacked_mobs)
@@ -251,7 +251,7 @@
 	to_chat(usr, "[span_notice("CQC Kick")]: Harm Harm. Knocks opponent away. Knocks out stunned or knocked down opponents.")
 	to_chat(usr, "[span_notice("Restrain")]: Grab Grab. Locks opponents into a restraining position, disarm to knock them out with a chokehold.")
 	to_chat(usr, "[span_notice("Pressure")]: Disarm Grab. Decent stamina damage.")
-	to_chat(usr, "[span_notice("Consecutive CQC")]: Disarm Disarm Harm. Mainly offensive move, huge damage and decent stamina damage.")
+	to_chat(usr, "[span_notice("Consecutive CQC")]: Disarm Disarm Harm. Crowd control move. Allows to dash from target to target, knocking each one down.") //[CELADON-EDIT] - Desc update
 
 	to_chat(usr, "<b><i>In addition, by having your throw mode on when being attacked, you enter an active defense mode where you have a chance to block and sometimes even counter attacks done to you.</i></b>")
 
