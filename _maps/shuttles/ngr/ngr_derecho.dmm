@@ -1679,6 +1679,18 @@
 	},
 /turf/open/floor/carpet/black,
 /area/ship/crew/dorm)
+"oH" = (
+/obj/effect/spawner/bunk_bed,
+/obj/structure/curtain/bounty,
+/obj/structure/sign/poster/rilena/random{
+	pixel_x = -32
+	},
+/obj/item/trash/gummycarps{
+	pixel_x = 5;
+	pixel_y = 8
+	},
+/turf/open/floor/carpet/red,
+/area/ship/crew)
 "oQ" = (
 /obj/structure/railing{
 	dir = 1
@@ -3410,18 +3422,6 @@
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/aft)
-"CU" = (
-/obj/structure/rack,
-/obj/item/gun/energy/plasmacutter{
-	pixel_y = 15
-	},
-/obj/machinery/airalarm/directional/south,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/gear_pack/anglegrinder{
-	pixel_y = 3
-	},
-/turf/open/floor/pod,
-/area/ship/storage/equip)
 "CX" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 1
@@ -4271,6 +4271,18 @@
 "Ld" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew/cryo)
+"Lt" = (
+/obj/structure/rack,
+/obj/item/gun/energy/plasmacutter{
+	pixel_y = 15
+	},
+/obj/machinery/airalarm/directional/south,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/gear_pack/anglegrinder{
+	pixel_y = 3
+	},
+/turf/open/floor/pod,
+/area/ship/storage/equip)
 "LC" = (
 /obj/structure/closet/crate/trashcart,
 /obj/effect/turf_decal/industrial/outline{
@@ -5776,18 +5788,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/aft)
-"XM" = (
-/obj/effect/spawner/bunk_bed,
-/obj/structure/curtain/bounty,
-/obj/structure/sign/poster/rilena/random{
-	pixel_x = -32
-	},
-/obj/item/trash/cheesie{
-	pixel_x = 5;
-	pixel_y = 8
-	},
-/turf/open/floor/carpet/red,
-/area/ship/crew)
 "XR" = (
 /obj/structure/sink/kitchen{
 	dir = 8
@@ -6250,7 +6250,7 @@ aS
 TW
 RP
 VC
-XM
+oH
 wG
 RD
 iZ
@@ -6467,7 +6467,7 @@ bM
 AZ
 AZ
 JS
-CU
+Lt
 rL
 MB
 cE
