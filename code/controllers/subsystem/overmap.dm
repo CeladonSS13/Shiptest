@@ -62,7 +62,7 @@ SUBSYSTEM_DEF(overmap)
 	events = list()
 
 	// [CELADON-EDIT]
-	// OLD_CODE: var/list/sector_types = pick(subtypesof(/datum/overmap_star_system/safezone))
+	// OLD_CODE: 	var/list/sector_types = pick(subtypesof(/datum/overmap_star_system/safezone) - /datum/overmap_star_system/safezone/json_example)
 	var/list/sector_types = pick(subtypesof(/datum/overmap_star_system/shiptest/elysium))
 	// [/CELADON-EDIT]
 
