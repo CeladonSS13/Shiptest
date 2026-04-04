@@ -398,15 +398,12 @@
 	anchored = 1
 	},
 /obj/item/gun/energy/e_gun/e_old/iot{
-	pixel_x = 0;
 	pixel_y = 3
 	},
 /obj/item/gun/energy/e_gun/advtaser{
-	pixel_x = 0;
 	pixel_y = 9
 	},
 /obj/item/gun/energy/e_gun/e_old/smg{
-	pixel_x = 0;
 	pixel_y = -4
 	},
 /turf/open/floor/plasteel/tech,
@@ -455,7 +452,6 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "eR" = (
-/obj/machinery/light/directional/east,
 /obj/machinery/computer/helm{
 	dir = 8;
 	icon_state = "computer-middle"
@@ -466,6 +462,10 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 4
 	},
+/obj/item/radio/intercom/directional/east{
+	pixel_x = 28
+	},
+/obj/machinery/light/directional/east,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "fx" = (
@@ -774,7 +774,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
 "jz" = (
-/obj/item/radio/intercom/directional/east,
+/obj/item/radio/intercom/faction/nanotrasen/command/directional/east,
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 6
 	},
@@ -834,9 +834,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "lg" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -949,7 +947,6 @@
 /obj/machinery/button/door{
 	dir = 4;
 	pixel_x = -23;
-	pixel_y = 0;
 	id = "slasher_bridge";
 	name = "bridge shutters"
 	},
@@ -1772,10 +1769,7 @@
 	dir = 4
 	},
 /obj/structure/table/reinforced/titaniumglass,
-/obj/machinery/microwave{
-	pixel_x = 0;
-	pixel_y = 0
-	},
+/obj/machinery/microwave,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "yJ" = (
@@ -1808,9 +1802,7 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "zs" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -1954,9 +1946,7 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "AS" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -2078,9 +2068,7 @@
 /turf/open/floor/engine/hull,
 /area/ship/hallway/central)
 "Dh" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -2245,7 +2233,6 @@
 	},
 /obj/structure/table/optable,
 /obj/machinery/defibrillator_mount/loaded{
-	pixel_x = 0;
 	pixel_y = 24
 	},
 /obj/machinery/iv_drip,
@@ -2622,10 +2609,7 @@
 /obj/structure/cable{
 	icon_state = "4-6"
 	},
-/obj/machinery/airalarm/directional/south{
-	pixel_x = 0;
-	pixel_y = -27
-	},
+/obj/machinery/airalarm/directional/south,
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/suit/space/hardsuit/ert/lp/engi{
 	name = "Engineering Technician Hardsuit"
@@ -2908,12 +2892,10 @@
 	name = "autolathe supplies locker"
 	},
 /obj/item/stack/sheet/metal/twenty{
-	pixel_x = -7;
-	pixel_y = 0
+	pixel_x = -7
 	},
 /obj/item/stack/sheet/glass/twenty{
-	pixel_x = 7;
-	pixel_y = 0
+	pixel_x = 7
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)

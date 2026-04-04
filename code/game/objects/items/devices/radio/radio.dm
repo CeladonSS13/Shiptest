@@ -295,7 +295,7 @@
 	signal.data["sfx"] = 'sound/effects/radio_chatter.ogg'
 
 	// Independent radios, on the CentCom frequency, reach all independent radios
-	if (independent && (freq == FREQ_CENTCOM || freq == FREQ_WIDEBAND))
+	if (independent && (freq == FREQ_CENTCOM || freq == FREQ_WIDEBAND || freq == FREQ_SYNDICATE_LONG || freq == FREQ_SUNS_LONG || freq == FREQ_INTEQ_LONG || freq == FREQ_ELYSIUM_LONG || freq == FREQ_NANOTRASEN_LONG || freq == FREQ_SOLFED_LONG || freq == FREQ_VOX_LONG || freq == FREQ_RAMZI_LONG || freq == FREQ_PIRATE_LONG))
 		signal.data["compression"] = 0
 		signal.transmission_method = TRANSMISSION_SUPERSPACE
 		signal.map_zones = list(0)  // reaches all Z-levels
@@ -315,15 +315,8 @@
 	signal.send_to_receivers()
 
 	// If the radio is subspace-only, that's all it can do
-	if (subspace_transmission && (freq == FREQ_WIDEBAND))
-		signal.data["compression"] = 0
-		signal.transmission_method = TRANSMISSION_SUPERSPACE
-		signal.map_zones = list(0)  // reaches all Z-levels
-		signal.broadcast()
-		playsound(src, "sound/effects/walkietalkie.ogg", 20, FALSE)
-	else
-		if (subspace_transmission)
-			return
+	if (subspace_transmission)
+		return
 
 	// Non-subspace radios will check in a couple of seconds, and if the signal
 	// was never received, send a mundane broadcast (no headsets).
@@ -493,3 +486,74 @@
 	name = "old radio"
 	icon_state = "radio"
 	desc = "An old handheld radio. You could use it, if you really wanted to."
+
+// [CELADON-ADD] - FACTION_RADIO
+/obj/item/radio/transceiver
+	name = "transceiver"
+	desc = "A tactical communications device for those times when you need it."
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/radio.dmi'
+	icon_state = "walkietalkiesec"
+	item_state = "walkietalkiesec"
+	freerange = TRUE
+	frequency = FREQ_EMERGENCY
+	freqlock = TRUE
+
+// MARK: Фракционные рации
+// Можно купить в карго
+/obj/item/radio/transceiver/nanotrasen
+	name = "nanotrasen transceiver"
+	icon_state = "walkietalkie_nt"
+	frequency = FREQ_NANOTRASEN
+	keyslot = /obj/item/encryptionkey/nanotrasen
+
+/obj/item/radio/transceiver/syndicate
+	name = "syndicate transceiver"
+	icon_state = "walkietalkie_syndi"
+	frequency = FREQ_SYNDICATE
+	keyslot = /obj/item/encryptionkey/syndicate
+
+/obj/item/radio/transceiver/solfed
+	name = "solfed transceiver"
+	icon_state = "walkietalkie_sf"
+	frequency = FREQ_SOLFED
+	keyslot = /obj/item/encryptionkey/solgov
+
+/obj/item/radio/transceiver/inteq
+	name = "inteq transceiver"
+	icon_state = "walkietalkie_inteq"
+	frequency = FREQ_INTEQ
+	keyslot = /obj/item/encryptionkey/inteq
+
+// Не встречаются в игре, нельзя найти
+/obj/item/radio/transceiver/pirate
+	name = "unidentified transceiver"
+	icon_state = "walkietalkie_pirate"
+	frequency = FREQ_PIRATE
+	keyslot = /obj/item/encryptionkey/pirate
+
+/obj/item/radio/transceiver/elysium
+	name = "elysium transceiver"
+	icon_state = "walkietalkie_eusm"
+	frequency = FREQ_ELYSIUM
+	keyslot = /obj/item/encryptionkey/elysium
+
+/obj/item/radio/transceiver/ramzi
+	name = "ramzi transceiver"
+	icon_state = "walkietalkie_ramzi"
+	frequency = FREQ_RAMZI
+	keyslot = /obj/item/encryptionkey/ramzi
+
+/obj/item/radio/transceiver/vox
+	name = "raider transceiver"
+	icon_state = "walkietalkie_vox"
+	frequency = FREQ_VOX
+	keyslot = /obj/item/encryptionkey/vox
+
+/obj/item/radio/transceiver/suns
+	name = "suns transceiver"
+	icon_state = "walkietalkie_suns"
+	frequency = FREQ_SUNS
+	keyslot = /obj/item/encryptionkey/syndicate/suns
+	//keyslot2 = /obj/item/encryptionkey/suns
+
+// [/CELADON-ADD]

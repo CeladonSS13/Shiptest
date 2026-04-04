@@ -233,8 +233,7 @@
 "cc" = (
 /obj/machinery/atmospherics/pipe/simple/green/hidden/layer4,
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plasteel/tech/grid,
@@ -242,8 +241,7 @@
 "cf" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
@@ -1409,8 +1407,7 @@
 /area/ship/bridge)
 "ow" = (
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
@@ -1599,9 +1596,7 @@
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "qc" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -1928,8 +1923,7 @@
 	dir = 1
 	},
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2130,8 +2124,7 @@
 /area/ship/engineering)
 "wI" = (
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel/heavymetal/var3,
@@ -2157,9 +2150,7 @@
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "xy" = (
-/obj/machinery/power/shuttle/engine/electric/premium{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric/premium,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -2186,9 +2177,7 @@
 /turf/open/floor/carpet/royalblack,
 /area/ship/crew/dorm/dormtwo)
 "xL" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -2558,9 +2547,7 @@
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm/dormtwo)
 "Ar" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "teardrop_eng"
@@ -3189,9 +3176,7 @@
 	pixel_y = -12
 	},
 /obj/structure/platform,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/engineering)
 "Ik" = (
@@ -3315,6 +3300,9 @@
 /area/ship/engineering)
 "JZ" = (
 /obj/machinery/light/directional/west,
+/obj/item/radio/intercom/faction/nanotrasen/command/directional/west{
+	pixel_x = -28
+	},
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/bridge)
 "Ke" = (
@@ -3348,9 +3336,7 @@
 "KE" = (
 /obj/machinery/atmospherics/pipe/simple/green/hidden/layer4,
 /obj/machinery/power/terminal,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
@@ -3644,9 +3630,7 @@
 /obj/machinery/recharger{
 	pixel_x = 5
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/security)
@@ -4350,8 +4334,7 @@
 	},
 /obj/effect/turf_decal/industrial/traffic/corner,
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)

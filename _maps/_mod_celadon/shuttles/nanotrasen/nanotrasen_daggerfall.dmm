@@ -244,7 +244,6 @@
 /area/ship/medical)
 "cU" = (
 /obj/structure/sign/departments/security{
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /obj/effect/turf_decal/trimline/opaque/pink/line{
@@ -846,9 +845,7 @@
 	dir = 10
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/structure/bodycontainer/morgue{
 	dir = 1
 	},
@@ -881,9 +878,7 @@
 /area/ship/cargo)
 "lG" = (
 /obj/structure/window/plasma/reinforced/spawner/west,
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "dagger_engg"
@@ -968,9 +963,7 @@
 /obj/structure/sign/nanotrasen/vigilitas{
 	pixel_y = -32
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
-	dir = 2
-	},
+/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters,
 /obj/structure/marker_beacon,
 /turf/open/floor/engine/hull,
 /area/ship/external)
@@ -1013,9 +1006,7 @@
 /area/ship/engineering/electrical)
 "nG" = (
 /obj/structure/window/plasma/reinforced/spawner/west,
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "dagger_eng"
@@ -1280,7 +1271,6 @@
 /area/ship/cargo)
 "rL" = (
 /obj/structure/sign/departments/security{
-	pixel_x = 0;
 	pixel_y = -32
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -1528,9 +1518,7 @@
 /area/ship/crew/canteen/kitchen)
 "ua" = (
 /obj/structure/window/plasma/reinforced/spawner/west,
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "dagger_eng"
@@ -1579,12 +1567,8 @@
 /obj/structure/guncloset{
 	anchored = 1
 	},
-/obj/item/gun/ballistic/automatic/smg/wt550{
-	pixel_x = 0;
-	pixel_y = 0
-	},
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/gun/energy/e_gun/e_old/iot{
-	pixel_x = 0;
 	pixel_y = -6
 	},
 /obj/item/gun/energy/kalix,
@@ -1688,8 +1672,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /turf/open/floor/plasteel/heavymetal,
 /area/ship/engineering/electrical)
@@ -1707,8 +1690,7 @@
 	pixel_y = 3
 	},
 /obj/item/binoculars{
-	pixel_x = 7;
-	pixel_y = 0
+	pixel_x = 7
 	},
 /obj/machinery/light/colored/red{
 	dir = 4
@@ -2573,7 +2555,6 @@
 	dir = 9
 	},
 /obj/structure/sign/poster/nanotrasen/vigilitas_nonlethal{
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /obj/machinery/suit_storage_unit/inherit,
@@ -2725,9 +2706,7 @@
 /obj/machinery/power/apc/auto_name/directional/south{
 	pixel_x = 6
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/light_switch{
 	pixel_x = -8;
 	pixel_y = -20;
@@ -3313,6 +3292,7 @@
 /obj/effect/turf_decal/corner/opaque/ntblue/border{
 	dir = 10
 	},
+/obj/item/radio/intercom/faction/nanotrasen/command/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Pm" = (
@@ -3441,8 +3421,7 @@
 /area/ship/storage)
 "Qq" = (
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -3468,9 +3447,7 @@
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering/electrical)
 "QP" = (
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/effect/turf_decal/nanotrasen/ns/bottom,
 /obj/machinery/light_switch{
 	pixel_x = -8;
@@ -4110,9 +4087,7 @@
 /area/ship/crew/canteen/kitchen)
 "Zh" = (
 /obj/structure/window/plasma/reinforced/spawner/west,
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "dagger_engg"

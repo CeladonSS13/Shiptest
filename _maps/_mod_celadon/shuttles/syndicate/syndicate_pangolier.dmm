@@ -1121,7 +1121,6 @@
 	},
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
-	icon_state = "rwindow";
 	dir = 8
 	},
 /obj/machinery/door/poddoor{
@@ -1740,6 +1739,7 @@
 /obj/effect/turf_decal/corner/opaque/syndiered/three_quarters{
 	dir = 8
 	},
+/obj/item/radio/intercom/faction/syndicate/command/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "rL" = (
@@ -2242,7 +2242,6 @@
 	icon_state = "0-8"
 	},
 /obj/structure/window/reinforced{
-	icon_state = "rwindow";
 	dir = 8
 	},
 /obj/machinery/door/poddoor{
@@ -2284,7 +2283,6 @@
 	icon_state = "0-8"
 	},
 /obj/structure/window/reinforced{
-	icon_state = "rwindow";
 	dir = 8
 	},
 /obj/structure/window/reinforced,
@@ -2327,7 +2325,6 @@
 	icon_state = "0-8"
 	},
 /obj/structure/window/reinforced{
-	icon_state = "rwindow";
 	dir = 8
 	},
 /obj/structure/window/reinforced{
@@ -2515,9 +2512,7 @@
 	pixel_y = 5
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/light/small/directional/west{
 	pixel_y = -7
 	},
@@ -3062,9 +3057,7 @@
 /area/ship/bridge)
 "GR" = (
 /obj/effect/turf_decal/spline/fancy/opaque/black,
-/obj/effect/turf_decal/corner/opaque/syndiered/half{
-	dir = 2
-	},
+/obj/effect/turf_decal/corner/opaque/syndiered/half,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "Hf" = (
@@ -3251,7 +3244,6 @@
 /area/ship/security)
 "IK" = (
 /obj/structure/window/reinforced{
-	icon_state = "rwindow";
 	dir = 8
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/syndiered{
@@ -3814,7 +3806,6 @@
 /area/ship/bridge)
 "LO" = (
 /obj/structure/window/reinforced{
-	icon_state = "rwindow";
 	dir = 8
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/syndiered{
@@ -4035,8 +4026,7 @@
 /area/ship/cargo)
 "NS" = (
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4409,8 +4399,7 @@
 	dir = 6
 	},
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
@@ -4551,6 +4540,7 @@
 /obj/machinery/light/directional/east,
 /obj/item/mod/module/storage/syndicate,
 /obj/item/mod/module/storage/syndicate,
+/obj/item/radio/intercom/faction/syndicate/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "TW" = (
@@ -5139,9 +5129,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/engineering)
 "XW" = (
-/obj/effect/turf_decal/corner/opaque/syndiered/half{
-	dir = 2
-	},
+/obj/effect/turf_decal/corner/opaque/syndiered/half,
 /obj/effect/turf_decal/spline/fancy/opaque/black,
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/paper_bin{

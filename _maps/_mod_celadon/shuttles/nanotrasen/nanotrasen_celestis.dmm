@@ -93,7 +93,6 @@
 	dir = 8
 	},
 /obj/machinery/light_switch{
-	pixel_x = 0;
 	pixel_y = 24
 	},
 /obj/machinery/airalarm/directional/east,
@@ -128,7 +127,6 @@
 /obj/effect/turf_decal/spline/fancy/opaque/ntblue,
 /obj/machinery/light_switch{
 	dir = 1;
-	pixel_x = 0;
 	pixel_y = -21
 	},
 /turf/open/floor/plasteel/mono,
@@ -251,7 +249,6 @@
 	},
 /obj/structure/closet/wall/white/med{
 	name = "medical supplies locker";
-	pixel_y = 0;
 	dir = 8;
 	pixel_x = -31
 	},
@@ -341,7 +338,6 @@
 /area/ship/engineering/engines/port)
 "cD" = (
 /obj/structure/sign/nanotrasen/ns{
-	pixel_x = 0;
 	pixel_y = -32
 	},
 /obj/effect/turf_decal/industrial/warning{
@@ -700,8 +696,7 @@
 "eL" = (
 /obj/effect/landmark/start/quartermaster,
 /obj/structure/sign/poster/nanotrasen/ns_logistics_ad{
-	pixel_x = -32;
-	pixel_y = 0
+	pixel_x = -32
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
@@ -794,7 +789,6 @@
 /area/ship/general/science)
 "ff" = (
 /obj/machinery/vending/boozeomat{
-	pixel_x = 0;
 	pixel_y = -32;
 	density = 0
 	},
@@ -816,8 +810,7 @@
 /obj/structure/railing,
 /obj/structure/table,
 /obj/item/paper_bin{
-	pixel_x = 5;
-	pixel_y = 0
+	pixel_x = 5
 	},
 /obj/item/destTagger{
 	pixel_x = 4;
@@ -1465,8 +1458,7 @@
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/recharger{
-	pixel_x = -4;
-	pixel_y = 0
+	pixel_x = -4
 	},
 /obj/item/paper_bin{
 	pixel_x = 8
@@ -1756,9 +1748,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "ky" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -1904,7 +1894,6 @@
 	dir = 9
 	},
 /obj/machinery/camera/autoname{
-	dir = 2;
 	network = list("GEC")
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -2024,7 +2013,6 @@
 /area/ship/engineering/engines/port)
 "mo" = (
 /obj/machinery/camera/autoname{
-	dir = 2;
 	network = list("GEC")
 	},
 /obj/structure/cable{
@@ -2289,12 +2277,6 @@
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
-"ok" = (
-/turf/closed/wall/mineral/titanium{
-	pixel_x = 0;
-	pixel_y = 0
-	},
-/area/ship/bridge)
 "om" = (
 /obj/structure/sink{
 	dir = 8;
@@ -2392,7 +2374,6 @@
 /area/ship/hallway/central)
 "oy" = (
 /obj/machinery/door/airlock/engineering{
-	dir = 2;
 	name = "Engine";
 	req_access_txt = "10"
 	},
@@ -2557,9 +2538,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/general/science)
 "ps" = (
-/obj/structure/bodycontainer/morgue{
-	dir = 4
-	},
+/obj/structure/bodycontainer/morgue,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "pu" = (
@@ -2643,7 +2622,6 @@
 /obj/structure/filingcabinet/double{
 	dir = 4;
 	pixel_x = -16;
-	pixel_y = 0;
 	density = 0
 	},
 /obj/structure/cable{
@@ -2682,7 +2660,6 @@
 "qf" = (
 /obj/structure/table/optable,
 /obj/machinery/defibrillator_mount/loaded{
-	pixel_x = 0;
 	pixel_y = 24
 	},
 /turf/open/floor/plasteel/showroomfloor,
@@ -2702,8 +2679,7 @@
 /area/ship/science/ai_chamber)
 "qn" = (
 /obj/structure/cabinet/fireaxe{
-	pixel_x = 32;
-	pixel_y = 0
+	pixel_x = 32
 	},
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer/upgraded{
@@ -2992,7 +2968,6 @@
 	dir = 1
 	},
 /obj/machinery/vending/wallmed/ship{
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /obj/machinery/airalarm/directional/west,
@@ -3028,7 +3003,6 @@
 /obj/structure/window/reinforced,
 /obj/machinery/computer/med_data/laptop{
 	dir = 1;
-	pixel_x = 0;
 	pixel_y = 5
 	},
 /turf/open/floor/plasteel/white,
@@ -3062,7 +3036,6 @@
 	},
 /obj/item/radio/intercom/wideband/table{
 	dir = 4;
-	pixel_x = 0;
 	pixel_y = -17
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -3111,13 +3084,11 @@
 /area/ship/engineering/engine)
 "se" = (
 /obj/machinery/smartfridge/bloodbank/preloaded{
-	pixel_x = 0;
 	pixel_y = -32;
 	density = 0
 	},
 /obj/structure/sign/nanotrasen/deforest{
-	pixel_x = 32;
-	pixel_y = 0
+	pixel_x = 32
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -3158,7 +3129,6 @@
 "sl" = (
 /obj/structure/table/wood/reinforced,
 /obj/structure/sign/nanotrasen{
-	pixel_x = 0;
 	pixel_y = -32
 	},
 /obj/item/paper_bin{
@@ -3403,7 +3373,6 @@
 	},
 /obj/item/radio/intercom/table{
 	dir = 4;
-	pixel_x = 0;
 	pixel_y = 15;
 	layer = 3.2
 	},
@@ -3796,8 +3765,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/sign/nanotrasen/nakamura{
-	pixel_x = 32;
-	pixel_y = 0
+	pixel_x = 32
 	},
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 1
@@ -4128,7 +4096,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/landmark/start/medical_doctor,
 /obj/structure/sign/poster/nanotrasen/deforest_hypospray{
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/white,
@@ -4151,9 +4118,7 @@
 	id = "celestis_centralengines";
 	dir = 4
 	},
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "yD" = (
@@ -4308,7 +4273,6 @@
 "zu" = (
 /obj/structure/table,
 /obj/item/storage/box/beakers{
-	pixel_x = 0;
 	pixel_y = 3
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/purple{
@@ -4996,7 +4960,6 @@
 /obj/effect/turf_decal/trimline/opaque/ntblue/line,
 /obj/effect/turf_decal/spline/fancy/opaque/vired,
 /obj/structure/sign/departments/security{
-	pixel_x = 0;
 	pixel_y = -32
 	},
 /obj/structure/cable{
@@ -5191,8 +5154,7 @@
 	pixel_y = 3
 	},
 /obj/item/encryptionkey/nanotrasen{
-	pixel_x = 4;
-	pixel_y = 0
+	pixel_x = 4
 	},
 /obj/item/encryptionkey/nanotrasen{
 	pixel_x = 4;
@@ -5383,6 +5345,7 @@
 	dir = 10;
 	layer = 4.1
 	},
+/obj/item/radio/intercom/faction/nanotrasen/command/directional/north,
 /turf/open/floor/circuit,
 /area/ship/science/ai_chamber)
 "FN" = (
@@ -5980,7 +5943,6 @@
 /obj/machinery/light/small/directional/west,
 /obj/machinery/rnd/server,
 /obj/machinery/turretid/ship{
-	pixel_x = 0;
 	pixel_y = -23;
 	id = "celestis_ai"
 	},
@@ -6572,9 +6534,7 @@
 /turf/closed/wall/mineral/titanium,
 /area/ship/cargo)
 "Oa" = (
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -6614,7 +6574,6 @@
 /area/ship/engineering/engines/port)
 "Op" = (
 /obj/machinery/door/airlock/engineering{
-	dir = 2;
 	name = "Engine";
 	req_access_txt = "10"
 	},
@@ -6724,6 +6683,7 @@
 	pixel_x = 21;
 	pixel_y = 11
 	},
+/obj/item/radio/intercom/faction/nanotrasen/directional/south,
 /turf/open/floor/circuit,
 /area/ship/science/ai_chamber)
 "OP" = (
@@ -6733,8 +6693,7 @@
 	pixel_y = 10
 	},
 /obj/item/reagent_containers/food/drinks/coffee{
-	pixel_x = 2;
-	pixel_y = 0
+	pixel_x = 2
 	},
 /obj/item/reagent_containers/food/drinks/coffee{
 	pixel_y = 6;
@@ -6885,9 +6844,7 @@
 	id = "celestis_centralengines";
 	dir = 4
 	},
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "PI" = (
@@ -7177,7 +7134,6 @@
 /area/ship/engineering/engine)
 "Rx" = (
 /obj/machinery/door/airlock/engineering{
-	dir = 2;
 	name = "Engine";
 	req_access_txt = "10"
 	},
@@ -7486,9 +7442,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/engine)
 "SW" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -7545,7 +7499,6 @@
 	dir = 1
 	},
 /obj/structure/filingcabinet/chestdrawer{
-	pixel_x = 0;
 	pixel_y = 25;
 	density = 0
 	},
@@ -7844,7 +7797,6 @@
 	req_access_txt = "2"
 	},
 /obj/item/gun/energy/e_gun/e_old/iot{
-	pixel_x = 0;
 	pixel_y = -6
 	},
 /obj/item/gun/ballistic/automatic/smg/vector,
@@ -7905,8 +7857,7 @@
 	pixel_y = 9
 	},
 /obj/item/reagent_containers/condiment/peppermill{
-	pixel_x = -8;
-	pixel_y = 0
+	pixel_x = -8
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
@@ -7914,7 +7865,6 @@
 /obj/structure/table/glass,
 /obj/item/clothing/gloves/color/latex/nitrile,
 /obj/item/storage/case/surgery{
-	pixel_x = 0;
 	pixel_y = 2
 	},
 /obj/machinery/camera,
@@ -7962,7 +7912,6 @@
 	},
 /obj/machinery/atmospherics/pipe/layer_manifold/visible,
 /obj/structure/sign/poster/nanotrasen/nakamura_advtools{
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/patterned,
@@ -8054,8 +8003,7 @@
 "WR" = (
 /obj/structure/sink{
 	dir = 8;
-	pixel_x = 12;
-	pixel_y = 0
+	pixel_x = 12
 	},
 /obj/structure/mirror{
 	pixel_x = 24
@@ -8094,7 +8042,6 @@
 "Xe" = (
 /obj/structure/table/glass,
 /obj/item/storage/fancy/donut_box{
-	pixel_x = 0;
 	pixel_y = -5
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -8290,7 +8237,6 @@
 /obj/structure/table/glass,
 /obj/item/clothing/gloves/color/latex/nitrile,
 /obj/item/storage/case/surgery{
-	pixel_x = 0;
 	pixel_y = 2
 	},
 /turf/open/floor/plasteel/dark,
@@ -8367,8 +8313,7 @@
 /area/ship/crew/law_office)
 "Zt" = (
 /obj/structure/sign/nanotrasen/nakamura{
-	pixel_x = 32;
-	pixel_y = 0
+	pixel_x = 32
 	},
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 8
@@ -9275,7 +9220,7 @@ jj
 YC
 cL
 LZ
-ok
+RE
 PI
 Dl
 kd

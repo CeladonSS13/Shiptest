@@ -19,7 +19,6 @@
 	pixel_x = 8
 	},
 /turf/open/floor/plasteel/stairs{
-	dir = 2;
 	icon = 'icons/obj/stairs.dmi'
 	},
 /area/ship/engineering)
@@ -929,9 +928,7 @@
 /obj/machinery/advanced_airlock_controller{
 	pixel_y = -30
 	},
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer2{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hallway/central)
@@ -1258,9 +1255,7 @@
 /turf/open/floor/plating/airless,
 /area/ship/construction)
 "lJ" = (
-/obj/machinery/atmospherics/pipe/simple/purple/hidden{
-	dir = 2
-	},
+/obj/machinery/atmospherics/pipe/simple/purple/hidden,
 /obj/structure/railing{
 	pixel_y = -7
 	},
@@ -1429,9 +1424,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "nU" = (
-/obj/machinery/atmospherics/pipe/simple/purple/hidden{
-	dir = 2
-	},
+/obj/machinery/atmospherics/pipe/simple/purple/hidden,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/steeldecal/steel_decals10{
 	dir = 6
@@ -1527,9 +1520,7 @@
 	pixel_y = -30
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer2{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer2,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/atmospherics)
 "oZ" = (
@@ -1738,7 +1729,6 @@
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /obj/machinery/suit_storage_unit/standard_unit,
 /obj/machinery/camera/autoname{
-	dir = 2;
 	network = list("GEC")
 	},
 /turf/open/floor/plasteel/mono/dark,
@@ -2847,9 +2837,7 @@
 /area/ship/hallway/central)
 "yX" = (
 /obj/machinery/light/small/directional/south,
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer2{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/shower{
 	dir = 4
@@ -3143,9 +3131,7 @@
 	color = "#8D8B8B";
 	layer = 2.1
 	},
-/obj/machinery/atmospherics/pipe/simple/purple/hidden{
-	dir = 2
-	},
+/obj/machinery/atmospherics/pipe/simple/purple/hidden,
 /turf/open/floor/plating{
 	color = "#8D8B8B";
 	icon_state = "elevatorshaft"
@@ -3365,9 +3351,7 @@
 /turf/open/floor/plating/airless,
 /area/ship/construction)
 "CY" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -3389,7 +3373,6 @@
 	dir = 4
 	},
 /obj/machinery/camera/autoname{
-	dir = 2;
 	network = list("GEC")
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3492,7 +3475,6 @@
 	color = "#4c535b"
 	},
 /obj/machinery/button/door{
-	dir = 2;
 	id = "airmixchamber";
 	name = "Air Mix Drain";
 	pixel_x = 25;
@@ -3722,15 +3704,16 @@
 /area/ship/cargo)
 "FU" = (
 /obj/structure/table,
-/obj/item/flashlight/lamp{
-	pixel_x = -4;
-	pixel_y = 8
-	},
 /obj/item/stamp/syndicate{
 	pixel_x = 8
 	},
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 9
+	},
+/obj/item/radio/intercom/faction/syndicate/directional/north,
+/obj/item/flashlight/lamp{
+	pixel_x = -4;
+	pixel_y = 8
 	},
 /turf/open/floor/carpet/red,
 /area/ship/bridge)
@@ -3866,9 +3849,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "He" = (
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -4111,9 +4092,7 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "IC" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -4297,7 +4276,6 @@
 /obj/item/clothing/suit/fire/atmos,
 /obj/item/clothing/head/hardhat/atmos,
 /obj/machinery/camera/autoname{
-	dir = 2;
 	network = list("GEC")
 	},
 /obj/structure/closet/secure_closet/atmospherics{
@@ -4431,9 +4409,7 @@
 /area/ship/crew/dorm)
 "KO" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/atmospherics/pipe/simple/purple/hidden{
-	dir = 2
-	},
+/obj/machinery/atmospherics/pipe/simple/purple/hidden,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/catwalk/over/plated_catwalk/white{
 	color = "#4c535b"
@@ -4524,7 +4500,6 @@
 	id = "gec_cargo"
 	},
 /obj/docking_port/mobile{
-	can_move_docking_ports = 1;
 	launch_status = 0;
 	name = "Engineering Project";
 	port_direction = 4;
@@ -4672,9 +4647,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "LI" = (
-/obj/machinery/atmospherics/pipe/simple/purple/hidden{
-	dir = 2
-	},
+/obj/machinery/atmospherics/pipe/simple/purple/hidden,
 /obj/structure/table,
 /obj/item/clipboard,
 /obj/item/pen,
@@ -4791,6 +4764,7 @@
 	dir = 8;
 	networks = list("GEC")
 	},
+/obj/item/radio/intercom/faction/syndicate/command/directional/north,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "Mp" = (
@@ -5180,7 +5154,6 @@
 	color = "#808080"
 	},
 /obj/machinery/camera/autoname{
-	dir = 2;
 	network = list("GEC")
 	},
 /turf/open/floor/plating{
@@ -5189,9 +5162,7 @@
 	},
 /area/ship/crew/dorm)
 "Qy" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/fueled/plasma,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "QI" = (
@@ -5734,9 +5705,7 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/crew/dorm)
 "Uz" = (
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 4;
 	id = "engine_shutters"
@@ -5979,9 +5948,7 @@
 	color = "#8D8B8B";
 	layer = 2.1
 	},
-/obj/machinery/atmospherics/pipe/simple/purple/hidden{
-	dir = 2
-	},
+/obj/machinery/atmospherics/pipe/simple/purple/hidden,
 /turf/open/floor/plating{
 	color = "#8D8B8B";
 	icon_state = "elevatorshaft"
@@ -6043,9 +6010,7 @@
 "XJ" = (
 /obj/machinery/light/small/directional/south,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer2{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer2,
 /obj/machinery/shower{
 	dir = 4
 	},
@@ -6282,7 +6247,6 @@
 	dir = 1
 	},
 /obj/structure/chair/comfy/shuttle{
-	dir = 2;
 	name = "Helm"
 	},
 /obj/structure/catwalk/over/plated_catwalk/white{

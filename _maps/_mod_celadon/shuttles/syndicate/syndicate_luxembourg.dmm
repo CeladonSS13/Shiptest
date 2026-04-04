@@ -309,9 +309,7 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/crew/dorm)
 "fv" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/fueled/plasma,
 /obj/machinery/atmospherics/pipe/layer_manifold{
 	dir = 4
 	},
@@ -769,9 +767,7 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 8
 	},
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/machinery/door/poddoor/shutters{
 	id = "externalshutters";
 	dir = 4
@@ -1097,9 +1093,7 @@
 /obj/item/clothing/head/helmet/space/syndicate,
 /obj/item/clothing/mask/breath,
 /obj/effect/turf_decal/corner/opaque/brown/border,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
@@ -1110,6 +1104,7 @@
 /obj/machinery/computer/helm{
 	dir = 8
 	},
+/obj/item/radio/intercom/faction/syndicate/command/directional/north,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "sw" = (
@@ -1200,9 +1195,7 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/canteen)
 "tX" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/fueled/plasma,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "ub" = (
@@ -1535,9 +1528,7 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "Cn" = (
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/computer/mech_bay_power_console{
 	dir = 1
 	},
@@ -2126,9 +2117,7 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 8
 	},
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/machinery/door/poddoor/shutters{
 	id = "externalshutters";
 	dir = 4
@@ -2627,8 +2616,7 @@
 "Xa" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
+	icon_state = "2-4"
 	},
 /obj/structure/cable{
 	icon_state = "1-4"

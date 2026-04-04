@@ -2442,20 +2442,20 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Fa" = (
-/obj/item/radio/intercom/wideband/directional/north{
-	pixel_x = -1;
-	pixel_y = 28
-	},
-/obj/item/radio/intercom/directional/north{
-	pixel_y = 44;
-	pixel_x = -1
-	},
 /obj/machinery/modular_computer/console/preset/command{
 	dir = 4
 	},
 /obj/machinery/newscaster/directional/west,
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
 	dir = 4
+	},
+/obj/item/radio/intercom/wideband/directional/north{
+	pixel_x = -1;
+	pixel_y = 28
+	},
+/obj/item/radio/intercom/faction/ramzi/directional/north{
+	pixel_x = -1;
+	pixel_y = 44
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
@@ -3222,6 +3222,7 @@
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
 	dir = 4
 	},
+/obj/item/radio/intercom/faction/ramzi/command/directional/east,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "Os" = (
