@@ -309,7 +309,7 @@ em {
   font-weight: bold;
 }
 
-.admin {
+.adminlog {
   color: #4473ff;
   font-weight: bold;
 }
@@ -990,4 +990,56 @@ h2.alert {
     background: hsl(260, 100%, 97.5%);
     border-color: hsla(260, 100%, 50%, 0.5);
   }
+}
+
+//RKz's cute staffwho colors (manually colorpicked from discord role colors, some adjustments used)
+
+//These must match the rank strings exactly to work
+
+.host, .project_lead {
+  color: hsl(27, 80%, 50%);
+}
+
+.head_admin {
+  color: hsl(351, 86.6%, 58%);
+}
+
+.admin {
+  color: hsl(0, 50%, 58%);
+}
+
+.trial_admin {
+  color: hsl(15, 85%, 58%);
+}
+
+.moderator {
+  color: hsl(0, 78.9%, 72.2%);
+}
+
+.development_head {
+  color: hsl(219, 100%, 58.6%);
+}
+
+.coder {
+  color: hsl(227, 96.1%, 69.8%);
+}
+
+.tester {
+  color: hsl(227, 100%, 83.1%);
+}
+
+.head_of_maps {
+  color: hsl(140, 60%, 60%);
+}
+
+.head_of_sprites {
+  color: hsl(290, 81%, 64%);
+}
+
+.mentor {
+  color: hsl(140, 55.1%, 69.4%);
+}
+
+.localhost {
+  color: hsl(46, 98.8%, 68.2%);
 }
