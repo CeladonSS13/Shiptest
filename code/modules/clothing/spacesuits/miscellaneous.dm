@@ -188,6 +188,7 @@ Contains:
 	strip_delay = 130
 	resistance_flags = FIRE_PROOF
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	supports_variations = DIGITIGRADE_VARIATION	// [CELADON-ADD]
 
 	//ERT Security
 /obj/item/clothing/head/helmet/space/hardsuit/ert/sec
