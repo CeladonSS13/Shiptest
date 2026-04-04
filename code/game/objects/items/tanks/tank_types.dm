@@ -14,6 +14,7 @@
 /obj/item/tank/internals/oxygen
 	name = "oxygen tank"
 	desc = "A tank of oxygen, this one is blue."
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/tank.dmi'
 	icon_state = "oxygen"
 	distribute_pressure = TANK_DEFAULT_RELEASE_PRESSURE
 	force = 10
@@ -42,6 +43,7 @@
 /obj/item/tank/internals/anesthetic
 	name = "anesthetic tank"
 	desc = "A tank with an N2O/O2 gas mix."
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/tank.dmi'
 	icon_state = "anesthetic"
 	item_state = "an_tank"
 	force = 10
@@ -78,6 +80,7 @@
 /obj/item/tank/internals/plasmaman
 	name = "plasma internals tank"
 	desc = "A tank of plasma gas designed specifically for use as internals, particularly for plasma-based lifeforms. If you're not a Plasmaman, you probably shouldn't use this."
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/tank.dmi'
 	icon_state = "plasmaman_tank"
 	item_state = "plasmaman_tank"
 	force = 10
@@ -112,6 +115,7 @@
 /obj/item/tank/internals/emergency_oxygen
 	name = "emergency oxygen tank"
 	desc = "Used for emergencies. Contains very little oxygen, so try to conserve it until you actually need it."
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/tank.dmi'
 	icon_state = "emergency"
 	flags_1 = CONDUCT_1
 	slot_flags = ITEM_SLOT_BELT
@@ -151,6 +155,7 @@
 /obj/item/tank/internals/generic
 	name = "gas tank"
 	desc = "A generic tank used for storing and transporting gasses. Can be used for internals."
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/tank.dmi'
 	icon_state = "generic"
 	distribute_pressure = TANK_DEFAULT_RELEASE_PRESSURE
 	force = 10
