@@ -444,8 +444,8 @@
 		dat += "<hr/>"
 	if(SSticker.IsRoundInProgress())
 		dat += "<a href='byond://?src=[REF(src)];[HrefToken()];gamemode_panel=1'>(Game Mode Panel)</a><BR>"
+		dat += "<hr/>"
 	dat += {"
-		<BR>
 		<A href='byond://?src=[REF(src)];[HrefToken()];create_object=1'>Create Object</A><br>
 		<A href='byond://?src=[REF(src)];[HrefToken()];quick_create_object=1'>Quick Create Object</A><br>
 		<A href='byond://?src=[REF(src)];[HrefToken()];create_turf=1'>Create Turf</A><br>
@@ -460,7 +460,6 @@
 	var/datum/browser/popup = new(usr, "admin2", null, 240, 280)
 	popup.set_content(dat)
 	popup.open()
-//	usr << browse(dat, "window=admin2;size=240x280")
 	return
 
 /////////////////////////////////////////////////////////////////////////////////////////////////admins2.dm merge
@@ -868,10 +867,7 @@
 		to_chat(usr, "<b>No AIs located</b>" , confidential = TRUE)
 
 /datum/admins/proc/dynamic_mode_options(mob/user)
-	var/dat = {"
-		<center><B><h2>Dynamic Mode Options</h2></B></center><hr>
-		<br/>
-		<h3>Common options</h3>
+	var/dat = {"<h3>Common options</h3>
 		<i>All these options can be changed midround.</i> <br/>
 		<br/>
 		<b>Force extended:</b> - Option is <a href='byond://?src=[REF(src)];[HrefToken()];f_dynamic_force_extended=1'> <b>[GLOB.dynamic_forced_extended ? "ON" : "OFF"]</a></b>.
@@ -901,9 +897,11 @@
 		Midround injection delay:<br>
 		Minimum: <A href='byond://?src=[REF(src)];[HrefToken()];f_dynamic_roundstart_midround_min=1'>-> [GLOB.dynamic_midround_delay_min / 60 / 10] <-</A> Minutes<br>
 		Maximum: <A href='byond://?src=[REF(src)];[HrefToken()];f_dynamic_roundstart_midround_max=1'>-> [GLOB.dynamic_midround_delay_max / 60 / 10] <-</A> Minutes<br>
-		"}
+	"}
 
-	user << browse(dat, "window=dyn_mode_options;size=900x650")
+	var/datum/browser/browser = new(user, "dyn_mode_options", "Dynamic Mode Options", 900, 650)
+	browser.set_content(dat)
+	browser.open()
 
 /datum/admins/proc/create_or_modify_area()
 	set category = "Debug"
