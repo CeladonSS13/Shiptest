@@ -29,6 +29,7 @@
 
 	/// The total lists of interactions vessels can do with this object. If nothing, then vessels are unable to interact with this object.
 	var/list/interaction_options
+	var/list/interaction_hail
 
 	/// The time, in deciseconds, needed for this object to call
 	var/dock_time
@@ -342,6 +343,20 @@
 	var/choice = tgui_input_list(usr, "What would you like to do at [interact_target]?", "Interact", possible_interactions, timeout = 10 SECONDS)
 	return do_interaction_with(user, interact_target, choice)
 
+
+/datum/overmap/proc/show_hail_menu(mob/living/user, datum/overmap/interact_target)
+	if(!user)
+		return
+	if(!istype(interact_target))
+		CRASH("Overmap datum [src] tried to interact with an invalid overmap datum. What?")
+
+	var/list/possible_interactions = interact_target.get_hail(user, src)
+
+	if(!possible_interactions)
+		return "There is nothing of interest at [interact_target]."
+
+	return do_hail(user, interact_target)
+	
 /**
  * This handles the selection of an interaction
  *
@@ -369,8 +384,6 @@
 			if(docked_to || docking)
 				return "ERROR: Unable to do this currently! Undock first!"
 			return Dock(interact_target)
-		if(INTERACTION_OVERMAP_HAIL)
-			return do_hail(user, interact_target)
 		if(INTERACTION_OVERMAP_INTERDICTION)
 			if(docked_to || docking)
 				return "ERROR: Unable to do this currently! Reduce speed or undock!"
@@ -447,6 +460,8 @@
 /datum/overmap/proc/get_interactions(mob/living/user, datum/overmap/requesting_interactor)
 	return interaction_options
 
+/datum/overmap/proc/get_hail(mob/living/user, datum/overmap/requesting_interactor)
+	return interaction_hail
 /**
  * Gets all the available interaction options.
  *

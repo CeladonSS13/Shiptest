@@ -385,6 +385,12 @@
 				return
 			current_ship.SendSos(name = "[current_ship.name]", x = "[current_ship.x || current_ship.docked_to.x]", y = "[current_ship.y || current_ship.docked_to.y]")
 			return
+		if("hail")
+			var/datum/overmap/to_hail = locate(params["ship_to_act"]) in current_ship.get_nearby_overmap_objects(include_docked = TRUE, empty_if_src_docked = FALSE)
+			var/feedback_text = current_ship.show_hail_menu(usr, to_hail)
+			if(feedback_text)
+				say(feedback_text)
+			return
 		// [/Celadon-ADD]
 		if("act_overmap")
 			if(SSshuttle.jump_mode > BS_JUMP_CALLED)
