@@ -24,6 +24,8 @@ All ShuttleMove procs go here
 
 	clear_adjacencies()
 
+	var/list/injured_mobs = list() // [CELADON-ADD] - Track mobs hit for announcement
+
 	for(var/atom/movable/thing as anything in contents)
 		if(ismob(thing))
 			if(isliving(thing))
@@ -35,20 +37,43 @@ All ShuttleMove procs go here
 				M.stop_pulling()
 				M.visible_message(span_warning("[shuttle] slams into [M]!"))
 				SSblackbox.record_feedback("tally", "shuttle_gib", 1, M.type)
-				log_attack("[key_name(M)] was shuttle gibbed by [shuttle].")
+// [CELADON-EDIT] - Start of shuttle landing
+				log_attack("[key_name(M)] was hit by landing [shuttle].")
+				// Deal massive damage instead of gibbing
 				if(isanimal(M) || isbasicmob(M))
-					qdel(M)
+					qdel(M) // Simple mobs just get deleted for simplicity
 				else
-					//you're going to get, unequivocally, fucked up
+					// Deal heavy damage - enough to crit most players
 					M.apply_damage(400, BRUTE, forced = TRUE, spread_damage = TRUE)
 					M.apply_damage(100, BRUTE, BODY_ZONE_CHEST, forced = TRUE)
 					M.apply_damage(100, BRUTE, BODY_ZONE_HEAD, forced = TRUE)
-					if(istype(M, /mob/living/carbon))
-						var/mob/living/carbon/mob = M
-						for(var/obj/item/bodypart/limb in mob.bodyparts)
-							limb.check_wounding(list(WOUND_BLUNT = 50), 50)
-					M.AddElement(/datum/element/squish, 20 SECONDS)
-					M.spawn_gibs()
+
+					// Find a safe turf outside the shuttle to relocate them
+					var/turf/safe_turf = null
+					var/list/shuttle_areas = shuttle.shuttle_areas
+
+					// Try to find nearby open turfs not in shuttle areas
+					var/list/possible_turfs = list()
+					for(var/turf/open/candidate in orange(src, 25)) // Check within 25 tiles
+						if(!candidate.density && !is_blocked_turf(candidate))
+							var/area/candidate_area = get_area(candidate)
+							if(!(candidate_area in shuttle_areas))
+								if(turf_has_los(src, candidate))
+									possible_turfs += candidate
+
+					// Pick a random safe turf from the list
+					if(length(possible_turfs))
+						safe_turf = pick(possible_turfs)
+
+					// Move them to safety if we found a spot
+					if(safe_turf)
+						M.forceMove(safe_turf)
+						to_chat(M, span_userdanger("You are violently thrown clear of the landing [shuttle]!"))
+					// If no safe turf found, they stay where they are (still heavily damaged)
+
+					// Track this mob for the announcement
+					injured_mobs += M
+// [/CELADON-EDIT]
 
 
 		else //non-living mobs shouldn't be affected by shuttles, which is why this is an else
@@ -59,6 +84,14 @@ All ShuttleMove procs go here
 			if(object.resistance_flags & LANDING_PROOF)
 				continue
 			qdel(thing)
+
+// [CELADON-ADD] - Announce if any players were injured during landing
+	if(length(injured_mobs))
+		var/casualty_count = length(injured_mobs)
+		var/casualty_text = casualty_count == 1 ? "individual was" : "[casualty_count] individuals were"
+
+		priority_announce("WARNING: Landing collision detected. [casualty_text] caught in the landing zone. Sensors indicate critical injuries sustained.", "Collision Alert", 'sound/ai/attention.ogg', sender_override = "[shuttle]", zlevel = shuttle.virtual_z())
+// [/CELADON-ADD]
 
 // Called on the old turf to move the turf data
 /turf/proc/onShuttleMove(turf/newT, list/movement_force, move_dir, shuttle_layers)
@@ -405,13 +438,36 @@ All ShuttleMove procs go here
 		. |= MOVE_CONTENTS
 
 /obj/docking_port/mobile/onShuttleMove(turf/newT, turf/oldT, list/movement_force, move_dir, obj/docking_port/stationary/old_dock, obj/docking_port/mobile/moving_dock, list/obj/docking_port/mobile/towed_shuttles)
-	if(!towed_shuttles[src] && !moving_dock.can_move_docking_ports)
+	//while im sure this thing has never ever been set to false, we check for it anyways
+	if(!moving_dock.can_move_docking_ports)
 		return FALSE
-	. = ..()
+	//are we not being towed by another ship or are we not the ship thats moving? if neither, ignore
+	if(!(towed_shuttles[src] || moving_dock == src))
+		return FALSE
+
+	return ..()
 
 /obj/docking_port/stationary/onShuttleMove(turf/newT, turf/oldT, list/movement_force, move_dir, obj/docking_port/stationary/old_dock, obj/docking_port/mobile/moving_dock, list/obj/docking_port/mobile/towed_shuttles)
-	if(old_dock == src) //Never take our old port
+	//while im sure this thing has never ever been set to false, we check for it anyways
+	if(!moving_dock.can_move_docking_ports)
 		return FALSE
-	if((!(src in moving_dock.docking_points) || !towed_shuttles[docked]) && !moving_dock.can_move_docking_ports)
+		//Never take our old port
+	if(old_dock == src)
 		return FALSE
-	. = ..()
+	//Don't take the docking port from the ship we undocked from, either
+	if(old_dock && old_dock.owner_ship && old_dock.owner_ship.docked == src)
+		return FALSE
+	//are we a stationary docking port of the main docking port? if not, we get ignored
+	if(!(src in moving_dock.docking_points))
+		return FALSE
+	//check if we are a docking port of a towed shuttle, if we are, we get towed along when the mainship moves, if not, we get ignored
+	for(var/obj/docking_port/mobile/checked_port as anything in towed_shuttles)
+		var/port_in_towed_ports = FALSE
+		if(src in checked_port.docking_points)
+			port_in_towed_ports = TRUE
+			break
+		//towed_shuttles[docked]: are we towing a docked ship? If so, let us load. The point of this appears to be to let pre-spawned subshuttles work.
+		//Basically, if we are not in the towed ports OR towing a ship, dont move us.
+		if(!port_in_towed_ports && !towed_shuttles[docked])
+			return FALSE
+	return ..()

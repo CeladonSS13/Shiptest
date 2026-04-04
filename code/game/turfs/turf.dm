@@ -706,3 +706,36 @@ GLOBAL_LIST_EMPTY(created_baseturf_lists)
 		if(turf_to_check.density || LinkBlockedWithAccess(turf_to_check, requester, ID))
 			continue
 		. += turf_to_check
+
+// [CELADON-ADD] - Warning - Not trust this code
+/proc/turf_has_los(var/turf/start, var/turf/end)
+	if(!isturf(start) || !isturf(end))
+		return FALSE
+	if(start == end)
+		return TRUE
+
+	var/dx = end.x - start.x
+	var/dy = end.y - start.y
+	var/dz = end.z - start.z
+	if(dz)
+		return FALSE // Не поддерживаем LOS между разными z
+
+	var/steps = max(abs(dx), abs(dy))
+	if(!steps)
+		return TRUE
+
+	var/step_x = dx / steps
+	var/step_y = dy / steps
+
+	var/x = start.x
+	var/y = start.y
+	var/z = start.z
+
+	for(var/i = 1, i <= steps, i++)
+		x += step_x
+		y += step_y
+		var/turf/T = locate(round(x), round(y), z)
+		if(!T || T.density)
+			return FALSE
+	return TRUE
+// [/CELADON-ADD]

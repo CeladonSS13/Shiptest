@@ -646,6 +646,10 @@
 	if(check_empty(user))
 		return
 
+	if(isbodypart(target))
+		if(color_limb(target, user))
+			return
+
 	if(istype(target, /obj/structure/railing/modern))
 		playsound(user.loc, 'sound/effects/spray.ogg', 25, TRUE, 5)
 		return
@@ -711,6 +715,51 @@
 		var/mutable_appearance/spray_overlay = mutable_appearance('icons/obj/crayons.dmi', "[is_capped ? "spraycan_cap_colors" : "spraycan_colors"]")
 		spray_overlay.color = paint_color
 		. += spray_overlay
+
+/obj/item/toy/crayon/spraycan/proc/color_limb(obj/item/bodypart/limb, mob/living/user)
+	if(!IS_ROBOTIC_LIMB(limb))
+		return FALSE
+
+	var/static/list/type_whitelist = list(/obj/item/bodypart/head/robot, /obj/item/bodypart/r_arm/robot, /obj/item/bodypart/l_arm/robot, /obj/item/bodypart/chest/robot, /obj/item/bodypart/leg/right/robot, /obj/item/bodypart/leg/left/robot)
+	if(!(limb.type in type_whitelist)) //Kepori won't break my system damn it
+		to_chat(user, span_warning("The machine doesn't accept that type of prosthetic!"))
+		return
+
+	var/list/skins = list()
+	var/static/list/style_list_icons = list(
+		"standard" = 'icons/mob/augmentation/augments.dmi',
+		"engineer" = 'icons/mob/augmentation/augments_engineer.dmi',
+		"security" = 'icons/mob/augmentation/augments_security.dmi',
+		"mining" = 'icons/mob/augmentation/augments_mining.dmi',
+		"bishop" = 'mod_celadon/_storage_icons/icons/mobs/augmentation/augments_bishop.dmi',
+		"shellguard" = 'mod_celadon/_storage_icons/icons/mobs/augmentation/augments_shellguard.dmi',
+		"wardtakahashi" = 'mod_celadon/_storage_icons/icons/mobs/augmentation/augments_wardtakahashi.dmi',
+		"xion" = 'mod_celadon/_storage_icons/icons/mobs/augmentation/augments_xion.dmi',
+		"zenghu" = 'mod_celadon/_storage_icons/icons/mobs/augmentation/augments_zenghu.dmi',
+		)
+	var/static/list/digitigrade_style_list = list(
+		"digitigrade" = 'mod_celadon/_storage_icons/icons/mobs/augmentation/digitigrade_legs.dmi',
+		"lizard" = 'icons/mob/augmentation/augments_lizard.dmi',
+		)
+	var/static/list/style_options_list = style_list_icons + digitigrade_style_list
+
+
+	for(var/skin_option in style_options_list)
+		var/image/part_image = image(icon = style_options_list[skin_option], icon_state = "[limb.limb_id]_[limb.body_zone]")
+		if(limb.aux_zone) //Hands
+			part_image.overlays += image(icon = style_options_list[skin_option], icon_state = "[limb.limb_id]_[limb.aux_zone]")
+		skins += list("[skin_option]" = part_image)
+	var/choice = show_radial_menu(user, src, skins, require_near = TRUE)
+	if(choice && (use_charges(user, 5, requires_full = FALSE)))
+		playsound(user.loc, 'sound/effects/spray.ogg', 5, TRUE, 5)
+		limb.static_icon = style_options_list[choice]
+		if(choice in digitigrade_style_list)
+			limb.bodytype |= BODYTYPE_DIGITIGRADE
+		else
+			limb.bodytype &= ~(BODYTYPE_DIGITIGRADE)
+		limb.should_draw_greyscale = TRUE //Premptive fuck you to greyscale IPCs trying to break something
+		limb.update_icon_dropped()
+	return TRUE
 
 /obj/item/toy/crayon/spraycan/borg
 	name = "cyborg spraycan"

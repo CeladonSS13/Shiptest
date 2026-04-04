@@ -26,9 +26,12 @@
 	extra_price = 700
 
 	var/voucher_items = list(
-		"NT-E-Rifle" = /obj/item/gun/energy/sharplite/x12,
-		"E-TAR SMG" = /obj/item/gun/energy/sharplite/l305,
-		"E-SG 500" = /obj/item/gun/energy/sharplite/x46)
+		"NT-E-Rifle" = /obj/item/gun/energy/e_gun/e_old,	// [CELADON-ADD] - CELADON_RETURN_EGUN
+		"E-TAR SMG" = /obj/item/gun/energy/e_gun/e_old/smg,	// [CELADON-ADD] - CELADON_RETURN_EGUN
+		"E-SG 500" = /obj/item/gun/energy/e_gun/e_old/iot)	// [CELADON-ADD] - CELADON_RETURN_EGUN
+//		"NT-E-Rifle" = /obj/item/gun/energy/sharplite/x12,
+//		"E-TAR SMG" = /obj/item/gun/energy/sharplite/l305,
+//		"E-SG 500" = /obj/item/gun/energy/sharplite/x46)
 
 /obj/machinery/vending/security/pre_throw(obj/item/I)
 	if(istype(I, /obj/item/grenade))
@@ -158,11 +161,11 @@
 		"SL AL-655 Energy Rifle" = /obj/item/gun/energy/e_gun/e_old/hades,	// [CELADON-ADD] - CELADON_RETURN_EGUN
 		"NT-E-Rifle" = /obj/item/gun/energy/e_gun/e_old,	// [CELADON-ADD] - CELADON_RETURN_EGUN
 		"E-TAR SMG" = /obj/item/gun/energy/e_gun/e_old/smg,	// [CELADON-ADD] - CELADON_RETURN_EGUN
-		"E-SG 500" = /obj/item/gun/energy/e_gun/e_old/iot,	// [CELADON-ADD] - CELADON_RETURN_EGUN
-		"SL AL-655 Energy Rifle" = /obj/item/gun/energy/sharplite/al655,
-		"NT-E-Rifle" = /obj/item/gun/energy/sharplite/x12,
-		"E-TAR SMG" = /obj/item/gun/energy/sharplite/l305,
-		"E-SG 500" = /obj/item/gun/energy/sharplite/x46)
+		"E-SG 500" = /obj/item/gun/energy/e_gun/e_old/iot)	// [CELADON-ADD] - CELADON_RETURN_EGUN
+		//"SL AL-655 Energy Rifle" = /obj/item/gun/energy/sharplite/al655,
+		//"NT-E-Rifle" = /obj/item/gun/energy/sharplite/x12,
+		//"E-TAR SMG" = /obj/item/gun/energy/sharplite/l305,
+		//"E-SG 500" = /obj/item/gun/energy/sharplite/x46)
 /obj/item/gun_voucher
 	name = "security weapon voucher"
 	desc = "A token used to redeem guns from the SecTech vendor."

@@ -87,19 +87,19 @@
 	var/obj/item/lighter/liz/N = new(H)
 	if(H.put_in_hands(N))
 		to_chat(H, span_notice("You ignite a small flame in your mouth."))
-		// H.remove_reagent(/datum/reagent/fuel, 5)	// [CELADON-ADD] - Вносилось Космо как фикс
-		var/obj/item/organ/stomach/belly = owner.getorganslot(ORGAN_SLOT_STOMACH)
-		belly.reagents.remove_reagent(/datum/reagent/fuel,4)
+		//var/obj/item/organ/stomach/belly = owner.getorganslot(ORGAN_SLOT_STOMACH)
+		//belly.reagents.remove_reagent(/datum/reagent/fuel,4)
+		H.reagents.remove_reagent(/datum/reagent/fuel, 5)
 	else
 		qdel(N)
 		to_chat(H, span_warning("You don't have any free hands."))
 
 /datum/action/innate/liz_lighter/IsAvailable()
 	if(..())
-		// var/mob/living/carbon/human/H = owner	// [CELADON-ADD] - Вносилось Космо как фикс
-		// if(H.reagents && H.has_reagent(/datum/reagent/fuel, 5))	// [CELADON-ADD] - Вносилось Космо как фикс
-		var/obj/item/organ/stomach/belly = owner.getorganslot(ORGAN_SLOT_STOMACH)
-		if(belly && belly.reagents.has_reagent(/datum/reagent/fuel, 4))
+		//var/obj/item/organ/stomach/belly = owner.getorganslot(ORGAN_SLOT_STOMACH)
+		//if(belly && belly.reagents.has_reagent(/datum/reagent/fuel, 4))
+		var/mob/living/carbon/human/H = owner
+		if(H.reagents && H.has_reagent(/datum/reagent/fuel, 5))
 			return TRUE
 		return FALSE
 
