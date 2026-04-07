@@ -201,7 +201,7 @@
 	uniform =  /obj/item/clothing/under/solfed/formal
 	suit = /obj/item/clothing/suit/armor/solgov_trenchcoat
 	shoes = /obj/item/clothing/shoes/laceup
-	head = /obj/item/clothing/head/solfed/beret
+	head = /obj/item/clothing/head/solgov/captain
 	neck = /obj/item/clothing/neck/tie/black
 
 	backpack = /obj/item/storage/backpack/solfed
