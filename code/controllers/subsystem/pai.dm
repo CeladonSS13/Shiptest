@@ -88,6 +88,7 @@ SUBSYSTEM_DEF(pai)
 
 
 	var/dat = ""
+	dat += "<meta charset=\"utf-8\">"
 	dat += {"
 			<style type="text/css">
 
@@ -152,7 +153,7 @@ SUBSYSTEM_DEF(pai)
 	for(var/datum/paiCandidate/c in SSpai.candidates)
 		available.Add(check_ready(c))
 	var/dat = ""
-
+	dat += "<meta charset=\"utf-8\">"
 	dat += {"
 			<style type="text/css">
 
