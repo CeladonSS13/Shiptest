@@ -76,10 +76,18 @@
 
 	species_language_holder = /datum/language_holder/riol
 
-	mutantears = /obj/item/organ/ears/riol		//нужно отделить уши от головы. и можно кинуть их в тот же файл. потом в органе прописать путь к файлу + имя файла
-	mutanteyes = /obj/item/organ/eyes/riol
-	mutanttongue = /obj/item/organ/tongue/riol
-	mutant_organs = list(/obj/item/organ/tail/riol)
+	species_organs = list(
+		ORGAN_SLOT_BRAIN = /obj/item/organ/brain,
+		ORGAN_SLOT_HEART = /obj/item/organ/heart,
+		ORGAN_SLOT_LUNGS = /obj/item/organ/lungs,
+		ORGAN_SLOT_EYES = /obj/item/organ/eyes/riol,
+		ORGAN_SLOT_EARS = /obj/item/organ/ears/riol,
+		ORGAN_SLOT_TONGUE = /obj/item/organ/tongue/riol,
+		ORGAN_SLOT_LIVER = /obj/item/organ/liver,
+		ORGAN_SLOT_STOMACH = /obj/item/organ/stomach,
+		ORGAN_SLOT_APPENDIX = /obj/item/organ/appendix,
+		ORGAN_SLOT_TAIL = /obj/item/organ/tail/riol
+	)
 
 	bodytype = BODYTYPE_RIOL | BODYTYPE_ORGANIC
 
@@ -92,14 +100,7 @@
 			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/riol/digitigrade,
 		)
 
-	species_robotic_limbs = list(
-			BODY_ZONE_CHEST =  /obj/item/bodypart/chest/robot,
-			BODY_ZONE_HEAD = /obj/item/bodypart/head/robot,
-			BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/robot/surplus,
-			BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/robot/surplus,
-			BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/robot/surplus/lizard/digitigrade,
-			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/robot/surplus/lizard/digitigrade,
-		)
+	prosthetic_style = /datum/sprite_accessory/body/prosthetic/riol
 
 /datum/species/riol/random_name(gender = NEUTER, unique, lastname)
 	if(gender != MALE)

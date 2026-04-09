@@ -148,10 +148,10 @@
 #define BODYTYPE_DIGITIGRADE (1<<6) //Lizard legs
 #define BODYTYPE_KEPORI (1<<7) //Just Kepori
 #define BODYTYPE_VOX (1<<8) //Big Vox
-// [CELADON-ADD] - TAJARA
+// [CELADON-ADD] - TAJARA, RIOL, LANIUS
 #define BODYTYPE_TAJARA (1<<9) //Fluffy Ass
-// [CELADON-ADD] - RIOL
 #define BODYTYPE_RIOL (1<<10)
+#define BODYTYPE_LANIUS (1<<11)
 // [/CELADON-ADD]
 
 // Health/damage defines

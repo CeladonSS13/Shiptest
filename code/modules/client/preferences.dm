@@ -791,7 +791,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<h3>Chassis Style</h3>"
 
-				dat += "<a href='byond://?_src_=prefs;preference=ipc_chassis;task=input'>[features["ipc_chassis"]]</a><BR>"
+				var/datum/sprite_accessory/body/ipc_chassis/chassis_style = GLOB.ipc_chassis_list[features["ipc_chassis"]]
+				if(!chassis_style)
+					chassis_style = pick(GLOB.ipc_chassis_list)
+					features["ipc_chassis"] = chassis_style.name
+				dat += "<a href='byond://?_src_=prefs;preference=ipc_chassis;task=input'>[chassis_style.name]</a>"
+				if(chassis_style.desc)
+					dat += "<a href='byond://?_src_=prefs;preference=body_desc;limb_style=[REF(chassis_style)]'>?</a>"
+				dat += "<br>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
@@ -2741,7 +2748,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if("limbs")
 					if(href_list["customize_limb"])
 						var/limb = href_list["customize_limb"]
-						var/list/limb_options = list(PROSTHETIC_NORMAL, PROSTHETIC_ROBOTIC)
+						var/list/limb_options = list(PROSTHETIC_NORMAL)
+						if(pref_species.prosthetic_style)
+							limb_options.Add(PROSTHETIC_ROBOTIC)
 						if(limb != BODY_ZONE_CHEST && limb != BODY_ZONE_HEAD)
 							limb_options.Add(PROSTHETIC_AMPUTATED) // starting without a head or chest causes instant death, must be disallowed
 
@@ -2749,19 +2758,32 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						var/datum/sprite_accessory/body/limb_style
 						for(var/body in GLOB.alternative_body_list)
 							limb_style = GLOB.alternative_body_list[body]
+							if(limb_style.locked)
+								continue
 							part_candidate = limb_style.replacement_bodyparts[limb]
 							if(isnull(part_candidate))
 								continue
-							if(length(limb_style.allowed_species))
-								if(!(pref_species.type in limb_style.allowed_species))
-									continue
+							if(limb_style.allowed_species && !(pref_species.type in limb_style.allowed_species))
+								continue
 							if(!(pref_species.bodytype & initial(part_candidate.bodytype))) // don't allow vox and kepori to select limbs that aren't compatible
 								continue
 							limb_options.Add(body)
 
-						var/status = input(user, "You are modifying your [parse_zone(limb)], what should it be changed to?", "Character Preference", prosthetic_limbs[limb]) in limb_options
-						if(status)
-							prosthetic_limbs[limb] = status
+						var/limb_selection = tgui_input_list(
+							user,
+							"You are modifying your [parse_zone(limb)], what should it be changed to?",
+							"Bodypart Selection",
+							limb_options,
+						)
+						if(limb_selection)
+							prosthetic_limbs[limb] = limb_selection
+
+				if("body_desc")
+					var/datum/sprite_accessory/body/limb_style = locate(href_list["limb_style"])
+					if(!limb_style?.desc)
+						return
+					tgui_alert(user, limb_style.desc, limb_style.name, list("Close"), 0)
+					return
 
 				if("hotkeys")
 					hotkeys = !hotkeys
@@ -3107,7 +3129,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.exowear = exowear
 	character.wallet = wallet	// [CELADON-ADD] - CELADON_WALLETS
 
-	character.fbp = fbp
+	if(fbp && !(pref_species.inherent_biotypes & MOB_ROBOTIC))
+		ADD_TRAIT(character, TRAIT_USE_PROSTHETIC, ROUNDSTART_TRAIT)
+	else
+		REMOVE_TRAIT(character, TRAIT_USE_PROSTHETIC, ROUNDSTART_TRAIT)
 
 	character.flavor_text = features["flavor_text"] //Let's update their flavor_text at least initially
 
@@ -3129,40 +3154,41 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.dna.features = features.Copy()
 	character.set_species(chosen_species, icon_update = FALSE, pref_load = TRUE, robotic = fbp)
 
-	for(var/pros_limb in prosthetic_limbs)
-		var/obj/item/bodypart/old_part = character.get_bodypart(pros_limb)
+	var/is_robotic = HAS_TRAIT(character, TRAIT_USE_PROSTHETIC)
+	for(var/zone in prosthetic_limbs)
+		var/obj/item/bodypart/old_part = character.get_bodypart(zone)
 		if(old_part)
 			icon_updates = TRUE
-		switch(prosthetic_limbs[pros_limb])
+		switch(prosthetic_limbs[zone])
 			if(PROSTHETIC_NORMAL)
 				if(old_part)
 					old_part.drop_limb(TRUE)
 					qdel(old_part)
-				character.regenerate_limb(pros_limb, robotic = fbp)
+				character.regenerate_limb(zone, robotic = is_robotic)
 			if(PROSTHETIC_AMPUTATED)
 				if(old_part)
 					old_part.drop_limb(TRUE)
 					qdel(old_part)
-				if(pros_limb == BODY_ZONE_CHEST || pros_limb == BODY_ZONE_HEAD)
-					stack_trace("[parent] somehow had their [parse_zone(pros_limb)] set to [PROSTHETIC_AMPUTATED]!")
-					prosthetic_limbs[pros_limb] = PROSTHETIC_NORMAL
-					character.regenerate_limb(pros_limb, robotic = fbp)
+				if(zone == BODY_ZONE_CHEST || zone == BODY_ZONE_HEAD)
+					stack_trace("[parent] somehow had their [parse_zone(zone)] set to [PROSTHETIC_AMPUTATED]!")
+					prosthetic_limbs[zone] = PROSTHETIC_NORMAL
+					character.regenerate_limb(zone, robotic = is_robotic)
 			if(PROSTHETIC_ROBOTIC)
 				if(old_part)
 					old_part.drop_limb(TRUE)
 					qdel(old_part)
-				character.regenerate_limb(pros_limb, robotic = TRUE)
+				character.regenerate_limb(zone, robotic = TRUE)
 			else
-				var/datum/sprite_accessory/body/limb_style = GLOB.alternative_body_list[prosthetic_limbs[pros_limb]]
-				var/obj/item/bodypart/new_part = limb_style.replacement_bodyparts[pros_limb]
+				var/datum/sprite_accessory/body/limb_style = GLOB.alternative_body_list[prosthetic_limbs[zone]]
+				var/obj/item/bodypart/new_part = limb_style.replacement_bodyparts[zone]
 				new_part = new new_part()
 				if(old_part)
 					old_part.drop_limb(TRUE)
 					qdel(old_part)
 				if(!(new_part.bodytype & pref_species.bodytype))
 					stack_trace("[parent] had [limb_style.name] selected, which isn't compatible with [pref_species.name]!")
-					prosthetic_limbs[pros_limb] = PROSTHETIC_NORMAL
-					character.regenerate_limb(pros_limb, robotic = fbp)
+					prosthetic_limbs[zone] = PROSTHETIC_NORMAL
+					character.regenerate_limb(zone, robotic = is_robotic)
 					continue
 				// species that don't use mutant colors normally should still be able to color prosthetics that do
 				if(new_part.should_draw_greyscale)
