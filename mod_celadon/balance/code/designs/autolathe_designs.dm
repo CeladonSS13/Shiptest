@@ -354,6 +354,11 @@
 /datum/design/miniature_power_cell
 	materials = list(/datum/material/glass = 200)
 
+// [CELADON-ADD]
+/datum/design/blast_door_circuit
+	materials = list(/datum/material/glass = 200)
+// [/CELADON-ADD]
+
 /datum/design/packageWrap
 	materials = list(/datum/material/iron = 200, /datum/material/glass = 200)
 

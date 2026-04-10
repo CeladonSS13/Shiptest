@@ -1032,6 +1032,16 @@
 	build_path = /obj/item/stock_parts/cell/emergency_light
 	category = list("initial", "Electronics")
 
+// [CELADON-ADD]
+/datum/design/blast_door_circuit
+	name = "Blast door circuit"
+	id = "blast_door_circuit"
+	build_type = AUTOLATHE
+	materials = list(/datum/material/glass = 20)
+	build_path = /obj/item/assembly/control
+	category = list("initial", "Electronics")
+// [/CELADON-ADD]
+
 /datum/design/packageWrap
 	name = "Package Wrapping"
 	id = "packagewrap"
