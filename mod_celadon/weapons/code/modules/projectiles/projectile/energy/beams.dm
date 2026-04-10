@@ -153,7 +153,6 @@
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
 	icon_state = "sl_laser"
 	speed = 0.3 //egun buff - просто мувспид с плазмапушек
-	impact_effect_type = /obj/effect/temp_visual/impact_effect/red_laser_sl
 
 /obj/projectile/beam/laser/nanotrasen/weak
 	icon_state = "sl_laser_light"
