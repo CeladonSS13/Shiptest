@@ -19,7 +19,7 @@
 #define FAIL 8
 /obj/machinery/rnd/experimentor
 	name = "\improper E.X.P.E.R.I-MENTOR"
-	desc = "A \"replacement\" for the destructive analyzer with a slight tendency to catastrophically fail."  
+	desc = "A \"replacement\" for the destructive analyzer with a slight tendency to catastrophically fail."
 	icon = 'mod_celadon/_storage_icons/icons/machinery/heavy_lathe.dmi' // [CELADON-EDIT] - Original - 'icons/obj/machines/heavy_lathe.dmi'
 	icon_state = "h_lathe"
 	base_icon_state = "h_lathe"
