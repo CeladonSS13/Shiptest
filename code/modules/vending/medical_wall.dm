@@ -1,7 +1,6 @@
 /obj/machinery/vending/wallmed
 	name = "\improper OutpostMed"
 	desc = "A vending machine filled with medical supplies, provided to you free of charge by the Outpost Authority."
-	icon = 'mod_celadon/_storage_icons/icons/resprite/wallmed.dmi' //[CELADON-ADD] - Меняем путь к спрайтам
 	icon_state = "wallmed"
 	icon_deny = "wallmed-deny"
 	density = FALSE
