@@ -371,10 +371,10 @@
 
 	var/icon/human_clothing_icon = icon(file2use, state2use)
 
-	if("[layer]" in mob_species.offset_clothing)
+	var/list/shifts = get_species_worn_offsets(layer, mob_species)	// [CELADON-EDIT] - SPECIES_OFFSETS - Get species-specific offsets
+	if(shifts)														// [/CELADON-EDIT]
 		// This code taken from Baystation 12
 		var/icon/final_I = icon('icons/blanks/64x64.dmi', "nothing")
-		var/list/shifts = mob_species.offset_clothing["[layer]"]
 
 		// Apply all pixel shifts for each direction.
 		for(var/shift_facing in shifts)
@@ -386,11 +386,28 @@
 			final_I.Insert(canvas, dir = use_dir)
 
 		final_I = fcopy_rsc(final_I)
-		GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]"] = final_I
+
+		// [CELADON-ADD] - SPECIES_OFFSETS - DEBUG: Track GLOB updates
+		var/glob_key = "[file2use]-[state2use]-[layer]"
+		var/existing = GLOB.species_clothing_icons[mob_species.id][glob_key] ? "UPDATING" : "CREATING"
+		var/offsets_text = ""
+		for(var/dir in shifts)
+			var/list/offset_data = shifts[dir]
+			offsets_text += " [dir]:(x=[offset_data["x"]],y=[offset_data["y"]])"
+		log_game("GLOB DEBUG [existing]: Species=[mob_species.id] Layer=[layer] State=[state2use] File=[file2use] Offsets:[offsets_text]")
+
+		GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]-[layer]"] = final_I
+		// [/CELADON-ADD]
 		return TRUE
 
 	if(!greyscale_colors || !greyscale_icon_state)
-		GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]"] = human_clothing_icon
+		// [CELADON-ADD] - SPECIES_OFFSETS - DEBUG: Track GLOB updates
+		var/glob_key = "[file2use]-[state2use]-[layer]"
+		var/existing = GLOB.species_clothing_icons[mob_species.id][glob_key] ? "UPDATING" : "CREATING"
+		log_game("GLOB DEBUG [existing] (No Offsets): Species=[mob_species.id] Layer=[layer] State=[state2use] File=[file2use]")
+
+		GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]-[layer]"] = human_clothing_icon
+		// [/CELADON-ADD]
 		return
 
 	if(!icon_exists(mob_species.species_clothing_path, greyscale_icon_state))
@@ -410,7 +427,14 @@
 
 	species_icon.MapColors(final_list[1], final_list[2], final_list[3])
 	species_icon = fcopy_rsc(species_icon)
-	GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]"] = species_icon
+
+	// [CELADON-ADD] - SPECIES_OFFSETS - DEBUG: Track GLOB updates
+	var/glob_key = "[file2use]-[state2use]-[layer]"
+	var/existing = GLOB.species_clothing_icons[mob_species.id][glob_key] ? "UPDATING" : "CREATING"
+	log_game("GLOB DEBUG [existing] (Greyscale): Species=[mob_species.id] Layer=[layer] State=[state2use] File=[file2use]")
+
+	GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]-[layer]"] = species_icon
+	// [/CELADON-ADD] - SPECIES OFFSETS END
 
 	return TRUE
 
