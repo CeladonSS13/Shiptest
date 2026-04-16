@@ -1,6 +1,7 @@
 /obj/item/clothing/under/rank/centcom
 	icon = 'icons/obj/clothing/under/centcom.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/under/centcom.dmi'
+	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION 	// [CELADON-ADD]
 
 /obj/item/clothing/under/rank/centcom/commander
 	name = "\improper CentCom commander's suit"
