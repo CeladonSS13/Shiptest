@@ -11796,9 +11796,6 @@
 	},
 /area/outpost/exterior)
 "gon" = (
-/obj/machinery/telecomms/allinone{
-	intercept = 1
-	},
 /obj/item/radio/intercom/directional/south,
 /turf/open/floor/engine,
 /area/outpost/crew/cryo)
@@ -39838,7 +39835,9 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 6
 	},
-/obj/machinery/telecomms/allinone/indestructible,
+/obj/machinery/telecomms/allinone/indestructible{
+	intercept = 1
+	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/operations/outpost_command)
 "vOY" = (

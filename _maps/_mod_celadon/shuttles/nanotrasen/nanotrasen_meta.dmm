@@ -162,9 +162,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "ax" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -263,8 +261,7 @@
 	},
 /obj/effect/turf_decal/corner/opaque/nsorange/half,
 /obj/structure/sign/poster/nanotrasen/ns_logistics_ad{
-	pixel_x = -32;
-	pixel_y = 0
+	pixel_x = -32
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo/office)
@@ -412,7 +409,6 @@
 /area/ship/cargo)
 "bs" = (
 /obj/effect/turf_decal/siding/wood{
-	dir = 2;
 	color = "#332521"
 	},
 /obj/structure/window/reinforced/tinted/frosted{
@@ -767,7 +763,6 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/sign/poster/contraband/hacking_guide{
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/dark,
@@ -1264,9 +1259,7 @@
 /obj/machinery/power/smes/engineering{
 	charge = 1e+006
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "dL" = (
@@ -1289,7 +1282,6 @@
 "dO" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/effect/turf_decal/siding/wood{
-	dir = 2;
 	color = "#332521"
 	},
 /obj/structure/window/reinforced/tinted/frosted{
@@ -1400,16 +1392,13 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/extinguisher{
-	pixel_x = -11;
-	pixel_y = 0
+	pixel_x = -11
 	},
 /obj/item/extinguisher/advanced{
-	pixel_x = -1;
-	pixel_y = 0
+	pixel_x = -1
 	},
 /obj/item/extinguisher{
-	pixel_x = 10;
-	pixel_y = 0
+	pixel_x = 10
 	},
 /obj/structure/closet/crate/secure/engineering{
 	name = "Nakamura Engineering extinguishers crate"
@@ -1470,9 +1459,7 @@
 /area/ship/cargo)
 "er" = (
 /obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
@@ -1506,16 +1493,13 @@
 /area/ship/cargo/office)
 "eU" = (
 /obj/effect/turf_decal/siding/wood{
-	dir = 2;
 	color = "#332521"
 	},
 /obj/structure/table/wood,
 /obj/item/paper_bin{
-	pixel_x = 0;
 	pixel_y = 4
 	},
 /obj/item/pen/fountain/captain{
-	pixel_x = 0;
 	pixel_y = 5
 	},
 /obj/item/stamp/nanotrasen/ns/supply{
@@ -1573,9 +1557,7 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/hallway/central)
 "fb" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -1645,12 +1627,10 @@
 /obj/item/stock_parts/cell/gun,
 /obj/item/stock_parts/cell/gun,
 /obj/item/gun/energy/laser/retro{
-	pixel_x = 0;
 	pixel_y = -8
 	},
 /obj/item/gun/energy/laser/retro,
 /obj/item/gun/energy/laser/retro{
-	pixel_x = 0;
 	pixel_y = 8
 	},
 /turf/open/floor/plasteel/white,
@@ -1852,11 +1832,11 @@
 "iB" = (
 /obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/siding/wood{
-	dir = 2;
 	color = "#332521"
 	},
 /obj/structure/table/wood,
 /obj/machinery/fax/nanotrasen,
+/obj/item/radio/intercom/faction/nanotrasen/command/directional/south,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm/captain)
 "iP" = (
@@ -2419,11 +2399,9 @@
 	},
 /obj/structure/table,
 /obj/item/paper_bin{
-	pixel_x = 0;
 	pixel_y = 4
 	},
 /obj/item/pen{
-	pixel_x = 0;
 	pixel_y = 5
 	},
 /obj/item/toy/figure/cargotech{
@@ -3336,11 +3314,9 @@
 "wO" = (
 /obj/structure/table,
 /obj/item/paper_bin{
-	pixel_x = 0;
 	pixel_y = 4
 	},
 /obj/item/pen{
-	pixel_x = 0;
 	pixel_y = 5
 	},
 /obj/effect/turf_decal/box/white/corners{
@@ -3764,7 +3740,6 @@
 	icon_state = "computer-left"
 	},
 /obj/structure/sign/poster/retro/lasergun{
-	pixel_x = 0;
 	pixel_y = 30
 	},
 /turf/open/floor/plasteel/white,
@@ -4226,7 +4201,6 @@
 /obj/item/clothing/glasses/sunglasses,
 /obj/item/megaphone/command,
 /obj/effect/turf_decal/siding/wood{
-	dir = 2;
 	color = "#332521"
 	},
 /obj/item/radio/headset/nanotrasen/alt/captain,
@@ -4265,9 +4239,7 @@
 /obj/machinery/door/poddoor{
 	id = "meta_starboard"
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/door/firedoor,
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -4653,9 +4625,7 @@
 	id = "starboard_holofield";
 	locked = 1
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/door/firedoor,
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -4797,7 +4767,6 @@
 	dir = 1
 	},
 /obj/structure/sign/poster/contraband/lusty_xenomorph{
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/dark,
@@ -4978,7 +4947,6 @@
 /area/ship/hallway/central)
 "Pk" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4{
-	dir = 2;
 	name = "atmos waste outlet injector"
 	},
 /obj/item/toy/plush/nukeplushie{
@@ -4990,7 +4958,6 @@
 /area/ship/engineering)
 "Po" = (
 /obj/machinery/conveyor{
-	dir = 2;
 	id = "meta_recycler"
 	},
 /obj/structure/window/reinforced/spawner{
@@ -5069,12 +5036,10 @@
 	},
 /obj/structure/table,
 /obj/item/stamp{
-	pixel_x = -7;
-	pixel_y = 0
+	pixel_x = -7
 	},
 /obj/item/stamp/denied{
-	pixel_x = 8;
-	pixel_y = 0
+	pixel_x = 8
 	},
 /obj/item/toy/figure/cargotech{
 	pixel_x = -1;
@@ -5243,7 +5208,6 @@
 /area/ship/cargo/office)
 "Sm" = (
 /obj/docking_port/mobile{
-	can_move_docking_ports = 1;
 	name = "Salvage Ship";
 	port_direction = 2;
 	preferred_direction = 4;
@@ -5282,7 +5246,6 @@
 "SJ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/conveyor{
-	dir = 2;
 	id = "meta_recycler"
 	},
 /obj/machinery/door/window{
@@ -5479,7 +5442,6 @@
 "Uc" = (
 /obj/effect/turf_decal/corner/opaque/neutral/mono,
 /obj/machinery/door/airlock{
-	dir = 2;
 	name = "Bathroom";
 	id_tag = "sgi_bolt"
 	},
@@ -5762,9 +5724,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/crew)
 "WK" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
-	dir = 2
-	},
+/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters,
 /obj/item/radio/intercom/wideband/directional/south,
 /obj/machinery/computer/secure_data{
 	dir = 8;
@@ -5780,7 +5740,6 @@
 /area/ship/cargo)
 "WO" = (
 /obj/effect/turf_decal/siding/wood{
-	dir = 2;
 	color = "#332521"
 	},
 /turf/open/floor/wood/ebony,

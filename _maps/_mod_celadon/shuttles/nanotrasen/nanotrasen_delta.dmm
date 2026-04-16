@@ -37,8 +37,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/light/small/directional/west,
 /obj/machinery/advanced_airlock_controller{
-	pixel_x = 32;
-	pixel_y = 0
+	pixel_x = 32
 	},
 /turf/open/floor/plating,
 /area/ship/hallway/port)
@@ -78,7 +77,6 @@
 /area/ship/engineering)
 "aF" = (
 /obj/structure/toilet{
-	pixel_x = 0;
 	pixel_y = 13
 	},
 /obj/effect/decal/cleanable/vomit/old{
@@ -284,9 +282,7 @@
 /obj/effect/turf_decal/corner/opaque/white{
 	dir = 1
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
-	dir = 2
-	},
+/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "by" = (
@@ -939,9 +935,7 @@
 	dir = 8
 	},
 /obj/machinery/power/ship_gravity,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "dE" = (
@@ -1029,7 +1023,6 @@
 /obj/effect/turf_decal/corner/opaque/ntblue/border,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/mirror{
-	pixel_x = 0;
 	pixel_y = -29
 	},
 /turf/open/floor/plasteel/dark,
@@ -1054,9 +1047,7 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/cargo)
 "em" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/fueled/plasma,
 /turf/open/floor/plating/airless,
 /area/ship/engineering)
 "ev" = (
@@ -1154,7 +1145,6 @@
 /obj/effect/turf_decal/corner/opaque/ntblue/border,
 /obj/machinery/chem_dispenser/drinks{
 	dir = 1;
-	pixel_x = 0;
 	pixel_y = 2
 	},
 /turf/open/floor/plasteel/dark,
@@ -1366,8 +1356,7 @@
 /obj/item/radio/intercom/directional/south,
 /obj/structure/table/reinforced,
 /obj/item/storage/fancy/cigarettes/cigpack_robustgold{
-	pixel_x = -5;
-	pixel_y = 0
+	pixel_x = -5
 	},
 /obj/item/clothing/mask/cigarette/robustgold{
 	pixel_x = -5;
@@ -1419,7 +1408,6 @@
 /obj/item/reagent_containers/condiment/milk,
 /obj/machinery/vending/boozeomat/all_access{
 	pixel_x = -32;
-	pixel_y = 0;
 	density = 0;
 	all_items_free = 1
 	},
@@ -1604,8 +1592,7 @@
 /obj/item/storage/case/surgery,
 /obj/machinery/light{
 	dir = 4;
-	pixel_x = 27;
-	pixel_y = 0
+	pixel_x = 27
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew)
@@ -1746,9 +1733,7 @@
 	dir = 4;
 	name = "Engine Access"
 	},
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "whiteship_windows"
@@ -1948,12 +1933,10 @@
 "zJ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/mirror{
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /obj/structure/sink{
-	pixel_y = 20;
-	pixel_x = 0
+	pixel_y = 20
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/ship/hallway/port)
@@ -2047,9 +2030,7 @@
 /turf/open/floor/plating,
 /area/ship/hallway/central)
 "Bw" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -2096,8 +2077,7 @@
 /area/ship/hallway/central)
 "BY" = (
 /obj/machinery/shower{
-	pixel_y = 16;
-	pixel_x = 0
+	pixel_y = 16
 	},
 /obj/machinery/light/small/directional/west,
 /obj/item/soap,
@@ -2215,8 +2195,7 @@
 /obj/effect/turf_decal/corner/opaque/ntblue/border,
 /obj/machinery/light/directional/south,
 /obj/item/clipboard{
-	pixel_x = 5;
-	pixel_y = 0
+	pixel_x = 5
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
@@ -2252,7 +2231,6 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/light/small/directional/north,
 /obj/structure/sign/warning/vacuum/external{
-	pixel_x = 0;
 	pixel_y = 36
 	},
 /turf/open/floor/plating,
@@ -2309,9 +2287,7 @@
 	dir = 4;
 	name = "Engine Access"
 	},
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -2322,9 +2298,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "IP" = (
-/obj/effect/turf_decal/corner/opaque/white{
-	dir = 2
-	},
+/obj/effect/turf_decal/corner/opaque/white,
 /obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
 	dir = 4
 	},
@@ -2616,9 +2590,7 @@
 	dir = 4;
 	name = "Engine Access"
 	},
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -2663,8 +2635,7 @@
 /obj/machinery/newscaster/directional/south,
 /obj/machinery/modular_computer/console/preset/research{
 	dir = 4;
-	pixel_x = -8;
-	pixel_y = 0
+	pixel_x = -8
 	},
 /obj/effect/turf_decal/corner/opaque/purple/half,
 /turf/open/floor/plasteel/dark,
@@ -2707,7 +2678,6 @@
 /area/ship/hallway/port)
 "SF" = (
 /obj/machinery/light/small/directional/west{
-	pixel_x = -28;
 	pixel_y = -2
 	},
 /obj/structure/cable{
@@ -2721,7 +2691,6 @@
 	pixel_y = -10
 	},
 /obj/machinery/firealarm/directional/west{
-	pixel_x = -32;
 	pixel_y = 9
 	},
 /turf/open/floor/plasteel/patterned/grid,
@@ -2736,8 +2705,7 @@
 	},
 /obj/machinery/airalarm/directional/south,
 /obj/structure/bed/dogbed{
-	name = "Yasha's bed";
-	anchored = 1
+	name = "Yasha's bed"
 	},
 /obj/effect/turf_decal/road/line/opaque/white{
 	dir = 1
@@ -2751,9 +2719,7 @@
 /area/ship/bridge)
 "Td" = (
 /obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/structure/bed,
 /obj/item/bedsheet/nanotrasen,
 /obj/structure/curtain/cloth,
@@ -2791,9 +2757,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "TO" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -2810,10 +2774,13 @@
 /obj/effect/turf_decal/corner/opaque/ntblue/border,
 /obj/structure/table/reinforced/titaniumglass,
 /obj/machinery/fax/nanotrasen,
-/obj/item/radio/intercom/wideband/directional/south,
 /obj/effect/turf_decal/road/line/opaque/white{
 	dir = 1
 	},
+/obj/item/radio/intercom/wideband/directional/south{
+	pixel_y = -35
+	},
+/obj/item/radio/intercom/faction/nanotrasen/command/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Vt" = (
@@ -2964,9 +2931,7 @@
 	dir = 4;
 	name = "Engine Access"
 	},
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "whiteship_windows"

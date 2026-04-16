@@ -161,9 +161,7 @@
 /turf/open/floor/engine/air,
 /area/ship/engineering/atmospherics)
 "dB" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -324,8 +322,7 @@
 	pixel_y = 8
 	},
 /obj/item/phone{
-	pixel_x = 11;
-	pixel_y = 0
+	pixel_x = 11
 	},
 /obj/item/flashlight/lamp/green{
 	layer = 4;
@@ -337,7 +334,6 @@
 	pixel_y = -4
 	},
 /obj/item/stamp/nanotrasen/deforest/captain{
-	pixel_x = 0;
 	pixel_y = -4
 	},
 /obj/item/stamp/nanotrasen/deforest/medical{
@@ -794,18 +790,14 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/electrical)
 "jW" = (
 /turf/open/floor/plasteel/white,
 /area/ship/cargo)
 "jX" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -852,9 +844,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical/surgery)
 "kg" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -963,9 +953,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/general/science)
 "lr" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -1121,9 +1109,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "pd" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -1168,9 +1154,7 @@
 	icon_state = "0-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/electrical)
 "pT" = (
@@ -1607,8 +1591,7 @@
 	dir = 8
 	},
 /obj/structure/sign/poster/nanotrasen/deforest_hypospray{
-	pixel_x = -32;
-	pixel_y = 0
+	pixel_x = -32
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/port)
@@ -2432,7 +2415,6 @@
 /obj/item/clothing/under/nanotrasen/medical,
 /obj/item/clothing/suit/toggle/labcoat/nanotrasen,
 /obj/structure/sign/departments/science/alt{
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/white,
@@ -2631,7 +2613,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/effect/turf_decal/siding/wood,
 /obj/machinery/door/airlock/command{
-	dir = 2;
 	name = "Medical Director's Quarters";
 	req_access_txt = "40"
 	},
@@ -3534,8 +3515,7 @@
 "Ul" = (
 /obj/machinery/light/floor,
 /obj/structure/sign/nanotrasen/deforest{
-	pixel_x = -32;
-	pixel_y = 0
+	pixel_x = -32
 	},
 /turf/open/floor/engine/hull,
 /area/ship/external)
@@ -3543,9 +3523,7 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/atmospherics)
 "Uw" = (
@@ -3784,9 +3762,7 @@
 	icon_state = "0-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/atmospherics)
 "Wn" = (
@@ -4026,6 +4002,7 @@
 /obj/structure/closet/emcloset/wall/directional/south{
 	pixel_x = 2
 	},
+/obj/item/radio/intercom/faction/nanotrasen/command/directional/east,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Ys" = (
