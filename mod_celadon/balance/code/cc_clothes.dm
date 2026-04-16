@@ -146,10 +146,10 @@
 	if(slot == ITEM_SLOT_OCLOTHING)
 		ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
 
-/obj/item/clothing/suit/toggle/armor/centcom_formal/admin
+/obj/item/clothing/suit/toggle/armor/parade/centcom_formal/admin
 	armor = list("melee" = 70, "bullet" = 70, "laser" = 70, "energy" = 70, "bomb" = 50, "bio" = 50, "rad" = 80, "fire" = 50, "acid" = 50)
 
-/obj/item/clothing/suit/toggle/armor/centcom_formal/admin/equipped(mob/user, slot)
+/obj/item/clothing/suit/toggle/armor/parade/centcom_formal/admin/equipped(mob/user, slot)
 	. = ..()
 	if(slot == ITEM_SLOT_OCLOTHING)
 		ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
