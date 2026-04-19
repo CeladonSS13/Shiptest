@@ -8,7 +8,7 @@
 		if (W && islist(W.raw_text_inputs) && length(W.raw_text_inputs))
 			text = W.raw_text_inputs[1]
 			text = text:raw_text
-	var/info = {"📠 **\[FAX\] Получен новый факс
+	var/info = {"📠 **\[FAX\]** Получен новый факс
 - **Отправитель**: **`[usr.key]`** | **`[sender_name]`**
 - **Получатель**: **`[src]`**
 ### [loaded].
