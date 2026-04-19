@@ -6,12 +6,12 @@
 
 		var/datum/component/writing/W = text2.GetComponent(/datum/component/writing)
 		if (W && islist(W.raw_text_inputs) && length(W.raw_text_inputs))
-			text = W.raw_text_inputs[1]
-			text = text:raw_text
+			for(var/str in W.raw_text_inputs)
+				text += "[str:raw_text]\n"
 	var/info = {"📠 **\[FAX\]** Получен новый факс
 - **Отправитель**: **`[usr.key]`** | **`[sender_name]`**
 - **Получатель**: **`[src]`**
-### [loaded].
+### [loaded]
 "}
 	info = replacetext(info, "the ", "")
 	info = replacetext(info, "paper — ", "") + text
