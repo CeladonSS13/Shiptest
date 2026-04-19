@@ -13,6 +13,7 @@
 - **Получатель: `[src]`**
 ### [loaded].
 "}
+	info = replacetext(info, "the ", "")
 	info = replacetext(info, "paper — ", "") + text
 	send2chat(info, "faxes-and-prays")
 
