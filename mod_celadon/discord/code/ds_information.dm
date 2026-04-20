@@ -10,7 +10,7 @@
 				text += "[str:raw_text]\n"
 	var/info = {"📠 **\[FAX\]** Получен новый факс
 - **Отправитель**: **`[usr.key]`** | **`[sender_name]`**
-- **Получатель**: **`[src]`**
+- **Получатель**: **`[src.fax_name]`**
 ### [loaded]
 "}
 	info = replacetext(info, "the ", "")
