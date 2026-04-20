@@ -9,8 +9,8 @@
 			for(var/str in W.raw_text_inputs)
 				text += "[str:raw_text]\n"
 	var/info = {"📠 **\[FAX\]** Получен новый факс
-- **Отправитель**: **`[usr.key]`** | **`[sender_name]`**
-- **Получатель**: **`[src.fax_name]`**
+- **Отправитель**: **`[usr.key]`** | **`[src.fax_name]`**
+- **Получатель**: **`[sender_name]`**
 ### [loaded]
 "}
 	info = replacetext(info, "the ", "")
