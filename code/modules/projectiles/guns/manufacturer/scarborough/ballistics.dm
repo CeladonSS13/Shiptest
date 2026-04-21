@@ -714,6 +714,7 @@ NO_MAG_GUN_HELPER(automatic/marksman/boomslang/indie)
 	recoil_unwielded = 50
 
 	wield_delay = 1.3 SECONDS
+	fire_delay = 1.5 SECONDS
 
 	valid_attachments = list()
 	slot_available = list()
