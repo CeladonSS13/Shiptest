@@ -213,7 +213,7 @@
 	desc = "Contains a magazine-fed .357 handgun, produced for the CLIP-BARD division and available for requisition in small numbers to the Minutemen."
 	cost = 1750
 	contains = list(/obj/item/storage/guncase/pistol/cm357)
-	faction = /datum/faction/clip
+	faction = /datum/faction/clip/cmm
 	faction_discount = 0
 	faction_locked = TRUE
 
@@ -606,6 +606,16 @@
 	faction_discount = 0
 	faction_locked = TRUE
 
+/datum/supply_pack/gun/cm5
+	name = "CM-5c Compact SMG Crate"
+	desc = "Contains a CM-5c compact automatic SMG, produced proudly within Lanchester City. Confederated Minutemen issue only."
+	cost = 2000
+	contains = list(/obj/item/storage/guncase/cm5c)
+	crate_name = "SMG crate"
+	faction = /datum/faction/clip
+	faction_discount = 0
+	faction_locked = TRUE
+
 /datum/supply_pack/gun/sidewinder
 	name = "Sidewinder SMG Crate"
 	desc = "Contains a Sidewinder PDW produced by Scarborough Arms and chambered in 5.7mm for armor-piercing capabilities."
@@ -747,7 +757,7 @@
 	cost = 5000
 	contains = list(/obj/item/storage/guncase/cm82)
 	crate_name = "rifle crate"
-	faction = /datum/faction/clip
+	faction = /datum/faction/clip/cmm
 	faction_discount = 0
 	faction_locked = TRUE
 
@@ -769,7 +779,7 @@
 	cost = 6000
 	contains = list(/obj/item/storage/guncase/cm40)
 	crate_name = "LMG crate"
-	faction = /datum/faction/clip
+	faction = /datum/faction/clip/cmm
 	faction_discount = 0
 	faction_locked = TRUE
 
@@ -899,7 +909,7 @@
 	cost = 4000
 	contains = list(/obj/item/storage/guncase/cmf90)
 	crate_name = "marksman rifle crate"
-	faction = /datum/faction/clip
+	faction = /datum/faction/clip/cmm
 	faction_discount = 0
 	faction_locked = TRUE
 
