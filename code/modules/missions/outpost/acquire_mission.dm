@@ -19,7 +19,7 @@
 	. = ..()
 	if(isnull(cargo_belt))
 		container = spawn_bound(container_type, accept_loc, VARSET_CALLBACK(src, container, null))
-		stack_trace("[src] issued by [source_outpost] could not find cargo chute to send items down. Fell back to cargo console.")
+		stack_trace("[src] отправленный с [source_outpost], не обнаружил грузовой желоб для сброса вещей. Вместо него задействована грузовая консоль")
 	else
 		container = spawn_bound(container_type, cargo_belt.loc, VARSET_CALLBACK(src, container, null))
 	container.name += " ([capitalize(objective_type.name)])"
