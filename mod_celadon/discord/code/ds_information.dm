@@ -9,7 +9,7 @@
 			for(var/str in W.raw_text_inputs)
 				text += "[str:raw_text]\n"
 	var/info = {"📠 **\[FAX\]** Получен новый факс
-- **Отправитель**: **`[usr.key]`** | **`[src.fax_name]`**
+- **Отправитель**: **`[src.fax_name]`** | **`[usr.key]`**: **`[usr.real_name]`**
 - **Получатель**: **`[sender_name]`**
 ### [loaded]
 "}
