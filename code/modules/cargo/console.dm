@@ -56,8 +56,8 @@
 	if(obj_flags & EMAGGED)
 		return
 	if(user)
-		user.visible_message(span_warning("[user] проводит подозрительной карточкой по [CASE(src, GENITIVE_CASE)]!"),
-		span_notice("Вы настраиваете [CASE(src, ACCUSATIVE_CASE)]'s routing and receiver spectrum, unlocking special supplies and contraband."))
+		user.visible_message(span_warning("[user] проводит странной карточкой по [CASE(src, GENITIVE_CASE)]!"),
+		span_notice("Вы настраиваете [CASE(src, ACCUSATIVE_CASE)] маршрутизацию и спектр приема, разблокировка специальных предметов снабжения и контрабанды."))
 
 	obj_flags |= EMAGGED
 	contraband = TRUE
@@ -259,7 +259,7 @@
 			"discountpercent" = current_pack.faction_discount,
 			"faction_locked" = current_pack.faction_locked, //this will only show if you are same faction, so no issue
 			"ref" = REF(current_pack),
-			"desc" = (current_pack.desc || current_pack.name) + (discountedcost ? "\n-[current_pack.faction_discount]% off due to your faction affiliation.\nWas [current_pack.cost]" : "") + (current_pack.faction_locked ? "\nYou are able to purchase this item due to your faction affiliation." : ""), // If there is a description, use it. Otherwise use the pack's name.
+			"desc" = (current_pack.desc || current_pack.name) + (discountedcost ? "\n-[current_pack.faction_discount]% отключено из-за принадлежности к вашей фракции.\nБыло [current_pack.cost]" : "") + (current_pack.faction_locked ? "\nВы можете приобрести этот предмет в зависимости от вашей принадлежности к фракции." : ""), // If there is a description, use it. Otherwise use the pack's name.
 			"no_bundle" = current_pack.no_bundle
 		))
 
