@@ -485,7 +485,7 @@
 	icon_living = "syndicate_shotgun"
 	casingtype = /obj/item/ammo_casing/shotgun/buckshot //buckshot fired in a two-round burst. This will two-tap unarmored players.
 	projectilesound = 'sound/weapons/gun/shotgun/bulldog.ogg'
-	l_hand =/obj/item/gun/ballistic/shotgun/automatic/bulldog
+	l_hand =/obj/item/gun/ballistic/shotgun/automatic/bulldog/bockadam
 	shoot_point_blank = TRUE
 
 /mob/living/simple_animal/hostile/human/ramzi/ranged/shotgun/ballistic
@@ -497,6 +497,7 @@
 	name = "Ramzi Clique Firestarter"
 	desc = "A deserter from the Gorlex Marauders turned pirate. Their finger twitches around the trigger of their combat shotgun."
 	casingtype = /obj/item/ammo_casing/shotgun/incendiary
+	l_hand =/obj/item/gun/ballistic/shotgun/automatic/bulldog
 	rapid = 1
 
 /mob/living/simple_animal/hostile/human/ramzi/ranged/sniper
@@ -613,12 +614,12 @@
 
 /mob/living/simple_animal/hostile/human/ramzi/ranged/space/shotgun
 	name = "Ramzi Clique Breacher"
-	desc = "A deserter from the Gorlex Marauders turned pirate. The unmistakeable bulk of a Bulldog shotgun graces the wrapped, patched hands of their aging hardsuit."
+	desc = "A deserter from the Gorlex Marauders turned pirate. The unmistakeable bulk of a Bockadam shotgun graces the wrapped, patched hands of their aging hardsuit."
 	icon_state = "syndicate_space_shotgun"
 	icon_living = "syndicate_space_shotgun"
 	name = "Ramzi Clique Commando"
 	casingtype = /obj/item/ammo_casing/shotgun/buckshot
-	l_hand = /obj/item/gun/ballistic/shotgun/automatic/bulldog
+	l_hand = /obj/item/gun/ballistic/shotgun/automatic/bulldog/bockadam
 	projectilesound = 'sound/weapons/gun/shotgun/bulldog.ogg'
 	rapid = 2
 	rapid_fire_delay = 6
@@ -714,7 +715,7 @@
 	icon_state = "syndicate_stormtrooper_shotgun"
 	icon_living = "syndicate_stormtrooper_shotgun"
 	armor_base = /obj/item/clothing/suit/space/hardsuit/syndi/ramzi/elite
-	l_hand = /obj/item/gun/ballistic/shotgun/automatic/bulldog
+	l_hand = /obj/item/gun/ballistic/shotgun/automatic/bulldog/bockadam
 	casingtype = /obj/item/ammo_casing/shotgun/buckshot
 	projectilesound = 'sound/weapons/gun/shotgun/bulldog.ogg'
 	rapid = 3
