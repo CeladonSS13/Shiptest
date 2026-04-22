@@ -4,7 +4,7 @@
 	name = "5.7x39mm bullet"
 	damage = 20
 	speed = BULLET_SPEED_PDW
-	armour_penetration = -15
+	armour_penetration = 10
 	bullet_identifier = "small bullet"
 
 /obj/projectile/bullet/c57x39mm/hp
@@ -44,8 +44,8 @@
 
 /obj/projectile/bullet/c46x30mm/ap
 	name = "4.6x30mm armor-piercing bullet"
-	damage = 25
-	armour_penetration = -20
+	damage = 18
+	armour_penetration = 40
 	speed_mod = BULLET_SPEED_AP_MOD
 
 /obj/projectile/bullet/c46x30mm/hp

@@ -121,6 +121,7 @@
 	icon_state = "heavylaser"
 	damage = 25
 	armour_penetration = 20
+
 /obj/projectile/beam/laser/heavylaser
 	name = "heavy laser"
 	icon_state = "heavylaser"
