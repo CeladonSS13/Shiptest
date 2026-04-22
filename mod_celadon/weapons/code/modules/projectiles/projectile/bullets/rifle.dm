@@ -102,28 +102,6 @@
 	bullet_identifier = "medium bullet"
 
 // ========================================
-// MARK: 5.56x45
-
-/obj/projectile/bullet/a556_45
-	name = "5.56x45mm bullet"
-	damage = 23
-	armour_penetration = 15 // Original: armour_penetration = 20, damage = 25
-
-/obj/projectile/bullet/a556_45/a856
-	name = "5.56x45mm A856 bullet"
-	damage = 38
-	armour_penetration = -30 // Original: armour_penetration = 25, damage = 30
-
-/obj/projectile/bullet/a556_45/m903
-	name = "5.56x45mm M903 bullet"
-	damage = 20
-	armour_penetration = 45 // Original: armour_penetration = 40
-
-/obj/projectile/bullet/a556_45/surplus
-	name = "5.56x45mm surplus bullet"
-	damage = 20
-	armour_penetration = 0
-
 // MARK: .308
 
 /obj/projectile/bullet/a308

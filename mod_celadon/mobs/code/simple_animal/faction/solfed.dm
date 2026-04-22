@@ -86,7 +86,7 @@
 	ranged = 1
 	retreat_distance = 3
 	minimum_distance = 5
-	casingtype = /obj/item/ammo_casing/caseless/c556mm
+	casingtype = /obj/item/ammo_casing/a556_42
 	rapid = 3
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/solfed/marine/pistol
 	armor_base = /obj/item/clothing/suit/armor/vest/marine
@@ -99,7 +99,7 @@
 	rapid = 3
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/solfed/marine
 	armor_base = /obj/item/clothing/suit/armor/vest/marine
-	casingtype = /obj/item/ammo_casing/a556_45
+	casingtype = /obj/item/ammo_casing/a556_42
 	r_hand = /obj/item/gun/ballistic/automatic/assault/g36
 	projectilesound = 'mod_celadon/_storage_sounds/sound/gun/g36.ogg'
 

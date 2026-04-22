@@ -2,7 +2,6 @@
 [*] - отсутствуют.
 [-] - отключены.
 
-> 5.56x45mm
 > .308
 > 8x58
 > 410x76mm
@@ -10,64 +9,7 @@ Resprite
 > .308
 > 5.56x42
 > 7.62x40
-MARK: 5.56x45
 */
-
-//Коробки 5.56x45mm, плюс стандартная коробка так как ее нету в основном коде
-
-/obj/item/ammo_box/magazine/ammo_stack/prefilled/a556_45
-	ammo_type = /obj/item/ammo_casing/a556_45
-	max_ammo = 15
-
-/obj/item/ammo_box/magazine/ammo_stack/prefilled/a556_45/a856
-	ammo_type = /obj/item/ammo_casing/a556_45/a856
-	max_ammo = 15
-
-/obj/item/ammo_box/magazine/ammo_stack/prefilled/a556_45/m903
-	ammo_type = /obj/item/ammo_casing/a556_45/m903
-	max_ammo = 15
-
-/obj/item/ammo_box/magazine/ammo_stack/prefilled/a556_45/surplus
-	ammo_type = /obj/item/ammo_casing/a556_45/surplus
-	max_ammo = 15
-
-/obj/item/storage/box/ammo/a556_box
-	name = "ammo box (5.56x45mm)"
-	desc = "A box of standard 5.56x45mm ammo."
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
-	icon_state = "a556_45box_big"
-/obj/item/storage/box/ammo/a556_box/PopulateContents()
-	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a556_45 = 4)
-	generate_items_inside(items_inside,src)
-
-/obj/item/storage/box/ammo/a556_box/a856
-	name = "ammo box (5.56x45mm EP)"
-	desc = "A box of 5.56x45mm enhanced-performance ammo."
-	icon_state = "a556_45box_big-ep"
-/obj/item/storage/box/ammo/a556_box/a856/PopulateContents()
-	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a556_45/a856 = 4)
-	generate_items_inside(items_inside,src)
-
-/obj/item/storage/box/ammo/a556_box/m903
-	name = "ammo box (5.56x45mm AP)"
-	desc = "A box of 5.56x45mm armour-piercing ammo."
-	icon_state = "a556_45box_big-ap"
-/obj/item/storage/box/ammo/a556_box/m903/PopulateContents()
-	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a556_45/m903 = 4)
-	generate_items_inside(items_inside,src)
-
-/obj/item/storage/box/ammo/a556_box/surplus
-	name = "surplus ammo box (5.56x45mm)"
-	desc = "A box of standard 5.56x45mm ammo."
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo.dmi'
-	icon_state = "a556box_surplus"
-/obj/item/storage/box/ammo/a556_box/surplus/PopulateContents()
-	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a556_45/surplus = 4)
-	generate_items_inside(items_inside,src)
 
 //
 // MARK: .308
@@ -201,9 +143,6 @@ MARK: 5.56x45
 /obj/item/storage/box/ammo/a556_42
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
 	icon_state = "a556_42box_big"
-
-/obj/item/storage/box/ammo/a556_box/m903
-	icon_state = "a556_45box_big-ap"
 
 // MARK: 7.62x40
 

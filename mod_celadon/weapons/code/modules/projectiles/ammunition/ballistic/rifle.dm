@@ -2,44 +2,10 @@
 [*] - отсутствуют.
 [-] - отключены.
 
-
-> 5.56x45mm
 > .308
 > 7.62x54mmR
 
 */
-
-//
-// MARK: 5.56x45mm
-//
-
-/obj/item/ammo_casing/a556_45
-	name = "5.56x45mm bullet casing"
-	desc = "A 5.56x45mm bullet casing."
-	icon_state = "rifle-brass"
-	caliber = "5.56x45mm"
-	projectile_type = /obj/projectile/bullet/a556_45
-
-/obj/item/ammo_casing/a556_45/a856
-	name = "5.56x45mm A856 bullet casing"
-	desc = "A 5.56x45mm bullet casing."
-	icon_state = "rifle-brass-incen"
-	caliber = "5.56x45mm"
-	projectile_type = /obj/projectile/bullet/a556_45/a856
-
-/obj/item/ammo_casing/a556_45/m903
-	name = "5.56x45mm M903 bullet casing"
-	desc = "A 5.56x45mm bullet casing."
-	icon_state = "rifle-brass-ap"
-	caliber = "5.56x45mm"
-	projectile_type = /obj/projectile/bullet/a556_45/m903
-
-/obj/item/ammo_casing/a556_45/surplus
-	name = "5.56x45mm surplus bullet casing"
-	desc = "A 5.56x45mm bullet casing."
-	icon_state = "rifle-brass-surplus"
-	caliber = "5.56x45mm"
-	projectile_type = /obj/projectile/bullet/a556_45/surplus
 
 //
 // MARK: .308

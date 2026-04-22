@@ -1,4 +1,5 @@
-// MARK: Ferromagnetic Pellet (Prototype Gauss Rifle & Claris)
+/*
+ // MARK: Ferromagnetic Pellet (Prototype Gauss Rifle & Claris)
 
 /obj/projectile/bullet/gauss
 	name = "ferromagnetic pellet"
@@ -61,3 +62,4 @@
 	muzzle_type = /obj/effect/projectile/muzzle/gauss
 	tracer_type = /obj/effect/projectile/tracer/gauss
 	impact_type = /obj/effect/projectile/impact/gauss
+*/

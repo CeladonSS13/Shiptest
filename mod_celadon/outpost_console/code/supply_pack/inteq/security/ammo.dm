@@ -13,7 +13,6 @@
 > 12 Gauge
 > 7.62x40mm
 > .308
-> 5.56x45mm
 
 MARK: 9x18mm
 */
@@ -200,6 +199,29 @@ MARK: 9x18mm
 	cost = 450
 
 /*
+MARK: 5.56x42mm
+*/
+
+/datum/supply_pack/faction/inteq/ammo/a556_ammo_box
+	name = "5.56x42mm Ammo Box"
+	desc = "Contains one 60-round 5.56x42mm box."
+	contains = list(/obj/item/storage/box/ammo/a556_42)
+	cost = 700
+
+/datum/supply_pack/faction/inteq/ammo/a556_ap
+	name = "5.56x42mm Armour Piercing Ammo Box"
+	desc = "Contains one 60-round 5.56x42mm Armour Piercing box."
+	contains = list(/obj/item/storage/box/ammo/a556_42/ap)
+	cost = 1000
+
+/datum/supply_pack/faction/inteq/ammo/a556_hp
+	name = "5.56x42mm Hollow Point Ammo Box"
+	desc = "Contains one 60-round 5.56x42mm Hollow Point box."
+	contains = list(/obj/item/storage/box/ammo/a556_42/hp)
+	cost = 1000
+
+
+/*
 	MARK: .308
 */
 
@@ -220,28 +242,6 @@ MARK: 9x18mm
 	desc = "Contains a thirty-round .308 hollow point box for DMRs such as the SsG-04 and CM-GAL-S."
 	contains = list(/obj/item/storage/box/ammo/a308/hp)
 	cost = 250
-
-/*
-	MARK: 5.56x45mm
-*/
-
-/datum/supply_pack/faction/inteq/ammo/box556_box
-	name = "5.56x45mm Ammo Box"
-	desc = "Contains two 60-round 5.56x45mm ammo."
-	contains = list(/obj/item/storage/box/ammo/a556_box)
-	cost = 500
-
-/datum/supply_pack/faction/inteq/ammo/box556/a856_box
-	name = "5.56x45mm Enhanced Performance Ammo Box"
-	desc = "Contains one 60-round 5.56x45mm Enhanced Performance ammo."
-	contains = list(/obj/item/storage/box/ammo/a556_box/a856)
-	cost = 650
-
-/datum/supply_pack/faction/inteq/ammo/box556/m903_box
-	name = "5.56x45mm Armour Piercing Ammo Box"
-	desc = "Contains one 60-round 5.56x45mm Armour Piercing ammo."
-	contains = list(/obj/item/storage/box/ammo/a556_box/m903)
-	cost = 1300
 
 /*
 	MARK: 6.5mm / 6.5x57mm

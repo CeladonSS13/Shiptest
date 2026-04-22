@@ -17,7 +17,7 @@
 /obj/item/gun/ballistic/automatic/assault/g36sh
 //Описание
 	name = "\improper G36-SH"
-	desc = "Solar Federation's elite assault rifle. This version is shortened. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Uses 5.56x45 rounds."
+	desc = "Solar Federation's elite assault rifle. This version is shortened. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Uses 5.56x42 rounds."
 //Иконки
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32guns.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_lefthand.dmi'
@@ -62,7 +62,7 @@ NO_MAG_GUN_HELPER(automatic/assault/g36sh)
 
 /obj/item/gun/ballistic/automatic/assault/g36sh/inteq
 	name = "\improper G36m-SH"
-	desc = "A SolFed G36-SH, modified to IRMG standarts. Used by elite mercenaries. Uses 5.56x45."
+	desc = "A SolFed G36-SH, modified to IRMG standarts. Used by elite mercenaries. Uses 5.56x42."
 	icon_state = "g36shinteq"
 	item_state = "g36shinteq"
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/back.dmi'
@@ -74,7 +74,7 @@ NO_MAG_GUN_HELPER(automatic/assault/g36sh/inteq)
 
 /obj/item/gun/ballistic/automatic/assault/g36
 	name = "\improper G36"
-	desc = "Solar Federation's elite assault rifle. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Uses 5.56x45 rounds."
+	desc = "Solar Federation's elite assault rifle. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Uses 5.56x42 rounds."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32guns.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_righthand.dmi'
@@ -112,7 +112,7 @@ NO_MAG_GUN_HELPER(automatic/assault/g36)
 
 /obj/item/gun/ballistic/automatic/assault/g36/inteq
 	name = "\improper G36m"
-	desc = "A SolFed G36, modified to IRMG standarts. Used by elite mercenaries. Uses 5.56x45."
+	desc = "A SolFed G36, modified to IRMG standarts. Used by elite mercenaries. Uses 5.56x42."
 	icon_state = "g36inteq"
 	item_state = "g36inteq"
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/back.dmi'

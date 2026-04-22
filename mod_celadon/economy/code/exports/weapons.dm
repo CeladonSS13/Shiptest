@@ -60,7 +60,7 @@
 
 /datum/export/weapon/g36
 	unit_name = "G36M Rifle"
-	desc = "An extremely powerful modified G36 to satisfy every gun need a pro mercenary can have. Chambered in 5.56x45"
+	desc = "An extremely powerful modified G36 to satisfy every gun need a pro mercenary can have. Chambered in 5.56x42"
 	export_types = list(/obj/item/gun/ballistic/automatic/assault/g36/inteq)
 	cost = 800
 

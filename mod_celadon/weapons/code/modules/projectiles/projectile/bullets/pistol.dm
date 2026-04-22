@@ -44,9 +44,7 @@
 	damage = 19
 	armour_penetration = -15
 
-/obj/projectile/bullet/c9mm/surplus
-	name = "9x18mm surplus bullet"
-	speed_mod = BULLET_SPEED_SURPLUS_MOD
+// /obj/projectile/bullet/c9mm/surplus
 
 /obj/projectile/bullet/c9mm/ap
 	damage = 18

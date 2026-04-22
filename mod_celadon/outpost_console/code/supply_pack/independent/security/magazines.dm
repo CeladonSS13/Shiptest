@@ -188,21 +188,21 @@
 
 // /datum/supply_pack/faction/independent/magazine/g36_sh
 // 	name = "G36 Short Magazine Double Pack"
-// 	desc = "Contains two 5.56x45mm magazines for the G36 family rifles, with a capacity of 20 rounds."
+// 	desc = "Contains two 5.56x42mm magazines for the G36 family rifles, with a capacity of 20 rounds."
 // 	contains = list(/obj/item/ammo_box/magazine/g36/sh/empty,
 // 					/obj/item/ammo_box/magazine/g36/sh/empty)
 // 	cost = 1400
 
 // /datum/supply_pack/faction/independent/magazine/g36
 // 	name = "G36 Standard Magazine Double Pack"
-// 	desc = "Contains two 5.56x45mm magazines for the G36 family rifles, with a capacity of 30 rounds."
+// 	desc = "Contains two 5.56x42mm magazines for the G36 family rifles, with a capacity of 30 rounds."
 // 	contains = list(/obj/item/ammo_box/magazine/g36/empty,
 // 					/obj/item/ammo_box/magazine/g36/empty)
 // 	cost = 1950
 
 // /datum/supply_pack/faction/independent/magazine/g36_drum
 // 	name = "G36 Drum Magazine"
-// 	desc = "Contains 5.56x45mm drum magazine for the G36 family rifles, with a capacity of 75 rounds."
+// 	desc = "Contains 5.56x42mm drum magazine for the G36 family rifles, with a capacity of 75 rounds."
 // 	contains = list(/obj/item/ammo_box/magazine/g36/drum/empty)
 // 	cost = 5000
 

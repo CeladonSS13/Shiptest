@@ -97,23 +97,23 @@
 	contains = list(/obj/item/ammo_box/magazine/f4_308/empty)
 	cost = 500
 
-/* 5.56x45mm */
+/* 5.56x42mm */
 
 /datum/supply_pack/faction/inteq/magazine/g36_sh
-	name = "G36 - Short Magazine (5.56x45mm)"
-	desc = "Contains two 5.56x45mm magazines for the G36 family rifles, with a capacity of 20 rounds."
+	name = "G36 - Short Magazine (5.56x42mm)"
+	desc = "Contains two 5.56x42mm magazines for the G36 family rifles, with a capacity of 20 rounds."
 	contains = list(/obj/item/ammo_box/magazine/g36/sh/empty)
 	cost = 500
 
 /datum/supply_pack/faction/inteq/magazine/g36
-	name = "G36 - Standard Magazine (5.56x45mm)"
-	desc = "Contains two 5.56x45mm magazines for the G36 family rifles, with a capacity of 30 rounds."
+	name = "G36 - Standard Magazine (5.56x42mm)"
+	desc = "Contains two 5.56x42mm magazines for the G36 family rifles, with a capacity of 30 rounds."
 	contains = list(/obj/item/ammo_box/magazine/g36/empty)
 	cost = 1000
 
 /datum/supply_pack/faction/inteq/magazine/g36_drum
-	name = "G36 - Drum Magazine (5.56x45mm)"
-	desc = "Contains 5.56x45mm drum magazine for the G36 family rifles, with a capacity of 75 rounds."
+	name = "G36 - Drum Magazine (5.56x42mm)"
+	desc = "Contains 5.56x42mm drum magazine for the G36 family rifles, with a capacity of 75 rounds."
 	contains = list(/obj/item/ammo_box/magazine/g36/drum/empty)
 	cost = 3000
 

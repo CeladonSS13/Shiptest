@@ -1,5 +1,5 @@
 // MARK: .38 (Colt Detective Special & Winchester)
-
+/*
 /obj/projectile/bullet/c38
 	name = ".38 bullet"
 	damage = 20
@@ -111,34 +111,20 @@
 		var/atom/movable/M = target
 		var/atom/throw_target = get_edge_target_turf(M, get_dir(src, get_step_away(M, src)))
 		M.safe_throw_at(throw_target, 2, 2)
-
+*/
 // MARK: .357 (Syndicate Revolver)
 
 /obj/projectile/bullet/a357
-	name = ".357 bullet"
 	damage = 30
 	armour_penetration = 10
-	speed = BULLET_SPEED_REVOLVER
-	bullet_identifier = "medium bullet"
 
 /obj/projectile/bullet/a357/match
-	name = ".357 match bullet"
 	damage = 27
 	armour_penetration = 40
-	speed_mod = BULLET_SPEED_AP_MOD
-	ricochets_max = 5
-	ricochet_chance = 140
-	ricochet_auto_aim_angle = 50
-	ricochet_auto_aim_range = 6
-	ricochet_incidence_leeway = 80
-	ricochet_decay_chance = 1
 
 /obj/projectile/bullet/a357/hp
-	name = ".357 hollow point bullet"
 	damage = 40
 	armour_penetration = -25
-	speed_mod = BULLET_SPEED_HP_MOD
-	ricochet_chance = 0
 
 /*
 // MARK: .45-70 Gov't (Hunting Revolver)
@@ -179,26 +165,17 @@
 // MARK: 44 Short (Roumain & Shadow)
 
 /obj/projectile/bullet/a44roum
-	name = ".44 roumain bullet"
 	damage =  35
 	armour_penetration = 10
-	speed = BULLET_SPEED_REVOLVER
-	bullet_identifier = "small bullet"
 
 /obj/projectile/bullet/a44roum/rubber
-	name = ".44 roumain rubber bullet"
 	damage =  10
 	stamina = 40
 	armour_penetration = -10
-	speed_mod = BULLET_SPEED_RUBBER_MOD
-	bullet_identifier = "small rubber bullet"
 
 /obj/projectile/bullet/a44roum/hp
-	name = ".44 roumain hollow point bullet"
 	damage = 50
 	armour_penetration = -25
-	ricochet_chance = 0
-	speed_mod = BULLET_SPEED_HP_MOD
 
 //===========================================
 // коммит Delyasha Ребаланс патронов 68f5c5ecca9d26a210e35e644884090912dafe1b

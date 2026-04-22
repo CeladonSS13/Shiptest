@@ -20,8 +20,7 @@
 > 5.7x39
 > 5.56 caseless
 > 12 Gauge
-> 5.56x42 (Hydra)
-> [-] 5.56x45 (G36)
+> 5.56x42 (Hydra)/obj/item/ammo_casing/a556_42
 > 7.62
 > .45-70
 > .300
@@ -96,7 +95,7 @@ match
 	damage = 20
 	armour_penetration = -10
 */
-- Используют: 
+- Используют:
 - Револьверы: HP Detective
 - Винтовки: Flaming Arrow Lever Action
 
@@ -111,7 +110,7 @@ hp
 	damage = 50
 	armour_penetration = -20
 */
-- Используют: 
+- Используют:
 - Авто-пистолеты: CM-357 (SF)
 - Револьверы: Firebrand / Viper-23 /  Horizon-X (IQ) / Rhino (NT) / R-23 'Viper' (S)
 - Винтовки: Absolution Lever Action
@@ -124,8 +123,8 @@ hp
 	damage = 50
 	armour_penetration = 0
 */
-- Используют: 
-- Револьверы: Shadow / Montagne 
+- Используют:
+- Револьверы: Shadow / Montagne
 - Пистолеты: M20 Auto Elite / Pinscher Heavy Pistol (IQ)
 - SMG: Firestorm
 
@@ -140,7 +139,7 @@ hp
 	damage = 70
 	armour_penetration = -10
 */
-- Используют: 
+- Используют:
 - Револьвер: Ashhand Hunting
 - Винтовки: Beacon Break Action
 
@@ -157,7 +156,7 @@ hp
 	damage = 35
 	armour_penetration = 10
 */
-- Используют: 
+- Используют:
 - Штурмовые: CM-82 / SMR-80 (S) / SAW-80 (S)
 - Снапер-DMR: SBR-80 (S)
 
@@ -172,8 +171,8 @@ hp
 	damage = 50
 	armour_penetration = 10
 */
-- Используют: 
-- Винтовки: Illestren / Model 23 'Woodsman' / 
+- Используют:
+- Винтовки: Illestren / Model 23 'Woodsman' /
 
 
 /* MARK: 7.62x40mm
@@ -187,7 +186,7 @@ hp
 	damage = 40
 	armour_penetration = 10
 */
-- Используют: 
+- Используют:
 - Винтовки: Super Sporter
 - Штурмовые: SKM-24 / SKM-44 (IQ) / CM-24 (SF)
 - LMG: CM-40 (SF)
@@ -203,25 +202,11 @@ hp
 	damage = 60
 	armour_penetration = -10
 */
-- Используют: 
+- Используют:
 - Винтовки:
 - Штурмовые: Morita Mk.I
 - LMG: KM-05 Rottweiler (IQ)
 - Снайпер: SsG-04 (IQ) / CM-F4 (SF)
-
-/* MARK: 5.56x45mm
-bullet
-	damage = 25
-	armour_penetration = 20
-a856
-	damage = 30
-	armour_penetration = 25
-m903
-	damage = 20
-	armour_penetration = 40
-*/
-- Используют:
-- Штурмовые: G36M (IQ)
 
 // SMG
 
@@ -283,7 +268,7 @@ bullet
 	damage = 40
 	armour_penetration = 50
 */
-- Используют: 
+- Используют:
 - Снайпер: Boomslang-90 / SSG-08 Saluki (IQ) / CM-F90 (SF) / MSR-90 'Boomslang' (S)
 
 /* MARK: 7.62x54mm
@@ -297,7 +282,7 @@ bullet
 	damage = 50
 	armour_penetration = 40
 */
-- Используют: 
+- Используют:
 - Снайпер: Scout Sniper
 
 // Гаусс
@@ -667,22 +652,6 @@ MARK: .22lr
 	contains = list(/obj/item/storage/box/ammo/a556_42/hp)
 	cost = 1000
 */
-
-/*
-	MARK: 5.56x45
-*/
-
-// /datum/supply_pack/faction/independent/ammo/box556_box
-// 	name = "5.56x45mm Ammo Box"
-// 	desc = "A box of standard 5.56x45mm ammo."
-// 	contains = list(/obj/item/storage/box/ammo/a556_box)
-// 	cost = 500
-
-// /datum/supply_pack/faction/independent/ammo/box556/a856_box
-// 	name = "5.56x45mm EP Ammo Box"
-// 	desc = "A box of enhanced performance 5.56x45mm ammo."
-// 	contains = list(/obj/item/storage/box/ammo/a556_box/a856)
-// 	cost = 650
 
 /*
 	MARK: 7.62x40
