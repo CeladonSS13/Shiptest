@@ -5,7 +5,7 @@
 
 /obj/item/gun/ballistic/automatic/assault/skm/pirate
 	wear_rate = 3
-	fire_delay = 0.14
+	fire_delay = 0.14 SECONDS
 	recoil = 1.25
 
 /obj/item/gun/ballistic/automatic/assault/skm/inteq

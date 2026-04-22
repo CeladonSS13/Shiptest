@@ -143,7 +143,7 @@
 
 /obj/item/storage/guncase/saw80
 	gun_type = /obj/item/gun/ballistic/automatic/assault/hydra/lmg
-	mag_type = /obj/item/ammo_box/magazine/m556_42_hydra/extended
+	mag_type = /obj/item/ammo_box/magazine/m556_42_hydra // [CELADON-EDIT] Original: /obj/item/ammo_box/magazine/m556_42_hydra/extended
 
 /obj/item/storage/guncase/hydra80
 	gun_type = /obj/item/gun/ballistic/automatic/assault/hydra/indie

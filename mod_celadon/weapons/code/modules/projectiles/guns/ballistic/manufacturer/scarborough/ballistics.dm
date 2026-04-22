@@ -9,3 +9,7 @@
 
 /obj/item/gun/ballistic/automatic/marksman/boomslang
 	fire_delay = 0.8 SECONDS
+
+//########### RIFLES ###########//
+/obj/item/gun/ballistic/automatic/assault/hydra/lmg
+	fire_delay = 0.14 SECONDS
