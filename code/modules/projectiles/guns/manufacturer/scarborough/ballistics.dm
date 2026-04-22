@@ -530,6 +530,8 @@ NO_MAG_GUN_HELPER(automatic/smg/cobra/indie)
 	manufacturer = MANUFACTURER_SCARBOROUGH
 
 	valid_attachments = SCARBOROUGH_ATTACHMENTS
+	unique_attachments = list(
+		/obj/item/attachment/foldable_stock/sidewinder
 	)
 	slot_available = list(
 		ATTACHMENT_SLOT_MUZZLE = 1,
@@ -555,21 +557,12 @@ NO_MAG_GUN_HELPER(automatic/smg/cobra/indie)
 			"y" = 24,
 		)
 	)
-<<<<<<< Updated upstream
-	spread = 8 //[CELADON-EDIT] - GUN_BALANCE <- Original: spread = 7
-=======
 
-	fire_delay = 0.12 SECONDS
-	spread = 8
->>>>>>> Stashed changes
+	spread = 7
 	spread_unwielded = 10
 
 	recoil = 0
 	recoil_unwielded = 4
-<<<<<<< Updated upstream
-=======
-	wear_rate = 2 //[CELADON-EDIT] Original: wear rate = 1
->>>>>>> Stashed changes
 
 	default_attachments = list(/obj/item/attachment/foldable_stock/sidewinder)
 
@@ -610,7 +603,7 @@ NO_MAG_GUN_HELPER(automatic/smg/sidewinder)
 	)
 	w_class = WEIGHT_CLASS_BULKY
 
-	fire_delay = 0.8 SECONDS // [CELADON-EDIT] - GUN_BALANCE // fire_delay = 1 SECONDS
+	fire_delay = 1 SECONDS
 
 	show_magazine_on_sprite = TRUE
 	unique_mag_sprites_for_variants = TRUE
@@ -900,6 +893,14 @@ NO_MAG_GUN_HELPER(automatic/assault/hydra/indie)
 	)
 
 EMPTY_GUN_HELPER(automatic/assault/hydra/dmr)
+
+/obj/item/gun/ballistic/automatic/assault/hydra/dmr/Initialize()
+	. = ..()
+	// [CELADON-EDIT] -- CELADON_FIXES -- фиксим неподходящий магазин (вагабага дырдырдыр)
+	// magazine = new /obj/item/ammo_box/magazine/m556_42_hydra/small(src)
+	// magazine = new mag_type(src)
+	// [/CELADON-EDIT]
+	chamber_round()
 
 /obj/item/gun/ballistic/automatic/assault/hydra/underbarrel_gl
 	name = "SMR-80 \"Hydra\""
