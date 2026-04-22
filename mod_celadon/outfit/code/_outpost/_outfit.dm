@@ -2,7 +2,7 @@
 	name = "\improper Elysium Central Command access card"
 	desc = "An access card sourced from Elysium Central Command."
 	icon = 'mod_celadon/_storage_icons/icons/resprite/card.dmi'
-	icon_state = "elysium_com"
+	icon_state = "ideusm_centcom"
 	uses_overlays = FALSE
 	registered_age = null
 

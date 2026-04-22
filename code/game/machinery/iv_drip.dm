@@ -151,7 +151,7 @@
 							return
 				// [/CELADON-ADD][CELADON-EDIT] - CELADON_FIXES_BLOOD
 				// beaker.reagents.trans_to(attached, transfer_amount * seconds_per_tick * 0.5, method = INJECT, show_message = FALSE) //make reagents reacts, but don't spam messages // ORIGINAL
-				beaker.reagents.trans_to(attached, actual_transfer_amount, method = INJECT, show_message = FALSE) //make reagents reacts, but don't spam messages
+				beaker.reagents.trans_to(attached, actual_transfer_amount, methods = INJECT, show_message = FALSE) //make reagents reacts, but don't spam messages
 				// [/CELADON-EDIT]
 				update_appearance()
 

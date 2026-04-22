@@ -61,7 +61,10 @@
 #define MANUFACTURER_EOEHOMA "the Eoehoma Firearms emblem"
 #define MANUFACTURER_NANOTRASEN_OLD "an outdated Nanotrasen logo"
 #define MANUFACTURER_NANOTRASEN "the Nanotrasen logo"
-#define MANUFACTURER_VIGILITAS "the Nanotrasen Advantage logo"
+// [CELADON-EDIT] - возвращаем старое лого
+// #define MANUFACTURER_VIGILITAS "the Nanotrasen Advantage logo"
+#define MANUFACTURER_VIGILITAS "the Vigilitas Interstellar logo"
+// [/CELADON-EDIT]
 #define MANUFACTURER_BRAZIL "a green flag with a blue circle and a yellow diamond around it"
 #define MANUFACTURER_INTEQ "an orange crest with the letters 'IRMG'"
 #define MANUFACTURER_MINUTEMAN "the Lanchester City Firearms Plant logo"
@@ -132,6 +135,7 @@
 #define COMSIG_ATTACHMENT_DETACH "attach-detach"
 #define COMSIG_ATTACHMENT_EXAMINE "attach-examine"
 #define COMSIG_ATTACHMENT_EXAMINE_MORE "attach-examine-more"
+#define COMSIG_ATTACHMENT_TRY_FIRE_GUN "attach-try-fire-gun"
 #define COMSIG_ATTACHMENT_PRE_ATTACK "attach-pre-attack"
 #define COMSIG_ATTACHMENT_AFTER_ATTACK "attach-after-attack"
 #define COMSIG_ATTACHMENT_ATTACK "attach-attacked"

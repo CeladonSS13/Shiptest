@@ -8,11 +8,28 @@
 /datum/export/claymore
 	unit_name = "defused claymores"
 	desc = "The Confederated League maintains an active bounty program for the disposal of UXO. Make the frontier a safer place today!"
-	cost = 1250
+	cost = 500	//cost = 1250 // [CELADON-EDIT]
 	elasticity_coeff = 0.1
 	export_types = list(/obj/item/mine/directional/claymore)
 
+// [CELADON-ADD]
+/datum/export/anomaly
+	unit_name = "stabilized anomaly core"
+	cost = 1000
+	elasticity_coeff = 0.1
+	export_types = list(/obj/item/assembly/signaler/anomaly)
+
+/datum/export/anomaly/New(...)
+	. = ..()
+	desc = "[SSmissions.get_researcher_name()] has requested that we [pick(list("procure", "grab", "acquire", "find", "locate"))] \
+	anomaly cores for [pick(list("research", "analysis", "technical development", "closer inspection", "some reason"))]."
+// [/CELADON-ADD]
+
 // Circuit boards, spare parts, etc.
+
+// [CELADON-EDIT]
+/datum/export/solar
+	elasticity_coeff = 0.05
 
 /datum/export/solar/assembly
 	cost = 50
@@ -34,17 +51,20 @@
 
 /datum/export/thruster_ion
 	cost = 500
-	desc = "One set of circuits and controllers for an electrical ion engine."
+	desc = "One set of t3 circuits and controllers for an electrical ion engine."
 	unit_name = "ion thruster board"
-	export_types = list(/obj/item/circuitboard/machine/shuttle/engine/electric)
+	elasticity_coeff = 0.05
+	export_types = list(/obj/item/circuitboard/machine/shuttle/engine/electric/tech3)
+// [/CELADON-EDIT]
 
+/*
 //Computer Tablets and Parts
 /datum/export/modular_part
 	cost = 15
 	desc = "You find it? We want it."
 	unit_name = "miscellaneous computer part"
 	export_types = list(/obj/item/computer_hardware)
-
+*/
 /* if only
 /datum/export/stack/cable
 	cost = 0.1

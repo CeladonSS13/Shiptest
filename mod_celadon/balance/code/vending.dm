@@ -8,6 +8,47 @@
 /obj/machinery/vending/wallmed
 	all_items_free = TRUE
 
+/obj/machinery/vending/wallmed/ship //специальный вариант валлмеда для шипов и руинок, без бесконечных рестоков и дебаг лута
+	name = "\improper wall-mounted NanoMed"
+	desc = "Wall-mounted Medical Equipment dispenser."
+	product_ads = ""
+	armor = list("melee" = 20, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 70)
+	circuit = /obj/item/circuitboard/machine/vending/wallmed/ship
+	restock_hourly = FALSE
+
+	products = list(
+		/obj/item/stack/medical/bruise_pack = 2,
+		/obj/item/stack/medical/ointment = 2,
+		/obj/item/stack/medical/gauze = 4,
+		/obj/item/stack/medical/splint = 2,
+		/obj/item/stack/medical/bone_gel = 1,
+		/obj/item/storage/pill_bottle/charcoal/less = 1,
+		/obj/item/reagent_containers/syringe/antiviral = 2,
+		/obj/item/reagent_containers/hypospray/medipen/ekit = 2,
+		/obj/item/reagent_containers/hypospray/medipen/tramal = 2,
+		/obj/item/healthanalyzer = 2,
+	)
+	contraband = list(
+		/obj/item/reagent_containers/pill/tox = 1,
+		/obj/item/storage/box/gum/happiness = 1,
+	)
+	premium = list(
+		/obj/item/reagent_containers/pill/patch/indomide = 2,
+		/obj/item/reagent_containers/pill/patch/alvitane = 2,
+		/obj/item/reagent_containers/medigel/hadrakine = 2,
+		/obj/item/reagent_containers/medigel/quardexane = 2,
+	)
+
+/obj/item/circuitboard/machine/vending/wallmed/ship
+	name = "wall-mounted NanoMed (Machine Board)"
+	build_path = /obj/machinery/vending/wallmed/ship
+	req_components = list(
+		/obj/item/vending_refill/wallmed/ship = 1)
+
+/obj/item/vending_refill/wallmed/ship
+	machine_name = "NanoMed"
+	icon_state = "refill_medical"
+
 /obj/machinery/vending/medical/outpost_access
 	name = "\improper Elysium Plus"
 	all_items_free = TRUE

@@ -1,9 +1,10 @@
 /datum/supply_pack/faction/nanotrasen/tools
-	category = "Tools & Tanks"
+	category = "Engi - Tools & Tanks"
 	crate_type = /obj/structure/closet/crate/engineering
+	stable_price = TRUE
 
 /datum/supply_pack/faction/nanotrasen/tools/mining
-	name = "Basic Mining Crate"
+	name = "Basic Mining"
 	desc = "Contains two pickaxes, two ore bags, and two manual mining scanners."
 	cost = 500 //cheaper to send your legions to war (mining) (also you can just print all this asides the scanners so what's the point anyway)
 	contains = list(
@@ -16,8 +17,8 @@
 	crate_name = "basic mining crate"
 
 /datum/supply_pack/faction/nanotrasen/tools/inducer
-	name = "Inducer Crate"
+	name = "Inducer (Engineer)"
 	desc = "An electromagnetic induction charging device, used for both field engineering/recharging and reactivation of Positronics. Not suitable for cooking."
-	cost = 750
+	cost = 1000
 	contains = list(/obj/item/inducer)
 	crate_name = "inducer crate"

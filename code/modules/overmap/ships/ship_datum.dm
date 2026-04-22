@@ -134,10 +134,16 @@
 	var/rotation_velocity = 0
 
 	var/skiptickfortrail = 0
-	// [CELADON-EDIT] - Убираем предупреждение валидатора
+	// [CELADON-EDIT] - Убираем предупреждение валидатора; [CELADON-EDIT] - Добавлены ковычки для запуска на 516
+#if DM_VERSION >= 516
+	var/list/obj/shiptrail/trails = alist(1 = null,
+							2 = null,
+							3 = null)
+#else
 	var/list/obj/shiptrail/trails = list(1 = null,
 							2 = null,
 							3 = null)
+#endif
 	// [/CELADON-EDIT]
 
 /datum/overmap/ship/proc/check_proximity()

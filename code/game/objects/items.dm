@@ -443,7 +443,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	add_fingerprint(usr)
 	return ..()
 
-/obj/item/attack_hand(mob/user)
+/obj/item/attack_hand(mob/user, list/modifiers)
 	. = ..()
 	if(.)
 		return
@@ -452,11 +452,15 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	if(anchored)
 		return
 
+	// Right-click is now the standard for opening storage items, and shouldn't try to pickup/unequip items without storage.
+	if(LAZYACCESS(modifiers, RIGHT_CLICK))
+		return
+
 	//check if the item is inside another item's storage
-	if(istype(loc, /obj/item/storage))
+	if(isitem(loc))
 		//if so, can we actually access it?
 		var/datum/component/storage/ourstorage = loc.GetComponent(/datum/component/storage)
-		if(!ourstorage.access_check())
+		if(ourstorage && !ourstorage.access_check())
 			SEND_SIGNAL(loc, COMSIG_TRY_STORAGE_HIDE_FROM, user)//you're not supposed to be in here right now, punk!
 			return
 
@@ -573,7 +577,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 //		playsound(src, 'sound/weapons/effects/deflect.ogg', 100)	// Original
 		if(istype(src, /obj/item/shield))
 			playsound(src, pick('mod_celadon/_storage_sounds/sound/gun/shieldhit1.wav', 'mod_celadon/_storage_sounds/sound/gun/shieldhit2.wav'), 100)
-		else if(istype(src, /obj/item/melee/sword))
+		else if(istype(src, /obj/item/melee/sword) || (istype(src,/obj/item/cursed_katana)))
 			playsound(src, pick('mod_celadon/_storage_sounds/sound/gun/sword_p1.ogg', 'mod_celadon/_storage_sounds/sound/gun/sword_p2.ogg', 'mod_celadon/_storage_sounds/sound/gun/sword_p3.ogg'), 100)
 		else
 			playsound(src, 'sound/weapons/effects/deflect.ogg', 100)
@@ -827,6 +831,12 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	if (callback) //call the original callback
 		. = callback.Invoke()
 	item_flags &= ~IN_INVENTORY
+// [CELADON-ADD]
+	if(!(item_flags & NO_ROTATE_RANDOM_THROW))
+		var/matrix/M = matrix(transform)
+		M.Turn(pick(-90, 0, 90, 180))
+		transform = M
+// [/CELADON-ADD]
 	if(!pixel_y && !pixel_x && !(item_flags & NO_PIXEL_RANDOM_DROP))
 		pixel_x = rand(-8,8)
 		pixel_y = rand(-8,8)

@@ -3,6 +3,7 @@
  * Practically every casing type needs an associated ammo stack type, because that was the easiest
  * way for me to handle it.
  */
+//and because it was the easiest way now we have more gun jank :(
 /obj/item/ammo_box/magazine/ammo_stack
 	name = "ammo stack"
 	desc = "A pile of live rounds."
@@ -12,11 +13,12 @@
 	var/base_icon = null
 // [/CELADON-ADD]
 	base_icon_state = "pistol-brass"
-	item_flags = NO_PIXEL_RANDOM_DROP
+	item_flags = NO_PIXEL_RANDOM_DROP | NO_ROTATE_RANDOM_THROW	// [CELADON-EDIT]
 	multiple_sprites = AMMO_BOX_ONE_SPRITE
 	multiload = FALSE
 	start_empty = TRUE
 	max_ammo = 12
+	quick_empty = FALSE
 
 /obj/item/ammo_box/magazine/ammo_stack/update_icon(updates)
 	icon = initial(icon)

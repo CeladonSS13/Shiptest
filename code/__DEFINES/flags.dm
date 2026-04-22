@@ -129,6 +129,9 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 #define PHASING (1<<4)
 #define THROWN (1<<5)
 
+/// Combination flag for movetypes which, for all intents and purposes, mean the mob is not touching the ground
+#define MOVETYPES_NOT_TOUCHING_GROUND (FLYING|FLOATING)
+
 //Fire and Acid stuff, for resistance_flags
 #define LAVA_PROOF (1<<0)
 /// 100% immune to fire damage (but not necessarily to lava or heat)
@@ -159,6 +162,8 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 #define ZAP_DEFAULT_FLAGS ZAP_MACHINE_EXPLOSIVE | ZAP_ALLOW_DUPLICATES | ZAP_OBJ_DAMAGE | ZAP_MOB_DAMAGE | ZAP_MOB_STUN
 #define ZAP_FUSION_FLAGS ZAP_OBJ_DAMAGE | ZAP_MOB_DAMAGE | ZAP_MOB_STUN
 #define ZAP_STORM_FLAGS ZAP_OBJ_DAMAGE | ZAP_MOB_DAMAGE | ZAP_MOB_STUN
+#define ZAP_MAJOR_STORM_FLAGS ZAP_STORM_FLAGS | ZAP_GIVES_RESEARCH	// [CELADON-ADD]- DANGER_STORM
+#define ZAP_MINOR_STORM_FLAGS ZAP_OBJ_DAMAGE | ZAP_MOB_DAMAGE		// [CELADON-ADD]- DANGER_STORM
 
 #define ZAP_SUPERMATTER_FLAGS ZAP_GIVES_RESEARCH
 #define ZAP_TESLA_FLAGS ZAP_DEFAULT_FLAGS | ZAP_GIVES_RESEARCH

@@ -28,7 +28,8 @@ Difficulty: Extremely Hard
 	speed = 20
 	move_to_delay = 20
 	ranged = TRUE
-	mob_trophy = /obj/item/mob_trophy/ice_block_talisman
+	//mob_trophy = /obj/item/mob_trophy/ice_block_talisman		// [CELADON-EDIT] - RETURN_CONTENT_CRUSHER_TROPHY
+	crusher_loot = /obj/item/crusher_trophy/ice_block_talisman	// [/CELADON-EDIT]
 	loot = list(/obj/effect/decal/remains/plasma)
 	wander = FALSE
 	del_on_death = TRUE

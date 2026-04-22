@@ -8,15 +8,6 @@
 	icon_state = "clothwrap"
 	item_state = "clothwrap"
 
-/obj/item/clothing/shoes/footwraps/equipped(mob/living/carbon/human/user, slot)
-	. = ..()
-	if(slot == ITEM_SLOT_FEET)
-		ADD_TRAIT(user, TRAIT_SILENT_FOOTSTEPS, SHOES_TRAIT)
-
-/obj/item/clothing/shoes/footwraps/dropped(mob/living/carbon/human/user)
-	REMOVE_TRAIT(user, TRAIT_SILENT_FOOTSTEPS, SHOES_TRAIT)
-	return ..()
-
 /obj/item/clothing/shoes/footwraps/black
 	name = "cloth black footwraps"
 	icon_state = "clothwrap_black"

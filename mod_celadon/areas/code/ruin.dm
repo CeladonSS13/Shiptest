@@ -220,6 +220,18 @@
 	name = "Syndi Fort Shuttle"
 	icon_state = "green"
 
+/area/ruin/jungle/aiidea/engineering
+	name = "Egineering"
+	icon_state = "engine"
+
+/area/ruin/jungle/aiidea/bridge
+	name = "Bridge"
+	icon_state = "bridge"
+
+/area/ruin/jungle/aiidea/middle
+	name = "Middle"
+	icon_state = "yellow"
+
 /// MARK: Whitesands
 
 /area/ruin/whitesands/trainyard/shuttle

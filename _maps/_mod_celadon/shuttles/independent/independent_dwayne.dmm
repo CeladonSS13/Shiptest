@@ -684,16 +684,13 @@
 /turf/closed/wall,
 /area/ship/medical)
 "oE" = (
-/obj/structure/sink{
-	pixel_y = 17
-	},
-/obj/structure/mirror{
-	pixel_y = 28
-	},
 /obj/effect/turf_decal/corner/opaque/white/mono,
 /obj/effect/turf_decal/corner/opaque/blue/border{
 	dir = 9
 	},
+/obj/effect/decal/cleanable/blood/old,
+/obj/machinery/light/directional/north,
+/obj/structure/table/optable,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
 "oR" = (
@@ -895,7 +892,7 @@
 /turf/open/floor/plating/airless,
 /area/ship/external)
 "sZ" = (
-/obj/machinery/vending/wallmed{
+/obj/machinery/vending/wallmed/ship{
 	pixel_y = 28
 	},
 /obj/structure/closet/crate/freezer/blood,
@@ -1567,9 +1564,7 @@
 /obj/effect/turf_decal/corner/opaque/blue/half{
 	dir = 4
 	},
-/obj/machinery/computer/operating/retro{
-	dir = 4
-	},
+/obj/machinery/computer/operating/retro,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
 "JH" = (
@@ -2011,8 +2006,6 @@
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
 "RS" = (
-/obj/structure/bed,
-/obj/effect/decal/cleanable/blood/old,
 /obj/effect/turf_decal/corner/opaque/white/mono,
 /obj/effect/turf_decal/borderfloor{
 	dir = 8
@@ -2020,7 +2013,13 @@
 /obj/effect/turf_decal/corner/opaque/blue/half{
 	dir = 4
 	},
-/obj/machinery/light/directional/west,
+/obj/structure/mirror{
+	pixel_x = -24
+	},
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = -12
+	},
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
 "RT" = (

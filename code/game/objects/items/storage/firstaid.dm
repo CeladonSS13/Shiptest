@@ -402,7 +402,7 @@
 		new /obj/item/reagent_containers/pill/charcoal(src)
 
 /obj/item/storage/pill_bottle/charcoal/less
-	custom_price = 100
+	custom_price = 70 // [CELADON-EDIT] - OUTPOST_MED_BALANCE // custom_price = 100
 
 /obj/item/storage/pill_bottle/charcoal/less/PopulateContents()
 	for(var/i in 1 to 3)
@@ -598,8 +598,16 @@
 
 /obj/item/storage/pill_bottle/alvitane
 	name = "bottle of alvitane patches"
-	desc = "Contains alvitane pills, for treating burn injuries."
+	desc = "Contains alvitane patches, for treating burn injuries."
 
 /obj/item/storage/pill_bottle/alvitane/PopulateContents()
 	for(var/i in 1 to 5)
-		new /obj/item/reagent_containers/pill/patch/alvitane
+		new /obj/item/reagent_containers/pill/patch/alvitane(src)
+
+/obj/item/storage/pill_bottle/rcyte
+	name = "bottle of Reflex-Cytodron"
+	desc = "Contains Reflex-Cytodron tablets, a common over-the-counter stimulant."
+
+/obj/item/storage/pill_bottle/rcyte/PopulateContents()
+	for(var/i in 1 to 5)
+		new /obj/item/reagent_containers/pill/rcyte(src)

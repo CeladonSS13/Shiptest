@@ -51,10 +51,7 @@
 	dir = 8;
 	color = "#808080"
 	},
-/obj/structure/table/reinforced,
-/obj/machinery/microwave{
-	pixel_y = 18
-	},
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/canteen)
 "acv" = (
@@ -69,7 +66,7 @@
 	alpha = 0;
 	mouse_opacity = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -132,7 +129,20 @@
 	},
 /area/outpost/vacant_rooms/trash_factory)
 "aeD" = (
-/obj/machinery/vending/coffee,
+/obj/effect/turf_decal/corner_techfloor_gray/diagonal{
+	layer = 2.030
+	},
+/obj/structure/sign/neon/pizza2{
+	pixel_y = 4;
+	pixel_x = -30
+	},
+/obj/item/paper{
+	default_raw_text = "Я продал свою душу пицце. Думайте";
+	layer = 2;
+	pixel_x = -8;
+	pixel_y = -1
+	},
+/obj/machinery/vending/pizzamat,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "aeM" = (
@@ -443,6 +453,13 @@
 	planetary_atmos = 1
 	},
 /area/outpost/crew/bar)
+"alT" = (
+/obj/item/spacecash/bundle/c10,
+/obj/structure/flora/rock/pile/icy,
+/turf/open/floor/plating/asteroid/snow/temperatre{
+	layer = 2.454
+	},
+/area/outpost/exterior)
 "alX" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -690,7 +707,9 @@
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
 	layer = 2.030
 	},
-/obj/structure/fluff/hedge/opaque,
+/obj/structure/fluff/hedge/opaque{
+	icon_state = "hedge-21"
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "asi" = (
@@ -1047,7 +1066,7 @@
 /obj/structure/flora/rock/spire{
 	icon_state = "spire1"
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -1092,7 +1111,9 @@
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
 	layer = 2.030
 	},
-/obj/structure/fluff/hedge/opaque,
+/obj/structure/fluff/hedge/opaque{
+	icon_state = "hedge-137"
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "aGu" = (
@@ -1259,14 +1280,14 @@
 /area/outpost/exterior)
 "aKq" = (
 /obj/machinery/light/dim/directional/south,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
 "aKW" = (
 /obj/structure/flora/stump,
 /obj/effect/decal/cleanable/generic,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -1459,7 +1480,7 @@
 	dir = 8
 	},
 /obj/structure/flora/rock/pile/icy,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -1635,9 +1656,6 @@
 /obj/structure/flora/ausbushes/ywflowers/hell,
 /turf/open/floor/grass/fairy/beach,
 /area/outpost/exterior)
-"aTm" = (
-/turf/open/chasm,
-/area/outpost/fraction/solfed)
 "aTt" = (
 /obj/effect/turf_decal/corner/opaque/black/mono,
 /obj/effect/turf_decal/corner/opaque/neutral/diagonal,
@@ -1717,7 +1735,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
-/obj/structure/disposalpipe/segment{
+/obj/structure/disposalpipe/junction/flip{
 	dir = 4
 	},
 /turf/open/floor/plasteel/patterned/cargo_one,
@@ -1961,7 +1979,7 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -2074,7 +2092,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -2208,6 +2226,27 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/reseption)
+"bhF" = (
+/obj/effect/turf_decal/corner_techfloor_gray/diagonal{
+	layer = 2.030
+	},
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 4
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 4
+	},
+/obj/structure/railing/thick{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating/dark/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black/corner{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/cargo)
 "bhK" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
@@ -2627,7 +2666,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -2674,6 +2713,24 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
+/area/outpost/cargo)
+"bzY" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line,
+/obj/effect/turf_decal/trimline/opaque/black/warning,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/structure/sign/poster/official/safety_internals{
+	pixel_y = 1;
+	pixel_x = 27
+	},
+/turf/open/floor/plasteel/tech,
 /area/outpost/cargo)
 "bAc" = (
 /obj/effect/turf_decal/corner/opaque/black/mono,
@@ -2724,7 +2781,7 @@
 /area/outpost/crew/bar/bar_zone)
 "bBa" = (
 /obj/effect/spawner/random/trash/garbage,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -2848,7 +2905,7 @@
 	dir = 1;
 	layer = 5
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -2870,7 +2927,7 @@
 /obj/structure/sign/departments/cargo{
 	pixel_x = 32
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -2901,10 +2958,6 @@
 /turf/open/floor/marble/black,
 /area/outpost/fraction/nanotrasen)
 "bHs" = (
-/obj/machinery/door/airlock/maintenance{
-	dir = 4;
-	id_tag = "ice_cargo_bolt_5"
-	},
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
 	layer = 2.030
 	},
@@ -2916,6 +2969,10 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/machinery/door/airlock/maintenance/glass{
+	id_tag = "ice_cargo_bolt_5";
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
@@ -3189,7 +3246,7 @@
 	dir = 8;
 	layer = 5
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -3224,15 +3281,6 @@
 	planetary_atmos = 1
 	},
 /area/outpost/crew/bar/vip_zone)
-"bQR" = (
-/obj/structure/plasticflaps/outpost,
-/obj/machinery/conveyor/auto{
-	dir = 8;
-	id = "outpost3";
-	use_static_power = 1
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/outpost/fraction/solfed)
 "bRs" = (
 /obj/machinery/light/directional/north,
 /obj/structure/disposalpipe/segment{
@@ -3403,7 +3451,7 @@
 /obj/structure/platform/wood_two/corner{
 	dir = 8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -3495,6 +3543,13 @@
 	},
 /turf/open/floor/wood,
 /area/outpost/fraction/solfed)
+"bXK" = (
+/obj/structure/railing,
+/turf/open/floor/plasteel/patterned/brushed{
+	light_color = "#1B1D2E";
+	light_range = 2
+	},
+/area/outpost/exterior)
 "bXN" = (
 /obj/machinery/door/airlock/outpost{
 	dir = 1;
@@ -3843,7 +3898,7 @@
 "chm" = (
 /obj/item/spacecash/bundle/c10,
 /obj/item/spacecash/bundle/c10,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -3861,7 +3916,7 @@
 	},
 /obj/item/spacecash/bundle/c10,
 /obj/item/spacecash/bundle/c10,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -3903,7 +3958,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -3911,7 +3966,7 @@
 /mob/living/simple_animal/pet/cat{
 	desc = "A little scoundrel."
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -4326,7 +4381,7 @@
 /obj/structure/platform/wood_two/corner{
 	dir = 4
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 1.999
 	},
 /area/outpost/exterior)
@@ -4871,7 +4926,7 @@
 	pixel_y = -5;
 	network = list("outpostelysium")
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -5116,7 +5171,7 @@
 /area/outpost/crew/bar)
 "cVx" = (
 /obj/effect/decal/cleanable/blood,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -5174,7 +5229,7 @@
 	alpha = 0;
 	mouse_opacity = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 1.999
 	},
 /area/outpost/exterior)
@@ -5194,7 +5249,7 @@
 	pixel_y = -22
 	},
 /obj/structure/plasticflaps/outpost,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -5245,7 +5300,7 @@
 /obj/structure/platform/industrial{
 	pixel_y = 18
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -5272,7 +5327,7 @@
 /area/outpost/fraction/separatist)
 "dal" = (
 /obj/structure/flora/rock/ice,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -5410,7 +5465,7 @@
 	pixel_y = -3
 	},
 /obj/structure/table/scrap,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -5436,7 +5491,7 @@
 	dir = 4;
 	pixel_y = 16
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -5456,6 +5511,15 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/fraction/solfed)
+"dfe" = (
+/obj/structure/table/chem,
+/obj/item/radio/intercom/wideband/table{
+	dir = 1;
+	pixel_y = 11;
+	pixel_x = -1
+	},
+/turf/open/floor/plasteel/dark_2,
+/area/outpost/medical/hall_2)
 "dfT" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -5677,6 +5741,22 @@
 	},
 /turf/open/floor/wood/ebony,
 /area/outpost/fraction/separatist)
+"dkV" = (
+/obj/effect/turf_decal/trimline/opaque/blue/warning,
+/obj/effect/turf_decal/trimline/opaque/blue/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/transparent/solgovblue/border{
+	dir = 4
+	},
+/obj/effect/turf_decal/corner/transparent/green/border{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 4
+	},
+/turf/open/floor/marble,
+/area/outpost/exterior)
 "dkW" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30";
@@ -5842,7 +5922,6 @@
 /obj/structure/closet/crate/trashcart,
 /obj/item/spacecash/bundle/c10,
 /turf/open/floor/plasteel/dark,
-/area/space,
 /area/outpost/cargo/faction/all/zone_2)
 "dpX" = (
 /obj/structure/closet/crate/large,
@@ -5912,6 +5991,10 @@
 	planetary_atmos = 1
 	},
 /area/outpost/crew/lounge/cab_1)
+"dsn" = (
+/obj/effect/turf_decal/industrial/traffic,
+/turf/open/floor/plasteel/tech,
+/area/outpost/cargo)
 "dsE" = (
 /obj/effect/turf_decal/corner/opaque/grey/full,
 /obj/effect/turf_decal/trimline/opaque/purple/filled/line{
@@ -6092,7 +6175,7 @@
 	alpha = 0;
 	mouse_opacity = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 1.999
 	},
 /area/outpost/exterior)
@@ -6271,9 +6354,9 @@
 	layer = 2.030
 	},
 /obj/machinery/newscaster/directional/north,
-/obj/machinery/computer/cargo/faction/independent/computer_3,
+/obj/machinery/computer/cargo/faction/independent/computer_4,
 /turf/open/floor/plasteel/dark,
-/area/outpost/cargo/faction/all/zone_3)
+/area/outpost/cargo/faction/all/zone_4)
 "dCK" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -6294,6 +6377,17 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/fraction/solfed)
+"dDO" = (
+/obj/effect/turf_decal/trimline/opaque/blue/end{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/opaque/blue/line,
+/obj/machinery/vending/wallmed{
+	pixel_y = 26;
+	all_items_free = 0
+	},
+/turf/open/floor/marble,
+/area/outpost/exterior)
 "dDP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/white,
@@ -6453,6 +6547,18 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
+"dHF" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/machinery/button/door{
+	id = "ice_cargo";
+	name = "BOLT CARGO";
+	req_one_access_txt = "8100";
+	pixel_y = 23
+	},
+/turf/open/floor/plasteel/tech,
+/area/outpost/cargo)
 "dHT" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 8
@@ -6514,11 +6620,26 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"dJe" = (
+/obj/effect/turf_decal/corner_techfloor_gray/diagonal{
+	layer = 2.030
+	},
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 4
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 4
+	},
+/obj/structure/railing/thick{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/cargo)
 "dJB" = (
 /obj/effect/turf_decal/corner/opaque/yellow/full,
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel/dark,
-/area/outpost/cargo/faction/all/zone_3)
+/area/outpost/cargo/faction/all/zone_4)
 "dJD" = (
 /obj/structure/railing{
 	dir = 4
@@ -6746,6 +6867,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
+/obj/item/radio/intercom/wideband/directional/east,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "dOv" = (
@@ -7154,7 +7276,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -7320,7 +7442,7 @@
 	layer = 5;
 	dir = 4
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -7328,7 +7450,7 @@
 /obj/structure/flora/grass/both{
 	layer = 3.1
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -7792,7 +7914,6 @@
 /obj/structure/closet/crate/trashcart,
 /obj/item/spacecash/bundle/c10,
 /turf/open/floor/plasteel/dark,
-/area/space,
 /area/outpost/cargo/faction/all/zone_1)
 "eoa" = (
 /obj/structure/cable{
@@ -8055,7 +8176,7 @@
 /area/outpost/exterior)
 "evH" = (
 /obj/structure/platform/wood_two/corner,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -8217,7 +8338,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -8507,15 +8628,6 @@
 	},
 /turf/open/floor/wood,
 /area/outpost/security/detective)
-"eHV" = (
-/obj/machinery/conveyor/auto{
-	dir = 4;
-	id = "outpost3";
-	use_static_power = 1
-	},
-/obj/machinery/recycler,
-/turf/open/floor/mineral/plastitanium,
-/area/outpost/fraction/solfed)
 "eIt" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
@@ -8791,7 +8903,7 @@
 /obj/structure/flora/tree/pine{
 	icon_state = "pine_4"
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -9159,7 +9271,7 @@
 	},
 /area/outpost/crew/lounge/cab_1)
 "fai" = (
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -9409,16 +9521,14 @@
 	color = "#808080"
 	},
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/condiment/enzyme{
-	pixel_x = -2;
+/obj/item/book/manual/chef_recipes{
+	pixel_x = -4;
 	pixel_y = 6
 	},
-/obj/item/reagent_containers/condiment/enzyme{
-	pixel_x = 7;
-	pixel_y = 6
+/obj/item/kitchen/rollingpin,
+/obj/item/melee/knife/kitchen{
+	pixel_x = 7
 	},
-/obj/item/reagent_containers/glass/beaker,
-/obj/item/reagent_containers/condiment/enzyme,
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/canteen)
 "fiU" = (
@@ -9449,7 +9559,7 @@
 /obj/structure/platform/wood_two/corner{
 	dir = 4
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -9642,7 +9752,9 @@
 /obj/structure/sign/departments/sell{
 	pixel_y = 32
 	},
-/obj/structure/fluff/hedge/opaque,
+/obj/structure/fluff/hedge/opaque{
+	icon_state = "hedge-12"
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "foo" = (
@@ -9842,7 +9954,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -9984,6 +10096,19 @@
 	},
 /turf/open/floor/carpet/stellar,
 /area/outpost/fraction/syndi)
+"fvp" = (
+/obj/effect/turf_decal/industrial/traffic,
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating/dark/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black/corner{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech,
+/area/outpost/cargo)
 "fvC" = (
 /obj/structure/sign/poster/elysium/protest,
 /turf/closed/wall/r_wall/rust,
@@ -10341,7 +10466,7 @@
 	pixel_x = 8;
 	pixel_y = 12
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -10394,7 +10519,7 @@
 /obj/structure/railing/corner{
 	dir = 8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -10402,7 +10527,7 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -10701,7 +10826,7 @@
 /obj/structure/flora/rock/spire{
 	icon_state = "spire2"
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -10711,7 +10836,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -10987,7 +11112,7 @@
 /area/outpost/exterior)
 "fWD" = (
 /obj/structure/railing,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -11006,7 +11131,7 @@
 /obj/structure/platform/wood_two/corner{
 	dir = 1
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -11064,7 +11189,7 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -11192,7 +11317,7 @@
 /area/outpost/crew/lounge)
 "gaU" = (
 /obj/structure/platform/wood_two,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -11258,7 +11383,7 @@
 	dir = 8;
 	layer = 4.1
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -11490,7 +11615,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -11574,7 +11699,7 @@
 	density = 0;
 	layer = 2.96
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -11617,6 +11742,18 @@
 /obj/structure/window/reinforced/spawner,
 /turf/open/floor/grass,
 /area/outpost/crew/canteen)
+"gmG" = (
+/obj/effect/turf_decal/industrial/outline,
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 8
+	},
+/obj/machinery/portable_atmospherics/canister{
+	icon_state = "grey";
+	name = "hydrogen canister";
+	desc = "Hydrogen. Used in thruster fuel."
+	},
+/turf/open/floor/plasteel/patterned/grid/dark,
+/area/outpost/cargo)
 "gmW" = (
 /obj/structure/flora/grass/green{
 	layer = 3.1
@@ -11624,7 +11761,7 @@
 /obj/item/light/bulb{
 	pixel_y = 2
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -11654,7 +11791,7 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "gok" = (
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -11667,7 +11804,7 @@
 /area/outpost/crew/cryo)
 "goq" = (
 /obj/structure/sign/double/city/museum/left,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -11726,7 +11863,7 @@
 "gqx" = (
 /obj/structure/flora/rock/pile/icy_stone,
 /obj/structure/flora/rock/snow,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -11885,7 +12022,7 @@
 	layer = 5;
 	density = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -12071,7 +12208,7 @@
 	layer = 3.1
 	},
 /obj/structure/flora/rock/pile/icy,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -12141,7 +12278,7 @@
 	alpha = 0;
 	mouse_opacity = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 1.999
 	},
 /area/outpost/exterior)
@@ -12245,10 +12382,9 @@
 /obj/effect/turf_decal/corner/opaque/blue/half{
 	dir = 8
 	},
-/obj/structure/fluff/hedge/opaque,
-/obj/machinery/light/directional/west,
-/obj/item/toy/plush/celadon/meddrake{
-	pixel_y = 8
+/obj/machinery/vending/wallmed{
+	pixel_x = -24;
+	all_items_free = 0
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
@@ -12294,7 +12430,7 @@
 /area/outpost/exterior)
 "gFU" = (
 /obj/structure/flora/rock/pile/icy,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -12595,6 +12731,13 @@
 	planetary_atmos = 1
 	},
 /area/outpost/fraction/syndi)
+"gQP" = (
+/obj/machinery/computer/hydrogen_exchange{
+	dir = 1
+	},
+/obj/machinery/light/directional/west,
+/turf/open/floor/plasteel/tech/grid,
+/area/outpost/cargo)
 "gQS" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/candle/tribal_torch,
@@ -12918,7 +13061,7 @@
 	pixel_y = 9;
 	layer = 5.2
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -12969,7 +13112,7 @@
 	alpha = 0;
 	mouse_opacity = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 1.999
 	},
 /area/outpost/exterior)
@@ -13432,7 +13575,7 @@
 /area/outpost/security/reseption)
 "hnd" = (
 /obj/structure/marker_beacon,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -13689,7 +13832,7 @@
 	mouse_opacity = 0;
 	dir = 8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -13875,7 +14018,7 @@
 /area/outpost/fraction/nanotrasen)
 "hzF" = (
 /obj/structure/statue/large/pillar,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -13907,6 +14050,21 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/maintenance/fore)
+"hAs" = (
+/obj/effect/turf_decal/corner_techfloor_gray/diagonal{
+	layer = 2.030
+	},
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 10
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 10
+	},
+/obj/effect/turf_decal/steeldecal/steel_decals6{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/cargo)
 "hAx" = (
 /obj/machinery/door/airlock{
 	req_one_access_txt = "8124"
@@ -14091,7 +14249,7 @@
 	density = 0;
 	layer = 5
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -14125,7 +14283,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -14256,7 +14414,7 @@
 "hKG" = (
 /obj/effect/floor_decal/crystal/random,
 /obj/item/spacecash/bundle/c10,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -14603,7 +14761,7 @@
 	alpha = 0;
 	mouse_opacity = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 1.999
 	},
 /area/outpost/exterior)
@@ -14656,7 +14814,7 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -15087,9 +15245,6 @@
 	},
 /turf/open/floor/marble/black,
 /area/outpost/fraction/nanotrasen)
-"ifK" = (
-/turf/closed/indestructible/rock/snow,
-/area/outpost/cargo)
 "ifT" = (
 /obj/structure/dresser{
 	pixel_y = 14
@@ -15248,7 +15403,7 @@
 /obj/item/storage/backpack/messenger/gamma,
 /obj/item/storage/belt/security/webbing/gamma,
 /obj/item/clothing/head/helmet/riot/gamma_vision,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -15357,7 +15512,7 @@
 	},
 /area/outpost/exterior)
 "iml" = (
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_y = 10;
 	pixel_x = -4
 	},
@@ -15638,7 +15793,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -15680,20 +15835,15 @@
 /obj/structure/platform/corner{
 	dir = 4
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
 "iuk" = (
-/obj/machinery/camera/autoname{
-	dir = 8;
-	pixel_x = 8;
-	pixel_y = 3;
-	network = list("outpostelysium")
-	},
 /obj/machinery/outpost_selling_pad,
 /obj/effect/turf_decal/industrial/defective/full,
 /obj/effect/turf_decal/corner/opaque/yellow/full,
+/obj/item/radio/intercom/directional/east,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "iuX" = (
@@ -16444,7 +16594,7 @@
 	dir = 8
 	},
 /obj/structure/railing,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -16683,6 +16833,23 @@
 	icon_state = "platingdmg3"
 	},
 /area/outpost/exterior)
+"iYO" = (
+/obj/effect/turf_decal/corner_techfloor_gray/diagonal{
+	layer = 2.030
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/cargo)
 "iYV" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 8
@@ -16702,7 +16869,7 @@
 /obj/structure/flora/grass/green{
 	layer = 3.1
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -16777,6 +16944,11 @@
 /obj/machinery/vending/cola/space_up,
 /turf/open/floor/plasteel/patterned,
 /area/outpost/security/reseption)
+"jdw" = (
+/obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/structure/extinguisher_cabinet/directional/west,
+/turf/open/floor/plasteel/dark,
+/area/outpost/cargo)
 "jdz" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -17060,7 +17232,7 @@
 /obj/machinery/light/floor{
 	pixel_y = 3
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -17179,7 +17351,7 @@
 /area/outpost/crew/lounge)
 "jjL" = (
 /obj/effect/spawner/random/trash/garbage,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/external)
@@ -17357,7 +17529,7 @@
 /turf/open/floor/plating,
 /area/outpost/exterior)
 "jpx" = (
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 1.999
 	},
 /area/outpost/exterior)
@@ -17479,7 +17651,7 @@
 /area/outpost/crew/canteen)
 "jsV" = (
 /obj/effect/floor_decal/crystal/random,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -17549,6 +17721,12 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
+"jtO" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech,
+/area/outpost/cargo)
 "jtU" = (
 /turf/closed/indestructible/reinforced,
 /area/outpost/fraction/nanotrasen)
@@ -17556,7 +17734,7 @@
 /obj/structure/flora/tree/pine{
 	icon_state = "pine_2"
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -17756,6 +17934,15 @@
 /obj/machinery/disposal/bin,
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
+"jBp" = (
+/obj/effect/turf_decal/trimline/opaque/beige/filled/line,
+/obj/machinery/light/directional/south,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/obj/machinery/disposal/bin,
+/turf/open/floor/plasteel/dark,
+/area/outpost/cargo)
 "jBu" = (
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/door/firedoor/border_only{
@@ -18031,7 +18218,7 @@
 /area/outpost/vacant_rooms/office)
 "jJv" = (
 /obj/structure/dirt_pile/safe,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -18056,7 +18243,7 @@
 /obj/structure/flora/rock/ice{
 	icon_state = "rock_3"
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -18157,7 +18344,7 @@
 /area/outpost/cargo)
 "jPF" = (
 /obj/structure/flora/rock/pile/icy_stone,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -18421,6 +18608,13 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/sepia,
 /area/outpost/crew/lounge)
+"jZu" = (
+/obj/machinery/mineral/electrolyzer{
+	input_dir = 1;
+	output_dir = 8
+	},
+/turf/open/floor/engine/hull/reinforced/interior,
+/area/outpost/cargo)
 "jZH" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30"
@@ -18686,7 +18880,7 @@
 "kef" = (
 /obj/effect/floor_decal/crystal/random,
 /obj/effect/floor_decal/crystal/random,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -18740,7 +18934,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovgold{
 	dir = 1
 	},
-/obj/structure/fluff/hedge/opaque,
+/obj/machinery/vending/cigarette,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "kfF" = (
@@ -18832,6 +19026,22 @@
 /obj/structure/deployable_barricade/wooden,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
+"kio" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/hatch,
+/obj/structure/railing/thick/corner{
+	dir = 4;
+	pixel_y = 5
+	},
+/obj/machinery/computer/electrolyzer_console{
+	density = 0;
+	pixel_y = -20;
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/outpost/cargo)
 "kiq" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
@@ -19022,7 +19232,7 @@
 "kqv" = (
 /obj/structure/disposalpipe/trunk,
 /obj/machinery/disposal/bin,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -19239,7 +19449,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -19270,7 +19480,7 @@
 	pixel_x = 11
 	},
 /obj/structure/dirt_pile/safe,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -19438,7 +19648,7 @@
 /area/outpost/operations/outpost_command)
 "kDh" = (
 /mob/living/simple_animal/pet/penguin/emperor,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -19514,7 +19724,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -19646,7 +19856,7 @@
 	alpha = 0;
 	mouse_opacity = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 1.999
 	},
 /area/outpost/exterior)
@@ -19788,6 +19998,12 @@
 /obj/effect/turf_decal/trimline/opaque/beige/filled/line{
 	dir = 1
 	},
+/obj/machinery/camera/autoname{
+	dir = 8;
+	pixel_x = 8;
+	pixel_y = 3;
+	network = list("outpostelysium")
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "kLU" = (
@@ -19821,6 +20037,13 @@
 	},
 /turf/open/floor/wood,
 /area/outpost/fraction/solfed)
+"kNS" = (
+/obj/effect/turf_decal/trimline/opaque/beige/filled/line{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/turf/open/floor/plasteel/dark,
+/area/outpost/cargo)
 "kOa" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 8
@@ -20205,7 +20428,7 @@
 /obj/structure/fluff/fokoff_sign{
 	name = "ТУТ ОБИТАЕТ ИСТИННОЕ ЗЛО!"
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -20801,7 +21024,7 @@
 /obj/structure/flora/tree/crystal{
 	icon_state = "gem1"
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -20877,7 +21100,7 @@
 	desc = "By unknown powers, your skeletal remains have been reanimated!";
 	mouse_opacity = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -20927,6 +21150,22 @@
 	color = "#808080"
 	},
 /obj/structure/table/reinforced,
+/obj/item/reagent_containers/condiment/enzyme{
+	pixel_x = -7;
+	pixel_y = 15
+	},
+/obj/item/reagent_containers/condiment/enzyme{
+	pixel_x = -2;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/condiment/enzyme{
+	pixel_x = -12;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = 10;
+	pixel_y = 3
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/canteen)
 "lxU" = (
@@ -20976,7 +21215,7 @@
 	dir = 1;
 	layer = 3.1
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -20999,7 +21238,7 @@
 	layer = 3.1
 	},
 /obj/structure/dirt_pile/random,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -21030,7 +21269,7 @@
 /obj/structure/platform/wood_two/corner{
 	dir = 8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -21130,7 +21369,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -21452,7 +21691,7 @@
 	alpha = 0;
 	mouse_opacity = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 1.999
 	},
 /area/outpost/exterior)
@@ -21784,7 +22023,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -22222,6 +22461,12 @@
 	planetary_atmos = 1
 	},
 /area/outpost/crew/lounge/cab_2)
+"mhh" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech,
+/area/outpost/cargo)
 "mhx" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 8
@@ -22270,12 +22515,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/sb_armory)
-"mhY" = (
-/obj/machinery/disposal/deliveryChute,
-/obj/structure/disposalpipe/trunk,
-/obj/effect/turf_decal/industrial/fire/fulltile,
-/turf/open/floor/plasteel/dark,
-/area/outpost/cargo)
 "miM" = (
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 1
@@ -22307,12 +22546,12 @@
 /area/outpost/medical/hall_1)
 "mkn" = (
 /obj/structure/table/scrap,
-/obj/item/reagent_containers/food/drinks/beer,
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead,
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = 8;
 	pixel_y = 11
 	},
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = -8;
 	pixel_y = 8
 	},
@@ -22349,7 +22588,7 @@
 	pixel_x = -5;
 	pixel_y = 4
 	},
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_y = 10;
 	pixel_x = -12
 	},
@@ -22387,7 +22626,7 @@
 /area/outpost/security)
 "mmt" = (
 /obj/effect/spawner/random/celadon_drink,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -22428,6 +22667,9 @@
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovblue/warning{
 	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/outpost/fraction/solfed)
@@ -22752,7 +22994,7 @@
 	desc = "A near-mythical predator, known to haunt the caverns. Its eyes sparkle with a mixture of intelligence and malice.";
 	health = 1500
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -23534,7 +23776,7 @@
 /obj/structure/platform/wood_two/corner{
 	dir = 8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 1.999
 	},
 /area/outpost/exterior)
@@ -23605,7 +23847,7 @@
 /area/outpost/crew/bar)
 "mVL" = (
 /obj/structure/flora/grass/both,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -23656,7 +23898,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -23669,7 +23911,7 @@
 	alpha = 0;
 	mouse_opacity = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -23841,7 +24083,7 @@
 	layer = 5;
 	density = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -23911,25 +24153,24 @@
 	},
 /turf/open/floor/carpet/black,
 /area/outpost/crew/lounge)
+"ndE" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = -1;
+	pixel_y = 4
+	},
+/obj/item/multitool{
+	pixel_x = 4
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/outpost/cargo)
 "ndS" = (
 /obj/effect/turf_decal/industrial/warning,
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo)
 "nec" = (
-/obj/effect/turf_decal/industrial/warning/corner{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
+/obj/effect/turf_decal/industrial/warning{
+	dir = 9
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo)
@@ -24040,7 +24281,7 @@
 "nga" = (
 /obj/structure/railing,
 /obj/effect/spawner/random/trash/garbage,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -24198,7 +24439,7 @@
 /obj/structure/platform/industrial{
 	pixel_y = 18
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -24271,7 +24512,7 @@
 /obj/structure/transit_tube/junction{
 	layer = 5
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -24361,7 +24602,7 @@
 "nnH" = (
 /obj/effect/floor_decal/crystal/random,
 /obj/structure/flora/rock/pile/icy_stone,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -24394,7 +24635,7 @@
 /area/outpost/vacant_rooms/office)
 "nnQ" = (
 /obj/structure/barricade/wooden/snowed,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -24655,7 +24896,7 @@
 	},
 /obj/item/reagent_containers/glass/bottle,
 /obj/machinery/processor{
-	pixel_y = 21
+	pixel_y = 13
 	},
 /obj/effect/turf_decal/corner/opaque/neutral/mono,
 /turf/open/floor/plasteel/white,
@@ -24879,7 +25120,7 @@
 /obj/structure/platform/wood_two{
 	dir = 4
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -24939,7 +25180,7 @@
 /area/outpost/medical/hall_2)
 "nCi" = (
 /obj/effect/spawner/random/trash/garbage,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/space)
@@ -25043,7 +25284,7 @@
 	layer = 3.1
 	},
 /obj/structure/flora/rock/pile/icy,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -25060,7 +25301,7 @@
 	pixel_y = 16;
 	pixel_x = -9
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -25102,7 +25343,7 @@
 	alpha = 0;
 	mouse_opacity = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -25153,17 +25394,26 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/outpost/cargo/faction/syndicate)
 "nIE" = (
-/obj/effect/turf_decal/trimline/opaque/beige/filled/line,
-/obj/effect/turf_decal/industrial/warning{
-	dir = 8
-	},
-/obj/machinery/firealarm/directional/west,
-/obj/machinery/light/directional/south,
-/obj/structure/disposalpipe/trunk{
+/obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
-/obj/machinery/disposal/bin,
-/turf/open/floor/plasteel/dark,
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 8
+	},
+/obj/structure/sign/warning/fire{
+	pixel_x = -20;
+	pixel_y = 7
+	},
+/obj/structure/sign/warning/nosmoking/circle{
+	pixel_x = -20;
+	pixel_y = -7
+	},
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line,
+/obj/effect/turf_decal/trimline/opaque/black/warning,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech,
 /area/outpost/cargo)
 "nIN" = (
 /turf/open/floor/carpet/orange,
@@ -25173,7 +25423,7 @@
 /obj/structure/sign/poster/bay/random{
 	pixel_y = 32
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -25238,6 +25488,18 @@
 /obj/effect/turf_decal/techfloor/corner,
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/cryo)
+"nOz" = (
+/obj/effect/turf_decal/corner_techfloor_gray/diagonal{
+	layer = 2.030
+	},
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 8
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/cargo)
 "nOT" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/kitchen_coldroom/freezerfloor/freezer_blue,
@@ -25807,7 +26069,7 @@
 /obj/structure/flora/tree/crystal{
 	icon_state = "gem2"
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -25913,6 +26175,22 @@
 	color = "#FFFF00"
 	},
 /turf/open/floor/plating/asteroid/icerock/temperate,
+/area/outpost/exterior)
+"ofa" = (
+/obj/effect/turf_decal/trimline/opaque/blue/warning,
+/obj/effect/turf_decal/trimline/opaque/blue/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/corner/transparent/solgovblue/border{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/transparent/green/border{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 8
+	},
+/turf/open/floor/marble,
 /area/outpost/exterior)
 "ofl" = (
 /obj/structure/statue_ships/nt_darect/sw,
@@ -26041,7 +26319,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -26364,7 +26642,7 @@
 /area/outpost/maintenance/starboard)
 "orv" = (
 /obj/structure/deployable_barricade/guardrail,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -26480,7 +26758,7 @@
 	alpha = 0;
 	mouse_opacity = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 1.999
 	},
 /area/outpost/exterior)
@@ -26583,11 +26861,6 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
-"owo" = (
-/obj/effect/turf_decal/industrial/warning,
-/obj/machinery/newscaster/directional/south,
-/turf/open/floor/plasteel/tech,
-/area/outpost/cargo)
 "owE" = (
 /obj/machinery/door/airlock/multi_tile/security{
 	req_one_access_txt = "8100";
@@ -26627,7 +26900,7 @@
 /obj/structure/railing{
 	layer = 3.01
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -26647,7 +26920,7 @@
 	layer = 5;
 	density = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -26670,7 +26943,7 @@
 	pixel_y = 9;
 	layer = 5.2
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -27037,7 +27310,7 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "oJE" = (
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/external)
@@ -27229,7 +27502,7 @@
 /obj/structure/railing{
 	layer = 3.07
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -27493,7 +27766,7 @@
 	pixel_y = 6;
 	pixel_x = -8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -27546,6 +27819,14 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/outpost/medical/hall_1)
+"oZJ" = (
+/obj/effect/turf_decal/industrial/hatch,
+/obj/item/radio/intercom/wideband/directional/east,
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/outpost/cargo)
 "oZZ" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 9
@@ -27765,6 +28046,15 @@
 	planetary_atmos = 1
 	},
 /area/outpost/crew/canteen)
+"pgZ" = (
+/obj/machinery/conveyor/auto{
+	id = "outpost1"
+	},
+/obj/structure/sign/poster/official/moth/smokey{
+	pixel_x = 27
+	},
+/turf/open/floor/engine/hull/reinforced/interior,
+/area/outpost/cargo)
 "phr" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -27815,13 +28105,7 @@
 /area/outpost/cargo)
 "pjF" = (
 /obj/effect/turf_decal/industrial/hatch/yellow,
-/obj/machinery/button/door{
-	id = "ice_cargo";
-	name = "BOLT CARGO";
-	req_one_access_txt = "8100";
-	pixel_y = -20;
-	dir = 1
-	},
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "pjG" = (
@@ -28082,7 +28366,7 @@
 	layer = 2.36
 	},
 /obj/structure/catwalk/over/plated_catwalk,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -28351,6 +28635,12 @@
 /obj/effect/floor_decal/crystal/random/dark,
 /turf/open/floor/plating/asteroid/icerock/smooth,
 /area/outpost/exterior)
+"ptX" = (
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 4
+	},
+/turf/open/floor/plasteel/patterned/grid/dark,
+/area/outpost/cargo)
 "pvv" = (
 /obj/effect/turf_decal/corner_techfloor_gray{
 	dir = 1
@@ -28407,6 +28697,14 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"pyb" = (
+/obj/effect/turf_decal/corner_techfloor_gray/diagonal{
+	layer = 2.030
+	},
+/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/turf_decal/spline/fancy/opaque/black,
+/turf/open/floor/plasteel/dark,
+/area/outpost/cargo)
 "pyd" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plating/asteroid/icerock/temperate,
@@ -28871,7 +29169,7 @@
 /area/outpost/crew/lounge/cab_2)
 "pMN" = (
 /obj/structure/holosign/barrier/infinite,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -29000,14 +29298,13 @@
 	},
 /area/outpost/exterior)
 "pQj" = (
-/obj/effect/turf_decal/trimline/opaque/beige/filled/line{
-	dir = 1
+/obj/machinery/airalarm/directional/north{
+	req_access_txt = "8100, 8111"
 	},
 /obj/effect/turf_decal/industrial/warning{
-	dir = 8
+	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/tech,
 /area/outpost/cargo)
 "pQF" = (
 /turf/closed/wall/r_wall/rust,
@@ -29262,6 +29559,12 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
+/obj/machinery/camera/autoname{
+	dir = 5;
+	pixel_x = -8;
+	pixel_y = 3;
+	network = list("outpostelysium")
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "pZb" = (
@@ -29282,7 +29585,7 @@
 /obj/structure/platform/wood_two{
 	dir = 9
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 1.999
 	},
 /area/outpost/exterior)
@@ -29496,7 +29799,7 @@
 /area/outpost/crew/canteen)
 "qiH" = (
 /obj/structure/flora/rock/snow,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -29563,7 +29866,7 @@
 	alpha = 0;
 	mouse_opacity = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 1.999
 	},
 /area/outpost/exterior)
@@ -29578,7 +29881,7 @@
 /area/outpost/exterior)
 "qjV" = (
 /obj/structure/flora/tree/pine,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -29628,7 +29931,7 @@
 /area/outpost/cargo/smeltery)
 "qlB" = (
 /obj/item/stack/sheet/mineral/wood,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -29797,7 +30100,7 @@
 /obj/structure/window{
 	pixel_y = -9
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -30483,7 +30786,7 @@
 	icon_state = "door1";
 	pixel_x = 5
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 1.999
 	},
 /area/outpost/exterior)
@@ -30566,7 +30869,7 @@
 /obj/structure/sign/neon/strelka/yellow{
 	dir = 4
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -30636,6 +30939,7 @@
 /obj/effect/turf_decal/trimline/opaque/solgovblue/warning{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/outpost/fraction/solfed)
 "qMn" = (
@@ -30653,6 +30957,13 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /turf/open/floor/plasteel/dark,
 /area/outpost/security)
+"qMB" = (
+/obj/effect/turf_decal/industrial/outline/red,
+/obj/machinery/atmospherics/components/unary/hydrogen_pump{
+	dir = 4
+	},
+/turf/open/floor/plasteel/patterned/grid/dark,
+/area/outpost/cargo)
 "qMH" = (
 /obj/structure/transit_tube/diagonal/topleft{
 	dir = 1
@@ -30784,7 +31095,7 @@
 /area/outpost/exterior)
 "qQi" = (
 /obj/item/clothing/head/helmet/space/plasmaman/janitor,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -30859,20 +31170,15 @@
 	},
 /area/outpost/vacant_rooms/trash_factory)
 "qSc" = (
-/obj/effect/turf_decal/corner_techfloor_gray/diagonal{
-	layer = 2.030
+/obj/structure/chair/sofa/red/left/directional/west{
+	color = "#00FF00"
 	},
-/obj/effect/turf_decal/industrial/warning/corner{
-	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/outpost/cargo)
+/obj/item/radio/intercom/wideband/directional/east,
+/turf/open/floor/carpet/green,
+/area/outpost/medical/hall_2)
 "qSp" = (
 /obj/structure/flora/rock/icy,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -30892,7 +31198,7 @@
 /obj/structure/disposalpipe/segment{
 	layer = 1
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -30911,7 +31217,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -31107,7 +31413,6 @@
 /obj/effect/turf_decal/corner/opaque/yellow/full,
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel/dark,
-/area/space,
 /area/outpost/cargo/faction/all/zone_1)
 "qYV" = (
 /obj/structure/chair/bench/grey/directional/west,
@@ -31247,7 +31552,7 @@
 "rdP" = (
 /obj/structure/flora/rock/ice,
 /obj/effect/floor_decal/crystal/random,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -31311,7 +31616,7 @@
 	layer = 5;
 	dir = 1
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -31347,7 +31652,6 @@
 	dir = 8
 	},
 /obj/machinery/newscaster/directional/west,
-/obj/machinery/vending/medical,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "rgY" = (
@@ -31691,7 +31995,7 @@
 /obj/structure/sign/neon/strelka/yellow{
 	dir = 4
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -31760,9 +32064,11 @@
 /turf/open/floor/plasteel/tech,
 /area/outpost/operations/outpost_command)
 "rtq" = (
-/obj/machinery/light/floor{
-	color = "#FF0000";
-	light_color = "#FF0000"
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/obj/machinery/disposal/deliveryChute{
+	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/fraction/solfed)
@@ -31792,7 +32098,7 @@
 	icon_state = "pine_4";
 	pixel_y = 25
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -31957,7 +32263,7 @@
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
 	layer = 2.030
 	},
-/obj/structure/closet/emcloset/wall/directional/south,
+/obj/machinery/vending/coffee,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "rzQ" = (
@@ -32032,7 +32338,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -32455,7 +32761,7 @@
 	dir = 4
 	},
 /obj/effect/spawner/random/celadon_drink,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -32794,25 +33100,13 @@
 /turf/closed/indestructible/reinforced,
 /area/outpost/crew/bathroom)
 "rXH" = (
-/obj/effect/turf_decal/corner_techfloor_gray/diagonal{
-	layer = 2.030
-	},
-/obj/effect/turf_decal/industrial/warning/corner{
+/obj/effect/turf_decal/trimline/opaque/blue/warning,
+/obj/effect/turf_decal/trimline/opaque/blue/end,
+/obj/effect/turf_decal/trimline/opaque/blue/line{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
-/obj/structure/disposalpipe/segment{
-	dir = 10
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/dark,
-/area/outpost/cargo)
+/turf/open/floor/marble,
+/area/outpost/exterior)
 "rXI" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -33863,7 +34157,7 @@
 	pixel_x = -4;
 	pixel_y = 2
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -34183,7 +34477,7 @@
 /obj/structure/sign/poster/bay/random{
 	pixel_y = 32
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -34396,7 +34690,7 @@
 /obj/structure/platform/wood_two{
 	dir = 1
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 1.999
 	},
 /area/outpost/exterior)
@@ -34484,16 +34778,18 @@
 /obj/machinery/newscaster/directional/south,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/checkpoint)
-"sSO" = (
-/obj/effect/turf_decal/corner/opaque/yellow/full,
-/obj/effect/turf_decal/industrial/hatch/yellow,
-/turf/open/floor/plasteel/dark,
-/area/space,
-/area/outpost/cargo/faction/all/zone_2)
 "sSP" = (
 /obj/structure/chair/sofa/blue/right,
 /turf/open/floor/carpet/royalblack,
 /area/outpost/crew/bar/theatre)
+"sSX" = (
+/obj/machinery/mineral/electrolyzer_unloader{
+	output_dir = 2;
+	input_dir = 1
+	},
+/obj/machinery/light/directional/east,
+/turf/open/floor/engine/hull/reinforced/interior,
+/area/outpost/cargo)
 "sTf" = (
 /obj/structure/window/reinforced/spawner,
 /obj/structure/flora/grass/jungle,
@@ -34948,11 +35244,15 @@
 /turf/open/floor/plasteel/mono,
 /area/outpost/fraction/nanotrasen)
 "tdx" = (
-/obj/machinery/vending/pizzamat,
-/obj/structure/sign/neon/pizza2{
-	pixel_y = -32
+/obj/effect/turf_decal/techfloor{
+	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line,
+/obj/effect/turf_decal/trimline/opaque/black/warning,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech,
 /area/outpost/cargo)
 "tei" = (
 /obj/structure/flora/grass/jungle,
@@ -35080,7 +35380,7 @@
 /obj/structure/closet/crate/trashcart,
 /obj/item/spacecash/bundle/c10,
 /turf/open/floor/plasteel/dark,
-/area/outpost/cargo/faction/all/zone_3)
+/area/outpost/cargo/faction/all/zone_4)
 "thf" = (
 /obj/machinery/newscaster/security_unit/directional/north,
 /turf/open/floor/plasteel/tech,
@@ -35145,6 +35445,9 @@
 /area/outpost/exterior)
 "tiT" = (
 /obj/effect/turf_decal/corner/opaque/blue/three_quarters,
+/obj/structure/fluff/hedge{
+	icon_state = "hedge-8"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "tjo" = (
@@ -35264,7 +35567,7 @@
 /area/outpost/crew/garden)
 "tmy" = (
 /obj/structure/flora/rock/spire,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -35454,7 +35757,7 @@
 	alpha = 0;
 	mouse_opacity = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -35529,6 +35832,20 @@
 	},
 /obj/item/radio/intercom/wideband/directional/west,
 /turf/open/floor/plasteel/dark,
+/area/outpost/cargo)
+"ttS" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/item/radio/intercom/wideband/directional/west,
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 6
+	},
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 5
+	},
+/turf/open/floor/plasteel/tech,
 /area/outpost/cargo)
 "ttV" = (
 /obj/effect/turf_decal/siding/white{
@@ -35844,7 +36161,7 @@
 	layer = 5;
 	density = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -36558,7 +36875,7 @@
 	pixel_y = -9
 	},
 /obj/structure/dirt_pile/random,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -36577,9 +36894,7 @@
 	color = "#808080"
 	},
 /obj/structure/table/reinforced,
-/obj/machinery/microwave{
-	pixel_y = 3
-	},
+/obj/machinery/oven,
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/canteen)
 "uap" = (
@@ -36697,11 +37012,14 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/garden)
+"ubM" = (
+/turf/closed/indestructible/titanium/nodiagnonal,
+/area/outpost/external)
 "ubP" = (
 /obj/structure/platform/wood_two{
 	dir = 10
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -36822,7 +37140,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -37392,7 +37710,7 @@
 "uxB" = (
 /obj/item/spacecash/bundle/c10,
 /obj/structure/dirt_pile/random,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -37578,6 +37896,10 @@
 /obj/effect/turf_decal/industrial/loading{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/plasticflaps/outpost,
 /turf/open/floor/plasteel/mono,
 /area/outpost/fraction/solfed)
 "uCW" = (
@@ -38081,7 +38403,7 @@
 /obj/structure/flora/tree/pine{
 	icon_state = "pine_3"
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -38150,7 +38472,7 @@
 	alpha = 0;
 	mouse_opacity = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 1.999
 	},
 /area/outpost/exterior)
@@ -38687,6 +39009,16 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/nanotrasen)
+"vlK" = (
+/obj/effect/turf_decal/corner_techfloor_gray/diagonal{
+	layer = 2.030
+	},
+/obj/effect/turf_decal/corner/opaque/solgovgold{
+	dir = 1
+	},
+/obj/effect/spawner/random/trash/garbage,
+/turf/open/floor/plasteel/dark,
+/area/outpost/cargo)
 "vlQ" = (
 /obj/structure/chair/sofa/grey/left/directional/south,
 /obj/item/radio/intercom/directional/east,
@@ -38780,6 +39112,27 @@
 	dir = 5
 	},
 /area/outpost/medical/chemestry)
+"vpE" = (
+/obj/effect/turf_decal/trimline/opaque/blue/corner,
+/obj/structure/chair/bench/grey{
+	pixel_y = 4
+	},
+/obj/effect/turf_decal/corner/transparent/solgovblue/border{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/transparent/green/border{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 8
+	},
+/obj/item/paper{
+	default_raw_text = "Гребаные СолФеды не понимают, что эта \"благотворительность\" убивает всю работу медикам на аванпосте. К черту их благотворительность! Теперь Синдикат и сепаратисты могут лечиться нормально. Бляди...";
+	layer = 2
+	},
+/obj/machinery/light/directional/north,
+/turf/open/floor/marble,
+/area/outpost/exterior)
 "vpY" = (
 /obj/structure/table/chem,
 /turf/open/floor/plasteel/dark_2,
@@ -38819,7 +39172,7 @@
 /area/outpost/medical/hall_2)
 "vqN" = (
 /obj/item/spacecash/bundle/c10,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -38934,7 +39287,7 @@
 /area/outpost/cargo/office)
 "vyg" = (
 /obj/structure/statue/bronze/masson_kills,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -39720,7 +40073,9 @@
 	use_static_power = 1
 	},
 /obj/structure/fans/tiny/invisible,
-/obj/structure/plasticflaps/outpost,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/fraction/solfed)
 "vWi" = (
@@ -39874,7 +40229,7 @@
 /obj/structure/platform{
 	dir = 1
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -39918,10 +40273,10 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/medical/morgue)
 "vZQ" = (
-/obj/effect/turf_decal/corner/opaque/blue{
-	dir = 1
+/obj/effect/turf_decal/corner/opaque/blue/half{
+	dir = 8
 	},
-/obj/machinery/vending/medical,
+/obj/item/radio/intercom/wideband/directional/west,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "vZX" = (
@@ -40245,6 +40600,17 @@
 	color = "#7389F2"
 	},
 /area/outpost/exterior)
+"whF" = (
+/obj/structure/fluff/hedge/opaque,
+/obj/item/toy/plush/celadon/meddrake{
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/corner/opaque/blue/half{
+	dir = 8
+	},
+/obj/machinery/light/directional/west,
+/turf/open/floor/plasteel/white,
+/area/outpost/medical/hall_1)
 "whN" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 8
@@ -40331,7 +40697,7 @@
 /obj/structure/platform/wood_two{
 	dir = 1
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -40487,7 +40853,7 @@
 /obj/structure/flora/rock/ice{
 	icon_state = "rock_3"
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -40496,7 +40862,7 @@
 /obj/structure/platform/wood_two{
 	dir = 4
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -40918,7 +41284,7 @@
 /obj/structure/platform/wood_two{
 	dir = 5
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 1.999
 	},
 /area/outpost/exterior)
@@ -41014,7 +41380,7 @@
 /obj/structure/platform/wood_two{
 	dir = 8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -41067,7 +41433,7 @@
 	pixel_y = 16;
 	pixel_x = 8
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -41128,7 +41494,7 @@
 	dir = 8;
 	network = list("outpostelysium")
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -41176,26 +41542,21 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/security)
 "wBS" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 1
-	},
-/obj/machinery/airalarm/directional/north{
-	req_access_txt = "8100, 8111"
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+/obj/effect/turf_decal/trimline/opaque/blue/corner{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
+/obj/effect/turf_decal/corner/transparent/solgovblue/border{
 	dir = 4
 	},
-/turf/open/floor/plasteel/tech,
-/area/outpost/cargo)
+/obj/effect/turf_decal/corner/transparent/green/border{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 4
+	},
+/obj/item/radio/intercom/wideband/directional/north,
+/turf/open/floor/marble,
+/area/outpost/exterior)
 "wBV" = (
 /obj/structure/chair/sofa/red/old/directional,
 /obj/item/reagent_containers/food/drinks/bottle/pruno{
@@ -41227,6 +41588,12 @@
 	},
 /turf/open/floor/marble/black,
 /area/outpost/fraction/nanotrasen)
+"wCr" = (
+/obj/effect/turf_decal/industrial/warning/corner{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech,
+/area/outpost/cargo)
 "wCu" = (
 /obj/structure/disposalpipe/junction/yjunction{
 	dir = 4
@@ -41315,6 +41682,15 @@
 	planetary_atmos = 1
 	},
 /area/outpost/crew/dop_zone_2)
+"wEs" = (
+/obj/effect/turf_decal/corner_techfloor_gray/diagonal{
+	layer = 2.030
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/cargo)
 "wEC" = (
 /obj/structure/neon_spline/blue{
 	dir = 1
@@ -41371,7 +41747,7 @@
 /obj/structure/flora/rock/ice{
 	icon_state = "rock_3"
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -41461,6 +41837,15 @@
 	light_range = 2
 	},
 /area/outpost/exterior)
+"wGF" = (
+/obj/effect/turf_decal/industrial/traffic,
+/obj/effect/turf_decal/siding/wideplating/dark/corner,
+/obj/effect/turf_decal/spline/fancy/opaque/black/corner,
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech,
+/area/outpost/cargo)
 "wGP" = (
 /obj/structure/neon_spline/blue,
 /obj/structure/flora/grass/both{
@@ -41626,7 +42011,7 @@
 /obj/structure/platform/industrial{
 	pixel_y = 18
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -41672,7 +42057,7 @@
 	pixel_y = 7;
 	layer = 3.2
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -41780,7 +42165,7 @@
 	},
 /area/outpost/exterior)
 "wRn" = (
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_y = 12;
 	pixel_x = -4
 	},
@@ -41970,7 +42355,7 @@
 	alpha = 0;
 	mouse_opacity = 0
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 1.999
 	},
 /area/outpost/exterior)
@@ -42287,7 +42672,7 @@
 /area/outpost/fraction/solfed)
 "xgV" = (
 /obj/structure/flora/tree/dead,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -42530,7 +42915,7 @@
 "xnU" = (
 /obj/structure/flora/tree/pine,
 /obj/item/spacecash/bundle/c10,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -42764,7 +43149,7 @@
 /area/outpost/exterior)
 "xvR" = (
 /obj/structure/dirt_pile/random,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -42988,7 +43373,7 @@
 	dir = 1;
 	layer = 3
 	},
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.038
 	},
 /area/outpost/exterior)
@@ -43062,6 +43447,13 @@
 	},
 /turf/open/floor/plating/rust,
 /area/outpost/fraction/separatist)
+"xEx" = (
+/obj/machinery/newscaster/directional/south,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech,
+/area/outpost/cargo)
 "xEG" = (
 /obj/effect/turf_decal/corner/opaque/blue/half{
 	dir = 4
@@ -43229,14 +43621,8 @@
 	dir = 1;
 	color = "#808080"
 	},
-/obj/item/kitchen/rollingpin,
-/obj/item/book/manual/chef_recipes{
-	pixel_x = -4;
-	pixel_y = 6
-	},
-/obj/item/melee/knife/kitchen{
-	pixel_y = 6;
-	pixel_x = 9
+/obj/machinery/microwave{
+	pixel_y = 10
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/canteen)
@@ -43605,7 +43991,7 @@
 /area/outpost/fraction/nanotrasen)
 "xRT" = (
 /obj/effect/floor_decal/snowrocks,
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/outpost/exterior)
@@ -43716,6 +44102,9 @@
 /obj/effect/turf_decal/spline/fancy/transparent/solgovblue/corner,
 /obj/effect/turf_decal/trimline/opaque/solgovblue/corner,
 /obj/machinery/light/floor,
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/outpost/fraction/solfed)
 "xWr" = (
@@ -44047,7 +44436,7 @@
 	},
 /area/outpost/exterior)
 "yfN" = (
-/turf/open/floor/plating/asteroid/snow/temperatre/snow{
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	layer = 2.454
 	},
 /area/space)
@@ -44216,6 +44605,9 @@
 /area/outpost/crew/dop_zone_2)
 "ykB" = (
 /obj/effect/turf_decal/corner/opaque/blue/half,
+/obj/structure/fluff/hedge{
+	icon_state = "hedge-4"
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "ylc" = (
@@ -66456,7 +66848,7 @@ gok
 gFU
 gok
 gok
-xvR
+gok
 gok
 rrp
 xoC
@@ -66640,12 +67032,12 @@ gMS
 gMS
 vqN
 ePa
-gok
-gok
-gok
-gok
-ePa
-fWD
+xvR
+vqN
+qjV
+sRE
+sRE
+bXK
 xoC
 mhx
 ffo
@@ -66827,12 +67219,12 @@ gMS
 gMS
 gMS
 gMS
-gMS
-gMS
 gok
-gFU
 gok
-fWD
+gok
+ubM
+vpE
+ofa
 xoC
 keB
 ffo
@@ -67016,10 +67408,10 @@ cCF
 cCF
 cCF
 cCF
-acw
 gok
-gok
-fWD
+ubM
+dDO
+rXH
 xoC
 mhx
 lqo
@@ -67187,11 +67579,11 @@ eTV
 rBi
 cCF
 wFz
-wFz
 dep
 cCF
 joD
 cCF
+qgp
 cJK
 afT
 qfZ
@@ -67204,9 +67596,9 @@ uFh
 mYS
 cms
 acw
-vqN
-qjV
-fWD
+ubM
+wBS
+dkV
 xoC
 wbj
 psJ
@@ -67375,10 +67767,10 @@ rUH
 cCF
 qnW
 rtq
-eHV
 cCF
 jWX
 tge
+luk
 luk
 fhc
 tEK
@@ -67391,9 +67783,9 @@ jIs
 hNs
 cms
 acw
-gok
-gok
-fWD
+sRE
+sRE
+bXK
 xoC
 mhx
 sFZ
@@ -67560,12 +67952,12 @@ gZm
 sWm
 pJx
 cCF
-bQR
+qnW
 vVQ
-aTm
 cCF
 guh
 cCF
+luk
 mdK
 nUI
 nvb
@@ -67578,8 +67970,8 @@ iKX
 fux
 cms
 acw
-vqN
-juA
+alT
+ePa
 fWD
 gsR
 keB
@@ -67765,7 +68157,7 @@ foq
 foq
 cCF
 acw
-gok
+juA
 gok
 fWD
 gsR
@@ -69694,7 +70086,7 @@ ibZ
 rgP
 gEr
 vZQ
-sTY
+whF
 oUm
 nLY
 fTD
@@ -69703,7 +70095,7 @@ eQc
 eNA
 nBQ
 jSd
-vpY
+dfe
 oFx
 cNG
 bIB
@@ -70830,7 +71222,7 @@ xkv
 qli
 wwX
 nfv
-htv
+qSc
 uts
 nfv
 htv
@@ -71875,8 +72267,8 @@ rfa
 rfa
 rfa
 rfa
-cLD
-igZ
+rzN
+aeD
 kfn
 xOL
 rfa
@@ -73373,7 +73765,7 @@ rfa
 rfa
 bRs
 cLD
-wLp
+vlK
 igZ
 aok
 fRq
@@ -74309,7 +74701,7 @@ rfa
 nsl
 hnj
 igZ
-rzN
+cLD
 aok
 aok
 aok
@@ -74321,7 +74713,7 @@ tqk
 aok
 rfa
 rfa
-rgY
+rfa
 rgY
 rgY
 rgY
@@ -74497,18 +74889,18 @@ fXG
 cLD
 cLD
 hmG
-goj
+nIE
+ttS
+gQP
+ndE
+qMB
 rfa
-rfa
-jpQ
-jpQ
-jpQ
-wOS
+nec
 tBV
 eqt
 pjF
+jdw
 rfa
-rgY
 rgY
 rgY
 rgY
@@ -74685,17 +75077,17 @@ bzX
 cLD
 cLD
 tdx
+fvp
+nOz
+hAs
+ptX
 rfa
-rfa
-jpQ
-jpQ
-jpQ
-vvy
+dHF
 mCY
 ndS
 ozN
+ozN
 rfa
-rgY
 rgY
 rgY
 rgY
@@ -74871,22 +75263,22 @@ sqM
 tLb
 ehR
 cLD
-aeD
+tdx
+dsn
+cLD
+pyb
+gmG
+rfa
+mhh
+mCY
+wCr
+jtO
+xEx
 rfa
 rfa
-jpQ
-jpQ
-jpQ
-fzK
-nec
-ndS
-ozN
 rfa
-rgY
-rgY
-rgY
-rgY
-rgY
+rfa
+rfa
 rgY
 rgY
 rgY
@@ -75058,22 +75450,22 @@ taZ
 cLD
 xEQ
 cLD
+tdx
+wGF
+dJe
+bhF
+kio
 rfa
+mhh
+mCY
+oSz
+oSz
+oSz
+wOS
+jpQ
+jpQ
+jpQ
 rfa
-rfa
-rfa
-rfa
-rfa
-rfa
-wBS
-owo
-rfa
-rfa
-rgY
-rgY
-rgY
-rgY
-rgY
 rgY
 rgY
 rgY
@@ -75245,21 +75637,21 @@ nfo
 svY
 hrL
 xRZ
+bzY
+oZJ
+sSX
+pgZ
+jZu
 rfa
-rfa
-ggO
-oun
-wbg
-wbg
 pQj
-rXH
-qSc
-nIE
-rfa
-rfa
-rfa
-rfa
-rfa
+mCY
+oSz
+oSz
+oSz
+vvy
+jpQ
+jpQ
+jpQ
 rfa
 rgY
 rgY
@@ -75426,7 +75818,7 @@ rfa
 kyQ
 cIr
 teB
-sSO
+njJ
 rfa
 rfa
 rfa
@@ -75434,16 +75826,16 @@ bHs
 rfa
 rfa
 rfa
-nyo
-oUL
-nyo
-vcw
-pgO
-qDA
-cLD
-rob
-nRD
-vvy
+rfa
+rfa
+rfa
+rfa
+mhh
+mCY
+oSz
+oSz
+oSz
+fzK
 jpQ
 jpQ
 jpQ
@@ -75612,8 +76004,8 @@ gMS
 rfa
 rfa
 rfa
-ifK
-ifK
+rfa
+rfa
 rfa
 iFs
 elF
@@ -75621,19 +76013,19 @@ hrL
 cLD
 rfa
 rfa
-nyo
-oUL
-sVM
-vcw
-pgO
-qDA
-dJK
-rob
-oSz
-vvy
-jpQ
-jpQ
-jpQ
+ggO
+oun
+wbg
+wbg
+kNS
+iYO
+wEs
+jBp
+rfa
+rfa
+rfa
+rfa
+rfa
 rfa
 rgY
 rgY
@@ -75808,16 +76200,16 @@ flP
 lug
 rfa
 rfa
-aoH
-sZA
-xJj
-xJj
-bOB
-snI
+nyo
+oUL
+nyo
+vcw
+pgO
+qDA
 cLD
-cPu
-jeZ
-vvy
+rob
+nRD
+wOS
 jpQ
 jpQ
 jpQ
@@ -75995,19 +76387,19 @@ fZC
 dJB
 rfa
 rfa
-hlg
-esi
-qXx
-gSf
-mXE
-aqo
+nyo
+oUL
+sVM
+vcw
+pgO
+qDA
 dJK
-dxo
-qui
-rfa
-rfa
-rfa
-rfa
+rob
+oSz
+vvy
+jpQ
+jpQ
+jpQ
 rfa
 rgY
 rgY
@@ -76174,7 +76566,7 @@ gMS
 gMS
 gMS
 rfa
-mhY
+hSM
 ieY
 bpm
 oIU
@@ -76182,19 +76574,19 @@ shx
 tgL
 rfa
 rfa
-inX
-rNP
-cYS
-gSf
-mXE
-qDA
-dxd
-wap
-rNF
-rfa
-iON
-gJl
-naX
+aoH
+sZA
+xJj
+xJj
+bOB
+snI
+cLD
+cPu
+jeZ
+fzK
+jpQ
+jpQ
+jpQ
 rfa
 rgY
 rgY
@@ -76369,19 +76761,19 @@ teB
 dJB
 rfa
 rfa
-aoH
-wRU
-taU
-taU
-bIA
-wvS
-nSf
-dGk
-wsM
-vfq
-dwK
-eVs
-sPd
+hlg
+esi
+qXx
+gSf
+mXE
+aqo
+dJK
+dxo
+qui
+rfa
+rfa
+rfa
+rfa
 rfa
 rgY
 rgY
@@ -76556,19 +76948,19 @@ rfa
 rfa
 rfa
 rfa
-bKE
-pBF
-kLU
-tig
-sqQ
-tFM
-aSh
-gCy
-xFW
-xcn
-xtd
-qXq
-gvV
+inX
+rNP
+cYS
+gSf
+mXE
+qDA
+dxd
+wap
+rNF
+rfa
+iON
+gJl
+naX
 rfa
 rgY
 rgY
@@ -76743,19 +77135,19 @@ gMS
 gMS
 gMS
 rfa
-bKE
-kLU
-kLU
-tig
-bmM
-cLD
-cLD
-uhv
-oel
-rfa
-kFO
-qXq
-qXq
+aoH
+wRU
+taU
+taU
+bIA
+wvS
+nSf
+dGk
+wsM
+vfq
+dwK
+eVs
+sPd
 rfa
 rgY
 rgY
@@ -76930,19 +77322,19 @@ gMS
 gMS
 gMS
 rfa
-gNA
-toQ
-nBe
-moe
-rCY
-nGS
-dOM
-prI
-vtF
-rfa
-sOy
-shI
-jEW
+bKE
+pBF
+kLU
+tig
+sqQ
+tFM
+aSh
+gCy
+xFW
+xcn
+xtd
+qXq
+gvV
 rfa
 rgY
 rgY
@@ -77113,23 +77505,23 @@ gMS
 gMS
 gMS
 gMS
+gok
+kHV
 gMS
-gMS
-gMS
 rfa
+bKE
+kLU
+kLU
+tig
+bmM
+cLD
+cLD
+uhv
+oel
 rfa
-rfa
-rfa
-tLN
-rnB
-dix
-dix
-tcY
-tLN
-rfa
-rfa
-rfa
-rfa
+kFO
+qXq
+qXq
 rfa
 rgY
 rgY
@@ -77300,24 +77692,24 @@ gMS
 gMS
 gMS
 gMS
-gMS
-gMS
-gMS
-gMS
-gMS
-gMS
-gMS
 gok
-gok
-gok
-gok
-xvR
-gok
+kHV
 gMS
-gMS
-rgY
-rgY
-rgY
+rfa
+gNA
+toQ
+nBe
+moe
+rCY
+nGS
+dOM
+prI
+vtF
+rfa
+sOy
+shI
+jEW
+rfa
 rgY
 rgY
 rgY
@@ -77487,24 +77879,24 @@ gMS
 gMS
 gMS
 gMS
-gMS
-gMS
 gok
-gMS
-gMS
-gMS
-gok
-hnd
-gok
-gok
-gok
-gok
-hnd
-gok
-gMS
-rgY
-rgY
-rgY
+xvR
+kHV
+rfa
+rfa
+rfa
+rfa
+tLN
+rnB
+dix
+dix
+tcY
+tLN
+rfa
+rfa
+rfa
+rfa
+rfa
 rgY
 rgY
 rgY
@@ -77677,15 +78069,15 @@ gMS
 gok
 gok
 xvR
-gok
-gok
+kHV
+kHV
+kHV
+kHV
 gok
 gok
 gok
 gok
 xvR
-gok
-gok
 gok
 gMS
 gMS
@@ -77864,17 +78256,17 @@ gMS
 gok
 gok
 gok
-gok
-gok
-hnd
-gok
-gok
-gok
+kHV
+kHV
+kHV
 gok
 hnd
 gok
 gok
-gMS
+gok
+gok
+hnd
+oJE
 gMS
 rgY
 rgY

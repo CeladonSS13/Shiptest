@@ -723,12 +723,14 @@
 	addtimer(VARSET_CALLBACK(src, cooldown, FALSE), 3 SECONDS)
 
 /obj/item/toy/plush/celadon/shardplushie/attack(mob/M as mob, mob/user as mob)
-    playsound(loc, pick('mod_celadon/_storage_sounds/sound/plushes/supermatter.ogg', 'mod_celadon/_storage_sounds/sound/plushes/glass_step_sm.ogg',), 10, 1)
-    return ..()
+	playsound(loc, pick('mod_celadon/_storage_sounds/sound/plushes/supermatter.ogg', 'mod_celadon/_storage_sounds/sound/plushes/glass_step_sm.ogg',), 10, 1)
+	return ..()
 
 /obj/item/toy/plush/celadon/hampter
 	name = "hampter"
 	desc = "The people demand hampters!"
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/plushes_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/plushes_righthand.dmi'
 	icon_state = "hampter"
 	w_class = WEIGHT_CLASS_TINY
 
@@ -954,8 +956,8 @@
 	var/always_reskinnable = TRUE
 	gender = MALE
 	unique_reskin = list(
-		BASIC_MINER_SKIN = list(RESKIN_ICON_STATE = "miner_plushie", RESKIN_ITEM_STATE = "miner_plushie"),
-		RED_MINER_SKIN = list(RESKIN_ICON_STATE = "bloody_miner_plushie", RESKIN_ITEM_STATE = "bloody_miner_plushie")
+		BASIC_MINER_SKIN = "miner_plushie",
+		RED_MINER_SKIN = "bloody_miner_plushie"
 	)
 	unique_reskin_changes_base_icon_state = TRUE
 	unique_reskin_changes_inhand = TRUE
@@ -997,3 +999,20 @@
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/plushes_righthand.dmi'
 	icon_state = "grogu"
 	item_state = "grogu"
+
+/obj/item/toy/plush/celadon/brigadier_general
+	name = "Brigadier general Gold"
+	desc = "Эта игрушка была сделана в честь бригадного генерала ТМИ, погибшего в одном из самого ожесточенного планетарного боя \
+	Великой межсистемной войны. На задней части игрушки имеется бирка с надписью: \"Важно дойти до конца!\"."
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/plushes_lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/plushes_righthand.dmi'
+	icon_state = "brigadier_general"
+	item_state = "brigadier_general"
+	COOLDOWN_DECLARE(cooldown)
+
+/obj/item/toy/plush/celadon/brigadier_general/attack_self(mob/user)
+	if(!COOLDOWN_FINISHED(src, cooldown))
+		return
+
+	say("Важно дойти до конца...")
+	COOLDOWN_START(src, cooldown, 5 SECONDS)

@@ -142,7 +142,6 @@
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/structure/crate_shelf,
 /obj/structure/closet/crate{
-	icon_state = "scicrate";
 	name = "AI Assembly crate"
 	},
 /obj/item/stack/sheet/plasteel/five{
@@ -371,13 +370,17 @@
 	dir = 4
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/machinery/newscaster/directional/east,
 /obj/item/toy/cards/deck/syndicate{
 	pixel_y = -8
 	},
 /obj/item/reagent_containers/food/drinks/coffee{
 	pixel_y = 10;
 	pixel_x = 11
+	},
+/obj/structure/painting{
+	icon_state = "Kate";
+	paint = "Kate";
+	pixel_x = 32
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/crew)
@@ -495,7 +498,14 @@
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 8
 	},
-/obj/machinery/airalarm/directional/west,
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_y = -10;
+	pixel_x = -19
+	},
+/obj/machinery/firealarm/directional/west{
+	pixel_y = 1
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/general/command_crew)
 "eG" = (
@@ -791,11 +801,6 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/light_switch{
-	dir = 1;
-	pixel_x = 12;
-	pixel_y = -15
-	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
 "ic" = (
@@ -958,10 +963,6 @@
 	},
 /obj/structure/cable{
 	icon_state = "0-8"
-	},
-/obj/machinery/light_switch{
-	pixel_y = 21;
-	pixel_x = 12
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/general/command_crew)
@@ -1179,9 +1180,6 @@
 	},
 /obj/effect/turf_decal/corner/opaque/syndiered/three_quarters{
 	dir = 1
-	},
-/obj/machinery/firealarm/directional/west{
-	pixel_y = -10
 	},
 /obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/mineral/plastitanium,
@@ -1679,6 +1677,7 @@
 	layer = 2.1
 	},
 /obj/effect/turf_decal/corner/opaque/syndiered/half,
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/general/command_crew)
 "qX" = (
@@ -1692,7 +1691,7 @@
 /area/ship/science)
 "qZ" = (
 /obj/structure/safe{
-	tumblers = list(24, 16)
+	tumblers = list(25, 75)
 	},
 /obj/item/clothing/accessory/holster,
 /obj/item/codespeak_manual/unlimited,
@@ -2522,11 +2521,6 @@
 /obj/machinery/light/small/directional/west{
 	pixel_y = -7
 	},
-/obj/machinery/light_switch{
-	dir = 1;
-	pixel_x = 12;
-	pixel_y = -17
-	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/toilet)
 "Ai" = (
@@ -2660,7 +2654,8 @@
 	name = "Captain's locker";
 	pixel_y = 31;
 	dir = 1;
-	req_access = list(20)
+	req_access = list(20);
+	req_ship_access = 1
 	},
 /obj/item/clothing/gloves/combat{
 	pixel_y = -8;
@@ -3056,6 +3051,11 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/firealarm/directional/west,
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_y = -10;
+	pixel_x = -19
+	},
 /turf/open/floor/plasteel/stairs{
 	icon = 'icons/obj/stairs.dmi'
 	},
@@ -3131,6 +3131,11 @@
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
+	},
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_y = 13;
+	pixel_x = -19
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/toilet)
@@ -3600,7 +3605,8 @@
 	anchored = 1;
 	icon_state = "syndicate";
 	name = "lieutenant's locker";
-	req_access = list(19)
+	req_access = list(19);
+	req_ship_access = 1
 	},
 /obj/item/clothing/shoes/combat{
 	pixel_x = 9;
@@ -3661,15 +3667,16 @@
 /obj/item/megaphone/sec{
 	name = "syndicate megaphone"
 	},
-/obj/item/clothing/mask/gas/sechailer{
-	pixel_y = -11
-	},
 /obj/structure/sign/poster/bay/bay_3{
 	pixel_y = 32
 	},
 /obj/item/clothing/head/warden/drill{
 	name = "lieutenant's hat";
 	pixel_y = -1
+	},
+/obj/item/clothing/mask/gas/sechailer/sec{
+	pixel_y = -11;
+	pixel_x = -5
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
@@ -4190,12 +4197,7 @@
 	dir = 4
 	},
 /obj/structure/showcase/cyborg/assault,
-/obj/structure/neon_spline/red{
-	dir = 6
-	},
-/obj/structure/neon_spline/red{
-	dir = 9
-	},
+/obj/structure/neon_spline/red/three_quarters,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/general/command_crew)
 "Pb" = (
@@ -4251,7 +4253,7 @@
 	},
 /obj/item/paper/paperslip/corporate{
 	pixel_y = -26;
-	default_raw_text = "Lieutenant's Safe Code - Date of Syndicate Logo Appearance."
+	default_raw_text = "Lieutenant's Safe Code is the date of the Syndicate's formation."
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4283,12 +4285,7 @@
 	dir = 4
 	},
 /obj/structure/showcase/cyborg/old/medical,
-/obj/structure/neon_spline/red{
-	dir = 9
-	},
-/obj/structure/neon_spline/red{
-	dir = 6
-	},
+/obj/structure/neon_spline/red/three_quarters,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security)
 "PQ" = (
@@ -4311,11 +4308,6 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
-/obj/machinery/light_switch{
-	dir = 1;
-	pixel_x = -6;
-	pixel_y = -25
-	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "Qn" = (
@@ -4525,6 +4517,11 @@
 	},
 /obj/structure/cable{
 	icon_state = "1-4"
+	},
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_y = 11;
+	pixel_x = -19
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
@@ -4738,11 +4735,7 @@
 	pixel_y = 6;
 	pixel_x = -3
 	},
-/obj/structure/painting{
-	icon_state = "Kate";
-	paint = "Kate";
-	pixel_x = 32
-	},
+/obj/machinery/newscaster/directional/east,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/crew)
 "UZ" = (
@@ -5031,7 +5024,8 @@
 	name = "Emergency locker";
 	pixel_y = 31;
 	dir = 1;
-	req_access = list(20)
+	req_access = list(20);
+	req_ship_access = 1
 	},
 /obj/item/reagent_containers/food/drinks/bottle/whiskey{
 	pixel_x = -9;

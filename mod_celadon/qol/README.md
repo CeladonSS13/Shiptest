@@ -62,6 +62,7 @@ CELADON_QOL_LOADOUT
 - EDIT `code/modules/mob/living/silicon/silicon.dm`: `/mob/living/silicon/proc/checklaws()`
 - EDIT `code/game/objects/items/AI_modules.dm`: `/obj/item/aiModule/core/full/asimov/attack_self(mob/user as mob)`
 - EDIT `code/modules/ruins/spaceruin_code/forgottenship.dm`: `/datum/ai_laws/cybersun`
+- ADD `code/datums/datum.dm` - добавлены переменные для работы падежей
 Законы ИИ
 - EDIT `code/datums/ai_laws.dm`: `/datum/ai_laws/default/asimov`
 - EDIT `code/datums/ai_laws.dm`: `/datum/ai_laws/default/paladin`
@@ -110,6 +111,8 @@ CELADON_QOL_LOADOUT
 
 - EDIT `code\modules\mob\mob_helpers.dm`: `/proc/slur`
 - EDIT `code\modules\mob\mob_helpers.dm`: `/proc/stutter`
+
+- EDIT `code\_onclick\ai.dm` -> Чиним для ИИ возможность узнавать экипаж
 
 Радио для лежачих персонажей
 - EDIT `code/game/objects/items/devices/radio/radio.dm`: `/obj/item/radio/AltClick(mob/user)` - добавлен параметр `floor_okay = TRUE` в `canUseTopic`
@@ -168,6 +171,7 @@ DONT_ALTCLICK_WALLET - Убирает вытаскивание карты на �
 
 DEBUG_QUALITY
 - DEL `code/game/objects/items/storage/boxes.dm` -> `mod_celadon/qol/code/BluespaceTechnician.dm`
+- EDIT `code/modules/overmap/ships/ship_datum.dm` - Добавлены ковычки для запуска на 516
 
 CELADON_QOL_LOADOUT
 - ADD, EDIT: `code/modules/client/preferences.dm`
