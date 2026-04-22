@@ -46,8 +46,7 @@
 	range = 12
 	damage_constant = 0.8
 	damage = 25
-	armour_penetration = -5 //[CELADON-EDIT] - GUN_BALANCE <- Original:armour_penetration = -15
-
+	armour_penetration = -15
 /obj/item/gun/energy/kalix/empty_cell
 	spawn_no_ammo = TRUE
 	allowed_ammo_types = list(

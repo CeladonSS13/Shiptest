@@ -1,3 +1,19 @@
+// [CELADON-EDIT] Здесь будут хранится изменения характеристик некоторых видов вооружения, которые не хочется менять в кор коде.
+
+/obj/item/gun/ballistic/automatic/assault/skm
+	recoil = 0.75
+
+/obj/item/gun/ballistic/automatic/assault/skm/pirate
+	wear_rate = 3
+	fire_delay = 0.14
+	recoil = 1.25
+
+/obj/item/gun/ballistic/automatic/assault/skm/inteq
+	wield_delay = 0.5 SECONDS
+	wield_slowdown = 0.5
+
+//============================
+// MARK: G36, SVD, Morita MK I
 /obj/item/gun/ballistic/automatic/assault/g36sh
 //Описание
 	name = "\improper G36-SH"

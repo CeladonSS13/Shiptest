@@ -358,7 +358,6 @@ NO_MAG_GUN_HELPER(automatic/smg/cm5/compact)
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
 	bolt_type = BOLT_TYPE_CLIP
-	fire_delay = 0.3 SECONDS // [CELADON-ADD] - GUN_BALANCE
 	default_ammo_type = /obj/item/ammo_box/magazine/f4_308
 	allowed_ammo_types = list(
 		/obj/item/ammo_box/magazine/f4_308,
@@ -387,7 +386,7 @@ NO_MAG_GUN_HELPER(automatic/smg/cm5/compact)
 
 	zoom_amt = 6
 	zoom_out_amt = 2
-	wield_slowdown = F4_SLOWDOWN // [CELADON-EDIT] - GUN_BALANCE // wield_slowdown = DMR_SLOWDOWN
+	wield_slowdown = DMR_SLOWDOWN
 	spread = -4
 	fire_select_icon_state_prefix = "clip_"
 	adjust_fire_select_icon_state_on_safety = TRUE
@@ -436,7 +435,7 @@ NO_MAG_GUN_HELPER(automatic/marksman/f4/inteq)
 	)
 	bolt_type = BOLT_TYPE_CLIP
 
-	fire_delay = 0.8 SECONDS // [CELADON-EDIT] - GUN_BALANCE <- original: fire_delay = 1 SECONDS
+	fire_delay = 1 SECONDS
 
 	manufacturer = MANUFACTURER_MINUTEMAN
 	spread = -5
@@ -671,7 +670,7 @@ NO_MAG_GUN_HELPER(automatic/assault/skm/cm24)
 	gun_firemodes = list(FIREMODE_SEMIAUTO, FIREMODE_FULLAUTO)
 	default_firemode = FIREMODE_SEMIAUTO
 
-	fire_delay = 0.15 SECONDS ////[CELADON-EDIT] - GUN_BALANCE <- Original: fire_delay= 0.2
+	fire_delay = 0.2 SECONDS
 
 	unique_mag_sprites_for_variants = TRUE
 
@@ -687,7 +686,7 @@ NO_MAG_GUN_HELPER(automatic/assault/skm/cm24)
 		/obj/item/ammo_box/magazine/f4_308
 	)
 
-	spread = 8 //[CELADON-EDIT] - GUN_BALANCE <- Original: spread = 12
+	spread = 12
 	spread_unwielded = 35
 
 	recoil = 3 //it's firing .308
@@ -697,7 +696,7 @@ NO_MAG_GUN_HELPER(automatic/assault/skm/cm24)
 
 	deploy_recoil_bonus = -3
 	deploy_spread_bonus = -10 //2 degree spread when deployed, making it VERY accurate for an lmg
-	wear_rate = 3 //[CELADON-EDIT] - GUN_BALANCE <- Original: wear rate = 1
+	wear_rate = 1
 	valid_attachments = CLIP_ATTACHMENTS
 	unique_attachments = list(/obj/item/attachment/scope)
 	slot_available = list(
