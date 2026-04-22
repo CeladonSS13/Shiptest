@@ -1,4 +1,4 @@
-// .50 BMG (Sniper)
+// MARK: .50 BMG (Sniper)
 
 /obj/projectile/bullet/p50
 	name = ".50 BMG bullet"
@@ -39,13 +39,13 @@
 	knockdown = 0
 	breakthings = FALSE
 
-//6.5mm CLIP (F90, Boomslang)
+// MARK: 6.5mm CLIP (F90, Boomslang)
 
 /obj/projectile/bullet/a65clip
 	name = "6.5mm CLIP bullet"
 	stamina = 10
 	damage = 40
-	armour_penetration = 50
+	armour_penetration = 60
 	bullet_identifier = "huge bullet"
 
 	speed = BULLET_SPEED_SNIPER
@@ -68,34 +68,34 @@
 	speed_mod = BULLET_SPEED_RUBBER_MOD
 	bullet_identifier = "huge rubber bullet"
 
-// 8x58mm caseless (SG-669)
+// MARK: 8x58mm caseless (SG-669)
 
 /obj/projectile/bullet/a858
 	name = "8x58mm caseless bullet"
 	damage = 45
 	stamina = 10
-	armour_penetration = 50
+	armour_penetration = 30
 	speed = BULLET_SPEED_SNIPER
 	bullet_identifier = "huge bullet"
 
 /obj/projectile/bullet/a858/trac
 	name = "8x58mm tracker"
-	damage = 12
-	armour_penetration = 0
+	damage = 15
+	armour_penetration = 20
 	shrapnel_type = /obj/item/shrapnel/bullet/tracker/a858
 
-// .300 Magnum
+// MARK: .300 Magnum
 
 /obj/projectile/bullet/a300
 	name = ".300 Magnum bullet"
-	damage = 50
+	damage = 55
 	stamina = 10
-	armour_penetration = 40
+	armour_penetration = 60
 	speed = BULLET_SPEED_RIFLE
 	bullet_identifier = "huge bullet"
 
 /obj/projectile/bullet/a300/trac
 	name = ".300 Tracker"
-	damage = 10
-	armour_penetration = 0
+	damage = 20
+	armour_penetration = 30
 	shrapnel_type = /obj/item/shrapnel/bullet/tracker/a308

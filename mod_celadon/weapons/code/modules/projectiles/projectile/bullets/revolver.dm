@@ -1,4 +1,4 @@
-// .38 (Colt Detective Special & Winchester)
+// MARK: .38 (Colt Detective Special & Winchester)
 
 /obj/projectile/bullet/c38
 	name = ".38 bullet"
@@ -112,20 +112,19 @@
 		var/atom/throw_target = get_edge_target_turf(M, get_dir(src, get_step_away(M, src)))
 		M.safe_throw_at(throw_target, 2, 2)
 
-// .357 (Syndicate Revolver)
+// MARK: .357 (Syndicate Revolver)
 
 /obj/projectile/bullet/a357
 	name = ".357 bullet"
-	damage = 35
-	armour_penetration = 0
-
+	damage = 30
+	armour_penetration = 10
 	speed = BULLET_SPEED_REVOLVER
 	bullet_identifier = "medium bullet"
 
 /obj/projectile/bullet/a357/match
 	name = ".357 match bullet"
-	damage = 35
-	armour_penetration = 10
+	damage = 27
+	armour_penetration = 40
 	speed_mod = BULLET_SPEED_AP_MOD
 	ricochets_max = 5
 	ricochet_chance = 140
@@ -136,12 +135,13 @@
 
 /obj/projectile/bullet/a357/hp
 	name = ".357 hollow point bullet"
-	damage = 50
-	armour_penetration = -20
+	damage = 40
+	armour_penetration = -25
 	speed_mod = BULLET_SPEED_HP_MOD
 	ricochet_chance = 0
 
-// .45-70 Gov't (Hunting Revolver)
+/*
+// MARK: .45-70 Gov't (Hunting Revolver)
 
 /obj/projectile/bullet/a4570
 	name = ".45-70 bullet"
@@ -174,13 +174,14 @@
 	..()
 	explosion(target, -1, 0, 1)
 	return BULLET_ACT_HIT
+*/
 
-// 44 Short (Roumain & Shadow)
+// MARK: 44 Short (Roumain & Shadow)
 
 /obj/projectile/bullet/a44roum
 	name = ".44 roumain bullet"
-	damage =  30
-	armour_penetration = 0
+	damage =  35
+	armour_penetration = 10
 	speed = BULLET_SPEED_REVOLVER
 	bullet_identifier = "small bullet"
 
@@ -194,7 +195,40 @@
 
 /obj/projectile/bullet/a44roum/hp
 	name = ".44 roumain hollow point bullet"
-	damage = 45
-	armour_penetration = -10
+	damage = 50
+	armour_penetration = -25
 	ricochet_chance = 0
 	speed_mod = BULLET_SPEED_HP_MOD
+
+//===========================================
+// коммит Delyasha Ребаланс патронов 68f5c5ecca9d26a210e35e644884090912dafe1b
+// Теперь это в кор коде
+/*
+/obj/projectile/bullet/a357
+	damage = 35
+	armour_penetration = 10 	// Изменения смотреть в code/modules/projectiles/projectile/bullets/revolver.dm, номер PRа #2617
+
+/obj/projectile/bullet/a44roum
+	damage = 35
+	armour_penetration = 10    // Изменения смотреть в code/modules/projectiles/projectile/bullets/revolver.dm, номер PRа #2617
+
+/obj/projectile/bullet/a44roum/hp
+	damage = 50
+	armour_penetration = -25 	// Изменения смотреть в code/modules/projectiles/projectile/bullets/revolver.dm, номер PRа #2617
+*/
+// Бафф .45-70.
+// До этого более крупный калибр имеет меньше ап и такой же урон чем в разы мелкий .357?
+/obj/projectile/bullet/a4570
+	damage = 50 // 3 выстрела для крита против 50 брони. 4 выстрела для крита против 6 брони
+	armour_penetration = 20
+
+/obj/projectile/bullet/a4570/match
+	damage = 45 // крит с 4 выстрелов в 6. Не имеет смысла на деле кроме как рикошетов, которые не всегда прокают.
+	armour_penetration = 30
+	ricochets_max = 8
+	ricochet_incidence_leeway = 0 // Всегда рикошетит. С меня Эвандель взял обещание самому это починить
+
+/obj/projectile/bullet/a4570/hp
+	damage = 70 // 3 выстрела для крита против 40 брони. 4 выстрела для крита против 50 брони.
+	armour_penetration = -10 // Имо в разы хуже чем обычный,
+							 // т.к. его единственное преимущество, так это крит с 2 против 20 брони. Любая броня дальше убивается с 3.
