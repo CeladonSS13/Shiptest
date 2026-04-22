@@ -117,14 +117,12 @@
 /obj/projectile/bullet/a357
 	name = ".357 bullet"
 	damage = 35
-	armour_penetration = 0
 
 	speed = BULLET_SPEED_REVOLVER
 	bullet_identifier = "medium bullet"
 
 /obj/projectile/bullet/a357/match
 	name = ".357 match bullet"
-	damage = 35
 	armour_penetration = 10
 	speed_mod = BULLET_SPEED_AP_MOD
 	ricochets_max = 5
@@ -180,7 +178,6 @@
 /obj/projectile/bullet/a44roum
 	name = ".44 roumain bullet"
 	damage =  30
-	armour_penetration = 0
 	speed = BULLET_SPEED_REVOLVER
 	bullet_identifier = "small bullet"
 
@@ -194,7 +191,7 @@
 
 /obj/projectile/bullet/a44roum/hp
 	name = ".44 roumain hollow point bullet"
-	damage = 45
+	damage =  45
 	armour_penetration = -10
 	ricochet_chance = 0
 	speed_mod = BULLET_SPEED_HP_MOD

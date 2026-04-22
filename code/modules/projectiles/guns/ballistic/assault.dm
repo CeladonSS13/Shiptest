@@ -93,7 +93,7 @@
 
 	spread = 1
 	wield_delay = 0.7 SECONDS
-	recoil = 0
+
 	fire_delay = 0.2 SECONDS
 
 /obj/item/gun/ballistic/automatic/assault/skm/no_mag
@@ -106,14 +106,12 @@
 	icon_state = "skm_pirate"
 	item_state = "skm_pirate"
 	manufacturer = MANUFACTURER_NONE
-	wear_rate = 1
-	fire_delay = 2
-	recoil = 0
-
+	wear_rate = 2
 
 /obj/item/gun/ballistic/automatic/assault/skm/inteq
 	name = "\improper SKM-44"
 	desc = "An obsolete model of assault rifle once used by CLIP. Most of these were seized from Frontiersmen armories or purchased in CLIP, then modified to IRMG standards. Chambered in 7.62x40mm CLIP."
+
 	icon = 'icons/obj/guns/manufacturer/inteq/48x32.dmi'
 	lefthand_file = 'icons/obj/guns/manufacturer/inteq/lefthand.dmi'
 	righthand_file = 'icons/obj/guns/manufacturer/inteq/righthand.dmi'

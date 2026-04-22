@@ -81,8 +81,6 @@
 
 /obj/projectile/bullet/c10mm/surplus
 	name = "10x22mm surplus bullet"
-	damage = 25
-	armour_penetration = -20
 	speed_mod = BULLET_SPEED_SURPLUS_MOD
 
 /obj/projectile/bullet/c10mm/ap
@@ -116,8 +114,6 @@
 
 /obj/projectile/bullet/c45/surplus
 	name = ".45 surplus bullet"
-	damage = 25
-	armour_penetration = -20
 	speed_mod = BULLET_SPEED_SURPLUS_MOD
 
 /obj/projectile/bullet/c45/ap

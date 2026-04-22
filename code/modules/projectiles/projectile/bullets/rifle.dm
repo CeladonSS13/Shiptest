@@ -2,8 +2,8 @@
 
 /obj/projectile/bullet/a556_42
 	name = "5.56x42mm CLIP bullet"
-	damage = 22
-	armour_penetration = 25
+	damage = 25
+	armour_penetration = 20
 	wound_bonus = -40
 	speed = BULLET_SPEED_RIFLE
 	bullet_identifier = "medium bullet"
@@ -79,7 +79,7 @@
 /obj/projectile/bullet/a762_40/ap
 	name = "7.62x40mm CLIP armor piercing bullet"
 	damage = 27
-	armour_penetration = 50
+	armour_penetration = 40
 	speed_mod = BULLET_SPEED_AP_MOD
 
 /obj/projectile/bullet/a762_40/rubber //"rubber"
@@ -90,11 +90,39 @@
 	speed_mod = BULLET_SPEED_RUBBER_MOD
 	bullet_identifier = "medium rubber bullet"
 
-/obj/projectile/bullet/a858
-	name = "8x58mm caseless bullet"
-	speed = 0.3
+//.308 WIN (M514 & GAL DMRs)
+
+
+//[СELADON-REMOVE] - CELADON_WEAPONS - хватит это терпеть! Теперь эти патроны только в модпаке - mod_celadon\weapons\code\modules\projectiles\projectile\bullets\rifle.dm
+/*
+/obj/projectile/bullet/a308
+	name = ".308 bullet"
 	damage = 35
-	armour_penetration = 340
+	armour_penetration = 40
+	speed = BULLET_SPEED_RIFLE
+
+
+/obj/projectile/bullet/a308/hp
+	name = ".308 hollow point bullet"
+	damage = 40
+	armour_penetration = 30
+	speed_mod = BULLET_SPEED_HP_MOD
+
+/obj/projectile/bullet/a308/ap
+	name = ".308 armor piercing bullet"
+	damage = 32
+	armour_penetration = 60
+	speed_mod = BULLET_SPEED_AP_MOD
+
+/obj/projectile/bullet/a308/rubber //"rubber"
+	name = ".308 rubber bullet"
+	damage = 20
+	stamina = 40
+	armour_penetration = 20
+	speed_mod = BULLET_SPEED_RUBBER_MOD
+	bullet_identifier = "large rubber bullet"
+*/
+//[/СELADON-REMOVE]
 
 // .299 Eoehoma Caseless (E-40)
 

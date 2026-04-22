@@ -530,8 +530,6 @@ NO_MAG_GUN_HELPER(automatic/smg/cobra/indie)
 	manufacturer = MANUFACTURER_SCARBOROUGH
 
 	valid_attachments = SCARBOROUGH_ATTACHMENTS
-	unique_attachments = list(
-		/obj/item/attachment/foldable_stock/sidewinder
 	)
 	slot_available = list(
 		ATTACHMENT_SLOT_MUZZLE = 1,
@@ -557,11 +555,21 @@ NO_MAG_GUN_HELPER(automatic/smg/cobra/indie)
 			"y" = 24,
 		)
 	)
+<<<<<<< Updated upstream
 	spread = 8 //[CELADON-EDIT] - GUN_BALANCE <- Original: spread = 7
+=======
+
+	fire_delay = 0.12 SECONDS
+	spread = 8
+>>>>>>> Stashed changes
 	spread_unwielded = 10
 
 	recoil = 0
 	recoil_unwielded = 4
+<<<<<<< Updated upstream
+=======
+	wear_rate = 2 //[CELADON-EDIT] Original: wear rate = 1
+>>>>>>> Stashed changes
 
 	default_attachments = list(/obj/item/attachment/foldable_stock/sidewinder)
 
