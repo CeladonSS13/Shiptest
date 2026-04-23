@@ -2290,19 +2290,29 @@
 	pixel_y = -11;
 	pixel_x = 20
 	},
-/obj/item/clothing/head/helmet/m10{
-	unique_reskin = list("None" = "m10helm", "Snow" = "m10helm_snow");
-	pixel_y = 0;
-	pixel_x = -7
+/obj/item/clothing/suit/armor/gezena/navy{
+	pixel_x = 1;
+	pixel_y = 4
 	},
-/obj/item/clothing/head/helmet/m10{
-	unique_reskin = list("None" = "m10helm", "Snow" = "m10helm_snow");
+/obj/item/clothing/suit/armor/gezena/navy{
+	pixel_x = 8;
+	pixel_y = -4
+	},
+/obj/item/clothing/suit/armor/gezena/navy{
+	pixel_x = -6;
+	pixel_y = -4
+	},
+/obj/item/clothing/head/helmet/gezena/navy{
+	pixel_x = 7;
+	pixel_y = 0
+	},
+/obj/item/clothing/head/helmet/gezena/navy{
+	pixel_x = -7;
+	pixel_y = 0
+	},
+/obj/item/clothing/head/helmet/gezena/navy{
+	pixel_x = 0;
 	pixel_y = 8
-	},
-/obj/item/clothing/head/helmet/m10{
-	unique_reskin = list("None" = "m10helm", "Snow" = "m10helm_snow");
-	pixel_y = 0;
-	pixel_x = 7
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
@@ -3337,9 +3347,6 @@
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/clothing/mask/gas/sechailer,
-/obj/item/clothing/mask/gas/sechailer,
-/obj/item/clothing/mask/gas/sechailer,
 /obj/item/clothing/glasses/safety{
 	pixel_y = 7
 	},
@@ -3350,6 +3357,18 @@
 	pixel_y = 7
 	},
 /obj/effect/mapping_helpers/crate_shelve,
+/obj/item/clothing/mask/breath/pgfmask/navy{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/clothing/mask/breath/pgfmask/navy{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/clothing/mask/breath/pgfmask/navy{
+	pixel_x = 0;
+	pixel_y = -5
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "Pt" = (
