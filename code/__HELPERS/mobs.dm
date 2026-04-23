@@ -64,8 +64,6 @@
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/moth_fluff, GLOB.moth_fluff_list)
 	if(!GLOB.moth_markings_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/moth_markings, GLOB.moth_markings_list)
-	if(!GLOB.squid_face_list.len)
-		init_sprite_accessory_subtypes(/datum/sprite_accessory/squid_face, GLOB.squid_face_list)
 	// [CELADON-ADD] - CELADON_IPC_HAIR
 	if(!GLOB.ipc_hair_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/ipc_hair, GLOB.ipc_hair_list)
@@ -190,7 +188,6 @@
 		"spider_legs" = pick(GLOB.spider_legs_list),
 		"spider_spinneret" = pick(GLOB.spider_spinneret_list),
 		"spines" = pick(GLOB.spines_list),
-		"squid_face" = pick(GLOB.squid_face_list),
 		"tail_human" = "None",
 		"tail_lizard" = pick(GLOB.tails_list_lizard),
 		"tail_elzu" = pick(GLOB.tails_list_elzu),
