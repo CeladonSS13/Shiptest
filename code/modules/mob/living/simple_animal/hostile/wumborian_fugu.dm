@@ -36,6 +36,7 @@
 	var/wumbo = 0
 	var/inflate_cooldown = 0
 	var/datum/action/innate/fugu/expand/E
+	var/list/base_armor          // [CELADON-ADD] Задаем переменную исходного списка резистов
 	loot = list(/obj/item/fugu_gland{layer = ABOVE_MOB_LAYER})
 
 /mob/living/simple_animal/hostile/asteroid/fugu/asteroid
@@ -44,6 +45,7 @@
 
 /mob/living/simple_animal/hostile/asteroid/fugu/Initialize()
 	. = ..()
+	base_armor = armor           // [CELADON-ADD] Сохраняем исходный список резистов
 	E = new
 	E.Grant(src)
 
@@ -61,6 +63,12 @@
 /mob/living/simple_animal/hostile/asteroid/fugu/Aggro()
 	..()
 	E.Activate()
+
+// [CELADON-ADD] Переопределяем getarmor, чтобы он работал со списком, а не датумом
+/mob/living/simple_animal/hostile/asteroid/fugu/getarmor(zone, type)
+	if(islist(armor))
+		return armor[type] || 0
+	return ..()
 
 /datum/action/innate/fugu
 	icon_icon = 'icons/mob/actions/actions_animal.dmi'
@@ -115,6 +123,7 @@
 		environment_smash = ENVIRONMENT_SMASH_NONE
 		mob_size = MOB_SIZE_SMALL
 		speed = 0
+		armor = base_armor // [CELADON-ADD] Восстановление исходной брони.
 
 /mob/living/simple_animal/hostile/asteroid/fugu/death(gibbed)
 	Deflate()
