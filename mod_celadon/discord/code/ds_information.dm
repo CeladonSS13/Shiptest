@@ -15,7 +15,12 @@
 "}
 	info = replacetext(info, "the ", "")
 	info = replacetext(info, "paper — ", "") + text
-	send2chat(info, "faxes-and-prays")
+
+	if(info.length > 1500)
+		for(var/out in split_string_to_list(info, 1500))
+			send2chat(out, "faxes-and-prays")
+	else
+		send2chat(info, "faxes-and-prays")
 
 // Администрация будет получать оповещения о новых Prays в Discord.
 /mob/proc/sendDSPray(msg_tmp, C)
