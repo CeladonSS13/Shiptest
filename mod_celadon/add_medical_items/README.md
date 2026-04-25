@@ -1,7 +1,7 @@
 
 #### Список PRов
 
-- https://github.com/CeladonSS13/Shiptest/pulls/#####
+- https://github.com/CeladonSS13/Shiptest/pull/2827
 <!--
   Ссылки на PRы, связанные с модом:
   - Создание
