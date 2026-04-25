@@ -16,7 +16,7 @@
 	info = replacetext(info, "the ", "")
 	info = replacetext(info, "paper — ", "") + text
 
-	if(info.length > 1500)
+	if(length(info) > 1500)
 		for(var/out in split_string_to_list(info, 1500))
 			send2chat(out, "faxes-and-prays")
 	else
