@@ -44,7 +44,7 @@
 		if(C.prefs.chat_toggles & CHAT_PRAYER)
 			to_chat(C, msg, confidential = TRUE)
 	// [CELADON-ADD]
-	sendDSPray(msg_tmp, src)
+	sendDSPray(msg_tmp)
 	// [/CELADON-ADD]
 	to_chat(usr, span_info("You pray to the gods: \"[msg_tmp]\""), confidential = TRUE)
 	SSredbot.send_discord_message("admin", "Prayer from [src.key]/([src.name]): [msg]")
