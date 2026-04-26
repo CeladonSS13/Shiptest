@@ -40,6 +40,7 @@
 	// [CELADON-ADD] Add Sound for Pray
 		if(C.prefs.toggles & SOUND_PRAYERS)
 			SEND_SOUND(C, sound('mod_celadon/_storage_sounds/sound/announce/pray.ogg'))
+		sendDSPray(msg_tmp, C)
 	// [/CELADON-ADD]
 		if(C.prefs.chat_toggles & CHAT_PRAYER)
 			to_chat(C, msg, confidential = TRUE)
