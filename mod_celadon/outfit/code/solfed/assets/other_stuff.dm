@@ -342,36 +342,6 @@
 	icon_state = "duffel-solfed"
 	item_state = "duffel-solfed"
 
-//bureaucracy and stuff
-/obj/item/desk_flag/solfed
-	name = "SolFed desk flag"
-	desc = "A white-blue flag with a SolFed flag on it."
-	icon = 'mod_celadon/_storage_icons/icons/items/misc/sfbureaucracy.dmi'
-	icon_state = "solfed"
-
-/obj/item/folder/solfed
-	desc = "A blue folder with a SolFed coat of arms emblem."
-	icon = 'mod_celadon/_storage_icons/icons/items/misc/sfbureaucracy.dmi'
-	icon_state = "folder_solfed"
-
-/obj/item/folder/documents/solfed
-	document = /obj/item/documents/solfed
-	icon = 'mod_celadon/_storage_icons/icons/items/misc/sfbureaucracy.dmi'
-	icon_state = "folder_solfed"
-	name = "folder- 'TOP SECRET'"
-	desc = "A folder stamped \"Top Secret - Property of the Solar Federation. Unauthorized distribution is punishable by death.\""
-
-/obj/item/documents/solfed
-	desc = "\"TOP SECRET\" SolFed documents, filled with complex logistical diagrams withing the republics, terraforming projects and navy routes."
-	icon = 'mod_celadon/_storage_icons/icons/items/misc/sfbureaucracy.dmi'
-	icon_state = "docs_gold"
-
-/obj/item/pen/solfed
-	name = "\improper SolFed pen"
-	desc = "A fancy gold-blue pen used by SolFed's bureaucrats."
-	icon = 'mod_celadon/_storage_icons/icons/items/misc/sfbureaucracy.dmi'
-	icon_state = "pen-sf"
-
 //Fancy eknifes!!
 
 /obj/item/melee/energy/sword/saber/knife

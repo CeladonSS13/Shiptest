@@ -21,57 +21,6 @@
 	attack_verb = list("slashed", "cut")
 	hitsound = 'sound/weapons/rapierhit.ogg'
 	custom_materials = list(/datum/material/iron = 1000)
-
-/obj/item/melee/skimitar/golden
-	name = "Golden scimitar"
-	desc = "An ancient traditional Starbull edged weapon that was very popular among the people of Starbull in 2430 by Sol. This particular one is made of gold and emeralds. It looks expensive!"
-	icon_state = "skimitar_gold"
-	item_state = "skimitar_gold"
-
-/obj/item/melee/skimitar/silenced
-	name = "silenced Scimitar"
-	icon_state = "skimitar-silenced"
-	item_state = "skimitar-silenced"
-
-/obj/item/melee/skimitar/golden/silenced
-	name = "silenced Golden scimitar"
-	icon_state = "skimitar_gold-silenced"
-	item_state = "skimitar_gold-silenced"
-
-/*
-	Silencer
-*/
-
-/datum/crafting_recipe/skimitar_silenced
-	name = "Scimitar"
-	result = /obj/item/melee/skimitar/silenced
-	reqs = list(/obj/item/melee/skimitar = 1,
-				/obj/item/attachment/silencer = 1)
-	time = 5
-	category = CAT_MISC
-
-/datum/crafting_recipe/skimitar_golden_silenced
-	name = "Golden scimitar"
-	result = /obj/item/melee/skimitar/golden/silenced
-	reqs = list(/obj/item/melee/skimitar/golden = 1,
-				/obj/item/attachment/silencer = 1)
-	time = 5
-	category = CAT_MISC
-
-/datum/crafting_recipe/skimitar
-	name = "Scimitar"
-	result = /obj/item/melee/skimitar
-	reqs = list(/obj/item/melee/skimitar/silenced = 1)
-	time = 5
-	category = CAT_MISC
-
-/datum/crafting_recipe/skimitar_golden
-	name = "Golden scimitar"
-	result = /obj/item/melee/skimitar/golden
-	reqs = list(/obj/item/melee/skimitar/golden/silenced = 1)
-	time = 5
-	category = CAT_MISC
-
 /*
 	Sheath
 */

@@ -42,4 +42,4 @@
 	r_pocket = /obj/item/pen/fourcolor
 	l_pocket = /obj/item/taperecorder
 
-	backpack_contents = list(/obj/item/folder/solgov, /obj/item/paper_bin/bundlenatural, /obj/item/hand_labeler)
+	// [CELADON-REMOVE] backpack_contents = list(/obj/item/folder/solgov, /obj/item/paper_bin/bundlenatural, /obj/item/hand_labeler)

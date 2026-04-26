@@ -1,4 +1,3 @@
-/*
 /obj/item/documents
 	name = "secret documents"
 	desc = "\"Top Secret\" documents."
@@ -17,25 +16,13 @@
 	desc = "\"Top Secret\" Nanotrasen documents, filled with complex diagrams and lists of names, dates and coordinates."
 	icon_state = "docs_verified"
 
-/obj/item/documents/solgov
-	desc = "\"TOP SECRET\"-level memo, listing a number of black company operatives on various space stations and worlds. Some entries have been crossed out, underlined in red, or even redacted entirely with black ink."
-	icon_state = "docs_verified"
-
-/obj/item/documents/terragov
-	desc = "\"RESTRICTED\"-level state documents listing points in space, all within five light-years of the Bezuts star system. Portions of the document are covered in unintelligible blue annotations."
-	icon_state = "docs_verified"
+/obj/item/documents/solfed
+	desc = "\"TOP SECRET\" SolFed documents, filled with complex logistical diagrams withing the republics, terraforming projects and navy routes."
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/sfbureaucracy.dmi'
+	icon_state = "docs_gold"
 
 /obj/item/documents/syndicate
 	desc = "\"Top Secret\" documents detailing sensitive Syndicate operational intelligence."
-
-/obj/item/documents/syndicate/cybersun
-	name = "classified Cybersun documents"
-	desc = "\"Top Secret\" documents detailing sensitive Cybersun Virtual Solutions operational intelligence. These documents are verified with a red wax seal."
-	icon_state = "docs_red"
-
-/obj/item/documents/syndicate/cybersun/biodynamics
-	desc = "\"Top Secret\" Cybersun Biodynamics documents, filled with patient lists and unfinished designs. These documents are verified with a teal wax seal."
-	icon_state = "docs_teal"
 
 /obj/item/documents/syndicate/red
 	name = "red secret documents"
@@ -47,24 +34,14 @@
 	desc = "\"Top Secret\" documents detailing sensitive Syndicate operational intelligence. These documents are verified with a blue wax seal."
 	icon_state = "docs_blue"
 
-/obj/item/documents/syndicate/mining
-	desc = "\"Top Secret\" documents detailing Syndicate plasma mining operations."
-
-/obj/item/documents/syndicate/ngr
-	name = "Second Battlegroup secret documents"
-	desc = "\"Top Secret\" documents belonging to the Second Battlegroup of New Gorlex Republic. They are filled with sensitive operational intelligence. These documents are verified with a red wax seal."
-	icon_state = "docs_red"
-
-/obj/item/documents/eoehoma // For use in Eoehoma-related ruins.
-	desc = "\"Top Secret\" Eoehoma Firearms documents. Filled with weapon blueprints and eviction notices."
-	icon_state = "docs_blue"
+/obj/item/documents/elysium
+	desc = "\"TOP SECRET\" Elysium documents, filled with complex logistical diagrams withing the republics, terraforming projects and navy routes."
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/bureaucracy.dmi'
+	icon_state = "docs_elysium"
 
 /obj/item/documents/frontier
 	desc = "\"Top Secret\" Frotiersmen Fleet documents. Filled with operational intelligence for the local area."
 	icon_state = "docs_olive"
-
-/obj/item/documents/frontier/logistics
-	desc = "\"Top Secret\" Frotiersmen Fleet documents. Filled with intelligence on local Frontiersmen supply lines, supply depot, and logistical infrastructure."
 
 /obj/item/documents/photocopy
 	desc = "A copy of some top-secret documents. Nobody will notice they aren't the originals... right?"
@@ -90,4 +67,3 @@
 			forgedseal = C.crayon_color
 			to_chat(user, span_notice("You forge the official seal with a [C.crayon_color] crayon. No one will notice... right?"))
 			update_appearance()
-*/

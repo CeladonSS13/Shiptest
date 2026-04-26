@@ -1,3 +1,7 @@
+/*
+
+Перенесено в mod_celadon\paperwork\code\folders_premade.dm со всеми необходимыми для нас вещами.
+
 /obj/item/folder/blue
 	desc = "A blue folder."
 	icon_state = "folder_blue"
@@ -99,3 +103,4 @@
 
 /obj/item/folder/pgf/blue
 	icon_state = "folder_pgfblue"
+*/

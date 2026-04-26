@@ -75,24 +75,7 @@
 	if(hud_trait)
 		REMOVE_TRAIT(user, hud_trait, GLASSES_TRAIT)
 
-//desk flag
-/obj/item/desk_flag/nanotrasen
-	name = "nanotrasen desk flag"
-	desc = "A blue flag with a small Nanotrasen Corporation logo on it."
-	icon = 'mod_celadon/_storage_icons/icons/items/misc/deskflags.dmi'
-	icon_state = "nanotrasen"
-
 //bureaucracy
-/obj/item/folder/nanotrasen
-	desc = "A dark-blue folder with a Nanotrasen logo."
-	icon = 'mod_celadon/_storage_icons/icons/items/misc/bureaucracy.dmi'
-	icon_state = "folder_nanotrasen"
-
-/obj/item/folder/documents/nanotrasen
-	icon = 'mod_celadon/_storage_icons/icons/items/misc/bureaucracy.dmi'
-	icon_state = "folder_nanotrasen"
-	name = "folder- 'TOP SECRET'"
-	desc = "A folder stamped \"Top Secret - Property of Nanotrasen Corporation. Unauthorized distribution is punishable by death.\""
 
 /obj/item/paper/fluff/ship/celestis/sm
 	name = "Nakamura Engineering supermatter manual"

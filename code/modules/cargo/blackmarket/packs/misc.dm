@@ -62,10 +62,13 @@
 	availability_prob = 40
 
 /datum/blackmarket_item/misc/secret_docs/spawn_item(loc)
-	var/docs = pick(list(/obj/item/documents/nanotrasen,
-				/obj/item/documents/solgov,
-				/obj/item/documents/terragov,
-				/obj/item/documents/syndicate/red))
+	var/docs = pick(
+			list(
+				/obj/item/documents/nanotrasen,
+				/obj/item/documents/solfed,
+				/obj/item/documents/frontier,
+				/obj/item/documents/elysium,
+				/obj/item/documents/syndicate))
 	return new docs(loc)
 
 /datum/blackmarket_item/misc/black_box

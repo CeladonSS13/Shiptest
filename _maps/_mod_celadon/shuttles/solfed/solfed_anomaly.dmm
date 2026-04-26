@@ -1036,13 +1036,6 @@
 /area/ship/bridge)
 "pG" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/folder/solgov{
-	pixel_x = 5
-	},
-/obj/item/folder/solgov{
-	pixel_y = 7;
-	pixel_x = 5
-	},
 /obj/item/stamp/solfed{
 	pixel_y = 3;
 	pixel_x = -5
@@ -1470,10 +1463,6 @@
 /obj/item/stamp/solfed/captain{
 	pixel_y = 10;
 	pixel_x = -7
-	},
-/obj/item/folder/documents/solgov{
-	pixel_y = 12;
-	pixel_x = 2
 	},
 /obj/item/binoculars{
 	pixel_y = -1;
@@ -2031,7 +2020,6 @@
 /turf/open/floor/plasteel/dark_2,
 /area/ship/general/cargo/cargo_bay)
 "FI" = (
-/obj/item/documents/solgov,
 /obj/structure/filingcabinet/double{
 	dir = 1
 	},

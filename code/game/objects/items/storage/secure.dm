@@ -221,6 +221,8 @@
 	new /obj/item/ammo_box/magazine/m22lr_himehabu(src)
 	new /obj/item/ammo_box/magazine/m22lr_himehabu(src)
 
+/*
+[CELADON-REMOVE]
 /obj/item/storage/secure/safe/cybersun/solutions/PopulateContents()
 	. = ..()
 	new /obj/item/folder/documents/syndicate/cybersun(src)
@@ -228,6 +230,8 @@
 /obj/item/storage/secure/safe/cybersun/biodynamics/PopulateContents()
 	. = ..()
 	new /obj/item/folder/documents/syndicate/cybersun/biodynamics(src)
+[/CELADON-REMOVE]
+*/
 
 /obj/item/storage/secure/safe/nt
 	name = "Sensitive Data Safe"
