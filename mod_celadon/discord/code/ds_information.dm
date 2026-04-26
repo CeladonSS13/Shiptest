@@ -23,6 +23,6 @@
 		send2chat(info, "faxes-and-prays")
 
 // Администрация будет получать оповещения о новых Prays в Discord.
-/mob/proc/sendDSPray(msg_tmp, C)
-	var/text = "🙏 **\[PRAY] `[C]` | `[src.real_name]`**: [msg_tmp]"
+/mob/proc/sendDSPray(msg_tmp, src)
+	var/text = "🙏 **\[PRAY] `[src.key]` | `[src.real_name]`**: [msg_tmp]"
 	send2chat(text, "faxes-and-prays")
