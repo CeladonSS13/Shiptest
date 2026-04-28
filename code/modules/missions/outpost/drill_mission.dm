@@ -2,10 +2,10 @@
 		Core sampling missions
 */
 /datum/mission/drill
-	name = "Class 1 core sample mission"
-	desc = "We require geological information from one of the neighboring planetoids. \
-			Please anchor the drill in place and defend it until it has gathered enough samples. \
-			Operation of the core sampling drill is extremely dangerous, caution is advised. "
+	name = "Миссия по сбору образцов, 1-го уровня"
+	desc = "Нам нужна геологическая информация с одного из соседних планетоидов. \
+			Пожалуйста, закрепите буровую установку на месте и держите её под защитой до тех пор, пока она не соберет достаточное количество образцов. \
+			Работа буровой установки для отбора образцов чрезвычайно опасна, поэтому рекомендуется соблюдать осторожность."
 	value = 2500
 	weight = 11
 
@@ -41,20 +41,20 @@
 	selected_planet = pick(available_planets)
 	num_wanted = rand(num_wanted-2,num_wanted+2)
 	value += num_wanted*100
-	name = "Class [class_wanted] [selected_planet.name] core sample mission"
-	desc = "We require geological information from a neighboring [selected_planet.name]. \
-			Please anchor the drill in place and defend it until it has gathered enough samples.\
-			Operation of the core sampling drill is extremely dangerous, caution is advised. "
+	name = "Миссия по сбору образцов на [selected_planet.name], [class_wanted]-го уровня"
+	desc = "Нам нужна геологическая информация с [selected_planet.name]. \
+			Пожалуйста, закрепите буровую установку на месте и держите её под защитой до тех пор, пока она не соберет достаточное количество образцов. \
+			Работа буровой установки для отбора образцов чрезвычайно опасна, поэтому рекомендуется соблюдать осторожность."
 	if(bonus_text)
-		desc += " \n\nA punchcard will be provided for ease of locating a [selected_planet.name]. \
-					A 500 credit bonus will be applied for not using one."
+		desc += " \n\nДля удобства поиска будет предоставлена перфокарта для обнаружения на сканерах планеты: [selected_planet.name]. \
+					За неиспользование перфокарты вам будет начислено 500 кредитов."
 
 /datum/mission/drill/accept(datum/overmap/ship/controlled/acceptor, turf/accept_loc, obj/hangar_crate_spawner/cargo_belt)
 	. = ..()
 	//you shouldn't be accepting this without an outpost but just in case
 	if(isnull(cargo_belt))
 		sampler = spawn_bound(drill_type, accept_loc, VARSET_CALLBACK(src, sampler, null))
-		stack_trace("[src] issued by [source_outpost] could not find cargo chute to send items down. Fell back to cargo console.")
+		stack_trace("[src] отправленный с [source_outpost] , не обнаружил грузовой желоб для сброса вещей. Вместо него задействована грузовая консоль.")
 	else
 		sampler = spawn_bound(drill_type, cargo_belt.loc, VARSET_CALLBACK(src, sampler, null))
 	sampler.mission_class = class_wanted
@@ -67,7 +67,7 @@
 		punchcard.name += " ([selected_planet.name])"
 		punchcard.planet_type = selected_planet
 		if(bonus_text)
-			punchcard.desc += span_notice("\nA [span_bold("500 credit")] bonus will be applied for keeping this until the end of your sample mission.")
+			punchcard.desc += span_notice("\nA [span_bold("500 кредитов")] будет начислено за сохранение до конца вашей миссии.")
 
 /datum/mission/drill/can_complete()
 	. = ..()
@@ -113,14 +113,14 @@
 	return ..()
 
 /datum/mission/drill/classtwo
-	name = "Class 2 core sample mission"
+	name = "Миссия по сбору образцов, 2-го уровня"
 	value = 4000	//value = 4500	// [CELADON-EDIT] - CARGO-REWORK-BALANCE
 	weight = 9
 	class_wanted = 2
 	num_wanted = 6
 
 /datum/mission/drill/classthree
-	name = "Class 3 core sample mission"
+	name = "Миссия по сбору образцов, 3-го уровня"
 	value = 6000	//value = 8000	// [CELADON-EDIT] - CARGO-REWORK-BALANCE
 	weight = 5
 	class_wanted = 3
@@ -130,11 +130,11 @@
 		Variant for rare planets
 */
 /datum/mission/drill/rareplanet
-	name = "Class 1 rare core sample mission"
-	desc = "We have discovered a rare planetoid and wish to study it's geology. \
-			Please anchor the drill in place and defend it until it has gathered enough samples. \
-			Not much information on these planets are known, caution is advised. \
-			A punchcard will be provided to locate the planet, as it is impossible to find otherwise. "
+	name = "Редкая миссия по сбору образцов, 1-го уровня"
+	desc = "Мы обнаружили редкий планетоид и хотим изучить его геологию. \
+			Пожалуйста, закрепите сверло на месте и подержите его до тех пор, пока оно не соберет достаточное количество образцов. \
+			Известно не так много информации об этих планетах, поэтому рекомендуется соблюдать осторожность. \
+			Для определения местоположения планеты будет предоставлена перфокарта, поскольку найти её иным способом невозможно. "
 	value = 3000
 	weight = 4
 	spawn_punchcard = TRUE
@@ -148,26 +148,26 @@
 
 /datum/mission/drill/rare_planet/generate_mission_details()
 	. = ..()
-	name = "Class [class_wanted] rare [selected_planet.name] core sample mission"
-	desc = "We have discovered a rare [selected_planet.name] and wish to study it's geology. \
-			Please anchor the drill in place and defend it until it has gathered enough samples. \
-			Not much information on these planets are known, caution is advised. \
-			A punchcard will be provided to locate the planet, as it is impossible to find otherwise. "
+	name = "Редкая миссия по сбору образцов на [selected_planet.name], [class_wanted]-го уровня"
+	desc = "Мы обнаружили редкую планету: [selected_planet.name] и желаем изучить ее геологию. \
+			Пожалуйста, закрепите сверло на месте и подержите его до тех пор, пока оно не соберет достаточное количество образцов. \
+			Известно не так много информации об этих планетах, поэтому рекомендуется соблюдать осторожность. \
+			Для определения местоположения планеты будет предоставлена перфокарта, поскольку найти её иным способом невозможно. "
 	if(selected_planet == /datum/planet_type/shrouded)
-		name = "Special [selected_planet.name] Class [class_wanted] core sample mission"
-		desc = "We have discovered a rare [selected_planet.name] and wish to require it's geology. \
-				However, almost everyone we send there usually comes back screaming and refusing to do the job. \
-				The electromagnetic absorbing atmosphere prevents thorough scans, but the surface appears to be completly barren. \
-				Please for the love of the Huntsman gather the samples please. There will be a bonus as well. \
-				A punchcard will be provided to locate the planet, as it is impossible to find otherwise. "
+		name = "Специальная миссия по сбору образцов на [selected_planet.name], [class_wanted]-го уровня"
+		desc = "Мы обнаружили крайне редкую планету: [selected_planet.name] и желаем изучить ее геологию. \
+				Однако почти все, кого мы туда отправляем, обычно возвращаются с криками и отказываются выполнять заказ. \
+				Атмосфера, поглощающая электромагнитное излучение, препятствует тщательному сканированию, но поверхность кажется совершенно бесплодной. \
+				Пожалуйста, из уважения к Охотнику, соберите образцы, пожалуйста. Также будет бонус. \
+				Для определения местоположения планеты будет предоставлена перфокарта, поскольку найти её иным способом невозможно. "
 		value += 750
 
 	if(bonus_text)
-		desc += " \n\nA punchcard will be provided for ease of locating a [selected_planet.name].\
-				A 500 credit bonus will be applied for not using one."
+		desc += " \n\nДля удобства поиска будет предоставлена перфокарта для обнаружения на сканерах планеты: [selected_planet.name].\
+				За неиспользование перфокарты вам будет начислено 500 кредитов."
 
 /datum/mission/drill/rare_planet/class_two
-	name = "Class 2 rare core sample mission"
+	name = "Редкая миссия по сбору образцов, 2-го уровня"
 	value = 5000
 	weight = 3
 	class_wanted = 2
@@ -181,7 +181,7 @@
 	)
 
 /datum/mission/drill/rare_planet/class_three
-	name = "Class 3 rare core sample mission"
+	name = "Редкая миссия по сбору образцов, 3-го уровня"
 	value = 6500
 	weight = 2
 	class_wanted = 3
@@ -195,8 +195,9 @@
 /* The drill itself */
 
 /obj/machinery/drill/mission
-	name = "surface sampling research drill"
-	desc = "A specialized laser drill designed to extract geological samples."
+	name = "исследовательский бур"
+	cases = list("исследовательский бур", "исследовательского бура", "исследовательскому буру", "исследовательский бур", "исследовательским буром", "исследовательском буре")
+	desc = "Специализированный лазерный бур, предназначенный для извлечения геологических образцов."
 
 	var/num_current = 0
 	var/mission_class
@@ -205,16 +206,16 @@
 
 /obj/machinery/drill/mission/examine()
 	. = ..()
-	. += span_notice("The drill contains [num_current] of the [num_wanted] samples needed.")
+	. += span_notice("Дрель содержит [num_current] образоцов из [num_wanted].")
 	if(num_current>=num_wanted)
-		. += span_notice("Additional samples can be gathered for 200 credits per sample.")
+		. += span_notice("Дополнительные образцы могут быть собраны за 200 кредитов за каждый образец.")
 
 /obj/machinery/drill/mission/start_mining()
 	if(orevein_wanted && !istype(our_vein, orevein_wanted))
-		say("Error: Incorrect class of planetoid for operation.")
+		say("Ошибка: Неверный класс планетоида для работы.")
 		return
 	if(our_vein.vein_class < mission_class && our_vein)
-		say("Error: A vein class of [mission_class] or greater is required for operation.")
+		say("Ошибка: Для проведения операции требуется класс жилы [mission_class]-го уровня или выше.")
 		return
 	return ..()
 
@@ -223,6 +224,6 @@
 
 	if(num_current == num_wanted)
 		SEND_SIGNAL(src, COMSIG_DRILL_SAMPLES_DONE)
-		say("Required samples gathered. Additional samples valued at 200cr per. Now shutting down!")
+		say("Собраны необходимые образцы. Стоимость дополнительных образцов составляет 200 кредит за штуку. Начата деактивация дрели.")
 		if(active)
 			stop_mining()
