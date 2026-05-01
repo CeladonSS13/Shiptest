@@ -133,7 +133,7 @@
 	name = "Ballistic Shield"
 	desc = "Contains a ballistic shield, effective at holding back hostile fauna, xenofauna, or large crowds."
 	cost = 2000
-	contains = list(/obj/item/shield/riot)
+	contains = list(/obj/item/shield/heavy)
 	crate_name = "ballistic shield crate"
 
 /datum/supply_pack/faction/independent/sec_supply/teleriotshields

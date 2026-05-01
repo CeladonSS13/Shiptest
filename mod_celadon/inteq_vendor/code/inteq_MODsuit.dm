@@ -63,7 +63,7 @@
 	module_type = MODULE_ACTIVE
 	complexity = 3
 	active_power_cost = MODULE_CHARGE_DRAIN_LOW
-	device = /obj/item/shield/riot/mod
+	device = /obj/item/shield/heavy/mod
 	incompatible_modules = list(/obj/item/mod/module/shield)
 	cooldown_time = 0.2 SECONDS
 	var/start_time = 0
@@ -94,7 +94,7 @@
 	UnregisterSignal(device, COMSIG_MOD_SHIELD_DESTROYED)
 
 
-/obj/item/mod/module/shield/proc/change_integrity(obj/item/shield/riot/mod/shield)
+/obj/item/mod/module/shield/proc/change_integrity(obj/item/shield/heavy/mod/shield)
 	var/restored_integrity = (world.time - start_time) //So we regenerate 10 integrity per second
 	if(shield.atom_integrity + restored_integrity >= shield.max_integrity) //So we don't return an object with 200 integrity with a 100 max
 		return shield.max_integrity
@@ -109,7 +109,7 @@
 	mod.wearer.transferItemToLoc(device, src, TRUE)
 
 
-/obj/item/shield/riot/mod
+/obj/item/shield/heavy/mod
 	name = "MOD telescopic shield"
 	desc = "A module installed into the forearm of the suit, extending into a sturdy shield as needed. \
 		This high-end piece of technology repairs damage done to shield, while it's retracted \
@@ -131,13 +131,13 @@
 	braking_alert = "Shield's down!"
 	integrity_failure = -10000 // So it doesn't brake
 
-/obj/item/shield/riot/mod/emp_act(severity)
+/obj/item/shield/heavy/mod/emp_act(severity)
 	atom_integrity = 1
 	SEND_SIGNAL(src, COMSIG_MOD_SHIELD_DESTROYED, atom_integrity)
 	. = ..()
 
 
-/obj/item/shield/riot/mod/atom_destruction()
+/obj/item/shield/heavy/mod/atom_destruction()
 	SHOULD_CALL_PARENT(FALSE)
 	playsound(loc, shield_break_sound, 35)
 	new shield_break_leftover(get_turf(src))
@@ -149,7 +149,7 @@
 	SEND_SIGNAL(src, COMSIG_MOD_SHIELD_DESTROYED, shield_integrity)
 
 
-/obj/item/shield/riot/mod/attackby(obj/item/W, mob/user, params)
+/obj/item/shield/heavy/mod/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/melee/baton))
 		if(COOLDOWN_FINISHED(src, baton_bash))
 			user.visible_message(span_warning("[user] bashes [src] with [W]!"))
@@ -163,11 +163,11 @@
 		This high-end piece of technology repairs damage done to shield, while it's retracted \
 		using a tremendous amount of power supplied from MOD's core. \
 		This InteQ version has a special spot with powerful magnets to support weapons."
-	device = /obj/item/shield/riot/mod/inteq
+	device = /obj/item/shield/heavy/mod/inteq
 	incompatible_modules = list(/obj/item/mod/module/shield, /obj/item/mod/module/shield/inteq)
 
 
-/obj/item/shield/riot/mod/inteq
+/obj/item/shield/heavy/mod/inteq
 	name = "InteQ MOD telescopic shield"
 	desc = "An advanced riot shield made of lightweight materials that collapses for easy storage. \
 	This particular modification has some powerful magnets for assisting with weapon's recoil."

@@ -758,7 +758,7 @@ GLOBAL_LIST_INIT(armor_by_type, generate_armor_type_cache())
 	return
 // [/CELADON-ADD]
 
-/obj/item/shield/riot
+/obj/item/shield/heavy
 	// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition + Rebalance
 	spread_bonus = -3
 	slowdown = 0.5

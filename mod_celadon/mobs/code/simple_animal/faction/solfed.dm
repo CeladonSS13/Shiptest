@@ -53,7 +53,7 @@
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/solfed/marine/melee/heavy
 
 	r_hand = /obj/item/melee/energy/sword/saber/knife/pre_active
-	l_hand = /obj/item/shield/riot
+	l_hand = /obj/item/shield/heavy
 
 	melee_damage_lower = 20
 	melee_damage_upper = 20
