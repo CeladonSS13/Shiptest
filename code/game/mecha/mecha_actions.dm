@@ -25,7 +25,10 @@
 
 
 /datum/action/innate/mecha
-	check_flags = AB_CHECK_HANDS_BLOCKED | AB_CHECK_IMMOBILE | AB_CHECK_CONSCIOUS
+// [CELADON-EDIT] - FIX_MECH
+//	check_flags = AB_CHECK_HANDS_BLOCKED | AB_CHECK_IMMOBILE | AB_CHECK_CONSCIOUS // CELADON-EDIT - ORIGINAL
+	check_flags = AB_CHECK_IMMOBILE | AB_CHECK_CONSCIOUS
+// [/CELADON-EDIT]
 	icon_icon = 'icons/mob/actions/actions_mecha.dmi'
 	var/obj/mecha/chassis
 

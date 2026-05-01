@@ -70,7 +70,7 @@
 /obj/machinery/computer/cargo/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
-		ui = new(user, src, "OutpostCommunications", name)
+		ui = new(user, src, "OutpostCommunicationsCeladon", name) // [CELADON-EDIT] - CELADON_OUTPOST_CONSOLE - instead of "OutpostCommunications"
 		ui.open()
 		if(!charge_account)
 			reconnect()
@@ -78,8 +78,9 @@
 /obj/machinery/computer/cargo/ui_static_data(mob/user)
 	. = ..()
 	outpost_docked = current_ship.docked_to
-	if(istype(outpost_docked))
+	if(istype(outpost_docked) && pack_data_cooldown <= world.time) // [CELADON-EDIT] - CELADON_FIXES: Prevent constant pack data generation every tick
 		generate_pack_data()
+		pack_data_cooldown = world.time + (5 SECONDS) // [CELADON-EDIT] Cache for 5 seconds
 	else
 		supply_pack_data = list()
 
@@ -135,6 +136,10 @@
 		if("purchase")
 			var/list/purchasing = params["cart"]
 			var/total_cost = text2num(params["total"])
+			// [CELADON-ADD] - Мне лень убирать этот вызов, можно обойтись банальной проверкой
+			if(!current_ship?.docked_to)
+				return
+			// [/CELADON-ADD]
 			var/datum/overmap/outpost/current_outpost = current_ship.docked_to
 			if(!istype(current_ship.docked_to) || purchasing.len == 0)
 				return
@@ -171,8 +176,29 @@
 			else if(mission.servant == ship)
 				if(mission.can_complete())
 					mission.turn_in()
-				else if(tgui_alert(usr, "Give up on [mission]?", src, list("Yes", "No")) == "Yes")
-					mission.give_up()
+				//[CELADON-EDIT] - CELADON_FIXES - фиксим ролл миссий
+				//else if(tgui_alert(usr, "Give up on [mission]?", src, list("Yes", "No")) == "Yes")
+				// mission.give_up()
+					ship.given_up_missions = 0
+					ship.giveup_timer = world.time-15 MINUTES
+					ship.giveup_timeout = FALSE
+				else
+					if(world.time > ship.giveup_timer)
+						if(ship.giveup_timeout)
+							ship.given_up_missions = 0
+							ship.giveup_timeout = FALSE
+						if(ship.given_up_missions < 3)
+							ship.given_up_missions = ship.given_up_missions+1
+							mission.give_up()
+							if(ship.given_up_missions >= 3)
+								ship.giveup_timer = world.time+15 MINUTES
+								ship.giveup_timeout = TRUE
+								to_chat(usr, "<span class='alert'>Maximum limit of aborted missions reached. Please wait 15 minutes, while we are checking your ship history for any possible frauds. Future attempts to give up a mission might result in a bad reputation.</span>")
+							return TRUE
+					else
+						to_chat(usr, "<span class='alert'>Please wait [ceil((ship.giveup_timer-world.time)/600)] minutes before giving up again.</span>")
+						return TRUE
+				//[/CELADON-EDIT]
 				return TRUE
 
 /obj/machinery/computer/cargo/attackby(obj/item/W, mob/living/user, params)

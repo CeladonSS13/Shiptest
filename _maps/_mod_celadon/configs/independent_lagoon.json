@@ -1,0 +1,68 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Lagoon-class Cruise Ship",
+	"map_short_name": "Lagoon",
+	"description": "Необычное для относительно бедного Фронтира судно класса 'Lagoon' - это большое прогулочное судно, предназначенное для перевозки пассажиров в любые экзотические места. Lagoon, встречающиеся на Фронтире, как правило, содержат экипажи и пассажиров особенно смелого - или безрассудного - характера, готовых платить по карману за тур в некоторые из самых опасных регионов известного космоса. Соответственно, Lagoon в этих регионах обычно включают небольшой, но хорошо оснащенный контингент охраны для защиты (и, при необходимости, усмирения) пассажиров, а также оснащены удивительно мощным термоэлектрическим генератором для перемещения огромной массы корабля по огромным пространствам.",
+	"map_path": "_maps/_mod_celadon/shuttles/independent/independent_lagoon.dmm",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 4,
+	"starting_funds": 3000,
+	"prefix": "ISV",
+	"faction": "/datum/faction/independent",
+	"tags": [
+		"РП Фокус",
+		"Сервисный"
+	],
+	"namelists": ["CRUISE"],
+	"job_slots": {
+		"Captain": {
+			"outfit": "/datum/outfit/job/cel/independent/captain/lagoon",
+			"slots": 1
+		},
+		"Cruise Director": {
+			"outfit": "/datum/outfit/job/cel/independent/hop/lagoon",
+			"slots": 1
+		},
+		"Security Officer": {
+			"outfit": "/datum/outfit/job/cel/independent/security/lagoon",
+			"slots": 2
+		},
+		"Medical Doctor": {
+			"outfit": "/datum/outfit/job/cel/independent/doctor/lagoon",
+			"slots": 1
+		},
+		"Ship Engineer": {
+			"outfit": "/datum/outfit/job/cel/independent/atmos/lagoon",
+			"slots": 1
+		},
+		"Bartender": {
+			"outfit": "/datum/outfit/job/cel/independent/bartender/lagoon",
+			"slots": 1
+		},
+		"Cook": {
+			"outfit": "/datum/outfit/job/cel/independent/cook/lagoon",
+			"slots": 1
+		},
+		"Botanist": {
+			"outfit": "/datum/outfit/job/cel/independent/botanist/lagoon",
+			"slots": 1
+		},
+		"Curator": {
+			"outfit": "/datum/outfit/job/cel/independent/curator/lagoon",
+			"slots": 1
+		},
+		"Chaplain": {
+			"outfit": "/datum/outfit/job/cel/independent/chaplain/lagoon",
+			"slots": 1
+		},
+		"Janitor": {
+			"outfit": "/datum/outfit/job/cel/independent/janitor/lagoon",
+			"slots": 1
+		},
+		"Passenger": {
+			"outfit": "/datum/outfit/job/cel/independent/assistant/lagoon",
+			"slots": 10
+		}
+	}
+}

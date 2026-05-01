@@ -1,0 +1,40 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Elder-class Montagnes' Vessel",
+	"map_short_name": "Elder",
+	"description": "Стандартное судно, разработанная компанией Montagne. Корабль спроектирован вокруг центрального сада, состоящего из растений, почвы и деревьев с родной планеты владельца Montagnes. Цель данного корабля - снабжение всем необходимым для ведения сельского хозяйства, разведения животных и лечения более «естественными» способами, используя травы и растения, выращенные в домашних условиях.",
+	"map_path": "_maps/_mod_celadon/shuttles/independent/independent_elder.dmm",
+	"map_id": "srm_elder",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 4,
+	"prefix": "ЕSV",
+	"faction": "/datum/faction/independent",
+	"tags": [
+		"Ботаника",
+		"РП Фокус",
+		"Специализированный"
+	],
+	"namelists": [
+		"BEASTS"
+	],
+	"job_slots": {
+		"Hunter Montagne": {
+			"outfit": "/datum/outfit/job/cel/independent/roumain/captain",
+			"officer": true,
+			"slots": 1
+		},
+		"Hunter Doctor": {
+			"outfit": "/datum/outfit/job/cel/independent/roumain/doctor",
+			"slots": 1
+		},
+		"Hunter": {
+			"outfit": "/datum/outfit/job/cel/independent/roumain/security",
+			"slots": 3
+		},
+		"Shadow": {
+			"outfit": "/datum/outfit/job/cel/independent/roumain/assistant",
+			"slots": 3
+		}
+	}
+}

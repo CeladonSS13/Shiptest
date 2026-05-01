@@ -76,7 +76,7 @@
 				spacer = "\n\t"
 
 		if(cached_slot_flags & ITEM_SLOT_EYES)
-			icon_file = 'icons/mob/clothing/eyes/eyes.dmi'
+			icon_file = 'mod_celadon/_storage_icons/icons/items/clothing/eyes/overlay/eyes.dmi' // [CELADON-EDIT] - CELADON_RETURN_CONTENT_SPAWN
 			if(!(icon_state in icon_states(icon_file, 1)))
 				already_warned_icons += icon_state
 				fail_reasons += "[spacer][item_path] using invalid [mob_overlay_state ? "mob_overlay_state" : "icon_state"], \"[icon_state]\" in '[icon_file]'[match_message]"

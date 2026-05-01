@@ -97,14 +97,14 @@
 /obj/item/clothing/suit/space/hardsuit/ert/lp
 	name = "Loss Prevention Lieutenant Hardsuit"
 	desc = "The middlemanagement of the ERT world, the Lieutenant of the LP team is given this slightly downgraded version of the ERT Commander hardsuit."
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 50, "acid" = 80)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 50, "acid" = 80, "wound" = 30)  // [CELADON-EDIT] - CELADON_BALANCE
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/lp
 	resistance_flags = null
 	max_heat_protection_temperature = null
 	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION
 
 /obj/item/clothing/head/helmet/space/hardsuit/ert/lp
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 50, "acid" = 80)
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 50, "acid" = 80, "wound" = 30)  // [CELADON-EDIT] - CELADON_BALANCE
 	name = "Loss Prevention Lieutenant Hardsuit Helmet"
 	desc = "The helmet that comes attached to the LP Team Lieutenant Hardsuit."
 	resistance_flags = null

@@ -553,9 +553,15 @@
 /obj/item/storage/crayons/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/toy/crayon))
 		var/obj/item/toy/crayon/C = W
-		if(C.crayon_color == "rainbow")
-			to_chat(usr, span_warning("This crayon is too powerful to be contained in this box!"))
-			return
+// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+		switch(C.crayon_color)
+			if("mime")
+				to_chat(usr, span_warning("This crayon is too sad to be contained in this box!"))
+				return
+			if("rainbow")
+				to_chat(usr, span_warning("This crayon is too powerful to be contained in this box!"))
+				return
+// [/CELADON-ADD]
 		if(istype(W, /obj/item/toy/crayon/spraycan))
 			to_chat(user, span_warning("Spraycans are not crayons!"))
 			return
@@ -653,7 +659,7 @@
 		return
 
 
-	if(isobj(target) && !istype(target, /obj/effect/decal/cleanable/crayon/gang) && !istype(target, /obj/item/clothing))
+	if(isobj(target) && !istype(target, /obj/effect/decal/cleanable/crayon/gang)) // [CELADON-EDIT] - UNFUCK_SPRAYCAN
 		if(actually_paints)
 			if(color_hex2num(paint_color) < 350 && !istype(target, /obj/structure/window) && !istype(target, /obj/effect/decal/cleanable/crayon)) //Colors too dark are rejected
 				to_chat(usr, span_warning("A color that dark on an object like this? Surely not..."))

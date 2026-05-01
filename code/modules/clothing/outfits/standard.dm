@@ -84,7 +84,12 @@
 
 	head = /obj/item/clothing/head/helmet/space/plasmaman
 	uniform = /obj/item/clothing/under/plasmaman
+// [CELADON-EDIT] - QoL Plasmamen
+/* CELADON-EDIT - ORIGINAL
 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+*/
+	r_pocket= /obj/item/tank/internals/plasmaman/belt/full
+// [/CELADON-EDIT]
 	mask = /obj/item/clothing/mask/breath
 	gloves = /obj/item/clothing/gloves/color/plasmaman
 
@@ -98,7 +103,7 @@
 	gloves = /obj/item/clothing/gloves/combat/insul
 	belt = /obj/item/storage/belt/utility/chief/full
 	shoes = /obj/item/clothing/shoes/magboots/advance
-	id = /obj/item/card/id/debug
+	id = /obj/item/card/id/debug{icon_state = "admin"}	// [CELADON-EDIT] - CELADON_OUTFIT // id = /obj/item/card/id/debug // ORIGINAL
 	suit_store = /obj/item/tank/internals/oxygen
 	back = /obj/item/storage/backpack/holding/debug
 	box = /obj/item/storage/box/debugtools
@@ -111,6 +116,32 @@
 		)
 
 /datum/outfit/debug/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	var/obj/item/card/id/W = H.wear_id
-	W.registered_name = H.real_name
-	W.update_label()
+	// var/obj/item/card/id/W = H.wear_id	// CELADON-REMOVE - CELADON_FIXES - Вызывает рантаймы
+	// W.registered_name = H.real_name
+	// W.update_label()	// CELADON-REMOVE
+	// [CELADON-ADD] - CELADON_FACTION
+	H.faction |= list(FACTION_PLAYER_SYNDICATE,
+					FACTION_PLAYER_NANOTRASEN,
+					FACTION_PLAYER_SOLFED,
+					FACTION_PLAYER_SOLCON,
+					FACTION_PLAYER_NANOTRASEN,
+					FACTION_PLAYER_INTEQ,
+					FACTION_PLAYER_FRONTIERSMEN,
+					FACTION_PLAYER_MINUTEMAN,
+					FACTION_PLAYER_ROUMAIN,
+					FACTION_PLAYER_GEZENA,
+					FACTION_PLAYER_ELYSIUM,
+					FACTION_ELYSIUM,
+					FACTION_PIRATES,
+					FACTION_ANTAG_SYNDICATE,
+					FACTION_ANTAG_FRONTIERSMEN,
+					FACTION_RAMZI,
+					FACTION_HOSTILE,
+					FACTION_NEUTRAL,
+					FACTION_RAT,
+					ROLE_DEATHSQUAD,
+					SPECIES_SKELETON,
+					ROLE_ALIEN,
+					)
+	ADD_TRAIT(H, TRAIT_MINDSHIELD, "status_effect")
+	// [/CELADON-ADD]

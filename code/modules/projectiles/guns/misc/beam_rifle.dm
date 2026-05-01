@@ -32,6 +32,7 @@
 	default_ammo_type = /obj/item/stock_parts/cell/gun/large
 	allowed_ammo_types = list(
 		/obj/item/stock_parts/cell/gun/large,
+		/obj/item/stock_parts/cell/gun/large/empty, // [CELADON-ADD] - FIX LARGE EMPTY CELL
 	)
 	canMouseDown = TRUE
 	var/aiming = FALSE

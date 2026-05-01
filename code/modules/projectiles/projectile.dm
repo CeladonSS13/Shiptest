@@ -290,11 +290,13 @@
 			if(B && !IS_ORGANIC_LIMB(B)) // So if you hit a robotic, it sparks instead of bloodspatters
 				do_sparks(2, FALSE, target.loc)
 			else
+
 				var/splatter_color = null
 				if(iscarbon(L))
+				//if((iscarbon(L)) && !HAS_TRAIT(L, NOBLOOD)) // [CELADON - EDIT] Lanius
 					var/mob/living/carbon/carbon_target = L
 					splatter_color = carbon_target.dna.blood_type.color
-				new /obj/effect/temp_visual/dir_setting/bloodsplatter(target_loca, splatter_dir, splatter_color)
+					new /obj/effect/temp_visual/dir_setting/bloodsplatter(target_loca, splatter_dir, splatter_color)
 			if(prob(33))
 				L.add_splatter_floor(target_loca)
 		else if(impact_effect_type && !hitscan)
@@ -531,14 +533,32 @@
 			return FALSE
 	else
 		var/mob/living/L = target
-		if(direct_target)
+		// [CELADON-EDIT] - BALANCE_CAN_HIT_TARGET - Делаем шансы на попадания
+		if(iscarbon(L) && (L.stat != DEAD))
+			if(direct_target && !L.density && firer.density && prob(80)) // 80% что пуля попадет в лежащую цель от стоящего стрелка
+				return TRUE
+			if(direct_target && !L.density && !firer.density && prob(70)) // 70% что пуля попадет в лежащую цель от лежащего стрелка
+				return TRUE
+			if(direct_target && L.density && !firer.density && prob(75)) // 75% пуля попадет в стоящую цель от лежачего стрелка
+				return TRUE
+			if(!L.density && ismob(firer)) // Проверяем HARM интент для лежачих целей
+				var/mob/M = firer
+				if(M.a_intent == INTENT_HARM && prob(75)) // 75% что пуля попадет в лежащую цель в HARM интенте
+					return TRUE
+		else if(direct_target)
 			return TRUE
+		// [/CELADON-EDIT]
 		if(L.check_concealment(src))
 			return FALSE
 		// If target not able to use items, move and stand - or if they're just dead, pass over.
 		if(L.stat || (!hit_stunned_targets && HAS_TRAIT(L, TRAIT_IMMOBILIZED) && HAS_TRAIT(L, TRAIT_FLOORED) && HAS_TRAIT(L, TRAIT_HANDS_BLOCKED)))
 			return FALSE
-	return TRUE
+	// [CELADON-EDIT] - BALANCE_CAN_HIT_TARGET - Делаем шансы на попадания
+	// return TRUE 	// CELADON-EDIT - ORIGINAL
+	if(prob(75))	// С вероятность 75% шальная пуля зацепит лежащего
+		return TRUE
+	return FALSE
+	// [/CELADON-EDIT]
 
 /**
  * Scan if we should hit something and hit it if we need to

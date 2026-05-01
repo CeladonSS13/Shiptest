@@ -1,0 +1,33 @@
+// Включает пути до наших дефайнов
+
+// ..\ - указывает на уровень выше каталога
+// Все дефайны файлы помещаем по пути code\__DEFINES\~mod_celadon
+// Тут указываем путь до нашего файла с дефайном!
+
+#include "..\code\__DEFINES\~mod_celadon\access.dm"
+#include "..\code\__DEFINES\~mod_celadon\map.dm"
+#include "..\code\__DEFINES\~mod_celadon\achievements.dm"
+#include "..\code\__DEFINES\~mod_celadon\colors.dm"
+#include "..\code\__DEFINES\~mod_celadon\donate.dm"
+#include "..\code\__DEFINES\~mod_celadon\game.dm"
+#include "..\code\__DEFINES\~mod_celadon\helpers.dm"
+#include "..\code\__DEFINES\~mod_celadon\lanius.dm"
+#include "..\code\__DEFINES\~mod_celadon\layers.dm"
+#include "..\code\__DEFINES\~mod_celadon\names.dm"
+#include "..\code\__DEFINES\~mod_celadon\roaches.dm"
+#include "..\code\__DEFINES\~mod_celadon\riol.dm"
+#include "..\code\__DEFINES\~mod_celadon\sarathi.dm"
+#include "..\code\__DEFINES\~mod_celadon\structures.dm"
+#include "..\code\__DEFINES\~mod_celadon\ship.dm"
+#include "..\code\__DEFINES\~mod_celadon\tajara.dm"
+#include "..\code\__DEFINES\~mod_celadon\text.dm"
+#include "..\code\__DEFINES\~mod_celadon\time.dm"
+#include "..\code\__DEFINES\~mod_celadon\traits.dm"
+#include "..\code\__DEFINES\~mod_celadon\translation.dm"
+
+#include "..\code\__DEFINES\~mod_celadon\emote.dm"
+#include "..\code\__DEFINES\~mod_celadon\flags.dm"
+
+#include "..\code\__DEFINES\~mod_celadon\mood.dm"
+
+#include "..\code\__DEFINES\~mod_celadon\wallets.dm"

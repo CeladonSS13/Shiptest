@@ -1,3 +1,5 @@
+/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
+	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
 /datum/supply_pack/machinery
 	category = "Industrial Machines & Parts"
 	crate_type = /obj/structure/closet/crate/engineering
@@ -379,3 +381,4 @@
 	desc = "Now YOU can find out: Will! It! Blend?!"
 	cost = 500
 	contains = list(/obj/item/circuitboard/machine/reagentgrinder)
+[/CELADON-DELETE] */

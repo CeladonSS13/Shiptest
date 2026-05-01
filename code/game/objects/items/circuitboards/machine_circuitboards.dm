@@ -591,15 +591,30 @@
 	name = "Smartfridge (Machine Board)"
 	build_path = /obj/machinery/smartfridge
 	req_components = list(/obj/item/stock_parts/matter_bin = 1)
-	var/static/list/fridges_name_paths = list(/obj/machinery/smartfridge = "plant produce",
+	// [CELADON-EDIT] - CELADON_QOL - Bloodbank circuit added
+	// var/static/list/fridges_name_paths = list(/obj/machinery/smartfridge = "plant produce", // CELADON-EDIT - ORIGINAL
+	// 	/obj/machinery/smartfridge/food = "food", // CELADON-EDIT - ORIGINAL
+	// 	/obj/machinery/smartfridge/drinks = "drinks", // CELADON-EDIT - ORIGINAL
+	// 	/obj/machinery/smartfridge/extract = "slimes", // CELADON-EDIT - ORIGINAL
+	// 	/obj/machinery/smartfridge/organ = "organs", // CELADON-EDIT - ORIGINAL
+	// 	/obj/machinery/smartfridge/chemistry = "chems", // CELADON-EDIT - ORIGINAL
+	// 	/obj/machinery/smartfridge/chemistry/virology = "viruses", // CELADON-EDIT - ORIGINAL
+	// 	/obj/machinery/smartfridge/disks = "disks")*/ // CELADON-EDIT - ORIGINAL
+	var/static/list/fridges_name_paths = list(/obj/machinery/smartfridge/bloodbank = "blood",	// CELADON-EDIT - ORIGINAL
 		/obj/machinery/smartfridge/food = "food",
 		/obj/machinery/smartfridge/drinks = "drinks",
 		/obj/machinery/smartfridge/bloodbank = "blood",
 		/obj/machinery/smartfridge/organ = "organs",
 		/obj/machinery/smartfridge/chemistry = "chems",
-		/obj/machinery/smartfridge/chemistry/virology = "viruses",
-		/obj/machinery/smartfridge/disks = "disks")
+		/obj/machinery/smartfridge/disks = "disks",
+		/obj/machinery/smartfridge/drinks = "drinks",
+		/obj/machinery/smartfridge/food = "food",
+		/obj/machinery/smartfridge/organ = "organs",
+		/obj/machinery/smartfridge = "plant produce",
+		/obj/machinery/smartfridge/chemistry/virology = "viruses")
+	// [/CELADON-EDIT]
 	needs_anchored = FALSE
+// Original is below because var then becomes not connectede to circutboard and problems appera
 
 /obj/item/circuitboard/machine/smartfridge/Initialize(mapload, new_type)
 	if(new_type)
@@ -690,6 +705,9 @@
 		/obj/machinery/vending/sovietsoda = "BODA",
 		/obj/machinery/vending/security = "SecTech",
 		/obj/machinery/vending/modularpc = "Deluxe Silicate Selections",
+// [CELADON-ADD] - CELADON_BALANCE - Универсальная плата вендоров
+		/obj/machinery/vending/mining_equipment = "Mining Equipment",
+// [/CELADON-ADD]
 		/obj/machinery/vending/custom = "Custom Vendor")
 
 /obj/item/circuitboard/machine/vendor/attackby(obj/item/I, mob/user, params)

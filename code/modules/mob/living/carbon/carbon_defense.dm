@@ -62,6 +62,10 @@
 					if(get_active_held_item() == I) //if our attack_hand() picks up the item...
 						visible_message(span_warning("[src] catches [I]!"), \
 										span_userdanger("You catch [I] in mid-air!"))
+						// [CELADON-ADD]
+						update_inv_hands()
+						I.transform = initial(I.transform)
+						// [/CELADON-ADD]
 						throw_mode_off(THROW_MODE_TOGGLE)
 						return 1
 	..()
@@ -114,7 +118,7 @@
 
 	var/extra_wound_details = ""
 
-	if(I.damtype != STAMINA && hit_bodypart.can_dismember())
+	if(I.damtype == BRUTE && istype(hit_bodypart, /obj/item/bodypart) && hit_bodypart.can_dismember()) // [CELADON-EDIT] - FIXES_RUNTIMES - Проверяем не только конкретный параметр у хит бодипарт, но и самого родителя на наличие
 
 		var/mangled_state = hit_bodypart.get_mangled_state()
 
@@ -632,7 +636,7 @@
 	return embeds
 
 
-/mob/living/carbon/flash_act(intensity = 1, override_blindness_check = 0, affect_silicon = 0, visual = 0)
+/mob/living/carbon/flash_act(intensity = 1, override_blindness_check = 0, affect_silicon = 0, visual = 0, type = /atom/movable/screen/fullscreen/flash, length = 25) // [CELADON-EDIT]
 	var/obj/item/organ/eyes/eyes = getorganslot(ORGAN_SLOT_EYES)
 	if(!eyes) //can't flash what can't see!
 		return

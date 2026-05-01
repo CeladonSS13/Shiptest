@@ -1,3 +1,4 @@
+#ifndef MINIMAL
 SUBSYSTEM_DEF(overmap)
 	name = "Overmap"
 	wait = 10
@@ -57,8 +58,8 @@ SUBSYSTEM_DEF(overmap)
 	dynamic_encounters = list()
 	events = list()
 
-	var/list/sector_types = pick(subtypesof(/datum/overmap_star_system/safezone))
-
+	// [CELADON-EDIT] - Спасибо, пожалуй откажемся от 2 сектора
+	var/list/sector_types = pick(subtypesof(/datum/overmap_star_system/shiptest/elysium))
 	if(fexists(SAFEZONE_OVERRIDE_FILEPATH))
 		var/file_text = trim_right(file2text(SAFEZONE_OVERRIDE_FILEPATH)) // trim_right because there's often a trailing newline
 		var/datum/overmap_star_system/safezone/potential_type = text2path(file_text)
@@ -67,9 +68,8 @@ SUBSYSTEM_DEF(overmap)
 		else
 			sector_types = potential_type
 		fdel(SAFEZONE_OVERRIDE_FILEPATH) // don't want it to affect 2 rounds in a row.
-
-	safe_system = create_new_star_system(new sector_types)
-	wild_system = create_new_star_system (new /datum/overmap_star_system/shiptest)
+	default_system = create_new_star_system(new sector_types)
+	// [/CELADON-EDIT]
 	return ..()
 
 /datum/controller/subsystem/overmap/proc/spawn_new_star_system(datum/overmap_star_system/system_to_spawn=/datum/overmap_star_system)
@@ -78,6 +78,7 @@ SUBSYSTEM_DEF(overmap)
 	return create_new_star_system(new system_to_spawn)
 
 /datum/controller/subsystem/overmap/fire()
+#ifndef NOOVERMAP
 	for(var/datum/overmap_star_system/current_system as anything in tracked_star_systems)
 		if(!current_system.encounters_refresh)
 			continue
@@ -89,6 +90,7 @@ SUBSYSTEM_DEF(overmap)
 				E.apply_effect()
 				if(MC_TICK_CHECK)
 					return
+#endif
 
 /**
  * Gets the parent overmap object (e.g. the planet the atom is on) for a given atom.
@@ -258,9 +260,11 @@ SUBSYSTEM_DEF(overmap)
 	if(our_spawn_location)
 		system_to_spawn_in = our_spawn_location.current_overmap
 
-	if(!ship_loc && template.space_spawn)
+	// [CELADON-EDIT] - FIXES_SPAWN_SHIP - Изменено, так как корабли с параметром space-spawn: true всё равно спавнились на аванпосту. Изменен порядок приоритетов
+	if(template.space_spawn)
 		ship_loc = null
-	else
+	else if(!ship_loc)
+	// [/CELADON-EDIT]
 		ship_loc = SSovermap.outposts[1]
 
 	ship_spawning = TRUE
@@ -386,10 +390,16 @@ SUBSYSTEM_DEF(overmap)
 	outposts = list()
 	events = list()
 
+// CELADON EDIT START
+#ifdef NOOVERMAP
+	size = 8
+#else
 	if(isnull(dynamic_probabilities))
 		dynamic_probabilities = list()
 		for(var/datum/planet_type/planet_type as anything in subtypesof(/datum/planet_type))
 			dynamic_probabilities[initial(planet_type.planet)] = initial(planet_type.weight)
+#endif
+// CELADON EDIT END
 
 	if(!generator_type)
 		generator_type = CONFIG_GET(string/overmap_generator_type)
@@ -462,6 +472,7 @@ SUBSYSTEM_DEF(overmap)
  * The proc that creates all the objects on the overmap, split into seperate procs for redundancy.
  */
 /datum/overmap_star_system/proc/create_map()
+#ifndef NOOVERMAP
 	switch(generator_type)
 		if(OVERMAP_GENERATOR_SOLAR)
 			spawn_events_in_orbits()
@@ -469,6 +480,7 @@ SUBSYSTEM_DEF(overmap)
 			spawn_events()
 
 	spawn_ruin_levels()
+#endif
 
 	if(has_outpost)
 		spawn_outpost()
@@ -607,6 +619,9 @@ SUBSYSTEM_DEF(overmap)
 		QUADRANT_MAP_SIZE
 	)
 
+	// [CELADON-ADD] - CELADON_FIXES
+	dynamic_datum.stop_countdown()
+	// [/CELADON-ADD]
 	vlevel.reserve_margin(QUADRANT_SIZE_BORDER)
 
 	mapgen.pre_generation(dynamic_datum)
@@ -614,7 +629,6 @@ SUBSYSTEM_DEF(overmap)
 	// the generataed turfs start unpopulated (i.e. no flora / fauna / etc.). we add that AFTER placing the ruin, relying on the ruin's areas to determine what gets populated
 	log_shuttle("SSOVERMAP: START_DYN_E: RUNNING MAPGEN REF [REF(mapgen)] FOR VLEV [vlevel.id] OF TYPE [mapgen.type]")
 	mapgen.generate_turfs(vlevel.get_unreserved_block())
-
 	var/list/ruin_turfs = list()
 	var/list/ruin_templates = list()
 	if(used_ruin)
@@ -623,7 +637,10 @@ SUBSYSTEM_DEF(overmap)
 				vlevel.low_x+6 + vlevel.reserved_margin,
 				vlevel.high_x-used_ruin.width-6 - vlevel.reserved_margin
 			),
-			vlevel.high_y-used_ruin.height-6 - vlevel.reserved_margin,
+			// [CELADON-EDIT] - CELADON_MAP_EXPANSION - Координаты спавна руин
+			// vlevel.high_y-used_ruin.height-6 - vlevel.reserved_margin,	// ORIGINAL
+			vlevel.high_y - used_ruin.height - 60 - vlevel.reserved_margin,
+			// [/CELADON-EDIT]
 			vlevel.z_value
 		)
 		used_ruin.load(ruin_turf)
@@ -656,10 +673,28 @@ SUBSYSTEM_DEF(overmap)
 		)
 	// now we need to offset to account for the first dock
 	var/turf/secondary_docking_turf = locate(
-		primary_docking_turf.x+RESERVE_DOCK_MAX_SIZE_LONG+RESERVE_DOCK_DEFAULT_PADDING,
+		// [CELADON-EDIT] - CELADON_MAP_EXPANSION - Смещение док порта
+		// primary_docking_turf.x+RESERVE_DOCK_MAX_SIZE_LONG+RESERVE_DOCK_DEFAULT_PADDING,
+		// primary_docking_turf.y,
+		primary_docking_turf.x + 60 + RESERVE_DOCK_MAX_SIZE_LONG + RESERVE_DOCK_DEFAULT_PADDING,
+		primary_docking_turf.y + 75 + RESERVE_DOCK_MAX_SIZE_LONG + RESERVE_DOCK_DEFAULT_PADDING,
+		// [/CELADON-EDIT]
+		primary_docking_turf.z
+		)
+
+	// [CELADON-ADD] - CELADON_MAP_EXPANSION - Добавление координат для док портов
+	var/turf/third_docking_turf = locate(
+		primary_docking_turf.x + 60 + RESERVE_DOCK_MAX_SIZE_LONG + RESERVE_DOCK_DEFAULT_PADDING,
 		primary_docking_turf.y,
 		primary_docking_turf.z
 		)
+
+	var/turf/fourth_docking_turf = locate(
+		primary_docking_turf.x,
+		primary_docking_turf.y + 75 + RESERVE_DOCK_MAX_SIZE_LONG + RESERVE_DOCK_DEFAULT_PADDING,
+		primary_docking_turf.z
+		)
+	// [/CELADON-ADD]
 
 	var/list/docking_ports = list()
 
@@ -683,46 +718,27 @@ SUBSYSTEM_DEF(overmap)
 	secondary_dock.adjust_dock_for_landing = TRUE
 	docking_ports += secondary_dock
 
-	if(!used_ruin)
-		// no ruin, so we can make more docks upward
-		var/turf/tertiary_docking_turf = locate(
-			primary_docking_turf.x,
-			primary_docking_turf.y+RESERVE_DOCK_MAX_SIZE_SHORT+RESERVE_DOCK_DEFAULT_PADDING,
-			primary_docking_turf.z
-		)
-		// rinse and repeat
-		var/turf/quaternary_docking_turf = locate(
-			secondary_docking_turf.x,
-			secondary_docking_turf.y+RESERVE_DOCK_MAX_SIZE_SHORT+RESERVE_DOCK_DEFAULT_PADDING,
-			secondary_docking_turf.z
-		)
+	// [CELADON-ADD] - CELADON_MAP_EXPANSION - Создание док порта исходя из ранее заданных координат
+	var/obj/docking_port/stationary/third_dock = new(third_docking_turf)
+	third_dock.dir = NORTH
+	third_dock.name = "[encounter_name] docking location #3"
+	third_dock.height = RESERVE_DOCK_MAX_SIZE_SHORT
+	third_dock.width = RESERVE_DOCK_MAX_SIZE_LONG
+	third_dock.dheight = 0
+	third_dock.dwidth = 0
+	third_dock.adjust_dock_for_landing = TRUE
+	docking_ports += third_dock
 
-		var/obj/docking_port/stationary/tertiary_dock = new(tertiary_docking_turf)
-		tertiary_dock.dir = NORTH
-		tertiary_dock.name = "[encounter_name] docking location #3"
-		tertiary_dock.height = RESERVE_DOCK_MAX_SIZE_SHORT
-		tertiary_dock.width = RESERVE_DOCK_MAX_SIZE_LONG
-		tertiary_dock.dheight = 0
-		tertiary_dock.dwidth = 0
-		tertiary_dock.adjust_dock_for_landing = TRUE
-		docking_ports += tertiary_dock
-
-		var/obj/docking_port/stationary/quaternary_dock = new(quaternary_docking_turf)
-		quaternary_dock.dir = NORTH
-		quaternary_dock.name = "[encounter_name] docking location #4"
-		quaternary_dock.height = RESERVE_DOCK_MAX_SIZE_SHORT
-		quaternary_dock.width = RESERVE_DOCK_MAX_SIZE_LONG
-		quaternary_dock.dheight = 0
-		quaternary_dock.dwidth = 0
-		quaternary_dock.adjust_dock_for_landing = TRUE
-		docking_ports += quaternary_dock
-
-	else // we've spawned a ruin and are now checking for any docks that it has
-		for(var/obj/docking_port/stationary/port as obj in SSshuttle.stationary)
-			if(port.virtual_z() == vlevel.id)
-				if(port in docking_ports)
-					continue
-				docking_ports += port
+	var/obj/docking_port/stationary/fourth_dock = new(fourth_docking_turf)
+	fourth_dock.dir = NORTH
+	fourth_dock.name = "[encounter_name] docking location #4"
+	fourth_dock.height = RESERVE_DOCK_MAX_SIZE_SHORT
+	fourth_dock.width = RESERVE_DOCK_MAX_SIZE_LONG
+	fourth_dock.dheight = 0
+	fourth_dock.dwidth = 0
+	fourth_dock.adjust_dock_for_landing = TRUE
+	docking_ports += fourth_dock
+	// [/CELADON-ADD]
 
 
 	return list(mapzone, docking_ports, ruin_turfs, ruin_templates)

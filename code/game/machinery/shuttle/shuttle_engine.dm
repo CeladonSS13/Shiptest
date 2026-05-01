@@ -15,7 +15,10 @@
 	var/thrust = 0
 	///Whether this engine is actively providing thrust to the ship
 	var/thruster_active = FALSE
-
+// [CELADON-ADD] - CELADON FIXES
+	/// Определяем тип двигателя
+	var/engine_type = "generic"  //# Добавлено новое свойство для типа двигателя
+// [/CELADON-ADD]
 /**
  * Uses up a specified percentage of the fuel cost, and returns the amount of thrust if successful.
  * * percentage - The percentage of total thrust that should be used
@@ -23,6 +26,12 @@
 /obj/machinery/power/shuttle/engine/proc/burn_engine(percentage = 100, seconds_per_tick)
 	update_icon_state()
 	return FALSE
+
+// [CELADON-ADD] - CELADON FIXES
+/obj/machinery/power/shuttle/engine/proc/plasma_thrust(percentage = 100, deltatime)
+	update_icon_state()
+	return FALSE
+// [/CELADON-ADD]
 
 /**
  * Returns how much "Fuel" is left. (For use with engine displays.)

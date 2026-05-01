@@ -85,6 +85,11 @@
 					span_userdanger("Your neck is punched by [A]!"), span_hear("You hear a sickening sound of flesh hitting flesh!"), COMBAT_MESSAGE_RANGE, A)
 	to_chat(A, span_danger("You punch [D]'s neck!"))
 	D.adjustStaminaLoss(60)
+	//[CELADON-ADD] Adds a 100% disarm change to Pressure
+	var/obj/item/I = D.get_active_held_item()
+	if(I && D.temporarilyRemoveItemFromInventory(I))
+		A.put_in_inactive_hand(I)
+	//[/CELADON-ADD]
 	playsound(get_turf(A), 'sound/weapons/cqchit1.ogg', 50, TRUE, -1)
 	return TRUE
 
@@ -113,12 +118,40 @@
 						span_userdanger("Your abdomen, neck and back are struck consecutively by [A]!"), span_hear("You hear a sickening sound of flesh hitting flesh!"), COMBAT_MESSAGE_RANGE, A)
 		to_chat(A, span_danger("You strike [D]'s abdomen, neck and back consecutively!"))
 		playsound(get_turf(D), 'sound/weapons/cqchit2.ogg', 50, TRUE, -1)
-		var/obj/item/I = D.get_active_held_item()
-		if(I && D.temporarilyRemoveItemFromInventory(I))
-			A.put_in_hands(I)
+		//[CELADON-REMOVE] - Moves 100% disarm chance from consecutive to presusre
+		//var/obj/item/I = D.get_active_held_item()
+		// if(I && D.temporarilyRemoveItemFromInventory(I))
+		// 	A.put_in_hands(I)
+		//[/CELADON-REMOVE]
 		D.adjustStaminaLoss(50)
 		D.apply_damage(25, A.dna.species.attack_type)
+		//[CELADON-ADD] - reworks consecutive combo
+		if(A != D)
+			mini_slam(A,D)
+		//[/CELADON-ADD]
 	return TRUE
+
+//[CELADON-ADD] - reworks consecutive combo
+/datum/martial_art/cqc/proc/mini_slam(mob/living/carbon/human/A, mob/living/carbon/human/D, list/attacked_mobs = list())
+	if(!can_use(A))
+		return FALSE
+	D.visible_message(span_danger("[A] dashes to [D] and slams them into the ground!"), \
+					span_userdanger("You're slammed into the ground by [A]!"), span_hear("You hear a sickening sound of flesh hitting flesh!"), null, A)
+	to_chat(A, span_danger("You dash and slam [D] into the ground!"))
+	playsound(get_turf(A), 'sound/weapons/cqchit1.ogg', 50, TRUE, -1)
+	D.apply_damage(10, BRUTE)
+	D.Paralyze(40)
+	log_combat(A, D, "mini slammed (CQC)")
+	var/slowdown_mod = A.equipped_speed_mods()*3
+	for(var/mob/living/carbon/M in oviewers(5,A))
+		if(istype(M,/mob/living/carbon/human) && (M != D) && (!attacked_mobs.Find(M)) && (get_dist(A,M) <= 5) && (!M.stat) && (!M.IsParalyzed()) && (M.mind))
+			walk_to(A,M,1,slowdown_mod)
+			sleep(5*slowdown_mod)
+			mini_slam(A,M,attacked_mobs)
+			attacked_mobs.Add(M)
+			break
+	return TRUE
+//[/CELADON-ADD]
 
 /datum/martial_art/cqc/grab_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
 	if(A.a_intent == INTENT_GRAB && A!=D && can_use(A)) // A!=D prevents grabbing yourself
@@ -185,7 +218,7 @@
 			to_chat(A, span_danger("You strike [D]'s jaw, leaving [D.p_them()] disoriented!"))
 			playsound(get_turf(D), 'sound/weapons/cqchit1.ogg', 50, TRUE, -1)
 			if(I && D.temporarilyRemoveItemFromInventory(I))
-				A.put_in_hands(I)
+				A.put_in_inactive_hand(I) //[CELADON-EDIT] - A.put_in_hands(I) -> A.put_in_inactive_hand(I)
 			D.set_timed_status_effect(4 SECONDS, /datum/status_effect/jitter, only_if_higher = TRUE)
 			D.apply_damage(5, A.dna.species.attack_type)
 	else
@@ -218,7 +251,7 @@
 	to_chat(usr, "[span_notice("CQC Kick")]: Harm Harm. Knocks opponent away. Knocks out stunned or knocked down opponents.")
 	to_chat(usr, "[span_notice("Restrain")]: Grab Grab. Locks opponents into a restraining position, disarm to knock them out with a chokehold.")
 	to_chat(usr, "[span_notice("Pressure")]: Disarm Grab. Decent stamina damage.")
-	to_chat(usr, "[span_notice("Consecutive CQC")]: Disarm Disarm Harm. Mainly offensive move, huge damage and decent stamina damage.")
+	to_chat(usr, "[span_notice("Consecutive CQC")]: Disarm Disarm Harm. Crowd control move. Allows to dash from target to target, knocking each one down.") //[CELADON-EDIT] - Desc update
 
 	to_chat(usr, "<b><i>In addition, by having your throw mode on when being attacked, you enter an active defense mode where you have a chance to block and sometimes even counter attacks done to you.</i></b>")
 
@@ -230,4 +263,12 @@
 /datum/martial_art/cqc/under_siege/can_use(mob/living/carbon/human/H) //this is used to make chef CQC only work in kitchen
 	if(!istype(get_area(H), /area/ship/crew/canteen/kitchen))
 		return FALSE
+	// [CELADON-ADD] - CELADON_GHOST_ROLES - Повар может использовать CQC дополнительно в ботанике, кафитерии и баре
+	if(!istype(get_area(H), /area/outpost/crew/garden))
+		return FALSE
+	if(!istype(get_area(H), /area/outpost/crew/canteen))
+		return FALSE
+	if(!istype(get_area(H), /area/outpost/crew/bar))
+		return FALSE
+	// [/CELADON-ADD]
 	return ..()

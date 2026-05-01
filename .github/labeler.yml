@@ -1,79 +1,110 @@
-Admin:
-  - any-glob-to-any-file:
-    - "code/modules/admin/**"
-
-# Any file within the config subfolder
-Config:
+# Changes to a .dmm or anything in the _map subfolder
+'🗺 Маппинг 🗺':
 - changed-files:
   - any-glob-to-any-file:
-    - "config/**"
+    - '**/*.dmm'
+    - '_maps/**'
 
-Dependencies:
+'🚀 Корабли 🚀':
 - changed-files:
   - any-glob-to-any-file:
-    - "**/package.json"
-    - "**/package-lock.json"
-    - "**/yarn.lock"
+    - '_maps/shuttles/**'
+    - '_maps/configs/**'
+    - '_maps/_mod_celadon/shuttles/**'
+    - '_maps/_mod_celadon/configs/**'
 
-# When the .DME is changed
-DME Edit:
+'🏔 Руинки 🏔':
 - changed-files:
   - any-glob-to-any-file:
-    - "./*.dme"
-    - "**/*.dme"
+    - '_maps/RandomRuins/**'
+    - 'code/datums/ruins/**'
+    - '_maps/_mod_celadon/RandomRuins/**'
 
 # Any .dmi changes
-Sprites:
+'🎨 Спрайты 🎨':
 - changed-files:
   - any-glob-to-any-file:
-    - "**/*.dmi"
+    - '**/*.dmi'
 
-# Changes to a .dm or anything in the code subfolder
-Code Change:
+# Any changes if not in modulare folder
+'🪓 ТРОГАЛИ CORE-CODE 🪓':
 - changed-files:
   - any-glob-to-any-file:
-    - "**/*.dm"
-    - "code/**"
+    - '_maps/map_files/**'
+    - '_maps/shuttles/**'
+    - 'code/**'
+    - 'icons/**'
+    - 'sound/**'
 
-# Changes to a .dmm or anything in the _map subfolder
-Map Change:
+# Any sounds changes
+'🔊 Звуки 🔊':
 - changed-files:
   - any-glob-to-any-file:
-    - "**/*.dmm"
-    - "_maps/**"
-
-Ship:
-- changed-files:
-  - any-glob-to-any-file:
-    - "_maps/shuttles/**"
-    - "_maps/configs/**"
-
-Ruin:
-- changed-files:
-  - any-glob-to-any-file:
-    - "_maps/RandomRuins/**"
-    - "code/datums/ruins/**"
-
-# Any changes to .ogg files are marked as sound
-Sound:
-- changed-files:
-  - any-glob-to-any-file:
-    - "**/*.ogg"
+    - '**/*.aif'
+    - '**/*.aiff'
+    - '**/*.it'
+    - '**/*.mid'
+    - '**/*.midi'
+    - '**/*.mod'
+    - '**/*.mp3'
+    - '**/*.ogg'
+    - '**/*.oxm'
+    - '**/*.raw'
+    - '**/*.s3m'
+    - '**/*.wma'
+    - '**/*.wav'
+    - '**/*.xm'
 
 # Changes to the SQL subfolder
-SQL:
+'📚 SQL 📚':
 - changed-files:
   - any-glob-to-any-file:
-    - "SQL/**"
+    - 'SQL/**'
 
 # Changes to the tgui subfolder
-tgui:
+'💬 TGUI':
 - changed-files:
   - any-glob-to-any-file:
-    - "tgui/**"
+    - 'tgui/**'
+
+# Changes to the config subfolder
+'🔮 Конфиги 🔮':
+- changed-files:
+  - any-glob-to-any-file:
+    - 'config/**/*'
+    - 'config/example/**/*'
+
+# Changes to a .dm or anything in the code subfolder
+'🧱 Код 🧱':
+- changed-files:
+  - any-glob-to-any-file:
+    - '**/*.dm'
 
 # Changes to the .Github subfolder
-Github:
+'🏭 Github 🏭':
 - changed-files:
   - any-glob-to-any-file:
-    - ".github/**"
+    - '.github/**'
+    - '.github/**/*'
+    - '.vscode/**/*'
+    - 'docs/**/*'
+    - 'scripts/**/*'
+    - 'test/**/*'
+    - 'tools/**/*'
+    - '.codebeatignore'
+    - '.codebeatsettings'
+    - '.editorconfig'
+    - '.git*'
+    - 'biome.json'
+    - 'libmysql.dll'
+    - 'LICENSE'
+    - 'README.md'
+    - 'SpacemanDMM.toml'
+
+# If anyone wants to update the Russian localization tools or wiki
+'🏴‍☠️ Локализация 🏴‍☠️':
+- changed-files:
+  - any-glob-to-any-file:
+    - 'code/__DEFINES/~mod_celadon/translation.dm'
+    - '.github/TRANSLATION.md'
+

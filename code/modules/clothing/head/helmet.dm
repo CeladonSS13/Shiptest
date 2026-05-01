@@ -170,6 +170,8 @@
 /obj/item/clothing/head/helmet/update_overlays()
 	. = ..()
 	var/mutable_appearance/flashlightlight_overlay
+// [CELADON-EDIT] - Seclite and Google overlay
+/* CELADON-EDIT - ORIGINAL
 	if(!attached_light)
 		return
 	if(attached_light.on)
@@ -177,17 +179,31 @@
 	else
 		flashlightlight_overlay = mutable_appearance(icon, flashlight_state)
 	. += flashlightlight_overlay
+*/
+	if(attached_light)
+		if(attached_light.on)
+			flashlightlight_overlay = mutable_appearance('mod_celadon/_storage_icons/icons/items/clothing/head/seclite_overlay.dmi', "[flashlight_state]_on")
+		else
+			flashlightlight_overlay = mutable_appearance('mod_celadon/_storage_icons/icons/items/clothing/head/seclite_overlay.dmi', flashlight_state)
+		. += flashlightlight_overlay
+	if(content_overlays)
+		for(var/obj/item/I in contents)
+			. += I.get_helmet_overlays_icon()
+	else
+		return
+// [/CELADON-EDIT]
 
 /obj/item/clothing/head/helmet/worn_overlays(isinhands)
 	. = ..()
 	var/mutable_appearance/flashlightlight_overlay
 	if(isinhands)
 		return
+	var/icon/overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/overlay/seclite_overlay.dmi' // CELADON EDIT - Seclite and Google overlay
 	if(attached_light)
 		if(attached_light.on)
-			flashlightlight_overlay = mutable_appearance(mob_overlay_icon, "[flashlight_state]_on")
+			flashlightlight_overlay = mutable_appearance(overlay_icon, "[flashlight_state]_on") // CELADON EDIT
 		else
-			flashlightlight_overlay = mutable_appearance(mob_overlay_icon, flashlight_state)
+			flashlightlight_overlay = mutable_appearance(overlay_icon, flashlight_state) // CELADON EDIT
 		. += flashlightlight_overlay
 	if(content_overlays)
 		for(var/obj/item/I in contents)
@@ -392,7 +408,7 @@
 	desc = "A classic metal helmet."
 	icon_state = "knight_green"
 	item_state = "knight_green"
-	armor = list("melee" = 50, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 80)
+	armor = list("melee" = 50, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 80, "wound" = 20)  // [CELADON-EDIT] - CELADON_BALANCE
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	strip_delay = 80

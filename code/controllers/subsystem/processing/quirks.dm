@@ -30,10 +30,16 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 		list("Bad Touch", "Friendly"),
 		list("Self-Aware", "Congenital Analgesia"),
 		list("Trilingual", "Monolingual"),
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS, IDIOTS_REMOVE_BLACK_LIST
+		list("Jolly", "Depression", "Apathetic", "Hypersensitive"),
+		list("Ananas Affinity", "Ananas Aversion"),
+		list("Clown Fan", "Mime Fan", "RILENA Super Fan"),
+		// [/CELADON-ADD]
 	)
 
 	species_blacklist = list(
 		"Blood Deficiency" = list(SPECIES_IPC, SPECIES_JELLYPERSON, SPECIES_PLASMAMAN, SPECIES_VAMPIRE),
+		"Dwarfism" = list(SPECIES_IPC, SPECIES_KEPORI, SPECIES_VOX, SPECIES_RACHNID), // [CELADON-ADD] - NO_FUN_ALLOWED_SPECIES
 		"Alcohol Tolerance" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
 		"Light Drinker" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
 		"Smoker" = list(SPECIES_IPC, SPECIES_PLASMAMAN),

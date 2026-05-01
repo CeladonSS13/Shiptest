@@ -51,7 +51,9 @@
 	SSpoints_of_interest.make_point_of_interest(token)
 	Rename(name)
 	alter_token_appearance()
+#ifndef NOOVERMAP
 	START_PROCESSING(SSprocessing, src)
+#endif
 
 /datum/overmap/star/Destroy(force, ...)
 	SSpoints_of_interest.remove_point_of_interest(token)
@@ -88,12 +90,14 @@
 /datum/overmap/star/proc/gen_star_name()
 	return "[pick(GLOB.star_names)] [pick(GLOB.greek_letters)]"
 
+/* [CELADON-REMOVE] - CELADON_OVERMAP_ICON - спрайты некросивые получаюца
 /datum/overmap/star/alter_token_appearance()
 	. = ..()
 	if(!custom_color)
 		token.add_atom_colour(current_overmap.hazard_primary_color, FIXED_COLOUR_PRIORITY)
 		return
 	token.add_atom_colour(get_rand_spectral_color(spectral_type, color_vary), FIXED_COLOUR_PRIORITY)
+[/CELADON-REMOVE] */
 
 /datum/overmap/star/proc/get_rand_spectral_color(base_spec, vary_amt = 0)
 	var/adj_spec = base_spec + LERP(-vary_amt, vary_amt, rand())
@@ -183,7 +187,7 @@
 
 /datum/overmap/star/medium/alter_token_appearance()
 	. = ..()
-	token.icon = 'icons/misc/overmap_large.dmi'
+	token.icon = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap_large.dmi' // [CELADON-EDIT] - CELADON_OVERMAP
 	token.bound_height = 64
 	token.bound_width = 64
 	token.pixel_x = -16
@@ -218,7 +222,7 @@
 
 /datum/overmap/star/giant/alter_token_appearance()
 	. = ..()
-	token.icon = 'icons/misc/overmap_larger.dmi'
+	token.icon = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap_larger.dmi' // [CELADON-EDIT] - CELADON_OVERMAP
 	token.bound_height = 96
 	token.bound_width = 96
 	token.pixel_x = -32
@@ -270,21 +274,28 @@
 		STAR_T,
 	)
 	token.cut_overlays()
-	token.icon = 'icons/misc/overmap_larger.dmi'
+	// [CELADON-EDIT] - CELADON_OVERMAP
+	// token.icon = 'icons/misc/overmap_larger.dmi'	// CELADON-EDIT - ORIGINAL
+	token.icon = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap_larger.dmi'
+	// [/CELADON-EDIT]
 	token.bound_height = 96
 	token.bound_width = 96
 	token.pixel_x = -32
 	token.pixel_y = -32
 
-	star_1 = mutable_appearance(icon_state = "binary1")
-	star_2 = mutable_appearance(icon_state = "binary2")
+	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - спрайты некросивые получаюца
+	star_1 = mutable_appearance(icon_state = "binary[rand(1, 3)]")
+	star_2 = mutable_appearance(icon_state = "binary[rand(4, 6)]")
+	// [/CELADON-EDIT]
 
+	/* [CELADON-REMOVE] - CELADON_OVERMAP_ICON - спрайты некросивые получаюца
 	star_1.color = current_overmap.hazard_primary_color
 	star_2.color = current_overmap.hazard_primary_color
 
 	if(custom_color)
 		star_1.color = get_rand_spectral_color(pick(spectral_types), color_vary)
 		star_2.color = get_rand_spectral_color(pick(spectral_types), color_vary)
+	[/CELADON-REMOVE] */
 
 	token.add_overlay(star_1)
 	token.add_overlay(star_2)
@@ -322,7 +333,7 @@
 
 /datum/overmap/star/singularity/alter_token_appearance()
 	. = ..()
-	token.icon = 'icons/misc/overmap_larger.dmi'
+	token.icon = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap_larger.dmi' // [CELADON-EDIT] - CELADON_OVERMAP
 	token.bound_height = 96
 	token.bound_width = 96
 	token.pixel_x = -32
@@ -359,7 +370,7 @@
 
 /datum/overmap/star/pulsar/alter_token_appearance()
 	. = ..()
-	token.icon = 'icons/misc/overmap_larger.dmi'
+	token.icon = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap_larger.dmi' // [CELADON-EDIT] - CELADON_OVERMAP
 	token.bound_height = 96
 	token.bound_width = 96
 	token.pixel_x = -32

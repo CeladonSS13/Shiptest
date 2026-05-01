@@ -118,6 +118,16 @@
 			name = "[pick(GLOB.first_names_male)] [pick(GLOB.last_names)]"
 			desc = "A cardboat cutout of an assistant."
 			icon_state = "cutout_greytide"
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+		if("Clown")
+			name = pick(GLOB.clown_names)
+			desc = "A cardboard cutout of a clown. You get the feeling that it should be in a corner."
+			icon_state = "cutout_clown"
+		if("Mime")
+			name = pick(GLOB.mime_names)
+			desc = "...(A cardboard cutout of a mime.)"
+			icon_state = "cutout_mime"
+		// [/CELADON-ADD]
 		if("Traitor")
 			name = "[pick("Unknown", "Captain")]"
 			desc = "A cardboard cutout of a traitor."

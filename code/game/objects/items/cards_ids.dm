@@ -305,28 +305,56 @@ update_label()
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE)
 	var/anyone = FALSE //Can anyone forge the ID or just syndicate?
 	var/forged = FALSE //have we set a custom name and job assignment, or will we use what we're given when we chameleon change?
+	// [CELADON-ADD] - Adds agent card lock by fingerprint on AltClick
+	var/removed = FALSE
+	var/fingerprint
+	var/datum/action/item_action/chameleon/change/id/chameleon_action
+	// [/CELADON-ADD]
 
 /obj/item/card/id/syndicate/Initialize()
 	. = ..()
-	var/datum/action/item_action/chameleon/change/id/chameleon_action = new(src)
+	chameleon_action = new(src) // [CELADON-EDIT] var/datum/action/item_action/chameleon/change/id/chameleon_action = new(src) -> chameleon_action = new(src)
 	chameleon_action.chameleon_type = /obj/item/card/id
 	chameleon_action.chameleon_name = "ID Card"
 	chameleon_action.initialize_disguises()
 
-/obj/item/card/id/syndicate/afterattack(obj/item/O, mob/user, proximity)
+// [CELADON-ADD] - Adds agent card lock by fingerprint on AltClick
+/obj/item/card/id/syndicate/AltClick(mob/living/carbon/user)
+	. = ..()
+	if(!fingerprint || fingerprint == user.dna.uni_identity)
+		if(!removed)
+			chameleon_action.Remove(user)
+			chameleon_action.chameleon_type = null
+			chameleon_action.chameleon_name = null
+			QDEL_NULL(chameleon_action)
+			removed = !removed
+		else
+			chameleon_action = new(src)
+			chameleon_action.chameleon_type = /obj/item/card/id
+			chameleon_action.chameleon_name = "ID Card"
+			chameleon_action.Grant(user)
+			removed = !removed
+// [/CELADON-ADD]
+
+//[CELADON-EDIT] - FIXES_AGENT_CARD
+/obj/item/card/id/syndicate/afterattack(obj/item/O, mob/living/carbon/user, proximity) // mob/user -> mob/living/carbon/user
 	if(!proximity)
 		return
 	if(istype(O, /obj/item/card/id))
-		var/obj/item/card/id/I = O
-		src.access |= I.access
+		// var/obj/item/card/id/I = O // Переместил вниз, ибо проверка внизу не имеет смсла вообще
+		// src.access |= I.access
 		if(isliving(user) && user.mind)
 			if(user.mind.special_role || anyone)
 				to_chat(usr, span_notice("The card's microscanners activate as you pass it over the ID, copying its access."))
 
-/obj/item/card/id/syndicate/attack_self(mob/user)
+/obj/item/card/id/syndicate/attack_self(mob/living/carbon/user) //[CELADON-EDIT] mob/user -> mob/living/carbon/user
 	if(isliving(user) && user.mind)
 		var/first_use = registered_name ? FALSE : TRUE
-		if(!(user.mind.special_role || anyone)) //Unless anyone is allowed, only syndies can use the card, to stop metagaming.
+		// [CELADON-EDIT] Fixes agent card's mind check from special_role to faction + adds fingerprint check
+		var/list/user_faction_list = user.faction
+		if(!(user_faction_list.Find("[FACTION_PLAYER_SYNDICATE]")) && (!fingerprint || fingerprint != user.dna.uni_identity))
+		//if(!(user.mind.special_role || anyone)) //Unless anyone is allowed, only syndies can use the card, to stop metagaming.
+		// [CELADON-EDIT]
 			if(first_use) //If a non-syndie is the first to forge an unassigned agent ID, then anyone can forge it.
 				anyone = TRUE
 			else
@@ -336,6 +364,7 @@ update_label()
 		if(user.incapacitated())
 			return
 		if(popup_input == "Forge/Reset" && !forged)
+			fingerprint = user.dna.uni_identity // [CELADON-ADD] - Adds agent card lock with fingerprint
 			var/input_name = stripped_input(user, "What name would you like to put on this card? Leave blank to randomise.", "Agent card name", registered_name ? registered_name : (ishuman(user) ? user.real_name : user.name), MAX_NAME_LEN)
 			input_name = reject_bad_name(input_name)
 			if(!input_name)
@@ -357,20 +386,23 @@ update_label()
 
 			registered_name = input_name
 			assignment = target_occupation
+			forged = TRUE // [CELADON-ADD] - FIXES_AGENT_CARD_NAME
 			update_label()
-			forged = TRUE
+			// forged = TRUE // [CELADON-REMOVE] - FIXES_AGENT_CARD_NAME - Поднял выше ДО применения изменений
 			to_chat(user, span_notice("You successfully forge the ID card."))
 			log_game("[key_name(user)] has forged \the [initial(name)] with name \"[registered_name]\" and occupation \"[assignment]\".")
 
 			return
 		else if (popup_input == "Forge/Reset" && forged)
+			fingerprint = null // [CELADON-ADD] - Adds agent card lock with fingerprint
 			registered_name = initial(registered_name)
 			assignment = initial(assignment)
 			faction_icon = initial(faction_icon)
 			job_icon = initial(job_icon)
+			forged = FALSE // [CELADON-ADD] - FIXES_AGENT_CARD_NAME
 			log_game("[key_name(user)] has reset \the [initial(name)] named \"[src]\" to default.")
 			update_label()
-			forged = FALSE
+			// forged = FALSE // [CELADON-REMOVE] - FIXES_AGENT_CARD_NAME - Поднял выше ДО применения изменений
 			to_chat(user, span_notice("You successfully reset the ID card."))
 			return
 	return ..()

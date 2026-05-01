@@ -48,20 +48,32 @@
 		active = TRUE
 		playsound(src.loc, 'sound/effects/empulse.ogg', 100, TRUE)
 		visible_message(span_warning("The [src.name] finishes charging!"), blind_message = span_hear("You hear a low hum fade in."))
+		// [CELADON-ADD] - CELADON_GRAVGEN
+		soundloop.start()
+		set_light(l_power = 0.5)
+		// [/CELADON-ADD]
 	else
 		visible_message(span_danger("The [src.name] shuts down due to lack of power!"), blind_message = span_hear("You hear a low hum fade out."))
 		active = FALSE
 		log_game("[src] deactivated due to lack of power at [AREACOORD(src)]", INVESTIGATE_GRAVITY)
+		// [CELADON-ADD] - CELADON_GRAVGEN
+		soundloop.stop()
+		set_light(l_power = 0)
+		// [/CELADON-ADD]
 	update_appearance()
 
 /obj/machinery/power/ship_gravity/update_overlays()
 	. = ..()
-	var/mutable_appearance/charge_state
+	// [CELADON-EDIT] - CELADON_GRAVGEN
 	if(active)
-		charge_state = mutable_appearance(icon, "charge_active")
+		SSvis_overlays.add_vis_overlay(src, icon, "charge_active", layer, plane, dir)
+		SSvis_overlays.add_vis_overlay(src, icon, "charge_active", layer, EMISSIVE_PLANE, dir)
+		. += "charge_active"
 	if(charge < 5)
-		charge_state = mutable_appearance(icon, "charge_[charge]")
-	. += charge_state
+		SSvis_overlays.add_vis_overlay(src, icon, "charge_[charge]", layer, plane, dir)
+		SSvis_overlays.add_vis_overlay(src, icon, "charge_[charge]", layer, EMISSIVE_PLANE, dir)
+		. += "charge_[charge]"
+	// [/CELADON-EDIT]
 
 /obj/machinery/power/ship_gravity/examine(mob/user)
 	. = ..()

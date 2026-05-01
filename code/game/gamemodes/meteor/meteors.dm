@@ -39,12 +39,16 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	for(var/i = 0; i < number; i++)
 		spawn_meteor(meteortypes)
 
-/proc/spawn_meteor(list/meteortypes, datum/virtual_level/vlevel, padding = MAP_EDGE_PAD, obj/docking_port/mobile/shuttle_port)
+/proc/spawn_meteor(list/meteortypes, datum/virtual_level/vlevel, padding = MAP_EDGE_PAD, obj/docking_port/mobile/shuttle_port, direc = "none") // [CELADON-EDIT] - CELADON_OVERMAP_COLLISION - Это вагабонд насрал
 	var/turf/pickedstart
 	var/turf/pickedgoal
 	var/max_i = 10//number of tries to spawn meteor.
 	while(!isspaceturf(pickedstart))
 		var/startSide = pick(GLOB.cardinals)
+		// [CELADON-ADD] - CELADON_OVERMAP_COLLISION - Это вагабонд насрал
+		if(direc != "none")
+			startSide = direc
+		// [/CELADON-ADD]
 		if(shuttle_port)
 			startSide = shuttle_port.preferred_direction
 
@@ -230,6 +234,21 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 /obj/effect/meteor/big/meteor_effect()
 	..()
 	explosion(src.loc, 1, 2, 3, 4, 0)
+
+// [CELADON-ADD] - CELADON_OVERMAP_COLLISION - Это вагабонд насрал
+//Invisible
+/obj/effect/meteor/invisible
+	name = "G-Imact"
+	alpha = 0
+	hits = 6
+	heavy = 1
+	dropamt = 4
+	threat = 10
+
+/obj/effect/meteor/invisible/meteor_effect()
+	..()
+	explosion(src.loc, 1, 2, 3, 4, 0)
+// [/CELADON-ADD]
 
 //Flaming meteor
 /obj/effect/meteor/flaming

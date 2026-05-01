@@ -97,15 +97,32 @@
 	desc = "A thruster that burns plasma from an adjacent heater to create thrust."
 	circuit = /obj/item/circuitboard/machine/shuttle/engine/plasma
 	fuel_type = GAS_PLASMA
+	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем движки
+	// fuel_use = 20
+	// thrust = 25 // CELADON-EDIT - ORIGINAL
 	fuel_use = 20
-	thrust = 25
+	thrust = 9
+	// [/CELADON-EDIT]
+// [CELADON-ADD] - CELADON_FIXES
+	engine_type = "plasma"  // Явно указываем, что это плазменный двигатель
+
+/obj/machinery/power/shuttle/engine/fueled/plasma/plasma_thrust(percentage = 100, deltatime)
+	. = ..()  // Вызов родительского метода, если он существует
+	var/obj/machinery/atmospherics/components/unary/shuttle/heater/resolved_heater = attached_heater?.resolve()
+	var/true_percentage = min(resolved_heater.return_gas() / fuel_use , percentage / 100)  //Выбираем меньшее доступное значение , запрещаем летать на пустом баке
+	return thrust * true_percentage  // Возвращаем тягу, умноженную на рассчитанный процент мощности
+// [/CELADON-ADD]
 
 /obj/machinery/power/shuttle/engine/fueled/expulsion
 	name = "expulsion thruster"
 	desc = "A thruster that expels gas inefficiently to create thrust."
 	circuit = /obj/item/circuitboard/machine/shuttle/engine/expulsion
+	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем движки
+	// fuel_use = 80
+	// thrust = 15 // CELADON-EDIT - ORIGINAL
 	fuel_use = 80
-	thrust = 15
+	thrust = 5
+	// [/CELADON-EDIT] - кто вообще видел эти движки в игре ???
 	//All fuel code already handled
 
 /**
@@ -219,8 +236,12 @@
 /obj/machinery/power/shuttle/engine/electric/bad
 	name = "Outdated Ion Thruster"
 	circuit = /obj/item/circuitboard/machine/shuttle/engine/electric/bad
-	thrust = 2
+	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем движки
+	// thrust = 2
+	// power_per_burn = 70000 // CELADON-EDIT - ORIGINAL
+	thrust = 1
 	power_per_burn = 70000
+	// [/CELADON-EDIT]
 
 // This thruster is the same as a standard thruster, but it starts with T3 parts
 /obj/machinery/power/shuttle/engine/electric/premium

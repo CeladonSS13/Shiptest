@@ -1,0 +1,20 @@
+name: 'Discord Notification'
+on:
+  pull_request_target:
+    types: [closed]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
+    steps:
+      - name: Send Discord PullRequest Notification
+        uses: stegzilla/discord-notify@v4
+        with:
+          webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
+          title: "#${{ github.event.pull_request.number }}: ${{ github.event.pull_request.title }}"
+          title_url: ${{ github.event.pull_request.html_url }}
+          message: "${{ github.event.pull_request.body }} \n**Ветка:**  ${{ github.event.pull_request.head.repo.name }}: ${{ github.event.pull_request.head.ref }} **=>** ${{ github.event.pull_request.base.repo.name }}: ${{ github.event.pull_request.base.ref }} \n**Автор:** ${{ github.event.pull_request.user.login }}\n${{ github.event.pull_request.html_url }}"
+          include_image: true
+          avatar_url: ${{ github.event.pull_request.user.avatar_url }}
+          username: 'Shiptest: Changelog'

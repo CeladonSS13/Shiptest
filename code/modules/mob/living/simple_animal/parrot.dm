@@ -126,7 +126,11 @@
 	if(ears)
 		QDEL_NULL(ears)
 	if(held_item)
-		QDEL_NULL(held_item)
+		// [CELADON-EDIT] - FIXES_PARROT_DROP_ITEM
+		// QDEL_NULL(held_item)	// ORIGINAL
+		held_item.forceMove(drop_location())
+		held_item = null
+		// [/CELADON-EDIT]
 
 	set_perch(null)
 	set_interest(null)

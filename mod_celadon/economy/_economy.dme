@@ -1,0 +1,21 @@
+#ifndef MODPACK_CELADON_ECONOMY
+#define MODPACK_CELADON_ECONOMY
+
+#include "_economy.dm"
+
+#include "code/supply_pack.dm"
+
+#include "code\blackmarket\clothing.dm"
+#include "code\blackmarket\misc.dm"
+
+#include "code/exports/canister.dm"
+#include "code/exports/gear.dm"
+#include "code/exports/large_objects.dm"
+#include "code/exports/seeds.dm"
+#include "code/exports/weapons.dm"
+
+#include "code/missions/acquire_mission.dm"
+
+#include "code/vending.dm"
+
+#endif

@@ -135,7 +135,7 @@
 	return copy
 
 // This is the meat function for making radios hear vocal transmissions.
-/datum/signal/subspace/vocal/broadcast()
+/datum/signal/subspace/vocal/broadcast()		// MOD_CELADON-CHANGE -> mod_celadon\radio_syndicate\code\broadcasting.dm
 	set waitfor = FALSE
 
 	// Perform final composition steps on the message.
@@ -236,7 +236,7 @@
 			interference_level += data["interference"]
 			///If we are an observer, we get the unaltered messsage along with a % of how much of the message is corrupted to non-ghosts.
 			if(isobserver(hearer))
-				var/temp_message = message + " ([data["interference"]]% interference)"
+				var/temp_message = message + " ([data["interference"]]% радиопомехи)" // [CELADON-EDIT] - Interference -> Радио Помехи
 				var/temp_rendered = virt.compose_message(virt, language, message, frequency, spans)
 				hearer.Hear(temp_rendered, virt, language, temp_message, frequency, spans, message_mods, radiosound)
 				continue
@@ -270,7 +270,7 @@
 	var/lang_name = data["language"]
 	var/log_text = "\[[get_radio_name(frequency)]\] [spans_part]\"[message]\" (language: [lang_name])"
 	if(data["interference"])
-		log_text += " ([data["interference"]]% interference)"
+		log_text += " ([data["interference"]]% радиопомехи)" // [CELADON-EDIT] - Interference -> Радио Помехи
 
 	var/mob/source_mob = virt.source
 	if(istype(source_mob))

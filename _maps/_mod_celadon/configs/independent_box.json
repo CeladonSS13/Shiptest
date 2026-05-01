@@ -1,0 +1,38 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Box-class Hospital Ship",
+	"map_short_name": "Box",
+	"description": "Судно класса 'Box' - ранний образец нескольких современных технологий судостроения, которые с тех пор стали стандартом. По сути, он представляет собой крошечный космический госпиталь, оснащенный медицинским оборудованием, которое зачастую трудно достать в пространстве Фронтира. Как ни странно, боксы оснащены медицинскими криопробирками, которые стали особой редкостью на Фронтире из-за их деликатного характера и дороговизны содержания. Боксы часто встречаются в удивительно хорошем состоянии для своего возраста, и за десятилетия они получили несколько модернизаций, которые позволили им идти в ногу с достижениями медицинской науки.",
+	"map_path": "_maps/_mod_celadon/shuttles/independent/independent_box.dmm",
+	"prefix": "IMV",
+	"faction": "/datum/faction/independent",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 5,
+	"tags": [
+	"Медицинское"
+	],
+	"namelists": [
+		"GENERAL",
+		"SPACE",
+		"NATURAL"
+	],
+	"job_slots": {
+		"Chief Medical Officer": {
+			"outfit": "/datum/outfit/job/cel/independent/cmo",
+			"slots": 1
+		},
+		"Medical Doctor": {
+			"outfit": "/datum/outfit/job/cel/independent/doctor",
+			"slots": 3
+		},
+		"Paramedic": {
+			"outfit": "/datum/outfit/job/cel/independent/paramedic",
+			"slots": 2
+		},
+		"Assistant": {
+			"outfit": "/datum/outfit/job/cel/independent/assistant",
+			"slots": 3
+		}
+	}
+}

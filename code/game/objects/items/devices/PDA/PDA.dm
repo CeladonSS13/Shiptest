@@ -239,6 +239,11 @@ GLOBAL_LIST_EMPTY(PDAs)
 				if(cartridge)
 					if(cartridge.access)
 						dat += "<h4>Job Specific Functions</h4>"
+						// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+						if(cartridge.access & CART_CLOWN)
+							dat += "<li>[PDAIMG(honk)]   <a href='byond://?src=[REF(src)];choice=Honk'>Honk Synthesizer</a></li>"
+							dat += "<li>[PDAIMG(honk)]   <a href='byond://?src=[REF(src)];choice=Trombone'>Sad Trombone</a></li>"
+						// [/CELADON-ADD]
 						if(cartridge.access & CART_STATUS_DISPLAY)
 							dat += "<li>[PDAIMG(status)]   <a href='byond://?src=[REF(src)];choice=42'>Set Status Display</a></li>"
 						if(cartridge.access & CART_ENGINE)
@@ -256,6 +261,10 @@ GLOBAL_LIST_EMPTY(PDAs)
 						dat += "<li><a href='byond://?src=[REF(src)];choice=54'>[PDAIMG(medbot)]Bots Access</a></li>"
 					if (cartridge.access & CART_JANITOR)
 						dat += "<li><a href='byond://?src=[REF(src)];choice=49'>[PDAIMG(bucket)]Custodial Locator</a></li>"
+					// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+					if(cartridge.access & CART_MIME)
+						dat += "<li><a href='byond://?src=[REF(src)];choice=55'>[PDAIMG(emoji)]Emoji Guidebook</a></li>"
+					// [/CELADON-ADD]
 					if (istype(cartridge.radio))
 						dat += "<li><a href='byond://?src=[REF(src)];choice=40'>[PDAIMG(signaler)]Signaler System</a></li>"
 					if (cartridge.access & CART_NEWSCASTER)
@@ -461,6 +470,12 @@ GLOBAL_LIST_EMPTY(PDAs)
 					scanmode = PDA_SCANNER_NONE
 				else if((!isnull(cartridge)) && (cartridge.access & CART_ENGINE))
 					scanmode = PDA_SCANNER_HALOGEN
+			// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+			if("Honk")
+				if(!(last_noise && world.time < last_noise + 20))
+					playsound(loc, 'sound/items/bikehorn.ogg', 50, 1)
+					last_noise = world.time
+			// [/CELADON-ADD]
 			if("Trombone")
 				if(!(last_noise && world.time < last_noise + 20))
 					playsound(loc, 'sound/misc/sadtrombone.ogg', 50, 1)
@@ -572,6 +587,11 @@ GLOBAL_LIST_EMPTY(PDAs)
 
 	cut_overlay(icon_alert) //To clear message overlays.
 
+	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+	if((honkamt > 0) && (prob(60)))//For clown virus.
+		honkamt--
+		playsound(src, 'sound/items/bikehorn.ogg', 30, TRUE)
+	// [/CELADON-ADD]
 	if(U.machine == src && href_list["skiprefresh"]!="1")//Final safety.
 		attack_self(U)//It auto-closes the menu prior if the user is not in range and so on.
 	else

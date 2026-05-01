@@ -63,12 +63,30 @@
 	if(inert)
 		to_chat(owner, span_notice("[src] breaks down as it tries to activate."))
 	else
-		owner.adjustBruteLoss(-100) //previously heal proc
-		owner.adjustFireLoss(-100)
-		owner.adjustOxyLoss(-50)
-		owner.adjustToxLoss(-50)
+		// [CELADON-REMOVE] - CELADON_BALANCE - Перемещено вниз в Иф блок
+		// owner.adjustBruteLoss(-100) //previously heal proc
+		// owner.adjustFireLoss(-100)
+		// owner.adjustOxyLoss(-50)
+		// owner.adjustToxLoss(-50)
+		// [/CELADON-REMOVE]
 		if(owner.dna.species.id != SPECIES_IPC)
+			// [CELADON-ADD] - CELADON_BALANCE
+			owner.adjustBruteLoss(-100, TRUE, TRUE) //previously heal proc
+			owner.adjustFireLoss(-100, TRUE, TRUE)
+			owner.adjustOxyLoss(-50, TRUE, TRUE)
+			owner.adjustToxLoss(-50, TRUE, TRUE) //"forced" to cover mechanical parts
+			// [/CELADON-ADD]
 			owner.adjustCloneLoss(20) //dont abuse it or take cloneloss (organic only)
+			// [CELADON-ADD] - CELADON_BALANCE
+			new /obj/effect/temp_visual/heal(get_turf(owner), "#d33131")
+		else // Half the efficiency for IPCs
+			owner.adjustBruteLoss(-50, TRUE, TRUE)
+			owner.adjustFireLoss(-50, TRUE, TRUE)
+			owner.adjustOxyLoss(-25, TRUE, TRUE)
+			owner.adjustToxLoss(-25, TRUE, TRUE)
+			owner.adjustOrganLoss(ORGAN_SLOT_BRAIN, 30) //instead cloneloss receive brain dmg
+			new /obj/effect/temp_visual/heal(get_turf(owner), "#af9191")
+			// [/CELADON-ADD]
 	qdel(src)
 
 /obj/item/organ/regenerative_core/on_life()

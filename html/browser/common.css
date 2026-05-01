@@ -281,6 +281,23 @@ div.notice {
 	width: 100%;
 	clear: both;
 }
+
+/* [CELADON-ADD] - CELADON_QOL */
+.loadoutPreview
+{
+	-ms-interpolation-mode: nearest-neighbor;
+	width: 64px;
+	height:64px;
+}
+
+.charPreview
+{
+	-ms-interpolation-mode: nearest-neighbor;
+	width: 64px;
+	height:64px;
+}
+/* [/CELADON-ADD] */
+
 .pda_icon {
 	vertical-align: -3px;
 }

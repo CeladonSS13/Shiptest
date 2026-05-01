@@ -1,3 +1,6 @@
+/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
+	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
+
 /datum/supply_pack/animal
 	category = "Animals"
 	crate_type = /obj/structure/closet/crate/critter
@@ -142,3 +145,5 @@
 	. = ..()
 	for(var/i in 1 to 49)
 		new /mob/living/simple_animal/crab(.)
+
+[/CELADON-DELETE] */

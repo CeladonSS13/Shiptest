@@ -142,7 +142,7 @@
 	move_resist = MOVE_RESIST_DEFAULT
 	pull_force = PULL_FORCE_DEFAULT
 	if(prob(15))
-		new /obj/item/mob_trophy/legion_skull(loc)
+		new /obj/item/crusher_trophy/legion_skull(loc) // [CELADON-EDIT] - RETURN_CONTENT_CRUSHER_TROPHY
 		visible_message(span_warning("One of the [src]'s skulls looks intact."))
 	..()
 
@@ -177,6 +177,10 @@
 			stored_mob = null
 		else if(mob_to_spawn)
 			new mob_to_spawn(T)
+		// [CELADON-ADD] - RETURN_CONTENT
+		else if(fromtendril)
+			new /obj/effect/mob_spawn/human/corpse/charredskeleton(T)
+		// [/CELADON-ADD]
 		else if(from_nest)
 			new /obj/effect/mob_spawn/human/corpse/charredskeleton(T)
 		else if(dwarf_mob)
@@ -405,7 +409,12 @@
 
 /mob/living/simple_animal/hostile/big_legion/Initialize()
 	.=..()
-	AddComponent(/datum/component/spawner, list(/mob/living/simple_animal/hostile/asteroid/hivelord/legion/nest), 200, faction, "peels itself off from", 3)
+	// [CELADON-EDIT] - RETURN_CONTENT
+	AddComponent(/datum/component/spawner, list(
+		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/nest,
+		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/tendril,
+	), 200, faction, "peels itself off from", 3)
+	// [/CELADON-EDIT]
 
 // Snow Legion
 /mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow

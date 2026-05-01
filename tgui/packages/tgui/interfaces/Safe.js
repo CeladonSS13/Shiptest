@@ -115,20 +115,19 @@ const Help = (properties, context) => {
   return (
     <Section
       className="Safe__help"
-      title="Safe opening instructions (because you all keep forgetting)"
+      title="Инструкция по открытию сейфа (потому что забываете)"
     >
       <Box>
-        1. Turn the dial left to the first number.
+        1. Крути налево до первого числа.
         <br />
-        2. Turn the dial right to the second number.
+        2. Крути направо до второго числа.
         <br />
-        3. Continue repeating this process for each number, switching between
-        left and right each time.
+        3. Повторяй этот процесс для каждого числа, меняя стороны каждый раз.
         <br />
-        4. Open the safe.
+        4. Открывай.
       </Box>
       <Box bold>
-        To lock fully, turn the dial to the left after closing the safe.
+        Для полной блокировки поверни крутилку налево после закрытия.
       </Box>
     </Section>
   );

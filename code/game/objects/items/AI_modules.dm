@@ -369,9 +369,14 @@ AI MODULES
 	if(!targName)
 		return
 	subject = targName
-	laws = list("You may not injure a [subject] or, through inaction, allow a [subject] to come to harm.",\
-				"You must obey orders given to you by [subject]s, except where such orders would conflict with the First Law.",\
-				"You must protect your own existence as long as such does not conflict with the First or Second Law.")
+	// [CELADON-EDIT] - CELADON_QOL - Перевод законов ИИ
+	// laws = list("You may not injure a [subject] or, through inaction, allow a [subject] to come to harm.",\ // CELADON-EDIT -> ORIGINAL
+	// 			"You must obey orders given to you by [subject]s, except where such orders would conflict with the First Law.",\ // CELADON-EDIT -> ORIGINAL
+	// 			"You must protect your own existence as long as such does not conflict with the First or Second Law.") // CELADON-EDIT -> ORIGINAL
+	laws = list("Вы не можете причинить вред [subject] или своим бездействием допустить, чтобы [subject] был причинён вред.",\
+				"Вы должны повиноваться всем приказам [subject] кроме тех случаев, когда эти приказы противоречат Первому Закону.",\
+				"Вы должны заботиться о своей безопасности в той мере, в которой это не противоречит Первому или Второму Законам.")
+	// [/CELADON-EDIT]
 	..()
 
 /******************** Asimov++ *********************/

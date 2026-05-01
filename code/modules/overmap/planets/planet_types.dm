@@ -138,7 +138,9 @@
 	desc = "Some sort of strange portal. There's no identification of what this is."
 	planet = DYNAMIC_WORLD_REEBE
 	icon_state = "wormhole"
-	color = COLOR_YELLOW
+	// [CELADON-REMOVE] - CELADON_OVERMAP_ICON - Это вагабонд насрал
+	//	color = COLOR_YELLOW
+	// [/CELADON-REMOVE]
 	mapgen = /datum/map_generator/single_biome/reebe
 	gravity = STANDARD_GRAVITY
 	default_baseturf = /turf/open/chasm/reebe_void
@@ -153,7 +155,9 @@
 	desc = "A field of asteroids with significant traces of minerals."
 	planet = DYNAMIC_WORLD_ASTEROID
 	icon_state = "asteroid"
-	color = COLOR_GRAY
+	// [CELADON-REMOVE] - CELADON_OVERMAP_ICON - Это вагабонд насрал
+	//	color = COLOR_GRAY
+	// [/CELADON-REMOVE]
 	mapgen = /datum/map_generator/planet_generator/asteroid
 	// Space, because asteroid maps also include space turfs and the prospect of space turfs
 	// existing without space as their baseturf scares me.
@@ -234,6 +238,7 @@
 	preserve_level = TRUE
 	interference_power = 10
 
+/* [CELADON-REMOVE] - CELADON_OVERMAP_ICON - mod_celadon/maps/code/planet_types.dm
 /datum/planet_type/plasma_giant
 	name = "plasma giant"
 	desc = "The backbone of interstellar travel, the mighty plasma giant allows fuel collection to take place."
@@ -246,6 +251,7 @@
 	icon_state = "giant"
 	preserve_level = TRUE
 	interference_power = 10
+[CELADON-REMOVE] */
 
 /datum/planet_type/water
 	name = "aqua planetoid"

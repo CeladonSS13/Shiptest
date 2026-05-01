@@ -14,6 +14,7 @@
 		/obj/item/food/donkpocket/warm/teriyaki,
 		/obj/item/food/donkpocket/warm/pizza,
 		/obj/item/food/donkpocket/warm/berry,
+		/obj/item/food/donkpocket/warm/honk, // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 	)
 
 	var donk_type = pick(subtypesof(/obj/item/food/donkpocket) - donkblock)

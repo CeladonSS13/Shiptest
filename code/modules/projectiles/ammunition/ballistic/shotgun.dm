@@ -10,12 +10,13 @@
 	stack_size = 8 //Make sure this matches max_ammo variable on prefilled stacks (magazine/ammo_stack/prefilled)
 
 	bounce_sfx_override = 'sound/weapons/gun/general/bulletcasing_shotgun_bounce.ogg'
-
 	wear_modifier = 0.5
 
+/* [CELADON-REMOVE] - CELADON_BALANCE
 /obj/item/ammo_casing/shotgun/update_icon_state()
 	icon_state = "[initial(icon_state)][BB ? "" : "-spent"]"
 	return ..()
+[/CELADON-REMOVE] */
 
 /obj/item/ammo_casing/shotgun/buckshot
 	name = "buckshot shell"

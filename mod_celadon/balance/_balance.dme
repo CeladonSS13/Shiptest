@@ -1,0 +1,37 @@
+#ifndef MODPACK_CELADON_BALANCE
+#define MODPACK_CELADON_BALANCE
+
+#include "_balance.dm"
+
+#include "code/designs/autolathe_designs.dm"
+#include "code/designs/autolathe_new_designs.dm"
+
+#include "code/engine/circuits.dm"
+#include "code/engine/enginebalance.dm"
+#include "code/engine/rnd.dm"
+
+#include "code/hostile/frontiersman.dm"
+
+#include "code/backpack.dm"
+#include "code/bscrystal.dm"
+#include "code/cargo.dm"	// Механизм временный, по выводу субшатлов из ремонта, вернуть инфляцию назад.
+#include "code/cc_clothes.dm"
+#include "code/cigarette.dm"
+#include "code/chair_bullet_redirect.dm"
+#include "code/chameleon.dm"
+#include "code/chemestry.dm"	// От ганзы не включенный файл
+#include "code/overmap_event_speed_safe.dm"
+#include "code/elite.dm"
+#include "code/gloves.dm"
+#include "code/guncloset.dm"
+#include "code/hostile_mobs.dm"
+#include "code/items.dm"
+#include "code/mutagensalpetredispenser.dm"
+#include "code/structures.dm"
+#include "code/suit.dm"
+#include "code/vending.dm"
+#include "code/wideband.dm"
+
+// #include "../cargopad/_cargopad.dme"
+
+#endif

@@ -1,5 +1,6 @@
-#define SHUTTLE_CREATOR_MAX_SIZE CONFIG_GET(number/max_shuttle_size)
-
+// [CELADON-EDIT] - subshuttles fix
+#define SHUTTLE_CREATOR_MAX_SIZE 100
+// [/CELADON-EDIT] - subshuttles fix
 /obj/item/shuttle_creator
 	name = "Rapid Shuttle Designator"
 	icon = 'icons/obj/tools.dmi'

@@ -9,17 +9,27 @@
 /datum/gear/hat/hhat_yellow
 	display_name = "hardhat, yellow"
 	path = /obj/item/clothing/head/hardhat
-	allowed_roles = list("Chief Engineer", "Engineer", "Atmospheric Technician")
+	// allowed_roles = list("Chief Engineer", "Engineer", "Atmospheric Technician")	// [CELADON-REMOVE] - CELADON_QOL_LOADOUT
 
 /datum/gear/hat/hhat_orange
 	display_name = "hardhat, orange"
 	path = /obj/item/clothing/head/hardhat/orange
-	allowed_roles = list("Chief Engineer", "Engineer", "Atmospheric Technician")
+	// allowed_roles = list("Chief Engineer", "Engineer", "Atmospheric Technician")	// [CELADON-REMOVE] - CELADON_QOL_LOADOUT
 
 /datum/gear/hat/hhat_blue
 	display_name = "hardhat, blue"
 	path = /obj/item/clothing/head/hardhat/dblue
-	allowed_roles = list("Chief Engineer", "Engineer", "Atmospheric Technician")
+	// allowed_roles = list("Chief Engineer", "Engineer", "Atmospheric Technician")	// [CELADON-REMOVE] - CELADON_QOL_LOADOUT
+
+//Motorcycle Helmets
+
+/datum/gear/hat/motorcycle
+	display_name = "motorcycle helmet, recolorable"
+	path = /obj/item/clothing/head/motorcycle
+
+/datum/gear/hat/motorcycle_cat
+	display_name = "motorcycle helmet (ears), recolorable"
+	path = /obj/item/clothing/head/motorcycle/cat
 
 //Motorcycle Helmets
 
@@ -80,7 +90,36 @@
 /datum/gear/hat/beret/engineering/hazard
 	display_name = "beret, hazard"
 	path = /obj/item/clothing/head/beret/eng/hazard
-	allowed_roles = list("Station Engineer", "Atmospheric Technician", "Chief Engineer")
+	// allowed_roles = list("Station Engineer", "Atmospheric Technician", "Chief Engineer")	// [CELADON-REMOVE] - CELADON_QOL_LOADOUT
+
+//Soft caps
+
+/datum/gear/hat/softcap
+	display_name = "cap, recolorable"
+	path = /obj/item/clothing/head/soft
+
+/datum/gear/hat/utility_black
+	display_name = "utility cover, black"
+	path = /obj/item/clothing/head/soft/utility_black
+
+/datum/gear/hat/utility_olive
+	display_name = "utility cover, olive"
+	path = /obj/item/clothing/head/soft/utility_olive
+
+/datum/gear/hat/utility_beige
+	display_name = "utility cover, beige"
+	path = /obj/item/clothing/head/soft/utility_beige
+
+/datum/gear/hat/utility_navy
+	display_name = "utility cover, navy"
+	path = /obj/item/clothing/head/soft/utility_navy
+
+
+//Beanies
+
+/datum/gear/hat/beanie
+	display_name = "beanie, recolorable"
+	path = /obj/item/clothing/head/beanie
 
 //Soft caps
 

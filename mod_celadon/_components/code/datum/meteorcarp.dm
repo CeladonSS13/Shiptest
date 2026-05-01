@@ -1,0 +1,5 @@
+/obj/effect/meteor/carp/make_debris()
+	for(var/throws = dropamt, throws > 0, throws--)
+		var/mob/living/thing_to_spawn = pick(meteordrop)
+		thing_to_spawn = new thing_to_spawn(get_turf(src))
+		thing_to_spawn.AddComponent(/datum/component/fancy_deleting_timer, 300, 0, "del", _turfs = /turf/open/space)

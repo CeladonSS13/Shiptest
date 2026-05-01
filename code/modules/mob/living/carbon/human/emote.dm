@@ -70,18 +70,20 @@
 	else if(islizard(H))
 		return pick('sound/voice/lizard/lizard_scream_1.ogg', 'sound/voice/lizard/lizard_scream_2.ogg', 'sound/voice/lizard/lizard_scream_3.ogg', 'sound/voice/lizard/lizard_scream_4.ogg')
 
-/datum/emote/living/carbon/human/hiss //lizard
-	key = "hiss"
-	key_third_person = "hisses"
-	message = "hisses!"
-	emote_type = EMOTE_AUDIBLE
-	vary = TRUE
+// [CELADON-REMOVE] - CELADON_EMOTES - Перемещено в пак Эмоутов
+// /datum/emote/living/carbon/human/hiss //lizard
+// 	key = "hiss"
+// 	key_third_person = "hisses"
+// 	message = "hisses!"
+// 	emote_type = EMOTE_AUDIBLE
+// 	vary = TRUE
 
-/datum/emote/living/carbon/human/hiss/get_sound(mob/living/user)
-	if(!ishuman(user))
-		return
-	if(islizard(user))
-		return 'sound/voice/lizard/hiss.ogg'
+// /datum/emote/living/carbon/human/hiss/get_sound(mob/living/user)
+// 	if(!ishuman(user))
+// 		return
+// 	if(islizard(user))
+// 		return 'sound/voice/lizard/hiss.ogg'
+// [/CELADON-REMOVE]
 
 /datum/emote/living/carbon/human/squeal //lizard
 	key = "squeal"
@@ -133,7 +135,7 @@
 /datum/emote/living/carbon/human/weh/get_sound(mob/living/user)
 	if(!ishuman(user))
 		return
-	if(islizard(user))
+	if(islizard(user) || isipc(user))	// [CELADON-EDIT] - CELADON_EMOTES
 		return 'sound/voice/lizard/weh.ogg'
 
 /datum/emote/living/carbon/human/pale
@@ -163,6 +165,24 @@
 	key_third_person = "wags"
 	message = "wags their tail."
 
+// [CELADON-ADD] - CELADON_EMOTES
+/datum/emote/living/carbon/human/proc/can_wag(mob/user)
+	var/mob/living/carbon/human/H = user
+	if(!(H.dna.species.bodyflags & TAIL_WAGGING))
+		return FALSE
+	var/obscured = H.wear_suit && (H.wear_suit.flags_inv & HIDETAIL)
+	if(!istype(H))
+		return FALSE
+	// if(istype(H.sprite, /datum/sprite_accessory/tails)) // Требуется реализовать маркинги хвостов для этого
+	// 	if(!H.body_accessory.try_restrictions(user))
+	// 		return FALSE
+
+	if(H.dna.species.bodyflags & TAIL_WAGGING && obscured)
+		return FALSE
+
+	return TRUE
+// [/CELADON-ADD]
+
 /datum/emote/living/carbon/human/wag/run_emote(mob/user, params, type_override, intentional)
 	. = ..()
 	if(!.)
@@ -170,6 +190,10 @@
 	var/mob/living/carbon/human/H = user
 	if(!istype(H) || !H.dna || !H.dna.species || !H.dna.species.can_wag_tail(H))
 		return
+	// [CELADON-ADD] - CELADON_FIX_TAIL
+	if(H.wear_suit && (H.wear_suit.flags_inv & HIDETAIL))
+		return
+	// [/CELADON-ADD]
 	if(!H.dna.species.is_wagging_tail())
 		H.dna.species.start_wagging_tail(H)
 	else

@@ -17,4 +17,7 @@
 	addtimer(CALLBACK(src, PROC_REF(stop_animation)), 8, TIMER_CLIENT_TIME)
 
 /obj/effect/abstract/ripple/proc/stop_animation()
-	icon_state = "medi_holo_no_anim"
+	// [CELADON-EDIT] - CELADON_RESPRITE
+	// icon_state = "medi_holo_no_anim" // CELADON-EDIT - ORIGINAL
+	icon_state = "landing_noanim"
+	// [/CELADON-EDIT]

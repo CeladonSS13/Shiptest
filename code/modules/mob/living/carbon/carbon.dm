@@ -150,6 +150,11 @@
 					to_chat(src, span_notice("You gently let go of [throwable_mob]."))
 					return
 	else
+		// [CELADON-ADD] - TWEAK_PACIFIST_TRAIT - Запрещаем вообще бросаться предметами для пацифистов
+		if(HAS_TRAIT(src, TRAIT_PACIFISM))
+			to_chat(src, span_notice("You don't want to throw things at others!"))
+			return
+		// [/CELADON-ADD]
 		thrown_thing = I.on_thrown(src, target)
 
 	if(thrown_thing)
@@ -629,6 +634,10 @@
 			see_invisible = max(headslot.invis_view, see_invisible)
 		if(!isnull(headslot.lighting_alpha))
 			lighting_alpha = min(lighting_alpha, headslot.lighting_alpha)
+	// [CELADON-ADD] - CELADON_RETURN_CONTENT_QUIRKS
+	if(HAS_TRAIT(src, TRAIT_NIGHT_VISION))
+		lighting_alpha = min(lighting_alpha, LIGHTING_PLANE_ALPHA_NV_TRAIT)
+	// [/CELADON-ADD]
 
 	if(HAS_TRAIT(src, TRAIT_CHEMICAL_NIGHTVISION))
 		lighting_alpha = min(lighting_alpha, LIGHTING_PLANE_ALPHA_NV_DRUG)
@@ -1273,6 +1282,14 @@
 
 /mob/living/carbon/is_face_visible()
 	return !(wear_mask?.flags_inv & HIDEFACE) && !(head?.flags_inv & HIDEFACE)
+
+/**
+ * get_biological_state is a helper used to see what kind of wounds we roll for. By default we just assume carbons (read:monkeys) are flesh and bone, but humans rely on their species datums
+ *
+ * go look at the species def for more info [/datum/species/proc/get_biological_state]
+ */
+/mob/living/carbon/proc/get_biological_state() //todo: silicon wounds for ipcs
+	return BIO_FLESH_BONE
 
 /// Modifies the handcuffed value if a different value is passed, returning FALSE otherwise. The variable should only be changed through this proc.
 /mob/living/carbon/proc/set_handcuffed(new_value)

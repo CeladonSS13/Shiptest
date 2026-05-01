@@ -58,7 +58,7 @@
 		to_chat(user, span_notice("[src] is now active."))
 	else
 		force = 3
-		icon_state = "sword0"
+		icon_state = "sword" // [CELADON-EDIT] - FIXES_HOLO_ESWORD // icon_state = "sword0" // ORIGINAL
 		w_class = WEIGHT_CLASS_SMALL
 		hitsound = "swing_hit"
 		playsound(user, 'sound/weapons/saberoff.ogg', 20, TRUE)

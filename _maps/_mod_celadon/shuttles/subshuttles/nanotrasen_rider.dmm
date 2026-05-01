@@ -1,0 +1,400 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"c" = (
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
+"e" = (
+/obj/machinery/porta_turret/ship/nt/heavy{
+	dir = 9;
+	id = "ntrider"
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
+"h" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
+"i" = (
+/obj/structure/sign/nanotrasen{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
+"j" = (
+/obj/effect/turf_decal/siding/red{
+	dir = 1;
+	color = "#212d60"
+	},
+/obj/machinery/light/colored/red{
+	dir = 1
+	},
+/obj/machinery/power/apc/auto_name/directional/north{
+	pixel_x = -4
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/machinery/light_switch{
+	pixel_x = 8;
+	pixel_y = 22
+	},
+/turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+"k" = (
+/obj/effect/turf_decal/siding/red{
+	dir = 2;
+	color = "#212d60"
+	},
+/obj/machinery/light/colored/red,
+/obj/machinery/power/smes/engineering{
+	charge = 4e+006
+	},
+/turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+"m" = (
+/obj/machinery/turretid/ship{
+	pixel_y = 10;
+	id = "ntrider";
+	pixel_x = -2
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
+"o" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/shuttle/engine/electric,
+/obj/structure/window/reinforced/spawner/west{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"u" = (
+/obj/machinery/porta_turret/ship/nt/heavy{
+	dir = 5;
+	id = "ntrider"
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
+"w" = (
+/obj/machinery/power/smes/shuttle/precharged,
+/obj/effect/turf_decal/siding/red{
+	dir = 10;
+	color = "#212d60"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "rider_enginelocks";
+	dir = 4
+	},
+/obj/structure/window/reinforced/spawner/west,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/effect/turf_decal/siding/red{
+	dir = 10;
+	color = "#212d60"
+	},
+/turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+"x" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-4";
+	tag = null
+	},
+/obj/structure/chair/comfy/shuttle{
+	name = "subshuttle kovrik";
+	dir = 8
+	},
+/turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+"y" = (
+/obj/effect/turf_decal/siding/red{
+	dir = 4;
+	color = "#212d60"
+	},
+/obj/effect/turf_decal/siding/red{
+	dir = 1;
+	color = "#212d60";
+	icon_state = "siding_thinplating_corner"
+	},
+/turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+"z" = (
+/obj/effect/turf_decal/siding/red{
+	dir = 8;
+	color = "#212d60"
+	},
+/obj/machinery/computer/helm{
+	dir = 4
+	},
+/obj/structure/window/reinforced/spawner/west,
+/obj/structure/window/reinforced/spawner/west{
+	dir = 9
+	},
+/obj/structure/window/reinforced/spawner/west{
+	dir = 2
+	},
+/turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+"B" = (
+/obj/machinery/porta_turret/ship/nt/heavy{
+	dir = 10;
+	id = "ntrider"
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
+"E" = (
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/security/glass/seclock{
+	dir = 4;
+	name = "Equipment Room"
+	},
+/obj/docking_port/mobile{
+	dir = 8;
+	name = "nail shuttle";
+	port_direction = 2;
+	preferred_direction = 8
+	},
+/turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+"F" = (
+/obj/machinery/power/terminal,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+"H" = (
+/obj/structure/closet/secure_closet/wall/directional/north{
+	icon_state = "sec_wall";
+	pixel_x = 0;
+	pixel_y = 33
+	},
+/obj/effect/turf_decal/siding/red{
+	dir = 1;
+	color = "#212d60";
+	layer = 2.9
+	},
+/obj/item/storage/box/handcuffs,
+/obj/item/storage/box/bodybags,
+/obj/effect/turf_decal/trimline/opaque/ntblue,
+/obj/item/storage/firstaid,
+/obj/item/reagent_containers/hypospray/medipen/anti_rad,
+/obj/item/reagent_containers/hypospray/medipen/anti_rad,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/effect/turf_decal/industrial/outline/grey,
+/obj/effect/turf_decal/siding/red{
+	dir = 2;
+	color = "#212d60";
+	layer = 2.9
+	},
+/turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+"I" = (
+/obj/structure/sign/nanotrasen{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
+"J" = (
+/obj/effect/turf_decal/siding/red{
+	dir = 4;
+	color = "#212d60"
+	},
+/obj/effect/turf_decal/siding/red{
+	dir = 8;
+	color = "#212d60";
+	icon_state = "siding_thinplating_corner"
+	},
+/turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+"L" = (
+/obj/effect/turf_decal/siding/red{
+	dir = 4;
+	color = "#212d60";
+	icon_state = "siding_thinplating_corner"
+	},
+/obj/machinery/holopad/emergency/command{
+	pixel_x = 1;
+	pixel_y = -12
+	},
+/turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+"N" = (
+/obj/effect/turf_decal/siding/red{
+	dir = 2;
+	color = "#212d60"
+	},
+/obj/structure/chair/comfy/shuttle{
+	name = "subshuttle kovrik";
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/outline/grey,
+/turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+"O" = (
+/obj/effect/turf_decal/siding/red{
+	dir = 2;
+	color = "#212d60"
+	},
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
+/turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+"P" = (
+/obj/machinery/porta_turret/ship/nt/heavy{
+	dir = 6;
+	id = "ntrider"
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
+"Q" = (
+/obj/effect/turf_decal/trimline/opaque/ntblue,
+/turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+"R" = (
+/turf/template_noop,
+/area/template_noop)
+"S" = (
+/obj/effect/turf_decal/siding/red{
+	dir = 1;
+	color = "#212d60"
+	},
+/obj/structure/chair/comfy/shuttle{
+	name = "subshuttle kovrik"
+	},
+/obj/effect/turf_decal/industrial/outline/grey,
+/turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+"T" = (
+/obj/effect/turf_decal/siding/red{
+	dir = 1;
+	color = "#212d60"
+	},
+/obj/machinery/light/floor,
+/obj/machinery/button/door{
+	id = "rider_doors";
+	name = "window shutters";
+	pixel_y = 25;
+	pixel_x = 8
+	},
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/machinery/button/door{
+	id = "rider_enginelocks";
+	name = "engine shutters";
+	pixel_y = 25;
+	pixel_x = -8
+	},
+/turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+"U" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "rider_doors"
+	},
+/obj/structure/fans/tiny,
+/obj/effect/turf_decal/siding/red{
+	dir = 8;
+	color = "#212d60"
+	},
+/obj/effect/turf_decal/siding/red{
+	dir = 4;
+	color = "#212d60"
+	},
+/turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+"V" = (
+/obj/machinery/power/smes/shuttle/precharged,
+/obj/effect/turf_decal/siding/red{
+	dir = 1;
+	color = "#212d60"
+	},
+/obj/effect/turf_decal/siding/red{
+	dir = 8;
+	color = "#212d60"
+	},
+/obj/structure/window/reinforced/spawner/west,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "rider_enginelocks";
+	dir = 4
+	},
+/turf/open/floor/plasteel/lightdark,
+/area/ship/bridge)
+
+(1,1,1) = {"
+c
+o
+c
+o
+c
+"}
+(2,1,1) = {"
+e
+V
+z
+w
+B
+"}
+(3,1,1) = {"
+c
+T
+x
+O
+m
+"}
+(4,1,1) = {"
+h
+j
+F
+k
+c
+"}
+(5,1,1) = {"
+i
+S
+Q
+N
+I
+"}
+(6,1,1) = {"
+U
+y
+L
+J
+U
+"}
+(7,1,1) = {"
+u
+h
+H
+c
+P
+"}
+(8,1,1) = {"
+R
+h
+E
+h
+R
+"}

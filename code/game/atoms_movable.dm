@@ -594,9 +594,14 @@
 	return CanPass(AM, get_dir(src, AM))
 
 ///default byond proc that is deprecated for us in lieu of signals. do not call
-/atom/movable/Crossed(atom/movable/crossed_atom, oldloc)
-	SHOULD_NOT_OVERRIDE(TRUE)
-	CRASH("atom/movable/Crossed() was called!")
+// [CELADON-EDIT] - CELADON_EMOTES
+// /atom/movable/Crossed(atom/movable/crossed_atom, oldloc)
+// 	SHOULD_NOT_OVERRIDE(TRUE)
+// 	CRASH("atom/movable/Crossed() was called!")	// CELADON-EDIT - ORIGINAL
+/atom/movable/Crossed(atom/movable/AM, oldloc)
+	SEND_SIGNAL(src, COMSIG_MOVABLE_CROSSED, AM)
+	SEND_SIGNAL(AM, COMSIG_CROSSED_MOVABLE, src)
+// [/CELADON-EDIT]
 
 /**
  * `Uncross()` is a default BYOND proc that is called when something is *going*
@@ -835,7 +840,7 @@
 	if(has_gravity(src))
 		return 1
 
-	if(pulledby)
+	if(pulledby && (pulledby != pulling))	//if(pulledby)	// [CELADON-EDIT] - CELADON_GRAVGEN
 		return 1
 
 	if(throwing)

@@ -31,6 +31,7 @@
 		force_on = active_force, \
 		throwforce_on = active_throwforce, \
 		attack_verb_on = list("cleave", "swipe", "slash", "chop"), \
+		hitsound_on = hitsound, \ // [CELADON-ADD] - FIXES_SOUND - Фикс бага на звук лазерного меча
 	)
 	RegisterSignal(src, COMSIG_TRANSFORMING_ON_TRANSFORM, PROC_REF(on_transform))
 

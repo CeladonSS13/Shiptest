@@ -6,6 +6,9 @@
 	product_slogans = "RobustMore Softdrinks: More robust than a toolbox to the head!"
 	product_ads = "Refreshing!;Hope you're thirsty!;Over 10 trillion drinks sold!;Thirsty? Why not cola?;Please, have a drink!;Drink up!;The best drinks this side of the galaxy."
 	products = list(
+		// [CELADON-ADD] - CELADON_FOOD_AND_DRINKS
+		/obj/item/reagent_containers/food/drinks/soda_cans/synthanol = 10,
+		// [/CELADON-ADD]
 		/obj/item/reagent_containers/food/drinks/soda_cans/cola = 10,
 		/obj/item/reagent_containers/food/drinks/soda_cans/comet_trail = 10,
 		/obj/item/reagent_containers/food/drinks/soda_cans/tadrixx = 10,
@@ -15,7 +18,7 @@
 		/obj/item/reagent_containers/food/drinks/soda_cans/orange_soda = 10,
 		/obj/item/reagent_containers/food/drinks/soda_cans/sol_dry = 10,
 		/obj/item/reagent_containers/food/drinks/waterbottle = 10,
-		/obj/item/reagent_containers/food/drinks/soda_cans/xeno_energy = 5,
+		// /obj/item/reagent_containers/food/drinks/soda_cans/xeno_energy = 5, [CELADON-DELETE] - Задублированный товар.
 		/obj/item/reagent_containers/food/drinks/soda_cans/vimukti = 6,
 		/obj/item/reagent_containers/food/drinks/soda_cans/shoal_punch = 6)
 	premium = list(

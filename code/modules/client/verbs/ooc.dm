@@ -64,6 +64,14 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 	if(prefs.hearted)
 		var/datum/asset/spritesheet/sheet = get_asset_datum(/datum/asset/spritesheet/chat)
 		keyname = "[sheet.icon_tag("emoji-heart")][keyname]"
+	// [CELADON-ADD] - CELADON_DONATE / Значения GLOB.OOC_COLOR были заменены на COLOR_OOC для возможности замены цвета для donator_tier.
+	var/COLOR_OOC = GLOB.OOC_COLOR
+	if(donator.donator_tier > 0)
+		var/icon/donator_icon = icon('mod_celadon/_storage_icons/icons/assets/vip/ooc_icon.png')
+		keyname = "[icon2html(donator_icon, world)] " + "[keyname]"
+	if(donator.donator_tier > 1)
+		COLOR_OOC = "CC008C"
+	// [/CELADON-ADD]
 	//The linkify span classes and linkify=TRUE below make ooc text get clickable chat href links if you pass in something resembling a url
 	for(var/client/C in GLOB.clients)
 		if(C.prefs.chat_toggles & CHAT_OOC)
@@ -76,17 +84,19 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 					else
 						to_chat(C, span_adminobserverooc("[span_prefix("OOC:")] <EM>[keyname][holder.fakekey ? "/([holder.fakekey])" : ""]:</EM> <span class='message linkify'>[msg]</span>"), MESSAGE_TYPE_OOC)
 				else
-					if(GLOB.OOC_COLOR)
-						to_chat(C, span_oocplain("<font color='[GLOB.OOC_COLOR]'><b>[span_prefix("OOC:")] <EM>[holder.fakekey ? holder.fakekey : key]:</EM> <span class='message linkify'>[msg]</span></b></font>"), MESSAGE_TYPE_OOC)
+					// CELADON EDIT START
+					if(COLOR_OOC)
+						to_chat(C, span_oocplain("<font color='[COLOR_OOC]'><b>[span_prefix("OOC:")] <EM>[holder.fakekey ? holder.fakekey : key]:</EM> <span class='message linkify'>[msg]</span></b></font>"), MESSAGE_TYPE_OOC)
+					// CELADON EDIT END
 					else
 						to_chat(C, span_ooc("[span_prefix("OOC:")] <EM>[holder.fakekey ? holder.fakekey : key]:</EM> <span class='message linkify'>[msg]</span>"), MESSAGE_TYPE_OOC)
 
 			else if(!(key in C.prefs.ignoring))
-				if(GLOB.OOC_COLOR)
+				if(COLOR_OOC)
 					if(check_mentor())
 						to_chat(C, span_oocplain("<font color='["#00b40f"]'><b>[span_prefix("OOC:")] <EM>[keyname]:</EM> <span class='message linkify'>[msg]</span></b></font>"), MESSAGE_TYPE_OOC)
 					else
-						to_chat(C, span_oocplain("<font color='[GLOB.OOC_COLOR]'><b>[span_prefix("OOC:")] <EM>[keyname]:</EM> <span class='message linkify'>[msg]</span></b></font>"), MESSAGE_TYPE_OOC)
+						to_chat(C, span_oocplain("<font color='[COLOR_OOC]'><b>[span_prefix("OOC:")] <EM>[keyname]:</EM> <span class='message linkify'>[msg]</span></b></font>"), MESSAGE_TYPE_OOC) // CELADON EDIT
 				else
 					to_chat(C, span_ooc("[span_prefix("OOC:")] <EM>[keyname]:</EM> <span class='message linkify'>[msg]</span>"), MESSAGE_TYPE_OOC)
 
@@ -108,6 +118,7 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 			return
 	else
 		GLOB.dooc_allowed = !GLOB.dooc_allowed
+	to_chat(world, "<B>The Dead OOC channel has been globally [GLOB.dooc_allowed ? "enabled" : "disabled"].</B>")	// [CELADON-ADD] - FIX_TOGGLE_DEAD_OOC
 
 /client/proc/set_ooc(newColor as color)
 	set name = "Set Player OOC Color"
@@ -328,7 +339,7 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 
 /client/verb/fit_viewport()
 	set name = "Fit Viewport"
-	set category = "OOC"
+	set category = "Special Verbs" // [CELADON-EDIT] - CELADON_QOL - Очистка вкладки ООС, перенос части в Special Verbs
 	set desc = "Fit the width of the map window to match the viewport"
 
 	// Fetch aspect ratio
@@ -376,7 +387,9 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 /client/verb/policy()
 	set name = "Show Policy"
 	set desc = "Show special server rules related to your current character."
+	// [CELADON-REMOVE] - CELADON_QOL - Очистка вкладки ООС, перенос части в Special Verbs
 	set category = "OOC"
+	// [/CELADON-REMOVE]
 
 	//Collect keywords
 	var/list/keywords = mob.get_policy_keywords()

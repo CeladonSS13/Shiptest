@@ -111,6 +111,7 @@
 			. += "*"
 	return sanitize(.)
 
+/* [CELADON REMOVE] - CELADON_QOL - mod_celadon\qol\code\mob_helpers2.dm перенёс т. к. желаю модульность
 /**
  * Makes you speak like you're drunk
  */
@@ -145,6 +146,7 @@
 				EMPTY_BLOCK_GUARD
 		. += "[newletter]"
 	return sanitize(.)
+	[CELADON REMOVE] */
 
 /// Makes you talk like you got cult stunned, which is slurring but with some dark messages
 /proc/cultslur(phrase) // Inflicted on victims of a stun talisman
@@ -193,6 +195,7 @@
 
 #define CLOCK_CULT_SLUR(phrase) sanitize(text2ratvar(phrase))
 
+/* [CELADON REMOVE] - CELADON_QOL - mod_celadon\qol\code\mob_helpers2.dm перенёс т. к. желаю модульность
 ///Adds stuttering to the message passed in
 /proc/stutter(phrase)
 	phrase = html_decode(phrase)
@@ -210,6 +213,7 @@
 				newletter = "[newletter]-[newletter]"
 		. += newletter
 	return sanitize(.)
+	[CELADON REMOVE] */
 
 ///Convert a message to derpy speak
 /proc/derpspeech(message, stuttering)
@@ -593,3 +597,22 @@
 ///Can the mob see reagents inside of containers?
 /mob/proc/can_see_reagents()
 	return stat == DEAD || has_unlimited_silicon_privilege //Dead guys and silicons can always see reagents
+
+// [CELADON-ADD] - CELADON_LOAD_PREF
+/mob/living/carbon/human/proc/load_client_appearance(client/client)
+	if(!client)
+		client = src.client
+	var/old_name = real_name
+	SEND_SOUND(src, 'sound/misc/server-ready.ogg')
+	client.prefs.copy_to(src)
+	SSquirks.AssignQuirks(src, client, TRUE, FALSE, job, FALSE)//This Assigns the selected character's quirks
+	var/obj/item/card/id/id_card = get_idcard() //Time to change their ID card as well if they have one.
+	if(id_card)
+		id_card.registered_name = real_name
+		id_card.update_label(real_name, id_card.assignment)
+	fully_replace_character_name(old_name, real_name)
+	SEND_SOUND(src, 'sound/magic/charge.ogg') //Fluff
+	log_game("[key_name(src)] has loaded their default appearance for a ghost role.")
+	message_admins("[ADMIN_LOOKUPFLW(src)] has loaded their default appearance for a ghost role.")
+	return
+// [/CELADON-ADD] - CELADON_LOAD_PREF

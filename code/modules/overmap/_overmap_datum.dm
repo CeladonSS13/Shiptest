@@ -377,7 +377,7 @@
 	return FALSE
 
 /datum/overmap/ship/controlled/do_hail(mob/living/user, datum/overmap/interact_target)
-	if(!interact_target || interact_target==src)
+	if(!interact_target) // [CELADON-EDIT] - CELADON_OVERMAP - SHIP_HAIL_HIMSELF - Возвращаем фичу на сообщение кораблей самим себе
 		return "Invalid Target."
 	var/input = stripped_input(user, "Please choose a message to hail the target with.", "Hailing Vessel")
 	if(!input)
@@ -554,6 +554,10 @@
 		container = container.docked_to
 	current_overmap = container.current_overmap // so we dont accidentally slingshot hundreds of au undocking
 	current_overmap.overmap_container[container.x][container.y] += src
+	//[CELADON-ADD] - CELADON_FIXES
+	token.pixel_w = container.token.pixel_w+(pick(6, -6))
+	token.pixel_z = container.token.pixel_z+(pick(6, -6))
+	//[/CELADON-ADD]
 	x = container.x
 	y = container.y
 

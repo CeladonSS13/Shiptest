@@ -1,0 +1,29 @@
+#ifndef MODPACK_CELADON_COMPONENTS
+#define MODPACK_CELADON_COMPONENTS
+
+#include "__components.dm"
+
+// Вводит в игру глобальные параметры
+#include "code/_globalvars/chat.dm"
+#include "code/chat_settings_panel.dm"
+
+// Добавляет компонент, отвечающий за удаление атомов.
+#include "code/datum/fancy_deletion_timer.dm"
+#include "code/datum/meteorcarp.dm"
+
+// Глобальные проки для уменьшения простыней кода.
+#include "code/procs/procs.dm"
+
+// Изменения корня датумов
+#include "code/datum/species.dm"
+
+// Задание переменной начального значения
+#include "code/mob/living.dm"
+
+// Оутфиты для ролей // Префиксы для кораблей ищи в дефайнах ~mod_celadon/names.dm
+#include "code/_outfits.dm"
+
+// CELADON_DONATE - Добавляет систему донатных тиров.
+#include"code/donate.dm"
+
+#endif

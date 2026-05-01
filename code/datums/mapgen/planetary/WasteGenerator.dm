@@ -106,6 +106,7 @@
 
 		//stuff you can actually use
 		/obj/effect/spawner/random/waste/girder = 600,
+		/obj/structure/reagent_dispensers/fueltank = 100, // [CELADON-ADD] - RETURN_CONTENT
 		/obj/structure/reagent_dispensers/watertank = 200,
 		/obj/item/stack/cable_coil/cut = 500,
 		/obj/structure/closet/crate/secure/loot = 30,
@@ -188,6 +189,7 @@
 		/obj/effect/spawner/random/waste/radiation = 300,
 		/obj/effect/spawner/random/waste/radiation/more_rads = 120,
 		/obj/effect/spawner/random/waste/girder = 600,
+		/obj/structure/reagent_dispensers/fueltank = 100, // [CELADON-ADD] - RETURN_CONTENT
 		/obj/structure/reagent_dispensers/watertank = 200,
 		/obj/item/stack/cable_coil/cut = 500,
 		/obj/structure/closet/crate/secure/loot = 30,
@@ -202,6 +204,7 @@
 		/obj/structure/flora/ash/garden/waste = 300,
 		/obj/structure/flora/ash/glowshroom = 1800,
 		/obj/item/mine/pressure/explosive/rusty/live = 30,
+		/obj/item/mine/pressure/explosive/shrapnel/live = 30, // [CELADON - ADD] - CELADON_RETURN_LANDMINE
 		/obj/effect/spawner/random/mine = 8,
 	)
 
@@ -238,6 +241,7 @@
 		/obj/effect/spawner/random/waste/radiation = 80,
 		/obj/effect/spawner/random/waste/radiation/more_rads = 20,
 		/obj/effect/spawner/random/waste/girder = 600,
+		/obj/structure/reagent_dispensers/fueltank = 100, // [CELADON-ADD] - RETURN_CONTENT
 		/obj/structure/reagent_dispensers/watertank = 200,
 		/obj/item/stack/cable_coil/cut = 500,
 		/obj/structure/closet/crate/secure/loot = 30,
@@ -255,6 +259,7 @@
 		/obj/effect/spawner/random/waste/salvageable = 300,
 		/obj/item/mine/pressure/explosive/rusty/live = 30,
 		/obj/effect/spawner/random/mine = 8,
+		/obj/item/mine/pressure/explosive/rad/live = 30, // [CELADON - ADD] - CELADON_RETURN_LANDMINE
 	)
 	mob_spawn_list = list( //nor organics, more biased towards hivebots though
 		/mob/living/basic/hivebot = 40,
@@ -300,6 +305,7 @@
 		/obj/effect/spawner/random/waste/radiation = 80,
 		/obj/effect/spawner/random/waste/radiation/more_rads = 10,
 		/obj/effect/spawner/random/waste/girder = 600,
+		/obj/structure/reagent_dispensers/fueltank = 100, // [CELADON-ADD] - RETURN_CONTENT
 		/obj/structure/reagent_dispensers/watertank = 200,
 		/obj/item/stack/cable_coil/cut = 500,
 		/obj/structure/closet/crate/secure/loot = 30,
@@ -316,6 +322,7 @@
 		/obj/structure/flora/ash/glowshroom = 400, //more common in caves
 		/obj/item/mine/pressure/explosive/rusty/live = 10,
 		/obj/effect/spawner/random/mine = 8,
+		/obj/item/mine/pressure/explosive/rad/live = 30, // [CELADON - ADD] - CELADON_RETURN_LANDMINE
 	)
 
 	feature_spawn_list = list(
@@ -367,6 +374,7 @@
 		/obj/effect/spawner/random/waste/atmos_can/rare = 5,
 		/obj/effect/spawner/random/waste/salvageable = 150,
 		/obj/effect/spawner/random/waste/girder = 200,
+		/obj/structure/reagent_dispensers/fueltank = 10, // [CELADON-ADD] - RETURN_CONTENT
 		/obj/structure/reagent_dispensers/watertank = 10,
 		/obj/item/stack/cable_coil/cut = 500,
 		/obj/structure/closet/crate/secure/loot = 30,
@@ -378,6 +386,7 @@
 		/obj/structure/flora/ash/glowshroom = 1800,
 		/obj/item/mine/pressure/explosive/rusty/live = 30,
 		/obj/effect/spawner/random/mine = 8,
+		/obj/item/mine/pressure/explosive/rad/live = 30, // [CELADON - ADD] - CELADON_RETURN_LANDMINE
 	)
 	feature_spawn_chance = 12
 
@@ -400,6 +409,7 @@
 		/obj/effect/spawner/random/waste/radiation = 32,
 		/obj/effect/spawner/random/waste/radiation/more_rads = 4,
 		/obj/effect/spawner/random/waste/girder = 120,
+		/obj/structure/reagent_dispensers/fueltank = 20, // [CELADON-ADD] - RETURN_CONTENT
 		/obj/structure/reagent_dispensers/watertank = 40,
 		/obj/item/stack/cable_coil/cut = 100,
 		/obj/structure/closet/crate/secure/loot = 6,
@@ -441,6 +451,7 @@
 		/obj/effect/spawner/random/waste/mechwreck = 20,
 		/obj/effect/spawner/random/trash/decal = 90,
 		/obj/effect/spawner/random/waste/radiation = 16,
+		/obj/structure/reagent_dispensers/fueltank = 10, // [CELADON-ADD] - RETURN_CONTENT
 		/obj/structure/reagent_dispensers/watertank = 20,
 		/obj/item/stack/cable_coil/cut = 50,
 		/obj/structure/closet/crate/secure/loot = 3,

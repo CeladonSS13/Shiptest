@@ -1,0 +1,484 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area/template_noop)
+"b" = (
+/obj/effect/turf_decal/trimline/opaque/black/line{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/purple/hidden{
+	dir = 4
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ship/bridge)
+"c" = (
+/obj/machinery/porta_turret/ship/syndicate/weak{
+	dir = 4;
+	pixel_x = 8
+	},
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/bridge)
+"d" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/external)
+"h" = (
+/obj/machinery/button/door{
+	id = "SDP_ENG_Port";
+	dir = 8;
+	pixel_x = 25;
+	pixel_y = 5;
+	name = "engine armor"
+	},
+/obj/machinery/light_switch{
+	pixel_x = 24;
+	pixel_y = 14;
+	dir = 8
+	},
+/obj/machinery/power/smes/engineering{
+	charge = 1e+006
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/turf/open/floor/circuit/red,
+/area/ship/bridge)
+"k" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/layer2{
+	dir = 1
+	},
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/machinery/firealarm/directional/east{
+	pixel_y = 6
+	},
+/obj/structure/extinguisher_cabinet/directional/east{
+	pixel_y = -5;
+	pixel_x = 29
+	},
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/circuit/red,
+/area/ship/bridge)
+"l" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/effect/turf_decal/hardline_small/right{
+	dir = 2;
+	color = "#730622"
+	},
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/bridge)
+"n" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/effect/turf_decal/trimline/opaque/black/line{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/purple/hidden{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ship/bridge)
+"o" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/bridge)
+"p" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/turf_decal/trimline/opaque/black/line{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/purple/hidden{
+	dir = 9
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ship/bridge)
+"r" = (
+/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer2,
+/obj/structure/closet/secure_closet/wall{
+	icon_state = "sec_wall";
+	name = "Captain's locker";
+	pixel_y = -29;
+	req_access_txt = 0
+	},
+/obj/item/radio/intercom/wideband/directional/north,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/reagent_containers/food/drinks/bottle/sake{
+	name = "Fluffy Tail Sake";
+	icon_state = "sakebottle_k";
+	desc = "On the bottle is a picture of a kitsune with nine touchable tails."
+	},
+/obj/item/clothing/mask/gas/syndicate,
+/turf/open/floor/mineral/plastitanium,
+/area/ship/bridge)
+"t" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"u" = (
+/obj/machinery/atmospherics/pipe/layer_manifold,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"v" = (
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/door/poddoor{
+	id = "SDP_brsh"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"w" = (
+/obj/structure/sign/syndicate,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"y" = (
+/obj/machinery/power/shuttle/engine/fueled/plasma{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"z" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
+	},
+/obj/machinery/computer/helm{
+	dir = 8;
+	layer = 3
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ship/bridge)
+"C" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/effect/turf_decal/hardline_small{
+	dir = 2;
+	color = "#730622"
+	},
+/obj/machinery/atmospherics/pipe/simple/purple/hidden{
+	dir = 2
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/bridge)
+"D" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4,
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/external)
+"F" = (
+/obj/machinery/atmospherics/components/unary/shuttle/heater{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/poddoor{
+	id = "SDP_ENG_Port";
+	dir = 2
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"G" = (
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 1
+	},
+/obj/machinery/door/window/brigdoor/security/cell/westleft{
+	req_access = 0
+	},
+/obj/structure/chair/greyscale{
+	dir = 8
+	},
+/turf/open/floor/circuit/red,
+/area/ship/bridge)
+"H" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4;
+	name = "Helm"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/button/door{
+	id = "SDP_brsh";
+	name = "shutters bridge";
+	pixel_x = -9;
+	pixel_y = 24
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/light/small/directional/north{
+	pixel_y = 36
+	},
+/obj/machinery/door/window/northleft{
+	dir = 8;
+	name = "Captain's Bunk";
+	req_access = 0
+	},
+/obj/machinery/light_switch{
+	pixel_y = -19;
+	pixel_x = 6;
+	dir = 1
+	},
+/obj/machinery/turretid{
+	pixel_y = 24;
+	pixel_x = 5
+	},
+/obj/machinery/newscaster/directional/south{
+	pixel_x = -2
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ship/bridge)
+"I" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/bridge)
+"K" = (
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/light/directional/north{
+	pixel_y = 36
+	},
+/obj/machinery/airalarm/directional/south,
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/machinery/holopad,
+/turf/open/floor/mineral/plastitanium,
+/area/ship/bridge)
+"L" = (
+/obj/effect/turf_decal/trimline/opaque/black/line{
+	dir = 8
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ship/bridge)
+"M" = (
+/obj/effect/turf_decal/hardline_small/left{
+	dir = 2;
+	color = "#730622"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/bridge)
+"O" = (
+/obj/structure/fans/tiny,
+/obj/docking_port/mobile{
+	can_move_docking_ports = 1;
+	dir = 4;
+	port_direction = 2;
+	preferred_direction = 4;
+	name = "jet lancer"
+	},
+/obj/machinery/door/airlock/security{
+	dir = 4;
+	req_ship_access = 0
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/bridge)
+"R" = (
+/obj/machinery/light/small/directional/west,
+/obj/machinery/atmospherics/components/unary/portables_connector,
+/obj/machinery/portable_atmospherics/canister/toxins,
+/turf/open/floor/circuit/red,
+/area/ship/bridge)
+"T" = (
+/obj/machinery/atmospherics/components/binary/pump/on/layer2{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/opaque/black/line{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ship/bridge)
+"W" = (
+/obj/effect/turf_decal/trimline/opaque/black/line{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/binary/pump,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/structure/closet/wall/orange{
+	dir = 4;
+	name = "Engineering locker";
+	pixel_x = 30
+	},
+/obj/item/storage/belt/utility/syndicate,
+/obj/item/clothing/mask/gas/syndicate,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ship/bridge)
+"X" = (
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/external)
+
+(1,1,1) = {"
+a
+a
+a
+y
+O
+y
+a
+a
+a
+"}
+(2,1,1) = {"
+a
+w
+t
+F
+I
+F
+t
+w
+a
+"}
+(3,1,1) = {"
+t
+t
+L
+b
+M
+b
+L
+t
+t
+"}
+(4,1,1) = {"
+t
+R
+W
+n
+C
+p
+T
+k
+t
+"}
+(5,1,1) = {"
+c
+t
+t
+h
+l
+G
+t
+t
+c
+"}
+(6,1,1) = {"
+a
+a
+o
+t
+K
+t
+o
+a
+a
+"}
+(7,1,1) = {"
+a
+a
+D
+u
+r
+u
+d
+a
+a
+"}
+(8,1,1) = {"
+a
+a
+X
+t
+H
+t
+X
+a
+a
+"}
+(9,1,1) = {"
+a
+a
+a
+v
+z
+v
+a
+a
+a
+"}
+(10,1,1) = {"
+a
+a
+a
+v
+v
+v
+a
+a
+a
+"}
+(11,1,1) = {"
+a
+a
+a
+a
+v
+a
+a
+a
+a
+"}

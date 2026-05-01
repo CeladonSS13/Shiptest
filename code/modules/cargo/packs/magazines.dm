@@ -1,3 +1,5 @@
+/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
+	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
 /datum/supply_pack/magazine
 	category = "Magazines"
 	crate_type = /obj/structure/closet/crate/secure/gear
@@ -443,3 +445,4 @@
 	faction_locked = TRUE
 
 /* Expand once the energy weapons have been actually expanded upon */
+[/CELADON-DELETE] */

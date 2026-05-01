@@ -1,0 +1,37 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Ramo Scavenger Ship",
+	"map_short_name": "Ramo-Scavenger",
+	"description": "Небольшое и отлично снаряжённое судно мусорщиков, со всем нужным для жизни на Фронтире - включая то, что лучше не светить местным органам охраны. Популярен среди опытных команд которые уже достаточно долго занимаются 'утилизацией' космических руин чтобы накопить на него. По сути, лучший из всех аналогов благодаря присутствия мед-отсека, инженерной части, восьми двигателей, аж четырёх баков воздуха. Если не учитывать то, что все эти компоненты находятся снаружи и под прямой угрозой метеоров.",
+	"map_path": "_maps/_mod_celadon/shuttles/independent/independent_ramo.dmm",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 4,
+	"starting_funds": 2000,
+	"prefix": "ISV",
+	"faction": "/datum/faction/independent",
+	"tags": ["Специализированный"],
+	"namelists": [
+		"NATURAL",
+		"SPACE"
+	],
+	"job_slots": {
+		"Salvage Leader": {
+			"outfit": "/datum/outfit/job/cel/independent/captain",
+			"officer": true,
+			"slots": 1
+		},
+		"Salvage Technician": {
+			"outfit": "/datum/outfit/job/cel/independent/engineer",
+			"slots": 2
+		},
+		"Salvage Paramedic": {
+			"outfit": "/datum/outfit/job/cel/independent/paramedic",
+			"slots": 1
+		},
+		"Salvager": {
+			"outfit": "/datum/outfit/job/cel/independent/miner",
+			"slots": 2
+		}
+	}
+}

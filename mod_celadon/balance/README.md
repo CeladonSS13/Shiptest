@@ -1,0 +1,217 @@
+
+
+#### Список PRов:
+
+- https://github.com/MysticalFaceLesS/Shiptest/pulls/#####
+<!--
+  Ссылки на PRы, связанные с модом:
+  - Создание
+  - Большие изменения
+-->
+
+<!-- Название мода. Не важно на русском или на английском. -->
+## Balance - изменение баланса
+
+ID мода: 
+	CELADON_BALANCE
+	CELADON_BALANCE_CD
+	CELADON_BALANCE_MOBS
+	CELADON_BALANCE_CHISEL
+	CELADON_BALANCE_OVERMAP_EVENTS
+	CELADON_BALANCE_SPECIES
+	CELADON_BALANCE_VENDING
+	ALIEN_BALANCE
+	BALLISTIC_SHIELD
+	YOU_NOT_SEPARATIST
+	SLOW_SPEED_CRAWLING
+	OUTPOST_MED_BALANCE
+<!--
+  Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
+  которое ты будешь использовать для обозначения файлов. Добавлены
+  дополнительные ID.
+-->
+
+### Описание мода
+
+Этот мод вносит различные изменения в балансе. 
+- Изменено количество получаемого лута с элиток.
+- Портированы изменения от Ганзы.
+- Добавлен претор ксеноморфов. Изменены характеристики ксеноморфов, а также очки РнД с них.
+-  Изменяем цены в оутпост меде.
+<!--
+  Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
+  А также любая полезная информация.
+-->
+
+### Изменения *кор кода*
+- Снаряжение шахтеров:
+EDIT: `code\modules\mining\equipment\explorer_gear.dm`: `/obj/item/clothing/suit/hooded/explorer` -> `allowed = list`
+- Изменены рад коллекторы:
+EDIT: `code\modules\power\singularity\collector.dm`: `#define RAD_COLLECTOR_EFFICIENCY`, `#define RAD_COLLECTOR_COEFFICIENT`, `#define RAD_COLLECTOR_OUTPUT`
+- Изменения части шатлов:
+EDIT: `code\game\machinery\shuttle\custom_shuttle.dm`: `/obj/machinery/power/shuttle` -> icon
+EDIT: `code\game\machinery\shuttle\custom_shuttle.dm`: `/obj/machinery/atmospherics/components/unary/shuttle` -> icon
+- Двигатели:
+EDIT: `code\game\machinery\shuttle\shuttle_engine_types.dm`: `fuel_use`, `thrust`
+- РнД:
+EDIT: `code\modules\research\techweb\all_nodes.dm`: `research_costs`, `export_price`, `prereq_ids`
+- Универсальная плата вендоров:
+ADD: `code\game\objects\items\circuitboards\machine_circuitboards.dm` : `/obj/item/circuitboard/machine/vendor`
+- Уменьшение цены еды в карго:
+EDIT: `code\modules\cargo\packs\food.dm` : `/datum/supply_pack/food/`
+- Броня была добавлена для Sonnensoldner hat и SolGov bicorne hat
+ADD: `code/modules/clothing/factions/solgov.dm`
+
+Ребаланс
+Лут с элиток (вместо гритер сундука, выпадает обычный сундук некрополиса)
+EDIT: `code\modules\mob\living\simple_animal\hostile\mining_mobs\elites\elite.dm`: `/obj/structure/elite_tumor/proc/onEliteLoss()` -> var/obj/structure/closet/crate/necropolis/tendril/lootbox = new /obj/structure/closet/crate/necropolis/tendril(loc)
+
+ADD: `code\modules\projectiles\ammunition\_ammunition.dm` : /obj/item/ammo_casing/attackby(obj/item/I, mob/user, params) -> добавлены звук подбора патрона в магазин с пола и задержка в 1 секунду зависящая от кликанья по патронам. Чем быстрее клики - тем быстрее загрузятся патроны. -> перемещено в `mod_celadon/items/code/ammunition.dm`
+Очки с зомби и ксеноморфов. Добавлен подтип для королевы и претора.
+REMOVE, EDIT, ADD: `D:\1ss\ShiptestYata\code\modules\surgery\experimental_dissection.dm`: `/datum/surgery_step/dissection/preop` - тэги ALIEN_BALANCE и CELADON_BALANCE
+Новые дефайны для диссекции:
+ADD: `code/__DEFINES/is_helpers.dm` - тэг ALIEN_BALANCE
+
+EDIT, ADD: `code/modules/mining/ore_veins.dm` : `/obj/structure/vein/shrouded, /obj/structure/vein/shrouded/classthree` - изменены шансы спавна ксеноморфов для шрауда. - тэг ALIEN_BALANCE
+
+REMOVE: `code\modules\projectiles\guns\energy.dm`
+REMOVE: `code/_globalvars/lists/maintenance_loot.dm`
+
+EDIT: `code/modules/mining/equipment/regenerative_core.dm` - теперь ИПС не смогут жрать ядра для полного отхила, их лечить будет на половину.
+EDIT:
+`code/modules/mob/living/simple_animal/hostile/mining_mobs/basilisk.dm`
+`code/modules/mob/living/simple_animal/hostile/mining_mobs/brimdemon.dm`
+`code/modules/mob/living/simple_animal/hostile/mining_mobs/elites/elite.dm`
+`code/modules/mob/living/simple_animal/hostile/mining_mobs/elites/goliath_broodmother.dm`
+`code/modules/mob/living/simple_animal/hostile/mining_mobs/elites/herald.dm`
+`code/modules/mob/living/simple_animal/hostile/mining_mobs/elites/legionnaire.dm`
+`code/modules/mob/living/simple_animal/hostile/mining_mobs/elites/pandora.dm`
+`code/modules/mob/living/simple_animal/hostile/alien.dm` - тэг ALIEN_BALANCE
+
+`code/modules/projectiles/ammunition/_ammunition.dm`
+
+`code/modules/reagents/chemistry/reagents/medicine_reagents.dm`
+
+`code/modules/surgery/tools.dm`
+
+`code/datums/status_effects/buffs.dm`
+
+ADD: 
+`code/modules/vending/_vending.dm` : Добавлена вероятность поломки автомата при уничтожение его с вероятностью в 30% что ничего не выпадет с него
+
+`code/modules/mob/living/simple_animal/hostile/alien.dm` - новые характеристики им.
+
+Хардсьюты:
+EDIT: `code/modules/clothing/spacesuits/hardsuit.dm`
+REMOVE: `code/modules/clothing/spacesuits/hardsuit.dm`
+
+EDIT: `code/__DEFINES/turfs.dm`	- Меняем минимальный урон необходимый для снова стены из камня
+EDIT: `code/game/turfs/closed/walls.dm` - Меняем хп стены в 2 раза = 800, увеличиваем минимальный порог урона с 8 до 25
+EDIT: `code/game/turfs/closed/minerals.dm` - Убираем флаг на минимальный дамаг стене, назначаем числовой параметр. И даем сопротивление стене из камня в 70% и хп в 1200
+
+BALANCE_CAN_HIT_TARGET
+- EDIT: `code/modules/projectiles/projectile.dm` : Меняем систему лежания и попадания по лежачим и стоячи
+
+EDIT: `code/modules/modular_computers/file_system/programs/radar.dm` : ставим заглушку, чтобы не пользовались планшетиком с радарчиком, пока кодеры не придумают иной вариант. Главное не забыть
+
+EDIT: `mod_celadon/return_content/code/hivebot.dm` : понизили шанс выпадения ксенобио с 45% до 15% с портала
+EDIT: `code/modules/reagents/chemistry/recipes/others.dm` : Меняем кровь слаймоменов в ядрах слаймов на кислоту
+
+EDIT: `code/game/objects/items/storage/briefcase.dm` : Меняем разрешенные вложенные предметы с нормала на смол, чтобы нельзя было вкладывать коробки с и создавать матрешку коробок. 
+EDIT: `code\modules\mob\living\simple_animal\hostile\megafauna\codename_claw.dm` : Меняем значениеи взрыва, чтобы коробку с лутом не взрывало после смерти челюстей
+
+EDIT: `code/__DEFINES/clothing.dm`
+EDIT: `code/__DEFINES/storage.dm`
+EDIT: `code/game/objects/items/storage/backpack.dm`
+
+ADD: `code/modules/overmap/objects/event_datum.dm` : Добавляем дебрисам рандом на безопасную скорость полетов
+
+EDIT: `code/modules/vehicles/scooter.dm` : Ускорение от роликов равно 35% а не 100% как было
+
+EDIT: `code/game/objects/items/shields.dm` : Реворк-Переработка щитов
+EDIT: `code/game/objects/items.dm` : Звуки для щитов
+
+REMOVE: `code/modules/mining/equipment/kinetic_crusher.dm` : Убрано отталкивает от кинетик-крашера
+
+CELADON_BALANCE_SPECIES
+EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Поднимаем скорость кепори до -0.30
+ADD: `code/modules/mob/living/carbon/human/species_types/lizardpeople.dm` : Даём сарати резист к огню на 15%
+ADD: `code/modules/mob/living/carbon/human/species_types/vox.dm` : Даём воксам резист к холоду на 20%
+
+ADD: `code/game/objects/items/storage/belt.dm` : Добавлен новый филтр крови в возможность грузить в мед разгрузку
+ADD: `code/game/objects/items/storage/belt.dm` : Добавлена вариация пояса медика без гипоспрея МК2 версии
+
+CELADON_BALANCE_CHISEL
+ADD: `code/game/objects/items/tools/chisel.dm` : видоизменяем долото делая его нормальным
+
+YOU_NOT_SEPARATIST
+ADD: `code/modules/mob/dead/new_player/ship_select.dm` : Добавляем сокрытие определенных кораблей для определенных видов
+
+CELADON_BALANCE_VENDING
+EDIT: `code/modules/vending/_vending.dm` : Убираем автоматическое сбрасывание к платным покупкам у всех торрговых автоматах что НЕ относятся к руинкам
+
+SLOW_SPEED_CRAWLING
+- EDIT: `code/__DEFINES/combat.dm`
+
+TWEAK_PACIFIST_TRAIT
+- `code/_onclick/item_attack.dm`				: Пацифисты не хотят вредить живым существам, но могут бить неживые объекты
+- `code/modules/mob/living/carbon/carbon.dm` 	: Пацифисты не могут бросаться предметами
+OUTPOST_MED_BALANCE
+- `code\modules\vending\medical_wall.dm` : изменены цены на товары
+- `code\modules\reagents\reagent_containers\hypospray.dm`, `code\game\objects\items\stacks\tape.dm`, `code\game\objects\items\storage\firstaid.dm`, `code\game\objects\items\stacks\medical.dm` : изменены цены на атропин и т.д. в оутпост меде
+<!--
+  Если вы редактировали какие-либо процедуры или переменные в кор коде,
+  они должны быть указаны здесь.
+  Нужно указать и файл, и процедуры/переменные.
+
+  Изменений нет - напиши "Отсутствуют"
+-->
+
+### Оверрайды
+
+- Отсутствуют
+<!--
+  Если ты добавлял новый модульный оверрайд, его нужно указать здесь.
+  Здесь указываются оверрайды в твоём моде и папке `_master_files`
+
+  Изменений нет - напиши "Отсутствуют"
+-->
+
+### Дефайны
+
+- Отсутствуют
+<!--
+  Если требовалось добавить какие-либо дефайны, укажи файлы,
+  в которые ты их добавил, а также перечисли имена.
+  И то же самое, если ты используешь дефайны, определённые другим модом.
+
+  Не используешь - напиши "Отсутствуют"
+-->
+
+### Используемые файлы, не содержащиеся в модпаке
+
+- `mod_celadon/_storage_icons/icons`
+<!--
+  Будь то немодульный файл или модульный файл, который не содержится в папке,
+  принадлежащей этому конкретному моду, он должен быть упомянут здесь.
+  Хорошими примерами являются иконки или звуки, которые используются одновременно
+  несколькими модулями, или что-либо подобное.
+-->
+
+### Авторы:
+
+- Кинетик Крашер, универасльная вендор плата, цены карго, одежда с ЦК, нёрф очков диссекции с спец мобов и её упрощение - Yata9arasu
+- Двигатели, рад. коллекторы - RalseiDreemuurr
+- Затронуты проджектайлы энергетических дробовиков, батарейки в энерегетических пушках теперь можно вытаскивать руками, убрана возможность вытаскивать батарею в само-заряжающихся пушках. - Molniz
+- Ganza Pain Elite Edition Deluxe: баланс трогается всех мобов элитных и простых, Пандора реально может убить вас - Ganza9991
+- Дроби со стамина дамагом увеличен АП - Ganza9991
+Затронуты патроны .44, .357, slug. Усилены в целом - Deylan
+- Изменения попаданий по лежачим - MrCat15352
+- Убрано замедление от синдидюффелей - Quinal
+- Изменение взрыва клешни - Molniz
+- Реворк щитов - KOCMOHABT
+<!--
+  Здесь находится твой никнейм
+  Если работал совместно - никнеймы тех, кто помогал.
+  В случае порта чего-либо должна быть ссылка на источник.
+-->

@@ -5,7 +5,10 @@
 	var/image/areaimage
 
 /datum/buildmode_mode/area_edit/New()
-	areaimage = image('icons/turf/areas.dmi', null, "yellow")
+	// [CELADON-EDIT] - CELADON_AREAS - Иначе никак не подсунуть свои зоны
+	// areaimage = image('icons/turf/areas.dmi', null, "yellow") // CELADON-EDIT - ORIGINAL
+	areaimage = image('mod_celadon/_storage_icons/icons/assets/areas.dmi', null, "yellow")
+	// [CELADON-EDIT]
 	..()
 
 /datum/buildmode_mode/area_edit/enter_mode(datum/buildmode/BM)

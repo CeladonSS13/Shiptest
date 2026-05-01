@@ -24,6 +24,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	RADIO_KEY_PGF = RADIO_CHANNEL_PGF,
 	RADIO_KEY_INTEQ = RADIO_CHANNEL_INTEQ,
 	RADIO_KEY_PIRATE = RADIO_CHANNEL_PIRATE,
+	RADIO_KEY_WIDEBAND = RADIO_CHANNEL_WIDEBAND,
 
 	// Admin
 	MODE_KEY_ADMIN = MODE_ADMIN,
@@ -365,7 +366,10 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	for(var/mob/M in listening)
 		if(M.client && (!M.client.prefs.chat_on_map || (SSlag_switch.measures[DISABLE_RUNECHAT] && !HAS_TRAIT(src, TRAIT_BYPASS_MEASURES))))
 			speech_bubble_recipients.Add(M.client)
-	var/image/I = image('icons/mob/talk.dmi', src, "[bubble_type][say_test(message)]", FLY_LAYER)
+	// [CELADON-EDIT] - CELADON_QOL - Меняем бабл эмоута
+	// var/image/I = image('icons/mob/talk.dmi', src, "[bubble_type][say_test(message)]", FLY_LAYER) // CELADON-EDIT -> ORIGIN
+	var/image/I = image('mod_celadon/_storage_icons/icons/assets/qol/talk.dmi', src, "[bubble_type][say_test(message)]", FLY_LAYER)
+	// [/CELADON-EDIT]
 	I.appearance_flags = APPEARANCE_UI_IGNORE_ALPHA
 	INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(flick_overlay_global), I, speech_bubble_recipients, 3 SECONDS)
 

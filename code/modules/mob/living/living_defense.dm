@@ -429,15 +429,19 @@
 	return 20
 
 //called when the mob receives a bright flash
-/mob/living/proc/flash_act(intensity = 1, override_blindness_check = 0, affect_silicon = 0, visual = 0, type = /atom/movable/screen/fullscreen/flash)
+/mob/living/proc/flash_act(intensity = 1, override_blindness_check = 0, affect_silicon = 0, visual = 0, type = /atom/movable/screen/fullscreen/flash, length = 2.5 SECONDS) // CELADON EDIT
 	if(HAS_TRAIT(src, TRAIT_NOFLASH))
 		return NONE
 	if(get_eye_protection() >= intensity)
 		return NONE
 	if(is_blind() && !override_blindness_check)
 		return FLASH_DAMAGE
+	// CELADON EDIT START
+	if(client?.prefs?.darkened_flash)
+		type = /atom/movable/screen/fullscreen/flash/black
 	overlay_fullscreen("flash", type)
-	addtimer(CALLBACK(src, PROC_REF(clear_fullscreen), "flash", 25), 25)
+	addtimer(CALLBACK(src, PROC_REF(clear_fullscreen), "flash", length), length)
+	// CELADON EDIT END
 	return FLASH_EFFECT | FLASH_DAMAGE
 
 //called when the mob receives a loud bang

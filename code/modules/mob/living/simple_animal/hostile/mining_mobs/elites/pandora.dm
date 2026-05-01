@@ -25,8 +25,10 @@
 	icon_dead = "pandora_dead"
 	icon_gib = "syndicate_gib"
 	health_doll_icon = "pandora"
-	maxHealth = 800
-	health = 800
+	// [CELADON-REMOVE] - CELADON_BALANCE_MOBS
+	// maxHealth = 800
+	// health = 800
+	// [/CELADON-REMOVE]
 	melee_damage_lower = 15
 	melee_damage_upper = 15
 	attack_verb_continuous = "smashes into the side of"
@@ -101,14 +103,25 @@
 
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/Life()
 	. = ..()
-	if(health >= maxHealth * 0.5)
+	// [CELADON-EDIT] - CELADON_BALANCE_MOBS
+	// if(health >= maxHealth * 0.5)
+	// 	cooldown_time = 20
+	// 	return
+	// if(health < maxHealth * 0.5 && health > maxHealth * 0.25)
+	// 	cooldown_time = 15
+	// 	return
+	// else
+	// 	cooldown_time = 10	// CELADON-EDIT - ORIGINAL
+	if(health >= maxHealth * 0.75)
 		cooldown_time = 20
-		return
-	if(health < maxHealth * 0.5 && health > maxHealth * 0.25)
+	if(health < maxHealth * 0.75 && health >= maxHealth * 0.25)
 		cooldown_time = 15
-		return
-	else
+	if(health < maxHealth * 0.25 && health >= 1)
 		cooldown_time = 10
+	if(!client)
+		if(get_dist(src, startingloc) > 9)
+			pandora_teleport(startingloc)
+	// [/CELADON-EDIT]
 
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/singular_shot(target)
 	ranged_cooldown = world.time + (cooldown_time * 0.5)
@@ -132,13 +145,23 @@
 			new /obj/effect/temp_visual/hierophant/blast/pandora(t, src)
 
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/pandora_teleport(target)
-	ranged_cooldown = world.time + cooldown_time
+	// [CELADON-EDIT] - CELADON_BALANCE_MOBS
+	// ranged_cooldown = world.time + cooldown_time
+	// var/turf/T = get_turf(target)
+	// var/turf/source = get_turf(src)
+	// new /obj/effect/temp_visual/hierophant/telegraph(T, src)
+	// new /obj/effect/temp_visual/hierophant/telegraph(source, src)
+	// playsound(source,'sound/machines/airlockopen.ogg', 200, 1)
+	// addtimer(CALLBACK(src, PROC_REF(pandora_teleport_2), T, source), 2)
 	var/turf/T = get_turf(target)
 	var/turf/source = get_turf(src)
-	new /obj/effect/temp_visual/hierophant/telegraph(T, src)
-	new /obj/effect/temp_visual/hierophant/telegraph(source, src)
-	playsound(source,'sound/machines/airlockopen.ogg', 200, 1)
-	addtimer(CALLBACK(src, PROC_REF(pandora_teleport_2), T, source), 2)
+	if(get_dist(T, source) > 2)
+		ranged_cooldown = world.time + cooldown_time
+		new /obj/effect/temp_visual/hierophant/telegraph(T, src)
+		new /obj/effect/temp_visual/hierophant/telegraph(source, src)
+		playsound(source,'sound/machines/airlockopen.ogg', 200, 1)
+		addtimer(CALLBACK(src, PROC_REF(pandora_teleport_2), T, source), 2)
+	// [/CELADON-EDIT]
 
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/pandora_teleport_2(turf/T, turf/source)
 	new /obj/effect/temp_visual/hierophant/telegraph/teleport(T, src)

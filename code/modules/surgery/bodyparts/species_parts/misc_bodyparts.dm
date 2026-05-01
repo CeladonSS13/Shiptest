@@ -48,7 +48,6 @@
 	limb_id = "abductor"
 	should_draw_greyscale = FALSE
 
-///JELLY
 /obj/item/bodypart/head/jelly
 	limb_id = SPECIES_JELLYPERSON
 	is_dimorphic = TRUE

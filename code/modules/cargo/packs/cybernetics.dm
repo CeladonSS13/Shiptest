@@ -1,3 +1,5 @@
+/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
+	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
 /datum/supply_pack/cybernetic
 	category = "Cybernetics"
 	crate_type = /obj/structure/closet/crate/medical
@@ -77,3 +79,4 @@
 	crate_type = /obj/structure/closet/crate/freezer
 	faction = /datum/faction/syndicate/cybersun
 	faction_discount = 50
+[/CELADON-DELETE] */

@@ -104,11 +104,12 @@
 	return wiki_icon
 
 /datum/autowiki/ship/proc/get_hud_image(datum/job/to_equip)
-	if(!icon_exists('icons/mob/hud.dmi', "hud[initial(to_equip.outfit.faction_icon)]"))
+	var/icon/hud_icon = 'mod_celadon/_storage_icons/icons/resprite/hud/hud.dmi' // [CELADON-EDIT] - CELADON_ADD_HUDS
+	if(!icon_exists(hud_icon, "hud[initial(to_equip.outfit.faction_icon)]")) // [CELADON-EDIT] - CELADON_ADD_HUDS
 		return FALSE
 
-	var/icon/hudicon = icon('icons/mob/hud.dmi', "hud[initial(to_equip.outfit.faction_icon)]")
-	hudicon.Blend(icon('icons/mob/hud.dmi', "hud[initial(to_equip.outfit.job_icon)]"), ICON_OVERLAY)
+	var/icon/hudicon = icon(hud_icon, "hud[initial(to_equip.outfit.faction_icon)]") // [CELADON-EDIT] - CELADON_ADD_HUDS
+	hudicon.Blend(icon(hud_icon, "hud[initial(to_equip.outfit.job_icon)]"), ICON_OVERLAY) // [CELADON-EDIT] - CELADON_ADD_HUDS
 	hudicon.Crop(1, 17, 8, 24)
 
 	return hudicon

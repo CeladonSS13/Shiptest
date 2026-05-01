@@ -46,6 +46,10 @@ export const OrbitContent = (props, context) => {
       title: 'Ships',
     },
     {
+      content: data.maps,
+      title: 'Maps',
+    },
+    {
       content: data.misc,
       title: 'Misc',
     },

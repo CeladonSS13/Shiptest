@@ -9,6 +9,7 @@ import {
   Knob,
   LabeledControls,
   NumberInput,
+  Divider,
 } from '../components';
 import { Window } from '../layouts';
 import { Table } from '../components/Table';
@@ -158,13 +159,22 @@ const SharedContent = (_props, context) => {
           />
         }
         buttons={
-          <Button
-            tooltip="Refresh Ship Stats"
-            tooltipPosition="left"
-            icon="sync"
-            disabled={isViewer}
-            onClick={() => act('reload_ship')}
-          />
+          <>
+            <Button
+              tooltip="Refresh Ship Stats"
+              tooltipPosition="left"
+              icon="sync"
+              disabled={isViewer}
+              onClick={() => act('reload_ship')}
+            />
+            <Button // [CELADON-ADD] - Signal S.O.S - mod_celadon\wideband\code\signal.dm
+              tooltip="Send S.O.S."
+              tooltipPosition="left"
+              icon="globe"
+              disabled={isViewer}
+              onClick={() => act('send_sos')}
+            />
+          </>
         }
       >
         <LabeledList>
@@ -177,6 +187,26 @@ const SharedContent = (_props, context) => {
             >
               <AnimatedNumber value={shipInfo.sensor_range} />
             </ProgressBar>
+            <Table.Cell>
+              <Button
+                tooltip="Decrease Signal Length"
+                tooltipPosition="right"
+                icon="arrow-left"
+				// [CELADON-ADD] - subshuttle fix
+				disabled={data.issubshuttle != null}
+				// [/CELADON-ADD] - subshuttle fix
+                onClick={() => act('sensor_decrease')}
+              />
+              <Button
+                tooltip="Increase Signal Length"
+                tooltipPosition="right"
+                icon="arrow-right"
+				// [CELADON-ADD] - subshuttle fix
+				disabled={data.issubshuttle != null}
+				// [/CELADON-ADD] - subshuttle fix
+                onClick={() => act('sensor_increase')}
+              />
+            </Table.Cell>
           </LabeledList.Item>
           {shipInfo.mass && (
             <LabeledList.Item label="Mass">
@@ -198,11 +228,13 @@ const ShipContent = (_props, context) => {
     estThrust,
     burnPercentage,
     speed,
+    course,
     heading,
     sector,
     eta,
     x,
     y,
+    arpa_ships = [],
   } = data;
   return (
     <>
@@ -220,13 +252,19 @@ const ShipContent = (_props, context) => {
             >
               <AnimatedNumber
                 value={speed}
-                format={(value) => value.toFixed(1)}
+                // [CELADON-EDIT] - CELADON FIXES
+                // format={(value) => value.toFixed(1)} // CELADON-EDIT - ORIGINAL
+                format={(value) => value.toFixed(2)}
+                // [/CELADON-EDIT]
               />
               Gm/s
             </ProgressBar>
           </LabeledList.Item>
           <LabeledList.Item label="Heading">
             <AnimatedNumber value={heading} />
+          </LabeledList.Item>
+          <LabeledList.Item label="Course">
+            <AnimatedNumber value={course} />
           </LabeledList.Item>
           <LabeledList.Item label="Position">
             X
@@ -241,6 +279,17 @@ const ShipContent = (_props, context) => {
             <AnimatedNumber value={eta} />
           </LabeledList.Item>
         </LabeledList>
+      </Section>
+      <Section title="ARPA">
+        {arpa_ships.map((ship) => (
+          <Table.Row key={ship.name}>
+            <Table.Cell>{ship.name}</Table.Cell>
+            <Divider vertical hidden />
+            <Table.Cell>BRG:{ship.brg}°</Table.Cell>
+            <Table.Cell>T/CPA:{ship.cpa}m {ship.tcpa}s</Table.Cell>
+          </Table.Row>
+        ))}
+
       </Section>
       <Section
         title="Engines"
@@ -308,7 +357,10 @@ const ShipContent = (_props, context) => {
             <Table.Cell>Max thrust per second:</Table.Cell>
             <Table.Cell>
               <AnimatedNumber
-                value={estThrust * 500}
+                // [CELADON-EDIT] - CELADON FIXES
+                // value={estThrust * 500} // CELADON-EDIT - ORIGINAL
+                value={estThrust * 1600}
+                // [/CELADON-EDIT]
                 format={(value) => value.toFixed(2)}
               />
               Gm/s²
@@ -331,6 +383,7 @@ const ShipControlContent = (_props, context) => {
     burnPercentage,
     speed,
     estThrust,
+    rotating,
   } = data;
   let flyable = !data.docking && !data.docked;
 
@@ -355,14 +408,16 @@ const ShipControlContent = (_props, context) => {
             tooltip="Undock"
             tooltipPosition="left"
             icon="sign-out-alt"
-            disabled={!data.docked || data.docking}
+			// [CELADON-EDIT] - subshuttles fix
+            disabled={!data.docked || data.docking || data.motheroutpost != null}
+			// [/CELADON-EDIT] - subshuttles fix
             onClick={() => act('undock')}
           />
           <Button
             tooltip="Dock in Empty Space"
             tooltipPosition="left"
             icon="sign-in-alt"
-            disabled={!flyable}
+            disabled={!flyable || speed}
             onClick={() => act('dock_empty')}
           />
           <Button
@@ -393,12 +448,10 @@ const ShipControlContent = (_props, context) => {
                   icon="arrow-left"
                   iconRotation={45}
                   mb={1}
-                  color={burnDirection === DIRECTIONS.northwest && 'good'}
+                  color={rotating === -1 && 'good'}
                   disabled={!flyable}
                   onClick={() =>
-                    act('change_heading', {
-                      dir: DIRECTIONS.northwest,
-                    })
+                    act('rotate_left')
                   }
                 />
               </Table.Cell>
@@ -420,30 +473,15 @@ const ShipControlContent = (_props, context) => {
                   icon="arrow-right"
                   iconRotation={-45}
                   mb={1}
-                  color={burnDirection === DIRECTIONS.northeast && 'good'}
+                  color={rotating === 1 && 'good'}
                   disabled={!flyable}
                   onClick={() =>
-                    act('change_heading', {
-                      dir: DIRECTIONS.northeast,
-                    })
+                    act('rotate_right')
                   }
                 />
               </Table.Cell>
             </Table.Row>
             <Table.Row height={1}>
-              <Table.Cell width={1}>
-                <Button
-                  icon="arrow-left"
-                  mb={1}
-                  color={burnDirection === DIRECTIONS.west && 'good'}
-                  disabled={!flyable}
-                  onClick={() =>
-                    act('change_heading', {
-                      dir: DIRECTIONS.west,
-                    })
-                  }
-                />
-              </Table.Cell>
               <Table.Cell width={1}>
                 <Button
                   tooltip={burnDirection === 0 ? 'Slow down' : 'Stop thrust'}
@@ -460,35 +498,6 @@ const ShipControlContent = (_props, context) => {
               </Table.Cell>
               <Table.Cell width={1}>
                 <Button
-                  icon="arrow-right"
-                  mb={1}
-                  color={burnDirection === DIRECTIONS.east && 'good'}
-                  disabled={!flyable}
-                  onClick={() =>
-                    act('change_heading', {
-                      dir: DIRECTIONS.east,
-                    })
-                  }
-                />
-              </Table.Cell>
-            </Table.Row>
-            <Table.Row height={1}>
-              <Table.Cell width={1}>
-                <Button
-                  icon="arrow-left"
-                  iconRotation={-45}
-                  mb={1}
-                  color={burnDirection === DIRECTIONS.southwest && 'good'}
-                  disabled={!flyable}
-                  onClick={() =>
-                    act('change_heading', {
-                      dir: DIRECTIONS.southwest,
-                    })
-                  }
-                />
-              </Table.Cell>
-              <Table.Cell width={1}>
-                <Button
                   icon="arrow-down"
                   mb={1}
                   color={burnDirection === DIRECTIONS.south && 'good'}
@@ -496,20 +505,6 @@ const ShipControlContent = (_props, context) => {
                   onClick={() =>
                     act('change_heading', {
                       dir: DIRECTIONS.south,
-                    })
-                  }
-                />
-              </Table.Cell>
-              <Table.Cell width={1}>
-                <Button
-                  icon="arrow-right"
-                  iconRotation={45}
-                  mb={1}
-                  color={burnDirection === DIRECTIONS.southeast && 'good'}
-                  disabled={!flyable}
-                  onClick={() =>
-                    act('change_heading', {
-                      dir: DIRECTIONS.southeast,
                     })
                   }
                 />
@@ -533,15 +528,24 @@ const ShipControlContent = (_props, context) => {
             animated
           />
           <NumberInput
-            value={(burnPercentage / 100) * estThrust * 500}
+            // [CELADON-EDIT] CELADON FIXES
+            // value={(burnPercentage / 100) * estThrust * 500} // CELADON-EDIT - ORIGINAL
+            value={(burnPercentage / 100) * estThrust * 1600}
+            // [/CELADON-EDIT]
             minValue={0.01}
             step={0.01}
             // 5 times a second, 60 seconds in a minute (5 * 60 = 300)
-            maxValue={estThrust * 500}
+            // [CELADON-EDIT] CELADON FIXES
+            // maxValue={estThrust * 500} // CELADON-EDIT - ORIGINAL
+            maxValue={estThrust * 1600}
+            // [/CELADON-EDIT]
             unit="Gm/s²"
             onDrag={(e, value) =>
               act('change_burn_percentage', {
-                percentage: Math.round((value / (estThrust * 500)) * 100),
+                // [CELADON-EDIT] CELADON FIXES
+                // percentage: Math.round((value / (estThrust * 500)) * 100), // CELADON-EDIT - ORIGINAL
+                percentage: Math.round((value / (estThrust * 1600)) * 100),
+                // [/CELADON-EDIT]
               })
             }
             format={(value) => value.toFixed(2)}

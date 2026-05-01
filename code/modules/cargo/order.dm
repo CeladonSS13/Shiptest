@@ -56,11 +56,11 @@
 	return requisition_paper
 
 /datum/supply_order/proc/generateManifest(obj/structure/closet/crate/container, owner) //generates-the-manifests.
-	var/manifest_text = "<h2>[market.name] Shipping Manifest</h2>"
+	var/manifest_text = "<h2>[command_name()] Shipping Manifest</h2>"	//var/manifest_text = "<h2>[market.name] Shipping Manifest</h2>" // [CELADON-EDIT] - ORIGINAL
 	manifest_text += "<hr/>"
 	if(owner && !(owner == "Unknown"))
 		manifest_text += "Direct purchase from [owner]<br/>"
-	manifest_text += "Destination: [market.name]<br/>"
+	manifest_text += "Destination: [station_name()]<br/>"	//	manifest_text += "Destination: [market.name]<br/>" // [CELADON-EDIT] - REVERT: Better cargo pack managment (#4419)
 	manifest_text += "Contents: <br/>"
 	manifest_text += "<ul>"
 	var/container_contents = list() // Associative list with the format (item_name = nº of occurrences, ...)

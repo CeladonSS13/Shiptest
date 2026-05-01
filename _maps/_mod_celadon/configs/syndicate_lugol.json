@@ -1,0 +1,45 @@
+{
+	"map_name": "Lugol-class GEC Engineering Project",
+	"map_short_name": "Lugol",
+	"description": "«Люголь», по сути, представляет собой огромную исследовательскую баржу Конкордата галактических инженеров, используемую в качестве испытательного стенда для усовершенствований энергетических систем, новых технологий и так далее. Поскольку Люголь предлагает свободу от обычных ограничений работы на борту судов, принадлежащих другим фракциям Синдиката, он особенно популярен среди наиболее радикальных членов GEC. Соответственно, они имеют репутацию либо совершивших невозможное, либо создающих эквивалент новой звезды, когда они неизбежно тают. Люголи обычно встречаются только в дальних секторах, где побочный ущерб от потенциальных аварий можно свести к минимуму, а секретность, когда это необходимо, можно лучше поддерживать.",
+	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_gec_lugol.dmm",
+	"map_id": "gec_lugol",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 3,
+	"prefix": "SEV",
+	"faction": "/datum/faction/syndicate",
+	"tags": ["Инженерный"],
+	"namelists": [
+		"ENGINEERING",
+		"GEC",
+		"SPACE"
+	],
+	"job_slots": {
+		"Project Overseer": {
+			"outfit": "/datum/outfit/job/cel/syndicate/ce/gec",
+			"slots": 1,
+			"officer": true
+		},
+		"GEC Engineering": {
+			"outfit": "/datum/outfit/job/cel/syndicate/engineer/gec",
+			"slots": 3
+		},
+		"GEC Atmospherics": {
+			"outfit": "/datum/outfit/job/cel/syndicate/atmos/gec",
+			"slots": 3
+		},
+		"Beverage Specialist": {
+			"outfit": "/datum/outfit/job/cel/syndicate/bartender",
+			"slots": 1
+		},
+		"GEC Miner": {
+			"outfit": "/datum/outfit/job/cel/syndicate/miner/gec",
+			"slots": 1
+		},
+		"GEC Apprentice": {
+			"outfit": "/datum/outfit/job/cel/syndicate/assistant/gec",
+			"slots": 2
+		}
+	}
+}

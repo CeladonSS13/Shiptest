@@ -15,6 +15,8 @@
 	if(!islist && !istype(D))
 		return
 
+	log_celadon_admin("ADMIN: [key_name(usr)] checked the View Variables for [D].") // [CELADON_ADD] - logging admin actions.
+
 	var/title = ""
 	var/refid = REF(D)
 	var/icon/sprite

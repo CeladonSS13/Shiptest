@@ -1,0 +1,36 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Koi-class Rescue Ship",
+	"map_short_name": "Koi",
+	"description": "Корабли класса Кои давно использовались для спасения экипажей, попавших под шторма, метеоритные поля и прочие опасности космоса. Сняты с производства и большая часть уже отправилась на кладбища кораблей, но это не мешает использовать их дальше, находя на старых заброшенных складах. Обшивка корабля производилась на века, так что её герметичность не нарушена.",
+	"map_path": "_maps/_mod_celadon/shuttles/independent/independent_koi.dmm",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 4,
+	"prefix": "IMV",
+	"faction": "/datum/faction/independent",
+	"tags": [
+	"Медицинское",
+	"Суб-шаттл"
+	],
+	"namelists": [
+		"GENERAL",
+		"SPACE",
+		"NATURAL"
+	],
+	"job_slots": {
+		"Chief Medical Officer": {
+			"outfit": "/datum/outfit/job/cel/independent/cmo",
+			"officer": true,
+			"slots": 1
+		},
+		"Medical Doctor": {
+			"outfit": "/datum/outfit/job/cel/independent/doctor",
+			"slots": 2
+		},
+		"Paramedic": {
+			"outfit": "/datum/outfit/job/cel/independent/paramedic",
+			"slots": 1
+		}
+	}
+}

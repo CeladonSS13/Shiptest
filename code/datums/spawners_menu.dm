@@ -33,6 +33,7 @@
 					this["short_desc"] = MS.short_desc
 					this["flavor_text"] = MS.flavour_text
 					this["important_info"] = MS.important_info
+					this["can_load_appearance"] = MS.can_load_appearance // [CELADON-EDIT] - CELADON_LOAD_PREF
 				else
 					var/obj/O = spawner_obj
 					this["desc"] = O.desc
@@ -53,7 +54,7 @@
 	if(!spawnerlist.len)
 		return
 	var/obj/effect/mob_spawn/MS = pick(spawnerlist)
-	if(!istype(MS) || !(MS in SSpoints_of_interest.other_points_of_interest))
+	if(!istype(MS) || !(MS in GLOB.poi_list)) // [CELADON-EDIT]
 		return
 	switch(action)
 		if("jump")

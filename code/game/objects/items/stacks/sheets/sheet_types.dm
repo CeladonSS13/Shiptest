@@ -74,6 +74,9 @@ GLOBAL_LIST_INIT(plasteel_recipes, list ( \
 		new/datum/stack_recipe("nanoweave (orange)", /obj/item/stack/tile/carpet/nanoweave/orange, 1, 4, 20), \
 	)), \
 	new/datum/stack_recipe("shutters frame", /obj/structure/poddoor_assembly/shutters, 5, time = 50, one_per_turf = 1, on_floor = 1), \
+	// [CELADON-ADD] - CELADON_STRUCTURES - Барикады
+	new/datum/stack_recipe("plasteel barricade", /obj/structure/deployable_barricade/metal/plasteel, 10, time = 10 SECONDS, one_per_turf = TRUE, on_floor = TRUE), \
+	// [/CELADON-ADD]
 	new/datum/stack_recipe("blast door frame", /obj/structure/poddoor_assembly, 15, time = 50, one_per_turf = 1, on_floor = 1)
 ))
 
@@ -114,6 +117,21 @@ GLOBAL_LIST_INIT(plasteel_recipes, list ( \
 GLOBAL_LIST_INIT(wood_recipes, list ( \
 	new/datum/stack_recipe("wooden sandals", /obj/item/clothing/shoes/sandal, 1), \
 	new/datum/stack_recipe("wood floor tile", /obj/item/stack/tile/wood, 1, 4, 20), \
+	// [CELADON-ADD] - CRAFTING_RECIPE_SUNS
+	null, \
+	new/datum/stack_recipe_list("SUNS wood tiles", list( \
+		new/datum/stack_recipe("hatched wood tile", /obj/item/stack/tile/suns/hatch, 2), \
+		new/datum/stack_recipe("hatched mahogany tile", /obj/item/stack/tile/suns/hatch/mahogany, 2), \
+		new/datum/stack_recipe("hatched maple tile", /obj/item/stack/tile/suns/hatch/maple, 2), \
+		new/datum/stack_recipe("hatched ebony tile", /obj/item/stack/tile/suns/hatch/ebony, 2), \
+		new/datum/stack_recipe("hatched walnut tile", /obj/item/stack/tile/suns/hatch/walnut, 2), \
+		new/datum/stack_recipe("hatched bamboo tile", /obj/item/stack/tile/suns/hatch/bamboo, 2), \
+		new/datum/stack_recipe("hatched birch tile", /obj/item/stack/tile/suns/hatch/birch, 2), \
+		new/datum/stack_recipe("hatched yew tile", /obj/item/stack/tile/suns/hatch/yew, 2), \
+		new/datum/stack_recipe("diagonal wood tile", /obj/item/stack/tile/suns/diagonal, 2), \
+		)), \
+	null, \
+	// [/CELADON-ADD]
 	new/datum/stack_recipe("wood table frame", /obj/structure/table_frame/wood, 2, time = 10), \
 	new/datum/stack_recipe("rifle stock", /obj/item/weaponcrafting/stock, 10, time = 40), \
 	new/datum/stack_recipe("rolling pin", /obj/item/kitchen/rollingpin, 2, time = 30), \
@@ -124,7 +142,10 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	new/datum/stack_recipe("coffin", /obj/structure/closet/crate/coffin, 5, time = 15, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("book case", /obj/structure/bookcase, 4, time = 15, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("drying rack", /obj/machinery/smartfridge/drying_rack, 10, time = 15, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("sauna oven", /obj/structure/sauna_oven, 15, time = 15, one_per_turf = TRUE, on_floor = TRUE), \
+	// [CELADON-EDIT] - CELADON_SAUNA - Замена сауны на нашу, крутую версию
+	// new/datum/stack_recipe("sauna oven", /obj/structure/sauna_oven, 15, time = 15, one_per_turf = TRUE, on_floor = TRUE), \ \\ ORIGINAL
+	new/datum/stack_recipe("sauna oven steam", /obj/structure/sauna_oven_steam, 15, time = 15, one_per_turf = TRUE, on_floor = TRUE), \
+	// [/CELADON-EDIT]
 	new/datum/stack_recipe("wooden barrel", /obj/structure/fermenting_barrel, 8, time = 50, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("dog bed", /obj/structure/bed/dogbed, 10, time = 10, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("dresser", /obj/structure/dresser, 10, time = 15, one_per_turf = TRUE, on_floor = TRUE), \

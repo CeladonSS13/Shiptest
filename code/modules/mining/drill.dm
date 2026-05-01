@@ -83,6 +83,10 @@
 		our_vein.stop_spawning()
 
 /obj/machinery/drill/Destroy()
+	// [CELADON-ADD] - CELADON_FIXES - FIXES_DRILLCLASS - Останавливаем спавн мобов при удалении бура
+	if(our_vein?.currently_spawning)
+		our_vein.stop_spawning()
+	// [/CELADON-ADD]
 	QDEL_NULL(soundloop)
 	QDEL_NULL(cell)
 	return ..()

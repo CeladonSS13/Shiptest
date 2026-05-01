@@ -29,7 +29,7 @@
 #define RADIO_KEY_CENTCOM "e"
 #define RADIO_TOKEN_CENTCOM ":e"
 
-#define RADIO_CHANNEL_SOLGOV "SolGov"
+#define RADIO_CHANNEL_SOLGOV "SolFed" // [CELADON-EDIT] - CELADON_FIXES
 #define RADIO_KEY_SOLGOV "s"
 #define RADIO_TOKEN_SOLGOV ":s"
 

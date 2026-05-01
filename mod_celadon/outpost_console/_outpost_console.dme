@@ -1,0 +1,102 @@
+#ifndef MODPACK_CELADON_OUTPOST_CONSOLE
+#define MODPACK_CELADON_OUTPOST_CONSOLE
+
+#include "_outpost_console.dm"
+
+#include "code/console.dm"
+#include "code/supply_pack.dm"
+
+// MARK: Independent
+// Secutiry
+#include "code/supply_pack/independent/security/gun.dm"
+#include "code/supply_pack/independent/security/magazines.dm"
+#include "code/supply_pack/independent/security/ammo.dm"
+#include "code/supply_pack/independent/security/weapon_attachments.dm"
+#include "code/supply_pack/independent/security/sec_supply.dm"
+// Equipment
+#include "code/supply_pack/independent/equipment/armor.dm"
+#include "code/supply_pack/independent/equipment/spacesuit.dm"
+#include "code/supply_pack/independent/equipment/exploration.dm"
+// Medical
+#include "code/supply_pack/independent/medical/medical.dm"
+#include "code/supply_pack/independent/medical/chemistry.dm"
+// Engineering
+#include "code/supply_pack/independent/engineering/machinery.dm"
+#include "code/supply_pack/independent/engineering/tools.dm"
+#include "code/supply_pack/independent/engineering/canister.dm"
+// Civilian
+#include "code/supply_pack/independent/misc/animal.dm"
+#include "code/supply_pack/independent/misc/civilian.dm"
+#include "code/supply_pack/independent/misc/costumes_toys.dm"
+#include "code/supply_pack/independent/misc/fishing.dm"
+#include "code/supply_pack/independent/misc/food.dm"
+#include "code/supply_pack/independent/misc/material.dm"
+#include "code/supply_pack/independent/misc/vendor_refill.dm"
+#include "code/supply_pack/independent/misc/emergency.dm"
+// Tech
+#include "code/supply_pack/independent/tech/idea.dm"
+#include "code/supply_pack/independent/tech/mechs.dm"
+#include "code/supply_pack/independent/tech/modsuits.dm"
+#include "code/supply_pack/independent/tech/cybernetics.dm"
+
+// MARK: Inteq
+// Secutiry
+#include "code/supply_pack/inteq/security/gun.dm"
+#include "code/supply_pack/inteq/security/magazines.dm"
+#include "code/supply_pack/inteq/security/ammo.dm"
+// Equipment
+#include "code/supply_pack/inteq/equipment/armor.dm"
+#include "code/supply_pack/inteq/equipment/spacesuit.dm"
+#include "code/supply_pack/inteq/equipment/sec_supply.dm"
+// Other
+#include "code/supply_pack/inteq/medical.dm"
+#include "code/supply_pack/inteq/mechs.dm"
+
+// MARK: Nanotrasen
+// Secutiry
+#include "code/supply_pack/nanotrasen/security/gun.dm"
+#include "code/supply_pack/nanotrasen/security/magazines.dm"
+#include "code/supply_pack/nanotrasen/security/ammo.dm"
+#include "code/supply_pack/nanotrasen/security/sec_supply.dm"
+// Equipment
+#include "code/supply_pack/nanotrasen/equipment/armor.dm"
+#include "code/supply_pack/nanotrasen/equipment/spacesuit.dm"
+// Other
+#include "code/supply_pack/nanotrasen/medical.dm"
+#include "code/supply_pack/nanotrasen/tools.dm"
+#include "code/supply_pack/nanotrasen/mechs.dm"
+
+// MARK: SolFed
+// Secutiry
+#include "code/supply_pack/solfed/security/gun.dm"
+#include "code/supply_pack/solfed/security/magazines.dm"
+#include "code/supply_pack/solfed/security/ammo.dm"
+#include "code/supply_pack/solfed/security/sec_supply.dm"
+// Equipment
+#include "code/supply_pack/solfed/equipment/armor.dm"
+#include "code/supply_pack/solfed/equipment/spacesuit.dm"
+// Misc
+#include "code/supply_pack/solfed/misc/civilian_decoration.dm"
+#include "code/supply_pack/solfed/misc/costumes_toys.dm"
+#include "code/supply_pack/solfed/misc/food.dm"
+// Other
+#include "code/supply_pack/solfed/mechs.dm"
+
+// MARK: Syndicate
+// Secutiry
+#include "code/supply_pack/syndicate/security/gun.dm"
+#include "code/supply_pack/syndicate/security/magazines.dm"
+#include "code/supply_pack/syndicate/security/ammo.dm"
+#include "code/supply_pack/syndicate/security/weapon_attachments.dm"
+#include "code/supply_pack/syndicate/security/sec_supply.dm"
+// Equipment
+#include "code/supply_pack/syndicate/equipment/armor.dm"
+#include "code/supply_pack/syndicate/equipment/spacesuit.dm"
+// Other
+#include "code/supply_pack/syndicate/food.dm"
+#include "code/supply_pack/syndicate/medical.dm"
+#include "code/supply_pack/syndicate/tools.dm"
+// Tech
+#include "code/supply_pack/syndicate/tech/mechs.dm"
+#include "code/supply_pack/syndicate/tech/cybernetics.dm"
+#endif

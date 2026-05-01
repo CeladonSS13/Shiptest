@@ -19,7 +19,10 @@
 /obj/item/storage/briefcase/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_w_class = WEIGHT_CLASS_NORMAL
+	// [CELADON-EDIT] - CELADON_BALANCE - Кейс теперь может вмещать много
+	// STR.max_w_class = WEIGHT_CLASS_NORMAL	// CELADON-EDIT - ORIGINAL
+	STR.max_w_class = WEIGHT_CLASS_SMALL
+	// [/CELADON-EDIT]
 	STR.max_combined_w_class = 21
 	STR.use_sound = 'sound/items/storage/briefcase.ogg'
 

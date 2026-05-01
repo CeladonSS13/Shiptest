@@ -143,6 +143,19 @@
 
 	return ..()
 
+
+/// Returns a user-facing blood type string, safely handling exotic blood reagents
+// [CELADON-ADD] - CELADON_BLOOD_DISPLAY
+/mob/living/carbon/proc/get_blood_type_display()
+	var/blood_type_display = "Unknown"
+	if(dna?.blood_type)
+		return dna.blood_type.name
+	var/blood_id = get_blood_id()
+	if(blood_id && blood_id != /datum/reagent/blood)
+		var/datum/reagent/R = GLOB.chemical_reagents_list[blood_id]
+		return R ? R.name : blood_id
+	return blood_type_display
+// [/CELADON-ADD] - CELADON_BLOOD_DISPLAY
 /mob/living/carbon/human/can_use_guns(obj/item/G)
 	. = ..()
 	if(G.trigger_guard == TRIGGER_GUARD_NORMAL)

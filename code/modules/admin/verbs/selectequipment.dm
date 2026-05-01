@@ -33,8 +33,13 @@
 	//serializable string for the UI to keep track of which outfit is selected
 	var/selected_identifier = "/datum/outfit"
 
-/datum/select_equipment/New(_user, mob/target)
+	// Добавляем callback для кастомного применения
+	var/custom_apply_callback	// [CELADON-ADD] - Quick Spawn
+
+/datum/select_equipment/New(_user, mob/target, apply_callback)	// [CELADON-EDIT] - Quick Spawn // + apply_callback
 	user = CLIENT_FROM_VAR(_user)
+
+	custom_apply_callback = apply_callback	// [CELADON-ADD] - Quick Spawn
 
 	if(!ishuman(target) && !isobserver(target))
 		alert("Invalid mob")
@@ -136,7 +141,8 @@
 		cached_outfits = list()
 		cached_outfits += list(outfit_entry("General", /datum/outfit, "Naked", priority=TRUE))
 		cached_outfits += make_outfit_entries("General", subtypesof(/datum/outfit) - typesof(/datum/outfit/job) - typesof(/datum/outfit/plasmaman))
-		cached_outfits += make_outfit_entries("Jobs", typesof(/datum/outfit/job))
+		cached_outfits += make_outfit_entries("Ship Outfits", typesof(/datum/outfit/job/cel))						// [CELADON-EDIT] - SHIP_JOBS
+		cached_outfits += make_outfit_entries("Jobs", typesof(/datum/outfit/job) - typesof(/datum/outfit/job/cel))	// [/CELADON-EDIT]
 		cached_outfits += make_outfit_entries("Plasmamen Outfits", typesof(/datum/outfit/plasmaman))
 
 	data["outfits"] = cached_outfits
@@ -182,6 +188,12 @@
 				new_outfit = new new_outfit
 			if(!istype(new_outfit))
 				return
+
+			// [CELADON-ADD] - Quick Spawn
+			if(custom_apply_callback)
+				return custom_apply_callback = new_outfit
+			// [/CELADON-ADD]
+
 			user.admin_apply_outfit(target_mob, new_outfit)
 
 		if("customoutfit")

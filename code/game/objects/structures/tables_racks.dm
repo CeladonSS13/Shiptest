@@ -612,6 +612,9 @@
 	smoothing_groups = null
 	canSmoothWith = null
 	can_buckle = TRUE
+	// [CELADON-ADD] - CELADON_FIXES - Чиним операционный стол
+	climbable = FALSE
+	// [/CELADON-ADD]
 	buckle_lying = 90 //I don't see why you wouldn't be lying down while buckled to it
 	buckle_requires_restraints = FALSE
 	can_flip = FALSE

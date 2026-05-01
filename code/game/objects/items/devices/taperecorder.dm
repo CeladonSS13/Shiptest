@@ -127,7 +127,7 @@
 	. = ..()
 	if(mytape && recording)
 		mytape.timestamp += mytape.used_capacity
-		mytape.storedinfo += "\[[time2text(mytape.used_capacity * 10,"mm:ss")]\] [speaker.GetVoice()] [speaker.say_mod(raw_message, message_language, message_mods)], \"[raw_message]\""
+		mytape.storedinfo += "\[[time2text(mytape.used_capacity,"mm:ss")]\] [speaker.GetVoice()] [lang_treat(speaker, message_language, raw_message, spans, message_mods)]" // [CELADON - EDIT] - CELADON_FIXES
 
 /obj/item/taperecorder/verb/record()
 	set name = "Start Recording"

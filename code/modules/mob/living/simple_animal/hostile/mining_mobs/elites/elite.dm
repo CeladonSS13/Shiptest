@@ -108,48 +108,74 @@ While using this makes the system rely on OnFire, it still gives options for tim
 
 /obj/structure/elite_tumor/attack_hand(mob/user)
 	. = ..()
-	if(ishuman(user))
-		switch(activity)
-			if(TUMOR_PASSIVE)
-				activity = TUMOR_ACTIVE
-				visible_message(span_boldwarning("[src] convulses as your arm enters its radius.  Your instincts tell you to step back."))
-				activator = user
-				if(boosted)
-					mychild.playsound_local(get_turf(mychild), 'sound/effects/magic.ogg', 40, 0)
-					to_chat(mychild, "<b>Someone has activated your tumor.  You will be returned to fight shortly, get ready!</b>")
-				addtimer(CALLBACK(src, PROC_REF(return_elite)), 30)
-				INVOKE_ASYNC(src, PROC_REF(arena_checks))
-			if(TUMOR_INACTIVE)
-				activity = TUMOR_ACTIVE
-				var/mob/dead/observer/elitemind = null
-				visible_message(span_boldwarning("[src] begins to convulse.  Your instincts tell you to step back."))
-				activator = user
-				if(!boosted)
-					addtimer(CALLBACK(src, PROC_REF(spawn_elite)), 30)
-					return
-				visible_message(span_boldwarning("Something within [src] stirs..."))
-				var/list/candidates = pollCandidatesForMob("Do you want to play as a lavaland elite?", ROLE_SENTIENCE, null, ROLE_SENTIENCE, 50, src, POLL_IGNORE_SENTIENCE_POTION)
-				if(candidates.len)
-					audible_message(span_boldwarning("The stirring sounds increase in volume!"))
-					elitemind = pick(candidates)
-					elitemind.playsound_local(get_turf(elitemind), 'sound/effects/magic.ogg', 40, 0)
-					to_chat(elitemind, "<b>You have been chosen to play as a Lavaland Elite.\nIn a few seconds, you will be summoned on Lavaland as a monster to fight your activator, in a fight to the death.\nYour attacks can be switched using the buttons on the top left of the HUD, and used by clicking on targets or tiles similar to a gun.\nWhile the opponent might have an upper hand with  powerful mining equipment and tools, you have great power normally limited by AI mobs.\nIf you want to win, you'll have to use your powers in creative ways to ensure the kill.  It's suggested you try using them all as soon as possible.\nShould you win, you'll receive extra information regarding what to do after.  Good luck!</b>")
-					addtimer(CALLBACK(src, PROC_REF(spawn_elite), elitemind), 100)
-				else
-					visible_message(span_boldwarning("The stirring stops, and nothing emerges.  Perhaps try again later."))
-					activity = TUMOR_INACTIVE
-					activator = null
+	// [CELADON-EDIT] - CELADON_BALANCE_MOBS
+	if(!ishuman(user))
+		return
+	switch(activity)
+		if(TUMOR_PASSIVE)
+			// Prevents the user from being forcemoved back and forth between two elite arenas.
+			if(HAS_TRAIT(user, TRAIT_ELITE_CHALLENGER))
+				user.visible_message(span_warning("[user] reaches for [src] with [user.p_their()] arm, but nothing happens."),
+					span_warning("You reach for [src] with your arm... but nothing happens."))
+				return
+			activity = TUMOR_ACTIVE
+			user.visible_message(span_boldwarning("[src] convulses as [user]'s arm enters its radius.  Uh-oh..."),
+				span_boldwarning("[src] convulses as your arm enters its radius.  Your instincts tell you to step back."))
+			make_activator(user)
+			if(boosted)
+				mychild.playsound_local(get_turf(mychild), 'sound/effects/magic.ogg', 40, 0)
+				to_chat(mychild, "<b>Someone has activated your tumor.  You will be returned to fight shortly, get ready!</b>")
+			addtimer(CALLBACK(src, PROC_REF(return_elite)), 30)
+			INVOKE_ASYNC(src, PROC_REF(arena_checks))
+		if(TUMOR_INACTIVE)
+			if(HAS_TRAIT(user, TRAIT_ELITE_CHALLENGER))
+				user.visible_message(span_warning("[user] reaches for [src] with [user.p_their()] arm, but nothing happens."),
+					span_warning("You reach for [src] with your arm... but nothing happens."))
+				return
+			activity = TUMOR_ACTIVE
+			var/mob/dead/observer/elitemind = null
+			visible_message(span_boldwarning("[src] begins to convulse.  Your instincts tell you to step back."))
+			make_activator(user)
+			if(!boosted)
+				addtimer(CALLBACK(src, PROC_REF(spawn_elite)), 30)
+				return
+			visible_message(span_boldwarning("Something within [src] stirs..."))
+			var/list/candidates = pollCandidatesForMob("Do you want to play as a lavaland elite?", ROLE_SENTIENCE, null, ROLE_SENTIENCE, 50, src, POLL_IGNORE_SENTIENCE_POTION)
+			if(candidates.len)
+				audible_message(span_boldwarning("The stirring sounds increase in volume!"))
+				elitemind = pick(candidates)
+				elitemind.playsound_local(get_turf(elitemind), 'sound/effects/magic.ogg', 40, 0)
+				to_chat(elitemind, "<b>You have been chosen to play as a Lavaland Elite.\nIn a few seconds, you will be summoned on Lavaland as a monster to fight your activator, in a fight to the death.\n\
+					Your attacks can be switched using the buttons on the top left of the HUD, and used by clicking on targets or tiles similar to a gun.\n\
+					While the opponent might have an upper hand with  powerful mining equipment and tools, you have great power normally limited by AI mobs.\n\
+					If you want to win, you'll have to use your powers in creative ways to ensure the kill. It's suggested you try using them all as soon as possible.\n\
+					Should you win, you'll receive extra information regarding what to do after. Good luck!</b>")
+				addtimer(CALLBACK(src, PROC_REF(spawn_elite), elitemind), 100)
+			else
+				visible_message(span_boldwarning("The stirring stops, and nothing emerges.  Perhaps try again later."))
+				activity = TUMOR_INACTIVE
+				clear_activator(user)
+	// [/CELADON-EDIT]
 
 /obj/structure/elite_tumor/proc/spawn_elite(mob/dead/observer/elitemind)
 	var/selectedspawn = pick(potentialspawns)
 	mychild = new selectedspawn(loc)
 	visible_message(span_boldwarning("[mychild] emerges from [src]!"))
 	playsound(loc,'sound/effects/phasein.ogg', 200, 0, 50, TRUE, TRUE)
+	// [CELADON-ADD] - CELADON_BALANCE_MOBS
+	if(iselitefauna(mychild))
+		for(var/mob/living/carbon/C in range(12, src))
+			mychild.maxHealth += 150
+			mychild.health = mychild.maxHealth
+	// [/CELADON-ADD]
 	if(boosted)
 		mychild.key = elitemind.key
 		mychild.sentience_act()
 		notify_ghosts("\A [mychild] has been awakened in \the [get_area(src)]!", source = mychild, action = NOTIFY_ORBIT, flashwindow = FALSE, header = "Lavaland Elite awakened")
-	icon_state = "tumor_popped"
+	// [CELADON-EDIT] - CELADON_BALANCE_MOBS
+	// icon_state = "tumor_popped"	// CELADON-EDIT - ORIGINAL
+	icon_state = "[mfauna]tumor_popped"
+	// [/CELADON-EDIT]
 	INVOKE_ASYNC(src, PROC_REF(arena_checks))
 
 /obj/structure/elite_tumor/proc/return_elite()
@@ -170,7 +196,10 @@ While using this makes the system rely on OnFire, it still gives options for tim
 /obj/structure/elite_tumor/Destroy()
 	STOP_PROCESSING(SSobj, src)
 	mychild = null
-	activator = null
+	// [CELADON-EDIT] - CELADON_BALANCE_MOBS
+	// activator = null	// CELADON-EDIT - ORIGINAL
+	clear_activator(activator)
+	// [/CELADON-EDIT]
 	return ..()
 
 /obj/structure/elite_tumor/process(seconds_per_tick)
@@ -183,7 +212,10 @@ While using this makes the system rely on OnFire, it still gives options for tim
 
 /obj/structure/elite_tumor/attackby(obj/item/I, mob/user, params)
 	. = ..()
-	if(istype(I, /obj/item/organ/regenerative_core) && activity == TUMOR_INACTIVE && !boosted)
+	// [CELADON-EDIT] - CELADON_BALANCE_MOBS
+	// if(istype(I, /obj/item/organ/regenerative_core) && activity == TUMOR_INACTIVE && !boosted)	// CELADON-EDIT - ORIGINAL
+	if(istype(I, /obj/item/organ/regenerative_core) && activity == TUMOR_INACTIVE && !boosted && !doom)
+	// [/CELADON-EDIT]
 		var/obj/item/organ/regenerative_core/core = I
 		if(!core.preserved)
 			return
@@ -194,6 +226,55 @@ While using this makes the system rely on OnFire, it still gives options for tim
 		desc = "[desc]  This one seems to glow with a strong intensity."
 		qdel(core)
 		return TRUE
+	// [CELADON-ADD] - CELADON_BALANCE_MOBS
+	if(istype(I, /obj/item/gem) && activity == TUMOR_INACTIVE && !boosted && !doom)
+		var/obj/item/gem/gem = I
+		doom = TRUE
+		light_range = 6
+		switch(gem.type)
+			if(/obj/item/gem/phoron)
+				potentialspawns = list(/mob/living/simple_animal/hostile/megafauna/hierophant)
+				mfauna = "hierophant_"
+				// icon_state = "hierophant_tumor_passive"
+				// flick("hierophant_tumor_rise", src)
+				playsound(loc,'sound/magic/blind.ogg', 150, 0, 50, TRUE, TRUE)
+				desc = "[desc] Around it appears to be glowing purple squares."
+				visible_message("<span class='boldwarning'>As [user] drops the [gem] into [src], purple glowing shapes appears around [src].</span>")
+			if(/obj/item/gem/bloodstone)
+				potentialspawns = list(/mob/living/simple_animal/hostile/megafauna/bubblegum)
+				mfauna = "bubblegum_"
+				icon_state = "bubblegum_tumor_passive"
+				flick("bubblegum_tumor_rise", src)
+				playsound(loc,'sound/magic/blind.ogg', 150, 0, 50, TRUE, TRUE)
+				desc = "[desc] This one seems to be soaked with red blood."
+				visible_message("<span class='boldwarning'>As [user] drops the [gem] into [src], a burst of blood coming out.</span>")
+			if(/obj/item/gem/rupee)
+				potentialspawns = list(/mob/living/simple_animal/hostile/megafauna/colossus)
+				mfauna = "colossus_"
+				icon_state = "colossus_tumor_passive"
+				flick("colossus_tumor_rise", src)
+				playsound(loc,'sound/weapons/pierce_slow.ogg', 150, 0, 50, TRUE, TRUE)
+				desc = "[desc] There is a spikes around it."
+				visible_message("<span class='boldwarning'>As [user] drops the [gem] into [src], a small metal spikes starts to rise around it.</span>")
+			if(/obj/item/gem/amber)
+				potentialspawns = list(/mob/living/simple_animal/hostile/megafauna/dragon)
+				mfauna = "dragon_"
+				// icon_state = "dragon_tumor_passive"
+				// flick("dragon_tumor_rise", src)
+				playsound(loc,'sound/creatures/legion_death_far.ogg', 50, 0, 50, TRUE, TRUE)
+				desc = "[desc] A black fog coming from within."
+				visible_message("<span class='boldwarning'>As [user] drops the [gem] into [src], a distant growl comes from within.</span>")
+			if(/obj/item/gem/void)
+				potentialspawns = list(/mob/living/simple_animal/hostile/megafauna/demonic_frost_miner)
+				mfauna = "dfminer_"
+				// icon_state = "demonfrostminer_tumor_passive"
+				// flick("demonfrostminer_tumor_rise", src)
+				playsound(loc,'sound/creatures/narsie_rises.ogg', 50, 0, 50, TRUE, TRUE)
+				desc = "An odd, pulsing tumor sticking out of the ground. You feel a strange feeling, that telling you to reach out and touch it... and run away as far as you can and cannot. Ice forms on and around it."
+				visible_message("<span class='boldwarning'>As [user] drops the [gem] into [src], it suddenly changes colors to void black, as a strange energy comes from within. You have awaken something terrible...</span>")
+		qdel(gem)
+		return gem
+	// [/CELADON-ADD]
 
 /obj/structure/elite_tumor/proc/arena_checks()
 	if(activity != TUMOR_ACTIVE || QDELETED(src))
@@ -214,19 +295,29 @@ While using this makes the system rely on OnFire, it still gives options for tim
 	var/turf/T = get_turf(src)
 	if(loc == null)
 		return
-	for(var/t in RANGE_TURFS(12, T))
-		if(get_dist(t, T) == 12)
+	// [CELADON-EDIT] - CELADON_BALANCE_MOBS
+	// for(var/t in RANGE_TURFS(12, T))
+	// 	if(get_dist(t, T) == 12)	// CELADON-EDIT - ORIGINAL
+	for(var/t in RANGE_TURFS(10, T))
+		if(get_dist(t, T) == 10)
+	// [/CELADON-EDIT]
 			var/obj/effect/temp_visual/elite_tumor_wall/newwall
 			newwall = new /obj/effect/temp_visual/elite_tumor_wall(t, src)
 			newwall.activator = src.activator
 			newwall.ourelite = src.mychild
 
 /obj/structure/elite_tumor/proc/border_check()
-	if(activator != null && get_dist(src, activator) >= 12)
+	// [CELADON-EDIT] - CELADON_BALANCE_MOBS
+	// if(activator != null && get_dist(src, activator) >= 12)	// CELADON-EDIT - ORIGINAL
+	if(activator != null && get_dist(src, activator) >= 10)
+	// [/CELADON-EDIT]
 		activator.forceMove(loc)
 		visible_message(span_boldwarning("[activator] suddenly reappears above [src]!"))
 		playsound(loc,'sound/effects/phasein.ogg', 200, 0, 50, TRUE, TRUE)
-	if(mychild != null && get_dist(src, mychild) >= 12)
+	// [CELADON-EDIT] - CELADON_BALANCE_MOBS
+	// if(mychild != null && get_dist(src, mychild) >= 12)	// CELADON-EDIT - ORIGINAL
+	if(mychild != null && get_dist(src, mychild) >= 10)
+	// [/CELADON-EDIT]
 		mychild.forceMove(loc)
 		visible_message(span_boldwarning("[mychild] suddenly reappears above [src]!"))
 		playsound(loc,'sound/effects/phasein.ogg', 200, 0, 50, TRUE, TRUE)
@@ -235,23 +326,22 @@ While using this makes the system rely on OnFire, it still gives options for tim
 	playsound(loc,'sound/effects/tendril_destroyed.ogg', 200, 0, 50, TRUE, TRUE)
 	visible_message(span_boldwarning("[src] begins to convulse violently before beginning to dissipate."))
 	visible_message(span_boldwarning("As [src] closes, something is forced up from down below."))
-	var/obj/structure/closet/crate/necropolis/tendril/greater/lootbox = new /obj/structure/closet/crate/necropolis/tendril/greater(loc)
-	if(!boosted)
-		mychild = null
-		activator = null
-		qdel(src)
-		return
-	if(mychild.loot_drop != null)
-		new mychild.loot_drop(lootbox)
-		if(prob(25))
+	var/obj/structure/closet/crate/necropolis/tendril/lootbox = new /obj/structure/closet/crate/necropolis/tendril(loc) // [CELADON-EDIT] - CELADON_BALANCE_MOBS - Меняем сундуки на обычные некрополиса
+	// [CELADON-EDIT] - CELADON_BALANCE_MOBS
+	if(boosted)
+		if(mychild.loot_drop != null && prob(50))
+			new mychild.loot_drop(lootbox)
+		else
 			new /obj/item/tumor_shard(lootbox)
-	mychild = null
-	activator = null
+	// [/CELADON-REMOVE]
 	qdel(src)
 
 /obj/structure/elite_tumor/proc/onEliteWon()
 	activity = TUMOR_PASSIVE
-	activator = null
+	// [CELADON-EDIT] - CELADON_BALANCE_MOBS
+	// activator = null	// CELADON-EDIT - ORIGINAL
+	clear_activator(activator)
+	// [/CELADON-EDIT]
 	mychild.revive(full_heal = TRUE, admin_revive = TRUE)
 	if(boosted)
 		times_won++
@@ -322,11 +412,22 @@ While using this makes the system rely on OnFire, it still gives options for tim
 /obj/effect/temp_visual/elite_tumor_wall/Destroy()
 	if(smoothing_flags & (SMOOTH_CORNERS|SMOOTH_BITMASK))
 		QUEUE_SMOOTH_NEIGHBORS(src)
-	activator = null
-	ourelite = null
+	// [CELADON-REMOVE] - CELADON_BALANCE_MOBS
+	// activator = null
+	// ourelite = null
+	// [/CELADON-REMOVE]
 	return ..()
 
 /obj/effect/temp_visual/elite_tumor_wall/CanAllowThrough(atom/movable/mover, border_dir)
 	. = ..()
-	if(mover == ourelite || mover == activator)
-		return FALSE
+	// [CELADON-EDIT] - CELADON_BALANCE_MOBS
+	// if(mover == ourelite || mover == activator)
+	// 	return FALSE	// CELADON-EDIT - ORIGINAL
+	return FALSE
+	// [/CELADON-EDIT]
+
+// [CELADON-ADD] - CELADON_BALANCE_MOBS
+#undef TUMOR_ACTIVE
+#undef TUMOR_INACTIVE
+#undef TUMOR_PASSIVE
+// [/CELADON-ADD]

@@ -1,0 +1,52 @@
+#ifndef MODPACK_CELADON_MOBS
+#define MODPACK_CELADON_MOBS
+
+#include "_mobs.dm"
+
+#include "code/hostile/roaches/reagent_containers.dm"
+#include "code/hostile/roaches/roach.dm"
+#include "code/hostile/roaches/fuhrer.dm"
+#include "code/hostile/roaches/benzin.dm"
+#include "code/hostile/roaches/bluespace.dm"
+#include "code/hostile/roaches/hunter.dm"
+#include "code/hostile/roaches/kaiser.dm"
+#include "code/hostile/roaches/nanite.dm"
+#include "code/hostile/roaches/roachling.dm"
+#include "code/hostile/roaches/support.dm"
+#include "code/hostile/roaches/tank.dm"
+#include "code/hostile/roaches/toxic.dm"
+
+#include "code/hostile/_mob_spawner.dm"
+#include "code/hostile/alien_praetorian.dm"
+#include "code/hostile/cavern_geist.dm"
+#include "code/hostile/magma_goliath.dm"
+#include "code/hostile/magma_legion.dm"
+#include "code/hostile/plasma_legion.dm"
+#include "code/hostile/tele.dm"
+#include "code/hostile/wizard_constructs.dm"
+
+#include "code/megafauna/clawloot.dm"
+#include "code/megafauna/dragon.dm"
+
+#include "code/pets/ada.dm"
+#include "code/pets/alta.dm"
+#include "code/pets/eldritch.dm"
+#include "code/pets/emma.dm"
+#include "code/pets/fennec.dm"
+#include "code/pets/moro.dm"
+#include "code/pets/pig.dm"
+#include "code/pets/rouge.dm"
+#include "code/pets/syndicat.dm"
+#include "code/pets/syndifox.dm"
+#include "code/pets/syndimouse.dm"
+#include "code/pets/zlatchek.dm"
+
+#include "code/simple_animal/bots.dm"
+#include "code/simple_animal/iriska.dm"
+#include "code/simple_animal/faction/nanotrasen.dm"
+#include "code/simple_animal/faction/solfed.dm"
+#include "code/simple_animal/faction/solfed_corpse.dm"
+
+#include "code/animamobs.dm"
+
+#endif

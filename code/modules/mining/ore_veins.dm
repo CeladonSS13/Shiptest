@@ -37,6 +37,10 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	var/max_mobs = 3
 	var/spawn_time = 10 SECONDS
 	var/mob_types = list(
+		// [CELADON-ADD] - RETURN_CONTENT
+		/mob/living/simple_animal/hostile/asteroid/goliath/beast/tendril = 60,
+		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/tendril = 20,
+		// [/CELADON-ADD]
 		/mob/living/simple_animal/hostile/asteroid/goliath/beast/nest = 60,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/nest = 20,
 		/mob/living/simple_animal/hostile/asteroid/brimdemon = 20,
@@ -213,6 +217,11 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		)
 	max_mobs = 2
 	mob_types = list(
+		// [CELADON-ADD] - RETURN_CONTENT
+		/mob/living/simple_animal/hostile/asteroid/goliath/beast/tendril = 60,
+		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/tendril = 30,
+		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/dwarf/tendril = 5,
+		// [/CELADON-ADD]
 		/mob/living/simple_animal/hostile/asteroid/goliath/beast/nest = 60,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/nest = 30,
 		/mob/living/simple_animal/hostile/asteroid/brimdemon = 20,
@@ -241,6 +250,11 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	max_mobs = 3 //Best not to go past 6 due to balance and lag reasons
 	spawn_time = 8 SECONDS
 	mob_types = list(
+		// [CELADON-ADD] - RETURN_CONTENT
+		/mob/living/simple_animal/hostile/asteroid/goliath/beast/tendril = 60,
+		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/tendril = 30,
+		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/dwarf/tendril = 10,
+		// [/CELADON-ADD]
 		/mob/living/simple_animal/hostile/asteroid/goliath/beast/nest = 60,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/nest = 30,
 		/mob/living/simple_animal/hostile/asteroid/brimdemon = 20,
@@ -267,6 +281,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 
 /obj/structure/vein/ice
 	mob_types = list(
+		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow/tendril = 20, // [CELADON-ADD] - RETURN_CONTENT
 		/mob/living/simple_animal/hostile/asteroid/wolf = 40,
 		/mob/living/basic/bear/polar = 40,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow/nest = 20,
@@ -401,7 +416,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	mob_types = list(
 		/mob/living/simple_animal/hostile/asteroid/wolf/random = 20,
 		/mob/living/simple_animal/hostile/poison/giant_spider/tarantula = 1,
-		/mob/living/simple_animal/hostile/jungle/seedling = 5,
+		// /mob/living/simple_animal/hostile/jungle/seedling = 5, // [CELADON-REMOVE] - FIXES_MOB_SPAWNER - Убираем нечестных цветков
 		/mob/living/simple_animal/hostile/jungle/mega_arachnid = 20,
 		/mob/living/simple_animal/hostile/jungle/mook = 30,
 	)
@@ -714,7 +729,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 /obj/structure/vein/shrouded
 	mining_charges = 8
 	mob_types = list(
-		/mob/living/simple_animal/hostile/asteroid/royalcrab = 50,
+		/mob/living/simple_animal/hostile/asteroid/royalcrab = 30, // [CELADON-EDIT] - ALIEN_BALANCE
 		/mob/living/simple_animal/hostile/alien = 5,
 		/mob/living/simple_animal/hostile/alien/drone = 5,
 		/mob/living/simple_animal/hostile/alien/sentinel = 1,
@@ -745,7 +760,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	mining_charges = 10
 	vein_class = 2
 	mob_types = list(
-		/mob/living/simple_animal/hostile/asteroid/royalcrab = 30,
+		/mob/living/simple_animal/hostile/asteroid/royalcrab = 10, // [CELADON-EDIT] - ALIEN_BALANCE
 		/mob/living/simple_animal/hostile/alien = 5,
 		/mob/living/simple_animal/hostile/alien/drone = 5,
 		/mob/living/simple_animal/hostile/alien/sentinel = 1,
@@ -770,10 +785,11 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	vein_class = 3
 
 	mob_types = list(
-		/mob/living/simple_animal/hostile/asteroid/royalcrab = 10,
+		/mob/living/simple_animal/hostile/asteroid/royalcrab = 5, // [CELADON-EDIT] - ALIEN_BALANCE
 		/mob/living/simple_animal/hostile/alien = 5,
 		/mob/living/simple_animal/hostile/alien/drone = 5,
-		/mob/living/simple_animal/hostile/alien/sentinel = 1,
+		/mob/living/simple_animal/hostile/alien/sentinel = 2, // [CELADON-EDIT] - ALIEN_BALANCE
+		/mob/living/simple_animal/hostile/alien/praetorian = 1, // [CELADON-ADD] - ALIEN_BALANCE
 		)
 
 	ore_list = list(

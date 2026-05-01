@@ -1,0 +1,37 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Mimos - class civil ship",
+	"map_short_name": "Mimos",
+	"description": "Гражданское судно нестандартной конструкции. Экипаж известен как профессиональный цирк мимов и клоунов, хотя и былая слава далеко позади. Хоть судно уже далеко не новое, но все еще исправно служит своим владельцам домом и защитой.",
+	"map_path": "_maps/_mod_celadon/shuttles/independent/independent_mimos.dmm",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 3,
+	"prefix": "ISV",
+	"faction": "/datum/faction/independent",
+	"tags": [
+		"Специализированный",
+		"Сервисный",
+		"РП Фокус"
+	],
+	"namelists": [
+		"GENERAL",
+		"SPACE"
+		],
+	"job_slots": {
+		"Master Mime": {
+			"outfit": "/datum/outfit/job/cel/independent/mime/captain",
+			"officer": true,
+			"slots": 1
+		},
+		"Lower deck Mime": {
+			"outfit": "/datum/outfit/job/cel/independent/mime",
+			"officer": true,
+			"slots": 4
+		},
+		"Maintenance Clown": {
+			"outfit": "/datum/outfit/job/cel/independent/clown/maintenanceclown",
+			"slots": 1
+		}
+	}
+}

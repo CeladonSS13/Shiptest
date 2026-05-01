@@ -24,6 +24,17 @@ Mineral Sheets
  */
 
 GLOBAL_LIST_INIT(sandstone_recipes, list ( \
+	// [CELADON-ADD] - CRAFTING_RECIPE_SUNS
+	new/datum/stack_recipe_list("SUNS floor tiles", list( \
+		new/datum/stack_recipe("white marble tile", /obj/item/stack/tile/suns, 2), \
+		new/datum/stack_recipe("white plain marble tile", /obj/item/stack/tile/suns/plain, 2), \
+		new/datum/stack_recipe("patterned white marble tile", /obj/item/stack/tile/suns/pattern, 2), \
+		new/datum/stack_recipe("black marble tile", /obj/item/stack/tile/suns/dark, 2), \
+		new/datum/stack_recipe("black plain marble tile", /obj/item/stack/tile/suns/dark/plain, 2), \
+		new/datum/stack_recipe("patterned black marble tile", /obj/item/stack/tile/suns/dark/pattern, 2), \
+		)), \
+	null, \
+	// [/CELADON-ADD]
 	new/datum/stack_recipe("pile of dirt", /obj/machinery/hydroponics/soil, 3, time = 10, one_per_turf = 1, on_floor = 1), \
 	new/datum/stack_recipe("sandstone door", /obj/structure/mineral_door/sandstone, 10, one_per_turf = 1, on_floor = 1), \
 	new/datum/stack_recipe("Breakdown into sand", /obj/item/stack/ore/glass, 1, one_per_turf = 0, on_floor = 1) \
@@ -62,7 +73,21 @@ GLOBAL_LIST_INIT(sandstone_recipes, list ( \
 	novariants = TRUE
 	merge_type = /obj/item/stack/sheet/mineral/sandbags
 
+// [CELADON-ADD] - CELADON_STRUCTURES - Барикады - Добавляем количество
+/obj/item/stack/sheet/mineral/sandbags/five
+	amount = 5
+
+/obj/item/stack/sheet/mineral/sandbags/twenty
+	amount = 20
+
+/obj/item/stack/sheet/mineral/sandbags/fifty
+	amount = 50
+// [/CELADON-ADD]
+
 GLOBAL_LIST_INIT(sandbag_recipes, list ( \
+	// [CELADON-ADD] - CELADON_STRUCTURES - Барикады
+	new/datum/stack_recipe("sandbags barricade", /obj/structure/deployable_barricade/sandbags, 2, time = 5 SECONDS, one_per_turf = TRUE, on_floor = TRUE), \
+	// [/CELADON-ADD]
 	new/datum/stack_recipe("sandbags", /obj/structure/barricade/sandbags, 1, time = 25, one_per_turf = 1, on_floor = 1), \
 	))
 
@@ -418,11 +443,15 @@ GLOBAL_LIST_INIT(plastitanium_recipes, list ( \
 	material_type = /datum/material/snow
 
 GLOBAL_LIST_INIT(snow_recipes, list ( \
-	new/datum/stack_recipe("Snow wall", /turf/closed/wall/mineral/snow, 5, one_per_turf = 1, on_floor = 1), \
+	new/datum/stack_recipe("Snow wall", /turf/closed/wall/mineral/snow, time = 2 SECONDS, one_per_turf = 1, on_floor = 1), \
 	new/datum/stack_recipe("Snowman", /obj/structure/statue/snow/snowman, 5, one_per_turf = 1, on_floor = 1), \
 	new/datum/stack_recipe("Snowball", /obj/item/toy/snowball, 1), \
 	new/datum/stack_recipe("Snow tile", /obj/item/stack/tile/mineral/snow, 1, 4, 20), \
+	// [CELADON-ADD] - CELADON_STRUCTURES - Барикады
+	new/datum/stack_recipe("snow barricade", /obj/structure/deployable_barricade/snow, time = 3 SECONDS, one_per_turf = TRUE, on_floor = TRUE), \
+	// [/CELADON-ADD]
 	))
+// [CELADON-EDIT] - NO-MOMENTAL-CRAFT
 
 /obj/item/stack/sheet/mineral/snow/get_main_recipes()
 	. = ..()

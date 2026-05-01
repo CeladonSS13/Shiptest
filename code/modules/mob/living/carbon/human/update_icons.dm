@@ -392,13 +392,16 @@ There are several things that need to be remembered:
 		/// Does this clothing need to be generated via greyscale?
 		var/handled_by_bodytype = FALSE
 
-		if((dna.species.bodytype & BODYTYPE_DIGITIGRADE) && ((I.supports_variations & DIGITIGRADE_VARIATION) || (I.supports_variations & DIGITIGRADE_VARIATION_SAME_ICON_FILE)))
-			var/obj/item/bodypart/leg = src.get_bodypart(BODY_ZONE_L_LEG)
-			if(leg.bodytype & BODYTYPE_DIGITIGRADE && !leg.plantigrade_forced)
-				icon_file = DIGITIGRADE_SHOES_PATH
-			if((I.supports_variations & DIGITIGRADE_VARIATION_SAME_ICON_FILE))
-				icon_file = I.mob_overlay_icon
-				target_overlay = "[target_overlay]_digi"
+		// [/CELADON-EDIT]
+		var/obj/item/bodypart/leg_bodypart = src.get_bodypart(BODY_ZONE_L_LEG)
+		if(leg_bodypart.bodytype & BODYTYPE_DIGITIGRADE)
+			if(icon_exists(SARATHI_DIGITIGRADE_BOOTS_PATH, RESOLVE_ICON_STATE(I)))
+				icon_file = SARATHI_DIGITIGRADE_BOOTS_PATH
+				if(I.snout_override_icon)
+					icon_file = I.snout_override_icon
+			else
+				handled_by_bodytype = TRUE
+		// [CELADON-EDIT] - RESPRITES
 
 		else if(dna.species.bodytype & BODYTYPE_VOX)
 			if(I.supports_variations & VOX_VARIATION)
@@ -497,8 +500,15 @@ There are several things that need to be remembered:
 		var/handled_by_bodytype = FALSE
 
 		var/obj/item/bodypart/head_bodypart = src.get_bodypart(BODY_ZONE_HEAD)
-		if((head_bodypart.bodytype & BODYTYPE_SNOUT) && (I.supports_variations & SNOUTED_VARIATION))
-			target_overlay = "[target_overlay]_snouted"
+		// [CELADON-EDIT] - CELADON_RESPRITE
+		if(head_bodypart.bodytype & BODYTYPE_SNOUT)
+			if(icon_exists(SARATHI_SNOUTED_HELM_PATH, RESOLVE_ICON_STATE(I)))
+				icon_file = SARATHI_SNOUTED_HELM_PATH
+				if(I.snout_override_icon)
+					icon_file = I.snout_override_icon
+			else
+				handled_by_bodytype = TRUE
+		// [CELADON-EDIT]
 
 		if((head_bodypart.bodytype & BODYTYPE_SNOUT_SMALL) && (I.supports_variations & SNOUTED_SMALL_VARIATION))
 			target_overlay = "[target_overlay]_snouted_small"
@@ -605,11 +615,19 @@ There are several things that need to be remembered:
 		/// Does this clothing need to be generated via greyscale?
 		var/handled_by_bodytype = FALSE
 
-		if((dna.species.bodytype & BODYTYPE_DIGITIGRADE) && ((I.supports_variations & DIGITIGRADE_VARIATION) || (I.supports_variations & DIGITIGRADE_VARIATION_SAME_ICON_FILE)))
-			icon_file = DIGITIGRADE_SUIT_PATH
-			if((I.supports_variations & DIGITIGRADE_VARIATION_SAME_ICON_FILE))
-				icon_file = I.mob_overlay_icon
-				target_overlay = "[target_overlay]_digi"
+		// [CELADON - EDIT] - CELADON_RESPRITE
+		if(dna.species.bodytype & BODYTYPE_DIGITIGRADE)
+			if(ITEM_SLOT_OCLOTHING)
+				if(icon_exists(SARATHI_DIGITIGRADE_SUIT_PATH, RESOLVE_ICON_STATE(I)) )
+					icon_file = SARATHI_DIGITIGRADE_SUIT_PATH
+				else
+					handled_by_bodytype = TRUE
+			else if(ITEM_SLOT_ICLOTHING)
+				if(icon_exists(SARATHI_DIGITIGRADE_UNDER_PATH, RESOLVE_ICON_STATE(I)) )
+					icon_file = SARATHI_DIGITIGRADE_UNDER_PATH
+				else
+					handled_by_bodytype = TRUE
+		// [/CELADON - EDIT]
 
 		else if(dna.species.bodytype & BODYTYPE_VOX)
 			if(I.supports_variations & VOX_VARIATION)
@@ -691,8 +709,13 @@ There are several things that need to be remembered:
 
 		if(!(ITEM_SLOT_MASK in check_obscured_slots()))
 			var/obj/item/bodypart/head_bodypart = src.get_bodypart(BODY_ZONE_HEAD)
-			if((head_bodypart.bodytype & BODYTYPE_SNOUT) && (I.supports_variations & SNOUTED_VARIATION))
-				target_overlay = "[target_overlay]_snouted"
+			// [CELADON-EDIT] - CELADON_RESPRITE
+			if(head_bodypart.bodytype & BODYTYPE_SNOUT)
+				if(icon_exists(SARATHI_SNOUTED_MASK_PATH, RESOLVE_ICON_STATE(I)))
+					icon_file = SARATHI_SNOUTED_MASK_PATH
+				else
+					handled_by_bodytype = TRUE
+			// [CELADON-EDIT]
 
 			if((head_bodypart.bodytype & BODYTYPE_SNOUT_SMALL) && (I.supports_variations & SNOUTED_SMALL_VARIATION))
 				target_overlay = "[target_overlay]_snouted_small"

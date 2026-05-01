@@ -1,59 +1,59 @@
-# Shiptest Codebase
+<div align="center">
 
-[![Checks](https://github.com/shiptest-ss13/Shiptest/workflows/Checks/badge.svg)](https://github.com/shiptest-ss13/Shiptest/actions/workflows/ci_suite.yml) [![Percentage of issues still open](http://isitmaintained.com/badge/open/shiptest-ss13/Shiptest.svg)](https://isitmaintained.com/project/shiptest-ss13/Shiptest "Percentage of issues still open") [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/shiptest-ss13/Shiptest.svg)](https://isitmaintained.com/project/shiptest-ss13/Shiptest "Average time to resolve an issue") [![GitHub issues](https://img.shields.io/github/issues/shiptest-ss13/Shiptest)](https://github.com/shiptest-ss13/Shiptest/issues) ![GitHub top language](https://img.shields.io/github/languages/top/shiptest-ss13/Shiptest)
+# Shiptest
+ [![Compile](https://github.com/shiptest-ss13/Shiptest/workflows/Checks/badge.svg)](https://github.com/CeladonSS13/Shiptest/actions/workflows/compile_changelogs.yml) [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3.0-blue.svg)](https://opensource.org/licenses/AGPL-3.0)
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-resentment.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/contains-technical-debt.svg)](https://user-images.githubusercontent.com/8171642/50290880-ffef5500-043a-11e9-8270-a2e5b697c86c.png) [![forinfinityandbyond](https://user-images.githubusercontent.com/5211576/29499758-4efff304-85e6-11e7-8267-62919c3688a9.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
+</div>
 
--   **Website:** <https://shiptest.net>
--   **Ko-Fi:** <https://ko-fi.com/shiptest>
--   **Wiki:** <https://shiptest.net/wiki>
--   **Code Docs:** <https://codedocs.shiptest.net>
--   **Discord:** <https://shiptest.net/discord>
--   **Coderbus Discord:** <https://discord.gg/Vh8TJp9>
+<table>
+<tr><td align="center" width="2000"><b>
+<a href="https://github.com/shiptest-ss13/Shiptest">Upstream</a> • 
+<a href="https://discord.gg/rxsggTJzY3">Discord</a> • 
+<a href="https://wiki.celadon.pro/">Wiki</a> • 
+<a href="https://boosty.to/celadon">Patreon</a>
+</b></td></tr>
+<tr><td align="center" width="2000"><b>
+<a href="#рекомендации-для-контрибьюторов">Коллаборация</a> • 
+<a href="#безопасность">Безопасность</a> • 
+<a href="#лизцензия">Лицензия</a> • 
+<a href="#получение-кода-и-установка">Установка</a>
+</b></td></tr>
+</table>
 
-This is the codebase for the Ship-based Shiptest flavoured fork of SpaceStation 13.
+---
 
-Shiptest is a thrill-packed round-based exploration and roleplaying game set against the backdrop of a whimsical metal spacefaring machine masquerading as a spaceship, with charming spritework designed to represent the sci-fi setting and it's dangerous undertones. Have fun, and survive with your crew!
+### Рекомендации для контрибьюторов
 
-## DOWNLOADING
+**Пожалуйста, воздержись от написания комментариев, не связанных с кодом в PR на GitHub.** Ознакомься с Правилами Поведения, где сказано о том где следует оставлять отзывы пользователям.
 
-[Downloading](.github/DOWNLOADING.md)
+Ожидается, что все пользователи ознакомятся с [`/docs/CODE_OF_CONDUCT.md`](/docs/CODE_OF_CONDUCT.md) перед взаимодействием с репозиторием или другими пользователями.
 
-[Running on the server](.github/RUNNING_A_SERVER.md)
+Для оформления мёрж-рекввестом и для работы с кодом рекумендуется ознакомиться с [документацией по оформлению и работе с PR-ами](https://github.com/CeladonSS13/Shiptest/blob/alpha-stable/.github/CONTRIBUTING.md).
 
-[Maps and Away Missions](.github/MAPS_AND_AWAY_MISSIONS.md)
+---
 
-## Requirements for contributors
+### Безопасность
 
-[Guidelines for Contributors](.github/CONTRIBUTING.md)
+С Политикой Безопасности этого репозитория, а также с тем, как репортить уязвимости ты можешь ознакомиться в [`/docs/SECURITY.md`](/docs/SECURITY.md).
 
-[Documenting your code](.github/AUTODOC_GUIDE.md)
+---
 
-[Policy configuration system](.github/POLICYCONFIG.md)
+### Лизцензия
 
-## CODEBASE CREDITS
+Код Tgstantion, и, следовательно, Shiptest лицензируется в соответствии с [GNU Affero General Public License v3](https://www.gnu.org/licenses/agpl.html), полное содержание которой находится в файле [`LICENSE`](/LICENSE).
 
--   Whitesands, for the original codebase
--   /tg/, for the original codebase of the original codebase
--   BeeStation, for the many QoL changes
--   Oracle, for the inspiration and wonderful features and sprites
--   Interstation, for bridging the gap between Oracle and Modern /tg/
--   YogStation, for multiple different features
--   Baystation, for the initial overmap concept and sprites
+Код с датой авторства git до `1420675200 +0000` (08.01.2015, 00:00 GMT) распространяется под лицензией [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0.html), с полной версией которой вы можете ознакомиться в [`/docs/GPLv3.txt`](/docs/GPLv3.txt).
 
-And thank you to any other codebase not mentioned here that has been used in the code. Your wonderful contributions are known.
+Предполагается, что весь код, авторство которого датируется `1420675200 +0000` или позже, лицензируется по AGPL v3. Если вы хотите лицензировать по GPL v3, укажите это в сообщении коммита, а также внутри всех добавленных файлов.
 
-## LICENSE
+Если ты желаешь разрабатывать и хостить эту кодбазу, закрыв исходный код, ты можешь использовать все коммиты до `1420675200 +0000`, которые лицензированы по GPL v3. Главное различие заключается в том, что если ты хостишь сервер, используя любой код, лицензированный в соответствии с AGPLv3, ты должен предоставить полный исходный код для пользователей ваших серверов, включая дополнения и изменения, которые ты сделал.
 
-All code after [commit 333c566b88108de218d882840e61928a9b759d8f on 2014/31/12 at 4:38 PM PST](https://github.com/tgstation/tgstation/commit/333c566b88108de218d882840e61928a9b759d8f) is licensed under [GNU AGPL v3](https://www.gnu.org/licenses/agpl-3.0.html).
+Статья ["Зачем нужна GPL Афферо"](https://www.gnu.org/licenses/why-affero-gpl.html) рассказывает об этом подробнее.
 
-All code before [commit 333c566b88108de218d882840e61928a9b759d8f on 2014/31/12 at 4:38 PM PST](https://github.com/tgstation/tgstation/commit/333c566b88108de218d882840e61928a9b759d8f) is licensed under [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.html).
-(Including tools unless their readme specifies otherwise.)
+Все ассеты, включая иконки и звуки, лицензируются по [Creative Commons 3.0 BY-SA license](https://creativecommons.org/licenses/by-sa/3.0/), если не указано иное.
 
-See LICENSE and GPLv3.txt for more details.
+---
 
-The TGS DMAPI API is licensed as a subproject under the MIT license.
+### Получение кода и установка
 
-See the footer of [code/\_\_DEFINES/tgs.dm](./code/__DEFINES/tgs.dm) and [code/modules/tgs/LICENSE](./code/modules/tgs/LICENSE) for the MIT license.
-
-All assets including icons and sound are under a [Creative Commons 3.0 BY-SA license](https://creativecommons.org/licenses/by-sa/3.0/) unless otherwise indicated.
+Все инструкции по получению, установке, обновлению и запуску этого кода находятся можно изучить в [`/docs/installation.md`](/docs/installation.md).

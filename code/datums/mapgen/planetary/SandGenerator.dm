@@ -99,6 +99,7 @@
 		/obj/structure/vein/sand/classthree/rare = 1,
 		/obj/effect/spawner/random/anomaly/sand = 1,
 		/obj/effect/greeble_spawner/whitesands/oasis = 1,
+		/obj/structure/elite_tumor = 4, // [CELADON - ADD] - CELADON_RETURN_CONTENT_SPAWN
 	)
 	mob_spawn_chance = 4
 	mob_spawn_list = list(
@@ -201,6 +202,7 @@
 		/obj/structure/geyser/random = 4,
 		/obj/structure/vein/sand/classtwo = 4,
 		/obj/effect/spawner/random/anomaly/sand/cave = 1
+		/obj/structure/elite_tumor = 4, // [CELADON - ADD] - CELADON_RETURN_CONTENT_SPAWN
 	)
 	mob_spawn_chance = 4
 	mob_spawn_list = list(

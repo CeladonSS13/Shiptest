@@ -42,11 +42,26 @@
 
 /obj/structure/musician/piano/Initialize(mapload)
 	. = ..()
-	if(prob(50) && icon_state == initial(icon_state))
+	// [CELADON-EDIT] - CELADON_RESPRITE
+	// if(prob(50) && icon_state == initial(icon_state))
+	// 	name = "space minimoog"
+	// 	desc = "This is a minimoog, like a space piano, but more spacey!"
+	// 	icon_state = "minimoog"
+	// else
+	// 	name = "space piano"
+	// 	desc = "This is a space piano, like a regular piano, but always in tune! Even if the musician isn't."
+	// 	icon_state = "piano" // CELADON-EDIT - ORIGINAL
+	if(prob(35) && icon_state == initial(icon_state))
 		name = "space minimoog"
 		desc = "This is a minimoog, like a space piano, but more spacey!"
 		icon_state = "minimoog"
 	else
-		name = "space piano"
-		desc = "This is a space piano, like a regular piano, but always in tune! Even if the musician isn't."
-		icon_state = "piano"
+		if(prob(70) && icon_state == initial(icon_state))
+			name = "space piano"
+			desc = "This is a space piano, like a regular piano, but always in tune! Even if the musician isn't."
+			icon_state = "piano"
+		else
+			name = "This is a minipiano! So cute!"
+			desc = "This is a space piano, like a regular piano, but always in tune! Even if the musician isn't."
+			icon_state = "minipiano"
+	// [/CELADON-EDIT]

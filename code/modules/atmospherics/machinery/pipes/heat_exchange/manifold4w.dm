@@ -24,16 +24,19 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/manifold4w/SetInitDirections()
 	initialize_directions = initial(initialize_directions)
 
-/obj/machinery/atmospherics/pipe/manifold4w/update_overlays()
+/obj/machinery/atmospherics/pipe/heat_exchanging/manifold4w/update_icon()
 	. = ..()
+	cut_overlays()
 
 	PIPING_LAYER_DOUBLE_SHIFT(center, piping_layer)
-	. += center
+	add_overlay(center)
 
 	//Add non-broken pieces
 	for(var/i in 1 to device_type)
 		if(nodes[i])
-			. += getpipeimage(icon, "pipe-[piping_layer]", get_dir(src, nodes[i]))
+			add_overlay( getpipeimage(icon, "pipe-[piping_layer]", get_dir(src, nodes[i])) )
+
+	update_layer()
 
 /obj/machinery/atmospherics/pipe/heat_exchanging/manifold4w/layer2
 	piping_layer = 2

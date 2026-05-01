@@ -1,3 +1,5 @@
+/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
+	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
 /datum/supply_pack/civilian
 	category = "Civilian & Decoration"
 	crate_name = "civilian supply crate"
@@ -367,3 +369,4 @@
 	contains = list(/obj/item/bodycamera/broadcast_camera)
 	crate_name = "broadcast camera crate"
 	crate_type = /obj/structure/closet/crate
+[/CELADON-DELETE] */

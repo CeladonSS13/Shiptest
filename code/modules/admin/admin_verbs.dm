@@ -29,6 +29,9 @@ GLOBAL_PROTECT(admin_verbs_default)
 	/client/proc/revokebunkerbypass,
 	/client/proc/requests,
 	/client/proc/fax_panel, /*send a paper to fax*/
+	/client/proc/show_all_verbs,				// [CELADON-ADD] - ADMIN-PANEL - Black Reality
+	/client/proc/manage_chatfilter,				// [CELADON-ADD] - BRAINDEAD-SYSTEM
+	/client/proc/toggle_chatfilter_hardcore,	// [CELADON-ADD] - BRAINDEAD-SYSTEM
 	)
 GLOBAL_LIST_INIT(admin_verbs_admin, world.AVerbsAdmin())
 GLOBAL_PROTECT(admin_verbs_admin)
@@ -38,7 +41,7 @@ GLOBAL_PROTECT(admin_verbs_admin)
 //	/datum/admins/proc/show_traitor_panel,	/*interface which shows a mob's mind*/ -Removed due to rare practical use. Moved to debug verbs ~Errorage
 	/datum/admins/proc/show_player_panel,	/*shows an interface for individual players, with various links (links require additional flags)*/
 	/datum/admins/proc/show_lag_switch_panel,
-	/datum/verbs/menu/Admin/verb/playerpanel,
+	/datum/verbs/Admin/verb/playerpanel,	// [CELADON-EDIT] - ADMIN-PANEL - НЕ МЕНЯТЬ ЭТО: /menu/
 	/client/proc/game_panel,			/*game panel, allows to change game-mode etc*/
 	/client/proc/check_ai_laws,			/*shows AI and borg laws*/
 	/datum/admins/proc/toggleooc,		/*toggles ooc on/off for everyone*/
@@ -388,6 +391,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 			return FALSE
 		if(!ghost.can_reenter_corpse)
 			log_admin("[key_name(usr)] re-entered corpse")
+			log_celadon_admin("ADMIN: [key_name(usr)] re-entered corpse") // [CELADON-ADD] - logging admin actions.
 			message_admins("[key_name_admin(usr)] re-entered corpse")
 		ghost.can_reenter_corpse = 1 //force re-entering even when otherwise not possible
 		ghost.reenter_corpse()
@@ -398,6 +402,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	else
 		//ghostize
 		log_admin("[key_name(usr)] admin ghosted.")
+		log_celadon_admin("ADMIN: [key_name(usr)] admin ghosted.") // [CELADON-ADD] - logging admin actions.
 		message_admins("[key_name_admin(usr)] admin ghosted.")
 		var/mob/living/body = mob
 		body.ignore_SSD = TRUE
@@ -412,14 +417,16 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	set category = "Admin.Game"
 	set desc = "Toggles ghost-like invisibility (Don't abuse this)"
 	if(holder && mob)
-		if(mob.invisibility == INVISIBILITY_INVINISMIN)
-			mob.invisibility = initial(mob.invisibility)
-			mob.remove_from_all_data_huds()
-			to_chat(mob, span_boldannounce("Invisimin off. Invisibility reset."), confidential = TRUE)
+		// [CELADON-EDIT] - Оффовский извиз видно на худах. Вводим экстренное решение.
+		if(mob.alpha != 0)
+			mob.alpha = 0
+			mob.mouse_opacity = 0
+			to_chat(mob, span_adminnotice("<b>\[Invisibility_ON] Ваше тело растворяется в пустоту. Ваша активность видна лишь в Orbit.</b>"), confidential = TRUE)
 		else
-			mob.invisibility = INVISIBILITY_INVINISMIN
-			mob.add_to_all_human_data_huds()
-			to_chat(mob, span_adminnotice("<b>Invisimin on. You are now as invisible as a ghost.</b>"), confidential = TRUE)
+			mob.alpha = 255
+			mob.mouse_opacity = 1
+			to_chat(mob, span_adminnotice("<b>\[Invisibility_OFF] Ваше тело снова видно органическим формам жизни.</b>"), confidential = TRUE)
+		// [/CELADON-EDIT]
 
 /client/proc/check_antagonists()
 	set name = "Check Antagonists"
@@ -553,6 +560,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 			explosion(epicenter, devastation_range, heavy_impact_range, light_impact_range, flash_range, TRUE, TRUE)
 	message_admins("[ADMIN_LOOKUPFLW(usr)] creating an admin explosion at [epicenter.loc].")
 	log_admin("[key_name(usr)] created an admin explosion at [epicenter.loc].")
+	log_celadon_admin("ADMIN: [key_name(usr)] created an admin explosion at [epicenter.loc].") // [CELADON-ADD] - logging admin actions.
 	BLACKBOX_LOG_ADMIN_VERB("Drop Bomb")
 
 /client/proc/drop_dynex_bomb()
@@ -566,6 +574,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 		dyn_explosion(epicenter, ex_power)
 		message_admins("[ADMIN_LOOKUPFLW(usr)] creating an admin explosion at [epicenter.loc].")
 		log_admin("[key_name(usr)] created an admin explosion at [epicenter.loc].")
+		log_celadon_admin("ADMIN: [key_name(usr)] created an admin explosion at [epicenter.loc].") // [CELADON-ADD] - logging admin actions.
 		BLACKBOX_LOG_ADMIN_VERB("Drop Dynamic Bomb")
 
 /client/proc/get_dynex_range()

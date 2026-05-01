@@ -1,5 +1,5 @@
 import { useBackend } from '../backend';
-import { Box, Button, Section } from '../components';
+import { Box, Button, Section, Icon, Tooltip } from '../components';
 import { Window } from '../layouts';
 
 export const SpawnersMenu = (props, context) => {
@@ -16,6 +16,15 @@ export const SpawnersMenu = (props, context) => {
               level={2}
               buttons={
                 <>
+                  <Tooltip content={spawner.can_load_appearance === 2
+                    ? "This role forces using your characters"
+                    : spawner.can_load_appearance
+                      ? "This role allows using your characters"
+                      : "This role does not allow using your characters"}>
+                    <Icon name="user" mr="4px"
+                      color={spawner.can_load_appearance === 2 ? "yellow"
+                        : spawner.can_load_appearance ? "green" : "red"} />
+                  </Tooltip>
                   <Button
                     content="Jump"
                     onClick={() =>

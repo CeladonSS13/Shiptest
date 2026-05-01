@@ -1,0 +1,29 @@
+#ifndef MODPACK_CELADON_CONFIGS_MAPS
+#define MODPACK_CELADON_CONFIGS_MAPS
+
+#include "_configs.dm"
+
+#include "code/mapgen/night/JungleGenerator.dm"
+#include "code/mapgen/night/SnowGenerator.dm"
+#include "code/mapgen/night/BeachGenerator.dm"
+#include "code/mapgen/night/RockGenerator.dm"
+
+#include "code/mapgen/AnimaGeneration.dm"
+#include "code/mapgen/PlasmaGenerator.dm"
+#include "code/mapgen/SandGenerator.dm"
+
+#include "code/ruins/ruin.dm"
+
+#include "code/_path_ruins.dm"
+#include "code/outpost.dm"
+#include "code/turf_mapgen.dm"
+#include "code/planet_types.dm"
+#include "code/subshuttles.dm"
+#include "code/turfs_planet.dm"
+
+#include "code/dynamic_mission/drill.dm"
+#include "code/dynamic_mission/kill.dm"
+#include "code/dynamic_mission/mission.dm"
+#include "code/dynamic_mission/multiple.dm"
+
+#endif

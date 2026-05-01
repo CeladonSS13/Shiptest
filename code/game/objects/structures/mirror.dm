@@ -170,7 +170,18 @@
 				if(new_s_tone)
 					H.skin_tone = new_s_tone
 					H.dna.update_ui_block(DNA_SKIN_TONE_BLOCK)
+/*
+			// [CELADON-ADD] - TAJARA
+			if(H.dna.species.use_skintones)
+				var/new_s_tone_nose = input(user, "Choose your skin tone nose:", "Race change")  as null|anything in GLOB.skin_tones_nose
+				if(!user.canUseTopic(src, BE_CLOSE, FALSE, NO_TK))
+					return
 
+				if(new_s_tone_nose)
+					H.skin_tone_nose = new_s_tone_nose
+					H.dna.update_ui_block(DNA_SKIN_TONE_NOSE_BLOCK)
+			// [/CELADON-ADD]
+*/
 			if(MUTCOLORS in H.dna.species.species_traits)
 				var/new_mutantcolor = input(user, "Choose your skin color:", "Race change","#" + H.dna.features["mcolor"]) as color|null
 				if(!user.canUseTopic(src, BE_CLOSE, FALSE, NO_TK))

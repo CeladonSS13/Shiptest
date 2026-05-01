@@ -7,9 +7,7 @@
 	name = "Nude"
 	icon_state = null
 
-//Start normal shirts
-
-//Female undergarment tops
+// MARK: Female Tops
 
 /datum/sprite_accessory/undershirt/bra
 	name = "Bra"
@@ -73,8 +71,59 @@
 
 /datum/sprite_accessory/undershirt/beekini
 	name = "Bee-Kini Top"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
 	icon_state = "beekini"
+
+// [CELADON-ADD] MARK: New Female Tops
+/datum/sprite_accessory/undershirt/tank_midriff
+	name = "EX - Midriff Bra"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "top_midriff"
+
+/datum/sprite_accessory/undershirt/tank_midriff_alt
+	name = "EX - Midriff Bra (Alt)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "top_midriff_alt"
+
+/datum/sprite_accessory/undershirt/swim_onepiece
+	name = "EX - Swim-Onepiece Top"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "swim_onepiece"
+
+/datum/sprite_accessory/undershirt/swim_strapless_onepiece
+	name = "EX - Swim-Onepiece Top (Alt)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "swim_strapless_onepiece"
+
+/datum/sprite_accessory/undershirt/swim_twopiece
+	name = "EX - Swim-Twopiece Top"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "swim_twopiece"
+
+/datum/sprite_accessory/undershirt/swim_strapless_twopiece
+	name = "EX - Swim-Twopiece Top (Alt)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "swim_strapless_twopiece"
+
+/datum/sprite_accessory/undershirt/swim_stripe_black
+	name = "EX - Swim-Stripes Top (Black)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "swim_stripe_black"
 	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/swim_stripe
+	name = "EX - Swim-Stripes Top (Blue)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "swim_stripe"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/bandages
+	name = "EX - Bandages"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "bandages"
+// [/CELADON-ADD]
+
+// MARK: Normal Shirt
 
 /datum/sprite_accessory/undershirt/tshirt
 	name = "T-Shirt (Greyscale)"
@@ -209,6 +258,160 @@
 	icon_state = "rilena"
 	use_static = TRUE
 
+
+// MARK: New Normal Shirt
+
+// [CELADON-ADD]
+/datum/sprite_accessory/undershirt/tank_question
+	name = "EX - T-Shirt (Question)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "shirt_question"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/tank_pacman
+	name = "EX - T-Shirt (Pacman)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "pogoman"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/tank_tiedye
+	name = "EX - T-Shirt (Tiedye)" //we gotta study this
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "shirt_tiedye"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/tank_clown
+	name = "EX - T-Shirt (Clown)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "shirt_clown"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/tank_skull
+	name = "EX - T-Shirt (Skull)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "shirt_skull"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/shirt_alien
+	name = "EX - T-Shirt (Alien)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "shirt_alien"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/shirt_ian
+	name = "EX - T-Shirt (Ian)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "ian"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/shirt_corgi
+	name = "EX - T-Shirt (Corgi)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "corgi"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/shirt_poly
+	name = "EX - T-Shirt (Poly)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "poly"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/shirt_elysium
+	name = "EX - T-Shirt (Elysium)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "elysium"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/shirt_stripes
+	name = "EX - T-Shirt (Stripes)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "shirt_stripes"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/bee_shirt
+	name = "EX - T-Shirt (Bee)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "bee_shirt"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/shirt_bc
+	name = "EX - T-Shirt (BC)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "shirt_bc"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/polo_blue
+	name = "EX - Polo Shirt (Blue)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "polo_blue"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/polo_red
+	name = "EX - Polo Shirt (Red)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "polo_red"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/tank_abstact
+	name = "EX - Tank Top (Abstract)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "tank_abstact"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/tank_stripes
+	name = "EX - Tank Top (Stripes)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "tank_stripes"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/tank_sun
+	name = "EX - Tank Top (Sun)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "tank_sun"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/longstripe
+	name = "EX - Long-Stripes (Blue)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "longstripe"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/longstripe_black
+	name = "EX - Long-Stripes (Black)"
+	icon_state = "longstripe_black"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/longstripe_red
+	name = "EX - Long-Stripes (Red)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "longstripe_red"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/longstripe
+	name = "EX - Long-Stripes (Blue)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "longstripe"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/worn_clean
+	name = "EX - Worn shirt (well)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "worn_clean"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/worn_out
+	name = "EX - Worn shirt (out)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "worn_out"
+	use_static = TRUE
+
+/datum/sprite_accessory/undershirt/worn_messy
+	name = "EX - Worn shirt (messy)"
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/underwear/underwear_torso.dmi'
+	icon_state = "worn_messy"
+	use_static = TRUE
+// [/CELADONN-ADD]
+/* [CELADON-REMOVE]
 // Pride shirts
 
 /datum/sprite_accessory/undershirt/tank_les
@@ -240,3 +443,5 @@
 	name = "Tank Top (Asexual)"
 	icon_state = "ace"
 	use_static = TRUE
+*/
+// [/CELADON-REMOVE]

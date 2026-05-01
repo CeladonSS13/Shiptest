@@ -1,3 +1,5 @@
+/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
+	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
 /datum/supply_pack/food
 	category = "Food & Agricultural"
 
@@ -710,3 +712,4 @@
 	contains = list(
 		/obj/item/storage/cans/sixbeer
 	)
+[/CELADON-DELETE] */

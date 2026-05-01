@@ -1,0 +1,968 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aG" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel/stairs{
+	dir = 4
+	},
+/area/ship/bridge)
+"bG" = (
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "venture_belt"
+	},
+/obj/structure/closet/crate/large,
+/obj/item/storage/box/stockparts/basic,
+/obj/item/circuitboard/machine/autolathe,
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"cr" = (
+/obj/machinery/light/floor,
+/obj/structure/sink{
+	dir = 1;
+	pixel_y = -5
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"eg" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/stairs{
+	dir = 4
+	},
+/area/ship/bridge)
+"eo" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"fz" = (
+/obj/machinery/conveyor{
+	dir = 5;
+	id = "venture_belt"
+	},
+/obj/structure/closet/crate/miningcar,
+/obj/item/clothing/glasses/meson,
+/obj/item/clothing/glasses/meson,
+/obj/item/circuitboard/machine/ore_redemption,
+/obj/item/shovel,
+/obj/item/storage/bag/ore,
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange{
+	dir = 1
+	},
+/obj/item/storage/bag/ore,
+/obj/item/kinetic_crusher,
+/obj/item/pickaxe/drill/jackhammer,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"gt" = (
+/obj/structure/table/wood,
+/obj/machinery/newscaster/directional/north,
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange{
+	dir = 1
+	},
+/obj/machinery/recharger{
+	pixel_x = 7;
+	pixel_y = 3
+	},
+/obj/machinery/recharger{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"hH" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/machinery/portable_atmospherics/pump,
+/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"io" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "venture_eng"
+	},
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
+/obj/machinery/door/window/northleft{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"is" = (
+/obj/structure/railing{
+	dir = 10
+	},
+/obj/machinery/suit_storage_unit/inherit,
+/obj/item/clothing/suit/space/hardsuit/mining/heavy,
+/obj/item/clothing/mask/breath,
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"iG" = (
+/obj/structure/closet/wall/red{
+	pixel_y = 32;
+	dir = 1
+	},
+/obj/item/clothing/suit/armor/vest,
+/obj/item/melee/baton/loaded,
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange{
+	dir = 1
+	},
+/obj/item/gun/energy/kinetic_accelerator,
+/obj/item/borg/upgrade/modkit/indoors,
+/obj/item/borg/upgrade/modkit/indoors,
+/obj/item/borg/upgrade/modkit/range,
+/obj/item/gun/energy/kalix/pistol,
+/obj/item/stock_parts/cell/gun/kalix,
+/obj/item/stock_parts/cell/gun/kalix,
+/obj/item/clothing/head/helmet/m10,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"iV" = (
+/obj/machinery/conveyor{
+	dir = 9;
+	id = "venture_belt"
+	},
+/obj/machinery/light/floor,
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"kL" = (
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "venture_belt"
+	},
+/obj/machinery/light/floor,
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"lG" = (
+/obj/machinery/power/port_gen/pacman,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"mx" = (
+/obj/structure/cable,
+/obj/machinery/power/terminal,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"mE" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/light/floor,
+/obj/machinery/atmospherics/components/unary/portables_connector/layer2,
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"nd" = (
+/obj/machinery/power/apc/auto_name/directional{
+	pixel_y = -32
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/light/floor,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"nl" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
+"ob" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/machinery/light/floor,
+/obj/machinery/computer/cargo{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/item/radio/intercom/wideband/directional/south{
+	pixel_x = -3
+	},
+/obj/effect/turf_decal/nanotrasen/ns,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"pu" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "venture_belt"
+	},
+/obj/structure/closet/crate/large,
+/obj/item/storage/firstaid/fire,
+/obj/item/storage/firstaid/brute,
+/obj/item/roller,
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"pN" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "venture_belt"
+	},
+/obj/structure/closet/crate/trashcart,
+/obj/effect/spawner/random/maintenance/five,
+/obj/effect/spawner/random/maintenance/five,
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"qp" = (
+/obj/machinery/door/airlock/command,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"qu" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel/stairs{
+	dir = 1
+	},
+/area/ship/bridge)
+"qw" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"qB" = (
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/plasteel/stairs{
+	dir = 1
+	},
+/area/ship/bridge)
+"ro" = (
+/turf/open/floor/plasteel/dark,
+/area/ship/cargo)
+"rT" = (
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"rX" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	dir = 5;
+	id = "venture_turrets"
+	},
+/turf/closed/wall/mineral/titanium/exterior,
+/area/ship/bridge)
+"ts" = (
+/obj/structure/closet/wall/blue{
+	dir = 8;
+	pixel_x = -32
+	},
+/obj/item/stock_parts/cell/gun,
+/obj/item/melee/knife/survival,
+/obj/item/clothing/suit/jacket/miljacket,
+/obj/item/storage/backpack/messenger/com,
+/obj/item/storage/backpack/duffelbag/captain,
+/obj/item/gun/energy/disabler,
+/obj/item/circuitboard/machine/fax,
+/obj/item/clothing/head/beret/captain,
+/obj/machinery/holopad/emergency/command,
+/obj/effect/turf_decal/nanotrasen/ns{
+	dir = 8
+	},
+/obj/item/tank/jetpack/suit,
+/obj/item/gun/energy/kalix/pistol,
+/obj/item/stock_parts/cell/gun/kalix,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"uk" = (
+/obj/structure/catwalk/over/plated_catwalk/white,
+/obj/machinery/light/floor{
+	pixel_x = -7
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"uw" = (
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "venture_belt"
+	},
+/obj/structure/closet/crate/large,
+/obj/item/stack/sheet/glass/five,
+/obj/item/stack/sheet/glass/five,
+/obj/item/stack/sheet/metal/ten,
+/obj/effect/spawner/random/materials,
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"vm" = (
+/turf/template_noop,
+/area/template_noop)
+"xx" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	dir = 6;
+	id = "venture_turrets"
+	},
+/turf/closed/wall/mineral/titanium/exterior,
+/area/ship/bridge)
+"xy" = (
+/obj/structure/closet/wall/white/med{
+	pixel_y = -32
+	},
+/obj/item/storage/firstaid/medical,
+/obj/item/reagent_containers/syringe/charcoal,
+/obj/item/reagent_containers/syringe/charcoal,
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange,
+/obj/item/storage/firstaid/brute,
+/obj/item/storage/firstaid/fire,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"zJ" = (
+/obj/machinery/light/floor,
+/obj/structure/closet/wall{
+	dir = 4;
+	pixel_x = 32
+	},
+/obj/item/radio,
+/obj/item/radio,
+/obj/item/radio,
+/obj/item/flashlight/seclite,
+/obj/item/flashlight/seclite,
+/obj/item/flashlight/seclite,
+/obj/item/clothing/under/rank/cargo/miner,
+/obj/item/clothing/under/rank/cargo/miner,
+/obj/item/clothing/under/rank/cargo/miner,
+/obj/item/clothing/under/rank/cargo/tech/skirt,
+/obj/item/clothing/under/rank/cargo/tech/skirt,
+/obj/item/clothing/under/rank/cargo/tech/skirt,
+/obj/item/storage/backpack/messenger,
+/obj/item/storage/backpack/messenger,
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange{
+	dir = 6
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"zL" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 5
+	},
+/obj/item/clothing/head/hardhat{
+	pixel_x = -10;
+	pixel_y = -5
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"zS" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"Ag" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
+/obj/machinery/airalarm/directional/south{
+	pixel_y = -32
+	},
+/obj/machinery/turretid/ship{
+	pixel_x = 0;
+	pixel_y = 25;
+	id = "venture_turrets"
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"BQ" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "venture_belt"
+	},
+/obj/structure/closet/crate/internals,
+/obj/item/tank/internals/oxygen,
+/obj/item/tank/internals/oxygen,
+/obj/item/tank/internals/oxygen,
+/obj/item/tank/internals/emergency_oxygen,
+/obj/item/tank/internals/emergency_oxygen,
+/obj/item/tank/internals/emergency_oxygen,
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/mask/breath,
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"CC" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "venture_front"
+	},
+/obj/machinery/power/shieldwallgen/atmos{
+	anchored = 1;
+	dir = 1;
+	id = "venture_exit";
+	locked = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"CF" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/obj/structure/closet/firecloset/wall{
+	pixel_y = 32;
+	dir = 1
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"CN" = (
+/obj/structure/bed,
+/obj/item/bedsheet/nanotrasen,
+/obj/structure/curtain,
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"DL" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
+"EV" = (
+/obj/machinery/porta_turret/ship/nt{
+	dir = 4;
+	id = "venture_turrets"
+	},
+/turf/closed/wall/mineral/titanium/exterior,
+/area/ship/bridge)
+"Fi" = (
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"Gk" = (
+/obj/structure/mirror,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
+"Gv" = (
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_x = 7;
+	pixel_y = -20
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"GE" = (
+/obj/structure/railing{
+	dir = 1;
+	layer = 2
+	},
+/obj/structure/railing{
+	dir = 8;
+	layer = 4.1
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/vending/mining_equipment,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"Ho" = (
+/obj/structure/chair/wood{
+	dir = 4
+	},
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/item/reagent_containers/food/drinks/waterbottle,
+/obj/item/reagent_containers/food/drinks/waterbottle,
+/obj/item/reagent_containers/food/drinks/waterbottle,
+/obj/structure/closet/wall/white{
+	pixel_y = 32;
+	dir = 1
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"Iq" = (
+/obj/structure/curtain,
+/obj/structure/toilet{
+	dir = 1
+	},
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 4
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"IP" = (
+/obj/machinery/door/poddoor{
+	dir = 2;
+	id = "venture_blast"
+	},
+/obj/effect/spawner/structure/window/shuttle,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"Jb" = (
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/light/floor,
+/obj/machinery/power/smes/engineering{
+	icon_state = "panel";
+	dir = 1;
+	density = 0;
+	pixel_x = -32
+	},
+/obj/item/storage/toolbox/mechanical,
+/obj/item/multitool,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"JB" = (
+/obj/machinery/door/window/eastleft{
+	dir = 2
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"JK" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4,
+/obj/structure/catwalk/over/plated_catwalk/white,
+/obj/machinery/light/floor{
+	pixel_x = -7
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"Kn" = (
+/obj/machinery/conveyor_switch{
+	id = "venture_belt"
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"KV" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"Lt" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/item/storage/toolbox/electrical,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"LQ" = (
+/obj/machinery/conveyor{
+	dir = 6;
+	id = "venture_belt"
+	},
+/obj/structure/closet/crate/secure/plasma,
+/obj/item/stack/sheet/mineral/plasma/twenty,
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange{
+	dir = 5
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"MQ" = (
+/obj/machinery/cryopod,
+/obj/machinery/computer/cryopod/directional/north,
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange{
+	dir = 5
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"MU" = (
+/obj/machinery/button/door{
+	dir = 4;
+	id = "venture_front";
+	name = "Фронтальные задвижки";
+	pixel_x = -22;
+	pixel_y = 5
+	},
+/obj/machinery/button/door{
+	dir = 4;
+	id = "venture_eng";
+	name = "Двигательные задвижки";
+	pixel_x = -32;
+	pixel_y = 10
+	},
+/obj/machinery/button/door{
+	dir = 4;
+	id = "venture_blast";
+	name = "Оконные задвижки";
+	pixel_x = -32
+	},
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -21;
+	pixel_y = -6
+	},
+/obj/machinery/button/shieldwallgen{
+	dir = 4;
+	pixel_y = 16;
+	pixel_x = -20;
+	id = "venture_exit"
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/effect/turf_decal/nanotrasen/ns{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"Nt" = (
+/obj/structure/sign/nanotrasen,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
+"PH" = (
+/obj/machinery/conveyor{
+	dir = 10;
+	id = "venture_belt"
+	},
+/obj/structure/closet/crate/wooden,
+/obj/effect/spawner/random/food_or_drink/donut,
+/obj/effect/spawner/random/food_or_drink/donut,
+/obj/effect/spawner/random/food_or_drink/donut,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/turf_decal/spline/fancy/opaque/nsorange{
+	dir = 6
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"PO" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
+/obj/machinery/door/window/northleft{
+	dir = 4
+	},
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "venture_eng"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"PY" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "venture_front"
+	},
+/obj/docking_port/mobile{
+	dir = 4;
+	port_direction = 2;
+	preferred_direction = 4
+	},
+/obj/machinery/power/shieldwallgen/atmos{
+	id = "venture_exit";
+	anchored = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"Sc" = (
+/turf/closed/wall/mineral/titanium/exterior,
+/area/ship/bridge)
+"Sy" = (
+/obj/structure/sign/nanotrasen/ns,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
+"UX" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/machinery/light/floor,
+/obj/machinery/computer/helm{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/newscaster/directional/north,
+/obj/effect/turf_decal/nanotrasen/ns{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"Wz" = (
+/obj/structure/closet/crate/bin,
+/obj/item/storage/belt{
+	pixel_x = 10;
+	pixel_y = 10
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"Za" = (
+/obj/machinery/light/floor,
+/obj/effect/turf_decal/atmos/oxygen,
+/obj/structure/closet/emcloset/wall{
+	pixel_y = 32;
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+
+(1,1,1) = {"
+vm
+vm
+vm
+Sc
+qw
+qw
+Sc
+vm
+vm
+vm
+"}
+(2,1,1) = {"
+Sc
+Sy
+nl
+nl
+PO
+io
+nl
+nl
+Sy
+Sc
+"}
+(3,1,1) = {"
+nl
+lG
+mx
+Jb
+hH
+Lt
+mE
+zL
+Wz
+nl
+"}
+(4,1,1) = {"
+Sc
+nl
+zS
+nl
+nl
+nl
+nl
+KV
+nl
+Sc
+"}
+(5,1,1) = {"
+vm
+IP
+Fi
+qp
+MU
+ts
+qp
+eo
+IP
+vm
+"}
+(6,1,1) = {"
+JK
+DL
+CF
+nl
+UX
+ob
+nl
+Ag
+nl
+uk
+"}
+(7,1,1) = {"
+Sc
+nl
+Za
+qB
+ro
+ro
+qu
+nd
+nl
+Sc
+"}
+(8,1,1) = {"
+IP
+Kn
+rT
+is
+aG
+eg
+GE
+JB
+Iq
+IP
+"}
+(9,1,1) = {"
+nl
+fz
+iV
+nl
+PY
+CC
+nl
+iG
+cr
+Gk
+"}
+(10,1,1) = {"
+nl
+pu
+uw
+nl
+vm
+vm
+nl
+CN
+Gv
+nl
+"}
+(11,1,1) = {"
+nl
+BQ
+bG
+nl
+vm
+vm
+nl
+Ho
+xy
+nl
+"}
+(12,1,1) = {"
+nl
+pN
+kL
+nl
+vm
+vm
+nl
+gt
+rT
+nl
+"}
+(13,1,1) = {"
+nl
+LQ
+PH
+nl
+vm
+vm
+nl
+MQ
+zJ
+nl
+"}
+(14,1,1) = {"
+rX
+nl
+Nt
+EV
+vm
+vm
+EV
+Nt
+nl
+xx
+"}

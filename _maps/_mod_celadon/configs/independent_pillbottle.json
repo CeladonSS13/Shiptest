@@ -1,0 +1,27 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Pillbottle-class Locust Transport",
+	"map_short_name": "Pillbottle",
+	"description": "Pillbottle как класс вообще не должен существовать. Всё указывает на то, что эти корабли изначально были массовыми грузовиками и буксирами, но затем кое-как переделаны в подобие носителя для крыла спасательных капсул класса «Pill». Как и в случае с «Pills», экипажи «Pillbottle» полностью состоят из беглых заключённых, и по общему правилу они действуют в состоянии полной анархии. Единственное, что стабильно в экипажах «Pillbottle», — это их нестабильность, а тюремные реалии, как правило, вытягивают из любого человека самое худшее. В ЩИТСПАВНЕ ПО ПРИЧИНЕ: Он не должен существовать. Никем не переделывался.",
+	"map_path": "_maps/_mod_celadon/shuttles/independent/independent_pillbottle.dmm",
+	"subshuttle": "Pill",
+	"enabled": false,
+	"limit": 1,
+	"sensor_range": 4,
+	"starting_funds": 0,
+	"prefix": "ISV",
+	"faction": "/datum/faction/independent",
+	"tags": [
+		"Специализированный"
+	],
+	"namelists": [
+		"PILLS",
+		"PIRATES"
+	],
+	"job_slots": {
+		"Prisoner": {
+			"outfit": "/datum/outfit/job/cel/independent/prisoner",
+			"slots": 10
+		}
+	}
+}

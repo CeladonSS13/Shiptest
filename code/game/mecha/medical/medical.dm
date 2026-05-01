@@ -1,5 +1,8 @@
 /obj/mecha/medical
-	internals_req_access = list(ACCESS_MECH_SCIENCE, ACCESS_MECH_MEDICAL)
+// [CELADON-EDIT] - QoL
+//	internals_req_access = list(ACCESS_MECH_SCIENCE, ACCESS_MECH_MEDICAL)
+	internals_req_access = 0
+// [/CELADON-EDIT]
 
 /obj/mecha/medical/mechturn(direction)
 	. = ..()

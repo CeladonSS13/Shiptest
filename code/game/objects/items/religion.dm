@@ -22,6 +22,20 @@
 
 /obj/item/banner/attack_self(mob/living/carbon/human/user)
 	if(!inspiration_available)
+		// [CELADON - ADD] - CELADON_ITEMS (Делает возможным подняие флагов типа mundane, раньше этого сделать было нельзя. Отхил у таких флагов отсутствует)
+		if(morale_time > world.time)
+			to_chat(user, "<span class='warning'>You aren't feeling inspired enough to flourish [src] again yet.</span>")
+			return
+		user.visible_message("<span class='big notice'>[user] flourishes [src]!</span>", \
+		"<span class='notice'>You raise [src] skywards, inspiring your allies!</span>")
+		playsound(src, "rustle", 100, FALSE)
+		if(warcry)
+			user.say("[warcry]", forced="banner")
+		var/old_transform = user.transform
+		user.transform *= 1.2
+		animate(user, transform = old_transform, time = 10)
+		morale_time = world.time + morale_cooldown
+		// [/CELADON - ADD] - CELADON_ITEMS
 		return
 	if(morale_time > world.time)
 		to_chat(user, span_warning("You aren't feeling inspired enough to flourish [src] again yet."))
@@ -206,7 +220,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	slowdown = 2.0 //gotta pretend we're balanced.
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60, "wound" = 40)  // [CELADON-EDIT] - CELADON_BALANCE
 
 /obj/item/clothing/suit/armor/plate/crusader/red
 	icon_state = "crusader-red"
@@ -220,7 +234,7 @@
 	icon_state = "crusader"
 	w_class = WEIGHT_CLASS_NORMAL
 	flags_inv = HIDEHAIR|HIDEEARS|HIDEFACE
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60, "wound" = 40)  // [CELADON-EDIT] - CELADON_BALANCE
 
 /obj/item/clothing/head/helmet/plate/crusader/blue
 	icon_state = "crusader-blue"

@@ -32,7 +32,7 @@
 			else
 				new /obj/item/disk/design_disk/modkit_disc/rapid_repeater(src)
 		if(9)
-			new /obj/item/gem/bloodstone(src)
+			new /obj/item/rod_of_asclepius(src)	// [CELADON-EDIT] - RETURN_CONTENT_NECROOLIS
 		if(10)
 			new /obj/item/organ/heart/cursed/wizard(src)
 		if(11)
@@ -54,7 +54,13 @@
 			else
 				new /obj/item/disk/design_disk/modkit_disc/bounty(src)
 		if(18)
-			new /obj/item/warp_cube/red(src)
+			// [CELADON-EDIT] - CELADON_BALANCE
+			// new /obj/item/warp_cube/red(src)	// CELADON-EDIT - ORIGINAL
+			if(prob(20))
+				new /obj/item/warp_cube/red(src)
+			else
+				new /obj/item/toy/plush/among(src)
+			// [/CELADON-EDIT]
 		if(19)
 			new /obj/item/wisp_lantern(src)
 		if(20)
@@ -73,6 +79,10 @@
 			new /obj/item/gun/energy/spur(src)
 		if(28)
 			new /obj/item/clothing/suit/armor/ascetic(src)
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
+		if(29)
+			new /obj/item/clothing/glasses/godeye(src)
+		// [/CELADON-ADD]
 
 /obj/structure/closet/crate/necropolis/tendril/greater
 	desc = "It's watching you wearily. It seems terribly bloated."
@@ -100,7 +110,7 @@
 				else
 					new /obj/item/disk/design_disk/modkit_disc/rapid_repeater(src)
 			if(9)
-				new /obj/item/gem/bloodstone(src)
+				new /obj/item/rod_of_asclepius(src) // [CELADON-EDIT] - RETURN_CONTENT_NECROOLIS
 			if(10)
 				new /obj/item/organ/heart/cursed/wizard(src)
 			if(11)
@@ -122,7 +132,13 @@
 				else
 					new /obj/item/disk/design_disk/modkit_disc/bounty(src)
 			if(18)
-				new /obj/item/warp_cube/red(src)
+				// [CELADON-EDIT] - CELADON_BALANCE
+				// new /obj/item/warp_cube/red(src)	// CELADON-EDIT - ORIGINAL
+				if(prob(20))
+					new /obj/item/warp_cube/red(src)
+				else
+					new /obj/item/toy/plush/among(src)
+				// [/CELADON-EDIT]
 			if(19)
 				new /obj/item/wisp_lantern(src)
 			if(20)
@@ -141,6 +157,10 @@
 				new /obj/item/gun/energy/spur(src)
 			if(28)
 				new /obj/item/clothing/suit/armor/ascetic(src)
+			// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
+			if(29)
+				new /obj/item/clothing/glasses/godeye(src)
+			// [/CELADON-ADD]
 
 /datum/design/unique_modkit
 	category = list("Mining Designs", "Cyborg Upgrade Modules") //can't be normally obtained

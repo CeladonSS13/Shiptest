@@ -1,5 +1,8 @@
 /turf/open/floor/plasteel
-	icon = 'icons/turf/floors/tiles.dmi'
+	// [CELADON-EDIT] - CELADON_STRUCTURES
+	// icon = 'icons/turf/floors/tiles.dmi' // CELADON-EDIT - ORIGINAL
+	icon = 'mod_celadon/_storage_icons/icons/structures/tiles.dmi'
+	// [/CELADON-EDIT]
 	base_icon_state = "tiled_gray"
 	icon_state = "tiled_gray"
 	floor_tile = /obj/item/stack/tile/plasteel
