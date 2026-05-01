@@ -1354,7 +1354,6 @@ GLOBAL_LIST_INIT(armor_by_type, generate_armor_type_cache())
 /turf/open/floor/plating/asteroid/snow
 	icon = MAP_SWITCH('icons/turf/floors/snow.dmi', 'mod_celadon/_storage_icons/icons/structures/snow.dmi') // [CELADON-EDIT] - Снег без квадратиков в sDMM
 
-#warn test
 /client/invisimin()
 	if(holder && mob)
 		// [CELADON-EDIT] - Оффовский извиз видно на худах. Вводим экстренное решение.
@@ -3707,9 +3706,16 @@ GLOBAL_LIST_INIT(armor_by_type, generate_armor_type_cache())
 	metabolism_efficiency = 0.07
 
 /obj/item/organ/tongue/Initialize(mapload)
-	languages_possible_base
 	. = ..()
-	languages_possible = languages_possible_base
+	var/static/list/additional_languages = typecacheof(list(
+		// [CELADON-ADD] - CELADON_ITEMS
+		/datum/language/elysm,
+		/datum/language/alquadim,
+		/datum/language/thayoss,
+		/datum/language/fuyo,
+		// [/CELADON-ADD]
+	))
+	languages_possible |= additional_languages
 
 /obj/item/organ/tongue/vox
 	// [CELADON-ADD] - CELADON_ACCENTS_ADD
