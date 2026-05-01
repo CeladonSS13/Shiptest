@@ -21,6 +21,42 @@
 // Инициализация ВОВРЕМЯ
 /datum/modpack/return_content_clowns/initialize()
 	. = ..()
+	var/list/dye_registry = list(
+		DYE_REGISTRY_UNDER = list(
+			DYE_MIME = /obj/item/clothing/under/rank/civilian/mime,
+			DYE_CLOWN = /obj/item/clothing/under/rank/civilian/clown,
+		)
+		DYE_REGISTRY_JUMPSKIRT = list(
+			DYE_MIME = /obj/item/clothing/under/rank/civilian/mime/skirt,
+		)
+		DYE_REGISTRY_GLOVES = list(
+			DYE_MIME = /obj/item/clothing/gloves/color/white,
+			DYE_CLOWN = /obj/item/clothing/gloves/color/rainbow,
+		)
+		DYE_REGISTRY_SNEAKERS = list(
+			DYE_MIME = /obj/item/clothing/shoes/sneakers/black,
+		)
+		DYE_REGISTRY_BEDSHEET = list(
+			DYE_MIME = /obj/item/bedsheet/mime,
+			DYE_CLOWN = /obj/item/bedsheet/clown,
+		)
+	)
+	for(var/category, key in dye_registry)
+		GLOB.dye_registry[category][key] = dye_registry[category][key]
+
+	var/list/custom_names = list(
+		"clown" = list("pref_name" = "Clown" , "qdesc" = "clown name", "group" = "fun", "allow_null" = FALSE),
+		"mime" = list("pref_name" = "Mime", "qdesc" = "mime name" , "group" = "fun", "allow_null" = FALSE),
+	)
+	for(var/key in custom_names)
+		GLOB.preferences_custom_names[key] = custom_names[key]
+
+	GLOB.arcade_prize_pool |= list(
+		/obj/item/toy/prize/honk = 1,
+		/obj/item/clothing/shoes/wheelys = 2,
+	)
+	GLOB.blacklisted_malf_machines |= typecacheof(/obj/machinery/syndicatebomb/badmin/clown) // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+	GLOB.service_positions |= list("Clown", "Mime")
 
 // Инициализация ПОСЛЕ
 /datum/modpack/return_content_clowns/post_initialize()

@@ -35,6 +35,32 @@
 // Инициализация ВОВРЕМЯ
 /datum/modpack/fixes/initialize()
 	. = ..()
+	GLOB.channel_tokens[MODE_BINARY] = RADIO_TOKEN_WIDEBAND
+	GLOB.rod_recipes += new /datum/stack_recipe("guardrail barricade", /obj/structure/deployable_barricade/guardrail, 15, time = 4 SECONDS, one_per_turf = TRUE, on_floor = TRUE) // [CELADON-ADD] - CELADON_STRUCTURES - Барикады
+	GLOB.leather_recipes += new /datum/stack_recipe("leather overcoat", /obj/item/clothing/suit/jacket/leather/overcoat, 10) // [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
+	GLOB.wood_recipes += new /datum/stack_recipe("Wooden Half-Barricade", /obj/structure/deployable_barricade/wooden, 10, time = 5 SECONDS, one_per_turf = TRUE, on_floor = TRUE) // [CELADON-ADD] - CELADON_STRUCTURES - Барикады
+	var/list/cloth_recipes = list( // [CELADON-ADD] - CELADON_QOL - добавляем рецепты обмоток лап
+		new /datum/stack_recipe("footwraps white", /obj/item/clothing/shoes/footwraps, 2),
+		new /datum/stack_recipe("footwraps black", /obj/item/clothing/shoes/footwraps/black, 2),
+		new /datum/stack_recipe("footwraps brown", /obj/item/clothing/shoes/footwraps/brown, 2),
+	)
+	GLOB.cloth_recipes += cloth_recipes
+	var/list/bronze_recipes = list( // [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
+		new /datum/stack_recipe("bronze suit", /obj/item/clothing/suit/bronze),
+		new /datum/stack_recipe("bronze boots", /obj/item/clothing/shoes/bronze),
+	)
+	GLOB.bronze_recipes += bronze_recipes
+	GLOB.metal_recipes += new /datum/stack_recipe("metal barricade", /obj/structure/deployable_barricade/metal, 20, time = 4 SECONDS, one_per_turf = TRUE, on_floor = TRUE), \ // [CELADON-ADD] - CELADON_STRUCTURES - Барикады
+	GLOB.department_radio_keys["ö"] = RADIO_CHANNEL_WIDEBAND
+	var/list/events = list(
+		// [CELADON-ADD] - CELADON_OVERMAP - Включаем на овермапе ионные шторма
+		/datum/overmap/event/emp/minor = 25,
+		/datum/overmap/event/emp = 20,
+		/datum/overmap/event/emp/major = 25,
+		// [/CELADON-ADD]
+	)
+	for(var/key in events)
+		GLOB.overmap_event_pick_list[key] = events[key]
 
 // Инициализация ПОСЛЕ
 /datum/modpack/fixes/post_initialize()

@@ -10,6 +10,7 @@
 // Инициализация ВОВРЕМЯ
 /datum/modpack/balance/initialize()
 	. = ..()
+	GLOB.oddity_loot -= list(/obj/item/circular_saw/best) // CELADON_BALANCE - Что это за инструмент шакальный не понятно
 
 // Инициализация ПОСЛЕ
 /datum/modpack/balance/post_initialize()

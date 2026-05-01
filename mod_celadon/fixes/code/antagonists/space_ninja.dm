@@ -20,7 +20,7 @@
   * * ninja - The person wearing the suit.
   * * Returns false if the locking fails due to lack of all suit parts, and true if it succeeds.
   */
-/obj/item/clothing/suit/space/space_ninja/proc/lock_suit(mob/living/carbon/human/ninja)
+/obj/item/clothing/suit/space/space_ninja/lock_suit(mob/living/carbon/human/ninja)
 	if(!istype(ninja))
 		return FALSE
 	if(!is_ninja(ninja))
@@ -94,14 +94,14 @@
   *
   * Can be called to entire rid of the suit pieces and the suit itself.
   */
-/obj/item/clothing/suit/space/space_ninja/proc/terminate()
+/obj/item/clothing/suit/space/space_ninja/terminate()
 	qdel(n_hood)
 	qdel(n_gloves)
 	qdel(n_shoes)
 	qdel(src)
 
 //Randomizes suit parameters.
-/obj/item/clothing/suit/space/space_ninja/proc/randomize_param()
+/obj/item/clothing/suit/space/space_ninja/randomize_param()
 	s_cost = rand(1,10)
 	s_acost = rand(10,50)
 	s_delay = rand(10,100)
