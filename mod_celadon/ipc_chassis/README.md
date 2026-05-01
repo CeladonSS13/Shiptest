@@ -59,7 +59,7 @@ ID мода: CELADON_IPC_CHASSIS
 ### Изменения *кор кода*
 
 - `code\modules\mob\dead\new_player\sprite_accessories\ipc.dm`: `/datum/sprite_accessory/ipc_screens` -> icon
-- `code\modules\mob\dead\new_player\sprite_accessories\ipc.dm`: `/datum/sprite_accessory/ipc_chassis` -> icon
+- `code\modules\mob\dead\new_player\sprite_accessories\ipc.dm`: `/datum/sprite_accessory/body/ipc_chassis` -> icon
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

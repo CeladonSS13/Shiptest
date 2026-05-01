@@ -15,8 +15,6 @@
 	duration = 40
 	status_type = STATUS_EFFECT_REFRESH
 	alert_type = /atom/movable/screen/alert/status_effect/ice_block_talisman
-	/// Stored icon overlay for the hit mob, removed when effect is removed
-	var/icon/cube
 
 /atom/movable/screen/alert/status_effect/ice_block_talisman
 	name = "Frozen Solid"
@@ -34,7 +32,7 @@
 	return ..()
 
 /// Blocks movement from the status effect owner
-/datum/status_effect/ice_block_talisman/proc/owner_moved()
+/datum/status_effect/ice_block_talisman/owner_moved()
 	return COMPONENT_MOVABLE_BLOCK_PRE_MOVE
 
 /datum/status_effect/ice_block_talisman/on_remove()

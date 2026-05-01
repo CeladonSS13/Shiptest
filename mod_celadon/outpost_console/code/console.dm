@@ -16,7 +16,6 @@
 	data["outpostDocked"] = outpost_docked
 	data["points"] = charge_account ? charge_account.account_balance : 0
 	data["siliconUser"] = user.has_unlimited_silicon_privilege && check_ship_ai_access(user)
-	data["usingBeacon"] = use_beacon //is the mode set to deliver to the beacon or the cargobay?
 	data["supplies"] = list()
 	message = "Sales are near-instantaneous - please choose carefully."
 	if(SSshuttle.supplyBlocked)
@@ -24,9 +23,6 @@
 	data["message"] = message
 
 	data["supplies"] = supply_pack_data
-	if (cooldown > 0)//cooldown used for printing beacons
-		cooldown--
-
 	data["shipMissions"] = list()
 	data["outpostMissions"] = list()
 
@@ -48,8 +44,9 @@
 /obj/machinery/computer/cargo/faction/ui_static_data(mob/user)
 	var/list/data = list()
 	data["supplies"] = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
+	var/datum/overmap/outpost/current_outpost = current_ship.docked_to
+	for(var/pack in current_outpost.market.supply_packs)
+		var/datum/supply_pack/P = current_outpost.market.supply_packs[pack]
 		if(!data["supplies"][P.category])
 			data["supplies"][P.category] = list(
 				"name" = P.category,
@@ -83,13 +80,13 @@
 			return TRUE
 
 		if("purchase")
+			var/datum/overmap/outpost/current_outpost = current_ship.docked_to
 			var/list/purchasing = params["cart"]
 			var/total_cost = text2num(params["total"])
 			var/area/current_area = get_area(src)
 			var/list/packs = list()
 			for(var/item in purchasing)
-				var/id = item["id"]
-				var/datum/supply_pack/pack = SSshuttle.supply_packs[text2path(id)]
+				var/datum/supply_pack/pack = locate(item["ref"]) in current_outpost.market.supply_packs
 				if(pack)
 					packs += pack
 
@@ -98,27 +95,26 @@
 				return TRUE
 
 			var/turf/landing_turf
-			if(!use_beacon)
-				var/list/empty_turfs = list()
+			var/list/empty_turfs = list()
+			if(!landingzone)
+				reconnect()
 				if(!landingzone)
-					reconnect()
-					if(!landingzone)
-						WARNING("[src] couldnt find a Ship/Cargo (aka cargobay) area on a ship, and as such it has set the supplypod landingzone to the area it resides in.")
-						landingzone = get_area(src)
+					WARNING("[src] couldnt find a Ship/Cargo (aka cargobay) area on a ship, and as such it has set the supplypod landingzone to the area it resides in.")
+					landingzone = get_area(src)
 
-				for(var/turf/open/floor/T in landingzone.contents)
-					if(T.is_blocked_turf())
-						continue
-					empty_turfs += T
-					CHECK_TICK
-				if(!length(empty_turfs))
-					message_cooldown = console_cooldown_feedback(src, "ERROR: Landing zone full! No space for drop!", message_cooldown)
-					return TRUE
-				landing_turf = pick(empty_turfs)
+			for(var/turf/open/floor/T in landingzone.contents)
+				if(T.is_blocked_turf())
+					continue
+				empty_turfs += T
+				CHECK_TICK
+			if(!length(empty_turfs))
+				message_cooldown = console_cooldown_feedback(src, "ERROR: Landing zone full! No space for drop!", message_cooldown)
+				return TRUE
+			landing_turf = pick(empty_turfs)
 
 			if(landing_turf && charge_account.adjust_money(-total_cost))
 				var/datum/supply_order/SO = new(packs, usr.ckey, "")
-				new /obj/effect/pod_landingzone(landing_turf, podType, SO)
+				new /obj/effect/pod_landingzone(landing_turf, pod_type, SO)
 				playsound(src, 'sound/machines/twobeep_high.ogg', 50, TRUE)
 				say("Order incoming!")
 				// Логирование покупок
@@ -164,8 +160,9 @@
 
 /obj/machinery/computer/cargo/faction/proc/generate_faction_pack_data(datum/faction)
 	. = supply_pack_data = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
+	var/datum/overmap/outpost/current_outpost = current_ship.docked_to
+	for(var/pack in current_outpost.market.supply_packs)
+		var/datum/supply_pack/P = current_outpost.market.supply_packs[pack]
 
 		var/is_faction = ispath(P.faction, faction)
 		// Под независимые попадают и те, у которых фракция = null
@@ -182,7 +179,7 @@
 			supply_pack_data[P.category]["packs"] += list(list(
 				"name" = P.name,
 				"cost" = P.cost,
-				"id" = pack,
+				"ref" = REF(pack),
 				"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
 			))
 
@@ -191,8 +188,9 @@
 /obj/machinery/computer/cargo/faction/proc/faction_ui_static_data(mob/user, datum/faction)	// КОД JOPA
 	var/list/data = list()
 	data["supplies"] = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
+	var/datum/overmap/outpost/current_outpost = current_ship.docked_to
+	for(var/pack in current_outpost.market.supply_packs)
+		var/datum/supply_pack/P = current_outpost.market.supply_packs[pack]
 		var/is_faction = ispath(P.faction, faction)
 
 		if (is_faction)
@@ -230,7 +228,7 @@
 
 	charge_account = ACCOUNT_FAC
 
-	podType = /obj/structure/closet/supplypod/centcompod
+	pod_type = /obj/structure/closet/supplypod/centcompod
 
 	resistance_flags = INDESTRUCTIBLE
 	flags_1 = NODECONSTRUCT_1
@@ -271,8 +269,9 @@
 
 /obj/machinery/computer/cargo/faction/generate_pack_data()
 	supply_pack_data = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
+	var/datum/overmap/outpost/current_outpost = current_ship.docked_to
+	for(var/pack in current_outpost.market.supply_packs)
+		var/datum/supply_pack/P = current_outpost.market.supply_packs[pack]
 		if(!supply_pack_data[P.category])
 			supply_pack_data[P.category] = list(
 				"name" = P.category,
@@ -300,7 +299,7 @@
 	contraband = FALSE
 	self_paid = FALSE
 
-	podType = /obj/structure/closet/supplypod/syndicate
+	pod_type = /obj/structure/closet/supplypod/syndicate
 
 	charge_account = ACCOUNT_SYN
 
@@ -341,7 +340,7 @@
 	contraband = FALSE
 	self_paid = FALSE
 
-	podType = /obj/structure/closet/supplypod/centcompod
+	pod_type = /obj/structure/closet/supplypod/centcompod
 
 	charge_account = ACCOUNT_INT
 
@@ -366,7 +365,7 @@
 	contraband = FALSE
 	self_paid = FALSE
 
-	podType = /obj/structure/closet/supplypod/centcompod
+	pod_type = /obj/structure/closet/supplypod/centcompod
 
 	charge_account = ACCOUNT_SLF
 
@@ -391,7 +390,7 @@
 	contraband = FALSE
 	self_paid = FALSE
 
-	podType = /obj/structure/closet/supplypod/elysiumpod
+	pod_type = /obj/structure/closet/supplypod/elysiumpod
 
 	charge_account = ACCOUNT_IND
 
@@ -436,7 +435,7 @@
 	contraband = FALSE
 	self_paid = FALSE
 
-	podType = /obj/structure/closet/supplypod/centcompod
+	pod_type = /obj/structure/closet/supplypod/centcompod
 
 	charge_account = ACCOUNT_NTN
 

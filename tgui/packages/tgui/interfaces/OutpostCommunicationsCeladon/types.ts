@@ -8,8 +8,6 @@ export type Data = {
   outpostMissions: Array<Mission>;
   beaconZone: string;
   beaconName: string;
-  hasBeacon: boolean;
-  usingBeacon: boolean;
   message: string;
   printMsg: string;
   canBuyBeacon: boolean;
@@ -22,6 +20,7 @@ export type Mission = {
   name: string;
   desc: string;
   progressStr: string;
+  progressPer: number;
   value: number;
   remaining: number;
   duration: number;

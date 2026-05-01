@@ -280,8 +280,8 @@
 	desc = "A proprietary power cell primarily used by Sharplite Energy weaponry. Nanotrasen's large market share has forced some weapon developers to include adapters for these cells"
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/power.dmi'
 	icon_state = "energy-cell"
-	base_state = "energy"	// Оверлей - Цвет-заряда батареек
-	reskin = TRUE
+	var/base_state = "energy"	// Оверлей - Цвет-заряда батареек
+	var/reskin = TRUE
 
 /obj/item/stock_parts/cell/gun/empty
 	start_empty = TRUE

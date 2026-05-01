@@ -1,6 +1,5 @@
 /datum/emote
 	cooldown = 1.5 SECONDS
-	muzzled_noises = list("сильный", "слабый")
 	// audio_cooldown = 3 SECONDS
 
 //////////////////////

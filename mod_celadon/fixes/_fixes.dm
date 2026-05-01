@@ -50,7 +50,7 @@
 		new /datum/stack_recipe("bronze boots", /obj/item/clothing/shoes/bronze),
 	)
 	GLOB.bronze_recipes += bronze_recipes
-	GLOB.metal_recipes += new /datum/stack_recipe("metal barricade", /obj/structure/deployable_barricade/metal, 20, time = 4 SECONDS, one_per_turf = TRUE, on_floor = TRUE), \ // [CELADON-ADD] - CELADON_STRUCTURES - Барикады
+	GLOB.metal_recipes += new /datum/stack_recipe("metal barricade", /obj/structure/deployable_barricade/metal, 20, time = 4 SECONDS, one_per_turf = TRUE, on_floor = TRUE) // [CELADON-ADD] - CELADON_STRUCTURES - Барикады
 	GLOB.department_radio_keys["ö"] = RADIO_CHANNEL_WIDEBAND
 	var/list/events = list(
 		// [CELADON-ADD] - CELADON_OVERMAP - Включаем на овермапе ионные шторма

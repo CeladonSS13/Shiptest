@@ -85,16 +85,16 @@
 
 	feature_spawn_chance = 0.25
 	feature_spawn_list = list(
+		// [CELADON - ADD] - CELADON_RETURN_CONTENT_SPAWN, CELADON_RETURN_LANDMINE
+		/obj/structure/elite_tumor = 40,
+		/obj/effect/spawner/minefield = 2,
+		// [/CELADON - ADD]
 		/obj/structure/geyser/random = 80,
 		/obj/structure/vein/rockplanet = 60,
 		/obj/structure/vein/rockplanet/classtwo = 40,
 		/obj/effect/spawner/random/anomaly/rock = 10,
 		/obj/structure/vein/rockplanet/classthree = 10,
 		/obj/effect/spawner/random/anomaly/big = 1 //get out of here stalker
-		// [CELADON - ADD] - CELADON_RETURN_CONTENT_SPAWN, CELADON_RETURN_LANDMINE
-		/obj/structure/elite_tumor = 40,
-		/obj/effect/spawner/minefield = 2,
-		// [/CELADON - ADD]
 	)
 
 	flora_spawn_chance = 5

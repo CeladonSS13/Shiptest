@@ -123,14 +123,14 @@
 		. = ..()
 	else if(sectorwide == TRUE) // prevents incompatibility with broadcast cameras
 		return
-	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE, floor_okay = TRUE)) // [CELADON-EDIT] - QOL - Разрешаем использование UI раций в лежачем положении
+	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE, TRUE)) // [CELADON-EDIT] - QOL - Разрешаем использование UI раций в лежачем положении
 		broadcasting = !broadcasting
 		to_chat(user, span_notice("You toggle broadcasting [broadcasting ? "on" : "off"]."))
 
 /obj/item/radio/CtrlShiftClick(mob/user)
 	if(headset)
 		. = ..()
-	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE, floor_okay = TRUE)) // [CELADON-EDIT] - QOL - Разрешаем использование UI раций в лежачем положении
+	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE, TRUE)) // [CELADON-EDIT] - QOL - Разрешаем использование UI раций в лежачем положении
 		listening = !listening
 		to_chat(user, span_notice("You toggle speaker [listening ? "on" : "off"]."))
 

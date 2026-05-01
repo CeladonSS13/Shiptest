@@ -1,4 +1,4 @@
-#ifndef MINIMAL
+#ifndef MINIMAL // CELADON EDIT
 SUBSYSTEM_DEF(overmap)
 	name = "Overmap"
 	wait = 10
@@ -68,7 +68,7 @@ SUBSYSTEM_DEF(overmap)
 		else
 			sector_types = potential_type
 		fdel(SAFEZONE_OVERRIDE_FILEPATH) // don't want it to affect 2 rounds in a row.
-	default_system = create_new_star_system(new sector_types)
+	safe_system = create_new_star_system(new sector_types)
 	// [/CELADON-EDIT]
 	return ..()
 
@@ -1229,3 +1229,4 @@ SUBSYSTEM_DEF(overmap)
 	The [span_notice("MODIF. OVERMAP")] tool is similar in usuage to BUILD ADV but to manipulate the overmap only.
 	"}
 	return ..()
+#endif // CELADON EDIT

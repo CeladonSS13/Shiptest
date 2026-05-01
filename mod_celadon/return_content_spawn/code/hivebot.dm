@@ -286,7 +286,7 @@
 				new /mob/living/simple_animal/hostile/human/skeleton(loc)
 				new /mob/living/simple_animal/hostile/human/skeleton(loc)
 			if(prob(25))
-				new /obj/item/shield/riot/roman(loc)
+				new /obj/item/shield/buckler(loc)
 				new /mob/living/simple_animal/hostile/human/skeleton(loc)
 			if(prob(55))
 				new /obj/item/clothing/suit/armor/riot/knight/blue(loc)

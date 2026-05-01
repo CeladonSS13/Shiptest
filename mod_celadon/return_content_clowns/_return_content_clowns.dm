@@ -25,21 +25,21 @@
 		DYE_REGISTRY_UNDER = list(
 			DYE_MIME = /obj/item/clothing/under/rank/civilian/mime,
 			DYE_CLOWN = /obj/item/clothing/under/rank/civilian/clown,
-		)
+		),
 		DYE_REGISTRY_JUMPSKIRT = list(
 			DYE_MIME = /obj/item/clothing/under/rank/civilian/mime/skirt,
-		)
+		),
 		DYE_REGISTRY_GLOVES = list(
 			DYE_MIME = /obj/item/clothing/gloves/color/white,
 			DYE_CLOWN = /obj/item/clothing/gloves/color/rainbow,
-		)
+		),
 		DYE_REGISTRY_SNEAKERS = list(
 			DYE_MIME = /obj/item/clothing/shoes/sneakers/black,
-		)
+		),
 		DYE_REGISTRY_BEDSHEET = list(
 			DYE_MIME = /obj/item/bedsheet/mime,
 			DYE_CLOWN = /obj/item/bedsheet/clown,
-		)
+		),
 	)
 	for(var/category, key in dye_registry)
 		GLOB.dye_registry[category][key] = dye_registry[category][key]
