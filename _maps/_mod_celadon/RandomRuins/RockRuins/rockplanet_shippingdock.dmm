@@ -3153,10 +3153,6 @@
 /mob/living/simple_animal/pet/mothroach{
 	name = "Baffles"
 	},
-/obj/effect/landmark/mission_poi/main{
-	type_to_spawn = /mob/living/simple_animal/pet/mothroach;
-	already_spawned = 1
-	},
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/ruin/rockplanet/shippingdock)
 "zU" = (
@@ -5080,7 +5076,7 @@
 "QC" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/under/suit/charcoal,
-/obj/item/clothing/suit/toggle/lawyer/charcoal,
+/obj/item/clothing/under/rank/civilian/lawyer/black,
 /obj/item/clothing/glasses/sunglasses/big,
 /obj/item/clothing/shoes/laceup,
 /obj/effect/decal/cleanable/cobweb/cobweb2,

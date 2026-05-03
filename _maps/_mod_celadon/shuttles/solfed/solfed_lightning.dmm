@@ -200,6 +200,7 @@
 	dir = 4
 	},
 /obj/structure/sign/flag/solfed/directional/west,
+/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "cE" = (
@@ -378,6 +379,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo/cargo_bay)
 "eu" = (
@@ -766,6 +768,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/airalarm/directional/east,
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
 "ja" = (
@@ -837,17 +840,13 @@
 /turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/canteen)
 "jM" = (
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/machinery/power/shuttle/engine/electric/premium,
 /obj/docking_port/mobile{
 	dir = 4;
 	port_direction = 2;
 	preferred_direction = 4
 	},
-/turf/open/floor/plating,
-/area/ship/engineering)
+/turf/template_noop,
+/area/ship/external)
 "jQ" = (
 /obj/machinery/chem_heater{
 	pixel_y = 3
@@ -855,6 +854,7 @@
 /obj/effect/turf_decal/trimline/opaque/orange/line{
 	dir = 1
 	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "jZ" = (
@@ -944,6 +944,16 @@
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel/heavymetal/var1,
 /area/ship/crew/canteen)
+"kx" = (
+/obj/machinery/light/floor{
+	light_color = "#6496FA"
+	},
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 4;
+	piping_layer = 2
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external)
 "kI" = (
 /obj/effect/turf_decal/trimline/opaque/solgovgold/end{
 	dir = 4;
@@ -1612,9 +1622,7 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "rF" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
@@ -1865,6 +1873,7 @@
 /obj/effect/turf_decal/trimline/opaque/orange/line{
 	dir = 6
 	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "tx" = (
@@ -1886,7 +1895,6 @@
 /obj/item/clothing/suit/armor/vest/solgov/captain,
 /obj/item/clothing/under/solgov/formal/captain,
 /obj/item/clothing/gloves/combat,
-/obj/item/door_remote/captain,
 /obj/item/storage/belt/sabre/solgov,
 /obj/item/clothing/under/solgov,
 /obj/item/clothing/under/solgov/dress,
@@ -1988,23 +1996,8 @@
 	dir = 10
 	},
 /obj/structure/table/wood,
-/obj/item/storage/fancy/coffee_cart_rack{
-	pixel_x = -6;
+/obj/machinery/microwave{
 	pixel_y = 6
-	},
-/obj/item/blank_coffee_cartridge{
-	pixel_x = 2
-	},
-/obj/item/blank_coffee_cartridge{
-	pixel_x = 2;
-	pixel_y = 8
-	},
-/obj/item/blank_coffee_cartridge{
-	pixel_x = 2;
-	pixel_y = 4
-	},
-/obj/item/storage/fancy/coffee_cart_rack{
-	pixel_x = -8
 	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/crew/canteen)
@@ -2302,6 +2295,20 @@
 /obj/item/reagent_containers/glass/coffee_cup,
 /obj/item/reagent_containers/glass/coffee_cup,
 /obj/item/reagent_containers/condiment/sugar,
+/obj/item/blank_coffee_cartridge{
+	pixel_x = 2;
+	pixel_y = 4
+	},
+/obj/item/blank_coffee_cartridge{
+	pixel_x = 2;
+	pixel_y = 4
+	},
+/obj/item/storage/fancy/coffee_cart_rack{
+	pixel_x = -8
+	},
+/obj/item/storage/fancy/coffee_cart_rack{
+	pixel_x = -8
+	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/crew/canteen)
 "xT" = (
@@ -2638,7 +2645,8 @@
 /turf/open/floor/wood/walnut,
 /area/ship/crew/cryo)
 "Bb" = (
-/obj/machinery/portable_atmospherics/canister/oxygen,
+/obj/machinery/atmospherics/components/binary/pump/on/layer2,
+/obj/structure/closet/firecloset/wall/directional/east,
 /turf/open/floor/plasteel/heavymetal/var1,
 /area/ship/engineering)
 "Be" = (
@@ -2693,9 +2701,9 @@
 	pixel_x = -5;
 	pixel_y = 1
 	},
-/obj/item/stamp/solfed/commander{
+/obj/item/stamp/solfed/captain{
 	pixel_y = 3;
-	pixel_x = 8
+	pixel_x = 9
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
@@ -3418,7 +3426,6 @@
 	pixel_x = 0;
 	pixel_y = 2
 	},
-/obj/item/gun/energy/floragun,
 /obj/item/seeds/coffee,
 /obj/item/seeds/coffee,
 /turf/open/floor/suns/hatch{
@@ -3655,6 +3662,7 @@
 /area/ship/crew/canteen)
 "My" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/border,
+/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "MC" = (
@@ -3842,6 +3850,7 @@
 	pixel_x = -20;
 	pixel_y = 10
 	},
+/obj/machinery/holopad,
 /turf/open/floor/plasteel/strongdark,
 /area/ship/bridge)
 "Pb" = (
@@ -3909,20 +3918,11 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
-"Py" = (
-/obj/docking_port/stationary{
-	width = 30;
-	height = 15;
-	dwidth = 15;
-	dir = 8
-	},
-/turf/template_noop,
-/area/template_noop)
 "PD" = (
 /obj/effect/turf_decal/trimline/opaque/cybersunteal/line{
 	dir = 6
 	},
-/obj/machinery/vending/wallmed{
+/obj/machinery/vending/wallmed/ship{
 	pixel_x = 30;
 	pixel_y = -4
 	},
@@ -4026,7 +4026,10 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/engineering)
 "QH" = (
-/obj/structure/punching_bag,
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 4;
+	piping_layer = 2
+	},
 /turf/open/floor/plasteel/heavymetal/var3,
 /area/ship/engineering)
 "Rk" = (
@@ -4102,6 +4105,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue/border{
 	dir = 8
 	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "Sw" = (
@@ -4378,7 +4382,6 @@
 /area/ship/general/cargo)
 "Vy" = (
 /obj/structure/closet/wall/red/directional/west,
-/obj/item/gun/ballistic/revolver/viper/indie,
 /obj/item/gun/ballistic/revolver/viper/indie,
 /obj/item/gun/ballistic/revolver/viper/indie,
 /obj/item/storage/box/ammo/a357,
@@ -4921,7 +4924,7 @@ yQ
 yQ
 yQ
 yQ
-yQ
+jM
 yQ
 yQ
 yQ
@@ -4947,7 +4950,6 @@ yQ
 yQ
 yQ
 yQ
-Py
 yQ
 yQ
 yQ
@@ -4963,7 +4965,8 @@ yQ
 yQ
 yQ
 yQ
-jM
+yQ
+bw
 yQ
 yQ
 yQ
@@ -5371,7 +5374,7 @@ Ww
 oj
 ri
 eB
-RM
+kx
 dK
 CF
 EK

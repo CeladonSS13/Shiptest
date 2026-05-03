@@ -142,11 +142,11 @@
 "bg" = (
 /obj/structure/table/wood,
 /obj/item/food/hotdog,
-/obj/item/trash/plate{
+/obj/item/trash/chips{
 	pixel_x = 7;
 	pixel_y = 6
 	},
-/obj/item/trash/plate{
+/obj/item/trash/chips{
 	pixel_x = 7;
 	pixel_y = 2
 	},
@@ -1045,7 +1045,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "ms" = (
-/obj/machinery/vending/wallmed{
+/obj/machinery/vending/wallmed/ship{
 	pixel_x = 25
 	},
 /obj/structure/bed/roller,
@@ -1103,7 +1103,7 @@
 /obj/structure/closet/crate/bin,
 /obj/item/storage/cans/sixbeer,
 /obj/item/food/cheesiehonkers,
-/obj/item/reagent_containers/food/drinks/beer/light,
+/obj/item/reagent_containers/food/drinks/mead,
 /turf/open/floor/wood/mahogany,
 /area/ship/security)
 "nc" = (
@@ -1768,7 +1768,7 @@
 /obj/item/storage/pill_bottle/lsd,
 /obj/item/storage/pill_bottle/psicodine,
 /obj/item/reagent_containers/syringe/contraband/crank,
-/obj/item/reagent_containers/syringe/contraband/fentanyl,
+/obj/item/reagent_containers/syringe/contraband/morphine,
 /obj/item/reagent_containers/syringe/contraband/methamphetamine,
 /obj/item/reagent_containers/syringe/contraband/methamphetamine,
 /obj/item/reagent_containers/syringe/contraband/morphine,
@@ -3166,6 +3166,8 @@
 /obj/item/pickaxe/rusted,
 /obj/item/shovel,
 /obj/structure/spider/stickyweb,
+/obj/item/circuitboard/machine/oven,
+/obj/item/circuitboard/machine/griddle,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "JN" = (
@@ -3197,11 +3199,11 @@
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/item/food/grilled_cheese_sandwich,
-/obj/item/trash/plate{
+/obj/item/trash/chips{
 	pixel_x = 7;
 	pixel_y = 2
 	},
-/obj/item/trash/plate{
+/obj/item/trash/chips{
 	pixel_x = 7;
 	pixel_y = 6
 	},
@@ -3212,6 +3214,7 @@
 /obj/effect/turf_decal/siding/wood/end{
 	color = "#ab9980"
 	},
+/obj/item/plate/oven_tray,
 /turf/open/floor/wood/maple,
 /area/ship/crew/canteen)
 "Kd" = (

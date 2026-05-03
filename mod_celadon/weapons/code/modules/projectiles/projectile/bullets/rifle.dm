@@ -63,3 +63,14 @@
 	speed = 0.3
 	damage = 37
 	armour_penetration = 17
+
+// Antifauna bullets
+/obj/projectile/bullet/bof
+	name = "4.6x30mm BoF"
+	damage = 10
+
+/obj/projectile/bullet/bof/on_hit(atom/target, blocked)
+	var/mob/living/T = target
+	if((isminingfauna(T)) && (blocked != 100))
+		T.apply_damage(50, BRUTE, null, FALSE)
+	return ..()

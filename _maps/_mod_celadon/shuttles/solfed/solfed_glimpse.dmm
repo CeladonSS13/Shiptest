@@ -126,8 +126,13 @@
 /turf/open/floor/carpet/royalblue,
 /area/ship/bridge)
 "dD" = (
-/obj/machinery/vending/boozeomat/all_access,
+/obj/machinery/vending/boozeomat/all_access{
+	pixel_x = 25;
+	dir = 8
+	},
 /obj/machinery/light/directional/north,
+/obj/machinery/chem_dispenser/drinks,
+/obj/structure/table/wood,
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
 "dH" = (
@@ -579,11 +584,6 @@
 /obj/item/storage/box/bodybags{
 	pixel_x = -7;
 	pixel_y = 4
-	},
-/obj/item/reagent_containers/glass/bottle{
-	list_reagents = list(/datum/reagent/medicine/thializid=30);
-	name = "thializid bottle";
-	pixel_x = 5
 	},
 /obj/item/clothing/under/solfed/medical,
 /obj/item/storage/belt/military/solfed/medical,
@@ -1115,9 +1115,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "yl" = (
-/obj/structure/table/wood,
-/obj/item/melee/knife/kitchen,
-/obj/item/cutting_board,
+/obj/machinery/griddle,
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
 "yw" = (
@@ -1167,7 +1165,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/vending/wallmed{
+/obj/machinery/vending/wallmed/ship{
 	pixel_y = -27
 	},
 /obj/structure/cable{
@@ -1276,8 +1274,8 @@
 /obj/item/clothing/gloves/combat/solfed,
 /obj/item/clothing/suit/armor/vest/marine/medium,
 /obj/item/clothing/suit/armor/vest/marine/medium,
-/obj/item/clothing/head/helmet/solfed/m11,
-/obj/item/clothing/head/helmet/solfed/m11,
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed,
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed,
 /turf/open/floor/wood/ebony,
 /area/ship/security/armory)
 "zV" = (
@@ -1685,8 +1683,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "GT" = (
-/obj/machinery/chem_dispenser/drinks,
-/obj/structure/table/wood,
+/obj/machinery/oven,
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
 "GY" = (
@@ -1755,9 +1752,14 @@
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
 "HY" = (
-/obj/machinery/reagentgrinder,
+/obj/machinery/reagentgrinder{
+	pixel_x = -8;
+	pixel_y = 18
+	},
 /obj/structure/table/wood,
 /obj/machinery/airalarm/directional/north,
+/obj/item/cutting_board,
+/obj/item/melee/knife/kitchen,
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/canteen/kitchen)
 "Ip" = (

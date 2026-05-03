@@ -143,6 +143,19 @@
 
 	return ..()
 
+
+/// Returns a user-facing blood type string, safely handling exotic blood reagents
+// [CELADON-ADD] - CELADON_BLOOD_DISPLAY
+/mob/living/carbon/proc/get_blood_type_display()
+	var/blood_type_display = "Unknown"
+	if(dna?.blood_type)
+		return dna.blood_type.name
+	var/blood_id = get_blood_id()
+	if(blood_id && blood_id != /datum/reagent/blood)
+		var/datum/reagent/R = GLOB.chemical_reagents_list[blood_id]
+		return R ? R.name : blood_id
+	return blood_type_display
+// [/CELADON-ADD] - CELADON_BLOOD_DISPLAY
 /mob/living/carbon/human/can_use_guns(obj/item/G)
 	. = ..()
 	if(G.trigger_guard == TRIGGER_GUARD_NORMAL)
@@ -288,3 +301,34 @@
 		else
 			visible_gender = "Thing"
 	return visible_gender
+
+/**
+ * Setter for mob height
+ *
+ * Exists so that the update is done immediately
+ *
+ * Returns TRUE if changed, FALSE otherwise
+ */
+/mob/living/carbon/human/proc/set_mob_height(new_height)
+	if(mob_height == new_height)
+		return FALSE
+	if(new_height == HUMAN_HEIGHT_DWARF)
+		CRASH("Don't set height to dwarf height directly, use dwarf trait")
+
+	mob_height = new_height
+	src?.dna.current_height_filter = new_height
+	regenerate_icons()
+	return TRUE
+
+/**
+ * Getter for mob height
+ *
+ * Mainly so that dwarfism can adjust height without needing to override existing height
+ *
+ * Returns a mob height num
+ */
+/mob/living/carbon/human/proc/get_mob_height()
+	if(HAS_TRAIT(src, TRAIT_DWARF))
+		return HUMAN_HEIGHT_DWARF
+
+	return mob_height

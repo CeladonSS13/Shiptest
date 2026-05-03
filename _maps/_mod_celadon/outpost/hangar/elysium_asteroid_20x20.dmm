@@ -153,7 +153,7 @@
 	},
 /area/hangar)
 "dj" = (
-/obj/structure/plasticflaps,
+/obj/structure/plasticflaps/outpost,
 /obj/machinery/conveyor/auto{
 	dir = 1;
 	id = "outpost3";
@@ -470,11 +470,9 @@
 	},
 /obj/structure/table/reinforced,
 /obj/item/toy/plush/moth/rainbow{
-	pixel_x = 0;
 	pixel_y = 4
 	},
-/obj/item/clothing/head/beret/highlander{
-	pixel_x = 0;
+/obj/item/clothing/head/beret/vintage{
 	pixel_y = 14
 	},
 /turf/open/floor/plating/catwalk_floor{
@@ -847,7 +845,10 @@
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 8
 	},
-/obj/structure/reagent_dispensers/watertank,
+/obj/structure/reagent_dispensers/watertank{
+	anchorable = 0;
+	anchored = 1
+	},
 /turf/open/floor/plasteel/patterned/cargo_one{
 	planetary_atmos = 1
 	},
@@ -1202,6 +1203,13 @@
 /area/hangar)
 "AK" = (
 /turf/open/floor/plating/asteroid/icerock/smooth,
+/area/hangar)
+"Bg" = (
+/obj/machinery/conveyor/auto/outpost{
+	dir = 8
+	},
+/obj/structure/plasticflaps/outpost,
+/turf/open/floor/hangar/plasteel,
 /area/hangar)
 "Bh" = (
 /obj/effect/turf_decal/trimline/opaque/yellow/filled/arrow_cw{
@@ -1646,7 +1654,8 @@
 	},
 /obj/structure/reagent_dispensers/fueltank{
 	anchored = 1;
-	desc = "Вы видите как к топливной тележке прикреплена записка, где большими красными буквами написано: данная тележка собственность аванпоста! Поэтому данная тележка приварена к полу намертво. Тот кто решит спиздить её - получит по шапке!"
+	desc = "На топливном баке висит табличка — собственность аванпоста. Объект закреплен. За хищение имущества предусмотрена строгая ответственность.";
+	anchorable = 0
 	},
 /turf/open/floor/plasteel/patterned/cargo_one{
 	planetary_atmos = 1
@@ -3619,7 +3628,7 @@ iZ
 iZ
 iZ
 iZ
-sS
+Bg
 zx
 iZ
 iZ

@@ -32,7 +32,7 @@
 "ag" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/mask/gas/explorer,
+/obj/item/clothing/mask/gas/explorer/legacy,
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
@@ -620,7 +620,7 @@
 	dir = 8
 	},
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/mask/gas/explorer,
+/obj/item/clothing/mask/gas/explorer/legacy,
 /obj/item/clothing/suit/hooded/explorer,
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo/office)
@@ -2204,7 +2204,7 @@
 	},
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/item/tank/jetpack,
-/obj/item/clothing/mask/gas/explorer,
+/obj/item/clothing/mask/gas/explorer/legacy,
 /obj/item/clothing/suit/space/hardsuit/mining/heavy,
 /obj/structure/window/reinforced/tinted/frosted,
 /turf/open/floor/wood/ebony,
@@ -2515,7 +2515,7 @@
 	pixel_x = -5;
 	pixel_y = -1
 	},
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = 10;
 	pixel_y = 3
 	},
@@ -2611,14 +2611,19 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo/office)
 "qh" = (
-/obj/structure/table,
-/obj/machinery/reagentgrinder{
-	pixel_y = 11
-	},
 /obj/effect/turf_decal/corner/transparent/bar/diagonal,
-/obj/item/melee/knife{
-	pixel_x = 15;
-	pixel_y = 2
+/obj/structure/table,
+/obj/item/storage/box/cups{
+	pixel_x = -4;
+	pixel_y = 5
+	},
+/obj/machinery/reagentgrinder{
+	pixel_y = 18;
+	pixel_x = -9
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass{
+	pixel_x = 9;
+	pixel_y = 4
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew)
@@ -2668,22 +2673,14 @@
 /turf/template_noop,
 /area/template_noop)
 "qA" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/turf_decal/siding/wood{
-	dir = 8;
-	color = "#E3994E"
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 4;
-	color = "#E3994E"
-	},
-/obj/item/kirbyplants{
-	icon_state = "plant-22";
-	pixel_y = 11;
-	pixel_x = 6
-	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/turf/open/floor/wood/yew,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/corner/transparent/bar/diagonal,
+/obj/structure/table,
+/obj/machinery/microwave{
+	pixel_y = 7
+	},
+/turf/open/floor/plasteel/white,
 /area/ship/crew)
 "qI" = (
 /obj/structure/cable{
@@ -2917,16 +2914,10 @@
 "ti" = (
 /obj/structure/table,
 /obj/effect/turf_decal/corner/transparent/bar/diagonal,
-/obj/item/storage/box/cups{
-	pixel_x = -4;
-	pixel_y = 5
-	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/machinery/light/dim/directional/north,
-/obj/item/reagent_containers/food/drinks/drinkingglass{
-	pixel_x = 9;
-	pixel_y = 4
-	},
+/obj/item/cutting_board,
+/obj/item/melee/knife/kitchen,
 /turf/open/floor/plasteel/white,
 /area/ship/crew)
 "tl" = (
@@ -3793,11 +3784,8 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "CM" = (
-/obj/structure/table,
-/obj/machinery/microwave{
-	pixel_y = 7
-	},
 /obj/effect/turf_decal/corner/transparent/bar/diagonal,
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/white,
 /area/ship/crew)
 "CO" = (
@@ -3906,12 +3894,12 @@
 /obj/effect/turf_decal/box/white/corners,
 /obj/structure/closet/crate,
 /obj/item/storage/cans/sixbeer,
-/obj/item/reagent_containers/food/drinks/beer,
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead,
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = -8;
 	pixel_y = 0
 	},
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = 8;
 	pixel_y = 0
 	},
@@ -4237,12 +4225,12 @@
 /obj/item/clothing/suit/hooded/wintercoat/captain,
 /obj/item/clothing/glasses/sunglasses,
 /obj/item/megaphone/command,
-/obj/item/gun/energy/e_gun/mini,
 /obj/effect/turf_decal/siding/wood{
 	dir = 2;
 	color = "#332521"
 	},
 /obj/item/radio/headset/nanotrasen/alt/captain,
+/obj/item/gun/energy/e_gun/e_old/mini,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm/captain)
 "Hk" = (
@@ -4394,16 +4382,9 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "Jc" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 8;
-	color = "#E3994E"
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 4;
-	color = "#E3994E"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/wood/yew,
+/obj/effect/turf_decal/corner/transparent/bar/diagonal,
+/turf/open/floor/plasteel/white,
 /area/ship/crew)
 "Jk" = (
 /obj/structure/curtain/cloth/grey,
@@ -5909,7 +5890,7 @@
 /obj/structure/closet/crate/secure/weapon{
 	req_one_access = list(20)
 	},
-/obj/item/gun/ballistic/automatic/pistol/commander,
+/obj/item/gun/ballistic/automatic/pistol/challenger,
 /obj/item/ammo_box/magazine/co9mm,
 /obj/item/ammo_box/magazine/co9mm,
 /turf/open/floor/plasteel/dark,

@@ -79,16 +79,16 @@
 /turf/open/floor/hangar/plasteel,
 /area/ship/hallway/central)
 "aJ" = (
-/obj/structure/table/wood,
-/obj/effect/turf_decal/siding/wood{
-	dir = 5
+/obj/effect/turf_decal/corner/opaque/white/diagonal,
+/obj/structure/table/reinforced,
+/obj/item/cutting_board{
+	pixel_x = -3;
+	pixel_y = 1
 	},
-/obj/structure/showcase/machinery/microwave{
-	pixel_x = 0;
-	pixel_y = 5;
-	name = "Ultra deluxe Nanotrasen-brand microwave"
+/obj/item/food/meat/slab/chicken{
+	pixel_x = -4
 	},
-/turf/open/floor/wood,
+/turf/open/floor/plasteel,
 /area/ship/crew)
 "aL" = (
 /obj/effect/turf_decal/industrial/warning,
@@ -624,7 +624,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
-/obj/machinery/computer/apc_control{
+/obj/machinery/computer/monitor{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -2079,7 +2079,7 @@
 /turf/open/floor/plating/ship,
 /area/ship/general/engineering/engineering_1)
 "sg" = (
-/obj/machinery/vending/wallmed{
+/obj/machinery/vending/wallmed/ship{
 	pixel_y = 28
 	},
 /obj/effect/turf_decal/siding/red{
@@ -2240,12 +2240,7 @@
 /obj/item/melee/knife/combat,
 /obj/item/clothing/suit/armor/vest/security,
 /obj/item/clothing/glasses/hud/security/night,
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = -3;
-	name = "special weapon power cell";
-	pixel_x = 0
-	},
+/obj/item/stock_parts/cell/gun/upgraded,
 /turf/open/floor/wood,
 /area/ship/bridge)
 "tq" = (
@@ -2310,16 +2305,14 @@
 /area/ship/hangar)
 "un" = (
 /obj/machinery/light/directional/east,
-/obj/structure/table/wood,
+/obj/effect/turf_decal/corner/opaque/white/diagonal,
+/obj/item/melee/knife,
 /obj/item/kitchen/rollingpin{
 	pixel_x = 4;
 	pixel_y = -5
 	},
-/obj/item/melee/knife,
-/obj/effect/turf_decal/siding/wood{
-	dir = 6
-	},
-/turf/open/floor/wood,
+/obj/structure/table/reinforced,
+/turf/open/floor/plasteel,
 /area/ship/crew)
 "uq" = (
 /obj/effect/turf_decal/siding/red{
@@ -2371,10 +2364,8 @@
 /turf/open/floor/plating/ship,
 /area/ship/engineering/atmospherics)
 "uL" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/turf/open/floor/wood,
+/obj/effect/turf_decal/corner/opaque/white/diagonal,
+/turf/open/floor/plasteel,
 /area/ship/crew)
 "uN" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -2480,18 +2471,8 @@
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/gloves/combat,
 /obj/item/gun/energy/e_gun/plasmapistol_cryo,
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = -5;
-	name = "special weapon power cell";
-	pixel_x = 1
-	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = -5;
-	name = "special weapon power cell";
-	pixel_x = 1
-	},
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
 /obj/item/clothing/suit/armor/vest/security,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/clothing/glasses/welding,
@@ -2758,7 +2739,7 @@
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/glasses/welding,
 /obj/item/clothing/glasses/meson,
-/obj/item/gun/ballistic/automatic/pistol/commander/no_mag,
+/obj/item/gun/ballistic/automatic/pistol/challenger/no_mag,
 /obj/item/ammo_box/magazine/co9mm{
 	pixel_y = -1;
 	pixel_x = -2
@@ -2873,11 +2854,12 @@
 "yH" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/food/drinks/shaker{
-	pixel_x = 8;
-	pixel_y = 6
-	},
 /obj/machinery/airalarm/directional/south,
+/obj/structure/showcase/machinery/microwave{
+	pixel_x = 0;
+	pixel_y = 5;
+	name = "Ultra deluxe Nanotrasen-brand microwave"
+	},
 /turf/open/floor/wood,
 /area/ship/crew)
 "yM" = (
@@ -3258,10 +3240,8 @@
 /obj/item/reagent_containers/condiment/flour,
 /obj/item/reagent_containers/condiment/flour,
 /obj/item/reagent_containers/condiment/flour,
-/obj/effect/turf_decal/siding/wood{
-	dir = 10
-	},
-/turf/open/floor/wood,
+/obj/effect/turf_decal/corner/opaque/white/diagonal,
+/turf/open/floor/plasteel,
 /area/ship/crew)
 "Cp" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -3280,21 +3260,15 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hangar)
 "Cv" = (
-/obj/structure/table/wood,
-/obj/item/cutting_board{
-	pixel_x = -3;
-	pixel_y = 1
-	},
-/obj/item/food/meat/slab/chicken{
-	pixel_x = -4
-	},
-/obj/effect/turf_decal/siding/wood,
-/turf/open/floor/wood,
+/obj/effect/turf_decal/corner/opaque/white/diagonal,
+/obj/machinery/griddle,
+/turf/open/floor/plasteel,
 /area/ship/crew)
 "CD" = (
 /obj/structure/extinguisher_cabinet/directional/south,
-/obj/effect/turf_decal/siding/wood,
-/turf/open/floor/wood,
+/obj/effect/turf_decal/corner/opaque/white/diagonal,
+/obj/machinery/oven,
+/turf/open/floor/plasteel,
 /area/ship/crew)
 "CI" = (
 /obj/structure/cable{
@@ -3875,7 +3849,6 @@
 /obj/structure/guncloset{
 	anchored = 1
 	},
-/obj/item/gun/energy/e_gun,
 /obj/effect/turf_decal/box/red,
 /obj/effect/turf_decal/siding/red{
 	dir = 6;
@@ -3884,9 +3857,10 @@
 /obj/machinery/camera/autoname{
 	dir = 10
 	},
-/obj/item/gun/energy/e_gun/smg,
 /obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/gun/ballistic/automatic/smg/wt550,
+/obj/item/gun/energy/e_gun/e_old/smg,
+/obj/item/gun/energy/e_gun/e_old/smg,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "Id" = (
@@ -3940,12 +3914,16 @@
 	pixel_y = 0
 	},
 /obj/item/reagent_containers/food/drinks/drinkingglass{
-	pixel_x = 4;
-	pixel_y = -2
-	},
-/obj/item/reagent_containers/food/drinks/drinkingglass{
 	pixel_x = -2;
 	pixel_y = 11
+	},
+/obj/item/reagent_containers/food/drinks/shaker{
+	pixel_x = 8;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass{
+	pixel_x = 4;
+	pixel_y = -2
 	},
 /turf/open/floor/carpet/green,
 /area/ship/crew)
@@ -4324,6 +4302,10 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plating/ship,
 /area/ship/general/engineering/engineering_1)
+"Kp" = (
+/obj/machinery/griddle,
+/turf/template_noop,
+/area/template_noop)
 "Kv" = (
 /obj/effect/turf_decal/corner/opaque/mauve{
 	dir = 10
@@ -4458,10 +4440,8 @@
 	pixel_y = 8
 	},
 /obj/machinery/light/dim/directional/north,
-/obj/effect/turf_decal/siding/wood{
-	dir = 9
-	},
-/turf/open/floor/wood,
+/obj/effect/turf_decal/corner/opaque/white/diagonal,
+/turf/open/floor/plasteel,
 /area/ship/crew)
 "Li" = (
 /obj/effect/turf_decal/corner/opaque/mauve{
@@ -4717,7 +4697,7 @@
 	pixel_y = -1;
 	pixel_x = -2
 	},
-/obj/item/gun/ballistic/automatic/pistol/commander/no_mag,
+/obj/item/gun/ballistic/automatic/pistol/challenger/no_mag,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/storage/backpack/ert/medical,
 /obj/item/clothing/under/rank/medical/paramedic/lp,
@@ -5047,42 +5027,12 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 8
 	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = -1;
-	name = "special weapon power cell";
-	pixel_x = -2
-	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = 0;
-	name = "special weapon power cell";
-	pixel_x = -2
-	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = -5;
-	name = "special weapon power cell";
-	pixel_x = 1
-	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = -3;
-	name = "special weapon power cell";
-	pixel_x = 0
-	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = 0;
-	name = "special weapon power cell";
-	pixel_x = -3
-	},
-/obj/item/stock_parts/cell/gun{
-	maxcharge = 20000;
-	pixel_y = 4;
-	name = "special weapon power cell";
-	pixel_x = -4
-	},
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
 /obj/item/ammo_box/magazine/wt550m9,
 /obj/item/ammo_box/magazine/wt550m9,
 /obj/item/ammo_box/magazine/wt550m9,
@@ -5091,7 +5041,7 @@
 /obj/item/storage/box/ammo/c46x30mm,
 /obj/item/storage/box/ammo/c9mm,
 /obj/item/storage/box/ammo/c9mm,
-/obj/item/gun/ballistic/automatic/pistol/commander/no_mag,
+/obj/item/gun/ballistic/automatic/pistol/challenger/no_mag,
 /obj/structure/window/reinforced/spawner{
 	dir = 4;
 	layer = 4.1
@@ -6186,7 +6136,7 @@
 /obj/effect/turf_decal/corner/opaque/ntblue/half{
 	dir = 4
 	},
-/obj/machinery/computer/apc_control{
+/obj/machinery/computer/monitor{
 	icon_state = "computer";
 	dir = 8
 	},
@@ -7369,7 +7319,7 @@ jU
 (31,1,1) = {"
 jU
 jU
-jU
+Kp
 jU
 jU
 jU

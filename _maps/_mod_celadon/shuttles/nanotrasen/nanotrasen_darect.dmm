@@ -7,13 +7,10 @@
 	pixel_y = -29;
 	name = "clothing locker"
 	},
-/obj/item/clothing/head/helmet/swat/nanotrasen,
-/obj/item/clothing/head/helmet/swat/nanotrasen,
-/obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/clothing/mask/gas/sechailer/swat,
 /obj/item/clothing/mask/gas/sechailer/swat,
-/obj/item/clothing/mask/gas/sechailer,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /obj/item/clothing/suit/armor/nanotrasen,
 /obj/item/clothing/suit/armor/nanotrasen,
 /obj/item/clothing/suit/armor/nanotrasen,
@@ -25,6 +22,9 @@
 /obj/effect/turf_decal/trimline/opaque/vired/warning{
 	dir = 4
 	},
+/obj/item/clothing/head/helmet/bulletproof/x11/nanotrasen,
+/obj/item/clothing/head/helmet/bulletproof/x11/nanotrasen,
+/obj/item/clothing/head/helmet/bulletproof/x11/nanotrasen,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/armory)
 "bf" = (
@@ -1091,7 +1091,7 @@
 "st" = (
 /obj/effect/turf_decal/industrial/hatch/blue,
 /obj/machinery/stasis,
-/obj/machinery/vending/wallmed{
+/obj/machinery/vending/wallmed/ship{
 	pixel_y = -28
 	},
 /turf/open/floor/plasteel/dark,
@@ -1633,7 +1633,7 @@
 /area/ship/cargo)
 "Co" = (
 /obj/structure/table,
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = -4;
 	pixel_y = 3
 	},
@@ -2359,7 +2359,6 @@
 	dir = 4
 	},
 /obj/item/tank/jetpack/suit,
-/obj/item/gun/energy/e_gun/hos,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/neck/cloak/hos,
 /obj/item/clothing/suit/toggle/armor/hos_formal{
@@ -2380,6 +2379,7 @@
 	pixel_x = 0;
 	pixel_y = 31
 	},
+/obj/item/gun/energy/e_gun/e_old/hos,
 /turf/open/floor/wood,
 /area/ship/bridge)
 "OG" = (

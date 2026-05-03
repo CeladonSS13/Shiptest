@@ -386,7 +386,7 @@
 	name = "\proper engineering director's locker";
 	req_access_txt = "20"
 	},
-/obj/item/gun/energy/e_gun,
+/obj/item/gun/energy/e_gun/e_old,
 /obj/item/stock_parts/cell/gun/upgraded,
 /obj/item/circuitboard/machine/circuit_imprinter,
 /obj/item/tank/internals/emergency_oxygen/engi,
@@ -1648,7 +1648,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "tN" = (
-/obj/machinery/vending/wallmed{
+/obj/machinery/vending/wallmed/ship{
 	pixel_y = -5
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
@@ -2226,7 +2226,7 @@
 /obj/structure/cable{
 	icon_state = "0-1"
 	},
-/obj/machinery/computer/apc_control{
+/obj/machinery/computer/monitor{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,

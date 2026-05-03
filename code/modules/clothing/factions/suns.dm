@@ -300,6 +300,9 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/solgov/suns
 	lefthand_file = 'icons/mob/inhands/faction/suns/suns_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/faction/suns/suns_righthand.dmi'
+	// [CELADON-EDIT] - CELADON_VOX
+	supports_variations = DIGITIGRADE_VARIATION | TAJARA_VARIATION | RIOL_VARIATION | VOX_VARIATION
+	// [/CELADON-EDIT]
 
 
 /////////

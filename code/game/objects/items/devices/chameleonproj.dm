@@ -15,6 +15,22 @@
 	var/can_use = 1
 	var/obj/effect/dummy/chameleon/active_dummy = null
 	var/saved_appearance = null
+// [CELADON-ADD] - NO-PIXEL-SHIFT-ITEM
+	var/static/list/black_list_projector = list(
+		/obj/item/radio,
+		/obj/machinery/light,
+		/obj/machinery/newscaster,
+		/obj/machinery/airalarm,
+		/obj/machinery/firealarm,
+		/obj/machinery/button,
+		/obj/machinery/advanced_airlock_controller,
+		/obj/machinery/camera,
+		/obj/structure/mirror,
+		/obj/structure/extinguisher_cabinet,
+		/obj/structure/sign,
+		/obj/structure/closet/wall,
+		)
+// [/CELADON-ADD]
 
 /obj/item/chameleon/Initialize()
 	. = ..()
@@ -49,6 +65,8 @@
 		return
 	if(istype(target, /obj/structure/falsewall))
 		return
+	if(is_type_in_list(target, black_list_projector))	// [CELADON-ADD] - NO-PIXEL-SHIFT-ITEM
+		return											// [/CELADON-ADD]
 	if(target.alpha != 255)
 		return
 	if(target.invisibility != 0)

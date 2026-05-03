@@ -132,10 +132,7 @@
 	},
 /area/hangar)
 "eg" = (
-/obj/structure/plasticflaps/outpost,
-/obj/machinery/conveyor/auto/outpost{
-	dir = 8
-	},
+/obj/machinery/conveyor/auto/outpost,
 /turf/open/floor/plasteel{
 	planetary_atmos = 1
 	},
@@ -243,9 +240,7 @@
 /turf/template_noop,
 /area/template_noop)
 "gE" = (
-/obj/effect/turf_decal/siding/wood/corner{
-	dir = 2
-	},
+/obj/effect/turf_decal/siding/wood/corner,
 /turf/open/floor/concrete/slab_1{
 	planetary_atmos = 1
 	},
@@ -315,16 +310,6 @@
 	dir = 6
 	},
 /turf/open/floor/plating{
-	planetary_atmos = 1
-	},
-/area/hangar)
-"hv" = (
-/obj/structure/plasticflaps/outpost,
-/obj/machinery/conveyor/auto/outpost{
-	dir = 5;
-	verted = -1
-	},
-/turf/open/floor/plasteel{
 	planetary_atmos = 1
 	},
 /area/hangar)
@@ -871,15 +856,6 @@
 	pixel_y = 6
 	},
 /turf/open/floor/grass/snow/safe{
-	planetary_atmos = 1
-	},
-/area/hangar)
-"rb" = (
-/obj/machinery/conveyor/auto/outpost{
-	dir = 6;
-	verted = -1
-	},
-/turf/open/floor/plasteel{
 	planetary_atmos = 1
 	},
 /area/hangar)
@@ -1442,7 +1418,10 @@
 	dir = 1
 	},
 /obj/item/radio/intercom/directional/north,
-/obj/structure/reagent_dispensers/watertank,
+/obj/structure/reagent_dispensers/watertank{
+	anchorable = 0;
+	anchored = 1
+	},
 /turf/open/floor/plasteel/patterned/cargo_one{
 	planetary_atmos = 1
 	},
@@ -1615,7 +1594,7 @@
 /area/hangar)
 "He" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = 5;
 	pixel_y = 6
 	},
@@ -1639,7 +1618,7 @@
 	},
 /area/hangar)
 "Hi" = (
-/obj/structure/plasticflaps,
+/obj/structure/plasticflaps/outpost,
 /obj/machinery/conveyor/auto{
 	dir = 1;
 	id = "outpost3";
@@ -1969,6 +1948,15 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
+"NE" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/machinery/newscaster/directional/east,
+/turf/open/floor/concrete/slab_1{
+	planetary_atmos = 1
+	},
+/area/hangar)
 "NK" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/effect/decal/cleanable/dirt,
@@ -2293,7 +2281,8 @@
 	},
 /obj/structure/reagent_dispensers/fueltank{
 	anchored = 1;
-	desc = "Вы видите как к топливной тележке прикреплена записка, где большими красными буквами написано: данная тележка собственность аванпоста! Поэтому данная тележка приварена к полу намертво. Тот кто решит спиздить её - получит по шапке!"
+	desc = "На топливном баке висит табличка — собственность аванпоста. Объект закреплен. За хищение имущества предусмотрена строгая ответственность.";
+	anchorable = 0
 	},
 /turf/open/floor/plasteel/patterned/cargo_one{
 	planetary_atmos = 1
@@ -2368,7 +2357,6 @@
 "Wo" = (
 /obj/effect/turf_decal/techfloor,
 /obj/structure/railing{
-	dir = 2;
 	layer = 4.1
 	},
 /turf/open/floor/plasteel/dark{
@@ -3767,7 +3755,7 @@ Mt
 Mt
 FC
 sP
-eP
+NE
 HI
 Tu
 gE
@@ -3983,8 +3971,8 @@ gu
 (34,1,1) = {"
 gu
 ie
-hv
-dT
+eg
+eg
 dT
 Ed
 YE
@@ -4027,7 +4015,7 @@ gu
 (35,1,1) = {"
 gu
 ie
-eg
+rK
 ie
 RL
 Mc
@@ -4071,7 +4059,7 @@ gu
 (36,1,1) = {"
 gu
 ie
-rb
+rK
 Qs
 ie
 JR

@@ -152,9 +152,6 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 4
 	},
-/obj/effect/landmark/mission_poi/main/blackbox{
-	mission_index = 2
-	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered/listening_post/operations)
 "db" = (
@@ -524,9 +521,6 @@
 /obj/item/folder/documents/syndicate/red,
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 9
-	},
-/obj/effect/landmark/mission_poi/main{
-	type_to_spawn = /obj/item/documents/syndicate
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered/listening_post/operations)
@@ -1177,11 +1171,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/reinforced,
 /obj/machinery/newscaster/directional/north,
-/obj/item/trash/plate{
+/obj/item/trash/chips{
 	pixel_y = -27;
 	pixel_x = 1
 	},
-/obj/item/reagent_containers/food/drinks/beer/light{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_y = 10;
 	pixel_x = 8
 	},
@@ -1609,11 +1603,11 @@
 /area/ruin/unpowered/listening_post)
 "DI" = (
 /obj/structure/table,
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_y = 8;
 	pixel_x = 6
 	},
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_y = 6;
 	pixel_x = -7;
 	list_reagents = null
@@ -2075,7 +2069,7 @@
 /area/ruin/unpowered/listening_post/commons)
 "NZ" = (
 /obj/structure/table/reinforced,
-/obj/item/trash/plate{
+/obj/item/trash/chips{
 	pixel_y = 29;
 	pixel_x = -2
 	},
@@ -2087,7 +2081,7 @@
 	pixel_y = 17;
 	pixel_x = 4
 	},
-/obj/item/reagent_containers/food/drinks/beer/light{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_y = 16;
 	pixel_x = -9
 	},

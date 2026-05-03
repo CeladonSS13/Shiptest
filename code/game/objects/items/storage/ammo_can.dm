@@ -20,7 +20,7 @@
 		".38" = "ammobox_38",
 		".22lr" = "ammobox_22",
 		"5.7x39mm" = "ammobox_57",
-		"4.6mm" = "ammobox_4.6",
+		"4.6mm" = "ammobox_46",
 		"5.56x42mm CLIP" = "ammobox_556",
 		"7.62x40mm CLIP" = "ammobox_762",
 		".44 Roumain" = "ammobox_44",
@@ -59,6 +59,9 @@
 	STR.max_combined_w_class = 400
 	STR.set_holdable(holdable_items)
 
+/obj/item/storage/toolbox/ammo/reskin_obj(mob/user)
+	. = ..()
+	name = "ammo can ([current_skin])"
 
 /obj/item/storage/toolbox/ammo/a850r/PopulateContents()
 	name = "ammo can (8x50mmR)"
@@ -144,7 +147,7 @@
 	for (var/i in 1 to 4)
 		new /obj/item/storage/box/ammo/c46x30mm(src)
 
-/obj/item/storage/toolbox/ammo/c75/PopulateContents()
+/obj/item/storage/toolbox/ammo/c65/PopulateContents()
 	name = "ammo can (6.5mm CLIP)"
 	icon_state = "ammobox_65"
 	current_skin = "6.5mm CLIP"
@@ -199,6 +202,13 @@
 	current_skin = "12ga Buckshot"
 	for (var/i in 1 to 4)
 		new /obj/item/storage/box/ammo/a12g_slug(src)
+
+/obj/item/storage/toolbox/ammo/frag/PopulateContents()
+	name = "ammo can (frag grenades)"
+	icon_state = "ammobox_expl"
+	current_skin = "EXPLOSIVE"
+	for (var/i in 1 to 7)
+		new /obj/item/grenade/frag(src)
 
 /obj/item/storage/toolbox/ammo/c50bmg/PopulateContents()
 	name = "ammo can (.50BMG)"

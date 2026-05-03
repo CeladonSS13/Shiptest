@@ -50,31 +50,31 @@
 	material_id = /datum/material/diamond
 
 /datum/export/material/plasma
-	cost = 20
+	cost = 30	//cost = 25
 	unit_name = "cm3 of plasma"
 	sell_floor = 15
 	material_id = /datum/material/plasma
 
 /datum/export/material/uranium
-	cost = 25
+	cost = 50
 	unit_name = "cm3 of uranium"
-	sell_floor = 20
+	sell_floor = 40
 	material_id = /datum/material/uranium
 
 /datum/export/material/gold
-	cost = 30
+	cost = 35
 	unit_name = "cm3 of gold"
-	sell_floor = 10
+	sell_floor = 15
 	material_id = /datum/material/gold
 
 /datum/export/material/silver
-	cost = 15
+	cost = 20
 	unit_name = "cm3 of silver"
 	sell_floor = 10
 	material_id = /datum/material/silver
 
 /datum/export/material/titanium
-	cost = 30
+	cost = 35
 	unit_name = "cm3 of titanium"
 	sell_floor = 15
 	material_id = /datum/material/titanium
@@ -90,25 +90,58 @@
 	cost = 2
 	sell_floor = 1
 	material_id = /datum/material/plastic
+	valid_event_target = FALSE
 
 /datum/export/material/metal
 	unit_name = "sheet of metal"
 	cost = 2
 	sell_floor = 1
+	elasticity_coeff = 0
 	material_id = /datum/material/iron
 	export_types = list(
 		/obj/item/stack/sheet/metal,
+		/obj/item/stack/tile/plasteel,
 		/obj/item/stack/rods,
 		/obj/item/stack/ore,
 		/obj/item/coin
 	)
+	valid_event_target = FALSE
 
 /datum/export/material/glass
 	unit_name = "sheet of glass"
-	cost = 1
+	cost = 2	//cost = 1
+	sell_floor = 1
+	elasticity_coeff = 0
 	material_id = /datum/material/glass
 	export_types = list(
 		/obj/item/stack/sheet/glass,
 		/obj/item/stack/ore,
 		/obj/item/shard
 	)
+	valid_event_target = FALSE
+
+// [CELADON-ADD]
+/datum/export/material/wood
+	unit_name = "cm3 of wood"
+	cost = 1
+	sell_floor = 1
+	elasticity_coeff = 0
+	material_id = /datum/material/wood
+	export_types = list(/obj/item/stack/sheet/mineral/wood)
+
+/datum/export/material/hellstone
+	unit_name = "cm3 of hellstone"
+	cost = 100
+	material_id = /datum/material/hellstone
+
+/datum/export/material/hot_ice
+	unit_name = "cm3 of Hot Ice"
+	cost = 100
+	material_id = /datum/material/hot_ice
+	export_types = /obj/item/stack/sheet/hot_ice
+
+/datum/export/material/abductor
+	unit_name = "cm3 of alien alloy"
+	cost = 500
+	export_types = list(/obj/item/stack/sheet/mineral/abductor)
+// [/CELADON-ADD]

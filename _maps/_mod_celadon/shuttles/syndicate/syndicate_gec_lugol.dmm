@@ -559,11 +559,12 @@
 	dir = 4;
 	pixel_y = 2
 	},
+/obj/structure/table/wood,
+/obj/item/plate/oven_tray,
 /obj/item/reagent_containers/glass/rag{
 	pixel_x = -3;
 	pixel_y = 5
 	},
-/obj/structure/table/wood,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen)
 "fV" = (
@@ -1554,6 +1555,11 @@
 /obj/structure/sign/warning/nosmoking{
 	pixel_x = 30
 	},
+/obj/item/circuitboard/machine/griddle{
+	pixel_x = 5;
+	pixel_y = 6
+	},
+/obj/item/circuitboard/machine/oven,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "pl" = (
@@ -2927,7 +2933,7 @@
 /area/ship/crew/dorm)
 "zP" = (
 /obj/structure/table,
-/obj/item/trash/plate,
+/obj/item/trash/chips,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/canteen)
 "zU" = (
@@ -3773,7 +3779,7 @@
 /obj/effect/turf_decal/corner/transparent/bar/diagonal,
 /obj/structure/table,
 /obj/machinery/light/directional/west,
-/obj/item/trash/plate,
+/obj/item/trash/chips,
 /obj/item/food/pizzaslice/pineapple{
 	pixel_y = 3
 	},

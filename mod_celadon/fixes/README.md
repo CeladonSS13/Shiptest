@@ -22,11 +22,16 @@ FIXES_ICON
 FIXES_SOUND
 MECH_WEAPON
 FIXES_CHAMELEON
-FIXES_GOLIATH_TENTACLES
 FIXES_SHIP_LOGIN_DOUBLE_NAME
 FIXES_WETHIDE
 FIXES_DRILLCLASS
 FIXES_MOTH_EATING_CLOTHING
+FIXES_RUNTIMES
+FIXES_MONKEY_STOPPED_SPEEDUP
+FIXES_MONKEY_STOPPED_DEAD
+FIXES_MONKEY_STOPPED_PICKPOCKET
+FIXES_ANTAG_NINJA
+FIXES_MEDBOT_RUNTIME_PATH_NULL
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -109,6 +114,8 @@ Weebstick (Красная катана) теперь нельзя сломать
 
 - EDIT: `code\modules\hydroponics\grown\replicapod.dm` - Исправление отобрежения ДНК на сканере
 
+- EDIT `code\game\objects\items\storage\wallets.dm` -> Чиним работу random кошельков
+
 MECH_WEAPON
 ### Исправление бага перезарядки мех-оружия (SOB-3, BRM-6, SGL-6)
 **Проблема:** Оружие с `disabledreload = TRUE` (SOB-3 Clusterbang, BRM-6 Missile Rack, SGL-6 Flashbang) не могло быть перезаряжено из-за отсутствия переменной `projectiles`, что приводило к `projectiles_max = 0` и неправильной работе логики `ammo_resupply()`.
@@ -142,9 +149,22 @@ MECH_WEAPON
 
 - EDIT: `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Делаем так чтобы кепори могли брать мелкие предметы в клюв
 
-- EDIT, ADD: `code/modules/mob/living/blood.dm` : Вводим нормальный уровень для крови
-- EDIT, ADD: `code/game/machinery/iv_drip.dm` : Проверка крови у пациента
-- ADD: `code/modules/reagents/chemistry/holder.dm` : Вводим ограничения на шприцы, бикеры, капельницы
+- EDIT, ADD: `code/modules/mob/living/blood.dm` : Вводим нормальный уровень для крови [CELADON-FIXES][CELADON_FIXES_BLOOD]
+- EDIT, ADD: `code/game/machinery/iv_drip.dm` : Проверка крови у пациента (ограничение через IV) [CELADON-EDIT][CELADON-FIXES][CELADON_FIXES_BLOOD]
+- ADD: `code/modules/reagents/chemistry/holder.dm` : Ограничения на INJECT (шприцы/бикеры/капельницы) [CELADON-ADD][CELADON-FIXES][CELADON_FIXES_BLOOD]
+
+#### Кровь: корректное отображение типа
+- ADD: `code/modules/mob/living/carbon/human/human_helpers.dm` : добавлен `proc/get_blood_type_display()` [CELADON-ADD]
+- EDIT: `code/game/machinery/computer/Operating.dm` : выводит тип крови через `get_blood_type_display()` [CELADON-EDIT]
+- EDIT: `code/game/machinery/medical_kiosk.dm` : выводит тип крови через `get_blood_type_display()` [CELADON-EDIT]
+- EDIT: `code/game/objects/items/devices/scanners.dm` : анализатор здоровья использует `get_blood_type_display()` [CELADON-EDIT]
+- EDIT: `code/game/machinery/computer/dna_console.dm` : буфер ДНК сохраняет человекочитаемый тип крови [CELADON-EDIT]
+- EDIT: `code/datums/datacore.dm` : записи медкарт используют безопасное имя крови [CELADON-EDIT]
+- EDIT: `code/modules/admin/verbs/secrets.dm` : список ДНК показывает корректный тип крови [CELADON-EDIT]
+
+#### Вид: Elzuose
+- EDIT: `mod_celadon/ethereal_fix/code/ethereal.dm` : `exotic_blood = /datum/reagent/consumable/liquidelectricity`, `exotic_bloodtype = "E"` [CELADON-EDIT]
+
 
 - ADD: `code/game/objects/items/food/donut.dm` : Прописано название стандартной иконки, вместо надписи ERROR
 
@@ -166,8 +186,6 @@ FIXES_SOUND
 FIXES_CHAMELEON
 - EDIT: `code/datums/mutations/chameleon.dm` - Чиним крит баг с вечной невидимостью
 
-FIXES_GOLIATH_TENTACLES
-- ADD: `code/modules/mob/living/simple_animal/hostile/mining_mobs/goliath.dm` : Добавляем прок и прверки на жизненный цикл тентакли и её создателя
 FIXES_SHIP_LOGIN_DOUBLE_NAME
 - ADD: `code/modules/mob/dead/new_player/ship_select.dm` : Поднимаем проверку на одинаковые имена ДО создания корабля, чтобы избежать спавна изолированного корабля
 
@@ -245,6 +263,104 @@ FIXES_MODSUITS
 FIXES_DYNAMIC_MISSION
 - EDIT: `code/modules/overmap/objects/dynamic_datum.dm` - Изменена логика в функции can_reset_dynamic(). Теперь объект не будет диспавниться если миссия все еще может быть завершена
 
+FIXES_OFFERING_EFFECTS
+- ADD: `code/datums/status_effects/neutral.dm`
+- EDIT: `code/modules/mob/living/carbon/inventory.dm`
+
+FIXES_SPAWNERS_ON_SPACE - Проверка на космотурф
+- ADD: `code/game/objects/effects/spawners/mobspawner.dm`
+- ADD: `code/modules/events/spacevine.dm`
+
+
+FIXES_RUNTIMES
+- ADD: `code/datums/ai/_ai_controller.dm` - Игра могла думать что моб все еще живой, ползанье будучи мертвым было возможно. Теперь нет
+- REMOVE: `code/datums/ai/_ai_controller.dm`
+- EDIT: `code/datums/ai/_ai_controller.dm`
+- ADD: `code/datums/ai/generic_actions.dm` - Проверка на жизнь моба pawn
+- EDIT: `code/datums/ai/generic_actions.dm`
+- ADD: `code/game/atoms.dm` - Когда нету чего то для того чтобы логировать в атаках, выставляется значение Null и вызывало рантайм. Теперь нет
+- EDIT: `code/modules/mob/living/carbon/carbon_defense.dm` - При проверках куда был нанесен удар предметом или пулями, игра могла не видеть или плохо понимать строки вида "chest" ожидая увидеть тип а не строку и вызывала ошибку состояния тела. Теперь нормально обрабатывается
+
+FIXES_MONKEY_STOPPED_SPEEDUP
+- ADD: `code/__DEFINES/ai/monkey.dm`
+- EDIT: `code/datums/ai/idle_behaviors/idle_monkey.dm`
+- ADD: `code/datums/ai/monkey/monkey_behaviors.dm`
+- EDIT: `code/datums/ai/monkey/monkey_behaviors.dm`
+- ADD: `code/datums/ai/monkey/monkey_controller.dm`
+- ADD: `code/datums/ai/monkey/monkey_subtrees.dm` - шансы подбора предмета
+
+FIXES_MONKEY_STOPPED_DEAD
+- EDIT: `code/datums/ai/monkey/monkey_controller.dm`
+
+FIXES_MONKEY_STOPPED_PICKPOCKET
+- ADD: `code/datums/ai/monkey/monkey_behaviors.dm`
+
+FIXES_ANTAG_NINJA
+- EDIT, ADD, REMOVE: `code/modules/ninja/suit/suit.dm`
+- EDIT, ADD: `code/modules/ninja/energy_katana.dm`
+- EDIT: `code/modules/ninja/suit/suit_attackby.dm`
+
+FIXES_MEDBOT_RUNTIME_PATH_NULL - Добавляем проверки на null путь
+- EDIT: `code/modules/mob/living/simple_animal/bot/medbot.dm`
+
+FIXES_HOODED_ICONS
+- 'code/modules/clothing/suits/toggles.dm'
+
+FIXES_CHASM_AND_JAUNTER
+- `code/datums/components/chasm.dm` 					: Делаем как везде нормальную проверку на предмет на поясе
+- `code/modules/mining/equipment/wormhole_jaunter.dm` 	: Внедряем механику бс кристалла. Это лчшее что есть
+
+FIXES_LOCKER_RECHARGE_ENERGYGUN
+- `code/modules/projectiles/guns/energy.dm` : перед падением проверяется, может ли оружие в принципе выстрельнуть без батареи
+
+FIX_BEAM_EMMITER_IGNITE
+- 'code/modules/projectiles/projectile/beams.dm' : Добавляем проверку ан генератор поля. Если он есть, то пол не поджигается
+
+FIXES_AGENT_CARD
+- `code/game/objects/items/cards_ids.dm` : Тут переместил копирование и дополнил копирование доступов после проверки всех условий
+
+FIXES_AGENT_CARD_NAME
+- `code/game/objects/items/cards_ids.dm` : Фиксим отображение меты инфы по карте агента. Теперь можно не бояться что вас 
+
+FIX_TOGGLE_DEAD_OOC
+- 'code/modules/client/verbs/ooc.dm' : добавляем вывод в чат о том что кнопка среагировала
+
+FIXES_PARROT_DROP_ITEM
+- `code/modules/mob/living/simple_animal/parrot.dm` : Теперь предметы с поли будут выпадать с его смертью, ане удаляться навеки веков
+
+FIXES_CRAFT_MENU
+- `code/datums/components/crafting/crafting.dm` : Обновляем меню крафта автоматически, не в ручную же это делать
+
+FIXES_PHYSICS_AMMO_CASING
+- `mod_celadon/fixes/code/ammo.dm`								: тут прок на то чтобы останавливать физику патрона\гильзы если ты поймал её в руку 
+- `code/modules/projectiles/guns/ballistic.dm`					: тут прок на то чтобы останавливать физику патрона\гильзы если ты вставил её в оружие
+- `code/modules/projectiles/boxes_magazines/_box_magazine.dm`	: тут прок на то чтобы останавливать физику Патрона\гильзы если ты вставил её в обойму
+
+FIXES_LONG_RELOAD_AMMO
+- `code/modules/projectiles/boxes_magazines/_box_magazine.dm` : Прерывает зарядку патронами, если игрок отойдет на растояние. Явно указываю параметр target для do_after чтобы проверка расстояния работала корректно
+
+FIXES_DRESSER
+- `code/game/objects/structures/dresser.dm` : Изменил на возвращение TRUE по завершению операций вместо вызова родителя . = ..()
+
+FIXES_CARDS_DRAW_RANDOM
+- `code/game/objects/items/toys.dm`	: Меняем взятие с первой позиции на рандомную
+
+FIXES_CQC_GRAB
+- `code/modules/mob/living/carbon/carbon_defense.dm` : Останавливаем захват по самому себе, проверяем что кровотечение уже есть на конечностях. Ну блиид там. Короче странный сикуси момент
+
+FIXES_DEL_FISH
+- `code/modules/fishing/fish/_fish.dm` : Фиксим удаление рыбы после повторной разделки
+
+FIXES_HOLO_ESWORD
+- `code/modules/holodeck/items.dm` : Кто-то забыл убрать 0
+
+FIXES_MASK_ON_KEPORI
+- `code/modules/mob/living/carbon/human/species_types/kepori.dm` : Добавляем проверку на проклятость маски для кепори
+
+FIXES_FIRES_OVERLAYES
+- `code/datums/elements/perma_fire.dm`					: Добавлен флаг override = TRUE
+- `code/datums/status_effects/debuffs/fire_stacks.dm`	: Добавлен флаг override = TRUE
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -256,6 +372,11 @@ FIXES_DYNAMIC_MISSION
 ### Оверрайды
 
 - `mod_celadon/fixes/code/research_mission.dm` - вроде перезаписывает
+
+dock_empty_space_fix.dm:
+- `Dock(datum/overmap/to_dock, datum/docking_ticket/ticket, force = FALSE)`
+- `dock_in_empty_space()`
+- `post_undocked(datum/overmap/dock_requester)`
 
 <!-- fax_name -->
 <!-- 
@@ -300,6 +421,37 @@ RalseiDreemuurr, Mirag1993 , Корольный крыс, MrCat15352, MysticalFa
 
 - Автор фикса дисков дизайнов: Турон/Mirag1993
 - Автор фикса бесконечного спавна мобов: Турон/Mirag1993
+- Автор фиксов производительности консолей: AI Assistant
+
+### Исправления производительности консолей
+
+**Проблема**: При открытии консоли карго или консоли заданий аванпоста FPS падал до 2 битов/сек, что делало игру практически неиграбельной.
+
+**Причина**: 
+- Консоль заданий аванпоста сканировала все предметы на площадке **каждый тик** (10 раз в секунду)
+- Консоль карго генерировала данные поставок **каждый тик** в `ui_static_data()`
+
+**Решение**:
+- ADD: `code/modules/cargo/outpost_bounty_console.dm` - Добавлен кулдаун в 1 секунду для кэширования экспортов
+- ADD: `code/modules/cargo/console.dm` - Добавлен кулдаун в 5 секунд для генерации данных поставок
+- EDIT: `code/modules/cargo/outpost_bounty_console.dm` - Кнопка "Refresh" принудительно обновляет кэш
+
+**Результат**: Значительное улучшение производительности при работе с консолями.
+
+**Теги изменений**:
+- `[CELADON-ADD]` - новые функции
+- `[CELADON-EDIT]` - изменения существующего кода  
+- `[CELADON-FIXES]` - исправления багов
+
+---
+
+FIXES_TWO_HANDED_CRASH
+- ADD: `code/_onclick/item_attack.dm` - добавлена обработка звуков если приходи не один файл, а лист ( обычно )
+
+FIXES_ADMIN_STEALTH
+- ADD: `mod_celadon/fixes/code/ship_application_stealth_fix.dm` - Фикс заявок на корабль для админов в стелс-моде. Теперь используется реальный ключ игрока для индексации заявок, что позволяет админам менять fakekey без потери доступа к заявкам
+- `code/modules/overmap/ships/ship_application.dm`		: Если не нашли по текущему ключу, ищем по реальному ключу (для случая смены fakekey)
+- `code/modules/overmap/ships/controlled_ship_datum.dm`
 
 <!--
   Здесь находится твой никнейм

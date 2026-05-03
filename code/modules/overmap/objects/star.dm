@@ -17,11 +17,11 @@
 		/datum/overmap/event/flare/minor = 40,
 		/datum/overmap/event/flare = 20,
 		/datum/overmap/event/flare/major = 5,
-
+/*
 		/datum/overmap/event/emp/minor = 20,
 		/datum/overmap/event/emp = 10,
 		/datum/overmap/event/emp/major = 5,
-
+*/
 		/datum/overmap/event/rad/minor = 40,
 		/datum/overmap/event/rad = 20,
 		/datum/overmap/event/rad/major = 5,
@@ -51,7 +51,9 @@
 	SSpoints_of_interest.make_point_of_interest(token)
 	Rename(name)
 	alter_token_appearance()
+#ifndef NOOVERMAP
 	START_PROCESSING(SSprocessing, src)
+#endif
 
 /datum/overmap/star/Destroy(force, ...)
 	SSpoints_of_interest.remove_point_of_interest(token)
@@ -151,10 +153,11 @@
 	spectral_type = STAR_T
 	color_vary = 1
 	events_to_spawn = list(\
+	/*
 		/datum/overmap/event/emp/minor = 40,
 		/datum/overmap/event/emp = 20,
 		/datum/overmap/event/emp/major = 5,
-
+*/
 		/datum/overmap/event/rad/minor = 40,
 		/datum/overmap/event/rad = 20,
 		/datum/overmap/event/rad/major = 5,
@@ -172,11 +175,11 @@
 		/datum/overmap/event/electric/minor = 50,
 		/datum/overmap/event/electric = 40,
 		/datum/overmap/event/electric/major = 3,
-
+/*
 		/datum/overmap/event/emp/minor = 80,
 		/datum/overmap/event/emp = 100,
 		/datum/overmap/event/emp/major = 120,
-
+*/
 		/datum/overmap/event/rad/minor = 20,
 		/datum/overmap/event/rad = 10,
 		/datum/overmap/event/rad/major = 5,
@@ -340,6 +343,9 @@
 	token.add_overlay(star_1)
 	token.add_overlay(star_2)
 
+	token.name = name
+	token.desc = desc
+
 /*
 		Special stars
 */
@@ -356,11 +362,11 @@
 
 	events_to_spawn = list(\
 		/datum/overmap/event/nebula = 40,
-
+/*
 		/datum/overmap/event/emp/minor = 20,
 		/datum/overmap/event/emp = 30,
 		/datum/overmap/event/emp/major = 40,
-
+*/
 		/datum/overmap/event/rad/minor = 60,
 		/datum/overmap/event/rad = 70,
 		/datum/overmap/event/rad/major = 80,
@@ -396,11 +402,11 @@
 		/datum/overmap/event/electric/minor = 50,
 		/datum/overmap/event/electric = 40,
 		/datum/overmap/event/electric/major = 3,
-
+/*
 		/datum/overmap/event/emp/minor = 80,
 		/datum/overmap/event/emp = 100,
 		/datum/overmap/event/emp/major = 120,
-
+*/
 		/datum/overmap/event/rad/minor = 20,
 		/datum/overmap/event/rad = 10,
 		/datum/overmap/event/rad/major = 5,

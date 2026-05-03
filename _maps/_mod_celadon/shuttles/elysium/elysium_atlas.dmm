@@ -301,7 +301,7 @@
 /obj/item/clothing/shoes/jackboots,
 /obj/item/clothing/gloves/combat,
 /obj/item/storage/belt/security/webbing/elysium/unload_vest_green,
-/obj/item/clothing/head/helmet/m10_elysium,
+/obj/item/clothing/head/helmet/m10/elysium,
 /obj/item/gun/ballistic/automatic/smg/skm_carbine,
 /obj/item/ammo_box/magazine/skm_46_30,
 /obj/item/ammo_box/magazine/skm_46_30,
@@ -1691,7 +1691,7 @@
 	pixel_x = 0;
 	pixel_y = -3
 	},
-/obj/item/clothing/head/helmet/m10_elysium,
+/obj/item/clothing/head/helmet/m10/elysium,
 /obj/item/clothing/under/utility,
 /obj/item/clothing/shoes/jackboots,
 /obj/item/clothing/gloves/color/black,
@@ -1862,13 +1862,14 @@
 /obj/machinery/airalarm/directional/west,
 /obj/effect/decal/cleanable/plasma,
 /obj/structure/table,
-/obj/item/melee/knife/kitchen{
-	pixel_x = -2;
-	pixel_y = 3
-	},
+/obj/item/plate/oven_tray,
 /obj/item/kitchen/rollingpin{
 	pixel_x = 4;
 	pixel_y = -4
+	},
+/obj/item/melee/knife/kitchen{
+	pixel_x = -2;
+	pixel_y = 3
 	},
 /turf/open/floor/plating,
 /area/ship/crew)
@@ -2481,9 +2482,7 @@
 "An" = (
 /obj/machinery/light/directional/west,
 /obj/effect/decal/cleanable/plasma,
-/obj/structure/table,
-/obj/item/storage/box/donkpockets,
-/obj/item/storage/box/donkpockets,
+/obj/machinery/griddle,
 /turf/open/floor/plating,
 /area/ship/crew)
 "Av" = (
@@ -3945,15 +3944,15 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/clothing/head/helmet/m10_elysium{
+/obj/item/clothing/head/helmet/m10/elysium{
 	pixel_x = -5;
 	pixel_y = -6
 	},
-/obj/item/clothing/head/helmet/m10_elysium{
+/obj/item/clothing/head/helmet/m10/elysium{
 	pixel_x = -7;
 	pixel_y = 2
 	},
-/obj/item/clothing/head/helmet/m10_elysium{
+/obj/item/clothing/head/helmet/m10/elysium{
 	pixel_x = -5;
 	pixel_y = 10
 	},
@@ -4636,6 +4635,8 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table,
 /obj/machinery/microwave,
+/obj/item/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
 /turf/open/floor/plating,
 /area/ship/crew)
 "WZ" = (

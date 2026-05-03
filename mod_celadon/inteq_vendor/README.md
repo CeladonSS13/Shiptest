@@ -11,7 +11,7 @@
 <!-- Название мода. Не важно на русском или на английском. -->
 ## НАЗВАНИЕ_МОДА
 
-ID мода: inteq_vendor
+ID мода: CELADON_INTEQ_VENDOR
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -48,10 +48,7 @@ ID мода: inteq_vendor
 -->
 
 ### Изменения *кор кода*
-
-code/modules/mob/living/carbon/human/species : /datum/species/proc/handle_mutant_bodyparts
-Починил отсутствующие флаги для Этереалов
-
+`code\game\machinery\shuttle\turbine.dm` : `/obj/machinery/power/compressor/examine`,`/obj/machinery/power/compressor/multitool_act`,`/obj/machinery/computer/turbine_computer/examine`, `/obj/machinery/computer/turbine_computer/multitool_act`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

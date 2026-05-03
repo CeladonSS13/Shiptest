@@ -538,6 +538,9 @@ GLOBAL_LIST_INIT(cable_coil_recipes, list(new/datum/stack_recipe("cable restrain
 	if(!istype(H))
 		return ..()
 
+	//if(!H.is_exposed(user, TRUE, user.zone_selected))	// [CELADON-REMOVE] - NO-HARDER-REPAIR-IPC
+	//	return TRUE										// [/CELADON-REMOVE]
+
 	var/obj/item/bodypart/affecting = H.get_bodypart(check_zone(user.zone_selected))
 	if(affecting && (!IS_ORGANIC_LIMB(affecting)))
 		if(user == H)

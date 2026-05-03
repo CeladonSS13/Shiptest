@@ -3,7 +3,7 @@
 /obj/machinery/reagentgrinder
 	name = "\improper All-In-One Grinder"
 	desc = "From BlenderTech. Will It Blend? Let's test it out!"
-	icon = 'icons/obj/kitchen.dmi'
+	icon = 'icons/obj/machines/kitchen.dmi'
 	icon_state = "juicer1"
 	base_icon_state = "juicer"
 	layer = BELOW_OBJ_LAYER
@@ -237,18 +237,13 @@
 	holdingitems -= O
 	qdel(O)
 
-/obj/machinery/reagentgrinder/proc/shake_for(duration)
-	var/offset = prob(50) ? -2 : 2
-	var/old_pixel_x = pixel_x
-	animate(src, pixel_x = pixel_x + offset, time = 0.2, loop = -1) //start shaking
-	addtimer(CALLBACK(src, PROC_REF(stop_shaking), old_pixel_x), duration)
-
 /obj/machinery/reagentgrinder/proc/stop_shaking(old_px)
 	animate(src)
 	pixel_x = old_px
 
 /obj/machinery/reagentgrinder/proc/operate_for(time, silent = FALSE, juicing = FALSE)
-	shake_for(time / speed)
+	var/duration = time / speed
+	Shake(pixelshiftx = 1, pixelshifty = 0, duration = duration)
 	operating = TRUE
 	if(!silent)
 		if(!juicing)
@@ -319,7 +314,12 @@
 		for(var/i in 1 to butter_amt)
 			new /obj/item/food/butter(drop_location())
 		//Recipe to make Mayonnaise
-		if (beaker.reagents.has_reagent(/datum/reagent/consumable/eggyolk))
+		if(beaker.reagents.has_reagent(/datum/reagent/consumable/eggyolk))
 			var/amount = beaker.reagents.get_reagent_amount(/datum/reagent/consumable/eggyolk)
 			beaker.reagents.remove_reagent(/datum/reagent/consumable/eggyolk, amount)
 			beaker.reagents.add_reagent(/datum/reagent/consumable/mayonnaise, amount)
+		//whipped cream
+		if(beaker.reagents.has_reagent(/datum/reagent/consumable/cream))
+			var/amount = beaker.reagents.get_reagent_amount(/datum/reagent/consumable/whipped_cream)
+			beaker.reagents.remove_reagent(/datum/reagent/consumable/cream, amount)
+			beaker.reagents.add_reagent(/datum/reagent/consumable/whipped_cream, amount)

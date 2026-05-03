@@ -1,10 +1,6 @@
-#ifndef MODPACK_CELADON_UNDERWEAR
-#define MODPACK_CELADON_UNDERWEAR
+// Дополняет новой одеждой, прямо в ядре из-за особенности сортировки
+// code/modules/mob/dead/new_player/sprite_accessories/underwear/underwear_torso.dm
 
-#include "_underwear.dm"
-
+// Ниже простоки закидывает в конец списка из этих паков все
 #include "code\underwear_legs.dm"
 #include "code\underwear_socks.dm"
-#include "code\underwear_torso.dm"
-
-#endif

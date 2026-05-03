@@ -180,6 +180,12 @@ Used to make the parent item bloody
 	if(QDELETED(wielder) || is_obscured())
 		return
 
+// [CELADON-ADD] - FROM-TG
+	/// The character is agile enough to not mess their clothing and hands just from one blood splatter at floor
+	if(HAS_TRAIT(wielder, TRAIT_LIGHT_STEP))
+		return
+// [/CELADON-ADD]
+
 	if(istype(pool, /obj/effect/decal/cleanable/blood/footprints) && pool.blood_state == last_blood_state)
 		// The pool we stepped in was actually footprints with the same type
 		var/obj/effect/decal/cleanable/blood/footprints/pool_FP = pool
@@ -257,8 +263,9 @@ Like its parent but can be applied to carbon mobs instead of clothing items
 		return
 
 	// Find any leg of our human and add that to the footprint, instead of the default which is to just add the human type
-	for(var/X in wielder.bodyparts)
-		var/obj/item/bodypart/affecting = X
+	var/obj/item/bodypart/affecting
+	for(var/zone in wielder.bodyparts)
+		affecting = wielder.bodyparts[zone]
 		if(affecting.body_part == LEG_RIGHT || affecting.body_part == LEG_LEFT)
 			if(!affecting.bodypart_disabled)
 				FP.species_types |= affecting.limb_id

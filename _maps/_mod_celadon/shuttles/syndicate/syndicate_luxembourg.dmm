@@ -273,7 +273,15 @@
 "eX" = (
 /obj/structure/table,
 /obj/machinery/chem_dispenser/drinks/beer{
-	dir = 8
+	dir = 8;
+	pixel_x = 5;
+	pixel_y = 0
+	},
+/obj/machinery/vending/boozeomat/all_access{
+	default_price = 0;
+	extra_price = 0;
+	all_items_free = 1;
+	pixel_y = 32
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/canteen)
@@ -736,9 +744,15 @@
 "mA" = (
 /obj/structure/table,
 /obj/machinery/chem_dispenser/drinks{
-	dir = 8
+	dir = 8;
+	pixel_x = 5;
+	pixel_y = 4
 	},
 /obj/machinery/light/directional/east,
+/obj/machinery/reagentgrinder{
+	pixel_x = -10;
+	pixel_y = 8
+	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/canteen)
 "mB" = (
@@ -912,7 +926,8 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/storage)
 "oW" = (
-/obj/machinery/chem_master/condimaster,
+/obj/structure/table,
+/obj/machinery/microwave,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/canteen)
 "pa" = (
@@ -1108,11 +1123,7 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
 "sM" = (
-/obj/machinery/vending/boozeomat/all_access{
-	default_price = 0;
-	extra_price = 0;
-	all_items_free = 1
-	},
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/canteen)
 "sX" = (
@@ -1830,9 +1841,8 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "Ip" = (
-/obj/structure/table,
-/obj/machinery/microwave,
 /obj/machinery/light/directional/south,
+/obj/machinery/oven,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/canteen)
 "IA" = (
@@ -1874,13 +1884,10 @@
 /area/ship/cargo)
 "IJ" = (
 /obj/structure/table,
-/obj/machinery/reagentgrinder,
 /obj/item/melee/knife/kitchen{
-	pixel_x = -8
+	pixel_x = -2
 	},
-/obj/item/reagent_containers/food/drinks/shaker{
-	pixel_x = 10
-	},
+/obj/item/cutting_board,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/canteen)
 "IL" = (
@@ -2565,6 +2572,9 @@
 /obj/machinery/door/firedoor,
 /obj/structure/table,
 /obj/item/radio/intercom/directional/east,
+/obj/item/reagent_containers/food/drinks/shaker{
+	pixel_x = 10
+	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/canteen)
 "Wo" = (

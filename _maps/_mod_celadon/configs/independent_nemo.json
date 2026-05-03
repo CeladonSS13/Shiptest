@@ -2,9 +2,9 @@
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
 	"map_name": "Nemo-class Fauna Research Vessel",
 	"map_short_name": "Nemo",
-	"description": "Судно класса 'Nemo' - это судно мечты эксцентричного коллекционера, идеально подходящий для всех журналистов, антикваров и чудаков Фронтира. Здесь есть удобный кабинет, полноценная робототехническая мастерская (идеально подходящая для создания себе помощников!) и множество эзотерического оружия, подходящего для охоты на существ, которое можно установить над камином. Кроме того, на судне есть компактный, но функциональный медицинский отсек, достаточно хорошо спроектированный инженерный отсек и большое количество оборудования для добычи полезных ископаемых. В ЩИТСПАВНЕ ПО ПРИЧИНЕ: Наличие ТЭГа убивает сервер!",
+	"description": "Судно класса 'Nemo' - это судно мечты эксцентричного коллекционера, идеально подходящий для всех журналистов, антикваров и чудаков Фронтира. Здесь есть удобный кабинет, полноценная робототехническая мастерская (идеально подходящая для создания себе помощников!) и множество эзотерического оружия, подходящего для охоты на существ, которое можно установить над камином. Кроме того, на судне есть компактный, но функциональный медицинский отсек, достаточно хорошо спроектированный инженерный отсек и большое количество оборудования для добычи полезных ископаемых.",
 	"map_path": "_maps/_mod_celadon/shuttles/independent/independent_nemo.dmm",
-	"enabled": false,
+	"enabled": true,
 	"limit": 1,
 	"sensor_range": 5,
 	"starting_funds": 500,
@@ -21,40 +21,32 @@
 		"SPACE"
 	],
 	"job_slots": {
-		"Research Director": {
-			"outfit": "/datum/outfit/job/independent/rd",
+		"Naturalist": {
+			"outfit": "/datum/outfit/job/cel/independent/rd",
 			"slots": 1
 		},
 		"Fauna Researcher": {
-			"outfit": "/datum/outfit/job/independent/scientist",
+			"outfit": "/datum/outfit/job/cel/independent/scientist",
 			"slots": 1
 		},
-		"Fauna Retrieval Specialist": {
-			"outfit": "/datum/outfit/job/independent/miner/scientist",
+		"Veterinary": {
+			"outfit": "/datum/outfit/job/cel/independent/doctor",
 			"slots": 1
 		},
-		"Excavator": {
-			"outfit": "/datum/outfit/job/independent/miner",
-			"slots": 1
+		"Fauna Hunter": {
+			"outfit": "/datum/outfit/job/cel/independent/miner/scientist",
+			"slots": 2
 		},
 		"Mech Pilot": {
-			"outfit": "/datum/outfit/job/independent/roboticist",
+			"outfit": "/datum/outfit/job/cel/independent/roboticist",
 			"slots": 1
 		},
 		"Ship Engineer": {
-			"outfit": "/datum/outfit/job/independent/engineer",
-			"slots": 1
-		},
-		"Atmospheric Technician": {
-			"outfit": "/datum/outfit/job/independent/atmos",
-			"slots": 1
-		},
-		"Curator": {
-			"outfit": "/datum/outfit/job/independent/curator",
+			"outfit": "/datum/outfit/job/cel/independent/engineer",
 			"slots": 1
 		},
 		"Assistant": {
-			"outfit": "/datum/outfit/job/independent/assistant",
+			"outfit": "/datum/outfit/job/cel/independent/assistant",
 			"slots": 1
 		}
 	}

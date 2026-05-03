@@ -59,7 +59,7 @@
 	name = "Old station officer"
 	uniform = /obj/item/clothing/under/utility
 	shoes = /obj/item/clothing/shoes/jackboots
-	id = /obj/item/card/id/elysium
+	id = /obj/item/card/id/ruin/oldstation
 	r_pocket = /obj/item/restraints/handcuffs
 	l_pocket = /obj/item/assembly/flash
 
@@ -67,7 +67,7 @@
 	name = "Old station medic"
 	uniform = /obj/item/clothing/under/utility
 	shoes = /obj/item/clothing/shoes/sneakers/black
-	id = /obj/item/card/id/elysium
+	id = /obj/item/card/id/ruin/oldstation
 	l_pocket = /obj/item/stack/medical/ointment
 	r_pocket = /obj/item/stack/medical/ointment
 
@@ -75,7 +75,7 @@
 	name = "Old station engineer"
 	uniform = /obj/item/clothing/under/utility
 	shoes = /obj/item/clothing/shoes/workboots
-	id = /obj/item/card/id/elysium
+	id = /obj/item/card/id/ruin/oldstation
 	gloves = /obj/item/clothing/gloves/color/fyellow/old
 	l_pocket = /obj/item/tank/internals/emergency_oxygen
 
@@ -83,7 +83,7 @@
 	name = "Old station scientist"
 	uniform = /obj/item/clothing/under/utility
 	shoes = /obj/item/clothing/shoes/sneakers/black
-	id = /obj/item/card/id/elysium
+	id = /obj/item/card/id/ruin/oldstation
 	l_pocket = /obj/item/stack/medical/bruise_pack
 
 /obj/effect/mob_spawn/human/oldstation/Destroy()
@@ -109,7 +109,7 @@
 	short_desc = "You are a Separatist of Elysium."
 	mob_species = /datum/species/human
 	assignedrole = "Separatist of Elysium"
-	outfit = /datum/outfit/job/elysium
+	outfit = /datum/outfit/job/cel/elysium
 	flavour_text = "You must cleanse this world of xenospecies and all those who oppose it."
 
 /obj/effect/mob_spawn/human/elysium_town/Destroy()

@@ -928,7 +928,7 @@
 /turf/open/floor/plasteel,
 /area/ship/crew/dorm/dormthree)
 "fe" = (
-/obj/machinery/grill,
+/obj/machinery/griddle,
 /turf/open/floor/plating/rust,
 /area/ship/maintenance/starboard)
 "fj" = (
@@ -4918,7 +4918,7 @@
 "Dd" = (
 /obj/structure/closet,
 /obj/item/clothing/suit/space/hardsuit/carp/old,
-/obj/item/clothing/mask/gas/explorer,
+/obj/item/clothing/mask/gas/explorer/legacy,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/machinery/light/directional/south,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -5162,7 +5162,7 @@
 /area/ship/security/prison)
 "Ey" = (
 /obj/structure/rack,
-/obj/item/gun/energy/e_gun,
+/obj/item/gun/energy/e_gun/e_old,
 /obj/structure/cable{
 	icon_state = "8-9"
 	},
@@ -6827,7 +6827,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Ns" = (
-/obj/item/gun/energy/e_gun/hos,
 /obj/item/clothing/gloves/krav_maga/sec,
 /obj/item/door_remote/head_of_security,
 /obj/item/clothing/mask/gas/sechailer/swat,
@@ -6861,6 +6860,7 @@
 	},
 /obj/item/storage/lockbox/medal/sec,
 /obj/item/storage/box/seccarts,
+/obj/item/gun/energy/e_gun/e_old/hos,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm/dormtwo)
 "Nv" = (
@@ -7256,7 +7256,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/port)
 "Qc" = (
-/obj/machinery/vending/wallmed{
+/obj/machinery/vending/wallmed/ship{
 	pixel_x = -32
 	},
 /obj/structure/sink{
@@ -7636,7 +7636,7 @@
 /obj/structure/closet,
 /obj/item/clothing/suit/space/orange,
 /obj/item/clothing/head/helmet/space/orange,
-/obj/item/clothing/mask/gas/explorer,
+/obj/item/clothing/mask/gas/explorer/legacy,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/effect/turf_decal/siding/brown/end{
 	dir = 4
@@ -7728,17 +7728,17 @@
 /area/ship/crew/dorm/dormthree)
 "Td" = (
 /obj/structure/closet/cabinet,
-/obj/item/reagent_containers/food/drinks/beer/light,
-/obj/item/reagent_containers/food/drinks/beer/light,
-/obj/item/reagent_containers/food/drinks/beer/light,
-/obj/item/reagent_containers/food/drinks/beer/light,
-/obj/item/reagent_containers/food/drinks/beer/light,
-/obj/item/reagent_containers/food/drinks/beer,
-/obj/item/reagent_containers/food/drinks/beer,
-/obj/item/reagent_containers/food/drinks/beer,
-/obj/item/reagent_containers/food/drinks/beer,
-/obj/item/reagent_containers/food/drinks/beer,
-/obj/item/reagent_containers/food/drinks/beer,
+/obj/item/reagent_containers/food/drinks/mead,
+/obj/item/reagent_containers/food/drinks/mead,
+/obj/item/reagent_containers/food/drinks/mead,
+/obj/item/reagent_containers/food/drinks/mead,
+/obj/item/reagent_containers/food/drinks/mead,
+/obj/item/reagent_containers/food/drinks/mead,
+/obj/item/reagent_containers/food/drinks/mead,
+/obj/item/reagent_containers/food/drinks/mead,
+/obj/item/reagent_containers/food/drinks/mead,
+/obj/item/reagent_containers/food/drinks/mead,
+/obj/item/reagent_containers/food/drinks/mead,
 /obj/item/reagent_containers/food/drinks/bottle/absinthe/premium,
 /obj/item/reagent_containers/food/drinks/bottle/tequila,
 /obj/item/reagent_containers/food/drinks/bottle/vodka,
@@ -7869,22 +7869,22 @@
 /area/ship/security/prison)
 "TY" = (
 /obj/machinery/light/dim/directional/south,
-/obj/item/reagent_containers/food/drinks/beer/light{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = -8;
 	pixel_y = 7
 	},
-/obj/item/reagent_containers/food/drinks/beer/light{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = 2;
 	pixel_y = 7
 	},
-/obj/item/reagent_containers/food/drinks/beer/light{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = 8
 	},
-/obj/item/reagent_containers/food/drinks/beer/light{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = -3;
 	pixel_y = 1
 	},
-/obj/item/reagent_containers/food/drinks/beer/light{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_y = 2;
 	pixel_x = -12
 	},

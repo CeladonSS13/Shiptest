@@ -283,32 +283,6 @@ GLOBAL_LIST_INIT(onecardinalwest, WEST)
 	move_to_delay = 5
 	armour_penetration = 15
 
-/mob/living/simple_animal/hostile/alien
-	move_to_delay = 8
-	ranged_cooldown_time = 15
-	armour_penetration = 25
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 0, "acid" = 80)
-
-// /mob/living/simple_animal/hostile/alien/asteroid
-
-// /mob/living/simple_animal/hostile/alien/drone
-
-/mob/living/simple_animal/hostile/alien/sentinel
-	armour_penetration = 25
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 20, "bomb" = 20, "bio" = 100, "rad" = 100, "fire" = 20, "acid" = 80)
-
-/mob/living/simple_animal/hostile/alien/queen
-	move_to_delay = 6
-	armour_penetration = 30
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 100, "rad" = 100, "fire" = 20, "acid" = 80)
-
-/mob/living/simple_animal/hostile/alien/queen/large
-	move_to_delay = 4
-	armour_penetration = 35
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 20, "acid" = 80)
-
-// /mob/living/simple_animal/hostile/alien/maid
-
 /// MARK: BEAR
 
 /mob/living/basic/bear
@@ -443,11 +417,11 @@ GLOBAL_LIST_INIT(onecardinalwest, WEST)
 	armour_penetration = 8
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 50, "acid" = 50)
 
-/mob/living/basic/hivebot/range
+/mob/living/basic/hivebot/ranged
 	armour_penetration = 10
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 50, "acid" = 50)
 
-/mob/living/basic/hivebot/range/rockplanet
+/mob/living/basic/hivebot/ranged/rockplanet
 
 /mob/living/basic/hivebot/rapid
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 50, "acid" = 50)
@@ -462,16 +436,16 @@ GLOBAL_LIST_INIT(onecardinalwest, WEST)
 
 // /mob/living/basic/hivebot/mechanic
 
-/mob/living/basic/hivebot/wasteplanet
+/mob/living/basic/hivebot
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 50, "acid" = 50)
 
-/mob/living/basic/hivebot/wasteplanet/ranged
+/mob/living/basic/hivebot/ranged
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 50, "acid" = 50)
 
-/mob/living/basic/hivebot/wasteplanet/ranged/rapid
+/mob/living/basic/hivebot/rapid
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 50, "acid" = 50)
 
-/mob/living/basic/hivebot/wasteplanet/strong
+/mob/living/basic/hivebot/strong
 	armour_penetration = 20
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 30, "bomb" = 30, "bio" = 100, "rad" = 100, "fire" = 70, "acid" = 70)
 

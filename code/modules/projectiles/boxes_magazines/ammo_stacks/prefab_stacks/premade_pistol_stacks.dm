@@ -2,6 +2,7 @@
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/c10mm
 	ammo_type = /obj/item/ammo_casing/c10mm
+	max_ammo = 15
 
 /obj/item/storage/box/ammo/c10mm
 	name = "box of 10x22mm ammo"
@@ -11,11 +12,12 @@
 /obj/item/storage/box/ammo/c10mm/PopulateContents()
 	..()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c10mm = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c10mm = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/c10mm/surplus
 	ammo_type = /obj/item/ammo_casing/c10mm/surplus
+	custom_materials = list(/datum/material/iron = 4000)
 
 /obj/item/storage/box/ammo/c10mm_surplus
 	name = "box of surplus 10x22mm ammo"
@@ -25,7 +27,7 @@
 /obj/item/storage/box/ammo/c10mm_surplus/PopulateContents()
 	..()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c10mm = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c10mm = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/c10mm/ap
@@ -39,7 +41,7 @@
 /obj/item/storage/box/ammo/c10mm_ap/PopulateContents()
 	..()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c10mm/ap = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c10mm/ap = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/c10mm/hp
@@ -53,7 +55,7 @@
 /obj/item/storage/box/ammo/c10mm_hp/PopulateContents()
 	..()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c10mm/hp = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c10mm/hp = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/c10mm/rubber
@@ -67,7 +69,7 @@
 /obj/item/storage/box/ammo/c10mm_rubber/PopulateContents()
 	..()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c10mm/rubber = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c10mm/rubber = 4)
 	generate_items_inside(items_inside,src)
 
 // 9x18mm (Commander + SABR)
@@ -84,11 +86,12 @@
 /obj/item/storage/box/ammo/c9mm/PopulateContents()
 	..()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c9mm = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c9mm = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/c9mm/surplus
 	ammo_type = /obj/item/ammo_casing/c9mm/surplus
+	custom_materials = list(/datum/material/iron = 4000)
 
 /obj/item/storage/box/ammo/c9mm_surplus
 	name = "box of surplus 9x18mm ammo"
@@ -97,7 +100,7 @@
 
 /obj/item/storage/box/ammo/c9mm_surplus/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c9mm/surplus = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c9mm/surplus = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/c9mm/ap
@@ -111,7 +114,7 @@
 /obj/item/storage/box/ammo/c9mm_ap/PopulateContents()
 	..()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c9mm/ap = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c9mm/ap = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/c9mm/hp
@@ -125,7 +128,7 @@
 /obj/item/storage/box/ammo/c9mm_hp/PopulateContents()
 	..()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c9mm/hp = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c9mm/hp = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/c9mm/rubber
@@ -139,7 +142,7 @@
 /obj/item/storage/box/ammo/c9mm_rubber/PopulateContents()
 	..()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c9mm/rubber = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c9mm/rubber = 4)
 	generate_items_inside(items_inside,src)
 
 // .45 (Candor + C20R)
@@ -155,11 +158,12 @@
 /obj/item/storage/box/ammo/c45/PopulateContents()
 	..()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c45 = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c45 = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/c45/surplus
 	ammo_type = /obj/item/ammo_casing/c45/surplus
+	custom_materials = list(/datum/material/iron = 4000)
 
 /obj/item/storage/box/ammo/c45_surplus
 	name = "box of surplus .45 ammo"
@@ -169,7 +173,7 @@
 /obj/item/storage/box/ammo/c45_surplus/PopulateContents()
 	..()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c45/surplus = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c45/surplus = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/c45/ap
@@ -183,7 +187,7 @@
 /obj/item/storage/box/ammo/c45_ap/PopulateContents()
 	..()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c45/ap = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c45/ap = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/c45/hp
@@ -196,7 +200,7 @@
 
 /obj/item/storage/box/ammo/c45_hp/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c45/hp = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c45/hp = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/c45/rubber
@@ -209,7 +213,7 @@
 
 /obj/item/storage/box/ammo/c45_rubber/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c45/rubber = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c45/rubber = 4)
 	generate_items_inside(items_inside,src)
 
 // .22 LR (Himehabu, Pounder)
@@ -225,7 +229,7 @@
 
 /obj/item/storage/box/ammo/c22lr/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c22lr = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c22lr = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/c22lr/ap
@@ -239,7 +243,7 @@
 
 /obj/item/storage/box/ammo/c22lr/ap/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c22lr/ap = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c22lr/ap = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/c22lr/hp
@@ -253,7 +257,7 @@
 
 /obj/item/storage/box/ammo/c22lr/hp/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c22lr/hp = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c22lr/hp = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/c22lr/rubber
@@ -267,7 +271,7 @@
 
 /obj/item/storage/box/ammo/c22lr/rubber/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c22lr/rubber = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c22lr/rubber = 4)
 	generate_items_inside(items_inside,src)
 
 // .357
@@ -282,7 +286,7 @@
 
 /obj/item/storage/box/ammo/a357/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a357 = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a357 = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/a357/match
@@ -295,7 +299,7 @@
 
 /obj/item/storage/box/ammo/a357_match/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a357/match = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a357/match = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/a357/hp
@@ -308,7 +312,7 @@
 
 /obj/item/storage/box/ammo/a357_hp/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a357/hp = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a357/hp = 4)
 	generate_items_inside(items_inside,src)
 
 // .45-70 (Hunting Revolver, Beacon)
@@ -324,20 +328,20 @@
 
 /obj/item/storage/box/ammo/a4570/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a4570 = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a4570 = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/a4570/match
 	ammo_type = /obj/item/ammo_casing/a4570/match
 
 /obj/item/storage/box/ammo/a4570_match
-	name = "box of HP match .45-70 ammo"
+	name = "box of match .45-70 ammo"
 	desc = "A 12-round ammo box for .45-70 revolvers. These match rounds travel faster, perform better against armor, and can ricochet off targets."
 	icon_state = "4570-match"
 
 /obj/item/storage/box/ammo/a4570_match/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a4570/match = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a4570/match = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/a4570/hp
@@ -350,7 +354,7 @@
 
 /obj/item/storage/box/ammo/a4570_hp/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a4570/hp = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a4570/hp = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/a4570/explosive
@@ -363,7 +367,7 @@
 
 /obj/item/storage/box/ammo/a4570_explosive/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a4570/explosive = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/a4570/explosive = 4)
 	generate_items_inside(items_inside,src)
 
 // .38 Special
@@ -379,11 +383,12 @@
 
 /obj/item/storage/box/ammo/c38/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c38 = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c38 = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/c38/surplus
 	ammo_type = /obj/item/ammo_casing/c38/surplus
+	custom_materials = list(/datum/material/iron = 4000)
 
 /obj/item/storage/box/ammo/c38_surplus
 	name = "box of surplus .38 ammo"
@@ -392,7 +397,7 @@
 
 /obj/item/storage/box/ammo/c38_surplus/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c38/surplus = 3)
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/c38/surplus = 4)
 	generate_items_inside(items_inside,src)
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/c38/trac
@@ -437,6 +442,7 @@
 
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/a44roum
 	ammo_type = /obj/item/ammo_casing/a44roum
+	max_ammo = 12
 
 /obj/item/storage/box/ammo/a44roum
 	name = "box of .44 roumain ammo"

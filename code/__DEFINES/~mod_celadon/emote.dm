@@ -142,6 +142,8 @@
 #define EMOTE_SPECIES_MROW			"Мяукнуть раздражённо"
 /// NEW
 #define EMOTE_SPECIES_FPURR			"Урчать"
+#define EMOTE_SPECIES_FWHINE		"Скулить"
+#define EMOTE_SPECIES_YIP			"Тявкать"
 #define EMOTE_SPECIES_CHITTER		"Жужать"
 #define EMOTE_SPECIES_SHAME			"Стыдиться"
 #define EMOTE_SPECIES_COLLAPSE		"Споткнуться"

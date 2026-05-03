@@ -366,7 +366,7 @@
 /obj/item/reagent_containers/spray/pepper,
 /obj/item/assembly/flash,
 /obj/item/storage/box/handcuffs,
-/obj/item/gun/energy/e_gun,
+/obj/item/gun/energy/e_gun/e_old,
 /obj/item/stock_parts/cell/gun,
 /obj/item/stock_parts/cell/gun,
 /obj/item/tank/internals/emergency_oxygen/double,
@@ -397,17 +397,17 @@
 /obj/structure/guncloset{
 	anchored = 1
 	},
-/obj/item/gun/energy/e_gun/smg{
-	pixel_x = 0;
-	pixel_y = -6
-	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_x = 0;
 	pixel_y = 3
 	},
 /obj/item/gun/energy/e_gun/advtaser{
 	pixel_x = 0;
 	pixel_y = 9
+	},
+/obj/item/gun/energy/e_gun/e_old/smg{
+	pixel_x = 0;
+	pixel_y = -4
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm/captain)
@@ -2432,7 +2432,7 @@
 	name = "NT Intelligence Officer Hardsuit"
 	},
 /obj/item/tank/internals/oxygen,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm/captain)
 "HZ" = (

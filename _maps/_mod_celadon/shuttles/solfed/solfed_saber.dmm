@@ -580,14 +580,12 @@
 /area/ship/crew/office)
 "en" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/obj/structure/table/reinforced{
-	color = "#c1b6a5"
-	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/railing/wood{
 	dir = 8
 	},
+/obj/machinery/griddle,
 /turf/open/floor/wood/walnut,
 /area/ship/hallway/central)
 "eo" = (
@@ -654,7 +652,7 @@
 /obj/item/clothing/under/solfed/camo/elysium,
 /obj/item/clothing/mask/gas/solfed/elysium,
 /obj/item/storage/belt/military/solfed/elysium,
-/obj/item/clothing/head/helmet/solfed/m11/elysium/wraps,
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed/elysium/wraps,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/security)
 "ex" = (
@@ -747,18 +745,11 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
 	},
-/obj/machinery/microwave{
-	pixel_y = 2
-	},
-/obj/effect/spawner/random/food_or_drink/ration,
-/obj/effect/spawner/random/food_or_drink/ration,
-/obj/structure/table/reinforced{
-	color = "#c1b6a5"
-	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/structure/railing/wood{
 	dir = 8
 	},
+/obj/machinery/oven,
 /turf/open/floor/wood/walnut,
 /area/ship/hallway/central)
 "fg" = (
@@ -1022,6 +1013,7 @@
 /obj/machinery/jukebox/boombox{
 	pixel_y = 5
 	},
+/obj/item/lighter/greyscale,
 /turf/open/floor/plasteel/grimy,
 /area/ship/hallway/central)
 "hE" = (
@@ -1733,6 +1725,10 @@
 /obj/item/storage/box/cups{
 	pixel_x = -14
 	},
+/obj/item/storage/pill_bottle/dice{
+	pixel_x = 6;
+	pixel_y = 6
+	},
 /turf/open/floor/wood/walnut,
 /area/ship/hallway/central)
 "ni" = (
@@ -1928,7 +1924,7 @@
 /obj/item/clothing/under/solfed/camo/elysium,
 /obj/item/clothing/mask/gas/solfed/elysium,
 /obj/item/storage/belt/military/solfed/elysium,
-/obj/item/clothing/head/helmet/solfed/m11/elysium/wraps,
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed/elysium/wraps,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/security)
 "oQ" = (
@@ -2365,7 +2361,7 @@
 /turf/open/floor/wood/ebony,
 /area/ship/security/armory)
 "sT" = (
-/obj/machinery/vending/wallmed{
+/obj/machinery/vending/wallmed/ship{
 	pixel_x = -32
 	},
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -2408,10 +2404,10 @@
 	},
 /obj/item/clothing/mask/gas/solfed/elysium,
 /obj/item/clothing/mask/gas/solfed/elysium,
-/obj/item/clothing/head/helmet/solfed/m11/elysium/wraps,
-/obj/item/clothing/head/helmet/solfed/m11/elysium/wraps,
-/obj/item/clothing/head/helmet/solfed/m11/elysium,
-/obj/item/clothing/head/helmet/solfed/m11/elysium,
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed/elysium/wraps,
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed/elysium/wraps,
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed/elysium,
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed/elysium,
 /turf/open/floor/wood/ebony,
 /area/ship/security/armory)
 "tk" = (
@@ -2735,9 +2731,6 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/item/gun/energy/e_gun/adv_stopping{
-	desc = "Asolver with the capacity to shoot both disabler and lethal lasers, as well as futuristic safari nets."
-	},
 /obj/item/assembly/flash/handheld{
 	pixel_x = -9
 	},
@@ -2750,6 +2743,7 @@
 /obj/item/clothing/mask/gas/solfed/elysium,
 /obj/item/clothing/head/solfed/elysium,
 /obj/item/clothing/under/solfed/formal/elysium,
+/obj/item/gun/energy/e_gun/e_old/adv_stopping,
 /turf/open/floor/carpet/green,
 /area/ship/security/range)
 "we" = (
@@ -3184,7 +3178,7 @@
 /obj/item/clothing/under/solfed/camo/elysium,
 /obj/item/clothing/mask/gas/solfed/elysium,
 /obj/item/storage/belt/military/solfed/elysium,
-/obj/item/clothing/head/helmet/solfed/m11/elysium/wraps,
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed/elysium/wraps,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/security)
 "yH" = (
@@ -3578,7 +3572,7 @@
 /obj/item/clothing/under/solfed/camo/elysium,
 /obj/item/clothing/mask/gas/solfed/elysium,
 /obj/item/storage/belt/military/solfed/elysium,
-/obj/item/clothing/head/helmet/solfed/m11/elysium/wraps,
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed/elysium/wraps,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/security)
 "BX" = (
@@ -3941,19 +3935,19 @@
 /obj/structure/rack,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/turf_decal/box/red,
-/obj/item/clothing/head/helmet/solfed/m11/elysium{
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed/elysium{
 	pixel_x = 9;
 	pixel_y = -5
 	},
-/obj/item/clothing/head/helmet/solfed/m11/elysium{
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed/elysium{
 	pixel_y = 9;
 	pixel_x = 9
 	},
-/obj/item/clothing/head/helmet/solfed/m11/elysium{
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed/elysium{
 	pixel_y = 9;
 	pixel_x = -10
 	},
-/obj/item/clothing/head/helmet/solfed/m11/elysium{
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed/elysium{
 	pixel_y = -5;
 	pixel_x = -10
 	},
@@ -4387,10 +4381,6 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "Hy" = (
-/obj/item/storage/pill_bottle/dice{
-	pixel_x = 6;
-	pixel_y = 6
-	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
@@ -4398,10 +4388,14 @@
 	color = "#c1b6a5"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/lighter/greyscale,
 /obj/structure/sign/solfed{
 	pixel_y = 32
 	},
+/obj/machinery/microwave{
+	pixel_y = 2
+	},
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /turf/open/floor/plasteel/grimy,
 /area/ship/hallway/central)
 "HF" = (

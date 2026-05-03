@@ -36,7 +36,7 @@
 	return ..()
 
 /obj/item/minigunpack/process(seconds_per_tick)
-	overheat = max(0, overheat - heat_diffusion)
+	overheat = max(0, overheat - heat_diffusion * seconds_per_tick)	// [CELADON-EDIT]
 
 //ATTACK HAND IGNORING PARENT RETURN VALUE
 /obj/item/minigunpack/attack_hand(mob/living/carbon/user)
@@ -127,6 +127,7 @@
 	item_flags = NEEDS_PERMIT | SLOWS_WHILE_IN_HAND
 	can_charge = FALSE
 	var/obj/item/minigunpack/ammo_pack
+	internal_cell = TRUE	// [CELADON-ADD]
 
 /obj/item/gun/energy/minigun/Initialize()
 	if(!istype(loc, /obj/item/minigunpack)) //We should spawn inside an ammo pack so let's use that one.

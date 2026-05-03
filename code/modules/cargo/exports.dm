@@ -11,11 +11,6 @@
 
 	var/list/contents = AM.GetAllContents()
 
-	// [CELADON_EDIT] — PRINTED_ITEMS_SELLING_VITO
-	for(var/obj/item/I in contents)
-		if(I.autolathe_printed)
-			I -= contents
-	// [/CELADON_EDIT]
 
 	var/datum/export_report/report = external_report
 
@@ -42,10 +37,7 @@
 			if(ismob(thing))
 				thing.investigate_log("deleted through cargo export",INVESTIGATE_CARGO)
 	if(!dry_run)
-	// [CELADON_EDIT]
-		for(var/atom/A in contents)
-			qdel(A)
-	// [/CELADON_EDIT]
+		qdel(AM)
 
 	return report
 
@@ -74,6 +66,9 @@
 	var/list/export_types = list()	// Type of the exported object. If none, the export datum is considered base type.
 	var/include_subtypes = TRUE		// Set to FALSE to make the datum apply only to a strict type.
 	var/list/exclude_types = list()	// Types excluded from export
+
+	///can this export be targetting with high-value bounty?
+	var/valid_event_target = TRUE
 
 /datum/export/New()
 	..()

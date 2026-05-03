@@ -75,7 +75,18 @@
 	if(user.get_item_by_slot(ITEM_SLOT_BELT) == src)
 		to_chat(user, span_notice("Your [name] activates, saving you from the chasm!"))
 		SSblackbox.record_feedback("tally", "jaunter", 1, "Chasm") // chasm automatic activation
-		activate(user, FALSE, TRUE)
+		// [CELADON-EDIT] - FIXES_CHASM_AND_JAUNTER - А вот тут, внедряем механику бс кристалла. Это лчшее что есть
+		// activate(user, FALSE, TRUE)	// ORIGINAL
+		do_teleport(user, get_turf(user), 15, asoundin = 'sound/effects/phasein.ogg', channel = TELEPORT_CHANNEL_BLUESPACE)
+		if(iscarbon(user))
+			var/mob/living/carbon/L = user
+			L.Paralyze(60)
+			if(ishuman(L))
+				shake_camera(L, 20, 1)
+				addtimer(CALLBACK(L, TYPE_PROC_REF(/mob/living/carbon, vomit)), 20)
+		log_game("[user] Has jaunted from chasm.")
+		qdel(src)
+		// [/CELADON-EDIT]
 	else
 		to_chat(user, span_userdanger("[src] is not attached to your belt, preventing it from saving you from the chasm. RIP."))
 

@@ -46,8 +46,7 @@
 	pixel_y = 4
 	},
 /obj/item/pen/solfed{
-	pixel_x = 4;
-	pixel_y = 0
+	pixel_x = 4
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/crewthree)
@@ -87,7 +86,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/door/poddoor{
-	id = "58"
+	id = "fistofF_armory"
 	},
 /turf/open/floor/mineral/titanium,
 /area/ship/security)
@@ -219,7 +218,6 @@
 	},
 /obj/machinery/telecomms/message_server{
 	autolinkers = list("solgovPDA");
-	calibrating = 0;
 	network = "SolNet"
 	},
 /obj/machinery/light/small/directional/east,
@@ -253,9 +251,7 @@
 /turf/open/floor/wood,
 /area/ship/crew/office)
 "bk" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "bw" = (
@@ -295,9 +291,7 @@
 /area/ship/hallway/central)
 "bC" = (
 /obj/machinery/power/smes/engineering,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -503,9 +497,7 @@
 /turf/open/floor/wood,
 /area/ship/crew/office)
 "cE" = (
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
@@ -513,10 +505,10 @@
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
 	dir = 8;
-	id = "sgi_holocargo1"
+	id = "fistofF_holobay_S"
 	},
 /obj/machinery/door/poddoor{
-	id = "45"
+	id = "fistofF_blast_S"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
@@ -538,9 +530,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/engineering/atmospherics)
 "cN" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/structure/chair/sofa/brown/left,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
@@ -641,8 +631,7 @@
 /obj/structure/window/plasma/reinforced/spawner/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/nitrogen_output{
 	piping_layer = 2;
-	pixel_x = -5;
-	pixel_y = 0
+	pixel_x = -5
 	},
 /turf/open/floor/engine/n2,
 /area/ship/engineering/atmospherics)
@@ -726,8 +715,7 @@
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/structure/window/plasma/reinforced/spawner,
 /obj/effect/turf_decal/atmos/oxygen{
-	pixel_x = 17;
-	pixel_y = 0
+	pixel_x = 17
 	},
 /obj/machinery/atmospherics/pipe/simple/cyan/hidden/layer2{
 	dir = 9
@@ -811,7 +799,7 @@
 	},
 /obj/structure/table/wood,
 /obj/item/trash/popcorn,
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_y = 10;
 	pixel_x = 9
 	},
@@ -861,8 +849,8 @@
 /area/ship/security)
 "eW" = (
 /obj/machinery/porta_turret/ship/solfed{
-	dir = 9;
-	id = "tomahawk_turrets"
+	dir = 6;
+	id = "fistofF_turrets"
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/bridge)
@@ -954,9 +942,7 @@
 /area/ship/engineering/engine)
 "fG" = (
 /obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/freezer,
 /area/ship/crew/toilet)
@@ -987,7 +973,7 @@
 	dir = 5
 	},
 /obj/machinery/button/door{
-	id = "solc_eng";
+	id = "fistofF_eng";
 	name = "Engine Shutters";
 	pixel_x = 8;
 	pixel_y = 19
@@ -1025,7 +1011,6 @@
 /area/ship/hallway/fore)
 "gj" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	icon_state = "pipe11-4";
 	dir = 5
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
@@ -1132,13 +1117,11 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/machinery/door/poddoor{
 	dir = 4;
-	id = "solc_eng"
+	id = "fistofF_eng"
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
@@ -1184,9 +1167,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue{
 	dir = 5
 	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel/white,
 /area/ship/security)
 "gW" = (
@@ -1271,7 +1252,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue/full,
 /obj/machinery/turretid/ship{
 	pixel_y = -27;
-	id = "tomahawk_turrets"
+	id = "fistofF_turrets"
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
@@ -1373,7 +1354,7 @@
 	},
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/poddoor{
-	id = "49"
+	id = "fistofF_blast_N"
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security)
@@ -1441,7 +1422,7 @@
 /obj/item/clothing/head/solfed/beret,
 /obj/item/clothing/under/solfed/camo,
 /obj/item/melee/energy/sword/saber/knife,
-/obj/item/clothing/head/helmet/solfed/m11,
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed,
 /turf/open/floor/plasteel/white,
 /area/ship/security)
 "iC" = (
@@ -1619,7 +1600,7 @@
 /obj/item/clothing/head/solfed/beret,
 /obj/item/clothing/under/solfed/camo,
 /obj/item/melee/energy/sword/saber/knife,
-/obj/item/clothing/head/helmet/solfed/m11,
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed,
 /turf/open/floor/plasteel/white,
 /area/ship/security)
 "jF" = (
@@ -1762,9 +1743,7 @@
 /area/ship/engineering/electrical)
 "kT" = (
 /obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/light_switch{
 	dir = 8;
 	pixel_x = 19;
@@ -1881,15 +1860,15 @@
 /obj/machinery/button/shieldwallgen{
 	pixel_y = -1;
 	pixel_x = 22;
-	id = "twinkle_holobay";
+	id = "fistofF_holobay";
 	dir = 8
 	},
 /obj/machinery/button/door{
 	pixel_y = -10;
 	name = "Cargo Doors";
-	id = "49";
 	pixel_x = 23;
-	dir = 8
+	dir = 8;
+	id = "fistofF_blast_N"
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security)
@@ -2078,12 +2057,9 @@
 	dir = 5
 	},
 /obj/structure/chair/sofa/blue/right,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/solfed/random{
-	pixel_x = 0;
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/white,
@@ -2323,9 +2299,7 @@
 /area/ship/engineering/engine)
 "or" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/structure/closet/crate/secure/gear{
 	desc = "For emergency use only";
 	name = "emergency sauerkraut supplies";
@@ -2368,7 +2342,7 @@
 /obj/machinery/power/shieldwallgen/atmos{
 	anchored = 1;
 	dir = 8;
-	id = "twinkle_holobay";
+	id = "fistofF_holobay";
 	locked = 1
 	},
 /obj/structure/cable{
@@ -2377,7 +2351,7 @@
 	pixel_y = 1
 	},
 /obj/machinery/door/poddoor{
-	id = "49"
+	id = "fistofF_blast_N"
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security)
@@ -2404,9 +2378,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue{
 	dir = 5
 	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/effect/spawner/random/food_or_drink/ration,
 /obj/item/encryptionkey/solgov{
 	pixel_x = -5;
@@ -2416,7 +2388,7 @@
 /obj/item/clothing/head/solfed/beret,
 /obj/item/clothing/under/solfed/camo,
 /obj/item/melee/energy/sword/saber/knife,
-/obj/item/clothing/head/helmet/solfed/m11,
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed,
 /turf/open/floor/plasteel/white,
 /area/ship/security)
 "oH" = (
@@ -2596,9 +2568,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue{
 	dir = 5
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
@@ -2694,13 +2664,11 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/machinery/door/poddoor{
 	dir = 4;
-	id = "solc_eng"
+	id = "fistofF_eng"
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/engineering/engine)
@@ -2749,7 +2717,7 @@
 /obj/machinery/power/shieldwallgen/atmos{
 	anchored = 1;
 	dir = 4;
-	id = "twinkle_holobay";
+	id = "fistofF_holobay";
 	locked = 1
 	},
 /obj/structure/cable{
@@ -2758,7 +2726,7 @@
 	pixel_y = 1
 	},
 /obj/machinery/door/poddoor{
-	id = "49"
+	id = "fistofF_blast_N"
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security)
@@ -3315,9 +3283,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/engineering/atmospherics)
@@ -3393,9 +3359,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 6
 	},
@@ -3426,7 +3390,7 @@
 	dir = 1
 	},
 /obj/machinery/door/poddoor{
-	id = "58"
+	id = "fistofF_armory"
 	},
 /turf/open/floor/mineral/titanium,
 /area/ship/security)
@@ -3625,9 +3589,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4
 	},
@@ -3919,8 +3881,7 @@
 	},
 /obj/item/pen/solfed,
 /obj/item/folder/solfed{
-	pixel_x = 10;
-	pixel_y = 0
+	pixel_x = 10
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/crewtwo)
@@ -4257,9 +4218,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/storage/equip)
 "Bl" = (
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
@@ -4267,10 +4226,10 @@
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
 	dir = 4;
-	id = "sgi_holocargo1"
+	id = "fistofF_holobay_S"
 	},
 /obj/machinery/door/poddoor{
-	id = "45"
+	id = "fistofF_blast_S"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
@@ -4349,9 +4308,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue{
 	dir = 5
 	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel/white,
 /area/ship/security)
 "BG" = (
@@ -4360,6 +4317,13 @@
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/crew/crewthree)
+"BH" = (
+/obj/machinery/porta_turret/ship/solfed{
+	dir = 9;
+	id = "fistofF_turrets"
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
 "BJ" = (
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/structure/window/plasma/reinforced/spawner,
@@ -4453,7 +4417,6 @@
 /area/ship/medical)
 "Cg" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	icon_state = "pipe11-4";
 	dir = 5
 	},
 /turf/open/floor/plasteel/white,
@@ -4625,8 +4588,7 @@
 	pixel_x = 5
 	},
 /obj/item/cultivator/rake{
-	pixel_x = -4;
-	pixel_y = 0
+	pixel_x = -4
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -4730,7 +4692,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/button/door{
-	id = 58;
+	id = "fistofF_armory";
 	dir = 1;
 	pixel_y = -25
 	},
@@ -5093,14 +5055,14 @@
 	},
 /obj/machinery/button/shieldwallgen{
 	dir = 4;
-	id = "sgi_holocargo1";
+	id = "fistofF_holobay_S";
 	pixel_x = -18;
 	pixel_y = 2
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/garbage,
 /obj/machinery/button/door{
-	id = 45;
+	id = "fistofF_blast_S";
 	dir = 4;
 	pixel_x = -20;
 	pixel_y = -7
@@ -5122,9 +5084,7 @@
 /obj/machinery/vending/coffee{
 	all_items_free = 1
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/fore)
@@ -5183,8 +5143,7 @@
 	pixel_y = 13
 	},
 /obj/machinery/recharger{
-	pixel_x = 5;
-	pixel_y = 0
+	pixel_x = 5
 	},
 /obj/item/encryptionkey/solgov{
 	pixel_x = -5;
@@ -5539,7 +5498,7 @@
 /obj/item/clothing/head/solfed/beret,
 /obj/item/clothing/under/solfed/camo,
 /obj/item/melee/energy/sword/saber/knife,
-/obj/item/clothing/head/helmet/solfed/m11,
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed,
 /turf/open/floor/plasteel/white,
 /area/ship/security)
 "Is" = (
@@ -5702,15 +5661,13 @@
 "JE" = (
 /obj/structure/window/plasma/reinforced/spawner/north,
 /obj/structure/window/plasma/reinforced/spawner/east,
-/obj/machinery/atmospherics/components/unary/outlet_injector/layer2,
+/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer2,
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer4,
 /turf/open/floor/engine/o2,
 /area/ship/engineering/atmospherics)
 "JG" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/structure/closet/crate/radiation,
 /obj/item/clothing/suit/radiation,
 /obj/item/clothing/suit/radiation,
@@ -5800,8 +5757,7 @@
 	dir = 5
 	},
 /obj/item/pen/solfed{
-	pixel_x = 4;
-	pixel_y = 0
+	pixel_x = 4
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/security)
@@ -5969,9 +5925,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue{
 	dir = 10
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/fore)
@@ -6175,9 +6129,15 @@
 "Mh" = (
 /obj/structure/window/plasma/reinforced/spawner/north,
 /obj/structure/window/plasma/reinforced/spawner/east,
-/obj/machinery/atmospherics/components/unary/outlet_injector/layer4,
+/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4,
 /turf/open/floor/engine/n2,
 /area/ship/engineering/atmospherics)
+"Mj" = (
+/obj/machinery/porta_turret/ship/solfed{
+	id = "fistofF_turrets"
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
 "Mk" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue{
 	dir = 10
@@ -6372,6 +6332,13 @@
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/engineering/engine)
+"NH" = (
+/obj/machinery/porta_turret/ship/solfed{
+	dir = 10;
+	id = "fistofF_turrets"
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
 "NJ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -6439,7 +6406,7 @@
 /obj/item/clothing/head/solfed/beret,
 /obj/item/clothing/under/solfed/camo,
 /obj/item/melee/energy/sword/saber/knife,
-/obj/item/clothing/head/helmet/solfed/m11,
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed,
 /turf/open/floor/plasteel/white,
 /area/ship/security)
 "NR" = (
@@ -6511,7 +6478,7 @@
 	},
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/poddoor{
-	id = "45"
+	id = "fistofF_blast_S"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
@@ -7312,9 +7279,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue{
 	dir = 5
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/white,
 /area/ship/security)
@@ -7402,6 +7367,13 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
+"UD" = (
+/obj/machinery/porta_turret/ship/solfed{
+	dir = 1;
+	id = "fistofF_turrets"
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
 "UE" = (
 /obj/machinery/mineral/ore_redemption{
 	dir = 8;
@@ -7417,9 +7389,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/storage/equip)
 "UG" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/white,
@@ -7454,14 +7424,13 @@
 	},
 /obj/machinery/door/firedoor/border_only,
 /obj/docking_port/mobile{
-	can_move_docking_ports = 1;
 	name = "Cargo Bay";
 	port_direction = 8;
 	preferred_direction = 4;
 	dir = 2
 	},
 /obj/machinery/door/poddoor{
-	id = "45"
+	id = "fistofF_blast_S"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
@@ -7507,7 +7476,7 @@
 /obj/item/clothing/head/solfed/beret,
 /obj/item/clothing/under/solfed/camo,
 /obj/item/melee/energy/sword/saber/knife,
-/obj/item/clothing/head/helmet/solfed/m11,
+/obj/item/clothing/head/helmet/bulletproof/x11/solfed,
 /turf/open/floor/plasteel/white,
 /area/ship/security)
 "UW" = (
@@ -7925,8 +7894,7 @@
 /obj/structure/window/plasma/reinforced/spawner/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/oxygen_output{
 	piping_layer = 2;
-	pixel_x = -5;
-	pixel_y = 0
+	pixel_x = -5
 	},
 /turf/open/floor/engine/o2,
 /area/ship/engineering/atmospherics)
@@ -7996,6 +7964,13 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
+"XN" = (
+/obj/machinery/porta_turret/ship/solfed{
+	dir = 5;
+	id = "fistofF_turrets"
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
 "XV" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -8137,7 +8112,7 @@
 	dir = 9
 	},
 /obj/machinery/door/poddoor{
-	id = "58"
+	id = "fistofF_armory"
 	},
 /turf/open/floor/mineral/titanium,
 /area/ship/security)
@@ -8218,9 +8193,7 @@
 	},
 /obj/structure/fluff/hedge/opaque,
 /obj/structure/railing/wood,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/fore)
@@ -8289,7 +8262,7 @@ mQ
 mQ
 mQ
 mQ
-eW
+BH
 aB
 cZ
 cZ
@@ -8300,7 +8273,7 @@ cZ
 cZ
 cZ
 aB
-eW
+NH
 mQ
 mQ
 mQ
@@ -8583,7 +8556,7 @@ mQ
 (11,1,1) = {"
 mQ
 mQ
-eW
+BH
 bZ
 bZ
 aI
@@ -8606,7 +8579,7 @@ fJ
 tG
 tG
 aB
-eW
+NH
 mQ
 mQ
 "}
@@ -8973,7 +8946,7 @@ mQ
 (24,1,1) = {"
 mQ
 mQ
-eW
+UD
 zV
 zV
 zV
@@ -8996,7 +8969,7 @@ VP
 VP
 VP
 VP
-eW
+Mj
 mQ
 mQ
 "}
@@ -9213,7 +9186,7 @@ mQ
 (32,1,1) = {"
 mQ
 mQ
-eW
+XN
 XJ
 XJ
 XJ
@@ -9424,7 +9397,7 @@ mQ
 mQ
 mQ
 mQ
-eW
+XN
 iQ
 pr
 qS
@@ -9787,7 +9760,7 @@ mQ
 mQ
 mQ
 mQ
-eW
+XN
 vc
 vc
 vc

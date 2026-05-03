@@ -44,6 +44,7 @@
 /datum/overmap/event/affect_ship(datum/overmap/ship/controlled/Ship)
 	spawn_meteor(meteor_types, Ship.shuttle_port.get_virtual_level(), 0, Ship.shuttle_port)
 
+/*
 /datum/mission/outpost/research/meteor
 	objective_type = /datum/overmap/event/meteor
 
@@ -52,6 +53,7 @@
 
 /datum/mission/outpost/research/dust
 	objective_type = /datum/overmap/event/dust
+*/
 
 /datum/overmap/event/carp	// вынесено в mod_celadon/fixes/code/research_mission.dm, оставлено дял того чтобы не удалять кучу зависимостей
 	name = "carp migration (moderate)"

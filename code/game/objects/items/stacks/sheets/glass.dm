@@ -9,11 +9,11 @@
  * Glass sheets
  */
 GLOBAL_LIST_INIT(glass_recipes, list ( \
-	new/datum/stack_recipe("directional window", /obj/structure/window/unanchored, time = 0, on_floor = TRUE, window_checks = TRUE), \
-	new/datum/stack_recipe("fulltile window", /obj/structure/window/fulltile/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("directional window", /obj/structure/window/unanchored, time = 1.5 SECONDS, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("fulltile window", /obj/structure/window/fulltile/unanchored, 2, time = 2 SECONDS, on_floor = TRUE, window_checks = TRUE), \
 	new/datum/stack_recipe("glass floor tile", /obj/item/stack/tile/glass, 1, 4, 20), \
 	new/datum/stack_recipe("glass shard", /obj/item/shard, 1) \
-))
+)) // [CELADON-EDIT] - NO-MOMENTAL-CRAFT
 
 /obj/item/stack/sheet/glass
 	name = "glass"
@@ -82,10 +82,11 @@ GLOBAL_LIST_INIT(glass_recipes, list ( \
 
 
 GLOBAL_LIST_INIT(pglass_recipes, list ( \
-	new/datum/stack_recipe("directional window", /obj/structure/window/plasma/unanchored, time = 0, on_floor = TRUE, window_checks = TRUE), \
-	new/datum/stack_recipe("fulltile window", /obj/structure/window/plasma/fulltile/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("directional window", /obj/structure/window/plasma/unanchored, time = 1.5 SECONDS, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("fulltile window", /obj/structure/window/plasma/fulltile/unanchored, 2, time = 2.5 SECONDS, on_floor = TRUE, window_checks = TRUE), \
 	new/datum/stack_recipe("plasma glass shard", /obj/item/shard/plasma, 1) \
 ))
+// [CELADON-EDIT] - NO-MOMENTAL-CRAFT
 
 /obj/item/stack/sheet/plasmaglass
 	name = "plasma glass"
@@ -138,14 +139,14 @@ GLOBAL_LIST_INIT(pglass_recipes, list ( \
  * Reinforced glass sheets
  */
 GLOBAL_LIST_INIT(reinforced_glass_recipes, list ( \
-	new/datum/stack_recipe("windoor frame", /obj/structure/windoor_assembly, 5, time = 0, on_floor = TRUE, window_checks = TRUE), \
-	new/datum/stack_recipe("window firelock frame", /obj/structure/firelock_frame/window, 3, time = 50, one_per_turf = TRUE, on_floor = TRUE),
+	new/datum/stack_recipe("windoor frame", /obj/structure/windoor_assembly, 5, time = 0.5 SECONDS, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("window firelock frame", /obj/structure/firelock_frame/window, 3, time = 0.5 SECONDS, one_per_turf = TRUE, on_floor = TRUE),
 	null, \
-	new/datum/stack_recipe("directional reinforced window", /obj/structure/window/reinforced/unanchored, time = 0, on_floor = TRUE, window_checks = TRUE), \
-	new/datum/stack_recipe("fulltile reinforced window", /obj/structure/window/reinforced/fulltile/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("directional reinforced window", /obj/structure/window/reinforced/unanchored, time = 0.5 SECONDS, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("fulltile reinforced window", /obj/structure/window/reinforced/fulltile/unanchored, 2, time = 2 SECONDS, on_floor = TRUE, window_checks = TRUE), \
 	new/datum/stack_recipe("reinforced glass tile", /obj/item/stack/tile/glass/reinforced, 1, 4, 20), \
 	new/datum/stack_recipe("glass shard", /obj/item/shard, 1) \
-))
+)) // [CELADON-EDIT] - NO-MOMENTAL-CRAFT
 
 
 /obj/item/stack/sheet/rglass
@@ -299,6 +300,13 @@ GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 			pixel_y = rand(-5, 5)
 	if (icon_prefix)
 		icon_state = "[icon_prefix][icon_state]"
+// [CELADON-ADD]
+	var/matrix/M = matrix(transform)
+	M.Turn(rand(-170, 170))
+	if(prob(50))
+		M.Scale(-1, 1)
+	transform = M
+// [/CELADON-ADD]
 
 	if(!mapload)
 		SSblackbox.record_feedback("tally", "station_mess_created", 1, name)
@@ -364,7 +372,7 @@ GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 	SIGNAL_HANDLER
 	if(isliving(AM))
 		var/mob/living/L = AM
-		if(!(L.is_flying() || L.is_floating() || L.buckled))
+		if(!(L.movement_type & (FLYING|FLOATING)) || L.buckled)
 			playsound(src, 'sound/effects/glass_step.ogg', HAS_TRAIT(L, TRAIT_LIGHT_STEP) ? 30 : 50, TRUE)
 
 /obj/item/shard/plasma

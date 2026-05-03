@@ -20,8 +20,11 @@ ID мода:
 	CELADON_BALANCE_OVERMAP_EVENTS
 	CELADON_BALANCE_SPECIES
 	CELADON_BALANCE_VENDING
+	ALIEN_BALANCE
 	BALLISTIC_SHIELD
 	YOU_NOT_SEPARATIST
+	SLOW_SPEED_CRAWLING
+	OUTPOST_MED_BALANCE
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов. Добавлены
@@ -33,7 +36,8 @@ ID мода:
 Этот мод вносит различные изменения в балансе. 
 - Изменено количество получаемого лута с элиток.
 - Портированы изменения от Ганзы.
-
+- Добавлен претор ксеноморфов. Изменены характеристики ксеноморфов, а также очки РнД с них.
+-  Изменяем цены в оутпост меде.
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
   А также любая полезная информация.
@@ -55,17 +59,23 @@ EDIT: `code\modules\research\techweb\all_nodes.dm`: `research_costs`, `export_pr
 ADD: `code\game\objects\items\circuitboards\machine_circuitboards.dm` : `/obj/item/circuitboard/machine/vendor`
 - Уменьшение цены еды в карго:
 EDIT: `code\modules\cargo\packs\food.dm` : `/datum/supply_pack/food/`
+- Броня была добавлена для Sonnensoldner hat и SolGov bicorne hat
+ADD: `code/modules/clothing/factions/solgov.dm`
 
 Ребаланс
 Лут с элиток (вместо гритер сундука, выпадает обычный сундук некрополиса)
 EDIT: `code\modules\mob\living\simple_animal\hostile\mining_mobs\elites\elite.dm`: `/obj/structure/elite_tumor/proc/onEliteLoss()` -> var/obj/structure/closet/crate/necropolis/tendril/lootbox = new /obj/structure/closet/crate/necropolis/tendril(loc)
 
 ADD: `code\modules\projectiles\ammunition\_ammunition.dm` : /obj/item/ammo_casing/attackby(obj/item/I, mob/user, params) -> добавлены звук подбора патрона в магазин с пола и задержка в 1 секунду зависящая от кликанья по патронам. Чем быстрее клики - тем быстрее загрузятся патроны. -> перемещено в `mod_celadon/items/code/ammunition.dm`
-Очки с зомби и ксеноморфов
-REMOVE: `D:\1ss\ShiptestYata\code\modules\surgery\experimental_dissection.dm`: `/datum/surgery_step/dissection/preop`
+Очки с зомби и ксеноморфов. Добавлен подтип для королевы и претора.
+REMOVE, EDIT, ADD: `D:\1ss\ShiptestYata\code\modules\surgery\experimental_dissection.dm`: `/datum/surgery_step/dissection/preop` - тэги ALIEN_BALANCE и CELADON_BALANCE
+Новые дефайны для диссекции:
+ADD: `code/__DEFINES/is_helpers.dm` - тэг ALIEN_BALANCE
+
+EDIT, ADD: `code/modules/mining/ore_veins.dm` : `/obj/structure/vein/shrouded, /obj/structure/vein/shrouded/classthree` - изменены шансы спавна ксеноморфов для шрауда. - тэг ALIEN_BALANCE
+
 REMOVE: `code\modules\projectiles\guns\energy.dm`
 REMOVE: `code/_globalvars/lists/maintenance_loot.dm`
-
 
 EDIT: `code/modules/mining/equipment/regenerative_core.dm` - теперь ИПС не смогут жрать ядра для полного отхила, их лечить будет на половину.
 EDIT:
@@ -76,6 +86,7 @@ EDIT:
 `code/modules/mob/living/simple_animal/hostile/mining_mobs/elites/herald.dm`
 `code/modules/mob/living/simple_animal/hostile/mining_mobs/elites/legionnaire.dm`
 `code/modules/mob/living/simple_animal/hostile/mining_mobs/elites/pandora.dm`
+`code/modules/mob/living/simple_animal/hostile/alien.dm` - тэг ALIEN_BALANCE
 
 `code/modules/projectiles/ammunition/_ammunition.dm`
 
@@ -88,6 +99,8 @@ EDIT:
 ADD: 
 `code/modules/vending/_vending.dm` : Добавлена вероятность поломки автомата при уничтожение его с вероятностью в 30% что ничего не выпадет с него
 
+`code/modules/mob/living/simple_animal/hostile/alien.dm` - новые характеристики им.
+
 Хардсьюты:
 EDIT: `code/modules/clothing/spacesuits/hardsuit.dm`
 REMOVE: `code/modules/clothing/spacesuits/hardsuit.dm`
@@ -96,7 +109,8 @@ EDIT: `code/__DEFINES/turfs.dm`	- Меняем минимальный урон �
 EDIT: `code/game/turfs/closed/walls.dm` - Меняем хп стены в 2 раза = 800, увеличиваем минимальный порог урона с 8 до 25
 EDIT: `code/game/turfs/closed/minerals.dm` - Убираем флаг на минимальный дамаг стене, назначаем числовой параметр. И даем сопротивление стене из камня в 70% и хп в 1200
 
-EDIT: `code/modules/projectiles/projectile.dm` : Меняем систему лежания и попадания по лежачим и стоячи
+BALANCE_CAN_HIT_TARGET
+- EDIT: `code/modules/projectiles/projectile.dm` : Меняем систему лежания и попадания по лежачим и стоячи
 
 EDIT: `code/modules/modular_computers/file_system/programs/radar.dm` : ставим заглушку, чтобы не пользовались планшетиком с радарчиком, пока кодеры не придумают иной вариант. Главное не забыть
 
@@ -125,6 +139,7 @@ ADD: `code/modules/mob/living/carbon/human/species_types/lizardpeople.dm` : Да
 ADD: `code/modules/mob/living/carbon/human/species_types/vox.dm` : Даём воксам резист к холоду на 20%
 
 ADD: `code/game/objects/items/storage/belt.dm` : Добавлен новый филтр крови в возможность грузить в мед разгрузку
+ADD: `code/game/objects/items/storage/belt.dm` : Добавлена вариация пояса медика без гипоспрея МК2 версии
 
 CELADON_BALANCE_CHISEL
 ADD: `code/game/objects/items/tools/chisel.dm` : видоизменяем долото делая его нормальным
@@ -135,6 +150,15 @@ ADD: `code/modules/mob/dead/new_player/ship_select.dm` : Добавляем со
 CELADON_BALANCE_VENDING
 EDIT: `code/modules/vending/_vending.dm` : Убираем автоматическое сбрасывание к платным покупкам у всех торрговых автоматах что НЕ относятся к руинкам
 
+SLOW_SPEED_CRAWLING
+- EDIT: `code/__DEFINES/combat.dm`
+
+TWEAK_PACIFIST_TRAIT
+- `code/_onclick/item_attack.dm`				: Пацифисты не хотят вредить живым существам, но могут бить неживые объекты
+- `code/modules/mob/living/carbon/carbon.dm` 	: Пацифисты не могут бросаться предметами
+OUTPOST_MED_BALANCE
+- `code\modules\vending\medical_wall.dm` : изменены цены на товары
+- `code\modules\reagents\reagent_containers\hypospray.dm`, `code\game\objects\items\stacks\tape.dm`, `code\game\objects\items\storage\firstaid.dm`, `code\game\objects\items\stacks\medical.dm` : изменены цены на атропин и т.д. в оутпост меде
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

@@ -54,8 +54,8 @@
 		/obj/item/attachment/laser_sight,
 		/obj/item/attachment/rail_light,
 		/obj/item/attachment/bayonet,
-		/obj/item/attachment/gun,
-		/obj/item/attachment/ammo_counter
+		/obj/item/attachment/ammo_counter,
+		/obj/item/attachment/gun
 	)
 	slot_available = list(
 		ATTACHMENT_SLOT_MUZZLE = 1,
@@ -147,7 +147,7 @@
 			chambered = null
 		else if(empty_chamber)
 			chambered = null
-	if (chamber_next_round && (magazine?.max_ammo > 1) && !condition_check(from_firing, shooter))
+	if (chamber_next_round && (magazine?.max_ammo >= 1) && !condition_check(from_firing, shooter))
 		chamber_round()
 	SEND_SIGNAL(src, COMSIG_GUN_CHAMBER_PROCESSED)
 
@@ -175,6 +175,11 @@
 		else
 			chambered = magazine.get_round(keep_bullet || bolt_type == BOLT_TYPE_NO_BOLT)
 		if (bolt_type != BOLT_TYPE_OPEN)
+			// [CELADON-ADD] - FIXES_PHYSICS_AMMO_CASING - Останавливаем физику гильз
+			var/datum/component/movable_physics/physics = chambered.GetComponent(/datum/component/movable_physics)
+			if(physics)
+				qdel(physics)
+			// [/CELADON-ADD]
 			chambered.forceMove(src)
 
 ///updates a bunch of racking related stuff and also handles the sound effects and the like

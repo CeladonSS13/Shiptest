@@ -28,7 +28,8 @@ Difficulty: Extremely Hard
 	speed = 20
 	move_to_delay = 20
 	ranged = TRUE
-	mob_trophy = /obj/item/mob_trophy/ice_block_talisman
+	//mob_trophy = /obj/item/mob_trophy/ice_block_talisman		// [CELADON-EDIT] - RETURN_CONTENT_CRUSHER_TROPHY
+	crusher_loot = /obj/item/crusher_trophy/ice_block_talisman	// [/CELADON-EDIT]
 	loot = list(/obj/effect/decal/remains/plasma)
 	wander = FALSE
 	del_on_death = TRUE
@@ -257,7 +258,7 @@ Difficulty: Extremely Hard
 	for(var/mob/living/L in viewers(src))
 		shake_camera(L, 3, 2)
 	playsound(src, 'sound/effects/meteorimpact.ogg', 100, TRUE)
-	setMovetype(movement_type | FLYING)
+	ADD_TRAIT(src, TRAIT_MOVE_FLYING, FROSTMINER_ENRAGE_TRAIT)
 	enraging = FALSE
 	adjustHealth(-maxHealth)
 

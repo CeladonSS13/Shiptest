@@ -37,7 +37,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/cargo)
 "ai" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -90,7 +90,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/cargo)
 "aA" = (
 /obj/effect/turf_decal/spline/fancy/opaque/black{
@@ -463,7 +463,7 @@
 /obj/structure/cable{
 	icon_state = "5-9"
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/cargo)
 "cF" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -635,7 +635,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/hallway/port)
 "dq" = (
 /turf/closed/wall/mineral/titanium/survival,
@@ -669,7 +669,21 @@
 /turf/open/floor/plating,
 /area/ship/cargo)
 "dD" = (
-/obj/machinery/vending/boozeomat/syndicate_access,
+/obj/item/kitchen/rollingpin,
+/obj/item/reagent_containers/condiment/sugar,
+/obj/item/reagent_containers/condiment/sugar,
+/obj/structure/closet/secure_closet/freezer/kitchen,
+/obj/item/storage/fancy/egg_box,
+/obj/item/storage/fancy/egg_box,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/storage/box/ingredients/carnivore,
+/obj/item/storage/box/ingredients/vegetarian,
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/milk,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/green,
 /area/ship/crew/canteen)
@@ -923,7 +937,7 @@
 /area/ship/security)
 "eQ" = (
 /obj/structure/barricade/sandbags,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "eR" = (
 /obj/structure/grille,
@@ -990,7 +1004,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/cargo)
 "fH" = (
 /turf/closed/wall/mineral/wood,
@@ -1050,6 +1064,9 @@
 	dir = 5
 	},
 /obj/item/kirbyplants/dead,
+/obj/structure/railing{
+	dir = 5
+	},
 /turf/open/floor/wood/ebony,
 /area/ship/crew/canteen)
 "fT" = (
@@ -1235,7 +1252,7 @@
 "gL" = (
 /obj/structure/sauna_oven_steam,
 /obj/item/reagent_containers/food/drinks/waterbottle/large,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/cargo)
 "gQ" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1245,14 +1262,14 @@
 /obj/structure/barricade/wooden/crude,
 /obj/structure/barricade/wooden,
 /obj/item/shard,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/cargo)
 "gU" = (
 /turf/open/floor/carpet/green,
 /area/ship/hallway/aft)
 "gW" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/security)
 "gX" = (
 /obj/structure/catwalk,
@@ -1502,10 +1519,12 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/machinery/camera/autoname{
-	dir = 5
-	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/vending/boozeomat/syndicate_access{
+	dir = 4;
+	pixel_x = -26;
+	density = 0
+	},
 /turf/open/floor/wood{
 	icon_state = "wood-broken7";
 	color = "#332521"
@@ -1615,7 +1634,7 @@
 /obj/structure/sign/poster/elysium/logo{
 	pixel_x = 27
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "iW" = (
 /obj/effect/turf_decal/industrial/caution/red{
@@ -1639,7 +1658,7 @@
 	icon_state = "0-4"
 	},
 /obj/structure/frame,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/security/armory)
 "je" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal{
@@ -1699,6 +1718,9 @@
 	dir = 4
 	},
 /obj/structure/curtain/cloth/elysium,
+/obj/machinery/camera/autoname{
+	dir = 5
+	},
 /turf/open/floor/wood/ebony,
 /area/ship/crew/canteen)
 "jr" = (
@@ -2095,7 +2117,7 @@
 	},
 /obj/item/clothing/mask/cigarette/rollie/cannabis,
 /obj/effect/decal/cleanable/plastic,
-/obj/item/clothing/head/helmet/m10_elysium,
+/obj/item/clothing/head/helmet/m10/elysium,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "lD" = (
@@ -2215,7 +2237,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 1
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "mp" = (
 /turf/template_noop,
@@ -2283,7 +2305,7 @@
 	},
 /obj/effect/decal/cleanable/glass,
 /obj/effect/decal/cleanable/glass,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/security)
 "mS" = (
 /obj/structure/cable/yellow{
@@ -2383,23 +2405,22 @@
 /obj/effect/turf_decal/corner/transparent/green/half{
 	dir = 8
 	},
-/obj/item/card/id/elysium/assistant,
-/obj/item/card/id/elysium/assistant,
-/obj/item/card/id/elysium/assistant,
-/obj/item/card/id/elysium/assistant,
-/obj/item/card/id/elysium/assistant,
-/obj/item/card/id/elysium/security,
-/obj/item/card/id/elysium/security,
-/obj/item/card/id/elysium/security,
-/obj/item/card/id/elysium/security,
-/obj/item/card/id/elysium/security,
-/obj/item/card/id/elysium_Bartender,
-/obj/item/card/id/elysium,
-/obj/item/card/id/elysium,
-/obj/item/card/id/elysium,
-/obj/item/card/id/elysium,
-/obj/item/card/id/elysium,
-/obj/item/card/id/elysium,
+/obj/item/card/id/cel/elysium,
+/obj/item/card/id/cel/elysium,
+/obj/item/card/id/cel/elysium,
+/obj/item/card/id/cel/elysium,
+/obj/item/card/id/cel/elysium,
+/obj/item/card/id/cel/elysium/crew/security,
+/obj/item/card/id/cel/elysium/crew/security,
+/obj/item/card/id/cel/elysium/crew/security,
+/obj/item/card/id/cel/elysium/crew/security,
+/obj/item/card/id/cel/elysium/crew/security,
+/obj/item/card/id/cel/elysium,
+/obj/item/card/id/cel/elysium,
+/obj/item/card/id/cel/elysium,
+/obj/item/card/id/cel/elysium,
+/obj/item/card/id/cel/elysium,
+/obj/item/card/id/cel/elysium,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "nq" = (
@@ -2479,7 +2500,7 @@
 /obj/item/stack/cable_coil/cut/yellow,
 /obj/effect/decal/cleanable/glass,
 /obj/effect/decal/cleanable/glass,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/security/armory)
 "ow" = (
 /obj/effect/turf_decal/corner/transparent/green/half,
@@ -2640,7 +2661,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "pj" = (
 /obj/effect/turf_decal/siding/wood/corner{
@@ -2811,7 +2832,7 @@
 	},
 /obj/machinery/light/directional/west,
 /obj/item/stack/ore/salvage/scrapmetal/ten,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/hallway/port)
 "pI" = (
 /obj/effect/turf_decal/elysium_logo/two_one{
@@ -2831,7 +2852,7 @@
 /obj/item/grenade/firecracker,
 /obj/item/grenade/c4,
 /obj/item/clothing/mask/balaclava,
-/obj/item/clothing/head/helmet/m10_elysium,
+/obj/item/clothing/head/helmet/m10/elysium,
 /obj/item/clothing/suit/armor/vest/elysium{
 	pixel_y = 2;
 	pixel_x = 4
@@ -2840,7 +2861,7 @@
 	pixel_y = 2;
 	pixel_x = 4
 	},
-/obj/item/clothing/head/helmet/m10_elysium,
+/obj/item/clothing/head/helmet/m10/elysium,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "pO" = (
@@ -2885,7 +2906,7 @@
 /obj/item/grenade/firecracker,
 /obj/item/grenade/c4,
 /obj/item/clothing/mask/balaclava,
-/obj/item/clothing/head/helmet/m10_elysium,
+/obj/item/clothing/head/helmet/m10/elysium,
 /obj/item/clothing/suit/armor/vest/elysium{
 	pixel_y = 2;
 	pixel_x = 4
@@ -2915,7 +2936,7 @@
 /area/ship/hallway/port)
 "qo" = (
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "qp" = (
 /obj/effect/turf_decal/box,
@@ -3024,22 +3045,8 @@
 /area/ship/science/ai_chamber)
 "qP" = (
 /obj/machinery/light/directional/north,
-/obj/item/kitchen/rollingpin,
-/obj/item/reagent_containers/condiment/sugar,
-/obj/item/reagent_containers/condiment/sugar,
-/obj/structure/closet/secure_closet/freezer/kitchen,
-/obj/item/storage/fancy/egg_box,
-/obj/item/storage/fancy/egg_box,
-/obj/item/reagent_containers/condiment/flour,
-/obj/item/reagent_containers/condiment/flour,
-/obj/item/reagent_containers/condiment/flour,
-/obj/item/storage/box/ingredients/carnivore,
-/obj/item/storage/box/ingredients/vegetarian,
-/obj/item/reagent_containers/condiment/milk,
-/obj/item/reagent_containers/condiment/milk,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/oven,
 /turf/open/floor/carpet/green,
 /area/ship/crew/canteen)
 "qQ" = (
@@ -3320,7 +3327,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/gibspawner/human/bodypartless,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "sL" = (
 /obj/structure/cable{
@@ -3443,7 +3450,7 @@
 /area/ship/hallway/central)
 "tp" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/hallway/port)
 "tq" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
@@ -3482,7 +3489,7 @@
 /area/ship/hallway/port)
 "tO" = (
 /obj/item/stack/cable_coil/cut/yellow,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "tR" = (
 /turf/closed/wall/mineral/titanium/survival,
@@ -3805,7 +3812,7 @@
 "wi" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/stack/ore/salvage/scrapmetal/ten,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/engine)
 "wm" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3835,7 +3842,7 @@
 /mob/living/simple_animal/pet/mothroach{
 	name = "Shaitan"
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/security)
 "wz" = (
 /obj/structure/cable/yellow{
@@ -3861,7 +3868,7 @@
 /area/ship/engineering)
 "wB" = (
 /obj/effect/decal/cleanable/blood/gibs/up,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "wF" = (
 /obj/effect/turf_decal/industrial/warning{
@@ -4023,7 +4030,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "xf" = (
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/security)
 "xg" = (
 /obj/effect/turf_decal/elysium_logo/one_one{
@@ -4056,7 +4063,7 @@
 	icon_state = "2-8"
 	},
 /obj/item/stack/ore/salvage/scrapmetal/ten,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "xo" = (
 /obj/structure/cable{
@@ -4133,7 +4140,7 @@
 /area/ship/hallway/central)
 "xF" = (
 /obj/item/stack/ore/salvage/scrapmetal/ten,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/security/armory)
 "xH" = (
 /obj/machinery/door/poddoor{
@@ -4264,7 +4271,7 @@
 /obj/effect/decal/cleanable/oil,
 /obj/item/clothing/head/bandana/elysium/green,
 /obj/item/clothing/shoes/wheelys,
-/obj/item/clothing/head/helmet/m10_elysium,
+/obj/item/clothing/head/helmet/m10/elysium,
 /obj/item/clothing/head/bandana/elysium/white,
 /obj/item/clothing/head/bandana/elysium/black,
 /obj/item/clothing/suit/apparel/black,
@@ -4389,7 +4396,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/cargo)
 "yX" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -4429,7 +4436,7 @@
 	dir = 10;
 	id = "khalifat_turrets"
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/bridge)
 "zc" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -4576,7 +4583,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "zS" = (
 /obj/structure/sign/directions/medical{
@@ -4595,7 +4602,7 @@
 	pixel_x = -2;
 	pixel_y = 12
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "zZ" = (
 /obj/effect/turf_decal/corner/opaque/orange/three_quarters{
@@ -4640,7 +4647,7 @@
 /area/ship/engineering/atmospherics)
 "Aj" = (
 /obj/structure/catwalk,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "Ao" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -4722,7 +4729,7 @@
 /area/ship/cargo)
 "AB" = (
 /obj/item/stack/ore/salvage/scrapmetal/ten,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "AK" = (
 /obj/structure/chair/comfy/shuttle{
@@ -4796,7 +4803,7 @@
 /area/ship/cargo)
 "Bh" = (
 /obj/effect/gibspawner/human/bodypartless,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "Bi" = (
 /obj/effect/turf_decal/borderfloorblack{
@@ -4822,7 +4829,7 @@
 /obj/item/grenade/firecracker,
 /obj/item/grenade/c4,
 /obj/item/clothing/mask/balaclava,
-/obj/item/clothing/head/helmet/m10_elysium,
+/obj/item/clothing/head/helmet/m10/elysium,
 /obj/item/clothing/suit/armor/vest/elysium{
 	pixel_y = 2;
 	pixel_x = 4
@@ -4897,7 +4904,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/bedsheet/elysium,
 /obj/item/storage/book/bible/koran,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/security)
 "BL" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -5142,7 +5149,7 @@
 "CO" = (
 /obj/structure/catwalk,
 /obj/structure/lattice,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "CP" = (
 /obj/machinery/light/directional/east,
@@ -5156,12 +5163,12 @@
 /obj/item/grenade/firecracker,
 /obj/item/grenade/c4,
 /obj/item/clothing/mask/balaclava,
-/obj/item/clothing/head/helmet/m10_elysium,
+/obj/item/clothing/head/helmet/m10/elysium,
 /obj/item/clothing/suit/armor/vest/elysium{
 	pixel_y = 2;
 	pixel_x = 4
 	},
-/obj/item/clothing/head/helmet/m10_elysium,
+/obj/item/clothing/head/helmet/m10/elysium,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "CQ" = (
@@ -5255,7 +5262,7 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/hallway/port)
 "Dh" = (
 /obj/machinery/light/directional/north,
@@ -5357,7 +5364,7 @@
 "DB" = (
 /obj/effect/turf_decal/steeldecal/steel_decals8,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/security)
 "DF" = (
 /obj/structure/cable/yellow{
@@ -5401,7 +5408,7 @@
 /area/ship/engineering/communications)
 "DQ" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "DW" = (
 /obj/effect/decal/cleanable/ash/large,
@@ -5479,7 +5486,7 @@
 /obj/structure/catwalk,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/glass,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/security)
 "ED" = (
 /obj/effect/turf_decal/corner/opaque/orange{
@@ -5512,7 +5519,7 @@
 	icon_state = "1-4"
 	},
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "EH" = (
 /obj/structure/window/fulltile,
@@ -5573,6 +5580,11 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/microwave{
+	pixel_y = 7;
+	pixel_x = -1
+	},
+/obj/structure/table/wood,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/canteen)
 "Fc" = (
@@ -5858,7 +5870,7 @@
 	icon_state = "2-8"
 	},
 /obj/structure/barricade/sandbags,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "Gv" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -5927,11 +5939,11 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "GG" = (
 /obj/structure/sign/plaques/kiddie/badger,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/cargo)
 "GH" = (
 /obj/effect/turf_decal/corner/transparent/bar/diagonal,
@@ -6157,7 +6169,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/barricade/sandbags,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "HR" = (
 /obj/effect/gibspawner/human/bodypartless,
@@ -6231,14 +6243,11 @@
 /turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/ship/engineering/engine)
 "Ii" = (
-/obj/structure/table/reinforced,
-/obj/machinery/microwave{
-	pixel_y = 4
-	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/griddle,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/canteen)
 "Ik" = (
@@ -6338,7 +6347,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/clothing/head/bandana/elysium/green,
 /obj/item/clothing/shoes/wheelys,
-/obj/item/clothing/head/helmet/m10_elysium,
+/obj/item/clothing/head/helmet/m10/elysium,
 /obj/item/clothing/head/bandana/elysium/white,
 /obj/item/clothing/head/bandana/elysium/black,
 /obj/item/clothing/suit/apparel/black,
@@ -6768,7 +6777,7 @@
 /area/ship/hallway/port)
 "KR" = (
 /obj/effect/decal/cleanable/blood/gibs,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "KU" = (
 /obj/structure/cable/yellow{
@@ -6930,7 +6939,7 @@
 	req_ship_access = 1;
 	req_access_txt = null
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/security)
 "ML" = (
 /obj/machinery/door/poddoor{
@@ -7148,7 +7157,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/hallway/port)
 "NX" = (
 /obj/machinery/atmospherics/pipe/simple/purple/visible,
@@ -7221,7 +7230,7 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/medical)
 "Op" = (
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "Ot" = (
 /obj/machinery/shieldgen{
@@ -7318,7 +7327,7 @@
 /obj/structure/bed,
 /obj/item/bedsheet/elysium,
 /obj/item/storage/book/bible/koran,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/security)
 "OZ" = (
 /obj/machinery/atmospherics/pipe/simple/purple/visible,
@@ -7348,7 +7357,7 @@
 "Pa" = (
 /obj/effect/decal/cleanable/glass,
 /obj/machinery/autolathe/hacked,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/security)
 "Pb" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -7623,7 +7632,7 @@
 /obj/effect/decal/cleanable/oil,
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/crude,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/cargo)
 "QD" = (
 /obj/machinery/door/window/eastright{
@@ -7664,14 +7673,14 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "QR" = (
 /obj/structure/bed,
 /obj/machinery/light/directional/east,
 /obj/item/bedsheet/elysium,
 /obj/item/storage/book/bible/koran,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/security)
 "QT" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -7748,7 +7757,7 @@
 /obj/machinery/atmospherics/components/unary/outlet_injector/layer4{
 	dir = 1
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "Ru" = (
 /obj/machinery/camera/autoname{
@@ -7951,7 +7960,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/hallway/aft)
 "Sp" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible,
@@ -8128,7 +8137,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/security)
 "Tn" = (
 /obj/structure/cable/yellow{
@@ -8184,7 +8193,7 @@
 /area/ship/engineering/communications)
 "TC" = (
 /obj/machinery/door/airlock/hatch,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/cargo)
 "TE" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -8268,7 +8277,7 @@
 	},
 /obj/effect/decal/cleanable/glass,
 /obj/item/stack/cable_coil/cut/yellow,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/security/armory)
 "Uf" = (
 /obj/item/wallframe/extinguisher_cabinet{
@@ -8468,7 +8477,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/stack/ore/salvage/scrapmetal/ten,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/cargo)
 "Vl" = (
 /obj/structure/catwalk,
@@ -8505,7 +8514,7 @@
 	dir = 8
 	},
 /obj/item/clothing/mask/balaclava,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/cargo)
 "VA" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -8629,7 +8638,7 @@
 	pixel_x = 20;
 	pixel_y = 11
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/hallway/port)
 "VZ" = (
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer2,
@@ -8705,7 +8714,7 @@
 	dir = 8;
 	pixel_y = 11
 	},
-/obj/item/clothing/head/helmet/m10_elysium,
+/obj/item/clothing/head/helmet/m10/elysium,
 /obj/machinery/power/port_gen/pacman,
 /obj/item/stack/sheet/mineral/plasma/ten,
 /obj/structure/cable/yellow{
@@ -8760,7 +8769,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "WK" = (
 /obj/effect/turf_decal/corner/opaque/orange{
@@ -8938,7 +8947,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/engineering/atmospherics)
 "Yc" = (
 /obj/structure/catwalk,
@@ -9050,7 +9059,7 @@
 /obj/effect/turf_decal/steeldecal/steel_decals_central2{
 	dir = 1
 	},
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/security)
 "Yy" = (
 /obj/machinery/light/directional/west,
@@ -9221,7 +9230,7 @@
 	pixel_x = 32
 	},
 /obj/structure/crate_shelf,
-/turf/open/floor/plating/wasteplanet/rust,
+/turf/open/floor/plating/rust,
 /area/ship/hallway/port)
 "Zh" = (
 /obj/machinery/porta_turret/ship/elysium{

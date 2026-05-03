@@ -118,6 +118,7 @@
 	stock_max = 3
 	availability_prob = 50
 
+/* // [CELADON-REMOVE] - Никто в жизни это не купит намеренно
 /datum/blackmarket_item/clothing/degraded_armor_set
 	name = "Clearance Bin Armor Set"
 	desc = "Looking to protect yourself, but on a tight budget? These previously used vest and helmets served their former owners well! (May they rest in peace.)"
@@ -136,6 +137,7 @@
 	new /obj/item/clothing/head/helmet/old(B)
 	new /obj/item/clothing/suit/armor/vest/old(B)
 	return B
+*/ // [/CELADON-REMOVE]
 
 /datum/blackmarket_item/clothing/camo_set
 	name = "Camo Set"
@@ -153,7 +155,7 @@
 	B.name = "Worn Duffelbag"
 	B.desc = "A beat up looking dufflebag."
 	new /obj/item/storage/belt/military(B)
-	new /obj/item/clothing/head/helmet/bulletproof/m10(B)
+	new /obj/item/clothing/head/helmet/m10(B)
 	new /obj/item/clothing/under/rank/security/officer/camo(B)
 	return B
 
@@ -212,8 +214,8 @@
 	return B
 
 /datum/blackmarket_item/clothing/gezena_armor
-	name = "Raksha-Plating vest"
-	desc = "Genuine armor vests used by the PGF Marine Corp. If a military guy in a cape comes by, play dumb."
+	name = "Gezenan Composite Armor Set"
+	desc = "A genuine set of composite body armor used by the PGF Marine Corps. We even tossed in one of their little mask thingies. If a military guy in a cape comes by, play dumb."
 	item =  /obj/item/storage/backpack/duffelbag/sec
 
 	cost_min = 750
@@ -227,6 +229,8 @@
 	B.desc = "A beat up looking duffel with a frayed embroided nametag."
 	new /obj/item/clothing/suit/armor/gezena/marine(B)
 	new /obj/item/clothing/head/helmet/gezena(B)
+	new /obj/item/clothing/mask/breath/pgfmask(B)
+	new /obj/item/clothing/glasses/sunglasses/pgf(B)
 	return B
 
 /datum/blackmarket_item/clothing/full_spacesuit_set
@@ -261,15 +265,12 @@
 	var/obj/item/storage/backpack/duffelbag/syndie/B = ..()
 	B.name = "Spacesuit Duffelbag"
 	B.desc = "It has a Coalition logo stamped on the front."
-	var/suit_color = pick(list("white-red", "blue", "beige", "worn", "worn_surplus", "yellow", "surplus"))
+	var/suit_color = pick(list("white_red", "blue", "beige", "worn", "worn_surplus", "yellow", "surplus"))
 
 	switch(suit_color)
 		if("white_red")
 			new /obj/item/clothing/head/helmet/space/syndicate/white_red(B)
 			new /obj/item/clothing/suit/space/syndicate/white_red(B)
-		if("blue")
-			new /obj/item/clothing/head/helmet/space/syndicate/blue(B)
-			new /obj/item/clothing/suit/space/syndicate/blue(B)
 		if("beige")
 			new /obj/item/clothing/head/helmet/space/syndicate/ngr(B)
 			new /obj/item/clothing/suit/space/syndicate/ngr(B)
@@ -348,6 +349,26 @@
 	cost_max = 2000
 	stock_max = 3
 	availability_prob = 40
+
+/datum/blackmarket_item/clothing/old_blood_red
+	name = "Damaged Blood-Red Hardsuit"
+	desc = "Don't even know where we got this thing, but it is so damaged beyond repair I just gotta get rid of it. We'll give it to ya cheap, isn't even EVA-worthy."
+	item = /obj/item/clothing/suit/space/hardsuit/syndi/old
+
+	cost_min = 800
+	cost_max = 1500
+	stock_max = 1
+	availability_prob = 40
+
+/datum/blackmarket_item/clothing/stealth_hardsuit
+	name = "INF-95 Tactical Hardsuit"
+	desc = "My friend recently died, bummer right? Well not actually, because I went through his garage and looted tons'a shit! Turns out, he's had this ANTIQUE ICW HARDSUIT sitting about! I dont even know jack about it, but it weighs like nothing and has night vision to boot."
+	item = /obj/item/clothing/suit/space/hardsuit/stealth
+
+	cost_min = 4000
+	cost_max = 5500
+	stock_max = 1
+	availability_prob = 20
 
 /datum/blackmarket_item/clothing/thermal_eyepatch
 	name = "Thermal Eyepatch"

@@ -637,11 +637,17 @@
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 8
 	},
-/obj/item/reagent_containers/food/drinks/shaker{
-	pixel_x = -6;
-	pixel_y = 4
+/obj/item/cutting_board{
+	pixel_x = 3
 	},
-/obj/item/reagent_containers/glass/rag,
+/obj/item/kitchen/rollingpin{
+	pixel_y = -6;
+	pixel_x = 9
+	},
+/obj/item/melee/knife/butcher{
+	pixel_x = -10;
+	pixel_y = 13
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "fH" = (
@@ -1193,19 +1199,8 @@
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 8
 	},
-/obj/structure/table/reinforced,
-/obj/item/melee/knife/butcher{
-	pixel_x = -10;
-	pixel_y = 13
-	},
 /obj/machinery/light/directional/west,
-/obj/item/cutting_board{
-	pixel_x = 3
-	},
-/obj/item/kitchen/rollingpin{
-	pixel_y = -6;
-	pixel_x = 9
-	},
+/obj/machinery/deepfryer,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "lk" = (
@@ -1505,6 +1500,15 @@
 	},
 /turf/open/floor/wood,
 /area/ship/crew/dorm/dormfive)
+"nV" = (
+/obj/structure/table/wood/reinforced,
+/obj/item/reagent_containers/food/drinks/shaker{
+	pixel_x = -6;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/glass/rag,
+/turf/open/floor/wood,
+/area/ship/crew/canteen)
 "nX" = (
 /obj/structure/frame/machine,
 /obj/item/stack/cable_coil/random/five,
@@ -1978,24 +1982,15 @@
 /turf/open/floor/plasteel/white,
 /area/ship/crew/toilet)
 "rq" = (
-/obj/structure/table/reinforced,
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 8
 	},
-/obj/structure/sink/chem{
-	dir = 1;
-	pixel_y = 4;
-	pixel_x = 2
-	},
-/obj/structure/sink/chem{
-	dir = 1;
-	pixel_y = -4;
-	pixel_x = 2
-	},
 /obj/machinery/light/directional/west,
+/obj/machinery/microwave,
+/obj/structure/table/reinforced,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "rs" = (
@@ -2225,13 +2220,13 @@
 /turf/open/floor/wood,
 /area/ship/crew/dorm/dormfive)
 "tE" = (
-/obj/machinery/deepfryer,
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 8
 	},
+/obj/machinery/oven,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "tF" = (
@@ -2613,8 +2608,8 @@
 "wS" = (
 /obj/item/storage/box/donkpockets/donkpocketberry,
 /obj/item/storage/cans/sixsoda,
-/obj/item/reagent_containers/food/drinks/beer/light,
-/obj/item/reagent_containers/food/drinks/beer/light,
+/obj/item/reagent_containers/food/drinks/mead,
+/obj/item/reagent_containers/food/drinks/mead,
 /obj/item/storage/box/donkpockets{
 	pixel_x = -4;
 	pixel_y = 5
@@ -2829,7 +2824,7 @@
 /obj/item/clothing/suit/jacket,
 /obj/item/clothing/suit/hawaiian,
 /obj/item/clothing/suit/toggle/suspenders/gray,
-/obj/item/clothing/suit/toggle/lawyer/burgundy,
+/obj/item/clothing/suit/lawyer/burgundy,
 /obj/item/clothing/under/dress/striped,
 /obj/item/clothing/under/pants/khaki,
 /obj/item/clothing/shoes/laceup,
@@ -3826,6 +3821,13 @@
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 8
 	},
+/obj/item/storage/bag/tray/cafeteria{
+	pixel_y = -3
+	},
+/obj/item/storage/bag/tray/cafeteria,
+/obj/item/storage/bag/tray/cafeteria{
+	pixel_y = 3
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "Fg" = (
@@ -4216,10 +4218,6 @@
 	pixel_x = 5;
 	pixel_y = 8
 	},
-/obj/item/reagent_containers/glass/bottle{
-	list_reagents = list(/datum/reagent/medicine/thializid=30);
-	name = "thializid bottle"
-	},
 /obj/item/reagent_containers/syringe,
 /obj/effect/turf_decal/borderfloorwhite{
 	dir = 9
@@ -4433,12 +4431,10 @@
 	dir = 8
 	},
 /obj/structure/table/reinforced,
-/obj/item/storage/bag/tray/cafeteria{
-	pixel_y = -3
-	},
-/obj/item/storage/bag/tray/cafeteria,
-/obj/item/storage/bag/tray/cafeteria{
-	pixel_y = 3
+/obj/structure/sink/chem{
+	dir = 1;
+	pixel_y = -4;
+	pixel_x = 2
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
@@ -4621,7 +4617,7 @@
 /area/ship/crew/cryo)
 "Ky" = (
 /obj/structure/table,
-/obj/item/trash/plate,
+/obj/item/trash/chips,
 /obj/item/food/pancakes/chocolatechip{
 	pixel_y = 7
 	},
@@ -4832,8 +4828,6 @@
 /turf/open/floor/wood,
 /area/ship/crew/canteen)
 "Mi" = (
-/obj/structure/table/reinforced,
-/obj/machinery/microwave,
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 4
 	},
@@ -4843,6 +4837,7 @@
 /obj/structure/sign/poster/official/moth{
 	pixel_x = -32
 	},
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "Mn" = (
@@ -5366,7 +5361,7 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/storage)
 "QR" = (
-/obj/machinery/vending/wallmed{
+/obj/machinery/vending/wallmed/ship{
 	pixel_x = 32
 	},
 /obj/effect/turf_decal/corner/opaque/bottlegreen{
@@ -7071,7 +7066,7 @@ Fq
 aA
 DV
 Cd
-Cd
+nV
 Cd
 Cd
 Cd

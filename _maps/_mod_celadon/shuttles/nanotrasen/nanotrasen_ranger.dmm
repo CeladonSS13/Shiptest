@@ -610,7 +610,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/techfloor/hole/right,
-/obj/item/banner/command/mundane{
+/obj/item/banner/nanotrasen/mundane{
 	layer = 3.09
 	},
 /turf/open/floor/plasteel/dark,
@@ -784,7 +784,7 @@
 	pixel_x = -1;
 	pixel_y = -31
 	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_y = 12
 	},
 /obj/item/gun/ballistic/automatic/smg/vector,
@@ -1096,7 +1096,7 @@
 /obj/item/storage/box/handcuffs,
 /obj/item/restraints/legcuffs/bola/energy,
 /obj/item/holosign_creator/security,
-/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer/sec,
 /obj/item/gps{
 	gpstag = "SEC0"
 	},
@@ -2467,15 +2467,15 @@
 /obj/item/stock_parts/cell/gun,
 /obj/item/stock_parts/cell/gun,
 /obj/item/stock_parts/cell/gun,
-/obj/item/ammo_box/magazine/smgm9mm,
-/obj/item/ammo_box/magazine/smgm9mm,
-/obj/item/ammo_box/magazine/smgm9mm,
+/obj/item/ammo_box/magazine/m9mm_expedition,
+/obj/item/ammo_box/magazine/m9mm_expedition,
+/obj/item/ammo_box/magazine/m9mm_expedition,
 /obj/item/storage/box/ammo/c9mm_ap,
 /obj/item/storage/box/ammo/c9mm,
 /obj/structure/sign/nanotrasen/vigilitas{
 	pixel_y = -33
 	},
-/obj/item/ammo_box/magazine/smgm9mm,
+/obj/item/ammo_box/magazine/m9mm_expedition,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "vB" = (
@@ -4172,7 +4172,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/starboard)
 "Mh" = (
-/obj/machinery/computer/apc_control{
+/obj/machinery/computer/monitor{
 	dir = 4;
 	icon_state = "computer-left"
 	},
@@ -5089,7 +5089,7 @@
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/under/rank/security/officer/blueshirt,
 /obj/item/storage/backpack/ert/security,
-/obj/item/reagent_containers/food/drinks/beer,
+/obj/item/reagent_containers/food/drinks/mead,
 /obj/structure/railing{
 	dir = 8;
 	layer = 4.1

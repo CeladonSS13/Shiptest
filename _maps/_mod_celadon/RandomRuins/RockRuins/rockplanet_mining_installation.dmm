@@ -112,7 +112,7 @@
 /area/ruin/rockplanet/mining_base/armory)
 "aE" = (
 /obj/structure/table,
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = 6;
 	pixel_y = 11
 	},
@@ -266,10 +266,6 @@
 /obj/effect/turf_decal/box,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/vein/classfour,
-/obj/machinery/drill/mission/ruin,
-/obj/effect/landmark/mission_poi/main/drill{
-	already_spawned = 1
-	},
 /turf/open/floor/plating/asteroid/rockplanet/wet/cracked,
 /area/ruin/rockplanet/mining_base/rig_two)
 "bC" = (
@@ -1120,7 +1116,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/item/trash/plate{
+/obj/item/trash/chips{
 	pixel_x = -8
 	},
 /turf/open/floor/plasteel/mono,
@@ -1180,8 +1176,8 @@
 	pixel_x = 9;
 	pixel_y = -4
 	},
-/obj/item/gun/energy/laser/empty_cell,
 /obj/machinery/light/directional/east,
+/obj/item/gun/energy/e_gun/e_old,
 /turf/open/floor/plasteel/mono/dark,
 /area/ruin/rockplanet/mining_base/armory)
 "gn" = (
@@ -1479,9 +1475,9 @@
 	pixel_y = -9
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/gun/energy/e_gun/nuclear{
-	pixel_x = -6;
-	pixel_y = 9
+/obj/item/gun/energy/e_gun/e_old/nuclear{
+	pixel_x = -2;
+	pixel_y = 6
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/rockplanet/mining_base/office)
@@ -1683,7 +1679,7 @@
 /area/ruin/rockplanet/mining_base/refinery)
 "jc" = (
 /obj/structure/table,
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = -2;
 	pixel_y = 14
 	},
@@ -1942,7 +1938,7 @@
 /obj/effect/turf_decal/siding{
 	dir = 5
 	},
-/obj/item/trash/plate{
+/obj/item/trash/chips{
 	pixel_x = 4;
 	pixel_y = 5
 	},
@@ -2308,7 +2304,7 @@
 /obj/effect/turf_decal/corner/opaque/white/diagonal{
 	dir = 8
 	},
-/obj/item/reagent_containers/food/drinks/beer/light{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_y = 9;
 	pixel_x = 3
 	},
@@ -2827,7 +2823,7 @@
 /area/ruin/rockplanet/mining_base/refinery)
 "pO" = (
 /obj/structure/table,
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = 6;
 	pixel_y = 11
 	},
@@ -5543,7 +5539,7 @@
 /obj/effect/turf_decal/corner/opaque/white/diagonal{
 	dir = 8
 	},
-/obj/item/reagent_containers/food/drinks/beer/light{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = -5;
 	pixel_y = 6
 	},
@@ -6113,10 +6109,6 @@
 /obj/effect/mob_spawn/human/corpse/ruin/ns_mine_manager,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
-	},
-/obj/effect/landmark/mission_poi/main{
-	already_spawned = 1;
-	mission_index = 2
 	},
 /turf/open/floor/carpet,
 /area/ruin/rockplanet/mining_base/office)
@@ -6799,9 +6791,6 @@
 /obj/structure/flippedtable{
 	dir = 1
 	},
-/obj/item/gun/energy/e_gun/hades{
-	spawn_no_ammo = 1
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -6811,6 +6800,9 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/gibspawner/human/bodypartless,
+/obj/item/gun/energy/e_gun/e_old/hades{
+	spawn_no_ammo = 1
+	},
 /turf/open/floor/plasteel/patterned/rockplanet/lit,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "Mi" = (
@@ -6856,7 +6848,7 @@
 "Mt" = (
 /obj/structure/guncloset,
 /obj/effect/turf_decal/box,
-/obj/item/gun/energy/laser/empty_cell,
+/obj/item/gun/energy/e_gun/e_old,
 /turf/open/floor/plasteel/mono/dark,
 /area/ruin/rockplanet/mining_base/armory)
 "MA" = (
@@ -7345,7 +7337,7 @@
 	pixel_y = 7;
 	pixel_x = -7
 	},
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = -5;
 	pixel_y = 5
 	},

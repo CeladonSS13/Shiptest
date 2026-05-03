@@ -749,7 +749,7 @@
 /area/ship/engineering/engines/port)
 "gg" = (
 /obj/machinery/light/directional/south,
-/obj/structure/table/reinforced,
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/crew/ccommons)
 "gj" = (
@@ -1334,7 +1334,7 @@
 	},
 /obj/item/clothing/under/nanotrasen/security/director,
 /obj/item/clothing/suit/armor/nanotrasen/slim,
-/obj/item/clothing/head/helmet/sec,
+/obj/item/clothing/head/helmet/m10/nanotrasen,
 /obj/item/storage/belt/military,
 /obj/item/clothing/neck/cloak/hos,
 /obj/item/clothing/gloves/combat,
@@ -3305,42 +3305,15 @@
 "yq" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/corner/opaque/neutral/full,
-/obj/item/stock_parts/cell/gun/upgraded{
-	pixel_x = 2;
-	pixel_y = -1
-	},
-/obj/item/stock_parts/cell/gun/upgraded{
-	pixel_x = -3;
-	pixel_y = 6
-	},
-/obj/item/stock_parts/cell/gun/upgraded{
-	pixel_x = -8;
-	pixel_y = -3
-	},
-/obj/item/stock_parts/cell/gun{
-	pixel_x = -3;
-	pixel_y = -1
-	},
-/obj/item/stock_parts/cell/gun{
-	pixel_x = 7;
-	pixel_y = 9
-	},
-/obj/item/stock_parts/cell/gun{
-	pixel_x = 2;
-	pixel_y = 6
-	},
-/obj/item/stock_parts/cell/gun{
-	pixel_x = -7;
-	pixel_y = -4
-	},
-/obj/item/stock_parts/cell/gun{
-	pixel_x = 10;
-	pixel_y = -2
-	},
-/obj/item/stock_parts/cell/gun{
-	pixel_x = -6;
-	pixel_y = 5
-	},
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun/upgraded,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
 /obj/structure/sign/poster/official/ion_carbine{
 	pixel_x = -32;
 	pixel_y = 0
@@ -4205,6 +4178,8 @@
 	pixel_x = -15
 	},
 /obj/structure/table/reinforced,
+/obj/item/cutting_board,
+/obj/item/melee/knife/kitchen,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/crew/ccommons)
 "Dd" = (
@@ -5070,19 +5045,19 @@
 	pixel_x = 0;
 	pixel_y = 0
 	},
-/obj/item/clothing/head/helmet/sec{
+/obj/item/clothing/head/helmet/m10/nanotrasen{
 	pixel_x = -6;
 	pixel_y = 7
 	},
-/obj/item/clothing/head/helmet/sec{
+/obj/item/clothing/head/helmet/m10/nanotrasen{
 	pixel_x = -6;
 	pixel_y = 7
 	},
-/obj/item/clothing/head/helmet/sec{
+/obj/item/clothing/head/helmet/m10/nanotrasen{
 	pixel_x = -6;
 	pixel_y = 7
 	},
-/obj/item/clothing/head/helmet/sec{
+/obj/item/clothing/head/helmet/m10/nanotrasen{
 	pixel_x = -6;
 	pixel_y = 7
 	},
@@ -5264,7 +5239,7 @@
 /obj/item/clothing/suit/armor/nanotrasen/captain/parade,
 /obj/item/storage/belt/sabre,
 /obj/item/clothing/shoes/combat,
-/obj/item/storage/guncase/pistol/miniegun,
+/obj/item/storage/guncase/pistol/miniegun_old,
 /turf/open/floor/plasteel/sepia,
 /area/ship/crew/dorm/captain)
 "JY" = (
@@ -5320,19 +5295,19 @@
 	dir = 4
 	},
 /obj/machinery/light/directional/north,
-/obj/item/gun/ballistic/automatic/pistol/commander{
+/obj/item/gun/ballistic/automatic/pistol/challenger{
 	pixel_x = 1;
 	pixel_y = -2
 	},
-/obj/item/gun/ballistic/automatic/pistol/commander{
+/obj/item/gun/ballistic/automatic/pistol/challenger{
 	pixel_x = 3;
 	pixel_y = -4
 	},
-/obj/item/gun/ballistic/automatic/pistol/commander{
+/obj/item/gun/ballistic/automatic/pistol/challenger{
 	pixel_x = 6;
 	pixel_y = -6
 	},
-/obj/item/gun/energy/e_gun/iot{
+/obj/item/gun/energy/e_gun/e_old/iot{
 	pixel_x = 0;
 	pixel_y = 12
 	},
@@ -6832,8 +6807,8 @@
 /area/ship/crew/office)
 "Vd" = (
 /obj/structure/closet/wall/white/directional/south,
-/obj/item/storage/ration/crayons,
 /obj/structure/table/reinforced,
+/obj/item/storage/ration/crayons,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/crew/ccommons)
 "Ve" = (
@@ -7473,14 +7448,8 @@
 /obj/effect/turf_decal/corner/opaque/neutral/full,
 /obj/machinery/light/directional/north,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/obj/item/gun/energy/e_gun/smg{
-	pixel_x = 0;
-	pixel_y = -2
-	},
-/obj/item/gun/energy/e_gun/smg{
-	pixel_x = 0;
-	pixel_y = 4
-	},
+/obj/item/gun/energy/e_gun/e_old/smg,
+/obj/item/gun/energy/e_gun/e_old/smg,
 /turf/open/floor/vault,
 /area/ship/security/armory)
 "Zu" = (

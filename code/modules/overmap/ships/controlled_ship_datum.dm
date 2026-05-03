@@ -44,7 +44,7 @@
 	/// List of currently-accepted missions.
 	var/list/datum/mission/missions
 	/// The maximum number of currently active missions that a ship may take on.
-	var/max_missions = 2
+	var/max_missions = 3
 
 	/// Manifest list of people on the ship. Indexed by mob REAL NAME. value is JOB INSTANCE
 	var/list/manifest = list()
@@ -291,7 +291,7 @@
 /**
  * Docks to an empty dynamic encounter. Used for intership interaction, structural modifications, and such
  */
-/datum/overmap/ship/controlled/proc/dock_in_empty_space()
+/datum/overmap/ship/controlled/proc/dock_in_empty_space()	// [OVERWRITE] - FIXES_DOCKING -mod_celadon/fixes/code/dock_empty_space_fix.dm
 	var/datum/overmap/dynamic/empty/empty_space = locate() in current_overmap.overmap_container[x][y]
 	if(!empty_space)
 		empty_space = new(list("x" = x, "y" = y), current_overmap)
@@ -381,7 +381,13 @@
 
 /datum/overmap/ship/controlled/proc/get_application(mob/applicant)
 	var/index_key = applicant.client?.holder?.fakekey ? applicant.client.holder.fakekey : applicant.key
-	return LAZYACCESS(applications, ckey(index_key))
+	// [CELADON-EDIT] - FIXES_ADMIN_STEALTH
+	// return LAZYACCESS(applications, ckey(index_key))	// ORIGINAL
+	var/result = LAZYACCESS(applications, ckey(index_key))
+	if(!result && applicant.client?.holder?.fakekey)
+		result = LAZYACCESS(applications, ckey(applicant.key))
+	return result
+	// [/CELADON-EDIT]
 
 /**
  * Bastardized version of GLOB.manifest.manifest_inject, but used per ship.
@@ -403,7 +409,7 @@
 	)
 	LAZYSET(owner_candidates, H.mind, mind_info)
 	H.mind.original_ship = WEAKREF(src)
-	RegisterSignal(H.mind, COMSIG_PARENT_QDELETING, PROC_REF(crew_mind_deleting))
+	RegisterSignal(H.mind, COMSIG_QDELETING, PROC_REF(crew_mind_deleting))
 	if(!owner_mob)
 		set_owner_mob(H)
 
@@ -486,7 +492,7 @@
 /datum/overmap/ship/controlled/proc/crew_mind_deleting(datum/mind/del_mind)
 	SIGNAL_HANDLER
 
-	UnregisterSignal(del_mind, COMSIG_PARENT_QDELETING)
+	UnregisterSignal(del_mind, COMSIG_QDELETING)
 	LAZYREMOVE(owner_candidates, del_mind)
 	if(owner_mind == del_mind)
 		set_owner_mob(get_best_owner_mob())

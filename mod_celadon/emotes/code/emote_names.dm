@@ -177,7 +177,7 @@
 /datum/emote/living/carbon/blink
 	name = EMOTE_CARBON_BLINK
 
-/datum/emote/living/carbon/blink_r
+/datum/emote/living/carbon/blink/blink_r
 	name = EMOTE_CARBON_BLINKR
 
 /datum/emote/living/carbon/cough
@@ -551,6 +551,12 @@
 
 /datum/emote/living/carbon/human/fpurrl
 	name = EMOTE_SPECIES_FPURR
+
+/datum/emote/living/carbon/human/yip
+	name = EMOTE_SPECIES_YIP
+
+/datum/emote/living/carbon/human/fwhine
+	name = EMOTE_SPECIES_FWHINE
 
 /datum/emote/living/carbon/human/waves_k
 	name = EMOTE_SPECIES_WAVES_K

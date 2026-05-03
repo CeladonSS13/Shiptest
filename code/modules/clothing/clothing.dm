@@ -136,6 +136,9 @@
 		to_chat(user, span_notice("You fix the damage on [src] with [cloth]."))
 		return TRUE
 
+	if(istype(tool, /obj/item/toy/crayon/spraycan) && user.a_intent == INTENT_HARM)	// [CELADON-ADD] - Allows coloring clothes with spray can on harm intent
+		return																		// [/CELADON-ADD]
+
 	return ..()
 
 /obj/item/clothing/dropped(mob/user)
@@ -219,7 +222,7 @@
 		else
 			how_cool_are_your_threads += "[src] can store [pockets.max_items] item\s that are [weightclass2text(pockets.max_w_class)] or smaller.\n"
 		if(pockets.quickdraw)
-			how_cool_are_your_threads += "You can quickly remove an item from [src] using Alt-Click.\n"
+			how_cool_are_your_threads += "You can quickly remove an item from [src] using Right-Click.\n"
 		if(pockets.silent)
 			how_cool_are_your_threads += "Adding or removing items from [src] makes no noise.\n"
 		how_cool_are_your_threads += "</span>"
@@ -459,6 +462,14 @@
 		return
 	..()
 
+/obj/item/clothing/under/attack_hand_secondary(mob/user, list/modifiers)
+	toggle()
+	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+
+/obj/item/clothing/under/attackby_secondary(obj/item/weapon, mob/user, params)
+	toggle()
+	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+
 /obj/item/clothing/under/AltClick(mob/user)
 	if(..())
 		return TRUE
@@ -474,13 +485,11 @@
 		if(toggle_rolldown())
 			return TRUE
 
-
 /obj/item/clothing/under/CtrlClick(mob/user)
 	if(..())
 		return 1
 	if(attached_accessory)
 		remove_accessory(user)
-
 
 /obj/item/clothing/under/verb/jumpsuit_rollsleeves()
 	set name = "Roll Up/Down Sleeves"

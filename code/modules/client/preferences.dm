@@ -9,8 +9,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	//non-preference stuff
 	var/muted = 0
-	var/last_ip
-	var/last_id
 
 	//game-preferences
 	var/lastchangelog = ""				//Saved changlog filesize to detect if there was a change
@@ -120,7 +118,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							"frills" = "None",
 							"spines" = "None",
 							"body_markings" = "None",
-							"legs" = "Normal Legs",
 							"moth_wings" = "Plain",
 							"moth_fluff" = "Plain",
 							"moth_markings" = "None",
@@ -142,9 +139,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							"vox_neck_quills" = "Plain",
 							"elzu_horns" = "None",
 							"elzu_tail" = "None",
-							"flavor_text" = "",
-							"body_size" = "Normal"
+							"flavor_text" = ""
 						)
+	var/height_filter = "Normal"
 	var/list/randomise = list(
 							RANDOM_UNDERWEAR = TRUE,
 							RANDOM_UNDERWEAR_COLOR = TRUE,
@@ -155,6 +152,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							RANDOM_BACKPACK = TRUE,
 							RANDOM_JUMPSUIT_STYLE = TRUE,
 							RANDOM_EXOWEAR_STYLE = TRUE,
+							RANDOM_WALLET_STYLE = TRUE,	// [CELADON-ADD] - CELADON_WALLETS
 							RANDOM_HAIRSTYLE = TRUE,
 							RANDOM_HAIR_COLOR = TRUE,
 							RANDOM_FACIAL_HAIRSTYLE = TRUE,
@@ -165,26 +163,37 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/list/friendlyGenders = list(
 							"Male" = "male",
 							"Female" = "female",
-							"Other" = "plural"
+							"Other" = "plural",
+							"None" = "neuter"
 						)
 	var/list/prosthetic_limbs = list(
+							BODY_ZONE_HEAD = PROSTHETIC_NORMAL,
+							BODY_ZONE_CHEST = PROSTHETIC_NORMAL,
 							BODY_ZONE_L_ARM = PROSTHETIC_NORMAL,
 							BODY_ZONE_R_ARM = PROSTHETIC_NORMAL,
 							BODY_ZONE_L_LEG = PROSTHETIC_NORMAL,
-							BODY_ZONE_R_LEG = PROSTHETIC_NORMAL
+							BODY_ZONE_R_LEG = PROSTHETIC_NORMAL,
 						)
 	var/fbp = FALSE
 	var/phobia = "spiders"
 	var/list/alt_titles_preferences = list()
 	var/list/custom_names = list()
 	var/preferred_ai_core_display = "Blue"
-	var/prefered_security_department = SEC_DEPT_RANDOM
 	var/generic_adjective = "Unremarkable"
 	//Quirk list
 	var/list/all_quirks = list()
 
 	//Job preferences 2.0 - indexed by job title , no key or value implies never
 	var/list/job_preferences = list()
+
+	/// Languages this character knows besides their native language.
+	var/list/learned_languages = list()
+
+	/// This character's native language.
+	var/datum/language/native_language = /datum/language/galactic_common
+
+	/// Associated list with language levels of understanding and their point costs.
+	var/static/list/language_level_costs = list(LANGUAGE_UNKNOWN = 0, LANGUAGE_RECOGNIZED = 1, LANGUAGE_FAMILIAR = 2, LANGUAGE_FLUENT = 3)
 
 	// 0 = character settings, 1 = game preferences
 	var/current_tab = 0
@@ -212,9 +221,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/widescreenpref = FALSE
 	///What size should pixels be displayed as? 0 is strech to fit
 	var/pixel_size = 0
-	///What scaling method should we use?
-	var/scaling_method = "distort"
-	var/uplink_spawn_loc = UPLINK_PDA
+	///What scaling method should we use? Distort = Nearest Neighbor
+	var/scaling_method = SCALING_METHOD_DISTORT
 
 	var/list/exp = list()
 	var/list/menuoptions
@@ -231,12 +239,18 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/list/equipped_gear = list()
 	///Gear tab currently being viewed
 	var/gear_tab = "General"
+	// [CELADON-ADD] - CELADON_QOL_LOADOUT
+	///Scroll position in gear menu
+	var/gear_scroll_pos = 0
+	// [/CELADON-ADD]
 
 	var/action_buttons_screen_locs = list()
 	///If we want to broadcast deadchat connect/disconnect messages
 	var/broadcast_login_logout = TRUE
 	///What outfit typepaths we've favorited in the SelectEquipment menu
 	var/list/favorite_outfits = list()
+	///If TRUE, we replace the flash effect from flashes with a solid black screen
+	var/darkened_flash = FALSE
 	var/whois_visible = TRUE
 
 	///The outfit we currently want to preview on our character
@@ -347,6 +361,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dispGender = "Male"
 				else if(gender == FEMALE)
 					dispGender = "Female"
+				else if(gender == NEUTER)
+					dispGender = "None"
 				else
 					dispGender = "Other"
 				dat += "<b>Gender:</b> <a href='byond://?_src_=prefs;preference=gender'>[dispGender]</a>"
@@ -382,7 +398,18 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			dat += "<b>Custom Job Preferences:</b><BR>"
 			dat += "<a href='byond://?_src_=prefs;preference=ai_core_icon;task=input'><b>Preferred AI Core Display:</b> [preferred_ai_core_display]</a><br>"
-			dat += "<a href='byond://?_src_=prefs;preference=sec_dept;task=input'><b>Preferred Security Department:</b> [prefered_security_department]</a><BR></td>"
+
+			dat += "<td><h2>Languages</h2><table>"
+			dat += "<tr><td><b>[get_language_point_balance()]</b> points left.</td></tr>"
+			dat += "<tr><td><a href='byond://?_src_=prefs;preference=native_language;task=input'><b>Native Language: </b>[initial(native_language.name)]</a></td></tr>"
+			if(!learned_languages?.len)
+				init_learned_languages()
+			for(var/datum/language/lang_type as anything in learned_languages)
+				if(lang_type == native_language)
+					continue
+				dat += "<tr><td><b>[initial(lang_type.name)]: </b></td>"
+				dat += "<td><a href='byond://?_src_=prefs;preference=learned_language;task=input;language=[REF(GLOB.language_datum_instances[lang_type])]'>[learned_languages[lang_type]]</a></td></tr>"
+			dat += "<tr><td><a href='byond://?_src_=prefs;preference=reset_languages;task=input'>Reset Languages</a></td></tr></table></td>"
 
 			dat += "</tr></table>"
 
@@ -394,7 +421,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			dat += "<br><b>Outerwear Style:</b><BR><a href ='?_src_=prefs;preference=exo;task=input'>[exowear]</a>"
 
-			dat += "<br><b>Uplink Spawn Location:</b><BR><a href ='?_src_=prefs;preference=uplink_loc;task=input'>[uplink_spawn_loc]</a><BR></td>"
+			dat += "<br><b>Wallet Style:</b><BR><a href ='?_src_=prefs;preference=wallet;task=input'>[wallet]</a>"	// [CELADON-ADD] - CELADON_WALLETS
 
 		if(1) //Character Appearance
 			if(path)
@@ -455,6 +482,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "<a href='byond://?_src_=prefs;preference=toggle_random;random_type=[RANDOM_SKIN_TONE]'>[(randomise[RANDOM_SKIN_TONE]) ? "Lock" : "Unlock"]</A>"
 				dat += "<br>"
 
+			//Height filters
+			if(pref_species.use_height)
+
+				dat += "<h3>Height</h3>"
+
+				dat += "<a href='?_src_=prefs;preference=height_filter;task=input'>[height_filter]</a><BR>"
+
 			// Everyone gets mutant colors now.
 			dat += "<h3>Mutant Colors</h3>"
 
@@ -467,8 +501,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<span style='border: 1px solid #161616; background-color: #[features["ethcolor"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=color_ethereal;task=input'>Change</a><BR>"
 
-
-			if((EYECOLOR in pref_species.species_traits) && !(NOEYESPRITES in pref_species.species_traits))
+			var/obj/item/bodypart/head/spec_head = pref_species.species_limbs[BODY_ZONE_HEAD]
+			if(initial(spec_head.draw_eyes) && initial(spec_head.greyscale_eyes))
 
 				dat += "<h3>Eye Color</h3>"
 				dat += "<span style='border: 1px solid #161616; background-color: #[eye_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=eyes;task=input'>Change</a>"
@@ -588,19 +622,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "<h3>Body Markings</h3>"
 
 				dat += "<a href='byond://?_src_=prefs;preference=body_markings;task=input'>[features["body_markings"]]</a><BR>"
-
-				mutant_category++
-				if(mutant_category >= MAX_MUTANT_ROWS)
-					dat += "</td>"
-					mutant_category = 0
-
-			if("legs" in pref_species.default_features)
-				if(!mutant_category)
-					dat += APPEARANCE_CATEGORY_COLUMN
-
-				dat += "<h3>Legs</h3>"
-
-				dat += "<a href='byond://?_src_=prefs;preference=legs;task=input'>[features["legs"]]</a><BR>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
@@ -1125,22 +1146,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</td>"
 					mutant_category = 0
 
-			if("body_size" in pref_species.default_features)
-				if(!mutant_category)
-					dat += APPEARANCE_CATEGORY_COLUMN
-
-				dat += "<h3>Size</h3>"
-
-				dat += "<a href='byond://?_src_=prefs;preference=body_size;task=input'>[features["body_size"]]</a><BR>"
-
-				mutant_category++
-				if(mutant_category >= MAX_MUTANT_ROWS)
-					dat += "</td>"
-					mutant_category = 0
-
 			if(generic_adjective)
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
+
+			// begin generic adjective
+			if(!mutant_category)
+				dat += APPEARANCE_CATEGORY_COLUMN
 
 			dat += "<h3>Character Adjective</h3>"
 
@@ -1168,9 +1180,23 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			if(mutant_category)
 				dat += "</td>"
 				mutant_category = 0
+
+			var/metal_skin = fbp || pref_species.inherent_biotypes & MOB_ROBOTIC
+			dat += metal_skin ? "<h3>Chassis Customization</h3>" : "<h3>Prosthetic Limbs</h3>"
+			dat += "<a href='byond://?_src_=prefs;preference=fbp'>Full Body Prosthesis: [fbp ? "Yes" : "No"]</a><br>"
+
+			dat += "<a href='byond://?_src_=prefs;preference=toggle_random;random_type=[RANDOM_PROSTHETIC]'>Random Prosthetic: [(randomise[RANDOM_PROSTHETIC]) ? "Yes" : "No"]</a><br>"
+
+			dat += "<table>"
+			for(var/index in prosthetic_limbs)
+				if(!metal_skin && (index == BODY_ZONE_CHEST || index == BODY_ZONE_HEAD))
+					continue
+				var/bodypart_name = parse_zone(index)
+				dat += "<tr><td><b>[bodypart_name]:</b></td>"
+				dat += "<td><a href='byond://?_src_=prefs;preference=limbs;customize_limb=[index]'>[prosthetic_limbs[index]]</a></td></tr>"
 			dat += "</tr></table>"
-			// [CELADON - EDIT] - CELADON_LANIUS
-			//dat += "<h3>Prosthetic Limbs</h3>" [CELADON - EDIT] - ORIGINAL
+			// [CELADON-EDIT] - CELADON_LANIUS
+			//dat += "<h3>Prosthetic Limbs</h3>" // ORIGINAL
 			//dat += "<a href='byond://?_src_=prefs;preference=fbp'>Full Body Prosthesis: [fbp ? "Yes" : "No"]</a><br>"
 
 			//if(!fbp)
@@ -1181,14 +1207,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					//var/bodypart_name = parse_zone(index)
 					//dat += "<tr><td><b>[bodypart_name]:</b></td>"
 					//dat += "<td><a href='?_src_=prefs;preference=limbs;customize_limb=[index]'>[prosthetic_limbs[index]]</a></td></tr>"
-				//dat += "</table><br>" [/CELADON - EDIT] - ORIGINAL END
+				//dat += "</table><br>" [/CELADON-EDIT] - ORIGINAL END
 			if(!istype(pref_species, /datum/species/lanius))
 				dat += "<h3>Prosthetic Limbs</h3>"
 				dat += "<a href='byond://?_src_=prefs;preference=fbp'>Full Body Prosthesis: [fbp ? "Yes" : "No"]</a><br>"
 
 				if(!fbp)
 					dat += "<a href='byond://?_src_=prefs;preference=toggle_random;random_type=[RANDOM_PROSTHETIC]'>Random Prosthetic: [(randomise[RANDOM_PROSTHETIC]) ? "Yes" : "No"]</a><br>"
-
 					dat += "<table>"
 					for(var/index in prosthetic_limbs)
 						var/bodypart_name = parse_zone(index)
@@ -1227,52 +1252,112 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						equipped_gear.Cut(i,i+1)
 
 			dat += "<table align='center' width='100%'>"
-			// [CELADON-EDIT] - CELADON_DONATE
+			// [CELADON-EDIT] - CELADON_DONATE, CELADON_QOL_LOADOUT
 			// dat += "<tr><td colspan=4><center><b>Current loadout usage: [length(equipped_gear)]/[CONFIG_GET(number/max_loadout_items)]</b> \[<a href='byond://?_src_=prefs;preference=gear;clear_loadout=1'>Clear Loadout</a>\] | \[<a href='byond://?_src_=prefs;preference=gear;toggle_loadout=1'>Toggle Loadout</a>\]</center></td></tr>"
-			dat += "<tr><td colspan=4><center><b>Current loadout usage: [length(equipped_gear)]/[max_loadout_items]</b> \[<a href='byond://?_src_=prefs;preference=gear;clear_loadout=1'>Clear Loadout</a>\] | \[<a href='byond://?_src_=prefs;preference=gear;toggle_loadout=1'>Toggle Loadout</a>\]</center></td></tr>"
+			dat += "<tr><td colspan=4 style='padding: 5px;'><div style='text-align: center; background: #2a2a2a; padding: 8px; border-radius: 5px; margin: 5px 0;'><b style='color: #87CEEB;'>Использовано слотов: [length(equipped_gear)]/[max_loadout_items]</b> | <a href='byond://?_src_=prefs;preference=gear;clear_loadout=1' style='color: #FF6B6B; text-decoration: none;'>Очистить</a> | <a href='byond://?_src_=prefs;preference=gear;toggle_loadout=1' style='color: #4ECDC4; text-decoration: none;'>Переключить</a></div></td></tr>"
 			// [/CELADON-EDIT]
-			dat += "<tr><td colspan=4><center><b>"
 
-			var/firstcat = 1
-			for(var/category in GLOB.loadout_categories)
-				if(firstcat)
-					firstcat = 0
-				else
-					dat += " |"
-				if(category == gear_tab)
-					dat += " [span_linkoff("[category]")] "
-				else
-					dat += " <a href='byond://?_src_=prefs;preference=gear;select_category=[category]'>[category]</a> "
-			dat += "</b></center></td></tr>"
+
+
+			// Навигация
+			dat += "<tr><td colspan=4>"
+			dat += generate_loadout_tree_navigation(gear_tab)
+			dat += "</td></tr>"
 
 			var/datum/loadout_category/LC = GLOB.loadout_categories[gear_tab]
-			dat += "<tr><td colspan=3><hr></td></tr>"
-			dat += "<tr><td colspan=3><b><center>[LC.category]</center></b></td></tr>"
-			dat += "<tr><td colspan=3><hr></td></tr>"
+			if(!LC)
+				// Если категория не найдена, выбираем первую доступную
+				for(var/cat_name in GLOB.loadout_categories)
+					gear_tab = cat_name
+					LC = GLOB.loadout_categories[gear_tab]
+					break
 
-			dat += "<tr><td colspan=3><hr></td></tr>"
-			// [CELADON-EDIT] - CELADON_QOL
-			// dat += "<tr><td><b>Name</b></td>" // CELADON-EDIT - ORIGINAL
-			dat += "<tr><td align='middle'><b>Name</b></td>"
-			// [/CELADON-EDIT]
-			dat += "<td><b>Restricted Jobs</b></td>"
-			dat += "<td><b>Description</b></td>"
-			dat += "<tr><td colspan=3><hr></td></tr>"
+			// [CELADON-EDIT] - CELADON_QOL_LOADOUT
+			// dat += "<tr><td colspan=3><hr></td></tr>"
+			// dat += "<tr><td colspan=3><b><center>[LC.category]</center></b></td></tr>"
+			// dat += "<tr><td colspan=3><hr></td></tr>"
+
+			// dat += "<tr><td colspan=3><hr></td></tr>"
+			// dat += "<tr><td><b>Name</b></td>"
+			// dat += "<td><b>Restricted Jobs</b></td>"
+			// dat += "<td><b>Description</b></td></tr>"
+			// dat += "<tr><td colspan=3><hr></td></tr>"	// ORIGINAL
+			dat += "<tr><td colspan=4 style='padding: 5px 0;'><div style='text-align: center; font-weight: bold; font-size: 14px; color: #87CEEB; border-bottom: 1px solid #555; padding-bottom: 3px;'>[LC.category]</div></td></tr>"
+
+			// Сетка предметов
+			dat += "<tr><td colspan=4 style='padding: 0;'>"
+			dat += "<div id='gear-container' style='text-align: left; padding: 10px; max-height: 500px; overflow-y: auto; background: #1a1a1a; border: 1px solid #333; border-radius: 5px;' onscroll='localStorage.setItem(\"gearScrollPos\", this.scrollTop);'>"
+			// [/CELADON-ADD]
 			for(var/gear_name in LC.gear)
 				var/datum/gear/G = LC.gear[gear_name]
-				// [CELADON-EDIT] - CELADON_QOL
-				// dat += "<tr style='vertical-align:top;'><td width=20%><a style='white-space:normal;' [(G.display_name in equipped_gear) ? "class='linkOn' " : ""]href='?_src_=prefs;preference=gear;toggle_gear=[G.display_name]'>[G.display_name]</a></td><td>" // CELADON-EDIT - ORIGINAL
-				dat += "<tr style='vertical-align:top;'><td align='middle' width=20%><a style='white-space:normal;' [(G.display_name in equipped_gear) ? "class='linkOn' " : ""]href='byond://?_src_=prefs;preference=gear;toggle_gear=[G.display_name]'>[G.display_name]</a><br/><img src=data:image/jpeg;base64,[G.base64icon] class='loadoutPreview'><hr></td><td>"
-				// [/CELADON-EDIT]
-				if(G.allowed_roles)
-					dat += "<font size=2>"
-					var/list/allowedroles = list()
-					for(var/role in G.allowed_roles)
-						allowedroles += role
-					dat += english_list(allowedroles, null, ", ")
-					dat += "</font>"
-				dat += "</td><td><font size=2><i>[G.description]</i></font></td></tr>"
+				var/is_equipped = (G.display_name in equipped_gear)
+				// [CELADON-EDIT] - CELADON_QOL_LOADOUT
+				// dat += "<tr style='vertical-align:top; [is_equipped ? "background: #2a4a2a;" : ""]'>"
+
+				// // Колонка с предметом
+				// dat += "<td align='middle' width='20%'>"
+				// dat += "<a style='white-space:normal;' [(G.display_name in equipped_gear) ? "class='linkOn' " : ""]href='byond://?_src_=prefs;preference=gear;toggle_gear=[G.display_name]'>[G.display_name]</a><br/>"
+				// dat += "<img src='data:image/jpeg;base64,[G.base64icon]' class='loadoutPreview'><hr>"
+				// dat += "</td>"
+
+				// // Колонка с профессиями
+				// dat += "<td>"
+				// if(G.allowed_roles)
+				// 	dat += "<font size=2>"
+				// 	var/list/allowedroles = list()
+				// 	for(var/role in G.allowed_roles)
+				// 		allowedroles += role
+				// 	dat += english_list(allowedroles, null, ", ")
+				// 	dat += "</font>"
+				// dat += "</td>"
+
+				// // Колонка с описанием
+				// dat += "<td><font size=2><i>[G.description]</i></font></td>"
+
+				// dat += "</tr>"	// ORIGINAL
+				// Карточка предмета
+				dat += "<div style='width: 200px; height: 150px; border: 2px solid [is_equipped ? "#90EE90" : "#555"]; border-radius: 8px; padding: 8px; background: [is_equipped ? "#2a4a2a" : "#1a1a1a"]; text-align: center; position: relative; display: inline-block; vertical-align: top; margin: 5px; cursor: pointer;' onclick=\"window.location.href='byond://?_src_=prefs;preference=gear;toggle_gear=[G.display_name]'\">"
+
+				// Фракция над картинкой
+				if(G.allowed_factions && G.allowed_factions.len)
+					var/list/faction_color_map = list(
+						"NanoTrasen" = "#283674",
+						"Syndicate" = "#9c0808",
+						"Independent" = "#7e6641",
+						"InteQ" = "#4d291F",
+						"SolFed" = "#191970",
+						"Pirates" = "#000000",
+						"Elysium" = "#006400"
+					)
+					var/list/colored_roles = list()
+					for(var/role in G.allowed_factions)
+						var/color = faction_color_map[role] || "#FFD700"
+						colored_roles += "<span style='color: [color];'>[role]</span>"
+					dat += "<div style='margin: 2px 0 5px 0; font-size: 12px; font-weight: bold;'>[english_list(colored_roles, null, ", ")]</div>"
+
+				// Иконка предмета
+				dat += "<div style='margin: 5px 0;'>"
+				dat += "<img src='data:image/jpeg;base64,[G.base64icon]' style='width: 64px; height: 64px; border: 1px solid #333;'>"
+				dat += "</div>"
+
+				// Название предмета
+				dat += "<div style='margin: 3px 0; color: [is_equipped ? "#90EE90" : "#87CEEB"]; font-weight: bold; font-size: 12px;'>"
+				dat += "[is_equipped ? "✓ " : ""][G.display_name]"
+				dat += "</div>"
+
+				// Описание
+				dat += "<div style='margin: 2px 0; font-size: 12px; color: #CCC; text-align: left; height: 40px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;' title='[G.description]'>"
+				dat += "[G.description]"
+				dat += "</div>"
+
+				dat += "</div>"
+
+			dat += "</div>"
+			dat += "<script>setTimeout(function(){var container = document.getElementById('gear-container'); if(container) {var pos = localStorage.getItem('gearScrollPos'); if(pos) container.scrollTop = parseInt(pos);}}, 10);</script>"
+			dat += "</td></tr>"
+
 			dat += "</table>"
+			// [/CELADON-EDIT]
 
 		if (3) // Game Preferences
 			dat += "<table><tr><td width='340px' height='300px' valign='top'>"
@@ -1363,12 +1448,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Pixel Scaling:</b> <a href='byond://?_src_=prefs;preference=pixel_size'>[(button_name) ? "Pixel Perfect [button_name]x" : "Stretch to fit"]</a><br>"
 
 			switch(scaling_method)
-				if(SCALING_METHOD_NORMAL)
-					button_name = "Nearest Neighbor"
 				if(SCALING_METHOD_DISTORT)
+					button_name = "Nearest Neighbor"
+				if(SCALING_METHOD_NORMAL)
 					button_name = "Point Sampling"
 				if(SCALING_METHOD_BLUR)
 					button_name = "Bilinear"
+
 			dat += "<b>Scaling Method:</b> <a href='byond://?_src_=prefs;preference=scaling_method'>[button_name]</a><br>"
 
 			dat += "</td><td width='300px' height='300px' valign='top'>"
@@ -1406,6 +1492,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Play Lobby Music:</b> <a href='byond://?_src_=prefs;preference=lobby_music'>[(toggles & SOUND_LOBBY) ? "Enabled":"Disabled"]</a><br>"
 			dat += "<b>Play End of Round Sounds:</b> <a href='byond://?_src_=prefs;preference=endofround_sounds'>[(toggles & SOUND_ENDOFROUND) ? "Enabled":"Disabled"]</a><br>"
 			dat += "<b>See Pull Requests:</b> <a href='byond://?_src_=prefs;preference=pull_requests'>[(chat_toggles & CHAT_PULLR) ? "Enabled":"Disabled"]</a><br>"
+			dat += "<b>Darkened Flashes:</b> (replaces flashes with a black screen) <a href='?_src_=prefs;preference=darkened_flash'>[darkened_flash ? "Enabled":"Disabled"]</a><br>"
 			dat += "<b>TGUI Large Buttons:</b> <a href='byond://?_src_=prefs;preference=large_tgui_buttons'>[(large_tgui_buttons) ? "Enabled":"Disabled"]</a><br>"
 			dat += "<b>Swap TGUI Buttons:</b> <a href='byond://?_src_=prefs;preference=swapped_tgui_buttons'>[(swapped_tgui_buttons) ? "Enabled":"Disabled"]</a><br>"
 			dat += "<b>TGUI input toggles:</b> <a href='byond://?_src_=prefs;preference=tgui_input'>[(tgui_input) ? "Enabled":"Disabled"]</a><br>"
@@ -1776,6 +1863,24 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		if(SSquirks.quirk_points[q] > 0)
 			.++
 
+/datum/preferences/proc/init_learned_languages()
+	learned_languages = list()
+	for(var/datum/language/lang_type as anything in subtypesof(/datum/language))
+		if(initial(lang_type.flags) & ROUNDSTART_LANGUAGE)
+			learned_languages[lang_type] = LANGUAGE_UNKNOWN
+
+/datum/preferences/proc/get_language_point_balance()
+	var/points_balance = MAX_LANGUAGE_POINTS
+	for(var/datum/language/lang_type as anything in learned_languages)
+		if(lang_type == native_language)
+			continue // this should happen but just in case
+		points_balance -= language_level_costs[learned_languages[lang_type]]
+	if("Trilingual" in all_quirks)
+		points_balance += 2
+	if("Monolingual" in all_quirks)
+		points_balance -= 2
+	return points_balance
+
 /datum/preferences/Topic(href, href_list, hsrc)			//yeah, gotta do this I guess..
 	. = ..()
 	if(href_list["close"])
@@ -1893,13 +1998,16 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				else
 					alert(user, "Can't equip [TG.display_name]. It conflicts with an already-equipped item.")
 			save_preferences()
+			update_preview_icon(show_gear, show_loadout)	// [CELADON-ADD] - CELADON_QOL_LOADOUT
 
 		else if(href_list["select_category"])
 			gear_tab = href_list["select_category"]
 		else if(href_list["clear_loadout"])
 			equipped_gear.Cut()
+			update_preview_icon(show_gear, show_loadout)	// [CELADON-ADD] - CELADON_QOL_LOADOUT
 		else if(href_list["toggle_loadout"])
 			show_loadout = !show_loadout
+			update_preview_icon(show_gear, show_loadout)	// [CELADON-ADD] - CELADON_QOL_LOADOUT
 
 		ShowChoices(user)
 		return
@@ -1941,6 +2049,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					jumpsuit_style = pick(GLOB.jumpsuitlist)
 				if("exo")
 					exowear = pick(GLOB.exowearlist)
+				// [CELADON-ADD] - CELADON_WALLETS
+				if("wallet")
+					wallet = pick(GLOB.walletlist)
+				// [/CELADON-ADD]
 				if("all")
 					random_character(gender)
 
@@ -1996,7 +2108,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						age = clamp(round(text2num(new_age)), pref_species.species_age_min, pref_species.species_age_max)
 
 				if("flavor_text")
-					var/msg = stripped_multiline_input(usr, "A snippet of text shown when others examine you, describing what you may look like. This can also be used for OOC notes.", "Flavor Text", html_decode(features["flavor_text"]), MAX_FLAVOR_LEN, TRUE)
+					var/msg = tgui_input_text(usr, "A snippet of text shown when others examine you, describing what you may look like. This can also be used for OOC notes.", "Flavor Text", html_decode(features["flavor_text"]), MAX_FLAVOR_LEN, TRUE)
 					if(msg) //WS edit - "Cancel" does not clear flavor text
 						features["flavor_text"] = msg
 
@@ -2187,10 +2299,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(new_eyes)
 						eye_color = sanitize_hexcolor(new_eyes)
 
-				if("body_size")
-					var/new_size = input(user, "Choose your character's height:", "Character Preference") as null|anything in GLOB.body_sizes
-					if(new_size)
-						features["body_size"] = new_size
+				if("height_filter")
+					var/list/height_filters_available = list()
+					height_filters_available ^= GLOB.height_filters
+					var/new_height = input(user, "Choose your character's height:", "Character Preference") as null|anything in height_filters_available
+					if(new_height)
+						height_filter = new_height
+
 
 				if("mutant_color")
 					var/new_mutantcolor = input(user, "Choose your character's primary alien/mutant color:", "Character Preference","#" + features["mcolor"]) as color|null
@@ -2277,12 +2392,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					new_body_markings = input(user, "Choose your character's body markings:", "Character Preference") as null|anything in GLOB.body_markings_list
 					if(new_body_markings)
 						features["body_markings"] = new_body_markings
-
-				if("legs")
-					var/new_legs
-					new_legs = input(user, "Choose your character's legs:", "Character Preference") as null|anything in GLOB.legs_list
-					if(new_legs)
-						features["legs"] = new_legs
 
 				if("moth_wings")
 					var/new_moth_wings
@@ -2449,20 +2558,44 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(new_exo)
 						exowear = new_exo
 
-				if("uplink_loc")
-					var/new_loc = input(user, "Choose your character's traitor uplink spawn location:", "Character Preference") as null|anything in GLOB.uplink_spawn_loc_list
-					if(new_loc)
-						uplink_spawn_loc = new_loc
-
+				// [CELADON-ADD] - CELADON_WALLETS
+				if("wallet")
+					var/new_wallet = input(user, "Choose your character's style of wallet:", "Character Preference")  as null|anything in GLOB.walletlist
+					if(new_wallet)
+						wallet = new_wallet
+				// [/CELADON-ADD]
 				if("ai_core_icon")
 					var/ai_core_icon = input(user, "Choose your preferred AI core display screen:", "AI Core Display Screen Selection") as null|anything in GLOB.ai_core_display_screens
 					if(ai_core_icon)
 						preferred_ai_core_display = ai_core_icon
 
-				if("sec_dept")
-					var/department = input(user, "Choose your preferred security department:", "Security Departments") as null|anything in GLOB.security_depts_prefs
-					if(department)
-						prefered_security_department = department
+				if("native_language")
+					var/list/language_list = list()
+					for(var/datum/language/lang_type as anything in learned_languages)
+						language_list[initial(lang_type.name)] = lang_type
+					var/datum/language/new_lang = language_list[tgui_input_list(user, "Select a native language:", "Native Language", language_list)]
+					if(ispath(new_lang, /datum/language) && (initial(new_lang.flags) & ROUNDSTART_LANGUAGE)) // double-check to prevent exploits to gain codespeak or something as a native language
+						native_language = new_lang
+						learned_languages[new_lang] = LANGUAGE_UNKNOWN
+
+				if("learned_language")
+					var/datum/language/selected_lang = locate(href_list["language"])
+					if(selected_lang.type == native_language) // wuh oh
+						CRASH("[usr] attempted to change level of understanding for [selected_lang] despite it being their native language!")
+					if(selected_lang && (selected_lang.flags & ROUNDSTART_LANGUAGE)) // no using html exploits to learn codespeak
+						var/understanding = tgui_input_list(user, "Select level of understanding:", "Learn Language", language_level_costs)
+						if(!understanding)
+							return
+						if(!(understanding in language_level_costs))
+							CRASH("[usr] attempted to set level of understanding for [selected_lang.type] to \"[understanding]\"")
+						var/old_value = learned_languages[selected_lang.type]
+						learned_languages[selected_lang.type] = understanding
+						if(get_language_point_balance() < 0 && understanding != LANGUAGE_UNKNOWN) // in case something breaks REAL bad, you can still disable languages to fix it
+							learned_languages[selected_lang.type] = old_value
+							to_chat(usr, span_warning("You don't have enough language points!"))
+
+				if("reset_languages")
+					init_learned_languages()
 
 				if ("clientfps")
 					var/desiredfps = input(user, "Choose your desired fps. (0 = default, 60 FPS))", "Character Preference", clientfps)  as null|num //WS Edit - Client FPS Tweak -
@@ -2494,7 +2627,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(istype(pref_species, /datum/species/ipc))
 						selectAdj = input(user, "In one word, how would you describe your character's appereance?", "Character Preference", generic_adjective) as null|anything in GLOB.ipc_preference_adjectives
 					else
-						selectAdj = input(user, "In one word, how would you describe your character's appereance?", "Character Preference", generic_adjective) as null|anything in GLOB.preference_adjectives
+						selectAdj = input(user, "In one word, how would you describe your character's appereance?", "Character Preference", generic_adjective) as null|anything in GLOB.organic_preference_adjectives
 					if(selectAdj)
 						generic_adjective = selectAdj
 
@@ -2526,7 +2659,18 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if("limbs")
 					if(href_list["customize_limb"])
 						var/limb = href_list["customize_limb"]
-						var/status = input(user, "You are modifying your [parse_zone(limb)], what should it be changed to?", "Character Preference", prosthetic_limbs[limb]) as null|anything in list(PROSTHETIC_NORMAL,PROSTHETIC_ROBOTIC,PROSTHETIC_AMPUTATED)
+						var/list/limb_options = list(PROSTHETIC_NORMAL, PROSTHETIC_ROBOTIC)
+						if(limb != BODY_ZONE_CHEST && limb != BODY_ZONE_HEAD)
+							limb_options.Add(PROSTHETIC_AMPUTATED) // starting without a head or chest causes instant death, must be disallowed
+						var/datum/sprite_accessory/ipc_chassis/limb_style
+						var/obj/item/bodypart/part_candidate
+						for(var/chassis in GLOB.ipc_chassis_list)
+							limb_style = GLOB.ipc_chassis_list[chassis]
+							part_candidate = limb_style.chassis_bodyparts[limb]
+							if(!(pref_species.bodytype & initial(part_candidate.bodytype))) // don't allow vox and kepori to select limbs that aren't compatible
+								continue
+							limb_options.Add(chassis)
+						var/status = input(user, "You are modifying your [parse_zone(limb)], what should it be changed to?", "Character Preference", prosthetic_limbs[limb]) in limb_options
 						if(status)
 							prosthetic_limbs[limb] = status
 
@@ -2784,6 +2928,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							scaling_method = SCALING_METHOD_NORMAL
 					user.client.view_size.setZoomMode()
 
+				if("darkened_flash")
+					darkened_flash = !darkened_flash
+
 				if("save")
 					save_preferences()
 					save_character()
@@ -2869,6 +3016,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.jumpsuit_style = jumpsuit_style
 
 	character.exowear = exowear
+	character.wallet = wallet	// [CELADON-ADD] - CELADON_WALLETS
 
 	character.fbp = fbp
 
@@ -2892,29 +3040,48 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.dna.features = features.Copy()
 	character.set_species(chosen_species, icon_update = FALSE, pref_load = TRUE, robotic = fbp)
 
-	if(!fbp)
-		for(var/pros_limb in prosthetic_limbs)
-			var/obj/item/bodypart/old_part = character.get_bodypart(pros_limb)
-			if(old_part)
-				icon_updates = TRUE
-			switch(prosthetic_limbs[pros_limb])
-				if(PROSTHETIC_NORMAL)
-					if(old_part)
-						old_part.drop_limb(TRUE)
-						qdel(old_part)
-					character.regenerate_limb(pros_limb)
-				if(PROSTHETIC_AMPUTATED)
-					if(old_part)
-						old_part.drop_limb(TRUE)
-						qdel(old_part)
-				if(PROSTHETIC_ROBOTIC)
-					if(old_part)
-						old_part.drop_limb(TRUE)
-						qdel(old_part)
-					character.regenerate_limb(pros_limb, robotic = TRUE)
+	for(var/pros_limb in prosthetic_limbs)
+		var/obj/item/bodypart/old_part = character.get_bodypart(pros_limb)
+		if(old_part)
+			icon_updates = TRUE
+		switch(prosthetic_limbs[pros_limb])
+			if(PROSTHETIC_NORMAL)
+				if(old_part)
+					old_part.drop_limb(TRUE)
+					qdel(old_part)
+				character.regenerate_limb(pros_limb, robotic = fbp)
+			if(PROSTHETIC_AMPUTATED)
+				if(old_part)
+					old_part.drop_limb(TRUE)
+					qdel(old_part)
+				if(pros_limb == BODY_ZONE_CHEST || pros_limb == BODY_ZONE_HEAD)
+					stack_trace("[parent] somehow had their [parse_zone(pros_limb)] set to [PROSTHETIC_AMPUTATED]!")
+					prosthetic_limbs[pros_limb] = PROSTHETIC_NORMAL
+					character.regenerate_limb(pros_limb, robotic = fbp)
+			if(PROSTHETIC_ROBOTIC)
+				if(old_part)
+					old_part.drop_limb(TRUE)
+					qdel(old_part)
+				character.regenerate_limb(pros_limb, robotic = TRUE)
+			else
+				var/datum/sprite_accessory/ipc_chassis/limb_style = GLOB.ipc_chassis_list[prosthetic_limbs[pros_limb]]
+				var/obj/item/bodypart/new_part = limb_style.chassis_bodyparts[pros_limb]
+				new_part = new new_part()
+				if(old_part)
+					old_part.drop_limb(TRUE)
+					qdel(old_part)
+				if(!(new_part.bodytype & pref_species.bodytype))
+					stack_trace("[parent] had [limb_style.name] selected, which isn't compatible with [pref_species.name]!")
+					prosthetic_limbs[pros_limb] = PROSTHETIC_NORMAL
+					character.regenerate_limb(pros_limb, robotic = fbp)
+					continue
+				if(new_part.should_draw_greyscale) // species that don't use mutant colors normally should still be able to color prosthetics that do
+					new_part.draw_color = features["mcolor"]
+				if(new_part.overlay_icon_state)
+					new_part.species_secondary_color = features["mcolor2"]
+				new_part.replace_limb(character, TRUE)
+				new_part.update_limb(is_creating = TRUE)
 
-	if(pref_species.id == "ipc") // If triggered, vox and kepori arms do not spawn in but ipcs sprites break without it as the code for setting the right prosthetics for them is in set_species().
-		character.set_species(chosen_species, icon_update = FALSE, pref_load = TRUE)
 	//Because of how set_species replaces all bodyparts with new ones, hair needs to be set AFTER species.
 	character.dna.real_name = character.real_name
 	character.generic_adjective = generic_adjective
@@ -2948,7 +3115,27 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		character.update_body()
 		character.update_hair()
 		character.update_body_parts(TRUE)
-	character.dna.update_body_size()
+	character.set_mob_height(GLOB.height_filters[height_filter])
+
+	if(!character_setup && get_language_point_balance() < 0)
+		init_learned_languages() // no exploits allowed
+	character.grant_language(native_language)
+	character.get_language_holder().selected_language = native_language
+	for(var/datum/language/lang_type as anything in learned_languages)
+		if(lang_type == native_language)
+			continue
+		switch(learned_languages[lang_type])
+			if(LANGUAGE_FLUENT)
+				character.grant_language(lang_type)
+			if(LANGUAGE_FAMILIAR)
+				character.grant_language(lang_type, SPOKEN_LANGUAGE)
+				character.remove_language(lang_type, UNDERSTOOD_LANGUAGE)
+				character.grant_partial_language(lang_type, 80)
+			if(LANGUAGE_RECOGNIZED)
+				character.remove_language(lang_type)
+				character.grant_partial_language(lang_type, 40)
+			if(LANGUAGE_UNKNOWN)
+				character.remove_language(lang_type)
 
 /datum/preferences/proc/get_default_name(name_id)
 	switch(name_id)

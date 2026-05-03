@@ -36,10 +36,19 @@ All ShuttleMove procs go here
 				M.visible_message(span_warning("[shuttle] slams into [M]!"))
 				SSblackbox.record_feedback("tally", "shuttle_gib", 1, M.type)
 				log_attack("[key_name(M)] was shuttle gibbed by [shuttle].")
-				if(isanimal(M))
+				if(isanimal(M) || isbasicmob(M))
 					qdel(M)
 				else
-					M.gib()
+					//you're going to get, unequivocally, fucked up
+					M.apply_damage(400, BRUTE, forced = TRUE, spread_damage = TRUE)
+					M.apply_damage(100, BRUTE, BODY_ZONE_CHEST, forced = TRUE)
+					M.apply_damage(100, BRUTE, BODY_ZONE_HEAD, forced = TRUE)
+					if(istype(M, /mob/living/carbon))
+						var/mob/living/carbon/mob = M
+						for(var/obj/item/bodypart/limb in mob.bodyparts)
+							limb.check_wounding(list(WOUND_BLUNT = 50), 50)
+					M.AddElement(/datum/element/squish, 20 SECONDS)
+					M.spawn_gibs()
 
 
 		else //non-living mobs shouldn't be affected by shuttles, which is why this is an else

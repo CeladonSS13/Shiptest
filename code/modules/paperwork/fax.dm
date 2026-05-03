@@ -69,7 +69,8 @@
 		list(fax_name = "Confederated League Leadership", fax_id = "minutemen", color = "blue", emag_needed = FALSE),
 		list(fax_name = "PGF Military High Command", fax_id = "gezena", color = "olive", emag_needed = FALSE),
 		list(fax_name = "Syndicate Coalition Coordination Center", fax_id = "syndicate", color = "red", emag_needed = FALSE),
-		list(fax_name = "Frontiersmen Communications Quartermaster", fax_id = "frontiersmen", color = "black", emag_needed = TRUE)
+		list(fax_name = "Frontiersmen Communications Quartermaster", fax_id = "frontiersmen", color = "black", emag_needed = TRUE),
+		list(fax_name = "Ramzi Clique Overwatch", fax_id = "ramzi", color = "darkred", emag_needed = TRUE)
 	)
 	// should we make our message be important and be recieved in admin faxes
 	var/admin_fax_id
@@ -407,6 +408,9 @@
 	say("Received correspondence from [sender_name].")
 	history_add("Receive", sender_name)
 	addtimer(CALLBACK(src, PROC_REF(vend_item), loaded), 1.9 SECONDS)
+	// [CELADON-ADD] - Вызывает прок, который передаёт в DS администрации информацию о новом факсе, который был получен.
+	sendDSFax(sender_name, loaded)
+	// [/CELADON-ADD]
 
 /**
  * Procedure for animating an object entering or leaving the fax machine.
@@ -519,6 +523,10 @@
 	frontier_network = TRUE
 	visible_to_network = FALSE
 
+/obj/machinery/fax/ramzi
+	frontier_network = TRUE
+	visible_to_network = FALSE
+
 /obj/machinery/fax/inteq
 	special_networks = list(
 		list(fax_name = "Outpost Authority", fax_id = "outpost", color = "orange", emag_needed = FALSE),
@@ -621,4 +629,10 @@
 	name = "old fax machine"
 	fax_name = "Frontiersmen Communications Quartermaster"
 	admin_fax_id = "frontiersmen"
+	frontier_network = TRUE
+
+/obj/machinery/fax/admin/ramzi
+	name = "rusty fax machine"
+	fax_name = "Ramzi Communications Quartermaster"
+	admin_fax_id = "ramzi"
 	frontier_network = TRUE

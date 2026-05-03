@@ -65,9 +65,6 @@
 /turf/open/floor/carpet,
 /area/ruin/powered)
 "gK" = (
-/obj/effect/landmark/mission_poi/main/drill{
-	mission_index = 2
-	},
 /obj/structure/vein/ice/classfour,
 /turf/open/floor/plating/asteroid/snow/icemoon,
 /area/overmap_encounter/planetoid/cave/explored)
@@ -83,7 +80,7 @@
 	},
 /area/ruin/powered)
 "hI" = (
-/obj/item/reagent_containers/food/drinks/beer,
+/obj/item/reagent_containers/food/drinks/mead,
 /turf/open/floor/plating/ice/icemoon,
 /area/overmap_encounter/planetoid/cave/explored)
 "iz" = (
@@ -145,7 +142,6 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/mission_poi/main,
 /turf/open/floor/wood,
 /area/ruin/powered)
 "mI" = (
@@ -421,10 +417,10 @@
 /obj/item/clothing/head/bearpelt,
 /obj/structure/table/wood,
 /obj/item/food/burger/fish,
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = -4
 	},
-/obj/item/reagent_containers/food/drinks/beer{
+/obj/item/reagent_containers/food/drinks/mead{
 	pixel_x = 10;
 	pixel_y = 6
 	},
@@ -549,7 +545,7 @@
 "UI" = (
 /obj/machinery/washing_machine,
 /obj/effect/decal/cleanable/blood,
-/obj/item/food/meat/slab/corgi,
+/obj/item/food/meat/slab,
 /turf/open/floor/wood,
 /area/ruin/powered)
 "Vn" = (
@@ -575,13 +571,6 @@
 	dir = 4
 	},
 /turf/open/floor/plating/ice/icemoon,
-/area/overmap_encounter/planetoid/cave/explored)
-"Zz" = (
-/obj/effect/landmark/mission_poi/guard{
-	type_to_spawn = /mob/living/simple_animal/hostile/human/frontier/ranged/trooper/internals;
-	mission_index = 2
-	},
-/turf/open/floor/plating/asteroid/snow/icemoon,
 /area/overmap_encounter/planetoid/cave/explored)
 "ZG" = (
 /obj/effect/decal/cleanable/dirt,
@@ -998,7 +987,7 @@ Og
 Og
 Og
 zT
-Zz
+Og
 Og
 zT
 Og

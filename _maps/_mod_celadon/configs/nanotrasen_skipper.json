@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
 	"map_name": "Skipper-class Heavy Cruiser",
 	"map_short_name": "Skipper",
-	"description": "Пример одного из крейсеров Нанотрасена 'стандартного образца'. По меркам Фронтира судно класса 'Skipper' хорошо оснащено: достаточно места для инженерного оборудования, хорошо оборудованные места для экипажа и приличный запас оборонительного вооружения. Примечательно, что на 'Skipper' больше, чем в среднем, командный отсек, а офицеры на 'Skipper', как правило, лучше оснащены, чем их коллеги. Хотя должность на борту 'Osprey' не так престижна, как на 'Нанотрайзене', мало кто из капитанов откажется от командования 'Skipper'. В ЩИТСПАВНЕ ПО ПРИЧИНЕ: Наличие ТЭГа убивает сервер!",
+	"description": "Пример одного из крейсеров Нанотрейзена 'стандартного образца'. По меркам Фронтира судно класса 'Skipper' хорошо оснащено: достаточно места для инженерного оборудования, хорошо оборудованные места для экипажа и приличный запас оборонительного вооружения. Примечательно, что на 'Skipper' больше, чем в среднем, командный отсек, а офицеры на 'Skipper', как правило, лучше оснащены, чем их коллеги. Хотя должность на борту 'Osprey' не так престижна, как на 'Нанотрейзене', мало кто из капитанов откажется от командования 'Skipper'.",
 	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_skipper.dmm",
 	"enabled": false,
 	"limit": 1,
@@ -23,55 +23,55 @@
 	],
 	"job_slots": {
 		"Captain": {
-			"outfit": "/datum/outfit/job/nanotrasen/captain",
+			"outfit": "/datum/outfit/job/cel/nanotrasen/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"First Officer": {
-			"outfit": "/datum/outfit/job/nanotrasen/hop",
+			"outfit": "/datum/outfit/job/cel/nanotrasen/hop",
 			"officer": true,
 			"slots": 1
 		},
 		"Supply Director": {
-			"outfit": "/datum/outfit/job/nanotrasen/quartermaster",
+			"outfit": "/datum/outfit/job/cel/nanotrasen/quartermaster",
 			"officer": true,
 			"slots": 1
 		},
 		"Security Director": {
-			"outfit": "/datum/outfit/job/nanotrasen/hos",
+			"outfit": "/datum/outfit/job/cel/nanotrasen/hos",
 			"officer": true,
 			"slots" : 1
 		},
 		"Security Officer": {
-			"outfit": "/datum/outfit/job/nanotrasen/security",
+			"outfit": "/datum/outfit/job/cel/nanotrasen/security",
 			"slots": 2
 		},
 		"Medical Specialist": {
-			"outfit": "/datum/outfit/job/nanotrasen/doctor",
+			"outfit": "/datum/outfit/job/cel/nanotrasen/doctor",
 			"slots": 1
 		},
 		"Ship's Engineer": {
-			"outfit": "/datum/outfit/job/nanotrasen/engineer",
+			"outfit": "/datum/outfit/job/cel/nanotrasen/engineer",
 			"slots": 1
 		},
 		"Atmospheric Technician": {
-			"outfit": "/datum/outfit/job/nanotrasen/atmos",
+			"outfit": "/datum/outfit/job/cel/nanotrasen/atmos",
 			"slots": 1
 		},
 		"Shaft Miner": {
-			"outfit": "/datum/outfit/job/nanotrasen/miner",
+			"outfit": "/datum/outfit/job/cel/nanotrasen/miner",
 			"slots": 2
 		},
 		"Cook": {
-			"outfit": "/datum/outfit/job/cook",
+			"outfit": "/datum/outfit/job/cel/nanotrasen/cook",
 			"slots": 1
 		},
 		"Bartender": {
-			"outfit": "/datum/outfit/job/bartender",
+			"outfit": "/datum/outfit/job/cel/nanotrasen/bartender",
 			"slots": 1
 		},
 		"Assistant": {
-			"outfit": "/datum/outfit/job/nanotrasen/assistant",
+			"outfit": "/datum/outfit/job/cel/nanotrasen/assistant",
 			"slots": 2
 		}
 	}

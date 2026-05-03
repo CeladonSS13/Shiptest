@@ -220,7 +220,9 @@
 
 	var/list/outfit_override
 
-/obj/effect/mob_spawn/human/Initialize()
+/obj/effect/mob_spawn/human/Initialize(mapload, species)
+	if(species)
+		mob_species = species
 	if(ispath(outfit))
 		outfit = new outfit()
 	if(!outfit)
@@ -431,7 +433,7 @@
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 /obj/effect/mob_spawn/human/clown
 	name = "Clown"
-	outfit = /datum/outfit/job/clown
+	outfit = /datum/outfit/job/cel/independent/clown
 // [/CELADON-ADD]
 
 /obj/effect/mob_spawn/human/scientist
@@ -499,9 +501,9 @@
 	. = ..()
 
 	var/obj/item/card/id/W = H.get_idcard()
-	if(H.age < AGE_MINOR)
-		W.registered_age = AGE_MINOR
-		to_chat(H, span_notice("You're not technically old enough to access or serve alcohol, but your ID has been discreetly modified to display your age as [AGE_MINOR]. Try to keep that a secret!"))
+	if(H.age < AGE_DRINKING)
+		W.registered_age = AGE_DRINKING
+		to_chat(H, span_notice("You're not technically old enough to access or serve alcohol, but your ID has been discreetly modified to display your age as [AGE_DRINKING]. Try to keep that a secret!"))
 
 /obj/effect/mob_spawn/human/beach
 	outfit = /datum/outfit/beachbum

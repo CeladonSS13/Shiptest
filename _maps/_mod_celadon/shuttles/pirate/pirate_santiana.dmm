@@ -74,6 +74,7 @@
 /obj/item/chameleon,
 /obj/item/storage/box/syndie_kit/chameleon,
 /obj/item/desynchronizer/tvstatic,
+/obj/item/clothing/head/helmet/bulletproof/x11/nanotrasen,
 /turf/open/floor/plasteel/mono,
 /area/ship/security/armory)
 "ak" = (
@@ -198,6 +199,7 @@
 /area/ship/cargo)
 "ax" = (
 /obj/effect/decal/cleanable/shreds,
+/obj/machinery/oven,
 /turf/open/floor/plasteel,
 /area/ship/crew/toilet)
 "ay" = (
@@ -226,35 +228,19 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/crew/toilet)
 "aB" = (
-/obj/structure/table,
-/obj/item/melee/knife/kitchen,
-/obj/item/reagent_containers/condiment/saltshaker{
-	pixel_x = -10;
-	pixel_y = 8
-	},
-/obj/item/reagent_containers/condiment/soysauce{
-	pixel_x = 9
-	},
-/obj/item/reagent_containers/condiment/peppermill{
-	pixel_x = -4;
-	pixel_y = 8
-	},
-/obj/item/reagent_containers/condiment/bbqsauce{
-	pixel_x = -8;
-	pixel_y = -5
-	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/machinery/griddle,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
 "aC" = (
 /obj/structure/table,
 /obj/machinery/newscaster/directional/north,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/machinery/chem_dispenser/drinks/beer{
 	pixel_x = 0;
 	pixel_y = 12
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
 "aD" = (
@@ -457,10 +443,9 @@
 /obj/item/clothing/suit/armor/vest/alt,
 /obj/item/clothing/head/beret/mining,
 /obj/item/clothing/head/beret/black,
-/obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/clothing/head/helmet/infiltrator,
 /obj/item/clothing/gloves/tackler/rocket,
-/obj/item/gun/ballistic/automatic/pistol/commander,
+/obj/item/gun/ballistic/automatic/pistol/challenger,
 /obj/item/melee/knife/hunting,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/item/spacecash/bundle/c20,
@@ -472,6 +457,7 @@
 /obj/item/robot_module/meka,
 /obj/item/gun/ballistic/shotgun/doublebarrel,
 /obj/item/gun/ballistic/shotgun/doublebarrel,
+/obj/item/gun/energy/e_gun/e_old/adv_stopping,
 /turf/open/floor/plasteel/mono,
 /area/ship/security/armory)
 "aV" = (
@@ -641,6 +627,14 @@
 	pixel_x = 1;
 	pixel_y = 15
 	},
+/obj/item/reagent_containers/condiment/bbqsauce{
+	pixel_x = -8;
+	pixel_y = -5
+	},
+/obj/item/melee/knife/kitchen,
+/obj/item/reagent_containers/condiment/soysauce{
+	pixel_x = 9
+	},
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/canteen)
 "bl" = (
@@ -789,6 +783,14 @@
 	pixel_y = 16
 	},
 /obj/item/spacecash/bundle/c100,
+/obj/item/reagent_containers/condiment/peppermill{
+	pixel_x = -4;
+	pixel_y = -1
+	},
+/obj/item/reagent_containers/condiment/saltshaker{
+	pixel_x = -10;
+	pixel_y = -1
+	},
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/canteen)
 "bu" = (
@@ -1299,7 +1301,6 @@
 /obj/item/clothing/suit/armor/vest/elysium,
 /obj/item/clothing/suit/armor/vest/elysium,
 /obj/item/melee/baton/loaded,
-/obj/item/gun/energy/e_gun/adv_stopping,
 /turf/open/floor/plasteel/mono,
 /area/ship/security/armory)
 "cv" = (

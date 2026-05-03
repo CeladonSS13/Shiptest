@@ -1,12 +1,6 @@
 // code/modules/mob/emote.dm
 //	  /emote/
 
-/datum/emote/flip
-	message = "делает кувырок."
-	emote_type = EMOTE_VISIBLE
-
-/datum/emote/spin
-	message = "кружится."
 
 // code/modules/mob/living/carbon/human/emote.dm
 // 	  /emote/living/carbon/human/
@@ -76,7 +70,7 @@
 /datum/emote/living/carbon/blink
 	message = "моргает."
 
-/datum/emote/living/carbon/blink_r
+/datum/emote/living/carbon/blink/blink_r
 	message = "быстро моргает."
 
 /datum/emote/living/carbon/crack
