@@ -329,11 +329,6 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/engines/port)
 "cy" = (
-/obj/machinery/door/airlock/hatch{
-	dir = 4;
-	name = "Engineering Compartment";
-	close_speed = 100
-	},
 /obj/structure/cable/cyan{
 	icon_state = "4-8"
 	},
@@ -342,6 +337,17 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/airlock/hatch{
+	dir = 4;
+	name = "Engineering Compartment";
+	close_speed = 100
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/engines/port)
@@ -1593,6 +1599,7 @@
 /obj/item/storage/toolbox/syndicate{
 	pixel_y = 6
 	},
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engines/port)
 "jR" = (
@@ -1635,9 +1642,7 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 9
 	},
-/obj/structure/aquarium/prefilled{
-	name = "Mrs. Fish Storage"
-	},
+/obj/machinery/oven,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/ccommons)
 "kx" = (
@@ -2896,6 +2901,11 @@
 /obj/machinery/cryopod{
 	dir = 1
 	},
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -20;
+	pixel_y = 10
+	},
 /turf/open/floor/plasteel/mono/white,
 /area/ship/storage/equip)
 "sA" = (
@@ -2906,7 +2916,9 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 1
 	},
-/obj/structure/bookcase/random,
+/obj/structure/aquarium/prefilled{
+	name = "Mr. Fish Storage"
+	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/ccommons)
 "sM" = (
@@ -2982,6 +2994,19 @@
 	},
 /turf/open/floor/suns/hatch/bamboo,
 /area/ship/general/command_crew/cmo)
+"tG" = (
+/obj/effect/turf_decal/industrial/warning/fulltile{
+	color = "#FFFFFF"
+	},
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable/cyan{
+	icon_state = "0-4"
+	},
+/obj/machinery/rnd/server,
+/turf/open/floor/plasteel/tech,
+/area/ship/engineering/engines/port)
 "tI" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
 /turf/open/floor/engine/hull,
@@ -4366,6 +4391,7 @@
 	},
 /obj/item/clothing/mask/gas/syndicate,
 /obj/machinery/light/directional/south,
+/obj/item/clothing/suit/space/hardsuit/medical,
 /turf/open/floor/plasteel/white{
 	color = "#444547"
 	},
@@ -4851,9 +4877,7 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 8
 	},
-/obj/structure/aquarium/prefilled{
-	name = "Mr. Fish Storage"
-	},
+/obj/machinery/griddle,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/ccommons)
 "Iy" = (
@@ -7683,7 +7707,7 @@ MZ
 KJ
 pu
 aj
-st
+tG
 st
 LC
 hE
