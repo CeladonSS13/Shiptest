@@ -43,7 +43,7 @@
 /datum/quirk/quick_removal_of_handcuffs
 	name = "Quick removal of handcuffs"
 	desc = "Reduces the time to remove handcuffs to 20 seconds. Makes the text of removing handcuffs hidden, not showing it in the chat or above the character's head.."
-	value = 4
+	value = 3
 	mob_traits = list(TRAIT_FAST_REMOVE_HANDCUFFS)
 	gain_text = span_notice("Your hands have become flexible.")
 	lose_text = span_danger("You have regained the rough strength of your hands. They are no longer flexible.")
