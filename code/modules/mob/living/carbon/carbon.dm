@@ -326,7 +326,14 @@
 		return
 	I.item_flags |= BEING_REMOVED
 	breakouttime = I.breakouttime
-	if(!cuff_break)
+// [CELADON-ADD] - CELADON_QUIRKS_FAST_REMOVE_HANDCUFFS
+	// /mob/living/carbon = user
+	if(HAS_TRAIT(src, TRAIT_FAST_REMOVE_HANDCUFFS))
+		breakouttime = 20 SECONDS
+		if(do_after(src, breakouttime, target = src, timed_action_flags = IGNORE_HELD_ITEM, show_progress = FALSE, hidden = TRUE))
+			. = clear_cuffs(I, cuff_break)
+// [/CELADON-ADD]
+	else if(!cuff_break)	// [CELADON-EDIT] - CELADON_QUIRKS // if(!cuff_break) // ORIGINAL
 		visible_message(span_warning("[src] attempts to remove [I]!"))
 		to_chat(src, span_notice("You attempt to remove [I]... (This will take around [DisplayTimeText(breakouttime)] and you need to stand still.)"))
 		if(do_after(src, breakouttime, target = src, timed_action_flags = IGNORE_HELD_ITEM))
@@ -383,8 +390,11 @@
 		return FALSE
 	if(I != handcuffed && I != legcuffed)
 		return FALSE
-	visible_message(span_danger("[src] manages to [cuff_break ? "break" : "remove"] [I]!"))
-	to_chat(src, span_notice("You successfully [cuff_break ? "break" : "remove"] [I]."))
+// [CELADON-ADD] - CELADON_QUIRKS_FAST_REMOVE_HANDCUFFS
+	if(!HAS_TRAIT(src, TRAIT_FAST_REMOVE_HANDCUFFS))
+		visible_message(span_danger("[src] manages to [cuff_break ? "break" : "remove"] [I]!"))
+		to_chat(src, span_notice("You successfully [cuff_break ? "break" : "remove"] [I]."))
+// [/CELADON-ADD]
 
 	if(cuff_break)
 		. = !((I == handcuffed) || (I == legcuffed))
