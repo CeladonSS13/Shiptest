@@ -13,7 +13,7 @@ export const OutpostCommunicationsCeladon = (props, context) => {
     <Window theme={faction_theme} width={600} height={700} resizable>
       <Window.Content scrollable>
         <Section
-          title={Math.round(points) + ' credits'}
+          title={Math.round(points) + ' кредитов'}
           buttons={
             <Stack textAlign="center">
               <Stack.Item>
@@ -23,7 +23,7 @@ export const OutpostCommunicationsCeladon = (props, context) => {
                       selected={tab === 'shipMissions'}
                       onClick={() => setTab('shipMissions')}
                     >
-                      Current Missions
+                      Текущие миссии
                     </Tabs.Tab>
                   )}
                   {!!outpostDocked && (
@@ -31,14 +31,14 @@ export const OutpostCommunicationsCeladon = (props, context) => {
                       selected={tab === 'outpostMissions'}
                       onClick={() => setTab('outpostMissions')}
                     >
-                      Available Missions
+                      Доступные миссии
                     </Tabs.Tab>
                   )}
                 </Tabs>
               </Stack.Item>
               <Stack.Item>
                 <Button.Input
-                  content="Withdraw Cash"
+                  content="Снять наличные"
                   currentValue={100}
                   defaultValue={100}
                   onCommit={(e, value) =>
@@ -78,7 +78,7 @@ const ShipMissionsContent = (props, context) => {
   const { data } = useBackend<Data>(context);
   const { numMissions, maxMissions, outpostDocked, shipMissions } = data;
   return (
-    <Section title={'Current Missions ' + numMissions + '/' + maxMissions}>
+    <Section title={'Текущие миссии ' + numMissions + '/' + maxMissions}>
       <MissionsList showButton={outpostDocked} missions={shipMissions} />
     </Section>
   );
@@ -89,7 +89,7 @@ const OutpostMissionsContent = (props, context) => {
   const { numMissions, maxMissions, outpostDocked, outpostMissions } = data;
   const disabled = numMissions >= maxMissions;
   return (
-    <Section title={'Available Missions ' + numMissions + '/' + maxMissions}>
+    <Section title={'Доступные миссии ' + numMissions + '/' + maxMissions}>
       <MissionsList
         showButton={outpostDocked}
         missions={outpostMissions}
@@ -128,13 +128,13 @@ const MissionsList = (props, context) => {
     <Stack vertical>
       <Stack.Item>
         <Box inline mx={1}>
-          {`${mission.value} cr`}
+          {`${mission.value} кр`}
         </Box>
       </Stack.Item>
 
       <Stack.Item>
         <Box inline mx={1}>
-          {`Completed: ${mission.progressStr}`}
+          {`Выполнено: ${mission.progressStr}`}
         </Box>
       </Stack.Item>
 

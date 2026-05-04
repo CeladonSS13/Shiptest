@@ -82,7 +82,7 @@
 /obj/machinery/computer/cargo/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
-		ui = new(user, src, "Коммуникационная консоль аванпоста", name) // [CELADON-EDIT] - CELADON_OUTPOST_CONSOLE - instead of "OutpostCommunications", [CELADON-EDIT] - Due to the translation of the text, the name "OutpostCommunicationsCeladon" was changed to Russian.
+		ui = new(user, src, "OutpostCommunicationsCeladon", name) // [CELADON-EDIT] - CELADON_OUTPOST_CONSOLE - instead of "OutpostCommunications", [CELADON-EDIT] - Due to the translation of the text, the name "OutpostCommunicationsCeladon" was changed to Russian.
 		ui.open()
 		if(!charge_account)
 			reconnect()
@@ -152,7 +152,7 @@
 					var/mob/living/carbon/human/user = usr
 					user.put_in_hands(cash_chip)
 				playsound(src, 'sound/machines/twobeep_high.ogg', 50, TRUE)
-				src.visible_message(span_notice("[src] dispenses a holochip."))
+				src.visible_message(span_notice("[C_CASE(src, GENITIVE_CASE)] выдала вам голочип."))
 			return TRUE
 
 		// if("add")

@@ -39,8 +39,9 @@
 
 
 /datum/planet_type/lava
-	name = "lava planetoid"
-	desc = "A planet rife with seismic and volcanic activity. High temperatures and dangerous xenofauna render it dangerous for the unprepared."
+	name = "лавовый планетоид"
+	cases = list("лавовый планетоид", "лавового планетоида", "лавовому планетоиду", "лавовый планетоид", "лавовым планетоидом", "лавовом планетоидее")
+	desc = "Планета, изобилующая сейсмической и вулканической активностью. Высокие температуры и опасная ксенофауна делают её опасной для неподготовленных исследователей."
 	planet = DYNAMIC_WORLD_LAVA
 	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	//	color = COLOR_ORANGE
