@@ -16,5 +16,3 @@
 #define TRAIT_SKITTISH "skittish"
 #define TRAIT_DRUNK_HEALING "drunk_healing"
 #define TRAIT_SNOB "snob"
-
-#define TRAIT_FAST_REMOVE_HANDCUFFS "quick_removal_of_handcuffs"

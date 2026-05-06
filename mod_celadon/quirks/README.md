@@ -6,8 +6,7 @@
 
 ## Новые квирки
 
-ID мода: CELADON_QUIRKS
-
+ID мода: CELADON_QUIRKS, QUIRKS_FAST_REMOVE_HANDCUFFS
 
 ### Описание мода
 
@@ -20,9 +19,8 @@ ID мода: CELADON_QUIRKS
 
 
 ### Изменения *кор кода*
-CELADON_QUIRKS_FAST_REMOVE_HANDCUFFS
-	'code/modules/mob/living/carbon/carbon.dm' : Квирк на быстрое незаметное снятие наручников за 20 секунд. Убираем видимость прогресса и сообщения про снятие наручников.
 
+- Отсутствуют
 
 ### Оверрайды
 
@@ -30,14 +28,15 @@ CELADON_QUIRKS_FAST_REMOVE_HANDCUFFS
 
 
 ### Дефайны
-CELADON_QUIRKS_FAST_REMOVE_HANDCUFFS
-	'code/__DEFINES/~mod_celadon/traits.dm' : Заводим деф на трейт.
+
+- Отсутствуют
 
 
 ### Используемые файлы, не содержащиеся в модпаке
-CELADON_QUIRKS_FAST_REMOVE_HANDCUFFS
-	'code/_globalvars/traits.dm' : Инициализируем квирк как глобальный. Все квирки касающиеся продолжительного воздействия на игрока подлежат инициализации в данном списке.
+
+- Отсутствуют
+
 
 ### Авторы
 
-MrCat15352
+MrCat15352, RedSybrex
