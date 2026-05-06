@@ -136,7 +136,7 @@
 	hardsuit_type = "solgov"
 	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 60, "bio" = 100, "rad" = 60, "fire" = 90, "acid" = 75, "wound" = 30)
 
-/obj/item/clothing/suit/space/hardsuit/solgov //see this is a good path. not fucking /security/independant/inteq. its just /hardsuit/solgov
+/obj/item/clothing/suit/space/hardsuit/solgov
 
 	name = "\improper SolFed hardsuit"
 	desc = "An armored spaceproof suit. A powered exoskeleton keeps the suit light and mobile."
@@ -144,14 +144,11 @@
 	mob_overlay_icon = 'icons/mob/clothing/faction/solgov/suits.dmi'
 	icon_state = "hardsuit_solgov"
 	item_state = "hardsuit_solgov"
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 60, "bio" = 100, "rad" = 60, "fire" = 90, "acid" = 75, "wound" = 30) //intentionally the fucking strong, this is master chief-tier armor //is this really what you call the strong?? is this the best solgov has to offer??????
+	armor = list("melee" = 50, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 60, "bio" = 100, "rad" = 60, "fire" = 90, "acid" = 75, "wound" = 30)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/solgov
 	allowed = list(/obj/item/gun, /obj/item/ammo_box,/obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/melee/energy/sword/saber, /obj/item/restraints/handcuffs, /obj/item/tank/internals)
 	slowdown = 0.2
-	// [CELADON-EDIT] - TAJARA, CELADON_RIOL
-	// supports_variations = DIGITIGRADE_VARIATION // CELADON-EDIT - ORIGINAL
 	supports_variations = DIGITIGRADE_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
-	// [/CELADON-EDIT]
 
 /obj/item/clothing/suit/hazardvest/solgov
 	name = "SolFed hazard vest"
@@ -241,7 +238,7 @@
 	mob_overlay_icon = 'icons/mob/clothing/faction/solgov/suits.dmi'
 	icon_state = "armor_solgov_trenchcoat"
 	item_state = "trenchcoat_solgov"
-	armor = list("melee" = 25, "bullet" = 10, "laser" = 25, "energy" = 10, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)  // [CELADON-EDIT] - CELADON_BALANCE
+	armor = list("melee" = 25, "bullet" = 10, "laser" = 25, "energy" = 10, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)
 	cold_protection = CHEST|LEGS|ARMS
 	heat_protection = CHEST|LEGS|ARMS
 	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON
@@ -288,7 +285,7 @@
 	item_state = "sonnensoldner_hat"
 	worn_y_offset = 4
 	dog_fashion = null
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 35,"energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 20) //[CELADON-ADD] - CELADON_BALANCE
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35,"energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 20)
 
 /obj/item/clothing/head/solgov/captain
 	name = "\improper SolFed bicorne hat"
@@ -299,7 +296,7 @@
 	item_state = "solgov_bicorne"
 	worn_y_offset = 2
 	dog_fashion = null
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 35,"energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 20) //[CELADON-ADD] - CELADON_BALANCE
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35,"energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 20)
 
 /obj/item/clothing/head/beret/solgov
 	name = "\improper SolFed beret"
@@ -368,7 +365,7 @@
 	custom_price = 10
 	supports_variations = VOX_VARIATION
 
-/obj/item/clothing/neck/cloak/overseer // someone please repath these under neck/cloak/solgov ok thanks
+/obj/item/clothing/neck/cloak/overseer
 	name = "SolFed overseer's cloak"
 	desc = "Worn by the Overseer. It smells faintly of bureaucracy."
 	mob_overlay_icon = 'icons/mob/clothing/faction/solgov/neck.dmi'
@@ -382,7 +379,7 @@
 	icon = 'icons/obj/clothing/faction/solgov/neck.dmi'
 	icon_state = "solgov_weibel"
 
-/obj/item/clothing/neck/cloak/solgovcap // someone please repath these under neck/cloak/solgov ok thanks
+/obj/item/clothing/neck/cloak/solgovcap
 	name = "SolFed captain's cloak"
 	desc = "Worn by SolFed captains. It smells faintly of bureaucracy."
 	mob_overlay_icon = 'icons/mob/clothing/faction/solgov/neck.dmi'
