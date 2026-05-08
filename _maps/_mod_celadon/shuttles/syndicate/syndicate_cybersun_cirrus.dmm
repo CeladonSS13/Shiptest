@@ -119,10 +119,6 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/engineering/engines/starboard)
 "bK" = (
-/obj/effect/turf_decal/trimline/opaque/cybersunteal/line{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/opaque/cybersunteal/half,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
 	},
@@ -135,6 +131,13 @@
 /obj/structure/cable/cyan{
 	icon_state = "1-4"
 	},
+/obj/effect/turf_decal/corner/opaque/neutral/half{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/opaque/cybersunteal/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/cybersunteal/half,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/hallway/aft)
 "bM" = (
@@ -505,12 +508,15 @@
 /obj/effect/turf_decal/corner/opaque/cybersunteal/half{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/cybersunteal/line{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/corner/opaque/neutral/half{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/opaque/cybersunteal/line{
+	dir = 8
 	},
 /turf/open/floor/plasteel/mono/white,
 /area/ship/hallway/aft)
@@ -2324,12 +2330,15 @@
 /obj/effect/turf_decal/corner/opaque/cybersunteal/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/cybersunteal/line{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/corner/opaque/neutral/half{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/opaque/cybersunteal/line{
+	dir = 4
 	},
 /turf/open/floor/plasteel/mono/white,
 /area/ship/hallway/aft)
@@ -2546,9 +2555,6 @@
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/dorm)
-"qp" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/hallway/aft)
 "qr" = (
 /obj/effect/turf_decal/corner/opaque/black{
 	dir = 10
@@ -3839,6 +3845,9 @@
 	color = "#E6D2BA"
 	},
 /area/ship/crew/ccommons)
+"AB" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/hallway/aft)
 "AC" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/crew/dorm)
@@ -5259,12 +5268,12 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "Lj" = (
-/obj/effect/turf_decal/trimline/opaque/cybersunteal/line{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/trimline/opaque/cybersunteal/line{
+	dir = 8
 	},
 /turf/open/floor/plasteel/mono/white,
 /area/ship/hallway/aft)
@@ -5608,6 +5617,7 @@
 /obj/effect/turf_decal/corner/opaque/cybersunteal/half{
 	dir = 1
 	},
+/obj/effect/turf_decal/corner/opaque/neutral/half,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/hallway/aft)
 "NJ" = (
@@ -7349,7 +7359,7 @@ BG
 CN
 gE
 RG
-qp
+AB
 BG
 gM
 gM
@@ -7494,7 +7504,7 @@ BG
 hm
 JV
 hy
-qp
+AB
 BG
 gM
 gM
