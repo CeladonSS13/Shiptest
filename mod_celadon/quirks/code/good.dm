@@ -61,7 +61,7 @@
 	action_icon = 'mod_celadon/_storage_icons/icons/assets/action_item.dmi'
 	action_icon_state = "removal_of_handcuffs"
 	/// Залочиваем спел при касте
-	var/removing = FALSEы
+	var/removing = FALSE
 
 /obj/effect/proc_holder/spell/removal_of_handcuffs/can_cast(mob/user = usr)
 	if(removing)
@@ -96,8 +96,8 @@
 
 	cuffs.item_flags |= BEING_REMOVED
 	var/breakouttime = rand(170, 300)
-	to_chat(src, span_notice("You attempt to remove [I]... (This will take around [DisplayTimeText(breakouttime)] and you need to stand still.)")) // Не видно другим
-	if(do_after(U, breakouttime, target = U, timed_action_flags = IGNORE_HELD_ITEM, show_progress = FALSE, hidden = TRUE))
+	to_chat(src, span_notice("You attempt to remove [cuffs]... (This will take around [DisplayTimeText(breakouttime)] and you need to stand still.)")) // Не видно другим
+	if(do_after(U, breakouttime, target = U, timed_action_flags = IGNORE_HELD_ITEM, show_progress = TRUE, hidden = TRUE))
 		U.clear_cuffs(cuffs)
 	cuffs.item_flags &= ~BEING_REMOVED
 
