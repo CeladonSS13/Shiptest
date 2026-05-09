@@ -9,8 +9,8 @@
  * Glass sheets
  */
 GLOBAL_LIST_INIT(glass_recipes, list ( \
-	new/datum/stack_recipe("directional window", /obj/structure/window/unanchored, time = 0.5 SECONDS, on_floor = TRUE, window_checks = TRUE), \
-	new/datum/stack_recipe("fulltile window", /obj/structure/window/fulltile/unanchored, 2, time = 1 SECONDS, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("directional window", /obj/structure/window/unanchored, time = 1.5 SECONDS, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("fulltile window", /obj/structure/window/fulltile/unanchored, 2, time = 2 SECONDS, on_floor = TRUE, window_checks = TRUE), \
 	new/datum/stack_recipe("glass floor tile", /obj/item/stack/tile/glass, 1, 4, 20), \
 	new/datum/stack_recipe("glass shard", /obj/item/shard, 1) \
 )) // [CELADON-EDIT] - NO-MOMENTAL-CRAFT
@@ -82,10 +82,11 @@ GLOBAL_LIST_INIT(glass_recipes, list ( \
 
 
 GLOBAL_LIST_INIT(pglass_recipes, list ( \
-	new/datum/stack_recipe("directional window", /obj/structure/window/plasma/unanchored, time = 0, on_floor = TRUE, window_checks = TRUE), \
-	new/datum/stack_recipe("fulltile window", /obj/structure/window/plasma/fulltile/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("directional window", /obj/structure/window/plasma/unanchored, time = 1.5 SECONDS, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("fulltile window", /obj/structure/window/plasma/fulltile/unanchored, 2, time = 2.5 SECONDS, on_floor = TRUE, window_checks = TRUE), \
 	new/datum/stack_recipe("plasma glass shard", /obj/item/shard/plasma, 1) \
 ))
+// [CELADON-EDIT] - NO-MOMENTAL-CRAFT
 
 /obj/item/stack/sheet/plasmaglass
 	name = "plasma glass"
