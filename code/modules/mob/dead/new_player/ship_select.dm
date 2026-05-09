@@ -143,7 +143,8 @@
 			var/datum/overmap/ship/controlled/target = SSovermap.spawn_ship_at_start(template, ship_loc, selected_system)
 
 			// [CELADON-ADD] - Secret - Используется для сбора статистики о покупке кораблей.
-			SSdbcore_ShipStat(usr, template)
+			if(CONFIG_GET(flag/ShipStats))
+				SSdbcore_ShipStat(usr, template)
 			// [/CELADON-ADD]
 
 			if(!target?.shuttle_port)
