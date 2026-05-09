@@ -40,10 +40,12 @@
 	// [CELADON-ADD] Add Sound for Pray
 		if(C.prefs.toggles & SOUND_PRAYERS)
 			SEND_SOUND(C, sound('mod_celadon/_storage_sounds/sound/announce/pray.ogg'))
-		sendDSPray(msg_tmp, C)
 	// [/CELADON-ADD]
 		if(C.prefs.chat_toggles & CHAT_PRAYER)
 			to_chat(C, msg, confidential = TRUE)
+	// [CELADON-ADD]
+	sendDSPray(msg_tmp, src)
+	// [/CELADON-ADD]
 	to_chat(usr, span_info("You pray to the gods: \"[msg_tmp]\""), confidential = TRUE)
 	SSredbot.send_discord_message("admin", "Prayer from [src.key]/([src.name]): [msg]")
 
