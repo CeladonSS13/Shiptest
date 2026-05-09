@@ -343,7 +343,6 @@
 	layer = 5
 	},
 /obj/structure/curtain{
-	pixel_x = 0;
 	pixel_y = 33
 	},
 /turf/open/floor/plasteel/dark,
@@ -404,7 +403,6 @@
 "bI" = (
 /obj/machinery/computer/operating/retro,
 /obj/machinery/defibrillator_mount/loaded{
-	pixel_x = 0;
 	pixel_y = 23
 	},
 /turf/open/floor/plasteel/dark,
@@ -723,8 +721,7 @@
 	pixel_x = -8
 	},
 /obj/item/reagent_containers/glass/filter{
-	pixel_x = -1;
-	pixel_y = 0
+	pixel_x = -1
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew/toilet)
@@ -1130,10 +1127,7 @@
 /obj/machinery/door/window/southleft{
 	name = "Equipment Storage"
 	},
-/obj/structure/window/reinforced/spawner/west{
-	pixel_x = 0;
-	pixel_y = 0
-	},
+/obj/structure/window/reinforced/spawner/west,
 /obj/item/storage/firstaid/brute{
 	pixel_x = -3;
 	pixel_y = 11
@@ -1157,8 +1151,7 @@
 	pixel_y = 6
 	},
 /obj/item/reagent_containers/glass/bottle/formaldehyde{
-	pixel_x = 10;
-	pixel_y = 0
+	pixel_x = 10
 	},
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plasteel/tech,
@@ -1230,9 +1223,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/medical)
 "hc" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced/spawner/west,
 /obj/machinery/door/window/eastleft,
 /obj/machinery/door/poddoor{
@@ -1337,7 +1328,6 @@
 	layer = 5
 	},
 /obj/structure/curtain{
-	pixel_x = 0;
 	pixel_y = 33
 	},
 /turf/open/floor/plasteel/dark,
@@ -1384,9 +1374,7 @@
 /area/ship/medical)
 "jk" = (
 /obj/machinery/smartfridge/chemistry/preloaded{
-	dir = 1;
-	pixel_x = 0;
-	pixel_y = 0
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
@@ -1410,9 +1398,7 @@
 /area/ship/cargo)
 "jR" = (
 /obj/machinery/smartfridge/bloodbank/preloaded{
-	dir = 1;
-	pixel_x = 0;
-	pixel_y = 0
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
@@ -1543,9 +1529,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/stasis{
-	density = 1
-	},
+/obj/machinery/stasis,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/medical)
 "nA" = (
@@ -1562,8 +1546,7 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/apc/auto_name/directional/north{
-	pixel_x = -1;
-	pixel_y = 25
+	pixel_x = -1
 	},
 /obj/machinery/light_switch{
 	pixel_x = 10;
@@ -1594,8 +1577,7 @@
 	pixel_y = 6
 	},
 /obj/item/stock_parts/matter_bin{
-	pixel_x = -4;
-	pixel_y = 0
+	pixel_x = -4
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
@@ -1710,8 +1692,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/stasis{
-	dir = 4;
-	density = 1
+	dir = 4
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/medical)
@@ -1736,9 +1717,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "tw" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -1872,9 +1851,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/medical/morgue)
 "vk" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/fueled/plasma,
 /turf/open/floor/plating/airless,
 /area/ship/engineering)
 "vl" = (
@@ -2032,9 +2009,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/machinery/door/window/northright{
 	dir = 4;
 	name = "Engine Access"
@@ -2127,7 +2102,6 @@
 /obj/effect/turf_decal/trimline/opaque/blue/filled/line,
 /obj/effect/decal/cleanable/blood/footprints{
 	dir = 8;
-	pixel_x = 0;
 	pixel_y = -9
 	},
 /turf/open/floor/plasteel/white,
@@ -2165,7 +2139,6 @@
 "yN" = (
 /obj/machinery/computer/operating/retro,
 /obj/machinery/defibrillator_mount/loaded{
-	pixel_x = 0;
 	pixel_y = 24
 	},
 /turf/open/floor/plasteel/dark,
@@ -2358,8 +2331,7 @@
 	pixel_y = 2
 	},
 /obj/item/trash/cheesie{
-	pixel_x = -25;
-	pixel_y = 0
+	pixel_x = -25
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
@@ -2416,9 +2388,7 @@
 /area/ship/engineering)
 "ED" = (
 /obj/machinery/smartfridge/organ{
-	pixel_y = 0;
-	dir = 1;
-	pixel_x = 0
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
@@ -2521,9 +2491,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/machinery/door/window/northleft{
 	dir = 4;
 	name = "Engine Access"
@@ -2736,7 +2704,6 @@
 	pixel_y = 8
 	},
 /obj/item/stock_parts/cell/high{
-	pixel_x = 0;
 	pixel_y = 2
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -2916,7 +2883,6 @@
 	dir = 5
 	},
 /obj/structure/extinguisher_cabinet/directional/west{
-	pixel_x = -28;
 	pixel_y = 1
 	},
 /turf/open/floor/wood,
@@ -3142,8 +3108,7 @@
 	pixel_y = 4
 	},
 /obj/item/storage/belt/medical{
-	pixel_x = 3;
-	pixel_y = 0
+	pixel_x = 3
 	},
 /obj/item/storage/box/bodybags{
 	pixel_x = 6;
@@ -3162,11 +3127,9 @@
 	pixel_x = -6
 	},
 /obj/item/clothing/glasses/hud/health{
-	pixel_x = 0;
 	pixel_y = -1
 	},
 /obj/item/clothing/glasses/hud/health{
-	pixel_x = 0;
 	pixel_y = -4
 	},
 /obj/item/reagent_containers/medigel/sterilizine{
