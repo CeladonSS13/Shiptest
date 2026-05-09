@@ -309,6 +309,7 @@ em {
   font-weight: bold;
 }
 
+// [CELADON-EDIT] - .admin => .adminlog
 .adminlog {
   color: #4473ff;
   font-weight: bold;
@@ -992,9 +993,7 @@ h2.alert {
   }
 }
 
-//RKz's cute staffwho colors (manually colorpicked from discord role colors, some adjustments used)
-
-//These must match the rank strings exactly to work
+// [CELADON-ADD] - Staffwho verb colors
 
 .host, .project_lead {
   color: hsl(27, 80%, 50%);
@@ -1043,3 +1042,5 @@ h2.alert {
 .localhost {
   color: hsl(46, 98.8%, 68.2%);
 }
+
+// [/CELADON-ADD]
