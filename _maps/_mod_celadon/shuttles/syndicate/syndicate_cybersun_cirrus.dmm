@@ -225,9 +225,6 @@
 	pixel_y = -6;
 	pixel_x = 6
 	},
-/obj/item/defibrillator/compact/loaded{
-	pixel_x = 4
-	},
 /obj/item/clothing/gloves/color/latex/nitrile/evil{
 	pixel_x = 4;
 	pixel_y = 3
@@ -386,9 +383,6 @@
 /turf/open/floor/plasteel/white,
 /area/ship/crew/dorm)
 "cG" = (
-/obj/machinery/stasis{
-	dir = 1
-	},
 /obj/machinery/iv_drip{
 	pixel_x = -9;
 	pixel_y = 21;
@@ -400,6 +394,7 @@
 /obj/machinery/defibrillator_mount{
 	pixel_x = -28
 	},
+/obj/structure/bed,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
 "cL" = (
@@ -416,20 +411,20 @@
 	pixel_x = 6;
 	pixel_y = -3
 	},
-/obj/item/storage/box/ammo/c45_ap{
-	pixel_x = -6;
-	pixel_y = -7
-	},
-/obj/item/storage/box/ammo/c45_ap{
-	pixel_x = -6;
-	pixel_y = -3
-	},
 /obj/machinery/light/directional/south,
 /obj/item/storage/box/ammo/c45_ap{
 	pixel_x = 6;
 	pixel_y = 1
 	},
-/obj/item/storage/box/ammo/c45_ap{
+/obj/item/storage/box/ammo/c45{
+	pixel_x = -6;
+	pixel_y = -7
+	},
+/obj/item/storage/box/ammo/c45{
+	pixel_x = -6;
+	pixel_y = -3
+	},
+/obj/item/storage/box/ammo/c45{
 	pixel_x = -6;
 	pixel_y = 1
 	},
@@ -1495,14 +1490,6 @@
 	pixel_x = -4;
 	pixel_y = 9
 	},
-/obj/item/circuitboard/machine/hydroponics{
-	pixel_x = -2;
-	pixel_y = -7
-	},
-/obj/item/circuitboard/machine/hydroponics{
-	pixel_x = 6;
-	pixel_y = -7
-	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/engines/starboard)
 "jp" = (
@@ -1968,6 +1955,10 @@
 /obj/item/clothing/mask/surgical{
 	pixel_y = -4
 	},
+/obj/item/reagent_containers/spray/cleaner{
+	pixel_x = -7;
+	pixel_y = 12
+	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/medical/surgery)
 "mw" = (
@@ -2118,6 +2109,7 @@
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
 	},
+/obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/hallway/aft)
 "nT" = (
@@ -2282,6 +2274,7 @@
 	dir = 4;
 	name = "Hangar"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/medical)
 "oH" = (
@@ -3075,11 +3068,6 @@
 	},
 /area/ship/crew/dorm)
 "tU" = (
-/obj/machinery/jukebox/boombox{
-	name = "Mr. Jams";
-	pixel_y = 7;
-	pixel_x = -3
-	},
 /obj/structure/table/chem{
 	name = "kitchen counter"
 	},
@@ -3095,6 +3083,14 @@
 	},
 /obj/machinery/firealarm/directional/west{
 	pixel_y = -9
+	},
+/obj/item/reagent_containers/food/drinks/mug/tea{
+	pixel_y = 0;
+	pixel_x = 1
+	},
+/obj/item/reagent_containers/food/drinks/mug/tea{
+	pixel_y = 7;
+	pixel_x = -5
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/ccommons)
@@ -3119,10 +3115,7 @@
 /obj/machinery/airalarm/directional/west,
 /obj/structure/table/glass,
 /obj/effect/turf_decal/spline/fancy/opaque/black,
-/obj/item/reagent_containers/spray/cleaner{
-	pixel_x = -7;
-	pixel_y = 12
-	},
+/obj/item/defibrillator/loaded,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/medical/surgery)
 "uj" = (
@@ -3373,6 +3366,10 @@
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
 	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel/stairs{
 	icon = 'icons/obj/stairs.dmi';
 	dir = 1
@@ -3452,13 +3449,9 @@
 	icon_state = "1-2"
 	},
 /obj/structure/table/glass,
-/obj/item/reagent_containers/food/drinks/mug/tea{
-	pixel_y = 7;
-	pixel_x = -5
-	},
-/obj/item/reagent_containers/food/drinks/mug/tea{
-	pixel_y = 0;
-	pixel_x = 1
+/obj/machinery/jukebox/boombox{
+	name = "Mr. Jams";
+	pixel_y = 0
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/ccommons)
@@ -3602,7 +3595,6 @@
 	color = "#E6D2BA";
 	dir = 1
 	},
-/obj/item/folder/documents/syndicate/cybersun,
 /obj/structure/safe/floor,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
@@ -4364,6 +4356,7 @@
 	name = "PC-82 \"Himejoshi\"";
 	desc = "A limited production run of the \"Himehabu\" catered towards Cybersun Executives. It has an engraving of two women kissing each other across the handle."
 	},
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/bridge)
 "EU" = (
@@ -4695,9 +4688,6 @@
 	dir = 8;
 	color = "#FFFFFF"
 	},
-/obj/structure/closet/crate/freezer/blood,
-/obj/machinery/iv_drip,
-/obj/effect/mapping_helpers/crate_shelve,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/cargo)
 "Hr" = (
@@ -5002,54 +4992,6 @@
 	color = "#E6D2BA"
 	},
 /area/ship/crew/dorm)
-"JF" = (
-/obj/structure/closet/crate/medical{
-	name = "hypospray crate"
-	},
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/morphine{
-	pixel_y = -6
-	},
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/morphine{
-	pixel_y = -6
-	},
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/chitosan{
-	pixel_y = -6;
-	pixel_x = -6
-	},
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/chitosan{
-	pixel_y = -6;
-	pixel_x = -6
-	},
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/chitosan{
-	pixel_y = -6;
-	pixel_x = -6
-	},
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/morphine{
-	pixel_y = -6
-	},
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/stasis{
-	pixel_x = 6;
-	pixel_y = -6
-	},
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/stasis{
-	pixel_x = 6;
-	pixel_y = -6
-	},
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/stasis{
-	pixel_x = 6;
-	pixel_y = -6
-	},
-/obj/item/storage/box/hypospray/mkiii,
-/obj/effect/turf_decal/corner/opaque/cybersunteal/half{
-	dir = 4
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 8;
-	color = "#FFFFFF"
-	},
-/obj/effect/mapping_helpers/crate_shelve,
-/turf/open/floor/plasteel/mono/white,
-/area/ship/cargo)
 "JL" = (
 /obj/effect/turf_decal/industrial/warning/fulltile{
 	color = "#FFFFFF"
@@ -5175,10 +5117,6 @@
 /area/ship/hallway/central)
 "KH" = (
 /obj/structure/table/glass,
-/obj/item/kirbyplants{
-	icon_state = "plant-11";
-	pixel_y = 13
-	},
 /obj/item/reagent_containers/condiment/soysauce{
 	pixel_x = 13;
 	pixel_y = 5
@@ -5195,6 +5133,10 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/item/kirbyplants{
+	icon_state = "plant-11";
+	pixel_y = 13
+	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/ccommons)
 "KJ" = (
@@ -5293,6 +5235,10 @@
 /area/ship/crew/ccommons)
 "Lt" = (
 /obj/machinery/door/window/brigdoor/northright,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel/stairs{
 	icon = 'icons/obj/stairs.dmi';
 	dir = 1
@@ -5320,36 +5266,16 @@
 	pixel_y = -8;
 	pixel_x = -6
 	},
-/obj/item/stack/tape/industrial/electrical{
-	pixel_x = -8
-	},
-/obj/item/multitool{
-	pixel_x = -8;
-	pixel_y = -7
-	},
 /obj/item/multitool{
 	pixel_x = -8;
 	pixel_y = -7
 	},
 /obj/item/stack/cable_coil/cyan{
 	pixel_y = 4
-	},
-/obj/item/stack/cable_coil/cyan{
-	pixel_y = 7
 	},
 /obj/item/storage/toolbox/electrical{
 	pixel_y = -10;
 	pixel_x = 8
-	},
-/obj/item/storage/toolbox/electrical{
-	pixel_y = -5;
-	pixel_x = 8
-	},
-/obj/item/clothing/gloves/color/yellow{
-	pixel_y = -1
-	},
-/obj/item/clothing/gloves/color/yellow{
-	pixel_y = 4
 	},
 /obj/effect/turf_decal/box/white,
 /obj/machinery/light/small/directional/west,
@@ -5507,6 +5433,9 @@
 /obj/effect/turf_decal/industrial/loading/white{
 	color = "#FF0000";
 	dir = 4
+	},
+/obj/machinery/firealarm/directional/north{
+	pixel_x = 6
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/medical/morgue)
@@ -5731,6 +5660,7 @@
 	dir = 4;
 	name = "Hangar"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/medical)
 "OW" = (
@@ -5815,6 +5745,7 @@
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
 	},
+/obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/hallway/aft)
 "Py" = (
@@ -6096,6 +6027,7 @@
 /obj/effect/turf_decal/trimline/opaque/cybersunteal/line{
 	dir = 1
 	},
+/obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/hallway/aft)
 "Rx" = (
@@ -6783,10 +6715,8 @@
 /obj/effect/turf_decal/trimline/opaque/cybersunteal/end{
 	dir = 4
 	},
-/obj/machinery/sleeper{
-	dir = 8
-	},
 /obj/machinery/light/directional/east,
+/obj/structure/frame/machine,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
 "XO" = (
@@ -7820,7 +7750,7 @@ zn
 Rz
 VD
 HF
-JF
+Hk
 Hk
 Db
 bI
