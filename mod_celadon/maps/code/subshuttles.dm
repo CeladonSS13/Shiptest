@@ -175,3 +175,8 @@
 	name = "Felon Drug Carrier"
 	description = "Elysium"
 	prefix = "sESV"
+
+/datum/map_template/shuttle/subshuttles/ambulance
+	file_name = "syndicate_cybersun_bambulance"
+	name = "Gauze-class Ambulance Pod"
+	description = "Syndicate - Cybersun"
