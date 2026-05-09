@@ -394,7 +394,9 @@
 /obj/machinery/defibrillator_mount{
 	pixel_x = -28
 	},
-/obj/structure/bed,
+/obj/structure/bed{
+	dir = 1
+	},
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
 "cL" = (
@@ -2189,7 +2191,6 @@
 	color = "#E6D2BA";
 	dir = 1
 	},
-/obj/item/folder/documents/syndicate/cybersun/biodynamics,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/general/command_crew/cmo)
 "ok" = (
@@ -3599,6 +3600,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
+/obj/item/folder/documents/syndicate/cybersun/biodynamics,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/dorm/captain)
 "yv" = (
