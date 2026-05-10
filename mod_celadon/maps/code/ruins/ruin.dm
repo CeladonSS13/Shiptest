@@ -393,7 +393,7 @@
 	suffix = "jungle_serene_hunts.dmm"
 	cost = 4
 
-	/datum/map_template/ruin/jungle/ramzi_base	//Оффовская ремапнутая Syndicate
+/datum/map_template/ruin/jungle/ramzi_base	//Оффовская ремапнутая Syndicate
 	name = "Ramzi Base"
 	id = "razmi_base"
 	description = "An ICW-era nuclear bunker formerly operated by Ramzi Clique."
