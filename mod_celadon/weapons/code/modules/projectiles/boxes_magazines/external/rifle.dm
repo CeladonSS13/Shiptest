@@ -132,9 +132,6 @@
 /obj/item/ammo_box/magazine/glock_standart/empty
 		start_empty = TRUE
 
-/obj/item/ammo_box/magazine/skm_762_40/extended/empty
-	start_empty = TRUE
-
 /obj/item/ammo_box/magazine/skm_762_40/drum/empty
 	start_empty = TRUE
 

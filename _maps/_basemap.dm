@@ -1,6 +1,6 @@
 /// THE VERY IMPORTANT, FAST DEVELOPER ENVIRONMENT LOADING DEFINE!
 /// If you define this flag, centcom will load. It's also supposed to preload planetoids, but that is disabled.
-//#define FULL_INIT
+#define FULL_INIT // CELADON EDIT
 
 #ifdef FULL_INIT
 	#include "_mod_celadon\map_files\centcomm_ship.dmm" // [CELADON-ADD] - CELADON_CONFIGS_MAPS

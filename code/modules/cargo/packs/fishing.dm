@@ -1,5 +1,3 @@
-/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
-	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
 /datum/supply_pack/fish
 	category = "Fishing Essentials"
 
@@ -61,4 +59,3 @@
 					/obj/item/storage/box/aquarium_props,
 					/obj/item/fish_feed)
 	crate_name = "aquarium kit crate"
-[/CELADON-DELETE] */

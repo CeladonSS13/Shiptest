@@ -77,3 +77,10 @@
 )
 
 #define INSANE_CLOWN 5
+
+// tgui .scss themes
+#define THEME_SYNDICATE "syndicate"
+#define THEME_INTEQ "inteq"
+#define THEME_SOLFED "solfed"
+#define THEME_INDEPENDENT "independent"
+#define THEME_NT "nt"

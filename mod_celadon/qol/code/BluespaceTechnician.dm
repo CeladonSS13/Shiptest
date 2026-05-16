@@ -117,7 +117,7 @@
 		/obj/item/storage/bag/sheetsnatcher/debug=1,\
 		/obj/item/disk/tech_disk/debug=1,\
 		/obj/item/construction/rcd/arcd/debug=1,\
-		/obj/item/gun/energy/plasmacutter/adv = 1,\
+		/obj/item/plasmacutter = 1,\
 		/obj/item/gun/medbeam=1,\
 		/obj/item/extinguisher/advanced = 1,\
 		/obj/item/geiger_counter=1,\

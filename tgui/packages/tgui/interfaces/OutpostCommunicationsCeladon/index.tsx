@@ -18,6 +18,14 @@ export const OutpostCommunicationsCeladon = (props, context) => {
             <Stack textAlign="center">
               <Stack.Item>
                 <Tabs>
+                  {!!faction_theme && (
+                    <Tabs.Tab
+                      selected={tab === 'cargo'}
+                      onClick={() => setTab('cargo')}
+                    >
+                      Cargo
+                    </Tabs.Tab>
+                  )}
                   {!!onShip && (
                     <Tabs.Tab
                       selected={tab === 'shipMissions'}
@@ -26,7 +34,7 @@ export const OutpostCommunicationsCeladon = (props, context) => {
                       Current Missions
                     </Tabs.Tab>
                   )}
-                  {!!outpostDocked && (
+                  {!!outpostDocked && !faction_theme && (
                     <Tabs.Tab
                       selected={tab === 'outpostMissions'}
                       onClick={() => setTab('outpostMissions')}
@@ -51,7 +59,7 @@ export const OutpostCommunicationsCeladon = (props, context) => {
             </Stack>
           }
         />
-        {tab === 'cargo' && <CargoExpressContent />}
+        {tab === 'cargo' && !!faction_theme && <CargoExpressContent />}
         {tab === 'shipMissions' && !!onShip && <ShipMissionsContent />}
         {tab === 'outpostMissions' && !!outpostDocked && (<OutpostMissionsContent />)}
       </Window.Content>

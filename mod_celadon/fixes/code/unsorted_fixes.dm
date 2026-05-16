@@ -4284,3 +4284,7 @@ GLOBAL_LIST_INIT(armor_by_type, generate_armor_type_cache())
 	// [CELADON-EDIT] - CELADON_OVERMAP
 	tileset = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap.dmi'
 	// [/CELADON-EDIT]
+
+/datum/config_entry/number/overmap_encounter_size
+	config_entry_value = 191
+	min_val = 191

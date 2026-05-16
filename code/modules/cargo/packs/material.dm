@@ -1,5 +1,3 @@
-/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
-	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
 /datum/supply_pack/material
 	category = "Materials & Sheets"
 	faction = /datum/faction/nt/ns_logi
@@ -120,4 +118,3 @@
 	cost = 500
 	contains = list(/obj/item/reagent_containers/glass/concrete_bag)
 	crate_name = "Concrete Mix"
-[/CELADON-DELETE] */

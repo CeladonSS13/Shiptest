@@ -64,13 +64,6 @@ export const OutpostCommunications = (props, context) => {
                   }
                 />
               </Stack.Item>
-              <Stack.Item>
-                <Button
-                  content="Pay Fine (3000)"
-                  disabled={points<3000}
-                  onClick={() => act('payFine')}
-                />
-              </Stack.Item>
             </Stack>
           }
         />

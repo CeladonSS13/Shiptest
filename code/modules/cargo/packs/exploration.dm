@@ -1,5 +1,3 @@
-/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
-	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
 /datum/supply_pack/exploration
 	category = "Exploration"
 	crate_type = /obj/structure/closet/crate/wooden
@@ -88,4 +86,3 @@
 	contains = list(
 		/obj/item/clothing/glasses/night
 	)
-[/CELADON-DELETE] */
