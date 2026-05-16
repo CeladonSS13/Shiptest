@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Elegia-class Explorer Schnau",
+	"map_name": "Elegia-class Research Frigate",
 	"map_short_name": "Elegia",
 	"description": "Исследовательский корвет под названием Элегия предназначен для исследовательских задач, ведь он может находиться длительное время на самообеспечении. Основной целью является исследование планет и фауны. Для этого он оснащен шахтёрским инвентарём, боевым оружием и средствами стабилизации полевых оперативников, а также специальным медицинским боргом Синдиката.",
 	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_elegia.dmm",
@@ -13,29 +13,28 @@
 	"namelists": [
 		"CYBERSUN"],
 	"job_slots": {
-		"Cybersun research leader": {
+		"Research Lead": {
 			"outfit": "/datum/outfit/job/cel/syndicate/captain/cybersun",
 			"officer": true,
 			"slots": 1
 		},
-		"CyberSun paramedic": {
+		"Paramedic": {
 			"outfit": "/datum/outfit/job/cel/syndicate/paramedic/cybersun",
 			"slots": 1
 		},
-		"Cybersun mechanic": {
+		"Mechanic": {
 			"outfit": "/datum/outfit/job/cel/syndicate/engineer/cybersun",
 			"slots": 1
-
 		},
-		"Cybersun scientist": {
+		"Scientist": {
 			"outfit": "/datum/outfit/job/cel/syndicate/science/cybersun",
 			"slots": 2
 		},
-		"Cybersun miner": {
+		"Explorer": {
 			"outfit": "/datum/outfit/job/cel/syndicate/miner/cybersun",
 			"slots": 2
 		},
-		"Cybersun assistant": {
+		"Ship's Mate": {
 			"outfit": "/datum/outfit/job/cel/syndicate/assistant/cybersun",
 			"slots": 2
 		}

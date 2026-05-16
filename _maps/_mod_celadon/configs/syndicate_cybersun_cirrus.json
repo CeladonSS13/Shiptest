@@ -1,8 +1,8 @@
 {
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
-	"map_name": "Cirrus-class Medical Carrack",
+	"map_name": "Cirrus-class Medical Corvette",
 	"map_short_name": "Cirrus",
-	"description": "Cirrus-class — это проект Cybersun, созданный для  предоставления услуг Trauma Team в дали от основных объектов Cybersun. Он полностью оборудован для автономной работы судна, а также имеет пристыкованный к нему шаттл класса Gauze, для высадки Trauma Team к пострадавшим.",
+	"description": "«Cirrus» - новый корабль Cybersun специально созданный для поддержки специальных операций. Данный корабль способен нести на себе транспортировочный шаттл для выполнения разного рода задач, например как сбор данных, высадка десанта или эвакуация с поля боя. Он полностью оборудован для автономной работы, и всеми необходимыми системами жизнеобеспечения для оказания медицинской помощи.",
 	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_cybersun_cirrus.dmm",
 	"subshuttle": "ambulance",
 	"starting_funds": 1000,
@@ -18,35 +18,30 @@
 		"NATURAL_AGGRESSIVE"
 	],
 	"job_slots": {
-		"Captain": {
-			"outfit": "/datum/outfit/job/syndicate/captain/cybersun",
+		"Commander": {
+			"outfit": "/datum/outfit/job/cel/syndicate/captain/cybersun",
 			"officer": true,
 			"slots": 1
 		},
 		"Medical Director": {
-			"outfit": "/datum/outfit/job/syndicate/cmo",
+			"outfit": "/datum/outfit/job/cel/syndicate/cmo/cybersun",
 			"officer": true,
 			"slots": 1
 		},
-		"Cybersun Ambassador": {
-			"outfit": "/datum/outfit/job/syndicate/head_of_personnel/cybersun",
-			"officer": true,
+		"Mechanic": {
+			"outfit": "/datum/outfit/job/cel/syndicate/engineer/cybersun",
 			"slots": 1
 		},
-		"Cybersun Technician": {
-			"outfit": "/datum/outfit/job/syndicate/engineer/cybersun",
+		"Medical Doctor": {
+			"outfit": "/datum/outfit/job/cel/syndicate/doctor/cybersun",
+			"slots": 2
+		},
+		"Paramedic": {
+			"outfit": "/datum/outfit/job/cel/syndicate/paramedic/cybersun",
 			"slots": 1
 		},
-		"Cybersun Medical Specialist": {
-			"outfit": "/datum/outfit/job/syndicate/doctor/cybersun",
-			"slots": 2
-		},
-		"Trauma Team Technician": {
-			"outfit": "/datum/outfit/job/syndicate/paramedic/cybersun",
-			"slots": 2
-		},
-		"Ship's Aide": {
-			"outfit": "/datum/outfit/job/syndicate/assistant/cybersun",
+		"Ship's Mate": {
+			"outfit": "/datum/outfit/job/cel/syndicate/assistant/cybersun",
 			"slots": 2
 		}
 	}

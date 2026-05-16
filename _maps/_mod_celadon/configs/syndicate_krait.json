@@ -1,8 +1,8 @@
 {
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
-	"map_name": "Krait-class",
+	"map_name": "Krait-class Dreadnought",
 	"map_short_name": "Krait",
-	"description": "Универсальный корабль класса 'Крайт', совмещает в себе две команды SnD и RnD. Команда SnD занимается поиском, захватом и уничтожением для второй команды занимающейся исследованиями. Корабль оснащен передовыми нанотехнологиями для более эффективной работы, обладает суб шаттлом для быстрого захвата и уничтожения объектов.",
+	"description": "Корабль класса «Krait», совмещает в себе две команды, от Gorlex Marauders и Cybersun прямо выполняющих свое предназначение в Синдикате. Корабль оснащен передовыми нанотехнологиями для более эффективной работы, и небольшим десантным судном для штурмовых операций. ",
 	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_krait.dmm",
 	"subshuttle": "Jet_lancer",
 	"enabled": true,
@@ -16,25 +16,25 @@
 	],
 	"namelists": ["CYBERSUN", "GORLEX"],
 	"job_slots": {
-		"Search and Destroy Team Leader": {
+		"Squad Commander": {
 			"outfit": "/datum/outfit/job/cel/syndicate/captain/gorlex",
 			"officer": true,
 			"slots": 1
 		},
-		"Search and Destroy team member": {
+		"Commando": {
 			"outfit": "/datum/outfit/job/cel/syndicate/security/gorlex",
 			"slots": 3
 		},
-		"Research and Development Team Leader": {
+		"Research Lead": {
 			"outfit": "/datum/outfit/job/cel/syndicate/science/director",
 			"officer": true,
 			"slots": 1
 		},
-		"Research and Development team member": {
+		"Scientist": {
 			"outfit": "/datum/outfit/job/cel/syndicate/science/cybersun",
 			"slots": 3
 		},
-		"GEC Engineering": {
+		"Mechanic": {
 			"outfit": "/datum/outfit/job/cel/syndicate/engineer/gec",
 			"slots": 2
 		}
