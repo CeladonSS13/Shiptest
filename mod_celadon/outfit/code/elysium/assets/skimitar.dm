@@ -6,7 +6,6 @@
 	name = "Scimitar"
 	desc = "An ancient traditional Starbull edged weapon that was very popular among the people of Starbull in 2430 by Sol."
 	icon_state = "skimitar"
-	item_state = "skimitar"
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/skimitar.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/swords_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/swords_righthand.dmi'
@@ -22,21 +21,21 @@
 	hitsound = 'sound/weapons/rapierhit.ogg'
 	custom_materials = list(/datum/material/iron = 1000)
 
+/obj/item/melee/skimitar/get_belt_overlay()
+	return mutable_appearance(CELADON_BELT_OVERLAYS_ICON, icon_state)
+
 /obj/item/melee/skimitar/golden
 	name = "Golden scimitar"
 	desc = "An ancient traditional Starbull edged weapon that was very popular among the people of Starbull in 2430 by Sol. This particular one is made of gold and emeralds. It looks expensive!"
 	icon_state = "skimitar_gold"
-	item_state = "skimitar_gold"
 
 /obj/item/melee/skimitar/silenced
 	name = "silenced Scimitar"
 	icon_state = "skimitar-silenced"
-	item_state = "skimitar-silenced"
 
 /obj/item/melee/skimitar/golden/silenced
 	name = "silenced Golden scimitar"
 	icon_state = "skimitar_gold-silenced"
-	item_state = "skimitar_gold-silenced"
 
 /*
 	Silencer

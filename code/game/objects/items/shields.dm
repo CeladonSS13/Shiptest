@@ -46,7 +46,12 @@
 	. = ..()
 	if(!broken)
 		if(isliving(loc))
-			loc.balloon_alert(loc, "[src] cracks!")
+			// CELADON EDIT START
+			var/mob/living/user = loc
+			loc.balloon_alert(loc, "[src] [breaking_alert]")
+			user.dropItemToGround(src, force = TRUE)
+			// CELADON EDIT END
+		playsound(src, breaking_sound, 100) // CELADON EDIT
 		name = "broken [src::name]"
 		block_chance = 0
 		slowdown = 0

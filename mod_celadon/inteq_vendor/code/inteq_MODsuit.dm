@@ -123,13 +123,11 @@
 	force = 3
 	w_class = WEIGHT_CLASS_NORMAL
 	slowdown = 0.3
-	var/shield_break_sound = 'sound/effects/sparks1.ogg'
-	var/shield_break_leftover = /obj/effect/particle_effect/sparks
 	max_integrity = 250
-	broken_shield = FALSE
-	braking_sound = 'sound/effects/sparks1.ogg'
-	braking_alert = "Shield's down!"
-	integrity_failure = -10000 // So it doesn't brake
+	breaking_sound = 'sound/effects/sparks1.ogg'
+	breaking_alert = "shield's down!"
+	integrity_failure = 0 // So it doesn't break
+	var/shield_break_leftover = /obj/effect/particle_effect/sparks
 
 /obj/item/shield/heavy/mod/emp_act(severity)
 	atom_integrity = 1
@@ -139,7 +137,7 @@
 
 /obj/item/shield/heavy/mod/atom_destruction()
 	SHOULD_CALL_PARENT(FALSE)
-	playsound(loc, shield_break_sound, 35)
+	playsound(loc, breaking_sound, 35)
 	new shield_break_leftover(get_turf(src))
 	if(isliving(loc))
 		loc.balloon_alert(loc, "Shield's down!")

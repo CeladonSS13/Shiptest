@@ -727,74 +727,36 @@ GLOBAL_LIST_INIT(armor_by_type, generate_armor_type_cache())
 	new /obj/item/clothing/glasses/welding/ghostbuster(src)
 
 /obj/item/shield
-	slowdown = parent_type::slowdown
-	drag_slowdown = parent_type::slowdown
 // [CELADON-ADD] - Флаг на включение сломаных щитов из модов - BALLISTIC_SHIELD - Extended Edition
-	var/broken_shield
 	var/spread_bonus = 0
-	var/braking_sound = 'sound/effects/glassbr3.ogg'
-	var/braking_alert = "cracks!"
+	var/breaking_sound = 'sound/effects/glassbr3.ogg'
+	var/breaking_alert = "cracks!"
 // [/CELADON-ADD]
 
 // [CELADON-ADD] - BALLISTIC_SHIELD - Rebalance
 /obj/item/shield/proc/defense_check(turf/aloc, turf/bloc, mobdir)
-	. = TRUE
 	var/dx = aloc.x - bloc.x
 	var/dy = aloc.y - bloc.y
-
 	switch(mobdir)
 		if(NORTH)
 			if(abs(dx) <= dy * 2)
-				. = FALSE
+				return FALSE
 		if(SOUTH)
 			if(abs(dx) <= dy * -2)
-				. = FALSE
+				return FALSE
 		if(EAST)
 			if(abs(dy) <= dx * 2)
-				. = FALSE
+				return FALSE
 		if(WEST)
 			if(abs(dy) <= dx * -2)
-				. = FALSE
-	return
+				return FALSE
+	return TRUE
 // [/CELADON-ADD]
 
 /obj/item/shield/heavy
 	// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition + Rebalance
 	spread_bonus = -3
-	slowdown = 0.5
-	max_integrity = 600
-	block_chance = 60
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/shields.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/shields_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/shields_righthand.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/shields_back.dmi'
-	broken_shield = TRUE
 	// [/CELADON-ADD]
-
-/obj/item/shield/buckler
-	drag_slowdown = parent_type::drag_slowdown
-	// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
-	icon = 'icons/obj/shields.dmi'
-	broken_shield = FALSE
-	// [/CELADON-ADD]
-
-/obj/item/shield/tele
-	// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
-	desc = "An advanced riot shield made of lightweight materials that collapses for easy storage. Use 10 plasteel to repair."
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/shields_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/shields_righthand.dmi'
-	max_integrity = 400
-	block_chance = 50
-	slowdown = 0.3
-	broken_shield = TRUE
-	// [/CELADON-ADD]
-
-/obj/item/shield/tele/attack_self(mob/living/user)
-// [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition - Сломаный щит нельзя сложить
-	if(broken)
-		return
-// [/CELADON-ADD]
-	return ..()
 
 #define SPECIAL_ATTACK_OTHER 4
 
@@ -2164,8 +2126,6 @@ GLOBAL_LIST_INIT(armor_by_type, generate_armor_type_cache())
 	desc = "A standard issue Security gas mask. It doesn't cover the eyes."
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/mask/hailer.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/mask/overlay/hailer.dmi'
-	icon_state = "hailer"
-	item_state = "hailer"
 	unique_death = list('mod_celadon/_storage_sounds/sound/items/gasmask/sec_die.ogg')
 // [/CELADON-ADD]
 
@@ -4249,7 +4209,7 @@ GLOBAL_LIST_INIT(armor_by_type, generate_armor_type_cache())
 /datum/overmap_star_system/shiptest/elysium
 	has_outpost = TRUE
 	override_object_colors = FALSE
-	overmap_icon_state = "overmap_dark"
+	overmap_icon_state = "blank"
 
 /datum/overmap_star_system/shiptest/elysium/ice
 	name = "Elysium Controlled - Value of Public Works"
@@ -4288,3 +4248,21 @@ GLOBAL_LIST_INIT(armor_by_type, generate_armor_type_cache())
 /datum/config_entry/number/overmap_encounter_size
 	config_entry_value = 191
 	min_val = 191
+
+/turf/open/overmap
+	icon = 'mod_celadon/_storage_icons/icons/structures/turf/overmap.dmi'
+	color = COLOR_GRAY
+
+// [CELADON-ADD] - CELADON_OVERMAP_ICON
+/turf/open/overmap/Initialize(mapload, inherited_virtual_z)
+	. = ..()
+	for(var/i in 1 to 3)
+		if(prob(25))
+			var/mutable_appearance/background_star = mutable_appearance(icon, "star[rand(1, 16)]")
+			background_star.pixel_x = rand(-16, 16)
+			background_star.pixel_y = rand(-16, 16)
+			overlays += background_star
+// [/CELADON-ADD]
+
+/obj/item/clothing/accessory/medal/gold
+	vox_override_icon = CELADON_VOX_ACCESSORY_PATH

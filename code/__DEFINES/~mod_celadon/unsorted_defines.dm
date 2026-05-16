@@ -84,3 +84,6 @@
 #define THEME_SOLFED "solfed"
 #define THEME_INDEPENDENT "independent"
 #define THEME_NT "nt"
+
+#define CELADON_BELT_OVERLAYS_ICON 'mod_celadon/_storage_icons/icons/items/clothing/belt/belt_overlays.dmi'
+#define CELADON_VOX_ACCESSORY_PATH 'mod_celadon/_storage_icons/icons/species/vox/accessory_vox.dmi'
