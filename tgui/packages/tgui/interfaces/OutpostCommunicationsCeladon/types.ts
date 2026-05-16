@@ -11,7 +11,7 @@ export type Data = {
   message: string;
   printMsg: string;
   canBuyBeacon: boolean;
-  faction_theme?: string;
+  factionTheme?: string;
 };
 
 export type Mission = {

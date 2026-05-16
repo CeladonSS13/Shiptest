@@ -17,9 +17,26 @@ import { formatMoney } from '../../format';
 export const CargoCatalog = (props, context) => {
   const { act, data } = useBackend(context);
 
-  const { self_paid, app_cost } = data;
+  const { self_paid, app_cost, factionTheme } = data;
 
-  const supplies = Object.values(data.supplies);
+  const [filterFactionLocked, setFilterFactionLocked] = useSharedState(
+    context,
+    'filterFactionLocked',
+    false
+  );
+
+  const supplies = Object.values(data.supplies).map((supply) => ({
+    ...supply,
+    packs: sortBy((pack) => pack.name)(
+      supply.packs.filter((pack) => {
+        if (filterFactionLocked && !pack.faction_locked) {
+          return false;
+        }
+
+        return true;
+      })
+    ),
+  }));
 
   const [activeSupplyName, setActiveSupplyName] = useSharedState(
     context,
@@ -47,6 +64,14 @@ export const CargoCatalog = (props, context) => {
     activeSupplyName === 'search_results'
       ? { packs: searchForSupplies(supplies, searchText) }
       : supplies.find((supply) => supply.name === activeSupplyName);
+
+  const visiblePacks = activeSupply?.packs.filter((pack) => {
+    if (filterFactionLocked && !pack.faction_locked) {
+      return false;
+    }
+
+    return true;
+  });
 
   const removeFromCart = (indexToRemove) => {
     setCart(cart.filter((_, index) => index !== indexToRemove));
@@ -125,7 +150,20 @@ export const CargoCatalog = (props, context) => {
           </Table.Row>
         )}
       </Section>
-      <Section title="Catalog">
+      <Section
+        title="Catalog"
+          buttons={
+            factionTheme !== "independent" && (
+              <Button.Checkbox
+                checked={filterFactionLocked}
+                content="Faction locked"
+                onClick={() =>
+                  setFilterFactionLocked(!filterFactionLocked)
+                }
+              />
+            )
+          }
+      >
         <Flex>
           <Flex.Item ml={-1} mr={1.5}>
             <Tabs vertical>
@@ -163,7 +201,9 @@ export const CargoCatalog = (props, context) => {
                   </Stack.Item>
                 </Stack>
               </Tabs.Tab>
-              {supplies.map((supply) => (
+              {supplies
+                .filter((supply) => supply.packs.length > 0)
+                .map((supply) => (
                 <Tabs.Tab
                   key={supply.name}
                   selected={supply.name === activeSupplyName}
@@ -179,7 +219,7 @@ export const CargoCatalog = (props, context) => {
           </Flex.Item>
           <Flex.Item grow={1} basis={0}>
             <Table>
-              {activeSupply?.packs.map((pack) => {
+              {visiblePacks?.map((pack) => {
                 const tags = [];
                 if (pack.access) {
                   tags.push('Restricted');

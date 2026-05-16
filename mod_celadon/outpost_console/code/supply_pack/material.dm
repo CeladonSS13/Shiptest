@@ -1,5 +1,6 @@
 /datum/supply_pack/material
 	category = "Misc - Materials & Sheets"
+	stable_price = TRUE
 	faction = null
 
 /datum/supply_pack/material/plasteel20

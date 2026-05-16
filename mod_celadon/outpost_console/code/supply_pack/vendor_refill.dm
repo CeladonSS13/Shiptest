@@ -1,5 +1,6 @@
 /datum/supply_pack/vendor_refill
 	category = "Misc - Vendor Refills"
+	stable_price = TRUE
 
 /datum/supply_pack/vendor_refill/bartending
 	name = "Booze-o-mat and Coffee Supply"

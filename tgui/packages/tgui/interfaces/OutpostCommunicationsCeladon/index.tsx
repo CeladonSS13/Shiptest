@@ -7,10 +7,10 @@ import { Mission, Data } from './types';
 
 export const OutpostCommunicationsCeladon = (props, context) => {
   const { act, data } = useBackend<Data>(context);
-  const { outpostDocked, onShip, points, faction_theme } = data;
-  const [tab, setTab] = useSharedState(context, 'outpostTab', '');
+  const { outpostDocked, onShip, points, factionTheme } = data;
+  const [tab, setTab] = useSharedState(context, 'outpostTab', factionTheme ? 'cargo' : '');
   return (
-    <Window theme={faction_theme} width={600} height={700} resizable>
+    <Window theme={factionTheme} width={600} height={700} resizable>
       <Window.Content scrollable>
         <Section
           title={Math.round(points) + ' credits'}
@@ -18,7 +18,7 @@ export const OutpostCommunicationsCeladon = (props, context) => {
             <Stack textAlign="center">
               <Stack.Item>
                 <Tabs>
-                  {!!faction_theme && (
+                  {!!factionTheme && (
                     <Tabs.Tab
                       selected={tab === 'cargo'}
                       onClick={() => setTab('cargo')}
@@ -34,7 +34,7 @@ export const OutpostCommunicationsCeladon = (props, context) => {
                       Current Missions
                     </Tabs.Tab>
                   )}
-                  {!!outpostDocked && !faction_theme && (
+                  {!!outpostDocked && !factionTheme && (
                     <Tabs.Tab
                       selected={tab === 'outpostMissions'}
                       onClick={() => setTab('outpostMissions')}
@@ -59,7 +59,7 @@ export const OutpostCommunicationsCeladon = (props, context) => {
             </Stack>
           }
         />
-        {tab === 'cargo' && !!faction_theme && <CargoExpressContent />}
+        {tab === 'cargo' && !!factionTheme && <CargoExpressContent />}
         {tab === 'shipMissions' && !!onShip && <ShipMissionsContent />}
         {tab === 'outpostMissions' && !!outpostDocked && (<OutpostMissionsContent />)}
       </Window.Content>
@@ -69,7 +69,7 @@ export const OutpostCommunicationsCeladon = (props, context) => {
 
 const CargoExpressContent = (props, context) => {
   const { act, data } = useBackend<Data>(context);
-  const { message } = data;
+  const { message, factionTheme } = data;
   return (
     <>
       <Section title="Cargo Express">

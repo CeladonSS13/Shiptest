@@ -1,5 +1,6 @@
 /datum/supply_pack/food
 	category = "Misc - Food & Agricultural"
+	stable_price = TRUE
 
 /datum/supply_pack/food/beer_keg
 	name = "Beer Keg"

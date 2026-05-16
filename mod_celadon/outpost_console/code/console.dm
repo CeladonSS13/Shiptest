@@ -12,7 +12,10 @@
 	resistance_flags = INDESTRUCTIBLE
 	flags_1 = NODECONSTRUCT_1
 	var/faction_theme
+	/// Area instance that cargo pods are sent to
 	var/area/landing_area
+	/// The pod type used to deliver orders
+	var/obj/structure/closet/supplypod/pod_type = /obj/structure/closet/supplypod/elysiumpod
 
 /obj/machinery/computer/cargo/faction/Initialize()
 	. = ..()
@@ -20,6 +23,7 @@
 	var/datum/bank_account/account = SSeconomy.get_dep_account(charge_account)
 	if(account)
 		charge_account = account
+	landing_area = get_area(src)
 
 /obj/machinery/computer/cargo/faction/ui_data(mob/user)
 	var/list/data = list()
@@ -36,7 +40,7 @@
 		data["blockade"] = TRUE
 	data["message"] = message
 	data["supplies"] = supply_pack_data
-	data["faction_theme"] = faction_theme
+	data["factionTheme"] = faction_theme
 
 	data["shipMissions"] = list()
 	data["outpostMissions"] = list()
@@ -66,7 +70,7 @@
 				return
 
 			var/list/empty_turfs = list()
-			for(var/turf/open/floor/turf in landingzone)
+			for(var/turf/open/floor/turf in landing_area)
 				if(turf.is_blocked_turf())
 					continue
 				empty_turfs += turf
@@ -113,9 +117,6 @@
 			"ref" = REF(current_pack),
 			"desc" = current_pack.desc || current_pack.name,
 		))
-
-/obj/machinery/computer/cargo/faction/reconnect(obj/docking_port/mobile/port)
-	landing_area = get_area(src)
 
 /*
 	MARK: Syndicate

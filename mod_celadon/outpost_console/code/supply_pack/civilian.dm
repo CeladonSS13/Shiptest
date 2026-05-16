@@ -1,3 +1,7 @@
+/datum/supply_pack/civilian
+	category = "Misc - Civilian & Decoration"
+	stable_price = TRUE
+
 /datum/supply_pack/civilian/janitank
 	cost = 350
 
