@@ -25,10 +25,11 @@
 		/datum/overmap/event/rad/minor = 40,
 		/datum/overmap/event/rad = 20,
 		/datum/overmap/event/rad/major = 5,
+		/datum/overmap/event/anomaly = 20, // [CELADON-ADD] - ANOMALY_BALANCE
 	)
 
 	///The minimum lifespan of the random events
-	var/event_lifespan_min = (20 SECONDS)
+	var/event_lifespan_min = (60 SECONDS) // [CELADON-EDIT] - ANOMALY_BALANCE // var/event_lifespan_min = (20 SECONDS)
 	///The maximum lifespan of the random events
 	var/event_lifespan_max = (80 SECONDS)
 
@@ -39,9 +40,9 @@
 
 
 	///The minimum lifespan of the random events
-	var/eventspawn_cooldown_min = (5 SECONDS)
+	var/eventspawn_cooldown_min = (1 SECONDS) // [CELADON-EDIT] - ANOMALY_BALANCE // var/eventspawn_cooldown_min = (5 SECONDS)
 	///The maximum lifespan of the random events
-	var/eventspawn_cooldown_max = (15 SECONDS)
+	var/eventspawn_cooldown_max = (5 SECONDS) // [CELADON-EDIT] - ANOMALY_BALANCE // var/eventspawn_cooldown_max = (15 SECONDS)
 	///cooldown declare to store this value
 	COOLDOWN_DECLARE(event_spawn_cd)
 
@@ -77,12 +78,17 @@
 	if(!picked_event_to_spawn)
 		return
 	spawndir = pick(directions_to_spawn_event)
-
+	// [CELADON-EDIT] - ANOMALY_BALANCE
 	var/list/new_cords = get_overmap_step(spawndir, rand(eventspawn_min_range, eventspawn_max_range))
 	for(var/datum/overmap/current_event as anything in current_overmap.overmap_container[new_cords["x"]][new_cords["y"]])
-		if(istype(current_event, /datum/overmap/event))
+		if(!istype(current_event, /datum/overmap/event))
+			continue
+		if(!istype(current_event, /datum/overmap/event/anomaly))
 			return
-
+		if(istype(picked_event_to_spawn, /datum/overmap/event/anomaly))
+			return
+		continue
+	// [/CELADON-EDIT]
 	var/datum/overmap/event/newvent = new picked_event_to_spawn(list("x" = x, "y" = y), current_overmap, rand(event_lifespan_min, event_lifespan_max))
 	newvent.overmap_move(new_cords["x"],new_cords["y"])
 	COOLDOWN_START(src, event_spawn_cd, rand(eventspawn_cooldown_min, eventspawn_cooldown_max))
@@ -129,8 +135,8 @@
 
 	eventspawn_max_range = 1
 
-	eventspawn_cooldown_min = (20 SECONDS)
-	eventspawn_cooldown_max = (30 SECONDS)
+	eventspawn_cooldown_min = (2 SECONDS) // [CELADON-EDIT] - ANOMALY_BALANCE // eventspawn_cooldown_min = (20 SECONDS)
+	eventspawn_cooldown_max = (5 SECONDS) // [CELADON-EDIT] - ANOMALY_BALANCE // eventspawn_cooldown_max = (30 SECONDS)
 
 /datum/overmap/star/dwarf/orange
 	desc = "One of the main sequence stars, this orange dwarf star emits a steady glow, as it has for billions of years."
@@ -152,6 +158,7 @@
 		/datum/overmap/event/rad/minor = 40,
 		/datum/overmap/event/rad = 20,
 		/datum/overmap/event/rad/major = 5,
+		/datum/overmap/event/anomaly = 20, // [CELADON-ADD] - ANOMALY_BALANCE
 	)
 
 /datum/overmap/star/dwarf/white
@@ -171,9 +178,10 @@
 		/datum/overmap/event/rad/minor = 20,
 		/datum/overmap/event/rad = 10,
 		/datum/overmap/event/rad/major = 5,
+		/datum/overmap/event/anomaly = 20, // [CELADON-ADD] - ANOMALY_BALANCE
 	)
-	eventspawn_cooldown_min = (4 SECONDS)
-	eventspawn_cooldown_max = (8 SECONDS)
+	eventspawn_cooldown_min = (1 SECONDS) // [CELADON-EDIT] - ANOMALY_BALANCE // eventspawn_cooldown_min = (4 SECONDS)
+	eventspawn_cooldown_max = (2 SECONDS) // [CELADON-EDIT] - ANOMALY_BALANCE // eventspawn_cooldown_max = (8 SECONDS)
 
 /*
 		Mid-size stars
@@ -324,12 +332,13 @@
 		/datum/overmap/event/rad/minor = 60,
 		/datum/overmap/event/rad = 70,
 		/datum/overmap/event/rad/major = 80,
+		/datum/overmap/event/anomaly = 30, // [CELADON-ADD] - ANOMALY_BALANCE
 	)
 	event_lifespan_min = (30 SECONDS)
 	event_lifespan_max = (100 SECONDS)
 
-	eventspawn_cooldown_min = (4 SECONDS)
-	eventspawn_cooldown_max = (8 SECONDS)
+	eventspawn_cooldown_min = (1 SECONDS) // [CELADON-EDIT] - ANOMALY_BALANCE // eventspawn_cooldown_min = (4 SECONDS)
+	eventspawn_cooldown_max = (2 SECONDS) // [CELADON-EDIT] - ANOMALY_BALANCE // eventspawn_cooldown_max = (8 SECONDS)
 
 /datum/overmap/star/singularity/alter_token_appearance()
 	. = ..()
@@ -361,12 +370,13 @@
 		/datum/overmap/event/rad/minor = 20,
 		/datum/overmap/event/rad = 10,
 		/datum/overmap/event/rad/major = 5,
+		/datum/overmap/event/anomaly = 20, // [CELADON-ADD] - ANOMALY_BALANCE
 	)
 	event_lifespan_min = (30 SECONDS)
 	event_lifespan_max = (100 SECONDS)
 
-	eventspawn_cooldown_min = (4 SECONDS)
-	eventspawn_cooldown_max = (8 SECONDS)
+	eventspawn_cooldown_min = (1 SECONDS) // [CELADON-EDIT] - ANOMALY_BALANCE // eventspawn_cooldown_min = (4 SECONDS)
+	eventspawn_cooldown_max = (2 SECONDS) // [CELADON-EDIT] - ANOMALY_BALANCE // eventspawn_cooldown_max = (8 SECONDS)
 
 /datum/overmap/star/pulsar/alter_token_appearance()
 	. = ..()

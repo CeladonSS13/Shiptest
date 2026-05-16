@@ -84,18 +84,24 @@
 	// Why not just use HEAD_LAYER? Well, because HEAD_LAYER is a number, and if you try to use numbers as indexes,
 	// BYOND will try to make it an ordered list. So, we have to use a string. This is annoying, but it's the only way to do it smoothly.
 	offset_clothing = list(
-		"[SUIT_STORE_LAYER]" = list(
-							"[NORTH]" = list("x" = 8, "y" = 0),
-							"[EAST]" = list("x" = 8, "y" = 0),
-							"[SOUTH]" = list("x" = 8, "y" = 0),
-							"[WEST]" = list("x" =  -8, "y" = 0)
-							),
+		"[SUIT_STORE_LAYER]" = list( // [CELADON-ADD] - SPECIES OFFSETS
+							"[NORTH]" = list("x" = 9, "y" = -3),
+							"[EAST]" = list("x" = 16, "y" = -3),
+							"[SOUTH]" = list("x" = 9, "y" = -3),
+							"[WEST]" = list("x" =  0, "y" = -3)
+							), // [CELADON-ADD] - SPECIES OFFSETS
 		"[EARS_LAYER]" = list(
 							"[NORTH]" = list("x" = 8, "y" = 0),
 							"[EAST]" = list("x" = 8, "y" = 0),
 							"[SOUTH]" = list("x" = 8, "y" = 0),
 							"[WEST]" = list("x" =  -8, "y" = 0)
 							),
+		"[BACK_LAYER]" = list( // [CELADON-ADD] - SPECIES OFFSETS
+							"[NORTH]" = list("x" = 8, "y" = 0),
+							"[EAST]" = list("x" = 16, "y" = 0),
+							"[SOUTH]" = list("x" = 8, "y" = 0),
+							"[WEST]" = list("x" =  0, "y" = 0)
+							), // [CELADON-ADD] - SPECIES OFFSETS
 	)
 
 /datum/species/vox/random_name(gender,unique,lastname)

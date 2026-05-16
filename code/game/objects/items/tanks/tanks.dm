@@ -70,7 +70,6 @@
 	air_contents.set_temperature(T20C)
 
 	populate_gas()
-
 	START_PROCESSING(SSobj, src)
 
 
@@ -244,18 +243,12 @@
 	// Actually sets the overlay. As of now, this has only been done for smaller emergency tanks
 	// The if statement is set as follows due to the coarse search type that the istype proc conducts, as subtypes count as valid types
 	var/mutable_appearance/status_overlay = mutable_appearance(icon, status_overlay_icon_state)
-	if(istype(src, /obj/item/tank/internals/emergency_oxygen/engi))
+	// CELADON EDIT START - support all tank overlays
+	if(istype(src, /obj/item/tank/internals/emergency_oxygen/double))
 		status_overlay.pixel_x = 1
-		status_overlay.pixel_y = 1
-		overlays += status_overlay
-	else if(istype(src, /obj/item/tank/internals/emergency_oxygen/double))
-		status_overlay.pixel_x = 3
-		status_overlay.pixel_y = 4
-		overlays += status_overlay
-	else if(istype(src, /obj/item/tank/internals/emergency_oxygen))
-		status_overlay.pixel_x = 1
-		status_overlay.pixel_y = 1
-		overlays += status_overlay
+		status_overlay.pixel_y = 2
+	. += status_overlay
+	// CELADON EDIT END
 
 /obj/item/tank/proc/check_status()
 	//Handle exploding, leaking, and rupturing of the tank
