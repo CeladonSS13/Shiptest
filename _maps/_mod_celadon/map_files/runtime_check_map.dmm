@@ -179,10 +179,6 @@
 /obj/item/dice/d12,
 /obj/item/dice/d2,
 /obj/item/dice/d20,
-/obj/item/dice/d20/fate,
-/obj/item/dice/d20/fate/cursed,
-/obj/item/dice/d20/fate/one_use,
-/obj/item/dice/d20/fate/stealth,
 /obj/item/dice/d4,
 /obj/item/dice/d6,
 /obj/item/dice/d8,
@@ -882,7 +878,6 @@
 /obj/item/ammo_box/magazine/m45/hp,
 /obj/item/ammo_box/magazine/m9mm_cm70,
 /obj/item/ammo_box/magazine/m9mm_mauler,
-/obj/item/ammo_box/magazine/recharge/ctf/blue,
 /obj/item/ammo_box/magazine/skm_762_40/drum,
 /obj/item/ammo_box/magazine/sniper_rounds/penetrator,
 /obj/item/ammo_box/magazine/toy/pistol/riot,
@@ -1489,9 +1484,6 @@
 "jR" = (
 /turf/open/space/basic,
 /area/outpost/crew/lounge/cab_4)
-"jT" = (
-/turf/open/floor/wood/cold,
-/area/space)
 "jZ" = (
 /turf/open/space/basic,
 /area/start)
@@ -1746,9 +1738,6 @@
 /obj/item/ammo_box/magazine/pistol556mm,
 /obj/item/ammo_box/magazine/recharge,
 /obj/item/ammo_box/magazine/recharge,
-/obj/item/ammo_box/magazine/recharge/ctf,
-/obj/item/ammo_box/magazine/recharge/ctf/red,
-/obj/item/ammo_box/magazine/recharge/ctf/blue,
 /obj/item/ammo_box/magazine/rifle47x33mm,
 /obj/item/ammo_box/magazine/skm_762_40,
 /obj/item/ammo_box/magazine/skm_762_40,
@@ -1792,8 +1781,6 @@
 /obj/item/ammo_casing/a4570/explosive,
 /obj/item/ammo_casing/a4570/hp,
 /obj/item/ammo_casing/a4570/match,
-/obj/item/ammo_casing/a50,
-/obj/item/ammo_casing/a50/ctf,
 /obj/item/ammo_casing/a556_42,
 /obj/item/ammo_casing/a556_45,
 /obj/item/ammo_casing/a556_45/a856,
@@ -1849,9 +1836,6 @@
 /obj/item/ammo_casing/caseless/gauss/lance,
 /obj/item/ammo_casing/caseless/gauss/slug,
 /obj/item/ammo_casing/caseless/laser,
-/obj/item/ammo_casing/caseless/laser/ctf,
-/obj/item/ammo_casing/caseless/laser/ctf/blue,
-/obj/item/ammo_casing/caseless/laser/ctf/red,
 /obj/item/ammo_casing/caseless/rocket,
 /obj/item/ammo_casing/caseless/rocket/a70mm,
 /obj/item/ammo_casing/caseless/rocket/hedp,
@@ -6616,8 +6600,6 @@
 /obj/item/clothing/under/tajaran/laborer,
 /obj/item/clothing/under/tajaran/fancy,
 /obj/item/clothing/under/tajaran/fancy/evening_suit,
-/obj/item/clothing/wrists/watch/tajaran,
-/obj/item/clothing/wrists/watch/tajaran/female,
 /obj/item/clothing/accessory/tajaran,
 /obj/item/clothing/accessory/tajaran/charm/raskariim,
 /obj/item/clothing/gloves/ring/diamond,
@@ -8288,7 +8270,6 @@
 /obj/machinery/computer/helm/viewscreen,
 /obj/machinery/computer/helm/viewscreen/computer,
 /obj/machinery/drill/mission,
-/obj/machinery/mission_scanner,
 /obj/machinery/elevator_call_button,
 /obj/machinery/elevator_floor_button,
 /obj/machinery/status_display/elevator,
@@ -10292,9 +10273,6 @@
 "ri" = (
 /turf/open/floor/holofloor/snow,
 /area/space)
-"rl" = (
-/turf/open/floor/plating/snowed/temperatre,
-/area/space)
 "rn" = (
 /turf/open/floor/grass/fairy/reebe,
 /area/space)
@@ -10390,9 +10368,6 @@
 /area/space)
 "sF" = (
 /turf/open/floor/bronze,
-/area/space)
-"sG" = (
-/turf/open/floor/plating/snowed/colder,
 /area/space)
 "sK" = (
 /turf/open/floor/carpet/nanoweave,
@@ -11466,9 +11441,6 @@
 /area/ship/general/engineering)
 "JF" = (
 /turf/open/floor/plasteel/patterned/rockplanet,
-/area/space)
-"JK" = (
-/turf/open/floor/plating/ice/colder,
 /area/space)
 "JL" = (
 /turf/open/space/basic,
@@ -13649,7 +13621,7 @@ jm
 Hj
 az
 zj
-jT
+Ev
 Wk
 jc
 yR
@@ -13741,7 +13713,7 @@ tj
 DZ
 ZJ
 as
-rl
+wh
 cD
 oA
 Km
@@ -13808,7 +13780,7 @@ gR
 KK
 Ls
 zJ
-JK
+PH
 bw
 Zj
 rh
@@ -15108,7 +15080,7 @@ vb
 wf
 Am
 Kp
-sG
+PH
 mO
 lJ
 rh
