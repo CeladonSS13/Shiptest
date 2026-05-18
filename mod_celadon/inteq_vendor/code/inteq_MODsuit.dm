@@ -127,6 +127,7 @@
 	breaking_sound = 'sound/effects/sparks1.ogg'
 	breaking_alert = "shield's down!"
 	integrity_failure = 0 // So it doesn't break
+	is_repairable = FALSE
 	var/shield_break_leftover = /obj/effect/particle_effect/sparks
 
 /obj/item/shield/heavy/mod/emp_act(severity)
