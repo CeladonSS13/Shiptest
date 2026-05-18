@@ -1,4 +1,4 @@
-
+/*			=# CELADON CHANGES => mod_celadon/emotes/code/emote.dm #=
 /* EMOTE DATUMS */
 /datum/emote/living
 	mob_type_allowed_typecache = /mob/living
@@ -758,3 +758,4 @@
 	if(user.usable_hands < 2)
 		return FALSE
 	return ..()
+CELADON EDIT */

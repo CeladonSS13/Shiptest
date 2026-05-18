@@ -91,11 +91,22 @@
 
 /obj/item/clothing/attack(mob/M, mob/user, def_zone)
 	if(user.a_intent != INTENT_HARM && moth_edible && ismoth(M))
-		var/obj/item/food/clothing/clothing_as_food = new
-		clothing_as_food.name = name
-		if(clothing_as_food.attack(M, user, def_zone))
+		// [CELADON-EDIT] - FIXES_MOTH_EATING_CLOTHING - Убираем создание временных новых объектов еды, обращаемся напрямую к объектам еды
+		if(M == user)
+			to_chat(user, span_notice("You start eating [src]..."))
+			user.visible_message(span_notice("[user] eats [src]."), span_notice("You eat [src]. It tastes like dust and lint."))
+			user.reagents.add_reagent(/datum/reagent/consumable/nutriment, 1)
+		// CELADON EDIT END
 			take_damage(15, sound_effect=FALSE)
-		qdel(clothing_as_food)
+			playsound(M.loc,'sound/items/eatfood.ogg', rand(10,50), TRUE)
+		else
+			if(do_after(user, 10, M))
+				to_chat(user, span_notice("You try to feed [src] to [M]..."))
+				user.visible_message(span_notice("[user] feeds [src] to [M]."), span_notice("You feed [src] to [M]."))
+				M.reagents.add_reagent(/datum/reagent/consumable/nutriment, 1)
+				take_damage(15, sound_effect=FALSE)
+				playsound(M.loc,'sound/items/eatfood.ogg', rand(10,50), TRUE)
+	// [CELADON-EDIT]
 	else
 		return ..()
 
@@ -120,6 +131,10 @@
 		atom_integrity = max_integrity
 		to_chat(user, span_notice("You fix the damage on [src] with [cloth]."))
 		return TRUE
+	// CELADON EDIT START
+	if(istype(tool, /obj/item/toy/crayon/spraycan) && user.a_intent == INTENT_HARM)	// [CELADON-ADD] - Allows coloring clothes with spray can on harm intent
+		return
+	// CELADON EDIT END
 
 	return ..()
 
@@ -269,26 +284,48 @@
 /obj/item/clothing/proc/armor_to_protection_class(armor_value)
 	armor_value = round(armor_value,10) / 10
 	switch (armor_value)
+		// [CELADON-EDIT] - CELADON_QOL - Заменяем на числовое значение отображение класса брони
+		// if (1)
+		// 	. = "I"
+		// if (2)
+		// 	. = "II"
+		// if (3)
+		// 	. = "III"
+		// if (4)
+		// 	. = "IV"
+		// if (5)
+		// 	. = "V"
+		// if (6)
+		// 	. = "VI"
+		// if (7)
+		// 	. = "VII"
+		// if (8)
+		// 	. = "VIII"
+		// if (9)
+		// 	. = "IX"
+		// if (10 to INFINITY)
+		// 	. = "X"			// CELADON-EDIT - ORIGINAL
 		if (1)
-			. = "I"
+			. = "1"
 		if (2)
-			. = "II"
+			. = "2"
 		if (3)
-			. = "III"
+			. = "3"
 		if (4)
-			. = "IV"
+			. = "4"
 		if (5)
-			. = "V"
+			. = "5"
 		if (6)
-			. = "VI"
+			. = "6"
 		if (7)
-			. = "VII"
+			. = "7"
 		if (8)
-			. = "VIII"
+			. = "8"
 		if (9)
-			. = "IX"
+			. = "9"
 		if (10 to INFINITY)
-			. = "X"
+			. = "10"
+		// [/CELADON-EDIT]
 	return .
 
 /obj/item/clothing/atom_break(damage_flag)
@@ -331,10 +368,15 @@
 
 	var/icon/human_clothing_icon = icon(file2use, state2use)
 
-	if("[layer]" in mob_species.offset_clothing)
+	// [CELADON-EDIT] - SPECIES_OFFSETS - Get species-specific offsets
+	// OLD_CODE:
+	// if("[layer]" in mob_species.offset_clothing)
+	// 	var/list/shifts = mob_species.offset_clothing["[layer]"]
+	var/list/shifts = get_species_worn_offsets(layer, mob_species)
+	if(shifts)
+	// [/CELADON-ADD]
 		// This code taken from Baystation 12
 		var/icon/final_I = icon('icons/blanks/64x64.dmi', "nothing")
-		var/list/shifts = mob_species.offset_clothing["[layer]"]
 
 		// Apply all pixel shifts for each direction.
 		for(var/shift_facing in shifts)
@@ -346,11 +388,30 @@
 			final_I.Insert(canvas, dir = use_dir)
 
 		final_I = fcopy_rsc(final_I)
-		GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]"] = final_I
+
+		// [CELADON-EDIT] - SPECIES_OFFSETS - DEBUG: Track GLOB updates
+		// OLD_CODE: GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]"] = final_I
+		var/glob_key = "[file2use]-[state2use]-[layer]"
+		var/existing = GLOB.species_clothing_icons[mob_species.id][glob_key] ? "UPDATING" : "CREATING"
+		var/offsets_text = ""
+		for(var/dir in shifts)
+			var/list/offset_data = shifts[dir]
+			offsets_text += " [dir]:(x=[offset_data["x"]],y=[offset_data["y"]])"
+		log_game("GLOB DEBUG [existing]: Species=[mob_species.id] Layer=[layer] State=[state2use] File=[file2use] Offsets:[offsets_text]")
+
+		GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]-[layer]"] = final_I
+		// [/CELADON-EDIT]
 		return TRUE
 
 	if(!greyscale_colors || !greyscale_icon_state)
-		GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]"] = human_clothing_icon
+		// [CELADON-EDIT] - SPECIES_OFFSETS - DEBUG: Track GLOB updates
+		// OLD_CODE: GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]"] = final_I
+		var/glob_key = "[file2use]-[state2use]-[layer]"
+		var/existing = GLOB.species_clothing_icons[mob_species.id][glob_key] ? "UPDATING" : "CREATING"
+		log_game("GLOB DEBUG [existing] (No Offsets): Species=[mob_species.id] Layer=[layer] State=[state2use] File=[file2use]")
+
+		GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]-[layer]"] = human_clothing_icon
+		// [/CELADON-EDIT]
 		return
 
 	if(!icon_exists(mob_species.species_clothing_path, greyscale_icon_state))
@@ -370,7 +431,15 @@
 
 	species_icon.MapColors(final_list[1], final_list[2], final_list[3])
 	species_icon = fcopy_rsc(species_icon)
-	GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]"] = species_icon
+
+	// [CELADON-EDIT] - SPECIES_OFFSETS - DEBUG: Track GLOB updates
+	// OLD_CODE: GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]"] = species_icon
+	var/glob_key = "[file2use]-[state2use]-[layer]"
+	var/existing = GLOB.species_clothing_icons[mob_species.id][glob_key] ? "UPDATING" : "CREATING"
+	log_game("GLOB DEBUG [existing] (Greyscale): Species=[mob_species.id] Layer=[layer] State=[state2use] File=[file2use]")
+
+	GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]-[layer]"] = species_icon
+	// [/CELADON-EDIT] - SPECIES OFFSETS END
 
 	return TRUE
 

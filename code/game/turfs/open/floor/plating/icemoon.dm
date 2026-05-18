@@ -22,8 +22,8 @@
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = list(SMOOTH_GROUP_TURF_OPEN, SMOOTH_GROUP_FLOOR_SNOWED)
 	canSmoothWith = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_FLOOR_SNOWED)
-	MAP_SWITCH(pixel_x = 0, pixel_x = -19)
-	MAP_SWITCH(pixel_y = 0, pixel_y = -19)
+	//MAP_SWITCH(pixel_x = 0, pixel_x = -19)	// [CELADON-EDIT] - Снег без квадратиков в sDMM, это конечно круто но зачем...
+	//MAP_SWITCH(pixel_y = 0, pixel_y = -19)	// [/CELADON-EDIT]
 	digResult = /obj/item/stack/sheet/mineral/snow
 	light_color = COLOR_ICEPLANET_LIGHT
 	flammability = -5

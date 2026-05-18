@@ -15,7 +15,7 @@ Contents:
 	allowed = list(/obj/item/gun, /obj/item/ammo_box, /obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/restraints/handcuffs, /obj/item/tank/internals, /obj/item/stock_parts/cell)
 	slowdown = 1
 	resistance_flags = LAVA_PROOF | ACID_PROOF
-	armor = list("melee" = 60, "bullet" = 50, "laser" = 30,"energy" = 40, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 60, "bullet" = 50, "laser" = 30,"energy" = 40, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 100, "acid" = 100, "wound" = 40)  // [CELADON-EDIT] - CELADON_BALANCE
 	strip_delay = 12
 	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	actions_types = list(/datum/action/item_action/initialize_ninja_suit, /datum/action/item_action/ninjasmoke, /datum/action/item_action/ninjaboost, /datum/action/item_action/ninjapulse, /datum/action/item_action/ninjastar, /datum/action/item_action/ninjanet, /datum/action/item_action/ninja_sword_recall, /datum/action/item_action/ninja_stealth, /datum/action/item_action/toggle_glove)
@@ -55,7 +55,10 @@ Contents:
 /obj/item/clothing/suit/space/space_ninja/get_cell()
 	return cell
 
-/obj/item/clothing/suit/space/space_ninja/Initialize()
+// [CELADON-EDIT] - FIXES_ANTAG_NINJA
+// /obj/item/clothing/suit/space/space_ninja/Initialize()	// ORIGINAL
+/obj/item/clothing/suit/space/space_ninja/Initialize(mapload)
+// [/CELADON-EDIT]
 	. = ..()
 
 	//Spark Init
@@ -72,13 +75,15 @@ Contents:
 	cell.name = "black power cell"
 	cell.icon_state = "bscell"
 
+	START_PROCESSING(SSobj, src)	// [CELADON-ADD] - FIXES_ANTAG_NINJA
 /obj/item/clothing/suit/space/space_ninja/Destroy()
 	QDEL_NULL(spark_system)
 	QDEL_NULL(cell)
+	STOP_PROCESSING(SSobj, src)	// [CELADON-ADD] - FIXES_ANTAG_NINJA
 	return ..()
 
 // Space Suit temperature regulation and power usage
-/obj/item/clothing/suit/space/space_ninja/process(seconds_per_tick)
+/obj/item/clothing/suit/space/space_ninja/process(seconds_per_tick) // [CELADON-EDIT] - FIXES_ANTAG_NINJA
 	var/mob/living/carbon/human/user = src.loc
 	if(!user || !ishuman(user) || !(user.wear_suit == src))
 		return
@@ -150,8 +155,8 @@ Contents:
 	H.gloves.icon_state = "s-ninjan"
 	H.gloves.item_state = "s-ninjan"
 
-
-//This proc allows the suit to be taken off.
+// [CELADON-REMOVE] - FIXES_ANTAG_NINJA - Вынесено в модуль
+/* //This proc allows the suit to be taken off.
 /obj/item/clothing/suit/space/space_ninja/proc/unlock_suit()
 	affecting = null
 	REMOVE_TRAIT(src, TRAIT_NODROP, NINJA_SUIT_TRAIT)
@@ -178,6 +183,8 @@ Contents:
 			"The CLOAK-tech device is <B>[stealth?"active":"inactive"]</B>.\n"+\
 			"There are <B>[s_bombs]</B> smoke bomb\s remaining.\n"+\
 			"There are <B>[a_boost]</B> adrenaline booster\s remaining."
+*/
+// [/CELADON-REMOVE]
 
 /obj/item/clothing/suit/space/space_ninja/ui_action_click(mob/user, action)
 	if(istype(action, /datum/action/item_action/initialize_ninja_suit))
@@ -186,6 +193,11 @@ Contents:
 	if(!s_initialized)
 		to_chat(user, span_warning("<b>ERROR</b>: suit offline. Please activate suit."))
 		return FALSE
+	// [CELADON-ADD] - FIXES_ANTAG_NINJA
+	if(s_coold > 0)
+		to_chat(user, span_warning("<b>ERROR</b>: suit is on cooldown."))
+		return FALSE
+	// [/CELADON-ADD]
 	if(istype(action, /datum/action/item_action/ninjasmoke))
 		ninjasmoke()
 		return TRUE
@@ -205,7 +217,7 @@ Contents:
 		ninja_sword_recall()
 		return TRUE
 	if(istype(action, /datum/action/item_action/ninja_stealth))
-		stealth()
+		toggle_stealth()	// [CELADON-ADD] - FIXES_ANTAG_NINJA
 		return TRUE
 	if(istype(action, /datum/action/item_action/toggle_glove))
 		n_gloves.toggledrain()

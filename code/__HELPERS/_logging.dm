@@ -122,7 +122,7 @@
 
 /proc/log_econ(text)
 	if (CONFIG_GET(flag/log_econ))
-		WRITE_LOG(GLOB.world_attack_log, "MONEY: [text]")
+		WRITE_LOG(GLOB.world_celadon_economic_log, "ECON: [text]") // [CELADON-EDIT] - CELADON_COMPONENTS_LOGS - Делаем всей экономики вывод в файл economic.log // WRITE_LOG(GLOB.world_attack_log, "MONEY: [text]")
 
 /proc/log_manifest(ckey, datum/mind/mind,mob/body, latejoin = FALSE)
 	if (CONFIG_GET(flag/log_manifest))
@@ -218,6 +218,12 @@
 /proc/log_job_debug(text)
 	if (CONFIG_GET(flag/log_job_debug))
 		WRITE_LOG(GLOB.world_job_debug_log, "JOB: [text]")
+
+// [CELADON-ADD] - Logging for admin actions.
+/proc/log_celadon_admin(text)
+	if (CONFIG_GET(flag/log_admin))
+		WRITE_LOG(GLOB.world_celadon_admin_log, "[text]")
+// [/CELADON-ADD]
 
 /* Log to both DD and the logfile. */
 /proc/log_world(text)

@@ -46,7 +46,12 @@
 	. = ..()
 	if(!broken)
 		if(isliving(loc))
-			loc.balloon_alert(loc, "[src] cracks!")
+			// CELADON EDIT START
+			var/mob/living/user = loc
+			loc.balloon_alert(loc, "[src] [breaking_alert]")
+			user.dropItemToGround(src, force = TRUE)
+			// CELADON EDIT END
+		playsound(src, breaking_sound, 100) // CELADON EDIT
 		name = "broken [src::name]"
 		block_chance = 0
 		slowdown = 0
@@ -67,6 +72,20 @@
 /obj/item/shield/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK, damage_type = BRUTE)
 	if(transparent && (hitby.pass_flags & PASSGLASS))
 		return FALSE
+// [CELADON-ADD] - BALLISTIC_SHIELD - Rebalance - Щиты не должны блокировать лежа
+	if(damage_type == STAMINA)
+		return FALSE
+	if(attack_type == MARTIAL_ARTS)
+		return FALSE
+	if(isprojectile(hitby))
+		var/obj/projectile/bullet = hitby
+		if(!defense_check(get_turf(owner), get_turf(bullet?.fired_from), owner?.dir))
+			return FALSE
+	else if(!defense_check(get_turf(owner), get_turf(hitby), owner?.dir))
+		return FALSE
+	if(owner.body_position == LYING_DOWN)
+		final_block_chance -= 30
+// [/CELADON-ADD]
 	if(attack_type == THROWN_PROJECTILE_ATTACK)
 		final_block_chance += 30
 	if(attack_type == LEAP_ATTACK)

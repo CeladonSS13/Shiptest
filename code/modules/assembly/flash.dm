@@ -95,7 +95,7 @@
 	times_used++
 	flash_recharge()
 	update_icon(ALL, TRUE)
-	if(user)
+	if(user && !clown_check(user)) // [CELADON-EDIT] - CELADON_RETURN_CONTENT_CLOWNS
 		return FALSE
 	return TRUE
 

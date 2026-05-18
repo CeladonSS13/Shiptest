@@ -111,10 +111,16 @@
 							"[WEST]" = list("x" =  -3, "y" = -3)
 							),
 		"[SUIT_STORE_LAYER]" = list(
-							"[NORTH]" = list("x" = 8, "y" = -1),
-							"[EAST]" = list("x" = 8, "y" = -1),
-							"[SOUTH]" = list("x" = 8, "y" = -1),
-							"[WEST]" = list("x" =  -8, "y" = -1)
+							"[NORTH]" = list("x" = 9, "y" = -3), // [CELADON-ADD] - SPECIES OFFSETS
+							"[EAST]" = list("x" = 16, "y" = -3),
+							"[SOUTH]" = list("x" = 9, "y" = -3),
+							"[WEST]" = list("x" =  0, "y" = -3)
+							),
+		"[BACK_LAYER]" = list(
+							"[NORTH]" = list("x" = 9, "y" = -3),
+							"[EAST]" = list("x" = 16, "y" = -3),
+							"[SOUTH]" = list("x" = 9, "y" = -3),
+							"[WEST]" = list("x" =  0, "y" = -3) // [/CELADON-ADD] - SPECIES OFFSETS
 							),
 	)
 
@@ -143,6 +149,9 @@
 	//Blocks all items that are equippable to other slots. (block anything with a flag that ISN'T item_slot_mask)
 	if(I.slot_flags & ~ITEM_SLOT_KEPORI_BEAK)
 		return FALSE
+	if(HAS_TRAIT(H.wear_mask, TRAIT_NODROP))
+		return FALSE
+	// [/CELADON-ADD]
 	if(H.wear_mask && !swap)
 		return FALSE
 	if(I.w_class > WEIGHT_CLASS_SMALL)

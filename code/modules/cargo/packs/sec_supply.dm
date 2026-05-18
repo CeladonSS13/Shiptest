@@ -310,4 +310,3 @@
 	faction = /datum/faction/pgf
 	faction_discount = 0
 	faction_locked = TRUE
-

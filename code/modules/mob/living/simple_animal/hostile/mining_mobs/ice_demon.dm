@@ -47,7 +47,10 @@
 	nodamage = FALSE
 	temperature = -40
 
-/mob/living/simple_animal/hostile/asteroid/ice_demon/OpenFire()
+// [CELADON-EDIT] - CELADON_BALANCE_MOBS
+// /mob/living/simple_animal/hostile/asteroid/ice_demon/OpenFire()
+/mob/living/simple_animal/hostile/asteroid/old_demon/OpenFire()
+// [/CELADON-EDIT]
 	// Sentient ice demons teleporting has been linked to server crashes
 	if(client)
 		return ..()

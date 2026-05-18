@@ -10,7 +10,9 @@
 				/datum/surgery_step/retract_skin,
 				/datum/surgery_step/clamp_bleeders,
 				/datum/surgery_step/dissection,
-				/datum/surgery_step/clamp_bleeders,
+				// [CELADON-REMOVE] - CELADON_BALANCE - Изменения диссекции
+				// /datum/surgery_step/clamp_bleeders,
+				// [/CELADON-REMOVE]
 				/datum/surgery_step/close)
 	possible_locs = list(BODY_ZONE_CHEST)
 	target_mobtypes = list(/mob/living)
@@ -36,7 +38,10 @@
 		TOOL_SCALPEL = 45,
 		/obj/item/melee/knife = 30,
 		/obj/item/shard = 10)// special tools not only cut down time but also improve probability
-	time = 125
+	// [CELADON-EDIT] - CELADON_BALANCE - Изменения диссекции
+	// time = 125 // CELADON-EDIT - ORIGINAL
+	time = 50
+	// [/CELADON-EDIT]
 	silicons_obey_prob = TRUE
 	repeatable = TRUE
 	experience_given = 0 //experience recieved scales with what's being dissected + which step you're doing.
@@ -59,10 +64,20 @@
 									)
 	if(isalienqueen(target) || isalienroyal(target))
 		cost = (MAX_DISSECTION_REWARD*38)
+	// [CELADON-ADD] - ALIEN_BALANCE - Добавляем praetorian и queen
+	else if(isalien_simple_praetorian(target))
+		cost = (MAX_DISSECTION_REWARD*10)
+	else if(isalien_simple_queen(target))
+		cost = (MAX_DISSECTION_REWARD*12)
+	// [/CELADON-ADD]
 	else if(isalienadult(target))
-		cost = (MAX_DISSECTION_REWARD*30)
+	// [CELADON-EDIT] - CELADON_BALANCE - Изменения диссекции
+		//		cost = (MAX_DISSECTION_REWARD*30) // CELADON-EDIT - ORIGINAL
+		cost = (MAX_DISSECTION_REWARD*2) // cost = (MAX_DISSECTION_REWARD*10) - старый
 	else if(isalien(target))
-		cost = (MAX_DISSECTION_REWARD*14)
+		// cost = (MAX_DISSECTION_REWARD*14) // CELADON-EDIT - ORIGINAL
+		cost = (MAX_DISSECTION_REWARD*4)
+	// [/CELADON-EDIT]
 	else if(ismegafauna(target))
 		cost = (MAX_DISSECTION_REWARD*30)
 	else if(ishuman(target))
@@ -70,8 +85,14 @@
 		if(H?.dna?.species)
 			if(isabductor(H))
 				cost = (MAX_DISSECTION_REWARD*24)
-			else if(iszombie(H) || isshadow(H) || isandroid(H))
-				cost = (MAX_DISSECTION_REWARD*20)
+			// [CELADON-EDIT] - CELADON_BALANCE - Изменения диссекции
+			// else if(iszombie(H) || isshadow(H) || isandroid(H))
+				// cost = (MAX_DISSECTION_REWARD*30) // CELADON-EDIT - ORIGINAL
+			else if(isshadow(H) || isandroid(H))
+				cost = (MAX_DISSECTION_REWARD*30)
+			else if(iszombie(H))
+				cost = (MAX_DISSECTION_REWARD*5)
+				// [/CELADON-EDIT]
 	else for(var/type in mob_mult_list) // THIS. ELSE IF(). ENDS. HERE.
 		if(istype(target, type))
 			cost = (MAX_DISSECTION_REWARD*mob_mult_list[type])

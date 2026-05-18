@@ -88,6 +88,7 @@
 
 	empty_space_mapgen = /datum/map_generator/planet_generator/asteroid
 
+/* [CELADON-EDIT] - CELADON_FIXES
 	var/safe_speed = 3
 	var/list/meteor_types = list(
 		/obj/effect/meteor/dust=3,
@@ -99,6 +100,7 @@
 		/obj/item/stack/ore/plasma,
 		/obj/item/stack/ore/iron,
 		)
+[/CELADON-EDIT] */
 
 /datum/overmap/event/meteor/alter_token_appearance()
 	icon_suffix = "[rand(1, 4)]"
@@ -315,6 +317,8 @@
 	current_overmap.post_edit_token_state(src)
 
 /datum/overmap/event/electric/affect_ship(datum/overmap/ship/controlled/S)
+	if(!(locate(S) in get_nearby_overmap_objects()))
+		return
 	var/datum/virtual_level/ship_vlevel = S.shuttle_port.get_virtual_level()
 	var/turf/source = ship_vlevel.get_side_turf(pick(GLOB.cardinals))
 	tesla_zap(source, 32, rand(min_damage, max_damage), zap_flag)
@@ -370,6 +374,7 @@
 	if(current_overmap.override_object_colors)
 		token.color = current_overmap.hazard_secondary_color
 	token.opacity = TRUE
+	token.icon_state = "nebula_[rand(1, 4)]" // [CELADON-EDIT] - CELADON_OVERMAP_ICON - спрайты некросивые получаюца
 	current_overmap.post_edit_token_state(src)
 
 /datum/overmap/event/nebula/process()
@@ -448,7 +453,7 @@
 
 //Carp "meteors" - throws carp at the ship
 
-/datum/overmap/event/meteor/carp
+/datum/overmap/event/meteor/carp	// вынесено в mod_celadon/fixes/code/research_mission.dm, оставлено дял того чтобы не удалять кучу зависимостей
 	name = "carp migration (moderate)"
 	desc = "A migratory school of space carp. They travel at high speeds, and flying through them may cause them to impact your ship"
 	base_icon_state = "carp_medium_"
@@ -495,7 +500,7 @@
 
 // dust clouds throw dust if you go Way Fast
 
-/datum/overmap/event/meteor/dust
+/datum/overmap/event/meteor/dust	// вынесено в mod_celadon/fixes/code/research_mission.dm, оставлено дял того чтобы не удалять кучу зависимостей
 	name = "dust cloud"
 	desc = "A cloud of spaceborne dust. Relatively harmless, unless you're travelling at relative speeds"
 	base_icon_state = "dust"
@@ -541,7 +546,9 @@
 /datum/overmap/event/anomaly/affect_ship(datum/overmap/ship/controlled/S)
 	var/area/source_area = pick(S.shuttle_port.shuttle_areas)
 	var/source_object = pick(source_area.contents)
-	new /obj/effect/spawner/random/anomaly/storm(get_turf(source_object))
+	// [CELADON-EDIT] - ANOMALY_BALANCE
+	new /obj/effect/spawner/random/anomaly/storm/short(get_turf(source_object)) // new /obj/effect/spawner/random/anomaly/storm(get_turf(source_object))
+	// [/CELADON-EDIT]
 	for(var/mob/M as anything in GLOB.player_list)
 		if(S.shuttle_port.is_in_shuttle_bounds(M))
 			M.playsound_local(M, 'sound/effects/bamf.ogg', 100)
@@ -555,11 +562,20 @@ GLOBAL_LIST_INIT(overmap_event_pick_list, list(
 	/datum/overmap/event/meteor/minor = 45,
 	/datum/overmap/event/meteor = 40,
 	/datum/overmap/event/meteor/major = 35,
-	/datum/overmap/event/meteor/carp/minor = 45,
-	/datum/overmap/event/meteor/carp = 35,
-	/datum/overmap/event/meteor/carp/major = 20,
-	/datum/overmap/event/meteor/dust = 50,
-	/datum/overmap/event/anomaly = 10
+	// [CELADON-EDIT] - CELADON_FIXES - Выносим в свои категории ивенты
+	// /datum/overmap/event/meteor/carp/minor = 45,
+	// /datum/overmap/event/meteor/carp = 35,
+	// /datum/overmap/event/meteor/carp/major = 20,
+	// /datum/overmap/event/meteor/dust = 50,	// CELADON-EDIT - ORIGINAL
+	/datum/overmap/event/carp/minor = 45,
+	/datum/overmap/event/carp = 35,
+	/datum/overmap/event/carp/major = 20,
+	/datum/overmap/event/dust = 50,
+	// /datum/overmap/event/rad/minor = 20,	// Отключено по причине плохой реализации
+	// /datum/overmap/event/rad = 20,
+	// /datum/overmap/event/rad/major = 20,
+	// [/CELADON-EDIT]
+	// /datum/overmap/event/anomaly = 10 // [CELADON-REMOVE] - ANOMALY_BALANCE - хоть и странно, что Солнце спавнит аномалии... Но почему бы и нет. Может Солнце уже давно не Солнце, а лишь его имитация, посланная запертыми в иных мирах.
 ))
 
 ///RADIATION STORM - explodes your organics

@@ -494,6 +494,10 @@
 		return
 	if(T.Adjacent(target_from))
 		if(CanSmashTurfs(T))
+			//[CELADON-ADD] - CELADON_FIXES - найс бля код тгшеры ебаные)))
+			if(isopenturf(T))
+				return
+			//[/CELADON-ADD]
 			T.attack_animal(src)
 			return
 	for(var/obj/O in T.contents)

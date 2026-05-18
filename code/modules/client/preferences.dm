@@ -83,6 +83,20 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/facial_hair_color = "000"		//Facial hair color
 	var/skin_tone = "caucasian1"		//Skin color
 	var/eye_color = "000"				//Eye color
+	// [CELADON-ADD] - TAJARA
+	var/tajara_ears_markings_color = "000"				//tajara ears markings color
+	var/tajara_head_markings_color = "000"				//tajara head markings color
+	var/tajara_nose_markings_color = "000"				//tajara nose markings color
+	var/tajara_chest_markings_color = "000"				//tajara chest markings color
+	var/tajara_body_markings_color = "000"				//tajara body markings color
+	// [CELADON-ADD] - CELADON_RIOL
+	var/riol_ears_markings_color = "000"				//riol ears markings color
+	var/riol_head_markings_color = "000"				//riol head markings color
+	var/riol_nose_markings_color = "000"				//riol nose markings color
+	var/riol_chest_markings_color = "000"				//riol chest markings color
+	var/riol_body_markings_color = "000"				//riol body markings color
+	var/riol_tail_markings_color = "000"				//riol tail markings color
+	// [/CELADON-ADD]
 	var/datum/species/pref_species = new /datum/species/human()	//Mutant race
 	var/species_looking_at = "human"	 //used as a helper to keep track of in the species select thingy
 	var/list/features = list(
@@ -90,6 +104,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							"mcolor2" = "FFF",
 							"grad_style" = "None",
 							"grad_color" = "FFF",
+							"tajara_ears_markings_color" = "FFF",
+							"tajara_head_markings_color" = "FFF",
+							"tajara_nose_markings_color" = "FFF",
+							"tajara_chest_markings_color" = "FFF",
+							"tajara_body_markings_color" = "FFF",
 							"ethcolor" = "9c3030",
 							"tail_lizard" = "Smooth",
 							"tail_human" = "None",
@@ -107,6 +126,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							"spider_spinneret" = "Plain",
 							"spider_mandibles" = "Plain",
 							"squid_face" = "Squidward",
+							"ipc_hair" = "None", // [CELADON-ADD] - CELADON_IPC_HAIR
 							"ipc_screen" = "Blue",
 							"ipc_antenna" = "None",
 							"ipc_tail" = "None",
@@ -133,6 +153,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							RANDOM_BACKPACK = TRUE,
 							RANDOM_JUMPSUIT_STYLE = TRUE,
 							RANDOM_EXOWEAR_STYLE = TRUE,
+							RANDOM_WALLET_STYLE = TRUE,	// [CELADON-ADD] - CELADON_WALLETS
 							RANDOM_HAIRSTYLE = TRUE,
 							RANDOM_HAIR_COLOR = TRUE,
 							RANDOM_FACIAL_HAIRSTYLE = TRUE,
@@ -225,12 +246,18 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/list/equipped_gear = list()
 	///Gear tab currently being viewed
 	var/gear_tab = "General"
+	// [CELADON-ADD] - CELADON_QOL_LOADOUT
+	///Scroll position in gear menu
+	var/gear_scroll_pos = 0
+	// [/CELADON-ADD]
 
 	var/action_buttons_screen_locs = list()
 	///If we want to broadcast deadchat connect/disconnect messages
 	var/broadcast_login_logout = TRUE
 	///What outfit typepaths we've favorited in the SelectEquipment menu
 	var/list/favorite_outfits = list()
+	///If TRUE, we replace the flash effect from flashes with a solid black screen
+	var/darkened_flash = FALSE
 	var/whois_visible = TRUE
 
 	///The outfit we currently want to preview on our character
@@ -410,6 +437,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			dat += "<br><b>Outerwear Style:</b><BR><a href ='?_src_=prefs;preference=exo;task=input'>[exowear]</a>"
 
+			dat += "<br><b>Wallet Style:</b><BR><a href ='?_src_=prefs;preference=wallet;task=input'>[wallet]</a>"	// [CELADON-ADD] - CELADON_WALLETS
 		if(1) //Character Appearance
 			if(path)
 				var/savefile/S = new /savefile(path)
@@ -691,6 +719,23 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</td>"
 					mutant_category = 0
 
+			// [CELADON-ADD] - CELADON_IPC_HAIR
+			if("ipc_hair" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>IPC hair Style</h3>"
+
+				dat += "<a href='byond://?_src_=prefs;preference=ipc_hair;task=input'>[features["ipc_hair"]]</a><BR>"
+
+				dat += "<span style='border: 1px solid #161616; background-color: #[hair_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=hair;task=input'>Change</a><BR>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+			// [/CELADON-ADD] - CELADON_IPC_HAIR
+
 			if("ipc_screen" in pref_species.default_features)
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
@@ -892,6 +937,217 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</td>"
 					mutant_category = 0
 
+			// [CELADON-ADD] - TAJARA
+			if("tajara_ears" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Ears</h3>"
+				dat += "<a href='byond://?_src_=prefs;preference=tajara_ears;task=input'>[features["tajara_ears"]]</a><BR>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+
+			if("tajara_ears_markings" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Ears markings</h3>"
+				dat += "<a href='byond://?_src_=prefs;preference=tajara_ears_markings;task=input'>[features["tajara_ears_markings"]]</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_ears_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajara_ears_markings_color;task=input'>Change</a>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+
+			if("tajara_head_markings" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Head markings</h3>"
+				dat += "<a href='byond://?_src_=prefs;preference=tajara_head_markings;task=input'>[features["tajara_head_markings"]]</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_head_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajara_head_markings_color;task=input'>Change</a>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+
+			if("tajara_nose_markings" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Nose markings</h3>"
+				dat += "<a href='byond://?_src_=prefs;preference=tajara_nose_markings;task=input'>[features["tajara_nose_markings"]]</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_nose_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajara_nose_markings_color;task=input'>Change</a>"
+
+				//dat += "<h3>Skin Tone nose</h3>"
+				//dat += "<a href='byond://?_src_=prefs;preference=s_tone_nose;task=input'>[skin_tone_nose]</a>"
+				//dat += "<a href='byond://?_src_=prefs;preference=toggle_random;random_type=[RANDOM_SKIN_TONE_NOSE]'>[(randomise[RANDOM_SKIN_TONE_NOSE]) ? "Lock" : "Unlock"]</A>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+
+			if("tajara_chest_markings" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Chest markings</h3>"
+				dat += "<a href='byond://?_src_=prefs;preference=tajara_chest_markings;task=input'>[features["tajara_chest_markings"]]</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_chest_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajara_chest_markings_color;task=input'>Change</a>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+
+			if("tajara_body_markings" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Body markings</h3>"
+				dat += "<a href='byond://?_src_=prefs;preference=tajara_body_markings;task=input'>[features["tajara_body_markings"]]</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["tajara_body_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tajara_body_markings_color;task=input'>Change</a>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+
+			if("tajara_tail" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Tail</h3>"
+				dat += "<a href='byond://?_src_=prefs;preference=tajara_tail;task=input'>[features["tajara_tail"]]</a><BR>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+
+			// [CELADON-ADD] - CELADON_RIOL
+			if("riol_ears" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Ears</h3>"
+				dat += "<a href='byond://?_src_=prefs;preference=riol_ears;task=input'>[features["riol_ears"]]</a><BR>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+
+			if("riol_ears_markings" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Ears markings</h3>"
+				dat += "<a href='byond://?_src_=prefs;preference=riol_ears_markings;task=input'>[features["riol_ears_markings"]]</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_ears_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=riol_ears_markings_color;task=input'>Change</a>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+
+			if("riol_head_markings" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Head markings</h3>"
+				dat += "<a href='byond://?_src_=prefs;preference=riol_head_markings;task=input'>[features["riol_head_markings"]]</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_head_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=riol_head_markings_color;task=input'>Change</a>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+
+			if("riol_nose_markings" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Nose markings</h3>"
+				dat += "<a href='byond://?_src_=prefs;preference=riol_nose_markings;task=input'>[features["riol_nose_markings"]]</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_nose_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=riol_nose_markings_color;task=input'>Change</a>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+
+			if("riol_chest_markings" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Chest markings</h3>"
+				dat += "<a href='byond://?_src_=prefs;preference=riol_chest_markings;task=input'>[features["riol_chest_markings"]]</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_chest_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=riol_chest_markings_color;task=input'>Change</a>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+
+			if("riol_body_markings" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Body markings</h3>"
+				dat += "<a href='byond://?_src_=prefs;preference=riol_body_markings;task=input'>[features["riol_body_markings"]]</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_body_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=riol_body_markings_color;task=input'>Change</a>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+
+			// if("riol_tail_markings" in pref_species.default_features) 		// Пока отключено
+			// 	if(!mutant_category)
+			// 		dat += APPEARANCE_CATEGORY_COLUMN
+
+			// 	dat += "<h3>Tail markings</h3>"
+			// 	dat += "<a href='byond://?_src_=prefs;preference=riol_tail_markings;task=input'>[features["riol_tail_markings"]]</a><BR>"
+			// 	dat += "<span style='border:1px solid #161616; background-color: #[features["riol_tail_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=riol_tail_markings_color;task=input'>Change</a>"
+
+			// 	mutant_category++
+			// 	if(mutant_category >= MAX_MUTANT_ROWS)
+			// 		dat += "</td>"
+			// 		mutant_category = 0
+
+			if("riol_legs" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Legs</h3>"
+				dat += "<a href='byond://?_src_=prefs;preference=riol_legs;task=input'>[features["riol_legs"]]</a><BR>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+
+			if("riol_tail" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Tail</h3>"
+				dat += "<a href='byond://?_src_=prefs;preference=riol_tail;task=input'>[features["riol_tail"]]</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_tail_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=riol_tail_markings_color;task=input'>Change</a>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+			// [/CELADON-ADD]
+
 			//Adds a thing to select which phobia because I can't be assed to put that in the quirks window
 			if("Phobia" in all_quirks)
 				if(!mutant_category)
@@ -935,7 +1191,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			if(mutant_category)
 				dat += "</td>"
 				mutant_category = 0
-			dat += "</tr></table>"
 
 			var/metal_skin = fbp || pref_species.inherent_biotypes & MOB_ROBOTIC
 			dat += metal_skin ? "<h3>Chassis Customization</h3>" : "<h3>Prosthetic Limbs</h3>"
@@ -950,8 +1205,33 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				var/bodypart_name = parse_zone(index)
 				dat += "<tr><td><b>[bodypart_name]:</b></td>"
 				dat += "<td><a href='byond://?_src_=prefs;preference=limbs;customize_limb=[index]'>[prosthetic_limbs[index]]</a></td></tr>"
-			dat += "</table><br>"
+			dat += "</tr></table>"
+			// [CELADON-EDIT] - CELADON_LANIUS
+			//dat += "<h3>Prosthetic Limbs</h3>" // ORIGINAL
+			//dat += "<a href='byond://?_src_=prefs;preference=fbp'>Full Body Prosthesis: [fbp ? "Yes" : "No"]</a><br>"
 
+			//if(!fbp)
+				//dat += "<a href='byond://?_src_=prefs;preference=toggle_random;random_type=[RANDOM_PROSTHETIC]'>Random Prosthetic: [(randomise[RANDOM_PROSTHETIC]) ? "Yes" : "No"]</a><br>"
+
+				//dat += "<table>"
+				//for(var/index in prosthetic_limbs)
+					//var/bodypart_name = parse_zone(index)
+					//dat += "<tr><td><b>[bodypart_name]:</b></td>"
+					//dat += "<td><a href='?_src_=prefs;preference=limbs;customize_limb=[index]'>[prosthetic_limbs[index]]</a></td></tr>"
+				//dat += "</table><br>" [/CELADON-EDIT] - ORIGINAL END
+			if(!istype(pref_species, /datum/species/lanius))
+				dat += "<h3>Prosthetic Limbs</h3>"
+				dat += "<a href='byond://?_src_=prefs;preference=fbp'>Full Body Prosthesis: [fbp ? "Yes" : "No"]</a><br>"
+
+				if(!fbp)
+					dat += "<a href='byond://?_src_=prefs;preference=toggle_random;random_type=[RANDOM_PROSTHETIC]'>Random Prosthetic: [(randomise[RANDOM_PROSTHETIC]) ? "Yes" : "No"]</a><br>"
+					dat += "<table>"
+					for(var/index in prosthetic_limbs)
+						var/bodypart_name = parse_zone(index)
+						dat += "<tr><td><b>[bodypart_name]:</b></td>"
+						dat += "<td><a href='?_src_=prefs;preference=limbs;customize_limb=[index]'>[prosthetic_limbs[index]]</a></td></tr>"
+					dat += "</table><br>"
+					//[/CELADON - EDIT]
 		if(2) //Loadout
 			if(path)
 				var/savefile/S = new /savefile(path)
@@ -983,42 +1263,110 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						equipped_gear.Cut(i,i+1)
 
 			dat += "<table align='center' width='100%'>"
-			dat += "<tr><td colspan=4><center><b>Current loadout usage: [length(equipped_gear)]/[CONFIG_GET(number/max_loadout_items)]</b> \[<a href='byond://?_src_=prefs;preference=gear;clear_loadout=1'>Clear Loadout</a>\] | \[<a href='byond://?_src_=prefs;preference=gear;toggle_loadout=1'>Toggle Loadout</a>\]</center></td></tr>"
-			dat += "<tr><td colspan=4><center><b>"
+			// [CELADON-EDIT] - CELADON_DONATE, CELADON_QOL_LOADOUT
+			// dat += "<tr><td colspan=4><center><b>Current loadout usage: [length(equipped_gear)]/[CONFIG_GET(number/max_loadout_items)]</b> \[<a href='byond://?_src_=prefs;preference=gear;clear_loadout=1'>Clear Loadout</a>\] | \[<a href='byond://?_src_=prefs;preference=gear;toggle_loadout=1'>Toggle Loadout</a>\]</center></td></tr>"
+			dat += "<tr><td colspan=4 style='padding: 5px;'><div style='text-align: center; background: #2a2a2a; padding: 8px; border-radius: 5px; margin: 5px 0;'><b style='color: #87CEEB;'>Использовано слотов: [length(equipped_gear)]/[max_loadout_items]</b> | <a href='byond://?_src_=prefs;preference=gear;clear_loadout=1' style='color: #FF6B6B; text-decoration: none;'>Очистить</a> | <a href='byond://?_src_=prefs;preference=gear;toggle_loadout=1' style='color: #4ECDC4; text-decoration: none;'>Переключить</a></div></td></tr>"
+			// [/CELADON-EDIT]
 
-			var/firstcat = 1
-			for(var/category in GLOB.loadout_categories)
-				if(firstcat)
-					firstcat = 0
-				else
-					dat += " |"
-				if(category == gear_tab)
-					dat += " [span_linkoff("[category]")] "
-				else
-					dat += " <a href='byond://?_src_=prefs;preference=gear;select_category=[category]'>[category]</a> "
-			dat += "</b></center></td></tr>"
+
+
+			// Навигация
+			dat += "<tr><td colspan=4>"
+			dat += generate_loadout_tree_navigation(gear_tab)
+			dat += "</td></tr>"
 
 			var/datum/loadout_category/LC = GLOB.loadout_categories[gear_tab]
-			dat += "<tr><td colspan=3><hr></td></tr>"
-			dat += "<tr><td colspan=3><b><center>[LC.category]</center></b></td></tr>"
-			dat += "<tr><td colspan=3><hr></td></tr>"
+			if(!LC)
+				// Если категория не найдена, выбираем первую доступную
+				for(var/cat_name in GLOB.loadout_categories)
+					gear_tab = cat_name
+					LC = GLOB.loadout_categories[gear_tab]
+					break
 
-			dat += "<tr><td colspan=3><hr></td></tr>"
-			dat += "<tr><td><b>Name</b></td>"
-			dat += "<td><b>Restricted Jobs</b></td>"
-			dat += "<td><b>Description</b></td>"
-			dat += "<tr><td colspan=3><hr></td></tr>"
+			// [CELADON-EDIT] - CELADON_QOL_LOADOUT
+			// dat += "<tr><td colspan=3><hr></td></tr>"
+			// dat += "<tr><td colspan=3><b><center>[LC.category]</center></b></td></tr>"
+			// dat += "<tr><td colspan=3><hr></td></tr>"
+
+			// dat += "<tr><td colspan=3><hr></td></tr>"
+			// dat += "<tr><td><b>Name</b></td>"
+			// dat += "<td><b>Restricted Jobs</b></td>"
+			// dat += "<td><b>Description</b></td></tr>"
+			// dat += "<tr><td colspan=3><hr></td></tr>"	// ORIGINAL
+			dat += "<tr><td colspan=4 style='padding: 5px 0;'><div style='text-align: center; font-weight: bold; font-size: 14px; color: #87CEEB; border-bottom: 1px solid #555; padding-bottom: 3px;'>[LC.category]</div></td></tr>"
+
+			// Сетка предметов
+			dat += "<tr><td colspan=4 style='padding: 0;'>"
+			dat += "<div id='gear-container' style='text-align: left; padding: 10px; max-height: 500px; overflow-y: auto; background: #1a1a1a; border: 1px solid #333; border-radius: 5px;' onscroll='localStorage.setItem(\"gearScrollPos\", this.scrollTop);'>"
+			// [/CELADON-ADD]
 			for(var/gear_name in LC.gear)
 				var/datum/gear/G = LC.gear[gear_name]
-				dat += "<tr style='vertical-align:top;'><td width=20%><a style='white-space:normal;' [(G.display_name in equipped_gear) ? "class='linkOn' " : ""]href='byond://?_src_=prefs;preference=gear;toggle_gear=[G.display_name]'>[G.display_name]</a></td><td>"
-				if(G.allowed_roles)
-					dat += "<font size=2>"
-					var/list/allowedroles = list()
-					for(var/role in G.allowed_roles)
-						allowedroles += role
-					dat += english_list(allowedroles, null, ", ")
-					dat += "</font>"
-				dat += "</td><td><font size=2><i>[G.description]</i></font></td></tr>"
+				// [CELADON-EDIT] - CELADON_QOL_LOADOUT
+				var/is_equipped = (G.display_name in equipped_gear)
+				// dat += "<tr style='vertical-align:top; [is_equipped ? "background: #2a4a2a;" : ""]'>"
+
+				// // Колонка с предметом
+				// dat += "<td align='middle' width='20%'>"
+				// dat += "<a style='white-space:normal;' [(G.display_name in equipped_gear) ? "class='linkOn' " : ""]href='byond://?_src_=prefs;preference=gear;toggle_gear=[G.display_name]'>[G.display_name]</a><br/>"
+				// dat += "<img src='data:image/jpeg;base64,[G.base64icon]' class='loadoutPreview'><hr>"
+				// dat += "</td>"
+
+				// // Колонка с профессиями
+				// dat += "<td>"
+				// if(G.allowed_roles)
+				// 	dat += "<font size=2>"
+				// 	var/list/allowedroles = list()
+				// 	for(var/role in G.allowed_roles)
+				// 		allowedroles += role
+				// 	dat += english_list(allowedroles, null, ", ")
+				// 	dat += "</font>"
+				// dat += "</td>"
+
+				// // Колонка с описанием
+				// dat += "<td><font size=2><i>[G.description]</i></font></td>"
+
+				// dat += "</tr>"	// ORIGINAL
+				// Карточка предмета
+				dat += "<div style='width: 200px; height: 150px; border: 2px solid [is_equipped ? "#90EE90" : "#555"]; border-radius: 8px; padding: 8px; background: [is_equipped ? "#2a4a2a" : "#1a1a1a"]; text-align: center; position: relative; display: inline-block; vertical-align: top; margin: 5px; cursor: pointer;' onclick=\"window.location.href='byond://?_src_=prefs;preference=gear;toggle_gear=[G.display_name]'\">"
+
+				// Фракция над картинкой
+				if(G.allowed_factions && G.allowed_factions.len)
+					var/list/faction_color_map = list(
+						"NanoTrasen" = "#283674",
+						"Syndicate" = "#9c0808",
+						"Independent" = "#7e6641",
+						"InteQ" = "#4d291F",
+						"SolFed" = "#191970",
+						"Pirates" = "#000000",
+						"Elysium" = "#006400"
+					)
+					var/list/colored_roles = list()
+					for(var/role in G.allowed_factions)
+						var/color = faction_color_map[role] || "#FFD700"
+						colored_roles += "<span style='color: [color];'>[role]</span>"
+					dat += "<div style='margin: 2px 0 5px 0; font-size: 12px; font-weight: bold;'>[english_list(colored_roles, null, ", ")]</div>"
+
+				// Иконка предмета
+				dat += "<div style='margin: 5px 0;'>"
+				dat += "<img src='data:image/jpeg;base64,[G.base64icon]' style='width: 64px; height: 64px; border: 1px solid #333;'>"
+				dat += "</div>"
+
+				// Название предмета
+				dat += "<div style='margin: 3px 0; color: [is_equipped ? "#90EE90" : "#87CEEB"]; font-weight: bold; font-size: 12px;'>"
+				dat += "[is_equipped ? "✓ " : ""][G.display_name]"
+				dat += "</div>"
+
+				// Описание
+				dat += "<div style='margin: 2px 0; font-size: 12px; color: #CCC; text-align: left; height: 40px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;' title='[G.description]'>"
+				dat += "[G.description]"
+				dat += "</div>"
+
+				dat += "</div>"
+
+			dat += "</div>"
+			dat += "<script>setTimeout(function(){var container = document.getElementById('gear-container'); if(container) {var pos = localStorage.getItem('gearScrollPos'); if(pos) container.scrollTop = parseInt(pos);}}, 10);</script>"
+			dat += "</td></tr>"
+			// [/CELADON-EDIT]
 			dat += "</table>"
 
 		if (3) // Game Preferences
@@ -1154,6 +1502,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Play Lobby Music:</b> <a href='byond://?_src_=prefs;preference=lobby_music'>[(toggles & SOUND_LOBBY) ? "Enabled":"Disabled"]</a><br>"
 			dat += "<b>Play End of Round Sounds:</b> <a href='byond://?_src_=prefs;preference=endofround_sounds'>[(toggles & SOUND_ENDOFROUND) ? "Enabled":"Disabled"]</a><br>"
 			dat += "<b>See Pull Requests:</b> <a href='byond://?_src_=prefs;preference=pull_requests'>[(chat_toggles & CHAT_PULLR) ? "Enabled":"Disabled"]</a><br>"
+			dat += "<b>Darkened Flashes:</b> (replaces flashes with a black screen) <a href='?_src_=prefs;preference=darkened_flash'>[darkened_flash ? "Enabled":"Disabled"]</a><br>" // CELADON EDIT
 			dat += "<b>TGUI Large Buttons:</b> <a href='byond://?_src_=prefs;preference=large_tgui_buttons'>[(large_tgui_buttons) ? "Enabled":"Disabled"]</a><br>"
 			dat += "<b>Swap TGUI Buttons:</b> <a href='byond://?_src_=prefs;preference=swapped_tgui_buttons'>[(swapped_tgui_buttons) ? "Enabled":"Disabled"]</a><br>"
 			dat += "<b>TGUI input toggles:</b> <a href='byond://?_src_=prefs;preference=tgui_input'>[(tgui_input) ? "Enabled":"Disabled"]</a><br>"
@@ -1639,8 +1988,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			if(TG.display_name in equipped_gear)
 				equipped_gear -= TG.display_name
 			else
-				if(length(equipped_gear) >= CONFIG_GET(number/max_loadout_items))
-					alert(user, "You can't have more than [CONFIG_GET(number/max_loadout_items)] items in your loadout!")
+				// [CELADON-EDIT] - CELADON_DONATE
+				// if(length(equipped_gear) >= CONFIG_GET(number/max_loadout_items))
+				// 	alert(user, "You can't have more than [CONFIG_GET(number/max_loadout_items)] items in your loadout!")
+				if(length(equipped_gear) >= max_loadout_items)
+					alert(user, "Ты не можешь иметь больше [max_loadout_items] предметов! Лишь наличие Vip: Tier2 и Tier3 помогут повысить лимит.")
+				// [/CELADON-EDIT]
 					return
 				var/list/type_blacklist = list()
 				var/list/slot_blacklist = list()
@@ -1655,13 +2008,16 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				else
 					alert(user, "Can't equip [TG.display_name]. It conflicts with an already-equipped item.")
 			save_preferences()
+			update_preview_icon(show_gear, show_loadout)	// [CELADON-ADD] - CELADON_QOL_LOADOUT
 
 		else if(href_list["select_category"])
 			gear_tab = href_list["select_category"]
 		else if(href_list["clear_loadout"])
 			equipped_gear.Cut()
+			update_preview_icon(show_gear, show_loadout)	// [CELADON-ADD] - CELADON_QOL_LOADOUT
 		else if(href_list["toggle_loadout"])
 			show_loadout = !show_loadout
+			update_preview_icon(show_gear, show_loadout)	// [CELADON-ADD] - CELADON_QOL_LOADOUT
 
 		ShowChoices(user)
 		return
@@ -1703,6 +2059,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					jumpsuit_style = pick(GLOB.jumpsuitlist)
 				if("exo")
 					exowear = pick(GLOB.exowearlist)
+				// [CELADON-ADD] - CELADON_WALLETS
+				if("wallet")
+					wallet = pick(GLOB.walletlist)
+				// [/CELADON-ADD]
 				if("all")
 					random_character(gender)
 
@@ -1768,31 +2128,40 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						hair_color = sanitize_hexcolor(new_hair)
 
 				if("hairstyle")
-					var/new_hairstyle
-					if(gender == MALE)
-						new_hairstyle = input(user, "Choose your character's hairstyle:", "Character Preference")  as null|anything in GLOB.hairstyles_male_list
-					else if(gender == FEMALE)
-						new_hairstyle = input(user, "Choose your character's hairstyle:", "Character Preference")  as null|anything in GLOB.hairstyles_female_list
-					else
-						new_hairstyle = input(user, "Choose your character's hairstyle:", "Character Preference")  as null|anything in GLOB.hairstyles_list
-					if(new_hairstyle)
-						hairstyle = new_hairstyle
+					// [CELADON-EDIT] - TAJARA - изменения базы
+					// var/new_hairstyle // CELADON-EDIT - ORIGINAL
+					// if(gender == MALE) // CELADON-EDIT - ORIGINAL
+					// 	new_hairstyle = input(user, "Choose your character's hairstyle:", "Character Preference")  as null|anything in GLOB.hairstyles_male_list // CELADON-EDIT - ORIGINAL
+					// else if(gender == FEMALE) // CELADON-EDIT - ORIGINAL
+					// 	new_hairstyle = input(user, "Choose your character's hairstyle:", "Character Preference")  as null|anything in GLOB.hairstyles_female_list // CELADON-EDIT - ORIGINAL
+					// else // CELADON-EDIT - ORIGINAL
+					// 	new_hairstyle = input(user, "Choose your character's hairstyle:", "Character Preference")  as null|anything in GLOB.hairstyles_list // CELADON-EDIT - ORIGINAL
+					// if(new_hairstyle) // CELADON-EDIT - ORIGINAL
+					// 	hairstyle = new_hairstyle // CELADON-EDIT - ORIGINAL
+					hairstyle =  input(user, "Choose your character's hairstyle:", "Character Preference")  as null|anything in pref_species.get_hair_list_by_gender(gender)
+					// [/CELADON-EDIT]
 
 				if("next_hairstyle")
-					if (gender == MALE)
-						hairstyle = next_list_item(hairstyle, GLOB.hairstyles_male_list)
-					else if(gender == FEMALE)
-						hairstyle = next_list_item(hairstyle, GLOB.hairstyles_female_list)
-					else
-						hairstyle = next_list_item(hairstyle, GLOB.hairstyles_list)
+					// [CELADON-EDIT] - TAJARA - изменения базы
+					// if (gender == MALE) // CELADON-EDIT - ORIGINAL
+					// 	hairstyle = next_list_item(hairstyle, GLOB.hairstyles_male_list) // CELADON-EDIT - ORIGINAL
+					// else if(gender == FEMALE) // CELADON-EDIT - ORIGINAL
+					// 	hairstyle = next_list_item(hairstyle, GLOB.hairstyles_female_list) // CELADON-EDIT - ORIGINAL
+					// else // CELADON-EDIT - ORIGINAL
+					// 	hairstyle = next_list_item(hairstyle, GLOB.hairstyles_list) // CELADON-EDIT - ORIGINAL
+					hairstyle = next_list_item(hairstyle, pref_species.get_hair_list_by_gender(gender))
+					// [/CELADON-EDIT]
 
 				if("previous_hairstyle")
-					if (gender == MALE)
-						hairstyle = previous_list_item(hairstyle, GLOB.hairstyles_male_list)
-					else if(gender == FEMALE)
-						hairstyle = previous_list_item(hairstyle, GLOB.hairstyles_female_list)
-					else
-						hairstyle = previous_list_item(hairstyle, GLOB.hairstyles_list)
+					// [CELADON-EDIT] - TAJARA - изменения базы
+					// if (gender == MALE) // CELADON-EDIT - ORIGINAL
+					// 	hairstyle = previous_list_item(hairstyle, GLOB.hairstyles_male_list) // CELADON-EDIT - ORIGINAL
+					// else if(gender == FEMALE) // CELADON-EDIT - ORIGINAL
+					// 	hairstyle = previous_list_item(hairstyle, GLOB.hairstyles_female_list) // CELADON-EDIT - ORIGINAL
+					// else // CELADON-EDIT - ORIGINAL
+					// 	hairstyle = previous_list_item(hairstyle, GLOB.hairstyles_list) // CELADON-EDIT - ORIGINAL
+					hairstyle = previous_list_item(hairstyle, pref_species.get_hair_list_by_gender(gender))
+					// [/CELADON-EDIT]
 
 				if("facial")
 					var/new_facial = input(user, "Choose your character's facial-hair colour:", "Character Preference","#"+facial_hair_color) as color|null
@@ -1800,31 +2169,90 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						facial_hair_color = sanitize_hexcolor(new_facial)
 
 				if("facial_hairstyle")
-					var/new_facial_hairstyle
-					if(gender == MALE)
-						new_facial_hairstyle = input(user, "Choose your character's facial-hairstyle:", "Character Preference")  as null|anything in GLOB.facial_hairstyles_male_list
-					else if(gender == FEMALE)
-						new_facial_hairstyle = input(user, "Choose your character's facial-hairstyle:", "Character Preference")  as null|anything in GLOB.facial_hairstyles_female_list
-					else
-						new_facial_hairstyle = input(user, "Choose your character's facial-hairstyle:", "Character Preference")  as null|anything in GLOB.facial_hairstyles_list
-					if(new_facial_hairstyle)
-						facial_hairstyle = new_facial_hairstyle
+					// [CELADON-EDIT] - TAJARA - изменения базы
+					// var/new_facial_hairstyle // CELADON-EDIT - ORIGINAL
+					// if(gender == MALE) // CELADON-EDIT - ORIGINAL
+					// 	new_facial_hairstyle = input(user, "Choose your character's facial-hairstyle:", "Character Preference")  as null|anything in GLOB.facial_hairstyles_male_list // CELADON-EDIT - ORIGINAL
+					// else if(gender == FEMALE) // CELADON-EDIT - ORIGINAL
+					// 	new_facial_hairstyle = input(user, "Choose your character's facial-hairstyle:", "Character Preference")  as null|anything in GLOB.facial_hairstyles_female_list // CELADON-EDIT - ORIGINAL
+					// else // CELADON-EDIT - ORIGINAL
+					// 	new_facial_hairstyle = input(user, "Choose your character's facial-hairstyle:", "Character Preference")  as null|anything in GLOB.facial_hairstyles_list // CELADON-EDIT - ORIGINAL
+					// if(new_facial_hairstyle) // CELADON-EDIT - ORIGINAL
+					// 	facial_hairstyle = new_facial_hairstyle // CELADON-EDIT - ORIGINAL
+					facial_hairstyle = input(user, "Choose your character's facial-hairstyle:", "Character Preference")  as null|anything in pref_species.get_facial_hair_list_by_gender(gender)
+					// [/CELADON-EDIT]
 
 				if("next_facehairstyle")
-					if (gender == MALE)
-						facial_hairstyle = next_list_item(facial_hairstyle, GLOB.facial_hairstyles_male_list)
-					else if(gender == FEMALE)
-						facial_hairstyle = next_list_item(facial_hairstyle, GLOB.facial_hairstyles_female_list)
-					else
-						facial_hairstyle = next_list_item(facial_hairstyle, GLOB.facial_hairstyles_list)
+					// [CELADON-EDIT] - TAJARA - изменения базы
+					// if (gender == MALE) // CELADON-EDIT - ORIGINAL
+					// 	facial_hairstyle = next_list_item(facial_hairstyle, GLOB.facial_hairstyles_male_list) // CELADON-EDIT - ORIGINAL
+					// else if(gender == FEMALE) // CELADON-EDIT - ORIGINAL
+					// 	facial_hairstyle = next_list_item(facial_hairstyle, GLOB.facial_hairstyles_female_list) // CELADON-EDIT - ORIGINAL
+					// else // CELADON-EDIT - ORIGINAL
+					// 	facial_hairstyle = next_list_item(facial_hairstyle, GLOB.facial_hairstyles_list) // CELADON-EDIT - ORIGINAL
+					facial_hairstyle = next_list_item(facial_hairstyle, pref_species.get_facial_hair_list_by_gender(gender))
+					// [/CELADON-EDIT]
 
 				if("previous_facehairstyle")
-					if (gender == MALE)
-						facial_hairstyle = previous_list_item(facial_hairstyle, GLOB.facial_hairstyles_male_list)
-					else if (gender == FEMALE)
-						facial_hairstyle = previous_list_item(facial_hairstyle, GLOB.facial_hairstyles_female_list)
-					else
-						facial_hairstyle = previous_list_item(facial_hairstyle, GLOB.facial_hairstyles_list)
+					// [CELADON-EDIT] - TAJARA - изменения базы
+					// if (gender == MALE) // CELADON-EDIT - ORIGINAL
+					// 	facial_hairstyle = previous_list_item(facial_hairstyle, GLOB.facial_hairstyles_male_list) // CELADON-EDIT - ORIGINAL
+					// else if (gender == FEMALE) // CELADON-EDIT - ORIGINAL
+					// 	facial_hairstyle = previous_list_item(facial_hairstyle, GLOB.facial_hairstyles_female_list) // CELADON-EDIT - ORIGINAL
+					// else // CELADON-EDIT - ORIGINAL
+					// 	facial_hairstyle = previous_list_item(facial_hairstyle, GLOB.facial_hairstyles_list) // CELADON-EDIT - ORIGINAL
+					facial_hairstyle = previous_list_item(facial_hairstyle, pref_species.get_facial_hair_list_by_gender(gender))
+					// [/CELADON-EDIT]
+
+				// [CELADON-ADD] - TAJARA
+
+				if("tajara_ears_markings_color")
+					var/new_tajara_ears_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["tajara_ears_markings_color"]) as color|null
+					if(new_tajara_ears_markings_color)
+						features["tajara_ears_markings_color"] = sanitize_hexcolor(new_tajara_ears_markings_color)
+				if("tajara_head_markings_color")
+					var/new_tajara_ears_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["tajara_head_markings_color"]) as color|null
+					if(new_tajara_ears_markings_color)
+						features["tajara_head_markings_color"] = sanitize_hexcolor(new_tajara_ears_markings_color)
+				if("tajara_nose_markings_color")
+					var/new_tajara_nose_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["new_tajara_nose_markings_color"]) as color|null
+					if(new_tajara_nose_markings_color)
+						features["tajara_nose_markings_color"] = sanitize_hexcolor(new_tajara_nose_markings_color)
+				if("tajara_chest_markings_color")
+					var/new_tajara_chest_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["tajara_chest_markings_color"]) as color|null
+					if(new_tajara_chest_markings_color)
+						features["tajara_chest_markings_color"] = sanitize_hexcolor(new_tajara_chest_markings_color)
+				if("tajara_body_markings_color")
+					var/new_tajara_body_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["tajara_body_markings_color"]) as color|null
+					if(new_tajara_body_markings_color)
+						features["tajara_body_markings_color"] = sanitize_hexcolor(new_tajara_body_markings_color)
+
+				// [CELADON-ADD] - CELADON_RIOL
+				if("riol_ears_markings_color")
+					var/new_riol_ears_markings_color = input(user, "Choose your character's ears markings colour:", "Character Preference","#"+features["riol_ears_markings_color"]) as color|null
+					if(new_riol_ears_markings_color)
+						features["riol_ears_markings_color"] = sanitize_hexcolor(new_riol_ears_markings_color)
+				if("riol_head_markings_color")
+					var/new_riol_ears_markings_color = input(user, "Choose your character's head markings colour:", "Character Preference","#"+features["riol_head_markings_color"]) as color|null
+					if(new_riol_ears_markings_color)
+						features["riol_head_markings_color"] = sanitize_hexcolor(new_riol_ears_markings_color)
+				if("riol_nose_markings_color")
+					var/new_riol_nose_markings_color = input(user, "Choose your character's nose markings colour:", "Character Preference","#"+features["new_riol_nose_markings_color"]) as color|null
+					if(new_riol_nose_markings_color)
+						features["riol_nose_markings_color"] = sanitize_hexcolor(new_riol_nose_markings_color)
+				if("riol_chest_markings_color")
+					var/new_riol_chest_markings_color = input(user, "Choose your character's chest markings colour:", "Character Preference","#"+features["riol_chest_markings_color"]) as color|null
+					if(new_riol_chest_markings_color)
+						features["riol_chest_markings_color"] = sanitize_hexcolor(new_riol_chest_markings_color)
+				if("riol_body_markings_color")
+					var/new_riol_body_markings_color = input(user, "Choose your character's body markings colour:", "Character Preference","#"+features["riol_body_markings_color"]) as color|null
+					if(new_riol_body_markings_color)
+						features["riol_body_markings_color"] = sanitize_hexcolor(new_riol_body_markings_color)
+				if("riol_tail_markings_color")
+					var/new_riol_tail_markings_color = input(user, "Choose your character's tail markings colour:", "Character Preference","#"+features["riol_tail_markings_color"]) as color|null
+					if(new_riol_tail_markings_color)
+						features["riol_tail_markings_color"] = sanitize_hexcolor(new_riol_tail_markings_color)
+				// [/CELADON-ADD]
 
 				if("hair_gradient")
 					var/new_hair_gradient_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["grad_color"]) as color|null
@@ -2005,6 +2433,16 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(new_spider_spinneret)
 						features["spider_spinneret"] = new_spider_spinneret
 
+				// [CELADON-ADD] - CELADON_IPC_HAIR
+				if("ipc_hair")
+					var/new_ipc_hair
+
+					new_ipc_hair = input(user, "Choose your character's IPC hair:", "Character Preference") as null|anything in GLOB.ipc_hair_list
+
+					if(new_ipc_hair)
+						features["ipc_hair"] = new_ipc_hair
+				// [/CELADON-ADD] - CELADON_IPC_HAIR
+
 				if("ipc_screen")
 					var/new_ipc_screen
 
@@ -2130,6 +2568,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(new_exo)
 						exowear = new_exo
 
+				// [CELADON-ADD] - CELADON_WALLETS
+				if("wallet")
+					var/new_wallet = input(user, "Choose your character's style of wallet:", "Character Preference")  as null|anything in GLOB.walletlist
+					if(new_wallet)
+						wallet = new_wallet
+				// [/CELADON-ADD]
 				if("ai_core_icon")
 					var/ai_core_icon = input(user, "Choose your preferred AI core display screen:", "AI Core Display Screen Selection") as null|anything in GLOB.ai_core_display_screens
 					if(ai_core_icon)
@@ -2504,6 +2948,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							scaling_method = SCALING_METHOD_NORMAL
 					user.client.view_size.setZoomMode()
 
+				if("darkened_flash")
+					darkened_flash = !darkened_flash
+
 				if("save")
 					save_preferences()
 					save_character()
@@ -2572,6 +3019,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			organ_eyes.eye_color = eye_color
 		organ_eyes.old_eye_color = eye_color
 	character.skin_tone = skin_tone
+	// [CELADON-ADD] - TAJARA
+	//character.skin_tone_nose = skin_tone_nose
+	character.skin_tone_tajara = skin_tone_tajara
+	// [CELADON-ADD] - CELADON_RIOL
+	character.skin_tone_riol = skin_tone_riol
+	// [/CELADON-ADD]
 	character.underwear = underwear
 	character.underwear_color = underwear_color
 	character.undershirt = undershirt
@@ -2584,6 +3037,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.jumpsuit_style = jumpsuit_style
 
 	character.exowear = exowear
+	character.wallet = wallet	// [CELADON-ADD] - CELADON_WALLETS
 
 	character.fbp = fbp
 
@@ -2662,6 +3116,21 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	if("tail_lizard" in pref_species.default_features)
 		character.dna.species.mutant_bodyparts |= "tail_lizard"
+
+	// [CELADON-ADD] - TAJARA
+	if("tajara_tail" in pref_species.default_features)
+		character.dna.species.mutant_bodyparts |= "tajara_tail"
+
+	if("tajara_ears" in pref_species.default_features)
+		character.dna.species.mutant_bodyparts |= "tajara_ears"
+
+	// [CELADON-ADD] - CELADON_RIOL
+	if("riol_tail" in pref_species.default_features)
+		character.dna.species.mutant_bodyparts |= "riol_tail"
+
+	if("riol_ears" in pref_species.default_features)
+		character.dna.species.mutant_bodyparts |= "riol_ears"
+	// [/CELADON-ADD]
 
 	if(icon_updates)
 		character.update_body()

@@ -31,7 +31,10 @@
 
 /obj/machinery/computer/telecomms/monitor/ui_interact(mob/user)
 	. = ..()
-	var/dat = "<TITLE>Telecommunications Monitor</TITLE><center><b>Telecommunications Monitor</b></center>"
+	// [/CELADON-ADD] - CELADON_FIXES - Support of cyrillic letters in browser window
+	var/dat = "<meta http-equiv='X-UA-Compatible' content='IE=edge' charset='UTF-8'/>"
+	// [/CELADON-ADD]
+	dat += "<TITLE>Telecommunications Monitor</TITLE><center><b>Telecommunications Monitor</b></center>"
 
 	switch(screen)
 		// --- Main Menu ---

@@ -25,6 +25,14 @@ import './styles/themes/retro.scss';
 import './styles/themes/syndicate.scss';
 import './styles/themes/wizard.scss';
 import './styles/themes/admin.scss';
+// [CELADON-ADD] - CELADON_OUTPOST_CONSOLE - TGUI-темы Целадона
+import './styles/themes/solfed.scss';
+import './styles/themes/inteq.scss';
+import './styles/themes/independent.scss';
+import './styles/themes/nt.scss';
+import './styles/themes/elysium.scss';
+import './styles/themes/pirates.scss';
+// [/CELADON-ADD]
 
 import { StoreProvider, configureStore } from './store';
 

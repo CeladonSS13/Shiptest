@@ -244,4 +244,7 @@ Maintenance panel is [open ? "opened" : "closed"]"}
 
 
 /obj/machinery/bot_core/hygienebot
-	req_one_access = list(ACCESS_JANITOR, ACCESS_ROBOTICS)
+// [CELADON-EDIT] - QoL
+//	req_one_access = list(ACCESS_JANITOR, ACCESS_ROBOTICS)
+	req_one_access = 0
+// [/CELADON-EDIT]

@@ -109,9 +109,18 @@ other types of metals and chemistry for reagents).
 	pixel_y = base_pixel_y + rand(-5, 5)
 	if(design_name)
 		name = jointext(list(disk_name, design_name), " - ")
-	if(length(starting_blueprints))
-		for(var/design in starting_blueprints)
-			blueprints += new design()
+		// CELADON: фиксированная длина + раскладка стартовых чертежей по индексам
+		var/list/fixed_blueprints = list()
+		fixed_blueprints.len = max_blueprints
+		var/idx = 1
+		if(length(starting_blueprints))
+			for(var/path in starting_blueprints)
+				if(idx > max_blueprints)
+					break
+				fixed_blueprints[idx] = new path()
+				idx++
+		blueprints = fixed_blueprints
+		// [/CELADON-EDIT]
 
 /obj/item/disk/design_disk/adv
 	name = "Advanced Component Design Disk"

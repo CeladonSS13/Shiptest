@@ -250,6 +250,10 @@
 /datum/overmap/outpost/pre_docked(datum/overmap/ship/controlled/dock_requester, override_dock)
 	var/obj/docking_port/stationary/h_dock
 	var/datum/map_template/outpost/h_template = get_hangar_template(dock_requester.shuttle_port)
+	// [CELADON-ADD] - CELADON_COMPONENT - Pirates Update
+	if(dock_requester.source_template.category == "Pirates") //Проверка шипа на пиратскую фракцию
+		return new /datum/docking_ticket(_docking_error = "Docking request denied: Unauthorized ship") //Запрет пиратам на стыковку с аванпостом
+	// [/CELADON-ADD]
 
 	if(src in dock_requester.blacklisted)
 		return new /datum/docking_ticket(_docking_error = "Docking request denied: [dock_requester.blacklisted[src]]")
@@ -308,6 +312,8 @@
 	signal.send_to_receivers()
 	return
 
+// [CELADON-REMOVE] - CELADON_MASTER_FILES - Вырезано, так как создаёт рантаймы при удалении корабля через манипулятор
+/*
 /datum/overmap/outpost/post_undocked(datum/overmap/ship/controlled/dock_requester)
 	// just get an arbitrary hangar dock. for the message source. at this point,
 	// we don't have enough information to know which hangar the ship was docked to.
@@ -332,6 +338,8 @@
 		list(MODE_CUSTOM_SAY_EMOTE = "coldly states")
 	)
 	signal.send_to_receivers()
+*/
+// [/CELADON-REMOVE]
 
 /datum/overmap/outpost/proc/get_hangar_template(obj/docking_port/mobile/request_port)
 	RETURN_TYPE(/datum/map_template/outpost)

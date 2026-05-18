@@ -282,3 +282,12 @@
 /mob/living/carbon/proc/charge(datum/source, amount, repairs)
 	if(nutrition < NUTRITION_LEVEL_WELL_FED)
 		adjust_nutrition(amount / 10) // The original amount is capacitor_rating*100
+
+//[CELADON-ADD] - CELADON_FIXES - убираем возможность роботам рыгать
+/mob/living/carbon/human/adjust_disgust(amount)
+	if(dna)
+		if(dna.species)
+			if(dna.species.inherent_biotypes & MOB_ROBOTIC)
+				return
+	. = ..()
+//[/CELADON-ADD]

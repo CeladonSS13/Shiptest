@@ -12,7 +12,11 @@
 	var/outpost_administrator = "Fallback Administration"
 
 /datum/map_template/outpost/New()
-	. = ..(path = "_maps/outpost/[name].dmm")
+	// [CELADON-EDIT] - CELADON_CONFIGS_MAPS
+	// . = ..(path = "_maps/outpost/[name].dmm") // CELADON-EDIT - ORIGINAL
+	. = ..(path = "_maps/_mod_celadon/outpost/[name].dmm")
+	// [/CELADON-EDIT]
+
 
 /datum/map_template/outpost/hangar
 	var/dock_width
@@ -202,7 +206,6 @@
 /*
 	/datum/overmap/outpost subtypes
 */
-
 /datum/overmap/outpost/indie_space
 	token_icon_state = "station_cylinder"
 	main_template = /datum/map_template/outpost/indie_space

@@ -51,6 +51,10 @@
 		user.update_sight()
 		if(icon_state == "welding-g")
 			change_glass_color(user, /datum/client_colour/glass_colour/gray)
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
+		else if(icon_state == "bustin-g")
+			change_glass_color(user, /datum/client_colour/glass_colour/green)
+		// [/CELADON-ADD]
 		else
 			change_glass_color(user, null)
 
@@ -319,7 +323,7 @@
 	. = ..()
 	if(!isinhands && ishuman(loc) && !colored_before)
 		var/mob/living/carbon/human/H = loc
-		var/mutable_appearance/M = mutable_appearance('icons/mob/clothing/eyes/eyes.dmi', "blindfoldwhite")
+		var/mutable_appearance/M = mutable_appearance('mod_celadon/_storage_icons/icons/items/clothing/eyes/overlay/eyes.dmi', "blindfoldwhite") // [CELADON-EDIT] - CELADON_RETURN_CONTENT_SPAWN
 		M.appearance_flags |= RESET_COLOR
 		M.color = "#[H.eye_color]"
 		. += M

@@ -50,6 +50,10 @@
 
 		handle_gravity()
 
+		// [CELADON-ADD] - CELADON_FIXES
+		magboots_handle_gravity()
+		// [/CELADON-ADD]
+
 		if(stat != DEAD)
 			handle_traits() // eye, ear, brain damages
 			handle_status_effects() //all special effects, stun, knockdown, jitteryness, hallucination, sleeping, etc

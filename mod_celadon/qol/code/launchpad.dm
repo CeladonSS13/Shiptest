@@ -1,0 +1,20 @@
+/obj/machinery/launchpad
+	name = "bluespace launchpad"
+	desc = "A bluespace pad able to thrust matter through bluespace, teleporting it to or from nearby locations."
+	icon = 'icons/obj/telescience.dmi'
+	icon_state = "lpad-idle"
+	use_power = IDLE_POWER_USE
+	idle_power_usage = IDLE_DRAW_LOW
+	active_power_usage = ACTIVE_DRAW_EXTREME
+	hud_possible = list(DIAG_LAUNCHPAD_HUD)
+	circuit = /obj/item/circuitboard/machine/launchpad
+	icon_teleport = "lpad-beam"
+	stationary = TRUE
+	display_name = "Launchpad"
+	teleport_speed = 35
+	range = 45 // Celadon-Edit
+	teleporting = FALSE
+	power_efficiency = 1
+	x_offset = 0
+	y_offset = 0
+	indicator_icon = "launchpad_target"

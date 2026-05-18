@@ -4,50 +4,49 @@
 # In the event that multiple org members are to be informed of changes
 # to the same file or dir, add them to the end under Multiple Owners
 
-# TEAMS
+# Teams
 
-# Map Maintainers
-/_maps/ @shiptest-ss13/maptainers
+* @CeladonSS13/heads
 
-# Sprite Maintainers
-/icons/ @shiptest-ss13/spritetainers
+# Head Maintainers
+# Vairkharst
+
+# /**/* @Vairkharst
+# /**/*.dm @Vairkharst
+# /**/*.ogg @Vairkharst
+# /**/*.mp3 @Vairkharst
+# /**/*.dmi @Vairkharst
 
 # Code Maintainers
-/code/ @shiptest-ss13/maintainers
 
+# /strings/ @MysticalFaceLesS
+# /tgui/ @MysticalFaceLesS
+# /sound/ @MysticalFaceLesS
+# /code/ @MysticalFaceLesS
+# /mod_celadon/ @MysticalFaceLesS
+# /mod_celadon/_storage_sounds/ @MysticalFaceLesS
+# /**/*.dm @MysticalFaceLesS
+# /**/*.ogg @MysticalFaceLesS
+# /**/*.mp3 @MysticalFaceLesS
 
-# CI and tool chains
-/tools/ @shiptest-ss13/admins
+# Map Maintainers
 
+# /_maps/_mod_celadon/ @MysticalFaceLesS
+# /**/*.dmm @MysticalFaceLesS
+# /**/*.json @MysticalFaceLesS
 
-# MAINTAINERS
+# Sprite Maintainers
 
-# FalloutFalcon
+# /mod_celadon/_storage_icons/ @MysticalFaceLesS
+# /**/*.dmi @MysticalFaceLesS
 
-/code/game/objects/items/storage/ration.dm @FalloutFalcon
-/code/modules/food_and_drinks/drinks/drinks/breakawayflask.dm @FalloutFalcon
-/code/modules/food_and_drinks/food/ration.dm @FalloutFalcon
-/code/modules/mob/living/simple_animal/hostile/mining_mobs/hivelord.dm @FalloutFalcon
-/code/modules/projectiles/gun.dm @FalloutFalcon
-/code/modules/projectiles/projectile.dm @FalloutFalcon
-/code/modules/projectiles/guns/ballistic.dm @FalloutFalcon
-/code/modules/projectiles/guns/energy.dm @FalloutFalcon
-/code/modules/projectiles/guns/powered.dm @FalloutFalcon
-/code/modules/reagents/chemistry/reagents/trickwine_reagents.dm @FalloutFalcon
-/code/modules/unit_tests/icons/ @FalloutFalcon
-/code/modules/missions/ @FalloutFalcon
-/code/modules/cargo/exports/ @FalloutFalcon
-/code/modules/cargo/exports.dm @FalloutFalcon
+# MysticalFaceLesS
 
-# MarkSuckerberg
-
-/code/controllers/subsystem/shuttle.dm @MarkSuckerberg
-/code/modules/shuttle/ @MarkSuckerberg
-/code/modules/overmap/ @MarkSuckerberg
-/_maps/RandomRuins/LavaRuins/lavaland_surface_sloth.dmm @MarkSuckerberg
-
-
-# CONTRIBUTORS
-
-
-# MULTIPLE OWNERS
+/tools/ @MysticalFaceLesS
+/.github/ @MysticalFaceLesS
+/SQL/ @MysticalFaceLesS
+/bin/ @MysticalFaceLesS
+/html/ @MysticalFaceLesS
+/strings/ @MysticalFaceLesS
+/tgui/ @MysticalFaceLesS
+/code/modules/unit_tests/ @MysticalFaceLesS

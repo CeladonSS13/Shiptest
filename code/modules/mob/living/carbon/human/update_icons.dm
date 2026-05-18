@@ -392,13 +392,16 @@ There are several things that need to be remembered:
 		/// Does this clothing need to be generated via greyscale?
 		var/handled_by_bodytype = FALSE
 
-		if((dna.species.bodytype & BODYTYPE_DIGITIGRADE) && ((I.supports_variations & DIGITIGRADE_VARIATION) || (I.supports_variations & DIGITIGRADE_VARIATION_SAME_ICON_FILE)))
-			var/obj/item/bodypart/leg = src.get_bodypart(BODY_ZONE_L_LEG)
-			if(leg.bodytype & BODYTYPE_DIGITIGRADE && !leg.plantigrade_forced)
-				icon_file = DIGITIGRADE_SHOES_PATH
-			if((I.supports_variations & DIGITIGRADE_VARIATION_SAME_ICON_FILE))
-				icon_file = I.mob_overlay_icon
-				target_overlay = "[target_overlay]_digi"
+		// [/CELADON-EDIT]
+		var/obj/item/bodypart/leg_bodypart = src.get_bodypart(BODY_ZONE_L_LEG)
+		if(leg_bodypart.bodytype & BODYTYPE_DIGITIGRADE)
+			if(icon_exists(SARATHI_DIGITIGRADE_BOOTS_PATH, RESOLVE_ICON_STATE(I)))
+				icon_file = SARATHI_DIGITIGRADE_BOOTS_PATH
+				if(I.snout_override_icon)
+					icon_file = I.snout_override_icon
+			else
+				handled_by_bodytype = TRUE
+		// [CELADON-EDIT] - RESPRITES
 
 		else if(dna.species.bodytype & BODYTYPE_VOX)
 			if(I.supports_variations & VOX_VARIATION)
@@ -467,7 +470,10 @@ There are several things that need to be remembered:
 				handled_by_bodytype = TRUE
 
 			var/use_autogen = handled_by_bodytype ? dna.species : null
-			suit_store_overlay = I.build_worn_icon(default_layer = -SUIT_STORE_LAYER, default_icon_file = icon_file, override_file = icon_file, isinhands = FALSE, override_file = icon_file, mob_species = use_autogen)
+			// [CELADON-EDIT] - SPECIES OFFSETS
+			// OLD CODE: suit_store_overlay = I.build_worn_icon(default_layer = -SUIT_STORE_LAYER, default_icon_file = icon_file, override_file = icon_file, isinhands = FALSE, override_file = icon_file, mob_species = use_autogen)
+			suit_store_overlay = I.build_worn_icon(default_layer = SUIT_STORE_LAYER, default_icon_file = icon_file, override_file = icon_file, isinhands = FALSE, override_file = icon_file, mob_species = use_autogen)
+			// [/CELADON-EDIT]
 
 			if(!suit_store_overlay)
 				return
@@ -497,8 +503,15 @@ There are several things that need to be remembered:
 		var/handled_by_bodytype = FALSE
 
 		var/obj/item/bodypart/head_bodypart = src.get_bodypart(BODY_ZONE_HEAD)
-		if((head_bodypart.bodytype & BODYTYPE_SNOUT) && (I.supports_variations & SNOUTED_VARIATION))
-			target_overlay = "[target_overlay]_snouted"
+		// [CELADON-EDIT] - CELADON_RESPRITE
+		if(head_bodypart.bodytype & BODYTYPE_SNOUT)
+			if(icon_exists(SARATHI_SNOUTED_HELM_PATH, RESOLVE_ICON_STATE(I)))
+				icon_file = SARATHI_SNOUTED_HELM_PATH
+				if(I.snout_override_icon)
+					icon_file = I.snout_override_icon
+			else
+				handled_by_bodytype = TRUE
+		// [CELADON-EDIT]
 
 		if((head_bodypart.bodytype & BODYTYPE_SNOUT_SMALL) && (I.supports_variations & SNOUTED_SMALL_VARIATION))
 			target_overlay = "[target_overlay]_snouted_small"
@@ -605,11 +618,19 @@ There are several things that need to be remembered:
 		/// Does this clothing need to be generated via greyscale?
 		var/handled_by_bodytype = FALSE
 
-		if((dna.species.bodytype & BODYTYPE_DIGITIGRADE) && ((I.supports_variations & DIGITIGRADE_VARIATION) || (I.supports_variations & DIGITIGRADE_VARIATION_SAME_ICON_FILE)))
-			icon_file = DIGITIGRADE_SUIT_PATH
-			if((I.supports_variations & DIGITIGRADE_VARIATION_SAME_ICON_FILE))
-				icon_file = I.mob_overlay_icon
-				target_overlay = "[target_overlay]_digi"
+		// [CELADON - EDIT] - CELADON_RESPRITE
+		if(dna.species.bodytype & BODYTYPE_DIGITIGRADE)
+			if(ITEM_SLOT_OCLOTHING)
+				if(icon_exists(SARATHI_DIGITIGRADE_SUIT_PATH, RESOLVE_ICON_STATE(I)) )
+					icon_file = SARATHI_DIGITIGRADE_SUIT_PATH
+				else
+					handled_by_bodytype = TRUE
+			else if(ITEM_SLOT_ICLOTHING)
+				if(icon_exists(SARATHI_DIGITIGRADE_UNDER_PATH, RESOLVE_ICON_STATE(I)) )
+					icon_file = SARATHI_DIGITIGRADE_UNDER_PATH
+				else
+					handled_by_bodytype = TRUE
+		// [/CELADON - EDIT]
 
 		else if(dna.species.bodytype & BODYTYPE_VOX)
 			if(I.supports_variations & VOX_VARIATION)
@@ -691,8 +712,13 @@ There are several things that need to be remembered:
 
 		if(!(ITEM_SLOT_MASK in check_obscured_slots()))
 			var/obj/item/bodypart/head_bodypart = src.get_bodypart(BODY_ZONE_HEAD)
-			if((head_bodypart.bodytype & BODYTYPE_SNOUT) && (I.supports_variations & SNOUTED_VARIATION))
-				target_overlay = "[target_overlay]_snouted"
+			// [CELADON-EDIT] - CELADON_RESPRITE
+			if(head_bodypart.bodytype & BODYTYPE_SNOUT)
+				if(icon_exists(SARATHI_SNOUTED_MASK_PATH, RESOLVE_ICON_STATE(I)))
+					icon_file = SARATHI_SNOUTED_MASK_PATH
+				else
+					handled_by_bodytype = TRUE
+			// [CELADON-EDIT]
 
 			if((head_bodypart.bodytype & BODYTYPE_SNOUT_SMALL) && (I.supports_variations & SNOUTED_SMALL_VARIATION))
 				target_overlay = "[target_overlay]_snouted_small"
@@ -847,11 +873,17 @@ There are several things that need to be remembered:
 /obj/item/proc/wear_species_version(file2use, state2use, layer, datum/species/mob_species)
 	if(!slot_flags) // If it's not wearable, don't try
 		return FALSE
-	var/icon/species_clothing_icon = GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]"]
+	// [CELADON-EDIT] - SPECIES OFFSETS
+	// OLD_CODE: var/icon/species_clothing_icon = GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]"]
+	var/icon/species_clothing_icon = GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]-[layer]"]
+	// [/CELADON-EDIT]
 	if(!species_clothing_icon) 	//Create standing/laying icons if they don't exist
 		if(!generate_species_clothing(file2use, state2use, layer, mob_species))
 			return FALSE
-	return mutable_appearance(GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]"], layer = -layer)
+	// [CELADON-EDIT] - SPECIES OFFSETS
+	// OLD_CODE: return mutable_appearance(GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]"], layer = -layer)
+	return mutable_appearance(GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]-[layer]"], layer = -layer) // [CELADON-ADD] - SPECIES OFFSETS
+	// [/CELADON-EDIT]
 
 /mob/living/carbon/human/proc/get_overlays_copy(list/unwantedLayers)
 	var/list/out = new

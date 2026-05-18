@@ -1764,7 +1764,6 @@ GLOBAL_VAR_INIT(ssd_indicator_overlay, mutable_appearance('icons/mob/ssd_indicat
 		if(DEAD)
 			REMOVE_TRAIT(src, TRAIT_CRITICAL_CONDITION, STAT_TRAIT)
 
-
 ///Reports the event of the change in value of the buckled variable.
 /mob/living/proc/set_buckled(new_buckled)
 	if(new_buckled == buckled)
@@ -1935,25 +1934,40 @@ GLOBAL_VAR_INIT(ssd_indicator_overlay, mutable_appearance('icons/mob/ssd_indicat
 	REMOVE_TRAIT(src, TRAIT_UI_BLOCKED, TRAIT_HANDS_BLOCKED)
 	REMOVE_TRAIT(src, TRAIT_PULL_BLOCKED, TRAIT_HANDS_BLOCKED)
 
-/// Special key down handling of /living mobs, currently only used for typing indicator
+// Special key down handling of /living mobs, currently only used for typing indicator
 /mob/living/key_down(_key, client/user)
 	if(!typing_indicator && stat == CONSCIOUS)
 		for(var/kb_name in user.prefs.key_bindings[_key])
 			switch(kb_name)
 				if("Say")
-					set_typing_indicator(TRUE)
+					// [CELADON-EDIT] - CELADON_QOL
+					// set_typing_indicator(TRUE)
+					set_typing_indicator(TRUE, isSay = TRUE)
+					// [/CELADON-EDIT]
 					break
 				if("Me")
-					set_typing_indicator(TRUE)
+					// [CELADON-EDIT] - CELADON_QOL
+					// set_typing_indicator(TRUE)
+					set_typing_indicator(TRUE, isMe = TRUE)
+					// [/CELADON-EDIT]
 					break
 	return ..()
 
-/// Used for setting typing indicator on/off. Checking the state should be done not on the proc to avoid overhead.
-/mob/living/set_typing_indicator(state)
+// Used for setting typing indicator on/off. Checking the state should be done not on the proc to avoid overhead.
+// [CELADON-EDIT] - CELADON_QOL
+// /mob/living/set_typing_indicator(state) // CELADON-EDIT - ORIGINAL
+/mob/living/set_typing_indicator(state, isMe = null, isSay = null)
+// [/CELADON-EDIT]
 	typing_indicator = state
-	var/datum/language/used_language = get_selected_language()
-	var/state_of_bubble = "[initial(used_language?.bubble_override) || bubble_icon || "default"]0"
-	var/mutable_appearance/bubble_overlay = mutable_appearance('icons/mob/talk.dmi', state_of_bubble, plane = RUNECHAT_PLANE)
+	// [CELADON-EDIT] - CELADON_QOL
+	var/state_of_bubble = last_state_of_bubble
+	if(isMe)
+		state_of_bubble = "emotetyping"
+	if(isSay)
+		state_of_bubble = bubble_icon? "[bubble_icon]0" : "default0"
+	last_state_of_bubble = state_of_bubble
+	var/mutable_appearance/bubble_overlay = mutable_appearance('mod_celadon/_storage_icons/icons/assets/qol/talk.dmi', state_of_bubble, plane = RUNECHAT_PLANE)
+	// [/CELADON-EDIT]
 	bubble_overlay.appearance_flags = RESET_COLOR | RESET_TRANSFORM | TILE_BOUND | PIXEL_SCALE
 	if(typing_indicator)
 		add_overlay(bubble_overlay)
@@ -2032,8 +2046,10 @@ GLOBAL_VAR_INIT(ssd_indicator_overlay, mutable_appearance('icons/mob/ssd_indicat
  */
 
 /mob/living/carbon/verb/open_close_eyes()
-	set category = "IC"
-	set name = "Open/Close Eyes"
+	// [CELADON-ADD] - CELADON_EMOTES
+	set category = "Эмоции"
+	set name = "Открыть/Закрыть глаза"
+	// [/CELADON-ADD]
 
 	if(HAS_TRAIT_FROM(src, TRAIT_EYESCLOSED, "[type]"))
 		REMOVE_TRAIT(src, TRAIT_EYESCLOSED, "[type]")

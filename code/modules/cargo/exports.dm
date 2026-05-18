@@ -11,6 +11,7 @@
 
 	var/list/contents = AM.GetAllContents()
 
+
 	var/datum/export_report/report = external_report
 
 	if(!report) //If we don't have any longer transaction going on

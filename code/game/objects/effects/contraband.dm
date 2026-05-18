@@ -1385,7 +1385,9 @@
 	poster_type = /obj/structure/sign/poster/radio/pris
 	icon_state = "rolled_poster"
 
-#undef PLACE_SPEED
-#undef POSTER_SUBTYPES
-#undef POSTER_LIST
-#undef POSTER_ADD_FROM_LIST
+// [CELADON-REMOVE] - CELADON_OUTFIT - REMOVED BECAUSE ITS PREVENTING NEW /random POSTERS FROM OTHER FILES. EXAMPLE FOR PREVENTED /random POSTER: mod_celadon/stuff_elysium/code/elysiumMerch.dm. LINE 37, random_type = POSTER_SUBTYPES -> ERROR: undefined var
+// #undef PLACE_SPEED
+// #undef POSTER_SUBTYPES
+// #undef POSTER_LIST
+// #undef POSTER_ADD_FROM_LIST
+// [/CELADON-REMOVE]

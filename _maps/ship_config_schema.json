@@ -24,6 +24,15 @@
 			"description": "A description of the ship class, currently only shown to admins on the shuttle manipulator, but will likely be shown to players before ship purchase in the future.",
 			"minLength": 250
 		},
+
+
+		"sensor_range":{
+			"title": "Sensor Range",
+			"type": "number",
+			"description": "A definition of a ships' maximum sensor range."
+		},
+
+
 		"tags": {
 			"title": "Ship Tags",
 			"type": "array",

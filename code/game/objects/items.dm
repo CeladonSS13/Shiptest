@@ -563,7 +563,15 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	//Mostly shields
 	if((prob(final_block_chance) && COOLDOWN_FINISHED(src, block_cooldown)) || (prob(final_block_chance) && istype(src, /obj/item/shield)))
 		owner.visible_message(span_danger("[owner] blocks [attack_text] with [src]!"))
-		playsound(src, 'sound/weapons/effects/deflect.ogg', 100)
+// [CELADON-EDIT] - BALLISTIC_SHIELD - Extended Edition
+//		playsound(src, 'sound/weapons/effects/deflect.ogg', 100)	// Original
+		if(istype(src, /obj/item/shield))
+			playsound(src, pick('mod_celadon/_storage_sounds/sound/gun/shieldhit1.wav', 'mod_celadon/_storage_sounds/sound/gun/shieldhit2.wav'), 100)
+		else if(istype(src, /obj/item/melee/sword) || (istype(src,/obj/item/cursed_katana)))
+			playsound(src, pick('mod_celadon/_storage_sounds/sound/gun/sword_p1.ogg', 'mod_celadon/_storage_sounds/sound/gun/sword_p2.ogg', 'mod_celadon/_storage_sounds/sound/gun/sword_p3.ogg'), 100)
+		else
+			playsound(src, 'sound/weapons/effects/deflect.ogg', 100)
+// [/CELADON-EDIT]
 		if(!istype(src, /obj/item/shield))
 			COOLDOWN_START(src, block_cooldown, block_cooldown_time)
 		return TRUE
@@ -813,6 +821,12 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	if (callback) //call the original callback
 		. = callback.Invoke()
 	item_flags &= ~IN_INVENTORY
+	// [CELADON-ADD]
+	if(!(item_flags & NO_ROTATE_RANDOM_THROW))
+		var/matrix/M = matrix(transform)
+		M.Turn(pick(-90, 0, 90, 180))
+		transform = M
+	// [/CELADON-ADD]
 	if(!pixel_y && !pixel_x && !(item_flags & NO_PIXEL_RANDOM_DROP))
 		pixel_x = rand(-8,8)
 		pixel_y = rand(-8,8)

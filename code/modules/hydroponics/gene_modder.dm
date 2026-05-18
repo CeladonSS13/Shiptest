@@ -326,7 +326,9 @@
 							else if(istype(G, /datum/plant_gene/core/weed_chance))
 								gene.value = max(gene.value, min_wchance)
 						disk.update_disk_name()
-						qdel(seed)
+						// [CELADON EDIT] - CELADON FIXES
+						del_seed(seed)
+						// [CELADON EDIT]
 						seed = null
 						update_appearance()
 				if("replace")

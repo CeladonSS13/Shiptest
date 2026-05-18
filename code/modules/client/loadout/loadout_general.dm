@@ -2,9 +2,11 @@
 	display_name = "d20"
 	path = /obj/item/dice/d20
 
-/datum/gear/briefcase
-	display_name = "briefcase"
-	path = /obj/item/storage/briefcase
+// [CELADON-REMOVE] - Убрано, так как чемодан появляется в коробке и позволяет абузить количество места.
+// /datum/gear/briefcase
+// 	display_name = "briefcase"
+// 	path = /obj/item/storage/briefcase
+// [/CELADON-REMOVE]
 
 /datum/gear/lipstick
 	display_name = "lipstick, black"
@@ -115,6 +117,7 @@
 	display_name = "cane"
 	path = /obj/item/cane
 
+/* [CELADON-REMOVE] - Перенесено в отдельную категорию: mod_celadon\loadout\code\plushes.dm
 /datum/gear/lizard
 	display_name = "toy, lizard plushie"
 	path = /obj/item/toy/plush/lizardplushie
@@ -167,16 +170,19 @@
 /datum/gear/amongus
 	display_name = "toy, suspicious pill plushie"
 	path = /obj/item/toy/plush/among
+[/CELADON-REMOVE] */
 
 /datum/gear/dice_bag
 	display_name = "toy, bag of die"
 	path = /obj/item/storage/pill_bottle/dice
 
+/* CELADON EDIT START
 /datum/gear/amongus/New()
 	. = ..()
 	var/obj/item/toy/plush/among/temp = new path()
 	description = "[capitalize(pick(temp.among_colors))] sus."
 	qdel(temp)
+CELADON EDIT END */
 
 /datum/gear/hairspray
 	display_name = "hair dye"

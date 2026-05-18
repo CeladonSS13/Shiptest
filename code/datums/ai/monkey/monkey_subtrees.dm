@@ -81,4 +81,7 @@
 			LAZYADD(controller.current_behaviors, GET_AI_BEHAVIOR(/datum/ai_behavior/give))
 			return
 
-	controller.TryFindWeapon()
+	// CELADON EDIT START - FIXES_MONKEY_STOPPED_SPEEDUP - Only try to find weapon 20% of the time when idle
+	if(prob(20))
+		controller.TryFindWeapon()
+	// CELADON EDIT END

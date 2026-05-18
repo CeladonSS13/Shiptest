@@ -96,6 +96,7 @@ SUBTLER
 		user.visible_message(message = message, self_message = message, vision_distance = 1)
 
 ///////////////// VERB CODE
+/* [CELADON-REMOVE] - CELADON_SUBTLER - Замена тут `mod_celadon/subtler/code/subtler.dm`
 /mob/living/verb/subtler()
 	set name = "Subtler"
 	set category = "IC"
@@ -103,3 +104,4 @@ SUBTLER
 		to_chat(usr, span_danger("Speech is currently admin-disabled."))
 		return
 	usr.emote("subtler")
+[/CELADON-REMOVE] */

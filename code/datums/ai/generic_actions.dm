@@ -1,7 +1,11 @@
 
 /datum/ai_behavior/resist/perform(seconds_per_tick, datum/ai_controller/controller)
 	var/mob/living/living_pawn = controller.pawn
-	living_pawn.resist()
+	// CELADON EDIT START - Проверяем, что pawn жив перед выполнением resist
+	if(QDELETED(living_pawn) || living_pawn.stat == DEAD)
+		return AI_BEHAVIOR_DELAY | AI_BEHAVIOR_FAILED
+	living_pawn.resist_restraints() // Используем resist_restraints() вместо resist() verb
+	// CELADON EDIT END
 	return AI_BEHAVIOR_DELAY | AI_BEHAVIOR_SUCCEEDED
 
 /datum/ai_behavior/battle_screech

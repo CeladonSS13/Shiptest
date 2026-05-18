@@ -1,0 +1,109 @@
+
+
+#### Список PRов:
+
+- https://github.com/CeladonSS13/Shiptest/pull/759
+<!--
+  Ссылки на PRы, связанные с модом:
+  - Создание
+  - Большие изменения
+-->
+
+<!-- Название мода. Не важно на русском или на английском. -->
+## Items
+
+ID мода: CELADON_ITEMS
+OMNI_TOOLS
+<!--
+  Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
+  которое ты будешь использовать для обозначения файлов.
+-->
+
+### Описание мода
+
+Этот мод добавляет различные предметы относящиеся к конкретной расе или просто вещи в игру.
+Добавляем костюмы, вещи с других билдов. Возвращаем удалённые предметы Оффами
+
+Добавлены медицинские предметы и возможность их получения, на примере тех предметов что находятся по пути `code\game\objects\items\stacks\medical.dm` и способов их получения по пути `code\modules\reagents\chemistry\recipes\medical_consumables.dm`. 
+
+<!--
+  Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
+  А также любая полезная информация.
+-->
+
+### Изменения *кор кода*
+
+- `code/modules/surgery/organs/tongue.dm`
+	-`var/static/list/languages_possible_base = typecacheof`
+- `code/modules/clothing/outfits/factions/inteq.dm`
+
+OMNI_TOOLS	-	Обновлены инструменты
+- `code/game/objects/items/RCD.dm`						:	Добавлены span_notice() в сообщения
+- `code/game/objects/items/RPD.dm`						:	Переписан функционал под отдельный прок для Bluespace-RPD
+- `code/game/objects/items/devices/scanners.dm`			:	Добавлен вар
+- `code/game/objects/items/storage/belt.dm`				:	Дебаг-пояс
+- `code/game/objects/items/storage/boxes.dm`			:	Изменение дебаг-аутфита
+- `code/modules/clothing/outfits/standard.dm`			:	Оверайд Дебаг пояса
+- `code/modules/research/designs/medical_designs.dm`	:	Добавлена технология в ноды
+- `code/modules/research/designs/tool_designs.dm`		:	Добавлена технология в ноды
+- `code/modules/research/techweb/all_nodes.dm`			:	В сами ноды добавлены технологии
+- `code/modules/vending/medical.dm` 					:	В вендоры добавлен бюджетный дистанционный анализатор
+<!--
+  Если вы редактировали какие-либо процедуры или переменные в кор коде,
+  они должны быть указаны здесь.
+  Нужно указать и файл, и процедуры/переменные.
+
+  Изменений нет - напиши "Отсутствуют"
+-->
+
+### Оверрайды
+
+- `/obj/item/ammo_casing/attackby`
+<!--
+  Если ты добавлял новый модульный оверрайд, его нужно указать здесь.
+  Здесь указываются оверрайды в твоём моде и папке `_master_files`
+
+  Изменений нет - напиши "Отсутствуют"
+-->
+
+### Дефайны
+
+Лежат в модпаке дефайнов
+- GLOBAL_VAR_INIT
+- TIME_OFFSET
+- proc/Ceiling
+- proc/worldtime2text
+
+<!--
+  Если требовалось добавить какие-либо дефайны, укажи файлы,
+  в которые ты их добавил, а также перечисли имена.
+  И то же самое, если ты используешь дефайны, определённые другим модом.
+
+  Не используешь - напиши "Отсутствуют"
+-->
+
+### Используемые файлы, не содержащиеся в модпаке
+
+- `mods/_master_files/icons/obj/alien.dmi`
+- `mod_celadon/_storage_icons/icons/items`
+- `mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo.dmi`
+- `sound/weapons/gun/shotgun/insert_shell.ogg`
+- `mod_celadon/_storage_icons/icons/items/clothing/back/obj.dmi`
+- `mod_celadon/_storage_icons/icons/items/clothing/back/overlay/onmob.dmi`
+- `mod_celadon/_storage_icons/icons/items/clothing/head/overlay/head.dmi`
+- `mod_celadon/_storage_icons/icons/items/clothing/head/hats.dmi`
+<!--
+  Будь то немодульный файл или модульный файл, который не содержится в папке,
+  принадлежащей этому конкретному моду, он должен быть упомянут здесь.
+  Хорошими примерами являются иконки или звуки, которые используются одновременно
+  несколькими модулями, или что-либо подобное.
+-->
+
+### Авторы:
+
+MrCat15352, MysticalFaceLesS, RalseiDreemuurr, MrRomainzZ, Quinal, MysticalFaceLesS
+<!--
+  Здесь находится твой никнейм
+  Если работал совместно - никнеймы тех, кто помогал.
+  В случае порта чего-либо должна быть ссылка на источник.
+-->

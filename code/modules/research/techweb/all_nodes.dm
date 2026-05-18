@@ -96,7 +96,7 @@
 	display_name = "Xeno-organ Biology"
 	description = "Phytosians, even Skeletons... We finally understand the less well known species enough to replicate their anatomy."
 	prereq_ids = list("adv_biotech")
-	design_ids = list("limbdesign_abductor", "limbdesign_fly", "limbdesign_pod", "limbdesign_skeleton", "limbdesign_snail")
+	design_ids = list("tajaralong", "riollong", "limbdesign_abductor", "limbdesign_fly", "limbdesign_pod", "limbdesign_skeleton", "limbdesign_snail") // [CELADON-EDIT] - Adding tails - PR #1136
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000
 
@@ -168,6 +168,7 @@
 	description = "Big Data, in space!"
 	prereq_ids = list("base")
 	design_ids = list(
+		"survey-handheld-rnd-advanced",	// [CELADON-ADD] - RETURN_SURVEY
 		"design_disk_adv"
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
@@ -201,7 +202,10 @@
 	display_name = "Anomaly Research"
 	description = "Unlock the potential of the mysterious anomalies that appear throughout the sector."
 	prereq_ids = list("adv_engi", "practical_bluespace")
-	design_ids = list("reactive_armour", "anomaly_neutralizer")
+// [CECADON-EDIT] -
+//	design_ids = list("reactive_armour", "anomaly_neutralizer")
+	design_ids = list("reactive_armour", "anomaly_neutralizer", "bs_rpd")
+// [/CECADON-EDIT]
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000
 
@@ -413,6 +417,7 @@
 		"mining",
 		"rdcamera",
 		"seccamera",
+		"survey-handheld-rnd-elite",	// [CELADON-ADD] - RETURN_SURVEY
 		"design_disk_super",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
@@ -700,8 +705,12 @@
 	display_name = "Advanced Ballistics"
 	description = "Refined ballistic ammunition for extra combat trauma."
 	prereq_ids = list("ballistic_weapons", "adv_engi")
-	design_ids = list("ap9mm", "ap10mm", "ap45", "hp9mm", "hp10mm", "hp45", "ap556mmHITP", "hp556mmHITP")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	// [CELADON-EDIT] - CELADON_WEAPONS - Новое пушки и патроны
+	// design_ids = list("ap9mm", "ap10mm", "ap45", "hp9mm", "hp10mm", "hp45", "ap556mmHITP", "hp556mmHITP") // CELADON-EDIT - ORIGINAL
+	// research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500) // CELADON-EDIT - ORIGINAL
+	design_ids = list("ap9mm", "ap10mm", "ap45", "hp9mm", "hp10mm", "hp45", "ap556mmHITP", "hp556mmHITP","a556surp","a308_brak")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7500)
+	// [/CELADON-EDIT]
 
 /datum/techweb_node/exotic_ammo
 	id = "exotic_ammo"
@@ -1122,10 +1131,15 @@
 	id = "exp_shuttle"
 	display_name = "Experimental Shuttle Research"
 	description = "A bunch of engines and related shuttle parts that are likely not really that useful, but could be in strange situations."
-	prereq_ids = list("basic_shuttle")
+	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем РнД
+	// prereq_ids = list("basic_shuttle") // CELADON-EDIT - ORIGINAL
+	prereq_ids = list("t3_ion")
 	design_ids = list("engine_expulsion")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
-	export_price = 2500
+	// research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000) // CELADON-EDIT - ORIGINAL
+	// export_price = 2500 // CELADON-EDIT - ORIGINAL
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7500)
+	export_price = 7500
+	// [/CELADON-EDIT]
 
 ////////////////////// IPC Parts ///////////////////////
 /datum/techweb_node/ipc_organs

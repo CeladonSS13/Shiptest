@@ -31,6 +31,15 @@
 				spawnee.new_player_panel()
 				return
 
+			// [CELADON-ADD] - CELADON_FIXES
+			// Проверяем дублирование имен при входе на корабль
+			if(!spawnee.client.prefs.randomise[RANDOM_NAME])
+				var/name = spawnee.client.prefs.real_name
+				if(GLOB.real_names_joined.Find(name))
+					to_chat(spawnee, span_warning("Кто-то уже использует это имя для своего корабля."))
+					spawnee.new_player_panel()
+					return
+			// [/CELADON-ADD]
 			var/did_application = FALSE
 			if(target.join_mode == SHIP_JOIN_MODE_APPLY)
 				var/datum/ship_application/current_application = target.get_application(spawnee)
@@ -66,35 +75,42 @@
 			var/datum/job/selected_job = locate(params["job"]) in target.job_slots
 			//boots you out if you're banned from officer roles
 			if(selected_job.officer && is_banned_from(spawnee.ckey, "Ship Command"))
-				to_chat(spawnee, span_danger("You are banned from Officer roles!"))
+				to_chat(spawnee, span_danger("Вам запрещено занимать офицерские должности!"))
 				spawnee.new_player_panel()
 				ui.close()
 				return
 
 			// Attempts the spawn itself. This checks for playtime requirements.
 			if(!spawnee.AttemptLateSpawn(selected_job, target))
-				to_chat(spawnee, span_danger("Unable to spawn on ship!"))
+				to_chat(spawnee, span_danger("Невозможно появиться на корабле!"))
 				spawnee.new_player_panel()
 
 		if("buy")
 			if(is_banned_from(spawnee.ckey, "Ship Purchasing"))
-				to_chat(spawnee, span_danger("You are banned from purchasing ships!"))
+				to_chat(spawnee, span_danger("Вам запрещено покупать корабли!"))
 				spawnee.new_player_panel()
 				ui.close()
 				return
 
 			var/datum/map_template/shuttle/template = SSmapping.ship_purchase_list[params["name"]]
+			// [CELADON-ADD] - CELADON_FIXES - фикс спавна пустых шаттлов (вагинобонд)
+			// Проверяем дублирование имен в самом начале
+			var/name = spawnee.client.prefs.real_name
+			if(GLOB.real_names_joined.Find(name))
+				to_chat(spawnee, span_warning("Кто-то уже создал корабль с этим именем."))
+				return
+			// [/CELADON-ADD]
 			if(SSovermap.ship_spawning)
-				to_chat(spawnee, span_danger("A ship is currently spawning. Try again in a little while."))
+				to_chat(spawnee, span_danger("Корабль сейчас создаётся. Попробуйте снова через некоторое время."))
 				return
 			if(!SSovermap.player_ship_spawn_allowed())
-				to_chat(spawnee, span_danger("No more ships may be spawned at this time!"))
+				to_chat(spawnee, span_danger("Лимит кораблей в раунде исчерпан. На данный момент нельзя создавать больше кораблей!"))
 				return
 			if(!template.enabled)
-				to_chat(spawnee, span_danger("This ship is not currently available for purchase!"))
+				to_chat(spawnee, span_danger("Этот корабль сейчас недоступен для покупки!"))
 				return
 			if(!template.has_ship_spawn_playtime(spawnee.client))
-				to_chat(spawnee, span_danger("You do not have enough playtime to spawn this ship!"))
+				to_chat(spawnee, span_danger("У вас недостаточно времени в игре, чтобы создать этот корабль!"))
 				return
 
 			var/num_ships_with_template = 0
@@ -125,6 +141,11 @@
 
 			to_chat(spawnee, "<span class='danger'>Your [template.name] is being prepared. Please be patient!</span>")
 			var/datum/overmap/ship/controlled/target = SSovermap.spawn_ship_at_start(template, ship_loc, selected_system)
+
+			// [CELADON-ADD] - Secret - Используется для сбора статистики о покупке кораблей.
+			if(CONFIG_GET(flag/ShipStats))
+				SSdbcore_ShipStat(usr, template)
+			// [/CELADON-ADD]
 
 			if(!target?.shuttle_port)
 				to_chat(spawnee, span_danger("There was an error loading the ship. Please contact admins!"))
@@ -164,6 +185,16 @@
 		if(!S.is_join_option())
 			continue
 
+		// [CELADON-ADD] - YOU_NOT_SEPARATIST
+		// Проверка ограничений по видам для кораблей фракции Elysium
+		if(S.source_template.faction.name == FACTION_ELYSIUM)
+			var/species_id = user.client?.prefs?.pref_species?.id
+			if(species_id != "human" && species_id != "ipc" && species_id != "lanius")
+				continue
+			if(user.client?.prefs?.features["tail_human"] != "None" || user.client?.prefs?.features["ears"] != "None")
+				continue
+		// [/CELADON-ADD]
+
 		var/list/ship_jobs = list()
 		for(var/datum/job/job as anything in S.job_slots)
 			var/slots = S.job_slots[job]
@@ -197,6 +228,14 @@
 		var/datum/map_template/shuttle/T = SSmapping.ship_purchase_list[template_name]
 		if(!T.enabled)
 			continue
+
+		// Проверка ограничений по видам для шаблонов кораблей фракции Elysium
+		if(T.faction.name == FACTION_ELYSIUM)
+			var/species_id = user.client?.prefs?.pref_species?.id
+			if(species_id != "human" && species_id != "ipc" && species_id != "lanius")
+				continue
+			if(user.client?.prefs?.features["tail_human"] != "None" || user.client?.prefs?.features["ears"] != "None")
+				continue
 		var/list/ship_data = list(
 			"name" = T.name,
 			"faction" = T.faction.name,
@@ -206,5 +245,8 @@
 			"limit" = T.limit,
 			"curNum" = template_num_lookup[T] || 0,
 			"minTime" = T.get_req_spawn_minutes(),
+			// [CELADON-ADD] - mod_celadon/qol - Берём значение из конфига корабликов.
+			"shortName" = T.short_name,
+			// [/CELADON-ADD]
 		)
 		.["templates"] += list(ship_data)

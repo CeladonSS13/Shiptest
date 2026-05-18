@@ -387,6 +387,7 @@
 
 	var/html = {"
 	<head>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge' charset='UTF-8'/>
 		<title>Sticky Bans</title>
 	</head>
 	<body>

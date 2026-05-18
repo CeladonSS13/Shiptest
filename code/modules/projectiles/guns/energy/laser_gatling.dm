@@ -127,6 +127,7 @@
 	item_flags = NEEDS_PERMIT | SLOWS_WHILE_IN_HAND
 	can_charge = FALSE
 	var/obj/item/minigunpack/ammo_pack
+	internal_cell = TRUE	// [CELADON-ADD]
 
 /obj/item/gun/energy/minigun/Initialize()
 	if(!istype(loc, /obj/item/minigunpack)) //We should spawn inside an ammo pack so let's use that one.

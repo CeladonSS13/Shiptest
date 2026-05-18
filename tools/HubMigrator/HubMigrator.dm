@@ -47,6 +47,12 @@
 	var/hub_password = "REPLACEME"
 
 	var/list/valid_medals = list(
+						// [CELADON-ADD] - RETURN_CONTENT
+						BOSS_MEDAL_TENDRIL,
+						BOSS_MEDAL_SWARMERS,
+						BOSS_MEDAL_LEGION_CRUSHER,
+						BOSS_MEDAL_SWARMERS_CRUSHER,
+						// [/CELADON-ADD]
 						MEDAL_METEOR,
 						MEDAL_PULSE,
 						MEDAL_TIMEWASTE,
@@ -69,6 +75,10 @@
 						BOSS_MEDAL_LEGION_CRUSHER)
 
 	var/list/valid_scores = list(
+						// [CELADON-ADD] - RETURN_CONTENT
+						SWARMER_BEACON_SCORE,
+						TENDRIL_CLEAR_SCORE,
+						// [/CELADON-ADD]
 						BOSS_SCORE,
 						MINER_SCORE,
 						BUBBLEGUM_SCORE,

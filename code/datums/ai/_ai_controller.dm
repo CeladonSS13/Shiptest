@@ -145,6 +145,14 @@ multiple modular subtrees with behaviors
 /datum/ai_controller/proc/able_to_run()
 	if(world.time < paused_until)
 		return FALSE
+	// [CELADON-ADD] - FIXES_RUNTIMES - Проверяем, что pawn еще существует и не мертв
+	if(QDELETED(pawn))
+		return FALSE
+	if(isliving(pawn))
+		var/mob/living/living_pawn = pawn
+		if(living_pawn.stat == DEAD)
+			return FALSE
+	// [/CELADON-ADD]
 	return TRUE
 
 ///Can this pawn interact with objects?
@@ -176,7 +184,19 @@ multiple modular subtrees with behaviors
 ///Runs any actions that are currently running
 /datum/ai_controller/process(seconds_per_tick)
 	if(!able_to_run())
-		walk(pawn, 0) //stop moving
+		// CELADON EDIT START
+		if(isliving(pawn))
+			var/mob/living/living_pawn = pawn
+			if(living_pawn.stat == DEAD && ai_status == AI_STATUS_ON)
+				// Полностью останавливаем движение при смерти
+				walk(living_pawn, 0)
+				living_pawn.stop_pulling()
+				ai_movement.stop_moving_towards(src)
+				CancelActions()
+				set_ai_status(AI_STATUS_OFF)
+				return
+		walk(pawn, 0) // stop moving
+		// CELADON EDIT END
 		return //this should remove them from processing in the future through event-based stuff.
 	if(!LAZYLEN(current_behaviors) && idle_behavior)
 		idle_behavior.perform_idle_behavior(seconds_per_tick, src) //Do some stupid shit while we have nothing to do
@@ -246,6 +266,14 @@ multiple modular subtrees with behaviors
 		if(AI_STATUS_OFF)
 			STOP_PROCESSING(SSai_behaviors, src)
 			SSai_controllers.active_ai_controllers -= src
+			// [CELADON-ADD] - FIXES_RUNTIMES - Полностью очищаем состояние при отключении
+			if(pawn)
+				walk(pawn, 0)
+				if(isliving(pawn))
+					var/mob/living/living_pawn = pawn
+					living_pawn.stop_pulling()
+			ai_movement.stop_moving_towards(src)
+			// [/CELADON-ADD]
 			CancelActions()
 
 /datum/ai_controller/proc/PauseAi(time)

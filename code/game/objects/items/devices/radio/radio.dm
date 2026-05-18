@@ -123,16 +123,14 @@
 		. = ..()
 	else if(sectorwide == TRUE) // prevents incompatibility with broadcast cameras
 		return
-	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE))
+	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE, TRUE)) // [CELADON-EDIT] - QOL - Разрешаем использование UI раций в лежачем положении
 		broadcasting = !broadcasting
 		to_chat(user, span_notice("You toggle broadcasting [broadcasting ? "on" : "off"]."))
 
 /obj/item/radio/CtrlShiftClick(mob/user)
 	if(headset)
 		. = ..()
-	else if(sectorwide == TRUE) // prevents incompatibility with broadcast cameras
-		return
-	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE))
+	else if(user.canUseTopic(src, !issilicon(user), TRUE, FALSE, TRUE)) // [CELADON-EDIT] - QOL - Разрешаем использование UI раций в лежачем положении
 		listening = !listening
 		to_chat(user, span_notice("You toggle speaker [listening ? "on" : "off"]."))
 
@@ -143,8 +141,10 @@
 	else
 		..()
 
+// [CELADON-EDIT] - QOL - Разрешаем использование UI раций в лежачем положении
 /obj/item/radio/ui_state(mob/user)
-	return GLOB.inventory_state
+	return GLOB.portable_device_state
+// [/CELADON-EDIT]
 
 /obj/item/radio/ui_interact(mob/user, datum/tgui/ui, datum/ui_state/state)
 	ui = SStgui.try_update_ui(user, src, ui)
@@ -311,8 +311,15 @@
 	signal.send_to_receivers()
 
 	// If the radio is subspace-only, that's all it can do
-	if (subspace_transmission)
-		return
+	if (subspace_transmission && (freq == FREQ_WIDEBAND))
+		signal.data["compression"] = 0
+		signal.transmission_method = TRANSMISSION_SUPERSPACE
+		signal.map_zones = list(0)  // reaches all Z-levels
+		signal.broadcast()
+		playsound(src, "sound/effects/walkietalkie.ogg", 20, FALSE)
+	else
+		if (subspace_transmission)
+			return
 
 	// Non-subspace radios will check in a couple of seconds, and if the signal
 	// was never received, send a mundane broadcast (no headsets).

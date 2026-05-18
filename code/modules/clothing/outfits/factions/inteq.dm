@@ -9,7 +9,9 @@
 
 	backpack = /obj/item/storage/backpack
 	satchel = /obj/item/storage/backpack/satchel
-	duffelbag = /obj/item/storage/backpack/duffelbag
+	//[CELADON-REMOVE] - CELADON_OUTFIT
+	//duffelbag = /obj/item/storage/backpack/duffelbag
+	//[/CELADON-REMOVE]
 	courierbag = /obj/item/storage/backpack/messenger/inteq
 
 ///assistants
@@ -101,7 +103,10 @@
 
 	courierbag = /obj/item/storage/backpack/messenger/inteq
 
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)
+	// [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички
+	// backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1)	// CELADON-EDIT - ORIGINAL
+	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
+	// [/CELADON-EDIT]
 
 ///paramedic
 

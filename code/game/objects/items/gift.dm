@@ -76,6 +76,12 @@ GLOBAL_LIST_EMPTY(possible_gifts)
 		/obj/item/clothing/suit/jacket/leather,
 		/obj/item/clothing/suit/snowman,
 		/obj/item/clothing/head/snowman,
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
+		/obj/item/clothing/suit/jacket/leather/overcoat,
+		/obj/item/clothing/suit/poncho,
+		/obj/item/clothing/suit/poncho/green,
+		/obj/item/clothing/suit/poncho/red,
+		// [/CELADON-ADD]
 		)
 
 	gift_type_list += subtypesof(/obj/item/clothing/head/collectable)

@@ -324,8 +324,10 @@ GLOBAL_PROTECT(donators)
 #undef REWARD_JSON_PATH
 
 /obj/item/clothing
-	var/donator_key
-	var/donator_allow_other_usage = FALSE
+	// [CELADON-REMOVE] - CELADON_DONATERS - Перемещено в папку мода
+	// var/donator_key
+	// var/donator_allow_other_usage = FALSE
+	// [/CELADON-REMOVE]
 
 /obj/item/clothing/mob_can_equip(mob/living/target, mob/living/equipper, slot, disable_warning, bypass_equip_delay_self, swap)
 	if(!donator_key || donator_allow_other_usage || check_donator(equipper) || check_donator(target))
@@ -344,8 +346,10 @@ GLOBAL_PROTECT(donators)
 		if(!donator_allow_other_usage)
 			. += span_warning("A strange force prevents you from making eye contact with it.")
 
-/obj/item/clothing/proc/check_donator(mob/user)
-	return ckey(user.key) == ckey(donator_key)
+// [CELADON-REMOVE] - CELADON_DONATERS - Перемещено в папку мода
+// /obj/item/clothing/proc/check_donator(mob/user)
+// 	return ckey(user.key) == ckey(donator_key)
+// [/CELADON-REMOVE]
 
 /obj/item/clothing/CtrlShiftClick(mob/user)
 	if(!donator_key || !check_donator(user))

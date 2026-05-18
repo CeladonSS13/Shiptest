@@ -707,3 +707,17 @@ so as to remain in compliance with the most up-to-date laws."
 	master = null
 	owner = null
 	screen_loc = ""
+
+/* [CELADON-ADD] - CELADON_EMOTES // [CELADON-ALERT-EMOTES] - Убрал не используется, пересмотреть
+/atom/movable/screen/alert/direction_lock
+	name = "Direction Lock"
+	desc = "You are facing only one direction, slowing your movement down. Click here to stop the direction lock."
+	icon = 'mod_celadon/_storage_icons/icons/assets/screen_alert.dmi'
+	icon_state = "direction_lock"
+
+/atom/movable/screen/alert/direction_lock/Click()
+	if(isliving(usr) && ..())
+		var/mob/living/L = usr
+		return L.clear_forced_look()
+*/
+// [/CELADON-ADD]

@@ -349,4 +349,5 @@
 	for(var/i in 1 to length(turfs))
 		var/turf/open/T = turfs[i]
 		if(istype(T))
-			T.air.copy_from_turf(T)
+			if(isopenturf(T))
+				T.air.copy_from_turf(T)

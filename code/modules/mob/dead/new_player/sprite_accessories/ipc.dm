@@ -3,7 +3,10 @@
 // Start screens
 
 /datum/sprite_accessory/ipc_screens
-	icon = 'icons/mob/ipc_accessories.dmi'
+	// [CELADON-EDIT] - CELADON_IPC_CHASSIS
+	// icon = 'icons/mob/ipc_accessories.dmi' // CELADON-EDIT -> ORIGINAL
+	icon = 'mod_celadon/_storage_icons/icons/species/ipc/ipc_accessories.dmi'
+	// [/CELADON-EDIT]
 	color_src = EYECOLOR
 
 /datum/sprite_accessory/ipc_screens/blank

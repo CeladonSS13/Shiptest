@@ -1,0 +1,403 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area/template_noop)
+"b" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"c" = (
+/obj/effect/turf_decal/trimline/opaque/white/filled/warning{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/mono,
+/area/ship/bridge)
+"d" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"f" = (
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"g" = (
+/obj/machinery/button/door{
+	id = "doorshuttle";
+	name = "Shutters";
+	pixel_x = -8;
+	pixel_y = -7
+	},
+/turf/closed/wall,
+/area/ship/bridge)
+"i" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"j" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"m" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"n" = (
+/obj/effect/turf_decal/trimline/opaque/white/filled/warning{
+	dir = 8
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/machinery/light/small/directional/north,
+/obj/item/toy/plush/nukeplushie,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/newscaster/directional/north{
+	pixel_x = 10
+	},
+/turf/open/floor/plasteel/mono,
+/area/ship/bridge)
+"p" = (
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
+/obj/structure/railing,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"q" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "doorshuttle"
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	id = "dropshuttle";
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"r" = (
+/obj/machinery/button/door{
+	pixel_y = 7;
+	id = "doorshuttle";
+	name = "Shutters";
+	dir = 1;
+	pixel_x = -8
+	},
+/turf/closed/wall,
+/area/ship/bridge)
+"u" = (
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"w" = (
+/obj/machinery/computer/helm{
+	dir = 8
+	},
+/turf/open/floor/plasteel/mono,
+/area/ship/bridge)
+"x" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/opaque/white/filled/warning{
+	dir = 4
+	},
+/obj/structure/cable,
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/turf/open/floor/plasteel/mono,
+/area/ship/bridge)
+"A" = (
+/obj/effect/turf_decal/trimline/opaque/white/filled/warning{
+	dir = 8
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/machinery/light/small/directional/south,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plasteel/mono,
+/area/ship/bridge)
+"D" = (
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"H" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	dir = 4;
+	id = "dropshuttle"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/docking_port/mobile{
+	can_move_docking_ports = 1;
+	port_direction = 2;
+	preferred_direction = 4;
+	name = "jox"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "doorshuttle"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"K" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"O" = (
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
+/obj/structure/railing,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"P" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	dir = 4;
+	id = "dropshuttle"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "doorshuttle"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"Q" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"R" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	id = "dropshuttle";
+	dir = 8
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "doorshuttle"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"S" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"T" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/opaque/white/filled/warning{
+	dir = 4
+	},
+/obj/machinery/button/door{
+	pixel_y = 5;
+	id = "doorshuttle";
+	name = "Shutters";
+	pixel_x = -27;
+	dir = 4
+	},
+/obj/machinery/button/shieldwallgen{
+	pixel_y = -7;
+	id = "dropshuttle";
+	name = "Holofields";
+	pixel_x = -27;
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel/mono,
+/area/ship/bridge)
+"U" = (
+/turf/closed/wall,
+/area/ship/bridge)
+"V" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"W" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/opaque/white/filled/warning{
+	dir = 4
+	},
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plasteel/mono,
+/area/ship/bridge)
+"Y" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"Z" = (
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+
+(1,1,1) = {"
+a
+U
+Z
+U
+a
+"}
+(2,1,1) = {"
+f
+U
+D
+U
+p
+"}
+(3,1,1) = {"
+u
+T
+x
+W
+O
+"}
+(4,1,1) = {"
+H
+K
+i
+m
+P
+"}
+(5,1,1) = {"
+q
+S
+Y
+Q
+R
+"}
+(6,1,1) = {"
+r
+n
+c
+A
+g
+"}
+(7,1,1) = {"
+U
+j
+w
+j
+U
+"}
+(8,1,1) = {"
+a
+d
+V
+b
+a
+"}

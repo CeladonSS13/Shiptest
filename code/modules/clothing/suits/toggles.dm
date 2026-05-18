@@ -45,11 +45,11 @@
 	toggle_hood()
 
 /obj/item/clothing/suit/hooded/item_action_slot_check(slot, mob/user)
-	if(slot == ITEM_SLOT_OCLOTHING)
+	if(slot == ITEM_SLOT_OCLOTHING || slot == ITEM_SLOT_NECK)// [CELADON-ADD] - FIXES_HOODED_ICONS
 		return 1
 
 /obj/item/clothing/suit/hooded/equipped(mob/user, slot)
-	if(slot != ITEM_SLOT_OCLOTHING)
+	if(slot != ITEM_SLOT_OCLOTHING && slot != ITEM_SLOT_NECK)// [CELADON-ADD] - FIXES_HOODED_ICONS
 		remove_hood()
 	..()
 
@@ -57,11 +57,17 @@
 	suittoggled = FALSE
 	if(hood)
 		if(ishuman(hood.loc))
-			var/mob/living/carbon/H = hood.loc
+			// [CELADON-EDIT] - FIXES_HOODED_ICONS
+			// var/mob/living/carbon/H = hood.loc	// ORIGINAL
+			var/mob/living/carbon/human/H = hood.loc
+			// [/CELADON-EDIT]
 			H.transferItemToLoc(hood, src, TRUE)
-			H.update_inv_wear_suit()
-			update_appearance()
-			H.regenerate_icons()
+			// [CELADON-ADD] - FIXES_HOODED_ICONS
+			if(H.wear_suit == src)
+				H.update_inv_wear_suit()
+			else if(H.wear_neck == src)
+				H.update_inv_neck()
+			// [/CELADON-EDIT]
 		else
 			hood.forceMove(src)
 		for(var/X in actions)
@@ -83,7 +89,7 @@
 	if(!suittoggled)
 		if(ishuman(src.loc))
 			var/mob/living/carbon/human/H = src.loc
-			if(H.wear_suit != src)
+			if(H.wear_suit != src && H.wear_neck != src) // [CELADON-EDIT] - FIXES_HOODED_ICONS
 				to_chat(H, span_warning("You must be wearing [src] to put up the hood!"))
 				return
 			if(H.head)
@@ -91,9 +97,12 @@
 				return
 			else if(H.equip_to_slot_if_possible(hood,ITEM_SLOT_HEAD,0,0,1))
 				suittoggled = TRUE
-				H.update_inv_wear_suit()
-				update_appearance()
-				H.regenerate_icons()
+				// [CELADON-ADD] - FIXES_HOODED_ICONS
+				if(H.wear_suit == src)
+					H.update_inv_wear_suit()
+				else if(H.wear_neck == src)
+					H.update_inv_neck()
+				// [/CELADON-EDIT]
 				for(var/X in actions)
 					var/datum/action/A = X
 					A.UpdateButtonIcon()

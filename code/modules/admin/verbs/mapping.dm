@@ -63,7 +63,10 @@ GLOBAL_PROTECT(admin_verbs_debug_extra)
 	desc = "I am a mappers mistake."
 
 /obj/effect/debugging/marker
-	icon = 'icons/turf/areas.dmi'
+	// [CELADON-EDIT] - CELADON_AREAS - Иначе никак не подсунуть свои зоны
+	// icon = 'icons/turf/areas.dmi' // CELADON-EDIT - ORIGINAL
+	icon = 'mod_celadon/_storage_icons/icons/assets/areas.dmi'
+	// [CELADON-EDIT]
 	icon_state = "yellow"
 
 /obj/effect/debugging/marker/Move()

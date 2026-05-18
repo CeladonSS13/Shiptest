@@ -66,6 +66,12 @@ const TARGET_SPECIES_LIST = [
     name: 'Kepori',
     value: 'kepori',
   },
+  // [CELADON-ADD] - TAJARA
+  {
+    name: 'Tajara',
+    value: 'tajara',
+  },
+  // [/CELADON-ADD]
 ];
 
 export const ScannerGate = (props, context) => {

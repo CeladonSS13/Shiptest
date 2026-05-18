@@ -128,6 +128,7 @@
 		/obj/projectile/meteor = 1,
 		/obj/projectile/energy/nuclear_particle = 1,
 		/obj/projectile/beam/pulse = 1,
+		/obj/projectile/bullet/honker = 15, // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 		/obj/projectile/temp = 15,
 		/obj/projectile/ion = 15,
 		/obj/projectile/beam/emitter = 15,

@@ -164,7 +164,7 @@
 	force = 10
 	toolspeed = 0.5
 
-//CODED BY CODY, AGE 7
+///CODED BY CODY, AGE 7
 /obj/item/circular_saw/best//BESTESTWEPON
 	name = "swabw"
 //spases 4 legibilititie

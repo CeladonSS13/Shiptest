@@ -591,7 +591,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			facialhair_hidden = TRUE
 
 	if(H.facial_hairstyle && (FACEHAIR in species_traits) && !facialhair_hidden)
-		S = GLOB.facial_hairstyles_list[H.facial_hairstyle]
+		// [CELADON-EDIT] - TAJARA - изменения базы
+		// S = GLOB.facial_hairstyles_list[H.facial_hairstyle] // CELADON-EDIT - ORIGINAL
+		S = get_facial_hair_list_by_gender()[H.facial_hairstyle]
+		// [/CELADON-EDIT]
 		if(S)
 
 			var/mutable_appearance/facial_overlay = mutable_appearance(S.icon, S.icon_state, -HAIR_LAYER)
@@ -632,7 +635,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				hair_overlay.icon_state = "debrained"
 
 		else if(H.hairstyle && (HAIR in species_traits))
-			S = GLOB.hairstyles_list[H.hairstyle]
+			// [CELADON-EDIT] - TAJARA - изменения базы
+			// S = GLOB.hairstyles_list[H.hairstyle] // CELADON-EDIT - ORIGINAL
+			S = get_hair_list_by_gender()[H.hairstyle]
+			// [/CELADON-EDIT]
 			if(S)
 
 				var/hair_state = S.icon_state
@@ -710,7 +716,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 					if(iskepori(H)) // Kepori need sclera but don't fit the normal silhouette, so this needs changing. Make better later.
 						eye_overlay = mutable_appearance('icons/mob/species/kepori/kepori_eyes.dmi', eyes.eye_icon_state, -BODYPARTS_LAYER)
 						sclera_overlay = mutable_appearance('icons/mob/species/kepori/kepori_eyes.dmi', eyes.sclera_icon_state, -BODYPARTS_LAYER)
-
+					// [CELADON-ADD] - CELADON_LANIUS
+					else if(islanius(H))
+						eye_overlay = mutable_appearance('mod_celadon/_storage_icons/icons/species/lanius/lanius_organs.dmi', eyes.eye_icon_state, -BODYPARTS_LAYER)
+					// [/CELADON-ADD]
 					else
 						eye_overlay = mutable_appearance(species_eye_path || 'icons/mob/human_face.dmi', eyes.eye_icon_state, -BODYPARTS_LAYER)
 						sclera_overlay = mutable_appearance('icons/mob/human_face.dmi', eyes.sclera_icon_state, -BODYPARTS_LAYER)
@@ -853,6 +862,12 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			bodyparts_to_add -= "ears"
 			bodyparts_to_add -= "ears"
 
+	// [CELADON-ADD] - CELADON_IPC_HAIR
+	if("ipc_hair" in mutant_bodyparts)
+		if(!H.dna.features["ipc_hair"] || H.dna.features["ipc_hair"] == "None" || (H.head && (H.head.flags_inv & HIDEHAIR)) || !HD)
+			bodyparts_to_add -= "ipc_hair"
+	// [/CELADON-ADD] - CELADON_IPC_HAIR
+
 	if("ipc_screen" in mutant_bodyparts)
 		if(!H.dna.features["ipc_screen"] || H.dna.features["ipc_screen"] == "None" || (H.wear_mask && (H.wear_mask.flags_inv & HIDEEYES)) || !HD || !(HD.bodytype & BODYTYPE_BOXHEAD))
 			bodyparts_to_add -= "ipc_screen"
@@ -884,6 +899,109 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	if("vox_neck_quills" in mutant_bodyparts)
 		if(!H.dna.features["vox_neck_quills"] || H.dna.features["vox_neck_quills"] == "None")
 			bodyparts_to_add -= "vox_neck_quills"
+
+	// [CELADON-ADD] - TAJARA
+	if("tajara_nose_markings" in mutant_bodyparts)
+		if(!H.dna.features["tajara_nose_markings"] || H.dna.features["tajara_nose_markings"] == "None" || H.head && (H.head.flags_inv & HIDEFACE) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEFACE)) || !HD) // || HD.status == BODYTYPE_ROBOTIC
+			bodyparts_to_add -= "tajara_nose_markings"
+
+	if("tajara_facial_hairs" in mutant_bodyparts)
+		if(!H.dna.features["tajara_facial_hairs"] || H.dna.features["tajara_facial_hairs"] == "None" || H.head && (H.head.flags_inv & HIDEFACE) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEFACE)) || !HD) // || HD.status == BODYTYPE_ROBOTIC
+			bodyparts_to_add -= "tajara_facial_hairs"
+
+	if("tajara_ears_markings" in mutant_bodyparts)
+		if(!H.dna.features["tajara_ears_markings"] || H.dna.features["tajara_ears_markings"] == "None" || H.head && (H.head.flags_inv & HIDEEARS) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEEARS)) || !HD) // || HD.status == BODYTYPE_ROBOTIC
+			bodyparts_to_add -= "tajara_ears_markings"
+
+	if("tajara_head_markings" in mutant_bodyparts)
+		if(!H.dna.features["tajara_head_markings"] || H.dna.features["tajara_head_markings"] == "None" || H.head && (H.head.flags_inv & HIDEFACE) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEFACE)) || !HD) // || HD.status == BODYTYPE_ROBOTIC
+			bodyparts_to_add -= "tajara_head_markings"
+
+	if("tajara_chest_markings" in mutant_bodyparts)
+		if(!H.dna.features["tajara_chest_markings"] || H.dna.features["tajara_chest_markings"] == "None" || H.wear_suit && (H.wear_suit.flags_inv & HIDEJUMPSUIT))
+			bodyparts_to_add -= "tajara_chest_markings"
+
+	if("tajara_body_markings" in mutant_bodyparts)
+		if(!H.dna.features["tajara_body_markings"] || H.dna.features["tajara_body_markings"] == "None" || H.wear_suit && (H.wear_suit.flags_inv & HIDEJUMPSUIT))
+			bodyparts_to_add -= "tajara_body_markings"
+
+	if("tajara_hairs" in mutant_bodyparts)
+		if(!H.dna.features["tajara_hairs"] || H.dna.features["tajara_hairs"] == "Plain" || (H.head && (H.head.flags_inv & HIDEHAIR)) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEHAIR)) || !HD)
+			bodyparts_to_add -= "tajara_hairs"
+
+	if("tajara_ears" in mutant_bodyparts)
+		if(!H.dna.features["tajara_ears"] || H.dna.features["tajara_ears"] == "None" || (H.head && (H.head.flags_inv & HIDEEARS)))
+			bodyparts_to_add -= "tajara_ears"
+
+	if("tajara_tail" in mutant_bodyparts)
+		if(!H.dna.features["tajara_tail"] || H.dna.features["tajara_tail"] == "None" || (H.wear_suit && (H.wear_suit.flags_inv & HIDETAIL)))
+			bodyparts_to_add -= "tajara_tail"
+
+	if("waggingtajara_tail" in mutant_bodyparts)
+		if(!H.dna.features["tajara_tail"] || H.dna.features["tajara_tail"] == "None" || (H.wear_suit && (H.wear_suit.flags_inv & HIDETAIL)))
+			bodyparts_to_add -= "waggingtajara_tail"
+		else if ("tajara_tail" in mutant_bodyparts)
+			bodyparts_to_add -= "waggingtajara_tail"
+
+	// [CELADON-ADD] - CELADON_RIOL
+	if("riol_nose_markings" in mutant_bodyparts)
+		if(!H.dna.features["riol_nose_markings"] || H.dna.features["riol_nose_markings"] == "None" || H.head && (H.head.flags_inv & HIDEFACE) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEFACE)) || !HD) // || HD.status == BODYTYPE_ROBOTIC
+			bodyparts_to_add -= "riol_nose_markings"
+
+	if("riol_facial_hairs" in mutant_bodyparts)
+		if(!H.dna.features["riol_facial_hairs"] || H.dna.features["riol_facial_hairs"] == "None" || H.head && (H.head.flags_inv & HIDEFACE) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEFACE)) || !HD) // || HD.status == BODYTYPE_ROBOTIC
+			bodyparts_to_add -= "riol_facial_hairs"
+
+	if("riol_ears_markings" in mutant_bodyparts)
+		if(!H.dna.features["riol_ears_markings"] || H.dna.features["riol_ears_markings"] == "None" || H.head && (H.head.flags_inv & HIDEEARS) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEEARS)) || !HD) // || HD.status == BODYTYPE_ROBOTIC
+			bodyparts_to_add -= "riol_ears_markings"
+
+	if("riol_head_markings" in mutant_bodyparts)
+		if(!H.dna.features["riol_head_markings"] || H.dna.features["riol_head_markings"] == "None" || H.head && (H.head.flags_inv & HIDEFACE) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEFACE)) || !HD) // || HD.status == BODYTYPE_ROBOTIC
+			bodyparts_to_add -= "riol_head_markings"
+
+	if("riol_chest_markings" in mutant_bodyparts)
+		if(!H.dna.features["riol_chest_markings"] || H.dna.features["riol_chest_markings"] == "None" || H.wear_suit && (H.wear_suit.flags_inv & HIDEJUMPSUIT))
+			bodyparts_to_add -= "riol_chest_markings"
+
+	if("riol_body_markings" in mutant_bodyparts)
+		if(!H.dna.features["riol_body_markings"] || H.dna.features["riol_body_markings"] == "None" || H.wear_suit && (H.wear_suit.flags_inv & HIDEJUMPSUIT))
+			bodyparts_to_add -= "riol_body_markings"
+
+	if("riol_tail_markings" in mutant_bodyparts)
+		if(!H.dna.features["riol_tail_markings"] || H.dna.features["riol_tail_markings"] == "None" || H.wear_suit && (H.wear_suit.flags_inv & HIDEJUMPSUIT))
+			bodyparts_to_add -= "riol_tail_markings"
+		else if ("tail" in mutant_bodyparts)
+			bodyparts_to_add -= "riol_tail_markings"
+
+	if("wagging_riol_tail_markings" in mutant_bodyparts)
+		if(!H.dna.features["riol_tail_markings"] || H.dna.features["riol_tail_markings"] == "None" || H.wear_suit && (H.wear_suit.flags_inv & HIDEJUMPSUIT))
+			bodyparts_to_add -= "wagging_riol_tail_markings"
+		else if ("tail" in mutant_bodyparts)
+			bodyparts_to_add -= "wagging_riol_tail_markings"
+
+	if("riol_hairs" in mutant_bodyparts)
+		if(!H.dna.features["riol_hairs"] || H.dna.features["riol_hairs"] == "Plain" || (H.head && (H.head.flags_inv & HIDEHAIR)) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEHAIR)) || !HD)
+			bodyparts_to_add -= "riol_hairs"
+
+	if("riol_tail" in mutant_bodyparts)
+		if(!H.dna.features["riol_tail"] || H.dna.features["riol_tail"] == "None" || (H.wear_suit && (H.wear_suit.flags_inv & HIDETAIL)))
+			bodyparts_to_add -= "riol_tail"
+
+	if("riol_ears" in mutant_bodyparts)
+		if(!H.dna.features["riol_ears"] || H.dna.features["riol_ears"] == "None" || (H.head && (H.head.flags_inv & HIDEEARS)))
+			bodyparts_to_add -= "riol_ears"
+	// [/CELADON-ADD]
+
+	// [CELADON-ADD] - CELADON_ELZUOZE
+	if("tail_elzu" in mutant_bodyparts)
+		if(!H.dna.features["tail_elzu"] || H.dna.features["tail_elzu"] == "None" || H.wear_suit && (H.wear_suit.flags_inv & HIDEJUMPSUIT))
+			bodyparts_to_add -= "tail_elzu"
+
+	if("elzu_horns" in mutant_bodyparts)
+		if(!H.dna.features["elzu_horns"] || H.dna.features["elzu_horns"] == "None" || H.head && (H.head.flags_inv & HIDEHORNS) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEHORNS)) || !HD)
+			bodyparts_to_add -= "elzu_horns"
+	// [/CELADON_ADD]
 
 	////PUT ALL YOUR WEIRD ASS REAL-LIMB HANDLING HERE
 
@@ -957,6 +1075,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 					S = GLOB.moth_markings_list[H.dna.features["moth_markings"]]
 				if("squid_face")
 					S = GLOB.squid_face_list[H.dna.features["squid_face"]]
+				// [CELADON-ADD] - CELADON_IPC_HAIR
+				if("ipc_hair")
+					S = GLOB.ipc_hair_list[H.dna.features["ipc_hair"]]
+				// [/CELADON-ADD] - CELADON_IPC_HAIR
 				if("ipc_screen")
 					S = GLOB.ipc_screens_list[H.dna.features["ipc_screen"]]
 				if("ipc_antenna")
@@ -989,6 +1111,55 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 					S = GLOB.tails_list_elzu[H.dna.features["tail_elzu"]]
 				if("waggingtail_elzu")
 					S = GLOB.animated_tails_list_elzu[H.dna.features["tail_elzu"]]
+				// [CELADON-ADD] - TAJARA
+				if("tajara_ears")
+					S = GLOB.tajara_ears_list[H.dna.features["tajara_ears"]]
+				if("tajara_hairs")
+					S = GLOB.tajara_hairs_list[H.dna.features["tajara_hairs"]]
+				if("tajara_ears_markings")
+					S = GLOB.tajara_ears_markings_list[H.dna.features["tajara_ears_markings"]]
+				if("tajara_head_markings")
+					S = GLOB.tajara_head_markings_list[H.dna.features["tajara_head_markings"]]
+				if("tajara_nose_markings")
+					S = GLOB.tajara_nose_markings_list[H.dna.features["tajara_nose_markings"]]
+				if("tajara_facial_hairs")
+					S = GLOB.tajara_facial_hairs_list[H.dna.features["tajara_facial_hairs"]]
+				if("tajara_chest_markings")
+					S = GLOB.tajara_chest_markings_list[H.dna.features["tajara_chest_markings"]]
+				if("tajara_body_markings")
+					S = GLOB.tajara_body_markings_list[H.dna.features["tajara_body_markings"]]
+				if("tajara_tail")
+					S = GLOB.tajara_tail_list[H.dna.features["tajara_tail"]]
+				if("waggingtajara_tail")
+					S = GLOB.tajara_animated_tail_list[H.dna.features["tajara_tail"]]
+				// [CELADON-ADD] - CELADON_RIOL
+				if("riol_ears")
+					S = GLOB.riol_ears_list[H.dna.features["riol_ears"]]
+				if("riol_hairs")
+					S = GLOB.riol_hairs_list[H.dna.features["riol_hairs"]]
+				if("riol_ears_markings")
+					S = GLOB.riol_ears_markings_list[H.dna.features["riol_ears_markings"]]
+				if("riol_head_markings")
+					S = GLOB.riol_head_markings_list[H.dna.features["riol_head_markings"]]
+				if("riol_nose_markings")
+					S = GLOB.riol_nose_markings_list[H.dna.features["riol_nose_markings"]]
+				if("riol_facial_hairs")
+					S = GLOB.riol_facial_hairs_list[H.dna.features["riol_facial_hairs"]]
+				if("riol_chest_markings")
+					S = GLOB.riol_chest_markings_list[H.dna.features["riol_chest_markings"]]
+				if("riol_body_markings")
+					S = GLOB.riol_body_markings_list[H.dna.features["riol_body_markings"]]
+				if("riol_tail_markings")
+					S = GLOB.riol_tail_markings_list[H.dna.features["riol_tail_markings"]]
+				if("wagging_riol_tail_markings")
+					S = GLOB.riol_animated_tail_markings_list[H.dna.features["riol_tail_markings"]]
+				if("riol_tail")
+					S = GLOB.riol_tail_list[H.dna.features["riol_tail"]]
+				if("waggingriol_tail")
+					S = GLOB.riol_animated_tail_list[H.dna.features["riol_tail"]]
+				if("riol_legs")
+					S = GLOB.riol_legs_list[H.dna.features["riol_legs"]]
+				// [/CELADON-ADD]
 			if(!S || S.icon_state == "none")
 				continue
 
@@ -1000,6 +1171,21 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				bodypart = "tail"
 			else if(bodypart == "waggingtail_lizard" || bodypart == "waggingtail_human" || bodypart == "waggingtail_elzu")
 				bodypart = "waggingtail"
+
+			// [CELADON-ADD] - TAJARA - add лучше чем edit
+			else if (bodypart == "tajara_tail")
+				bodypart = "tail"
+			else if (bodypart == "waggingtajara_tail")
+				bodypart = "waggingtail"
+
+			// [CELADON-ADD] - CELADON_RIOL
+			else if (bodypart == "riol_tail")
+				bodypart = "tail"
+			else if (bodypart == "waggingriol_tail")
+				bodypart = "waggingtail"
+			else if (bodypart == "riol_tail_markings")
+				bodypart = "tailmarkings"
+			// [/CELADON-ADD]
 
 			var/used_color_src = S.color_src
 
@@ -1031,6 +1217,40 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 							accessory_overlay.color = "#[H.dna.features["mcolor2"]]"
 						if(SKINCOLORS)
 							accessory_overlay.color = "#[(skintone2hex(H.skin_tone))]"
+
+						// [CELADON-ADD] - TAJARA
+						if(SKINNOSECOLORS)
+							accessory_overlay.color = "#[(skintonenose2hex(H.skin_tone_nose))]"
+						if(SKINTAJARACOLORS)
+							accessory_overlay.color = "#[(skintonetajara2hex(H.skin_tone_tajara))]"
+						if(EARSTAJARACOLORS)
+							accessory_overlay.color = "#[H.dna.features["tajara_ears_markings_color"]]"
+						if(HEADTAJARACOLORS)
+							accessory_overlay.color = "#[H.dna.features["tajara_head_markings_color"]]"
+						if(NOSETAJARACOLORS)
+							accessory_overlay.color = "#[H.dna.features["tajara_nose_markings_color"]]"
+						if(CHESTTAJARACOLORS)
+							accessory_overlay.color = "#[H.dna.features["tajara_chest_markings_color"]]"
+						if(BODYTAJARACOLORS)
+							accessory_overlay.color = "#[H.dna.features["tajara_body_markings_color"]]"
+
+						// [CELADON-ADD] - CELADON_RIOL
+						if(SKINRIOLCOLORS)
+							accessory_overlay.color = "#[(skintoneriol2hex(H.skin_tone_riol))]"
+						if(EARSRIOLCOLORS)
+							accessory_overlay.color = "#[H.dna.features["riol_ears_markings_color"]]"
+						if(HEADRIOLCOLORS)
+							accessory_overlay.color = "#[H.dna.features["riol_head_markings_color"]]"
+						if(NOSERIOLCOLORS)
+							accessory_overlay.color = "#[H.dna.features["riol_nose_markings_color"]]"
+						if(CHESTRIOLCOLORS)
+							accessory_overlay.color = "#[H.dna.features["riol_chest_markings_color"]]"
+						if(BODYRIOLCOLORS)
+							accessory_overlay.color = "#[H.dna.features["riol_body_markings_color"]]"
+						if(TAILRIOLCOLORS)
+							accessory_overlay.color = "#[H.dna.features["riol_tail_markings_color"]]"
+						// [/CELADON-ADD]
+
 
 						if(HAIR)
 							if(hair_color == "mutcolor")
@@ -1252,9 +1472,9 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			if(HAS_TRAIT(I, TRAIT_FORCE_SUIT_STORAGE_ALWAYS))
 				return TRUE
 			if(HAS_TRAIT(I, TRAIT_FORCE_SUIT_STORAGE))
-				if(!H.w_uniform)
+				if(!H.w_uniform && !H.wear_suit)	// [CELADON-EDIT]
 					if(!disable_warning)
-						to_chat(H, span_warning("You need at least a uniform before you can attach this [I.name]!"))
+						to_chat(H, span_warning("You need at least a uniform or armor before you can attach this [I.name]!")) // [CELADON-EDIT]
 					return FALSE
 				return TRUE
 			if(!H.wear_suit)
@@ -1420,13 +1640,28 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			else
 				H.remove_movespeed_modifier(/datum/movespeed_modifier/hunger)
 
+// [CELADON - EDIT] - CELADON_LANIUS
+	// switch(H.nutrition) // [CELADON - EDIT] - ORIGINAL
+	// 	if(NUTRITION_LEVEL_HUNGRY to INFINITY)
+	// 		H.clear_alert("nutrition")
+	// 	if(NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_HUNGRY)
+	// 		H.throw_alert("nutrition", /atom/movable/screen/alert/hungry)
+	// 	if(0 to NUTRITION_LEVEL_STARVING)
+	// 		H.throw_alert("nutrition", /atom/movable/screen/alert/starving) // [/CELADON - EDIT] - ORIGINAL
 	switch(H.nutrition)
 		if(NUTRITION_LEVEL_HUNGRY to INFINITY)
 			H.clear_alert("nutrition")
 		if(NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_HUNGRY)
-			H.throw_alert("nutrition", /atom/movable/screen/alert/hungry)
+			if(is_species(H, /datum/species/lanius))
+				H.throw_alert("nutrition", /atom/movable/screen/alert/hungry/lanius)
+			else
+				H.throw_alert("nutrition", /atom/movable/screen/alert/hungry)
 		if(0 to NUTRITION_LEVEL_STARVING)
-			H.throw_alert("nutrition", /atom/movable/screen/alert/starving)
+			if(is_species(H, /datum/species/lanius))
+				H.throw_alert("nutrition", /atom/movable/screen/alert/starving/lanius)
+			else
+				H.throw_alert("nutrition", /atom/movable/screen/alert/starving)
+// [/CELADON - EDIT]
 
 /datum/species/proc/update_health_hud(mob/living/carbon/human/H)
 	return 0
@@ -1523,6 +1758,15 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	else
 
 		var/atk_verb = user.dna.species.attack_verb
+		// [CELADON-ADD] CELADON_BITE_FERAL
+		var/attack_verb_bonus = 0
+		var/datum/component/mood/temp = user.GetComponent(/datum/component/mood)
+		var/sanity_level_mood = temp.sanity_level
+		var/starving_cat_bonus = user.nutrition <= NUTRITION_LEVEL_HUNGRY ? 10 : 1
+		var/crazy_feral_cat = clamp((starving_cat_bonus * sanity_level_mood), 0, 100)
+		if((istajara(user) || isriol(user)) && prob(crazy_feral_cat))
+			atk_verb = ATTACK_EFFECT_BITE
+		// [/CELADON-ADD] CELADON_BITE_FERAL
 		if(target.body_position == LYING_DOWN)
 			atk_verb = ATTACK_EFFECT_KICK
 
@@ -1533,11 +1777,22 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				user.do_attack_animation(target, ATTACK_EFFECT_CLAW)
 			if(ATTACK_EFFECT_SMASH)
 				user.do_attack_animation(target, ATTACK_EFFECT_SMASH)
+			// [CELADON-ADD] CELADON_BITE_FERAL
+			if(ATTACK_EFFECT_BITE)
+				if(user.is_mouth_covered()) //Намордник
+					user.balloon_alert(user, "рот заблокирован!")
+					return FALSE
+
+				user.do_attack_animation(target, ATTACK_EFFECT_BITE)
+				attack_verb_bonus = 3
+			// [/CELADON-ADD]
 			else
 				user.do_attack_animation(target, ATTACK_EFFECT_PUNCH)
 
-		var/damage = rand(user.dna.species.punchdamagelow, user.dna.species.punchdamagehigh)
-
+		// [CELADON-EDIT] CELADON_BITE_FERAL
+		//var/damage = rand(user.dna.species.punchdamagelow, user.dna.species.punchdamagehigh) // CELADON-EDIT - ORIGINAL
+		var/damage = rand(user.dna.species.punchdamagelow + attack_verb_bonus, user.dna.species.punchdamagehigh + attack_verb_bonus)
+		// [/CELADON-EDIT]
 		var/obj/item/bodypart/affecting = target.get_bodypart(ran_zone(user.zone_selected))
 
 		var/miss_chance = 100//calculate the odds that a punch misses entirely. considers stamina and brute damage of the puncher. punches miss by default to prevent weird cases
@@ -1578,7 +1833,12 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			target.apply_damage(damage, user.dna.species.attack_type, affecting, armor_block, attack_direction = attack_direction)
 			target.apply_damage(damage*1.5, STAMINA, affecting, armor_block)
 			log_combat(user, target, "punched")
-
+		// [CELADON-ADD] CELADON_BITE_FERAL
+		if(user != target && (target.mob_biotypes & MOB_ORGANIC) && (atk_verb == ATTACK_EFFECT_BITE))
+			var/datum/reagents/tasty_meal = new()
+			tasty_meal.add_reagent(/datum/reagent/consumable/nutriment/protein, round(damage/3, 1))
+			tasty_meal.trans_to(user, tasty_meal.total_volume, transfered_by = user, methods = INGEST)
+		// [/CELADON-ADD]
 		if((target.stat != DEAD) && damage >= user.dna.species.punchstunthreshold)
 			target.visible_message(
 				span_danger("[user] knocks [target] down!"),
@@ -1632,7 +1892,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		return
 	if(M.mind)
 		attacker_style = M.mind.martial_art
-	if((M != H) && M.a_intent != INTENT_HELP && H.check_shields(M, 0, M.name, attack_type = UNARMED_ATTACK))
+	//[CELADON-EDIT] A little martial arts buff
+	if((M != H) && M.a_intent != INTENT_HELP && H.check_shields(M, 0, M.name, attack_type = attacker_style.name != "Martial Art" ? MARTIAL_ARTS : UNARMED_ATTACK))
+	//if((M != H) && M.a_intent != INTENT_HELP && H.check_shields(M, 0, M.name, attack_type = UNARMED_ATTACK : MELEE_ATTACK)
+	//[CELADON-EDIT] A little martial arts buff
 		log_combat(M, H, "attempted to touch")
 		H.visible_message(span_warning("[M] attempts to touch [H]!"), \
 						span_danger("[M] attempts to touch you!"), span_hear("You hear a swoosh!"), COMBAT_MESSAGE_RANGE, M)
@@ -2174,7 +2437,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	return (locate(/obj/item/organ/tail) in H.internal_organs)
 
 /datum/species/proc/is_wagging_tail(mob/living/carbon/human/H)
-	return ("waggingtail_human" in mutant_bodyparts) || ("waggingtail_lizard" in mutant_bodyparts) || ("waggingtail_elzu" in mutant_bodyparts)
+	// [CELADON-EDIT] - TAJARA, CELADON_RIOL
+	// return ("waggingtail_human" in mutant_bodyparts) || ("waggingtail_lizard" in mutant_bodyparts) || ("waggingtail_elzu" in mutant_bodyparts) // CELADON-EDIT - ORIGINAL
+	return ("waggingtail_human" in mutant_bodyparts) || ("waggingtail_lizard" in mutant_bodyparts) || ("waggingtail_elzu" in mutant_bodyparts) || ("waggingtajara_tail" in mutant_bodyparts) || ("waggingriol_tail" in mutant_bodyparts)
+	// [/CELADON-EDIT]
 
 /datum/species/proc/start_wagging_tail(mob/living/carbon/human/H)
 	if("tail_human" in mutant_bodyparts)

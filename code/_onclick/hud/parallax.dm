@@ -9,6 +9,7 @@
 		current_client.parallax_layers_cached = list()
 		current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_1(null, current_client.view)
 		current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_2(null, current_client.view)
+		current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/layer_3(null, current_client.view)	// [CELADON-EDIT] - PARALLAX-FIX-ASTEROID
 		current_client.parallax_layers_cached += new /atom/movable/screen/parallax_layer/planet(null, current_client.view)
 		if(SSparallax.random_layer)
 			current_client.parallax_layers_cached += new SSparallax.random_layer
@@ -242,7 +243,8 @@
 		hud_used.set_parallax_movedir(areaobj.parallax_movedir, TRUE)
 
 /atom/movable/screen/parallax_layer
-	icon = 'icons/effects/parallax.dmi'
+	//icon = 'icons/effects/parallax.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/assets/parallax.dmi'	// [CELADON-EDIT]
 	var/speed = 1
 	var/offset_x = 0
 	var/offset_y = 0
@@ -304,6 +306,7 @@
 
 /atom/movable/screen/parallax_layer/random/asteroids
 	icon_state = "asteroids"
+	alpha = 255
 
 /atom/movable/screen/parallax_layer/planet
 	icon_state = "planet"

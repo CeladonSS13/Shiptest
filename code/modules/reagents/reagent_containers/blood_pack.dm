@@ -38,7 +38,7 @@
 
 /obj/item/reagent_containers/blood/random/Initialize()
 	icon_state = "bloodpack"
-	blood_type = pick("A+", "A-", "B+", "B-", "O+", "O-", "L", "E", "Coolant")
+	blood_type = pick("A+", "A-", "B+", "B-", "O+", "O-", "L", "Coolant") // [CELADON-EDIT] - CELADON_ETHEREAL_FIX
 	return ..()
 
 /obj/item/reagent_containers/blood/APlus
@@ -62,8 +62,12 @@
 /obj/item/reagent_containers/blood/lizard
 	blood_type = "L"
 
+// [CELADON-REMOVE] - CELADON_ETHEREAL_FIX - Типа крови у Эльзуосов больше нет, сделал пакет с жидким электричеством, поэтому переместил в мод mod_celadon\ethereal_fix\code\blood_pack.dm
+/*
 /obj/item/reagent_containers/blood/elzuose
 	blood_type = "E"
+*/
+// [/CELADON-REMOVE]
 
 /obj/item/reagent_containers/blood/synthetic
 	blood_type = "Coolant"

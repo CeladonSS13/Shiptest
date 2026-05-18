@@ -49,23 +49,37 @@
 		return
 	if(QDELETED(src) || QDELETED(user))
 		return
+
+	// [CELADON-ADD] - CELADON: DISCORD VERIFY
+	if(CONFIG_GET(flag/DiscordVerify))
+		if(!checkDiscordVerify(user.ckey))
+			to_chat(usr, span_danger("Ваш аккаунт не верифицирован в Discord.\n Пожалуйста, используйте кнопку 'Verify Discord Account' во вкладке 'Special Verbs' для Discord верификации."))
+			return
+	// [/CELADON-ADD]
+
 	var/ghost_role = alert("Become [mob_name]? (Warning, You can no longer be revived!)",,"Yes","No")
 
 	if(ghost_role == "No" || !loc)
 		return
+	// [CELADON-EDIT] - CELADON_LOAD_PREF
+	var/requested_char = FALSE
+	if(can_load_appearance == TRUE && ispath(mob_type, /mob/living/carbon/human)) // Can't just use if(can_load_appearance), 2 has a different behavior
+		if(alert(user, "Load currently selected slot?", "Play as your character!", "Yes", "No") == "Yes")
+			requested_char = TRUE
+	// [/CELADON-EDIT] - CELADON_LOAD_PREF
 	log_game("[key_name(user)] became [mob_name]")
-	create(ckey = user.ckey)
+	create(ckey = user.ckey, load_character = requested_char) // [CELADON-EDIT] - CELADON_LOAD_PREF
 
 /obj/effect/mob_spawn/Initialize(mapload)
 	. = ..()
 	if(instant || (roundstart && (mapload || (SSticker && SSticker.current_state > GAME_STATE_SETTING_UP))))
 		INVOKE_ASYNC(src, PROC_REF(create))
 	else if(ghost_usable)
-		SSpoints_of_interest.make_point_of_interest(src)
+		GLOB.poi_list |= src // [CELADON-EDIT] - old: SSpoints_of_interest.remove_point_of_interest(src)
 		LAZYADD(GLOB.mob_spawners[name], src)
 
 /obj/effect/mob_spawn/Destroy()
-	SSpoints_of_interest.remove_point_of_interest(src)
+	GLOB.poi_list -= src // [CELADON-EDIT] - old: SSpoints_of_interest.remove_point_of_interest(src)
 	var/list/spawners = GLOB.mob_spawners[name]
 	LAZYREMOVE(spawners, src)
 	if(!LAZYLEN(spawners))
@@ -81,13 +95,16 @@
 /obj/effect/mob_spawn/proc/equip(mob/M)
 	return
 
-/obj/effect/mob_spawn/proc/create(ckey, newname)
+// [CELADON-ADD] - CELADON_LOAD_PREF
+/obj/effect/mob_spawn/proc/special_post_appearance(mob/H)
+	return
+// [//CELADON-ADD] - CELADON_LOAD_PREF
+
+// [CELADON-EDIT] - CELADON_LOAD_PREF
+/obj/effect/mob_spawn/proc/create(ckey, name, load_character)
 	var/mob/living/M = new mob_type(get_turf(src)) //living mobs only
-	if(!random || newname)
-		if(newname)
-			M.real_name = newname
-		else
-			M.real_name = mob_name ? mob_name : M.name
+	if(!random)
+		M.real_name = mob_name ? mob_name : M.name
 		if(!mob_gender)
 			mob_gender = pick(MALE, FEMALE)
 		M.gender = mob_gender
@@ -102,7 +119,7 @@
 	M.adjustBruteLoss(brute_damage)
 	M.adjustFireLoss(burn_damage)
 	M.color = mob_color
-	equip(M)
+	equip(M, load_character)
 
 	if(ckey)
 		M.ckey = ckey
@@ -113,27 +130,53 @@
 			if(important_info != "")
 				output_message += "\n[span_userdanger("[important_info]")]"
 			to_chat(M, output_message)
+		if(ishuman(M) && load_character)
+			var/mob/living/carbon/human/H = M
+			H.load_client_appearance(H.client)
 		var/datum/mind/MM = M.mind
 		var/datum/antagonist/A
-		if(antagonist_type)
-			A = MM.add_antag_datum(antagonist_type)
-		if(objectives)
-			if(!A)
-				A = MM.add_antag_datum(/datum/antagonist/custom)
-			for(var/objective in objectives)
-				var/datum/objective/O = new/datum/objective(objective)
-				O.owner = MM
-				A.objectives += O
+		if(!istype(src, /obj/effect/mob_spawn/human))
+			if(antagonist_type)
+				A = MM.add_antag_datum(antagonist_type)
+			if(objectives)
+				if(!A)
+					A = MM.add_antag_datum(/datum/antagonist/custom)
+				for(var/objective in objectives)
+					var/datum/objective/O = new/datum/objective(objective)
+					O.owner = MM
+					A.objectives += O
 		if(assignedrole)
 			M.mind.assigned_role = assignedrole
-		special(M)
+		special(M, name)
 		MM.name = M.real_name
+		special_post_appearance(M, name)
+	// [CELADON-ADD] - CELADON_GHOST_ROLES
+		// Issue player loadout for ghost role when they chose to load character slot
+		if(ishuman(M) && load_character && M.client && M.client.prefs?.equipped_gear && length(M.client.prefs.equipped_gear))
+			var/mob/living/carbon/human/H = M
+			var/obj/item/storage/box/loadout_dumper = new()
+
+			for(var/gear_id in M.client.prefs.equipped_gear)
+				var/datum/gear/new_gear = GLOB.gear_datums[gear_id]
+				if(new_gear)
+					// spawn item into the box; spawn_item handles role replacements via job/assigned_role
+					new_gear.spawn_item(loadout_dumper, H)
+
+			// try to place box into back storage, else into hands, else drop on turf
+			var/datum/component/storage/back_storage = H.back?.GetComponent(/datum/component/storage)
+			if(back_storage)
+				back_storage.handle_item_insertion(loadout_dumper, TRUE)
+			else if(!H.put_in_hands(loadout_dumper, TRUE))
+				loadout_dumper.forceMove(get_turf(H))
+				to_chat(H, span_warning("Unable to place your loadout box into hands, dropped at your feet."))
+	spawned_mob_ref = WEAKREF(M)
+	// [/CELADON-ADD]
 	if(uses > 0)
 		uses--
 	spawned_mob_ref = WEAKREF(M)
 	if(!permanent && !uses)
 		qdel(src)
-	return M
+// [/CELADON-EDIT] - CELADON_LOAD_PREF
 
 // Base version - place these on maps/templates.
 /obj/effect/mob_spawn/human
@@ -199,11 +242,17 @@
 	if(hairstyle)
 		H.hairstyle = hairstyle
 	else
-		H.hairstyle = random_hairstyle(H.gender)
+		// [CELADON-EDIT] - TAJARA - изменения базы
+		// H.hairstyle = random_hairstyle(H.gender) // CELADON-EDIT - ORIGINAL
+		H.hairstyle = H.dna.species.random_hairstyle(H.gender)
+		// [/CELADON-EDIT]
 	if(facial_hairstyle)
 		H.facial_hairstyle = facial_hairstyle
 	else
-		H.facial_hairstyle = random_facial_hairstyle(H.gender)
+		// [CELADON-EDIT] - TAJARA - изменения базы
+		// H.facial_hairstyle = random_facial_hairstyle(H.gender) // CELADON-EDIT - ORIGINAL
+		H.facial_hairstyle = H.dna.species.random_facial_hairstyle(H.gender)
+		// [/CELADON-EDIT]
 	if(skin_tone)
 		H.skin_tone = skin_tone
 	else
@@ -264,7 +313,7 @@
 
 //Non-human spawners
 
-/obj/effect/mob_spawn/AICorpse/create(ckey) //Creates a corrupted AI
+/obj/effect/mob_spawn/AICorpse/create(ckey, name, load_character) // [CELADON-EDIT] - CELADON_LOAD_PREF
 	var/A = locate(/mob/living/silicon/ai) in loc
 	if(A)
 		return
@@ -284,7 +333,7 @@
 /obj/effect/mob_spawn/slime/equip(mob/living/simple_animal/slime/S)
 	S.colour = mobcolour
 
-/obj/effect/mob_spawn/facehugger/create(ckey) //Creates a squashed facehugger
+/obj/effect/mob_spawn/facehugger/create(ckey, name, load_character) // [CELADON-EDIT] - CELADON_LOAD_PREF
 	var/mob/living/simple_animal/hostile/facehugger/object = new(src.loc) //variable object is a new facehugger at the location of the landmark
 	object.name = src.name
 	object.death() //call the facehugger's death proc

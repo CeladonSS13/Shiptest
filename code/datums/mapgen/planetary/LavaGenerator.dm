@@ -93,6 +93,9 @@
 		/obj/structure/flora/ash/fern = 5,
 		/obj/structure/flora/ash/fireblossom = 1,
 		/obj/structure/flora/ash/puce = 5,
+		// [CELADON - ADD] - CELADON_RETURN_LANDMINE
+		/obj/item/mine/pressure/explosive/rusty/live = 1,
+		// [/CELADON - ADD]
 	)
 	feature_spawn_chance = 0.3
 	feature_spawn_list = list(
@@ -107,6 +110,10 @@
 		/obj/structure/vein/lavaland/classthree = 2,
 		/obj/structure/vein/lavaland/classthree/rare = 1,
 		/obj/effect/spawner/random/anomaly/lava = 1,
+		// CELADON EDIT START
+		/obj/structure/elite_tumor = 6,
+		/obj/effect/spawner/minefield = 1,
+		// CELADON EDIT END
 	)
 	mob_spawn_chance = 4
 	mob_spawn_list = list(
@@ -153,6 +160,9 @@
 		/obj/structure/flora/ausbushes/ywflowers/hell = 1,
 		/obj/structure/flora/ausbushes/grassybush/hell = 4,
 		/obj/structure/flora/firebush = 1,
+		// [CELADON - ADD] - CELADON_RETURN_LANDMINE
+		/obj/item/mine/pressure/explosive/rusty/live = 1,
+		// [/CELADON - ADD]
 	)
 	flora_spawn_chance = 15
 
@@ -259,6 +269,10 @@
 		/obj/structure/flora/ash/tall_shroom = 2,
 		/obj/structure/flora/ash/fern = 2,
 		/obj/structure/flora/ash/puce = 2,
+		// [CELADON - ADD] - CELADON_RETURN_LANDMINE
+		/obj/item/mine/proximity/explosive/live = 1,
+		/obj/item/mine/pressure/explosive/rusty/live = 1,
+		// [/CELADON - ADD]
 	)
 
 /datum/biome/cave/lavaland/obsidian
@@ -271,6 +285,9 @@
 	flora_spawn_list = list(
 		/obj/structure/flora/rock/pile/lava = 6,
 		/obj/structure/flora/rock/lava = 6,
+		// [CELADON - ADD] - CELADON_RETURN_LANDMINE
+		/obj/item/mine/pressure/explosive/rusty/live = 1,
+		// [/CELADON - ADD]
 	)
 	flora_spawn_chance = 5
 
@@ -285,6 +302,9 @@
 		/obj/structure/flora/ash/stem_shroom = 2,
 		/obj/structure/flora/ash/cacti = 1,
 		/obj/structure/flora/ash/tall_shroom = 2,
+		// [CELADON - ADD] - CELADON_RETURN_LANDMINE
+		/obj/item/mine/pressure/explosive/rusty/live = 1,
+		// [/CELADON - ADD]
 	)
 
 /datum/biome/cave/lavaland/lava

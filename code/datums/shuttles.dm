@@ -20,6 +20,11 @@
 	var/limit = 2
 	var/enabled
 	var/short_name
+
+	// [CELADON-ADD] - OVERMAP SENSORS
+	var/def_sensor_range = 4
+	// [/CELADON-ADD]
+
 	var/list/job_slots = list()
 	var/list/name_categories = list("GENERAL")
 	/// The icon state the ship usesship_generic
@@ -55,7 +60,7 @@
 	if(path)
 		mappath = path
 	else if(category && file_name)
-		mappath = "_maps/shuttles/[category]/[file_name].dmm"
+		mappath = "_maps/_mod_celadon/shuttles/[category]/[file_name].dmm" // [CELADON-EDIT] - CELADON_CONFIGS_MAPS - Меняем сабшатлы на наши
 	. = ..()
 
 /datum/map_template/shuttle/preload_size(path, cache)

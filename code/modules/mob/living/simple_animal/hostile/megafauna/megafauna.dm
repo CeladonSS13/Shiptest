@@ -71,10 +71,13 @@
 	if(health > 0)
 		return
 	else
-		spawn_mob_trophy()
+		// spawn_mob_trophy() // [CELADON-REMOVE] - RETURN_CONTENT_CRUSHER_TROPHY - Выпилено ради легенды
 		var/datum/status_effect/crusher_damage/crusher = has_status_effect(STATUS_EFFECT_CRUSHERDAMAGETRACKING)
 		var/crusher_kill = FALSE
-		if(crusher && mob_trophy && crusher.total_damage >= maxHealth * 0.6)
+		// [CELADON-EDIT] - RETURN_CONTENT_CRUSHER_TROPHY
+		if(crusher && crusher_loot && crusher.total_damage >= maxHealth * 0.6)
+			spawn_crusher_loot()
+		// [/CELADON-EDIT]
 			crusher_kill = TRUE
 		if(true_spawn && !(flags_1 & ADMIN_SPAWNED_1))
 			var/tab = "megafauna_kills"

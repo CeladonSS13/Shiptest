@@ -31,6 +31,10 @@
 
 //Set ignoregloves to add prints irrespective of the mob having gloves on.
 /atom/proc/add_fingerprint(mob/M, ignoregloves = FALSE)
+	//[CELADON-ADD] - CELADON_FIXES - рантаймы эта плоха
+	if(QDELING(src))
+		return
+	//[/CELADON-ADD]
 	var/datum/component/forensics/D = AddComponent(/datum/component/forensics)
 	. = D.add_fingerprint(M, ignoregloves)
 

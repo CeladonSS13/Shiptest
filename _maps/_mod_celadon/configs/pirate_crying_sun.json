@@ -1,0 +1,49 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Crying Sun-class Light Frigate",
+	"map_short_name": "Crying-Sun",
+	"description": "Легкий фрегат производства Nanotrasen для перевозки массивных линейных боевых орудий при сохранении высокой маневренности. Оружейная установка на этом корабле была выведена из эксплуатации, как и многие другие подобные корабли, отправленные из пространства Каликскии. Класс «Crying Sun» — это судно, предназначенное для военно-морского и морского флота, на борту которого находится шаттл для абордажа, экскурсий и передовой разведки. После вывода из эксплуатации основного орудия двигатели были заменены на меньшую мощность, щедро поставлено инженерное оборудование. Так как этот корабль не заимел популярности, его производство было прекращено, а все оставшиеся корабли списаны. Но всё таки некоторые экземпляры смогли попасть на чёрный рынок, а далее и в руки любителей нелегальной деятельности.",
+	"map_path": "_maps/_mod_celadon/shuttles/pirate/pirate_crying_sun.dmm",
+	"subshuttle": "Nail",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 5,
+	"space_spawn": true,
+	"prefix": "RSV",
+	"faction": "/datum/faction/pirate",
+	"tags": [
+		"Флагман",
+		"Суб-шаттл"
+	],
+		"namelists": [
+		"PIRATES",
+		"BRITISH_NAVY"
+	],
+	"job_slots": {
+		"Pirate Captain": {
+			"outfit": "/datum/outfit/job/cel/pirate/captain/jupiter",
+			"officer": true,
+			"slots": 1
+		},
+		"Marine Sergeant": {
+			"outfit": "/datum/outfit/job/cel/pirate/security/jupiter",
+			"slots": 1
+		},
+		"Marine": {
+			"outfit": "/datum/outfit/job/cel/pirate/security",
+			"slots": 3
+		},
+		"Pirate Engineer": {
+			"outfit": "/datum/outfit/job/cel/pirate/engineer/jupiter",
+			"slots": 1
+		},
+		"Pirate Doctor": {
+			"outfit": "/datum/outfit/job/cel/pirate/medic",
+			"slots": 1
+		},
+		"Pirate Crew": {
+			"outfit": "/datum/outfit/job/cel/pirate/assistant/jupiter",
+			"slots": 2
+		}
+	}
+}

@@ -18,6 +18,7 @@ SUBSYSTEM_DEF(ticker)
 	var/datum/game_mode/mode = null
 
 	var/login_music							//music played in pregame lobby
+	var/login_music_name					//music played in pregame lobby
 	var/round_end_sound						//music/jingle played when the world reboots
 	var/round_end_sound_sent = TRUE			//If all clients have loaded it
 
@@ -109,9 +110,14 @@ SUBSYSTEM_DEF(ticker)
 	if(!length(music))
 		music = world.file2list(ROUND_START_MUSIC_LIST, "\n")
 		login_music = pick(music)
+		login_music_name = login_music	// [CELADON-ADD] - MUSIC_CELADON
 	else
-		login_music = "[global.config.directory]/title_music/sounds/[pick(music)]"
-
+		// [CELADON-EDIT] - MUSIC_CELADON
+		// login_music = "[global.config.directory]/title_music/sounds/[pick(music)]"	// ORIGINAL
+		var/selected_track = pick(music)
+		login_music = "[global.config.directory]/title_music/sounds/[selected_track]"
+		login_music_name = selected_track
+		// [/CELADON-EDIT]
 
 	if(!GLOB.syndicate_code_phrase)
 		GLOB.syndicate_code_phrase	= generate_code_phrase(return_list=TRUE)
@@ -145,9 +151,17 @@ SUBSYSTEM_DEF(ticker)
 				timeLeft = (CONFIG_GET(number/lobby_countdown) * 10)		WS Edit - Countdown after init */
 			for(var/client/C in GLOB.clients)
 				window_flash(C, ignorepref = TRUE) //let them know lobby has opened up.
-			to_chat(world, span_boldnotice("Welcome to [station_name()]!"))
-			send2chat("New round starting!", CONFIG_GET(string/chat_announce_new_game))
-			SSredbot.send_discord_message("ooc", "**A new round is beginning.**")
+			// [CELADON-EDIT] - CELADON_COMPONENTS
+			// to_chat(world, span_boldnotice("Welcome to [station_name()]!"))
+			// send2chat("New round starting!", CONFIG_GET(string/chat_announce_new_game))
+			// SSredbot.send_discord_message("ooc", "**A new round is beginning.**")	// ORIGINAL
+			to_chat(world, span_boldnotice("Добро пожаловать на [station_name()]!"))
+			if(CONFIG_GET(string/servername) == "\[RU] Celadon Shiptest: Alpha")
+				send2chat("<@&1100202952943218738>, запущен новый раунд на сервере: **" + CONFIG_GET(string/servername) + "**!", CONFIG_GET(string/chat_announce_new_game))
+			if(CONFIG_GET(string/servername) == "\[RU] Celadon Shiptest: Beta")
+				send2chat("<@&1226515994332102687>, запущен новый раунд на сервере: **" + CONFIG_GET(string/servername) + "**!", CONFIG_GET(string/chat_announce_new_game))
+			SSredbot.send_discord_message("ooc", "**Новый раунд скоро начнётся.**")
+			// [/CELADON-EDIT]
 			current_state = GAME_STATE_PREGAME
 			//Everyone who wants to be an observer is now spawned
 			create_observers()
@@ -279,7 +293,10 @@ SUBSYSTEM_DEF(ticker)
 
 	to_chat(world, span_notice("<B>Welcome to [station_name()], enjoy your stay!</B>"))
 	SSredbot.send_discord_message("ooc", "**A new round has begun.**")
-	SEND_SOUND(world, sound('sound/roundstart/addiguana.ogg'))
+//[CELADON-EDIT]- MUSIC_CELADON
+//	SEND_SOUND(world, sound('sound/roundstart/addiguana.ogg'))//CELADON-EDIT-ORIGINAL
+	SEND_SOUND(world, sound('mod_celadon/_storage_sounds/sound/lobby/sztart.ogg'))
+//[/CELADON-EDIT]
 
 	current_state = GAME_STATE_PLAYING
 	Master.SetRunLevel(RUNLEVEL_GAME)
@@ -557,7 +574,10 @@ SUBSYSTEM_DEF(ticker)
 		'sound/roundend/repair.ogg',
 		'sound/roundend/boowomp.ogg',
 		'sound/roundend/shiptestingthursday.ogg',
-		'sound/roundend/gayrights.ogg'\
+//[CELADON-EDIT]- MUSIC_CELADON
+//		'sound/roundend/gayrights.ogg'\//CELADON-EDIT-ORIGINAL
+		'mod_celadon/_storage_sounds/sound/lobby/voiko_law.ogg'\
+//[/CELADON-EDIT]
 		)
 	///The reference to the end of round sound that we have chosen.
 	var/sound/end_of_round_sound_ref = sound(round_end_sound)

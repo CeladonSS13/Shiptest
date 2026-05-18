@@ -242,7 +242,10 @@
 ****************************************************/
 
 //Gets blood from mob to a container or other mob, preserving all data in it.
-/mob/living/proc/transfer_blood_to(atom/movable/AM, amount, forced)
+// [CELADON-EDIT] - CELADON_FIXES_BLOOD
+// /mob/living/proc/transfer_blood_to(atom/movable/AM, amount, forced)	// ORIGINAL
+/mob/living/proc/transfer_blood_to(atom/movable/AM, amount, forced, allow_excess = FALSE)
+// [CELADON-EDIT]
 	if(!blood_volume || !AM.reagents)
 		return FALSE
 	if(blood_volume < BLOOD_VOLUME_BAD && !forced)
@@ -275,7 +278,12 @@
 					C.reagents.add_reagent(/datum/reagent/toxin, amount * 0.5)
 					return TRUE
 
-			C.blood_volume = min(C.blood_volume + round(amount, 0.1), BLOOD_VOLUME_MAX_LETHAL)
+			// Ограничиваем кровь до нормального уровня, если не указан флаг allow_excess
+			var/max_blood = allow_excess ? BLOOD_VOLUME_MAX_LETHAL : BLOOD_VOLUME_NORMAL	// [CELADON-ADD] - CELADON_FIXES_BLOOD
+			// [CELADON-EDIT] - CELADON_FIXES_BLOOD
+			// /mob/living/proc/transfer_blood_to(atom/movable/AM, amount, forced)	// ORIGINAL
+			C.blood_volume = min(C.blood_volume + round(amount, 0.1), max_blood)
+			// [/CELADON-EDIT]
 			return TRUE
 
 	AM.reagents.add_reagent(blood_id, amount, blood_data, bodytemperature)
@@ -349,7 +357,13 @@
 /proc/get_blood_dna_color(list/blood_dna)
 	var/blood_print = blood_dna[length(blood_dna)]
 	var/datum/blood_type/blood_type = blood_dna[blood_print]
-	return blood_type.color
+	//[CELADON-EDIT] - CELADON_FIXES - я думал ИПЦ специально сделали кам вместо крови, а это оказывается рантайм... Моя любовь разрушена
+	//return blood_type.color
+	if(blood_type)
+		return blood_type.color
+	else
+		return COLOR_WHITE
+	//[/CELADON-EDIT]
 
 //to add a splatter of blood or other mob liquid.
 /mob/living/proc/add_splatter_floor(turf/T, small_drip, amt)

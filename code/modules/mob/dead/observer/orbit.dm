@@ -67,6 +67,7 @@
 	var/list/ships = list()
 	var/list/misc = list()
 	var/list/npcs = list()
+	var/list/maps = list() // [CELADON-ADD]	- QOL_ORBIT_MENU
 
 	for(var/name in new_mob_pois)
 		var/list/serialized = list()
@@ -126,6 +127,44 @@
 		if(other_data[2]) // Critical = TRUE
 			critical += misc_data
 
+	// [CELADON-ADD] - QOL_ORBIT_MENU - Добавляем ключевые локации в категорию Maps
+	// Аванпосты на карте
+	for(var/datum/overmap/outpost/outpost in SSovermap.outposts)
+		var/list/outpost_data = list()
+		outpost_data["ref"] = REF(outpost.token)
+		outpost_data["full_name"] = outpost.name
+		outpost_data["extra"] = "Outpost"
+		maps += list(outpost_data)
+
+	// Звездные системы
+	for(var/datum/overmap_star_system/system in SSovermap.tracked_star_systems)
+		var/center_x = round(system.size / 2 + 1)
+		var/center_y = round(system.size / 2 + 1)
+		for(var/datum/overmap/star/star in system.overmap_container[center_x][center_y])
+			var/list/system_data = list()
+			system_data["ref"] = REF(star.token)
+			system_data["full_name"] = "[system.name] Overmap"
+			system_data["extra"] = "Star System"
+			maps += list(system_data)
+			break
+
+	// Корабль ЦК
+	for(var/obj/effect/landmark/centcom_orbit_token/token in GLOB.centcom_orbit_tokens)
+		var/list/centcom_data = list()
+		centcom_data["ref"] = REF(token)
+		centcom_data["full_name"] = "CentComm"
+		centcom_data["extra"] = "Central Command"
+		maps += list(centcom_data)
+
+	// Карты аванпостов
+	for(var/obj/effect/landmark/outpost_orbit_token/token in GLOB.outpost_orbit_tokens)
+		var/list/outpost_token_data = list()
+		outpost_token_data["ref"] = REF(token)
+		outpost_token_data["full_name"] = "Outpost"
+		outpost_token_data["extra"] = "Trading Post"
+		maps += list(outpost_token_data)
+	// [/CELADON-ADD]
+
 	return list(
 		"alive" = alive,
 		"antagonists" = antagonists,
@@ -135,6 +174,7 @@
 		"ships" = ships,
 		"misc" = misc,
 		"npcs" = npcs,
+		"maps" = maps, // [CELADON-ADD]	- QOL_ORBIT_MENU
 	)
 
 /datum/orbit_menu/ui_assets()

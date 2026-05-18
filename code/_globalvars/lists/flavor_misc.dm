@@ -36,6 +36,7 @@ GLOBAL_LIST_EMPTY(moth_wings_list)
 GLOBAL_LIST_EMPTY(moth_fluff_list)
 GLOBAL_LIST_EMPTY(moth_markings_list)
 GLOBAL_LIST_EMPTY(squid_face_list)
+GLOBAL_LIST_EMPTY(ipc_hair_list) // [CELADON-ADD] - CELADON_IPC_HAIR
 GLOBAL_LIST_EMPTY(ipc_screens_list)
 GLOBAL_LIST_EMPTY(ipc_antennas_list)
 GLOBAL_LIST_EMPTY(ipc_tail_list)

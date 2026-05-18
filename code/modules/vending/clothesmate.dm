@@ -125,6 +125,9 @@
 		/obj/item/towel = 3,
 		/obj/item/clothing/mask/breath/facemask =3)
 	premium = list(
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
+		/obj/item/clothing/suit/jacket/leather/overcoat = 1,
+		// [/CELADON-ADD]
 		/obj/item/clothing/under/suit/checkered = 1,
 		/obj/item/clothing/suit/jacket/leather = 1,
 		/obj/item/clothing/suit/jacket/letterman_nanotrasen = 1,

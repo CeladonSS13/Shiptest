@@ -15,7 +15,10 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/exo //WS Edit - Exowear Pockets
 	greyscale_colors = list(list(13, 16), list(10, 18), list(13, 21))
 	greyscale_icon_state = "coat"
-	supports_variations = VOX_VARIATION
+	// [CELADON-EDIT] - TAJARA, CELADON_RIOL
+	// supports_variations = VOX_VARIATION // CELADON-EDIT - ORIGINAL
+	supports_variations = VOX_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
+	// [/CELADON-EDIT]
 	mob_overlay_icon = 'icons/mob/clothing/suit.dmi'
 
 	equip_sound = 'sound/items/equip/armor_equip.ogg'

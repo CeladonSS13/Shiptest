@@ -147,6 +147,7 @@
 /obj/item/ammo_casing/proc/stack_with(obj/item/ammo_casing/other_casing)
 	var/obj/item/ammo_box/magazine/ammo_stack/ammo_stack = new stack_type(drop_location())
 	ammo_stack.name = "handful of [name]s" //"handful of .9mm bullet casings"
+	ammo_stack.base_icon = other_casing.icon // [CELADON-ADD] - ADD_MOD_BULLET_STACK - Загружает путь если из мода, иначе дефолтный
 	ammo_stack.base_icon_state = other_casing.icon_state
 	ammo_stack.caliber = caliber
 	ammo_stack.max_ammo = stack_size
@@ -162,7 +163,7 @@
 	if(auto_scatter)
 		pixel_x = base_pixel_x + rand(-10, 10)
 		pixel_y = base_pixel_y + rand(-10, 10)
-	item_flags |= NO_PIXEL_RANDOM_DROP
+	item_flags |= NO_PIXEL_RANDOM_DROP | NO_ROTATE_RANDOM_THROW	// [CELADON-EDIT]
 	if(auto_rotate)
 		transform = transform.Turn(round(45 * rand(0, 32) / 2))
 	update_appearance()
@@ -174,6 +175,10 @@
 
 /obj/item/ammo_casing/update_icon_state()
 	icon_state = "[initial(icon_state)][BB ? (bullet_skin ? "-[bullet_skin]" : "") : "-empty"]"
+	// [CELADON-ADD] - CELADON_BALANCE - Патроны
+	if(icon_state == "[initial(icon_state)]-empty")
+		custom_materials = list(/datum/material/iron=500)
+	// [/CELADON-ADD]
 	return ..()
 
 /obj/item/ammo_casing/update_desc()

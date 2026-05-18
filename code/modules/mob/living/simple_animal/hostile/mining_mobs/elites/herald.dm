@@ -28,8 +28,10 @@
 	pixel_x = -16
 	base_pixel_x = -16
 	health_doll_icon = "herald"
-	maxHealth = 800
-	health = 800
+	// [CELADON-REMOVE] - CELADON_BALANCE_MOBS
+	// maxHealth = 800
+	// health = 800
+	// [/CELADON-REMOVE]
 	melee_damage_lower = 20
 	melee_damage_upper = 20
 	attack_verb_continuous = "preaches to"
@@ -154,9 +156,17 @@
 		addtimer(CALLBACK(src, PROC_REF(shoot_projectile), target_turf, angle_to_target, FALSE), 14)
 
 /mob/living/simple_animal/hostile/asteroid/elite/herald/proc/herald_circleshot()
-	var/static/list/directional_shot_angles = list(0, 45, 90, 135, 180, 225, 270, 315)
+	var/static/list/directional_shot_angles = list(0, 45, 90, 135, 180, 225, 270, 315)	// CELADON-EDIT - ORIGINAL
+	// [CELADON-ADD] - CELADON_BALANCE_MOBS
+	var/static/list/directional_shot_angless = list(22, 67, 112, 157, 202, 247, 292, 337)
+	// [/CELADON-ADD]
 	for(var/i in directional_shot_angles)
 		shoot_projectile(get_turf(src), i, FALSE)
+	// [CELADON-ADD] - CELADON_BALANCE_MOBS
+	sleep(5)
+	for(var/i in directional_shot_angless)
+		shoot_projectile(get_turf(src), i, FALSE)
+	// [/CELADON-ADD]
 
 /mob/living/simple_animal/hostile/asteroid/elite/herald/proc/unenrage()
 	if(stat == DEAD || is_mirror)
@@ -229,7 +239,9 @@
 
 /obj/projectile/herald/teleshot
 	name ="golden bolt"
-	damage = 0
+	// [CELADON-REMOVE] - CELADON_BALANCE_MOBS
+	// damage = 0
+	// [/CELADON-REMOVE]
 	color = rgb(255,255,102)
 
 /obj/projectile/herald/on_hit(atom/target, blocked = FALSE)
@@ -241,8 +253,12 @@
 	else if(isliving(target))
 		var/mob/living/L = target
 		var/mob/living/F = firer
-		if(F != null && istype(F, /mob/living/simple_animal/hostile/asteroid/elite) && F.faction_check_mob(L))
-			L.heal_overall_damage(damage)
+		// [CELADON-EDIT] - CELADON_BALANCE_MOBS
+		// if(F != null && istype(F, /mob/living/simple_animal/hostile/asteroid/elite) && F.faction_check_mob(L))
+		// 	L.heal_overall_damage(damage)	// CELADON-EDIT - ORIGINAL
+		if(F != null && istype(F, /mob/living/simple_animal/hostile/asteroid/elite) && L.faction_check_mob(F))
+			F.heal_overall_damage(damage)
+		// [/CELADON-EDIT]
 
 /obj/projectile/herald/teleshot/on_hit(atom/target, blocked = FALSE)
 	. = ..()
@@ -259,7 +275,15 @@
 	hit_reaction_chance = 25
 
 /obj/item/clothing/neck/cloak/herald_cloak/proc/reactionshot(mob/living/carbon/owner)
-	var/static/list/directional_shot_angles = list(0, 45, 90, 135, 180, 225, 270, 315)
+	// [CELADON-EDIT] - CELADON_BALANCE_MOBS
+	// var/static/list/directional_shot_angles = list(0, 45, 90, 135, 180, 225, 270, 315)	// CELADON-EDIT - ORIGINAL
+	var/static/list/directional_shot_angles
+	switch(rand(1,2))
+		if(1)
+			directional_shot_angles = list(45, 135, 225, 315)
+		if(2)
+			directional_shot_angles = list(0, 90, 180, 270)
+	// [/CELADON-EDIT]
 	for(var/i in directional_shot_angles)
 		shoot_projectile(get_turf(owner), i, owner)
 

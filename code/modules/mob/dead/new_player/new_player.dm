@@ -367,6 +367,13 @@
 	if(!GLOB.ship_select_tgui)
 		GLOB.ship_select_tgui = new /datum/ship_select(src)
 
+	// [CELADON-ADD] - CELADON: DISCORD VERIFY
+	if(CONFIG_GET(flag/DiscordVerify))
+		if(!checkDiscordVerify(src.ckey))
+			to_chat(usr, span_danger("Ваш аккаунт не верифицирован в Discord.\n Пожалуйста, используйте кнопку 'Verify Discord Account' во вкладке 'Special Verbs' для Discord верификации."))
+			return
+	// [/CELADON-ADD]
+
 	GLOB.ship_select_tgui.ui_interact(src)
 
 /mob/dead/new_player/proc/can_join_round(silent = FALSE)

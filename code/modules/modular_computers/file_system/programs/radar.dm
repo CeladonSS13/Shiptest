@@ -212,7 +212,10 @@
 	extended_desc = "This program allows for tracking of crew members via their suit sensors."
 	requires_ntnet = TRUE
 	transfer_access = ACCESS_MEDICAL
-	available_on_ntnet = TRUE
+	// [CELADON-EDIT] - Lifeline Minus - Отключаем из загрузки через NTNet оригинал
+	// available_on_ntnet = TRUE // CELADON-EDIT - ORIGINAL
+	// [/CELADON-EDIT]
+	available_on_ntnet = FALSE
 	program_icon = "heartbeat"
 
 /datum/computer_file/program/radar/lifeline/find_atom()

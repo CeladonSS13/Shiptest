@@ -1,0 +1,62 @@
+#ifndef MODPACK_CELADON_RETURN_CONTENT_SPAWN
+#define MODPACK_CELADON_RETURN_CONTENT_SPAWN
+
+#include "_return_content_spawn.dm"
+
+#include "code/antagonists/wizard.dm"
+
+#include "code/clothing/bananashoes.dm"
+#include "code/clothing/glasses.dm"
+#include "code/clothing/head.dm"
+#include "code/clothing/marisa.dm"
+#include "code/clothing/shoes.dm"
+#include "code/clothing/suits.dm"
+
+#include "code/component/crafting.dm"
+#include "code/component/slippery.dm"
+
+#include "code/effects/lootdrop.dm"
+#include "code/effects/spawners.dm"
+
+#include "code/items/blackmarket_item.dm"
+#include "code/items/cult_items.dm"
+#include "code/items/figure.dm"
+#include "code/items/food.dm"
+// #include "code/items/gang.dm"
+#include "code/items/leather.dm"
+#include "code/items/religion.dm"
+#include "code/items/reverse_bear_trap.dm"
+
+#include "code/planetary_generator/asteroid.dm"
+#include "code/planetary_generator/jungle.dm"
+#include "code/planetary_generator/lava.dm"
+#include "code/planetary_generator/rock.dm"
+#include "code/planetary_generator/sand.dm"
+#include "code/planetary_generator/snow.dm"
+#include "code/planetary_generator/waste.dm"
+
+#include "code/action.dm"
+#include "code/boss_achievements.dm"
+#include "code/boss_scores.dm"
+#include "code/cave_entrance.dm"
+#include "code/clown_ops.dm"
+#include "code/global.dm"
+#include "code/hivebot.dm"
+#include "code/holidays.dm"
+#include "code/hydroponics.dm"
+#include "code/item_sounds.dm"
+#include "code/loadout.dm"
+#include "code/machine_wash.dm"
+#include "code/mining_mobs.dm"
+#include "code/necropolis_tendril.dm"
+#include "code/netherworld.dm"
+#include "code/outfit.dm"
+#include "code/reagents.dm"
+#include "code/simple_animal.dm"
+#include "code/spawner.dm"
+#include "code/spells.dm"
+#include "code/structure.dm"
+#include "code/uplink_items.dm"
+#include "code/weaponry.dm"
+
+#endif

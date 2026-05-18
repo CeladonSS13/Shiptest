@@ -27,10 +27,20 @@
 	fuckup_damage = 15
 
 /datum/surgery/brain_surgery/can_start(mob/user, mob/living/carbon/target)
-	var/obj/item/organ/brain/B = target.getorganslot(ORGAN_SLOT_BRAIN)
-	if(!B)
+	// [CELADON-EDIT] - CELADON_REPAIRS_OTHER - Чиним операции на ИПС
+	// var/obj/item/organ/brain/B = target.getorganslot(ORGAN_SLOT_BRAIN)
+	// if(!B)
+	// 	return FALSE
+	// return TRUE	// CELADON-EDIT - ORIGINAL
+	var/obj/item/organ/brain/brain = target.getorganslot(ORGAN_SLOT_BRAIN)
+	var/obj/item/organ/brain/mmi_holder/posibrain/posibrain = target.getorganslot(ORGAN_SLOT_BRAIN)
+	if(!brain)
 		return FALSE
-	return TRUE
+	else if(istype(posibrain))
+		return FALSE
+	else
+		return TRUE
+	// [/CELADON-EDIT]
 
 /datum/surgery_step/fix_brain/preop(mob/user, mob/living/carbon/target, target_zone, obj/item/tool, datum/surgery/surgery)
 	display_results(user, target, span_notice("You begin to fix [target]'s brain..."),

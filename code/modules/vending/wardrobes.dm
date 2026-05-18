@@ -288,6 +288,9 @@
 					/obj/item/storage/box/mousetraps = 2,
 					/obj/item/circuitboard/machine/dish_drive = 1,
 					/obj/item/clothing/suit/toggle/chef = 1,
+					// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
+					/obj/item/clothing/shoes/cookflops = 2,
+					// [/CELADON-ADD]
 					/obj/item/clothing/under/rank/civilian/chef = 1,
 					/obj/item/clothing/under/rank/civilian/chef/skirt = 2,
 					/obj/item/clothing/head/chefhat = 1,
@@ -381,6 +384,10 @@
 					/obj/item/storage/fancy/candle_box = 2,
 					/obj/item/clothing/accessory/armband/med = 4)
 	contraband = list(/obj/item/toy/plush/plushvar = 1,
+					// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+					/obj/item/clothing/suit/chaplainsuit/clownpriest = 1,
+					/obj/item/clothing/head/clownmitre = 1,
+					// [/CELADON-ADD]
 					/obj/item/toy/plush/narplush = 1)
 	refill_canister = /obj/item/vending_refill/wardrobe/chap_wardrobe
 /obj/item/vending_refill/wardrobe/chap_wardrobe

@@ -363,3 +363,4 @@ ammo
 	faction = /datum/faction/nt
 	faction_discount = 20
 
+

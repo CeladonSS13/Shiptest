@@ -105,29 +105,33 @@ GLOBAL_LIST_INIT(outpost_exports, gen_outpost_exports())
 
 	switch(action)
 		if("recalc")
+			cache_cooldown = 0 // [CELADON-ADD] - CELADON_FIXES: Force cache refresh when recalc button is pressed
 			update_static_data(usr, ui)
 		if("redeem")
 			var/datum/export/redeemed_exp = locate(text2path(params["redeem_type"])) in cached_valid_exports
 			if(redeemed_exp == null || length(cached_valid_exports[redeemed_exp]) == 0)
 				CRASH("passed a bad export type through ui_act of [src]")
 			else
-				redeem_export(redeemed_exp)
+				redeem_export(redeemed_exp, usr) // [CELADON-EDIT] - CELADON_COMPONENTS_LOGS
 			update_static_data(usr, ui)
 			return TRUE
 
-/obj/machinery/computer/outpost_export_console/proc/redeem_export(datum/export/exp)
+/obj/machinery/computer/outpost_export_console/proc/redeem_export(datum/export/exp, mob/user) // [CELADON-EDIT] - CELADON_COMPONENTS_LOGS
 	if(!(exp in cached_valid_exports))
 		CRASH("somehow [exp] is not in cached_valid_exports")
 	var/total_payout = 0
+	var/list/sold_items = list() // [CELADON-ADD] - CELADON_COMPONENTS_LOGS
 	for(var/atom/exp_atom as anything in cached_valid_exports[exp])
 		if(!exp.applies_to(exp_atom))
 			CRASH("tried to sell [exp_atom] with [exp] but it no longer applies to it")
 		total_payout += exp.sell_object(exp_atom, dry_run = FALSE, apply_elastic = TRUE)
+		sold_items += exp_atom.name // [CELADON-ADD] - CELADON_COMPONENTS_LOGS
 
 		cached_valid_exports[exp] -= exp_atom
 		qdel(exp_atom)
 
 	cached_valid_exports -= exp
+	log_econ("[key_name(user)] exported [exp.unit_name] ([sold_items.Join(", ")]) for [total_payout] credits at [AREACOORD(src)]") // [CELADON-ADD] - CELADON_COMPONENTS_LOGS
 
 	do_sparks(5, 0, linked_pad.loc)
 	new /obj/item/spacecash/bundle(loc, total_payout)

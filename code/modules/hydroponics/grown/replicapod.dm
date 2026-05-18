@@ -6,7 +6,9 @@
 	icon_state = "seed-replicapod"
 	species = "replicapod"
 	plantname = "Replica Pod"
-	product = /mob/living/carbon/human //verrry special -- Urist
+	// [CELADON EDIT] - CELADON FIXES
+	product = null //verrry special -- Urist
+	// [CELADON EDIT]
 	lifespan = 50
 	endurance = 8
 	maturation = 10
@@ -65,7 +67,9 @@
 /obj/item/seeds/replicapod/get_analyzer_text()
 	var/text = ..()
 	if(contains_sample)
-		text += "\n It contains a blood sample with blood DNA (UE) \"sampleDNA\"." //blood DNA (UE) shows in medical records and is readable by forensics scanners
+	// [CELADON EDIT] - CELADON FIXES
+		text += "\n It contains a blood sample with blood DNA (UE) \"[sampleDNA]\"." //blood DNA (UE) shows in medical records and is readable by forensics scanners
+	// [CELADON EDIT]
 	return text
 
 /obj/item/seeds/replicapod/harvest(mob/user) //now that one is fun -- Urist

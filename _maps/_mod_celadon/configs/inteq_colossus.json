@@ -1,0 +1,55 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Colossus-class Armored Frigate",
+	"map_short_name": "Colossus",
+	"description": "Корабль Colossus, как и большинство судов корпорации InteQ, представляет собой профессионально военизированное грузовое судно, рассчитанное на длительную автономную работу. Он действует в интересах IRMG, предоставляя жизненно важные услуги наёмников везде, где они необходимы. Ключевыми особенностями судна являются хорошо укомплектованный арсенал, ангар для субшаттла и просторные помещения для экипажа, а также вместительный грузовой отсек, который экипаж часто переоборудует в дополнительное место для отдыха или тренировок.",
+	"map_path": "_maps/_mod_celadon/shuttles/inteq/inteq_colossus.dmm",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 5,
+	"prefix": "BIQSV",
+	"faction": "/datum/faction/inteq",
+	"tags": [
+		"Боевой",
+		"Суб-шаттл"
+	],
+	"namelists": [
+		"MYTHOLOGICAL",
+		"BEASTS",
+		"NATURAL_AGGRESSIVE",
+		"INTEQ"
+	],
+	"job_slots": {
+		"Vanguard": {
+			"outfit": "/datum/outfit/job/cel/inteq/captain",
+			"officer": true,
+			"slots": 1
+		},
+		"Master At Arms": {
+			"outfit": "/datum/outfit/job/cel/inteq/warden",
+			"officer": true,
+			"slots": 1
+		},
+		"Shuttle Pilot": {
+			"outfit": "/datum/outfit/job/cel/inteq/pilot/empty",
+			"officer": true,
+			"slots": 1
+		},
+		"Artificer": {
+			"outfit": "/datum/outfit/job/cel/inteq/engineer",
+			"slots": 2
+		},
+		"Corpsman": {
+			"outfit": "/datum/outfit/job/cel/inteq/paramedic",
+			"slots": 1
+		},
+		"Enforcer": {
+			"outfit": "/datum/outfit/job/cel/inteq/security",
+			"slots": 3
+		},
+		"Auxiliary": {
+			"outfit": "/datum/outfit/job/cel/inteq/assistant",
+			"slots": 2
+		}
+	}
+}

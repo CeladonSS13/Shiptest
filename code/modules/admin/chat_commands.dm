@@ -2,7 +2,8 @@
 
 /datum/tgs_chat_command/restart
 	name = "restart"
-	help_text = "Restarts the server if there are no active admins on."
+	help_text = "Перезапустит сервер при отсутствии администрации на нём."
+	admin_only = TRUE
 
 /datum/tgs_chat_command/restart/Run(datum/tgs_chat_user/sender, params)
 	var/active_admins = FALSE
@@ -11,14 +12,14 @@
 			active_admins = TRUE
 			break
 	if(!active_admins)
-		SSticker.Reboot("Restart requested from the discord.", "discord")
-		return new /datum/tgs_message_content("Rebooting...")
+		SSticker.Reboot("Рестарт был забущен администрации с сервера Discord.", "discord")
+		return new /datum/tgs_message_content("Запущен перезапуск...")
 	else
-		return new /datum/tgs_message_content("There are active admins on the server! Ask them to restart.")
+		return new /datum/tgs_message_content("На данный момент имеются активные администраторы на сервере! Перезапуск через Discord невозможен!")
 
 /datum/tgs_chat_command/join
 	name = "join"
-	help_text = "Sends a join link."
+	help_text = "Покажет ссылку для подключения к игре."
 
 /datum/tgs_chat_command/join/Run(datum/tgs_chat_user/sender, params)
 	var/datum/tgs_chat_embed/structure/embed = new()
@@ -33,7 +34,7 @@
 
 /datum/tgs_chat_command/tgsstatus
 	name = "status"
-	help_text = "Gets the admincount, playercount, gamemode, and true game mode of the server"
+	help_text = "Покажет список администраторов, количество игроков и игровой режим."
 	admin_only = TRUE
 	var/last_tgs_status = 0
 
@@ -48,15 +49,15 @@
 	embed.colour = COLOR_DARK_CYAN
 
 	embed.fields = list()
-	embed.fields += new /datum/tgs_chat_embed/field("Round", "[GLOB.round_id ? "Round #[GLOB.round_id]" : "Not started"]\n[station_name()]\n[length(SSovermap.controlled_ships)] ships")
-	embed.fields += new /datum/tgs_chat_embed/field("Admins", tgsadminwho())
-	embed.fields += new /datum/tgs_chat_embed/field("Players", "Total: [length(GLOB.clients)]\nActive: [get_active_player_count(FALSE, TRUE, FALSE)]\nAlive: [get_active_player_count(TRUE, TRUE, TRUE)]")
+	embed.fields += new /datum/tgs_chat_embed/field("Раунд", "[GLOB.round_id ? "Раунд #[GLOB.round_id]" : "Не запущен"]\n[station_name()]\n[length(SSovermap.controlled_ships)] кораблей")
+	embed.fields += new /datum/tgs_chat_embed/field("Администраторы", tgsadminwho())
+	embed.fields += new /datum/tgs_chat_embed/field("Игроки", "Всего: [length(GLOB.clients)]\nАктивных: [get_active_player_count(FALSE, TRUE, FALSE)]\nЖивых: [get_active_player_count(TRUE, TRUE, TRUE)]")
 
-	embed.fields += new /datum/tgs_chat_embed/field("Tickets", "Active: [length(GLOB.ahelp_tickets.active_tickets)]\nResolved: [length(GLOB.ahelp_tickets.resolved_tickets)]\nClosed: [length(GLOB.ahelp_tickets.closed_tickets)]")
+	embed.fields += new /datum/tgs_chat_embed/field("Тикеты", "Активных: [length(GLOB.ahelp_tickets.active_tickets)]\nВыполненых: [length(GLOB.ahelp_tickets.resolved_tickets)]\nЗакрытых: [length(GLOB.ahelp_tickets.closed_tickets)]")
 	embed.fields += new /datum/tgs_chat_embed/field("Interviews", "Open: [length(GLOB.interviews.open_interviews) - length(GLOB.interviews.interview_queue)]\nSubmitted: [length(GLOB.interviews.interview_queue)]\nClosed: [length(GLOB.interviews.closed_interviews)]")
 
-	embed.fields += new /datum/tgs_chat_embed/field("Mode", "[SSticker.mode ? SSticker.mode.name : "Not started"]")
-	embed.fields += new /datum/tgs_chat_embed/field("Round Time", ROUND_TIME())
+	embed.fields += new /datum/tgs_chat_embed/field("Режим", "[SSticker.mode ? SSticker.mode.name : "Не запущен"]")
+	embed.fields += new /datum/tgs_chat_embed/field("Время раунда", ROUND_TIME())
 	embed.fields += new /datum/tgs_chat_embed/field("Time Dilation", "[round(SStime_track.time_dilation_current, 0.1)]% ([round(SStime_track.time_dilation_avg, 0.1)]% avg)")
 
 	for(var/datum/tgs_chat_embed/field/field as anything in embed.fields)
@@ -100,7 +101,7 @@
 
 /datum/tgs_chat_command/tgscheck
 	name = "check"
-	help_text = "Gets the playercount, gamemode, and address of the server"
+	help_text = "Показывает количество игроков, игровой режим и ссылку для доступа к игре."
 	var/last_tgs_check = 0
 
 /datum/tgs_chat_command/tgscheck/Run(datum/tgs_chat_user/sender, params)
@@ -110,14 +111,14 @@
 	last_tgs_check = rtod
 
 	var/datum/tgs_chat_embed/structure/embed = new()
-	embed.title = "Server Status"
+	embed.title = "Состояние сервера:"
 	embed.colour = COLOR_DARK_CYAN
 
 	embed.fields = list()
-	embed.fields += new /datum/tgs_chat_embed/field("Round", "[GLOB.round_id ? "Round #[GLOB.round_id]" : "Not started"]")
-	embed.fields += new /datum/tgs_chat_embed/field("Players", "[length(GLOB.player_list) || "No players"]")
-	embed.fields += new /datum/tgs_chat_embed/field("Admins", "[length(GLOB.admins) || "No admins"]")
-	embed.fields += new /datum/tgs_chat_embed/field("Round Time", ROUND_TIME())
+	embed.fields += new /datum/tgs_chat_embed/field("Раунд", "[GLOB.round_id ? "[GLOB.round_id]" : "Не запущен"]")
+	embed.fields += new /datum/tgs_chat_embed/field("Игроки", "[length(GLOB.player_list) || "отсутствуют"]")
+	embed.fields += new /datum/tgs_chat_embed/field("Администраторы", "[length(GLOB.admins) || "отсутствуют"]")
+	embed.fields += new /datum/tgs_chat_embed/field("Время раунда", ROUND_TIME())
 	embed.fields += new /datum/tgs_chat_embed/field("Time Dilation", "[round(SStime_track.time_dilation_current, 0.1)]% ([round(SStime_track.time_dilation_avg, 0.1)]% avg)")
 
 	for(var/datum/tgs_chat_embed/field/field as anything in embed.fields)
@@ -136,7 +137,7 @@
 /datum/tgs_chat_command/ahelp/Run(datum/tgs_chat_user/sender, params)
 	var/list/all_params = splittext(params, " ")
 	if(all_params.len < 2)
-		return new /datum/tgs_message_content("Insufficient parameters")
+		return new /datum/tgs_message_content("Неверные параметры.")
 	var/target = all_params[1]
 	all_params.Cut(1, 2)
 	var/id = text2num(target)
@@ -145,14 +146,14 @@
 		if(AH)
 			target = AH.initiator_ckey
 		else
-			return new /datum/tgs_message_content("Ticket #[id] not found.")
+			return new /datum/tgs_message_content("Тикет #[id] не найден!")
 	var/res = TgsPm(target, all_params.Join(" "), sender.friendly_name)
 	if(res != "Message Successful")
 		return new /datum/tgs_message_content(res)
 
 /datum/tgs_chat_command/namecheck
 	name = "namecheck"
-	help_text = "Returns info on the specified target"
+	help_text = "Показывает информацию по игроку с указанным активным игроком."
 	admin_only = TRUE
 
 /datum/tgs_chat_command/namecheck/Run(datum/tgs_chat_user/sender, params)
@@ -165,7 +166,7 @@
 
 /datum/tgs_chat_command/adminwho
 	name = "adminwho"
-	help_text = "Lists administrators currently on the server"
+	help_text = "Покажет список администрации на сервере."
 	admin_only = TRUE
 
 /datum/tgs_chat_command/adminwho/Run(datum/tgs_chat_user/sender, params)
@@ -183,14 +184,14 @@ GLOBAL_LIST(round_end_notifiees)
 
 /datum/tgs_chat_command/endnotify
 	name = "endnotify"
-	help_text = "Pings the invoker when the round ends"
+	help_text = "Оповестит об окончании раунда."
 	admin_only = TRUE
 
 /datum/tgs_chat_command/endnotify/Run(datum/tgs_chat_user/sender, params)
 	if(!SSticker.IsRoundInProgress() && SSticker.HasRoundStarted())
-		return "[sender.mention], the round has already ended!"
+		return "[sender.mention], раунд уже закончился!"
 	LAZYSET(GLOB.round_end_notifiees, sender.mention, TRUE)
-	return new /datum/tgs_message_content( "I will notify [sender.mention] when the round ends.")
+	return new /datum/tgs_message_content( "Я оповещу, [sender.mention], когда закончится раунд.")
 
 /datum/tgs_chat_command/sdql
 	name = "sdql"
@@ -222,13 +223,13 @@ GLOBAL_LIST(round_end_notifiees)
 
 /datum/tgs_chat_command/reload_admins
 	name = "reload_admins"
-	help_text = "Forces the server to reload admins."
+	help_text = "Принудительно перезагрузит администраторов на сервере."
 	admin_only = TRUE
 
 /datum/tgs_chat_command/reload_admins/Run(datum/tgs_chat_user/sender, params)
 	ReloadAsync()
 	log_admin("[sender.friendly_name] reloaded admins via chat command.")
-	return new /datum/tgs_message_content("Admins reloaded.")
+	return new /datum/tgs_message_content("Администраторы перезагружены.")
 
 /datum/tgs_chat_command/reload_admins/proc/ReloadAsync()
 	set waitfor = FALSE

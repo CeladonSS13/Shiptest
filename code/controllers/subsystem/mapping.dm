@@ -181,12 +181,15 @@ SUBSYSTEM_DEF(mapping)
 #define CHECK_LIST_EXISTS(X) if(!islist(data[X])) { stack_trace("[##X] missing from json!"); continue; }
 /datum/controller/subsystem/mapping/proc/load_ship_templates()
 	ship_purchase_list = list()
-	var/list/filelist = flist("_maps/configs/")
+	var/list/filelist = flist("_maps/_mod_celadon/configs/") // [CELADON-EDIT] - CELADON_CONFIGS_MAPS
 
 	filelist = sortList(filelist)
 
 	for(var/filename in filelist)
-		var/file = file("_maps/configs/" + filename)
+		// [CELADON-EDIT] - CELADON_CONFIGS_MAPS
+		// var/file = file("_maps/configs/" + filename) // CELADON-EDIT - ORIGINAL
+		var/file = file("_maps/_mod_celadon/configs/" + filename)
+		// [/CELADON-EDIT]
 		if(!file)
 			stack_trace("Could not open map config: [filename]")
 			continue
@@ -211,6 +214,11 @@ SUBSYSTEM_DEF(mapping)
 			S.short_name = data["map_short_name"]
 		else
 			S.short_name = copytext(S.name, 1, 20)
+
+		// [CELADON-ADD] - OVERMAP SENSORS
+		if(isnum(data["sensor_range"]))
+			S.def_sensor_range = data["sensor_range"]
+		// [/CELADON-ADD]
 
 		if(istext(data["token_icon_state"]))
 			S.token_icon_state = data["token_icon_state"]

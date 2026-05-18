@@ -25,6 +25,12 @@
 		/datum/language/ratvar,
 		/datum/language/codespeak,
 		/datum/language/aphasia,
+		// [CELADON-ADD] - CELADON_ITEMS
+		/datum/language/elysm,
+		/datum/language/alquadim,
+		/datum/language/thayoss,
+		/datum/language/fuyo,
+		// [/CELADON-ADD]
 	))
 
 /obj/item/organ/tongue/Initialize(mapload)
@@ -70,6 +76,16 @@
 	var/static/regex/lizard_kSS = new(@"(\w)X", "g")
 	var/static/regex/lizard_ecks = new(@"\bx([\-|r|R]|\b)", "g")
 	var/static/regex/lizard_eckS = new(@"\bX([\-|r|R]|\b)", "g")
+	// [CELADON-ADD] - CELADON_ACCENTS_ADD
+	var/static/regex/lizard_Extended_hiss = new("с+", "g")
+	var/static/regex/lizard_Extended_hiSS = new("С+", "g")
+	var/static/regex/lizard_Extended_hich = new("ч+", "g")
+	var/static/regex/lizard_Extended_hiCH = new("Ч+", "g")
+	var/static/regex/lizard_Extended_hics = new("ш+", "g")
+	var/static/regex/lizard_Extended_hiCS = new("Ш+", "g")
+	var/static/regex/lizard_Extended_hiccc = new("щ+", "g")
+	var/static/regex/lizard_Extended_hiCCC = new("Щ+", "g")
+	// [/CELADON-ADD]
 
 	var/message = speech_args[SPEECH_MESSAGE]
 	if(message[1] != "*")
@@ -79,6 +95,16 @@
 		message = lizard_kSS.Replace(message, "$1KSS")
 		message = lizard_ecks.Replace(message, "ecks$1")
 		message = lizard_eckS.Replace(message, "ECKS$1")
+		// [CELADON-ADD] - CELADON_ACCENTS_ADD
+		message = lizard_Extended_hiss.Replace(message, pick("сссс", "ccс", "сс"))
+		message = lizard_Extended_hiSS.Replace(message, pick("СССС", "ССС", "СС"))
+		message = lizard_Extended_hich.Replace(message, pick("щщщ", "щщ", "щ"))
+		message = lizard_Extended_hiCH.Replace(message, pick("ЩЩЩ", "ЩЩ", "Щ"))
+		message = lizard_Extended_hics.Replace(message, pick("шшшш", "шшш", "шш"))
+		message = lizard_Extended_hiCS.Replace(message, pick("ШШШШ", "ШШШ", "ШШ"))
+		message = lizard_Extended_hiccc.Replace(message, pick("щщ", "щ"))
+		message = lizard_Extended_hiCCC.Replace(message, pick("ЩЩ", "Щ"))
+		// [/CELADON-ADD]
 
 	speech_args[SPEECH_MESSAGE] = message
 

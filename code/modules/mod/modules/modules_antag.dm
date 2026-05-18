@@ -394,7 +394,7 @@
 	//mod.mob_overlay_state = initial(current_disguise.mob_overlay_state)
 	mod.item_state = initial(current_disguise.item_state)
 	mod.wearer.update_inv_back(mod.slot_flags)
-	RegisterSignal(mod, COMSIG_MOD_ACTIVATE, PROC_REF(return_look))
+	RegisterSignal(mod, COMSIG_MOD_ACTIVATE, PROC_REF(return_look), override = TRUE)	// [CELADON-ADD] - FIXES_MODSUITS
 
 /obj/item/mod/module/chameleon/proc/return_look()
 	mod.name = "[mod.theme.name] [initial(mod.name)]"

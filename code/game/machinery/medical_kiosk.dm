@@ -162,7 +162,10 @@
 	var/bleed_status = "Patient is not currently bleeding."
 	var/blood_status = " Patient either has no blood, or does not require it to function."
 	var/blood_percent =  round((altPatient.blood_volume / BLOOD_VOLUME_NORMAL)*100)
-	var/blood_type = altPatient.dna.blood_type.name
+	// [CELADON-EDIT] - CELADON_BLOOD_DISPLAY
+	//var/blood_type = altPatient.dna.blood_type.name
+	var/blood_type = altPatient.get_blood_type_display()
+	// [/CELADON-EDIT]
 	var/blood_warning = " "
 
 	for(var/thing in altPatient.diseases) //Disease Information

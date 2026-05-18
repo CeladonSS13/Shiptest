@@ -29,8 +29,10 @@
 	pixel_x = -16
 	base_pixel_x = -16
 	health_doll_icon = "broodmother"
-	maxHealth = 800
-	health = 800
+	// [CELADON-REMOVE] - CELADON_BALANCE_MOBS
+	// maxHealth = 800
+	// health = 800
+	// [/CELADON-REMOVE]
 	melee_damage_lower = 30
 	melee_damage_upper = 30
 	armour_penetration = 30

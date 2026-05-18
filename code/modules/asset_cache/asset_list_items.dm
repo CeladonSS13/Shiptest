@@ -205,7 +205,7 @@
 		if (icon != 'icons/misc/language.dmi')
 			var/icon_state = initial(L.icon_state)
 			Insert("language-[icon_state]", icon, icon_state=icon_state)
-		..()
+	..() // [CELADON_EDIT] - Переместил вызов родительского прока из цикла
 
 /datum/asset/simple/lobby
 	assets = list(
@@ -268,6 +268,9 @@
 		"rule8" = 'icons/UI_Icons/Achievements/Misc/rule8.png',
 		"snail" = 'icons/UI_Icons/Achievements/Misc/snail.png',
 		"mining" = 'icons/UI_Icons/Achievements/Skills/mining.png',
+		// [CELADON-ADD] - CELADON_ACHIEVEMENTS
+		"theinnerhell" = 'mod_celadon/_storage_icons/icons/assets/png/theinnerhell.png'
+		// [/CELADON-ADD]
 	)
 
 /datum/asset/spritesheet/simple/pills
@@ -443,6 +446,20 @@
 		"safe_dial.png" = 'html/safe_dial.png'
 	)
 
+// [CELADON-ADD] - SHIP_SELECTION_REWORK - Добавляем asset для логотипов фракций
+/datum/asset/simple/faction_logos
+	assets = list(
+		"nanotrasen.png" = 'mod_celadon/_storage_icons/icons/assets/logo/nanotrasen.png',
+		"syndicate.png" = 'mod_celadon/_storage_icons/icons/assets/logo/syndicate.png',
+		"inteq.png" = 'mod_celadon/_storage_icons/icons/assets/logo/inteq.png',
+		"solfed.png" = 'mod_celadon/_storage_icons/icons/assets/logo/solfed.png',
+		"independent.png" = 'mod_celadon/_storage_icons/icons/assets/logo/independent.png',
+		"elysium.png" = 'mod_celadon/_storage_icons/icons/assets/logo/elysium.png',
+		"pirates.png" = 'mod_celadon/_storage_icons/icons/assets/logo/pirates.png',
+		"other.png" = 'mod_celadon/_storage_icons/icons/assets/logo/other.png'
+	)
+// [/CELADON-ADD]
+
 /datum/asset/simple/pai
 	assets = list(
 		"paigrid.png" = 'html/paigrid.png'
@@ -473,7 +490,10 @@
 
 /datum/asset/spritesheet/supplypods/register()
 	for (var/style in 1 to length(GLOB.podstyles))
-		var/icon_file = 'icons/obj/supplypods.dmi'
+		// [CELADON-EDIT] - CELADON_ELYSIUMPOD
+		// var/icon_file = 'icons/obj/supplypods.dmi' // CELADON-EDIT - ORIGINAL
+		var/icon_file = 'mod_celadon/_storage_icons/icons/structures/supplypods.dmi'
+		// [/CELADON-EDIT]
 		var/states = icon_states(icon_file)
 		if (style == STYLE_SEETHROUGH)
 			Insert("pod_asset[style]", icon(icon_file, "seethrough-icon", SOUTH))

@@ -205,6 +205,7 @@
 		/obj/item/clothing/mask/breath/medical,
 		/obj/item/scalpel,
 		/obj/item/circular_saw,
+		/obj/item/blood_filter,	// [CELADON-ADD] - CELADON_BALANCE
 		/obj/item/surgicaldrill,
 		/obj/item/retractor,
 		/obj/item/cautery,
@@ -255,6 +256,7 @@
 /obj/item/storage/belt/medical/surgery/PopulateContents()
 	new /obj/item/scalpel(src)
 	new /obj/item/circular_saw(src)
+	new /obj/item/blood_filter(src)	// [CELADON-ADD] - CELADON_BALANCE
 	new /obj/item/surgicaldrill(src)
 	new /obj/item/retractor(src)
 	new /obj/item/cautery(src)
@@ -317,7 +319,9 @@
 		/obj/item/food/donut,
 		/obj/item/melee/knife/combat,
 		/obj/item/flashlight/seclite,
-		/obj/item/melee/classic_baton/telescopic,
+		// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+		// /obj/item/melee/classic_baton/telescopic,
+		// [/CELADON-REMOVE]
 		/obj/item/radio,
 		/obj/item/attachment,
 		/obj/item/extinguisher/mini,

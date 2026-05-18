@@ -1,6 +1,10 @@
 // Verb to toggle restart notifications
 /client/verb/notify_restart()
+	// [CELADON-REMOVE] - CELADON_QOL - Очистка вкладки ООС, перенос части в Special Verbs
+	/*
 	set category = "OOC"
+	*/
+	// [/CELADON-REMOVE]
 	set name = "Notify Restart"
 	set desc = "Notifies you on Discord when the server restarts."
 

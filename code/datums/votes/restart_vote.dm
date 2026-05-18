@@ -50,12 +50,12 @@
 	message = initial(message)
 	return TRUE
 
-/datum/vote/restart_vote/get_vote_result(list/non_voters)
-	if(!CONFIG_GET(flag/default_no_vote))
-		// Default no votes will add non-voters to "Continue Playing"
-		choices[CHOICE_CONTINUE] += length(non_voters)
+// /datum/vote/restart_vote/get_vote_result(list/non_voters)		// Теперь только честные голосования
+// 	if(!CONFIG_GET(flag/default_no_vote))
+// 		// Default no votes will add non-voters to "Continue Playing"
+// 		choices[CHOICE_CONTINUE] += length(non_voters)
 
-	return ..()
+// 	return ..()
 
 /datum/vote/restart_vote/finalize_vote(winning_option)
 	if(winning_option == CHOICE_CONTINUE)

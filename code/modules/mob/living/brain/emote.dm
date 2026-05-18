@@ -27,8 +27,8 @@
 	message = "plays a loud tone."
 	emote_type = EMOTE_AUDIBLE
 
-/datum/emote/brain/whistle
-	key = "whistle"
-	key_third_person = "whistles"
-	message = "whistles."
-	emote_type = EMOTE_AUDIBLE
+// /datum/emote/brain/whistle
+// 	key = "whistle"
+// 	key_third_person = "whistles"
+// 	message = "whistles."
+// 	emote_type = EMOTE_AUDIBLE

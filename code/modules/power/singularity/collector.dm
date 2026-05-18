@@ -1,11 +1,14 @@
 // stored_energy += (pulse_strength-RAD_COLLECTOR_EFFICIENCY)*RAD_COLLECTOR_COEFFICIENT
 #define RAD_COLLECTOR_EFFICIENCY 300 	// radiation needs to be over this amount to get power
 #define RAD_COLLECTOR_COEFFICIENT 100
-#define RAD_COLLECTOR_STORED_OUT 0.04	// (this*100)% of stored power outputted per tick. Doesn't actualy change output total, lower numbers just means collectors output for longer in absence of a source
+#define RAD_COLLECTOR_STORED_OUT 0.001	// (this*100)% of stored power outputted per tick. Doesn't actualy change output total, lower numbers just means collectors output for longer in absence of a source // [CELADON-EDIT] - CELADON_BALANCE - Трогаем рад коллекторы
 #define RAD_COLLECTOR_MINING_CONVERSION_RATE 0.00001 //This is gonna need a lot of tweaking to get right. This is the number used to calculate the conversion of watts to research points per process()
-#define RAD_COLLECTOR_OUTPUT min(stored_energy, (stored_energy*RAD_COLLECTOR_STORED_OUT)+1000) //Produces at least 1000 watts if it has more than that stored
+// [CELADON-EDIT] - CELADON_BALANCE - Трогаем рад коллекторы
+// #define RAD_COLLECTOR_OUTPUT min(stored_energy, (stored_energy*RAD_COLLECTOR_STORED_OUT)+1000) //Produces at least 1000 watts if it has more than that stored // CELADON-EDIT - ORIGINAL
+#define RAD_COLLECTOR_OUTPUT min(stored_energy, (stored_energy*RAD_COLLECTOR_STORED_OUT)*1000) //Produces at least 1000 watts if it has more than that stored
+// [/CELADON-EDIT]
 #define PUBLIC_TECHWEB_GAIN 0.6 //how many research points go directly into the main pool
-#define PRIVATE_TECHWEB_GAIN (1 - PUBLIC_TECHWEB_GAIN) //how many research points go to the user
+#define PRIVATE_TECHWEB_GAIN (1 - PUBLIC_TECHWEB_GAIN)  //how many research points go to the user
 /obj/machinery/power/rad_collector
 	name = "Radiation Collector Array"
 	desc = "A device which uses Hawking Radiation and plasma to produce power."
@@ -255,3 +258,4 @@
 #undef RAD_COLLECTOR_OUTPUT
 #undef PUBLIC_TECHWEB_GAIN
 #undef PRIVATE_TECHWEB_GAIN
+
