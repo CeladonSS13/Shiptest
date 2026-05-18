@@ -377,9 +377,6 @@ GLOBAL_LIST_INIT(armor_by_type, generate_armor_type_cache())
 	. = ..()
 	can_hold |= typecacheof(/obj/item/gun/energy/e_gun/e_old/mini)
 
-/client/toggle_fullscreen()
-	set category = "Special Verbs" // [CELADON-EDIT] - CELADON_QOL - Очистка вкладки ООС, перенос части в Special Verbs
-
 // [CELADON-ADD] - CELADON_GRAVGEN
 /datum/looping_sound/gravity_generator
 	mid_sounds = list('mod_celadon/_storage_sounds/sound/effects/beam.ogg')

@@ -41,8 +41,10 @@
 			DYE_CLOWN = /obj/item/bedsheet/clown,
 		),
 	)
-	for(var/category, key in dye_registry)
-		GLOB.dye_registry[category][key] = dye_registry[category][key]
+	for(var/category in dye_registry)
+		GLOB.dye_registry[category] = dye_registry[category]
+		for(var/key in dye_registry[category])
+			GLOB.dye_registry[category][key] = dye_registry[category][key]
 
 	var/list/custom_names = list(
 		"clown" = list("pref_name" = "Clown" , "qdesc" = "clown name", "group" = "fun", "allow_null" = FALSE),
