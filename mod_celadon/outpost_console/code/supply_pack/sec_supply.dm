@@ -84,3 +84,6 @@
 	faction = /datum/faction/nt
 	faction_discount = 0
 	faction_locked = TRUE
+
+/datum/supply_pack/sec_supply/hardliner_flyssa
+	available = FALSE
