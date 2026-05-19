@@ -1,7 +1,7 @@
 /obj/machinery/computer/cargo/generate_pack_data()
 	return
 
-// MARK: Без фракции
+// MARK: Abstract type
 /obj/machinery/computer/cargo/faction
 	name = "faction outpost console"
 	desc = "Looks like that console hasn't correct faction connection. Please, message to our specialists!"
@@ -11,6 +11,7 @@
 	charge_account = ACCOUNT_FAC
 	resistance_flags = INDESTRUCTIBLE
 	flags_1 = NODECONSTRUCT_1
+	bad_type = /obj/machinery/computer/cargo/faction
 	var/faction_theme
 	/// Area instance that cargo pods are sent to
 	var/area/landing_area
@@ -177,7 +178,6 @@
 	icon_screen = "idce"
 	faction_theme = THEME_INDEPENDENT
 	light_color = COLOR_VIVID_YELLOW
-	pod_type = /obj/structure/closet/supplypod/elysiumpod
 	charge_account = ACCOUNT_IND
 	current_faction = /datum/faction/independent
 

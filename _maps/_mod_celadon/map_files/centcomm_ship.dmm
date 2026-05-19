@@ -1036,7 +1036,7 @@
 "cU" = (
 /obj/machinery/computer/cargo/faction/syndicate{
 	dir = 1;
-	icon_state = "computer-middle"
+	icon_state = "computer-right"
 	},
 /obj/machinery/light/directional/south,
 /obj/effect/turf_decal/corner/transparent/bar/full,
@@ -2937,12 +2937,9 @@
 /turf/open/floor/plasteel/darkredfull,
 /area/centcom)
 "iu" = (
-/obj/effect/turf_decal/industrial/warning/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/industrial/warning/corner,
-/obj/effect/turf_decal/corner/transparent/brown{
-	dir = 5
+/obj/effect/turf_decal/corner/transparent/brown/full,
+/obj/effect/turf_decal/industrial/fire/corner{
+	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
@@ -11525,13 +11522,15 @@
 /turf/open/floor/plasteel/darkredfull,
 /area/centcom/ferry)
 "Ho" = (
-/obj/machinery/computer/cargo/faction{
-	dir = 1;
-	icon_state = "computer-right"
+/obj/effect/turf_decal/corner/transparent/brown{
+	dir = 5
 	},
-/obj/effect/turf_decal/corner/transparent/bar/full,
+/obj/effect/turf_decal/industrial/warning/corner,
+/obj/effect/turf_decal/industrial/warning/corner{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
-/area/outpost/cargo/faction)
+/area/centcom/supplypod)
 "Hp" = (
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/breaching,
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -15072,10 +15071,8 @@
 /turf/open/floor/plasteel,
 /area/tdome/tdomeobserve)
 "Rn" = (
-/obj/effect/turf_decal/industrial/fire/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/corner/transparent/brown/full,
+/obj/effect/turf_decal/corner/transparent/bar/full,
+/obj/structure/table/reinforced,
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "Ro" = (
@@ -16083,8 +16080,8 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "Ue" = (
-/obj/effect/turf_decal/industrial/fire/corner,
 /obj/effect/turf_decal/corner/transparent/brown/full,
+/obj/effect/turf_decal/industrial/fire/corner,
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "Uf" = (
@@ -51373,13 +51370,13 @@ gO
 fx
 WM
 Di
-Ue
-xa
-xa
-xa
+Od
+Od
+Od
+Od
+Od
+LW
 Rn
-iu
-Cd
 Cd
 bg
 UO
@@ -51566,13 +51563,13 @@ gO
 fx
 fo
 Di
-qr
-mM
-bx
-xF
-LJ
-GR
+Ue
+xa
+xa
+xa
+iu
 Ho
+Cd
 Cd
 PW
 UO
@@ -51760,9 +51757,9 @@ fx
 Cd
 PZ
 qr
-PC
-Ol
-QT
+mM
+bx
+xF
 LJ
 GR
 cU
