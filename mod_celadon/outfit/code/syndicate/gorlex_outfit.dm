@@ -1,7 +1,7 @@
 //MARK: Captain
 
 /datum/outfit/job/cel/syndicate/captain/gorlex
-	name = "Gorlex - Captain"
+	name = "Gorlex - Squad Commander"
 
 	id = /obj/item/card/id/cel/syndicate/captain/gorlex
 	uniform = /obj/item/clothing/under/syndicate/hardliners/officer
