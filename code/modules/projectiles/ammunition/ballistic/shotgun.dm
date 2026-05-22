@@ -167,7 +167,7 @@
 	pellets = 6
 	variance = 25
 
-	wear_modifier = 4
+	wear_modifier = 2
 
 /obj/item/ammo_casing/shotgun/pulseslug
 	name = "pulse slug"
@@ -177,7 +177,7 @@
 	icon_state = "pulse"
 	projectile_type = /obj/projectile/beam/pulse/shotgun
 
-	wear_modifier = 4
+	wear_modifier = 2
 
 /obj/item/ammo_casing/shotgun/buckshot/twobore
 	name = "two-bore shell"
