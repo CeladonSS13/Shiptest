@@ -247,7 +247,7 @@
 	if(istype(src, /obj/item/tank/internals/emergency_oxygen/double))
 		status_overlay.pixel_x = 1
 		status_overlay.pixel_y = 2
-	. += status_overlay
+	overlays += status_overlay
 	// CELADON EDIT END
 
 /obj/item/tank/proc/check_status()

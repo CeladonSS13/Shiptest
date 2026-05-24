@@ -1129,7 +1129,7 @@ GLOBAL_LIST_INIT(armor_by_type, generate_armor_type_cache())
 		/obj/item/key,
 		/obj/item/melee/knife/letter_opener,
 	))
-	storage_component.can_hold -= typecacheof(/obj/item/screwdriver)
+	LAZYREMOVE(storage_component.can_hold, typecacheof(/obj/item/screwdriver))
 	storage_component.can_hold_description = storage_component.generate_hold_desc(storage_component.can_hold)
 
 /obj/item/storage/wallet/random/Initialize(mapload)
@@ -1891,12 +1891,9 @@ GLOBAL_LIST_INIT(armor_by_type, generate_armor_type_cache())
 /obj/item/clothing/suit/armor/hardliners/sergeant
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 10)  // [CELADON-EDIT] - CELADON_BALANCE
 
+// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
 /obj/item/clothing/suit/armor/inteq/corpsman/Initialize(mapload)
-	allowed -= list(
-	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
-		/obj/item/melee/classic_baton/telescopic,
-	// [/CELADON-REMOVE]
-	)
+	LAZYREMOVE(allowed, /obj/item/melee/classic_baton/telescopic)
 	return ..()
 
 /obj/item/clothing/suit/space/hardsuit/security/inteq
@@ -2200,24 +2197,29 @@ GLOBAL_LIST_INIT(armor_by_type, generate_armor_type_cache())
 /datum/outfit/debug //Debug objs plus hardsuit
 	belt = /obj/item/storage/belt/utility/chief/debug/full	// [CELADON-EDIT] - OMNI_TOOLS
 
+// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
 /datum/outfit/job/clip/minutemen/captain/general/New()
-	backpack_contents -= list(/obj/item/melee/classic_baton/telescopic) // [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+	LAZYREMOVE(backpack_contents, /obj/item/melee/classic_baton/telescopic)
 	return ..()
 
+// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
 /datum/outfit/job/inteq/captain/New()
-	backpack_contents -= list(/obj/item/melee/classic_baton/telescopic) // [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+	LAZYREMOVE(backpack_contents, /obj/item/melee/classic_baton/telescopic)
 	return ..()
 
+// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
 /datum/outfit/job/nanotrasen/captain/New()
-	backpack_contents -= list(/obj/item/melee/classic_baton/telescopic) // [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+	LAZYREMOVE(backpack_contents, /obj/item/melee/classic_baton/telescopic)
 	return ..()
 
+// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
 /datum/outfit/job/nanotrasen/hop/New()
-	backpack_contents -= list(/obj/item/melee/classic_baton/telescopic) // [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+	LAZYREMOVE(backpack_contents, /obj/item/melee/classic_baton/telescopic)
 	return ..()
 
+// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
 /datum/outfit/job/nanotrasen/ce/New()
-	backpack_contents -= list(/obj/item/melee/classic_baton/telescopic) // [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+	LAZYREMOVE(backpack_contents, /obj/item/melee/classic_baton/telescopic)
 	return ..()
 
 /obj/item/clothing/suit/space/hardsuit/engine
@@ -2367,12 +2369,9 @@ GLOBAL_LIST_INIT(armor_by_type, generate_armor_type_cache())
 	. = ..()
 	RegisterSignal(src, COMSIG_TRY_STORAGE_CAN_INSERT, PROC_REF(on_can_insert))	// [CELADON-ADD] - FIXES_HOODED_ICONS
 
+// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
 /obj/item/clothing/suit/hooded/wintercoat/science/Initialize()
-	allowed -= list(
-	// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
-		/obj/item/melee/classic_baton/telescopic,
-	// [/CELADON-REMOVE]
-	)
+	LAZYREMOVE(allowed, /obj/item/melee/classic_baton/telescopic)
 	return ..()
 
 // [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
@@ -2585,11 +2584,14 @@ GLOBAL_LIST_INIT(armor_by_type, generate_armor_type_cache())
 /get_all_jobs()
 	return ..() | list("Clown", "Mime")
 
-/datum/outfit/job/cmo
-	backpack_contents = parent_type::backpack_contents // [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
+/datum/outfit/job/cmo/New()
+	LAZYREMOVE(backpack_contents, /obj/item/melee/classic_baton/telescopic)
+	return ..()
 
+// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички
 /datum/outfit/job/head_of_personnel/New()
-	backpack_contents -= list(/obj/item/melee/classic_baton/telescopic) // [CELADON-EDIT] - CELADON_BALANCE - Убираем телескопички
+	LAZYREMOVE(backpack_contents, /obj/item/melee/classic_baton/telescopic)
 	return ..()
 
 /obj/machinery/drill/process(seconds_per_tick)
