@@ -1,6 +1,3 @@
-/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
-	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
-
 /datum/supply_pack/medical
 	category = "Medical"
 	crate_type = /obj/structure/closet/crate/medical
@@ -318,6 +315,3 @@
 	contains = list(
 		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/chitosan)
 	crate_name = "chitosan vial crate"
-
-
-[/CELADON-DELETE] */

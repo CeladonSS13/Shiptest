@@ -1,6 +1,3 @@
-/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
-	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
-
 /datum/supply_pack/sec_supply
 	category = "Security Supplies"
 	crate_type = /obj/structure/closet/crate/secure/gear
@@ -313,5 +310,3 @@
 	faction = /datum/faction/pgf
 	faction_discount = 0
 	faction_locked = TRUE
-
-[/CELADON-DELETE] */

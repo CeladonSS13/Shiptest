@@ -1,7 +1,4 @@
 
-/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
-	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
-
 /// commented out until we figure out what we're doing with modsuits
 /*
 /datum/supply_pack/modsuits
@@ -234,4 +231,6 @@
 */
 
 
-[/CELADON-DELETE] */
+
+
+

@@ -7,10 +7,10 @@ import { Mission, Data } from './types';
 
 export const OutpostCommunicationsCeladon = (props, context) => {
   const { act, data } = useBackend<Data>(context);
-  const { outpostDocked, onShip, points, faction_theme } = data;
-  const [tab, setTab] = useSharedState(context, 'outpostTab', '');
+  const { outpostDocked, onShip, points, faction, factionTheme } = data;
+  const [tab, setTab] = useSharedState(context, 'outpostTab', faction ? 'cargo' : '');
   return (
-    <Window theme={faction_theme} width={600} height={700} resizable>
+    <Window theme={factionTheme} width={600} height={700} resizable>
       <Window.Content scrollable>
         <Section
           title={Math.round(points) + ' credits'}
@@ -18,6 +18,14 @@ export const OutpostCommunicationsCeladon = (props, context) => {
             <Stack textAlign="center">
               <Stack.Item>
                 <Tabs>
+                  {!!faction && (
+                    <Tabs.Tab
+                      selected={tab === 'cargo'}
+                      onClick={() => setTab('cargo')}
+                    >
+                      Cargo
+                    </Tabs.Tab>
+                  )}
                   {!!onShip && (
                     <Tabs.Tab
                       selected={tab === 'shipMissions'}
@@ -26,7 +34,7 @@ export const OutpostCommunicationsCeladon = (props, context) => {
                       Current Missions
                     </Tabs.Tab>
                   )}
-                  {!!outpostDocked && (
+                  {!!outpostDocked && !faction && (
                     <Tabs.Tab
                       selected={tab === 'outpostMissions'}
                       onClick={() => setTab('outpostMissions')}
@@ -39,8 +47,7 @@ export const OutpostCommunicationsCeladon = (props, context) => {
               <Stack.Item>
                 <Button.Input
                   content="Withdraw Cash"
-                  currentValue={100}
-                  defaultValue={100}
+                  currentValue={points}
                   onCommit={(e, value) =>
                     act('withdrawCash', {
                       value: value,
@@ -51,7 +58,7 @@ export const OutpostCommunicationsCeladon = (props, context) => {
             </Stack>
           }
         />
-        {tab === 'cargo' && <CargoExpressContent />}
+        {tab === 'cargo' && !!faction && <CargoExpressContent />}
         {tab === 'shipMissions' && !!onShip && <ShipMissionsContent />}
         {tab === 'outpostMissions' && !!outpostDocked && (<OutpostMissionsContent />)}
       </Window.Content>

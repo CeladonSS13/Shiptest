@@ -1,6 +1,3 @@
-/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
-	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
-
 /datum/supply_pack/ammo
 	category = "Bulk Ammunition"
 	crate_type = /obj/structure/closet/crate/secure/gear
@@ -366,31 +363,25 @@
 
 
 /* .308 */
+
 /datum/supply_pack/ammo/a308_ammo_box
 	name = "308 Ammo Box Crate"
 	desc = "Contains a thirty-round .308 box for DMRs such as the SsG-04 and CM-GAL-S."
 	contains = list(/obj/item/storage/box/ammo/a308)
 	cost = 185 //4.8 ammo efficiency at 30 damage //TTD 35 damage 215 cr DMR buff
 
-// [CELADON-DELETE] - cargo ammo fix - CELADON_WEAPONS
-// /datum/supply_pack/ammo/a308_ap
-// 	name = "308 Armour Piercing Ammo Box Crate"
-// 	desc = "Contains a thirty-round .308 armour piercing box for DMRs such as the SsG-04 and CM-GAL-S."
-// 	contains = list(/obj/item/storage/box/ammo/a308/ap)
-// 	cost = 230 //TTD 270
+/datum/supply_pack/ammo/a308_ap
+	name = "308 Armour Piercing Ammo Box Crate"
+	desc = "Contains a thirty-round .308 armour piercing box for DMRs such as the SsG-04 and CM-GAL-S."
+	contains = list(/obj/item/storage/box/ammo/a308/ap)
+	cost = 230 //TTD 270
 
-// /datum/supply_pack/ammo/a308_hp
-// 	name = "308 Hollow Point Ammo Box Crate"
-// 	desc = "Contains a thirty-round .308 hollow point box for DMRs such as the SsG-04 and CM-GAL-S."
-// 	contains = list(/obj/item/storage/box/ammo/a308/hp)
-// 	cost = 230 //TTD 270
+/datum/supply_pack/ammo/a308_hp
+	name = "308 Hollow Point Ammo Box Crate"
+	desc = "Contains a thirty-round .308 hollow point box for DMRs such as the SsG-04 and CM-GAL-S."
+	contains = list(/obj/item/storage/box/ammo/a308/hp)
+	cost = 230 //TTD 270
 
-///datum/supply_pack/ammo/a308_hp
-	//name = "308 Hollow Point Ammo Box Crate"
-	//desc = "Contains a thirty-round .308 hollow point box for DMRs such as the SsG-04 and CM-GAL-S."
-	//contains = list(/obj/item/storage/box/ammo/a308/hp)
-	//cost = 500
-// [/CELADON-DELETE] - cargo ammo fix
 /* 7.5x64 */
 
 /datum/supply_pack/ammo/a65clip_box
@@ -463,5 +454,3 @@
 	desc = "Contains a 60-round box for high-powered gauss guns such as the GAR assault rifle."
 	contains = list(/obj/item/storage/box/ammo/ferrolance/hc)
 	cost = 380
-
-[/CELADON-DELETE] */

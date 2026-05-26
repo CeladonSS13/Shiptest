@@ -36,10 +36,6 @@ MARK: Solfed guncases
 	gun_type = /obj/item/gun/ballistic/automatic/powered/gauss
 	mag_type = /obj/item/ammo_box/magazine/gauss
 
-/obj/item/storage/guncase/pistole_c
-	gun_type = /obj/item/gun/ballistic/automatic/pistol/solgov
-	mag_type = /obj/item/ammo_box/magazine/pistol556mm
-
 /obj/item/storage/guncase/cm82/solfed
 	gun_type = /obj/item/gun/ballistic/automatic/assault/cm82/solfed
 	mag_type = /obj/item/ammo_box/magazine/p16
@@ -66,7 +62,7 @@ MARK: InteQ guncases
 	gun_type = /obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq
 	mag_type = /obj/item/ammo_box/magazine/smgm10mm
 
-/obj/item/storage/guncase/horizonx/inteq
+/obj/item/storage/guncase/horizon_x
 	gun_type = /obj/item/gun/ballistic/revolver/horizonx
 	mag_type = /obj/item/ammo_box/a357
 

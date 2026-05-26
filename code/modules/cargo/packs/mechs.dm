@@ -1,6 +1,3 @@
-/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
-	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
-
 /datum/supply_pack/mech
 	category = "Exosuit Construction"
 	crate_type = /obj/structure/closet/crate/large
@@ -281,8 +278,7 @@ weapons
 		/obj/item/mecha_parts/mecha_equipment/weapon/energy/mecha_kineticgun
 	)
 
-/*
-/datum/supply_pack/mech/weapon/carbine
+/*/datum/supply_pack/mech/weapon/carbine
 	name = "Downpour kit"
 	desc = "A rapid fire energy carbine designed for combat usage."
 	cost = 1000
@@ -296,8 +292,7 @@ weapons
 	cost = 2000
 	contains = list(
 		/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser
-	)
-*/
+	)*/
 
 /datum/supply_pack/mech/weapon/ion_cannon
 	name = "MK4 ion cannon kit"
@@ -368,4 +363,4 @@ ammo
 	faction = /datum/faction/nt
 	faction_discount = 20
 
-[/CELADON-DELETE] */
+

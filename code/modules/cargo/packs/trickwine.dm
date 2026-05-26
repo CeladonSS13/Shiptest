@@ -1,7 +1,4 @@
-/* [CELADON-DELETE] - Убираем инициализацию офовских предметов.
-	Разносим ресурсы по разным фракциям: "mod_celadon\outpost_console\code\supply_pack"
-
-s/datum/supply_pack/food/trickwine
+/datum/supply_pack/food/trickwine
 	desc = "Trickwines shipped directly from illestern factories. A good replacement for underequipped Roumain ships."
 	faction = /datum/faction/srm
 	faction_discount = 0
@@ -37,5 +34,3 @@ s/datum/supply_pack/food/trickwine
 	name = "Bottle of vintage Prismwine"
 	cost = 500
 	contains = list(/obj/item/reagent_containers/food/drinks/breakawayflask/vintage/prismwine)
-
-[/CELADON-DELETE] */

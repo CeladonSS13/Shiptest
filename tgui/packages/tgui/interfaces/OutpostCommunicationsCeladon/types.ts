@@ -6,14 +6,9 @@ export type Data = {
   maxMissions: number;
   shipMissions: Array<Mission>;
   outpostMissions: Array<Mission>;
-  beaconZone: string;
-  beaconName: string;
-  hasBeacon: boolean;
-  usingBeacon: boolean;
   message: string;
-  printMsg: string;
-  canBuyBeacon: boolean;
-  faction_theme?: string;
+  factionTheme?: string;
+  faction?: string;
 };
 
 export type Mission = {
@@ -22,6 +17,7 @@ export type Mission = {
   name: string;
   desc: string;
   progressStr: string;
+  progressPer: number;
   value: number;
   remaining: number;
   duration: number;

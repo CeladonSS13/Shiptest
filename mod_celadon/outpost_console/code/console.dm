@@ -1,31 +1,46 @@
-/obj/machinery/computer/cargo/ui_data(mob/user) //чинит фракционное карго после фракционного карго оффов
-	// var/canBeacon = beacon && (isturf(beacon.loc) || ismob(beacon.loc))//is the beacon in a valid location? // NEEDS_TO_FIX_ALARM!
+/obj/machinery/computer/cargo/generate_pack_data()
+	return
+
+// MARK: Abstract type
+/obj/machinery/computer/cargo/faction
+	name = "faction outpost console"
+	desc = "Looks like that console hasn't correct faction connection. Please, message to our specialists!"
+	icon_screen = "civ_bounty"
+	circuit = /obj/item/circuitboard/computer/cargo
+	light_color = COLOR_LIME
+	charge_account = ACCOUNT_FAC
+	resistance_flags = INDESTRUCTIBLE
+	flags_1 = NODECONSTRUCT_1
+	bad_type = /obj/machinery/computer/cargo/faction
+	var/faction_theme
+	/// Area instance that cargo pods are sent to
+	var/area/landing_area
+	/// The pod type used to deliver orders
+	var/obj/structure/closet/supplypod/pod_type = /obj/structure/closet/supplypod/elysiumpod
+
+/obj/machinery/computer/cargo/faction/Initialize()
+	. = ..()
+	var/datum/bank_account/account = SSeconomy.get_dep_account(charge_account)
+	if(account)
+		charge_account = account
+	landing_area = get_area(src)
+
+/obj/machinery/computer/cargo/faction/ui_data(mob/user)
 	var/list/data = list()
-
-	// not a big fan of get_containing_shuttle
-	var/obj/docking_port/mobile/D = SSshuttle.get_containing_shuttle(src)
-	var/datum/overmap/ship/controlled/ship
-	var/outpost_docked = FALSE
-	if(D)
-		ship = D.current_ship
-		outpost_docked = istype(ship.docked_to, /datum/overmap/outpost)
-
-	data["onShip"] = !isnull(ship)
-	data["numMissions"] = ship ? LAZYLEN(ship.missions) : 0
-	data["maxMissions"] = ship ? ship.max_missions : 0
-	data["outpostDocked"] = outpost_docked
-	data["points"] = charge_account ? charge_account.account_balance : 0
-	data["siliconUser"] = user.has_unlimited_silicon_privilege && check_ship_ai_access(user)
-	data["usingBeacon"] = use_beacon //is the mode set to deliver to the beacon or the cargobay?
-	data["supplies"] = list()
+	data["onShip"] = !isnull(current_ship)
+	data["numMissions"] = current_ship ? LAZYLEN(current_ship.missions) : 0
+	data["maxMissions"] = current_ship ? current_ship.max_missions : 0
+	data["outpostDocked"] = FALSE // won't display missions
+	data["points"] = charge_account?.account_balance || 0
 	message = "Sales are near-instantaneous - please choose carefully."
-	if(SSshuttle.supplyBlocked)
+	data["blockade"] = FALSE
+	if(outpost_docked?.market?.supply_blocked)
 		message = blockade_warning
+		data["blockade"] = TRUE
 	data["message"] = message
-
 	data["supplies"] = supply_pack_data
-	if (cooldown > 0)//cooldown used for printing beacons
-		cooldown--
+	data["factionTheme"] = faction_theme
+	data["faction"] = current_faction?.name
 
 	data["shipMissions"] = list()
 	data["outpostMissions"] = list()
@@ -33,257 +48,77 @@
 	if(current_ship)
 		for(var/datum/mission/M as anything in current_ship.missions)
 			data["shipMissions"] += list(M.get_tgui_info())
-		if(outpost_docked)
-			var/datum/overmap/outpost/out = current_ship.docked_to
-			for(var/datum/mission/M as anything in out.missions)
+		if(istype(outpost_docked))
+			for(var/datum/mission/M as anything in outpost_docked.missions)
 				data["outpostMissions"] += list(M.get_tgui_info())
-
-	// Передаем фракционные темы в TGUI
-	if(istype(src, /obj/machinery/computer/cargo/faction))
-		var/obj/machinery/computer/cargo/faction/faction_console = src
-		data["faction_theme"] = faction_console.faction_theme
 
 	return data
 
 /obj/machinery/computer/cargo/faction/ui_static_data(mob/user)
-	var/list/data = list()
-	data["supplies"] = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!data["supplies"][P.category])
-			data["supplies"][P.category] = list(
-				"name" = P.category,
-				"packs" = list()
-			)
-
-		data["supplies"][P.category]["packs"] += list(list(
-			"name" = P.name,
-			"cost" = P.cost,
-			"id" = pack,
-			"desc" = P.desc || P.name,
-		))
-	return data
+	if(!istype(outpost_docked))
+		outpost_docked = SSovermap.get_main_outpost()
+	return generate_pack_data()
 
 /obj/machinery/computer/cargo/faction/ui_act(action, params, datum/tgui/ui)
 	. = ..()
 	if(.)
 		return
 	switch(action)
-		if("withdrawCash")
-			var/val = text2num(params["value"])
-			if(!charge_account || !val || val <= 0)
-				return
-			if(charge_account.adjust_money(-val))
-				var/obj/item/holochip/cash_chip = new /obj/item/holochip(drop_location(), val)
-				if(ishuman(usr))
-					var/mob/living/carbon/human/user = usr
-					user.put_in_hands(cash_chip)
-				playsound(src, 'sound/machines/twobeep_high.ogg', 50, TRUE)
-				src.visible_message(span_notice("[src] dispenses a holochip."))
-			return TRUE
-
 		if("purchase")
-			var/list/purchasing = params["cart"]
+			. = TRUE
 			var/total_cost = text2num(params["total"])
-			var/area/current_area = get_area(src)
-			var/list/packs = list()
-			for(var/item in purchasing)
-				var/id = item["id"]
-				var/datum/supply_pack/pack = SSshuttle.supply_packs[text2path(id)]
-				if(pack)
-					packs += pack
+			if(!charge_account.has_money(total_cost))
+				say("ERROR: Insufficent funds! Transaction canceled.")
+				return
 
-			if(!length(packs) || !charge_account?.has_money(total_cost) || !istype(current_area))
-				message_cooldown = console_cooldown_feedback(src, "ERROR: Insufficent funds! Transaction canceled.", message_cooldown)
-				return TRUE
+			var/list/empty_turfs = list()
+			for(var/turf/open/floor/turf in landing_area)
+				if(turf.is_blocked_turf())
+					continue
+				empty_turfs += turf
+				CHECK_TICK
+			if(!length(empty_turfs))
+				say("ERROR: Landing zone full! No space for drop!", message_cooldown)
+				return
+			var/turf/landing_turf = pick(empty_turfs)
 
-			var/turf/landing_turf
-			if(!use_beacon)
-				var/list/empty_turfs = list()
-				if(!landingzone)
-					reconnect()
-					if(!landingzone)
-						WARNING("[src] couldnt find a Ship/Cargo (aka cargobay) area on a ship, and as such it has set the supplypod landingzone to the area it resides in.")
-						landingzone = get_area(src)
-
-				for(var/turf/open/floor/T in landingzone.contents)
-					if(T.is_blocked_turf())
-						continue
-					empty_turfs += T
-					CHECK_TICK
-				if(!length(empty_turfs))
-					message_cooldown = console_cooldown_feedback(src, "ERROR: Landing zone full! No space for drop!", message_cooldown)
-					return TRUE
-				landing_turf = pick(empty_turfs)
-
-			if(landing_turf && charge_account.adjust_money(-total_cost))
-				var/datum/supply_order/SO = new(packs, usr.ckey, "")
-				new /obj/effect/pod_landingzone(landing_turf, podType, SO)
+			var/list/purchasing = params["cart"]
+			var/list/unprocessed_packs = list()
+			for(var/list/current_item as anything in purchasing)
+				unprocessed_packs += locate(current_item["ref"]) in outpost_docked.market.supply_packs
+			if(charge_account.adjust_money(-total_cost))
+				var/datum/supply_order/SO = new(unprocessed_packs, usr.ckey)
+				new /obj/effect/pod_landingzone(landing_turf, pod_type, SO)
 				playsound(src, 'sound/machines/twobeep_high.ogg', 50, TRUE)
 				say("Order incoming!")
 				// Логирование покупок
-				for(var/datum/supply_pack/pack in packs)
-					log_econ("[key_name(usr)] purchased [pack.name] for [pack.cost] credits from [src.name] at [AREACOORD(src)]")
-				log_econ("[key_name(usr)] total purchase cost: [total_cost] credits from [src.name] at [AREACOORD(src)]")
-				update_appearance()
-				return TRUE
-
-		if("mission-act")
-			var/datum/mission/mission = locate(params["ref"])
-			var/obj/docking_port/mobile/D = SSshuttle.get_containing_shuttle(src)
-			var/datum/overmap/ship/controlled/ship = D.current_ship
-			var/datum/overmap/outpost/outpost = ship.docked_to
-			if(!istype(outpost) || mission.source_outpost != outpost) // important to check these to prevent href fuckery
-				return
-			if(!mission.accepted)
-				if(LAZYLEN(ship.missions) >= ship.max_missions)
-					return
-				mission.accept(ship, loc)
-				return TRUE
-			else if(mission.servant == ship)
-				if(mission.can_complete())
-					mission.turn_in()
-				// else
-				// 	mission.give_up() // NEEDS_TO_FIX_ALARM!
-				return TRUE
-
-/proc/console_cooldown_feedback(obj/source, msg, cooldown)
-	playsound(source, 'sound/machines/buzz-sigh.ogg', 50, TRUE)
-	if(cooldown <= world.time)
-		source.say(msg)
-		cooldown = world.time + 5 SECONDS
-	return cooldown
-
-/obj/machinery/computer/cargo/faction/proc/faction_ui_interact(mob/user, datum/tgui/ui, var/text, obj/src)
-	ui = SStgui.try_update_ui(user, src, ui)
-	if(!ui)
-		ui = new(user, src, text, name)
-		ui.open()
-		if(!charge_account)
-			reconnect()
-
-/obj/machinery/computer/cargo/faction/proc/generate_faction_pack_data(datum/faction)
-	. = supply_pack_data = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-
-		var/is_faction = ispath(P.faction, faction)
-		// Под независимые попадают и те, у которых фракция = null
-		if(ispath(faction, /datum/faction/independent) && P.faction == null)
-			is_faction = TRUE
-
-		if (is_faction)
-			if(!supply_pack_data[P.category])
-				supply_pack_data[P.category] = list(
-					"name" = P.category,
-					"packs" = list()
-				)
-			// Добавляем товар в группу
-			supply_pack_data[P.category]["packs"] += list(list(
-				"name" = P.name,
-				"cost" = P.cost,
-				"id" = pack,
-				"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
-			))
-
-	return supply_pack_data
-
-/obj/machinery/computer/cargo/faction/proc/faction_ui_static_data(mob/user, datum/faction)	// КОД JOPA
-	var/list/data = list()
-	data["supplies"] = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		var/is_faction = ispath(P.faction, faction)
-
-		if (is_faction)
-			// Если нет группы, создаём группу
-			if(!data["supplies"][P.category])
-				data["supplies"][P.category] = list(
-					"name" = P.category,
-					"packs" = list()
-				)
-			// Добавляем товар в группу
-			data["supplies"][P.category]["packs"] += list(list(
-				"name" = P.name,
-				"cost" = P.cost,
-				"id" = pack,
-				"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
-				// "small_item" = P.small_item,
-			))
-
-
-	return data
-
-/*
-	MARK: Без фракции
-*/
-
-/obj/machinery/computer/cargo/faction
-	name = "faction outpost console"
-	desc = "Looks like that console hasn't correct faction connection. Please, message to our specialists!"
-	icon_screen = "civ_bounty"
-	circuit = /obj/item/circuitboard/computer/cargo
-	light_color = COLOR_LIME
-
-	contraband = FALSE
-	self_paid = FALSE
-
-	charge_account = ACCOUNT_FAC
-
-	podType = /obj/structure/closet/supplypod/centcompod
-
-	resistance_flags = INDESTRUCTIBLE
-	flags_1 = NODECONSTRUCT_1
-	tgui_shared_states = list(outpostTab = "\"cargo\"")
-
-	var/faction_theme = null
-
-/obj/machinery/computer/cargo/faction/Initialize()
-	. = ..()
-	var/obj/item/circuitboard/computer/cargo/board = circuit
-	contraband = board.contraband
-	if (board.obj_flags & EMAGGED)
-		obj_flags |= EMAGGED
-	else
-		obj_flags &= ~EMAGGED
-	var/datum/bank_account/B = SSeconomy.get_dep_account(charge_account)
-	if(B)
-		charge_account = B
-	generate_pack_data()
-
-/obj/machinery/computer/cargo/faction/reconnect(obj/docking_port/mobile/port)
-	if(!port)
-		var/area/ship/current_area = get_area(src)
-		if(!istype(current_area))
-			return
-		port = current_area.mobile_port
-	if(!port)
-		return
-	landingzone = get_area(src)
-
-/obj/machinery/computer/cargo/faction/ui_interact(mob/user, datum/tgui/ui)
-	ui = SStgui.try_update_ui(user, src, ui)
-	if(!ui)
-		ui = new(user, src, "OutpostCommunicationsCeladon", name)
-		ui.open()
-		if(!charge_account)
-			reconnect()
+				for(var/datum/supply_pack/pack as anything in unprocessed_packs)
+					log_econ("[key_name(usr)] purchased [pack.name] for [pack.cost] credits from [name] at [AREACOORD(src)]")
+				log_econ("[key_name(usr)] total purchase cost: [total_cost] credits from [name] at [AREACOORD(src)]")
 
 /obj/machinery/computer/cargo/faction/generate_pack_data()
 	supply_pack_data = list()
-	for(var/pack in SSshuttle.supply_packs)
-		var/datum/supply_pack/P = SSshuttle.supply_packs[pack]
-		if(!supply_pack_data[P.category])
-			supply_pack_data[P.category] = list(
-				"name" = P.category,
+	if(!istype(outpost_docked))
+		return
+
+	for(var/datum/supply_pack/current_pack as anything in outpost_docked.market.supply_packs)
+		if(!supply_pack_data[current_pack.category])
+			supply_pack_data[current_pack.category] = list(
+				"name" = current_pack.category,
 				"packs" = list()
 			)
-
-		supply_pack_data[P.category]["packs"] += list(list(
-			"name" = P.name,
-			"cost" = P.cost,
-			"id" = pack,
-			"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
+		if((!current_pack.available))
+			continue
+		var/same_faction = current_pack.faction ? current_pack.faction.allowed_faction(current_faction) : FALSE
+		if(current_pack.faction_locked && !same_faction)
+			continue
+		supply_pack_data[current_pack.category]["packs"] += list(list(
+			"name" = current_pack.name,
+			"cost" = current_pack.cost,
+			"faction" = current_pack.faction?.name,
+			"faction_locked" = current_pack.faction_locked,
+			"ref" = REF(current_pack),
+			"desc" = current_pack.desc || current_pack.name,
 		))
 
 /*
@@ -293,24 +128,12 @@
 	name = "syndicate outpost console"
 	desc = "That outpost console belongs to Syndicate."
 	icon_screen = "syndishuttle"
-	faction_theme = "syndicate"
+	faction_theme = TGUI_THEME_SYNDICATE
 	circuit = /obj/item/circuitboard/computer/cargo
 	light_color = COLOR_DARK_RED
-
-	contraband = FALSE
-	self_paid = FALSE
-
-	podType = /obj/structure/closet/supplypod/syndicate
-
+	pod_type = /obj/structure/closet/supplypod/syndicate
 	charge_account = ACCOUNT_SYN
-
-
-/obj/machinery/computer/cargo/faction/syndicate/generate_pack_data()
-	supply_pack_data = generate_faction_pack_data(/datum/faction/syndicate)
-
-/obj/machinery/computer/cargo/faction/syndicate/ui_static_data(mob/user)
-	var/list/data = faction_ui_static_data(user, /datum/faction/syndicate)
-	return data
+	current_faction = /datum/faction/syndicate
 
 /obj/structure/closet/supplypod/syndicate
 	name = "Syndicate Extraction Pod"
@@ -322,11 +145,6 @@
 	delays = list(POD_TRANSIT = 20, POD_FALLING = 4, POD_OPENING = 30, POD_LEAVING = 30)
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 
-/obj/structure/closet/supplypod/syndicate/Initialize()
-	. = ..()
-	var/turf/picked_turf = pick(GLOB.holdingfacility)
-	reverse_dropoff_coords = list(picked_turf.x, picked_turf.y, picked_turf.z)
-
 /*
 	MARK: Inteq
 */
@@ -334,23 +152,11 @@
 	name = "inteq outpost console"
 	desc = "That outpost console belongs to Inteq."
 	icon_screen = "ratvar1"
-	faction_theme = "inteq"
-	circuit = /obj/item/circuitboard/computer/cargo
+	faction_theme = TGUI_THEME_INTEQ
 	light_color = COLOR_TAN_ORANGE
-
-	contraband = FALSE
-	self_paid = FALSE
-
-	podType = /obj/structure/closet/supplypod/centcompod
-
+	pod_type = /obj/structure/closet/supplypod/centcompod
 	charge_account = ACCOUNT_INT
-
-/obj/machinery/computer/cargo/faction/inteq/generate_pack_data()
-	supply_pack_data = generate_faction_pack_data(/datum/faction/inteq)
-
-/obj/machinery/computer/cargo/faction/inteq/ui_static_data(mob/user)
-	var/list/data = faction_ui_static_data(user, /datum/faction/inteq)
-	return data
+	current_faction = /datum/faction/inteq
 
 /*
 	MARK: SolFed
@@ -359,23 +165,11 @@
 	name = "SolFed outpost console"
 	desc = "That outpost console belongs to SolFed."
 	icon_screen = "vault"
-	faction_theme = "solfed"
-	circuit = /obj/item/circuitboard/computer/cargo
+	faction_theme = TGUI_THEME_SOLFED
 	light_color = COLOR_DARK_CYAN
-
-	contraband = FALSE
-	self_paid = FALSE
-
-	podType = /obj/structure/closet/supplypod/centcompod
-
+	pod_type = /obj/structure/closet/supplypod/centcompod
 	charge_account = ACCOUNT_SLF
-
-/obj/machinery/computer/cargo/faction/solfed/generate_pack_data()
-	supply_pack_data = generate_faction_pack_data(/datum/faction/solgov)
-
-/obj/machinery/computer/cargo/faction/solfed/ui_static_data(mob/user)
-	var/list/data = faction_ui_static_data(user, /datum/faction/solgov)
-	return data
+	current_faction = /datum/faction/solgov
 
 /*
 	MARK: Independent
@@ -384,23 +178,10 @@
 	name = "Independent outpost console"
 	desc = "That outpost console belongs to Independent faction."
 	icon_screen = "idce"
-	faction_theme = "independent"
-	circuit = /obj/item/circuitboard/computer/cargo
+	faction_theme = TGUI_THEME_INDEPENDENT
 	light_color = COLOR_VIVID_YELLOW
-
-	contraband = FALSE
-	self_paid = FALSE
-
-	podType = /obj/structure/closet/supplypod/elysiumpod
-
 	charge_account = ACCOUNT_IND
-
-/obj/machinery/computer/cargo/faction/independent/generate_pack_data()
-	supply_pack_data = generate_faction_pack_data(/datum/faction/independent)
-
-/obj/machinery/computer/cargo/faction/independent/ui_static_data(mob/user)
-	var/list/data = faction_ui_static_data(user, /datum/faction/independent)
-	return data
+	current_faction = /datum/faction/independent
 
 /obj/machinery/computer/cargo/faction/independent/computer_1
 	name = "Independent outpost console #1"
@@ -429,20 +210,8 @@
 	name = "Nanotrasen outpost console"
 	desc = "That outpost console belongs to Nanotrasen."
 	icon_screen = "idcentcom"
-	faction_theme = "nt"
-	circuit = /obj/item/circuitboard/computer/cargo
+	faction_theme = TGUI_THEME_NT
 	light_color = LIGHT_COLOR_DARK_BLUE
-
-	contraband = FALSE
-	self_paid = FALSE
-
-	podType = /obj/structure/closet/supplypod/centcompod
-
+	pod_type = /obj/structure/closet/supplypod/centcompod
 	charge_account = ACCOUNT_NTN
-
-/obj/machinery/computer/cargo/faction/nanotrasen/generate_pack_data()
-	supply_pack_data = generate_faction_pack_data(/datum/faction/nt)
-
-/obj/machinery/computer/cargo/faction/nanotrasen/ui_static_data(mob/user)
-	var/list/data = faction_ui_static_data(user, /datum/faction/nt)
-	return data
+	current_faction = /datum/faction/nt

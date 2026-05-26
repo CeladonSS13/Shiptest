@@ -1,4 +1,3 @@
-/*
 /datum/supply_pack/tcomms
 	category = "Telecommunications"
 	crate_type = /obj/structure/closet/crate/secure/engineering
@@ -163,4 +162,3 @@
 	contains = list(
 		/obj/item/circuitboard/computer/message_monitor
 	)
-*/

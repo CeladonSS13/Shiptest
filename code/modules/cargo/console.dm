@@ -28,19 +28,8 @@
 	var/blockade_warning = "Bluespace instability detected. Delivery impossible."
 	var/message
 	var/list/supply_pack_data
-	/// The currently linked supplypod beacon
-	var/obj/item/supplypod_beacon/beacon
-	/// Area instance that cargo pods are sent to
-	var/area/landingzone
-	/// The pod type used to deliver orders
-	var/podType = /obj/structure/closet/supplypod // [CELADON-EDIT] - CELADON_OUTPOST_CONSOLE - instead of "/obj/structure/closet/supplypod/centcompod"
-	/// Cooldown to prevent printing supplypod beacon spam
-	var/cooldown = 0
-	/// Is the console in beacon mode? exists to let beacon know when a pod may come in
-	var/use_beacon = FALSE
 	/// The account to charge purchases to, defaults to the cargo budget
 	var/datum/bank_account/charge_account
-	var/pack_data_cooldown = 0  // [CELADON-ADD] - CELADON_FIXES: Cooldown for generating pack data to prevent FPS drops
 
 /obj/machinery/computer/cargo/Initialize()
 	. = ..()
@@ -89,14 +78,10 @@
 /obj/machinery/computer/cargo/ui_static_data(mob/user)
 	. = ..()
 	outpost_docked = current_ship.docked_to
-	// [CELADON-EDIT] - CELADON_FIXES: Prevent constant pack data generation every tick
-	// if(istype(outpost_docked))
-	if(istype(outpost_docked) && pack_data_cooldown <= world.time)
+	if(istype(outpost_docked))
 		generate_pack_data()
-		pack_data_cooldown = world.time + 50  // Cache for 5 seconds
 	else
 		supply_pack_data = list()
-	// [/CELADON-ADD]
 
 /obj/machinery/computer/cargo/ui_data(mob/user)
 	var/list/data = list()
@@ -158,8 +143,10 @@
 		if("purchase")
 			var/list/purchasing = params["cart"]
 			var/total_cost = text2num(params["total"])
-			if(!current_ship?.docked_to)	// [CELADON-ADD] - Мне лень убирать этот вызов, можно обойтись банальной проверкой
-				return						// [/CELADON-ADD]
+			// [CELADON-ADD] - Мне лень убирать этот вызов, можно обойтись банальной проверкой
+			if(!current_ship?.docked_to)
+				return
+			// [/CELADON-ADD]
 			var/datum/overmap/outpost/current_outpost = current_ship.docked_to
 			if(!istype(current_ship.docked_to) || purchasing.len == 0)
 				return
