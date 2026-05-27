@@ -1,13 +1,13 @@
 /datum/supply_pack/machinery
 	category = "Engi - Machines & Parts"
 
-/datum/supply_pack/ship_hardware/breach_shield_gen
+/datum/supply_pack/machinery/breach_shield_gen
 	cost = 1000
 
-/datum/supply_pack/ship_hardware/wall_shield_gen
+/datum/supply_pack/machinery/wall_shield_gen
 	cost = 1200
 
-/datum/supply_pack/ship_hardware/holofield_generator
+/datum/supply_pack/machinery/holofield_generator
 	cost = 750
 
 /datum/supply_pack/machinery/smes
@@ -39,13 +39,13 @@
 /datum/supply_pack/machinery/grounding_rods
 	cost = 1500
 
-/datum/supply_pack/ship_hardware/ion_thruster
+/datum/supply_pack/machinery/ion_thruster
 	cost = 1000
 
-/datum/supply_pack/ship_hardware/combustion_thruster
+/datum/supply_pack/machinery/combustion_thruster
 	cost = 1250
 
-/datum/supply_pack/ship_hardware/plasma_thruster
+/datum/supply_pack/machinery/plasma_thruster
 	contains = list(
 		/obj/item/circuitboard/machine/shuttle/engine/plasma,
 		/obj/item/circuitboard/machine/shuttle/heater,
