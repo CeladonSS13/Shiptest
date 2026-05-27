@@ -390,9 +390,11 @@ const getFilteredSupplies = (
   supplies: Record<string, SupplyCategory>,
   passFactionFilter: (pack: SupplyPack) => boolean
 ): SupplyCategory[] =>
-  Object.values(supplies).map((supply: SupplyCategory) => ({
-    ...supply,
-    packs: sortBy((pack: SupplyPack) => pack.name)(
-      supply.packs.filter((pack: SupplyPack) => passFactionFilter(pack))
-    ),
-  }));
+  sortBy((supply: SupplyCategory) => supply.name)(
+    Object.values(supplies).map((supply: SupplyCategory) => ({
+      ...supply,
+      packs: sortBy((pack: SupplyPack) => pack.name)(
+        supply.packs.filter((pack: SupplyPack) => passFactionFilter(pack))
+      ),
+    }))
+  );
