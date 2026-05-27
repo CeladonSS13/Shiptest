@@ -4784,16 +4784,6 @@
 /obj/item/desk_flag/trans,
 /turf/open/floor/wood/maple,
 /area/outpost/fraction/solfed)
-"cJN" = (
-/obj/effect/turf_decal/siding/green{
-	dir = 10
-	},
-/obj/effect/turf_decal/trimline/transparent/lime/corner{
-	dir = 4
-	},
-/obj/machinery/light/directional/west,
-/turf/open/floor/plasteel/darkgreenfull,
-/area/outpost/cargo/faction)
 "cKu" = (
 /turf/closed/indestructible/wood,
 /area/outpost/exterior)
@@ -23499,12 +23489,8 @@
 /area/outpost/fraction/nanotrasen)
 "mLc" = (
 /obj/structure/extinguisher_cabinet/directional/east,
-/obj/machinery/computer/cargo/faction{
-	dir = 8;
-	icon_state = "computer-left"
-	},
 /turf/open/floor/plasteel/tech,
-/area/outpost/cargo/faction)
+/area/outpost/operations/outpost_command)
 "mLn" = (
 /obj/structure/spider/stickyweb{
 	color = "#808080"
@@ -27965,13 +27951,6 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/engineering/atmospherics)
-"pfe" = (
-/obj/effect/turf_decal/siding/green{
-	dir = 9
-	},
-/obj/effect/turf_decal/trimline/transparent/lime/corner,
-/turf/open/floor/plasteel/darkgreenfull,
-/area/outpost/cargo/faction)
 "pfq" = (
 /obj/machinery/power/rtg/geothermal,
 /obj/structure/cable/yellow{
@@ -39800,15 +39779,6 @@
 	},
 /turf/open/floor/plasteel/dark_2,
 /area/outpost/medical/chemestry)
-"vNS" = (
-/obj/effect/turf_decal/siding/green{
-	dir = 6
-	},
-/obj/effect/turf_decal/trimline/transparent/lime/corner{
-	dir = 1
-	},
-/turf/open/floor/plasteel/darkgreenfull,
-/area/outpost/cargo/faction)
 "vOh" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -40817,15 +40787,6 @@
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/cargo/faction/syndicate)
-"wlp" = (
-/obj/effect/turf_decal/siding/green{
-	dir = 5
-	},
-/obj/effect/turf_decal/trimline/transparent/lime/corner{
-	dir = 8
-	},
-/turf/open/floor/plasteel/darkgreenfull,
-/area/outpost/cargo/faction)
 "wlq" = (
 /turf/closed/indestructible/titanium/nodiagnonal,
 /area/outpost/medical/morgue)
@@ -57753,8 +57714,8 @@ oNe
 tZQ
 lDx
 wMX
-pfe
-cJN
+oII
+chA
 otc
 dDZ
 oII
@@ -57940,8 +57901,8 @@ oNe
 wMX
 waL
 wMX
-wlp
-vNS
+oII
+oII
 oII
 oII
 oII
