@@ -96,6 +96,7 @@ export const CargoCatalog = (_: unknown, context: any) => {
   );
 
   const searchResults = searchForSupplies(supplies, searchText);
+  const searching = searchText.length > 0;
   const searchPageCount = Math.max(
     1,
     Math.ceil(searchResults.length / SEARCH_PAGE_SIZE)
@@ -106,10 +107,9 @@ export const CargoCatalog = (_: unknown, context: any) => {
     (currentSearchPage + 1) * SEARCH_PAGE_SIZE
   );
 
-  const activeSupply =
-    activeSupplyName === 'search_results'
-      ? { packs: pagedSearchResults }
-      : supplies.find((supply: SupplyCategory) => supply.name === activeSupplyName);
+  const activeSupply = searching
+    ? { packs: pagedSearchResults }
+    : supplies.find((supply: SupplyCategory) => supply.name === activeSupplyName);
 
   const visiblePacks = activeSupply?.packs.filter((pack: SupplyPack) =>
     passFactionFilter(pack)
@@ -212,10 +212,8 @@ export const CargoCatalog = (_: unknown, context: any) => {
                         getPassFactionFilter(nextFilter)
                       ).filter((supply) => supply.packs.length > 0);
                       if (
-                        activeSupplyName !== 'search_results' &&
-                        !nextSupplies.some(
-                          (supply) => supply.name === activeSupplyName
-                        )
+                        !searching &&
+                        !nextSupplies.some((supply) => supply.name === activeSupplyName)
                       ) {
                         setActiveSupplyName(nextSupplies[0]?.name);
                       }
@@ -232,7 +230,7 @@ export const CargoCatalog = (_: unknown, context: any) => {
             <Tabs vertical>
               <Tabs.Tab
                 key="search_results"
-                selected={activeSupplyName === 'search_results'}
+                selected={searching}
               >
                 <Stack align="baseline">
                   <Stack.Item>
@@ -248,10 +246,9 @@ export const CargoCatalog = (_: unknown, context: any) => {
                           return;
                         }
                         if (value.length) {
-                          setActiveSupplyName('search_results');
                           setSearchPage(0);
-                        } else if (activeSupplyName === 'search_results') {
-                          setActiveSupplyName(supplies[0]?.name);
+                          setSearchText(value);
+                          return;
                         }
                         setSearchText(value);
                       }}
@@ -266,8 +263,8 @@ export const CargoCatalog = (_: unknown, context: any) => {
                   key={supply.name}
                   selected={supply.name === activeSupplyName}
                   onClick={() => {
-                    setActiveSupplyName(supply.name);
                     setSearchText('');
+                    setActiveSupplyName(supply.name);
                   }}
                 >
                   {supply.name} ({supply.packs.length})
@@ -276,7 +273,7 @@ export const CargoCatalog = (_: unknown, context: any) => {
             </Tabs>
           </Flex.Item>
           <Flex.Item grow={1} basis={0}>
-            {activeSupplyName === 'search_results' && (
+            {searching && (
               <Stack mb={1}>
                 <Stack.Item grow>
                   Results: {searchResults.length}
