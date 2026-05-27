@@ -120,3 +120,6 @@
 
 /datum/supply_pack/medical/vials/erp_vial/syndicate
 	faction = /datum/faction/syndicate
+
+/datum/supply_pack/medical/firstaidroumain_single
+	available = FALSE
