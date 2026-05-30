@@ -1,8 +1,8 @@
 {
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
-	"map_name": "Twinkleshine-class Battle Cruiser",
+	"map_name": "Twinkleshine-class Dreadnought",
 	"map_short_name": "Twinkleshine",
-	"description": "После уничтожения более крупных линейных крейсеров класса 'Starfury' во время межкорпоративной войны Cybersun спроектировала 'Twinkleshine' в качестве замены, чтобы занять освободившуюся теперь роль флагмана. Однако война подошла к концу, прежде чем какие-либо образцы этого класса смогли увидеть бои. Теперь они хранятся как ценный символ могущества и единства Синдиката. В теории. Как и в случае с классом 'Starfury', экипажи 'Twinkleshine' состоят из представителей всех фракций членов Синдиката. В силу политической необходимости никто не согласился бы, чтобы Cybersun управлял такими мощными кораблями в одиночку. В то время как экипажи 'Twinkleshine', предположительно отбираются за более дипломатичные наклонности, чем можно было бы ожидать политическая ситуация на борту 'Twinkleshine' часто бывает деликатной, особенно по мере того, как напряженность между корпоративными и антикорпоративными элементами Синдиката продолжает нарастать. Тем не менее, они остаются самыми мощными единичными активами в объединенном арсенале Синдиката и часто выполняют роль изображения силы в пограничном пространстве. В щитспавне по причине: Он никому не сдался ",
+	"description": "После того как разработка крейсеров класса «Starfury» была свернута, GEC спроектировала «Twinkleshine» новый образец на роль флагмана с учетом всех недостатков своего предшественника.На текущий момент является не более чем символом могущества и единства Синдиката, поскольку реалии текущей ситуации являются наименее удачными для того чтобы разыграть данную карту. В ЩИТСПАВНЕ ПО ПРИЧИНЕ: Большие корабли неактуальны на такой маленький онлайн.",
 	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_twinkleshine.dmm",
 	"enabled" : false,
 	"limit": 1,
@@ -17,38 +17,38 @@
 		"ACLF"
 	],
 	"job_slots": {
-		"Flotilla Admiral": {
-			"outfit": "/datum/outfit/job/cel/syndicate/captain/twink",
+		"Captain": {
+			"outfit": "/datum/outfit/job/cel/syndicate/captain",
 			"officer": true,
 			"slots": 1
 		},
-		"Lieutenant": {
-			"outfit": "/datum/outfit/job/cel/syndicate/hos/twink",
+		"Squad Leader": {
+			"outfit": "/datum/outfit/job/cel/syndicate/hos/gorlex",
 			"officer": true,
 			"slots": 1
 		},
-		"Medic": {
-			"outfit": "/datum/outfit/job/cel/syndicate/paramedic/twink",
+		"Field Medic": {
+			"outfit": "/datum/outfit/job/cel/syndicate/paramedic/cybersun",
 			"slots": 2
 		},
-		"Engineer": {
-			"outfit": "/datum/outfit/job/cel/syndicate/engineer/twink",
+		"Field Engineer": {
+			"outfit": "/datum/outfit/job/cel/syndicate/engineer/cybersun",
 			"slots": 2
 		},
-		"Operative": {
-			"outfit": "/datum/outfit/job/cel/syndicate/security/twink",
+		"Commando": {
+			"outfit": "/datum/outfit/job/cel/syndicate/security/gorlex",
 			"slots": 5
 		},
 		"Bartender": {
-			"outfit": "/datum/outfit/job/cel/syndicate/bartender/twink",
+			"outfit": "/datum/outfit/job/cel/syndicate/bartender",
 			"slots": 1
 		},
-		"Miner": {
-			"outfit": "/datum/outfit/job/cel/syndicate/miner/twink",
+		"Explorer": {
+			"outfit": "/datum/outfit/job/cel/syndicate/miner",
 			"slots": 2
 		},
 		"Junior Agent": {
-			"outfit": "/datum/outfit/job/cel/syndicate/assistant/twink",
+			"outfit": "/datum/outfit/job/cel/syndicate/assistant",
 			"slots": 3
 		}
 	}

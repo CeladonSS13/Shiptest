@@ -1,8 +1,8 @@
 {
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
-	"map_name": "Pangolier-class Frigate",
+	"map_name": "Pangolier-class Cruiser",
 	"map_short_name": "Pangolier",
-	"description": "Судно класса «Pangolier» является результатом совместного сотрудничества Cybersun и Gorlex Marauders. Благодаря их совместному труду в краткие сроки некогда вышедшее из эксплуатации административное судно было отреставрировано и переоборудовано под длительные экспедиции, а также снабжено научным отделом. На судне находятся ведущие специалисты своих областей под командованием предоставленного Cybersun Капитана, в то же время для их защиты на судне расквартирована наемная группа Gorlex Marauders возглавляемая Первым лейтенантом.",
+	"description": "Судно класса «Pangolier» является результатом совместного сотрудничества Cybersun и Gorlex Marauders. Благодаря их совместному труду в краткие сроки некогда вышедшее из эксплуатации административное судно было отреставрировано и переоборудовано под длительные экспедиции, а также снабжено научным отделом. На судне находятся ведущие специалисты своих областей под командованием предоставленного Cybersun Капитана, в то же время для их защиты на судне расквартирована наемная группа Gorlex Marauders.",
 	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_pangolier.dmm",
 	"enabled": true,
 	"limit": 1,
@@ -12,35 +12,31 @@
 	"tags": ["Исследовательский"],
 	"namelists": ["CYBERSUN", "GORLEX"],
 	"job_slots": {
-		"Captain": {
+		"Commander": {
 			"outfit": "/datum/outfit/job/cel/syndicate/captain/cybersun",
 			"officer": true,
 			"slots": 1
 		},
-		"First lieutenant": {
-			"outfit": "/datum/outfit/job/cel/syndicate/hos/gorlex/lieutenant",
-			"officer": true,
-			"slots": 1
-		},
 		"Commando": {
-			"outfit": "/datum/outfit/job/cel/syndicate/security/gorlex/commando",
+			"outfit": "/datum/outfit/job/cel/syndicate/security/gorlex",
 			"slots": 2
 		},
-		"Cybersun scientist": {
+		"Scientist": {
 			"outfit": "/datum/outfit/job/cel/syndicate/science/cybersun",
 			"slots": 2
 		},
-		"Cybersun paramedic": {
+		"Paramedic": {
 			"outfit": "/datum/outfit/job/cel/syndicate/doctor/cybersun",
 			"slots": 1
 		},
-		"Cybersun engineer": {
+		"Engineer": {
 			"outfit": "/datum/outfit/job/cel/syndicate/engineer/cybersun",
 			"slots": 2
 		},
-		"Operative": {
-			"outfit": "/datum/outfit/job/cel/syndicate/assistant/gorlex/operative",
+		"Junior Agent": {
+			"outfit": "/datum/outfit/job/cel/syndicate/assistant",
 			"slots": 2
 		}
+
 	}
 }
