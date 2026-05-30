@@ -151,10 +151,10 @@
 				Dock(position, force = TRUE)
 
 			refresh_engines()
-		// CELADON EDIT START
+		// [CELADON-ADD]
 		default_sensor_range = source_template.def_sensor_range
 		sensor_range = default_sensor_range
-		// CELADON EDIT END
+		// [/CELADON-ADD]
 		ship_account = new(name, source_template.starting_funds)
 		if(outpost_special_docking_perms)
 			outpost_special_dock_perms = TRUE
