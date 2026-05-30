@@ -151,8 +151,9 @@
 				Dock(position, force = TRUE)
 
 			refresh_engines()
-		// [CELADON-ADD]
+
 		default_sensor_range = source_template.def_sensor_range
+		// [CELADON-ADD] - Сенсоры корабля при создании теперь получают максимальное значение, вместо 1.
 		sensor_range = default_sensor_range
 		// [/CELADON-ADD]
 		ship_account = new(name, source_template.starting_funds)
