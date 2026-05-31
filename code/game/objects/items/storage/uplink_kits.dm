@@ -43,9 +43,9 @@
 			new /obj/item/ammo_box/a357(src)
 			new /obj/item/card/emag(src)
 			new /obj/item/grenade/c4(src)
-			new /obj/item/clothing/gloves/color/latex/nitrile(src)
-			new /obj/item/clothing/mask/gas/clown_hat(src)	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+			new /obj/item/clothing/gloves/nitrile/blue(src)
 			new /obj/item/clothing/under/suit/black_really(src)
+			new /obj/item/clothing/mask/gas/clown_hat(src)	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 
 		if("screwed")
 			new /obj/item/sbeacondrop/bomb(src)
@@ -98,9 +98,9 @@
 			new /obj/item/gun/ballistic/automatic/marksman/taipan(src) // 12 tc
 			new /obj/item/ammo_box/magazine/sniper_rounds/penetrator(src)
 			new /obj/item/clothing/glasses/thermal/syndi(src)
-			new /obj/item/clothing/gloves/color/latex/nitrile(src)
-			new /obj/item/clothing/mask/gas/clown_hat(src)	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+			new /obj/item/clothing/gloves/nitrile/blue(src)
 			new /obj/item/clothing/under/suit/black_really(src)
+			new /obj/item/clothing/mask/gas/clown_hat(src)	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 
 		if("metaops")
 			new /obj/item/clothing/suit/space/hardsuit/syndi(src) // 8 tc

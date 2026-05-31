@@ -48,10 +48,9 @@ GLOBAL_LIST_INIT(dye_registry, list(
 		DYE_YELLOW = /obj/item/clothing/gloves/color/yellow,
 		DYE_GREEN = /obj/item/clothing/gloves/color/green,
 		DYE_BLUE = /obj/item/clothing/gloves/color/blue,
-		DYE_PURPLE = /obj/item/clothing/gloves/color/purple,
+		DYE_PURPLE = /obj/item/clothing/gloves/color/lightpurple,
 		DYE_BLACK = /obj/item/clothing/gloves/color/black,
 		DYE_WHITE = /obj/item/clothing/gloves/color/white,
-		DYE_RAINBOW = /obj/item/clothing/gloves/color/rainbow,
 		DYE_MIME = /obj/item/clothing/gloves/color/white,		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 		DYE_CLOWN = /obj/item/clothing/gloves/color/rainbow,	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 		DYE_QM = /obj/item/clothing/gloves/color/brown,
@@ -60,7 +59,7 @@ GLOBAL_LIST_INIT(dye_registry, list(
 		DYE_HOS = /obj/item/clothing/gloves/color/black,
 		DYE_CE = /obj/item/clothing/gloves/color/black,
 		DYE_RD = /obj/item/clothing/gloves/color/grey,
-		DYE_CMO = /obj/item/clothing/gloves/color/latex/nitrile,
+		DYE_CMO = /obj/item/clothing/gloves/nitrile/blue,
 		DYE_REDCOAT = /obj/item/clothing/gloves/color/white,
 		DYE_SYNDICATE = /obj/item/clothing/gloves/combat,
 		DYE_CENTCOM = /obj/item/clothing/gloves/combat
