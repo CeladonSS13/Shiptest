@@ -34,7 +34,7 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 		// [/CELADON-ADD]
 		list("Bad Touch", "Friendly"),
 		list("Self-Aware", "Congenital Analgesia"),
-		list("Trilingual", "Monolingual"),
+		list("Trilingual", "Monolingual", "Polyglot"),
 	)
 
 	species_blacklist = list(

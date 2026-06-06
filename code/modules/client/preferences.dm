@@ -1921,6 +1921,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		checked_langs += lang_type
 	if("Trilingual" in all_quirks)
 		points_balance += 2
+	if("Polyglot" in all_quirks)
+		points_balance += 5
 	if("Monolingual" in all_quirks)
 		points_balance -= 2
 	return points_balance
