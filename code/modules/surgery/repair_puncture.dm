@@ -133,7 +133,7 @@
 	. = ..()
 	if(.)
 		var/obj/item/bodypart/targeted_bodypart = target.get_bodypart(user.zone_selected)
-		var/datum/wound/pierce/pierce_wound = targeted_bodypart.get_wound_type(targetable_wound)
+		var/datum/wound/pierce/bleed/pierce_wound = targeted_bodypart.get_wound_type(targetable_wound)
 		if(pierce_wound && pierce_wound.blood_flow > 0)
 			vessels_required = round(pierce_wound.initial_flow) + 1
 			vessels_sealed = 0
