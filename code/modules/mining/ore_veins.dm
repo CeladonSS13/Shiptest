@@ -118,12 +118,6 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	return ..()
 
 /obj/structure/vein/proc/begin_spawning()
-	// [CELADON-ADD] - CELADON_FIXES - FIXES_DRILLCLASS - Проверяем, не завершена ли миссия перед запуском спавна
-	if(istype(our_drill, /obj/machinery/drill/mission))
-		var/obj/machinery/drill/mission/mission_drill = our_drill
-		if(mission_drill.num_current >= mission_drill.num_wanted)
-			return
-	// [/CELADON-ADD]
 	currently_spawning = TRUE
 	START_PROCESSING(SSprocessing, src)
 
@@ -138,17 +132,6 @@ GLOBAL_LIST_EMPTY(ore_veins)
 /obj/structure/vein/process(seconds_per_tick)
 	if(!currently_spawning)
 		return
-	// [CELADON-ADD] - CELADON_FIXES - FIXES_DRILLCLASS - Проверяем, существует ли бур
-	if(!our_drill || QDELETED(our_drill))
-		stop_spawning()
-		return
-	// Дополнительная проверка для буров миссии
-	if(istype(our_drill, /obj/machinery/drill/mission))
-		var/obj/machinery/drill/mission/mission_drill = our_drill
-		if(mission_drill.num_current >= mission_drill.num_wanted)
-			stop_spawning()
-			return
-	// [/CELADON-ADD]
 	try_spawning_spawner()
 
 /obj/structure/vein/proc/try_spawning_spawner()
@@ -173,6 +156,8 @@ GLOBAL_LIST_EMPTY(ore_veins)
 /obj/structure/vein/proc/pick_tile(list/peel)
 	if(!length(peel))
 		peel = turf_peel(spawn_distance_max, spawn_distance_min, src, TRUE)
+	if(!length(peel))
+		return get_turf(src)
 	var/turf/open/spawning_tile
 	if(length(peel))
 		spawning_tile = pick(peel)
@@ -186,21 +171,9 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	return spawning_tile
 
 /obj/structure/vein/proc/increment_wave_tally()
-	// [CELADON-EDIT] - CELADON_FIXES - FIXES_DRILLCLASS - Добавлена проверка QDELETED для защиты от удаленных буров
-	//if(!our_drill || !our_drill.active)
-	//	wave_tally = 0
-	//	return TRUE
-	if(!our_drill || QDELETED(our_drill) || !our_drill.active)
+	if(!our_drill || !our_drill.active)
 		wave_tally = 0
 		return TRUE
-
-	// Проверяем, не завершена ли миссия (для буров миссии)
-	if(istype(our_drill, /obj/machinery/drill/mission))
-		var/obj/machinery/drill/mission/mission_drill = our_drill
-		if(mission_drill.num_current >= mission_drill.num_wanted)
-			wave_tally = 0
-			return FALSE
-	// [/CELADON-EDIT]
 	wave_tally += 1
 	if(wave_tally > waves_per_break)
 		wave_tally = 0

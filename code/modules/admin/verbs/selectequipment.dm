@@ -141,7 +141,8 @@
 		cached_outfits = list()
 		cached_outfits += list(outfit_entry("General", /datum/outfit, "Naked", priority=TRUE))
 		cached_outfits += make_outfit_entries("General", subtypesof(/datum/outfit) - typesof(/datum/outfit/job) - typesof(/datum/outfit/plasmaman))
-		cached_outfits += make_outfit_entries("Jobs", typesof(/datum/outfit/job))
+		cached_outfits += make_outfit_entries("Ship Outfits", typesof(/datum/outfit/job/cel))						// [CELADON-EDIT] - SHIP_JOBS
+		cached_outfits += make_outfit_entries("Jobs", typesof(/datum/outfit/job) - typesof(/datum/outfit/job/cel))	// [/CELADON-EDIT]
 		cached_outfits += make_outfit_entries("Plasmamen Outfits", typesof(/datum/outfit/plasmaman))
 
 	data["outfits"] = cached_outfits

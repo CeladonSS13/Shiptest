@@ -325,7 +325,7 @@
 	name = "Space Ikea AI Shipment"
 	description = "A Space Ikea Brand AI Core and Necessities Crate, it seems to have missed its intended target."
 	suffix = "jungle_surface_ikea_ai.dmm"
-	cost = 2
+	cost = 3
 
 /datum/map_template/ruin/jungle/coffinpirate
 	id = "coffinpirate"
@@ -385,6 +385,20 @@
 	description = "A ninja shrine."
 	suffix = "jungle_surface_ninjashrine.dmm"
 	cost = 2
+
+/datum/map_template/ruin/jungle/serene_hunt
+	name = "Serene Hunt"
+	id = "senere_hunt"
+	description = "Serene Outdoor's premier hunting resort and outlet. Well, it was until all the animals got out anyways."
+	suffix = "jungle_serene_hunts.dmm"
+	cost = 4
+
+/datum/map_template/ruin/jungle/ramzi_base	//Оффовская ремапнутая Syndicate
+	name = "Ramzi Base"
+	id = "razmi_base"
+	description = "An ICW-era nuclear bunker formerly operated by Ramzi Clique."
+	suffix = "jungle_surface_ramzi.dmm"
+	cost = 3
 
 //							///
 //		MARK: Lavaland

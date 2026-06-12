@@ -202,4 +202,4 @@
 
 /obj/item/storage/wallet/random/PopulateContents()
 	new /obj/effect/spawner/random/entertainment/wallet_storage(src)
-	icon_state = "wallet"
+	icon_state = "wallet_closed"

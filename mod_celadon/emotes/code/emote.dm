@@ -188,18 +188,23 @@
 	cooldown = (15 SECONDS)
 	stat_allowed = HARD_CRIT
 
-/datum/emote/living/deathgasp/run_emote(mob/user, params, type_override, intentional)
+/datum/emote/living/deathgasp/run_emote(mob/living/user, params, type_override, intentional)
 	var/mob/living/simple_animal/S = user
 	if(istype(S) && S.deathmessage)
 		message_simple = S.deathmessage
 	. = ..()
 	message_simple = initial(message_simple)
 
-	if(. && user.deathsound)
-		if(isliving(user))
-			var/mob/living/L = user
-			if(!L.can_speak_vocal() || L.oxyloss >= 50)
-				return //stop the sound if oxyloss too high/cant speak
+	if(!. && !user.can_speak() || user.getOxyLoss() >= 50)
+		return //stop the sound if oxyloss too high/cant speak
+	var/mob/living/carbon/carbon_user = user
+	// For masks that give unique death sounds
+	if(istype(carbon_user) && isclothing(carbon_user.wear_mask) && carbon_user.wear_mask.unique_death)
+		playsound(carbon_user, pick(carbon_user.wear_mask.unique_death), 200, TRUE, TRUE)
+		return
+	if(user.deathsound)
+		if(!carbon_user.can_speak_vocal() || carbon_user.oxyloss >= 50)
+			return //stop the sound if oxyloss too high/cant speak
 		playsound(user, user.deathsound, 200, TRUE, TRUE)
 
 /datum/emote/living/drool
