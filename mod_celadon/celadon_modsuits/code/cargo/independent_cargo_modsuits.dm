@@ -173,7 +173,7 @@
 	cost = 3000
 	contains = list(/obj/item/mod/module/armor_assist)
 
-// // (Закомментирован по причине излишности и возможности абуза с телепортом на уровень ЦК)
+// // [CELADON-EDIT] - CELADON_MODSUITS - (Закомментирован по причине излишности и возможности абуза с телепортом на уровень ЦК)
 // /datum/supply_pack/faction/independent/modsuits/modules/unstable_warp
 // 	name = "MOD Slipstream warp module"
 // 	desc = "The Slipstream program is a unique innovation. The module itself is a miniaturized near-lightspeed drive capable of transporting the user through bluespace with acceptable accuracy.\

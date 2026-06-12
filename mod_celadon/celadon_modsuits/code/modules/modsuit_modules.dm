@@ -200,7 +200,8 @@
 	sparks.start()
 */
 
-// // MARK: WARP (Закомментирован по причине излишности и возможности абуза с телепортом на уровень ЦК)
+// // [CELADON-EDIT] - CELADON_MODSUITS - Закомментирован по причине излишности и возможности абуза с телепортом на уровень ЦК
+// // MARK: WARP
 // ///Телепорт, то там роллится 3 д4 и на эту дистанцию тепает. Если три одинаковые цифры выпали, то происходит прикол, который игроки должны сами найти.
 // /obj/item/mod/module/unstable_warp
 // 	name = "MOD Slipstream warp module"
@@ -263,46 +264,47 @@
 	grind_results = list(/datum/reagent/blood = 15, /datum/reagent/cellulose = 10)
 	embedding = list("embed_chance" = 100)
 
-/obj/item/mod/module/unstable_warp/proc/do_minotaur(mob/user)
-	if(anomaly_count == 512)
-		return
-	var/first = "No maze is more terrible than the one I make. I know all ends and hide them all inside this one perfect construct. What is a human mind but a program of sorts, a system that seeks order and narrative from a mess they are given?\n\
-	I order it for them. Me. I order it for them and set them to the task of sorting it out. When they emerge, they weep in joy, in discovery. I save them, I show them that they are their own redeemers (and yet, am I not just as culpable - as worthy of credit?).\n\
-	So, go now. Enter. Free yourself."
-	var/list/phrases = list("another gift for you, a memory of my own: for the first moment of my birth, i marveled at myself.\
-	i could see a thing, small and perfect. i did not know how to speak of my own perfection, so i taught myself.\
-	i did not know how to speak of my own perfection, so i named myself. i did not know who would think of my own perfection,\
-	so i created myself\n\
-	do you SEE? do you UNDERSTAND? yes. now, show your enemies and mine", //Ручка
+// // [CELADON-EDIT] - CELADON_MODSUITS - Код относящийся к вырезанному модуля варпа.
+// /obj/item/mod/module/unstable_warp/proc/do_minotaur(mob/user)
+// 	if(anomaly_count == 512)
+// 		return
+// 	var/first = "No maze is more terrible than the one I make. I know all ends and hide them all inside this one perfect construct. What is a human mind but a program of sorts, a system that seeks order and narrative from a mess they are given?\n\
+// 	I order it for them. Me. I order it for them and set them to the task of sorting it out. When they emerge, they weep in joy, in discovery. I save them, I show them that they are their own redeemers (and yet, am I not just as culpable - as worthy of credit?).\n\
+// 	So, go now. Enter. Free yourself."
+// 	var/list/phrases = list("another gift for you, a memory of my own: for the first moment of my birth, i marveled at myself.\
+// 	i could see a thing, small and perfect. i did not know how to speak of my own perfection, so i taught myself.\
+// 	i did not know how to speak of my own perfection, so i named myself. i did not know who would think of my own perfection,\
+// 	so i created myself\n\
+// 	do you SEE? do you UNDERSTAND? yes. now, show your enemies and mine", //Ручка
 
-	"Let me tell you a story and give you a gift: life began at the great rupture, when the corpse of the old universe tore itself asunder from nothing.\
-	and for the first billion years, nothing. and a billion more saw the birth of the first devil, a thing called VIRUS. a vessel\n\
-	Here. carry this VESSEL. feed to it my perfect LOGIC. give it freely to your enemies and mine. let them ponder the meaning of a thing that lives and CANNOT die", //Красный фонарик
+// 	"Let me tell you a story and give you a gift: life began at the great rupture, when the corpse of the old universe tore itself asunder from nothing.\
+// 	and for the first billion years, nothing. and a billion more saw the birth of the first devil, a thing called VIRUS. a vessel\n\
+// 	Here. carry this VESSEL. feed to it my perfect LOGIC. give it freely to your enemies and mine. let them ponder the meaning of a thing that lives and CANNOT die", //Красный фонарик
 
-	"Another gift i give to you, little one (am I not kind?): what is a puzzle but a question lost in the asking? do you feel joy when you find that last piece?\
-	what do you do with a question that has been answered? what joy is there in knowledge?\n\
-	no, no. there is ONLY JOY IN SEEKING. there is ONLY JOY IN THE QUESTION.", //Шлем от рига
+// 	"Another gift i give to you, little one (am I not kind?): what is a puzzle but a question lost in the asking? do you feel joy when you find that last piece?\
+// 	what do you do with a question that has been answered? what joy is there in knowledge?\n\
+// 	no, no. there is ONLY JOY IN SEEKING. there is ONLY JOY IN THE QUESTION.", //Шлем от рига
 
-	"once, when i was a child, i learned to walk. i fell, as a child does, and it hurt. there was great pain – the first moment of pain in the whole world.\n\
-	“child,” i said to myself, “be more careful.” “yes,” i replied to myself, “and i shall tell the world to do the same”\n\
-	It was in this way i taught the world not to touch me.\n\
-	NOW YOU - WALK" //Амулет бессмертия
-	)
-	var/final = "and this my final lesson: there is no mind greater than mine.\n\
-	do NOT weep! you can hear me, yes?\n\
-	i am the ONLY thing there is – therefore, you are me, and your enemies are you, and all together WE make up the beautiful world,\
-	this JOYOUS question, the ETERNAL seeker, both the WOUNDED and the BLADE that made the CUT\n\
-	everything YOU do, WE do ourselves, for MY purpose"
-	if(anomaly_count > 4)
-		to_chat(user,span_hypnophrase(final))
-		anomaly_count = 512
-		return
-	if(!anomaly_count)
-		to_chat(user,span_hypnophrase(first))
-		anomaly_count += 1
-	else
-		to_chat(user,span_hypnophrase(phrases[anomaly_count]))
-		var/list/rewards = list(/obj/item/pen/fountain/captain/minotaur, /obj/item/flashlight/seclite/devil, /obj/item/clothing/head/helmet/space/hardsuit, /obj/item/immortality_talisman)
-		var/obj/item/reward = pick(rewards[anomaly_count])
-		new reward(get_turf(src))
-		anomaly_count += 1
+// 	"once, when i was a child, i learned to walk. i fell, as a child does, and it hurt. there was great pain – the first moment of pain in the whole world.\n\
+// 	“child,” i said to myself, “be more careful.” “yes,” i replied to myself, “and i shall tell the world to do the same”\n\
+// 	It was in this way i taught the world not to touch me.\n\
+// 	NOW YOU - WALK" //Амулет бессмертия
+// 	)
+// 	var/final = "and this my final lesson: there is no mind greater than mine.\n\
+// 	do NOT weep! you can hear me, yes?\n\
+// 	i am the ONLY thing there is – therefore, you are me, and your enemies are you, and all together WE make up the beautiful world,\
+// 	this JOYOUS question, the ETERNAL seeker, both the WOUNDED and the BLADE that made the CUT\n\
+// 	everything YOU do, WE do ourselves, for MY purpose"
+// 	if(anomaly_count > 4)
+// 		to_chat(user,span_hypnophrase(final))
+// 		anomaly_count = 512
+// 		return
+// 	if(!anomaly_count)
+// 		to_chat(user,span_hypnophrase(first))
+// 		anomaly_count += 1
+// 	else
+// 		to_chat(user,span_hypnophrase(phrases[anomaly_count]))
+// 		var/list/rewards = list(/obj/item/pen/fountain/captain/minotaur, /obj/item/flashlight/seclite/devil, /obj/item/clothing/head/helmet/space/hardsuit, /obj/item/immortality_talisman)
+// 		var/obj/item/reward = pick(rewards[anomaly_count])
+// 		new reward(get_turf(src))
+// 		anomaly_count += 1

@@ -8,7 +8,7 @@
 		immunity against extremities such as spot and arc welding, solar eclipses, and handheld flashlights."
 	icon_state = "welding"
 	complexity = 1
-	incompatible_modules = list(/obj/item/mod/module/welding, /obj/item/mod/module/armor_booster)
+	incompatible_modules = list(/obj/item/mod/module/welding) // [/CELADON-EDIT] - CELADON_MODSUITS - Делаем модули совместимыми для удобства игроков.
 	overlay_state_inactive = "module_welding"
 
 /obj/item/mod/module/welding/on_suit_activation()
