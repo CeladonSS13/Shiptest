@@ -10,7 +10,7 @@ MARK: ARMOR BOOSTER
 		This civilian model is more focused on comfort and uses excessive voltage to help operator with MOD's weight distribution."
 	armor_values = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5)
 	complexity = 4
-	active_power_cost = DEFAULT_CHARGE_DRAIN
+	active_power_cost = DEFAULT_CHARGE_DRAIN / 2
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 0.3
 	disable_chance = 10
 
@@ -40,7 +40,7 @@ MARK: ARMOR BOOSTER
 		Once under voltage, this \"power-weave\" gets less flexible, but hardens on hit, dampening it. \
 		While it's a high-end technology, it still has it's downsides: the required voltage is too extreme to run alongside EVA systems. \n\
 		The light variant combines decent comfort and protection and runs on nominal voltages."
-	active_power_cost = DEFAULT_CHARGE_DRAIN * 1.5
+	active_power_cost = DEFAULT_CHARGE_DRAIN * 0.8
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 0.1
 	removable = TRUE
 	complexity = 2
@@ -86,7 +86,7 @@ MARK: ARMOR BOOSTER
 	bumpoff = TRUE
 	complexity = 5
 	stealth_alpha = 40
-	active_power_cost = DEFAULT_CHARGE_DRAIN * 4
+	active_power_cost = DEFAULT_CHARGE_DRAIN * 2
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 25
 	cooldown_time = 25 SECONDS
 	slowdown_after_disable = TRUE
@@ -129,7 +129,7 @@ MARK: ARMOR BOOSTER
 	However, deactivation causes serious damage to human tissue and is potentially lethal for injured wearer. \n\
 	They don't seem to suppress pain, though."
 	module_type = MODULE_USABLE
-	idle_power_cost = DEFAULT_CHARGE_DRAIN
+	idle_power_cost = DEFAULT_CHARGE_DRAIN / 2
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 10
 	removable = TRUE
 	incompatible_modules = list(/obj/item/mod/module/blood_replika, /obj/item/mod/module/armor_assist)

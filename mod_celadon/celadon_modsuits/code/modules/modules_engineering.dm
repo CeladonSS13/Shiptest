@@ -9,7 +9,7 @@
 	icon_state = "radshield"
 	complexity = 2
 	module_type = MODULE_TOGGLE
-	idle_power_cost = DEFAULT_CHARGE_DRAIN * 0.3
+	idle_power_cost = DEFAULT_CHARGE_DRAIN * 0.2
 	incompatible_modules = list(/obj/item/mod/module/rad_protection)
 	tgui_id = "rad_counter"
 	var/current_tick_amount = 0

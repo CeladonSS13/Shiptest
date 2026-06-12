@@ -8,7 +8,7 @@
 	icon_state = "kinesis"
 	module_type = MODULE_ACTIVE
 	complexity = 3
-	use_power_cost = DEFAULT_CHARGE_DRAIN*20 // use_power_cost = DEFAULT_CHARGE_DRAIN*3
+	use_power_cost = DEFAULT_CHARGE_DRAIN*10 // use_power_cost = DEFAULT_CHARGE_DRAIN*3
 	incompatible_modules = list(/obj/item/mod/module/anomaly_locked/kinesis)
 	cooldown_time = 0.5 SECONDS
 	overlay_state_inactive = "module_kinesis"
@@ -274,7 +274,7 @@
 		В отличии от своего раннего прототипа эта модель так же способна воздействовать на живые объекты. \
 		Однако, они все еще могут бороться с гравитационным захватом."
 	complexity = 4
-	use_power_cost = DEFAULT_CHARGE_DRAIN * 25
+	use_power_cost = DEFAULT_CHARGE_DRAIN * 15
 	prebuilt = TRUE
 	stat_required = CONSCIOUS
 	mob_stun_time = 0 SECONDS // микростан оказался слишком плохой идеей.

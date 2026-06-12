@@ -5,7 +5,7 @@
 	icon_state = "inteq_flashlight"
 	module_type = MODULE_TOGGLE
 	complexity = 0
-	active_power_cost = DEFAULT_CHARGE_DRAIN * 0.3
+	active_power_cost = DEFAULT_CHARGE_DRAIN * 0.2
 	incompatible_modules = list(/obj/item/mod/module/flashlight)
 	cooldown_time = 0.5 SECONDS
 	overlay_state_inactive = "inteq_module_light"

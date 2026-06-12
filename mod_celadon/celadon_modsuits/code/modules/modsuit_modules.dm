@@ -40,6 +40,8 @@
 	var/spawn_time = 15 SECONDS
 
 /obj/item/mod/module/dispenser/mirage/moving
+	name = "MOD moving mirage grenade dispenser module"
+	desc = "This module can create mirage grenades at the user's liking. These grenades create moving holographic copies of the user."
 	dispense_type = /obj/item/grenade/mirage/moving
 
 /obj/item/grenade/mirage/moving
@@ -198,56 +200,56 @@
 	sparks.start()
 */
 
-// MARK: WARP
-///Телепорт, то там роллится 3 д4 и на эту дистанцию тепает. Если три одинаковые цифры выпали, то происходит прикол, который игроки должны сами найти.
-/obj/item/mod/module/unstable_warp
-	name = "MOD Slipstream warp module"
-	desc = "The Slipstream program is a unique innovation. The module itself is a miniaturized near-lightspeed drive capable of transporting the user through bluespace with acceptable accuracy.\n\
-	The technology is temperamental, at best: nothing smaller than an armored human being can survive and the stress of exposed blink travel,\n\
-	and the experience can be traumatic to the user."
-	module_type = MODULE_ACTIVE
-	complexity = 4
-	active_power_cost = DEFAULT_CHARGE_DRAIN * 2
-	incompatible_modules = list(/obj/item/mod/module/unstable_warp)
-	cooldown_time = 3 SECONDS
-	overlay_state_inactive = "inteq_module_light"
-	use_power_cost = 1000
-	var/anomaly_count = 0
+// // MARK: WARP (Закомментирован по причине излишности и возможности абуза с телепортом на уровень ЦК)
+// ///Телепорт, то там роллится 3 д4 и на эту дистанцию тепает. Если три одинаковые цифры выпали, то происходит прикол, который игроки должны сами найти.
+// /obj/item/mod/module/unstable_warp
+// 	name = "MOD Slipstream warp module"
+// 	desc = "The Slipstream program is a unique innovation. The module itself is a miniaturized near-lightspeed drive capable of transporting the user through bluespace with acceptable accuracy.\n\
+// 	The technology is temperamental, at best: nothing smaller than an armored human being can survive and the stress of exposed blink travel,\n\
+// 	and the experience can be traumatic to the user."
+// 	module_type = MODULE_ACTIVE
+// 	complexity = 4
+// 	active_power_cost = DEFAULT_CHARGE_DRAIN * 2
+// 	incompatible_modules = list(/obj/item/mod/module/unstable_warp)
+// 	cooldown_time = 3 SECONDS
+// 	overlay_state_inactive = "inteq_module_light"
+// 	use_power_cost = 1000
+// 	var/anomaly_count = 0
 
-/obj/item/mod/module/unstable_warp/proc/returnal(mob/user,turf/tpto)
-	if(tpto)
-		user.forceMove(tpto)
-		to_chat(user,span_alert("...What?"))
-		return TRUE
-	else
-		to_chat(user,span_userdanger("WHY AM I NOT COMING BACK? WHERE AM I? I NEED GOD'S HELP, PLEASE!"))
-		log_admin("Something broke and [user] got stuck after using unstable warp module.")
-	return FALSE
+// /obj/item/mod/module/unstable_warp/proc/returnal(mob/user,turf/tpto)
+// 	if(tpto)
+// 		user.forceMove(tpto)
+// 		to_chat(user,span_alert("...What?"))
+// 		return TRUE
+// 	else
+// 		to_chat(user,span_userdanger("WHY AM I NOT COMING BACK? WHERE AM I? I NEED GOD'S HELP, PLEASE!"))
+// 		log_admin("Something broke and [user] got stuck after using unstable warp module.")
+// 	return FALSE
 
-/obj/item/mod/module/unstable_warp/on_use()
-	if (!..())
-		return
-	var/list/rolls = list(rand(0,5),rand(0,5),rand(0,5))
-	if((rolls[1] == rolls[2]) && (rolls[1] == rolls[3]))
-		var/list/anomalies = list(locate(85,15,1),locate(32,136,1),locate(175,186,1),locate(170,175,1),locate(170,159,1),locate(9,7,1))
-		var/turf/T = pick(anomalies)
-		var/mob/living/user = mod.wearer
-		if(T && prob(90))
-			addtimer(CALLBACK(src,PROC_REF(returnal),user,get_turf(user)),10 SECONDS)
-			COOLDOWN_START(src,cooldown_timer,13 SECONDS)
-			user.forceMove(T)
-			to_chat(user, span_notice("I blink and find myself in... What is this place?"))
-			do_minotaur(user)
-			return
-		else
-			to_chat(user,span_danger("I feel incredibly good, I didn't warp this time."))
-			return
-	var/sum = rolls[1]+rolls[2]+rolls[3]
-	if(mod.wearer)
-		do_teleport(mod.wearer,get_ranged_target_turf(mod.wearer, mod.wearer.dir, sum))
-		drain_power(use_power_cost)
-		mod.wearer.adjustOrganLoss(ORGAN_SLOT_BRAIN, 1, 150)
-	return
+// /obj/item/mod/module/unstable_warp/on_use()
+// 	if (!..())
+// 		return
+// 	var/list/rolls = list(rand(0,5),rand(0,5),rand(0,5))
+// 	if((rolls[1] == rolls[2]) && (rolls[1] == rolls[3]))
+// 		var/list/anomalies = list(locate(85,15,1),locate(32,136,1),locate(175,186,1),locate(170,175,1),locate(170,159,1),locate(9,7,1))
+// 		var/turf/T = pick(anomalies)
+// 		var/mob/living/user = mod.wearer
+// 		if(T && prob(90))
+// 			addtimer(CALLBACK(src,PROC_REF(returnal),user,get_turf(user)),10 SECONDS)
+// 			COOLDOWN_START(src,cooldown_timer,13 SECONDS)
+// 			user.forceMove(T)
+// 			to_chat(user, span_notice("I blink and find myself in... What is this place?"))
+// 			do_minotaur(user)
+// 			return
+// 		else
+// 			to_chat(user,span_danger("I feel incredibly good, I didn't warp this time."))
+// 			return
+// 	var/sum = rolls[1]+rolls[2]+rolls[3]
+// 	if(mod.wearer)
+// 		do_teleport(mod.wearer,get_ranged_target_turf(mod.wearer, mod.wearer.dir, sum))
+// 		drain_power(use_power_cost)
+// 		mod.wearer.adjustOrganLoss(ORGAN_SLOT_BRAIN, 1, 150)
+// 	return
 
 /obj/item/flashlight/seclite/devil
 	name = "seclite"

@@ -66,7 +66,7 @@
 	contains = list(/obj/item/mod/module/dispenser/mirage)
 
 /datum/supply_pack/faction/inteq/modsuits/modules/mirage/moving
-	name = "MOD mirage grenade dispenser module"
+	name = "MOD moving mirage grenade dispenser module"
 	desc = "This module can create mirage grenades at the user's liking. These grenades create moving holographic copies of the user."
 	cost = 4000 // he-he
 	contains = list(/obj/item/mod/module/dispenser/mirage/moving)
@@ -152,7 +152,7 @@
 	contains = list(/obj/item/mod/module/dispenser/mirage)
 
 /datum/supply_pack/faction/nanotrasen/modsuits/modules/mirage/moving
-	name = "MOD mirage grenade dispenser module"
+	name = "MOD moving mirage grenade dispenser module"
 	desc = "This module can create mirage grenades at the user's liking. These grenades create moving holographic copies of the user."
 	cost = 4000 // he-he
 	contains = list(/obj/item/mod/module/dispenser/mirage/moving)
