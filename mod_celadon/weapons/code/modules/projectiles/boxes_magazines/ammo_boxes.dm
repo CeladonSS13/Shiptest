@@ -219,9 +219,6 @@ MARK: 5.56x45
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
 	icon_state = "a556_42box_big"
 
-/obj/item/storage/box/ammo/a556_box/a856
-	icon_state = "a556_45box_big-up"
-
 /obj/item/storage/box/ammo/a556_box/m903
 	icon_state = "a556_45box_big-ap"
 

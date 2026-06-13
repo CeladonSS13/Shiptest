@@ -1,5 +1,8 @@
 // MARK: Autolathe Designs
 
+// Для добавления новых датумов используйте другой файл: mod_celadon\balance\code\designs\autolathe_new_designs.dm
+// Коркод файл с design для автолата: code\modules\research\designs\autolathe_designs.dm
+
 /datum/design/bucket
 	materials = list(/datum/material/iron = 200)
 

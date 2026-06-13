@@ -205,12 +205,14 @@
 	armor = getArmor(arglist(armor)) // so it actually be real armor and not simple list
 	ranged = FALSE
 	rage_check = TRUE
+	balloon_alert_to_viewers("Ящик покрывается защитным слоем энергии и отражает любую атаку!")
 
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/reinforce_end()
 	armor = list("melee" = 20, "bullet" = 30, "laser" = 20, "energy" = 30, "bomb" = 50, "bio" = 40, "rad" = 20, "fire" = 20, "acid" = 20)
 	armor = getArmor(arglist(armor))
 	ranged = TRUE
 	rage_check = FALSE
+	balloon_alert_to_viewers("Энергия, окутывающая ящик рассеивается, и он снова открывается для атаки.")
 
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/pandoras_secrets()
 	if(isturf(startingloc))
