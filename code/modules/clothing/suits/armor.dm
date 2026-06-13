@@ -174,11 +174,6 @@
 	desc = "A sinister looking vest of advanced armor worn over a black and red fireproof jacket. The gold collar and shoulders denote that this belongs to a high ranking Syndicate officer."
 	icon_state = "carapace_syndie"
 
-/obj/item/clothing/suit/armor/vest/capcarapace/cybersun
-	name = "Cybersun captain's haori"
-	desc = "An extraordinarily fashionable haori, utilized by Cybersun captains. Weaved with armored fabric to protect the user from gunshots."
-	icon_state = "carapace_cybersun"
-
 /obj/item/clothing/suit/armor/vest/capcarapace/captunic
 	name = "captain's parade coat"
 	desc = "Worn by a captain to show their class."
