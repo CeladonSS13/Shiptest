@@ -443,14 +443,15 @@ GLOBAL_LIST_INIT(plastitanium_recipes, list ( \
 	material_type = /datum/material/snow
 
 GLOBAL_LIST_INIT(snow_recipes, list ( \
-	new/datum/stack_recipe("Snow wall", /turf/closed/wall/mineral/snow, 5, one_per_turf = 1, on_floor = 1), \
+	new/datum/stack_recipe("Snow wall", /turf/closed/wall/mineral/snow, time = 2 SECONDS, one_per_turf = 1, on_floor = 1), \
 	new/datum/stack_recipe("Snowman", /obj/structure/statue/snow/snowman, 5, one_per_turf = 1, on_floor = 1), \
 	new/datum/stack_recipe("Snowball", /obj/item/toy/snowball, 1), \
 	new/datum/stack_recipe("Snow tile", /obj/item/stack/tile/mineral/snow, 1, 4, 20), \
 	// [CELADON-ADD] - CELADON_STRUCTURES - Барикады
-	new/datum/stack_recipe("snow barricade", /obj/structure/deployable_barricade/snow, 3, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("snow barricade", /obj/structure/deployable_barricade/snow, time = 3 SECONDS, one_per_turf = TRUE, on_floor = TRUE), \
 	// [/CELADON-ADD]
 	))
+// [CELADON-EDIT] - NO-MOMENTAL-CRAFT
 
 /obj/item/stack/sheet/mineral/snow/get_main_recipes()
 	. = ..()

@@ -39,7 +39,7 @@
 /obj/item/clothing/head/helmet/syndie
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 
-/obj/item/clothing/head/helmet/medical
+/obj/item/clothing/head/helmet/m10/cybersun/trauma
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/helmet
 
 /obj/item/clothing/head/helmet/m10

@@ -784,6 +784,8 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 
 /mob/dead/observer/verb/toggle_chem_scan()
 	set name = "Toggle Chem Scan"
+	set desc = "Toggles whether you scan living beings for chemicals on click"
+	set category = "Ghost"
 
 	toggle_ghost_hud_flag(GHOST_CHEM)
 	to_chat(src, span_notice("Chem scan [(ghost_hud_flags & GHOST_CHEM) ? "enabled": "disabled" ]."))

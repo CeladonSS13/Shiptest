@@ -14,7 +14,7 @@
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
 	uniform = /obj/item/clothing/under/nanotrasen/security/director
 	suit = /obj/item/clothing/suit/armor/nanotrasen/sec_director
-	alt_suit = /obj/item/clothing/suit/toggle/armor/hos_formal
+	alt_suit = /obj/item/clothing/suit/toggle/armor/parade/red
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
 	shoes = /obj/item/clothing/shoes/combat
 	neck = /obj/item/clothing/neck/scarf/black

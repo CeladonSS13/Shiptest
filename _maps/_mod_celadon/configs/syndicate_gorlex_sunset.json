@@ -1,8 +1,8 @@
 {
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
-	"map_name": "Sunset-class Warship",
+	"map_name": "Sunset-class Cruiser",
 	"map_short_name": "Sunset",
-	"description": " «Sunset» — созданный корабль на основе уроков межкорпоративных войн для замены устаревших типов кораблей класса «Komodo». Он представляет собой новейший средний боевой корабль, сочетающий в себе компактность, надёжность и скорость, идеально подходящий для быстрых и маневренных операций в любой ситуации.  На борту носит группу из 5 элитных бойцов, каждый из которых является мастером в своём деле.",
+	"description": " «Sunset» - корабль созданный на основе уроков межкорпоративных битв для замены устаревших типов кораблей класса «Komodo». Он представляет собой новейший средний боевой корабль, сочетающий в себе компактность, надёжность и скорость, идеально подходящий для быстрых и маневренных операций в любой ситуации.",
 	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_gorlex_sunset.dmm",
 	"enabled" : true,
 	"limit": 1,
@@ -17,21 +17,22 @@
 		"NATURAL_AGGRESSIVE"
 	],
 	"job_slots": {
-		"Squad Leader": {
-			"outfit": "/datum/outfit/job/cel/syndicate/captain",
+		"Squad Commander": {
+			"outfit": "/datum/outfit/job/cel/syndicate/captain/gorlex",
 			"officer": true,
+			"slots": 1,
+			"name": "Gorlex Squad leader"
+		},
+		"Field Medic": {
+			"outfit": "/datum/outfit/job/cel/syndicate/doctor/gorlex",
 			"slots": 1
 		},
-		"Combat Medic": {
-			"outfit": "/datum/outfit/job/cel/syndicate/doctor",
-			"slots": 1
-		},
-		"Combat Engineer": {
-			"outfit": "/datum/outfit/job/cel/syndicate/engineer",
+		"Field Engineer": {
+			"outfit": "/datum/outfit/job/cel/syndicate/engineer/gorlex",
 			"slots": 1
 		},
 		"Commando": {
-			"outfit": "/datum/outfit/job/cel/syndicate/security",
+			"outfit": "/datum/outfit/job/cel/syndicate/security/gorlex",
 			"slots": 2
 		}
 	}

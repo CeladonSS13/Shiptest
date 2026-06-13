@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
 	"map_name": "Luxembourg-class Delivery Vessel",
 	"map_short_name": "Luxembourg",
-	"description": "Судно двойного назначения: доставка и продажа. Судно класса 'Luxembourg' составляет значительную часть флота Donk! Co. на границе, где вечно-оппортунистская корпорация начала заполнять пробелы, оставшиеся после краха логистической сети Nanotrasen. Менеджеры Donk! Co. обладают большой степенью автономии, и поэтому в любом конкретном корабле 'Luxembourg' часто приходится вносить существенные изменения в торговый зал и бортовое кафе, чтобы лучше привлекать новых клиентов в нестабильном, но прибыльном регионе пространства.",
+	"description": "Судно двойного назначения: доставка и продажа. Судно класса «Luxembourg»  является живым воплощением агрессивного маркетинга, который из-за всех сил стремится заполнить пробелы вечно-оппортунистской корпорации Nanotrasen. Несмотря на то, что члены экипажа хоть и носят форму Donk! Co, они не дадут вам ясного ответа о том являются ли они представителями этой компании, дабы не привлекать к себе лишнее внимание федеральных сил на просторах Фронтира.",
 	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_luxembourg.dmm",
 	"enabled": true,
 	"limit": 1,
@@ -18,11 +18,11 @@
 	],
 	"job_slots": {
 		"Manager": {
-			"outfit": "/datum/outfit/job/cel/syndicate/quartermaster/donk",
+			"outfit": "/datum/outfit/job/cel/syndicate/quartermaster",
 			"slots": 1
 		},
 		"Customer Service Representative": {
-			"outfit": "/datum/outfit/job/cel/syndicate/cargo_tech/donk",
+			"outfit": "/datum/outfit/job/cel/syndicate/cargo_tech",
 			"slots": 5
 		},
 		"Food and Beverage Specialist": {
