@@ -48,6 +48,24 @@
 	implants = list(/obj/item/implant/radio)
 	accessory = null
 
+/datum/outfit/job/cel/pirate/captain/stingray
+	name = "Pirate - Captain (Defector)"
+	job_icon = "piratecaptain"
+
+	uniform = /obj/item/clothing/under/nanotrasen/officer
+	gloves = /obj/item/clothing/gloves/color/black
+	suit = null
+	head = /obj/item/clothing/head/beret/black
+	shoes = /obj/item/clothing/shoes/jackboots
+	mask = /obj/item/clothing/mask/gas/sechailer/sec
+	ears = /obj/item/radio/headset/pirate/alt/captain
+	accessory = null
+
+	backpack = /obj/item/storage/backpack/security
+	satchel = /obj/item/storage/backpack/satchel/sec
+	duffelbag = /obj/item/storage/backpack/duffelbag/sec
+	courierbag = /obj/item/storage/backpack/messenger/sec
+
 // MARK: Head of Personal
 /datum/outfit/job/cel/pirate/hop
 	name = "Pirate - Bridge Officer"
@@ -62,6 +80,26 @@
 	head = /obj/item/clothing/head/pirate
 	gloves = /obj/item/clothing/gloves/combat
 	r_pocket = /obj/item/melee/knife/survival
+
+/datum/outfit/job/cel/pirate/hop/stingray
+	name = "Pirate - Bridge Officer (Defector)"
+	id_assignment = null
+	jobtype = /datum/job/head_of_personnel
+
+	id = /obj/item/card/id/cel/pirate/headofpersonnel
+	ears = /obj/item/radio/headset/pirate/alt
+	uniform = /obj/item/clothing/under/nanotrasen/affairs
+	shoes = /obj/item/clothing/shoes/jackboots
+	glasses = /obj/item/clothing/glasses/sunglasses
+	gloves = /obj/item/clothing/gloves/color/black
+	mask = /obj/item/clothing/mask/gas/sechailer/sec
+	head = null
+	r_pocket = null
+
+	backpack = /obj/item/storage/backpack/security
+	satchel = /obj/item/storage/backpack/satchel/sec
+	duffelbag = /obj/item/storage/backpack/duffelbag/sec
+	courierbag = /obj/item/storage/backpack/messenger/sec
 
 // MARK: Head of Security
 /datum/outfit/job/cel/pirate/hos
@@ -146,6 +184,21 @@
 	backpack_contents = list(/obj/item/melee/baton/loaded=1)
 
 	implants = list(/obj/item/implant/radio)
+
+/datum/outfit/job/cel/pirate/security/stingray
+	name = "Pirate - Security Officer (Defector)"
+
+	uniform = /obj/item/clothing/under/nanotrasen/security
+	head = /obj/item/clothing/head/beret
+	shoes = /obj/item/clothing/shoes/jackboots
+	l_pocket = /obj/item/flashlight/seclite
+	mask = /obj/item/clothing/mask/gas/sechailer/sec
+	suit = null
+
+	backpack = /obj/item/storage/backpack/security
+	satchel = /obj/item/storage/backpack/satchel/sec
+	duffelbag = /obj/item/storage/backpack/duffelbag/sec
+	courierbag = /obj/item/storage/backpack/messenger/sec
 
 // MARK: Medic
 /datum/outfit/job/cel/pirate/medic

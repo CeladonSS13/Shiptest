@@ -27,9 +27,11 @@
 	name = "Haymaker-class Command Post"
 	description = "Frontiersmen"
 
-/datum/map_template/shuttle/subshuttles/bambulance
+/datum/map_template/shuttle/subshuttles/ambulance
+	file_name = "syndicate_ambulance"
 	name = "Gauze-class Ambulance Pod"
 	description = "Syndicate - Cybersun"
+	prefix = "sMSSV"
 
 //your subshuttle here //why is my subshuttle here
 /datum/map_template/shuttle/subshuttles/falcon

@@ -45,7 +45,7 @@
 	all_items_free = TRUE
 	products = list(
 		/obj/item/clothing/suit/space/officer/admin = 10,
-		/obj/item/clothing/suit/toggle/armor/centcom_formal/admin = 10,
+		/obj/item/clothing/suit/toggle/armor/parade/centcom_formal/admin = 10,
 		/obj/item/clothing/suit/toggle/armor/vest/centcom_formal/admin = 10,
 		/obj/item/clothing/suit/hooded/wintercoat/centcom/admin = 10,
 		/obj/item/clothing/under/misc/adminsuit = 10,

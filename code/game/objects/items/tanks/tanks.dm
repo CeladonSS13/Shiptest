@@ -70,7 +70,9 @@
 	air_contents.set_temperature(T20C)
 
 	populate_gas()
-
+	// [CELADON-ADD] - ADD: Ovelays Oxygen tank, and pressure alert system - mod_celadon\items\code\tank.dm
+	update_appearance(UPDATE_OVERLAYS)
+	// [/CELADON-ADD]
 	START_PROCESSING(SSobj, src)
 
 /obj/item/tank/proc/populate_gas()
@@ -221,6 +223,9 @@
 	//Allow for reactions
 	air_contents.react()
 	check_status()
+	// [CELADON-ADD] - ADD: Ovelays Oxygen tank, and pressure alert system - mod_celadon\items\code\tank.dm
+	pressure_alerts()
+	// [/CELADON-ADD]
 
 /obj/item/tank/proc/check_status()
 	//Handle exploding, leaking, and rupturing of the tank

@@ -2,7 +2,6 @@
 	name = "Bad Back"
 	desc = "Thanks to your poor posture, backpacks and other bags never sit right on your back. More evently weighted objects are fine, though."
 	value = -2
-	mood_quirk = TRUE
 	gain_text = "<span class='danger'>Your back REALLY hurts!</span>"
 	lose_text = "<span class='notice'>Your back feels better.</span>"
 	medical_record_text = "Patient scans indicate severe and chronic back pain."
@@ -49,7 +48,6 @@
 	gain_text = "<span class='danger'>You start feeling depressed.</span>"
 	lose_text = "<span class='notice'>You no longer feel depressed.</span>" //if only it were that easy!
 	medical_record_text = "Patient has a mild mood disorder causing them to experience acute episodes of depression."
-	mood_quirk = TRUE
 
 /datum/quirk/depression/on_process(seconds_per_tick)
 	if(SPT_PROB(0.05, seconds_per_tick))
@@ -59,7 +57,6 @@
 	name = "Family Heirloom"
 	desc = "You are the current owner of an heirloom, passed down for generations. You have to keep it safe!"
 	value = -1
-	mood_quirk = TRUE
 	var/obj/item/heirloom
 	var/where
 	medical_record_text = "Patient demonstrates an unnatural attachment to a family heirloom."
@@ -185,7 +182,6 @@
 	name = "Hypersensitive"
 	desc = "For better or worse, everything seems to affect your mood more than it should."
 	value = -1
-	mood_quirk = TRUE
 	gain_text = "<span class='danger'>You seem to make a big deal out of everything.</span>"
 	lose_text = "<span class='notice'>You don't seem to make a big deal out of everything anymore.</span>"
 	medical_record_text = "Patient demonstrates a high level of emotional volatility."
@@ -340,7 +336,6 @@
 	name = "Unstable"
 	desc = "Due to past troubles, you are unable to recover your sanity if you lose it. Be very careful managing your mood!"
 	value = -2
-	mood_quirk = TRUE
 	mob_traits = list(TRAIT_UNSTABLE)
 	gain_text = "<span class='danger'>There's a lot on your mind right now.</span>"
 	lose_text = "<span class='notice'>Your mind finally feels calm.</span>"

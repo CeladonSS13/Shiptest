@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
-	"map_name": "Beetle-class Battle Schnau",
+	"map_name": "Beetle-class Destroyer",
 	"map_short_name": "Beetle",
 	"description": "Боевое судно класса Beetle- Небольшое судно используемое Горлексом для поддержки в бою или мелких рейдах. Было разработано при поддержке киберсан для создания манёвренного судна для быстрых операций, в качестве эксперимента экипаж был оснащён лазерным вооружением.",
 	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_gorlex_beetle.dmm",
@@ -18,23 +18,22 @@
 		"ACLF"
 	],
 	"job_slots": {
-		"Squad leader": {
+		"Squad Commander": {
 			"outfit": "/datum/outfit/job/cel/syndicate/captain/gorlex",
 			"officer": true,
 			"slots": 1,
 			"name": "Gorlex Squad leader"
 		},
-		"Paramedic": {
+		"Field Medic": {
 			"outfit": "/datum/outfit/job/cel/syndicate/doctor/gorlex",
 			"slots": 1,
 			"name": "Paramedic"
 		},
-		"Mechanic": {
+		"Field Engineer": {
 			"outfit": "/datum/outfit/job/cel/syndicate/engineer/gorlex",
 			"slots": 1
-
 		},
-		"Operative": {
+		"Commando": {
 			"outfit": "/datum/outfit/job/cel/syndicate/security/gorlex",
 			"slots": 3
 		}
