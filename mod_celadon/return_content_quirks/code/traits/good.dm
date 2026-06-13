@@ -27,7 +27,6 @@
 	desc = "You sometimes just feel happy, for no reason at all."
 	value = 1
 	mob_traits = list(TRAIT_JOLLY)
-	mood_quirk = TRUE
 	medical_record_text = "Patient demonstrates constant euthymia irregular for environment. It's a bit much, to be honest."
 
 /datum/quirk/jolly/on_process(seconds_per_tick)

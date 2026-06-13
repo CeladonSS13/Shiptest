@@ -239,7 +239,7 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 		if(isobserver(mob) && isobserver(C.mob) && !C.holder?.fakekey)
 			// Show us the player's mob name in the list in front of their displayed key
 			// Add the player's displayed key to the list
-			players["[C.mob]([displayed_key])"] = displayed_key
+			players["[displayed_key]"] = displayed_key // [CELADON-EDIT] - Убираем возможность смотреть кто на каком персонаже играет. ORIGINAL: players["[C.mob]([displayed_key])"] = displayed_key
 
 		// Add the player's displayed key to the list if we or the player aren't a ghost or they're using a fakekey
 		else
