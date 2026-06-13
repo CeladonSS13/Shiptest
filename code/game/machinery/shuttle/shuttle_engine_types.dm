@@ -121,7 +121,7 @@
 	// fuel_use = 80
 	// thrust = 15 // CELADON-EDIT - ORIGINAL
 	fuel_use = 80
-	thrust = 5
+	thrust = 8
 	// [/CELADON-EDIT] - кто вообще видел эти движки в игре ???
 	//All fuel code already handled
 
