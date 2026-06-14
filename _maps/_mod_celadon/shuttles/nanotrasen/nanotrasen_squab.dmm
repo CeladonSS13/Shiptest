@@ -443,14 +443,14 @@
 	pixel_x = 1;
 	pixel_y = -32
 	},
-/obj/machinery/camera{
-	dir = 10;
-	pixel_x = 12;
-	pixel_y = 0
-	},
 /obj/structure/extinguisher_cabinet/directional/south{
 	pixel_x = -10;
 	pixel_y = -28
+	},
+/obj/machinery/camera/autoname{
+	dir = 10;
+	pixel_x = 12;
+	pixel_y = 0
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/cargo)
@@ -1018,8 +1018,8 @@
 	pixel_x = -4;
 	pixel_y = -1
 	},
-/obj/machinery/camera{
-	dir = 10
+/obj/machinery/camera/autoname{
+	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/science/robotics)
@@ -1287,11 +1287,11 @@
 /area/ship/security)
 "jC" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera,
 /obj/effect/turf_decal/siding/thinplating/dark/corner{
 	dir = 4
 	},
 /obj/structure/sign/number/random,
+/obj/machinery/camera/autoname,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "jR" = (
@@ -1336,6 +1336,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/closet/crate/freezer/blood,
+/obj/machinery/iv_drip,
 /obj/effect/mapping_helpers/crate_shelve,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo/port)
@@ -1489,7 +1490,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	layer = 2.041
 	},
-/obj/machinery/camera{
+/obj/machinery/camera/autoname{
 	dir = 10;
 	pixel_x = -10;
 	pixel_y = 0
@@ -1995,7 +1996,7 @@
 /obj/effect/turf_decal/trimline/transparent/white/filled/warning{
 	dir = 4
 	},
-/obj/machinery/camera{
+/obj/machinery/camera/autoname{
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/techmaint,
@@ -2939,7 +2940,7 @@
 	dir = 1
 	},
 /obj/machinery/newscaster/directional/north,
-/obj/machinery/camera{
+/obj/machinery/camera/autoname{
 	pixel_x = 10;
 	pixel_y = 0
 	},
@@ -3906,7 +3907,7 @@
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 5
 	},
-/obj/machinery/camera{
+/obj/machinery/camera/autoname{
 	dir = 4;
 	pixel_x = 0;
 	pixel_y = -12
@@ -4045,11 +4046,11 @@
 	},
 /obj/structure/chair/plastic,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/camera{
-	dir = 8
-	},
 /obj/effect/turf_decal/siding/white{
 	dir = 1
+	},
+/obj/machinery/camera/autoname{
+	dir = 8
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering)
@@ -4235,7 +4236,7 @@
 /obj/effect/turf_decal/borderfloor{
 	dir = 8
 	},
-/obj/machinery/camera{
+/obj/machinery/camera/autoname{
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/techmaint,
@@ -4433,7 +4434,7 @@
 	dir = 1
 	},
 /obj/machinery/firealarm/directional/south,
-/obj/machinery/camera{
+/obj/machinery/camera/autoname{
 	dir = 10;
 	pixel_x = -10;
 	pixel_y = 0
@@ -4826,7 +4827,6 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
-/obj/machinery/camera,
 /obj/item/modular_computer/tablet/preset/advanced{
 	icon_state = "tablet-brown"
 	},
@@ -4850,6 +4850,7 @@
 	pixel_x = 0;
 	pixel_y = 1
 	},
+/obj/machinery/camera/autoname,
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/cargo/port)
 "QU" = (
@@ -5024,7 +5025,7 @@
 	pixel_x = 9;
 	pixel_y = 6
 	},
-/obj/machinery/camera{
+/obj/machinery/camera/autoname{
 	dir = 10
 	},
 /turf/open/floor/wood/yew,
@@ -5199,7 +5200,7 @@
 	pixel_y = -4
 	},
 /obj/machinery/light/directional/east,
-/obj/machinery/camera,
+/obj/machinery/camera/autoname,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo/office)
 "SA" = (
@@ -5225,7 +5226,7 @@
 	icon_state = "2-8"
 	},
 /obj/machinery/airalarm/directional/north,
-/obj/machinery/camera{
+/obj/machinery/camera/autoname{
 	dir = 8
 	},
 /turf/open/floor/plasteel/white,
