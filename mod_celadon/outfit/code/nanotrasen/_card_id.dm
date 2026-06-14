@@ -31,7 +31,7 @@
 
 // MARK: DeForest
 /obj/item/card/id/cel/nanotrasen/deforest_cmo/captain
-	desc = "A DeForest Medical ID with no proper access to speak of. This one indicates a DeForest Captain."
+	desc = "A DeForest Medical ID with no proper access to speak of. This one indicates a Captain."
 	icon_state = "iddf_chiefmedicalofficer"
 	assignment = "Captain"
 
