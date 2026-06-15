@@ -2,6 +2,7 @@
 	name = "Drunken Resilience"
 	desc = "Nothing like a good drink to make you feel on top of the world. Whenever you're drunk, you slowly recover from injuries."
 	value = 2
+	quirk_flags = QUIRK_HUMAN_ONLY | QUIRK_PROCESSES
 	mob_traits = list(TRAIT_DRUNK_HEALING)
 	gain_text = "<span class='notice'>You feel like a drink would do you good.</span>"
 	lose_text = "<span class='danger'>You no longer feel like drinking would ease your pain.</span>"
@@ -26,6 +27,7 @@
 	name = "Jolly"
 	desc = "You sometimes just feel happy, for no reason at all."
 	value = 1
+	quirk_flags = QUIRK_HUMAN_ONLY | QUIRK_PROCESSES
 	mob_traits = list(TRAIT_JOLLY)
 	medical_record_text = "Patient demonstrates constant euthymia irregular for environment. It's a bit much, to be honest."
 
