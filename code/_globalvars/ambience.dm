@@ -79,12 +79,10 @@ GLOBAL_LIST_INIT(medical_ambience,list('sound/ambience/ambinice.ogg'))
 
 
 GLOBAL_LIST_INIT(space_ambience,list(
-	'sound/ambience/space/ambispace.ogg',
-	'sound/ambience/space/ambispace2.ogg',
-	'sound/ambience/space/ambispace3.ogg',
-	'sound/ambience/space/ambispace4.ogg',
-	'sound/ambience/space/ambispace5.ogg',
-	'sound/ambience/space/ambispace6.ogg',
+	'sound/ambience/ambiatmos.ogg',
+	'sound/ambience/ambispace.ogg',
+	'sound/ambience/ambispace2.ogg',
+	'sound/ambience/title2.ogg',
 ))
 
 GLOBAL_LIST_INIT(maint_ambience,list(
