@@ -86,6 +86,19 @@
 	allowed_species = list(/datum/species/vox)
 	bodytype = BODYTYPE_VOX
 
+/datum/sprite_accessory/body/prosthetic/elzuouse
+	name = "Prosthetic Ethereal"
+	// don't replace the stomach so they don't waste away and die
+	replacement_organs = list(
+		ORGAN_SLOT_HEART = /obj/item/organ/heart/cybernetic,
+		ORGAN_SLOT_LUNGS = /obj/item/organ/lungs/cybernetic,
+		ORGAN_SLOT_EYES = /obj/item/organ/eyes/robotic,
+		ORGAN_SLOT_EARS = /obj/item/organ/ears/cybernetic,
+		ORGAN_SLOT_TONGUE = /obj/item/organ/tongue/robot,
+		ORGAN_SLOT_LIVER = /obj/item/organ/liver/cybernetic,
+	)
+
+
 // [CELADON-ADD] - Prosthetic for Celadon species
 /datum/sprite_accessory/body/prosthetic/tajara
 	name = "Prosthetic Tajara"
@@ -126,5 +139,4 @@
 	)
 	allowed_species = list(/datum/species/lanius)
 	bodytype = BODYTYPE_LANIUS
-
-// [CELADON-ADD]
+// [/CELADON-ADD]
