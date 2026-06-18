@@ -69,6 +69,18 @@
 	new /obj/item/storage/box/ammo/a12g_blank(B)
 	return B
 
+// [CELADON-ADD]
+/datum/blackmarket_item/weapon/spikeshield
+	name = "Heavy Ballistic Shield"
+	desc = "Be the ancient warrior you always wanted to be. Block bullets and impale your enemies."
+	item = /obj/item/shield/heavy
+
+	cost_min = 2000
+	cost_max = 2500
+	stock_max = 2
+	availability_prob = 50
+// [/CELADON-ADD]
+
 /datum/blackmarket_item/weapon/powerfist
 	name = "Powerfist"
 	desc = "Lookin' to give a fisting someone'll remember? This electrically assisted powerfist'll slam 'em in the face hard enough they won't ever forget. Unless they black out an' forget it."

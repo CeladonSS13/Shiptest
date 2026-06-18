@@ -10,6 +10,22 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
+// [CELADON-ADD]
+/datum/crafting_recipe/strobeshield
+	name = "Strobe Shield"
+	result = /obj/item/shield/riot/flash
+	reqs = list(/obj/item/stack/cable_coil = 1,
+				/obj/item/assembly/flash/handheld = 1,
+				/obj/item/shield/riot = 1)
+	time = 40
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+
+/datum/crafting_recipe/strobeshield/New()
+	..()
+	blacklist |= subtypesof(/obj/item/shield/riot/)
+// [CELADON-ADD]
+
 /datum/crafting_recipe/molotov
 	name = "Molotov"
 	result = /obj/item/reagent_containers/food/drinks/molotov
@@ -276,14 +292,16 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
+// [CELADON-ADD]
 /datum/crafting_recipe/goliathshield
 	name = "Goliath shield"
-	result = /obj/item/shield/riot/goliath
+	result = /obj/item/shield/goliath
 	time = 60
 	reqs = list(/obj/item/stack/sheet/bone = 4,
 				/obj/item/stack/sheet/animalhide/goliath_hide = 3)
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
+// [/CELADON-ADD]
 
 /datum/crafting_recipe/watcherbola
 	name = "Watcher Bola"
