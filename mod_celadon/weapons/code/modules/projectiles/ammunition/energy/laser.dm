@@ -28,12 +28,12 @@
 //Ammo casings
 
 /obj/item/ammo_casing/energy/disabler/smg
-	projectile_type = /obj/projectile/beam/disabler/nanotrasen/weak/smg
+	projectile_type = /obj/projectile/beam/disabler/nanotrasen/weak
 	e_cost = 300
 
 // Тепер етар использует данный снаряд
 /obj/item/ammo_casing/energy/laser/smg
-	projectile_type = /obj/projectile/beam/laser/nanotrasen/weak/smg
+	projectile_type = /obj/projectile/beam/laser/nanotrasen/weak
 	e_cost = 396 //cheaper to fire but worse projectiles as stated above
 
 /obj/item/ammo_casing/energy/laser/sharplite/smg
@@ -53,6 +53,11 @@
 	select_name  = "disable"
 	e_cost = 500
 	delay = 0.3 SECONDS
+
+/obj/item/ammo_casing/energy/electrode/nanotrasen
+	projectile_type = /obj/projectile/energy/electrode/nanotrasen
+	select_name = "stun"
+	e_cost = 5000
 
 /obj/item/ammo_casing/energy/disabler/assault/nanotrasen
 	projectile_type = /obj/projectile/beam/disabler/nanotrasen/assault
