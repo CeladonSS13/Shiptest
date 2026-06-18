@@ -16,7 +16,10 @@
 		/obj/item/clothing/neck/cloak/nanotrasen/cape/captain = 2,
 		/obj/item/clothing/head/nanotrasen/surgical/blue = 2,
 		/obj/item/clothing/head/caphat/nt = 2,
-		/obj/item/clothing/head/hopcap/nt = 2)
+		/obj/item/clothing/head/hopcap/nt = 2,
+		/obj/item/clothing/head/nanotrasen/beret/security/command = 2,
+		/obj/item/clothing/suit/armor/nanotrasen/sec_director = 2,
+		)
 	premium = list(
 		/obj/item/clothing/under/rank/security/warden/nt/skirt = 2,
 		/obj/item/clothing/under/rank/command/nt = 2,
@@ -30,7 +33,8 @@
 		/obj/item/clothing/head/beret/dominia/medical = 2,
 		/obj/item/clothing/head/beret/dominia/priest = 2,
 		/obj/item/clothing/head/beret/dominia/priest/red = 2,
-		/obj/item/clothing/head/nanotrasen/officer/fedora = 2)
+		/obj/item/clothing/head/nanotrasen/officer/fedora = 2,
+		)
 	refill_canister = /obj/item/vending_refill/clothing
 	light_mask = "wardrobe-light-mask"
 	light_color = LIGHT_COLOR_LIGHT_CYAN
