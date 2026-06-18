@@ -46,7 +46,7 @@
 
 /obj/item/gun/energy/e_gun/e_old/mini
 	name = "SL X-26 Miniature Energy Pistol"
-	desc = "A lightweight civilian marketed Sharplite pistol, popular among Vigilitas security personnel as a reliable dual-mode sidearm. Built-in flashlight included."
+	desc = "A lightweight, civilian marketed Sharplite pistol, popular among Vigilitas security personnel as a reliable dual-mode sidearm. Built-in flashlight included."
 	icon_state = "mini"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen/mini, /obj/item/ammo_casing/energy/disabler/nanotrasen/mini)
 	w_class = WEIGHT_CLASS_SMALL
