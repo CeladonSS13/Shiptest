@@ -397,6 +397,7 @@
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/shields.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/shields_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/shields_righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/shields_back.dmi'
 	icon_state = "teleriot0"
 	custom_materials = list(/datum/material/iron = 3600, /datum/material/glass = 3600, /datum/material/silver = 270, /datum/material/titanium = 180)
 	slot_flags = null
