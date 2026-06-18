@@ -206,6 +206,14 @@
 			to_chat(user, span_warning("[src] cannot be repaired!"))
 
 // [CELADON-ADD] - BALLISTIC_SHIELD - Extended Edition
+/obj/item/shield/riot/spike
+	name = "spike shield"
+	desc = "A ballistic shield adept at blocking blunt objects and bullets, adorned with a vicious spike. Use 10 plasteel to repair"
+	icon_state = "spike"
+	force = 24
+	attack_verb = list("stabbed", "gashed")
+	hitsound = 'sound/weapons/bladeslice.ogg'
+// [/CELADON-ADD]
 
 // [CELADON-EDIT] - BALLISTIC_SHIELD - Extended Edition
 /obj/item/shield/riot/roman
