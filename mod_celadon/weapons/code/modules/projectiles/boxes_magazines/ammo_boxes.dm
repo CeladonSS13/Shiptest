@@ -106,6 +106,23 @@ MARK: 5.56x45
 
 
 //
+// MARK: Two-bore
+//
+/obj/item/ammo_box/magazine/ammo_stack/prefilled/shotgun/twobore
+	ammo_type = /obj/item/ammo_casing/shotgun/twobore
+	max_ammo = 4
+
+/obj/item/storage/box/ammo/twobore
+	name = "box of two-bore shells"
+	desc = "A box of a incredibly massive shotgun buckshot shells, incredibly devastating at close range."
+	icon_state = "12gbox-buckshot"
+
+/obj/item/storage/box/ammo/twobore/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/ammo_box/magazine/ammo_stack/prefilled/shotgun/twobore = 4)
+	generate_items_inside(items_inside,src)
+
+//
 // MARK: 410x76
 //
 
