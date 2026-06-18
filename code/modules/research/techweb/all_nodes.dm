@@ -1135,7 +1135,10 @@
 	id = "basic_shuttle"
 	display_name = "Basic Shuttle Research"
 	description = "Research the technology required to create and use basic shuttles."
-	prereq_ids = list("bluespace_travel", "adv_engi")
+	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем РнД ещё раз
+	// prereq_ids = list("bluespace_travel", "adv_engi")
+	prereq_ids = list("bluespace_basic","regulated_bluespace", "engineering")
+	// [/CELADON-EDIT]
 	design_ids = list("engine_plasma", "engine_fire", "engine_ion", "engine_heater", "engine_fire_heater", "engine_smes", "shuttle_helm", "rapid_shuttle_designator")
 	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем РнД
 	// research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000) // CELADON-EDIT - ORIGINAL
@@ -1148,15 +1151,10 @@
 	id = "exp_shuttle"
 	display_name = "Experimental Shuttle Research"
 	description = "A bunch of engines and related shuttle parts that are likely not really that useful, but could be in strange situations."
-	// [CELADON-EDIT] - CELADON_BALANCE - Трогаем РнД
-	// prereq_ids = list("basic_shuttle") // CELADON-EDIT - ORIGINAL
-	prereq_ids = list("t3_ion")
+	prereq_ids = list("basic_shuttle")
 	design_ids = list("engine_expulsion")
-	// research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000) // CELADON-EDIT - ORIGINAL
-	// export_price = 2500 // CELADON-EDIT - ORIGINAL
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7500)
-	export_price = 7500
-	// [/CELADON-EDIT]
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
+	export_price = 2500
 
 ////////////////////// IPC Parts ///////////////////////
 /datum/techweb_node/ipc_organs

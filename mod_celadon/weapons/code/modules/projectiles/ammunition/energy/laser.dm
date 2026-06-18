@@ -87,9 +87,9 @@
 	delay = 0.15 SECONDS
 	e_cost = 714
 
-/obj/item/ammo_casing/energy/laser/accelerator
+/obj/item/ammo_casing/energy/laser/accelerator/nanotrasen
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/sniper
-	select_name = "accelerator"
+	select_name = "kill"
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
 	delay = 1 SECONDS
 	e_cost = 5000
