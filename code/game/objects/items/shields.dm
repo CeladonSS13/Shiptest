@@ -476,9 +476,9 @@
 
 	max_integrity = 600
 	block_chance = 60
-	recoil_bonus = -2
-	spread_bonus = -2
-	slowdown = 1.5
+	recoil_bonus = -4
+	spread_bonus = 8
+	slowdown = 1
 
 	armor = list("melee" = 70, "bullet" = 70, "laser" = 70, "energy" = 0, "bomb" = 50, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 80)
 	var/wielded = FALSE
@@ -495,7 +495,7 @@
 
 /// triggered on wield of two handed item
 /obj/item/shield/heavy/proc/on_wield(obj/item/source, mob/user)
-	slowdown = 3
+	slowdown = 2
 	wielded = TRUE
 	INVOKE_ASYNC(src, PROC_REF(do_wield), user)
 
