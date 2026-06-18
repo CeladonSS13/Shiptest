@@ -6,7 +6,7 @@
 
 /mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper/smg
 	desc = "A member of Vigilitas Interstellar. Eyes track motion as they saunter confidently, energy SMG at alert."
-	projectiletype = /obj/projectile/beam/laser/nanotrasen/weak/smg
+	projectiletype = /obj/projectile/beam/laser/nanotrasen/weak
 	r_hand = /obj/item/gun/energy/e_gun/e_old/smg
 
 /mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper/shotgun
