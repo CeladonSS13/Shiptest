@@ -23,6 +23,7 @@
 > 5.56x42 (Hydra)
 > [-] 5.56x45 (G36)
 > 7.62
+> .299
 > .45-70
 > .300
 > .308
@@ -705,6 +706,17 @@ MARK: .22lr
 	desc = "Contains one 60-round 7.62x40mm Hollow Point box for the SKM rifles."
 	contains = list(/obj/item/storage/box/ammo/a762_40/hp)
 	cost = 500
+
+/*
+	MARK: .299
+*/
+
+/datum/supply_pack/faction/independent/ammo/c299
+	name = ".299 Eoehoma Caseless Ammo Box"
+	desc = "Contains one 60-round box of .299 Caseless ammo from the defunct Eoehoma. Used for the E-40 Hybrid Rifle."
+	contains = list(/obj/item/storage/box/ammo/c299)
+	cost = 220 //5.4 ammo efficiency at 20 damage
+
 
 /*
 	MARK: .45-70
