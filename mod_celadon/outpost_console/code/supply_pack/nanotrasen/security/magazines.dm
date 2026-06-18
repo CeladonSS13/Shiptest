@@ -97,6 +97,13 @@
 	cost = 500
 */
 
+/datum/supply_pack/faction/nanotrasen/magazine/nt_guncell_mini
+	name = "P-cell Sharplite Mini Power Cell"
+	desc = "Contains a proprietary weapon cell, compatible with the Ohm self-defence pistol."
+	contains = list(/obj/item/stock_parts/cell/gun/sharplite/mini)
+	cost = 300
+	stable_price = TRUE
+
 /datum/supply_pack/faction/nanotrasen/magazine/nt_guncell
 	name = "P-Cell - Sharplite Weapon Cell"
 	desc = "Contains a proprietary weapon cell, compatible with most Sharplite energy weapons."
