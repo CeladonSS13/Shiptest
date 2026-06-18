@@ -95,7 +95,7 @@ hp
 /datum/supply_pack/faction/solfed/gun/ballistic/cm5
 	name = "SMG - CM-5 (9x18mm)"
 	desc = "Contains a CM-5 automatic SMG, produced proudly within Lanchester City. Confederated Minutemen issue only."
-	cost = 3500
+	cost = 2700
 	contains = list(/obj/item/storage/guncase/cm5)
 	crate_name = "SMG crate"
 /* MARK: 9x18mm
