@@ -52,7 +52,7 @@ MARK: E-Guns - NT-SL
 	name = "E-Shotgun - NT-SL 'E-SG 500 Second Edition'"
 	desc = "Contains an energy-based shotgun equipped with dual kill/disable modes, ideal for short range. The on-board computer is notoriously unreliable. For NT employee use only."
 	cost = 3000
-	contains = list(/obj/item/gun/energy/e_gun/e_old/iot)
+	contains = list(/obj/item/storage/guncase/iot)
 	crate_name = "shotgun crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/heavylaser
@@ -125,7 +125,7 @@ hp
 
 /datum/supply_pack/faction/nanotrasen/gun/vi/champion
 	name = "Machinepistol - PHB Champion (9x18mm)"
-	desc = "Contains a compact 9x18mm burst fire machine pistol produced by Nanotrasen advantage. For NT employee use only."
+	desc = "Contains a compact 9x18mm burst fire machine pistol by Nanotrasen along with Vigilitas Interstellar. For NT employee use only."
 	cost = 1500
 	contains = list(/obj/item/storage/guncase/saber) // LMAO
 	crate_name = "Machinepistol crate"
@@ -142,7 +142,7 @@ hp
 	armour_penetration = -30
 */
 /datum/supply_pack/faction/nanotrasen/gun/vi/Negotiator
-	name = "Shotgun - AST12 Negotiator (12g)"
+	name = "Shotgun - VI AST12 Negotiator (12g)"
 	desc = "Contains an advanced shotgun with five round dual magazine tubes. For NT employee use only."
 	cost = 3350 // Бульдог 4к
 	contains = list(/obj/item/storage/guncase/cycler)

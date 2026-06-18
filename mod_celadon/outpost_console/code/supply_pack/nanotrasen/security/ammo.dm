@@ -6,6 +6,7 @@
 [-] - отключены.
 
 > 9x18mm
+> 12g
 > 4.63x30mm
 > ferro pellets
 
@@ -35,6 +36,42 @@ MARK: 9x18mm
 	desc = "9x18mm Rubber ammo box for guns like the commander or the saber SMG. Contains 50 shells"
 	contains = list(/obj/item/storage/box/ammo/c9mm_rubber)
 	cost = 250
+
+
+/*
+	MARK: 12 Gauge
+*/
+
+/datum/supply_pack/faction/nanotrasen/ammo/buckshot
+	name = "12g Buckshot"
+	desc = "Contains a box of 32 12 gauge buckshot shells for use in lethal persuasion."
+	cost = 500
+	contains = list(/obj/item/storage/box/ammo/a12g_buckshot)
+
+/datum/supply_pack/faction/nanotrasen/ammo/slugs
+	name = "12g Shotgun Slug"
+	desc = "Contains a box of 32 12 gauge slug shells for use in lethal persuasion."
+	cost = 200
+	contains = list(/obj/item/storage/box/ammo/a12g_slug)
+
+/datum/supply_pack/faction/nanotrasen/ammo/blank_shells
+	name = "12g Blank Shell"
+	desc = "Contains a box of 12 gauge blank shells."
+	cost = 200
+	contains = list(/obj/item/storage/box/ammo/a12g_blank)
+
+/datum/supply_pack/faction/nanotrasen/ammo/rubbershot
+	name = "12g Rubbershot"
+	desc = "Contains a box of 32 12 gauge rubbershot shells. Perfect for crowd control and training."
+	cost = 500
+	contains = list(/obj/item/storage/box/ammo/a12g_rubbershot)
+
+/datum/supply_pack/faction/nanotrasen/ammo/techshells
+	name = "12g Unloaded Shotgun Technological Shells"
+	desc = "Contains a box of 7 versatile tech shells, capable of producing a variety of deadly effects for any situation. Some assembly required."
+	cost = 200
+	contains =
+	 list(/obj/item/storage/box/techshot)
 
 /*
 	MARK: 4.63x30mm
