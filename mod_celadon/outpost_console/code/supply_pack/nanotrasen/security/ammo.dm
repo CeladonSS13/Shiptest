@@ -70,8 +70,7 @@ MARK: 9x18mm
 	name = "12g Unloaded Shotgun Technological Shells"
 	desc = "Contains a box of 7 versatile tech shells, capable of producing a variety of deadly effects for any situation. Some assembly required."
 	cost = 200
-	contains =
-	 list(/obj/item/storage/box/techshot)
+	contains = list(/obj/item/storage/box/techshot)
 
 /*
 	MARK: 4.63x30mm
