@@ -49,7 +49,7 @@
 
 /atom/movable/screen/ghost/hudbox/pai // [CELADON-EDIT] - UPDATE GHOST HUDS - OLD CODE: /atom/movable/screen/ghost/pai
 	name = "pAI Candidate"
-	hud_icon_state = "pai"
+	hud_icon_state = "pai" // [CELADON-EDIT] - UPDATE GHOST HUDS - OLD CODE: icon_state = "pai"
 
 /atom/movable/screen/ghost/hudbox/pai/Click() // [CELADON-EDIT] - UPDATE GHOST HUDS - OLD CODE: /atom/movable/screen/ghost/pai/Click()
 	var/mob/dead/observer/G = usr

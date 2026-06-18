@@ -160,7 +160,7 @@
 #define ui_pai_view_images "SOUTH:6,WEST+13"
 
 //Ghosts
-// [CELADON-EDIT]
+// [CELADON-EDIT] - UPDATE GHOST HUDS -
 /*
 #define ui_ghost_respawn "SOUTH:6,CENTER-3:24"
 #define ui_ghost_orbit "SOUTH:6,CENTER-2:24"

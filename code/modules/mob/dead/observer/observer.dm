@@ -780,13 +780,13 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	return
 
 /mob/dead/observer/proc/show_data_huds()
-	ghost_hud_flags |= GHOST_DATA_HUDS // only for safety, it should be set already.
+	ghost_hud_flags |= GHOST_DATA_HUDS // [CELADON-ADD] - UPDATE GHOST HUDS
 	for(var/hudtype in datahuds)
 		var/datum/atom_hud/H = GLOB.huds[hudtype]
 		H.add_hud_to(src)
 
 /mob/dead/observer/proc/remove_data_huds()
-	ghost_hud_flags &= ~GHOST_DATA_HUDS // only for safety, it should be unset already.
+	ghost_hud_flags &= ~GHOST_DATA_HUDS // [CELADON-ADD] - UPDATE GHOST HUDS
 	for(var/hudtype in datahuds)
 		var/datum/atom_hud/H = GLOB.huds[hudtype]
 		H.remove_hud_from(src)
