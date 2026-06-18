@@ -54,6 +54,27 @@
 /obj/item/ammo_casing/energy/laser/hos
 	e_cost = 500
 
+/obj/item/ammo_casing/energy/laser/accelerator
+	projectile_type = /obj/projectile/beam/laser/accelerator
+	select_name = "accelerator"
+	fire_sound = 'sound/weapons/lasercannonfire.ogg'
+	e_cost = 5000
+
+/obj/item/ammo_casing/energy/laser/mini
+	fire_sound = 'sound/weapons/gun/laser/nt-fire_light.ogg'
+	projectile_type = /obj/projectile/beam/laser/light/mini
+	e_cost = 500
+	delay = 0.2 SECONDS
+
+/obj/item/ammo_casing/energy/disabler/mini
+	projectile_type = /obj/projectile/beam/disabler/weak/mini
+	e_cost = 500
+	delay = 0.2 SECONDS
+
+/obj/item/ammo_casing/energy/laser/antique
+	fire_sound = 'sound/weapons/laser.ogg'
+	projectile_type = /obj/projectile/beam/laser/hellfire
+
 // Баланс Ионочек
 /obj/item/ammo_casing/energy/ion
 	delay = 10

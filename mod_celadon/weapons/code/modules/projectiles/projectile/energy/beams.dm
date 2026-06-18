@@ -200,6 +200,42 @@
 	speed = 0.5 //actual smg speed
 	armour_penetration = -15
 
+//lascannon projectiles
+
+/obj/projectile/beam/laser/accelerator
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
+	name = "accelerator laser"
+	icon_state = "weaklaser"
+	speed = 0.6
+	range = 255
+	damage = 20
+	armour_penetration = 50
+
+//mini egun projectiles
+
+/obj/projectile/beam/laser/light/mini
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
+	icon_state = "weaklaser"
+	speed = 0.5
+	damage = 15
+	armour_penetration = 5
+
+/obj/projectile/beam/disabler/weak/mini
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
+	icon_state = "weaklaser_blue"
+	speed = 0.5
+	damage = 15
+	armour_penetration = 10
+
+//antique lasgun projectiles
+
+/obj/projectile/beam/laser/hellfire
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
+	icon_state = "heavylaser"
+	speed = 0.5
+	damage = 30
+	armour_penetration = 40
+
 // MARK: Ion balance
 
 /obj/projectile/ion
