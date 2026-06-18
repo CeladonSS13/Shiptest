@@ -45,6 +45,10 @@
 		A.UpdateButtonIcon()
 	return 1
 
+/obj/item/flashlight/attack_hand_secondary(mob/user, modifiers)
+	attack_self(user)
+	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+
 /obj/item/flashlight/attack(mob/living/carbon/M, mob/living/carbon/human/user)
 	add_fingerprint(user)
 	if(istype(M) && on && (user.zone_selected in list(BODY_ZONE_PRECISE_EYES, BODY_ZONE_PRECISE_MOUTH)))
@@ -186,7 +190,7 @@
 			holo_cooldown = world.time + 10 SECONDS
 			return
 
-// see: [/datum/wound/burn/proc/uv()]
+// see: [/datum/wound/burn/flesh/proc/uv()]
 /obj/item/flashlight/pen/paramedic
 	name = "paramedic penlight"
 	desc = "A high-powered UV penlight intended to help stave off infection in the field on serious burned patients. Probably really bad to look into."

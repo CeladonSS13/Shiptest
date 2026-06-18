@@ -154,26 +154,12 @@
 				src.visible_message(span_notice("[src] dispenses a holochip."))
 			return TRUE
 
-		//[CELADON-ADD] - CELADON_FIXES - чиним реролл
-		if("payFine")
-			var/val = 3000
-			// no giving yourself money
-			if(!charge_account || !val || val <= 0)
-				return
-			if(charge_account.adjust_money(-val))
-				playsound(src, 'sound/machines/twobeep_high.ogg', 50, TRUE)
-				src.visible_message("<span class='notice'>[src] unblocks giving up.</span>")
-				var/obj/docking_port/mobile/D = SSshuttle.get_containing_shuttle(src)
-				var/datum/overmap/ship/controlled/ship = D.current_ship
-				if(ship)
-					ship.given_up_missions = 0
-					ship.giveup_timer = world.time-15 MINUTES
-					ship.giveup_timeout = FALSE
-		//[/CELADON-ADD]
 		// if("add")
 		if("purchase")
 			var/list/purchasing = params["cart"]
 			var/total_cost = text2num(params["total"])
+			if(!current_ship?.docked_to)	// [CELADON-ADD] - Мне лень убирать этот вызов, можно обойтись банальной проверкой
+				return						// [/CELADON-ADD]
 			var/datum/overmap/outpost/current_outpost = current_ship.docked_to
 			if(!istype(current_ship.docked_to) || purchasing.len == 0)
 				return

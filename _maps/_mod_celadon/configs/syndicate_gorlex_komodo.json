@@ -1,8 +1,8 @@
 {
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
-	"map_name": "Komodo-class Warship",
+	"map_name": "Komodo-class Cruiser",
 	"map_short_name": "Komodo",
-	"description": "«Komodo» сконструированный в эпоху ICW, является специализированным военным судном, управляемым Мародёрами Горлекса. Современники легендарного класса 'Starfury', 'Komodo' были основой флотов Горлекса и ACLF во время ICW и прошли значительную боевую службу, не всегда с трагическим концом, как их товарищи по Cybersun. Современные примеры часто все еще несут на себе шрамы от боевых действий периода Icw, а тяжелое финансовое положение большинства отколовшихся фракций Горлекс означает, что многие из выживших находятся в плачевном состоянии. Несмотря на возрастные трудности, они остаются боеспособными кораблями и часто все еще имеют на хранении более тяжелое вооружение, связанное с их развертыванием в ICW.",
+	"description": "«Komodo» является специализированным военным судном, управляемым Gorlex Marauders. Эти корабли прошли значительную боевую службу, и даже не смотря на свои недостатки, многим оперативникам они полюбились. Тем не менее, на текущий момент являются кораблями резерва и ждут своего часа.",
 	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_gorlex_komodo.dmm",
 	"map_id": "syndicate_gorlex_komodo",
 	"enabled": false,
@@ -18,17 +18,23 @@
 		"WEAPONS"
 	],
 	"job_slots": {
-		"Captain": {
+		"Squad Commander": {
 			"outfit": "/datum/outfit/job/cel/syndicate/captain/gorlex",
 			"officer": true,
 			"slots": 1
 		},
-		"Sergeant": {
-			"outfit": "/datum/outfit/job/cel/syndicate/hos/gorlex",
+		"First Mate": {
+			"outfit": "/datum/outfit/job/cel/syndicate/head_of_personnel",
 			"officer": true,
 			"slots": 1
 		},
-		"Medic": {
+		"Squad leader": {
+			"outfit": "/datum/outfit/job/cel/syndicate/captain/gorlex",
+			"officer": true,
+			"slots": 1,
+			"name": "Gorlex Squad leader"
+		},
+		"Field Medic": {
 			"outfit": "/datum/outfit/job/cel/syndicate/doctor/gorlex",
 			"slots": 1
 		},
@@ -36,16 +42,12 @@
 			"outfit": "/datum/outfit/job/cel/syndicate/engineer/gorlex",
 			"slots": 1
 		},
-		"Trooper": {
+		"Commando": {
 			"outfit": "/datum/outfit/job/cel/syndicate/security/gorlex",
 			"slots": 3
 		},
 		"Miner": {
 			"outfit": "/datum/outfit/job/cel/syndicate/miner/gorlex",
-			"slots": 1
-		},
-		"Bridge officer": {
-			"outfit": "/datum/outfit/job/cel/syndicate/head_of_personnel",
 			"slots": 1
 		},
 		"Bartender": {

@@ -1,4 +1,4 @@
-/*			=# CELADON CHANGES => mod_celadon\_components\code\emotes\emotes_living.dm #=
+/*			=# CELADON CHANGES => mod_celadon/emotes/code/emote.dm #=
 /* EMOTE DATUMS */
 /datum/emote/living
 	mob_type_allowed_typecache = /mob/living

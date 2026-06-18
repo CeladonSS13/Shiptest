@@ -10,6 +10,7 @@
 	var/modifies_speech = FALSE
 	var/mask_adjusted = 0
 	var/adjusted_flags = null
+	var/unique_death	// [CELADON-ADD] - SFX-Die
 	supports_variations = VOX_VARIATION | KEPORI_VARIATION
 	blood_overlay_type = "mask"
 

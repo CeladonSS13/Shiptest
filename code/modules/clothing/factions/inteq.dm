@@ -487,6 +487,14 @@
 	supports_variations = KEPORI_VARIATION | VOX_VARIATION
 	vox_override_icon = 'icons/mob/clothing/faction/inteq/vox.dmi'
 	kepori_override_icon = 'icons/mob/clothing/faction/inteq/kepori.dmi'
+// [CELADON-ADD] - SFX-Die
+	unique_death = list(
+		'mod_celadon/_storage_sounds/sound/items/gasmask/die1.ogg',
+		'mod_celadon/_storage_sounds/sound/items/gasmask/die2.ogg',
+		'mod_celadon/_storage_sounds/sound/items/gasmask/die3.ogg',
+		'mod_celadon/_storage_sounds/sound/items/gasmask/die4.ogg',
+		)
+// [/CELADON-ADD]
 
 /obj/item/clothing/mask/balaclava/inteq
 	name = "Inteq combat balaclava"

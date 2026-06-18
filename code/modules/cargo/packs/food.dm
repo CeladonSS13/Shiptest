@@ -202,6 +202,39 @@
 					/obj/item/food/grown/cabbage,
 	)
 
+/datum/supply_pack/food/ingredients_basic/eggplant
+	name = "Eggplant Crate"
+	desc = "Crate containing five eggplants."
+	cost = 75
+	contains = list(/obj/item/food/grown/eggplant,
+					/obj/item/food/grown/eggplant,
+					/obj/item/food/grown/eggplant,
+					/obj/item/food/grown/eggplant,
+					/obj/item/food/grown/eggplant,
+	)
+
+/datum/supply_pack/food/ingredients_basic/whitebeet
+	name = "White-beet Crate"
+	desc = "Crate containing five white-beets."
+	cost = 75
+	contains = list(/obj/item/food/grown/whitebeet,
+					/obj/item/food/grown/whitebeet,
+					/obj/item/food/grown/whitebeet,
+					/obj/item/food/grown/whitebeet,
+					/obj/item/food/grown/whitebeet,
+	)
+
+/datum/supply_pack/food/ingredients_basic/redbeet
+	name = "Redbeet Crate"
+	desc = "Crate containing five redbeets."
+	cost = 75
+	contains = list(/obj/item/food/grown/redbeet,
+					/obj/item/food/grown/redbeet,
+					/obj/item/food/grown/redbeet,
+					/obj/item/food/grown/redbeet,
+					/obj/item/food/grown/redbeet,
+	)
+
 /datum/supply_pack/food/ingredients_basic/chanterelle
 	name = "Chanterelle Crate"
 	desc = "Crate containing five chanterelle mushrooms."
@@ -266,6 +299,17 @@
 					/obj/item/food/grown/apple,
 					/obj/item/food/grown/apple,
 					/obj/item/food/grown/apple,
+	)
+
+/datum/supply_pack/food/ingredients_basic/cherry
+	name = "Cherry Crate"
+	desc = "Crate containing five cherries."
+	cost = 75
+	contains = list(/obj/item/food/grown/cherries,
+					/obj/item/food/grown/cherries,
+					/obj/item/food/grown/cherries,
+					/obj/item/food/grown/cherries,
+					/obj/item/food/grown/cherries,
 	)
 
 /datum/supply_pack/food/ingredients_basic/lime

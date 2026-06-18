@@ -457,3 +457,4 @@
 	vox_override_icon = 'icons/mob/clothing/faction/nanotrasen/vox.dmi'
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	supports_variations = KEPORI_VARIATION | VOX_VARIATION
+	unique_death = list('mod_celadon/_storage_sounds/sound/items/gasmask/sec_die.ogg')	// [CELADON-ADD] - SFX-Die

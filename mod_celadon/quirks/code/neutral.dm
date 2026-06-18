@@ -1,7 +1,7 @@
 /datum/quirk/dwarfism
 	name = "Dwarfism"
 	desc = "A mutation believed to be the cause of dwarfism."
-	value = 0
+	value = 4 // [CELADON-ADD] - NO_FUN_ALLOWED_SPECIES
 	mob_traits = list(TRAIT_DWARF)
 	gain_text = span_notice("Everything around you seems to grow..")
 	lose_text = span_danger("Everything around you seems to shrink..")

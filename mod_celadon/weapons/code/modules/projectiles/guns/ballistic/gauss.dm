@@ -16,6 +16,9 @@
 	if(!internal_magazine && loc == user && user.is_holding(src) && cell && tac_reloads && !(gun_firemodes[firemode_index] == FIREMODE_UNDERBARREL))
 		if(do_after(user, 3.5 SECONDS, src, hidden = TRUE))
 			eject_cell(user)
+		return
+	var/datum/component/attachment_holder/h = GetComponent(/datum/component/attachment_holder)
+	h.handle_alt_click(h.parent, user)
 
 NO_MAG_GUN_HELPER(automatic/powered/gauss/gar)
 NO_MAG_GUN_HELPER(automatic/powered/gauss/gar/suns)

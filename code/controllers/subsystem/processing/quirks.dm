@@ -39,6 +39,7 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 
 	species_blacklist = list(
 		"Blood Deficiency" = list(SPECIES_IPC, SPECIES_JELLYPERSON, SPECIES_PLASMAMAN, SPECIES_VAMPIRE),
+		"Dwarfism" = list(SPECIES_IPC, SPECIES_KEPORI, SPECIES_VOX, SPECIES_RACHNID),	// [CELADON-ADD] - NO_FUN_ALLOWED_SPECIES
 		"Alcohol Tolerance" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
 		"Light Drinker" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
 		"Smoker" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
@@ -69,7 +70,7 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 	for(var/V in cli?.prefs.all_quirks)
 		var/datum/quirk/Q = quirks[V]
 		if(Q)
-			user.add_quirk(Q, spawn_effects)
+			user.add_quirk(Q, cli, spawn_effects)
 		else
 			stack_trace("Invalid quirk \"[V]\" in client [cli.ckey] preferences")
 			cli?.prefs.all_quirks -= V

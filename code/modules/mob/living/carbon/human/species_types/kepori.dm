@@ -2,7 +2,7 @@
 	name = "\improper Kepori"
 	id = SPECIES_KEPORI
 	default_color = "6060FF"
-	species_traits = list(SCLERA, MUTCOLORS, MUTCOLORS_SECONDARY, HAS_FLESH, HAS_BONE)
+	species_traits = list(SCLERA, MUTCOLORS, MUTCOLORS_SECONDARY)
 	inherent_traits = list(TRAIT_SCOOPABLE)
 	mutant_bodyparts = list("kepori_body_feathers", "kepori_head_feathers", "kepori_tail_feathers", "kepori_feathers")
 	default_features = list("mcolor" = "0F0", "wings" = "None", "kepori_feathers" = "None", "kepori_head_feathers" = "None",  "kepori_body_feathers" = "None", "kepori_tail_feathers" = "None")
@@ -18,9 +18,11 @@
 	species_eye_path = 'icons/mob/species/kepori/kepori_eyes.dmi'
 	heatmod = 0.67
 	coldmod = 1.5
-	// brutemod = 1.5
-	// burnmod = 1.5
-	speedmod = -0.30	// [CELADON-EDIT] - CELADON_BALANCE_SPECIES - Было -0.10
+	//[CELADON-EDIT] - CELADON_BALANCE_SPECIES - No more PTITZA combat
+	brutemod = 1.5
+	burnmod = 1.5
+	speedmod = -0.30	// Было -0.10
+	//[/CELADON-EDIT]
 
 	bodytemp_heat_damage_limit = HUMAN_BODYTEMP_HEAT_DAMAGE_LIMIT + 35
 	bodytemp_cold_damage_limit = HUMAN_BODYTEMP_COLD_DAMAGE_LIMIT + 3
@@ -111,10 +113,16 @@
 							"[WEST]" = list("x" =  -3, "y" = -3)
 							),
 		"[SUIT_STORE_LAYER]" = list(
-							"[NORTH]" = list("x" = 8, "y" = -1),
-							"[EAST]" = list("x" = 8, "y" = -1),
-							"[SOUTH]" = list("x" = 8, "y" = -1),
-							"[WEST]" = list("x" =  -8, "y" = -1)
+							"[NORTH]" = list("x" = 9, "y" = -3), // [CELADON-ADD] - SPECIES OFFSETS
+							"[EAST]" = list("x" = 16, "y" = -3),
+							"[SOUTH]" = list("x" = 9, "y" = -3),
+							"[WEST]" = list("x" =  0, "y" = -3)
+							),
+		"[BACK_LAYER]" = list(
+							"[NORTH]" = list("x" = 9, "y" = -3),
+							"[EAST]" = list("x" = 16, "y" = -3),
+							"[SOUTH]" = list("x" = 9, "y" = -3),
+							"[WEST]" = list("x" =  0, "y" = -3) // [/CELADON-ADD] - SPECIES OFFSETS
 							),
 	)
 
