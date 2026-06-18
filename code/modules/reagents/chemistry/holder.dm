@@ -256,7 +256,6 @@
 	var/reagents_to_remove = list()
 	var/part = amount / src.total_volume	// [/CELADON-EDIT]
 	if(!round_robin)
-		var/part = amount / src.total_volume
 		for(var/datum/reagent/reagent as anything in cached_reagents)
 			if(remove_blacklisted && !(reagent.can_synth))
 				continue
