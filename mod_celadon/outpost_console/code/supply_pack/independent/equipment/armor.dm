@@ -66,7 +66,7 @@
 	desc = "One set of well-rounded heavy tactical body armor. Plates are attached to the vest and cover the limbs. The set includes a helmet and chestpiece."
 	cost = 5000
 	contains = list(/obj/item/clothing/suit/armor/vest/marine/heavy,
-					/obj/item/clothing/head/helmet/bulletproof/x11)
+					/obj/item/clothing/head/helmet/riot)
 	crate_name = "armor crate"
 	crate_type = /obj/structure/closet/crate/secure/plasma
 
