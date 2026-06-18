@@ -48,8 +48,6 @@ All ShuttleMove procs go here
 					M.apply_damage(100, BRUTE, BODY_ZONE_CHEST, forced = TRUE)
 					M.apply_damage(100, BRUTE, BODY_ZONE_HEAD, forced = TRUE)
 
-					M.Knockdown(80) // Stun them
-
 					// Find a safe turf outside the shuttle to relocate them
 					var/turf/safe_turf = null
 					var/list/shuttle_areas = shuttle.shuttle_areas
@@ -60,19 +58,12 @@ All ShuttleMove procs go here
 						if(!candidate.density && !is_blocked_turf(candidate))
 							var/area/candidate_area = get_area(candidate)
 							if(!(candidate_area in shuttle_areas))
-								possible_turfs += candidate
+								if(turf_has_los(src, candidate))
+									possible_turfs += candidate
 
 					// Pick a random safe turf from the list
 					if(length(possible_turfs))
 						safe_turf = pick(possible_turfs)
-					else
-						// Fallback: try further away
-						for(var/turf/open/candidate in orange(src, 25))
-							if(!candidate.density && !is_blocked_turf(candidate))
-								var/area/candidate_area = get_area(candidate)
-								if(!(candidate_area in shuttle_areas))
-									safe_turf = candidate
-									break
 
 					// Move them to safety if we found a spot
 					if(safe_turf)
