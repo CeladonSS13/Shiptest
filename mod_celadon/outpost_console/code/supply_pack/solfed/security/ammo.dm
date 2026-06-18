@@ -193,19 +193,19 @@
 	name = ".308 Ammo Box"
 	desc = "Contains a 40-round .308 box."
 	contains = list(/obj/item/storage/box/ammo/a308)
-	cost = 300
+	cost = 240 // until it gets 35 damage or smth like that like in https://github.com/shiptest-ss13/Shiptest/pull/4380
 
 /datum/supply_pack/faction/solfed/ammo/a308_hp_box
 	name = ".308 HP Ammo Box"
 	desc = "Contains a 40-round .308 box loaded with hollow-point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/a308/hp)
-	cost = 400
+	cost = 350
 
 /datum/supply_pack/faction/solfed/ammo/a308_ap_box
 	name = ".308 AP Ammo Box"
 	desc = "Contains a 40-round .308 box loaded with armor piercing ammo."
 	contains = list(/obj/item/storage/box/ammo/a308/ap)
-	cost = 400
+	cost = 350
 
 /*
 	MARK: Ferroslugs
