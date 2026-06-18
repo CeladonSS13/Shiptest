@@ -216,7 +216,7 @@
 		visible_message(span_warning("[src] digs one of its tentacles under [target]!"))
 		new /obj/effect/temp_visual/goliath_tentacle/broodmother(tturf, src)
 
-// [CELADON-ADD] - Возвращает взрыв маленьким голиафам
+// [CELADON-ADD] - Оффы казуалы
 /mob/living/simple_animal/hostile/asteroid/elite/broodmother_child/death()
 	. = ..()
 	visible_message(span_warning("[src] explodes!"))
