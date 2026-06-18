@@ -267,7 +267,7 @@ hp
 /datum/supply_pack/faction/nanotrasen/gun/exp/al607
 	name = "P-Marksman - AL607 'Sarissa'"
 	desc = "Contains a AL607 Laser Sniper. Comes with 1 upgraded plasma-cell. For NT employee use only."
-	cost = 6500 // Хуже Хейдеса де факто и де юре. У оффов стоит дешевле чем Хейдес. Но там плазма батарейки.
+	cost = 5000 // Хуже Хейдеса де факто и де юре. У оффов стоит дешевле чем Хейдес. Но там плазма батарейки.
 	contains = list(/obj/item/storage/guncase/energy/al607)
 	crate_name = "sniper rifle crate"
 

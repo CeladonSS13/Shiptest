@@ -94,8 +94,8 @@
 	mag_number = 0
 	pair_item = list(/datum/blackmarket_item/ammo/twobore_box)
 
-	cost_min = 4000
-	cost_max = 5000
+	cost_min = 3000
+	cost_max = 4500
 	stock = 1
 	availability_prob = 25
 

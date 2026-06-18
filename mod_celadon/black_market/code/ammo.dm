@@ -54,7 +54,7 @@
 	desc = "Contains a 16-round two-bore buckshot ammo box."
 	item = /obj/item/storage/box/ammo/twobore
 	cost_min = 400
-	cost_max = 800
+	cost_max = 600
 	stock_min = 3
 	stock_max = 8
 	availability_prob = 0
