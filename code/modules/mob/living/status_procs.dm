@@ -664,6 +664,7 @@
 		return inebriation?.drunk_value
 	return 0
 
+/*
 /mob/living/proc/adjust_lung_inflammation(amount)
 	if(!isnum(amount))
 		CRASH("adjust_lung_inflammation: called with an invalid amount. (Got: [amount])")
@@ -690,3 +691,4 @@
 	if(inflammation)
 		return inflammation?.inflammation
 	return 0
+*/
