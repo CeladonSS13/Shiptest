@@ -277,7 +277,7 @@
 // /obj/item/gun/energy/laser/captain
 
 /obj/projectile/beam/laser/nanotrasen/hellfire
-	icon_state = "sl_laser_hellfire"
+	icon_state = "sl_laser_heavy"
 	damage = 30
 	armour_penetration = 25
 
@@ -287,6 +287,25 @@
 		var/mob/living/carbon/M = target
 		M.adjust_fire_stacks(2)
 		M.ignite_mob()
+
+/obj/projectile/beam/laser/nanotrasen/hellfire/immolate
+	icon_state = "sl_laser_hellfire"
+	damage = 50
+	armour_penetration = -40
+
+/obj/projectile/beam/laser/nanotrasen/hellfire/immolate/on_hit(atom/target, blocked = FALSE)
+	. = ..()
+	if(iscarbon(target))
+		var/mob/living/carbon/M = target
+		M.adjust_fire_stacks(10)
+		M.ignite_mob()
+
+/obj/projectile/beam/laser/nanotrasen/hellfire/immolate/Move() //firetrail
+	. = ..()
+	var/turf/location = get_turf(src)
+	if(location)
+		new /obj/effect/hotspot(location)
+		location.hotspot_expose(700, 50, 1)
 
 // MARK: Ion balance
 
