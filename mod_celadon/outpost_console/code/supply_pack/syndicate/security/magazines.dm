@@ -59,7 +59,7 @@
 	name = "SBR-80 DMR - Short Magazine (5.56x42mm)"
 	desc = "Contains a 5.56x42mm made specially for the SBR-80 Designated Marksman Rifle, with a capacity of 20 rounds."
 	contains = list(/obj/item/ammo_box/magazine/m556_42_hydra/small/empty)
-	cost = 400
+	cost = 300
 
 /datum/supply_pack/faction/syndicate/magazine/hydra_mag
 	name = "SMR-80 - Rifle Magazine (5.56x42mm)"
