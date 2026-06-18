@@ -150,6 +150,8 @@
 
 //Base NT-SL Laser
 /obj/projectile/beam/laser/nanotrasen //таким образом еоехома не словит бесплатный бафф + удобнее редачить древний код
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
+	icon_state = "sl_laser"
 	speed = 0.3 //egun buff - просто мувспид с плазмапушек
 
 /obj/projectile/beam/laser/nanotrasen/weak
@@ -159,42 +161,51 @@
 //Base NT-SL Disabler beam
 
 /obj/projectile/beam/disabler/nanotrasen
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
+	icon_state = "sl_disabler"
 	speed = 0.3
 
 /obj/projectile/beam/disabler/nanotrasen/weak
+	damage = 18
+	armour_penetration = -10
+
+// /obj/item/gun/energy/e_gun/e_old/hos
+
+/obj/projectile/beam/laser/nanotrasen/hos
+	damage = 20
+
+/obj/projectile/beam/laser/nanotrasen/weak
 	damage = 15
 	armour_penetration = -15
 
 // /obj/item/gun/energy/e_gun/e_old/dmr
 
 /obj/projectile/beam/laser/nanotrasen/dmr
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
-	icon_state = "hellfire"
+	icon_state = "sl_laser_hellfire"
 	damage = 35
-	armour_penetration = 45
+	armour_penetration = 30
 
 // /obj/item/gun/energy/e_gun/e_old/smg/sunbeam
 
 /obj/projectile/beam/laser/nanotrasen/weak/ap //more armorpen, less damage
 	damage = 12
-	armour_penetration = 20
+	armour_penetration = 10
 
 /obj/projectile/beam/disabler/nanotrasen/weak/ap
-	damage = 12
+	damage = 15
 	armour_penetration = 20
 
 // /obj/item/gun/energy/e_gun/e_old/hades
 // /obj/item/gun/energy/e_gun/e_old/emg
 
 /obj/projectile/beam/laser/nanotrasen/assault
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
-	icon_state = "heavylaser"
+	icon_state = "sl_laser_heavy"
 	damage = 25
 	armour_penetration = 20
 
 /obj/projectile/beam/disabler/nanotrasen/assault
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
-	icon_state = "heavylaser_blue"
+	icon_state = "sl_disabler_heavy"
 	damage = 25
 	armour_penetration = 20
 
@@ -207,14 +218,12 @@
 //Honorable mentions
 
 /obj/projectile/beam/laser/nanotrasen/heavylaser //NT-SL turrets
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
-	icon_state = "heavylaser"
+	icon_state = "sl_laser_heavy"
 	damage = 40
 	speed = 0.4
 
 /obj/projectile/beam/disabler/nanotrasen/heavylaser
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
-	icon_state = "heavylaser_blue"
+	icon_state = "sl_disabler_heavy"
 	damage = 40
 	speed = 0.4
 
@@ -222,14 +231,14 @@
 // /obj/item/gun/energy/e_gun/e_old/iot/blaze
 
 /obj/projectile/beam/disabler/nanotrasen/shotgun
-	icon_state = "blue_laser"
+	icon_state = "sl_disabler_light"
 	damage = 15
 	range = 15
-	armour_penetration = -20
+	armour_penetration = -10
 	speed = 0.5 //just to make it a bit more fair
 
 /obj/projectile/beam/laser/nanotrasen/shotgun
-	icon_state = "red_laser"
+	icon_state = "sl_laser_light"
 	damage = 15
 	armour_penetration = -10
 	range = 15
@@ -240,10 +249,10 @@
 /obj/projectile/beam/laser/nanotrasen/sniper
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
 	name = "accelerator laser"
-	icon_state = "minilaser"
+	icon_state = "sl_laser_light"
 	range = 255
-	damage = 15
-	armour_penetration = 40
+	damage = 10
+	armour_penetration = 30
 	var/damage_cap = 60
 
 /obj/projectile/beam/laser/nanotrasen/sniper/Range()
@@ -257,21 +266,20 @@
 
 /obj/projectile/beam/laser/nanotrasen/weak/mini
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
-	icon_state = "minilaser"
+	icon_state = "sl_laser_light"
 	armour_penetration = 5
 
 /obj/projectile/beam/disabler/nanotrasen/weak/mini
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
-	icon_state = "minilaser_blue"
+	icon_state = "sl_disabler_light"
 	armour_penetration = 10
 
 // /obj/item/gun/energy/laser/captain
 
 /obj/projectile/beam/laser/nanotrasen/hellfire
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
-	icon_state = "hellfire"
+	icon_state = "sl_laser_hellfire"
 	damage = 30
-	armour_penetration = 40
+	armour_penetration = 25
 
 /obj/projectile/beam/laser/nanotrasen/hellfire/on_hit(atom/target, blocked = FALSE)
 	. = ..()

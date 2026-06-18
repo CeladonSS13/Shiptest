@@ -64,12 +64,14 @@
 	e_cost = 500
 	delay = 0.3 SECONDS
 
+/obj/item/ammo_casing/energy/laser/nanotrasen/hos
+	projectile_type = /obj/projectile/beam/laser/nanotrasen/hos
 
 /obj/item/ammo_casing/energy/laser/nanotrasen/dmr
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/dmr
 	select_name = "kill"
 	e_cost = 1000
-	delay = 0.6 SECONDS
+	delay = 0.7 SECONDS
 
 /obj/item/ammo_casing/energy/electrode/nanotrasen
 	projectile_type = /obj/projectile/energy/electrode/nanotrasen
@@ -103,7 +105,7 @@
 
 /obj/item/ammo_casing/energy/laser/shotgun/nanotrasen/burst
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/shotgun
-	pellets = 4
+	pellets = 3
 	variance = 35
 	e_cost = 1000
 
