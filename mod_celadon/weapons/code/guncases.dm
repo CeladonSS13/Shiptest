@@ -175,6 +175,10 @@ MARK: Nanotrasen guncases
 	gun_type = /obj/item/gun/energy/e_gun/e_old/mini
 	mag_type = /obj/item/stock_parts/cell/gun/mini
 
+/obj/item/storage/guncase/energy/laser_old
+	gun_type = /obj/item/gun/energy/e_gun/e_old/laser
+	mag_type = /obj/item/stock_parts/cell/gun
+
 /obj/item/storage/guncase/energy/egun_old
 	gun_type = /obj/item/gun/energy/e_gun/e_old
 	mag_type = /obj/item/stock_parts/cell/gun
