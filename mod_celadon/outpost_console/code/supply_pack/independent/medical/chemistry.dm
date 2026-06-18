@@ -1,6 +1,7 @@
 /datum/supply_pack/faction/independent/chemistry
 	category = "Medical - Chemistry"
 	crate_type = /obj/structure/closet/crate/chem
+	stable_price = TRUE
 
 /* MARK: = Химия =
 
@@ -13,7 +14,7 @@
 /datum/supply_pack/faction/independent/chemistry/starter
 	name = "Chemical Starter Kit"
 	desc = "Contains thirteen different chemicals, for all the fun experiments you can make."
-	cost = 1250 // This is intentionally underpriced; the hope is that people will start using ghettochem, upon which time the price can be raised.
+	cost = 700 // This is intentionally underpriced; the hope is that people will start using ghettochem, upon which time the price can be raised.
 	contains = list(/obj/item/reagent_containers/glass/bottle/aluminium,
 					/obj/item/reagent_containers/glass/bottle/bromine,
 					/obj/item/reagent_containers/glass/bottle/carbon,
@@ -42,7 +43,7 @@
 /datum/supply_pack/faction/independent/chemistry/tools
 	name = "Chemical Synthesis"
 	desc = "Contains all the tools you will need for drug making."
-	cost = 750
+	cost = 250
 	contains = list(/obj/item/reagent_containers/glass/filter,
 					/obj/item/book/manual/wiki/chemistry,
 					/obj/item/clothing/glasses/science,
@@ -56,7 +57,7 @@
 /datum/supply_pack/faction/independent/chemistry/press
 	name = "Pill Press"
 	desc = "Contains one standard press for making pills by hand."
-	cost = 500
+	cost = 350
 	contains = list(/obj/machinery/chem_press)
 	crate_name = "pill press crate"
 
@@ -67,146 +68,146 @@
 /datum/supply_pack/faction/independent/chemistry/aluminium
 	name = "Bulk Aluminium"
 	desc = "Contains a jug filled with 150u of aluminium."
-	cost = 750
+	cost = 100
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/aluminium)
 	crate_name = "bulk aluminium crate"
 
 /datum/supply_pack/faction/independent/chemistry/bromine
 	name = "Bulk Bromine"
 	desc = "Contains a jug filled with 150u of bromine."
-	cost = 750
+	cost = 100
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/bromine)
 	crate_name = "bulk bromine crate"
 
 /datum/supply_pack/faction/independent/chemistry/carbon
 	name = "Bulk Carbon"
 	desc = "Contains a jug filled with 150u of carbon."
-	cost = 750
+	cost = 100
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/carbon)
 	crate_name = "bulk carbon crate"
 
 /datum/supply_pack/faction/independent/chemistry/chlorine
 	name = "Bulk Chlorine"
 	desc = "Contains a jug filled with 150u of chlorine."
-	cost = 750
+	cost = 300
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/chlorine)
 	crate_name = "bulk chlorine crate"
 
 /datum/supply_pack/faction/independent/chemistry/copper
 	name = "Bulk Copper"
 	desc = "Contains a jug filled with 150u of copper."
-	cost = 750
+	cost = 100
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/copper)
 	crate_name = "bulk copper crate"
 
 /datum/supply_pack/faction/independent/chemistry/fluorine
 	name = "Bulk Fluorine"
 	desc = "Contains a jug filled with 150u of fluorine."
-	cost = 750
+	cost = 300
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/fluorine)
 	crate_name = "bulk fluorine crate"
 
 /datum/supply_pack/faction/independent/chemistry/hydrogen
 	name = "Bulk Hydrogen"
 	desc = "Contains a jug filled with 150u of Hydrogen."
-	cost = 750
+	cost = 100
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/hydrogen)
 	crate_name = "bulk hydrogen crate"
 
 /datum/supply_pack/faction/independent/chemistry/iodine
 	name = "Bulk Iodine"
 	desc = "Contains a jug filled with 150u of iodine."
-	cost = 750
+	cost = 300
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/iodine)
 	crate_name = "bulk iodine crate"
 
 /datum/supply_pack/faction/independent/chemistry/lithium
 	name = "Bulk Lithium"
 	desc = "Contains a jug filled with 150u of lithium."
-	cost = 750
+	cost = 200
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/lithium)
 	crate_name = "bulk lithium crate"
 
 /datum/supply_pack/faction/independent/chemistry/mercury
 	name = "Bulk Mercury"
 	desc = "Contains a jug filled with 150u of mercury."
-	cost = 750
+	cost = 200
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/mercury)
 	crate_name = "bulk mercury crate"
 
 /datum/supply_pack/faction/independent/chemistry/nitrogen
 	name = "Bulk Nitrogen"
 	desc = "Contains a jug filled with 150u of nitrogen."
-	cost = 750
+	cost = 100
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/nitrogen)
 	crate_name = "bulk nitrogen crate"
 
 /datum/supply_pack/faction/independent/chemistry/oxygen
 	name = "Bulk Oxygen"
 	desc = "Contains a jug filled with 150u of oxygen."
-	cost = 750
+	cost = 100
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/oxygen)
 	crate_name = "bulk oxygen crate"
 
 /datum/supply_pack/faction/independent/chemistry/phosphorus
 	name = "Bulk Phosphorus"
 	desc = "Contains a jug filled with 150u of phosphorus."
-	cost = 750
+	cost = 300
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/phosphorus)
 	crate_name = "bulk phosphorus crate"
 
 /datum/supply_pack/faction/independent/chemistry/potassium
 	name = "Bulk Potassium"
 	desc = "Contains a jug filled with 150u of potassium."
-	cost = 750
+	cost = 300
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/potassium)
 	crate_name = "bulk potassium crate"
 
 /datum/supply_pack/faction/independent/chemistry/radium
 	name = "Bulk Radium"
 	desc = "Contains a jug filled with 150u of radium."
-	cost = 750
+	cost = 300
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/radium)
 	crate_name = "bulk radium crate"
 
 /datum/supply_pack/faction/independent/chemistry/sodium
 	name = "Bulk Sodium"
 	desc = "Contains a jug filled with 150u of sodium."
-	cost = 750
+	cost = 100
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/sodium)
 	crate_name = "bulk sodium crate"
 
 /datum/supply_pack/faction/independent/chemistry/sulfur
 	name = "Bulk Sulfur"
 	desc = "Contains a jug filled with 150u of sulfur."
-	cost = 750
+	cost = 300
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/sulfur)
 	crate_name = "bulk sulfur crate"
 
 /datum/supply_pack/faction/independent/chemistry/eznutriment
 	name = "Bulk E-Z-Nutriment"
 	desc = "Contains a jug filled with 150u of E-Z-Nutriment."
-	cost = 500
+	cost = 300
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/eznutriment)
 	crate_name = "bulk E-Z-Nutriment crate"
 
 /datum/supply_pack/faction/independent/chemistry/left4zednutriment
 	name = "Bulk Left 4 Zed"
 	desc = "Contains a jug filled with 150u of Left 4 Zed."
-	cost = 500
+	cost = 300
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/left4zednutriment)
 	crate_name = "bulk Left 4 Zed crate"
 
 /datum/supply_pack/faction/independent/chemistry/robustharvestnutriment
 	name = "Bulk Robust Harvest"
 	desc = "Contains a jug filled with 150u of Robust Harvest."
-	cost = 500
+	cost = 300
 	contains = list(/obj/item/reagent_containers/glass/chem_jug/robustharvestnutriment)
 	crate_name = "bulk Robust Harvest crate"
 
 /datum/supply_pack/faction/independent/chemistry/holywater
 	name = "Flask of holy water"
 	desc = "Father Lootius' own brand of ready-made filled with 100u of holy water."
-	cost = 1000
+	cost = 700
 	contains = list(/obj/item/reagent_containers/food/drinks/bottle/holywater)
 	crate_name = "flask of holy water crate"
