@@ -354,7 +354,7 @@
 	manufacturer = MANUFACTURER_SHARPLITE_NEW
 
 	zoomable = TRUE
-	wield_slowdown = DMR_SLOWDOWN
+	wield_slowdown = LIGHT_RIFLE_SLOWDOWN
 	aimed_wield_slowdown = LONG_RIFLE_AIM_SLOWDOWN
 	wield_delay = 1 SECONDS
 	fire_delay = 0.6 SECONDS
