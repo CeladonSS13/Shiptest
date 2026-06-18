@@ -11,6 +11,36 @@
 	stock_max = 1
 	availability_prob = 20
 
+/datum/blackmarket_item/weapon/northstar
+	name = "Gloves of the North Star"
+	desc = "These gloves let the user punch people very fast. Does not improve weapon attack speed or the meaty fists of a hulk."
+	item = /obj/item/clothing/gloves/rapid
+	cost_min = 1000
+	cost_max = 2000
+	stock_min = 1
+	stock_max = 2
+	availability_prob = 30
+
+/datum/blackmarket_item/weapon/clip_kukri
+	name = "Kukri Sword Crate"
+	desc = "A well-made titanium kukri manufactured on Serene. This one is in blue colors... For now."
+	cost_min = 500
+	cost_max = 750
+	stock_min = 1
+	stock_max = 2
+	item = /obj/item/storage/belt/sabre/kukri
+	availability_prob = 40
+
+/datum/blackmarket_item/weapon/cybersun_flyssa
+	name = "Energy Flyssa Crate"
+	desc = "A lathed, verified, and readied Energy Flyssa nicely taken from Cybersun officer. Can be recharged in a recharger. Wait a second..."
+	cost_min = 1000
+	cost_max = 1500
+	stock_min = 1
+	stock_max = 2
+	item = /obj/item/melee/energy/flyssa
+	availability_prob = 30
+
 /datum/blackmarket_item/weapon/esword
 	name = "Energy Sword"
 	desc = "The energy sword is an edged weapon with a blade of pure energy. The sword is small enough to be \
