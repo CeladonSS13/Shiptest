@@ -127,19 +127,19 @@
 	name = "5.56x42mm Ammo Box"
 	desc = "Contains one 60-round 5.56x42mm box."
 	contains = list(/obj/item/storage/box/ammo/a556_42)
-	cost = 700
+	cost = 300
 
 /datum/supply_pack/faction/solfed/ammo/a556_ap
 	name = "5.56x42mm Armour Piercing Ammo Box"
 	desc = "Contains one 60-round 5.56x42mm Armour Piercing box."
 	contains = list(/obj/item/storage/box/ammo/a556_42/ap)
-	cost = 1000
+	cost = 500
 
 /datum/supply_pack/faction/solfed/ammo/a556_hp
 	name = "5.56x42mm Hollow Point Ammo Box"
 	desc = "Contains one 60-round 5.56x42mm Hollow Point box."
 	contains = list(/obj/item/storage/box/ammo/a556_42/hp)
-	cost = 1000
+	cost = 375
 
 /*
 	MARK: 6.5x57mm
