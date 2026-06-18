@@ -636,13 +636,13 @@ MARK: .22lr
 	name = ".410 Flechette Box"
 	desc = "Contains a box with 60 flechette rounds of .410 caliber."
 	contains = list(/obj/item/storage/box/ammo/a410_ammo_box/flechette)
-	cost = 1500
+	cost = 1000 // де факто .45-70 только у шотгана.
 
 /datum/supply_pack/faction/independent/ammo/a410_slug
 	name = ".410 Slug Box"
 	desc = "Contains a box with 60 slug cartridges of .410 caliber."
 	contains = list(/obj/item/storage/box/ammo/a410_ammo_box/slug)
-	cost = 2000
+	cost = 600 // .410-му стоит понизить патронов в коробке до 32, а в стаке до 8, таким образом стандартизируя его с 12g.
 
 /*
 	MARK: 5.56x42
