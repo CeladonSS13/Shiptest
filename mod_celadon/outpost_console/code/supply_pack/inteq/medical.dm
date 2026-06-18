@@ -1,3 +1,4 @@
+/*
 /datum/supply_pack/faction/inteq/medical
 	category = "Medical - Medical"
 
@@ -93,3 +94,4 @@
 		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/chitosan
 	)
 	crate_name = "chitosan vial crate"
+*/
