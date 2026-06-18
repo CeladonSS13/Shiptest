@@ -239,11 +239,11 @@
 	lethal_projectile = /obj/projectile/beam/laser/light
 
 /obj/machinery/porta_turret/ship/nt/heavy
-	stun_projectile = /obj/projectile/beam/disabler/heavylaser/sharplite
+	stun_projectile = /obj/projectile/beam/disabler/nanotrasen/heavylaser
 	stun_projectile_sound = 'sound/weapons/wave.ogg'
 
 /obj/machinery/porta_turret/ship/nt/pulse
-	stun_projectile = /obj/projectile/beam/disabler/heavylaser/sharplite
+	stun_projectile = /obj/projectile/beam/disabler/nanotrasen/heavylaser
 	stun_projectile_sound = 'sound/weapons/wave.ogg'
 
 //Pirate turrets - даем фракцию пиратов вместо фронтиров
