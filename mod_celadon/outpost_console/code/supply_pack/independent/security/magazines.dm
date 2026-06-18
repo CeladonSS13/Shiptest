@@ -245,7 +245,7 @@
 // //Магазины для оружия
 
 /datum/supply_pack/faction/independent/magazine/slammer
-	name = "Slammer Magazine Crate"
+	name = "Slammer - Magazine (12g)"
 	desc = "Contains a 6-round 12ga magazine for the Slammer shotgun."
 	contains = list(/obj/item/ammo_box/magazine/m12g_slammer)
 	cost = 300

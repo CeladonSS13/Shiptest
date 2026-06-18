@@ -285,6 +285,7 @@
 /obj/item/storage/guncase/energy/al607
 	gun_type = /obj/item/gun/energy/sharplite/al607
 	mag_type = /obj/item/stock_parts/cell/gun/sharplite/plus
+	mag_count = 1 // [CELADON-ADD] - CELADON_ECONOMY
 
 /obj/item/storage/guncase/energy/iongun
 	gun_type = /obj/item/gun/energy/ionrifle
