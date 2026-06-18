@@ -96,7 +96,7 @@ match
 	damage = 20
 	armour_penetration = -10
 */
-- Используют: 
+- Используют:
 - Револьверы: HP Detective
 - Винтовки: Flaming Arrow Lever Action
 
@@ -111,7 +111,7 @@ hp
 	damage = 50
 	armour_penetration = -20
 */
-- Используют: 
+- Используют:
 - Авто-пистолеты: CM-357 (SF)
 - Револьверы: Firebrand / Viper-23 /  Horizon-X (IQ) / Rhino (NT) / R-23 'Viper' (S)
 - Винтовки: Absolution Lever Action
@@ -124,8 +124,8 @@ hp
 	damage = 50
 	armour_penetration = 0
 */
-- Используют: 
-- Револьверы: Shadow / Montagne 
+- Используют:
+- Револьверы: Shadow / Montagne
 - Пистолеты: M20 Auto Elite / Pinscher Heavy Pistol (IQ)
 - SMG: Firestorm
 
@@ -140,7 +140,7 @@ hp
 	damage = 70
 	armour_penetration = -10
 */
-- Используют: 
+- Используют:
 - Револьвер: Ashhand Hunting
 - Винтовки: Beacon Break Action
 
@@ -157,7 +157,7 @@ hp
 	damage = 35
 	armour_penetration = 10
 */
-- Используют: 
+- Используют:
 - Штурмовые: CM-82 / SMR-80 (S) / SAW-80 (S)
 - Снапер-DMR: SBR-80 (S)
 
@@ -172,8 +172,8 @@ hp
 	damage = 50
 	armour_penetration = 10
 */
-- Используют: 
-- Винтовки: Illestren / Model 23 'Woodsman' / 
+- Используют:
+- Винтовки: Illestren / Model 23 'Woodsman' / Vickland
 
 
 /* MARK: 7.62x40mm
@@ -187,7 +187,7 @@ hp
 	damage = 40
 	armour_penetration = 10
 */
-- Используют: 
+- Используют:
 - Винтовки: Super Sporter
 - Штурмовые: SKM-24 / SKM-44 (IQ) / CM-24 (SF)
 - LMG: CM-40 (SF)
@@ -203,7 +203,7 @@ hp
 	damage = 60
 	armour_penetration = -10
 */
-- Используют: 
+- Используют:
 - Винтовки:
 - Штурмовые: Morita Mk.I
 - LMG: KM-05 Rottweiler (IQ)
@@ -283,7 +283,7 @@ bullet
 	damage = 40
 	armour_penetration = 50
 */
-- Используют: 
+- Используют:
 - Снайпер: Boomslang-90 / SSG-08 Saluki (IQ) / CM-F90 (SF) / MSR-90 'Boomslang' (S)
 
 /* MARK: 7.62x54mm
@@ -297,7 +297,7 @@ bullet
 	damage = 50
 	armour_penetration = 40
 */
-- Используют: 
+- Используют:
 - Снайпер: Scout Sniper
 
 // Гаусс
@@ -754,8 +754,8 @@ MARK: .22lr
 // 	contains = list(/obj/item/storage/box/ammo/a308/a308_rub)
 // 	cost = 300
 
-/datum/supply_pack/faction/independent/ammo/a308_sp_box
-	name = ".308 SP Ammo Box"
+/datum/supply_pack/faction/independent/ammo/a308_hp_box
+	name = ".308 hp Ammo Box"
 	desc = "Contains a 40-round .308 box loaded with soft point ammo, great against unarmored targets."
 	contains = list(/obj/item/storage/box/ammo/a308/hp)
 	cost = 800
@@ -765,6 +765,15 @@ MARK: .22lr
 // 	desc = "Contains a 40-round .308 box loaded with armor piercing ammo."
 // 	contains = list(/obj/item/storage/box/ammo/a308/ap)
 // 	cost = 1300
+
+/*
+	MARK: 7.62x54mm
+*/
+/datum/supply_pack/faction/independent/ammo/x762_54_box
+	name = "7.62x54mm Ammo Box"
+	desc = "Contains a 40-round 7.62x54mm box loaded with SVD ammo, great against lightly armored targets."
+	contains = list(/obj/item/storage/box/ammo/x762_54)
+	cost = 500
 
 /*
 	MARK: 6.5x57mm
