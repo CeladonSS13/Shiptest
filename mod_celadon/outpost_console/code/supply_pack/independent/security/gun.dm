@@ -359,7 +359,7 @@ hp
 	crate_name = "shotgun crate"
 
 /datum/supply_pack/faction/independent/gun/slammer
-	name = "Slammer Shotgun Crate"
+	name = "Shotgun - Slammer (12g)"
 	desc = "For when you need to deal with a 6-hooligan riot. Contains a mag-fed pump shotgun, with a 6-round capacity."
 	cost = 3000
 	contains = list(/obj/item/storage/guncase/slammer)
@@ -457,7 +457,7 @@ hp
 	crate_name = "rifle crate"
 
 /datum/supply_pack/faction/independent/gun/pyre
-	name = "Rifle - Pyre Lever Action Rifle (.45-70)"
+	name = "Rifle - Pyre Lever Action (.45-70)"
 	desc = "Contains a devastating but unwieldy lever-action rifle for annihilating larger wildlife. Chambered in .45-70."
 	cost = 4000
 	contains = list(/obj/item/storage/guncase/pyre)
@@ -476,8 +476,8 @@ hp
 	armour_penetration = 10
 */
 /datum/supply_pack/faction/independent/gun/hydra80
-	name = "Rifle - Hydra-80 Rifle (5.56x42mm CLIP)"
-	desc = "Contains a dated variant of the Hydra assault rifle, with a quick trigger and semi-auto. Accepts only small magazines. Chambered in 5.56 CLIP"
+	name = "Rifle - Hydra-80 (5.56x42mm)"
+	desc = "Contains a dated variant of the Hydra assault rifle, with a quick trigger and semi-auto. Accepts only small magazines. Chambered in 5.56x42mm"
 	contains = list(/obj/item/storage/guncase/hydra80)
 	cost = 2500
 	crate_name = "rifle crate"
@@ -531,7 +531,7 @@ hp
 	armour_penetration = -10
 */
 /datum/supply_pack/faction/independent/gun/f3
-	name = "DMR - F3 marksman rifle (.308)"
+	name = "DMR - F3 Marksman (.308)"
 	desc = "Contains an old semi-automatic marksman rifle chambered in .308 and is usually produced by Solar Federation. Come with 2 empty 10-round magazines."
 	cost = 4000
 	contains = list(/obj/item/storage/guncase/f3)

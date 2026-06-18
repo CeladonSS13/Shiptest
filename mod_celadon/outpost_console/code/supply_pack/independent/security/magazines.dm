@@ -106,8 +106,8 @@
 	cost = 300
 
 /datum/supply_pack/faction/independent/magazine/short_hydra_mag
-	name = "SBR-80 DMR - Short Magazine (5.56x42mm)"
-	desc = "Contains a 5.56x42mm made specially for the SBR-80 Designated Marksman Rifle, with a capacity of 20 rounds."
+	name = "Hydra-80 - Short Magazine (5.56x42mm)"
+	desc = "Contains a 5.56x42mm made specially for the Hydra-80, with a capacity of 20 rounds."
 	contains = list(/obj/item/ammo_box/magazine/m556_42_hydra/small/empty)
 	cost = 300
 
@@ -130,7 +130,7 @@
 	cost = 750
 
 /datum/supply_pack/faction/independent/magazine/f4_mag
-	name = ".308 F3/F4 Magazine"
+	name = "F3/F4 Magazine (.308)"
 	desc = "Contains a .308 magazine for SsG-04 and F3 platform rifles, with a capacity of 10 rounds."
 	contains = list(/obj/item/ammo_box/magazine/f4_308/empty)
 	cost = 500
