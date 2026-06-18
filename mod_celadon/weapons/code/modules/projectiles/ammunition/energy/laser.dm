@@ -105,6 +105,7 @@
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/shotgun
 	pellets = 4
 	variance = 35
+	e_cost = 1000
 
 /obj/item/ammo_casing/energy/laser/nanotrasen/mini
 	fire_sound = 'sound/weapons/gun/laser/nt-fire_light.ogg'

@@ -51,7 +51,7 @@ MARK: E-Guns - NT-SL
 /datum/supply_pack/faction/nanotrasen/gun/sunbeam
 	name = "E-SMG - SL X-49 'Sunbeam'"
 	desc = "A dual-mode energy SMG capable of discharging weak armor-piercing projectiles. Produced by Nanotrasen-Sharplite."
-	cost = 1500
+	cost = 2500
 	contains = list(/obj/item/storage/guncase/energy/sunbeam)
 
 /datum/supply_pack/faction/nanotrasen/gun/ultima

@@ -258,17 +258,18 @@
 
 	w_class = WEIGHT_CLASS_BULKY
 
+	slot_offsets = list(
+		ATTACHMENT_SLOT_RAIL = list(
+			"x" = 30,
+			"y" = 15,
+		)
+	)
+
 /obj/item/gun/energy/e_gun/e_old/smg/sunbeam/inteq
 	name = "\improper VEC-04 'Gleam' Energy SMG"
 	desc = "A mostly cosmetic IRMG modification of the Sharplite X-39 'Sunbeam'. Rapidly fires weak lethal and disabler bolts."
 	icon_state = "sunbeam_inteq"
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32guns.dmi'
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/smg/ap, /obj/item/ammo_casing/energy/disabler/smg/ap)
-
-	shaded_charge = TRUE
-	fire_delay = 0.1 SECONDS
-
-	w_class = WEIGHT_CLASS_BULKY
 
 //Base Eshotgun
 
@@ -303,10 +304,6 @@
 
 	slot_available = SHARPLITE_ATTACH_SLOTS
 	slot_offsets = list(
-		ATTACHMENT_SLOT_MUZZLE = list(
-			"x" = 44,
-			"y" = 19,
-		),
 		ATTACHMENT_SLOT_RAIL = list(
 			"x" = 30,
 			"y" = 15,
@@ -338,6 +335,13 @@
 	spread = 12
 	spread_unwielded = 35
 
+	slot_offsets = list(
+		ATTACHMENT_SLOT_RAIL = list(
+			"x" = 36,
+			"y" = 14,
+		)
+	)
+
 //EDMR
 
 /obj/item/gun/energy/e_gun/e_old/dmr
@@ -362,6 +366,13 @@
 
 	zoom_amt = DMR_ZOOM
 	zoom_out_amt = 5
+
+	slot_offsets = list(
+		ATTACHMENT_SLOT_RAIL = list(
+			"x" = 35,
+			"y" = 15,
+		)
+	)
 
 //Laser cannon - Esniper
 
@@ -403,6 +414,8 @@
 
 /obj/item/gun/energy/disabler
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler/nanotrasen)
+
+//empty guns
 
 /obj/item/gun/energy/e_gun/e_old/hades/empty_cell
 	spawn_no_ammo = TRUE
