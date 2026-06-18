@@ -17,11 +17,16 @@
 
 /datum/mission/acquire/accept(datum/overmap/ship/controlled/acceptor, turf/accept_loc, obj/hangar_crate_spawner/cargo_belt)
 	. = ..()
+// [CELADON-EDIT] - SIMPLED SPAWN DRILL
+/*
 	if(isnull(cargo_belt))
 		container = spawn_bound(container_type, accept_loc, VARSET_CALLBACK(src, container, null))
 		stack_trace("[src] issued by [source_outpost] could not find cargo chute to send items down. Fell back to cargo console.")
 	else
 		container = spawn_bound(container_type, cargo_belt.loc, VARSET_CALLBACK(src, container, null))
+	*/
+	container = spawn_bound(container_type, cargo_belt.loc, VARSET_CALLBACK(src, container, null))
+// [/CELADON-EDIT]
 	container.name += " ([capitalize(objective_type.name)])"
 
 /datum/mission/acquire/Destroy()
