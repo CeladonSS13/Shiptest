@@ -1,26 +1,26 @@
+#define SHARPLITE_ATTACHMENTS list(/obj/item/attachment/laser_sight,/obj/item/attachment/rail_light,/obj/item/attachment/bayonet,/obj/item/attachment/energy_bayonet,/obj/item/attachment/scope,/obj/item/attachment/gun)
+#define SHARPLITE_ATTACH_SLOTS list(ATTACHMENT_SLOT_MUZZLE = 1, ATTACHMENT_SLOT_SCOPE = 1, ATTACHMENT_SLOT_RAIL = 1)
+
 // Баланс ионок. Снаряд находится в mod_celadon\weapons\code\modules\projectiles\projectile\energy\beams.dm
 /obj/item/gun/energy/ionrifle
 	w_class = WEIGHT_CLASS_BULKY
 
 // Мьелниз наделал эти изменения.
 // https://github.com/CeladonSS13/Shiptest/pull/845
-/obj/item/gun/energy/laser/captain
-	internal_cell = TRUE
-
 /obj/item/gun/energy/laser/bluetag
-	internal_cell = TRUE
+	internal_magazine = TRUE
 
 /obj/item/gun/energy/laser/redtag
-	internal_cell = TRUE
+	internal_magazine = TRUE
 
 /obj/item/gun/energy/spur
-	internal_cell = TRUE
+	internal_magazine = TRUE
 
 
 // MARK: RETURN OLD
 
 /obj/item/gun/energy/e_gun/e_old
-	name = "SL X-10 Energy Carbine"
+	name = "SL X-10 'Patriot' Energy Carbine"
 	desc = "A lightweight energy carbine capable of discharging decently powerful laser and disabler bolts. Commonly seen as a security self-defence weapon."
 	icon_state = "energy"
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32_old.dmi'
@@ -39,13 +39,14 @@
 		/obj/item/stock_parts/cell/gun/sharplite/empty,
 		/obj/item/stock_parts/cell/gun/sharplite/plus/empty,
 	)
+	valid_attachments = SHARPLITE_ATTACHMENTS
 	manufacturer = MANUFACTURER_SHARPLITE_NEW
 
 /obj/item/gun/energy/e_gun/e_old/empty_cell
 	spawn_no_ammo = TRUE
 
 /obj/item/gun/energy/e_gun/e_old/mini
-	name = "SL X-26 Miniature Energy Pistol"
+	name = "SL X-26 'Ember' Miniature Energy Pistol"
 	desc = "A lightweight, civilian marketed Sharplite pistol, popular among Vigilitas security personnel as a reliable dual-mode sidearm. Built-in flashlight included."
 	icon_state = "mini"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen/mini, /obj/item/ammo_casing/energy/disabler/nanotrasen/mini)
@@ -54,6 +55,8 @@
 	allowed_ammo_types = list(
 		/obj/item/stock_parts/cell/gun/mini,
 		/obj/item/stock_parts/cell/gun/sharplite/mini,
+		/obj/item/stock_parts/cell/gun/mini/empty,
+		/obj/item/stock_parts/cell/gun/sharplite/mini/empty,
 	)
 	throwforce = 11 //This is funny, trust me.
 	ammo_x_offset = 2
@@ -66,7 +69,10 @@
 	spread = 2
 	spread_unwielded = 5
 
-	default_attachments = list(/obj/item/attachment/rail_light)
+	unique_attachments = list(
+		/obj/item/attachment/rail_light/mini
+	)
+	default_attachments = list(/obj/item/attachment/rail_light/mini)
 
 /obj/item/gun/energy/e_gun/e_old/mini/empty_cell
 	spawn_no_ammo = TRUE
@@ -79,8 +85,6 @@
 	charge_sections = 5
 
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/assault/nanotrasen, /obj/item/ammo_casing/energy/disabler/assault/nanotrasen)
-	//default_ammo_type = /obj/item/stock_parts/cell/gun/upgraded
-	default_ammo_type = /obj/item/stock_parts/cell/gun //nerfs the power cell to a standart one
 
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
@@ -223,8 +227,10 @@
 	shaded_charge = TRUE
 	manufacturer = MANUFACTURER_SHARPLITE_NEW
 
+//Base ESMG
+
 /obj/item/gun/energy/e_gun/e_old/smg
-	name = "\improper SL X-49 E-TAR SMG"
+	name = "\improper SL X-36 E-TAR SMG"
 	desc = "A dual-mode energy gun capable of discharging weaker shots at a much faster rate than the standard energy gun."
 	icon_state = "esmg"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/smg, /obj/item/ammo_casing/energy/disabler/smg)
@@ -239,38 +245,125 @@
 	default_firemode = FIREMODE_SEMIAUTO
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
 
+//AP ESMG
+
+/obj/item/gun/energy/e_gun/e_old/smg/sunbeam
+	name = "\improper SL X-39 'Sunbeam' Energy SMG"
+	desc = "A variable Sharplite energy SMG capable of discharging armor-piercing bolts, at the cost of a bulkier frame. Frequently used by Vigilitas Troopers against heavy armor."
+	icon_state = "sunbeam"
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/smg/ap, /obj/item/ammo_casing/energy/disabler/smg/ap)
+
+	shaded_charge = TRUE
+	fire_delay = 0.1 SECONDS
+
+	w_class = WEIGHT_CLASS_BULKY
+
+/obj/item/gun/energy/e_gun/e_old/smg/sunbeam/inteq
+	name = "\improper VEC-04 'Gleam' Energy SMG"
+	desc = "A mostly cosmetic IRMG modification of the Sharplite X-39 'Sunbeam'. Rapidly fires weak lethal and disabler bolts."
+	icon_state = "sunbeam_inteq"
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32guns.dmi'
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/smg/ap, /obj/item/ammo_casing/energy/disabler/smg/ap)
+
+	shaded_charge = TRUE
+	fire_delay = 0.1 SECONDS
+
+	w_class = WEIGHT_CLASS_BULKY
+
+//Base Eshotgun
+
 /obj/item/gun/energy/e_gun/e_old/iot
 	name = "\improper SL E-SG 500 Second Edition"
-	desc = "A improved version of the E-SG 255. It now includes two firing modes, disable and kill."
+	desc = "A cumbersome, variable energy weapon with a multifaceted lens allowing it to function similarly to a ballistic shotgun."
 	icon_state = "iotshotgun"
 	fire_delay = 0.6 SECONDS
 	shaded_charge = TRUE
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/iot, /obj/item/ammo_casing/energy/disabler/scatter/iot)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/shotgun/nanotrasen, /obj/item/ammo_casing/energy/disabler/scatter/shotgun/nanotrasen)
 	charge_sections = 5
 	ammo_x_offset = 2
 	automatic_charge_overlays = TRUE
+	randomspread = FALSE
+	gun_firemodes = list(FIREMODE_SEMIAUTO)
+	default_firemode = FIREMODE_SEMIAUTO
 
 	w_class = WEIGHT_CLASS_BULKY
-	var/obj/item/modular_computer/integratedNTOS
-	var/NTOS_type = /obj/item/modular_computer/internal
 
-/obj/item/gun/energy/e_gun/e_old/iot/examine(mob/user)
-	. = ..()
-	. += "You can use integrated computer by pressing the <b>secondary action</b> key. By default, this is <b>Shift + Space</b>"
+//Burst EShotgun
 
-/obj/item/gun/energy/e_gun/e_old/iot/Initialize()
-	. = ..()
-	if(NTOS_type)
-		integratedNTOS = new NTOS_type(src)
-		integratedNTOS.physical = src
+/obj/item/gun/energy/e_gun/e_old/iot/blaze
+	name = "\improper SL AL-370 'Blaze' Energy Shotgun"
+	desc = "An experimental improvement over the aging E-SG series, featuring double laser bursts and a heavier frame, it now can apply even more pressure on whatever you decide to kill. The nonlethal disabler mode had to be sacrificed in order to achieve higher power output."
+	icon_state = "blaze"
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/shotgun/nanotrasen/burst)
+	charge_sections = 4
+	gun_firemodes = list(FIREMODE_BURST)
+	default_firemode = FIREMODE_BURST
 
-/obj/item/gun/energy/e_gun/e_old/iot/secondary_action(user)
-	if(!integratedNTOS)
-		return
-	integratedNTOS.interact(user)
-	. = ..()
+	burst_size = 2
 
-//Laser cannon
+	slot_available = SHARPLITE_ATTACH_SLOTS
+	slot_offsets = list(
+		ATTACHMENT_SLOT_MUZZLE = list(
+			"x" = 44,
+			"y" = 19,
+		),
+		ATTACHMENT_SLOT_RAIL = list(
+			"x" = 30,
+			"y" = 15,
+		)
+	)
+
+//Heavy energy machine gun... truly cursed
+
+/obj/item/gun/energy/e_gun/e_old/emg
+	name = "SL AL-690 'Daybreak' Energy Machine Gun"
+	desc = "Dear God. Somehow, the development of Sharplite energy weaponry has led us to this. It will absolutely decimate whatever stands in your way with an endless stream of assault lasers. How this does not violate some galactic convention is beyond you."
+	icon_state = "daybreak"
+	w_class = WEAPON_VERY_HEAVY
+	weapon_weight = WEAPON_VERY_HEAVY
+	default_ammo_type = /obj/item/stock_parts/cell/gun/large
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/assault/nanotrasen/emg)
+	allowed_ammo_types = list(
+		/obj/item/stock_parts/cell/gun/large,
+		/obj/item/stock_parts/cell/gun/large/empty,
+	)
+	gun_firemodes = list(FIREMODE_FULLAUTO)
+	default_firemode = FIREMODE_FULLAUTO
+	shaded_charge = TRUE
+
+	fire_delay = 0.15 SECONDS
+	wield_delay = 2 SECONDS
+
+	fire_sound_volume = 90
+	spread = 12
+	spread_unwielded = 35
+
+//EDMR
+
+/obj/item/gun/energy/e_gun/e_old/dmr
+	name = "SL L-211 'Parallax' Energy Marksman Rifle"
+	desc = "An extensive modification on the X-10 frame, featuring stronger armor-piercing bolts and a decent scope. The energy efficiency had to be somewhat sacrificed."
+	icon_state = "parallax"
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen/dmr)
+	ammo_x_offset = 1
+	shaded_charge = TRUE
+	manufacturer = MANUFACTURER_SHARPLITE_NEW
+
+	zoomable = TRUE
+	wield_slowdown = DMR_SLOWDOWN
+	aimed_wield_slowdown = LONG_RIFLE_AIM_SLOWDOWN
+	wield_delay = 1 SECONDS
+	fire_delay = 0.6 SECONDS
+
+	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
+
+	spread = 0
+	spread_unwielded = 12
+
+	zoom_amt = DMR_ZOOM
+	zoom_out_amt = 5
+
+//Laser cannon - Esniper
 
 /obj/item/gun/energy/lasercannon
 	name = "SL AL-602 'Phoenix' Energy Cannon"
@@ -286,6 +379,7 @@
 	default_ammo_type = /obj/item/stock_parts/cell/gun/large
 	allowed_ammo_types = list(
 		/obj/item/stock_parts/cell/gun/large,
+		/obj/item/stock_parts/cell/gun/large/empty,
 	)
 	force = 10
 	flags_1 =  CONDUCT_1
@@ -295,7 +389,7 @@
 	fire_sound_volume = 90
 	zoom_amt = 10
 	zoom_out_amt = 5
-	wield_slowdown = AMR_SLOWDOWN
+	wield_slowdown = LASER_SNIPER_SLOWDOWN
 	manufacturer = MANUFACTURER_SHARPLITE_NEW
 
 	spread = -5
@@ -303,10 +397,7 @@
 
 	wield_delay = 1.3 SECONDS
 
-	slot_available = list(
-		ATTACHMENT_SLOT_MUZZLE = 1,
-		ATTACHMENT_SLOT_RAIL = 1
-	)
+	slot_available = SHARPLITE_ATTACH_SLOTS
 
 //disabler
 
@@ -347,7 +438,7 @@
 
 /obj/item/stock_parts/cell/gun/sharplite
 	name = "plasma power cell"
-	desc = "A proprietary power cell primarily used by Sharplite Plasma weaponry. Nanotrasen's large market share has forced some weapon developers to include adapters for these cells"
+	desc = "A proprietary power cell primarily used by Sharplite Plasma weaponry. Nanotrasen's large market share has forced some weapon developers to include adapters for these cells."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/power.dmi'
 	icon_state = "plasma-cell"
 	base_state = "plasma"	// Оверлей - Цвет-заряда батареек
@@ -362,7 +453,10 @@
 	maxcharge = 30000
 
 /obj/item/stock_parts/cell/gun/mini
+	name = "miniature energy power cell"
+	desc = "A compact weapon cell primarily used by Sharplite Energy weaponry. Nanotrasen's large market share has forced some weapon developers to include adapters for these cells. It holds less charge and is intended for usage in energy handguns."
 	icon = 'icons/obj/power.dmi'
+	icon_state = "mg-cell"
 	reskin = FALSE
 
 /obj/item/stock_parts/cell/gun/solgov
@@ -382,5 +476,14 @@
 	reskin = FALSE
 
 /obj/item/stock_parts/cell/gun/sharplite/mini
+	name = "miniature plasma power cell"
+	desc = "A compact weapon cell used exclusively by Sharplite Plasma weaponry. It holds less charge and is intended for usage in energy handguns."
 	icon = 'icons/obj/power.dmi'
 	reskin = FALSE
+
+// Выше вместимость увеличена была в 1.5 раза, и расход тоже соответственно
+/obj/item/ammo_casing/energy/lasergun/sharplite/sniper
+	e_cost = 3000 // 5 per regular cell 10 per upgraded cell
+
+#undef SHARPLITE_ATTACHMENTS
+#undef SHARPLITE_ATTACH_SLOTS

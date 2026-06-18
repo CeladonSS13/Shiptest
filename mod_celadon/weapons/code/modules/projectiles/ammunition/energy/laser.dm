@@ -6,16 +6,16 @@
 
 //Ammo Casings
 
-/obj/item/ammo_casing/energy/laser/iot
-	projectile_type = /obj/projectile/beam/laser/nanotrasen/iot
+/obj/item/ammo_casing/energy/laser/shotgun/nanotrasen
+	projectile_type = /obj/projectile/beam/laser/nanotrasen/shotgun
 	fire_sound = 'sound/weapons/laser4.ogg'
 	pellets = 6 //now actually working like an eshotgun, and not a shitty bursting egun
 	variance = 35
 	e_cost = 1428
 	select_name = "kill"
 
-/obj/item/ammo_casing/energy/disabler/scatter/iot
-	projectile_type = /obj/projectile/beam/disabler/nanotrasen/iot
+/obj/item/ammo_casing/energy/disabler/scatter/shotgun/nanotrasen
+	projectile_type = /obj/projectile/beam/disabler/nanotrasen/shotgun
 	select_name = "disable"
 	pellets = 6
 	variance = 35
@@ -31,10 +31,20 @@
 	projectile_type = /obj/projectile/beam/disabler/nanotrasen/weak
 	e_cost = 300
 
+/obj/item/ammo_casing/energy/disabler/smg/ap
+	projectile_type = /obj/projectile/beam/disabler/nanotrasen/weak/ap
+	select_name = "disable"
+	delay = 0.1 SECONDS
+
 // Тепер етар использует данный снаряд
 /obj/item/ammo_casing/energy/laser/smg
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/weak
 	e_cost = 396 //cheaper to fire but worse projectiles as stated above
+
+/obj/item/ammo_casing/energy/laser/smg/ap
+	projectile_type = /obj/projectile/beam/laser/nanotrasen/weak/ap
+	select_name = "kill"
+	delay = 0.1 SECONDS
 
 /obj/item/ammo_casing/energy/laser/sharplite/smg
 	projectile_type = /obj/projectile/beam/weak/sharplite
@@ -54,6 +64,13 @@
 	e_cost = 500
 	delay = 0.3 SECONDS
 
+
+/obj/item/ammo_casing/energy/laser/nanotrasen/dmr
+	projectile_type = /obj/projectile/beam/laser/nanotrasen/dmr
+	select_name = "kill"
+	e_cost = 1000
+	delay = 0.6 SECONDS
+
 /obj/item/ammo_casing/energy/electrode/nanotrasen
 	projectile_type = /obj/projectile/energy/electrode/nanotrasen
 	select_name = "stun"
@@ -71,11 +88,23 @@
 	delay = 2
 	e_cost = 500 //gives hades 5 more shots to balance out the standart power cell
 
+/obj/item/ammo_casing/energy/laser/assault/nanotrasen/emg
+	projectile_type = /obj/projectile/beam/laser/nanotrasen/assault
+	fire_sound = 'sound/weapons/gun/laser/e40_las.ogg'
+	delay = 0.15 SECONDS
+	e_cost = 500
+
 /obj/item/ammo_casing/energy/laser/accelerator
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/sniper
 	select_name = "accelerator"
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
+	delay = 1 SECONDS
 	e_cost = 5000
+
+/obj/item/ammo_casing/energy/laser/shotgun/nanotrasen/burst
+	projectile_type = /obj/projectile/beam/laser/nanotrasen/shotgun
+	pellets = 4
+	variance = 35
 
 /obj/item/ammo_casing/energy/laser/nanotrasen/mini
 	fire_sound = 'sound/weapons/gun/laser/nt-fire_light.ogg'

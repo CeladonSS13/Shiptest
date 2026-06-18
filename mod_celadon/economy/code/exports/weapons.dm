@@ -67,32 +67,32 @@
 // MARK: Nanotrasen
 
 /datum/export/weapon/mini_energy
-	unit_name = "NT-SL X26 Miniature energy pistol"
+	unit_name = "NT-SL X-26 'Ember' Miniature Energy Pistol"
 	desc = "One of the most basic energy weapons in the universe. Compact but low capacity. Shoots lethal and disabler lasers. A simple, yet an inefficient PDW. Power in a pocket! Produced by Nanotrasen-Sharplite"
 	export_types = list(/obj/item/gun/energy/e_gun/e_old/mini)
 	cost = 50
 
 /datum/export/weapon/energy
-	unit_name = "NT-SL E-Rifle"
+	unit_name = "NT-SL X-10 'Patriot' Energy Carbine"
 	desc = "One of the most basic energy weapons in the universe. Shoots lethal and disabler lasers. A simple, yet an efficient PDW. It is the egun. Produced by Nanotrasen-Sharplite"
 	export_types = list(/obj/item/gun/energy/e_gun/e_old)
 	cost = 125
 	include_subtypes = FALSE
 
 /datum/export/weapon/etar
-	unit_name = "NT-SL 'E-TAR' SMG energy rifle"
+	unit_name = "NT-SL X-36 E-TAR SMG"
 	desc = "compact energy-based PDW platform, ideal for suppressing threats at mid-range. For NT employee use only."
 	export_types = list(/obj/item/gun/energy/e_gun/e_old/smg)
 	cost = 200
 
 /datum/export/weapon/ultima
-	unit_name = "NT-SL 'E-SG 500 Second Edition' energy shotgun"
-	desc = "Contains an energy-based shotgun equipped with dual kill/disable modes, ideal for short range. The on-board computer is notoriously unreliable. For NT employee use only."
+	unit_name = "NT-SL E-SG 500"
+	desc = "Contains an energy-based shotgun equipped with dual kill/disable modes, ideal for short range. For NT employee use only."
 	export_types = list(/obj/item/gun/energy/e_gun/e_old/iot)
 	cost = 300
 
 /datum/export/weapon/heavylaser
-	unit_name = "NT-SL Laser Accelerator Cannon"
+	unit_name = "NT-SL AL-602 'Phoenix' Energy Cannon"
 	desc = "A sniper-like Nanotrasen laser gun that deals more damage if the target is far away. You can't attach a scope to it, though"
 	export_types = list(/obj/item/gun/energy/lasercannon)
 	cost = 350
