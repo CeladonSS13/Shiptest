@@ -106,7 +106,7 @@
 	item = /obj/item/gun/ballistic/automatic/hmg/mower
 	pair_item = list(/datum/blackmarket_item/ammo/mower)
 
-	cost_min = 4000
-	cost_max = 5000
+	cost_min = 5000
+	cost_max = 6500
 	stock = 1
 	availability_prob = 25
