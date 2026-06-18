@@ -15,6 +15,7 @@
 	export_types = list(
 		/obj/item/documents
 	)
+	exclude_types = list(/obj/item/documents/photocopy) // [CELADON-ADD] - CELADON_ECONOMY
 
 /datum/export/anomaly
 	unit_name = "stabilized anomaly core"
