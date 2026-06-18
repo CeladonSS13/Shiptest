@@ -381,15 +381,17 @@
 
 //Laser cannon - Esniper
 
-/obj/item/gun/energy/lasercannon
+/obj/item/gun/energy/e_gun/e_old/sniper
 	name = "SL AL-602 'Phoenix' Energy Cannon"
 	desc = "An advanced sniper-like laser cannon that does more damage the farther away the target is. You can attach a scope to it! Infact, it comes with one already inbuit."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32_old.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/lefthand_old.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/righthand_old.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob.dmi'
-	icon_state = "lasercannon"
-	item_state = "lasercannon"
+	icon_state = "phoenix"
+	item_state = "phoenix"
+	shaded_charge = TRUE
+	charge_sections = 5
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	default_ammo_type = /obj/item/stock_parts/cell/gun/large
@@ -400,7 +402,7 @@
 	force = 10
 	flags_1 =  CONDUCT_1
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/accelerator)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/accelerator/nanotrasen)
 	ammo_x_offset = 3
 	fire_sound_volume = 90
 	zoom_amt = 8

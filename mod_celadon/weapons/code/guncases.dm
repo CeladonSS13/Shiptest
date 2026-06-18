@@ -129,7 +129,7 @@ MARK: Nanotrasen guncases
 	mag_type = /obj/item/stock_parts/cell/gun
 
 /obj/item/storage/guncase/heavylaser
-	gun_type = /obj/item/gun/energy/lasercannon
+	gun_type = /obj/item/gun/energy/e_gun/e_old/sniper
 	mag_type = /obj/item/stock_parts/cell/gun/large
 
 /obj/item/storage/guncase/sabersmg

@@ -4788,6 +4788,9 @@
 	dir = 8
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable/cyan{
+	icon_state = "1-4"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engines/starboard)
 "HR" = (
@@ -5098,6 +5101,9 @@
 	dir = 2;
 	pixel_x = 10;
 	pixel_y = 21
+	},
+/obj/structure/cable/cyan{
+	icon_state = "0-8"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engines/starboard)

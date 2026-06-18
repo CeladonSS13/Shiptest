@@ -68,6 +68,13 @@ MARK: E-Guns - NT-SL
 	contains = list(/obj/item/storage/guncase/energy/blaze)
 	crate_name = "shotgun crate"
 
+/datum/supply_pack/faction/nanotrasen/gun/blaze
+	name = "E-Shotgun - SL AL-370 'Blaze'"
+	desc = "A continuation of the E-SG prototypes featuring a different firemode compared to the classic energy shotgun. Produced by Nanotrasen-Sharplite."
+	cost = 5500
+	contains = list(/obj/item/storage/guncase/energy/blaze)
+	crate_name = "shotgun crate"
+
 /datum/supply_pack/faction/nanotrasen/gun/heavylaser
 	name = "E-Sniper-Rifle - SL AL-602 'Phoenix'"
 	desc = "A sniper-like Sharplite energy weapon that deals more damage if the target is far away. Scope included."
