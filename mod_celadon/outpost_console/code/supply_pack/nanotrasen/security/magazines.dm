@@ -17,6 +17,12 @@
 	contains = list(/obj/item/ammo_box/magazine/co9mm/empty)
 	cost = 150
 
+/datum/supply_pack/faction/nanotrasen/magazine/podium_mag
+	name = "Podium Magazine Crate"
+	desc = "Contains a 4.6x30mm magazine for the Podium and Schnauzer pistols, with a capacity of 12 rounds."
+	contains = list(/obj/item/ammo_box/magazine/m46_30_podium)
+	cost = 200
+
 /datum/supply_pack/faction/nanotrasen/magazine/smgm9mm_mag
 	name = "Vector/Saber/Expedition - Magazine (9x18mm)"
 	desc = "Contains a 9x18mm magazine for the Vector, Saber and Expedition SMGs, with a capacity of 30 rounds."
