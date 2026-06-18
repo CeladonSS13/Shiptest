@@ -155,6 +155,7 @@
 	speed = 0.3 //egun buff - просто мувспид с плазмапушек
 
 /obj/projectile/beam/laser/nanotrasen/weak
+	icon_state = "sl_laser_light"
 	damage = 15
 	armour_penetration = -15
 
@@ -166,6 +167,7 @@
 	speed = 0.3
 
 /obj/projectile/beam/disabler/nanotrasen/weak
+	icon_state = "sl_disabler_light"
 	damage = 18
 	armour_penetration = -10
 
@@ -266,12 +268,10 @@
 
 /obj/projectile/beam/laser/nanotrasen/weak/mini
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
-	icon_state = "sl_laser_light"
 	armour_penetration = 5
 
 /obj/projectile/beam/disabler/nanotrasen/weak/mini
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
-	icon_state = "sl_disabler_light"
 	armour_penetration = 10
 
 // /obj/item/gun/energy/laser/captain
