@@ -51,7 +51,7 @@
 
 /datum/blackmarket_item/ammo/twobore_box
 	name = "Two-Bore Ammo Box"
-	desc = "Contains a 16-round two-bore buckshot ammo box."
+	desc = "Contains a 32-round two-bore buckshot ammo box."
 	item = /obj/item/storage/box/ammo/twobore
 	cost_min = 400
 	cost_max = 600
