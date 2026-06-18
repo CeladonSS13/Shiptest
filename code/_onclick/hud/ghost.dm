@@ -1,5 +1,7 @@
 /atom/movable/screen/ghost
-	icon = 'icons/hud/screen_ghost.dmi'
+	// [CELADON-EDIT] - OLD CODE: icon = 'icons/hud/screen_ghost.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/assets/hud/screen_ghost.dmi'
+	// [/CELADON-EDIT]
 
 /atom/movable/screen/ghost/MouseEntered(location, control, params)
 	. = ..()
