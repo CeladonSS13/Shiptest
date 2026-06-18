@@ -48,25 +48,25 @@ MARK: 9x18mm
 
 /datum/supply_pack/faction/inteq/ammo/wt_ammo_box
 	name = "4.6x30mm ammo box"
-	desc = "4.6x30mm ammo box for guns like the P46 Schnauzer. Contains 50 shells"
+	desc = "4.6x30mm ammo box for guns like the P46 Schnauzer. Contains 80 shells"
 	contains = list(/obj/item/storage/box/ammo/c46x30mm)
 	cost = 300 // old - 500
 
 /datum/supply_pack/faction/inteq/ammo/wt_ammo_box_ap
 	name = "4.6x30mm AP ammo box"
-	desc = "4.6x30mm AP ammo box for guns like the P46 Schnauzer. Contains 50 shells"
+	desc = "4.6x30mm AP ammo box for guns like the P46 Schnauzer. Contains 80 shells"
 	contains = list(/obj/item/storage/box/ammo/c46x30mm/ap)
 	cost = 600 // old - 1000
 
 /datum/supply_pack/faction/inteq/ammo/wt_ammo_box_hp
 	name = "4.6x30mm HP ammo box"
-	desc = "4.6x30mm HP ammo box for guns like the P46 Schnauzer. Contains 50 shells"
+	desc = "4.6x30mm HP ammo box for guns like the P46 Schnauzer. Contains 80 shells"
 	contains = list(/obj/item/storage/box/ammo/c46x30mm/hp)
 	cost = 375 // old - 700
 
 /datum/supply_pack/faction/inteq/ammo/wt_ammo_box_rubber
 	name = "4.6x30mm Rubber ammo box"
-	desc = "4.6x30mm Rubber ammo box for guns like the P46 Schnauzer. Contains 50 shells"
+	desc = "4.6x30mm Rubber ammo box for guns like the P46 Schnauzer. Contains 80 shells"
 	contains = list(/obj/item/storage/box/ammo/c46x30mm/rubber)
 	cost = 300 // old - 500
 
@@ -182,22 +182,21 @@ MARK: 9x18mm
 
 /datum/supply_pack/faction/inteq/ammo/a762_ammo_box
 	name = "7.62x40mm Ammo Box"
-	desc = "Contains two 120-round 7.62x40mm ammo, issued by IRMG."
-	contains = list(/obj/item/storage/box/ammo/a762_40/inteq,
-					/obj/item/storage/box/ammo/a762_40/inteq)
-	cost = 700
+	desc = "Contains one 60-round 7.62x40mm ammo, issued by IRMG."
+	contains = list(/obj/item/storage/box/ammo/a762_40/inteq)
+	cost = 300
 
 /datum/supply_pack/faction/inteq/ammo/a762_ap
 	name = "7.62x40mm Armour Piercing Ammo Box"
 	desc = "Contains one 60-round 7.62x40mm Armour Piercing ammo, issued by IRMG."
 	contains = list(/obj/item/storage/box/ammo/a762_40/ap/inteq)
-	cost = 450
+	cost = 400
 
 /datum/supply_pack/faction/inteq/ammo/a762_hp
 	name = "7.62x40mm Hollow Point Ammo Box"
 	desc = "Contains one 60-round 7.62x40mm Hollow Point ammo, issued by IRMG."
 	contains = list(/obj/item/storage/box/ammo/a762_40/hp/inteq)
-	cost = 450
+	cost = 400
 
 /*
 	MARK: .308
@@ -248,7 +247,7 @@ MARK: 9x18mm
 */
 
 /datum/supply_pack/faction/inteq/ammo/a65clip_box
-	name = "6.5mm Ammo Box Crate"
+	name = "6.5x57mm Ammo Box Crate"
 	desc = "Contains a twenty-round 6.5mm ammo box for various sniper rifles such as the CM-F90 and the Boomslang series."
 	contains = list(/obj/item/storage/box/ammo/a65clip)
 	cost = 200 //4 ammo efficiency at 40 damage
