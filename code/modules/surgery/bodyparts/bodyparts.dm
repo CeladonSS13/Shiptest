@@ -1024,7 +1024,11 @@
 		draw_color = mutation_color
 		if(should_draw_greyscale) //Should the limb be colored?
 			// [CELADON-EDIT] - TAJARA, CELADON_RIOL
-			// draw_color ||= (species_color) || (skin_tone && skintone2hex(skin_tone)) // CELADON-EDIT - ORIGINAL
+			// if(limb_id == SPECIES_MOTH)
+			// 	species_color = H.dna.features["moth_bodyfluff_color"]
+			// draw_color ||= (species_color) || (skin_tone && skintone2hex(skin_tone))draw_color ||= (species_color) || (skin_tone && skintone2hex(skin_tone)) // CELADON-EDIT - ORIGINAL
+			if(limb_id == SPECIES_MOTH)
+				species_color = H.dna.features["moth_bodyfluff_color"]
 			draw_color ||= (species_color) || (skin_tone && skintone2hex(skin_tone)) || (skin_tone_nose && skintonenose2hex(skin_tone_nose)) || (skin_tone_tajara && skintonetajara2hex(skin_tone_tajara)) || (skin_tone_riol && skintoneriol2hex(skin_tone_riol))
 			// [/CELADON-EDIT]
 

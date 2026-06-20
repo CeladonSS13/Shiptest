@@ -68,6 +68,10 @@
 	if(!GLOB.ipc_hair_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/ipc_hair, GLOB.ipc_hair_list)
 	// [/CELADON-ADD] - CELADON_IPC_HAIR
+	if(!GLOB.moth_antennae_list.len)
+		init_sprite_accessory_subtypes(/datum/sprite_accessory/moth_antennae, GLOB.moth_antennae_list)
+	if(!GLOB.moth_head_list.len)
+		init_sprite_accessory_subtypes(/datum/sprite_accessory/moth_head, GLOB.moth_head_list)
 	if(!GLOB.ipc_screens_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/ipc_screens, GLOB.ipc_screens_list)
 	if(!GLOB.ipc_antennas_list.len)
