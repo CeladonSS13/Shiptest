@@ -1257,6 +1257,12 @@
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
 /area/ruin/icemoon/syndioutpost/briefroom)
+"cG" = (
+/obj/structure/flora/rock/pile/icy{
+	density = 0
+	},
+/turf/open/floor/plating/asteroid/snow/icemoon,
+/area/overmap_encounter/planetoid/ice/explored)
 "cH" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 1
@@ -3030,9 +3036,28 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/icemoon/syndioutpost/cafeteria)
 "gs" = (
-/obj/item/flashlight/flare/burnt{
-	pixel_x = 11;
-	pixel_y = 8
+/obj/structure/barricade/security{
+	layer = 2.7
+	},
+/obj/structure/deployable_barricade/sandbags{
+	pixel_x = 0;
+	pixel_y = -7
+	},
+/obj/structure/deployable_barricade/sandbags{
+	pixel_x = 0;
+	pixel_y = 1;
+	dir = 8;
+	layer = 2.87
+	},
+/obj/structure{
+	desc = "A durable turret manufactured by the Gorlex Marauders during the ICW. Some reported examples used anti-vehicle munitions. Most surviving examples are poorly maintained. However, it doesn't seem like this one is actually working.";
+	dir = 10;
+	icon = 'icons/obj/turrets.dmi';
+	icon_state = "syndie_off";
+	anchored = 1;
+	name = "Revolt Turret";
+	pixel_x = 3;
+	pixel_y = 9
 	},
 /turf/open/floor/concrete/reinforced{
 	initial_gas_mix = "ICEMOON_ATMOS"
@@ -3162,6 +3187,13 @@
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
 /area/ruin/icemoon/syndioutpost/checkpoint)
+"gF" = (
+/obj/item/stack/sheet/mineral/sandbags,
+/turf/open/floor/plating{
+	icon_state = "panelscorched";
+	initial_gas_mix = "ICEMOON_ATMOS"
+	},
+/area/overmap_encounter/planetoid/ice/explored)
 "gJ" = (
 /obj/effect/turf_decal/stairs{
 	color = "#a3a2a0";
@@ -3649,11 +3681,11 @@
 /area/overmap_encounter/planetoid/ice/explored)
 "hW" = (
 /obj/effect/turf_decal/siding/wideplating/dark,
-/obj/item/storage/guncase{
-	pixel_x = 10;
-	pixel_y = 17
-	},
 /obj/item/ammo_casing/spent/rifle_steel,
+/obj/item/storage/guncase{
+	pixel_x = 11;
+	pixel_y = 6
+	},
 /turf/open/floor/pod/dark{
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
@@ -5841,6 +5873,13 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/item/grenade/frag{
+	pixel_x = 15;
+	pixel_y = 2
+	},
+/obj/item/mine/directional/claymore/live{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/tiled/white{
 	color = "#444547";
 	initial_gas_mix = "ICEMOON_ATMOS"
@@ -7402,6 +7441,7 @@
 /obj/machinery/camera/autoname{
 	dir = 9
 	},
+/obj/item/mine/directional/claymore/live,
 /turf/open/floor/plating,
 /area/ruin/icemoon/syndioutpost/checkpoint/third)
 "pY" = (
@@ -7962,6 +8002,16 @@
 	},
 /turf/open/floor/pod/dark,
 /area/ruin/icemoon/syndioutpost/botany)
+"ri" = (
+/obj/effect/decal/fakelattice,
+/obj/item/stack/sheet/mineral/sandbags{
+	pixel_x = 3;
+	pixel_y = 6
+	},
+/turf/open/floor/plating{
+	initial_gas_mix = "ICEMOON_ATMOS"
+	},
+/area/overmap_encounter/planetoid/ice/explored)
 "rm" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 8
@@ -8087,6 +8137,32 @@
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
 /area/ruin/icemoon/syndioutpost/hallway/mainhall)
+"rB" = (
+/obj/structure/barricade/security{
+	layer = 2.7
+	},
+/obj/structure{
+	desc = "A durable turret manufactured by the Gorlex Marauders during the ICW. Some reported examples used anti-vehicle munitions. Most surviving examples are poorly maintained. However, it doesn't seem like this one is actually working.";
+	dir = 6;
+	icon = 'icons/obj/turrets.dmi';
+	icon_state = "syndie_off";
+	anchored = 1;
+	name = "Revolt Turret";
+	pixel_y = 7;
+	layer = 3.1
+	},
+/obj/structure/deployable_barricade/sandbags{
+	pixel_x = 0;
+	pixel_y = -9
+	},
+/obj/structure/deployable_barricade/sandbags{
+	pixel_x = 3;
+	dir = 4
+	},
+/turf/open/floor/concrete/reinforced{
+	initial_gas_mix = "ICEMOON_ATMOS"
+	},
+/area/overmap_encounter/planetoid/ice/explored)
 "rC" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 9
@@ -8303,9 +8379,10 @@
 	layer = 2.038
 	},
 /obj/item/implanter{
-	pixel_x = 11;
-	pixel_y = 10
+	pixel_x = 7;
+	pixel_y = 11
 	},
+/obj/item/ammo_casing/spent/rifle_steel,
 /turf/open/floor/pod/dark{
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
@@ -8466,7 +8543,6 @@
 /turf/open/floor/plating/asteroid/icerock,
 /area/overmap_encounter/planetoid/cave/explored)
 "sw" = (
-/obj/item/mine/directional/claymore/live,
 /obj/structure/catwalk/over/plated_catwalk{
 	color = "#a3a2a0"
 	},
@@ -8690,6 +8766,10 @@
 "ta" = (
 /obj/structure/railing/thin{
 	layer = 2.88
+	},
+/obj/item/flashlight/flare/burnt{
+	pixel_x = 11;
+	pixel_y = 9
 	},
 /turf/open/floor/concrete/reinforced{
 	initial_gas_mix = "ICEMOON_ATMOS"
@@ -8991,6 +9071,26 @@
 	},
 /turf/open/lava/plasma/ice_moon,
 /area/overmap_encounter/planetoid/ice/explored)
+"tQ" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/item/ammo_casing/spent/rifle_steel,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/item/ammo_casing/spent/rifle_steel,
+/turf/open/floor/plating{
+	initial_gas_mix = "ICEMOON_ATMOS"
+	},
+/area/ruin/icemoon/syndioutpost/briefroom)
 "tU" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
@@ -10088,6 +10188,20 @@
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
 /area/overmap_encounter/planetoid/cave/explored)
+"wp" = (
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner_steel_grid{
+	dir = 10;
+	layer = 2.037
+	},
+/obj/item/ammo_casing/spent/rifle_steel,
+/turf/open/floor/mineral/titanium/tiled/white{
+	color = "#444547";
+	initial_gas_mix = "ICEMOON_ATMOS"
+	},
+/area/ruin/icemoon/syndioutpost/briefroom)
 "wr" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
@@ -13116,6 +13230,7 @@
 	pixel_x = -6;
 	pixel_y = -5
 	},
+/obj/item/mine/directional/claymore/live,
 /turf/open/floor/pod/dark{
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
@@ -13134,6 +13249,7 @@
 	dir = 9;
 	layer = 2.037
 	},
+/obj/item/mine/directional/claymore/live,
 /turf/open/floor/mineral/titanium/tiled/white{
 	color = "#444547";
 	initial_gas_mix = "ICEMOON_ATMOS"
@@ -14702,6 +14818,28 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/icemoon/syndioutpost/checkpoint/third)
+"GQ" = (
+/obj/structure/barricade/security{
+	layer = 2.7
+	},
+/obj/machinery/porta_turret/ruin/ramzi/heavy{
+	dir = 5;
+	pixel_y = 3;
+	layer = 3.1
+	},
+/obj/structure/deployable_barricade/sandbags{
+	pixel_x = 3;
+	dir = 4
+	},
+/obj/structure/deployable_barricade/sandbags{
+	dir = 1;
+	pixel_y = 5;
+	layer = 2.77
+	},
+/turf/open/floor/concrete/reinforced{
+	initial_gas_mix = "ICEMOON_ATMOS"
+	},
+/area/ruin/icemoon/syndioutpost/assaultpod)
 "GT" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 10;
@@ -17762,8 +17900,8 @@
 	dir = 4
 	},
 /obj/item/paper/crumpled{
-	pixel_x = -8;
-	pixel_y = 2
+	pixel_x = 4;
+	pixel_y = 3
 	},
 /turf/open/floor/plating/asteroid/icerock,
 /area/overmap_encounter/planetoid/cave/explored)
@@ -19073,11 +19211,17 @@
 /turf/open/floor/suns/hatch/mahogany,
 /area/ruin/icemoon/syndioutpost/dorm)
 "PY" = (
-/obj/item/ammo_casing/spent/rifle_steel,
+/obj/structure/barricade/security{
+	layer = 2.7
+	},
+/obj/machinery/porta_turret/ruin/ramzi/heavy{
+	dir = 5;
+	pixel_y = 4
+	},
 /turf/open/floor/pod/dark{
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
-/area/ruin/icemoon/syndioutpost/briefroom)
+/area/ruin/icemoon/syndioutpost/assaultpod)
 "Qa" = (
 /obj/item/mine/directional/claymore/live,
 /turf/open/floor/plating/asteroid/icerock/cracked,
@@ -19209,6 +19353,12 @@
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
 /area/ruin/icemoon/syndioutpost/checkpoint/second)
+"Qq" = (
+/obj/item/mine/directional/claymore/live{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/icerock/cracked,
+/area/overmap_encounter/planetoid/cave/explored)
 "Qr" = (
 /obj/structure/railing/thin/corner,
 /obj/structure/catwalk/over/plated_catwalk{
@@ -23140,6 +23290,23 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/icemoon/syndioutpost/cafeteria)
+"Yl" = (
+/obj/structure/barricade/security{
+	layer = 2.7
+	},
+/obj/structure{
+	desc = "A durable turret manufactured by the Gorlex Marauders during the ICW. Some reported examples used anti-vehicle munitions. Most surviving examples are poorly maintained. However, it doesn't seem like this one is actually working.";
+	dir = 5;
+	icon = 'icons/obj/turrets.dmi';
+	icon_state = "syndie_broken";
+	anchored = 1;
+	name = "Revolt Turret";
+	pixel_y = 3
+	},
+/turf/open/floor/concrete/reinforced{
+	initial_gas_mix = "ICEMOON_ATMOS"
+	},
+/area/overmap_encounter/planetoid/ice/explored)
 "Ym" = (
 /obj/effect/turf_decal/techfloor,
 /obj/effect/turf_decal/techfloor{
@@ -24451,7 +24618,7 @@ Ac
 iE
 en
 kh
-Uo
+Qq
 fO
 kh
 kh
@@ -24710,8 +24877,8 @@ Zl
 Zl
 Zl
 Nm
-Nm
-yf
+Yl
+ri
 mA
 mA
 nP
@@ -26070,7 +26237,7 @@ Zl
 Zl
 Zl
 Zl
-Zl
+Nm
 Nm
 Nm
 Ca
@@ -26221,7 +26388,7 @@ Zl
 Zl
 Zl
 Zl
-Zl
+Nm
 Nm
 Nm
 Ca
@@ -26296,7 +26463,7 @@ Mq
 Zl
 Hf
 Hf
-Zl
+Nm
 Nm
 Nm
 GI
@@ -26374,7 +26541,7 @@ Hf
 Hf
 Nm
 Nm
-Nm
+GQ
 Ca
 kX
 kX
@@ -28831,7 +28998,7 @@ mA
 mA
 mA
 je
-Nm
+Yl
 Nm
 tx
 HY
@@ -28906,7 +29073,7 @@ mA
 mA
 mA
 mA
-Kc
+gF
 Nm
 yf
 tx
@@ -29000,7 +29167,7 @@ Rg
 rZ
 Xt
 oM
-Go
+wp
 ui
 Lg
 DS
@@ -29112,7 +29279,7 @@ Zl
 Zl
 Nm
 Nm
-Nm
+rB
 qi
 qi
 qi
@@ -29151,7 +29318,7 @@ bx
 fh
 QQ
 Ag
-cd
+tQ
 nS
 nc
 TE
@@ -29189,7 +29356,7 @@ Zl
 Nm
 Nm
 Ei
-VA
+cG
 qi
 qi
 Mq
