@@ -62,10 +62,11 @@
 	icon_state = "antigrav"
 	module_type = MODULE_TOGGLE
 	complexity = 3
-	active_power_cost = DEFAULT_CHARGE_DRAIN * 0.7
-	incompatible_modules = list(/obj/item/mod/module/anomaly_locked)
+	active_power_cost = DEFAULT_CHARGE_DRAIN * 4 // [CELADON-EDIT] - CELADON_MODSUITS // active_power_cost = DEFAULT_CHARGE_DRAIN * 0.7
+	// incompatible_modules = list(/obj/item/mod/module/anomaly_locked) // [CELADON-DELETE] - CELADON_MODSUITS - на тг убрали, у нас же вообще не имеет смысла так ограничивать.
 	cooldown_time = 0.5 SECONDS
 	accepted_anomalies = list(/obj/item/assembly/signaler/anomaly/grav)
+	assist_drain_increase = 50 // [CELADON-ADD] - CELADON MODSUITS
 
 /obj/item/mod/module/anomaly_locked/antigrav/on_activation()
 	. = ..()
@@ -99,11 +100,11 @@
 	icon_state = "teleporter"
 	module_type = MODULE_ACTIVE
 	complexity = 3
-	use_power_cost = DEFAULT_CHARGE_DRAIN * 5
-	cooldown_time = 5 SECONDS
+	use_power_cost = DEFAULT_CHARGE_DRAIN * 250 // [CELADON-EDIT] - CELADON_MODSUITS //use_power_cost = DEFAULT_CHARGE_DRAIN * 5
+	cooldown_time = 4 SECONDS // [CELADON-EDIT] - CELADON_MODSUITS // cooldown_time = 5 SECONDS
 	accepted_anomalies = list(/obj/item/assembly/signaler/anomaly/bluespace)
 	/// Time it takes to teleport
-	var/teleport_time = 3 SECONDS
+	var/teleport_time = 1 SECONDS // [CELADON-EDIT] - CELADON_MODSUITS - На тг баффают все анома-локед модули, т.к. изначально они были слишком сильно перенерфаны // var/teleport_time = 3 SECONDS
 
 /obj/item/mod/module/anomaly_locked/teleporter/on_select_use(atom/target)
 	. = ..()

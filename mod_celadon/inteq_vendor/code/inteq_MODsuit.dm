@@ -1,17 +1,16 @@
 #define COMSIG_MOD_SHIELD_DESTROYED "mod_shield_destroyed"
 
-/obj/item/mod/control
-	activation_step_time = 1.5 SECONDS
-
 /datum/mod_theme/inteq
 	name = "InteQ"
 	desc = "This one is made by InteQ."
 	default_skin = "inteq"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 35, "bomb" = 70, "bio" = 100, "rad" = 50, "fire" = 60, "acid" = 90)
+	//armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 35, "bomb" = 70, "bio" = 100, "rad" = 50, "fire" = 60, "acid" = 90)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 35, "bomb" = 70, "bio" = 100, "rad" = 50, "fire" = 60, "acid" = 90, "wound" = 35)
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	siemens_coefficient = 0
+	charge_drain = DEFAULT_CHARGE_DRAIN
 	slowdown_inactive = 1
 	slowdown_active = 0.3
 	ui_theme = "inteq"
@@ -31,7 +30,7 @@
 			HELMET_FLAGS = list(
 				UNSEALED_LAYER = null,
 				UNSEALED_CLOTHING = SNUG_FIT,
-				SEALED_CLOTHING = THICKMATERIAL|STOPSPRESSUREDAMAGE,
+				SEALED_CLOTHING = THICKMATERIAL|STOPSPRESSUREDAMAGE|ALLOWINTERNALS,
 				UNSEALED_INVISIBILITY = HIDEFACIALHAIR|HIDEEARS|HIDEHAIR|HIDEHORNS,
 				SEALED_INVISIBILITY = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDESNOUT,
 				SEALED_COVER = HEADCOVERSMOUTH|HEADCOVERSEYES|PEPPERPROOF,
@@ -39,7 +38,7 @@
 			CHESTPLATE_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
-				SEALED_INVISIBILITY = HIDETAIL,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT|HIDETAIL,
 			),
 			GAUNTLETS_FLAGS = list(
 				UNSEALED_CLOTHING = THICKMATERIAL,
@@ -179,14 +178,17 @@
 	name = "Elite InteQ"
 	desc = "This is an elite version of InteQ MOD suit, featuring better overall protection."
 	default_skin = "inteqelite"
-	armor = list("melee" = 60, "bullet" = 45, "laser" = 50, "energy" = 45, "bomb" = 90, "bio" = 100, "rad" = 50,"fire" = 100, "acid" = 90) //Пока оставляю резисты такими, ибо модули модсьютов нельзя сделать, тем самым их полный потенциал не реализуется.
+	//armor = list("melee" = 60, "bullet" = 45, "laser" = 50, "energy" = 45, "bomb" = 90, "bio" = 100, "rad" = 50,"fire" = 100, "acid" = 90) //Пока оставляю резисты такими, ибо модули модсьютов нельзя сделать, тем самым их полный потенциал не реализуется.
+	armor = list("melee" = 55, "bullet" = 45, "laser" = 50, "energy" = 45, "bomb" = 90, "bio" = 100, "rad" = 50,"fire" = 100, "acid" = 90, "wound" = 50)
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	complexity_max = DEFAULT_MAX_COMPLEXITY + 5
 	siemens_coefficient = 0
+	charge_drain = DEFAULT_CHARGE_DRAIN
 	slowdown_inactive = 1
-	slowdown_active = 0.2
+	// slowdown_active = 0.2
+	slowdown_active = 0.3
 	ui_theme = "inteq"
 	allowed_suit_storage = list(
 		/obj/item/flashlight,
@@ -204,7 +206,7 @@
 			HELMET_FLAGS = list(
 				UNSEALED_LAYER = null,
 				UNSEALED_CLOTHING = SNUG_FIT,
-				SEALED_CLOTHING = THICKMATERIAL|STOPSPRESSUREDAMAGE,
+				SEALED_CLOTHING = THICKMATERIAL|STOPSPRESSUREDAMAGE|ALLOWINTERNALS,
 				UNSEALED_INVISIBILITY = HIDEFACIALHAIR|HIDEEARS|HIDEHAIR|HIDEHORNS,
 				SEALED_INVISIBILITY = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDESNOUT,
 				SEALED_COVER = HEADCOVERSMOUTH|HEADCOVERSEYES|PEPPERPROOF,
@@ -247,5 +249,24 @@
 		/obj/item/mod/module/dna_lock,
 		/obj/item/mod/module/power_kick,
 		/obj/item/mod/module/shield/inteq,
+	)
+
+/obj/item/mod/control/pre_equipped/inteq/empty
+	theme = /datum/mod_theme/inteq
+	applied_cell = /obj/item/stock_parts/cell/super
+	initial_modules = list(
+		/obj/item/mod/module/storage,
+		/obj/item/mod/module/flashlight_inteq,
+		/obj/item/mod/module/jetpack,
+	)
+
+/obj/item/mod/control/pre_equipped/inteq/elite/empty
+	theme = /datum/mod_theme/inteq/elite
+	applied_cell = /obj/item/stock_parts/cell/super
+	initial_modules = list(
+		/obj/item/mod/module/storage,
+		/obj/item/mod/module/flashlight_inteq,
+		/obj/item/mod/module/dna_lock,
+		/obj/item/mod/module/jetpack,
 	)
 

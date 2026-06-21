@@ -1017,7 +1017,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			bodyparts_to_add -= "riol_ears"
 	// [/CELADON-ADD]
 
-	// [CELADON-ADD] - CELADON_ELZUOZE
+	// [CELADON-ADD] - CELADON_INTEQ_VENDOR - добавлена поддержка модами скрытия рогов Эльзоуз
 	if("tail_elzu" in mutant_bodyparts)
 		if(!H.dna.features["tail_elzu"] || H.dna.features["tail_elzu"] == "None" || H.wear_suit && (H.wear_suit.flags_inv & HIDEJUMPSUIT))
 			bodyparts_to_add -= "tail_elzu"
