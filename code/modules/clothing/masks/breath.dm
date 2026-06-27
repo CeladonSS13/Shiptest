@@ -54,4 +54,4 @@
 	mob_overlay_icon = 'icons/mob/clothing/mask.dmi'
 	supports_variations = SNOUTED_VARIATION | SNOUTED_SMALL_VARIATION | KEPORI_VARIATION
 	alternate_worn_layer = BELT_LAYER
-	flags_inv = HIDEFACIALHAIR | HIDEFACE
+	flags_inv = HIDEFACIALHAIR | HIDEFACE // [CELADON-ADD]-Исправление отображения на бороде
