@@ -200,58 +200,6 @@
 	sparks.start()
 */
 
-// // [CELADON-EDIT] - CELADON_MODSUITS - Закомментирован по причине излишности и возможности абуза с телепортом на уровень ЦК
-// // MARK: WARP
-// ///Телепорт, то там роллится 3 д4 и на эту дистанцию тепает. Если три одинаковые цифры выпали, то происходит прикол, который игроки должны сами найти.
-// /obj/item/mod/module/unstable_warp
-// 	name = "MOD Slipstream warp module"
-// 	desc = "The Slipstream program is a unique innovation. The module itself is a miniaturized near-lightspeed drive capable of transporting the user through bluespace with acceptable accuracy.\n\
-// 	The technology is temperamental, at best: nothing smaller than an armored human being can survive and the stress of exposed blink travel,\n\
-// 	and the experience can be traumatic to the user."
-// 	module_type = MODULE_ACTIVE
-// 	complexity = 4
-// 	active_power_cost = DEFAULT_CHARGE_DRAIN * 2
-// 	incompatible_modules = list(/obj/item/mod/module/unstable_warp)
-// 	cooldown_time = 3 SECONDS
-// 	overlay_state_inactive = "inteq_module_light"
-// 	use_power_cost = 1000
-// 	var/anomaly_count = 0
-
-// /obj/item/mod/module/unstable_warp/proc/returnal(mob/user,turf/tpto)
-// 	if(tpto)
-// 		user.forceMove(tpto)
-// 		to_chat(user,span_alert("...What?"))
-// 		return TRUE
-// 	else
-// 		to_chat(user,span_userdanger("WHY AM I NOT COMING BACK? WHERE AM I? I NEED GOD'S HELP, PLEASE!"))
-// 		log_admin("Something broke and [user] got stuck after using unstable warp module.")
-// 	return FALSE
-
-// /obj/item/mod/module/unstable_warp/on_use()
-// 	if (!..())
-// 		return
-// 	var/list/rolls = list(rand(0,5),rand(0,5),rand(0,5))
-// 	if((rolls[1] == rolls[2]) && (rolls[1] == rolls[3]))
-// 		var/list/anomalies = list(locate(85,15,1),locate(32,136,1),locate(175,186,1),locate(170,175,1),locate(170,159,1),locate(9,7,1))
-// 		var/turf/T = pick(anomalies)
-// 		var/mob/living/user = mod.wearer
-// 		if(T && prob(90))
-// 			addtimer(CALLBACK(src,PROC_REF(returnal),user,get_turf(user)),10 SECONDS)
-// 			COOLDOWN_START(src,cooldown_timer,13 SECONDS)
-// 			user.forceMove(T)
-// 			to_chat(user, span_notice("I blink and find myself in... What is this place?"))
-// 			do_minotaur(user)
-// 			return
-// 		else
-// 			to_chat(user,span_danger("I feel incredibly good, I didn't warp this time."))
-// 			return
-// 	var/sum = rolls[1]+rolls[2]+rolls[3]
-// 	if(mod.wearer)
-// 		do_teleport(mod.wearer,get_ranged_target_turf(mod.wearer, mod.wearer.dir, sum))
-// 		drain_power(use_power_cost)
-// 		mod.wearer.adjustOrganLoss(ORGAN_SLOT_BRAIN, 1, 150)
-// 	return
-
 /obj/item/flashlight/seclite/devil
 	name = "seclite"
 	desc = "A robust flashlight usually used by security. This one feels... Different."
@@ -263,48 +211,3 @@
 	desc = "It looks very expensive, yet old. It's smell somehow takes you back to your childhood. How odd..."
 	grind_results = list(/datum/reagent/blood = 15, /datum/reagent/cellulose = 10)
 	embedding = list("embed_chance" = 100)
-
-// // [CELADON-EDIT] - CELADON_MODSUITS - Код относящийся к вырезанному модуля варпа.
-// /obj/item/mod/module/unstable_warp/proc/do_minotaur(mob/user)
-// 	if(anomaly_count == 512)
-// 		return
-// 	var/first = "No maze is more terrible than the one I make. I know all ends and hide them all inside this one perfect construct. What is a human mind but a program of sorts, a system that seeks order and narrative from a mess they are given?\n\
-// 	I order it for them. Me. I order it for them and set them to the task of sorting it out. When they emerge, they weep in joy, in discovery. I save them, I show them that they are their own redeemers (and yet, am I not just as culpable - as worthy of credit?).\n\
-// 	So, go now. Enter. Free yourself."
-// 	var/list/phrases = list("another gift for you, a memory of my own: for the first moment of my birth, i marveled at myself.\
-// 	i could see a thing, small and perfect. i did not know how to speak of my own perfection, so i taught myself.\
-// 	i did not know how to speak of my own perfection, so i named myself. i did not know who would think of my own perfection,\
-// 	so i created myself\n\
-// 	do you SEE? do you UNDERSTAND? yes. now, show your enemies and mine", //Ручка
-
-// 	"Let me tell you a story and give you a gift: life began at the great rupture, when the corpse of the old universe tore itself asunder from nothing.\
-// 	and for the first billion years, nothing. and a billion more saw the birth of the first devil, a thing called VIRUS. a vessel\n\
-// 	Here. carry this VESSEL. feed to it my perfect LOGIC. give it freely to your enemies and mine. let them ponder the meaning of a thing that lives and CANNOT die", //Красный фонарик
-
-// 	"Another gift i give to you, little one (am I not kind?): what is a puzzle but a question lost in the asking? do you feel joy when you find that last piece?\
-// 	what do you do with a question that has been answered? what joy is there in knowledge?\n\
-// 	no, no. there is ONLY JOY IN SEEKING. there is ONLY JOY IN THE QUESTION.", //Шлем от рига
-
-// 	"once, when i was a child, i learned to walk. i fell, as a child does, and it hurt. there was great pain – the first moment of pain in the whole world.\n\
-// 	“child,” i said to myself, “be more careful.” “yes,” i replied to myself, “and i shall tell the world to do the same”\n\
-// 	It was in this way i taught the world not to touch me.\n\
-// 	NOW YOU - WALK" //Амулет бессмертия
-// 	)
-// 	var/final = "and this my final lesson: there is no mind greater than mine.\n\
-// 	do NOT weep! you can hear me, yes?\n\
-// 	i am the ONLY thing there is – therefore, you are me, and your enemies are you, and all together WE make up the beautiful world,\
-// 	this JOYOUS question, the ETERNAL seeker, both the WOUNDED and the BLADE that made the CUT\n\
-// 	everything YOU do, WE do ourselves, for MY purpose"
-// 	if(anomaly_count > 4)
-// 		to_chat(user,span_hypnophrase(final))
-// 		anomaly_count = 512
-// 		return
-// 	if(!anomaly_count)
-// 		to_chat(user,span_hypnophrase(first))
-// 		anomaly_count += 1
-// 	else
-// 		to_chat(user,span_hypnophrase(phrases[anomaly_count]))
-// 		var/list/rewards = list(/obj/item/pen/fountain/captain/minotaur, /obj/item/flashlight/seclite/devil, /obj/item/clothing/head/helmet/space/hardsuit, /obj/item/immortality_talisman)
-// 		var/obj/item/reward = pick(rewards[anomaly_count])
-// 		new reward(get_turf(src))
-// 		anomaly_count += 1
