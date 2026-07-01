@@ -29,6 +29,7 @@
 		/obj/item/mod/module/flashlight,
 		/obj/item/mod/module/magboot,
 		/obj/item/mod/module/toolset,
+		/obj/item/mod/module/rad_protection, // [CELADON-ADD] - CELADON_MODSUITS
 		/obj/item/mod/module/visor/meson
 	)
 
@@ -51,6 +52,7 @@
 		/obj/item/mod/module/flashlight,
 		/obj/item/mod/module/jetpack,
 		/obj/item/mod/module/thermal_regulator,
+		/obj/item/mod/module/rad_protection, // [CELADON-ADD] - CELADON_MODSUITS
 		/obj/item/mod/module/toolset
 	)
 
@@ -144,24 +146,34 @@
 
 /obj/item/mod/control/pre_equipped/syndicate
 	theme = /datum/mod_theme/syndicate
-	applied_cell = /obj/item/stock_parts/cell/super
+	// [CELADON-EDIT] - CELADON_MODSUITS
+	//applied_cell = /obj/item/stock_parts/cell/super
+	applied_cell = /obj/item/stock_parts/cell/hyper
+	// [/CELADON-EDIT]
 	initial_modules = list(
-		/obj/item/mod/module/storage,
-		/obj/item/mod/module/emp_shield,
+		/obj/item/mod/module/storage/syndicate, // [CELADON-EDIT] - CELADON_MODSUITS // /obj/item/mod/module/storage,
+		// /obj/item/mod/module/emp_shield, // [CELADON-REMOVE] - CELADON_MODSUITS // ЭМИ сложнее получить
 		/obj/item/mod/module/magnetic_harness,
 		/obj/item/mod/module/jetpack,
 		/obj/item/mod/module/flashlight,
+		/obj/item/mod/module/armor_assist,// [CELADON-ADD] - CELADON_MODSUITS
+		/obj/item/mod/module/armor_booster/light,// [CELADON-ADD] - CELADON_MODSUITS
 	)
 
 /obj/item/mod/control/pre_equipped/elite
 	theme = /datum/mod_theme/elite
-	applied_cell = /obj/item/stock_parts/cell/bluespace
+	// [CELADON-EDIT] - CELADON_MODSUITS
+	//applied_cell = /obj/item/stock_parts/cell/bluespace
+	applied_cell = /obj/item/stock_parts/cell/hyper
+	// [/CELADON-EDIT]
 	initial_modules = list(
 		/obj/item/mod/module/storage/syndicate,
-		/obj/item/mod/module/emp_shield,
+		// /obj/item/mod/module/emp_shield, // [CELADON-REMOVE] - CELADON_MODSUITS // ЭМИ сложнее получить
 		/obj/item/mod/module/magnetic_harness,
 		/obj/item/mod/module/jetpack/advanced,
 		/obj/item/mod/module/flashlight,
+		/obj/item/mod/module/armor_assist,// [CELADON-ADD] - CELADON_MODSUITS
+		/obj/item/mod/module/armor_booster/light,// [CELADON-ADD] - CELADON_MODSUITS
 	)
 
 /obj/item/mod/control/pre_equipped/ninja
@@ -189,19 +201,19 @@
 
 /obj/item/mod/control/pre_equipped/responsory
 	theme = /datum/mod_theme/responsory
-	applied_cell = /obj/item/stock_parts/cell/hyper
+	applied_cell = /obj/item/stock_parts/cell/super // [CELADON-EDIT] - CELADON_MODSUITS // applied_cell = /obj/item/stock_parts/cell/hyper
 	req_access = list(ACCESS_CENT_GENERAL)
 	initial_modules = list(
 		/obj/item/mod/module/storage/large_capacity,
 		/obj/item/mod/module/welding,
-		/obj/item/mod/module/emp_shield,
+		// /obj/item/mod/module/emp_shield, // [CELADON-REMOVE] - CELADON_MODSUITS // ЭМИ сложнее получить
 		/obj/item/mod/module/magnetic_harness,
 		/obj/item/mod/module/flashlight,
 	)
 	/// The insignia type, insignias show what sort of member of the ERT you're dealing with.
 	var/insignia_type = /obj/item/mod/module/insignia
 	/// Additional module we add, as a treat.
-	var/additional_module = /obj/item/mod/module
+	var/additional_module = /obj/item/mod/module/power_kick // [CELADON-EDIT] -CELADON_MODSUITS //var/additional_module = /obj/item/mod/module
 
 /obj/item/mod/control/pre_equipped/responsory/Initialize(mapload, new_theme, new_skin, new_core)
 	initial_modules.Insert(1, insignia_type)
@@ -239,7 +251,7 @@
 	initial_modules = list(
 		/obj/item/mod/module/storage/bluespace,
 		/obj/item/mod/module/welding,
-		/obj/item/mod/module/emp_shield/advanced,
+		// /obj/item/mod/module/emp_shield/advanced, // [CELADON-REMOVE] - CELADON_MODSUITS // ЭМИ сложнее получить
 		/obj/item/mod/module/magnetic_harness,
 		/obj/item/mod/module/jetpack,
 	)
@@ -252,7 +264,7 @@
 		/obj/item/mod/module/storage/bluespace,
 		/obj/item/mod/module/hat_stabilizer,
 		/obj/item/mod/module/magnetic_harness,
-		/obj/item/mod/module/emp_shield/advanced,
+		// /obj/item/mod/module/emp_shield/advanced, // [CELADON-REMOVE] - CELADON_MODSUITS // ЭМИ сложнее получить
 	)
 
 /*obj/item/mod/control/pre_equipped/chrono

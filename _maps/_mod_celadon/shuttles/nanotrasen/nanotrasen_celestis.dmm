@@ -142,7 +142,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "bF" = (
-/obj/machinery/camera{
+/obj/machinery/camera/autoname{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -1119,9 +1119,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engine)
 "hi" = (
-/obj/machinery/camera{
-	dir = 6
-	},
+/obj/machinery/camera/autoname,
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "hk" = (
@@ -1300,7 +1298,7 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engine)
 "hC" = (
-/obj/machinery/camera{
+/obj/machinery/camera/autoname{
 	dir = 1
 	},
 /obj/structure/cable{
@@ -1316,9 +1314,6 @@
 /area/ship/hallway/central)
 "hJ" = (
 /obj/effect/turf_decal/techfloor,
-/obj/machinery/camera{
-	dir = 10
-	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
@@ -1329,6 +1324,9 @@
 	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
+/obj/machinery/camera/autoname{
+	dir = 1
+	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engine)
 "hK" = (
@@ -1683,7 +1681,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 1
 	},
-/obj/machinery/camera,
+/obj/machinery/camera/autoname,
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "ka" = (
@@ -1863,11 +1861,11 @@
 /area/ship/medical)
 "lm" = (
 /obj/effect/turf_decal/trimline/opaque/vired/line,
-/obj/machinery/camera{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
+	},
+/obj/machinery/camera/autoname{
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
@@ -2272,8 +2270,8 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/camera{
-	dir = 10
+/obj/machinery/camera/autoname{
+	dir = 1
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
@@ -2799,7 +2797,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/camera,
+/obj/machinery/camera/autoname,
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engines/starboard)
 "qT" = (
@@ -3727,7 +3725,7 @@
 /obj/machinery/cryopod{
 	dir = 8
 	},
-/obj/machinery/camera{
+/obj/machinery/camera/autoname{
 	dir = 1
 	},
 /turf/open/floor/plasteel/telecomms_floor,
@@ -3775,11 +3773,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/disposalpipe/segment,
-/obj/machinery/camera{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	dir = 1
+	},
+/obj/machinery/camera/autoname{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engine)
@@ -4041,6 +4039,13 @@
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
+"xR" = (
+/obj/machinery/cryopod{
+	dir = 8
+	},
+/obj/machinery/computer/cryopod/directional/east,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ship/crew/cryo)
 "xZ" = (
 /obj/machinery/door/airlock/medical/glass{
 	dir = 1;
@@ -4092,12 +4097,12 @@
 /obj/effect/turf_decal/trimline/opaque/deforestblue/line{
 	dir = 1
 	},
-/obj/machinery/camera,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/landmark/start/medical_doctor,
 /obj/structure/sign/poster/nanotrasen/deforest_hypospray{
 	pixel_y = 32
 	},
+/obj/machinery/camera/autoname,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "yu" = (
@@ -4771,7 +4776,6 @@
 /obj/item/stack/tape,
 /obj/item/clothing/shoes/sneakers/brown,
 /obj/item/spacecash/bundle/loadsamoney,
-/obj/machinery/camera,
 /obj/item/clothing/suit/hooded/wintercoat/cargo,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
@@ -4862,13 +4866,13 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/machinery/camera,
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
+/obj/machinery/camera/autoname,
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engine)
 "CK" = (
@@ -4883,8 +4887,8 @@
 "CX" = (
 /obj/effect/turf_decal/trimline/opaque/ntblue/line,
 /obj/effect/turf_decal/spline/fancy/opaque/vired,
-/obj/machinery/camera{
-	dir = 10
+/obj/machinery/camera/autoname{
+	dir = 1
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
@@ -5323,9 +5327,6 @@
 /area/ship/engineering/engine)
 "FA" = (
 /obj/structure/crate_shelf,
-/obj/machinery/camera{
-	dir = 1
-	},
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "FB" = (
@@ -5548,7 +5549,7 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
-/obj/machinery/camera{
+/obj/machinery/camera/autoname{
 	dir = 1
 	},
 /turf/open/floor/plasteel/mono,
@@ -5556,7 +5557,7 @@
 "Hp" = (
 /obj/structure/table/optable,
 /obj/machinery/light/directional/north,
-/obj/machinery/camera,
+/obj/machinery/camera/autoname,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "Hq" = (
@@ -5574,7 +5575,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/general/science)
 "Hv" = (
-/obj/machinery/camera{
+/obj/machinery/camera/autoname{
 	dir = 1
 	},
 /obj/effect/landmark/start/shaft_miner,
@@ -5867,7 +5868,7 @@
 /turf/open/floor/plasteel/freezer,
 /area/ship/crew/toilet)
 "Jw" = (
-/obj/machinery/camera{
+/obj/machinery/camera/autoname{
 	dir = 1
 	},
 /turf/open/floor/plasteel/patterned,
@@ -6324,7 +6325,7 @@
 "MQ" = (
 /obj/effect/turf_decal/spline/fancy/opaque/nakamuraayellow,
 /obj/effect/turf_decal/trimline/opaque/nakamuraayellow/line,
-/obj/machinery/camera{
+/obj/machinery/camera/autoname{
 	dir = 1
 	},
 /turf/open/floor/plasteel/mono,
@@ -6752,7 +6753,7 @@
 /obj/item/clothing/suit/space/hardsuit/engine,
 /obj/item/clothing/mask/gas,
 /obj/item/tank/internals/oxygen/yellow,
-/obj/machinery/camera{
+/obj/machinery/camera/autoname{
 	dir = 1
 	},
 /turf/open/floor/plasteel/patterned,
@@ -6853,7 +6854,7 @@
 	pixel_x = -11;
 	pixel_y = 24
 	},
-/obj/machinery/camera{
+/obj/machinery/camera/autoname{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -7059,13 +7060,13 @@
 /area/ship/hallway/central)
 "QM" = (
 /obj/machinery/disposal/bin,
-/obj/machinery/camera{
-	dir = 8
-	},
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = -5;
 	pixel_y = -22
+	},
+/obj/machinery/camera/autoname{
+	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/ship/bridge)
@@ -7074,7 +7075,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "QT" = (
-/obj/machinery/camera,
+/obj/machinery/camera/autoname,
 /turf/open/floor/carpet/executive,
 /area/ship/crew/law_office)
 "Ra" = (
@@ -7765,10 +7766,10 @@
 /area/ship/engineering/engine)
 "UP" = (
 /obj/effect/turf_decal/spline/fancy/opaque/black,
-/obj/machinery/camera{
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+/obj/machinery/camera/autoname{
 	dir = 1
 	},
 /turf/open/floor/plasteel/patterned,
@@ -7867,7 +7868,7 @@
 /obj/item/storage/case/surgery{
 	pixel_y = 2
 	},
-/obj/machinery/camera,
+/obj/machinery/camera/autoname,
 /turf/open/floor/plasteel/showroomfloor,
 /area/ship/medical)
 "VZ" = (
@@ -8092,10 +8093,10 @@
 /obj/machinery/atmospherics/pipe/simple/green/visible/layer4{
 	dir = 8
 	},
-/obj/machinery/camera,
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	dir = 4
 	},
+/obj/machinery/camera/autoname,
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engine)
 "XD" = (
@@ -8182,7 +8183,6 @@
 /area/ship/external/dark)
 "Yl" = (
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
-/obj/machinery/camera,
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
@@ -8190,6 +8190,7 @@
 	pixel_x = 10;
 	pixel_y = 23
 	},
+/obj/machinery/camera/autoname,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen/kitchen)
 "Yq" = (
@@ -8287,9 +8288,7 @@
 /obj/effect/turf_decal/spline/fancy/opaque/ntblue{
 	dir = 1
 	},
-/obj/machinery/camera{
-	dir = 6
-	},
+/obj/machinery/camera/autoname,
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "Zk" = (
@@ -9723,7 +9722,7 @@ bw
 fR
 ba
 KM
-KM
+xR
 vF
 fR
 pD

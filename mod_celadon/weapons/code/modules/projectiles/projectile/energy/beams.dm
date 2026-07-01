@@ -148,57 +148,138 @@
 
 // MARK: LASER PROJECTILES
 
-//HADES projectiles
-// Меняет баланс Хейдеса
-// Это трогает ещё эохому e40_laser_secondary
-
-/obj/projectile/beam/disabler/assault
+//Base NT-SL Laser
+/obj/projectile/beam/laser/nanotrasen //таким образом еоехома не словит бесплатный бафф + удобнее редачить древний код
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
-	icon_state = "heavylaser_blue"
-	speed = 0.7 // 0.8 изначально у оффов
+	icon_state = "sl_laser"
+	speed = 0.3 //egun buff - просто мувспид с плазмапушек
+
+/obj/projectile/beam/laser/nanotrasen/weak
+	icon_state = "sl_laser_light"
+	damage = 15
+	armour_penetration = -15
+
+//Base NT-SL Disabler beam
+
+/obj/projectile/beam/disabler/nanotrasen
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
+	icon_state = "sl_disabler"
+	speed = 0.3
+
+/obj/projectile/beam/disabler/nanotrasen/weak
+	icon_state = "sl_disabler_light"
+	damage = 18
+	armour_penetration = -10
+
+// /obj/item/gun/energy/e_gun/e_old/hos
+
+/obj/projectile/beam/laser/nanotrasen/hos
+	damage = 20
+
+/obj/projectile/beam/laser/nanotrasen/weak
+	damage = 15
+	armour_penetration = -15
+
+// /obj/item/gun/energy/e_gun/e_old/dmr
+
+/obj/projectile/beam/laser/nanotrasen/dmr
+	icon_state = "sl_laser_hellfire"
+	damage = 35
+	armour_penetration = 30
+
+// /obj/item/gun/energy/e_gun/e_old/smg/sunbeam
+
+/obj/projectile/beam/laser/nanotrasen/weak/ap //more armorpen, less damage
+	damage = 12
+	armour_penetration = 10
+
+/obj/projectile/beam/disabler/nanotrasen/weak/ap
+	damage = 15
+	armour_penetration = 20
+
+// /obj/item/gun/energy/e_gun/e_old/hades
+// /obj/item/gun/energy/e_gun/e_old/emg
+
+/obj/projectile/beam/laser/nanotrasen/assault
+	icon_state = "sl_laser_heavy"
 	damage = 25
 	armour_penetration = 20
 
-/obj/projectile/beam/laser/assault
-	speed = 0.7 //makes the ASSAULT lasers go faster to make them not shit
-	// 0.8 изначально у оффов.
-	// armour_penetration = 20 // У оффов уже изменено до 20
+/obj/projectile/beam/disabler/nanotrasen/assault
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
+	icon_state = "sl_disabler_heavy"
+	damage = 25
+	armour_penetration = 20
 
-// Здесь были изменения Хейдеса. Искать его в mod_celadon\return_egun\code\e_gun.dm
+// /obj/item/gun/energy/e_gun/e_old/hos
+
+/obj/projectile/energy/electrode/nanotrasen
+	damage = 80 //по сути даже за берст ты навешаешь лишь слоудаун человеку в броне
+	range = 8
 
 //Honorable mentions
 
-/obj/projectile/beam/disabler/heavylaser
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
-	icon_state = "heavylaser_blue"
+/obj/projectile/beam/laser/nanotrasen/heavylaser //NT-SL turrets
+	icon_state = "sl_laser_heavy"
 	damage = 40
-
-/obj/projectile/beam/disabler/heavylaser/sharplite //NT-SL turrets
 	speed = 0.4
 
-//Iot Projectiles
+/obj/projectile/beam/disabler/nanotrasen/heavylaser
+	icon_state = "sl_disabler_heavy"
+	damage = 40
+	speed = 0.4
 
-/obj/projectile/beam/disabler/iot
-	icon_state = "blue_laser"
+// /obj/item/gun/energy/e_gun/e_old/iot
+// /obj/item/gun/energy/e_gun/e_old/iot/blaze
+
+/obj/projectile/beam/disabler/nanotrasen/shotgun
+	icon_state = "sl_disabler_light"
 	damage = 15
 	range = 15
+	armour_penetration = -10
+	speed = 0.5 //just to make it a bit more fair
 
-/obj/projectile/beam/laser/iot
-	icon_state = "red_laser"
+/obj/projectile/beam/laser/nanotrasen/shotgun
+	icon_state = "sl_laser_light"
 	damage = 15
 	armour_penetration = -10
 	range = 15
-
-//etar-smg projectiles
-
-/obj/projectile/beam/disabler/weak/smg
 	speed = 0.5
-	armour_penetration = -15
-	range = 40
 
-/obj/projectile/beam/laser/light/smg //makes the gun not too op like it was, but at the same time quite useful
-	speed = 0.5 //actual smg speed
-	armour_penetration = -15
+// /obj/item/gun/energy/lasercannon
+
+/obj/projectile/beam/laser/nanotrasen/sniper
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
+	name = "accelerator laser"
+	icon_state = "sl_laser_light"
+	range = 255
+	damage = 10
+	armour_penetration = 30
+	var/damage_cap = 60
+
+/obj/projectile/beam/laser/nanotrasen/sniper/Range()
+	..()
+	damage += 4
+	transform *= 1 + ((damage/4) * 0.2)
+	if(damage_cap < damage)
+		damage = damage_cap
+
+// /obj/item/gun/energy/e_gun/e_old/mini
+
+/obj/projectile/beam/laser/nanotrasen/weak/mini
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
+	armour_penetration = 5
+
+/obj/projectile/beam/disabler/nanotrasen/weak/mini
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
+	armour_penetration = 10
+
+// /obj/item/gun/energy/laser/captain
+
+/obj/projectile/beam/laser/nanotrasen/hellfire
+	icon_state = "sl_laser_hellfire"
+	damage = 30
+	armour_penetration = 25
 
 // MARK: Ion balance
 

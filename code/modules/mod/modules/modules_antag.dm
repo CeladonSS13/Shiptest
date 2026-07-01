@@ -11,7 +11,12 @@
 	module_type = MODULE_TOGGLE
 	active_power_cost = DEFAULT_CHARGE_DRAIN * 0.3
 	removable = TRUE
-	incompatible_modules = list(/obj/item/mod/module/armor_booster, /obj/item/mod/module/welding)
+	// [CELADON-EDIT] - CELADON_MODSUITS - Добавляем модуль стелса в список. По-хорошему стоит welding убрать, убрать полностью у армор бустера защиту от флеша...
+	//incompatible_modules = list(/obj/item/mod/module/armor_booster, /obj/item/mod/module/welding, /obj/item/mod/module/stealth/military)
+	// [CELADON-EDIT] - CELADON_MODSUITS - Убирает welding из несовместимых модулей, так как добавлять их туда с целью защиты от вспышек смысла не вижу,
+	// обходится любыми сангласами.
+	incompatible_modules = list(/obj/item/mod/module/armor_booster, /obj/item/mod/module/stealth/military)
+	// [/CELADON-EDIT] - CELADON_MODSUITS
 	cooldown_time = 0.5 SECONDS
 	overlay_state_inactive = "module_armorbooster_off"
 	overlay_state_active = "module_armorbooster_on"
@@ -26,9 +31,20 @@
 	var/list/armor_values = list("melee" = 25, "bullet" = 30, "laser" = 15, "energy" = 15)
 	/// List of parts of the suit that are spaceproofed, for giving them back the pressure protection.
 	var/list/spaceproofed = list()
+	// [CELADON-ADD] - CELADON_MODSUITS
+	var/anti_flash = FALSE
+	var/EVA_boosted = FALSE
+	var/disable_chance = 10
+	assist_drain_increase = 85
+	use_power_cost = DEFAULT_CHARGE_DRAIN*0.1
+	// [/CELADON-ADD] - CELADON_MODSUITS
 
 /obj/item/mod/module/armor_booster/on_suit_activation()
-	mod.helmet.flash_protect = FLASH_PROTECTION_WELDER
+	// [CELADON-EDIT] - CELADON_MODSUITS
+	//mod.helmet.flash_protect = FLASH_PROTECTION_WELDER
+	if(anti_flash)
+		mod.helmet.flash_protect = FLASH_PROTECTION_WELDER
+	// [/CELADON-EDIT]
 
 /obj/item/mod/module/armor_booster/on_suit_deactivation(deleting = FALSE)
 	if(deleting)
@@ -40,7 +56,14 @@
 	if(!.)
 		return
 	playsound(src, 'sound/mecha/mechmove03.ogg', 25, TRUE, SHORT_RANGE_SOUND_EXTRARANGE)
-	actual_speed_added = max(0, min(mod.slowdown_active, speed_added))
+	to_chat(mod.wearer,span_notice("Power-weave wraps your body, empowering you.")) // [CELADON-ADD] - CELADON_MODSUITS
+	// [CELADON-EDIT] - CELADON_MODSUITS
+	//actual_speed_added = max(0, min(mod.slowdown_active, speed_added))
+	if(speed_added < 0) // Добавлена поддержка замедления
+		actual_speed_added = speed_added
+	else
+		actual_speed_added = max(0, min(mod.slowdown_active, speed_added))
+	// [/CELADON-EDIT]
 	mod.slowdown -= actual_speed_added
 	mod.wearer.update_equipment_speed_mods()
 	var/list/parts = mod.mod_parts + mod
@@ -52,6 +75,47 @@
 		if(clothing_part.clothing_flags & STOPSPRESSUREDAMAGE)
 			clothing_part.clothing_flags &= ~STOPSPRESSUREDAMAGE
 			spaceproofed[clothing_part] = TRUE
+	RegisterSignal(mod.wearer, COMSIG_ATOM_BULLET_ACT, PROC_REF(on_bullet_act)) // [CELADON-ADD] - CELADON_MODSUITS
+
+ // [CELADON-ADD] - CELADON_MODSUITS
+ /// Попытка заставить эту штуку потреблять энергию при попадании.
+/obj/item/mod/module/armor_booster/proc/on_bullet_act(datum/source, obj/projectile/projectile, def_zone)
+	if(EVA_boosted)
+		if(prob(disable_chance) && !mod.malfunctioning)
+			mod.malfunctioning = TRUE
+			mod.selected_module?.on_deactivation(display_message = TRUE)
+			on_deactivation(display_message = TRUE)
+			do_sparks(5, TRUE, mod.wearer)
+			playsound(src, 'sound/weapons/ionrifle.ogg', 25, TRUE, SHORT_RANGE_SOUND_EXTRARANGE, frequency = 1.3)
+			to_chat(mod.wearer, span_warning("Power-weave safeties have been overrided and system short-circuits from the shot!"))
+			return
+	var/blocked = mod.wearer.run_armor_check(def_zone, projectile.flag, projectile.armour_penetration, silent = TRUE)
+	var/damage_coefficient = 1
+	if(blocked <= 0 || blocked > 100)
+		damage_coefficient = blocked/100
+	else
+		drain_power(damage_coefficient*projectile.damage*use_power_cost) // Энергия все равно тратится на то, что по тебе попадают. Даже если пробили насквозь.
+
+/obj/item/mod/module/armor_booster/examine(mob/user)
+	. = ..()
+	if((in_range(user, src) || isobserver(user)) && initial(remove_pressure_protection))
+		. += span_notice("You can override [src] EVA limiters using screwdriver.")
+		. += span_notice("Extravehicular activity limiters are [EVA_boosted ? "overrided" : "online"].")
+
+/obj/item/mod/module/armor_booster/screwdriver_act(mob/living/user, obj/item/screwdriver)
+	if(..())
+		return TRUE
+	if(!initial(remove_pressure_protection)) // перекодить, что-то вместо initial здесь
+		return FALSE
+	to_chat(user,span_notice("You start modifying [src] to [EVA_boosted ? "activate" : "deactivate"] EVA limiters..."))
+	screwdriver.play_tool_sound(src, 100)
+	if(screwdriver.use_tool(src, user, 1 SECONDS))
+		screwdriver.play_tool_sound(src, 100)
+		EVA_boosted = !EVA_boosted
+		remove_pressure_protection = !EVA_boosted
+		to_chat(user, span_notice("You [EVA_boosted ? "overrided" : "reverted"] [src] EVA limiters."))
+	return TRUE
+ // [/CELADON-ADD]
 
 /obj/item/mod/module/armor_booster/on_deactivation(display_message = TRUE, deleting = FALSE)
 	. = ..()
@@ -73,6 +137,7 @@
 		if(spaceproofed[clothing_part])
 			clothing_part.clothing_flags |= STOPSPRESSUREDAMAGE
 	spaceproofed = list()
+	UnregisterSignal(mod.wearer, COMSIG_ATOM_BULLET_ACT) // [CELADON-ADD] - CELADON_MODSUITS
 
 /obj/item/mod/module/armor_booster/generate_worn_overlay(mutable_appearance/standing)
 	overlay_state_inactive = "[initial(overlay_state_inactive)]-[mod.skin]"
@@ -89,10 +154,20 @@
 	removable = TRUE
 	incompatible_modules = list(/obj/item/mod/module/armor_assist)
 	cooldown_time = 0.5 SECONDS
-	overlay_state_inactive = "module_armorbooster_off"
-	overlay_state_active = "module_armorbooster_on"
+	// [CELADON-EDIT] - CELADON_MODSUITS - добавлена поддержка отдельного спрайта для армор ассиста
+	// overlay_state_inactive = "module_armorbooster_off"
+	// overlay_state_active = "module_armorbooster_on"
+	overlay_state_inactive = "module_armorassist_off"
+	overlay_state_active = "module_armorassist_on"
+	// [/CELADON-EDIT] - CELADON_MODSUITS
 	use_mod_colors = TRUE
-	var/drain_per_step = 100
+	// var/drain_per_step = 100 // [CELADON-DELETE] - CELADON_MODSUITS // не используется больше, используется вместо него use_power_cost
+	// [CELADON-ADD] - CELADON_MODSUITS
+	/// Потребление за шаг
+	use_power_cost = 30
+	/// Зависит ли наше потребление от замедления
+	var/drain_slowdown_affected = TRUE
+	// [/CELADON-ADD] - CELADON_MODSUITS
 
 /obj/item/mod/module/armor_assist/on_activation()
 	. = ..()
@@ -113,7 +188,16 @@
 
 /obj/item/mod/module/armor_assist/proc/drain_on_step(mob/user)
 	SIGNAL_HANDLER
-	drain_power(drain_per_step, TRUE)
+	// [CELADON-EDIT] - CELADON_MODSUITS - добавлена поддержка вариативности потребления.
+	//drain_power(drain_per_step, TRUE)
+	var/true_drain_per_step = use_power_cost
+	if(drain_slowdown_affected)
+		true_drain_per_step = (mod.slowdown_active+mod.slowdown+1)*true_drain_per_step
+	for(var/obj/item/mod/module/module as anything in mod.modules)
+		if(module.active)
+			true_drain_per_step = module.assist_drain_increase + true_drain_per_step
+	drain_power(true_drain_per_step, TRUE)
+	// [/CELADON-EDIT] - CELADON_MODSUITS
 
 /obj/item/mod/module/armor_assist/generate_worn_overlay(mutable_appearance/standing)
 	overlay_state_inactive = "[initial(overlay_state_inactive)]-[mod.skin]"
@@ -189,6 +273,37 @@
 	removable = FALSE
 	incompatible_modules = list(/obj/item/mod/module/insignia)
 	overlay_state_inactive = "module_insignia"
+	// [CELADON-ADD] - CELADON_MODSUITS - добавляем функционал смены цветов модсьютам
+	module_type = MODULE_USABLE
+	var/color_list = list(
+		"#4980a5" = /obj/item/mod/module/insignia/commander,
+		"#b30d1e" = /obj/item/mod/module/insignia/security,
+		"#e9c80e" = /obj/item/mod/module/insignia/engineer,
+		"#ebebf5" = /obj/item/mod/module/insignia/medic,
+		"#7925c7" = /obj/item/mod/module/insignia/janitor,
+		"#f0a00c" = /obj/item/mod/module/insignia/chaplain,
+		"custom color" = /obj/item/mod/module/insignia, // Для тех кто хочет выбрать свой цвет.
+		)
+	// [CELADON-ADD]
+
+// [CELADON-ADD] - CELADON_MODSUITS - добавляем функционал смены цветов модсьютам
+/obj/item/mod/module/insignia/on_use()
+	. = ..()
+	if(!.)
+		return
+	var/choice = show_radial_menu(mod.wearer, mod.wearer, color_list)
+	if(!choice)
+		return FALSE
+	switch(choice)
+		if("custom color")
+			var/chosen_colour = input(mod.wearer, "", "Choose Color", color) as color|null
+			if (!isnull(chosen_colour))
+				color = chosen_colour
+		else
+			color = choice
+
+	mod.wearer.update_inv_back(mod.slot_flags)
+// [/CELADON-ADD]
 
 /obj/item/mod/module/insignia/generate_worn_overlay(mutable_appearance/standing)
 	overlay_state_inactive = "[initial(overlay_state_inactive)]-[mod.skin]"
@@ -298,6 +413,7 @@
 	var/wounding_power = 35
 	/// How long we knockdown for on the kick.
 	var/knockdown_time = 2 SECONDS
+	var/prepare_time = 0.3 SECONDS // [CELADON-ADD] - CELADON_MODSUITS
 
 /obj/item/mod/module/power_kick/on_select_use(atom/target)
 	. = ..()
@@ -307,9 +423,9 @@
 		blind_message = span_hear("You hear a charging sound."))
 	playsound(src, 'sound/items/modsuit/loader_charge.ogg', 75, TRUE)
 	to_chat(mod.wearer,span_notice("You start charging..."))
-	animate(mod.wearer, 0.3 SECONDS, pixel_z = 16, flags = ANIMATION_RELATIVE, easing = SINE_EASING|EASE_OUT)
+	animate(mod.wearer, prepare_time, pixel_z = 16, flags = ANIMATION_RELATIVE, easing = SINE_EASING|EASE_OUT) // [CELADON-EDIT] - CELADON_MODSUITS // animate(mod.wearer, 0.3 SECONDS, pixel_z = 16, flags = ANIMATION_RELATIVE, easing = SINE_EASING|EASE_OUT)
 	addtimer(CALLBACK(mod.wearer, TYPE_PROC_REF(/atom, SpinAnimation), 3, 2), 0.3 SECONDS)
-	if(!do_after(mod.wearer, 1 SECONDS, target = mod))
+	if(!do_after(mod.wearer, prepare_time, target = mod)) // [CELADON-EDIT] - CELADON_MODSUITS // if(!do_after(mod.wearer, 1 SECONDS, target = mod))
 		animate(mod.wearer, 0.2 SECONDS, pixel_z = -16, flags = ANIMATION_RELATIVE, easing = SINE_EASING|EASE_OUT)
 		return
 	animate(mod.wearer)
@@ -318,7 +434,7 @@
 	var/angle = get_angle(mod.wearer, target) + 180
 	mod.wearer.transform = mod.wearer.transform.Turn(angle)
 	RegisterSignal(mod.wearer, COMSIG_MOVABLE_IMPACT, PROC_REF(on_throw_impact))
-	mod.wearer.throw_at(target, range = 7, speed = 2, thrower = mod.wearer, spin = FALSE, gentle = TRUE, callback = CALLBACK(src, PROC_REF(on_throw_end), mod.wearer, -angle))
+	mod.wearer.throw_at(target, range = 7, speed = 2.5, thrower = mod.wearer, spin = FALSE, gentle = TRUE, callback = CALLBACK(src, PROC_REF(on_throw_end), mod.wearer, -angle)) // [CELADON-EDIT] - CELADON_MODSUITS // mod.wearer.throw_at(target, range = 7, speed = 2, thrower = mod.wearer, spin = FALSE, gentle = TRUE, callback = CALLBACK(src, PROC_REF(on_throw_end), mod.wearer, -angle))
 
 /obj/item/mod/module/power_kick/proc/on_throw_end(mob/user, angle)
 	if(!user)
@@ -334,7 +450,7 @@
 		return
 	if(isliving(target))
 		var/mob/living/living_target = target
-		living_target.apply_damage(damage, BRUTE, mod.wearer.zone_selected)
+		living_target.apply_damage(damage, BRUTE, mod.wearer.zone_selected, wound_bonus = wounding_power) // [CELADON-EDIT] - CELADON_MODSUITS
 		living_target.Knockdown(knockdown_time)
 	else if(target.atom_integrity)
 		target.take_damage(damage, BRUTE)
@@ -406,8 +522,12 @@
 	mod.desc = "[initial(mod.desc)] [mod.theme.desc]"
 	mod.icon_state = "[mod.skin]-[initial(mod.icon_state)]"
 	var/list/mod_skin = mod.theme.skins[mod.skin]
-	mod.icon = mod_skin[MOD_ICON_OVERRIDE] || 'icons/obj/clothing/modsuit/mod_clothing.dmi'
-	mod.mob_overlay_icon = mod_skin[MOD_WORN_ICON_OVERRIDE] || 'icons/mob/clothing/modsuit/mod_clothing.dmi'
+	// [CELADON-EDIT] - CELADON_MODSUITS
+	// mod.icon = mod_skin[MOD_ICON_OVERRIDE] || 'icons/obj/clothing/modsuit/mod_clothing.dmi'
+	// mod.mob_overlay_icon = mod_skin[MOD_WORN_ICON_OVERRIDE] || 'icons/mob/clothing/modsuit/mod_clothing.dmi'
+	mod.icon = mod_skin[MOD_ICON_OVERRIDE] || 'mod_celadon/_storage_icons/icons/items/clothing/mod_suit/mod_clothing.dmi'
+	mod.mob_overlay_icon = mod_skin[MOD_WORN_ICON_OVERRIDE] || 'mod_celadon/_storage_icons/icons/items/clothing/mod_suit/overlay/mod_clothing.dmi'
+	// [CELADON-EDIT]
 	mod.alternate_worn_layer = mod_skin[CONTROL_LAYER]
 	mod.lefthand_file = initial(mod.lefthand_file)
 	mod.righthand_file = initial(mod.righthand_file)
@@ -421,7 +541,7 @@
 /obj/item/mod/module/plate_compression
 	name = "MOD plate compression module"
 	desc = "A module that keeps the suit in a very tightly fit state, lowering the overall size. \
-		Due to the pressure on all the parts, typical storage modules do not fit."
+		Due to the pressure on all the parts, typical storage modules do not fit." // [CELADON-EDIT] - CELADON_MODSUITS // изменено в модуле
 	icon_state = "plate_compression"
 	complexity = 2
 	incompatible_modules = list(/obj/item/mod/module/plate_compression, /obj/item/mod/module/storage)
@@ -433,8 +553,10 @@
 /obj/item/mod/module/plate_compression/on_install()
 	old_size = mod.w_class
 	mod.w_class = new_size
+	mod.activation_step_time *= 0.1 // [CELADON-ADD] - CELADON_MODSUITS
 
 /obj/item/mod/module/plate_compression/on_uninstall(deleting = FALSE)
+	mod.activation_step_time *= 10 // [CELADON-ADD] - CELADON_MODSUITS
 	mod.w_class = old_size
 	old_size = null
 	if(!mod.loc)

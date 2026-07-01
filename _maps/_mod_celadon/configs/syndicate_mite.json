@@ -1,0 +1,25 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Mite-class Mining Shuttle",
+	"map_short_name": "Mite",
+	"description": "Шаттл класса «Mite» был разработан Gorlex Marauder в результате отчаянной попытки противостоять растущей экспансии TPG в сфере добычи материалов. Однако затея не увенчалась успехом, и переоборудование «Jet Lancer» было прекращено. В настоящий момент сохранившиеся экземпляры пользуются небольшой популярностью у разведывательных групп, поскольку для работы и обслуживания судна требуется не более двух человек.",
+	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_mite.dmm",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 4,
+	"prefix": "DSSV",
+	"faction": "/datum/faction/syndicate",
+	"tags": ["Шахтерский"],
+	"namelists": ["GORLEX"],
+	"job_slots": {
+		"Captain": {
+			"outfit": "/datum/outfit/job/cel/syndicate/captain/gorlex",
+			"officer": true,
+			"slots": 1
+		},
+		"Junior Agent": {
+			"outfit": "/datum/outfit/job/cel/syndicate/assistant/gorlex",
+			"slots": 1
+		}
+	}
+}

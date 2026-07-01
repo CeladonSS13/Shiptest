@@ -300,7 +300,8 @@ em {
   font-weight: bold;
 }
 
-.admin {
+// [CELADON-EDIT] - .admin => .adminlog
+.adminlog {
   color: #5975da;
   font-weight: bold;
 }
@@ -1002,3 +1003,55 @@ em {
     border-color: inherit;
   }
 }
+
+// [CELADON-ADD] - Staffwho verb colors
+
+.host, .project_lead {
+  color: hsl(27, 87.7%, 60%);
+}
+
+.head_admin {
+  color: hsl(351, 86.6%, 52%);
+}
+
+.admin {
+  color: hsl(0, 50%, 52%);
+}
+
+.trial_admin {
+  color: hsl(15, 85%, 52%);
+}
+
+.moderator {
+  color: hsl(0, 78.9%, 75%);
+}
+
+.development_head {
+  color: hsl(219, 100%, 65%);
+}
+
+.coder {
+  color: hsl(220, 44.5%, 60%);
+}
+
+.tester {
+  color: hsl(227, 57.4%, 80%);
+}
+
+.head_of_maps {
+  color: hsl(140, 60%, 50%);
+}
+
+.head_of_sprites {
+  color: hsl(290, 81%, 58%);
+}
+
+.mentor {
+  color: hsl(140, 55.1%, 72%);
+}
+
+.localhost {
+  color: hsl(46, 98.8%, 72%);
+}
+
+// [/CELADON-ADD] - Staffwho verb colors

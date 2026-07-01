@@ -47,20 +47,19 @@
 	var/mob/dead/observer/G = usr
 	G.dead_tele()
 
-/atom/movable/screen/ghost/pai
+/atom/movable/screen/ghost/hudbox/pai // [CELADON-EDIT] - UPDATE GHOST HUDS - OLD CODE: /atom/movable/screen/ghost/pai
 	name = "pAI Candidate"
-	icon_state = "pai"
+	hud_icon_state = "pai" // [CELADON-EDIT] - UPDATE GHOST HUDS - OLD CODE: icon_state = "pai"
 
-/atom/movable/screen/ghost/pai/Click()
+/atom/movable/screen/ghost/hudbox/pai/Click() // [CELADON-EDIT] - UPDATE GHOST HUDS - OLD CODE: /atom/movable/screen/ghost/pai/Click()
 	var/mob/dead/observer/G = usr
 	G.register_pai()
 
-/atom/movable/screen/ghost/spawner_menu
+/atom/movable/screen/ghost/hudbox/spawner_menu // [CELADON-EDIT] - UPDATE GHOST HUDS - OLD CODE: /atom/movable/screen/ghost/spawner_menu
 	name = "Spawner Menu"
-	icon = 'icons/hud/screen_ghost.dmi'
-	icon_state = "spawner_menu"
+	hud_icon_state = "spawner_menu"
 
-/atom/movable/screen/ghost/spawner_menu/Click()
+/atom/movable/screen/ghost/hudbox/spawner_menu/Click() // [CELADON-EDIT] - UPDATE GHOST HUDS - OLD CODE: /atom/movable/screen/ghost/spawner_menu/Click()
 	var/mob/dead/observer/G = usr
 	G.open_spawners_menu()
 
@@ -82,7 +81,8 @@
 	using.screen_loc = ui_ghost_reenter_corpse
 	using.hud = src
 	static_inventory += using
-
+	// [CELADON-EDIT] - UPDATE GHOST HUDS - OLD CODE:
+	/*
 	using = new /atom/movable/screen/ghost/teleport()
 	using.screen_loc = ui_ghost_teleport
 	using.hud = src
@@ -102,6 +102,25 @@
 	using.screen_loc = ui_ghost_spawner_menu
 	using.hud = src
 	static_inventory += using
+	*/
+	using = new /atom/movable/screen/ghost/dnr(null, src)
+	using.screen_loc = ui_dnr
+	using.hud = src
+	static_inventory += using
+
+	using = new /atom/movable/screen/ghost/teleport()
+	using.screen_loc = ui_ghost_teleport
+	using.hud = src
+	static_inventory += using
+
+	var/list/hudboxes = subtypesof(/atom/movable/screen/ghost/hudbox)
+	for(var/i in 1 to length(hudboxes))
+		var/hudbox_type = hudboxes[i]
+		var/atom/movable/screen/ghost/hudbox/hudbox = new hudbox_type(null, src)
+		hudbox.screen_loc = position_hudbox(i - 1)
+		static_inventory += hudbox
+		hudbox.update_appearance()
+	// [/CELADON-EDIT]
 
 /datum/hud/ghost/show_hud(version = 0, mob/viewmob)
 	// don't show this HUD if observing; show the HUD of the observee
@@ -115,7 +134,11 @@
 		return
 	var/mob/screenmob = viewmob || mymob
 	if(!screenmob.client.prefs.ghost_hud)
-		screenmob.client.screen -= static_inventory
+		// [CELADON-EDIT] - OLD CODE: screenmob.client.screen -= static_inventory
+		screenmob.client.screen |= static_inventory
+		for(var/atom/movable/screen/ghost/hudbox/hud in static_inventory)
+			hud.update_appearance()
+		// [/CELADON-EDIT]
 	else
 		screenmob.client.screen += static_inventory
 

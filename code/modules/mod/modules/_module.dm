@@ -51,6 +51,10 @@
 	var/allowed_in_phaseout = FALSE
 	/// If we're allowed to use this module while the suit is disabled.
 	var/allowed_inactive = FALSE
+	// [CELADON-ADD] - CELADON_MODSUITS
+	/// Насколько много мы увеличиваем потребление энергии за шаг у армор ассиста?
+	var/assist_drain_increase = 0
+	// [/CELADON-ADD]
 	/// Timer for the cooldown
 	COOLDOWN_DECLARE(cooldown_timer)
 
@@ -173,9 +177,12 @@
 	if(module_type == MODULE_ACTIVE)
 		mod.selected_module = null
 		if(display_message)
-		// [CELADON-EDIT] - FIX_MODSUIT - Fixes modsuits not retracting items - runtime was here
+		// [CELADON-EDIT] - CELADON_MODSUIT - Fixes modsuits not retracting items - runtime was here
 			//to_chat(mod.wearer,span_warning(device ? "You retract \the [device]." : "\The [src] deactivates."))
-			to_chat(mod.wearer,span_warning("You retract \the [device]."))
+			if(device) // Иначе эта штука не работает, увы
+				to_chat(mod.wearer,span_warning("You retract \the [device]."))
+			else
+				to_chat(mod.wearer,span_warning("The [src] deactivates."))
 		// [/CELADON-EDIT]
 		if(device)
 			mod.wearer.transferItemToLoc(device, src, force = TRUE)
@@ -366,7 +373,7 @@
 /obj/item/mod/module/anomaly_locked
 	name = "MOD anomaly locked module"
 	desc = "A form of a module, locked behind an anomalous core to function."
-	incompatible_modules = list(/obj/item/mod/module/anomaly_locked)
+	// incompatible_modules = list(/obj/item/mod/module/anomaly_locked) // [CELADON-REMOVE] - CELADON_MODSUITS
 	/// The core item the module runs off.
 	var/obj/item/assembly/signaler/anomaly/core
 	/// Accepted types of anomaly cores.

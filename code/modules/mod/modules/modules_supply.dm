@@ -16,7 +16,7 @@
 
 /obj/item/mod/module/gps/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/gps/item, "MOD0", TRUE)
+	AddComponent(/datum/component/gps/item, "MOD0", TRUE, TRUE) // [CELADON-EDIT] - CELADON_MODSUITS - фикс ГПС // AddComponent(/datum/component/gps/item, "MOD0", TRUE)
 
 /obj/item/mod/module/gps/on_use()
 	. = ..()

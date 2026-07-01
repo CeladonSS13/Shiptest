@@ -577,7 +577,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 //		playsound(src, 'sound/weapons/effects/deflect.ogg', 100)	// Original
 		if(istype(src, /obj/item/shield))
 			playsound(src, pick('mod_celadon/_storage_sounds/sound/gun/shieldhit1.wav', 'mod_celadon/_storage_sounds/sound/gun/shieldhit2.wav'), 100)
-		else if(istype(src, /obj/item/melee/sword))
+		else if(istype(src, /obj/item/melee/sword) || (istype(src,/obj/item/cursed_katana)))
 			playsound(src, pick('mod_celadon/_storage_sounds/sound/gun/sword_p1.ogg', 'mod_celadon/_storage_sounds/sound/gun/sword_p2.ogg', 'mod_celadon/_storage_sounds/sound/gun/sword_p3.ogg'), 100)
 		else
 			playsound(src, 'sound/weapons/effects/deflect.ogg', 100)
@@ -649,6 +649,9 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 			A.Grant(user)
 	item_flags |= IN_INVENTORY
 	SEND_SIGNAL(src, COMSIG_ITEM_EQUIPPED, user, slot)
+	//[CELADON-FIX] - CELADON_MODSUITS - Fixing MOD magnetic harness
+	SEND_SIGNAL(user, COMSIG_MOB_EQUIPPED_ITEM, src, slot)
+	//[/CELADON-FIX]
 	if(!initial)
 		if(equip_sound && (slot_flags & slot))
 			playsound(src, equip_sound, EQUIP_SOUND_VOLUME, TRUE, ignore_walls = FALSE)
@@ -717,76 +720,6 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 ///This proc determines if and at what an object will reflect energy projectiles if it's in l_hand,r_hand or wear_suit
 /obj/item/proc/IsReflect(def_zone)
 	return FALSE
-
-/obj/item/proc/eyestab(mob/living/carbon/M, mob/living/carbon/user)
-
-	var/is_human_victim
-	var/obj/item/bodypart/affecting = M.get_bodypart(BODY_ZONE_HEAD)
-	if(ishuman(M))
-		if(!affecting) //no head!
-			return
-		is_human_victim = TRUE
-
-	if(M.is_eyes_covered())
-		// you can't stab someone in the eyes wearing a mask!
-		to_chat(user, span_warning("You're going to need to remove [M.p_their()] eye protection first!"))
-		return
-
-	if(isalien(M))//Aliens don't have eyes./N     slimes also don't have eyes!
-		to_chat(user, span_warning("You cannot locate any eyes on this creature!"))
-		return
-
-	if(isbrain(M))
-		to_chat(user, span_warning("You cannot locate any organic eyes on this brain!"))
-		return
-
-	src.add_fingerprint(user)
-
-	playsound(loc, src.hitsound, 30, TRUE, -1)
-
-	user.do_attack_animation(M)
-
-	if(M != user)
-		M.visible_message(span_danger("[user] stabs [M] in the eye with [src]!"), \
-							span_userdanger("[user] stabs you in the eye with [src]!"))
-	else
-		user.visible_message( \
-			span_danger("[user] stabs [user.p_them()]self in the eyes with [src]!"), \
-			span_userdanger("You stab yourself in the eyes with [src]!") \
-		)
-	if(is_human_victim)
-		var/mob/living/carbon/human/U = M
-		U.apply_damage(7, BRUTE, affecting)
-
-	else
-		M.take_bodypart_damage(7)
-
-	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "eye_stab", /datum/mood_event/eye_stab)
-
-	log_combat(user, M, "attacked", "[src.name]", "(INTENT: [uppertext(user.a_intent)])")
-
-	var/obj/item/organ/eyes/eyes = M.getorganslot(ORGAN_SLOT_EYES)
-	if (!eyes)
-		return
-	M.adjust_blurriness(3)
-	eyes.applyOrganDamage(rand(2,4))
-	if(eyes.damage >= 10)
-		M.adjust_blurriness(15)
-		if(M.stat != DEAD)
-			to_chat(M, span_danger("Your eyes start to bleed profusely!"))
-		if(!(M.is_blind() || HAS_TRAIT(M, TRAIT_NEARSIGHT)))
-			to_chat(M, span_danger("You become nearsighted!"))
-		M.become_nearsighted(EYE_DAMAGE)
-		if(prob(50))
-			if(M.stat != DEAD)
-				if(M.drop_all_held_items())
-					to_chat(M, span_danger("You drop what you're holding and clutch at your eyes!"))
-			M.adjust_blurriness(10)
-			M.Unconscious(20)
-			M.Paralyze(40)
-		if (prob(eyes.damage - 10 + 1))
-			M.become_blind(EYE_DAMAGE)
-			to_chat(M, span_danger("You go blind!"))
 
 /obj/item/singularity_pull(S, current_size)
 	..()
