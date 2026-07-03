@@ -1195,8 +1195,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			// 			if(!limb_style?.desc)
 			// 				continue
 			// 			dat += "<a href='byond://?_src_=prefs;preference=body_desc;limb_style=[REF(limb_style)]'>?</a></td></tr>"
-			dat += "</table><br>"
 			// [/CELADON-EDIT]
+			dat += "</table><br>"
 			if(!istype(pref_species, /datum/species/lanius))
 				dat += "<h3>Prosthetic Limbs</h3>"
 				dat += "<a href='byond://?_src_=prefs;preference=fbp'>Full Body Prosthesis: [fbp ? "Yes" : "No"]</a><br>"
