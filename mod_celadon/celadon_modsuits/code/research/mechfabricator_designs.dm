@@ -1,4 +1,4 @@
-//MODsuit construction
+//MARK: MODsuit construction
 
 /datum/design/mod_shell
 	name = "MOD Shell"
@@ -63,6 +63,7 @@
 		"MOD Suits", "Chassis"
 	)
 
+// MARK: PLATING
 /datum/design/mod_plating
 	name = "MOD External Plating"
 	desc = "External plating for a MODsuit."
@@ -154,7 +155,132 @@
 		"MOD Suits", "Misc"
 	)
 
-//MODsuit modules
+// MARK: Faction plating
+
+
+
+
+
+
+// MARK: INTEQ
+/datum/design/mod_plating/inteq
+	name = "MOD Inteq Plating"
+	id = "mod_plating_inteq"
+	build_path = /obj/item/mod/construction/plating/locked/inteq
+	materials = list(
+		/datum/material/iron=12000,
+		/datum/material/uranium=2000,
+		/datum/material/titanium=10000,
+		/datum/material/glass=1000,
+		/datum/material/plasma=1000,
+	)
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+/datum/design/mod_plating/inteq_elite
+	name = "MOD Elite Inteq Plating"
+	id = "mod_plating_inteq_elite"
+	build_path = /obj/item/mod/construction/plating/locked/inteq/elite
+	materials = list(
+		/datum/material/iron=12000,
+		/datum/material/uranium=2000,
+		/datum/material/titanium=10000,
+		/datum/material/glass=1000,
+		/datum/material/plasma=10000,
+		/datum/material/diamond=4000,
+		/datum/material/gold=2000,
+		/datum/material/silver=2000,
+	)
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+// MARK: SYNDICATE
+/datum/design/mod_plating/syndicate
+	name = "MOD Syndicate Plating"
+	id = "mod_plating_syndicate"
+	build_path = /obj/item/mod/construction/plating/locked/syndicate
+	materials = list(
+		/datum/material/iron=12000,
+		/datum/material/uranium=2000,
+		/datum/material/titanium=10000,
+		/datum/material/glass=1000,
+		/datum/material/plasma=1000,
+	)
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+/datum/design/mod_plating/syndicate_elite
+	name = "MOD elite Syndicate Plating"
+	id = "mod_plating_syndicate_elite"
+	build_path = /obj/item/mod/construction/plating/locked/syndicate/elite
+	materials = list(
+		/datum/material/iron=12000,
+		/datum/material/uranium=2000,
+		/datum/material/titanium=10000,
+		/datum/material/glass=1000,
+		/datum/material/plasma=10000,
+		/datum/material/diamond=4000,
+		/datum/material/silver=4000,
+	)
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+// MARK: NANOTRASEN
+
+/datum/design/mod_plating/safeguard
+	name = "MOD Safeguard Plating"
+	id = "mod_plating_safeguard"
+	build_path = /obj/item/mod/construction/plating/locked/safeguard
+	materials = list(
+		/datum/material/iron=12000,
+		/datum/material/uranium=2000,
+		/datum/material/titanium=10000,
+		/datum/material/glass=1000,
+		/datum/material/plasma=1000,
+	)
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+/datum/design/mod_plating/responsory
+	name = "MOD responsory Plating"
+	id = "mod_plating_responsory"
+	build_path = /obj/item/mod/construction/plating/locked/responsory
+	materials = list(
+		/datum/material/iron=12000,
+		/datum/material/uranium=4000,
+		/datum/material/titanium=10000,
+		/datum/material/glass=3000,
+		/datum/material/plasma=12000,
+		/datum/material/diamond=2000,
+	)
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+// MARK: SOLFED
+/datum/design/mod_plating/storch
+	name = "MOD Storch-einheiten Plating"
+	id = "mod_plating_storch"
+	build_path = /obj/item/mod/construction/plating/locked/storch
+	materials = list(
+		/datum/material/iron=12000,
+		/datum/material/uranium=2000,
+		/datum/material/titanium=12000,
+		/datum/material/glass=2000,
+		/datum/material/plasma=3000,
+	)
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+/datum/design/mod_plating/falke
+	name = "MOD Falke-einheiten Plating"
+	id = "mod_plating_falke"
+	build_path = /obj/item/mod/construction/plating/locked/falke
+	materials = list(
+		/datum/material/iron=12000,
+		/datum/material/uranium=2000,
+		/datum/material/titanium=14000,
+		/datum/material/glass=1000,
+		/datum/material/plasma=10000,
+		/datum/material/gold=4000,
+		/datum/material/diamond=4000,
+	)
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+
+//MARK: MODsuit modules
 
 /datum/design/module
 	name = "MOD Module"
@@ -260,6 +386,19 @@
 	category = list(
 		"MOD Modules", "Engineering Modules"
 	)
+
+/datum/design/module/mod_rad_protection
+	name = "Radiation Protection Module"
+	id = "mod_rad_protection"
+	materials = list(
+		/datum/material/iron =1000,
+		/datum/material/uranium =1000,
+	)
+	build_path = /obj/item/mod/module/rad_protection
+	category = list(
+		"MOD Modules", "Engineering Modules"
+	)
+
 /datum/design/module/mod_health_analyzer
 	name = "Health Analyzer Module"
 	id = "mod_health_analyzer"
@@ -309,6 +448,35 @@
 		/datum/material/silver=1000,
 	)
 	build_path = /obj/item/mod/module/magnetic_harness
+	category = list(
+		"MOD Modules", "Security Modules"
+	)
+
+/datum/design/module/mod_civilian_armor_booster
+	name = "Cilivian Armor Booster Module"
+	id = "mod_civilian_armor_booster"
+	materials = list(
+		/datum/material/iron=1500,
+		/datum/material/titanium=1500,
+		/datum/material/uranium=500,
+		/datum/material/glass=2000,
+		/datum/material/gold=500,
+		/datum/material/plasma=1500,
+	)
+	build_path = /obj/item/mod/module/armor_booster/civilian
+	category = list(
+		"MOD Modules", "Security Modules"
+	)
+
+/datum/design/module/plate_compression
+	name = "Plate Compression Module"
+	id = "plate_compression"
+	materials = list(
+		/datum/material/iron=1500,
+		/datum/material/titanium=1500,
+		/datum/material/plasma=1500,
+	)
+	build_path = /obj/item/mod/module/plate_compression
 	category = list(
 		"MOD Modules", "Security Modules"
 	)
@@ -509,11 +677,10 @@
 		/datum/material/glass=1000,
 		/datum/material/titanium=400,
 	)
-	build_path = /obj/item/mod/module/status_readout
+	build_path = /obj/item/mod/module/status_readout/civilian
 	category = list(
 		"MOD Modules", "Medical Modules"
 	)
-
 //MODsuit bepis modules
 /datum/design/module/disposal
 	name = "Disposal Connector Module"
@@ -526,7 +693,7 @@
 	category = list(
 		"MOD Modules", "Supply Modules"
 	)
-
+//MARK: ANOMALOCK
 //MODsuit anomalock modules
 /datum/design/module/mod_antigrav
 	name = "Anti-Gravity Module"
@@ -553,3 +720,50 @@
 	category = list(
 		"MOD Modules", "Science Modules"
 	)
+
+/datum/design/module/mod_kinesis
+	name = "Kinesis Module"
+	id = "mod_kinesis"
+	materials = list(
+		/datum/material/iron=2500,
+		/datum/material/glass=2000,
+		/datum/material/uranium=1000,
+		/datum/material/bluespace=2000,
+	)
+	build_path = /obj/item/mod/module/anomaly_locked/kinesis
+	category = list(
+		"MOD Modules", "Science Modules"
+	)
+
+// MARK: MILTECH
+
+/datum/design/module/mod_armor_components
+	name = "MOD military-grade power armor components"
+	id = "mod_armor_components"
+	materials = list(
+		/datum/material/iron=10000,
+		/datum/material/glass=2000,
+		/datum/material/uranium=1000,
+		/datum/material/diamond=4000,
+		/datum/material/plasma=6000,
+		/datum/material/titanium=6000,
+	)
+	build_path = /obj/item/military_tech/mod_armor_components
+	category = list(
+		"MOD Suits", "Plating", "Chassis"
+	)
+
+/datum/design/module/mod_military_stealth
+	name = "military-grade Cloak Module"
+	id = "mod_military_stealth"
+	materials = list(
+		/datum/material/iron=1000,
+		/datum/material/bluespace=1000,
+		/datum/material/titanium=1000,
+	)
+	build_path = /obj/item/mod/module/stealth/military
+	category = list(
+		"MOD Modules", "Security Modules"
+	)
+
+

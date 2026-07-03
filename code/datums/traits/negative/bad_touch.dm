@@ -2,7 +2,7 @@
 	name = "Bad Touch"
 	desc = "You don't like hugs. You'd really prefer if people just left you alone."
 	mob_traits = list(TRAIT_BADTOUCH)
-	value = -1
+	value = 0 // [CELADON-EDIT] - OLD CODE: -1
 	quirk_flags = QUIRK_HUMAN_ONLY | QUIRK_MOODLET_BASED | QUIRK_HIDE_FROM_SCAN
 	gain_text = span_danger("You just want people to leave you alone.")
 	lose_text = span_notice("You could use a big hug.")
