@@ -1172,14 +1172,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "</td>"
 				mutant_category = 0
 
-			var/metal_skin = fbp || pref_species.inherent_biotypes & MOB_ROBOTIC
-			dat += metal_skin ? "<h3>Chassis Customization</h3>" : "<h3>Prosthetic Limbs</h3>"
-			dat += "<a href='byond://?_src_=prefs;preference=fbp'>Full Body Prosthesis: [fbp ? "Yes" : "No"]</a><br>"
-
-			dat += "<a href='byond://?_src_=prefs;preference=toggle_random;random_type=[RANDOM_PROSTHETIC]'>Random Prosthetic: [(randomise[RANDOM_PROSTHETIC]) ? "Yes" : "No"]</a><br>"
-
-			dat += "<table>"
 			// [CELADON-EDIT] - CELADON_PROSTHETIC
+			// var/metal_skin = fbp || pref_species.inherent_biotypes & MOB_ROBOTIC
+			// dat += metal_skin ? "<h3>Chassis Customization</h3>" : "<h3>Prosthetic Limbs</h3>"
+			// dat += "<a href='byond://?_src_=prefs;preference=fbp'>Full Body Prosthesis: [fbp ? "Yes" : "No"]</a><br>"
+
+			// dat += "<a href='byond://?_src_=prefs;preference=toggle_random;random_type=[RANDOM_PROSTHETIC]'>Random Prosthetic: [(randomise[RANDOM_PROSTHETIC]) ? "Yes" : "No"]</a><br>"
+
+			// dat += "<table>"
 			// for(var/index in prosthetic_limbs)
 			// 	if(!metal_skin && (index == BODY_ZONE_CHEST || index == BODY_ZONE_HEAD))
 			// 		continue
@@ -1195,7 +1195,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			// 			if(!limb_style?.desc)
 			// 				continue
 			// 			dat += "<a href='byond://?_src_=prefs;preference=body_desc;limb_style=[REF(limb_style)]'>?</a></td></tr>"
-			// dat += "</table><br>"
+			dat += "</table><br>"
 			// [/CELADON-EDIT]
 			if(!istype(pref_species, /datum/species/lanius))
 				dat += "<h3>Prosthetic Limbs</h3>"
