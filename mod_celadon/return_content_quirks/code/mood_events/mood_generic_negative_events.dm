@@ -14,3 +14,7 @@
 /datum/mood_event/back_pain
 	description = span_boldwarning("Bags never sit right on my back, this hurts like hell!")
 	mood_change = -15
+
+/datum/mood_event/nicotine_withdrawal
+	description = span_warning("I'd kill for a smoke right now...")
+	mood_change = -10
