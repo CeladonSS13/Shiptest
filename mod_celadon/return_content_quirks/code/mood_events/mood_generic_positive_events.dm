@@ -5,4 +5,4 @@
 /datum/mood_event/nicotine_buzz
 	description = span_notice("A smoke always helps me think straight.")
 	mood_change = 8
-	timeout = 30 SECONDS // [MOD-CELADON-ADD] Disappears after having a smoke.
+	timeout = 30 SECONDS
