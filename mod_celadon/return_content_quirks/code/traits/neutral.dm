@@ -47,11 +47,8 @@
 
 /datum/quirk/smoker
 	quirk_flags = QUIRK_HUMAN_ONLY | QUIRK_PROCESSES
-	/// [MOD-CELADON-ADD] How many seconds passed without nicotine.
 	var/time_without_nicotine = 0
-	/// [MOD-CELADON-ADD] When withdrawal starts in seconds.
 	var/withdrawal_threshold = 300
-	/// [MOD-CELADON-ADD] Whether the quirk holder is currently in withdrawal.
 	var/in_withdrawal = FALSE
 
 /datum/quirk/smoker/on_process(seconds_per_tick)
@@ -62,14 +59,12 @@
 	var/has_nicotine = H.reagents.has_reagent(/datum/reagent/drug/nicotine, needs_metabolizing = TRUE)
 
 	if(has_nicotine)
-		/// [MOD-CELADON-ADD] Reset the time without nicotine and add a mood event for having a smoke.
 		time_without_nicotine = 0
 		if(in_withdrawal)
 			in_withdrawal = FALSE
 			SEND_SIGNAL(quirk_holder, COMSIG_CLEAR_MOOD_EVENT, "nicotine_withdrawal")
 		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "nicotine_buzz", /datum/mood_event/nicotine_buzz)
 	else
-		/// [MOD-CELADON-ADD] Not smoking - accumulate time and remove the boost.
 		time_without_nicotine += seconds_per_tick
 		SEND_SIGNAL(quirk_holder, COMSIG_CLEAR_MOOD_EVENT, "nicotine_buzz")
 		if(time_without_nicotine >= withdrawal_threshold)
