@@ -67,13 +67,13 @@
 	description = "\"First the creature's Flame breathed from beneath the stone, Hot battle-fumes, and the earth rumbled.\""
 	suffix = "icemoon_underground_drakelair.dmm"
 
-/datum/map_template/ruin/icemoon/icemoon_raided_cargobase
+/datum/map_template/ruin/icemoon/raided_cargobase
 	id = "raided_cargobase"
 	suffix = "icemoon_raided_cargobase.dmm"
 	name = "Raided Cargo Outpost"
 	description = "A cargo outpost that got raided by some space pirates"
 
-/datum/map_template/ruin/icemoon/icemoon_solfed
+/datum/map_template/ruin/icemoon/solfed_prison
 	id = "solfed_prison"
 	name = "Solar Federation Prison"
 	suffix = "icemoon_underground_solfed_prison.dmm"
