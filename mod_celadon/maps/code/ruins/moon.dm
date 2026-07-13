@@ -2,9 +2,12 @@
 	prefix = "_maps/_mod_celadon/RandomRuins/MoonRuins/"
 	ruin_type = RUINTYPE_MOON
 
-/datum/map_template/ruin/moon/hideout
-	prefix = "_maps/_mod_celadon/RandomRuins/MoonRuins/"
+/datum/map_template/ruin/moon/hideout // Official
+	id = "moon_hideout"
+	name = "Ramzi Cave Hideout"
+	suffix = "moon_hideout.dmm"
 
-/datum/map_template/ruin/moon/moonbase
-	name = "Moon Base"
-	description = "An abandoned SolFed refining base lost to crystal infestation and the Frontiersmen. Home to a great vein of hydrogen ice."
+/datum/map_template/ruin/moon/moonbase // Official
+	id = "moon_moonbase"
+	name = "CLIP-MELD Moonbase"
+	suffix = "moon_moonbase.dmm"

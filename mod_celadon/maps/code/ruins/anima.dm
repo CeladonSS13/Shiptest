@@ -20,6 +20,12 @@
 	description = "An ancient and terrible dragon that lived for several centuries and ate hundreds of souls."
 	suffix = "anima_dragon_plasma.dmm"
 
+/datum/map_template/ruin/anima/hierophant
+	id = "hierophant"
+	name = "Hierophant"
+	description = "A mysterious and powerful figure associated with ancient rituals."
+	suffix = "anima_hierophant.dmm"
+
 /datum/map_template/ruin/anima/old_miner
 	id = "old_miner_anima"
 	name = "Old Miner"

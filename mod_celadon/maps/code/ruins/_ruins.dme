@@ -27,6 +27,7 @@ allow_duplicates = FALSE - по умолчанию TRUE. FALSE делает ру
 Список всех типов руин на 10.07.2026:
 RUINTYPE_ANIMA
 RUINTYPE_ASTEROID
+RUINTYPE_BATTLEFIELD
 RUINTYPE_BEACH
 RUINTYPE_DESERT
 RUINTYPE_EARTH_SAND
@@ -50,6 +51,7 @@ RUINTYPE_YELLOW
 
 #include "anima.dm"
 #include "asteroid.dm"
+#include "battlefield.dm"
 #include "beach.dm"
 #include "earth_sand.dm"
 #include "icemoon.dm"
